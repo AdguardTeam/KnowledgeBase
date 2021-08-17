@@ -2,15 +2,15 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Введение
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Давайте откроем для себя **Docusaurus менее чем за 5 минут**.
 
-## Getting Started
+## Начало работы
 
-Get started by **creating a new site**.
+Начните с **создания нового сайта**.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+Или **попробуй Docusaurus немедленно** с **[docusaurus.new](https://docusaurus.new)**.
 
 ## Generate a new site
 

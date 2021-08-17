@@ -1,10 +1,10 @@
 {
   "title": {
-    "message": "My Site",
+    "message": "Мой сайт",
     "description": "The title in the navbar"
   },
   "item.label.Tutorial": {
-    "message": "Tutorial",
+    "message": "Обучение",
     "description": "Navbar item with label Tutorial"
   },
   "item.label.GitHub": {
