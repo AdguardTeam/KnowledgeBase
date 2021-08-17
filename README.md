@@ -37,6 +37,9 @@ TODO:
 * inline css for images
 * links in text goto next line. workaround: use with <br/>
 * how to update all translations files
+* edit pages
 
 Notes:
+* mdx-react components will be auto truncate `\n` and file become invalid
+* deploy command cannot exit when crashed
 * seems like it cannot switch languages in dev mode
