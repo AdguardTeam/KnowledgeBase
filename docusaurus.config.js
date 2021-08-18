@@ -147,5 +147,6 @@ module.exports = {
         sidebarPath: require.resolve('./sidebars.js'),
       },
     ],
+    '@docusaurus/plugin-ideal-image',
   ],
 };
