@@ -3,8 +3,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'AdGuard Knowledgebase',
+  tagline: 'Some subtitle',
   url: 'https://105th.github.io/',
   baseUrl: '/docusaurus/',
   onBrokenLinks: 'throw',
@@ -19,9 +19,9 @@ module.exports = {
   },
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'AdGuard VPN',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'AdGuard VPN',
         src: 'img/logo.svg',
       },
       items: [
@@ -29,11 +29,23 @@ module.exports = {
           type: 'doc',
           docId: 'intro',
           position: 'left',
-          label: 'Tutorial',
+          label: 'General',
+        },
+        {
+          to: '/vpn/intro',
+          label: 'VPN',
+          position: 'left',
+          activeBaseRegex: `/vpn/`,
+        },
+        {
+          to: '/miscellaneous/credits-and-acknowledgments',
+          label: 'Miscellaneous',
+          position: 'left',
+          activeBaseRegex: `/miscellaneous/`,
         },
         {
           type: 'localeDropdown',
-          position: 'left',
+          position: 'right',
         },
         {
           href: 'https://github.com/105th/docusaurus',
@@ -49,7 +61,7 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Knowledgebase',
               to: '/docs/intro',
             },
           ],
@@ -58,16 +70,16 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'AdGuard Forum',
+              href: 'https://forum.adguard.com',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'AdGuard Reddit',
+              href: 'https://www.reddit.com/r/Adguard/',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'AdGuard VPN 4PDA',
+              href: 'https://4pda.to/forum/index.php?showtopic=997877',
             },
           ],
         },
@@ -75,13 +87,25 @@ module.exports = {
           title: 'More',
           items: [
             {
+              label: 'Blog',
+              href: 'https://adguard.com/blog/tag/adguard-vpn.html',
+            },
+            {
               label: 'GitHub',
-              href: 'https://github.com/105th/docusaurus',
+              href: 'https://github.com/facebook/docusaurus',
+            },
+            {
+              label: 'EULA',
+              href: 'https://adguard-vpn.com/eula.html',
+            },
+            {
+              label: 'Privacy Policy',
+              href: 'https://adguard-vpn.com/privacy.html',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © 2009-${new Date().getFullYear()} AdGuard. Built with Docusaurus.`,
     },
     prism: {
       theme: lightCodeTheme,
@@ -101,6 +125,26 @@ module.exports = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+      },
+    ],
+  ],
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'vpn',
+        path: 'vpn',
+        routeBasePath: 'vpn',
+        sidebarPath: require.resolve('./sidebars.js'),
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'miscellaneous',
+        path: 'miscellaneous',
+        routeBasePath: 'miscellaneous',
+        sidebarPath: require.resolve('./sidebars.js'),
       },
     ],
   ],
