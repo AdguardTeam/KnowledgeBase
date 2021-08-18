@@ -23,6 +23,7 @@ module.exports = {
       logo: {
         alt: 'AdGuard VPN',
         src: 'img/logo.svg',
+        srcDark: 'img/logo_dark.svg',
       },
       items: [
         {
