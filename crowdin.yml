@@ -11,5 +11,22 @@ files: [
     {
       source: '/docs/**/*',
       translation: '/i18n/%two_letters_code%/docusaurus-plugin-content-docs/current/**/%original_file_name%',
+      ignore: [
+        "/**/assets"
+      ]
+    },
+    {
+      source: '/vpn/**/*',
+      translation: '/i18n/%two_letters_code%/docusaurus-plugin-content-docs-vpn/current/**/%original_file_name%',
+      ignore: [
+        "/**/assets"
+      ]
+    },
+    {
+      source: '/miscellaneous/**/*',
+      translation: '/i18n/%two_letters_code%/docusaurus-plugin-content-docs-miscellaneous/current/**/%original_file_name%',
+      ignore: [
+        "/**/assets"
+      ]
     }
   ]
