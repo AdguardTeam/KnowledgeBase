@@ -2,6 +2,8 @@
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
+`master` branch is published automatically to https://adguardteam.github.io/KnowledgeBase/.
+
 ## Installation
 
 ```sh
