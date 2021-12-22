@@ -3,16 +3,16 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'AdGuard Knowledgebase',
-  tagline: 'Some subtitle',
-  url: 'https://105th.github.io/',
-  baseUrl: '/docusaurus/',
+  title: 'AdGuard Knowledge Base',
+  tagline: 'Knowledge base for AdGuard products',
+  url: 'https://adguardteam.github.io/',
+  baseUrl: '/KnowledgeBase/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   trailingSlash: false,
-  organizationName: '105th',
-  projectName: 'docusaurus',
+  organizationName: 'AdGuard',
+  projectName: 'AdGuardKB',
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'ru'],
@@ -49,7 +49,7 @@ module.exports = {
           position: 'right',
         },
         {
-          href: 'https://github.com/105th/docusaurus',
+          href: 'https://github.com/AdguardTeam/KnowledgeBase',
           label: 'GitHub',
           position: 'right',
         },
@@ -121,7 +121,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/105th/docusaurus/edit/master/',
+            'https://github.com/AdguardTeam/KnowledgeBase/edit/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
