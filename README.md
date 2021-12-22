@@ -4,13 +4,13 @@ This website is built using [Docusaurus 2](https://docusaurus.io/), a modern sta
 
 ## Installation
 
-```console
+```sh
 yarn install
 ```
 
 ## Local Development
 
-```console
+```sh
 yarn start
 ```
 
@@ -18,28 +18,21 @@ This command starts a local development server and opens up a browser window. Mo
 
 ## Build
 
-```console
+```sh
 yarn build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-## Deployment
+## TODO
 
-```console
-GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
-
-
-TODO:
-* inline css for images
-* links in text goto next line. workaround: use with <br/>
-* how to update all translations files
-* edit pages
+- inline css for images
+- links in text goto next line. workaround: use with <br/>
+- how to update all translations files
+- edit pages
 
 Notes:
-* mdx-react components will be auto truncate `\n` and file become invalid
-* deploy command cannot exit when crashed
-* seems like it cannot switch languages in dev mode
+
+- mdx-react components will be auto truncate `\n` and file become invalid
+- deploy command cannot exit when crashed
+- seems like it cannot switch languages in dev mode
