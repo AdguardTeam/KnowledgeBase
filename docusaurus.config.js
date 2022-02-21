@@ -33,16 +33,22 @@ module.exports = {
           label: 'General',
         },
         {
+          to: '/adguard/intro',
+          label: 'AdGuard',
+          position: 'left',
+          activeBaseRegex: `/adguard/`,
+        },
+        {
           to: '/vpn/intro',
           label: 'VPN',
           position: 'left',
           activeBaseRegex: `/vpn/`,
         },
         {
-          to: '/miscellaneous/credits-and-acknowledgments',
-          label: 'Miscellaneous',
+          to: '/dns/intro',
+          label: 'DNS',
           position: 'left',
-          activeBaseRegex: `/miscellaneous/`,
+          activeBaseRegex: `/dns/`,
         },
         {
           type: 'localeDropdown',
@@ -133,8 +139,17 @@ module.exports = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        id: 'adguard',
+        path: 'kb/adguard',
+        routeBasePath: 'adguard',
+        sidebarPath: require.resolve('./sidebars.js'),
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
         id: 'vpn',
-        path: 'vpn',
+        path: 'kb/vpn',
         routeBasePath: 'vpn',
         sidebarPath: require.resolve('./sidebars.js'),
       },
@@ -142,9 +157,9 @@ module.exports = {
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'miscellaneous',
-        path: 'miscellaneous',
-        routeBasePath: 'miscellaneous',
+        id: 'dns',
+        path: 'kb/dns',
+        routeBasePath: 'dns',
         sidebarPath: require.resolve('./sidebars.js'),
       },
     ],
