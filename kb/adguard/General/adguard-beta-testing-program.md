@@ -28,7 +28,7 @@ If you want to skip the description part and get right to the deal, you can subm
 
 Let&rsquo;s imagine the worst happened&nbsp;&mdash; you spotted a&nbsp;bug. Or&nbsp;maybe you just want to&nbsp;share your suggestion with developers? Anyway, there are several ways to&nbsp;let&nbsp;us know: 
 
-* Go&nbsp;to [forum.adguard.com](forum.adguard.com) and post there a&nbsp;new thread (or&nbsp;find an&nbsp;existing one) in&nbsp;the beta forum [category](https://forum.adguard.com/index.php?categories/48/). Make sure to&nbsp;read [forum rules](https://forum.adguard.com/index.php?threads/14859/) first;
+* Go&nbsp;to [forum.adguard.com](https://forum.adguard.com/) and post there a&nbsp;new thread (or&nbsp;find an&nbsp;existing one) in&nbsp;the beta forum [category](https://forum.adguard.com/index.php?categories/48/). Make sure to&nbsp;read [forum rules](https://forum.adguard.com/index.php?threads/14859/) first;
 
 * Go&nbsp;to [GitHub](https://github.com/AdguardTeam/) and find a&nbsp;suitable repository. Create a&nbsp;new issue there and describe the bug/feature request in&nbsp;details;
 
