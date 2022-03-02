@@ -1,9 +1,6 @@
 ---
 title: DNS filtering rules syntax
-taxonomy:
-    category:
-        - docs
-visible: true
+sidebar_position: 2
 ---
 
 link to dns article
