@@ -1,8 +1,6 @@
 ---
-title: 'How to collect and send logs'
-taxonomy:
-    category:
-        - docs
+title: How to collect and send logs
+sidebar_position: 2
 ---
 
 * [Collecting and sending standard logs](#default)

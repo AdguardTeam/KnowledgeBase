@@ -1,22 +1,6 @@
 ---
-title: 'Features overview'
-taxonomy:
-    category:
-        - docs
+title: Features overview
+sidebar_position: 1
 ---
  
-*   [What is AdGuard VPN for Android](#adguard-vpn)
-*   [How to use AdGuard VPN for Android](#use)
-*   [Main Screen](#main)
-*   [Exclusions](#exclusions)
-    * [Lists of exclusions](#lists)
-    * [Apps Settings](#apps)
-*   [Settings](#settings)
-    * [Autostart](#autostart)
-    * [DNS server](#dns-server)
-    * [Auto-protection](#auto-protection)
-    * [Kill Switch](#kill-switch)
-    * [Theme](#theme)
-    * [Advanced settings](#advanced-settings)
-*   [Support](#support)
-*   [Unlimited version](#unlimited-version)
+*   What is AdGuard VPN for Android

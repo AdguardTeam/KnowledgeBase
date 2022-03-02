@@ -1,8 +1,6 @@
 ---
 title: Features overview
-taxonomy:
-    category:
-        - docs
+sidebar_position: 1
 ---
 
 * [Home screen](#home)

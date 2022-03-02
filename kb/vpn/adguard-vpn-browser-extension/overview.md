@@ -1,8 +1,6 @@
 ---
-title: 'Features overview'
-taxonomy:
-    category:
-        - docs
+title: Features overview
+sidebar_position: 1
 ---
 
 *   [Exclusions](#exclusions)

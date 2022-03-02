@@ -1,8 +1,6 @@
 ---
-title: 'Differences between free and full versions of AdGuard VPN'
-taxonomy:
-    category:
-        - docs
+title: Paid subscription benefits
+sidebar_position: 4
 ---
  
 You can use AdGuard VPN for free, but then there will be certain restrictions:

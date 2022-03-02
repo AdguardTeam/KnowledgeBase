@@ -1,8 +1,6 @@
 ---
-title: 'How VPN works'
-taxonomy:
-    category:
-        - docs
+title: How VPNs work
+sidebar_position: 1
 ---
 * [VPN features](#features)
 * [VPN structure](#structure)

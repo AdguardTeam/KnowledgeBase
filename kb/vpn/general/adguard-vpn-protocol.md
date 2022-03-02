@@ -1,5 +1,6 @@
 ---
 title: AdGuard VPN protocol
+sidebar_position: 2
 ---
 
 *   [Why we developed the AdGuard VPN protocol](#reasons) 

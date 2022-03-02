@@ -1,9 +1,6 @@
 ---
-title: Installation
-published: true
-taxonomy:
-    category:
-        - docs
+title: How to install
+sidebar_position: 2
 ---
 * [System requirements](#requirements)
 * [Installation](#install)
