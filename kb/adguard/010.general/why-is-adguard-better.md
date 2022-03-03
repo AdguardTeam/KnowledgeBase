@@ -1,9 +1,6 @@
 ---
-title: 'Why is AdGuard better than other adblockers'
-taxonomy:
-    category:
-        - docs
-visible: true
+title: What makes AdGuard better than other ad blockers
+sidebar_position: 5
 ---
 
 Please wait a while — the article will appear here soon. Until it does, look for information on [our website](https://adguard-vpn.com/en/welcome.html) and feel free to [ask any questions](https://adguard.com/en/support.html). 
