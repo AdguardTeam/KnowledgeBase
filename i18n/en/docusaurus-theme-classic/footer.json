@@ -1,0 +1,98 @@
+{
+  "link.title.adguard": {
+    "message": "AdGuard",
+    "description": "The title of the footer links column with title=AdGuard in the footer"
+  },
+  "link.title.products": {
+    "message": "Products",
+    "description": "The title of the footer links column with title=Products in the footer"
+  },
+  "link.title.support": {
+    "message": "Support",
+    "description": "The title of the footer links column with title=Support in the footer"
+  },
+  "link.title.license": {
+    "message": "License",
+    "description": "The title of the footer links column with title=License in the footer"
+  },
+  "link.item.label.official_website": {
+    "message": "Official website",
+    "description": "The label of footer link with label=Official website linking to https://adguard.com"
+  },
+  "link.item.label.about": {
+    "message": "About",
+    "description": "The label of footer link with label=About linking to https://adguard.com/contacts.html"
+  },
+  "link.item.label.in_the_press": {
+    "message": "In the press",
+    "description": "The label of footer link with label=In the press linking to https://adguard.com/press-releases.html"
+  },
+  "link.item.label.media_kits": {
+    "message": "Media kits",
+    "description": "The label of footer link with label=Media kits linking to https://adguard.com/media-materials.html"
+  },
+  "link.item.label.awards": {
+    "message": "Awards",
+    "description": "The label of footer link with label=Awards linking to https://adguard.com/awards.html"
+  },
+  "link.item.label.adguard_for_windows": {
+    "message": "AdGuard for Windows",
+    "description": "The label of footer link with label=AdGuard for Windows linking to https://adguard.com/adguard-windows/overview.html"
+  },
+  "link.item.label.adguard_for_android": {
+    "message": "AdGuard for Android",
+    "description": "The label of footer link with label=AdGuard for Android linking to https://adguard.com/adguard-android/overview.html"
+  },
+  "link.item.label.adguard_for_mac": {
+    "message": "AdGuard for Mac",
+    "description": "The label of footer link with label=AdGuard for Mac linking to https://adguard.com/adguard-mac/overview.html"
+  },
+  "link.item.label.adguard_for_ios": {
+    "message": "AdGuard for iOS",
+    "description": "The label of footer link with label=AdGuard for iOS linking to https://adguard.com/adguard-ios/overview.html"
+  },
+  "link.item.label.adguard_for_ios_pro": {
+    "message": "AdGuard for iOS Pro",
+    "description": "The label of footer link with label=AdGuard for iOS Pro linking to https://adguard.com/adguard-ios-pro/overview.html"
+  },
+  "link.item.label.support_center": {
+    "message": "Support Center",
+    "description": "The label of footer link with label=Support Center linking to https://adguard.com/support.html"
+  },
+  "link.item.label.how_to_create_your_own_ad_filter": {
+    "message": "How to create your own ad filter",
+    "description": "The label of footer link with label=How to create your own ad filter linking to /general/how-to-create-your-own-ad-filters"
+  },
+  "link.item.label.adguard_ad_filters": {
+    "message": "AdGuard Ad Filters",
+    "description": "The label of footer link with label=AdGuard Ad Filters linking to /general/adguard-ad-filters"
+  },
+  "link.item.label.removal_instructions": {
+    "message": "Removal Instructions",
+    "description": "The label of footer link with label=Removal Instructions linking to https://adguard.com/removal.html"
+  },
+  "link.item.label.userscripts": {
+    "message": "Userscripts",
+    "description": "The label of footer link with label=Userscripts linking to /general/userscripts"
+  },
+  "link.item.label.purchase_license": {
+    "message": "Purchase License",
+    "description": "The label of footer link with label=Purchase License linking to https://adguard.com/license.html"
+  },
+  "link.item.label.recover_license": {
+    "message": "Recover License",
+    "description": "The label of footer link with label=Recover License linking to /general/license-key#recovery"
+  },
+  "link.item.label.terms_of_sale": {
+    "message": "Terms of sale",
+    "description": "The label of footer link with label=Terms of sale linking to https://adguard.com/terms-of-sale.html"
+  },
+  "link.item.label.get_free_license": {
+    "message": "Get Free License",
+    "description": "The label of footer link with label=Get Free License linking to https://adguard.com/get-adguard-for-free.html"
+  },
+  "link.item.label.contribute_to_adguard": {
+    "message": "Contribute to AdGuard",
+    "description": "The label of footer link with label=Contribute to AdGuard linking to https://adguard.com/contribute.html"
+  }
+}

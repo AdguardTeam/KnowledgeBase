@@ -1,0 +1,14 @@
+{
+  "item.label.docs": {
+    "message": "Docs",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.official_website": {
+    "message": "Official website",
+    "description": "Navbar item with label Official website"
+  }
+}

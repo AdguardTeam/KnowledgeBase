@@ -1,12 +1,18 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+const ADGUARD_WEBSITE_URL = 'https://adguard.com';
+
+// Allow to parameterise the website URL and the base path during the build.
+const url = process.env.URL || 'https://adguardteam.github.io';
+const baseUrl = process.env.BASE_URL || '/KnowledgeBase/';
+
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'AdGuard Knowledge Base',
   tagline: 'Knowledge base for AdGuard products',
-  url: 'https://adguardteam.github.io/',
-  baseUrl: '/KnowledgeBase/',
+  url: url,
+  baseUrl: baseUrl,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -15,13 +21,19 @@ module.exports = {
   projectName: 'AdGuardKB',
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ru'],
+    locales: ['en'],
   },
   themeConfig: {
+    docs: {
+      sidebar: {
+        hideable: true,
+      }
+    },
     navbar: {
-      title: 'AdGuard VPN',
+      hideOnScroll: true,
+      title: '',
       logo: {
-        alt: 'AdGuard VPN',
+        alt: 'AdGuard',
         src: 'img/logo.svg',
         srcDark: 'img/logo_dark.svg',
       },
@@ -30,25 +42,17 @@ module.exports = {
           type: 'doc',
           docId: 'intro',
           position: 'left',
-          label: 'General',
+          label: 'docs',
         },
         {
-          to: '/adguard/intro',
-          label: 'AdGuard',
+          to: ADGUARD_WEBSITE_URL + '/blog/index.html',
           position: 'left',
-          activeBaseRegex: `/adguard/`,
+          label: 'blog',
         },
         {
-          to: '/vpn/intro',
-          label: 'VPN',
+          to: ADGUARD_WEBSITE_URL,
           position: 'left',
-          activeBaseRegex: `/vpn/`,
-        },
-        {
-          to: '/dns/intro',
-          label: 'DNS',
-          position: 'left',
-          activeBaseRegex: `/dns/`,
+          label: 'official_website',
         },
         {
           type: 'localeDropdown',
@@ -62,57 +66,115 @@ module.exports = {
       ],
     },
     footer: {
-      style: 'dark',
+      style: 'light',
+      logo: {
+        alt: 'AdGuard',
+        src: 'img/logo_dark.svg',
+        srcDark: 'img/logo_dark.svg',
+      },
       links: [
         {
-          title: 'Docs',
+          title: 'adguard',
           items: [
             {
-              label: 'Knowledgebase',
-              to: '/docs/intro',
+              label: 'official_website',
+              href: ADGUARD_WEBSITE_URL,
+            },
+            {
+              label: 'about',
+              href: ADGUARD_WEBSITE_URL + '/contacts.html',
+            },
+            {
+              label: 'in_the_press',
+              href: ADGUARD_WEBSITE_URL + '/press-releases.html',
+            },
+            {
+              label: 'media_kits',
+              href: ADGUARD_WEBSITE_URL + '/media-materials.html',
+            },
+            {
+              label: 'awards',
+              href: ADGUARD_WEBSITE_URL + '/awards.html',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'products',
           items: [
             {
-              label: 'AdGuard Forum',
-              href: 'https://forum.adguard.com',
+              label: 'adguard_for_windows',
+              href: ADGUARD_WEBSITE_URL + '/adguard-windows/overview.html',
             },
             {
-              label: 'AdGuard Reddit',
-              href: 'https://www.reddit.com/r/Adguard/',
+              label: 'adguard_for_android',
+              href: ADGUARD_WEBSITE_URL + '/adguard-android/overview.html',
             },
             {
-              label: 'AdGuard VPN 4PDA',
-              href: 'https://4pda.to/forum/index.php?showtopic=997877',
+              label: 'adguard_for_mac',
+              href: ADGUARD_WEBSITE_URL + '/adguard-mac/overview.html',
+            },
+            {
+              label: 'adguard_for_ios',
+              href: ADGUARD_WEBSITE_URL + '/adguard-ios/overview.html',
+            },
+            {
+              label: 'adguard_for_ios_pro',
+              href: ADGUARD_WEBSITE_URL + '/adguard-ios-pro/overview.html',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'support',
           items: [
             {
-              label: 'Blog',
-              href: 'https://adguard.com/blog/tag/adguard-vpn.html',
+              label: 'support_center',
+              href: ADGUARD_WEBSITE_URL + '/support.html',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'how_to_create_your_own_ad_filter',
+              to: '/general/how-to-create-your-own-ad-filters',
             },
             {
-              label: 'EULA',
-              href: 'https://adguard-vpn.com/eula.html',
+              label: 'adguard_ad_filters',
+              to: '/general/adguard-ad-filters',
             },
             {
-              label: 'Privacy Policy',
-              href: 'https://adguard-vpn.com/privacy.html',
+              label: 'removal_instructions',
+              href: ADGUARD_WEBSITE_URL + '/removal.html',
+            },
+            {
+              label: 'userscripts',
+              to: '/general/userscripts',
+            },
+          ],
+        },
+        {
+          title: 'license',
+          items: [
+            {
+              label: 'purchase_license',
+              href: ADGUARD_WEBSITE_URL + '/license.html',
+            },
+            {
+              label: 'recover_license',
+              to: '/general/license-key#recovery',
+            },
+            {
+              label: 'terms_of_sale',
+              href: ADGUARD_WEBSITE_URL + '/terms-of-sale.html',
+            },
+            {
+              label: 'get_free_license',
+              href: ADGUARD_WEBSITE_URL + '/get-adguard-for-free.html',
+            },
+            {
+              label: 'contribute_to_adguard',
+              href: ADGUARD_WEBSITE_URL + '/contribute.html',
             },
           ],
         },
       ],
-      copyright: `Copyright © 2009-${new Date().getFullYear()} AdGuard. Built with Docusaurus.`,
+      copyright: `© AdGuard, 2009–${new Date().getFullYear()}`,
     },
     prism: {
       theme: lightCodeTheme,
@@ -125,7 +187,7 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
+          routeBasePath: '/',
           editUrl:
             'https://github.com/AdguardTeam/KnowledgeBase/edit/master/',
         },
@@ -136,33 +198,12 @@ module.exports = {
     ],
   ],
   plugins: [
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'adguard',
-        path: 'kb/adguard',
-        routeBasePath: 'adguard',
-        sidebarPath: require.resolve('./sidebars.js'),
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'vpn',
-        path: 'kb/vpn',
-        routeBasePath: 'vpn',
-        sidebarPath: require.resolve('./sidebars.js'),
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'dns',
-        path: 'kb/dns',
-        routeBasePath: 'dns',
-        sidebarPath: require.resolve('./sidebars.js'),
-      },
-    ],
     '@docusaurus/plugin-ideal-image',
+    [
+      require.resolve('docusaurus-lunr-search'),
+      {
+        languages: ['en'],
+      }
+    ],
   ],
 };
