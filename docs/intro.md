@@ -1,5 +1,11 @@
 ---
+title: Overview
 sidebar_position: 1
+slug: /
 ---
 
-# Just a stub
+# AdGuard
+
+<a name="introduction"></a>
+
+## Introduction
