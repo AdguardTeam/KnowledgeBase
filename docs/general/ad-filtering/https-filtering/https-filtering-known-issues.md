@@ -1,5 +1,5 @@
 ---
-title: HTTPS filtering: known issues
+title: 'HTTPS filtering: known issues'
 sidebar_position: 2
 ---
 
