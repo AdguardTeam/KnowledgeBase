@@ -118,7 +118,6 @@ Unlike other filters, this one **unblocks** certain ads. Read more about it in t
 - Rules that cause problems with website functionality will be removed.
 - Website-specific rules will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
 
-
 ## Quality requirements for filtering rules
 
 - The rules should be as efficient as possible in terms of performance.
