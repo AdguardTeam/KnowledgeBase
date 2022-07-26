@@ -3,14 +3,6 @@ title: How to install
 sidebar_position: 2
 ---
 
-* <a href="#t1">Google Chrome or Chromium browsers</a>
-* <a href="#t2">Opera</a>
-* <a href="#t3">Firefox</a>
-* <a href="#t4">Yandex Browser</a>
-* <a href="#t5">Microsoft Edge</a>
-* <a href="#t6">Safari</a>
-
-<a name="t1"></a>
 ##  How to install AdGuard Browser extension for Google Chrome or Chromium browsers
 
 Open the extension's page in [Chrome Web Store](https://agrd.io/extension_chrome) and click _Add to Chrome_. 
@@ -21,7 +13,6 @@ In the opened dialog box, click _Add extension_.
 
 ![Dialog box in Chrome Web Store](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_chrome1.png)
 
-<a name="t2"></a>
 ## How to install AdGuard Browser extension for Opera
 
 Open the page [addons.opera.com](https://agrd.io/extension_opera).
@@ -30,7 +21,6 @@ Open the page [addons.opera.com](https://agrd.io/extension_opera).
 
 Click _Add to Opera_.
 
-<a name="t3"></a>
 ## How to install AdGuard Browser extension for Firefox
 
 Open the page [addons.mozilla.org](https://agrd.io/extension_firefox).
@@ -39,7 +29,6 @@ Open the page [addons.mozilla.org](https://agrd.io/extension_firefox).
 
 Click _Add to Firefox_.
 
-<a name="t4"></a>
 ## How to install AdGuard Browser extension for Yandex Browser
 
 Click the browser settings button in the upper right corner of the browser, then choose _Add-ons_ in the drop-down menu.
@@ -48,7 +37,6 @@ Scroll down to find AdGuard, then click _Install_.
 
 ![AdGuard Browser extension in Yandex Add-ons](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_yandex.png)
 
-<a name="t5"></a>
 ## How to install AdGuard Browser extension for Microsoft Edge
 
 Open in your browser [AdGuard AdBlocker page](https://agrd.io/extension_edge), then click _Get_. 
@@ -59,7 +47,6 @@ In the opened dialog window, press _Add extension_.
 
 ![Edge dialog window](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_edge1.png)
 
-<a name="t6"></a>
 ## How to install AdGuard Browser extension for Safari
 
-AdGuard for Safari is not a browser extension in a common sense. You can read more about it in a [devoted artile](https://kb.adguard.com/en/safari/overview). Or you download the installation file by [this link](https://agrd.io/safari_release).
+AdGuard for Safari is not a browser extension in a common sense. You can read more about it in a [devoted artile](https://kb.adguard.com/en/safari/overview). Or you can [download the installation file](https://agrd.io/safari_release).
