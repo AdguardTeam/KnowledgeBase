@@ -1,0 +1,26 @@
+---
+title: Installation
+sidebar_position: 2
+---
+
+The application is available in five stores: [Google Play](https://play.google.com/store/apps/details?id=com.adguard.android.contentblocker), [Samsung Galaxy store](https://galaxystore.samsung.com/detail/com.adguard.android.contentblocker), [Huawei Store](https://appstore.huawei.com/app/C100440597), [Aptoide](https://adguard-content-blocker.en.aptoide.com/), and [F-Droid](https://f-droid.org/en/packages/com.adguard.android.contentblocker/).
+
+To install AdGuard Content Blocker from Google Play, search _AdGuard Content Blocker_ and tap _Install_.
+
+> Note: AdGuard Content Blocker works in two browsers: [Yandex Browser](https://browser.yandex.ru/) and [Samsung Internet Browser](https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser).
+
+![Content Blocker on Google Play](https://cdn.adguard.com/content/Kb/ad_blocker/content_blocker/content_blocker_play_market.jpg)
+
+After the installation is completed, tap _Open_ to run the application.
+
+![Content Blocker installed](https://cdn.adguard.com/content/Kb/ad_blocker/content_blocker/content_blocker_play_market_installed.jpg)
+
+If you have an appropriate browser downloaded on your device, the app will ask you to enable AdGuard.
+
+![Onboarding: user has a required browser](https://cdn.adguard.com/content/Kb/ad_blocker/content_blocker/content_blocker_onboarding2.jpg)
+
+If you don't have a required browser, you will be prompted to choose and install one.
+
+![Onboarding: no required browser](https://cdn.adguard.com/content/Kb/ad_blocker/content_blocker/content_blocker_onboarding3.jpg)
+
+After the required browser is installed, you can start AdGuard Content Blocker and block ads and trackers there.
