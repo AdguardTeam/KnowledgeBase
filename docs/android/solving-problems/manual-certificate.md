@@ -3,7 +3,7 @@ title: Сertificate installation issues on devices with Android 11 and later
 sidebar_position: 12
 ---
 
-To be able to filter HTTPS traffic (which is extremely important as most ads use HTTPS), AdGuard needs to install a certificate into your device's user storage. On older versions of Android OS this was done automatically, but on Android 11 and later users have to [install it manually](/docs/android/features-overview.md#install-certificate).
+To be able to filter HTTPS traffic (which is extremely important as most ads use HTTPS), AdGuard needs to install a certificate into your device's user storage. On older versions of Android OS this was done automatically, but on Android 11 and later users have to [install it manually](/docs/android/features-overview.md).
 
 ![Certificate](https://cdn.adguard.com/public/Adguard/Blog/Android/3-5/cert-en.gif)
 
@@ -11,7 +11,7 @@ If you experience issues during the manual certificate installation (for example
 
 ## Certificate installation in a *Secure folder*
 
-If you use [the *Secure folder* on your Android](https://www.samsung.com/uk/support/mobile-devices/what-is-the-secure-folder-and-how-do-i-use-it/) (this applies mainly to Samsung devices), you may face some difficulties when installing the HTTPS certificate. The thing is that the *Secure folder* has its own storage where the certificates are stored. However, in case you do everything according to the instructions [described here](/android/features-overview.md#https-filtering), the certificate is installed into the main storage and plays no role for your ad blocker in the *Secure folder*. So, in order to resolve this issue and install the certificate for your AdGuard for Android into the *Secure folder's* storage, follow this instruction:
+If you use [the *Secure folder* on your Android](https://www.samsung.com/uk/support/mobile-devices/what-is-the-secure-folder-and-how-do-i-use-it/) (this applies mainly to Samsung devices), you may face some difficulties when installing the HTTPS certificate. The thing is that the *Secure folder* has its own storage where the certificates are stored. However, in case you do everything according to the instructions [described here](/android/features-overview.md), the certificate is installed into the main storage and plays no role for your ad blocker in the *Secure folder*. So, in order to resolve this issue and install the certificate for your AdGuard for Android into the *Secure folder's* storage, follow this instruction:
 
 
 1. After installing the application and connecting to VPN tap *Turn on* next to the *HTTPS filtering is off* message.
