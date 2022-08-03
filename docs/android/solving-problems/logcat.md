@@ -25,7 +25,7 @@ To get a bug report directly from your device, do the following:
 
 ![Bug report](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
 
-5. Send this log to our [Support Team](support@adguard.com).
+5. Send this log to our Support Team.
 
 >Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
 
