@@ -31,7 +31,7 @@ So, ready to get your hands dirty? Here are actions that, when included in the i
 
 -----
 
-`dns_filtering` — turns [DNS filtering](https://kb.adguard.com/en/general/dns-filtering-android) on and off. Requires an extra flag:
+`dns_filtering` — turns DNS filtering on and off. Requires an extra flag:
 
 `enable:true` or `enable:false` — enables or disables DNS filtering, accordingly.
     

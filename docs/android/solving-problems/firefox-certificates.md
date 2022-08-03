@@ -3,7 +3,7 @@ title: Manual installation of the security certificate into the Firefox browser
 sidebar_position: 11
 ---
 
-For AdGuard to [successfully filter HTTPS traffic](/general/https-filtering.md) in Firefox, the browser needs to trust AdGuard's certificate. It can be achieved differently for different versions of the Firefox.
+For AdGuard to successfully filter HTTPS traffic in Firefox, the browser needs to trust AdGuard's certificate. It can be achieved differently for different versions of the Firefox.
 
 #### Method 1
 
