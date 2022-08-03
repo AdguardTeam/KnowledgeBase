@@ -75,6 +75,6 @@ Send this log to us by contacting support or by any other way.
 
 4. Open CatLog press "Stop record" in the menu.
 
-5. Send this log to our [Support Team](support@adguard.com).
+5. Send this log to our Support Team.
 
 >Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.

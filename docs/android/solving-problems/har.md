@@ -16,7 +16,7 @@ Sometimes we need to analyze it to block specific ads that are difficult to repr
 6. Now turn "pref.har.capture" off again.
 7. Go Back, then tap on "Export logs and system info" -> Save.
 
-**Please send the file with logs (that you've got as a result) to the AdGuard [support service](support@adguard.com).**
+**Please send the file with logs (that you've got as a result) to the AdGuard support service.**
 
 >Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message.
 
