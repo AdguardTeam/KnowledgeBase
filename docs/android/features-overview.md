@@ -8,7 +8,7 @@ sidebar_position: 2
 
 ## Ad blocking
 
-Any ad blocker's main purpose is to block ads and for the majority of AdGuard software ad blocking algorithms are mostly the same. The mechanism of filtering ads is described [here](/general/how-ad-blocking-works.md).
+Any ad blocker's main purpose is to block ads and for the majority of AdGuard software ad blocking algorithms are mostly the same. The mechanism of filtering ads is described [here](https://kb.adguard.com/en/general/how-ad-blocking-works).
 
 ![Ad blocking](https://cdn.adguard.com/public/Adguard/Blog/manifestv3/adblockingworks.png)
 
@@ -23,19 +23,19 @@ The program uses a lot of different filters, both public third-party and our own
   
 ![Filters](https://cdn.adguard.com/content/kb/ad_blocker/android/features/filters1.png)
   
-Find out more about all the filters available for AdGuard products by reading their descriptions in the app or this [comprehensive article](/general/adguard-ad-filters.md).
+Find out more about all the filters available for AdGuard products by reading their descriptions in the app or this [comprehensive article](https://kb.adguard.com/en/general/adguard-ad-filters).
 
 ## Custom filters
  
 ![Custom filters](https://cdn.adguard.com/content/kb/ad_blocker/android/features/custom-filters.png)
  
-AdGuard allows you to create your own custom filters, using the same type of rules that we have in our filters. If you want to try your hand at this, we would recommend studying [the article on creating your own ad filters](/general/how-to-create-your-own-ad-filters.md) which describes the AdGuard rules syntax in detail and provides plenty of examples.
+AdGuard allows you to create your own custom filters, using the same type of rules that we have in our filters. If you want to try your hand at this, we would recommend studying [the article on creating your own ad filters](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters) which describes the AdGuard rules syntax in detail and provides plenty of examples.
  
 > Tip: use the Import feature to transfer your rules to a different device.
  
 ## HTTPS filtering
  
-Nowadays almost all websites work via HTTPS, the web protocol where the last S letter stands for "secure". It happened so that most advertisers use this protocol as well, this is why [HTTPS filtering](/general/https-filtering.md) is really crucial for a modern ad blocker.
+Nowadays almost all websites work via HTTPS, the web protocol where the last S letter stands for "secure". It happened so that most advertisers use this protocol as well, this is why [HTTPS filtering](https://kb.adguard.com/en/general/https-filtering) is really crucial for a modern ad blocker.
  
 ![What is https](https://cdn.adguard.com/public/Adguard/Blog/https/what_is_https.png)
  
@@ -72,7 +72,7 @@ Many websites gather information about their visitors, such as their IP addresse
  
 You can flexibly adjust the work of Stealth Mode: for instance, you can prohibit the website to receive the search request you used to find it on the Internet, automatically delete both third-party and website’s own cookies, and turn off browser geolocation sharing that can be used to track your whereabouts.
  
-To learn all the main features and options you can manage in the Stealth mode settings, [read this article](../general/stealth-mode.md).
+To learn all the main features and options you can manage in the Stealth mode settings, [read this article](https://kb.adguard.com/en/general/stealth-mode).
  
 ![Stealth mode](https://cdn.adguard.com/content/kb/ad_blocker/android/features/stealth-mode.png)
 
@@ -89,7 +89,7 @@ Fortunately, AdGuard's Browsing Security module protects you from visiting phish
  
 ![Browsing security warning](https://cdn.adguard.com/content/kb/ad_blocker/android/features/browsing_security_warning_en.png)
  
-At the same time, we'd like to emphasize that your personal data is *not* transferred anywhere, and AdGuard does *not* know which websites you are visiting. The security check is not performed against an open web address (URL) but through hash prefixes (hash is a certain data structure that renders unambiguous each address added to the base). However, you can send us information on the websites you visit to improve the database, if you opt to. [Learn more about AdGuard's phishing and malware protection](/general/how-malware-protection-works.md).
+At the same time, we'd like to emphasize that your personal data is *not* transferred anywhere, and AdGuard does *not* know which websites you are visiting. The security check is not performed against an open web address (URL) but through hash prefixes (hash is a certain data structure that renders unambiguous each address added to the base). However, you can send us information on the websites you visit to improve the database, if you opt to. [Learn more about AdGuard's phishing and malware protection](https://kb.adguard.com/en/general/how-malware-protection-works).
  
 # Control your apps
  
@@ -121,7 +121,7 @@ As mentioned above, AdGuard for Android uses a set of filters to block ads. And 
  
 ![User rules](https://cdn.adguard.com/content/kb/ad_blocker/android/features/user-rules.png)
  
-When you first install AdGuard, the User rules section is empty. To fill it with rules, you will need to understand the basics of the rules syntax. Don't worry if you are not familiar with it, here's [a good place to start](/general/how-to-create-your-own-ad-filters.md) should you feel an urge to delve deeper into custom rules creation.
+When you first install AdGuard, the User rules section is empty. To fill it with rules, you will need to understand the basics of the rules syntax. Don't worry if you are not familiar with it, here's [a good place to start](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters) should you feel an urge to delve deeper into custom rules creation.
  
 By the way, whenever you use Filtering Log to block anything, a corresponding rule will appear in User rules, so use it if you ever want to undo the blocking. And generally speaking, Filtering Log and User rules go together particularly well: you can use the former to monitor requests in order to build a correct rule for the User rules.
  
@@ -133,7 +133,7 @@ The DNS Filtering module allows to configure DNS settings on the user's device, 
   
 A bit of a theory refresher: DNS stands for "Domain name system", and its purpose is to translate domain names into something browsers can understand, i.e. IP addresses. So, each time you go to a website, your browser sends a DNS request to a server, usually determined by your ISP. That server either redirects the request to another (upstream) server or replies with an IP address. If you use a special DNS server instead of a default one, it can send unsafe and potentially dangerous requests to the "void". Thus, the responses with the IP addresses won't be received and "bad requests" will be nipped in the bud.
  
-[DNS filtering](/general/dns-filtering.md#what-is-dns) has its own separate tab within the AdGuard for Android app home screen. Here you can choose which type of DNS you wish to use (it can be either regular DNS or high security DNS — we will get to that later on) as well as enable DNS-level blocking.
+[DNS filtering](https://kb.adguard.com/en/general/dns-filtering#what-is-dns) has its own separate tab within the AdGuard for Android app home screen. Here you can choose which type of DNS you wish to use (it can be either regular DNS or high security DNS — we will get to that later on) as well as enable DNS-level blocking.
 
 ## DNS blocking
   
@@ -143,16 +143,16 @@ DNS blocking is a standalone feature that complements AdGuard protection suit.
  
 There are two methods of DNS blocking:
 
-1. some [DNS servers](/general/dns-filtering.md#dns-servers-1) can block DNS requests to potentially harmful domains;
+1. some [DNS servers](https://kb.adguard.com/en/general/dns-filtering#dns-servers-1) can block DNS requests to potentially harmful domains;
 2. there is built-in DNS filtering that works right on your device and can block DNS requests, in addition to what's blocked by the selected DNS server.
  
-[How exactly does DNS filtering work](/general/dns-filtering.md#how-does-dns-filtering-work)? It has a special DNS filter which contains a large list of ad and tracker domains, which it uses in conjunction with User rules to recognize 'bad' requests. Every request is checked against this filter, and if there's a hit, instead of forwarding it to the DNS server, it is being rerouted to a 'blackhole'.
+[How exactly does DNS filtering work](https://kb.adguard.com/en/general/dns-filtering#how-does-dns-filtering-work)? It has a special DNS filter which contains a large list of ad and tracker domains, which it uses in conjunction with User rules to recognize 'bad' requests. Every request is checked against this filter, and if there's a hit, instead of forwarding it to the DNS server, it is being rerouted to a 'blackhole'.
  
 The simplicity of this approach is both a benefit and a disadvantage. The main advantage of this approach is that it's both battery life friendly and traffic-saving. Once a domain is blocked, it won't be requested again within an hour. The disadvantage would be the "roughness" of this method: specific URLs can't be blocked, only whole domains. Sometimes the only way to block ads by DNS is to add a rule that will break something at the same time. In this case, we just don't add this rule and the ad remains unblocked — because the alternative where the website does not work at all is even worse.
 
 ## DNS servers
  
-But AdGuard for Android "DNS package" does not end just there. One of the useful perks is an option to select *absolutely any* DNS server to use. At your service is a list consisting of dozens of servers to choose from, from our own AdGuard DNS servers to other popular providers like Google DNS, Cloudflare and others. On top of that, if your favorite server is not in the default list, you still can enter its address manually and use it anyway. See [the comprehensive list of popular DNS providers](/general/dns-providers.md) — you can find many DNS servers there and any to AdGuard with a tap of a finger.
+But AdGuard for Android "DNS package" does not end just there. One of the useful perks is an option to select *absolutely any* DNS server to use. At your service is a list consisting of dozens of servers to choose from, from our own AdGuard DNS servers to other popular providers like Google DNS, Cloudflare and others. On top of that, if your favorite server is not in the default list, you still can enter its address manually and use it anyway. See [the comprehensive list of popular DNS providers](https://kb.adguard.com/en/general/dns-providers) — you can find many DNS servers there and any to AdGuard with a tap of a finger.
  
 There are several reasons to use a custom DNS server instead of one offered by your ISP by default. Some servers are faster, some provide ad blocking or parental control solutions, some enhance your privacy etc.
  
@@ -177,7 +177,7 @@ It is very much like the regular User filter, but for DNS requests.
  
 ![DNS user filter](https://cdn.adguard.com/content/kb/ad_blocker/android/features/dns-user-filter.png)
  
-You'll find DNS user filter at *Settings > DNS Filtering > DNS Requests blocking*. DNS User filter supports two types of syntax: a limited portion of AdGuard syntax and "hosts" syntax. You can read more about it in our [Knowledge Base](/general/dns-filtering-syntax.md).
+You'll find DNS user filter at *Settings > DNS Filtering > DNS Requests blocking*. DNS User filter supports two types of syntax: a limited portion of AdGuard syntax and "hosts" syntax. You can read more about it in our [Knowledge Base](https://kb.adguard.com/en/general/dns-filtering-syntax).
  
 ## Custom DNS filters
  
@@ -224,7 +224,7 @@ While some ot the features in AdGuard for Android are free, others require [purc
 * Ad blocking in all apps (not only browsers)
 * Custom filters
  
-Read [this article](/general/license-key.md#activating-adguard-for-android) to learn how to activate the license key.
+Read [this article](https://kb.adguard.com/en/general/license-key#activating-adguard-for-android) to learn how to activate the license key.
 
 ## Other features   
  
