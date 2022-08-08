@@ -1,6 +1,6 @@
 {
-    "position": 2,
-    "label": "HTTPS filtering",
+    "position": 5,
+    "label": "Userscripts",
     "collapsible": true,
     "collapsed": true
 }

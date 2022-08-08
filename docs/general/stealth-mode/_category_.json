@@ -1,6 +1,6 @@
 {
-    "position": 2,
-    "label": "HTTPS filtering",
+    "position": 4,
+    "label": "Stealth Mode",
     "collapsible": true,
     "collapsed": true
 }
