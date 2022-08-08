@@ -15,12 +15,12 @@ After the installation is completed, tap _Open_ to run the application.
 
 ![Content Blocker installed](https://cdn.adguard.com/content/Kb/ad_blocker/content_blocker/content_blocker_play_market_installed.jpg)
 
-If you have an appropriate browser downloaded on your device, the app will ask you to enable AdGuard.
+If you have an appropriate browser installed on your device, the app will ask you to enable AdGuard.
 
-![Onboarding: user has a required browser](https://cdn.adguard.com/content/Kb/ad_blocker/content_blocker/content_blocker_onboarding2.jpg)
+![Onboarding: user has a spupported browser](https://cdn.adguard.com/content/Kb/ad_blocker/content_blocker/content_blocker_onboarding2.jpg)
 
-If you don't have a required browser, you will be prompted to choose and install one.
+If you don't have a supported browser, you will be prompted to choose and install one.
 
-![Onboarding: no required browser](https://cdn.adguard.com/content/Kb/ad_blocker/content_blocker/content_blocker_onboarding3.jpg)
+![Onboarding: no supported browser](https://cdn.adguard.com/content/Kb/ad_blocker/content_blocker/content_blocker_onboarding3.jpg)
 
-After the required browser is installed, you can start AdGuard Content Blocker and block ads and trackers there.
+After the browser is installed, you can start AdGuard Content Blocker and block ads and trackers there.
