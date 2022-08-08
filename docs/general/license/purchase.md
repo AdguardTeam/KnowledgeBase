@@ -13,11 +13,11 @@ AdGuard Ad Blocker can be bought on [adguard.com](https://adguard.com/en/license
 
 To activate your license, go to the *License* section of your AdGuard product and find the *Log in* field or *Activate* button. You can use the login and password of your AdGuard account. If you don't have an account yet, you will be offered to create one and log in.
 
-In AdGuard for Windows and AdGuard for Mac, you can also use the [license key](ссылка на статью про ключ) to activate the license. Clicking the *Reset license* button logs you out from your device and unbinds the device from your AdGuard account.
+In AdGuard for Windows and AdGuard for Mac, you can also use the [license key](license-key.md) to activate the license. Clicking the *Reset license* button logs you out from your device and unbinds the device from your AdGuard account.
 
 ## How to transfer a license to another device
 
-The license key can be activated on a [limited number of devices](ссылка на adguard license #devices). If the key has already been used on the maximum allowed number of devices, you need to unbind a device from your account. You can do that in three ways:
+The license key can be activated on a [limited number of devices](adguard-license#devices). If the key has already been used on the maximum allowed number of devices, you need to unbind a device from your account. You can do that in three ways:
 * by clicking the *Reset license* button (applies to desktop apps),
 * by logging out of your account in an AdGuard product,
 * by clicking the cross icon next to the device in your AdGuard account.

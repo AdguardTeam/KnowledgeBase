@@ -36,5 +36,5 @@ Different licenses can be used with a different number of devices:
 * Family: nine devices,
 * AdGuard Pro for iOS: one device.
 
-> To use your license on a device, log in to your [AdGuard account](ссылка на текст про аккаунт) on it.
-> To extend the device limit, you can [upgrade](ссылка на текст про апгрейд) your license.
+> To use your license on a device, log in to your [AdGuard account](../account/adguard-account.md) on it.
+> To extend the device limit, you can [upgrade](purchase#how-to-upgrade-a-license) your license.

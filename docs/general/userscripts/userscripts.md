@@ -9,13 +9,14 @@ First, let's get it clear. What is a userscript? Userscripts (we also call them 
 
 ### Supported apps
 
-AdGuard can significantly broaden website functionality by acting as a userscript manager. You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](ссылка на windows/features/extensions), [AdGuard for Android](ссылка на android/overview#extensions-support) and [AdGuard for Mac](ссылка на macos/overview#extensions).
+AdGuard can significantly broaden website functionality by acting as a userscript manager. You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](ссылка на windows/overview), [AdGuard for Android](ссылка на android/overview) and [AdGuard for Mac](ссылка на macos/overview).
 
 ### Recommended AdGuard scripts
 
 > ### ATTENTION
 >
-> These userscripts come directly from the AdGuard developers, and we can guarantee that they are effective and safe. Remember: whenever you download a userscript from an unknown source, you expose yourself to risk, as some scripts may be harmful to your computer. Get new scripts only from the sources you trust 100%. Furthermore, here are [some examples](ссылна на repo) of popular sites with scripts.
+> These userscripts come directly from the AdGuard developers, and we can guarantee that they are effective and safe. Remember: whenever you download a userscript from an unknown source, you expose yourself to risk, as some scripts may be harmful to your computer. Get new scripts only from the sources you trust 100%. Furthermore, here are [some examples](#where-can-you-get-more-userscripts) of popular sites with scripts.
+
 * **AdGuard Extra** - An extension that blocks advertising in difficult cases when the usual filter-based approach is not enough.
 
 * **AdGuard Popup Blocker** - The name speaks for itself. It blocks popups - one of the most annoying types of ads on web pages.

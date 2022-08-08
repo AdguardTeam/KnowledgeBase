@@ -7,7 +7,7 @@ sidebar_position: 1
 
 AdGuard has many ad-blocking products for various platforms, and each product has its own unique features. But what unites them all is that they block ads and trackers. This article describes how ad blocking works from the inside.
 
-> We don't cover DNS filtering here. It's a different way of blocking ads, with its own advantages and disadvantages. Follow this link to [learn more about DNS filtering](ссылка на dns-filtering).
+> We don't cover DNS filtering here. It's a different way of blocking ads, with its own advantages and disadvantages. Follow this link to [learn more about DNS filtering](https://adguard-dns.io/kb/general/dns-filtering/#how-does-dns-filtering-work).
 
 ## General principle
 
@@ -29,7 +29,7 @@ AdGuard users [have access to a special web reporting tool](https://reports.adgu
 
 Filters can do more than just block ads. There are filters that block tracking, social media widgets, and annoyances such as cookie notices. Different users may choose different combinations of filters to match their personal preferences. There are websites like [filterlists.com](https://filterlists.com/) that are dedicated to filter lists and have huge databases.
 
-> We develop and maintain [our own set of filter lists](ссылка на статью adguard-ad-filters) that can be used with AdGuard or other ad blockers.
+> We develop and maintain [our own set of filter lists](adguard-ad-filters.md) that can be used with AdGuard or other ad blockers.
 
 ## Types of filtering rules
 
@@ -53,7 +53,7 @@ In most cases, it's enough to use the above-mentioned basic and cosmetic rules t
 
 These rules are quite complicated and require the ad blocker to be granted certain access rights, so not all platforms support them. Currently, these rules work only in the AdGuard Firefox add-on and in the AdGuard apps for Windows, Mac, and Android.
 
-> There are other types of filtering rules, but they require more advanced technical knowledge to understand how they work. If you are interested, [check out our comprehensive guide on filtering rules in the linked article](ссылка на статью how-to-create-your-own-ad-filters).
+> There are other types of filtering rules, but they require more advanced technical knowledge to understand how they work. If you are interested, [check out our comprehensive guide on filtering rules in the linked article](how-to-create-ad-filters.md).
 
 
 
