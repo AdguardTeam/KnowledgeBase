@@ -81,7 +81,7 @@
   },
   "link.item.label.recover_license": {
     "message": "Recover License",
-    "description": "The label of footer link with label=Recover License linking to /general/license-key"
+    "description": "The label of footer link with label=Recover License linking to /general/license/license-key"
   },
   "link.item.label.terms_of_sale": {
     "message": "Terms of sale",
