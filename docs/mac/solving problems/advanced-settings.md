@@ -109,7 +109,7 @@ Here you can specify the TTL (time to live) value that will be returned in respo
 
 `subscription.link.interception.userscript`
 
-Activate this feature if you want AdGuard to automatically intercept the URLs of userscripts and open the installation window.
+Activate this feature if you want AdGuard to automatically intercept the URLs of userscripts and open the installation window. 
 
 `subscription.link.interception.filter`
 
