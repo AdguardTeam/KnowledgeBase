@@ -18,7 +18,7 @@ The first tab is the General screen where you can set up basic things like notif
 A filter is a list of rules written in a special syntax. Following these rules, content blockers can filter web traffic: block ads or requests to malicious websites.
 
 Filters are combined into eight thematic categories: *Ad Blocking, Privacy, Social widgets, Annoyances, Security, Language-specific filters, Custom, and Other filters*.
-> Read more [about AdGuard filters](article adguard ad filters) or [ad filtering in general](article how ad blocking works)
+> Read more about AdGuard filters (link to article AdGuard ad filters) or ad filtering in general (link to article How ad blocking works).
 
 In the Filters tab, you can enable the whole category or separate filters. Changes in the Filters tab are reflected in the Content Blockers section (located in the General tab).
 
@@ -50,7 +50,7 @@ This content blocker is the main tool against counters and other web analytics t
 
 ### AdGuard Social {#social}
 
-*AdGuard Social* contains filters against social media buttons, widgets, scripts, and icons. To enable them, find *Social Widgets* in the Filters tab.
+*AdGuard Social* contains filters against social media buttons, widgets, scripts, and icons. Other annoyance filters can also be found in this section: filters against popups, mobile app banners, cookie notices, and more. To enable them, find *Social Widgets* in the Filters tab.
 
 ### AdGuard Security {#security}
 
@@ -60,7 +60,7 @@ This content blocker unites several security-related filters. *Malware Domains B
 
 *AdGuard Other* contains filters with various functions. For example, it has a filter that unblocks search ads and self-promo ads. In some cases, it helps find exactly what you are looking for, because these kinds of ads are more relevant and less intrusive than others.
 
-> Disclaimer: we don’t have any ‘acceptable ads’ paid by advertisers. Instead, we provide users with an option to [see search ads and websites' self-promotion](article search ads and self promotion).
+> Disclaimer: we don’t have any ‘acceptable ads’ paid by advertisers. Instead, we provide users with an option to see search ads and websites' self-promotion (link to article Search ads and self-promotion).
 
 ### AdGuard Custom {#custom}
 
@@ -70,7 +70,7 @@ If you need more filters, you can add them to *AdGuard Custom*. To add a custom 
 
 ## User Rules {#userrules}
 
-User rules can be used to customize ad blocking. They can be added manually, imported, or created automatically when you block an element on the page. To add your own filering rules, use [a special syntax](article how to create your own ad filters).
+User rules can be used to customize ad blocking. They can be added manually, imported, or created automatically when you block an element on the page. To add your own filering rules, use a special syntax (link to article How to create your own ad filters).
 
 ## About {#about}
 
@@ -78,4 +78,4 @@ User rules can be used to customize ad blocking. They can be added manually, imp
 
 In the About tab, you can see info about the current version of your product and links to legal documents. There is also a link to our repository on GitHub. You can monitor the product development, create feature requests and report bugs there.
 
-> Reminder: AdGuard for Safari can be downloaded for free [from the App Store](https://apps.apple.com/en/app/adguard-for-safari/id1440147259). A detailed setup instruction is available [in the Knowledge base](article safari installation).
+> Reminder: AdGuard for Safari can be downloaded for free [from the App Store](https://apps.apple.com/en/app/adguard-for-safari/id1440147259). A detailed setup instruction is available in the Knowledge base (link to article Safari installation).
