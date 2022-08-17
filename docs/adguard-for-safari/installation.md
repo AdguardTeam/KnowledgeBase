@@ -1,5 +1,5 @@
 ---
-title: Installation
+title: How to install
 sidebar-position: 2
 ---
 
