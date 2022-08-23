@@ -3,7 +3,6 @@ title: How to become a translator
 sidebar_position: 2
 ---
 
-
 If you want to join AdGuard translators, first of all, go to [Crowdin](https://crowdin.com/) and sign up/sign in there.
 
 
@@ -21,7 +20,7 @@ Choose your language and you will see the list of available product folders.
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/languages.png) 
 
 
-You can start translating literally any product you like by choosing the respective folder. We have some recommendations about [what files are better to start with in AdGuard Websites project](...priority...).
+You can start translating literally any product you like by choosing the respective folder. We have some recommendations about [what files are better to start with in AdGuard Websites project](./translation-priority.md).
 
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/folders.png) 
@@ -47,7 +46,7 @@ Besides, there is an opportunity to open translations in a Voting mode if you ju
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/mode.png)
 
 
-You can find some [helpful tips regarding translating AdGuard in this article](...guides...). Please have a look at it. 
+You can find some [helpful tips regarding translating AdGuard in this article](./guides.md). Please have a look at it. 
 
 
 ### How to become a proofreader {#proofreaders}
@@ -64,4 +63,4 @@ So, what are proofreaders responsible for?
 
 - Respond to comments related to translations in their language.
 
-Every year AdGuard proofreaders receive gifts from AdGuard. Active translators do not go unrewarded either. Read more about our [reward system here](...reward...).
+Every year AdGuard proofreaders receive gifts from AdGuard. Active translators do not go unrewarded either. Read more about our [reward system here](./reward-system.md).

@@ -3,16 +3,6 @@ title: Plural forms
 sidebar_position: 4
 ---
 
-* [What do plural forms mean?]{#plurals}
-* [Where can you learn about the number of plural forms?]{#where-to-learn}
-* [Plurals in AdGuard translations]{#translations}
-    * [Strings with `singular`, `dual`, `plural` keys]{#1type}
-    * [Plural word forms separated by commas]{#2type}
-    * [Crowdin supported patterns]{#3type}
-    * [Strings with templates]{#4type}
-* [Short summary]{#summary}
-
-
 It is no secret, that there are a lot of differences between the world’s languages. One of these differences is the use of plural forms that can cause huge difficulties when it comes to localization issue. 
 
 That is why we strongly recommend you to properly read this article to learn more about plural forms and how they are being used in AdGuard translations. 
@@ -27,7 +17,7 @@ In contrast to English, the Polish language has three plural forms of nouns. One
 
 Let’s have a look at this picture. Here you can see the groups of numerals which determine a word form when standing in front of it.  
 
-![](Polish.png)
+![Polish](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
 >Find other examples [here](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals).
 
@@ -134,13 +124,19 @@ For example, when we translate the above mentioned phrase into Slovak, that acco
 
 `**Štandartná licencia pre *%count%* počítač|Štandartná licencia pre *%count%* počítače|Štandartná licencia pre *%count%* počítačov**` 
 
+![Slovak](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/slovak.png)
+
 In this case, we see three templates which contain three forms of the word *"počítač"* (computer) in Slovak.
 
 *If we ignore one of the forms and use only two templates for Slovak instead of three, the system won’t be able to take an appropriate template for certain numbers* and, as a result, we will have grammar mistakes in sentences, like in English: *Standard license for 5 computer*. 
 
 >**Always use as many forms as there are in your language, even when the word itself has fewer word forms.**
 
- For example, the Serbian word *'računar'* (computer) has only two forms. But there are 3 plural forms in Serbian. Thus, the translation from English into Serbian should be:
+ For example, the Serbian word *'računar'* (computer) has only two forms. But there are 3 plural forms in Serbian. 
+ 
+ ![Serbian](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/serbian.png)
+ 
+ Thus, the translation from English into Serbian should be:
 
 `**Standardna licenca za *%count%* računar|Standardna licenca za *%count%* računara|Standardna licenca za *%count%* računara**`
 

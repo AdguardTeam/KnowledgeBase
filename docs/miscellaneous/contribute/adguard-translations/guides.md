@@ -5,14 +5,27 @@ sidebar_position: 3
 
 There are several things we'd like you to know before you start translating. It will not only save your time and effort, but also ensure that we are on the same page in terms of the meaning of the phrases being translated.
 
+Once you open [our page on Crowdin platform](https://crowdin.com/profile/adguard/), choose any project you need and select your language. 
+
+![Language](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/language.png)
+
+You'll also be able to switch between languages even after opening certain product folders.
+
+![Language1](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/language1.png)
+
+Choose any of available product folders and select a file — now you can start translating. 
+
+![Files](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/files.png)
+
+**The following guidelines will help you through the process.**
 
 1. You can filter translations by clicking this button and selecting any offered option.
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/miscellaneous/adguard-translations/translation-filter_en.png) 
+![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/filter.png) 
 
 2. Easily move between the files of the project.
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/miscellaneous/adguard-translations/search-file_en.png) 
+![crowdin](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/filter_file.png) 
 
 3. Pay attention to the glossary terms highlighted with a dotted line in a source phrase. Usually, they are special words (like brand names) that should not be translated.
 
