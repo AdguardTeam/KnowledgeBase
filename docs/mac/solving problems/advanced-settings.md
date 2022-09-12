@@ -93,7 +93,7 @@ Here you can specify the type of DNS server response to blocked requests, corres
 
 `dns.proxy.blocking.response.IPv4.address`
 
-Here you can specify the IPv4 address that will be returned in response to blocked "A" requests when dns.proxy.adblockrules.blocking.mode or dns.proxy.hostrules.blocking.mode is set to  the response type "ADDRESS".
+Here you can specify the IPv4 address that will be returned in response to blocked "A" requests when `dns.proxy.adblockrules.blocking.mode` or `dns.proxy.hostrules.blocking.mode` is set to the response type "ADDRESS".
 
 `dns.proxy.blocking.response.IPv6.address`
 
