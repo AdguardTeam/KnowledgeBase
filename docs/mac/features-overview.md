@@ -5,7 +5,7 @@ sidebar_position: 2
 
 AdGuard for Mac, as one of our main staples, merits a full how-to guide. We decided to help new users out and to highlight some finer, but less obvious points that even seasoned AdGuard for Mac fans might have been missing.
 
-AdGuard for Mac is a standalone ad blocker program for macOS computers. While AdGuard for Safari browser extension is [limited in ad blocking capabilities](https://adguard.com/en/blog/youtube-ads-in-safari-explained.html) due to Safari Content Blocking, AdGuard for Mac software is full-fledged and can offer more to its users. Let us walk you through the main features.
+AdGuard for Mac is a standalone ad blocker for macOS. While AdGuard for Safari is [limited in ad-blocking capabilities](https://adguard.com/en/blog/youtube-ads-in-safari-explained.html) due to Safari Content Blocking, AdGuard for Mac is full-fledged and can offer more to its users. Let us walk you through the main features.
 
 ## Home panel
 
