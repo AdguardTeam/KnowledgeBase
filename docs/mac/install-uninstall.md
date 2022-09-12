@@ -9,7 +9,7 @@ sidebar_position: 3
 
 **RAM:** at least 2 GB
 
-**Browsers:** Safari, Google Chrome, Opera, Yandex.Browser, Mozilla Firefox, and any other macOS compatible browser
+**Browsers:** Safari, Chrome, Firefox, Opera, Yandex.Browser, and any other macOS compatible browser
 
 **Free disk space:** 120 Mbytes
 
