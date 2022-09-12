@@ -5,10 +5,9 @@ sidebar_position: 8
 
 ## In a nutshell
 
-Apple's Mail app now uses a proxy to hide a user's IP Address when downloading images from emails.
+Apple's Mail app now uses a proxy to hide a user's IP address when downloading images from emails.
 
 ![Mail privacy protection](https://cdn.adguard.com/content/kb/ad_blocker/mac/mac_protectMailActivity.jpg)
-
 
 However, it won't work if there's an active VPN connection. As it treats AdGuard as a VPN, it won't preload images automatically.
 
@@ -33,5 +32,6 @@ So, AdGuard works seamlessly on Monterey, but iCloud Private Relay gets disabled
 
 ```network.extension.monterey.force.split.tunnel``` restores the "Big Sur" behavior, but this option may break access to websites due to (3) and (4).
 We keep searching for a solution to this issue. One of the options is implementing HTTP/3 filtering.
+
 ## Recommended solution
 At this point, we recommend using a more traditional VPN service, such as [AdGuard VPN](https://adguard-vpn.com/), instead of the new Apple's privacy features.
