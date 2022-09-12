@@ -1,5 +1,5 @@
 ---
-title: AdGuard beta testing
+title: Features overview
 sidebar_position: 1
 ---
 

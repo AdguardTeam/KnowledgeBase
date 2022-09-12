@@ -1,5 +1,5 @@
 ---
-title: AdGuard beta testing
+title: AdGuard translation program
 sidebar_position: 1
 ---
 

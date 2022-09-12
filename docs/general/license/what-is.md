@@ -1,5 +1,5 @@
 ---
-title: AdGuard beta testing
+title: What is AdGuard license
 sidebar_position: 1
 ---
 

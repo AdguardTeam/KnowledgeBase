@@ -1,5 +1,5 @@
 ---
-title: Integration mode (legacy)
+title: Search ads and self-promotion
 sidebar_position: 3
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Integration mode (legacy)
+title: Browsing Security
 sidebar_position: 3
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Installation
+title: Local adguard.com domain
 sidebar_position: 2
 ---
 

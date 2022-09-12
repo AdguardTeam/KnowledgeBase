@@ -1,5 +1,5 @@
 ---
-title: AdGuard beta testing
+title: How to contact support
 sidebar_position: 1
 ---
 
