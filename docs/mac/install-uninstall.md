@@ -54,7 +54,7 @@ Here we are, AdGuard is installed on your Mac!
 ## Uninstall
 
 ### Regular
-First of all, open 'Finder' app by clicking on a respective icon:
+First of all, open the Finder app by clicking on a respective icon:
 
 ![Open Finder](https://cdn.adguard.com/public/Adguard/En/Articles/howtodelete/finder.png)
 
