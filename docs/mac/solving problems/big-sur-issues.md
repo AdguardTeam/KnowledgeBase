@@ -98,7 +98,7 @@ Enter a string that looks like `scheme://user:password@host:port`, where
  
 Click *Apply* to make AdGuard route all traffic that went through it to the configured proxy server.
  
-If you run into any problems, please contact our tech support: support@adguard.com.
+If you run into any problems, please contact our tech support at support@adguard.com.
 
 #### Example 1: Configuring an upstream Shadowsocks proxy
  
