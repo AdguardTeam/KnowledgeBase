@@ -19,7 +19,6 @@ You can help us by filling in an application form with examples of ads you faced
 
 To report a reinsertion of an ad or incorrect displaying of a website, you need to:
 
-
 ### Browser extension {#extension}
 
 * Open the browser extension settings by clicking on the corresponding icon;
@@ -28,7 +27,6 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 ![extension](https://cdn.adguard.com/content/Kb/ad_blocker/guides/extension_issue.png)
 
 * After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
-
 
 ### Windows {#windows}
 
@@ -39,7 +37,6 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 * Fill in the form for reporting a complaint;
 * After you've done it, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
 
-
 ### Android {#android}
 
 * Open AdGuard settings;
@@ -49,7 +46,6 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 
 * After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
 
-
 ### Mac {#mac}
 
 * Open [AdGuard Browser Assistant](https://kb.adguard.com/en/macos/overview/browser-assistant) and hit **Report an issue**:
@@ -58,7 +54,6 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 
 * Fill in the form for reporting a complaint;
 * After you've done it, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
-
 
 ### iOS {#ios}
 
@@ -70,46 +65,29 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 * Fill in the form for reporting a complaint;
 * After you've done it, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
 
-
 ## Filling in the form {#form}
 
 > **Note**: When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. Except for the screenshots, you'll have to make and attach them yourself. If you're using a [direct link](https://reports.adguard.com/en/new_issue.html), you’ll need to enter data manually.
 
 1. Filling in the form starts with detailing the type and version of a product;
-
 ![forma1](https://cdn.adguard.com/content/Kb/ad_blocker/guides/forma1en.png)
-
 2. Specify the type of problem and additional information on using third-party software (antivirus, VPN);
-
 ![forma2](https://cdn.adguard.com/content/Kb/ad_blocker/guides/forma2en.png)
-
 3. Enter the address of the page where you have encountered the problem (or full download link in case of an app), and the browser where you've encountered a problem;
-
 ![forma3](https://cdn.adguard.com/content/Kb/ad_blocker/guides/forma3en.png)
-
 4. Application configuration must be specified:
 * Filters you use;
 * Stealth mode settings, if this function is enabled.
-
 ![forma4](https://cdn.adguard.com/content/Kb/ad_blocker/guides/forma4en.png)
-
 5. [Provide a screenshot](./take-screenshot.md) that captures the essence of a problem;
-
 * **Important**: Hide your personal information (email, phone number, etc.) because screenshots will become publicly available.
-
 ![forma5](https://cdn.adguard.com/content/Kb/ad_blocker/guides/forma5en.png)
-
 6. Provide additional information that will help filter developers understand the situation;
 Also enter your account on **GitHub**, if available (it's necessary for developers to be able to reach you in case they need some additional details);
-
 ![forma6](https://cdn.adguard.com/content/Kb/ad_blocker/guides/forma6en.png)
-
 7. Check each step before sending the form;
-
 ![forma7](https://cdn.adguard.com/content/Kb/ad_blocker/guides/forma7en.png)
-
 8. You'll be provided with a link to track progress on your task.
-
 ![forma8](https://cdn.adguard.com/content/Kb/ad_blocker/guides/forma8en.png)
 
 ## Diagnosis of an issue {#issue}

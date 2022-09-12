@@ -47,17 +47,15 @@ If disabling of settings and extensions does not help, try to [recreate shortcut
 
 Further on this page we describe the instructions on how to remove some of the most commonly encountered ad extensions.
 
-
 ## How to disable settings and extensions in the browser {#instructions}
 
-Below are the instructions on how to disable settings and extensions for the most popular browsers.
+Below are the instructions on how to disable settings and extensions for the most popular browsers:
 
-If you use Google Chrome, [read this manual](https://support.google.com/chrome/answer/187443?hl=en).
+* [for Google Chrome](https://support.google.com/chrome/answer/187443?hl=en)
 
-If you use Mozilla Firefox, [read this manual](https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons).
+* [for Mozilla Firefox](https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons)
 
-If you use the Opera browser, [read this manual](https://help.opera.com/en/latest/customization/#extensions).
-
+* [for Opera](https://help.opera.com/en/latest/customization/#extensions)
 
 ## How to recreate shortcuts for your browsers {#shortcuts}
 

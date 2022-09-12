@@ -27,13 +27,12 @@ The above two methods are the most preferred, but you can use others if necessar
 
 * Email our support team from the Support tab in the app or write directly to [support@adguard.com](mailto:support@adguard.com).
 
+## How to activate a beta license key on iOS {#ios}
 
-## How to activate the beta key in the iOS application {#ios}
-
-If you have already received a beta key and it is listed in your `adguard.com` account, go to the app and open the license section (Get Premium). Once there, enter the credentials from your AdGuard account. After that, the premium features will become available automatically.
+If you have already received a beta key and it is listed in your [AdGuard account](https://auth.adguard.com/login.html), go to the app, open the license section, tap *Get Premium*, and enter the credentials from your account. After that, the premium features will become available.
 
 ### What else?
 
 There is not much more to add. You don't have to go out of your way to find bugs. You can continue using AdGuard as usual. However, if you encounter a bug, please report it. Of course, we appreciate any additional effort and/or extra forum activity, etc.
 
-Occasionally, you will receive our newsletters, keeping you informed of the latest changes in the beta (in case you missed them) and other important news. You can unsubscribe from it at any time.
+You will receive our newsletter, keeping you informed of the latest changes in beta versions (in case you missed them) and other news. You can unsubscribe from it at any time.

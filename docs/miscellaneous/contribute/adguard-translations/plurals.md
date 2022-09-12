@@ -3,15 +3,15 @@ title: Plural forms
 sidebar_position: 4
 ---
 
-It is no secret, that there are a lot of differences between the world’s languages. One of these differences is the use of plural forms that can cause huge difficulties when it comes to localization issue. 
+There are a lot of differences between the world’s languages. One of these differences is the use of plural forms that can cause huge difficulties when it comes to localization issue. 
 
-That is why we strongly recommend you to properly read this article to learn more about plural forms and how they are being used in AdGuard translations. 
+We strongly recommend you to properly read this article to learn more about plural forms and how they are being used in AdGuard translations. 
 
 ## What do plural forms mean? {#plurals}
 
 Nouns in different languages can have several plural word forms. Their usage depends on the number of things you are talking about. 
 
-For instance, English words have two word forms when speaking about something in the singular, like *'one star'*, and in the plural – *'two stars'*. It doesn’t matter if you say five, twenty-six or even five hundred thirty-two stars – the ending 's' will remain the same. But some languages can contain only one or, conversely, many more plural forms. 
+For instance, English words have two word forms when speaking about something in the singular, like *'one star'*, and in the plural – *'two stars'*. It doesn’t matter if you say five, twenty six or even five hundred thirty two stars – the ending 's' will remain the same. But some languages can contain only one or many plural forms. 
 
 In contrast to English, the Polish language has three plural forms of nouns. One of them is used when speaking about something in the singular, another form is used in the plural but with numbers ending in 2-4, excluding 12-14, and the third form – for words with other numbers in front of them.
 
@@ -19,7 +19,7 @@ Let’s have a look at this picture. Here you can see the groups of numerals whi
 
 ![Polish](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
->Find other examples [here](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals).
+> Find other examples [here](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals).
 
 Let’s draw a small parallel between English and Polish for better understanding: 
 
@@ -33,14 +33,13 @@ Now it is clear that the Polish *'godzinę'* (hour) has three different forms, w
 
 Except for Polish, there are a lot of other languages that have three plural forms and more, such as Russian, Serbian, Slovak, Czech etc. But not all of them obey the same rule. That's why it is so important to know how many plural forms your language contains and how you can apply them.
 
-
 ## Where can you learn about the number of plural forms? {#where-to-learn}
 
 When you are faced with a translation that requires the use of plurals, you may not be able to realize right away how many word forms your language contains. 
 
 Here are some sources of information you can use.
 
- [Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contains a wide list of languages. The number of plural forms for different languages is shown this way: 'nplurals=2', 'nplurals=4' and so on. The numeral after the Equals sign '='  means the number of plural forms of the respective language.
+[Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contains a wide list of languages. The number of plural forms for different languages is shown this way: 'nplurals=2', 'nplurals=4' and so on. The numeral after the Equals sign '='  means the number of plural forms of the respective language.
 
 Also, you can get information about plural forms in the [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules)(CLDR). The CLDR Plural Rules indicate an additional word form for decimal numbers (1.5; 2.3; 100.1…), but we don’t use them in AdGuard translations.
 
@@ -51,7 +50,6 @@ First of all, we want to mention that not every AdGuard translation requires the
 Currently, we have 4 types of strings on Crowdin that involve the use of plurals.  
 
 Let's take a closer look at them.
-
 
 ### 1. Phrases with string keys ending in `.singular`, `.dual`, `.plural` {#1type}
 
@@ -93,7 +91,6 @@ For example:
 
 Please be attentive when translating these strings and approving them. If you have no idea what the "Other" field means, then just paste the same form as it is in the "Many" field. The translations of "Many" and "Other" fields can be the same.
 
-
 ### 4. Strings with templates separated by the vertical bar sign {#4type}
 
 This is the most complicated type of AdGuard strings which is mostly used in `AdGuard Websites` project.
@@ -132,11 +129,11 @@ In this case, we see three templates which contain three forms of the word *"po�
 
 >**Always use as many forms as there are in your language, even when the word itself has fewer word forms.**
 
- For example, the Serbian word *'računar'* (computer) has only two forms. But there are 3 plural forms in Serbian. 
+For example, the Serbian word *'računar'* (computer) has only two forms. But there are 3 plural forms in Serbian. 
  
- ![Serbian](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/serbian.png)
+![Serbian](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/serbian.png)
  
- Thus, the translation from English into Serbian should be:
+Thus, the translation from English into Serbian should be:
 
 `**Standardna licenca za *%count%* računar|Standardna licenca za *%count%* računara|Standardna licenca za *%count%* računara**`
 
@@ -154,7 +151,7 @@ And again: if you come across an original phrase with two important elements: **
 
 + Keep the exact number of templates;
 
->The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms – two templates in translations; five plural forms – five templates, etc.
+> The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms – two templates in translations; five plural forms – five templates, etc.
 
 + Do not forget to use a vertical bar sign between templates as it is represented in original strings;
 

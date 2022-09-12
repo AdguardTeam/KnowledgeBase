@@ -5,7 +5,7 @@ sidebar_position: 2
 
 Desktop AdGuard apps (AdGuard for Windows and AdGuard for Mac) can be used as a proxy. This means that you can route other devices' traffic through AdGuard (entirely, or traffic of specific apps/browsers).
 
->Note that these devices must be in the same network as the PC or Mac on which AdGuard is installed.
+> Note that these devices must be in the same network as the PC or Mac on which AdGuard is installed.
 
 HTTP traffic will be filtered in any case, but for AdGuard to be able to filter HTTPS traffic you need to manually install AdGuard certificate on the connected device.
 
@@ -25,12 +25,11 @@ Depending on the operation system of your device (Android/iOS), follow one of th
 
 5. Follow this link using any browser: [http://local.adguard.org/cert](http://local.adguard.org/cert)
 
-6. Click on the **Download** button.
+6. Click the **Download** button.
 
-7. Once the certificate is downloaded, you need to install it. Tap on the downloaded certificate to open the file, if it didn't open automatically.
+7. Once the certificate is downloaded, you need to install it. Tap the downloaded certificate to open the file, if it didn't open automatically.
 
 8. On some phones, you might be asked to enter your device password. Do that, then press **OK**. The certificate is now installed.
-
 
 ### iOS {#ios}
 

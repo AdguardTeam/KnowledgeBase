@@ -3,14 +3,13 @@ title: How to collect HAR file
 sidebar_position: 1
 ---
 
-## Creating an HAR File {#har}
+## Creating a HAR File {#har}
 
 HAR files help our technical support teams troubleshoot complex issues. To create these files, we recommend using Chrome or Firefox. However, IE 11, Edge, and Safari also provide `.har` file generation and export capability.
 
-
 ## Chrome {#chrome}
 
-To create an HAR file in Chrome:
+To create a HAR file in Chrome:
 
 1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
 
@@ -36,7 +35,6 @@ To create an HAR file in Chrome:
 9. Save session as a .har file by right clicking on the grid and selecting ***Save as HAR with content***.
 
 10. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
-
 
 ## Edge {#edge}
 
@@ -65,10 +63,9 @@ To create an HAR file in Chrome:
 
 10. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
 
-
 ## Firefox {#firefox}
 
-To create an HAR file in Firefox:
+To create a HAR file in Firefox:
 
 1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
 
@@ -93,10 +90,9 @@ To create an HAR file in Firefox:
 
 9. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
 
-
 ## Internet Explorer 11 {#ie11}
 
-To create an HAR file in Internet Explorer 11:
+To create a HAR file in Internet Explorer 11:
 
 1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
 
@@ -118,10 +114,9 @@ To create an HAR file in Internet Explorer 11:
 
 8. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
 
-
 ## Safari {#safari}
 
-To create an HAR file in Safari:
+To create a HAR file in Safari:
 
 1. Check the Safari menu bar at the top of the screen for a ***Develop*** menu. Check the checkbox at the bottom next to ***Show Develop menu in menu bar***.
 - If not visible, turn it on by going to ***Safari > Preferences > Advanced***.
@@ -142,8 +137,7 @@ To create an HAR file in Safari:
 
 8. Save session as a .har file by clicking the ***Export*** icon next to ***Preserve Log***.
 
-9. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
-
+9. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, too.
 
 ## Android {#android}
 
@@ -162,7 +156,6 @@ To get HAR files follow these steps:
 6. Now turn `pref.har.capture` off again.
 
 7. Go Back, then tap on ***Export logs and system info*** -> ***Save***.
-
 
 ## Windows {#windows}
 
