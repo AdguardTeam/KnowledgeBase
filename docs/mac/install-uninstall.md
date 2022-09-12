@@ -11,10 +11,9 @@ sidebar_position: 3
 
 **Browsers:** Safari, Chrome, Firefox, Opera, Yandex.Browser, and any other macOS compatible browser
 
-**Free disk space:** 120 Mbytes
+**Free disk space:** 120 MB
 
 ## Installation
-
 
 To install AdGuard for macOS on your computer, launch your browser, type _adguard.com_ in the address bar, and press **Download** on the page that opens.
 
@@ -22,13 +21,13 @@ To install AdGuard for macOS on your computer, launch your browser, type _adguar
 
 Wait for _AdguardInstaller.dmg_ to download and double-click on its icon in the list of downloaded files on the Dock panel. 
 
-![Double click to open the file](https://cdn.adguard.com/content/kb/ad_blocker/mac/2.jpg)
+![Double click to open the file](https://cdn.adguard.com/content/kb/ad_blocker/mac/installation_open_the_file.jpg)
 
 The AdGuard icon will appear on your Desktop. Click on it to open the installation app. Then double-click on the AdGuard icon in the opened installation window.
 
 ![Double click on the AdGuard icon](https://cdn.adguard.com/content/kb/ad_blocker/mac/3.jpg)
 
- Upon the first AdGuard launch, your operating system will warn you that this application has been downloaded from the Internet. Click **Open**.
+Upon the first AdGuard launch, your operating system will warn you that this application has been downloaded from the Internet. Click **Open**.
 
 ![Click Open](https://cdn.adguard.com/content/kb/ad_blocker/mac/4.jpg)
 
@@ -43,7 +42,6 @@ Wait for the installer to download the required files.
 To use the application, you will need the administrator password for your macOS account. Enter the password when propped in the dialogue box and press **OK**.
 
 ![Enter the password](https://cdn.adguard.com/content/kb/ad_blocker/mac/7.jpg)
-
 
 Now, you'll see a quick installation wizard where we will offer you to configure protection to your needs. You can either start fine-tuning right away ("Let's do it!") or skip for now ("Leave as it is").
 
@@ -93,7 +91,7 @@ Go to 'Applications' section. Find AdGuard there, right-click on it and choose '
 
 ![Run Activity Monitor](https://cdn.adguard.com/content/kb/ad_blocker/mac/22.jpg)
 
-* Stop the process which is being&nbsp;run under the user (not the one run under root). To do so, click on the process and then on the X on the upper left. Confirm it in the dialogue window.
+* Stop the process which is being run under the user (not the one run under root). To do so, click on the process and then on the X on the upper left. Confirm it in the dialogue window.
 
 ![Confirm](https://cdn.adguard.com/content/kb/ad_blocker/mac/33.jpg)
 
