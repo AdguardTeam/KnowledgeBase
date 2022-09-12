@@ -142,7 +142,7 @@ In this same tab you can refresh your license status, renew your license or rese
 
 ### Support
 
-Click on the gear in the upper right corner, select "Support", and you will be able to send a Bug Report, Feature request, or any other type of message to our Technical Support team. Be sure to add your real actual email though, because without it the message won't be sent. 
+Click on the gear icon in the upper right corner, select "Support", and you will be able to send a bug report or a feature request to our support team. Be sure to add your real actual email though, because without it the message won't be sent. 
 
 ![Support](https://cdn.adguard.com/content/kb/ad_blocker/mac/Support.jpg)
     
