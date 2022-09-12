@@ -30,7 +30,7 @@ When AdGuard for Mac is installed for the first time, the thing a user encounter
 ## Separate tab in settings
 The new Browser Assistant has its own tab in AdGuard for Mac settings, together with Stealth Mode, Browsing Security, Parental Control and others. Don’t worry if you missed the opportunity to install Browser Assistant during the onboarding, you'll find this option in the app's settings. Besides, there is a checkbox to enable the legacy Assistant.
 
-![Browser Assistant tab](https://cdn.adguard.com/content/kb/ad_blocker/mac/assistant-separate-tab.jpg)
+![Browser Assistant tab](https://cdn.adguard.com/content/kb/ad_blocker/mac/assistant-separate-tab.png)
 
 ## Legacy Assistant
 Legacy Assistant is the previous version of Assistant, which is a mere userscript, not a browser extension. Basically, there are two cases when you might want to pick it instead of the new Browser Assistant: 1) the new Assistant is not available for your browser; 2) you are used to the green shield icon and want to leave things as they were.  If you recognize yourself in any of these scenarios, then the legacy version will suit you.
@@ -40,4 +40,4 @@ Technically, you won’t need to do it on your own: during the onboarding proces
 
 AdGuard Browser Assistant is available for all popular browsers: Chrome, Firefox, Safari, Edge, Opera, and Yandex. To install the Browser Assistant for your default browser, you can do it directly from the app settings, but you also have an opportunity to install it for other browsers.
 
-To install the one you need (or many, it is not prohibited but even encouraged), go to [our website](https://adguard.com/en/adguard-assistant/overview.html), click the browser icon and tap the *Download* button. That’s it!
+To install the one you need (or many, it is not prohibited but even encouraged), go to [our website](https://adguard.com/en/adguard-assistant/overview.html), click the browser icon and tap the *Install* button. That’s it!
