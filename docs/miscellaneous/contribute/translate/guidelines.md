@@ -1,5 +1,5 @@
 ---
-title: Integration mode (legacy)
+title: Guidelines and recommendations
 sidebar_position: 3
 ---
 

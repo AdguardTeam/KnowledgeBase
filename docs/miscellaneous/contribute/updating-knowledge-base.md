@@ -1,5 +1,5 @@
 ---
-title: Installation
+title: Updating the Knowledge base
 sidebar_position: 2
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Userscripts
+title: Reward system
 sidebar_position: 5
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Installation
+title: Credits & Acknowledgements
 sidebar_position: 2
 ---
 
