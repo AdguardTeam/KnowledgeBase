@@ -1,5 +1,5 @@
 ---
-title: AdGuard beta testing
+title: Known issues
 sidebar_position: 1
 ---
 
