@@ -1,5 +1,5 @@
 ---
-title: Integration mode (legacy)
+title: How to report a website
 sidebar_position: 3
 ---
 

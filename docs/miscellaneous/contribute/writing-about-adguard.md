@@ -1,5 +1,5 @@
 ---
-title: Integration mode (legacy)
+title: Writing about AdGuard
 sidebar_position: 3
 ---
 

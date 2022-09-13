@@ -1,5 +1,5 @@
 ---
-title: Integration mode (legacy)
+title: Web Extension
 sidebar_position: 3
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Integration mode (legacy)
+title: How to activate
 sidebar_position: 3
 ---
 

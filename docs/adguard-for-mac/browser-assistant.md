@@ -1,5 +1,5 @@
 ---
-title: Integration mode (legacy)
+title: Browser Assistant
 sidebar_position: 3
 ---
 
