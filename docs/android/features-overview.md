@@ -27,7 +27,7 @@ Find out more about all the filters available for AdGuard products by reading th
  
 ![Custom filters](https://cdn.adguard.com/content/kb/ad_blocker/android/features/custom-filters.png)
  
-AdGuard allows you to create your own custom filters, using the same type of rules that we have in our filters. If you want to try your hand at this, we would recommend studying [the article on creating your own ad filters](/general/create-own-filters.md) which describes the AdGuard rules syntax in detail and provides plenty of examples.
+AdGuard allows you to create your own custom filters, using the same type of rules that we have in our filters. If you want to try your hand at this, we would recommend studying [the article on creating your own ad filters](/general/ad-filtering/create-own-filters.md) which describes the AdGuard rules syntax in detail and provides plenty of examples.
  
 > Tip: use the Import feature to transfer your rules to a different device.
  
