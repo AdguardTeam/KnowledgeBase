@@ -27,7 +27,7 @@ Find out more about all the filters available for AdGuard products by reading th
  
 ![Custom filters](https://cdn.adguard.com/content/kb/ad_blocker/android/features/custom-filters.png)
  
-AdGuard allows you to create your own custom filters, using the same type of rules that we have in our filters. If you want to try your hand at this, we would recommend studying the article on creating your own ad filters which describes the AdGuard rules syntax in detail and provides plenty of examples.
+AdGuard allows you to create your own custom filters, using the same type of rules that we have in our filters. If you want to try your hand at this, we would recommend studying [the article on creating your own ad filters](/general/how-to-create-your-own-ad-filters.md) which describes the AdGuard rules syntax in detail and provides plenty of examples.
  
 > Tip: use the Import feature to transfer your rules to a different device.
  
@@ -69,7 +69,7 @@ Many websites gather information about their visitors, such as their IP addresse
  
 You can flexibly adjust the work of Stealth Mode: for instance, you can prohibit the website to receive the search request you used to find it on the Internet, automatically delete both third-party and website’s own cookies, and disable location sharing in your browser that can be used to track your whereabouts.
  
-To learn all the main features and options you can manage in the Stealth mode settings, read this article.
+To learn all the main features and options you can manage in the Stealth mode settings, [read this article](https://kb.adguard.com/en/general/stealth-mode).
  
 ![Stealth mode](https://cdn.adguard.com/content/kb/ad_blocker/android/features/stealth-mode.png)
 
@@ -135,7 +135,7 @@ DNS filtering has its own separate tab within the AdGuard for Android app home s
 
 ## DNS blocking
   
-DNS blocking is a standalone feature that complements AdGuard protection suit.
+DNS blocking is a standalone feature that complements AdGuard protection suite.
   
 ![DNS mechanism](https://cdn.adguard.com/public/Adguard/Blog/android-features/DNS-mechanism.jpg)
  
@@ -222,7 +222,7 @@ While some ot the features in AdGuard for Android are free, others require [purc
 * Ad blocking in all apps (not only browsers)
 * Custom filters
  
-Read this article to learn how to activate the license key.
+Read [this article](/general/license-key.md#activating-adguard-for-android) to learn how to activate the license key.
 
 ## Other features   
  
