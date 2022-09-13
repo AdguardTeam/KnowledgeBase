@@ -1,5 +1,5 @@
 ---
-title: License key
+title: AdGuard filters
 sidebar_position: 2
 ---
 
