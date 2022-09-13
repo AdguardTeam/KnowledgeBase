@@ -5,21 +5,19 @@ sidebar_position: 2
 
 > Disclaimer: AdGuard for Android is not to be confused with AdGuard Content Blocker. AdGuard Content Blocker is an app available in Google Play that has truncated functionality to meet restrictions imposed by the store. AdGuard for Android, on the other hand, is a powerful application to block ads, manage applications, and perform other roles that will be described in this article. The only place it can be downloaded from is [the AdGuard website](https://adguard.com/en/adguard-android/overview.html).
 
-
 ## Ad blocking
 
-Any ad blocker's main purpose is to block ads and for the majority of AdGuard software ad blocking algorithms are mostly the same. The mechanism of filtering ads is described here.
+Any ad blocker's main purpose is to block ads, and for the majority of AdGuard software ad-blocking algorithms are mostly the same. The mechanism of filtering ads is described here.
 
 ![Ad blocking](https://cdn.adguard.com/public/Adguard/Blog/manifestv3/adblockingworks.png)
 
-The ad blocking feature is pretty obvious in its concept, but there are some points worthy of a separate mention. Most importantly, AdGuard works as a universal filter sifting through your apps traffic and deciding what to do with this or that web request. The whole process is managed by filters — lists of special rules. The program has a default and constantly updated set of filters but you can also add your own filtering rules and filters to this set. 
+The ad-blocking feature is pretty obvious in its concept, but there are some points worthy of a separate mention. Most importantly, AdGuard works as a universal filter sifting through your apps traffic and deciding what to do with this or that web request. The whole process is managed by filters — lists of special rules. The program has a default and constantly updated set of filters but you can also add your own filtering rules and filters to this set. 
 
 Most mobile ad blockers for Android use this principle, but what is pretty much the whole app in their case is only one of the many features for AdGuard. Read [this comparative article](https://adguard.com/en/blog/adguard-vs-adaway-dns66.html) to learn the differences between AdGuard and other ad blockers.
 
-
 ## Filters
  
-The program uses a lot of different filters, both public third-party and our own ones, sorted by language and their purpose. For example, filters in the Annoyances category are very different from the Language-specific ones.
+The program uses a lot of different filters,our own and third-party ones, sorted by language and their purpose. For example, filters in the Annoyances category are very different from the language-specific ones.
   
 ![Filters](https://cdn.adguard.com/content/kb/ad_blocker/android/features/filters1.png)
   
@@ -43,36 +41,35 @@ To be able to filter HTTPS traffic, AdGuard needs to install a certificate into 
 
 Here is the installation instruction:
  
-1. Go to the app's main screen and tap *Turn on* next to the *HTTPS filtering is off* message (it will be highlighted in orange if AdGuard certificate is not installed yet)
+1. Go to the app's main screen and tap *Turn on* next to the *HTTPS filtering is off* message (it will be highlighted in orange if the AdGuard certificate is not installed yet).
 
-2. A new screen will appear, tap on the *Next* button, then again on the *Next* and then on *Save it now* when prompted to download an AdGuard certificate
+2. A new screen will appear, tap *Next*, *Next* and *Save it now* when prompted to download the AdGuard certificate.
 
-3. After the certificate is downloaded, you will see a new screen. Tap on the *Open security settings* button there
+3. After the certificate is downloaded, you will see a new screen. Tap *Open security settings*.
 
-4. This will bring up system settings. Scroll down to *Advanced*, open it and then tap on *Encryption & credentials* (these settings may be called variously on different devices — the main thing is to choose advanced security settings)
+4. This will bring up system settings. Scroll down to *Advanced*, open it and then tap *Encryption & credentials* (these settings may be called variously on different devices — the main thing is to choose advanced security settings).
 
-5. Tap on *Install certificate* and then on *CA certificate*
+5. Tap *Install certificate* and then *CA certificate*.
 
-6. A warning message will appear. Read through it and tap *Install anyway* to proceed
+6. A warning message will appear. Read through it and tap *Install anyway* to proceed.
 
-7. Select the recently downloaded AdGuard certificate. A *CA certificate installed* toast message should show up
+7. Select the recently downloaded AdGuard certificate. A *CA certificate installed* toast message should show up.
 
 8. The AdGuard certificate is successfully installed and HTTPS filtering is working now!
  
->If you update from Android 10 to Android 11, there's a chance that already installed certificate will still be accepted. Otherwise, the *HTTPS-filtering is off* string will appear on the main screen, highlighted in orange. So you'll need to go through the same process of reinstalling a certificate manually.
+> If you update from Android 10 to Android 11, there's a chance that the already installed certificate will still be accepted. Otherwise, the *HTTPS filtering is off* warning will appear on the main screen, highlighted in orange. So you'll need to go through the same process of reinstalling the certificate manually.
  
 In case you have problems with the certificate installation, read [this article](/android/solving-problems/manual-certificate.md) or contact our support team.
  
->**We want to emphasize that AdGuard Ad Blocker will also function without HTTPS filtering. However, it won't be able to properly filter ads on sites that use the HTTPS protocol (and the number of such sites is constantly increasing). So if you want to use the full functionality of the app and get the best ad filtering quality and processing speed, we strongly recommend you to activate HTTPS-filtering.**
-
+> **We want to emphasize that AdGuard Ad Blocker will function without HTTPS filtering. However, it won't be able to properly filter ads on sites that use the HTTPS protocol (most of sites do that). So if you want to use the full functionality of the app and get the best ad filtering quality and processing speed, we strongly recommend you to activate HTTPS-filtering.**
 
 ## Stealth Mode
  
 Many websites gather information about their visitors, such as their IP addresses, information about the browser and operating system installed, screen resolution, and even what page the user came or was redirected from. Some web pages use cookies to mark the browser and save your personal settings, user preferences, or “recognize” you upon your next visit. Stealth Mode safeguards your personal information from such data and statistics gathering systems.
  
-You can flexibly adjust the work of Stealth Mode: for instance, you can prohibit the website to receive the search request you used to find it on the Internet, automatically delete both third-party and website’s own cookies, and turn off browser geolocation sharing that can be used to track your whereabouts.
+You can flexibly adjust the work of Stealth Mode: for instance, you can prohibit the website to receive the search request you used to find it on the Internet, automatically delete both third-party and website’s own cookies, and disable location sharing in your browser that can be used to track your whereabouts.
  
-To learn all the main features and options you can manage in the Stealth mode settings, read this article
+To learn all the main features and options you can manage in the Stealth mode settings, read this article.
  
 ![Stealth mode](https://cdn.adguard.com/content/kb/ad_blocker/android/features/stealth-mode.png)
 
@@ -85,6 +82,7 @@ Phishing is a fraudulent online practice aimed at obtaining sensitive informatio
 ![Browsing security](https://cdn.adguard.com/content/kb/ad_blocker/android/features/browsing-security.png)
  
 Fortunately, AdGuard's Browsing Security module protects you from visiting phishing and malicious websites. It also warns you about malware being downloaded onto your device.
+
 > But note that AdGuard for Android is not an antivirus. It will neither stop the actual download of a virus nor delete the already existing ones. For the complete protection of your device, we recommend using AdGuard in tandem with a dedicated AV tool.
  
 ![Browsing security warning](https://cdn.adguard.com/content/kb/ad_blocker/android/features/browsing_security_warning_en.png)
@@ -105,7 +103,7 @@ You can find extra settings in the upper right corner of the Apps Management scr
  
 ![Chrome](https://cdn.adguard.com/content/kb/ad_blocker/android/features/chrome.png)
  
-By tapping the icons, you will see a screen showing app-specific traffic to help you make more informed decisions. As can be noted, AdGuard is of help not only with ad filtering and privacy protection, it can aid your device function better, saving battery life and traffic as well.
+By tapping the icons, you will see a screen showing app-specific traffic to help you make more informed decisions. AdGuard is of help not only with ad filtering and privacy protection, it can aid your device function better, saving battery life and traffic as well.
 
 ## Filtering log
  
@@ -143,8 +141,8 @@ DNS blocking is a standalone feature that complements AdGuard protection suit.
  
 There are two methods of DNS blocking:
 
-1. some DNS servers can block DNS requests to potentially harmful domains;
-2. there is built-in DNS filtering that works right on your device and can block DNS requests, in addition to what's blocked by the selected DNS server.
+1. Some DNS servers can block DNS requests to potentially harmful domains.
+2. There is built-in DNS filtering that works right on your device and can block DNS requests, in addition to what's blocked by the selected DNS server.
  
 How exactly does DNS filtering work? It has a special DNS filter which contains a large list of ad and tracker domains, which it uses in conjunction with User rules to recognize 'bad' requests. Every request is checked against this filter, and if there's a hit, instead of forwarding it to the DNS server, it is being rerouted to a 'blackhole'.
  
@@ -235,4 +233,3 @@ There are too many features to describe them all in detail, so let us simply lis
 * Select an update channel, i.e. the mode in which the application receives its updates (stable release channel, less stable beta channel and raw ["nightly" channel](https://adguard.com/en/blog/nightly-builds/)
 * By tapping a little battery icon on the main screen of the app you will get to the "Battery Usage" screen. System battery stats [are often wrong](/docs/android/solving-problems/battery.md), so we decided to have our own, one that would reflect the real state of things
 * You can change the app's language in the General Settings tab
-
