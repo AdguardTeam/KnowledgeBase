@@ -49,4 +49,4 @@ Here you can specify an alternate server to which a request will be rerouted if 
 
 ### Background app refresh time
 
-Here you can select the frequency at which the application will check for filter updates while in the background. Note that update checks will not be performed more often than the specified period, but the exact intervals may not be respected. 
+Here you can select the frequency at which the application will check for filter updates while in the background. Note that update checks will not be performed more often than the specified period, but the exact intervals may not be respected.

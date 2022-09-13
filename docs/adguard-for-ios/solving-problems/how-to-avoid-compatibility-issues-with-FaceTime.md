@@ -1,5 +1,5 @@
 ---
-title: How to avoid compatibility problem with FaceTime?
+title: How to avoid compatibility problem with FaceTime
 sidebar_position: 3
 ---
 
@@ -19,4 +19,3 @@ To enable it, follow the instructions:
 3. Open *Tunnel mode* and select *Split-Tunnel*.
 
 Done! Now there should be no problems with FaceTime compatibility.
- 

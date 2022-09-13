@@ -1,5 +1,5 @@
 ---
-title: How to configure system-wide blocking with AdGuard for iOS?
+title: How to configure system-wide blocking with AdGuard for iOS
 sidebar_position: 2
 ---
 

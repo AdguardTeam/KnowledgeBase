@@ -1,5 +1,5 @@
 ---
-title: How to activate premium features?
+title: How to activate premium features
 sidebar_position: 1
 ---
 
