@@ -5,7 +5,7 @@ sidebar_position: 1
 
 AdGuard for Safari was designed to conform to Apple's restrictions for ad blocking browser extensions and is the most popupar ad blocker for Safari. Although it can’t be compared to our desktop ad blocking apps, it's free and can protect you from ads, trackers, phishing, and malicious websites.
 
-## General {#general_tab}
+## General {#general}
 
 ![General tab](https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/General.png)
 
@@ -40,35 +40,35 @@ In the Content blockers tab, you can see which content blockers are enabled, how
 
 > You can manage enabled filters in the Filters tab. In the Content blockers section, you can only see the list of already enabled filters.
  
-### AdGuard General {#adguard}
+### AdGuard General {#adguard_general}
 
 *AdGuard General* is a content blocker that combines the most essential filters for blocking ads. We recommend keeping the AdGuard Base Filter always enabled.
 
-### AdGuard Privacy {#privacy}
+### AdGuard Privacy {#adguard_privacy}
 
 This content blocker is the main tool against counters and other web analytics tools. The *AdGuard Tracking Protection filter* is enabled by default.
 
-### AdGuard Social {#social}
+### AdGuard Social {#adguard_social}
 
 *AdGuard Social* contains filters against social media buttons, widgets, scripts, and icons. Other annoyance filters can also be found in this section: filters against popups, mobile app banners, cookie notices, and more. To enable them, find *Social Widgets* in the Filters tab.
 
-### AdGuard Security {#security}
+### AdGuard Security {#adguard_security}
 
 This content blocker unites several security-related filters. *Malware Domains Blocklist* blocks domains that are notorious for spreading malware and spyware. *Spam404* protects you from Internet fraudsters. *NoCoin Filter List* disrupts browser-based cryptominers, such as Coinhive.
 
-### AdGuard Other {#other}
+### AdGuard Other {#adguard_other}
 
 *AdGuard Other* contains filters with various functions. For example, it has a filter that unblocks search ads and self-promo ads. In some cases, it helps find exactly what you are looking for, because these kinds of ads are more relevant and less intrusive than others.
 
 > Disclaimer: we don’t have any ‘acceptable ads’ paid by advertisers. Instead, we provide users with an option to see [search ads and websites' self-promotion](/general/ad-filtering/search-ads.md).
 
-### AdGuard Custom {#custom}
+### AdGuard Custom {#adguard_custom}
 
 ![Custom tab](https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/AGCustom.png)
 
 If you need more filters, you can add them to *AdGuard Custom*. To add a custom filter, enter a URL or a local file path in the relevant field. You can find new filters at [filterlists.com](https://filterlists.com/).
 
-## User Rules {#userrules}
+## User rules {#userrules}
 
 User rules can be used to customize ad blocking. They can be added manually, imported, or created automatically when you block an element on the page. To add your own filering rules, use a [special syntax](/general/ad-filtering/create-own-filters.md).
 
