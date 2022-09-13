@@ -19,7 +19,7 @@ AdGuard provides a range of software products that block ads and trackers on dif
 
 ## Ad blocking {#adblocker}
 
-Blocking ads is clearly the key functionality of any ad blocker, and AdGuard is not an exception. The extension will successfully block ads on any page in your browser. Ad blocking is based on so-called filter lists, or simply [filters](https://adguard.com/en/blog/how-ad-blocking-is-done.html). Filters can be enabled or disabled in your extension's settings. You can customize ad blocking by activating specific filters.
+Blocking ads is clearly the key functionality of any ad blocker, and AdGuard is not an exception. The extension will successfully block ads on any page in your browser. Ad blocking is based on so-called filter lists, or simply [filters](/general/ad-filtering/how-ad-blocking-works.md). Filters can be enabled or disabled in your extension's settings. You can customize ad blocking by activating specific filters.
 
 ### Filters {#filters}
 
@@ -55,7 +55,7 @@ You can import a ready-to-use filter list from a text file as well. *Make sure t
 
 Besides, you can export your own filtering rules. This option is good for transferring your list of rules between browsers or devices.
 
-When you add a website to the Allowlist (more on that [below](#allowlist)) or use [the Assistant tool](#assistant) for hiding an element on the page, a corresponding rule is also saved in *User rules*.
+When you add a website to the Allowlist (more on that [below](#allowlist)) or use the Assistant tool for hiding an element on the page, a corresponding rule is also saved in *User rules*.
     
 ### Allowlist {#allowlist}
 
@@ -89,7 +89,7 @@ In the *General* tab, you can allow search ads and the [self-promotion of websit
 
 ![General](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_general.png)
 
-Besides, here you can enable *Phishing and malware protection*. ([How it works](/general/browsing-security.md#phishing))
+Besides, here you can enable [*Phishing and malware protection*](/general/browsing-security.md#phishing)).
 
 You can save your settings configuration by clicking the **Export settings** button. The settings will be saved as a .json file. To upload the previously saved settings configuration, use the **Import settings** function. You can even use it to quickly switch between different settings profiles or even to transfer settings configurations between different browsers.
 
