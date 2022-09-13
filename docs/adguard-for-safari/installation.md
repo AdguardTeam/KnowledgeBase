@@ -3,7 +3,7 @@ title: Installation
 sidebar_position: 2
 ---
 
-## How to install AdGuard for Safari
+## How to install AdGuard for Safari {#install}
 
 AdGuard for Safari is a free app presented on the App Store. To install it on your device, do the following.
 
@@ -24,7 +24,7 @@ AdGuard for Safari is a free app presented on the App Store. To install it on yo
 After you complete steps 1-3, AdGuard for Safari will start functioning. You can now configure its settings.
 
 
-## How to uninstall AdGuard for Safari
+## How to uninstall AdGuard for Safari {#uninstall}
 To uninstall AdGuard for Safari, do the following:
 
 1. Quit the app.

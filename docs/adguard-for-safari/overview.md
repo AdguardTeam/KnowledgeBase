@@ -5,7 +5,7 @@ sidebar_position: 1
 
 AdGuard for Safari was designed to conform to Apple's restrictions for ad blocking browser extensions and is the most popupar ad blocker for Safari. Although it can’t be compared to our desktop ad blocking apps, it's free and can protect you from ads, trackers, phishing, and malicious websites.
 
-## General {#general}
+## General {#general_tab}
 
 ![General tab](https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/General.png)
 
@@ -40,7 +40,7 @@ In the Content blockers tab, you can see which content blockers are enabled, how
 
 > You can manage enabled filters in the Filters tab. In the Content blockers section, you can only see the list of already enabled filters.
  
-### AdGuard General {#general}
+### AdGuard General {#adguard}
 
 *AdGuard General* is a content blocker that combines the most essential filters for blocking ads. We recommend keeping the AdGuard Base Filter always enabled.
 
