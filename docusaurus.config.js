@@ -132,11 +132,11 @@ module.exports = {
             },
             {
               label: 'how_to_create_your_own_ad_filter',
-              to: '/general/ad-filtering/how-to-create-ad-filters',
+              to: '/general/ad-filtering/create-own-filters',
             },
             {
               label: 'adguard_ad_filters',
-              to: '/general/ad-filtering/adguard-ad-filters',
+              to: '/general/ad-filtering/adguard-filters',
             },
             {
               label: 'removal_instructions',
@@ -157,7 +157,7 @@ module.exports = {
             },
             {
               label: 'recover_license',
-              to: '/general/license/license-key',
+              to: '/general/license/what-is',
             },
             {
               label: 'terms_of_sale',
