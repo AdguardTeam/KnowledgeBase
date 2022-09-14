@@ -1,5 +1,5 @@
 ---
-title: AdGuard account
+title: How to register
 sidebar_position: 1
 ---
 
@@ -9,7 +9,7 @@ An AdGuard account is:
 1. User data, such as login credentials, preferred language and license info, that can be used for user identification;
 2. A [web interface](https://auth.adguard.com/login.html) where user data can be managed.
 
-You can log to AdGuard or [activate a license](article license) using the login and password for your AdGuard account.
+You can log to AdGuard or [activate a license](../license/activation.md) using the login and password for your AdGuard account.
 
 ## How to create an account 
 

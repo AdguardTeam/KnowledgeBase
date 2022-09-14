@@ -7,7 +7,7 @@ In your account, you can manage your licenses, devices bound to them, personal d
 
 ## Manage account settings 
 
-In the *Settings* section of your AdGuard account, you can update or reset your password, change your email address, enable [two-factor authentication](article 2FA, view the data stored about you by AdGuard and choose the language of your personal account and notifications.
+In the *Settings* section of your AdGuard account, you can update or reset your password, change your email address, enable [two-factor authentication](2fa.md), view the data stored about you by AdGuard and choose the language of your personal account and notifications.
 
 In this section, you can also manage your email preferences:
 * receive transactional emails,
@@ -19,7 +19,7 @@ In this section, you can also manage your email preferences:
 
 In the *Licenses* section, you can manage your licenses and the devices bound to them.
 
-[AdGuard licenses](article license) can be:
+[AdGuard licenses](../license/what-is.md) can be:
 * bound and unbound,
 * extended,
 * upgraded,
