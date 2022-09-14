@@ -35,7 +35,7 @@ There are eight of them, each category unites several filters that serve and sha
 
 ### User rules {#user-rules}
 
-Here you can add new rules — either by entering them manually, or by using [the AdGuard manual blocking tool in Safari](/adguard-for-ios/overview.md). Use this tool to customize Safari filtering without adding an entire filter list. 
+Here you can add new rules — either by entering them manually, or by using [the AdGuard manual blocking tool in Safari](/adguard-for-ios/overview.md#assistant). Use this tool to customize Safari filtering without adding an entire filter list. 
 
 > Learn [how to create your own ad filters](/general/ad-filtering/create-own-filters.md). But please note that many of them won't work in Safari on iOS.
 

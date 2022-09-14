@@ -36,7 +36,7 @@ You can add any DNS filter or hosts file, the instruction will be the same for a
 
 > Note: We don't recommend touching other settings you'll find inside the *Advanced settings* tab, especially when it comes to *Low-level settings*. Some of them might break the Internet connection or compromise your privacy and security, so it's better to be careful. The text below describes the exact actions required to add AdGuard DNS filter.
 
-3. Copy this link: `https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt`(it's a link for AdGuard DNS filter)
+3. Copy this link: `https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt` (it's a link for AdGuard DNS filter)
 4. Open *AdGuard for iOS settings* —> *DNS protection* —> *DNS filtering* (available while *Advanced mode* is enabled) —> *DNS filters*.
 5. Click *Add a filter*, paste the link into the filter URL field, and click 'Next'.
 
