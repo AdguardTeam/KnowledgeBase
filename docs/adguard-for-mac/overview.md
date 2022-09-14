@@ -1,6 +1,6 @@
 ---
 title: Features overview
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 AdGuard for Mac, as one of our main staples, merits a full how-to guide. We decided to help new users out and to highlight some finer, but less obvious points that even seasoned AdGuard for Mac fans might have been missing.
