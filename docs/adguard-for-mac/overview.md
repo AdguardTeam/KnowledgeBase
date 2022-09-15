@@ -134,7 +134,7 @@ There are other useful AdGuard options that shouldn't go unnoticed in this artic
 
 ### License
 
-First, there's the License management tab which you can open from the dropdown main menu (the one that opens once you click on the gear icon on the upper right of the main window). From this tab you can see which license type you are using, check its status and validity period. 
+First, there's the License management tab that you can open from the dropdown main menu (the one that opens once you click the gear icon on the upper right of the main window). From this tab you can see which license type you are using, check its status and validity period. 
     
 ![License](https://cdn.adguard.com/content/kb/ad_blocker/mac/License.jpg)
 
@@ -142,7 +142,7 @@ In this same tab you can refresh your license status, renew your license or rese
 
 ### Support
 
-Click on the gear icon in the upper right corner, select "Support", and you will be able to send a bug report or a feature request to our support team. Be sure to add your real actual email though, because without it the message won't be sent. 
+Click the gear icon in the upper right corner, select "Support", and you will be able to send a bug report or a feature request to our support team. Be sure to add your real actual email though, because without it the message won't be sent. 
 
 ![Support](https://cdn.adguard.com/content/kb/ad_blocker/mac/Support.jpg)
     
@@ -152,4 +152,4 @@ It is possible to attach a diagnostic report to your message, you only need to c
 
 ### Updates check
 
-Last but not least. You can check for filter and program updates by simply clicking on the corresponding menu options in the dropdown menu (click on the gear icon, and you'll see it).
+Last but not least. You can check for filter and program updates by clicking the corresponding menu options in the dropdown menu (click the gear icon and you'll see it).

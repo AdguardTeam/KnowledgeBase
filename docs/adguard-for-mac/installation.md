@@ -19,11 +19,11 @@ To install AdGuard for macOS on your computer, launch your browser, type _adguar
 
 ![Download the app](https://cdn.adguard.com/content/kb/ad_blocker/mac/1.jpg)
 
-Wait for _AdguardInstaller.dmg_ to download and double-click on its icon in the list of downloaded files on the Dock panel. 
+Wait for _AdguardInstaller.dmg_ to download and double-click its icon in the list of downloaded files on the Dock panel. 
 
 ![Double click to open the file](https://cdn.adguard.com/content/kb/ad_blocker/mac/installation_open_the_file.jpg)
 
-The AdGuard icon will appear on your Desktop. Click on it to open the installation app. Then double-click on the AdGuard icon in the opened installation window.
+The AdGuard icon will appear on your desktop. Click it to open the installation app and double-click the AdGuard icon in the opened window.
 
 ![Double click on the AdGuard icon](https://cdn.adguard.com/content/kb/ad_blocker/mac/3.jpg)
 
@@ -43,7 +43,7 @@ To use the application, you will need the administrator password for your macOS 
 
 ![Enter the password](https://cdn.adguard.com/content/kb/ad_blocker/mac/7.jpg)
 
-Now, you'll see a quick installation wizard where we will offer you to configure protection to your needs. You can either start fine-tuning right away ("Let's do it!") or skip for now ("Leave as it is").
+Now, you'll see a quick installation wizard where you'll be offered to configure protection to your needs. You can either start fine-tuning right away ("Let's do it!") or skip for now ("Leave as it is").
 
 ![Configure protection](https://cdn.adguard.com/content/kb/ad_blocker/mac/installation-wizard.jpg)
 
@@ -52,11 +52,11 @@ Here we are, AdGuard is installed on your Mac!
 ## Uninstall
 
 ### Regular
-First of all, open the Finder app by clicking on a respective icon:
+First of all, open the Finder app by clicking the respective icon:
 
 ![Open Finder](https://cdn.adguard.com/public/Adguard/En/Articles/howtodelete/finder.png)
 
-Go to 'Applications' section. Find AdGuard there, right-click on it and choose 'Move to Trash'.
+Go to the Applications section. Find AdGuard there, right-click it and choose **Move to Trash**.
 
 ![Move AdGuard to Trash](https://cdn.adguard.com/content/kb/ad_blocker/mac/11.jpg)
 
@@ -90,7 +90,7 @@ Go to 'Applications' section. Find AdGuard there, right-click on it and choose '
 
 ![Run Activity Monitor](https://cdn.adguard.com/content/kb/ad_blocker/mac/22.jpg)
 
-* Stop the process which is being run under the user (not the one run under root). To do so, click on the process and then on the X on the upper left. Confirm it in the dialogue window.
+* Stop the process which is being run under the user (not the one run under root). To do so, click the process and then click X on the upper left. Confirm it in the dialogue window.
 
 ![Confirm](https://cdn.adguard.com/content/kb/ad_blocker/mac/33.jpg)
 
