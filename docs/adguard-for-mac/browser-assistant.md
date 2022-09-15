@@ -15,10 +15,9 @@ AdGuard Browser Assistant is an extension installed in a browser, so there is no
 If you got into the habit of using our previous AdGuard ad blocker extension [in Integration mode](https://kb.adguard.com/en/browser-extensions/integration-mode), you may like the solution that we have developed for the new Browser Assistant.
  
 Background information:  
-> When using the Browser Assistant, all these problems don’t matter as there can be no conflicts in essence. The role of the Browser Assistant is well defined and it can’t hinder the functioning of the main app, so there is no need to worry.
+> In previous versions of the AdGuard Browser Extension (before v3.5), if you had it installed along with a desktop AdGuard for Mac, the extension took over the functions of Assistant, stopped filtering itself and relied on the app to do this. The extension and the app worked in conjunction but sometimes the integration would fail. Some websites would stop being protected by the desktop program and be backed up only by the less powerful extension.
  
-> The extension and the app worked in conjunction but sometimes the integration would fail. Some websites would stop being protected by the desktop program and be backed up only by the less powerful extension. 
-When using the Browser Assistant, all these problems don’t matter as there can be no conflicts in essence. The role of the Browser Assistant is well-defined and it can’t hinder the functioning of the main app, so there is no need to worry.
+> When using the Browser Assistant, all these problems don’t matter as there can be no conflicts in essence. The role of the Browser Assistant is well defined and it can’t hinder the functioning of the main app, so there is no need to worry.
 
 ### Smart onboarding
 When AdGuard for Mac is installed for the first time, the thing a user encounters in the first place is the onboarding. During this process the user quickly learns about AdGuard's settings and can customize filtering to their liking. At one stage AdGuard will determine the user's default browser and provide them with a download link for the new Assistant.
