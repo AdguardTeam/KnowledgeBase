@@ -29,9 +29,9 @@ From these screenshots you can see that:
 
 1. AdGuard, as expected, is at the top of the chart. This is generally typical for smartphones (and not at all for tablets without 4G, since WiFi is much less 'costly' in terms of battery consumption).
 
-2. Pay attention to the number of sent Mobile and WiFi packages, which were attributed to AdGuard (Mobile packets sent и Wi-Fi packets sent) on screenshot #2.
+2. Pay attention to the number of sent Mobile and WiFi packages, which were attributed to AdGuard (Mobile packets sent и Wi-Fi packets sent) on the second screenshot.
 
-3. On screenshot #3 are stats for one of the real traffic consumers, Yandex.Browser. It was not attributed almost any traffic at all, while in reality 70% of the total traffic was consumed by it.
+3. On the third screenshot are stats for one of the real traffic consumers, Yandex.Browser. It was not attributed almost any traffic at all, while in reality 70% of the total traffic was consumed by it.
 
 ### How much battery resource does AdGuard really consume?
 

@@ -3,13 +3,13 @@ title: How to protect AdGuard from being disabled by the system
 sidebar_position: 9
 ---
 
-In some cases, apps won't stay in the background ("alive" or in a sleep mode) due to Android OS optimization function, or so called "battery save mode" — this function can kill background applications. It may be inconvenient to relaunch them each time they are getting closed. To avoid the background app termination you need to follow these steps which we described separately for each manufacturer (version) of Android OS. Note that instructions for different manufacturers are mostly very similar.
+In some cases, apps won't stay in the background ("alive" or in a sleep mode) due to the Android OS optimization function, or the so-called "battery save mode" — this function can kill background applications. It may be inconvenient to relaunch them each time they are getting closed. To avoid the background app termination, you need to follow the steps we described separately for each manufacturer (version) of Android OS. Note that instructions for different manufacturers are mostly very similar.
 
 ## Asus
 
 Information on Asus devices is still far from being exhaustive so there may be more issues than listed here. We're going to update this part of the article when we know more.
 
-Go to Settings - Power Manager - Mobile Manager - Settings - Battery-saving options - Auto-start manager - AdGuard - uncheck.
+Go to Settings > Power Manager > Mobile Manager > Settings > Battery-saving options > Auto-start manager > AdGuard > uncheck.
 
 ## Xiaomi
 
@@ -32,7 +32,7 @@ Tap the *Gear* icon at the top-right corner of the screen.
 ![Miui Settings](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_1.jpeg) 
 
 
-Tap *Boost speed* in Feature Settings
+Tap *Boost speed* in Feature Settings.
 
 ![Miui Settings](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_2.png)   
 
@@ -65,14 +65,13 @@ Now launch the active apps manager by swiping up from the bottom of the screen a
 
 ![Xiaomi](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi6.jpeg)
 
-Tap and hold on it until a special menu pops up. Select a lock icon.
+Tap and hold it until a special menu pops up. Select a lock icon.
 
 ![Xiaomi](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi7en.jpeg)
 
 The lock icon should appear above the app window.
 
 ![Xiaomi](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi8en.jpeg)
-
 
 #### MIUI 10-11
 
@@ -82,13 +81,11 @@ To let your app run successfully in the background, configure settings as follow
 
 - *Settings > Battery & performance* > switch-off *Battery saver* function
 
-
 ![Xiaomi](https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi2en.png)
 
 - Then open *App battery saver* settings > *AdGuard* > *No restrictions*
 
 ![Xiaomi](https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi3en.png)
-
 
 #### Power management
 
@@ -140,7 +137,7 @@ To set up AdGuard's background work for Xiaomi devices you should pay attention 
 
 #### Galaxy S9 / S10
 
-Battery optimization is **turned on by default**. At some unclear moments (maybe on app update, OS update), the settings also do revert back to the defaults, forcing you to turn them off again and again.
+Battery optimization is **turned on by default**. During the app update or the OS update, the settings also do revert back to the defaults, forcing you to turn them off again.
 
 #### Sleeping apps
 
@@ -161,7 +158,6 @@ Checklist:
 
 ![Samsung](https://cdn.adguard.com/public/Adguard/screenshots/android/samsung2en.png)
 
-
 3. Tap the **3-dot menu** > **Settings**
 
 ![Samsung](https://cdn.adguard.com/public/Adguard/screenshots/android/samsung3en.png)
@@ -175,7 +171,7 @@ Checklist:
 
 ![Samsung](https://cdn.adguard.com/public/Adguard/screenshots/android/samsung6en.png)
 
-> **Note**: Make sure that Put unused apps to sleep and Auto-disable unused apps is disabled. Otherwise Samsung will put your apps back to sleep after a few days (3 by default) even if you have woken them up manually!
+> **Note**: Make sure that `Put unused apps to sleep` and `Auto-disable unused apps` are disabled. Otherwise, Samsung will put your apps back to sleep after a few days even if you have woken them up manually.
 
 #### Old Samsung devices
 
@@ -209,17 +205,15 @@ For early Samsung devices, there is no huge need for setting up the background w
 
 ![Huawei](https://cdn.adguard.com/public/Adguard/screenshots/android/huawei3en.png)
 
-
 3. Make sure to **ENABLE** all toggles.
 
 Also for reliable background processes you may need to uninstall PowerGenie as detailed below.
 
-
 #### EMUI 9+ devices
 
-> Note: On some phones with EMUI 9+ (Android P+) Huawei introduced a new task killer app called PowerGenie which forces to quit all apps not whitelisted by Huawei and does not give users any configuration options. See below how to uninstall it.
+> Note: On phones with EMUI 9+ (Android P+) there is a task killer app called PowerGenie which forces to quit all apps not whitelisted by Huawei and does not give users any configuration options. See below how to uninstall it.
 
-Huawei is extremely inventive in breaking apps on their devices. In addition to all the non-standard power management measures described below, they introduced a new task killer app build right into EMUI 9 on Android Pie.
+Huawei is extremely inventive in breaking apps on their devices. In addition to all the non-standard power management measures described below, they introduced a new task killer app built right into EMUI 9 on Android Pie.
 
 It is called **PowerGenie** and it kills all apps that are not on its whitelist. You cannot add custom apps on their pre-defined whitelist. This means there is no other way to fix proper app functionality on Huawei than uninstalling PowerGenie.
 
@@ -322,7 +316,7 @@ From now on, background apps are supposed to work smoothly and use the standard 
 
 Sometimes background services are being killed (including accessibility services, which then need re-enabling) every time you turn the screen off. So far, a workaround for this is:
 
-Go to “Security Centre” - tap on "Privacy Permissions" - "Startup manager" and allow AdGuard app to run in background.
+Go to “Security Centre” > tap on "Privacy Permissions" > "Startup manager" and allow AdGuard app to run in background.
 
 Other solutions: 
 
@@ -336,7 +330,7 @@ Devices with OxygenOS on board are the most problematic, with its OS-specific ca
  
  - Go to Settings
  
- - Battery - Battery optimization
+ - Battery > Battery optimization
  
  - Find the app you want to keep awake all the time
  
@@ -366,7 +360,7 @@ Sony was the first mobile OS developer to introduce non-standard background proc
 
 **Solution:**
 
-Go to Settings - Battery - Three dots in the top right corner - Battery optimization - Apps - **AdGuard** - uncheck
+Go to Settings > Battery > Three dots in the top right corner > Battery optimization > Apps > **AdGuard** > uncheck
 
 ## Wiko
 
@@ -374,15 +368,15 @@ Wiko devices are definitely problematic in terms of non-standard background proc
 
 **Solution:**
 
-- Go to Phone Assistant - Battery - turn off *Eco Mode*
+- Go to Phone Assistant > Battery > turn off *Eco Mode*
 - Go back and go to *Manual mode*
-- Tap on the Gear icon on top right - Background apps whitelist > Select *AdGuard*
+- Tap on the Gear icon on top right > Background apps whitelist > Select *AdGuard*
 
 ## Android stock devices Pixel/Nexus/Essential
 
 Android stock OS normally does not conflict with applications working in the background, but if you are facing any issues you will need to switch on the "Always on VPN" mode.
 
- - Go to Settings - Network and Internet
+ - Go to Settings > Network and Internet
  
  ![Stocknetwork](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/stocknetwork.png)
 
