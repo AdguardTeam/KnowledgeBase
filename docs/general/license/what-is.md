@@ -5,9 +5,9 @@ sidebar_position: 1
 
 ## What is AdGuard license 
 
-An AdGuard license is a permission to use a specific AdGuard product.
+An AdGuard license is a permission to use an AdGuard product.
 
-AdGuard licenses exist in a form of license keys, activation codes, and product cards in the user's [AdGuard account](../account/register.md).
+AdGuard licenses exist in the form of license keys, activation codes, and product cards in the user's [AdGuard account](../account/register.md).
 
 Some licenses need to be purchased (e.g. AdGuard Ad Blocker Personal), some are free and limited by term (e.g. trial licenses of AdGuard apps) or have a limited functionality (e.g. AdGuard for iOS or AdGuard Browser extension). Here's the list of all types of AdGuard Ad Blocker licenses.
 
@@ -32,12 +32,12 @@ Some licenses need to be purchased (e.g. AdGuard Ad Blocker Personal), some are 
 ## How many devices can be added{#devices}
 
 Different licenses can be used with a different number of devices:
-* Personal: three devices,
-* Family: nine devices,
+* Personal: up to three devices,
+* Family: up to nine devices,
 * AdGuard Pro for iOS: one device.
 
 > To use your license on a device, log in to your [AdGuard account](../account/features.md) on it.
-> To extend the device limit, you can [upgrade](activation#how-to-upgrade-a-license) your license.
+> To extend the device limit, you can [upgrade](activation.md#how-to-upgrade-a-license) your license.
 
 ## What is a license key{#license-key} 
 
@@ -46,7 +46,7 @@ A license key is a unique sequence of characters that represents an AdGuard Ad B
 * [activate your license](activation.md) in a product, if you don't have an AdGuard account,
 * bind your license to your AdGuard account and unbind it.
 
-> When unbinding a license, be sure you record the key in a safe place. You'll need the key for re-binding your license or transferring it to another account.
+> When unbinding a license, be sure you write the license key down beforehand or note in some other (safe) way. You'll need the key for re-binding your license or transferring it to another account.
 
 ## How to recover a license key
 

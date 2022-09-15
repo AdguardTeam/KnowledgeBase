@@ -3,11 +3,7 @@ title: Local adguard.com domain
 sidebar_position: 3
 ---
 
-## Introduction
-
 Users of AdGuard for Windows, Mac, and Android may notice that AdGuard adds a small script to every web page, that is loaded from the `local.adguard.org` domain.
-
-### Virtual domain for applying cosmetic rules
 
 First of all, don't worry, this is not a real domain, and there is actually no real server with that name. This domain is used to apply cosmetic filtering to web pages, but everything is done locally right on your device without connecting to any server.
 

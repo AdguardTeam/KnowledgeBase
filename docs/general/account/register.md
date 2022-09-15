@@ -9,7 +9,7 @@ An AdGuard account is:
 1. User data, such as login credentials, preferred language and license info, that can be used for user identification;
 2. A [web interface](https://auth.adguard.com/login.html) where user data can be managed.
 
-You can log to AdGuard or [activate a license](../license/activation.md) using the login and password for your AdGuard account.
+You can use AdGuard account to manage your licenses, subscriptions, and purchases of AdGuard products. Many AdGuard products also offer an option to activate them by entering the credentials for your AdGuard account that contains a valid license.
 
 ## How to create an account 
 

@@ -3,28 +3,25 @@ title: Userscripts
 sidebar_position: 5
 ---
 
-## Introduction
-
-First, let's get it clear. What is a userscript? Userscripts (we also call them "extensions") are, de-facto, mini-programs written in Javascript. They modify or extend the functionality of one or more websites. Many AdGuard users may be already familiar with such userscripts as AdGuard Assistant, Popup Blocker, and AdGuard Extra.
+Userscripts (we also call them "extensions") are, de-facto, mini-programs written in Javascript. They modify or extend the functionality of one or more websites. Many AdGuard users may be already familiar with such userscripts as AdGuard Assistant, Popup Blocker, and AdGuard Extra.
 
 ### Supported apps
 
-AdGuard can significantly broaden website functionality by acting as a userscript manager. You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](ссылка на windows/overview), [AdGuard for Android](ссылка на android/overview) and [AdGuard for Mac](ссылка на macos/overview).
+AdGuard can significantly broaden website functionality by acting as a userscript manager. You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](/docs/adguard-for-windows/overview.md), [AdGuard for Android](/docs/adguard-for-android/overview.md) and [AdGuard for Mac](/docs/adguard-for-mac/overview.md).
 
 ### Recommended AdGuard scripts
 
-> ### ATTENTION
->
 > These userscripts come directly from the AdGuard developers, and we can guarantee that they are effective and safe. Remember: whenever you download a userscript from an unknown source, you expose yourself to risk, as some scripts may be harmful to your computer. Get new scripts only from the sources you trust 100%. Furthermore, here are [some examples](#where-can-you-get-more-userscripts) of popular sites with scripts.
 
-* **AdGuard Extra** - An extension that blocks advertising in difficult cases when the usual filter-based approach is not enough.
+* **AdGuard Extra** — An extension that blocks advertising in difficult cases when the usual filter-based approach is not enough.
 
-* **AdGuard Popup Blocker** - The name speaks for itself. It blocks popups - one of the most annoying types of ads on web pages.
+* **AdGuard Popup Blocker** — The name speaks for itself. It blocks popups - one of the most annoying types of ads on web pages.
 
-**AdGuard Assistant** (legacy version) - This custom extension is designed to control filtering directly from the browser page (manual blocking, exclusion of the site, etc.). 
+* **AdGuard Assistant** (legacy version) — This custom extension is designed to control filtering directly from the browser page (manual blocking, exclusion of the site, etc.). 
 
 > Note that this version of Assistant is legacy and there is no point in using it on new systems, since it has been replaced with the full-fledged [Browser Assistant](ссылка на adguard-assistant/overview.html). But legacy Assistant might be of help if there is no Browser Assistant extension for your browser.
-**Disable AMP** - A script, pre-installed only in AdGuard for Android, that disables AMP (Accelerated Mobile Pages) on the Google search results page.
+
+* **Disable AMP** — A script, pre-installed only in AdGuard for Android, that disables AMP (Accelerated Mobile Pages) on the Google search results page.
 
 ## Where can you get more userscripts?
 
@@ -34,11 +31,11 @@ Here we will describe some of the most popular userscript catalogs.
 
 ### Stylish (userstyles.org)
 
-[Userstyles.org](https://userstyles.org/) is a catalog of user styles, but it allows you to load them as userscripts. Thus, any user style can be installed via AdGuard. Be careful if you decide to install an unpopular script - there's a risk it might be harmful.
+[Userstyles.org](https://userstyles.org/) is a catalog of user styles, but it allows you to load them as userscripts. Thus, any user style can be installed via AdGuard. Be careful if you decide to install an unpopular script — there's a risk it might be harmful.
 
 ### Greasy Fork
 
-[Greasy Fork](https://greasyfork.org/) is a userscript catalog by [Stylish](#userstyles) creators. Unlike the above-mentioned userstyles.org, the scripts in this catalog undergo moderation, so their credibility is much higher.
+[Greasy Fork](https://greasyfork.org/) is a userscript catalog by Stylish creators. Unlike the above-mentioned userstyles.org, the scripts in this catalog undergo moderation, so their credibility is much higher.
 
 ### OpenUserJS.org
 
@@ -58,7 +55,7 @@ If you like the idea of personifying your browser with the help of userscripts, 
 
 If you are developing your own custom script and want to test how it works with AdGuard, request a beta-license key for the app.
 
-To get it, please send an email to devteam at adguard.com with the following information:
+To get it, please send an email to devteam@adguard.com with the following information:
 
 **Subject:** Userscript author license request
 

@@ -7,7 +7,7 @@ We have written this article to avoid confusion and explain in detail how you ca
 
 ## About the outdated licenses
 
-Initially (our veteran users will remember) licenses of the following types were available to activate AdGuard products:
+Initially licenses of the following types were available to activate AdGuard products:
 
 **Standard** — for desktop applications AdGuard for Windows/AdGuard for Mac
 

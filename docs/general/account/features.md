@@ -19,7 +19,7 @@ In this section, you can also manage your email preferences:
 
 In the *Licenses* section, you can manage your licenses and the devices bound to them.
 
-[AdGuard licenses](../license/what-is.md) can be:
+[AdGuard licenses](general/license/what-is.md) can be:
 * bound and unbound,
 * extended,
 * upgraded,

@@ -3,8 +3,6 @@ title: How to create your own ad filters
 sidebar_position: 5
 ---
 
-## Introduction
-
 A filter is a set of filtering rules applied to specific content, such as banners or pop-ups. AdGuard has a list of standard filters created by our team. We constantly improve and update them, striving to meet the needs of most of our users.
 
 At the same time, AdGuard allows you to create your own custom filters using the same types of rules that we have in our filters.
