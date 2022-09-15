@@ -27,28 +27,23 @@ Scroll down to *Battery saver*, tap it, and set to "No restrictions".
 
 Run the *Security* app.
 
-Tap the *Gear* icon at the top-right corner of the screen.
+Tap on the *Gear* icon at the top-right corner of the screen.
 
 ![Miui Settings](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_1.jpeg) 
-
 
 Tap *Boost speed* in Feature Settings.
 
 ![Miui Settings](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_2.png)   
 
-
 Tap *"Lock apps"*.
 
 ![Miui Settings](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_3.jpeg)
-
 
 In the *Lock apps* screen, set the toggle switch for the AdGuard app to On.
 
 ![Miui Settings](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_4.jpeg)
 
-
 That’s all! You’ve successfully pinned the AdGuard app. 
-
 
 #### MIUI 12
 
@@ -107,7 +102,7 @@ Please enable:
 
 To set up AdGuard's background work for Xiaomi devices you should pay attention to Battery and Permissions.
 
-- Tap on the *Recent tasks* button and swipe AdGuard down to make options *visible* (as shown on the screenshot):
+- Tap the *Recent tasks* button and swipe AdGuard down to make options *visible* (as shown on the screenshot):
 
 ![Xiaomi](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/xiaomirecent.png)
 
@@ -177,11 +172,11 @@ Checklist:
 
 For early Samsung devices, there is no huge need for setting up the background work, but if in your case the application is getting closed or disappears from the recent tasks after a while, do the following:
 
- - Tap on the *Recent tasks* button, tap on the *Additional settings* icon. It should look like this:
+ - Tap the *Recent tasks* button, tap on the *Additional settings* icon. It should look like this:
  
  ![Samsung settings](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/samsungoptions.png)
 
- - Tap on *Lock Apps*:
+ - Tap *Lock Apps*:
  
  ![Samsung settings](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/samsunglockapps.png)
  
@@ -261,7 +256,7 @@ Open device settings > *Battery* > *App launch* > then set your app to *Manage m
 
 Old Huawei devices are the easiest to set up, it is enough to perform two simple steps to lock the application in the background so it won't be terminated by battery saving or background killer process.
  
-  - Tap on the *Recent tasks* button:
+  - Tap the *Recent tasks* button:
   
   ![Huawei recent apps](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/huaweirecentapps.jpeg)
   
@@ -292,7 +287,7 @@ Here is what you need to do in order to prevent killing the background process o
 
 - Go to device settings > open *Apps* > choose *See all apps*;
 - Then tap on the right top corner menu > choose *Show system*;
-- Find *Power saver* in the app list, select it and tap on *Force stop*. It will remain stopped until the next restart.
+- Find *Power saver* in the app list, select it and tap *Force stop*. It will remain stopped until the next restart.
 
 From now on, background apps are supposed to work smoothly and use the standard Android battery optimizations.
 
@@ -316,7 +311,7 @@ From now on, background apps are supposed to work smoothly and use the standard 
 
 Sometimes background services are being killed (including accessibility services, which then need re-enabling) every time you turn the screen off. So far, a workaround for this is:
 
-Go to “Security Centre” > tap on "Privacy Permissions" > "Startup manager" and allow AdGuard app to run in background.
+Go to “Security Centre” > tap "Privacy Permissions" > "Startup manager" and allow AdGuard app to run in background.
 
 Other solutions: 
 
@@ -380,7 +375,7 @@ Android stock OS normally does not conflict with applications working in the bac
  
  ![Stocknetwork](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/stocknetwork.png)
 
- - Tap on "VPN" and choose AdGuard
+ - Tap "VPN" and choose AdGuard
  
  ![Stockvpn](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/stockvpn.png)
  

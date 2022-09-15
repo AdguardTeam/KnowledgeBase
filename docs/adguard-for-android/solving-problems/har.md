@@ -14,7 +14,7 @@ Sometimes we need to analyze it to block specific ads that are difficult to repr
 4. Activate "pref.har.capture" (you will have to restart the protection).
 5. Now reproduce the problem - open the app, perform the necessary actions to make the ad appear.
 6. Now turn "pref.har.capture" off again.
-7. Go Back, then tap on "Export logs and system info" -> Save.
+7. Go Back, then tap "Export logs and system info" > Save.
 
 **Please send the file with logs (that you've got as a result) to the AdGuard support service.**
 

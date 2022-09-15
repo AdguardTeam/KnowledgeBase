@@ -34,7 +34,7 @@ On old Android devices there is no such option to take a bug report automaticall
 
 **Part #1: prepare the device**
 
-1. Switch device to the developer mode. To do this: go to Settings -> About -> tap on Build Number 7 times.
+1. Switch device to the developer mode. To do this: go to Settings > About > tap on Build Number 7 times.
 
 2. Go to Developer Options.
 
