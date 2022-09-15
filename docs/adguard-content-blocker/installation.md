@@ -7,8 +7,9 @@ The application is available in five stores: [Google Play](https://play.google.c
 
 To install AdGuard Content Blocker from Google Play, search _AdGuard Content Blocker_ and tap _Install_.
 
-> Note: AdGuard Content Blocker works in two browsers: [Yandex Browser](https://browser.yandex.ru/) and [Samsung Internet Browser](https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser).
 ![Content Blocker on Google Play](https://cdn.adguard.com/content/Kb/ad_blocker/content_blocker/content_blocker_play_market.jpg)
+
+> Note: AdGuard Content Blocker works in two browsers: [Yandex Browser](https://browser.yandex.ru/) and [Samsung Internet Browser](https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser).
 
 After the installation is completed, tap _Open_ to run the application.
 
