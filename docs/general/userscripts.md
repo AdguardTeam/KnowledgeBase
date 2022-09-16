@@ -7,11 +7,11 @@ Userscripts (we also call them "extensions") are, de-facto, mini-programs writte
 
 ### Supported apps
 
-AdGuard can significantly broaden website functionality by acting as a userscript manager. You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](/docs/adguard-for-windows/overview.md), [AdGuard for Android](/docs/adguard-for-android/overview.md) and [AdGuard for Mac](/docs/adguard-for-mac/overview.md).
+AdGuard can significantly broaden website functionality by acting as a userscript manager. You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](/adguard-for-windows/overview.md), [AdGuard for Android](/adguard-for-android/overview.md) and [AdGuard for Mac](/adguard-for-mac/overview.md).
 
 ### Recommended AdGuard scripts
 
-> These userscripts come directly from the AdGuard developers, and we can guarantee that they are effective and safe. Remember: whenever you download a userscript from an unknown source, you expose yourself to risk, as some scripts may be harmful to your computer. Get new scripts only from the sources you trust 100%. Furthermore, here are [some examples](#where-can-you-get-more-userscripts) of popular sites with scripts.
+> These userscripts come directly from the AdGuard developers, and we can guarantee that they are effective and safe. Remember: whenever you download a userscript from an unknown source, you expose yourself to risk, as some scripts may be harmful to your computer. Get new scripts only from the sources you trust 100%. Furthermore, here are [some examples](#more-userscripts) of popular sites with scripts.
 
 * **AdGuard Extra** — An extension that blocks advertising in difficult cases when the usual filter-based approach is not enough.
 
@@ -19,11 +19,11 @@ AdGuard can significantly broaden website functionality by acting as a userscrip
 
 * **AdGuard Assistant** (legacy version) — This custom extension is designed to control filtering directly from the browser page (manual blocking, exclusion of the site, etc.). 
 
-> Note that this version of Assistant is legacy and there is no point in using it on new systems, since it has been replaced with the full-fledged [Browser Assistant](ссылка на adguard-assistant/overview.html). But legacy Assistant might be of help if there is no Browser Assistant extension for your browser.
+> Note that this version of Assistant is legacy and there is no point in using it on new systems, since it has been replaced with the full-fledged [Browser Assistant](https://adguard.com/en/adguard-assistant/overview.html). But legacy Assistant might be of help if there is no Browser Assistant extension for your browser.
 
 * **Disable AMP** — A script, pre-installed only in AdGuard for Android, that disables AMP (Accelerated Mobile Pages) on the Google search results page.
 
-## Where can you get more userscripts?
+## Where can you get more userscripts?{#more-userscripts}
 
 As userscripts are created mainly by enthusiasts, you should be cautious when installing them. Yet, there is a great variety of interesting scripts that can really make using some websites more convenient.
 

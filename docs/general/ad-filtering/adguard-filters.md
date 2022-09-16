@@ -33,7 +33,7 @@ Includes the following AdGuard filters (all of them can be enabled separately fr
 
 ## AdGuard Filters Policy
 
-Our filter policy It defines what AdGuard filters should block and what they should not, as well as the rules for adding and removing rules from filters. Read the full text of [AdGuard filter policy](filter-policy.md) for detailed information.
+Our filter policy defines what AdGuard filters should block and what they should not, as well as the rules for adding and removing rules from filters. Read the full text of [AdGuard filter policy](filter-policy.md) for detailed information.
 
 ## Contributing to AdGuard filters
 
@@ -47,7 +47,7 @@ We rely on the community to let us know about issues with our filters. It helps 
 
 You will find many open issues in the [GitHub filter repository](https://github.com/AdguardTeam/AdguardFilters/issues). Each one refers to a problem with a website, such as a missed ad or a false positive. Pick an issue and suggest your own rules in the comments. AdGuard filter engineers will review your suggestions and, if approved, add your rules to AdGuard filters.
 
-Here is the [official documentation](../ad-filtering/create-own-filters.md) on the syntax of AdGuard filtering rules. Please read it carefully: it will help you create your own filtering rules.
+Here is the [official documentation](/ad-filtering/create-own-filters.md) on the syntax of AdGuard filtering rules. Please read it carefully: it will help you create your own filtering rules.
 
 ### Other ways to contribute
 
