@@ -34,7 +34,7 @@ Different licenses can be used with a different number of devices:
 * Family: up to nine devices,
 * AdGuard Pro for iOS: one device.
 
-> To use your license on a device, log in to your [AdGuard account](../account/features.md) on it.
+> To use your license on a device, log in to your [AdGuard account](/general/account/features.md) on it.
 > To extend the device limit, you can [upgrade](activation.md#how-to-upgrade-a-license) your license.
 
 ## What is a license key{#license-key} 
@@ -48,7 +48,7 @@ A license key is a unique sequence of characters that represents an AdGuard Ad B
 
 ## How to recover a license key
 
-You can easily check which license keys belong to you in your [AdGuard Account](../account/register.md).
+You can easily check which license keys belong to you in your [AdGuard Account](/general/account/register.md).
 
 The license key is bound to your account via the email address you used to purchase AdGuard.
 
