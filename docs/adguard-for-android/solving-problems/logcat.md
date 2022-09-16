@@ -29,18 +29,16 @@ To get a bug report directly from your device, do the following:
 
 >Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
 
-# Additional Instruction (for old Android versions)
+## Additional Instruction (for old Android versions)
 On old Android devices there is no such option to take a bug report automatically. It has to be done manually by following this instruction:
 
 **Part #1: prepare the device**
 
-1. Switch device to the developer mode. To do this: go to Settings > About > tap on Build Number 7 times.
+1. Switch device to the developer mode. To do this: go to **Settings** > **About** > tap on Build Number 7 times.
 
-2. Go to Developer Options.
+2. Go to **Developer Options**.
 
-3. Enable USB debugging.
-
-4. If your device runs Android 5.0 or later, increase Logger buffer sizes to 4M per log buffer.
+3. Enable **USB debugging**.
 
 4M should be enough for storing the logs we need until you're able to do the second part (getting log from the device);
 
@@ -69,11 +67,11 @@ Send this log to us by contacting support or by any other way.
 
 1. Download and run [CatLog](https://play.google.com/store/apps/details?id=com.nolanlawson.logcat&noprocess).
 
-2. Choose "Record" in the menu. Choose a name for a log file or just press OK. Now you can press Home button, CatLog will continue recording the log in background.
+2. Choose **Record** in the menu. Choose a name for a log file or just press **OK**. Now you can press **Home** button, CatLog will continue recording the log in background.
 
 3. Reproduce the issue.
 
-4. Open CatLog press "Stop record" in the menu.
+4. Open CatLog press **Stop record** in the menu.
 
 5. Send this log to our Support Team.
 

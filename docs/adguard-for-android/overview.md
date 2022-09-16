@@ -3,7 +3,7 @@ title: Features overview
 sidebar_position: 1
 ---
 
-> Disclaimer: AdGuard for Android is not to be confused with AdGuard Content Blocker. AdGuard Content Blocker is an app available in Google Play that has truncated functionality to meet restrictions imposed by the store. AdGuard for Android, on the other hand, is a powerful application to block ads, manage applications, and perform other roles that will be described in this article. The only place it can be downloaded from is [the AdGuard website](https://adguard.com/en/adguard-android/overview.html).
+> Disclaimer: AdGuard for Android is not to be confused with AdGuard Content Blocker. AdGuard Content Blocker is an app available in Google Play that has truncated functionality to meet restrictions imposed by the store. AdGuard for Android, on the other hand, is a powerful application to block ads, manage applications, and perform other roles that will be described in this article. The only place it can be downloaded from is [the AdGuard website](https://adguard.com/adguard-android/overview.html).
 
 ## Ad blocking
 
@@ -59,7 +59,7 @@ Here is the installation instruction:
  
 > If you update from Android 10 to Android 11, there's a chance that the already installed certificate will still be accepted. Otherwise, the *HTTPS filtering is off* warning will appear on the main screen, highlighted in orange. So you'll need to go through the same process of reinstalling the certificate manually.
  
-In case you have problems with the certificate installation, read [this article](/android/solving-problems/manual-certificate.md) or contact our support team.
+In case you have problems with the certificate installation, read [this article](/adguard-for-android/solving-problems/manual-certificate.md) or contact our support team.
  
 > **We want to emphasize that AdGuard Ad Blocker will function without HTTPS filtering. However, it won't be able to properly filter ads on sites that use the HTTPS protocol (most of sites do that). So if you want to use the full functionality of the app and get the best ad filtering quality and processing speed, we strongly recommend you to activate HTTPS-filtering.**
 
@@ -81,11 +81,11 @@ Phishing is a fraudulent online practice aimed at obtaining sensitive informatio
  
 ![Browsing security](https://cdn.adguard.com/content/kb/ad_blocker/android/features/browsing-security.png)
  
-Fortunately, AdGuard's Browsing Security module protects you from visiting phishing and malicious websites. It also warns you about malware being downloaded onto your device.
+Fortunately, AdGuard's Browsing Security module protects you from visiting phishing and malicious websites. It also warns you about malware being downloaded onto your device. In case you want to learn more about the Browsing Security, read [this article](/general/browsing-security.md).
 
 > But note that AdGuard for Android is not an antivirus. It will neither stop the actual download of a virus nor delete the already existing ones. For the complete protection of your device, we recommend using AdGuard in tandem with a dedicated AV tool.
  
-![Browsing security warning](https://cdn.adguard.com/content/kb/ad_blocker/android/features/browsing_security_warning_en.png)
+![Browsing security warning](https://cdn.adguard.com/content/kb/ad_blocker/android/features/browsing_security_warning.png)
  
 At the same time, we'd like to emphasize that your personal data is *not* transferred anywhere, and AdGuard does *not* know which websites you are visiting. The security check is not performed against an open web address (URL) but through hash prefixes (hash is a certain data structure that renders unambiguous each address added to the base). However, you can send us information on the websites you visit to improve the database, if you opt to. Learn more about AdGuard's phishing and malware protection.
  
@@ -187,7 +187,7 @@ This option is available on the *Settings > DNS Filtering > DNS Requests blockin
 
 ## Proxy and TOR
  
-A proxy server is basically another computer serving as a hub that processes your internet requests. You can set up AdGuard to route all your device's traffic through any proxy — and you'll be able to configure the whole thing right inside the app. And here is [an instruction on how to set up a proxy](/android/solving-problems/adguard-outbound-proxy.md).
+A proxy server is basically another computer serving as a hub that processes your internet requests. You can set up AdGuard to route all your device's traffic through any proxy — and you'll be able to configure the whole thing right inside the app. And here is [an instruction on how to set up a proxy](/adguard-for-android/solving-problems/adguard-outbound-proxy.md).
  
 > Some popular VPN providers offer an alternative way to use their service as a proxy. This can be used to run them alongside AdGuard in local VPN mode.
  
@@ -231,5 +231,5 @@ There are too many features to describe them all in detail, so let us simply lis
 * When you visit certain screens for the first time, there will appear tooltips that describe the purpose of that screen and its main features
 * You can export or import AdGuard settings (for a faster switch between the settings profiles or to transfer your profile between different devices)
 * Select an update channel, i.e. the mode in which the application receives its updates (stable release channel, less stable beta channel and raw ["nightly" channel](https://adguard.com/en/blog/nightly-builds/)
-* By tapping a little battery icon on the main screen of the app you will get to the "Battery Usage" screen. System battery stats [are often wrong](/android/solving-problems/battery.md), so we decided to have our own, one that would reflect the real state of things
+* By tapping a little battery icon on the main screen of the app you will get to the "Battery Usage" screen. System battery stats [are often wrong](/adguard-for-android/solving-problems/battery.md), so we decided to have our own, one that would reflect the real state of things
 * You can change the app's language in the General Settings tab

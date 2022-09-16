@@ -45,7 +45,7 @@ Proxy port | *1080*
 	
 3. You also need to fill out the **Username/Password** fields. To do so, log in to the [Client Control Panel](https://www.privateinternetaccess.com/pages/client-sign-in) on the PIA website. Click the **Generate Password** button under the **Generate PPTP/L2TP/SOCKS Password** section. A username starting with "x" and a random password will be shown. Use them to fill out the **Username** and **Password** fields in AdGuard.
 
-4. Set this proxy as a default one by toggling the switch, then click *Save*.
+4. Set this proxy as a default one by toggling the switch, then click **Save**.
 
 5. Enable AdGuard protection.
 
@@ -63,9 +63,9 @@ Proxy type | *SOCKS5*
 Proxy host | *proxy.torguard.org* or *proxy.torguard.io*
 Proxy port | *1080* or *1085* or *1090*
 	
-3. For *Username* and *Password* fields, enter your proxy username and proxy password you have chosen at TorGuard signup.
+3. For **Username** and **Password** fields, enter your proxy username and proxy password you have chosen at TorGuard signup.
 
-4. Set this proxy as a default one by toggling the switch, then click *Save*.
+4. Set this proxy as a default one by toggling the switch, then click **Save**.
 
 5. Enable AdGuard protection.
 
@@ -81,9 +81,9 @@ Proxy type | *SOCKS5*
 Proxy host | *any server save for "Obfuscated" from [this list](https://nordvpn.com/servers/)*
 Proxy port | *1080*
 	
-3. For *Username* and *Password* fields, enter your NordVPN Username and Password.
+3. For **Username** and **Password** fields, enter your NordVPN Username and Password.
 
-4. Set this proxy as a default one by toggling the switch, then click *Save*.
+4. Set this proxy as a default one by toggling the switch, then click **Save**.
 
 5. Enable AdGuard protection.
 
