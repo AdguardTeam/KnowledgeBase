@@ -114,7 +114,7 @@ The most simple rules are so-called _"Basic rules"._ They are used to block requ
 > #### Response status
 > Browser detects a blocked request as completed with an error.
 
-### Basic rules syntax{#basic-rules-syntax}
+### Basic rules syntax {#basic-rules-syntax}
 
 ```
       rule = ["@@"] pattern [ "$" modifiers ]
@@ -125,7 +125,7 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 * **`@@`** — A marker that is used in rules of exception. To turn off filtering for a request, start your rule with this marker.
 * **`modifiers`** — Parameters that "clarify" the basic rule. Some of them limit the scope of the rule and some can completely change they way it works.
 
-### Special characters{#basic-rules-special-characters}
+### Special characters {#basic-rules-special-characters}
 
 * ```*``` — Wildcard character. It is used to represent "any set of characters". This can also be an empty string or a string of any length.
 * **`||`** — Matching the beginning of an address. With this character you don't have to specify a particular protocol and subdomain in address mask. It means, `||` stands for `http://*.`, `https://*.`, `ws://*.`, `wss://*.` at once.
@@ -134,7 +134,7 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 
 > **Visual representation.** We also recommend to get acquainted with [this article](https://adblockplus.org/filter-cheatsheet#blocking), for better understanding of how such rules should be made.
 
-### Regular expressions support{#regexp-support}
+### Regular expressions support {#regexp-support}
 
 If you want even more flexibility in making rules, you can use [Regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) instead of a default simplified mask with special characters.
 
@@ -148,7 +148,7 @@ For example, `/banner\d+/$third-party` this rule will apply the regular expressi
 
 > **Compatibility with different versions of AdGuard.** AdGuard Safari and AdGuard for iOS do not fully support regular expressions because of [Content Blocking API restrictions](https://webkit.org/blog/3476/content-blockers-first-look/) (look for "The Regular expression format" section).
 
-### Wildcard support for TLD (top-level domains){#wildcard-for-tld}
+### Wildcard support for TLD (top-level domains) {#wildcard-for-tld}
 
 Wildcard characters are supported for TLDs of the domains in patterns of cosmetic, html and javascript rules.
 For example, the cosmetic rule `example.*##.banner` will match any `example.TLD` request (`example.ru`, `example.com`, `example.net`, `example.org`, etc.).
@@ -292,7 +292,7 @@ The modifier `":" h_value` part may be omitted. In that case the modifier matche
 `@@||example.com^$header=set-cookie:/foo\, bar\$/` unblocks requests which responses have the `Set-Cookie` header with value matching the `foo, bar$` regular expression.
 `@@||example.com^$header=set-cookie` unblocks requests which responses have a `Set-Cookie` header with any value.
 
-#### Restriction by content type{#content-type-modifiers}
+#### Restriction by content type {#content-type-modifiers}
 
 There is a set of modifiers, which can be used to limit the rule's application area to certain type of content. These modifiers can also be combined to cover, for example, both images and scripts.
 
@@ -304,7 +304,7 @@ There is a set of modifiers, which can be used to limit the rule's application a
 * `||example.org^$script,stylesheet` — corresponds to all the scripts and styles from `example.org`.
 * `||example.org^$~image,~script,~stylesheet` — corresponds to all requests to `example.org` except for the images, scripts and styles.
 
-##### **`document`**{#document-modifier}
+##### **`document`** {#document-modifier}
 
 The rule corresponds to the main frame document requests, i.e. HTML documents that are loaded in the browser tab. It does not match iframes (there's a `$subdocument` modifier for these).
 
@@ -332,7 +332,7 @@ The rule corresponds to images requests.
 
 The rule corresponds to CSS files requests.
 
-##### **`script`**{#script-modifier}
+##### **`script`** {#script-modifier}
 
 The rule corresponds to script requests, e.g. javascript, vbscript.
 
@@ -388,7 +388,7 @@ The rule applies only to WebRTC connections.
 
 > **Compatibility with different versions of AdGuard.** Rules with `$webrtc` modifier are still supported by AdGuard Browser extension.
 
-##### **`other`**{#other-modifier}
+##### **`other`** {#other-modifier}
 
 The rule applies to requests for which the type has not been determined or doesn't match the types listed above.
 
@@ -397,13 +397,13 @@ The rule applies to requests for which the type has not been determined or doesn
 > **Deprecation notice.** `object-subrequest` modifier is deprecated and no longer supported. Rules with it are considered as invalid.
 The rule corresponds to requests by browser plugins (it's usually Flash).
 
-#### Exception modifiers{#exception-modifiers}
+#### Exception modifiers {#exception-modifiers}
 
 Exception rules disable the other basic rules for the addresses to which they correspond. They begin with a `@@` mark. All the basic modifiers listed above can be applied to them and they also have a few special modifiers.
 
 > **Visual representation.** We recommend to get acquainted with [this article](https://adblockplus.org/filter-cheatsheet#blocking), for better understanding of how exception rules should be made.
 
-##### **`elemhide`**{#elemhide-modifier}
+##### **`elemhide`** {#elemhide-modifier}
 
 Disables any [cosmetic rules](#cosmetic-rules) on the pages matching the rule.
 
@@ -479,7 +479,7 @@ domain.com###banner
 ||domain.com^$domain=example.com
 ```
 
-###### **`generichide`**{#generichide-modifier}
+###### **`generichide`** {#generichide-modifier}
 
 Disables all generic [cosmetic rules](#cosmetic-rules) on pages that correspond to exception rule.
 
@@ -504,7 +504,7 @@ Has an opposite effect to [`$generichide`](#generichide-modifier). Disables all 
 
 These modifiers are able to completely change the behaviour of basic rules.
 
-#### **`important`**{#important-modifier}
+#### **`important`** {#important-modifier}
 
 The `$important` modifier applied to a rule increases its priority over any other rule without `$important` modifier. Even over basic exception rules.
 
@@ -558,7 +558,7 @@ In that case, the `$badfilter` rule will disable the corresponding rule for doma
 
 > **Compatibility with different versions of AdGuard.** Rules with `$badfilter` modifier are not supported by AdGuard Content Blocker.
 
-#### **`replace`**{#replace-modifier}
+#### **`replace`** {#replace-modifier}
 
 This modifier completely changes the rule behavior. If it is applied, the rule will not block the request. The response is going to be modified instead.
 
@@ -620,7 +620,7 @@ http://regexr.com/3cesk
 > **Compatibility with different versions of AdGuard.** Rules with `$replace` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard Browser extension for Firefox. Such rules do not work in extensions for other browsers because they are unable to modify content on the network level.
 > **Restrictions.** Rules with `$replace` modifier can be used **only in trusted filters**. This category includes your own **User rules** and all the filters created by AdGuard Team.
 
-#### **`csp`**{#csp-modifier}
+#### **`csp`** {#csp-modifier}
 
 This modifier completely changes the rule behavior. If it is applied to a rule, it will not block the matching request. The response headers are going to be modified instead.
 
@@ -658,7 +658,7 @@ For the requests matching a `$csp` rule, we will strengthen response's security 
 ||example.org^
 ```
 
-#### **`cookie`**{#cookie-modifier}
+#### **`cookie`** {#cookie-modifier}
 
 The `$cookie` modifier completely changes rule behavior. Instead of blocking a request, this modifier makes us suppress or modify the `Cookie` and `Set-Cookie` headers.
 
@@ -732,7 +732,7 @@ If you want the rule not to be applied to certain apps, start the app name with 
 
 > **Compatibility with different versions of AdGuard.** Only AdGuard for Windows, Mac, Android are technically capable of using rules with `$app` modifier.
 
-#### **`redirect`**{#redirect-modifier}
+#### **`redirect`** {#redirect-modifier}
 
 AdGuard is able to redirect web requests to a local "resource".
 
@@ -1207,17 +1207,17 @@ As a response to blocked request AdGuard returns a short video placeholder.
 However, the capabilities of the basic rules may not be sufficient to block ads. Sometimes you need to hide an element or change part of the HTML code of a web page without breaking anything. The rules described in this section are created specifically for this purpose.
 
 
-## Cosmetic rules{#cosmetic-rules}
+## Cosmetic rules {#cosmetic-rules}
 
 > Work with non-basic rules requires the basic knowledge of HTML and CSS. So, if you want to learn how to make such rules, we recommend to get acquainted with [this documentation](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/What_is_CSS).
 
-### Element hiding rules{#cosmetic-elemhide-rules}
+### Element hiding rules {#cosmetic-elemhide-rules}
 
 Element hiding rules are used to hide the elements of web pages. It is similar to applying `{ display: none; }` style to selected element.
 
 > Element hiding rules may operate differently [depending on the platform](#cosmetic-rules-priority).
 
-#### Syntax{#non-basic-rules-modifiers-syntax}
+#### Syntax {#non-basic-rules-modifiers-syntax}
 
 ```
    rule = [domains] "##" selector
@@ -1271,7 +1271,7 @@ The same can be achieved by adding this rule:
 
 We recommend to use this kind of exceptions only if it is not possible to change the hiding rule itself. In other cases it is better to change the original rule, using domain restrictions.
 
-### CSS rules{#cosmetic-css-rules}
+### CSS rules {#cosmetic-css-rules}
 
 Sometimes, simple hiding of an element is not enough to deal with advertising. For example, blocking an advertising element can just break the page layout. In this case AdGuard can use rules that are much more flexible than hiding rules. With this rules you can basically add any CSS styles to the page.
 
@@ -1314,7 +1314,7 @@ example.com#@$#.textad { visibility: hidden; }
 
 We recommend to use this kind of exceptions only if it is not possible to change the CSS rule itself. In other cases it is better to change the original rule, using domain restrictions.
 
-### Extended CSS selectors{#extended-css-selectors}
+### Extended CSS selectors {#extended-css-selectors}
 
 CSS 3.0 is not always enough to block ads. To solve this problem AdGuard extends CSS capabilities by adding support for the new pseudo-elements. To use extended CSS selectors we have developed a separate open source [module](https://github.com/AdguardTeam/ExtendedCss).
 
@@ -1656,7 +1656,7 @@ div.test:upward(4)
 div:has-text(/test/):upward(2)
 ```
 
-##### Pseudo-class `:remove()` and pseudo-property `remove`{#remove-pseudos}
+##### Pseudo-class `:remove()` and pseudo-property `remove` {#remove-pseudos}
 
 Sometimes, it is necessary to remove a matching element instead of hiding it or applying custom styles. In order to do it, you can use pseudo-class `:remove()` as well as pseudo-property `remove`.
 
@@ -1681,7 +1681,7 @@ div[class]:has(> a:not([id])) { remove: true; }
 
 > Please note that all style properties will be ignored if `:remove()` pseudo-class or `remove` pseudo-property is used.
 
-### Cosmetic rules priority{#cosmetic-rules-priority}
+### Cosmetic rules priority {#cosmetic-rules-priority}
 
 The way **element hiding** and **CSS rules** are applied is platform-specific.
 
@@ -1691,7 +1691,7 @@ The way **element hiding** and **CSS rules** are applied is platform-specific.
 
 **Extended CSS selectors** use Javascript to work and basically add an inline style themselves, therefore they can override any style.
 
-## HTML filtering rules{#html-filtering-rules}
+## HTML filtering rules {#html-filtering-rules}
 
 In most cases, the basis and cosmetic rules are enough to filter ads. But sometimes it is necessary to change the HTML-code of the page itself before it is loaded. This is when you need filtering rules for HTML content. They allow to indicate the HTML elements to be cut out before the browser loads the page.
 
@@ -1845,7 +1845,7 @@ Sometimes, it may be necessary to disable all restriction rules. For example, to
 
 We recommend to use this kind of exceptions only if it is not possible to change the hiding rule itself. In other cases it is better to change the original rule, using domain restrictions.
 
-## Scriptlet rules{#scriptlets}
+## Scriptlet rules {#scriptlets}
 
 Scriptlet is a JavaScript function that provides extended capabilities for content blocking. These functions can be used in a declarative manner in AdGuard filtering rules.
 
@@ -1892,7 +1892,7 @@ In the modifiers values of the following characters must be escaped: `[`, `]`, `
 it's used for the escaping). Use `\` to escape them. For example, an escaped bracket looks like
 this: `\]`.
 
-### `app`{#app-modifier}
+### `app` {#app-modifier}
 
 `$app` modifier lets you narrow the rule coverage down to a specific application or a list of applications.
 
@@ -1906,7 +1906,7 @@ The modifier's behavior and syntax perfectly match the corresponding [basic rule
 
 > **Compatibility with different versions of AdGuard.** Such rules with `$app` modifier are supported by AdGuard for Windows, Mac and Android.
 
-### `domain`{#domain-modifier}
+### `domain` {#domain-modifier}
 
 `$domain` modifier limits the rule application area to a list of domains and their subdomains.
 The modifier's behavior and syntax perfectly match the corresponding
@@ -1988,7 +1988,7 @@ We provide pre-processor directives that can be used by filters maintainers to i
 > Please note that any mistake in a pre-processor directive will lead to AdGuard failing the filter update in the same way as if the filter URL was unavailable.
 > Pre-processor directives can be used in the User Rules or in the custom filters.
 
-#### Including a file{#include-directive}
+#### Including a file {#include-directive}
 
 The `!#include` directive allows to include contents of a specified file into the filter. It supports only files from the same origin to make sure that the filter maintainer is in control of the specified file. The included file can also contain pre-processor directives (even other `!#include` directives). Ad blockers should consider the case of recursive `!#include` and implement a protection mechanism.
 
@@ -2016,7 +2016,7 @@ Filter URL: `https://example.org/path/filter.txt`
 !#include https://domain.com/path/includedfile.txt
 ```
 
-#### Conditions{#conditions-directive}
+#### Conditions {#conditions-directive}
 
 Filters maintainers can use conditions to supply different rules depending on the ad blocker type. When an adblocker encounters an `!#if` directive, followed eventually by an `!#endif` directive, it will compile the code inside of the directives block only if the specified condition is true. Condition supports all the basic logical operators.
 
@@ -2062,7 +2062,7 @@ domain.com##div.ad
 !#endif
 ```
 
-#### Safari affinity{#safari-affinity-directive}
+#### Safari affinity {#safari-affinity-directive}
 
 Safari is notoriously known for its harsh 50k max limit for filtering rules in content blockers. But in AdGuard for Safari and AdGuard for iOS max rule count is raised to 300k by splitting them into several content blockers. Generally, several filters categories are more or less independent, so there is such content blockers with such categories included:
 - AdGuard General — Ad Blocking, Language-specific
