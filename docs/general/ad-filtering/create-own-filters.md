@@ -263,6 +263,34 @@ This modifier defines a rule which applies only to addresses that match the case
 
 * `*/BannerAd.gif$match-case` — this rule will block `http://example.com/BannerAd.gif`, but not `http://example.com/bannerad.gif`.
 
+##### **`header`**
+
+The `$header` modifier allows matching the HTTP response having a specific header with (optionally) a specific value.
+
+###### Syntax
+
+```
+$header "=" h_name [":" h_value]
+h_value = string / regexp
+```
+
+where
+
+  * `h_name` — an HTTP header name. It is matched case insesitively.
+  * `h_value` — the HTTP header value matching expression, and may be one of the following:
+    * `string` — a sequence of characters. It is matched against the header value lexicographically.
+    * `regexp` — a regular expression, starts and ends with `/`. The pattern works the same way as in the basic URL rules, but the characters `/`, `$` and `,` must be escaped with `\`.
+
+The modifier `":" h_value` part may be omitted. In that case the modifier matches the header name only.
+
+> **Compatibility with different versions of AdGuard.** Rules with the `$header` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**.
+###### Examples
+
+`||example.com^$header=set-cookie:foo` — blocks the request which response has the `Set-Cookie` header with value matching `foo` literally.
+`||example.com^$header=set-cookie` — blocks the request which response has a `Set-Cookie` header with any value.
+`@@||example.com^$header=set-cookie:/foo\, bar\$/` — unblocks the request which response has the `Set-Cookie` header with value matching the `foo, bar$` regular expression.
+`@@||example.com^$header=set-cookie` — unblocks the request which response has a `Set-Cookie` header with any value.
+
 #### Restriction by content type
 
 There is a set of modifiers, which can be used to limit the rule's application area to certain type of content. These modifiers can also be combined to cover, for example, both images and scripts.
@@ -1911,7 +1939,9 @@ path=pattern
 
 > Please note that `path` modifier matches the query string as well.
 > `$path` modifier supports regular expressions in [the same way](анкор к regexp-support) basic rules do.
+
 #### `path` examples:
+
 * `[$path=page.html]##.textad` — hides a `div` with a class `textad` at `/page.html` or `/page.html?<query>` or `/sub/page.html` or `/another_page.html`
 * `[$path=/page.html]##.textad` — hides a `div` with a class `textad` at `/page.html` or `/page.html?<query>` or `/sub/page.html` of any domain but not at `/another_page.html`
 * `[$path=|/page.html]##.textad` — hides a `div` with a class `textad` at `/page.html` or `/page.html?<query>` of any domain but not at `/sub/page.html`
@@ -1921,6 +1951,27 @@ path=pattern
 * `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` — hides a `div` with a class `textad` at both `/sub1/page.html` and `/sub2/page.html` of any domain (please, note the [escaped special characters](анкор к non-basic-rules-modifiers-syntax))
 
 > **Compatibility with different versions of AdGuard.** Rules with `$path` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard Browser extension for Chrome, Firefox, Edge.
+
+### url
+
+`$url` modifier limits the rule application area to URLs matching the specified mask.
+
+#### Syntax
+
+```
+url = pattern
+```
+
+where `pattern` is pretty much the same as [`pattern` of the basic rules](#basic-rules-syntax) assuming that [some characters](#non-basic-rules-modifiers-syntax) must be escaped.
+The [special characters](#basic-rules-special-characters) and [regular expressions](#regexp-support) are supported as well.
+
+#### Examples
+
+* `[$url=||example.com/ads/*]##.textad` — hides a `div` with a class `textad` at addresses like `http://example.com/ads/banner.jpg` and even `http://subdomain.example.com/ads/otherbanner.jpg`.
+* `[$url=||example.org^]###adblock` — hides an element with attribute `id` equals `adblock` at `example.org` and its subdomains.
+* `[$url=/\[a-z\]+\\.example\\.com^/]##.textad` — this rule hides `div` elements of the class `textad` for all domains matching the regular expression `[a-z]+\.example\.com^`.
+
+> **Compatibility with different versions of AdGuard.** Rules with the `$url` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**.
 
 ## Information for filters maintainers
 
