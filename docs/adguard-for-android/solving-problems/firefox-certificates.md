@@ -12,12 +12,12 @@ For AdGuard to successfully filter HTTPS traffic in Firefox, the browser needs t
 To make Firefox trust the AdGuard certificate, do the following:
 
 1. Run the browser.
-2. Go to **Settings > About Firefox**.
+2. Go to **Settings** > **About Firefox**.
 
 ![About Firefox](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
 
 3. Tap the Firefox logo five times.
-4. Navigate to **Settings > Secret Settings**.
+4. Navigate to **Settings** > **Secret Settings**.
 
 ![Secret Settings*](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
 

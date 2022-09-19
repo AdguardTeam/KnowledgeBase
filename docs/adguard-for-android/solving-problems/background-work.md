@@ -49,7 +49,7 @@ That’s all! You’ve successfully pinned the AdGuard app.
 
 ![Xiaomi](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
 
-Go to **Settings > Apps > Manage apps > AdGuard**. 
+Go to **Settings** > **Apps** > **Manage apps** > **AdGuard**. 
 
 - Set Autostart to “On”
 - Set Battery saver to **No restrictions**
@@ -74,7 +74,7 @@ To let your app run successfully in the background, configure settings as follow
 
 ![Xiaomi](https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi1en.png)
 
-- **Settings > Battery & performance** > switch-off **Battery saver** function
+- **Settings** > **Battery & performance** > switch-off **Battery saver** function
 
 ![Xiaomi](https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi2en.png)
 
@@ -86,17 +86,17 @@ To let your app run successfully in the background, configure settings as follow
 
 Please enable:
 
-- **Settings > Advanced Settings > Battery manager > set *Power plan* to Performance**
-- **Device Settings > Advanced Settings > Battery Manager > Protected apps** – your app needs to be Protected
-- **Device Settings > Apps > your app > Battery > Power-intensive prompt** and **Keep running after screen off**
-- **Settings > Additional Settings > Battery & Performance > Manage apps’ battery usage** and here:
+- **Settings** > **Advanced Settings** > **Battery manager** > set **Power plan** to **Performance**
+- **Device Settings** > **Advanced Settings** > **Battery Manager** > **Protected apps** – your app needs to be Protected
+- **Device Settings** > **Apps** > **your app** > **Battery** > **Power-intensive prompt** and **Keep running after screen off**
+- **Settings** > **Additional Settings** > **Battery & Performance** > **Manage apps’ battery usage** and here:
 
 1. Switch Power Saving Modes to Off
-2. Choose the following options: **Saving Power in The Background > Choose apps > Select your app > Background Settings > No restrictions**
+2. Choose the following options: **Saving Power in The Background** > **Choose apps** > **Select your app** > **Background Settings** > **No restrictions**
 
 ### App battery saver
 
-**Security > Battery > App Battery Saver > AdGuard > No restriction**
+**Security** > **Battery** > **App Battery Saver** > **AdGuard** > **No restriction**
 
 ### App pinning
 
@@ -192,7 +192,7 @@ For early Samsung devices, there is no huge need for setting up the background w
 
 ![Huawei](https://cdn.adguard.com/public/Adguard/screenshots/android/huawei1en.png)
 
-1. **Phone settings > Battery > App launch**. This feature may or may not be available for all devices or labeled differently.
+1. **Phone settings** > **Battery** > **App launch**. This feature may or may not be available for all devices or labeled differently.
 
 ![Huawei](https://cdn.adguard.com/public/Adguard/screenshots/android/huawei2en.png)
 
@@ -325,7 +325,7 @@ Devices with OxygenOS on board are the most problematic, with its OS-specific ca
  
  - Go to **Settings**
  
- - **Battery > Battery optimization**
+ - **Battery** > **Battery optimization**
  
  - Find the app you want to keep awake all the time
  
@@ -371,7 +371,7 @@ Wiko devices are definitely problematic in terms of non-standard background proc
 
 Android stock OS normally does not conflict with applications working in the background, but if you are facing any issues you will need to switch on the **Always on VPN** mode.
 
- - Go to **Settings > Network and Internet**
+ - Go to **Settings** > **Network and Internet**
  
  ![Stocknetwork](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/stocknetwork.png)
 
