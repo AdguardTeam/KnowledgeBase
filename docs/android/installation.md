@@ -21,19 +21,19 @@ First of all, allow installing apps from unknown sources in your device’s OS s
 * For Android 8+: start downloading AdGuard apk (see the next step), you'll be prompted to allow permission. Tap **Settings** in the opened window and enable **Allow from this source** switch. Then resume the installation.
 * For Android 6 and 7: open **Settings**, then select **Additional settings** in **System & Device**. Switch on **Unknown sources** and press **OK** in the system warning window.
 
-![Installing apps from unknown sources](https://cdn.adguard.com/content/kb/ad_blocker/android/installation/unknown_sources1.png)
+![Installing apps from unknown sources](https://kb.adguard.com/images/0/c/d/9/f/0cd9f5b245e904ac9a9d862e5a3bdde637780b53-androidinstallen01.png)
 
 * For Android 5: open **Settings**, then select **Security** in the **Personal** section. Switch on **Unknown sources** and press **OK** in the system warning window.
 
-![Installing apps from unknown sources](https://cdn.adguard.com/content/kb/ad_blocker/android/installation/unknown_sources2.png)
+![Installing apps from unknown sources](https://kb.adguard.com/images/7/d/d/e/4/7dde4fdd3b529755593083da5eba2f3b65cab89f-androidinstallen02.png)
 
 You can now install the app on your device. Start the browser and type in the following URL: [https://adguard.com/apk](https://adguard.com/apk), or scan this QR code:
 
-![QR code](https://cdn.adguard.com/content/kb/ad_blocker/android/installation/qr.png)
+![QR code](https://kb.adguard.com/images/1/6/6/3/f/1663f3f0615ae1d9e7aac5dafb9cf0d22b8b7c24-androidinstallen03.png)
 
 You will see the request to save the downloaded file. Press **OK**.
 
-![Save the file](https://cdn.adguard.com/content/kb/ad_blocker/android/installation/save_the_file.png)
+![Save the file](https://kb.adguard.com/images/f/0/e/9/e/f0e9e2f68ea9984fbba4c3db990f102916328a56-androidsavefile.png)
 
 When the download is complete, the system will ask you if you want to install the AdGuard app. Press **Install**.
 
