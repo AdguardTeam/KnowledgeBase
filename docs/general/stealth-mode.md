@@ -77,10 +77,10 @@ Some websites and web services still use the old technology to support Java plug
 
 ### Miscellaneous
 
-**Hide Referer from third-parties**
+**Hide Referrer from third-parties**
 
-Referer is an HTTP header used in browser-to-server requests. It contains the URL of the request source. When you navigate from one page to another, Referer saves the URL of the initial page. The server often has software that parses Referer and extracts various pieces of information from it. Enabling this option hides the current website from third-party sites by changing the HTTP header.
-You can also set an arbitrary value for Referer by entering it into the Custom Referrer field. To use default Referer, leave the field blank.
+Referrer is an HTTP header used in browser-to-server requests. It contains the URL of the request source. When you navigate from one page to another, Referrer saves the URL of the initial page. The server often has software that parses Referrer and extracts various pieces of information from it. Enabling this option hides the current website from third-party sites by changing the HTTP header.
+You can also set an arbitrary value for Referrer by entering it into the Custom Referrer field. To use default Referrer, leave the field blank.
 
 **Hide your User-Agent**
 
