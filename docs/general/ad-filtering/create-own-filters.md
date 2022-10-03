@@ -697,6 +697,9 @@ This is basically a Firewall-kind of rules allowing to fully block or unblock ac
 2. To match an IPv6 address, you have to use the collapsed syntax, e.g. use `[2001:4860:4860::8888]$network` instead of `[2001:4860:4860:0:0:0:0:8888]$network`.
 3. An allowlist `$network` rule makes AdGuard bypass data to the matching endpoint, e.g. there will be no further filtering at all.
 4. If the IP part starts and ends with `/` character, it's treated as a regular expression.
+5. `/regexp/$network` - blocks access to all addresses that matches the `regexp` regular expression.
+
+ > Special characters: if the regular expression is used to exclude the IP address, use `+` sign which indicates *one or more*, `[]` sign matches a single number that is contained within the brackets, `{}` sign specify the amount of times the number before can repeat itself.
 
 ##### `network` examples
 
@@ -706,6 +709,7 @@ This is basically a Firewall-kind of rules allowing to fully block or unblock ac
 * `@@174.129.166.49$network` — makes AdGuard bypass data to the endpoint. No other rules will be applied.
 * `/.+:3[0-9]{4}/$network` — blocks access to any port from 30000 to 39999.
 * `/8.8.8.(:?8|4)/$network` — blocks access to both `8.8.8.8` and `8.8.8.4`.
+* `/.+:[1-3][0-9]{2,5}/$network` - blocks access to all IP addresses that ends with :100, :100000, 122, 122222 etc.
 
 > **Compatibility with different versions of AdGuard.** Only AdGuard for Windows, Mac, Android are technically capable of using rules with `$network` modifier.
 
