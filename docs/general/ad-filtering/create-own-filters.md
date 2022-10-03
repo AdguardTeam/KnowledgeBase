@@ -699,7 +699,7 @@ This is basically a Firewall-kind of rules allowing to fully block or unblock ac
 4. If the IP part starts and ends with `/` character, it's treated as a regular expression.
 5. `/regexp/$network` - blocks access to all addresses that matches the `regexp` regular expression.
 
- > Special characters: if the regular expression is used to exclude the IP address, use `+` sign which indicates *one or more*, `[]` sign matches a single number that is contained within the brackets, `{}` sign specify the amount of times the number before can repeat itself.
+ > Special characters: if the regular expression is used to exclude the IP address, use `+` sign which indicates *one or more*, `[]` sign matches a single number that is contained within the brackets, `{}` sign specifies the amount of times the number before can repeat itself.
 
 ##### `network` examples
 
