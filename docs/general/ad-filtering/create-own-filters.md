@@ -696,10 +696,7 @@ This is basically a Firewall-kind of rules allowing to fully block or unblock ac
 1. `$network` rules match **IP addresses only**! You cannot use it to block or unblock access to a domain.
 2. To match an IPv6 address, you have to use the collapsed syntax, e.g. use `[2001:4860:4860::8888]$network` instead of `[2001:4860:4860:0:0:0:0:8888]$network`.
 3. An allowlist `$network` rule makes AdGuard bypass data to the matching endpoint, e.g. there will be no further filtering at all.
-4. If the IP part starts and ends with `/` character, it's treated as a regular expression.
-5. `/regexp/$network` - blocks access to all addresses that match the `regexp` regular expression.
-
- > Special characters: if a regular expression is used to exclude an IP address, use the `+` sign that indicates *one or more*. The `[]` sign matches a single number in the brackets and the `{}` sign specifies the amount of times the number before can repeat itself. We recommend to get acquainted with this [article](/general/ad-filtering/create-own-filters.md#regular-expressions-support), for better understanding of regular expressions. 
+4. If the IP part starts and ends with `/` character, it's treated as a [regular expression](/general/ad-filtering/create-own-filters.md#regular-expressions-support).
 
 ##### `network` examples
 
