@@ -727,6 +727,8 @@ This is basically a Firewall-kind of rules allowing to fully block or unblock ac
 3. An allowlist `$network` rule makes AdGuard bypass data to the matching endpoint, e.g. there will be no further filtering at all.
 4. If the IP part starts and ends with `/` character, it's treated as a regular expression.
 
+> We recommend to get acquainted with this [article](#regexp-support), for better understanding of regular expressions.
+
 ##### `network` examples
 
 * `174.129.166.49:3478^$network` — blocks access to `174.129.166.49:3478` (but not to `174.129.166.49:34788`).
