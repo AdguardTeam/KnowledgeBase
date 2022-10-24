@@ -35,7 +35,7 @@ Besides, there is an opportunity to open translations in a Voting mode if you ju
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/mode.png)
 
-You can find some [helpful tips on translating AdGuard in this article](./guides.md). Please have a look at it. 
+You can find some [helpful tips on translating AdGuard in this article](./guidelines.md). Please have a look at it. 
 
 ### How to become a proofreader {#proofreaders}
 
@@ -51,4 +51,4 @@ So, what are proofreaders responsible for?
 
 - Respond to comments related to translations in their language.
 
-Every year best proofreaders receive gifts from AdGuard. Active translators do not go unrewarded either. Read more about our [reward system](./reward-system.md).
+Every year best proofreaders receive gifts from AdGuard. Active translators do not go unrewarded either. Read more about our [reward system](./rewards.md).
