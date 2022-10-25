@@ -25,27 +25,17 @@ Background information:
 
 When using the Browser Assistant, all these problems don’t matter as there can be no conflicts in essence. The role of the Browser Assistant is well-defined and it can’t hinder the functioning of the main app, so there is no need to worry.
 
-### Smart onboarding
-
-When AdGuard for Windows is installed for the first time, the thing a user encounters in the first place is the onboarding. During this process the user quickly learns about AdGuard's settings and can customize filtering to their liking. At one stage AdGuard will determine the user's default browser and provide them with a download link for the new Assistant.
-
-![Onboarding](https://cdn.adguard.com/public/Adguard/Release_notes/Windows/v7.4/onboarding_en.png)
-
-> On rare occasions, the default browser may prove incompatible with the Browser Assistant, and the user will be offered to install the legacy version instead.
-
 ## Separate tab in settings
 
-The new Browser Assistant has its own tab in AdGuard for Windows settings, together with Stealth Mode, Browsing Security, Parental Control and others. Don’t worry if you missed the opportunity to install Browser Assistant during the onboarding, you'll find this option in the app's settings. Besides, there is a checkbox to enable the legacy Assistant.
+The new Browser Assistant has its own tab in AdGuard for Windows settings, along with Stealth Mode, Browsing Security, Parental Control and others. There you will find a link to download the extension for your default browser. Besides, there is a checkbox to enable the legacy Assistant.
 
-![Settings](https://cdn.adguard.com/public/Adguard/Release_notes/Windows/v7.4/settings_en.png)
+![Settings]()
 
 ## Legacy Assistant
 
-Legacy Assistant is the previous version of Assistant, which is a mere userscript, not a browser extension. Basically, there are two cases when you might want to pick it instead of the new Browser Assistant: 1) the new Assistant is not available for your browser; 2) you are used to the green shield icon and want to leave things as they were. If you recognize yourself in any of these scenarios, then the legacy version will suit you.
+Legacy Assistant is the previous version of Assistant, which is a mere userscript, not a browser extension. Basically, there are two cases when you might want to pick it instead of the new Browser Assistant: 1) the new Assistant is not available for your browser; 2) you are used to the green shield icon and want to leave things as they were. 
 
 ## How to install AdGuard Browser Assistant
-
-Technically, you won’t need to do it on your own: during the onboarding process AdGuard app will determine your default browser and offer to install Browser Assistant for it. Yet, if you missed that step, you can download it yourself. 
 
 If you want to install the Browser Assistant for your default browser, you can do it directly from the app settings, but you also have an opportunity to install it for other browsers.
 
