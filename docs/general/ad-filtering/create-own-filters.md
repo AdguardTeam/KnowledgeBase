@@ -2379,7 +2379,7 @@ example.org#@#.adBanner
 
 For each filter, AdGuard compiles two versions: full and optimized. Optimized version is much more lightweight and does not contain rules which are not used at all or used rarely.
 
-Rules usage frequency comes from the collected [filter rules statistics](https://kb.adguard.com/en/general/filter-rules-statistics). But filters optimization is based on more than that — some filters have specific configuration. This is how it looks like for Base filter:
+Rules usage frequency comes from the collected [filter rules statistics](./tracking-filter-statistics.md). But filters optimization is based on more than that — some filters have specific configuration. This is how it looks like for Base filter:
 
 ```
 "filter": AdGuard Base filter,
