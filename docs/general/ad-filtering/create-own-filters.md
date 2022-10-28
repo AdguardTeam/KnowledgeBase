@@ -268,7 +268,7 @@ AdGuard will try to close the browser tab with any address that matches a blocki
 
 > It may not work if the popped up page is cached by the browser. It also will not work with some tricky popup methods. In such cases, it is better to use [AdGuard Popup Blocker](https://github.com/AdguardTeam/PopupBlocker) extension.
 
-> **Please note**
+> **Note**
 >
 > Unlike with AdGuard Browser extension, `$popup` modifier is very unreliable when used with AdGuard for Windows, Mac and Android. In AdGuard for Safari and iOS, `$popup` rules will simply block the page right away.
 
@@ -411,7 +411,9 @@ The rule applies only to WebSocket connections.
 > This modifier is deprecated and will be removed in the future. If you need to suppress WebRTC, consider using the `nowebrtc` [scriptlet](#scriptlets).
 The rule applies only to WebRTC connections.
 
-> Please note that blocking WebRTC can interfere with the work of some browser applications, such as messengers, chats, cinemas, or games.
+> **Note**
+>
+> Blocking WebRTC can interfere with the work of some browser applications, such as messengers, chats, cinemas, or games.
 
 ###### `webrtc` example
 
@@ -567,7 +569,7 @@ Has an opposite effect to [`$generichide`](#generichide-modifier). Disables all 
 
 * `@@||example.org^$specifichide` — will disable `example.org##.banner` but not `##.banner`.
 
-> Please note that [`$elemhide` modifier](#elemhide-modifier) can disable all cosmetic rules at once.
+> All cosmetic rules — not just specific ones — can be disabled by [`$elemhide` modifier](#elemhide-modifier).
 
 > **Compatibility with different versions of AdGuard**
 >
@@ -721,10 +723,12 @@ For the requests matching a `$csp` rule, we will strengthen response's security 
 
 `$csp` value can be empty in the case of exception rules. See examples section for further information.
 
->Limitations
->1. Please note that there're a few characters forbidden in the `$csp` value: `,`, `$`;
->2. `$csp` rules support limited list of modifiers: `$domain`, `$important`, `$subdocument`;
->3. Rules with `report-*` directives are considered invalid.
+> **Limitations**
+>
+> 1. There are a few characters forbidden in the `$csp` value: `,`, `$`.
+> 2. `$csp` rules support limited list of modifiers: `$domain`, `$important`, `$subdocument`.
+> 3. Rules with `report-*` directives are considered invalid.
+
 ##### `csp` examples
 
 * `||example.org^$csp=frame-src 'none'` — this rule blocks all frames on example.org and its subdomains.
@@ -962,13 +966,15 @@ You can also use regular expressions to match query parameters and/or their valu
 >
 > Do not forget to escape special characters like `,`, `/` and `$` in the regular expressions. Use `\` character for that purpose. For example, an escaped comma should look like this: `\,`.
 
-> Please note that regexp-type rules target both parameter's name and value. In order to minimize the chance of mistakes, it is safer to start every regexp with `/^` unless you specifically target parameter values.
+> **Note**
+>
+> Regexp-type rules target both parameter's name and value. In order to minimize the chance of mistakes, it is safer to start every regexp with `/^` unless you specifically target parameter values.
 
 > We will try to detect and ignore unescaped `$` automatically using a simple rule of thumb:
 > It is not an options delimiter if all three are true:
-> 1. It looks like `$/`,
-> 2. There's another slash character (`/`) to the left of it,
-> 3. There's another unescaped `$` character to the left of that slash character.
+> 1. it looks like `$/`;
+> 2. there's another slash character (`/`) to the left of it;
+> 3. there's another unescaped `$` character to the left of that slash character.
 
 ###### Remove all query parameters
 
@@ -1034,7 +1040,9 @@ With these rules, specified UTM parameters will be removed from any request save
 >
 > `$removeparam` rules are compatible with [basic modifiers](#basic-rules-common-modifiers), [content-type modifiers](#content-type-modifiers), and with `$important` and `$app` modifiers. The rules which have any other modifiers are considered invalid and will be discarded.
 
-> Please note that `$removeparam` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers don't do that. For example, `@@||example.com^` will not disable `$removeparam=p` for requests to **example.com**, but `@@||example.com^$urlblock` will.
+> **Note**
+>
+> `$removeparam` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers don't do that. For example, `@@||example.com^` will not disable `$removeparam=p` for requests to **example.com**, but `@@||example.com^$urlblock` will.
 
 > **Compatibility with different versions of AdGuard**
 >
@@ -1057,7 +1065,7 @@ Just like `$csp`, `$redirect`, `$removeparam`, and `$cookie`, this modifier exis
 * `||example.org^$removeheader=header-name` — removes a **response** header called `header-name`
 * `||example.org^$removeheader=request:header-name` — removes a **request** header called `header-name`
 
-Please note, that `$removeheader` is case-insensitive, but we suggest always using lower case.
+> `$removeheader` is case-insensitive, but we suggest always using lower case.
 
 **Negating `$removeheader`**
 
@@ -1075,57 +1083,57 @@ Use `@@` to negate `$removeheader`:
 
 ##### Restrictions
 
-1. Please note that this type of rules can be used **only in trusted filters**. This category includes your own User rules and all the filters created by AdGuard Team.
-2. In order to avoid compromising the security `$removeheader` cannot remove headers from the list below:
+1. This type of rules can be used **only in trusted filters**. This category includes your own User rules and all the filters created by AdGuard Team.
 
-* `access-control-allow-origin`
-* `access-control-allow-credentials`
-* `access-control-allow-headers`
-* `access-control-allow-methods`
-* `access-control-expose-headers`
-* `access-control-max-age`
-* `access-control-request-headers`
-* `access-control-request-method`
-* `origin`
-* `timing-allow-origin`
-* `allow`
-* `cross-origin-embedder-policy`
-* `cross-origin-opener-policy`
-* `cross-origin-resource-policy`
-* `content-security-policy`
-* `content-security-policy-report-only`
-* `expect-ct`
-* `feature-policy`
-* `origin-isolation`
-* `strict-transport-security`
-* `upgrade-insecure-requests`
-* `x-content-type-options`
-* `x-download-options`
-* `x-frame-options`
-* `x-permitted-cross-domain-policies`
-* `x-powered-by`
-* `x-xss-protection`
-* `public-key-pins`
-* `public-key-pins-report-only`
-* `sec-websocket-key`
-* `sec-websocket-extensions`
-* `sec-websocket-accept`
-* `sec-websocket-protocol`
-* `sec-websocket-version`
-* `p3p`
-* `sec-fetch-mode`
-* `sec-fetch-dest`
-* `sec-fetch-site`
-* `sec-fetch-user`
-* `referrer-policy`
-* `content-type`
-* `content-length`
-* `accept`
-* `accept-encoding`
-* `host`
-* `connection`
-* `transfer-encoding`
-* `upgrade`
+2. In order to avoid compromising the security `$removeheader` cannot remove headers from the list below:
+  * `access-control-allow-origin`
+  * `access-control-allow-credentials`
+  * `access-control-allow-headers`
+  * `access-control-allow-methods`
+  * `access-control-expose-headers`
+  * `access-control-max-age`
+  * `access-control-request-headers`
+  * `access-control-request-method`
+  * `origin`
+  * `timing-allow-origin`
+  * `allow`
+  * `cross-origin-embedder-policy`
+  * `cross-origin-opener-policy`
+  * `cross-origin-resource-policy`
+  * `content-security-policy`
+  * `content-security-policy-report-only`
+  * `expect-ct`
+  * `feature-policy`
+  * `origin-isolation`
+  * `strict-transport-security`
+  * `upgrade-insecure-requests`
+  * `x-content-type-options`
+  * `x-download-options`
+  * `x-frame-options`
+  * `x-permitted-cross-domain-policies`
+  * `x-powered-by`
+  * `x-xss-protection`
+  * `public-key-pins`
+  * `public-key-pins-report-only`
+  * `sec-websocket-key`
+  * `sec-websocket-extensions`
+  * `sec-websocket-accept`
+  * `sec-websocket-protocol`
+  * `sec-websocket-version`
+  * `p3p`
+  * `sec-fetch-mode`
+  * `sec-fetch-dest`
+  * `sec-fetch-site`
+  * `sec-fetch-user`
+  * `referrer-policy`
+  * `content-type`
+  * `content-length`
+  * `accept`
+  * `accept-encoding`
+  * `host`
+  * `connection`
+  * `transfer-encoding`
+  * `upgrade`
 
 3. `$removeheader` rules are not compatible with any other modifiers except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and content type modifiers (e.g. `$script`, `$stylesheet`, etc). The rules which have any other modifiers are considered invalid and will be discarded.
 
@@ -1388,7 +1396,7 @@ If you want the rule not to be applied to certain domains, start a domain name w
 
 You can use both approaches in a single rule. For example, `example.org,~subdomain.example.org##domain` will work for `example.org` and all subdomains, **except `subdomain.example.org`**.
 
-> **Please note**
+> **Note**
 >
 > Element hiding rules are not dependent on each other. If there is a rule `example.org##selector` in the filter and you add `~example.org##selector` both rules will be applied independently.
 
@@ -1508,7 +1516,7 @@ We **strongly recommend** using these markers any time when you use an extended 
 * `example.net#?#.banner:matches-css(width: 360px)` — this rule blocks all `.banner` elements with the style property `width: 360px`. The rule applies only to `example.net` and its subdomains.
 * `example.net#@?#.banner:matches-css(width: 360px)` — this rule will disable the previous rule.
 
-> Please note that now you can apply simple selectors using the ExtCss engine by using a rule like this: `#?#div`.
+> You can apply standard CSS selectors using the ExtendedCss engine by using a rule marker `#?#`, e.g. `#?#div.banner`.
 
 > Learn more [how to debug extended selectors](#selectors-debugging-mode).
 
@@ -1604,7 +1612,7 @@ div[-ext-contains="banner"]
 div[-ext-contains="/this .* banner/"]
 ```
 
-> Please note that in this example only a `div` with `id=selected` will be selected, because the next element does not contain any text; `banner` is a part of code, not a text.
+> In this example only a `div` with `id=selected` will be selected, because the next element does not contain any text; `banner` is a part of code, not a text.
 
 ##### Pseudo-class `:matches-css()`
 
@@ -1860,7 +1868,7 @@ div:contains(target text) { remove: true; }
 div[class]:has(> a:not([id])) { remove: true; }
 ```
 
-> Please note that all style properties will be ignored if `:remove()` pseudo-class or `remove` pseudo-property is used.
+> All style properties will be ignored if `:remove()` pseudo-class or `remove` pseudo-property is used.
 
 ### Cosmetic rules priority {#cosmetic-rules-priority}
 
@@ -2118,8 +2126,8 @@ The modifier's behavior and syntax perfectly match the corresponding
 * `[$domain=~example.com]##.textad` — this rule hides `div` elements of the class `textad` for all domains, except `example.com` and its subdomains.
 
 Please note that there are 2 ways to specify domain restrictions for non-basic rules:
-    1) the "classic" way is to specify domains before rule mask and attributes: `example.com##.textad`
-    2) the modifier approach is to specify domains via `domain` modifier: `[$domain=example.com]##.textad`
+  1) the "classic" way is to specify domains before rule mask and attributes: `example.com##.textad`;
+  2) the modifier approach is to specify domains via `domain` modifier: `[$domain=example.com]##.textad`.
 
 But rules with mixed style domains restriction are considered invalid. So, for example, the rule
 `[$domain=example.org]example.com##.textad` will be rejected.
@@ -2141,7 +2149,7 @@ $path ["=" pattern]
 
 > If `pattern` is not set for `$path`, rule will apply only on the main page of website.
 
-> Please note that `$path` modifier matches the query string as well.
+> `$path` modifier matches the query string as well.
 
 > `$path` modifier supports regular expressions in [the same way](#regexp-support) basic rules do.
 
@@ -2194,7 +2202,9 @@ We provide pre-processor directives that can be used by filters maintainers to i
 * [applying rules conditionally by ad blocker type](#conditions-directive)
 * [content blocker specifying for rules applying in Safari](#safari-affinity-directive)
 
-> Please note that any mistake in a pre-processor directive will lead to AdGuard failing the filter update in the same way as if the filter URL was unavailable.
+> **Note**
+>
+> Any mistake in a pre-processor directive will lead to AdGuard failing the filter update in the same way as if the filter URL was unavailable.
 
 > Pre-processor directives can be used in the User Rules or in the custom filters.
 
