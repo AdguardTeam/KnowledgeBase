@@ -504,21 +504,22 @@ $stealth [= opt1 [| opt2 [| opt3 [...]]]]
 
 The list of the available modifier options:
 
-* `1p-cookie` disables [Self-destructing first-party cookies](https://kb.adguard.com/en/general/stealth-mode#tracking-methods)
-* `3p-cookie` disables [Self-destructing third-party cookies](https://kb.adguard.com/en/general/stealth-mode#tracking-methods)
-* `3p-cache` disables [Disable cache for third-party requests](https://kb.adguard.com/en/general/stealth-mode#tracking-methods)
-* `xclientdata` disables [Remove X-Client-Data header from HTTP requests](https://kb.adguard.com/en/general/stealth-mode#general)
-* `donottrack` disables [Send Do-Not-Track header](https://kb.adguard.com/en/general/stealth-mode#general)
-* `ip` disables [Hide your IP address](https://kb.adguard.com/en/general/stealth-mode#miscellaneous)
-* `3p-auth` disables [Block third-party Authorization header](https://kb.adguard.com/en/general/stealth-mode#tracking-methods)
-* `referrer` disables [Hide Referrer from third parties](https://kb.adguard.com/en/general/stealth-mode#miscellaneous)
-* `useragent` disables [Hide your User-Agent](https://kb.adguard.com/en/general/stealth-mode#miscellaneous)
-* `webrtc` disables [Block WebRTC](https://kb.adguard.com/en/general/stealth-mode#browser-api)
-* `push` disables [Block Push API](https://kb.adguard.com/en/general/stealth-mode#browser-api)
-* `location` disables [Block Location API](https://kb.adguard.com/en/general/stealth-mode#browser-api)
-* `flash` disables [Block Flash](https://kb.adguard.com/en/general/stealth-mode#browser-api)
-* `java` disables [Block Java](https://kb.adguard.com/en/general/stealth-mode#browser-api)
-* `dpi` disables [Protect from DPI](https://kb.adguard.com/en/general/stealth-mode#miscellaneous)
+* `searchqueries` disables [Hide your search queries](../stealth-mode#searchqueries)
+* `donottrack` disables [Send Do-Not-Track header](../stealth-mode#donottrack)
+* `3p-cookie` disables [Self-destructing third-party cookies](../stealth-mode#3p-cookie)
+* `1p-cookie` disables [Self-destructing first-party cookies](../stealth-mode.md#1p-cookie)
+* `3p-cache` disables [Disable cache for third-party requests](../stealth-mode#3p-cache)
+* `3p-auth` disables [Block third-party Authorization header](../stealth-mode#3p-auth)
+* `webrtc` disables [Block WebRTC](../stealth-mode#webrtc)
+* `push` disables [Block Push API](../stealth-mode#push)
+* `location` disables [Block Location API](../stealth-mode#location)
+* `flash` disables [Block Flash](../stealth-mode#flash)
+* `java` disables [Block Java](../stealth-mode#java)
+* `referrer` disables [Hide Referrer from third parties](../stealth-mode#miscellaneous)
+* `useragent` disables [Hide your User-Agent](../stealth-mode#useragent)
+* `ip` disables [Hide your IP address](../stealth-mode#ip)
+* `xclientdata` disables [Remove X-Client-Data header from HTTP requests](../stealth-mode#xclientdata)
+* `dpi` disables [Protect from DPI](../stealth-mode#dpi)
 
 **Examples**
 
