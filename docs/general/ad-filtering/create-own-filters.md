@@ -620,7 +620,7 @@ Rules with `$badfilter` modifier can disable other basic rules for specific doma
 * The rule has a `$domain` modifier
 * The rule does not have a negated domain `~` in `$domain` modifier's value.
 
-In that case, the `$badfilter` rule will disable the corresponding rule for domains specified in both the `$badfilter` and basic rules. Please note, that [wildcard-TLD logic](#wildcard-for-tld) works here as well.
+In that case, the `$badfilter` rule will disable the corresponding rule for domains specified in both the `$badfilter` and basic rules. Please note that [wildcard-TLD logic](#wildcard-for-tld) works here as well.
 
 **Examples:**
 
@@ -676,10 +676,9 @@ In the `$replace` value, two characters must be escaped: comma (`,`) and (`$`). 
 ```
 
 There are three parts in this rule:
-
-* Regular expression: `(<VAST(.|\s)*?>)(.|\s)*<\/VAST>`
-* Replacement: `\$1<\/VAST>` (please note that `$` is escaped)
-* Regular expression flags: `i` (insensitive search)
+* `regexp` - `(<VAST(.|\s)*?>)(.|\s)*<\/VAST>`;
+* `replacement` — `\$1<\/VAST>` where `$` is escaped;
+* `modifiers` — `i` for insensitive search.
 
 You can see how this rule works here:
 http://regexr.com/3cesk
@@ -905,12 +904,12 @@ In this case, only requests to `example.org/script.js` will be "redirected". All
 
 Adding this modifier to a rule is equivalent to excluding the domains by the rule's matching pattern or to adding the corresponding exclusion rules. To add multiple domains to one rule, use the `|`  character as a separator.
 
-Please note that rules with the `$denyallow` modifier have the following restrictions:
-
-* the rule's matching pattern cannot target any specific domain(s) (e.g., it can't start with `||`)
-* domains in the modifier's parameter cannot be negated (e.g. `$denyallow=~x.com`) or have a wildcard TLD (e.g. `$denyallow=x.*`)
-
-The rules which violate these restrictions are considered invalid.
+> **Restrictions**
+>
+> * The rule's matching pattern cannot target any specific domains, e.g. it cannot start with `||`.
+> * Domains in the modifier's parameter cannot be negated, e.g. `$denyallow=~x.com`, or have a wildcard TLD, e.g. `$denyallow=x.*`.
+>
+> The rules which violate these restrictions are considered invalid.
 
 **Example:**
 
