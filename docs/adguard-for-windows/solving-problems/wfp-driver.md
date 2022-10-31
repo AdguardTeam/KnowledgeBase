@@ -3,16 +3,12 @@ title: WFP driver
 sidebar_position: 1
 ---
 
-Starting with AdGuard 5.7, we provide two options of the internet traffic filtering you can choose from. The new and modern WFP driver is used by default in Windows 8.
+To filter netwrok traffic, AdGuard uses a network driver. There are two options: TDI driver and WFP driver. While WFP driver is generally preferrable and is enabled by default for all newer Windows OS versions (Windows 8 and newer), it can potentially cause compatibility problems, especially with some antiviruses. These problems and subsequent errors can be very different in each case. 
 
-Unfortunately, WFP although very promising is quite a new one and therefore is not completely well-adjusted. That is why sometimes compatibility errors of our WFP-drivers with drivers of some antiviruses occur. These errors can be very different in each case.
+If you encounter a problem that you suspect might be caused by this, you can always switch to the older but more stable TDI network driver. To do so:
 
-You can always switch to the old and stable network driver.
-
-To do so:
-
-1. Go to Network Settings.
+1. Go to *Settings -> Network*.
 
 2. Disable WFP driver as it’s done in this picture:
 
-![WFP driver](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Windows7.1/wfpEn.png)
+![WFP driver](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/wfp-driver.png)
