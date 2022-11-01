@@ -529,7 +529,7 @@ The list of the available modifier options:
 
 > **Note**
 >
-> Blocking cookies and removing tracking parameters is achieved by using rules with [`$cookie`](#cookie-modifier) and [`$removeparam`](#removeparam-modifier) modifiers. Exception rules with only `$stealth` modifier will not do those things. If you want to completely disable all Stealth Mode features for a given URL, you need to include all three modifiers:
+> Blocking cookies and removing tracking parameters is achieved by using rules with [`$cookie`](#cookie-modifier) and [`$removeparam`](#removeparam-modifier) modifiers. Exception rules with only `$stealth` modifier will not do those things. If you want to completely disable all Stealth Mode features for a given domain, you need to include all three modifiers:
 > `@@||example.org^$stealth,removeparam,cookie`
 
 > **Compatibility with different versions of AdGuard**
