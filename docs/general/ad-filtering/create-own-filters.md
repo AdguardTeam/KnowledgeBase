@@ -1375,7 +1375,7 @@ As a response to blocked request AdGuard returns a short video placeholder.
 
 **Examples**
 
-* `||example.com/videos/$mp4` blocks a video downloads from `||example.com/videos/*` and changes the response to a video placeholder.
+* `||example.com/videos/$mp4` blocks all video downloads from `||example.com/videos/*` and changes the response to a video placeholder.
 
 > **Compatibility with different versions of AdGuard**
 >
