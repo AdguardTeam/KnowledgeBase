@@ -460,7 +460,7 @@ Disables [HTML filtering](#html-filtering-rules) and [`$replace`](#replace-modif
 
 **Examples**
 
-* `@@||example.com^$content` disables all HTML filtering and replace rules rules on pages at `example.com` and all subdomains.
+* `@@||example.com^$content` disables all HTML filtering rules and replace rules on pages at `example.com` and all its subdomains.
 
 ##### **`$jsinject`**
 
