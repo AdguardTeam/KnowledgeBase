@@ -1537,7 +1537,7 @@ We **strongly recommend** using these markers any time when you use an extended 
 
 > You can apply standard CSS selectors using the ExtendedCss engine by using a rule marker `#?#`, e.g. `#?#div.banner`.
 
-> Learn more [how to debug extended selectors](#selectors-debugging-mode).
+> Learn more about [how to debug extended selectors](#selectors-debugging-mode).
 
 ##### Pseudo-class `:has()`
 
