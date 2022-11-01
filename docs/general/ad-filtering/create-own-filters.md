@@ -1177,7 +1177,7 @@ Use `@@` to negate `$removeheader`:
 **Syntax**
 
 * `||example.org^$hls=urlpattern` removes segments whose URL matches the URL pattern `urlpattern`. The pattern works just like the one in basic URL rules, however, the characters `/`, `$` and `,` must be escaped with `\` inside `urlpattern`.
-* `||example.org^$hls=/regexp/options` removes segments where the URL, or, if a certain option is present, one of the tags, matches the regular expression `regexp`. Available `options` are:
+* `||example.org^$hls=/regexp/options` removes segments where the URL or one of the tags (for certain present option) is matched by the regular expression `regexp`. Available `options` are:
   * `t` — instead of testing the segment's URL, test each of the segment's tags against the regular expression. A segment with a matching tag is removed;
   * `i` — make the regular expression case-insensitive.
 
