@@ -912,7 +912,7 @@ In this case, only requests to `example.org/script.js` will be "redirected" to `
 
 #### **`$denyallow`**
 
-`$denyallow` modifier allows to avoid creating additional rules when it is needed to disable a certain rule for a specific domains. `$denyallow` matches only target domains and not referrer domains.
+`$denyallow` modifier allows to avoid creating additional rules when it is needed to disable a certain rule for specific domains. `$denyallow` matches only target domains and not referrer domains.
 
 Adding this modifier to a rule is equivalent to excluding the domains by the rule's matching pattern or to adding the corresponding exclusion rules. To add multiple domains to one rule, use the `|`  character as a separator.
 
