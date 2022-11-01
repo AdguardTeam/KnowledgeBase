@@ -950,7 +950,7 @@ or to these three:
 
 > `$queryprune` is an alias of `$removeparam`. Since `$queryprune` is deprecated, avoid using it and use `$removeparam` instead.
 
-Rules with `$removeparam` modifier are intended to to strip query parameters from requests' URLs. Please note that such rules are only applied to `GET`, `HEAD`, `OPTIONS`, and [sometimes](#removeparam-modifier-compatibility) `POST` requests.
+Rules with `$removeparam` modifier are intended to strip query parameters from requests' URLs. Please note that such rules are only applied to `GET`, `HEAD`, `OPTIONS`, and [sometimes](#removeparam-modifier-compatibility) `POST` requests.
 
 > `$removeparam` rules that do not have any [content type modifiers](#content-type-modifiers) will match only requests where content type is `document`.
 
