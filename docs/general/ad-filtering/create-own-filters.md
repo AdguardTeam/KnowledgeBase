@@ -2189,7 +2189,7 @@ $path ["=" pattern]
 >
 > Rules with `$path` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard Browser extension for Chrome, Firefox, Edge.
 
-### **`url`**
+### **`url`** {#non-basic-url-modifier}
 
 `$url` modifier limits the rule application area to URLs matching the specified mask.
 
