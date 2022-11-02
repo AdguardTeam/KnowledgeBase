@@ -815,7 +815,7 @@ every time AdGuard encounters a cookie called `NAME` in a request to `example.or
 >
 > Rules with `$cookie` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
 
-#### **`$network`**
+#### **`$network`** {#network-modifier}
 
 This is basically a Firewall-kind of rules allowing to fully block or unblock access to a specified remote address.
 
