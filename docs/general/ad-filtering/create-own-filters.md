@@ -891,7 +891,7 @@ AdGuard uses the same filtering rules syntax as uBlock Origin. Also, it is compa
 >
 > Rules with `$redirect` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
 
-#### **`$redirect-rule`**
+#### **`$redirect-rule`** {#redirect-rule-modifier}
 
 This is basically an alias to [`$redirect`](#redirect-modifier) since it has the same "redirection" values and the logic is almost similar. The difference is that `$redirect-rule` is applied only in the case when the target request is blocked by a different basic rule.
 
