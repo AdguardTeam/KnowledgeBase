@@ -1166,7 +1166,7 @@ Use `@@` to negate `$removeheader`:
 >
 > Rules with `$removeheader` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard Browser extension for Chrome, Firefox, Edge.
 
-#### **`$hls`**
+#### **`$hls`** {#hls-modifier}
 
 `$hls` rules modify the response of a matching request. They are intended as a convenient way to remove segments from [HLS playlists (RFC 8216)](https://datatracker.ietf.org/doc/html/rfc8216).
 
