@@ -654,7 +654,7 @@ This modifier completely changes the rule behavior. If it is applied, the rule w
 
 > You will need some knowledge of regular expressions to use `$replace` modifier.
 
-##### `$replace` rules features
+**Features**
 
 * `$replace` rules apply to any text response, but will not apply to binary (`media`, `image`, `object`, etc).
 * `$replace` rules do not apply if the size of the original response is more than 3MB.
