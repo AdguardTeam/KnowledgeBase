@@ -39,7 +39,7 @@ If that doesn't help, follow the instructions for manually adding the AdGuard ce
 
 7) Click *Import...*.
 
-![Certificate settings - import](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/import2.jpeg)
+![Certificate settings — import](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/import2.jpeg)
 
 8) Browse the downloaded **cert.cer** file and click *Open*.
 
@@ -51,7 +51,7 @@ You've successfully installed AdGuard certificate. Restart the browser and the e
 
 If you are a user of both AdGuard for Windows and Yandex.Browser you may have come across this warning:
 
-[Yandex certificate warning](yandex-cert-en.png)
+[Yandex certificate warning](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/yandex-cert.png)
 
 ### Why is this happening
 
