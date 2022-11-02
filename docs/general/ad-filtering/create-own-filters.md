@@ -696,7 +696,7 @@ There are three parts in this rule:
 You can see how this rule works here:
 http://regexr.com/3cesk
 
-**Multiple `$replace` rules:**
+**Multiple `$replace` rules**
 
 1. `||example.org^$replace=/X/Y/`
 2. `||example.org^$replace=/Z/Y/`
