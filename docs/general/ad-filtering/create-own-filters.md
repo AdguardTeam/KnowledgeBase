@@ -880,8 +880,6 @@ AdGuard uses the same filtering rules syntax as uBlock Origin. Also, it is compa
 ##### Disabling `$redirect` rules
 
 
-**Examples**
-
 * `||example.org/script.js$script,redirect=noopjs` — this rule redirects all requests to `example.org/script.js` to the resource named `noopjs`.
 * `||example.org/test.mp4$media,redirect=noopmp4-1s` — this rule redirects all requests to `example.org/test.mp4` to the resource named `noopmp4-1s`.
 * `@@||example.org^$redirect` will disable all `$redirect` rules for URLs that match `||example.org^`.
