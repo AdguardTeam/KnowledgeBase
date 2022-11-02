@@ -705,7 +705,7 @@ http://regexr.com/3cesk
 * Both rule 1 and 2 will be applied to all requests sent to `example.org`.
 * Rule 2 is disabled for requests matching `||example.org/page/`, **but rule 1 still works!**.
 
-**Disabling `$replace` rules:**
+**Disabling `$replace` rules**
 
 * `@@||example.org^$replace` will disable all `$replace` rules matching `||example.org^`.
 * `@@||example.org^$document` or `@@||example.org^$content` will disable all `$replace` rules **originated from** pages of `example.org` **including the page itself**.
