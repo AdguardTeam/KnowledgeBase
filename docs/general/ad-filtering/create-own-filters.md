@@ -775,7 +775,7 @@ The `$cookie` modifier completely changes rule behavior. Instead of blocking a r
 **Syntax**
 
 ```
-$cookie [= name[; maxAge = seconds ; sameSite = strategy ]]]
+$cookie [= name[; maxAge = seconds [; sameSite = strategy ]]]
 ```
 where:
   * **`name`** — optional, string or regular expression to match cookie name.
