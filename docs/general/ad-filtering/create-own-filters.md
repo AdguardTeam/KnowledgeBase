@@ -780,7 +780,7 @@ $cookie [= name[; maxAge = seconds [; sameSite = strategy ]]]
 where:
   * **`name`** — optional, string or regular expression to match cookie name.
   * **`seconds`** — number of seconds for current time to offset the expiration date of cookie.
-  * **`strategy`** — string for [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#SameSite_cookies) strategy to make cookie use.
+  * **`strategy`** — string for [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite) strategy to make cookie use.
 
 For example
 ```
@@ -788,7 +788,7 @@ For example
 ```
 every time AdGuard encounters a cookie called `NAME` in a request to `example.org`, it will do the following:
   * Set its expiration date to current time plus `3600` seconds
-  * Makes the cookie use [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#SameSite_cookies) "lax" strategy.
+  * Makes the cookie use [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite) "lax" strategy.
 
 > **Escaping special characters**
 >
