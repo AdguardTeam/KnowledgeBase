@@ -29,7 +29,7 @@ When using the Browser Assistant, all these problems don’t matter as there can
 
 The new Browser Assistant has its own tab in AdGuard for Windows settings, along with Stealth Mode, Browsing Security, Parental Control and others. There you will find a link to download the extension for your default browser. Besides, there is a checkbox to enable the legacy Assistant.
 
-![Settings]()
+![Settings](https://cdn.adguard.com/content/kb/ad_blocker/windows/browser-assistant.png)
 
 ## Legacy Assistant
 
