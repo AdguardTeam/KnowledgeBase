@@ -3,15 +3,19 @@ title: The connection is not trusted
 sidebar_position: 2
 ---
 
-To be able to filter HTTPS-traffic and efficiently block ads and trackers, AdGuard generates a special (and unique) root certificate and installs it into the system storage. You can learn more about why a certificate is required by reading [this article]().
+To be able to filter HTTPS-traffic and efficiently block ads and trackers, AdGuard generates a special (and unique) root certificate and installs it into the system storage. You can learn more about why a certificate is required by reading [this article](/general/https-filtering/what-is-https-filtering.md).
 
-Usually browsers trust the AdGuard certificate, but sometimes for reasons beyond our control the trust mechanism faults, which leads to the error. This happens most often in Firefox-based browsers like Mozilla Firefox, PaleMoon, Waterfox, etc., or in Yandex.Browser. 
+Normally browsers trust the AdGuard certificate once it's added to the system certificate storage during the installation process. But in some cases this is not enough and you may come across warnings or errors. This happens most often in Firefox-based browsers like Mozilla Firefox, PaleMoon, Waterfox, etc., or in Yandex.Browser. 
 
 ## *Potential Security Risk* error in Firefox-based browsers
 
 ![Security risk error](https://cdn.adguard.com/public/Adguard/kb/en/certificate/cert_error_en.png)
 
-Starting with v68, under certain conditions Firefox normally trusts certificates from the system storage. However, sometimes an AdGuard user can face the "Connection is untrusted" error. To fix it, it's necessary to download AdGuard certificate and install it to Firefox's local storage manually. To do so, follow these steps:
+Old FireFox versions, as well as browsers based on it, do not trust certificates from the system storage, but only those from their local storage. Since v68, FireFox trusts the system certificates, but you still can face the "Connection is untrusted" error. If something like this happens, first try to click the *Reinstall Certificate* button — you will find it in the *Network* tab. 
+
+![Reinstall Certificate](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/reinstall.jpg)
+
+If that doesn't help, follow the instructions for manually adding the AdGuard certificate to the FireFox store.
 
 >This instruction is for Firefox browser. Names of buttons and menu items may differ in other Firefox-based browsers.
 
@@ -19,7 +23,7 @@ Starting with v68, under certain conditions Firefox normally trusts certificates
 
 2) Go to [http://local.adguard.org/cert](http://local.adguard.org/cert) and click the *Download* button. The browser should start downloading **cert.cer** file.
 
->You can also open the download page by clicking on the link via the AdGuard app at *Settings - Network - HTTPS filtering*.
+>You can also open the download page by clicking on the link via the AdGuard app at *Settings → Network → HTTPS filtering*.
 
 ![Certificate settings](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/link.jpeg)
 
@@ -59,5 +63,5 @@ However, AdGuard also adds its certificate to the trusted ones. This leads to th
 
 The easiest way is to click on the **Go to site** button. This will tell Yandex.Browser to remember AdGuard certificate as a trusted one, at least for a while. Normally, you won't have to see this message anymore, but it is not beyond the realm of possibility for it to appear occasionally, for whatever reasons. In such cases, simply press the same button again *(make sure it is AdGuard's certificate!)*.
 
-Disabling the HTTPS filtering in AdGuard will also prevent Yandex.Browser from showing this message again, but it comes with a big price: all ads that are loaded by HTTPS (including **Yandex own ads**) will show up - on such websites as YouTube, Facebook, Instagram, and many more. We strongly advise against it if you want to keep the quality of ad blocking high.
+Disabling the HTTPS filtering in AdGuard will also prevent Yandex.Browser from showing this message again, but it comes with a big price: all ads that are loaded by HTTPS (including **Yandex's own ads**) will show up — on such websites as YouTube, Facebook, Instagram, and many more. We strongly advise against it if you want to keep the quality of ad blocking high.
 
