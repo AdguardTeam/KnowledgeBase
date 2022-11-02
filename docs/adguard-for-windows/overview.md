@@ -3,13 +3,13 @@ title: Features overview
 sidebar_position: 1
 ---
 
-AdGuard for Windows is an easy-to-use tool that blocks annoying banners, pop-ups, video ads and trackers. But that's not all: it helps you save traffic, load web pages faster, and guard your computer from undesirable and potentially malicious content. AdGuard can also protect you from phishing sites and your children from information they shouldn't be exposed to due to age restrictions. With a variety of settings, you can customize the app to suit you. 
+AdGuard for Windows is an easy-to-use tool that blocks annoying banners, pop-ups, video ads and trackers. But that's not all: it helps you save traffic, load web pages faster, and guard your computer from undesirable and potentially malicious content. AdGuard can also protect you from phishing sites, and your children — from information they shouldn't be exposed to due to age restrictions.
 
 ## Home screen
 
 ![Main screen]()
 
-Once you start AdGuard for Windows, you will see the main screen of the app. Its most noticeable detail is the enable/disable button. Also, on this screen you can monitor blocked ads, trackers and threats statistics, find out the current version of the app or update it. Furthermore, there are four tabs in the upper right corner: *Settings*, *Support*, *License*, and *About*. Each of these is worth talking about separately. 
+Once you start AdGuard for Windows, you will see the main screen of the app. Its most noticeable detail is the *enable/disable protection* button. Also, on this screen you can monitor blocked ads, trackers and threats statistics, find out the current version of the app or update it. Furthermore, there are four tabs in the upper right corner: *Settings*, *Support*, *License*, and *About*. Each of these is worth talking about separately. 
 
 ## Settings
 
@@ -19,22 +19,22 @@ Once you start AdGuard for Windows, you will see the main screen of the app. Its
 
 ### General settings
 
-Here you can set the language and theme (Dark or Light), enable AdGuard launching at system start-up and silent automatic updates, choose the update channel and filter update chek interval. You should also go to *Settings* if AdGuard for Windows is not working properly to enable *Debug* logging Level and then export logs.  
+Here you can set the language and theme (Dark or Light), enable AdGuard launching at system start-up and silent automatic updates, choose the update channel and filter update check interval. Also Settings is the place to go if AdGuard for Windows is not working properly and the support team asked you to collect *Debug logs*.
 
 ![Advanced Settings]()
 
-At the very bottom of the screen you will find *Advanced Settings*. Changing them can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. That's why we suggest you open this section only if you are sure of what you are doing or our support team has asked you about it. If you want to understend what can be set up in *Advanced Setting* read the [dedicated article](/solving-problems/low-level-settings.md).
+At the very bottom of the screen you will find *Advanced Settings*. Changing some of them mindlessly may potentially cause problems with AdGuard's performance, break the Internet connection or compromise your security and privacy. That's why we suggest you open this section only if you are sure of what you are doing or our support team has asked you about it. If you want to understend what can be set up in *Advanced Setting* read the [dedicated article](/adguard-for-windows/solving-problems/low-level-settings.md).
 
 ### Ad Blocker
 
-This is the main module of AdGuard for Windows that removes ads from the websites you visit and from the apps installed on your device. To filter out advertising and privacy-threatening content such as banners, pop-ups, or trackers AdGuard uses different filters: groups of rules with a similar purpose written with a special syntax. To understend what filters are and how they work read our [blog post](https://adguard.com/en/blog/what-are-filters.html).
+This is the main module of AdGuard for Windows that removes ads from the websites you visit and from the apps installed on your device. To filter out advertising and privacy-threatening content such as banners, pop-ups, or trackers AdGuard uses different filters: groups of rules with a similar purpose written with a special syntax. To understand what filters are and how they work read our [blog post](/general/ad-filtering/how-ad-blocking-works.md).
 
 ![Ad Blocker]()
 
 In the Ad Blocker module you can:
-* enable an auto activation of language-specific filters
-* disable search ads and self-promotion blocking
-* activate pre-installed filters such as the *AdGuard Base filter*, 
+* enable automatic activation of language-specific filters
+* disable [search ads and self-promotion](/general/ad-filtering/search-ads.md) blocking
+* activate pre-installed filters such as *AdGuard Base filter*, 
 * install filters from the list or add a custom filter by clicking the *Add a filter* button, 
 * make changes to existing rule groups using the *Filter editor* button, 
 * compose a filter from your own rules written manually, imported or created with the AdGuard Assistant extension.
@@ -49,15 +49,16 @@ Many websites gather information about their visitors, such as their IP addresse
  
 You can flexibly adjust the work of Stealth Mode: for instance, you can prohibit the website to receive the search request you used to find it on the Internet, automatically delete both third-party and website’s own cookies, and disable location sharing in your browser that can be used to track your whereabouts.
  
-To learn all the main features and options you can manage in the Stealth mode settings, [read this article](/general/stealth-mode.md).  
+To learn everything about Stealth Mode and its many options, [read this article](/general/stealth-mode.md).  
 
 ### Browsing Security
 
-Phishing is a very common web fraud aimed at stealing your personal data (passwords, bank account details, etc.). It is carried out using fake web pages mimicking popular websites or real services, such as web stores or social networks. Many phishing websites have URLs that only differ from the real ones in just a few symbols to put off your guard. If a user enters their details on such a website, they will definitely end up in the hands of criminals.
-
-Browsing Security gives strong protection against such incidents. In addition, the regularly updated module bases allow it to recognize malicious websites, thus securing your PC from viruses and trojans. At the same time, the user’s personal information is not transferred anywhere, and AdGuard servers do not know which websites the user is visiting, because security check is not performed via open web address (URL) but through hash prefixes (hash is a certain data structure that renders each address added to the base unambiguous). Some web pages are not malicious themselves, but they may contain elements built into their structure by other websites. Unlike browser plug-ins, Browsing Security module checks each object built into any web page, thus ensuring maximum protection.
-
->But note that AdGuard for Android is not an antivirus. It will neither stop the actual download of a virus nor delete the already existing ones. For the complete protection of your device, we recommend using AdGuard in tandem with a dedicated AV tool.
+Browsing Security gives strong protection against malicious and fishing websites. No, AdGuard for Windows is not an antivirus. It will neither stop the actual download of a virus nor delete the already existing ones. But it will prevent downloading the content of a website whose domain has been added to our untrusted sites database. How does this module work, you can read in the [dedicated article](/general/stealth-mode.md).
+ 
+In this module you can 
+* enable notifications to block requests to malicious and phishing sites, 
+* activate sound notifications, 
+* agree to submit anonymous security-related info to the AdGuard server.
 
 ![Browsing Security]()
 
@@ -65,17 +66,19 @@ In case you want to learn more about Browsing Security, read [this article](/gen
 
 ### DNS Protection
 
-There are three significant reasons why you might want to explore the DNS protection settings. First, to avoid being tracked by your ISP. Every time you want to open a website and type, for example, `google.com` in the address bar, your browser sends a request to a DNS server to get the IP address of the site in return. Usually, the DNS server belongs to your ISP, which allows them to track your online activity. Second, to encrypt you DNS traffic. And the third one is to block content on DNS level. 
+There are three significant reasons why you might want to explore the DNS protection settings. First, to avoid being tracked by your ISP. Every time you open a website, for example `google.com`, your browser sends a request to a DNS server to get the IP address of the website in return. Usually, the DNS server belongs to your ISP, which allows them to track your online activity. Second, to encrypt you DNS traffic. And the third one is to [block content on DNS level](https://adguard-dns.io/kb/general/dns-filtering/). 
 
 ![DNS Protection]()
 
-In the DNS protection module of AdGuard for Windows you can select the DNS servers from known DNS providers, including AdGuard DNS that blocks ads and trackers, AdGuard DNS Family Protection that in addition blocks adult content, or AdGuard DNS Non-filtering that provides a secure and reliable connection, but doesn't filter anything. You can even add custom DNS servers. Also there is an option to add complicated rules using DNS rules syntax and [DNS filters of your choice](https://filterlists.com). 
+In the DNS protection module of AdGuard for Windows you can select the DNS servers from known DNS providers, including [AdGuard DNS](https://adguard-dns.io/kb/) that blocks ads and trackers, AdGuard DNS Family Protection that in addition blocks adult content, or AdGuard DNS Non-filtering that provides a secure and reliable connection, but doesn't filter anything. You can even add custom DNS servers. Also there is an option to add custom rules using [DNS rules syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/). And if necessary, you can add [DNS filters of your choice](https://filterlists.com). 
 
 ### Parental Control
 
 There are numerous websites access to which should be restricted if the PC is used by children. This task is accomplished by Parental Control.
 
-The module checks the contents of web pages opened in the browser and filters those with content undesirable for children: images and texts for adults, crude language, violence, drug propaganda, etc. Parental Control settings are password protected so that the child is not able to go round the restrictions. This module not only blocks directions to undesirable sites but can also delete the links that are inappropriate for children from the search results. Filter sensitivity is flexibly adjusted. 
+The module checks the contents of web pages opened in the browser and filters those with content undesirable for children: images and texts for adults, crude language, violence, drug propaganda, etc. Parental Control settings are password protected so that the child is not able to go round the restrictions. This module not only blocks directions to undesirable sites but can also delete the links that are inappropriate for children from the search results. Filter sensitivity is flexibly adjusted.
+
+In the Parental Control module you can enable the *Safe search* and manage the *blocklist* and the *allowlist* to customize how this option works. You can also check the *Block executable files download* box to prevent your child from downloading and installing software on the computer. There are two more options in the *Parental Control* module: you can select a specific user to be protected by *Parental Control* and set a password to protect AdGuard settings from change.  
 
 ![Parental Control]()
 
@@ -101,7 +104,7 @@ The following extensions are installed with AdGuard:
 
 **AdGuard Assistant**
 
-The name of this extension is quite deliberate: it actually assists the user in changing basic AdGuard settings right in the browser, without the need to open the app itself. AdGuard Assistant works with all Microsoft Windows compatible browsers. In addition, the AdGuard Assistant icon will not be displayed on websites listed as exceptions by the user and on certain web pages where there is a risk of incorrect content display. You can find detailed description of capabilities and adjustment methods of AdGuard Assistant in the relevant section of our Knowledge Database.
+AdGuard Assistant is Legacy Assistant that you may use if the new Assistant is not available for your browser. The name of this extension is quite deliberate: it actually assists the user in changing basic AdGuard settings right in the browser, without the need to open the app itself. AdGuard Assistant works with all Microsoft Windows compatible browsers. In addition, the AdGuard Assistant icon will not be displayed on websites listed as exceptions by the user and on certain web pages where there is a risk of incorrect content display. 
 
 **AdGuard Extra**
 
@@ -115,15 +118,15 @@ This extension prevents popup windows from opening when you view web pages. Some
 
 **Web of Trust**
 
-Web of Trust lets you see the reputation of each website based on its users’ opinions. The site is rated by a number of specific criteria: trust, security, etc. This extension is turned off by default, but you can turn it on in the application settings.
+Web of Trust lets you see the reputation of each website based on its users’ opinions. The site is rated by a number of specific criteria: trust, security, etc. This extension is turned off by default, but you can turn it on in the application settings. Please, note that AdGuard is not the developer of this extension.
 
 ### Network
 
-The penultimate module is dedicated to network filtering, and here you will find additional features. Two of them are enabled by default: "Enable traffic filtering" and "Filter HTTPS protocol". These are important extra precautions to better filter your web space. HTTP is the primary protocol for transmitting information over the Internet. Most data, including ads, is transmitted through it, but it has one drawback: the connection is not encrypted. With the HTTPS filtering feature, AdGuard filters not only HTTP traffic, but also HTTPS traffic (S stands for "safe").
+The penultimate module is dedicated to network filtering, and here you will find additional network-related options. Two of them are enabled by default: *Enable traffic filtering* and *Filter HTTPS protocol*. These are important extra precautions to better filter your web space. Most websites are now using HTTPS, and the same applies to advertising. From many sites, like youtube.com, facebook.com and twitter.com, it is impossible to remove ads without HTTPS-filtering. So keep the *Filter HTTPS protocol* feature enabled unless you have a strong reason not to.
 
 [Network Settings]()
 
-In this module you can also manage proxy settings. Check the checkbox "Use AdGuard as an HTTP proxy" to use AdGuard as a regular HTTP proxy which will filter all traffic passing through it. You can also enable the "Filter websites with EV certificates" feature. Extended Validation (EV) SSL Certificates offer a stronger safety guarantee; owners of such websites have to pass a thorough and globally standardized identity verification process defined by EV guidelines. Which is the reason why some users trust websites with such certificates and prefer not to filter them.
+In this module you can check the checkbox "Use AdGuard as an HTTP proxy" to use AdGuard as a regular HTTP proxy which will filter all traffic passing through it. You can also enable the "Filter websites with EV certificates" feature. Extended Validation (EV) SSL Certificates offer a stronger safety guarantee; owners of such websites have to pass a thorough and globally standardized identity verification process defined by EV guidelines. Which is the reason why some users trust websites with such certificates and prefer not to filter them.
 
 At last, there is a section with Proxy settings. There you can specify which proxy server AdGuard should use to update filters, get new versions and so on.
 
@@ -156,8 +159,8 @@ By clicking the Support tab you will open a dialog box through which you can rep
 
 [License]()
 
-In this tab, everything is very simple: three buttons and a minimum amount of information. Here you can:
-* find out the license type (natli build, veta or release), the number of devices available for simultaneous connection to AdGuard, the license expiration date;
+This tab contains information about your license. Here you can:
+* find out the license type (nightly build, beta or release), the number of devices available for simultaneous connection to AdGuard, the license expiration date;
 * click the button to go to the license purchase page, and activate, reset or recover a license. 
 
 ### About 
@@ -165,3 +168,24 @@ In this tab, everything is very simple: three buttons and a minimum amount of in
 [About]()
 
 In addition to information about the current version of the program, this tab provides some useful links to the Licese Agreement, Privacy Policy, Acknowledgements, Discussions, and Version history pages. 
+
+### Check for updates
+
+To check for new AdGuard versions, click the rotating arrows icon in the upper right corner of the app's main screen.
+
+### Tray menu
+
+For quick control of the program through the tray menu, all the basic frequently used settings are available. To call the menu, right-click the AdGuard icon in the tray and: 
+
+* disable protection: completely or for 30 seconds
+* go to *Settings*
+* open the *Tools* and *Advanced* menus
+* check for filter updates 
+* check for app updates
+* reach the *Support* and *About* sections
+* close AdGuard, but continue filtering
+* exit AdGuard
+
+[The filtering log]()
+
+It is worth mentioning that through the *Tool* menu you can open the *Filtering log*. Not only can you see all the requests sent by browsers and apps installed on your computer. But you can also see their status, and block or unblock any request by creating a custom rule right in the *Filtering log*! 
