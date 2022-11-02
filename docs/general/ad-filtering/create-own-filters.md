@@ -1095,61 +1095,61 @@ Use `@@` to negate `$removeheader`:
 >
 > In case of multiple `$removeheader` rules matching a single request, we will apply each of them one by one.
 
-**Restrictions**
-
-1. This type of rules can be used **only in trusted filters**. This category includes your own User rules and all the filters created by AdGuard Team.
-
-2. In order to avoid compromising the security `$removeheader` cannot remove headers from the list below:
-  * `access-control-allow-origin`
-  * `access-control-allow-credentials`
-  * `access-control-allow-headers`
-  * `access-control-allow-methods`
-  * `access-control-expose-headers`
-  * `access-control-max-age`
-  * `access-control-request-headers`
-  * `access-control-request-method`
-  * `origin`
-  * `timing-allow-origin`
-  * `allow`
-  * `cross-origin-embedder-policy`
-  * `cross-origin-opener-policy`
-  * `cross-origin-resource-policy`
-  * `content-security-policy`
-  * `content-security-policy-report-only`
-  * `expect-ct`
-  * `feature-policy`
-  * `origin-isolation`
-  * `strict-transport-security`
-  * `upgrade-insecure-requests`
-  * `x-content-type-options`
-  * `x-download-options`
-  * `x-frame-options`
-  * `x-permitted-cross-domain-policies`
-  * `x-powered-by`
-  * `x-xss-protection`
-  * `public-key-pins`
-  * `public-key-pins-report-only`
-  * `sec-websocket-key`
-  * `sec-websocket-extensions`
-  * `sec-websocket-accept`
-  * `sec-websocket-protocol`
-  * `sec-websocket-version`
-  * `p3p`
-  * `sec-fetch-mode`
-  * `sec-fetch-dest`
-  * `sec-fetch-site`
-  * `sec-fetch-user`
-  * `referrer-policy`
-  * `content-type`
-  * `content-length`
-  * `accept`
-  * `accept-encoding`
-  * `host`
-  * `connection`
-  * `transfer-encoding`
-  * `upgrade`
-
-3. `$removeheader` rules are not compatible with any other modifiers except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and [content type modifiers](#content-type-modifiers), e.g. `$script`, `$stylesheet`, etc. The rules which have any other modifiers are considered invalid and will be discarded.
+> **Restrictions**
+>
+> 1. This type of rules can be used **only in trusted filters**. This category includes your own User rules and all the filters created by AdGuard Team.
+>
+> 2. In order to avoid compromising the security `$removeheader` cannot remove headers from the list below:
+>   * `access-control-allow-origin`
+>   * `access-control-allow-credentials`
+>   * `access-control-allow-headers`
+>   * `access-control-allow-methods`
+>   * `access-control-expose-headers`
+>   * `access-control-max-age`
+>   * `access-control-request-headers`
+>   * `access-control-request-method`
+>   * `origin`
+>   * `timing-allow-origin`
+>   * `allow`
+>   * `cross-origin-embedder-policy`
+>   * `cross-origin-opener-policy`
+>   * `cross-origin-resource-policy`
+>   * `content-security-policy`
+>   * `content-security-policy-report-only`
+>   * `expect-ct`
+>   * `feature-policy`
+>   * `origin-isolation`
+>   * `strict-transport-security`
+>   * `upgrade-insecure-requests`
+>   * `x-content-type-options`
+>   * `x-download-options`
+>   * `x-frame-options`
+>   * `x-permitted-cross-domain-policies`
+>   * `x-powered-by`
+>   * `x-xss-protection`
+>   * `public-key-pins`
+>   * `public-key-pins-report-only`
+>   * `sec-websocket-key`
+>   * `sec-websocket-extensions`
+>   * `sec-websocket-accept`
+>   * `sec-websocket-protocol`
+>   * `sec-websocket-version`
+>   * `p3p`
+>   * `sec-fetch-mode`
+>   * `sec-fetch-dest`
+>   * `sec-fetch-site`
+>   * `sec-fetch-user`
+>   * `referrer-policy`
+>   * `content-type`
+>   * `content-length`
+>   * `accept`
+>   * `accept-encoding`
+>   * `host`
+>   * `connection`
+>   * `transfer-encoding`
+>   * `upgrade`
+>
+> 3. `$removeheader` rules are not compatible with any other modifiers except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and [content type modifiers](#content-type-modifiers), e.g. `$script`, `$stylesheet`, etc. The rules which have any other modifiers are considered invalid and will be discarded.
 
 **Examples**
 
@@ -1191,12 +1191,12 @@ Basic URL exceptions shall not disable rules with `$hls` modifier. They can be d
 
 > `$hls` rules can also be disabled by `$document`, `$content` and `$urlblock` exception rules.
 
-**Restrictions**
-
-* `$hls` rules are only allowed in trusted filters.
-* `$hls` rules are not compatible with any other modifiers except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
-* `$hls` rules only apply to HLS playlists, which are UTF-8 encoded text starting with the line `#EXTM3U`. Any other response will not be modified by these rules.
-* `$hls` rules do not apply if the size of the original response is more than 3 MB.
+> **Restrictions**
+>
+> * `$hls` rules are only allowed in trusted filters.
+> * `$hls` rules are not compatible with any other modifiers except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
+> * `$hls` rules only apply to HLS playlists, which are UTF-8 encoded text starting with the line `#EXTM3U`. Any other response will not be modified by these rules.
+> * `$hls` rules do not apply if the size of the original response is more than 3 MB.
 
 > **Note**
 >
@@ -1315,10 +1315,10 @@ Basic URL exceptions shall not disable rules with `$jsonprune` modifier. They ca
 
 > `$jsonprune` rules can also be disabled by `$document`, `$content` and `$urlblock` exception rules.
 
-**Restrictions**
-
-* `$jsonprune` rules are not compatible with any other modifiers except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
-* `$jsonprune` rules do not apply if the size of the original response is more than 3 MB.
+> **Restrictions**
+>
+> * `$jsonprune` rules are not compatible with any other modifiers except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
+> * `$jsonprune` rules do not apply if the size of the original response is more than 3 MB.
 
 > **Note**
 >
