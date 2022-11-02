@@ -2156,7 +2156,7 @@ But rules with mixed style domains restriction are considered invalid. So, for e
 >
 > Such rules with `$domain` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard Browser extension for Chrome, Firefox, Edge.
 
-### **`$path`**
+### **`$path`** {#non-basic-path-modifier}
 
 `$path` modifier limits the rule application area to specific locations or pages on websites.
 
