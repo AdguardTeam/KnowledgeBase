@@ -1349,7 +1349,7 @@ Basic URL exceptions shall not disable rules with `$jsonprune` modifier. They ca
 >
 > Rules with `noop` modifier are not supported by AdGuard Content Blocker.
 
-#### **`$empty` (deprecated)**
+#### **`$empty` (deprecated)** {#empty-modifier}
 
 > **Deprecation notice**
 >
