@@ -923,7 +923,7 @@ Adding this modifier to a rule is equivalent to excluding the domains by the rul
 >
 > The rules which violate these restrictions are considered invalid.
 
-**Example:**
+**Examples**
 
 This rule:
 ```
@@ -956,13 +956,13 @@ Rules with `$removeparam` modifier are intended to strip query parameters from r
 
 **Syntax**
 
-**Basic syntax:**
+**Basic syntax**
 
 * `$removeparam=param` — removes query parameter with the name `param` from URLs of any request, e.g. a request to `http://example.com/page?param=1&another=2` will be transformed to `http://example.com/page?another=2`.
 
 > `$removeparam` basic syntax is supported starting with v1.7 of [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) and v3.6 of AdGuard Browser Extension.
 
-**Regular expressions:**
+**Regular expressions**
 
 You can also use regular expressions to match query parameters and/or their values:
 
@@ -984,20 +984,20 @@ You can also use regular expressions to match query parameters and/or their valu
 > 2. there is another slash character (`/`) to the left of it;
 > 3. there is another unescaped `$` character to the left of that slash character.
 
-**Remove all query parameters:**
+**Remove all query parameters**
 
 Specify naked `$removeparam` to remove all query parameters:
 
 * `||example.org^$removeparam` — removes all query parameters from URLs matching `||example.org^`.
 
-**Inversion:**
+**Inversion**
 
 Use `~` to apply inversion:
 
 * `$removeparam=~param` — removes all query parameters with the name different from `param`.
 * `$removeparam=~/regexp/` — removes all query parameters that do not match the `regexp` regular expression.
 
-**Negating `$removeparam`:**
+**Negating `$removeparam`**
 
 This sort of rules work pretty much the same way it works with [`$csp`](#csp-modifier) and [`$redirect`](#redirect-modifier) modifiers.
 
@@ -1027,7 +1027,7 @@ With these rules some [UTM parameters](https://en.wikipedia.org/wiki/UTM_paramet
 
 * `$removeparam=/^utm_source=campaign$/` — removes `utm_source` query parameter with the value equal to `campaign`. It does not touch other `utm_source` parameters.
 
-**Negating one `$removeparam` rule and replacing it with a different rule:**
+**Negating one `$removeparam` rule and replacing it with a different rule**
 
 ```
 $removeparam=/^(gclid|yclid|fbclid)=/
@@ -1037,7 +1037,7 @@ $removeparam=/^(gclid|yclid|fbclid)=/
 
 With these rules, Google, Yandex, and Facebook Click IDs will be removed from all requests. There is one exception: Google Click ID (gclid) will not be removed from requests to example.com.
 
-**Negating `$removeparam` for all parameters:**
+**Negating `$removeparam` for all parameters**
 
 ```
 $removeparam=/^(utm_source|utm_medium|utm_term)=/
@@ -1073,14 +1073,14 @@ Just like `$csp`, `$redirect`, `$removeparam`, and `$cookie`, this modifier exis
 
 **Syntax**
 
-**Basic syntax:**
+**Basic syntax**
 
 * `||example.org^$removeheader=header-name` removes a **response** header called `header-name`
 * `||example.org^$removeheader=request:header-name` removes a **request** header called `header-name`
 
 > `$removeheader` is case-insensitive, but we suggest always using lower case.
 
-**Negating `$removeheader`:**
+**Negating `$removeheader`**
 
 This type of rules works pretty much the same way it works with `$csp` and `$redirect` modifiers.
 
