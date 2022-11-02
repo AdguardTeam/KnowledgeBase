@@ -1279,7 +1279,7 @@ preroll.ts
 >
 > Rules with the `$hls` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.10 or later**.
 
-#### **`$jsonprune`**
+#### **`$jsonprune`** {#jsonprune-modifier}
 
 `$jsonprune` rules modify the JSON response of a matching request by removing JSON items that match a modified
 [JSONPath](https://goessner.net/articles/JsonPath/) expression. They do not modify responses which are not valid JSON.
