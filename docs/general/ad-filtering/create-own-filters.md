@@ -1365,7 +1365,7 @@ Usually, blocked requests look like a server error to browser. If you use `$empt
 >
 > Rules with `$empty` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
 
-#### **`$mp4` (deprecated)**
+#### **`$mp4` (deprecated)** {#mp4-modifier}
 
 > **Deprecation notice**
 >
