@@ -1334,7 +1334,7 @@ Basic URL exceptions shall not disable rules with `$jsonprune` modifier. They ca
 >
 > Rules with the `$jsonprune` modifier are supported by AdGuard for Windows, Mac and Android, **running CoreLibs version 1.10 or later**.
 
-#### **`noop`**
+#### **`noop`** {#noop-modifier}
 
 `noop` modifier does nothing and can be used solely to increase rules' readability. It consists of a sequence of underscore characters (`_`) of any length and can appear in a rule as many times as needed.
 
