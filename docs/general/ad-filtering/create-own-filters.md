@@ -1065,7 +1065,7 @@ With these rules, specified UTM parameters will be removed from any request save
 >
 > Rules with `$removeparam` modifier can be used **only in trusted filters**. This category includes your own **User rules** and all the filters created by AdGuard Team.
 
-#### **`$removeheader`**
+#### **`$removeheader`** {#removeheader-modifier}
 
 Rules with `$removeheader` modifier are intended to remove headers from HTTP requests and responses. The initial motivation for this rule type is to be able to get rid of the `Refresh` header which is often used to redirect users to an undesirable location. However, this is not the only case where this modifier can be useful.
 
