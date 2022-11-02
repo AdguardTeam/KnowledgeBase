@@ -1,5 +1,5 @@
 ---
-title: The connection is not trusted
+title: Certificate-related issues
 sidebar_position: 2
 ---
 
@@ -11,11 +11,11 @@ Normally browsers trust the AdGuard certificate once it's added to the system ce
 
 ![Security risk error](https://cdn.adguard.com/public/Adguard/kb/en/certificate/cert_error_en.png)
 
-Old FireFox versions, as well as browsers based on it, do not trust certificates from the system storage, but only those from their local storage. Since v68, FireFox trusts the system certificates, but you still can face the "Connection is untrusted" error. If something like this happens, first try to click the *Reinstall Certificate* button — you will find it in the *Network* tab. 
+Old FireFox versions, as well as browsers based on them, do not trust certificates from the system storage, but only those from their local storage. Since v68, FireFox trusts the system certificates, but you still can face the "Connection is untrusted" error. If something like this happens, first try to click the *Reinstall Certificate* button — you will find it in the *Network* tab. 
 
 ![Reinstall Certificate](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/reinstall.jpg)
 
-If that doesn't help, follow the instructions for manually adding the AdGuard certificate to the FireFox store.
+If that doesn't help, follow the instructions for manually adding the AdGuard certificate to the FireFox storage.
 
 >This instruction is for Firefox browser. Names of buttons and menu items may differ in other Firefox-based browsers.
 
