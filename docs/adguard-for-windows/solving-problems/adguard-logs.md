@@ -13,7 +13,7 @@ To analyse and diagnose different problems that may potentially arise, the AdGua
 
 - We strongly advise to take note of the exact time when you reproduced the issue: it will help our support team to find relevant log entries and solve the problem faster.
 
-3. Export the recorded logs using the **Export Log** button.
+3. Export the recorded logs using the **Export Logs** button.
 
 ![Export logs](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
@@ -23,9 +23,9 @@ To analyse and diagnose different problems that may potentially arise, the AdGua
 
 5. Send the archive to the AdGuard support service at **support@adguard.com**, describe the problem and don't forget to mention the time when you reproduced the issue.
 
-{#trace-logs}
+### Trace logs {#trace-logs}
 
-**Note**: sometimes support team members may ask you to send *trace* logs. Then you will need to do the following:
+Sometimes support team members may ask you to send *trace* logs. Then you will need to do the following:
 
 1. Stop AdGuard by right-clicking on the AdGuard icon in the tray menu and choosing *Exit AdGuard*:
 
@@ -47,7 +47,7 @@ Please don't leave the service running:
 
 - We strongly advise to take note of the exact time when you reproduced the issue: it will help our support team to find relevant log entries and solve the problem faster.
 
-6. Export the recorded logs using the **Export Log** button.
+6. Export the recorded logs using the **Export Logs** button.
 
 ![Export logs](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
