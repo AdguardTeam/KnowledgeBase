@@ -51,7 +51,7 @@ You've successfully installed AdGuard certificate. Restart the browser and the e
 
 If you are a user of both AdGuard for Windows and Yandex.Browser you may have come across this warning:
 
-[Yandex certificate warning](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/yandex-cert.png)
+![Yandex certificate warning](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/yandex-cert.png)
 
 ### Why is this happening
 

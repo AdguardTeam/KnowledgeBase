@@ -85,7 +85,7 @@ In the Parental Control module you can enable the *Safe search* and manage the *
 
 ### Browser Assistant
 
-[Browser Assistant](https://cdn.adguard.com/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
+![Browser Assistant](https://cdn.adguard.com/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 
 From this tab you can easily proceed to install AdGuard Browser Assistant, which primary function is to manage filtering directly from the browser. We explained more about how to work with it and what to do if there is no Browser Assistant for your browser in the [separate article](browser-assistant.md).
 
@@ -125,7 +125,7 @@ Web of Trust lets you see the reputation of each website based on its users’ o
 
 The penultimate module is dedicated to network filtering, and here you will find additional network-related options. Two of them are enabled by default: *Enable traffic filtering* and *Filter HTTPS protocol*. These are important extra precautions to better filter your web space. Most websites are now using HTTPS, and the same applies to advertising. From many sites, like youtube.com, facebook.com and twitter.com, it is impossible to remove ads without HTTPS filtering. So keep the *Filter HTTPS protocol* feature enabled unless you have a strong reason not to.
 
-[Network Settings](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/network-settings.png)
+![Network Settings](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/network-settings.png)
 
 In this module you can check the checkbox "Use AdGuard as an HTTP proxy" to use AdGuard as a regular HTTP proxy which will filter all traffic passing through it. You can also enable the "Filter websites with EV certificates" feature. Extended Validation (EV) SSL Certificates offer a stronger safety guarantee; owners of such websites have to pass a thorough and globally standardized identity verification process defined by EV guidelines. Which is the reason why some users trust websites with such certificates and prefer not to filter them.
 
@@ -152,13 +152,13 @@ There are other useful AdGuard options that shouldn't go unnoticed in this artic
 
 ### Support 
 
-[Support](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/support.png)
+![Support](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/support.png)
 
 By clicking the Support tab you will open a dialog box through which you can report a bug, submit a feature request, or simply share your opinion of the product. 
 
 ### License
 
-[License](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/license.png)
+![License](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/license.png)
 
 This tab contains information about your license. Here you can:
 * find out the license type (nightly build, beta or release), the number of devices available for simultaneous connection to AdGuard, the license expiration date;
@@ -166,13 +166,13 @@ This tab contains information about your license. Here you can:
 
 ### About 
 
-[About](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/about.png)
+![About](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/about.png)
 
 In addition to information about the current version of the program, this tab provides some useful links to the Licese Agreement, Privacy Policy, Acknowledgements, Discussions, and Version history pages. 
 
 ### Check for updates
 
-[Check for updates](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/check-updates.png)
+![Check for updates](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/check-updates.png)
 
 To check for filters and userscripts updates, click the rotating arrows icon in the upper right corner of the app's main screen.
 
