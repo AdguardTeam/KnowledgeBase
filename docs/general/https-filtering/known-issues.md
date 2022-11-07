@@ -3,7 +3,7 @@ title: Known issues
 sidebar_position: 2
 ---
 
-> Last update: January 18, 2021
+> Last update: September 20, 2022
 > Understanding this article may require some basic knowledge about encryption, the TLS protocol, and HTTPS.
 
 First, look at this simple diagram that shows the general structure of the HTTPS protocol:
