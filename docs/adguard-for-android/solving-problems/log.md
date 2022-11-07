@@ -1,5 +1,5 @@
 ---
-title: Collecting a full log on AdGuard for Android
+title: How to collect a full log
 sidebar_position: 2
 ---
 

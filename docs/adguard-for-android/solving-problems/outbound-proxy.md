@@ -1,5 +1,5 @@
 ---
-title: How to setup the outbound proxy
+title: How to setup outbound proxy
 sidebar_position: 8
 ---
 
