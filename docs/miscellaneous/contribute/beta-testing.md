@@ -7,7 +7,7 @@ There is an AdGuard app for virtually every major platform out there, and we reg
 
 ## How to become a beta tester {#intro}
 
-Our requirements are easy: use AdGuard, upgrade to the beta version when it becomes available, and report any bugs you notice. However, you will need either a [forum]--- or a [GitHub](https://github.com/) account (or both) to become our beta tester, so you may want to get that out of the way first.
+Our requirements are easy: use AdGuard, upgrade to the beta version when it becomes available, and report any bugs you notice. However, you will need either a [forum](https://forum.adguard.com/index.php) or a [GitHub](https://github.com/) account (or both) to become our beta tester, so you may want to get that out of the way first.
 
 In any case, every single thing you need to know is gathered on a [dedicated page](https://adguard.com/en/beta.html).
 
@@ -17,7 +17,7 @@ If you want to skip the description part and get straight to the action, you can
 
 If you spotted a bug or just want to share your suggestion, let us know in any of the possible ways:
 
-* Go to [forum.adguard.com]--- and post there a new thread (or find an existing one) in the beta forum [category]---. Make sure to read [forum rules]---;
+* Go to [forum.adguard.com](https://forum.adguard.com/index.php) and post there a new thread (or find an existing one) in the beta forum [category](https://forum.adguard.com/index.php?categories/48/). Make sure to read [forum rules](https://forum.adguard.com/index.php?threads/14859/);
 
 * Go to [GitHub](https://github.com/AdguardTeam/) and find a suitable repository. Create a new issue there and describe the bug/feature request in detail.
 
