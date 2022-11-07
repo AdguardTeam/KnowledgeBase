@@ -1,48 +1,48 @@
 ---
-title: Low-level Settings guide
+title: Низкоуровневые настройки
 sidebar_position: 5
 ---
 
-## How to reach the Low-level settings
+## Как найти Низкоуровневые настройки
 
-> Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only open this section if you are sure of what you are doing or our support-team has asked you about it.
+> Изменение *Низкоуровневых настроек* может вызвать проблемы с производительностью AdGuard, нарушить подключение к интернету или поставить под угрозу вашу безопасность и конфиденциальность. Вам следует открывать этот раздел только в том случае, если вы уверены в том, что делаете, или наша служба поддержки попросила вас об этом.
 
-To go to *Low-level settings*, tap the gear icon at the bottom right of the screen to open *Settings*. Select the *General* section and then toggle on the *Advanced mode* switch, after that the *Advanced settings* section will appear below. Tap *Advanced settings* to reach the *Low-level settings* section.
+Чтобы перейти в *Низкоуровневые настройки*, откройте  *Настройки*, нажав на шестеренку в правом нижнем углу экрана. Выберите раздел *Общие*, затем включите *Расширенный режим* , после чего ниже появится раздел *Расширенные настройки* . Откройте *Расширенные настройки* и перейдите к разделу *Низкоуровневые настройки*.
 
-## Low-level settings
+## Низкоуровневые настройки
 
-### Tunnel mode
+### Туннельный режим
 
-There are two main tunnel modes: *Split* and *Full*. *Split-Tunnel* mode provides compatibility of AdGuard and so-called “Personal VPN” apps. In *Full-Tunnel* mode no other VPN can work simultaneously with AdGuard.
+Существует два основных режима работы туннеля: *Split* и *Full*. *Режим Split-Tunnel* обеспечивает совместимость AdGuard c так называемыми персональными VPN-приложениями. В режиме *Full-Tunnel* никакие другие VPN не могут работать одновременно с AdGuard.
 
-There is a specific feature of *Split-Tunnel* mode: if DNS proxy does not perform well, for example, if the response from the AdGuard DNS server was not returned in time, iOS will "amerce" it and reroute traffic through DNS server, specified in iOS settings. No ads are blocked at this time and DNS traffic is not encrypted.
+Есть особенность режима *Split-Tunnel*: если DNS-прокси работает плохо, например, когда ответ от DNS-сервера AdGuard не возвращается вовремя, iOS перенаправляет трафик через DNS-сервер, указанный в настройках iOS. Реклама не блокируется, а трафик DNS не шифруется.
 
-In *Full-Tunnel* mode only the DNS server specified in AdGuard settings is used. If it does not respond, the Internet will simply not work. Enabled *Full-Tunnel* mode may cause the incorrect performance of some programs (for instance, Facetime), and lead to problems with app updates.
+В режиме *Full-Tunnel* используется только DNS-сервер, указанный в настройках AdGuard. Если он не будет отвечать, интернет просто не будет работать. Включенный режим *Full-Tunnel* может приводить к некорректной работе некоторых программ (например, Facetime) и вызывать проблемы с обновлением приложений.
 
-By default, AdGuard uses *Split-Tunnel* mode as the most stable option.
+По умолчанию AdGuard использует режим *Split-Tunnel* как наиболее стабильный вариант.
 
-There is also an additional mode called *Full-Tunnel (without VPN icon)*. This is exactly the same as *Full-Tunnel* mode, but it is set up so that the VPN icon is not displayed in the system line.
+Существует также дополнительный режим — *Full-Tunnel (без значка VPN)*. Это точно такой же режим, как и *Full-Tunnel*, но он настроен таким образом, что значок VPN не отображается в системной строке.
 
-### Blocking mode
+### Режим блокировки
 
-In this module you can select the way AdGuard will respond to DNS queries that should be blocked: REFUSED — respond with REFUSED code NXDOMAIN — respond with NXDOMAIN code Unspecified IP — respond with zero IP address Custom IP — respond with a manually set IP address
+В этом модуле вы можете выбрать способ, которым AdGuard будет отвечать на DNS-запросы, которые должны быть заблокированы: REFUSED — отвечать с кодом REFUSED NXDOMAIN — отвечать с кодом NXDOMAIN Неопределенный IP — отвечать с нулевым IP-адресом Пользовательский IP — отвечать с заданным вручную IP-адресом.
 
-### Block IPv6
+### Блокировать IPv6
 
-By moving the toggle to the right, you activate IPv6 query blocking (AAAA requests).
+Перемещая переключатель вправо, вы активируете блокировку запросов IPv6 (запросы AAAA).
 
-### Blocked response TTL
+### Заблокированный ответ TTL
 
-Here you can specify the TTL (time to live) value that will be returned in response to a blocked request.
+Здесь вы можете указать значение TTL (time to live), которое будет возвращаться в ответ на заблокированный запрос.
 
-### Bootstrap servers
+### Bootstrap-серверы
 
-For DNS-over-HTTPS, DNS-over-TLS, and DNS-over-QUIC a bootstrap server is required for getting the IP address of the main DNS server. If not specified, the DNS server from iOS settings is used as the bootstrap server.
+Для DNS-over-HTTPS, DNS-over-TLS и DNS-over-QUIC требуется загрузочный сервер для получения IP-адреса основного DNS-сервера. Если его значение не указано, в качестве сервера начальной загрузки используется DNS-сервер из настроек iOS.
 
-### Fallback servers
+### Fallback-серверы
 
-Here you can specify an alternate server to which a request will be rerouted if the main server fails to respond. If not specified, the system DNS server will be used as the fallback. It is also possible to specify `none`, in this case, there will be no fallback server set and only the main DNS server will be used.
+Здесь вы можете указать альтернативный сервер, на который будет перенаправлен запрос, если основной сервер не ответит. Если он не указан, системный DNS-сервер будет использоваться в качестве резервного. Также можно указать `none`, в этом случае не будет задан резервный сервер и будет использоваться только основной DNS-сервер.
 
-### Background app refresh time
+### Время обновления приложения
 
-Here you can select the frequency at which the application will check for filter updates while in the background. Note that update checks will not be performed more often than the specified period, but the exact intervals may not be respected.
+Здесь вы можете выбрать частоту, с которой приложение будет проверять наличие обновлений фильтров в фоновом режиме. Обратите внимание, что проверка обновлений не будет выполняться чаще указанного периода, но точные интервалы могут не соблюдаться.

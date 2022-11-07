@@ -49,7 +49,7 @@ Now, you'll see a quick installation wizard where you'll be offered to configure
 
 Here we are, AdGuard is installed on your Mac!
 
-## Uninstall
+## Удалить
 
 ### Regular
 First of all, open the Finder app by clicking the respective icon:

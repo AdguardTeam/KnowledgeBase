@@ -1,28 +1,28 @@
 ---
-title: AdGuard filter policy
+title: Политика фильтров AdGuard
 sidebar_position: 6
 ---
 
-When discussing AdGuard ad filters, one topic often comes up – whether AdGuard should block this or that ad. By setting the rules, we stick to specific criteria that are very similar to [EasyList Policy](https://easylist.to/pages/policy.html), which we find correct and appropriate. However, we have made some changes to it.
+Во время обсуждения рекламных фильтров AdGuard часто возникают дискуссии о том, должен ли AdGuard блокировать ту или иную рекламу. При составлении фильтров мы уже давно придерживаемся определённых правил. Во многом наша политика похожа на [политику EasyList](https://easylist.to/pages/policy.html), которую мы находим правильной и уместной. Тем не менее, некоторые пункты мы пересмотрели и публикуем собственную версию.
 
-![To filter or not to filter](https://cdn.adguard.com/public/Adguard/Common/page_filtering.png)
+![Фильтровать или не фильтровать](https://cdn.adguard.com/public/Adguard/Common/page_filtering.png)
 
-## Terminology
+## Терминология
 
 Throughout this text, we use the terms **first party** and **third party**.
 
-A "first party" is a website that a user visits intentionally and knowingly, plus a set of resources on the web operated by the same organization. In practice, we consider resources to belong to the same party if they are part of the same registrable domain: a public suffix plus one additional label. Example: `site.example`, `www.site.example`, and `s.u.b.site.example` belong to the same party because `site.example` is their common registrable domain.
+A "first party" is a website that a user visits intentionally and knowingly, plus a set of resources on the web operated by the same organization. На практике мы почти всегда под этим понимаем принадлежность к одному и тому же регистрируемому домену: публичный суффикс плюс одна дополнительная метка. Example: `site.example`, `www.site.example`, and `s.u.b.site.example` belong to the same party because `site.example` is their common registrable domain.
 
 A "third party" is any party that does not fall within the definition of the first party above. Interactions with other parties are considered third-party, even if the user is transiently informed in context (for example, in the form of a redirect). Merely hovering over, muting, pausing, or closing a given piece of content does not constitute an intention to interact.
 
-## Common criteria
+## Общие критерии
 
 These equally apply to rules in all filters.
 
 - Rules that often cause problems with the work of some websites will be deleted.
 - Website-specific rules will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
 
-## Ad filters
+## Рекламные фильтры
 
 This part describes the AdGuard Base filter, the Mobile Ads filter, and the following language-specific filters: Russian, German, Dutch, Spanish/Portuguese, Japanese, Turkish, Chinese, and French.
 
@@ -42,7 +42,7 @@ If a rule is subject to the list of limitations described below, then it won’t
 - Anti-adblock scripts will not be blocked in cases when it is prohibited by law.
 - Rules that often cause problems with the work of some websites will be deleted.
 
-## Tracking Protection filter
+## Фильтр счётчиков и систем аналитики
 
 **What will be blocked with this filter?**
 
@@ -59,7 +59,7 @@ If a rule is subject to the list of limitations described below, then it won’t
 - Rules that cause problems with website functionality will be removed.
 - Website-specific rules will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
 
-## AdGuard URL Tracking filter
+## Фильтр отслеживания по URL
 
 **What will be blocked with this filter?**
 
@@ -75,7 +75,7 @@ If a rule is subject to the list of limitations described below, then it won’t
 - Rules that cause problems with website functionality will be removed.
 - Website-specific rules will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
 
-## Social Media filter
+## Фильтр виджетов социальных сетей
 
 **What will be blocked with this filter?**
 
@@ -90,7 +90,7 @@ If a rule is subject to the list of limitations described below, then it won’t
 - Rules that cause problems with website functionality will be removed.
 - Website-specific rules will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
 
-## Annoyances filter
+## Фильтр раздражителей
 
 **What will be blocked with this filter?**
 

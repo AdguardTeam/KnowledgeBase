@@ -1,5 +1,5 @@
 ---
-title: Сertificate installation issues on devices with Android 11 and later
+title: Сertificate installation issues on devices with Android 11+
 sidebar_position: 12
 ---
 

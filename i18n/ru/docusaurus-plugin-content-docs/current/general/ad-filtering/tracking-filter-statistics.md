@@ -36,6 +36,6 @@ It's important to note that all the statistics we get are averaged and anonymize
 
 ### What does tracking filter rules statistics fraught with?
 
-For the vast majority of users, the change in computer speed will not be really noticeable. However, netbook and tablet users may notice a slight slowdown.
+Для подавляющего большинства пользователей изменение скорости работы компьютера будет не особо заметно. However, netbook and tablet users may notice a slight slowdown.
 
 Periodically, we will send the gathered statistics to the server. The size of the transmitted data is not very large and is comparable to the size of an average web page.

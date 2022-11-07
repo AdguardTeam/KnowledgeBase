@@ -1,14 +1,14 @@
 ---
-title: Advanced Settings guide
+title: Гид по расширенным настройкам
 sidebar_position: 9
 ---
 
-## How to reach the Advanced settings
+## Как перейти к расширенным настройкам
 
-> Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only open this section if you are sure of what you are doing or our support team has asked you to do it.  
+> Изменение *Низкоуровневых настроек* может вызвать проблемы с производительностью AdGuard, нарушить подключение к интернету или поставить под угрозу вашу безопасность и конфиденциальность. You should only open this section if you are sure of what you are doing or our support team has asked you to do it.  
 > To go to *Advanced settings*, follow this route: the AdGuard icon at the tray menu → the gear icon → Advanced → Advanced settings.
 
-## Advanced settings
+## Расширенные настройки
 
 `network.extension.exclude.domains`
 

@@ -1,38 +1,38 @@
 ---
-title: Manual installation of the security certificate into the Firefox browser
+title: Ручная установка сертификата безопасности в браузер Firefox
 sidebar_position: 11
 ---
 
-For AdGuard to successfully filter HTTPS traffic in Firefox, the browser needs to trust AdGuard's certificate. It can be achieved differently for different versions of the Firefox.
+Чтобы AdGuard успешно фильтровал HTTPS-трафик в Firefox, браузер должен доверять сертификату AdGuard. It can be achieved differently for different versions of the Firefox.
 
-#### Method 1
+#### Метод 1
 
-> This method works in Firefox for Android version 90.0 and later.
+> Этот метод работает в Firefox для Android версии 90.0 и выше.
 
 To make Firefox trust the AdGuard certificate, do the following:
 
-1. Run the browser.
-2. Go to **Settings** > **About Firefox**.
+1. Запустите браузер.
+2. Перейдите на страницу **Настройки** > **О Firefox**.
 
-![About Firefox](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
+![О Firefox](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
 
-3. Tap the Firefox logo five times.
+3. Коснитесь логотипа Firefox пять раз.
 4. Navigate to **Settings** > **Secret Settings**.
 
-![Secret Settings*](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
+![Секретные настройки*](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
 
 5. Toggle **Use third party CA certificates**.
 
-#### Method 2
+#### Метод 2
 
-> This method will only work on **rooted** devices.
+> Этот метод работает только на **рутированных** устройствах.
 
-1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb;
-> On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
-2. Activate the **developer mode** and enable **USB debugging**:
-- Open the **Settings** application on your phone;
-- Go to **System** section (last item in the settings menu). In this section find sub-item **About phone**;
-- Click on the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
+1. [Установите и настройте](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb;
+> На платформе Windows владельцам **Samsung** может потребоваться установить [эту утилиту](https://developer.samsung.com/mobile/android-usb-driver.html).
+2. Активируйте режим разработчика **** и включите отладку по USB ****:
+- Откройте приложение **Настройки** на своём телефоне;
+- Перейдите в раздел **О системе** (последний пункт в меню настроек). В этом разделе найдите подпункт **О телефоне**;
+- Нажмите на строку **Номер сборки** 7 раз. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
 - Open **System Settings** > **Developer Options** > Scroll down and enable **USB debugging** > Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
 3. Install the [Firefox](https://www.mozilla.org/en-US/firefox/releases/) browser (release version);
 4. Open the **AdGuard settings** > **Network** > **HTTPS Filtering** > Install the certificate in **Firefox** > **INSTALL FOR OLD VERSIONS**;

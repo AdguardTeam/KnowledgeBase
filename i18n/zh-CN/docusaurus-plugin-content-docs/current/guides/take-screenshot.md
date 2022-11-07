@@ -1,99 +1,99 @@
 ---
-title: How to take a screesnhot
+title: 如何截取屏幕截图
 sidebar_position: 4
 ---
 
-Screenshot is a capture of your computer’s or mobile device’s screen, which can be obtained by using standard tools or a special program/app.
+屏幕截图是捕获计算机或移动设备屏幕信息的操作，可以使用标准工具或特殊程序/应用程序来获取。
 
-Sometimes a screenshot (or screenshots) are requested by the support team for a better understanding. Here you will find all the necessary hotkeys you should know in order to take screenshots on your computer or mobile device.
-
-
-### Android {#android}
-
-Taking a screenshot on an Android device can be done in various ways — depending on the device model and its manufacturer.
-
-Generally, you should use the following button combination for Android:
-
-+ **Hold down at once the *Volume Down* and the *Power* buttons for 1–2 seconds**
-
-Your Android device will capture the entire screen and save it as a photo. So, you can find the screenshot in a *Screenshots* folder in your Gallery.
-
-But, as it has been already said, there can be differences depending on a particular device. Let’s look at other possible combinations:
-
-+ **Hold down at once *Home* and *Power* for 1–2 seconds;**
-+ **Hold down at once the *Back* and the *Home* buttons**
-
-On Android 8 and later you can also take a screenshot with other manipulations, for example by placing your hand vertically along the left or right edge of your phone and swiping in from that edge with your hand touching the screen (Samsung devices), or you can do it with three fingers swiping down (OnePlus devices), etc.
-
-Find out about other options to take a screenshot in the settings of your device.
-
-Besides, you can always use any special applications for taking screenshots on your devices, for example — *Screenshot Easy*, *Screenshot Ultimate*, *Screenshot Snap*, etc.
+有时，支持团队需要一张或多张屏幕截图才能更好地理解问题。 本文将为您提供帮助，教您多种在计算机或手机上截屏的方法。
 
 
-### iOS {#ios}
+### 安卓系统 {#android}
 
-Any iOS device (barring ancient ones) lets you take a screenshot using standard tools.
+有多种方式可以在安卓设备上截屏，具体取决于设备型号及其制造商。
 
-To take a screenshot on an iOS device, use the following combination:
+一般来说，您应该在安卓系统使用以下按钮组合：
 
-+ **Press the *Sleep/Wake* (side) button and the *Home* button at the same time, then quickly release them**
++ **同时按住音量和电源键按钮 1-2 秒**
 
-and this one for iPhone X or later:
+您的安卓设备将捕获整个屏幕并将其保存为照片。 您可以在「相册」的** 「截屏」**文件夹中找到该屏幕快照。
 
-+ **Press the *Sleep/Wake* button and the *Volume up* button at the same time, then quickly release them**
+但是，正如上述所言，在一些特定的设备上可能会存在差异。 让我们来看看其他可能的组合：
 
-Your iOS device will capture the entire screen and save it as a photo. You can find it in a standard Photo app.
++ **同时按住主页和电源键 1-2 秒；**
++ **同时按住返回和主页按钮**
 
+在安卓 8 及更高级版本上，也可以通过将手沿手机的左侧或右侧垂直放置。然后用手触摸屏幕从该边缘向内滑动来拍摄屏幕截图（三星设备），或者您也可以用三个手指向下滑动（OnePlus 设备）等等。
 
-### Windows {#windows}
+在设备的设置中了解其他的截图方式。
 
-+ **To take a screenshot on Windows, press the *PrtScn* button**
-
-On some notebooks you have to hold *Fn* and then press *PrtScn*.
-
-*Please note: PrtScn (Print Screen) button can be differently abbreviated on various keyboards — PrntScrn, PrtScn, PrtScr or PrtSc.*
-
-Windows captures the entire screen and copies it to the (invisible) clipboard.
-
-To take a screenshot of an active window, use the following combination:
-
-+ **Hold down *Alt* and press *PrtScn* (or *Fn + Alt + PrtScn* on some laptops)**
-
-To take a screenshot of a specific area, you should use the following combination:
-
-+ ***Hold down *Win* (the Windows button) and *Shift* and press ***S******
-
-After you take a screenshot, it will be saved in the clipboard. In most cases you will be able to paste it into a document that you are currently editing by using *Ctrl + V* button combination. Alternatively, if you need to save the screenshot into a file, you should open the standard **Paint** program (or any other app that can work with images). Paste your screenshot there using the same button combination or by clicking the Paste button (usually in the top left corner of the screen) and then save it.
-
-Windows 8 and 10 let you take a screenshot very quickly with a *Win + PrtScn* combination. As soon as you press these buttons, the screenshot will be automatically saved as a file to your *Pictures* -> *Screenshots Folder*.
-
-There is also a dedicated program for taking screenshots called *Snipping Tool* that you can find via Start menu among standard programs of your computer. Snipping Tool lets you capture of any area of your desktop or the entire screen. After taking a screenshot using this program you can edit the picture and save it to any folder on your computer.
-
-Besides, you can also try using different apps for taking screenshots on your computer, like **PicPick**, **Nimbus Screenshot**, **Screenshot Captor**, **Snipaste**, **Monosnap**, etc.
+此外，您可以使用任何特殊的应用程序在设备上拍摄屏幕截图，例如，**轻松截屏**、**终极截图**、**Screenshot Snap** 等。
 
 
-### macOS {#mac}
+### iOS 系统 {#ios}
 
-To take a screenshot on Mac, use the following button combination:
+任何 iOS 设备（旧的设备除外）都可让您使用标准工具截屏。
 
-+ ***Press and hold together ***⌘ Cmd + Shift + 3******
+要在 iOS 设备上截图，请使用以下组合：
 
-Your Mac will capture the entire screen and save it as a file on the desktop.
++ **同时按下电源键（侧面）按钮和主页键按钮，然后快速释放它们**
 
-To take a screenshot of an active window, use the following combination:
+而下面的方法适用于 iPhone X 或更高版本：
 
-+ **Press and hold together *⌘ Cmd + Shift + 4 + Space bar*.  The pointer will change to a camera icon. Click the window to capture it. Press the Esc button to cancel taking a screenshot**
++ **同时按下电源键按钮和音量+按钮，然后快速释放它们**
 
-To take a screenshot of a specific area, you should use the following combination:
+您的 iOS 设备将捕获整个屏幕，并将其另存为照片。 您可以在照片应用中找到它。
 
-+ ***Press and hold together ***⌘ Cmd + Shift + 4******. Drag the crosshair to select the needed area. Release your mouse or trackpad to take a screenshot, press the Esc button to cancel it.
 
-To take a screenshot of the *Touch Bar* (MacBook Pro) use the following combination:
+### Windows 系统 {#windows}
 
-+ ***Hold down ***⌘ Cmd + Shift + 6******
++ **要在 Windows 上截图，请按 *PrtScn* 按钮**
 
-Your Mac captures the entire *Touch Bar* and saves it as a file on the desktop.
+在某些笔记本电脑上，您要按住 *Fn*，然后再按 *PrtScn*。
 
-To copy a screenshot to the clipboard instead of saving it, hold down *Ctrl* together with any of the combinations above. Then you can paste the screenshot (from the clipboard) into a document or an image you are currently editing by using *Cmd + V* combination.
+*请注意，各种键盘上的 PrtScn（打印屏幕）存在不同的缩写方式，比如 PrntScrn，PrtScn，PrtScr 或 PrtSc 等。*
 
-You can also take screenshots by using **Preview** and choosing **Take screenshot** (of the selected area, window, or the entire screen). With **Preview** you can save your screenshots in JPG, TIFF, PDF, and other file formats.
+Windows 捕获整个屏幕并将其复制到剪贴板。
+
+要获取活动窗口的屏幕截图，请使用以下组合：
+
++ **同时按住 *Alt* 和 *PrtScn* (或在某些笔记本电脑上按 *Fn + Alt + PrtScn* )**
+
+要截取特定区域的屏幕快照，应使用以下组合：
+
++ ***按住 *Win*（Windows 按钮）和 *Shift*，然后按 ***S******
+
+截屏后，它将保存在剪贴板中。 在大多数情况下，您可以使用 Ctrl + V 按钮组合将其粘贴到当前正在编辑的文档中。 另外，如果您需要将屏幕截图保存到文件中，则应打开标准的 Paint 程序（或任何其他可以处理图像的应用程序）。 使用相同的按钮组合或单击「粘贴」按钮（通常在屏幕的左上角）将您的屏幕截图粘贴到那里，然后将其保存。
+
+Windows 8 和 10 使您可以通过 *Win + PrtScn* 组合快速捕获屏幕截图。 按下这些按钮后，屏幕快照将自动作为文件保存到**图片 ** ->**屏幕截图文件夹 **中。
+
+还有一个专用的屏幕截图程序，称为 *Snipping Tool* (自带截图工具) ，可通过开始菜单在计算机的标准程序中找到。 该截图工具使您可以捕获桌面的任何区域或整个屏幕。 使用此程序拍摄屏幕快照后，您可以编辑图片并将其保存到计算机上的任何文件夹中。
+
+此外，您还可以尝试使用其他应用在计算机上截图，例如 **PicPick**、**Nimbus Screenshot**、**Screenshot Captor**、**Snipaste**、**Monosnap** 等。
+
+
+### macOS 系统 {#mac}
+
+要在 Mac 上截图，请使用以下按钮组合：
+
++ ***同时按住 ***⌘Cmd + Shift + 3******
+
+Mac 会捕获整个屏幕，并将其另存为在桌面上的文件。
+
+要获取活动窗口的屏幕截图，请使用以下组合：
+
++ **同时按住 *⌘Cmd + Shift + 4 + 空格键*。  指针将变为相机图标。 单击窗口以捕获它。 按 Esc 按钮取消截屏**
+
+要截取特定区域的屏幕快照，应使用以下组合：
+
++ ***同时按住 ***⌘Cmd + Shift + 4******。 拖动十字准线以选择所需的区域。 释放鼠标或触控板以截取屏幕截图。然后按 Esc 按钮将其取消。
+
+要获取 *Touch Bar*（MacBook Pro）的截图，请使用以下组合：
+
++ ***按住 ***⌘Cmd + Shift + 6******
+
+您的 Mac 会捕获整个 *Touch Bar*，并在桌面上另存为文件。
+
+若您想将屏幕截图复制到剪贴板而不是保存到剪贴板，请同时按住 *Ctrl* 和上面的任意组合。 然后，您可以使用 *Cmd + V* 组合将屏幕截图（来自剪贴板）粘贴到当前正在编辑的文档或图像中。
+
+您还可以通过使用**预览**并选择**截图**（获取所选区域，窗口或整个屏幕的）来截屏。 使用**预览**时，您可以将屏幕截图保存为 JPG、TIFF、PDF 等文件格式。

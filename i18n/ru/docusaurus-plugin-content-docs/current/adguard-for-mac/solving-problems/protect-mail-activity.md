@@ -1,5 +1,5 @@
 ---
-title: 'Protect Mail Activity and AdGuard'
+title: Protect Mail Activity and AdGuard
 sidebar_position: 8
 ---
 
@@ -13,7 +13,7 @@ However, it won't work if there's an active VPN connection. As it treats AdGuard
 
 Apple explains this issue [here](https://support.apple.com/HT212797).
 
-## In detail
+## Подробно
 
 AdGuard for Mac now uses macOS built-in socket filtering based on the network extensions API. This new and rather buggy mechanism replaced good old Kernel extensions. Over the last 1.5 years, we've reported more than 20(!) bugs to Apple regarding their new filtering method.
 
@@ -30,5 +30,5 @@ As a result, AdGuard can't work together with iCloud Private Relay and Mail.app 
 
 `network.extension.monterey.force.split.tunnel` restores the "Big Sur" behavior, but this option may break access to websites due to (3) and (4). We keep searching for a solution to this issue. One of the options is implementing HTTP/3 filtering.
 
-## Recommended solution
+## Рекомендуемое решение
 At this point, we recommend using a more traditional VPN service, such as [AdGuard VPN](https://adguard-vpn.com/), instead of the new Apple's privacy features.

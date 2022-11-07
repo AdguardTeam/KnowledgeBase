@@ -1,81 +1,81 @@
 ---
-title: Features overview
+title: Обзор функций
 sidebar_position: 1
 ---
 
-AdGuard for Safari was designed to conform to Apple's restrictions for ad blocking browser extensions and is the most popupar ad blocker for Safari. Although it can’t be compared to our desktop ad blocking apps, it's free and can protect you from ads, trackers, phishing, and malicious websites.
+AdGuard для Safari был разработан в соответствии с ограничениями Apple для браузерных расширений, блокирующих рекламу. Это самый популярный блокировщик рекламы для Safari. Хотя он менее мощный, чем десктопные приложения AdGuard, он бесплатен и может защитить вас от рекламы, трекеров, фишинга и вредоносных сайтов.
 
-## General {#general}
+## Общие {#general}
 
-![General tab](https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/General.png)
+![Вкладка «Общие»](https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/General.png)
 
-The first tab is the General screen where you can set up basic things like notifications, update intervals, and launching AdGuard at system startup. You can also choose to display the AdGuard icon in the menu bar. There you can also turn on [content blockers](#contentblockers) to block ads, trackers, annoyances, etc.
+Первая вкладка — это экран «Общие», где вы можете настроить основные параметры: уведомления, интервалы обновления и открытие AdGuard при запуске системы. Вы также можете выбрать отображение значка AdGuard в строке меню. Там же можно включить [блокировщики контента](#contentblockers), чтобы блокировать рекламу, трекеры, раздражители и т. д.
 
 ## Filters {#filters}
 
-![Filters tab](https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/Filters.png)
+![Вкладка «Фильтры»](https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/Filters.png)
 
-A filter is a list of rules written in a special syntax. Following these rules, content blockers can filter web traffic: block ads or requests to malicious websites.
+Фильтр — это список правил, написанных в специальном синтаксисе. Блокировщики контента считывают эти правила и блокируют рекламу или запросы к опасным сайтам.
 
-Filters are combined into eight thematic categories: *Ad Blocking, Privacy, Social widgets, Annoyances, Security, Language-specific filters, Custom, and Other filters*.
-> Read more about [AdGuard filters](/general/ad-filtering/adguard-filters.md) or [ad filtering in general](/general/ad-filtering/how-ad-blocking-works.md).
+Фильтры объединены в восемь тематических категорий: *Блокировка рекламы, Конфиденциальность, Виджеты соцсетей, Фильтры раздражителей, Безопасность, Языковые фильтры, Пользовательские и Другие фильтры*.
+> Узнайте больше о [фильтрах AdGuard](/general/ad-filtering/adguard-filters.md) или [фильтрации рекламы в целом](/general/ad-filtering/how-ad-blocking-works.md).
 
-In the Filters tab, you can enable the whole category or separate filters. Changes in the Filters tab are reflected in the Content Blockers section (located in the General tab).
+На вкладке «Фильтры» можно включить всю категорию или отдельные фильтры. Изменения во вкладке отражаются в разделе «Блокировщики контента» (вкладка «Общие»).
 
-## Content blockers {#contentblockers}
+## Блокировщики контента {#contentblockers}
 
-![Content blockers tab](https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/Contentblockers.png)
+![Вкладка «Блокировщики контента»](https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/Contentblockers.png)
 
-A content blocker is a thematic cluster of filters. Privacy-related filters are included in the content blocker with the corresponding name — *AdGuard Privacy*.
+Блокировщик контента — это тематический блок фильтров. Фильтры, связанные с конфиденциальностью, входят в блокировщик контента с соответствующим названием — *AdGuard Конфиденциальность*.
 
-Content Blockers were designed for two reasons: to structure filters and to conform to Apple’s restrictions.
+Блокировщики контента были разработаны по двум причинам: чтобы структурировать фильтры и соответствовать ограничениям Apple.
 
-[In 2019](https://adguard.com/en/blog/adguard-safari-1-5.html), Apple put limitations on ad blockers for Safari, allowing them to use only 50,000 filtering rules simultaneously. As this number was not enough for an ad blocker to provide a good filtering quality (AdGuard Base Filter alone has 30,000 filtering rules), we divided AdGuard for Safari into six content blockers each containing up to 50,000 rules.
+[В 2019 году](https://adguard.com/en/blog/adguard-safari-1-5.html) Apple наложила ограничения на блокировщики рекламы для Safari. Им можно было использовать до 50 000 правил фильтрации одновременно. Этого количества было недостаточно, чтобы обеспечить хорошее качество фильтрации (в одном Базовом фильтре AdGuard 30 000 правил). Поэтому мы разделили AdGuard для Safari на шесть блокировщиков контента, в каждом из которых содержится до 50 000 правил.
 
-[In 2022](https://adguard.com/en/blog/adguard-for-safari-1-11.html), Apple increased the filtering rule limit for each content blocker to 150,000 rules applied simultaneously. Regarding AdGuard for Safari, up to 900,000 rules can be enabled for all six content blockers.
+[В 2022 году](https://adguard.com/en/blog/adguard-for-safari-1-11.html) Apple увеличила лимит правил фильтрации для каждого блокировщика контента до 150 000 правил, применяемых одновременно. В случае AdGuard для Safari это значит, что для всех шести блокировщиков контента можно одновременно активировать до 900 000 правил.
 
-Whereas the limit has been increased, the structure of content blockers has remained the same.
+Лимит был увеличен, но структура блокировщиков контента осталась прежней.
 
-In the Content blockers tab, you can see which content blockers are enabled, how many rules each of them is using, and which filters are functioning.
+На вкладке «Блокировщики контента» можно увидеть, какие блокировщики контента включены, сколько правил использует каждый из них и какие фильтры работают.
 
-> You can manage enabled filters in the Filters tab. In the Content blockers section, you can only see the list of already enabled filters.
+> Управлять включёнными фильтрами можно на вкладке «Фильтры». В разделе «Блокировщики контента» отображается только их список.
 
-### AdGuard General {#adguard_general}
+### AdGuard Основные {#adguard_general}
 
-*AdGuard General* is a content blocker that combines the most essential filters for blocking ads. We recommend keeping the AdGuard Base Filter always enabled.
+*AdGuard Основные* — это блокировщик контента с самыми необходимыми фильтрами для блокировки рекламы. Мы рекомендуем всегда держать Базовый фильтр AdGuard включённым.
 
-### AdGuard Privacy {#adguard_privacy}
+### AdGuard Конфиденциальность {#adguard_privacy}
 
-This content blocker is the main tool against counters and other web analytics tools. The *AdGuard Tracking Protection filter* is enabled by default.
+Это блокировщик контента, в котором собраны фильтры против счётчиков и инструментов веб-анатилики. *Фильтр счётчиков и систем аналитики* включён по умолчанию.
 
-### AdGuard Social {#adguard_social}
+### AdGuard Виджеты соцсетей {#adguard_social}
 
-*AdGuard Social* contains filters against social media buttons, widgets, scripts, and icons. Other annoyance filters can also be found in this section: filters against popups, mobile app banners, cookie notices, and more. To enable them, find *Social Widgets* in the Filters tab.
+*AdGuard Виджеты соцсетей* содержит фильтры против кнопок, виджетов, скриптов и иконок социальных сетей. В этом разделе можно найти и другие фильтры раздражителей: фильтры против всплывающих окон, баннеров мобильных приложений, уведомлений о файлах cookie и т. п. Чтобы включить их, найдите *Виджеты социальных сетей* на вкладке «Фильтры».
 
-### AdGuard Security {#adguard_security}
+### AdGuard Безопасность {#adguard_security}
 
-This content blocker unites several security-related filters. *Malware Domains Blocklist* blocks domains that are notorious for spreading malware and spyware. *Spam404* protects you from Internet fraudsters. *NoCoin Filter List* disrupts browser-based cryptominers, such as Coinhive.
+Этот блокировщик контента объединяет несколько фильтров, связанных с безопасностью. *Malware Domains Blocklist* блокирует домены, которые распространяют вредоносное и шпионское ПО. *Spam404* защищает от интернет-мошенников. *NoCoin Filter List* нарушает работу браузерных криптомайнеров, таких как Coinhive.
 
-### AdGuard Other {#adguard_other}
+### AdGuard Другие {#adguard_other}
 
-*AdGuard Other* contains filters with various functions. For example, it has a filter that unblocks search ads and self-promo ads. In some cases, it helps find exactly what you are looking for, because these kinds of ads are more relevant and less intrusive than others.
+*AdGuard Другие* содержит фильтры с различными функциями. Например, в нём есть фильтр, который разблокирует поисковую рекламу и саморекламу сайтов. В некоторых случаях это помогает найти то, что нужно, потому что такая реклама более релевантна и менее навязчива, чем другие её виды.
 
-> Disclaimer: we don’t have any ‘acceptable ads’ paid by advertisers. Instead, we provide users with an option to see [search ads and websites' self-promotion](/general/ad-filtering/search-ads.md).
+> У нас нет «приемлемой рекламы», оплачиваемой рекламодателями. Вместо этого мы даём пользователям возможность включить отображение [поисковой рекламы и саморекламы сайтов](/general/ad-filtering/search-ads.md).
 
-### AdGuard Custom {#adguard_custom}
+### AdGuard Пользовательские {#adguard_custom}
 
-![Custom tab](https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/AGCustom.png)
+![Вкладка «Пользовательские»](https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/AGCustom.png)
 
-If you need more filters, you can add them to *AdGuard Custom*. To add a custom filter, enter a URL or a local file path in the relevant field. You can find new filters at [filterlists.com](https://filterlists.com/).
+Если вам нужно больше фильтров, вы можете добавить их в разделе *AdGuard Пользовательские*. Чтобы добавить пользовательский фильтр, введите его URL или путь к файлу. Новые фильтры вы можете найти на [filterlists.com](https://filterlists.com/).
 
-## User rules {#userrules}
+## Пользовательские правила {#userrules}
 
-User rules can be used to customize ad blocking. They can be added manually, imported, or created automatically when you block an element on the page. To add your own filering rules, use a [special syntax](/general/ad-filtering/create-own-filters.md).
+Пользовательские правила можно использовать, чтобы настроить блокировку под себя. Их можно добавить вручную или импортировать. Когда вы блокируете элемент на странице, они создаются автоматически. Чтобы добавить собственные правила фильтрации, используйте [специальный синтаксис](/general/ad-filtering/create-own-filters.md).
 
-## About {#about}
+## О программе {#about}
 
-![About tab](https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/About.png)
+![Вкладка «О программе»](https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/About.png)
 
-In the About tab, you can see info about the current version of your product and links to legal documents. There is also a link to our repository on GitHub. You can monitor the product development, create feature requests and report bugs there.
+На вкладке «О программе» находится информация о текущей версии продукта и ссылки на юридические документы. Там же находится ссылка на наш репозиторий на GitHub. Там вы можете следить за развитием продукта, предлагать новые функции и сообщать об ошибках.
 
-> Reminder: AdGuard for Safari can be downloaded for free [from the App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259). A detailed setup instruction is available in the [Knowledge base](/adguard-for-safari/installation.md).
+> AdGuard для Safari можно скачать бесплатно [из App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259). Подробная инструкция по установке доступна [в Базе знаний](/adguard-for-safari/installation.md).

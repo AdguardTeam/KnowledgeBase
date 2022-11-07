@@ -187,7 +187,7 @@ This option is available on the *Settings > DNS Filtering > DNS Requests blockin
 
 ## Proxy and TOR
 
-A proxy server is basically another computer serving as a hub that processes your internet requests. You can set up AdGuard to route all your device's traffic through any proxy — and you'll be able to configure the whole thing right inside the app. And here is [an instruction on how to set up a proxy](/adguard-for-android/solving-problems/adguard-outbound-proxy.md).
+A proxy server is basically another computer serving as a hub that processes your internet requests. You can set up AdGuard to route all your device's traffic through any proxy — and you'll be able to configure the whole thing right inside the app. And here is [an instruction on how to set up a proxy](/adguard-for-android/solving-problems/outbound-proxy.md).
 
 > Some popular VPN providers offer an alternative way to use their service as a proxy. This can be used to run them alongside AdGuard in local VPN mode.
 

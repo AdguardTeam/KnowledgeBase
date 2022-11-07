@@ -17,11 +17,11 @@ Currently, AdGuard and iCloud Private Relay cannot work at the same time. AdGuar
 
 For a deeper understanding of this problem, read [this article](https://kb.adguard.com/en/macos/solving-problems/icloud-private-relay).
 
-**Recommended solution**
+**Рекомендуемое решение**
 
 We recommend using AdGuard together with a more traditional VPN service such as [AdGuard VPN](https://adguard-vpn.com/).
 
-**Alternative solution**
+**Альтернативное решение**
 
 You can prevent AdGuard from using the "default route" by disabling it. It can be done via Advanced Settings -> `network.extension.monterey.force.split.tunnel`. Note that enabling this setting will cause the problems described above.
 
@@ -33,7 +33,7 @@ Apple's Mail app now uses a proxy to hide a user's IP Address when downloading i
 
 For a deeper understanding of this problem, read [this article](https://kb.adguard.com/en/macos/solving-problems/protect-mail-activity).
 
-**Recommended solution**
+**Рекомендуемое решение**
 
 At this point, we recommend using a more traditional VPN service, such as AdGuard VPN, instead of the new Apple's privacy features.
 

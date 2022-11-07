@@ -1,48 +1,48 @@
 ---
-title: How to install a proxy certificate
+title: 代理证书安装
 sidebar_position: 2
 ---
 
-Desktop AdGuard apps (AdGuard for Windows and AdGuard for Mac) can be used as a proxy. This means that you can route other devices' traffic through AdGuard (entirely, or traffic of specific apps/browsers).
+桌面 AdGuard 应用程序 (适用于 Windows 和 Mac 的 AdGuard) 可以用作代理。 这意味着您可以通过 AdGuard 路由其他设备的流量（全部或特定应用程序或浏览器的流量）。
 
-> Note that these devices must be in the same network as the PC or Mac on which AdGuard is installed.
+> 请注意，这些设备必须与已安装 AdGuard 的 PC 或 Mac 位于同一网络中。
 
-HTTP traffic will be filtered in any case, but for AdGuard to be able to filter HTTPS traffic you need to manually install AdGuard certificate on the connected device.
+在任何情况下，HTTP 流量都会被过滤，但是要使 AdGuard 能够过滤 HTTPS 流量，您需要在连接的设备上手动安装 AdGuard 证书。
 
-## How to download and install the certificate
+## 如何下载并安装证书
 
-Depending on the operation system of your device (Android/iOS), follow one of this instructions:
+根据您设备的类型 (Android / iOS)，请遵守以下说明中的一条：
 
-### Android {#android}
+### 安卓系统 {#android}
 
-1. Note the IP address of your desktop computer with installed AdGuard.
+1. 记下装有 AdGuard 的台式计算机的 IP 地址。
 
-2. On the device which traffic you want to route through AdGuard, open advanced settings of the active WiFi network.
+2. 在要通过 AdGuard 路由流量的设备上，打开主动 WiFi 网络的高级设置。
 
-3. Switch the **Proxy type** to **Manual**. For **Proxy hostname**, enter the noted IP-address of your desktop computer (step 1). For **Proxy port**, enter the port chosen in desktop AdGuard's network settings.
+3. 将**代理类型**切换为**手动**。 对于**代理主机名**，请输入在第一步记下的 IP 地址。 对于**代理端口**，输入在桌面 AdGuard 的网络设置中选择的端口。
 
-4. Activate AdGuard on your computer and check the box ***Use AdGuard as an HTTP proxy*** in the **Network** settings of the desktop app.
+4. 在您的计算机上激活 AdGuard 并在桌面应用程序的**网络**设置中选中框**使用 AdGuard 作为 HTTP 代理** 。
 
-5. Follow this link using any browser: [http://local.adguard.org/cert](http://local.adguard.org/cert)
+5. 使用任何浏览器访问此链接：[http://local.adguard.org/cert](http://local.adguard.org/cert)
 
-6. Click the **Download** button.
+6. 单击**下载**按钮。
 
-7. Once the certificate is downloaded, you need to install it. Tap the downloaded certificate to open the file, if it didn't open automatically.
+7. 证书下载后，需要安装它。 如果未自动打开，请点击下载的证书以打开文件。
 
-8. On some phones, you might be asked to enter your device password. Do that, then press **OK**. The certificate is now installed.
+8. 在某些手机上，可能会要求您输入设备密码。 然后再按**确定**。 证书安装成功。
 
-### iOS {#ios}
+### iOS 系统 {#ios}
 
-1. Note the IP address of your desktop computer with installed AdGuard.
+1. 记下装有 AdGuard 的台式计算机的 IP 地址。
 
-2. On the device which traffic you want to route through AdGuard, open advanced settings of the active WiFi network.
+2. 在要通过 AdGuard 路由流量的设备上，打开主动 WiFi 网络的高级设置。
 
-3. Switch the **Proxy type** to **Manual**. For **Proxy hostname**, enter the noted IP-address of your computer (step 1). For **Proxy port**, enter the port chosen in desktop AdGuard's network settings.
+3. 将**代理类型**切换为**手动**。 对于**代理主机名**，请输入在第一步记下的 IP 地址。 对于**代理端口**，输入在桌面 AdGuard 的网络设置中选择的端口。
 
-4. Activate AdGuard on your computer and check the box ***Use AdGuard as an HTTP proxy*** in the **Network** settings of the desktop app.
+4. 在您的计算机上激活 AdGuard 并在桌面应用程序的**网络**设置中选中框**使用 AdGuard 作为 HTTP 代理** 。
 
-5. Open Safari, go to [http://local.adguard.org/cert](http://local.adguard.org/cert) and tap **Download**. In the opened dialogue, allow the website to download a configuration profile.
+5. 打开 Safari 浏览器，转到 [http://local.adguard.org/cert](http://local.adguard.org/cert) 并点击**下载**。 在打开的对话框中，允许网站下载配置文件。
 
-6. Open **Settings** -> **Profile Donwloaded** and tap **Install** in the top right corner. Enter your password and confirm the installation. Tap **Done**.
+6. 打开**设置** -> **配置文件下载**，然后点击右上角的**安装**。 输入密码并确认安装。 点击**完成**。
 
-7. Go to **Settings** -> **General** -> **About** -> **Certificate Trust Settings**. Enable the switch beside **Adguard Personal CA**. The certificate is now installed.
+7. 转到**设置** -> **常规** -> **关于** -> **证书信任设置**。 启用 **Adguard Personal CA** 旁边的开关。 证书安装成功。

@@ -1,5 +1,5 @@
 ---
-title: How to install AdGuard on versions of macOS High Sierra and above
+title: How to install AdGuard on macOS High Sierra and above
 sidebar_position: 3
 ---
 

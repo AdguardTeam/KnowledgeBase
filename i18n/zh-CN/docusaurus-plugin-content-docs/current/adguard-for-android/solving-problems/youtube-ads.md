@@ -1,18 +1,18 @@
 ---
-title: How to block ads in the Youtube app
+title: 如何在 YouTube 上拦截广告
 sidebar_position: 7
 ---
 
-One of the most popular questions users ask us is: 'Is it possible to block ads in YouTube on Android?'. Due to the technical restrictions of the Android OS, there is no way to *completely* remove ads from the YouTube app. But we've found an alternative that brings you to it as close as possible, while getting around the Android-imposed restrictions.
+用户最常所提的问题是：“有没有办法在安卓设备上屏蔽 YouTube 应用里的广告?”。 由于安卓操作系统的技术限制，确实没有办法**彻底**移除 YouTube 应用程序里的广告。 但是我们找到了一种让我们尽可能接近拦截广告以及绕过安卓限制的方法。
 
 
-## Watch YouTube in the AdGuard app
+## 通过 AdGuard 应用程序观看 YouTube 影片
 
-![Instruction](https://cdn.adguard.com/public/Adguard/Blog/Android/3-6/share.gif)
+![指示说明](https://cdn.adguard.com/public/Adguard/Blog/Android/3-6/share.gif)
 
-1. Open the YouTube app and start the video you want to watch.
-2. Tap the *Share* button and select *AdGuard for Android* from the list of apps.
+1. 打开 YouTube 应用并播放您想看的影片。
+2. 点击**「分享」**按钮并在应用程序的列表内选择**「AdGuard 安卓版」**。
 
-That's it! A new window with the video will open where you'll be able to watch it without being interrupted by ads.
+完成！ 在新视窗里您就可以观看无广告的视频。
 
-* You can also watch YouTube in a browser and there will be no ads if you have AdGuard installed and enabled.
+* 如您已安装并开启了 AdGuard，您也可以在浏览器里享受无广告的 YouTube 影片。

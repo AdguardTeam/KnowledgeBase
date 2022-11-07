@@ -1,10 +1,10 @@
 ---
-title: Writing about AdGuard
+title: Написать об AdGuard
 sidebar_position: 3
 ---
 
-If you like AdGuard and want to spread your impressions of the product(s) over the internet — in social media, personal blogs and/or on websites — then this article can be useful for you.
+Если вам нравится AdGuard и вы хотите поделиться впечатлениями о продукте(ах) в интернете — в социальных сетях, личных блогах и/или на сайтах — тогда эта статья может быть вам полезна.
 
-Once you share your experience online, send us a link to [pr@adguard.com](mailto:pr@adguard.com) and we'll thank you with a free license key. It does not really matter if your website's audience is ten people or a thousand, we respect every effort. The only note to keep in mind is that your review should be roughly about 300 to 500 words.
+Как только вы поделитесь своим опытом в интернете, пришлите нам ссылку на [pr@adguard.com](mailto:pr@adguard.com), и мы отблагодарим вас бесплатным лицензионным ключом. Не так важно, сколько человек составляет аудитория вашего сайта — десять или тысяча, мы уважаем любые усилия. Единственное, о чём следует помнить, это то, что ваш обзор должен быть примерно от 300 до 500 слов.
 
-If you want to make a video or to do something else, let us know in advance, just to avoid misunderstandings in the future. The same applies if your plan includes the use of AdGuard logo, banners or other visual elements. The contact email remains the same: [pr@adguard.com](mailto:pr@adguard.com).
+Если вы хотите снять видео или сделать что-то ещё, сообщите нам об этом заранее, чтобы избежать недоразумений в будущем. То же самое относится к случаям, когда ваш тарифный план включает использование логотипа AdGuard, баннеров или других визуальных элементов. Контактная почта остается прежней: [pr@adguard.com](mailto:pr@adguard.com).

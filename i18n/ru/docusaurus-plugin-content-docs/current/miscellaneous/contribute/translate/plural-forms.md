@@ -1,160 +1,160 @@
 ---
-title: Plural forms
+title: Плюральные формы
 sidebar_position: 4
 ---
 
 
-There are a lot of differences between the world’s languages. One of these differences is the use of plural forms that can cause huge difficulties when it comes to localization issue.
+Языки разные. То, как в них используются формы множественного числа (плюральные формы), отличается от языка к языку. Это может создавать трудности при локализации.
 
-We strongly recommend you to properly read this article to learn more about plural forms and how they are being used in AdGuard translations.
+Чтобы узнать больше о формах множественного числа и о том, как их использовать в локализации продуктов AdGuard, читайте в этой статье.
 
-## What do plural forms mean? {#plurals}
+## Что такое плюральные формы? {#plurals}
 
-Nouns in different languages can have several plural word forms. Their usage depends on the number of things you are talking about.
+Существительные в некоторых языках могут иметь несколько форм множественного числа. Использование той или иной формы в основном зависит от количества называемых предметов или свойства числительных.
 
-For instance, English words have two word forms when speaking about something in the singular, like *'one star'*, and in the plural – *'two stars'*. It doesn’t matter if you say five, twenty six or even five hundred thirty two stars – the ending 's' will remain the same. But some languages can contain only one or many plural forms.
+Например, у английских слов две словоформы: в единственном числе — *one star*, «одна звезда», во множественном — *two stars*, «две звезды». Неважно, скажете ли вы пять, двадцать шесть или даже пятьсот тридцать две звезды — окончание «s» останется прежним. Но некоторые языки могут содержать только одну плюральную форму или наоборот — больше, чем две.
 
-In contrast to English, the Polish language has three plural forms of nouns. One of them is used when speaking about something in the singular, another form is used in the plural but with numbers ending in 2-4, excluding 12-14, and the third form – for words with other numbers in front of them.
+В отличие от английского, в польском языке есть три формы множественного числа существительных. Одна из них используется, когда говорят о чём-либо в единственном числе, другая — во множественном числе, но с числами, оканчивающимися на 2-4, не включая 12-14, а третья форма — для слов, перед которыми стоят все остальные числа.
 
-Let’s have a look at this picture. Here you can see the groups of numerals which determine a word form when standing in front of it.
+Ниже показано разделение на плюральные формы в зависимости от числительных в польском языке. Группы числительных определяют форму слова, которое к ним относится.
 
-![Polish](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
+![польский](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
-> Find other examples [here](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals).
+> Другие примеры можно найти [здесь](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals).
 
-Let’s draw a small parallel between English and Polish for better understanding: 
+Вот таблица сравнения плюральных форм в английском и польском: 
 
-      The English version:                                                 The Polish equivalents:
+      Английская версия:                                                 Польские эквиваленты:
     
-      1. form - It takes one hour.                                     1. form - Zajmuje to godzinę. 
-      2. form - It takes two hours.                                    2. form - Zajmuje to dwie godziny. 
-      2. form - It takes five hours.                                   3. form - Zajmuje to pięć godzin.
+      1. форма — It takes one hour.                                     1. форма — Zajmuje to godzinę. 
+      2. форма — It takes two hours.                                    2. форма — Zajmuje to dwie godziny. 
+      3. форма — It takes five hours.                                   3. форма — Zajmuje to pięć godzin.
 
-Now it is clear that the Polish *'godzinę'* (hour) has three different forms, whereas the English word changes its form with given numbers only twice.
+Польское *'godzinę'* (час) имеет три разные формы, английское слово с теми же числительными склоняется только по двум формам.
 
-Except for Polish, there are a lot of other languages that have three plural forms and more, such as Russian, Serbian, Slovak, Czech etc. But not all of them obey the same rule. That's why it is so important to know how many plural forms your language contains and how you can apply them.
+Кроме польского, есть много других языков, которые имеют три и более форм множественного числа: например, русский, сербский, словацкий, чешский и т. д. Но не все они подчиняются одному и тому же правилу. Поэтому важно знать, сколько плюральных форм содержится в вашем языке и как их применять.
 
-## Where can you learn about the number of plural forms? {#where-to-learn}
+## Где можно узнать о количестве форм множественного числа? {#where-to-learn}
 
-When you are faced with a translation that requires the use of plurals, you may not be able to realize right away how many word forms your language contains.
+В некоторых переводах нужны плюральные формы. Не всегда можно сразу понять, сколько форм нужно применить.
 
-Here are some sources of information you can use.
+Вот некоторые источники информации, которые можно использовать.
 
-[Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contains a wide list of languages. The number of plural forms for different languages is shown this way: 'nplurals=2', 'nplurals=4' and so on. The numeral after the Equals sign '='  means the number of plural forms of the respective language.
+На сайте [Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) есть информация о большом количестве языков. Количество форм множественного числа для разных языков показано так: nplurals=2, nplurals=4 и так далее. Цифра после знака равенства (=) означает количество плюральных форм в этом языке.
 
-Also, you can get information about plural forms in the [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules)(CLDR). The CLDR Plural Rules indicate an additional word form for decimal numbers (1.5; 2.3; 100.1…), but we don’t use them in AdGuard translations.
+Информацию о плюральных формах можно также найти на сайте [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). В правилах плюральных форм CLDR указана дополнительная форма слова для десятичных чисел (1,5; 2,3; 100,1…), но мы не используем их в переводах AdGuard.
 
-## Plurals in AdGuard translations {#translations}
+## Плюральные формы в переводах AdGuard {#translations}
 
-First of all, we want to mention that not every AdGuard translation requires the use of plural forms.
+Не в каждом переводе нужны плюральные формы.
 
-Currently, we have 4 types of strings on Crowdin that involve the use of plurals.
+На платформе Crowdin у нас есть 4 типа строк, в которых используются плюральные формы.
 
-Let's take a closer look at them.
+Рассмотрим их поближе.
 
-### 1. Phrases with string keys ending in `.singular`, `.dual`, `.plural` {#1type}
+### 1. Фразы с ключами (string keys), оканчивающимися на `.singular`, `.dual`, `.plural` {#1type}
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/plurals/dual_it.png)
 
-Most of them are represented in the `AdGuard for Windows` project and consist of only one or two words:
+Большинство из них представлены в проекте `AdGuard для Windows` и состоят из одного-двух слов:
 
 - `days;`
 - `extensions;`
 - `hours`
 
-Please pay attention to the string keys of such phrases and to the "Context" field where you can see some important notes about plurals. The string keys may contain `Singular`, `Dual`, `Plural` words (ex.`FormatDayDeclensionDual`). In this case, you should leave the appropriate plural form as it is specified in the key.
+Обращайте внимание на ключи таких фраз и на поле Context, где бывают комментарии об употреблении множественного числа. Ключи могут содержать слова `Singular`, `Dual` и `Plural` (напр. `FormatDayDeclensionDual`). В этом случае используйте ту форму, которая указана в ключе.
 
-### 2. Strings with singular and plural nouns separated by commas {#2type}
+### 2. Строки с существительными в единственном и множественном числе, разделённые запятыми {#2type}
 
-This kind of strings is mostly concentrated in the `AdGuard for Android` project.
+Этот тип строк в основном можно найти в проекте `AdGuard для Android`.
 
-Please look at the example:
+Вот пример:
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/plurals/android_fr.png)
 
-If there are 3 plural forms of nouns in your language (like in Polish), please write all plural forms separated by commas.
+Если в вашем языке 3 плюральные формы (как в польском), укажите их все через запятую.
 
 `hour, hours --> godzinę, godziny, godzin`
 
-In case a noun has only 2 forms, there is no need to write the same form twice (*typically only for this type of strings with plurals!*). However, it won't be a mistake if you repeat the form twice.
+Если ваш язык предполагает использование трёх форм, а фраза, которую вам нужно перевести, предполагает только две (напр. *до 1 дня, до 2 дней, до 5 дней*), не обязательно писать одну и ту же форму дважды. *Это касается только данного типа строк*. Но не будет ошибкой, если вы это сделаете.
 
-### 3. Strings that use the Crowdin-developed pattern {#3type}
+### 3. Строки, в которых используется паттерн, разработанный Crowdin {#3type}
 
-This is the most user-friendly scheme of translating strings with plurals.
+Это наиболее удобная схема перевода строк с множественным числом.
 
-Crowdin suggests to users that they translate the certain amount of phrases with different plural forms.
+Некоторые фразы Crowdin предлагает подставить в разные плюральные формы.
 
-If your language provides only one plural form, then you will see only one phrase to translate. If three or more forms, Crowdin will provide you with the string divided into other two or three strings to translate.
+Если в вашем языке только одна форма множественного числа, вы увидите только одну фразу для перевода. Если в языке их две и больше, Crowdin разделит строку столько частей, сколько форм в языке.
 
-For example:
+Например:
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/plurals/crowdin_scheme.png)
 
-Please be attentive when translating these strings and approving them. If you have no idea what the "Other" field means, then just paste the same form as it is in the "Many" field. The translations of "Many" and "Other" fields can be the same.
+Будьте внимательны, когда переводите такие строки. Если вы не знаете, что означает поле Other, просто вставьте ту же форму, что и в поле Many. Переводы полей Many и Other могут быть одинаковыми.
 
-### 4. Strings with templates separated by the vertical bar sign {#4type}
+### 4. Строки, разделённые вертикальной чертой {#4type}
 
-This is the most complicated type of AdGuard strings which is mostly used in `AdGuard Websites` project.
+Это самый сложный тип строк AdGuard, который в основном используется в проекте `AdGuard Websites`.
 
-Pay close attention to a vertical bar sign between the sentences and **%count%** placeholders in original phrases – this will help you identify phrases where translations require the use of plural forms.
+Обратите внимание на знак вертикальной черты между предложениями и плейсхолдер **%count%** в оригинальных фразах — это поможет вам определить фразы, в которых перевод требует использования форм множественного числа.
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/plurals/plurals_site.png)
 
-Now, let’s imagine — you are faced with such string: *"Standard license for %count% computer|Standard license for %count% computers"*.
+Теперь представим, что вы столкнулись с такой фразой: *Standard license for %count% computer|Standard license for %count% computers*.
 
-What should you know to translate it correctly?
+Что нужно знать, чтобы перевести её правильно?
 
-Let's call the sentences which are divided by a vertical bar sign **"templates"**, because actually they serve as templates for phrases with different numbers.
+Назовём предложения, разделённые вертикальной чертой,**«шаблонами»**, поскольку фактически они служат шаблонами для фраз с разными числами.
 
-Coming back to the example, as the English language includes only two forms, there should be two templates respectively:
+Возвращаясь к примеру, поскольку в английском языке есть только две плюральные формы, то и шаблонов должно быть два:
 
-`**Standard license for *%count%* computer|Standard license for *%count%* computers**`
+`Standard license for %count% computer|Standard license for %count% computers`
 
-where **template 1** – Standard license for *%count%* computer,
+где **шаблон 1** – Standard license for *%count%* computer,
 
-and **template 2** – Standard license for *%count%* computers
+и **шаблон 2** – Standard license for *%count%* computers
 
-Another important thing you should pay your attention to is **%count%** placeholders that, as usual, take place before the words they define. Instead of **%count%** here will appear different numbers depending on which templates are being chosen.
+Обратите внимание на плейсхолдеры **%count%**. Они обычно располагаются перед словами, которые определяют. Вместо **%count%** в итоге будут отображаться разные числа в зависимости от того, какие шаблоны выбираются.
 
-In a situation with another language that has, let’s say, three plural forms, there should be three templates with two vertical bar signs between them.
+Если в языке три формы множественного числа, в переводе должно быть три шаблона с двумя вертикальными линиями между ними.
 
-For example, when we translate the above mentioned phrase into Slovak, that according to the rule of [Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) has three word forms, the correct translation will look so:
+Например, если мы переведём эту же фразу на словацкий, [в котором три плюральных формы](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html), правильный перевод будет выглядеть так:
 
-`**Štandartná licencia pre *%count%* počítač|Štandartná licencia pre *%count%* počítače|Štandartná licencia pre *%count%* počítačov**`
+`Štandartná licencia pre %count% počítač|Štandartná licencia pre %count% počítače|Štandartná licencia pre %count% počítačov`
 
-![Slovak](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/slovak.png)
+![словацкий](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/slovak.png)
 
-In this case, we see three templates which contain three forms of the word *"počítač"* (computer) in Slovak.
+Получается, если вы переводите на словацкий, вам нужно использовать три шаблона с тремя формами слова *počítač"* (компьютер).
 
-*If we ignore one of the forms and use only two templates for Slovak instead of three, the system won’t be able to take an appropriate template for certain numbers* and, as a result, we will have grammar mistakes in sentences, like in English: *Standard license for 5 computer*.
-> **Always use as many forms as there are in your language, even when the word itself has fewer word forms.**
+*Если мы проигнорируем одну из форм и будем использовать только два шаблона для словацкого языка вместо трёх, некоторые числа система подставит неправильно*. В результате появятся грамматические ошибки: *Standard license for 5 computer*.
+> **Всегда используйте столько форм, сколько есть в вашем языке, даже если в самом слове меньше словоформ.**
 
-For example, the Serbian word *'računar'* (computer) has only two forms. But there are 3 plural forms in Serbian.
+Например, сербское слово *računar* (компьютер) имеет только две формы. Но в сербском есть 3 плюральные формы.
 
-![Serbian](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/serbian.png)
+![сербский](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/serbian.png)
 
-Thus, the translation from English into Serbian should be:
+Поэтому перевод с английского на словацкий должен быть таким:
 
-`**Standardna licenca za *%count%* računar|Standardna licenca za *%count%* računara|Standardna licenca za *%count%* računara**`
+`Standardna licenca za %count% računar|Standardna licenca za %count% računara|Standardna licenca za %count% računara`
 
-Although it is obvious that the last two templates have no differences, it is very important to keep the rule: **The number of templates should reflect the number of plural forms of the respective language!**(typically for this type of strings with plurals).
+Даже несмотря на то, что последние два шаблона одинаковые, соблюдайте правило: **в переводе должно быть столько шаблонов, сколько плюральных форм в языке**. Особенно это касается данного типа строк.
 
-### Short summary {#summury}
+### В заключение {#summury}
 
-When translating AdGuard projects pay your close attention to phrases which require the use of plural forms.
+При переводе проектов AdGuard обращайте особое внимание на фразы, требующие использования форм множественного числа.
 
-While first three types of such strings are more or less easy to perform, the fourth type demands more vigilance.
+Если первые три типа таких строк более или менее просты в исполнении, то четвёртый тип требует большей аккуратности.
 
-And again: if you come across an original phrase with two important elements: **the vertical bar sign** and **%count%** placeholders, please do the following:
+И ещё раз: если вы встретите оригинальную фразу с двумя важными элементами: **вертикальной чертой** и плейсхолдером **%count%**, пожалуйста, сделайте следующее:
 
-+ Refer to the plural rule of a language you translate into;
++ Обратитесь к правилам употребления множественного числа в языке, на который переводите;
 
-+ Keep the exact number of templates;
++ Всегда используйте одинаковое количество шаблонов;
 
-> The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms – two templates in translations; five plural forms – five templates, etc.
+> Количество шаблонов должно соответствовать количеству форм множественного числа в вашем языке. Это касается даже тех случаев, когда слово не меняется в зависимости от числительных. Две формы множественного числа – два шаблона в переводе; пять форм множественного числа – пять шаблонов и т. д.
 
-+ Do not forget to use a vertical bar sign between templates as it is represented in original strings;
++ Не забывайте использовать знак вертикальной черты между шаблонами, как в оригинальных строках;
 
-+ Do not translate, fill in or delete **%count%** placeholders.
++ Не переводите, не заполняйте и не удаляйте такие плейсхолдеры, как **%count%**.
 
-By following these simple rules you will help AdGuard developers avoid a lot of unnecessary complications during the localization process.
+Если переводы выполнены по правилам, система верно считает форматирование и покажет нужную форму с нужным числительным, а у разработчиков AdGuard будет меньше трудностей.

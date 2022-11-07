@@ -1,11 +1,11 @@
 ---
-title: AdGuard filters
+title: Фильтры AdGuard
 sidebar_position: 2
 ---
 
 This article is about the filters we create to use in AdGuard and other ad-blocking software (e.g., uBlock Origin). Filters are sets of rules in text format used by AdGuard apps and programs to filter out advertising and privacy-threatening content such as banners, pop-ups, or trackers. Filters contain lists of rules based on their purpose. Language filters include rules for corresponding language segments of the Internet (e.g., German filter). Task-based filters group rules that fulfil a specific task, such as Social media filter or Tracking Protection filter. Enabling or disabling a filter makes it easier to work with the entire list of rules at once.
 
-## AdGuard filters
+## Фильтры AdGuard
 
 * **Base filter** — removes ads from websites with English content. Originally based on [EasyList](https://easylist.to/) and modified by us. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_Base/filter.txt)
 * **Tracking Protection filter** — comprehensive list of various online counters and web analytics tools. Use it to hide your actions online and avoid tracking. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt)
@@ -34,13 +34,13 @@ This article is about the filters we create to use in AdGuard and other ad-block
 
 Our filter policy defines what AdGuard filters should block and what they should not, as well as the rules for adding and removing rules from filters. Read the full text of [AdGuard filter policy](filter-policy.md) for detailed information.
 
-## Contributing to AdGuard filters
+## Участвовать в развитии фильтров AdGuard
 
-We are blessed with a unique community that not only loves AdGuard but also gives back. Many people volunteer in various ways to make AdGuard's user experience better for everybody. You are welcome to join the band and make a difference. We will do our part and happily reward the most active community. So, what can you do?
+Нам очень повезло иметь вокруг себя сообщество, которое не только любит AdGuard, но и непосредственно поддерживает нас. Большое количество людей становятся волонтёрами и самыми различными способами помогают улучшить AdGuard для себя и всех остальных. Вы тоже можете помочь! Мы, в свою очередь, счастливы вознаградить наиболее активных членов сообщества. Что можно сделать?
 
-### Report Issues
+### Сообщать о проблемах
 
-We rely on the community to let us know about issues with our filters. It helps us use our time more efficiently and keep filters constantly updated. To submit a report, please use this [web reporting tool](https://agrd.io/report).
+Мы полагаемся на сообщество в вопросе обратной связи по нашим фильтрам. Таким образом мы можем быть уверены, что наши фильтры всегда релевантны и мы эффективно их обновляем. To submit a report, please use this [web reporting tool](https://agrd.io/report).
 
 ### Suggest Filtering Rules
 

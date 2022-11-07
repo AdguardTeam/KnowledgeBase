@@ -1,5 +1,5 @@
 ---
-title: 'Launch issues on macOS'
+title: Launch issues on macOS
 sidebar_position: 6
 ---
 
@@ -34,4 +34,4 @@ If you have problems launching AdGuard for Mac on Sierra, Mojave and Catalina op
 8. Open **Terminal** and enter the following command: `sudo chflags restricted /private/var/db/KernelExtensionManagement`.
 9. Reboot your Mac in recovery mode.
 10. Open **Utilities** -> **Terminal** -> Enter `csrutil enable` -> Enter administrator password -> Reboot your Mac.
-11. Enable AdGuard protection.
+11. AdGuard 보호를 활성화합니다.

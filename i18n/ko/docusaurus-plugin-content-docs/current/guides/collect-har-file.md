@@ -141,7 +141,7 @@ To create a HAR file in Safari:
 
 ## Android {#android}
 
-To get HAR files follow these steps:
+HAR 파일을 수집하려면 다음 단계를 따르십시오.
 
 1. Open AdGuard and go to ***Settings***.
 

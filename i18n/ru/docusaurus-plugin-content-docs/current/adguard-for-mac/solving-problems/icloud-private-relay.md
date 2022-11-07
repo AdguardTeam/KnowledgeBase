@@ -3,7 +3,7 @@ title: iCloud Private Relay and AdGuard
 sidebar_position: 7
 ---
 
-## Problem description in a nutshell
+## Краткое описание проблемы
 
 By default, AdGuard uses the "default route" which disables iCloud Private Relay.
 
@@ -11,7 +11,7 @@ Currently, AdGuard and iCloud Private Relay cannot work at the same time. AdGuar
 
 The same applies to using any VPN apps on Mac: you have to choose between using iCloud Private Relay or a VPN service.
 
-## In detail
+## Подробно
 
 AdGuard for Mac now uses macOS built-in socket filtering based on the network extensions API. This new and rather buggy mechanism replaced good old Kernel extensions. Over the last 1.5 years, we've reported more than 20(!) bugs to Apple regarding their new filtering method.
 
@@ -28,14 +28,14 @@ As a result, AdGuard can't work together with iCloud Private Relay and Mail.app 
 
 `network.extension.monterey.force.split.tunnel` restores the "Big Sur" behavior, but this option may break access to websites due to (3) and (4). We keep searching for a solution to this issue. One of the options is implementing HTTP/3 filtering.
 
-## Recommended solution
+## Рекомендуемое решение
 
 We recommend using AdGuard together with a more traditional VPN service such as [AdGuard VPN](https://adguard-vpn.com/).
 
-## Alternative solution
+## Альтернативное решение
 
 You can prevent AdGuard from using the "default route" by disabling the "default route".  It can be done via Advanced Settings -> `network.extension.monterey.force.split.tunnel`.
 
-![Disable default route in advanced settings](https://cdn.adguard.com/content/kb/ad_blocker/mac/mac_adguard_advanced_settings.jpg)
+![Отключить маршрут по умолчанию в расширенных настройках](https://cdn.adguard.com/content/kb/ad_blocker/mac/mac_adguard_advanced_settings.jpg)
 
 Bear in mind that, in this case, you'll face the issues described above.

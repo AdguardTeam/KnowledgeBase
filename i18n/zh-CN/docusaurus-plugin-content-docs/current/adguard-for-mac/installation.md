@@ -13,7 +13,7 @@ sidebar_position: 2
 
 **Free disk space:** 120 MB
 
-## Installation
+## 安装
 
 To install AdGuard for macOS on your computer, launch your browser, type _adguard.com_ in the address bar, and press **Download** on the page that opens.
 

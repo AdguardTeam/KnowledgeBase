@@ -1,61 +1,61 @@
 ---
-title: Problems caused by using a Restricted Mode profile
+title: 受限模式导致的一些问题
 sidebar_position: 10
 ---
 
-The owners of phones, tablets, or TVs running the Android 7+ operating system might face the problem caused by using **a profile with Restricted Mode**. If you have such a profile, **AdGuard**, like other applications that use VPN, gets restrictions on selective filtering of VPN traffic. As a result, AdGuard cannot launch protection in a **local VPN mode**. Also, one of the reasons for this situation may be using **Dual app/Dual messenger profile** on your device. Below are described the recommendations that you can apply when this problem occurs.
+拥有安卓7+操作系统的手机、笔记本或电视的用户可能会遇到使用**受限模式（Restricted Mode）的配置文件**导致的问题。 如您有遇到这种情况，**AdGuard** 与其他使用 VPN 的应用程序一样进行选择性过滤 VPN 流量时，受其限制。 因此，AdGuard 无法使用**本地 VPN 模式**开启保护。 除此之外，如您在设备上使用**双开应用/应用分身帐户**也会导致相似的问题。 以下是您可以规避该问题的操作。
 
-## Solutions
+## 解决方法
 
-You have three ways to solve the issue:
+解决该问题有三种方法：
 
-### Option 1: Grant permissions to AdGuard using ADB
+### 方案 1：允许 AdGuard 使用 ADB
 
-> Please note, that this approach is available starting from **AdGuard v3.5 nightly 6**. If you're using an older version, you can get the latest update [here](https://adguard.com/adguard-android/overview.html).
+> 请注意！该方法仅由 **AdGuard v3.5 nightly 6** 起可用。 如您仍在使用旧版本，您可以[在此处](https://adguard.com/adguard-android/overview.html)下载 nightly 版本。
 
-1. Activate the **developer mode** and enable **USB debugging**:
-- Open the **Settings** application on your phone;
-- Go to **System** section (last item in the settings menu). In this section find sub-item **About phone**;
-- Click on the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
-- Open **System Settings** > **Developer Options** > Scroll down and enable **USB debugging** > Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
+1. 激活**开发人员模式**以及启用 **USB 调试**：
+- 在手机上前往**设置**；
+- 前往**系统**部分（设置中最后一项选项）。 这里前往**关于手机**；
+- 点击**版本号**7次。 之后您将会收到通知说明现在**您是开发人员**（如需要的话，输入解锁密码）；
+- 前往**系统设置** > **开发人员选项** > 向下移动，启用 **USB 调试** > 在是否**允许 USB 调试**提示中仔细阅读警告后，确定允许调试。
 
-> If you have any difficulties or additional questions, full instructions can be found [here](https://developer.android.com/studio/debug/dev-options).
+> 如您遇到任何困难或其他问题，[在此处](https://developer.android.com/studio/debug/dev-options)可查看完整说明。
 
-2. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb;
-> On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
-3. Connect your device using a **USB cable** to the computer or laptop on which you installed **ADB**;
-4. Open **the command line** on your PC:
-- **Cmd.exe** if you are using **Windows**;
-- **Terminal** if you are using **macOS**;
+2. [安装以及配置](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb;
+> 在 Windows 平台中，**三星**用户需要安装[此工具](https://developer.samsung.com/mobile/android-usb-driver.html)。
+3. 使用 **USB 电缆**将您的设备连接至您已安装 **ADB** 的电脑或笔记本等设备上;
+4. 在您的 PC 上打开**命令行**：
+- 如您使用的是 **Windows**，打开 **Cmd.exe**；
+- 如您使用的是 **macOS**，打开 ** Terminal **；
 5. Enter the command `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` and press **Enter**.
 
-### Option 2: Remove *restricted user account*
+### 方案 2：移除**受限用户帐户**
 
-About how to manage user accounts from an Android device you can [find here](https://support.google.com/a/answer/6223444?hl=en).
+[在此](https://support.google.com/a/answer/6223444?hl=en)可以查看如何在安卓设备上管理用户帐户的相关信息。
 
-> Please note, that in some cases restricted user accounts are created implicitly and cannot be removed. For instance, when you use Dual messenger or Dual app features on **Samsung** or **LG** devices. You can read below how to fix the issue in these cases.
+> 请注意！ 在一些情况下，受限用户帐户是自动创建，因而无法被删除。 例如，您在**安卓**或 **LG** 设备上使用应用分身或双开应用功能时，将会自动创建受限用户帐户。 您可以阅读以下内容以查看，在上面描述的情况下该如何解决问题。
 
-### Option 3: Use AdGuard in *Local HTTP proxy mode* (requires root)
+### 方案 3：使用 AdGuard 的本地 HTTP 代理模式（需要 root 权限）
 
-To enable this mode open **AdGuard Settings** > **Network** > **Filtering method** > **Local HTTP proxy**
+开启该模式需要打开 **AdGuard 设置** > **网络** > **过滤方式** > **本地 HTTP 代理**
 
-## LG and Samsung devices
+## LG 和三星设备
 
-Owners of **LG** or **Samsung** phones may also encounter a similar issue. It can be caused by using **Dual app/Dual messenger** function (which automatically creates a restricted profile). To solve this issue, you need to disable this feature.
+**LG** 或**三星**手机的用户也可能会遇到相同的问题。 一般由**双开应用/应用分身**功能（自动创建受限帐户）引起。 为了解决该问题，您需要禁用该功能。
 
-### Samsung
+### 三星
 
-- Open **Settings**;
-- Press **Advanced**;
-- Scroll down, and then press **Dual messenger**;
-- Disable the **Dual messenger** for all applications;
-- Lock the device for 5 minutes;
-- Unlock the screen and try again to create the VPN profile.
+- 前往**设置**；
+- 点击**高级**功能；
+- 向下移动，点击**应用分身**；
+- 禁用所有应用使用**应用分身**；
+- 锁定您的设备5分钟；
+- 解锁屏幕并重新试图创建 VPN 账号。
 
 ### LG
 
-- Open **Settings**;
-- Choose **General** tab;
-- Scroll down, and then press **Dual app**;
-- Remove all applications from the list;
-- Reboot your device.
+- 前往**设置**；
+- 选择**常规**标签钮；
+- 向下移动，点击**双开应用**；
+- 移除应用分身列表中所有的应用；
+- 重启您的设备。

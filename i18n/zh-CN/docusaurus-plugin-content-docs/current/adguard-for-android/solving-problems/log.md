@@ -1,42 +1,42 @@
 ---
-title: Collecting a full log on AdGuard for Android
+title: How to collect a full log
 sidebar_position: 2
 ---
 
-Sometimes in order to understand a problem and fix it we need to collect **log files**, or **logs**. Basically, these files contain information about the program and it's work.
+有时候我们需要收集用户**日志文件**或**记录**以理解问题的原因。 该文件主要包含关于软件以及其运行的信息。
 
-#### Collecting debug log
+#### 收集调试日志
 
-To collect **debug** log and send it to us you need to perform following steps:
+为了收集**调试**日志并将其转发给我们，您要完成以下操作步骤：
 
-1. Open AdGuard and go to "Settings".
+1. 打开 AdGuard 后，前往「设置」。
 
-2. Choose "Advanced".
+2. 选择「高级」。
 
-3. Set "Logging level" to "Record everything". It's desirable to close all background apps that don't concern the problem beforehand.
+3. 将「日志纪录级别」设置为「纪录全部」。 操作时，建议将所有后台应用关闭。
 
-4. Reproduce the problem and set the logging level back to "Default". Notice the exact time when it happened.
+4. 重试导致问题的操作步骤后，将日志记录级别改回「默认」。 请您记录将设置改回为默认的准确时间。
 
-5. Send us a message from program by choosing "Support" > "Send Feedback" in the menu. Don't forget to check the "Send detailed system info" checkbox under the text field and to include the timestamp from the step 4 into the message.
+5. 在菜单中选择「支持」>「发送反馈」，通过软件将信息发送给我们。 请您不要忘记勾选「发送详细的系统信息」，并写入第四步骤描述的准确时间。
 
-As an alternative, you can export the logs (along with the *state.txt* file that contains system information and information about AdGuard settings) directly into a local file. It can be convenient, for example, if you are having a conversation with a developer on [GitHub](https://github.com/AdguardTeam/AdguardForAndroid/issues), [forum](https://forum.adguard.com/) or on another platform.
+您亦可以将日志（包含系统信息和有关 AdGuard 设置信息的 *state.txt* 文件）直接导出到本地文件中。 该操作十分方便，例如，如果您与开发人员正在 [GitHub](https://github.com/AdguardTeam/AdguardForAndroid/issues) 、[论坛](https://forum.adguard.com/)或其他平台上谈论时，就可以直接转发日志内容。
 
-To export logs and system information into a file, go to "Settings — Advanced" and tap "Export logs and system info". Select the destination folder and tap "Save".
+您要前往「设置」 — 「高级」并点击「导出日志和系统信息」，以将日志和系统信息导出至文件。 选择目标文件夹，点击「保存」。
 
-#### Collecting web requests log
+#### 收集网络请求日志
 
-To collect **web requests** log and send it to us you need to perform following steps:
+为了收集**网络请求**记录并将其转发给我们，您要完成以下操作步骤：
 
-1. Open AdGuard and go to "Settings".
+1. 打开 AdGuard ，前往「设置」。
 
-2. Choose "Advanced".
+2. 选择「高级」。
 
-3. Set "Logging level" to "Record web requests". It's desirable to close all background apps that don't concern the problem beforehand.
+3. 将「日志记录级别」设置为「记录网络请求」。 操作时，建议将所有后台应用关闭。
 
-4. Reproduce the problem and set the logging level back to "Default". Notice the exact time when it happened.
+4. 重试导致问题的操作步骤后，将日志记录级别改回「默认」。 请您记录将设置改回为默认的准确时间。
 
-5. Send us a message from program by choosing “Support” > "Send Feedback" in the menu. Don't forget to check the "Send detailed system info" checkbox under the text field and to include the timestamp from the step 4 into the message.
+5. 在菜单中选择「支持」>「发送反馈」，通过软件将信息发送给我们。 请您不要忘记勾选「发送详细的系统信息」，并写入第四步骤描述的准确时间。
 
-As an alternative, you can export the logs (along with the *state.txt* file that contains system information and information about AdGuard settings) directly into a local file. It can be convenient, for example, if you are having a conversation with a developer on [GitHub](https://github.com/AdguardTeam/AdguardForAndroid/issues), [forum](https://forum.adguard.com/) or on another platform.
+您亦可以将日志（包含系统信息和有关 AdGuard 设置信息的 *state.txt* 文件）直接导出到本地文件中。 该操作十分方便，例如，如果您与开发人员正在 [GitHub](https://github.com/AdguardTeam/AdguardForAndroid/issues) 、[论坛](https://forum.adguard.com/)或其他平台上谈论时，就可以直接转发日志内容。
 
-To export logs and system information into a file, go to "Settings — Advanced" and tap "Export logs and system info". Select the destination folder and tap "Save".
+您要前往「设置」 — 「高级」并点击「导出日志和系统信息」，以将日志和系统信息导出至文件。 选择目标文件夹，点击「保存」。

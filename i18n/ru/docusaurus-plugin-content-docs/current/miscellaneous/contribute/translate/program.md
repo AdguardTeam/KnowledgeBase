@@ -1,12 +1,12 @@
 ---
-title: AdGuard translation program
+title: Переводы AdGuard
 sidebar_position: 1
 ---
 
-> **Disclaimer:** you can ask us any questions about translating AdGuard by sending an email to [translate@adguard.com](mailto:translate@adguard.com) or by joining our [Telegram chat](https://t.me/joinchat/UVYTLcHbr8JmOGIy).
+> **Примечание:** Вы можете задать нам любые вопросы о переводах AdGuard — просто отправьте письмо по адресу [translate@adguard.com](mailto:translate@adguard.com) или присоединитесь к нам в [Telegram](https://t.me/joinchat/UVYTLcHbr8JmOGIy).
 
-When it comes to translations, we at AdGuard always heavily rely on volunteers.
+В переводах AdGuard мы в значительной степени полагаемся на помощь волонтёров.
 
-We now use the [Crowdin platform](https://crowdin.com/) to manage translations of our products. So this is the place for anyone who wants to contribute to AdGuard by translating any of our products.
+На данный момент мы используем платформу [Crowdin](https://crowdin.com/) для управления переводами наших продуктов. Регистрируйтесь там, если тоже хотите принять участие в переводах AdGuard.
 
-If you want to be among the volunteers who help us translate AdGuard, please read the information on [how to become our translator](./become-translator.md) and [how we collaborate with them](./rewards.md).
+Узнайте, [как стать нашим переводчиком](./become-translator.md) и о том, [что вы можете получить взамен](./rewards.md).

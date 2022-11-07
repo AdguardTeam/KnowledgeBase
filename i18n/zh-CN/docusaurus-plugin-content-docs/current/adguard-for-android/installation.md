@@ -1,5 +1,5 @@
 ---
-title: Installation
+title: 安装
 sidebar_position: 2
 ---
 
@@ -11,7 +11,7 @@ sidebar_position: 2
 
 **Free disk space:** 120 MB.
 
-## Installation
+## 安装
 Most Android-based apps are distributed via Google Play; however, AdGuard is not presented there, because Google prohibits distribution of network-level ad blockers via Google Play, i.e. apps that block commercials in other apps. You will find more information about Google restrictive policy [in our blog](https://blog.adguard.com/en/google-removes-adguard-android-app-google-play/).
 
 That’s why you can only install AdGuard for Android manually. To use the app on your mobile device, you will need to do the following.
@@ -37,7 +37,7 @@ You will see the request to save the downloaded file. Press **OK**.
 
 When the download is complete, the system will ask you if you want to install the AdGuard app. Press **Install**.
 
-![Installation](https://cdn.adguard.com/content/kb/ad_blocker/android/installation/1.png)
+![安装](https://cdn.adguard.com/content/kb/ad_blocker/android/installation/1.png)
 
 You will then be asked to read the **License agreement** and AdGuard's **Privacy Policy**. You can also participate in product development. To do this, you should check boxes *Send automatic crash reports* and *Send technical and interaction data*. Tap **Accept** after that.
 

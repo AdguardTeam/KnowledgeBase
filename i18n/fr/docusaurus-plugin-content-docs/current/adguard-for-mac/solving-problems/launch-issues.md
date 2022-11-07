@@ -1,5 +1,5 @@
 ---
-title: 'Launch issues on macOS'
+title: Launch issues on macOS
 sidebar_position: 6
 ---
 

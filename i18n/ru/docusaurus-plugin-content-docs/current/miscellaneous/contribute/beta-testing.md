@@ -1,38 +1,38 @@
 ---
-title: AdGuard beta testing
+title: Бета-тестирование AdGuard
 sidebar_position: 1
 ---
 
-There is an AdGuard app for virtually every major platform out there, and we regularly release updates for all of them. This would not be possible without beta testing and, more importantly, beta testers. Want to become one? Here's how you can do it.
+Для каждой «большой» платформы — Windows, Mac, Android, iOS — существует своя версия AdGuard, и все они регулярно обновляются. Это было бы невозможно без бета-тестирования и, что более важно, бета-тестеров. Хотите стать одним из них? Узнайте, как.
 
-## How to become a beta tester {#intro}
+## Как стать бета-тестировщиком {#intro}
 
-Our requirements are easy: use AdGuard, upgrade to the beta version when it becomes available, and report any bugs you notice. However, you will need either a [forum]--- or a [GitHub](https://github.com/) account (or both) to become our beta tester, so you may want to get that out of the way first.
+Наши требования просты: используйте AdGuard, переходите на бета-версию, когда она станет доступной, и сообщайте о замеченных ошибках. Чтобы стать нашим бета-тестером, вам понадобится либо [forum-аккаунт](https://forum.adguard.com/index.php), либо аккаунт [GitHub](https://github.com/) (или и то, и другое). В любом случае лучше сразу разобраться с этим.
 
-In any case, every single thing you need to know is gathered on a [dedicated page](https://adguard.com/en/beta.html).
+Всё, что вам нужно знать, собрано на [специальной странице](https://adguard.com/en/beta.html).
 
-If you want to skip the description part and get straight to the action, you can apply [here](https://surveys.adguard.com/beta_testing_program/form.html). Your application will be reviewed within 1-3 working days, and you'll get a reply via email.
+Если вы хотите пропустить описание и сразу перейти к делу, то вам [сюда](https://surveys.adguard.com/beta_testing_program/form.html). Ваша заявка будет рассмотрена в течение 1-3 рабочих дней. Вы получите ответ по электронной почте.
 
-## How to report a bug {#report-a-bug}
+## Как сообщить об ошибке {#report-a-bug}
 
-If you spotted a bug or just want to share your suggestion, let us know in any of the possible ways:
+Если вы заметили ошибку или просто хотите поделиться своим предложением, сообщите нам любым из возможных способов:
 
-* Go to [forum.adguard.com]--- and post there a new thread (or find an existing one) in the beta forum [category]---. Make sure to read [forum rules]---;
+* Зайдите на [forum.adguard.com](https://forum.adguard.com/index.php) и опубликуйте там новую тему (или найдите уже существующую) в [категории «Бета-тестирование» форума](https://forum.adguard.com/index.php?categories/48/). Обязательно сначала прочтите [правила форума](https://forum.adguard.com/index.php?threads/14859/);
 
-* Go to [GitHub](https://github.com/AdguardTeam/) and find a suitable repository. Create a new issue there and describe the bug/feature request in detail.
+* Перейдите на [GitHub](https://github.com/AdguardTeam/) и найдите нужный репозиторий. Создайте новую задачу и детально опишите обнаруженный баг или ваш вопрос/предложение.
 
-The above two methods are the most preferred, but you can use others if necessary:
+Эти два метода являются наиболее предпочтительными, но если нет возможности использовать их, можете использовать другие:
 
-* Find us on various social media platforms, like [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/), etc. However, this is not the most convenient way to discuss technical matters.
+* Найдите наш аккаунт в любой из удобных для вас социальных сетей, таких как [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/) и др., и напишите нам. Однако это не самый эффективный способ обсуждения технических вопросов.
 
-* Email our support team from the Support tab in the app or write directly to [support@adguard.com](mailto:support@adguard.com).
+* Напишите в нашу службу поддержки из вкладки «Поддержка» в приложении или напрямую по адресу [support@adguard.com](mailto:support@adguard.com).
 
-## How to activate the beta key in the iOS application {#ios}
+## Как активировать бета-ключ в приложении iOS {#ios}
 
-If you have already received a beta key and it is listed in your `adguard.com` account, go to the app and open the license section (Get Premium). Once there, enter the credentials from your AdGuard account. After that, the premium features will become available automatically.
+Если вы уже получили бета-ключ и он указан в вашем аккаунте `adguard.com` , зайдите в приложение и откройте раздел лицензии (Получить премиум). Введите учётные данные вашего аккаунта AdGuard. После этого премиум-функции станут доступны автоматически.
 
-### What else?
+### Что ещё?
 
-There is not much more to add. You don't have to go out of your way to find bugs. You can continue using AdGuard as usual. However, if you encounter a bug, please report it. Of course, we appreciate any additional effort and/or extra forum activity, etc.
+Нам осталось не так много добавить. Вам не нужно старательно искать ошибки. Вы можете продолжать использовать AdGuard как обычно. Однако, если вы столкнётесь с ошибкой, пожалуйста, сообщите о ней. Конечно, мы ценим любые дополнительные усилия и/или дополнительную активность на форуме и т.д.
 
-Occasionally, you will receive our newsletters, keeping you informed of the latest changes in the beta (in case you missed them) and other important news. You can unsubscribe from it at any time.
+Время от времени вы будете получать письма, информирующие вас о последних изменениях в бета-версии (на случай, если вы их пропустили) и других важных новостях. Вы можете отписаться в любой момент.

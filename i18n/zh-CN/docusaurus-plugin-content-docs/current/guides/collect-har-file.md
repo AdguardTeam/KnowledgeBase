@@ -139,9 +139,9 @@ To create a HAR file in Safari:
 
 9. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, too.
 
-## Android {#android}
+## 安卓系统 {#android}
 
-To get HAR files follow these steps:
+要获取 HAR 文件，请执行以下步骤：
 
 1. Open AdGuard and go to ***Settings***.
 

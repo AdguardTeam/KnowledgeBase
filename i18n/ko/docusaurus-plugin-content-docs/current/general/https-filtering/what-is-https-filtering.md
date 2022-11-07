@@ -1,77 +1,77 @@
 ---
-title: What is HTTPS filtering
+title: HTTPS 필터링
 sidebar_position: 1
 ---
 
-### What is HTTPS?
+### HTTPS란 무엇인가요?
 
-HTTPS (HyperText Transfer Protocol Secure) is an extension of the HTTP protocol that supports encryption to increase security. This protocol is used to securely transmit valuable information like personal data, credit card details, etc.
+HTTPS(HyperText Transfer Protocol Secure)는 보안을 강화하기 위해 암호화를 지원하는 HTTP 프로토콜의 확장입니다. 이 프로토콜은 개인 데이터, 신용 카드 정보 등과 같은 중요한 지정보를 안전하게 전송하는 데 사용됩니다.
 
-Using HTTPS is highly advantageous because encrypted traffic is protected against eavesdropping by a third party, and we can only welcome this. HTTPS acceptance has been growing in recent years, mainly because it is [encouraged by Google](https://webmasters.googleblog.com/2014/08/https-as-ranking-signal.html) and also due to the emergence of a free certificate authority [Let’s Encrypt](https://en.wikipedia.org/wiki/Let's_Encrypt).
+암호화된 트래픽이 제3자에 의해 ‘엿들어지지 않도록’ 보호되므로 HTTPS를 사용하는 것이 좋습니다. 최근 HTTPS는 [Google 권장을 받고](https://webmasters.googleblog.com/2014/08/https-as-ranking-signal.html) 있다는 점과 무료 인증 센터 [Let ’s Encrypt](https://en.wikipedia.org/wiki/Let's_Encrypt)의 등장으로 인해 확산되고 있습니다.
 
-The diagram below describes the difference between plain HTTP protocol and secure HTTPS protocol.
+아래의 그림은일반 HTTP 프로토콜과 보안 HTTPS 프로토콜의 차이점을 보여줍니다.
 
-![What is HTTPS](https://cdn.adguard.com/public/Adguard/Blog/https/what_is_https.png)
+![HTTPS란 무엇인가요](https://cdn.adguard.com/public/Adguard/Blog/https/what_is_https_ko.png)
 
-### What is a security certificate?
+### 보안 인증서란 무엇인가요?
 
-Simply put, HTTPS means data encryption. But there’s still a problem: how can you be sure that you’ve established an encrypted connection with the right website? That’s where security certificates come into play. A certificate serves as proof that the website is really what it tells you it is. If a website doesn’t have such a certificate, or if the certificate contains incorrect information, the browser will not allow you to establish a secure connection. It is important that the certificate a website uses is issued by a certificate authority (CA) trusted by your browser. Such a CA guarantees that the SSL certificate is, indeed, issued to the website’s owner.
+간단히 말하면 HTTPS는 데이터 암호화를 의미합니다. 그러나 원하시는 웹 사이트와 암호화된 연결을 했는지 어떻게 확인을 할 수 있을까요? 웹 사이트가 보안 인증서가 있으면 연결이 암호화됩니다. 웹 사이트가 보안 인증서가 없거나 인증서에 잘못된 정보가 포함된 경우, 브라우저에서 보안 연결이 될 수 없습니다. 웹 사이트에서 사용하는 인증서를 브라우저에서 신뢰하는 CA(인증 기관)에서 발급받는 것이 중요합니다. 인증 기관은 SSL 인증서가 웹 사이트 소유자에게 발급되는 것을 보장합니다.
 
-### Why does AdGuard need to be able to filter HTTPS?
+### AdGuard가 HTTPS를 필터링해야 하는 이유는 무엇인가요?
 
-Most websites are now using HTTPS, and the same applies to advertising. Here are a few popular websites where you can’t remove ads without HTTPS filtering: youtube.com, facebook.com, and twitter.com.
+대부분의 웹 사이트와 광고 네트워크는 현재 HTTPS를 사용하고 있습니다. YouTube와 Facebook, Twitter가 HTTPS를 필터링하지 않고는 광고를 삭제할 수 없는 대표적인 예시입니다.
 
-### How does HTTPS filtering work?
+### HTTPS 필터링은 어떻게 작동하나요?
 
-If it were easy, HTTPS wouldn’t be that secure. When a browser attempts to connect to a server, AdGuard establishes two secure connections: one with the browser (or another app) and the other with the server. The browser must trust AdGuard and the connections it creates. For this purpose, AdGuard generates a special (and unique) root certificate and installs it into the system and, when it is required, into some browsers (e.g., Firefox). Thus, AdGuard can see what is happening inside the secure connection and do its job — block ads and trackers.
+HTTPS 필터링 작업 방식이 쉬웠다면 HTTPS는 그렇게 안전하지 않을 것입니다. 브라우저가 서버에 연결하려고 하면 AdGuard는 두 개의 보안 연결을 설정하는데, 각각 브라우저나 다른 앱, 그리고 서버와 설정하는 것이 그것입니다. 브라우저는 AdGuard와 AdGuard가 생성하는 연결을 신뢰해야 합니다. 이를 위해 AdGuard는 특수 루트 인증서를 생성하여 시스템에 설치하고 필요한 경우, Firefox와 같은 일부 브라우저에도 설치합니다. 따라서 AdGuard는 보안 연결 상황을 확인하고 광고 및 추적을 차단할 수 있습니다.
 
-For better understanding we depicted this process:
+아래의 그림은 이러한 과정을 알기 쉽게 보여줍니다.
 
-![How does HTTPS filtering work](https://cdn.adguard.com/public/Adguard/Blog/https/what_is_https_filtering.png)
+![HTTPS 필터링은 어떻게 작동하나요](https://cdn.adguard.com/public/Adguard/Blog/https/what_is_https_filtering_ko.png)
 
-### Does my traffic remain encrypted and secure?
+### 내 트래픽이 암호화되고 안전하나요?
 
-Of course! Your connection with a remote server remains encrypted and secure. AdGuard, just like your browser, checks the server’s certificate before deciding whether to filter it or not.
+물론입니다. 원격 서버와의 연결은 암호화되고 안전하게 유지됩니다. AdGuard는 브라우저와 마찬가지로 필터링할지 여부를 결정하기 전에 서버의 인증서를 확인합니다.
 
-However, HTTPS filtering has its drawbacks. The most important one is that it hides from the browser the actual certificate of the website. Instead, the browser sees the certificate issued by AdGuard.
+그러나 HTTPS 필터링에는 단점이 있습니다. HTTPS 필터링 시 브라우저는 실제 인증서 대신 AdGuard에서 발급한 인증서를 봅니다.
 
-Because of this, we have taken additional measures to improve connection security.
+그래서 저희는 연결 보안을 개선하기 위해 몇 가지 추가 조치를 취합니다.
 
-### Financial websites and websites with sensitive personal data
+### 금융 웹 사이트 및 민감한 개인 데이터가 있는 웹 사이트
 
-By default, AdGuard doesn’t filter any information on websites of banks, payment systems, or websites with valuable personal data. We maintain a list of [thousands of exclusions](https://github.com/AdguardTeam/HttpsExclusions).
+기본적으로 AdGuard는 개인 데이터가 있는 은행 웹 사이트, 결제 시스템 웹 사이트 및 웹 사이트에서 필터링하지 않습니다. 저희는 [수천 개의 그러한 웹 사이트 목록](https://github.com/AdguardTeam/HttpsExclusions)을 유지합니다.
 
-If you believe some website should be added to this list, please [let us know](https://github.com/AdguardTeam/HttpsExclusions/issues/new).
+이 목록에 웹 사이트를 추가하려면 [저희에게 알려주십시오](https://github.com/AdguardTeam/HttpsExclusions/issues/new).
 
-### Extended Validation (EV) certificates
+### EV(Extended Validation) 인증서
 
-AdGuard allows you to disable filtering for all websites that use extended validation certificates.
+AdGuard는 EV 인증서를 사용하는 모든 웹 사이트를 필터링에서 제외하는 기능을 제공합니다.
 
-An EV certificate offers a higher level of security and provides more guarantees than a regular certificate, proving that the website is not fraudulent or fake.
+EV 인증서는 더 높은 수준의 보안을 의미하며 일반 인증서보다 더 많은 보증을 제공하여 웹 사이트가 사기 또는 위조 웹 사이트가 아님을 증명합니다.
 
-### Problems related to HTTPS filtering
+### HTTPS 필터링과 관련된 문제
 
-This recent [study](https://cdn.adguard.com/public/Adguard/Blog/https/interception-ndss17.pdf) shows that 5 to 10% of HTTPS connections are established by HTTPS-filtering applications. It is usually done by various kinds of antivirus software. The bad news is that 24 out of 26 tested antiviruses reduced, in various ways, the connection security level, while two-thirds created connections prone to hacking.
+최근 [연구](https://cdn.adguard.com/public/Adguard/Blog/https/interception-ndss17.pdf)에 따르면 HTTPS 연결의 5~10 %는 HTTPS 필터링 애플리케이션에 의해 설정됩니다. 이 HTTPS 필터링 애플리케이션 중 대부분 바이러스 백신 소프트웨어입니다. 나쁜 소식은 테스트된 26개의 바이러스 중 24개가 연결 보안 수준을 떨어뜨렸고 3분의 2가 해킹 연결에 취약하다는 것입니다.
 
-The researchers came to a simple conclusion: the Internet security community should pay close attention to applications that filter secure connections. And the developers of such software must pay serious attention to the quality of filtering implementations.
+연구원들의 결론은 인터넷 보안 커뮤니티가 보안 연결을 필터링하는 애플리케이션에 세심한주의를 기울여야 한다는 것입니다. 그리고 그러한 프로그램의 개발자는 필터링 구현의 품질에 가장 진지하게주의를 진지하게 임해야 합니다.
 
-We would like to note that AdGuard was not tested in the above study. We ran estimates according to their set of tests, and at the time of testing, we could have received the maximum score – A\*. However, this score is not perfect. During the study, the researchers identified some issues that were omitted in the final evaluation.
+AdGuard는 연구원들에 의해 테스트되지 않았습니다. 저희 추정치에 따르면 테스트 시점에 최대 A* 점수를 얻을 수 있었습니다. 연구원에 의해 확인되었지만 최종 평가에서 고려되지 않은 몇 가지 문제가 있습니다.
 
-Here at AdGuard, we fully agree with those conclusions. Moreover, we would like to be as open with users as possible and talk about the problems we are currently experiencing and the steps we are taking to improve the quality and security of the filtering mechanism. The list of these problems is sorted by priority.
+AdGuard는 연구원의 결과에 전적으로 동의합니다. 또한 현재 겪고 있는 문제와 필터링 메커니즘의 품질 및 보안을 개선하기 위한 계획에 대해 알려 드리고자 합니다. 이러한 목록은 우선 순위에 따라 정렬됩니다.
 
-Most of the problems discovered in the above study are related to certificate validation mechanisms. This is what we want to focus on first. We are working on a separate certificate validation library. Moreover, we want to make it open source. A [separate article](known-issues.md) lists all the known drawbacks of HTTPS filtering in AdGuard and our plans to fix them.
+위의 연구에서 발견된 대부분의 문제는 인증서 유효성 검사 메커니즘과 관련이 있습니다. 저희는 별도의 인증서 유효성 검사 라이브러리를 생성 중입니다. 또한 인증서 유효성 검사 라이브러리를 오픈 소스로 만들고 싶습니다. AdGuard의 HTTPS 필터링 단점에 대한 [자세한 내용](known-issues.md)은 이 기사에서 확인할 수 있습니다.
 
-#### HTTPS filtering issues on Android 7+
+#### Android 7 이상에서 HTTPS 필터링 문제
 
-[Starting from Android 7](https://blog.adguard.com/en/android-nougat-release-and-what-does-it-mean-for-adguard-users/), developers have to explicitly indicate that their apps trust user-installed certificates. Not everyone wants to, or bothers with it. What does it mean for AdGuard? AdGuard installs a user certificate to be able to filter HTTPS traffic. If an app doesn't trust this certificate, its HTTPS traffic will not be filtered. What to do?
+[Android 7부터](https://blog.adguard.com/en/android-nougat-release-and-what-does-it-mean-for-adguard-users/) 개발자는 애플리케이션이 사용자 지정 인증서를 신뢰하도록 지정해야 합니다. 이제 AdGuard는 HTTPS 트래픽을 필터링하기 위해 사용자 인증서를 설치합니다. 앱이 이 인증서를 신뢰하지 않으면 HTTPS 트래픽이 필터링되지 않습니다. HTTPS 트래픽이 필터링되지 않으면 What to do?
 
 The first thing worth mentioning is that many apps (even modern ones) still trust user certificates. Nothing has changed in this regard. Almost all browsers also trust such certificates. There may be some exotic browsers that do not, but they are a rare exception to common practice.
 
 Finally, if your device is rooted, you can move the AdGuard certificate to the system storage. This way, you don't have to worry about any permissions a particular app may or may not have — HTTPS traffic will be filtered for modern apps just as well as for older ones. Please keep in mind that in this case, some additional security restrictions (e.g., HPKP or `Expect-CT`) apply to AdGuard.
 
-### How to manually check HTTPS quality?
+### HTTPS 품질을 수동으로 확인하는 방법은 무엇인가요?
 
-There are several dedicated websites where you can check the quality of your HTTPS connection. These websites check if your browser (or, in our case, your browser plus AdGuard) is susceptible to common vulnerabilities. If you plan to use any program that filters HTTPS, not necessarily AdGuard (e.g., an antivirus), we advise that you check the connection quality on these websites.
+특정 웹 사이트에서 HTTPS 연결 품질을 확인할 수 있습니다. 이러한 웹 사이트는 브라우저(또는 AdGuard를 사용 경우, 브라우저 + AdGuard)가 일반적인 취약점에 노출되는지 확인합니다. HTTPS를 필터링하는 프로그램을 사용하려는 경우, 다음과 같은 웹 사이트에서 연결 품질을 확인하는 것이 좋습니다.
 
 * [https://www.ssllabs.com/ssltest/viewMyClient.html](https://www.ssllabs.com/ssltest/viewMyClient.html)
 * [https://www.howsmyssl.com/](https://www.howsmyssl.com/)
