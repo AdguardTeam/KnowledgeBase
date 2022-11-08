@@ -1,5 +1,5 @@
 ---
-title: Browsing Security
+title: Антифишинг
 sidebar_position: 3
 ---
 
@@ -29,7 +29,7 @@ An approximate algorithm of the functioning of the Browsing Security module is s
 
 ![Functioning algorithm of Browsing Security module in AdGuard browser extensions.](https://images.adguard.com/public/Adguard/En/Articles/safebrowsing_extension.png)
 
-## AdGuard filters
+## Фильтры AdGuard
 
 We currently maintain two AdGuard filters. One protects against phishing and fraudulent websites. The other protects against malicious websites, visiting which may lead to a virus infection.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Protect Mail Activity and AdGuard'
+title: Protect Mail Activity and AdGuard
 sidebar_position: 8
 ---
 

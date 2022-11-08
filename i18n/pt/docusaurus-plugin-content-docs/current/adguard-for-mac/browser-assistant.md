@@ -1,5 +1,5 @@
 ---
-title: AdGuard Browser Assistant
+title: Browser Assistant
 sidebar_position: 3
 ---
 

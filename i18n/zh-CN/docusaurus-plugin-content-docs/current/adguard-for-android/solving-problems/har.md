@@ -1,25 +1,25 @@
 ---
-title: How to get HAR files
+title: 如何收集 HAR 文件
 sidebar_position: 5
 ---
 
-## What are HAR files?
-The HAR (HTTP ARchive) format is a JSON-formatted archive file for logging of a web browser's interaction with a site. The specifications of HAR format defines an archival data for HTTP transactions that used by a browser to export detailed information about web pages it loads. More detailed description of HAR file format and its specification you can find at [softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/) website.
+## 什么是 HAR 文件？
+HAR（HTTP ARchive）格式是 JSON 格式的存档文件，用于记录 Web 浏览器与站点的交互。 HAR 格式的规范定义了 HTTP 交易的存档数据，浏览器使用该数据来导出其加载的网页的详细信息。 您可以在 [softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/) 网站上找到有关 HAR 文件格式及其使用规范的更详细说明。
 
-## How to get HAR files?
-Sometimes we need to analyze it to block specific ads that are difficult to reproduce for some reason. To get HAR files follow these steps:
-1. Open AdGuard and go to "Settings".
-2. Choose "Advanced" in the menu.
-3. Choose "Low Level Settings"
-4. Activate "pref.har.capture" (you will have to restart the protection).
-5. Now reproduce the problem - open the app, perform the necessary actions to make the ad appear.
-6. Now turn "pref.har.capture" off again.
-7. Go Back, then tap "Export logs and system info" > Save.
+## 如何收集 HAR 文件?
+有时我们需要对文件进行分析以拦截由于某种原因难以再现的特定广告。 要获取 HAR 文件，请执行以下步骤：
+1. 打开 AdGuard ，前往「设置」
+2. 在菜单中选择「高级」
+3. 选择「低级设置」
+4. 激活 “pref.har.capture”（您必须重新启动保护）
+5. 重试导致问题的操作：打开应用程序，执行必要的操作以使广告出现。
+6. 现在再次关闭 “pref.har.capture”。
+7. 返回，然后点击「导出日志和系统信息」>「保存」
 
-**Please send the file with logs (that you've got as a result) to the AdGuard support service.**
-> Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message.
+**请将导出的日志记录发送给 AdGuard 客服支持。**
+> 注意：如果你在信息中指定 HelpDesk 号或 GitHub 问题号，我们的支持团队会更快地处理您的问题。
 
-## How to analyze HAR files?
-Here are some sources that we can recommend to analyze HAR files:
-* [HTTP Archive Viewer master](https://gitgrimbo.github.io/harviewer/master/) is a HAR analyzer tool, visualizes HTTP Archive (HAR) log files created by HTTP tracking tools.
-* [Fiddler](https://www.telerik.com/fiddler) is a web debugging proxy, lets you capture, inspect, monitor all HTTP(S) traffic between your computer and the Internet, mock requests, and diagnose network issues.
+## 如何分析 HAR 文件?
+以下是我们可以推荐用于分析 HAR 文件的一些资源：
+* [HTTP Archive Viewer master](https://gitgrimbo.github.io/harviewer/master/) 是一个 HAR 分析工具，可视化由 HTTP 跟踪工具创建的 HTTP Archive（HAR）日志文件。
+* [Fiddler](https://www.telerik.com/fiddler) 是一个 Web 调试代理，可让您捕获、检查、监控计算机和 Internet 之间的所有 HTTP(S) 流量、模拟请求和诊断网络问题。

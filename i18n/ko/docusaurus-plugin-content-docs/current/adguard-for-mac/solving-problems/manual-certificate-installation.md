@@ -1,5 +1,5 @@
 ---
-title: 'Manual certificate installation'
+title: Manual certificate installation
 sidebar_position: 1
 ---
 

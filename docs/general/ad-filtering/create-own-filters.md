@@ -1223,6 +1223,7 @@ Some points specific to the operation of `$hls` rules:
 4. We do not match tags that apply to the whole playlist, and `$hls` rules can not be used to remove them, since `$hls` rules are intended for removing segments. If you know what you are doing, you can use `$replace` rules to remove or rewrite just a single tag from the playlist.
 
 **An example of a transformation done by the rules:**
+
 <details>
 <summary>Original response</summary>
 

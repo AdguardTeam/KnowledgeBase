@@ -1,10 +1,10 @@
 ---
-title: How to contact support
+title: Как написать в поддержку
 sidebar_position: 1
 ---
 
-If you haven't found a solution to your problem in our knowledge base, AdGuard Support team will be happy to help.
+Если вы не нашли решение своей проблемы в нашей базе знаний, служба поддержки AdGuard будет рада помочь.
 
-You can send us a message from *Support* section in program preferences. In this case, you can also attach a program diagnostic report to the message (it might be useful for understanding the issue).
+Вы можете отправить нам сообщение из раздела *Поддержка* в настройках программы. В этом случае вы также можете прикрепить к сообщению отчёт о диагностике программы (он может быть полезен для понимания проблемы).
 
-Also, you can just send us an [email](mailto:support@adguard.com) and we will answer you as soon as possible. Support team usually responds within 24 hours.
+Кроме того, вы можете просто отправить нам письмо по адресу [support@adguard.com](mailto:support@adguard.com). Служба поддержки обычно отвечает в течение 24 часов.

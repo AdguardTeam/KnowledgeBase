@@ -1,89 +1,89 @@
 ---
-title: 'Install/Uninstall'
+title: '安装/卸载'
 sidebar_position: 2
 ---
 
-## System  requirements
+## 系统需求
 
-**Operating system version:** macOS 10.13 (64 bit) or higher
+**操作系统版本**： macOS 10.12（64 位）或更高版本
 
-**RAM:** at least 2 GB
+**RAM**： 至少 2 GB
 
-**Browsers:** Safari, Chrome, Firefox, Opera, Yandex.Browser, and any other macOS compatible browser
+**浏览器**： Safari、Google Chrome、Opera、Yandex.Browser 和其他在 macOS 上可用的浏览器
 
-**Free disk space:** 120 MB
+**可用磁盘空间**： 120 MB
 
-## Installation
+## 安装过程
 
-To install AdGuard for macOS on your computer, launch your browser, type _adguard.com_ in the address bar, and press **Download** on the page that opens.
+为了将 AdGuard macOS 版安装到您的电脑上，请您打开浏览器，在地址栏键入 _adguard.com_ 后，在打开的网页上点击**下载**即可。
 
-![Download the app](https://cdn.adguard.com/content/kb/ad_blocker/mac/1.jpg)
+![下载应用程序](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/zh/installation-1-cn.png)
 
-Wait for _AdguardInstaller.dmg_ to download and double-click its icon in the list of downloaded files on the Dock panel.
+请等待 _AdguardInstaller.dmg_ 下载完成后，在 Dock 栏上已安装的文件列表里双击它的图标。
 
-![Double click to open the file](https://cdn.adguard.com/content/kb/ad_blocker/mac/installation_open_the_file.jpg)
+![双击打开文件](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/zh/installation-2-cn.png)
 
-The AdGuard icon will appear on your desktop. Click it to open the installation app and double-click the AdGuard icon in the opened window.
+AdGuard 图标将出现在您的桌面上。 单击它打开安装应用程序，然后在打开的窗口中双击 AdGuard 图标。
 
-![Double click on the AdGuard icon](https://cdn.adguard.com/content/kb/ad_blocker/mac/3.jpg)
+![双击 AdGuard 图标](https://cdn.adguard.com/content/kb/ad_blocker/mac/3.jpg)
 
-Upon the first AdGuard launch, your operating system will warn you that this application has been downloaded from the Internet. Click **Open**.
+当您第一次启用 AdGuard 时，您的操作系统将会提示您：该应用程序是从互联网下载的 App。 点击**打开**。
 
-![Click Open](https://cdn.adguard.com/content/kb/ad_blocker/mac/4.jpg)
+![点击打开](https://cdn.adguard.com/content/kb/ad_blocker/mac/4.jpg)
 
-In the next step, you'll need to click **Install**.
+在下一步，请点击**安装**。
 
-![Click Install](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/en/5.png)
+![点击安装](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/en/5.png)
 
-Wait for the installer to download the required files.
+请等待安装程序完成安装所需要的文件。
 
-![Wait until the necessary files are downloaded](https://cdn.adguard.com/content/kb/ad_blocker/mac/6.jpg)
+![等到下载必要的文件](https://cdn.adguard.com/content/kb/ad_blocker/mac/6.jpg)
 
-To use the application, you will need the administrator password for your macOS account. Enter the password when propped in the dialogue box and press **OK**.
+以使用应用程序，需要输入 macOS 账号的用户名和密码。 在弹出的对话框上输入用户名和密码后，点击**好**。
 
-![Enter the password](https://cdn.adguard.com/content/kb/ad_blocker/mac/7.jpg)
+![输入密码](https://cdn.adguard.com/content/kb/ad_blocker/mac/7.jpg)
 
-Now, you'll see a quick installation wizard where you'll be offered to configure protection to your needs. You can either start fine-tuning right away ("Let's do it!") or skip for now ("Leave as it is").
+现在，您将看到一个快速安装向导，您可以在其中根据需要配置保护。 您可以马上开始设置（来试试吧！） 或暂时无设置需求（先保持这样）。
 
-![Configure protection](https://cdn.adguard.com/content/kb/ad_blocker/mac/installation-wizard.jpg)
+![配置保护](https://cdn.adguard.com/content/kb/ad_blocker/mac/installation-wizard.jpg)
 
-Here we are, AdGuard is installed on your Mac!
+完成啦！AdGuard 已成功安装到您的 Mac！
 
-## Uninstall
+## 卸载
 
-### Regular
-First of all, open the Finder app by clicking the respective icon:
+### 一般卸载方式
+首先，请您点击相应的图标以打开 'Finder'：
 
-![Open Finder](https://cdn.adguard.com/public/Adguard/En/Articles/howtodelete/finder.png)
+![打开 Finder](https://cdn.adguard.com/public/Adguard/En/Articles/howtodelete/finder.png)
 
-Go to the Applications section. Find AdGuard there, right-click it and choose **Move to Trash**.
+前往应用程序。 在列表中找到 AdGuard，右键它并选择**移到废纸篓**。
 
-![Move AdGuard to Trash](https://cdn.adguard.com/content/kb/ad_blocker/mac/11.jpg)
+![将 AdGuard 移至回收站](https://cdn.adguard.com/content/kb/ad_blocker/mac/11.jpg)
 
-### Advanced
+### 进阶卸载方式
 
-**Use this instruction only if you know what you are doing or if our support service specifically recommended you the 'advanced uninstall'. Also, do all the steps from the 'regular uninstall first'.** After that, do the following:
+**除非您知道如何操作或有我们技术支持专门为您推荐使用进阶方式卸载应用程序，我们不推荐您使用该方式。 此外，请您先使用'一般卸载方式'。**再请您执行以下操作：
 
-* Delete following AdGuard files:
-    * /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (folder)
-    * ~/Library/Preferences/com.adguard.mac.adguard.plist (file)
-    * ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac (folder)
-    * /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist (file)
-    * /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist (file)
-    * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log (file)
-    * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log (file)
+* 删除以下的 AdGuard 文件：
+    * /Library/Application Support/AdGuard Software/com.adguard.mac.adguard（文件夹）
+    * ~/Library/Preferences/com.adguard.mac.adguard.plist（文件）
+    * ~/Library/Group\Containers/TC3Q7MAJXF.com.adguard.mac（文件夹）
+    * /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist（文件）
+    * /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist（文件）
+    * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard-pac.daemon.log（文件）。
+    * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log（文件）
 
-**To do so**, open the Terminal app, then enter and execute the following commands:
+**为了执行上述步骤**，请您打开 Terminal。然后输入并执行以下的指令：
 
 `sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"` `rm -R "$HOME/Library/Application Support/com.adguard.mac.adguard"` `rm $HOME/Library/Preferences/com.adguard.mac.adguard.plist` `rm -R "$HOME/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac"` `find "$HOME/Library/Application Support" -name "com.adguard.browser_extension_host.nm.json" -delete` `sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist` `sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist` `sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log` `sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log`
 
-* Run ’Activity Monitor’ app.
-* Using search tool, find the process **cfprefsd**.
+* 开启 ’活动监视器’。
+* 通过搜索查找 **cfprefsd** 进程。
 
-![Run Activity Monitor](https://cdn.adguard.com/content/kb/ad_blocker/mac/22.jpg)
+![开启活动监视器](https://cdn.adguard.com/content/kb/ad_blocker/mac/22.jpg)
 
-* Stop the process which is being run under the user (not the one run under root). To do so, click the process and then click X on the upper left. Confirm it in the dialogue window.
+* 退出在用户态下运行的进程（不是在 root 权限运行的）。 为了退出，请点击进程，然后在左上角点击 X。 在对话窗确认要退出。
 
-![Confirm](https://cdn.adguard.com/content/kb/ad_blocker/mac/33.jpg)
+![确认](https://cdn.adguard.com/content/kb/ad_blocker/mac/33.jpg)
 
-AdGuard is removed from your computer now.
+AdGuard 卸载完成。

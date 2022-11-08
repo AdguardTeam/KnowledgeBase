@@ -1,74 +1,74 @@
 ---
-title: Safari Web extension
+title: Веб-расширение Safari
 sidebar_position: 3
 ---
 
-Web extensions add custom functionality to Safari. You can find [more information about Web extensions here](https://developer.apple.com/documentation/safariservices/safari_web_extensions).
+Веб-расширения добавляют дополнительные функции в Safari. Здесь вы можете найти [больше информации о веб-расширениях](https://developer.apple.com/documentation/safariservices/safari_web_extensions).
 
-![What the Web extension looks like in Safari](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/menu_en.png)
+![Как выглядит веб-расширение в Safari](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/menu_en.png)
 
-AdGuard's Safari Web extension is a tool that takes advantage of the new features of iOS 15. It serves to enhance the capabilities of AdGuard for iOS. With it, AdGuard can apply advanced filtering rules and ultimately block more ads.
+Веб-расширение AdGuard для Safari — это инструмент, который позволяет пользоваться преимуществами новых функций iOS 15. Он служит для расширения возможностей приложения AdGuard для iOS. С ним AdGuard может применять продвинутые правила фильтрации и, в конечном счёте, блокировать больше рекламы.
 
-## What it does
+## Что оно делает
 
-By default, Safari provides only basic tools to content blockers. These tools don't allow the level of performance that can be found in content blockers on other operating systems (Windows, Mac, Android). For example, AdGuard apps on other platforms can use such effective weapons against ads as [CSS rules](/general/ad-filtering/create-own-filters.md#cosmetic-css-rules), [CSS selectors](/general/ad-filtering/create-own-filters.md#extended-css-selectors), and [scriptlets](/general/ad-filtering/create-own-filters.md#scriptlets). Unfortunately, these instruments are absolutely irreplaceable when dealing with more complex cases such as pre-roll ads on YouTube, for example.
+По умолчанию, Safari предоставляет блокировщикам контента только базовые инструменты. Эти инструменты не позволяют добиться уровня блокировки, который доступен блокировщикам на других операционных системах (Windows, Mac, Android). Например, приложения AdGuard для других платформ могут использовать такие мощные средства борьбы против рекламы как [CSS-правила](/general/ad-filtering/create-own-filters.md#cosmetic-css-rules), [CSS-селекторы](/general/ad-filtering/create-own-filters.md#extended-css-selectors) и [скриптлеты](/general/ad-filtering/create-own-filters.md#scriptlets). К сожалению, эти инструменты совершенно незаменимы при работе со сложной рекламой, такой как, например, видеореклама в YouTube.
 
-AdGuard's Safari Web extension compliments AdGuard by giving it the ability to employ these types of filtering rules.
+Веб-расширение AdGuard для Safari дополняет AdGuard, давая ему возможность применять все эти типы правил фильтрации.
 
-Besides that, AdGuard's Safari Web extension can be used to quickly manage AdGuard for iOS right from the browser. Tap the *Extensions* button — it's the one with a jigsaw icon, depending on your device type it may be located to the left or to the right of the address bar. Find **AdGuard** in the list and tap it.
+Помимо этого, веб-расширение AdGuard для Safari может быть использовано для управления приложением AdGuard для iOS прямо из браузера. Нажмите на кнопку *Расширения* — это иконка с пазлом, которая может быть расположена левее или правее адресной строки, в зависимости от типа вашего устройства. Найдите в списке расширений **AdGuard** и нажмите на него.
 
-![Web extension menu](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/ext_adguard_en.png?1)
-> On iPads AdGuard's Safari Web extension is accessible directly by tapping the AdGuard icon in the browser's address bar.
+![Меню веб-расширения](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/ext_adguard_en.png?1)
+> На устройствах iPad веб-расширение AdGuard для Safari доступно напрямую, путём нажатия на иконку AdGuard в адресной строке браузера.
 
-You will see the following list of options:
+Вы увидите следующий список опций:
 
-* **Enabling/disabling protection on the website**. Turning the switch off will disable AdGuard completely for the current website and add a respective exclusion rule. Turning the switch back on will resume protection for the website and delete the rule. Any such change will require some time to take effect.
+* **Включение/выключение защиты на текущем сайте**. Сдвиньте переключатель в положение «выкл.», чтобы полностью отключить работу AdGuard на текущем сайте и добавить соответствующее правило-исключение. Повторное нажатие по переключателю приведёт к возврату защиты для сайта и удалению данного правила. После каждого подобного действия может потребоваться некоторое время, чтобы изменения вступили в силу.
 
-* **Blocking elements on the page manually**. Tap the *Block elements on this page* button to prompt a pop-up for element blocking. Select any element on the page you want to hide, adjust the selection zone, then preview changes and confirm the removal. A corresponding filtering rule will be added to AdGuard (that you can later disable or delete to revert the change).
+* **Ручная блокировка элемента на странице**. Нажмите кнопку *Заблокировать элементы на этой странице*, чтобы вызвать попап для блокировки элемента. Выберите любой элемент на странице, который хотите скрыть, настройте область выделения и после предпросмотра изменений подтвердите скрытие элемента. Соответствующее правило фильтрации будет добавлено в AdGuard (позже вы можете отключить или удалить это правило, чтобы вернуть отображение элемента).
 
-* **Report an issue**. Swipe up to bring out the *Report an issue* button. Use it to report a missed ad or any other problem that you encountered on the current page.
+* **Сообщить о проблеме**. Смахните меню вверх, чтобы показать кнопку *Сообщить о проблеме*. Используйте её, чтобы отправить отчёт о пропущенной рекламе или любой другой проблеме, встреченной на текущей странице.
 
-## How to enable AdGuard's Safari Web extension
+## Как включить веб-расширение AdGuard в Safari
 
-### In the iOS settings
+### В настройках iOS
 
-> AdGuard's Safari Web extension greatly improves the ad blocking quality, so we recommend enabling it on all sites.
+> Веб-расширение AdGuard для Safari значительно улучшает качество блокировки рекламы, поэтому мы рекомендуем включить его на всех сайтах.
 
-Web extension is not a standalone tool and requires AdGuard for iOS. If you don't have AdGuard for iOS installed on your device, please [install it first](/adguard-for-ios/installation.md) and complete the onboarding process to prepare it for work.
+Веб-расширение не является самостоятельным приложением и требует наличия AdGuard для iOS. Если на вашем устройстве не установлен AdGuard для iOS, пожалуйста, сначала [установите его](/adguard-for-ios/installation.md) и выполните первый запуск приложения, чтобы подготовить его к работе.
 
-Once done, open *Settings > Safari > Extensions*.
+После того, как вы выполнили эти действия, откройте раздел *Настройки > Safari > Расширения*.
 
-![Select "Safari"](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/settings1_en.png)
+![Выберите "Safari"](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/settings1_en.png)
 
-![Select "Extensions"](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/settings2_en.png)
+![Выберите "Расширения"](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/settings2_en.png)
 
-Find **ALLOW THESE EXTENSIONS** section and then find **AdGuard** among the available extensions.
+Найдите раздел **Разрешить эти расширения** и выберите **AdGuard** среди доступных расширений. Нажмите на него и включите переключатель.
 
-![Select "AdGuard" in ALLOW THESE EXTENSIONS section](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/settings3_en.png)
+![Выберите "AdGuard" в разделе РАЗРЕШИТЬ ЭТИ РАСШИРЕНИЯ](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/settings3_en.png)
 
-Tap it, then turn on the switch. On the same screen make sure that the AdGuard extension has required permissions: **All Websites** should have the *Allow* status.
+Коснитесь его, затем включите переключатель. На том же экране убедитесь, что расширение AdGuard имеет необходимые разрешения: опция **Все сайты** должна иметь статус *Разрешить*.
 
 ![](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/settings4_en.png)
 
-> AdGuard's Safari Web extension requires access to the web pages' content to operate, but doesn't use it for any purpose other than blocking ads.
+> Веб-расширение AdGuard для Safari требует доступ к содержимому веб-страниц для своей работы, но не использует его ни для каких других целей, кроме как для блокировки рекламы.
 
-### In Safari
+### В Safari
 
-Alternitavely, you can also turn AdGuard extension on from the Safari browser. Tap the *Extensions* button (if you don't see it next to the address bar, tap the `aA` icon).
+Вы также можете включить расширение AdGuard прямо в браузере Safari. Для этого нажмите кнопку *Расширения* (если рядом с адресной строкой нет кнопки Расширения, нажмите кнопку `aA`).
 
-![In Safari tap aA icon](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/safari1_en.png)
+![В Safari нажмите значок A](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/safari1_en.png)
 
-Then find the *Manage Extensions* option in the list and tap it. In the opened window turn on the switch next to **AdGuard**.
+Затем найдите опцию *Управлять расширениями* и выберите её. В открывшемся окне активируйте переключатель **AdGuard**.
 
 ![](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/safari2_en.png)
 
 ![](https://cdn.adguard.com/public/Adguard/kb/iOS/webext/safari3_en.png)
 
-If you use this method, you may have to go to Safari settings to grant AdGuard extension the necessary permissions anyway.
+Если вы используете этот метод, вам всё равно может потребоваться открыть настройки Safari, чтобы выдать расширению AdGuard необходимые разрешения.
 
-You should now be able to see AdGuard among the available extensions. Tap it, and then tap on the yellow **i** icon. Enable **Advanced protection** by tapping the *Turn on* button and confirming the action.
-> If you use AdGuard for iOS without Premium subscription, you won't be able to enable **Advanced protection**.
+Теперь AdGuard должен появиться среди доступных расширений в Safari. Нажмите на него, затем нажмите на жёлтую иконку с символом **i**. Включите **Расширенную защиту**, нажав кнопку *Включить* и подтвердив действие.
+> Если вы используете AdGuard для iOS без Premium-подписки, вы не сможете включить **Расширенную защиту**.
 
-Alternatively, you can enable **Advanced protection** directly from the app, in the **Protection** tab (second from the left in the bottom icon row).
+В качестве альтернативы вы можете включить **Расширенную защиту** прямо в приложении, во вкладке **Защита** (вторая иконка слева в нижнем ряду).
 
-AdGuard's Safari Web extension only works on iOS versions 15 and later.
+Веб-расширение AdGuard для Safari работает только на iOS версий 15 и выше.

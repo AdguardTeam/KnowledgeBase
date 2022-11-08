@@ -11,7 +11,7 @@ To be absolutely clear, this is **completely optional**. You can turn off the di
 
 Search ads are ads that you see among search query results when using online search engines, such as Google, Bing, DuckDuckGo, etc.
 
-![search-ads](https://user-images.githubusercontent.com/28726429/27697369-b3d2556e-5cfc-11e7-9203-3c95a7de7c28.png)
+![поисковая реклама](https://user-images.githubusercontent.com/28726429/27697369-b3d2556e-5cfc-11e7-9203-3c95a7de7c28.png)
 
 These ads are always contextual: they are targeted to match the keywords you used in the query. This helps you find exactly what you are searching for. Moreover, search ads (because they go through manual moderation) are often more relevant and helpful than the rest of the search results.
 
@@ -21,7 +21,7 @@ Another argument in defense of search ads is that they are much less intrusive t
 
 In principle, when an ad on a website promotes this particular website or closely related websites, social media, and so on, such an ad is considered a self-promoting one.
 
-![self-promo](https://user-images.githubusercontent.com/8577533/27700604-c9b6f330-5d06-11e7-8ac9-1a9120f720c8.png)
+![самореклама](https://user-images.githubusercontent.com/8577533/27700604-c9b6f330-5d06-11e7-8ac9-1a9120f720c8.png)
 
 Our general stance here is very similar to the EasyList policy regarding self-promotion ads. According to our [filter policy](filter-policy.md), we should not block these ads; however, we should not make an exception if such an ad gets blocked by some rule 'alongside' a regular ad.
 
@@ -37,12 +37,12 @@ When you enable 'Search ads and self-promotion', search ads from the following s
 * Yahoo
 * Bing
 * Ask
-* Yandex
+* Яндекс
 * DuckDuckGo
 * StartPage
 
 As well as all self-promotional ads that satisfy our filter policy.
 
-### Summary
+### Резюме
 
 Allowing 'Search ads and self-promotion' is a 100% optional feature that may be helpful in some cases. If you don't like it, you can turn it off at any time. It does not, and never will, include any ad types or individual ads that do not fall into one of the two categories described above.

@@ -1,18 +1,18 @@
 ---
-title: How to register
+title: Как зарегистрироваться
 sidebar_position: 1
 ---
 
-## What an AdGuard account is
+## Что такое личный кабинет AdGuard
 
-[AdGuard account](https://my.adguard.com/) is a user account that stores information about your AdGuard licenses and subscriptions, active devices, your purchase history, preferred language, and other preferences. Many AdGuard products offer an option to activate them by entering the credentials for your AdGuard account, provided it contains a valid license.
+[Личный кабинет AdGuard](https://my.adguard.com/) — это пользовательский аккаунт, в котором хранится информация о ваших лицензиях и подписках AdGuard, активных устройствах, вашей истории покупок, предпочтительном языке и других настройках. Многие продукты AdGuard можно активировать с помощью данных аккаунта AdGuard, при условии, что он содержит действующую лицензию.
 
-## How to create an account
+## Как создать личный кабинет
 
-To create an account, go to [AdGuard's official website](https://adguard.com/welcome.html) and press the *My Account* button on the top right corner of the screen. Enter your email address and create a password — your account will be registered.
+Чтобы создать личный кабинет, перейдите на [официальный сайт AdGuard](https://adguard.com/welcome.html) и нажмите кнопку *Личный кабинет* в правом верхнем углу экрана. Введите свой адрес электронной почты и придумайте пароль — ваша учётная запись будет зарегистрирована.
 
-> If you enter your email address while purchasing a license or receive a license accociated with your email address as a gift, an account will be created automatically. To set a password, you can follow a link from a transactional or gift letter. You can also register with the above method.
+> Если вы введёте свой адрес электронной почты при покупке лицензии или получите в подарок лицензию, привязанную к вашему адресу электронной почты, учётная запись будет создана автоматически. Чтобы задать пароль, можно перейти по ссылке из транзакционного или подарочного письма. Вы также можете зарегистрироваться указанным выше способом.
 
-An account can also be created directly in an AdGuard app. Press the *Log in* or *Activate* button (it can be found in the *License* section or on a separate screen), enter your email and create a password.
+Личный кабинет также можно создать прямо в приложении AdGuard. Нажмите кнопку *Войти* или *Активировать* (её можно найти в разделе *Лицензия* или на отдельном экране), введите адрес электронной почты и придумайте пароль.
 
-After the account is created, activate it by following the link in the activation email.
+После создания аккаунта активируйте его, перейдя по ссылке в письме активации.

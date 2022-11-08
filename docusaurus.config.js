@@ -21,7 +21,7 @@ module.exports = {
   projectName: 'AdGuardKB',
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'ru', 'de', 'fr', 'es', 'it', 'ja', 'ko', 'zh-CN', 'zh-TW'],
   },
   themeConfig: {
     docs: {

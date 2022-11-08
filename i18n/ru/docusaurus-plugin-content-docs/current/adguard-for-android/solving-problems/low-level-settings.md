@@ -5,11 +5,11 @@ sidebar_position: 6
 
 ## How to reach the Low-level settings
 
-> Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only open this section if you are sure of what you are doing or our support-team has asked you about it.
+> Изменение *Низкоуровневых настроек* может вызвать проблемы с производительностью AdGuard, нарушить подключение к интернету или поставить под угрозу вашу безопасность и конфиденциальность. You should only open this section if you are sure of what you are doing or our support-team has asked you about it.
 
 To go to *Low-level settings*, open the main menu, tap *Settings*, choose *Advanced* and find *Low-Level Settings* at the bottom of the screen.
 
-## Low-level settings
+## Низкоуровневые настройки
 
 `pref.boot.startup.delay`
 

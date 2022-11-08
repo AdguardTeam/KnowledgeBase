@@ -1,48 +1,48 @@
 ---
-title: Installation
+title: 安装
 sidebar_position: 2
 ---
 
-## System requirements
+## 系统要求
 
 ### iPhone
 
-Requires iOS 11.2 or later.
+要求 iOS 11.2 或更高版本。
 
 ### iPad
 
-Requires iPadOS 11.2 or later.
+要求 iPadOS 11.2 或更高版本。
 
 ### iPod touch
 
-Requires iOS 11.2 or later.
+要求 iOS 11.2 或更高版本。
 
-## AdGuard for iOS installation
+## AdGuard iOS版的安装过程
 
-AdGuard for iOS is an app presented in the App Store. To install it on your device, open the App Store and tap the _Search_ icon on the bottom of the screen.
+AdGuard iOS版是 App Store 中的一款应用程序。 如您想要在您的设备上安装 AdGuard iOS版，请您打开 App Store 并在下面点击**搜索**图标。
 
-![On the App store main screen, tap Search](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/1.png)
+![在 App Store 主屏幕上，点击搜索](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/1.png)
 
-Type _adguard_ in the search bar and tap the string _adGuard_ which will be among search results.
+先在搜索栏输入 _adguard_，然后在搜索结果找到并按 _AdGuard_ 选项。
 
-![Type "AdGuard" in the search bar](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/2.png)
+![在搜索栏中输入 "AdGuard"](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/2.png)
 
-On the opened page of the App Store tap _GET_ under the string _AdGuard - adblock&privacy_ and then tap _INSTALL_. You may be requested to enter your Apple ID login and password. Type it in and wait for the installation to complete.
+在 App Store 打开的页面上 _AdGuard - adblock&privacy_ 选项下点击**获取**按钮，然后点击**安装**。 为了完成安装过程，您可能会看到要求输入您的苹果 ID 和密码的弹窗。 输入您的 ID 和密码后，请等待安装成功完成。
 
-![Tap GET below the AdGuard app](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/3.png)
+![点击 AdGuard 应用下方的获取](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/3.png)
 
-## AdGuard Pro for iOS installation
+## AdGuard Pro iOS版的安装过程
 
-AdGuard Pro is a paid version of AdGuard for iOS, offering an expanded set of functions (same as "AdGuard" app with premium enabled). To install it on your device run the App Store application and tap the _Search_ icon on the bottom of the screen.
+AdGuard Pro 是 AdGuard iOS版的付费版本。AdGuard Pro 为用户提供更多功能（与启用高级版的 AdGuard 应用程序相同）。 如您想要在您的设备上安装应用程序，请您打开 App Store 并在下面点击**搜索**图标。
 
-![On the App store main screen, tap Search](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/1.png)
+![在 App Store 主屏幕上，点击搜索](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/1.png)
 
-Type _adguard_ in the search form, and then tap the string _adGuard pro - adblock_ which will be shown as a search results.
+先在搜索栏输入 _adguard_，然后在搜索结果找到并按 _AdGuard pro - adblock_ 选项。
 
-![Type "AdGuard" in the search bar](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/2.png)
+![在搜索栏中输入 "AdGuard"](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/2.png)
 
-On the opened page of the App Store tap the button with the cost of the license under the string _AdGuard Pro - adblock_, and then tap _BUY_. You may be requested to enter your Apple ID login and password. Type it in and wait for the installation to complete.
+在打开的 App Store 页面上 _AdGuard Pro - adblock_ 选项下点击显示许可价格的按钮。点击价格后，请您点击**购买**。 为了完成安装过程，您可能会看到要求输入您的苹果 ID 和密码的弹窗。 输入您的 ID 和密码后，请等待安装成功完成。
 
-![Tap GET below AdGuard app](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/3.png)
+![点击 AdGuard 应用下方的获取](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/3.png)
 
-*The license can be activated via entering user credentials from an AdGuard account. To that end, it is required that a user has at least one spare license key.*
+*您要输入 AdGuard 个人账号的用户身份信息以激活许可。 为执行此操作，用户至少要有一个许可。*

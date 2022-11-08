@@ -13,16 +13,16 @@ You have three ways to solve the issue:
 
 > Please note, that this approach is available starting from **AdGuard v3.5 nightly 6**. If you're using an older version, you can get the latest update [here](https://adguard.com/adguard-android/overview.html).
 
-1. Activate the **developer mode** and enable **USB debugging**:
-- Open the **Settings** application on your phone;
-- Go to **System** section (last item in the settings menu). In this section find sub-item **About phone**;
-- Click on the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
+1. Активируйте режим разработчика **** и включите отладку по USB ****:
+- Откройте приложение **Настройки** на своём телефоне;
+- Перейдите в раздел **О системе** (последний пункт в меню настроек). В этом разделе найдите подпункт **О телефоне**;
+- Нажмите на строку **Номер сборки** 7 раз. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
 - Open **System Settings** > **Developer Options** > Scroll down and enable **USB debugging** > Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
 
 > If you have any difficulties or additional questions, full instructions can be found [here](https://developer.android.com/studio/debug/dev-options).
 
-2. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb;
-> On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+2. [Установите и настройте](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb;
+> На платформе Windows владельцам **Samsung** может потребоваться установить [эту утилиту](https://developer.samsung.com/mobile/android-usb-driver.html).
 3. Connect your device using a **USB cable** to the computer or laptop on which you installed **ADB**;
 4. Open **the command line** on your PC:
 - **Cmd.exe** if you are using **Windows**;

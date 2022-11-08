@@ -1,74 +1,74 @@
 ---
-title: Guidelines and recommendations
+title: 指导与建议
 sidebar_position: 3
 ---
 
-There are several things we'd like you to know before you start translating. It will not only save your time and effort, but also ensure that we are on the same page in terms of the meaning of phrases being translated.
+在您开始翻译前，我们想要让您了解一些内容。 这样您不仅可以节省您的时间与精力，而且也能保证您翻译的句子与我们的本意更相近。
 
-Once you open [our page on Crowdin](https://crowdin.com/profile/adguard/), choose any project you need and select your language.
+一旦您在 [Crowdin](https://crowdin.com/profile/adguard/) 上打开我们的页面，选择您需要的任何项目并选择您的语言。
 
-![Language](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/language.png)
+![语言](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/language.png)
 
-You'll also be able to switch between languages even after opening certain product folders.
+即使在打开某一个软件文件夹后，您也能切换语言。
 
-![Language1](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/language1.png)
+![语言1](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/language1.png)
 
-Choose any of available product folders and select a file — now you can start translating.
+选择任何可用的软件文件夹并选择一个文件，现在您可以开始翻译了。
 
-![Files](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/files.png)
+![文件](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/files.png)
 
-**The following guidelines will help you through the process.**
+**以下指南将帮助您多了解翻译的过程。**
 
-1. You can filter translations by clicking this button and selecting any offered option.
+1. 您可以单击此按钮并选择任何提供的选项来筛选翻译项目。
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/filter.png)
 
-2. Easily move between the files of the project.
+2. 在项目的文件之间轻松移动。
 
 ![crowdin](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/filter_file.png)
 
-3. Pay attention to the glossary terms highlighted with a dotted line in a source phrase. Usually, they are special words (like brand names) that should not be translated.
+3. 请注意在源短语用虚线突出的词语。 这些一般是专有名词（比如，商标名称），因此无需翻译。
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/terms.png)
 
-You can suggest your translation for translatable terms in the [AdGuard Glossary](https://crowdin.com/project/adguard-glossary) project.
+在 [AdGuard Glossary](https://crowdin.com/project/adguard-glossary) 项目里，您可以为能翻译的语言推荐您自己的翻译。
 
-4. In Crowdin, strings can have notes that make it easier to understand and translate phrases. Look for them in the "Context" field of the source string.
+4. Crowdin 上的短语有时包含实用的提示，它们会帮助您更好地了解并翻译短语。 在「Context」字段您可以找到短语的解释。
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/context-note.png)
 
-5. Pay attention to screenshots that often go alongside source phrases in the "Context" field as well. They help to understand the context and convey the exact meaning.
+5. 请注意，一般在源短语「Context」字段下显示的图片。 它们会帮助您了解短语的使用背景、用法以表达短语的准确意义。
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/screenshot.png)
 
-Please note that you can request context by clicking the "REQUEST" button.
+请注意您也可以按「REQUEST」按钮以要求我们为您提供具体的内容。
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/request.png)
 
-6. In addition to suggesting new translations, you can also leave comments on strings. Use comments to let us know about mistakes in the existing translations, make notes, or ask questions. If you see a comment left on your translation — try to respond to it.
+6. In addition to suggesting new translations, you can also leave comments on strings. 使用注释以此提示我们或其他翻译者存在的错误、留下一些建议或问问题。 有时您会看到一些其他人留下的注释，别忘了去看一眼。
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/comments.png)
 
-There's also a **Discussions** tab on the main project page that conveniently allows you to see all the comments for the specific language in this project.
+在首页还有 **Discussions**（讨论）标签。「Discussions」标签允许您查看某一个项目中所有的特定语言的注释。
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/discussions.png)
 
-7. Crowdin provides a very useful and convenient tool called _Translation Memory_. With its help, you can find the previously made translations of the same words and phrases and reuse them in your translations.
+7. Crowdin 平台具有一款好用便捷的工具叫 _Translation Memory_（翻译库）。 使用它，您可以查找同一个单词与短语以前做过的翻译。
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/tm.png)
 
-8. Once you join a project by clicking the "Join" button, you will see the **Tasks** tab on the project page, where the tasks for specific project files get created. _Please pay attention to them: they usually have a higher priority._
+8. 在首页点击「Join」（加入）按钮加入项目后，您可以看到**「Tasks」**（任务）标签。这是专门为特定项目创建的任务。 _Please pay attention to them: they usually have a higher priority._
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/tasks.png)
 
-9. Sometimes you can find phrases with plural forms. Please be especially attentive when translating such phrases. You can read how to translate plural forms [here](https://kb.adguard.com/en/miscellaneous/plurals).
+9. 有时候您会见到具有复数形式的短语。 由于中文的复数形式与英文不同，在这种情况下您只需要翻译一次。 别忘了输入正确的量词。
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/plurals.png)
 
-Using proper plural forms is extremely important:  please ask us in the comments if anything is unclear.
+如果您不清楚正确的量词，请在注释留下您的问题。
 
-10. **Please do not write directly to the project managers and proofreaders listed in the Project info.**
+10. **请不要直接与项目信息（Project info）里列入的项目管理员（project manager）或审核员（proofreader）联系。**
 
-If you have questions about translations, you can always ask our proofreaders or admins through comments.
+如您有任何关于翻译的问题，请通过注释问审核员或管理员。
 
-Also, you can send an email to [translate@adguard.com](mailto:translate@adguard.com) or ask a question in the [Telegram chat](https://t.me/joinchat/UVYTLcHbr8JmOGIy). The Admins will answer you as soon as possible.
+您还可以向我们发邮件：[translate@adguard.com](mailto:translate@adguard.com) 或在 [Telegram 群](https://t.me/joinchat/UVYTLcHbr8JmOGIy) 问问题。 群主会尽快回复您。

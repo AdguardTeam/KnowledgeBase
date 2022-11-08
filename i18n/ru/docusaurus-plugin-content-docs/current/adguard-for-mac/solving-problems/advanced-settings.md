@@ -1,112 +1,112 @@
 ---
-title: Advanced Settings guide
+title: Гид по расширенным настройкам
 sidebar_position: 9
 ---
 
-## How to reach the Advanced settings
+## Как перейти к расширенным настройкам
 
-> Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only open this section if you are sure of what you are doing or our support team has asked you to do it.  
-> To go to *Advanced settings*, follow this route: the AdGuard icon at the tray menu → the gear icon → Advanced → Advanced settings.
+> Изменение *Низкоуровневых настроек* может вызвать проблемы с производительностью AdGuard, нарушить подключение к интернету или поставить под угрозу вашу безопасность и конфиденциальность. Открывайте этот раздел, только если вы уверены в своих действиях или наша команда поддержки попросила вас об этом.  
+> Чтобы перейти к *Расширенным настройкам*, кликните иконку AdGuard в трее → иконку шестерёнки → Дополнительно → Расширенные настройки.
 
-## Advanced settings
+## Расширенные настройки
 
 `network.extension.exclude.domains`
 
-The listed domains will be excluded from filtering in *Network Extension* mode. Use a comma or line break to separate values.
+Перечисленные домены будут исключены из фильтрации в режиме *Сетевого расширения*. Разделяйте значения запятыми или переносом строки.
 
 `network.extension.exclude.ports`
 
-The listed ports will be excluded from filtering in *Network Extension* mode. Use a comma or line break to separate values.
+Перечисленные порты будут исключены из фильтрации в режиме *Сетевого расширения*. Разделяйте значения запятыми или переносом строки.
 
 `network.extension.route.exclude`
 
-The listed routes will be excluded from filtering in *Network Extension* mode. Set routes using an IP address or destination CIDR. Separate values with commas or line breaks.
+Перечисленные маршруты будут исключены из фильтрации в режиме *Сетевого расширения*. Используйте IP-адрес или значение CIDR, чтобы задать маршрут. Разделяйте значения запятыми или переносом строки.
 
 `network.extension.http.downgrade.bundleids`
 
-Here you can specify a list of applications for which the HTTP/2 protocol will be downgraded to HTTP/1.1 in the *Network Extension* filtering mode. The bundle ID should be separated by a comma or a line break.
+Здесь можно задать список приложений, для которых протокол HTTP/2 будет понижен до HTTP/1.1 в режиме фильтрации *Сетевое расширение*. Идентификаторы приложений (bundle ID) разделяются запятой или переносом строки.
 
 `network.extension.monterey.force.split.tunnel`
 
-Here you can prohibit AdGuard from using the "default route" which is enabled by default in *Network Extension* mode on macOS Monterey. AdGuard uses "default route" to disable iCloud Private Relay and Protect Mail Activity, because it cannot work with them simultaneously.
+Здесь можно запретить AdGuard использовать маршрут по умолчанию, который включён в режиме *Сетевого расширения* на macOS Monterey. AdGuard использует маршрут по умолчанию, чтобы отключить Частный узел iCloud и Защиту конфиденциальности в Почте, так как не может работать с ними одновременно.
 
-You will find more information about the problem [in this article](https://kb.adguard.com/en/macos/solving-problems/icloud-private-relay).
+Более подробную информацию о проблеме вы найдёте [в этой статье](https://kb.adguard.com/en/macos/solving-problems/icloud-private-relay).
 
 `network.extension.dns.redirect.exclude.bundleids`
 
-Here you can specify a list of applications that make DNS queries directly not via system DNS resolver (for example, some VPN clients or DNS filtering applications). DNS filtering will be disabled for them in the *Network Extension mode*. The bundle IDs should be separated by a comma or line break.
+Здесь можно указать список приложений, осуществляющих DNS-запросы напрямую, а не через DNS-резолвер (например, некоторые VPN-клиенты или приложения с DNS-фильтрацией). Для них *в режиме Сетевого расширения* DNS-фильтрация будет отключена. Идентификаторы приложений (bundle ID) следует разделять запятой или переносом строки.
 
 `network.https.ocsp.check`
 
-By setting `true`, you enable HTTPS certificate revocation checking.
+Установив значение `true`, вы включите проверку отзыва HTTPS-сертификатов.
 
 `network.filtering.localnetwork`
 
-By setting `true`, you enable local network filtering.
+Установив значение `true`, вы включите фильтрацию локальной сети.
 
 `network.filtering.localhost`
 
-By setting `true`, you enable LoopBack filtering.
+Установив значение `true`, вы включите фильтрацию loopback-соединений.
 
 `upstream.proxy`
 
-In this string, you can specify a proxy server for upstream connections. For example:
+В этой строке можно указать прокси-сервер для исходящих соединений. Например:
 
-* SOCKS5 proxy with authentication — `socks5://username:password@proxy.example.org:1080`
-* Local HTTP proxy without authentication — `http://localhost:3128`
+* SOCKS5 proxy, требующий проверки подлинности — `socks5://username:password@proxy.example.org:1080`
+* Локальный HTTP-прокси без аутентификации — `http://localhost:3128`
 
 `upstream.proxy.socks5udp`
 
-By setting `true`, you enable redirection of UDP traffic through the local server in SOCKS5 mode. Note: If your SOCKS5 server does not support the UDP protocol, enabling this setting will cause your Internet connection to fail.
+Установив значение `true`, вы включите перенаправление UDP-трафика через локальный сервер в режиме SOCKS5. Обратите внимание: если ваш SOCKS5-сервер не поддерживает протокол UDP, включение данной настройки приведёт к обрыву интернет-соединения.
 
 `dns.proxy.bootstrap.ips`
 
-Here you can enter the IP addresses of the DNS servers that will be used to determine the address of the encrypted DNS server.
+Сюда можно внести IP-адреса DNS-серверов, которые будут использоваться для определения адреса зашифрованного DNS-сервера.
 
 `dns.proxy.fallback.ips`
 
-Here you can specify a list of IP addresses of DNS servers that will be used as backups in case the encrypted DNS server fails to respond.
+Здесь можно указать список IP-адресов DNS-серверов, которые будут использоваться в качестве резервных в случае, есть зашифрованный DNS-сервер не будет отвечать.
 
 `dns.proxy.detect.search.domains`
 
-This option enables automatic detection of the local network domain, which will be automatically redirected to the fallback DNS server instead of the main DNS server.
+Эта опция включает автоопределение домена локальной сети, который будет автоматически перенаправляться на резервный DNS-сервер вместо основного.
 
 `dns.proxy.fallback.domains`
 
-Here you can list domains for which the fallback DNS server will be used instead of the main DNS server.
+Здесь можно перечислить домены, для которых будет использоваться резервный DNS-сервер вместо основного.
 
 `dns.proxy.adblockrules.blocking.mode`
 
-Here you can specify the type of DNS server response to blocked requests, corresponding to ad-blocker-style rules.
+Здесь вы можете указать тип ответа DNS-сервера на заблокированные запросы, соответствующие правилам в стиле блокировщика рекламы.
 
-0 — respond with REFUSED 1 — respond with NXDOMAIN 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
+0 — отвечать кодом REFUSED 1 — отвечать кодом NXDOMAIN 2 — отвечать 0.0.0.0 или адресами, указанными в `dns.proxy.blocking.response.IPv4.address` и/или `dns.proxy.blocking.response.IPv6.address`
 
 `dns.proxy.hostrules.blocking.mode`
 
-Here you can specify the type of DNS server response to blocked requests, corresponding to hosts rules:
+Здесь вы можете указать тип ответа DNS-сервера на заблокированные запросы, соответствующие правилам hosts:
 
-0 - respond with REFUSED 1 - respond with NXDOMAIN 2 - respond with 0.0.0.0 or the addresses specified in dns.proxy.blocking.response.IPv4.address and/or dns.proxy.blocking.response.IPv6.address
+0 — ответить кодом ответа REFUSED 1 — ответить кодом ответа NXDOMAIN 2 — ответить 0.0.0.0 или адресами, указанными в dns.proxy.blocking.response.IPv4.address и/или dns.proxy.blocking.response.IPv6.address
 
 `dns.proxy.blocking.response.IPv4.address`
 
-Here you can specify the IPv4 address that will be returned in response to blocked "A" requests when `dns.proxy.adblockrules.blocking.mode` or `dns.proxy.hostrules.blocking.mode` is set to the response type "ADDRESS".
+Здесь вы можете указать IPv4-адрес, который будет возвращаться в ответ на заблокированные "A" запросы, когда в `dns.proxy.adblockrules.blocking.mode` или в `dns.proxy.hostrules.blocking.mode` выбран тип ответа "ADDRESS".
 
 `dns.proxy.blocking.response.IPv6.address`
 
-Here you can specify the IPv6 address that will be returned in response to blocked "AAAA" requests when `dns.proxy.adblockrules.blocking.mode` or `dns.proxy.hostrules.blocking.mode` is set to the response type "ADDRESS".
+Здесь вы можете указать IPv6-адрес, который будет возвращаться в ответ на заблокированные "AAAA" запросы, когда в `dns.proxy.adblockrules.blocking.mode` или в `dns.proxy.hostrules.blocking.mode` выбран тип ответа "ADDRESS".
 
 `dns.proxy.block.AAAA.requests`
 
-Here you can enable IPv6 DNS query blocking.
+Здесь вы можете активировать блокировку DNS-запросов IPv6.
 
 `dns.proxy.blocked.response.TTL.in.seconds`
 
-Here you can specify the TTL (time to live) value that will be returned in response to a blocked request.
+Здесь вы можете указать значение TTL (время жизни пакета данных в протоколе IP), которое будет возвращено в ответ на заблокированный запрос.
 
 `subscription.link.interception.userscript`
 
-Activate this feature if you want AdGuard to automatically intercept the URLs of userscripts and open the installation window.
+Активируйте эту функцию, если хотите, чтобы AdGuard автоматически перехватывал URL-адреса пользовательских скриптов и открывал диалоговое окно установки.
 
 `subscription.link.interception.filter`
 
-Activate this feature if you want AdGuard to automatically intercept subscription URLs (for example, abp:subscribe, etc.) and open the custom filter setup window.
+Активируйте эту функцию, если хотите, чтобы AdGuard автоматически перехватывал URL-адреса подписки (например, abp:subscribe) и открывал диалоговое окно установки пользовательского фильтра.

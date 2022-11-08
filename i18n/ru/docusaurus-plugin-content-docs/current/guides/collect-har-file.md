@@ -1,170 +1,170 @@
 ---
-title: How to collect a HAR file
+title: Как собрать файл HAR
 sidebar_position: 1
 ---
 
-## Creating a HAR File {#har}
+## Создание HAR-файла {#har}
 
-HAR files help our technical support teams troubleshoot complex issues. To create these files, we recommend using Chrome or Firefox. However, IE 11, Edge, and Safari also provide `.har` file generation and export capability.
+Файлы HAR помогают нашим службам технической поддержки устранять сложные проблемы. Для создания этих файлов мы рекомендуем использовать Chrome или Firefox. Однако IE 11, Edge и Safari также предоставляют возможность создания и экспорта файлов `.har` .
 
 ## Chrome {#chrome}
 
-To create a HAR file in Chrome:
+Чтобы создать файл HAR в Chrome:
 
-1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
+1. Перейдите по URL-адресу, по которому возникает ошибка. Пока не воспроизводите её.
 
-2. Open ***Developer Tools***:
+2. Откройте ***Инструменты разработчика***:
 
-- From menu: ***Menu > More Tools > Developer Tools***.
-- Keyboard: ***Ctrl+Shift+C***, or ***Ctrl+Alt+I***, or ***⌥+⌘+I for Mac***.
+- Из меню: ***Меню > Дополнительные инструменты > Инструменты разработчика***.
+- Клавиатура: ***Ctrl+Shift+C***, или ***Ctrl+Alt+I***, или ***⌥+⌘+I для Mac***.
 
-3. Click on the ***Network tab***.
+3. Перейдите на вкладку ***Сеть***.
 
-4. Locate the round button at the top left of the Network tab and confirm it is in red recording mode. If it's grey, click to turn red to start recording.
+4. Найдите круглую кнопку в левом верхнем углу вкладки и убедитесь, что она находится в режиме записи. Если кнопка серая, кликните на неё — она станет красной, и начнётся запись.
 
-5. Use the ***clear*** button (the circle button with a line through it next to the record button) to clear all previous activity.
+5. Нажмите кнопку ***Очистить*** (значок в виде перечеркнутого круга рядом с кнопкой записи), чтобы удалить все предыдущие действия.
 
-6. Select the ***Preserve log*** check box on the Network tab.
+6. Установите флажок ***Сохранить журнал*** на вкладке Сеть.
 
-7. Check the ***Disable cache*** check box.
+7. Установите флажок ***Отключить кэш***.
 
 ![chrome](https://cdn.adguard.com/content/Kb/ad_blocker/guides/chrome.png)
 
-8. Reproduce the steps that create the issue.
+8. Воспроизведите действия, создающие проблему.
 
-9. Save session as a .har file by right clicking on the grid and selecting ***Save as HAR with content***.
+9. Сохраните сессию как файл .har, щёлкнув правой кнопкой мыши на сетку и выбрав ***Сохранить как HAR-файл с данными***.
 
-10. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+10. Направьте документ поддержке AdGuard (support@adguard.com) с подробным объяснением ошибки. Прилагающиеся скриншоты также могут помочь.
 
 ## Edge {#edge}
 
-1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
+1. Перейдите по URL-адресу, по которому возникает ошибка. Пока не воспроизводите её.
 
-2. Open ***Developer Tools***:
+2. Откройте ***Инструменты разработчика***:
 
-- From menu: ***Menu > More Tools > Developer Tools***.
-- Keyboard: ***Ctrl+Shift+C***, or ***Ctrl+Alt+I***, or ***⌥+⌘+I for Mac***.
+- Из меню: ***Меню > Дополнительные инструменты > Инструменты разработчика***.
+- Клавиатура: ***Ctrl+Shift+C***, или ***Ctrl+Alt+I***, или ***⌥+⌘+I для Mac***.
 
-3. Click on the ***Network tab***.
+3. Перейдите на вкладку ***Сеть***.
 
-4. Locate the round button at the top left of the Network tab and confirm it is in red recording mode. If it's grey, click to turn red to start recording.
+4. Найдите круглую кнопку в левом верхнем углу вкладки и убедитесь, что она находится в режиме записи. Если кнопка серая, кликните на неё — она станет красной, и начнётся запись.
 
-5. Use the ***clear*** button (the circle button with a line through it next to the record button) to clear all previous activity.
+5. Нажмите кнопку ***Очистить*** (значок в виде перечеркнутого круга рядом с кнопкой записи), чтобы удалить все предыдущие действия.
 
-6. Select the ***Preserve log*** check box on the Network tab.
+6. Установите флажок ***Сохранить журнал*** на вкладке Сеть.
 
-7. Check the ***Disable cache*** check box.
+7. Установите флажок ***Отключить кэш***.
 
 ![edge](https://cdn.adguard.com/content/Kb/ad_blocker/guides/edge.png)
 
-8. Reproduce the steps that create the issue.
+8. Воспроизведите действия, создающие проблему.
 
-9. Save session as a .har file by right clicking on the grid and selecting ***Save as HAR with content***.
+9. Сохраните сессию как файл .har, щёлкнув правой кнопкой мыши на сетку и выбрав ***Сохранить как HAR-файл с данными***.
 
-10. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+10. Направьте документ поддержке AdGuard (support@adguard.com) с подробным объяснением ошибки. Прилагающиеся скриншоты также могут помочь.
 
 ## Firefox {#firefox}
 
-To create a HAR file in Firefox:
+Чтобы создать файл HAR в Firefox:
 
-1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
+1. Перейдите по URL-адресу, по которому возникает ошибка. Пока не воспроизводите её.
 
-2. Open Developer Tools in ***Network*** mode:
-- From menu: ***Menu > Web Developer > Network***.
-- Keyboard: ***Ctrl+Shift+C***, or **⌥+⌘+E (Mac)**.
+2. Запустите Инструменты разработчика в режиме ***Сеть***:
+- Из меню: ***Меню > Веб-разработчик > Сеть***.
+- Клавиатура: ***Ctrl+Shift+C***, или **⌥+⌘+E (Mac)**.
 
-3. Note the ***play/pause*** button at the top left of the Network tab.
-- Button should be in play mode.
+3. Нажмите на кнопку ***Приостановить/возобновить запись сетевого журнала*** в верхнем левом углу вкладки Сеть.
+- Кнопка должна находиться в режиме воспроизведения.
 
-4. If any information is currently displayed in the grid, clear by clicking the ***delete trash can*** button next to the play/pause button.
+4. Если какая-либо информация отображается на сетке, удалите её, щёлкнув правой кнопкой мыши ***Очистить корзину***.
 
-5. Select the ***Persist Logs*** check box on the Network tab.
+5. Установите флажок ***Сохранить журнал*** на вкладке Сеть.
 
-6. Check the ***Disable cache*** check box.
+6. Установите флажок ***Отключить кэш***.
 
 ![firefox](https://cdn.adguard.com/content/Kb/ad_blocker/guides/firefox.png)
 
-7. Reproduce the steps that create the issue.
+7. Воспроизведите действия, создающие проблему.
 
-8. Save session as a .har file by right clicking on the grid and selecting ***Save all as HAR***.
+8. Сохраните сессию как файл .har, щёлкнув правой кнопкой мыши на сетку и выбрав ***Сохранить всё как HAR***.
 
-9. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+9. Направьте документ поддержке AdGuard (support@adguard.com) с подробным объяснением ошибки. Прилагающиеся скриншоты также могут помочь.
 
 ## Internet Explorer 11 {#ie11}
 
-To create a HAR file in Internet Explorer 11:
+Чтобы создать файл HAR в Internet Explorer 11:
 
-1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
+1. Перейдите по URL-адресу, по которому возникает ошибка. Пока не воспроизводите её.
 
-2. Open Developer Tools in ***Network*** mode:
-- From Tools cog wheel menu: ***Developer Tools*** > ***Network tab***.
-- Keyboard: ***F12 > Network*** tab
+2. Запустите Инструменты разработчика в режиме ***Сеть***:
+- Из меню Инструменты: ***Инструменты разработчика*** > ***Сеть***.
+- Клавиатура: ***F12  > Сеть***.
 
-3. Note the start profiling session ***Play*** button and stop profiling ***Stop*** button at top left of Network tab.
-- Play button will be gray when recording and Stop button will be red. Put in ***Play*** mode.
+3. Найдите кнопку ***Play***, запускающую профилирование запросов, и кнопку остановки профилирования ***Stop*** в левом верхнем углу вкладки Сеть.
+- Кнопка Play должна быть серой, а кнопка Stop — красной. Включите режим воспроизведения. Переведите в ***Режим воспроизведения*** .
 
-4. Clear any session info appearing in the lower grid using the ***Clear session*** button on Network tab. Hover over icons to see names.
-- ***Clear session*** button is a three line icon with an x on it.
+4. Удалите любую информацию, появляющуюся на нижней сетке, нажав на кнопку ***Очистить сессию*** во вкладке Сеть. Наведите курсор иконки, чтобы увидеть их названия.
+- ***Кнопка «Очистить сессию»*** представляет собой значок в виде трех линий с изображением буквы x.
 
-5. Check the ***Disable cache*** check box.
+5. Установите флажок ***Отключить кэш***.
 
-6. Reproduce the steps that create the issue.
+6. Воспроизведите действия, создающие проблему.
 
-7. Save session as a .har file by clicking on the ***Save disk*** button (Export as HAR) on Network tab.
+7. Сохраните сессию в виде файла .har, нажав на кнопку ***Save disk*** (Export as HAR) на вкладке Сеть.
 
-8. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+8. Направьте документ поддержке AdGuard (support@adguard.com) с подробным объяснением ошибки. Прилагающиеся скриншоты также могут помочь.
 
 ## Safari {#safari}
 
-To create a HAR file in Safari:
+Чтобы создать файл HAR в Safari:
 
-1. Check the Safari menu bar at the top of the screen for a ***Develop*** menu. Check the checkbox at the bottom next to ***Show Develop menu in menu bar***.
-- If not visible, turn it on by going to ***Safari > Preferences > Advanced***.
+1. Найдите в панели меню Safari раздел ***Разработка***. Проверьте флажок внизу рядом с ***Показывать меню «Разработка» в строке меню***.
+- Если его не видно, включите его, перейдя по вкладкам ***Safari > Настройки > Дополнения***.
 
-2. Go to the URL where the issue occurs. Do not reproduce the issue yet.
+2. Перейдите по URL-адресу, по которому возникает ошибка. Пока не воспроизводите её.
 
-3. Open ***Network*** tab in Web Inspector:
-- From menu: ***Develop > Show Web Inspector > Network***.
-- Keyboard: ***⌥+⌘+I > Network***
+3. Откройте вкладку ***Сеть*** в Веб-инспекторе:
+- Из меню: ***Разработка > Показать веб-инспектор > Сеть***.
+- Клавиатура: ***⌥+⌘+I > Сеть***
 
-4. Check ***Preserve Log*** checkbox on right side of the Network tabs.
+4. Установите флажок ***Сохранить журнал*** в правой части вкладки Сеть.
 
-5. Clear current Network items by clicking the ***delete Trash*** icon at the far right of Network tabs.
+5. Очистите элементы Сети, кликнув иконку ***Очистить корзину*** в правом углу от вкладки Сеть.
 
-6. Check the ***Disable cache*** check box.
+6. Установите флажок ***Отключить кэш***.
 
-7. Reproduce the steps that create the issue.
+7. Воспроизведите действия, создающие проблему.
 
-8. Save session as a .har file by clicking the ***Export*** icon next to ***Preserve Log***.
+8. Сохраните сессию в виде файла .har, нажав на значок ***Экспортировать*** рядом с ***Сохранить журнал***.
 
-9. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, too.
+9. Направьте документ поддержке AdGuard (support@adguard.com) с подробным объяснением ошибки. Прилагающиеся скриншоты также могут помочь.
 
 ## Android {#android}
 
-To get HAR files follow these steps:
+Чтобы получить файлы HAR, выполните следующие действия:
 
-1. Open AdGuard and go to ***Settings***.
+1. Откройте AdGuard и перейдите в ***Настройки***.
 
-2. Choose ***Advanced*** in the menu.
+2. Выберите в меню ***Расширенные***.
 
-3. Choose ***Low Level Settings***
+3. Выберите ***Настройки низкого уровня***
 
-4. Activate `pref.har.capture` (you will have to restart the protection).
+4. Активируйте `pref.har.capture` (вам придётся перезапустить защиту).
 
-5. Now reproduce the problem — open the app, perform the necessary actions to make the ad appear.
+5. Теперь воспроизведите проблему — откройте приложение, выполните необходимые действия, чтобы реклама появилась.
 
-6. Now turn `pref.har.capture` off again.
+6. Теперь снова выключите `pref.har.capture` .
 
-7. Go Back, then tap on ***Export logs and system info*** -> ***Save***.
+7. Перейдите назад, затем нажмите на ***Экспорт журналов и системной информации*** -> ***Сохранить***.
 
 ## Windows {#windows}
 
-1. Open ***Settings*** —> ***General settings*** —> ***Advanced settings** and scroll down.
+1. Откройте ***Настройки*** —> ***Общие настройки*** -> **Расширенные настройки** и прокрутите страницу вниз.
 
-2. Check the ***Enable HAR writing*** box.
+2. Установите флажок ***Включить запись HAR*** .
 
-3. Reproduce the problem.
+3. Воспроизведите проблему.
 
-4. Go to ***General settings*** -> Click on ***Export logs*** -> ***Save***.
+4. Перейдите на страницу ***Общие настройки*** -> Нажмите на ***Экспортировать логи*** -> ***Сохранить***.
 
-5. Disable HAR writing by unchecking the corresponding box.
+5. Запретите запись HAR, сняв соответствующий флажок.

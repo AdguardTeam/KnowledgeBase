@@ -1,10 +1,10 @@
 ---
-title: How to install AdGuard on versions of macOS High Sierra and above
+title: Как установить AdGuard на macOS High Sierra и выше
 sidebar_position: 3
 ---
 
-During the Installation of AdGuard on macOS High Sierra (or later versions) you may see a message: "System Extension Blocked". This is a new security mechanism that appeared in High Sierra, it requires you to explicitly allow the installation of a third party system extension. To complete the installation of AdGuard you have to manually allow loading the extension in *System Preferences* > *Security & Privacy* > *General*.
+Во время установки AdGuard на macOS High Sierra (или более поздние версии) вы можете увидеть такое сообщение: «Системное расширение заблокировано». Это новый механизм защиты, появившийся в High Sierra, он требует от вас явно разрешить установку сторонних расширений. Чтобы завершить установку AdGuard, вам нужно вручную разрешить установку расширений: перейдите в *Системные настройки* > *Защита и безопасность* > *Основные*.
 
-![Allow extension installation in settings](https://cdn.adguard.com/public/Adguard/kb/PicturesEN/highsierra.png)
+![Разрешить установку расширений в настройках](https://cdn.adguard.com/public/Adguard/kb/PicturesEN/highsierra.png)
 
-Click the "Allow" button, and after that you will be able to proceed with the installation as normal.
+Нажмите кнопку «Разрешить», после этого AdGuard сможет продолжить установку.

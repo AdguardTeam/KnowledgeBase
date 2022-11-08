@@ -1,84 +1,84 @@
 ---
-title: Adware & viruses
+title: Рекламное ПО & вирусы
 sidebar_position: 5
 ---
 
-> **Please note:** AdGuard is not an antivirus program. It can warn you when you're going to visit a malware or phishing website, but **it does not remove viruses from your device.**
+> **Обратите внимание:** AdGuard не является антивирусной программой. Он может предупредить вас, когда вы собираетесь посетить сайт с вредоносным ПО или фишинговый сайт, но **не удаляет вирусы с вашего устройства.**
 
-If you suspect your computer is infected by malware or viruses, first of all you can inspect your computer with utilities from leading antiviruses.
+Если вы подозреваете, что ваш компьютер заражён вредоносным ПО или вирусами, в первую очередь проверьте компьютер с помощью утилит от ведущих антивирусных программ.
 
-**Free antivirus utilities**
+**Бесплатные антивирусные программы**
 
-There are many of them and you can use any one you prefer, here is simply a couple examples:
+Их существует множество — выбирайте любую, какая вам нравится. Вот лишь несколько примеров:
 
 [Kaspersky Virus Removal Tool](https://www.kaspersky.ru/downloads/thank-you/free-virus-removal-tool)
 
-[Dr.Web CureIt!](http://www.freedrweb.com/cureit/?lng=en)
+[Dr.Web CureIt!](http://www.freedrweb.com/cureit/?lng=ru)
 
-If this check with antivirus utilities revealed nothing, but the computer still behaves suspiciously, try to test it for adware, which can implement its advertising on any pages that you open.
+Если эта проверка антивирусными программами ничего не выявила, но компьютер по-прежнему ведёт себя подозрительно, попробуйте проверить его на наличие рекламного ПО, которое может внедрять свою рекламу на любые открываемые вами страницы.
 
-## How to clean your system from Adware {#adware}
+## Как очистить систему от рекламного ПО {#adware}
 
-On the Internet, you can find a lot of applications that are aimed at fighting this problem. You can use any utility you like. But we strongly recommend using **[AdwareCleaner](https://www.malwarebytes.com/adwcleaner)** by **Malwarebytes**. This application is quite easy to use and you will be able to handle it by yourself.
+В интернете можно найти множество приложений, направленных на борьбу с этой проблемой. Вы можете использовать любую утилиту, которая вам нравится. Но мы настоятельно рекомендуем использовать **[AdwareCleaner](https://www.malwarebytes.com/adwcleaner)** от **Malwarebytes**. Это приложение довольно просто в использовании, и вы сможете справиться с ним самостоятельно.
 
-After the application has been downloaded and successfully installed, you should take the following steps:
+После загрузки и успешной установки приложения необходимо выполнить следующие действия:
 
-1) Start the application and click **Scan now**.
+1) Запустите приложение и нажмите **Сканировать сейчас**.
 
-![adware1](https://cdn.adguard.com/content/Kb/ad_blocker/guides/adware1.png)
+![adware1](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/adwareru.png)
 
-2) Once the scan has been completed, you will need to send suspicious objects to **Quarantine**.
+2) После завершения сканирования вам необходимо отправить подозрительные объекты в **Карантин**.
 
-![adware2](https://cdn.adguard.com/content/Kb/ad_blocker/guides/adware2.png)
+![adware2](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/adware2ru.png)
 
-3) When the items are moved to **Quarantine**, you will be able to **Clear the system** of unnecessary ballast.
+3) Когда они будут перемещены в **Карантин**, вы сможете **Очистить систему** от ненужного мусора.
 
-4) In some cases, you may need to **Reboot the system** after cleaning is complete.
+4) В некоторых случаях после завершения очистки может потребоваться **Перезагрузка системы** .
 
-![adware3](https://cdn.adguard.com/content/Kb/ad_blocker/guides/adware3.png)
+![adware3](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/adware3.png)
 
-5) Once the system has been rebooted, cleaning will be completed. If necessary, you can always read the **Report** on the work done.
+5) После перезагрузки системы очистка будет завершена. При необходимости вы всегда можете ознакомиться с отчётом **** о проделанной работе.
 
-![adware4](https://cdn.adguard.com/content/Kb/ad_blocker/guides/adware4.png)
+![adware4](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/adware4.png)
 
-If it didn’t help, temporary disable all extensions and some other settings in the browser according to [these instructions](#instructions).
+Если это не помогло, временно отключите все расширения и некоторые другие настройки в браузере согласно [этим инструкциям](#instructions).
 
-If disabling of settings and extensions does not help, try to [recreate shortcuts of your browsers](#shortcuts).
+Если отключение настроек и расширений не помогает, попробуйте [воссоздать ярлыки ваших браузеров](#shortcuts).
 
-Further on this page we describe the instructions on how to remove some of the most commonly encountered ad extensions.
+Далее на этой странице мы опишем инструкции по удалению некоторых наиболее часто встречающихся рекламных расширений.
 
-## How to disable settings and extensions in the browser {#instructions}
+## Как отключить настройки и расширения в браузере {#instructions}
 
-Below are the instructions on how to disable settings and extensions for the most popular browsers:
+Ниже приведены инструкции по отключению настроек и расширений для наиболее популярных браузеров:
 
-* [for Google Chrome](https://support.google.com/chrome/answer/187443?hl=en)
+* [для Google Chrome](https://support.google.com/chrome/answer/187443?hl=ru)
 
-* [for Mozilla Firefox](https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons)
+* [для Mozilla Firefox](https://support.mozilla.org/ru/kb/disable-or-remove-add-ons)
 
-* [for Opera](https://help.opera.com/en/latest/customization/#extensions)
+* [для Opera](https://help.opera.com/ru/latest/customization/#extensions)
 
-## How to recreate shortcuts for your browsers {#shortcuts}
+## Как воссоздать ярлыки для браузеров {#shortcuts}
 
-Very often, malware and adware programs install their homepage in a very simple way — they substitute your browser's desktop shortcut, taskbar and *Start* menu items.
+Очень часто вредоносные и рекламные программы устанавливают свою домашнюю страницу очень простым способом — они подменяют ярлык браузера на рабочем столе, панель задач и пункты меню *Start* .
 
-The simplest solution in this case is to manually delete all the shortcuts and recreate them by yourself.
+Самое простое решение в этом случае — вручную удалить все ярлыки и создать их заново самостоятельно.
 
-### How to remove sindex.biz {#sindex.biz}
+### Как удалить sindex.biz {#sindex.biz}
 
-If instead of the home page, you always open sindex.biz, it’s likely that shortcuts for your browser(s) have been substituted. Try to [recreate the shortcuts](#shortcuts) to get rid of this problem.
+Если вместо домашней страницы вы всегда открываете sindex.biz, скорее всего, ярлыки для вашего браузера(ов) были подменены. Попробуйте [воссоздать ярлыки](#shortcuts), чтобы избавиться от этой проблемы.
 
-### How to remove Mobogenie {#mobogenie}
+### Как удалить Mobogenie {#mobogenie}
 
-To get rid of this software, check your computer with a free utility (e.g. [Dr.Web CureIt!](http://www.freedrweb.com/cureit/)).
+Чтобы избавиться от этой программы, проверьте компьютер с помощью бесплатной утилиты (например, [Dr.Web CureIt!](http://www.freedrweb.com/cureit/)).
 
-### How to remove ads by BetterSurf {#bettersurf}
+### Как удалить рекламу от BetterSurf {#bettersurf}
 
-**What is BetterSurf?**
+**Что такое BetterSurf?**
 
-BetterSurf is an advertising program that builds itself into your browser. This program puts up its ads on all websites that you visit. Externally such ads look quite ordinary, and you can easily not notice them among the regular banners posted by this site. But with a keen eye you will be able to easily recognize these ads as ads that "weren’t here before". For example, it's extremely easy to notice them on websites like Facebook or Twitter.
+BetterSurf — это рекламная программа, которая встраивается в ваш браузер. Эта программа размещает свою рекламу на всех сайтах, которые вы посещаете. Внешне такие объявления выглядят вполне обычно, и вы легко можете не заметить их среди обычных баннеров, размещённых на этом сайте. Но при внимательном рассмотрении вы сможете легко распознать эти объявления как рекламу, которой «здесь раньше не было». Например, их очень легко заметить на таких сайтах, как Facebook или Twitter.
 
-To get rid of this program, use the [following instructions](http://malwaretips.com/blogs/bettersurf-virus-removal/).
+Чтобы избавиться от этой программы, воспользуйтесь следующей инструкцией [](http://malwaretips.com/blogs/bettersurf-virus-removal/).
 
-### How to remove Rvzr-a.akamaihd.net {#rvzr}
+### Как удалить Rvzr-a.akamaihd.net {#rvzr}
 
-If you meet a pop-up by *Rvzr-a.akamaihd.net*, then most likely your computer is infected with malicious adware. You can find instructions for removing it at [this link](http://malwaretips.com/blogs/rvzr-a-akamaihd-net-virus/).
+Если вы встретили всплывающее окно по адресу *Rvzr-a.akamaihd.net*, то, скорее всего, ваш компьютер заражён вредоносным рекламным ПО. Вы можете найти инструкции по его удалению [по этой ссылке](http://malwaretips.com/blogs/rvzr-a-akamaihd-net-virus/).

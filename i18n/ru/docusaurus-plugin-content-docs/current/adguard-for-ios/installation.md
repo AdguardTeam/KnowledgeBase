@@ -1,48 +1,48 @@
 ---
-title: Installation
+title: Установка
 sidebar_position: 2
 ---
 
-## System requirements
+## Системные требования
 
 ### iPhone
 
-Requires iOS 11.2 or later.
+iOS 11.2 и выше.
 
 ### iPad
 
-Requires iPadOS 11.2 or later.
+iPadOS 11.2 и выше.
 
 ### iPod touch
 
-Requires iOS 11.2 or later.
+iOS 11.2 и выше.
 
-## AdGuard for iOS installation
+## Установка AdGuard для iOS
 
-AdGuard for iOS is an app presented in the App Store. To install it on your device, open the App Store and tap the _Search_ icon on the bottom of the screen.
+Приложение AdGuard для iOS доступно в App Store. Чтобы установить его на своё устройство, откройте App Store и нажмите на значок _Поиск_ в нижней части экрана.
 
-![On the App store main screen, tap Search](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/1.png)
+![На главном экране App Store нажмите «Поиск»](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/1.png)
 
-Type _adguard_ in the search bar and tap the string _adGuard_ which will be among search results.
+Введите _adguard_ в строке поиска и нажмите на строку _adGuard_, которая будет среди результатов поиска.
 
-![Type "AdGuard" in the search bar](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/2.png)
+![Введите "AdGuard" в строке поиска](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/2.png)
 
-On the opened page of the App Store tap _GET_ under the string _AdGuard - adblock&privacy_ and then tap _INSTALL_. You may be requested to enter your Apple ID login and password. Type it in and wait for the installation to complete.
+На открывшейся странице App Store нажмите на кнопку _ЗАГРУЗИТЬ_, расположенную под надписью _AdGuard - блокировщик рекламы_, а затем на кнопку _УСТАНОВИТЬ_. Вам может потребоваться ввести логин и пароль Apple ID. Введите его и дождитесь завершения установки.
 
-![Tap GET below the AdGuard app](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/3.png)
+![Нажмите ЗАГРУЗИТЬ под приложением AdGuard](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/3.png)
 
-## AdGuard Pro for iOS installation
+## Установка AdGuard Pro для iOS
 
-AdGuard Pro is a paid version of AdGuard for iOS, offering an expanded set of functions (same as "AdGuard" app with premium enabled). To install it on your device run the App Store application and tap the _Search_ icon on the bottom of the screen.
+Приложение AdGuard Pro — это платная версия блокировщика рекламы AdGuard для iOS с расширенным набором функций (аналогично приложению AdGuard с премиум-аккаунтом). Чтобы установить его на своё устройство, откройте приложение App Store и нажмите на значок _Поиск_ в нижней части экрана.
 
-![On the App store main screen, tap Search](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/1.png)
+![На главном экране App Store нажмите «Поиск»](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/1.png)
 
-Type _adguard_ in the search form, and then tap the string _adGuard pro - adblock_ which will be shown as a search results.
+Введите _adguard_ в строке поиска и нажмите на строку _adGuard pro - блокировщик рекламы_, которая будет среди результатов поиска.
 
-![Type "AdGuard" in the search bar](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/2.png)
+![Введите "AdGuard" в строке поиска](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/2.png)
 
-On the opened page of the App Store tap the button with the cost of the license under the string _AdGuard Pro - adblock_, and then tap _BUY_. You may be requested to enter your Apple ID login and password. Type it in and wait for the installation to complete.
+На открывшейся странице App Store нажмите на кнопку со стоимостью лицензии под строкой _AdGuard Pro - блокировщик рекламы_, а затем нажмите _КУПИТЬ_. Вам может потребоваться ввести логин и пароль Apple ID. Введите его и дождитесь завершения установки.
 
-![Tap GET below AdGuard app](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/3.png)
+![Нажмите ЗАГРУЗИТЬ под приложением AdGuard](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/3.png)
 
-*The license can be activated via entering user credentials from an AdGuard account. To that end, it is required that a user has at least one spare license key.*
+*Лицензию можно активировать, введя учётные данные от личного кабинета AdGuard. Для этого необходимо, чтобы у пользователя был хотя бы один свободный лицензионный ключ.*

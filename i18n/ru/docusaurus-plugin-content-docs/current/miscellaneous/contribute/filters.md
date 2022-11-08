@@ -1,20 +1,20 @@
 ---
-title: Contribute to AdGuard filters
+title: Помощь в разработке фильтров AdGuard
 sidebar_position: 4
 ---
 
-### Filtering rules {##filtering-rules}
+### Правила фильтрации
 
-As you probably know, AdGuard uses filtering rules to block ads, and these rules are combined into thematic [blocking filters](https://kb.adguard.com/general/adguard-ad-filters), like AdGuard Base filter, Mobile ads filter, etc. [Read more about how ad blocking works](https://kb.adguard.com/general/how-ad-blocking-works).
+Для блокировки рекламы AdGuard использует правила фильтраци. Эти правила объединяются в тематические [фильтры](https://kb.adguard.com/general/adguard-ad-filters), такие как фильтр «Базовый фильтр AdGuard», «Фильтр мобильной рекламы» и т.д. [Подробнее о том, как работает блокировка рекламы](https://kb.adguard.com/general/how-ad-blocking-works).
 
-Websites constantly change the way they embed ads, and we add new rules to our filters to keep them effective. Filter engineers are working on creating new rules, but we always welcome the help and support of volunteers.
+Веб-сайты постоянно меняют способы встраивания рекламы, и мы добавляем новые правила в наши фильтры, чтобы сохранить их эффективность. Над созданием новых правил работают инженеры фильтров. Однако мы всегда рады помощи и поддержке волонтёров.
 
-### How to start {#how-to-start}
+### С чего начать {#how-to-start}
 
-However, working with blocking filters requires specific skills. If you have them and know how to create rules, then head straight to our [AdGuard Filters repository](https://github.com/AdguardTeam/AdguardFilters) on GitHub. There you will find a lot of open issues, each one referencing a problem with some website problem — a missed ad, a false positive, etc. Choose any and suggest your own rules in comments. AdGuard filter engineers will review your suggestions, and if they find them appropriate, your rules will be added to AdGuard filters.
+Работа с фильтрами, блокирующими рекламу, требует специальных навыков. Если они у вас есть, и вы знаете, как создавать правила, то направляйтесь прямо в наш репозиторий [AdGuard Filters](https://github.com/AdguardTeam/AdguardFilters) на GitHub. Там вы найдёте множество открытых вопросов, каждый из которых ссылается на проблему с каким-либо сайтом — пропущенное объявление, ложное срабатывание и т.д. Выбирайте любой и предлагайте свои правила в комментариях. Инженеры фильтров AdGuard рассмотрят ваше предложение и добавят правило в фильтры, если оно окажется корректным.
 
-If you are not yet familiar with our filtering rules syntax, or maybe need a refresher, you'll find the basics about the syntax [in our Knowledge base](https://kb.adguard.com/general/how-to-create-your-own-ad-filters). More advanced guides can be found on the internet, and if you have any questions about the syntax, visit our [forum](https://forum.adguard.com/).
+Если вы ещё не знакомы с синтаксисом наших правил фильтрации или просто хотите освежить знания, то вам нужно обратиться к  [нашей базе знаний](https://kb.adguard.com/general/how-to-create-your-own-ad-filters). Более продвинутые руководства можно найти в интернете, а если у вас есть вопросы по синтаксису, посетите [наш форум](https://forum.adguard.com/).
 
-### Rewards {#rewards}
+### Как мы благодарим помощников {#rewards}
 
-If you have suggested several filtering rules and some of them were approved, then it's time for you to get a reward. Send us a message at [st@adguard.com](mailto:st@adguard.com) with your GitHub account name, and you'll get a free AdGuard license key. As for the exact number of rules you need to get approved to become eligible, there are no hard rules. This task is not easy, so anything north of 5 should be enough.
+Если вы предложили несколько правил фильтрации, и некоторые из них были одобрены, значит, пришло время получить вознаграждение. Отправьте нам сообщение по адресу [st@adguard.com](mailto:st@adguard.com) с указанием имени вашей учётной записи на GitHub, и вы получите бесплатный лицензионный ключ AdGuard. Не существует жёстких правил относительно точного количество одобренных изменений. Эта задача не из лёгких, поэтому пяти правил (и больше) должно быть достаточно.

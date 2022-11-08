@@ -51,7 +51,7 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 
 * Open [AdGuard Browser Assistant](https://kb.adguard.com/en/macos/overview/browser-assistant) and hit **Report an issue**:
 
-![mac](https://cdn.adguard.com/content/Kb/ad_blocker/guides/browser-assistant-mac.png)
+![mac](https://cdn.adguard.com/content/kb/ad_blocker/guides/browser-assistant-mac.png)
 
 * Fill in the form for reporting a complaint;
 * After you've done it, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
@@ -75,7 +75,7 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 3. Enter the address of the page where you have encountered the problem (or full download link in case of an app), and the browser where you've encountered a problem; ![forma3](https://cdn.adguard.com/content/Kb/ad_blocker/guides/forma3en.png)
 4. Application configuration must be specified:
 * Filters you use;
-* Stealth mode settings, if this function is enabled. ![forma4](https://cdn.adguard.com/content/Kb/ad_blocker/guides/forma4en.png)
+* Stealth mode settings, if this function is enabled. ![forma4](https://cdn.adguard.com/content/kb/ad_blocker/guides/forma4en.png)
 5. [Provide a screenshot](./take-screenshot.md) that captures the essence of a problem;
 * **Important**: Hide your personal information (email, phone number, etc.) because screenshots will become publicly available. ![forma5](https://cdn.adguard.com/content/Kb/ad_blocker/guides/forma5en.png)
 6. Provide additional information that will help filter developers understand the situation; Also enter your account on **GitHub**, if available (it's necessary for developers to be able to reach you in case they need some additional details); ![forma6](https://cdn.adguard.com/content/Kb/ad_blocker/guides/forma6en.png)

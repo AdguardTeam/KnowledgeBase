@@ -1,5 +1,5 @@
 ---
-title: Сertificate installation issues on devices with Android 11 and later
+title: Сertificate installation issues on devices with Android 11+
 sidebar_position: 12
 ---
 
@@ -22,4 +22,4 @@ If you use [the *Secure folder* on your Android](https://www.samsung.com/uk/supp
 6. Tap the three-dot menu and go to additional security settings.
 7. Tap *Install from memory* > *CA certificate* > *Install anyway* > Enter a graphic key/password/fingerprint > Find the saved certificate and select it.
 8. Return to the AdGuard application and close the screen "How to install a certificate?" by tapping the cross button.
-9. Done! The certificate has been installed. 
+9. Готово! The certificate has been installed. 

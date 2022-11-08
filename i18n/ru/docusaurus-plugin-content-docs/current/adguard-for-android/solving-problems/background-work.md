@@ -3,74 +3,74 @@ title: How to protect AdGuard from being disabled by the system
 sidebar_position: 9
 ---
 
-In some cases, apps won't stay in the background ("alive" or in a sleep mode) due to the Android OS optimization function, or the so-called "battery save mode" — this function can kill background applications. It may be inconvenient to relaunch them each time they are getting closed. To avoid the background app termination, you need to follow the steps we described separately for each manufacturer (version) of Android OS. Note that instructions for different manufacturers are mostly very similar.
+В некоторых случаях приложения не остаются в фоновом режиме ("активными" или в спящем режиме) из-за встроенной функции оптимизации ОС Android или так называемого "режима экономии батареи" — эта функция может закрывать фоновые приложения. Может быть неудобно перезапускать их каждый раз, когда они закрываются. Чтобы избежать завершения работы фонового приложения, необходимо выполнить шаги, указанные нами в инструкции отдельно для каждого производителя (версии) Android OS. Обратите внимание, что инструкции для разных производителей в основном очень похожи.
 
 ## Asus
 
-Information on Asus devices is still far from being exhaustive so there may be more issues than listed here. We're going to update this part of the article when we know more.
+Информация о проблемах на устройствах Asus ещё далеко не исчерпывающая, поэтому в перспективе их может быть больше, чем указано здесь. Мы будем дополнять статью по мере поступления информации.
 
-Go to Settings > Power Manager > Mobile Manager > Settings > Battery-saving options > Auto-start manager > AdGuard > uncheck.
+Зайдите в Настройки > Power Manager > Mobile Manager > Настройки > Параметры экономии заряда батареи > Автозапуск Manager > AdGuard > снимите флажок.
 
 ## Xiaomi
 
 ### MIUI 12.0.8+
 
-To let your AdGuard app run successfully in the background, do the following:
+Чтобы приложение AdGuard успешно работало в фоновом режиме, сделайте следующее:
 
-In **Settings** > **Apps** > **Manage apps** > scroll down to locate **AdGuard**, set **Autostart** to "On".
+Зайдите в **Настройки** > **Приложения** > **Управление приложениями** > прокрутите вниз, чтобы найти **AdGuard**, включите **Автозапуск**.
 
-![Xiaomi Settings](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
+![Настройки Xiaomi](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
 
-Scroll down to **Battery saver**, tap it, and set to "No restrictions".
+На том же экране прокрутите вниз до настройки **Контроль активности**, перейдите в неё и выберите "Нет ограничений".
 
 ![Miui](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_0a.png)
 
-Run the **Security** app.
+Запустите приложение **Безопасность**.
 
-Tap on the **Gear** icon at the top-right corner of the screen.
+Нажмите на значок **шестерёнки** в правом верхнем углу экрана.
 
-![Miui Settings](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_1.jpeg)
+![Настройки Miui](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_1.jpeg)
 
-Tap **Boost speed** in Feature Settings.
+На экране "Настройки" выберите пункт **"Ускорение"**.
 
-![Miui Settings](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_2.png)
+![Настройки Miui](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_2.png)
 
-Tap **Lock apps**.
+Затем нажмите на **"Закрепленные приложения"**.
 
-![Miui Settings](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_3.jpeg)
+![Настройки Miui](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_3.jpeg)
 
-In the **Lock apps** screen, set the toggle switch for the AdGuard app to On.
+На экране **Закрепленные приложения** screen переведите тумблер AdGuard в активное положение.
 
-![Miui Settings](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_4.jpeg)
+![Настройки Miui](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_4.jpeg)
 
-That’s all! You’ve successfully pinned the AdGuard app.
+Готово! Вы успешно закрепили приложение AdGuard.
 
 ### MIUI 12
 
 ![Xiaomi](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
 
-Go to **Settings** > **Apps** > **Manage apps** > **AdGuard**.
+Зайдите в **Настройки** > **Приложения** > **Управление приложениями** > **AdGuard**.
 
-- Set Autostart to “On”
-- Set Battery saver to **No restrictions**
+- Включите Автостарт
+- В Разрешениях выберите **"Нет ограничений"** для Контроля фоновой активности
 
 ![Xiaomi](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi5en.jpeg)
 
-Now launch the active apps manager by swiping up from the bottom of the screen and look for the AdGuard app.
+Теперь запустите Диспетчер запущенных приложений, проведя пальцем вверх от нижней грани экрана и найдите приложение AdGuard.
 
 ![Xiaomi](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi6.jpeg)
 
-Tap and hold it until a special menu pops up. Select a lock icon.
+Нажмите на него и удерживайте, пока не появится специальное меню. Нажмите на значок замка.
 
 ![Xiaomi](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi7en.jpeg)
 
-The lock icon should appear above the app window.
+Теперь этот значок должен быть над окном AdGuard.
 
 ![Xiaomi](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi8en.jpeg)
 
 ### MIUI 10-11
 
-To let your app run successfully in the background, configure settings as follows:
+Чтобы приложение успешно работало в фоновом режиме, настройте следующие параметры:
 
 ![Xiaomi](https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi1en.png)
 
@@ -134,11 +134,11 @@ To set up AdGuard's background work for Xiaomi devices you should pay attention 
 
 Battery optimization is **turned on by default**. During the app update or the OS update, the settings also do revert back to the defaults, forcing you to turn them off again.
 
-### Sleeping apps
+### Спящие приложения
 
 Sleeping apps menu is the sniper’s nest for Samsung’s app killing policies. Make sure to follow the instructions very carefully to prevent the apps from being killed.
 
-Checklist:
+Чеклист:
 
 - Disable **Put unused apps to sleep**
 - Disable **Auto-disable unused apps**
@@ -149,7 +149,7 @@ Checklist:
 
 ![Samsung](https://cdn.adguard.com/public/Adguard/screenshots/android/samsung1en.png)
 
-2. Tap **Battery**
+2. Нажмите **Аккумулятор**
 
 ![Samsung](https://cdn.adguard.com/public/Adguard/screenshots/android/samsung2en.png)
 
@@ -168,21 +168,21 @@ Checklist:
 
 > **Note**: Make sure that `Put unused apps to sleep` and `Auto-disable unused apps` are disabled. Otherwise, Samsung will put your apps back to sleep after a few days even if you have woken them up manually.
 
-### Old Samsung devices
+### Старые устройства Samsung
 
 For early Samsung devices, there is no huge need for setting up the background work, but if in your case the application is getting closed or disappears from the recent tasks after a while, do the following:
 
  - Tap the **Recent tasks** button, tap on the **Additional settings** icon. It should look like this:
 
- ![Samsung settings](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/samsungoptions.png)
+ ![Настройки Samsung](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/samsungoptions.png)
 
  - Tap **Lock Apps**:
 
- ![Samsung settings](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/samsunglockapps.png)
+ ![Настройки Samsung](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/samsunglockapps.png)
 
   - Tap on the lock icon
 
- ![Samsung settings](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/samsunglock.png)
+ ![Настройки Samsung](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/samsunglock.png)
 
 ## Huawei
 
@@ -257,9 +257,9 @@ Old Huawei devices are the easiest to set up, it is enough to perform two simple
 
   - Tap the **Recent tasks** button:
 
-  ![Huawei recent apps](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/huaweirecentapps.jpeg)
+  ![Последние приложения Huawei](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/huaweirecentapps.jpeg)
 
-  - Tap on the lock icon:
+  - Нажмите на значок замка:
 
  ![Huawei lock](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/huaweilock.jpeg)
 
@@ -290,7 +290,7 @@ Here is what you need to do in order to prevent killing the background process o
 
 From now on, background apps are supposed to work smoothly and use the standard Android battery optimizations.
 
-**There is an alternative solution for background work optimization which is more appropriate for advanced users. You will find the instructions below.**
+**There is an alternative solution for background work optimization which is more appropriate for advanced users. Вы найдёте инструкции ниже.**
 
 ### Nokia 1 (Android Go)
 
@@ -298,7 +298,7 @@ From now on, background apps are supposed to work smoothly and use the standard 
 
 `adb shell` `pm uninstall --user 0 com.evenwell.emm`
 
-### Other Nokia models
+### Другие модели Nokia
 
 - Uninstall the com.evenwell.powersaving.g3 package via the following adb commands:
 
@@ -310,7 +310,7 @@ Sometimes background services are being killed (including accessibility services
 
 Go to **Security Centre** > tap **Privacy Permissions** > **Startup manager** and allow AdGuard app to run in background.
 
-Other solutions:
+Другие решения:
 
 * Pin your app to the recent apps screen
 * Enable your app in the app list inside the security app’s “startup manager” and “floating app list” (com.coloros.safecenter / com.coloros.safecenter.permission.Permission)
@@ -320,7 +320,7 @@ Other solutions:
 
 Devices with OxygenOS on board are the most problematic, with its OS-specific cache cleaning and free RAM, including OS optimization. In addition, OxygenOS can interrupt the application's work if you do not use it for a while. To avoid these unwanted consequences, follow these steps:
 
- - Go to **Settings**
+ - Откройте **Настройки**
 
  - **Battery** > **Battery optimization**
 
@@ -350,7 +350,7 @@ And here is one more thing to try:
 
 Sony was the first mobile OS developer to introduce non-standard background process optimization and opened Pandora’s box. It is called Stamina mode and it instantly breaks all background processes and all alarms if enabled.
 
-**Solution:**
+**Решение:**
 
 Go to **Settings** > **Battery** > Three dots in the top right corner > **Battery optimization** > **Apps** > **AdGuard** > uncheck
 
@@ -358,7 +358,7 @@ Go to **Settings** > **Battery** > Three dots in the top right corner > **Batter
 
 Wiko devices are definitely problematic in terms of non-standard background process optimizations and adjustments to the settings that need to be done to make apps work properly.
 
-**Solution:**
+**Решение:**
 
 - Go to **Phone Assistant** > **Battery** > turn off **Eco Mode**
 - Go back and go to **Manual mode**

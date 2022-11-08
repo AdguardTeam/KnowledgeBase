@@ -1,27 +1,27 @@
 ---
-title: Local adguard.com domain
+title: 本地 adguard.com 域
 sidebar_position: 3
 ---
 
-Users of AdGuard for Windows, Mac, and Android may notice that AdGuard adds a small script to every web page, that is loaded from the `local.adguard.org` domain.
+Windows，Mac 和 Android 的 AdGuard 用户可能会注意到 AdGuard 在每个网页上添加了一个小脚本，该脚本是从 `local.adguard.org` 这个域名加载的。
 
-First of all, don't worry, this is not a real domain, and there is actually no real server with that name. This domain is used to apply cosmetic filtering to web pages, but everything is done locally right on your device without connecting to any server.
+首先，不用担心，这不是一个真实的域名，实际上并没有具有该名称的真实服务器。 这个域名是用于对网页应用外观过滤，但一切都在您的设备上本地完成，无需连接到任何服务器。
 
-### Technical explanation
+### 技术说明
 
-But what's going on and why is it done? Please read the technical explanation below.
+但是，这是怎么回事，为什么要这样做？ 请阅读以下技术说明。
 
-1. AdGuard is a network-level content blocker so it cannot simply add custom Javascript and CSS to webpages like what browser extensions do. However, doing this is crucial for quality content blocking.
-2. In order to do it AdGuard injects a "content script" that looks like this: `<script src="https://local.adguard.org/.../content-script.js">`. This "content script" takes care of cosmetic filtering, hides or removes ad content from the web pages.
-3. Connections to the IP address of the `local.adguard.org` domain are intercepted by AdGuard on the network level and **processed locally**. This is why that domain has a "static" IP address that does not change for years.
+1. AdGuard 是一个网络级内容阻止程序，因此它不能跟浏览器扩展程序一样简单地将自定义 JavaScript 和 CSS 添加到网页中。 但是，这样做对于高质量的内容拦截至关重要。
+2. 为了做到这一点，AdGuard 注入了一个“内容脚本”：`<script src="https://local.adguard.org/.../content-script.js">`。 这个“内容脚本”会处理修饰符过滤，隐藏或删除网页中的广告内容。
+3. AdGuard 在网络级别拦截 `local.adguard.org` 域名地址的连接并**在本地进行处理**。 这就是为什么该域名具有多年不变的“静态” IP 地址。
 
-**Why do we need to use a real IP address for that?**
+**为什么我们需要使用真实的 IP 地址呢？**
 
-* We cannot use `127.0.0.1` as the browsers won't accept it.
-* Using some IP address from the private subnets is possible, but this solution has two downsides.
-    * First, there is a slight chance of intersecting with an existing intranet service and breaking access to it.
-    * Second, some DNS servers may consider this a DNS rebinding attack and refuse to respond to `local.adguard.org`.
+* 我们不能使用 `127.0.0.1`，因为浏览器不接受它。
+* 可以使用私有子网中的一些 IP 地址，但是该解决方案具有两个弊端。
+    * 首先，很有可能与现有的内部网络服务冲突并破坏对其的访问。
+    * 其次，一些 DNS 服务器可能会认为这是 DNS 重新绑定的攻击，并拒绝回应 `local.adguard.org`。
 
-### Verification
+### 验证
 
-This is easy to verify. If you disable AdGuard, you'll see that it is simply impossible to establish connection to `local.adguard.org` since there is no server with that address. Just try opening it in your browser when AdGuard is disabled.
+这很容易验证。 如果您禁用 AdGuard，您会发现根本无法建立到 `local.adguard.org` 的连接，因为没有具有该地址的服务器。 只需在 AdGuard 被禁用时尝试在浏览器中打开它。

@@ -1,14 +1,14 @@
 {
   "item.label.docs": {
-    "message": "Docs",
+    "message": "Документы",
     "description": "Navbar item with label docs"
   },
   "item.label.blog": {
-    "message": "Blog",
+    "message": "Блог",
     "description": "Navbar item with label blog"
   },
   "item.label.official_website": {
-    "message": "Official website",
+    "message": "Официальный сайт",
     "description": "Navbar item with label official_website"
   },
   "item.label.GitHub": {

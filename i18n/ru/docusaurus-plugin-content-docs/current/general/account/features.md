@@ -1,36 +1,36 @@
 ---
-title: What can be done in the AdGuard Account
+title: Что можно делать в аккаунте AdGuard
 sidebar_position: 2
 ---
 
-In your account, you can manage your licenses, devices bound to them, personal data, email and password, view purchases and contact support.
+В личном кабинете вы можете управлять своими лицензиями, привязанными к ним устройствами, личными данными, электронной почтой и паролем, просматривать покупки и обращаться в поддержку.
 
-## Manage account settings
+## Управление настройками личного кабинета
 
-In the *Settings* section of your AdGuard account, you can update or reset your password, change your email address, enable [two-factor authentication](2fa.md), view the data stored about you by AdGuard and choose the language of your personal account and notifications.
+В разделе *Настройки* аккаунта AdGuard вы можете обновить или сбросить пароль, изменить адрес электронной почты, включить [двухфакторную аутентификацию](2fa.md), просмотреть данные, сохранённые о вас AdGuard, и выбрать язык личного кабинета и уведомлений.
 
-In this section, you can also manage your email preferences:
-* receive transactional emails,
-* receive AdGuard’s monthly newsletters,
-* receive emails about AdGuard special offers and promotions,
-* send read receipts to AdGuard when you open emails.
+В этом разделе вы также можете управлять настройками электронной почты:
+* получать транзакционные письма,
+* получать ежемесячные рассылки AdGuard,
+* получать письма о специальных предложениях и акциях AdGuard,
+* отправлять уведомления об открытии письма в AdGuard.
 
-## Manage licenses
+## Управление лицензиями
 
-In the *Licenses* section, you can manage your licenses and the devices bound to them.
+В разделе *Лицензии* вы можете управлять своими лицензиями и привязанными к ним устройствами.
 
-[AdGuard licenses](general/license/what-is.md) can be:
-* bound and unbound,
-* extended,
-* upgraded,
-* canceled. You can also update your payment details.
+[Лицензия AdGuard](general/license/what-is.md) может быть:
+* привязанной и непривязанной,
+* расширенной,
+* улучшенной,
+* отменённой. Вы также можете обновить свои платёжные реквизиты.
 
-The devices bound to your AdGuard Ad Blocker licenses can be unbound or renamed. You can unbind unused devices by clicking the cross icon next to them.
+Устройства, привязанные к вашим лицензиям Блокировщика рекламы AdGuard, можно отменить или переименовать. Вы можете отвязать неиспользуемые устройства, нажав на значок крестика рядом с ними.
 
-## View purchases
+## Просмотр покупок
 
-The Purchase history section displays all the licenses that you have ever purchased using the email account you registered your AdGuard account with. You will also find there information about the date of purchase, order number, payment method and cost of the purchase.
+В разделе «История покупок» отображаются все лицензии, которые вы когда-либо приобретали, используя адрес электронной почты, на которую зарегистрирован личный кабинет AdGuard. Вы также найдете там информацию о дате покупки, номере заказа, способе оплаты и стоимости покупки.
 
-## Contact support
+## Связаться с поддержкой
 
-The Support tab contains useful links to help you solve problems or find answers to your questions about AdGuard products. They are divided into six sections: FAQ, Send a bug repot/feature request, Report incorrect blocking, Contact support, Knowledge base and Discuss. 
+Вкладка «Поддержка» содержит полезные ссылки, которые помогут вам решить проблемы или найти ответы на ваши вопросы о продуктах AdGuard. Они разделены на шесть разделов: FAQ, «Отправить отчёт об ошибке/новое предложение», «Сообщить о некорректной блокировке», «Написать в поддержку», «База знаний» и «Обсудить». 

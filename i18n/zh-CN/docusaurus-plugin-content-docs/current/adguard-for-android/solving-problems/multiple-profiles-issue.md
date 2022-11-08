@@ -1,5 +1,5 @@
 ---
-title: Problem with reinstalling AdGuard on Android devices when using the app on multiple user profiles
+title: Problems caused by multiple user profiles
 sidebar_position: 13
 ---
 

@@ -1,28 +1,28 @@
 ---
-title: AdGuard filter policy
+title: Политика фильтров AdGuard
 sidebar_position: 6
 ---
 
-When discussing AdGuard ad filters, one topic often comes up – whether AdGuard should block this or that ad. By setting the rules, we stick to specific criteria that are very similar to [EasyList Policy](https://easylist.to/pages/policy.html), which we find correct and appropriate. However, we have made some changes to it.
+Во время обсуждения рекламных фильтров AdGuard часто возникают дискуссии о том, должен ли AdGuard блокировать ту или иную рекламу. При составлении фильтров мы уже давно придерживаемся определённых правил. Во многом наша политика похожа на [политику EasyList](https://easylist.to/pages/policy.html), которую мы находим правильной и уместной. Тем не менее, некоторые пункты мы пересмотрели и публикуем собственную версию.
 
-![To filter or not to filter](https://cdn.adguard.com/public/Adguard/Common/page_filtering.png)
+![Фильтровать или не фильтровать](https://cdn.adguard.com/public/Adguard/Common/page_filtering.png)
 
-## Terminology
+## Терминология
 
-Throughout this text, we use the terms **first party** and **third party**.
+В этом тексте мы используем термины **собственный** и **сторонний**, которые обозначают принадлежность к тем или иным сайтам.
 
-A "first party" is a website that a user visits intentionally and knowingly, plus a set of resources on the web operated by the same organization. In practice, we consider resources to belong to the same party if they are part of the same registrable domain: a public suffix plus one additional label. Example: `site.example`, `www.site.example`, and `s.u.b.site.example` belong to the same party because `site.example` is their common registrable domain.
+«‎Собственный»‎ обозначает принадлежность либо к сайту, на который пользователь перешёл намеренно, либо к набору ресурсов в сети, управляемых той же организацией. На практике мы почти всегда под этим понимаем принадлежность к одному и тому же регистрируемому домену: публичный суффикс плюс одна дополнительная метка. Пример: `site.example`, `www.site.example`и `subsite.example` принадлежат одной и той же стороне, поскольку `site.example` — это их общий регистрируемый домен.
 
-A "third party" is any party that does not fall within the definition of the first party above. Interactions with other parties are considered third-party, even if the user is transiently informed in context (for example, in the form of a redirect). Merely hovering over, muting, pausing, or closing a given piece of content does not constitute an intention to interact.
+«Сторонний»‎ обозначает принадлежность к любому сайту, в отношении которого неприменимо обозначение «собственный». Interactions with other parties are considered third-party, even if the user is transiently informed in context (for example, in the form of a redirect). Простое наведение курсора, отключение звука, постановка на паузу или скрытие любого элемента пользователем не рассматривается нами как намеренное взаимодействие.
 
-## Common criteria
+## Общие критерии
 
-These equally apply to rules in all filters.
+Они применяются к правилам всех фильтров.
 
-- Rules that often cause problems with the work of some websites will be deleted.
-- Website-specific rules will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
+- Правила, которые часто вызывают проблемы с работой сайтов, будут удаляться.
+- Правила для отдельного сайта будут добавляться, если сайт обладает достаточной посещаемостью. Traffic is determined by open statistics (if available) or by other means, such as social media following. Посещаемость сайта считается достаточной, если количество посещений достигает 30 тысяч в месяц.
 
-## Ad filters
+## Рекламные фильтры
 
 This part describes the AdGuard Base filter, the Mobile Ads filter, and the following language-specific filters: Russian, German, Dutch, Spanish/Portuguese, Japanese, Turkish, Chinese, and French.
 
@@ -32,77 +32,77 @@ This part describes the AdGuard Base filter, the Mobile Ads filter, and the foll
 - Ads should be blocked regardless of their reasons and goals.
 - We will block ads caused by malicious apps or extensions that inject ads. Please note that we do it only on the condition that you specify how to install such an app or extension.
 
-**Limitations and Exceptions**
+**Ограничения и исключения**
 
-If a rule is subject to the list of limitations described below, then it won’t be added to the main filters.
+Если правило подпадает под описанный ниже список ограничений, то оно не будет добавлено в основные фильтры.
 
-- Websites’ own ads should not be removed on purpose. On the other hand, they should not be unblocked if it may cause third-party ads to reappear.
-- Website-specific rules will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
-- Anti-adblock scripts will be blocked only if they limit or affect the functionality of a website.
-- Anti-adblock scripts will not be blocked in cases when it is prohibited by law.
-- Rules that often cause problems with the work of some websites will be deleted.
+- Собственная реклама сайтов не должна удаляться специально. С другой стороны, она не должна быть разблокирована, если это может привести к появлению сторонней рекламы.
+- Правила для конкретного сайта будут добавлены только в том случае, если на нём достаточно трафика. Посещаемость определяется по открытой статистике (если она есть) либо по косвенным признакам, например, по количеству подписчиков в социальных сетях. Посещаемость сайта считается достаточной, если количество посещений достигает 30 тысяч в месяц.
+- Противоблокировочные скрипты будут блокироваться только в том случае, если они ограничивают функциональность сайта или серьёзно мешают его использованию.
+- Противоблокировочные скрипты не будут блокироваться в случаях, когда это запрещено законом.
+- Правила, которые часто вызывают проблемы с работой сайтов, будут удаляться.
 
-## Tracking Protection filter
+## Фильтр счётчиков и систем аналитики
 
-**What will be blocked with this filter?**
+**Что должно блокироваться этим фильтром?**
 
-- This filter will block all trackers that collect user personal data.
+- Фильтр должен блокировать трекеры (счётчики), которые собирают личные данные пользователей.
 
-We define **tracking** as collecting data regarding an individual’s identity or activity across one or more websites. Even if such data is considered to be personally unidentifiable, it’s still tracking.
+Мы определяем **трекинг** как сбор данных о личности и действиях человека на одном или нескольких сайтах. Даже если по этим данным невозможно установить личность человека, подобные действия всё равно считаются трекингом.
 
-**Tracker** is an online script that has tracking as its only purpose, or as one of its purposes.
+**Трекер (счётчик)** — это онлайн-скрипт, единственной целью (или одной из целей) которого является трекинг.
 
-**Limitations and Exceptions**
+**Ограничения и исключения**
 
-If a rule is subject to the list of limitations described below, then it won’t be added to this filter.
+Если правило подпадает под описанный ниже список ограничений, то оно не будет добавлено в фильтр.
 
 - Rules that cause problems with website functionality will be removed.
-- Website-specific rules will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
+- Правила для отдельного сайта будут добавляться, если сайт обладает достаточной посещаемостью. Посещаемость определяется по открытой статистике (если она есть) либо по косвенным признакам, например, по количеству подписчиков в социальных сетях. Посещаемость сайта считается достаточной, если количество посещений достигает 30 тысяч в месяц.
 
-## AdGuard URL Tracking filter
+## Фильтр отслеживания по URL
 
-**What will be blocked with this filter?**
+**Что должно блокироваться этим фильтром?**
 
-- This filter will strip all tracking parameters from URLs.
+- Этот фильтр должен удалять все параметры отслеживания из URL-адресов.
 
-We define **tracking** as collecting data regarding an individual’s identity or activity across one or more websites. Even if such data is considered to be personally unidentifiable, it’s still tracking.
+Мы определяем **трекинг** как сбор данных о личности и действиях человека на одном или нескольких сайтах. Даже если по этим данным невозможно установить личность человека, подобные действия всё равно считаются трекингом.
 
-**Limitations and Exceptions**
+**Ограничения и исключения**
 
-If a rule is subject to the list of limitations described below, then it won’t be added to this filter.
+Если правило подпадает под описанный ниже список ограничений, то оно не будет добавлено в фильтр.
 
-- Rules that would reduce user security levels will be removed.
-- Rules that cause problems with website functionality will be removed.
-- Website-specific rules will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
+- Правила, снижающие уровень безопасности пользователей, будут удаляться.
+- Правила, которые часто вызывают проблемы с работой сайтов, будут удаляться.
+- Правила для отдельного сайта будут добавляться, если сайт обладает достаточной посещаемостью. Посещаемость определяется по открытой статистике (если она есть) либо по косвенным признакам, например, по количеству подписчиков в социальных сетях. Посещаемость сайта считается достаточной, если количество посещений достигает 30 тысяч в месяц.
 
-## Social Media filter
+## Фильтр виджетов социальных сетей
 
-**What will be blocked with this filter?**
+**Что должно блокироваться этим фильтром?**
 
-- This filter will block social media widgets (on third-party websites) such as "Like" and "Share" buttons, recommendation widgets, and more.
+- Фильтр должен блокировать виджеты социальных сетей на сторонних сайтах, такие как кнопки «Нравится» и «Поделиться», виджеты групп, рекомендаций и т. п.
 
-**Limitations and Exceptions**
+**Ограничения и исключения**
 
-If a rule is subject to the list of limitations described below, then it won’t be added to this filter.
+Если правило подпадает под описанный ниже список ограничений, то оно не будет добавлено в фильтр.
 
 - Rules that block widgets that are a part of a website’s functionality, such as "Comments," "Embedded Post," "Surveys," or widgets that require authorization via social networks.
 - Rules that block links to a website’s communities in social networks.
 - Rules that cause problems with website functionality will be removed.
-- Website-specific rules will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
+- Правила для отдельного сайта будут добавляться, если сайт обладает достаточной посещаемостью. Traffic is determined by open statistics (if available) or by other means, such as social media following. Посещаемость сайта считается достаточной, если количество посещений достигает 30 тысяч в месяц.
 
-## Annoyances filter
+## Фильтр раздражителей
 
-**What will be blocked with this filter?**
+**Что должно блокироваться этим фильтром?**
 
 - This filter will block obstructions on the page. These elements are not ads, but they obstruct the view and make it difficult to see the actual content of the website. Such elements include cookie notices, third-party widgets, in-page popups, email subscription forms, banners with special offers, and aggressively placed social media widgets.
 
-**Limitations and Exceptions**
+**Ограничения и исключения**
 
-If a rule is subject to the list of limitations described below, then it won’t be added to this filter.
+Если правило подпадает под описанный ниже список ограничений, то оно не будет добавлено в фильтр.
 
 - Rules that block elements that are essential for the website functioning (e.g. authorization forms) will not be blocked even if they satisfy other requirements.
 - Rules that cause problems with website functionality will be removed.
-- Website-specific rules will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
+- Правила для отдельного сайта будут добавляться, если сайт обладает достаточной посещаемостью. Traffic is determined by open statistics (if available) or by other means, such as social media following. Посещаемость сайта считается достаточной, если количество посещений достигает 30 тысяч в месяц.
 
 ## Filter unblocking search ads and self-promotion
 
@@ -113,10 +113,10 @@ Unlike other filters, this one **unblocks** certain ads. Read more about it in t
 - Search ads (ads that you see among the results when using an online search engine).
 - Website self-promotion (when an ad on a website is promoting this very website or other websites/social media/etc closely related to it).
 
-**Limitations and Exceptions**
+**Ограничения и исключения**
 
 - Rules that cause problems with website functionality will be removed.
-- Website-specific rules will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
+- Правила для отдельного сайта будут добавляться, если сайт обладает достаточной посещаемостью. Traffic is determined by open statistics (if available) or by other means, such as social media following. Посещаемость сайта считается достаточной, если количество посещений достигает 30 тысяч в месяц.
 
 ## Quality requirements for filtering rules
 

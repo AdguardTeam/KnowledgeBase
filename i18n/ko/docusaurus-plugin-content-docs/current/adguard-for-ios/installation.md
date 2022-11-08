@@ -1,48 +1,48 @@
 ---
-title: Installation
+title: 설치 방법
 sidebar_position: 2
 ---
 
-## System requirements
+## 시스템 요구 사항
 
 ### iPhone
 
-Requires iOS 11.2 or later.
+iOS 11.2 이상
 
 ### iPad
 
-Requires iPadOS 11.2 or later.
+iPadOS 11.2 이상
 
 ### iPod touch
 
-Requires iOS 11.2 or later.
+iOS 11.2 이상
 
-## AdGuard for iOS installation
+## iOS용 AdGuard 설치 방법
 
-AdGuard for iOS is an app presented in the App Store. To install it on your device, open the App Store and tap the _Search_ icon on the bottom of the screen.
+iOS용 AdGuard는 App Store에서 다운로드할 수 있는 무료 앱입니다. AdGuard를 설치하려면 App Store 앱을 실행하고 화면 하단의 _Search_ 아이콘을 탭하세요.
 
-![On the App store main screen, tap Search](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/1.png)
+![앱스토어 메인 화면에서 Search를 탭하세요](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/1.png)
 
-Type _adguard_ in the search bar and tap the string _adGuard_ which will be among search results.
+검색창에 _adguard_를 입력한 후 표시될 _adGuard_를 탭하세요.
 
-![Type "AdGuard" in the search bar](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/2.png)
+![검색창에 "AdGuard" 입력](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/2.png)
 
-On the opened page of the App Store tap _GET_ under the string _AdGuard - adblock&privacy_ and then tap _INSTALL_. You may be requested to enter your Apple ID login and password. Type it in and wait for the installation to complete.
+App Store의 열린 페이지에서 _AdGuard - adblock&privacy_ 아래에 있는 _GET_ 버튼을 누른 후 _INSTALL_ 버튼을 클릭합니다. 설치를 완료하려면 Apple ID 로그인 및 암호를 입력하고 설치가 완료될 때까지 기다리십시오.
 
-![Tap GET below the AdGuard app](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/3.png)
+![AdGuard 앱 아래에 있는 GET을 탭하세요](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/3.png)
 
-## AdGuard Pro for iOS installation
+## iOS용 AdGuard Pro 설치 방법
 
-AdGuard Pro is a paid version of AdGuard for iOS, offering an expanded set of functions (same as "AdGuard" app with premium enabled). To install it on your device run the App Store application and tap the _Search_ icon on the bottom of the screen.
+AdGuard Pro는 프리미엄 기능을 제공하는 iOS용 AdGuard의 유료 버전입니다. AdGuard Pro를 설치하려면 App Store 앱을 실행하고 화면 하단의 _Search_ 아이콘을 탭하세요.
 
-![On the App store main screen, tap Search](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/1.png)
+![앱스토어 메인 화면에서 Search를 탭하세요](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/1.png)
 
-Type _adguard_ in the search form, and then tap the string _adGuard pro - adblock_ which will be shown as a search results.
+검색창에 _adguard_를 입력한 후 표시될 _adGuard pro - adblock_를 탭하세요.
 
-![Type "AdGuard" in the search bar](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/2.png)
+![검색창에 "AdGuard" 입력](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/2.png)
 
-On the opened page of the App Store tap the button with the cost of the license under the string _AdGuard Pro - adblock_, and then tap _BUY_. You may be requested to enter your Apple ID login and password. Type it in and wait for the installation to complete.
+App Store의 열린 페이지에서 _AdGuard Pro - adblock_ 아래에 라이선스 가격이 있는 버튼을 탭한 후 _BUY_ 버튼을 누릅니다. 설치를 완료하려면 Apple ID 로그인 및 암호를 입력하고 설치가 완료될 때까지 기다리십시오.
 
-![Tap GET below AdGuard app](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/3.png)
+![AdGuard 앱 아래에 있는 GET을 탭하세요](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/3.png)
 
-*The license can be activated via entering user credentials from an AdGuard account. To that end, it is required that a user has at least one spare license key.*
+*라이선스는 개인 AdGuard 계정에서 사용자 자격 증명을 입력하여 활성화 할 수 있습니다. 이를 위해서 사용자는 하나 추가의 예비 라이선스 키가 있어야 합니다.*

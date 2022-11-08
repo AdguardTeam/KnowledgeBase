@@ -1,50 +1,50 @@
 ---
-title: Credits & Acknowledgements
+title: 致谢
 sidebar_position: 2
 ---
 
-Our dev team would like to thank the developers of this third-party software, our beta testers and other interested users who helped AdGuard improve and grow.
+我们开发人员团队热烈感谢第三方软件的开发者和出色的 Beta 测试用户和其他对 AdGuard 产品感兴趣的用户，为 AdGuard 的进一步改进做出了贡献。
 
-## Third-party software {#software}
+## 第三方软件 {#software}
 
-This is the list of libraries and other resources that really helped us with AdGuard software development process.
+帮我们开发 AdGuard 软件的文库、开源软件和其他资源的列表：
 
-## AdGuard for Windows {#win}
+## AdGuard Windows版 {#win}
 
-* SQLLite database engine: [https://sqlite.org](https://sqlite.org)
-* ADO.NET provider for SQLite: [https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki](https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki)
-* Json.NET — high-performance JSON framework for .NET: [https://www.newtonsoft.com/json](https://www.newtonsoft.com/json)
-* AvalonEdit — WPF-based text editor component: [https://avalonedit.net](https://avalonedit.net)
+* SQLLite 数据库引擎： [https://sqlite.org](https://sqlite.org)
+* SQLite 的 ADO.NET 提供程序： [https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki](https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki)
+* Json.NET — .NET 的高性能 JSON 框架： [https://www.newtonsoft.com/json](https://www.newtonsoft.com/json)
+* AvalonEdit — 基于 WPF 的文本编辑器组件： [https://avalonedit.net](https://avalonedit.net)
 
-## AdGuard for Mac {#mac}
+## AdGuard Mac版 {#mac}
 
-* Red Sweater Software, LLC for RSVerticallyCenteredTextFieldCell component: [http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes](http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes)
-* Ilija Tovilo for ITProgressIndicator component: [https://github.com/iluuu1994/ITProgressIndicator](https://github.com/iluuu1994/ITProgressIndicator)
-* Sparkle Project for Sparkle.framework component: [http://sparkle-project.org](http://sparkle-project.org)
-* Robbie Hanson for GCDAsyncSocket component: [https://github.com/robbiehanson/CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket)
-* Tony Million for Reachability component: [https://github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
-* August «Gus» Mueller for Fmdb component: [https://github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
-* Stephen F. Booth for SFBCrashReporter project: [https://github.com/sbooth/SFBCrashReporter](https://github.com/sbooth/SFBCrashReporter)
-* Bartosz Janda for Acextract component: [https://github.com/bartoszj/acextract](https://github.com/bartoszj/acextract)
-* FLOPageViewController: [https://github.com/floschliep/FLOPageViewController](https://github.com/floschliep/FLOPageViewController)
+* 用于 RSVerticallyCenteredTextFieldCell 组件的 Red Sweater Software, LLC： [http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes](http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes)
+* Ilija Tovilo 用于 ITProgressIndicator 组件： [https://github.com/iluuu1994/ITProgressIndicator](https://github.com/iluuu1994/ITProgressIndicator)
+* Sparkle.framework 组件的 Sparkle 项目： [http://sparkle-project.org](http://sparkle-project.org)
+* GCDAsyncSocket 组件的 Robbie Hanson： [https://github.com/robbiehanson/CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket)
+* 可达性组件的 Tony Million： [https://github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
+* August «Gus» Mueller 用于 Fmdb 组件： [https://github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
+* SFBCrashReporter 项目的 Stephen F. Booth： [https://github.com/sbooth/SFBCrashReporter](https://github.com/sbooth/SFBCrashReporter)
+* 用于 Acextract 组件的 Bartosz Janda： [https://github.com/bartoszj/acextract](https://github.com/bartoszj/acextract)
+* FLOPageViewController： [https://github.com/floschliep/FLOPageViewController](https://github.com/floschliep/FLOPageViewController)
 
-## AdGuard for Android {#android}
+## AdGuard 安卓版 {#android}
 
-* Logback-android by Tony19: [https://tony19.github.io/logback-android](https://tony19.github.io/logback-android)
+* Tony19 的 Logback-android： [https://tony19.github.io/logback-android](https://tony19.github.io/logback-android)
 * Otto by Square: [http://square.github.io/otto](http://square.github.io/otto)
-* RootTools Library by Stericson: [https://github.com/Stericson/RootTools](https://github.com/Stericson/RootTools)
-* MaterialDateRangePicker by Supratim Chakraborty: [https://github.com/borax12/MaterialDateRangePicker](https://github.com/borax12/MaterialDateRangePicker)
-* HelloCharts by Leszek Wach: [https://github.com/lecho/hellocharts-android](https://github.com/lecho/hellocharts-android)
+* Stericson 的 RootTools 库： [https://github.com/Stericson/RootTools](https://github.com/Stericson/RootTools)
+* Supratim Chakraborty 的 MaterialDateRangePicker： [https://github.com/borax12/MaterialDateRangePicker](https://github.com/borax12/MaterialDateRangePicker)
+* Leszek Wach 的 HelloCharts： [https://github.com/lecho/hellocharts-android](https://github.com/lecho/hellocharts-android)
 
-## AdGuard for iOS {#ios}
+## AdGuard iOS版 {#ios}
 
-* Reachability component by Tony Million: [https://github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
-* Fmdb component by August «Gus» Mueller: [https://github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
-* NSStringPunycodeAdditions component by Nate Weaver: [https://github.com/Wevah/Punycode-Cocoa](https://github.com/Wevah/Punycode-Cocoa)
-* Minizip-ng library by Nathan Moinvaziri: [https://github.com/zlib-ng/minizip-ng](https://github.com/zlib-ng/minizip-ng)
-* Lottie for iOS library by Brandon Withrow: [https://github.com/airbnb/lottie-ios](https://github.com/airbnb/lottie-ios)
+* Tony Million 的可达性组件： [https://github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
+* August "Gus" Mueller 的 Fmdb 组件： [https://github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
+* Nate Weaver 的 NSStringPunycodeAdditions 组件： [https://github.com/Wevah/Punycode-Cocoa](https://github.com/Wevah/Punycode-Cocoa)
+* Nathan Moinvaziri 的 Minizip-ng 库： [https://github.com/zlib-ng/minizip-ng](https://github.com/zlib-ng/minizip-ng)
+* Brandon Withrow 的 Lottie for iOS 库： [https://github.com/airbnb/lottie-ios](https://github.com/airbnb/lottie-ios)
 
-## AdGuard Browser extension {#extension}
+## AdGuard 广告拦截扩展 {#extension}
 
 * moment: [https://github.com/moment/moment](https://github.com/moment/moment)
 * simply-deferred: [https://github.com/sudhirj/simply-deferred](https://github.com/moment/moment)
@@ -55,7 +55,7 @@ This is the list of libraries and other resources that really helped us with AdG
 * crypto-js: [https://github.com/brix/crypto-js](https://github.com/brix/crypto-js)
 * ace: [https://github.com/ajaxorg/ace](https://github.com/ajaxorg/ace)
 
-## AdGuard for Safari {#safari}
+## 适用于 Safari 的 AdGuard 应用 {#safari}
 
 * ace: [https://github.com/ajaxorg/ace](https://github.com/ajaxorg/ace)
 * adm-zip: [https://github.com/cthackers/adm-zip](https://github.com/cthackers/adm-zip)
@@ -80,9 +80,9 @@ This is the list of libraries and other resources that really helped us with AdG
 * request: [https://github.com/request/request](https://github.com/request/request)
 * require-dir: [https://github.com/aseemk/requireDir](https://github.com/aseemk/requireDir)
 
-## AdGuard Browser Assistant {#assistant}
+## AdGuard 浏览器助手 {#assistant}
 
-* React: [https://github.com/facebook/react](https://github.com/facebook/react)
+* React：[https://github.com/facebook/react/](https://github.com/facebook/react)
 * webextension-polyfill: [https://github.com/mozilla/webextension-polyfill](https://github.com/mozilla/webextension-polyfill)
 * react-intl: [https://github.com/formatjs/formatjs/tree/main/packages/react-intl](https://github.com/formatjs/formatjs/tree/main/packages/react-intl)
 * mobx: [https://github.com/mobxjs/mobx](https://github.com/mobxjs/mobx)
@@ -121,57 +121,57 @@ This is the list of libraries and other resources that really helped us with AdG
 * SQLite: [https://www.sqlite.org/copyright.html](https://www.sqlite.org/copyright.html)
 * zlib: [https://zlib.net/zlib_license.html](https://zlib.net/zlib_license.html)
 
-## Special thanks {#testers}
+## 特别感谢 {#testers}
 
-Also a huge thanks and gratitude to all beta testers and other engaged users, whose help in finding/eliminating all the bugs, translating AdGuard and moderating our communities was priceless. Special thanks to:
+热烈感谢所有 beta 测试人员和其他参与的用户，TA 们在查找/解决所有错误、翻译 AdGuard 和管理我们的社区方面的帮助是无价的。 特别感谢：
 
-* ag_bug_finder — beta tester of AdGuard for Windows
-* Aikatsui — active contributor to AdGuard Home
-* Andy Kleinert (AndyKl) — translator and proofreader to German in Crowdin
-* BigDargon — contributed the hostsVN project as a source to the list of AdGuard DNS
-* Blaz — started as a filter contributor and now working at AdGuard
-* Boo Berry — forum and Telegram group moderator
-* buuuuuuu190 — beta tester, active AdGuard Forum member
-* clarke — beta tester, active AdGuard Forum member
-* [dartrax](https://github.com/dartrax) — beta tester, active AdGuard Forum member
-* dja2k — beta tester, active AdGuard Forum member
-* Eduardo Addad de Oliveira (eduardoaddad) — translator and proofreader to Portuguese and Portuguese, Brazilian in Crowdin
-* fabjazz — beta tester, active AdGuard Forum member
-* Görkem Emrah Güler (gork7777) — translator and proofreader to Turkish in Crowdin
-* hanschke — beta tester, active AdGuard Forum member
-* iDjay — outstanding beta tester of AdGuard for iOS
-* Imre Kristoffer Eilertsen (DandelionSprout) — maintainer of “Dandelion Sprout’s Nordic Filters” that are included in all AdGuard tools
-* IONIL — translator and proofreader to Hebrew in Crowdin
-* itabmedia — beta tester, active AdGuard Forum member
-* kirasam — beta tester, active AdGuard Forum member
-* krystian3w — very active filter contributor
-* lancelot.moon — translator and proofreader to Chinese Traditional in Crowdin, beta tester
-* Lord Ami — beta tester, active AdGuard Forum member
-* malware1 — beta tester, active AdGuard Forum member
-* milder — beta tester, active AdGuard Forum member
-* Nicos18 — beta tester, active AdGuard Forum member
-* Oizaro — translator and proofreader to Italian in Crowdin
-* Oleg Chashko — very active beta tester of AdGuard for Safari
-* Oskari Lavinto (olavinto) — translator and proofreader to Finnish in Crowdin
-* ouzbed — beta tester, active AdGuard Forum member
-* PentagramTr — filter contributor, namely, he has brought a lot of new things to the Turkish filter
-* Peter Hubinsky (hubak) — translator and proofreader to Slovak in Crowdin
-* PiQuark6046 — filter contributor
-* rickyoh — beta tester, active AdGuard Forum member
-* Ronin427 — beta tester, active AdGuard Forum member
-* Sanjay Nand — beta tester, active AdGuard Forum member
-* saturnotaku — beta tester, active AdGuard Forum member
-* steve1209 — beta tester, active AdGuard Forum member
-* streetwolf — beta tester, active AdGuard Forum member
-* superlex — helps us with scriptlets, filters, and AdGuard for Safari
-* TayTayTheKiller — beta tester, active AdGuard Forum member
-* [TPS](https://github.com/TPS) — bug finder, filter contributor
-* Yuki2718 — actively contributes to AdGuard filters
-* zznosar — active beta tester focused on AdGuard for iOS
-* Sergey Zozulya (sviperz) — active member of our Telegram group, beta tester
+* ag_bug_finder — Windows版 AdGuard 的测试者
+* Aikatsui — AdGuard Home 的积极贡献者
+* Andy Kleinert (AndyKl) — Crowdin 的德语翻译和 Proofreader
+* BigDargon — 将 hostsVN 项目作为一个来源贡献给了 AdGuard DNS 列表
+* Blaz — 最初是过滤器贡献者，现在在 AdGuard 工作
+* Boo Berry — 论坛和 Telegram 群版主
+* buuuuuuu190 — beta 测试员，活跃的 AdGuard 论坛成员
+* clarke — beta 测试员，活跃的 AdGuard 论坛成员
+* [dartrax](https://github.com/dartrax) — beta 测试员，活跃的 AdGuard 论坛成员
+* dja2k — beta 测试员，活跃的 AdGuard 论坛成员
+* Eduardo Addad de Oliveira (eduardoaddad) — 在 Crowdin 上葡萄牙语和巴西葡萄牙语的翻译和审核员
+* fabjazz — beta 测试员，活跃的 AdGuard 论坛成员
+* Görkem Emrah Güler (gork7777) — Crowdin 的土耳其语翻译和审核员
+* hanschke — beta 测试员，活跃的 AdGuard 论坛成员
+* iDjay — AdGuard iOS版的优秀 beta 测试人员
+* Imre Kristoffer Eilertsen (DandelionSprout) — 包含在所有 AdGuard 工具中的 “Dandelion Sprout’s Nordic Filters” 的创造者
+* IONIL — Crowdin 上的希伯来语翻译和审核员
+* itabmedia — beta 测试员，活跃的 AdGuard 论坛成员
+* kirasam — beta 测试员，活跃的 AdGuard 论坛成员
+* krystian3w — 非常活跃的过滤器贡献者
+* lancelot.moon — Crowdin 繁体中文的翻译和审核员，beta 测试员
+* Lord Ami — beta 测试员，活跃的 AdGuard 论坛成员
+* malware1 — beta 测试员，活跃的 AdGuard 论坛成员
+* milder — beta 测试员，活跃的 AdGuard 论坛成员
+* Nicos18 — beta 测试员，活跃的 AdGuard 论坛成员
+* Oizaro — Crowdin 的意大利语翻译和审核员
+* Oleg Chashko — AdGuard Safari版的非常活跃 beta 测试人员
+* Oskari Lavinto (olavinto) — Crowdin 的芬兰语翻译和审核员
+* ouzbed — beta 测试员，活跃的 AdGuard 论坛成员
+* PentagramTr — 过滤器贡献者，即他为土耳其过滤器带来了很多改进
+* Peter Hubinsky (hubak) — Crowdin 的斯洛伐克语翻译和审核员
+* PiQuark6046 — 过滤器贡献者
+* rickyoh — beta 测试员，活跃的 AdGuard 论坛成员
+* Ronin427 — beta 测试员，活跃的 AdGuard 论坛成员
+* Sanjay Nand — beta 测试员，活跃的 AdGuard 论坛成员
+* saturnotaku — beta 测试员，活跃的 AdGuard 论坛成员
+* steve1209 — beta 测试员，活跃的 AdGuard 论坛成员
+* streetwolf — beta 测试员，活跃的 AdGuard 论坛成员
+* superlex — 帮助我们测试 Safari 的小脚本、过滤器和 AdGuard
+* TayTayTheKiller — beta 测试员，活跃的 AdGuard 论坛成员
+* [TPS](https://github.com/TPS) — 错误测试者、过滤器贡献者
+* Yuki2718 — 积极为 AdGuard 过滤器做出贡献
+* zznosar — 活跃的 beta 测试人员，专注于 iOS 的 AdGuard
+* Sergey Zozulya (sviperz) — 我们 Telegram 群的活跃成员，beta 测试员
 
 ---
 
-We also want to thank the [xda-developers users](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/). Thank you for your helpful feedback!
+除此之外，我们想感谢 [xda-developers 的用户](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/)。 非常感谢您向我们发送反馈意见！
 
-We always appreciate comments from our users, especially constructive ones. You can always contact us to share your thoughts about AdGuard, request new features, and submit bugs. Join the [AdGuard Forum](http://forum.adguard.com/forumdisplay.php?25-English-Forums), [Subreddit](https://reddit.com/r/adguard), [Xda-developers Forum](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/) or visit our page on [GitHub](https://github.com/AdguardTeam).
+我们总是很感谢收到用户的反馈意见，特别是建设性的。 大家能随时随地与我们联系，请求改善 AdGuard、新增功能，以及提交错误报告。 加入我们的 [AdGuard 论坛](http://forum.adguard.com/forumdisplay.php?25-English-Forums)、[Subreddit](https://reddit.com/r/adguard)、[Xda-developers Forum](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/) 或访问我们的 [GitHub](https://github.com/AdguardTeam)。

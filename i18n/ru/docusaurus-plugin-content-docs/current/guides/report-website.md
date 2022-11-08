@@ -1,113 +1,113 @@
 ---
-title: How to report a website
+title: Как пожаловаться на некорректную работу сайта
 sidebar_position: 3
 ---
 
 
-When using ad blockers, you may face incorrect work of certain websites or broken page elements. These problems might arise due to a variety of factors:
+При использовании блокировщиков рекламы вы можете столкнуться с некорректной работой некоторых сайтов или неработающими элементами страниц. Эти проблемы могут возникнуть из-за целого ряда факторов:
 
-* Incorrect user rules;
-* Modified algorithms of adding ads;
-* Added filters/extensions from third-party developers;
-* The authors of one of the filters made a mistake when creating the rule;
-* Advertising reinsertion. Find more about this method in our [blog](https://adguard.com/ru/blog/ad-reinsertion.html).
+* Некорректные пользовательские правила;
+* Изменение алгоритмов внедрения рекламы;
+* Добавление фильтров/расширений от сторонних разработчиков;
+* Ошибка, допущенная авторами фильтров при создании правила;
+* Повторное размещение рекламы. Узнайте больше об этом методе в [нашем блоге](https://adguard.com/ru/blog/ad-reinsertion.html).
 
-You can help us by filling in an application form with examples of ads you faced with. To do it, please, use instructions for your OS.
+Вы можете заполнить соответствующую форму с примерами рекламы, с которой вы столкнулись. Так вы здорово нам поможете. Для этого воспользуйтесь инструкциями для вашей ОС.
 
-## Report a website {#report}
+## Отправка жалобы {#report}
 
-> **Note**: When you send a complaint via the app or via AdGuard Browser Assistant, all information is pre-filled automatically. Except for the screenshots, you'll have to make and attach them yourself. If you're using a [direct link](https://reports.adguard.com/new_issue.html), you’ll need to enter data manually.
+> **Примечание**: При отправке жалобы через приложение или через Браузерный Помощник AdGuard вся информация заполняется автоматически. Кроме скриншотов — их придётся прикреплять самостоятельно. Если вы используете [прямую ссылку](https://reports.adguard.com/new_issue.html), вам необходимо ввести данные вручную.
 
-To report a reinsertion of an ad or incorrect displaying of a website, you need to:
+Чтобы сообщить о повторной вставке рекламы или неправильном отображении веб-сайта, вам необходимо:
 
-### Browser extension {#extension}
+### Браузерное расширение {#extension}
 
-* Open the browser extension settings by clicking on the corresponding icon;
-* Click on **Report an issue**:
+* Откройте настройки расширения браузера, нажав на соответствующий значок;
+* Нажмите на **Сообщить о проблеме**:
 
-![extension](https://cdn.adguard.com/content/Kb/ad_blocker/guides/extension_issue.png)
+![расширение](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/extension1ru.png)
 
-* After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
+* После заполнения формы автоматически будет создана проблема на [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) . Там же будет ссылка для отслеживания прогресса в решении вашей проблемы.
 
 ### Windows {#windows}
 
-* Open [AdGuard Browser Assistant](https://kb.adguard.com/en/windows/features/browser-assistant) and hit **Report an issue**:
+* Откройте [Браузерный помощник AdGuard](https://kb.adguard.com/en/windows/features/browser-assistant) и нажмите **Сообщить о проблеме**:
 
-![windows](https://cdn.adguard.com/content/Kb/ad_blocker/guides/browser-assistant.png)
+![windows](https://cdn.adguard.com/public/Adguard/kb/Windows/browser-assistant-ru.png)
 
-* Fill in the form for reporting a complaint;
-* After you've done it, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
+* Заполните форму для подачи жалобы;
+* После заполнения формы автоматически будет создана проблема на [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) . Там же будет ссылка для отслеживания решения вашей проблемы.
 
 ### Android {#android}
 
-* Open AdGuard settings;
-* Сhoose **Support**, then **Send Feedback** -> **Missed ad**/**Incorrect blocking**:
+* Откройте настройки AdGuard;
+* Выберите **Поддержка**, затем **Сообщение в поддержку** -> **Пропущенная реклама**/**Некорректная блокировка**:
 
-![android](https://cdn.adguard.com/content/Kb/ad_blocker/guides/android.png)
+![android](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/android1ru.png)
 
-* After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
+* После заполнения формы автоматически будет создана проблема на [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) . Там же будет ссылка для отслеживания прогресса в решении вашей проблемы.
 
 ### Mac {#mac}
 
-* Open [AdGuard Browser Assistant](https://kb.adguard.com/en/macos/overview/browser-assistant) and hit **Report an issue**:
+* Откройте [Браузерный помощник AdGuard](https://kb.adguard.com/en/macos/overview/browser-assistant) и нажмите **Сообщить о проблеме**:
 
-![mac](https://cdn.adguard.com/content/Kb/ad_blocker/guides/browser-assistant-mac.png)
+![mac](https://cdn.adguard.com/public/Adguard/kb/MAC/browser-assistant-ru.png)
 
-* Fill in the form for reporting a complaint;
-* After you've done it, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
+* Заполните форму для подачи жалобы;
+* После заполнения формы автоматически будет создана проблема на [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) . Там же будет ссылка для отслеживания прогресса в решении вашей проблемы.
 
 ### iOS {#ios}
 
-* Open AdGuard settings;
-* Choose **Support**, then **Report incorrect blocking**:
+* Откройте настройки AdGuard;
+* Выберите **Поддержка**, затем **Сообщить о некорректной блокировке**:
 
 ![ios](https://cdn.adguard.com/content/Kb/ad_blocker/guides/ios_issue.png)
 
-* Fill in the form for reporting a complaint;
-* After you've done it, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
+* Заполните форму для подачи жалобы;
+* После заполнения формы автоматически будет создана проблема на [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) . Там же будет ссылка для отслеживания прогресса в решении вашей проблемы.
 
-## Filling in the form {#form}
+## Заполнение формы {#form}
 
-> **Note**: When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. Except for the screenshots, you'll have to make and attach them yourself. If you're using a [direct link](https://reports.adguard.com/en/new_issue.html), you’ll need to enter data manually.
+> **Примечание**: При отправке жалобы через приложение или через Браузерный Помощник AdGuard вся информация заполняется автоматически. Кроме скриншотов — их придётся прикреплять самостоятельно. Если вы используете [прямую ссылку](https://reports.adguard.com/en/new_issue.html), вам необходимо ввести данные вручную.
 
-1. Filling in the form starts with detailing the type and version of a product; ![forma1](https://cdn.adguard.com/content/Kb/ad_blocker/guides/forma1en.png)
-2. Specify the type of problem and additional information on using third-party software (antivirus, VPN); ![forma2](https://cdn.adguard.com/content/Kb/ad_blocker/guides/forma2en.png)
-3. Enter the address of the page where you have encountered the problem (or full download link in case of an app), and the browser where you've encountered a problem; ![forma3](https://cdn.adguard.com/content/Kb/ad_blocker/guides/forma3en.png)
-4. Application configuration must be specified:
-* Filters you use;
-* Stealth mode settings, if this function is enabled. ![forma4](https://cdn.adguard.com/content/Kb/ad_blocker/guides/forma4en.png)
-5. [Provide a screenshot](./take-screenshot.md) that captures the essence of a problem;
-* **Important**: Hide your personal information (email, phone number, etc.) because screenshots will become publicly available. ![forma5](https://cdn.adguard.com/content/Kb/ad_blocker/guides/forma5en.png)
-6. Provide additional information that will help filter developers understand the situation; Also enter your account on **GitHub**, if available (it's necessary for developers to be able to reach you in case they need some additional details); ![forma6](https://cdn.adguard.com/content/Kb/ad_blocker/guides/forma6en.png)
-7. Check each step before sending the form; ![forma7](https://cdn.adguard.com/content/Kb/ad_blocker/guides/forma7en.png)
-8. You'll be provided with a link to track progress on your task. ![forma8](https://cdn.adguard.com/content/Kb/ad_blocker/guides/forma8en.png)
+1. Заполнение формы начинается с указания типа и версии продукта; ![форма1](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma1ru.png)
+2. Укажите тип проблемы и дополнительную информацию об использовании стороннего ПО (антивирус, VPN); ![форма2](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma2ru.png)
+3. Введите адрес страницы, на которой вы столкнулись с проблемой (или полную ссылку для скачивания в случае приложения), и браузер, на котором вы столкнулись с проблемой; ![форма3](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma3ru.png)
+4. Необходимо указать конфигурацию приложения:
+* Используемые вами фильтры;
+* Настройки Антитрекинга, если эта функция включена.![форма4](https://cdn.adguard.com/content/kb/ad_blocker/guides/forma4en.png)
+5. [Добавьте скриншот,](./take-screenshot.md) на котором отражена суть проблемы;
+* **Важно**: Скройте вашу личную информацию (email, номер телефона и т.п.), потому что добавленные скриншоты станут общедоступны; ![форма5](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma5ru.png)
+6. Укажите дополнительную информацию, которая поможет разработчикам фильтров разобраться в ситуации. Также укажите ваш аккаунт на **GitHub**, если таковой имеется (это необходимо, чтобы разработчики могли связаться с вами для выяснения дополнительный деталей, если это потребуется); ![форма6](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma6ru.png)
+7. Проверьте каждый шаг перед отправкой формы; ![форма7](https://cdn.adguard.com/content/Kb/ad_blocker/guides/forma7en.png)
+8. Вы увидите ссылку для отслеживания решения по вашей задаче.![форма8](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma8ru.png)
 
-## Diagnosis of an issue {#issue}
+## Диагностика проблемы {#issue}
 
-This option is suitable for those who aren’t afraid of difficulties and don’t mind trying to find the problem on their own. This does not require any special skills or in-depth knowledge of HTML and CSS.
+Этот вариант подходит для тех, кто не боится трудностей и не против попытаться найти проблему самостоятельно. Это не требует специальных навыков или глубоких знаний HTML и CSS.
 
-For example, you are faced with a situation that your favorite website won’t open, authorization has broken, or some page elements are displayed incorrectly. The cause may be using a specific filter/extension/Stealth Mode setting. To diagnose these problems, you need to do the following:
+Например, вы столкнулись с ситуацией, что ваш любимый сайт не открывается, нарушена авторизация или некоторые элементы страницы отображаются некорректно. Причиной может быть использование определенного фильтра/расширения/настройки скрытого режима. Чтобы диагностировать эти проблемы, необходимо сделать следующее:
 
-### **Filters**
+### **Фильтры**
 
-1. Disable **Ad Blocker**;
-2. If it solved the problem, re-enable the module and disable filters one by one. This is done to identify filters that "break" the page;
-3. If you have managed to find out which filter "breaks" a page, you should inform the developers when filling out the form (see above). In this case, it is desirable to return to the initial settings;
-4. If turning off all the filters hasn't produced any results, apply rule **@@||example.com^$document,extension**; where **example.com** is an example site name that needs to be replaced by your own option;
-5. In case of failure (issue not solved), turn to section **Stealth Mode**.
+1. Отключите **Блокировщик**;
+2. Если это решило проблему, снова включите модуль и отключите фильтры один за другим. Это делается для выявления фильтров, которые „ломают“ страницу;
+3. Если вы выяснили, какой фильтр приводит к некорректной блокировке, сообщите об этом разработчикам при заполнении формы (см. выше). Также желательно восстановить настройки по умолчанию;
+4. Если отключение всех фильтров не дало никаких результатов, примените правило **@@||example.com^$document,расширение**, где **example.com** — это пример имени сайта, которое нужно заменить на ваш собственный вариант;
+5. Если проблема не решилась, перейдите к разделу **Антитрекинг**.
 
-### **Stealth Mode**
+### **Антитрекинг**
 
-1. Disable **Stealth Mode**;
-2. If this solved the problem, turn the module on and turn off the **Stealth Mode** options one by one. This is done to detect which filters are "breaking" the page;
-3. If you have managed to to detect which setting "breaks" a page, you should inform the developers when filling out the form (see above). In this case, it is desirable to return to the initial settings;
-4. In case of failure (issue not solved), turn to section **Extensions**.
+1. Отключите **Антитрекинг**;
+2. Если это решило проблему, включите модуль и поочерёдно отключите опции Антитрекинга c проверкой результата. Это необходимо для того, чтобы определить, какие именно настройки приводят к некорректной блокировке;
+3. Если вам удалось выявить, какая настройка приводит к некорректной работе страницы, сообщите об этом разработчикам при заполнении формы (см. выше). Также желательно восстановить настройки по умолчанию;
+4. Если проблема не решилась, перейдите к разделу **Расширения**.
 
-### **Extensions**
+### **Расширения**
 
-1. Disable **Extensions**;
-2. If this solved the problem, turn on the module and turn off **Extensions** settings one by one. This is done to find out which setting "breaks" the page;
-3. If you have managed to detect which setting "breaks" a page, inform the developers when filling out the form (see above). In this case, it is desirable to return to the initial settings.
+1. Отключите **Расширения**;
+2. Если это решило проблему, включите модуль и поочерёдно отключите настройки **Расширений** с проверкой результата.  Это необходимо для того, чтобы определить какая настройка приводит к некорректной работе страницы;
+3. Если вам удалось выявить, какая настройка приводит к некорректной работе страницы, сообщите об этом разработчикам при заполнении формы (см. выше). В этом случае желательно восстановить настройки по умолчанию.
 
-### **Third-party blockers**
-Some browsers and antivirus programs (such as Yandex Browser, Kaspersky, etc.) have built-in ad blockers. They may affect and cause problems in the operation of sites. If you use such programs, make sure that the problem is on the side of **AdGuard**: disable **AdGuard** filtering and try to repeat the problem. If it remains, it means that the problem is caused by another application or browser. If the problem is caused by **AdGuard**, follow the steps described in the previous paragraphs.
+### **Сторонние блокировщики**
+Некоторые браузеры и антивирусы (такие, как Яндекс.Браузер, Kaspersky и т.д.) имеют встроенные блокировщики рекламы. Они могут влиять на функционирование сайтов, вызывать конфликты с AdGuard и приводить к некорректной работе сайтов. Если вы пользуетесь подобными программами, убедитесь, что проблема вызвана именно **AdGuard**: отключите фильтрацию **AdGuard** и попробуйте повторить проблему.  Если она сохранится, значит проблема вызвана другим приложением или браузером. Если же проблема вызвана **AdGuard**, выполните действия, указанные в предыдущих пунктах.

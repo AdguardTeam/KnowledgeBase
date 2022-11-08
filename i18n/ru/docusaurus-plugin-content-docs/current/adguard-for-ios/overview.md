@@ -1,208 +1,208 @@
 ---
-title: Features overview
+title: Обзор функций
 sidebar_position: 1
 ---
 
-If you look for AdGuard in the App Store, you'll find two apps — [AdGuard](https://itunes.apple.com/app/id1047223162) and [AdGuard Pro](https://itunes.apple.com/app/id1126386264). These apps are designed to block ads and trackers in Safari, other browsers, and apps, and to manage DNS protection. Don't be misled by their names, both apps block ads on smartphones and tablets by Apple. They used to differ in functionality due to the changing App Store review guidelines, but now these two apps are [basically the same](https://adguard.com/en/blog/updating-adguard-pro-for-ios.html). So if you have purchased AdGuard Pro, there is no need to download AdGuard and buy a license there, and vice versa.
+Если вы будете искать AdGuard в App Store, то найдёте два приложения — [AdGuard](https://itunes.apple.com/app/id1047223162) и [AdGuard Pro](https://itunes.apple.com/app/id1126386264). Они созданы для блокировки рекламы и трекинга в Safari, в других браузерах и приложениях, а также для управления DNS-фильтрацией. Не дайте разным названиям себя обмануть, оба приложения одинаково блокируют рекламу на айфонах и айпадах. Раньше их функционал отличался из-за меняющихся принципов App Store, но теперь приложения [практически идентичны](https://adguard.com/ru/blog/updating-adguard-pro-for-ios.html). Так что если у вас уже есть AdGuard Pro, не нужно скачивать AdGuard и покупать там лицензию, и наоборот.
 
-## Features {#features}
+## Функции {#features}
 
-AdGuard and AdGuard Pro for iOS offer lots of features for blocking ads, trackers and creating user rules, both in Safari and on network level.
+У AdGuard и AdGuard Pro для iOS много функций для блокирования рекламы и трекеров и создания пользовательских правил, как в Safari, так и на уровне сети.
 
-### Content blockers {#content-blockers}
+### Блокировщики контента {#content-blockers}
 
-Content blockers serve as 'containers' for filtering rules that do the actual job of blocking ads and tracking. AdGuard for iOS contains six content blockers: General, Privacy, Social, Security, Custom, and Other. Previously Apple only allowed each content blocker to contain a maximum of 50K filtering rules, but with iOS 15 release the upper limit has moved to 150K rules.
+Блокировщики контента служат «контейнерами» для хранения правил фильтрации, которые и выполняют основную работу: блокируют рекламу и трекинг. В AdGuard для iOS шесть блокировщиков контента: General, Privacy, Social, Security, Custom и Other. До недавнего времени Apple разрешал использовать только 50 000 правил фильтрации на один блокировщик контента, а в iOS 15 верхняя граница ограничения отодвинулась на отметку 150 000 правил.
 
-All content blockers, their statuses, which thematic filters they currently include, and a total number of used filtering rules can be found on the respective screen in *Advanced settings* (tap the gear icon at the bottom right > *General* > *Advanced settings* > *Content blockers*).
+Все блокировщики контента, их статусы, используемые на данный момент фильтры и общее количество правил фильтрации можно найти на соответствующем экране в *Расширенных настройках* (нажмите на иконку шестерёнки в правом нижнем углу > *Общие* > *Расширенные настройки* > *Блокировщики контента*).
 
-![Content blockers](https://cdn.adguard.com/public/Adguard/kb/iOS/features/content_blockers_en.jpeg)
+![Блокировщики контента](https://cdn.adguard.com/public/Adguard/kb/iOS/features/content_blockers_en.jpeg)
 
-> Tip: keep all content blockers enabled for the best filtering quality.
+> Подсказка: для наилучшего качества фильтрации рекомендуем держать все блокировщики контента включёнными.
 
 ### Filters {#filters}
 
-Content blockers' work is based on filters, also sometimes referred to as filter lists. Each filter is a list of filtering rules. If you have an enabled ad blocker when browsing, it constantly checks the visited pages and elements on them against these filtering rules, and blocks anything that matches. Rules are developed to block ads, trackers, and more.
+Работа блокировщиков рекламы основана на фильтрах. Каждый фильтр — это список правил фильтрации. Когда вы пользуетесь интернетом со включённым блокировщиком рекламы, то последний постоянно проверяет посещаемые страницы и элементы на них. Всё, что соответствует каким-либо правилам фильтрации, он блокирует. Правила построены таким образом, чтобы блокировать трекеры, рекламу и многое другое.
 
-All filters are grouped into thematic categories. To see the full list of these categories (not to be confused with content blockers), open the *Protection* section by tapping the shield icon, then go to *Safari protection* > *Filters*.
+Фильтры сгруппированы в тематические категории. Чтобы увидеть полный список категорий (не путать с блокировщиками контента), откройте раздел *Защита*, нажав на изображение щита внизу экрана, затем выберите *Защита Safari* > *Фильтры*.
 
-![Filter groups](https://cdn.adguard.com/public/Adguard/kb/iOS/features/filters_group_en.jpeg)
+![Группы фильтров](https://cdn.adguard.com/public/Adguard/kb/iOS/features/filters_group_en.jpeg)
 
-There are eight of them, each category unites several filters that serve and share a common purpose, i.e. blocking ads, social media widgets, cookie notices, protecting the user from online scams. To decide which filters suit your needs, read their descriptions and navigate by the labels (`ads`, `privacy`, `recommended`, etc.).
+Всего категорий восемь, каждая объединяет несколько фильтров, служащих общей цели. Например, они блокируют рекламу, виджеты социальных сетей, уведомления о cookie или защищают пользователя от мошенников. Чтобы вам было легче решить, какие фильтры вам подходят, читайте их описания и ориентируйтесь по меткам (`ads`, `privacy`, `recommended` и т.д.).
 
-> More enabled filters does not guarantee that there will be less ads. A large number of various filters enabled simultaneously reduces the quality of ad blocking.
+> Больше включённых фильтров не гарантирует, что рекламы будет меньше. Большое количество одновременно включённых фильтров снижает качество блокировки рекламы.
 
-> Custom filters category is empty by default for users to add there their filters by URL. You can find filters on the Internet or even try to [create one by yourself](/general/ad-filtering/create-own-filters.md).
+> Категория пользовательских фильтров пуста по умолчанию, чтобы пользователи могли добавлять туда свои фильтры по URL. Их можно найти в интернете или даже попробовать [создать самостоятельно](/general/ad-filtering/create-own-filters.md).
 
-### User rules {#user-rules}
+### Пользовательские правила {#user-rules}
 
-Here you can add new rules — either by entering them manually, or by using [the AdGuard manual blocking tool in Safari](/adguard-for-ios/overview.md#assistant). Use this tool to customize Safari filtering without adding an entire filter list.
+В этом разделе вы можете добавлять новые правила — либо введя их вручную, либо используя [инструмент ручной блокировки AdGuard в Safari](/adguard-for-ios/overview.md#assistant). Используйте пользовательские правила, чтобы настроить фильтрацию Safari без добавления целого списка фильтров.
 
-> Learn [how to create your own ad filters](/general/ad-filtering/create-own-filters.md). But please note that many of them won't work in Safari on iOS.
+> Узнайте, [как создавать свои фильтры](/general/ad-filtering/create-own-filters.md). Но обратите внимание, что не все они будут работать в Safari на iOS.
 
-![User rules screen](https://cdn.adguard.com/public/Adguard/kb/iOS/features/user_rules_en.jpeg)
+![Экран «Пользовательские правила»](https://cdn.adguard.com/public/Adguard/kb/iOS/features/user_rules_en.jpeg)
 
-### Allowlist {#allowlist}
+### Белый список {#allowlist}
 
-The third section of the *Safari protection* screen. If you want to disable ad blocking on a certain website, Allowlist will be of help. It allows you to add domains and subdomains to exlcusions. AdGuard for iOS has an Import/Export feature, so the allowlist from one device can be easily transferred to another.
+Третий раздел на экране *Защита Safari*. Если вы хотите отключить блокировку рекламы на определённом сайте, Белый список поможет это сделать. Он позволяет добавлять домены и поддомены в список исключений. В AdGuard для iOS есть функция экспорта/импорта, благодаря которой можно переносить Белый список с одного устройства на другое.
 
-### DNS protection {#dns-protection}
+### DNS-защита {#dns-protection}
 
-[DNS protection module](https://adguard-dns.io/kb/general/dns-filtering/) enhances your privacy by encrypting your DNS traffic. Unlike with Safari content blocking, DNS protection works system-wide, i.e. beyond Safari, in apps and other browsers. You have to enable this module before you're able to use it. You can do this on the home screen by tapping the shield icon at the top of the screen, or by going to the *Protection* > *DNS protection* tab.
+[Модуль DNS-защиты](https://adguard-dns.io/kb/general/dns-filtering/) усиливает конфиденциальность, шифруя ваш DNS-трафик. В отличие от Защиты Safari, DNS-защита распространяется на всё устройство, то есть работает в других браузерах и приложениях. Включите этот модуль, чтобы шифровать DNS-трафик и блокировать отслеживающие домены. Это можно сделать на главном экране, нажав на изображение щита в верхней части экрана, или перейдя во вкладку *Защита * > *DNS-защита*.
 
-> To be able to manage DNS settings, AdGuard apps require establishing a local VPN. It will not route your traffic through any remote servers. Nevertheless, the system will ask you to confirm permission access.
+> Чтобы управлять DNS-настройками, приложения AdGuard требуют установить локальный VPN. Он не будет направлять ваш трафик через какие-либо удалённые серверы. Тем не менее, система попросит вас подтвердить разрешение на доступ.
 
-### DNS implementation {#dns-implementation}
+### Реализация DNS {#dns-implementation}
 
-![DNS implementation screen](https://cdn.adguard.com/public/Adguard/kb/iOS/features/implementation_en.jpeg)
+![Экран «Реализация DNS»](https://cdn.adguard.com/public/Adguard/kb/iOS/features/implementation_en.jpeg)
 
-This section has two options: AdGuard and Native implementation. Basically, these are two methods of setting up DNS.
+В этом разделе есть две опции на выбор: AdGuard и Нативная. По сути, это два метода настройки DNS.
 
-In Native implementation, the DNS is handled by the system and not the app. This means that AdGuard doesn't have to create a local VPN. Sadly, this will not help you circumvent system restrictions and use AdGuard alongside other VPN-based applications — if any VPN is enabled, native DNS is ignored. Consequently, you won't be able to filter traffic locally or to use our brand new [DNS-over-QUIC protocol (DoQ)](https://adguard.com/en/blog/dns-over-quic.html).
+При выборе режима Нативной реализации DNS-запросы обрабатываются системой, а не приложением. Это означает, что AdGuard не нужно создавать локальный VPN. К сожалению, это не поможет вам обойти системные ограничения и использовать AdGuard вместе с другими приложениями на основе VPN: если включено любое VPN-приложение, нативный DNS игнорируется. Следовательно, вы не сможете локально фильтровать трафик или использовать наш новый [протокол DNS-over-QUIC (DoQ)](https://adguard.com/ru/blog/dns-over-quic.html).
 
-### DNS servers {#dns-servers}
+### DNS-серверы {#dns-servers}
 
-The first section you'll see on the DNS Protection screen is DNS server. It shows the currently selected DNS server and encryption type. To change either, tap the button to enter the DNS server screen.
+DNS-сервер — это вторая опция, которую вы увидите на экране DNS-защиты. В ней показаны выбранные в данный момент DNS-сервер и тип шифрования. Нажмите на кнопку «DNS-сервер», если хотите изменить один из этих параметров (или оба).
 
-![DNS servers](https://cdn.adguard.com/public/Adguard/kb/iOS/features/dns_server_en.jpeg)
+![DNS-серверы](https://cdn.adguard.com/public/Adguard/kb/iOS/features/dns_server_en.jpeg)
 
-Servers differ by their speed, employed protocol, trustworthiness, logging policy, etc. By default, AdGuard will suggest several DNS servers from among the most popular ones (including AdGuard DNS). Tap any to change the encryption type (if such option is provided by the server's owner) or to view the server's homepage. We added labels such as `No logging policy`, `Ad blocking`, `Security` to help you make a choice.
+Серверы отличаются скоростью, используемым протоколом, надёжностью, политикой логирования и т.д. По умолчанию AdGuard предложит несколько DNS-серверов из числа наиболее популярных (включая AdGuard DNS). Нажмите на любой из них, чтобы изменить тип шифрования (если такая опция предусмотрена владельцем сервера) или перейти на домашнюю страницу сервера. Мы добавили такие ярлыки, как `Политика «Без логов»`, `Блокировка рекламы`, `Безопасность`, чтобы помочь вам сделать выбор.
 
-In addition, at the bottom of the screen there is an option to add a custom DNS server. It supports regular, DNSCrypt, DNS-over-HTTPS, DNS-over-TLS, and DNS-over-QUIC servers.
+Помимо этого, в нижней части экрана есть возможность добавить пользовательский DNS-сервер. Он поддерживает обычные серверы, DNSCrypt, DNS-over-HTTPS, DNS-over-TLS и DNS-over-QUIC.
 
-### Network settings {#network-settings}
+### Настройки сети {#network-settings}
 
-![Network settings screen](https://cdn.adguard.com/public/Adguard/kb/iOS/features/network_settings_en.jpeg)
+![Экран «Настройки сети»](https://cdn.adguard.com/public/Adguard/kb/iOS/features/network_settings_ru.jpeg)
 
-Users can also handle their DNS security on the Network settings screen. *Filter mobile data* and *Filter Wi-Fi* enable or disable DNS protection for respective network types. Further down, at *Wi-Fi exceptions*, you can exclude particular Wi-Fi networks from DNS protection (for example, you might want to exclude your home network if you use [AdGuard Home](https://adguard.com/en/adguard-home/overview.html)).
+Пользователи также могут управлять DNS-защитой на экране Настройки сети. Опции *Фильтровать мобильные данные* и *Фильтровать Wi-Fi* включают или отключают DNS-защиту для соответствующих типов сети. Ниже, в разделе *Сети-исключения*, вы можете исключить определённые сети Wi-Fi из DNS-защиты (например, вы, возможно, захотите исключить домашнюю сеть, если используете [AdGuard Home](https://adguard.com/ru/adguard-home/overview.html)).
 
-### DNS filtering {#dns-filtering}
+### DNS-фильтрация {#dns-filtering}
 
-To get access to this setting, *Advanced mode* has to be enabled from the *General settings* screen. After that, a new section will appear on the DNS protection screen. Tap it to customize your DNS traffic by applying own rules.
+Чтобы получить доступ к этой настройке, *Расширенный режим* должен быть включен на экране *Общие настройки*. После этого на экране DNS-защиты появится новый раздел. Нажмите на него, чтобы кастомизировать DNS-трафик, применяя собственные правила.
 
-![DNS filtering screen](https://cdn.adguard.com/public/Adguard/kb/iOS/features/dns_filtering_en.jpeg)
+![Экран «DNS-фильтрация»](https://cdn.adguard.com/public/Adguard/kb/iOS/features/dns_filtering_en.jpeg)
 
-#### DNS filters {#dns-filters}
+#### DNS-фильтры {#dns-filters}
 
-Similar to filters that work in Safari, DNS filters are sets of rules written according to special [syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/). AdGuard will monitor your DNS traffic and block requests that match one or more rules. You can use filters such as [AdGuard DNS filter](https://github.com/AdguardTeam/AdguardSDNSFilter) or add hosts files as filters. Multiple filters can be added simultaneously. To know how to do it, get acquainted with [an exhaustive manual](/adguard-for-ios/solving-problems/how-to-configure-system-wide-blocking.md).
+Подобно фильтрам, которые работают в Safari, DNS-фильтры представляют собой наборы правил, написанных в соответствии со специальным [синтаксисом](https://adguard-dns.io/kb/general/dns-filtering-syntax/). AdGuard будет отслеживать ваш DNS-трафик и блокировать запросы, подходящие под одно или несколько правил. Вы можете использовать такие фильтры, как [AdGuard DNS](https://github.com/AdguardTeam/AdguardSDNSFilter), или добавлять файлы hosts в качестве фильтров. Также вы можете добавить несколько фильтров одновременно. To know how to do it, get acquainted with [an exhaustive manual](/adguard-for-ios/solving-problems/system-wide-filtering.md).
 
-#### Allowlist and Blocklist {#allowlist-blocklist}
+#### Белый и чёрный список {#allowlist-blocklist}
 
-On top of DNS filters, you can have targeted impact on DNS filtering by adding single domains to Blocklist or to Allowlist. Blocklist even supports the same DNS syntax, and both of them can be imported and exported, just like Allowlist in Safari content blocking.
+Вы можете точечно влиять на DNS-фильтрацию не только с помощью DNS-фильтров, но и добавляя отдельные домены в списки. Чёрный список даже поддерживает тот же синтаксис для DNS-фильтрации, и оба списка — Белый и Чёрный — можно импортировать и экспортировать, как и Белый список в блокировке контента Safari.
 
-### Advanced protection {#advanced-protection}
+### Расширенная защита {#advanced-protection}
 
-In iOS 15 Apple has added the support for Safari Web Extensions, and we in turn added a new *Advanced protection* module to AdGuard for iOS. It allows AdGuard to apply advanced filtering rules, such as CSS rules, CSS selectors, and scriptlets, and therefore to deal even with the complex ads, such as YouTube ads.
+В iOS 15 Apple добавил поддержку веб-расширений для Safari, а мы, в свою очередь, добавили в AdGuard для iOS новый модуль *Расширенная защита*. Благодаря ему AdGuard может применять расширенные правила фильтрации, такие как CSS-правила, CSS-селекторы и скриптлеты, и тем самым способен бороться со сложной рекламой, например, с рекламой в YouTube.
 
-![Advanced protection screen](https://cdn.adguard.com/public/Adguard/kb/iOS/features/protection_screen_15_en.jpeg)
+![Экран «Расширенная защита»](https://cdn.adguard.com/public/Adguard/kb/iOS/features/protection_screen_15_en.jpeg)
 
-To enable *Advanced protection*, open the *Protection* tab by tapping the second left icon at the bottom of the screen, select the *Advanced protection* module, activate the feature by toggling the switch slider, and follow the instructions below.
+Чтобы включить *Расширенную защиту*, откройте вкладку *Защита* нажатием на вторую слева иконку внизу экрана, выберите модуль *Расширенная защита*, активируйте функцию, передвинув бегунок выключателя, и следуйте инструкции, расположенной ниже.
 
-> The *Advanced protection* only works on iOS 15 and later versions. If you are using earlier versions of iOS, you will see the *YouTube ad blocking* module in the app instead of the *Advanced protection*.
+> *Расширенная защита* работает только на iOS 15 и более поздних версиях. Если вы используете более ранние версии iOS, в приложении вместо модуля *Расширенная защита* вы увидите модуль *Блокировка рекламы на YouTube*.
 
-![Protection screen on iOS 14 and earlier](https://cdn.adguard.com/public/Adguard/kb/iOS/features/protection_screen_14_en.jpeg)
+![Экран «Защита» на iOS 14 и более ранних версиях](https://cdn.adguard.com/public/Adguard/kb/iOS/features/protection_screen_14_en.jpeg)
 
-### Compatibility with AdGuard VPN {#compatibility}
+### Совместимость с AdGuard VPN {#compatibility}
 
-In most cases, the ad blocker and the VPN application cannot work together, simply because there are certain system limitations. Nevertheless we've managed to find a solution to befriend [AdGuard VPN](https://adguard-vpn.com/) and AdGuard Ad Blocker. For your convenience we've added the *AdGuard VPN* block to the *Protection* section, so you can easily switch between two apps.
+В большинстве случаев блокировщик рекламы и VPN-приложение не могут работать вместе, просто потому что существуют определённые системные ограничения. Несмотря на это, нам удалось найти решение, как «подружить» [AdGuard VPN](https://adguard-vpn.com/) и блокировщик AdGuard. Для большего удобства мы добавили блок *AdGuard VPN* в раздел *Защита*, чтобы вы могли с лёгкостью переключаться между двумя приложениями.
 
-### Assistant {#assistant}
+### Помощник {#assistant}
 
-![Safari Assistant](https://cdn.adguard.com/public/Adguard/kb/iOS/features/assistant_en.jpeg)
+![Помощник Safari](https://cdn.adguard.com/public/Adguard/kb/iOS/features/assistant_en.jpeg)
 
-Assistant is a tool that helps you manage filtering in Safari right from the browser without switching back to the app.
+Помощник — это инструмент, который помогает вам управлять фильтрацией прямо из Safari, не возвращаясь в приложение.
 
-To see it, do the following: open Safari and tap the arrow-in-a-box symbol. Then scroll down to AdGuard/AdGuard Pro (depending on the app you use) and tap it to fetch a window with several options:
+Чтобы увидеть его, откройте Safari и нажмите на иконку коробки со стрелкой, направленной вверх. Проскролльте до AdGuard/AdGuard Pro (в зависимости от того, что у вас установлено) и нажмите на него — откроется окно с несколькими опциями:
 
-1. **Enable on this page.** Turn the switch off to add the current domain to the Allowlist.
-2. **Block an element on this page.** Tap it to enter the 'Element blocking' mode: choose any element on the page, adjust the size by tapping 'plus' or 'minus', preview if necessary and then tap the checkmark icon to confirm. The selected element will be hidden from the page and a corresponding rule will be added to User rules. Remove or disable it there to revert the change.
-3. **Report an issue on this page.** Opens a web reporting tool that will help you send a report to our support team in just a few taps. Use it if you noticed a missed ad or an incorrect blocking on the page.
+1. **Включить на этом сайте.** Выключите, чтобы добавить текущий домен в Белый список.
+2. **Заблокировать элемент на этой странице.** Нажмите, чтобы перейти в режим «Блокировка элемента»: выберите любой элемент на странице, отрегулируйте размер, нажимая «+» или «-», воспользуйтесь предварительным просмотром, если необходимо, и нажмите на галочку, чтобы подтвердить. Выбранный элемент будет скрыт со страницы, а соответствующее правило — добавлено в Пользовательские правила. Уберите или отключите его, чтобы вернуть блокировку.
+3. **Сообщить о проблеме на этой странице.** Открывает инструмент отправки веб-отчёта, с помощью которого вы сможете быстро обратиться к нашей команде поддержки. Используйте его, если заметили пропущенную рекламу или некорректную блокировку на странице.
 
-> On iOS 15 devices, the Assistant features are available through [AdGuard Safari Web Extension](/adguard-for-ios/web-extension.md), which enhances the capabilities of AdGuard for iOS and allows you to take advantage of iOS 15. With this web extension, AdGuard can apply advanced filter rules and, as a result, block more ads.
+> На устройствах с iOS 15 функции Помощника доступны через [веб-расширение AdGuard для Safari](/adguard-for-ios/web-extension.md), которое служит для увеличения возможностей приложения AdGuard для iOS и позволяет использовать преимущества iOS 15. С этим веб-расширением AdGuard может применять продвинутые правила фильтрации и, в конечном счёте, блокировать больше рекламы.
 
-### Activity {#activity}
+### Активность {#activity}
 
-This is the 'information hub' of AdGuard's DNS protection suite. You can quickswitch to it by tapping the third icon in the row at the screen bottom. N.b. this screen is only seen when DNS protection is enabled.
+Это «информационный портал» DNS-защиты AdGuard. Вы можете быстро переключиться на него, нажав на третий значок в строке внизу экрана. N.b. этот экран отображается только при включённой DNS-защите.
 
-![Activity screen](https://cdn.adguard.com/public/Adguard/kb/iOS/features/activity_en.jpeg)
+![Экран активности](https://cdn.adguard.com/public/Adguard/kb/iOS/features/activity_en.jpeg)
 
-Here AdGuard displays stats about device's DNS requests, such as total number, number of encrypted requests and average processing time. AdGuard can display the stats for a day, a week, a month, or in total.
+Здесь AdGuard отображает статистику DNS-запросов вашего устройства, такую как их общее количество, количество зашифрованных запросов и среднее время обработки. AdGuard может отображать статистику за день, неделю, месяц или за всё время.
 
-Below is the *Recent activity* feed. AdGuard stores the last 1500 DNS requests that have originated on your device and shows their attributes such as protocol type and target domain.
+Ниже есть лента *Недавняя активность*. AdGuard хранит последние 1500 DNS-запросов с вашего устройства и показывает информацию о них: например, тип протокола и домен.
 
-> AdGuard does not send this information anywhere. It is 100% local and does not leave your device.
+> AdGuard никуда не посылает эту информацию. Она на 100% локальна и не покинет ваше устройство.
 
-Tap any request to view more details. There will also be buttons to add the request to Blocklist/Allowlist in one tap.
+Нажмите на любой запрос, чтобы просмотреть подробную информацию о нём. Внизу также будут кнопки, предлагающие добавить запрос в Белый/Чёрный список.
 
-![Request details](https://cdn.adguard.com/public/Adguard/kb/iOS/features/request_info_en.jpeg)
+![Информация о запросе](https://cdn.adguard.com/public/Adguard/kb/iOS/features/request_info_en.jpeg)
 
-Above the activity feed, there are *Most active companies*. Aggregated data on the last 1500 requests are shown here.
+Над лентой активности находятся *Наиболее активные компании*. Здесь собраны сводные данные по последним 1500 запросам.
 
-### Statistics {#statistics}
+### Статистика {#statistics}
 
-Aside from the *Activity* screen, you can find global statistics on the home screen and on widgets.
+Вы можете найти глобальную статистику на экране *Активность*, на главном экране и в виджетах.
 
-## Low-level settings {#low-level-settings}
+## Низкоуровневые настройки {#low-level-settings}
 
-![Low-level settings](https://cdn.adguard.com/public/Adguard/Blog/ios_lowlevel.PNG)
+![Низкоуровневые настройки](https://cdn.adguard.com/public/Adguard/Blog/ios_lowlevel.PNG)
 
-To open the *Low-level settings*, go to *Settings* > *General* > (Enable *Advanced mode* if it's off) > *Advanced settings* > *Low-level settings*.
+Чтобы открыть *Низкоуровневые настройки*, перейдите в *Настройки* > *Общие* > (включите *Расширенный режим*, если он выключен) > *Расширенные настройки* > *Низкоуровневые настройки*.
 
-For the most part, the settings in this section are best left untouched: only use them if you're sure about what you're doing, or if the support team has asked for them. But some settings could be changed without any risk.
+В основном, настройки этого раздела лучше не трогать: используйте их, только если уверены в том, что делаете, или если об этом попросила команда поддержки. Однако некоторые настройки можно изменять самостоятельно.
 
-### Block IPv6 {#blockipv6}
+### Блокировать IPv6 {#blockipv6}
 
-For any DNS query sent to get an IPv6 address, our app returns an empty response (as if this IPv6 address does not exist). Now there is an option not to return IPv6 addresses. At this point the description of this function becomes too technical: configuring or disabling IPv6 is the exclusive domain of advanced users. Presumably, if you are one of them, it will be good to know that we now have this feature, if not – there is no need to dive into it.
+На любой запрос к DNS-серверу на получение IPv6-адреса наше приложение возвращает пустой ответ, как будто этого адреса не существует. Новая функция позволяет не возвращать IPv6-адреса. Её дальнейшее описание получится слишком техническим: всё-таки настройка или отключение IPv6 — это исключительная прерогатива продвинутых пользователей. Если вы один из них, то наверняка и так знаете, что это за функция, если нет — то и нет необходимости погружаться в эти детали.
 
-### Bootstrap and Fallback servers {#bootstrap-fallback}
+### Bootstrap- и Fallback-серверы {#bootstrap-fallback}
 
-Fallback is a backup DNS server. If you chose a DNS server and something happened to it, a fallback is needed to set the backup DNS server until the main server responds.
+Fallback — это резервный DNS-сервер. Если вы выбрали DNS-сервер и с ним что-то случилось, необходим такой запасной вариант, который будет использоваться, пока не отвечает основной.
 
-With Bootstrap, it’s a little more complicated. For AdGuard for iOS to use a custom secure DNS server, our app needs to get its IP address first. For this purpose, the system DNS is used by default, but sometimes this is not possible for various reasons. In such cases, Bootstrap could be used to get the IP address of the selected secure DNS server. Here are two examples to illustrate when a custom Bootstrap server might help:
-1. When a system default DNS server does not return the IP address of a secure DNS server and it is not possible to use a secure one.
-2. When our app and third-party VPN are used simultaneously and it is not possible to use System DNS as a Bootstrap.
+С Bootstrap чуть сложнее. Чтобы AdGuard для iOS мог использовать кастомный защищённый DNS-сервер, наше приложение должно сначала получить его IP-адрес. Для этой цели по умолчанию используется системный DNS, но иногда это невозможно по разным причинам. В таких случаях для получения IP-адреса выбранного DNS-сервера можно использовать Bootstrap. Вот два примера случаев, когда кастомный Bootstrap-сервер может помочь:
+1. Когда системный DNS-сервер, выбранный по умолчанию, не возвращает IP-адрес защищённого DNS-сервера и последний невозможно использовать.
+2. Когда наше приложение и сторонний VPN используются одновременно и невозможно использовать системный DNS в качестве Bootstrap.
 
-## Other features {#other-features}
+## Другие функции {#other-features}
 
-While Safari content blocking and DNS protection are indisputably two major modules of AdGuard/AdGuard Pro, there are some other minor features that don't fall into either of them directly but still can be useful and are worth knowing about.
+Хотя блокировка контента Safari и DNS-защита — это, несомненно, два основных модуля AdGuard/AdGuard Pro, есть и другие второстепенные функции, которые не подпадают ни под одну из этих категорий напрямую, но всё же могут быть полезны и о них стоит узнать.
 
-- **Dark theme**
+- **Тёмная тема**
 
-![Light theme](https://cdn.adguard.com/public/Adguard/kb/iOS/features/main_screen_en.jpeg)
+![Светлая тема](https://cdn.adguard.com/public/Adguard/kb/iOS/features/main_screen_en.jpeg)
 
-![Dark theme](https://cdn.adguard.com/public/Adguard/kb/iOS/features/main_screen_dark_en.jpeg)
+![Тёмная тема](https://cdn.adguard.com/public/Adguard/kb/iOS/features/main_screen_dark_en.jpeg)
 
-Residing right at the top of **Settings** -> **General** screen, this setting allows you to switch between dark and light themes.
+Находясь прямо в верхней части экрана **Настройки** > **Общие**, этот параметр позволяет переключаться между тёмной и светлой темами.
 
-- **Widgets**
+- **Виджеты**
 
-![Widgets](https://cdn.adguard.com/public/Adguard/Release_notes/iOS/v4.0/widget_en.jpg)
+![Виджеты](https://cdn.adguard.com/public/Adguard/Release_notes/iOS/v4.0/widget_en.jpg)
 
-AdGuard supports widgets that provide quick access to Safari content blocking and DNS protection switches, and also show global requests stats.
+AdGuard поддерживает виджеты, которые обеспечивают быстрый доступ к переключателям блокировки контента Safari и DNS-защиты, а также показывают статистику глобальных запросов.
 
-- **Auto-update over Wi-Fi only**
+- **Автоматическое обновление только через Wi-Fi**
 
-If this setting is enabled, AdGuard will use only Wi-Fi for background filter updates.
+Если эта опция включена, AdGuard будет использовать только Wi-Fi для фонового обновления фильтров.
 
-- **Invert the Allowlist**
+- **Инвертировать белый список**
 
-An alternative mode for Safari filtering, it unblocks ads everywhere except for the specified websites from the list. Disabled by default.
+Альтернативный режим фильтрации Safari разблокирует рекламу везде, кроме указанных сайтов из списка. По умолчанию отключен.
 
-- **Advanced mode**
+- **Расширенный режим**
 
-Aside from unlocking **DNS filtering**, it grants access to **Advanced settings**. We don't recommend messing with those, unless you know what you're doing or you have consulted with technical support first.
+Помимо разблокировки **DNS-фильтрации**, он предоставляет доступ к **Расширенным настройкам**. Мы не рекомендуем возиться с ними, если вы не уверены в том, что делаете, или не проконсультировались сначала с технической поддержкой.
 
-- **Reset statistics**
+- **Сбросить статистику**
 
-Clears all statistical data, such as number of requests, etc.
+Очистит все данные статистики, такие как количество запросов и другие.
 
-- **Reset settings**
+- **Сбросить настройки**
 
-This option will reset all your settings.
+Эта опция меню сбросит все настройки.
 
-- **Support**
+- **Поддержка**
 
-Use this option to contact support, report a missed ad (although we advise to use the Assistant or AdGuard's Safari Web extension for your own convenience), export logs or to make a feature request.
+Используйте эту опцию, чтобы связаться с командой поддержки, сообщить о пропущенной рекламе (хотя для вашего удобства мы рекомендуем использовать Помощник или веб-расширение AdGuard для Safari), экспортировать логи или отправить запрос на добавление функции.
 
-- **About**
+- **О программе**
 
-Contains the current version of the app and an assortment of rarely needed options and links.
+Содержит текущую версию приложения и набор редко используемых опций и ссылок.

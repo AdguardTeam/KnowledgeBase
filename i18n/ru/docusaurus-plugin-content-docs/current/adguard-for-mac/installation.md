@@ -1,89 +1,89 @@
 ---
-title: 'Install/Uninstall'
+title: 'Установка и удаление'
 sidebar_position: 2
 ---
 
-## System  requirements
+## Системные требования
 
-**Operating system version:** macOS 10.13 (64 bit) or higher
+**Версия операционной системы:** macOS 10.13 (64-разрядная) или более поздняя
 
-**RAM:** at least 2 GB
+**Объём оперативной памяти**: от 2 ГБ
 
-**Browsers:** Safari, Chrome, Firefox, Opera, Yandex.Browser, and any other macOS compatible browser
+**Браузеры:** Safari, Chrome, Firefox, Opera, Яндекс.Браузер и любой другой браузер, совместимый с macOS
 
-**Free disk space:** 120 MB
+**Свободное пространство на диске**: 120 МБ
 
-## Installation
+## Установка
 
-To install AdGuard for macOS on your computer, launch your browser, type _adguard.com_ in the address bar, and press **Download** on the page that opens.
+Чтобы установить AdGuard для macOS на компьютер, откройте браузер, наберите в адресной строке _adguard.com_ и на открывшейся веб-странице нажмите кнопку **Скачать**.
 
-![Download the app](https://cdn.adguard.com/content/kb/ad_blocker/mac/1.jpg)
+![Скачайте приложение](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ru/1.png)
 
-Wait for _AdguardInstaller.dmg_ to download and double-click its icon in the list of downloaded files on the Dock panel.
+Дождитесь окончания загрузки файла _AdguardInstaller.dmg_ и щёлкните мышью по его значку в списке загруженных объектов на Dock-панели.
 
-![Double click to open the file](https://cdn.adguard.com/content/kb/ad_blocker/mac/installation_open_the_file.jpg)
+![Дважды щёлкните, чтобы открыть файл](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ru/2.png)
 
-The AdGuard icon will appear on your desktop. Click it to open the installation app and double-click the AdGuard icon in the opened window.
+На рабочем столе отобразится значок AdGuard. Щёлкните по нему, чтобы открыть окно программы установки. В окне программы установки дважды кликните мышью по значку AdGuard.
 
-![Double click on the AdGuard icon](https://cdn.adguard.com/content/kb/ad_blocker/mac/3.jpg)
+![Дважды щёлкните значок AdGuard](https://cdn.adguard.com/content/kb/ad_blocker/mac/3.jpg)
 
-Upon the first AdGuard launch, your operating system will warn you that this application has been downloaded from the Internet. Click **Open**.
+При первом запуске AdGuard операционная система предупредит вас о том, что приложение загружено из интернета. Нажмите **Открыть**.
 
-![Click Open](https://cdn.adguard.com/content/kb/ad_blocker/mac/4.jpg)
+![Нажмите «Открыть»](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ru/4.png)
 
-In the next step, you'll need to click **Install**.
+Затем нажмите **Установить**.
 
-![Click Install](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/en/5.png)
+![Нажмите «Установить»](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ru/5.png)
 
-Wait for the installer to download the required files.
+Подождите, пока установщик загрузит необходимые файлы.
 
-![Wait until the necessary files are downloaded](https://cdn.adguard.com/content/kb/ad_blocker/mac/6.jpg)
+![Подождите, пока загрузятся необходимые файлы](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ru/6.png)
 
-To use the application, you will need the administrator password for your macOS account. Enter the password when propped in the dialogue box and press **OK**.
+Чтобы использовать приложение, вам потребуется пароль администратора для вашей учётной записи macOS. Введите его в открывшемся диалоговом окне и нажмите **ОК**.
 
-![Enter the password](https://cdn.adguard.com/content/kb/ad_blocker/mac/7.jpg)
+![Введите пароль](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ru/7.png)
 
-Now, you'll see a quick installation wizard where you'll be offered to configure protection to your needs. You can either start fine-tuning right away ("Let's do it!") or skip for now ("Leave as it is").
+Запустится мастер установки, вы сможете настроить защиту под себя. Можно настроить всё сразу, нажав «Начать», или заняться этим позже, нажав «Пропустить».
 
-![Configure protection](https://cdn.adguard.com/content/kb/ad_blocker/mac/installation-wizard.jpg)
+![Настройте защиту](https://cdn.adguard.com/content/kb/ad_blocker/mac/installation-wizard.jpg)
 
-Here we are, AdGuard is installed on your Mac!
+Вот и всё, AdGuard установлен на вашем Mac!
 
-## Uninstall
+## Удаление
 
-### Regular
-First of all, open the Finder app by clicking the respective icon:
+### Стандартное
+Откройте приложение «Finder», кликнув по соответствующей иконке:
 
-![Open Finder](https://cdn.adguard.com/public/Adguard/En/Articles/howtodelete/finder.png)
+![Откройте Finder](https://cdn.adguard.com/public/Adguard/En/Articles/howtodelete/finder.png)
 
-Go to the Applications section. Find AdGuard there, right-click it and choose **Move to Trash**.
+Перейдите в раздел «Программы». Выберите в списке AdGuard, кликните по нему правой кнопкой мыши и выберите пункт **«Переместить в корзину»**.
 
-![Move AdGuard to Trash](https://cdn.adguard.com/content/kb/ad_blocker/mac/11.jpg)
+![Переместите AdGuard в корзину](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ru/uninstall/1.png)
 
-### Advanced
+### Продвинутое
 
-**Use this instruction only if you know what you are doing or if our support service specifically recommended you the 'advanced uninstall'. Also, do all the steps from the 'regular uninstall first'.** After that, do the following:
+**Используйте эту инструкцию, только если вы точно знаете, что делаете, или если наша команда поддержки рекомендовала вам именно «продвинутое удаление». Прежде чем приступать, сначала выполните все шаги из инструкции по «стандартному удалению».** После её выполнения:
 
-* Delete following AdGuard files:
-    * /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (folder)
-    * ~/Library/Preferences/com.adguard.mac.adguard.plist (file)
-    * ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac (folder)
-    * /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist (file)
-    * /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist (file)
-    * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log (file)
-    * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log (file)
+* Удалите следующие файлы AdGuard:
+    * /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (папка)
+    * ~/Library/Preferences/com.adguard.mac.adguard.plist (файл)
+    * ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac (папка)
+    * /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist (файл)
+    * /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist (файл)
+    * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log (файл)
+    * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log (файл)
 
-**To do so**, open the Terminal app, then enter and execute the following commands:
+Для этого введите и выполните следующие команды через Терминал:
 
 `sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"` `rm -R "$HOME/Library/Application Support/com.adguard.mac.adguard"` `rm $HOME/Library/Preferences/com.adguard.mac.adguard.plist` `rm -R "$HOME/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac"` `find "$HOME/Library/Application Support" -name "com.adguard.browser_extension_host.nm.json" -delete` `sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist` `sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist` `sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log` `sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log`
 
-* Run ’Activity Monitor’ app.
-* Using search tool, find the process **cfprefsd**.
+* Запустите приложение «Мониторинг системы».
+* Через поиск найдите процесс **’cfprefsd’**.
 
-![Run Activity Monitor](https://cdn.adguard.com/content/kb/ad_blocker/mac/22.jpg)
+![Запустите приложение «Мониторинг системы»](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ru/uninstall/2.png)
 
-* Stop the process which is being run under the user (not the one run under root). To do so, click the process and then click X on the upper left. Confirm it in the dialogue window.
+* Остановите процесс, запущенный от имени пользователя. Для этого нажмите на него, а после нажмите на X в левом верхнем углу. Подтвердите завершение процесса.
 
-![Confirm](https://cdn.adguard.com/content/kb/ad_blocker/mac/33.jpg)
+![Подтвердите](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ru/uninstall/3.png)
 
-AdGuard is removed from your computer now.
+Теперь AdGuard удалён с вашего компьютера.

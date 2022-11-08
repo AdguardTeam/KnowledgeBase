@@ -1,5 +1,5 @@
 ---
-title: Userscripts
+title: Пользовательские скрипты
 sidebar_position: 5
 ---
 
@@ -49,25 +49,25 @@ If you like the idea of personifying your browser with the help of userscripts, 
 - [FreeNode](https://webchat.freenode.net/#greasemonkey)
 - [Reddit](https://www.reddit.com/r/userscripts/)
 
-## Development
+## Разработка
 
-### Request License
+### Запросить лицензию
 
-If you are developing your own custom script and want to test how it works with AdGuard, request a beta-license key for the app.
+Если вы разрабатываете свой пользовательский скрипт и хотите протестировать его работу с AdGuard, запросите бета-лицензию на приложение.
 
-To get it, please send an email to devteam@adguard.com with the following information:
+Для этого отправьте нам сообщение devteam@adguard.com со следующей информацией:
 
-**Subject:** Userscript author license request
+**Тема:** Запрос лицензии для автора пользовательского скрипта
 
-**Body:** Please tell us about the userscripts you are working on.
+**Текст письма:** Расскажите о пользовательском скрипте, над которым вы работаете.
 
-Here is a [mailto link](mailto:devteam@adguard.com?Subject=Userscript%20author%20license%20request&Body=Hello%2C%0A%0AMy%20userscript%28s%29%3A%20LINK).
+Нажмите [сюда](mailto:devteam@adguard.com?Subject=Userscript%20author%20license%20request&Body=Hello%2C%0A%0AMy%20userscript%28s%29%3A%20LINK), чтобы отправить письмо.
 
-### Compatibility
+### Совместимость
 
-#### Metadata block
+#### Блок метаданных
 
-##### Supported properties
+##### Поддерживаемые свойства
 
 ```
 @name
@@ -97,21 +97,21 @@ Here is a [mailto link](mailto:devteam@adguard.com?Subject=Userscript%20author%2
 @icon64URL
 ```
 
-##### Unsupported properties
+##### Неподдерживаемые свойства
 
-These properties will be simply ignored by Adguard.
+AdGuard проигнорирует эти свойства.
 
 ```
 @unwrap
 ```
 
-#### Supported GM functions
+#### Поддерживаемые функции GM
 
-AdGuard supports both old GM\_ functions and new GM4 API that use GM object.
+AdGuard поддерживает как старые функции GM\_, так и новый GM4 API, использующий объект GM.
 
-##### Values
+##### Значения
 
-Note that all listed old Greasemonkey functions are deprecated but still supported.
+Обратите внимание, что все перечисленные функции Greasemonkey устарели, но всё ещё поддерживаются.
 
 ```
 GM.info / GM_info
@@ -130,9 +130,9 @@ GM_addStyle
 GM_log 
 ```
 
-[Here](https://wiki.greasespot.net/GM.info) you can find more information about Greasemonkey API.
+[Здесь](https://wiki.greasespot.net/GM.info) вы найдёте больше информации о Greasemonkey API.
 
-### Example
+### Пример
 
 ```javascript
 // ==UserScript==
