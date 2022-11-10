@@ -42,7 +42,7 @@ Here are some sources of information you can use.
 
 [Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contains a wide list of languages. The number of plural forms for different languages is shown this way: 'nplurals=2', 'nplurals=4' and so on. The numeral after the Equals sign '='  means the number of plural forms of the respective language.
 
-Also, you can get information about plural forms in the [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules)(CLDR). The CLDR Plural Rules indicate an additional word form for decimal numbers (1.5; 2.3; 100.1…), but we don’t use them in AdGuard translations.
+Also, you can get information about plural forms in the [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). The CLDR Plural Rules indicate an additional word form for decimal numbers (1.5; 2.3; 100.1…), but we don’t use them in AdGuard translations.
 
 ## Plurals in AdGuard translations {#translations}
 
@@ -100,7 +100,7 @@ Pay close attention to a vertical bar sign between the sentences and **%count%**
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/plurals/plurals_site.png) 
 
-Now, let’s imagine — you are faced with such string: *"Standard license for %count% computer|Standard license for %count% computers"*. 
+Now, let’s imagine — you are faced with such string: *"Standard license for %count% computer | Standard license for %count% computers"*. 
 
 What should you know to translate it correctly?
 
@@ -108,7 +108,7 @@ Let's call the sentences which are divided by a vertical bar sign **"templates"*
 
 Coming back to the example, as the English language includes only two forms, there should be two templates respectively:
 
-`**Standard license for *%count%* computer|Standard license for *%count%* computers**`
+`**Standard license for *%count%* computer | Standard license for *%count%* computers**`
 
 where **template 1** – Standard license for *%count%* computer,  
 
@@ -120,7 +120,7 @@ In a situation with another language that has, let’s say, three plural forms, 
 
 For example, when we translate the above mentioned phrase into Slovak, that according to the rule of [Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) has three word forms, the correct translation will look so:
 
-`**Štandartná licencia pre *%count%* počítač|Štandartná licencia pre *%count%* počítače|Štandartná licencia pre *%count%* počítačov**` 
+`**Štandartná licencia pre *%count%* počítač | Štandartná licencia pre *%count%* počítače | Štandartná licencia pre *%count%* počítačov**` 
 
 ![Slovak](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/slovak.png)
 
@@ -136,7 +136,7 @@ For example, the Serbian word *'računar'* (computer) has only two forms. But th
  
 Thus, the translation from English into Serbian should be:
 
-`**Standardna licenca za *%count%* računar|Standardna licenca za *%count%* računara|Standardna licenca za *%count%* računara**`
+`**Standardna licenca za *%count%* računar | Standardna licenca za *%count%* računara | Standardna licenca za *%count%* računara**`
 
 Although it is obvious that the last two templates have no differences, it is very important to keep the rule: **The number of templates should reflect the number of plural forms of the respective language!**(typically for this type of strings with plurals).
 
@@ -149,8 +149,6 @@ While first three types of such strings are more or less easy to perform, the fo
 And again: if you come across an original phrase with two important elements: **the vertical bar sign** and **%count%** placeholders, please do the following:
 
 + Refer to the plural rule of a language you translate into; 
-
-+ Keep the exact number of templates;
 
 > The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms – two templates in translations; five plural forms – five templates, etc.
 
