@@ -108,7 +108,7 @@ Let's call the sentences which are divided by a vertical bar sign **"templates"*
 
 Coming back to the example, as the English language includes only two forms, there should be two templates respectively:
 
-`**Standard license for *%count%* computer | Standard license for *%count%* computers**`
+`Standard license for *%count%* computer | Standard license for *%count%* computers`
 
 where **template 1** – Standard license for *%count%* computer,  
 
