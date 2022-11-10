@@ -100,7 +100,7 @@ Pay close attention to a vertical bar sign between the sentences and **%count%**
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/plurals/plurals_site.png) 
 
-Now, let’s imagine — you are faced with such string: *"Standard license for %count% computer | Standard license for %count% computers"*. 
+Now, let’s imagine — you are faced with such a string: `Standard license for %count% computer | Standard license for %count% computers`. 
 
 What should you know to translate it correctly?
 
