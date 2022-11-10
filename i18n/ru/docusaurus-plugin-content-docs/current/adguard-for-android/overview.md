@@ -15,11 +15,11 @@ sidebar_position: 1
 
 Большинство блокировщиков для Android используют этот принцип, но их функциональность по сравнению с AdGuard ограничена. Узнать больше о различиях AdGuard для Android и других блокировщиков можно [в этой статье](https://adguard.com/en/blog/adguard-vs-adaway-dns66.html).
 
-## Filters
+## Фильтры
 
 В AdGuard используются различные фильтры: наши и сторонние, отсортированные по языку и назначению. Например, фильтры в категории «Раздражители» сильно отличаются от фильтров для рекламы на конкретном языке.
 
-![Filters](https://cdn.adguard.com/content/kb/ad_blocker/android/features/filters1.png)
+![Фильтры](https://cdn.adguard.com/content/kb/ad_blocker/android/features/filters1.png)
 
 Больше о фильтрах можно узнать из их описания в приложении или из этой статьи.
 

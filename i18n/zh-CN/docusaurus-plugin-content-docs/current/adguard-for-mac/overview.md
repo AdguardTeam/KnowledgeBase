@@ -132,11 +132,11 @@ First, there's the License management tab that you can open from the dropdown ma
 
 In this same tab you can refresh your license status, renew your license or reset the license key using the corresponding buttons.
 
-### Support
+### 支持
 
 Click the gear icon in the upper right corner, select "Support", and you will be able to send a bug report or a feature request to our support team. Be sure to add your real actual email though, because without it the message won't be sent.
 
-![Support](https://cdn.adguard.com/content/kb/ad_blocker/mac/Support.jpg)
+![支持](https://cdn.adguard.com/content/kb/ad_blocker/mac/Support.jpg)
 
 To report a missed ad or a broken website, please follow the link above the message window, we use a separate reporting tool for those types of issues.
 

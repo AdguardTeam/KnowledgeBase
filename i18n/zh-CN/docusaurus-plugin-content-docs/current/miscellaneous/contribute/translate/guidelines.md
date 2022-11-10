@@ -16,6 +16,9 @@ sidebar_position: 3
 选择任何可用的软件文件夹并选择一个文件，现在您可以开始翻译了。
 
 ![文件](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/files.png)
+> Please note: you can also change the Crowdin interface language by clicking the *Settings* icon in the top right corner of the page. In the opened window scroll down to the *UI language* tab. Open it, choose a language and click **Change**.
+
+![语言1](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/settings_en.png)
 
 **以下指南将帮助您多了解翻译的过程。**
 
@@ -45,7 +48,7 @@ sidebar_position: 3
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/request.png)
 
-6. In addition to suggesting new translations, you can also leave comments on strings. 使用注释以此提示我们或其他翻译者存在的错误、留下一些建议或问问题。 有时您会看到一些其他人留下的注释，别忘了去看一眼。
+6. 除了翻译以外，志愿者也可以为某一个短语留下注释。 使用注释以此提示我们或其他翻译者存在的错误、留下一些建议或问问题。 有时您会看到一些其他人留下的注释，别忘了去看一眼。
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/comments.png)
 

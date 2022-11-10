@@ -67,7 +67,7 @@ sidebar_position: 2
 
 如果由于某些原因您无法通过常规的方式卸载应用程序，您可以尝试使用卸载的进阶方法。 首先，您要通过该链接[下载并安装我们开发人员创建的卸载软件](https://cdn.adguard.com/public/Adguard/tools/Uninstall_Utility.zip)。 您可以将压缩包发送到您的电脑上的任何一个文件夹里。解压后，请您开启 **Adguard_Uninstall_Utility.exe** 文件，并允许应用程序对您的设备进行更改。 然后按照以下说明进行操作：
 
-* 选择**一般卸载**（Standard uninstall），**删除 AdGuard**，并点击**卸载**（Uninstall）。
+* 选择*一般卸载*（Standard uninstall），*删除 AdGuard*，并点击*卸载*（Uninstall）。
 
 ![标准卸载](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/standard-uninstall.png)
 
@@ -77,7 +77,7 @@ sidebar_position: 2
 
 > 请注意！ 下述的第三四步，只在由于某些原因上述两个步骤无法卸载 AdGuard 的情况下，才可以执行。 即当您执行「一般卸载」后，还是无法重新安装 AdGuard 时。我们强烈推荐执行下述进阶卸载的第三四步前，请您先于技术支持联系。
 
-* 选择**进阶卸载**（Advanced uninstall）并点击**卸载**（Uninstall ）。
+* 选择*进阶卸载*（Advanced uninstall）并点击*卸载*（Uninstall ）。
 
 ![进阶卸载](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/advanced-uninstall.png)
 

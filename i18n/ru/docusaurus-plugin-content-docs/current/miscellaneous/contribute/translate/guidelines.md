@@ -16,6 +16,9 @@ sidebar_position: 3
 Выберите файл (или все файлы) из любой доступной папки и приступайте к переводу.
 
 ![Файлы](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/files.png)
+> Please note: you can also change the Crowdin interface language by clicking the *Settings* icon in the top right corner of the page. In the opened window scroll down to the *UI language* tab. Open it, choose a language and click **Change**.
+
+![Язык1](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/settings_en.png)
 
 **Следующие рекомендации помогут вам в этом процессе.**
 

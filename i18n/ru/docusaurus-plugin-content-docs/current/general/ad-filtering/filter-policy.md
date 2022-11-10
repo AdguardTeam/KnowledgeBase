@@ -13,22 +13,22 @@ sidebar_position: 6
 
 «‎Собственный»‎ обозначает принадлежность либо к сайту, на который пользователь перешёл намеренно, либо к набору ресурсов в сети, управляемых той же организацией. На практике мы почти всегда под этим понимаем принадлежность к одному и тому же регистрируемому домену: публичный суффикс плюс одна дополнительная метка. Пример: `site.example`, `www.site.example`и `subsite.example` принадлежат одной и той же стороне, поскольку `site.example` — это их общий регистрируемый домен.
 
-«Сторонний»‎ обозначает принадлежность к любому сайту, в отношении которого неприменимо обозначение «собственный». Interactions with other parties are considered third-party, even if the user is transiently informed in context (for example, in the form of a redirect). Простое наведение курсора, отключение звука, постановка на паузу или скрытие любого элемента пользователем не рассматривается нами как намеренное взаимодействие.
+«Сторонний»‎ обозначает принадлежность к любому сайту, в отношении которого неприменимо обозначение «собственный». Взаимодействия с любыми не-собственными элементами считаются сторонними, даже если пользователь проинформирован об этом в контексте (например, в случае перенаправления). Простое наведение курсора, отключение звука, постановка на паузу или скрытие любого элемента пользователем не рассматривается нами как намеренное взаимодействие.
 
 ## Общие критерии
 
 Они применяются к правилам всех фильтров.
 
 - Правила, которые часто вызывают проблемы с работой сайтов, будут удаляться.
-- Правила для отдельного сайта будут добавляться, если сайт обладает достаточной посещаемостью. Traffic is determined by open statistics (if available) or by other means, such as social media following. Посещаемость сайта считается достаточной, если количество посещений достигает 30 тысяч в месяц.
+- Правила для отдельного сайта будут добавляться, если сайт обладает достаточной посещаемостью. Посещаемость определяется по открытой статистике (если она есть) либо по косвенным признакам, например, по количеству подписчиков в социальных сетях. Посещаемость сайта считается достаточной, если количество посещений достигает 30 тысяч в месяц.
 
 ## Рекламные фильтры
 
-This part describes the AdGuard Base filter, the Mobile Ads filter, and the following language-specific filters: Russian, German, Dutch, Spanish/Portuguese, Japanese, Turkish, Chinese, and French.
+В этой части описываются Базовый фильтр AdGuard, Фильтр мобильной рекламы и следующие языковые фильтры: русский, немецкий, голландский, испано-португальский, японский, турецкий, китайский и французский.
 
-**What shall these filters block?**
+**Что должны блокировать эти фильтры?**
 
-- These filters will block ads wherever possible.
+- Фильтры должны блокировать рекламные объявления везде, где это возможно.
 - Ads should be blocked regardless of their reasons and goals.
 - We will block ads caused by malicious apps or extensions that inject ads. Please note that we do it only on the condition that you specify how to install such an app or extension.
 
@@ -88,7 +88,7 @@ This part describes the AdGuard Base filter, the Mobile Ads filter, and the foll
 - Rules that block widgets that are a part of a website’s functionality, such as "Comments," "Embedded Post," "Surveys," or widgets that require authorization via social networks.
 - Rules that block links to a website’s communities in social networks.
 - Rules that cause problems with website functionality will be removed.
-- Правила для отдельного сайта будут добавляться, если сайт обладает достаточной посещаемостью. Traffic is determined by open statistics (if available) or by other means, such as social media following. Посещаемость сайта считается достаточной, если количество посещений достигает 30 тысяч в месяц.
+- Правила для отдельного сайта будут добавляться, если сайт обладает достаточной посещаемостью. Посещаемость определяется по открытой статистике (если она есть) либо по косвенным признакам, например, по количеству подписчиков в социальных сетях. Посещаемость сайта считается достаточной, если количество посещений достигает 30 тысяч в месяц.
 
 ## Фильтр раздражителей
 
@@ -102,7 +102,7 @@ This part describes the AdGuard Base filter, the Mobile Ads filter, and the foll
 
 - Rules that block elements that are essential for the website functioning (e.g. authorization forms) will not be blocked even if they satisfy other requirements.
 - Rules that cause problems with website functionality will be removed.
-- Правила для отдельного сайта будут добавляться, если сайт обладает достаточной посещаемостью. Traffic is determined by open statistics (if available) or by other means, such as social media following. Посещаемость сайта считается достаточной, если количество посещений достигает 30 тысяч в месяц.
+- Правила для отдельного сайта будут добавляться, если сайт обладает достаточной посещаемостью. Посещаемость определяется по открытой статистике (если она есть) либо по косвенным признакам, например, по количеству подписчиков в социальных сетях. Посещаемость сайта считается достаточной, если количество посещений достигает 30 тысяч в месяц.
 
 ## Filter unblocking search ads and self-promotion
 
@@ -116,7 +116,7 @@ Unlike other filters, this one **unblocks** certain ads. Read more about it in t
 **Ограничения и исключения**
 
 - Rules that cause problems with website functionality will be removed.
-- Правила для отдельного сайта будут добавляться, если сайт обладает достаточной посещаемостью. Traffic is determined by open statistics (if available) or by other means, such as social media following. Посещаемость сайта считается достаточной, если количество посещений достигает 30 тысяч в месяц.
+- Правила для отдельного сайта будут добавляться, если сайт обладает достаточной посещаемостью. Посещаемость определяется по открытой статистике (если она есть) либо по косвенным признакам, например, по количеству подписчиков в социальных сетях. Посещаемость сайта считается достаточной, если количество посещений достигает 30 тысяч в месяц.
 
 ## Quality requirements for filtering rules
 

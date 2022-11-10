@@ -3,7 +3,7 @@ title: Помощь в разработке фильтров AdGuard
 sidebar_position: 4
 ---
 
-### Правила фильтрации
+### Filtering rules {#filtering-rules}
 
 Для блокировки рекламы AdGuard использует правила фильтраци. Эти правила объединяются в тематические [фильтры](https://kb.adguard.com/general/adguard-ad-filters), такие как фильтр «Базовый фильтр AdGuard», «Фильтр мобильной рекламы» и т.д. [Подробнее о том, как работает блокировка рекламы](https://kb.adguard.com/general/how-ad-blocking-works).
 

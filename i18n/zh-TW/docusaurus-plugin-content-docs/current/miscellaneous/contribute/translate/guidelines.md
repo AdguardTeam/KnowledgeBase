@@ -16,6 +16,9 @@ You'll also be able to switch between languages even after opening certain produ
 Choose any of available product folders and select a file — now you can start translating.
 
 ![Files](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/files.png)
+> Please note: you can also change the Crowdin interface language by clicking the *Settings* icon in the top right corner of the page. In the opened window scroll down to the *UI language* tab. Open it, choose a language and click **Change**.
+
+![Language1](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/settings_en.png)
 
 **The following guidelines will help you through the process.**
 
