@@ -3,7 +3,7 @@ title: Contribute to AdGuard filters
 sidebar_position: 4
 ---
 
-### Filtering rules {##filtering-rules}
+### Filtering rules {#filtering-rules}
 
 As you probably know, AdGuard uses filtering rules to block ads, and these rules are combined into thematic [blocking filters](https://kb.adguard.com/general/adguard-ad-filters), like AdGuard Base filter, Mobile ads filter, etc. [Read more about how ad blocking works](https://kb.adguard.com/general/how-ad-blocking-works).
 

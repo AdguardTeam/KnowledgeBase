@@ -39,7 +39,7 @@ sidebar_position: 2
 
 3. 将**代理类型**切换为**手动**。 对于**代理主机名**，请输入在第一步记下的 IP 地址。 对于**代理端口**，输入在桌面 AdGuard 的网络设置中选择的端口。
 
-4. 在您的计算机上激活 AdGuard 并在桌面应用程序的**网络**设置中选中框**使用 AdGuard 作为 HTTP 代理** 。
+4. 在您的计算机上激活 AdGuard 并在桌面应用程序的**网络**设置中选中框***使用 AdGuard 作为 HTTP 代理*** 。
 
 5. 打开 Safari 浏览器，转到 [http://local.adguard.org/cert](http://local.adguard.org/cert) 并点击**下载**。 在打开的对话框中，允许网站下载配置文件。
 

@@ -263,7 +263,7 @@ Old Huawei devices are the easiest to set up, it is enough to perform two simple
 
  ![Huawei lock](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/huaweilock.jpeg)
 
-Besides, to set up the background work of your app more effectively, you should open device settings and do the following:
+Кроме того, чтобы более эффективно настроить фоновую работу вашего приложения, вам следует открыть настройки устройства и сделать следующее:
 
 - Go to **Advanced Settings** > then open **Battery Manager** > Set **Power plan** to **Performance**;
 - Then choose **Protected apps** in the **Battery Manager** and check if your app is Protected;

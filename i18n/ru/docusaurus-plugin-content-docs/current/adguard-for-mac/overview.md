@@ -31,9 +31,9 @@ Descriptions under option titles seem self-explanatory, but still:
 
 From this same window you can access the above-mentioned Allowlist, to which you can add websites you do not wish AdGuard to filter. Just click the corresponding button located at the bottom of the window.
 
-## Filters
+## Фильтры
 
-![Filters](https://cdn.adguard.com/content/kb/ad_blocker/mac/Filters.jpg)
+![Фильтры](https://cdn.adguard.com/content/kb/ad_blocker/mac/Filters.jpg)
 
 Filters are the main driving force behind the Ad blocker module. To understand how filtering works, get acquainted with our [comprehensive article](https://adguard.com/en/blog/how-ad-blocking-is-done.html). But in essence, filter lists are sets of rules written in a special language, and your ad blocker is an interpreter of these rules who then implements them. As a result, you stop seeing ads on your web pages and life gets lots better.
 
@@ -84,7 +84,7 @@ Some web pages are not malicious themselves, but they may contain elements built
 
 If you wish to help us in perfecting this module, you can check the lower box on the panel near the "Help us with Browsing Security filters development" phrase. This will enable your computer to send us pertinent info on fraudulent websites you might stumble upon while surfing the web — and our developers will make sure they end up locked at the bottom of your ban list.
 
-## Browser Assistant
+## Браузерный помощник
 
 ![Помощник](https://cdn.adguard.com/content/kb/ad_blocker/mac/BrowserAssistant.jpg)
 

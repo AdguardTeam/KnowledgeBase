@@ -42,7 +42,7 @@ sidebar_position: 4
 
 [本地化指南](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) 包含广泛的语言列表。 不同语言复数形式的数量以这种方式显示： 'nplurals=2', 'nplurals=4' ，依此类推。 '=' 等号后的数字表示相应语言的形式数量。
 
-此外，您还可以在 [Unicode 通用语言环境数据存储库](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules)（CLDR）中获取有关复数形式的相关信息。 CLDR 复数规则，即指十进制数字（1.5; 2.3; 100.1…）的其他词形式。但在 AdGuard 翻译中我们不使用它们。
+Also, you can get information about plural forms in the [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). CLDR 复数规则，即指十进制数字（1.5; 2.3; 100.1…）的其他词形式。但在 AdGuard 翻译中我们不使用它们。
 
 ## AdGuard 翻译中的复数形式 {#translations}
 
@@ -100,7 +100,7 @@ Crowdin 为用户提供翻译一定数量具有不同复数形式的短语的功
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/plurals/plurals_site.png)
 
-现在，我们来想象一下。您将面临这样的短语：*"Standard license for %count% computer|Standard license for %count% computers"*。
+Now, let’s imagine — you are faced with such a string: `Standard license for %count% computer | Standard license for %count% computers`.
 
 您应该知道哪些信息才能正确翻译它？
 
@@ -108,7 +108,7 @@ Crowdin 为用户提供翻译一定数量具有不同复数形式的短语的功
 
 回到示例，由于英语仅包含两种复数形式，因此应分别有两个模板：
 
-`**Standard license for *%count%* computer|Standard license for *%count%* computers**`
+`Standard license for *%count%* computer | Standard license for *%count%* computers`
 
 其中**模板 （template）1** – *％count％* 台计算机（computer）的标准许可，
 
@@ -120,7 +120,7 @@ Crowdin 为用户提供翻译一定数量具有不同复数形式的短语的功
 
 例如，当我们将上面提到的短语翻译成斯洛伐克语时，根据 [Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) 的规则，它具有三种词形，正确的翻译应该是这样的：
 
-`**Štandartná licencia pre *%count%* počítač|Štandartná licencia pre *%count%* počítače|Štandartná licencia pre *%count%* počítačov**`
+`**Štandartná licencia pre *%count%* počítač | Štandartná licencia pre *%count%* počítače | Štandartná licencia pre *%count%* počítačov**`
 
 ![斯洛伐克语](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/slovak.png)
 
@@ -135,7 +135,7 @@ Crowdin 为用户提供翻译一定数量具有不同复数形式的短语的功
 
 因此，英语翻译成塞尔维亚语是：
 
-`**Standardna licenca za *%count%* računar|Standardna licenca za *%count%* računara|Standardna licenca za *%count%* računara**`
+`**Standardna licenca za *%count%* računar | Standardna licenca za *%count%* računara | Standardna licenca za *%count%* računara**`
 
 尽管很明显，最后两个模板没有区别，但保持规则非常重要：**模板的数量应反映相应语言的复数形式** (通常针对这种带复数的字符串)。
 
@@ -148,8 +148,6 @@ Crowdin 为用户提供翻译一定数量具有不同复数形式的短语的功
 重申一次：如果您遇到包含两个重要元素的原始词组：**竖线符号**和 **％count％** 占位符，请执行以下操作：
 
 + 指翻译成一种语言的复数规则；
-
-+ 保留确切数量的模板；
 
 > 即使在某些单词本身具有较少形式的情况下，模板的数量也应与语言所包含的复数形式的数量相一致。 两种复数形式对应翻译中的两个模板；五个复数形式对应五个模板等。
 

@@ -42,7 +42,7 @@ sidebar_position: 4
 
 На сайте [Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) есть информация о большом количестве языков. Количество форм множественного числа для разных языков показано так: nplurals=2, nplurals=4 и так далее. Цифра после знака равенства (=) означает количество плюральных форм в этом языке.
 
-Информацию о плюральных формах можно также найти на сайте [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). В правилах плюральных форм CLDR указана дополнительная форма слова для десятичных чисел (1,5; 2,3; 100,1…), но мы не используем их в переводах AdGuard.
+Also, you can get information about plural forms in the [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). В правилах плюральных форм CLDR указана дополнительная форма слова для десятичных чисел (1,5; 2,3; 100,1…), но мы не используем их в переводах AdGuard.
 
 ## Плюральные формы в переводах AdGuard {#translations}
 
@@ -100,7 +100,7 @@ sidebar_position: 4
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/plurals/plurals_site.png)
 
-Теперь представим, что вы столкнулись с такой фразой: *Standard license for %count% computer|Standard license for %count% computers*.
+Now, let’s imagine — you are faced with such a string: `Standard license for %count% computer | Standard license for %count% computers`.
 
 Что нужно знать, чтобы перевести её правильно?
 
@@ -108,7 +108,7 @@ sidebar_position: 4
 
 Возвращаясь к примеру, поскольку в английском языке есть только две плюральные формы, то и шаблонов должно быть два:
 
-`Standard license for %count% computer|Standard license for %count% computers`
+`Standard license for *%count%* computer | Standard license for *%count%* computers`
 
 где **шаблон 1** – Standard license for *%count%* computer,
 
@@ -120,7 +120,7 @@ sidebar_position: 4
 
 Например, если мы переведём эту же фразу на словацкий, [в котором три плюральных формы](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html), правильный перевод будет выглядеть так:
 
-`Štandartná licencia pre %count% počítač|Štandartná licencia pre %count% počítače|Štandartná licencia pre %count% počítačov`
+`**Štandartná licencia pre *%count%* počítač | Štandartná licencia pre *%count%* počítače | Štandartná licencia pre *%count%* počítačov**`
 
 ![словацкий](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/slovak.png)
 
@@ -135,7 +135,7 @@ sidebar_position: 4
 
 Поэтому перевод с английского на словацкий должен быть таким:
 
-`Standardna licenca za %count% računar|Standardna licenca za %count% računara|Standardna licenca za %count% računara`
+`**Standardna licenca za *%count%* računar | Standardna licenca za *%count%* računara | Standardna licenca za *%count%* računara**`
 
 Даже несмотря на то, что последние два шаблона одинаковые, соблюдайте правило: **в переводе должно быть столько шаблонов, сколько плюральных форм в языке**. Особенно это касается данного типа строк.
 
@@ -148,8 +148,6 @@ sidebar_position: 4
 И ещё раз: если вы встретите оригинальную фразу с двумя важными элементами: **вертикальной чертой** и плейсхолдером **%count%**, пожалуйста, сделайте следующее:
 
 + Обратитесь к правилам употребления множественного числа в языке, на который переводите;
-
-+ Всегда используйте одинаковое количество шаблонов;
 
 > Количество шаблонов должно соответствовать количеству форм множественного числа в вашем языке. Это касается даже тех случаев, когда слово не меняется в зависимости от числительных. Две формы множественного числа – два шаблона в переводе; пять форм множественного числа – пять шаблонов и т. д.
 

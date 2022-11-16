@@ -150,9 +150,9 @@ To get more information about AdGuard VPN dive into the [AdGuard VPN Knowledge B
 
 There are other useful AdGuard options that shouldn't go unnoticed in this article, since they add much to user experience.
 
-### Support
+### 支持
 
-![Support](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/support.png)
+![支持](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/support.png)
 
 By clicking the Support tab you will open a dialog box through which you can report a bug, submit a feature request, or simply share your opinion of the product.
 
@@ -164,9 +164,9 @@ This tab contains information about your license. Here you can:
 * find out the license type (nightly build, beta or release), the number of devices available for simultaneous connection to AdGuard, the license expiration date;
 * click the button to go to the license purchase page, and activate, reset or recover a license.
 
-### About
+### 关于
 
-![About](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/about.png)
+![关于](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/about.png)
 
 In addition to information about the current version of the program, this tab provides some useful links to the Licese Agreement, Privacy Policy, Acknowledgements, Discussions, and Version history pages.
 

@@ -72,7 +72,7 @@ If you need more filters, you can add them to *AdGuard Custom*. To add a custom 
 
 User rules can be used to customize ad blocking. They can be added manually, imported, or created automatically when you block an element on the page. To add your own filering rules, use a [special syntax](/general/ad-filtering/create-own-filters.md).
 
-## About {#about}
+## 关于 {#about}
 
 ![About tab](https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/About.png)
 

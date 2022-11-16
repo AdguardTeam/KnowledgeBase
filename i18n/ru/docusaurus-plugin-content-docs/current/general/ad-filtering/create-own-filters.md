@@ -109,9 +109,13 @@ sidebar_position: 5
 
 The most simple rules are so-called *Basic rules*. They are used to block requests to specific URLs. Or to unblock it, if there is a special marker "@@" at the beginning of the rule. The basic principle for this type of rules is quite simple: you have to specify the address and additional parameters that limit or expand the scope of the rule.
 
-> **Sub-requests** Basic rules for blocking requests are applied only to **sub-requests**. That means they will not block the loading of the page.
+> **Sub-requests**
+> 
+> Basic rules for blocking requests are applied only to **sub-requests**. That means they will not block the loading of the page.
 
-> **Response status** Browser detects a blocked request as completed with an error.
+> **Response status**
+> 
+> Browser detects a blocked request as completed with an error.
 
 ### Basic rules syntax {#basic-rules-syntax}
 

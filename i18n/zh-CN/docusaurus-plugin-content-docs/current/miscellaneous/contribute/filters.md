@@ -3,7 +3,7 @@ title: 对 AdGuard 过滤器做出贡献
 sidebar_position: 4
 ---
 
-### 过滤规则 {##filtering-rules}
+### Filtering rules {#filtering-rules}
 
 可能众所周知，AdGuard 使用过滤规则拦截广告。这些规则被组合成不同主题的[拦截过滤器](https://kb.adguard.com/general/adguard-ad-filters)，例如，AdGuard 基础过滤器，移动广告过滤器等等。[本知识库的文章内容](https://kb.adguard.com/general/how-ad-blocking-works)包括更多关于，如何拦截广告的信息。
 
