@@ -1,77 +1,77 @@
 ---
-title: How to get logcat log
+title: Как получить лог LogCat
 sidebar_position: 4
 ---
 
-## General Instruction
+## Общая инструкция
 
-For troubleshooting problems with crashes a regular log is almost always not enough. In such cases to identify the origin of the problem we need the system log. Below is the instruction how to collect and get it.
+Для решения проблем с вылетами и отключениями программы обычного лога почти всегда оказывается недостаточно. В таких случаях для определения источника проблемы нам нужен системный лог. Инструкция ниже описывает, как его собрать и получить.
 
-## Capture a bug report from a device
-To get a bug report directly from your device, do the following:
+## Получение отчёта об ошибке с устройства
+Чтобы получить отчёт об ошибке непосредственно с вашего устройства, выполните следующие действия:
 
-1. Be sure you have [Developer Options](https://developer.android.com/studio/run/device.html#developer-device-options) enabled.
+1. Убедитесь, что у вас включена вкладка [Для разработчиков](https://developer.android.com/studio/run/device.html#developer-device-options).
 
-2. In **Developer options**, tap **Take bug report**.
+2. Перейдите в раздел **Для разработчиков** и нажмите **Отчёт об ошибке**.
 
-![Bug report](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
+![Отчёт об ошибке](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
 
-3. Select the type of bug report you want and tap **Report**. >After a moment you get a notification that the bug report is ready (see figure 2).
+3. Выберите нужный тип отчета об ошибке и нажмите **Отправить отчёт**. >Через некоторое время вы получите уведомление о том, что отчёт об ошибке готов (см. рисунок 2).
 
-![Bug report](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
+![Отчёт об ошибке](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
 
-4. To share the bug report, tap the notification.
+4. Чтобы поделиться отчётом об ошибке, коснитесь уведомления.
 
-![Bug report](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
+![Отчёт об ошибке](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
 
-5. Send this log to our Support Team.
-> Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+5. Отправьте этот лог нашей команде поддержки.
+> Примечание: наша команда поддержки обработает ваш тикет намного быстрее, если вы укажете номер тикета HelpDesk или номер ошибки на GitHub в своём сообщении.
 
-## Additional Instruction (for old Android versions)
+## Дополнительная инструкция (для старых версий Android)
 
-On old Android devices there is no such option to take a bug report automatically. It has to be done manually by following this instruction:
+На старых устройствах Android нет возможности автоматически принимать отчёт об ошибке. Это нужно сделать вручную, следуя инструкции:
 
-**Part #1: prepare the device**
+**Часть 1: подготовьте устройство**
 
-1. Switch device to the developer mode. To do this: go to **Settings** > **About** > tap on **Build Number** 7 times.
+1. Переключите устройство в режим разработчика. Для этого: перейдите в **Настройки** > **Об устройстве** > нажмите на **Номер сборки** 7 раз.
 
-2. Go to **Developer Options**.
+2. Перейдите в **Параметры разработчика**.
 
-3. Enable **USB debugging**.
+3. Включите **отладку по USB**.
 
-4. Increase **Logger buffer** sizes to 4M per log buffer.
+4. Увеличьте размеры **буфера журнала** до 4 МБ для каждого буфера записей.
 
-4M should be enough for storing the logs we need until you're able to do the second part (getting log from the device);
+4 МБ должно быть достаточно для хранения нужных вам логов до тех пор, пока вы не перейдёте ко второй части (извлечение самих логов с устройства);
 
-**Important:** you need to reproduce the problem after you've done with the first part!
+**Важно:** вам нужно воспроизвести сбой после того, как вы закончите с первой частью!
 
 
-**Part #2: get the log**
+**Часть 2: получите лог**
 
-1. Connect your device to PC with USB cable.
+1. Подключите устройство к компьютеру с помощью USB-кабеля.
 
-2. Download and install Minimal ADB:
+2. Загрузите и установите Minimal ADB:
 
 <http://forum.xda-developers.com/showthread.php?t=2317790>
 
-Direct download link:
+Прямая ссылка на скачивание:
 
 <https://www.androidfilehost.com/?fid=24052804347803384>
 
-3. Run this command in the console (it will be opened after install):
+3. Запустите эту команду в консоли (она откроется автоматически после установки приложения):
 > adb logcat -v threadtime -d > C:\logcat.txt
 
-Send this log to us by contacting support or by any other way.
+Отправьте нам этот лог, связавшись со службой поддержки или любым другим способом.
 
-**Alternative way for ROOT users:**
+**Альтернативный способ для пользователей с ROOT:**
 
-1. Download and run [CatLog](https://play.google.com/store/apps/details?id=com.nolanlawson.logcat&noprocess).
+1. Скачайте и запустите приложение [CatLog](https://play.google.com/store/apps/details?id=com.nolanlawson.logcat&noprocess).
 
-2. Choose **Record** in the menu. Choose a name for a log file or just press **OK**. Now you can press **Home** button, CatLog will continue recording the log in background.
+2. Выберите в меню **Запись**. Выберите имя для файла лога или просто нажмите **OK**. Теперь вы можете нажать на кнопку **Домой**, CatLog продолжит записывать лог в фоновом режиме.
 
-3. Reproduce the issue.
+3. Воспроизведите ошибку.
 
-4. Open CatLog press **Stop record** in the menu.
+4. Откройте CatLog и нажмите **Прекратить запись** в меню.
 
-5. Send this log to our Support Team.
-> Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+5. Отправьте этот лог нашей команде поддержки.
+> Примечание: наша команда поддержки обработает ваш тикет намного быстрее, если вы укажете номер тикета HelpDesk или номер ошибки на GitHub в своём сообщении.

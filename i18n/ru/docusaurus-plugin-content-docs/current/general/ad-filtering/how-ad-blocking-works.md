@@ -1,54 +1,54 @@
 ---
-title: How ad blocking works
+title: Как работает блокировка рекламы
 sidebar_position: 1
 ---
 
-AdGuard has many ad-blocking products for various platforms, and each product has its own unique features. But what unites them all is that they block ads and trackers. This article describes how ad blocking works from the inside.
+В семействе блокировщиков AdGuard есть много продуктов для разных платформ, и каждый из них обладает своими уникальными особенностями. Но объединяет их всех то, что они блокируют рекламу и трекеры. Эта статья описывает, как устроена блокировка рекламы изнутри.
 
-> We don't cover DNS filtering here. It's a different way of blocking ads, with its own advantages and disadvantages. Follow this link to [learn more about DNS filtering](https://adguard-dns.io/kb/general/dns-filtering#how-does-dns-filtering-work).
+> В этой статье мы не касаемся DNS-фильтрации. Это альтернативный способ блокировки рекламы со своими преимуществами и недостатками. Переходите по этой ссылке, чтобы [узнать больше о DNS-фильтрации](https://adguard-dns.io/kb/general/dns-filtering#how-does-dns-filtering-work).
 
-## General principle
+## Общие принципы
 
-Filter lists, also called filters, lie at the core of any ad blocker. Filters are literally lists of rules written in a special syntax. Ad blockers can understand this complex syntax. They interpret filtering rules and perform actions on web traffic based on what the rules tell them to do: block specific elements, alter web pages in certain ways, etc.
+В основе любого блокировщика лежат фильтры. Фильтры — это буквально списки правил, написанные в соответствии с определённым синтаксисом. Блокировщики понимают этот сложный синтаксис. Они интерпретируют правила фильтрации и на их основе совершают те или иные действия с веб-трафиком: блокируют элементы, изменяют вид веб-страниц и т. д.
 
-![How ad blocking works](https://cdn.adguard.com/public/Adguard/Blog/manifestv3/adblockingworks.png)
+![Как работает блокировка рекламы](https://cdn.adguard.com/public/Adguard/Blog/manifestv3/adblockingworks.png)
 
-## Filter lists
+## Фильтры
 
-To better understand ad blocking, it's important to know the underlying principles of how filters work.
+Чтобы понимать, как работает блокировка рекламы, вначале надо разобраться в основополагающих принципах работы фильтров.
 
-Filtering rules that make up filters are not created automatically. They are developed by filter maintainers, including professionals and volunteers, who use browser developer consoles and other tools (such as the AdGuard's filtering log) to determine which rules will block a particular ad or tracker. This description of the process is very simplistic – some ads are particularly hard to block and require multiple rules, multiple iterations, and the use of complex syntax.
+Правила фильтрации, из которых состоят фильтры, не создаются сами собой. Они являются результатом кропотливой работы разработчиков фильтров, как профессионалов, так и волонтёров. Разработчики используют консоль браузеров и другие инструменты (такие, как «‎Журнал фильтрации»‎), чтобы определять, какое правило нужно для блокировки конкретной рекламы или трекера. Это очень упрощённое описание процесса: в особо трудных случаях могут потребоваться сразу несколько правил, множество итераций и использование сложного синтаксиса, чтобы заблокировать элемент.
 
-And even when a rule finally gets added to a filter, it doesn't mean that it stays there forever. Ads change, ways to serve the same ads on the same websites change, and the filter rules have to change, too. Sometimes rules become obsolete, a new ad appears, or a new filtering rule is needed to block the same ad. Filters are often maintained by one person, but even for a team of maintainers, it's impossible to constantly monitor the entire web. That's why many ad blockers have tools to help users easily report any filter-related issues they encounter.
+Даже когда правило попадает в фильтр, оно не остаётся там навсегда. Реклама и способ её подачи могут поменяться, и правила фильтрации должны меняться вслед за ними. Иногда правила устаревают, иногда появляется новая реклама и требуются новые правила, а иногда уже существующее правила требуется доработать. Фильтры часто поддерживаются одним человеком, но даже команда не может постоянно контролировать весь интернет. Вот почему многие блокировщики рекламы имеют инструменты, помогающий пользователям легко сообщать о любых проблемах с фильтрами, с которыми они сталкиваются.
 
-![Filter update scheme](https://cdn.adguard.com/public/Adguard/Blog/manifestv3/filtersupdates.png)
+![Схема обновления фильтра](https://cdn.adguard.com/public/Adguard/Blog/manifestv3/filtersupdates.png)
 
-AdGuard users [have access to a special web reporting tool](https://reports.adguard.com/new_issue.html). Thanks to user complaints, filter developers can focus on correcting their filter lists and not on scouring the Internet for new and old unblocked ads.
+Пользователи AdGuard [могут отправлять такие отчёты при помощи специальной веб-утилиты](https://reports.adguard.com/new_issue.html). Благодаря жалобам пользователей разработчики могут сфокусироваться на исправлении и дополнении фильтров, а не на поиске пропущенной рекламы по всей сети.
 
-Filters can do more than just block ads. There are filters that block tracking, social media widgets, and annoyances such as cookie notices. Different users may choose different combinations of filters to match their personal preferences. There are websites like [filterlists.com](https://filterlists.com/) that are dedicated to filter lists and have huge databases.
+Фильтры могут гораздо больше, чем просто блокировать рекламу. Существуют фильтры для блокировки трекеров, виджетов социальных сетей, раздражающих элементов вроде уведомлений о куки и т. д. Разные пользователи могут выбирать разные комбинации фильтров, чтобы подстроить фильтрацию под свои нужды. Существуют специальные сайты, такие как [filterlists.com](https://filterlists.com/), где собраны огромные базы всевозможных фильтров.
 
-> We develop and maintain [our own set of filter lists](adguard-filters.md) that can be used with AdGuard or other ad blockers.
+> Мы разрабатываем и поддерживаем свой [собственный набор фильтров](adguard-filters.md), которые можно использовать как внутри AdGuard, так и с другими блокировщиками.
 
-## Types of filtering rules
+## Типы правил фильтрации
 
-There are many types of filtering rules that serve different purposes. Depending on the ad blocker you use, and especially on your OS, some types of rules may not be supported.
+Существует множество видов правил фильтрации, служащих различным целям. В зависимости от используемого вами блокировщика и в особенности от вашей операционной системы, те или иные виды правил могут не поддерживаться.
 
-### Basic filtering rules
+### Базовые правила фильтрации
 
-To be displayed on a web page or in an app, the ad has to be loaded from a server first. To do so, the browser or the app needs to send a web request. The most basic way of preventing an ad from appearing on your screen is to block this request so it never reaches the server, and thus there's no reply.
+Чтобы вы увидели рекламу на веб-странице или в приложении, её сначала необходимо загрузить с сервера. Для этого браузер или приложение должны отправить веб-запрос. Самый простой способ предотвратить загрузку рекламы — заблокировать этот запрос, так что он никогда не попадёт на сервер, а значит, и реклама не загрузится.
 
-Basically, all AdGuard Ad Blocker products can block web requests according to the active filter rules. This method is very effective at stopping the ad, but it has some drawbacks. The most obvious one is: whatever place an ad was taking up will be left empty or occupied by an ad leftover.
+Практически все продукты из семейства AdGuard могут блокировать веб-запросы в соответствии с активными правилами фильтрации. Этот метод — один из самых эффективных в плане блокировки рекламы, но у него есть и недостатки. Самый очевидный из всех — на месте заблокированной рекламы может остаться пустое место.
 
-### Cosmetic filtering rules
+### Косметические правила
 
-Every web page has a Document Object Model (DOM), an HTML document containing the structure and elements of this page. As ads are also page elements, they get recorded in the DOM. Ad blockers can remove parts of the DOM, while filtering rules help them understand which parts are ads and should be removed, and which parts should be left intact.
+Каждая веб-страница имеет так называемый DOM (Document Object Model или «‎объектная модель документа»), по сути — HTML-документ, содержащий структуру страницы и всех её элементов. Реклама на странице тоже является элементом и, следовательно, отображается в DOM. Блокировщики могут убирать часть DOM, а правила фильтрации помогают им понять, какие именно куски DOM соответствуют рекламе и требуют удаления, а какие не стоит трогать.
 
-This method allows you to avoid above-mentioned blank spaces and ad leftovers, as well as perform other more complicated tasks.
+Этот метод позволяет избежать упомянутых выше пробелов и остатков рекламы, а также выполнять другие более сложные задачи.
 
-### HTML filtering rules
+### Правила фильтрации HTML
 
-In most cases, it's enough to use the above-mentioned basic and cosmetic rules to filter ads. But when it is necessary to change the HTML code of the page itself before it is loaded, you need filtering rules for HTML content. These rules allow you to specify the HTML elements to be cut out before the browser even loads the page.
+В большинстве случаев вышеупомянутых базовых и косметических правил достаточно, чтобы скрыть или заблокировать всю рекламу. Но иногда требуется изменить сам HTML-код страницы ещё до того, как она будет загружена. Для этого существуют правила фильтрации HTML-контента. Такие правила указывают блокировщику на HTML-элементы, которые нужно вырезать из кода ещё до того, как браузер загрузит страницу.
 
-These rules are quite complicated and require the ad blocker to be granted certain access rights, so not all platforms support them. Currently, these rules work only in the AdGuard Firefox add-on and in the AdGuard apps for Windows, Mac, and Android.
+Это весьма сложный тип правил, и он требует от блокировщика наличия определённых прав, поэтому поддерживается не на всех платформах. HTML-правила работают в приложениях AdGuard для Windows, Mac и Android, а также в браузерном расширении AdGuard для Firefox.
 
-> There are other types of filtering rules, but they require more advanced technical knowledge to understand how they work. If you are interested, [check out our comprehensive guide on filtering rules in the linked article](create-own-filters.md).
+> Есть и другие типы правил фильтрации, но для их понимания необходим ещё более высокий уровень технической подготовки. Если вам интересно, вы можете [ознакомиться с подробным описанием правил фильтрации в статье по ссылке](create-own-filters.md).

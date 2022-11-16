@@ -3,11 +3,11 @@ title: How to register
 sidebar_position: 1
 ---
 
-## What an AdGuard account is
+## AdGuardアカウントとは？
 
 [AdGuard account](https://my.adguard.com/) is a user account that stores information about your AdGuard licenses and subscriptions, active devices, your purchase history, preferred language, and other preferences. Many AdGuard products offer an option to activate them by entering the credentials for your AdGuard account, provided it contains a valid license.
 
-## How to create an account
+## AdGuardアカウントを登録する方法
 
 To create an account, go to [AdGuard's official website](https://adguard.com/welcome.html) and press the *My Account* button on the top right corner of the screen. Enter your email address and create a password — your account will be registered.
 

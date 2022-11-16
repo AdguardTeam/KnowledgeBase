@@ -77,159 +77,159 @@ AdGuard позволяет создавать собственные фильт�
 
 Интернет — довольно опасное место, где ваше устройство могут атаковать вирусы, а личные данные и деньги можно украсть. Термины «фишинг» и «вредоносное ПО» стали довольно привычными.
 
-Phishing is a fraudulent online practice aimed at obtaining sensitive information like usernames, passwords, credit card details and such from internet users. This form of fraud, effected through spoof emailing and fake websites posing as trusted mediums like banks, social services etc., is causing more financial damage every year. As for malware (malicious software), it is as the name suggests — any type of software designed with the intent to damage the personal computer or other device it gets into. What once began as a prank now is a tool to steal confidential information from users and businesses.
+Фишинг — это вид интернет-мошенничества, нацеленный на получение доступа к ценной информации вроде логинов, паролей, платёжных данных и т. д. Такой обман, осуществляемый с помощью фальшивых электронных писем и поддельных сайтов, которые притворяются известными брендами банков и популярных сервисов, с каждым годом наносит всё больший финансовый ущерб. Что касается вредоносного По (англ. malware), то оно, как и следует из названия, представляет собой программу, единственное предназначение которой — нанести максимальный вред вашему компьютеру или другому устройству, куда она попадает. То, что изначально появилось как розыгрыш, давно стало инструментом для кражи ценной информации пользователей и даже целых компаний.
 
 ![Антифишинг](https://cdn.adguard.com/content/kb/ad_blocker/android/features/browsing-security.png)
 
-Fortunately, AdGuard's Browsing Security module protects you from visiting phishing and malicious websites. It also warns you about malware being downloaded onto your device. In case you want to learn more about Browsing Security, read [this article](/general/browsing-security.md).
+К счастью, модуль Антифишинг от AdGuard защитит вас от посещения фишинговых и вредоносных сайтов. Он предупредит вас при попытке загрузить вредоносную программу. Если вы хотите узнать больше о модуле Антифишинг, прочитайте [эту статью](/general/browsing-security.md).
 
-> But note that AdGuard for Android is not an antivirus. It will neither stop the actual download of a virus nor delete the already existing ones. For the complete protection of your device, we recommend using AdGuard in tandem with a dedicated AV tool.
+> Но важно понимать, что AdGuard для Android — это не антивирус. Он не остановит загрузку вируса и не удалит уже существующие. Для полноценной защиты мы советуем использовать AdGuard в сочетании с антивирусом.
 
 ![Предупреждение Антифишинга](https://cdn.adguard.com/content/kb/ad_blocker/android/features/browsing_security_warning.png)
 
-At the same time, we'd like to emphasize that your personal data is *not* transferred anywhere, and AdGuard does *not* know which websites you are visiting. The security check is not performed against an open web address (URL) but through hash prefixes (hash is a certain data structure that renders unambiguous each address added to the base). However, you can send us information on the websites you visit to improve the database, if you opt to. Learn more about AdGuard's phishing and malware protection.
+В то же время, мы хотим подчеркнуть, что ваши личные данные *никуда* не передаются и даже AdGuard *не* знает, какие сайты вы посещаете. Для проверки безопасности используются не открытые сетевые адреса (URL), а префиксы их хешей (хеш — определённым образом сформированная структура данных, однозначно идентифицирующая каждый добавленный в базу адрес). Тем не менее вы можете при желании отправлять нам анонимную информацию о посещаемых сайтах, чтобы помочь с обновлением базы данных. Узнайте больше о защите AdGuard от фишинга и вредоносных программ.
 
-# Control your apps
+# Контроль над приложениями
 
-One of the main stated purposes of AdGuard for Android is to give users back the full control over their devices. With AdGuard, you can see comprehensive information about all web requests coming through your device. No app will be able to go online without you knowing.
+Одна из важнейших задач AdGuard для Android заключается в том, чтобы вернуть пользователям полный контроль над их устройством. С AdGuard вы можете увидеть абсолютно всю информацию о веб-запросах, проходящих через ваше устройство. Ни одно из приложений не сможет подключиться к интернету без вашего ведома.
 
-## Apps management
+## Настройки приложений
 
-In the Apps Management module you can choose which apps should have Wi-Fi or mobile data access, which will be filtered by AdGuard and which not. You can also change the background Internet access rules for your apps when the screen is locked. These settings can be applied to all installed apps at once or on the individual basis.
+В модуле Настройки приложений вы можете выбрать, какие из приложений могут иметь доступ к передаче данных по Wi-Fi или мобильной сети, какие будут фильтроваться AdGuard, а какие нет. Вы также можете изменить правила доступа к интернету для приложений при заблокированном экране. Эти настройки можно применить ко всем установленным приложениям одновременно или к каждому по отдельности.
 
 ![Управление приложениями](https://cdn.adguard.com/content/kb/ad_blocker/android/features/apps-management.png)
 
-You can find extra settings in the upper right corner of the Apps Management screen. They will help you fine-tune AdGuard for Android to your preference. For example, you can make the common settings applicable to each and every app, or select the apps which need a more detailed approach.
+Вы найдёте все дополнительные настройки в правом верхнем углу на экране «Настройки приложений». В них вы сможете настроить AdGuard для Android в соответствии с вашими предпочтениями. Например, вы можете применить общие настройки ко всем приложениям или выбрать приложения, для которых требуется индивидуальный подход.
 
 ![Chrome](https://cdn.adguard.com/content/kb/ad_blocker/android/features/chrome.png)
 
-By tapping the icons, you will see a screen showing app-specific traffic to help you make more informed decisions. AdGuard is of help not only with ad filtering and privacy protection, it can aid your device function better, saving battery life and traffic as well.
+Нажав на иконки, вы увидите окошко со статистикой трафика приложения, что поможет вам принимать более обоснованные решения. AdGuard способен не только блокировать рекламу и защищать личные данные, он может улучшить работу устройства в целом, экономя заряд батареи и трафик.
 
-## Filtering log
+## Журнал фильтрации
 
-In the Filtering Log, you can directly observe all web requests made by browsers and apps. Thanks to this feature, you have full control over all processes on your device.
+В Журнале фильтрации можно наблюдать за всеми запросами, исходящими от различных браузеров и приложений. Благодаря этой функции вы можете контролировать любые процессы на вашем устройстве.
 
 ![Журнал фильтрации](https://cdn.adguard.com/content/kb/ad_blocker/android/features/filtering-log.png)
 
-You can block each request right there in one tap (or unblock it, if the request is already blocked). There's also detailed information about each request, although it is mostly aimed at the advanced users, particularly those who create their own filtering rules. We will be elaborating on it just a bit further below.
+Вы можете заблокировать любой запрос сразу одним касанием (или разблокировать его, если запрос уже был заблокирован). Здесь вы найдёте подробную информацию о каждом запросе, хотя функция прежде всего предназначена для продвинутых пользователей, особенно для тех, кто создаёт свои собственные правила фильтрации. Позже мы остановимся на этом подробнее.
 
 ## Пользовательские правила
 
-As mentioned above, AdGuard for Android uses a set of filters to block ads. And then there is the User rules section that allows you to create and adjust your own filtering rules. It is located in the Settings tab of the AdGuard menu.
+Как упоминалось выше, AdGuard для Android использует набор фильтров для блокировки рекламы. Кроме того, в приложении есть раздел Пользовательские правила, где можно создавать и настраивать свои собственные правила фильтрации. Он находится во вкладке «Настройки» меню AdGuard.
 
 ![Пользовательские правила](https://cdn.adguard.com/content/kb/ad_blocker/android/features/user-rules.png)
 
-When you first install AdGuard, the User rules section is empty. To fill it with rules, you will need to understand the basics of the rules syntax. Don't worry if you are not familiar with it, here's a good place to start should you feel an urge to delve deeper into custom rules creation.
+Когда вы впервые устанавливаете AdGuard, раздел с Пользовательскими правилами пуст. Чтобы заполнить его, вам необходимо понимать основы синтаксиса правил. Не волнуйтесь, если вы не знакомы с ними. Если у вас возникнет желание углубиться в создание пользовательских правил — это отличный повод начать.
 
-By the way, whenever you use Filtering Log to block anything, a corresponding rule will appear in User rules, so use it if you ever want to undo the blocking. And generally speaking, Filtering Log and User rules go together particularly well: you can use the former to monitor requests in order to build a correct rule for the User rules.
+Кстати, всякий раз, когда вы используете Журнал фильтрации для блокировки чего-либо, в Пользовательских правилах появляется соответствующее правило, которое потом можно использовать для разблокировки. Журнал фильтрации и пользовательские правила отлично дополняют друг друга: вы можете использовать первый для мониторинга запросов, чтобы составлять корректные правила для вторых.
 
 ## DNS-фильтрация
 
-The DNS Filtering module allows to configure DNS settings on the user's device, including the chosen DNS server, DNS protocol, and DNS filters that block ads and trackers.
+Модуль DNS-фильтрации позволяет настроить DNS на устройстве пользователя, включая выбор DNS-сервера, DNS-протокола и DNS-фильтров, которые блокируют рекламу и трекеры.
 
 ![AdGuard DNS](https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/adguard_dns_en.jpg)
 
-A bit of a theory refresher: DNS stands for "Domain name system", and its purpose is to translate domain names into something browsers can understand, i.e. IP addresses. So, each time you go to a website, your browser sends a DNS request to a server, usually determined by your ISP. That server either redirects the request to another (upstream) server or replies with an IP address. If you use a special DNS server instead of a default one, it can send unsafe and potentially dangerous requests to the "void". Thus, the responses with the IP addresses won't be received and "bad requests" will be nipped in the bud.
+Немного освежим знания: DNS (Domain Name System) — это «система доменных имён», которая переводит имена доменов в нечто более понятное для браузера, то есть IP-адреса. Каждый раз, когда вы переходите на сайт, браузер отправляет DNS-запрос на специальный сервер, обычно определяемый вашим интернет-провайдером. Этот сервер перенаправляет запрос на вышестоящий (upstream) сервер или сразу отвечает IP-адресом. Если вы используете специальный DNS-сервер вместо стандартного, он может отправлять небезопасные и потенциально опасные запросы в пустоту. Таким образом, ответ с IP-адресом не будет получен и «плохие» запросы будут пресечены на корню.
 
-DNS filtering has its own separate tab within the AdGuard for Android app home screen. Here you can choose which type of DNS you wish to use (it can be either regular DNS or high security DNS — we will get to that later on) as well as enable DNS-level blocking.
+У DNS-фильтрации есть отдельная вкладка в меню приложения AdGuard для Android. Здесь вы можете выбрать тип DNS (это может быть обычный DNS либо DNS повышенной безопасности — мы вернёмся к этому позже), а также включить блокировку рекламы на уровне DNS.
 
-## DNS blocking
+## DNS-блокировка
 
-DNS blocking is a standalone feature that complements AdGuard protection suite.
+DNS-блокировка — это независимая функция, которая дополняет защиту AdGuard.
 
 ![Механизм DNS](https://cdn.adguard.com/public/Adguard/Blog/android-features/DNS-mechanism.jpg)
 
-There are two methods of DNS blocking:
+Существует два метода DNS-блокировки:
 
-1. Some DNS servers can block DNS requests to potentially harmful domains.
-2. There is built-in DNS filtering that works right on your device and can block DNS requests, in addition to what's blocked by the selected DNS server.
+1. Некоторые DNS-серверы могут блокировать DNS-запросы к потенциально вредоносным доменам.
+2. Существует встроенная DNS-фильтрация, которая работает прямо на вашем устройстве и может блокировать DNS-запросы в дополнение к тому, что блокируется выбранным DNS-сервером.
 
-How exactly does DNS filtering work? It has a special DNS filter which contains a large list of ad and tracker domains, which it uses in conjunction with User rules to recognize 'bad' requests. Every request is checked against this filter, and if there's a hit, instead of forwarding it to the DNS server, it is being rerouted to a 'blackhole'.
+Но как именно работает DNS-фильтрация? Есть специальный DNS-фильтр, который содержит большой список рекламных и отслеживающих доменов. DNS-фильтр использует этот список в сочетании с пользовательскими правилами для распознавания «плохих» запросов. Каждый запрос проверяется на соответствие этому фильтру, и если найдено совпадение, запрос не пересылается на DNS-сервер, он перенаправляется в «чёрную дыру».
 
-The simplicity of this approach is both a benefit and a disadvantage. The main advantage of this approach is that it's both battery life friendly and traffic-saving. Once a domain is blocked, it won't be requested again within an hour. The disadvantage would be the "roughness" of this method: specific URLs can't be blocked, only whole domains. Sometimes the only way to block ads by DNS is to add a rule that will break something at the same time. In this case, we just don't add this rule and the ad remains unblocked — because the alternative where the website does not work at all is even worse.
+Простота этого подхода имеет как преимущества, так и недостатки. Главное преимущество заключается в том, что такой подход экономит заряд батареи и трафик. Если домен заблокирован, он не будет запрошен снова в течение часа. К недостаткам относится «грубость» метода: конкретные URL-адреса нельзя заблокировать, только целые домены. Иногда единственный способ заблокировать рекламу по DNS — это добавить правило, которое одновременно будет что-то нарушать. В этом случае мы просто не будем добавлять это правило, и реклама останется незаблокированной — так мы выберем меньшее из зол, потому что альтернатива, когда сайт вообще не работает, гораздо хуже.
 
 ## DNS-серверы
 
-But AdGuard for Android "DNS package" does not end just there. One of the useful perks is an option to select *absolutely any* DNS server to use. At your service is a list consisting of dozens of servers to choose from, from our own AdGuard DNS servers to other popular providers like Google DNS, Cloudflare and others. On top of that, if your favorite server is not in the default list, you still can enter its address manually and use it anyway. See the comprehensive list of popular DNS providers — you can find many DNS servers there and any to AdGuard with a tap of a finger.
+Но «пакет DNS-функций» приложения AdGuard для Android на этом не заканчивается. Один из полезных бонусов — возможность выбрать *абсолютно любой* DNS-сервер. В вашем распоряжении список из десятков серверов на выбор, от наших собственных DNS-серверов AdGuard до серверов других популярных провайдеров, таких как Google DNS, Cloudflare и др. Кроме того, если вашего любимого сервера нет в списке, вы можете ввести его адрес вручную и использовать его. В обширном списке популярных DNS-провайдеров вы найдёте множество DNS-серверов и сможете подключиться к AdGuard одним касанием пальца.
 
-There are several reasons to use a custom DNS server instead of one offered by your ISP by default. Some servers are faster, some provide ad blocking or parental control solutions, some enhance your privacy etc.
+Есть несколько причин использовать собственный DNS-сервер вместо предложенного по умолчанию вашим провайдером. Некоторые серверы быстрее, другие блокируют рекламу, улучшают конфиденциальность и т. д.
 
-But DNS servers not only vary by function. Besides, they can also differ by supported protocol types. There are three main types of protocols that DNS servers work over: HTTPS, TLS, and QUIC. Correspondingly, there are DNS-over-HTTPS (DoH), DNS-over-TLS (DoT) and DNS-over-QUIC (DoQ). While the first two are standard protocols, the third (DoQ) is experimental, yet the most outstanding one. We'll describe it later. Choosing a DNS server from a trusted provider is essential to protect DNS traffic. When user's DNS traffic is safe, their privacy and security are increased, and it's easier to prevent eavesdropping and manipulation of DNS data via man-in-the-middle attacks (MITMs).
+DNS-серверы различаются не только по функциям. Они также могут различаться поддерживаемыми типами протоколов. Существует три основных типа протоколов, по которым работают DNS-серверы: HTTPS, TLS и QUIC. Соответственно, существуют DNS-over-HTTPS (DoH), DNS-over-TLS (DoT) и DNS-over-QUIC (DoQ). Первые два протокола — давно существующие и стандартные, а третий (DoQ) — новый и экспериментальный, но обладает наибольшими преимуществами. К нему мы вернёмся чуть позже. Если вы хотите защитить DNS-трафик, важно выбирать DNS-сервер от надёжного провайдера. Когда DNS-трафик пользователя надёжно защищён, его конфиденциальность и безопасность повышаются, а риск прослушки и манипуляции с данными DNS путём MITM-атак становится ниже.
 
 ### DNS-over-QUIC
 
-DNS-over-QUIC (DoQ) is a rather new encryption protocol and AdGuard DNS is the first public resolver that supports it. Unlike DoH and DoT, it uses QUIC as a transport protocol and finally brings DNS back to its roots — working over UDP. It brings all the good things that QUIC has to offer — out-of-the-box encryption, reduced connection times, better performance when data packets are lost. Also, QUIC is supposed to be a transport-level protocol and there are no risks of metadata leaks that could happen with DoH.
+DNS-over-QUIC (DoQ) — это относительно новый протокол шифрования, а AdGuard DNS — первый публичный резолвер, который использует новый протокол QUIC. В отличие от DoH и DoT, DoQ использует QUIC в качестве транспортного протокола и возвращает DNS к истокам, а именно работе через UDP. Он привносит всё хорошее, что QUIC может предложить — готовое шифрование, ускоренное время соединения, лучшая производительность при потере пакетов трафика. К тому же, QUIC создавался как транспортный протокол, и с ним нет риска утечки метаданных, в отличие от DoH.
 
-To learn more about DNS-over-QUIC, check out [this article](https://adguard.com/en/blog/dns-over-quic.html) dedicated entirely to it.
+Чтобы узнать больше о DNS-over-QUIC, прочитайте [статью](https://adguard.com/ru/blog/dns-over-quic.html), посвящённую этому протоколу.
 
-To enable DoQ in AdGuard for Android, perform the following steps:
+Чтобы включить DoQ в AdGuard для Android, выполните следующие шаги:
 
-* Open the app, then open the side menu
-* Go to *Settings > DNS Filtering* and enable it
-* Select any of AdGuard DNS servers from the list of available servers
-* Under *Server type* choose *DNS-over-QUIC*
+* Откройте приложение, а затем — боковое меню
+* Перейдите в *Настройки* > и включите *DNS-фильтрацию* в одноимённом разделе
+* Выберите любой сервер AdGuard DNS из списка доступных серверов
+* В поле *Тип сервера* выберите *DNS-over-QUIC*
 
-## DNS user filter
+## Пользовательский DNS-фильтр
 
-It is very much like the regular User filter, but for DNS requests.
+По своему смыслу он очень похож на обычный Пользовательский фильтр, но для DNS-запросов.
 
 ![Пользовательский DNS-фильтр](https://cdn.adguard.com/content/kb/ad_blocker/android/features/dns-user-filter.png)
 
-You'll find DNS user filter at *Settings > DNS Filtering > DNS Requests blocking*. DNS User filter supports two types of syntax: a limited portion of AdGuard syntax and "hosts" syntax. You can read more about it in our Knowledge Base.
+Вы найдёте его в разделе *Настройки > DNS-фильтрация > Блокировка DNS-запросов*. Пользовательский фильтр DNS поддерживает два типа синтаксиса: синтаксис AdGuard в урезанной форме и hosts-синтаксис. Познакомиться с ними ближе вы можете в нашей Базе знаний.
 
-## Custom DNS filters
+## Собственные DNS-фильтры
 
-You can add any [custom DNS filters](https://filterlists.com/) or custom hosts lists. A useful feature considering how popular hosts lists are among Internet users.
+Вы можете добавлять любые [собственные DNS-фильтры](https://filterlists.com/) или hosts-списки. Это весьма полезная опция, учитывая, как популярны списки hosts среди интернет-пользователей.
 
 ![DNS-фильтры](https://cdn.adguard.com/content/kb/ad_blocker/android/features/dns-filters.png)
 
-This option is available on the *Settings > DNS Filtering > DNS Requests blocking* screen.
+Найти эту опцию можно здесь: *Настройки > DNS-фильтрация > Блокировка DNS-запросов*.
 
-## Proxy and TOR
+## Прокси и TOR
 
-A proxy server is basically another computer serving as a hub that processes your internet requests. You can set up AdGuard to route all your device's traffic through any proxy — and you'll be able to configure the whole thing right inside the app. And here is [an instruction on how to set up a proxy](/adguard-for-android/solving-problems/outbound-proxy.md).
+Если говорить очень упрощённо, прокси-сервер — это другой компьютер, который обрабатывает запросы вашего компьютера и в целом действует как сортировочный узел. Вы можете настроить AdGuard таким образом, чтобы весь ваш трафик проходил через любой прокси — и при этом управлять процессом прямо в приложении. А вот и [инструкция по настройке прокси](/adguard-for-android/solving-problems/outbound-proxy.md).
 
-> Some popular VPN providers offer an alternative way to use their service as a proxy. This can be used to run them alongside AdGuard in local VPN mode.
+> Некоторые популярные VPN-провайдеры предлагают альтернативный способ использования их сервиса в качестве прокси. Таким образом их можно использовать параллельно с AdGuard, работающим в режиме локального VPN.
 
 ![Настройки прокси](https://cdn.adguard.com/content/kb/ad_blocker/android/features/proxy-settings.png)
 
-Contrary to a popular opinion, using a proxy server is not just about bypassing access restriction to geoblocked resources. It is about security! If you are using a proxy server, intruders won't know what websites you visit. You can also use AdGuard along with the anonymity network TOR (we have already integrated AdGuard with Tor for your convenience!). Here is a [Wiki article](https://en.wikipedia.org/wiki/Tor_(anonymity_network)) where the whole concept of TOR network is nicely explained in case you wish to find out more.
+Вопреки распространённому мнению, использование прокси-сервера — это не просто обход ограничения доступа к ресурсам с привязкой к геолокации. Всё дело в сетевой безопасности! Мошенники просто не смогут получить историю вашего браузера, если вы будете пользоваться прокси. А ещё вы можете использовать AdGuard одновременно с анонимной сетью TOR (мы даже интегрировали эту систему в AdGuard для вашего удобства!). Если вам нужно освежить знания, в [этой статье на Википедии](https://ru.wikipedia.org/wiki/Tor) описаны основные характеристики и принципы работы TOR.
 
-## Extensions support
+## Поддержка расширений
 
-Userscripts (we also call them extensions) are basically mini-programs written in Javascript that extend the functionality of one or more websites. Usually, you'd need some special userscript manager to add them, and it's traditionally more of a desktop thing. But with AdGuard everything is possible! Now you can add any userscripts by URL or load them from a file, and AdGuard will serve as a userscript manager and take care of the rest. Go to *Settings > Extensions* to enable some of the pre-installed extensions or to add custom userscripts.
+Пользовательские скрипты (мы также называем их расширениями) — это, по своей сути, мини-программы, написанные на Javascript и меняющие поведение одного или многих сайтов. Обычно для их добавления требуется специальный менеджер пользовательских скриптов, и традиционно это больше относится к десктопным программам. Но с AdGuard возможно всё! Теперь вы можете добавлять любые пользовательские скрипты по URL или загружать их из файла, а AdGuard послужит менеджером юзерскриптов и позаботится обо всём остальном. Перейдите в раздел *Настройки > Расширения*, чтобы включить предустановленные расширения или добавить собственные пользовательские скрипты.
 
 ![Расширения](https://cdn.adguard.com/content/kb/ad_blocker/android/features/extensions.png)
 
-By the way, you can tap any added userscript to see more details, and to reinstall or delete it.
+Кстати, вы можете нажать на каждый добавленный скрипт, чтобы увидеть больше информации о нём, переустановить или удалить его.
 
 ## Совместимость с AdGuard VPN
 
-The best kind of compatibility is when you install two apps and they just start working together. Presuming you already have AdGuard ad blocker installed, just download AdGuard VPN from Play Store (you can get there right from the ad blocker app, there's an item in General settings).
+Лучший вид совместимости — это когда вы устанавливаете два приложения, и они просто начинают работать вместе. Предполагаем, что у вас уже установлен блокировщик рекламы AdGuard, просто скачайте AdGuard VPN из Play Store (туда можно попасть прямо из раздела «Основные настройки» в приложении блокировщика).
 
 ![Совместимость](https://cdn.adguard.com/content/kb/ad_blocker/android/features/compatibility.png)
 
-Both apps will detect each other and do everything that's needed for smooth joint work. All that will be left for you is to enjoy both ad-free Internet and the benefits of a VPN. By the way, it works the other way around just as well: install AdGuard ad blocker on top of an already-running AdGuard VPN and you're good.
+Приложения распознают друг друга и сделают всё, что нужно для бесперебойной совместной работы. А вам останется только наслаждаться интернетом без рекламы и преимуществами VPN. Кстати, так же хорошо всё работает и в обратную сторону: если у вас есть только AdGuard VPN, просто установите блокировщик рекламы AdGuard, и готово.
 
-If you'd like to disable Compatibility Mode for any reason, it's very simple to do so from AdGuard ad blocker settings, just toggle the switch. Additionally, you can add AdGuard ad blocker and AdGuard VPN tiles to your device's notification bar and toggle them in one tap at your own will — thanks to Compatibility Mode the configuration will change immediately and silently.
+Если вы захотите отключить Режим совместимости, это легко сделать в настройках блокировщика рекламы AdGuard — просто переключите тумблер. Кроме того, вы можете добавить блокировщик рекламы AdGuard и AdGuard VPN на панель уведомлений вашего устройства и переключать их одним касанием по своему усмотрению — благодаря Режиму совместимости конфигурация изменится мгновенно и незаметно.
 
 ## Лицензия
 
-While some ot the features in AdGuard for Android are free, others require [purchasing a license](https://adguard.com/en/license.html). There are Personal (up to three devices) and Family (up to 9 devices), Yearly and Lifetime license keys. The premium version offers the following features to its users:
+В то время как некоторые функции AdGuard для Android доступны в бесплатной версии, для использования других [понадобится лицензия](https://adguard.com/ru/license.html). Есть Персональные (до трёх устройств) и Семейные (до 9 устройств), Годовые и Вечные лицензионные ключи. В премиум-версии пользователям доступны следующие функции:
 * Антитрекинг
 * Антифишинг
 * Расширения
-* Ad blocking in all apps (not only browsers)
+* Блокировка рекламы в приложениях (не только в браузерах)
 * Собственные фильтры
 
-Read [this article](/general/license/activation.md) to learn how to activate the license key.
+Прочитайте [эту статью](/general/license/activation.md), чтобы узнать, как активировать лицензионный ключ.
 
 ## Другие функции
 
-There are too many features to describe them all in detail, so let us simply list them here:
+Функций слишком много, чтобы подробно рассказать о каждой из них, поэтому ограничимся просто списком:
 
-* When you visit certain screens for the first time, there will appear tooltips that describe the purpose of that screen and its main features
-* You can export or import AdGuard settings (for a faster switch between the settings profiles or to transfer your profile between different devices)
-* Select an update channel, i.e. the mode in which the application receives its updates (stable release channel, less stable beta channel and raw ["nightly" channel](https://adguard.com/en/blog/nightly-builds/)
-* By tapping a little battery icon on the main screen of the app you will get to the "Battery Usage" screen. System battery stats [are often wrong](/adguard-for-android/solving-problems/battery.md), so we decided to have our own, one that would reflect the real state of things
-* You can change the app's language in the General Settings tab
+* При первом переходе на некоторые экраны будут отображаться подсказки, рассказывающие о назначении текущего экрана и доступных на нём опциях
+* Вы можете экспортировать или импортировать настройки AdGuard (очень удобно при переключении между профилями настроек или переносе профиля при покупке нового устройства)
+* Вы можете выбирать канал обновлений, т.е. то, как ваше устройство получает обновления (стабильный основной канал, менее стабильный бета-канал и [канал Nightly с «сырыми» сборками](https://adguard.com/en/blog/nightly-builds/) для самых смелых
+* Нажав на иконку батареи на главном экране приложения, вы попадёте на экран со статистикой использования батареи Системная статистика [часто врёт](/adguard-for-android/solving-problems/battery.md), поэтому мы решили вести собственную, которая отражает реальное положение вещей
+* Вы можете изменить язык приложения во вкладке «Основные настройки»
