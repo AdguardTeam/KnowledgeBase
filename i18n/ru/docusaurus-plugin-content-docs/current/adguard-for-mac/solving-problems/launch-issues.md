@@ -1,37 +1,37 @@
 ---
-title: Launch issues on macOS
+title: Проблемы с запуском в macOS
 sidebar_position: 6
 ---
 
-Occasionally macOS may cause the corruption of AdGuard's Network Extension module, making it unable to use the app. In this case you should follow one of these instructions, based on your OS version.
+Иногда macOS может нарушить работу модуля AdGuard «Сеть», тем самым делая невозможным использование приложения. В таком случае выполните одну из инструкций ниже, которая подходит для вашей версии ОС.
 
-## Launch issues on macOS 11 and higher
+## Проблемы с запуском на операционных системах macOS 11 и выше
 
-If you have problems launching AdGuard for Mac on Big Sur and Monterey operating systems, please use this instruction:
+Если у вас возникли проблемы при запуске AdGuard для Mac на операционных системах Big Sur и Monterey, воспользуйтесь этой инструкцией:
 
-1. Reboot Mac and enter [recovery mode](https://support.apple.com/en-us/HT201255).
-2. Disable SIP (Launch **Terminal** from the **Utilities** menu and type `csrutil disable`).
-3. Reboot Mac.
-4. Close the AdGuard app, open **Terminal** and type `systemextensionsctl reset`.
-5. Reboot Mac and enter recovery mode.
-6. Enable SIP (Launch **Terminal** from the **Utilities** menu and type `csrutil enable`).
-7. Launch the AdGuard app and enable protection.
+1. Перезагрузите Mac и войдите в [режим восстановления](https://support.apple.com/ru-ru/HT201255).
+2. Отключите SIP (запустите **Терминал** из меню **Утилиты** и введите `csrutil disable`).
+3. Перезагрузите Mac.
+4. Закройте приложение AdGuard, откройте **Терминал** и введите `systemextensionsctl reset`.
+5. Перезагрузите Mac и войдите в режим восстановления.
+6. Включите SIP (запустите **Терминал** из меню **Утилиты** и введите `csrutil enable`).
+7. Запустите приложение AdGuard и включите защиту.
 
-## Launch issues on macOS 10
+## Проблемы с запуском на операционных системах macOS 10
 
-If you have problems launching AdGuard for Mac on Sierra, Mojave and Catalina operating systems, please use this instruction:
+Если у вас возникли проблемы при запуске AdGuard для Mac на операционных системах Sierra, Mojave и Catalina, воспользуйтесь этой инструкцией:
 
-1. Open **Terminal** and enter command `ls -@lOae /private/var/db/KernelExtensionManagement`.
-2. Check that the `restricted` flag is not present (like on the screenshot).
+1. Откройте **Терминал** и введите команду `ls -@lOae /private/var/db/KernelExtensionManagement`.
+2. Убедитесь, что флаг `restricted` отсутствует (как на скриншоте).
 
-![Command example](https://cdn.adguard.com/content/kb/ad_blocker/mac/restricted-flag.jpg)
+![Пример команды](https://cdn.adguard.com/content/kb/ad_blocker/mac/restricted-flag.jpg)
 
-3. Reboot your Mac in recovery mode.
-4. Open **Utilities** -> **Terminal**.
-5. Enter `csrutil disable`.
-6. Enter administrator password.
-7. Reboot your Mac.
-8. Open **Terminal** and enter the following command: `sudo chflags restricted /private/var/db/KernelExtensionManagement`.
-9. Reboot your Mac in recovery mode.
-10. Open **Utilities** -> **Terminal** -> Enter `csrutil enable` -> Enter administrator password -> Reboot your Mac.
-11. Включить защиту AdGuard.
+3. Перезагрузите ваш Mac в режиме восстановления.
+4. Откройте **Утилиты** -> **Терминал**.
+5. Введите `csrutil disable`.
+6. Введите пароль администратора.
+7. Перезагрузите Mac.
+8. Откройте **Терминал** и введите команду `sudo chflags restricted /private/var/db/KernelExtensionManagement`.
+9. Перезагрузите ваш Mac в режиме восстановления.
+10. Откройте **Утилиты** -> **Терминал** -> Введите `csrutil enable` -> Введите пароль администратора -> Перезагрузите Mac.
+11. Включите защиту AdGuard.

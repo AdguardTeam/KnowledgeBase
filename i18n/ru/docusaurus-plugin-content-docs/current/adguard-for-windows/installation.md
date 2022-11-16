@@ -1,88 +1,88 @@
 ---
-title: Installation
+title: Установка
 sidebar_position: 2
 ---
 
 ## Системные требования
 
-**Operating system:** Microsoft Windows 11, 10, 8.1, 8, 7, Vista.
+**Операционные системы:** Microsoft Windows 11, 10, 8.1, 8, 7, Vista.
 
-**RAM:** at least 512 MB.
+**Объём оперативной памяти**: от 512 ГБ.
 
-**Free disk space:** 150 Mbytes.
+**Свободное пространство на диске**: 150 МБ.
 
-**Browsers:** Microsoft Edge, Microsoft Internet Explorer (all versions), Opera, Google Chrome, Yandex.Browser, Mozilla Firefox, and many other browsers.
+**Браузеры:** Microsoft Edge, Microsoft Internet Explorer (все версии), Opera, Google Chrome, Яндекс.Браузер, Mozilla Firefox и многие другие.
 
-## AdGuard Installation
+## Установка AdGuard
 
-To use AdGuard on a PC or tablet under Microsoft Windows, you should download the installation package and launch the installation program. Perform the following actions:
+Чтобы использовать программу AdGuard на компьютере или планшете под управлением Microsoft Windows, загрузите установочный пакет этого приложения и запустите программу установки. Для этого выполните перечисленные ниже действия:
 
-1) Open your browser and proceed to the [AdGuard website](http://adguard.com) by typing adguard.com in the address bar and then click **Download**.
+1) Откройте браузер и перейдите на сайт [AdGuard](http://adguard.com), набрав в адресной строке adguard.com, а затем нажмите **Скачать**.
 
-![Download AdGuard](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/download-from-website.png)
+![Скачать AdGuard](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/download-from-website.png)
 
-2) When the download is finished, press the **Open** button shown in the Downloads bar or click the file name *adguardInstaller.exe*.
+2) После завершения загрузки нажмите на кнопку **Открыть**, которая отобразится на панели загрузки браузера либо нажмите на скачанный файл *adguardInstaller.exe*.
 
-![Press "Run"](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/click-download.png)
+![Нажмите "Выполнить"](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/click-download.png)
 
-3) You’ll see the User Account Control dialogue box requesting to allow the app to make changes to your PC. Click **Yes**.
+3) На экране появится диалоговое окно службы Контроля учётных записей пользователей с запросом на внесение изменений в настройки вашего компьютера.  Нажмите **Да**.
 
-![Allow changes](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/allow-changes.png)
+![Разрешить изменения](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/allow-changes.png)
 
-4) Next, choose the folder on your PC for the app to be installed to.
+4) Выберите папку на компьютере, в которую будет установлено приложение.
 
-![Choose folder](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/install-wizard.png)
+![Выбрать папку](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/install-wizard.png)
 
-If you do not agree with the default installation path, press **Browse**, select the folder for AdGuard installation in the **Browse For Folder** window, and confirm your choice by clicking **OK**. You can also install AdGuard to a new folder by clicking **Make New Folder** and entering its name. To create a desktop shortcut for AdGuard, check the **Create a desktop shortcut** box. Press **Install** to proceed with installation.
+Если вы не согласны с путём установки по умолчанию, нажмите **Обзор**. В открывшемся окне **Обзор папок** укажите папку для установки AdGuard и подтвердите свой выбор, нажав **ОК**. Вы также можете установить AdGuard в новую папку, нажав **Создать папку** и введя её имя. Чтобы разместить ярлык AdGuard на Рабочем столе Windows, установите флажок **Создать ярлык на рабочем столе**. Для продолжения установки нажмите на кнопку **Установить**.
 
-![Start installation](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/start-install.png)
+![Начать установку](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/start-install.png)
 
-5) Wait for the installation to complete and click **Finish**.
+5) Дождитесь завершения установки и нажмите **Готово**.
 
-![Complete installation](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/finish-install.png)
+![Полная установка](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/finish-install.png)
 
-Congratulations! You have successfully installed AdGuard on your computer. On the screen you will see the main window where you can change the app’s settings.
+Поздравляем! Вы успешно установили AdGuard на свой компьютер. На экране отобразится основное окно приложения, в котором вы сможете изменить его настройки.
 
-## How to uninstall AdGuard for Windows {#uninstall}
+## Как удалить AdGuard для Windows {#uninstall}
 
-### Regular method
+### Обычный способ
 
-If you need to uninstall or reinstall AdGuard, do the following:
+Если вам необходимо удалить или переустановить AdGuard, сделайте следующее:
 
-* For Microsoft Windows 10 & 11: Open **Start Menu** by clicking **Start**, and select **Settings**. Click the **Apps** icon in the window that opens. Select **Apps and Features** from the list on the left in the **Apps** window. Select **Adguard** from the list of your installed apps and click **Uninstall**. Click **Uninstall** in the dialogue box that opens to confirm.
+* В Microsoft Windows 10 & 11: откройте **Главное меню** нажатием кнопки **Пуск** и выберите в нем пункт **Параметры**. В открывшемся окне нажмите на значок **Приложения**. В списке, расположенном в левой части окна **Приложения**, выберите пункт **Приложения и возможности**. Найдите **AdGuard** в списке установленных приложений и нажмите **Удалить**. Нажмите **Удалить** в открывшемся диалоговом окне для подтверждения.
 
-![Windows 10 & 11 uninstallation](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/win10-uninstall.png)
+![Удаление Windows 10 & 11](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/win10-uninstall.png)
 
-* For Microsoft Windows 8: Right-click on the **empty space** in the lower left corner of the task bar and select **Control Panel**. Click **Uninstall a program** in the **Programs** section, then select **AdGuard** from the list of installed apps and press the **Uninstall** button located right above the list. Confirm the action by clicking **Uninstall AdGuard** in the window that opens.
+* Для Microsoft Windows 8: Щёлкните правой кнопкой мыши на **пустом месте** в левом нижнем углу панели задач и выберите **Панель управления**. Нажмите **Удалить программу** в разделе **Программы**, затем выберите **AdGuard** из списка установленных приложений и нажмите кнопку **Удалить**, расположенную прямо над списком. Подтвердите действие, нажав **Удалить AdGuard** в открывшемся окне.
 
-![Windows 8 uninstallation](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/win8-uninstall.png)
+![Удаление Windows 8](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/win8-uninstall.png)
 
-* For Microsoft Windows 8.1: Right-click on the **Start button** and select **Control Panel**. Click **Uninstall a program** in the **Programs** section, then select **AdGuard** from the list of installed apps and press the **Uninstall** button located right above the list. Confirm the action by clicking **Uninstall AdGuard** in the window that opens.
+* В Microsoft Windows 8.1: Кликните правой кнопкой на меню **Пуск** и выберите **Панель управления**. Нажмите **Удалить программу** в разделе **Программы**, затем выберите **AdGuard** из списка установленных приложений и нажмите кнопку **Удалить**, расположенную прямо над списком. Подтвердите действие, нажав **Удалить AdGuard** в открывшемся окне.
 
-* For Microsoft Windows 7: Open **Start Menu**. In the search box, type **Control Panel**. Click **Uninstall a program** in the **Programs** section, then select **AdGuard** from the list of installed apps and press the **Uninstall** button located right above the list. Confirm the action by clicking **Uninstall AdGuard** in the window that opens.
+* В Microsoft Windows 7: Откройте меню **Пуск**. В поиске введите **Панель управления**. Нажмите **Удалить программу** в разделе **Программы**, затем выберите **AdGuard** из списка установленных приложений и нажмите кнопку **Удалить**, расположенную прямо над списком. Подтвердите действие, нажав **Удалить AdGuard** в открывшемся окне.
 
-![Windows 7 uninstallation](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/win7-uninstall.png)
+![Удаление Windows 7](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/win7-uninstall.png)
 
-### Advanced method {#advanced}
+### Продвинутый способ {#advanced}
 
-In case regular uninstall doesn't work for any reason, you can try to use an advanced method. First of all, you need to [download the uninstaller tool](https://cdn.adguard.com/public/Adguard/tools/Uninstall_Utility.zip) created by our developers. Extract the archive to any folder on your PC and run the **Adguard.UninstallUtility.exe** file, and allow the app to make changes to your device. Then follow the instruction below:
+Если по какой-либо причине обычное удаление не работает, вы можете попробовать продвинутый способ. Прежде всего, вам нужно [загрузить инструмент удаления](https://cdn.adguard.com/public/Adguard/tools/Uninstall_Utility.zip), созданный нашими разработчиками. Распакуйте скачанный архив в любую папку на компьютере, запустите файл **AdGuard_Uninstall_Utility.exe** и разрешите приложению вносить изменения на вашем устройстве. Затем следуйте инструкции ниже:
 
-* Choose *Standard uninstall*, *Delete AdGuard* and click *Uninstall*.
+* Выберите *Стандартное удаление*, *Удалить AdGuard* и нажмите *Удалить*.
 
-![Standard uninstall](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/standard-uninstall.png)
+![Стандартное удаление](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/standard-uninstall.png)
 
-* Wait until uninstall is finished — there will be a string in the window: `[OK] Uninstall finished`
+* Дождитесь завершения удаления — в окне появится строка: `[OK] Удаление завершено`
 
-![Uninstall finished](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/standard-uninstall-2.png)
+![Удаление завершено](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/standard-uninstall-2.png)
 
-> Follow the next steps only if after performing first two steps wasn’t enough for some reason. Usually it can be determined by seeing incorrect reinstall of AdGuard, but we strongly suggest contacting our support before using steps 3-4 of advanced uninstall instruction.
+> Следующие шаги выполняйте только в том случае, если выполнения первых двух шагов по каким-то причинам оказалось недостаточно. Обычно это можно определить, увидев некорректную переустановку AdGuard, но мы настоятельно рекомендуем обратиться в службу поддержки, прежде чем использовать шаги 3–4 расширенной инструкции по удалению.
 
-* Choose *Advanced uninstall* and click  *Uninstall*.
+* Выберите *Расширенное удаление* и нажмите *Удалить*.
 
-![Advanced uninstall](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/advanced-uninstall.png)
+![Продвинутое удаление](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/advanced-uninstall.png)
 
-* Wait until uninstall is finished — there will be a string in the window: `[OK] Uninstall finished`
+* Дождитесь завершения удаления — в окне появится строка: `[OK] Uninstall finished`
 
-![Uninstall finished](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/advanced-uninstall-2.png)
+![Удаление завершено](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/advanced-uninstall-2.png)
 
-AdGuard is successfully uninstalled!
+AdGuard успешно удалён!

@@ -1,41 +1,41 @@
 ---
-title: Known issues
+title: Известные проблемы
 sidebar_position: 2
 ---
 
-> Last update: September 20, 2022 Understanding this article may require some basic knowledge about encryption, the TLS protocol, and HTTPS.
+> Последнее обновление: 20 сентября 2022 г. Для понимания этой статьи могут потребоваться базовые знания о шифровании, протоколе TLS и HTTPS.
 
-First, look at this simple diagram that shows the general structure of the HTTPS protocol:
+Для начала посмотрите на эту диаграмму, которая показывает общую структуру протокола HTTPS:
 
-![What is HTTPS filtering](https://cdn.adguard.com/public/Adguard/Blog/https/what_is_https_filtering.png)
+![Что такое HTTPS-фильтрация](https://cdn.adguard.com/public/Adguard/Blog/https/what_is_https_filtering.png)
 
-AdGuard copies properties of the TLS-connection that your browser uses:
+AdGuard копирует свойства TLS-соединения, которые использует ваш браузер:
 
-* AdGuard uses the same TLS version
-* AdGuard uses the same encrypting methods (ciphers) as your browser
+* AdGuard использует ту же самую версию TLS
+* AdGuard использует те же методы шифрования (ciphers), что и ваш браузер
 
-Effectively, it means that if you use a modern, safe browser, it will take all known TLS problems into account and won’t attempt to use unsafe ciphers.
+Так что если вы используете современный и безопасный браузер — это хорошо, ведь известные проблемы TLS в нём уже учтены, и он не будет пытаться использовать небезопасные методы шифрования.
 
-**What does AdGuard do when there are any doubts about the certificate’s validity?** In such cases, AdGuard entirely ceases filtering of all connections to this domain and leaves the browser in charge of all decisions.
+**Что делает AdGuard, когда возникают сомнения в действительности сертификата?** В таких случаях AdGuard полностью прекращает фильтрацию всех подключений к этому домену и оставляет за браузером право принимать все решения.
 
-## Known issues
+## Известные проблемы
 
-HTTPS filtering in AdGuard has its drawbacks. Almost all of them are scheduled to be eliminated in the next few AdGuard versions.
+HTTPS-фильтрация в AdGuard имеет свои недостатки. Практически все мы планируем устранить в ближайших версиях AdGuard.
 
-All the issues known to us and the ETAs on their fixes are listed below.
+Ниже перечислены все известные нам проблемы и сроки их устранения.
 
-### Inspecting the original certificate
+### Проверка оригинального сертификата
 
-The most important drawback of the HTTPS filtering mechanism is that it hides the real certificate of a website. You cannot simply check its original certificate because you can only see the one issued by AdGuard.
+Самый главный недостаток механизма HTTPS-фильтрации заключается в том, что он скрывает оригинальный сертификат сайта. Вы просто не можете увидеть реальный сертификат — вместо него вы видите тот, который сгенерировал AdGuard.
 
-This problem is solved in [Browser Assistant](https://adguard.com/adguard-assistant/overview.html). This browser extension helps you manage filtering directly from the browser and allows you to inspect the original certificate of any website.
+Эта проблема уже решена в [Браузерном помощнике](https://adguard.com/adguard-assistant/overview.html). Это браузерное расширение помогает управлять фильтрацией прямо из браузера и позволяет, в том числе, просматривать исходные сертификаты сайтов.
 
-### Certificate Transparency
+### Прозрачность сертификата (Certificate Transparency)
 
-Thanks to modern cryptography, browsers can usually detect malicious websites that are provisioned with forged or fake SSL certificates. However, current cryptographic mechanisms aren’t so good at detecting malicious websites if they’re provisioned with mistakenly issued certificates or certificates that have been issued by a certificate authority (CA) that’s been compromised or gone rogue. Certificate Transparency aims to remedy these certificate-based threats by making the issuance and existence of SSL certificates open to scrutiny by domain owners, CAs, and domain users.
+Благодаря современной криптографии браузеры обычно могут легко обнаружить вредоносные сайты с поддельными сертификатами. Однако этих механизмов недостаточно для обнаружения вредоносных сайтов, которые используют сертификаты, выданные по ошибке или выданные скомпрометированным центром сертификации. Certificate Transparency призван устранить такие угрозы, сделав процедуру выдачи SSL-сертификатов открытой и прозрачной для всех.
 
-AdGuard products which use [CoreLibs](https://github.com/AdguardTeam/CoreLibs/) starting with version **1.11** will implement a policy based on [Chrome Certificate Transparency Policy](https://googlechrome.github.io/CertificateTransparency/ct_policy.html).
+Продукты AdGuard, использующие [CoreLibs](https://github.com/AdguardTeam/CoreLibs/), начиная с версии **1.11**, будут проводить политику, основанную на [Политике прозрачности сертификатов Chrome](https://googlechrome.github.io/CertificateTransparency/ct_policy.html).
 
-## Have remarks or suggestions?
+## Замечания и пожелания
 
-If you’d like to add something, report any errors, or ask a question, please contact us at: `devteam at adguard.com`.
+Если вы хотите что-то добавить, сообщить о каких-либо ошибках или задать вопрос, пожалуйста, свяжитесь с нами по адресу: `devteam@adguard.com`.

@@ -1,9 +1,9 @@
 ---
-title: How to install AdGuard
+title: Как установить AdGuard
 sidebar_position: 8
 ---
 
-Depending on which AdGuard app or browser extension you want to install, follow one of these links to find the relevant article:
+В зависимости от того, какое приложение или браузерное расширение AdGuard вы хотите установить, перейдите по одной из этих ссылок и найдите соответствующую инструкцию:
 
 [AdGuard для Android](/adguard-for-android/installation.md)
 

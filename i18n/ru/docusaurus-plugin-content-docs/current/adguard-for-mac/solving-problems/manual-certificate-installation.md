@@ -1,22 +1,22 @@
 ---
-title: Manual certificate installation
+title: Ручная установка сертификата
 sidebar_position: 1
 ---
 
-AdGuard for Mac needs to install the root certificate into certificate storage to be able to [filter HTTPS traffic](https://kb.adguard.com/en/general/https-filtering). This action is performed automatically in most cases as you run the app for the first time, but users of Gecko-based browsers (Firefox, Waterfox etc.) who have a master password set up for their browser may be required to take additional steps (because these browsers use their own certificate storage instead of the system one). They need to either enter the master password when prompted (to grant AdGuard access to the certificate storage) or manually install the certificate.
+AdGuard для Mac должен установить корневой сертификат в хранилище сертификатов, чтобы [фильтровать HTTPS-трафик](https://kb.adguard.com/ru/general/https-filtering). В большинстве случаев это действие выполняется автоматически при первом запуске приложения, но пользователям браузеров на основе Gecko (Firefox, Waterfox и т. п.), установившим в браузере мастер-пароль, может потребоваться выполнить дополнительные шаги (т. к. эти браузеры используют собственное хранилище сертификатов вместо системного). Они должны либо ввести мастер-пароль, когда AdGuard попросит об этом (чтобы предоставить приложению доступ к хранилищу сертификатов), либо установить сертификат вручную.
 
-To manually install the certificate into Firefox-like browser:
+Чтобы установить сертификат вручную:
 
-  1. Open "Preferences"
+  1. Откройте «Настройки»
 
-  2. Go to "Privacy & Security" — "Certificates"
+  2. Перейдите в «Приватность и Защита» — «Просмотр сертификатов»
 
-  3. Click on "View Certificates"
+  3. Кликните по «Просмотр сертификатов»
 
-  4. Navigate to "Authorities" tab and click on "Import..." button
+  4. Перейдите во вкладку «Центры сертификации» и кликните по кнопке «Импортировать...»
 
-  5. Select file `/Library/Application Support/AdGuard Software/com.adguard.mac.adguard/AdguardCore/Adguard Personal CA.cer` or just download it from http://local.adguard.org/cert using a Chromium-based browser (e.g Google Chrome or new Edge) and with a HTTPS-filtering running in AdGuard.
+  5. Выберите файл `/Library/Application Support/com.adguard.mac.adguard/AdguardCore/Adguard Personal CA.cer` или скачайте его через любой браузер на основе Chromium (например, Google Chrome или Edge) с запущенной HTTPS-фильтрацией в AdGuard.
 
-Exact actions required for different Gecko-based browsers may vary, but the general sequence and the path to `AdGuard Personal CA.cer` file will be the same.
+Точные действия могут различаться для разных браузеров, но общая последовательность и путь к файлу `AdGuard Personal CA.cer` остаются теми же.
 
-PS: For [Setapp application version](https://setapp.com/apps/adguard) the file path is the following: `/Library/Application Support/com.adguard.mac.adguard-setapp/AdguardCore/Adguard Personal CA.cer`
+P.S.: Для [версии приложении в Setapp](https://setapp.com/apps/adguard) путь файла будет такой: `/Library/Application Support/com.adguard.mac.adguard-setapp/AdguardCore/Adguard Personal CA.cer`

@@ -1,10 +1,10 @@
 ---
-title: How to contact support
+title: サポートへのお問い合わせ方法
 sidebar_position: 1
 ---
 
-If you haven't found a solution to your problem in our knowledge base, AdGuard Support team will be happy to help.
+AdGuardナレッジベースで問題の解決策が見つからない場合は、AdGuardサポートチームが喜んで対応いたします。
 
-You can send us a message from *Support* section in program preferences. In this case, you can also attach a program diagnostic report to the message (it might be useful for understanding the issue).
+AdGuardアプリ内「設定」→「お客様サポート」セクションからメッセージを送信しますと、メッセージにAdGuardアプリ診断レポートを添付することができます (問題の検証に役立つ場合がよくあります)。
 
-Also, you can just send us an [email](mailto:support@adguard.com) and we will answer you as soon as possible. Support team usually responds within 24 hours.
+また、サポートメールの[support@adguard.com](mailto:support@adguard.com)（日本語対応）にご連絡いただければ、直ちに対応いたします （通常24時間以内に返信いたします）。

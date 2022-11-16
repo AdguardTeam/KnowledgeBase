@@ -1,169 +1,169 @@
 ---
-title: Low Level Settings guide
+title: Низкоуровневые настройки
 sidebar_position: 6
 ---
 
-## How to reach the Low-level settings
+## Как получить доступ к Низкоуровневым настройкам
 
-> Изменение *Низкоуровневых настроек* может вызвать проблемы с производительностью AdGuard, нарушить подключение к интернету или поставить под угрозу вашу безопасность и конфиденциальность. You should only open this section if you are sure of what you are doing or our support-team has asked you about it.
+> Изменение *Низкоуровневых настроек* может вызвать проблемы с производительностью AdGuard, нарушить подключение к интернету или поставить под угрозу вашу безопасность и конфиденциальность. Заходите в этот раздел, только если вы уверены в своих действиях или наша служба поддержки попросила вас об этом.
 
-To go to *Low-level settings*, open the main menu, tap *Settings*, choose *Advanced* and find *Low-Level Settings* at the bottom of the screen.
+Чтобы попасть в *Низкоуровневые настройки*, откройте главное меню, нажмите *Настройки*, выберите *Расширенные* и найдите *Низкоуровневые настройки* в нижней части экрана.
 
 ## Низкоуровневые настройки
 
 `pref.boot.startup.delay`
 
-Here you can set AdGuard’s startup delay after device boot-up (in seconds). This setting is only relevant if AdGuard autostart is enabled (Settings —> General —> AdGuard autostart).
+Здесь вы можете установить задержку запуска AdGuard после загрузки устройства (в секундах). Эта настройка актуальна, только если включен автозапуск AdGuard (Настройки —> Основные —> Автозапуск AdGuard).
 
 `pref.dns.blocking.type`
 
-Here you can select the way AdGuard will respond to blocked DNS queries:
+Здесь вы можете выбрать, как AdGuard будет отвечать на заблокированные DNS-запросы:
 
-0 — means block requests with *Refused* response code for *Network filtering rules* and with *Unspecified IP* for *Host rules*. 1 — means block requests with *NXDomain* for all kinds of filtering rules. 2 — means block requests with *Unspecified IP* for all kinds of filtering rules. 3 — means block requests with *Unspecified IP* for all kinds of filtering rules. 4 — means block requests with *Refused* response code for all kinds of filtering rules.
+0 — означает блокировать запросы с помощью кода ответа *Refused* для *Правил фильтрации сети* и с помощью *неопределённого IP * для *правил hosts*. 1 — блокировать запросы с помощью кода ответа *NXDomain* для всех правил фильтрации. 2 — блокировать запросы с помощью *неопределённого IP* для всех видов правил фильтрации. 3 — блокировать запросы с помощью *неопределённого IP* для всех видов правил фильтрации. 4 — блокировать запросы с помощью кода ответа *Refused* для всех видов правил фильтрации.
 
-1 is used by default if the entered value is not valid.
+1 используется по умолчанию, если введённое значение неверно.
 
 `pref.dns.bootstrap`
 
-Bootstrap DNS for DoH, DoT, and DoQ servers. The System DNS server is used by default.
+Загрузочный DNS для серверов DoH, DoT и DoQ. По умолчанию используется системный DNS-сервер.
 
 `pref.dns.detect.search.domains`
 
-If enabled AdGuard detects search domains and automatically forwards them to the fallback upstreams if they exist.
+Если включено, AdGuard обнаруживает домены локальной сети и автоматически перенаправляет их запросы на резервный вышестоящий сервер, если он задан.
 
 `pref.dns.fallback`
 
-Here you can specify a fallback DNS resolver that will be used when the configured server is not available. If not specified, the system default DNS is used as a fallback. A string “none” means no fallback at all.
+Здесь вы можете указать резервный DNS-резолвер, который будет использоваться, когда настроенный сервер недоступен. Если он не указан, системный DNS-сервер по умолчанию будет использоваться в качестве резервного. Строка “none” означает, что резервный сервер не будет использоваться.
 
 
 `pref.dns.fallback.domains`
 
-Here you can list domains that will be directly forwarded to the fallback upstreams (if they exist).
+Здесь вы можете перечислить домены, которые будут перенаправлены напрямую на резервные апстримы (если они существуют).
 
 `pref.dns.timeout`
 
-Here you can specify a timeout in milliseconds to be used for each DNS request. Please note that if you are using multiple upstreams, the fallback DNS resolver will only be used after all the timeouts of each upstream.
+Здесь вы можете указать время ожидания в миллисекундах, которое будет использоваться для каждого DNS-запроса. Обратите внимание, что если вы используете несколько апстримов, резервный DNS-резолвер будет использоваться только после истечения времени ожидания каждого потока.
 
 `pref.enforce.https.filtering`
 
-Here are already listed package names of apps for which AdGuard enforces HTTPS filtering. You can add this list with any app even if it targets Android 7+. But before check if the application trusts the AdGuard’s HTTPS certificate, which is located in the User storage, or the developers have not provided such an option.
+Здесь уже перечислены приложения, для которых AdGuard фильтрует HTTPS-трафик. Вы можете добавить в этот список любое приложение, даже если оно разработано для Android 7+. Но прежде проверьте, доверяет ли приложение HTTPS-сертификату AdGuard, который находится в Пользовательском хранилище, или разработчики не предусмотрели такую возможность.
 
 `pref.enforce.paused.notification`
 
-Enforce notification about paused protection even when the notification icon is set to Disabled (for Android below Oreo).
+Принудительное уведомление о приостановленной защите, даже если для значка уведомления установлено значение «Отключено» (для Android ниже Oreo).
 
 `pref.excluded.packages`
 
-Here you can list the packages and UIDs you want to exclude from filtering.
+Здесь вы можете указать пакеты и UID, которые хотите исключить из фильтрации.
 
 `pref.filtered.ports`
 
-Here you can list the ports connections to which will be filtered.
+Здесь вы можете указать порты, соединения с которыми будут фильтроваться.
 
 `pref.har.capture`
 
-Here you can enable HAR file capture. Use it only for debugging purposes! If the setting is enabled, AdGuard will create a directory named “har” inside the app cache directory. It contains information about all filtered HTTP requests in HAR 1.2 format and can be analyzed with the Fiddler program.
+Здесь вы можете включить захват файла HAR. Используйте его только для целей отладки! Если настройка включена, AdGuard создаст папку har в кэш-директории приложения. Она будет содержать информацию обо всех отфильтрованных HTTP-запросах в формате HAR 1.2, и её можно будет проанализировать с помощью программы Fiddler.
 
 `pref.https.ignored.errors`
 
-For the domains and package names listed here, notifications that they do not trust AdGuard's HTTPS certificate will be disabled.
+Для перечисленных здесь доменов и имён пакетов будут отключены уведомления о том, что они не доверяют HTTPS-сертификату AdGuard.
 
 `pref.https.opportunistic`
 
-If enabled, AdGuard will bypass the traffic of any app that does not trust our certificate. It is enabled by default.
+Если этот параметр включен, AdGuard исключает из фильтрации трафик любого приложения, которое не доверяет нашему сертификату. По умолчанию эта функция включена.
 
 `pref.ipv4.routs.excluded`
 
-Here you can find the list of IPv4 ranges excluded from filtering. For instance, we don’t filter connections to the private IP ranges. You can add this list if required.
+Здесь вы можете найти список диапазонов IPv4, исключённых из фильтрации. Например, мы не фильтруем подключения к диапазонам частных IP-адресов. При необходимости вы можете дополнить этот список.
 
 `pref.ipv6.routs.excluded`
 
-Here you can list the IPv6 ranges which you want to exclude from filtering.
+Здесь вы можете перечислить диапазоны IPv6-адресов, которые вы хотите исключить из фильтрации.
 
 `pref.notify.on.unknown.ca`
 
-If enabled, AdGuard shows you a notification if any app doesn’t trust our HTTPS certificate.
+Если этот параметр включен, AdGuard будет показывать уведомления о том, что какое-либо приложение не доверяет нашему HTTPS-сертификату.
 
 `pref.proxy.block.ipv6`
 
-If enabled, AdGuard blocks all Internet connections through IPv6 when working in “Proxy with automatic setup” mode.
+Если включено, AdGuard блокирует все интернет-соединения через IPv6 при работе в режиме «Прокси с автоматической установкой».
 
 `pref.proxy.disable.reconfigure`
 
-Here you can disable AdGuard automatic root proxy reconfiguration when network connectivity changes.
+Здесь вы можете отключить автоматическую перенастройку AdGuard root proxy при изменении сетевого подключения.
 
 `pref.quic.bypass.packages`
 
-Here you can list packages for which AdGuard will bypass QUIC traffic.
+Здесь вы можете перечислить пакеты, для которых AdGuard не будет фильтровать QUIC-трафик.
 
 `pref.removed.html.log`
 
-If enabled, AdGuard shows information about blocked HTML elements in the filtering log.
+Если этот параметр включен, AdGuard показывает информацию о заблокированных HTML-элементах в логе фильтрации.
 
 `pref.root.clear.youtube`
 
-If enabled, AdGuard clears YouTube app data on booting to block YouTube ads. Root access is required.
+Если включено, AdGuard очищает данные приложения YouTube при запуске устройства. Требуется root-доступ.
 
 `pref.root.set.oom_adj`
 
-If enabled, AdGuard sets the `minimum oom_score_adj` for its own process to stay alive all the time. Requires root access.
+Если включено, AdGuard устанавливает `minimum oom_score_adj`, чтобы его собственные процессы функционировали постоянно. Требуется root-доступ.
 
 `pref.samsungpay.autopause.enable`
 
-If enabled, AdGuard pauses protection when you open the Samsung Pay app. Requires usage access.
+Если включено, AdGuard приостанавливает защиту, когда вы открываете приложение Samsung Pay. Требуется доступ к данным об использовании устройства.
 
 `pref.vpn.android10.mitigate`
 
-If enabled, AdGuard applies a workaround solution that mitigates the soft reboots issue caused by an Android 10 bug.
+Если этот параметр включен, AdGuard применяет обходной путь, который устраняет проблему программных перезагрузок, вызванную ошибкой Android 10.
 
 `pref.vpn.capture`
 
-If enabled, AdGuard will create the special file name “tun.pcap”. It contains all network packets transferred through the VPN. This file is located in the app cache directory and can be analyzed with the Wireshark program.
+Если эта функция включена, AdGuard создаст специальный файл с именем tun.pcap. Он содержит все сетевые пакеты, передаваемые через VPN. Этот файл находится в папке кэша приложения и может быть проанализирован с помощью программы Wireshark.
 
 `pref.vpn.disable.pause`
 
-This feature disables automatic VPN pause in case of network absence, tethering, or power-saving mode.
+Эта опция отключает автоматическую приостановку VPN при отсутствии сети, подключении к ней или при переходе в режим энергосбережения.
 
 `pref.vpn.disable.reconfigure`
 
-This feature disables VPN automatic reconfiguration in case of network absence, tethering, or power-saving mode.
+Эта опция отключает автоматическую перенастройку VPN при отсутствии сети, подключении к ней или при переходе в режим энергосбережения.
 
 `pref.vpn.ipv4.address`
 
-TUN interface IPv4 address.
+IPv4-адрес интерфейса TUN.
 
 `pref.vpn.ipv4.bypass`
 
-If enabled, VPN will be configured to bypass all the IPv4 traffic. In this case, IPv4 will work, but it will not be filtered.
+Если данная опция включена, трафик IPv4-сетей исключён из VPN-фильтрации. В этом случае IPv4 будет работать, но не будет фильтроваться.
 
 `pref.vpn.ipv4.force.complex`
 
-If enabled, VPN will bypass the LAN when possible. However, for complex networks, the LAN is not excluded and connections will be filtered, including local ones.
+Если включено, то при возможности VPN будет обходить локальную сеть. Однако локальная сеть не исключается для сетей со сложной конфигурацией, и все соединения, включая локальные, будут фильтроваться.
 
 `pref.vpn.ipv4.force.default`
 
-This feature disables the routes we use to exclude LAN from filtering.
+Эта функция отключает маршруты, которые мы используем для исключения LAN из фильтрации.
 
 `pref.vpn.ipv6.address`
 
-TUN interface IPv6 address.
+IPv6-адрес интерфейса TUN.
 
 `pref.vpn.ipv6.bypass`
 
-If enabled, VPN will be configured to bypass all the IPv6 traffic. In this case, IPv6 will work, but it will not be filtered.
+Если включено, весь IPv6-трафик исключается из VPN-фильтрации. В этом случае IPv6 будет работать, но не будет фильтроваться.
 
 `pref.vpn.ipv6.disable`
 
-This feature forcibly disables filtering for IPv6 networks. In this case, IPv6 will not work at all.
+Эта функция принудительно отключает фильтрацию для сетей IPv6. В этом случае IPv6 не будет работать вообще.
 
 `pref.vpn.ipv6.force`
 
-This feature forcibly enables filtering for IPv6 networks. The app doesn’t filter IPv6 on Lollipop and some cell carriers by default.
+Эта функция принудительно включает фильтрацию для сетей IPv6. По умолчанию приложение не фильтрует IPv6 на Lollipop и для некоторых операторов сотовой связи.
 
 `pref.vpn.tun.mtu`
 
-Here you can set the maximum transmission unit (MTU) of the VPN interface. The recommended interval for the experiments is from 1500 to 9000.
+Здесь вы можете установить максимальное значение передачи данных MTU через VPN. Рекомендуемый интервал значений — от 1500 до 9000.
 
-`Reset`
+`Сброс`
 
-You always can reset Low-level settings to default.
+Вы всегда можете сбросить низкоуровневые настройки к значениям по умолчанию.
