@@ -9,14 +9,14 @@ To activate your license, go to the *License* section of your AdGuard product an
 
 In AdGuard for Windows and AdGuard for Mac, you can also use the [license key](what-is.md#license-key) to activate the license. Clicking the *Reset license* button logs you out from your device and unbinds the device from your AdGuard account.
 
-## How to transfer a license to another device
+## ライセンスを他のデバイスに移行する方法
 
-The license key can be activated on a [limited number of devices](what-is.md#devices). If the key has already been used on the maximum allowed number of devices, you need to unbind a device from your account. You can do that in three ways:
-* by clicking the *Reset license* button (applies to desktop apps),
+ライセンスキーは、[限られた数のデバイス](what-is.md#devices)で有効化することができます。 ライセンスキーが最大数のデバイスで使われている場合、ライセンスキーを再度使用する前に、いずれかのデバイスをバインド（紐付け）解除する必要があります。 バインド（紐付け）解除は以下のいずれの方法で行うことができます:
+* （Mac/Windows用AdGuardアプリの場合）「ライセンス」画面で「ライセンスをリセットする」ボタンを押す
 * by logging out of your account in an AdGuard product,
-* by clicking the cross icon next to a device in your AdGuard account.
+* AdGuardアカウントでデバイスの横にある「×」アイコンをクリックする
 
-After you have unbound the number of devices you need, you can log in to your AdGuard account on new devices. The license will be bound to them.
+必要な台数のデバイスを解除したら、新しいデバイスでAdGuardアカウントにログインすることができるようになります。 そうすると、ライセンスはその新しいデバイスにバインド（紐付け）されます。
 
 ## How to upgrade a license
 

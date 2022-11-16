@@ -1,25 +1,25 @@
 ---
-title: Сertificate installation issues on devices with Android 11+
+title: Проблемы с установкой сертификата на устройствах с Android 11+
 sidebar_position: 12
 ---
 
-To be able to filter HTTPS traffic (which is extremely important as most ads use HTTPS), AdGuard needs to install a certificate into your device's user storage. On older versions of Android OS this was done automatically, but on Android 11 and later users have to [install it manually](/adguard-for-android/overview.md).
+Чтобы фильтровать HTTPS-трафик (что крайне важно, поскольку большинство рекламных объявлений используют HTTPS), AdGuard необходимо установить сертификат в пользовательское хранилище вашего устройства. На старых версиях ОС Android это происходило автоматически, но на Android 11 и более поздних версиях приходится [устанавливать его вручную](/adguard-for-android/overview.md).
 
-![Certificate](https://cdn.adguard.com/public/Adguard/Blog/Android/3-5/cert-en.gif)
+![Сертификат](https://cdn.adguard.com/public/Adguard/Blog/Android/3-5/cert-en.gif)
 
-If you experience issues during the manual certificate installation (for example, you installed the certificate, but the application keeps ignoring it), you can find possible solutions below.
+Если у вас возникли проблемы при ручной установке сертификата (например, вы установили сертификат, но приложение продолжает его игнорировать), вы можете найти возможные решения ниже.
 
-## Certificate installation in a *Secure folder*
+## Установка сертификата в *Защищённую папку*
 
-If you use [the *Secure folder* on your Android](https://www.samsung.com/uk/support/mobile-devices/what-is-the-secure-folder-and-how-do-i-use-it/) (this applies mainly to Samsung devices), you may face some difficulties when installing the HTTPS certificate. The thing is that the *Secure folder* has its own storage where the certificates are stored. However, in case you do everything according to the instructions [described here](/adguard-for-android/overview.md#https-filtering), the certificate is installed into the main storage and plays no role for your ad blocker in the *Secure folder*. So, in order to resolve this issue and install the certificate for your AdGuard for Android into the *Secure folder's* storage, follow this instruction:
+Если вы используете [ *Защищённую папку* на Android](https://www.samsung.com/uk/support/mobile-devices/what-is-the-secure-folder-and-how-do-i-use-it/) (это в основном относится к устройствам Samsung), то можете столкнуться с некоторыми трудностями при установке HTTPS-сертификата. Дело в том, что в *Защищённой папке* есть собственное хранилище для сертификатов. Однако, когда вы скачиваете сертификат согласно [этой инструкции](/adguard-for-android/overview.md#https-filtering), он устанавливается в основное хранилище устройства и не играет при этом никакой роли для блокировщика рекламы в *Защищённой папке/em>. Чтобы справиться с этой проблемой и установить сертификат в хранилище *Защищённой папки*, воспользуйтесь следующей инструкцией:</p>
 
 
-1. After installing the application and connecting to VPN tap *Turn on* next to the *HTTPS filtering is off* message.
-2. Tap *Next* > *Next* > *Save it now* > *Allow*.
-3. Save the certificate (at this stage, you can rename it to make it easier to find).
-4. After the *How to install a certificate?* screen appears, DO NOT tap *Open Settings*.
-5. Minimize the application and go to the secure folder.
-6. Tap the three-dot menu and go to additional security settings.
-7. Tap *Install from memory* > *CA certificate* > *Install anyway* > Enter a graphic key/password/fingerprint > Find the saved certificate and select it.
-8. Return to the AdGuard application and close the screen "How to install a certificate?" by tapping the cross button.
-9. Готово! The certificate has been installed. 
+1. После установки приложения и подключения к VPN нажмите *Включить* рядом с надписью *HTTPS-фильтрация выключена*.
+2. Затем нажмите *Далее* > *Далее* > *Сохранить его сейчас* > *Разрешить*.
+3. Сохраните сертификат (на этом этапе вы можете переименовать его, чтобы его было легче найти).
+4. После появления экрана *Как установить сертификат?* НЕ нажимайте *Открыть настройки*.
+5. Сверните приложение и перейдите в Защищённую папку.
+6. Нажмите на три точки и перейдите в дополнительные настройки безопасности.
+7. Нажмите *Установить из памяти* > *Сертификат CA* > *Установить в любом случае* > Введите графический рисунок/пароль/отпечаток > В нужной папке найдите сохранённый сертификат и выберите его.
+8. Вернитесь в приложение AdGuard и закройте экран «Как установить сертификат?», нажав на крестик.
+9. Готово! Сертификат установлен. 

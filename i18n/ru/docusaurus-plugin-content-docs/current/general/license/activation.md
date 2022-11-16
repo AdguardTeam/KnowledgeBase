@@ -1,37 +1,37 @@
 ---
-title: How to activate
+title: Как активировать лицензию
 sidebar_position: 3
 ---
 
-## How to activate a license
+## Как активировать лицензию
 
-To activate your license, go to the *License* section of your AdGuard product and find the *Log in* field or *Activate* button. You can use the login and password of your AdGuard account. If you don't have an account yet, you will be offered to create one and log in.
+Чтобы активировать лицензию, перейдите в раздел *Лицензия* вашего продукта AdGuard и найдите поле *Войти* или кнопку *Активировать*. Вы можете использовать логин и пароль вашего личного кабинета AdGuard. Если у вас ещё нет аккаунта, вам будет предложено создать его и войти в систему.
 
-In AdGuard for Windows and AdGuard for Mac, you can also use the [license key](what-is.md#license-key) to activate the license. Clicking the *Reset license* button logs you out from your device and unbinds the device from your AdGuard account.
+В AdGuard для Windows и AdGuard для Mac вы также можете использовать [лицензионный ключ](what-is.md#license-key) для активации лицензии. Нажав на кнопку *Сбросить лицензию*, вы выйдете из системы на своём устройстве и отвяжете его от аккаунта AdGuard.
 
-## How to transfer a license to another device
+## Как перенести лицензию на другое устройство
 
-The license key can be activated on a [limited number of devices](what-is.md#devices). If the key has already been used on the maximum allowed number of devices, you need to unbind a device from your account. You can do that in three ways:
-* by clicking the *Reset license* button (applies to desktop apps),
-* by logging out of your account in an AdGuard product,
-* by clicking the cross icon next to a device in your AdGuard account.
+Лицензионный ключ можно активировать на [ограниченном количестве устройств](what-is.md#devices). Если ключ уже используется на максимально допустимом количестве устройств, вам необходимо отвязать устройство от учётной записи. Это можно сделать тремя способами:
+* нажав кнопку *Сбросить лицензию* (в десктопных приложениях),
+* выйдя из своего аккаунта в продукте AdGuard,
+* нажав на крестик напротив устройства в личном кабинете AdGuard.
 
-After you have unbound the number of devices you need, you can log in to your AdGuard account on new devices. The license will be bound to them.
+После того как вы отвяжете необходимое количество устройств, вы можете войти в свой аккаунт AdGuard на новых устройствах. Лицензия будет привязана к ним.
 
-## How to upgrade a license
+## Как улучшить лицензию
 
-To make it more convenient to use your AdGuard products, you can upgrade your license.
+Чтобы пользоваться продуктами AdGuard было удобнее, вы можете улучшить лицензию.
 
-1. To increase the functionality of your AdGuard products, you can **upgrade your free or trial license to the full version**.
-2. To extend the number of devices, you can **upgrade your AdGuard Ad Blocker Personal license to Family**.
-3. You can also **upgrade your subscription to a Lifetime license**.
+1. Чтобы расширить функциональность продуктов AdGuard, вы можете **улучшить бесплатную или пробную лицензию до полной версии**.
+2. Чтобы увеличить количество устройств, вы можете **улучшить Персональную лицензию до Семейной**.
+3. Вы также можете **улучшить свою подписку до Вечной лицензии**.
 
-You can upgrade your license by:
-* purchasing another license on the official websites of AdGuard products,
-* clicking the *Upgrade* button in your AdGuard account.
+Вы можете улучшить свою лицензию следующим образом:
+* купив другую лицензию на официальном сайте AdGuard,
+* нажав кнопку *Обновить* в аккаунте AdGuard.
 
-## How to cancel a subscription
+## Как отменить подписку
 
-The subscription can be canceled in your AdGuard account. To cancel your subscription, click the card or the cross icon next to it and select *Unsubscribe*. The canceled subscription will be valid until its expiry date.
+Подписку можно отменить в личном кабинете AdGuard. Чтобы отменить подписку, нажмите на карточку или иконку крестика рядом с ней и выберите *Отменить подписку*. Отменённая подписка будет действительна до истечения срока её действия.
 
-> Subscriptions purchased on the App Store can be managed in the App Store account or in the device's settings.
+> Подписками, купленными в App Store, можно управлять в учётной записи App Store или в настройках устройства.

@@ -1,42 +1,42 @@
 ---
-title: How to collect a full log
+title: Как собирать логи
 sidebar_position: 2
 ---
 
-Sometimes in order to understand a problem and fix it we need to collect **log files**, or **logs**. Basically, these files contain information about the program and it's work.
+Иногда для того, чтобы разобраться в проблеме и найти решение, нам необходимы так называемые **логи**. В основном эти файлы содержат информацию о программе и её работе.
 
-#### Collecting debug log
+#### Сбор отладочных логов
 
-To collect **debug** log and send it to us you need to perform following steps:
+Чтобы собрать **отладочный** логи и отправить их нам, выполните следующие шаги:
 
-1. Open AdGuard and go to "Settings".
+1. Откройте AdGuard и перейдите в «Настройки».
 
-2. Choose "Advanced".
+2. Выберите «Расширенные».
 
-3. Set "Logging level" to "Record everything". It's desirable to close all background apps that don't concern the problem beforehand.
+3. Установите «Уровень логирования» на «Записывать всё». Желательно перед этим закрыть все фоновые приложения, не связанные с проблемой.
 
-4. Reproduce the problem and set the logging level back to "Default". Notice the exact time when it happened.
+4. Постарайтесь воспроизвести проблему, после чего уровень логирования переключите обратно на «По умолчанию». Заметьте точное время, когда это произошло.
 
-5. Send us a message from program by choosing "Support" > "Send Feedback" in the menu. Don't forget to check the "Send detailed system info" checkbox under the text field and to include the timestamp from the step 4 into the message.
+5. Отправьте нам сообщение из программы, выбрав «Поддержка» > «Сообщение в поддержку» в меню. Не забудьте установить флажок «Отправить отчёт о системе» под текстовым полем и включить в сообщение отметку времени из шага 4.
 
-As an alternative, you can export the logs (along with the *state.txt* file that contains system information and information about AdGuard settings) directly into a local file. It can be convenient, for example, if you are having a conversation with a developer on [GitHub](https://github.com/AdguardTeam/AdguardForAndroid/issues), [forum](https://forum.adguard.com/) or on another platform.
+Как альтернативный вариант, можно экспортировать логи (вместе с файлом *state.txt*, содержащим информацию о системе и настройках AdGuard) напрямую в локальный файл. Это бывает удобно, например, если вы ведёте переписку с разработчиком на [GitHub](https://github.com/AdguardTeam/AdguardForAndroid/issues), [форуме](https://forum.adguard.com/) или на какой-либо иной площадке.
 
-To export logs and system information into a file, go to "Settings — Advanced" and tap "Export logs and system info". Select the destination folder and tap "Save".
+Чтобы экспортировать логи и системную информацию в файл, перейдите в «Настройки» — «Расширенные» и нажмите «Экспортировать логи и информацию о системе». Выберите папку назначения и нажмите «Сохранить».
 
-#### Collecting web requests log
+#### Сбор логов веб-запросов
 
-To collect **web requests** log and send it to us you need to perform following steps:
+Чтобы собрать логи **веб-запросов** и отправить их нам, выполните следующие шаги:
 
-1. Open AdGuard and go to "Settings".
+1. Откройте AdGuard и перейдите в «Настройки».
 
-2. Choose "Advanced".
+2. Выберите «Расширенные».
 
-3. Set "Logging level" to "Record web requests". It's desirable to close all background apps that don't concern the problem beforehand.
+3. Установите «Уровень логирования» на «Записывать веб-запросы». Желательно перед этим закрыть все фоновые приложения, не связанные с проблемой.
 
-4. Reproduce the problem and set the logging level back to "Default". Notice the exact time when it happened.
+4. Постарайтесь воспроизвести проблему, после чего уровень логирования переключите обратно на «По умолчанию». Заметьте точное время, когда это произошло.
 
-5. Send us a message from program by choosing “Support” > "Send Feedback" in the menu. Don't forget to check the "Send detailed system info" checkbox under the text field and to include the timestamp from the step 4 into the message.
+5. Отправьте нам сообщение из программы, выбрав «Поддержка» > «Сообщение в поддержку» в меню. Не забудьте установить флажок «Отправить отчёт о системе» под текстовым полем и включить в сообщение отметку времени из шага 4.
 
-As an alternative, you can export the logs (along with the *state.txt* file that contains system information and information about AdGuard settings) directly into a local file. It can be convenient, for example, if you are having a conversation with a developer on [GitHub](https://github.com/AdguardTeam/AdguardForAndroid/issues), [forum](https://forum.adguard.com/) or on another platform.
+Как альтернативный вариант, можно экспортировать лог-файлы (вместе с файлом *state.txt*, содержащим некоторую информацию о системе и о настройках AdGuard) напрямую в локальный файл. Это бывает удобно, например, если вы ведёте переписку с разработчиком на [GitHub](https://github.com/AdguardTeam/AdguardForAndroid/issues), [форуме](https://forum.adguard.com/) или на какой-либо иной площадке.
 
-To export logs and system information into a file, go to "Settings — Advanced" and tap "Export logs and system info". Select the destination folder and tap "Save".
+Чтобы экспортировать логи и системную информацию в файл, перейдите в «Настройки» — «Расширенные» и нажмите «Экспортировать логи и информацию о системе». Выберите папку назначения и нажмите «Сохранить».

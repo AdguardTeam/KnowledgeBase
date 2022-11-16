@@ -60,7 +60,7 @@ sidebar_position: 3
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/tm.png)
 
-8. 在首页点击「Join」（加入）按钮加入项目后，您可以看到**「Tasks」**（任务）标签。这是专门为特定项目创建的任务。 _Please pay attention to them: they usually have a higher priority._
+8. 在首页点击「Join」（加入）按钮加入项目后，您可以看到**「Tasks」**（任务）标签。这是专门为特定项目创建的任务。 _请注意这些任务。在大部分情况下，它们具有更高的优先权。_
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/tasks.png)
 

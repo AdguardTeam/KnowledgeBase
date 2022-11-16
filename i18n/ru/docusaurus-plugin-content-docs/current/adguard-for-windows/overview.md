@@ -3,44 +3,44 @@ title: Обзор функций
 sidebar_position: 1
 ---
 
-AdGuard for Windows is an easy-to-use tool that blocks annoying banners, pop-ups, video ads and trackers. But that's not all: it helps you save traffic, load web pages faster, and guard your computer from undesirable and potentially malicious content. AdGuard can also protect you from phishing sites, and your children — from information they shouldn't be exposed to due to age restrictions.
+AdGuard для Windows — это простой в использовании инструмент, блокирующий раздражающие баннеры, всплывающие окна, видеорекламу и трекеры. Но это ещё не всё: он помогает экономить трафик, быстрее загружать веб-страницы, а также защищает компьютер от нежелательного и потенциально вредоносного содержимого. AdGuard также может защитить вас от фишинговых сайтов, а ваших детей — от потенциально неприемлемого контента.
 
-## Home screen
+## Главный экран
 
-![Main screen](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/home-screen.png)
+![Главный экран](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/home-screen.png)
 
-Once you start AdGuard for Windows, you will see the main screen of the app. Its most noticeable detail is the *enable/disable protection* button. Also, on this screen you can monitor blocked ads, trackers and threats statistics, find out the current version of the app or update it. Furthermore, there are four tabs in the upper right corner: *Settings*, *Support*, *License*, and *About*. Each of these is worth talking about separately.
+После запуска AdGuard для Windows вы увидите главный экран приложения. Самая заметная деталь — кнопка *включения/выключения защиты*. Также на этом экране можно отслеживать заблокированную рекламу, статистику трекеров и угроз, узнать текущую версию приложения или обновить его. Кроме того, в правом верхнем углу находятся четыре вкладки: *Настройки*, *Поддержка*, *Лицензия* и *О программе*. О каждой из них поговорим отдельно.
 
-## Settings
+## Настройки
 
-![Settings](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/settings.png)
+![Настройки](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/settings.png)
 
-*Settings* is the section that requires the most attention. This is where you can configure the app so that it fully meets your requirements: blocks only what bothers you, uses the DNS server of the trusted provider, removes third-party cookies, and so on.
+Раздел *Настройки* требует наибольшего внимания. Здесь вы можете настроить приложение в соответствии с вашими требованиями: блокировать определённые элементы или сайты, использовать DNS-сервер доверенного провайдера, удалять сторонние куки и так далее.
 
-### General settings
+### Основные настройки
 
-Here you can set the language and theme (Dark or Light), enable AdGuard launching at system start-up and silent automatic updates, choose the update channel and filter update check interval. Also Settings is the place to go if AdGuard for Windows is not working properly and the support team asked you to [collect *Debug logs*](/adguard-for-windows/solving-problems/adguard-logs.md).
+Здесь вы можете настроить язык и тему (Тёмная или Светлая), включение AdGuard при запуске системы и бесшумные автоматические обновления, выбрать канал обновления и установить интервал проверки обновлений. В Настройках также можно [собрать *Отладочные логи*](/adguard-for-windows/solving-problems/adguard-logs.md), если AdGuard для Windows работает некорректно и служба поддержки попросила вас об этом.
 
 ![Расширенные настройки](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/advanced-settings.png)
 
-At the very bottom of the screen you will find *Advanced Settings*. Changing some of them mindlessly may potentially cause problems with AdGuard's performance, break the Internet connection or compromise your security and privacy. That's why we suggest you open this section only if you are sure of what you are doing or our support team has asked you about it. If you want to understend what can be set up in *Advanced Setting* read the [dedicated article](/adguard-for-windows/solving-problems/low-level-settings.md).
+В самом низу экрана вы найдёте *Расширенные настройки*. Изменение некоторых из них может потенциально вызвать проблемы с работой AdGuard, нарушить интернет-соединение или поставить под угрозу вашу безопасность и конфиденциальность. Заходите в этот раздел, только если вы уверены в своих действиях, или наша служба поддержки попросила вас об этом. Чтобы узнать подробнее о *Расширенных настройках*, прочитайте [статью](/adguard-for-windows/solving-problems/low-level-settings.md).
 
-### Ad Blocker
+### Блокировщик рекламы
 
-This is the main module of AdGuard for Windows that removes ads from the websites you visit and from the apps installed on your device. To filter out advertising and privacy-threatening content such as banners, pop-ups, or trackers AdGuard uses different filters: groups of rules with a similar purpose written with a special syntax. To understand what filters are and how they work read [this article](/general/ad-filtering/how-ad-blocking-works.md).
+Это основной модуль AdGuard для Windows, блокирующий рекламу на сайтах, которые вы посещаете, и в приложениях, установленных на вашем устройстве. Для фильтрации рекламы и контента, угрожающего конфиденциальности, такого как баннеры, всплывающие окна или трекеры, AdGuard использует разные фильтры: группы правил с похожим назначением, написанные с использованием специального синтаксиса. Чтобы понять, что такое фильтры и как они работают, прочитайте [эту статью](/general/ad-filtering/how-ad-blocking-works.md).
 
-![Ad Blocker](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/ad-blocker.png)
+![Блокировщик рекламы](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/ad-blocker.png)
 
-In the Ad Blocker module you can:
-* enable automatic activation of language-specific filters
-* disable [search ads and self-promotion](/general/ad-filtering/search-ads.md) blocking
-* activate pre-installed filters such as *AdGuard Base filter*,
-* install filters from the list or add a custom filter by clicking the *Add a filter* button,
-* make changes to existing rule groups using the *Filter editor* button,
-* see all the requests sent by browsers and apps installed on your computer by clicking the *Filtering log* button. From there you can also block or unblock any request by creating a custom rule,
-* compose a filter from your own rules written manually, imported or created with the AdGuard Assistant extension.
+В модуле Блокировщик рекламы вы можете:
+* включить автоматическую активацию языковых фильтров
+* отключить блокировку [поисковой рекламы и саморекламы](/general/ad-filtering/search-ads.md)
+* активировать предустановленные фильтры, такие как *Базовый фильтр AdGuard*,
+* установить фильтры из списка или добавить пользовательский фильтр, нажав кнопку *Добавить фильтр*,
+* вносить изменения в существующие группы правил с помощью кнопки *Редактор фильтров*,
+* просмотреть все запросы, отправленные браузерами и приложениями, установленными на вашем компьютере, нажав кнопку *Журнал фильтрации*. В нём вы также можете заблокировать или разблокировать любой запрос, создав пользовательское правило,
+* составлять фильтр из собственных правил, написанных вручную, импортированных или созданных с помощью расширения Помощник AdGuard.
 
-Before you start manually writing your own rules read our detailed [syntax guide](/general/ad-filtering/create-own-filters.md).
+Прежде чем начать вручную писать собственные правила, прочитайте наше подробное [руководство по синтаксису](/general/ad-filtering/create-own-filters.md).
 
 ### Антитрекинг
 
@@ -50,143 +50,143 @@ Before you start manually writing your own rules read our detailed [syntax guide
 
 Работа этого модуля гибко настраивается: например, вы можете запретить сайту узнавать, что вы искали в поисковой системе, прежде чем попасть на этот сайт. Вы также можете автоматически удалять cookie, как принадлежащие сайту, так и сторонние, и отключить определение местоположения в браузере — оно может использоваться для отслеживания ваших перемещений.
 
-To learn everything about Stealth Mode and its many options, [read this article](/general/stealth-mode.md).
+Чтобы узнать больше о режиме Антитрекинг и его многочисленных возможностях, [прочитайте эту статью](/general/stealth-mode.md).
 
 ### Антифишинг
 
-Browsing Security gives strong protection against malicious and fishing websites. No, AdGuard for Windows is not an antivirus. It will neither stop the download of a virus when it's already started, nor delete the already existing ones. But it will warn you if you're about to proceed to a website whose domain has been added to our "untrusted sites" database, or to download a file from such website. You can find more information about how this module works in the [dedicated article](/general/stealth-mode.md).
+Антифишинг надёжно защищает от вредоносных и мошеннических сайтов. Нет, AdGuard для Windows — это не антивирус. Он не остановит загрузку вируса, если она уже началась, и не удалит уже существующие вирусы. Но он предупредит вас, если вы собираетесь перейти на сайт, домен которого был добавлен в нашу базу «ненадёжных сайтов», или загрузить файл с такого сайта. Более подробную информацию о работе этого модуля вы можете найти в [этой статье](/general/stealth-mode.md).
 
-In this module you can
-* enable notifications to block requests to malicious and phishing sites,
-* activate sound notifications,
-* agree to submit anonymous security-related info to the AdGuard server to help us keep the malicious and fishing websites database up to date.
+В этом модуле вы можете
+* включить уведомления для блокировки запросов к вредоносным и фишинговым сайтам,
+* активировать звуковые уведомления,
+* согласиться отправлять анонимную информацию, связанную с безопасностью, на сервер AdGuard, чтобы помочь нам поддерживать базу вредоносных и фишинговых сайтов в актуальном состоянии.
 
 ![Антифишинг](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/browsing-security.png)
 
-In case you want to learn more about Browsing Security, read [this article](/general/browsing-security.md).
+Если вы хотите узнать больше о безопасности браузера, читайте [эту статью](/general/browsing-security.md).
 
-### DNS Protection
+### DNS-защита
 
-There are three significant reasons why you might want to explore the DNS protection settings. First, to avoid being tracked by your ISP. Every time you open a website, for example `google.com`, your browser sends a request to a DNS server to get the IP address of the website in return. Usually, the DNS server belongs to your ISP, which allows them to track your online activity. Second, to encrypt you DNS traffic. And the third one is to [block content on DNS level](https://adguard-dns.io/kb/general/dns-filtering/).
+Есть три важные причины, по которым вам может понадобиться изучить настройки DNS-защиты. Во-первых, чтобы вас не отслеживал интернет-провайдер. Каждый раз, когда вы открываете сайт, например `google.com`, ваш браузер отправляет запрос на DNS-сервер, чтобы получить взамен IP-адрес сайта. Обычно DNS-сервер принадлежит вашему интернет-провайдеру, что позволяет ему отслеживать ваши действия в интернете. Во-вторых, для шифрования вашего DNS-трафика. И в-третьих — чтобы [блокировать контент на уровне DNS](https://adguard-dns.io/kb/general/dns-filtering/).
 
-![DNS Protection](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/dns-settings.png)
+![DNS-защита](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/dns-settings.png)
 
-In the DNS protection module of AdGuard for Windows you can select the DNS servers from known DNS providers, including [AdGuard DNS](https://adguard-dns.io/kb/) that blocks ads and trackers, AdGuard DNS Family Protection that in addition blocks adult content, or AdGuard DNS Non-filtering that provides a secure and reliable connection, but doesn't filter anything. You can even add custom DNS servers. Also there is an option to add custom rules using [DNS rules syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/). And if necessary, you can add [DNS filters of your choice](https://filterlists.com).
+В модуле DNS-защита AdGuard для Windows вы можете выбрать DNS-серверы от известных DNS-провайдеров, в том числе [AdGuard DNS](https://adguard-dns.io/kb/), который блокирует рекламу и трекеры, AdGuard DNS Семейная защита, который дополнительно блокирует контент для взрослых, или Нефильтрующий AdGuard DNS, который обеспечивает безопасное и надёжное соединение, но ничего не фильтрует. Вы даже можете добавить собственные DNS-серверы. Также есть возможность добавить собственные правила, используя [синтаксис правил DNS](https://adguard-dns.io/kb/general/dns-filtering-syntax/). Наконец, вы можете добавить [любые DNS-фильтры](https://filterlists.com).
 
-### Parental Control
+### Родительский контроль
 
-There are numerous websites access to which should be restricted if the PC is used by children. This task is accomplished by Parental Control.
+Существует множество сайтов, доступ к которым должен быть ограничен, если компьютером пользуются дети. Эту задачу выполняет Родительский контроль.
 
-The module checks the contents of web pages opened in the browser and filters those with content undesirable for children: images and texts for adults, crude language, violence, drug propaganda, etc. Parental Control settings are password protected so that the child is not able to go round the restrictions. This module not only blocks directions to undesirable sites but can also delete the links that are inappropriate for children from the search results. Filter sensitivity is flexibly adjusted.
+Модуль проверяет содержимое веб-страниц, открытых в браузере, и отфильтровывает страницы с нежелательным для детей контентом: изображения и тексты для взрослых, ненормативная лексика, насилие, пропаганда наркотиков и т. д. Настройки Родительского контроля защищены паролем, чтобы ребёнок не смог обойти ограничения. Этот модуль не только блокирует доступ к нежелательным сайтам, но и удаляет неподходящие для детей ссылки из результатов поиска. Чувствительность фильтра гибко регулируется.
 
-In the Parental Control module you can enable the *Safe search* and manage the *blocklist* and the *allowlist* to customize how this option works. You can also check the *Block executable files download* box to prevent your child from downloading and installing software on the computer. There are two more options in the *Parental Control* module: you can select a specific Windows user to be protected by *Parental Control* and set a password to protect AdGuard settings from change.
+В модуле Родительский контроль вы можете включить *Безопасный поиск* и управлять *чёрным* и *белым* списками, чтобы настроить работу этой опции. Вы также можете установить флажок *Запретить загрузку программ*, чтобы ваш ребёнок не мог загружать и устанавливать программное обеспечение на компьютер. В модуле *Родительский контроль* есть ещё две опции: вы можете выбрать конкретного пользователя Windows для защиты с помощью *Родительского контроля* и установить пароль для защиты настроек AdGuard от изменений.
 
-![Parental Control](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/parental-control.png)
+![Родительский контроль](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/parental-control.png)
 
-### Browser Assistant
+### Браузерный помощник
 
-![Browser Assistant](https://cdn.adguard.com/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
+![Браузерный помощник](https://cdn.adguard.com/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 
-From this tab you can easily proceed to install AdGuard Browser Assistant, which primary function is to manage filtering directly from the browser. We explained more about how to work with it and what to do if there is no Browser Assistant for your browser in the [separate article](browser-assistant.md).
+Из этой вкладки вы можете легко перейти к установке Браузерного помощника AdGuard, основная функция которого — управлять фильтрацией прямо из браузера. Подробнее о том, как с ним работать и что делать, если для вашего браузера нет Помощника, мы рассказали в [отдельной статье](browser-assistant.md).
 
 ## Расширения
 
-AdGuard can significantly broaden website functionality working as a [user script manager](/general/userscripts.md). AdGuard Users can add their own scripts, as well as manage existing ones.
+AdGuard может значительно расширить функциональность сайта, работая в качестве [менеджера пользовательских скриптов](/general/userscripts.md). Пользователи AdGuard могут добавлять собственные скрипты, а также управлять существующими.
 
 ![Расширения](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/userscripts.png)
 
-**Automatically detect userscripts**
+**Автоматически определять расширения**
 
-With this option enabled, AdGuard will automatically define browser queries to userscripts and suggest their installation. Otherwise, extensions can be downloaded and installed manually.
+Если эта опция включена, AdGuard будет автоматически определять запросы браузера к пользовательским расширениям и предлагать их установку. В противном случае расширения можно загрузить и установить вручную.
 
-The following extensions are installed with AdGuard:
+Вместе с AdGuard устанавливаются следующие расширения:
 
-![Preinstalled userscripts](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
+![Предустановленные пользовательские скрипты](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
 
-**AdGuard Assistant**
+**Помощник AdGuard**
 
-AdGuard Assistant is Legacy Assistant that you may use if the [new Assistant](/adguard-for-windows/browser-assistant.md) is not available for your browser. The name of this extension is quite deliberate: it actually assists the user in changing basic AdGuard settings right in the browser, without the need to open the app itself. AdGuard Assistant works with all Microsoft Windows compatible browsers. In addition, the AdGuard Assistant icon will not be displayed on websites listed as exceptions by the user and on certain web pages where there is a risk of incorrect content display.
+Помощник AdGuard — это устаревший Помощник, который вы можете использовать, если [новый Помощник](/adguard-for-windows/browser-assistant.md) недоступен для вашего браузера. Название этого расширения вполне оправдано: оно действительно помогает пользователю изменить основные настройки AdGuard прямо в браузере, без необходимости открывать само приложение. Помощник AdGuard работает со всеми браузерами, совместимыми с Microsoft Windows. Кроме того, иконка Помощника AdGuard не будет отображаться на сайтах, добавленных пользователем в исключения, и на некоторых веб-страницах, где существует риск некорректного отображения контента.
 
 **AdGuard Extra**
 
-This is a custom extension designed to fight the technique of re-inserting blocked ads - the so-called ad blocker circumvention/ad reinjection. Both are advanced anti-ad blocker methods that continue to rise in popularity among advertisers.
+Это пользовательское расширение, предназначенное для борьбы с повторной вставкой заблокированной рекламы — так называемым обходом блокировщика рекламы. Это передовые методы защиты от блокировки рекламы, которые пользуются популярностью среди рекламодателей.
 
-AdGuard Extra is essentially a mini-program that changes the way pages work,and it does so in such a way that it becomes much more difficult for sites to use the above-mentioned functions to bypass blockers.
+AdGuard Extra — это по сути мини-программа, которая меняет способ работы страниц, причём делает это таким образом, что сайтам становится намного сложнее использовать вышеупомянутые функции для обхода блокировщиков.
 
-**AdGuard Popup Blocker**
+**Блокировщик всплывающих окон**
 
-This extension prevents popup windows from opening when you view web pages. Some popups are considered useful – they may contain settings for site administering or additional reference information demonstrated upon clicking a link. That is why you can turn off the Blocker if needed. This extension doesn’t work on websites added to the AdGuard exceptions list either. It is turned off by default, but you can turn it on in the application settings. You will find more detailed information about this extension in our Knowledge Database.
+Это расширение блокирует всплывающие окна при просмотре веб-страниц. Некоторые всплывающие окна считаются полезными — они могут содержать настройки для администрирования сайта или справочную информацию, отображаемую при переходе по ссылке. Вот почему вы можете отключить Блокировщик, если это необходимо. Это расширение также не работает на сайтах, добавленных в список исключений AdGuard. По умолчанию это расширение отключено, но вы можете включить его в настройках приложения. Вы найдёте более подробную информацию об этом расширении в нашей Базе знаний.
 
 **Web of Trust**
 
-Web of Trust lets you see the reputation of each website based on its users’ opinions. The site is rated by a number of specific criteria: trust, security, etc. This extension is turned off by default, but you can turn it on in the application settings. Please, note that AdGuard is not the developer of this extension.
+Web of Trust показывает вам репутацию каждого сайта на основе мнений его пользователей. Сайт оценивается по ряду определённых критериев: доверие, безопасность и т. д. По умолчанию это расширение отключено, но вы можете включить его в настройках приложения. Обратите внимание, что AdGuard не является разработчиком этого расширения.
 
-### Network
+### Сеть
 
-The penultimate module is dedicated to network filtering, and here you will find additional network-related options. Two of them are enabled by default: *Enable traffic filtering* and *Filter HTTPS protocol*. These are important extra precautions to better filter your web space. Most websites are now using HTTPS, and the same applies to advertising. From many sites, like youtube.com, facebook.com and twitter.com, it is impossible to remove ads without HTTPS filtering. So keep the *Filter HTTPS protocol* feature enabled unless you have a strong reason not to.
+Предпоследний модуль посвящён сетевой фильтрации, и здесь вы найдёте дополнительные параметры, связанные с сетью. Два из них включены по умолчанию: *Включить фильтрацию трафика* и *Фильтровать HTTPS-протокол*. Это важная дополнительная мера предосторожности для лучшей фильтрации веб-пространства. Большинство веб-сайтов теперь используют HTTPS, то же самое относится и к рекламным сетям. Со многих сайтов, таких как youtube.com, facebook.com и twitter.com, невозможно удалить рекламу без HTTPS-фильтрации. Поэтому оставьте функцию *Фильтровать HTTPS-протокол* включённой, если у вас нет веской причины не делать этого.
 
-![Network Settings](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/network-settings.png)
+![Сетевые настройки](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/network-settings.png)
 
-In this module you can check the checkbox "Use AdGuard as an HTTP proxy" to use AdGuard as a regular HTTP proxy which will filter all traffic passing through it. You can also enable the "Filter websites with EV certificates" feature. Extended Validation (EV) SSL Certificates offer a stronger safety guarantee; owners of such websites have to pass a thorough and globally standardized identity verification process defined by EV guidelines. Which is the reason why some users trust websites with such certificates and prefer not to filter them.
+В этом модуле вы можете установить флажок «Использовать AdGuard как HTTP-прокси», чтобы использовать AdGuard в качестве обычного HTTP-прокси, который будет фильтровать весь проходящий через него трафик. Вы также можете включить функцию «Фильтровать сайты с EV-сертификатами». EV-сертификаты (от англ. Extended Validation — «расширенная валидация») дают более надёжную гарантию; владельцы таких сайтов должны пройти подробный и всемирно стандартизированный процесс проверки личности, определённый руководящими принципами EV. Именно поэтому некоторые пользователи доверяют сайтам с такими сертификатами и предпочитают не фильтровать их.
 
-At last, there is a section with Proxy settings. There you can specify which proxy server AdGuard should use to update filters, get new versions and so on.
+Наконец, есть раздел с настройками прокси. Там вы можете указать, какой прокси-сервер AdGuard должен использовать для обновления фильтров, получения новых версий и так далее.
 
 ### AdGuard VPN
 
-The last section is dedicated to AdGuard VPN — an ideal tool that provides security and anonymity each time you browse the Internet. You can download it by clicking the *Download* button or go to the AdGuard VPN website by clicking the *Homepage* button.
+Последний раздел посвящён AdGuard VPN — идеальному инструменту, обеспечивающему безопасность и анонимность каждый раз, когда вы выходите в интернет. Вы можете скачать его, нажав на кнопку *Скачать* или перейти на сайт AdGuard VPN, нажав на кнопку *Сайт*.
 
-How does AdGuard VPN work? Without going into technical details, we can say that VPN creates a secure encrypted tunnel between the user's computer or mobile device and a remote VPN server. In this way, data confidentiality is preserved, as well as the anonymity of the user, because a third-party observer sees the IP address of the VPN server and not the actual user's IP.
+Как работает AdGuard VPN? VPN создаёт безопасный зашифрованный туннель между компьютером или мобильным устройством пользователя и удалённым VPN-сервером. Таким образом, сохраняется конфиденциальность данных и анонимность пользователя, поскольку сторонний наблюдатель видит IP-адрес VPN-сервера, а не фактический IP-адрес пользователя.
 
-**What does AdGuard VPN do:**
+**Что делает AdGuard VPN:**
 
-* hides your real whereabouts and helps you stay anonymous
-* сhanges your IP address to protect your data from tracking
-* encrypts your traffic to make it unreachable to scammers
-* lets you configure where to use VPN and where not to (exclusions feature)
+* скрывает ваше реальное местоположение и помогает оставаться анонимным
+* изменяет ваш IP-адрес, чтобы защитить ваши данные от отслеживания
+* шифрует ваш трафик, делая его недоступным для мошенников
+* позволяет настроить, где использовать VPN, а где нет (функция исключений).
 
-To get more information about AdGuard VPN dive into the [AdGuard VPN Knowledge Base](https://adguard-vpn.com/kb/).
+Чтобы получить больше информации об AdGuard VPN, ознакомьтесь с [Базой знаний AdGuard VPN](https://adguard-vpn.com/kb/).
 
-## Others
+## Другое
 
-There are other useful AdGuard options that shouldn't go unnoticed in this article, since they add much to user experience.
+У AdGuard есть другие полезные функции, которые не могут остаться незамеченными, поскольку благодаря им пользоваться программой значительно удобнее.
 
 ### Поддержка
 
 ![Поддержка](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/support.png)
 
-By clicking the Support tab you will open a dialog box through which you can report a bug, submit a feature request, or simply share your opinion of the product.
+Нажав на вкладку «Поддержка», вы откроете диалоговое окно, в котором можете сообщить об ошибке, отправить запрос на добавление функции или просто поделиться своим мнением о продукте.
 
 ### Лицензия
 
 ![Лицензия](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/license.png)
 
-This tab contains information about your license. Here you can:
-* find out the license type (nightly build, beta or release), the number of devices available for simultaneous connection to AdGuard, the license expiration date;
-* click the button to go to the license purchase page, and activate, reset or recover a license.
+Эта вкладка содержит информацию о лицензии. Здесь вы можете:
+* узнать тип лицензии (nightly, beta или release), количество устройств, доступных для одновременного подключения к AdGuard, срок действия лицензии;
+* нажмите кнопку, чтобы перейти на страницу покупки лицензии и активировать, сбросить или восстановить лицензию.
 
 ### О компании
 
 ![О компании](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/about.png)
 
-In addition to information about the current version of the program, this tab provides some useful links to the Licese Agreement, Privacy Policy, Acknowledgements, Discussions, and Version history pages.
+В дополнение к информации о текущей версии программы, эта вкладка содержит несколько полезных ссылок на страницы Лицензионного соглашения, Политики конфиденциальности, Благодарностей, Обсуждений и Истории версий.
 
-### Check for updates
+### Проверить обновления
 
-![Check for updates](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/check-updates.png)
+![Проверить обновления](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/check-updates.png)
 
-To check for filters and userscripts updates, click the rotating arrows icon in the upper right corner of the app's main screen.
+Чтобы проверить наличие обновлений фильтров и пользовательских скриптов, нажмите на значок вращающихся стрелок в правом верхнем углу главного экрана приложения.
 
-### Tray menu
+### Трей-меню
 
-To save you time navigating around AdGuard menus, many of the frequently used options and settings are available from the tray menu. To call the menu, right-click the AdGuard icon in the tray. It will offer you the following options:
+Чтобы вы тратили меньше времени, разбираясь в меню AdGuard, мы расположили часто используемые опции и настройки в трей-меню. Чтобы вызвать меню, щёлкните правой кнопкой мыши значок AdGuard в трее. Он предложит вам следующие варианты:
 
-* enable protection
-* disable protection: completely or for 30 seconds
-* go to *Settings*
-* open the *Tools* and *Advanced* menus
-* check for filter updates
-* check for app updates
-* to recall the last pop-up message
-* reach the *Support* and *About* sections
-* close AdGuard, but continue filtering
-* exit AdGuard
+* включить защиту
+* отключить защиту: полностью или на 30 секунд
+* перейти в *Настройки*
+* открыть меню *Инструменты* и *Расширенные*
+* проверить обновления фильтров
+* проверить обновления приложения
+* вспомнить последнее всплывающее сообщение
+* перейти к разделам *Поддержка* и *О программе*
+* закрыть AdGuard без остановки фильтрации
+* закрыть AdGuard

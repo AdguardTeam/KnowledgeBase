@@ -76,7 +76,7 @@ Also, you can get information about plural forms in the [Unicode Common Locale D
 
 `hour, hours --> godzinę, godziny, godzin`
 
-如果一个名词只有两种形式，则无需重复写同一形式（**通常仅适用于这种带有复数形式的字符串！**）。 但是，如果您把同一个形式重写两次也不会出错。
+如果一个名词只有两种形式，则无需重复写同一形式（*通常仅适用于这种带有复数形式的字符串！*）。 但是，如果您把同一个形式重写两次也不会出错。
 
 ### 3. 使用 Crowdin 发展模式的字符串 {#3type}
 
@@ -100,7 +100,7 @@ Crowdin 为用户提供翻译一定数量具有不同复数形式的短语的功
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/plurals/plurals_site.png)
 
-Now, let’s imagine — you are faced with such a string: `Standard license for %count% computer | Standard license for %count% computers`.
+现在，我们来想象一下。您将面临这样的短语：`"Standard license for %count% computer | Standard license for %count% computers"`。
 
 您应该知道哪些信息才能正确翻译它？
 
@@ -126,7 +126,7 @@ Now, let’s imagine — you are faced with such a string: `Standard license for
 
 在这种情况下，我们看到三个模板，其中包含斯洛伐克语中单词 *"počítač"* （计算机）的三种形式。
 
-**如果我们忽略其中一种形式，而只为斯洛伐克语使用两个，而不是三个模板，则系统将无法为某些数字采用适当的模板。结果是，句子中将出现语法错误，例如英语：Standard license for 5 computer（正确应是：Standard license for 5 computers）**。
+*如果我们忽略其中一种形式，而只为斯洛伐克语使用两个，而不是三个模板，则系统将无法为某些数字采用适当的模板*。结果是，句子中将出现语法错误，例如英语：*Standard license for 5 computer（正确应是：Standard license for 5 computers）*。
 > **即使单词本身的单词形式较少，也要始终使用尽可能多的形式。**
 
 例如，塞尔维亚单词 *'računar'*（计算机（computer））只有两种形式。 但是塞尔维亚语有 3 种复数形式。

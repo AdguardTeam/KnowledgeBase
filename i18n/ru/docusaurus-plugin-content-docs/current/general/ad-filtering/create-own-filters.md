@@ -24,11 +24,11 @@ sidebar_position: 5
 
 ## Примеры
 
-#### Example: Blocking by domain name
+#### Блокировка по имени домена
 
-![Blocking by domain name](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/0_blocking_domain.svg)
+![Блокировка по имени домена](https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/0_blocking_domain.svg)
 
-**This rule blocks:**
+**Это правило блокирует:**
 
 * `http://example.org/ad1.gif`
 * `http://subdomain.example.org/ad1.gif`
@@ -39,9 +39,9 @@ sidebar_position: 5
 * `http://ads.example.org.us/ad1.gif`
 * `http://example.com/redirect/http://ads.example.org/`
 
-#### Example: Blocking exact address
+#### Блокировка конкретного адреса
 
-![Blocking exact address](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/1_exact_address.svg)
+![Блокировка конкретного адреса](https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/1_exact_address.svg)
 
 **Это правило блокирует:**
 
@@ -51,11 +51,11 @@ sidebar_position: 5
 
 * `https://example.org/banner/img`
 
-#### Example: Basic rule modifiers
+#### Базовые модификаторы правил
 
 Правила фильтрации поддерживают множество модификаторов, которые позволяют вам точно настраивать поведение правила. Вот пример правила с некоторыми простыми модификаторами.
 
-![Basic rule modifiers](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/2_basic_rule_options.svg)
+![Модификаторы базовых правил](https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/2_basic_rule_options.svg)
 
 **Это правило блокирует:**
 
@@ -68,7 +68,7 @@ sidebar_position: 5
 
 #### Разблокировка адреса
 
-![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/3_basic_exception.svg)
+![](https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/3_basic_rule_exception.svg)
 
 **Это правило разблокирует:**
 
@@ -76,18 +76,18 @@ sidebar_position: 5
 
 > Правила блокировки с модификатором [`$important`](#important-modifier) приоритетнее, чем обычные правила разблокировки.
 
-#### Example: Unblocking everything on a website
+#### Разблокировка всего сайта
 
-![Unblocking everything](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/4_unblock_entire_website.svg)
+![Разблокировка всего](https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/4_unblock_entire_website.svg)
 
 **Это правило разблокирует**
 
 * Оно отключает все косметические правила на `example.com`.
 * Оно блокирует все запросы, отправленные с этого сайта, даже если есть правила блокировки, соответствующие этим запросам.
 
-#### Example: Cosmetic rule
+#### Косметические правила
 
-![Cosmetic rule](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/5_cosmetic_rules.svg)
+![Косметические правила](https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/5_cosmetic_rules.svg)
 
 Косметические правила применяются с использованием CSS — специального языка программирования, который понимает каждый браузер. В основном, он добавляет новый стиль CSS на сайт, цель которого — скрыть определённые элементы. Вы можете узнать больше о CSS в целом [здесь](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors).
 
@@ -102,50 +102,50 @@ sidebar_position: 5
 | Attribute selector           | `div[class="banners"]`           | Соответствует всем `div` элементам с атрибутом `class `, **равным** `banners`.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_class_attr.png)                      |
 | Attribute substring selector | `div[class^="advert1"]`          | Соответствует всем `div` элементам, атрибут `class` которых **начинается** с `advert1`.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_class_attr_start.png)       |
 | Attribute substring selector | `div[class$="banners_ads"]`      | Соответствует всем `div` элементам, атрибут `class` которых **заканчивается** на `banners_ads`.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_class_attr_end.png) |
-| Attribute substring selector | `a[href^="http://example.com/"]` | Matches all links that are loaded from `http://example.com/` domain.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_attr_start.png)                                |
-| Attribute selector           | `a[href="http://example.com/"]`  | Matches all links to **exactly** the `http://example.com/` address.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_attr_equal.png)                                 |
+| Attribute substring selector | `a[href^="http://example.com/"]` | Соответствует всем ссылкам, загруженным с домена `http://example.com/`.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_attr_start.png)                             |
+| Attribute selector           | `a[href="http://example.com/"]`  | Соответствует всем ссылкам **конкретно** `http://example.com/`.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_attr_equal.png)                                     |
 
-## Basic rules
+## Базовые правила
 
-The most simple rules are so-called *Basic rules*. They are used to block requests to specific URLs. Or to unblock it, if there is a special marker "@@" at the beginning of the rule. The basic principle for this type of rules is quite simple: you have to specify the address and additional parameters that limit or expand the scope of the rule.
+Самые простые правила — это так называемые *Базовые правила*. Они используются для блокировки запросов к определённым URL-адресам. Либо, при наличии специального маркера @@ в начале правила, для разблокировки запроса. Основной принцип для этого типа правил достаточно прост: необходимо указать адрес и дополнительные параметры, которые ограничивают или расширяют область действия правила.
 
-> **Sub-requests**
+> **Подзапросы**
 > 
-> Basic rules for blocking requests are applied only to **sub-requests**. That means they will not block the loading of the page.
+> Базовые правила, блокирующие запросы, применяются только к **подзапросам**. То есть они не будут блокировать загрузку страницы в браузере.
 
-> **Response status**
+> **Статус ответа**
 > 
-> Browser detects a blocked request as completed with an error.
+> Браузер определяет заблокированный подзапрос как выполненный с ошибкой.
 
-### Basic rules syntax {#basic-rules-syntax}
+### Синтаксис базовых правил {#basic-rules-syntax}
 
 ```
       rule = ["@@"] pattern [ "$" modifiers ]
 modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 ```
 
-* **`pattern`** — an address mask. Every request URL is collated to this mask. You can also use special characters in the template, their description is [below](#basic-rules-special-characters). Note that AdGuard trims URLs to a length of 4096 characters in order to speed up matching and avoid issues with ridiculously long URLs.
-* **`@@`** — a marker that is used in rules of exception. To turn off filtering for a request, start your rule with this marker.
-* **`modifiers`** — parameters that "clarify" the basic rule. Some of them limit the scope of the rule and some can completely change they way it works.
+* **`pattern`** — маска адреса. URL каждого запроса сопоставляется с этой маской. В шаблоне вы можете использовать некоторые специальные символы, описание которых будет дано [ниже](#basic-rules-special-characters). Обратите внимание, что AdGuard обрезает URL до 4096 символов, чтобы ускорить сопоставление и избежать проблем с длинными URL.
+* **`@@`** — маркер, который используется для обозначения правил-исключений. С такого маркера должны начинаться правила, отключающие фильтрацию для запроса.
+* **`modifiers`** — параметры, используемые для «уточнения»‎ базового правила. Некоторые параметры ограничивают область действия правила, а некоторые могут полностью изменить принцип его работы.
 
-### Special characters {#basic-rules-special-characters}
+### Специальные символы {#basic-rules-special-characters}
 
-* **`*`** — a wildcard character. It is used to represent "any set of characters". This can also be an empty string or a string of any length.
-* **`||`** — matching the beginning of an address. With this character you do not have to specify a particular protocol and subdomain in address mask. It means, `||` stands for `http://*.`, `https://*.`, `ws://*.`, `wss://*.` at once.
-* **`^`** — a separator character mark. Separator character is any character, but a letter, a digit, or one of the following: `_` `-` `.` `%`. In this example separator characters are shown in bold: `http:`**`//`**`example.com`**`/?`**`t=1`**`&`**`t2=t3`. The end of the address is also accepted as separator.
-* **`|`** — a pointer to the beginning or the end of address. The value depends on the character placement in the mask. For example, a rule `swf|` corresponds to `http://example.com/annoyingflash.swf` , but not to `http://example.com/swf/index.html`. `|http://example.org` corresponds to `http://example.org`, but not to `http://domain.com?url=http://example.org`.
+* **`*`** — wildcard-символ. Символ, обозначающий «произвольный набор символов». Это может быть как пустая строка, так и строка любой длины.
+* **`||`** — соответствие началу адреса. Этот специальный символ позволяет не указывать конкретный протокол и поддомен в маске адреса. То есть, `||` соответствует сразу `http://*.`, `https://*.`, `ws://*.`, `wss://*.`.
+* **`^`** — указатель для разделительного символа. Разделителем может быть любой символ кроме буквы, цифры и следующих символов: `_` `-` `.` `%`. Например, в адресе `http:`**`//`**`example.com`**`/?`**`t=1`**`&`**`t2=t3` жирным выделены разделительные символы. Конец адреса также принимается в качестве разделителя.
+* **`|`** — указатель на начало или конец адреса. Значение зависит от расположения символов в маске. Например, правило `swf|` соответствует `http://example.com/annoyingflash.swf`, но не `http://example.com/swf/index.html`. `|http://example.org` соответствует `http://example.org`, но не `http://domain.com?url=http://example.org`.
 
-> **Visual representation**
+> **Визуальное представление**
 > 
-> We also recommend to get acquainted with [this article](https://adblockplus.org/filter-cheatsheet#blocking), for better understanding of how such rules should be made.
+> Мы также советуем ознакомиться с [этой статьёй,](https://adblockplus.org/filter-cheatsheet#blocking) чтобы лучше понять, как должны строиться такие правила.
 
 ### Поддержка регулярных выражений {#regexp-support}
 
 Если вы хотите добиться ещё большей гибкости при составлении правил, вы можете использовать [регулярные выражения](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) вместо упрощённой маски со специальными символами, которая используется по умолчанию.
 
-> **Performance**
+> **Производительность**
 > 
-> Rules with regular expressions work more slowly, therefore it is recommended to avoid them or to limit their scope to specific domains.
+> Такие правила работают медленнее обычных, поэтому рекомендуется избегать их или хотя бы ограничивать их область действия конкретными доменами.
 
 Чтобы блокировщик определил, что вы хотите использовать регулярное выражение, необходимо, чтобы `pattern` имел особый вид:
 ```
@@ -154,17 +154,17 @@ pattern = "/" regexp "/"
 
 Например, правило `/banner\d+/$third-party` применит регулярное выражение `banner\d+` ко всем сторонним запросам. Правила-исключения с использованием регулярных выражений выглядят вот так: `@@/banner\d+/`.
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> AdGuard Safari and AdGuard for iOS do not fully support regular expressions because of [Content Blocking API restrictions](https://webkit.org/blog/3476/content-blockers-first-look/) (look for "The Regular expression format" section).
+> AdGuard для Safari и AdGuard для iOS не полностью поддерживают регулярные выражения в силу ограничений [Content Blocking API](https://webkit.org/blog/3476/content-blockers-first-look/) (см. раздел The Regular expression format).
 
 ### Поддержка wildcard для доменов верхнего уровня (TLD) {#wildcard-for-tld}
 
-Wildcard characters are supported for TLDs of the domains in patterns of [cosmetic](#cosmetic-rules), [HTML filtering](#html-filtering-rules) and [javascript](#javascript-rules) rules. Например, косметическое правило `example.*##.banner` будет соответствовать любому `example.TLD` запросу: `example.ru`, `example.com`, `example.net`, `example.org` и т.д. For the basic rules the described logic will be applicable only for the domains specified in [`$domain` modifier](#domain-modifier), e.g. `||*/banners/*$image,domain=example.*`.
+Wildcard-символы поддерживаются для TLD-доменов в шаблонах [косметических](#cosmetic-rules), [фильтров HTML](#html-filtering-rules) и [правил javascript](#javascript-rules). Например, косметическое правило `example.*##.banner` будет соответствовать любому `example.TLD` запросу: `example.ru`, `example.com`, `example.net`, `example.org` и т.д. При составлении базовых правил вы можете использовать wildcard-символ для TLD только вместе с [модификатором `$domain`](#domain-modifier). Например, `||*/banners/*$image,domain=example.*`.
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> Rules with wildcard for TLD are supported by AdGuard for Windows, Mac, Android, Safari, iOS, and AdGuard Browser extension for Chrome, Firefox, Edge.
+> Правила с wildcard-знаками для TLD поддерживаются AdGuard для Windows, Mac, Android, Safari, iOS и Браузерным расширением AdGuard для Chrome, Firefox, Edge.
 
 ### Примеры базовых правил
 
@@ -174,11 +174,11 @@ Wildcard characters are supported for TLDs of the domains in patterns of [cosmet
 
 * `@@||example.com$document ` — наиболее общее правило-исключение. Такое правило полностью отключает фильтрацию на домене `example.com` и всех его поддоменах. Существует ряд параметров, которые также можно использовать в правилах-исключениях. Более подробно о правилах-исключениях и параметрах, которые могут в таких правилах использоваться, написано [ниже](#exception-modifiers).
 
-### Basic rules modifiers
+### Модификаторы базовых правил
 
-> **Attention!**
+> **Обратите внимание**
 > 
-> The features described in this section are intended for experienced users. Они расширяют возможности «Общих правил», но для их применения необходимо представлять, как работает браузер. Вы можете изменить поведение «общего правила», используя дополнительные модификаторы. Список этих параметров располагается в конце правила за знаком доллара `$` и разделяется запятыми.
+> Возможности, описанные в этом разделе, предназначены для опытных пользователей. Они расширяют возможности «Общих правил», но для их применения необходимо представлять, как работает браузер. Вы можете изменить поведение «общего правила», используя дополнительные модификаторы. Список этих параметров располагается в конце правила за знаком доллара `$` и разделяется запятыми.
 
 Пример:
 ```
@@ -191,347 +191,347 @@ Wildcard characters are supported for TLDs of the domains in patterns of [cosmet
 
 ##### **`$domain`** {#domain-modifier}
 
-`$domain` limits the rule application area to a list of domains and their subdomains. Чтобы добавить несколько доменов в одно правило, используйте символ `|` в качестве разделителя.
+Модификатор `$domain` ограничивает область действия правила списком доменов и их поддоменов. Чтобы добавить несколько доменов в одно правило, используйте символ `|` в качестве разделителя.
 
 **Примеры**
 
 **`$domain`:**
 
-* `||baddomain.com^$domain=example.org` — a rule to block requests that match the specified mask, and are sent from domain `example.org` or its subdomains.
-* `||baddomain.com^$domain=example.org|example.com` — the same rule, but it works for both `example.org` and `example.com`.
+* `||baddomain.com^$domain=example.org` — правило для блокировки запросов, которые соответствуют указанной маске и отправлены с домена `example.org` или его поддоменов.
+* `||baddomain.com^$domain=example.org|example.com` — такое же правило, но срабатывать оно будет как для домена `example.org`, так и для `example.com`.
 
-If you want the rule not to be applied to certain domains, start a domain name with `~` sign.
+Если вы хотите, чтобы правило не применялось к определённым доменам, начните доменное имя со знака `~`.
 
-**`$domain` and `~`:**
+**`$domain` и `~`:**
 
-* `||baddomain.com^$domain=~example.org` — this rule blocks requests matching the pattern sent from any domain except `example.org` and its subdomains.
-* `||baddomain.com^$domain=example.org|~foo.example.org` — this rule blocks requests sent from `example.org` and its subdomains, except the subdomain `foo.example.org`.
+* `||baddomain.com^$domain=~example.org` — правило для блокировки запросов, которые соответствуют указанной маске и отправлены с любого домена, кроме `example.org` и его поддоменов.
+* `||baddomain.com^$domain=example.org|~foo.example.org` — это правило блокирует запросы, отправленные с домена `example.org` и всех его поддоменов, кроме поддомена `foo.example.org`.
 
-###### **`$domain` modifier matching target domain:**
+###### **Модификатор `$domain`, соответствующий целевому домену:**
 
-In some cases the `$domain` modifier can match not only the referrer domain, but also the target domain. This happens when all of the following is true:
+В некоторых случаях модификатор `$domain` может соответствовать не только домену-рефереру, но и целевому домену. Это происходит в случае, когда всё из перечисленного верно:
 
-1) The request has `document` content type. 2) The rule pattern does not match any particular domains. 3) The rule pattern does not contain regular expressions. 4) The `$domain` modifier contains only excluded domains, e.g. `$domain=~example.org|~example.com`.
+1) Тип контента запроса — `document`. 2) Шаблон правила не соответствует ни одному конкретному домену. 3) Шаблон правила не содержит регулярных выражений. 4) Модификатор `$domain` содержит только исключённые домены, например, `$domain=~example.org|~example.com`.
 
-The following predicate should be satisfied to perform a target domain matching: `1 AND ((2 AND 3) OR 4)`. That is, if the modifier `$domain` contains only excluded domains, then the rule does not need to meet the second and third conditions to match the target domain against the modifier `$domain`.
+Для сопоставления целевого домена должен выполняться следующий предикат: `1 и ((2 и 3) или 4)`. То есть, если модификатор `$domain` содержит только исключённые домены, то правилу не нужно выполнять второе и третье условия, чтобы соответствовать целевому домену `$domain`.
 
-If some of the conditions above are not met but the rule contains [`$cookie`](#cookie-modifier) or [`$csp`](#csp-modifier) modifier, the target domain will still be matched.
+Если какие-либо из условий выше не выполнены, но правило содержит модификатор [`$cookie`](#cookie-modifier) или [`$csp`](#csp-modifier), модификатор всё равно будет соответствовать целевому домену.
 
-If the referrer matches a rule with `$domain` that explicitly excludes the referrer domain, then the rule will not be applied even if the target domain also matches the rule. This affects rules with [`$cookie`](#cookie-modifier) and [`$csp`](#csp-modifier) modifiers, too.
+Если реферер соответствует правилу с `$domain`, которое явно исключает домен реферера, то правило не сработает, даже если целевой домен тоже ему соответствует. Это также касается правил с модификаторами [`$cookie`](#cookie-modifier) и [`$csp`](#csp-modifier).
 
 **Примеры**
 
-* `*$cookie,domain=example.org|example.com` will block cookies for all requests to and from `example.org` and `example.com`.
-* `*$document,domain=example.org|example.com` will block all requests to and from `example.org` and `example.com`.
+* `*$cookie,domain=example.org|example.com` заблокирует cookies для всех запросов от и к `example.org` и `example.com`.
+* `*$document,domain=example.org|example.com` заблокирует все запросы от и к `example.org` и `example.com`.
 
-In the following examples it is implied that requests are sent from `http://example.org/page`(the referrer) and the target URL is `http://targetdomain.com/page`.
+В следующих примерах предполагается, что запросы отправляются от `http://example.org/page`(реферер), а целевой URL — `http://targetdomain.com/page`.
 
-* `page$domain=example.org` will be matched, as it matches the referrer domain.
-* `page$domain=targetdomain.com` will be matched, as it matches the target domain but satisfies all requirements mentioned above.
-* `||*page$domain=targetdomain.com` will not be matched, as the pattern `||*page` matches specific domains.
-* `||*page$domain=targetdomain.com,cookie` will be matched despite the pattern `||*page` matches specific domains because it contains `$cookie` modifier.
-* `/banner\d+/$domain=targetdomain.com` will not be matched as it contains a regular expression.
-* `page$domain=targetdomain.com|~example.org` will not be matched because the referrer domain is explicitly excluded.
+* `page$domain=example.org` сработает, так как соответствует рефереру.
+* `page$domain=targetdomain.com` сработает, так как соответствует целевому домену, но выполнены все условия, перечисленные выше.
+* `||*page$domain=targetdomain.com` не сработает, поскольку паттерн `||*page` указывает на конкретные домены.
+* `||*page$domain=targetdomain.com,cookie` сработает несмотря на то, что паттерн `||*page` указывает на конкретные домены, поскольку правило содержит модификатор `$cookie`.
+* `/banner\d+/$domain=targetdomain.com` не сработает, поскольку правило содержит регулярное выражение.
+* `page$domain=targetdomain.com|~example.org` не сработает, так как домен реферера явно исключён.
 
 > **Ограничения**
 > 
-> Safari does not support the simultaneous use of allowed and disallowed domains, so rules like `||baddomain.com^$domain=example.org|~foo.example.org` will not work in AdGuard for Safari.
+> Safari не поддерживает одновременно разрешённые и запрещённые домены, поэтому правила вида `||baddomain.com^$domain=example.org|~foo.example.org` не работают в AdGuard для Safari.
 
 ##### **`$third-party`**
 
-A restriction of third-party and own requests. A third-party request is a request from a different domain. For example, a request to `example.org`, from `domain.com` is a third-party request.
+Ограничение на сторонние или собственные запросы. Сторонним является запрос, отправленный с другого домена. Например, запрос к домену `example.org`, отправленный с домена `domain.com`, является сторонним.
 
-> To be considered as such, a third-party request should meet one of the following conditions: 1) Its referrer is not a subdomain of the target domain or the other way round. For example, a request to `subdomain.example.org` from `example.org` is not a third-party request. 2) Its `Sec-Fetch-Site` header is set to `cross-site`. If there is a `$third-party` modifier, the rule is only applied to third-party requests.
+> Чтобы считаться таковым, сторонний запрос должен удовлетворять одному из следующих условий: 1) Он не должен быть отправлен с поддомена того же домена или наоборот. Например, запрос к `subdomain.example.org`, отправленный с домена `example.org`, не является сторонним. 2) Его заголовок `Sec-Fetch-Site` имеет значение `cross-site`. Если указан модификатор `$third-party`, то правило применяется только к сторонним запросам.
 
 **Примеры**
 
 **`$third-party`:**
 
-* `||domain.com^$third-party` — this rule applies to all domains, except `domain.com` and its subdomains. A third-party request example: `http://example.org/banner.jpg`.
+* `||domain.com^$third-party` — правило применяется на всех сайтах, кроме `domain.com и его поддоменов. Пример стороннего запроса: <code>http://example.org/banner.jpg`.
 
-If there is a `$~third-party` modifier, the rule is only applied to the requests that are not from third-party. Which means, they have to be sent from the same domain.
+Если указан модификатор `$~third-party`, то правило применяется только к запросам, которые не являются сторонними. То есть эти запросы отправлены с того же домена.
 
 **`$~third-party`:**
 
-* `||domain.com$~third-party` — this rule is applied to `domain.com`, but not to the other domains. Example of a request that is not a third-party request: `http://domain.com/icon.ico`.
+* `||domain.com$~third-party` — такое правило уже будет применяться только на самом `domain.com`, но не на других сайтах. Пример запроса, который не является сторонним: `http://domain.com/icon.ico`.
 
 ##### **`$popup`**
 
-AdGuard will try to close the browser tab with any address that matches a blocking rule with this modifier. Please note that not all the tabs can be closed.
+AdGuard будет пытаться закрыть браузерную вкладку с любым адресом, подходящим под правило с этим модификатором. Обратите внимание, что закрыть можно не любую вкладку.
 
 **Примеры**
 
-* `||domain.com^$popup` — if you try to go to `http://domain.com/` from any page in the browser, a new tab in which specified site has to be opened will be closed by this rule.
+* `||domain.com^$popup` — при попытке перехода на сайт `http://domain.com` с любой страницы в браузере, новая вкладка, в которой должен открыться указанный сайт, будет закрыта.
 
-> It may not work if the popped up page is cached by the browser. It also will not work with some tricky popup methods. In such cases, it is better to use [AdGuard Popup Blocker](https://github.com/AdguardTeam/PopupBlocker) extension.
+> Модификатор может не работать, если всплывающая страница закеширована браузером. Также модификатор может не сработать, если для показа попапа используются нестандартные методы. В таких случаях лучше использовать расширение [AdGuard Popup Blocker](https://github.com/AdguardTeam/PopupBlocker).
 
-> **Note**
+> **Примечание**
 > 
-> Unlike with AdGuard Browser extension, `$popup` modifier is very unreliable when used with AdGuard for Windows, Mac and Android. In AdGuard for Safari and iOS, `$popup` rules will simply block the page right away.
+> В отличие от Браузерного расширения AdGuard, модификатор `$popup` крайне нестабильно работает с AdGuard для Windows, Mac и Android. В AdGuard для Safari и iOS `$popup-правила` просто заблокируют страницу.
 
 ##### **`$match-case`**
 
-This modifier defines a rule which applies only to addresses that match the case. Default rules are case-insensitive.
+Этот модификатор определяет правило, которое применяется только к адресам с совпадением регистра символов. По умолчанию регистр символов не учитывается.
 
 **Примеры**
 
-* `*/BannerAd.gif$match-case` — this rule will block `http://example.com/BannerAd.gif`, but not `http://example.com/bannerad.gif`.
+* `*/BannerAd.gif$match-case `— такое правило будет блокировать `http://example.com/BannerAd.gif`, но не `http://example.com/bannerad.gif`.
 
 ##### **`$header`**
 
-The `$header` modifier allows matching the HTTP response having a specific header with (optionally) a specific value.
+Модификатор `$header` ограничивает область действия правила запросами, ответы которых содержат заголовки, соответствующие правилу.
 
-**Syntax**
+**Синтаксис**
 
 ```
 $header "=" h_name [":" h_value]
 h_value = string / regexp
 ```
 
-where:
-  * **`h_name`** — required, an HTTP header name. It is matched case-insesitively.
-  * **`h_value`** — optional, an HTTP header value matching expression, it may be one of the following:
-    * **`string`** — a sequence of characters. It is matched against the header value lexicographically;
-    * **`regexp`** — a regular expression, starts and ends with `/`. The pattern works the same way as in the basic URL rules, but the characters `/`, `$` and `,` must be escaped with `\`.
+где:
+  * **`h_name`** (обязательно) — имя HTTP-заголовка. Сопоставляется без учёта регистра символов.
+  * **`h_value`** (опционально) — выражение для сопоставления значения HTTP-заголовка, может быть одним из:
+    * **`string`** — последовательность символов. Лексикографически сопоставляется со значением заголовка;
+    * **`regexp`** — регулярное выражение, начинается и заканчивается символом `/`. Паттерн работает так же, как и в основных URL-правилах, но символы `/`, `$` и `,` должны быть экранированы с помощью `\`.
 
-The modifier `":" h_value` part may be omitted. In that case the modifier matches the header name only.
+Часть модификатора со значением заголовка (`":" h_value`) может быть опущена. В этом случае модификатор сопоставляет только имя заголовка.
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> Rules with the `$header` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**.
+> Правила с модификатором `$header` поддерживаются AdGuard для Windows, Mac и Android с **CoreLibs версии 1.11 и выше**.
 
 **Примеры**
 
-* `||example.com^$header=set-cookie:foo` blocks requests which responses have the `Set-Cookie` header with the value matching `foo` literally.
-* `||example.com^$header=set-cookie` blocks requests which responses have the `Set-Cookie` header with any value.
-* `@@||example.com^$header=set-cookie:/foo\, bar\$/` unblocks requests which responses have the `Set-Cookie` header with value matching the `foo, bar$` regular expression.
-* `@@||example.com^$header=set-cookie` unblocks requests which responses have a `Set-Cookie` header with any value.
+* `||example.com^$header=set-cookie:foo` — блокирует запрос, ответ которого содержит заголовок `Set-Cookie` со значением `foo`.
+* `||example.com^$header=set-cookie ` — блокирует запрос, ответ которого содержит заголовок `Set-Cookie` с любым значением.
+* `@@||example.com^$header=set-cookie:/foo\, bar\$/` разблокирует запросы, ответы которых содержат заголовок `Set-Cookie` со значением `foo, bar$`.
+* `@@||example.com^$header=set-cookie` — разблокирует запрос, ответ которого содержит заголовок `Set-Cookie` с любым значением.
 
-#### Restriction by content type {#content-type-modifiers}
+#### Ограничение по типу контента {#content-type-modifiers}
 
-There is a set of modifiers, which can be used to limit the rule's application area to certain type of content. These modifiers can also be combined to cover, for example, both images and scripts.
+Существует целый набор модификаторов, которые ограничивают область применения правила только определённым типом контента. Эти модификаторы можно комбинировать, чтобы, например, распространить правило одновременно и на картинки, и на скрипты.
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> There is a big difference in how AdGuard determines the content type on different platforms. For AdGuard Browser extension, content type for every request is provided by browser. AdGuard for Windows, Mac, Android use following method: first we try to determine the type of the request by the `Sec-Fetch-Dest` request header or by the filename extension. If the request is not blocked at this stage, the type will be determined using the `Content-Type` header at the beginning of the server response.
+> Существует большая разница в том, как AdGuard определяет тип контента на разных платформах. В случае Браузерного расширения AdGuard, тип контента для каждого запроса предоставляется самим браузером. В случае AdGuard для Windows, Mac и Android для определения используется следующая методика: сначала мы пытаемся определить тип запроса по заголовку запроса `Sec-Fetch-Dest` или по расширению имени файла. Если запрос не заблокирован на этом этапе, то тип запроса уточняется с использованием заголовка `Content-Type` в начале ответа, полученного от сервера.
 
-**Content type modifiers examples**
+**Примеры модификаторов типа контента**
 
-* `||example.org^$image` — corresponds to all images from `example.org`.
-* `||example.org^$script,stylesheet` — corresponds to all the scripts and styles from `example.org`.
-* `||example.org^$~image,~script,~stylesheet` — corresponds to all requests to `example.org` except for the images, scripts and styles.
+* `||example.org^$image` — соответствует всем картинкам с домена `example.org`.
+* `||example.org^$script,stylesheet` — соответствует всем скриптам и стилям с домена `example.org`.
+* `||example.org^$~image,~script,~stylesheet` — соответствует всем запросам к домену `example.org`, кроме картинок, скриптов и стилей.
 
 ##### **`$document`** {#document-modifier}
 
-The rule corresponds to the main frame document requests, i.e. HTML documents that are loaded in the browser tab. It does not match iframes, there is a [`$subdocument` modifier](#subdocument-modifier) for these.
+Правило соответствует запросам основного документа страницы, т.е. HTML-документа, который загружается во вкладке браузера. Оно не подходит для iframe, для них существует модификатор [`$subdocument`](#subdocument-modifier).
 
-By default, AdGuard does not block the requests that are loaded in the browser tab (e.g. "main frame bypass"). The idea is not to prevent pages from loading as the user clearly indicated that they want this page to be loaded. However, if the `$document` modifier is specified explicitly, AdGuard does not use that logic and prevents the page load. Instead, it responds with a "blocking page".
+По умолчанию AdGuard не блокирует запросы, которые загружаются во вкладке браузера (например, «обход основного фрейма»). Идея заключается в том, чтобы не препятствовать загрузке страниц, поскольку пользователь явно указал, что он хочет, чтобы эта страница была загружена. Однако, если использовать модификатор `$document`, то AdGuard не будет использовать эту логику и предотвратит загрузку страницы. Другими словами, заблокирует её.
 
-If this modifier is used with an exclusion rule (`@@`), it completely disables blocking on corresponding pages. It is equivalent to using `$elemhide`, `$content`, `$urlblock`, `$jsinject`, and `$extension` modifiers simultaneously.
+Если этот модификатор используется в правиле-исключении (`@@`), то оно полностью отключает блокировку на соответствующих страницах. Это равносильно одновременному использованию модификаторов `$elemhide`, `$content`, `$urlblock`, `$jsinject` и `$extension`.
 
 **Примеры**
 
-* `@@||example.com^$document` — completely disables filtering on all pages at `example.com` and all subdomains.
-* `@@||example.com^$document,~extension` — completely disables blocking on any pages at `example.com` and all subdomains, but continues to run userscripts there.
+* `@@||example.com^$document ` полностью отключает фильтрацию на всех страницах сайта `example.com` и всех его поддоменах.
+* `@@||example.com^$document,~extension` полностью отключает блокировку на любых страницах сайта `example.com` и всех его поддоменах, кроме применения пользовательских скриптов.
 
-* `||example.com^$document` — blocks HTML document request to `example.com` with a blocking page.
-* `||example.com^$document,redirect=noopframe` — redirects HTML document request to `example.com` to an empty html document.
-* `||example.com^$document,removeparam=test` — removes `test` query parameter from HTML document request to  `example.com`.
-* `||example.com^$document,replace=/test1/test2/` — replaces `test1` with `test2` in  HTML document request to `example.com`.
+* `||example.com^$document` блокирует запрос HTML-документа на `example.com` с помощью блокирующей страницы.
+* `||example.com^$document,redirect=noopframe` перенаправляет запрос HTML-документа сайта `example.com` на пустой HTML-документ.
+* `||example.com^$document,removeparam=test` удаляет параметр `test` из запроса HTML-документа к `example.com`.
+* `||example.com^$document,replace=/test1/test2/` заменяет `test1` на `test2` в запросе HTML-документа к `example.com`.
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> Blocking rules with `$document` modifier are not supported by AdGuard Content Blocker.
+> Правила блокировки с модификатором `$document` не поддерживаются в AdGuard Content Blocker.
 
 ##### **`$image`**
 
-The rule corresponds to images requests.
+Правило соответствует запросам к изображениям.
 
 ##### **`$stylesheet`**
 
-The rule corresponds to CSS files requests.
+Правило соответствует запросам к файлам CSS-стилей.
 
 ##### **`$script`** {#script-modifier}
 
-The rule corresponds to script requests, e.g. javascript, vbscript.
+Правило соответствет запросам к файлам скриптов, например, javascript или vbscript.
 
 ##### **`$object`**
 
-The rule corresponds to browser plugins resources, e.g. Java or Flash.
+Правило соответствует ресурсам плагинов браузера, например, Java или Flash.
 
 ##### **`$font`**
 
-The rule corresponds to requests for fonts, e.g. `.woff` filename extension.
+Правило соответствует запросам к файлам шрифтов (например, файлам с расширением `.woff`).
 
 ##### **`$media`**
 
-The rule corresponds to requests for media files — music and video, e.g. `.mp4` files.
+Правило соответствует запросам к медиафайлам — музыке и видео, например файлам `.mp4`.
 
 ##### **`$subdocument`** {#subdocument-modifier}
 
-The rule corresponds to requests for built-in pages — HTML tags `frame` and `iframe`.
+Правило соответствует запросам к встроенным страницам — HTML-теги `frame` и `iframe`.
 
 **Примеры**
 
-* `||example.com^$subdocument` blocks built-in page requests (`frame` and `iframe`) to `example.com` and all its subdomains anywhere.
-* `||example.com^$subdocument,domain=domain.com` blocks built-in page requests (`frame` и `iframe`) to `example.com` (and its subdomains) from `domain.com` and all its subdomains.
+* `||example.com^$subdocument` блокирует запросы встроенных страниц (`frame` и `iframe`) к `example.com` и всем его поддоменам.
+* `||example.com^$subdocument,domain=domain.com` блокирует запросы встроенных страниц (`frame` и `iframe`) к `example.com` и его поддоменам с `domain.com` и всех его поддоменов.
 
 ##### **`$ping`**
 
-The rule corresponds to requests caused by either `navigator.sendBeacon()` or the `ping` attribute on links.
+Правило соответствует запросам, вызванным атрибутом `navigator.sendBeacon()` или `ping` в ссылках.
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> AdGuard for Windows, Mac, Android often cannot accurately detect `navigator.sendBeacon()`. For reliable detection, use AdGuard Browser extension.
+> AdGuard для Windows, Mac и Android часто не может точно определить `navigator.sendBeacon()`. Для надёжного обнаружения используйте Браузерное расширение AdGuard.
 
 ##### **`$xmlhttprequest`**
 
-The rule applies only to ajax requests (requests sent via javascript object `XMLHttpRequest`).
+Правило применяется только к ajax-запросам (запросам, отправленным через объект JavaScript `XMLHttpRequest`).
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> AdGuard for Windows, Mac, Android often cannot accurately detect this type and sometimes detects it as [`$other`](#other-modifier) or [`$script`](#script-modifier). For reliable detection, use AdGuard Browser extension.
+> AdGuard для Windows, Mac и Android часто не может точно определить этот тип модификатора и иногда определяет его как [`$other`](#other-modifier) или [`$script`](#script-modifier). Для надёжного обнаружения используйте Браузерное расширение AdGuard.
 
 ##### **`$websocket`**
 
-The rule applies only to WebSocket connections.
+Правило применяется только к соединениям WebSocket.
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> AdGuard for Safari and iOS cannot properly apply rules with `websocket` modifier due to Safari limitations.
+> AdGuard для Safari и iOS не может корректно применять правила с модификатором `websocket` из-за ограничений Safari.
 
 ##### **`$webrtc`**
 
-> **Deprecation notice**
+> **Предупреждение об устаревании**
 > 
-> This modifier is deprecated and will be removed in the future. If you need to suppress WebRTC, consider using the `nowebrtc` [scriptlet](#scriptlets). The rule applies only to WebRTC connections.
+> Этот модификатор устарел, и в будущем его поддержка прекратится. Если вы хотите блокировать WebRTC, рассмотрите возможность использования [скриптлета](#scriptlets) `nowebrtc`. Правило применяется только к WebRTC-соединениям.
 
-> **Note**
+> **Примечание**
 > 
-> Blocking WebRTC can interfere with the work of some browser applications, such as messengers, chats, cinemas, or games.
+> Блокировка WebRTC может мешать работе некоторых браузерных приложений, таких как мессенджеры, чаты, кинотеатры, игры и др.
 
 **Примеры**
 
-* `||example.com^$webrtc,domain=example.org` blocks webRTC connections to `example.com` for `example.org`.
-* `@@*$webrtc,domain=example.org` disables the RTC wrapper for `example.org`.
+* `||example.com^$webrtc,domain=example.org` — это правило блокирует WebRTC-соединения c `example.com` для `example.org`.
+* `@@*$webrtc,domain=example.org` — это правило отключает оболочку RTC для `example.org`.
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> Rules with `$webrtc` modifier are still supported by AdGuard Browser extension.
+> Правила с модификатором `$webrtc` всё ещё поддерживаются Браузерным расширением AdGuard.
 
 ##### **`$other`** {#other-modifier}
 
-The rule applies to requests for which the type has not been determined or does not match the types listed above.
+Правило применяется к запросам, тип которых не был определён или не соответствует перечисленным выше типам.
 
-##### **`$object-subrequest` (deprecated)**
+##### **`$object-subrequest` (устаревший)**
 
-> **Deprecation notice**
+> **Предупреждение об устаревании**
 > 
-> `$object-subrequest` modifier is deprecated and no longer supported. Rules with it are considered as invalid. The rule corresponds to requests by browser plugins (it is usually Flash).
+> Модификатор `$object-subrequest` устарел и больше не поддерживается. Правила с ним не работают. Правило соответствует запросам плагинов браузера (обычно это Flash).
 
-#### Exception modifiers {#exception-modifiers}
+#### Модификаторы правил-исключений {#exception-modifiers}
 
-Exception rules disable the other basic rules for the addresses to which they correspond. They begin with a `@@` mark. All the basic modifiers listed above can be applied to them and they also have a few special modifiers.
+Правила-исключения отключают действие других базовых правил для адресов, которым они соответствуют. Они начинаются с маркера `@@`. Для таких правил работают все базовые модификаторы, перечисленные выше. Также добавляется несколько специальных модификаторов, которые будут описаны ниже.
 
-> **Visual representation**
+> **Визуальное представление**
 > 
-> We recommend to get acquainted with [this article](https://adblockplus.org/filter-cheatsheet#blocking), for better understanding of how exception rules should be made.
+> Рекомендуем ознакомиться с [этой статьёй](https://adblockplus.org/filter-cheatsheet#blocking), чтобы лучше понять, как должны строиться правила-исключения.
 
 ##### **`$elemhide`** {#elemhide-modifier}
 
-Disables any [cosmetic rules](#cosmetic-rules) on the pages matching the rule.
+Отключает любые [косметические правила](#cosmetic-rules) на страницах, подходящих под правило.
 
 **Примеры**
 
-* `@@||example.com^$elemhide` disables all cosmetic rules on pages at `example.com` and all subdomains.
+* `@@||example.com^$elemhide` отменяет все косметические правила для страниц на сайте `example.com` и на всех его поддоменах.
 
 ##### **`$content`**
 
-Disables [HTML filtering](#html-filtering-rules) and [`$replace`](#replace-modifier) rules on the pages that match the rule.
+Отключает правила [HTML-фильтрации](#html-filtering-rules) и [`$replace-правила`](#replace-modifier) на страницах, подходящих под правило.
 
 **Примеры**
 
-* `@@||example.com^$content` disables all HTML filtering rules and replace rules on pages at `example.com` and all its subdomains.
+* `@@|||example.com^$content` отключает все правила фильтрации HTML и правила замены на страницах `example.com` и всех его поддоменах.
 
 ##### **`$jsinject`**
 
-Forbids adding of javascript code to the page. You can read about javascript rules further.
+Запрещает добавление javascript-кода на страницу. О javascript -равилах речь пойдёт ниже.
 
 **Примеры**
 
-* `@@||example.com^$jsinject` disables javascript on pages at `example.com` and all subdomains.
+* `@@||example.com^$jsinject` отменяет все javascript-правила для страниц на сайте `example.com` и на всех его поддоменах.
 
 ##### **`$urlblock`**
 
-Disables blocking of all requests sent from the pages matching the rule.
+Отключает блокировку всех запросов, отправленных со страниц, подходящих под это правило.
 
 **Примеры**
 
-* `@@||example.com^$urlblock` — any requests sent from the pages at `example.com` and all subdomains are not going to be blocked.
+* `@@||example.com^$urlblock` — любые запросы, отправленные со страниц сайта `example.com` и всех его поддоменов, не будут блокироваться.
 
 ##### **`$extension`**
 
-Disables all userscripts on the pages matching this rule.
+Отключает все пользовательские скрипты на страницах, соответствующих этому правилу.
 
 **Примеры**
 
-* `@@||example.com^$extension` — userscripts will not work on all pages of the `example.com` website.
+* `@@||example.com^$extension` — пользовательские скрипты не будут работать на всех страницах сайта `example.com`.
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> Only AdGuard for Windows, Mac, Android are technically capable of using rules with `$extension` modifier.
+> Только AdGuard для Windows, Mac и Android имеют технические возможности для поддержки правил с модификатором `$extension`.
 
 ##### **`$stealth`**
 
-Disables the Stealth Mode module for all corresponding pages and requests.
+Отключает модуль «Антитрекинг»‎ для всех страниц и запросов, подходящих под это правило.
 
-**Syntax**
+**Синтаксис**
 
 ```
 $stealth [= opt1 [| opt2 [| opt3 [...]]]]
 ```
 
-`opt(i)` stand for certain Stealth Mode options disabled by the modifier. The modifier can contain any number of options (see below) or not contain them at all. In the latter case the modifier disables all the Stealth Mode features.
+Здесь `opt(i)` обозначают опции «Антитрекинг»‎, отключаемые правилами. Модификатор может содержать любое количество опций (см. ниже) или не содержать их вовсе. В последнем случае модификатор отключает модуль «Антитрекинг»‎ полностью.
 
-The list of the available modifier options:
+Список доступных опций модификатора:
 
-* `searchqueries` disables [**Hide your search queries**](../stealth-mode#searchqueries) option
-* `donottrack` disables [**Send Do-Not-Track header**](../stealth-mode#donottrack) option
-* `3p-cookie` disables [**Self-destructing third-party cookies**](../stealth-mode#3p-cookie) option
-* `1p-cookie` disables [**Self-destructing first-party cookies**](../stealth-mode.md#1p-cookie) option
-* `3p-cache` disables [**Disable cache for third-party requests**](../stealth-mode#3p-cache) option
-* `3p-auth` disables [**Block third-party Authorization header**](../stealth-mode#3p-auth) option
-* `webrtc` disables [**Block WebRTC**](../stealth-mode#webrtc) option
-* `push` disables [**Block Push API**](../stealth-mode#push) option
-* `location` disables [**Block Location API**](../stealth-mode#location) option
-* `flash` disables [**Block Flash**](../stealth-mode#flash) option
-* `java` disables [**Block Java**](../stealth-mode#java) option
-* `referrer` disables [**Hide Referrer from third parties**](../stealth-mode#miscellaneous) option
-* `useragent` disables [**Hide your User-Agent**](../stealth-mode#useragent) option
-* `ip` disables [**Hide your IP address**](../stealth-mode#ip) option
-* `xclientdata` disables [**Remove X-Client-Data header from HTTP requests**](../stealth-mode#xclientdata) option
-* `dpi` disables [**Protect from DPI**](../stealth-mode#dpi) option
+* `searchqueries` отключает опцию [**Скрыть поисковые запросы**](../stealth-mode#searchqueries)
+* `donottrack` отключает опцию [**Отправить заголовок Do-Not-Track**](../stealth-mode#donottrack)
+* `3p-cookie` отключает [**Самоуничтожающиеся сторонние cookie-файлы**](../stealth-mode#3p-cookie)
+* `1p-cookie` отключает [**Самоуничтожающиеся куки-файлы посещаемого сайта**](../stealth-mode.md#1p-cookie)
+* `3p-cache` отключает опцию [**Отключить кеш-память для сторонних запросов**](../stealth-mode#3p-cache)
+* `3p-auth` отключает опцию [**Блокировать сторонний заголовок Authorization**](../stealth-mode#3p-auth)
+* `webrtc` отключает опцию [**Блокировать WebRTC**](../stealth-mode#webrtc)
+* `push` отключает опцию [**Блокировать Push API**](../stealth-mode#push)
+* `location` отключает опцию [**Блокировать Location API**](../stealth-mode#location)
+* `flash` отключает опцию [**Блокировать Flash**](../stealth-mode#flash)
+* `java` отключает опцию [**Блокировать Java**](../stealth-mode#java)
+* `Referrer` отключает опцию[**Скрыть Referrer от третьих лиц**](../stealth-mode#miscellaneous)
+* `useragent` отключает опцию [**Скрыть User-Agent**](../stealth-mode#useragent)
+* `ip` отключает опцию [**Скрыть IP-адрес**](../stealth-mode#ip)
+* `xclientdata` отключает опцию [**Убрать заголовок X-Client-Data из HTTP-запросов**](../stealth-mode#xclientdata)
+* `dpi` отключает опцию [**Защищать от DPI**](../stealth-mode#dpi)
 
 **Примеры**
 
-* `@@||example.com^$stealth` disables Stealth Mode for `example.com` (and subdomains) requests, except for blocking cookies and hiding tracking parameters (see below).
-* `@@||domain.com^$script,stealth,domain=example.com` disables Stealth Mode only for script requests to `domain.com` (and its subdomains) on `example.com` and all its subdomains.
-* `@@||example.com^$stealth=3p-cookie|dpi` disables blocking third-party cookies and DPI fooling measures for `example.com`.
+* `@@||example.com^$stealth` полностью отключает модуль «Антитрекинг» для запросов к `example.com` и поддоменам, кроме блокировки куки и скрытия параметров отслеживания (см.ниже).
+* `@@||domain.com^$script,stealth,domain=example.com` отключает модуль «Антитрекинг» только для script-запросов к `domain.com` (и поддоменам) на `example.com` и всех его поддоменах.
+* `@@||example.com^$stealth=3p-cookie|dpi` отключает блокировку сторонних куки-файлов и меры защиты от DPI для запросов к `example.com`.
 
-> **Note**
+> **Примечание**
 > 
-> Blocking cookies and removing tracking parameters is achieved by using rules with [`$cookie`](#cookie-modifier) and [`$removeparam`](#removeparam-modifier) modifiers. Exception rules with only `$stealth` modifier will not do those things. If you want to completely disable all Stealth Mode features for a given domain, you need to include all three modifiers: `@@||example.org^$stealth,removeparam,cookie`
+> Блокировка куки и скрытие параметров отслеживания достигается использованием правил с модификаторами [``](#cookie-modifier)$cookie и [`$removeparam`](#removeparam-modifier). Правила-исключения только с модификатором `$stealth` не дадут желаемого результата. Если вы хотите полностью отключить все функции «Антитрекинга» для определённого домена, вам надо включить в правило все три модификатора:   `@@||example.org^$stealth,removeparam,cookie`
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> * Stealth Mode is available in AdGuard for Windows, Mac, Android, and AdGuard Browser extension. All other products will ignore the rules with `$stealth` modifier.
-> * `$stealth` modifier with specific options is supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.10 or later**.
+> * «Антитрекинг» доступен в AdGuard для Windows, Mac и Android и в Браузерном расширении AdGuard для Chrome, Firefox, Edge. Все остальные продукты будут игнорировать правила с модификатором `$stealth`.
+> * Модификатор `$stealth` со специальными опциями поддерживается в AdGuard для Windows, Mac и Android с **CoreLibs версии 1.10 или выше**.
 
-##### Generic rules
+##### Generic-правила
 
-Before we can proceed to the next modifiers, we have to make a definition of _generic rules_. The rule is generic if it is not limited to specific domains. Wildcard character `*` is supported as well.
+Перед тем, как перейти к описанию следующих модификаторов, необходимо ввести определение _«generic-правил»_. Правило относится к generic-правилам, если его действие не ограничено конкретными доменами. Также поддерживается wildcard-символ `*`.
 
-For example, these rules are generic:
+Например, это generic-правила:
 ```
 ###banner
 *###banner
@@ -542,7 +542,7 @@ For example, these rules are generic:
 ||domain.com^$domain=~example.com
 ```
 
-And these are not:
+А это уже не generic-правила:
 ```
 domain.com###banner
 ||domain.com^$domain=example.com
@@ -550,126 +550,126 @@ domain.com###banner
 
 ###### **`$generichide`** {#generichide-modifier}
 
-Disables all generic [cosmetic rules](#cosmetic-rules) on pages that correspond to exception rule.
+Отключает все [косметические правила](#cosmetic-rules) generic на страницах, соответствующих правилу-исключению.
 
 **Примеры**
 
-* `@@||example.com^generichide` — disables generic cosmetic rules on any pages at `example.com` and all subdomains.
+* `@@||example.com^generichide` отключает косметические правила generic на страницах сайта `example.com` и всех его поддоменах.
 
 ###### **`$genericblock`**
 
-Disables generic basic rules on pages that correspond to exception rule.
+Отключает все базовые правила generic на страницах, подходящих под правило-исключение.
 
 **Примеры**
 
-* `@@||example.com^$genericblock` — disables generic basic rules on any pages at `example.com` and all subdomains.
+* `@@||example.com^$genericblock` отключает базовые правила generic на любых страницах `example.com` и всех поддоменах.
 
 ##### **`specifichide`**
 
-Has an opposite effect to [`$generichide`](#generichide-modifier). Disables all specific element hiding and CSS rules, but not general ones.
+Имеет эффект, противоположный [`$generichide`](#generichide-modifier). Отключает все specific-правила скрытия элементов и CSS-правила, но не отключает general-правила.
 
 **Примеры**
 
-* `@@||example.org^$specifichide` — will disable `example.org##.banner` but not `##.banner`.
+* `@@||example.org^$specifichide` — отключит `example.org##.banner`, но не `##.banner`.
 
-> All cosmetic rules — not just specific ones — can be disabled by [`$elemhide` modifier](#elemhide-modifier).
+> Все косметические правила, а не только specific, можно отключить модификатором [`$elemhide`](#elemhide-modifier).
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> Rules with `$specifichide` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard Browser extension for Chrome, Firefox, Edge.
+> Правила с модификатором `$specifichide` поддерживаются в AdGuard для Windows, Mac и Android и Браузерном расширении AdGuard для Chrome, Firefox, Edge.
 
-### Advanced capabilities
+### Расширенные возможности
 
-These modifiers are able to completely change the behaviour of basic rules.
+Модификаторы, описанные в этом разделе, полностью меняют поведение базовых правил.
 
 #### **`$important`** {#important-modifier}
 
-The `$important` modifier applied to a rule increases its priority over any other rule without `$important` modifier. Even over basic exception rules.
+Модификатор `$important`, применённый к правилу, повышает его приоритет относительно любого другого правила без модификатора `$important`. Даже относительно базовых правил-исключений.
 
 **Примеры**
 
 ```
-! blocking rule will block all requests despite of the exception rule
+! блокирующее правило заблокирует все запросы, несмотря на правило-исключение
 ||example.org^$important
 @@||example.org^
 ```
 
 ```
-! if the exception rule also has `$important` modifier it will prevail, so no requests will not be blocked
+! если правило-исключение тоже содержит модификатор `$important`, его приоритет будет выше, и запросы не будут заблокированы
 ||example.org^$important
 @@||example.org^$important
 ```
 
 ```
-! if a document-level exception rule is applied to the document, the `$important` modifier will be ignored;
-! so if a request to `example.org` is sent from the `test.org` domain, the blocking rule will not be applied despite it has the `$important` modifier
+! если применяется правило-исключение на уровне документа, модификатор `$important` будет проигнорирован;
+! поэтому, если запрос к `example.org` отправлен с домена `test.org`, блокирующее правило не будет применено, несмотря на наличие модификатора `$important`
 ||example.org^$important
 @@||test.org^$document
 ```
 
 #### **`$badfilter`**
 
-The rules with the `$badfilter` modifier disable other basic rules to which they refer. It means that the text of the disabled rule should match the text of the `$badfilter` rule (without the `$badfilter` modifier).
+Правила, содержащие модификатор `$badfilter`, отключают другие базовые правила, на которые они ссылаются. Это означает, что текст отключённого правила должен соответствовать тексту `$badfilter`-правила (за исключением самого модификатора `$badfilter`).
 
 **Примеры**
 
-* `||example.com$badfilter` disables `||example.com`
-* `||example.com$image,badfilter` disables `||example.com$image`
-* `@@||example.com$badfilter` disables `@@||example.com`
-* `||example.com$domain=domain.com,badfilter` disables `||example.com$domain=domain.com`
+* `||example.com$badfilter` отключает `||example.com`
+* `||example.com$image,badfilter` отключает `||example.com$image`
+* `@@||example.com$badfilter` отключает `@@||example.com`
+* `||example.com$domain=domain.com,badfilter` отключает `||example.com$domain=domain.com`
 
-Rules with `$badfilter` modifier can disable other basic rules for specific domains if they fulfill the following conditions:
-1. The rule has a `$domain` modifier.
-2. The rule does not have a negated domain `~` in `$domain` modifier value.
+Правила с модификатором `$badfilter` могут отключать другие базовые правила для определённых доменов, если они соответствуют следующим условиям:
+1. В правиле есть модификатор `$domain`.
+2. Правило не имеет отрицания домена `~` в значении модификатора `$domain`.
 
-In that case, the `$badfilter` rule will disable the corresponding rule for domains specified in both the `$badfilter` and basic rules. Please note that [wildcard-TLD logic](#wildcard-for-tld) works here as well.
+В этом случае, правило с `$badfilter` отключит соответствующее базовое правило для доменов, указанных как в правиле с `$badfilter`, так и в базовом правиле. Обратите внимание, что [логика wildcard для доменов верхнего уровня (TLD)](#wildcard-for-tld) здесь также применима.
 
 **Примеры**
 
-* `/some$domain=example.com|example.org|example.io` is disabled for `example.com` by `/some$domain=example.com,badfilter`
-* `/some$domain=example.com|example.org|example.io` is disabled for `example.com` and `example.org` by `/some$domain=example.com|example.org,badfilter`
-* `/some$domain=example.com|example.org` and `/some$domain=example.io` are disabled completely by `/some$domain=example.com|example.org|example.io,badfilter`
-* `/some$domain=example.com|example.org|example.io` is disabled completely by `/some$domain=example.*,badfilter`
-* `/some$domain=example.*` is disabled for `example.com` and `example.org` by `/some$domain=example.com|example.org,badfilter`
-* `/some$domain=example.com|example.org|example.io` is NOT disabled for `example.com` by `/some$domain=example.com|~example.org,badfilter` because the value of `$domain` modifier contains a negated domain
+* `/some$domain=example.com|example.org|example.io` отключено для `example.com` правилом `/some$domain=example.com,badfilter`
+* `/some$domain=example.com|example.org|example.io` отключено для `example.com` и `example.org` правилом `/some$domain=example.com|example.org,badfilter`
+* `/some$domain=example.com|example.org` и `/some$domain=example.io` полностью отключены правилом `/some$domain=example.com|example.org|example.io,badfilter`
+* `/some$domain=example.com|example.org|example.io` полностью отключено правилом `/some$domain=example.*,badfilter`
+* `/some$domain=example.*` отключено для `example.com` и `example.org` правилом `/some$domain=example.com|example.org,badfilter`
+* `/some$domain=example.com|example.org|example.io` НЕ отключено для `example.com` правилом `/some$domain=example.com|~example.org,badfilter`, поскольку значение модификатора `$domain` содержит отрицание домена
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> Rules with `$badfilter` modifier are not supported by AdGuard Content Blocker.
+> Правила с модификатором `$badfilter` не поддерживаются в AdGuard Content Blocker.
 
 #### **`$replace`** {#replace-modifier}
 
-This modifier completely changes the rule behavior. If it is applied, the rule will not block the request. The response is going to be modified instead.
+Этот модификатор полностью меняет поведение страницы. Когда он применяется, правило не блокирует запрос. Вместо этого ответ будет модифицирован.
 
-> You will need some knowledge of regular expressions to use `$replace` modifier.
+> Вам потребуется знание регулярных выражений, чтобы использовать модификатор `$replace`.
 
 **Функции**
 
-* `$replace` rules apply to any text response, but will not apply to binary (`media`, `image`, `object`, etc).
-* `$replace` rules do not apply if the size of the original response is more than 3MB.
-* `$replace` rules have a higher priority than other basic rules (**including** exception rules). So if a request corresponds to two different rules one of which has the `$replace` modifier, this rule will be applied.
-* Document-level exception rules with `$content` or `$document` modifiers do disable `$replace` rules for requests matching them.
-* Other document-level exception rules (`$generichide`, `$elemhide` or `$jsinject` modifiers) are applied alongside `$replace` rules. It means that you can modify the page content with a `$replace` rule and disable cosmetic rules there at the same time.
+* Правила `$replace` применяются к любому текстовому ответу, но не будут применяться к binary (`media`, `image`, `object` и т. д.).
+* Правила `$replace` не применяются, если размер исходного ответа превышает 3 МБ.
+* Правила `$replace` обладают более высоким приоритетом, чем другие базовые правила (**включая** правила-исключения). Так что, если запрос соответствует двум различным правилам, одно из которых имеет модификатор `$replace`, применится именно это правило.
+* Правила-исключения уровня document с модификаторами `$content` или `$document` отменяют срабатывание правил `$replace`, даже если запрос им соответствует.
+* Прочие правила-исключения уровня document (модификаторы `$generichide`, `$elemhide` или `$jsinject`) применяются вместе с правилами `$replace`. Это означает, что вы можете изменять содержимое страницы при помощи правила `$replace` и одновременно отменять косметические правила.
 
-> `$replace` value can be empty in the case of exception rules. See examples section for further information.
+> Значение `$replace` может быть пустым в случае правил-исключений. Более подробную информацию вы найдёте в разделе с примерами.
 
-> **Multiple rules matching a single request**
+> **Несколько правил, соответствующих одному запросу**
 > 
-> In case if multiple `$replace` rules match a single request, we will apply each of them. **The order is defined alphabetically.**
+> В случае, когда несколько правил `$replace` соответствуют одному запросу, мы применим каждое из них. **Правила будут применяться в алфавитном порядке.**
 
-**Syntax**
+**Синтаксис**
 
-In general, `$replace` syntax is similar to replacement with regular expressions [in Perl](http://perldoc.perl.org/perlrequick.html#Search-and-replace).
+В целом синтаксис `$replace` аналогичен замене регулярными выражениями [в Perl](http://perldoc.perl.org/perlrequick.html#Search-and-replace).
 
 ```
 replace = "/" regexp "/" replacement "/" modifiers
 ```
 
-* **`regexp`** — a regular expression.
-* **`replacement`** — a string that will be used to replace the string corresponding to `regexp`.
-* **`modifiers`** — a regular expression flags. For example, `i` — insensitive search, or `s` — single-line mode.
+* **r`egexp`** — регулярное выражение.
+* **`replacement`** — строка, которая будет использована для замены строки в соответствии с `regexp`.
+* **`modifiers `** — флаги регулярных выражений. Например, `i` — поиск без учёта регистра, или `s` — режим одной строки.
 
-In the `$replace` value, two characters must be escaped: comma (`,`) and (`$`). Use (`\`) for it. For example, an escaped comma looks like this: `\,`.
+В значении `$replace` необходимо экранировать два символа: запятую (`,`) и доллар (`$`). Для экранирования используйте (`\`). Например, экранированная запятая будет выглядеть так: `\,`.
 
 **Примеры**
 
@@ -677,74 +677,74 @@ In the `$replace` value, two characters must be escaped: comma (`,`) and (`$`). 
 ||example.org^$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<\/VAST>/i
 ```
 
-There are three parts in this rule:
-* `regexp` - `(<VAST(.|\s)*?>)(.|\s)*<\/VAST>`;
-* `replacement` — `\$1<\/VAST>` where `$` is escaped;
-* `modifiers` — `i` for insensitive search.
+У этого правила три части:
+* `Регулярное выражение` —`(<VAST(.|\s)*?>)(.|\s)*<\/VAST>`;
+* `Замена` — `\$1<\/VAST>` где `$` экранируется;
+* `Флаги регулярного выражения` — `i` для поиска без учёта регистра.
 
-You can see how this rule works here: http://regexr.com/3cesk
+Здесь вы можете увидеть, как работает это правило: http://regexr.com/3cesk
 
-**Multiple `$replace` rules**
+**Правила `$replace`**
 
 1. `||example.org^$replace=/X/Y/`
 2. `||example.org^$replace=/Z/Y/`
 3. `@@||example.org/page/*$replace=/Z/Y/`
 
-* Both rule 1 and 2 will be applied to all requests sent to `example.org`.
-* Rule 2 is disabled for requests matching `||example.org/page/`, **but rule 1 still works!**.
+* Правила 1 и 2 будут применены ко всем запросам, отправленным к `example.org`.
+* Правило 2 отключено для запросов, соответствующих `||example.org/page/`, **но правило 1 при этом всё равно работает**!
 
-**Disabling `$replace` rules**
+**Отключение правил `$replace`**
 
-* `@@||example.org^$replace` will disable all `$replace` rules matching `||example.org^`.
-* `@@||example.org^$document` or `@@||example.org^$content` will disable all `$replace` rules **originated from** pages of `example.org` **including the page itself**.
+* `@@||example.org^$replace` отключит все правила `$replace`, соответствующие `||example.org^`.
+* `@@||example.org^$document` или `@@||example.org^$content` отключит все правила `$replace`, **исходящие** со страниц домена `example.org`, **включая саму эту страницу**.
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> Rules with `$replace` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard Browser extension for Firefox. Such rules do not work in extensions for other browsers because they are unable to modify content on the network level.
-
-> **Restrictions**
-> 
-> Rules with `$replace` modifier can be used **only in trusted filters**. This category includes your own **User rules** and all the filters created by AdGuard Team.
-
-#### **`$csp`** {#csp-modifier}
-
-This modifier completely changes the rule behavior. If it is applied to a rule, it will not block the matching request. The response headers are going to be modified instead.
-
-> In order to use this type of rules, it is required to have the basic understanding of the [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) security layer.
-
-For the requests matching a `$csp` rule, we will strengthen response security policy by enhancing the content security policy, similar to the content security policy of the `$csp` modifier contents. `$csp` rules are applied independently from any other rule type. Other basic rules have no influence on it **save for document-level exceptions** (see the examples section below).
-
-> **Multiple rules matching a single request**
-> 
-> In case if multiple `$csp` rules match a single request, we will apply each of them.
-
-**Syntax**
-
-`$csp` value syntax is similar to the Content Security Policy header syntax.
-
-`$csp` value can be empty in the case of exception rules. See examples section below.
+> Правила с модификатором `$replace` поддерживаются в AdGuard для Windows, Mac, Android и Браузерном расширении AdGuard для Firefox. Такие правила не работают в расширениях для других браузеров, потому что они не могут модифицировать содержимое страниц на сетевом уровне.
 
 > **Ограничения**
 > 
-> 1. There are a few characters forbidden in the `$csp` value: `,`, `$`.
-> 2. `$csp` rules support limited list of modifiers: `$domain`, `$important`, `$subdocument`.
-> 3. Rules with `report-*` directives are considered invalid.
+> Правила с модификатором `$replace` могут быть использованы **только в доверенных фильтрах**. Эта категория включает в себя **Пользовательские правила**, а также все фильтры, разработанные командой AdGuard.
+
+#### **`$csp`** {#csp-modifier}
+
+Этот модификатор полностью меняет поведение правила. Когда он применяется, правило не блокирует запрос. Вместо этого будут изменены заголовки ответа.
+
+> Чтобы использовать правила этого типа, необходимо базовое понимание слоя безопасности [Политики Безопасности Контента](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy).
+
+Для запросов, подходящих под `$csp`-правило, мы усилим политику безопасности ответа, добавив дополнительную политику, равнозначную содержимому модификатора `$csp`. Правила `$csp` применяются независимо от правил любого другого типа. Прочие базовые правила никак на них не влияют, **кроме правил исключений уровня document** (см. примеры ниже).
+
+> **Несколько правил, соответствующих одному запросу**
+> 
+> В случае, когда несколько правил `$csp` соответствуют одному запросу, мы применим каждое из них.
+
+**Синтаксис**
+
+Синтаксис значений `$csp` похож на синтаксис заголовков Политики Безопасности Контента.
+
+Значение `$csp` может быть пустым в случае правил-исключений. См. примеры ниже.
+
+> **Ограничения**
+> 
+> 1. Некоторые символы запрещены в значении `$csp`: `,`, `$`.
+> 2. `$csp`-правила поддерживают ограниченный список модификаторов: `$domain`, `$important`, `$subdocument`.
+> 3. Правила с директивами `report-*` считаются некорректными.
 
 **Примеры**
 
-* `||example.org^$csp=frame-src 'none'` blocks all frames on example.org and its subdomains.
-* `@@||example.org/page/*$csp=frame-src 'none'` disables all rules with the `$csp` modifier exactly matching `frame-src 'none'` on all the pages matching the rule pattern. For instance, the rule above.
-* `@@||example.org/page/*$csp` disables all the `$csp` rules on all the pages matching the rule pattern.
-* `||example.org^$csp=script-src 'self' 'unsafe-eval' http: https:` disables inline scripts on all the pages matching the rule pattern.
-* `@@||example.org^$document` or `@@||example.org^$urlblock` disables all the `$csp` rules on all the pages matching the rule pattern.
+* `||example.org^$csp=frame-src 'none'` запрещает все фреймы на example.org и его поддоменах.
+* `@@||example.org/page/*$csp=frame-src 'none'` отключает все правила с модификатором `$csp`, в точности соответствующим `frame-src 'none'` на всех страницах, подходящих под паттерн правила. Например, правило выше.
+* `@@||example.org/page/*$csp` отключает все `$csp`-правила на всех страницах, подходящих под паттерн правила.
+* `||example.org^$csp=script-src 'self' 'unsafe-eval' http: https:` отключает инлайн-скрипты на всех страницах, подходящих под паттерн правила.
+* `@@||example.org^$document` или `@@||example.org^$urlblock` отключает все `$csp`-правила на всех страницах, подходящих под паттерн правила.
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> Rules with `$csp` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
+> Правила с модификатором `$csp` не поддерживаются в AdGuard Content Blocker, AdGuard для iOS и для Safari.
 
 ##### **`$all`**
 
-`$all` modifier is made of [`$document`](#document-modifier), [`$popup`](#popup-modifier), [`$csp`](#csp-modifier) modifiers. E.g. rule `||example.org^$all` is converting into such set of rules:
+Модификатор `$all` состоит из модификаторов [`$document`](#document-modifier), [`$popup`](#popup-modifier), [`$csp`](#csp-modifier). Например, правило `||example.org^$all` конвертируется в такой набор правил:
 ```
 ||example.org^$document,popup
 ||example.org^$csp=script-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
@@ -754,136 +754,136 @@ For the requests matching a `$csp` rule, we will strengthen response security po
 
 #### **`$cookie`** {#cookie-modifier}
 
-The `$cookie` modifier completely changes rule behavior. Instead of blocking a request, this modifier makes us suppress or modify the `Cookie` and `Set-Cookie` headers.
+Модификатор `$cookie` полностью меняет поведение правила. Вместо того, чтобы блокировать запрос, этот модификатор позволяет нам блокировать или изменять заголовки `Cookie` или `Set-Cookie`.
 
-> **Multiple rules matching a single request**
+> **Несколько правил, соответствующих одному запросу**
 > 
-> In case if multiple `$cookie` rules match a single request, we will apply each of them one by one.
+> В случае, когда несколько правил `$cookie` соответствуют одному запросу, мы применим каждое из них по очереди.
 
-**Syntax**
+**Синтаксис**
 
 ```
 $cookie [= name[; maxAge = seconds [; sameSite = strategy ]]]
 ```
-where:
-  * **`name`** — optional, string or regular expression to match cookie name.
-  * **`seconds`** — number of seconds for current time to offset the expiration date of cookie.
-  * **`strategy`** — string for [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite) strategy to make cookie use.
+где:
+  * **`name`** — опционально, строка или регулярное выражение для сопоставления с именем куки.
+  * **`seconds`** — количество секунд, на которое сместится истечение срока действия куки.
+  * **`strategy`** — строка для стратегии [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite) для использования куки.
 
-For example
+Например
 ```
 ||example.org^$cookie=NAME;maxAge=3600;sameSite=lax
 ```
-every time AdGuard encounters a cookie called `NAME` in a request to `example.org`, it will do the following:
-  * Set its expiration date to current time plus `3600` seconds
-  * Makes the cookie use [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite) "lax" strategy.
+каждый раз, когда AdGuard встречает куки с именем `NAME` в запросе к `example.org`, он будет делать следующее:
+  * Установит дату истечения срока хранения на текущее время плюс `3600` секунд
+  * Позволяет куки использовать стратегию [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite).
 
-> **Escaping special characters**
+> **Экранирование специальных символов**
 > 
-> If regular expression `name` is used for matching, two characters must be escaped: comma `,` and dollar sign `$`. Use  backslash `\` escape each of them. For example, escaped comma looks like this: `\,`.
+> Если для сопоставления используется регулярное выражение `name`, необходимо экранировать два символа: запятую `,` и знак доллара `$`. Используйте для этого обратную косую черту `\`. Например, экранированная запятая будет выглядеть так: `\,`.
 
 **Примеры**
 
-* `||example.org^$cookie` blocks **all** cookies set by `example.org`; this is an equivalent to setting `maxAge=0`
-* `$cookie=__cfduid` blocks CloudFlare cookie everywhere
-* `$cookie=/__utm[a-z]/` blocks Google Analytics cookies everywhere
-* `||facebook.com^$third-party,cookie=c_user` prevents Facebook from tracking you even if you are logged in
+* `||example.org^$cookie` блокирует **все** куки, установленные `example.org`; это эквивалентно установке `maxAge=0`
+* `$cookie=__cfduid` блокирует куки CloudFlare везде
+* `$cookie=/__utm[a-z]/` блокирует куки Google Analytics везде
+* `||facebook.com^$third-party,cookie=c_user` не позволяет Facebook отслеживать вас, даже если вы вошли в систему
 
-`$cookie` rules are not affected by regular exception rules (`@@`) unless it is a `$document` exception. In order to disable a `$cookie` rule, the exception rule should also have a `$cookie` modifier. How it works:
+На правила `$cookie` не влияют обычные правила исключения (`@@`), только если это не исключение `$document`. Чтобы отключить правило `$cookie`, у правила-исключения также должен быть модификатор `$cookie`. Как это работает:
 
-* `@@||example.org^$cookie` unblocks all cookies set by `example.org`
-* `@@||example.org^$cookie=concept` unblocks a single cookie named `concept`
-* `@@||example.org^$cookie=/^_ga_/` unblocks every cookie that matches the regular expression
+* `@@||example.org^$cookie` разблокирует все куки-файлы, установленные `example.org`
+* `@@||example.org^$cookie=concept` разблокирует один куки-файл с именем `concept`
+* `@@||example.org^$cookie=/^_ga_/` разблокирует все куки, соответствующие регулярному выражению
 
 > **Ограничения**
 > 
-> `$cookie` rules support a limited list of modifiers: `$domain`, `$~domain`, `$important`, `$third-party`, `$~third-party`.
+> Правила `$cookie` поддерживают ограниченный список модификаторов: `$domain`, `$~domain`, `$important`, `$third-party`, `$~third-party`.
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> Rules with `$cookie` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
+> Правила с модификатором `$cookie` не поддерживаются в AdGuard Content Blocker, AdGuard для iOS и для Safari.
 
 #### **`$network`** {#network-modifier}
 
-This is basically a Firewall-kind of rules allowing to fully block or unblock access to a specified remote address.
+По сути, это правила типа Firewall, позволяющие полностью блокировать или разблокировать доступ к указанному удалённому адресу.
 
-1. `$network` rules match **IP addresses only**! You cannot use it to block or unblock access to a domain.
-2. To match an IPv6 address, you have to use the collapsed syntax, e.g. use `[2001:4860:4860::8888]$network` instead of `[2001:4860:4860:0:0:0:0:8888]$network`.
-3. An allowlist `$network` rule makes AdGuard bypass data to the matching endpoint, e.g. there will be no further filtering at all.
-4. If the IP part starts and ends with `/` character, it is treated as a regular expression.
+1. Правила `$network` соответствуют **только IP-адресам**! Вы не можете использовать их, чтобы блокировать или разблокировать доступ к домену.
+2. Чтобы сопоставить адрес IPv6, вы должны использовать сжатый синтаксис, например, использовать `[2001:4860:4860::8888]$network` вместо `[2001:4860:4860:0:0:0:0:8888]$network`.
+3. Правило белого списка `$network` заставляет AdGuard обходить данные до соответствующей конечной точки, т. е. никакой дальнейшей фильтрации не будет.
+4. Если часть IP начинается и заканчивается символом `/`, она рассматривается как регулярное выражение.
 
-> We recommend to get acquainted with this [article](#regexp-support), for better understanding of regular expressions.
+> Рекомендуем ознакомиться с [этой статьёй](#regexp-support) для лучшего понимания регулярных выражений.
 
 **Примеры**
 
-* `174.129.166.49:3478^$network` blocks access to `174.129.166.49:3478` (but not to `174.129.166.49:34788`).
-* `[2001:4860:4860::8888]:443^$network` blocks access to `[2001:4860:4860::8888]:443`.
-* `174.129.166.49$network` blocks access to `174.129.166.49:*`.
-* `@@174.129.166.49$network` makes AdGuard bypass data to the endpoint. No other rules will be applied.
-* `/.+:3[0-9]{4}/$network` blocks access to any port from 30000 to 39999.
-* `/8.8.8.(:?8|4)/$network` blocks access to both `8.8.8.8` and `8.8.8.4`.
+* `174.129.166.49:3478^$network` блокирует доступ к `174.129.166.49:3478` (но не к `174.129.166.49:34788`).
+* `[2001:4860:4860::8888]:443^$network` блокирует доступ к `[2001:4860:4860::8888]:443`.
+* `174.129.166.49$network` блокирует доступ к `174.129.166.49:*`.
+* `@@174.129.166.49$network` заставляет AdGuard направлять трафик в конечную точку. Никакие другие правила применяться не будут.
+* `/.+:3[0-9]{4}/$network` блокирует доступ к диапазанону портов 30000–39999.
+* `/8.8.8.(:?8|4)/$network` блокирует доступ к `8.8.8.8` и к `8.8.8.4`.
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> Only AdGuard for Windows, Mac, Android are technically capable of using rules with `$network` modifier.
+> Только AdGuard для Windows, Mac и Android имеют технические возможности для поддержки правил с модификатором `$network`.
 
 #### **`$app`** {#app-modifier}
 
-This modifier lets you narrow the rule coverage down to a specific application (or a list of applications). This might be not too important on Windows and Mac, but this is very important on Mobile where some of the filtering rules must be application-specific.
+Этот модификатор ограничивает действие правила до конкретного приложения (или списка приложений). Это не так важно на Windows или Mac, как на мобильных устройствах, где для корректной работы некоторые правила должны быть специфичны для конкретных приложений.
 
-* Android — use the app package name, e.g. `org.example.app`.
-* Windows — use the process name, e.g. `chrome.exe`.
-* Mac — use the bundle ID or the process name, e.g. `com.google.Chrome`.
+* Android — используйте имя пакета приложения, например, `org.example.app`.
+* Windows — используйте имя процесса, например, `chrome.exe`.
+* Mac — используйте bundle ID или имя процесса, например, `com.google.Chrome`.
 
-> For Mac, you can find out the bundle ID or the process name of the app by viewing the respective request details in the Filtering log.
+> На Mac вы можете найти bundle ID или имя процесса интересующего вас приложения в деталях соответствующих запросов в Журнале фильтрации.
 
 **Примеры**
 
-* `||baddomain.com^$app=org.example.app` — a rule to block requests that match the specified mask, and are sent from the `org.example.app` Android app.
-* `||baddomain.com^$app=org.example.app1|org.example.app2` — the same rule, but it works for both `org.example.app1` and `org.example.app2` apps.
+* `||baddomain.com^$app=org.example.app` — правило для блокирования запросов, подходящих под заданную маску и посылаемых Android-приложением `org.example.app`.
+* `||baddomain.com^$app=org.example.app1|org.example.app2` — аналогичное правило, но оно работает как для приложения `org.example.app1`, так и для `org.example.app2`.
 
-If you want the rule not to be applied to certain apps, start the app name with `~` sign.
+Если вы хотите, чтобы правило не применялось к определённым приложениям, предваряйте название приложения знаком `~`.
 
-* `||baddomain.com^$app=~org.example.app` — a rule to block requests that match the specified mask, and are sent from any app save for the `org.example.app`.
-* `||baddomain.com^$app=~org.example.app1|~org.example.app2` — same as above, but now two apps are excluded: `org.example.app1` and `org.example.app2`.
+* `||baddomain.com^$app=org.example.app` — правило для блокирования запросов, подходящих под заданную маску и посылаемых любым приложением, кроме `org.example.app`.
+* `||baddomain.com^$app=~org.example.app1|~org.example.app2` — аналогично, но в исключениях два приложения: `org.example.app1` и `org.example.app2`.
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> Only AdGuard for Windows, Mac, Android are technically capable of using rules with `$app` modifier.
+> Только AdGuard для Windows, Mac и Android имеют технические возможности для поддержки правил с модификатором `$app`.
 
 #### **`$redirect`** {#redirect-modifier}
 
-AdGuard is able to redirect web requests to a local "resource".
+AdGuard способен перенаправлять веб-запросы на локальный «ресурс».
 
-**Syntax**
+**Синтаксис**
 
-AdGuard uses the same filtering rules syntax as uBlock Origin. Also, it is compatible with ABP `$rewrite=abp-resource` modifier.
+AdGuard использует тот же синтаксис правил фильтрации, что и uBlock Origin. Также он совместим с модификатором ABP `$rewrite=abp-resource`.
 
-`$redirect` is a modifier for the [basic filtering rules](#basic-rules) so rules with this modifier support all other basic modifiers like `$domain`, `$third-party`, `$script`, etc.
+`$redirect` — это модификатор для [базовых правил фильтрации](#basic-rules), поэтому правила с этим модификатором поддерживают остальные базовые модификаторы, такие как `$domain`, `$third-party`, `$script` и т. д.
 
-> The value of the `$redirect` modifier must be the name of the resource that will be used for redirection.
+> Значение модификатора `$redirect` должно быть именем ресурса, который будет использован для переадресации.
 
-> `$redirect` rules' priority is higher than the regular basic blocking rules' priority. This means that if there is a basic blocking rule (even with `$important` modifier), `$redirect` rule will prevail over it. If there is an allowlist (`@@`) rule matching the same URL, it will disable redirecting as well (unless the `$redirect` rule is also marked as `$important`).
+> Приоритет правил `$redirect` выше, чем у обычных базовых правил блокировки. Это означает, что, если есть базовое правило (даже с модификатором `$important`), `$redirect` будет иметь над ним преимущество. Если есть белый список (`@@`) с совпадающим URL, он также заблокирует переадресацию (только если правило `$redirect` также не отмечено как `$important`).
 
-##### Disabling `$redirect` rules
+##### Отключение правил `$redirect`
 
 
-* `||example.org/script.js$script,redirect=noopjs` — this rule redirects all requests to `example.org/script.js` to the resource named `noopjs`.
-* `||example.org/test.mp4$media,redirect=noopmp4-1s` — this rule redirects all requests to `example.org/test.mp4` to the resource named `noopmp4-1s`.
-* `@@||example.org^$redirect` will disable all `$redirect` rules for URLs that match `||example.org^`.
-* `@@||example.org^$redirect=nooptext` will disable all rules with `$redirect=nooptext` for any request that matches `||example.org^`.
+* `||example.org/script.js$script,redirect=noopjs` — это правило перенаправляет все запросы к `example.org/script.js` на ресурс с именем `noopjs`.
+* `||example.org/test.mp4$media,redirect=noopmp4-1s` — это правило перенаправляет все запросы к `example.org/script.js` на ресурс с именем `noopmp4-1s`.
+* `@@||example.org^$redirect` отключит все правила `$redirect` для URL-адресов, соответствующих `||example.org^`.
+* `@@||example.org^$redirect=nooptext` отключит все правила с `$redirect=nooptext` для любого запроса, который соответствует `||example.org^`.
 
-> More information on redirects and their usage is available [on GitHub](https://github.com/AdguardTeam/Scriptlets#redirect-resources).
+> Больше информации о редиректах и их использовании доступно [на GitHub](https://github.com/AdguardTeam/Scriptlets#redirect-resources).
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> Rules with `$redirect` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
+> Правила с модификатором `$redirect` не поддерживаются в AdGuard Content Blocker, AdGuard для iOS и для Safari.
 
-#### **`$redirect-rule`** {#redirect-rule-modifier}
+#### **`Правило $redirect`** {#redirect-rule-modifier}
 
-This is basically an alias to [`$redirect`](#redirect-modifier) since it has the same "redirection" values and the logic is almost similar. The difference is that `$redirect-rule` is applied only in the case when the target request is blocked by a different basic rule.
+По сути это другое имя [`$redirect`](#redirect-modifier), поскольку он имеет те же значения «перенаправления» и почти аналогичную логику. Разница в том, что `правило $redirect` применяется только в том случае, если целевой запрос заблокирован другим базовым правилом.
 
-> Negating `$redirect-rule` works exactly the same way as for regular `$redirect` rules. Even more than that, `@@||example.org^$redirect` will negate both `$redirect` and `$redirect-rule` rules.
+> Отключение `$redirect-rule` работает точно так же, как для обычных правил `$redirect`. Даже более того, `@@||example.org^$redirect` будет отключать как правило `$redirect`, так и `$redirect-rule`.
 
 **Примеры**
 
@@ -892,108 +892,108 @@ This is basically an alias to [`$redirect`](#redirect-modifier) since it has the
 ||example.org^$redirect-rule=noopjs
 ```
 
-In this case, only requests to `example.org/script.js` will be "redirected" to `noopjs`. All other requests to `example.org` will be kept intact.
+В этом случае только запросы к `example.org/script.js` будут перенаправлены на `noopjs`. Все остальные запросы к `example.org` останутся без изменений.
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> Rules with `$redirect-rule` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
+> Правила с модификатором `$redirect-rule` не поддерживается в AdGuard Content Blocker, AdGuard для iOS и для Safari.
 
 #### **`$denyallow`**
 
-`$denyallow` modifier allows to avoid creating additional rules when it is needed to disable a certain rule for specific domains. `$denyallow` matches only target domains and not referrer domains.
+Модификатор `$denyallow` позволяет избежать создания дополнительных правил, когда требуется отключить то или иное правило для определённых доменов. Модификатор `$denyallow` соответствует только целевым доменам, но не доменам реферера.
 
-Adding this modifier to a rule is equivalent to excluding the domains by the rule's matching pattern or to adding the corresponding exclusion rules. Чтобы добавить несколько доменов в одно правило, используйте символ `|` в качестве разделителя.
+Добавление этого модификатора в правило равносильно исключению доменов при помощи паттерна правила либо при помощи добавления дополнительных правил-исключений. Чтобы добавить несколько доменов в одно правило, используйте символ `|` в качестве разделителя.
 
-> **Restrictions**
+> **Ограничения**
 > 
-> * The rule's matching pattern cannot target any specific domains, e.g. it cannot start with `||`.
-> * Domains in the modifier value cannot be negated, e.g. `$denyallow=~x.com`, or have a wildcard TLD, e.g. `$denyallow=x.*`.
+> * Паттерн правила не может указывать на конкретные домены, например, не может начинаться с `||`.
+> * Домены в значении модификатора не могут иметь отрицание (например, `$denyallow=~x.com`) или wildcard домена верхнего уровня `$denyallow=x.*`.
 > 
-> The rules which violate these restrictions are considered invalid.
+> Правила, нарушающие эти ограничения, считаются недействительными.
 
 **Примеры**
 
-This rule:
+Это правило:
 ```
 *$script,domain=a.com|b.com,denyallow=x.com|y.com
 ```
 
-is equivalent to this one:
+эквивалентно этому правилу:
 ```
 /^(?!.*(x.com|y.com)).*$/$script,domain=a.com|b.com
 ```
 
-or to these three:
+а также комбинации этих трёх правил:
 ```
 *$script,domain=a.com|b.com
 @@||x.com$script,domain=a.com|b.com
 @@||y.com$script,domain=a.com|b.com
 ```
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> Rules with `$denyallow` modifier are not supported by AdGuard Content Blocker.
+> Правила с модификатором `$denyallow` не поддерживаются в AdGuard Content Blocker.
 
 #### **`$removeparam`** {#removeparam-modifier}
 
-> `$queryprune` is an alias of `$removeparam`. Since `$queryprune` is deprecated, avoid using it and use `$removeparam` instead.
+> Модификатор `$removeparam` — это полный аналог модификатора `$queryprune`. Поскольку модификатор `$queryprune` считается устаревшим, мы рекомендуем везде использовать только модификатор `$removeparam`.
 
-Rules with `$removeparam` modifier are intended to strip query parameters from requests' URLs. Please note that such rules are only applied to `GET`, `HEAD`, `OPTIONS`, and [sometimes](#removeparam-modifier-compatibility) `POST` requests.
+Правила с модификатором `$removeparam` предназначены для того, чтобы убирать параметры запроса из URL-запросов. Такие правила применяются только к запросам типов `GET`, `HEAD`, `OPTIONS` и [иногда](#removeparam-modifier-compatibility) к `POST`.
 
-> `$removeparam` rules that do not have any [content type modifiers](#content-type-modifiers) will match only requests where content type is `document`.
+> Правила с модификатором `$removeparam`, не содержащие [модификаторов типа контента](#content-type-modifiers), будут соответствовать только тем запросам, которые имеют тип контента `document`.
 
-**Syntax**
+**Синтаксис**
 
-**Basic syntax**
+**Базовый синтаксис**
 
-* `$removeparam=param` — removes query parameter with the name `param` from URLs of any request, e.g. a request to `http://example.com/page?param=1&another=2` will be transformed to `http://example.com/page?another=2`.
+* `$removeparam=param` убирает параметр запроса с именем `param` из URL любого запроса. Например, запрос к `http://example.com/page?param=1&&another=2` будет преобразован в `http://example.com/page?another=2`.
 
-> `$removeparam` basic syntax is supported starting with v1.7 of [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) and v3.6 of AdGuard Browser Extension.
+> Базовый синтаксис `$removeparam` поддерживается начиная с версии 1.7 [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) и версии 3.6 Браузерного расширения AdGuard.
 
-**Regular expressions**
+**Регулярные выражения**
 
-You can also use regular expressions to match query parameters and/or their values:
+Вы также можете использовать регулярные выражения для соответствия параметрам запроса и/или их значениям:
 
-* `$removeparam=/regexp/[options]` — removes query parameters that matches the `regexp` regular expression from URLs of any request. Unlike basic syntax, it means *"remove query parameters normalized to a `name=value` string which match the `regexp` regular expression"*. `[options]` here is the list of regular expression options. At the moment, the only supported option is `i` which makes matching case-insensitive.
+* `$removeparam=/regexp/[options]` убирает из URL-адреса любого запроса все параметры, соответствующие заданному регулярному выражению `regexp`. В отличие от базового синтаксиса, это означает *«‎убрать параметры запроса, нормализованные к строке `name=value`, которая соответствует `регулярному выражению`»*. `[options]` — это список опций регулярного выражения. На данный момент единственная поддерживаемая опция — это `i`, делающая соответствие нечувствительным к регистру.
 
-> `$removeparam` syntax for regular expressions will be supported starting with v1.8 of CoreLibs and v4.0 of AdGuard Browser Extension. For now, use the simplified version: `$removeparam=param`.
+> Синтаксис `$removeparam` для регулярных выражений будет доступен начиная с версии 1.8 CoreLibs и версии 4.0. Браузерного расширения AdGuard. А пока используйте упрощённый вариант: `$removeparam=param`.
 
-> **Escaping special characters**
+> **Экранирование специальных символов**
 > 
-> Do not forget to escape special characters like `,`, `/` and `$` in the regular expressions. Use `\` character for that purpose. For example, an escaped comma should look like this: `\,`.
+> Не забывайте экранировать специальные символы, такие как `,`, `/` и `$` в регулярных выражениях. Используйте для этого символ `\`. Например, экранированная запятая должна выглядеть так: `\,`.
 
-> **Note**
+> **Примечание**
 > 
-> Regexp-type rules target both name and value of the parameter. In order to minimize the chance of mistakes, it is safer to start every regexp with `/^` unless you specifically target parameter values.
+> Правила с регулярными выражениями смотрят как на имя, так и на значение параметра. Чтобы минимизировать риск ошибки, рекомендуем начинать регулярное выражение с `/^`, если только вы не хотите специально работать с значениями параметров.
 
-> We will try to detect and ignore unescaped `$` automatically using a simple rule of thumb: It is not an options delimiter if all three are true: 1. it looks like `$/`; 2. there is another slash character (`/`) to the left of it; 3. there is another unescaped `$` character to the left of that slash character.
+> Мы будем стараться обнаруживать и игнорировать неэкранированные символы `$` автоматически, используя следующее правило большого пальца: Это не является разделителем опций, если: 1. Оно выглядит как `$/`; 2. Существует другой символ слеша (`/`) слева от него; 3. Существует другой неэкранированный символ `$` слева от этого символа слеша.
 
-**Remove all query parameters**
+**Убрать все параметры запроса**
 
-Specify naked `$removeparam` to remove all query parameters:
+Укажите «‎голый» `$removeparam`, чтобы убрать все параметры запроса:
 
-* `||example.org^$removeparam` — removes all query parameters from URLs matching `||example.org^`.
+* `||example.org^$removeparam` убирает все параметры запроса из URL, соответствующего `||example.org^`.
 
-**Inversion**
+**Инверсия**
 
-Use `~` to apply inversion:
+Используйте `~`, чтобы применить инверсию:
 
-* `$removeparam=~param` — removes all query parameters with the name different from `param`.
-* `$removeparam=~/regexp/` — removes all query parameters that do not match the `regexp` regular expression.
+* `$removeparam=~param` убирает все параметры запроса с именем, отличным от `param`.
+* `$removeparam=~/regexp/` убирает все параметры запроса, которые не соответствуют заданному регулярному выражению `regexp`.
 
-**Negating `$removeparam`**
+**Отмена `$removeparam`**
 
-This sort of rules work pretty much the same way it works with [`$csp`](#csp-modifier) and [`$redirect`](#redirect-modifier) modifiers.
+Этот тип правил работает практически так же, как и в случае с модификаторами [`$csp`](#csp-modifier) и [`$redirect`](#redirect-modifier).
 
-Use `@@` to negate `$removeparam`:
+Используйте `@@`, чтобы отменить `$removeparam`:
 
-* `@@||example.org^$removeparam` — negates all `$removeparam` rules for URLs that match `||example.org^`.
-* `@@||example.org^$removeparam=param` — negates the rule with `$removeparam=param` for any request matching `||example.org^`.
-* `@@||example.org^$removeparam=/regexp/` — negates the rule with `$removeparam=/regexp/` for any request matching `||example.org^`.
+* `@@||example.org^$removeparam` отменяет все правила `$removeparam` для URL, соответствующих `||example.org^`.
+* `@@||example.org^$removeparam=param` отменяет правило с `$removeparam=param` для любого запроса, соответствующего `||example.org^`.
+* `@@||example.org^$removeparam=/regexp/` отменяет правило с `$removeparam=/regexp/` для любого запроса, соответствующего `||example.org^`.
 
-> **Multiple rules matching a single request**
+> **Несколько правил, соответствующих одному запросу**
 > 
-> In the case when multiple `$removeparam` rules match a single request, each of them will be applied one by one.
+> В случае, когда несколько правил с `$removeparam` соответствуют одному запросу, они все будут применены по очереди.
 
 **Примеры**
 
@@ -1003,15 +1003,15 @@ $removeparam=/^(utm_content|utm_campaign|utm_referrer)=/
 @@||example.com^$removeparam
 ```
 
-With these rules some [UTM parameters](https://en.wikipedia.org/wiki/UTM_parameters) will be stripped out from any request, except that requests to `example.com` will not be stripped at all, e.g. `http://google.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` will be transformed to `http://google.com/page`, but `http://example.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` will not be affected by the blocking rule.
+С этими правилами некоторые [UTM-параметры](https://ru.wikipedia.org/wiki/UTM-метки) будут удалены из любого запроса, но в запросах к `example.com` не будут удаляться совсем. Например: `http://google.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` будет преобразован в `http://google.com/page`, но `http://example.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` вообще не будет затронут этим правилом блокировки.
 
-* `$removeparam=utm_source` — removes `utm_source` query parameter from all requests.
+* `$removeparam=utm_source` убирает параметр `utm_source` из всех запросов.
 
-* `$removeparam=/utm_.*/` — removes all `utm_* query` parameters from URL queries of any request, e.g. a request to `http://example.com/page?utm_source=test` will be transformed to `http://example.com/page`.
+* `$removeparam=/utm_.*/` убирает все параметры `utm_* query` из URL любого запроса, например, запрос `http://example.com/page?utm_source=test` будет трансформирован в `http://example.com/page`.
 
-* `$removeparam=/^utm_source=campaign$/` — removes `utm_source` query parameter with the value equal to `campaign`. It does not touch other `utm_source` parameters.
+* `$removeparam=/^utm_source=campaign$/` убирает параметр `utm_source` со значением `campaign`. Не затрагивает другие параметры `utm_source`.
 
-**Negating one `$removeparam` rule and replacing it with a different rule**
+**Отмена одного правила `$removeparam` и замена его другим**
 
 ```
 $removeparam=/^(gclid|yclid|fbclid)=/
@@ -1019,9 +1019,9 @@ $removeparam=/^(gclid|yclid|fbclid)=/
 ||example.com^$removeparam=/^(yclid|fbclid)=/
 ```
 
-With these rules, Google, Yandex, and Facebook Click IDs will be removed from all requests. There is one exception: Google Click ID (gclid) will not be removed from requests to example.com.
+При помощи этих правил из всех запросов убираются Click ID от Google, Yandex, и Facebook. Есть одно исключение: Google Click ID (gclid) не будет удалён из запросов к example.com.
 
-**Negating `$removeparam` for all parameters**
+**Отмена `$removeparam` для всех параметров**
 
 ```
 $removeparam=/^(utm_source|utm_medium|utm_term)=/
@@ -1029,61 +1029,61 @@ $removeparam=/^(utm_content|utm_campaign|utm_referrer)=/
 @@||example.com^$removeparam
 ```
 
-With these rules, specified UTM parameters will be removed from any request save for requests to `example.org`.
+С этими правилами некоторые UTM-параметры будут удалены из любого запроса, но в запросах к `example.org` не будут удаляться совсем.
 
-> **Compatibility with other modifiers**
+> **Совместимость с другими модификаторами**
 > 
-> `$removeparam` rules are compatible with [basic modifiers](#basic-rules-common-modifiers), [content type modifiers](#content-type-modifiers), and with `$important` and `$app` modifiers. The rules which have any other modifiers are considered invalid and will be discarded.
+> Правила с `$removeparam` совместимы с [базовыми модификаторами](#basic-rules-common-modifiers), [модификаторами с ограничением по типу контента](#content-type-modifiers), а также с модификаторами `$important` и `$app`. Правила, содержащие другие модификаторы, считаются некорректными и не будут применены.
 
-> **Note**
+> **Примечание**
 > 
-> `$removeparam` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers do not do that. For example, `@@||example.com^` will not disable `$removeparam=p` for requests to **example.com**, but `@@||example.com^$urlblock` will.
+> Правила `$removeparam` также можно отключить с помощью правил-исключений `$document` и `$urlblock`. Но базовые правила исключений без модификаторов не могут этого сделать. Например, `@@||example.com^` не отключит `$removeparam=p` для запросов к **example.com**, а вот `@@||example.com^$urlblock` — отключит.
 
-> ##### **Compatibility with different versions of AdGuard** {#removeparam-modifier-compatibility}
+> ##### **Совместимость с разными версиями AdGuard** {#removeparam-modifier-compatibility}
 > 
-> * Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard browser extensions for Chrome, Firefox, Edge.
+> * Правила с модификатором `$removeparam` поддерживаются в AdGuard для Windows, Mac, Android, а также Браузерными расширениями AdGuard для Chrome, Firefox и Edge.
 > 
-> * `POST` request types are supported only by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.10 or later**.
+> * Типы запросов `POST` поддерживаются только в AdGuard для Windows, Mac и Android** с CoreLibs версии 1.10 или выше**.
 
-> **Restrictions**
+> **Ограничения**
 > 
-> Rules with `$removeparam` modifier can be used **only in trusted filters**. This category includes your own **User rules** and all the filters created by AdGuard Team.
+> Правила с модификатором `$removeparam` могут быть использованы **только в доверенных фильтрах**. Эта категория включает в себя **Пользовательские правила**, а также все фильтры, разработанные командой AdGuard.
 
 #### **`$removeheader`** {#removeheader-modifier}
 
-Rules with `$removeheader` modifier are intended to remove headers from HTTP requests and responses. The initial motivation for this rule type is to be able to get rid of the `Refresh` header which is often used to redirect users to an undesirable location. However, this is not the only case where this modifier can be useful.
+Правила с модификатором `$removeheader` предназначены для того, чтобы убирать заголовки HTTP-запросов и ответов. Изначальная мотивация для создания этого типа правил заключалась в том, чтобы иметь возможность избавиться от заголовка `Refresh`, который часто используется для перенаправления пользователей на нежелательную страницу. Однако применение данного модификатора не ограничивается этим случаем.
 
-Just like `$csp`, `$redirect`, `$removeparam`, and `$cookie`, this modifier exists independently, rules with it do not depend on the regular basic rules, i.e. regular exception or blocking rules will not affect it. By default, it only affects response headers. However, you can also change it to remove headers from HTTP requests as well.
+Как и в случае с `$csp`, `$redirect`, `$removeparam` и `$cookie`, этот модификатор существует независимо, правила с ним не зависят от обычных базовых правил, то есть регулярные выражения или блокирующие правила никак на них не повлияют. По умолчанию они работают только применительно к заголовкам ответов. Но вы также можете изменить его, чтобы удалить заголовки из HTTP-запросов.
 
-**Syntax**
+**Синтаксис**
 
-**Basic syntax**
+**Базовый синтаксис**
 
-* `||example.org^$removeheader=header-name` removes a **response** header called `header-name`
-* `||example.org^$removeheader=request:header-name` removes a **request** header called `header-name`
+* `||example.org^$removeheader=header-name` убирает заголовок **ответа** с названием `header-name`
+* `||example.org^$removeheader=request:header-name` убирает заголовок **запроса** с названием `header-name`
 
-> `$removeheader` is case-insensitive, but we suggest always using lower case.
+> `$removeheader` нечувствителен к регистру, но мы настоятельно рекомендуем всегда использовать нижний регистр.
 
-**Negating `$removeheader`**
+**Отрицание `$removeheader`**
 
-This type of rules works pretty much the same way it works with `$csp` and `$redirect` modifiers.
+Этот тип правил работает почти так же, как и с модификаторами `$csp` и `$redirect`.
 
-Use `@@` to negate `$removeheader`:
+Используйте `@@`, чтобы отменить `$removeheader`:
 
-* `@@||example.org^$removeheader` negates **all** `$removeheader` rules for URLs that match `||example.org^`.
-* `@@||example.org^$removeheader=header` negates the rule with `$removeheader=header` for any request matching `||example.org^`.
+* `@@||example.org^$removeheader` отменяет **все** правила `$removeheader` для URL-адресов, соответствующих `||example.org^`.
+* `@@||example.org^$removeheader=header` отменяет все правила с `$removeheader=header` для любого запроса, соответствующего `||example.org^`.
 
-> `$removeheader` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers will not do that. For example, `@@||example.com^` will not disable `$removeheader=p` for requests to `example.com`, but `@@||example.com^$urlblock` will.
+> Правила с `$removeheader` также можно отключить, используя правила-исключения `$document` и `$urlblock`. Но базовые правила-исключения без модификаторов не смогут этого сделать. Например, `@@||example.com^` не отключит `$removeheader=p` для запросов к `example.com`, а `@@||example.com^$urlblock` отключит.
 
-> **Multiple rules matching a single request**
+> **Несколько правил, соответствующих одному запросу**
 > 
-> In case of multiple `$removeheader` rules matching a single request, we will apply each of them one by one.
+> В случае, когда несколько правил с `$removeheader` соответствуют одному запросу, мы будем применять их все по очереди.
 
-> **Restrictions**
+> **Ограничения**
 > 
-> 1. This type of rules can be used **only in trusted filters**. This category includes your own User rules and all the filters created by AdGuard Team.
+> 1. Этот тип правил может быть использован **только в доверенных фильтрах**. Эта категория включает в себя Пользовательские правила, а также все фильтры, разработанные командой AdGuard.
 > 
-> 2. In order to avoid compromising the security `$removeheader` cannot remove headers from the list below:
+> 2. Чтобы избежать потенциальных проблем с безопасностью, `$removeheader` не может убрать заголовки из списка ниже:
 >     
 >     * `access-control-allow-origin`
 >     * `access-control-allow-credentials`
@@ -1133,78 +1133,78 @@ Use `@@` to negate `$removeheader`:
 >     * `connection`
 >     * `transfer-encoding`
 >     * `upgrade`
-> 3. `$removeheader` rules are not compatible with any other modifiers except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and [content type modifiers](#content-type-modifiers), e.g. `$script`, `$stylesheet`, etc. The rules which have any other modifiers are considered invalid and will be discarded.
+> 3. Правила с `$removeheader` несовместимы с любыми другими модификаторами, кроме `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, а также [модификаторами типа content](#content-type-modifiers), например, `$script`, `$stylesheet` и т. д. Правила, содержащие другие модификаторы, считаются некорректными и не будут применены.
 
 **Примеры**
 
-* `||example.org^$removeheader=refresh` removes `Refresh` header from all HTTP responses returned by `example.org` and its subdomains.
-* `||example.org^$removeheader=request:x-client-data` removes `X-Client-Data` header from all HTTP requests.
-* Next block of rules removes `Refresh` and `Location` headers from all HTTP responses returned by `example.org` save for requests to `example.org/path/*`, for which no headers will be removed:
+* |`|example.org^$removeheader=refresh` убирает заголовок `Refresh` из всех HTTP-ответов, возвращённых `example.org` и его поддоменами.
+* `||example.org^$removeheader=request:x-client-data` убирает заголовок `X-Client-Data` из всех HTTP-запросов.
+* Данный блок правил убирает заголовки `Refresh` и `Location` из всех HTTP-ответов, возвращённых `example.org`, кроме запросов к `example.org/path/*`, для которого заголовки не будут убраны:
   ```
   ||example.org^$removeheader=refresh
   ||example.org^$removeheader=location
   @@||example.org/path/$removeheader
   ```
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> Rules with `$removeheader` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard Browser extension for Chrome, Firefox, Edge.
+> Правила с модификатором `$removeheader` поддерживаются в AdGuard для Windows, Mac, Android и Браузерном расширении AdGuard для Chrome, Firefox и Edge.
 
 #### **`$hls`** {#hls-modifier}
 
-`$hls` rules modify the response of a matching request. They are intended as a convenient way to remove segments from [HLS playlists (RFC 8216)](https://datatracker.ietf.org/doc/html/rfc8216).
+Правила `$hls` модифицируют ответ на соответствующий правилу запрос. Они предназначены для удаления сегментов из [HLS-плейлистов (RFC 8216)](https://datatracker.ietf.org/doc/html/rfc8216).
 
-> **Note**
+> **Примечание**
 > 
-> The word "segment" in this document means either a "Media Segment" or a "playlist" as part of a "Master Playlist": `$hls` rules do not distinguish between a "Master Playlist" and a "Media Playlist".
+> Слово «сегмент» в окументации означает Media Segment или playlist (как часть Master Playlist): с точки зрения правил `$hls`, Master Playlist и Media Playlist неразличимы.
 
-**Syntax**
+**Синтаксис**
 
-* `||example.org^$hls=urlpattern` removes segments whose URL matches the URL pattern `urlpattern`. The pattern works just like the one in basic URL rules, however, the characters `/`, `$` and `,` must be escaped with `\` inside `urlpattern`.
-* `||example.org^$hls=/regexp/options` removes segments where the URL or one of the tags (for certain options, if present) is matched by the regular expression `regexp`. Available `options` are:
-  * `t` — instead of testing the segment's URL, test each of the segment's tags against the regular expression. A segment with a matching tag is removed;
-  * `i` — make the regular expression case-insensitive.
+* `||example.org^$hls=urlpattern` удаляет сегменты, URL которых соответствует паттерну `urlpattern`. Паттерн работает так же, как в базовых URL-правилах, однако символы `/`, `$` и `,` в составе `urlpattern` необходимо экранировать с помощью `\`.
+* `||example.org^$hls=/regexp/options` удаляет сегменты, в которых URL-адрес или один из тегов (для определённых параметров, если они есть) соответствуют регулярному выражению `regexp`. Доступные значения `options`:
+  * `t` — вместо URL-адреса сегмента проверять каждый тег сегмента на соответствие регулярному выражению. Сегмент с соответствующим тегом будет удалён;
+  * `i` — сделать регулярное выражение нечувствительным к регистру символов.
 
-> The characters `/`, `$` and `,` must be escaped with `\` inside `regexp`.
+> Символы `/`, `$` и `,` должны быть экранированы с помощью `\` внутри `regexp`.
 
-**Exceptions**
+**Исключения**
 
-Basic URL exceptions shall not disable rules with `$hls` modifier. They can be disabled as described below:
-* `@@||example.org^$hls` disables all `$hls` rules for responses from URLs matching `||example.org^`.
-* `@@||example.org^$hls=text` disables all `$hls` rules with the value of the `$hls` modifier equal to `text` for responses from URLs matching `||example.org^`.
+Базовые URL правила-исключения не отключают правила с модификатором `$hls`. Отключить их можно следующим образом:
+* `@@||example.org^$hls` отключает все правила `$hls` для ответов от URL-адресов, соответствующих `||example.org^ URL`.
+* `@@||example.org^$hls=text` отключает все правила `$hls`, у которых значение модификатора `$hls` равно `text`, для ответов с URL-адресов, соответствующих `||example.org^ URL`.
 
-> `$hls` rules can also be disabled by `$document`, `$content` and `$urlblock` exception rules.
+> `$hls` также можно отключить с помощью правил-исключений с модификаторами `$document`, `$content` и `$urlblock`.
 
-> **Restrictions**
+> **Ограничения**
 > 
-> * `$hls` rules are only allowed in trusted filters.
-> * `$hls` rules are not compatible with any other modifiers except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
-> * `$hls` rules only apply to HLS playlists, which are UTF-8 encoded text starting with the line `#EXTM3U`. Any other response will not be modified by these rules.
-> * `$hls` rules do not apply if the size of the original response is more than 3 MB.
+> * Правила `$hls` разрешены только в доверенных фильтрах.
+> * Правила `$hls` несовместимы с любыми другими модификаторами, кроме `$domain`, `$third-party`, `$app`, `$important`, `$match-case` и `$xmlhttprequest`.
+> * Правила `$hls` применимы только к HLS-плейлистам, т. е. к тексту в кодировке UTF-8, начинающемуся со строки `#EXTM3U`. Никакие другие ответы не будут модифицированы этими правилами.
+> * Правила `$hls` не будут применены к ответам размером больше 3 МБ.
 
-> **Note**
+> **Примечание**
 > 
-> When multiple `$hls` rules match the same request, their effect is cumulative.
+> Если несколько правил `$hls` соответствуют одному и тому же запросу, их эффект суммируется.
 
 **Примеры**
 
-* `||example.org^$hls=\/videoplayback^?*&source=dclk_video_ads` removes all segments with the matching URL.
-* `||example.org^$hls=/\/videoplayback\/?\?.*\&source=dclk_video_ads/i` achieves more or less the same with a regular expression instead of a URL pattern.
-* `||example.org^$hls=/#UPLYNK-SEGMENT:.*\,ad/t` removes all segments which have the matching tag.
+* `||example.org^$hls=\/videoplayback^?*&source=dclk_video_ads` удаляет все сегменты с соответствующим URL.
+* `||example.org^$hls=/\/videoplayback\/?\?.*\&source=dclk_video_ads/i` делает почти то же самое, но с помощью регулярного выражения вместо URL-паттерна.
+* `||example.org^$hls=/#UPLYNK-SEGMENT:.*\,ad/t` удаляет все сегменты с соответствующим тегом.
 
-**Anatomy of an HLS playlist**
+**О формате HLS-плейлистов**
 
-A quick summary of the [specification](https://datatracker.ietf.org/doc/html/rfc8216):
-1. An HLS playlist is a collection of text lines.
-2. A line may be empty, a comment (starts with `#`), a tag (also starts with `#`, can only be recognized by name) or a URL.
-3. A URL line is called a "segment".
-4. Tags may apply to a single segment, i.e. the first URL line after the tag, to all segments following the tag and until the tag with the same name, or to the whole playlist.
+Из [спецификации](https://datatracker.ietf.org/doc/html/rfc8216) следует:
+1. HLS-плейлист — это набор текстовых строк.
+2. Строка может быть пустой, быть комментарием (начинается с `#`), тегом (начинается с `#` и имени тега) или URL.
+3. URL-строка называется сегментом.
+4. Тег может относиться к одному сегменту, т.е. к первой URL-строке, следующей после данного тега, ко всем последующим сегментами (пока не встретится тег с тем же именем) или ко всему плейлисту.
 
-Some points specific to the operation of `$hls` rules:
-1. When a segment is removed, all of the tags that apply only to that segment are also removed.
-2. When there is a tag that applies to multiple segments, and all of those segments are removed, the tag is also removed.
-3. Since there is no way to recognize different kinds of tags by syntax, we recognize all of the tags specified by the RFC, plus some non-standard tags that we have seen in the field. Any lines starting with `#` and not recognized as a tag are passed through without modification, and are not matched against the rules.
-4. We do not match tags that apply to the whole playlist, and `$hls` rules can not be used to remove them, since `$hls` rules are intended for removing segments. If you know what you are doing, you can use `$replace` rules to remove or rewrite just a single tag from the playlist.
+Замечания, касающиеся правил `$hls`:
+1. Когда какой-либо сегмент удаляется, все теги, относящиеся только к этому сегменту, тоже удаляются.
+2. Теги, относящиеся к нескольким сегментам, удаляются, если все эти сегменты были удалены.
+3. Поскольку различные типы тегов невозможно распознать по синтаксису, мы распознаем все теги, указанные в RFC, плюс некоторые нестандартные теги, которые встречались нам в полевых условиях. Любые строки, начинающиеся с `#` и не распознанные как тег, пропускаются без модификации и не сопоставляются с правилами.
+4. Мы не сопоставляем теги, которые относятся ко всему плейлисту, и правила `$hls` не могут быть использованы для их удаления, поскольку правила `$hls` предназначены для удаления сегментов. Если вы знаете, что делаете, вы можете использовать правила `$replace` для удаления или перезаписи только одного тега из плейлиста.
 
 **Пример работы правил:**
 
@@ -1235,7 +1235,7 @@ preroll.ts
 </details>
 
 <details>
-<summary>Applied rules</summary>
+<summary>Применённые правила</summary>
 
 ```
 ||example.org^$hls=preroll
@@ -1244,7 +1244,7 @@ preroll.ts
 </details>
 
 <details>
-<summary>Modified response</summary>
+<summary>Модифицированный ответ</summary>
 
 ```
 #EXTM3U
@@ -1260,65 +1260,65 @@ preroll.ts
 ```
 </details>
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> Rules with the `$hls` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.10 or later**.
+> Правила с модификатором `$hls` поддерживаются в AdGuard для Windows, Mac и Android с **CoreLibs версии 1.10 или выше**.
 
 #### **`$jsonprune`** {#jsonprune-modifier}
 
-`$jsonprune` rules modify the JSON response of a matching request by removing JSON items that match a modified [JSONPath](https://goessner.net/articles/JsonPath/) expression. They do not modify responses which are not valid JSON.
+Правила `$jsonprune` модифицируют JSON-ответы на соответствующий правилу запрос, удаляя JSON-элементы, которые соответствуют модифицированному выражению [JSONPath](https://goessner.net/articles/JsonPath/). Эти правила не изменяют ответы, которые не являются допустимыми JSON-документами.
 
-**Syntax**
+**Синтаксис**
 
-* `||example.org^$jsonprune=expression` removes items that match the modified JSONPath expression `expression` from the response.
+* `||example.org^$jsonprune=expression` удаляет из ответа элементы, соответствующие изменённому JSONPath-выражению `expression`.
 
-> Due to the way rule parsing works, the characters `$` and `,` must be escaped with `\` inside `expression`.
+> Из-за особенностей работы парсинга правил, символы `$` и `,` должны быть экранированы символом `\` внутри `expression`.
 
-The modified JSONPath syntax has the following differences from the original:
-1. Script expressions are not supported.
-2. The supported filter expressions are:
-  * `?(has <key>)` — true if the current object has the specified key.
-  * `?(key-eq <key> <value>)` — true if the current object has the specified key, and its value is equal to the specified value.
-  * `?(key-substr <key> <value>)` — true if the specified value is a substring of the value of the specified key of the current object.
-3. Whitespace outside of double- or single-quoted strings has no meaning.
-4. Both double- and single-quoted strings can be used.
-5. Expressions ending with `..` are not supported.
-6. Multiple array slices can be specified in square brackets.
+Модифицированный синтаксис JSONPath имеет следующие отличия от оригинального:
+1. Script expressions не поддерживаются.
+2. Поддерживаемые filter expressions:
+  * `?(has <key>)` — true, если текущий объект обладает свойством key.
+  * `?(key-eq <key> <value>)` — true, если текущий объект обладает свойством key и его значение равно указанному хначению.
+  * `?(key-substr <key> <value>)` — true, если указанное значение является подстрокой значения указанного ключа текущего объекта.
+3. Пробелы вне двойных или одинарных кавычек игнорируются.
+4. Можно использовать строки как с двойными, так и с одинарными кавычками.
+5. Выражения, оканчивающиеся на `..`, не поддерживаются.
+6. Разрешено указывать несколько срезов массива (array slices) в квадратных скобках.
 
-There are various online tools for testing JSONPath expressions, e.g. https://jsonpath.herokuapp.com/ https://jsonpath.com/
+Существуют различные онлайн-инструменты для проверки JSONPath-выражений: https://jsonpath.herokuapp.com/ https://jsonpath.com/
 
-Keep in mind, though, that all JSONPath implementations on this planet have unique features/quirks and are subtly incompatible with each other.
+Обратите внимание, что различные имплементации JSONPath обладают уникальными особенностями и могут быть несовместимы друг с другом.
 
-**Exceptions**
+**Исключения**
 
-Basic URL exceptions shall not disable rules with `$jsonprune` modifier. They can be disabled as described below:
-* `@@||example.org^$jsonprune` disables all `$jsonprune` rules for responses from URLs matching `||example.org^`.
-* `@@||example.org^$jsonprune=text` disable all `$jsonprune` rules with the value of the `$jsonprune` modifier equal to `text` for responses from URLs matching `||example.org^`.
+Базовые URL правила-исключения не отключают правила с модификатором `$jsonprune`. Отключить их можно следующим образом:
+* `@@||example.org^$jsonprune` отключает все правила `$jsonprune` для ответов от URL-адресов, соответствующих `||example.org^`.
+* `@@||example.org^$jsonprune=text` отключает все правила `$jsonprune`, у которых значение модификатора `jsonprune` равно `text`, для ответов с URL-адресов, соответствующих `||example.org^`.
 
-> `$jsonprune` rules can also be disabled by `$document`, `$content` and `$urlblock` exception rules.
+> `$jsonprune` также можно отключить с помощью правил-исключений с модификаторами `$document`, `$content` и `$urlblock`.
 
-> **Restrictions**
+> **Ограничения**
 > 
-> * `$jsonprune` rules are not compatible with any other modifiers except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
-> * `$jsonprune` rules do not apply if the size of the original response is more than 3 MB.
+> * Правила `$jsonprune` несовместимы с любыми другими модификаторами, кроме `$domain`, `$third-party`, `$app`, `$important`, `$match-case` и `$xmlhttprequest`.
+> * Правила `$jsonprune` не будут применены к ответам размером больше 3 МБ.
 
-> **Note**
+> **Примечание**
 > 
-> When multiple `$jsonprune` rules match the same request, they are sorted in lexicographical order, the first rule is applied to the original response, and each of the remaining rules is applied to the result of applying the previous one.
+> Когда одному и тому же запросу соответствует несколько правил с модификатором `$jsonprune`, они сортируются в лексикографическом порядке: первое правило применяется к исходному ответу, а каждое из оставшихся правил применяется к результату применения предыдущего.
 
 **Примеры**
 
-* `||example.org^$jsonprune=\$..[one\, "two three"]` removes all occurrences of the keys "one" and "two three" anywhere in the JSON document.
-* `||example.org^$jsonprune=\$.a[?(has ad_origin)]` removes all children of `a` that have an `ad_origin` key.
-* `||example.org^$jsonprune=\$.*.*[?(key-eq 'Some key' 'Some value')]` removes all items that are at nesting level 3 and have a property "Some key" equal to "Some value".
+* `||example.org^$jsonprune=\$..[one\, "two three"]` удаляет все вхождения ключей one и two three в любом месте JSON-документа.
+* `||example.org^$jsonprune=\$.a[?(has ad_origin)]` удаляет всех прямых потомков `a`, которые обладают свойством `ad_origin`.
+* `||example.org^$jsonprune=\$.*.*[?(key-eq 'Some key' 'Some value')]` удаляет все элементы на уровне вложенности 3, обладающие свойством Some key, равным Some value.
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> Rules with the `$jsonprune` modifier are supported by AdGuard for Windows, Mac and Android, **running CoreLibs version 1.10 or later**.
+> Правила с модификатором `$jsonprune` поддерживаются в AdGuard для Windows, Mac и Android с **CoreLibs версии 1.10 или выше**.
 
 #### **`noop`** {#noop-modifier}
 
-`noop` modifier does nothing and can be used solely to increase rules' readability. It consists of a sequence of underscore characters (`_`) of any length and can appear in a rule as many times as needed.
+Модификатор `noop` не делает ничего и может быть использован исключительно в целях улучшения читабельности правил. Он состоит из последовательности символов нижнего подчёркивания (`_`) любой длины и может фигурировать в правиле столько раз, сколько требуется.
 
 **Примеры**
 
@@ -1327,139 +1327,139 @@ Basic URL exceptions shall not disable rules with `$jsonprune` modifier. They ca
 ||example.com$replace=/bad/good/,___,~third-party
 ```
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> Rules with `noop` modifier are not supported by AdGuard Content Blocker.
+> Правила с модификатором `noop` не поддерживаются в AdGuard Content Blocker.
 
-#### **`$empty` (deprecated)** {#empty-modifier}
+#### **`$empty` (устаревший)** {#empty-modifier}
 
-> **Deprecation notice**
+> **Предупреждение об устаревании**
 > 
-> This modifier is deprecated in favor of the [`$redirect` modifier](#redirect-modifier). Rules with `$empty` are converting into `$redirect=nooptext` now.
+> Этот модификатор считается устаревшим. Вместо него теперь используется [модификатор `$redirect`](#redirect-modifier). Правила с `$empty` конвертируются в `$redirect=nooptext`.
 
-Usually, blocked requests look like a server error to browser. If you use `$empty` modifier, AdGuard will emulate a blank response from the server with`200 OK` status.
+Обычно заблокированный запрос выглядит для браузера как ошибка сервера. В случае применения модификатора `$empty`, AdGuard эмулирует пустой ответ сервера со статусом `200 OK`.
 
 **Примеры**
 
-* `||example.org^$empty` returns an empty response to all requests to `example.org` and all subdomains.
+* `||example.org^$empty` возвращает пустой ответ для всех запросов к домену `example.org` и всех его поддоменов.
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> Rules with `$empty` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
+> Правила с модификатором `$empty` не поддерживаются в AdGuard Content Blocker, AdGuard для iOS и для Safari.
 
-#### **`$mp4` (deprecated)** {#mp4-modifier}
+#### **`$mp4` (устаревший)** {#mp4-modifier}
 
-> **Deprecation notice**
+> **Предупреждение об устаревании**
 > 
-> This modifier is deprecated in favor of the [`$redirect` modifier](#redirect-modifier). Rules with `$mp4` are converting into `$redirect=noopmp4-1s,media` now.
+> Этот модификатор считается устаревшим. Вместо него теперь используется [модификатор `$redirect`](#redirect-modifier). Правила с `$mp4` теперь преобразуются в `$redirect=noopmp4-1s,media`.
 
-As a response to blocked request AdGuard returns a short video placeholder.
+В качестве ответа на заблокированный запрос AdGuard возвращает короткую видео-заглушку.
 
 **Примеры**
 
-* `||example.com/videos/$mp4` blocks all video downloads from `||example.com/videos/*` and changes the response to a video placeholder.
+* `||example.com/videos/$mp4` блокирует загрузку видео с адресов `||example.com/videos/*` и заменяет ответ на видео-заглушку.
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> Rules with `$mp4` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
+> Правила с модификатором `$mp4` не поддерживаются в AdGuard Content Blocker, AdGuard для iOS и для Safari.
 
-# Non-basic rules
+# Другие правила
 
-However, the capabilities of the basic rules may not be sufficient to block ads. Sometimes you need to hide an element or change part of the HTML code of a web page without breaking anything. The rules described in this section are created specifically for this purpose.
+Возможностей базовых правил может оказаться недостаточно для блокировки рекламы. Иногда для этого требуется скрыть какой-нибудь элемент или изменить часть HTML-кода страницы, при этом ничего не сломав. Для этого предназначены правила, описанные в данном разделе.
 
 
-## Cosmetic rules {#cosmetic-rules}
+## Косметические правила {#cosmetic-rules}
 
-> Work with non-basic rules requires the basic knowledge of HTML and CSS. So, if you want to learn how to make such rules, we recommend to get acquainted with [this documentation](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/What_is_CSS).
+> Для работы с косметическими правилами необходимы знания HTML и CSS. Так что если вы хотите научиться самостоятельно составлять такие правила, ознакомьтесь с [этой документацией](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/What_is_CSS).
 
-### Element hiding rules {#cosmetic-elemhide-rules}
+### Правила скрытия элементов {#cosmetic-elemhide-rules}
 
-Element hiding rules are used to hide the elements of web pages. It is similar to applying `{ display: none; }` style to selected element.
+Правила скрытия элементов предназначены, как это следует из их названия, для скрытия элементов веб-страниц. По сути это аналогично применению стиля `{ display: none; }` к выбранному элементу.
 
-> Element hiding rules may operate differently [depending on the platform](#cosmetic-rules-priority).
+> Правила скрытия элементов работают по-разному, и их приоритет меняется [в зависимости от платформы](#cosmetic-rules-priority).
 
-#### Syntax {#non-basic-rules-modifiers-syntax}
+#### Синтаксис {#non-basic-rules-modifiers-syntax}
 
 ```
    rule = [domains] "##" selector
 domains = [domain0, domain1[, ...[, domainN]]]
 ```
 
-* **`selector`** — [CSS selector](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors), defines the elements to be hidden.
-* **`domains`** — domain restriction for the rule.
+* **`selector`** — [CSS-селектор](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors), задающий элементы, которые должны быть скрыты.
+* **`domains`** — ограничение на домены, на страницах которых будет применено правило.
 
-If you want to limit the rule application area to certain domains, just enter them separated with commas. For example: `example.org,example.com##selector`.
+Если вы хотите ограничить область действия одним или более доменами, просто перечислите их через запятую. Например: `example.org,example.com##selector`.
 
-> This rule will be also applied to all subdomains of `example.org` and `example.com`.
+> Это правило будет работать также на всех поддоменах `example.org` и `example.com`.
 
-If you want the rule not to be applied to certain domains, start a domain name with `~` sign. For example: `~example.org##selector`.
+Если вы хотите, чтобы правило не применялось к определённым доменам, начните доменное имя со знака `~`. Например: `~example.org##selector`.
 
-You can use both approaches in a single rule. For example, `example.org,~subdomain.example.org##domain` will work for `example.org` and all subdomains, **except `subdomain.example.org`**.
+Вы можете использовать оба подхода в одном правиле. Например, правило `example.org,~subdomain.example.org##domain` будет работать для домена `example.org` и всех его поддоменов, **кроме `subdomain.example.org`**.
 
-> **Note**
+> **Примечание**
 > 
-> Element hiding rules are not dependent on each other. If there is a rule `example.org##selector` in the filter and you add `~example.org##selector` both rules will be applied independently.
+> Правила скрытия не зависят друг от друга. Если в фильтре есть правило `example.org##selector` и вы добавляете правило `~example.org##selector`, то оба этих правила будут применены независимо друг от друга.
 
 **Примеры**
 
-* `example.com##div.textad` — hides a `div` with a class `textad` at `example.com` and all subdomains.
-* `example.com,example.org###adblock` — hides an element with attribute `id` equals `adblock` at `example.com`, `example.org` and all subdomains.
-* `~example.com##.textad` — hides an element with a class `textad` at all domains, except `example.com` and its subdomains.
+* `example.com##div.textad` скроет элемент `div` с классом `textad` на домене `example.com` и всех его поддоменах.
+* `example.com,example.org###adblock` скроет элемент с атрибутом `id` равным `adblock` на доменах `example.com`, `example.org` и всех их поддоменах.
+* `~example.com##.textad` скроет элемент с классом `textad` на всех доменах, кроме `example.com` и всех его поддоменов.
 
 > **Ограничения**
 > 
-> Safari does not support both permitted and restricted domains. So the rules like `example.org,~foo.example.org##.textad` are invalid in AdGuard for Safari.
+> Safari не поддерживает одновременно разрешённые и запрещённые домены, поэтому правила вида `example.org,~foo.example.org##.textad` не работают в AdGuard для Safari.
 
-**Exceptions**
+**Исключения**
 
-Exceptions can disable some rules on particular domains. They are very similar to usual exception rules, but instead of `##` you have to use `#@#`.
+Исключения могут отключать некоторые правила на определённых доменах. Они очень похожи на обычные правила-исключения, только вместо `##` нужно использовать `#@#`.
 
-For example, there is a rule in filter:
+Например, в фильтре есть правило:
 ```
 ##.textad
 ```
 
-If you want to disable it for `example.com`, you can create an exception rule:
+Если вы хотите отключить его для домена `example.com`, вы можете создать правило исключения:
 ```
 example.com#@#.textad
 ```
 
-Sometimes, it may be necessary to disable all restriction rules. For example, to conduct tests. To do this, use the exclusion rule without specifying a domain. It will completely disable matching CSS elemhide rule on ALL domains:
+В некоторых случаях может потребоваться отключение всех запрещающих правил. Например, на время тестирования. Для этого воспользуйтесь правилом исключения без указания домена. Это полностью отключит соответствующее правило CSS elemhide для ВСЕХ доменов:
 ```
 #@#.textad
 ```
 
-The same can be achieved by adding this rule:
+Правило такого вида даст аналогичный результат:
 ```
 *#@#.textad
 ```
 
-We recommend to use this kind of exceptions only if it is not possible to change the hiding rule itself. In other cases it is better to change the original rule, using domain restrictions.
+Применять такие исключения рекомендуется только в случае, когда изменить само правило скрытия невозможно. Во всех остальных случаях лучше изменить исходное правило, используя ограничение на домены.
 
-### CSS rules {#cosmetic-css-rules}
+### CSS-правила {#cosmetic-css-rules}
 
-Sometimes, simple hiding of an element is not enough to deal with advertising. For example, blocking an advertising element can just break the page layout. In this case AdGuard can use rules that are much more flexible than hiding rules. With this rules you can basically add any CSS styles to the page.
+Иногда недостаточно просто скрыть какой-либо элемент, чтобы заблокировать рекламу. Например, блокировка рекламного элемента может просто сломать вёрстку сайта. Для таких случаев AdGuard позволяет использовать гораздо более гибкие правила, чем обычные правила скрытия. С помощью таких правил вы можете добавить на страницу практически любой CSS-стиль.
 
-> **Restrictions**
+> **Ограничения**
 > 
-> Styles that lead to loading any resource are forbidden. Basically, it means that you cannot use any `<url>` type of value in the style.
+> Запрещено использование стилей, которые могут приводить к загрузке каких-либо ресурсов. По сути, это означает, что нельзя использовать атрибуты типа `<url>`.
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> CSS rules are not supported by AdGuard Content Blocker.
+> CSS-правила не поддерживаются в AdGuard Content Blocker.
 
-> CSS rules may operate differently [depending on the platform](#cosmetic-rules-priority).
+> CSS-правила работают по-разному, и их приоритет меняется [в зависимости от платформы](#cosmetic-rules-priority).
 
-**Syntax**
+**Синтаксис**
 
 ```
    rule = [domains] "#$#" selector "{" style "}"
 domains = [domain0, domain1[, ...[, domainN]]]
 ```
 
-* **`selector`** — [CSS selector](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors), defines the elements we want to apply the style to.
-* **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules](#elemhide-syntax).
-* **`style`** — CSS style, that we want to apply to selected elements.
+* **`selector`** — [CSS-селектор](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors), определяющий элементы, к которым мы хотим применить стиль.
+* **`domains`** — ограничение на домены, на страницах которых будет применено правило. Строится по тем же правилам, что и в случае [правил скрытия элементов](#elemhide-syntax).
+* **`style`** — CSS-стиль, который мы хотим применить к выбранным элементам.
 
 **Примеры**
 
@@ -1467,79 +1467,79 @@ domains = [domain0, domain1[, ...[, domainN]]]
 example.com#$#body { background-color: #333!important; }
 ```
 
-This rule will apply a style `background-color: #333!important;` to the `body` element at `example.com` and all subdomains.
+Это правило применит стиль `background-color: #333!important;` к элементу `body` для домена `example.com` и всех его поддоменов.
 
-**Exceptions**
+**Исключения**
 
-Just like with element hiding, there is a type of rules that disable the selected CSS style rule for particular domains. Exception rules syntax is almost the same, you just have to change `#$#` to `#@$#`.
+По аналогии с правилами скрытия, существует специальный тип правил, отключающий действие выбранного правила CSS-стилей для определённых доменов. Синтаксис правил-исключений практически такой же, только маркер `#$#` заменяется на `#@$#`.
 
-For example, there is a rule in filter:
+Например, в фильтре есть правило:
 ```
 #$#.textad { visibility: hidden; }
 ```
 
-If you want to disable it for `example.com`, you can create an exception rule:
+Если вы хотите отключить его для домена `example.com`, вы можете создать правило исключения:
 ```
 example.com#@$#.textad { visibility: hidden; }
 ```
 
-We recommend to use this kind of exceptions only if it is not possible to change the CSS rule itself. In other cases it is better to change the original rule, using domain restrictions.
+Применять такие исключения рекомендуется только в случае, когда изменить само CSS-правило не представляется возможным. Во всех остальных случаях лучше изменить исходное правило, используя ограничение на домены.
 
-### Extended CSS selectors {#extended-css-selectors}
+### Расширенные CSS-селекторы {#extended-css-selectors}
 
-CSS 3.0 is not always enough to block ads. To solve this problem AdGuard extends CSS capabilities by adding support for the new pseudo-elements. To use extended CSS selectors we have developed a separate open source [module](https://github.com/AdguardTeam/ExtendedCss).
+Возможностей CSS 3.0 не всегда хватает для блокировки рекламы. Чтобы решить эту проблему, AdGuard расширяет возможности CSS, добавляя поддержку новых псевдоэлементов. Для поддержки расширенных CSS-селекторов мы разработали [модуль](https://github.com/AdguardTeam/ExtendedCss) с открытым кодом.
 
-> **Application area**
+> **Область применения**
 > 
-> Extended selectors can be used in any cosmetic rule, whether they are [element hiding rules](#cosmetic-elemhide-rules) or [CSS rules](#cosmetic-css-rules).
+> Расширенные селекторы можно применять в любом косметическом правиле, будь то [правила скрытия](#cosmetic-elemhide-rules) или [CSS-правила](#cosmetic-css-rules).
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> Rules with extended CSS selectors are not supported by AdGuard Content Blocker.
+> Правила с расширенными CSS-селекторами не поддерживаются в AdGuard Content Blocker.
 
-**Syntax**
+**Синтаксис**
 
-Regardless of the CSS pseudo-classes you are using in the rule, you can use special markers to make these rules use the "Extended CSS" engine. It is recommended to use these markers for all "extended CSS" cosmetic rules so that it was easier to find them.
+Независимо от того, какие CSS-псевдоклассы вы используете в правилах, вы можете использовать специальные маркеры, чтобы эти правила обрабатывались движком Extended CSS. Рекомендуется использовать эти маркеры для всех косметических расширенных CSS-правил, чтобы их было легче отличить.
 
-The syntax for extended CSS rules:
+Синтаксис расширенных CSS-правил:
 
-* `#?#` — for element hiding, `#@?#` — for exceptions
-* `#$?#` — for CSS rules, `#@$?#` — for exceptions
+* `#?# ` — для скрытия элементов, `#@?#` — для исключений
+* `#$?#` — для CSS-стилей, `#@$?#` — для исключений
 
-We **strongly recommend** using these markers any time when you use an extended CSS selector.
+Мы **крайне рекомендуем** использовать этим маркеры каждый раз, когда вы используете расширенный CSS-селектор.
 
 **Примеры**
 
-* `example.org#?#div:has(> a[target="_blank"][rel="nofollow"])` — this rule blocks all `div` elements containing a child node that has a link with the attributes `[target="_blank"][rel="nofollow"]`. The rule applies only to `example.org` and its subdomains.
-* `example.com#$?#h3:contains(cookies) { display: none!important; }` — this rule sets the style `display: none!important` to all `h3` elements that contain the word `cookies`. The rule applies only to `example.com` and all its subdomains.
-* `example.net#?#.banner:matches-css(width: 360px)` — this rule blocks all `.banner` elements with the style property `width: 360px`. The rule applies only to `example.net` and its subdomains.
-* `example.net#@?#.banner:matches-css(width: 360px)` — this rule will disable the previous rule.
+* `example.org#?#div:has(> a[target="_blank"][rel="nofollow"])` — это правило блокирует все элементы `div`, которые содержат дочерний элемент со ссылкой с атрибутами `[target="_blank"][rel="nofollow"]`. При этом правило будет работать только для домена `example.org` и всех его поддоменов.
+* `example.com#$?#h3:contains(cookies) { display: none!important; }` — это правило устанавливает стиль `display: none!important` для всех элементов `h3`, которые содержат слово `cookies`. При этом правило будет работать только для домена `example.com` и всех его поддоменов.
+* `example.net#?#.banner:matches-css(width: 360px)` — это правило блокирует все элементы `.banner`, которые содержат стиль `width: 360px`. При этом правило будет работать только для домена `example.net` и всех его поддоменов.
+* `example.net#@?#.banner:matches-css(width: 360px)` — это правило отменяет действие предыдущего правила.
 
-> You can apply standard CSS selectors using the ExtendedCss engine by using a rule marker `#?#`, e.g. `#?#div.banner`.
+> Обратите внимание, что вы можете применять стандартные CSS-селекторы с помощью движка ExtendedCss, применяя маркер правила `#?#`, например `#?#div.banner`.
 
-> Learn more about [how to debug extended selectors](#selectors-debugging-mode).
+> Узнайте больше об [отладке расширенных селекторов](#selectors-debugging-mode).
 
-##### Pseudo-class `:has()`
+##### Псевдокласс `:has()`
 
-Working Draft CSS 4.0 specification describes [pseudo-class `:has`](https://www.w3.org/TR/selectors-4/#has-pseudo). Unfortunately, [not many browsers support it yet](https://developer.mozilla.org/en-US/docs/Web/CSS/:has#browser_compatibility).
+Рабочий черновик спецификации CSS 4.0 описывает [псевдокласс `:has`](https://www.w3.org/TR/selectors-4/#has-pseudo). К сожалению, пока что [не многие браузеры поддерживают его](https://developer.mozilla.org/en-US/docs/Web/CSS/:has#browser_compatibility).
 
-**Syntax**
+**Синтаксис**
 ```
 :has(selector)
 ```
 
-Backward compatible syntax:
+Синтаксис обратной совместимости:
 ```
 [-ext-has="selector"]
 ```
 
-Supported synonyms for better compatibility: `:-abp-has`, `:if`.
+Поддерживаемые синонимы для лучшей совместимости: `:-abp-has`, `:if`.
 
-Pseudo-class `:has()` selects the elements that includes the elements that fit to `selector`.
+Псевдокласс `:has()` выбирает те элементы, внутри которых есть элементы, подходящие под `selector`.
 
 **Примеры**
 
-Selecting all `div` elements, which contain an element with the `banner` class:
+Выделение всех элементов `div`, содержащих элемент с классом `banner`:
 
 ```html
 <!-- HTML code -->
@@ -1547,45 +1547,45 @@ Selecting all `div` elements, which contain an element with the `banner` class:
 <div>Select this div<span class="banner"></span></div>
 ```
 
-Selector:
+Селектор:
 ```
 div:has(.banner)
 ```
 
-Backward compatible syntax:
+Синтаксис обратной совместимости:
 ```
 div[-ext-has=".banner"]
 ```
 
-##### Pseudo-class `:if-not()`
+##### Псевдокласс `:if-not()`
 
-This pseudo-class is basically a shortcut for `:not(:has())`. It is supported by ExtendedCss for better compatibility with some filters subscriptions, but it is not recommended to use it in AdGuard filters. The rationale is that one day browsers will add `:has` native support, but it will never happen to this pseudo-class.
+Этот псевдокласс фактически является сокращением для `:not(:has())`. Он поддерживается ExtendedCss для лучшей совместимости с некоторыми фильтрами, но не рекомендуется к использованию в фильтрах AdGuard. Смысл в том, что однажды браузеры добавят нативную поддержку `:has`, но этого никогда не произойдёт с этим псевдоклассом.
 
-##### Pseudo-class `:contains()`
+##### Псевдокласс `:contains()`
 
-This pseudo-class principle is very simple: it allows to select the elements that contain specified text or which content matches a specified regular expression. Regular expressions flags are supported. Please note that this pseudo-class uses `textContent` element property for matching (and not the `innerHTML`).
+Принцип действия этого псевдокласса очень прост: он позволяет выбрать элементы, которые содержат заданный текст или содержимое которых соответствует указанному регулярному выражению. Также поддерживаются флаги регулярных выражений. Пожалуйста, обратите внимание, что этот псевдокласс использует свойство элемента `textContent` для определения соответствия (а не `innerHTML`).
 
-**Syntax**
+**Синтаксис**
 ```
-// matching by plain text
+// соответствие обычному тексту
 :contains(text)
-// matching by a regular expression
+// соответствие регулярному выражению
 :contains(/regexp/i)
 ```
 
-Backward compatible syntax:
+Синтаксис обратной совместимости:
 ```
-// matching by plain text
+// соответствие обычному тексту
 [-ext-contains="text"]
-// matching by a regular expression
+// соответствие регулярному выражению
 [-ext-contains="/regexp/"]
 ```
 
-> Supported synonyms for better compatibility: `:-abp-contains`, `:has-text`.
+> Поддерживаемые синонимы для лучшей совместимости: `:-abp-contains`, `:has-text`.
 
 **Примеры**
 
-Selecting all `div` elements, which contain text `banner`:
+Выделение всех элементов `div`, содержащих текст `banner`:
 ```html
 <!-- HTML code -->
 <div>Do not select this div</div>
@@ -1593,31 +1593,31 @@ Selecting all `div` elements, which contain text `banner`:
 <div>Do not select this div <div class="banner"></div></div>
 ```
 
-Selector:
+Селектор:
 ```
-// matching by plain text
+// соответствие обычному тексту
 div:contains(banner)
-// matching by a regular expression
+// соответствие регулярному выражению
 div:contains(/this .* banner/)
-// also with regular expression flags
+// поддерживаются флаги регулярных выражений
 div:contains(/this .* banner/gi)
 ```
 
-Backward compatible syntax:
+Синтаксис обратной совместимости:
 ```
-// matching by plain text
+// соответствие обычному тексту
 div[-ext-contains="banner"]
-// matching by a regular expression
+// соответствие регулярному выражению
 div[-ext-contains="/this .* banner/"]
 ```
 
-> In this example only a `div` with `id=selected` will be selected, because the next element does not contain any text; `banner` is a part of code, not a text.
+> В этом примере будет выбран только `div` с `id=selected`, так как следующий за ним элемент не содержит текст (`banner` является частью кода, а не текста).
 
-##### Pseudo-class `:matches-css()`
+##### Псевдокласс `:matches-css()`
 
-These pseudo-classes allow to select an element by its current style property. The work of this pseudo-class is based on using the [`window.getComputedStyle`](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle) function.
+Эти псевдоклассы позволяют выделять элемент по его текущему свойству стиля. Работа этого псевдокласса основана на использовании функции [`window.getComputedStyle`](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle).
 
-**Syntax**
+**Синтаксис**
 ```
 /* element style matching */
 selector:matches-css(property-name ":" pattern)
@@ -1627,23 +1627,23 @@ selector:matches-css-before(property-name ":" pattern)
 selector:matches-css-after(property-name ":" pattern)
 ```
 
-Backward compatible syntax:
+Синтаксис обратной совместимости:
 ```
 selector[-ext-matches-css="property-name ":" pattern"]
 selector[-ext-matches-css-after="property-name ":" pattern"]
 selector[-ext-matches-css-before="property-name ":" pattern"]
 ```
 
-- `property-name` — a name of CSS property to check the element for
-- `pattern` —  a value pattern that is using the same simple wildcard matching as in the basic url filtering rules OR a regular expression. For this type of matching, AdGuard always does matching in a case insensitive manner. In the case of a regular expression, the pattern looks like `/regexp/`.
+- `property-name` — название CSS-свойства, которое будет проверено у элемента
+- `pattern` — паттерн значений, который использует то же простое сопоставление с wildcard-знаками, что и в основных правилах фильтрации URL-адресов, или регулярное выражение. Для этого типа соответствия AdGuard не обращает внимание на регистр. В случае с регулярными выражениями паттерн будет выглядеть так: `/regexp/`.
 
-> For non-regexp patterns, `(`,`)`,`[`,`]` must be unescaped, because we require escaping them in the filtering rules.
+> Для паттернов, не являющихся регулярными выражениями, символы `(`,`)`,`[`,`]` должны быть экранированы, потому что их экранирование требуется в правилах фильтрации.
 
-> For regexp patterns, `"` and `\` should be escaped, because we manually escape those in extended-css-selector.js.
+> Для регулярных выражений символы `"` и `\` должны быть экранированы, потому что мы вручную экранируем их в extended-css-selector.js.
 
 **Примеры**
 
-Selecting all `div` elements which contain pseudo-class `::before` with specified content:
+Выделение всех элементов `div`, содержащих псевдокласс `::before` с указанным содержимым:
 ```html
 <!-- HTML code -->
 <style type="text/css">
@@ -1655,35 +1655,35 @@ Selecting all `div` elements which contain pseudo-class `::before` with specifie
 <div id="not-to-be-blocked" class="banner"></div>
 ```
 
-Selector:
+Селектор:
 ```
-// Simple matching
+// Обычное соответствие
 div.banner:matches-css-before(content: block me)
-// Regular expressions
+// Регулярные выражения
 div.banner:matches-css-before(content: /block me/)
 ```
 
-Backward compatible syntax:
+Синтаксис обратной совместимости:
 ```
-// Simple matching
+// Обычное соответствие
 div.banner[-ext-matches-css-before="content: block me"]
-// Regular expressions
+// Регулярные выражения
 div.banner[-ext-matches-css-before="content: /block me/"]
 ```
 
-##### Pseudo-class `:matches-attr()`
+##### Псевдокласс `:matches-attr()`
 
-This pseudo-class allows to select an element by its attributes, especially if they are randomized.
+Этот псевдокласс позволяет выделить элемент по его атрибутам, особенно если они рандомизированы.
 
-**Syntax**
+**Синтаксис**
 ```
 selector:matches-attr("name"[="value"])
 ```
 
-- `name` — attribute name OR regular expression for attribute name
-- `value` — optional, attribute value OR regular expression for attribute value
+- `name` — это название атрибута или регулярное выражение для названия атрибута
+- `value` — необязательно, значение атрибута или регулярное выражение для значения атрибута
 
-> For regexp patterns, `"` and `\` should be escaped.
+> Для регулярных выражений символы `"` и `\` должны быть экранированы.
 
 **Примеры**
 
@@ -1722,21 +1722,21 @@ div:matches-attr("/-unit/"="/click/"):has(> span:contains(ads))
 *[class]:matches-attr("/.{5,}delay$/"="/^[0-9]*$/"):upward(2)
 ```
 
-##### Pseudo-class `:matches-property()`
+##### Псевдокласс `:matches-property()`
 
-This pseudo-class allows to select an element by its properties.
+Этот псевдокласс позволяет выделить элемент по его свойствам.
 
-**Syntax**
+**Синтаксис**
 ```
 selector:matches-property("name"[="value"])
 ```
 
-- `name` — property name OR regular expression for property name
-- `value` — optional, property value OR regular expression for property value
+- `name ` — название свойства или регулярное выражение для названия свойства
+- `value` — необязательно, значение свойства или регулярное выражение для значения свойства
 
-> For regexp patterns, `"` and `\` should be escaped.
+> Для регулярных выражений символы `"` и `\` должны быть экранированы.
 
-> `name` supports regexp for property in chain, e.g. `prop./^unit[\\d]{4}$/.type`
+> `name` поддерживает регулярные выражения для обозначения свойства в цепи, например, `prop./^unit[\\d]{4}$/.type`
 
 **Примеры**
 
@@ -1759,58 +1759,58 @@ divProperties = {
 ```
 
 ```
-// element with such properties can be matched by any of such rules:
+// элемент с такими свойствами может соответствовать любому из этих правил:
 div:matches-property("check.track")
 div:matches-property("check./^unit_.{4,6}$/"))
 div:matches-property("memoizedProps.key"="null")
 div:matches-property("memoizedProps._owner.src"="/ad/")
 ```
 
- For filters maintainers
+ Для разработчиков фильтров
 
-  To check properties of specific element, do:
-  1. Select the element on the page.
-  2. Go to Console tab and run `console.dir($0)`.
+  Чтобы проверить свойства элемента, нужно:
+  1. Выбрать элемент на странице.
+  2. Перейти во вкладку «Консоль» и запустить `console.dir($0)`.
 
-##### Pseudo-class `:xpath()`
+##### Псевдокласс `:xpath()`
 
-This pseudo-class allows to select an element by evaluating an XPath expression.
+Этот псевдокласс позволяет выбирать элементы согласно выражению Xpath.
 
-> **Can be placed only at the end of a selector, except for [pseudo-class `:remove()`](#remove-pseudos).**
+> **Может быть размещён только в конце селектора, за исключением использования [псевдокласса `:remove()`](#remove-pseudos).**
 
-The `:xpath()` pseudo-class is different from other pseudo-classes. Whereas all other operators are used to filter down a resultset of elements, the `:xpath()` operator can be used both to create a new resultset or filter down an existing one. For this reason, subject `selector` is optional. For example, an `:xpath()` operator could be used to create a new resultset consisting of all ancestor elements of a subject element, something not otherwise possible with either plain CSS selectors or other procedural operators.
+Псевдокласс `:xpath()` отличается от других тем, что он может использоваться не только для фильтрации текущей выборки элементов, но и для расширения или создания новой.  По этой причине тема `selector` является необязательной. Например, оператор `:xpath()` может использоваться для выбора всех родительских элементов, что невозможно было бы сделать с помощью обычных CSS-селекторов или других процедурных операторов.
 
-**Syntax**
+**Синтаксис**
 ```
 [selector]:xpath(expression)
 ```
 
-- `selector`- optional, a plain CSS selector, or a Sizzle compatible selector
-- `expression` — a valid XPath expression
+- `selector` — необязательно, простой CSS-селектор или селектор, совместимый с Sizzle
+- `expression` — допустимое XPath выражение
 
 **Примеры**
 ```
-// Filtering results from selector
+// Фильтрация результатов выборки селектора
 div:xpath(//*[@class="test-xpath-class"])
 div:has-text(/test-xpath-content/):xpath(../../..)
-// Use xpath only to select elements
+// Использование xpath для выборки элементов
 facebook.com##:xpath(//div[@id="stream_pagelet"]//div[starts-with(@id,"hyperfeed_story_id_")][.//h6//span/text()="People You May Know"])
 ```
 
-##### Pseudo-class `:nth-ancestor()`
+##### Псевдокласс `:nth-ancestor()`
 
-This pseudo-class allows to lookup the nth ancestor relative to the currently selected node.
+Этот псевдокласс позволяет выбирать родительские элементы указанного n-поколения относительно элемента.
 
-It is a low-overhead equivalent to `:xpath(..[/..]*)`.
+Это своего рода эквивалент `:xpath(..[/..]*)`.
 
-> **Can be placed only at the end of a selector, except for [pseudo-class `:remove()`](#remove-pseudos).**
+> **Может быть размещён только в конце селектора, за исключением использования [псевдокласса `:remove()`](#remove-pseudos).**
 
-**Syntax**
+**Синтаксис**
 ```
 selector:nth-ancestor(n)
 ```
-- `selector` — a plain CSS selector, or a Sizzle compatible selector.
-- `n` — positive number >= 1 and < 256, distance from the currently selected node.
+- `селектор` — обычный CSS-селектор или селектор, совместимый с Sizzle.
+- `n` — натуральное число >= 1 and < 256, расстояние от текущего выбранного узла.
 
 **Примеры**
 ```
@@ -1818,22 +1818,22 @@ div.test:nth-ancestor(4)
 div:has-text(/test/):nth-ancestor(2)
 ```
 
-##### Pseudo-class `:upward()`
+##### Псевдокласс `:upward()`
 
-This pseudo-class allows to lookup the ancestor relative to the currently selected node.
+Этот псевдокласс позволяет искать ближайшие родительские элементы относительно указанного узла.
 
-> **Can be placed only at the end of a selector, except for [pseudo-class `:remove()`](#remove-pseudos).**
+> **Может быть размещён только в конце селектора, за исключением использования [псевдокласса `:remove()`](#remove-pseudos).**
 
-**Syntax**
+**Синтаксис**
 ```
-/* selector parameter */
+/* параметр в виде селектора */
 subjectSelector:upward(targetSelector)
-/* number parameter */
+/* параметр в виде числа */
 subjectSelector:upward(n)
 ```
-- `subjectSelector` — a plain CSS selector, or a Sizzle compatible selector
-- `targetSelector` — a valid plain CSS selector
-- `n` — positive number >= 1 and < 256, distance from the currently selected node
+- `subjectSelector ` — обычный CSS-селектор или селектор, совместимый с Sizzle
+- `targetSelector` — допустимый обычный CSS-селектор
+- `n` — натуральное число >= 1 and < 256, расстояние от текущего выбранного узла
 
 **Примеры**
 ```
@@ -1843,20 +1843,20 @@ div.test:upward(4)
 div:has-text(/test/):upward(2)
 ```
 
-##### Pseudo-class `:remove()` and pseudo-property `remove` {#remove-pseudos}
+##### Псевдокласс `:remove()` и псевдосвойство `remove` {#remove-pseudos}
 
-Sometimes, it is necessary to remove a matching element instead of hiding it or applying custom styles. In order to do it, you can use pseudo-class `:remove()` as well as pseudo-property `remove`.
+Иногда необходимо удалить определённый элемент, а не просто скрыть его или применить какие-либо правила стиля. В таких случаях можно использовать псевдокласс `:remove()` или псевдосвойство `remove`.
 
-> **Pseudo-class `:remove()` can be placed only at the end of a selector.**
+> **Псевдокласс `:remove()` может быть только в конце селектора.**
 
-**Syntax**
+**Синтаксис**
 ```
-! pseudo-class
+! псевдокласс
 selector:remove()
-! pseudo-property
+! псевдосвойство
 selector { remove: true; }
 ```
-- `selector` — a plain CSS selector, or a Sizzle compatible selector
+- `selector` — обычный CSS-селектор или селектор, совместимый с Sizzle
 
 **Примеры**
 ```
@@ -1867,27 +1867,27 @@ div:contains(target text) { remove: true; }
 div[class]:has(> a:not([id])) { remove: true; }
 ```
 
-> All style properties will be ignored if `:remove()` pseudo-class or `remove` pseudo-property is used.
+> Если используется псевдокласс `:remove()` или псевдосвойство `remove`, то другие свойства этого стиля будут проигнорированы.
 
-### Cosmetic rules priority {#cosmetic-rules-priority}
+### Приоритет косметических правил {#cosmetic-rules-priority}
 
-The way **element hiding** and **CSS rules** are applied is platform-specific.
+То, как применяются правила **скрытия элементов** и **CSS-правил**, зависит от платформы.
 
-**In AdGuard for Windows, Mac, and Android**, we use a stylesheet injected into the page. The priority of cosmetic rules is the same as any other websites' CSS stylesheet. But there is a limitation: [element hiding](#elemhide-syntax) and [CSS rules](#cosmetic-css-rules) cannot override inline styles. In such cases, it is recommended to use extended selectors or HTML filtering.
+**В AdGuard для Windows, Mac и Android** мы используем таблицу стилей, встроенную в страницу. Приоритет у косметических правил такой же, как и у любых других таблиц стилей CSS на сайтах. Но есть ограничение: [правила скрытия элементов](#elemhide-syntax) и [CSS-правила](#cosmetic-css-rules) не могут обходить встроенные стили. В таких случаях рекомендуется использовать расширенные селекторы или HTML-фильтрацию.
 
-**In AdGuard Browser extension**, the so called "user stylesheets" are used. They have higher priority than even the inline styles.
+**В Браузерном расширении AdGuard** используются так называемые «пользовательские таблицы стилей». Их приоритет выше, даже чем у встроенных стилей.
 
-**Extended CSS selectors** use Javascript to work and basically add an inline style themselves, therefore they can override any style.
+**Расширенные CSS-селекторы** используют для работы Javascript и добавляют встроенные стили сами, поэтому могут игнорировать любой стиль.
 
-## HTML filtering rules {#html-filtering-rules}
+## Правила фильтрации HTML {#html-filtering-rules}
 
-In most cases, the basis and cosmetic rules are enough to filter ads. But sometimes it is necessary to change the HTML-code of the page itself before it is loaded. This is when you need filtering rules for HTML content. They allow to indicate the HTML elements to be cut out before the browser loads the page.
+В большинстве случаев для фильтрации рекламы достаточно базовых и косметических правил. Но иногда необходимо изменить HTML-код самой страницы перед её загрузкой. Чтобы сделать это, применяются правила фильтрации HTML-контента. Они позволяют указать, какие HTML-элементы необходимо вырезать из страницы перед тем, как страница попадёт в браузер.
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> HTML filtering rules are supported by AdGuard for Windows, Mac, Android, and AdGuard Browser extension for Firefox. Such rules do not work in extensions for other browsers because they are unable to modify content on network level.
+> HTML-правила фильтрации поддерживаются в AdGuard для Windows, Mac, Android и Браузерном расширении AdGuard для Firefox. Такие правила не работают в расширениях для других браузеров, потому что они не могут модифицировать содержимое страниц на сетевом уровне.
 
-**Syntax**
+**Синтаксис**
 
 ```
       rule = [domains] "$$" tagName [attributes]
@@ -1895,380 +1895,380 @@ In most cases, the basis and cosmetic rules are enough to filter ads. But someti
 attributes = "[" name0 = value0 "]" "[" name1 = value2 "]" ... "[" nameN = valueN "]"
 ```
 
-* **`tagName`** — name of the element in lower case, for example `div` or `script`.
-* **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules syntax](#elemhide-syntax).
-* **`attributes`** — a list of attributes, that limit the elements selection. `name` — attribute name, `value` — substring, that is contained in attribute value.
+* **`tagName`** — имя элемента в нижнем регистре, например, `div` или `script`.
+* **`domains`** — доменное ограничение для правила. Те же принципы, что и в [синтаксисе правил скрытия элементов](#elemhide-syntax).
+* **`attributes`** — список атрибутов, ограничивающих выбор элементов. `name` — имя атрибута, `value` — подстрока, которая содержится в значении атрибута.
 
 **Примеры**
 
-**HTML code:**
+**HTML-код:**
 ```html
 <script data-src="/banner.js"></script>
 ```
 
-**Rule:**
+**Правило:**
 ```
 example.org$$script[data-src="banner"]
 ```
 
-This rule removes all `script` elements with the attribute `data-src` containing the substring `banner`. The rule applies only to `example.org` and all its subdomains.
+Это правило удалит из кода страниц все элементы `script` со значением `data-src`, содержащим подстроку `banner`. При этом правило будет работать только для домена `example.org` и всех его поддоменов.
 
-**Special attributes**
+**Специальные атрибуты**
 
-In addition to usual attributes, which value is every element checked for, there is a set of special attributes that change the way a rule works. Below there is a list of these attributes:
+Помимо обычных атрибутов, значение которых проверяется у каждого элемента, существует набор специальных атрибутов правила, которые изменяют способ работы правила. Ниже мы перечислим все эти атрибуты:
 
 * **`tag-content`**
 
-This is the most frequently used special attribute. It limits selection with those elements whose innerHTML code contains the specified substring.
+Пожалуй, наиболее часто используемый специальный атрибут. Он ограничивает выбор теми элементами, внутренний HTML-код которых (innerHTML) содержит указанную подстроку.
 
-> You should use `""` to escape `"`, for instance: `$$script[tag-content="alert(""this is ad"")"]`
+> Используйте `""` для экранирования `"`, например: `$$script[tag-content="alert(""this is ad"")"]`
 
-For example, take a look at this HTML code:
+Например, рассмотрим такой HTML код:
 ```html
 <script type="text/javascript">
     document.write('<div>banner text</div>" />');
 </script>
 ```
 
-Following rule will delete all `script` elements with a `banner` substring in their code:
+Следующее правило удалит все `script` элементы с подстрокой `banner` в их коде:
 ```
 $$script[tag-content="banner"]
 ```
 
-> **Nested elements**
+> **Вложенные элементы**
 > 
-> If we are dealing with multiple nested elements and they all fall within the same HTML filtering rule, they all are going to be deleted.
+> Если мы имеем дело с несколькими вложенными друг в друга элементами, каждый из которых подходит под одно и то же правило фильтрации HTML-контента, то удалены будут все эти элементы.
 
 * **`wildcard`**
 
-This special attribute works almost like `tag-content` and allows you to check the innerHTML code of the document. Rule will check if HTML code of the element fits to the [search pattern](https://en.wikipedia.org/wiki/Glob_(programming)).
+Этот специальный атрибут работает почти как `tag-content` и позволяет проверить внутренний HTML-код элемента. Правило проверит, удовлетворяет ли HTML-код элемента заданному [шаблону поиска](https://ru.wikipedia.org/wiki/Шаблон_поиска).
 
-> You should use `""` to escape `"`, for instance: `$$script[wildcard=""banner""]`
+> Используйте `""` для экранирования `"`, например: `$$script[wildcard=""banner""]`
 
-For example: `$$script[wildcard="*banner*text*"]`
+Например: `$$script[wildcard="*banner*text*"]`
 
-It will check, if the code of element contains two consecutive substrings `banner` and `text`.
+Оно проверит, что код элемента содержит две последовательные подстроки `banner` и `text`.
 
 * **`max-length`**
 
-Specifies the maximum length for content of HTML element. If this parameter is set and the content length exceeds the value, a rule does not apply to the element.
+Задает максимальную длину содержимого HTML-элемента. Если этот параметр задан и длина содержимого превышает заданное значение, правило не применяется к элементу.
 
-> **Default value**
+> **Значение по умолчанию**
 > 
-> If this parameter is not specified, the `max-length` is considered to be 8192.
+> Если этот параметр не задан, то `max-length` считается равным 8192.
 
 Например:
 ```
 $$div[tag-content="banner"][max-length="400"]
 ```
-This rule will remove all the `div` elements, whose code contains the substring `banner` and the length of which does not exceed `400` characters.
+Это правило удалит все элементы `div`, код которых содержит подстроку `banner` и длина которых не превышает `400` символов.
 
 * **`min-length`**
 
-Specifies the minimum length for content of HTML element. If this parameter is set and the content length is less than preset value, a rule does not apply to the element.
+Задаёт минимальную длину содержимого HTML-элемента. Если этот параметр задан, и длина содержимого меньше заданного значения — правило не применяется к элементу.
 
 Например:
 ```
 $$div[tag-content="banner"][min-length="400"]
 ```
 
-This rule will remove all the `div` elements, whose code contains the substring `banner` and the length of which exceeds `400` characters.
+Это правило удалит все элементы `div`, код которых содержит подстроку `banner` и длина которых превышает `400` символов.
 
-**Exceptions**
+**Исключения**
 
-Similar to hiding rules, there is a special type of rules that disable the selected HTML filtering rule for particular domains. The syntax is the same, you just have to change `$$` to `$@$`.
+По аналогии с правилами скрытия, существует специальный тип правил, отключающий действие выбранного правила HTML-фильтрации для определённых доменов. Синтаксис правил-исключений такой же, только маркер `$$` заменяется на `$@$`.
 
-For example, there is a rule in filter:
+Например, в фильтре есть правило:
 ```
 $$script[tag-content="banner"]
 ```
 
-If you want to disable it for `example.com`, you can create an exception rule:
+Если вы хотите отключить его для домена `example.com`, вы можете создать правило исключения:
 ```
 example.com$@$script[tag-content="banner"]
 ```
 
-Sometimes, it may be necessary to disable all restriction rules. For example, to conduct tests. To do this, use the exclusion rule without specifying a domain.
+В некоторых случаях может потребоваться отключение всех запрещающих правил. Например, на время тестирования. Для этого воспользуйтесь правилом исключения без указания домена.
 ```
 $@$script[tag-content="banner"]
 ```
 
-We recommend to use this kind of exceptions only if it is not possible to change the hiding rule itself. In other cases it is better to change the original rule, using domain restrictions.
+Применять такие исключения рекомендуется только в случае, когда изменить само правило скрытия невозможно. Во всех остальных случаях лучше изменить исходное правило, используя ограничение на домены.
 
-## Javascript rules {#javascript-rules}
+## Правила Javascript {#javascript-rules}
 
-AdGuard supports a special type of rules that allows you to inject any javascript code to websites pages.
+AdGuard поддерживает специальный тип правил, позволяющий вставить любой javascript-код на страницы сайтов.
 
-> **Restrictions**
+> **Ограничения**
 > 
-> Javascript rules can be used **only in trusted filters**. This category includes your own **User rules** and all the filters created by AdGuard Team.
+> Правила Javascript можно использовать **только в доверенных фильтрах**. Эта категория включает в себя **Пользовательские правила**, а также все фильтры, разработанные командой AdGuard.
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> Javascript rules are not supported by AdGuard Content Blocker.
+> Javascript-правила не поддерживаются в AdGuard Content Blocker.
 
-We **strongly recommend** using [scriptlets](#scriptlets) instead of Javascript rules whenever possible. JS rules are supposed to help with debugging, but as a long-time solution a scriptlet rule should be used.
+Мы **настоятельно рекомендуем** использовать [скриптлеты](#scriptlets) вместо Javascript-правил везде, где это возможно. JS-правила должны помочь в процессе отладки, но в качестве долгосрочного решения следует использовать скриптлеты.
 
-**Syntax**
+**Синтаксис**
 
 ```
 rule = [domains]  "#%#" script
 ```
 
-* **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules](#elemhide-syntax).
-* **`script`** — arbitrary javascript code **in one string**.
+* **`domains`** — ограничение на домены, на страницах которых будет применено правило. Строится по тем же правилам, что и в случае [правил скрытия элементов](#elemhide-syntax).
+* **`script`** — произвольный javascript-код **в одну строку**.
 
 **Примеры**
 
-* `example.org#%#window.__gaq = undefined;` executes the code `window.__gaq = undefined;` on all pages at `example.org` and all subdomains.
+* `example.org#%#window.__gaq = undefined;` выполняет код `window.__gaq = undefined;` на всех страницах сайта `example.org` и всех его поддоменах.
 
-**Exceptions**
+**Исключения**
 
-Similar to hiding rules, there is a special type of rules that disable the selected javascript rule for particular domains. The syntax is the same, you just have to change `#%#` to `#@%#`.
+По аналогии с правилами скрытия, существует специальный тип правил, отключающий действие выбранного javascript-правила фильтрации для определённых доменов. Синтаксис правил-исключений такой же, только маркер `#%#` заменяется на `#@%#`.
 
-For example, there is a rule in filter:
+Например, в фильтре есть правило:
 ```
 #%#window.__gaq = undefined;
 ```
 
-If you want to disable it for `example.com`, you can create an exception rule:
+Если вы хотите отключить его для домена `example.com`, вы можете создать правило исключения:
 ```
 example.com#@%#window.__gaq = undefined;
 ```
 
-Sometimes, it may be necessary to disable all restriction rules. For example, to conduct tests. To do this, use the exclusion rule without specifying a domain.
+В некоторых случаях может потребоваться отключение всех запрещающих правил. Например, на время тестирования. Для этого следует воспользоваться правилом исключения без указания домена.
 ```
 #@%#window.__gaq = undefined;
 ```
 
-We recommend to use this kind of exceptions only if it is not possible to change the hiding rule itself. In other cases it is better to change the original rule, using domain restrictions.
+Применять такие исключения рекомендуется только в случае, когда изменить само правило скрытия невозможно. Во всех остальных случаях лучше изменить исходное правило, используя ограничение на домены.
 
-## Scriptlet rules {#scriptlets}
+## Правила скриптлета {#scriptlets}
 
-Scriptlet is a JavaScript function that provides extended capabilities for content blocking. These functions can be used in a declarative manner in AdGuard filtering rules.
+Скриптлет — это функция JavaScript с расширенными возможностями для блокировки контента. Такие функции могут использоваться в декларативной манере в правилах фильтрации AdGuard.
 
-> AdGuard supports a lot of different scriptlets. In order to achieve cross-blocker compatibility, we also support syntax of uBO and ABP.
+> AdGuard поддерживает множество различных скриптлетов. Чтобы добиться совместимости между различными блокировщиками, мы также поддерживаем синтаксис uBO и ABP.
 
-**Syntax**
+**Синтаксис**
 
 ```
 rule = [domains]  "#%#//scriptlet(" scriptletName arguments ")"
 ```
 
-* **`scriptletName`** — required, a name of the scriptlet from AdGuard's Scriptlets library
-* **`arguments`** — optional, a list of `string` arguments (no other types of arguments are supported)
+* **`scriptletName`** (обязательно) — это имя скриптлета из библиотеки скриптлетов AdGuard
+* **`arguments`** (опционально) — это список аргументов в формате `string` (другие типы аргументов не поддерживаются)
 
 **Примеры**
 
 ```
 example.org#%#//scriptlet("abort-on-property-read", "alert")
 ```
-This rule will be applied to `example.org` and subdomains pages and will execute the `abort-on-property-read` scriptlet with the `alert` parameter.
+Это правило применится на страницах домена `example.org` и его поддоменов и выполнит скриптлет `abort-on-property-read` с параметром `alert`.
 
-Learn more [how to debug scriptlets](#debug-scriptlets).
+Подробнее об [отладке скриптлетов](#debug-scriptlets).
 
-More information about scriptlets can be found [on GitHub](https://github.com/AdguardTeam/Scriptlets#scriptlets).
+Больше информации о скриптлетах можно найти на [GitHub](https://github.com/AdguardTeam/Scriptlets#scriptlets).
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> Scriptlet rules are not supported by AdGuard Content Blocker.
+> Скриптлеты не поддерживаются в AdGuard Content Blocker.
 
-## Modifiers for non-basic type of rules
+## Модификаторы для небазовых правил
 
-Each rule can be modified using the modifiers described in the following paragraphs.
+Поведение любого правила можно изменить, используя модификаторы, описанные ниже.
 
-**Syntax**
+**Синтаксис**
 
 ```
 rule = "[$" modifiers "]" [rule text]
 modifiers = modifier0[, modifier1[, ...[, modifierN]]]
 ```
 
-* **`modifier`** — set of the modifiers described below.
-* **`rule text`** — a rule to be modified.
+* **`modifier`** — набор модификаторов, описанных ниже.
+* **`rule text`** — правило, которое нужно модифицировать.
 
-For example, `[$domain=example.com,app=test_app]##selector`.
+Например: `[$domain=example.com,app=test_app]##selector`.
 
-In the modifiers values of the following characters must be escaped: `[`, `]`, `,`, and `\` (unless it is used for the escaping). Use `\` to escape them. For example, an escaped bracket looks like this: `\]`.
+В значениях модификаторов следующие символы должны быть экранированы: `[`, `]`, `,` и `\` (если он не используется для экранирования). Используйте `\`, чтобы экранировать их. Например, экранированная скобка выглядит так: `\]`.
 
 ### **`$app`** {#non-basic-app-modifier}
 
-`$app` modifier lets you narrow the rule coverage down to a specific application or a list of applications. The modifier's behavior and syntax perfectly match the corresponding [basic rules `$app` modifier](#app-modifier).
+Модификатор `$app` ограничивает действие правила до конкретного приложения или списка приложений. Поведение и синтаксис модификатора полностью совпадают с соответствующим [модификатором `$app` для базовых правил](#app-modifier).
 
 **Примеры**
 
-* `[$app=org.example.app]example.com##.textad` hides a `div` with a class `textad` at `example.com` and all subdomains in requests sent from the `org.example.app` Android app.
-* `[$app=~org.example.app1|~org.example.app2]example.com##.textad` hides a `div` with a class `textad` at `example.com` and all subdomains in requests sent from any app except `org.example.app1` and `org.example.app2`.
-* `[$app=com.apple.Safari]example.org#%#//scriptlet('prevent-setInterval', 'check', '!300')` applies scriptlet `prevent-setInterval` only in Safari browser on Mac.
-* `[$app=org.example.app]#@#.textad` disables all `##.textad` rules for all domains while using `org.example.app`.
+* `[$app=org.example.app]example.com##.textad` скрывает `div` с классом `textad` на `example.com` и всех поддоменах в запросах, отправленных из приложения Android `org.example.app`.
+* `[$app=~org.example.app1|~org.example.app2]example.com##.textad` скрывает `div` с классом `textad` на `example.com` и всех поддоменах в запросах, отправленных из любого приложения, кроме `org.example.app1` и `org.example.app2`.
+* `[$app=com.apple.Safari]example.org#%#//scriptlet('prevent-setInterval', 'check', '!300')` применяет скриптлет `prevent-setInterval` только в браузере Safari на Mac.
+* `[$app=org.example.app]#@#.textad` отключает все правила `##.textad` для всех доменов при использовании `org.example.app`.
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> Such rules with `$app` modifier are supported by AdGuard for Windows, Mac and Android.
+> Такие правила с модификатором `$app` поддерживаются AdGuard для Windows, Mac и Android.
 
 ### **`$domain`** {#non-basic-domain-modifier}
 
-`$domain` modifier limits the rule application area to a list of domains and their subdomains. The modifier's behavior and syntax perfectly match the corresponding [basic rules `$domain` modifier](#domain-modifier).
+Модификатор `$domain` ограничивает область действия правила списком доменов и их поддоменов. Поведение и синтаксис модификатора полностью совпадают с соответствующим [модификатором `$domain` для базовых правил](#domain-modifier).
 
 **Примеры**
 
-* `[$domain=example.com]##.textad` — hides a `div` with a class `textad` at `example.com` and all subdomains.
-* `[$domain=example.com|example.org]###adblock` — hides an element with attribute `id` equals `adblock` at `example.com`, `example.org` and all subdomains.
-* `[$domain=~example.com]##.textad` — this rule hides `div` elements of the class `textad` for all domains, except `example.com` and its subdomains.
+* `[$domain=example.com]##.textad` скроет элемент `div` с классом `textad` на домене `example.com` и всех его поддоменах.
+* `[$domain=example.com|example.org]` скроет элемент с атрибутом `id` равным `adblock` на доменах `example.com`, `example.org` и всех их поддоменах.
+* `[$domain=~example.com]##.textad` скроет элементы `div` с классом `textad` на всех доменах, кроме `example.com` и всех его поддоменов.
 
-Please note that there are 2 ways to specify domain restrictions for non-basic rules:
-1. the "classic" way is to specify domains before rule mask and attributes: `example.com##.textad`;
-2. the modifier approach is to specify domains via `$domain` modifier: `[$domain=example.com]##.textad`.
+Существует два способа указать доменные ограничения для косметических правил:
+1. «классический»: обозначить ограничение на домены перед маской и атрибутами правила: `example.com##.textad`;
+2. с помощью модификаторов: обозначить ограничение на домены через модификатор `$domain`: `[$domain=example.com]##.textad`.
 
-But rules with mixed style domains restriction are considered invalid. So, for example, the rule `[$domain=example.org]example.com##.textad` will be rejected.
+Правила, нарушающие эти ограничения, считаются недействительными. Например, правило `[$domain=example.org]example.com##.textad` будет отклонено.
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> Such rules with `$domain` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard Browser extension for Chrome, Firefox, Edge.
+> Правила с модификатором `$domain` поддерживаются в AdGuard для Windows, Mac, Android и Браузерном расширении AdGuard для Chrome, Firefox и Edge.
 
 ### **`$path`** {#non-basic-path-modifier}
 
-`$path` modifier limits the rule application area to specific locations or pages on websites.
+Модификатор `$path` ограничивает область применения правила определёнными местами или страницами на сайтах.
 
-**Syntax**
+**Синтаксис**
 
 ```
 $path ["=" pattern]
 ```
 
-`pattern` — optional, a path mask to which the rule is restricted. Its syntax and behavior are pretty much the same as with the [pattern for basic rules](#basic-rules-syntax). You can also use [special characters](#basic-rules-special-characters), except for `||`, which does not make any sense in this case (see examples below).
+`pattern` (опциональный) — это маска пути, которой ограничено правило. Его синтаксис и поведение почти такие же, как в [шаблоне базовых правил](#basic-rules-syntax). Вы также можете использовать [специальные символы](#basic-rules-special-characters), кроме `||`, который в этом случае не имеет смысла (см. примеры ниже).
 
-> If `pattern` is not set for `$path`, rule will apply only on the main page of website.
+> Если для `$path` не задан `pattern`, правило будет применяться только на главной странице сайта.
 
-> `$path` modifier matches the query string as well.
+> Модификатор `$path` также соответствует строке запроса.
 
-> `$path` modifier supports regular expressions in [the same way](#regexp-support) basic rules do.
+> Модификатор `$path` поддерживает регулярные выражения в [так же, как и базовые правила](#regexp-support).
 
 **Примеры**
 
-* `[$path=page.html]##.textad` hides a `div` with a class `textad` at `/page.html` or `/page.html?<query>` or `/sub/page.html` or `/another_page.html`
-* `[$path=/page.html]##.textad` hides a `div` with a class `textad` at `/page.html` or `/page.html?<query>` or `/sub/page.html` of any domain but not at `/another_page.html`
-* `[$path=|/page.html]##.textad` hides a `div` with a class `textad` at `/page.html` or `/page.html?<query>` of any domain but not at `/sub/page.html`
-* `[$path=/page.html|]##.textad` hides a `div` with a class `textad` at `/page.html` or `/sub/page.html` of any domain but not at `/page.html?<query>`
-* `[$path=/page*.html]example.com##.textad` hides a `div` with a class `textad` at `/page1.html` or `/page2.html` or any other path matching `/page<...>.html` of `example.com`
-* `[$path]example.com##.textad` hides a `div` with a class `textad` at the main page of `example.com`
-* `[$domain=example.com,path=/page.html]##.textad` hides a `div` with a class `textad` at `page.html` of `example.com` and all subdomains but not at `another_page.html`
-* `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` hides a `div` with a class `textad` at both `/sub1/page.html` and `/sub2/page.html` of any domain (please, note the [escaped special characters](#non-basic-rules-modifiers-syntax)
+* `[$path=page.html]##.textad` скрывает `div` с классом `textad` на `/page.html` или `/page.html?<query>` или `/sub/page.html` или `/another_page.html`
+* `[$path=/page.html]##.textad` скрывает `div` с классом `textad` на `/page.html` или `/page.html?<query>` или `/sub/page.html` любого домена, но не `/another_page.html`
+* `[$path=|/page.html]##.textad` скрывает `div` с классом `textad` на `/page.html` или `/page.html?<query>` любого домена, но не `/sub/page.html`
+* `[$path=/page.html|]##.textad` скрывает `div` с классом `textad` на `/page.html` или `/sub/page.html` любого домена, но не на `/ страница.html?<query>`
+* `[$path=/page*.html]example.com##.textad` скрывает `div` с классом `textad` на `/page1.html`, `/page2.html` или любом другом пути, соответствующем `/page<...>.html` сайта `example.com`
+* `[$path]example.com##.textad` скрывает `div` с классом `textad` на главной странице `example.com`
+* `[$domain=example.com,path=/page.html]##.textad` скрывает `div` с классом `textad` на `page.html` домена `example.com` и всех его поддоменах, но не на `other_page.html`
+* `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` скрывает `div` с классом `textad` как на `/sub1/page.html`, так и на `/sub2/page.html` любого домена (обратите внимание на [специальные экранированные символы](#non-basic-rules-modifiers-syntax))
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> Rules with `$path` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard Browser extension for Chrome, Firefox, Edge.
+> Правила с модификатором `$path` поддерживаются в AdGuard для Windows, Mac, Android и Браузерном расширении AdGuard для Chrome, Firefox и Edge.
 
 ### **`url`** {#non-basic-url-modifier}
 
-`$url` modifier limits the rule application area to URLs matching the specified mask.
+Модификатор `$url` ограничивает действие правила запросами, URL которых соответствует указанной маске.
 
-**Syntax**
+**Синтаксис**
 
 ```
 url = pattern
 ```
 
-where `pattern` is pretty much the same as [`pattern` of the basic rules](#basic-rules-syntax) assuming that [some characters](#non-basic-rules-modifiers-syntax) must be escaped. The [special characters](#basic-rules-special-characters) and [regular expressions](#regexp-support) are supported as well.
+где `pattern` — маска адреса, синтаксис которой соответствует маске адреса [`pattern` базовых правил](#basic-rules-syntax) за исключением того, что [некоторые символы](#non-basic-rules-modifiers-syntax) должны быть экранированы. [Специальные символы](#basic-rules-special-characters) и [регулярные выражения](#regexp-support) также поддерживаются.
 
 **Примеры**
 
-* `[$url=||example.com/ads/*]##.textad` hides a `div` with a class `textad` at addresses like `http://example.com/ads/banner.jpg` and even `http://subdomain.example.com/ads/otherbanner.jpg`.
-* `[$url=||example.org^]###adblock` hides an element with attribute `id` equal to `adblock` at `example.org` and its subdomains.
-* `[$url=/\[a-z\]+\\.example\\.com^/]##.textad` hides `div` elements of the class `textad` for all domains matching the regular expression `[a-z]+\.example\.com^`.
+* `[$url=||example.com/ads/*]##.textad` скрывает `div` с классом `textad` в запросах, например, к `http://example.com/ads/banner.jpg` и `http://subdomain.example.com/ads/otherbanner.jpg`.
+* `[$url=||example.org^]###adblock` скрывает элемент с атрибутом `id` равным `adblock` в запросах к `example.org` и всем его поддоменам.
+* `[$url=/\[a-z\]+\\.example\\.com^/]##.textad` скрывает `div` с классом `textad` в запросах ко всем доменам, соответствующим регулярному выражению `[a-z]+\.example\.com^`.
 
-> **Compatibility with different versions of AdGuard**
+> **Совместимость с различными версиями AdGuard**
 > 
-> Rules with the `$url` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**.
+> Правила с модификатором `$url` поддерживаются в AdGuard для Windows, Mac и Android с **CoreLibs версии 1.11 или выше**.
 
-## Information for filters maintainers
+## Информация для разработчиков фильтров
 
-If you maintain a third-party filter that is known to AdGuard, you might be interested in the information presented in this section. Please note that hints will be applied to registered filters only. The filter is considered to be registered and known by AdGuard, if it is present in the [known filters index](https://filters.adtidy.org/extension/chromium/filters.json). If you want your filter to be registered, please file an issue to [AdguardFilters repo](https://github.com/AdguardTeam/AdguardFilters).
+Если вы разрабатываете сторонний фильтр, известный AdGuard, вам может быть интересна информация, представленная в этом разделе. Пожалуйста, имейте в виду, что подсказки будут применяться только к зарегистрированным фильтрам. Фильтр считается зарегистрированным и известным AdGuard, если он присутствует в [перечне известных фильтров](https://filters.adtidy.org/extension/chromium/filters.json). Если вы желаете зарегистрировать свой фильтр, пожалуйста, направьте запрос в [репозиторий AdGuardFilters](https://github.com/AdguardTeam/AdguardFilters).
 
-### Pre-processor directives
+### Препроцессорные директивы
 
-We provide pre-processor directives that can be used by filters maintainers to improve compatibility with different ad blockers and provide:
-* [including a file](#include-directive)
-* [applying rules conditionally by ad blocker type](#conditions-directive)
-* [content blocker specifying for rules applying in Safari](#safari-affinity-directive)
+Мы предоставляем несколько препроцессорных директив, которые могут быть использованы разработчиками фильтров для улучшения совместимости с различными блокировщиками рекламы. Директивы могут:
+* [включать содержимое отдельного файла в фильтр](#include-directive)
+* [применять правила в зависимости от типа блокировщика](#conditions-directive)
+* [уточнять блокировщик контента для применения правил в Safari](#safari-affinity-directive)
 
-> **Note**
+> **Примечание**
 > 
-> Any mistake in a pre-processor directive will lead to AdGuard failing the filter update in the same way as if the filter URL was unavailable.
+> Любая ошибка в препроцессорной директиве приведёт к невозможности обновить фильтр, как если бы URL фильтра был недоступен.
 
-> Pre-processor directives can be used in the User Rules or in the custom filters.
+> Препроцессорные директивы можно использовать в Пользовательских правилах в собственных фильтрах.
 
-#### Including a file {#include-directive}
+#### Включение файла {#include-directive}
 
-The `!#include` directive allows to include contents of a specified file into the filter. It supports only files from the same origin to make sure that the filter maintainer is in control of the specified file. The included file can also contain pre-processor directives (even other `!#include` directives). Ad blockers should consider the case of recursive `!#include` and implement a protection mechanism.
+Директива `!#include` позволяет включать в фильтр содержимое заданного файла. Она поддерживает только файлы из того же источника, чтобы удостовериться, что разработчик фильтров является владельцем указанного файла. Включённый файл также может содержать препроцессорные директивы (даже другие` !#include` директивы). Блокировщики должны принимать во внимание случай рекурсивного использования `!#include` и внедрять защитный механизм.
 
-**Syntax**
+**Синтаксис**
 
 ```
 !#include file_path
 ```
 
-where `file_path` is a same origin absolute or relative file path to be included.
+где `file_path` — абсолютный (того же источника) или относительный путь к файлу.
 
-> The files must originate from the same domain but may be located in a different folder.
+> Файлы должны находиться на том же домене, но могут быть расположены в другой директории.
 
-> If included file is not found or unavailable, the whole filter update should fail.
+> Если включённый файл не найден или недоступен, не будут работать обновления всего фильтра.
 
-> Same-origin limitation should be disabled for local custom filters.
+> Для локальных собственных фильтров ограничение на тот же источник не распространяется.
 
 **Примеры**
 
-Filter URL: `https://example.org/path/filter.txt`
+URL фильтра: `https://example.org/path/filter.txt`
 ```
-! Valid (same origin):
+! Корректный (тот же источник):
 !#include https://example.org/path/includedfile.txt
 !
-! Valid (relative path):
+! Корректный (относительный путь):
 !#include /includedfile.txt
 !#include ../path2/includedfile.txt
 !
-! Invalid (another origin):
+! Некорректный (другой источник):
 !#include https://domain.com/path/includedfile.txt
 ```
 
-#### Conditions {#conditions-directive}
+#### Условия {#conditions-directive}
 
-Filters maintainers can use conditions to supply different rules depending on the ad blocker type. When an adblocker encounters an `!#if` directive, followed eventually by an `!#endif` directive, it will compile the code inside of the directives block only if the specified condition is true. Condition supports all the basic logical operators.
+Разработчики фильтров могут использовать условия, чтобы подставлять нужные правила, в зависимости от типа блокировщика. Когда блокировщик рекламы сталкивается с директивой `!#if`, за которой затем следует директива `!#endif`, он скомпилирует код внутри блока, только если выполнено указанное условие. Условие поддерживает все основные логические операторы.
 
-> A conditional directive beginning with an `!#if` directive must explicitly be terminated with an `!#endif` directive.
+> Директива с условием, начинающаяся с директивы `!#if`, должна явно прерываться директивой `!#endif`.
 
-> Whitespaces matter. `!#if` is a valid directive, while `!# if` is not.
+> Пробелы имеют значение. `!#if` — это корректная директива, в то время как `!# if` — не корректная.
 
-**Syntax**
+**Синтаксис**
 
 ```
 !#if (conditions)
 rules_list
 !#endif
 ```
-where:
-- `!#if (conditions)` — start of the block
-- `conditions` — just like in some popular programming languages, pre-processor conditions are based on constants declared by ad blockers. Ad blocker authors define on their own what exact constants do they declare. Possible values:
-  - `adguard` — declared always; shows maintainers that this is one of AdGuard products; should be enough in 95% of cases
-  - product-specific constants for cases when you need a rule to work (or not work — then `!` should be used before constant) in a specific product only:
-    - `adguard_app_windows` — AdGuard for Windows
-    - `adguard_app_mac` — AdGuard for Mac
-    - `adguard_app_android` — AdGuard for Android
-    - `adguard_app_ios` — AdGuard for iOS
-    - `adguard_ext_safari` — AdGuard for Safari
-    - `adguard_ext_chromium` — AdGuard Browser extension for Chrome (and chromium-based browsers, e.g. new Microsoft Edge)
-    - `adguard_ext_firefox` — AdGuard Browser extension for Firefox
-    - `adguard_ext_edge` — AdGuard Browser extension for Edge Legacy
-    - `adguard_ext_opera` — AdGuard Browser extension for Opera
-    - `adguard_ext_android_cb` — AdGuard Content Blocker for mobile Samsung and Yandex browsers
-    - `ext_ublock` — special case; this one is declared when a uBlock version of a filter is compiled by the [FiltersRegistry](https://github.com/AdguardTeam/FiltersRegistry)
-- `rules_list` — list of rules
-- `!#endif` — end of the block
+где:
+- `!#if (conditions)` — начало блока
+- `conditions` — точно так же, как и в случае с некоторыми популярными языками программирования, условия препроцессинга основаны на константах, объявляемых блокировщиками. Разработчики блокировщиков самостоятельно определяют, какие именно константы объявлять. Возможные значения:
+  - `adguard` объявляется всегда; даёт разработчикам фильтров понять, что это один из продуктов AdGuard; должно быть достаточно в 95% случаев
+  - специфичные для конкретных продуктов константы, которые нужны в редких случаях, когда правило должно работать (или не работать — тогда перед константой используйте `!`) только для конкретного продукта:
+    - `adguard_app_windows` — AdGuard для Windows
+    - `adguard_app_mac` — AdGuard для Mac
+    - `adguard_app_android` — AdGuard для Android
+    - `adguard_app_ios` — AdGuard для iOS
+    - `adguard_ext_safari` — AdGuard для Safari
+    - `adguard_ext_chromium` — Браузерное расширение AdGuard для Chrome (и браузеры на основе Chrome, например новый Microsoft Edge)
+    - `adguard_ext_firefox` — Браузерное расширение AdGuard для Firefox
+    - `adguard_ext_edge` — Браузерное расширение AdGuard для Edge Legacy
+    - `adguard_ext_opera` — Браузерное расширение AdGuard для Opera
+    - `adguard_ext_android_cb` — AdGuard Content Blocker для мобильных браузеров Samsung и Яндекс
+    - `ext_ublock` — особый случай; эта константа объявляется, когда версия фильтра для uBlock компилируется при помощи [FiltersRegistry](https://github.com/AdguardTeam/FiltersRegistry)
+- `rules_list` — список правил
+- `!#endif` — конец блока
 
 **Примеры**
 
 ```
-! for all AdGuard products except AdGuard for Safari
+! для всех продуктов AdGuard, кроме AdGuard для Safari
 !#if (adguard && !adguard_ext_safari)
 ||example.org^$third-party
 domain.com##div.ad
@@ -2276,203 +2276,203 @@ domain.com##div.ad
 ```
 
 ```
-! directives even can be combined
+! директивы также можно совмещать
 !#if (adguard_app_android)
 !#include /androidspecific.txt
 !#endif
 ```
 
-#### Safari affinity {#safari-affinity-directive}
+#### Влияние на Safari {#safari-affinity-directive}
 
-Safari is notoriously known for its harsh 50k max limit for filtering rules in content blockers. But in AdGuard for Safari and AdGuard for iOS max rule count is raised to 300k by splitting them into several content blockers. Generally, several filters categories are more or less independent, so there is such content blockers with such categories included:
-- AdGuard General — Ad Blocking, Language-specific
-- AdGuard Privacy — Privacy
-- AdGuard Social — Social Widgets, Annoyances
-- AdGuard Security — Security
-- AdGuard Other — Other
-- AdGuard Custom — Custom
+В Safari существует строгое ограничение в 150 тысяч правил на один блокировщик контента. Но в AdGuard для Safari и в AdGuard для iOS максимальное число поддерживаемых правил увеличено до 300 тысяч. Это получилось благодаря условному их разделению на несколько блокировщиков контента. Как правило, отдельные категории фильтров более или менее независимы, поэтому они поделены между блокировщиками контента следующим образом:
+- AdGuard General — Блокировка рекламы, Языковые
+- AdGuard Privacy — Антитрекинг
+- AdGuard Social — Виджеты социальных сетей, Раздражители
+- AdGuard Security — Безопасность
+- AdGuard Other — Другие
+- AdGuard Custom — Собственные
 
-> `User rules` and `Allowlist` are added to every content blocker.
+> `Пользовательские правила` и `Белый список` добавляются в каждый блокировщик контента.
 
-The main issue with using multiple content blockers is that rules inside these content blockers cannot influence each other. This may lead to different unexpected issues. So filters maintainers may use `!#safari_cb_affinity` to define Safari content blockers affinity for the rules inside of the directive block.
+Главный недостаток использования нескольких блокировщиков контента — это то, что они не могут работать вместе и ссылаться в своих правилах фильтрации друг на друга. Это может привести к неожиданным проблемам. Чтобы избежать этого и заставить правила внутри блока (из одного блокировщика) применяться вместе с правилами из другого блокировщика контента, разработчики фильтров могут использовать директиву `!#safari_cb_affinity`.
 
-**Syntax**
+**Синтаксис**
 
 ```
 !#safari_cb_affinity(content_blockers)
 rules_list
 !#safari_cb_affinity
 ```
-where:
-- `!#safari_cb_affinity(content_blockers)` — start of the block
-- `content_blockers` — comma-separated list of content blockers. Possible values:
-  - `general` — AdGuard General content blocker
-  - `privacy` — AdGuard Privacy content blocker
-  - `social` — AdGuard Social content blocker
-  - `security` — AdGuard Security content blocker
-  - `other` — AdGuard Other content blocker
-  - `custom` — AdGuard Custom content blocker
-  - `all` — special keyword that means that the rules must be included into **all** content blockers
-- `rules_list` — list of rules
-- `!#safari_cb_affinity` — end of the block
+где:
+- `!#safari_cb_affinity(content_blockers)` — начало блока
+- `content_blockers` — список блокировщиков контента, разделённых запятой. Возможные значения:
+  - `general` — блокировщик контента AdGuard General
+  - `privacy` — блокировщик контента AdGuard Privacy
+  - `social` — блокировщик контента AdGuard Social
+  - `security` — блокировщик контента AdGuard Security
+  - `other` — блокировщик контента AdGuard Other
+  - `custom` — блокировщик контента AdGuard Custom
+  - `all` — специальное ключевое слово, которое означает, что правила должны быть включены во **все** блокировщика контента
+- `rules_list` — список правил
+- `!#safari_cb_affinity` — конец блока
 
 **Примеры**
 
 ```
-! to unhide specific element which is hidden by AdGuard Base filter:
+! чтобы не скрывать указанный элемент, который скрывается Базовым фильтром:
 !#safari_cb_affinity(general)
 example.org#@#.adBanner
 !#safari_cb_affinity
 ```
 
 ```
-! to allowlist basic rule from AdGuard Tracking Protection filter filter:
+! чтобы разблокировать запрос, который блокируется Фильтром счётчиков и систем аналитики:
 !#safari_cb_affinity(privacy)
 @@||example.org^
 !#safari_cb_affinity
 ```
 
-### Hints
+### Подсказки
 
-"Hint" is a special comment, instruction to the filters compiler used on the server side (see [FiltersRegistry](https://github.com/AdguardTeam/FiltersRegistry)).
+«Подсказка» (hint) — это специальный комментарий, инструкция к компилятору фильтров, используемому на стороне сервера (см. [FiltersRegistry](https://github.com/AdguardTeam/FiltersRegistry)).
 
-**Syntax**
+**Синтаксис**
 
 ```
 !+ HINT_NAME1(PARAMS) HINT_NAME2(PARAMS)
 ```
 
-> Multiple hints can be applied.
+> Можно применить несколько подсказок.
 
 #### `NOT_OPTIMIZED` hint
 
-For each filter, AdGuard compiles two versions: full and optimized. Optimized version is much more lightweight and does not contain rules which are not used at all or used rarely.
+Для каждого фильтра AdGuard существуют две версии: полная и оптимизированная. Оптимизированная версия намного легче и не содержит правил, которые не используются вообще или используются редко.
 
-Rules usage frequency comes from the collected [filter rules statistics](./tracking-filter-statistics.md). But filters optimization is based on more than that — some filters have specific configuration. This is how it looks like for Base filter:
+Частота использования правил определяется собранной [статистикой по рекламным фильтрам](./tracking-filter-statistics.md). Но оптимизация основана также на исходной конфигурации для каждого фильтра. Например, вот так это выглядит для Базового фильтра:
 
 ```
-"filter": AdGuard Base filter,
+"filter": Базовый фильтр AdGuard,
 "percent": 30,
 "minPercent": 20,
 "maxPercent": 40,
 "strict": true
 ```
-where:
-* **filter** — filter identifier
-* **percent** — expected optimization percent `~= (rules count in optimized filter) / (rules count in original filter) * 100`
-* **minPercent** — lower bound of `percent` value
-* **maxPercent** — upper bound of `percent` value
-* **strict** — if `percent < minPercent` OR `percent > maxPercent` and strict mode is on then filter compilation should fail, otherwise original rules must be used
+где:
+* **filter** — идентификатор фильтра
+* **percent** — ожидаемый процент оптимизации `~= (количество правил в оптимизированном фильтре) / (количество правил в исходном фильтре) * 100`
+* **minPercent** — нижняя граница значения `percent`
+* **maxPercent** — верхняя граница значения `percent`
+* **Strict** — если `percent < minPercent` или `percent > maxPercent` и включён режим Strict, то компиляция фильтра должна завершиться неудачно, в противном случае должны использоваться оригинальные правила
 
-> In other words, `percent` is the "compression level". For instance, for the Base filter it is configured to 40%. It means that optimization algorithm should strip 60% of rules.
+> Другими словами, `percent` — это «уровень сжатия». Например, для Базового фильтра он настроен на 40%. Это означает, что алгоритм оптимизации должен убрать 60% правил.
 
-Eventually, here are the two versions of the Base filter for AdGuard Browser extension:
-- full: https://filters.adtidy.org/extension/chromium/filters/2.txt
-- optimized: https://filters.adtidy.org/extension/chromium/filters/2_optimized.txt
+В итоге, вот так выглядят версии Базового фильтра для Браузерного расширения AdGuard для Chrome:
+- полная: https://filters.adtidy.org/extension/chromium/filters/2.txt
+- оптимизированная: https://filters.adtidy.org/extension/chromium/filters/2_optimized.txt
 
-**If you want to add a rule which should not be removed at optimization use the `NOT_OPTIMIZED` hint:**
+**Если вы хотите добавить правило, которое не должно удаляться при оптимизации, используйте подсказку `NOT_OPTIMIZED`:**
 
 ```
 !+ NOT_OPTIMIZED
 ||example.org^
 ```
 
-**And this rule will not be optimized only for AdGuard for Android:**
+**А такое правило не будет оптимизировано только для AdGuard для Android:**
 
 ```
 !+ NOT_OPTIMIZED PLATFORM(android)
 ||example.org^
 ```
 
-#### `PLATFORM` and `NOT_PLATFORM` hints
+#### Подсказки `PLATFORM` и `NOT_PLATFORM`
 
-Used to specify the platforms to apply the rules. List of existing platforms and links to Base filter, for example, for each of them:
+Записи этого типа позволяют указывать платформу, для которой применяется правило. Ниже представлен список используемых платформ и ссылки на Базовый фильтр для каждой из них:
 
-* `windows` — AdGuard for Windows — [https://filters.adtidy.org/windows/filters/2.txt](https://filters.adtidy.org/windows/filters/2.txt)
+* `windows` — AdGuard для Windows — [https://filters.adtidy.org/windows/filters/2.txt](https://filters.adtidy.org/windows/filters/2.txt)
 
-* `mac` — AdGuard for Mac — [https://filters.adtidy.org/mac_v2/filters/2.txt](https://filters.adtidy.org/mac_v2/filters/2.txt)
+* `mac` — AdGuard для Mac — [https://filters.adtidy.org/mac_v2/filters/2.txt](https://filters.adtidy.org/mac_v2/filters/2.txt)
 
-* `android` — AdGuard for Android — [https://filters.adtidy.org/android/filters/2.txt](https://filters.adtidy.org/android/filters/2.txt)
+* `android` — AdGuard для Android — [https://filters.adtidy.org/android/filters/2.txt](https://filters.adtidy.org/android/filters/2.txt)
 
-* `ios` — AdGuard for iOS — [https://filters.adtidy.org/ios/filters/2.txt](https://filters.adtidy.org/ios/filters/2.txt)
+* `ios` — AdGuard для iOS — [https://filters.adtidy.org/ios/filters/2.txt](https://filters.adtidy.org/ios/filters/2.txt)
 
-* `ext_chromium` — AdGuard Browser extension for Chrome — [https://filters.adtidy.org/extension/chromium/filters/2.txt](https://filters.adtidy.org/extension/chromium/filters/2.txt)
+* `ext_chromium` — Браузерное расширение AdGuard для Chrome — [https://filters.adtidy.org/extension/chromium/filters/2.txt](https://filters.adtidy.org/extension/chromium/filters/2.txt)
 
-* `ext_ff` — AdGuard Browser extension for Firefox — [https://filters.adtidy.org/extension/firefox/filters/2.txt](https://filters.adtidy.org/extension/firefox/filters/2.txt)
+* `ext_ff` — Браузерное расширение AdGuard для Firefox — [https://filters.adtidy.org/extension/firefox/filters/2.txt](https://filters.adtidy.org/extension/firefox/filters/2.txt)
 
-* `ext_edge` — AdGuard Browser extension for Edge — [https://filters.adtidy.org/extension/edge/filters/2.txt](https://filters.adtidy.org/extension/edge/filters/2.txt)
+* `ext_edge` — Браузерное расширение AdGuard для Edge — [https://filters.adtidy.org/extension/edge/filters/2.txt](https://filters.adtidy.org/extension/edge/filters/2.txt)
 
-* `ext_opera` — AdGuard Browser extension for Opera — [https://filters.adtidy.org/extension/opera/filters/2.txt](https://filters.adtidy.org/extension/opera/filters/2.txt)
+* `ext_opera` — Браузерное расширение AdGuard для Opera — [https://filters.adtidy.org/extension/opera/filters/2.txt](https://filters.adtidy.org/extension/opera/filters/2.txt)
 
-* `ext_safari` — AdGuard for Safari — [https://filters.adtidy.org/extension/safari/filters/2.txt](https://filters.adtidy.org/extension/safari/filters/2.txt)
+* `ext_safari` — AdGuard для Safari — [https://filters.adtidy.org/extension/safari/filters/2.txt](https://filters.adtidy.org/extension/safari/filters/2.txt)
 
-* `ext_android_cb` — AdGuard Content Blocker - [https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt](https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt)
+* `ext_android_cb` — AdGuard Content Blocker — [https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt](https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt)
 
 * `ext_ublock` — uBlock Origin — [https://filters.adtidy.org/extension/ublock/filters/2.txt](https://filters.adtidy.org/extension/ublock/filters/2.txt)
 
 **Примеры**
 
-This rule will be available only in AdGuard for Windows, Mac, Android:
+Это правило будет действовать только в AdGuard для Windows, Mac, Android:
 ```
 !+ PLATFORM(windows,mac,android)
 ||example.org^
 ```
 
-This rule will be available for every platform except AdGuard for Safari, Android Content Blocker, and AdGuard for iOS:
+Это правило будет действовать для всех платформ, кроме AdGuard для Safari, AdGuard Content Blocker и AdGuard для iOS:
 ```
 !+ NOT_PLATFORM(ext_safari, ext_android_cb, ios)
 ||example.org^
 ```
 
-## How to debug filtering rules
+## Как отлаживать правила фильтрации
 
-It may be possible to create simple filtering rules "in your head" but for anything even slightly more complicated you will need additional tools to debug and iterate them. There are tools to assist you with that. You can use DevTools in Chrome and its analogs in other browsers but most AdGuard products provide another one — Filtering log.
+Хоть самые простые правила фильтрации и возможно придумать «в голове», для чего-то чуть более сложного вам потребуются дополнительная помощь в их отладке и повторении. Есть инструменты, которые помогут вам в этом. Вы можете использовать «Инструменты разработчика» в Chrome и их аналоги в других браузерах, но большинство продуктов AdGuard предоставляют и другой инструмент — Журнал фильтрации.
 
-### Filtering log
+### Журнал фильтрации
 
-Filtering log is an advanced tool that will be helpful mostly to filter developers. It lists all web requests that pass through AdGuard, gives you exhaustive information on each of them, offers multiple sorting options, and has other useful features.
+Журнал фильтрации — продвинутый инструмент, который полезен в основном разработчикам фильтров. В нём отображаются все веб-запросы, проходящие через AdGuard, даётся исчерпывающая информация по каждому из них, предлагаются различные опции сортировки и другие полезные возможности.
 
-Depending on which AdGuard product you are using, Filtering log can be located in different places.
+В зависимости от используемого вами продукта AdGuard, Журнал фильтрации может находиться в различных пунктах меню.
 
-* In **AdGuard for Windows** you will find it inside *Ad Blocker* tab or via the tray menu;
-* In **AdGuard for Mac** it is under *Settings > Advanced > Filtering log*;
-* In **AdGuard for Android** it is a separate item in the side menu, also filtering log for a specific app or website is accessible from the Assistant.
-* In **AdGuard Browser extension** it is accessible from the *Miscellaneous* settings tab or by right-clicking the extension icon. Only Chromium- and Firefox-based browsers show applied **element hiding rules** (including CSS, ExtCSS) and **JS rules and scriptlets** in their Filtering logs.
+* В **AdGuard для Windows** вы найдёте его во вкладке настроек *Антибаннер* или через меню трея;
+* В **AdGuard для Mac** он располагается в разделе *Настройки > Дополнительно > Журнал запросов*;
+* В **AdGuard для Android** это отдельный пункт бокового меню. Также в Журнал фильтрации отдельного приложения или сайта можно перейти из Помощника.
+* В **Браузерном расширении AdGuard** он находится во вкладке настроек *Дополнительно*, а также доступен после правого клика по иконке расширения. Только браузеры на основе Chromium и Firefox отображают **правила скрытия элементов** (включая CSS, ExtCSS) и **JS-правила и скриптлеты** в своих Журналах фильтрации.
 
-> In **AdGuard for iOS** and in **AdGuard for Safari** Filtering log does not exist because of the way content blockers are implemented in Safari. AdGuard does not see the web requests and therefore cannot display them.
+> В **AdGuard для iOS** и в **AdGuard для Safari** Журнал фильтрации отсутствует из-за особенностей реализации блокировщиков контента в Safari. AdGuard сам не видит веб-запросы и поэтому не может отображать их.
 
-### Selectors debugging mode
+### Режим отладки селекторов
 
-Sometimes, you might need to check the performance of a given selector or a stylesheet. In order to do it without interacting with javascript directly, you can use a special `debug` style property. When `ExtendedCss` meets this property, it enables the debug mode either for a single selector or for all selectors, depending on the `debug` value. Open the browser console while on a web page to see the timing statistics for selector(s) that were applied there. Debugging mode displays the following stats for each of the debugged selectors:
+Иногда у вас может возникнуть необходимость проверить производительность того или иного селектора или таблицы стилей. Чтобы сделать это без непосредственного взаимодействия с JavaScript, вы можете использовать свойство стиля `debug`. Когда `ExtendedCss` встречает это свойство, он включает режим отладки для конкретного селектора или для всех селекторов, в зависимости от значения `debug`. Откройте консоль браузера, находясь на веб-странице, чтобы посмотреть статистику по времени, затраченному на применение селектора(-ов). Режим отладки покажет следующую статистику для каждого из отлаживаемых селекторов:
 
-* `array` — time that it took to apply the selector on the page, for each of the instances that it has been applied (in milliseconds)
-* `length` — total number of times that the selector has been applied on the page
-* `mean` — mean time that it took to apply the selector on the page
-* `stddev` — standard deviation
-* `squaredSum`: sum of squared deviations from the mean
-* `sum` — total time it took to apply the selector on the page across all instances
+* `array` — время, которое ушло на применение селектора на странице, для каждого из случаев применения этого селектора (в миллисекундах)
+* `length` — общее количество раз, когда на странице был применён селектор
+* `mean` — среднее время, ушедшее на применение селектора на странице
+* `stddev` — стандартное отклонение
+* `squaredSum` — сумма квадратичных отклонений от среднего значения
+* `sum` — общее время, ушедшее на все применения селектора на текущей странице
 
 **Примеры**
 
-**Debugging a single selector:**
+**Отладка конкретного селектора:**
 
-When the value of the `debug` property is `true`, only information about this selector will be shown in the browser console.
+Когда значение свойства `debug` равно `true`, информация только по этому селектору будет отображена в консоли браузера.
 
 ```
 #$?#.banner { display: none; debug: true; }
 ```
 
-**Enabling global debug:**
+**Включение глобальной отладки:**
 
-When the value of the `debug` property is `global`, the console will display information about all ExtendedCSS selectors that have matches on the current page, for all ExtendedCSS rules from any of the enabled filters.
+Когда значение свойства `debug` равно `global`, в консоли будет отображаться информация по всем ExtendedCSS-селекторам, которые были применены на данной странице, для всех ExtendedCSS-правил из любого из включённых фильтров.
 
 ```
 #$?#.banner { display: none; debug: global; }
 ```
 
-**Testing extended selectors without AdGuard**
+**Тестирование расширенных селекторов без AdGuard**
 
-If you do not have AdGuard installed, you can still test extended selectors, but you will have to load ExtendedCSS to the current page first. To do so, copy and execute the following code in the browser console:
+Если у вас не установлен AdGuard, вы всё равно можете тестировать расширенные селекторы, но для этого вам потребуется сначала загрузить в текущую страницу ExtendedCSS. Чтобы сделать это, скопируйте и запустите следующий код в консоли браузера:
 
 ```
 !function(E,x,t,C,s,s_){C=E.createElement(x),s=E.getElementsByTagName(x)[0],C.src=t,
@@ -2480,19 +2480,19 @@ C.onload=function(){alert('ExtCss loaded successfully')},s.parentNode.insertBefo
 (document,'script','https://AdguardTeam.github.io/ExtendedCss/extended-css.min.js')
 ```
 
-Alternatively, install an "ExtendedCssDebugger" userscript: https://github.com/AdguardTeam/Userscripts/blob/master/extendedCssDebugger/extended-css.debugger.user.js
+В качестве альтернативы вы можете установить пользовательский скрипт ExtendedCssDebugger: https://github.com/AdguardTeam/Userscripts/blob/master/extendedCssDebugger/extended-css.debugger.user.js
 
-You can now use the `ExtendedCss` constructor in the global scope, and its method `ExtendedCss.query` as `document.querySelectorAll`.
+Теперь вы можете использовать конструктор `ExtendedCss` в глобальном масштабе, а его метод `ExtendedCss.query` как `document.querySelectorAll`.
 ```
 var selectorText = "div.block[-ext-has='.header:matches-css-after(content: Anzeige)']";
-ExtendedCss.query(selectorText) // returns an array of Elements matching selectorText
+ExtendedCss.query(selectorText) // возвращает массив элементов, соответствующих selectorText
 ```
 
-### Debugging scriptlets
+### Отладка скриптлетов
 
-If you are using AdGuard Browser extension and want to debug a [scriptlet rule](#scriptlets), you can get additional information by simply having the Filtering log opened. In that case, scriptlets will switch to debug mode and will write more information to the browser console.
+Если вы используете Браузерное расширение AdGuard и хотите отладить [скриптлет-правило](#scriptlets), вы можете получить дополнительную информацию, просто открыв Журнал фильтрации. В этом случае скриптлеты перейдут в режим отладки и будут записывать больше информации в браузерную консоль.
 
-The following scriptlets are especially developed for debug purposes:
+Следующие скриптлеты разработаны специально для отладки:
 
 * [`debug-current-inline-script`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#debug-current-inline-script)
 * [`debug-on-property-read`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#debug-on-property-read)
@@ -2502,19 +2502,19 @@ The following scriptlets are especially developed for debug purposes:
 * [`log-eval`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#log-eval)
 * [`log`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#log)
 
-The following scriptlets also may be used for debug purposes:
+Следующие скриптлеты тоже могут быть использованы для отладки:
 
 * [`json-prune`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#json-prune)
 * [`prevent-fetch`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-fetch)
 * [`prevent-requestAnimationFrame`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-requestanimationframe)
 * [`prevent-setInterval`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-setinterval)
 * [`prevent-setTimeout`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-settimeout)
-* [`prevent-window-open`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-window-open) with specified `replacement` parameter
+* [`prevent-window-open`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-window-open) со специальным параметром `replacement`
 * [`prevent-xhr`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-xhr)
 
 
-## Good luck with creating filters!
+## Удачи в создании фильтров!
 
-We wish you luck with creating you own ad filters.
+Желаем вам удачи в создании собственных рекламных фильтров.
 
-If you need an advice on how to create your own filters properly, our forum has a [special section](https://forum.adguard.com/index.php?forums/69/) dedicated to writing your own filtering rules.
+Если вы хотите узнать, как правильно создавать собственные фильтры, ознакомьтесь с разделом на нашем форуме [](https://forum.adguard.com/index.php?forums/69/), посвящёном написанию правил фильтрации.
