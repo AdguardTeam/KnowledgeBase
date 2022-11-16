@@ -42,7 +42,7 @@ sidebar_position: 4
 
 На сайте [Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) есть информация о большом количестве языков. Количество форм множественного числа для разных языков показано так: nplurals=2, nplurals=4 и так далее. Цифра после знака равенства (=) означает количество плюральных форм в этом языке.
 
-Also, you can get information about plural forms in the [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). В правилах плюральных форм CLDR указана дополнительная форма слова для десятичных чисел (1,5; 2,3; 100,1…), но мы не используем их в переводах AdGuard.
+Информацию о плюральных формах можно также найти на сайте [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). В правилах плюральных форм CLDR указана дополнительная форма слова для десятичных чисел (1,5; 2,3; 100,1…), но мы не используем их в переводах AdGuard.
 
 ## Плюральные формы в переводах AdGuard {#translations}
 
@@ -100,7 +100,7 @@ Also, you can get information about plural forms in the [Unicode Common Locale D
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/plurals/plurals_site.png)
 
-Now, let’s imagine — you are faced with such a string: `Standard license for %count% computer | Standard license for %count% computers`.
+Теперь представим, что вы столкнулись с такой фразой: `Standard license for %count% computer | Standard license for %count% computers`.
 
 Что нужно знать, чтобы перевести её правильно?
 
@@ -120,7 +120,7 @@ Now, let’s imagine — you are faced with such a string: `Standard license for
 
 Например, если мы переведём эту же фразу на словацкий, [в котором три плюральных формы](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html), правильный перевод будет выглядеть так:
 
-`**Štandartná licencia pre *%count%* počítač | Štandartná licencia pre *%count%* počítače | Štandartná licencia pre *%count%* počítačov**`
+`Štandartná licencia pre %count% počítač | Štandartná licencia pre %count% počítače | Štandartná licencia pre %count% počítačov`
 
 ![словацкий](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/slovak.png)
 
@@ -135,7 +135,7 @@ Now, let’s imagine — you are faced with such a string: `Standard license for
 
 Поэтому перевод с английского на словацкий должен быть таким:
 
-`**Standardna licenca za *%count%* računar | Standardna licenca za *%count%* računara | Standardna licenca za *%count%* računara**`
+`Standardna licenca za %count% računar|Standardna licenca za %count% računara | Standardna licenca za %count% računara`
 
 Даже несмотря на то, что последние два шаблона одинаковые, соблюдайте правило: **в переводе должно быть столько шаблонов, сколько плюральных форм в языке**. Особенно это касается данного типа строк.
 
