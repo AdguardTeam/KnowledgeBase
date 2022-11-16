@@ -1,41 +1,41 @@
 ---
-title: Tracking filter rules statistics
+title: Сбор статистики по рекламным фильтрам
 sidebar_position: 4
 ---
 
-> NOTE: The *“Send statistics for ad filters usage”* option is disabled by default. Nothing will be sent unless user manually enables it to help us improve our blocking filters.
+> Важно: опция *«‎Отправлять статистику использования фильтров»‎* отключена по умолчанию. Никакая информация не будет отправлена, пока пользователь самостоятельно не включит её, чтобы помочь нам в развитии блокирующих фильтров.
 
-### Why do we need ad filters?
+### Зачем нужны рекламные фильтры
 
-Let's start by defining what ad filters are. Thanks to these filters, AdGuard removes ads from websites. They are manually compiled based on your complaints about ads on websites. Ad filters are an essential element of AdGuard — their quality determines the overall quality of AdGuard ad blocking.
+Начнём с того, что такое рекламные фильтры. Рекламные фильтры — это то, благодаря чему AdGuard убирает рекламу с сайтов. Составляются они вручную, основываясь на ваших жалобах на рекламу на том или ином сайте. Рекламные фильтры являются одним из важнейших элементов AdGuard — их качество определяет общее качество блокировки рекламы AdGuard.
 
-However, there is a downside. Over the years, more and more ad filters have been appearing. And the more ad filters are there, the more memory AdGuard consumes, thus slowing down the rendering of web pages. At the same time, some of the filters start to expire, gradually becoming a dead weight that has no use, only consumes memory, and slows down the program.
+Но есть и обратная сторона. С годами рекламных фильтров становится все больше и больше. Чем их больше, тем больше памяти потребляет AdGuard и тем медленнее отрисовываются веб-страницы. В то же время некоторые фильтры начинают устаревать, превращаясь в мёртвый груз, который, не принося никакой пользы, лишь занимает память и замедляет работу программы.
 
-### Why do we need statistics?
+### Зачем нужна статистика
 
-We want to solve the problem of outdated filtering rules once and for all. But we need your help to do so. By gathering statistics on used filtering rules, we detect and remove the rules that are no longer used. As a result, it will help all those who use AdGuard.
+Мы хотим решить проблему устаревших правил фильтрации раз и навсегда. Но для этого нам нужна ваша помощь. Собирая статистику по используемым правилам фильтрации, мы обнаруживаем и удаляем те правила, которые больше не используются. В итоге это поможет всем тем, кто пользуется AdGuard.
 
-If your computer is powerful enough, it won’t really affect you. But the difference will be very noticeable for users of low-power netbooks or tablets.
+Если у вас достаточно мощный компьютер, то это на вас практически не повлияет. Но разница будет очень заметна для пользователей маломощных нетбуков или планшетов.
 
-### What kind of statistics will be sent?
+### Какая именно статистика будет отправляться
 
-If you enable the *Send statistics for ad filters usage* option, the following information is sent periodically:
+Если у вас включена опция *«Отправлять статистику использования рекламных фильтров»*, передаётся следующая информация:
 
-* Extension version
-* Browser type (Chrome/Firefox/Opera/Yandex.Browser/Safari).
-* List of enabled ad filters.
-* The list that consists of the following elements:
-  * *The domain name of the website*
-  * *The number of recent page views*
-  * *The list of filtering rules and Filter ID which were activated on this website*
-  * *The domain name of blocked requests is sent for URL rules* The list is created based on the website's visit statistics since the last time statistical data was sent.
+* Версия расширения
+* Тип браузера (Firefox/Chrome/Safari/Opera/Яндекс.Браузер).
+* Список включённых рекламных фильтров.
+* Список, состоящий из следующих элементов:
+  * *Доменное имя сайта*
+  * *Количество просмотров страниц сайта за последнее время*
+  * *Список правил фильтрации и ID фильтров, сработавших на этом сайте*
+  * *Для URL-правил отправляется доменное имя заблокированного запроса* Список формируется на основе статистики посещения вами сайтов с момента последней отправки.
 
-The collected statistics will be sent periodically to our server for analysis and filter optimization.
+Собранная статистика будет периодически отправляться к нам на сервер для анализа и оптимизации фильтров.
 
-It's important to note that all the statistics we get are averaged and anonymized. We don't use these statistics for any purpose other than optimizing the filters, and we do not sell this data to third parties. You can read about our Privacy Policy [here](https://adguard.com/en/privacy.html).
+Важно отметить, что вся статистика, которую мы получаем, усреднена и анонимизирована. Мы никогда не используем собранные данные в каких-либо иных целях, кроме оптимизации фильтров, и не продаём данные третьим лицам. Подробнее ознакомиться с нашей политикой конфиденциальности можно [здесь](https://adguard.com/ru/privacy.html).
 
-### What does tracking filter rules statistics fraught with?
+### Чем сбор статистики может вам мешать
 
-Для подавляющего большинства пользователей изменение скорости работы компьютера будет не особо заметно. However, netbook and tablet users may notice a slight slowdown.
+Для подавляющего большинства пользователей изменение скорости работы компьютера будет не особо заметно. Однако пользователи нетбуков и планшетов могут заметить небольшое замедление.
 
-Periodically, we will send the gathered statistics to the server. The size of the transmitted data is not very large and is comparable to the size of an average web page.
+Периодически мы будем отправлять собранную статистику на сервер. Размер передаваемых данных не очень велик и сопоставим с размером средней веб-страницы.

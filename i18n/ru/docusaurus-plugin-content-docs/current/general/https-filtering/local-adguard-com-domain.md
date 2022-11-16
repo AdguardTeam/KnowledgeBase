@@ -1,27 +1,27 @@
 ---
-title: Local adguard.com domain
+title: Локальный домен adguard.com
 sidebar_position: 3
 ---
 
-Users of AdGuard for Windows, Mac, and Android may notice that AdGuard adds a small script to every web page, that is loaded from the `local.adguard.org` domain.
+Пользователи AdGuard для Windows, Mac и Android могут заметить, что AdGuard добавляет на каждую веб-страницу небольшой скрипт, загружаемый с домена `local.adguard.org`.
 
-First of all, don't worry, this is not a real domain, and there is actually no real server with that name. This domain is used to apply cosmetic filtering to web pages, but everything is done locally right on your device without connecting to any server.
+Прежде всего, не волнуйтесь, это не настоящий домен, и на самом деле нет реального сервера с таким именем. Этот домен используется для применения косметических правил к веб-страницам, и всё происходит локально прямо на вашем устройстве.
 
-### Technical explanation
+### Техническое описание
 
-But what's going on and why is it done? Please read the technical explanation below.
+Тогда что это такое и зачем это нужно? Пожалуйста, прочитайте техническое объяснение ниже.
 
-1. AdGuard — это блокировщик контента сетевого уровня, поэтому он не может просто добавлять на веб-страницы свой Javascript и CSS-код, как это делают браузерные расширения. However, doing this is crucial for quality content blocking.
-2. In order to do it AdGuard injects a "content script" that looks like this: `<script src="https://local.adguard.org/.../content-script.js">`. This "content script" takes care of cosmetic filtering, hides or removes ad content from the web pages.
-3. Connections to the IP address of the `local.adguard.org` domain are intercepted by AdGuard on the network level and **processed locally**. This is why that domain has a "static" IP address that does not change for years.
+1. AdGuard — это блокировщик контента сетевого уровня, поэтому он не может просто добавлять на веб-страницы свой Javascript и CSS-код, как это делают браузерные расширения. Однако это крайне важно для блокировки качественного контента.
+2. Для решения этой задачи AdGuard вставляет на страницы так называемый «контент-скрипт» который выглядит так: `<script src="https://local.adguard.org/.../content-script.js">`. Этот «контент-скрипт» применяет к страницам косметическую фильтрацию, скрывает или удаляет рекламный контент.
+3. На сетевом уровне AdGuard «перехватывает» соединения с IP-адресом домена `local.adguard.org` и **обрабатывает их локально**. Именно поэтому IP-адрес у этого домена «статичен» и не меняется годами.
 
-**Why do we need to use a real IP address for that?**
+**Почему мы используем настоящий IP-адрес**
 
-* We cannot use `127.0.0.1` as the browsers won't accept it.
-* Using some IP address from the private subnets is possible, but this solution has two downsides.
-    * First, there is a slight chance of intersecting with an existing intranet service and breaking access to it.
-    * Second, some DNS servers may consider this a DNS rebinding attack and refuse to respond to `local.adguard.org`.
+* Мы не можем использовать `127.0.0.1` для этого, так как браузеры просто не примут его.
+* Использование IP-адресов из частных подсетей возможно, но у этого решения есть два недостатка.
+    * Во-первых, существует небольшая вероятность пересечения с существующей службой интранета и нарушения доступа к ней.
+    * Во-вторых, некоторые DNS-серверы могут посчитать это попыткой атаки перепривязки DNS и отказаться отвечать на запросы к `local.adguard.org`.
 
-### Verification
+### Проверка
 
-This is easy to verify. If you disable AdGuard, you'll see that it is simply impossible to establish connection to `local.adguard.org` since there is no server with that address. Just try opening it in your browser when AdGuard is disabled.
+Это легко проверить. Если вы отключите AdGuard, то увидите, что установить соединение с доменом `local.adguard.org` просто невозможно, ведь сервера с таким адресом не существует. Просто попробуйте открыть его в браузере, когда AdGuard отключен.

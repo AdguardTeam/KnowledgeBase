@@ -1,25 +1,25 @@
 ---
-title: How to create a dump file
+title: Как создать файл дампа
 sidebar_position: 8
 ---
 
-To diagnose the reasons for potential problems that users might encounter while using AdGuard, the support team might need the process dump file. The dump file helps developers to see the processes that were executed in the application over a given period of time. Below you can check on the instructions of how to collect the dump file on your PC.
+Для диагностики проблем и ошибок, с которыми пользователи могут столкнуться при использовании AdGuard, службе поддержки может понадобиться файл дампа. Файл дампа помогает разработчикам увидеть процессы, которые выполнялись в приложении за определённый период времени. Ниже вы можете ознакомиться с инструкциями о том, как собрать файл дампа на вашем компьютере.
 
-1. Press **Ctrl + Shift + Esc** and click on **Task Manager**
-2. In the upper menu bar select **Details**
+1. Нажмите **Ctrl + Shift + Esc** и нажмите **Диспетчер задач**
+2. В верхней строке меню выберите **Подробности**
 
-![Task Manager details](https://cdn.adguard.com/public/Adguard/kb/Windows_dump/details_en.png)
+![Сведения о диспетчере задач](https://cdn.adguard.com/public/Adguard/kb/Windows_dump/details_en.png)
 
-3. Right-click on the process that you want to create the dump file for (for example, the support team may ask you to create a dump for `Adguard.exe`)
-4. In the drop-down menu click on **Create dump file**
-5. The file was created successfully!
+3. Щёлкните правой кнопкой мыши на процесс, для которого вы хотите создать файл дампа (например, служба поддержки может попросить вас создать дамп для `Adguard.exe`)
+4. В раскрывающемся меню нажмите **Создать файл дампа**
+5. Файл успешно создан!
 
-![Create dump file](https://cdn.adguard.com/public/Adguard/kb/Windows_dump/create_dump_file_en.png)
+![Создать файл дампа](https://cdn.adguard.com/public/Adguard/kb/Windows_dump/create_dump_file_en.png)
 
-After you’ve created the dump file, please navigate to the file location. You should be prompted to open the folder containing the dump file right after its creation. Otherwise, you will be able to find it inside the **%tmp%** folder. The created dump file (`.DMP`) has the same name as the name of the process you chose in the previous steps. The file is quite large, so please compress it into an archive before sending to support.
+После создания файла дампа перейдите к его расположению. Вам будет предложено открыть папку, содержащую файл дампа, сразу после его создания. В противном случае вы сможете найти его в папке **%tmp%**. Созданный файл дампа (`.DMP`) имеет то же название, что и процесс, который вы выбрали в предыдущих пунктах. Файл довольно большой, поэтому перед отправкой в поддержку сожмите его в архив.
 
-> Please note, AdGuard for Windows has two running processes (`Adguard.exe` and `AdguardSvc.exe`). So you need to create the dump file separately for each process.
+> Обратите внимание, что AdGuard для Windows имеет два запущенных процесса (`Adguard.exe` и `AdguardSvc.exe`). Поэтому вам нужно создать файл дампа отдельно для каждого процесса.
 
-![AdGuard processes](https://cdn.adguard.com/public/Adguard/kb/Windows_dump/processes_en.png)
+![Процессы AdGuard](https://cdn.adguard.com/public/Adguard/kb/Windows_dump/processes_en.png)
 
-When you send the dump files to the support team, please also attach the AdGuard application logs so we have a better chance at solving the problem. [Here](/adguard-for-windows/solving-problems/adguard-logs.md) you can check the instructions on how to collect the log file.
+Когда вы отправляете файлы дампа в службу поддержки, пожалуйста, отправьте их вместе с логами, чтобы мы могли решить проблему как можно быстрее. [Здесь](/adguard-for-windows/solving-problems/adguard-logs.md) вы можете ознакомиться с инструкцией по сбору логов AdGuard.

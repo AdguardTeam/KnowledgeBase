@@ -1,25 +1,25 @@
 ---
-title: How to get HAR files
+title: Как получить файлы HAR
 sidebar_position: 5
 ---
 
-## What are HAR files?
-The HAR (HTTP ARchive) format is a JSON-formatted archive file for logging of a web browser's interaction with a site. The specifications of HAR format defines an archival data for HTTP transactions that used by a browser to export detailed information about web pages it loads. More detailed description of HAR file format and its specification you can find at [softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/) website.
+## Что такое файлы HAR?
+Формат HAR (HTTP ARchive) представляет собой файл архива в формате JSON для протоколирования взаимодействия браузера с сайтом. Технические характеристики формата HAR определяют архивные данные для транзакций HTTP, которые используются браузером для экспорта подробной информации о загружаемых веб-страницах. Более подробное описание формата файла HAR и его характеристик вы можете найти на сайте [softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/).
 
-## How to get HAR files?
-Sometimes we need to analyze it to block specific ads that are difficult to reproduce for some reason. To get HAR files follow these steps:
-1. Open AdGuard and go to "Settings".
-2. Choose "Advanced" in the menu.
-3. Choose "Low Level Settings"
-4. Activate "pref.har.capture" (you will have to restart the protection).
-5. Now reproduce the problem - open the app, perform the necessary actions to make the ad appear.
-6. Now turn "pref.har.capture" off again.
-7. Go Back, then tap "Export logs and system info" > Save.
+## Как получить файлы HAR?
+Иногда нам нужно проанализировать данные файлы, чтобы заблокировать определённые объявления, которые по какой-то причине трудно воспроизвести. Чтобы получить файлы HAR, выполните следующие действия:
+1. Откройте AdGuard и перейдите в «Настройки».
+2. Выберите «Расширенные» в меню.
+3. Выберите «Низкоуровневые настройки».
+4. Активируйте pref.har.capture (придётся перезапустить защиту).
+5. Теперь воспроизведите проблему — откройте приложение, выполните необходимые действия, чтобы реклама появилась.
+6. Теперь снова выключите pref.har.capture.
+7. Вернитесь назад и нажмите «Экспортировать логи и информацию о системе» > Сохранить.
 
-**Please send the file with logs (that you've got as a result) to the AdGuard support service.**
-> Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message.
+**Пожалуйста, пришлите файл с логами (полученный в результате) в службу поддержки AdGuard.**
+> Обратите внимание: Наша служба поддержки обработает ваш тикет гораздо быстрее, если вы укажете в сообщении номер тикета HelpDesk или номер проблемы на GitHub.
 
-## How to analyze HAR files?
-Here are some sources that we can recommend to analyze HAR files:
-* [HTTP Archive Viewer master](https://gitgrimbo.github.io/harviewer/master/) is a HAR analyzer tool, visualizes HTTP Archive (HAR) log files created by HTTP tracking tools.
-* [Fiddler](https://www.telerik.com/fiddler) is a web debugging proxy, lets you capture, inspect, monitor all HTTP(S) traffic between your computer and the Internet, mock requests, and diagnose network issues.
+## Как анализировать файлы HAR?
+Вот некоторые источники, которые мы рекомендуем для анализа файлов HAR:
+* [HTTP Archive Viewer master](https://gitgrimbo.github.io/harviewer/master/) — это инструмент анализа HAR, визуализирующий файлы журналов HTTP Archive (HAR), созданные средствами отслеживания HTTP.
+* [Fiddler](https://www.telerik.com/fiddler) — это прокси-сервер для веб-отладки, который позволяет перехватывать, проверять и отслеживать весь трафик HTTP(S) между вашим компьютером и интернетом, имитировать запросы и диагностировать сетевые проблемы.

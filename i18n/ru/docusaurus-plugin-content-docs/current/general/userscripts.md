@@ -3,47 +3,47 @@ title: Пользовательские скрипты
 sidebar_position: 5
 ---
 
-Userscripts (we also call them "extensions") are, de-facto, mini-programs written in Javascript. They modify or extend the functionality of one or more websites. Many AdGuard users may be already familiar with such userscripts as AdGuard Assistant, Popup Blocker, and AdGuard Extra.
+Пользовательские скрипты (мы также называем их «‎расширениями»‎) — это, по сути, мини-программы, написанные на языке Javascript. Они модифицируют или расширяют функциональность одного или нескольких сайтов. Многие пользователи AdGuard уже наверняка знакомы с такими расширениями, как Помощник AdGuard, Блокировщик всплывающей рекламы и AdGuard Extra.
 
-### Supported apps
+### Поддерживаемые продукты
 
-AdGuard can significantly broaden website functionality by acting as a userscript manager. You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](/adguard-for-windows/overview.md), [AdGuard for Android](/adguard-for-android/overview.md) and [AdGuard for Mac](/adguard-for-mac/overview.md).
+AdGuard может значительно расширять функциональность сайтов, работая как менеджер пользовательских скриптов. Добавлять собственные скрипты или управлять существующими вы можете в трёх наших продуктах: [AdGuard для Windows](/adguard-for-windows/overview.md), [AdGuard для Android](/adguard-for-android/overview.md) и [AdGuard для Mac](/adguard-for-mac/overview.md).
 
-### Recommended AdGuard scripts
+### Рекомендуемые скрипты AdGuard
 
-> These userscripts come directly from the AdGuard developers, and we can guarantee that they are effective and safe. Remember: whenever you download a userscript from an unknown source, you expose yourself to risk, as some scripts may be harmful to your computer. Get new scripts only from the sources you trust 100%. Furthermore, here are [some examples](#more-userscripts) of popular sites with scripts.
+> Эти пользовательские скрипты разработаны в AdGuard, и мы можем гарантировать, что они эффективны и безопасны. Помните: каждый раз, когда вы загружаете пользовательский скрипт из неизвестного источника, вы подвергаете себя риску, поскольку некоторые скрипты могут быть опасны для вашего компьютера. Старайтесь скачивать новые расширения только из проверенных источников, которым вы доверяете на 100%. Чуть позже мы приведём [несколько примеров](#more-userscripts) популярных сайтов.
 
-* **AdGuard Extra** — An extension that blocks advertising in difficult cases when the usual filter-based approach is not enough.
+* **AdGuard Extra** — расширение, которое блокирует рекламу в сложных случаях, когда привычного подхода, основанного на фильтрах, недостаточно.
 
-* **AdGuard Popup Blocker** — The name speaks for itself. It blocks popups - one of the most annoying types of ads on web pages.
+* **Блокировщик всплывающей рекламы** — название скрипта говорит само за себя. Он блокирует один из самых раздражающих типов рекламы — всплывающие окна.
 
-* **AdGuard Assistant** (legacy version) — This custom extension is designed to control filtering directly from the browser page (manual blocking, exclusion of the site, etc.).
+* **Помощник AdGuard** (старая версия) — расширение, предназначенное для управления фильтрацией прямо со страницы браузера (ручная блокировка, занесение сайта в исключения и т. д.).
 
-> Note that this version of Assistant is legacy and there is no point in using it on new systems, since it has been replaced with the full-fledged [Browser Assistant](https://adguard.com/en/adguard-assistant/overview.html). But legacy Assistant might be of help if there is no Browser Assistant extension for your browser.
+> Обратите внимание, что это устаревшая версия Помощника и нет смысла использовать её на новых системах, потому что её давно заменил [Браузерный Помощник](https://adguard.com/ru/adguard-assistant/overview.html). Но старый Помощник может пригодиться, если для вашего браузера нет расширения Браузерного помощника.
 
-* **Disable AMP** — A script, pre-installed only in AdGuard for Android, that disables AMP (Accelerated Mobile Pages) on the Google search results page.
+* **Отключить AMP** — это скрипт, предустановленный только в AdGuard для Android, который отключает AMP (Accelerated Mobile Pages) на странице результатов поиска Google.
 
-## Where can you get more userscripts?{#more-userscripts}
+## Где взять больше пользовательских скриптов{#more-userscripts}
 
-As userscripts are created mainly by enthusiasts, you should be cautious when installing them. Yet, there is a great variety of interesting scripts that can really make using some websites more convenient.
+По большей части пользовательские скрипты создаются любителями, поэтому, устанавливая тот или иной скрипт, нужно быть очень осторожными. Тем не менее существует великое множество интересных скриптов, которые действительно могут сделать использование некоторых сайтов более удобным.
 
-Here we will describe some of the most popular userscript catalogs.
+Здесь мы опишем несколько популярных каталогов пользовательских скриптов.
 
 ### Stylish (userstyles.org)
 
-[Userstyles.org](https://userstyles.org/) is a catalog of user styles, but it allows you to load them as userscripts. Thus, any user style can be installed via AdGuard. Be careful if you decide to install an unpopular script — there's a risk it might be harmful.
+[Userstyles.org](https://userstyles.org/) — это каталог пользовательских стилей, но при этом он позволяет выгружать их в виде скриптов. Таким образом, через AdGuard можно установить любой пользовательский стиль. Будьте осторожны, скачивая малопопулярный скрипт — он может нести угрозу.
 
 ### Greasy Fork
 
-[Greasy Fork](https://greasyfork.org/) is a userscript catalog by Stylish creators. Unlike the above-mentioned userstyles.org, the scripts in this catalog undergo moderation, so their credibility is much higher.
+[Greasy Fork](https://greasyfork.org/) — каталог пользовательских скриптов от авторов Stylish. Однако, в отличие от userstyles.org, скрипты в этом каталоге проходят модерацию, так что доверие к ним намного выше.
 
 ### OpenUserJS.org
 
-[OpenUserJS.org](https://openuserjs.org/) is an open source userscript catalog written in nodeJS. It doesn't have moderation so stay alert to any suspicious scripts.
+[OpenUserJS.org](https://openuserjs.org/) — каталог пользовательских скриптов с открытым кодом, написанный на nodeJS. В нём нет модерации, поэтому будьте внимательны к любым подозрительным скриптам.
 
-### Community
+### Сообщество
 
-If you like the idea of personifying your browser with the help of userscripts, and you have any questions, you can ask them on one of these websites:
+Если вы хотите персонализировать браузер при помощи пользовательских скриптов и у вас есть какие-либо вопросы на эту тему, задать их можно на любом из этих сайтов:
 
 - [Stackoverflow](https://stackoverflow.com/questions/tagged/userscripts)
 - [FreeNode](https://webchat.freenode.net/#greasemonkey)
@@ -136,37 +136,37 @@ GM_log
 
 ```javascript
 // ==UserScript==
-// @name            Name as shown to the user when locale is english or unknown
-// @name:ru         Name as shown to the user when locale is russian
-// @description     Description as shown to the user when locale is english or unknown
-// @description:ru  Description as shown to the user when locale is russian
-// @icon            https://myhomepage.com/myuserscript.png
-// @version         1.0.0.0
-// @downloadURL     https://dl.myhomepage.org/myuserscript.user.js
-// @updateURL       https://dl.myhomepage.org/myuserscript.meta.js
-// @homepageURL     https://myhomepage.com/myuserscript
-// @include         *
-// @exclude         *://website.com/*
-// @resource        https://myhomepage.com/myuserscript.css
-// @require         https://myhomepage.com/mylibrary.js
-// @grant           property:settings
-// @grant           GM_getValue
-// @grant           GM_setValue
-// @grant           GM_deleteValue
-// @grant           GM_listValues
-// @grant           GM_getResourceText
-// @grant           GM_getResourceURL
-// @grant           GM_addStyle
-// @grant           GM_log
-// @grant           GM_setClipboard
-// @grant           GM_xmlhttpRequest
-// @grant           unsafeWindow
-// @grant           GM_info
-// @grant           GM_openInTab
-// @grant           GM_registerMenuCommand
+// @name Имя, которое показывается пользователю, если локаль английская или неизвестна
+// @name:ru Имя, которое показывается пользователю, если локаль русская
+// @description Описание, которое показывается пользователю, если локаль английская или неизвестна
+// @description:ru Описание, которое показывается пользователю, если локаль русская
+// @icon https://myhomepage.com/myuserscript.png
+// @version 1.0.0.0
+// @downloadURL https://dl.myhomepage.org/myuserscript.user.js
+// @updateURL https://dl.myhomepage.org/myuserscript.meta.js
+// @homepageURL https://myhomepage. com/myuserscript
+// @include *
+// @exclude *://website.com/*
+// @resource https://myhomepage.com/myuserscript.css
+// @require https://myhomepage. com/mylibrary.js
+// @grant свойство: настройки
+// @grant GM_getValue
+// @grant GM_setValue
+// @grant GM_deleteValue
+// @grant GM_listValues
+// @grant GM_getResourceText
+// @grant GM_getResourceURL
+// @grant GM_addStyle
+// @grant GM_log
+// @grant GM_setClipboard
+// @grant GM_xmlhttpRequest
+// @grant unsafeWindow
+// @grant GM_info
+// @grant GM_openInTab
+// @grant GM_registerMenuCommand
 // @run-at document-start
 // ==/UserScript==
-!function(){(
+! function(){(
     console.log("I am loaded!");
 )}();
 ```
