@@ -162,9 +162,9 @@ For example, `/banner\d+/$third-party` this rule will apply the regular expressi
 
 Wildcard characters are supported for TLDs of the domains in patterns of [cosmetic](#cosmetic-rules), [HTML filtering](#html-filtering-rules) and [javascript](#javascript-rules) rules.
 
-For cosmetic rules, e.g. `example.*##.banner`, multiple domains will be matched due to the part `.*`, i.e. `example.com`, `sub.example.net`, `example.co.uk`, etc.
+For cosmetic rules, e.g. `example.*##.banner`, multiple domains are matched due to the part `.*`, i.e. `example.com`, `sub.example.net`, `example.co.uk`, etc.
 
-For basic rules the described logic will be applicable only for the domains specified in [`$domain` modifier](#domain-modifier), e.g. `||*/banners/*$image,domain=example.*`.
+For basic rules the described logic is applicable only for the domains specified in [`$domain` modifier](#domain-modifier), e.g. `||*/banners/*$image,domain=example.*`.
 
 > **Compatibility with different versions of AdGuard**
 >
