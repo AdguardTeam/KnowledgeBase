@@ -47,7 +47,7 @@ Aside from the more general and universally applicable filters (like Base filter
 * filters aimed at tracking prevention (like Tracking Protection filter),
 * language-specific ad filters that block content in a selected language,
 * Social media filter that removes “Like” and “Share” buttons,
-* Annoyances filter for cookie warnings, in-page popups and others of the same ilk;
+* Annoyances filter for cookie warnings, in-page popups and others of the same ilk,
 * and even a filter that unblocks some ads instead of blocking them — Filter for search ads and self-promotions. 
 
 AdGuard filters are automatically updated. Our developers create them all based on user feedback received. You can always help other AdGuard users (and yourself, in perspective) by sending us reports right from the app's Assistant (it's really handy, we'll tell you more about the Assistant further on), or from the [website](https://agrd.io/report). If you wish to know more about AdGuard filters, here is [some info](https://kb.adguard.com/en/general/adguard-ad-filters).
@@ -134,7 +134,7 @@ There are other useful AdGuard options that shouldn't go unnoticed in this artic
 
 ### License
 
-First, there's the License management tab that you can open from the dropdown main menu (the one that opens once you click the gear icon on the upper right of the main window). From this tab you can see which license type you are using, check its status and validity period. 
+First, there's the License tab that you can open from the dropdown main menu (the one that opens once you click the gear icon on the upper right of the main window). From this tab you can see which license type you are using, check its status and validity period. 
     
 ![License](https://cdn.adguard.com/content/kb/ad_blocker/mac/License.jpg)
 

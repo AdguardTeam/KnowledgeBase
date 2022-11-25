@@ -59,7 +59,7 @@ Let's put real numbers into this formula.
 
 Let's take _CPU total_ from the second screenshot and convert into milliseconds: 506000
 
-A coefficient _cpu.active_ for 2GHz will be roughly equal to 225mA
+A coefficient _cpu.active_ for 2GHz will be roughly equal to 225mAh
 
 Final result
 
