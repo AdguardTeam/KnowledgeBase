@@ -2120,10 +2120,9 @@ Trusted scriptlets are [scriptlets](#scriptlets) with extended functionality. Th
 >
 > Trusted scriptlets are not compatible with any other blocker.
 
-<!-- TODO: describe compatibility -->
 > **Compatibility with different versions of AdGuard**
 >
-> Trusted scriptlets rules are ...
+> Trusted scriptlets rules are supported now by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.10.141 or later**.
 
 More information about trusted scriptlets can be found [on GitHub](https://github.com/AdguardTeam/Scriptlets#trusted-scriptlets).
 
