@@ -1514,7 +1514,9 @@ We recommend to use this kind of exceptions only if it is not possible to change
 
 ### Extended CSS selectors {#extended-css-selectors}
 
-CSS 3.0 is not always enough to block ads. To solve this problem AdGuard extends CSS capabilities by adding support for the new pseudo-elements. To use extended CSS selectors we have developed a separate open source [module](https://github.com/AdguardTeam/ExtendedCss).
+CSS 3.0 is not always enough to block ads. To solve this problem AdGuard extends CSS capabilities by adding support for the new pseudo-elements. We have developed a separate open source [library](https://github.com/AdguardTeam/ExtendedCss) for non-standard element selecting and applying CSS styles with extended properties.
+
+The idea of extended capabilities is an opportunity to match DOM elements with selectors based on their own representation (style, text content, etc.) or relations with other elements. There is also an opportunity to apply styles with non-standard CSS properties.
 
 > **Application area**
 >
@@ -1526,7 +1528,7 @@ CSS 3.0 is not always enough to block ads. To solve this problem AdGuard extends
 
 **Syntax**
 
-Regardless of the CSS pseudo-classes you are using in the rule, you can use special markers to make these rules use the "Extended CSS" engine. It is recommended to use these markers for all "extended CSS" cosmetic rules so that it was easier to find them.
+Regardless of the CSS pseudo-classes you are using in the rule, you can use special markers to force these rules applying by ExtendedCSS. It is recommended to use these markers for all "extended CSS" cosmetic rules so that it was easier to find them.
 
 The syntax for extended CSS rules:
 
