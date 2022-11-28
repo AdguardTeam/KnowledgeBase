@@ -2548,7 +2548,7 @@ var selectorText = "div.block[-ext-has='.header:matches-css-after(content: Anzei
 ExtendedCss.query(selectorText) // returns an array of Elements matching selectorText
 ```
 
-### Debugging scriptlets
+### Debugging scriptlets {#debug-scriptlets}
 
 If you are using AdGuard Browser extension and want to debug a [scriptlet rule](#scriptlets), you can get additional information by simply having the Filtering log opened. In that case, scriptlets will switch to debug mode and will write more information to the browser console.
 
