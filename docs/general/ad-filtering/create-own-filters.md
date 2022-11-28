@@ -2105,6 +2105,28 @@ More information about scriptlets can be found [on GitHub](https://github.com/Ad
 >
 > Scriptlet rules are not supported by AdGuard Content Blocker.
 
+### Trusted scriptlets {#trusted-scriptlets}
+
+Trusted scriptlets are [scriptlets](#scriptlets) with extended functionality. Their names are prefixed with `trusted-`, e.g `trusted-set-cookie`, to be easily distinguished from common scriptlets.
+
+> **Restrictions**
+>
+> Trusted scriptlets rules can be used **only in trusted filters**. This category includes:
+> * filter lists [created by AdGuard Team](./adguard-filters.md),
+> * custom filter lists installed as `trusted`,
+> * user rules.
+
+> **Note**
+>
+> Trusted scriptlets are not compatible with any other blocker.
+
+<!-- TODO: describe compatibility -->
+> **Compatibility with different versions of AdGuard**
+>
+> Trusted scriptlets rules are ...
+
+More information about trusted scriptlets can be found [on GitHub](https://github.com/AdguardTeam/Scriptlets#trusted-scriptlets).
+
 ## Modifiers for non-basic type of rules
 
 Each rule can be modified using the modifiers described in the following paragraphs.
