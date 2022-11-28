@@ -178,7 +178,10 @@ For the basic rules the described logic will be applicable only for the domains 
 
 ### Basic rules modifiers
 
-> Please note, that The features described in this section are intended for experienced users. They extend capabilities of "Basic rules", but in order to use them you need to have a basic understanding of the way your browser works.
+> Note
+> 
+> The features described in this section are intended for experienced users. They extend capabilities of "Basic rules", but in order to use them you need to have a basic understanding of the way your browser works.
+
 You can change the behavior of a "basic rule" by using additional modifiers. Modifiers should be located in the end of the rule after a `$` sign and be separated by commas.
 
 Example:
@@ -680,7 +683,7 @@ replace = "/" regexp "/" replacement "/" modifiers
 * **`replacement`** — a string that will be used to replace the string corresponding to `regexp`.
 * **`modifiers`** — a regular expression flags. For example, `i` — insensitive search, or `s` — single-line mode.
 
-In the `$replace` value, two characters must be escaped: comma (`,`) and dollar (`$`). Use (`\`) for it. For example, an escaped comma looks like this: `\,`.
+In the `$replace` value, two characters must be escaped: comma `,` and dollar sign `$`. Use backslash `\` for it. For example, an escaped comma looks like this: `\,`.
 
 **Examples**
 
@@ -891,7 +894,7 @@ AdGuard uses the same filtering rules syntax as uBlock Origin. Also, it is compa
 >
 > Rules with `$redirect` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
 
-#### **`$redirect rule`** {#redirect-rule-modifier}
+#### **`$redirect-rule`** {#redirect-rule-modifier}
 
 This is basically an alias to [`$redirect`](#redirect-modifier) since it has the same "redirection" values and the logic is almost similar. The difference is that `$redirect-rule` is applied only in the case when the target request is blocked by a different basic rule.
 
@@ -981,8 +984,8 @@ You can also use regular expressions to match query parameters and/or their valu
 > We will try to detect and ignore unescaped `$` automatically using a simple rule of thumb:
 > It is not an options delimiter if all three are true:
 > 1. It looks like `$/`;
-> 2. There is another slash character (`/`) to the left of it;
-> 3. There is another unescaped `$` character to the left of that slash character.
+> 2. There is another slash character `/` to the left of it;
+> 3. There is another unescaped dollar sign `$` to the left of that slash character.
 
 **Remove all query parameters**
 
@@ -1806,7 +1809,7 @@ The `:xpath()` pseudo-class is different from other pseudo-classes. Whereas all 
 [selector]:xpath(expression)
 ```
 
-- `selector`— optional, a plain CSS selector, or a Sizzle compatible selector
+- `selector` — optional, a plain CSS selector, or a Sizzle compatible selector
 - `expression` — a valid XPath expression
 
 **Examples**
