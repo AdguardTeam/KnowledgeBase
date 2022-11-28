@@ -2097,7 +2097,7 @@ example.org#%#//scriptlet("abort-on-property-read", "alert")
 ```
 This rule will be applied to `example.org` and subdomains pages and will execute the `abort-on-property-read` scriptlet with the `alert` parameter.
 
-Learn more [how to debug scriptlets](#debug-scriptlets).
+Learn more about [how to debug scriptlets](#debug-scriptlets).
 
 More information about scriptlets can be found [on GitHub](https://github.com/AdguardTeam/Scriptlets#scriptlets).
 
@@ -2123,6 +2123,8 @@ Trusted scriptlets are [scriptlets](#scriptlets) with extended functionality. Th
 > **Compatibility with different versions of AdGuard**
 >
 > Trusted scriptlets rules are supported now by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.10.141 or later**.
+
+Learn more about [how to debug scriptlets](#debug-scriptlets).
 
 More information about trusted scriptlets can be found [on GitHub](https://github.com/AdguardTeam/Scriptlets#trusted-scriptlets).
 
@@ -2549,7 +2551,7 @@ ExtendedCss.query(selectorText) // returns an array of Elements matching selecto
 
 ### Debugging scriptlets {#debug-scriptlets}
 
-If you are using AdGuard Browser extension and want to debug a [scriptlet rule](#scriptlets), you can get additional information by simply having the Filtering log opened. In that case, scriptlets will switch to debug mode and will write more information to the browser console.
+If you are using AdGuard Browser extension and want to debug a [scriptlet](#scriptlets) or [trusted scriptlet](#trusted-scriptlets) rule, you can get additional information by simply having the Filtering log opened. In that case, scriptlets will switch to debug mode and will write more information to the browser console.
 
 The following scriptlets are especially developed for debug purposes:
 
@@ -2570,7 +2572,8 @@ The following scriptlets also may be used for debug purposes:
 * [`prevent-setTimeout`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-settimeout)
 * [`prevent-window-open`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-window-open) with specified `replacement` parameter
 * [`prevent-xhr`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-xhr)
-
+* [`trusted-replace-fetch-response`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-trusted-scriptlets.md#trusted-replace-fetch-response)
+* [`trusted-replace-xhr-response`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-trusted-scriptlets.md#trusted-replace-xhr-response)
 
 ## Good luck with creating filters!
 
