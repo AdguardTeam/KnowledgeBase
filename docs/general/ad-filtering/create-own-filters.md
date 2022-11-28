@@ -1512,7 +1512,7 @@ example.com#@$#.textad { visibility: hidden; }
 
 We recommend to use this kind of exceptions only if it is not possible to change the CSS rule itself. In other cases it is better to change the original rule, using domain restrictions.
 
-### Extended CSS selectors {#extended-css-selectors}
+### ExtendedCSS selectors {#extended-css-selectors}
 
 CSS 3.0 is not always enough to block ads. To solve this problem AdGuard extends CSS capabilities by adding support for the new pseudo-elements. We have developed a separate open source [library](https://github.com/AdguardTeam/ExtendedCss) for non-standard element selecting and applying CSS styles with extended properties.
 
@@ -1546,45 +1546,102 @@ We **strongly recommend** using these markers any time when you use an extended 
 
 > You can apply standard CSS selectors using the ExtendedCss engine by using a rule marker `#?#`, e.g. `#?#div.banner`.
 
-> Learn more about [how to debug extended selectors](#selectors-debugging-mode).
+Learn more about [how to debug extended selectors](#selectors-debugging-mode).
 
-##### Pseudo-class `:has()`
+> **Note**
+>
+> Some pseudo-classes do not require selector before it. Still adding a [universal selector](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*` makes an extended selector easier to read, even though it has no effect on the matching behavior. So selector `#block :has(> .inner)` works exactly like `#block *:has(> .inner)` but second one is more obvious.
+>
+> Pseudo-class names are case-insensitive, e.g. `:HAS()` will work as `:has()`. Still the lower-case names are used commonly.
 
-Working Draft CSS 4.0 specification describes [pseudo-class `:has`](https://www.w3.org/TR/selectors-4/#has-pseudo). Unfortunately, [not many browsers support it yet](https://developer.mozilla.org/en-US/docs/Web/CSS/:has#browser_compatibility).
+#### ExtendedCss Limitations {#extended-css-limitations}
+
+1. CSS [comments](https://developer.mozilla.org/en-US/docs/Web/CSS/Comments) and [at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) are not supported.
+
+<!-- TODO: check anchors later -->
+2. Specific pseudo-class may have its own limitations:
+[`:has()`](#extended-css-has-limitations), [`:xpath()`](#extended-css-xpath-limitations), [`:nth-ancestor()`](#extended-css-nth-ancestor-limitations), [`:upward()`](#extended-css-upward-limitations), [`:is()`](#extended-css-is-limitations), [`:not()`](#extended-css-not-limitations), and [`:remove()`](#extended-css-remove-limitations).
+
+#### Pseudo-class `:has()` {#extended-css-has}
+
+Draft CSS 4.0 specification describes [pseudo-class `:has()`](https://www.w3.org/TR/selectors-4/#relational). Unfortunately, [it is not yet supported](https://caniuse.com/css-has) by all popular browsers.
+
+> **Note**
+>
+> Rules with `:has()` pseudo-class should use [native implementation of `:has()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:has) if rules use `##` marker and it is possible, i.e. with no other extended pseudo-classes inside. To force ExtendedCss applying of rules with `:has()`, use `#?#`/`#$?#` marker obviously.
+
+> **Aliases**
+>
+> Synonyms `:-abp-has` and `:if` are supported by ExtendedCss for better compatibility.
 
 **Syntax**
 ```
-:has(selector)
+[target]:has(selector)
 ```
+- `target` — optional, standard or extended css selector, can be missed for checking *any* element
+- `selector` — required, standard or extended css selector
 
-Backward compatible syntax:
-```
-[-ext-has="selector"]
-```
+Pseudo-class `:has()` selects the `target` elements that includes the elements that fit to the `selector`. Also `selector` can start with a combinator. Selector list can be set in `selector` as well.
 
-Supported synonyms for better compatibility: `:-abp-has`, `:if`.
+##### `:has()` limitations {#extended-css-has-limitations}
 
-Pseudo-class `:has()` selects the elements that includes the elements that fit to `selector`.
+> Usage of `:has()` pseudo-class is [restricted for some cases (2, 3)](https://bugs.chromium.org/p/chromium/issues/detail?id=669058#c54):
+> - disallow `:has()` inside the pseudos accepting only compound selectors;
+> - disallow `:has()` after regular pseudo-elements.
+
+> Native `:has()` pseudo-class does not allow `:has()`, `:is()`, `:where()` inside `:has()` argument to avoid increasing the `:has()` invalidation complexity ([case 1](https://bugs.chromium.org/p/chromium/issues/detail?id=669058#c54)). But ExtendedCss did not have such limitation earlier and filter lists already contain such rules, so we will not add this limitation in ExtendedCss and allow to use `:has()` inside `:has()` as it was possible before. To use it, just force ExtendedCss usage by setting `#?#`/`#$?#` rule marker.
+
+> Native implementation does not allow any usage of `:scope` inside `:has()` argument ([[1]](https://github.com/w3c/csswg-drafts/issues/7211), [[2]](https://github.com/w3c/csswg-drafts/issues/6399)). Still there some such rules in filter lists: `div:has(:scope > a)` which we will continue to support simply converting them to `div:has(> a)` as it was earlier.
 
 **Examples**
 
-Selecting all `div` elements, which contain an element with the `banner` class:
-
+`div:has(.banner)` selects all `div` elements, which **includes** an element with the `banner` class:
 ```html
 <!-- HTML code -->
-<div>Do not select this div</div>
-<div>Select this div<span class="banner"></span></div>
+<div>Not selected</div>
+<div>Selected
+  <span class="banner">inner element</span>
+</div>
 ```
 
-Selector:
-```
-div:has(.banner)
+`div:has(> .banner)` selects all `div` elements, which **includes** an `banner` class element as a *direct child* of `div`:
+```html
+<!-- HTML code -->
+<div>Not selected</div>
+<div>Selected
+  <p class="banner">child element</p>
+</div>
 ```
 
-Backward compatible syntax:
+`div:has(+ .banner)` selects all `div` elements **preceding** `banner` class element which *immediately follows* the `div` and both are children of the same parent:
+```html
+<!-- HTML code -->
+<div>Not selected</div>
+<div>Selected</div>
+<p class="banner">adjacent sibling</p>
+<span>Not selected</span>
 ```
-div[-ext-has=".banner"]
+
+`div:has(~ .banner)` selects all `div` elements **preceding** `banner` class element which *follows* the `div` but *not necessarily immediately* and both are children of the same parent:
+```html
+<!-- HTML code -->
+<div>Not selected</div>
+<div>Selected</div>
+<span>Not selected</span>
+<p class="banner">general sibling</p>
 ```
+
+`div:has(span, .banner)` selects all `div` elements, which **includes both** `span` element and `banner` class element:
+```html
+<!-- HTML code -->
+<div>Not selected</div>
+<div>Selected
+  <span>child span</span>
+  <p class="banner">child .banner</p>
+</div>
+```
+
+> [Backward compatible syntax for `:has()`](https://github.com/AdguardTeam/ExtendedCss#-old-syntax-for-pseudo-class-has) is supported but not recommended.
 
 ##### Pseudo-class `:if-not()`
 
