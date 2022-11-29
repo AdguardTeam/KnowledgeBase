@@ -598,6 +598,27 @@ Has an opposite effect to [`$generichide`](#generichide-modifier). Disables all 
 
 ### Advanced capabilities
 
+* [`$important`](#important-modifier)
+* [`$badfilter`](#badfilter-modifier)
+* [`$replace`](#replace-modifier)
+* [`$csp`](#csp-modifier)
+* [`$all`](#all-modifier)
+* [`$inline-script`](#inline-script-modifier)
+* [`$inline-font`](#inline-font-modifier)
+* [`$cookie`](#cookie-modifier)
+* [`$network`](#network-modifier)
+* [`$app`](#app-modifier)
+* [`$redirect`](#redirect-modifier)
+* [`$redirect-rule`](#redirect-rule-modifier)
+* [`$denyallow`](#denyallow-modifier)
+* [`$removeparam`](#removeparam-modifier)
+* [`$removeheader`](#removeheader-modifier)
+* [`$hls`](#hls-modifier)
+* [`$jsonprune`](#jsonprune-modifier)
+* [`noop`](#noop-modifier)
+* [`$empty` (deprecated)](#empty-modifier)
+* [`$mp4` (deprecated)`](#mp4-modifier)
+
 These modifiers are able to completely change the behaviour of basic rules.
 
 #### **`$important`** {#important-modifier}
