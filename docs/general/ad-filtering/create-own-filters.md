@@ -2119,7 +2119,7 @@ Trusted scriptlets are [scriptlets](#scriptlets) with extended functionality. Th
 
 > **Note**
 >
-> Trusted scriptlets are not compatible with any other blocker.
+> Trusted scriptlets are not compatible with other ad blockers except AdGuard
 
 > **Compatibility with different versions of AdGuard**
 >
