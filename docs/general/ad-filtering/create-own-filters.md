@@ -2181,6 +2181,11 @@ More information about scriptlets can be found [on GitHub](https://github.com/Ad
 
 ## Modifiers for non-basic type of rules
 
+* [`$app`](#non-basic-app-modifier)
+* [`$domain`](#non-basic-domain-modifier)
+* [`$path`](#non-basic-path-modifier)
+* [`$url`](#non-basic-url-modifier)
+
 Each rule can be modified using the modifiers described in the following paragraphs.
 
 **Syntax**
@@ -2199,7 +2204,7 @@ In the modifiers values of the following characters must be escaped: `[`, `]`, `
 it is used for the escaping). Use `\` to escape them. For example, an escaped bracket looks like
 this: `\]`.
 
-### **`$app`** {#non-basic-app-modifier}
+#### **`$app`** {#non-basic-app-modifier}
 
 `$app` modifier lets you narrow the rule coverage down to a specific application or a list of applications.
 The modifier's behavior and syntax perfectly match the corresponding [basic rules `$app` modifier](#app-modifier).
@@ -2215,7 +2220,7 @@ The modifier's behavior and syntax perfectly match the corresponding [basic rule
 >
 > Such rules with `$app` modifier are supported by AdGuard for Windows, Mac and Android.
 
-### **`$domain`** {#non-basic-domain-modifier}
+#### **`$domain`** {#non-basic-domain-modifier}
 
 `$domain` modifier limits the rule application area to a list of domains and their subdomains.
 The modifier's behavior and syntax perfectly match the corresponding [basic rules `$domain` modifier](#domain-modifier).
@@ -2237,7 +2242,7 @@ But rules with mixed style domains restriction are considered invalid. So, for e
 >
 > Such rules with `$domain` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard Browser extension for Chrome, Firefox, Edge.
 
-### **`$path`** {#non-basic-path-modifier}
+#### **`$path`** {#non-basic-path-modifier}
 
 `$path` modifier limits the rule application area to specific locations or pages on websites.
 
@@ -2270,7 +2275,7 @@ $path ["=" pattern]
 >
 > Rules with `$path` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard Browser extension for Chrome, Firefox, Edge.
 
-### **`url`** {#non-basic-url-modifier}
+#### **`url`** {#non-basic-url-modifier}
 
 `$url` modifier limits the rule application area to URLs matching the specified mask.
 
