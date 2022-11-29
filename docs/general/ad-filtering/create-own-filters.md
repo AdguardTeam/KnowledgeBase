@@ -723,7 +723,7 @@ http://regexr.com/3cesk
 
 > **Restrictions**
 >
-> Rules with `$replace` modifier can be used **only in trusted filters**. This category includes your own **User rules** and all the filters created by AdGuard Team.
+> Rules with `$replace` modifier can be used **only in trusted filters**. This category includes your own **User rules** and all the filters created by the AdGuard team.
 
 #### **`$csp`** {#csp-modifier}
 
@@ -1070,7 +1070,7 @@ With these rules, specified UTM parameters will be removed from any request save
 
 > **Restrictions**
 >
-> Rules with `$removeparam` modifier can be used **only in trusted filters**. This category includes your own **User rules** and all the filters created by AdGuard Team.
+> Rules with `$removeparam` modifier can be used **only in trusted filters**. This category includes your own **User rules** and all the filters created by the AdGuard team.
 
 #### **`$removeheader`** {#removeheader-modifier}
 
@@ -1104,7 +1104,7 @@ Use `@@` to negate `$removeheader`:
 
 > **Restrictions**
 >
-> 1. This type of rules can be used **only in trusted filters**. This category includes your own User rules and all the filters created by AdGuard Team.
+> 1. This type of rules can be used **only in trusted filters**. This category includes your own User rules and all the filters created by the AdGuard team.
 >
 > 2. In order to avoid compromising the security `$removeheader` cannot remove headers from the list below:
 >   * `access-control-allow-origin`
@@ -2033,7 +2033,7 @@ AdGuard supports a special type of rules that allows you to inject any javascrip
 
 > **Restrictions**
 >
-> Javascript rules can be used **only in trusted filters**. This category includes your own **User rules** and all the filters created by AdGuard Team.
+> Javascript rules can be used **only in trusted filters**. This category includes your own **User rules** and all the filters created by the AdGuard team.
 
 > **Compatibility with different versions of AdGuard**
 >
@@ -2113,7 +2113,7 @@ Trusted scriptlets are [scriptlets](#scriptlets) with extended functionality. Th
 > **Restrictions**
 >
 > Trusted scriptlets rules can be used **only in trusted filters**. This category includes:
-> * filter lists [created by AdGuard Team](./adguard-filters.md),
+> * filter lists [created by the AdGuard team](./adguard-filters.md),
 > * custom filter lists installed as `trusted`,
 > * user rules.
 
