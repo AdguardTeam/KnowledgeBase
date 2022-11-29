@@ -24,7 +24,7 @@ For example:
 
 ## Examples
 
-#### Example: Blocking by domain name
+#### Blocking by domain name
 
 ![Blocking by domain name](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/0_blocking_domain.svg)
 
@@ -39,7 +39,7 @@ For example:
 * `http://ads.example.org.us/ad1.gif`
 * `http://example.com/redirect/http://ads.example.org/`
 
-#### Example: Blocking exact address
+#### Blocking exact address
 
 ![Blocking exact address](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/1_exact_address.svg)
 
@@ -51,7 +51,7 @@ For example:
 
 * `https://example.org/banner/img`
 
-#### Example: Basic rule modifiers
+#### Basic rule modifiers
 
 Filtering rules support numerous modifiers that allow you to fine-tune the rule behavior. Here is an example of a rule with some simple modifiers.
 
@@ -66,7 +66,7 @@ Filtering rules support numerous modifiers that allow you to fine-tune the rule 
 * `https://example.org/script.js` if this script is loaded from `example.org`.
 * `https://example.org/banner.png` because it is not a script.
 
-#### Example: Unblocking an address
+#### Unblocking an address
 
 ![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/3_basic_exception.svg)
 
@@ -76,7 +76,7 @@ Filtering rules support numerous modifiers that allow you to fine-tune the rule 
 
 > Blocking rules with [`$important`](#important-modifier) modifier can override exceptions.
 
-#### Example: Unblocking everything on a website
+#### Unblocking everything on a website
 
 ![Unblocking everything](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/4_unblock_entire_website.svg)
 
@@ -85,7 +85,7 @@ Filtering rules support numerous modifiers that allow you to fine-tune the rule 
 * It disables all cosmetic rules on `example.com`.
 * It unblocks all requests sent from this website even if there is are blocking rules matching these requests.
 
-#### Example: Cosmetic rule
+#### Cosmetic rule
 
 ![Cosmetic rule](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/5_cosmetic_rules.svg)
 
@@ -182,9 +182,10 @@ For basic rules the described logic is applicable only for the domains specified
 
 ### Basic rules modifiers
 
-> **Attention!**
->
+> Note
+> 
 > The features described in this section are intended for experienced users. They extend capabilities of "Basic rules", but in order to use them you need to have a basic understanding of the way your browser works.
+
 You can change the behavior of a "basic rule" by using additional modifiers. Modifiers should be located in the end of the rule after a `$` sign and be separated by commas.
 
 Example:
@@ -237,7 +238,7 @@ If the referrer matches a rule with `$domain` that explicitly excludes the refer
 In the following examples it is implied that requests are sent from `http://example.org/page`(the referrer) and the target URL is `http://targetdomain.com/page`.
 
 * `page$domain=example.org` will be matched, as it matches the referrer domain.
-* `page$domain=targetdomain.com` will be matched, as it matches the target domain but satisfies all requirements mentioned above.
+* `page$domain=targetdomain.com` will be matched, as it matches the target domain and satisfies all requirements mentioned above.
 * `||*page$domain=targetdomain.com` will not be matched, as the pattern `||*page` matches specific domains.
 * `||*page$domain=targetdomain.com,cookie` will be matched despite the pattern `||*page` matches specific domains because it contains `$cookie` modifier.
 * `/banner\d+/$domain=targetdomain.com` will not be matched as it contains a regular expression.
@@ -344,13 +345,13 @@ If this modifier is used with an exclusion rule (`@@`), it completely disables b
 
 **Examples**
 
-* `@@||example.com^$document` — completely disables filtering on all pages at `example.com` and all subdomains.
-* `@@||example.com^$document,~extension` — completely disables blocking on any pages at `example.com` and all subdomains, but continues to run userscripts there.
+* `@@||example.com^$document` completely disables filtering on all pages at `example.com` and all subdomains.
+* `@@||example.com^$document,~extension` completely disables blocking on any pages at `example.com` and all subdomains, but continues to run userscripts there.
 
-* `||example.com^$document` — blocks HTML document request to `example.com` with a blocking page.
-* `||example.com^$document,redirect=noopframe` — redirects HTML document request to `example.com` to an empty html document.
-* `||example.com^$document,removeparam=test` — removes `test` query parameter from HTML document request to  `example.com`.
-* `||example.com^$document,replace=/test1/test2/` — replaces `test1` with `test2` in  HTML document request to `example.com`.
+* `||example.com^$document` blocks HTML document request to `example.com` with a blocking page.
+* `||example.com^$document,redirect=noopframe` redirects HTML document request to `example.com` to an empty html document.
+* `||example.com^$document,removeparam=test` removes `test` query parameter from HTML document request to  `example.com`.
+* `||example.com^$document,replace=/test1/test2/` replaces `test1` with `test2` in  HTML document request to `example.com`.
 
 > **Compatibility with different versions of AdGuard**
 >
@@ -686,7 +687,7 @@ replace = "/" regexp "/" replacement "/" modifiers
 * **`replacement`** — a string that will be used to replace the string corresponding to `regexp`.
 * **`modifiers`** — a regular expression flags. For example, `i` — insensitive search, or `s` — single-line mode.
 
-In the `$replace` value, two characters must be escaped: comma (`,`) and (`$`). Use (`\`) for it. For example, an escaped comma looks like this: `\,`.
+In the `$replace` value, two characters must be escaped: comma `,` and dollar sign `$`. Use backslash `\` for it. For example, an escaped comma looks like this: `\,`.
 
 **Examples**
 
@@ -825,7 +826,7 @@ every time AdGuard encounters a cookie called `NAME` in a request to `example.or
 
 This is basically a Firewall-kind of rules allowing to fully block or unblock access to a specified remote address.
 
-1. `$network` rules match **IP addresses only**! You cannot use it to block or unblock access to a domain.
+1. `$network` rules match **IP addresses only**! You cannot use them to block or unblock access to a domain.
 2. To match an IPv6 address, you have to use the collapsed syntax, e.g. use `[2001:4860:4860::8888]$network` instead of `[2001:4860:4860:0:0:0:0:8888]$network`.
 3. An allowlist `$network` rule makes AdGuard bypass data to the matching endpoint, e.g. there will be no further filtering at all.
 4. If the IP part starts and ends with `/` character, it is treated as a regular expression.
@@ -847,7 +848,7 @@ This is basically a Firewall-kind of rules allowing to fully block or unblock ac
 
 #### **`$app`** {#app-modifier}
 
-This modifier lets you narrow the rule coverage down to a specific application (or a list of applications). This might be not too important on Windows and Mac, but this is very important on Mobile where some of the filtering rules must be application-specific.
+This modifier lets you narrow the rule coverage down to a specific application (or a list of applications). This might be not too important on Windows and Mac, but this is very important on mobile where some of the filtering rules must be application-specific.
 
 * Android — use the app package name, e.g. `org.example.app`.
 * Windows — use the process name, e.g. `chrome.exe`.
@@ -941,7 +942,7 @@ is equivalent to this one:
 /^(?!.*(x.com|y.com)).*$/$script,domain=a.com|b.com
 ```
 
-or to these three:
+or to the combination of these three:
 ```
 *$script,domain=a.com|b.com
 @@||x.com$script,domain=a.com|b.com
@@ -986,9 +987,9 @@ You can also use regular expressions to match query parameters and/or their valu
 
 > We will try to detect and ignore unescaped `$` automatically using a simple rule of thumb:
 > It is not an options delimiter if all three are true:
-> 1. it looks like `$/`;
-> 2. there is another slash character (`/`) to the left of it;
-> 3. there is another unescaped `$` character to the left of that slash character.
+> 1. It looks like `$/`;
+> 2. There is another slash character `/` to the left of it;
+> 3. There is another unescaped dollar sign `$` to the left of that slash character.
 
 **Remove all query parameters**
 
@@ -1009,9 +1010,9 @@ This sort of rules work pretty much the same way it works with [`$csp`](#csp-mod
 
 Use `@@` to negate `$removeparam`:
 
-* `@@||example.org^$removeparam` — negates all `$removeparam` rules for URLs that match `||example.org^`.
-* `@@||example.org^$removeparam=param` — negates the rule with `$removeparam=param` for any request matching `||example.org^`.
-* `@@||example.org^$removeparam=/regexp/` — negates the rule with `$removeparam=/regexp/` for any request matching `||example.org^`.
+* `@@||example.org^$removeparam` negates all `$removeparam` rules for URLs that match `||example.org^`.
+* `@@||example.org^$removeparam=param` negates the rule with `$removeparam=param` for any request matching `||example.org^`.
+* `@@||example.org^$removeparam=/regexp/` negates the rule with `$removeparam=/regexp/` for any request matching `||example.org^`.
 
 > **Multiple rules matching a single request**
 >
@@ -1483,7 +1484,7 @@ Sometimes, simple hiding of an element is not enough to deal with advertising. F
 domains = [domain0, domain1[, ...[, domainN]]]
 ```
 
-* **`selector`** — [CSS selector](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors), defines the elements we want to apply the style to.
+* **`selector`** — [CSS selector](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors), that defines the elements we want to apply the style to.
 * **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules](#elemhide-syntax).
 * **`style`** — CSS style, that we want to apply to selected elements.
 
@@ -1812,7 +1813,7 @@ The `:xpath()` pseudo-class is different from other pseudo-classes. Whereas all 
 [selector]:xpath(expression)
 ```
 
-- `selector`- optional, a plain CSS selector, or a Sizzle compatible selector
+- `selector` — optional, a plain CSS selector, or a Sizzle compatible selector
 - `expression` — a valid XPath expression
 
 **Examples**
@@ -1922,7 +1923,7 @@ In most cases, the basis and cosmetic rules are enough to filter ads. But someti
 attributes = "[" name0 = value0 "]" "[" name1 = value2 "]" ... "[" nameN = valueN "]"
 ```
 
-* **`tagName`** — name of the element in lower case, for example `div` or `script`.
+* **`tagName`** — name of the element in lower case, for example, `div` or `script`.
 * **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules syntax](#elemhide-syntax).
 * **`attributes`** — a list of attributes, that limit the elements selection. `name` — attribute name, `value` — substring, that is contained in attribute value.
 
@@ -2190,7 +2191,7 @@ $path ["=" pattern]
 * `[$path=/page*.html]example.com##.textad` hides a `div` with a class `textad` at `/page1.html` or `/page2.html` or any other path matching `/page<...>.html` of `example.com`
 * `[$path]example.com##.textad` hides a `div` with a class `textad` at the main page of `example.com`
 * `[$domain=example.com,path=/page.html]##.textad` hides a `div` with a class `textad` at `page.html` of `example.com` and all subdomains but not at `another_page.html`
-* `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` hides a `div` with a class `textad` at both `/sub1/page.html` and `/sub2/page.html` of any domain (please, note the [escaped special characters](#non-basic-rules-modifiers-syntax)
+* `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` hides a `div` with a class `textad` at both `/sub1/page.html` and `/sub2/page.html` of any domain (please note the [escaped special characters](#non-basic-rules-modifiers-syntax)
 
 > **Compatibility with different versions of AdGuard**
 >
@@ -2223,22 +2224,22 @@ The [special characters](#basic-rules-special-characters) and [regular expressio
 
 If you maintain a third-party filter that is known to AdGuard, you might be interested in the information presented in this section. Please note that hints will be applied to registered filters only. The filter is considered to be registered and known by AdGuard, if it is present in the [known filters index](https://filters.adtidy.org/extension/chromium/filters.json). If you want your filter to be registered, please file an issue to [AdguardFilters repo](https://github.com/AdguardTeam/AdguardFilters).
 
-### Pre-processor directives
+### Preprocessor directives
 
-We provide pre-processor directives that can be used by filters maintainers to improve compatibility with different ad blockers and provide:
+We provide preprocessor directives that can be used by filters maintainers to improve compatibility with different ad blockers and provide:
 * [including a file](#include-directive)
 * [applying rules conditionally by ad blocker type](#conditions-directive)
 * [content blocker specifying for rules applying in Safari](#safari-affinity-directive)
 
 > **Note**
 >
-> Any mistake in a pre-processor directive will lead to AdGuard failing the filter update in the same way as if the filter URL was unavailable.
+> Any mistake in a preprocessor directive will lead to AdGuard failing the filter update in the same way as if the filter URL was unavailable.
 
-> Pre-processor directives can be used in the User Rules or in the custom filters.
+> Preprocessor directives can be used in the User Rules or in the custom filters.
 
 #### Including a file {#include-directive}
 
-The `!#include` directive allows to include contents of a specified file into the filter. It supports only files from the same origin to make sure that the filter maintainer is in control of the specified file. The included file can also contain pre-processor directives (even other `!#include` directives). Ad blockers should consider the case of recursive `!#include` and implement a protection mechanism.
+The `!#include` directive allows to include contents of a specified file into the filter. It supports only files from the same origin to make sure that the filter maintainer is in control of the specified file. The included file can also contain pre- directives (even other `!#include` directives). Ad blockers should consider the case of recursive `!#include` and implement a protection mechanism.
 
 **Syntax**
 
@@ -2286,8 +2287,8 @@ rules_list
 ```
 where:
 - `!#if (conditions)` — start of the block
-- `conditions` — just like in some popular programming languages, pre-processor conditions are based on constants declared by ad blockers. Ad blocker authors define on their own what exact constants do they declare. Possible values:
-  - `adguard` — declared always; shows maintainers that this is one of AdGuard products; should be enough in 95% of cases
+- `conditions` — just like in some popular programming languages, preprocessor conditions are based on constants declared by ad blockers. Ad blocker authors define on their own what exact constants do they declare. Possible values:
+  - `adguard` always declared; shows maintainers that this is one of AdGuard products; should be enough in 95% of cases
   - product-specific constants for cases when you need a rule to work (or not work — then `!` should be used before constant) in a specific product only:
     - `adguard_app_windows` — AdGuard for Windows
     - `adguard_app_mac` — AdGuard for Mac
@@ -2322,7 +2323,7 @@ domain.com##div.ad
 
 #### Safari affinity {#safari-affinity-directive}
 
-Safari is notoriously known for its harsh 50k max limit for filtering rules in content blockers. But in AdGuard for Safari and AdGuard for iOS max rule count is raised to 300k by splitting them into several content blockers. Generally, several filters categories are more or less independent, so there is such content blockers with such categories included:
+Safari is notoriously known for its harsh 150k max limit for filtering rules in content blockers. But in AdGuard for Safari and AdGuard for iOS max rule count is raised to 300k by splitting them into several content blockers. Generally, several filters categories are more or less independent, so there is such content blockers with such categories included:
 - AdGuard General — Ad Blocking, Language-specific
 - AdGuard Privacy — Privacy
 - AdGuard Social — Social Widgets, Annoyances
@@ -2444,7 +2445,7 @@ Used to specify the platforms to apply the rules. List of existing platforms and
 
 * `ext_safari` — AdGuard for Safari — [https://filters.adtidy.org/extension/safari/filters/2.txt](https://filters.adtidy.org/extension/safari/filters/2.txt)
 
-* `ext_android_cb` — AdGuard Content Blocker - [https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt](https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt)
+* `ext_android_cb` — AdGuard Content Blocker — [https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt](https://filters.adtidy.org/extension/android-content-blocker/filters/2.txt)
 
 * `ext_ublock` — uBlock Origin — [https://filters.adtidy.org/extension/ublock/filters/2.txt](https://filters.adtidy.org/extension/ublock/filters/2.txt)
 
@@ -2456,7 +2457,7 @@ This rule will be available only in AdGuard for Windows, Mac, Android:
 ||example.org^
 ```
 
-This rule will be available for every platform except AdGuard for Safari, Android Content Blocker, and AdGuard for iOS:
+This rule will be available for every platform except AdGuard for Safari, AdGuard Content Blocker, and AdGuard for iOS:
 ```
 !+ NOT_PLATFORM(ext_safari, ext_android_cb, ios)
 ||example.org^
@@ -2481,7 +2482,7 @@ Depending on which AdGuard product you are using, Filtering log can be located i
 
 ### Selectors debugging mode
 
-Sometimes, you might need to check the performance of a given selector or a stylesheet. In order to do it without interacting with javascript directly, you can use a special `debug` style property. When `ExtendedCss` meets this property, it enables the debug mode either for a single selector or for all selectors, depending on the `debug` value. Open the browser console while on a web page to see the timing statistics for selector(s) that were applied there. Debugging mode displays the following stats for each of the debugged selectors:
+Sometimes, you might need to check the performance of a given selector or a stylesheet. In order to do it without interacting with JavaScript directly, you can use a special `debug` style property. When `ExtendedCss` meets this property, it enables the debug mode either for a single selector or for all selectors, depending on the `debug` value. Open the browser console while on a web page to see the timing statistics for selector(s) that were applied there. Debugging mode displays the following stats for each of the debugged selectors:
 
 * `array` — time that it took to apply the selector on the page, for each of the instances that it has been applied (in milliseconds)
 * `length` — total number of times that the selector has been applied on the page
@@ -2502,7 +2503,7 @@ When the value of the `debug` property is `true`, only information about this se
 
 **Enabling global debug:**
 
-When the value of the `debug` property is `global`, the console will display information about all ExtendedCSS selectors that have matches on the current page, for all ExtendedCSS rules from any of the enabled filters.
+When the value of the `debug` property is `global`, the console will display information about all ExtendedCss selectors that have matches on the current page, for all ExtendedCss rules from any of the enabled filters.
 
 ```
 #$?#.banner { display: none; debug: global; }
@@ -2510,7 +2511,7 @@ When the value of the `debug` property is `global`, the console will display inf
 
 **Testing extended selectors without AdGuard**
 
-If you do not have AdGuard installed, you can still test extended selectors, but you will have to load ExtendedCSS to the current page first. To do so, copy and execute the following code in the browser console:
+If you do not have AdGuard installed, you can still test extended selectors, but you will have to load ExtendedCss to the current page first. To do so, copy and execute the following code in the browser console:
 
 ```
 !function(E,x,t,C,s,s_){C=E.createElement(x),s=E.getElementsByTagName(x)[0],C.src=t,
@@ -2518,12 +2519,12 @@ C.onload=function(){alert('ExtCss loaded successfully')},s.parentNode.insertBefo
 (document,'script','https://AdguardTeam.github.io/ExtendedCss/extended-css.min.js')
 ```
 
-Alternatively, install an "ExtendedCssDebugger" userscript: https://github.com/AdguardTeam/Userscripts/blob/master/extendedCssDebugger/extended-css.debugger.user.js
+Alternatively, install an ["ExtendedCssDebugger" userscript](https://github.com/AdguardTeam/Userscripts/blob/master/extendedCssDebugger/extended-css.debugger.user.js).
 
 You can now use the `ExtendedCss` constructor in the global scope, and its method `ExtendedCss.query` as `document.querySelectorAll`.
 ```
 var selectorText = "div.block[-ext-has='.header:matches-css-after(content: Anzeige)']";
-ExtendedCss.query(selectorText) // returns an array of Elements matching selectorText
+ExtendedCss.query(selectorText) // returns an array of elements matching selectorText
 ```
 
 ### Debugging scriptlets

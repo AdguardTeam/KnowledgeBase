@@ -39,4 +39,4 @@ AdGuard products which use [CoreLibs](https://github.com/AdguardTeam/CoreLibs/) 
 
 ## Have remarks or suggestions?
 
-If you’d like to add something, report any errors, or ask a question, please contact us at: `devteam at adguard.com`.
+If you’d like to add something, report any errors, or ask a question, please contact us at: `devteam@adguard.com`.
