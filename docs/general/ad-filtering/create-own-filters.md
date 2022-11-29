@@ -183,7 +183,7 @@ For basic rules the described logic is applicable only for the domains specified
 ### Basic rules modifiers
 
 > Note
-> 
+>
 > The features described in this section are intended for experienced users. They extend capabilities of "Basic rules", but in order to use them you need to have a basic understanding of the way your browser works.
 
 You can change the behavior of a "basic rule" by using additional modifiers. Modifiers should be located in the end of the rule after a `$` sign and be separated by commas.
@@ -625,7 +625,7 @@ The `$important` modifier applied to a rule increases its priority over any othe
 @@||test.org^$document
 ```
 
-#### **`$badfilter`**
+#### **`$badfilter`** {#badfilter-modifier}
 
 The rules with the `$badfilter` modifier disable other basic rules to which they refer. It means that the text of the disabled rule should match the text of the `$badfilter` rule (without the `$badfilter` modifier).
 
@@ -761,7 +761,7 @@ For the requests matching a `$csp` rule, we will strengthen response security po
 >
 > Rules with `$csp` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
 
-##### **`$all`**
+#### **`$all`** {#all-modifier}
 
 `$all` modifier is made of [`$document`](#document-modifier), [`$popup`](#popup-modifier), [`$csp`](#csp-modifier) modifiers. E.g. rule `||example.org^$all` is converting into such set of rules:
 ```
@@ -769,6 +769,20 @@ For the requests matching a `$csp` rule, we will strengthen response security po
 ||example.org^$csp=script-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
 ||example.org^$csp=font-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
 ||example.org^
+```
+
+#### **`$inline-script`** {#inline-script-modifier}
+
+`$inline-script` modifier is sort of shortcut for [`$csp`](#csp-modifier) modifier with specific value. E.g. rule `||example.org^$inline-script` is converting into such rule:
+```
+||example.org^$csp=script-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
+```
+
+#### **`$inline-font`** {#inline-font-modifier}
+
+`$inline-font` modifier is sort of shortcut for [`$csp`](#csp-modifier) modifier with specific value. E.g. rule `||example.org^$inline-font` is converting into such rule:
+```
+||example.org^$csp=font-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
 ```
 
 #### **`$cookie`** {#cookie-modifier}
@@ -917,7 +931,7 @@ In this case, only requests to `example.org/script.js` will be "redirected" to `
 >
 > Rules with `$redirect-rule` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
 
-#### **`$denyallow`**
+#### **`$denyallow`** {#denyallow-modifier}
 
 `$denyallow` modifier allows to avoid creating additional rules when it is needed to disable a certain rule for specific domains. `$denyallow` matches only target domains and not referrer domains.
 
