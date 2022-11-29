@@ -182,8 +182,9 @@ For basic rules the described logic is applicable only for the domains specified
 
 ### Basic rules modifiers
 
-<!-- toc -->
 * [Basic modifiers](#basic-rules-basic-modifiers)
+* [Content type modifiers](#content-type-modifiers)
+* [Exception modifiers](#exception-modifiers)
 
 > Note
 >
@@ -197,6 +198,12 @@ Example:
 ```
 
 #### Basic modifiers {#basic-rules-basic-modifiers}
+
+* [`$domain`](#domain-modifier)
+* [`$third-party`](#third-party-modifier)
+* [`$popup`](#popup-modifier)
+* [`$match-case`](#match-case-modifier)
+* [`$header`](#header-modifier)
 
 The following modifiers are the most simple and frequently used.
 
@@ -326,6 +333,21 @@ The modifier `":" h_value` part may be omitted. In that case the modifier matche
 
 #### Restriction by content type {#content-type-modifiers}
 
+* [`$document`](#document-modifier)
+* [`$image`](#image-modifier)
+* [`$stylesheet`](#stylesheet-modifier)
+* [`$script`](#script-modifier)
+* [`$object`](#object-modifier)
+* [`$font`](#font-modifier)
+* [`$media`](#media-modifier)
+* [`$subdocument`](#subdocument-modifier)
+* [`$ping`](#ping-modifier)
+* [`$xmlhttprequest`](#xmlhttprequest-modifier)
+* [`$websocket`](#websocket-modifier)
+* [`$webrtc`](#webrtc-modifier)
+* [`$other`](#other-modifier)
+* [`$object-subrequest` (deprecated)](#object-subrequest-modifier)
+
 There is a set of modifiers, which can be used to limit the rule's application area to certain type of content. These modifiers can also be combined to cover, for example, both images and scripts.
 
 > **Compatibility with different versions of AdGuard**
@@ -449,6 +471,17 @@ The rule applies to requests for which the type has not been determined or does 
 > The rule corresponds to requests by browser plugins (it is usually Flash).
 
 #### Exception modifiers {#exception-modifiers}
+
+* [`$elemhide`](#elemhide-modifier)
+* [`$content`](#content-modifier)
+* [`$jsinject`](#jsinject-modifier)
+* [`$urlblock`](#urlblock-modifier)
+* [`$extension`](#extension-modifier)
+* [`$stealth`](#stealth-modifier)
+* [`$specifichide`](#specifichide-modifier)
+* [Generic rules](#exception-modifiers-generic-rules)
+  * [`$generichide`](#generichide-modifier)
+  * [`$generichide`](#generichide-modifier)
 
 Exception rules disable the other basic rules for the addresses to which they correspond. They begin with a `@@` mark. All the basic modifiers listed above can be applied to them and they also have a few special modifiers.
 
