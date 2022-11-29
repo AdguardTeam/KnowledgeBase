@@ -191,7 +191,7 @@ For basic rules the described logic is applicable only for the domains specified
 
 ### Basic rules modifiers
 
-> Note
+> **Note**
 >
 > The features described in this section are intended for experienced users. They extend capabilities of "Basic rules", but in order to use them you need to have a basic understanding of the way your browser works.
 
