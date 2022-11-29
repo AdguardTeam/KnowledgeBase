@@ -105,6 +105,15 @@ Cosmetic rules are based on using a special language named CSS, which every brow
 | Attribute substring selector | `a[href^="http://example.com/"]`   | Matches all links that are loaded from `http://example.com/` domain.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_attr_start.png) |
 | Attribute selector | `a[href="http://example.com/"]`   | Matches all links to **exactly** the `http://example.com/` address.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_attr_equal.png) |
 
+## Restrictions
+
+#### Trusted filters {#trusted-filters}
+
+Some rules can be used only in trusted filters. This category includes:
+> * filter lists [created by the AdGuard team](./adguard-filters.md),
+> * custom filter lists installed as `trusted`,
+> * User rules.
+
 ## Basic rules
 
 The most simple rules are so-called *Basic rules*. They are used to block requests to specific URLs. Or to unblock it, if there is a special marker "@@" at the beginning of the rule. The basic principle for this type of rules is quite simple: you have to specify the address and additional parameters that limit or expand the scope of the rule.
@@ -723,7 +732,7 @@ http://regexr.com/3cesk
 
 > **Restrictions**
 >
-> Rules with `$replace` modifier can be used **only in trusted filters**. This category includes your own **User rules** and all the filters created by the AdGuard team.
+> Rules with `$replace` modifier can be used [**only in trusted filters**](#trusted-filters).
 
 #### **`$csp`** {#csp-modifier}
 
@@ -1070,7 +1079,7 @@ With these rules, specified UTM parameters will be removed from any request save
 
 > **Restrictions**
 >
-> Rules with `$removeparam` modifier can be used **only in trusted filters**. This category includes your own **User rules** and all the filters created by the AdGuard team.
+> Rules with `$removeparam` modifier can be used [**only in trusted filters**](#trusted-filters).
 
 #### **`$removeheader`** {#removeheader-modifier}
 
@@ -1104,7 +1113,7 @@ Use `@@` to negate `$removeheader`:
 
 > **Restrictions**
 >
-> 1. This type of rules can be used **only in trusted filters**. This category includes your own User rules and all the filters created by the AdGuard team.
+> 1. This type of rules can be used [**only in trusted filters**](#trusted-filters).
 >
 > 2. In order to avoid compromising the security `$removeheader` cannot remove headers from the list below:
 >   * `access-control-allow-origin`
@@ -2033,7 +2042,7 @@ AdGuard supports a special type of rules that allows you to inject any javascrip
 
 > **Restrictions**
 >
-> Javascript rules can be used **only in trusted filters**. This category includes your own **User rules** and all the filters created by the AdGuard team.
+> Javascript rules can be used [**only in trusted filters**](#trusted-filters).
 
 > **Compatibility with different versions of AdGuard**
 >
@@ -2080,6 +2089,12 @@ We recommend to use this kind of exceptions only if it is not possible to change
 
 Scriptlet is a JavaScript function that provides extended capabilities for content blocking. These functions can be used in a declarative manner in AdGuard filtering rules.
 
+> **Restrictions**
+>
+> Trusted scriptlets rules can be used [**only in trusted filters**](#trusted-filters).
+
+> **Note**
+>
 > AdGuard supports a lot of different scriptlets. In order to achieve cross-blocker compatibility, we also support syntax of uBO and ABP.
 
 **Syntax**
@@ -2109,13 +2124,6 @@ More information about scriptlets can be found [on GitHub](https://github.com/Ad
 ### Trusted scriptlets {#trusted-scriptlets}
 
 Trusted scriptlets are [scriptlets](#scriptlets) with extended functionality. Their names are prefixed with `trusted-`, e.g. `trusted-set-cookie`, to be easily distinguished from common scriptlets.
-
-> **Restrictions**
->
-> Trusted scriptlets rules can be used **only in trusted filters**. This category includes:
-> * filter lists [created by the AdGuard team](./adguard-filters.md),
-> * custom filter lists installed as `trusted`,
-> * user rules.
 
 > **Note**
 >
