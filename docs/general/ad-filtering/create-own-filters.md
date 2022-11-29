@@ -183,7 +183,7 @@ For basic rules the described logic is applicable only for the domains specified
 ### Basic rules modifiers
 
 > Note
-> 
+>
 > The features described in this section are intended for experienced users. They extend capabilities of "Basic rules", but in order to use them you need to have a basic understanding of the way your browser works.
 
 You can change the behavior of a "basic rule" by using additional modifiers. Modifiers should be located in the end of the rule after a `$` sign and be separated by commas.
@@ -2108,7 +2108,7 @@ More information about scriptlets can be found [on GitHub](https://github.com/Ad
 
 ### Trusted scriptlets {#trusted-scriptlets}
 
-Trusted scriptlets are [scriptlets](#scriptlets) with extended functionality. Their names are prefixed with `trusted-`, e.g `trusted-set-cookie`, to be easily distinguished from common scriptlets.
+Trusted scriptlets are [scriptlets](#scriptlets) with extended functionality. Their names are prefixed with `trusted-`, e.g. `trusted-set-cookie`, to be easily distinguished from common scriptlets.
 
 > **Restrictions**
 >
