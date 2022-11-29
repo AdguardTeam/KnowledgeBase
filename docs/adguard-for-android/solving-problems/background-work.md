@@ -200,7 +200,7 @@ For early Samsung devices, there is no huge need for setting up the background w
 
 ![Huawei](https://cdn.adguard.com/public/Adguard/screenshots/android/huawei3en.png)
 
-3. Make sure to **ENABLE** all toggles.
+3. Make sure to **enable** all toggles.
 
 Also for reliable background processes you may need to uninstall PowerGenie as detailed below.
 
@@ -269,7 +269,7 @@ Besides, to set up the background work of your app more effectively, you should 
 - Go to **Advanced Settings** > then open **Battery Manager** > Set **Power plan** to **Performance**;
 - Then choose **Protected apps** in the **Battery Manager** and check if your app is Protected;
 - Go to **Apps** in the main settings and click on AdGuard there > choose **Battery** > enable **Power-intensive prompt** and **Keep running after screen is off**;
-- Then in the **Apps** section open **Settings** (at the bottom) > **Special access** > choose **Ignore battery optimization* > press **Allowed** > **All apps** > find AdGuard on the list and set it to **Deny**.
+- Then in the **Apps** section open **Settings** (at the bottom) > **Special access** > choose **Ignore battery optimization** > press **Allowed** > **All apps** > find AdGuard on the list and set it to **Deny**.
 
 ## Meizu
 
@@ -369,7 +369,7 @@ Wiko devices are definitely problematic in terms of non-standard background proc
 
 ## Android stock devices Pixel/Nexus/Essential
 
-Android stock OS normally does not conflict with applications working in the background, but if you are facing any issues you will need to switch on the **Always on VPN** mode.
+Android stock OS normally does not conflict with applications working in the background, but if you are facing any issues you will need to switch on the **Always-on VPN** mode.
 
  - Go to **Settings** > **Network and Internet**
  
@@ -379,6 +379,6 @@ Android stock OS normally does not conflict with applications working in the bac
  
  ![Stockvpn](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/stockvpn.png)
  
- - Set up **Always on VPN** mode
+ - Set up **Always-on VPN** mode
  
  ![Stockadguard](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/stockadguard.png)

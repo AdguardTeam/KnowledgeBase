@@ -29,7 +29,7 @@ You can prevent AdGuard from using the "default route" by disabling it. It can b
 
 #### Compatibility with Protect Mail Activity
 
-Apple's Mail app now uses a proxy to hide a user's IP Address when downloading images from emails. However, it won't work if there's an active VPN connection. As it treats AdGuard as a VPN, it won't preload images automatically.
+Apple's Mail app now uses a proxy to hide a user's IP address when downloading images from emails. However, it won't work if there's an active VPN connection. As it treats AdGuard as a VPN, it won't preload images automatically.
 
 For a deeper understanding of this problem, read [this article](https://kb.adguard.com/en/macos/solving-problems/protect-mail-activity).
 
@@ -50,7 +50,7 @@ AdGuard will not work together with Cisco AnyConnect while in *Network Extension
 > This problem is solved in Flutter 2.2, released in June 2021. But to fix it for applications developed in Flutter, you need to wait for updates.
 If you use Flutter alongside AdGuard in "Network Extension" mode (or any other "Transparent Proxy"-type app) in Monterey or Big Sur, you will run into problems: projects won't open and Flutter will be effectively broken. We have already reported this bug to Apple. Meanwhile, you can use these temporary solutions:
  
-1) Use AdGuard in [Automatic Proxy](#automatic-proxy) mode
+1) Use AdGuard in [Automatic Proxy](#automatic-proxy) mode.
  
 2) Disable SIP and switch AdGuard to Kernel Extension mode as explained [here](#kernel-extension).
  
@@ -86,13 +86,13 @@ To configure an upstream proxy in AdGuard for Mac in Big Sur, you need to go to 
  
 Enter a string that looks like `scheme://user:password@host:port`, where
  
-* `scheme` is either `http`, `https`, `socks4` or `socks5`, depending on your proxy type.
+* `scheme` is either `http`, `https`, `socks4` or `socks5`, depending on your proxy type,
  
 >If you use `socks5` proxy type, set the value of the `upstream.proxy.socks5udp` setting to `true` to make AdGuard route UDP traffic to the proxy server.
  
-* `user` and `password` are corresponding username and password of your proxy (if needed). Ignore either or both when not applicable
-* `host` is the IP address of your proxy server
-* `port` is the desired port number to be used by the proxy server
+* `user` and `password` are corresponding username and password of your proxy (if needed). Ignore either or both when not applicable,
+* `host` is the IP address of your proxy server,
+* `port` is the desired port number to be used by the proxy server.
  
 >Example: `socks5://localhost:6322` will configure a SOCKS5 local proxy that listens to port 6322 and doesn't require a username or a password.
  
