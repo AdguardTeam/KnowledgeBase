@@ -586,7 +586,7 @@ Disables all specific element hiding and CSS rules, but not general ones. Has an
 
 **Examples**
 
-* `@@||example.org^$specifichide` — will disable `example.org##.banner` but not `##.banner`.
+* `@@||example.org^$specifichide` disables `example.org##.banner` but not `##.banner`.
 
 > **Note**
 >
