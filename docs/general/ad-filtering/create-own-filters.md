@@ -213,17 +213,17 @@ The following modifiers are the most simple and frequently used.
 
 **Examples**
 
-**`$domain`:**
+**Just `$domain`:**
 
-* `||baddomain.com^$domain=example.org` — a rule to block requests that match the specified mask, and are sent from domain `example.org` or its subdomains.
+* `||baddomain.com^$domain=example.org` blocks requests that match the specified mask, and are sent from domain `example.org` or its subdomains.
 * `||baddomain.com^$domain=example.org|example.com` — the same rule, but it works for both `example.org` and `example.com`.
 
 If you want the rule not to be applied to certain domains, start a domain name with `~` sign.
 
-**`$domain` and `~`:**
+**`$domain` and negation `~`:**
 
-* `||baddomain.com^$domain=~example.org` — this rule blocks requests matching the pattern sent from any domain except `example.org` and its subdomains.
-* `||baddomain.com^$domain=example.org|~foo.example.org` — this rule blocks requests sent from `example.org` and its subdomains, except the subdomain `foo.example.org`.
+* `||baddomain.com^$domain=~example.org` blocks requests matching the pattern sent from any domain except `example.org` and its subdomains.
+* `||baddomain.com^$domain=example.org|~foo.example.org` blocks requests sent from `example.org` and its subdomains, except the subdomain `foo.example.org`.
 
 **`$domain` modifier matching target domain:**
 
