@@ -55,6 +55,38 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 20. Click **Save**.
 
+### Mac {#mac}
+
+1. Note the IP address of your desktop computer with installed AdGuard.
+
+2. Activate AdGuard on your computer and check the box **Use AdGuard as an HTTP proxy** in the **Network** settings of the desktop app.
+
+3. On the same computer with AdGuard follow this link using any browser: [http://local.adguard.org/cert](http://local.adguard.org/cert)
+
+4. Click the **Download** button.
+
+5. Transfer the downloaded **cert.cer** file to the device which traffic you want to route through AdGuard.
+
+6. Double-click the downloaded certificate file.
+
+7. Enter the administrator password, and then click **Modify Keychain**.
+
+8. Go to **Spotlight** (the search icon in the top right corner), type in “Keychain Access”, and then select **Keychain Access** from the search results.
+
+9. Under *System*, highlight the certificate that you added.
+
+10. Right-click on it and choose **Get Info** from the context menu.
+
+11. Expand *Trust* to display the trust policies for the certificate.
+
+12. Under *Secure Sockets Layers (SSL)*, select **Always Trust**.
+
+13. Open **System Preferences** > **Network** > **Wi-Fi**.
+
+14. Navigate to the **Proxies** tab.
+
+15. Tick the checkbox *Web Proxy (HTTP)*. For **Web Proxy Server**, enter the noted IP-address of your computer (step 1). In the field next to it (separated with a colon), enter the port chosen in desktop AdGuard's network settings.
+
 ### Android {#android}
 
 1. Note the IP address of your desktop computer with installed AdGuard.
@@ -96,35 +128,3 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 9. On that device, open advanced settings of the active WiFi network.
 
 10. Switch the **Proxy type** to **Manual**. For **Proxy hostname**, enter the noted IP-address of your computer (step 1). For **Proxy port**, enter the port chosen in desktop AdGuard's network settings.
-
-### Mac {#mac}
-
-1. Note the IP address of your desktop computer with installed AdGuard.
-
-2. Activate AdGuard on your computer and check the box **Use AdGuard as an HTTP proxy** in the **Network** settings of the desktop app.
-
-3. On the same computer with AdGuard follow this link using any browser: [http://local.adguard.org/cert](http://local.adguard.org/cert)
-
-4. Click the **Download** button.
-
-5. Transfer the downloaded **cert.cer** file to the device which traffic you want to route through AdGuard.
-
-6. Double-click the downloaded certificate file.
-
-7. Enter the administrator password, and then click **Modify Keychain**.
-
-8. Go to **Spotlight** (the search icon in the top right corner), type in “Keychain Access”, and then select **Keychain Access** from the search results.
-
-9. Under *System*, highlight the certificate that you added.
-
-10. Right-click on it and choose **Get Info** from the context menu.
-
-11. Expand *Trust* to display the trust policies for the certificate.
-
-12. Under *Secure Sockets Layers (SSL)*, select **Always Trust**.
-
-13. Open **System Preferences** > **Network** > **Wi-Fi**.
-
-14. Navigate to the **Proxies** tab.
-
-15. Tick the checkbox *Web Proxy (HTTP)*. For **Web Proxy Server**, enter the noted IP-address of your computer (step 1). In the field next to it (separated with a colon), enter the port chosen in desktop AdGuard's network settings.
