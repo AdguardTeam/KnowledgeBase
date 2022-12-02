@@ -839,7 +839,7 @@ For the requests matching a `$csp` rule, we will strengthen response security po
 
 #### **`$inline-font`** {#inline-font-modifier}
 
-`$inline-font` modifier is sort of shortcut for [`$csp`](#csp-modifier) modifier with specific value. E.g. rule `||example.org^$inline-font` is converting into such rule:
+`$inline-font` modifier is a sort of a shortcut for [`$csp`](#csp-modifier) modifier with specific value. E.g. the rule `||example.org^$inline-font` is converting into such a rule:
 ```
 ||example.org^$csp=font-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
 ```
