@@ -2131,7 +2131,7 @@ Trusted scriptlets are [scriptlets](#scriptlets) with extended functionality. It
 
 > **Compatibility with different versions of AdGuard**
 >
-> Trusted scriptlets rules are supported now by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.10.141 or later**.
+> Trusted scriptlets rules are now supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.10.141 or later**.
 
 Learn more about [how to debug scriptlets](#debug-scriptlets).
 
