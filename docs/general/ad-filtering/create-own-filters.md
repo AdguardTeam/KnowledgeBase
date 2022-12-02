@@ -182,8 +182,12 @@ For basic rules the described logic is applicable only for the domains specified
 
 ### Basic rules modifiers
 
+* [Basic modifiers](#basic-rules-basic-modifiers)
+* [Content type modifiers](#content-type-modifiers)
+* [Exception modifiers](#exception-modifiers)
+
 > Note
-> 
+>
 > The features described in this section are intended for experienced users. They extend capabilities of "Basic rules", but in order to use them you need to have a basic understanding of the way your browser works.
 
 You can change the behavior of a "basic rule" by using additional modifiers. Modifiers should be located in the end of the rule after a `$` sign and be separated by commas.
@@ -193,29 +197,35 @@ Example:
 ||domain.com^$popup,third-party
 ```
 
-#### Basic modifiers
+#### Basic modifiers {#basic-rules-basic-modifiers}
+
+* [`$domain`](#domain-modifier)
+* [`$third-party`](#third-party-modifier)
+* [`$popup`](#popup-modifier)
+* [`$match-case`](#match-case-modifier)
+* [`$header`](#header-modifier)
 
 The following modifiers are the most simple and frequently used.
 
-##### **`$domain`** {#domain-modifier}
+#### **`$domain`** {#domain-modifier}
 
 `$domain` limits the rule application area to a list of domains and their subdomains. To add multiple domains to one rule, use the `|`  character as a separator.
 
 **Examples**
 
-**`$domain`:**
+**Just `$domain`:**
 
-* `||baddomain.com^$domain=example.org` — a rule to block requests that match the specified mask, and are sent from domain `example.org` or its subdomains.
+* `||baddomain.com^$domain=example.org` blocks requests that match the specified mask, and are sent from domain `example.org` or its subdomains.
 * `||baddomain.com^$domain=example.org|example.com` — the same rule, but it works for both `example.org` and `example.com`.
 
 If you want the rule not to be applied to certain domains, start a domain name with `~` sign.
 
-**`$domain` and `~`:**
+**`$domain` and negation `~`:**
 
-* `||baddomain.com^$domain=~example.org` — this rule blocks requests matching the pattern sent from any domain except `example.org` and its subdomains.
-* `||baddomain.com^$domain=example.org|~foo.example.org` — this rule blocks requests sent from `example.org` and its subdomains, except the subdomain `foo.example.org`.
+* `||baddomain.com^$domain=~example.org` blocks requests matching the pattern sent from any domain except `example.org` and its subdomains.
+* `||baddomain.com^$domain=example.org|~foo.example.org` blocks requests sent from `example.org` and its subdomains, except the subdomain `foo.example.org`.
 
-###### **`$domain` modifier matching target domain:**
+**`$domain` modifier matching target domain:**
 
 In some cases the `$domain` modifier can match not only the referrer domain, but also the target domain. This happens when all of the following is true:
 
@@ -248,7 +258,7 @@ In the following examples it is implied that requests are sent from `http://exam
 >
 > Safari does not support the simultaneous use of allowed and disallowed domains, so rules like `||baddomain.com^$domain=example.org|~foo.example.org` will not work in AdGuard for Safari.
 
-##### **`$third-party`**
+#### **`$third-party`** {#third-party-modifier}
 
 A restriction of third-party and own requests. A third-party request is a request from a different domain. For example, a request to `example.org`, from `domain.com` is a third-party request.
 
@@ -269,7 +279,7 @@ If there is a `$~third-party` modifier, the rule is only applied to the requests
 
 * `||domain.com$~third-party` — this rule is applied to `domain.com`, but not to the other domains. Example of a request that is not a third-party request: `http://domain.com/icon.ico`.
 
-##### **`$popup`**
+#### **`$popup`** {#popup-modifier}
 
 AdGuard will try to close the browser tab with any address that matches a blocking rule with this modifier. Please note that not all the tabs can be closed.
 
@@ -283,7 +293,7 @@ AdGuard will try to close the browser tab with any address that matches a blocki
 >
 > Unlike with AdGuard Browser extension, `$popup` modifier is very unreliable when used with AdGuard for Windows, Mac and Android. In AdGuard for Safari and iOS, `$popup` rules will simply block the page right away.
 
-##### **`$match-case`**
+#### **`$match-case`** {#match-case-modifier}
 
 This modifier defines a rule which applies only to addresses that match the case. Default rules are case-insensitive.
 
@@ -291,7 +301,7 @@ This modifier defines a rule which applies only to addresses that match the case
 
 * `*/BannerAd.gif$match-case` — this rule will block `http://example.com/BannerAd.gif`, but not `http://example.com/bannerad.gif`.
 
-##### **`$header`**
+#### **`$header`** {#header-modifier}
 
 The `$header` modifier allows matching the HTTP response having a specific header with (optionally) a specific value.
 
@@ -323,6 +333,21 @@ The modifier `":" h_value` part may be omitted. In that case the modifier matche
 
 #### Restriction by content type {#content-type-modifiers}
 
+* [`$document`](#document-modifier)
+* [`$image`](#image-modifier)
+* [`$stylesheet`](#stylesheet-modifier)
+* [`$script`](#script-modifier)
+* [`$object`](#object-modifier)
+* [`$font`](#font-modifier)
+* [`$media`](#media-modifier)
+* [`$subdocument`](#subdocument-modifier)
+* [`$ping`](#ping-modifier)
+* [`$xmlhttprequest`](#xmlhttprequest-modifier)
+* [`$websocket`](#websocket-modifier)
+* [`$webrtc`](#webrtc-modifier)
+* [`$other`](#other-modifier)
+* [`$object-subrequest` (deprecated)](#object-subrequest-modifier)
+
 There is a set of modifiers, which can be used to limit the rule's application area to certain type of content. These modifiers can also be combined to cover, for example, both images and scripts.
 
 > **Compatibility with different versions of AdGuard**
@@ -335,7 +360,7 @@ There is a set of modifiers, which can be used to limit the rule's application a
 * `||example.org^$script,stylesheet` — corresponds to all the scripts and styles from `example.org`.
 * `||example.org^$~image,~script,~stylesheet` — corresponds to all requests to `example.org` except for the images, scripts and styles.
 
-##### **`$document`** {#document-modifier}
+#### **`$document`** {#document-modifier}
 
 The rule corresponds to the main frame document requests, i.e. HTML documents that are loaded in the browser tab. It does not match iframes, there is a [`$subdocument` modifier](#subdocument-modifier) for these.
 
@@ -357,31 +382,31 @@ If this modifier is used with an exclusion rule (`@@`), it completely disables b
 >
 > Blocking rules with `$document` modifier are not supported by AdGuard Content Blocker.
 
-##### **`$image`**
+#### **`$image`** {#image-modifier}
 
 The rule corresponds to images requests.
 
-##### **`$stylesheet`**
+#### **`$stylesheet`** {#stylesheet-modifier}
 
 The rule corresponds to CSS files requests.
 
-##### **`$script`** {#script-modifier}
+#### **`$script`** {#script-modifier}
 
 The rule corresponds to script requests, e.g. javascript, vbscript.
 
-##### **`$object`**
+#### **`$object`** {#object-modifier}
 
 The rule corresponds to browser plugins resources, e.g. Java or Flash.
 
-##### **`$font`**
+#### **`$font`** {#font-modifier}
 
 The rule corresponds to requests for fonts, e.g. `.woff` filename extension.
 
-##### **`$media`**
+#### **`$media`** {#media-modifier}
 
 The rule corresponds to requests for media files — music and video, e.g. `.mp4` files.
 
-##### **`$subdocument`** {#subdocument-modifier}
+#### **`$subdocument`** {#subdocument-modifier}
 
 The rule corresponds to requests for built-in pages — HTML tags `frame` and `iframe`.
 
@@ -390,7 +415,7 @@ The rule corresponds to requests for built-in pages — HTML tags `frame` and `i
 * `||example.com^$subdocument` blocks built-in page requests (`frame` and `iframe`) to `example.com` and all its subdomains anywhere.
 * `||example.com^$subdocument,domain=domain.com` blocks built-in page requests (`frame` и `iframe`) to `example.com` (and its subdomains) from `domain.com` and all its subdomains.
 
-##### **`$ping`**
+#### **`$ping`** {#ping-modifier}
 
 The rule corresponds to requests caused by either `navigator.sendBeacon()` or the `ping` attribute on links.
 
@@ -398,7 +423,7 @@ The rule corresponds to requests caused by either `navigator.sendBeacon()` or th
 >
 > AdGuard for Windows, Mac, Android often cannot accurately detect `navigator.sendBeacon()`. For reliable detection, use AdGuard Browser extension.
 
-##### **`$xmlhttprequest`**
+#### **`$xmlhttprequest`** {#xmlhttprequest-modifier}
 
 The rule applies only to ajax requests (requests sent via javascript object `XMLHttpRequest`).
 
@@ -406,7 +431,7 @@ The rule applies only to ajax requests (requests sent via javascript object `XML
 >
 > AdGuard for Windows, Mac, Android often cannot accurately detect this type and sometimes detects it as [`$other`](#other-modifier) or [`$script`](#script-modifier). For reliable detection, use AdGuard Browser extension.
 
-##### **`$websocket`**
+#### **`$websocket`** {#websocket-modifier}
 
 The rule applies only to WebSocket connections.
 
@@ -414,7 +439,7 @@ The rule applies only to WebSocket connections.
 >
 > AdGuard for Safari and iOS cannot properly apply rules with `websocket` modifier due to Safari limitations.
 
-##### **`$webrtc`**
+#### **`$webrtc`** {#webrtc-modifier}
 
 > **Deprecation notice**
 >
@@ -434,11 +459,11 @@ The rule applies only to WebRTC connections.
 >
 > Rules with `$webrtc` modifier are still supported by AdGuard Browser extension.
 
-##### **`$other`** {#other-modifier}
+#### **`$other`** {#other-modifier}
 
 The rule applies to requests for which the type has not been determined or does not match the types listed above.
 
-##### **`$object-subrequest` (deprecated)**
+#### **`$object-subrequest` (deprecated)** {#object-subrequest-modifier}
 
 > **Deprecation notice**
 >
@@ -447,13 +472,24 @@ The rule applies to requests for which the type has not been determined or does 
 
 #### Exception modifiers {#exception-modifiers}
 
+* [`$elemhide`](#elemhide-modifier)
+* [`$content`](#content-modifier)
+* [`$jsinject`](#jsinject-modifier)
+* [`$urlblock`](#urlblock-modifier)
+* [`$extension`](#extension-modifier)
+* [`$stealth`](#stealth-modifier)
+* [`$specifichide`](#specifichide-modifier)
+* [Generic rules](#exception-modifiers-generic-rules)
+  * [`$generichide`](#generichide-modifier)
+  * [`$generichide`](#generichide-modifier)
+
 Exception rules disable the other basic rules for the addresses to which they correspond. They begin with a `@@` mark. All the basic modifiers listed above can be applied to them and they also have a few special modifiers.
 
 > **Visual representation**
 >
 > We recommend to get acquainted with [this article](https://adblockplus.org/filter-cheatsheet#blocking), for better understanding of how exception rules should be made.
 
-##### **`$elemhide`** {#elemhide-modifier}
+#### **`$elemhide`** {#elemhide-modifier}
 
 Disables any [cosmetic rules](#cosmetic-rules) on the pages matching the rule.
 
@@ -461,7 +497,7 @@ Disables any [cosmetic rules](#cosmetic-rules) on the pages matching the rule.
 
 * `@@||example.com^$elemhide` disables all cosmetic rules on pages at `example.com` and all subdomains.
 
-##### **`$content`**
+#### **`$content`** {#content-modifier}
 
 Disables [HTML filtering](#html-filtering-rules) and [`$replace`](#replace-modifier) rules on the pages that match the rule.
 
@@ -469,7 +505,7 @@ Disables [HTML filtering](#html-filtering-rules) and [`$replace`](#replace-modif
 
 * `@@||example.com^$content` disables all HTML filtering rules and replace rules on pages at `example.com` and all its subdomains.
 
-##### **`$jsinject`**
+#### **`$jsinject`** {#jsinject-modifier}
 
 Forbids adding of javascript code to the page. You can read about javascript rules further.
 
@@ -477,7 +513,7 @@ Forbids adding of javascript code to the page. You can read about javascript rul
 
 * `@@||example.com^$jsinject` disables javascript on pages at `example.com` and all subdomains.
 
-##### **`$urlblock`**
+#### **`$urlblock`** {#urlblock-modifier}
 
 Disables blocking of all requests sent from the pages matching the rule.
 
@@ -485,7 +521,7 @@ Disables blocking of all requests sent from the pages matching the rule.
 
 * `@@||example.com^$urlblock` — any requests sent from the pages at `example.com` and all subdomains are not going to be blocked.
 
-##### **`$extension`**
+#### **`$extension`** {#extension-modifier}
 
 Disables all userscripts on the pages matching this rule.
 
@@ -497,7 +533,7 @@ Disables all userscripts on the pages matching this rule.
 >
 > Only AdGuard for Windows, Mac, Android are technically capable of using rules with `$extension` modifier.
 
-##### **`$stealth`**
+#### **`$stealth`** {#stealth-modifier}
 
 Disables the Stealth Mode module for all corresponding pages and requests.
 
@@ -544,7 +580,23 @@ The list of the available modifier options:
 > * Stealth Mode is available in AdGuard for Windows, Mac, Android, and AdGuard Browser extension. All other products will ignore the rules with `$stealth` modifier.
 > * `$stealth` modifier with specific options is supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.10 or later**.
 
-##### Generic rules
+#### **`specifichide`** {#specifichide-modifier}
+
+Disables all specific element hiding and CSS rules, but not general ones. Has an opposite effect to [`$generichide`](#generichide-modifier).
+
+**Examples**
+
+* `@@||example.org^$specifichide` disables `example.org##.banner` but not `##.banner`.
+
+> **Note**
+>
+> All cosmetic rules — not just specific ones — can be disabled by [`$elemhide` modifier](#elemhide-modifier).
+
+> **Compatibility with different versions of AdGuard**
+>
+> Rules with `$specifichide` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard Browser extension for Chrome, Firefox, Edge.
+
+#### Generic rules {#exception-modifiers-generic-rules}
 
 Before we can proceed to the next modifiers, we have to make a definition of _generic rules_. The rule is generic if it is not limited to specific domains.
 Wildcard character `*` is supported as well.
@@ -566,7 +618,7 @@ domain.com###banner
 ||domain.com^$domain=example.com
 ```
 
-###### **`$generichide`** {#generichide-modifier}
+##### **`$generichide`** {#generichide-modifier}
 
 Disables all generic [cosmetic rules](#cosmetic-rules) on pages that correspond to exception rule.
 
@@ -574,7 +626,7 @@ Disables all generic [cosmetic rules](#cosmetic-rules) on pages that correspond 
 
 * `@@||example.com^generichide` — disables generic cosmetic rules on any pages at `example.com` and all subdomains.
 
-###### **`$genericblock`**
+##### **`$genericblock`** {#generichide-modifier}
 
 Disables generic basic rules on pages that correspond to exception rule.
 
@@ -582,21 +634,28 @@ Disables generic basic rules on pages that correspond to exception rule.
 
 * `@@||example.com^$genericblock` — disables generic basic rules on any pages at `example.com` and all subdomains.
 
-##### **`specifichide`**
-
-Has an opposite effect to [`$generichide`](#generichide-modifier). Disables all specific element hiding and CSS rules, but not general ones.
-
-**Examples**
-
-* `@@||example.org^$specifichide` — will disable `example.org##.banner` but not `##.banner`.
-
-> All cosmetic rules — not just specific ones — can be disabled by [`$elemhide` modifier](#elemhide-modifier).
-
-> **Compatibility with different versions of AdGuard**
->
-> Rules with `$specifichide` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard Browser extension for Chrome, Firefox, Edge.
-
 ### Advanced capabilities
+
+* [`$important`](#important-modifier)
+* [`$badfilter`](#badfilter-modifier)
+* [`$replace`](#replace-modifier)
+* [`$csp`](#csp-modifier)
+* [`$all`](#all-modifier)
+* [`$inline-script`](#inline-script-modifier)
+* [`$inline-font`](#inline-font-modifier)
+* [`$cookie`](#cookie-modifier)
+* [`$network`](#network-modifier)
+* [`$app`](#app-modifier)
+* [`$redirect`](#redirect-modifier)
+* [`$redirect-rule`](#redirect-rule-modifier)
+* [`$denyallow`](#denyallow-modifier)
+* [`$removeparam`](#removeparam-modifier)
+* [`$removeheader`](#removeheader-modifier)
+* [`$hls`](#hls-modifier)
+* [`$jsonprune`](#jsonprune-modifier)
+* [`noop`](#noop-modifier)
+* [`$empty` (deprecated)](#empty-modifier)
+* [`$mp4` (deprecated)`](#mp4-modifier)
 
 These modifiers are able to completely change the behaviour of basic rules.
 
@@ -625,7 +684,7 @@ The `$important` modifier applied to a rule increases its priority over any othe
 @@||test.org^$document
 ```
 
-#### **`$badfilter`**
+#### **`$badfilter`** {#badfilter-modifier}
 
 The rules with the `$badfilter` modifier disable other basic rules to which they refer. It means that the text of the disabled rule should match the text of the `$badfilter` rule (without the `$badfilter` modifier).
 
@@ -761,7 +820,7 @@ For the requests matching a `$csp` rule, we will strengthen response security po
 >
 > Rules with `$csp` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
 
-##### **`$all`**
+#### **`$all`** {#all-modifier}
 
 `$all` modifier is made of [`$document`](#document-modifier), [`$popup`](#popup-modifier), [`$csp`](#csp-modifier) modifiers. E.g. rule `||example.org^$all` is converting into such set of rules:
 ```
@@ -769,6 +828,20 @@ For the requests matching a `$csp` rule, we will strengthen response security po
 ||example.org^$csp=script-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
 ||example.org^$csp=font-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
 ||example.org^
+```
+
+#### **`$inline-script`** {#inline-script-modifier}
+
+`$inline-script` modifier is a sort of a shortcut for [`$csp`](#csp-modifier) modifier with specific value. E.g. the rule `||example.org^$inline-script` is converting into such a rule:
+```
+||example.org^$csp=script-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
+```
+
+#### **`$inline-font`** {#inline-font-modifier}
+
+`$inline-font` modifier is a sort of a shortcut for [`$csp`](#csp-modifier) modifier with specific value. E.g. the rule `||example.org^$inline-font` is converting into such a rule:
+```
+||example.org^$csp=font-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
 ```
 
 #### **`$cookie`** {#cookie-modifier}
@@ -917,7 +990,7 @@ In this case, only requests to `example.org/script.js` will be "redirected" to `
 >
 > Rules with `$redirect-rule` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
 
-#### **`$denyallow`**
+#### **`$denyallow`** {#denyallow-modifier}
 
 `$denyallow` modifier allows to avoid creating additional rules when it is needed to disable a certain rule for specific domains. `$denyallow` matches only target domains and not referrer domains.
 
@@ -2108,6 +2181,11 @@ More information about scriptlets can be found [on GitHub](https://github.com/Ad
 
 ## Modifiers for non-basic type of rules
 
+* [`$app`](#non-basic-app-modifier)
+* [`$domain`](#non-basic-domain-modifier)
+* [`$path`](#non-basic-path-modifier)
+* [`$url`](#non-basic-url-modifier)
+
 Each rule can be modified using the modifiers described in the following paragraphs.
 
 **Syntax**
@@ -2126,7 +2204,7 @@ In the modifiers values of the following characters must be escaped: `[`, `]`, `
 it is used for the escaping). Use `\` to escape them. For example, an escaped bracket looks like
 this: `\]`.
 
-### **`$app`** {#non-basic-app-modifier}
+#### **`$app`** {#non-basic-app-modifier}
 
 `$app` modifier lets you narrow the rule coverage down to a specific application or a list of applications.
 The modifier's behavior and syntax perfectly match the corresponding [basic rules `$app` modifier](#app-modifier).
@@ -2142,7 +2220,7 @@ The modifier's behavior and syntax perfectly match the corresponding [basic rule
 >
 > Such rules with `$app` modifier are supported by AdGuard for Windows, Mac and Android.
 
-### **`$domain`** {#non-basic-domain-modifier}
+#### **`$domain`** {#non-basic-domain-modifier}
 
 `$domain` modifier limits the rule application area to a list of domains and their subdomains.
 The modifier's behavior and syntax perfectly match the corresponding [basic rules `$domain` modifier](#domain-modifier).
@@ -2164,7 +2242,7 @@ But rules with mixed style domains restriction are considered invalid. So, for e
 >
 > Such rules with `$domain` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard Browser extension for Chrome, Firefox, Edge.
 
-### **`$path`** {#non-basic-path-modifier}
+#### **`$path`** {#non-basic-path-modifier}
 
 `$path` modifier limits the rule application area to specific locations or pages on websites.
 
@@ -2197,7 +2275,7 @@ $path ["=" pattern]
 >
 > Rules with `$path` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard Browser extension for Chrome, Firefox, Edge.
 
-### **`url`** {#non-basic-url-modifier}
+#### **`url`** {#non-basic-url-modifier}
 
 `$url` modifier limits the rule application area to URLs matching the specified mask.
 
