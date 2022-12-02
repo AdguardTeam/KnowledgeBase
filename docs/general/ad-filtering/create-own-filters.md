@@ -105,6 +105,15 @@ Cosmetic rules are based on using a special language named CSS, which every brow
 | Attribute substring selector | `a[href^="http://example.com/"]`   | Matches all links that are loaded from `http://example.com/` domain.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_attr_start.png) |
 | Attribute selector | `a[href="http://example.com/"]`   | Matches all links to **exactly** the `http://example.com/` address.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_attr_equal.png) |
 
+## Restrictions
+
+#### Trusted filters {#trusted-filters}
+
+Some rules can be used only in trusted filters. This category includes:
+> * filter lists [created by the AdGuard team](./adguard-filters.md),
+> * custom filter lists installed as `trusted`,
+> * user rules.
+
 ## Basic rules
 
 The most simple rules are so-called *Basic rules*. They are used to block requests to specific URLs. Or to unblock it, if there is a special marker "@@" at the beginning of the rule. The basic principle for this type of rules is quite simple: you have to specify the address and additional parameters that limit or expand the scope of the rule.
@@ -186,7 +195,7 @@ For basic rules the described logic is applicable only for the domains specified
 * [Content type modifiers](#content-type-modifiers)
 * [Exception modifiers](#exception-modifiers)
 
-> Note
+> **Note**
 >
 > The features described in this section are intended for experienced users. They extend capabilities of "Basic rules", but in order to use them you need to have a basic understanding of the way your browser works.
 
@@ -782,7 +791,7 @@ http://regexr.com/3cesk
 
 > **Restrictions**
 >
-> Rules with `$replace` modifier can be used **only in trusted filters**. This category includes your own **User rules** and all the filters created by AdGuard Team.
+> Rules with `$replace` modifier can be used [**only in trusted filters**](#trusted-filters).
 
 #### **`$csp`** {#csp-modifier}
 
@@ -1143,7 +1152,7 @@ With these rules, specified UTM parameters will be removed from any request save
 
 > **Restrictions**
 >
-> Rules with `$removeparam` modifier can be used **only in trusted filters**. This category includes your own **User rules** and all the filters created by AdGuard Team.
+> Rules with `$removeparam` modifier can be used [**only in trusted filters**](#trusted-filters).
 
 #### **`$removeheader`** {#removeheader-modifier}
 
@@ -1177,7 +1186,7 @@ Use `@@` to negate `$removeheader`:
 
 > **Restrictions**
 >
-> 1. This type of rules can be used **only in trusted filters**. This category includes your own User rules and all the filters created by AdGuard Team.
+> 1. This type of rules can be used [**only in trusted filters**](#trusted-filters).
 >
 > 2. In order to avoid compromising the security `$removeheader` cannot remove headers from the list below:
 >   * `access-control-allow-origin`
@@ -2106,7 +2115,7 @@ AdGuard supports a special type of rules that allows you to inject any javascrip
 
 > **Restrictions**
 >
-> Javascript rules can be used **only in trusted filters**. This category includes your own **User rules** and all the filters created by AdGuard Team.
+> Javascript rules can be used [**only in trusted filters**](#trusted-filters).
 
 > **Compatibility with different versions of AdGuard**
 >
@@ -2153,6 +2162,12 @@ We recommend to use this kind of exceptions only if it is not possible to change
 
 Scriptlet is a JavaScript function that provides extended capabilities for content blocking. These functions can be used in a declarative manner in AdGuard filtering rules.
 
+> **Restrictions**
+>
+> Trusted scriptlets rules can be used [**only in trusted filters**](#trusted-filters).
+
+> **Note**
+>
 > AdGuard supports a lot of different scriptlets. In order to achieve cross-blocker compatibility, we also support syntax of uBO and ABP.
 
 **Syntax**
@@ -2171,13 +2186,29 @@ example.org#%#//scriptlet("abort-on-property-read", "alert")
 ```
 This rule will be applied to `example.org` and subdomains pages and will execute the `abort-on-property-read` scriptlet with the `alert` parameter.
 
-Learn more [how to debug scriptlets](#debug-scriptlets).
+Learn more about [how to debug scriptlets](#debug-scriptlets).
 
 More information about scriptlets can be found [on GitHub](https://github.com/AdguardTeam/Scriptlets#scriptlets).
 
 > **Compatibility with different versions of AdGuard**
 >
 > Scriptlet rules are not supported by AdGuard Content Blocker.
+
+### Trusted scriptlets {#trusted-scriptlets}
+
+Trusted scriptlets are [scriptlets](#scriptlets) with extended functionality. It means the same syntax and restrictions. Trusted scriptlet names are prefixed with `trusted-`, e.g. `trusted-set-cookie`, to be easily distinguished from common scriptlets.
+
+> **Note**
+>
+> Trusted scriptlets are not compatible with other ad blockers except AdGuard
+
+> **Compatibility with different versions of AdGuard**
+>
+> Trusted scriptlets rules are now supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.10.141 or later**.
+
+Learn more about [how to debug scriptlets](#debug-scriptlets).
+
+More information about trusted scriptlets can be found [on GitHub](https://github.com/AdguardTeam/Scriptlets#trusted-scriptlets).
 
 ## Modifiers for non-basic type of rules
 
@@ -2605,9 +2636,9 @@ var selectorText = "div.block[-ext-has='.header:matches-css-after(content: Anzei
 ExtendedCss.query(selectorText) // returns an array of elements matching selectorText
 ```
 
-### Debugging scriptlets
+### Debugging scriptlets {#debug-scriptlets}
 
-If you are using AdGuard Browser extension and want to debug a [scriptlet rule](#scriptlets), you can get additional information by simply having the Filtering log opened. In that case, scriptlets will switch to debug mode and will write more information to the browser console.
+If you are using AdGuard Browser extension and want to debug a [scriptlet](#scriptlets) or a [trusted scriptlet](#trusted-scriptlets) rule, you can get additional information by opening the Filtering log. In that case, scriptlets will switch to debug mode and there will be more information in the browser console.
 
 The following scriptlets are especially developed for debug purposes:
 
@@ -2628,7 +2659,8 @@ The following scriptlets also may be used for debug purposes:
 * [`prevent-setTimeout`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-settimeout)
 * [`prevent-window-open`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-window-open) with specified `replacement` parameter
 * [`prevent-xhr`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-xhr)
-
+* [`trusted-replace-fetch-response`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-trusted-scriptlets.md#trusted-replace-fetch-response)
+* [`trusted-replace-xhr-response`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-trusted-scriptlets.md#trusted-replace-xhr-response)
 
 ## Good luck with creating filters!
 
