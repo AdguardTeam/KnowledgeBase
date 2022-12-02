@@ -3,11 +3,11 @@ title: Features overview
 sidebar_position: 1
 ---
 
-> Disclaimer: AdGuard for Android is not to be confused with AdGuard Content Blocker. AdGuard Content Blocker is an app available in Google Play that has truncated functionality to meet restrictions imposed by the store. AdGuard for Android, on the other hand, is a powerful application to block ads, manage applications, and perform other roles that will be described in this article. The only place it can be downloaded from is [the AdGuard website](https://adguard.com/adguard-android/overview.html).
+> Disclaimer: AdGuard for Android is not to be confused with AdGuard Content Blocker. AdGuard Content Blocker is an app available in Google Play that has truncated functionality to meet restrictions imposed by the store. AdGuard for Android, on the contrary, is a powerful application to block ads, manage applications, and perform other roles that will be described in this article. The only place it can be downloaded from is [the AdGuard website](https://adguard.com/adguard-android/overview.html).
 
 ## Ad blocking
 
-Any ad blocker's main purpose is to block ads, and for the majority of AdGuard software ad-blocking algorithms are mostly the same. The mechanism of filtering ads is described here.
+Any ad blocker's main purpose is to block ads, and for the majority of AdGuard software ad-blocking algorithms are mostly the same. The mechanism of filtering ads is described [here](/general/ad-filtering/how-ad-blocking-works.md).
 
 ![Ad blocking](https://cdn.adguard.com/public/Adguard/Blog/manifestv3/adblockingworks.png)
 
@@ -17,11 +17,11 @@ Most mobile ad blockers for Android use this principle, but what is pretty much 
 
 ## Filters
 
-The program uses a lot of different filters,our own and third-party ones, sorted by language and their purpose. For example, filters in the Annoyances category are very different from the language-specific ones.
+The program uses a lot of different filters, our own and third-party ones, sorted by language and their purpose. For example, filters in the Annoyances category are very different from the language-specific ones.
 
 ![Filters](https://cdn.adguard.com/content/kb/ad_blocker/android/features/filters1.png)
 
-Find out more about all the filters available for AdGuard products by reading their descriptions in the app or this comprehensive article.
+Find out more about all the filters available for AdGuard products by reading their descriptions in the app or [this comprehensive article](/docs/general/ad-filtering/adguard-filters.md).
 
 ## Custom filters
 
@@ -33,7 +33,7 @@ AdGuard allows you to create your own custom filters, using the same type of rul
 
 ## HTTPS filtering
 
-Nowadays almost all websites work via HTTPS, the web protocol where the last S letter stands for "secure". It happened so that most advertisers use this protocol as well, this is why HTTPS filtering is really crucial for a modern ad blocker.
+Nowadays almost all websites work via HTTPS, the web protocol where the last S letter stands for "secure". It happened so that most advertisers use this protocol as well, this is why [HTTPS filtering](/docs/general/https-filtering/what-is-https-filtering.md) is really crucial for a modern ad blocker.
 
 ![What is https](https://cdn.adguard.com/public/Adguard/Blog/https/what_is_https.png)
 
@@ -74,8 +74,6 @@ To learn all the main features and options you can manage in the Stealth mode se
 ![Stealth mode](https://cdn.adguard.com/content/kb/ad_blocker/android/features/stealth-mode.png)
 
 ## Browsing Security
-
-The Internet is a pretty dangerous place where your device can be attacked by viruses, whereas your personal or financial information can be stolen. Such terms as malware or phishing have become commonplace.
 
 Phishing is a fraudulent online practice aimed at obtaining sensitive information like usernames, passwords, credit card details and such from internet users. This form of fraud, effected through spoof emailing and fake websites posing as trusted mediums like banks, social services etc., is causing more financial damage every year. As for malware (malicious software), it is as the name suggests — any type of software designed with the intent to damage the personal computer or other device it gets into. What once began as a prank now is a tool to steal confidential information from users and businesses.
 
@@ -131,7 +129,7 @@ The DNS Filtering module allows to configure DNS settings on the user's device, 
 
 A bit of a theory refresher: DNS stands for "Domain name system", and its purpose is to translate domain names into something browsers can understand, i.e. IP addresses. So, each time you go to a website, your browser sends a DNS request to a server, usually determined by your ISP. That server either redirects the request to another (upstream) server or replies with an IP address. If you use a special DNS server instead of a default one, it can send unsafe and potentially dangerous requests to the "void". Thus, the responses with the IP addresses won't be received and "bad requests" will be nipped in the bud.
 
-DNS filtering has its own separate tab within the AdGuard for Android app home screen. Here you can choose which type of DNS you wish to use (it can be either regular DNS or high security DNS — we will get to that later on) as well as enable DNS-level blocking.
+DNS filtering has its own separate tab within the AdGuard for Android app home screen. Here you can choose which type of DNS you wish to use (it can be either regular DNS or high-security DNS — we will get to that later on) as well as enable DNS-level blocking.
 
 ## DNS blocking
 
@@ -205,13 +203,13 @@ By the way, you can tap any added userscript to see more details, and to reinsta
 
 ## Compatibility with AdGuard VPN
 
-The best kind of compatibility is when you install two apps and they just start working together. Presuming you already have AdGuard ad blocker installed, just download AdGuard VPN from Play Store (you can get there right from the ad blocker app, there's an item in General settings).
+The best kind of compatibility is when you install two apps and they just start working together. Presuming you already have AdGuard Ad Blocker installed, just download AdGuard VPN from Play Store (you can get there right from the ad blocker app, there's an item in General settings).
 
 ![Compatibility](https://cdn.adguard.com/content/kb/ad_blocker/android/features/compatibility.png)
 
-Both apps will detect each other and do everything that's needed for smooth joint work. All that will be left for you is to enjoy both ad-free Internet and the benefits of a VPN. By the way, it works the other way around just as well: install AdGuard ad blocker on top of an already-running AdGuard VPN and you're good.
+Both apps will detect each other and do everything that's needed for smooth joint work. All that will be left for you is to enjoy both ad-free Internet and the benefits of a VPN. It also works the other way around just as well: install AdGuard Ad Blocker on top of an already-running AdGuard VPN and you're good.
 
-If you'd like to disable Compatibility Mode for any reason, it's very simple to do so from AdGuard ad blocker settings, just toggle the switch. Additionally, you can add AdGuard ad blocker and AdGuard VPN tiles to your device's notification bar and toggle them in one tap at your own will — thanks to Compatibility Mode the configuration will change immediately and silently.
+If you'd like to disable Compatibility Mode for any reason, it's very simple to do so from AdGuard Ad Blocker settings, just toggle the switch. Additionally, you can add AdGuard Ad Blocker and AdGuard VPN tiles to your device's notification bar and toggle them in one tap at your own will — thanks to Compatibility Mode the configuration will change immediately and silently.
 
 ## License
 

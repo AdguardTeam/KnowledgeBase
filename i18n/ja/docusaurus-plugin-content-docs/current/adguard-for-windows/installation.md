@@ -49,7 +49,7 @@ Microsoft Windowsを搭載したPCやタブレットでAdGuardを使用するに
 
 AdGuardをアンインストールまたは再インストールする必要がある場合は、以下の操作を行ってください。
 
-* 【Microsoft Windows 10・11の場合】 **スタート**をクリックして**スタートメニュー**を開き、**設定**を選択します。 開いたウィンドウで**アプリ**アイコンをクリックします。 **アプリ**ウィンドウの左の一覧から**アプリと機能**を選択します。 インストールされているアプリの一覧から「**AdGuard**」を選択し、「**アンインストール**」をクリックします。 開いたダイアログボックスで「**アンインストール**」をクリックして確認します。
+* 【Microsoft Windows 10・11の場合】 **スタート**をクリックして**スタートメニュー**を開き、**設定**を選択します。 開いたウィンドウで**アプリ**アイコンをクリックします。 **アプリ**ウィンドウの左の一覧から**アプリと機能**を選択します。 Select **AdGuard** from the list of your installed apps and click **Uninstall**. 開いたダイアログボックスで「**アンインストール**」をクリックして確認します。
 
 ![Windows 10 と 11 でのアンインストール](https://cdn.adguard.com/public/Adguard/kb/installation/Win/ja/W7-ja.png)
 
@@ -77,7 +77,7 @@ AdGuardをアンインストールまたは再インストールする必要が�
 
 > 【注意】 最初の2つのステップを実行した後、何らかの理由で十分ではなかった場合にのみ、ステップ3と4を行なってください。 通常、AdGuardの再インストールが正しく行われていないことが原因であると考えられますが、アドバンスドアンインストール手順の3と4を行う前に、弊社サポートにお問い合わせいただくことを強くお勧めします。
 
-* ’*Advanced uninstall*’ を選択して ’*Uninstall*’ をクリック
+* Choose *Advanced uninstall* and click *Uninstall*.
 
 ![アドバンスドアンインストール](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/advanced-uninstall.png)
 

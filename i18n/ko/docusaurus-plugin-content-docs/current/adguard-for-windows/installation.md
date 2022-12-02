@@ -49,7 +49,7 @@ Microsoft Windows의 PC 또는 태블릿에서 AdGuard를 사용하려면 설치
 
 AdGuard 제거 및 재설치 방법은 다음과 같습니다.
 
-* Microsoft Windows 10 & 11: **시작**을 클릭하여 **시작 메뉴**를 엽니다. **설정**을 선택합니다. 열리는 창에서 **앱** 아이콘을 클릭합니다. **앱** 창의 왼쪽 목록에서 **앱 및 기능**을 선택합니다. 설치된 앱 목록 중에 **Adguard**를 선택합니다. **제거**를 클릭합니다. 확인을 위해 열리는 대화 상자에서 **제거**를 클릭합니다.
+* Microsoft Windows 10 & 11: **시작**을 클릭하여 **시작 메뉴**를 엽니다. **설정**을 선택합니다. 열리는 창에서 **앱** 아이콘을 클릭합니다. **앱** 창의 왼쪽 목록에서 **앱 및 기능**을 선택합니다. Select **AdGuard** from the list of your installed apps and click **Uninstall**. 확인을 위해 열리는 대화 상자에서 **제거**를 클릭합니다.
 
 ![Windows 10 & 11 제거](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/win10-uninstall.png)
 
@@ -77,7 +77,7 @@ AdGuard 제거 및 재설치 방법은 다음과 같습니다.
 
 > 주의! 1~2 단계를 수행해도 프로그램이 제거되지 않은 경우에만 3~4 단계를 따르십시오. AdGuard의 잘못된 재설치로 판단될 수 있지만 고급 제거 지침의 3~4 단계를 사용하기 전에 지원 팀에 문의하는 것이 좋습니다.
 
-* *Advanced uninstall*를 선택하고 *Uninstall*를 클릭합니다.
+* Choose *Advanced uninstall* and click *Uninstall*.
 
 ![고급 제거 방법](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/advanced-uninstall.png)
 

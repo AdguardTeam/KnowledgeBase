@@ -11,7 +11,7 @@ To be absolutely clear, this is **completely optional**. You can turn off the di
 
 Search ads are ads that you see among search query results when using online search engines, such as Google, Bing, DuckDuckGo, etc.
 
-![search-ads](https://user-images.githubusercontent.com/28726429/27697369-b3d2556e-5cfc-11e7-9203-3c95a7de7c28.png)
+![search ads](https://user-images.githubusercontent.com/28726429/27697369-b3d2556e-5cfc-11e7-9203-3c95a7de7c28.png)
 
 These ads are always contextual: they are targeted to match the keywords you used in the query. This helps you find exactly what you are searching for. Moreover, search ads (because they go through manual moderation) are often more relevant and helpful than the rest of the search results.
 

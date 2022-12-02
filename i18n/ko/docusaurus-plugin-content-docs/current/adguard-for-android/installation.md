@@ -18,7 +18,7 @@ sidebar_position: 2
 
 먼저 기기의 OS 설정에서 알 수 없는 소스의 앱 설치를 허용해 주세요. 알 수 없는 소스의 앱 설치를 허용하는 방법은 다음과 같습니다.
 
-* Android 8 이상: AdGuard apk 다운로드를 시작하면 권한을 허용하라는 메시지가 표시됩니다.  열린 창에서 **설정**을 누르고 **이 출처 허용** 스위치를 활성화합니다. 다음 프로그램 설치를 계속하십시오.
+* For Android 8+: start downloading [AdGuard apk](https://adguard.com/en/adguard-android/overview.html) (see the next step), you'll be prompted to allow permission. 열린 창에서 **설정**을 누르고 **이 출처 허용** 스위치를 활성화합니다. 다음 프로그램 설치를 계속하십시오.
 * Android 6, 7: **설정**으로 이동한 후 **시스템 및 기기**에서 **추가 설정**을 선택합니다. **알 수 없는 소스**를 켜고 시스템 경고 창에서 **확인**을 누릅니다.
 
 ![출처를 알 수 없는 앱 설치](https://cdn.adguard.com/content/kb/ad_blocker/android/installation/unknown_sources1.png)
@@ -59,11 +59,15 @@ sidebar_position: 2
 
 ![방해 요소](https://cdn.adguard.com/content/kb/ad_blocker/android/installation/7.png)
 
+You don't have to choose anything on this screen: just take note of the information on how to watch YouTube videos without ads:
+
+![YouTube](https://cdn.adguard.com/content/kb/ad_blocker/android/installation/youtube.jpg)
+
 개인정보 보호 설정 (원하시는 보호 수준을 선택할 수 있음):
 
 ![개인정보 설정](https://cdn.adguard.com/content/kb/ad_blocker/android/installation/8.png)
 
-보안 (위험한 웹 사이트에 대한 경고):
+On the next screen, select whether you want to get notifications about dangerous websites:
 
 ![보안](https://cdn.adguard.com/content/kb/ad_blocker/android/installation/9.png)
 

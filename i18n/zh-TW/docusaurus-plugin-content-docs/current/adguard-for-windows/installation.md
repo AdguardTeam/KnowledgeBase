@@ -49,7 +49,7 @@ Congratulations! You have successfully installed AdGuard on your computer. On th
 
 If you need to uninstall or reinstall AdGuard, do the following:
 
-* For Microsoft Windows 10 & 11: Open **Start Menu** by clicking **Start**, and select **Settings**. Click the **Apps** icon in the window that opens. Select **Apps and Features** from the list on the left in the **Apps** window. Select **Adguard** from the list of your installed apps and click **Uninstall**. Click **Uninstall** in the dialogue box that opens to confirm.
+* For Microsoft Windows 10 & 11: Open **Start Menu** by clicking **Start**, and select **Settings**. Click the **Apps** icon in the window that opens. Select **Apps and Features** from the list on the left in the **Apps** window. Select **AdGuard** from the list of your installed apps and click **Uninstall**. Click **Uninstall** in the dialogue box that opens to confirm.
 
 ![Windows 10 & 11 uninstallation](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/win10-uninstall.png)
 
@@ -77,7 +77,7 @@ In case regular uninstall doesn't work for any reason, you can try to use an adv
 
 > Follow the next steps only if after performing first two steps wasn’t enough for some reason. Usually it can be determined by seeing incorrect reinstall of AdGuard, but we strongly suggest contacting our support before using steps 3-4 of advanced uninstall instruction.
 
-* Choose *Advanced uninstall* and click  *Uninstall*.
+* Choose *Advanced uninstall* and click *Uninstall*.
 
 ![Advanced uninstall](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/advanced-uninstall.png)
 

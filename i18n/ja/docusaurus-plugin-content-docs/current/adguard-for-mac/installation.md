@@ -62,9 +62,9 @@ AdGuardアプリを使用するにはmacOS管理者アカウントのパスワ�
 
 ### アドバンスド
 
-**※この手順は、技術的なことが分かる場合、またはAdGuardサポートに「アドバンスドアンインストール」を推奨された場合にのみ使用してください。 また、先に「レギュラーアンインストール」の手順をすべて行ってください。**その後、以下の手順を行ってください。
+**Use this instruction only if you know what you are doing or if our support service specifically recommended you the 'advanced uninstall'. Also, do all the steps from the 'regular uninstall first'.**
 
-* 以下のAdGuardファイルを削除してください:
+* After that, delete following AdGuard files:
     * /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (folder)
     * ~/Library/Preferences/com.adguard.mac.adguard.plist (file)
     * ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac (folder)

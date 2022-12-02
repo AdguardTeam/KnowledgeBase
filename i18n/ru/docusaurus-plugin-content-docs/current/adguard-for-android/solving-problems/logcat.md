@@ -1,5 +1,5 @@
 ---
-title: Как получить лог LogCat
+title: How to get Logcat log
 sidebar_position: 4
 ---
 
@@ -24,7 +24,7 @@ sidebar_position: 4
 
 ![Отчёт об ошибке](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
 
-5. Отправьте этот лог нашей команде поддержки.
+5. Send this log to our support team.
 > Примечание: наша команда поддержки обработает ваш тикет намного быстрее, если вы укажете номер тикета HelpDesk или номер ошибки на GitHub в своём сообщении.
 
 ## Дополнительная инструкция (для старых версий Android)
@@ -39,9 +39,9 @@ sidebar_position: 4
 
 3. Включите **отладку по USB**.
 
-4. Увеличьте размеры **буфера журнала** до 4 МБ для каждого буфера записей.
+4. Increase **Logger buffer** sizes to 4MB per log buffer.
 
-4 МБ должно быть достаточно для хранения нужных вам логов до тех пор, пока вы не перейдёте ко второй части (извлечение самих логов с устройства);
+4MB should be enough for storing the logs we need until you're able to do the second part (getting log from the device);
 
 **Важно:** вам нужно воспроизвести сбой после того, как вы закончите с первой частью!
 
@@ -65,7 +65,7 @@ sidebar_position: 4
 
 **Альтернативный способ для пользователей с ROOT:**
 
-1. Скачайте и запустите приложение [CatLog](https://play.google.com/store/apps/details?id=com.nolanlawson.logcat&noprocess).
+1. Download and run [Logcat](https://play.google.com/store/apps/details?id=com.nolanlawson.logcat&noprocess).
 
 2. Выберите в меню **Запись**. Выберите имя для файла лога или просто нажмите **OK**. Теперь вы можете нажать на кнопку **Домой**, CatLog продолжит записывать лог в фоновом режиме.
 
@@ -73,5 +73,5 @@ sidebar_position: 4
 
 4. Откройте CatLog и нажмите **Прекратить запись** в меню.
 
-5. Отправьте этот лог нашей команде поддержки.
+5. Send this log to our support team.
 > Примечание: наша команда поддержки обработает ваш тикет намного быстрее, если вы укажете номер тикета HelpDesk или номер ошибки на GitHub в своём сообщении.
