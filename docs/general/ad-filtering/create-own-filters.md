@@ -112,7 +112,7 @@ Cosmetic rules are based on using a special language named CSS, which every brow
 Some rules can be used only in trusted filters. This category includes:
 > * filter lists [created by the AdGuard team](./adguard-filters.md),
 > * custom filter lists installed as `trusted`,
-> * User rules.
+> * user rules.
 
 ## Basic rules
 
