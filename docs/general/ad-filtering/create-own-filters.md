@@ -832,7 +832,7 @@ For the requests matching a `$csp` rule, we will strengthen response security po
 
 #### **`$inline-script`** {#inline-script-modifier}
 
-`$inline-script` modifier is sort of shortcut for [`$csp`](#csp-modifier) modifier with specific value. E.g. rule `||example.org^$inline-script` is converting into such rule:
+`$inline-script` modifier is a sort of a shortcut for [`$csp`](#csp-modifier) modifier with specific value. E.g. the rule `||example.org^$inline-script` is converting into such a rule:
 ```
 ||example.org^$csp=script-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
 ```
