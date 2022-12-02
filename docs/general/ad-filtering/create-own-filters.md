@@ -2560,7 +2560,7 @@ ExtendedCss.query(selectorText) // returns an array of elements matching selecto
 
 ### Debugging scriptlets {#debug-scriptlets}
 
-If you are using AdGuard Browser extension and want to debug a [scriptlet](#scriptlets) or [trusted scriptlet](#trusted-scriptlets) rule, you can get additional information by simply having the Filtering log opened. In that case, scriptlets will switch to debug mode and will write more information to the browser console.
+If you are using AdGuard Browser extension and want to debug a [scriptlet](#scriptlets) or a [trusted scriptlet](#trusted-scriptlets) rule, you can get additional information by opening the Filtering log. In that case, scriptlets will switch to debug mode and there will be more information in the browser console.
 
 The following scriptlets are especially developed for debug purposes:
 
