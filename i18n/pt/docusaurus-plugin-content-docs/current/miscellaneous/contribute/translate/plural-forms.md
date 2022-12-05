@@ -28,7 +28,7 @@ Let’s draw a small parallel between English and Polish for better understandin
     
       1. form - It takes one hour.                                     1. form - Zajmuje to godzinę. 
       2. form - It takes two hours.                                    2. form - Zajmuje to dwie godziny. 
-      2. form - It takes five hours.                                   3. form - Zajmuje to pięć godzin.
+      3. form - It takes five hours.                                   3. form - Zajmuje to pięć godzin.
 
 Now it is clear that the Polish *'godzinę'* (hour) has three different forms, whereas the English word changes its form with given numbers only twice.
 

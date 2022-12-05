@@ -56,7 +56,7 @@ _cpu.active=_ CPU 사용으로 인한 100~200mA 추가 소비량 (mAh)
 
 두 번째 스크린샷에서 총 CPU를 밀리초(506000)로 변환해 보겠습니다.
 
-2GHz에 대한 _cpu.active_ 계수는 대략 225mA와 같습니다.
+A coefficient _cpu.active_ for 2GHz will be roughly equal to 225mAh
 
 결과
 > 506000 225 / (60 60 * 1000) = 31,625mAh

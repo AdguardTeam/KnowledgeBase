@@ -3,7 +3,7 @@ title: How to automate AdGuard for Android
 sidebar_position: 3
 ---
 
-Many people choose Android because they like customizing settings and want to control their device completely. And it's totally normal if some of AdGuard users are not satisfied with its default behavior. Let's say, you want protection to stop when a certain app is launched, and then restart it again when the app is closed. This is a job for a tasker app.
+Many people choose Android because they like customizing settings and want to control their device completely. And it's totally normal if some of AdGuard users are not satisfied with its default behavior. Let's say, you want protection to stop when a certain app is launched, and then restart it again when the app is closed. This is a job for the Tasker app.
 
 ## AdGuard interface
 
@@ -22,59 +22,59 @@ Wouldn't it be a bit dangerous, you might ask — to let some random apps manage
 So, ready to get your hands dirty? Here are actions that, when included in the intent, will be understood by AdGuard:
 
 
-`start` — starts the protection, no extra data is needed;
+`start` starts the protection, no extra data is needed;
 
-`stop` — stops the protection, no extra data required;
+`stop` stops the protection, no extra data required;
 
-`pause` — pauses the protection. The difference between this and `stop` is that a notification will appear that restarts the protection when you tap on it. No extra data required;
+`pause` pauses the protection. The difference between this and `stop` is that a notification will appear that restarts the protection when you tap on it. No extra data required;
 
-`update` — checks for available filter and app updates, no additional data is needed;
-
------
-
-`dns_filtering` — turns DNS filtering on and off. Requires an extra flag:
-
-`enable:true` or `enable:false` — enables or disables DNS filtering, accordingly.
+`update` checks for available filter and app updates, no additional data is needed;
 
 -----
 
-`dns_server` — switches between DNS servers, you need to include additional data:
+`dns_filtering` turns DNS filtering on and off. Requires an extra flag:
 
- `server:adguard dns` — switches to AdGuard DNS server;
-> NOTE: the full list of supported provider names can be found inside AdGuard DNS settings under the "Custom DNS settings"
+`enable:true` or `enable:false` enables or disables DNS filtering, accordingly.
 
- `server:custom` — switches to the previously added server named `custom`;
+-----
 
- `server:tls://dns.adguard.com` — creates a new server and switches to it if the previously added servers and providers don't contain a server with the same address. Otherwise, it switches to the respective server. You can add server addresses as IP ( regular DNS), `sdns://…` (DNSCrypt or DNS-over-HTTPS), `https://…` (DNS-over-HTTPS) or  `tls://...` (DNS-over-TLS);
+`dns_server` switches between DNS servers, you need to include additional data:
 
- `server:1.1.1.1, tls://1.1.1.1` — creates a server with comma separated addresses and switches to it. When adding a server via `server:1.1.1.1, tls://1.1.1.1`, the previously added server is removed.
+ `server:adguard dns` switches to AdGuard DNS server;
+> Note: the full list of supported provider names can be found inside AdGuard DNS settings under the "Custom DNS settings"
 
- `server:system` — resets DNS settings to default system DNS servers.
+ `server:custom` switches to the previously added server named `custom`;
+
+ `server:tls://dns.adguard.com` creates a new server and switches to it if the previously added servers and providers don't contain a server with the same address. Otherwise, it switches to the respective server. You can add server addresses as IP ( regular DNS), `sdns://…` (DNSCrypt or DNS-over-HTTPS), `https://…` (DNS-over-HTTPS) or  `tls://...` (DNS-over-TLS);
+
+ `server:1.1.1.1, tls://1.1.1.1` creates a server with comma separated addresses and switches to it. When adding a server via `server:1.1.1.1, tls://1.1.1.1`, the previously added server is removed.
+
+ `server:system` resets DNS settings to default system DNS servers.
 
  -----
 
 
 
-`proxy_state` – enables/disables the outbound proxy.  Requires an extra flag:
+`proxy_state` enables/disables the outbound proxy.  Requires an extra flag:
 
-`enable:true` or `enable:false` — activates or deactivates the outbound proxy, accordingly.
+`enable:true` or `enable:false` activates or deactivates the outbound proxy, accordingly.
 
 -----
 
 
-`proxy_default` – sets the proxy from the list of previously added ones as default or creates a new one if server has not been added before.
+`proxy_default` sets the proxy from the list of previously added ones as default or creates a new one if server has not been added before.
 
 You need to specify additional data:
 
-`server:[name]` – where `[name]` is the name of the outbound proxy from the list.
+`server:[name]` where `[name]` is the name of the outbound proxy from the list.
 
 Or you can configure server parameters manually:
 
 `server:[type=…&host=…&port=…&username=…&password=…&udp=…&trust=…]`.
 
-`proxy_remove` - removes the proxy server from the list of previously added ones.
+`proxy_remove` removes the proxy server from the list of previously added ones.
 
-`server:[name]` – where `[name]` is the name of the outbound proxy from the list.
+`server:[name]` where `[name]` is the name of the outbound proxy from the list.
 
 Or you  can configure remove parameters manually:
 
@@ -82,23 +82,23 @@ Or you  can configure remove parameters manually:
 
 * **Compulsory parameters**:
 
-`[type]` -  proxy server type:
+`[type]` — proxy server type:
 - HTTP;
 - SOCKS4;
 - SOCKS5;
 - HTTPS_CONNECT.
 
-`[host]` - outbound proxy domain or IP address;
+`[host]` — outbound proxy domain or IP address;
 
-`[port]` - outbound proxy port (Integer number from 1 to 65535);
+`[port]` — outbound proxy port (integer number from 1 to 65535);
 
 * **Optional parameters**:
 
- `[login and password]` - only if proxy requires it. This data is ignored when setting up **SOCKS4**;
+ `[login and password]` — only if proxy requires it. This data is ignored when setting up **SOCKS4**;
 
- `[udp]` - applied only on **SOCKS5** server type and include option **UDP through SOCKS5**. It is necessary to set **true or false** value;
+ `[udp]` applied only on **SOCKS5** server type and include option **UDP through SOCKS5**. It is necessary to set **true or false** value;
 
- `[trust]` - applies for **HTTPS_CONNECT** server type only and include option **Trust any certificates**. It is necessary to set **true or false** value.
+ `[trust]` applies for **HTTPS_CONNECT** server type only and include option **Trust any certificates**. It is necessary to set **true or false** value.
 
  > **Example**:
 

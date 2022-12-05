@@ -32,7 +32,7 @@ You could say this is a particular sub-case of Error 1603. The possible solution
 
 - Start and re-register Microsoft Installer service. It requires some work.
 
-    1) Press **Win + R** and enter "***services.msc***. 2) Find in the list and double click on **Windows Installer**. 3) Hit **Start** button under *Service status** and hit **OK**. If the service status is **running**, you should click on **Stop** first and then hit **Start**. 4) Press  **Win + R**, type and enter "***msiexec /unregister*** and hit **Enter**. 5) Press  **Win + R** again, type and enter "***msiexec /regserver*** and hit **Enter**
+    1) Press **Win + R** and enter ***services.msc***. 2) Find in the list and double click on **Windows Installer**. 3) Hit **Start** button under **Service status** and hit **OK**. If the service status is **running**, you should click on **Stop** first and then hit **Start**. 4) Press  **Win + R**, type and enter ***msiexec /unregister*** and hit **Enter**. 5) Press  **Win + R** again, type and enter ***msiexec /regserver*** and hit **Enter**
 
 - Reboot the PC and start the installation all over again. Sometimes that's enough to fix the problem.
 

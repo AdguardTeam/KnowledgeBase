@@ -21,7 +21,7 @@ iOS 11.2 이상
 
 iOS용 AdGuard는 App Store에서 다운로드할 수 있는 무료 앱입니다. AdGuard를 설치하려면 App Store 앱을 실행하고 화면 하단의 _Search_ 아이콘을 탭하세요.
 
-![앱스토어 메인 화면에서 Search를 탭하세요](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/1.png)
+![On the App Store main screen, tap Search](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/1.png)
 
 검색창에 _adguard_를 입력한 후 표시될 _adGuard_를 탭하세요.
 
@@ -35,9 +35,9 @@ App Store의 열린 페이지에서 _AdGuard - adblock&privacy_ 아래에 있는
 
 AdGuard Pro는 프리미엄 기능을 제공하는 iOS용 AdGuard의 유료 버전입니다. AdGuard Pro를 설치하려면 App Store 앱을 실행하고 화면 하단의 _Search_ 아이콘을 탭하세요.
 
-![앱스토어 메인 화면에서 Search를 탭하세요](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/1.png)
+![On the App Store main screen, tap Search](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/1.png)
 
-검색창에 _adguard_를 입력한 후 표시될 _adGuard pro - adblock_를 탭하세요.
+Type _adguard_ in the search form, and then tap the string _adGuard pro - adblock_ which will be shown among search results.
 
 ![검색창에 "AdGuard" 입력](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/2.png)
 

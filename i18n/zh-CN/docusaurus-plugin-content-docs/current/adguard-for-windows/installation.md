@@ -49,7 +49,7 @@ sidebar_position: 2
 
 如您想卸载 AdGuard，请执行下述操作：
 
-* Microsoft Windows 10 和 11：点击**开始菜单**并选择**设置**。 在弹出的视窗里点击**应用**。 在**应用程序**的视窗的左边的选项中选择**应用和功能**。 请在已安装的应用程序列表中选择 **Adguard** 并点击**卸载**。 在弹出的对话框确认**卸载**。
+* Microsoft Windows 10 和 11：点击**开始菜单**并选择**设置**。 在弹出的视窗里点击**应用**。 在**应用程序**的视窗的左边的选项中选择**应用和功能**。 Select **AdGuard** from the list of your installed apps and click **Uninstall**. 在弹出的对话框确认**卸载**。
 
 ![Windows 10 & 11 卸载](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/win10-uninstall.png)
 
@@ -77,7 +77,7 @@ sidebar_position: 2
 
 > 请注意！ 下述的第三四步，只在由于某些原因上述两个步骤无法卸载 AdGuard 的情况下，才可以执行。 即当您执行「一般卸载」后，还是无法重新安装 AdGuard 时。我们强烈推荐执行下述进阶卸载的第三四步前，请您先于技术支持联系。
 
-* 选择*进阶卸载*（Advanced uninstall）并点击*卸载*（Uninstall ）。
+* Choose *Advanced uninstall* and click *Uninstall*.
 
 ![进阶卸载](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/advanced-uninstall.png)
 

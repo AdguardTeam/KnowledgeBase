@@ -9,7 +9,7 @@ A license is permission to use the AdGuard product, provided in accordance with 
 
 Some licenses need to be purchased (e.g. AdGuard Ad Blocker Personal), some are free and limited by term (e.g. trial licenses of AdGuard apps) or have a limited functionality (e.g. AdGuard for iOS or AdGuard Browser extension). Here's the list of all types of AdGuard Ad Blocker licenses.
 
-1. **Trial licenses** are free time-limited licenses with full functionality: AdGuard for Windows — 14 days trial, AdGuard for Mac — 14 days trial, AdGuard for Android — 7 days trial.
+1. **Trial licenses** are free time-limited licenses with full functionality: AdGuard for Windows — 14-day trial, AdGuard for Mac — 14-day trial, AdGuard for Android — 7-day trial.
 2. **Free licenses** are not time-limited, but have limited functionality: AdGuard Browser extension, AdGuard Content Blocker, AdGuard for iOS.
 3. **Subscriptions** are paid licenses that are renewed automatically every month or every year. They can also be extended manually. AdGuard Ad Blocker Monthly subscription, AdGuard Ad Blocker 1-year subscription.
 4. **Licenses purchased from distributors** and **gifted licenses** are time-limited and cannot be renewed automatically. Though, they can be extended manually: AdGuard Ad Blocker Monthly license, AdGuard Ad Blocker 1-year license.

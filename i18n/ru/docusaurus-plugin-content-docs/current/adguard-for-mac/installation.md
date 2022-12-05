@@ -62,9 +62,9 @@ sidebar_position: 2
 
 ### Продвинутое
 
-**Используйте эту инструкцию, только если вы точно знаете, что делаете, или если наша команда поддержки рекомендовала вам именно «продвинутое удаление». Прежде чем приступать, сначала выполните все шаги из инструкции по «стандартному удалению».** После её выполнения:
+**Используйте эту инструкцию, только если вы точно знаете, что делаете, или если наша команда поддержки рекомендовала вам именно «продвинутое удаление». Also, do all the steps from the 'regular uninstall first'.**
 
-* Удалите следующие файлы AdGuard:
+* После этого удалите следующие файлы AdGuard:
     * /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (папка)
     * ~/Library/Preferences/com.adguard.mac.adguard.plist (файл)
     * ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac (папка)

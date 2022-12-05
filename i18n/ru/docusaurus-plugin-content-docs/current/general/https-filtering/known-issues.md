@@ -38,4 +38,4 @@ HTTPS-фильтрация в AdGuard имеет свои недостатки. 
 
 ## Замечания и пожелания
 
-Если вы хотите что-то добавить, сообщить о каких-либо ошибках или задать вопрос, пожалуйста, свяжитесь с нами по адресу: `devteam@adguard.com`.
+If you’d like to add something, report any errors, or ask a question, please contact us at: `devteam@adguard.com`.

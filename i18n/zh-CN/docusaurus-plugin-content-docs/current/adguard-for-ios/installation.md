@@ -21,7 +21,7 @@ sidebar_position: 2
 
 AdGuard iOS版是 App Store 中的一款应用程序。 如您想要在您的设备上安装 AdGuard iOS版，请您打开 App Store 并在下面点击_搜索_图标。
 
-![在 App Store 主屏幕上，点击搜索](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/1.png)
+![On the App Store main screen, tap Search](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/1.png)
 
 先在搜索栏输入 _adguard_，然后在搜索结果找到并按 _AdGuard_ 选项。
 
@@ -35,9 +35,9 @@ AdGuard iOS版是 App Store 中的一款应用程序。 如您想要在您的设
 
 AdGuard Pro 是 AdGuard iOS版的付费版本。AdGuard Pro 为用户提供更多功能（与启用高级版的 AdGuard 应用程序相同）。 如您想要在您的设备上安装应用程序，请您打开 App Store 并在下面点击_搜索_图标。
 
-![在 App Store 主屏幕上，点击搜索](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/1.png)
+![On the App Store main screen, tap Search](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/1.png)
 
-先在搜索栏输入 _adguard_，然后在搜索结果找到并按 _AdGuard pro - adblock_ 选项。
+Type _adguard_ in the search form, and then tap the string _adGuard pro - adblock_ which will be shown among search results.
 
 ![在搜索栏中输入 "AdGuard"](https://cdn.adguard.com/public/Adguard/kb/installation/iOS/en/2.png)
 

@@ -38,4 +38,4 @@ HTTPS 필터링을 사용하는 경우, 웹 사이트에서 사용하는 실제 
 
 ## 의견이나 제안이 있나요?
 
-의견, 제안 또는 질문이 있으시면 `devteam@adguard.com`으로 문의해 주십시오.
+If you’d like to add something, report any errors, or ask a question, please contact us at: `devteam@adguard.com`.

@@ -18,7 +18,7 @@ That’s why you can only install AdGuard for Android manually. To use the app o
 
 First of all, allow installing apps from unknown sources in your device’s OS settings. For this you will need to:
 
-* For Android 8+: start downloading AdGuard apk (see the next step), you'll be prompted to allow permission. Tap **Settings** in the opened window and enable **Allow from this source** switch. Then resume the installation.
+* For Android 8+: start downloading [AdGuard apk](https://adguard.com/en/adguard-android/overview.html) (see the next step), you'll be prompted to allow permission. Tap **Settings** in the opened window and enable **Allow from this source** switch. Then resume the installation.
 * For Android 6 and 7: open **Settings**, then select **Additional settings** in **System & Device**. Switch on **Unknown sources** and press **OK** in the system warning window.
 
 ![Installing apps from unknown sources](https://cdn.adguard.com/content/kb/ad_blocker/android/installation/unknown_sources1.png)
@@ -59,11 +59,15 @@ Next is Annoyances: cookie notifications, support windows etc.:
 
 ![Annoyances](https://cdn.adguard.com/content/kb/ad_blocker/android/installation/7.png)
 
+You don't have to choose anything on this screen: just take note of the information on how to watch YouTube videos without ads:
+
+![YouTube](https://cdn.adguard.com/content/kb/ad_blocker/android/installation/youtube.jpg)
+
 Up next is privacy settings. Choose a desirable protection level:
 
 ![Privacy settings](https://cdn.adguard.com/content/kb/ad_blocker/android/installation/8.png)
 
-Same for security (warnings about dangerous websites):
+On the next screen, select whether you want to get notifications about dangerous websites:
 
 ![Security](https://cdn.adguard.com/content/kb/ad_blocker/android/installation/9.png)
 
