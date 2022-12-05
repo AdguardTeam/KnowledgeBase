@@ -21,7 +21,7 @@ The program uses a lot of different filters, our own and third-party ones, sorte
   
 ![Filters](https://cdn.adguard.com/content/kb/ad_blocker/android/features/filters1.png)
   
-Find out more about all the filters available for AdGuard products by reading their descriptions in the app or [this comprehensive article](/docs/general/ad-filtering/adguard-filters.md).
+Find out more about all the filters available for AdGuard products by reading their descriptions in the app or [this comprehensive article](/general/ad-filtering/adguard-filters.md).
 
 ## Custom filters
  
@@ -33,7 +33,7 @@ AdGuard allows you to create your own custom filters, using the same type of rul
  
 ## HTTPS filtering
  
-Nowadays almost all websites work via HTTPS, the web protocol where the last S letter stands for "secure". It happened so that most advertisers use this protocol as well, this is why [HTTPS filtering](/docs/general/https-filtering/what-is-https-filtering.md) is really crucial for a modern ad blocker.
+Nowadays almost all websites work via HTTPS, the web protocol where the last S letter stands for "secure". It happened so that most advertisers use this protocol as well, this is why [HTTPS filtering](/general/https-filtering/what-is-https-filtering.md) is really crucial for a modern ad blocker.
  
 ![What is https](https://cdn.adguard.com/public/Adguard/Blog/https/what_is_https.png)
  
