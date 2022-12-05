@@ -17,12 +17,12 @@ AdGuard для Mac теперь использует встроенный в mac
 
 Network extensions API имеет VPN-подобную конфигурацию со списком записей типа route. На Big Sur мы использовали правила "split-tunnel", чтобы избежать создания правила "default route", поскольку оно вызывало проблемы на ранних версиях Big Sur.
 
-На Monterey появилась функция iCloud Private Relay. Функции конфиденциальности в приложении Почта также используют серверы iCloud Private Relay.
+На Monterey появилась функция iCloud Private Relay. Privacy features of the Mail app also use Private Relay servers.
 
-В результате AdGuard не может работать вместе с iCloud Private Relay и функциями конфиденциальности приложения Почта:
-1. iCloud Private Relay применяется к соединениям на уровне библиотек — до того, как они достигают уровня сокета, где работает AdGuard.
+As a result, AdGuard can't work together with iCloud Private Relay and the Mail app privacy features:
+1. iCloud Private Relay is applied to connections at the library level — before they reach the socket level, where AdGuard operates.
 2. iCloud Private Relay использует QUIC, который AdGuard не может блокировать в фильтруемых приложениях, поскольку фильтрация HTTP/3 пока не доступна.
-3. Поэтому AdGuard блокирует QUIC, включая и трафик iCloud Private Relay — иначе блокировка рекламы невозможна.
+3. As AdGuard blocks QUIC, including iCloud Private Relay traffic — otherwise, ad blocking is impossible.
 4. При использовании iCloud Private Relay и переключении AdGuard в режим "split-tunnel" невозможно открыть сайты в Safari.
 5. Чтобы обойти эту проблему для Monterey, мы применяем правило "default route". Тогда Private Relay видит это правило, он автоматически отключается. Таким образом, AdGuard работает без проблем на Monterey, но iCloud Private Relay отключается.
 

@@ -85,7 +85,7 @@ sidebar_position: 9
 
 Здесь вы можете указать тип ответа DNS-сервера на заблокированные запросы, соответствующие правилам hosts:
 
-0 — ответить кодом ответа REFUSED 1 — ответить кодом ответа NXDOMAIN 2 — ответить 0.0.0.0 или адресами, указанными в dns.proxy.blocking.response.IPv4.address и/или dns.proxy.blocking.response.IPv6.address
+0 — отвечать кодом REFUSED 1 — отвечать кодом NXDOMAIN 2 — отвечать 0.0.0.0 или адресами, указанными в `dns.proxy.blocking.response.IPv4.address` и/или `dns.proxy.blocking.response.IPv6.address`
 
 `dns.proxy.blocking.response.IPv4.address`
 

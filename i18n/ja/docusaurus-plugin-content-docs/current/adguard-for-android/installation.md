@@ -18,7 +18,7 @@ sidebar_position: 2
 
 まず、デバイスのOS設定で提供元不明のアプリケーションのインストールを許可する必要があります:
 
-* 【Android 8以降の場合】ダウンロードしたAdGuardのAPKファイルをタップし、[インストール] をタップ。 ブラウザからのインストールが許可されていない場合は通知が表示され、そこで [**設定**]→[**この提供元を許可する**]→戻る→[インストール] でインストールが完了します。
+* For Android 8+: start downloading [AdGuard apk](https://adguard.com/en/adguard-android/overview.html) (see the next step), you'll be prompted to allow permission. ブラウザからのインストールが許可されていない場合は通知が表示され、そこで [**設定**]→[**この提供元を許可する**]→戻る→[インストール] でインストールが完了します。
 * 【Android 7の場合】お使いのデバイスで「**設定**」→「**セキュリティ**」より「提供元不明のアプリ」をタップしてトグルをONにする。 【Android 6の場合】[**設定**]を開き、[システムとデバイス]から[その他の設定]を選択。[セキュリティ]の[提供元不明のアプリ]をオンにし、システム警告ウィンドウが開きましたらOKをタップ。 ※端末によって少し手順と項目が異なる場合があります。
 
 ![提供元不明のアプリをインストールする](https://cdn.adguard.com/public/Adguard/kb/installation/Android/ja/d1.jpg)
@@ -59,11 +59,15 @@ sidebar_position: 2
 
 ![迷惑要素](https://cdn.adguard.com/public/Adguard/kb/installation/Android/ja/7.jpg)
 
+You don't have to choose anything on this screen: just take note of the information on how to watch YouTube videos without ads:
+
+![YouTube](https://cdn.adguard.com/content/kb/ad_blocker/android/installation/youtube.jpg)
+
 プライバシー設定では、ご希望の個人情報追跡からの保護レベルをお選びください:
 
 ![プライバシー設定](https://cdn.adguard.com/public/Adguard/kb/installation/Android/ja/8.jpg)
 
-セキュリティは、危険なサイトにアクセスしようとする時に、警告を表示するかしないかという設定です。
+On the next screen, select whether you want to get notifications about dangerous websites:
 
 ![セキュリティ](https://cdn.adguard.com/public/Adguard/kb/installation/Android/ja/9.jpg)
 

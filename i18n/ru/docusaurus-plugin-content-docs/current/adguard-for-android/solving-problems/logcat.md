@@ -1,5 +1,5 @@
 ---
-title: Как получить лог LogCat
+title: Как получить лог Logсat
 sidebar_position: 4
 ---
 
@@ -65,7 +65,7 @@ sidebar_position: 4
 
 **Альтернативный способ для пользователей с ROOT:**
 
-1. Скачайте и запустите приложение [CatLog](https://play.google.com/store/apps/details?id=com.nolanlawson.logcat&noprocess).
+1. Скачайте и запустите приложение [Logcat](https://play.google.com/store/apps/details?id=com.nolanlawson.logcat&noprocess).
 
 2. Выберите в меню **Запись**. Выберите имя для файла лога или просто нажмите **OK**. Теперь вы можете нажать на кнопку **Домой**, CatLog продолжит записывать лог в фоновом режиме.
 

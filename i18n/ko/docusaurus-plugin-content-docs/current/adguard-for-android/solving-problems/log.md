@@ -39,4 +39,4 @@ sidebar_position: 2
 
 또는 로그(그리고 시스템 정보 및 AdGuard 설정에 대한 정보가 포함된 *state.txt* 파일)를 로컬 파일로 직접 내보낼 수 있습니다. [GitHub](https://github.com/AdguardTeam/AdguardForAndroid/issues), [포럼](https://forum.adguard.com/) 또는 다른 플랫폼에서 개발자와 대화를 나누는 경우, 편리합니다.
 
-로그 및 시스템 정보를 파일로 내보내려면 '설정' -> '고급'으로 이동하여 '로그와 시스템 정보 내보내기'를 클릭하십시오. 대상 폴더를 선택하고 '저장'을 누릅니다.
+To export logs and system information into a file, go to "Settings" — " Advanced" and tap "Export logs and system info". 대상 폴더를 선택하고 '저장'을 누릅니다.

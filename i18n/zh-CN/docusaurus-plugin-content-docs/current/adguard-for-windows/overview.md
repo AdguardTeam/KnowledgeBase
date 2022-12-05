@@ -115,7 +115,7 @@ AdGuard Extra is essentially a mini-program that changes the way pages work,and 
 
 **AdGuard Popup Blocker**
 
-This extension prevents popup windows from opening when you view web pages. Some popups are considered useful – they may contain settings for site administering or additional reference information demonstrated upon clicking a link. That is why you can turn off the Blocker if needed. This extension doesn’t work on websites added to the AdGuard exceptions list either. It is turned off by default, but you can turn it on in the application settings. You will find more detailed information about this extension in our Knowledge Database.
+This extension prevents popup windows from opening when you view web pages. Some popups are considered useful – they may contain settings for site administering or additional reference information demonstrated upon clicking a link. That is why you can turn off the Blocker if needed. This extension doesn’t work on websites added to the AdGuard exceptions list either. It is turned off by default, but you can turn it on in the application settings. You will find more detailed information about this extension in our Knowledge base.
 
 **Web of Trust**
 
@@ -129,7 +129,7 @@ The penultimate module is dedicated to network filtering, and here you will find
 
 In this module you can check the checkbox "Use AdGuard as an HTTP proxy" to use AdGuard as a regular HTTP proxy which will filter all traffic passing through it. You can also enable the "Filter websites with EV certificates" feature. Extended Validation (EV) SSL Certificates offer a stronger safety guarantee; owners of such websites have to pass a thorough and globally standardized identity verification process defined by EV guidelines. Which is the reason why some users trust websites with such certificates and prefer not to filter them.
 
-At last, there is a section with Proxy settings. There you can specify which proxy server AdGuard should use to update filters, get new versions and so on.
+At last, there is a section with proxy settings. There you can specify which proxy server AdGuard should use to update filters, get new versions and so on.
 
 ### AdGuard VPN
 
@@ -168,7 +168,7 @@ This tab contains information about your license. Here you can:
 
 ![关于](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/about.png)
 
-In addition to information about the current version of the program, this tab provides some useful links to the Licese Agreement, Privacy Policy, Acknowledgements, Discussions, and Version history pages.
+In addition to information about the current version of the program, this tab provides some useful links to Licese Agreement, Privacy Policy, Acknowledgements, Discussions, and Version history pages.
 
 ### Check for updates
 

@@ -62,9 +62,9 @@ AdGuard 图标将出现在您的桌面上。 单击它打开安装应用程序�
 
 ### 进阶卸载方式
 
-**除非您知道如何操作或有我们技术支持专门为您推荐使用进阶方式卸载应用程序，我们不推荐您使用该方式。 此外，请您先使用'一般卸载方式'。**再请您执行以下操作：
+**Use this instruction only if you know what you are doing or if our support service specifically recommended you the 'advanced uninstall'. Also, do all the steps from the 'regular uninstall first'.**
 
-* 删除以下的 AdGuard 文件：
+* After that, delete following AdGuard files:
     * /Library/Application Support/AdGuard Software/com.adguard.mac.adguard（文件夹）
     * ~/Library/Preferences/com.adguard.mac.adguard.plist（文件）
     * ~/Library/Group\Containers/TC3Q7MAJXF.com.adguard.mac（文件夹）

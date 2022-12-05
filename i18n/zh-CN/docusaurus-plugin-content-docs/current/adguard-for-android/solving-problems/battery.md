@@ -56,7 +56,7 @@ _cpu.active=_ 100-200mA 是指中央处理器（CPU） 运行导致的额外消�
 
 来将第二张截图上的 _CPU total_ 转换为毫秒：506000
 
-2GHz 的 _cpu.active_ 系数大约等于 225mA
+A coefficient _cpu.active_ for 2GHz will be roughly equal to 225mAh
 
 最后结果
 > 506000 * 225 / (60 * 60 * 1000) = 31,625mAh

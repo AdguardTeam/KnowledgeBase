@@ -3,7 +3,7 @@ title: Problems caused by using a Restricted Mode profile
 sidebar_position: 10
 ---
 
-The owners of phones, tablets, or TVs running the Android 7+ operating system might face the problem caused by using **a profile with Restricted Mode**. If you have such a profile, **AdGuard**, like other applications that use VPN, gets restrictions on selective filtering of VPN traffic. As a result, AdGuard cannot launch protection in a **local VPN mode**. Also, one of the reasons for this situation may be using **Dual app/Dual messenger profile** on your device. Below are described the recommendations that you can apply when this problem occurs.
+The owners of phones, tablets, or TVs running the Android 7+ operating system might face the problem caused by using **a profile with Restricted Mode**. If you have such a profile, **AdGuard**, like other applications that use VPN, gets restrictions on selective filtering of VPN traffic. As a result, AdGuard cannot launch protection in a **local VPN mode**. Also, one of the reasons for this situation may be using **Dual App/Dual Messenger profile** on your device. Below are described the recommendations that you can apply when this problem occurs.
 
 ## Solutions
 
@@ -41,7 +41,7 @@ To enable this mode open **AdGuard Settings** > **Network** > **Filtering method
 
 ## LG and Samsung devices
 
-Owners of **LG** or **Samsung** phones may also encounter a similar issue. It can be caused by using **Dual app/Dual messenger** function (which automatically creates a restricted profile). To solve this issue, you need to disable this feature.
+Owners of **LG** or **Samsung** phones may also encounter a similar issue. It can be caused by using **Dual App/Dual Messenger** function (which automatically creates a restricted profile). To solve this issue, you need to disable this feature.
 
 ### Samsung
 

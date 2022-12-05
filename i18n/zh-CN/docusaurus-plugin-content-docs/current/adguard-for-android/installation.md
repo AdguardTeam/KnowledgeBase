@@ -18,7 +18,7 @@ sidebar_position: 2
 
 首先，请在操作系统设置里允许安装未知来源的应用程序。 以执行此操作请您：
 
-* 安卓 8+：开始安装 AdGuard APK 文件（查看下一步）。您将会看到允许安装应用程序的窗口。 在打开的窗口点击**设置**并启用**允许此来源**。 然后继续安装。
+* For Android 8+: start downloading [AdGuard apk](https://adguard.com/en/adguard-android/overview.html) (see the next step), you'll be prompted to allow permission. 在打开的窗口点击**设置**并启用**允许此来源**。 然后继续安装。
 * 安卓 6 和 7：打开**设置**，在**系统和设备**部分选择**其他设置**。 启用**未知来源**并在系统警示窗口上点击**OK**。
 
 ![安装未知来源的应用程序](https://cdn.adguard.com/content/kb/ad_blocker/android/installation/unknown_sources1.png)
@@ -59,11 +59,15 @@ sidebar_position: 2
 
 ![烦人元素](https://cdn.adguard.com/content/kb/ad_blocker/android/installation/7.png)
 
+You don't have to choose anything on this screen: just take note of the information on how to watch YouTube videos without ads:
+
+![YouTube](https://cdn.adguard.com/content/kb/ad_blocker/android/installation/youtube.jpg)
+
 下一个是隐私设置。 请选择您所想使用的保护水平：
 
 ![隐私设置](https://cdn.adguard.com/content/kb/ad_blocker/android/installation/8.png)
 
-安全设置（关于危险网站的警告）：
+On the next screen, select whether you want to get notifications about dangerous websites:
 
 ![安全](https://cdn.adguard.com/content/kb/ad_blocker/android/installation/9.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Logcat log 수집 방법
+title: How to get Logcat log
 sidebar_position: 4
 ---
 
@@ -24,7 +24,7 @@ sidebar_position: 4
 
 ![버그 신고](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
 
-5. 이 로그를 지원 팀에 보냅니다.
+5. Send this log to our support team.
 > 참고: 메시지에 헬프 데스크 티켓 번호 또는 GitHub 문제 번호를 첨부하면 지원팀이 티켓을 더 빠르게 처리할 수 있습니다.
 
 ## 추가 지침(Android 구 버전용)
@@ -39,9 +39,9 @@ sidebar_position: 4
 
 3. **USB 디버깅**을 활성화합니다.
 
-4. **Logger 버퍼** 크기를 로그 버퍼당 4M으로 늘립니다.
+4. Increase **Logger buffer** sizes to 4MB per log buffer.
 
-두 번째 단계(기기에서 로그 가져오기)를 수행할 수 있을 때까지 필요한 로그를 저장하는 데 4M이면 충분합니다.
+4MB should be enough for storing the logs we need until you're able to do the second part (getting log from the device);
 
 **중요**: 반드시 첫 번째 단계를 완료한 후 문제를 재현해 주십시오!
 
@@ -65,7 +65,7 @@ sidebar_position: 4
 
 **ROOT 사용자를 위한 대체 방법**
 
-1. [CatLog](https://play.google.com/store/apps/details?id=com.nolanlawson.logcat&noprocess)를 다운로드하고 실행합니다.
+1. Download and run [Logcat](https://play.google.com/store/apps/details?id=com.nolanlawson.logcat&noprocess).
 
 2. 메뉴에서 **녹음**을 선택합니다. 로그 파일의 이름을 입력하거나 **확인**을 누릅니다. 이제 **홈** 버튼을 누르면 CatLog가 로그인 배경을 계속 기록합니다.
 
@@ -73,5 +73,5 @@ sidebar_position: 4
 
 4. CatLog를 열고 메뉴에서 **기록 중지**를 누릅니다.
 
-5. 이 로그를 지원 팀에 보냅니다.
+5. Send this log to our support team.
 > 참고: 메시지에 헬프 데스크 티켓 번호 또는 GitHub 문제 번호를 첨부하면 지원팀이 티켓을 더 빠르게 처리할 수 있습니다.

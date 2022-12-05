@@ -62,9 +62,9 @@ Finder 앱을 엽니다.
 
 ### 고급 제거 방법
 
-**고객 지원 팀에서 특별히 '고급 제거'를 권장하거나 고급 제거에 익숙한 경우에만 이 지침을 사용하십시오. 먼저 '일반 제거' 지침의 모든 단계를 수행한 후 **다음 단계를 수행합니다.
+**Use this instruction only if you know what you are doing or if our support service specifically recommended you the 'advanced uninstall'. Also, do all the steps from the 'regular uninstall first'.**
 
-* 다음과 같은 AdGuard 파일을 삭제합니다.
+* After that, delete following AdGuard files:
     * /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (폴더)
     * ~/Library/Preferences/com.adguard.mac.adguard.plist (파일)
     * ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac (폴더)
