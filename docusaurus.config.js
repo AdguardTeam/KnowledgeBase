@@ -16,7 +16,7 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  trailingSlash: false,
+  trailingSlash: true,
   organizationName: 'AdGuard',
   projectName: 'AdGuardKB',
   i18n: {

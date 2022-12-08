@@ -50,11 +50,11 @@ Many websites gather information about their visitors, such as their IP addresse
 
 You can flexibly adjust the work of Stealth Mode: for instance, you can prohibit the website to receive the search request you used to find it on the Internet, automatically delete both third-party and website’s own cookies, and disable location sharing in your browser that can be used to track your whereabouts.
 
-To learn everything about Stealth Mode and its many options, [read this article](/general/stealth-mode.md).
+To learn everything about Stealth Mode and its many options, [read this article](/general/stealth-mode).
 
 ### Browsing Security
 
-Browsing Security gives strong protection against malicious and fishing websites. No, AdGuard for Windows is not an antivirus. It will neither stop the download of a virus when it's already started, nor delete the already existing ones. But it will warn you if you're about to proceed to a website whose domain has been added to our "untrusted sites" database, or to download a file from such website. You can find more information about how this module works in the [dedicated article](/general/stealth-mode.md).
+Browsing Security gives strong protection against malicious and fishing websites. No, AdGuard for Windows is not an antivirus. It will neither stop the download of a virus when it's already started, nor delete the already existing ones. But it will warn you if you're about to proceed to a website whose domain has been added to our "untrusted sites" database, or to download a file from such website. You can find more information about how this module works in the [dedicated article](/general/stealth-mode).
 
 In this module you can
 * enable notifications to block requests to malicious and phishing sites,

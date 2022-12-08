@@ -75,7 +75,7 @@ You can also import and export existing allowlists. It is useful, for instance, 
 
 ![Stealth Mode](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_stealth_mode.png)
 
-In Stealth Mode, you can prevent a website from seeing the search queries from you used to find it on the Internet, automatically delete third-party and website’s own cookies, etc. A [separate article](/general/stealth-mode.md) is devoted to all these features.
+In Stealth Mode, you can prevent a website from seeing the search queries from you used to find it on the Internet, automatically delete third-party and website’s own cookies, etc. A [separate article](/general/stealth-mode) is devoted to all these features.
 
 > Note that some of the *Stealth Mode* options available in full-fledged apps are not present in the browser extensions due to technical restrictions.
 

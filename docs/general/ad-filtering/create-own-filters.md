@@ -556,22 +556,22 @@ $stealth [= opt1 [| opt2 [| opt3 [...]]]]
 
 The list of the available modifier options:
 
-* `searchqueries` disables [**Hide your search queries**](../stealth-mode#searchqueries) option
-* `donottrack` disables [**Send Do-Not-Track header**](../stealth-mode#donottrack) option
-* `3p-cookie` disables [**Self-destructing third-party cookies**](../stealth-mode#3p-cookie) option
-* `1p-cookie` disables [**Self-destructing first-party cookies**](../stealth-mode.md#1p-cookie) option
-* `3p-cache` disables [**Disable cache for third-party requests**](../stealth-mode#3p-cache) option
-* `3p-auth` disables [**Block third-party Authorization header**](../stealth-mode#3p-auth) option
-* `webrtc` disables [**Block WebRTC**](../stealth-mode#webrtc) option
-* `push` disables [**Block Push API**](../stealth-mode#push) option
-* `location` disables [**Block Location API**](../stealth-mode#location) option
-* `flash` disables [**Block Flash**](../stealth-mode#flash) option
-* `java` disables [**Block Java**](../stealth-mode#java) option
-* `referrer` disables [**Hide Referrer from third parties**](../stealth-mode#miscellaneous) option
-* `useragent` disables [**Hide your User-Agent**](../stealth-mode#useragent) option
-* `ip` disables [**Hide your IP address**](../stealth-mode#ip) option
-* `xclientdata` disables [**Remove X-Client-Data header from HTTP requests**](../stealth-mode#xclientdata) option
-* `dpi` disables [**Protect from DPI**](../stealth-mode#dpi) option
+* `searchqueries` disables [**Hide your search queries**](../../stealth-mode#searchqueries) option
+* `donottrack` disables [**Send Do-Not-Track header**](../../stealth-mode#donottrack) option
+* `3p-cookie` disables [**Self-destructing third-party cookies**](../../stealth-mode#3p-cookie) option
+* `1p-cookie` disables [**Self-destructing first-party cookies**](../../stealth-mode#1p-cookie) option
+* `3p-cache` disables [**Disable cache for third-party requests**](../../stealth-mode#3p-cache) option
+* `3p-auth` disables [**Block third-party Authorization header**](../../stealth-mode#3p-auth) option
+* `webrtc` disables [**Block WebRTC**](../../stealth-mode#webrtc) option
+* `push` disables [**Block Push API**](../../stealth-mode#push) option
+* `location` disables [**Block Location API**](../../stealth-mode#location) option
+* `flash` disables [**Block Flash**](../../stealth-mode#flash) option
+* `java` disables [**Block Java**](../../stealth-mode#java) option
+* `referrer` disables [**Hide Referrer from third parties**](../../stealth-mode#miscellaneous) option
+* `useragent` disables [**Hide your User-Agent**](../../stealth-mode#useragent) option
+* `ip` disables [**Hide your IP address**](../../stealth-mode#ip) option
+* `xclientdata` disables [**Remove X-Client-Data header from HTTP requests**](../../stealth-mode#xclientdata) option
+* `dpi` disables [**Protect from DPI**](../../stealth-mode#dpi) option
 
 **Examples**
 

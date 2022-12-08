@@ -69,7 +69,7 @@ Many websites gather information about their visitors, such as their IP addresse
 
 You can flexibly adjust the work of Stealth Mode: for instance, you can prohibit the website to receive the search request you used to find it on the Internet, automatically delete both third-party and website’s own cookies, and disable location sharing in your browser that can be used to track your whereabouts.
 
-To learn all the main features and options you can manage in the Stealth mode settings, [read this article](/general/stealth-mode.md).
+To learn all the main features and options you can manage in the Stealth mode settings, [read this article](/general/stealth-mode).
 
 ![Stealth mode](https://cdn.adguard.com/content/kb/ad_blocker/android/features/stealth-mode.png)
 

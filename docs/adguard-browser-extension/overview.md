@@ -10,7 +10,7 @@ AdGuard provides a range of software products that block ads and trackers on dif
 ## Availability {#br-extension}
 
 [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html) is available for most major browsers. You can easily find it in your browser’s online store or on our official website.
-    
+
 ![Available for most popular browsers](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
 
 > We have a standalone extension for Safari. Since the release of [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html), most of the ad-blocking extensions have experienced huge issues and many of them stopped functioning. We had to develop a [separate extension for Safari](/adguard-for-safari/overview.md) that has some differences in comparison with the extension described in this article.
@@ -27,7 +27,7 @@ In essence, filter lists are sets of rules written in a special language. Your a
 
 ![Filters](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters.png)
 
-All filters are grouped according to their role. For example, there are categories for ad-blocking filters, privacy protection filters, social media-related filters, etc. You can enable either individual filters or the entire group at once. 
+All filters are grouped according to their role. For example, there are categories for ad-blocking filters, privacy protection filters, social media-related filters, etc. You can enable either individual filters or the entire group at once.
 
 ![Ad blocking filters](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters1.png)
 
@@ -37,12 +37,12 @@ While the features of other filter groups are more or less predictable, there is
 
 ![Custom filters](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters.png)
 
-In this tab, you can add filters that are not present in the extension by default. There are plenty of [publicly available filters on the Internet](https://filterlists.com). Moreover, you can create and add your own filters. In fact, you can build any set of filters and customize ad blocking the way you like. 
+In this tab, you can add filters that are not present in the extension by default. There are plenty of [publicly available filters on the Internet](https://filterlists.com). Moreover, you can create and add your own filters. In fact, you can build any set of filters and customize ad blocking the way you like.
 
 To add a filter, just click the **Add custom filter** button and then enter the URL or the file path of the filter you want to be added, and then click the **Next** button.
 
 ![Add a custom filter](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
-  
+
 ### User rules {#user-rules}
 
 *User rules* is another tool that helps you customize the blocking of ads.
@@ -50,13 +50,13 @@ To add a filter, just click the **Add custom filter** button and then enter the 
 ![User rules](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_user_rules.png)
 
 There are several ways to add new rules. The most straightforward is to just type a rule in, but it requires some knowledge of the [rule syntax](/general/ad-filtering/create-own-filters.md).
-    
+
 You can import a ready-to-use filter list from a text file as well. *Make sure that different rules are separated by line breaks.* Note that importing a ready-to-use filter list is better done in the [Custom filters](#custom) tab.
 
 Besides, you can export your own filtering rules. This option is good for transferring your list of rules between browsers or devices.
 
 When you add a website to the Allowlist (more on that [below](#allowlist)) or use the Assistant tool for hiding an element on the page, a corresponding rule is also saved in *User rules*.
-    
+
 ### Allowlist {#allowlist}
 
 The *allowlist* is used to exclude certain websites from filtering. Blocking rules are not applied to the websites on the list.
@@ -71,14 +71,14 @@ You can also import and export existing allowlists. It is useful, for instance, 
 
 ## Stealth Mode {#stealth-mode}
 
-*Stealth Mode* aims to ensure the protection of sensitive personal data from online trackers and fraudsters. 
+*Stealth Mode* aims to ensure the protection of sensitive personal data from online trackers and fraudsters.
 
 ![Stealth Mode](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_stealth_mode.png)
 
-In Stealth Mode, you can prevent a website from seeing the search queries from you used to find it on the Internet, automatically delete third-party and website’s own cookies, etc. A [separate article](/general/stealth-mode.md) is devoted to all these features.
+In Stealth Mode, you can prevent a website from seeing the search queries from you used to find it on the Internet, automatically delete third-party and website’s own cookies, etc. A [separate article](/general/stealth-mode) is devoted to all these features.
 
 > Note that some of the *Stealth Mode* options available in full-fledged apps are not present in the browser extensions due to technical restrictions.
-    
+
 ## Other features and options {#other}
 
 Apart from the large key modules of AdGuard Browser extension, there are several more specific features that can be configured in the *General* and *Additional settings* tabs of the extension settings.
@@ -115,14 +115,14 @@ The extension's main page can be accessed by clicking on the extension's icon on
 
 ![Main menu](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
 
-On the main page, you can hide any element on any page manually (a corresponding rule will be added to the *User rules*), open the *Filtering log* to view the complete information about your browser's traffic and block requests on the go, or look at a website’s security report. Besides, you can submit a complaint about any website (for example, if there are missed ads on the page, our filter engineers will review the report and fix the problem) and see the statistics on applied blocking rules. 
+On the main page, you can hide any element on any page manually (a corresponding rule will be added to the *User rules*), open the *Filtering log* to view the complete information about your browser's traffic and block requests on the go, or look at a website’s security report. Besides, you can submit a complaint about any website (for example, if there are missed ads on the page, our filter engineers will review the report and fix the problem) and see the statistics on applied blocking rules.
 
 All web requests made by the browser are displayed in the *Filtering log*, along with detailed information about each request. The *Filtering log* makes it easy, for example, to monitor requests blocked by AdGuard Browser extension. Besides, it allows you to block any request or add a previously blocked request to Allowlist in two clicks. The *Filtering log* also offers you a wide variety of options for sorting web requests, which can be helpful when creating your own filtering rules.
-You can open the *Filtering log* by selecting the corresponding item in the main menu, or from the settings page (in the "Additional settings" tab). 
+You can open the *Filtering log* by selecting the corresponding item in the main menu, or from the settings page (in the "Additional settings" tab).
 
-By clicking the icons in the top right corner of the extension's main menu, you can open the extension settings or pause the protection. 
+By clicking the icons in the top right corner of the extension's main menu, you can open the extension settings or pause the protection.
 
-## AdGuard Browser extension vs. standalone apps {#comparison}  
+## AdGuard Browser extension vs. standalone apps {#comparison}
 
 The main advantage of AdGuard standalone programs over browser extensions is that the programs can block ads in every browser and in almost all apps. You may use different browsers at the same time, the app will filter ads and online threats in all of them equally well.
 
