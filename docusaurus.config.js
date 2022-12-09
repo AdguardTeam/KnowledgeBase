@@ -59,7 +59,7 @@ module.exports = {
           position: 'right',
           dropdownItemsAfter: [
             {
-              to: 'https://adguardteam.github.io/KnowledgeBase/miscellaneous/contribute/translate/program',
+              to: '/miscellaneous/contribute/translate/program',
               label: 'Help Us Translate',
             },
           ],
