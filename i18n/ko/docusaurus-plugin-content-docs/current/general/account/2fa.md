@@ -1,5 +1,5 @@
 ---
-title: 이중 인증(2FA)
+title: 이중 인증(../2fa)
 sidebar_position: 3
 ---
 

@@ -110,7 +110,7 @@ sidebar_position: 5
 #### Trusted filters {#trusted-filters}
 
 Some rules can be used only in trusted filters. This category includes:
-> * filter lists [created by the AdGuard team](./adguard-filters),
+> * filter lists [created by the AdGuard team](../adguard-filters),
 > * custom filter lists installed as `trusted`,
 > * user rules.
 
@@ -2465,7 +2465,7 @@ example.org#@#.adBanner
 
 Для каждого фильтра AdGuard существуют две версии: полная и оптимизированная. Оптимизированная версия намного легче и не содержит правил, которые не используются вообще или используются редко.
 
-Частота использования правил определяется собранной [статистикой по рекламным фильтрам](./tracking-filter-statistics). Но оптимизация основана также на исходной конфигурации для каждого фильтра. Например, вот так это выглядит для Базового фильтра:
+Частота использования правил определяется собранной [статистикой по рекламным фильтрам](../tracking-filter-statistics). Но оптимизация основана также на исходной конфигурации для каждого фильтра. Например, вот так это выглядит для Базового фильтра:
 
 ```
 "filter": Базовый фильтр AdGuard,

@@ -17,7 +17,7 @@ This article is about the filters we create to use in AdGuard and other ad-block
     * **Mobile App Banners** blocks banners that promote mobile apps of websites. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_20_Annoyances_MobileApp/filter.txt)
     * **Widgets** blocks third-party widgets: online assistants, live support chats, etc. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_22_Annoyances_Widgets/filter.txt)
     * **Other Annoyances** blocks elements that do not fall under the popular categories of annoyances. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_21_Annoyances_Other/filter.txt)
-* **Filter unblocking search ads and self-promotions** unblocks ads that may be useful to users. Learn more about this filter on [this page](search-ads). [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_10_Useful/filter.txt)
+* **Filter unblocking search ads and self-promotions** unblocks ads that may be useful to users. Learn more about this filter on [this page](../search-ads). [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_10_Useful/filter.txt)
 * **Russian filter** removes ads from websites in Russian. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_1_Russian/filter.txt)
 * **German filter** removes ads from websites in German. Originally based on the [EasyList Germany](https://easylist.to/) filter and subsequently modified by us according to the complaints from users. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_6_German/filter.txt)
 * **French filter** removes ads from websites in French. Originally based on the [Liste FR](https://forums.lanik.us/viewforum.php?f=91) filter and subsequently modified by us according to the complaints from users. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_16_French/filter.txt)
@@ -32,7 +32,7 @@ This article is about the filters we create to use in AdGuard and other ad-block
 
 ## AdGuard Filters Policy
 
-Our filter policy defines what AdGuard filters should block and what they should not, as well as the rules for adding and removing rules from filters. Read the full text of [AdGuard filter policy](filter-policy) for detailed information.
+Our filter policy defines what AdGuard filters should block and what they should not, as well as the rules for adding and removing rules from filters. Read the full text of [AdGuard filter policy](../filter-policy) for detailed information.
 
 ## Contributing to AdGuard filters
 

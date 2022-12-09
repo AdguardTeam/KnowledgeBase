@@ -106,7 +106,7 @@ If a rule is subject to the list of limitations described below, then it won’t
 
 ## Filter unblocking search ads and self-promotion
 
-Unlike other filters, this one **unblocks** certain ads. Read more about it in the [article on search ads and self-promotion](search-ads).
+Unlike other filters, this one **unblocks** certain ads. Read more about it in the [article on search ads and self-promotion](../search-ads).
 
 **What will be unblocked with this filter?**
 

@@ -76,7 +76,7 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 4. Application configuration must be specified:
 * Filters you use;
 * Stealth mode settings, if this function is enabled. ![forma4](https://cdn.adguard.com/content/kb/ad_blocker/guides/forma4en.png)
-5. [Provide a screenshot](./take-screenshot) that captures the essence of a problem;
+5. [Provide a screenshot](../take-screenshot) that captures the essence of a problem;
 * **Important**: Hide your personal information (email, phone number, etc.) because screenshots will become publicly available. ![forma5](https://cdn.adguard.com/content/Kb/ad_blocker/guides/forma5en.png)
 6. Provide additional information that will help filter developers understand the situation; Also enter your account on **GitHub**, if available (it's necessary for developers to be able to reach you in case they need some additional details); ![forma6](https://cdn.adguard.com/content/Kb/ad_blocker/guides/forma6en.png)
 7. Check each step before sending the form; ![forma7](https://cdn.adguard.com/content/Kb/ad_blocker/guides/forma7en.png)

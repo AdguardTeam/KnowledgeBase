@@ -22,13 +22,13 @@ Different licenses can be used with a different number of devices:
 * Family: up to nine devices,
 * AdGuard Pro for iOS: one device.
 
-> To use your license on a device, log in to your [AdGuard account](/general/account/features) on it. To extend the device limit, you can [upgrade](activation#how-to-upgrade-a-license) your license.
+> To use your license on a device, log in to your [AdGuard account](/general/account/features) on it. To extend the device limit, you can [upgrade](../activation#how-to-upgrade-a-license) your license.
 
 ## What is a license key{#license-key}
 
 A license key is a unique sequence of characters that represents an AdGuard Ad Blocker license. It is automatically registered for the email you used for license purchase. With a license key, you can:
 * log in to your AdGuard account in some products (e.g. AdGuard for Windows),
-* [activate your license](activation) in a product, if you don't have an AdGuard account,
+* [activate your license](../activation) in a product, if you don't have an AdGuard account,
 * bind your license to your AdGuard account and unbind it.
 
 > When unbinding a license, be sure you write the license key down beforehand or note in some other (safe) way. You'll need the key for re-binding your license or transferring it to another account.

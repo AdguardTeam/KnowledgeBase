@@ -59,7 +59,7 @@ We would like to note that AdGuard was not tested in the above study. We ran est
 
 Here at AdGuard, we fully agree with those conclusions. Moreover, we would like to be as open with users as possible and talk about the problems we are currently experiencing and the steps we are taking to improve the quality and security of the filtering mechanism. The list of these problems is sorted by priority.
 
-Most of the problems discovered in the above study are related to certificate validation mechanisms. This is what we want to focus on first. We are working on a separate certificate validation library. Moreover, we want to make it open source. A [separate article](known-issues) lists all the known drawbacks of HTTPS filtering in AdGuard and our plans to fix them.
+Most of the problems discovered in the above study are related to certificate validation mechanisms. This is what we want to focus on first. We are working on a separate certificate validation library. Moreover, we want to make it open source. A [separate article](../known-issues) lists all the known drawbacks of HTTPS filtering in AdGuard and our plans to fix them.
 
 #### HTTPS filtering issues on Android 7+
 

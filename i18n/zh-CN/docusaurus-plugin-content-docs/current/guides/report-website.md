@@ -76,7 +76,7 @@ sidebar_position: 3
 4. 必须指定应用程序配置：
 * 您使用的过滤器；
 * 隐身模式设置（如果启用了此功能）。 ![形式4](https://cdn.adguard.com/content/kb/ad_blocker/guides/forma4en.png)
-5. [提供屏幕截图](./take-screenshot)捕获了问题的实质；
+5. [提供屏幕截图](../take-screenshot)捕获了问题的实质；
 * **重要**：隐藏您的个人信息（电子邮件，电话号码等），因为屏幕截图将公开显示。 ![形式5](https://cdn.adguard.com/content/Kb/ad_blocker/guides/forma5en.png)
 6. 提供其他信息，以帮助过滤器开发人员了解情况； 如已有 **GitHub** 账号，请您输入它（这是开发团队在需要更多信息的情况下联系您的重要方式）； ![形式6](https://cdn.adguard.com/content/Kb/ad_blocker/guides/forma6en.png)
 7. 在发送表格之前检查每一步； ![形式7](https://cdn.adguard.com/content/Kb/ad_blocker/guides/forma7en.png)
