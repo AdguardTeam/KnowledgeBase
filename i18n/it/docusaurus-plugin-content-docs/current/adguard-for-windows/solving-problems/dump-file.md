@@ -22,4 +22,4 @@ After you’ve created the dump file, please navigate to the file location. You 
 
 ![AdGuard processes](https://cdn.adguard.com/public/Adguard/kb/Windows_dump/processes_en.png)
 
-When you send the dump files to the support team, please also attach the AdGuard application logs so we have a better chance at solving the problem. [Here](/adguard-for-windows/solving-problems/adguard-logs.md) you can check the instructions on how to collect the log file.
+When you send the dump files to the support team, please also attach the AdGuard application logs so we have a better chance at solving the problem. [Here](/adguard-for-windows/solving-problems/adguard-logs) you can check the instructions on how to collect the log file.

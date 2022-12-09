@@ -17,7 +17,7 @@ sidebar_position: 2
     * **Mobile App Banners** blocks banners that promote mobile apps of websites. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_20_Annoyances_MobileApp/filter.txt)
     * **Widgets** blocks third-party widgets: online assistants, live support chats, etc. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_22_Annoyances_Widgets/filter.txt)
     * **Other Annoyances** blocks elements that do not fall under the popular categories of annoyances. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_21_Annoyances_Other/filter.txt)
-* **Filter unblocking search ads and self-promotions** unblocks ads that may be useful to users. Подробнее о фильтре можете узнать на [этой странице](search-ads.md). [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_10_Useful/filter.txt)
+* **Filter unblocking search ads and self-promotions** unblocks ads that may be useful to users. Подробнее о фильтре можете узнать на [этой странице](../search-ads). [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_10_Useful/filter.txt)
 * **Russian filter** removes ads from websites in Russian. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_1_Russian/filter.txt)
 * **German filter** removes ads from websites in German. Изначально основан на фильтре [EasyList Germany](https://easylist.to/) и доработан нами исходя из жалоб и сообщений пользователей. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_6_German/filter.txt)
 * **French filter** removes ads from websites in French. Изначально основан на фильтре [Liste FR ](https://forums.lanik.us/viewforum.php?f=91) и доработан нами исходя из жалоб и сообщений пользователей. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_16_French/filter.txt)
@@ -32,7 +32,7 @@ sidebar_position: 2
 
 ## Политика фильтров AdGuard
 
-Наша политика фильтрации определяет, что фильтры AdGuard должны блокировать, а что нет, а также регулирует порядок добавления и удаления правил из фильтров. Чтобы узнать больше, прочтите полный текст политики фильтров [AdGuard](filter-policy.md).
+Наша политика фильтрации определяет, что фильтры AdGuard должны блокировать, а что нет, а также регулирует порядок добавления и удаления правил из фильтров. Чтобы узнать больше, прочтите полный текст политики фильтров [AdGuard](../filter-policy).
 
 ## Участвовать в развитии фильтров AdGuard
 
@@ -46,7 +46,7 @@ sidebar_position: 2
 
 В нашем [репозитории фильтров на GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) вы найдёте большое количество открытых задач. Каждая из них относится к проблеме на каком-либо сайте — пропущенная реклама, ложное срабатывание и т. д. Выбирайте любую и предлагайте в комментариях новые правила для фильтров. Инженеры фильтров AdGuard рассмотрят ваше предложение и добавят правило в фильтры, если оно окажется корректным.
 
-Здесь вы можете найти [официальную документацию](/general/ad-filtering/create-own-filters.md) по синтаксису правил фильтрации AdGuard. Вам потребуется ознакомиться с ней перед тем, как вы сможете создавать собственные правила фильтрации.
+Здесь вы можете найти [официальную документацию](/general/ad-filtering/create-own-filters) по синтаксису правил фильтрации AdGuard. Вам потребуется ознакомиться с ней перед тем, как вы сможете создавать собственные правила фильтрации.
 
 ### Другие способы помочь
 

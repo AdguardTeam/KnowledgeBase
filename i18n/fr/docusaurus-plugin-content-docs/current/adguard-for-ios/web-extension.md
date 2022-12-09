@@ -11,7 +11,7 @@ AdGuard's Safari Web extension is a tool that takes advantage of the new feature
 
 ## What it does
 
-By default, Safari provides only basic tools to content blockers. These tools don't allow the level of performance that can be found in content blockers on other operating systems (Windows, Mac, Android). For example, AdGuard apps on other platforms can use such effective weapons against ads as [CSS rules](/general/ad-filtering/create-own-filters.md#cosmetic-css-rules), [CSS selectors](/general/ad-filtering/create-own-filters.md#extended-css-selectors), and [scriptlets](/general/ad-filtering/create-own-filters.md#scriptlets). Unfortunately, these instruments are absolutely irreplaceable when dealing with more complex cases such as pre-roll ads on YouTube, for example.
+By default, Safari provides only basic tools to content blockers. These tools don't allow the level of performance that can be found in content blockers on other operating systems (Windows, Mac, Android). For example, AdGuard apps on other platforms can use such effective weapons against ads as [CSS rules](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [CSS selectors](/general/ad-filtering/create-own-filters#extended-css-selectors), and [scriptlets](/general/ad-filtering/create-own-filters#scriptlets). Unfortunately, these instruments are absolutely irreplaceable when dealing with more complex cases such as pre-roll ads on YouTube, for example.
 
 AdGuard's Safari Web extension compliments AdGuard by giving it the ability to employ these types of filtering rules.
 
@@ -34,7 +34,7 @@ You will see the following list of options:
 
 > AdGuard's Safari Web extension greatly improves the ad blocking quality, so we recommend enabling it on all sites.
 
-Web extension is not a standalone tool and requires AdGuard for iOS. If you don't have AdGuard for iOS installed on your device, please [install it first](/adguard-for-ios/installation.md) and complete the onboarding process to prepare it for work.
+Web extension is not a standalone tool and requires AdGuard for iOS. If you don't have AdGuard for iOS installed on your device, please [install it first](/adguard-for-ios/installation) and complete the onboarding process to prepare it for work.
 
 Once done, open *Settings > Safari > Extensions*.
 

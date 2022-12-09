@@ -18,7 +18,7 @@ The first tab is the General screen where you can set up basic things like notif
 A filter is a list of rules written in a special syntax. Following these rules, content blockers can filter web traffic: block ads or requests to malicious websites.
 
 Filters are combined into eight thematic categories: *Ad Blocking, Privacy, Social widgets, Annoyances, Security, Language-specific filters, Custom, and Other filters*.
-> Read more about [AdGuard filters](/general/ad-filtering/adguard-filters.md) or [ad filtering in general](/general/ad-filtering/how-ad-blocking-works.md).
+> Read more about [AdGuard filters](/general/ad-filtering/adguard-filters) or [ad filtering in general](/general/ad-filtering/how-ad-blocking-works).
 
 In the Filters tab, you can enable the whole category or separate filters. Changes in the Filters tab are reflected in the Content Blockers section (located in the General tab).
 
@@ -60,7 +60,7 @@ This content blocker unites several security-related filters. *Malware Domains B
 
 *AdGuard Other* contains filters with various functions. For example, it has a filter that unblocks search ads and self-promo ads. In some cases, it helps find exactly what you are looking for, because these kinds of ads are more relevant and less intrusive than others.
 
-> Disclaimer: we don’t have any ‘acceptable ads’ paid by advertisers. Instead, we provide users with an option to see [search ads and websites' self-promotion](/general/ad-filtering/search-ads.md).
+> Disclaimer: we don’t have any ‘acceptable ads’ paid by advertisers. Instead, we provide users with an option to see [search ads and websites' self-promotion](/general/ad-filtering/search-ads).
 
 ### AdGuard Custom {#adguard_custom}
 
@@ -70,7 +70,7 @@ If you need more filters, you can add them to *AdGuard Custom*. To add a custom 
 
 ## User rules {#userrules}
 
-User rules can be used to customize ad blocking. They can be added manually, imported, or created automatically when you block an element on the page. To add your own filering rules, use a [special syntax](/general/ad-filtering/create-own-filters.md).
+User rules can be used to customize ad blocking. They can be added manually, imported, or created automatically when you block an element on the page. To add your own filering rules, use a [special syntax](/general/ad-filtering/create-own-filters).
 
 ## 关于 {#about}
 
@@ -78,4 +78,4 @@ User rules can be used to customize ad blocking. They can be added manually, imp
 
 In the About tab, you can see info about the current version of your product and links to legal documents. There is also a link to our repository on GitHub. You can monitor the product development, create feature requests and report bugs there.
 
-> Reminder: AdGuard for Safari can be downloaded for free [from the App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259). A detailed setup instruction is available in the [Knowledge base](/adguard-for-safari/installation.md).
+> Reminder: AdGuard for Safari can be downloaded for free [from the App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259). A detailed setup instruction is available in the [Knowledge base](/adguard-for-safari/installation).

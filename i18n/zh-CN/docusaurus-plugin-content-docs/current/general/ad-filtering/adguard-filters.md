@@ -17,7 +17,7 @@ sidebar_position: 2
     * **Mobile App Banners** blocks banners that promote mobile apps of websites. [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_20_Annoyances_MobileApp/filter.txt)
     * **Widgets** blocks third-party widgets: online assistants, live support chats, etc. [View rules](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_22_Annoyances_Widgets/filter.txt)
     * **Other Annoyances** blocks elements that do not fall under the popular categories of annoyances. [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_21_Annoyances_Other/filter.txt)
-* **Filter unblocking search ads and self-promotions** unblocks ads that may be useful to users. 在[此页](search-ads.md)上了解更多关于此过滤器的信息。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_10_Useful/filter.txt)
+* **Filter unblocking search ads and self-promotions** unblocks ads that may be useful to users. 在[此页](../search-ads)上了解更多关于此过滤器的信息。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_10_Useful/filter.txt)
 * **Russian filter** removes ads from websites in Russian. [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_1_Russian/filter.txt)
 * **German filter** removes ads from websites in German. 最初是基于 [EasyList Germany](https://easylist.to/) 过滤器，随后我们根据用户的反馈进行修改。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_6_German/filter.txt)
 * **French filter** removes ads from websites in French. 最初是基于 [Liste FR](https://forums.lanik.us/viewforum.php?f=91) 过滤器，随后我们根据用户的反馈进行修改。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_16_French/filter.txt)
@@ -32,7 +32,7 @@ sidebar_position: 2
 
 ## AdGuard 过滤器政策
 
-我们的过滤器政策定义在过滤器中添加和删除的规则，以及 AdGuard 过滤器应该拦截和不应该拦截的内容的规则。 阅读全文 [AdGuard 过滤政策](filter-policy.md)了解详细信息。
+我们的过滤器政策定义在过滤器中添加和删除的规则，以及 AdGuard 过滤器应该拦截和不应该拦截的内容的规则。 阅读全文 [AdGuard 过滤政策](../filter-policy)了解详细信息。
 
 ## 为 AdGuard 过滤器做贡献
 
@@ -46,7 +46,7 @@ sidebar_position: 2
 
 您会在 [GitHub 过滤器仓库](https://github.com/AdguardTeam/AdguardFilters/issues)中发现大量未解决的问题。 每个问题都涉及到某个网站的问题 — 遗漏的广告、误报等。 请选择其中一个问题并在评论中提供您自己的规则。 AdGuard 过滤器工程师将审查您的建议，如果证明是正确的，您的规则将被添加到 AdGuard 过滤器中。
 
-这里是 AdGuard 过滤规则语法的[官方文档](/general/ad-filtering/create-own-filters.md)。 在您创建自己的过滤规则之前，请您阅读它。
+这里是 AdGuard 过滤规则语法的[官方文档](/general/ad-filtering/create-own-filters)。 在您创建自己的过滤规则之前，请您阅读它。
 
 ### 其他贡献方式
 

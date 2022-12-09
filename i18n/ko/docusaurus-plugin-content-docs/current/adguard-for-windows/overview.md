@@ -19,28 +19,28 @@ Once you start AdGuard for Windows, you will see the main screen of the app. Its
 
 ### General settings
 
-Here you can set the language and theme (Dark or Light), enable AdGuard launching at system start-up and silent automatic updates, choose the update channel and filter update check interval. Also Settings is the place to go if AdGuard for Windows is not working properly and the support team asked you to [collect *Debug logs*](/adguard-for-windows/solving-problems/adguard-logs.md).
+Here you can set the language and theme (Dark or Light), enable AdGuard launching at system start-up and silent automatic updates, choose the update channel and filter update check interval. Also Settings is the place to go if AdGuard for Windows is not working properly and the support team asked you to [collect *Debug logs*](/adguard-for-windows/solving-problems/adguard-logs).
 
 ![Advanced Settings](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/advanced-settings.png)
 
-At the very bottom of the screen you will find *Advanced Settings*. Changing some of them mindlessly may potentially cause problems with AdGuard's performance, break the Internet connection or compromise your security and privacy. That's why we suggest you open this section only if you are sure of what you are doing or our support team has asked you about it. If you want to understend what can be set up in *Advanced Setting* read the [dedicated article](/adguard-for-windows/solving-problems/low-level-settings.md).
+At the very bottom of the screen you will find *Advanced Settings*. Changing some of them mindlessly may potentially cause problems with AdGuard's performance, break the Internet connection or compromise your security and privacy. That's why we suggest you open this section only if you are sure of what you are doing or our support team has asked you about it. If you want to understend what can be set up in *Advanced Setting* read the [dedicated article](/adguard-for-windows/solving-problems/low-level-settings).
 
 ### Ad Blocker
 
-This is the main module of AdGuard for Windows that removes ads from the websites you visit and from the apps installed on your device. To filter out advertising and privacy-threatening content such as banners, pop-ups, or trackers AdGuard uses different filters: groups of rules with a similar purpose written with a special syntax. To understand what filters are and how they work read [this article](/general/ad-filtering/how-ad-blocking-works.md).
+This is the main module of AdGuard for Windows that removes ads from the websites you visit and from the apps installed on your device. To filter out advertising and privacy-threatening content such as banners, pop-ups, or trackers AdGuard uses different filters: groups of rules with a similar purpose written with a special syntax. To understand what filters are and how they work read [this article](/general/ad-filtering/how-ad-blocking-works).
 
 ![Ad Blocker](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/ad-blocker.png)
 
 In the Ad Blocker module you can:
 * enable automatic activation of language-specific filters
-* disable [search ads and self-promotion](/general/ad-filtering/search-ads.md) blocking
+* disable [search ads and self-promotion](/general/ad-filtering/search-ads) blocking
 * activate pre-installed filters such as *AdGuard Base filter*,
 * install filters from the list or add a custom filter by clicking the *Add a filter* button,
 * make changes to existing rule groups using the *Filter editor* button,
 * see all the requests sent by browsers and apps installed on your computer by clicking the *Filtering log* button. From there you can also block or unblock any request by creating a custom rule,
 * compose a filter from your own rules written manually, imported or created with the AdGuard Assistant extension.
 
-Before you start manually writing your own rules read our detailed [syntax guide](/general/ad-filtering/create-own-filters.md).
+Before you start manually writing your own rules read our detailed [syntax guide](/general/ad-filtering/create-own-filters).
 
 ### Stealth Mode
 
@@ -63,7 +63,7 @@ In this module you can
 
 ![Browsing Security](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/browsing-security.png)
 
-In case you want to learn more about Browsing Security, read [this article](/general/browsing-security.md).
+In case you want to learn more about Browsing Security, read [this article](/general/browsing-security).
 
 ### DNS Protection
 
@@ -87,11 +87,11 @@ In the Parental Control module you can enable the *Safe search* and manage the *
 
 ![Browser Assistant](https://cdn.adguard.com/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 
-From this tab you can easily proceed to install AdGuard Browser Assistant, which primary function is to manage filtering directly from the browser. We explained more about how to work with it and what to do if there is no Browser Assistant for your browser in the [separate article](browser-assistant.md).
+From this tab you can easily proceed to install AdGuard Browser Assistant, which primary function is to manage filtering directly from the browser. We explained more about how to work with it and what to do if there is no Browser Assistant for your browser in the [separate article](../browser-assistant).
 
 ## Extensions
 
-AdGuard can significantly broaden website functionality working as a [user script manager](/general/userscripts.md). AdGuard Users can add their own scripts, as well as manage existing ones.
+AdGuard can significantly broaden website functionality working as a [user script manager](/general/userscripts). AdGuard Users can add their own scripts, as well as manage existing ones.
 
 ![Extensions](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/userscripts.png)
 
@@ -105,7 +105,7 @@ The following extensions are installed with AdGuard:
 
 **AdGuard Assistant**
 
-AdGuard Assistant is Legacy Assistant that you may use if the [new Assistant](/adguard-for-windows/browser-assistant.md) is not available for your browser. The name of this extension is quite deliberate: it actually assists the user in changing basic AdGuard settings right in the browser, without the need to open the app itself. AdGuard Assistant works with all Microsoft Windows compatible browsers. In addition, the AdGuard Assistant icon will not be displayed on websites listed as exceptions by the user and on certain web pages where there is a risk of incorrect content display.
+AdGuard Assistant is Legacy Assistant that you may use if the [new Assistant](/adguard-for-windows/browser-assistant) is not available for your browser. The name of this extension is quite deliberate: it actually assists the user in changing basic AdGuard settings right in the browser, without the need to open the app itself. AdGuard Assistant works with all Microsoft Windows compatible browsers. In addition, the AdGuard Assistant icon will not be displayed on websites listed as exceptions by the user and on certain web pages where there is a risk of incorrect content display.
 
 **AdGuard Extra**
 
