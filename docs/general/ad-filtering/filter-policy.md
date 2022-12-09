@@ -28,7 +28,7 @@ This part describes the AdGuard Base filter, the Mobile Ads filter, and the foll
 
 **What shall these filters block?**
 
-- These filters will block ads wherever possible. 
+- These filters will block ads wherever possible.
 - Ads should be blocked regardless of their reasons and goals.
 - We will block ads caused by malicious apps or extensions that inject ads. Please note that we do it only on the condition that you specify how to install such an app or extension.
 
@@ -106,7 +106,7 @@ If a rule is subject to the list of limitations described below, then it won’t
 
 ## Filter unblocking search ads and self-promotion
 
-Unlike other filters, this one **unblocks** certain ads. Read more about it in the [article on search ads and self-promotion](search-ads).  
+Unlike other filters, this one **unblocks** certain ads. Read more about it in the [article on search ads and self-promotion](../search-ads).
 
 **What will be unblocked with this filter?**
 

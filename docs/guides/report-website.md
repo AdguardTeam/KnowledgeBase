@@ -10,8 +10,8 @@ When using ad blockers, you may face incorrect work of certain websites or broke
 * Modified algorithms of adding ads;
 * Added filters/extensions from third-party developers;
 * The authors of one of the filters made a mistake when creating the rule;
-* Advertising reinsertion. Find more about this method in our [blog](https://adguard.com/ru/blog/ad-reinsertion.html). 
- 
+* Advertising reinsertion. Find more about this method in our [blog](https://adguard.com/ru/blog/ad-reinsertion.html).
+
 You can help us by filling in an application form with examples of ads you faced with. To do it, please, use instructions for your OS.
 
 ## Report a website {#report}
@@ -80,7 +80,7 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 * Filters you use;
 * Stealth mode settings, if this function is enabled.
 ![forma4](https://cdn.adguard.com/content/kb/ad_blocker/guides/forma4en.png)
-5. [Provide a screenshot](./take-screenshot) that captures the essence of a problem;
+5. [Provide a screenshot](../take-screenshot) that captures the essence of a problem;
 * **Important**: Hide your personal information (email, phone number, etc.) because screenshots will become publicly available.
 ![forma5](https://cdn.adguard.com/content/Kb/ad_blocker/guides/forma5en.png)
 6. Provide additional information that will help filter developers understand the situation;
@@ -102,7 +102,7 @@ For example, you are faced with a situation that your favorite website won’t o
 1. Disable **Ad Blocker**;
 2. If it solved the problem, re-enable the module and disable filters one by one. This is done to identify filters that "break" the page;
 3. If you have managed to find out which filter "breaks" a page, you should inform the developers when filling out the form (see above). In this case, it is desirable to return to the initial settings;
-4. If turning off all the filters hasn't produced any results, apply rule 
+4. If turning off all the filters hasn't produced any results, apply rule
 **@@||example.com^$document,extension**;
 where **example.com** is an example site name that needs to be replaced by your own option;
 5. In case of failure (issue not solved), turn to section **Stealth Mode**.
@@ -120,7 +120,7 @@ where **example.com** is an example site name that needs to be replaced by your 
 2. If this solved the problem, turn on the module and turn off **Extensions** settings one by one. This is done to find out which setting "breaks" the page;
 3. If you have managed to detect which setting "breaks" a page, inform the developers when filling out the form (see above). In this case, it is desirable to return to the initial settings.
 
-### **Third-party blockers** 
+### **Third-party blockers**
 Some browsers and antivirus programs (such as Yandex Browser, Kaspersky, etc.) have built-in ad blockers. They may affect and cause problems in the operation of sites.
 If you use such programs, make sure that the problem is on the side of **AdGuard**: disable **AdGuard** filtering and try to repeat the problem. If it remains, it means that the problem is caused by another application or browser.
 If the problem is caused by **AdGuard**, follow the steps described in the previous paragraphs.
