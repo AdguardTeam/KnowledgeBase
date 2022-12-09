@@ -15,4 +15,4 @@ sidebar_position: 4
 
 ![Файлы журнала установки AdGuard](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/install-logs-2.png)
 
-3. Отправьте этот архив в [техподдержку](/support/contact.md) AdGuard.
+3. Отправьте этот архив в [техподдержку](/support/contact) AdGuard.

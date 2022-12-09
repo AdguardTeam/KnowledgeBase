@@ -27,7 +27,7 @@ AdGuard users [have access to a special web reporting tool](https://reports.adgu
 
 Filters can do more than just block ads. There are filters that block tracking, social media widgets, and annoyances such as cookie notices. Different users may choose different combinations of filters to match their personal preferences. There are websites like [filterlists.com](https://filterlists.com/) that are dedicated to filter lists and have huge databases.
 
-> We develop and maintain [our own set of filter lists](adguard-filters.md) that can be used with AdGuard or other ad blockers.
+> We develop and maintain [our own set of filter lists](adguard-filters) that can be used with AdGuard or other ad blockers.
 
 ## Types of filtering rules
 
@@ -51,4 +51,4 @@ In most cases, it's enough to use the above-mentioned basic and cosmetic rules t
 
 These rules are quite complicated and require the ad blocker to be granted certain access rights, so not all platforms support them. Currently, these rules work only in the AdGuard Firefox add-on and in the AdGuard apps for Windows, Mac, and Android.
 
-> There are other types of filtering rules, but they require more advanced technical knowledge to understand how they work. If you are interested, [check out our comprehensive guide on filtering rules in the linked article](create-own-filters.md).
+> There are other types of filtering rules, but they require more advanced technical knowledge to understand how they work. If you are interested, [check out our comprehensive guide on filtering rules in the linked article](create-own-filters).

@@ -7,7 +7,7 @@ Userscripts (we also call them "extensions") are, de-facto, mini-programs writte
 
 ### Supported apps
 
-AdGuard can significantly broaden website functionality by acting as a userscript manager. You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](/adguard-for-windows/overview.md), [AdGuard for Android](/adguard-for-android/overview.md) and [AdGuard for Mac](/adguard-for-mac/overview.md).
+AdGuard can significantly broaden website functionality by acting as a userscript manager. You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](/adguard-for-windows/overview), [AdGuard for Android](/adguard-for-android/overview) and [AdGuard for Mac](/adguard-for-mac/overview).
 
 ### Recommended AdGuard scripts
 

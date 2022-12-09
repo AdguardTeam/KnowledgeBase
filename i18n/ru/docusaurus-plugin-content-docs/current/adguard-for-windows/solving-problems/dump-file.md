@@ -22,4 +22,4 @@ sidebar_position: 8
 
 ![Процессы AdGuard](https://cdn.adguard.com/public/Adguard/kb/Windows_dump/processes_en.png)
 
-Когда вы отправляете файлы дампа в службу поддержки, пожалуйста, отправьте их вместе с логами, чтобы мы могли решить проблему как можно быстрее. [Здесь](/adguard-for-windows/solving-problems/adguard-logs.md) вы можете ознакомиться с инструкцией по сбору логов AdGuard.
+Когда вы отправляете файлы дампа в службу поддержки, пожалуйста, отправьте их вместе с логами, чтобы мы могли решить проблему как можно быстрее. [Здесь](/adguard-for-windows/solving-problems/adguard-logs) вы можете ознакомиться с инструкцией по сбору логов AdGuard.
