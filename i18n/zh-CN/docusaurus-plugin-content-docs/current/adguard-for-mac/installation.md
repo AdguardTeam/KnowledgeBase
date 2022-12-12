@@ -62,7 +62,7 @@ AdGuard 图标将出现在您的桌面上。 单击它打开安装应用程序�
 
 ### 进阶卸载方式
 
-**Use this instruction only if you know what you are doing or if our support service specifically recommended you the 'advanced uninstall'. Also, do all the steps from the 'regular uninstall first'.**
+**Use this instruction only if you know what you are doing or if our support service specifically recommended you the 'advanced uninstall'. Also, do all the steps from the "regular uninstall" first.**
 
 * After that, delete following AdGuard files:
     * /Library/Application Support/AdGuard Software/com.adguard.mac.adguard（文件夹）

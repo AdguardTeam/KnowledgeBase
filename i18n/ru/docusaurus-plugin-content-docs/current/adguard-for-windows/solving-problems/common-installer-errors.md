@@ -32,7 +32,7 @@ sidebar_position: 6
 
 - Запустите и пройдите перерегистрацию службы установщика Microsoft. На это потребуется некоторое время.
 
-    1) Press **Win + R** and enter ***services.msc***. 2) Найдите его в списке и дважды щёлкните на **Установщик Windows**. 3) Нажмите кнопку **Запустить** под **Статусом сервиса** и нажмите **OK**. Если статус службы **Запущен**, сначала нажмите **Остановить**, а затем **Запустить**. 4) Press  **Win + R**, type and enter ***msiexec /unregister*** and hit **Enter**. 5) Press  **Win + R** again, type and enter ***msiexec /regserver*** and hit **Enter**
+    1) Press **Win + R** and enter ***services.msc***. 2) Найдите его в списке и дважды щёлкните на **Установщик Windows**. 3) Нажмите кнопку **Запустить** под **Статусом сервиса** и нажмите **OK**. Если статус службы **Запущен**, сначала нажмите **Остановить**, а затем **Запустить**. 4) Press **Win + R**, type and enter ***msiexec /unregister*** and hit **Enter**. 5) Press **Win + R** again, type and enter ***msiexec /regserver*** and hit **Enter**
 
 - Перезагрузите компьютер и запустите установщик заново. Иногда этого достаточно, чтобы устранить проблему.
 

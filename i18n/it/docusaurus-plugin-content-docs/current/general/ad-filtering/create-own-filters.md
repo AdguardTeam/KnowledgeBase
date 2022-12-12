@@ -654,7 +654,7 @@ Disables generic basic rules on pages that correspond to exception rule.
 * [`$jsonprune`](#jsonprune-modifier)
 * [`noop`](#noop-modifier)
 * [`$empty` (deprecated)](#empty-modifier)
-* [`$mp4` (deprecated)`](#mp4-modifier)
+* [`$mp4` (deprecated)(#mp4-modifier)
 
 These modifiers are able to completely change the behaviour of basic rules.
 
@@ -2270,7 +2270,7 @@ $path ["=" pattern]
 * `[$path=/page*.html]example.com##.textad` hides a `div` with a class `textad` at `/page1.html` or `/page2.html` or any other path matching `/page<...>.html` of `example.com`
 * `[$path]example.com##.textad` hides a `div` with a class `textad` at the main page of `example.com`
 * `[$domain=example.com,path=/page.html]##.textad` hides a `div` with a class `textad` at `page.html` of `example.com` and all subdomains but not at `another_page.html`
-* `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` hides a `div` with a class `textad` at both `/sub1/page.html` and `/sub2/page.html` of any domain (please note the [escaped special characters](#non-basic-rules-modifiers-syntax)
+* `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` hides a `div` with a class `textad` at both `/sub1/page.html` and `/sub2/page.html` of any domain (please note the [escaped special characters](#non-basic-rules-modifiers-syntax))
 
 > **Compatibility with different versions of AdGuard**
 >
@@ -2597,7 +2597,7 @@ C.onload=function(){alert('ExtCss loaded successfully')},s.parentNode.insertBefo
 (document,'script','https://AdguardTeam.github.io/ExtendedCss/extended-css.min.js')
 ```
 
-Alternatively, install an ["ExtendedCssDebugger" userscript](https://github.com/AdguardTeam/Userscripts/blob/master/extendedCssDebugger/extended-css.debugger.user.js).
+Alternatively, install the [ExtendedCssDebugger userscript](https://github.com/AdguardTeam/Userscripts/blob/master/extendedCssDebugger/extended-css.debugger.user.js).
 
 You can now use the `ExtendedCss` constructor in the global scope, and its method `ExtendedCss.query` as `document.querySelectorAll`.
 ```

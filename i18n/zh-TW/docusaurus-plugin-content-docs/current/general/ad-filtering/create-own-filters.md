@@ -654,7 +654,7 @@ Disables generic basic rules on pages that correspond to exception rule.
 * [`$jsonprune`](#jsonprune-modifier)
 * [`noop`](#noop-modifier)
 * [`$empty` (deprecated)](#empty-modifier)
-* [`$mp4` (deprecated)`](#mp4-modifier)
+* [`$mp4` (deprecated)](#mp4-modifier)
 
 These modifiers are able to completely change the behaviour of basic rules.
 
@@ -2597,7 +2597,7 @@ C.onload=function(){alert('ExtCss loaded successfully')},s.parentNode.insertBefo
 (document,'script','https://AdguardTeam.github.io/ExtendedCss/extended-css.min.js')
 ```
 
-Alternatively, install an ["ExtendedCssDebugger" userscript](https://github.com/AdguardTeam/Userscripts/blob/master/extendedCssDebugger/extended-css.debugger.user.js).
+Alternatively, install the [ExtendedCssDebugger userscript](https://github.com/AdguardTeam/Userscripts/blob/master/extendedCssDebugger/extended-css.debugger.user.js).
 
 You can now use the `ExtendedCss` constructor in the global scope, and its method `ExtendedCss.query` as `document.querySelectorAll`.
 ```

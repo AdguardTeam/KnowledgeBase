@@ -74,7 +74,7 @@ Send this log to us by contacting support or by any other way.
 
 3. Reproduce the issue.
 
-4. Open CatLog press **Stop record** in the menu.
+4. Open CatLog and press **Stop record** in the menu.
 
 5. Send this log to our support team.
 

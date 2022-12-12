@@ -119,7 +119,7 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 5. Transfer the downloaded **cert.cer** file to the device which traffic you want to route through AdGuard.
 
-6. Locate the downloaded crtificate in *Files*. A popup should show up, telling you about a downloaded profile.
+6. Locate the downloaded certificate in *Files*. A popup should show up, telling you about a downloaded profile.
 
 7. Open **Settings** > **Profile Donwloaded** and tap **Install** in the top right corner. Введите пароль и подтвердите установку. Нажмите **Готово**.
 
