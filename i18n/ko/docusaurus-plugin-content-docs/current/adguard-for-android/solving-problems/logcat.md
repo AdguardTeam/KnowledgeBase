@@ -33,7 +33,7 @@ sidebar_position: 4
 
 **1단계: 기기 준비**
 
-1. Switch device to the developer mode. **설정**>** 정보**로 이동하고 **빌드 번호** 줄을 7번 클릭합니다.
+1. 기기를 개발자 모드로 전환하기 위해 **설정**>** 정보**로 이동하고 **빌드 번호** 줄을 7번 클릭합니다.
 
 2. **개발자 옵션**으로 이동합니다.
 
@@ -71,7 +71,7 @@ sidebar_position: 4
 
 3. 문제를 재현합니다.
 
-4. CatLog를 열고 메뉴에서 **기록 중지**를 누릅니다.
+4. Open CatLog and press **Stop record** in the menu.
 
 5. Send this log to our support team.
 > 참고: 메시지에 헬프 데스크 티켓 번호 또는 GitHub 문제 번호를 첨부하면 지원팀이 티켓을 더 빠르게 처리할 수 있습니다.

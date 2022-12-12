@@ -15,7 +15,7 @@ sidebar_position: 2
 
 知识库网站是用 Docusaurus 2 建立的，这是一个现代静态网站生成器。 在提出修改或补充建议时，要考虑到所有文件必须符合平台的规则。 用户可以在 [ Docusaurus 指南](https://docusaurus.io/docs/category/guides)了解它们。
 
-您可以把这个知识库部署在您的电脑上，以概述您建议的变化。 有关执行此操作的详细说明，可以在此知识库的 GitHub 页面上的 [README 文件](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/main/README)中找到。
+您可以把这个知识库部署在您的电脑上，以概述您建议的变化。 Detailed instructions on how to do this can be found [in the README file](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/main/README) on this Knowledge base's GitHub page.
 
 ## 翻译文章 {#translate-adguard}
 

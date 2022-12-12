@@ -15,4 +15,4 @@ AdGuard 설치 중 문제가 발생하면 지원 팀에서 AdGuard 설치 로그
 
 ![AdGuard 설치 로그 파일](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/install-logs-2.png)
 
-3. 이 ZIP 파일을 AdGuard [지원 서비스](/support/contact)에 보내 주십시오.
+3. Send this archive to AdGuard [tech support](/support/contact).

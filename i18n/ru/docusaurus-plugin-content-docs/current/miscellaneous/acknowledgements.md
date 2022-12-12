@@ -107,7 +107,7 @@ sidebar_position: 2
 * Chromium: [https://github.com/chromium/chromium/blob/master/LICENSE](https://github.com/chromium/chromium/blob/master/LICENSE)
 * Detours: [https://github.com/microsoft/Detours/blob/master/LICENSE](https://github.com/microsoft/Detours/blob/master/LICENSE)
 * eDistantObject: [https://github.com/google/eDistantObject/blob/master/LICENSE](https://github.com/google/eDistantObject/blob/master/LICENSE)
-* FF/FFOS libs by Simon Zolin: [https://github.com/stsaz/ff/blob/master/README](https://github.com/stsaz/ff/blob/master/README)
+* FF/FFOS libs Симона Золина: [https://github.com/stsaz/ff/blob/master/README](https://github.com/stsaz/ff/blob/master/README)
 * Google test: [https://github.com/google/googletest/blob/master/LICENSE](https://github.com/google/googletest/blob/master/LICENSE)
 * http-parser: [https://github.com/nodejs/http-parser/blob/master/LICENSE-MIT](https://github.com/nodejs/http-parser/blob/master/LICENSE-MIT)
 * jsmn: [https://github.com/zserge/jsmn/blob/master/LICENSE](https://github.com/zserge/jsmn/blob/master/LICENSE)

@@ -31,7 +31,7 @@ sidebar_position: 2
 
 ![QR 코드](https://cdn.adguard.com/content/kb/ad_blocker/android/installation/qr.png)
 
-파일을 저장하라는 요청이 표시될 것입니다. Press **OK**.
+파일을 저장하라는 요청이 표시될 것입니다. **확인**을 누릅니다.
 
 ![파일 저장](https://cdn.adguard.com/content/kb/ad_blocker/android/installation/save_the_file.png)
 

@@ -11,57 +11,59 @@ HTTP traffic will be filtered in any case, but for AdGuard to be able to filter 
 
 ## How to download and install the certificate
 
-Depending on the operation system of your device (Windows/Mac/Android/iOS), follow one of this instructions:
+Depending on the operation system of your device (Windows/Mac/Android/iOS), follow one of these instructions:
 
 ### Windows {#windows}
 
-1. Activate AdGuard on your computer with installed AdGuard and check the box **Use AdGuard as an HTTP proxy** in the **Network** settings of the desktop app.
+1. Note the IP address of your desktop computer with installed AdGuard.
 
-2. On the same device with AdGuard follow this link using any browser: [http://local.adguard.org/cert](http://local.adguard.org/cert)
+2. Make sure AdGuard’s protection is enabled. Then check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings.
 
-3. Click the **Download** button.
+3. On the same device with AdGuard follow this link using any browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
-4. Transfer the downloaded **cert.cer** file to the device which traffic you want to route through AdGuard.
+4. Click the **Download** button.
 
-5. On that device, press the **Win** button, type `Manage computer certificates` and press **Enter**.
+5. Transfer the downloaded **cert.cer** file to the device which traffic you want to route through AdGuard.
 
-6. On the *Certificates - Local Computer* page, find the *Trusted Root Certification* > *Certificates* folder.
+6. On that device, press the **Win** button, type `Manage computer certificates` and press **Enter**.
 
-7. Right-click the *Certificates* folder and click **All Tasks** > **Import**.
+7. On the *Certificates - Local Computer* page, find the *Trusted Root Certification* → *Certificates* folder.
 
-8. On the *Certificate Import Wizard* page, click Next.
+8. Right-click the *Certificates* folder and click **All Tasks** → **Import**.
 
-9. Click **Browse** to import the certificate.
+9. On the *Certificate Import Wizard* page, click **Next**.
 
-10. Navigate to the **cert.cer** certificate file, select it, then click **Open**.
+10. Click **Browse** to import the certificate.
 
-11. Click **Next**.
+11. Navigate to the **cert.cer** certificate file, select it, then click **Open**.
 
-12. Select the **Place all certificates in the following store** check box.
+12. Click **Next**.
 
-13. Ensure that the *Certificate store* field displays *Trusted Root Certification Authorities* and click **Next**.
+13. Select the **Place all certificates in the following store** checkbox.
 
-14. Click **Finish**.
+14. Ensure that the *Certificate store* field displays *Trusted Root Certification Authorities* and click **Next**.
 
-15. Press the **Win** key, then open **Settings**.
+15. Click **Finish**.
 
-16. Select **Network & Internet** > **Proxy**.
+16. Press the **Win** key, then open **Settings**.
 
-17. Toggle *Automatically detect settings* off.
+17. Select **Network & Internet** → **Proxy**.
 
-18. Click **Set up** in the *Use a proxy server* tab.
+18. Toggle *Automatically detect settings* off.
 
-19. Turn the toggle on. For **Proxy IP address**, enter the noted IP-address of your desktop computer (step 1). For **Port**, enter the port chosen in desktop AdGuard's network settings.
+19. Click **Set up** in the *Use a proxy server* tab.
 
-20. Click **Save**.
+20. Turn the toggle on. For **Proxy IP address**, enter the noted IP address of your desktop computer (step 1). For **Port**, enter the port chosen in the network settings of the desktop AdGuard app.
+
+21. Click **Save**.
 
 ### Mac {#mac}
 
 1. Note the IP address of your desktop computer with installed AdGuard.
 
-2. Activate AdGuard on your computer and check the box **Use AdGuard as an HTTP proxy** in the **Network** settings of the desktop app.
+2. Make sure AdGuard’s protection is enabled. Then check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings.
 
-3. On the same computer with AdGuard follow this link using any browser: [http://local.adguard.org/cert](http://local.adguard.org/cert)
+3. On the same computer with AdGuard follow this link using any browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
 4. Click the **Download** button.
 
@@ -69,7 +71,7 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 6. Double-click the downloaded certificate file.
 
-7. Enter the administrator password, and then click **Modify Keychain**.
+7. Enter the administrator password and then click **Modify Keychain**.
 
 8. Go to **Spotlight** (the search icon in the top right corner), type in “Keychain Access”, and then select **Keychain Access** from the search results.
 
@@ -81,19 +83,19 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 12. Under *Secure Sockets Layers (SSL)*, select **Always Trust**.
 
-13. Open **System Preferences** > **Network** > **Wi-Fi**.
+13. Open **System Preferences** → **Network** → **Wi-Fi**.
 
 14. Navigate to the **Proxies** tab.
 
-15. Tick the checkbox *Web Proxy (HTTP)*. For **Web Proxy Server**, enter the noted IP-address of your computer (step 1). In the field next to it (separated with a colon), enter the port chosen in desktop AdGuard's network settings.
+15. Tick the checkbox *Web Proxy (HTTP)*. For **Web Proxy Server**, enter the noted IP address of your computer (step 1). In the field next to it (separated with a colon), enter the port chosen in the network settings of the AdGuard desktop app.
 
 ### Android {#android}
 
 1. Note the IP address of your desktop computer with installed AdGuard.
 
-2. Activate AdGuard on your computer and check the box **Use AdGuard as an HTTP proxy** in the **Network** settings of the desktop app.
+2. Make sure AdGuard’s protection is enabled. Then check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings.
 
-3. On the same computer with AdGuard follow this link using any browser: [http://local.adguard.org/cert](http://local.adguard.org/cert)
+3. On the same computer with AdGuard follow this link using any browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
 4. Click the **Download** button.
 
@@ -103,17 +105,17 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 7. On some phones, you might be asked to enter your device password. Do that, then press **OK**. The certificate is now installed.
 
-8. Open advanced settings of the active WiFi network.
+8. Open advanced settings of the active Wi-Fi network.
 
-9. Switch the **Proxy type** to **Manual**. For **Proxy hostname**, enter the noted IP-address of your desktop computer (step 1). For **Proxy port**, enter the port chosen in desktop AdGuard's network settings.
+9. Switch the **Proxy type** to **Manual**. For **Proxy hostname**, enter the noted IP address of your desktop computer (step 1). For **Proxy port**, enter the port chosen in the network settings of the AdGuard desktop app.
 
 ### iOS {#ios}
 
 1. Note the IP address of your desktop computer with installed AdGuard.
 
-2. Activate AdGuard on your computer and check the box **Use AdGuard as an HTTP proxy** in the **Network** settings of the desktop app.
+2. Make sure AdGuard’s protection is enabled. Then check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings.
 
-3. On the same computer with AdGuard follow this link using any browser: [http://local.adguard.org/cert](http://local.adguard.org/cert)
+3. On the same computer with AdGuard follow this link using any browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
 4. Click the **Download** button.
 
@@ -121,10 +123,10 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 6. Locate the downloaded certificate in *Files*. A popup should show up, telling you about a downloaded profile.
 
-7. Open **Settings** > **Profile Donwloaded** and tap **Install** in the top right corner. Enter your password and confirm the installation. Tap **Done**.
+7. Open **Settings** → **Profile Donwloaded** and tap **Install** in the top right corner. Enter your password and confirm the installation. Tap **Done**.
 
-8. Go to **Settings** > **General** > **About** > **Certificate Trust Settings**. Enable the switch beside *Adguard Personal CA*. The certificate is now installed.
+8. Go to **Settings** → **General** → **About** → **Certificate Trust Settings**. Enable the switch beside *Adguard Personal CA*. The certificate is now installed.
 
-9. On that device, open advanced settings of the active WiFi network.
+9. On that device, open advanced settings of the active Wi-Fi network.
 
-10. Switch the **Proxy type** to **Manual**. For **Proxy hostname**, enter the noted IP-address of your computer (step 1). For **Proxy port**, enter the port chosen in desktop AdGuard's network settings.
+10. Switch the **Proxy type** to **Manual**. For **Proxy hostname**, enter the noted IP address of your computer (step 1). For **Proxy port**, enter the port chosen in the network settings of the AdGuard desktop app.

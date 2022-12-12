@@ -195,7 +195,7 @@ Contrary to a popular opinion, using a proxy server is not just about bypassing 
 
 ## Extensions support
 
-Userscripts (we also call them extensions) are basically mini-programs written in Javascript that extend the functionality of one or more websites. Usually, you'd need some special userscript manager to add them, and it's traditionally more of a desktop thing. But with AdGuard everything is possible! Now you can add any userscripts by URL or load them from a file, and AdGuard will serve as a userscript manager and take care of the rest. Go to *Settings > Extensions* to enable some of the pre-installed extensions or to add custom userscripts.
+Userscripts (we also call them extensions) are basically mini-programs written in JavaScript that extend the functionality of one or more websites. Usually, you'd need some special userscript manager to add them, and it's traditionally more of a desktop thing. But with AdGuard everything is possible! Now you can add any userscripts by URL or load them from a file, and AdGuard will serve as a userscript manager and take care of the rest. Go to *Settings > Extensions* to enable some of the pre-installed extensions or to add custom userscripts.
 
 ![Extensions](https://cdn.adguard.com/content/kb/ad_blocker/android/features/extensions.png)
 
