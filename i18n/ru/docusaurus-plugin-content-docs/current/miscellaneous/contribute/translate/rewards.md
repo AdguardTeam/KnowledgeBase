@@ -3,22 +3,22 @@ title: Система вознаграждений
 sidebar_position: 6
 ---
 
-As any honest and well-performed effort should be rewarded, active translators on Crowdin can request a free AdGuard license key and a VPN subscription.
+Каждая хорошо выполненная работа должна быть вознаграждена. Именно поэтому активные переводчики могут получить бесплатный лицензионный ключ AdGuard и/или подписку на AdGuard VPN.
 
-To request a **one-year AdGuard license key** or a **one-year AdGuard VPN subscription**, you must translate at least **500** and **2,500** words respectively.
+Чтобы запросить **годовой лицензионный ключ AdGuard** или **годовую подписку на AdGuard VPN**, вы должны перевести не менее **500** и **2 500** слов соответственно.
 
-**Here’s how our reward system works**
+**Вот как работает наша система вознаграждений**
 
 ```
-For the first one-year AdGuard license, you need to translate 500 words.
+Для первой годовой лицензии AdGuard вам необходимо перевести 500 слов.
 For the second license, you need 1,000 words, i.e. 1,500 words altogether.
 All subsequent licenses require an additional 1,500 words per license.
 
-For the first one-year AdGuard VPN subscription, you need to translate 2,500 words.
-All subsequent subscriptions or renewals require an additional 2,500 words per subscription.
+Для первой годовой подписки на AdGuard VPN вам необходимо перевести 2 500 слов.
+Все последующие подписки или продления требуют дополнительных 2 500 слов за каждую подписку.
 
 ```
-Just send us a request to [translate@adguard.com](mailto:translate@adguard.com) and you’ll get the license as a token of our gratitude.
+Просто отправьте запрос на [translate@adguard.com](mailto:translate@adguard.com), и вы получите лицензию в знак нашей благодарности.
 
 Кроме того, наиболее активные переводчики при желании в будущем могут получить статус пруфридера. А это сулит ещё больше приятных вознаграждений.
 

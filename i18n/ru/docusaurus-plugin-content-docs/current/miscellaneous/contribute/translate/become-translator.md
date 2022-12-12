@@ -15,7 +15,7 @@ sidebar_position: 2
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/languages.png)
 
-Вы можете начать переводить любой понравившийся вам продукт. У нас есть лишь несколько рекомендаций о том, [с каких файлов лучше начинать работу в проекте AdGuard Websites](../translation-priority).
+Вы можете начать переводить любой понравившийся вам продукт. У нас есть несколько рекомендаций о том, [с каких файлов лучше начинать работу в проекте AdGuard Websites](../translation-priority).
 
 ![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/folders.png)
 

@@ -3,7 +3,7 @@ title: Обзор функций
 sidebar_position: 1
 ---
 
-У AdGuard есть ряд продуктов для блокировки рекламы и трекеров на различных платформах. Один из самых популярных продуктов AdGuard — это бесплатное расширение, которое работает в пяти популярных браузерах: Chrome, Firefox, Edge, Opera и Яндекс Браузере. Browser extensions include basic ad-blocking features but cannot be compared with full-featured desktop programs, such as [AdGuard for Windows](/adguard-for-windows/overview) and [AdGuard for Mac](/adguard-for-mac/overview).
+У AdGuard есть ряд продуктов для блокировки рекламы и трекеров на различных платформах. Один из самых популярных продуктов AdGuard — это бесплатное расширение, которое работает в пяти популярных браузерах: Chrome, Firefox, Edge, Opera и Яндекс Браузере. Браузерные расширения включают базовые функции по блокировке рекламы, но уступают полноценным приложениям, таким как [AdGuard для Windows](/adguard-for-windows/overview) или [AdGuard для Mac](/adguard-for-mac/overview).
 
 ![Расширение AdGuard для Chrome](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
 
@@ -13,7 +13,7 @@ sidebar_position: 1
 
 ![Доступно для большинства популярных браузеров](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
 
-> У нас есть отдельное расширение для Safari. Since the release of [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html), most of the ad-blocking extensions have experienced huge issues and many of them stopped functioning. Нам пришлось разработать [отдельное расширение для Safari](/adguard-for-safari/overview), которое отличается от расширения, описанного в этой статье.
+> У нас есть отдельное расширение для Safari. C момента выхода [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html) большинство расширений столкнулись с проблемами, и многие из них перестали работать. Нам пришлось разработать [отдельное расширение для Safari](/adguard-for-safari/overview), которое отличается от расширения, описанного в этой статье.
 
 **Не забывайте, что функциональность любого расширения строго ограничена возможностями самого браузера.** Для полноценной защиты на уровне системы используйте отдельную программу для компьютера или мобильного устройства. Ниже мы опишем [её преимущества](#comparison).
 
@@ -27,7 +27,7 @@ sidebar_position: 1
 
 ![Фильтры](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters.png)
 
-Фильтры сгруппированы в соответствии с их ролью. For example, there are categories for ad-blocking filters, privacy protection filters, social media-related filters, etc. Вы можете включить как отдельные фильтры, так и всю группу сразу.
+Фильтры сгруппированы в соответствии с их ролью. Например, существуют фильтры, блокирующие рекламу или удаляющие виджеты социальных сетей, фильтры для защиты конфиденциальности и т. п. Вы можете включить как отдельные фильтры, так и всю группу сразу.
 
 ![Фильтры, блокирующие рекламу](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters1.png)
 

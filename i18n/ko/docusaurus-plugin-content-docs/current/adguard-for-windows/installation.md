@@ -59,7 +59,7 @@ AdGuard 제거 및 재설치 방법은 다음과 같습니다.
 
 * Microsoft Windows 8.1: **시작 버튼**을 마우스 우클릭하고 **제어판**을 선택합니다. **프로그램** 섹션에서 **프로그램 제거**를 클릭합니다. 설치된 앱 목록 중에 **AdGuard**를 선택하고 목록 바로 위에 있는 **제거** 버튼을 누릅니다. 열리는 창에서 **AdGuard 제거**를 클릭하여 확인합니다.
 
-* For Microsoft Windows 7: Open **Start Menu**. In the search box, type **Control Panel**. **프로그램** 섹션에서 **프로그램 제거**를 클릭합니다. 설치된 앱 목록 중에 **AdGuard**를 선택하고 목록 바로 위에 있는 **제거** 버튼을 누릅니다. 열리는 창에서 **AdGuard 제거**를 클릭하여 확인합니다.
+* Microsoft Windows 7: **시작 메뉴**를 엽니다. 검색 창에 **제어판**을 입력합니다. **프로그램** 섹션에서 **프로그램 제거**를 클릭합니다. 설치된 앱 목록 중에 **AdGuard**를 선택하고 목록 바로 위에 있는 **제거** 버튼을 누릅니다. 열리는 창에서 **AdGuard 제거**를 클릭하여 확인합니다.
 
 ![Windows 7 제거](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/win7-uninstall.png)
 
@@ -73,7 +73,7 @@ AdGuard 제거 및 재설치 방법은 다음과 같습니다.
 
 * 제거가 완료되면 창에 다음과 같은 문자열이 표시됩니다. `[OK] Uninstall finished`
 
-![Uninstall finished](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/standard-uninstall-2.png)
+![제거 완료](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/standard-uninstall-2.png)
 
 > 주의! 1~2 단계를 수행해도 프로그램이 제거되지 않은 경우에만 3~4 단계를 따르십시오. AdGuard의 잘못된 재설치로 판단될 수 있지만 고급 제거 지침의 3~4 단계를 사용하기 전에 지원 팀에 문의하는 것이 좋습니다.
 
@@ -83,6 +83,6 @@ AdGuard 제거 및 재설치 방법은 다음과 같습니다.
 
 * 제거가 완료되면 창에 다음과 같은 문자열이 표시됩니다. `[OK] Uninstall finished`
 
-![Uninstall finished](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/advanced-uninstall-2.png)
+![제거 완료](https://cdn.adguard.com/content/kb/ad_blocker/windows/installation/advanced-uninstall-2.png)
 
 AdGuard가 제거되었습니다!

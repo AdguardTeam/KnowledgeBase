@@ -11,6 +11,6 @@ sidebar_position: 5
 
 Следуйте этой инструкции, чтобы решить проблему:
 
-1) Перезапустите Mac 2) Когда на экране появится логотип Apple, зажмите клавиши *Command(⌘) + R*. Чтобы перевести компьютер в режим восстановления, удерживайте клавиши, пока не появится логотип Apple. 3) From the top bar select *Utilities* > *Terminal*, and execute this command: `csrutil disable` 4) Restart the Mac and log into Administrator's profile 5) Open the Finder window and select from the top bar *Go* > *Go to Folder* and type `~/private/` 6) Create a folder named *tmp* and type in your password 7) Launch AdGuard installation
+1) Перезапустите Mac 2) Когда на экране появится логотип Apple, зажмите клавиши *Command(⌘) + R*. Чтобы перевести компьютер в режим восстановления, удерживайте клавиши, пока не появится логотип Apple. 3) На верхней панели выберите *Утилиты* > *Терминал*, а затем выполните эту команду: `csrutil disable` 4) Перезапустите Mac и войдите в профиль администратора 5) Откройте окно Finder, выберите на верхней панели *Переход* > *Переход к папке...* и введите `~/private/` 6) Создайте папку с названием *tmp* и введите пароль пользователя 7) Запустите установщик AdGuard
 
 Как только установка будет завершена, перезапустите Mac в режиме восстановления, следуя инструкции выше, и выполните команду `csrutil enable` в Терминале, чтобы включить системную защиту.
