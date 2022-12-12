@@ -11,8 +11,8 @@ To request a **one-year AdGuard license key** or a **one-year AdGuard VPN subscr
 
 ```
 For the first one-year AdGuard license, you need to translate 500 words.
-For the second license, you need 1000 words, i.e. 1500 words altogether.
-All subsequent licenses require an additional 1500 words per license.
+For the second license, you need 1,000 words, i.e. 1,500 words altogether.
+All subsequent licenses require an additional 1,500 words per license.
 
 For the first one-year AdGuard VPN subscription, you need to translate 2,500 words.
 All subsequent subscriptions or renewals require an additional 2,500 words per subscription.

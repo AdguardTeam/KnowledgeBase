@@ -654,7 +654,7 @@ domain.com###banner
 * [`$jsonprune`](#jsonprune-modifier)
 * [`noop`](#noop-modifier)
 * [`$empty` (устаревший)](#empty-modifier)
-* [`$mp4` (deprecated)`](#mp4-modifier)
+* [`$mp4` (deprecated)](#mp4-modifier)
 
 Модификаторы, описанные в этом разделе, полностью меняют поведение базовых правил.
 
@@ -2270,7 +2270,7 @@ $path ["=" pattern]
 * `[$path=/page*.html]example.com##.textad` скрывает `div` с классом `textad` на `/page1.html`, `/page2.html` или любом другом пути, соответствующем `/page<...>.html` сайта `example.com`
 * `[$path]example.com##.textad` скрывает `div` с классом `textad` на главной странице `example.com`
 * `[$domain=example.com,path=/page.html]##.textad` скрывает `div` с классом `textad` на `page.html` домена `example.com` и всех его поддоменах, но не на `other_page.html`
-* `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` hides a `div` with a class `textad` at both `/sub1/page.html` and `/sub2/page.html` of any domain (please note the [escaped special characters](#non-basic-rules-modifiers-syntax)
+* `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` hides a `div` with a class `textad` at both `/sub1/page.html` and `/sub2/page.html` of any domain (please note the [escaped special characters](#non-basic-rules-modifiers-syntax))
 
 > **Совместимость с различными версиями AdGuard**
 >
@@ -2597,7 +2597,7 @@ C.onload=function(){alert('ExtCss loaded successfully')},s.parentNode.insertBefo
 (document,'script','https://AdguardTeam.github.io/ExtendedCss/extended-css.min.js')
 ```
 
-Alternatively, install an ["ExtendedCssDebugger" userscript](https://github.com/AdguardTeam/Userscripts/blob/master/extendedCssDebugger/extended-css.debugger.user.js).
+Alternatively, install the [ExtendedCssDebugger userscript](https://github.com/AdguardTeam/Userscripts/blob/master/extendedCssDebugger/extended-css.debugger.user.js).
 
 Теперь вы можете использовать конструктор `ExtendedCss` в глобальном масштабе, а его метод `ExtendedCss.query` как `document.querySelectorAll`.
 ```
