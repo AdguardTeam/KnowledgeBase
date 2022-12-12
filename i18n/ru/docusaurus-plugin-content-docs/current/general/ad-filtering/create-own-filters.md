@@ -169,7 +169,7 @@ pattern = "/" regexp "/"
 
 ### Поддержка wildcard для доменов верхнего уровня (TLD) {#wildcard-for-tld}
 
-Wildcard characters are supported for TLDs of the domains in patterns of [cosmetic](#cosmetic-rules), [HTML filtering](#html-filtering-rules) and [JavaScript](#javascript-rules) rules.
+Wildcard-символы поддерживаются для TLD-доменов в шаблонах [косметических](#cosmetic-rules), [фильтров HTML](#html-filtering-rules) и [правил JavaScript](#javascript-rules).
 
 Для косметических правил, например, `example.*##.banner`, несколько доменов будут сопоставлены благодаря части `.*`, т.е. `example.com`, `sub.example.net`, `example.co.uk` и т. д.
 
@@ -2091,7 +2091,7 @@ AdGuard поддерживает специальный тип правил, п�
 
 > **Ограничения**
 > 
-> Javascript rules can be used [**only in trusted filters**](#trusted-filters).
+> Правила JavaScript можно использовать [**только в доверенных фильтрах**](#trusted-filters).
 
 > **Совместимость с различными версиями AdGuard**
 > 
@@ -2270,7 +2270,7 @@ $path ["=" pattern]
 * `[$path=/page*.html]example.com##.textad` скрывает `div` с классом `textad` на `/page1.html`, `/page2.html` или любом другом пути, соответствующем `/page<...>.html` сайта `example.com`
 * `[$path]example.com##.textad` скрывает `div` с классом `textad` на главной странице `example.com`
 * `[$domain=example.com,path=/page.html]##.textad` скрывает `div` с классом `textad` на `page.html` домена `example.com` и всех его поддоменах, но не на `other_page.html`
-* `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` hides a `div` with a class `textad` at both `/sub1/page.html` and `/sub2/page.html` of any domain (please note the [escaped special characters](#non-basic-rules-modifiers-syntax))
+* `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` скрывает `div` с классом `textad` как на `/sub1/page.html`, так и на `/sub2/page.html` любого домена (обратите внимание на [специальные экранированные символы](#non-basic-rules-modifiers-syntax))
 
 > **Совместимость с различными версиями AdGuard**
 > 
@@ -2597,7 +2597,7 @@ C.onload=function(){alert('ExtCss loaded successfully')},s.parentNode.insertBefo
 (document,'script','https://AdguardTeam.github.io/ExtendedCss/extended-css.min.js')
 ```
 
-Alternatively, install the [ExtendedCssDebugger userscript](https://github.com/AdguardTeam/Userscripts/blob/master/extendedCssDebugger/extended-css.debugger.user.js).
+В качестве альтернативы установите [пользовательский скрипт ExtendedCssDebugger](https://github.com/AdguardTeam/Userscripts/blob/master/extendedCssDebugger/extended-css.debugger.user.js).
 
 Теперь вы можете использовать конструктор `ExtendedCss` в глобальном масштабе, а его метод `ExtendedCss.query` как `document.querySelectorAll`.
 ```
