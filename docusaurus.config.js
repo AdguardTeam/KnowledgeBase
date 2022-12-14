@@ -7,6 +7,10 @@ const ADGUARD_WEBSITE_URL = 'https://adguard.com';
 const url = process.env.URL || 'https://adguardteam.github.io';
 const baseUrl = process.env.BASE_URL || '/KnowledgeBase/';
 
+const typesenseCollectionName = process.env.SEARCH_COLLECTION || 'docusaurus-2';
+const typesenseHost = process.env.SEARCH_HOST || 'xxx-1.a1.typesense.net';
+const typesenseApiKey = process.env.SEARCH_API_KEY || 'test';
+
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'AdGuard Knowledge Base',
@@ -19,6 +23,7 @@ module.exports = {
   trailingSlash: true,
   organizationName: 'AdGuard',
   projectName: 'AdGuardKB',
+  themes: ['docusaurus-theme-search-typesense'],
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'ru', 'de', 'fr', 'es', 'it', 'ja', 'ko', 'zh-CN', 'zh-TW'],
@@ -179,6 +184,20 @@ module.exports = {
     prism: {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
+    },
+    typesense: {
+      typesenseCollectionName: typesenseCollectionName,
+      typesenseServerConfig: {
+        nodes: [
+          {
+            host: typesenseHost,
+            port: 443,
+            protocol: 'https',
+          },
+        ],
+        apiKey: typesenseApiKey,
+      },
+      contextualSearch: true,
     },
   },
   presets: [
