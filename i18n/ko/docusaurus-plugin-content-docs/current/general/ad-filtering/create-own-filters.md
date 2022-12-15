@@ -110,7 +110,7 @@ Cosmetic rules are based on using a special language named CSS, which every brow
 #### Trusted filters {#trusted-filters}
 
 Some rules can be used only in trusted filters. This category includes:
-> * filter lists [created by the AdGuard team](./adguard-filters.md),
+> * filter lists [created by the AdGuard team](../adguard-filters),
 > * custom filter lists installed as `trusted`,
 > * user rules.
 
@@ -169,7 +169,7 @@ For example, `/banner\d+/$third-party` this rule will apply the regular expressi
 
 ### Wildcard support for TLD (top-level domains) {#wildcard-for-tld}
 
-Wildcard characters are supported for TLDs of the domains in patterns of [cosmetic](#cosmetic-rules), [HTML filtering](#html-filtering-rules) and [javascript](#javascript-rules) rules.
+Wildcard characters are supported for TLDs of the domains in patterns of [cosmetic](#cosmetic-rules), [HTML filtering](#html-filtering-rules) and [JavaScript](#javascript-rules) rules.
 
 For cosmetic rules, e.g. `example.*##.banner`, multiple domains are matched due to the part `.*`, i.e. `example.com`, `sub.example.net`, `example.co.uk`, etc.
 
@@ -548,22 +548,22 @@ $stealth [= opt1 [| opt2 [| opt3 [...]]]]
 
 The list of the available modifier options:
 
-* `searchqueries` disables [**Hide your search queries**](../stealth-mode#searchqueries) option
-* `donottrack` disables [**Send Do-Not-Track header**](../stealth-mode#donottrack) option
-* `3p-cookie` disables [**Self-destructing third-party cookies**](../stealth-mode#3p-cookie) option
-* `1p-cookie` disables [**Self-destructing first-party cookies**](../stealth-mode.md#1p-cookie) option
-* `3p-cache` disables [**Disable cache for third-party requests**](../stealth-mode#3p-cache) option
-* `3p-auth` disables [**Block third-party Authorization header**](../stealth-mode#3p-auth) option
-* `webrtc` disables [**Block WebRTC**](../stealth-mode#webrtc) option
-* `push` disables [**Block Push API**](../stealth-mode#push) option
-* `location` disables [**Block Location API**](../stealth-mode#location) option
-* `flash` disables [**Block Flash**](../stealth-mode#flash) option
-* `java` disables [**Block Java**](../stealth-mode#java) option
-* `referrer` disables [**Hide Referrer from third parties**](../stealth-mode#miscellaneous) option
-* `useragent` disables [**Hide your User-Agent**](../stealth-mode#useragent) option
-* `ip` disables [**Hide your IP address**](../stealth-mode#ip) option
-* `xclientdata` disables [**Remove X-Client-Data header from HTTP requests**](../stealth-mode#xclientdata) option
-* `dpi` disables [**Protect from DPI**](../stealth-mode#dpi) option
+* `searchqueries` disables [**Hide your search queries**](../../stealth-mode#searchqueries) option
+* `donottrack` disables [**Send Do-Not-Track header**](../../stealth-mode#donottrack) option
+* `3p-cookie` disables [**Self-destructing third-party cookies**](../../stealth-mode#3p-cookie) option
+* `1p-cookie` disables [**Self-destructing first-party cookies**](../../stealth-mode#1p-cookie) option
+* `3p-cache` disables [**Disable cache for third-party requests**](../../stealth-mode#3p-cache) option
+* `3p-auth` disables [**Block third-party Authorization header**](../../stealth-mode#3p-auth) option
+* `webrtc` disables [**Block WebRTC**](../../stealth-mode#webrtc) option
+* `push` disables [**Block Push API**](../../stealth-mode#push) option
+* `location` disables [**Block Location API**](../../stealth-mode#location) option
+* `flash` disables [**Block Flash**](../../stealth-mode#flash) option
+* `java` disables [**Block Java**](../../stealth-mode#java) option
+* `referrer` disables [**Hide Referrer from third parties**](../../stealth-mode#miscellaneous) option
+* `useragent` disables [**Hide your User-Agent**](../../stealth-mode#useragent) option
+* `ip` disables [**Hide your IP address**](../../stealth-mode#ip) option
+* `xclientdata` disables [**Remove X-Client-Data header from HTTP requests**](../../stealth-mode#xclientdata) option
+* `dpi` disables [**Protect from DPI**](../../stealth-mode#dpi) option
 
 **Examples**
 
@@ -654,7 +654,7 @@ Disables generic basic rules on pages that correspond to exception rule.
 * [`$jsonprune`](#jsonprune-modifier)
 * [`noop`](#noop-modifier)
 * [`$empty` (deprecated)](#empty-modifier)
-* [`$mp4` (deprecated)`](#mp4-modifier)
+* [`$mp4` (deprecated)](#mp4-modifier)
 
 These modifiers are able to completely change the behaviour of basic rules.
 
@@ -2270,7 +2270,7 @@ $path ["=" pattern]
 * `[$path=/page*.html]example.com##.textad` hides a `div` with a class `textad` at `/page1.html` or `/page2.html` or any other path matching `/page<...>.html` of `example.com`
 * `[$path]example.com##.textad` hides a `div` with a class `textad` at the main page of `example.com`
 * `[$domain=example.com,path=/page.html]##.textad` hides a `div` with a class `textad` at `page.html` of `example.com` and all subdomains but not at `another_page.html`
-* `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` hides a `div` with a class `textad` at both `/sub1/page.html` and `/sub2/page.html` of any domain (please note the [escaped special characters](#non-basic-rules-modifiers-syntax)
+* `[$path=/\\/(sub1|sub2)\\/page\\.html/]##.textad` hides a `div` with a class `textad` at both `/sub1/page.html` and `/sub2/page.html` of any domain (please note the [escaped special characters](#non-basic-rules-modifiers-syntax))
 
 > **Compatibility with different versions of AdGuard**
 > 
@@ -2465,7 +2465,7 @@ example.org#@#.adBanner
 
 For each filter, AdGuard compiles two versions: full and optimized. Optimized version is much more lightweight and does not contain rules which are not used at all or used rarely.
 
-Rules usage frequency comes from the collected [filter rules statistics](./tracking-filter-statistics.md). But filters optimization is based on more than that — some filters have specific configuration. This is how it looks like for Base filter:
+Rules usage frequency comes from the collected [filter rules statistics](../tracking-filter-statistics). But filters optimization is based on more than that — some filters have specific configuration. This is how it looks like for Base filter:
 
 ```
 "filter": AdGuard Base filter,
@@ -2597,7 +2597,7 @@ C.onload=function(){alert('ExtCss loaded successfully')},s.parentNode.insertBefo
 (document,'script','https://AdguardTeam.github.io/ExtendedCss/extended-css.min.js')
 ```
 
-Alternatively, install an ["ExtendedCssDebugger" userscript](https://github.com/AdguardTeam/Userscripts/blob/master/extendedCssDebugger/extended-css.debugger.user.js).
+Alternatively, install the [ExtendedCssDebugger userscript](https://github.com/AdguardTeam/Userscripts/blob/master/extendedCssDebugger/extended-css.debugger.user.js).
 
 You can now use the `ExtendedCss` constructor in the global scope, and its method `ExtendedCss.query` as `document.querySelectorAll`.
 ```
@@ -2611,25 +2611,25 @@ If you are using AdGuard Browser extension and want to debug a [scriptlet](#scri
 
 The following scriptlets are especially developed for debug purposes:
 
-* [`debug-current-inline-script`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#debug-current-inline-script)
-* [`debug-on-property-read`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#debug-on-property-read)
-* [`debug-on-property-write`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#abort-on-property-write)
-* [`log-addEventListener`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#log-addEventListener)
-* [`log-on-stack-trace`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#log-on-stack-trace)
-* [`log-eval`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#log-eval)
-* [`log`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#log)
+* [`debug-current-inline-script`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets#debug-current-inline-script)
+* [`debug-on-property-read`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets#debug-on-property-read)
+* [`debug-on-property-write`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets#abort-on-property-write)
+* [`log-addEventListener`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets#log-addEventListener)
+* [`log-on-stack-trace`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets#log-on-stack-trace)
+* [`log-eval`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets#log-eval)
+* [`log`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets#log)
 
 The following scriptlets also may be used for debug purposes:
 
-* [`json-prune`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#json-prune)
-* [`prevent-fetch`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-fetch)
-* [`prevent-requestAnimationFrame`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-requestanimationframe)
-* [`prevent-setInterval`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-setinterval)
-* [`prevent-setTimeout`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-settimeout)
-* [`prevent-window-open`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-window-open) with specified `replacement` parameter
-* [`prevent-xhr`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-xhr)
-* [`trusted-replace-fetch-response`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-trusted-scriptlets.md#trusted-replace-fetch-response)
-* [`trusted-replace-xhr-response`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-trusted-scriptlets.md#trusted-replace-xhr-response)
+* [`json-prune`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets#json-prune)
+* [`prevent-fetch`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets#prevent-fetch)
+* [`prevent-requestAnimationFrame`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets#prevent-requestanimationframe)
+* [`prevent-setInterval`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets#prevent-setinterval)
+* [`prevent-setTimeout`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets#prevent-settimeout)
+* [`prevent-window-open`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets#prevent-window-open) with specified `replacement` parameter
+* [`prevent-xhr`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets#prevent-xhr)
+* [`trusted-replace-fetch-response`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-trusted-scriptlets#trusted-replace-fetch-response)
+* [`trusted-replace-xhr-response`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-trusted-scriptlets#trusted-replace-xhr-response)
 
 ## Good luck with creating filters!
 

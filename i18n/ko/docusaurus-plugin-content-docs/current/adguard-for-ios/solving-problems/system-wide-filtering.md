@@ -7,7 +7,7 @@ sidebar_position: 2
 
 System-wide filtering means blocking ads and trackers beyond the Safari browser, i.e. in other apps and browsers. iOS 기기에서 전체 시스템 차단을 설정하는 방법을 살펴볼까요?
 
-iOS 기기의 전체 시스템에서 추적기와 광고를 차단하려면 [DNS 필터링](https://adguard-dns.io/kb/general/dns-filtering/)을 사용해야 합니다. First, you have to enable DNS protection. DNS 보호를 활성화하려면 *iOS용 AdGuard 설정*—> *DNS 보호*로 이동하여 DNS 보호를 켜십시오.
+iOS 기기의 전체 시스템에서 추적기와 광고를 차단하려면 [DNS 필터링](https://adguard-dns.io/kb/general/dns-filtering/)을 사용해야 합니다. 먼저 DNS 보호를 활성화해야 합니다. DNS 보호를 활성화하려면 *iOS용 AdGuard 설정*—> *DNS 보호*로 이동하여 DNS 보호를 켜십시오.
 
 ![DNS 보호 화면](https://cdn.adguard.com/public/Adguard/Blog/ios_dns_protection.PNG)
 

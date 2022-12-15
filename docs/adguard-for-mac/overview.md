@@ -28,7 +28,7 @@ Enabling this option, you won't have to manually choose all the filters when vis
 A simple and convenient feature with which you don't have to worry whether or not you have your ad blocker turned on, and just be sure that ads are always blocked.
 
 **Do not block search ads and websites' self-promotion**
-This option might be useful to online shoppers: instead of adding all your favorite e-shops and sites to the Allowlist, you can simply exclude [self-promos and search ads](/general/ad-filtering/search-ads.md) from filtering. AdGuard will automatically detect those and let them be, while removing everything else ad-like.  
+This option might be useful to online shoppers: instead of adding all your favorite e-shops and sites to the Allowlist, you can simply exclude [self-promos and search ads](/general/ad-filtering/search-ads) from filtering. AdGuard will automatically detect those and let them be, while removing everything else ad-like.  
 
 **Hide menu bar icon**
 If you don't want to see the menu bar icon, there is an option to hide it. But don't worry: even if you remove it from the menu bar, AdGuard will continue to run in the background.

@@ -48,7 +48,7 @@ To solve this issue, you need to disable this feature.
 
 - Open **Settings**;
 - Press **Advanced**;
-- Scroll down, and then press **Dual messenger**;
+- Scroll down and press **Dual messenger**;
 - Disable the **Dual messenger** for all applications;
 - Lock the device for 5 minutes;
 - Unlock the screen and try again to create the VPN profile.
@@ -57,6 +57,6 @@ To solve this issue, you need to disable this feature.
 
 - Open **Settings**;
 - Choose **General** tab;
-- Scroll down, and then press **Dual app**;
+- Scroll down and press **Dual app**;
 - Remove all applications from the list;
 - Reboot your device.

@@ -76,7 +76,7 @@ sidebar_position: 3
 4. 必须指定应用程序配置：
 * 您使用的过滤器；
 * 隐身模式设置（如果启用了此功能）。 ![形式4](https://cdn.adguard.com/content/kb/ad_blocker/guides/forma4en.png)
-5. [提供屏幕截图](./take-screenshot.md)捕获了问题的实质；
+5. [Provide a screenshot](../take-screenshot) that captures the essence of a problem;
 * **重要**：隐藏您的个人信息（电子邮件，电话号码等），因为屏幕截图将公开显示。 ![形式5](https://cdn.adguard.com/content/Kb/ad_blocker/guides/forma5en.png)
 6. 提供其他信息，以帮助过滤器开发人员了解情况； 如已有 **GitHub** 账号，请您输入它（这是开发团队在需要更多信息的情况下联系您的重要方式）； ![形式6](https://cdn.adguard.com/content/Kb/ad_blocker/guides/forma6en.png)
 7. 在发送表格之前检查每一步； ![形式7](https://cdn.adguard.com/content/Kb/ad_blocker/guides/forma7en.png)
@@ -93,10 +93,10 @@ sidebar_position: 3
 1. 禁用**广告拦截程序**；
 2. 如果解决了问题，请重新启用模块并逐个禁用过滤器。 这样做是为了识别“破坏”页面的过滤器。
 3. 如果您设法找出哪个过滤器“破坏了”页面，则在填写表格时应通知开发人员（请参见上文）。 在这种情况下，希望返回到初始设置；
-4. 如果关闭所有过滤器均未产生任何结果，则应用规则 **@@||example.com^$document,extension**； 其中 **example.com** 是一个示例网站名称，需要用您自己的选项替换；
+4. If turning off all the filters hasn't produced any results, apply rule **@@||example.com^$document,extension**; where **example.com** is an example site name that needs to be replaced by your own option;
 5. 如果发生故障（问题未解决），请转到**「隐身模式」**一节。
 
-### **Stealth Mode**
+### **隐身模式**
 
 1. 禁用**隐身模式**；
 2. 如果这解决了问题，请依次打开模块并关闭**「隐身模式」**选项。 这样做是为了检测哪些设置正在“破坏”页面；

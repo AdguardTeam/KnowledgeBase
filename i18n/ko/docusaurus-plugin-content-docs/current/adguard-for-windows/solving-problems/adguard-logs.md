@@ -15,7 +15,7 @@ sidebar_position: 3
 
 3. **로그 내보내기** 버튼을 클릭하여 기록된 로그를 내보냅니다.
 
-![Export logs](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
+![로그 내보내기](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
 - 어느 폴더에서나 압축된 로그파일을 저장합니다.
 
@@ -49,7 +49,7 @@ sidebar_position: 3
 
 6. **로그 내보내기** 버튼을 클릭하여 기록된 로그를 내보냅니다.
 
-![Export logs](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
+![로그 내보내기](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
 7. **주의**: 로깅 레벨을 **기본**으로 다시 설정합니다. **디버그** 로깅 레벨이 켜져 있으면 프로그램이 느려집니다.
 

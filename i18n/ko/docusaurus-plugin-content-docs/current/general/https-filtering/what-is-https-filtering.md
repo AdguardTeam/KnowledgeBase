@@ -59,11 +59,11 @@ AdGuard는 연구원들에 의해 테스트되지 않았습니다. 저희 추정
 
 AdGuard는 연구원의 결과에 전적으로 동의합니다. 또한 현재 겪고 있는 문제와 필터링 메커니즘의 품질 및 보안을 개선하기 위한 계획에 대해 알려 드리고자 합니다. 이러한 목록은 우선 순위에 따라 정렬됩니다.
 
-위의 연구에서 발견된 대부분의 문제는 인증서 유효성 검사 메커니즘과 관련이 있습니다. 저희는 별도의 인증서 유효성 검사 라이브러리를 생성 중입니다. 또한 인증서 유효성 검사 라이브러리를 오픈 소스로 만들고 싶습니다. AdGuard의 HTTPS 필터링 단점에 대한 [자세한 내용](known-issues.md)은 이 기사에서 확인할 수 있습니다.
+위의 연구에서 발견된 대부분의 문제는 인증서 유효성 검사 메커니즘과 관련이 있습니다. 저희는 별도의 인증서 유효성 검사 라이브러리를 생성 중입니다. 또한 인증서 유효성 검사 라이브러리를 오픈 소스로 만들고 싶습니다. A [separate article](../known-issues) lists all the known drawbacks of HTTPS filtering in AdGuard and our plans to fix them.
 
 #### Android 7 이상에서 HTTPS 필터링 문제
 
-[Android 7부터](https://blog.adguard.com/en/android-nougat-release-and-what-does-it-mean-for-adguard-users/) 개발자는 애플리케이션이 사용자 지정 인증서를 신뢰하도록 지정해야 합니다. 이제 AdGuard는 HTTPS 트래픽을 필터링하기 위해 사용자 인증서를 설치합니다. 앱이 이 인증서를 신뢰하지 않으면 HTTPS 트래픽이 필터링되지 않습니다. HTTPS 트래픽이 필터링되지 않으면 What to do?
+[Android 7부터](https://blog.adguard.com/en/android-nougat-release-and-what-does-it-mean-for-adguard-users/) 개발자는 애플리케이션이 사용자 지정 인증서를 신뢰하도록 지정해야 합니다. 이제 AdGuard는 HTTPS 트래픽을 필터링하기 위해 사용자 인증서를 설치합니다. 앱이 이 인증서를 신뢰하지 않으면 HTTPS 트래픽이 필터링되지 않습니다. HTTPS 트래픽이 필터링되지 않으면 어떻게 해야 할까요?
 
 우선, 많은 앱(최신 앱 포함)이 여전히 사용자 인증서를 신뢰합니다. 거의 모든 브라우저는 이러한 인증서도 신뢰합니다. 이 인증서를 신뢰하지 않는 일부 브라우저가 있을 수 있지만 드문 경우입니다.
 

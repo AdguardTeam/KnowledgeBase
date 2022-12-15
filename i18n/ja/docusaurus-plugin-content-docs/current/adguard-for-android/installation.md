@@ -1,5 +1,5 @@
 ---
-title: インストール/アンインストール
+title: インストール方法
 sidebar_position: 2
 ---
 
