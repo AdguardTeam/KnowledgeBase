@@ -62,6 +62,12 @@ module.exports = {
         {
           type: 'localeDropdown',
           position: 'right',
+          dropdownItemsAfter: [
+            {
+              to: '/miscellaneous/contribute/translate/program',
+              label: 'Help Us Translate',
+            },
+          ],
         },
         {
           href: 'https://github.com/AdguardTeam/KnowledgeBase',
