@@ -15,4 +15,4 @@ If any problems occur during the installation of AdGuard, the support team might
 
 ![AdGuard installation log files](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/install-logs-2.png)
 
-3. Send this archive to AdGuard [tech support](/support/contact.md).
+3. Send this archive to AdGuard [tech support](/support/contact).

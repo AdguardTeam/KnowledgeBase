@@ -27,7 +27,7 @@ sidebar_position: 10
 4. 在您的 PC 上打开**命令行**：
 - 如您使用的是 **Windows**，打开 **Cmd.exe**；
 - 如您使用的是 **macOS**，打开 ** Terminal **；
-5. Enter the command `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` and press **Enter**.
+5. 输入 `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` 的命令并点击**回车键**。
 
 ### 方案 2：移除**受限用户帐户**
 
@@ -47,7 +47,7 @@ sidebar_position: 10
 
 - 前往**设置**；
 - 点击**高级**功能；
-- 向下移动，点击**应用分身**；
+- Scroll down and press **Dual messenger**;
 - 禁用所有应用使用**应用分身**；
 - 锁定您的设备5分钟；
 - 解锁屏幕并重新试图创建 VPN 账号。
@@ -56,6 +56,6 @@ sidebar_position: 10
 
 - 前往**设置**；
 - 选择**常规**标签钮；
-- 向下移动，点击**双开应用**；
+- Scroll down and press **Dual app**;
 - 移除应用分身列表中所有的应用；
 - 重启您的设备。

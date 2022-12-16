@@ -107,7 +107,7 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 8. Open advanced settings of the active Wi-Fi network.
 
-9. Switch the **Proxy type** to **Manual**. For **Proxy hostname**, enter the noted IP address of your desktop computer (step 1). For **Proxy port**, enter the port chosen in in the network settings of the AdGuard desktop app.
+9. Switch the **Proxy type** to **Manual**. For **Proxy hostname**, enter the noted IP address of your desktop computer (step 1). For **Proxy port**, enter the port chosen in the network settings of the AdGuard desktop app.
 
 ### iOS {#ios}
 
@@ -121,7 +121,7 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 5. Transfer the downloaded **cert.cer** file to the device which traffic you want to route through AdGuard.
 
-6. Locate the downloaded crtificate in *Files*. A popup should show up, telling you about a downloaded profile.
+6. Locate the downloaded certificate in *Files*. A popup should show up, telling you about a downloaded profile.
 
 7. Open **Settings** → **Profile Donwloaded** and tap **Install** in the top right corner. Enter your password and confirm the installation. Tap **Done**.
 
@@ -129,4 +129,4 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 9. On that device, open advanced settings of the active Wi-Fi network.
 
-10. Switch the **Proxy type** to **Manual**. For **Proxy hostname**, enter the noted IP address of your computer (step 1). For **Proxy port**, enter the port chosen in in the network settings of the AdGuard desktop app.
+10. Switch the **Proxy type** to **Manual**. For **Proxy hostname**, enter the noted IP address of your computer (step 1). For **Proxy port**, enter the port chosen in the network settings of the AdGuard desktop app.

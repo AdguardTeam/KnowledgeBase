@@ -17,7 +17,7 @@ sidebar_position: 5
 
 ## 3. Убедитесь, что серверы AdGuard доступны {#servers-available}
 
-AdGuard connects to two hosts: `api.adguard.org` and `filters.adtidy.org`. Убедитесь, что оба сервера доступны.
+AdGuard подключается к двум хостам: `api.adguard.org` и `filters.adtidy.org`. Убедитесь, что оба сервера доступны.
 
 ## 4. Выкатите MSI-установщик в сеть {#msi-push}
 
@@ -25,7 +25,7 @@ AdGuard connects to two hosts: `api.adguard.org` and `filters.adtidy.org`. Уб�
 
 Или же вы можете запустить MSI на целевой машине напрямую (и фоново) при помощи этой команды: `Msiexec /q /i AdGuard.msi`
 
-If you need to roll out an update, use this command: `Msiexec /q /i AdGuard.msi REINSTALL=ALL REINSTALLMODE=vomus`
+Если вам нужно накатить обновление, используйте эту команду: `Msiexec /q /i AdGuard.msi REINSTALL=ALL REINSTALLMODE=vomus`
 
 **Пожалуйста, обратите внимание, что вы должны запускать эти команды с правами администратора.**
 

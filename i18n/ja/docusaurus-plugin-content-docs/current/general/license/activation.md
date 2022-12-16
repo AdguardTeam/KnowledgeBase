@@ -7,13 +7,13 @@ sidebar_position: 3
 
 To activate your license, go to the *License* section of your AdGuard product and find the *Log in* field or *Activate* button. You can use the login and password of your AdGuard account. If you don't have an account yet, you will be offered to create one and log in.
 
-In AdGuard for Windows and AdGuard for Mac, you can also use the [license key](what-is.md#license-key) to activate the license. Clicking the *Reset license* button logs you out from your device and unbinds the device from your AdGuard account.
+In AdGuard for Windows and AdGuard for Mac, you can also use the [license key](../what-is#license-key) to activate the license. Clicking the *Reset license* button logs you out from your device and unbinds the device from your AdGuard account.
 
 ## ライセンスを他のデバイスに移行する方法
 
-ライセンスキーは、[限られた数のデバイス](what-is.md#devices)で有効化することができます。 ライセンスキーが最大数のデバイスで使われている場合、ライセンスキーを再度使用する前に、いずれかのデバイスをバインド（紐付け）解除する必要があります。 バインド（紐付け）解除は以下のいずれの方法で行うことができます:
+The license key can be activated on a [limited number of devices](../what-is#devices). ライセンスキーが最大数のデバイスで使われている場合、ライセンスキーを再度使用する前に、いずれかのデバイスをバインド（紐付け）解除する必要があります。 バインド（紐付け）解除は以下のいずれの方法で行うことができます:
 * （Mac/Windows用AdGuardアプリの場合）「ライセンス」画面で「ライセンスをリセットする」ボタンを押す
-* by logging out of your account in an AdGuard product,
+* AdGuard製品内でAdGuardアカウントからログアウトする
 * AdGuardアカウントでデバイスの横にある「×」アイコンをクリックする
 
 必要な台数のデバイスを解除したら、新しいデバイスでAdGuardアカウントにログインすることができるようになります。 そうすると、ライセンスはその新しいデバイスにバインド（紐付け）されます。

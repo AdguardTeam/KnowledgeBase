@@ -16,7 +16,7 @@ Once you are ready to start, work in the [KnowledgeBase repository](https://gith
 
 The Knowledge base website is built using Docusaurus 2 — a modern static website generator. When suggesting changes or additions, take into account that all documents must comply with the principles of the platform. You can read about them in [Docusaurus Guides](https://docusaurus.io/docs/category/guides).
 
-You can deploy this Knowledge base locally on your computer to preview the changes you suggest. Detailed instructions on how to do this can be found [in the README.md file](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/main/README.md) on this Knowledge base's GitHub page.
+You can deploy this Knowledge base locally on your computer to preview the changes you suggest. Detailed instructions on how to do this can be found [in the README file](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/main/README) on this Knowledge base's GitHub page.
 
 ## Translating articles {#translate-adguard} 
 

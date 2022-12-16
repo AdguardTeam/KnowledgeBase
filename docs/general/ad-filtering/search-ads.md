@@ -9,7 +9,7 @@ To be absolutely clear, this is **completely optional**. You can turn off the di
 
 ### Search ads
 
-Search ads are ads that you see among search query results when using online search engines, such as Google, Bing, DuckDuckGo, etc. 
+Search ads are ads that you see among search query results when using online search engines, such as Google, Bing, DuckDuckGo, etc.
 
 ![search ads](https://user-images.githubusercontent.com/28726429/27697369-b3d2556e-5cfc-11e7-9203-3c95a7de7c28.png)
 
@@ -23,12 +23,12 @@ In principle, when an ad on a website promotes this particular website or closel
 
 ![self-promo](https://user-images.githubusercontent.com/8577533/27700604-c9b6f330-5d06-11e7-8ac9-1a9120f720c8.png)
 
-Our general stance here is very similar to the EasyList policy regarding self-promotion ads. According to our [filter policy](filter-policy.md), we should not block these ads; however, we should not make an exception if such an ad gets blocked by some rule 'alongside' a regular ad.
+Our general stance here is very similar to the EasyList policy regarding self-promotion ads. According to our [filter policy](../filter-policy), we should not block these ads; however, we should not make an exception if such an ad gets blocked by some rule 'alongside' a regular ad.
 
 Partly, this is due to ethical reasons, but mostly because such ads are rarely too intrusive and are often useful for the visitor of the website (who is supposedly interested in this website's content).
 
 By enabling 'Search ads and self-promotion', AdGuard users can unblock some of these self-promotion ads.
- 
+
 ### What ads are on the list?
 
 When you enable 'Search ads and self-promotion', search ads from the following search engines are shown:

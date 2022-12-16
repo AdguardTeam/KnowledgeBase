@@ -39,4 +39,4 @@ To collect **web requests** log and send it to us you need to perform following 
 
 As an alternative, you can export the logs (along with the *state.txt* file that contains system information and information about AdGuard settings) directly into a local file. It can be convenient, for example, if you are having a conversation with a developer on [GitHub](https://github.com/AdguardTeam/AdguardForAndroid/issues), [forum](https://forum.adguard.com/) or on another platform.
 
-To export logs and system information into a file, go to "Settings" — " Advanced" and tap "Export logs and system info". Select the destination folder and tap "Save".
+To export logs and system information into a file, go to "Settings" — "Advanced" and tap "Export logs and system info". Select the destination folder and tap "Save".

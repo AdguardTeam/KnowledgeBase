@@ -18,7 +18,7 @@ AdGuard для Android не представлен на Google Play: Google за
 
 Прежде всего, разрешите установку приложений из неизвестных источников в настройках ОС вашего устройства. Для этого нужно:
 
-* For Android 8+: start downloading [AdGuard apk](https://adguard.com/en/adguard-android/overview.html) (see the next step), you'll be prompted to allow permission. В открывшемся окне нажмите **Настройки** &gt **Далее из этого источника**. Продолжите установку.
+* Для Android 8+: разрешите загрузку [AdGuard apk](https://adguard.com/ru/adguard-android/overview.html) (см. следующий шаг). В открывшемся окне нажмите **Настройки** &gt **Далее из этого источника**. Продолжите установку.
 * Android 6 и 7: откройте **Настройки**, перейдите в пункт **Система и устройство** и выберите **Расширенные настройки**. Сдвиньте переключатель **Неизвестные источники** вправо. В сообщении предупреждения нажмите **ОК**.
 
 ![Установка приложений из неизвестных источников](https://cdn.adguard.com/content/kb/ad_blocker/android/installation/unknown_sources1.png)
@@ -59,7 +59,7 @@ AdGuard для Android не представлен на Google Play: Google за
 
 ![Раздражители](https://cdn.adguard.com/content/kb/ad_blocker/android/installation/7.png)
 
-You don't have to choose anything on this screen: just take note of the information on how to watch YouTube videos without ads:
+На этом экране вам не нужно ничего выбирать: просто обратите внимание на информацию о том, как смотреть видео на YouTube без рекламы:
 
 ![YouTube](https://cdn.adguard.com/content/kb/ad_blocker/android/installation/youtube.jpg)
 
@@ -67,7 +67,7 @@ You don't have to choose anything on this screen: just take note of the informat
 
 ![Настройки конфиденциальности](https://cdn.adguard.com/content/kb/ad_blocker/android/installation/8.png)
 
-On the next screen, select whether you want to get notifications about dangerous websites:
+На следующем экране выберите, хотите ли вы получать уведомления об опасных сайтах:
 
 ![Безопасность](https://cdn.adguard.com/content/kb/ad_blocker/android/installation/9.png)
 

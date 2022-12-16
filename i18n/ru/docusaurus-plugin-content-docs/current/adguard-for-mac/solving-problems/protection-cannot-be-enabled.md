@@ -11,6 +11,6 @@ sidebar_position: 2
 
 3. Перезагрузите компьютер.
 
-4. В Терминале проверьте, что папка стёрлась, выполнив команду: `ls -al /Library/StagedExtensions/Library/Application\ Support/com.adguard.Adguard/`. You should receive the following: `No such file or directory`.
+4. В Терминале проверьте, что папка стёрлась, выполнив команду: `ls -al /Library/StagedExtensions/Library/Application\ Support/com.adguard.Adguard/`. Вы должны увидеть следующее сообщение: `No such file or directory`.
 
 5. Запустите AdGuard, введите логин и пароль.
