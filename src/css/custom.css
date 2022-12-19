@@ -52,6 +52,10 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   max-width: 360px;
 }
 
+.container .footer__logo {
+  width: auto;
+}
+
 .container em:lang(ja),
 .container em:lang(ko),
 .container em:lang(zh-CN),
