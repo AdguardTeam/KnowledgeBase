@@ -9,7 +9,7 @@ First, look at this simple diagram that shows the general structure of the HTTPS
 
 ![What is HTTPS filtering](https://cdn.adguard.com/public/Adguard/Blog/https/what_is_https_filtering.png)
 
-AdGuard copies properties of the TLS-connection that your browser uses:
+AdGuard copies properties of the TLS connection that your browser uses:
 
 * AdGuard uses the same TLS version
 * AdGuard uses the same encrypting methods (ciphers) as your browser
