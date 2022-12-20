@@ -157,7 +157,7 @@ module.exports = {
             },
             {
               label: 'recover_license',
-              to: '/../../license/what-is',
+              to: '/general/license/what-is',
             },
             {
               label: 'terms_of_sale',
