@@ -51,7 +51,7 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 
 * Open [AdGuard Browser Assistant](https://adguard.com/kb/adguard-for-mac/browser-assistant) and hit **Report an issue**:
 
-![mac](https://cdn.adtidy.org/content/kb/ad_blocker/guides/browser-assistant-mac.png)
+![mac *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/guides/browser-assistant-mac.png)
 
 * Fill in the form for reporting a complaint;
 * After you've done it, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
