@@ -51,7 +51,7 @@ An EV certificate offers a higher level of security and provides more guarantees
 
 ### Problems related to HTTPS filtering
 
-A [2017 study](https://cdn.adguard.com/public/Adguard/Blog/https/interception-ndss17.pdf) shows that 5 to 10% of HTTPS connections are established by HTTPS-filtering applications. It is usually done by various kinds of antivirus software. The bad news is that 24 out of 26 tested antiviruses reduced, in various ways, the connection security level, while two-thirds created connections prone to hacking.
+This recent [study](https://cdn.adguard.com/public/Adguard/Blog/https/interception-ndss17.pdf) shows that 5 to 10% of HTTPS connections are established by HTTPS-filtering applications. It is usually done by various kinds of antivirus software. The bad news is that 24 out of 26 tested antiviruses reduced, in various ways, the connection security level, while two-thirds created connections prone to hacking.
 
 The researchers came to a simple conclusion: the Internet security community should pay close attention to applications that filter secure connections. And the developers of such software must pay serious attention to the quality of filtering implementations.
 

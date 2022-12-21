@@ -19,7 +19,11 @@ In this section, you can also manage your email preferences:
 
 In the *Licenses* section, you can manage your licenses and the devices bound to them.
 
+<<<<<<< HEAD
 [AdGuard licenses](/general/license/what-is) can be:
+=======
+[AdGuard licenses](general/license/what-is) can be:
+>>>>>>> parent of 4491d15e... fixes to the General section of the new KB
 * bound and unbound,
 * extended,
 * upgraded,

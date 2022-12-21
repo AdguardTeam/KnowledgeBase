@@ -21,7 +21,7 @@ The figure below provides a general understanding of how the Browsing Security m
 
 ### AdGuard Browser extensions
 
-Browser extensions work differently, using the so-called [_Lookup API_](https://github.com/AdguardTeam/AdguardForAndroid/issues/162#issue-115487668) to check the pages you visit. Every time you visit any website, your local client exchanges information with our backend server in the form of hashes and hash prefixes. For those interested in the process at a deeper level, the link above will be helpful. As a result of that exchange, the local client determines if the website belongs to the database of potentially dangerous websites or not.
+Browser extensions work differently, using the so-called [_Lookup API_](https://github.com/AdguardTeam/AdguardForAndroid/issues/162) to check the pages you visit. Every time you visit any website, your local client exchanges information with our backend server in the form of hashes and hash prefixes. For those interested in the process at a deeper level, the link above will be helpful. As a result of that exchange, the local client determines if the website belongs to the database of potentially dangerous websites or not.
 
 We bring to your attention that we never get any information that could allow us to determine which websites you visit and use that data in any way.
 
@@ -57,7 +57,7 @@ In the picture below we described an algorithm of Browsing Security Community wo
 
 ### Want to help?
 
-We will gladly accept any help! If you want to send us a complaint about a phishing or malware site, you can do it via [technical support](mailto:support@adguard.com) or [on our forum](http://forum.adguard.com/).
+We will gladly accept any help! If you want to send us a complaint about a phishing or malware site, you can do it via [technical support](mailto:support@adguard.com), or [on our Forum](http://forum.adguard.com/).
 
 ### False-positive responses
 
