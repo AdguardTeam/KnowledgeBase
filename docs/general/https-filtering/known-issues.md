@@ -9,7 +9,7 @@ sidebar_position: 2
 
 First, look at this simple diagram that shows the general structure of the HTTPS protocol:
 
-![What is HTTPS filtering](https://cdn.adguard.com/public/Adguard/Blog/https/what_is_https_filtering.png)
+![What is HTTPS filtering](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
 
 AdGuard copies properties of the TLS connection that your browser uses:
 

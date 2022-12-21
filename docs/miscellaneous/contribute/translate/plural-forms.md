@@ -18,7 +18,7 @@ In contrast to English, the Polish language has three plural forms of nouns. One
 
 Let’s have a look at this picture. Here you can see the groups of numerals which determine a word form when standing in front of it.  
 
-![Polish](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
+![Polish](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
 > Find other examples [here](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals).
 
@@ -54,7 +54,7 @@ Let's take a closer look at them.
 
 ### 1. Phrases with string keys ending in `.singular`, `.dual`, `.plural` {#1type}
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/plurals/dual_it.png)
+![crowdin](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/dual_it.png)
 
 Most of them are represented in the `AdGuard for Windows` project and consist of only one or two words:  
 
@@ -70,7 +70,7 @@ This kind of strings is mostly concentrated in the `AdGuard for Android` project
 
 Please look at the example:
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/plurals/android_fr.png)
+![crowdin](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/android_fr.png)
 
 If there are 3 plural forms of nouns in your language (like in Polish), please write all plural forms separated by commas.
 
@@ -88,7 +88,7 @@ If your language provides only one plural form, then you will see only one phras
 
 For example:
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/plurals/crowdin_scheme.png) 
+![crowdin](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/crowdin_scheme.png) 
 
 Please be attentive when translating these strings and approving them. If you have no idea what the "Other" field means, then just paste the same form as it is in the "Many" field. The translations of "Many" and "Other" fields can be the same.
 
@@ -98,7 +98,7 @@ This is the most complicated type of AdGuard strings which is mostly used in `Ad
 
 Pay close attention to a vertical bar sign between the sentences and **%count%** placeholders in original phrases – this will help you identify phrases where translations require the use of plural forms.
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/plurals/plurals_site.png) 
+![crowdin](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/plurals_site.png) 
 
 Now, let’s imagine — you are faced with such a string: `Standard license for %count% computer | Standard license for %count% computers`. 
 
@@ -122,7 +122,7 @@ For example, when we translate the above mentioned phrase into Slovak, that acco
 
 `**Štandartná licencia pre *%count%* počítač | Štandartná licencia pre *%count%* počítače | Štandartná licencia pre *%count%* počítačov**` 
 
-![Slovak](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/slovak.png)
+![Slovak](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/slovak.png)
 
 In this case, we see three templates which contain three forms of the word *"počítač"* (computer) in Slovak.
 
@@ -132,7 +132,7 @@ In this case, we see three templates which contain three forms of the word *"po�
 
 For example, the Serbian word *'računar'* (computer) has only two forms. But there are 3 plural forms in Serbian. 
  
-![Serbian](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/serbian.png)
+![Serbian](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/serbian.png)
  
 Thus, the translation from English into Serbian should be:
 

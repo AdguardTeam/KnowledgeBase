@@ -9,11 +9,11 @@ Normally browsers trust the AdGuard certificate once it's added to the system ce
 
 ## *Potential Security Risk* error in Firefox-based browsers
 
-![Security risk error](https://cdn.adguard.com/public/Adguard/kb/en/certificate/cert_error_en.png)
+![Security risk error](https://cdn.adtidy.org/public/Adguard/kb/en/certificate/cert_error_en.png)
 
 Old FireFox versions, as well as browsers based on them, do not trust certificates from the system storage, but only those from their local storage. Since v68, FireFox trusts the system certificates, but you still can face the "Connection is untrusted" error. If something like this happens, first try to click the *Reinstall Certificate* button — you will find it in the *Network* tab. 
 
-![Reinstall Certificate](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/reinstall.jpg)
+![Reinstall Certificate](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/reinstall.jpg)
 
 If that doesn't help, follow the instructions for manually adding the AdGuard certificate to the FireFox storage.
 
@@ -25,7 +25,7 @@ If that doesn't help, follow the instructions for manually adding the AdGuard ce
 
 >You can also open the download page by clicking on the link via the AdGuard app at *Settings → Network → HTTPS filtering*.
 
-![Certificate settings](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/link.jpeg)
+![Certificate settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/link.jpeg)
 
 3) Open your browser and then open *Settings*.
 
@@ -33,13 +33,13 @@ If that doesn't help, follow the instructions for manually adding the AdGuard ce
 
 5) Scroll down to *Certificates* and click on the *View Certificates* button.
 
-![View certificates window](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/import1.jpeg)
+![View certificates window](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import1.jpeg)
 
 6) Select *Authorities* tab.
 
 7) Click *Import...*.
 
-![Certificate settings — import](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/import2.jpeg)
+![Certificate settings — import](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import2.jpeg)
 
 8) Browse the downloaded **cert.cer** file and click *Open*.
 
@@ -51,7 +51,7 @@ You've successfully installed AdGuard certificate. Restart the browser and the e
 
 If you are a user of both AdGuard for Windows and Yandex.Browser you may have come across this warning:
 
-![Yandex certificate warning](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/yandex-cert.png)
+![Yandex certificate warning](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/yandex-cert.png)
 
 ### Why is this happening
 

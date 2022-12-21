@@ -24,7 +24,7 @@ If you have problems launching AdGuard for Mac on Sierra, Mojave and Catalina op
 1. Open **Terminal** and enter command `ls -@lOae /private/var/db/KernelExtensionManagement`.
 2. Check that the `restricted` flag is not present (like on the screenshot).
 
-![Command example](https://cdn.adguard.com/content/kb/ad_blocker/mac/restricted-flag.jpg)
+![Command example](https://cdn.adtidy.org/content/kb/ad_blocker/mac/restricted-flag.jpg)
 
 3. Reboot your Mac in recovery mode.
 4. Open **Utilities** -> **Terminal**.

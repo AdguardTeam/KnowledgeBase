@@ -5,7 +5,7 @@ sidebar_position: 3
 
 AdGuard Assistant’s primary function is to manage filtering directly from the browser. It has existed for quite a long time, and its form and content have changed. More precisely, it used to be a mere userscript incorporated into the AdGuard for Mac app and became a full-fledged browser extension. Now it definitely yields more benefits.
 
-![Browser Assistant](https://cdn.adguard.com/content/kb/ad_blocker/mac/assistantmac.jpg)
+![Browser Assistant](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistantmac.jpg)
 
 ## Benefits
 ### Independence 
@@ -22,14 +22,14 @@ Background information:
 ### Smart onboarding
 When AdGuard for Mac is installed for the first time, the thing a user encounters in the first place is the onboarding. During this process the user quickly learns about AdGuard's settings and can customize filtering to their liking. At one stage AdGuard will determine the user's default browser and provide them with a download link for the new Assistant.
 
-![Installing a new browser assistant](https://cdn.adguard.com/content/kb/ad_blocker/mac/assistant_onboarding_safari.jpg)
+![Installing a new browser assistant](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_onboarding_safari.jpg)
 
 > On rare occasions, a browser may prove incompatible with the Browser Assistant, and the user will be offered to install the legacy version instead.
 
 ## Separate tab in settings
 The new Browser Assistant has its own tab in AdGuard for Mac settings, together with Stealth Mode, Browsing Security, Parental Control and others. Don’t worry if you missed the opportunity to install Browser Assistant during the onboarding, you'll find this option in the app's settings. Besides, there is a checkbox to enable the legacy Assistant.
 
-![Browser Assistant tab](https://cdn.adguard.com/content/kb/ad_blocker/mac/assistant-separate-tab.png)
+![Browser Assistant tab](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant-separate-tab.png)
 
 ## Legacy Assistant
 Legacy Assistant is the previous version of Assistant, which is a mere userscript, not a browser extension. Basically, there are two cases when you might want to pick it instead of the new Browser Assistant: 1) the new Assistant is not available for your browser; 2) you are used to the green shield icon and want to leave things as they were.  If you recognize yourself in any of these scenarios, then the legacy version will suit you.

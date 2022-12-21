@@ -5,7 +5,7 @@ sidebar_position: 12
 
 To be able to filter HTTPS traffic (which is extremely important as most ads use HTTPS), AdGuard needs to install a certificate into your device's user storage. On older versions of Android OS this was done automatically, but on Android 11 and later users have to [install it manually](/adguard-for-android/overview).
 
-![Certificate](https://cdn.adguard.com/public/Adguard/Blog/Android/3-5/cert-en.gif)
+![Certificate](https://cdn.adtidy.org/public/Adguard/Blog/Android/3-5/cert-en.gif)
 
 If you experience issues during the manual certificate installation (for example, you installed the certificate, but the application keeps ignoring it), you can find possible solutions below.
 

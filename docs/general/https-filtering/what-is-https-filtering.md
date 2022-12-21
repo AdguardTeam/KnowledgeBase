@@ -11,7 +11,7 @@ Using HTTPS is highly advantageous because encrypted traffic is protected agains
 
 The diagram below describes the difference between plain HTTP protocol and secure HTTPS protocol.
 
-![What is HTTPS](https://cdn.adguard.com/public/Adguard/Blog/https/what_is_https.png)
+![What is HTTPS](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https.png)
 
 ### What is a security certificate?
 
@@ -27,7 +27,7 @@ If it were easy, HTTPS wouldn’t be that secure. When a browser attempts to con
 
 For better understanding we depicted this process:
 
-![How does HTTPS filtering work](https://cdn.adguard.com/public/Adguard/Blog/https/what_is_https_filtering.png)
+![How does HTTPS filtering work](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
 
 ### Does my traffic remain encrypted and secure?
 
@@ -51,7 +51,7 @@ An EV certificate offers a higher level of security and provides more guarantees
 
 ### Problems related to HTTPS filtering
 
-A [2017 study](https://cdn.adguard.com/public/Adguard/Blog/https/interception-ndss17.pdf) shows that 5 to 10% of HTTPS connections are established by HTTPS-filtering applications. It is usually done by various kinds of antivirus software. The bad news is that 24 out of 26 tested antiviruses reduced, in various ways, the connection security level, while two-thirds created connections prone to hacking.
+A [2017 study](https://cdn.adtidy.org/public/Adguard/Blog/https/interception-ndss17.pdf) shows that 5 to 10% of HTTPS connections are established by HTTPS-filtering applications. It is usually done by various kinds of antivirus software. The bad news is that 24 out of 26 tested antiviruses reduced, in various ways, the connection security level, while two-thirds created connections prone to hacking.
 
 The researchers came to a simple conclusion: the Internet security community should pay close attention to applications that filter secure connections. And the developers of such software must pay serious attention to the quality of filtering implementations.
 

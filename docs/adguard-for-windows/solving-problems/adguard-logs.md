@@ -7,7 +7,7 @@ To analyse and diagnose different problems that may potentially arise, the AdGua
 
 1. Open the AdGuard settings. Go to the *General Settings* section, scroll down to the end of the screen and switch the *Logging Level* to **Debug**.
 
-![Debug logging level](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
+![Debug logging level](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
 
 2. Reproduce the issue. 
 
@@ -15,7 +15,7 @@ To analyse and diagnose different problems that may potentially arise, the AdGua
 
 3. Export the recorded logs using the **Export Logs** button.
 
-![Export logs](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
+![Export logs](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
 - Save the archive to any folder.
 
@@ -29,11 +29,11 @@ Sometimes support team members may ask you to send *trace* logs. Then you will n
 
 1. Stop AdGuard by right-clicking on the AdGuard icon in the tray menu and choosing *Exit AdGuard*:
 
-![Exit AdGuard](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/adg-logs-3.png)
+![Exit AdGuard](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-3.png)
 
 Please don't leave the service running:
 
-![Stop AdGuard Service](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/eng_logs_4.png)
+![Stop AdGuard Service](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_logs_4.png)
 
 2. Open the console (type `cmd` in the start panel).
 
@@ -41,7 +41,7 @@ Please don't leave the service running:
 
 4. Select **Debug** logging level.
 
-![Debug](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
+![Debug](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
 
 5. Reproduce the issue.
 
@@ -49,7 +49,7 @@ Please don't leave the service running:
 
 6. Export the recorded logs using the **Export Logs** button.
 
-![Export logs](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
+![Export logs](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
 7. **Important**: after exporting the logs, set the logging level back to **Standard**. **Debug** logging level will slow down the application.
 

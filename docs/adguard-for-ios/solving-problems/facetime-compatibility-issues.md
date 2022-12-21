@@ -11,7 +11,7 @@ It is likely but not guaranteed that FaceTime will work when AdGuard is in Full-
 
 **If you want to use FaceTime and make sure that video/audio calls don't stop working, use Split-Tunnel mode.**
 
-![Tunnel mode screen](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/iOS/tunnel-mode.PNG?!)
+![Tunnel mode screen](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ru/iOS/tunnel-mode.PNG?!)
 
 To enable it, follow the instructions:
 1. Go to AdGuard for iOS *Settings* > *General settings*.
