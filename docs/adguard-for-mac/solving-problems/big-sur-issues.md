@@ -5,7 +5,7 @@ sidebar_position: 4
 
 ## Currently existing problems
 
-Every year Apple releases a new version of macOS, introducing innovative solutions and adding new useful features. But some of them, such as Network Extensions API (Big Sur) or iCloud Private Relay (Monterey), cause some problems to many applications, AdGuard not being an exception. In this article we go over the known issues specific to each macOS version and possible ways to solve them. 
+Every year Apple releases a new version of macOS, introducing innovative solutions and adding new useful features. But some of them, such as Network Extensions API (Big Sur) or iCloud Private Relay (Monterey), cause some problems to many applications, AdGuard not being an exception. In this article we go over the known issues specific to each macOS version and possible ways to solve them.
 
 ### Monterey 12: currently existing problems
 
@@ -13,9 +13,9 @@ These problems aren't fixed by Apple yet, or fixed only partially.
 
 #### Compatibility with iCloud Private Relay
 
-Currently, AdGuard and iCloud Private Relay cannot work at the same time. AdGuard has no ability to block ads because iCloud Private Relay encrypts traffic before AdGuard can filter network connections. When iCloud Private Relay is active, any filtering (including local filtering) becomes impossible. Thus, AdGuard can't filter traffic or perform DNS filtering in Safari. That's why by default, AdGuard uses the "default route" which disables iCloud Private Relay. 
+Currently, AdGuard and iCloud Private Relay cannot work at the same time. AdGuard has no ability to block ads because iCloud Private Relay encrypts traffic before AdGuard can filter network connections. When iCloud Private Relay is active, any filtering (including local filtering) becomes impossible. Thus, AdGuard can't filter traffic or perform DNS filtering in Safari. That's why by default, AdGuard uses the "default route" which disables iCloud Private Relay.
 
-For a deeper understanding of this problem, read [this article](../../icloud-private-relay).
+For a deeper understanding of this problem, read [this article](../icloud-private-relay).
 
 **Recommended solution**
 
@@ -23,7 +23,7 @@ We recommend using AdGuard together with a more traditional VPN service such as 
 
 **Alternative solution**
 
-You can prevent AdGuard from using the "default route" by disabling it. It can be done via Advanced Settings → ```network.extension.monterey.force.split.tunnel```. Note that enabling this setting will cause the problems described above.
+You can prevent AdGuard from using the "default route" by disabling it. It can be done via Advanced Settings → `network.extension.monterey.force.split.tunnel`. Note that enabling this setting will cause the problems described above.
 
 ![Advanced Settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/mac_adguard_advanced_settings.jpg)
 
@@ -31,7 +31,7 @@ You can prevent AdGuard from using the "default route" by disabling it. It can b
 
 Apple's Mail app now uses a proxy to hide a user's IP address when downloading images from emails. However, it won't work if there's an active VPN connection. As it treats AdGuard as a VPN, it won't preload images automatically.
 
-For a deeper understanding of this problem, read [this article](../../protect-mail-activity).
+For a deeper understanding of this problem, read [this article](../protect-mail-activity).
 
 **Recommended solution**
 
@@ -39,11 +39,11 @@ At this point, we recommend using a more traditional VPN service, such as AdGuar
 
 ### Monterey 12, Big Sur 11.6 and later: currently existing problems
 
-These problems aren't fixed by Apple yet, or fixed only partially. 
+These problems aren't fixed by Apple yet, or fixed only partially.
 
 #### Compatibility with Cisco AnyConnect
 
-AdGuard will not work together with Cisco AnyConnect while in *Network Extension* mode. You have to switch AdGuard to *Automatic Proxy* mode. To do so, follow [this instruction](../../big-sur-issues#automatic-proxy).
+AdGuard will not work together with Cisco AnyConnect while in *Network Extension* mode. You have to switch AdGuard to *Automatic Proxy* mode. To do so, follow [this instruction](../../#automatic-proxy).
 
 #### Compatibility with Flutter
 
@@ -52,7 +52,7 @@ If you use Flutter alongside AdGuard in "Network Extension" mode (or any other "
 
 1) Use AdGuard in [Automatic Proxy](#automatic-proxy) mode.
 
-2) Disable SIP and switch AdGuard to Kernel Extension mode as explained [here](../../big-sur-issues#kernel-extension).
+2) Disable SIP and switch AdGuard to Kernel Extension mode as explained [here](../../..#kernel-extension).
 
 #### VPN apps with legacy API
 
@@ -74,7 +74,7 @@ These problems have been fixed by Apple by now but can be encountered in the old
 
 At this moment, Network Extension mode in AdGuard isn't compatible with [Little Snitch 5](https://obdev.at/products/littlesnitch/index.html). When both are running, there's a chance to encounter issues with various apps' behavior, even if they aren't filtered by AdGuard. This problem is directly caused by a bug in Big Sur, and we've already informed Apple about it. This leaves us to believe that this issue will get resolved in one of the next updates.
 
-It needs to be said that this problem can't be solved by disabling connections monitoring in Little Snitch, because this action doesn't unload Little Snitch's extension from the system. We recommend to switch to [**Automatic Proxy**](../../big-sur-issues#automatic-proxy) filtering mode when running AdGuard alongside with Little Snitch on Big Sur, at least until Apple fixes the bug.
+It needs to be said that this problem can't be solved by disabling connections monitoring in Little Snitch, because this action doesn't unload Little Snitch's extension from the system. We recommend to switch to [**Automatic Proxy**](../../..#automatic-proxy) filtering mode when running AdGuard alongside with Little Snitch on Big Sur, at least until Apple fixes the bug.
 
 ### Compatibility with local proxies
 
@@ -95,7 +95,7 @@ Enter a string that looks like `scheme://user:password@host:port`, where
 * `port` is the desired port number to be used by the proxy server.
 
 > Example: `socks5://localhost:6322` will configure a SOCKS5 local proxy that listens to port 6322 and doesn't require a username or a password.
- 
+
 Click *Apply* to make AdGuard route all traffic that went through it to the configured proxy server.
 
 If you run into any problems, please contact our tech support at support@adguard.com.

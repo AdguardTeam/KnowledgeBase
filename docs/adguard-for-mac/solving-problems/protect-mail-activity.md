@@ -26,11 +26,11 @@ As a result, AdGuard can't work together with iCloud Private Relay and Mail.app 
 1. iCloud Private Relay is applied to connections at the library level - before they reach the socket level, where AdGuard operates.
 2. iCloud Private Relay uses QUIC, which AdGuard can't filter because HTTP/3 filtering is not yet available.
 3. As AdGuard blocks QUIC, including iCloud Private Relay traffic - otherwise, ad blocking is impossible.
-4. When you use iCloud Private Relay and switch AdGuard into the "split-tunnel" mode, you can't open websites in Safari. 
+4. When you use iCloud Private Relay and switch AdGuard into the "split-tunnel" mode, you can't open websites in Safari.
 5. To work around this issue for Monterey, we apply the "default route" rule. When Private Relay sees that rule, it disables itself automatically.
 So, AdGuard works seamlessly on Monterey, but iCloud Private Relay gets disabled.
 
-```network.extension.monterey.force.split.tunnel``` restores the "Big Sur" behavior, but this option may break access to websites due to (3) and (4).
+`network.extension.monterey.force.split.tunnel` restores the "Big Sur" behavior, but this option may break access to websites due to (3) and (4).
 We keep searching for a solution to this issue. One of the options is implementing HTTP/3 filtering.
 
 ## Recommended solution
