@@ -52,7 +52,7 @@ If you use Flutter alongside AdGuard in "Network Extension" mode (or any other "
  
 1) Use AdGuard in [Automatic Proxy](https://adguard.com/kb/adguard-for-mac/solving-problems/big-sur-issues#automatic-proxy) mode
  
-2) Disable SIP and switch AdGuard to Kernel Extension mode as explained [here](https://adguard.com/kb/adguard-for-mac/solving-problems/big-sur-issues#kernel-extension ).
+2) Disable SIP and switch AdGuard to Kernel Extension mode as explained [here](https://adguard.com/kb/adguard-for-mac/solving-problems/big-sur-issues#kernel-extension).
  
 #### VPN apps with legacy API
  
@@ -141,8 +141,7 @@ If you chose SOCKS5 protocol, you also need to set the value of the `upstream.pr
  
 It's impossible to foresee each and every possible problem that can pop up in Big Sur or Monterey, there are countless various hardware/software and settings configurations. If you face any compatibility issues, please contact our support team, but feel free to try one of these workarounds first.
  
-### Using "Automatic proxy" filtering mode
-{#automatic-proxy}
+### Using "Automatic proxy" filtering mode {#automatic-proxy}
  
 If you face problems in Big Sur or Monterey which can't be resolved by any of the methods above, you can try switching AdGuard to *Automatic proxy* mode.
  
@@ -158,8 +157,7 @@ Now AdGuard has automatically added a **.pac** file to your Mac's network settin
  
 >Take into account that some apps may ignore this system setting and their traffic will not be filtered.
  
-### Enabling Kernel Extension in Big Sur and Monterey 
-{#kernel-extension}
+### Enabling Kernel Extension in Big Sur and Monterey {#kernel-extension}
  
 By default AdGuard uses Network Extension framework in Big Sur and Monterey as the old Kernel Extension framework is disabled there. This can cause some compatibility problems, but to enable Kernel Extension back, you need to disable System Integrity Protection (SIP) first. To disable SIP, follow this instruction:
  
