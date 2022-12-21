@@ -19,14 +19,14 @@ We recommend setting up two-factor authentication for your AdGuard account. It w
 
 3) Scan the verification code with the help of any authenticator app on your phone:
 
-![The verification code](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/2Fa2en.png)
+![The verification code *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/2Fa2en.png)
 
 *Important*
 * Save the second-factor backup code somewhere, it will be necessary to recover your account in case your mobile phone gets lost or stolen;
 
 If everything is done right, you will see this when you log into your account the next time:
 
-![The result](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/2Fa3en.png)
+![The result *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/2Fa3en.png)
 
 Use your mobile authenticator app to read the code and enter it. You should be logged in now!
 

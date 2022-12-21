@@ -9,7 +9,7 @@ Full-fledged ad blockers can’t be introduced to Google Play due to the policy 
 
 As an alternative, Google offers to developers the Content blocking API. The API has strict limitations and is currently supported by two browsers: Yandex Browser and Samsung Internet browser. Many complex filtering rules supported in other AdGuard products don't work with this API.
 
-![Available browsers](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker.png)
+![Available browsers *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker.png)
 
 AdGuard Content Blocker was designed to fit the Google Play policy framework. Compared to other AdGuard products, AdGuard Content Blocker has less ad blocking capabilities:
 

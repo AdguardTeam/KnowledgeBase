@@ -9,7 +9,7 @@ AdGuard for Mac is a standalone ad blocker for macOS. While AdGuard for Safari i
 
 ## Home panel
 
-![Home panel](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Mainscreen.png)
+![Home panel *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Mainscreen.png)
     
 The first thing you see upon startup will be a screen with a big On/Off toggle. Below are shown various stats (ads blocked, trackers blocked, data saved) since the installation or since the last stats reset.
     
@@ -95,7 +95,7 @@ If you wish to help us in perfecting this module, you can check the lower box on
 
 AdGuard Browser Assistant’s primary function is to manage filtering directly from the browser. It used to be a mere userscript incorporated into AdGuard for Mac app that then became a full-fledged browser extension. Know more about the [benefits it yields](https://kb.adguard.com/en/macos/overview/browser-assistant).
 
-![Assistant popup menu](https://cdn.adtidy.org/content/kb/ad_blocker/mac/safari_assistant_pop-up_menu.jpg)
+![Assistant popup menu *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/safari_assistant_pop-up_menu.jpg)
 
 You will be prompted to install the Browser Assistant for your default browser when you first install AdGuard (during the onboarding process). If you missed it, you can [download it for any browser](https://adguard.com/en/adguard-assistant/overview.html) at any time.
 

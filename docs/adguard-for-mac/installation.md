@@ -17,7 +17,7 @@ sidebar_position: 2
 
 To install AdGuard for macOS on your computer, launch your browser, type _adguard.com_ in the address bar, and press **Download** on the page that opens.
 
-![Download the app](https://cdn.adtidy.org/content/kb/ad_blocker/mac/1.jpg)
+![Download the app *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/1.jpg)
 
 Wait for _AdguardInstaller.dmg_ to download and double-click its icon in the list of downloaded files on the Dock panel. 
 
@@ -58,7 +58,7 @@ First of all, open the Finder app by clicking the respective icon:
 
 Go to the Applications section. Find AdGuard there, right-click it and choose **Move to Trash**.
 
-![Move AdGuard to Trash](https://cdn.adtidy.org/content/kb/ad_blocker/mac/11.jpg)
+![Move AdGuard to Trash *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/11.jpg)
 
 ### Advanced
 

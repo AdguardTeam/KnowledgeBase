@@ -14,12 +14,12 @@ To make Firefox trust the AdGuard certificate, do the following:
 1. Run the browser.
 2. Go to **Settings** > **About Firefox**.
 
-![About Firefox](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
+![About Firefox *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
 
 3. Tap the Firefox logo five times.
 4. Navigate to **Settings** > **Secret Settings**.
 
-![Secret Settings*](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
+![Secret Settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
 
 5. Toggle **Use third party CA certificates**.
 

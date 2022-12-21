@@ -25,7 +25,7 @@ We recommend using AdGuard together with a more traditional VPN service such as 
  
 You can prevent AdGuard from using the "default route" by disabling it. It can be done via Advanced Settings -> ```network.extension.monterey.force.split.tunnel```. Note that enabling this setting will cause the problems described above.
  
-![Advanced Settings](https://cdn.adtidy.org/content/kb/ad_blocker/mac/mac_adguard_advanced_settings.jpg)
+![Advanced Settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/mac_adguard_advanced_settings.jpg)
 
 #### Compatibility with Protect Mail Activity
 
@@ -121,7 +121,7 @@ First of all, you need a working server side for your proxy. Most likely, to set
  
 Then you'd have to install Shadowsocks client on your Mac. Make sure that you select 'Manual Mode' or 'Auto Mode' in its settings! The configuration won't work if you select 'Global Mode' (or 'Auto Mode' in Big Sur versions prior to 11.1).
  
-![Select Manual Mode or Auto Mode in settings](https://cdn.adtidy.org/content/kb/ad_blocker/mac/shadowsocks.jpg)
+![Select Manual Mode or Auto Mode in settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/shadowsocks.jpg)
  
 Now go to *AdGuard menu -> Advanced -> Advanced Settings...* and set the *Value* area of the `upstream.proxy` setting to `socks5://localhost:1080`. Notice that you need to use "local_port" value from the JSON file here.
  
@@ -131,7 +131,7 @@ Because Shadowsocks uses SOCKS5, you also need to set the value of the `upstream
  
 In Big Sur v11.1+, there are no known conflicts between AdGuard and Surge proxy. If you are using an older version of Big Sur (prior to 11.1), check that **System Proxy** in the bottom right corner is disabled. Otherwise, Surge won't work with AdGuard. On the other hand, **Enhanced Mode** can be enabled without causing a conflict in any Big Sur version.
  
-![Configuring an upstream Surge proxy](https://cdn.adtidy.org/content/kb/ad_blocker/mac/surge.jpg)
+![Configuring an upstream Surge proxy *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/surge.jpg)
  
 Now go to *AdGuard menu -> Advanced -> Advanced Settings...* and set the *Value* area of the `upstream.proxy` setting to `socks5://localhost:6153` or `http://localhost:6152`, depending on which type of proxy you want to use. Notice that you need to use **port** value that's indicated in the **Events** area of the **Activity** tab in your Surge client.
  

@@ -5,7 +5,7 @@ sidebar_position: 3
 
 AdGuard Assistant’s primary function is to manage filtering directly from the browser. It has existed for quite a long time, and its form and content have changed. More precisely, it used to be a mere userscript incorporated into AdGuard for Windows app and became a full-fledged browser extension. Now it yields more benefits.
 
-![Browser Assistant](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/assistant-menu.png)
+![Browser Assistant *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/assistant-menu.png)
 
 ## Benefits
 
@@ -29,7 +29,7 @@ When using the Browser Assistant, all these problems don’t matter as there can
 
 The new Browser Assistant has its own tab in AdGuard for Windows settings, along with Stealth Mode, Browsing Security, Parental Control and others. There you will find a link to download the extension for your default browser. Besides, there is a checkbox to enable the legacy Assistant.
 
-![Settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
+![Settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 
 ## Legacy Assistant
 
