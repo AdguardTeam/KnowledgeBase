@@ -39,7 +39,7 @@ While the features of other filter groups are more or less predictable, there is
 
 In this tab, you can add filters that are not present in the extension by default. There are plenty of [publicly available filters on the Internet](https://filterlists.com). Moreover, you can create and add your own filters. In fact, you can build any set of filters and customize ad blocking the way you like.
 
-To add a filter, just click the **Add custom filter** button and then enter the URL or the file path of the filter you want to be added, and then click the **Next** button.
+To add a filter, just click *Add custom filter*, enter the URL or the file path of the filter you want to be added and click *Next*.
 
 ![Add a custom filter](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
 
@@ -51,7 +51,7 @@ To add a filter, just click the **Add custom filter** button and then enter the 
 
 There are several ways to add new rules. The most straightforward is to just type a rule in, but it requires some knowledge of the [rule syntax](/general/ad-filtering/create-own-filters).
 
-You can import a ready-to-use filter list from a text file as well. *Make sure that different rules are separated by line breaks.* Note that importing a ready-to-use filter list is better done in the [Custom filters](#custom) tab.
+You can import a ready-to-use filter list from a text file as well. **Make sure that different rules are separated by line breaks.** Note that importing a ready-to-use filter list is better done in the [Custom filters](#custom) tab.
 
 Besides, you can export your own filtering rules. This option is good for transferring your list of rules between browsers or devices.
 
@@ -63,7 +63,7 @@ The *allowlist* is used to exclude certain websites from filtering. Blocking rul
 
 ![Allowlist](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist.png)
 
-The *allowlist* can be inverted, too: you can unblock ads everywhere except on the websites added to this list. To do that, activate the **Invert allowlist** option.
+The *allowlist* can be inverted, too: you can unblock ads everywhere except on the websites added to this list. To do that, activate the *Invert allowlist* option.
 
 ![Invert allowlist](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist1.png)
 
@@ -89,9 +89,9 @@ In the *General* tab, you can allow search ads and the [self-promotion of websit
 
 ![General](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_general.png)
 
-Besides, here you can enable [*Phishing and malware protection*](/general/browsing-security#phishing).
+Besides, here you can enable [*Phishing and malware protection*](/general/browsing-security).
 
-You can save your settings configuration by clicking the **Export settings** button. The settings will be saved as a .json file. To upload the previously saved settings configuration, use the **Import settings** function. You can even use it to quickly switch between different settings profiles or even to transfer settings configurations between different browsers.
+You can save your settings configuration by clicking the *Export settings* button. The settings will be saved as a .json file. To upload the previously saved settings configuration, use the *Import settings* function. You can even use it to quickly switch between different settings profiles or even to transfer settings configurations between different browsers.
 
 ### Additional settings {#misc}
 
