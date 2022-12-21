@@ -7,7 +7,7 @@ sidebar_position: 3
 
 To activate your license, go to the *License* section of your AdGuard product and find the *Log in* field or *Activate* button. Then use the email and password of your AdGuard account to log in. If you don't have an account yet, you will be offered to create one.
 
-> Note: For successful activation using AdGuard account, you need to have a valid license with at least one open slot there. (If your license is already used on a maximum number of devices, you can [upgrade it](#how-to-upgrade-a-license) or [transfer key from one device to another](#how-to-transfer-a-license-to-another-device).)
+> Note: To activate a license via AdGuard account, you need to have a valid license with at least one open slot there. If your license is already used on a maximum number of devices, you can [upgrade it](#how-to-upgrade-a-license) or [transfer it from one device to another](#how-to-transfer-a-license-to-another-device).
 
 Alternatively, you can use a [license key](../what-is#license-key) to activate the license. 
 
@@ -25,7 +25,7 @@ or double click on the AdGuard icon in the system tray:
 
 ![AdGuard icon in the system tray](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windows2En.png)
 
-2. Go to **License** in the main menu, then click **Activate license** 
+2. Go to **License** tab in the app menu and click **Activate license**
 
 ![Click Activate license](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowslicense1en.png)
 
@@ -41,11 +41,11 @@ or double click on the AdGuard icon in the system tray:
 
 ### Activating AdGuard for Mac
 
-1. Open AdGuard app (lick on the AdGuard icon in the menu bar) 
+1. Open the AdGuard app (click the AdGuard icon in the menu bar)
 
 ![AdGuard icon in the menu bar](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ja/General/mac1.png)
 
-2. Click on **gear icon** in the top right corner
+2. Click the **gear icon** in the top right corner
 3. Click **License...** 
 
 ![Go to Settings and License](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/macEn.png)
@@ -87,7 +87,7 @@ or double click on the AdGuard icon in the system tray:
 
 ### Activating AdGuard for iOS
 
-1. Open the application and tap on the **gear icon** in the bottom right corner of the screen
+1. Open the AdGuard app and tap the **gear icon** in the bottom right corner of the screen
 
 2. Tap **License**
 
