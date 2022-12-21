@@ -10,7 +10,7 @@ When using ad blockers, you may face incorrect work of certain websites or broke
 * Modified algorithms of adding ads;
 * Added filters/extensions from third-party developers;
 * The authors of one of the filters made a mistake when creating the rule;
-* Advertising reinsertion. Find more about this method in our [blog](https://adguard.com/ru/blog/ad-reinsertion.html).
+* Advertising reinsertion. Find more about this method in our [blog](https://adguard.com/blog/ad-reinsertion.html).
 
 You can help us by filling in an application form with examples of ads you faced with. To do it, please, use instructions for your OS.
 
@@ -31,7 +31,7 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 
 ### Windows {#windows}
 
-* Open [AdGuard Browser Assistant](https://kb.adguard.com/en/windows/features/browser-assistant) and hit **Report an issue**:
+* Open [AdGuard Browser Assistant](https://adguard.com/kb/adguard-for-windows/browser-assistant) and hit **Report an issue**:
 
 ![windows](https://cdn.adguard.com/content/Kb/ad_blocker/guides/browser-assistant.png)
 
@@ -49,7 +49,7 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 
 ### Mac {#mac}
 
-* Open [AdGuard Browser Assistant](https://kb.adguard.com/en/macos/overview/browser-assistant) and hit **Report an issue**:
+* Open [AdGuard Browser Assistant](https://adguard.com/kb/adguard-for-mac/browser-assistant) and hit **Report an issue**:
 
 ![mac](https://cdn.adguard.com/content/kb/ad_blocker/guides/browser-assistant-mac.png)
 

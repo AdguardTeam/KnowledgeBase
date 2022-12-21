@@ -29,7 +29,7 @@ Choose any of available product folders and select a file — now you can start 
 
 2. Easily move between the files of the project.
 
-![crowdin](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/filter_file.png) 
+![crowdin](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/filter_files.png) 
 
 3. Pay attention to the glossary terms highlighted with a dotted line in a source phrase. Usually, they are special words (like brand names) that should not be translated.
 
