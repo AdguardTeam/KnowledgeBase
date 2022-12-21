@@ -15,7 +15,7 @@ These problems aren't fixed by Apple yet, or fixed only partially.
  
 Currently, AdGuard and iCloud Private Relay cannot work at the same time. AdGuard has no ability to block ads because iCloud Private Relay encrypts traffic before AdGuard can filter network connections. When iCloud Private Relay is active, any filtering (including local filtering) becomes impossible. Thus, AdGuard can't filter traffic or perform DNS filtering in Safari. That's why by default, AdGuard uses the "default route" which disables iCloud Private Relay. 
  
-For a deeper understanding of this problem, read [this article](/adguard-for-mac/solving-problems/icloud-private-relay).
+For a deeper understanding of this problem, read [this article](../../icloud-private-relay).
  
 **Recommended solution**
  
@@ -31,7 +31,7 @@ You can prevent AdGuard from using the "default route" by disabling it. It can b
 
 Apple's Mail app now uses a proxy to hide a user's IP address when downloading images from emails. However, it won't work if there's an active VPN connection. As it treats AdGuard as a VPN, it won't preload images automatically.
 
-For a deeper understanding of this problem, read [this article](/adguard-for-mac/solving-problems/protect-mail-activity).
+For a deeper understanding of this problem, read [this article](../../protect-mail-activity).
 
 **Recommended solution**
 
@@ -43,7 +43,7 @@ These problems aren't fixed by Apple yet, or fixed only partially.
  
 #### Compatibility with Cisco AnyConnect
  
-AdGuard will not work together with Cisco AnyConnect while in *Network Extension* mode. You have to switch AdGuard to *Automatic Proxy* mode. To do so, follow [this instruction](/adguard-for-mac/solving-problems/big-sur-issues#automatic-proxy).
+AdGuard will not work together with Cisco AnyConnect while in *Network Extension* mode. You have to switch AdGuard to *Automatic Proxy* mode. To do so, follow [this instruction](../../big-sur-issues#automatic-proxy).
  
 #### Compatibility with Flutter
  
@@ -52,7 +52,7 @@ If you use Flutter alongside AdGuard in "Network Extension" mode (or any other "
  
 1) Use AdGuard in [Automatic Proxy](#automatic-proxy) mode.
  
-2) Disable SIP and switch AdGuard to Kernel Extension mode as explained [here](/adguard-for-mac/solving-problems/big-sur-issues#kernel-extension).
+2) Disable SIP and switch AdGuard to Kernel Extension mode as explained [here](../../big-sur-issues#kernel-extension).
  
 #### VPN apps with legacy API
  
@@ -74,7 +74,7 @@ These problems have been fixed by Apple by now but can be encountered in the old
  
 At this moment, Network Extension mode in AdGuard isn't compatible with [Little Snitch 5](https://obdev.at/products/littlesnitch/index.html). When both are running, there's a chance to encounter issues with various apps' behavior, even if they aren't filtered by AdGuard. This problem is directly caused by a bug in Big Sur, and we've already informed Apple about it. This leaves us to believe that this issue will get resolved in one of the next updates.
  
-It needs to be said that this problem can't be solved by disabling connections monitoring in Little Snitch, because this action doesn't unload Little Snitch's extension from the system. We recommend to switch to [**Automatic Proxy**](/adguard-for-mac/solving-problems/big-sur-issues#automatic-proxy) filtering mode when running AdGuard alongside with Little Snitch on Big Sur, at least until Apple fixes the bug.
+It needs to be said that this problem can't be solved by disabling connections monitoring in Little Snitch, because this action doesn't unload Little Snitch's extension from the system. We recommend to switch to [**Automatic Proxy**](../../big-sur-issues#automatic-proxy) filtering mode when running AdGuard alongside with Little Snitch on Big Sur, at least until Apple fixes the bug.
  
 ### Compatibility with local proxies
  

@@ -31,13 +31,13 @@ There are eight of them, each category unites several filters that serve and sha
 
 > More enabled filters does not guarantee that there will be less ads. A large number of various filters enabled simultaneously reduces the quality of ad blocking.
 
-> Custom filters category is empty by default for users to add there their filters by URL. You can find filters on the Internet or even try to [create one by yourself](/general/ad-filtering/create-own-filters).  
+> Custom filters category is empty by default for users to add there their filters by URL. You can find filters on the Internet or even try to [create one by yourself](./general/ad-filtering/create-own-filters).  
 
 ### User rules {#user-rules}
 
-Here you can add new rules — either by entering them manually, or by using [the AdGuard manual blocking tool in Safari](/adguard-for-ios/overview#assistant). Use this tool to customize Safari filtering without adding an entire filter list. 
+Here you can add new rules — either by entering them manually, or by using [the AdGuard manual blocking tool in Safari](../..#assistant). Use this tool to customize Safari filtering without adding an entire filter list. 
 
-> Learn [how to create your own ad filters](/general/ad-filtering/create-own-filters). But please note that many of them won't work in Safari on iOS.
+> Learn [how to create your own ad filters](./general/ad-filtering/create-own-filters). But please note that many of them won't work in Safari on iOS.
 
 ![User rules screen *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/user_rules_en.jpeg)
 
@@ -83,7 +83,7 @@ To get access to this setting, *Advanced mode* has to be enabled from the *Gener
 
 #### DNS filters {#dns-filters}
 
-Similar to filters that work in Safari, DNS filters are sets of rules written according to special [syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/). AdGuard will monitor your DNS traffic and block requests that match one or more rules. You can use filters such as [AdGuard DNS filter](https://github.com/AdguardTeam/AdguardSDNSFilter) or add hosts files as filters. Multiple filters can be added simultaneously. To know how to do it, get acquainted with [an exhaustive manual](/adguard-for-ios/solving-problems/system-wide-filtering). 
+Similar to filters that work in Safari, DNS filters are sets of rules written according to special [syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/). AdGuard will monitor your DNS traffic and block requests that match one or more rules. You can use filters such as [AdGuard DNS filter](https://github.com/AdguardTeam/AdguardSDNSFilter) or add hosts files as filters. Multiple filters can be added simultaneously. To know how to do it, get acquainted with [an exhaustive manual](../solving-problems/system-wide-filtering). 
 
 #### Allowlist and Blocklist {#allowlist-blocklist}
 
@@ -117,7 +117,7 @@ To see it, do the following: open Safari and tap the arrow-in-a-box symbol. Then
 2. **Block an element on this page.** Tap it to enter the 'Element blocking' mode: choose any element on the page, adjust the size by tapping 'plus' or 'minus', preview if necessary and then tap the checkmark icon to confirm. The selected element will be hidden from the page and a corresponding rule will be added to User rules. Remove or disable it there to revert the change.
 3. **Report an issue on this page.** Opens a web reporting tool that will help you send a report to our support team in just a few taps. Use it if you noticed a missed ad or an incorrect blocking on the page. 
 
-> On iOS 15 devices, the Assistant features are available through [AdGuard Safari Web Extension](/adguard-for-ios/web-extension), which enhances the capabilities of AdGuard for iOS and allows you to take advantage of iOS 15. With this web extension, AdGuard can apply advanced filter rules and, as a result, block more ads.
+> On iOS 15 devices, the Assistant features are available through [AdGuard Safari Web Extension](../web-extension), which enhances the capabilities of AdGuard for iOS and allows you to take advantage of iOS 15. With this web extension, AdGuard can apply advanced filter rules and, as a result, block more ads.
 
 ### Activity {#activity}
 
