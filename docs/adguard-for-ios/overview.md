@@ -171,7 +171,7 @@ While Safari content blocking and DNS protection are indisputably two major modu
 
 ![Dark theme *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/main_screen_dark_en.jpeg)
 
-Residing right at the top of **Settings** -> **General** screen, this setting allows you to switch between dark and light themes.
+Residing right at the top of **Settings** → **General** screen, this setting allows you to switch between dark and light themes.
 
 - **Widgets**
 

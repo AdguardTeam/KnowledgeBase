@@ -17,13 +17,13 @@ To analyse and diagnose different problems that may potentially arise, the AdGua
 
 To save files that we need, do the following:
 
-- Open **Application**: **Event Viewer (Local)** -> **Windows Logs** -> **Application**.
+- Open **Application**: **Event Viewer (Local)** → **Windows Logs** → **Application**.
 
 - Right-click on the **Application** and in drop-down menu select **Save All Events As...**
 
 - Select a name and where to save, click **Save**. Select **Display information for the following languages**. You need to tick the box next to **English**. Click **OK**.
 
-- Open **System**: **Event Viewer (Local)** -> **Windows Logs** ->  **System**.
+- Open **System**: **Event Viewer (Local)** → **Windows Logs** →  **System**.
 
 - Right-click on **System** and in the drop-down menu, select **Save All Events As...**
 
