@@ -31,7 +31,7 @@ or double-click on the AdGuard icon in the system tray:
 
 3. You will be presented with two options for activation:
 
-- Via entering the **email** and **password** from your **AdGuard  account** (or through a FB/Google/Apple account)
+- Via entering the **email** and **password** from your **AdGuard account** (or from your Facebook/Google/Apple account)
 
 ![Log in to your AdGuard account](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowslicense2en.png)
 
@@ -55,11 +55,11 @@ or double-click on the AdGuard icon in the system tray:
 ![Press Activate](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/maclicenseen1.png)
 
 5. You will be presented with two options for activation:
-- Activate by entering **Email** and **Password** from your **AdGuard  account** (or through a FB/Google/Apple account)
+- Via entering **email** and **password** from your **AdGuard  account** (or from your Facebook/Google/Apple account)
 
 ![Log in to your AdGuard account to activate](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/maclicenseen2.png)
 
-- Activate with a **license key**
+- Via entering a **license key**
 
 ![Enter your license key to activate](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/maclicenseen3.png)
 
@@ -77,7 +77,7 @@ or double-click on the AdGuard icon in the system tray:
 
 5. Press **Activate Premium**, and you will be presented with two activation options:
 
-- Via entering the **email** and **password** from your **AdGuard account** (or sign in with Facebook/Google account)
+- Via entering the **email** and **password** from your **AdGuard account** (or from your Facebook/Google account)
 
 ![Log in to activate *mobile](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidlicense2en.png)
 
