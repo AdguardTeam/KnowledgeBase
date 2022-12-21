@@ -69,21 +69,21 @@ or double-click on the AdGuard icon in the system tray:
 2. Tap **menu icon (☰)** in the top left corner of the screen
 3. Tap **Get Premium** bar (or tap **License Status**)
 
-![Tap Get Premium or License Status](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidlicense1en.png)
+![Tap Get Premium or License Status *mobile](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidlicense1en.png)
 
 4. Tap **three-dot menu (⋮)** in the top right corner of the screen
 
-![Tap three-dot menu](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/android2En.png)
+![Tap three-dot menu *mobile](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/android2En.png)
 
 5. Press **Activate Premium**, and you will be presented with two activation options:
 
 - Via entering the **email** and **password** from your **AdGuard account** (or sign in with Facebook/Google account)
 
-![Log in to activate](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidlicense2en.png)
+![Log in to activate *mobile](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidlicense2en.png)
 
 - Via entering a **license key**
 
-![Enter your license key to activate](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidlicense3en.png)
+![Enter your license key to activate *mobile](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidlicense3en.png)
 
 ### Activating AdGuard for iOS
 
