@@ -7,7 +7,7 @@ sidebar_position: 5
 
 During the installation you can face an error like this: 
 
-![Installation error screen](https://cdn.adguard.com/content/kb/ad_blocker/mac/macerrorscreenEN.jpg)
+![Installation error screen](https://cdn.adtidy.org/content/kb/ad_blocker/mac/macerrorscreenEN.jpg)
 
 Follow this instruction to solve the problem:
 

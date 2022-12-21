@@ -11,4 +11,4 @@ If you encounter a problem that you suspect might be caused by this, you can alw
 
 2. Disable WFP driver as it’s done in this picture:
 
-![WFP driver](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/wfp-driver.png)
+![WFP driver *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/wfp-driver.png)

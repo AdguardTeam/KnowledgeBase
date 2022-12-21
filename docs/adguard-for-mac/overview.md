@@ -9,7 +9,7 @@ AdGuard for Mac is a standalone ad blocker for macOS. While AdGuard for Safari i
 
 ## Home panel
 
-![Home panel](https://cdn.adguard.com/content/kb/ad_blocker/mac/Mainscreen.png)
+![Home panel *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Mainscreen.png)
     
 The first thing you see upon startup will be a screen with a big On/Off toggle. Below are shown various stats (ads blocked, trackers blocked, data saved) since the installation or since the last stats reset.
     
@@ -17,7 +17,7 @@ To start configuring AdGuard for Mac, you need to click the gear in the upper ri
 
 ## General Preferences
 
-![General](https://cdn.adguard.com/content/kb/ad_blocker/mac/General.jpg)
+![General](https://cdn.adtidy.org/content/kb/ad_blocker/mac/General.jpg)
 
 Descriptions under option titles seem self-explanatory, but still:
 
@@ -37,7 +37,7 @@ From this same window you can access the above-mentioned Allowlist, to which you
 
 ## Filters
 
-![Filters](https://cdn.adguard.com/content/kb/ad_blocker/mac/Filters.jpg)
+![Filters](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Filters.jpg)
     
 Filters are the main driving force behind the Ad blocker module. To understand how filtering works, get acquainted with our [comprehensive article](https://adguard.com/en/blog/how-ad-blocking-is-done.html). But in essence, filter lists are sets of rules written in a special language, and your ad blocker is an interpreter of these rules who then implements them. As a result, you stop seeing ads on your web pages and life gets lots better.
 
@@ -54,13 +54,13 @@ AdGuard filters are automatically updated. Our developers create them all based 
 
 ## User rules
 
-![User rules](https://cdn.adguard.com/content/kb/ad_blocker/mac/Filters.jpg)
+![User rules](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Filters.jpg)
     
 Another vital part of the Ad Blocker module are its User rules. If you have some coding experience and would like to create your own rules that would be a better custom fit than the standard filters already available, then you can try your hand at this. The syntax AdGuard uses for its filtering rules is based on that of any other ad blocking extension, but with considerable additions, extending its possibilities. The whole process of rule-writing in all its nuances is described in these comprehensive instructions, so if you want to write some custom rules and check how much of a coder you are, just follow the steps we described [in this article](https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters). 
 
 ## DNS
 
-![DNS](https://cdn.adguard.com/content/kb/ad_blocker/mac/DNS.jpg)
+![DNS](https://cdn.adtidy.org/content/kb/ad_blocker/mac/DNS.jpg)
 
 DNS filtering is one of the most useful features, thanks to which all your DNS traffic is encrypted. But if you're using the default DNS server provided by your ISP, your DNS traffic is likely not encrypted and vulnerable to snooping and hijacking. 
 
@@ -68,7 +68,7 @@ In the DNS panel you can select the DNS servers from known DNS providers or even
 
 ## Stealth Mode
 
-![Stealth Mode](https://cdn.adguard.com/content/kb/ad_blocker/mac/StealthMode.jpg)
+![Stealth Mode](https://cdn.adtidy.org/content/kb/ad_blocker/mac/StealthMode.jpg)
     
 This module is a very useful tool that will help you maintain your privacy from websites that try to retain such info about you as your IP address, computer parameters, browser settings and even the initial page from which you were redirected, not to mention cart contents if we speak of web stores. If this list of info potentially to be shared with shady third parties doesn't make you think twice, then might we add that in most cases they will also get such personal data as your age, yearly income, medical history, physical address and your kids' names. Eliminating such things as unwanted cookies or clandestine insertion of tracking parameters into your browser is what Stealth Mode does best. 
 
@@ -76,7 +76,7 @@ Stealth Mode contains a wide range of options, which ensure its flexible configu
 
 ## Browsing Security
 
-![Security](https://cdn.adguard.com/content/kb/ad_blocker/mac/BrowsingSecurity.jpg)
+![Security](https://cdn.adtidy.org/content/kb/ad_blocker/mac/BrowsingSecurity.jpg)
     
 Next we have the Security panel, where a module also known as Browsing Security is located. What it does is protection from malicious and phishing websites.
 
@@ -91,17 +91,17 @@ If you wish to help us in perfecting this module, you can check the lower box on
 
 ## Browser Assistant
 
-![Assistant](https://cdn.adguard.com/content/kb/ad_blocker/mac/BrowserAssistant.jpg)
+![Assistant](https://cdn.adtidy.org/content/kb/ad_blocker/mac/BrowserAssistant.jpg)
 
 AdGuard Browser Assistant’s primary function is to manage filtering directly from the browser. It used to be a mere userscript incorporated into AdGuard for Mac app that then became a full-fledged browser extension. Know more about the [benefits it yields](https://kb.adguard.com/en/macos/overview/browser-assistant).
 
-![Assistant popup menu](https://cdn.adguard.com/content/kb/ad_blocker/mac/safari_assistant_pop-up_menu.jpg)
+![Assistant popup menu *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/safari_assistant_pop-up_menu.jpg)
 
 You will be prompted to install the Browser Assistant for your default browser when you first install AdGuard (during the onboarding process). If you missed it, you can [download it for any browser](https://adguard.com/en/adguard-assistant/overview.html) at any time.
 
 ## Extensions
 
-![Extensions](https://cdn.adguard.com/content/kb/ad_blocker/mac/Extensions.jpg)
+![Extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Extensions.jpg)
     
 Extensions are small programs that do exactly what their name implies — they extend functionality. And AdGuard uses several extensions of its own, also called userscripts, to broaden its functions range:
 
@@ -120,7 +120,7 @@ One of the important features of AdGuard for Mac is that the application can wor
 
 ## Network
 
-![Network](https://cdn.adguard.com/content/kb/ad_blocker/mac/NetworkFiltering.jpg)
+![Network](https://cdn.adtidy.org/content/kb/ad_blocker/mac/NetworkFiltering.jpg)
     
 This last panel is dedicated to Network filtering, and you will find extra functionalities here. We do recommend to enable the first two ones: "Automatically filter applications" and "Filter HTTPS protocol". Those are an important added precaution to better filter your web space. HTTP is the primary protocol for transmitting information over the Internet. Most data including ads is transferred via it, but it has one disadvantage — the connection is unencrypted. Thanks to the HTTPS filtering feature AdGuard has, not only HTTP traffic is filtered, but also HTTPS traffic (S stands for ‘secure’).
  
@@ -136,7 +136,7 @@ There are other useful AdGuard options that shouldn't go unnoticed in this artic
 
 First, there's the License tab that you can open from the dropdown main menu (the one that opens once you click the gear icon on the upper right of the main window). From this tab you can see which license type you are using, check its status and validity period. 
     
-![License](https://cdn.adguard.com/content/kb/ad_blocker/mac/License.jpg)
+![License](https://cdn.adtidy.org/content/kb/ad_blocker/mac/License.jpg)
 
 In this same tab you can refresh your license status, renew your license or reset the license key using the corresponding buttons.
 
@@ -144,7 +144,7 @@ In this same tab you can refresh your license status, renew your license or rese
 
 Click the gear icon in the upper right corner, select "Support", and you will be able to send a bug report or a feature request to our support team. Be sure to add your real actual email though, because without it the message won't be sent. 
 
-![Support](https://cdn.adguard.com/content/kb/ad_blocker/mac/Support.jpg)
+![Support](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Support.jpg)
     
 To report a missed ad or a broken website, please follow the link above the message window, we use a separate reporting tool for those types of issues.
 
