@@ -15,7 +15,7 @@ These problems aren't fixed by Apple yet, or fixed only partially.
  
 Currently, AdGuard and iCloud Private Relay cannot work at the same time. AdGuard has no ability to block ads because iCloud Private Relay encrypts traffic before AdGuard can filter network connections. When iCloud Private Relay is active, any filtering (including local filtering) becomes impossible. Thus, AdGuard can't filter traffic or perform DNS filtering in Safari. That's why by default, AdGuard uses the "default route" which disables iCloud Private Relay. 
  
-For a deeper understanding of this problem, read [this article](https://kb.adguard.com/en/macos/solving-problems/icloud-private-relay).
+For a deeper understanding of this problem, read [this article](https://adguard.com/kb/adguard-for-mac/solving-problems/icloud-private-relay).
  
 **Recommended solution**
  
@@ -31,7 +31,7 @@ You can prevent AdGuard from using the "default route" by disabling it. It can b
 
 Apple's Mail app now uses a proxy to hide a user's IP Address when downloading images from emails. However, it won't work if there's an active VPN connection. As it treats AdGuard as a VPN, it won't preload images automatically.
 
-For a deeper understanding of this problem, read [this article](https://kb.adguard.com/en/macos/solving-problems/protect-mail-activity).
+For a deeper understanding of this problem, read [this article](https://adguard.com/kb/adguard-for-mac/solving-problems/protect-mail-activity).
 
 **Recommended solution**
 
@@ -43,16 +43,16 @@ These problems aren't fixed by Apple yet, or fixed only partially.
  
 #### Compatibility with Cisco AnyConnect
  
-AdGuard will not work together with Cisco AnyConnect while in *Network Extension* mode. You have to switch AdGuard to *Automatic Proxy* mode. To do so, follow [this instruction](#automatic-proxy).
+AdGuard will not work together with Cisco AnyConnect while in *Network Extension* mode. You have to switch AdGuard to *Automatic Proxy* mode. To do so, follow [this instruction](https://adguard.com/kb/adguard-for-mac/solving-problems/big-sur-issues#automatic-proxy).
  
 #### Compatibility with Flutter
  
 > This problem is solved in Flutter 2.2, released in June 2021. But to fix it for applications developed in Flutter, you need to wait for updates.
 If you use Flutter alongside AdGuard in "Network Extension" mode (or any other "Transparent Proxy"-type app) in Monterey or Big Sur, you will run into problems: projects won't open and Flutter will be effectively broken. We have already reported this bug to Apple. Meanwhile, you can use these temporary solutions:
  
-1) Use AdGuard in [Automatic Proxy](#automatic-proxy) mode
+1) Use AdGuard in [Automatic Proxy](https://adguard.com/kb/adguard-for-mac/solving-problems/big-sur-issues#automatic-proxy) mode
  
-2) Disable SIP and switch AdGuard to Kernel Extension mode as explained [here](#kernel-extension).
+2) Disable SIP and switch AdGuard to Kernel Extension mode as explained [here](https://adguard.com/kb/adguard-for-mac/solving-problems/big-sur-issues#kernel-extension ).
  
 #### VPN apps with legacy API
  
@@ -74,7 +74,7 @@ These problems have been fixed by Apple by now but can be encountered in the old
  
 At this moment, Network Extension mode in AdGuard isn't compatible with [Little Snitch 5](https://obdev.at/products/littlesnitch/index.html). When both are running, there's a chance to encounter issues with various apps' behavior, even if they aren't filtered by AdGuard. This problem is directly caused by a bug in Big Sur, and we've already informed Apple about it. This leaves us to believe that this issue will get resolved in one of the next updates.
  
-It needs to be said that this problem can't be solved by disabling connections monitoring in Little Snitch, because this action doesn't unload Little Snitch's extension from the system. We recommend to switch to [**Automatic Proxy**](#automatic-proxy) filtering mode when running AdGuard alongside with Little Snitch on Big Sur, at least until Apple fixes the bug.
+It needs to be said that this problem can't be solved by disabling connections monitoring in Little Snitch, because this action doesn't unload Little Snitch's extension from the system. We recommend to switch to [**Automatic Proxy**](https://adguard.com/kb/adguard-for-mac/solving-problems/big-sur-issues#automatic-proxy) filtering mode when running AdGuard alongside with Little Snitch on Big Sur, at least until Apple fixes the bug.
  
 ### Compatibility with local proxies
  
@@ -102,7 +102,7 @@ If you run into any problems, please contact our tech support at support@adguard
 
 #### Example 1: Configuring an upstream Shadowsocks proxy
  
-Here's an example of how to configure an upstream proxy for [Shadowsocks](https://shadowsocks.org/en/index.html).
+Here's an example of how to configure an upstream proxy for [Shadowsocks](https://shadowsocks.org).
  
 First of all, you need a working server side for your proxy. Most likely, to set it up, you would use a JSON file like this (`server` and `password` values were chosen randomly here):
  
@@ -117,7 +117,7 @@ First of all, you need a working server side for your proxy. Most likely, to set
 }
 ```
  
->You can find more information about how to get started on [Shadowsocks website](https://shadowsocks.org/en/config/quick-guide.html).
+>You can find more information about how to get started on [Shadowsocks website](https://shadowsocks.org/guide/what-is-shadowsocks.html).
  
 Then you'd have to install Shadowsocks client on your Mac. Make sure that you select 'Manual Mode' or 'Auto Mode' in its settings! The configuration won't work if you select 'Global Mode' (or 'Auto Mode' in Big Sur versions prior to 11.1).
  
@@ -142,6 +142,7 @@ If you chose SOCKS5 protocol, you also need to set the value of the `upstream.pr
 It's impossible to foresee each and every possible problem that can pop up in Big Sur or Monterey, there are countless various hardware/software and settings configurations. If you face any compatibility issues, please contact our support team, but feel free to try one of these workarounds first.
  
 ### Using "Automatic proxy" filtering mode
+{#automatic-proxy}
  
 If you face problems in Big Sur or Monterey which can't be resolved by any of the methods above, you can try switching AdGuard to *Automatic proxy* mode.
  
@@ -157,7 +158,8 @@ Now AdGuard has automatically added a **.pac** file to your Mac's network settin
  
 >Take into account that some apps may ignore this system setting and their traffic will not be filtered.
  
-### Enabling Kernel Extension in Big Sur and Monterey
+### Enabling Kernel Extension in Big Sur and Monterey 
+{#kernel-extension}
  
 By default AdGuard uses Network Extension framework in Big Sur and Monterey as the old Kernel Extension framework is disabled there. This can cause some compatibility problems, but to enable Kernel Extension back, you need to disable System Integrity Protection (SIP) first. To disable SIP, follow this instruction:
  
