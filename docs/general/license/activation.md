@@ -5,7 +5,7 @@ sidebar_position: 3
 
 ## How to activate a license
 
-To activate your license, go to the *License* section of your AdGuard product and find the *Log in* field or *Activate* button. Then use the email and password of your AdGuard account to log in. If you don't have an account yet, you will be offered to create one.
+To activate your license, go to the *License* section of your AdGuard product and find the *Log in* field or *Activate* button. Use the email and password of your AdGuard account to log in. If you don't have an account yet, you will be offered to create one.
 
 > Note: To activate a license via AdGuard account, you need to have a valid license with at least one open slot there. If your license is already used on a maximum number of devices, you can [upgrade it](#how-to-upgrade-a-license) or [transfer it from one device to another](#how-to-transfer-a-license-to-another-device).
 
@@ -17,11 +17,11 @@ Alternatively, you can use a [license key](../what-is#license-key) to activate t
 
 1. Open the AdGuard app
    
-To do it, doubleclick on the AdGuard icon on the desktop:   
+To do it, double-click on the AdGuard icon on the desktop:   
 
 ![AdGuard icon on the desktop](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowsEn.png)
 
-or double click on the AdGuard icon in the system tray:   
+or double-click on the AdGuard icon in the system tray:   
 
 ![AdGuard icon in the system tray](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windows2En.png)
 
@@ -31,11 +31,11 @@ or double click on the AdGuard icon in the system tray:
 
 3. You will be presented with two options for activation:
 
-- Via entering **Email** and **Password** from your **AdGuard  account** (or through a FB/Google/Apple account)
+- Via entering the **email** and **password** from your **AdGuard  account** (or through a FB/Google/Apple account)
 
 ![Log in to your AdGuard account](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowslicense2en.png)
 
-- Via entering the **license key**
+- Via entering a **license key**
 
 ![Enter license key](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowslicense3en.png)
 
@@ -71,17 +71,17 @@ or double click on the AdGuard icon in the system tray:
 
 ![Tap Get Premium or License Status](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidlicense1en.png)
 
-4. Tap **three dots menu (⋮)** in the top right corner of the screen
+4. Tap **three-dot menu (⋮)** in the top right corner of the screen
 
-![Tap three dot menu](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/android2En.png)
+![Tap three-dot menu](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/android2En.png)
 
 5. Press **Activate Premium**, and you will be presented with two activation options:
 
-- Enter **Email** and **Password** from your **AdGuard account** (or sign in with Facebook/Google account)
+- Via entering the **email** and **password** from your **AdGuard account** (or sign in with Facebook/Google account)
 
 ![Log in to activate](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidlicense2en.png)
 
-- Or enter a **license key**
+- Via entering a **license key**
 
 ![Enter your license key to activate](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidlicense3en.png)
 
@@ -95,7 +95,7 @@ or double click on the AdGuard icon in the system tray:
 
 ![Tap Log in in the top right corner of Premium screen](https://cdn.adguard.com/content/kb/ad_blocker/iOS/ioslicense1en.png)
 
-4. Enter **Email** and **Password** from your **AdGuard account**
+4. Enter **email** and **password** from your **AdGuard account**
 
 ![Log in](https://cdn.adguard.com/content/kb/ad_blocker/iOS/ioslicense2en.png)
 
