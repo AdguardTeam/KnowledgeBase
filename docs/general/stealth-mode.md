@@ -23,7 +23,7 @@ It sends a Do-Not-Track (DNT) HTTP header to queried websites, thus requiring we
 
 #### Strip tracking parameters from URLs
 
-If you enable this option, AdGuard will strip tracking parameters like utm_* and fb_ref from pages’ URLs.
+If you enable this option, AdGuard will strip tracking parameters like `utm_*` and `fb_ref` from pages’ URLs.
 
 ### Tracking methods {#tracking-methods}
 
@@ -100,4 +100,4 @@ The Deep Packet Inspection is a system of deep analysis and filtering of traffic
 
 AdGuard can modify outgoing packet data so that the client does not fall under the DPI blocking criteria. This means that by enabling this option, users can get access to the content they want. Not all DPI systems can be bypassed at this time, but we are constantly working to improve this.
 
-> "Protect from DPI" feature is already implemented in AdGuard for Windows, AdGuard for Mac, and AdGuard for Android apps.
+> The "Protect from DPI" feature is already implemented in AdGuard for Windows, AdGuard for Mac, and AdGuard for Android.
