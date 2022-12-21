@@ -9,11 +9,11 @@ sidebar_position: 5
 
 2. 화면 하단에 나타나는 창에서 `eventvwr`을 입력하고 **OK** 키를 누릅니다.
 
-![실행 창](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/eng_event_logs_1.png)
+![Run window *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_1.png)
 
 3. 그다음에는 이벤트 뷰어 창이 나타납니다.
 
-![이벤트 뷰어](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/eng_event_logs_2.png)
+![Event viewer *border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_2.png)
 
 필요한 파일을 저장하려면 다음 지침을 따르세요.
 

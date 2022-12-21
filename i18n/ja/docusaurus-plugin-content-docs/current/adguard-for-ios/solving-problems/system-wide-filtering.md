@@ -9,7 +9,7 @@ iOSでのシステムワイドブロックとは、Safariブラウザ以外、�
 
 iOSでは、広告やトラッカーをシステム全体でブロックする唯一の方法は、[DNSフィルタリング](https://adguard-dns.io/kb/general/dns-filtering/)を使用することです。 まず、「DNS通信を保護」を有効にする必要があります。 AdGuard for iOSアプリのメイン画面→設定（右下の⚙アイコン）→「DNS通信を保護」→オンにする
 
-![「DNS通信を保護」画面](https://cdn.adguard.com/public/Adguard/Blog/ios_dns_protection_ja.PNG)
+![DNS protection screen *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_dns_protection.PNG)
 
 AdGuardを使ってシステムワイドブロックを行うには2つの方法があります。
 
@@ -21,7 +21,7 @@ AdGuardを使ってシステムワイドブロックを行うには2つの方法
 * DNSサーバーは任意のものにすることが可能（もしくは接続しない）
 * DNSホワイトリストを使えて、複数のDNSフィルタやホストファイルを同時に使える
 
-![DNSフィルタリングの仕組み](https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_ja.png)
+![DNSフィルタリングの仕組み](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_en.png)
 
 ## DNSフィルタ/ホストファイルを追加する方法
 
@@ -30,9 +30,9 @@ AdGuardを使ってシステムワイドブロックを行うには2つの方法
 1. AdGuard iOSアプリ→*設定*（右下の⚙）→*一般設定*
 2. 高度な設定モード→オン。 そうすると、「詳細設定」という項目が現れますので、 それを開きます。
 
-![AdGuardの設定を開き、高度な設定モードをオンにします。](https://cdn.adguard.com/public/Adguard/Release_notes/iOS/v4.0/advanced_mode_ja.jpg)
+![Open AdGuard Settings and enable Advanced mode *mobile_border](https://cdn.adtidy.org/public/Adguard/Release_notes/iOS/v4.0/advanced_mode_en.jpg)
 
-![詳細設定画面](https://cdn.adguard.com/public/Adguard/Blog/ios_advanced_settings_ja.PNG)
+![Advanced settings screen *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_advanced_settings.PNG)
 
 > ※「*詳細設定*」タブにある設定をそのままオンにすることはお勧めできません（特に「*ローレベル設定*」）。 中には、インターネット接続が切断されたり、プライバシーやセキュリティが損なわれたりするものもありますので、注意が必要です。 　
 
@@ -40,6 +40,6 @@ AdGuardを使ってシステムワイドブロックを行うには2つの方法
 4. *AdGuard設定* → *DNS通信を保護* → *DNSフィルタリング* (「高度な設定」モードのオンが必須) → *DNSフィルタ*
 5. 「*フィルタを追加する*」→フィルタのURL欄に「3.」でコピーしたリンクを貼り付ける→次へ
 
-![DNSフィルターの追加画面](https://cdn.adguard.com/public/Adguard/Blog/ios_adding_a_filter_ja.PNG)
+![Adding a DNS filter screen *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_adding_a_filter.PNG)
 
 > 完了です。ステップ3で別のURLをコピーして貼り付けることで、同じように他のDNSフィルターをいくつでも追加できます。 様々なフィルターやそのリンクは[こちら](https://filterlists.com)で確認することができます。

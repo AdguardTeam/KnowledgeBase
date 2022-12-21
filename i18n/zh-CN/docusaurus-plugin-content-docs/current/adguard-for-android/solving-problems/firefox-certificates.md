@@ -14,12 +14,12 @@ sidebar_position: 11
 1. 打开浏览器
 2. 前往**「设置」**>**「关于 Firefox Nightly」**
 
-![关于火狐](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
+![About Firefox *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
 
 3. 点击 Firefox 徽标五次
 4. 前往**「设置」**>**「Secret Settings」**
 
-![秘密设置*](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
+![Secret Settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
 
 5. 开启**使用第三方 CA 证书**（Use third party CA certificates）
 

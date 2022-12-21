@@ -7,7 +7,7 @@ This page describes the features and details of AdGuard’s central management o
 
 ## 1. Download the MSI {#msi-download}
 
-Download the [AdGuard MSI](https://cdn.adguard.com/public/Windows/AdGuard.msi).
+Download the [AdGuard MSI](https://cdn.adtidy.org/public/Windows/AdGuard.msi).
 
 ## 2. Configure the settings for your network {#settings-configuring}
 

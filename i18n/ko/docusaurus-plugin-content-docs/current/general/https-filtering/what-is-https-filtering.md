@@ -11,7 +11,7 @@ HTTPS(HyperText Transfer Protocol Secure)는 보안을 강화하기 위해 암�
 
 아래의 그림은일반 HTTP 프로토콜과 보안 HTTPS 프로토콜의 차이점을 보여줍니다.
 
-![HTTPS란 무엇인가요](https://cdn.adguard.com/public/Adguard/Blog/https/what_is_https_ko.png)
+![HTTPS란 무엇인가요](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https.png)
 
 ### 보안 인증서란 무엇인가요?
 
@@ -27,7 +27,7 @@ HTTPS 필터링 작업 방식이 쉬웠다면 HTTPS는 그렇게 안전하지 �
 
 아래의 그림은 이러한 과정을 알기 쉽게 보여줍니다.
 
-![HTTPS 필터링은 어떻게 작동하나요](https://cdn.adguard.com/public/Adguard/Blog/https/what_is_https_filtering_ko.png)
+![HTTPS 필터링은 어떻게 작동하나요](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
 
 ### 내 트래픽이 암호화되고 안전하나요?
 
@@ -51,7 +51,7 @@ EV 인증서는 더 높은 수준의 보안을 의미하며 일반 인증서보�
 
 ### HTTPS 필터링과 관련된 문제
 
-최근 [연구](https://cdn.adguard.com/public/Adguard/Blog/https/interception-ndss17.pdf)에 따르면 HTTPS 연결의 5~10 %는 HTTPS 필터링 애플리케이션에 의해 설정됩니다. 이 HTTPS 필터링 애플리케이션 중 대부분 바이러스 백신 소프트웨어입니다. 나쁜 소식은 테스트된 26개의 바이러스 중 24개가 연결 보안 수준을 떨어뜨렸고 3분의 2가 해킹 연결에 취약하다는 것입니다.
+A [2017 study](https://cdn.adtidy.org/public/Adguard/Blog/https/interception-ndss17.pdf) shows that 5 to 10% of HTTPS connections are established by HTTPS-filtering applications. 이 HTTPS 필터링 애플리케이션 중 대부분 바이러스 백신 소프트웨어입니다. 나쁜 소식은 테스트된 26개의 바이러스 중 24개가 연결 보안 수준을 떨어뜨렸고 3분의 2가 해킹 연결에 취약하다는 것입니다.
 
 연구원들의 결론은 인터넷 보안 커뮤니티가 보안 연결을 필터링하는 애플리케이션에 세심한주의를 기울여야 한다는 것입니다. 그리고 그러한 프로그램의 개발자는 필터링 구현의 품질에 가장 진지하게주의를 진지하게 임해야 합니다.
 

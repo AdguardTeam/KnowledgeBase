@@ -9,7 +9,7 @@ sidebar_position: 3
 
 Существует множество «приложений-таскеров»‎, например, [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&noprocess), [AutomateIt](https://play.google.com/store/apps/details?id=AutomateIt.mainPackage&noprocess) и другие. AdGuard предоставляет интерфейс, который позволяет этим приложениям настраивать различные правила автоматизации.
 
-![Автоматизация AdGuard](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/tasker/adgautomation.png)
+![AdGuard Automation *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/tasker/adgautomation.png)
 
 Благодаря этому интерфейсу любое приложение может послать специальное сообщение (также называемый «‎intent», или «‎интент»), которое содержит имя действия и какую-либо дополнительную информацию. AdGuard увидит этот интент и выполнит запрашиваемое действие.
 
@@ -122,4 +122,4 @@ sidebar_position: 3
 
 ### Пример
 
-![Автоматизация](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/tasker/automation2.png)
+![Automation *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/tasker/automation2.png)

@@ -1,5 +1,5 @@
 ---
-title: Локальный домен adguard.com
+title: Local.adguard.org domain
 sidebar_position: 3
 ---
 

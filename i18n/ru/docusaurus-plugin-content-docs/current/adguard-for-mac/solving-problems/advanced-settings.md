@@ -30,7 +30,7 @@ sidebar_position: 9
 
 Здесь можно запретить AdGuard использовать маршрут по умолчанию, который включён в режиме *Сетевого расширения* на macOS Monterey. AdGuard использует маршрут по умолчанию, чтобы отключить Частный узел iCloud и Защиту конфиденциальности в Почте, так как не может работать с ними одновременно.
 
-Более подробную информацию о проблеме вы найдёте [в этой статье](https://kb.adguard.com/en/macos/solving-problems/icloud-private-relay).
+You will find more information about the problem [in this article](https://adguard.com/kb/adguard-for-mac/solving-problems/icloud-private-relay).
 
 `network.extension.dns.redirect.exclude.bundleids`
 

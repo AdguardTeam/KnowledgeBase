@@ -7,7 +7,7 @@ sidebar_position: 5
 
 Во время установки может появиться вот такое окно:
 
-![Экран ошибки установки](https://cdn.adguard.com/content/kb/ad_blocker/mac/macerrorscreenEN.jpg)
+![Экран ошибки установки](https://cdn.adtidy.org/content/kb/ad_blocker/mac/macerrorscreenEN.jpg)
 
 Следуйте этой инструкции, чтобы решить проблему:
 

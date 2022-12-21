@@ -7,7 +7,7 @@ sidebar_position: 3
 
 1. AdGuard 설정을 엽니다. **일반 설정** 섹션으로 이동하여 아래로 스크롤한 후 <1>디버그 로깅 레벨</1>을 선택합니다.
 
-![디버그 로깅 수준](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
+![Debug logging level *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
 
 2. 문제를 재현합니다.
 
@@ -15,7 +15,7 @@ sidebar_position: 3
 
 3. **로그 내보내기** 버튼을 클릭하여 기록된 로그를 내보냅니다.
 
-![로그 내보내기](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
+![Export logs *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
 - 어느 폴더에서나 압축된 로그파일을 저장합니다.
 
@@ -29,11 +29,11 @@ sidebar_position: 3
 
 1. 트레이 메뉴에서 AdGuard 아이콘을 마우스 우클릭하고 **AdGuard 종료**를 선택하여 AdGuard를 중지합니다.
 
-![AdGuard 종료](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/adg-logs-3.png)
+![Exit AdGuard *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-3.png)
 
 서비스를 실행 상태로 두지 마십시오.
 
-![AdGuard 서비스 중지](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/eng_logs_4.png)
+![Stop AdGuard Service *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_logs_4.png)
 
 2. 콘솔을 엽니다(시작 패널에 `cmd` 입력).
 
@@ -41,7 +41,7 @@ sidebar_position: 3
 
 4. **디버그** 로깅 레벨을 선택합니다.
 
-![디버그](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
+![Debug *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
 
 5. 문제를 재현합니다.
 
@@ -49,7 +49,7 @@ sidebar_position: 3
 
 6. **로그 내보내기** 버튼을 클릭하여 기록된 로그를 내보냅니다.
 
-![로그 내보내기](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
+![Export logs *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
 7. **주의**: 로깅 레벨을 **기본**으로 다시 설정합니다. **디버그** 로깅 레벨이 켜져 있으면 프로그램이 느려집니다.
 

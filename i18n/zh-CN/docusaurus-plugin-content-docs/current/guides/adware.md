@@ -9,9 +9,7 @@ sidebar_position: 5
 
 **免费的防病毒实用程序**
 
-实用程序不可枚举，您可以使用任何自己喜欢的。在这里仅举几个例子：
-
-[卡巴斯基病毒清除工具](https://www.kaspersky.ru/downloads/thank-you/free-virus-removal-tool)
+There are many of them and you can use any one you prefer, for example:
 
 [Dr.Web CureIt!](http://www.freedrweb.com/cureit/?lng=en)
 
@@ -25,21 +23,21 @@ sidebar_position: 5
 
 1) 启动应用程序。单击**立即扫描**。
 
-![广告软件1](https://cdn.adguard.com/content/Kb/ad_blocker/guides/adware1.png)
+![adware1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware1.png)
 
 2) 扫描完成之后，您需要将可疑对象发送到**隔离区**。
 
-![广告软件2](https://cdn.adguard.com/content/Kb/ad_blocker/guides/adware2.png)
+![adware2 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware2.png)
 
 3) 将选项被移至**隔离区**后，您将能够**清除系统**中不必要的选项。
 
 4) 在某些情况下，清洁完成后，您可能需要**重新启动系统**。
 
-![广告软件3](https://cdn.adguard.com/content/Kb/ad_blocker/guides/adware3.png)
+![adware3 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware3.png)
 
 5) 重新启动系统后，清洁就完成了。 如有必要，您可以阅读该软件的**运行报告**。
 
-![广告软件4](https://cdn.adguard.com/content/Kb/ad_blocker/guides/adware4.png)
+![adware4 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware4.png)
 
 如果没有效果，请根据[此说明](#instructions)暂时禁用浏览器中的所有扩展程序，以及其他一些设置。
 
