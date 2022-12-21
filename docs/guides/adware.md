@@ -9,9 +9,7 @@ If you suspect your computer is infected by malware or viruses, first of all you
 
 **Free antivirus utilities**
 
-There are many of them and you can use any one you prefer, here is simply a couple examples:
-
-[Kaspersky Virus Removal Tool](https://www.kaspersky.ru/downloads/thank-you/free-virus-removal-tool)
+There are many of them and you can use any one you prefer, for example:
 
 [Dr.Web CureIt!](http://www.freedrweb.com/cureit/?lng=en)
 
