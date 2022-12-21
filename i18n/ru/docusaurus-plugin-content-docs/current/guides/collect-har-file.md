@@ -28,7 +28,7 @@ sidebar_position: 1
 
 7. Установите флажок ***Отключить кэш***.
 
-![chrome](https://cdn.adguard.com/content/Kb/ad_blocker/guides/chrome.png)
+![chrome](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/chrome.png)
 
 8. Воспроизведите действия, создающие проблему.
 
@@ -55,7 +55,7 @@ sidebar_position: 1
 
 7. Установите флажок ***Отключить кэш***.
 
-![edge](https://cdn.adguard.com/content/Kb/ad_blocker/guides/edge.png)
+![edge](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/edge.png)
 
 8. Воспроизведите действия, создающие проблему.
 
@@ -82,7 +82,7 @@ sidebar_position: 1
 
 6. Установите флажок ***Отключить кэш***.
 
-![firefox](https://cdn.adguard.com/content/Kb/ad_blocker/guides/firefox.png)
+![firefox](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/firefox.png)
 
 7. Воспроизведите действия, создающие проблему.
 

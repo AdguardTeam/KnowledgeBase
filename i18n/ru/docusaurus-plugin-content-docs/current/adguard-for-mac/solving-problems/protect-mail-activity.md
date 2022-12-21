@@ -7,7 +7,7 @@ sidebar_position: 8
 
 Приложение Почта Apple теперь использует прокси-сервер для скрытия IP-адреса пользователя при загрузке изображений из электронных писем.
 
-![Защита конфиденциальности в Почте](https://cdn.adguard.com/content/kb/ad_blocker/mac/mac_protectMailActivity.jpg)
+![Защита конфиденциальности в Почте](https://cdn.adtidy.org/content/kb/ad_blocker/mac/mac_protectMailActivity.jpg)
 
 Но эта функция не работает при наличии активного VPN-соединения. Поскольку AdGuard рассматривается Почтой Apple как VPN, изображения не загружаются автоматически.
 

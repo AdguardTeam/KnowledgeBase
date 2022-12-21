@@ -9,9 +9,7 @@ sidebar_position: 5
 
 **Бесплатные антивирусные программы**
 
-Их существует множество — выбирайте любую, какая вам нравится. Вот лишь несколько примеров:
-
-[Kaspersky Virus Removal Tool](https://www.kaspersky.ru/downloads/thank-you/free-virus-removal-tool)
+There are many of them and you can use any one you prefer, for example:
 
 [Dr.Web CureIt!](http://www.freedrweb.com/cureit/?lng=ru)
 
@@ -25,21 +23,21 @@ sidebar_position: 5
 
 1) Запустите приложение и нажмите **Сканировать сейчас**.
 
-![adware1](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/adwareru.png)
+![adware1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware1.png)
 
 2) После завершения сканирования вам необходимо отправить подозрительные объекты в **Карантин**.
 
-![adware2](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/adware2ru.png)
+![adware2 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware2.png)
 
 3) Когда они будут перемещены в **Карантин**, вы сможете **Очистить систему** от ненужного мусора.
 
 4) В некоторых случаях после завершения очистки может потребоваться **Перезагрузка системы** .
 
-![adware3](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/adware3.png)
+![adware3 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware3.png)
 
 5) После перезагрузки системы очистка будет завершена. При необходимости вы всегда можете ознакомиться с отчётом **** о проделанной работе.
 
-![adware4](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/adware4.png)
+![adware4 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware4.png)
 
 Если это не помогло, временно отключите все расширения и некоторые другие настройки в браузере согласно [этим инструкциям](#instructions).
 

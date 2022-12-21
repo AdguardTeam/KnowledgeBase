@@ -11,4 +11,4 @@ sidebar_position: 1
 
 2. Отключите драйвер WFP, как показано ниже:
 
-![WFP-драйвер](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/wfp-driver.png)
+![WFP driver *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/wfp-driver.png)

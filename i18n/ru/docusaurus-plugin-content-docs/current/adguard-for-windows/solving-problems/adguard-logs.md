@@ -7,7 +7,7 @@ sidebar_position: 3
 
 1. Откройте настройки AdGuard. Перейдите в раздел *Общие настройки*, прокрутите вниз до конца экрана и выберите *Уровень логирования* **Подробный**.
 
-![Подробный уровень логирования](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/logs_adguard_1.png)
+![Debug logging level *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
 
 2. Воспроизведите проблему.
 
@@ -15,7 +15,7 @@ sidebar_position: 3
 
 3. Экспортируйте полученные логи при помощи кнопки **Экспортировать лог**.
 
-![Экспортировать логи](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/logs_adguard_2.png)
+![Export logs *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
 - Сохраните архив в любую папку.
 
@@ -29,11 +29,11 @@ sidebar_position: 3
 
 1. Остановите AdGuard, щёлкнув правой кнопкой мыши по значку AdGuard в меню трея и выбрав *Закрыть AdGuard*:
 
-![Закрыть AdGuard](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/logs_adguard_3.png)
+![Exit AdGuard *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-3.png)
 
 Пожалуйста, не оставляйте приложение запущенным:
 
-![Остановить службу AdGuard](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/logs_adguard_4.png)
+![Stop AdGuard Service *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_logs_4.png)
 
 2. Откройте консоль (наберите `cmd` в стартовой панели).
 
@@ -41,7 +41,7 @@ sidebar_position: 3
 
 4. Выберите уровень логирования **Подробный**.
 
-![Подробный](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/logs_adguard_1.png)
+![Debug *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
 
 5. Воспроизведите проблему.
 
@@ -49,7 +49,7 @@ sidebar_position: 3
 
 6. Экспортируйте полученные логи при помощи кнопки **Экспортировать лог**.
 
-![Экспортировать логи](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/Windows7.1/logs_adguard_2.png)
+![Export logs *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
 7. **Важно**: Не забудьте вернуть **Стандартный** уровень логирования. **Подробный** уровень логирования может значительно замедлить работу приложения.
 
