@@ -353,8 +353,8 @@ The modifier `":" h_value` part may be omitted. In that case the modifier matche
 * [`$ping`](#ping-modifier)
 * [`$xmlhttprequest`](#xmlhttprequest-modifier)
 * [`$websocket`](#websocket-modifier)
-* [`$webrtc`](#webrtc-modifier)
 * [`$other`](#other-modifier)
+* [`$webrtc` (deprecated)](#webrtc-modifier)
 * [`$object-subrequest` (deprecated)](#object-subrequest-modifier)
 
 There is a set of modifiers, which can be used to limit the rule's application area to certain type of content. These modifiers can also be combined to cover, for example, both images and scripts.
@@ -448,29 +448,22 @@ The rule applies only to WebSocket connections.
 >
 > AdGuard for Safari and iOS cannot properly apply rules with `websocket` modifier due to Safari limitations.
 
-#### **`$webrtc`** {#webrtc-modifier}
+#### **`$other`** {#other-modifier}
+
+The rule applies to requests for which the type has not been determined or does not match the types listed above.
+
+#### **`$webrtc` (deprecated)**** {#webrtc-modifier}
 
 > **Deprecation notice**
 >
-> This modifier is deprecated and will be removed in the future. If you need to suppress WebRTC, consider using the `nowebrtc` [scriptlet](#scriptlets).
+> This modifier is deprecated and no longer supported. Rules with it are considered as invalid.
+> If you need to suppress WebRTC, consider using the `nowebrtc` [scriptlet](#scriptlets).
 The rule applies only to WebRTC connections.
-
-> **Note**
->
-> Blocking WebRTC can interfere with the work of some browser applications, such as messengers, chats, cinemas, or games.
 
 **Examples**
 
 * `||example.com^$webrtc,domain=example.org` blocks webRTC connections to `example.com` for `example.org`.
 * `@@*$webrtc,domain=example.org` disables the RTC wrapper for `example.org`.
-
-> **Compatibility with different versions of AdGuard**
->
-> Rules with `$webrtc` modifier are still supported by AdGuard Browser extension.
-
-#### **`$other`** {#other-modifier}
-
-The rule applies to requests for which the type has not been determined or does not match the types listed above.
 
 #### **`$object-subrequest` (deprecated)** {#object-subrequest-modifier}
 
