@@ -27,20 +27,20 @@ At the very bottom of the screen you will find *Advanced Settings*. Changing som
 
 ### Ad Blocker
 
-This is the main module of AdGuard for Windows that removes ads from the websites you visit and from the apps installed on your device. To filter out advertising and privacy-threatening content such as banners, pop-ups, or trackers AdGuard uses different filters: groups of rules with a similar purpose written with a special syntax. To understand what filters are and how they work read [this article](./general/ad-filtering/how-ad-blocking-works).
+This is the main module of AdGuard for Windows that removes ads from the websites you visit and from the apps installed on your device. To filter out advertising and privacy-threatening content such as banners, pop-ups, or trackers AdGuard uses different filters: groups of rules with a similar purpose written with a special syntax. To understand what filters are and how they work read [this article](/general/ad-filtering/how-ad-blocking-works).
 
 ![Ad Blocker *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/ad-blocker.png)
 
 In the Ad Blocker module you can:
 * enable automatic activation of language-specific filters
-* disable [search ads and self-promotion](./general/ad-filtering/search-ads) blocking
+* disable [search ads and self-promotion](/general/ad-filtering/search-ads) blocking
 * activate pre-installed filters such as *AdGuard Base filter*,
 * install filters from the list or add a custom filter by clicking the *Add a filter* button,
 * make changes to existing rule groups using the *Filter editor* button,
 * see all the requests sent by browsers and apps installed on your computer by clicking the *Filtering log* button. From there you can also block or unblock any request by creating a custom rule,
 * compose a filter from your own rules written manually, imported or created with the AdGuard Assistant extension.
 
-Before you start manually writing your own rules read our detailed [syntax guide](./general/ad-filtering/create-own-filters).
+Before you start manually writing your own rules read our detailed [syntax guide](/general/ad-filtering/create-own-filters).
 
 ### Stealth Mode
 
@@ -50,11 +50,11 @@ Many websites gather information about their visitors, such as their IP addresse
 
 You can flexibly adjust the work of Stealth Mode: for instance, you can prohibit the website to receive the search request you used to find it on the Internet, automatically delete both third-party and website’s own cookies, and disable location sharing in your browser that can be used to track your whereabouts.
 
-To learn everything about Stealth Mode and its many options, [read this article](./general/stealth-mode).
+To learn everything about Stealth Mode and its many options, [read this article](/general/stealth-mode).
 
 ### Browsing Security
 
-Browsing Security gives strong protection against malicious and fishing websites. No, AdGuard for Windows is not an antivirus. It will neither stop the download of a virus when it's already started, nor delete the already existing ones. But it will warn you if you're about to proceed to a website whose domain has been added to our "untrusted sites" database, or to download a file from such website. You can find more information about how this module works in the [dedicated article](./general/stealth-mode).
+Browsing Security gives strong protection against malicious and fishing websites. No, AdGuard for Windows is not an antivirus. It will neither stop the download of a virus when it's already started, nor delete the already existing ones. But it will warn you if you're about to proceed to a website whose domain has been added to our "untrusted sites" database, or to download a file from such website. You can find more information about how this module works in the [dedicated article](/general/stealth-mode).
 
 In this module you can
 * enable notifications to block requests to malicious and phishing sites,
@@ -63,7 +63,7 @@ In this module you can
 
 ![Browsing Security *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/browsing-security.png)
 
-In case you want to learn more about Browsing Security, read [this article](./general/browsing-security).
+In case you want to learn more about Browsing Security, read [this article](/general/browsing-security).
 
 ### DNS Protection
 
@@ -91,7 +91,7 @@ From this tab you can easily proceed to install AdGuard Browser Assistant, which
 
 ## Extensions
 
-AdGuard can significantly broaden website functionality working as a [user script manager](./general/userscripts). AdGuard Users can add their own scripts, as well as manage existing ones.
+AdGuard can significantly broaden website functionality working as a [user script manager](/general/userscripts). AdGuard Users can add their own scripts, as well as manage existing ones.
 
 ![Extensions *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
 

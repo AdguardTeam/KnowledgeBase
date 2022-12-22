@@ -104,4 +104,4 @@ If you've encountered an error that's not listed above, it is possible that we c
 
 - Find and save to disk **Event Viewer** logs. [This article](../system-logs) explains how to do that.
 
-- Please email all these files from two previous steps to the **[support team](./support/contact)** and describe the problem in the message body. Our tech support agents will reply to you as soon as possible.
+- Please email all these files from two previous steps to the support team at **support@adguard.com** and describe the problem in the message body. Our tech support agents will reply to you as soon as possible.
