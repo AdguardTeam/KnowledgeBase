@@ -31,13 +31,13 @@ There are eight of them, each category unites several filters that serve and sha
 
 > More enabled filters does not guarantee that there will be less ads. A large number of various filters enabled simultaneously reduces the quality of ad blocking.
 
-> Custom filters category is empty by default for users to add there their filters by URL. You can find filters on the Internet or even try to [create one by yourself](./general/ad-filtering/create-own-filters).  
+> Custom filters category is empty by default for users to add there their filters by URL. You can find filters on the Internet or even try to [create one by yourself](/general/ad-filtering/create-own-filters).  
 
 ### User rules {#user-rules}
 
-Here you can add new rules — either by entering them manually, or by using [the AdGuard manual blocking tool in Safari](../..#assistant). Use this tool to customize Safari filtering without adding an entire filter list. 
+Here you can add new rules — either by entering them manually, or by using [the AdGuard manual blocking tool in Safari](#assistant). Use this tool to customize Safari filtering without adding an entire filter list. 
 
-> Learn [how to create your own ad filters](./general/ad-filtering/create-own-filters). But please note that many of them won't work in Safari on iOS.
+> Learn [how to create your own ad filters](/general/ad-filtering/create-own-filters). But please note that many of them won't work in Safari on iOS.
 
 ![User rules screen *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/user_rules_en.jpeg)
 

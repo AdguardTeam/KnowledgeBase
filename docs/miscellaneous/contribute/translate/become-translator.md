@@ -15,7 +15,7 @@ Choose your language and you will see the list of available product folders.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/languages.png)
 
-You can start translating literally any product you like by choosing the respective folder. We have some recommendations about [what files are better to start with in AdGuard Websites project](../../translate/translation-priority).
+You can start translating literally any product you like by choosing the respective folder. We have some recommendations about [what files are better to start with in AdGuard Websites project](../translation-priority).
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/folders.png)
 
@@ -51,4 +51,4 @@ So, what are proofreaders responsible for?
 
 - Respond to comments related to translations in their language.
 
-Every year best proofreaders receive gifts from AdGuard. Active translators do not go unrewarded either. Read more about our [reward system](../../translate/rewards).
+Every year best proofreaders receive gifts from AdGuard. Active translators do not go unrewarded either. Read more about our [reward system](../rewards).
