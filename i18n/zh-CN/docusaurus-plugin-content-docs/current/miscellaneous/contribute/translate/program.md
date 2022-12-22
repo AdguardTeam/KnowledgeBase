@@ -9,4 +9,4 @@ sidebar_position: 1
 
 现在我们使用 [Crowdin 平台](https://crowdin.com/)来管理我们产品的翻译。 所以，所有想通过翻译任何喜欢的产品对 AdGuard 做贡献的志愿者们请移步 Crowdin 平台。
 
-If you want to be among the volunteers who help us translate AdGuard, please read the information on [how to become our translator](/miscellaneous/contribute/translate/become-translator) and [how we collaborate with them](/miscellaneous/contribute/translate/rewards).
+If you want to be among the volunteers who help us translate AdGuard, please read the information on [how to become our translator](../become-translator) and [how we collaborate with them](../rewards).

@@ -15,4 +15,4 @@ sidebar_position: 4
 
 ![AdGuard installation log files *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/install-logs-2.png)
 
-3. Отправьте этот архив в [техподдержку](/support/contact) AdGuard.
+3. Send this archive to AdGuard tech support at **support@adguard.com**.

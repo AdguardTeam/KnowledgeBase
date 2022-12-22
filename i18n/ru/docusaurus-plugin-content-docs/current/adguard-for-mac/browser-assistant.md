@@ -12,7 +12,7 @@ sidebar_position: 3
 Браузерный помощник AdGuard — это расширение, устанавливаемое в браузер, поэтому нет необходимости ждать, пока пользовательский скрипт будет встроен в отфильтрованную веб-страницу, как это было раньше. Другими словами, расширение более автономно от основного приложения AdGuard. Тем не менее Браузерный помощник нуждается в установленном AdGuard для Mac, поскольку без приложения использовать расширение бессмысленно.
 
 ### Совместимость с основным приложением
-If you got into the habit of using our previous AdGuard ad blocker extension [in Integration mode](https://adguard.com/kb/adguard-browser-extension/integration-mode), you may like the solution that we have developed for the new Browser Assistant.
+If you got into the habit of using our previous AdGuard ad blocker extension [in Integration mode](/adguard-browser-extension/integration-mode), you may like the solution that we have developed for the new Browser Assistant.
 
 Справочная информация:
 > В предыдущих версиях Браузерного расширения AdGuard (до версии 3.5), если оно было установлено вместе с AdGuard для Mac, расширение брало на себя функции Помощника, прекращало фильтровать самостоятельно и полагалось на приложение. Расширение и приложение работали вместе, но иногда интеграция давала сбой. Приложение прекращало фильтровать некоторые сайты, вместо него это делало расширение, обладающее заметно меньшими возможностями.

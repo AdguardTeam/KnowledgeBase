@@ -54,7 +54,7 @@ sidebar_position: 6
 
 - Выберите другую папку установки. Возможно, что у текущей папки есть ограничения доступа. Также удостоверьтесь, что не выбрали внешний или виртуальный жёсткий диск.
 
-- Удалите AdGuard с помощью нашего специального [инструмента удаления](/adguard-for-windows/installation#advanced), а затем повторите установку.
+- Uninstall AdGuard using our special [uninstall tool](../../installation#advanced) and then repeat the installation.
 
 - Запустите и пройдите перерегистрацию службы установщика Microsoft. На это потребуется некоторое время.
 
@@ -78,14 +78,14 @@ sidebar_position: 6
 
 - Проверьте, установлен ли AdGuard на вашем компьютере. Вы можете сделать это, нажав клавишу **Win** и введя ***AdGuard***.
 
-- Может быть, у вас остались файлы от предыдущей установки AdGuard. Удалите AdGuard с помощью нашего специального [инструмента удаления](/adguard-for-windows/installation#advanced), а затем повторите установку.
+- Может быть, у вас остались файлы от предыдущей установки AdGuard. Uninstall AdGuard using our special [uninstall tool](../../installation#advanced) and then repeat the installation.
 
 ### Другие ошибки {#other}
 
 Если вы столкнулись с ошибкой, не указанной выше, возможно, мы сможем её решить. Но чтобы это сделать, нам нужны ваши логи. Пожалуйста, выполните следующие шаги:
 
-- Найдите и архивируйте **файлы журнала установки AdGuard**, как описано в [этой статье](/adguard-for-windows/solving-problems/installation-logs).
+- Find and archive **AdGuard installation logs** as it is described in [this article](../installation-logs).
 
-- Найдите и сохраните на диск логи **Просмотра событий**. [Наша статья](/adguard-for-windows/solving-problems/system-logs) объясняет, как это сделать.
+- Найдите и сохраните на диск логи **Просмотра событий**. [This article](../system-logs) explains how to do that.
 
-- Пожалуйста, отправьте файлы из двух предыдущих шагов **[команде поддержки](/support/contact)** и опишите проблему. Наши специалисты технической поддержки ответят вам в кратчайшее время.
+- Please email all these files from two previous steps to the support team at **support@adguard.com** and describe the problem in the message body. Наши специалисты технической поддержки ответят вам в кратчайшее время.

@@ -49,4 +49,4 @@ Find AdGuard Browser extension in the [Edge Add-ons store](https://agrd.io/exten
 
 ## Как установить Браузерное расширение AdGuard VPN для Safari
 
-AdGuard для Safari — это не браузерное расширение в общепринятом смысле этого слова. Подробнее о нём можно прочитать в [отдельной статье](/adguard-for-safari/overview). Or you can [download the installation file](https://agrd.io/safari_release) directly from this page.
+AdGuard для Safari — это не браузерное расширение в общепринятом смысле этого слова. You can read more about it in a [devoted artile](/adguard-for-safari/overview). Or you can [download the installation file](https://agrd.io/safari_release) directly from this page.

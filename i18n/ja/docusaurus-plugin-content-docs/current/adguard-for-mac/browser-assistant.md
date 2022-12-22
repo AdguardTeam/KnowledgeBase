@@ -12,7 +12,7 @@ AdGuard Assistant’s primary function is to manage filtering directly from the 
 AdGuard Browser Assistant is an extension installed in a browser, so there is no need to wait for the userscript to be injected into the filtered web page, as it was with the preceding one. In other words, it is more autonomous from the main AdGuard app. Still, Browser Assistant needs the installed AdGuard for Mac, because there is no point in using the extension without the app.
 
 ### Compatibility with the main app
-If you got into the habit of using our previous AdGuard ad blocker extension [in Integration mode](https://adguard.com/kb/adguard-browser-extension/integration-mode), you may like the solution that we have developed for the new Browser Assistant.
+If you got into the habit of using our previous AdGuard ad blocker extension [in Integration mode](/adguard-browser-extension/integration-mode), you may like the solution that we have developed for the new Browser Assistant.
 
 Background information:
 > In previous versions of the AdGuard Browser Extension (before v3.5), if you had it installed along with a desktop AdGuard for Mac, the extension took over the functions of Assistant, stopped filtering itself and relied on the app to do this. The extension and the app worked in conjunction but sometimes the integration would fail. Some websites would stop being protected by the desktop program and be backed up only by the less powerful extension.

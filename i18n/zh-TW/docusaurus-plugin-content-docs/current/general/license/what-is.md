@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## What is AdGuard license
 
-A license is permission to use the AdGuard product, provided in accordance with the End User License Agreement. AdGuard licenses exist in the form of license keys, activation codes, and product cards in the user's [AdGuard account](/general/account/register).
+A license is permission to use the AdGuard product, provided in accordance with the End User License Agreement. AdGuard licenses exist in the form of license keys, activation codes, and product cards in the user's [AdGuard account](../../account/register).
 
 Some licenses need to be purchased (e.g. AdGuard Ad Blocker Personal), some are free and limited by term (e.g. trial licenses of AdGuard apps) or have a limited functionality (e.g. AdGuard for iOS or AdGuard Browser extension). Here's the list of all types of AdGuard Ad Blocker licenses.
 
@@ -22,7 +22,7 @@ Different licenses can be used with a different number of devices:
 * Family: up to nine devices,
 * AdGuard Pro for iOS: one device.
 
-> To use your license on a device, log in to your [AdGuard account](/general/account/features) on it. To extend the device limit, you can [upgrade](../activation#how-to-upgrade-a-license) your license.
+> To use your license on a device, log in to your [AdGuard account](../../account/features) on it. To extend the device limit, you can [upgrade](../activation#how-to-upgrade-a-license) your license.
 
 ## What is a license key{#license-key}
 
@@ -35,7 +35,7 @@ A license key is a unique sequence of characters that represents an AdGuard Ad B
 
 ## How to recover a license key
 
-You can easily check which license keys belong to you in your [AdGuard Account](/general/account/register).
+You can easily check which license keys belong to you in your [AdGuard Account](../../account/register).
 
 The license key is bound to your account via the email address you used to purchase AdGuard.
 

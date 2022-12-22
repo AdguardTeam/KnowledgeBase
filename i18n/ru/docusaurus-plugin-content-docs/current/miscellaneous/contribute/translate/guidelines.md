@@ -64,7 +64,7 @@ sidebar_position: 3
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/tasks.png)
 
-9. Иногда можно встретить фразы с плюральными формами. Будьте особенно внимательны при переводе таких фраз. Чтобы узнать, как правильно их переводить, читайте [соответствующую статью](https://kb.adguard.com/en/miscellaneous/plurals).
+9. Иногда можно встретить фразы с плюральными формами. Будьте особенно внимательны при переводе таких фраз. You can read how to translate plural forms [here](../plural-forms).
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/plurals.png)
 

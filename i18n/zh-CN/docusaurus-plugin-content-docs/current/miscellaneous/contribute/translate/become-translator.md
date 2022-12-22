@@ -15,7 +15,7 @@ sidebar_position: 2
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/languages.png)
 
-选择相应的文件，您就可以开始翻译任何您喜欢的产品了。 We have some recommendations about [what files are better to start with in AdGuard Websites project](/miscellaneous/contribute/translate/translation-priority).
+选择相应的文件，您就可以开始翻译任何您喜欢的产品了。 We have some recommendations about [what files are better to start with in AdGuard Websites project](../translation-priority).
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/folders.png)
 
@@ -35,7 +35,7 @@ sidebar_position: 2
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/mode.png)
 
-You can find some [helpful tips on translating AdGuard in this article](/miscellaneous/contribute/translate//guidelines). 请了解一下。
+You can find some [helpful tips on translating AdGuard in this article](../guidelines). 请了解一下。
 
 ### 如何成为审核员 {#proofreaders}
 
@@ -51,4 +51,4 @@ TA 们负责什么？
 
 - 参加注释中的讨论。
 
-每年最优秀的审核员都会收到 AdGuard 的礼物。 积极的翻译者也不会没有回报。 Read more about our [reward system](/miscellaneous/contribute/translate/rewards).
+每年最优秀的审核员都会收到 AdGuard 的礼物。 积极的翻译者也不会没有回报。 Read more about our [reward system](../rewards).
