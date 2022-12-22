@@ -1659,6 +1659,7 @@ Draft CSS 4.0 specification describes the [`:has()` pseudo-class](https://www.w3
 > Synonyms `:-abp-has` and `:if` are supported by ExtendedCss for better compatibility.
 
 **Syntax**
+
 ```
 [target]:has(selector)
 ```
@@ -1736,55 +1737,49 @@ This pseudo-class is basically a shortcut for `:not(:has())`. It is supported by
 
 ##### Pseudo-class `:contains()`
 
-This pseudo-class principle is very simple: it allows to select the elements that contain specified text or which content matches a specified regular expression. Regular expressions flags are supported. Please note that this pseudo-class uses `textContent` element property for matching (and not the `innerHTML`).
+This pseudo-class principle is very simple: it allows to select the elements that contain specified text or which content matches a specified regular expression. Regexp flags are supported.
+
+> **Note**
+>
+> The `:contains()` pseudo-class uses the `textContent` element property for matching, not the `innerHTML`.
+
+> **Aliases**
+>
+> Synonyms `:-abp-contains` and `:has-text` are supported for better compatibility.
 
 **Syntax**
-```
-// matching by plain text
-:contains(text)
-// matching by a regular expression
-:contains(/regexp/i)
-```
 
-Backward compatible syntax:
 ```
-// matching by plain text
-[-ext-contains="text"]
-// matching by a regular expression
-[-ext-contains="/regexp/"]
+[target]:contains(match)
 ```
-
-> Supported synonyms for better compatibility: `:-abp-contains`, `:has-text`.
+- `target` — optional, standard or extended css selector, can be missed for checking *any* element
+- `match` — required, string or regular expression for matching element `textContent`. Regular expression flags are supported.
 
 **Examples**
 
-Selecting all `div` elements, which contain text `banner`:
+For such DOM:
 ```html
 <!-- HTML code -->
-<div>Do not select this div</div>
-<div id="selected">Select this div (banner)</div>
-<div>Do not select this div <div class="banner"></div></div>
+<div>Not selected</div>
+<div id="match">Selected as IT contains "banner"</div>
+<div>Not selected <div class="banner"></div></div>
 ```
 
-Selector:
+the element `div#match` can be selected by any on these extended selectors:
 ```
-// matching by plain text
+! plain text
 div:contains(banner)
-// matching by a regular expression
-div:contains(/this .* banner/)
-// also with regular expression flags
-div:contains(/this .* banner/gi)
+
+! regular expression
+div:contains(/as .* banner/)
+
+! regular expression with flags
+div:contains(/it .* banner/gi)
 ```
 
-Backward compatible syntax:
-```
-// matching by plain text
-div[-ext-contains="banner"]
-// matching by a regular expression
-div[-ext-contains="/this .* banner/"]
-```
-
-> In this example only a `div` with `id=selected` will be selected, because the next element does not contain any text; `banner` is a part of code, not a text.
+> **Note**
+>
+> Only the `div` with `id=match` will be selected because the next element does not contain any text, and `banner` is a part of code, not a text.
 
 ##### Pseudo-class `:matches-css()`
 
