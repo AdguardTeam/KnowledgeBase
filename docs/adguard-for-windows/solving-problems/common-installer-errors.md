@@ -34,7 +34,7 @@ You could say this is a particular sub-case of Error 1603. The possible solution
 
     1) Press **Win + R** and enter ***services.msc***.
     2) Find in the list and double click on **Windows Installer**.
-    3) Hit **Start** button under **Service status** and hit **OK**. If the service status is **running**, you should click on **Stop** first and then hit **Start**. 
+    3) Hit **Start** button under **Service status** and hit **OK**. If the service status is **running**, you should click on **Stop** first and then hit **Start**.
     4) Press **Win + R**, type and enter ***msiexec /unregister*** and hit **Enter**.
     5) Press **Win + R** again, type and enter ***msiexec /regserver*** and hit **Enter**
 
@@ -58,13 +58,13 @@ The error sounds scarier than it actually is. In reality, this is a rather gener
 
 - Choose a different installation folder. It is possible that the current installation folder has some access restrictions. Also make sure you don't select an external drive, a virtual drive, etc.
 
-- Uninstall AdGuard using our special [uninstall tool](/adguard-for-windows/installation#advanced) and then repeat the installation.
+- Uninstall AdGuard using our special [uninstall tool](../../installation#advanced) and then repeat the installation.
 
 - Start and re-register Microsoft Installer service. It requires some work.
 
     1) Press **Win + R** and enter "***services.msc***.
     2) Find in the list and double click on **Windows Installer**.
-    3) Hit **Start** button under **Service status** and hit **OK**. If the service status is **running**, you should click on **Stop** first and then hit **Start**. 
+    3) Hit **Start** button under **Service status** and hit **OK**. If the service status is **running**, you should click on **Stop** first and then hit **Start**.
     4) Press **Win + R**, type and enter "***msiexec /unregister*** and hit **Enter**.
     5) Press **Win + R** again, type and enter "***msiexec /regserver*** and hit **Enter**
 
@@ -94,14 +94,14 @@ It's very likely that you've already installed AdGuard before.
 
 - Check if AdGuard is already installed on your computer. You can do it by pressing the **Win** key and typing in ***AdGuard***.
 
-- Maybe there's some leftover files from a previous AdGuard installation. Uninstall AdGuard using our special [uninstall tool](/adguard-for-windows/installation#advanced) and then repeat the installation.
+- Maybe there's some leftover files from a previous AdGuard installation. Uninstall AdGuard using our special [uninstall tool](../../installation#advanced) and then repeat the installation.
 
 ### Other errors {#other}
 
 If you've encountered an error that's not listed above, it is possible that we can solve it by ourselves. But in order to do that, we need log files from you. Please perform the following steps:
 
-- Find and archive **AdGuard installation logs** as it is described in [this article](/adguard-for-windows/solving-problems/installation-logs).
+- Find and archive **AdGuard installation logs** as it is described in [this article](../installation-logs).
 
-- Find and save to disk **Event Viewer** logs. [This article](/adguard-for-windows/solving-problems/system-logs) explains how to do that.
+- Find and save to disk **Event Viewer** logs. [This article](../system-logs) explains how to do that.
 
-- Please email all these files from two previous steps to the **[support team](/support/contact)** and describe the problem in the message body. Our tech support agents will reply to you as soon as possible.
+- Please email all these files from two previous steps to the **[support team](./support/contact)** and describe the problem in the message body. Our tech support agents will reply to you as soon as possible.

@@ -41,7 +41,7 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 ### Android {#android}
 
 * Open AdGuard settings;
-* Сhoose **Support**, then **Send Feedback** -> **Missed ad**/**Incorrect blocking**:
+* Сhoose **Support**, then **Send Feedback** → **Missed ad**/**Incorrect blocking**:
 
 ![android *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/android.png)
 
