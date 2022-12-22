@@ -1730,14 +1730,16 @@ A selector list can be set in `selector` as well. In this case **all** selectors
 
 > [Backward compatible syntax for `:has()`](https://github.com/AdguardTeam/ExtendedCss#-old-syntax-for-pseudo-class-has) is supported but not recommended.
 
+
 <!-- TODO: describe :if-not() as deprecated and move down -->
 ##### Pseudo-class `:if-not()`
 
 This pseudo-class is basically a shortcut for `:not(:has())`. It is supported by ExtendedCss for better compatibility with some filters subscriptions, but it is not recommended to use it in AdGuard filters. The rationale is that one day browsers will add `:has` native support, but it will never happen to this pseudo-class.
 
+
 ##### Pseudo-class `:contains()`
 
-This pseudo-class principle is very simple: it allows to select the elements that contain specified text or which content matches a specified regular expression. Regexp flags are supported.
+The `:contains()` pseudo-class principle is very simple: it allows to select the elements that contain specified text or which content matches a specified regular expression. Regexp flags are supported.
 
 > **Note**
 >
@@ -1781,9 +1783,10 @@ div:contains(/it .* banner/gi)
 >
 > Only the `div` with `id=match` will be selected because the next element does not contain any text, and `banner` is a part of code, not a text.
 
+
 ##### Pseudo-class `:matches-css()`
 
-This pseudo-class allows to match the element by its current style properties. The work of the pseudo-class is based on using the [`Window.getComputedStyle()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle) method.
+The `:matches-css()` pseudo-class allows to match the element by its current style properties. The work of the pseudo-class is based on using the [`Window.getComputedStyle()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle) method.
 
 **Syntax**
 
@@ -1835,56 +1838,56 @@ div:matches-css(before, content: /block me/)
 >
 > Obsolete pseudo-classes `:matches-css-before()` and `:matches-css-after()` are no longer recommended but still are supported for better compatibility.
 
+
 ##### Pseudo-class `:matches-attr()`
 
-This pseudo-class allows to select an element by its attributes, especially if they are randomized.
+The `:matches-attr()` pseudo-class allows to select an element by its attributes, especially if they are randomized.
 
 **Syntax**
-```
-selector:matches-attr("name"[="value"])
-```
 
-- `name` — attribute name OR regular expression for attribute name
-- `value` — optional, attribute value OR regular expression for attribute value
+```
+[target]:matches-attr("name"[="value"])
+```
+- `target` — optional, standard or extended css selector, can be missed for checking *any* element
+- `name` — required, simple string *or* string with wildcard *or* regular expression for attribute name matching
+- `value` — optional, simple string *or* string with wildcard *or* regular expression for attribute value matching
 
-> For regexp patterns, `"` and `\` should be escaped.
+> **Escaping special characters**
+>
+> For **regexp** patterns `"` and `\` should be **escaped**, e.g. `div:matches-attr(class=/[\\w]{5}/)`.
+
+> **Restrictions**
+>
+> Regexp patterns **does not support** flags.
 
 **Examples**
 
+`div:matches-attr("ad-link")` selects the element `div#target1`:
 ```html
 <!-- HTML code -->
-<div id="targer1" class="matches-attr" hsd4jkf-link="ssdgsg-banner_240x400"></div>
+<div id="target1" ad-link="1random23-banner_240x400"></div>
+```
 
-<div id="targer2" class="has matches-attr">
-  <div data-sdfghlhw="adbanner"></div>
-</div>
+`div:matches-attr("data-*"="adBanner")` selects the element `div#target2`:
+```html
+<!-- HTML code -->
+<div id="target2" data-1random23="adBanner"></div>
+```
 
-<div id="targer3-host" class="matches-attr has contains">
-  <div id="not-targer3" wsdfg-unit012="click">
-    <span>socials</span>
-  </div>
-  <div id="targer3" hrewq-unit094="click">
-    <span>ads</span>
-  </div>
-</div>
+`div:matches-attr(*unit*=/^click$/)` selects the element `div#target3`:
+```html
+<!-- HTML code -->
+<div id="target3" random123-unit094="click"></div>
+```
 
-<div id="targer4" class="matches-attr upward">
-  <div >
-    <inner-afhhw class="nyf5tx3" nt4f5be90delay="1000"></inner-afhhw>
-  </div>
+`*:matches-attr("/.{5,}delay$/"="/^[0-9]*$/")` selects the element `#target4`:
+```html
+<!-- HTML code -->
+<div>
+  <inner-random23 id="target4" nt4f5be90delay="1000"></inner-random23>
 </div>
 ```
 
-```
-// for div#targer1
-div:matches-attr("/-link/")
-// for div#targer2
-div:has(> div:matches-attr("/data-/"="adbanner"))
-// for div#targer3
-div:matches-attr("/-unit/"="/click/"):has(> span:contains(ads))
-// for div#targer4
-*[class]:matches-attr("/.{5,}delay$/"="/^[0-9]*$/"):upward(2)
-```
 
 ##### Pseudo-class `:matches-property()`
 
