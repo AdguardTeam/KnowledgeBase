@@ -1424,6 +1424,13 @@ Basic URL exceptions shall not disable rules with `$jsonprune` modifier. They ca
 >
 > Rules with the `$jsonprune` modifier are supported by AdGuard for Windows, Mac and Android, **running CoreLibs version 1.10 or later**.
 
+**Nested JSONPath expressions**
+
+> In AdGuard for Windows, Mac and Android, **running CoreLibs version 1.11 or later**, JSONPath expressions may be used as keys in filter expressions.
+
+* `||example.org^$jsonprune=\$.elems[?(has "\$.a.b.c")]` – remove all children of `elems` which have a property selectable by the JSONPath expression `$.a.b.c`.
+* `||example.org^$jsonprune=\$.elems[?(key-eq "\$.a.b.c" "abc")]` – remove all children of `elems` which have a property selectable by the JSONPath expression `$.a.b.c` with a value equal to `"abc"`.
+
 #### **`noop`** {#noop-modifier}
 
 `noop` modifier does nothing and can be used solely to increase rules' readability. It consists of a sequence of underscore characters (`_`) of any length and can appear in a rule as many times as needed.
