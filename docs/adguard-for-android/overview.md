@@ -7,7 +7,7 @@ sidebar_position: 1
 
 ## Ad blocking
 
-Any ad blocker's main purpose is to block ads, and for the majority of AdGuard software ad-blocking algorithms are mostly the same. The mechanism of filtering ads is described [here](./general/ad-filtering/how-ad-blocking-works).
+Any ad blocker's main purpose is to block ads, and for the majority of AdGuard software ad-blocking algorithms are mostly the same. The mechanism of filtering ads is described [here](/general/ad-filtering/how-ad-blocking-works).
 
 ![Ad blocking](https://cdn.adtidy.org/public/Adguard/Blog/manifestv3/adblockingworks.png)
 
@@ -21,19 +21,19 @@ The program uses a lot of different filters, our own and third-party ones, sorte
 
 ![Filters *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filters1.png)
 
-Find out more about all the filters available for AdGuard products by reading their descriptions in the app or [this comprehensive article](./general/ad-filtering/adguard-filters).
+Find out more about all the filters available for AdGuard products by reading their descriptions in the app or [this comprehensive article](/general/ad-filtering/adguard-filters).
 
 ## Custom filters
 
 ![Custom filters *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/custom-filters.png)
 
-AdGuard allows you to create your own custom filters, using the same type of rules that we have in our filters. If you want to try your hand at this, we would recommend studying [the article on creating your own ad filters](./general/ad-filtering/create-own-filters) which describes the AdGuard rules syntax in detail and provides plenty of examples.
+AdGuard allows you to create your own custom filters, using the same type of rules that we have in our filters. If you want to try your hand at this, we would recommend studying [the article on creating your own ad filters](/general/ad-filtering/create-own-filters) which describes the AdGuard rules syntax in detail and provides plenty of examples.
 
 > Tip: use the Import feature to transfer your rules to a different device.
 
 ## HTTPS filtering
 
-Nowadays almost all websites work via HTTPS, the web protocol where the last S letter stands for "secure". It happened so that most advertisers use this protocol as well, this is why [HTTPS filtering](./general/https-filtering/what-is-https-filtering) is really crucial for a modern ad blocker.
+Nowadays almost all websites work via HTTPS, the web protocol where the last S letter stands for "secure". It happened so that most advertisers use this protocol as well, this is why [HTTPS filtering](/general/https-filtering/what-is-https-filtering) is really crucial for a modern ad blocker.
 
 ![What is https](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https.png)
 
@@ -69,7 +69,7 @@ Many websites gather information about their visitors, such as their IP addresse
 
 You can flexibly adjust the work of Stealth Mode: for instance, you can prohibit the website to receive the search request you used to find it on the Internet, automatically delete both third-party and website’s own cookies, and disable location sharing in your browser that can be used to track your whereabouts.
 
-To learn all the main features and options you can manage in the Stealth mode settings, [read this article](./general/stealth-mode).
+To learn all the main features and options you can manage in the Stealth mode settings, [read this article](/general/stealth-mode).
 
 ![Stealth mode *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/stealth-mode.png)
 
@@ -79,7 +79,7 @@ Phishing is a fraudulent online practice aimed at obtaining sensitive informatio
 
 ![Browsing security *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/browsing-security.png)
 
-Fortunately, AdGuard's Browsing Security module protects you from visiting phishing and malicious websites. It also warns you about malware being downloaded onto your device. In case you want to learn more about Browsing Security, read [this article](./general/browsing-security).
+Fortunately, AdGuard's Browsing Security module protects you from visiting phishing and malicious websites. It also warns you about malware being downloaded onto your device. In case you want to learn more about Browsing Security, read [this article](/general/browsing-security).
 
 > But note that AdGuard for Android is not an antivirus. It will neither stop the actual download of a virus nor delete the already existing ones. For the complete protection of your device, we recommend using AdGuard in tandem with a dedicated AV tool.
 

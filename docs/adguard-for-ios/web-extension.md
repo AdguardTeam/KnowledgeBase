@@ -11,7 +11,7 @@ AdGuard's Safari Web extension is a tool that takes advantage of the new feature
 
 ## What it does
 
-By default, Safari provides only basic tools to content blockers. These tools don't allow the level of performance that can be found in content blockers on other operating systems (Windows, Mac, Android). For example, AdGuard apps on other platforms can use such effective weapons against ads as [CSS rules](./general/ad-filtering/create-own-filters#cosmetic-css-rules), [CSS selectors](./general/ad-filtering/create-own-filters#extended-css-selectors), and [scriptlets](./general/ad-filtering/create-own-filters#scriptlets). Unfortunately, these instruments are absolutely irreplaceable when dealing with more complex cases such as pre-roll ads on YouTube, for example.
+By default, Safari provides only basic tools to content blockers. These tools don't allow the level of performance that can be found in content blockers on other operating systems (Windows, Mac, Android). For example, AdGuard apps on other platforms can use such effective weapons against ads as [CSS rules](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [CSS selectors](/general/ad-filtering/create-own-filters#extended-css-selectors), and [scriptlets](/general/ad-filtering/create-own-filters#scriptlets). Unfortunately, these instruments are absolutely irreplaceable when dealing with more complex cases such as pre-roll ads on YouTube, for example.
 
 AdGuard's Safari Web extension compliments AdGuard by giving it the ability to employ these types of filtering rules.
 

@@ -13,6 +13,6 @@ The problem was, in some cases the app and the extension would hamper each other
 
 ![AdGuard Browser Assistant *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/ad_blocker_browser_extension_assistant.png)
 
-AdGuard Browser Assistant is a new browser extension that works and feels just like the integration mode but much lighter, without redundant functions, and doesn't interfere with the desktop apps. You can [read more about Browser Assistant for Windows](./adguard-for-windows/browser-assistant) or [Mac](./adguard-for-mac/browser-assistant), or [download it from our website](https://adguard.com/adguard-assistant/overview.html).
+AdGuard Browser Assistant is a new browser extension that works and feels just like the integration mode but much lighter, without redundant functions, and doesn't interfere with the desktop apps. You can [read more about Browser Assistant for Windows](/adguard-for-windows/browser-assistant) or [Mac](/adguard-for-mac/browser-assistant), or [download it from our website](https://adguard.com/adguard-assistant/overview.html).
 
 AdGuard Browser Assistant is available in all major browsers.
