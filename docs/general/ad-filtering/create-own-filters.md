@@ -1654,7 +1654,7 @@ Draft CSS 4.0 specification describes the [`:has()` pseudo-class](https://www.w3
 > Rules with the `:has()` pseudo-class should use [native implementation of `:has()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:has) if they use `##` marker and if it is possible, i.e. with no other extended pseudo-classes inside. To force applying of ExtendedCss rules with `:has()`, use `#?#`/`#$?#` marker explicitly.
 
 <!-- TODO: describe :if() alias as deprecated -->
-> **Aliases**
+> **Compatibility with other pseudo-classes**
 >
 > Synonyms `:-abp-has` and `:if` are supported by ExtendedCss for better compatibility.
 
@@ -1743,7 +1743,7 @@ This pseudo-class principle is very simple: it allows to select the elements tha
 >
 > The `:contains()` pseudo-class uses the `textContent` element property for matching, not the `innerHTML`.
 
-> **Aliases**
+> **Compatibility with other pseudo-classes**
 >
 > Synonyms `:-abp-contains` and `:has-text` are supported for better compatibility.
 
@@ -1783,61 +1783,57 @@ div:contains(/it .* banner/gi)
 
 ##### Pseudo-class `:matches-css()`
 
-These pseudo-classes allow to select an element by its current style property. The work of this pseudo-class is based on using the [`window.getComputedStyle`](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle) function.
+This pseudo-class allows to match the element by its current style properties. The work of the pseudo-class is based on using the [`Window.getComputedStyle()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle) method.
 
 **Syntax**
-```
-/* element style matching */
-selector:matches-css(property-name ":" pattern)
-/* ::before pseudo-element style matching */
-selector:matches-css-before(property-name ":" pattern)
-/* ::after pseudo-element style matching */
-selector:matches-css-after(property-name ":" pattern)
-```
 
-Backward compatible syntax:
 ```
-selector[-ext-matches-css="property-name ":" pattern"]
-selector[-ext-matches-css-after="property-name ":" pattern"]
-selector[-ext-matches-css-before="property-name ":" pattern"]
+[target]:matches-css([pseudo-element, ] property: pattern)
 ```
+- `target` — optional, standard or extended css selector, can be missed for checking *any* element
+- `pseudo-element` — optional, valid standard pseudo-element, e.g. `before`, `after`, `first-line`, etc.
+- `property` — required, a name of CSS property to check the element for
+- `pattern` —  required, a value pattern that is using the same simple wildcard matching as in the basic url filtering rules OR a regular expression. For this type of matching, AdGuard always does matching in a case insensitive manner. In the case of a regular expression, the pattern looks like `/regexp/`.
 
-- `property-name` — a name of CSS property to check the element for
-- `pattern` —  a value pattern that is using the same simple wildcard matching as in the basic url filtering rules OR a regular expression. For this type of matching, AdGuard always does matching in a case insensitive manner. In the case of a regular expression, the pattern looks like `/regexp/`.
+> **Special characters escaping and unescaping**
+>
+> For **non-regexp** patterns `(`,`)`,`[`,`]` must be **unescaped**, e.g. `:matches-css(background-image:url(data:*))`.
+>
+> For **regexp** patterns `\` should be **escaped**, e.g. `:matches-css(background-image: /^url\\("data:image\\/gif;base64.+/)`.
 
-> For non-regexp patterns, `(`,`)`,`[`,`]` must be unescaped, because we require escaping them in the filtering rules.
-
-> For regexp patterns, `"` and `\` should be escaped, because we manually escape those in extended-css-selector.js.
+> **Restrictions**
+>
+> Regexp patterns **does not support** flags.
 
 **Examples**
 
-Selecting all `div` elements which contain pseudo-class `::before` with specified content:
+For such DOM:
 ```html
 <!-- HTML code -->
 <style type="text/css">
-    #to-be-blocked::before {
+    #matched::before {
         content: "Block me"
     }
 </style>
-<div id="to-be-blocked" class="banner"></div>
-<div id="not-to-be-blocked" class="banner"></div>
+<div id="matched"></div>
+<div id="not-matched"></div>
 ```
 
-Selector:
+the `div` elements with pseudo-element `::before` and with specified `content` property can be selected by any of these extended selectors:
 ```
-// Simple matching
-div.banner:matches-css-before(content: block me)
-// Regular expressions
-div.banner:matches-css-before(content: /block me/)
+! string pattern
+div:matches-css(before, content: block me)
+
+! string pattern with wildcard
+div:matches-css(before, content: block*)
+
+! regular expression pattern
+div:matches-css(before, content: /block me/)
 ```
 
-Backward compatible syntax:
-```
-// Simple matching
-div.banner[-ext-matches-css-before="content: block me"]
-// Regular expressions
-div.banner[-ext-matches-css-before="content: /block me/"]
-```
+> **Compatibility with other pseudo-classes**
+>
+> Obsolete pseudo-classes `:matches-css-before()` and `:matches-css-after()` are no longer recommended but still are supported for better compatibility.
 
 ##### Pseudo-class `:matches-attr()`
 
