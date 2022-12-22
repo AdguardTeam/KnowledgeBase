@@ -3,25 +3,25 @@ title: Пользовательские скрипты
 sidebar_position: 5
 ---
 
-Пользовательские скрипты (мы также называем их «‎расширениями»‎) — это, по сути, мини-программы, написанные на языке Javascript. Они модифицируют или расширяют функциональность одного или нескольких сайтов. Многие пользователи AdGuard уже наверняка знакомы с такими расширениями, как Помощник AdGuard, Блокировщик всплывающей рекламы и AdGuard Extra.
+Пользовательские скрипты (мы также называем их «‎расширениями»‎) — это, по сути, мини-программы, написанные на языке JavaScript. Они модифицируют или расширяют функциональность одного или нескольких сайтов. Многие пользователи AdGuard уже наверняка знакомы с такими расширениями, как Помощник AdGuard, Блокировщик всплывающей рекламы и AdGuard Extra.
 
 ### Поддерживаемые продукты
 
-AdGuard может значительно расширять функциональность сайтов, работая как менеджер пользовательских скриптов. Добавлять собственные скрипты или управлять существующими вы можете в трёх наших продуктах: [AdGuard для Windows](/adguard-for-windows/overview.md), [AdGuard для Android](/adguard-for-android/overview.md) и [AdGuard для Mac](/adguard-for-mac/overview.md).
+AdGuard может значительно расширять функциональность сайтов, работая как менеджер пользовательских скриптов. You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](/adguard-for-windows/overview), [AdGuard for Android](/adguard-for-android/overview) and [AdGuard for Mac](/adguard-for-mac/overview).
 
 ### Рекомендуемые скрипты AdGuard
 
 > Эти пользовательские скрипты разработаны в AdGuard, и мы можем гарантировать, что они эффективны и безопасны. Помните: каждый раз, когда вы загружаете пользовательский скрипт из неизвестного источника, вы подвергаете себя риску, поскольку некоторые скрипты могут быть опасны для вашего компьютера. Старайтесь скачивать новые расширения только из проверенных источников, которым вы доверяете на 100%. Чуть позже мы приведём [несколько примеров](#more-userscripts) популярных сайтов.
 
-* **AdGuard Extra** — расширение, которое блокирует рекламу в сложных случаях, когда привычного подхода, основанного на фильтрах, недостаточно.
+* **AdGuard Extra**. An extension that blocks advertising in difficult cases when the usual filter-based approach is not enough.
 
-* **Блокировщик всплывающей рекламы** — название скрипта говорит само за себя. Он блокирует один из самых раздражающих типов рекламы — всплывающие окна.
+* **AdGuard Popup Blocker**. The name speaks for itself: it blocks popups — one of the most annoying types of ads on web pages.
 
-* **Помощник AdGuard** (старая версия) — расширение, предназначенное для управления фильтрацией прямо со страницы браузера (ручная блокировка, занесение сайта в исключения и т. д.).
+* **AdGuard Assistant** (legacy version). This custom extension is designed to control filtering directly from the browser page (manual blocking, exclusion of the site, etc.).
 
-> Обратите внимание, что это устаревшая версия Помощника и нет смысла использовать её на новых системах, потому что её давно заменил [Браузерный Помощник](https://adguard.com/ru/adguard-assistant/overview.html). Но старый Помощник может пригодиться, если для вашего браузера нет расширения Браузерного помощника.
+> Обратите внимание, что это устаревшая версия Помощника и нет смысла использовать её на новых системах, потому что её давно заменил [Браузерный помощник](https://adguard.com/adguard-assistant/overview.html). Но старый Помощник может пригодиться, если для вашего браузера нет расширения Браузерного помощника.
 
-* **Отключить AMP** — это скрипт, предустановленный только в AdGuard для Android, который отключает AMP (Accelerated Mobile Pages) на странице результатов поиска Google.
+* **Disable AMP**. A script, pre-installed only in AdGuard for Android, that disables AMP (Accelerated Mobile Pages) on the Google search results page.
 
 ## Где взять больше пользовательских скриптов{#more-userscripts}
 

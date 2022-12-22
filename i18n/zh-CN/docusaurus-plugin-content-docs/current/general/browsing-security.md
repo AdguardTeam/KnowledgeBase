@@ -21,7 +21,7 @@ The figure below provides a general understanding of how the Browsing Security m
 
 ### AdGuard Browser extensions
 
-Browser extensions work differently, using the so-called [_Lookup API_](https://github.com/AdguardTeam/AdguardForAndroid/issues/162) to check the pages you visit. Every time you visit any website, your local client exchanges information with our backend server in the form of hashes and hash prefixes. For those interested in the process at a deeper level, the link above will be helpful. As a result of that exchange, the local client determines if the website belongs to the database of potentially dangerous websites or not.
+Browser extensions work differently, using the so-called [_Lookup API_](https://github.com/AdguardTeam/AdguardForAndroid/issues/162#issue-115487668) to check the pages you visit. Every time you visit any website, your local client exchanges information with our backend server in the form of hashes and hash prefixes. For those interested in the process at a deeper level, the link above will be helpful. As a result of that exchange, the local client determines if the website belongs to the database of potentially dangerous websites or not.
 
 We bring to your attention that we never get any information that could allow us to determine which websites you visit and use that data in any way.
 
@@ -57,8 +57,8 @@ In the picture below we described an algorithm of Browsing Security Community wo
 
 ### Want to help?
 
-We will gladly accept any help! If you want to send us a complaint about a phishing or malware site, you can do it via [technical support](mailto:support@adguard.com), or [on our Forum](http://forum.adguard.com/).
+We will gladly accept any help! If you want to send us a complaint about a phishing or malware site, you can do it via technical support at **support@adguard.com** or [on our forum](http://forum.adguard.com/).
 
 ### False-positive responses
 
-Occasionally, some non-malicious websites get added to AdGuard's filters. We do our best to reduce the percentage of false positives, but they still occur. If you come across this behavior from AdGuard, please send us a complaint about the false-positive alarm. You can submit such complaints via our [technical support](mailto:support@adguard.com) or on [our Forum](http://forum.adguard.com/).
+Occasionally, some non-malicious websites get added to AdGuard's filters. We do our best to reduce the percentage of false positives, but they still occur. If you come across this behavior from AdGuard, please send us a complaint about the false-positive alarm. You can submit such complaints via our technical support at **support@adguard.com** or on [our Forum](http://forum.adguard.com/).

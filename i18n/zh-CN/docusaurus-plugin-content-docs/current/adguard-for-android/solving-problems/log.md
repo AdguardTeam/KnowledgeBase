@@ -39,4 +39,4 @@ sidebar_position: 2
 
 您亦可以将日志（包含系统信息和有关 AdGuard 设置信息的 *state.txt* 文件）直接导出到本地文件中。 该操作十分方便，例如，如果您与开发人员正在 [GitHub](https://github.com/AdguardTeam/AdguardForAndroid/issues) 、[论坛](https://forum.adguard.com/)或其他平台上谈论时，就可以直接转发日志内容。
 
-您要前往「设置」 — 「高级」并点击「导出日志和系统信息」，以将日志和系统信息导出至文件。 选择目标文件夹，点击「保存」。
+To export logs and system information into a file, go to "Settings" — "Advanced" and tap "Export logs and system info". 选择目标文件夹，点击「保存」。

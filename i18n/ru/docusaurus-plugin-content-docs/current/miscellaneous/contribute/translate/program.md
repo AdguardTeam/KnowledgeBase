@@ -9,4 +9,4 @@ sidebar_position: 1
 
 На данный момент мы используем платформу [Crowdin](https://crowdin.com/) для управления переводами наших продуктов. Регистрируйтесь там, если тоже хотите принять участие в переводах AdGuard.
 
-Узнайте, [как стать нашим переводчиком](./become-translator.md) и о том, [что вы можете получить взамен](./rewards.md).
+If you want to be among the volunteers who help us translate AdGuard, please read the information on [how to become our translator](../become-translator) and [how we collaborate with them](../rewards).

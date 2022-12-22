@@ -39,7 +39,7 @@ sidebar_position: 4
 
 Вот так, например, выглядит ключ 1+1:
 
-![ключ 1+1](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/1.outdatedlicenses_en.png)
+![ключ 1+1](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/1.outdatedlicenses_en.png)
 
 *Несмотря отображение общего количества устройств, использоваться он может всё так же на одном десктопном и одном мобильном устройстве.*
 > Все устаревшие лицензии отображаются в личном кабинете с пометкой «старая версия». Они автоматически преобразуются в новый тип, когда вы их улучшаете или продлеваете. Однако тут есть небольшие технические ограничения. Ниже рассказываем, какие лицензии можно преобразовать в ключи нового типа и как это сделать.
@@ -48,33 +48,33 @@ sidebar_position: 4
 
 Сделать это можно на [странице продления](https://adguard.com/renew.html) или в [личном кабинете AdGuard](https://my.adguard.com/main.html):
 
-![Улучшить](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_en.png)
+![Улучшить](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_en.png)
 > Перейдите в «Мои лицензии» и проверьте, какие улучшения вам доступны для каждого конкретного ключа. Ниже поясним на конкретных примерах.
 
 ### Лицензии на 1/2/3 устройства
 
 **Годовые** лицензии на 1, 2, 3 устройства могут быть сконвертированы как в Персональную, так и в Семейную лицензию при продлении:
 
-![Обновить или улучшить](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/3.yearly_en.png)
+![Обновить или улучшить](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/3.yearly_en.png)
 > Выбирайте, сколько устройств вам нужно защитить.
 
 Вы также можете не продлевать лицензии, а сделать их вечными:
 
-![Вечная](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/4.lifetime_en.png)
+![Вечная](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/4.lifetime_en.png)
 
 **Вечные** лицензии из-за технических ограничений можно конвертировать только в Семейные (на 9 устройств):
 
-![Улучшить до Вечной](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/5.lifetimeupgrade_en.png)
+![Улучшить до Вечной](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/5.lifetimeupgrade_en.png)
 
 ### Лицензии на 4+ устройства (до 9)
 
 **Годовые** ключи такой конфигурации можно превратить только в Семейную лицензию:
 
-![Годовая лицензия на 4 устройства](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/6.yearly4+devices_en.png)
+![Годовая лицензия на 4 устройства](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/6.yearly4+devices_en.png)
 
 **Вечные** ключи на 4 и более устройств нельзя улучшить. Здесь также действует техническое ограничение:
 
-![Вечная лицензия на 4 устройства](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/7.lifetime4+devices_en.png)
+![Вечная лицензия на 4 устройства](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/7.lifetime4+devices_en.png)
 
 ### Лицензии на 9+ устройств
 

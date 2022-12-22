@@ -7,7 +7,7 @@ This page describes the features and details of AdGuard’s central management o
 
 ## 1. Download the MSI {#msi-download}
 
-Download the [AdGuard MSI](https://cdn.adguard.com/public/Windows/AdGuard.msi).
+Download the [AdGuard MSI](https://cdn.adtidy.org/public/Windows/AdGuard.msi).
 
 ## 2. Configure the settings for your network {#settings-configuring}
 
@@ -17,7 +17,7 @@ The only supported policy is `LicenseKey`. If this policy is set, AdGuard will p
 
 ## 3. Make sure that AdGuard servers are available {#servers-available}
 
-AdGuard connects to two hosts: `api.adguard.com` and `filters.adtidy.org`. Make sure that both servers are available.
+AdGuard connects to two hosts: `api.adguard.org` and `filters.adtidy.org`. Make sure that both servers are available.
 
 ## 4. Push the MSI out to your network {#msi-push}
 
@@ -25,7 +25,7 @@ If you usually use SMS or other tools, use them to push out the AdGuard MSI just
 
 Otherwise, you can run the MSI on the target machine directly (and silently) with this command: `Msiexec /q /i AdGuard.msi`
 
-If you need to roll out an update, use this command: `Msiexec AdGuard.msi /q /i AdGuard.msi REINSTALL=ALL REINSTALLMODE=vomus`
+If you need to roll out an update, use this command: `Msiexec /q /i AdGuard.msi REINSTALL=ALL REINSTALLMODE=vomus`
 
 **Please note, that you must run these commands with admin privileges.**
 

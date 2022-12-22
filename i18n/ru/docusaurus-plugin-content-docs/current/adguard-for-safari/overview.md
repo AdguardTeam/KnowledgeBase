@@ -7,24 +7,24 @@ AdGuard для Safari был разработан в соответствии с
 
 ## Общие {#general}
 
-![Вкладка «Общие»](https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/General.png)
+![Вкладка «Общие»](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/General.png)
 
 Первая вкладка — это экран «Общие», где вы можете настроить основные параметры: уведомления, интервалы обновления и открытие AdGuard при запуске системы. Вы также можете выбрать отображение значка AdGuard в строке меню. Там же можно включить [блокировщики контента](#contentblockers), чтобы блокировать рекламу, трекеры, раздражители и т. д.
 
 ## Фильтры {#filters}
 
-![Вкладка «Фильтры»](https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/Filters.png)
+![Вкладка «Фильтры»](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/Filters.png)
 
 Фильтр — это список правил, написанных в специальном синтаксисе. Блокировщики контента считывают эти правила и блокируют рекламу или запросы к опасным сайтам.
 
 Фильтры объединены в восемь тематических категорий: *Блокировка рекламы, Конфиденциальность, Виджеты соцсетей, Фильтры раздражителей, Безопасность, Языковые фильтры, Пользовательские и Другие фильтры*.
-> Узнайте больше о [фильтрах AdGuard](/general/ad-filtering/adguard-filters.md) или [фильтрации рекламы в целом](/general/ad-filtering/how-ad-blocking-works.md).
+> Read more about [AdGuard filters](/general/ad-filtering/adguard-filters) or [ad filtering in general](/general/ad-filtering/how-ad-blocking-works).
 
 На вкладке «Фильтры» можно включить всю категорию или отдельные фильтры. Изменения во вкладке отражаются в разделе «Блокировщики контента» (вкладка «Общие»).
 
 ## Блокировщики контента {#contentblockers}
 
-![Вкладка «Блокировщики контента»](https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/Contentblockers.png)
+![Вкладка «Блокировщики контента»](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/Contentblockers.png)
 
 Блокировщик контента — это тематический блок фильтров. Фильтры, связанные с конфиденциальностью, входят в блокировщик контента с соответствующим названием — *AdGuard Конфиденциальность*.
 
@@ -60,22 +60,22 @@ AdGuard для Safari был разработан в соответствии с
 
 *AdGuard Другие* содержит фильтры с различными функциями. Например, в нём есть фильтр, который разблокирует поисковую рекламу и саморекламу сайтов. В некоторых случаях это помогает найти то, что нужно, потому что такая реклама более релевантна и менее навязчива, чем другие её виды.
 
-> У нас нет «приемлемой рекламы», оплачиваемой рекламодателями. Вместо этого мы даём пользователям возможность включить отображение [поисковой рекламы и саморекламы сайтов](/general/ad-filtering/search-ads.md).
+> У нас нет «приемлемой рекламы», оплачиваемой рекламодателями. Instead, we provide users with an option to see [search ads and websites' self-promotion](/general/ad-filtering/search-ads).
 
 ### AdGuard Пользовательские {#adguard_custom}
 
-![Вкладка «Пользовательские»](https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/AGCustom.png)
+![Вкладка «Пользовательские»](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/AGCustom.png)
 
 Если вам нужно больше фильтров, вы можете добавить их в разделе *AdGuard Пользовательские*. Чтобы добавить пользовательский фильтр, введите его URL или путь к файлу. Новые фильтры вы можете найти на [filterlists.com](https://filterlists.com/).
 
 ## Пользовательские правила {#userrules}
 
-Пользовательские правила можно использовать, чтобы настроить блокировку под себя. Их можно добавить вручную или импортировать. Когда вы блокируете элемент на странице, они создаются автоматически. Чтобы добавить собственные правила фильтрации, используйте [специальный синтаксис](/general/ad-filtering/create-own-filters.md).
+Пользовательские правила можно использовать, чтобы настроить блокировку под себя. Их можно добавить вручную или импортировать. Когда вы блокируете элемент на странице, они создаются автоматически. To add your own filering rules, use a [special syntax](/general/ad-filtering/create-own-filters).
 
 ## О программе {#about}
 
-![Вкладка «О программе»](https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/About.png)
+![Вкладка «О программе»](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/About.png)
 
 На вкладке «О программе» находится информация о текущей версии продукта и ссылки на юридические документы. Там же находится ссылка на наш репозиторий на GitHub. Там вы можете следить за развитием продукта, предлагать новые функции и сообщать об ошибках.
 
-> AdGuard для Safari можно скачать бесплатно [из App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259). Подробная инструкция по установке доступна [в Базе знаний](/adguard-for-safari/installation.md).
+> AdGuard для Safari можно скачать бесплатно [из App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259). A detailed setup instruction is available in the [Knowledge base](../installation).

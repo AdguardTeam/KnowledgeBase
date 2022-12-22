@@ -11,7 +11,7 @@ HTTPS(HyperText Transfer Protocol Secure)는 보안을 강화하기 위해 암�
 
 아래의 그림은일반 HTTP 프로토콜과 보안 HTTPS 프로토콜의 차이점을 보여줍니다.
 
-![HTTPS란 무엇인가요](https://cdn.adguard.com/public/Adguard/Blog/https/what_is_https_ko.png)
+![HTTPS란 무엇인가요](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https.png)
 
 ### 보안 인증서란 무엇인가요?
 
@@ -27,7 +27,7 @@ HTTPS 필터링 작업 방식이 쉬웠다면 HTTPS는 그렇게 안전하지 �
 
 아래의 그림은 이러한 과정을 알기 쉽게 보여줍니다.
 
-![HTTPS 필터링은 어떻게 작동하나요](https://cdn.adguard.com/public/Adguard/Blog/https/what_is_https_filtering_ko.png)
+![HTTPS 필터링은 어떻게 작동하나요](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
 
 ### 내 트래픽이 암호화되고 안전하나요?
 
@@ -51,7 +51,7 @@ EV 인증서는 더 높은 수준의 보안을 의미하며 일반 인증서보�
 
 ### HTTPS 필터링과 관련된 문제
 
-최근 [연구](https://cdn.adguard.com/public/Adguard/Blog/https/interception-ndss17.pdf)에 따르면 HTTPS 연결의 5~10 %는 HTTPS 필터링 애플리케이션에 의해 설정됩니다. 이 HTTPS 필터링 애플리케이션 중 대부분 바이러스 백신 소프트웨어입니다. 나쁜 소식은 테스트된 26개의 바이러스 중 24개가 연결 보안 수준을 떨어뜨렸고 3분의 2가 해킹 연결에 취약하다는 것입니다.
+A [2017 study](https://cdn.adtidy.org/public/Adguard/Blog/https/interception-ndss17.pdf) shows that 5 to 10% of HTTPS connections are established by HTTPS-filtering applications. 이 HTTPS 필터링 애플리케이션 중 대부분 바이러스 백신 소프트웨어입니다. 나쁜 소식은 테스트된 26개의 바이러스 중 24개가 연결 보안 수준을 떨어뜨렸고 3분의 2가 해킹 연결에 취약하다는 것입니다.
 
 연구원들의 결론은 인터넷 보안 커뮤니티가 보안 연결을 필터링하는 애플리케이션에 세심한주의를 기울여야 한다는 것입니다. 그리고 그러한 프로그램의 개발자는 필터링 구현의 품질에 가장 진지하게주의를 진지하게 임해야 합니다.
 
@@ -59,11 +59,11 @@ AdGuard는 연구원들에 의해 테스트되지 않았습니다. 저희 추정
 
 AdGuard는 연구원의 결과에 전적으로 동의합니다. 또한 현재 겪고 있는 문제와 필터링 메커니즘의 품질 및 보안을 개선하기 위한 계획에 대해 알려 드리고자 합니다. 이러한 목록은 우선 순위에 따라 정렬됩니다.
 
-위의 연구에서 발견된 대부분의 문제는 인증서 유효성 검사 메커니즘과 관련이 있습니다. 저희는 별도의 인증서 유효성 검사 라이브러리를 생성 중입니다. 또한 인증서 유효성 검사 라이브러리를 오픈 소스로 만들고 싶습니다. AdGuard의 HTTPS 필터링 단점에 대한 [자세한 내용](known-issues.md)은 이 기사에서 확인할 수 있습니다.
+위의 연구에서 발견된 대부분의 문제는 인증서 유효성 검사 메커니즘과 관련이 있습니다. 저희는 별도의 인증서 유효성 검사 라이브러리를 생성 중입니다. 또한 인증서 유효성 검사 라이브러리를 오픈 소스로 만들고 싶습니다. A [separate article](../known-issues) lists all the known drawbacks of HTTPS filtering in AdGuard and our plans to fix them.
 
 #### Android 7 이상에서 HTTPS 필터링 문제
 
-[Android 7부터](https://blog.adguard.com/en/android-nougat-release-and-what-does-it-mean-for-adguard-users/) 개발자는 애플리케이션이 사용자 지정 인증서를 신뢰하도록 지정해야 합니다. 이제 AdGuard는 HTTPS 트래픽을 필터링하기 위해 사용자 인증서를 설치합니다. 앱이 이 인증서를 신뢰하지 않으면 HTTPS 트래픽이 필터링되지 않습니다. HTTPS 트래픽이 필터링되지 않으면 What to do?
+[Android 7부터](https://blog.adguard.com/en/android-nougat-release-and-what-does-it-mean-for-adguard-users/) 개발자는 애플리케이션이 사용자 지정 인증서를 신뢰하도록 지정해야 합니다. 이제 AdGuard는 HTTPS 트래픽을 필터링하기 위해 사용자 인증서를 설치합니다. 앱이 이 인증서를 신뢰하지 않으면 HTTPS 트래픽이 필터링되지 않습니다. HTTPS 트래픽이 필터링되지 않으면 어떻게 해야 할까요?
 
 우선, 많은 앱(최신 앱 포함)이 여전히 사용자 인증서를 신뢰합니다. 거의 모든 브라우저는 이러한 인증서도 신뢰합니다. 이 인증서를 신뢰하지 않는 일부 브라우저가 있을 수 있지만 드문 경우입니다.
 

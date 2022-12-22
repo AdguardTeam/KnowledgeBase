@@ -7,7 +7,7 @@ sidebar_position: 8
 
 Apple's Mail app now uses a proxy to hide a user's IP address when downloading images from emails.
 
-![Mail privacy protection](https://cdn.adguard.com/content/kb/ad_blocker/mac/mac_protectMailActivity.jpg)
+![Mail privacy protection](https://cdn.adtidy.org/content/kb/ad_blocker/mac/mac_protectMailActivity.jpg)
 
 However, it won't work if there's an active VPN connection. As it treats AdGuard as a VPN, it won't preload images automatically.
 

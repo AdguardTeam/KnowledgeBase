@@ -19,68 +19,68 @@ sidebar_position: 9
 
 Зайдите в **Настройки** > **Приложения** > **Управление приложениями** > прокрутите вниз, чтобы найти **AdGuard**, включите **Автозапуск**.
 
-![Настройки Xiaomi](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
+![Xiaomi Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
 
 На том же экране прокрутите вниз до настройки **Контроль активности**, перейдите в неё и выберите "Нет ограничений".
 
-![Miui](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_0a.png)
+![Miui *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_0a.png)
 
 Запустите приложение **Безопасность**.
 
 Нажмите на значок **шестерёнки** в правом верхнем углу экрана.
 
-![Настройки Miui](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_1.jpeg)
+![Miui Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_1.jpeg)
 
 На экране "Настройки" выберите пункт **"Ускорение"**.
 
-![Настройки Miui](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_2.png)
+![Miui Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_2.png)
 
 Затем нажмите на **"Закрепленные приложения"**.
 
-![Настройки Miui](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_3.jpeg)
+![Miui Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_3.jpeg)
 
 На экране **Закреплённые приложения** переведите тумблер AdGuard в активное положение.
 
-![Настройки Miui](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_4.jpeg)
+![Miui Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_4.jpeg)
 
 Готово! Вы успешно закрепили приложение AdGuard.
 
 ### MIUI 12
 
-![Xiaomi](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
+![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
 
 Зайдите в **Настройки** > **Приложения** > **Управление приложениями** > **AdGuard**.
 
 - Включите Автозапуск AdGuard
 - В Разрешениях выберите **Нет ограничений** для Контроля фоновой активности
 
-![Xiaomi](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi5en.jpeg)
+![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi5en.jpeg)
 
 Теперь запустите Диспетчер запущенных приложений, проведя пальцем вверх от нижней грани экрана и найдите приложение AdGuard.
 
-![Xiaomi](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi6.jpeg)
+![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi6.jpeg)
 
 Нажмите на него и удерживайте, пока не появится специальное меню. Нажмите на значок замка.
 
-![Xiaomi](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi7en.jpeg)
+![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi7en.jpeg)
 
 Теперь этот значок должен быть над окном AdGuard.
 
-![Xiaomi](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi8en.jpeg)
+![Xiaomi](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi8en.jpeg)
 
 ### MIUI 10-11
 
 Чтобы приложение успешно работало в фоновом режиме, настройте следующие параметры:
 
-![Xiaomi](https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi1en.png)
+![Xiaomi *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/xiaomi1en.png)
 
 - **Настройки** > **Батарея и производительность** > отключите режим **«Экономия энергии»**
 
-![Xiaomi](https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi2en.png)
+![Xiaomi *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/xiaomi2en.png)
 
 - Затем откройте настройки **Контроль фоновой активности**> **AdGuard** > **Нет ограничений**
 
-![Xiaomi](https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi3en.png)
+![Xiaomi *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/xiaomi3en.png)
 
 ### Управление питанием
 
@@ -104,11 +104,11 @@ sidebar_position: 9
 
 - Нажмите на кнопку **Недавние задачи** и проведите по AdGuard вниз, чтобы сделать опции *видимыми* (как показано на скриншоте):
 
-![Xiaomi](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/xiaomirecent.png)
+![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomirecent.png)
 
 - Нажмите на иконку **замка**. Это не даст Xiaomi автоматически закрывать AdGuard. Это должно выглядеть так:
 
-![Xiaomi](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/xiaomilocked.png)
+![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomilocked.png)
 
 - Перейдите в раздел **Батарея**
 
@@ -118,7 +118,7 @@ sidebar_position: 9
 
 - Настройте следующие **Фоновые параметры**:
 
-![Xiaomi](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/xiaomirest.png)
+![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomirest.png)
 
 - Перейдите в **Разрешения**
 
@@ -126,7 +126,7 @@ sidebar_position: 9
 
 - Убедитесь, что эта функция включена для AdGuard:
 
-![Xiaomi](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/xiaomiautostart.png)
+![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomiautostart.png)
 
 ## Samsung
 
@@ -147,24 +147,24 @@ sidebar_position: 9
 
 1. Запустите **Уход за устройством** из настроек телефона
 
-![Samsung](https://cdn.adguard.com/public/Adguard/screenshots/android/samsung1en.png)
+![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung1en.png)
 
 2. Нажмите **Аккумулятор**
 
-![Samsung](https://cdn.adguard.com/public/Adguard/screenshots/android/samsung2en.png)
+![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung2en.png)
 
 3. Нажмите на **иконку меню в виде трёх точек** > ** Настройки**
 
-![Samsung](https://cdn.adguard.com/public/Adguard/screenshots/android/samsung3en.png)
+![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung3en.png)
 
 4. Отключите все переключатели (кроме Уведомлений)
 5. Нажмите на **Приложения в спящем режиме**
 
-![Samsung](https://cdn.adguard.com/public/Adguard/screenshots/android/samsung45en.png)
+![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung45en.png)
 
 6. **Разбудите** все приложения с помощью значка мусорной корзины
 
-![Samsung](https://cdn.adguard.com/public/Adguard/screenshots/android/samsung6en.png)
+![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung6en.png)
 
 > **Важно**: Убедитесь, что функции `Перевод в режим сна` и `Автоотключение приложений` отключены. В противном случае Samsung вернёт ваши приложения в спящий режим через несколько дней, даже если вы разбудили их вручную.
 
@@ -174,15 +174,15 @@ sidebar_position: 9
 
  - Нажмите кнопку **Недавние задачи**, коснитесь значка **Дополнительных настроек**. Это должно выглядеть так:
 
- ![Настройки Samsung](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/samsungoptions.png)
+ ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/samsungoptions.png)
 
  - Нажмите на **Закрепить приложения**:
 
- ![Настройки Samsung](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/samsunglockapps.png)
+ ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/samsunglockapps.png)
 
   - Нажмите на значок замка
 
- ![Настройки Samsung](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/samsunglock.png)
+ ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/samsunglock.png)
 
 ## Huawei
 
@@ -190,15 +190,15 @@ sidebar_position: 9
 
 - **Настройки телефона** > **Батарея** > **Запуск приложений**, активируйте **Управление вручную** и убедитесь, что все тумблеры включены.
 
-![Huawei](https://cdn.adguard.com/public/Adguard/screenshots/android/huawei1en.png)
+![Huawei *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/huawei1en.png)
 
 1. **Настройки телефона** > **Батарея** > **Запуск приложений**. На некоторых устройствах эта функция может быть недоступна или названа по-другому.
 
-![Huawei](https://cdn.adguard.com/public/Adguard/screenshots/android/huawei2en.png)
+![Huawei *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/huawei2en.png)
 
 2. Выключите **Управлять всем автоматически**
 
-![Huawei](https://cdn.adguard.com/public/Adguard/screenshots/android/huawei3en.png)
+![Huawei *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/huawei3en.png)
 
 3. Убедитесь, что вы **включили** все тумблеры.
 
@@ -216,7 +216,7 @@ Huawei чрезвычайно изобретательны в оптимизац
 
 **Вам нужно**:
 
-1) [Установить ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) на ваш компьютер;
+1) [Install ADB *mobile_border](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer;
 
 2) Подключить телефон с помощью кабеля передачи данных;
 
@@ -230,7 +230,7 @@ Huawei чрезвычайно изобретательны в оптимизац
 
 Мы ещё не подтвердили это, но вполне возможно, что вы можете просто отключить Power Genie через *Настройки телефона* > * Приложения*. Этот параметр необходимо будет повторно применять каждый раз при перезагрузке устройства.
 
-> Пожалуйста, следуйте шагам ниже — у телефонов Huawei обычно много механизмов энергосбережения. И ещё, у вас может не быть Power Genie на телефоне, но приложения всё ещё будут закрываться с помощью другого механизма.
+> Пожалуйста, следуйте шагам ниже — у телефонов Huawei обычно много механизмов энергосбережения. И ещё, у вас может не быть PowerGenie на телефоне, но ваши приложения всё ещё будут закрываться с помощью другого механизма.
 
 ### Устройства с EMUI 6+ (и некоторые устройства с EMUI 5):
 
@@ -257,18 +257,18 @@ Huawei чрезвычайно изобретательны в оптимизац
 
   - Нажмите на кнопку **Недавние задачи**:
 
-  ![Последние приложения Huawei](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/huaweirecentapps.jpeg)
+  ![Huawei recent apps *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweirecentapps.jpeg)
 
   - Нажмите на значок замка:
 
- ![Блокировка Huawei](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/huaweilock.jpeg)
+ ![Huawei lock *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweilock.jpeg)
 
 Кроме того, чтобы более эффективно настроить фоновую работу вашего приложения, вам следует открыть настройки устройства и сделать следующее:
 
 - Откройте **Расширенные настройки** > затем **Менеджер батареи** > в **Управлении питанием** выберите **Производительность**;
 - Выберите **Защищённые приложения** в разделе **Менеджер батареи** и проверьте, находится ли ваше приложение среди них;
 - Откройте раздел **Приложения** в основных настройках и выберите AdGuard > затем **Батарея** > активируйте опции **Сообщать об энергоёмкости** и **Работа при выключенном экране**;
-- Затем в разделе **Приложения** откройте **Настройки** (внизу экрана) > **Специальный доступ** > выберите **Игнорировать оптимизацию батареи* > нажмите **Разрешить** > **Все приложения** > найдите AdGuard в списке и выберите **Запретить**.
+- Затем в разделе **Приложения** откройте **Настройки** (внизу экрана) > **Специальный доступ** > выберите **Игнорировать оптимизацию батареи** > нажмите **Разрешить** > **Все приложения** > найдите AdGuard в списке и выберите **Запретить**.
 
 ## Meizu
 
@@ -294,7 +294,7 @@ Nokia на Android O и P отключает все фоновые процес�
 
 ### Nokia 1 (Android Go)
 
-- Удалите файл com.evenwell.emm с помощью следующей команды adb:
+- Удалите файл com.evenwell.emm с помощью следующих команд adb:
 
 `adb shell` `pm uninstall --user 0 com.evenwell.emm`
 
@@ -332,11 +332,11 @@ Nokia на Android O и P отключает все фоновые процес�
 
  - Откройте меню недавних приложений (как показано на этом снимке экрана):
 
- ![Onepluslock](https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/onepluslock.png)
+ ![Onepluslock *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/android/onepluslock.png)
 
 - Закрепите приложение AdGuard:
 
-![Oneplusdots](https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/oneplusdots.png)
+![Oneplusdots *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/android/oneplusdots.png)
 
 > На некоторых устройствах OnePlus есть функции «Автозапуск» и «Глубокая Оптимизация». Использование этих функций не позволяет приложениям работать в фоновом режиме. Пожалуйста, отключите его для вашего приложения.
 
@@ -370,12 +370,12 @@ Android на заводской прошивке, как правило, не к
 
  - Перейдите в раздел **Настройки** > **Сеть и Интернет**
 
- ![Stocknetwork](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/stocknetwork.png)
+ ![Stocknetwork *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/stocknetwork.png)
 
  - Откройте режим **VPN** и выберите **AdGuard**
 
- ![Stockvpn](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/stockvpn.png)
+ ![Stockvpn *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/stockvpn.png)
 
  - Выберите пункт **Always-on VPN**
 
- ![Stockadguard](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/stockadguard.png)
+ ![Stockadguard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/stockadguard.png)

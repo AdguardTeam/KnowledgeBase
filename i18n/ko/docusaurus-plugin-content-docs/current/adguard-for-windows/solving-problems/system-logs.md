@@ -9,21 +9,21 @@ sidebar_position: 5
 
 2. 화면 하단에 나타나는 창에서 `eventvwr`을 입력하고 **OK** 키를 누릅니다.
 
-![실행 창](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/eng_event_logs_1.png)
+![Run window *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_1.png)
 
 3. 그다음에는 이벤트 뷰어 창이 나타납니다.
 
-![이벤트 뷰어](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/eng_event_logs_2.png)
+![Event viewer *border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_2.png)
 
 필요한 파일을 저장하려면 다음 지침을 따르세요.
 
-- **앱**을 엽니다: **이벤트 뷰어(로컬)**> **Windows 로그**>**애플리케이션**.
+- Open **Application**: **Event Viewer (Local)** → **Windows Logs** → **Application**.
 
 - **애플리케이션**을 우클릭하고 드롭다운 메뉴에서 **다른 이름으로 모든 이벤트 저장…** 을 선택합니다.
 
 - 이름과 저장할 위치를 선택하고 **저장**을 클릭합니다. 그다음에는 **언어 설정에 대한 정보 표시**를 선택합니다. **한국어** 옆의 확인란을 선택하고 **확인**을 클릭합니다.
 
-- **시스템**을 엽니다: **이벤트 뷰어(로컬)**> **Windows 로그**> **시스템**.
+- Open **System**: **Event Viewer (Local)** → **Windows Logs** →  **System**.
 
 - **시스템**을 우클릭하고 드롭다운 메뉴에서 **다른 이름으로 모든 이벤트 저장…**을 선택합니다.
 

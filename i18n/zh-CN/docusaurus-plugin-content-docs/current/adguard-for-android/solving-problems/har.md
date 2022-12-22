@@ -10,7 +10,7 @@ HAR（HTTP ARchive）格式是 JSON 格式的存档文件，用于记录 Web 浏
 有时我们需要对文件进行分析以拦截由于某种原因难以再现的特定广告。 要获取 HAR 文件，请执行以下步骤：
 1. 打开 AdGuard ，前往「设置」
 2. 在菜单中选择「高级」
-3. 选择「低级设置」
+3. Choose "Low Level Settings".
 4. 激活 “pref.har.capture”（您必须重新启动保护）
 5. 重试导致问题的操作：打开应用程序，执行必要的操作以使广告出现。
 6. 现在再次关闭 “pref.har.capture”。

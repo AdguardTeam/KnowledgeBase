@@ -7,8 +7,8 @@ sidebar_position: 1
 
 Если вы столкнулись с проблемой, которая предположительно была связана с совместимостью, вы всегда можете перейти на более старый, но более стабильный сетевой драйвер TDI. Для этого:
 
-1. Перейдите в *Настройки -> Сеть*.
+1. Go to *Settings → Network*.
 
 2. Отключите драйвер WFP, как показано ниже:
 
-![WFP-драйвер](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/wfp-driver.png)
+![WFP driver *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/wfp-driver.png)

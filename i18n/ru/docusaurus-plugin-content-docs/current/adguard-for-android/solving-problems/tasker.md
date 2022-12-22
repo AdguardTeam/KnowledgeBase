@@ -9,7 +9,7 @@ sidebar_position: 3
 
 Существует множество «приложений-таскеров»‎, например, [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&noprocess), [AutomateIt](https://play.google.com/store/apps/details?id=AutomateIt.mainPackage&noprocess) и другие. AdGuard предоставляет интерфейс, который позволяет этим приложениям настраивать различные правила автоматизации.
 
-![Автоматизация AdGuard](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/tasker/adgautomation.png)
+![AdGuard Automation *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/tasker/adgautomation.png)
 
 Благодаря этому интерфейсу любое приложение может послать специальное сообщение (также называемый «‎intent», или «‎интент»), которое содержит имя действия и какую-либо дополнительную информацию. AdGuard увидит этот интент и выполнит запрашиваемое действие.
 
@@ -82,7 +82,7 @@ sidebar_position: 3
 
 * **Обязательные параметры**:
 
-`[type]` – тип прокси-сервера:
+`[type]` — тип прокси-сервера:
 - HTTP;
 - SOCKS4;
 - SOCKS5;
@@ -96,9 +96,9 @@ sidebar_position: 3
 
  `[login and password]` — только если этого требует прокси. Эти данные игнорируются при настройке **SOCKS4**;
 
- `[udp]` – применяется только на **серверах типа SOCKS5** и включает опцию **UDP через SOCKS5**. Необходимо установить значение **true или false**;
+ `[udp]` применяется только на **серверах типа SOCKS5** и включает опцию **UDP через SOCKS5**. Необходимо установить значение **true или false**;
 
- `[trust]` — применяется только для типа сервера: **HTTPS_CONNECT** и включает опцию **Trust any certificates**. Необходимо указать значение **true или false**.
+ `[trust]` применяется только для типа сервера: **HTTPS_CONNECT** и включает опцию **Trust any certificates**. Необходимо указать значение **true или false**.
 
  > **Пример**:
 
@@ -122,4 +122,4 @@ sidebar_position: 3
 
 ### Пример
 
-![Автоматизация](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/tasker/automation2.png)
+![Automation *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/tasker/automation2.png)

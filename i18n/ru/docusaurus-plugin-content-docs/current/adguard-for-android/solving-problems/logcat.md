@@ -1,5 +1,5 @@
 ---
-title: Как получить лог LogCat
+title: Как получить лог Logсat
 sidebar_position: 4
 ---
 
@@ -14,15 +14,15 @@ sidebar_position: 4
 
 2. Перейдите в раздел **Для разработчиков** и нажмите **Отчёт об ошибке**.
 
-![Отчёт об ошибке](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
+![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
 
 3. Выберите нужный тип отчета об ошибке и нажмите **Отправить отчёт**. >Через некоторое время вы получите уведомление о том, что отчёт об ошибке готов (см. рисунок 2).
 
-![Отчёт об ошибке](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
+![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
 
 4. Чтобы поделиться отчётом об ошибке, коснитесь уведомления.
 
-![Отчёт об ошибке](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
+![Bug report *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
 
 5. Отправьте этот лог нашей команде поддержки.
 > Примечание: наша команда поддержки обработает ваш тикет намного быстрее, если вы укажете номер тикета HelpDesk или номер ошибки на GitHub в своём сообщении.
@@ -65,7 +65,7 @@ sidebar_position: 4
 
 **Альтернативный способ для пользователей с ROOT:**
 
-1. Скачайте и запустите приложение [CatLog](https://play.google.com/store/apps/details?id=com.nolanlawson.logcat&noprocess).
+1. Скачайте и запустите приложение [Logcat](https://play.google.com/store/apps/details?id=com.nolanlawson.logcat&noprocess).
 
 2. Выберите в меню **Запись**. Выберите имя для файла лога или просто нажмите **OK**. Теперь вы можете нажать на кнопку **Домой**, CatLog продолжит записывать лог в фоновом режиме.
 

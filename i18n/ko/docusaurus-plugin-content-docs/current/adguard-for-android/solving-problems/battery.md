@@ -13,7 +13,7 @@ Android 내장 통계에 따르면 AdGuard가 많은 트래픽 및 배터리를 
 
 위로 인해 발생할 수 있는 오해를 해소하기 위해 AdGuard에 '배터리 사용량' 기능이 추가되었습니다. 메뉴에서 '배터리 사용량'을 탭하여 액세스할 수 있습니다.
 
-![배터리 통계](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/battery/batterystats.png)
+![Battery stats *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/battery/batterystats.png)
 
 이 페이지는 지난 24시간 동안의 AdGuard 배터리 리소스 소모량을 보여주는 차트를 표시하며, 차트를 탭하여 더 자세한 시간별 데이터를 얻을 수 있습니다. 또한 데이터의 숫자 분석과 간단한 기술 설명도 있습니다.
 
@@ -21,7 +21,7 @@ Android 내장 통계에 따르면 AdGuard가 많은 트래픽 및 배터리를 
 
 아래 스크린샷에서 밤과 다음날 아침의 배터리 리소스 소비 통계를 볼 수 있습니다.
 
-![배터리 1](https://cdn.adguard.com/public/Adguard/kb/PicturesEN/battery_1.png) ![배터리 2](https://cdn.adguard.com/public/Adguard/kb/PicturesEN/battery_2.png) ![배터리 3](https://cdn.adguard.com/public/Adguard/kb/PicturesEN/battery_3.png)
+![Battery 1 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_1.png) ![Battery 2 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_2.png) ![Battery 3 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_3.png)
 
 위 스크린샷을 참조해 주세요.
 
@@ -56,7 +56,7 @@ _cpu.active=_ CPU 사용으로 인한 100~200mA 추가 소비량 (mAh)
 
 두 번째 스크린샷에서 총 CPU를 밀리초(506000)로 변환해 보겠습니다.
 
-2GHz에 대한 _cpu.active_ 계수는 대략 225mA와 같습니다.
+A coefficient _cpu.active_ for 2GHz will be roughly equal to 225mAh
 
 결과
 > 506000 225 / (60 60 * 1000) = 31,625mAh

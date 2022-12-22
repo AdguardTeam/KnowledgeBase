@@ -7,7 +7,7 @@ sidebar_position: 5
 
 ## 1. Скачайте MSI-установщик {#msi-download}
 
-Скачайте [AdGuard MSI](https://cdn.adguard.com/public/Windows/AdGuard.msi).
+Download the [AdGuard MSI](https://cdn.adtidy.org/public/Windows/AdGuard.msi).
 
 ## 2. Настройте параметры сети {#settings-configuring}
 
@@ -17,15 +17,15 @@ sidebar_position: 5
 
 ## 3. Убедитесь, что серверы AdGuard доступны {#servers-available}
 
-AdGuard подключается к двум хостам: `api.adguard.com` и `filters.adtidy.org`. Убедитесь, что оба сервера доступны.
+AdGuard подключается к двум хостам: `api.adguard.org` и `filters.adtidy.org`. Убедитесь, что оба сервера доступны.
 
 ## 4. Выкатите MSI-установщик в сеть {#msi-push}
 
 Если вы обычно используете для этого SMS или другие инструменты, можете выкатывать MSI-установщик AdGuard с их помощью, как вы бы делали с любым другим пакетом.
 
-Или же вы можете запустить MSI на целевой машине напрямую (и «втихую») при помощи этой команды: `Msiexec /q /i AdGuard.msi`
+Или же вы можете запустить MSI на целевой машине напрямую (и фоново) при помощи этой команды: `Msiexec /q /i AdGuard.msi`
 
-Если вам нужно накатить обновление, используйте эту команду: `Msiexec AdGuard.msi /q /i AdGuard.msi REINSTALL=ALL REINSTALLMODE=vomus`
+Если вам нужно накатить обновление, используйте эту команду: `Msiexec /q /i AdGuard.msi REINSTALL=ALL REINSTALLMODE=vomus`
 
 **Пожалуйста, обратите внимание, что вы должны запускать эти команды с правами администратора.**
 

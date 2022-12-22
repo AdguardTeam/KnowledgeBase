@@ -5,7 +5,7 @@ sidebar_position: 6
 
 When discussing AdGuard ad filters, one topic often comes up – whether AdGuard should block this or that ad. By setting the rules, we stick to specific criteria that are very similar to [EasyList Policy](https://easylist.to/pages/policy.html), which we find correct and appropriate. However, we have made some changes to it.
 
-![To filter or not to filter](https://cdn.adguard.com/public/Adguard/Common/page_filtering.png)
+![To filter or not to filter](https://cdn.adtidy.org/public/Adguard/Common/page_filtering.png)
 
 ## Terminology
 
@@ -106,7 +106,7 @@ If a rule is subject to the list of limitations described below, then it won’t
 
 ## Filter unblocking search ads and self-promotion
 
-Unlike other filters, this one **unblocks** certain ads. Read more about it in the [article on search ads and self-promotion](search-ads.md).
+Unlike other filters, this one **unblocks** certain ads. Read more about it in the [article on search ads and self-promotion](../search-ads).
 
 **What will be unblocked with this filter?**
 

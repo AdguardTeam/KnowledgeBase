@@ -9,10 +9,10 @@ AdGuard 설치 중 문제가 발생하면 지원 팀에서 AdGuard 설치 로그
 
 2. **%tmp%**를 입력하고 **확인**을 클릭합니다.
 
-![임시 폴더 열기](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/install-logs-1.png)
+![Open temp folder *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/install-logs-1.png)
 
 2. 열린 폴더에서 `Adguard`로 시작하는 모든 파일을 선택하고 ZIP 파일에 추가합니다 (예: WinRAR 사용).
 
-![AdGuard 설치 로그 파일](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/install-logs-2.png)
+![AdGuard installation log files *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/install-logs-2.png)
 
-3. 이 ZIP 파일을 AdGuard [지원 서비스](/support/contact.md)에 보내 주십시오.
+3. Send this archive to AdGuard tech support at **support@adguard.com**.

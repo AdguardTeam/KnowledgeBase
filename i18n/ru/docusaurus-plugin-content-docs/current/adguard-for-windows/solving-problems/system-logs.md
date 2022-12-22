@@ -9,21 +9,21 @@ sidebar_position: 5
 
 2. В появившемся окне введите `eventvwr` и нажмите на **OK**:
 
-![Окно запуска](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/eng_event_logs_1.png)
+![Run window *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_1.png)
 
 3. Окно программы «Просмотр событий» выглядит, как показано ниже.
 
-![Просмотр событий](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/eng_event_logs_2.png)
+![Event viewer *border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_2.png)
 
 Чтобы сохранить нужные нам файлы, сделайте следующее:
 
-- Откройте **Приложение**: **Просмотр событий (Локальный)** -> **Журналы Windows** -> **Приложение**.
+- Open **Application**: **Event Viewer (Local)** → **Windows Logs** → **Application**.
 
 - Щёлкните правой кнопкой мыши по пункту **Приложение** и в выпадающем меню выберите **Сохранить все события как...**
 
 - Выберите имя и место сохранения, нажмите **Сохранить**. Выберите **Отображать сведения для следующих языков**. Поставьте галочку напротив пункта **Английский язык**. Нажмите **OK**.
 
-- Откройте **Система**: **Просмотр событий (Локальный)** -> **Журналы Windows** -> **Система**.
+- Open **System**: **Event Viewer (Local)** → **Windows Logs** →  **System**.
 
 - Щёлкните правой кнопкой мыши по пункту **Система** и в выпадающем меню выберите **Сохранить все события как...**
 

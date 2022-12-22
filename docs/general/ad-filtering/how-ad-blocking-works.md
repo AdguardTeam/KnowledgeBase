@@ -11,7 +11,7 @@ AdGuard has many ad-blocking products for various platforms, and each product ha
 
 Filter lists, also called filters, lie at the core of any ad blocker. Filters are literally lists of rules written in a special syntax. Ad blockers can understand this complex syntax. They interpret filtering rules and perform actions on web traffic based on what the rules tell them to do: block specific elements, alter web pages in certain ways, etc.
 
-![How ad blocking works](https://cdn.adguard.com/public/Adguard/Blog/manifestv3/adblockingworks.png)
+![How ad blocking works](https://cdn.adtidy.org/public/Adguard/Blog/manifestv3/adblockingworks.png)
 
 ## Filter lists
 
@@ -21,13 +21,13 @@ Filtering rules that make up filters are not created automatically. They are dev
 
 And even when a rule finally gets added to a filter, it doesn't mean that it stays there forever. Ads change, ways to serve the same ads on the same websites change, and the filter rules have to change, too. Sometimes rules become obsolete, a new ad appears, or a new filtering rule is needed to block the same ad. Filters are often maintained by one person, but even for a team of maintainers, it's impossible to constantly monitor the entire web. That's why many ad blockers have tools to help users easily report any filter-related issues they encounter.
 
-![Filter update scheme](https://cdn.adguard.com/public/Adguard/Blog/manifestv3/filtersupdates.png)
+![Filter update scheme](https://cdn.adtidy.org/public/Adguard/Blog/manifestv3/filtersupdates.png)
 
 AdGuard users [have access to a special web reporting tool](https://reports.adguard.com/new_issue.html). Thanks to user complaints, filter developers can focus on correcting their filter lists and not on scouring the Internet for new and old unblocked ads.
 
 Filters can do more than just block ads. There are filters that block tracking, social media widgets, and annoyances such as cookie notices. Different users may choose different combinations of filters to match their personal preferences. There are websites like [filterlists.com](https://filterlists.com/) that are dedicated to filter lists and have huge databases.
 
-> We develop and maintain [our own set of filter lists](adguard-filters.md) that can be used with AdGuard or other ad blockers.
+> We develop and maintain [our own set of filter lists](../adguard-filters) that can be used with AdGuard or other ad blockers.
 
 ## Types of filtering rules
 
@@ -51,4 +51,4 @@ In most cases, it's enough to use the above-mentioned basic and cosmetic rules t
 
 These rules are quite complicated and require the ad blocker to be granted certain access rights, so not all platforms support them. Currently, these rules work only in the AdGuard Firefox add-on and in the AdGuard apps for Windows, Mac, and Android.
 
-> There are other types of filtering rules, but they require more advanced technical knowledge to understand how they work. If you are interested, [check out our comprehensive guide on filtering rules in the linked article](create-own-filters.md).
+> There are other types of filtering rules, but they require more advanced technical knowledge to understand how they work. If you are interested, [check out our comprehensive guide on filtering rules in the linked article](../create-own-filters).
