@@ -354,8 +354,8 @@ The modifier `":" h_value` part may be omitted. In that case the modifier matche
 * [`$xmlhttprequest`](#xmlhttprequest-modifier)
 * [`$websocket`](#websocket-modifier)
 * [`$other`](#other-modifier)
-* [`$webrtc` (deprecated)](#webrtc-modifier)
 * [`$object-subrequest` (deprecated)](#object-subrequest-modifier)
+* [`$webrtc` (deprecated)](#webrtc-modifier)
 
 There is a set of modifiers, which can be used to limit the rule's application area to certain type of content. These modifiers can also be combined to cover, for example, both images and scripts.
 
@@ -458,6 +458,7 @@ The rule applies to requests for which the type has not been determined or does 
 >
 > This modifier is deprecated and no longer supported. Rules with it are considered as invalid.
 > If you need to suppress WebRTC, consider using the `nowebrtc` [scriptlet](#scriptlets).
+
 The rule applies only to WebRTC connections.
 
 **Examples**
