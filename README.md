@@ -4,37 +4,46 @@ This website is built using [Docusaurus 2](https://docusaurus.io/), a modern sta
 
 `master` branch is published automatically to https://adguardteam.github.io/KnowledgeBase/.
 
-## Installation
+## How to contribute
 
-```sh
-yarn install
-```
+You can help by contributing to the Knowledge Base, all details are described [in this article](https://adguard.com/kb/miscellaneous/contribute/updating-knowledge-base/).
 
-## Local Development
+## How to develop
 
-```sh
-yarn start
-```
+### Prepare
+
+First of all, you need to install the following:
+
+- [git](https://github.com/git-guides/install-git)
+- [yarn](https://classic.yarnpkg.com/lang/en/docs/install/)
+
+Second, clone this repo to your local computer:
+
+- `git clone git@github.com:AdguardTeam/KnowledgeBase.git`
+
+Alternatively, you can use the [Github app](https://desktop.github.com/) to do that.
+
+Then you should open Terminal on your computer, navigate to the directory where you cloned this repo and run this command to install the local dependencies:
+
+- `yarn install`
+
+### Run it locally
+
+- `yarn start`
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-## Build
+## How to build
 
-```sh
-yarn build
-```
+- `yarn build`
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-## TODO
+## How to translate
 
-- inline css for images
-- links in text goto next line. workaround: use with <br/>
-- how to update all translations files
-- edit pages
+Localizations are not pushed to the repo and prepared on-the-fly (`i18n` folder is added to `.gitignore`).
 
-Notes:
+Here's how you can debug translations locally.
 
-- mdx-react components will be auto truncate `\n` and file become invalid
-- deploy command cannot exit when crashed
-- seems like it cannot switch languages in dev mode
+1. Download translations: `CROWDIN_PERSONAL_TOKEN="YOURTOKEN" yarn run crowdin download`
+2. Run Docusaurus with the language of your choice: `yarn run start -- --locale de`
