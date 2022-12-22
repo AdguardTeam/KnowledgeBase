@@ -39,7 +39,7 @@ After the application has been downloaded and successfully installed, you should
 
 ![adware4 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware4.png)
 
-If it didn’t help, temporary disable all extensions and some other settings in the browser according to [these instructions](#instructions). 
+If it didn’t help, temporary disable all extensions and some other settings in the browser according to [these instructions](#instructions).
 
 If disabling of settings and extensions does not help, try to [recreate shortcuts of your browsers](#shortcuts).
 
