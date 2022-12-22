@@ -1891,22 +1891,32 @@ The `:matches-attr()` pseudo-class allows to select an element by its attributes
 
 ##### Pseudo-class `:matches-property()`
 
-This pseudo-class allows to select an element by its properties.
+The `:matches-property()` pseudo-class allows to select an element by matching its properties.
 
 **Syntax**
+
 ```
-selector:matches-property("name"[="value"])
+[target]:matches-property("name"[="value"])
 ```
+- `target` — optional, standard or extended css selector, can be missed for checking *any* element
+- `name` — required, simple string *or* string with wildcard *or* regular expression for element property name matching
+- `value` — optional, simple string *or* string with wildcard *or* regular expression for element property value matching
 
-- `name` — property name OR regular expression for property name
-- `value` — optional, property value OR regular expression for property value
+> **Escaping special characters**
+>
+> For **regexp** patterns `"` and `\` should be escaped, e.g. `div:matches-property(prop=/[\\w]{4}/)`.
 
-> For regexp patterns, `"` and `\` should be escaped.
+> **Note**
+>
+> Regexp patterns are supported in `name` for any property in chain, e.g. `prop./^unit[\\d]{4}$/.type`.
 
-> `name` supports regexp for property in chain, e.g. `prop./^unit[\\d]{4}$/.type`
+> **Restrictions**
+>
+> Regexp patterns **does not support** flags.
 
 **Examples**
 
+An element with such properties:
 ```javascript
 divProperties = {
     id: 1,
@@ -1925,19 +1935,25 @@ divProperties = {
 };
 ```
 
+can be selected by any of these extended selectors:
 ```
-// element with such properties can be matched by any of such rules:
-div:matches-property("check.track")
-div:matches-property("check./^unit_.{4,6}$/"))
-div:matches-property("memoizedProps.key"="null")
-div:matches-property("memoizedProps._owner.src"="/ad/")
+div:matches-property(check.track)
+
+div:matches-property("check./^unit_.{4,6}$/")
+
+div:matches-property("check.unit_*"=true)
+
+div:matches-property(memoizedProps.key="null")
+
+div:matches-property(memoizedProps._owner.src=/ad/)
 ```
 
- For filters maintainers
+> **Information for filters maintainers**
+>
+> To check properties of specific element, you should do:
+> 1. Inspect the needed page element or select it in `Elements` tab of browser DevTools.
+> 2. Run `console.dir($0)` in `Console` tab.
 
-  To check properties of specific element, do:
-  1. Select the element on the page.
-  2. Go to Console tab and run `console.dir($0)`.
 
 ##### Pseudo-class `:xpath()`
 
