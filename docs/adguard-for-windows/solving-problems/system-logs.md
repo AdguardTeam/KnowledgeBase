@@ -29,4 +29,4 @@ To save files that we need, do the following:
 
 - Choose a destination folder, enter the name, click *Save*. Select *Display information for the following languages*. You need to tick the box next to *English*. Click *OK*. 
 
-Please send the two files that you've recently saved to the [AdGuard support service](/support/contact).
+Please send the two files that you've recently saved to **support@adguard.com**.
