@@ -1595,7 +1595,7 @@ example.com#@$#.textad { visibility: hidden; }
 
 We recommend to use this kind of exceptions only if it is not possible to change the CSS rule itself. In other cases it is better to change the original rule, using domain restrictions.
 
-### ExtendedCSS selectors {#extended-css-selectors}
+### Extended CSS selectors {#extended-css-selectors}
 
 CSS 3.0 is not always enough to block ads. To solve this problem AdGuard extends CSS capabilities by adding support for the new pseudo-elements. We have developed a separate open source [library](https://github.com/AdguardTeam/ExtendedCss) for non-standard element selecting and applying CSS styles with extended properties.
 
@@ -1611,7 +1611,7 @@ The idea of extended capabilities is an opportunity to match DOM elements with s
 
 **Syntax**
 
-Regardless of the CSS pseudo-classes you are using in the rule, you can use special markers to force these rules applying by ExtendedCSS. It is recommended to use these markers for all "extended CSS" cosmetic rules so that it was easier to find them.
+Regardless of the CSS pseudo-classes you are using in the rule, you can use special markers to force these rules applying by ExtendedCss. It is recommended to use these markers for all "extended CSS" cosmetic rules so that it was easier to find them.
 
 The syntax for extended CSS rules:
 
@@ -1627,7 +1627,7 @@ We **strongly recommend** using these markers any time when you use an extended 
 * `example.net#?#.banner:matches-css(width: 360px)` — this rule blocks all `.banner` elements with the style property `width: 360px`. The rule applies only to `example.net` and its subdomains.
 * `example.net#@?#.banner:matches-css(width: 360px)` — this rule will disable the previous rule.
 
-> You can apply standard CSS selectors using the ExtendedCss engine by using a rule marker `#?#`, e.g. `#?#div.banner`.
+> You can apply standard CSS selectors using the ExtendedCss library by using a rule marker `#?#`, e.g. `#?#div.banner`.
 
 Learn more about [how to debug extended selectors](#selectors-debugging-mode).
 
@@ -2671,7 +2671,7 @@ When the value of the `debug` property is `true`, only information about this se
 
 **Enabling global debug:**
 
-When the value of the `debug` property is `global`, the console will display information about all ExtendedCss selectors that have matches on the current page, for all ExtendedCss rules from any of the enabled filters.
+When the value of the `debug` property is `global`, the console will display information about all extended CSS selectors that have matches on the current page, for all the rules from any of the enabled filters.
 
 ```
 #$?#.banner { display: none; debug: global; }
