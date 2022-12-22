@@ -3,7 +3,7 @@ title: Обзор функций
 sidebar_position: 1
 ---
 
-У AdGuard есть ряд продуктов для блокировки рекламы и трекеров на различных платформах. Один из самых популярных продуктов AdGuard — это бесплатное расширение, которое работает в пяти популярных браузерах: Chrome, Firefox, Edge, Opera и Яндекс Браузере. Браузерные расширения включают базовые функции по блокировке рекламы, но уступают полноценным приложениям, таким как [AdGuard для Windows](/adguard-for-windows/overview) или [AdGuard для Mac](/adguard-for-mac/overview).
+У AdGuard есть ряд продуктов для блокировки рекламы и трекеров на различных платформах. Один из самых популярных продуктов AdGuard — это бесплатное расширение, которое работает в пяти популярных браузерах: Chrome, Firefox, Edge, Opera и Яндекс Браузере. Browser extensions include basic ad-blocking features but cannot be compared with full-featured desktop programs, such as [AdGuard for Windows](/adguard-for-windows/overview) and [AdGuard for Mac](/adguard-for-mac/overview).
 
 ![AdGuard Browser extension for Chrome *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
 
@@ -13,13 +13,13 @@ sidebar_position: 1
 
 ![Available for most popular browsers *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
 
-> У нас есть отдельное расширение для Safari. C момента выхода [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html) большинство расширений столкнулись с проблемами, и многие из них перестали работать. Нам пришлось разработать [отдельное расширение для Safari](/adguard-for-safari/overview), которое отличается от расширения, описанного в этой статье.
+> У нас есть отдельное расширение для Safari. C момента выхода [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html) большинство расширений столкнулись с проблемами, и многие из них перестали работать. We had to develop a [separate extension for Safari](/adguard-for-safari/overview) that has some differences in comparison with the extension described in this article.
 
 **Не забывайте, что функциональность любого расширения строго ограничена возможностями самого браузера.** Для полноценной защиты на уровне системы используйте отдельную программу для компьютера или мобильного устройства. Ниже мы опишем [её преимущества](#comparison).
 
 ## Блокировка рекламы {#adblocker}
 
-Блокировка рекламы — ключевая функция любого блокировщика, и AdGuard не исключение. Расширение успешно блокирует рекламу на любом сайте в браузере, в котором оно установлено. В основе блокировки лежат так называемые [фильтры](/general/ad-filtering/how-ad-blocking-works). Фильтры можно включить или отключить в настройках расширения. Вы можете настроить блокировку рекламы, активировав определённые фильтры.
+Блокировка рекламы — ключевая функция любого блокировщика, и AdGuard не исключение. Расширение успешно блокирует рекламу на любом сайте в браузере, в котором оно установлено. Ad blocking is based on so-called filter lists, or simply [filters](/general/ad-filtering/how-ad-blocking-works). Фильтры можно включить или отключить в настройках расширения. Вы можете настроить блокировку рекламы, активировав определённые фильтры.
 
 ### Фильтры {#filters}
 
@@ -49,7 +49,7 @@ To add a filter, just click *Add custom filter*, enter the URL or the file path 
 
 ![User rules *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_user_rules.png)
 
-Вы можете добавить новые правила несколькими способами. Самый простой — ввести правило вручную, но для этого требуется знание [синтаксиса правил](/general/ad-filtering/create-own-filters).
+Вы можете добавить новые правила несколькими способами. The most straightforward is to just type a rule in, but it requires some knowledge of the [rule syntax](/general/ad-filtering/create-own-filters).
 
 Вы также можете импортировать готовый список фильтров из текстового файла. **Make sure that different rules are separated by line breaks.** Note that importing a ready-to-use filter list is better done in the [Custom filters](#custom) tab.
 
@@ -75,7 +75,7 @@ To add a filter, just click *Add custom filter*, enter the URL or the file path 
 
 ![Stealth Mode *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_stealth_mode.png)
 
-В режиме Антитрекинга вы можете запретить сайту видеть поисковые запросы, которые вы использовали, чтобы найти его в интернете, автоматически удалять сторонние и собственные куки-файлы сайта и т. д. Этим особенностям посвящена [отдельная статья](/general/stealth-mode).
+В режиме Антитрекинга вы можете запретить сайту видеть поисковые запросы, которые вы использовали, чтобы найти его в интернете, автоматически удалять сторонние и собственные куки-файлы сайта и т. д. A [separate article](/general/stealth-mode) is devoted to all these features.
 
 > Обратите внимание, что некоторые из опций *Антитрекинга*, доступных в полноценных приложениях, отсутствуют в браузерных расширениях из-за технических ограничений.
 
@@ -85,7 +85,7 @@ To add a filter, just click *Add custom filter*, enter the URL or the file path 
 
 ### Основные {#general}
 
-Во вкладке *Основные* можно разрешить поисковую рекламу и [саморекламу сайтов](/general/ad-filtering/search-ads), включить автоматическую активацию языковых фильтров, указать интервал обновления фильтров и т. д.
+In the *General* tab, you can allow search ads and the [self-promotion of websites](/general/ad-filtering/search-ads), enable the automatic activation of language-specific filters, indicate the filters update interval, etc.
 
 ![General *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_general.png)
 

@@ -31,7 +31,7 @@ sidebar_position: 3
 
 ### Windows {#windows}
 
-* Open [AdGuard Browser Assistant](https://adguard.com/kb/adguard-for-windows/browser-assistant) and hit **Report an issue**:
+* Open [AdGuard Browser Assistant](/adguard-for-windows/browser-assistant) and hit **Report an issue**:
 
 ![windows *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/browser-assistant.png)
 
@@ -41,7 +41,7 @@ sidebar_position: 3
 ### Android {#android}
 
 * Откройте настройки AdGuard;
-* Выберите **Поддержка**, затем **Сообщение в поддержку** -> **Пропущенная реклама**/**Некорректная блокировка**:
+* Сhoose **Support**, then **Send Feedback** → **Missed ad**/**Incorrect blocking**:
 
 ![android *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/android.png)
 
@@ -49,7 +49,7 @@ sidebar_position: 3
 
 ### Mac {#mac}
 
-* Open [AdGuard Browser Assistant](https://adguard.com/kb/adguard-for-mac/browser-assistant) and hit **Report an issue**:
+* Open [AdGuard Browser Assistant](/adguard-for-mac/browser-assistant) and hit **Report an issue**:
 
 ![mac *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/guides/browser-assistant-mac.png)
 

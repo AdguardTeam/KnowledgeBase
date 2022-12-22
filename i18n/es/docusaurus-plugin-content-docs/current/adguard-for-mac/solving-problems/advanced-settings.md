@@ -5,8 +5,7 @@ sidebar_position: 9
 
 ## How to reach the Advanced settings
 
-> Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only open this section if you are sure of what you are doing or our support team has asked you to do it.  
-> To go to *Advanced settings*, follow this route: the AdGuard icon at the tray menu → the gear icon → Advanced → Advanced settings.
+> Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only open this section if you are sure of what you are doing or our support team has asked you to do it. To go to *Advanced settings*, follow this route: the AdGuard icon at the tray menu → the gear icon → Advanced → Advanced settings.
 
 ## Advanced settings
 
@@ -30,7 +29,7 @@ Here you can specify a list of applications for which the HTTP/2 protocol will b
 
 Here you can prohibit AdGuard from using the "default route" which is enabled by default in *Network Extension* mode on macOS Monterey. AdGuard uses "default route" to disable iCloud Private Relay and Protect Mail Activity, because it cannot work with them simultaneously.
 
-You will find more information about the problem [in this article](https://adguard.com/kb/adguard-for-mac/solving-problems/icloud-private-relay).
+You will find more information about the problem [in this article](../icloud-private-relay).
 
 `network.extension.dns.redirect.exclude.bundleids`
 

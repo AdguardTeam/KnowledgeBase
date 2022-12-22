@@ -74,7 +74,7 @@ Please look at the example:
 
 If there are 3 plural forms of nouns in your language (like in Polish), please write all plural forms separated by commas.
 
-`hour, hours --> godzinę, godziny, godzin`
+`hour, hours -→ godzinę, godziny, godzin`
 
 In case a noun has only 2 forms, there is no need to write the same form twice (*typically only for this type of strings with plurals!*). However, it won't be a mistake if you repeat the form twice.
 

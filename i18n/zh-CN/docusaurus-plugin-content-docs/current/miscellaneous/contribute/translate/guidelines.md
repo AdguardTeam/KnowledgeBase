@@ -64,7 +64,7 @@ sidebar_position: 3
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/tasks.png)
 
-9. 有时候您会见到具有复数形式的短语。 由于中文的复数形式与英文不同，在这种情况下您只需要翻译一次。 别忘了输入正确的量词。
+9. 有时候您会见到具有复数形式的短语。 由于中文的复数形式与英文不同，在这种情况下您只需要翻译一次。 You can read how to translate plural forms [here](../plural-forms).
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/plurals.png)
 

@@ -19,9 +19,9 @@ This is why we placed all of our KB content on [GitHub](https://github.com/Adgua
 
 ## Переводы статей {#translate-adguard}
 
-Translation of the existing articles of the Knowledge base is carried out on [the Crowdin platform](https://crowdin.com/profile/adguard). All the details about translations and working with Crowdin can be found [in the dedicated article](/miscellaneous/contribute/translate/guidelines) of the AdGuard Ad Blocker Knowledge base.
+Translation of the existing articles of the Knowledge base is carried out on [the Crowdin platform](https://crowdin.com/profile/adguard). All the details about translations and working with Crowdin can be found [in the dedicated article](../translate/guidelines) of the AdGuard Ad Blocker Knowledge base.
 
-При работе над статьями Базы знаний AdGuard вы можете встретить строки, содержащие формы множественного числа (плюральные формы). К их переводу стоит отнестись с особым вниманием. [In a separate article](/miscellaneous/contribute/translate/plural-forms), we described in detail the difficulties that can arise when translating strings with plural forms and gave extensive instructions on how to work with them on the Crowdin platform.
+При работе над статьями Базы знаний AdGuard вы можете встретить строки, содержащие формы множественного числа (плюральные формы). К их переводу стоит отнестись с особым вниманием. [In a separate article](../translate/plural-forms), we described in detail the difficulties that can arise when translating strings with plural forms and gave extensive instructions on how to work with them on the Crowdin platform.
 
 ## Работа над существующими задачами
 

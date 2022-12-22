@@ -46,11 +46,8 @@ sidebar_position: 2
 
 您会在 [GitHub 过滤器仓库](https://github.com/AdguardTeam/AdguardFilters/issues)中发现大量未解决的问题。 每个问题都涉及到某个网站的问题 — 遗漏的广告、误报等。 请选择其中一个问题并在评论中提供您自己的规则。 AdGuard 过滤器工程师将审查您的建议，如果证明是正确的，您的规则将被添加到 AdGuard 过滤器中。
 
-Here is the [official documentation](/general/ad-filtering/create-own-filters) on the syntax of AdGuard filtering rules. 在您创建自己的过滤规则之前，请您阅读它。
+Here is the [official documentation](../create-own-filters) on the syntax of AdGuard filtering rules. 在您创建自己的过滤规则之前，请您阅读它。
 
 ### 其他贡献方式
 
 我们有[专门的页面](https://adguard.com/contribute.html)您可以在其中详细了解如何参与 AdGuard 开发。
-
-
-

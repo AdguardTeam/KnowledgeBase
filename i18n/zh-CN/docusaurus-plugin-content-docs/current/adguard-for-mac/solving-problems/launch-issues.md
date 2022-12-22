@@ -27,11 +27,11 @@ If you have problems launching AdGuard for Mac on Sierra, Mojave and Catalina op
 ![Command example *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/restricted-flag.jpg)
 
 3. Reboot your Mac in recovery mode.
-4. Open **Utilities** -> **Terminal**.
+4. Open **Utilities** → **Terminal**.
 5. Enter `csrutil disable`.
 6. Enter administrator password.
 7. Reboot your Mac.
 8. Open **Terminal** and enter the following command: `sudo chflags restricted /private/var/db/KernelExtensionManagement`.
 9. Reboot your Mac in recovery mode.
-10. Open **Utilities** -> **Terminal** -> Enter `csrutil enable` -> Enter administrator password -> Reboot your Mac.
+10. Open **Utilities** → **Terminal** → Enter `csrutil enable` → Enter administrator password → Reboot your Mac.
 11. 开启 AdGuard 保护。

@@ -31,7 +31,7 @@ sidebar_position: 3
 
 ### Windows 系统 {#windows}
 
-* Open [AdGuard Browser Assistant](https://adguard.com/kb/adguard-for-windows/browser-assistant) and hit **Report an issue**:
+* Open [AdGuard Browser Assistant](/adguard-for-windows/browser-assistant) and hit **Report an issue**:
 
 ![windows *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/browser-assistant.png)
 
@@ -41,7 +41,7 @@ sidebar_position: 3
 ### 安卓系统 {#android}
 
 * 打开 AdGuard 设置；
-* 选择**支持**，然后点击**发送反馈** -> **漏拦截的广告或跟踪器**/**拦截错误**：
+* Сhoose **Support**, then **Send Feedback** → **Missed ad**/**Incorrect blocking**:
 
 ![android *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/android.png)
 
@@ -49,7 +49,7 @@ sidebar_position: 3
 
 ### Mac 系统 {#mac}
 
-* Open [AdGuard Browser Assistant](https://adguard.com/kb/adguard-for-mac/browser-assistant) and hit **Report an issue**:
+* Open [AdGuard Browser Assistant](/adguard-for-mac/browser-assistant) and hit **Report an issue**:
 
 ![mac *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/guides/browser-assistant-mac.png)
 

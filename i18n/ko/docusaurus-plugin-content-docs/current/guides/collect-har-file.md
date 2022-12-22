@@ -155,7 +155,7 @@ HAR 파일을 수집하려면 다음 단계를 따르십시오.
 
 6. Now turn `pref.har.capture` off again.
 
-7. Go Back, then tap on ***Export logs and system info*** -> ***Save***.
+7. Go Back, then tap on ***Export logs and system info*** → ***Save***.
 
 ## Windows {#windows}
 
@@ -165,6 +165,6 @@ HAR 파일을 수집하려면 다음 단계를 따르십시오.
 
 3. Reproduce the problem.
 
-4. Go to ***General settings*** -> Click on ***Export logs*** -> ***Save***.
+4. Go to ***General settings*** → Click on ***Export logs*** → ***Save***.
 
 5. Disable HAR writing by unchecking the corresponding box.

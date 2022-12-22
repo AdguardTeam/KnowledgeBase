@@ -65,7 +65,7 @@ Windows 捕获整个屏幕并将其复制到剪贴板。
 
 截屏后，它将保存在剪贴板中。 在大多数情况下，您可以使用 Ctrl + V 按钮组合将其粘贴到当前正在编辑的文档中。 另外，如果您需要将屏幕截图保存到文件中，则应打开标准的 Paint 程序（或任何其他可以处理图像的应用程序）。 使用相同的按钮组合或单击「粘贴」按钮（通常在屏幕的左上角）将您的屏幕截图粘贴到那里，然后将其保存。
 
-Windows 8 和 10 使您可以通过 *Win + PrtScn* 组合快速捕获屏幕截图。 按下这些按钮后，屏幕快照将自动作为文件保存到*图片* ->*屏幕截图文件夹*中。
+Windows 8 和 10 使您可以通过 *Win + PrtScn* 组合快速捕获屏幕截图。 As soon as you press these buttons, the screenshot will be automatically saved as a file to your *Pictures* → *Screenshots Folder*.
 
 还有一个专用的屏幕截图程序，称为 *Snipping Tool* (自带截图工具) ，可通过开始菜单在计算机的标准程序中找到。 该截图工具使您可以捕获桌面的任何区域或整个屏幕。 使用此程序拍摄屏幕快照后，您可以编辑图片并将其保存到计算机上的任何文件夹中。
 
