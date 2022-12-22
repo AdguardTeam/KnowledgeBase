@@ -1641,7 +1641,7 @@ Learn more about [how to debug extended selectors](#selectors-debugging-mode).
 
 1. CSS [comments](https://developer.mozilla.org/en-US/docs/Web/CSS/Comments) and [at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) are not supported.
 
-<!-- TODO: check anchors later -->
+<!-- FIXME: check anchors later -->
 2. Specific pseudo-class may have its own limitations:
 [`:has()`](#extended-css-has-limitations), [`:xpath()`](#extended-css-xpath-limitations), [`:nth-ancestor()`](#extended-css-nth-ancestor-limitations), [`:upward()`](#extended-css-upward-limitations), [`:is()`](#extended-css-is-limitations), [`:not()`](#extended-css-not-limitations), and [`:remove()`](#extended-css-remove-limitations).
 
@@ -1653,7 +1653,7 @@ Draft CSS 4.0 specification describes the [`:has()` pseudo-class](https://www.w3
 >
 > Rules with the `:has()` pseudo-class should use [native implementation of `:has()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:has) if they use `##` marker and if it is possible, i.e. with no other extended pseudo-classes inside. To force applying of ExtendedCss rules with `:has()`, use `#?#`/`#$?#` marker explicitly.
 
-<!-- TODO: describe :if() alias as deprecated -->
+<!-- FIXME: describe :if() alias as deprecated -->
 > **Compatibility with other pseudo-classes**
 >
 > Synonyms `:-abp-has` and `:if` are supported by ExtendedCss for better compatibility.
@@ -1731,7 +1731,7 @@ A selector list can be set in `selector` as well. In this case **all** selectors
 > [Backward compatible syntax for `:has()`](https://github.com/AdguardTeam/ExtendedCss#-old-syntax-for-pseudo-class-has) is supported but not recommended.
 
 
-<!-- TODO: describe :if-not() as deprecated and move down -->
+<!-- FIXME: describe :if-not() as deprecated and move down -->
 ##### Pseudo-class `:if-not()`
 
 This pseudo-class is basically a shortcut for `:not(:has())`. It is supported by ExtendedCss for better compatibility with some filters subscriptions, but it is not recommended to use it in AdGuard filters. The rationale is that one day browsers will add `:has` native support, but it will never happen to this pseudo-class.
@@ -1782,6 +1782,8 @@ div:contains(/it .* banner/gi)
 > **Note**
 >
 > Only the `div` with `id=match` will be selected because the next element does not contain any text, and `banner` is a part of code, not a text.
+
+<!-- FIXME: mention old syntax compatibility -->
 
 
 ##### Pseudo-class `:matches-css()`
@@ -1838,6 +1840,7 @@ div:matches-css(before, content: /block me/)
 >
 > Obsolete pseudo-classes `:matches-css-before()` and `:matches-css-after()` are no longer recommended but still are supported for better compatibility.
 
+<!-- FIXME: mention old syntax compatibility -->
 
 ##### Pseudo-class `:matches-attr()`
 
