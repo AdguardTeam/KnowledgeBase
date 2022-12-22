@@ -28,7 +28,7 @@ Enabling this option, you won't have to manually choose all the filters when vis
 A simple and convenient feature with which you don't have to worry whether or not you have your ad blocker turned on, and just be sure that ads are always blocked.
 
 **Do not block search ads and websites' self-promotion**
-This option might be useful to online shoppers: instead of adding all your favorite e-shops and sites to the Allowlist, you can simply exclude [self-promos and search ads](/general/ad-filtering/search-ads) from filtering. AdGuard will automatically detect those and let them be, while removing everything else ad-like.  
+This option might be useful to online shoppers: instead of adding all your favorite e-shops and sites to the Allowlist, you can simply exclude [self-promos and search ads](./general/ad-filtering/search-ads) from filtering. AdGuard will automatically detect those and let them be, while removing everything else ad-like.  
 
 **Hide menu bar icon**
 If you don't want to see the menu bar icon, there is an option to hide it. But don't worry: even if you remove it from the menu bar, AdGuard will continue to run in the background.
@@ -50,13 +50,13 @@ Aside from the more general and universally applicable filters (like Base filter
 * Annoyances filter for cookie warnings, in-page popups and others of the same ilk,
 * and even a filter that unblocks some ads instead of blocking them — Filter for search ads and self-promotions. 
 
-AdGuard filters are automatically updated. Our developers create them all based on user feedback received. You can always help other AdGuard users (and yourself, in perspective) by sending us reports right from the app's Assistant (it's really handy, we'll tell you more about the Assistant further on), or from the [website](https://agrd.io/report). If you wish to know more about AdGuard filters, here is [some info](https://adguard.com/kb/general/ad-filtering/adguard-filters).
+AdGuard filters are automatically updated. Our developers create them all based on user feedback received. You can always help other AdGuard users (and yourself, in perspective) by sending us reports right from the app's Assistant (it's really handy, we'll tell you more about the Assistant further on), or from the [website](https://agrd.io/report). If you wish to know more about AdGuard filters, here is [some info](./general/ad-filtering/adguard-filters).
 
 ## User rules
 
 ![User rules](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Filters.jpg)
     
-Another vital part of the Ad Blocker module are its User rules. If you have some coding experience and would like to create your own rules that would be a better custom fit than the standard filters already available, then you can try your hand at this. The syntax AdGuard uses for its filtering rules is based on that of any other ad blocking extension, but with considerable additions, extending its possibilities. The whole process of rule-writing in all its nuances is described in these comprehensive instructions, so if you want to write some custom rules and check how much of a coder you are, just follow the steps we described [in this article](https://adguard.com/kb/general/ad-filtering/create-own-filters). 
+Another vital part of the Ad Blocker module are its User rules. If you have some coding experience and would like to create your own rules that would be a better custom fit than the standard filters already available, then you can try your hand at this. The syntax AdGuard uses for its filtering rules is based on that of any other ad blocking extension, but with considerable additions, extending its possibilities. The whole process of rule-writing in all its nuances is described in these comprehensive instructions, so if you want to write some custom rules and check how much of a coder you are, just follow the steps we described [in this article](./general/ad-filtering/create-own-filters). 
 
 ## DNS
 
@@ -72,7 +72,7 @@ In the DNS panel you can select the DNS servers from known DNS providers or even
     
 This module is a very useful tool that will help you maintain your privacy from websites that try to retain such info about you as your IP address, computer parameters, browser settings and even the initial page from which you were redirected, not to mention cart contents if we speak of web stores. If this list of info potentially to be shared with shady third parties doesn't make you think twice, then might we add that in most cases they will also get such personal data as your age, yearly income, medical history, physical address and your kids' names. Eliminating such things as unwanted cookies or clandestine insertion of tracking parameters into your browser is what Stealth Mode does best. 
 
-Stealth Mode contains a wide range of options, which ensure its flexible configuration. They are divided into several categories, and for an unprepared user many of them will seem confusing and maybe even complicated. We provided each option with a hint to make up for the deficiency — hints appear when you hover over the icon with a question mark. If you still wish to know more about the whole concept, we encourage you to proceed to [this article](https://adguard.com/kb/general/stealth-mode).
+Stealth Mode contains a wide range of options, which ensure its flexible configuration. They are divided into several categories, and for an unprepared user many of them will seem confusing and maybe even complicated. We provided each option with a hint to make up for the deficiency — hints appear when you hover over the icon with a question mark. If you still wish to know more about the whole concept, we encourage you to proceed to [this article](./general/stealth-mode).
 
 ## Browsing Security
 
@@ -93,7 +93,7 @@ If you wish to help us in perfecting this module, you can check the lower box on
 
 ![Assistant](https://cdn.adtidy.org/content/kb/ad_blocker/mac/BrowserAssistant.jpg)
 
-AdGuard Browser Assistant’s primary function is to manage filtering directly from the browser. It used to be a mere userscript incorporated into AdGuard for Mac app that then became a full-fledged browser extension. Know more about the [benefits it yields](https://adguard.com/kb/adguard-for-mac/browser-assistant).
+AdGuard Browser Assistant’s primary function is to manage filtering directly from the browser. It used to be a mere userscript incorporated into AdGuard for Mac app that then became a full-fledged browser extension. Know more about the [benefits it yields](../browser-assistant).
 
 ![Assistant popup menu *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/safari_assistant_pop-up_menu.jpg)
 

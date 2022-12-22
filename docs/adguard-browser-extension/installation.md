@@ -49,4 +49,4 @@ In the opened dialog window, press _Add extension_.
 
 ## How to install AdGuard Browser extension for Safari
 
-AdGuard for Safari is not a browser extension in a common sense. You can read more about it in a [devoted artile](/adguard-for-safari/overview). Or you can [download the installation file](https://agrd.io/safari_release) directly from this page.
+AdGuard for Safari is not a browser extension in a common sense. You can read more about it in a [devoted artile](./adguard-for-safari/overview). Or you can [download the installation file](https://agrd.io/safari_release) directly from this page.

@@ -31,7 +31,7 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 
 ### Windows {#windows}
 
-* Open [AdGuard Browser Assistant](https://adguard.com/kb/adguard-for-windows/browser-assistant) and hit **Report an issue**:
+* Open [AdGuard Browser Assistant](./adguard-for-windows/browser-assistant) and hit **Report an issue**:
 
 ![windows *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/browser-assistant.png)
 
@@ -41,7 +41,7 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 ### Android {#android}
 
 * Open AdGuard settings;
-* Сhoose **Support**, then **Send Feedback** -> **Missed ad**/**Incorrect blocking**:
+* Сhoose **Support**, then **Send Feedback** → **Missed ad**/**Incorrect blocking**:
 
 ![android *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/android.png)
 
@@ -49,7 +49,7 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 
 ### Mac {#mac}
 
-* Open [AdGuard Browser Assistant](https://adguard.com/kb/adguard-for-mac/browser-assistant) and hit **Report an issue**:
+* Open [AdGuard Browser Assistant](./adguard-for-mac/browser-assistant) and hit **Report an issue**:
 
 ![mac *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/guides/browser-assistant-mac.png)
 
