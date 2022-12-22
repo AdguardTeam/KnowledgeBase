@@ -9,9 +9,7 @@ If you suspect your computer is infected by malware or viruses, first of all you
 
 **Free antivirus utilities**
 
-There are many of them and you can use any one you prefer, here is simply a couple examples:
-
-[Kaspersky Virus Removal Tool](https://www.kaspersky.ru/downloads/thank-you/free-virus-removal-tool)
+There are many of them and you can use any one you prefer, for example:
 
 [Dr.Web CureIt!](http://www.freedrweb.com/cureit/?lng=en)
 
@@ -25,21 +23,21 @@ After the application has been downloaded and successfully installed, you should
 
 1) Start the application and click **Scan now**.
 
-![adware1](https://cdn.adguard.com/content/Kb/ad_blocker/guides/adware1.png)
+![adware1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware1.png)
 
 2) Once the scan has been completed, you will need to send suspicious objects to **Quarantine**.
 
-![adware2](https://cdn.adguard.com/content/Kb/ad_blocker/guides/adware2.png)
+![adware2 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware2.png)
 
 3) When the items are moved to **Quarantine**, you will be able to **Clear the system** of unnecessary ballast.
 
 4) In some cases, you may need to **Reboot the system** after cleaning is complete.
 
-![adware3](https://cdn.adguard.com/content/Kb/ad_blocker/guides/adware3.png)
+![adware3 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware3.png)
 
 5) Once the system has been rebooted, cleaning will be completed. If necessary, you can always read the **Report** on the work done.
 
-![adware4](https://cdn.adguard.com/content/Kb/ad_blocker/guides/adware4.png)
+![adware4 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware4.png)
 
 If it didn’t help, temporary disable all extensions and some other settings in the browser according to [these instructions](#instructions). 
 

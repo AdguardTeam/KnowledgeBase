@@ -26,7 +26,7 @@ For example:
 
 #### Blocking by domain name
 
-![Blocking by domain name](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/0_blocking_domain.svg)
+![Blocking by domain name](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/0_blocking_domain.svg)
 
 **This rule blocks:**
 
@@ -41,7 +41,7 @@ For example:
 
 #### Blocking exact address
 
-![Blocking exact address](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/1_exact_address.svg)
+![Blocking exact address](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/1_exact_address.svg)
 
 **This rule blocks:**
 
@@ -55,7 +55,7 @@ For example:
 
 Filtering rules support numerous modifiers that allow you to fine-tune the rule behavior. Here is an example of a rule with some simple modifiers.
 
-![Basic rule modifiers](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/2_basic_rule_options.svg)
+![Basic rule modifiers](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/2_basic_rule_options.svg)
 
 **This rule blocks:**
 
@@ -68,7 +68,7 @@ Filtering rules support numerous modifiers that allow you to fine-tune the rule 
 
 #### Unblocking an address
 
-![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/3_basic_exception.svg)
+![](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/3_basic_exception.svg)
 
 **This rule unblocks:**
 
@@ -78,7 +78,7 @@ Filtering rules support numerous modifiers that allow you to fine-tune the rule 
 
 #### Unblocking everything on a website
 
-![Unblocking everything](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/4_unblock_entire_website.svg)
+![Unblocking everything](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/4_unblock_entire_website.svg)
 
 **This rule unblocks**
 
@@ -87,7 +87,7 @@ Filtering rules support numerous modifiers that allow you to fine-tune the rule 
 
 #### Cosmetic rule
 
-![Cosmetic rule](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/5_cosmetic_rules.svg)
+![Cosmetic rule](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/5_cosmetic_rules.svg)
 
 Cosmetic rules are based on using a special language named CSS, which every browser understands. Basically, it adds a new CSS style to the website which purpose is to hide particular elements. You can learn more about CSS in general [here](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors).
 
@@ -95,15 +95,15 @@ Cosmetic rules are based on using a special language named CSS, which every brow
 
 **Popular CSS selectors**
 
-| Name                         | CSS selector                     | Description                                                                                                                                                                                |
-| ---------------------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| ID selector                  | `#banners`                       | Matches all elements with `id` attribute equal to `banners`.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_id_selector.png)                                  |
-| Class selector               | `.banners`                       | Matches all elements with `class` attribute containing `banners`.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_class_selector.png)                          |
-| Attribute selector           | `div[class="banners"]`           | Matches all `div` elements with `class` attribute **exactly equal** to `banners`.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_class_attr.png)              |
-| Attribute substring selector | `div[class^="advert1"]`          | Matches all `div` elements which `class` attribute **starts with** the `advert1` string.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_class_attr_start.png) |
-| Attribute substring selector | `div[class$="banners_ads"]`      | Matches all `div` elements which `class` attribute **ends with** the `banners_ads` string.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_class_attr_end.png) |
-| Attribute substring selector | `a[href^="http://example.com/"]` | Matches all links that are loaded from `http://example.com/` domain.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_attr_start.png)                           |
-| Attribute selector           | `a[href="http://example.com/"]`  | Matches all links to **exactly** the `http://example.com/` address.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_attr_equal.png)                            |
+| Name                         | CSS selector                     | Description                                                                                                                                                                               |
+| ---------------------------- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ID selector                  | `#banners`                       | Matches all elements with `id` attribute equal to `banners`.<br/>![](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_id_selector.png)                                  |
+| Class selector               | `.banners`                       | Matches all elements with `class` attribute containing `banners`.<br/>![](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_selector.png)                          |
+| Attribute selector           | `div[class="banners"]`           | Matches all `div` elements with `class` attribute **exactly equal** to `banners`.<br/>![](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_attr.png)              |
+| Attribute substring selector | `div[class^="advert1"]`          | Matches all `div` elements which `class` attribute **starts with** the `advert1` string.<br/>![](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_attr_start.png) |
+| Attribute substring selector | `div[class$="banners_ads"]`      | Matches all `div` elements which `class` attribute **ends with** the `banners_ads` string.<br/>![](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_attr_end.png) |
+| Attribute substring selector | `a[href^="http://example.com/"]` | Matches all links that are loaded from `http://example.com/` domain.<br/>![](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_attr_start.png)                           |
+| Attribute selector           | `a[href="http://example.com/"]`  | Matches all links to **exactly** the `http://example.com/` address.<br/>![](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_attr_equal.png)                            |
 
 ## Restrictions
 

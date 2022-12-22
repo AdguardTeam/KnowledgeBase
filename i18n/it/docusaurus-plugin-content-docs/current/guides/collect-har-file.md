@@ -28,7 +28,7 @@ To create a HAR file in Chrome:
 
 7. Check the ***Disable cache*** check box.
 
-![chrome](https://cdn.adguard.com/content/Kb/ad_blocker/guides/chrome.png)
+![chrome](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/chrome.png)
 
 8. Reproduce the steps that create the issue.
 
@@ -55,7 +55,7 @@ To create a HAR file in Chrome:
 
 7. Check the ***Disable cache*** check box.
 
-![edge](https://cdn.adguard.com/content/Kb/ad_blocker/guides/edge.png)
+![edge](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/edge.png)
 
 8. Reproduce the steps that create the issue.
 
@@ -82,7 +82,7 @@ To create a HAR file in Firefox:
 
 6. Check the ***Disable cache*** check box.
 
-![firefox](https://cdn.adguard.com/content/Kb/ad_blocker/guides/firefox.png)
+![firefox](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/firefox.png)
 
 7. Reproduce the steps that create the issue.
 

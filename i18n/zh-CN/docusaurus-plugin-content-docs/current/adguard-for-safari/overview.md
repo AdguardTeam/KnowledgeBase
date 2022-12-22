@@ -7,13 +7,13 @@ AdGuard for Safari was designed to conform to Apple's restrictions for ad blocki
 
 ## General {#general}
 
-![General tab](https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/General.png)
+![General tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/General.png)
 
 The first tab is the General screen where you can set up basic things like notifications, update intervals, and launching AdGuard at system startup. You can also choose to display the AdGuard icon in the menu bar. There you can also turn on [content blockers](#contentblockers) to block ads, trackers, annoyances, etc.
 
 ## Filters {#filters}
 
-![Filters tab](https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/Filters.png)
+![Filters tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/Filters.png)
 
 A filter is a list of rules written in a special syntax. Following these rules, content blockers can filter web traffic: block ads or requests to malicious websites.
 
@@ -24,7 +24,7 @@ In the Filters tab, you can enable the whole category or separate filters. Chang
 
 ## Content blockers {#contentblockers}
 
-![Content blockers tab](https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/Contentblockers.png)
+![Content blockers tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/Contentblockers.png)
 
 A content blocker is a thematic cluster of filters. Privacy-related filters are included in the content blocker with the corresponding name — *AdGuard Privacy*.
 
@@ -64,7 +64,7 @@ This content blocker unites several security-related filters. *Malware Domains B
 
 ### AdGuard Custom {#adguard_custom}
 
-![Custom tab](https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/AGCustom.png)
+![Custom tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/AGCustom.png)
 
 If you need more filters, you can add them to *AdGuard Custom*. To add a custom filter, enter a URL or a local file path in the relevant field. You can find new filters at [filterlists.com](https://filterlists.com/).
 
@@ -74,7 +74,7 @@ User rules can be used to customize ad blocking. They can be added manually, imp
 
 ## 关于 {#about}
 
-![About tab](https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/About.png)
+![About tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/About.png)
 
 In the About tab, you can see info about the current version of your product and links to legal documents. There is also a link to our repository on GitHub. You can monitor the product development, create feature requests and report bugs there.
 

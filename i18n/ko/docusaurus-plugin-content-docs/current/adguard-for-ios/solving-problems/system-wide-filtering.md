@@ -9,7 +9,7 @@ System-wide filtering means blocking ads and trackers beyond the Safari browser,
 
 iOS 기기의 전체 시스템에서 추적기와 광고를 차단하려면 [DNS 필터링](https://adguard-dns.io/kb/general/dns-filtering/)을 사용해야 합니다. 먼저 DNS 보호를 활성화해야 합니다. DNS 보호를 활성화하려면 *iOS용 AdGuard 설정*—> *DNS 보호*로 이동하여 DNS 보호를 켜십시오.
 
-![DNS 보호 화면](https://cdn.adguard.com/public/Adguard/Blog/ios_dns_protection.PNG)
+![DNS protection screen *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_dns_protection.PNG)
 
 전체 시스템에서 광고와 추적기를 차단하려면 두 가지 방법이 있습니다.
 
@@ -21,7 +21,7 @@ iOS 기기의 전체 시스템에서 추적기와 광고를 차단하려면 [DNS
 * 특정한 서버에 제한되지 않고 원하시는 모든 DNS 서버를 사용할 수 있습니다.
 * DNS 서버와 달리 DNS 필터/호스트는 여러개를 동시에 추가할 수 있습니다.
 
-![DNS 필터링 작동 방식](https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_en.png)
+![DNS 필터링 작동 방식](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_en.png)
 
 ## DNS 필터/호스트 파일을 추가하는 방법
 
@@ -30,9 +30,9 @@ iOS 기기의 전체 시스템에서 추적기와 광고를 차단하려면 [DNS
 1. *iOS용 AdGuard 설정* —> *일반*
 2. *고급 모드*를 활성화한 후 *고급 설정* 열기
 
-![AdGuard 설정을 열고 고급 모드를 활성화합니다](https://cdn.adguard.com/public/Adguard/Release_notes/iOS/v4.0/advanced_mode_en.jpg)
+![Open AdGuard Settings and enable Advanced mode *mobile_border](https://cdn.adtidy.org/public/Adguard/Release_notes/iOS/v4.0/advanced_mode_en.jpg)
 
-![고급 설정 화면](https://cdn.adguard.com/public/Adguard/Blog/ios_advanced_settings.PNG)
+![Advanced settings screen *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_advanced_settings.PNG)
 
 > 참고: *고급 설정* 탭에서 다른 설정, 특히 *로우 레벨 설정*은 사용하지 않는 것이 좋습니다. 어떤 설정으로 인해 인터넷 연결이 떨어질 수 있거나 개인정보 및 보안이 손상될 수 있습니다. AdGuard DNS 필터를 추가하려면 다음 단계를 따르세요.
 
@@ -40,6 +40,6 @@ iOS 기기의 전체 시스템에서 추적기와 광고를 차단하려면 [DNS
 4. *iOS용 AdGuard 설정* —> *DNS 보호* —> *>DNS 필터링*(*고급 모드*가 활성화된 동안 사용 가능) —> *DNS 필터*
 5. *필터 추가* 버튼을 클릭한 후 URL 필터의 필드에 링크를 붙여넣고 '다음' 클릭
 
-![DNS 필터 화면 추가](https://cdn.adguard.com/public/Adguard/Blog/ios_adding_a_filter.PNG)
+![Adding a DNS filter screen *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_adding_a_filter.PNG)
 
 > 3 단계에서 다른 URL을 붙여넣어 동일한 방식으로 다른 DNS 필터를 추가하세요. [여기](https://filterlists.com)에서 다양한 필터와 링크를 확인할 수 있습니다.

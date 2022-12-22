@@ -7,13 +7,13 @@ AdGuard для Safari был разработан в соответствии с
 
 ## Общие {#general}
 
-![Вкладка «Общие»](https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/General.png)
+![Вкладка «Общие»](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/General.png)
 
 Первая вкладка — это экран «Общие», где вы можете настроить основные параметры: уведомления, интервалы обновления и открытие AdGuard при запуске системы. Вы также можете выбрать отображение значка AdGuard в строке меню. Там же можно включить [блокировщики контента](#contentblockers), чтобы блокировать рекламу, трекеры, раздражители и т. д.
 
 ## Фильтры {#filters}
 
-![Вкладка «Фильтры»](https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/Filters.png)
+![Вкладка «Фильтры»](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/Filters.png)
 
 Фильтр — это список правил, написанных в специальном синтаксисе. Блокировщики контента считывают эти правила и блокируют рекламу или запросы к опасным сайтам.
 
@@ -24,7 +24,7 @@ AdGuard для Safari был разработан в соответствии с
 
 ## Блокировщики контента {#contentblockers}
 
-![Вкладка «Блокировщики контента»](https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/Contentblockers.png)
+![Вкладка «Блокировщики контента»](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/Contentblockers.png)
 
 Блокировщик контента — это тематический блок фильтров. Фильтры, связанные с конфиденциальностью, входят в блокировщик контента с соответствующим названием — *AdGuard Конфиденциальность*.
 
@@ -64,7 +64,7 @@ AdGuard для Safari был разработан в соответствии с
 
 ### AdGuard Пользовательские {#adguard_custom}
 
-![Вкладка «Пользовательские»](https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/AGCustom.png)
+![Вкладка «Пользовательские»](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/AGCustom.png)
 
 Если вам нужно больше фильтров, вы можете добавить их в разделе *AdGuard Пользовательские*. Чтобы добавить пользовательский фильтр, введите его URL или путь к файлу. Новые фильтры вы можете найти на [filterlists.com](https://filterlists.com/).
 
@@ -74,7 +74,7 @@ AdGuard для Safari был разработан в соответствии с
 
 ## О программе {#about}
 
-![Вкладка «О программе»](https://cdn.adguard.com/public/Adguard/Blog/AG_for_Safari_in-depth_review/About.png)
+![Вкладка «О программе»](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/About.png)
 
 На вкладке «О программе» находится информация о текущей версии продукта и ссылки на юридические документы. Там же находится ссылка на наш репозиторий на GitHub. Там вы можете следить за развитием продукта, предлагать новые функции и сообщать об ошибках.
 

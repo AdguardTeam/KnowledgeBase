@@ -9,11 +9,11 @@ sidebar_position: 5
 
 2. В появившемся окне введите `eventvwr` и нажмите на **OK**:
 
-![Окно запуска](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/eng_event_logs_1.png)
+![Run window *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_1.png)
 
 3. Окно программы «Просмотр событий» выглядит, как показано ниже.
 
-![Просмотр событий](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/eng_event_logs_2.png)
+![Event viewer *border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_2.png)
 
 Чтобы сохранить нужные нам файлы, сделайте следующее:
 

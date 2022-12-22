@@ -14,12 +14,12 @@ Firefox Nightly가 AdGuard 인증서를 신뢰하도록 하려면 다음 단계�
 1. 브라우저를 실행합니다.
 2. **설정**>** Firefox 정보**로 이동합니다.
 
-![Firefox 정보](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
+![About Firefox *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
 
 3. Firefox 로고를 5번 탭합니다.
 4. **설정**>** Secret Settings**으로 이동합니다.
 
-![Secret Settings*](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
+![Secret Settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
 
 5. **Use third party CA certificates** 기능을 활성화합니다.
 

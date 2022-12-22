@@ -11,7 +11,7 @@ iOS용 AdGuard의 풀 터널 (VPN 아이콘이 표시되지 않음) 모드를 �
 
 **FaceTime 영상/음성 통화가 중단되지 않도록 하려면 분할 터널 모드를 사용하는 것이 좋습니다.**
 
-![터널 모드 화면](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/iOS/tunnel-mode.PNG?!)
+![Tunnel mode screen *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ru/iOS/tunnel-mode.PNG?!)
 
 분할 터널 모드를 활성화하는 방법은 다음과 같습니다.
 1. *설정*> *일반으로 이동*

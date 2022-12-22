@@ -18,7 +18,7 @@ sidebar_position: 4
 
 Ниже показано разделение на плюральные формы в зависимости от числительных в польском языке. Группы числительных определяют форму слова, которое к ним относится.
 
-![польский](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
+![польский](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
 > Другие примеры можно найти [здесь](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals).
 
@@ -54,7 +54,7 @@ sidebar_position: 4
 
 ### 1. Фразы с ключами (string keys), оканчивающимися на `.singular`, `.dual`, `.plural` {#1type}
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/plurals/dual_it.png)
+![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/dual_it.png)
 
 Большинство из них представлены в проекте `AdGuard для Windows` и состоят из одного-двух слов:
 
@@ -70,7 +70,7 @@ sidebar_position: 4
 
 Вот пример:
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/plurals/android_fr.png)
+![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/android_fr.png)
 
 Если в вашем языке 3 плюральные формы (как в польском), укажите их все через запятую.
 
@@ -88,7 +88,7 @@ sidebar_position: 4
 
 Например:
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/plurals/crowdin_scheme.png)
+![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/crowdin_scheme.png)
 
 Будьте внимательны, когда переводите такие строки. Если вы не знаете, что означает поле Other, просто вставьте ту же форму, что и в поле Many. Переводы полей Many и Other могут быть одинаковыми.
 
@@ -98,7 +98,7 @@ sidebar_position: 4
 
 Обратите внимание на знак вертикальной черты между предложениями и плейсхолдер **%count%** в оригинальных фразах — это поможет вам определить фразы, в которых перевод требует использования форм множественного числа.
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/plurals/plurals_site.png)
+![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/plurals_site.png)
 
 Теперь представим, что вы столкнулись с такой фразой: `Standard license for %count% computer | Standard license for %count% computers`.
 
@@ -122,7 +122,7 @@ sidebar_position: 4
 
 `Štandartná licencia pre %count% počítač | Štandartná licencia pre %count% počítače | Štandartná licencia pre %count% počítačov`
 
-![словацкий](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/slovak.png)
+![словацкий](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/slovak.png)
 
 Получается, если вы переводите на словацкий, вам нужно использовать три шаблона с тремя формами слова *počítač"* (компьютер).
 
@@ -131,7 +131,7 @@ sidebar_position: 4
 
 Например, сербское слово *računar* (компьютер) имеет только две формы. Но в сербском есть 3 плюральные формы.
 
-![сербский](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/serbian.png)
+![сербский](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/serbian.png)
 
 Поэтому перевод с английского на словацкий должен быть таким:
 

@@ -19,68 +19,68 @@ To let your AdGuard app run successfully in the background, do the following:
 
 In **Settings** > **Apps** > **Manage apps** > scroll down to locate **AdGuard**, set **Autostart** to "On".
 
-![Xiaomi Settings](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
+![Xiaomi Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
 
 Scroll down to **Battery saver**, tap it, and set to "No restrictions".
 
-![Miui](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_0a.png)
+![Miui *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_0a.png)
 
 Run the **Security** app.
 
 Tap on the **Gear** icon at the top-right corner of the screen.
 
-![Miui Settings](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_1.jpeg)
+![Miui Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_1.jpeg)
 
 Tap **Boost speed** in Feature Settings.
 
-![Miui Settings](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_2.png)
+![Miui Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_2.png)
 
 Tap **Lock apps**.
 
-![Miui Settings](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_3.jpeg)
+![Miui Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_3.jpeg)
 
 In the **Lock apps** screen, set the toggle switch for the AdGuard app to On.
 
-![Miui Settings](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_4.jpeg)
+![Miui Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_4.jpeg)
 
 That’s all! You’ve successfully pinned the AdGuard app.
 
 ### MIUI 12
 
-![Xiaomi](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
+![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
 
 Go to **Settings** > **Apps** > **Manage apps** > **AdGuard**.
 
 - Set Autostart to “On”
 - Set Battery saver to **No restrictions**
 
-![Xiaomi](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi5en.jpeg)
+![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi5en.jpeg)
 
 Now launch the active apps manager by swiping up from the bottom of the screen and look for the AdGuard app.
 
-![Xiaomi](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi6.jpeg)
+![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi6.jpeg)
 
 Tap and hold it until a special menu pops up. Select a lock icon.
 
-![Xiaomi](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi7en.jpeg)
+![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi7en.jpeg)
 
 The lock icon should appear above the app window.
 
-![Xiaomi](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi8en.jpeg)
+![Xiaomi](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi8en.jpeg)
 
 ### MIUI 10-11
 
 To let your app run successfully in the background, configure settings as follows:
 
-![Xiaomi](https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi1en.png)
+![Xiaomi *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/xiaomi1en.png)
 
 - **Settings** > **Battery & performance** > switch-off **Battery saver** function
 
-![Xiaomi](https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi2en.png)
+![Xiaomi *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/xiaomi2en.png)
 
 - Then open **App battery saver** settings > **AdGuard** > **No restrictions**
 
-![Xiaomi](https://cdn.adguard.com/public/Adguard/screenshots/android/xiaomi3en.png)
+![Xiaomi *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/xiaomi3en.png)
 
 ### Power management
 
@@ -104,11 +104,11 @@ To set up AdGuard's background work for Xiaomi devices you should pay attention 
 
 - Tap the **Recent tasks** button and swipe AdGuard down to make options *visible* (as shown on the screenshot):
 
-![Xiaomi](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/xiaomirecent.png)
+![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomirecent.png)
 
 - Tap on the **lock** icon. This will stop Xiaomi from closing AdGuard automatically. It should look like this:
 
-![Xiaomi](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/xiaomilocked.png)
+![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomilocked.png)
 
 - Go to **Battery**
 
@@ -118,7 +118,7 @@ To set up AdGuard's background work for Xiaomi devices you should pay attention 
 
 - Set up the following **Background settings**:
 
-![Xiaomi](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/xiaomirest.png)
+![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomirest.png)
 
 - Go to **Permissions**
 
@@ -126,7 +126,7 @@ To set up AdGuard's background work for Xiaomi devices you should pay attention 
 
 - Make sure that autostart function is enabled for AdGuard:
 
-![Xiaomi](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/xiaomiautostart.png)
+![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomiautostart.png)
 
 ## Samsung
 
@@ -147,24 +147,24 @@ Checklist:
 
 1. Start **Device care** from phone settings
 
-![Samsung](https://cdn.adguard.com/public/Adguard/screenshots/android/samsung1en.png)
+![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung1en.png)
 
 2. Tap **Battery**
 
-![Samsung](https://cdn.adguard.com/public/Adguard/screenshots/android/samsung2en.png)
+![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung2en.png)
 
 3. Tap the **3-dot menu** > **Settings**
 
-![Samsung](https://cdn.adguard.com/public/Adguard/screenshots/android/samsung3en.png)
+![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung3en.png)
 
 4. Disable all toggles (except Notifications)
 5. Tap **Sleeping apps**
 
-![Samsung](https://cdn.adguard.com/public/Adguard/screenshots/android/samsung45en.png)
+![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung45en.png)
 
 6. **Wake up** all the apps using the trashcan icon
 
-![Samsung](https://cdn.adguard.com/public/Adguard/screenshots/android/samsung6en.png)
+![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung6en.png)
 
 > **Note**: Make sure that `Put unused apps to sleep` and `Auto-disable unused apps` are disabled. Otherwise, Samsung will put your apps back to sleep after a few days even if you have woken them up manually.
 
@@ -174,15 +174,15 @@ For early Samsung devices, there is no huge need for setting up the background w
 
  - Tap the **Recent tasks** button, tap on the **Additional settings** icon. It should look like this:
 
- ![Samsung settings](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/samsungoptions.png)
+ ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/samsungoptions.png)
 
  - Tap **Lock Apps**:
 
- ![Samsung settings](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/samsunglockapps.png)
+ ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/samsunglockapps.png)
 
   - Tap on the lock icon
 
- ![Samsung settings](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/samsunglock.png)
+ ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/samsunglock.png)
 
 ## Huawei
 
@@ -190,15 +190,15 @@ For early Samsung devices, there is no huge need for setting up the background w
 
 - **Phone settings** > **Battery** > **App launch** and then set your app to **Manage manually** and make sure everything is turned on.
 
-![Huawei](https://cdn.adguard.com/public/Adguard/screenshots/android/huawei1en.png)
+![Huawei *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/huawei1en.png)
 
 1. **Phone settings** > **Battery** > **App launch**. This feature may or may not be available for all devices or labeled differently.
 
-![Huawei](https://cdn.adguard.com/public/Adguard/screenshots/android/huawei2en.png)
+![Huawei *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/huawei2en.png)
 
 2. Turn off **Manage all automatically**
 
-![Huawei](https://cdn.adguard.com/public/Adguard/screenshots/android/huawei3en.png)
+![Huawei *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/huawei3en.png)
 
 3. Make sure to **enable** all toggles.
 
@@ -216,7 +216,7 @@ Unfortunately, this is a system app that can only be fully uninstalled using ADB
 
 **You need to**:
 
-1) [Install ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer;
+1) [Install ADB *mobile_border](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer;
 
 2) Connect your phone with a data cable;
 
@@ -257,11 +257,11 @@ Old Huawei devices are the easiest to set up, it is enough to perform two simple
 
   - Tap the **Recent tasks** button:
 
-  ![Huawei recent apps](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/huaweirecentapps.jpeg)
+  ![Huawei recent apps *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweirecentapps.jpeg)
 
   - Tap on the lock icon:
 
- ![Huawei lock](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/huaweilock.jpeg)
+ ![Huawei lock *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweilock.jpeg)
 
 Besides, to set up the background work of your app more effectively, you should open device settings and do the following:
 
@@ -332,11 +332,11 @@ Devices with OxygenOS on board are the most problematic, with its OS-specific ca
 
  - Open recent apps menu (as showed on this screenshot):
 
- ![Onepluslock](https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/onepluslock.png)
+ ![Onepluslock *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/android/onepluslock.png)
 
 - Lock AdGuard application:
 
-![Oneplusdots](https://cdn.adguard.com/public/Adguard/kb/PicturesEN/android/oneplusdots.png)
+![Oneplusdots *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/android/oneplusdots.png)
 
 > On some OnePlus phones there is also a thing called App Auto-Launch and Deep Optimization which essentially prevents apps from working in the background. Please disable it for your app.
 
@@ -370,12 +370,12 @@ Android stock OS normally does not conflict with applications working in the bac
 
  - Go to **Settings** > **Network and Internet**
 
- ![Stocknetwork](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/stocknetwork.png)
+ ![Stocknetwork *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/stocknetwork.png)
 
  - Tap **VPN** and choose **AdGuard**
 
- ![Stockvpn](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/stockvpn.png)
+ ![Stockvpn *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/stockvpn.png)
 
  - Set up **Always-on VPN** mode
 
- ![Stockadguard](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/background-work/stockadguard.png)
+ ![Stockadguard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/stockadguard.png)

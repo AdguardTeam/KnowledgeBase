@@ -13,7 +13,7 @@ sidebar_position: 1
 
 以减轻大家对该问题的误解，我们设计了新屏幕称为“电池使用率”。 您可以在主屏幕的右上角上点击「电池」图标以查看。
 
-![电池统计](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/battery/batterystats.png)
+![Battery stats *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/battery/batterystats.png)
 
 这里可以查看最近24小时内 AdGuard 电池的使用量。点击图标上的绿线可以按每一个小时查看关于流量使用的更详细信息。 除此之外，还有相关数据的信息以及简短技术说明。
 
@@ -21,7 +21,7 @@ sidebar_position: 1
 
 在以下的截图上您可以看到夜间和早间电池使用量的统计：
 
-![电池 1](https://cdn.adguard.com/public/Adguard/kb/PicturesEN/battery_1.png) ![电池 2](https://cdn.adguard.com/public/Adguard/kb/PicturesEN/battery_2.png) ![电池 3](https://cdn.adguard.com/public/Adguard/kb/PicturesEN/battery_3.png)
+![Battery 1 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_1.png) ![Battery 2 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_2.png) ![Battery 3 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_3.png)
 
 在以上的截图中可以发现:
 

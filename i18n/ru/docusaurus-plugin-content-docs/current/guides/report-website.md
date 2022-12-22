@@ -10,7 +10,7 @@ sidebar_position: 3
 * Изменение алгоритмов внедрения рекламы;
 * Добавление фильтров/расширений от сторонних разработчиков;
 * Ошибка, допущенная авторами фильтров при создании правила;
-* Повторное размещение рекламы. Узнайте больше об этом методе в [нашем блоге](https://adguard.com/ru/blog/ad-reinsertion.html).
+* Повторное размещение рекламы. Find more about this method in our [blog](https://adguard.com/blog/ad-reinsertion.html).
 
 Вы можете заполнить соответствующую форму с примерами рекламы, с которой вы столкнулись. Так вы здорово нам поможете. Для этого воспользуйтесь инструкциями для вашей ОС.
 
@@ -25,15 +25,15 @@ sidebar_position: 3
 * Откройте настройки расширения браузера, нажав на соответствующий значок;
 * Нажмите на **Сообщить о проблеме**:
 
-![расширение](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/extension1ru.png)
+![extension *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/extension_issue.png)
 
 * После заполнения формы автоматически будет создана проблема на [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) . Там же будет ссылка для отслеживания прогресса в решении вашей проблемы.
 
 ### Windows {#windows}
 
-* Откройте [Браузерный помощник AdGuard](https://kb.adguard.com/en/windows/features/browser-assistant) и нажмите **Сообщить о проблеме**:
+* Open [AdGuard Browser Assistant](https://adguard.com/kb/adguard-for-windows/browser-assistant) and hit **Report an issue**:
 
-![windows](https://cdn.adguard.com/public/Adguard/kb/Windows/browser-assistant-ru.png)
+![windows *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/browser-assistant.png)
 
 * Заполните форму для подачи жалобы;
 * После заполнения формы автоматически будет создана проблема на [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) . Там же будет ссылка для отслеживания решения вашей проблемы.
@@ -43,15 +43,15 @@ sidebar_position: 3
 * Откройте настройки AdGuard;
 * Выберите **Поддержка**, затем **Сообщение в поддержку** -> **Пропущенная реклама**/**Некорректная блокировка**:
 
-![android](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/android1ru.png)
+![android *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/android.png)
 
 * После заполнения формы автоматически будет создана проблема на [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) . Там же будет ссылка для отслеживания прогресса в решении вашей проблемы.
 
 ### Mac {#mac}
 
-* Откройте [Браузерный помощник AdGuard](https://kb.adguard.com/en/macos/overview/browser-assistant) и нажмите **Сообщить о проблеме**:
+* Open [AdGuard Browser Assistant](https://adguard.com/kb/adguard-for-mac/browser-assistant) and hit **Report an issue**:
 
-![mac](https://cdn.adguard.com/public/Adguard/kb/MAC/browser-assistant-ru.png)
+![mac *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/guides/browser-assistant-mac.png)
 
 * Заполните форму для подачи жалобы;
 * После заполнения формы автоматически будет создана проблема на [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) . Там же будет ссылка для отслеживания прогресса в решении вашей проблемы.
@@ -61,7 +61,7 @@ sidebar_position: 3
 * Откройте настройки AdGuard;
 * Выберите **Поддержка**, затем **Сообщить о некорректной блокировке**:
 
-![ios](https://cdn.adguard.com/content/Kb/ad_blocker/guides/ios_issue.png)
+![ios *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/ios_issue.png)
 
 * Заполните форму для подачи жалобы;
 * После заполнения формы автоматически будет создана проблема на [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) . Там же будет ссылка для отслеживания прогресса в решении вашей проблемы.
@@ -70,17 +70,43 @@ sidebar_position: 3
 
 > **Примечание**: При отправке жалобы через приложение или через Браузерный Помощник AdGuard вся информация заполняется автоматически. Кроме скриншотов — их придётся прикреплять самостоятельно. Если вы используете [прямую ссылку](https://reports.adguard.com/en/new_issue.html), вам необходимо ввести данные вручную.
 
-1. Заполнение формы начинается с указания типа и версии продукта; ![форма1](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma1ru.png)
-2. Укажите тип проблемы и дополнительную информацию об использовании стороннего ПО (антивирус, VPN); ![форма2](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma2ru.png)
-3. Введите адрес страницы, на которой вы столкнулись с проблемой (или полную ссылку для скачивания в случае приложения), и браузер, на котором вы столкнулись с проблемой; ![форма3](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma3ru.png)
+1. Filling in the form starts with detailing the type and version of a product;
+
+![forma1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma1en.png)
+
+2. Specify the type of problem and additional information on using third-party software (antivirus, VPN);
+
+![forma2 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma2en.png)
+
+3. Enter the address of the page where you have encountered the problem (or full download link in case of an app), and the browser where you've encountered a problem;
+
+![forma3 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma3en.png)
+
 4. Необходимо указать конфигурацию приложения:
 * Используемые вами фильтры;
-* Настройки Антитрекинга, если эта функция включена.![форма4](https://cdn.adguard.com/content/kb/ad_blocker/guides/forma4en.png)
+* Stealth mode settings, if this function is enabled.
+
+![forma4 *border](https://cdn.adtidy.org/content/kb/ad_blocker/guides/forma4en.png)
+
 5. [Добавьте скриншот](../take-screenshot), на котором отражена суть проблемы;
-* **Важно**: Скройте вашу личную информацию (email, номер телефона и т.п.), потому что добавленные скриншоты станут общедоступны; ![форма5](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma5ru.png)
-6. Укажите дополнительную информацию, которая поможет разработчикам фильтров разобраться в ситуации. Также укажите ваш аккаунт на **GitHub**, если таковой имеется (это необходимо, чтобы разработчики могли связаться с вами для выяснения дополнительный деталей, если это потребуется); ![форма6](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma6ru.png)
-7. Проверьте каждый шаг перед отправкой формы; ![форма7](https://cdn.adguard.com/content/Kb/ad_blocker/guides/forma7en.png)
-8. Вы увидите ссылку для отслеживания решения по вашей задаче.![форма8](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Techsupp/forma8ru.png)
+
+* **Важно**: Скройте вашу личную информацию (email, номер телефона и т.п.), потому что добавленные скриншоты станут общедоступны;
+
+![forma5 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma5en.png)
+
+6. Provide additional information that will help filter developers understand the situation;
+
+Also enter your account on **GitHub**, if available (it's necessary for developers to be able to reach you in case they need some additional details);
+
+![forma6 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma6en.png)
+
+7. Check each step before sending the form;
+
+![forma7 *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma7en.png)
+
+8. You'll be provided with a link to track progress on your task.
+
+![forma8 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma8en.png)
 
 ## Диагностика проблемы {#issue}
 

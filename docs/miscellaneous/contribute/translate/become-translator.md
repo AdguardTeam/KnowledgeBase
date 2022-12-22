@@ -5,35 +5,35 @@ sidebar_position: 2
 
 If you want to help translate AdGuard products, websites, and Knowledge bases, go to [Crowdin](https://crowdin.com/) and sign up/log in there.
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/main-screen.png)
+![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/main-screen.png)
 
 Once you do, go to [our page](https://crowdin.com/profile/adguard/). You will see AdGuard projects, each with folders for different product strings.
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/projects.png)
+![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/projects.png)
 
 Choose your language and you will see the list of available product folders.
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/languages.png)
+![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/languages.png)
 
 You can start translating literally any product you like by choosing the respective folder. We have some recommendations about [what files are better to start with in AdGuard Websites project](../translation-priority).
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/folders.png)
+![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/folders.png)
 
 Filter phrases that are not yet translated and start your translation history.
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/filter.png)
+![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/filter.png)
 
 Suggest your version in the text box and save it.
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/text-box.png)
+![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/text-box.png)
 
 If you don't agree with an existing translation, you can suggest your version. Also, you can upvote and downvote suggestions made by other volunteers by clicking the "plus" and "minus" buttons.
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/vote.png)
+![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/vote.png)
 
 Besides, there is an opportunity to open translations in a Voting mode if you just want to rate translations.
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/mode.png)
+![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/mode.png)
 
 You can find some [helpful tips on translating AdGuard in this article](../guidelines). Please have a look at it.
 

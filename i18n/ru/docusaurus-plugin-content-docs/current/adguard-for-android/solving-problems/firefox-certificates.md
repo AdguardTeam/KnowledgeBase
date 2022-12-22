@@ -14,12 +14,12 @@ sidebar_position: 11
 1. Запустите браузер.
 2. Перейдите на страницу **Настройки** > **О Firefox**.
 
-![О Firefox](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
+![About Firefox *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
 
 3. Коснитесь логотипа Firefox пять раз.
 4. Перейдите в раздел **Настройки** > **Тайные настройки**.
 
-![Секретные настройки*](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
+![Secret Settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
 
 5. Включите настройку **Использовать сторонние сертификаты CA**.
 

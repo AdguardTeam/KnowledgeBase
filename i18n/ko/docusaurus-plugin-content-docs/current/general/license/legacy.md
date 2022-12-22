@@ -39,7 +39,7 @@ AdGuard 이전 라이선스 키를 업그레이드·갱신하는 방법을 살�
 
 1+1 키는 다음과 같이 표시됩니다.
 
-![1+1 키](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/1.outdatedlicenses_ko.png)
+![1+1 키](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/1.outdatedlicenses_en.png)
 
 *개인 계정에서 이전 라이선스는 '이전 버전’으로 표시됩니다.*
 > 이전 라이선스가 있는 경우 계정에 '이전 라이선스'라는 문구가 표시됩니다. 그러나 이러한 라이선스는 갱신 또는 업그레이드 시 자동으로 새로운 유형으로 변환됩니다. 어떤 라이선스를 새로운 유형으로 변환할 수 있는지, 어떻게 변환하는지 살펴보겠습니다.
@@ -48,33 +48,33 @@ AdGuard 이전 라이선스 키를 업그레이드·갱신하는 방법을 살�
 
 [갱신 페이지](https://adguard.com/renew.html) 또는 [AdGuard 계정](https://my.adguard.com/main.html)에서 라이선스 변경이 가능합니다.
 
-![업그레이드](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_ko.png)
+![업그레이드](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_en.png)
 > 내 라이선스에서 특정 키에 대한 업그레이드/갱신 가능성을 확인할 수 있습니다. 구체적인 예를 살펴 보겠습니다.
 
 ### 1/2/3개의 기기용 일반/모바일 라이선스 또는 1+1 프리미엄
 
 1/2/3개의 기기용 **연간 라이선스**는 갱신 시 개인용 또는 가족용 라이선스로 전환할 수 있습니다.
 
-![업그레이드 또는 갱신](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/3.yearly_ko.png)
+![업그레이드 또는 갱신](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/3.yearly_en.png)
 > 보호해야 하는 기기 수에 따라 라이선스를 선택하십시오.
 
 또한 갱신하는 대신 영구 라이선스를 이용하십시오.
 
-![평생](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/4.lifetime_ko.png)
+![평생](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/4.lifetime_en.png)
 
 **평생 라이선스**는 갱신할 수 없으므로 새로운 유형의 라이선스로 전환 시 가족용 라이선스로 업그레이드하는 옵션만 가능합니다.
 
-![평생 업그레이드](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/5.lifetimeupgrade_ko.png)
+![평생 업그레이드](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/5.lifetimeupgrade_en.png)
 
 ### 4개 기기 이상의 라이선스 (최대 9개 기기 이용)
 
 **연간 라이선스**는 가족용 라이선스로 전환할 수 있습니다.
 
-![4개의 기기에서 사용할 수 있는 연간 라이선스](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/6.yearly4+devices_ko.png)
+![4개의 기기에서 사용할 수 있는 연간 라이선스](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/6.yearly4+devices_en.png)
 
 **평생 라이선스**가 기술적 제한으로 인해 새로운 유형 라이선스로 변경이 불가능합니다.
 
-![4개의 기기에서 사용할 수 있는 평생 라이선스](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/7.lifetime4+devices_ko.png)
+![4개의 기기에서 사용할 수 있는 평생 라이선스](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/7.lifetime4+devices_en.png)
 
 ### 9개 기기 이상의 라이선스
 

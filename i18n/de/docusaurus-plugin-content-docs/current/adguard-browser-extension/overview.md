@@ -5,13 +5,13 @@ sidebar_position: 1
 
 AdGuard provides a range of software products that block ads and trackers on different platforms. One of the most popular AdGuard products is a free extension that works in five popular browsers: Chrome, Firefox, Edge, Opera, and Yandex Browser. Browser extensions include basic ad-blocking features but cannot be compared with full-featured desktop programs, such as [AdGuard for Windows](/adguard-for-windows/overview) and [AdGuard for Mac](/adguard-for-mac/overview).
 
-![AdGuard Browser extension for Chrome](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
+![AdGuard Browser extension for Chrome *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
 
 ## Availability {#br-extension}
 
 [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html) is available for most major browsers. You can easily find it in your browser’s online store or on our official website.
 
-![Available for most popular browsers](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
+![Available for most popular browsers *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
 
 > We have a standalone extension for Safari. Since the release of [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html), most of the ad-blocking extensions have experienced huge issues and many of them stopped functioning. We had to develop a [separate extension for Safari](/adguard-for-safari/overview) that has some differences in comparison with the extension described in this article.
 
@@ -25,33 +25,33 @@ Blocking ads is clearly the key functionality of any ad blocker, and AdGuard is 
 
 In essence, filter lists are sets of rules written in a special language. Your ad blocker interpretes the rules and implements them. As a result, you stop seeing ads on your webpages.
 
-![Filters](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters.png)
+![Filters *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters.png)
 
 All filters are grouped according to their role. For example, there are categories for ad-blocking filters, privacy protection filters, social media-related filters, etc. You can enable either individual filters or the entire group at once.
 
-![Ad blocking filters](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters1.png)
+![Ad blocking filters *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters1.png)
 
 #### Custom filters {#custom}
 
 While the features of other filter groups are more or less predictable, there is a group called *Custom* that may raise additional questions.
 
-![Custom filters](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters.png)
+![Custom filters *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters.png)
 
 In this tab, you can add filters that are not present in the extension by default. There are plenty of [publicly available filters on the Internet](https://filterlists.com). Moreover, you can create and add your own filters. In fact, you can build any set of filters and customize ad blocking the way you like.
 
-To add a filter, just click the **Add custom filter** button and then enter the URL or the file path of the filter you want to be added, and then click the **Next** button.
+To add a filter, just click *Add custom filter*, enter the URL or the file path of the filter you want to be added and click *Next*.
 
-![Add a custom filter](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
+![Add a custom filter *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
 
 ### User rules {#user-rules}
 
 *User rules* is another tool that helps you customize the blocking of ads.
 
-![User rules](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_user_rules.png)
+![User rules *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_user_rules.png)
 
 There are several ways to add new rules. The most straightforward is to just type a rule in, but it requires some knowledge of the [rule syntax](/general/ad-filtering/create-own-filters).
 
-You can import a ready-to-use filter list from a text file as well. *Make sure that different rules are separated by line breaks.* Note that importing a ready-to-use filter list is better done in the [Custom filters](#custom) tab.
+You can import a ready-to-use filter list from a text file as well. **Make sure that different rules are separated by line breaks.** Note that importing a ready-to-use filter list is better done in the [Custom filters](#custom) tab.
 
 Besides, you can export your own filtering rules. This option is good for transferring your list of rules between browsers or devices.
 
@@ -61,11 +61,11 @@ When you add a website to the Allowlist (more on that [below](#allowlist)) or us
 
 The *allowlist* is used to exclude certain websites from filtering. Blocking rules are not applied to the websites on the list.
 
-![Allowlist](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist.png)
+![Allowlist *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist.png)
 
-The *allowlist* can be inverted, too: you can unblock ads everywhere except on the websites added to this list. To do that, activate the **Invert allowlist** option.
+The *allowlist* can be inverted, too: you can unblock ads everywhere except on the websites added to this list. To do that, activate the *Invert allowlist* option.
 
-![Invert allowlist](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist1.png)
+![Invert allowlist *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist1.png)
 
 You can also import and export existing allowlists. It is useful, for instance, if you want to apply the same allowing rules in each of your browsers.
 
@@ -73,7 +73,7 @@ You can also import and export existing allowlists. It is useful, for instance, 
 
 *Stealth Mode* aims to ensure the protection of sensitive personal data from online trackers and fraudsters.
 
-![Stealth Mode](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_stealth_mode.png)
+![Stealth Mode *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_stealth_mode.png)
 
 In Stealth Mode, you can prevent a website from seeing the search queries from you used to find it on the Internet, automatically delete third-party and website’s own cookies, etc. A [separate article](/general/stealth-mode) is devoted to all these features.
 
@@ -87,17 +87,17 @@ Apart from the large key modules of AdGuard Browser extension, there are several
 
 In the *General* tab, you can allow search ads and the [self-promotion of websites](/general/ad-filtering/search-ads), enable the automatic activation of language-specific filters, indicate the filters update interval, etc.
 
-![General](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_general.png)
+![General *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_general.png)
 
-Besides, here you can enable [*Phishing and malware protection*](/general/browsing-security#phishing).
+Besides, here you can enable [*Phishing and malware protection*](/general/browsing-security).
 
-You can save your settings configuration by clicking the **Export settings** button. The settings will be saved as a .json file. To upload the previously saved settings configuration, use the **Import settings** function. You can even use it to quickly switch between different settings profiles or even to transfer settings configurations between different browsers.
+You can save your settings configuration by clicking the *Export settings* button. The settings will be saved as a .json file. To upload the previously saved settings configuration, use the *Import settings* function. You can even use it to quickly switch between different settings profiles or even to transfer settings configurations between different browsers.
 
 ### Additional settings {#misc}
 
 The *Additional settings* section contains a range of various settings that are related to the ad blocking process and application usability.
 
-![Additional settings](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_additional_settings.png)
+![Additional settings *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_additional_settings.png)
 
 From this tab, you can activate optimized filters, enable notifications about extension updates, open the *Filtering log*, or clear the statistics of blocked ads and trackers.
 
@@ -107,13 +107,13 @@ Besides, you can opt to help us with the development of filters by sending the s
 
 In the *About* section, you can find infos about the current version, links to the EULA and Privacy policy, and to the repository of the Browser extension on GitHub.
 
-![About](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)
+![About *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)
 
 ## Extension’s main menu {#main-menu}
 
 The extension's main page can be accessed by clicking on the extension's icon on the toolbar of your browser.
 
-![Main menu](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
+![Main menu *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
 
 On the main page, you can hide any element on any page manually (a corresponding rule will be added to the *User rules*), open the *Filtering log* to view the complete information about your browser's traffic and block requests on the go, or look at a website’s security report. Besides, you can submit a complaint about any website (for example, if there are missed ads on the page, our filter engineers will review the report and fix the problem) and see the statistics on applied blocking rules.
 
@@ -129,7 +129,7 @@ The second difference is that the possibilities of extension-based ad blockers a
 
 Whereas AdGuard Browser extension is free and easy to install, and has filters to block ads and fight online threats, the full-fledged apps are more powerful and have a list of advanced features. See all the differences in the comparative table below.
 
-![Extension vs. App](https://cdn.adguard.com/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_comparison.png)
+![Extension vs. App *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_comparison.png)
 
 `1` – within browser restrictions and only in the browser where it is installed;
 

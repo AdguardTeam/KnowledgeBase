@@ -14,15 +14,15 @@ sidebar_position: 4
 
 2. **개발자 옵션**에서 **버그 신고**를 탭합니다.
 
-![버그 신고](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
+![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
 
 3. 버그 보고서의 유형을 선택하고 **신고**를 누릅니다. >잠시 후 버그 보고서가 준비되었다는 알림이 표시됩니다.
 
-![버그 신고](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
+![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
 
 4. 알림을 누릅니다.
 
-![버그 신고](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
+![Bug report *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
 
 5. Send this log to our support team.
 > 참고: 메시지에 헬프 데스크 티켓 번호 또는 GitHub 문제 번호를 첨부하면 지원팀이 티켓을 더 빠르게 처리할 수 있습니다.

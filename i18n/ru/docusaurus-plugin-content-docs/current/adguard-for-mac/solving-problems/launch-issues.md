@@ -24,7 +24,7 @@ sidebar_position: 6
 1. Откройте **Терминал** и введите команду `ls -@lOae /private/var/db/KernelExtensionManagement`.
 2. Убедитесь, что флаг `restricted` отсутствует (как на скриншоте).
 
-![Пример команды](https://cdn.adguard.com/content/kb/ad_blocker/mac/restricted-flag.jpg)
+![Command example *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/restricted-flag.jpg)
 
 3. Перезагрузите ваш Mac в режиме восстановления.
 4. Откройте **Утилиты** -> **Терминал**.

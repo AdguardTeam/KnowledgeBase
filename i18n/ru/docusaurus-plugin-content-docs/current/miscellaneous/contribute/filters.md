@@ -5,7 +5,7 @@ sidebar_position: 4
 
 ### Правила фильтрации {#filtering-rules}
 
-Для блокировки рекламы AdGuard использует правила фильтраци. Эти правила объединяются в тематические [фильтры](https://kb.adguard.com/general/adguard-ad-filters), такие как фильтр «Базовый фильтр AdGuard», «Фильтр мобильной рекламы» и т.д. [Подробнее о том, как работает блокировка рекламы](https://kb.adguard.com/general/how-ad-blocking-works).
+As you probably know, AdGuard uses filtering rules to block ads, and these rules are combined into thematic [blocking filters](https://adguardteam.github.io/KnowledgeBase/general/ad-filtering/adguard-filters), like AdGuard Base filter, Mobile ads filter, etc. [Read more about how ad blocking works](https://adguardteam.github.io/KnowledgeBase/general/ad-filtering/how-ad-blocking-works).
 
 Веб-сайты постоянно меняют способы встраивания рекламы, и мы добавляем новые правила в наши фильтры, чтобы сохранить их эффективность. Над созданием новых правил работают инженеры фильтров. Однако мы всегда рады помощи и поддержке волонтёров.
 
@@ -13,7 +13,7 @@ sidebar_position: 4
 
 Работа с фильтрами, блокирующими рекламу, требует специальных навыков. Если они у вас есть, и вы знаете, как создавать правила, то направляйтесь прямо в наш репозиторий [AdGuard Filters](https://github.com/AdguardTeam/AdguardFilters) на GitHub. Там вы найдёте множество открытых вопросов, каждый из которых ссылается на проблему с каким-либо сайтом — пропущенное объявление, ложное срабатывание и т. д. Выбирайте любой и предлагайте свои правила в комментариях. Инженеры фильтров AdGuard рассмотрят ваше предложение и добавят правило в фильтры, если оно окажется корректным.
 
-Если вы ещё не знакомы с синтаксисом наших правил фильтрации или просто хотите освежить знания, то вам нужно обратиться к  [нашей базе знаний](https://kb.adguard.com/general/how-to-create-your-own-ad-filters). Более продвинутые руководства можно найти в интернете, а если у вас есть вопросы по синтаксису, посетите [наш форум](https://forum.adguard.com/).
+If you are not yet familiar with our filtering rules syntax, or maybe need a refresher, you'll find the basics about the syntax [in our Knowledge base](https://adguardteam.github.io/KnowledgeBase/general/ad-filtering/create-own-filters). Более продвинутые руководства можно найти в интернете, а если у вас есть вопросы по синтаксису, посетите [наш форум](https://forum.adguard.com/).
 
 ### Как мы благодарим помощников {#rewards}
 

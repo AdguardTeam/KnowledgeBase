@@ -14,12 +14,12 @@ Firefox (およびそれをベースにしたブラウザ) がAdGuard証明書�
 1. Firefoxを起動します。
 2. **設定** → **Firefoxについて**
 
-![Firefoxについて](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
+![About Firefox *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
 
 3. Firefoxのロゴを5回タップする
 4. **設定** → **シークレット設定**に移動する
 
-![シークレット設定*](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
+![Secret Settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
 
 5. 「**サードパーティのCA証明書を使用する**」をオンにする
 

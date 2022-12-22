@@ -7,66 +7,66 @@ There are several things we'd like you to know before you start translating. It 
 
 Once you open [our page on Crowdin](https://crowdin.com/profile/adguard/), choose any project you need and select your language.
 
-![Language](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/language.png)
+![Language *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/language.png)
 
 You'll also be able to switch between languages even after opening certain product folders.
 
-![Language1](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/language1.png)
+![Language1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/language1.png)
 
 Choose any of available product folders and select a file — now you can start translating.
 
-![Files](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/files.png)
+![Files *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/files.png)
 > Please note: you can also change the Crowdin interface language by clicking the *Settings* icon in the top right corner of the page. In the opened window scroll down to the *UI language* tab. Open it, choose a language and click **Change**.
 
-![Language1](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/settings_en.png)
+![Language1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/settings_en.png)
 
 **The following guidelines will help you through the process.**
 
 1. You can filter translations by clicking this button and selecting any offered option.
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/filter.png)
+![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/filter.png)
 
 2. Easily move between the files of the project.
 
-![crowdin](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/filter_file.png)
+![crowdin *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/filter_files.png)
 
 3. Pay attention to the glossary terms highlighted with a dotted line in a source phrase. Usually, they are special words (like brand names) that should not be translated.
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/terms.png)
+![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/terms.png)
 
 You can suggest your translation for translatable terms in the [AdGuard Glossary](https://crowdin.com/project/adguard-glossary) project.
 
 4. In Crowdin, strings can have notes that make it easier to understand and translate phrases. Look for them in the "Context" field of the source string.
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/context-note.png)
+![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/context-note.png)
 
 5. Pay attention to screenshots that often go alongside source phrases in the "Context" field as well. They help to understand the context and convey the exact meaning.
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/screenshot.png)
+![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/screenshot.png)
 
 Please note that you can request context by clicking the "REQUEST" button.
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/request.png)
+![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/request.png)
 
 6. In addition to suggesting new translations, you can also leave comments on strings. Use comments to let us know about mistakes in the existing translations, make notes, or ask questions. If you see a comment left on your translation — try to respond to it.
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/comments.png)
+![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/comments.png)
 
 There's also a **Discussions** tab on the main project page that conveniently allows you to see all the comments for the specific language in this project.
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/discussions.png)
+![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/discussions.png)
 
 7. Crowdin provides a very useful and convenient tool called _Translation Memory_. With its help, you can find the previously made translations of the same words and phrases and reuse them in your translations.
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/tm.png)
+![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/tm.png)
 
 8. Once you join a project by clicking the "Join" button, you will see the **Tasks** tab on the project page, where the tasks for specific project files get created. _Please pay attention to them: they usually have a higher priority._
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/tasks.png)
+![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/tasks.png)
 
 9. Sometimes you can find phrases with plural forms. Please be especially attentive when translating such phrases. You can read how to translate plural forms [here](https://kb.adguard.com/en/miscellaneous/plurals).
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/ag-translations/plurals.png)
+![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/plurals.png)
 
 Using proper plural forms is extremely important:  please ask us in the comments if anything is unclear.
 

@@ -39,7 +39,7 @@ Premium licenses also remained unchanged and platform-limited. And although **Pr
 
 For example, this is how the 1+1 key looks like:
 
-![1+1 key](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/1.outdatedlicenses_en.png)
+![1+1 key](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/1.outdatedlicenses_en.png)
 
 *But despite the total number of devices (2) it can be activated on 1 desktop and 1 mobile device.*
 > All the outdated licenses have a “legacy” badge in the AdGuard account. And they are automatically converted to a new type when you either renew or upgrade them. But there are some nuances. Let's see which licenses can be converted to a new type and how to do it.
@@ -48,33 +48,33 @@ For example, this is how the 1+1 key looks like:
 
 You can check this on the [renewal page](https://adguard.com/renew.html) or in your [AdGuard account](https://my.adguard.com/main.html):
 
-![Upgrade](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_en.png)
+![Upgrade](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_en.png)
 > Go to “My licenses” tab and check what actions are available to you for each specific key. Below we will explain with specific examples.
 
 ### Licenses for 1/2/3 devices
 
 **Yearly** licenses for 1, 2, 3 devices can be converted to either Personal or Family:
 
-![Upgrade or renew](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/3.yearly_en.png)
+![Upgrade or renew](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/3.yearly_en.png)
 > Choose based on how many devices you need to protect.
 
 Instead of renewal you can switch to Lifetime:
 
-![Lifetime](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/4.lifetime_en.png)
+![Lifetime](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/4.lifetime_en.png)
 
 **Lifetime** licenses can only be converted to Family (9 devices) due to technical limitations:
 
-![Lifetime upgrade](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/5.lifetimeupgrade_en.png)
+![Lifetime upgrade](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/5.lifetimeupgrade_en.png)
 
 ### Licenses for 4+ devices (up to 9)
 
 **Yearly** keys of this configuration can only be converted into a Family license:
 
-![Yearly license for 4 devices](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/6.yearly4+devices_en.png)
+![Yearly license for 4 devices](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/6.yearly4+devices_en.png)
 
 **Lifetime** licenses for 4 or more devices cannot be upgraded due to technical limitation:
 
-![Lifetime license for 4 devices](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/7.lifetime4+devices_en.png)
+![Lifetime license for 4 devices](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/7.lifetime4+devices_en.png)
 
 ### Licenses for 9+ devices
 

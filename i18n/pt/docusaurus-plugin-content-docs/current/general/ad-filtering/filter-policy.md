@@ -5,7 +5,7 @@ sidebar_position: 6
 
 When discussing AdGuard ad filters, one topic often comes up – whether AdGuard should block this or that ad. By setting the rules, we stick to specific criteria that are very similar to [EasyList Policy](https://easylist.to/pages/policy.html), which we find correct and appropriate. However, we have made some changes to it.
 
-![To filter or not to filter](https://cdn.adguard.com/public/Adguard/Common/page_filtering.png)
+![To filter or not to filter](https://cdn.adtidy.org/public/Adguard/Common/page_filtering.png)
 
 ## Terminology
 

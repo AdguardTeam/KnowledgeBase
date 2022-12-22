@@ -1,5 +1,5 @@
 ---
-title: 本地 adguard.com 域
+title: Local.adguard.org domain
 sidebar_position: 3
 ---
 

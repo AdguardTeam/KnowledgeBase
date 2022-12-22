@@ -26,7 +26,7 @@ sidebar_position: 5
 
 #### Блокировка по имени домена
 
-![Блокировка по имени домена](https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/0_blocking_domain.svg)
+![Блокировка по имени домена](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/0_blocking_domain.svg)
 
 **Это правило блокирует:**
 
@@ -41,7 +41,7 @@ sidebar_position: 5
 
 #### Блокировка конкретного адреса
 
-![Блокировка конкретного адреса](https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/1_exact_address.svg)
+![Блокировка конкретного адреса](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/1_exact_address.svg)
 
 **Это правило блокирует:**
 
@@ -55,7 +55,7 @@ sidebar_position: 5
 
 Правила фильтрации поддерживают множество модификаторов, которые позволяют вам точно настраивать поведение правила. Вот пример правила с некоторыми простыми модификаторами.
 
-![Модификаторы базовых правил](https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/2_basic_rule_options.svg)
+![Модификаторы базовых правил](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/2_basic_rule_options.svg)
 
 **Это правило блокирует:**
 
@@ -68,7 +68,7 @@ sidebar_position: 5
 
 #### Разблокировка адреса
 
-![](https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/3_basic_rule_exception.svg)
+![](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/3_basic_exception.svg)
 
 **Это правило разблокирует:**
 
@@ -78,7 +78,7 @@ sidebar_position: 5
 
 #### Разблокировка всего сайта
 
-![Разблокировка всего](https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/4_unblock_entire_website.svg)
+![Разблокировка всего](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/4_unblock_entire_website.svg)
 
 **Это правило разблокирует**
 
@@ -87,7 +87,7 @@ sidebar_position: 5
 
 #### Косметические правила
 
-![Косметические правила](https://cdn.adguard.com/public/Adguard/kb/ru/rules_syntax/5_cosmetic_rules.svg)
+![Косметические правила](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/5_cosmetic_rules.svg)
 
 Косметические правила применяются с использованием CSS — специального языка программирования, который понимает каждый браузер. В основном, он добавляет новый стиль CSS на сайт, цель которого — скрыть определённые элементы. Вы можете узнать больше о CSS в целом [здесь](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors).
 
@@ -95,15 +95,15 @@ sidebar_position: 5
 
 **Популярные CSS-селекторы**
 
-| Имя                          | CSS-селектор                     | Описание                                                                                                                                                                                        |
-| ---------------------------- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ID selector                  | `#banners`                       | Соответствует всем элементам с атрибутом i`d`, равным `banners`.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_id_selector.png)                                   |
-| Class selector               | `.banners`                       | Соответствует всем элементам типа `class`, содержащих `banners`.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_class_selector.png)                                |
-| Attribute selector           | `div[class="banners"]`           | Соответствует всем `div` элементам с атрибутом `class `, **равным** `banners`.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_class_attr.png)                      |
-| Attribute substring selector | `div[class^="advert1"]`          | Соответствует всем `div` элементам, атрибут `class` которых **начинается** с `advert1`.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_class_attr_start.png)       |
-| Attribute substring selector | `div[class$="banners_ads"]`      | Соответствует всем `div` элементам, атрибут `class` которых **заканчивается** на `banners_ads`.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_class_attr_end.png) |
-| Attribute substring selector | `a[href^="http://example.com/"]` | Соответствует всем ссылкам, загруженным с домена `http://example.com/`.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_attr_start.png)                             |
-| Attribute selector           | `a[href="http://example.com/"]`  | Соответствует всем ссылкам **конкретно** `http://example.com/`.<br/>![](https://cdn.adguard.com/public/Adguard/kb/en/rules_syntax/css_attr_equal.png)                                     |
+| Имя                          | CSS-селектор                     | Описание                                                                                                                                                                                       |
+| ---------------------------- | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ID selector                  | `#banners`                       | Соответствует всем элементам с атрибутом i`d`, равным `banners`.<br/>![](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_id_selector.png)                                   |
+| Class selector               | `.banners`                       | Соответствует всем элементам типа `class`, содержащих `banners`.<br/>![](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_selector.png)                                |
+| Attribute selector           | `div[class="banners"]`           | Соответствует всем `div` элементам с атрибутом `class `, **равным** `banners`.<br/>![](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_attr.png)                      |
+| Attribute substring selector | `div[class^="advert1"]`          | Соответствует всем `div` элементам, атрибут `class` которых **начинается** с `advert1`.<br/>![](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_attr_start.png)       |
+| Attribute substring selector | `div[class$="banners_ads"]`      | Соответствует всем `div` элементам, атрибут `class` которых **заканчивается** на `banners_ads`.<br/>![](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_attr_end.png) |
+| Attribute substring selector | `a[href^="http://example.com/"]` | Соответствует всем ссылкам, загруженным с домена `http://example.com/`.<br/>![](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_attr_start.png)                             |
+| Attribute selector           | `a[href="http://example.com/"]`  | Соответствует всем ссылкам **конкретно** `http://example.com/`.<br/>![](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_attr_equal.png)                                     |
 
 ## Ограничения
 

@@ -9,7 +9,7 @@ System-wide filtering means blocking ads and trackers beyond the Safari browser,
 
 在 iOS 上，仅有一个方式允许我们在系统层面上拦截广告和跟踪器，就是使用 [DNS 过滤](https://adguard-dns.io/kb/general/dns-filtering/)。 首先，您需要启用 DNS 保护。 以启用 DNS 保护，请打开 **AdGuard iOS 版的设置** —> 启用**「DNS 保护」**。
 
-![DNS 保护屏幕](https://cdn.adguard.com/public/Adguard/Blog/ios_dns_protection.PNG)
+![DNS protection screen *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_dns_protection.PNG)
 
 到了这一步，如您的目标是在系统层面上拦截广告和跟踪器，那么您有两个选择：
 
@@ -21,7 +21,7 @@ System-wide filtering means blocking ads and trackers beyond the Safari browser,
 * 您可亲自选择任何 DNS 服务器，并不需要使用某一个特定的拦截服务器。
 * 您可以同时添加几个 DNS 过滤器和/或 Hosts 文件，但是您不能同时使用几个 DNS 服务器。
 
-![DNS 过滤工作原理](https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_en.png)
+![DNS 过滤工作原理](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_en.png)
 
 ## 如何添加 DNS 过滤器/Hosts 文件
 
@@ -30,9 +30,9 @@ System-wide filtering means blocking ads and trackers beyond the Safari browser,
 1. 打开 **AdGuard iOS 版的设置** —>**「通用」**。
 2. 启用**高级模式**。 The *Advanced settings* tab will appear. 打开它。
 
-![打开 AdGuard 设置并启用高级模式](https://cdn.adguard.com/public/Adguard/Release_notes/iOS/v4.0/advanced_mode_en.jpg)
+![Open AdGuard Settings and enable Advanced mode *mobile_border](https://cdn.adtidy.org/public/Adguard/Release_notes/iOS/v4.0/advanced_mode_en.jpg)
 
-![高级设置屏幕](https://cdn.adguard.com/public/Adguard/Blog/ios_advanced_settings.PNG)
+![Advanced settings screen *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_advanced_settings.PNG)
 
 > 温馨提示：我们不推荐您更改其它**高级设置**标签里的设置，特别是**低级设置**。 有些设置可能会导致互联网连接中断或会造成您的隐私安全被泄露，因此您要保持警惕。 下面的内容讲述的是，为了添加 AdGuard DNS 过滤器需要进行的步骤。
 
@@ -40,6 +40,6 @@ System-wide filtering means blocking ads and trackers beyond the Safari browser,
 4. 打开 **AdGuard iOS 版的设置** —>**「DNS 保护」**—>**「DNS 过滤」**（仅在**高级模式**开启时使用）—>**「DNS 过滤器」**。
 5. 点击**「添加过滤器」**按钮,在过滤器的 URL 字段里粘贴上述链接并点击「下一步」。
 
-![添加 DNS 过滤器的屏幕](https://cdn.adguard.com/public/Adguard/Blog/ios_adding_a_filter.PNG)
+![Adding a DNS filter screen *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_adding_a_filter.PNG)
 
 > 通过在第三步粘贴另一个链接，您就可以使用同样的方式添加任何其它的 DNS 过滤器。 [在这里](https://filterlists.com)您可以找到各种过滤器以及它们的链接。

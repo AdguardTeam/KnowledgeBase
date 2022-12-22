@@ -14,15 +14,15 @@ sidebar_position: 4
 
 2. Перейдите в раздел **Для разработчиков** и нажмите **Отчёт об ошибке**.
 
-![Отчёт об ошибке](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
+![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
 
 3. Выберите нужный тип отчета об ошибке и нажмите **Отправить отчёт**. >Через некоторое время вы получите уведомление о том, что отчёт об ошибке готов (см. рисунок 2).
 
-![Отчёт об ошибке](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
+![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
 
 4. Чтобы поделиться отчётом об ошибке, коснитесь уведомления.
 
-![Отчёт об ошибке](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
+![Bug report *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
 
 5. Отправьте этот лог нашей команде поддержки.
 > Примечание: наша команда поддержки обработает ваш тикет намного быстрее, если вы укажете номер тикета HelpDesk или номер ошибки на GitHub в своём сообщении.
