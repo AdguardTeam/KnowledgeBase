@@ -1611,7 +1611,7 @@ The idea of extended capabilities is an opportunity to match DOM elements with s
 
 **Syntax**
 
-Regardless of the CSS pseudo-classes you are using in the rule, you can use special markers to force these rules applying by ExtendedCss. It is recommended to use these markers for all extended CSS cosmetic rules so that it was easier to find them.
+Regardless of the CSS pseudo-classes you are using in the rule, you can use special markers to force applying these rules by ExtendedCss. It is recommended to use these markers for all extended CSS cosmetic rules so that it was easier to find them.
 
 The syntax for extended CSS rules:
 
