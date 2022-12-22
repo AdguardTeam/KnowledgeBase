@@ -1647,12 +1647,13 @@ Learn more about [how to debug extended selectors](#selectors-debugging-mode).
 
 #### Pseudo-class `:has()` {#extended-css-has}
 
-Draft CSS 4.0 specification describes [pseudo-class `:has()`](https://www.w3.org/TR/selectors-4/#relational). Unfortunately, [it is not yet supported](https://caniuse.com/css-has) by all popular browsers.
+Draft CSS 4.0 specification describes the [`:has()` pseudo-class](https://www.w3.org/TR/selectors-4/#relational). Unfortunately, [it is not yet supported](https://caniuse.com/css-has) by all popular browsers.
 
 > **Note**
 >
-> Rules with `:has()` pseudo-class should use [native implementation of `:has()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:has) if rules use `##` marker and it is possible, i.e. with no other extended pseudo-classes inside. To force ExtendedCss applying of rules with `:has()`, use `#?#`/`#$?#` marker obviously.
+> Rules with the `:has()` pseudo-class should use [native implementation of `:has()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:has) if they use `##` marker and if it is possible, i.e. with no other extended pseudo-classes inside. To force applying of ExtendedCss rules with `:has()`, use `#?#`/`#$?#` marker explicitly.
 
+<!-- TODO: describe :if() alias as deprecated -->
 > **Aliases**
 >
 > Synonyms `:-abp-has` and `:if` are supported by ExtendedCss for better compatibility.
@@ -1664,21 +1665,21 @@ Draft CSS 4.0 specification describes [pseudo-class `:has()`](https://www.w3.org
 - `target` — optional, standard or extended css selector, can be missed for checking *any* element
 - `selector` — required, standard or extended css selector
 
-Pseudo-class `:has()` selects the `target` elements that includes the elements that fit to the `selector`. Also `selector` can start with a combinator. Selector list can be set in `selector` as well.
+The pseudo-class `:has()` selects the `target` elements that fit to the `selector`. Also the `selector` can start with a combinator. A selector list can be set in the `selector` as well.
 
 ##### `:has()` limitations {#extended-css-has-limitations}
 
-> Usage of `:has()` pseudo-class is [restricted for some cases (2, 3)](https://bugs.chromium.org/p/chromium/issues/detail?id=669058#c54):
+> Usage of the `:has()` pseudo-class is [restricted for some cases (2, 3)](https://bugs.chromium.org/p/chromium/issues/detail?id=669058#c54):
 > - disallow `:has()` inside the pseudos accepting only compound selectors;
 > - disallow `:has()` after regular pseudo-elements.
 
 > Native `:has()` pseudo-class does not allow `:has()`, `:is()`, `:where()` inside `:has()` argument to avoid increasing the `:has()` invalidation complexity ([case 1](https://bugs.chromium.org/p/chromium/issues/detail?id=669058#c54)). But ExtendedCss did not have such limitation earlier and filter lists already contain such rules, so we will not add this limitation in ExtendedCss and allow to use `:has()` inside `:has()` as it was possible before. To use it, just force ExtendedCss usage by setting `#?#`/`#$?#` rule marker.
 
-> Native implementation does not allow any usage of `:scope` inside `:has()` argument ([[1]](https://github.com/w3c/csswg-drafts/issues/7211), [[2]](https://github.com/w3c/csswg-drafts/issues/6399)). Still there some such rules in filter lists: `div:has(:scope > a)` which we will continue to support simply converting them to `div:has(> a)` as it was earlier.
+> Native implementation does not allow any usage of `:scope` inside `:has()` argument ([[1]](https://github.com/w3c/csswg-drafts/issues/7211), [[2]](https://github.com/w3c/csswg-drafts/issues/6399)). Still, there are some such rules in filter lists: `div:has(:scope > a)` which we will continue to support by simply converting them to `div:has(> a)`, as it used to be done previously.
 
 **Examples**
 
-`div:has(.banner)` selects all `div` elements, which **includes** an element with the `banner` class:
+`div:has(.banner)` selects all `div` elements which **include** an element with the `banner` class:
 ```html
 <!-- HTML code -->
 <div>Not selected</div>
@@ -1687,7 +1688,7 @@ Pseudo-class `:has()` selects the `target` elements that includes the elements t
 </div>
 ```
 
-`div:has(> .banner)` selects all `div` elements, which **includes** an `banner` class element as a *direct child* of `div`:
+`div:has(> .banner)` selects all `div` elements which **include** an `banner` class element as a *direct child* of `div`:
 ```html
 <!-- HTML code -->
 <div>Not selected</div>
@@ -1714,7 +1715,7 @@ Pseudo-class `:has()` selects the `target` elements that includes the elements t
 <p class="banner">general sibling</p>
 ```
 
-`div:has(span, .banner)` selects all `div` elements, which **includes both** `span` element and `banner` class element:
+`div:has(span, .banner)` selects all `div` elements which **include both** `span` element and `banner` class element:
 ```html
 <!-- HTML code -->
 <div>Not selected</div>
