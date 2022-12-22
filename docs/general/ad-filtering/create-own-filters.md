@@ -1729,6 +1729,7 @@ A selector list can be set in `selector` as well. In this case **all** selectors
 
 > [Backward compatible syntax for `:has()`](https://github.com/AdguardTeam/ExtendedCss#-old-syntax-for-pseudo-class-has) is supported but not recommended.
 
+<!-- TODO: describe :if-not() as deprecated and move down -->
 ##### Pseudo-class `:if-not()`
 
 This pseudo-class is basically a shortcut for `:not(:has())`. It is supported by ExtendedCss for better compatibility with some filters subscriptions, but it is not recommended to use it in AdGuard filters. The rationale is that one day browsers will add `:has` native support, but it will never happen to this pseudo-class.
