@@ -7,7 +7,7 @@ sidebar_position: 5
 
 If you suspect your computer is infected by malware or viruses, first of all you can inspect your computer with utilities from leading antiviruses.
 
-**Free antivirus utilities**
+## Free antivirus utilities** {#free-antivirus}
 
 There are many of them and you can use any one you prefer, for example:
 
@@ -17,9 +17,9 @@ If this check with antivirus utilities revealed nothing, but the computer still 
 
 ## How to clean your system from Adware {#adware}
 
-On the Internet, you can find a lot of applications that are aimed at fighting this problem. You can use any utility you like. But we strongly recommend using **[AdwareCleaner](https://www.malwarebytes.com/adwcleaner)** by **Malwarebytes**. This application is quite easy to use and you will be able to handle it by yourself.
+On the Internet, you can find a lot of applications that are aimed at fighting this problem. You can use any utility you like. But we strongly recommend using **[AdwareCleaner](https://www.malwarebytes.com/adwcleaner)** by **Malwarebytes**, **[Avast One](https://www.avast.com/c-adware-removal-tool)** by **Avast**, or **[Adaware]**(https://www.adaware.com). These adware scanners are quite easy to use and you will be able to handle them by yourself.
 
-After the application has been downloaded and successfully installed, you should take the following steps:
+Let's take AdwareCleaner as an example. After the application has been downloaded and successfully installed, take the following steps:
 
 1) Start the application and click **Scan now**.
 
@@ -39,7 +39,7 @@ After the application has been downloaded and successfully installed, you should
 
 ![adware4 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware4.png)
 
-If it didn’t help, temporary disable all extensions and some other settings in the browser according to [these instructions](#instructions). 
+If it didn’t help, temporary disable all extensions and some other settings in the browser according to [these instructions](#instructions).
 
 If disabling of settings and extensions does not help, try to [recreate shortcuts of your browsers](#shortcuts).
 
@@ -60,23 +60,3 @@ Below are the instructions on how to disable settings and extensions for the mos
 Very often, malware and adware programs install their homepage in a very simple way — they substitute your browser's desktop shortcut, taskbar and *Start* menu items.
 
 The simplest solution in this case is to manually delete all the shortcuts and recreate them by yourself.
-
-### How to remove sindex.biz {#sindex.biz}
-
-If instead of the home page, you always open sindex.biz, it’s likely that shortcuts for your browser(s) have been substituted. Try to [recreate the shortcuts](#shortcuts) to get rid of this problem.
-
-### How to remove Mobogenie {#mobogenie}
-
-To get rid of this software, check your computer with a free utility (e.g. [Dr.Web CureIt!](http://www.freedrweb.com/cureit/)).
-
-### How to remove ads by BetterSurf {#bettersurf}
-
-**What is BetterSurf?**
-
-BetterSurf is an advertising program that builds itself into your browser. This program puts up its ads on all websites that you visit. Externally such ads look quite ordinary, and you can easily not notice them among the regular banners posted by this site. But with a keen eye you will be able to easily recognize these ads as ads that "weren’t here before". For example, it's extremely easy to notice them on websites like Facebook or Twitter.
-
-To get rid of this program, use the [following instructions](http://malwaretips.com/blogs/bettersurf-virus-removal/).
-
-### How to remove Rvzr-a.akamaihd.net {#rvzr}
-
-If you meet a pop-up by *Rvzr-a.akamaihd.net*, then most likely your computer is infected with malicious adware. You can find instructions for removing it at [this link](http://malwaretips.com/blogs/rvzr-a-akamaihd-net-virus/).
