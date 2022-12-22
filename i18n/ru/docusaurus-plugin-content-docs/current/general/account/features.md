@@ -19,7 +19,7 @@ sidebar_position: 2
 
 В разделе *Лицензии* вы можете управлять своими лицензиями и привязанными к ним устройствами.
 
-[AdGuard licenses](/general/license/what-is) can be:
+[AdGuard licenses](../../license/what-is) can be:
 * привязанной и непривязанной,
 * расширенной,
 * улучшенной,

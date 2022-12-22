@@ -11,7 +11,7 @@ sidebar_position: 3
 
 ## Что оно делает
 
-По умолчанию, Safari предоставляет блокировщикам контента только базовые инструменты. Эти инструменты не позволяют добиться уровня блокировки, который доступен блокировщикам на других операционных системах (Windows, Mac, Android). Например, приложения AdGuard для других платформ могут использовать такие мощные средства борьбы против рекламы, как [CSS-правила](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [CSS-селекторы](/general/ad-filtering/create-own-filters#extended-css-selectors) и [скриптлеты](/general/ad-filtering/create-own-filters#scriptlets). К сожалению, эти инструменты совершенно незаменимы при работе со сложной рекламой, такой как, например, видеореклама в YouTube.
+По умолчанию, Safari предоставляет блокировщикам контента только базовые инструменты. Эти инструменты не позволяют добиться уровня блокировки, который доступен блокировщикам на других операционных системах (Windows, Mac, Android). For example, AdGuard apps on other platforms can use such effective weapons against ads as [CSS rules](/general/ad-filtering/create-own-filters#cosmetic-css-rules), [CSS selectors](/general/ad-filtering/create-own-filters#extended-css-selectors), and [scriptlets](/general/ad-filtering/create-own-filters#scriptlets). К сожалению, эти инструменты совершенно незаменимы при работе со сложной рекламой, такой как, например, видеореклама в YouTube.
 
 Веб-расширение AdGuard для Safari дополняет AdGuard, давая ему возможность применять все эти типы правил фильтрации.
 
@@ -34,7 +34,7 @@ sidebar_position: 3
 
 > Веб-расширение AdGuard для Safari значительно улучшает качество блокировки рекламы, поэтому мы рекомендуем включить его на всех сайтах.
 
-Веб-расширение не является самостоятельным приложением и требует наличия AdGuard для iOS. Если на вашем устройстве не установлен AdGuard для iOS, пожалуйста, сначала [установите его](/adguard-for-ios/installation) и выполните первый запуск приложения, чтобы подготовить его к работе.
+Веб-расширение не является самостоятельным приложением и требует наличия AdGuard для iOS. If you don't have AdGuard for iOS installed on your device, please [install it first](../installation) and complete the onboarding process to prepare it for work.
 
 После того, как вы выполнили эти действия, откройте раздел *Настройки > Safari > Расширения*.
 

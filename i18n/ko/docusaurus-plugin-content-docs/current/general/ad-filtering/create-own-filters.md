@@ -1632,7 +1632,7 @@ Pseudo-class `:has()` selects the elements that includes the elements that fit t
 Selecting all `div` elements, which contain an element with the `banner` class:
 
 ```html
-<!-- HTML code -->
+<!-- HTML code -→
 <div>Do not select this div</div>
 <div>Select this div<span class="banner"></span></div>
 ```
@@ -1677,7 +1677,7 @@ Backward compatible syntax:
 
 Selecting all `div` elements, which contain text `banner`:
 ```html
-<!-- HTML code -->
+<!-- HTML code -→
 <div>Do not select this div</div>
 <div id="selected">Select this div (banner)</div>
 <div>Do not select this div <div class="banner"></div></div>
@@ -1735,7 +1735,7 @@ selector[-ext-matches-css-before="property-name ":" pattern"]
 
 Selecting all `div` elements which contain pseudo-class `::before` with specified content:
 ```html
-<!-- HTML code -->
+<!-- HTML code -→
 <style type="text/css">
     #to-be-blocked::before {
         content: "Block me"
@@ -1778,7 +1778,7 @@ selector:matches-attr("name"[="value"])
 **Examples**
 
 ```html
-<!-- HTML code -->
+<!-- HTML code -→
 <div id="targer1" class="matches-attr" hsd4jkf-link="ssdgsg-banner_240x400"></div>
 
 <div id="targer2" class="has matches-attr">

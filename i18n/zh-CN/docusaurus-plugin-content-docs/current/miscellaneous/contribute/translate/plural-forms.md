@@ -74,7 +74,7 @@ Also, you can get information about plural forms in the [Unicode Common Locale D
 
 如果您的语言名词具有三种复数形式（正如波兰语)，请用逗号分隔每一个复数形式。
 
-`hour, hours --> godzinę, godziny, godzin`
+`hour, hours -→ godzinę, godziny, godzin`
 
 如果一个名词只有两种形式，则无需重复写同一形式（*通常仅适用于这种带有复数形式的字符串！*）。 但是，如果您把同一个形式重写两次也不会出错。
 

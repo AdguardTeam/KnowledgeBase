@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## AdGuardライセンスとは？
 
-A license is permission to use the AdGuard product, provided in accordance with the End User License Agreement. AdGuard licenses exist in the form of license keys, activation codes, and product cards in the user's [AdGuard account](/general/account/register).
+A license is permission to use the AdGuard product, provided in accordance with the End User License Agreement. AdGuard licenses exist in the form of license keys, activation codes, and product cards in the user's [AdGuard account](../../account/register).
 
 Some licenses need to be purchased (e.g. AdGuard Ad Blocker Personal), some are free and limited by term (e.g. trial licenses of AdGuard apps) or have a limited functionality (e.g. AdGuard for iOS or AdGuard Browser extension). Here's the list of all types of AdGuard Ad Blocker licenses.
 
@@ -22,7 +22,7 @@ Some licenses need to be purchased (e.g. AdGuard Ad Blocker Personal), some are 
 * ファミリー（デバイス9台まで）
 * iOS用「AdGuard Pro」アプリ（デバイス1台）
 
-> To use your license on a device, log in to your [AdGuard account](/general/account/features) on it. To extend the device limit, you can [upgrade](../activation#how-to-upgrade-a-license) your license.
+> To use your license on a device, log in to your [AdGuard account](../../account/features) on it. To extend the device limit, you can [upgrade](../activation#how-to-upgrade-a-license) your license.
 
 ## AdGuardライセンスキーとは？{#license-key}
 
@@ -35,7 +35,7 @@ Some licenses need to be purchased (e.g. AdGuard Ad Blocker Personal), some are 
 
 ## ライセンスキーを復元する方法
 
-You can easily check which license keys belong to you in your [AdGuard Account](/general/account/register).
+You can easily check which license keys belong to you in your [AdGuard Account](../../account/register).
 
 アカウントとライセンスキーはAdGuard購入時にご入力いただいたメールアドレスで紐付けされます。
 

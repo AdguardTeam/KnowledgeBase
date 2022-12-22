@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## Что такое лицензия AdGuard
 
-Лицензия — это разрешение на использование продукта AdGuard, предоставляемое в соответствии с Лицензионным соглашением. Лицензии AdGuard существуют в виде лицензионных ключей, кодов активации и карточек продуктов в пользовательской [учётной записи AdGuard](/general/account/register).
+Лицензия — это разрешение на использование продукта AdGuard, предоставляемое в соответствии с Лицензионным соглашением. AdGuard licenses exist in the form of license keys, activation codes, and product cards in the user's [AdGuard account](../../account/register).
 
 Некоторые лицензии необходимо приобрести (например, Персональную лицензию на Блокировщик рекламы AdGuard), некоторые из них бесплатны и ограничены по сроку действия (например, пробные лицензии приложений AdGuard) или имеют ограниченную функциональность (например, AdGuard для iOS или Браузерное расширение AdGuard). Вот список всех типов лицензий Блокировщика рекламы AdGuard.
 
@@ -22,7 +22,7 @@ sidebar_position: 1
 * Семейная: до 9 устройств,
 * AdGuard Pro для iOS: одно устройство.
 
-> Чтобы использовать лицензию на устройстве, войдите на нём в свой [аккаунт AdGuard](/general/account/features). Чтобы увеличить лимит устройств, вы можете [улучшить](../activation#how-to-upgrade-a-license) лицензию.
+> To use your license on a device, log in to your [AdGuard account](../../account/features) on it. Чтобы увеличить лимит устройств, вы можете [улучшить](../activation#how-to-upgrade-a-license) лицензию.
 
 ## Что такое лицензионный ключ{#license-key}
 
@@ -35,7 +35,7 @@ sidebar_position: 1
 
 ## Как восстановить лицензионный ключ
 
-В [личном кабинете AdGuard](/general/account/register) вы можете легко проверить, какие лицензионные ключи принадлежат вам.
+You can easily check which license keys belong to you in your [AdGuard Account](../../account/register).
 
 Лицензионный ключ привязан к вашему аккаунту через адрес электронной почты, который вы использовали для покупки AdGuard.
 

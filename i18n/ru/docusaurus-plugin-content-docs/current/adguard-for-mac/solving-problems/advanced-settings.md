@@ -5,8 +5,7 @@ sidebar_position: 9
 
 ## Как перейти к расширенным настройкам
 
-> Изменение *Низкоуровневых настроек* может вызвать проблемы с производительностью AdGuard, нарушить подключение к интернету или поставить под угрозу вашу безопасность и конфиденциальность. Открывайте этот раздел, только если вы уверены в своих действиях или наша команда поддержки попросила вас об этом.  
-> Чтобы перейти к *Расширенным настройкам*, кликните иконку AdGuard в трее → иконку шестерёнки → Дополнительно → Расширенные настройки.
+> Изменение *Низкоуровневых настроек* может вызвать проблемы с производительностью AdGuard, нарушить подключение к интернету или поставить под угрозу вашу безопасность и конфиденциальность. You should only open this section if you are sure of what you are doing or our support team has asked you to do it. To go to *Advanced settings*, follow this route: the AdGuard icon at the tray menu → the gear icon → Advanced → Advanced settings.
 
 ## Расширенные настройки
 
@@ -30,7 +29,7 @@ sidebar_position: 9
 
 Здесь можно запретить AdGuard использовать маршрут по умолчанию, который включён в режиме *Сетевого расширения* на macOS Monterey. AdGuard использует маршрут по умолчанию, чтобы отключить Частный узел iCloud и Защиту конфиденциальности в Почте, так как не может работать с ними одновременно.
 
-You will find more information about the problem [in this article](https://adguard.com/kb/adguard-for-mac/solving-problems/icloud-private-relay).
+You will find more information about the problem [in this article](../icloud-private-relay).
 
 `network.extension.dns.redirect.exclude.bundleids`
 
@@ -79,13 +78,13 @@ You will find more information about the problem [in this article](https://adgua
 
 Здесь вы можете указать тип ответа DNS-сервера на заблокированные запросы, соответствующие правилам в стиле блокировщика рекламы.
 
-0 — отвечать кодом REFUSED 1 — отвечать кодом NXDOMAIN 2 — отвечать 0.0.0.0 или адресами, указанными в `dns.proxy.blocking.response.IPv4.address` и/или `dns.proxy.blocking.response.IPv6.address`
+0 — respond with REFUSED 1 — respond with NXDOMAIN 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
 
 `dns.proxy.hostrules.blocking.mode`
 
 Здесь вы можете указать тип ответа DNS-сервера на заблокированные запросы, соответствующие правилам hosts:
 
-0 — отвечать кодом REFUSED 1 — отвечать кодом NXDOMAIN 2 — отвечать 0.0.0.0 или адресами, указанными в `dns.proxy.blocking.response.IPv4.address` и/или `dns.proxy.blocking.response.IPv6.address`
+0 — respond with REFUSED 1 — respond with NXDOMAIN 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
 
 `dns.proxy.blocking.response.IPv4.address`
 

@@ -15,7 +15,7 @@ sidebar_position: 3
 
 ### Совместимость с основным приложением
 
-Если вы привыкли использовать предыдущее расширение блокировщика рекламы AdGuard [в режиме интеграции](/adguard-browser-extension/integration-mode), вам может понравиться решение, которое мы разработали для нового Браузерного помощника.
+If you got into the habit of using our previous AdGuard Ad Blocker extension [in Integration mode](/adguard-browser-extension/integration-mode), you may like the solution that we have developed for the new Browser Assistant.
 
 Справочная информация:
 

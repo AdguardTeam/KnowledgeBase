@@ -155,7 +155,7 @@ To create a HAR file in Safari:
 
 6. Now turn `pref.har.capture` off again.
 
-7. Go Back, then tap on ***Export logs and system info*** -> ***Save***.
+7. Go Back, then tap on ***Export logs and system info*** → ***Save***.
 
 ## Windows {#windows}
 
@@ -165,6 +165,6 @@ To create a HAR file in Safari:
 
 3. Reproduce the problem.
 
-4. Go to ***General settings*** -> Click on ***Export logs*** -> ***Save***.
+4. Go to ***General settings*** → Click on ***Export logs*** → ***Save***.
 
 5. Disable HAR writing by unchecking the corresponding box.

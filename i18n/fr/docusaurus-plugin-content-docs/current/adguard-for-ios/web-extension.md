@@ -34,7 +34,7 @@ You will see the following list of options:
 
 > AdGuard's Safari Web extension greatly improves the ad blocking quality, so we recommend enabling it on all sites.
 
-Web extension is not a standalone tool and requires AdGuard for iOS. If you don't have AdGuard for iOS installed on your device, please [install it first](/adguard-for-ios/installation) and complete the onboarding process to prepare it for work.
+Web extension is not a standalone tool and requires AdGuard for iOS. If you don't have AdGuard for iOS installed on your device, please [install it first](../installation) and complete the onboarding process to prepare it for work.
 
 Once done, open *Settings > Safari > Extensions*.
 
