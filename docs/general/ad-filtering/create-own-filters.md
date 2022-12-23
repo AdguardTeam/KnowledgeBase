@@ -1637,7 +1637,7 @@ Learn more about [how to debug extended selectors](#selectors-debugging-mode).
 >
 > Some pseudo-classes do not require selector before it. Still adding a [universal selector](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*` makes an extended selector easier to read, even though it has no effect on the matching behavior. So selector `#block :has(> .inner)` works exactly like `#block *:has(> .inner)` but second one is more obvious.
 >
-> Pseudo-class names are case-insensitive, e.g. `:HAS()` will work as `:has()`. Still the lower-case names are used commonly.
+> Pseudo-class names are case-insensitive, e.g. `:HAS()` works as `:has()`. Still the lower-case names are used commonly.
 
 #### ExtendedCss Limitations {#extended-css-limitations}
 
@@ -1679,9 +1679,9 @@ A selector list can be set in `selector` as well. In this case **all** selectors
 > - disallow `:has()` inside the pseudos accepting only compound selectors;
 > - disallow `:has()` after regular pseudo-elements.
 
-> Native `:has()` pseudo-class does not allow `:has()`, `:is()`, `:where()` inside `:has()` argument to avoid increasing the `:has()` invalidation complexity ([case 1](https://bugs.chromium.org/p/chromium/issues/detail?id=669058#c54)). But ExtendedCss did not have such limitation earlier and filter lists already contain such rules, so we will not add this limitation in ExtendedCss and allow to use `:has()` inside `:has()` as it was possible before. To use it, just force ExtendedCss usage by setting `#?#`/`#$?#` rule marker.
+> Native `:has()` pseudo-class does not allow `:has()`, `:is()`, `:where()` inside `:has()` argument to avoid increasing the `:has()` invalidation complexity ([case 1](https://bugs.chromium.org/p/chromium/issues/detail?id=669058#c54)). But ExtendedCss did not have such limitation earlier and filter lists already contain such rules, so we have not added this limitation to ExtendedCss and allow to use `:has()` inside `:has()` as it was possible before. To use it, just force ExtendedCss usage by setting `#?#`/`#$?#` rule marker.
 
-> Native implementation does not allow any usage of `:scope` inside `:has()` argument ([[1]](https://github.com/w3c/csswg-drafts/issues/7211), [[2]](https://github.com/w3c/csswg-drafts/issues/6399)). Still, there are some such rules in filter lists: `div:has(:scope > a)` which we will continue to support by simply converting them to `div:has(> a)`, as it used to be done previously.
+> Native implementation does not allow any usage of `:scope` inside `:has()` argument ([[1]](https://github.com/w3c/csswg-drafts/issues/7211), [[2]](https://github.com/w3c/csswg-drafts/issues/6399)). Still, there are some such rules in filter lists: `div:has(:scope > a)` which we continue to support by simply converting them to `div:has(> a)`, as it used to be done previously.
 
 **Examples**
 
@@ -1784,7 +1784,7 @@ div:contains(/it .* banner/gi)
 
 > **Note**
 >
-> Only the `div` with `id=match` will be selected because the next element does not contain any text, and `banner` is a part of code, not a text.
+> Only the `div` with `id=match` is selected because the next element does not contain any text, and `banner` is a part of code, not a text.
 
 <!-- FIXME: mention old syntax compatibility -->
 
@@ -2108,7 +2108,7 @@ selector { remove: true; }
 
 > For applying the `:remove()` pseudo-class to any element [universal selector](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*` should be used. Otherwise such extended selector may be considered as invalid, e.g. `.banner > :remove()` is not valid for removing any child element of `banner` class element, so it should look like `.banner > *:remove()`.
 
-> If the `:remove()` pseudo-class or the `remove` pseudo-property is used, all style properties will be ignored except of the [`debug` pseudo-property](#selectors-debug-mode).
+> If the `:remove()` pseudo-class or the `remove` pseudo-property is used, all style properties are ignored except of the [`debug` pseudo-property](#selectors-debug-mode).
 
 
 **Examples**
@@ -2172,7 +2172,7 @@ but `:is(*:not([class]):has(> .banner))` can be used instead of it to select the
 
 #### Pseudo-class `:not()` {#extended-css-not}
 
-The `:not()` pseudo-class allows to select elements which are *not matched* by selectors passed as arg. Invalid argument selectors are not allowed and error will be thrown. Our implementation of the [`:not()` pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/:not).
+The `:not()` pseudo-class allows to select elements which are *not matched* by selectors passed as arg. Invalid argument selectors are not allowed and error is to be thrown. Our implementation of the [`:not()` pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/:not).
 
 **Syntax**
 
@@ -2186,7 +2186,7 @@ The `:not()` pseudo-class allows to select elements which are *not matched* by s
 
 > Rules with the `:not()` pseudo-class should use the [native implementation of `:not()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:not) if rules use `##` marker and it is possible, i.e. with no other extended selectors inside. To force applying ExtendedCss rules with `:not()`, use `#?#`/`#$?#` marker explicitly.
 
-> If the `:not()` pseudo-class argument `selectors` is an extended selectors, due to the way how the `:not()` pseudo-class is implemented in ExtendedCss v2.0, it is impossible to apply it to the top DOM node which is `html`, i.e. `#?#html:not(<extended-selectors>)` will not work. So if `target` is not defined or defined as an [universal selector](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*`, the extended pseudo-class applying is limited to **`html`'s children**, e.g. rules `#?#:not(...)` and `#?#*:not(...)` are parsed as `#?#html *:not(...)`. Please note that there is no such limitation for a standard selector arg, i.e. `#?#html:not(.locked)` works fine.
+> If the `:not()` pseudo-class argument `selectors` is an extended selectors, due to the way how the `:not()` pseudo-class is implemented in ExtendedCss v2.0, it is impossible to apply it to the top DOM node which is `html`, i.e. `#?#html:not(<extended-selectors>)` does not work. So if `target` is not defined or defined as an [universal selector](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*`, the extended pseudo-class applying is limited to **`html`'s children**, e.g. rules `#?#:not(...)` and `#?#*:not(...)` are parsed as `#?#html *:not(...)`. Please note that there is no such limitation for a standard selector arg, i.e. `#?#html:not(.locked)` works fine.
 
 > The `:not()` is considered as a standard CSS pseudo-class inside argument of the [`:upward()` pseudo-class](#extended-css-upward) because `:upward()` supports only standard selectors.
 
@@ -2815,10 +2815,12 @@ Depending on which AdGuard product you are using, Filtering log can be located i
 
 > In **AdGuard for iOS** and in **AdGuard for Safari** Filtering log does not exist because of the way content blockers are implemented in Safari. AdGuard does not see the web requests and therefore cannot display them.
 
-### Selectors debugging mode
+### Selectors debugging mode {#selectors-debug-mode}
 
-Sometimes, you might need to check the performance of a given selector or a stylesheet. In order to do it without interacting with JavaScript directly, you can use a special `debug` style property. When `ExtendedCss` meets this property, it enables the debug mode either for a single selector or for all selectors, depending on the `debug` value. Open the browser console while on a web page to see the timing statistics for selector(s) that were applied there. Debugging mode displays the following stats for each of the debugged selectors:
+Sometimes, you might need to check the performance of a given selector or a stylesheet. In order to do it without interacting with JavaScript directly, you can use a special `debug` style property. When `ExtendedCss` meets this property, it enables the debugging mode either for a single selector or for all selectors, depending on the `debug` value.
 
+Open the browser console while on a web page to see the timing statistics for selector(s) that were applied there. Debugging mode displays the following stats for each of the debugged selectors:
+<!-- FIXME: update stats description -->
 * `array` — time that it took to apply the selector on the page, for each of the instances that it has been applied (in milliseconds)
 * `length` — total number of times that the selector has been applied on the page
 * `mean` — mean time that it took to apply the selector on the page
