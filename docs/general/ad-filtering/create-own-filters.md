@@ -1654,7 +1654,7 @@ Draft CSS 4.0 specification describes the [`:has()` pseudo-class](https://www.w3
 
 > **Note**
 >
-> Rules with the `:has()` pseudo-class should use [native implementation of `:has()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:has) if they use `##` marker and if it is possible, i.e. with no other extended pseudo-classes inside. To force applying of ExtendedCss rules with `:has()`, use `#?#`/`#$?#` marker explicitly.
+> Rules with the `:has()` pseudo-class should use [native implementation of `:has()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:has) if they use `##` marker and if it is possible, i.e. with no other extended selectors inside. To force applying of ExtendedCss rules with `:has()`, use `#?#`/`#$?#` marker explicitly.
 
 <!-- FIXME: describe :if() alias as deprecated -->
 > **Compatibility with other pseudo-classes**
