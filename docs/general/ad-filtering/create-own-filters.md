@@ -2124,6 +2124,52 @@ div[class]:has(> a > img) { remove: true; }
 >
 > Rules with the `remove` pseudo-property should use `#$?#` marker: `$` for CSS style rules syntax, `?` for ExtendedCss syntax.
 
+
+#### Pseudo-class `:is()` {#extended-css-is}
+
+The `:is()` pseudo-class allows to match any element that can be selected by any of selectors passed to it. Invalid selectors are skipped and the pseudo-class deals with valid ones with no error thrown. Our implementation of the [native `:is()` pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/:is).
+
+**Syntax**
+
+```
+[target]:is(selectors)
+```
+- `target` — optional, standard or extended css selector, can be missed for checking *any* element
+- `selectors` — [*forgiving selector list*](https://drafts.csswg.org/selectors-4/#typedef-forgiving-selector-list) of standard or extended selectors. For extended selectors only compound selectors are supported, not complex.
+
+##### `:is()` limitations {#extended-css-is-limitations}
+
+> Rules with the `:is()` pseudo-class should use the [native implementation of `:is()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:is) if rules use `##` marker and it is possible, i.e. with no other extended selectors inside. To force applying ExtendedCss rules with `:is()`, use `#?#`/`#$?#` marker explicitly.
+
+> If the `:is()` pseudo-class argument `selectors` is an extended selectors, due to the way how the `:is()` pseudo-class is implemented in ExtendedCss v2.0, it is impossible to apply it to the top DOM node which is `html`, i.e. `#?#html:is(<extended-selectors>)` does not work. So if `target` is not defined or defined as an [universal selector](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*`, the extended pseudo-class applying is limited to **`html`'s children**, e.g. rules `#?#:is(...)` and `#?#*:is(...)` are parsed as `#?#html *:is(...)`. Please note that there is no such limitation for a standard selector arg, i.e. `#?#html:is(.locked)` works fine.
+
+> [Complex selectors](https://www.w3.org/TR/selectors-4/#complex) with extended pseudo-classes are not supported as `selectors` argument for `:is()` pseudo-class, only [compound ones](https://www.w3.org/TR/selectors-4/#compound) are allowed. It is [one of known issues](#known-issues). Check examples below for more details.
+
+**Examples**
+
+`#container *:is(.inner, .footer)` selects only the element `div#target1`:
+```html
+<!-- HTML code -->
+<div id="container">
+  <div data="true">
+    <div>
+      <div id="target1" class="inner"></div>
+    </div>
+  </div>
+</div>
+```
+
+Due to limitations `:is(*:not([class]) > .banner)'` does not work
+but `:is(*:not([class]):has(> .banner))` can be used instead of it to select the element `div#target2`:
+```html
+<!-- HTML code -->
+<span class="span">text</span>
+<div id="target2">
+  <p class="banner">inner paragraph</p>
+</div>
+```
+
+
 ### Cosmetic rules priority {#cosmetic-rules-priority}
 
 The way **element hiding** and **CSS rules** are applied is platform-specific.
