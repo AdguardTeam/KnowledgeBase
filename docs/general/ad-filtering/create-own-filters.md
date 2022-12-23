@@ -1970,7 +1970,7 @@ The `:xpath()` pseudo-class allows to select an element by evaluating a XPath ex
 - `target`- optional, standard or extended css selector
 - `expression` — required, valid XPath expression
 
-<a id="extended-css-xpath-limitations"></a> **Limitations**
+##### `:xpath()` limitations {#extended-css-xpath-limitations}
 
 > `target` can be omitted so it is optional. For any other pseudo-class that would mean "apply to *all* DOM nodes", but in case of `:xpath()` it just means "apply to the *whole* document", and such applying slows elements selecting significantly. That's why rules like `#?#:xpath(expression)` are limited for looking inside the `body` tag. For example, rule `#?#:xpath(//div[@data-st-area=\'Advert\'])` is parsed as `#?#body:xpath(//div[@data-st-area=\'Advert\'])`.
 
@@ -2000,24 +2000,47 @@ The `:xpath()` pseudo-class allows to select an element by evaluating a XPath ex
 
 ##### Pseudo-class `:nth-ancestor()`
 
-This pseudo-class allows to lookup the nth ancestor relative to the currently selected node.
+The `:nth-ancestor()` pseudo-class allows to lookup the *nth* ancestor relative to the previously selected element.
 
-It is a low-overhead equivalent to `:xpath(..[/..]*)`.
-
-> **Can be placed only at the end of a selector, except for [pseudo-class `:remove()`](#remove-pseudos).**
+```
+subject:nth-ancestor(n)
+```
+- `subject` — required, standard or extended css selector
+- `n` — required, number >= 1 and < 256, distance to the needed ancestor from the element selected by `subject`
 
 **Syntax**
+
 ```
-selector:nth-ancestor(n)
+subject:nth-ancestor(n)
 ```
-- `selector` — a plain CSS selector, or a Sizzle compatible selector.
-- `n` — positive number >= 1 and < 256, distance from the currently selected node.
+- `subject` — required, standard or extended css selector
+- `n` — required, number >= 1 and < 256, distance to the needed ancestor from the element selected by `subject`
+
+##### `:nth-ancestor()` limitations {#extended-css-nth-ancestor-limitations}
+
+> The `:nth-ancestor()` pseudo-class is not supported inside [`:not()` pseudo-class](#extended-css-not) argument.
 
 **Examples**
+
+For such DOM:
+```html
+<!-- HTML code -->
+<div id="target1">
+  <div class="child"></div>
+
+  <div id="target2">
+    <div>
+      <div>
+        <div class="inner"></div>
+      </div>
+    </div>
+  </div>
+</div>
 ```
-div.test:nth-ancestor(4)
-div:has-text(/test/):nth-ancestor(2)
-```
+
+`.child:nth-ancestor(1)` selects the element `div#target1`,
+`div[class="inner"]:nth-ancestor(3)` selects the element `div#target2`.
+
 
 ##### Pseudo-class `:upward()`
 
