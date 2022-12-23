@@ -21,11 +21,11 @@ The Private DNS feature was introduced in Android Pie. Before version Q, Private
 
 1. **UC Browsers**: UC Browser, UC Browser for x86, UC Mini, UC Browser HD
 
-By default, AdGuard filters the UC Browser without any problems. However, if you enable "data compression" in that browser, AdGuard won't be able to apply HTTPS filtering.
+To be able to filter HTTPS traffic, AdGuard needs to install a certificate into the device's user storage. UC-family browsers don't trust user certificates, so AdGuard cannot perform HTTPS filtering there. 
 
 **Solution**
 
-The only solution is to not enable data compression in UC Browser.
+To solve this problem, move the certificate to the system storage. This will require granting root access. 
 
 2. **Opera mini**: Opera mini, Opera mini with Yandex
 
