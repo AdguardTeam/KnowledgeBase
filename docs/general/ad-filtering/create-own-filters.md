@@ -1414,22 +1414,181 @@ Basic URL exceptions shall not disable rules with `$jsonprune` modifier. They ca
 >
 > When multiple `$jsonprune` rules match the same request, they are sorted in lexicographical order, the first rule is applied to the original response, and each of the remaining rules is applied to the result of applying the previous one.
 
-**Examples**
-
-* `||example.org^$jsonprune=\$..[one\, "two three"]` removes all occurrences of the keys "one" and "two three" anywhere in the JSON document.
-* `||example.org^$jsonprune=\$.a[?(has ad_origin)]` removes all children of `a` that have an `ad_origin` key.
-* `||example.org^$jsonprune=\$.*.*[?(key-eq 'Some key' 'Some value')]` removes all items that are at nesting level 3 and have a property "Some key" equal to "Some value".
-
 > **Compatibility with different versions of AdGuard**
 >
 > Rules with the `$jsonprune` modifier are supported by AdGuard for Windows, Mac and Android, **running CoreLibs version 1.10 or later**.
+
+**Examples**
+
+* `||example.org^$jsonprune=\$..[one\, "two three"]` removes all occurrences of the keys "one" and "two three" anywhere in the JSON document.
+
+<details>
+<summary>Input</summary>
+
+```
+{
+    "one": 1,
+    "two": {
+        "two three": 23,
+        "four five": 45
+    }
+}
+```
+
+</details>
+
+<details>
+<summary>Output</summary>
+
+```
+{
+    "two": {
+        "four five": 45
+    }
+}
+```
+
+</details>
+
+* `||example.org^$jsonprune=\$.a[?(has ad_origin)]` removes all children of `a` that have an `ad_origin` key.
+
+<details>
+<summary>Input</summary>
+
+```
+{
+    "a": [
+        {
+            "ad_origin": "https://example.org",
+            "b": 42
+        },
+        {
+            "b": 1234
+        }
+    ]
+}
+</details>
+```
+
+</details>
+
+<details>
+<summary>Output</summary>
+
+```
+{
+    "a": [
+        {
+            "b": 1234
+        }
+    ]
+}
+```
+
+</details>
+
+* `||example.org^$jsonprune=\$.*.*[?(key-eq 'Some key' 'Some value')]` removes all items that are at nesting level 3 and have a property "Some key" equal to "Some value".
+
+<details>
+<summary>Input</summary>
+
+```
+{
+    "a": {"b": {"c": {"Some key": "Some value"}, "d": {"Some key": "Other value"}}},
+    "e": {"f": [{"Some key": "Some value"}, {"Some key": "Other value"}]}
+}
+```
+
+</details>
+
+<details>
+<summary>Output</summary>
+
+```
+{
+    "a": {"b": {"d": {"Some key": "Other value"}}},
+    "e": {"f": [{"Some key": "Other value"}]}
+}
+```
+
+</details>
 
 **Nested JSONPath expressions**
 
 > In AdGuard for Windows, Mac and Android, **running CoreLibs version 1.11 or later**, JSONPath expressions may be used as keys in filter expressions.
 
 * `||example.org^$jsonprune=\$.elems[?(has "\$.a.b.c")]` – remove all children of `elems` which have a property selectable by the JSONPath expression `$.a.b.c`.
+
+<details>
+<summary>Input</summary>
+
+```
+{
+    "elems": [
+        {
+            "a": {"b": {"c": 123}},
+            "k": "v"
+        },
+        {
+            "d": {"e": {"f": 123}},
+            "k1": "v1"
+        }
+    ]
+}
+```
+
+</details>
+
+<details>
+<summary>Output</summary>
+
+```
+{
+    "elems": [
+        {
+            "d": {"e": {"f": 123}},
+            "k1": "v1"
+        }
+    ]
+}
+```
+
+</details>
+
 * `||example.org^$jsonprune=\$.elems[?(key-eq "\$.a.b.c" "abc")]` – remove all children of `elems` which have a property selectable by the JSONPath expression `$.a.b.c` with a value equal to `"abc"`.
+
+<details>
+<summary>Input</summary>
+
+```
+{
+    "elems": [
+        {
+            "a": {"b": {"c": 123}},
+        },
+        {
+            "a": {"b": {"c": "abc"}}
+        }
+    ]
+}
+```
+
+</details>
+
+<details>
+<summary>Output</summary>
+
+```
+{
+    "elems": [
+        {
+            "a": {"b": {"c": 123}}
+        }
+    ]
+}
+```
+
+</details>
 
 #### **`noop`** {#noop-modifier}
 
