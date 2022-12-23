@@ -2889,7 +2889,7 @@ Now you can now use the `ExtendedCss` from global scope, and run its method [`qu
 **Examples**
 
 ```js
-const selector = 'div.block:has=(.header:matches-css-after(after, content: Ads))';
+const selector = 'div.block:has=(.header:matches-css(after, content: Ads))';
 
 // array of HTMLElements matched the `selector` is to be returned
 ExtendedCss.query(selector);
