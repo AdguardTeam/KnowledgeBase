@@ -2847,14 +2847,23 @@ Depending on which AdGuard product you are using, Filtering log can be located i
 
 Sometimes, you might need to check the performance of a given selector or a stylesheet. In order to do it without interacting with JavaScript directly, you can use a special `debug` style property. When `ExtendedCss` meets this property, it enables the debugging mode either for a single selector or for all selectors, depending on the `debug` value.
 
-Open the browser console while on a web page to see the timing statistics for selector(s) that were applied there. Debugging mode displays the following stats for each of the debugged selectors:
-<!-- FIXME: update stats description -->
-* `array` — time that it took to apply the selector on the page, for each of the instances that it has been applied (in milliseconds)
-* `length` — total number of times that the selector has been applied on the page
-* `mean` — mean time that it took to apply the selector on the page
-* `stddev` — standard deviation
-* `squaredSum`: sum of squared deviations from the mean
-* `sum` — total time it took to apply the selector on the page across all instances
+Open the browser console while on a web page to see the timing statistics for selector(s) that were applied there. Debugging mode displays the following stats as object where each of the debugged selectors are keys, and value is an object with such properties:
+
+**Always printed:**
+* `selectorParsed` — text of eventually parsed selector
+* `timings` — list of DOM nodes matched by the selector
+  * `appliesCount` — total number of times that the selector has been applied on the page
+  * `appliesTimings` — time that it took to apply the selector on the page, for each of the instances that it has been applied (in milliseconds)
+  * `meanTiming` — mean time that it took to apply the selector on the page
+  * `standardDeviation` — standard deviation
+  * `timingsSum` — total time it took to apply the selector on the page across all instances
+
+**Printed only for remove pseudos:**
+* `removed` — flag to signal if elements we removed
+
+**Printed if elements are not removed:**
+* `matchedElements` — list of DOM nodes matched by the selector
+* `styleApplied` — parsed rule style declaration related to the selector
 
 **Examples**
 
