@@ -1951,7 +1951,7 @@ div:matches-property(memoizedProps.key="null")
 div:matches-property(memoizedProps._owner.src=/ad/)
 ```
 
-> **Information for filters maintainers**
+> **For filters maintainers:**
 >
 > To check properties of specific element, you should do:
 > 1. Inspect the needed page element or select it in `Elements` tab of browser DevTools.
@@ -1960,27 +1960,42 @@ div:matches-property(memoizedProps._owner.src=/ad/)
 
 ##### Pseudo-class `:xpath()`
 
-This pseudo-class allows to select an element by evaluating an XPath expression.
-
-> **Can be placed only at the end of a selector, except for [pseudo-class `:remove()`](#remove-pseudos).**
-
-The `:xpath()` pseudo-class is different from other pseudo-classes. Whereas all other operators are used to filter down a resultset of elements, the `:xpath()` operator can be used both to create a new resultset or filter down an existing one. For this reason, subject `selector` is optional. For example, an `:xpath()` operator could be used to create a new resultset consisting of all ancestor elements of a subject element, something not otherwise possible with either plain CSS selectors or other procedural operators.
+The `:xpath()` pseudo-class allows to select an element by evaluating a XPath expression.
 
 **Syntax**
-```
-[selector]:xpath(expression)
-```
 
-- `selector` — optional, a plain CSS selector, or a Sizzle compatible selector
-- `expression` — a valid XPath expression
+```
+[target]:xpath(expression)
+```
+- `target`- optional, standard or extended css selector
+- `expression` — required, valid XPath expression
+
+<a id="extended-css-xpath-limitations"></a> **Limitations**
+
+> `target` can be omitted so it is optional. For any other pseudo-class that would mean "apply to *all* DOM nodes", but in case of `:xpath()` it just means "apply to the *whole* document", and such applying slows elements selecting significantly. That's why rules like `#?#:xpath(expression)` are limited for looking inside the `body` tag. For example, rule `#?#:xpath(//div[@data-st-area=\'Advert\'])` is parsed as `#?#body:xpath(//div[@data-st-area=\'Advert\'])`.
+
+> **Note**
+>
+> Extended selectors with defined `target` as *any* selector — `*:xpath(expression)` — can still be used but it is not recommended, so `target` should be specified instead.
+
+> **Restrictions**
+>
+> Works properly only at the end of selector, except of [pseudo-class :remove()](#remove-pseudos).
 
 **Examples**
+
+`:xpath(//*[@class="banner"])` selects the element `div#target1`:
+```html
+<!-- HTML code -->
+<div id="target1" class="banner"></div>
 ```
-// Filtering results from selector
-div:xpath(//*[@class="test-xpath-class"])
-div:has-text(/test-xpath-content/):xpath(../../..)
-// Use xpath only to select elements
-facebook.com##:xpath(//div[@id="stream_pagelet"]//div[starts-with(@id,"hyperfeed_story_id_")][.//h6//span/text()="People You May Know"])
+
+`:xpath(//*[@class="inner"]/..)` selects the element `div#target2`:
+```html
+<!-- HTML code -->
+<div id="target2">
+  <div class="inner"></div>
+</div>
 ```
 
 ##### Pseudo-class `:nth-ancestor()`
