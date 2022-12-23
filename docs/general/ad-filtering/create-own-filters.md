@@ -1597,7 +1597,19 @@ We recommend to use this kind of exceptions only if it is not possible to change
 
 ### Extended CSS selectors {#extended-css-selectors}
 
-<!-- FIXME: add local toc -->
+* [Limitations](#extended-css-limitations)
+* [Pseudo-class `:has()`](#extended-css-has)
+* [Pseudo-class `:contains()`](#extended-css-contains)
+* [Pseudo-class `:matches-css()`](#extended-css-matches-css)
+* [Pseudo-class `:matches-attr()`](#extended-css-matches-attr)
+* [Pseudo-class `:matches-property()`](#extended-css-matches-property)
+* [Pseudo-class `:xpath()`](#extended-css-xpath)
+* [Pseudo-class `:nth-ancestor()`](#extended-css-nth-ancestor)
+* [Pseudo-class `:upward()`](#extended-css-upward)
+* [Pseudo-class `:remove()` and pseudo-property `remove`](#remove-pseudos)
+* [Pseudo-class `:is()`](#extended-css-is)
+* [Pseudo-class `:not()`](#extended-css-not)
+* [Pseudo-class `:if-not()` (deprecated)](#extended-css-if-not)
 
 CSS 3.0 is not always enough to block ads. To solve this problem AdGuard extends CSS capabilities by adding support for the new pseudo-elements. We have developed a separate [open-source library](https://github.com/AdguardTeam/ExtendedCss) for non-standard element selecting and applying CSS styles with extended properties.
 
@@ -1643,7 +1655,6 @@ Learn more about [how to debug extended selectors](#selectors-debugging-mode).
 
 1. CSS [comments](https://developer.mozilla.org/en-US/docs/Web/CSS/Comments) and [at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) are not supported.
 
-<!-- FIXME: check anchors later -->
 2. Specific pseudo-class may have its own limitations:
 [`:has()`](#extended-css-has-limitations), [`:xpath()`](#extended-css-xpath-limitations), [`:nth-ancestor()`](#extended-css-nth-ancestor-limitations), [`:upward()`](#extended-css-upward-limitations), [`:is()`](#extended-css-is-limitations), [`:not()`](#extended-css-not-limitations), and [`:remove()`](#extended-css-remove-limitations).
 
@@ -1806,9 +1817,11 @@ The `:matches-css()` pseudo-class allows to match the element by its current sty
 
 > **Special characters escaping and unescaping**
 >
-> For **non-regexp** patterns `(`,`)`,`[`,`]` must be **unescaped**, e.g. `:matches-css(background-image:url(data:*))`.
+> For **non-regexp** patterns `(`,`)`,`[`,`]` must be **unescaped**,
+> e.g. `:matches-css(background-image:url(data:*))`.
 >
-> For **regexp** patterns `\` should be **escaped**, e.g. `:matches-css(background-image: /^url\\("data:image\\/gif;base64.+/)`.
+> For **regexp** patterns `\` should be **escaped**,
+> e.g. `:matches-css(background-image: /^url\\("data:image\\/gif;base64.+/)`.
 
 > **Restrictions**
 >
@@ -1864,7 +1877,8 @@ The `:matches-attr()` pseudo-class allows to select an element by its attributes
 
 > **Escaping special characters**
 >
-> For **regexp** patterns `"` and `\` should be **escaped**, e.g. `div:matches-attr(class=/[\\w]{5}/)`.
+> For **regexp** patterns `"` and `\` should be **escaped**,
+> e.g. `div:matches-attr(class=/[\\w]{5}/)`.
 
 > **Restrictions**
 >
@@ -1914,11 +1928,13 @@ The `:matches-property()` pseudo-class allows to select an element by matching i
 
 > **Escaping special characters**
 >
-> For **regexp** patterns `"` and `\` should be escaped, e.g. `div:matches-property(prop=/[\\w]{4}/)`.
+> For **regexp** patterns `"` and `\` should be escaped,
+> e.g. `div:matches-property(prop=/[\\w]{4}/)`.
 
 > **Note**
 >
-> Regexp patterns are supported in `name` for any property in chain, e.g. `prop./^unit[\\d]{4}$/.type`.
+> Regexp patterns are supported in `name` for any property in chain,
+> e.g. `prop./^unit[\\d]{4}$/.type`.
 
 > **Restrictions**
 >
@@ -2105,11 +2121,11 @@ selector { remove: true; }
 ```
 - `selector` — required, standard or extended css selector
 
-##### `:remove()` and `{ remove }` limitations {#extended-css-remove-limitations}
+##### `:remove()` and `remove` limitations {#extended-css-remove-limitations}
 
 > The `:remove()` pseudo-class is limited to work properly only at the end of selector.
 
-> For applying the `:remove()` pseudo-class to any element [universal selector](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*` should be used. Otherwise such extended selector may be considered as invalid, e.g. `.banner > :remove()` is not valid for removing any child element of `banner` class element, so it should look like `.banner > *:remove()`.
+> For applying the `:remove()` pseudo-class to any element, a [universal selector](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*` should be used. Otherwise such extended selector may be considered as invalid, e.g. `.banner > :remove()` is not valid for removing any child element of `banner` class element, so it should look like `.banner > *:remove()`.
 
 > If the `:remove()` pseudo-class or the `remove` pseudo-property is used, all style properties are ignored except of the [`debug` pseudo-property](#selectors-debug-mode).
 
@@ -2144,7 +2160,7 @@ The `:is()` pseudo-class allows to match any element that can be selected by any
 
 > Rules with the `:is()` pseudo-class should use the [native implementation of `:is()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:is) if rules use `##` marker and it is possible, i.e. with no other extended selectors inside. To force applying ExtendedCss rules with `:is()`, use `#?#`/`#$?#` marker explicitly.
 
-> If the `:is()` pseudo-class argument `selectors` is an extended selectors, due to the way how the `:is()` pseudo-class is implemented in ExtendedCss v2.0, it is impossible to apply it to the top DOM node which is `html`, i.e. `#?#html:is(<extended-selectors>)` does not work. So if `target` is not defined or defined as an [universal selector](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*`, the extended pseudo-class applying is limited to **`html`'s children**, e.g. rules `#?#:is(...)` and `#?#*:is(...)` are parsed as `#?#html *:is(...)`. Please note that there is no such limitation for a standard selector arg, i.e. `#?#html:is(.locked)` works fine.
+> If the `:is()` pseudo-class argument `selectors` is an extended selectors, due to the way how the `:is()` pseudo-class is implemented in ExtendedCss v2.0, it is impossible to apply it to the top DOM node which is `html`, i.e. `#?#html:is(<extended-selectors>)` does not work. So if `target` is not defined or defined as a [universal selector](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*`, the extended pseudo-class applying is limited to **`html`'s children**, e.g. rules `#?#:is(...)` and `#?#*:is(...)` are parsed as `#?#html *:is(...)`. Please note that there is no such limitation for a standard selector arg, i.e. `#?#html:is(.locked)` works fine.
 
 > [Complex selectors](https://www.w3.org/TR/selectors-4/#complex) with extended pseudo-classes are not supported as `selectors` argument for `:is()` pseudo-class, only [compound ones](https://www.w3.org/TR/selectors-4/#compound) are allowed. It is [one of known issues](#known-issues). Check examples below for more details.
 
@@ -2189,7 +2205,7 @@ The `:not()` pseudo-class allows to select elements which are *not matched* by s
 
 > Rules with the `:not()` pseudo-class should use the [native implementation of `:not()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:not) if rules use `##` marker and it is possible, i.e. with no other extended selectors inside. To force applying ExtendedCss rules with `:not()`, use `#?#`/`#$?#` marker explicitly.
 
-> If the `:not()` pseudo-class argument `selectors` is an extended selectors, due to the way how the `:not()` pseudo-class is implemented in ExtendedCss v2.0, it is impossible to apply it to the top DOM node which is `html`, i.e. `#?#html:not(<extended-selectors>)` does not work. So if `target` is not defined or defined as an [universal selector](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*`, the extended pseudo-class applying is limited to **`html`'s children**, e.g. rules `#?#:not(...)` and `#?#*:not(...)` are parsed as `#?#html *:not(...)`. Please note that there is no such limitation for a standard selector arg, i.e. `#?#html:not(.locked)` works fine.
+> If the `:not()` pseudo-class argument `selectors` is an extended selectors, due to the way how the `:not()` pseudo-class is implemented in ExtendedCss v2.0, it is impossible to apply it to the top DOM node which is `html`, i.e. `#?#html:not(<extended-selectors>)` does not work. So if `target` is not defined or defined as a [universal selector](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*`, the extended pseudo-class applying is limited to **`html`'s children**, e.g. rules `#?#:not(...)` and `#?#*:not(...)` are parsed as `#?#html *:not(...)`. Please note that there is no such limitation for a standard selector arg, i.e. `#?#html:not(.locked)` works fine.
 
 > The `:not()` is considered as a standard CSS pseudo-class inside argument of the [`:upward()` pseudo-class](#extended-css-upward) because `:upward()` supports only standard selectors.
 
