@@ -1732,12 +1732,12 @@ A selector list can be set in `selector` as well. In this case **all** selectors
 
 
 <!-- FIXME: describe :if-not() as deprecated and move down -->
-##### Pseudo-class `:if-not()`
+#### Pseudo-class `:if-not()` {#extended-css-if-not}
 
 This pseudo-class is basically a shortcut for `:not(:has())`. It is supported by ExtendedCss for better compatibility with some filters subscriptions, but it is not recommended to use it in AdGuard filters. The rationale is that one day browsers will add `:has` native support, but it will never happen to this pseudo-class.
 
 
-##### Pseudo-class `:contains()`
+#### Pseudo-class `:contains()` {#extended-css-contains}
 
 The `:contains()` pseudo-class principle is very simple: it allows to select the elements that contain specified text or which content matches a specified regular expression. Regexp flags are supported.
 
@@ -1786,7 +1786,7 @@ div:contains(/it .* banner/gi)
 <!-- FIXME: mention old syntax compatibility -->
 
 
-##### Pseudo-class `:matches-css()`
+#### Pseudo-class `:matches-css()` {#extended-css-matches-css}
 
 The `:matches-css()` pseudo-class allows to match the element by its current style properties. The work of the pseudo-class is based on using the [`Window.getComputedStyle()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle) method.
 
@@ -1842,7 +1842,7 @@ div:matches-css(before, content: /block me/)
 
 <!-- FIXME: mention old syntax compatibility -->
 
-##### Pseudo-class `:matches-attr()`
+#### Pseudo-class `:matches-attr()` {#extended-css-matches-attr}
 
 The `:matches-attr()` pseudo-class allows to select an element by its attributes, especially if they are randomized.
 
@@ -1892,7 +1892,7 @@ The `:matches-attr()` pseudo-class allows to select an element by its attributes
 ```
 
 
-##### Pseudo-class `:matches-property()`
+#### Pseudo-class `:matches-property()` {#extended-css-property}
 
 The `:matches-property()` pseudo-class allows to select an element by matching its properties.
 
@@ -1958,7 +1958,7 @@ div:matches-property(memoizedProps._owner.src=/ad/)
 > 2. Run `console.dir($0)` in `Console` tab.
 
 
-##### Pseudo-class `:xpath()`
+#### Pseudo-class `:xpath()` {#extended-css-xpath}
 
 The `:xpath()` pseudo-class allows to select an element by evaluating a XPath expression.
 
@@ -1998,7 +1998,7 @@ The `:xpath()` pseudo-class allows to select an element by evaluating a XPath ex
 </div>
 ```
 
-##### Pseudo-class `:nth-ancestor()`
+#### Pseudo-class `:nth-ancestor()` {#extended-css-nth-ancestor}
 
 The `:nth-ancestor()` pseudo-class allows to lookup the *nth* ancestor relative to the previously selected element.
 
@@ -2018,7 +2018,7 @@ subject:nth-ancestor(n)
 
 ##### `:nth-ancestor()` limitations {#extended-css-nth-ancestor-limitations}
 
-> The `:nth-ancestor()` pseudo-class is not supported inside [`:not()` pseudo-class](#extended-css-not) argument.
+> The `:nth-ancestor()` pseudo-class is not supported inside argument of the [`:not()` pseudo-class](#extended-css-not).
 
 **Examples**
 
@@ -2042,32 +2042,49 @@ For such DOM:
 `div[class="inner"]:nth-ancestor(3)` selects the element `div#target2`.
 
 
-##### Pseudo-class `:upward()`
+#### Pseudo-class `:upward()` {#extended-css-upward}
 
-This pseudo-class allows to lookup the ancestor relative to the currently selected node.
-
-> **Can be placed only at the end of a selector, except for [pseudo-class `:remove()`](#remove-pseudos).**
+The `:upward()` pseudo-class allows to lookup the ancestor relative to the previously selected element.
 
 **Syntax**
+
 ```
-/* selector parameter */
-subjectSelector:upward(targetSelector)
-/* number parameter */
-subjectSelector:upward(n)
+subject:upward(ancestor)
 ```
-- `subjectSelector` — a plain CSS selector, or a Sizzle compatible selector
-- `targetSelector` — a valid plain CSS selector
-- `n` — positive number >= 1 and < 256, distance from the currently selected node
+- `subject` — required, standard or extended css selector
+- `ancestor` — required, specification for the ancestor of the element selected by `subject`, can be set as:
+  - *number* >= 1 and < 256 for distance to the needed ancestor, same as [`:nth-ancestor()`](#extended-css-nth-ancestor)
+  - *standard css selector* for matching closest ancestor
+
+##### `:upward()` limitations {#extended-css-upward-limitations}
+
+> The `:upward()` pseudo-class is not supported inside argument of the [`:not()` pseudo-class](#extended-css-not).
 
 **Examples**
-```
-div.child:upward(div[id])
-div:contains(test):upward(div[class^="parent-wrapper-")
-div.test:upward(4)
-div:has-text(/test/):upward(2)
+
+For such DOM:
+```html
+<!-- HTML code -->
+<div id="target1" data="true">
+  <div class="child"></div>
+
+  <div id="target2">
+    <div>
+      <div>
+        <div class="inner"></div>
+      </div>
+    </div>
+  </div>
+</div>
 ```
 
-##### Pseudo-class `:remove()` and pseudo-property `remove` {#remove-pseudos}
+`.inner:upward(div[data])` selects the element `div#target1`,
+`.inner:upward(div[id])` selects the element `div#target2`,
+`.child:upward(1)` selects the element `div#target1`,
+`.inner:upward(3)` selects the element `div#target2`.
+
+
+#### Pseudo-class `:remove()` and pseudo-property `remove` {#remove-pseudos}
 
 Sometimes, it is necessary to remove a matching element instead of hiding it or applying custom styles. In order to do it, you can use pseudo-class `:remove()` as well as pseudo-property `remove`.
 
