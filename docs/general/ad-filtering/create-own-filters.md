@@ -1597,6 +1597,8 @@ We recommend to use this kind of exceptions only if it is not possible to change
 
 ### Extended CSS selectors {#extended-css-selectors}
 
+<!-- FIXME: add local toc -->
+
 CSS 3.0 is not always enough to block ads. To solve this problem AdGuard extends CSS capabilities by adding support for the new pseudo-elements. We have developed a separate [open-source library](https://github.com/AdguardTeam/ExtendedCss) for non-standard element selecting and applying CSS styles with extended properties.
 
 The idea of extended capabilities is an opportunity to match DOM elements with selectors based on their own representation (style, text content, etc.) or relations with other elements. There is also an opportunity to apply styles with non-standard CSS properties.
@@ -1922,19 +1924,19 @@ The `:matches-property()` pseudo-class allows to select an element by matching i
 An element with such properties:
 ```javascript
 divProperties = {
-    id: 1,
-    check: {
-        track: true,
-        unit_2ksdf1: true,
+  id: 1,
+  check: {
+    track: true,
+    unit_2random1: true,
+  },
+  memoizedProps: {
+    key: null,
+    tag: 12,
+    _owner: {
+      effectTag: 1,
+      src: 'ad.com',
     },
-    memoizedProps: {
-        key: null,
-        tag: 12,
-        _owner: {
-            effectTag: 1,
-            src: 'ad.com',
-        },
-    },
+  },
 };
 ```
 
@@ -1942,7 +1944,7 @@ can be selected by any of these extended selectors:
 ```
 div:matches-property(check.track)
 
-div:matches-property("check./^unit_.{4,6}$/")
+div:matches-property("check./^unit_.{4,8}$/")
 
 div:matches-property("check.unit_*"=true)
 
