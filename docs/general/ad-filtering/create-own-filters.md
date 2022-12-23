@@ -1656,10 +1656,13 @@ Draft CSS 4.0 specification describes the [`:has()` pseudo-class](https://www.w3
 >
 > Rules with the `:has()` pseudo-class should use [native implementation of `:has()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:has) if they use `##` marker and if it is possible, i.e. with no other extended selectors inside. To force applying of ExtendedCss rules with `:has()`, use `#?#`/`#$?#` marker explicitly.
 
-<!-- FIXME: describe :if() alias as deprecated -->
 > **Compatibility with other pseudo-classes**
 >
-> Synonyms `:-abp-has` and `:if` are supported by ExtendedCss for better compatibility.
+> Synonyms `:-abp-has()` is supported by ExtendedCss for better compatibility.
+
+> **Deprecation notice**
+>
+> `:if()` is no longer supported as synonyms for `:has()`.
 
 **Syntax**
 
@@ -1731,13 +1734,9 @@ A selector list can be set in `selector` as well. In this case **all** selectors
 </div>
 ```
 
-> [Backward compatible syntax for `:has()`](https://github.com/AdguardTeam/ExtendedCss#-old-syntax-for-pseudo-class-has) is supported but not recommended.
-
-
-<!-- FIXME: describe :if-not() as deprecated and move down -->
-#### Pseudo-class `:if-not()` {#extended-css-if-not}
-
-This pseudo-class is basically a shortcut for `:not(:has())`. It is supported by ExtendedCss for better compatibility with some filters subscriptions, but it is not recommended to use it in AdGuard filters. The rationale is that one day browsers will add `:has` native support, but it will never happen to this pseudo-class.
+> **Compatibility with old syntax**
+>
+> [Backward compatible syntax for `:has()`](https://github.com/AdguardTeam/ExtendedCss#old-syntax-has) is supported but **not recommended**.
 
 
 #### Pseudo-class `:contains()` {#extended-css-contains}
@@ -1750,7 +1749,7 @@ The `:contains()` pseudo-class principle is very simple: it allows to select the
 
 > **Compatibility with other pseudo-classes**
 >
-> Synonyms `:-abp-contains` and `:has-text` are supported for better compatibility.
+> Synonyms `:-abp-contains()` and `:has-text()` are supported for better compatibility.
 
 **Syntax**
 
@@ -1786,7 +1785,9 @@ div:contains(/it .* banner/gi)
 >
 > Only the `div` with `id=match` is selected because the next element does not contain any text, and `banner` is a part of code, not a text.
 
-<!-- FIXME: mention old syntax compatibility -->
+> **Compatibility with old syntax**
+>
+> [Backward compatible syntax for `:contains()`](https://github.com/AdguardTeam/ExtendedCss#old-syntax-contains) is supported but **not recommended**.
 
 
 #### Pseudo-class `:matches-css()` {#extended-css-matches-css}
@@ -1843,7 +1844,9 @@ div:matches-css(before, content: /block me/)
 >
 > Obsolete pseudo-classes `:matches-css-before()` and `:matches-css-after()` are no longer recommended but still are supported for better compatibility.
 
-<!-- FIXME: mention old syntax compatibility -->
+> **Compatibility with old syntax**
+>
+> [Backward compatible syntax for `:matches-css()`](https://github.com/AdguardTeam/ExtendedCss#old-syntax-matches-css) is supported but **not recommended**.
 
 
 #### Pseudo-class `:matches-attr()` {#extended-css-matches-attr}
@@ -2203,6 +2206,15 @@ The `:not()` pseudo-class allows to select elements which are *not matched* by s
   <span class="text">text</span>
 </div>
 ```
+
+
+#### Pseudo-class `:if-not()` (deprecated) {#extended-css-if-not}
+
+> **Deprecation notice**
+>
+> The `:if-not()` pseudo-class is deprecated and no longer supported. Rules with it are considered as invalid.
+
+This pseudo-class was basically a shortcut for `:not(:has())`. It was supported by ExtendedCss for better compatibility with some filters subscriptions.
 
 
 ### Cosmetic rules priority {#cosmetic-rules-priority}
