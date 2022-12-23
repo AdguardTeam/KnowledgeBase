@@ -2170,6 +2170,41 @@ but `:is(*:not([class]):has(> .banner))` can be used instead of it to select the
 ```
 
 
+#### Pseudo-class `:not()` {#extended-css-not}
+
+The `:not()` pseudo-class allows to select elements which are *not matched* by selectors passed as arg. Invalid argument selectors are not allowed and error will be thrown. Our implementation of the [`:not()` pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/:not).
+
+**Syntax**
+
+```
+[target]:not(selectors)
+```
+- `target` — optional, standard or extended css selector, can be missed for checking *any* element
+- `selectors` — selector list of standard or extended selectors
+
+##### `:not()` limitations {#extended-css-not-limitations}
+
+> Rules with the `:not()` pseudo-class should use the [native implementation of `:not()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:not) if rules use `##` marker and it is possible, i.e. with no other extended selectors inside. To force applying ExtendedCss rules with `:not()`, use `#?#`/`#$?#` marker explicitly.
+
+> If the `:not()` pseudo-class argument `selectors` is an extended selectors, due to the way how the `:not()` pseudo-class is implemented in ExtendedCss v2.0, it is impossible to apply it to the top DOM node which is `html`, i.e. `#?#html:not(<extended-selectors>)` will not work. So if `target` is not defined or defined as an [universal selector](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*`, the extended pseudo-class applying is limited to **`html`'s children**, e.g. rules `#?#:not(...)` and `#?#*:not(...)` are parsed as `#?#html *:not(...)`. Please note that there is no such limitation for a standard selector arg, i.e. `#?#html:not(.locked)` works fine.
+
+> The `:not()` is considered as a standard CSS pseudo-class inside argument of the [`:upward()` pseudo-class](#extended-css-upward) because `:upward()` supports only standard selectors.
+
+> "Up-looking" pseudo-classes which are [`:nth-ancestor()`](#extended-css-nth-ancestor) and [`:upward()`](#extended-css-upward) are not supported inside `selectors` argument for `:not()` pseudo-class. It is [one of known issues](#known-issues).
+
+**Examples**
+
+`#container > *:not(h2, .text)` selects only the element `div#target1`:
+```html
+<!-- HTML code -->
+<div id="container">
+  <h2>Header</h2>
+  <div id="target1"></div>
+  <span class="text">text</span>
+</div>
+```
+
+
 ### Cosmetic rules priority {#cosmetic-rules-priority}
 
 The way **element hiding** and **CSS rules** are applied is platform-specific.
