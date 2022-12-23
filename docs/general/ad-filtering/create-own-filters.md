@@ -1647,6 +1647,7 @@ Learn more about [how to debug extended selectors](#selectors-debugging-mode).
 2. Specific pseudo-class may have its own limitations:
 [`:has()`](#extended-css-has-limitations), [`:xpath()`](#extended-css-xpath-limitations), [`:nth-ancestor()`](#extended-css-nth-ancestor-limitations), [`:upward()`](#extended-css-upward-limitations), [`:is()`](#extended-css-is-limitations), [`:not()`](#extended-css-not-limitations), and [`:remove()`](#extended-css-remove-limitations).
 
+
 #### Pseudo-class `:has()` {#extended-css-has}
 
 Draft CSS 4.0 specification describes the [`:has()` pseudo-class](https://www.w3.org/TR/selectors-4/#relational). Unfortunately, [it is not yet supported](https://caniuse.com/css-has) by all popular browsers.
@@ -1844,6 +1845,7 @@ div:matches-css(before, content: /block me/)
 
 <!-- FIXME: mention old syntax compatibility -->
 
+
 #### Pseudo-class `:matches-attr()` {#extended-css-matches-attr}
 
 The `:matches-attr()` pseudo-class allows to select an element by its attributes, especially if they are randomized.
@@ -1976,12 +1978,8 @@ The `:xpath()` pseudo-class allows to select an element by evaluating a XPath ex
 
 > `target` can be omitted so it is optional. For any other pseudo-class that would mean "apply to *all* DOM nodes", but in case of `:xpath()` it just means "apply to the *whole* document", and such applying slows elements selecting significantly. That's why rules like `#?#:xpath(expression)` are limited for looking inside the `body` tag. For example, rule `#?#:xpath(//div[@data-st-area=\'Advert\'])` is parsed as `#?#body:xpath(//div[@data-st-area=\'Advert\'])`.
 
-> **Note**
->
 > Extended selectors with defined `target` as *any* selector — `*:xpath(expression)` — can still be used but it is not recommended, so `target` should be specified instead.
 
-> **Restrictions**
->
 > Works properly only at the end of selector, except of [pseudo-class :remove()](#remove-pseudos).
 
 **Examples**
@@ -1999,6 +1997,7 @@ The `:xpath()` pseudo-class allows to select an element by evaluating a XPath ex
   <div class="inner"></div>
 </div>
 ```
+
 
 #### Pseudo-class `:nth-ancestor()` {#extended-css-nth-ancestor}
 
@@ -2088,29 +2087,42 @@ For such DOM:
 
 #### Pseudo-class `:remove()` and pseudo-property `remove` {#remove-pseudos}
 
-Sometimes, it is necessary to remove a matching element instead of hiding it or applying custom styles. In order to do it, you can use pseudo-class `:remove()` as well as pseudo-property `remove`.
+Sometimes, it is necessary to remove a matching element instead of hiding it or applying custom styles. In order to do it, you can use the `:remove()` pseudo-class as well as the `remove` pseudo-property.
 
 > **Pseudo-class `:remove()` can be placed only at the end of a selector.**
 
 **Syntax**
+
 ```
 ! pseudo-class
 selector:remove()
+
 ! pseudo-property
 selector { remove: true; }
 ```
-- `selector` — a plain CSS selector, or a Sizzle compatible selector
+- `selector` — required, standard or extended css selector
+
+##### `:remove()` and `{ remove }` limitations {#extended-css-remove-limitations}
+
+> The `:remove()` pseudo-class is limited to work properly only at the end of selector.
+
+> For applying the `:remove()` pseudo-class to any element [universal selector](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*` should be used. Otherwise such extended selector may be considered as invalid, e.g. `.banner > :remove()` is not valid for removing any child element of `banner` class element, so it should look like `.banner > *:remove()`.
+
+> If the `:remove()` pseudo-class or the `remove` pseudo-property is used, all style properties will be ignored except of the [`debug` pseudo-property](#selectors-debug-mode).
+
 
 **Examples**
 ```
-div.inner:remove()
+div.banner:remove()
 div:has(> div[ad-attr]):remove()
-div:xpath(../..):remove()
-div:contains(target text) { remove: true; }
-div[class]:has(> a:not([id])) { remove: true; }
+
+div:contains(advertisement) { remove: true; }
+div[class]:has(> a > img) { remove: true; }
 ```
 
-> All style properties will be ignored if `:remove()` pseudo-class or `remove` pseudo-property is used.
+> **Note**
+>
+> Rules with the `remove` pseudo-property should use `#$?#` marker: `$` for CSS style rules syntax, `?` for ExtendedCss syntax.
 
 ### Cosmetic rules priority {#cosmetic-rules-priority}
 
