@@ -452,7 +452,7 @@ The rule applies only to WebSocket connections.
 
 The rule applies to requests for which the type has not been determined or does not match the types listed above.
 
-#### **`$webrtc` (deprecated)**** {#webrtc-modifier}
+#### **`$webrtc` (deprecated)** {#webrtc-modifier}
 
 > **Deprecation notice**
 >
