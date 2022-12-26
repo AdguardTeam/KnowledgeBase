@@ -7,7 +7,7 @@ sidebar_position: 14
 
 Other VPN apps are incompatible with AdGuard running in the Local VPN filtering mode since you cannot have two active VPNs at the same time. To solve this problem we suggest you:
 
-* use [AdGuard VPN](https://adguard-vpn.com/ro/welcome.html) — it has Integrated mode that allows two apps to operate seamlessly
+* use [AdGuard VPN](https://adguard-vpn.com/welcome.html) — it has Integrated mode that allows two apps to operate seamlessly
 * use AdGuard in Local HTTP Proxy mode. *Please note that 'manual' HTTP Proxy mode is not supported on devices since Android 10*
 * if you use a third-party VPN app, figure out whether it supports SOCKS4/SOCKS5 mode. If it does, you can configure your VPN app to work as outbound proxy and set up local outbound proxy with params from the third-party app. For instance, AdGuard can be automatically configured with 'Orbot: Proxy with Tor'
 
