@@ -15,7 +15,7 @@ AdGuard can significantly broaden website functionality by acting as a userscrip
 
 * **AdGuard Extra**. An extension that blocks advertising in difficult cases when the usual filter-based approach is not enough.
 
-* **AdGuard Popup Blocker**. The name speaks for itself: it blocks popups — one of the most annoying types of ads on web pages.
+* **AdGuard Popup Blocker**. The name speaks for itself: it blocks pop-ups — one of the most annoying types of ads on web pages.
 
 * **AdGuard Assistant** (legacy version). This custom extension is designed to control filtering directly from the browser page (manual blocking, exclusion of the site, etc.). 
 
