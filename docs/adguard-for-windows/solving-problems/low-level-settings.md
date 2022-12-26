@@ -55,7 +55,7 @@ Allows displaying the QUIC protocol records in the filtering log. For blocked re
 
 ### Block Java
 
-Some websites and web services still support Java Plug-Ins. The API that serves as the basis for Java plug-ins has serious security vulnerabilities. You can disable such plug-ins for security purposes. Nevertheless, even if you decide to use *Block Java* option, Javascript will still be enabled. 
+Some websites and web services still support Java Plug-Ins. The API that serves as the basis for Java plug-ins has serious security vulnerabilities. You can disable such plug-ins for security purposes. Nevertheless, even if you decide to use *Block Java* option, JavaScript will still be enabled. 
 
 ### Action applied to blocked DNS requests
 

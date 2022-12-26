@@ -78,7 +78,7 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 
 ![forma2 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma2en.png)
 
-3. Enter the address of the page where you have encountered the problem (or full download link in case of an app), and the browser where you've encountered a problem;
+3. Enter the address of the page and the browser (or the download link in case of an app) where you've encountered a problem;
 
 ![forma3 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma3en.png)
 

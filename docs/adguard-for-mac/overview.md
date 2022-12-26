@@ -47,7 +47,7 @@ Aside from the more general and universally applicable filters (like Base filter
 * filters aimed at tracking prevention (like Tracking Protection filter),
 * language-specific ad filters that block content in a selected language,
 * Social media filter that removes “Like” and “Share” buttons,
-* Annoyances filter for cookie warnings, in-page popups and others of the same ilk,
+* Annoyances filter for cookie warnings, in-page pop-ups and others of the same ilk,
 * and even a filter that unblocks some ads instead of blocking them — Filter for search ads and self-promotions. 
 
 AdGuard filters are automatically updated. Our developers create them all based on user feedback received. You can always help other AdGuard users (and yourself, in perspective) by sending us reports right from the app's Assistant (it's really handy, we'll tell you more about the Assistant further on), or from the [website](https://agrd.io/report). If you wish to know more about AdGuard filters, here is [some info](/general/ad-filtering/adguard-filters).

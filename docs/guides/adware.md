@@ -7,7 +7,7 @@ sidebar_position: 5
 
 If you suspect your computer is infected by malware or viruses, first of all you can inspect your computer with utilities from leading antiviruses.
 
-## Free antivirus utilities** {#free-antivirus}
+## Free antivirus utilities {#free-antivirus}
 
 There are many of them and you can use any one you prefer, for example:
 
@@ -17,7 +17,7 @@ If this check with antivirus utilities revealed nothing, but the computer still 
 
 ## How to clean your system from Adware {#adware}
 
-On the Internet, you can find a lot of applications that are aimed at fighting this problem. You can use any utility you like. But we strongly recommend using **[AdwareCleaner](https://www.malwarebytes.com/adwcleaner)** by **Malwarebytes**, **[Avast One](https://www.avast.com/c-adware-removal-tool)** by **Avast**, or **[Adaware]**(https://www.adaware.com). These adware scanners are quite easy to use and you will be able to handle them by yourself.
+On the Internet, you can find a lot of applications that are aimed at fighting this problem. You can use any utility you like. But we strongly recommend using **[AdwareCleaner](https://www.malwarebytes.com/adwcleaner)** by **Malwarebytes**, **[Avast One](https://www.avast.com/c-adware-removal-tool)** by **Avast**, or **[Adaware](https://www.adaware.com)**. These adware scanners are quite easy to use and you will be able to handle them by yourself.
 
 Let's take AdwareCleaner as an example. After the application has been downloaded and successfully installed, take the following steps:
 
