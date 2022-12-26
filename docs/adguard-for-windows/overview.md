@@ -27,7 +27,7 @@ At the very bottom of the screen you will find *Advanced Settings*. Changing som
 
 ### Ad Blocker
 
-This is the main module of AdGuard for Windows that removes ads from the websites you visit and from the apps installed on your device. To filter out advertising and privacy-threatening content such as banners, pop-ups, or trackers AdGuard uses different filters: groups of rules with a similar purpose written with a [special syntax](/general/ad-filtering/create-own-filters). To understand what filters are and how they work read [this article](../../general/ad-filtering/how-ad-blocking-works).
+This is the main module of AdGuard for Windows that removes ads from the websites you visit and from the apps installed on your device. To filter out advertising and privacy-threatening content such as banners, pop-ups, or trackers AdGuard uses different filters: groups of rules with a similar purpose written with a [special syntax](/general/ad-filtering/create-own-filters). To understand what filters are and how they work read [this article](/general/ad-filtering/how-ad-blocking-works).
 
 ![Ad Blocker *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/ad-blocker.png)
 
@@ -77,7 +77,7 @@ In the DNS protection module of AdGuard for Windows you can select the DNS serve
 
 There are numerous websites access to which should be restricted if the PC is used by children. This task is accomplished by Parental Control.
 
-![Parental Control](https://cdn.adguard.com/content/kb/ad_blocker/windows/overview/parental-control.png)
+![Parental Control](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
 
 The module checks the contents of web pages opened in the browser and filters those with content undesirable for children: images and texts for adults, crude language, violence, drug propaganda, etc. Parental Control settings are password protected so that the child is not able to go round the restrictions. This module not only blocks directions to undesirable sites but can also delete the links that are inappropriate for children from the search results. Filter sensitivity is flexibly adjusted.
 
