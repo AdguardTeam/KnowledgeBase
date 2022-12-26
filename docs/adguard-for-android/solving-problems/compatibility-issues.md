@@ -15,17 +15,17 @@ Other VPN apps are incompatible with AdGuard running in the Local VPN filtering 
 
 The Private DNS feature was introduced in Android Pie. Before version Q, Private DNS didn't break AdGuard DNS filtering logic and the DNS forwarding through AdGuard worked normally. But starting from version Q, the presence of Private DNS forces apps to redirect traffic through the system resolver instead of AdGuard. See Android [devs blog](https://android-developers.googleblog.com/2018/04/dns-over-tls-support-in-android-p.html) for more details.
 
-> Some device manufacturers keep Private DNS settings hidden and set 'Automatic' mode as a default one. Thus, disabling Private DNS is impossible but we can make the system think that the upstream is not valid. The system will use AdGuard as a bootstrap for the first host resolution and we can block it with a `$network` rule. A failed bootstrap request causes the system to redirect DNS traffic through AdGuard.
+> Some device manufacturers keep Private DNS settings hidden and set 'Automatic' mode as a default one. Thus, disabling Private DNS is impossible but we can make the system think that the upstream is not valid by blocking it with a `$network` rule. For instance, if the system uses Google DNS by default, we can add rules `|8.8.4.4^$network` and `|8.8.8.8^$network` to block Google DNS.
 
 ### Unsupported browsers
 
 1. **UC Browsers**: UC Browser, UC Browser for x86, UC Mini, UC Browser HD
 
-To be able to filter HTTPS traffic, AdGuard needs to install a certificate into the device's user storage. UC-family browsers don't trust user certificates, so AdGuard cannot perform HTTPS filtering there. 
+To be able to filter HTTPS traffic, AdGuard requires the user to install a certificate into the device's trusted user certificates. Unfortunately, UC-family browsers don't trust user certificates, so AdGuard cannot perform HTTPS filtering there.
 
 **Solution**
 
-To solve this problem, move the certificate to the system storage. This will require granting root access. 
+*Requires root access*. To solve this problem, move the certificate to the system certificates store.
 
 2. **Opera mini**: Opera mini, Opera mini with Yandex
 
@@ -41,7 +41,7 @@ AdGuard cannot filter its traffic when operating in **Manual proxy mode** becaus
 
 **Solution**
 
-There is no solution at this moment.
+Use *Local VPN* filtering mode.
 
 4. **Puffin Browser**: Puffin Browser, Puffin Browser Pro
 
