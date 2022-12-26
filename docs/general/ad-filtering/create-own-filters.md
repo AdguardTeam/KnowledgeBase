@@ -772,7 +772,7 @@ http://regexr.com/3cesk
 3. `@@||example.org/page/*$replace=/Z/Y/`
 
 * Both rule 1 and 2 will be applied to all requests sent to `example.org`.
-* Rule 2 is disabled for requests matching `||example.org/page/`, **but rule 1 still works!**.
+* Rule 2 is disabled for requests matching `||example.org/page/`, **but rule 1 still works!**
 
 **Disabling `$replace` rules**
 
@@ -1981,7 +1981,7 @@ The way **element hiding** and **CSS rules** are applied is platform-specific.
 
 **In AdGuard Browser extension**, the so called "user stylesheets" are used. They have higher priority than even the inline styles.
 
-**Extended CSS selectors** use Javascript to work and basically add an inline style themselves, therefore they can override any style.
+**Extended CSS selectors** use JavaScript to work and basically add an inline style themselves, therefore they can override any style.
 
 ## HTML filtering rules {#html-filtering-rules}
 
@@ -2103,19 +2103,19 @@ $@$script[tag-content="banner"]
 
 We recommend to use this kind of exceptions only if it is not possible to change the hiding rule itself. In other cases it is better to change the original rule, using domain restrictions.
 
-## Javascript rules {#javascript-rules}
+## JavaScript rules {#javascript-rules}
 
 AdGuard supports a special type of rules that allows you to inject any javascript code to websites pages.
 
 > **Restrictions**
 >
-> Javascript rules can be used [**only in trusted filters**](#trusted-filters).
+> JavaScript rules can be used [**only in trusted filters**](#trusted-filters).
 
 > **Compatibility with different versions of AdGuard**
 >
-> Javascript rules are not supported by AdGuard Content Blocker.
+> JavaScript rules are not supported by AdGuard Content Blocker.
 
-We **strongly recommend** using [scriptlets](#scriptlets) instead of Javascript rules whenever possible. JS rules are supposed to help with debugging, but as a long-time solution a scriptlet rule should be used.
+We **strongly recommend** using [scriptlets](#scriptlets) instead of JavaScript rules whenever possible. JS rules are supposed to help with debugging, but as a long-time solution a scriptlet rule should be used.
 
 **Syntax**
 
