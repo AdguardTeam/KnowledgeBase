@@ -456,7 +456,7 @@ The rule applies to requests for which the type has not been determined or does 
 
 > **Deprecation notice**
 >
-> This modifier is deprecated and no longer supported. Rules with it are considered as invalid.
+> This modifier is deprecated and is no longer supported. Rules with it are considered as invalid.
 > If you need to suppress WebRTC, consider using the `nowebrtc` [scriptlet](#scriptlets).
 
 The rule applies only to WebRTC connections.
@@ -470,7 +470,7 @@ The rule applies only to WebRTC connections.
 
 > **Deprecation notice**
 >
-> `$object-subrequest` modifier is deprecated and no longer supported. Rules with it are considered as invalid.
+> `$object-subrequest` modifier is deprecated and is no longer supported. Rules with it are considered as invalid.
 > The rule corresponds to requests by browser plugins (it is usually Flash).
 
 #### Exception modifiers {#exception-modifiers}
@@ -2222,7 +2222,7 @@ The `:not()` pseudo-class allows to select elements which are *not matched* by s
 
 > **Deprecation notice**
 >
-> The `:if-not()` pseudo-class is deprecated and no longer supported. Rules with it are considered as invalid.
+> The `:if-not()` pseudo-class is deprecated and is no longer supported. Rules with it are considered as invalid.
 
 This pseudo-class was basically a shortcut for `:not(:has())`. It was supported by ExtendedCss for better compatibility with some filters subscriptions.
 
