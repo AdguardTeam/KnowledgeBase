@@ -1667,7 +1667,7 @@ Draft CSS 4.0 specification describes the [`:has()` pseudo-class](https://www.w3
 
 > **Deprecation notice**
 >
-> `:if()` is no longer supported as synonyms for `:has()`.
+> `:if()` is no longer supported as a synonym for `:has()`.
 
 **Syntax**
 
