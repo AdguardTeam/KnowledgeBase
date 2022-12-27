@@ -1993,7 +1993,7 @@ The `:xpath()` pseudo-class allows to select an element by evaluating an XPath e
 
 > Extended selectors with defined `target` as *any* selector — `*:xpath(expression)` — can still be used but it is not recommended, so `target` should be specified instead.
 
-> Works properly only at the end of selector, except of [pseudo-class :remove()](#remove-pseudos).
+> Works properly only at the end of selector, except for [pseudo-class :remove()](#remove-pseudos).
 
 **Examples**
 
@@ -2121,7 +2121,7 @@ selector { remove: true; }
 
 > For applying the `:remove()` pseudo-class to any element, a [universal selector](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*` should be used. Otherwise such extended selector may be considered as invalid, e.g. `.banner > :remove()` is not valid for removing any child element of `banner` class element, so it should look like `.banner > *:remove()`.
 
-> If the `:remove()` pseudo-class or the `remove` pseudo-property is used, all style properties are ignored except of the [`debug` pseudo-property](#selectors-debug-mode).
+> If the `:remove()` pseudo-class or the `remove` pseudo-property is used, all style properties are ignored except for the [`debug` pseudo-property](#selectors-debug-mode).
 
 
 **Examples**
