@@ -2032,7 +2032,7 @@ subject:nth-ancestor(n)
 
 ##### `:nth-ancestor()` limitations {#extended-css-nth-ancestor-limitations}
 
-> The `:nth-ancestor()` pseudo-class is not supported inside argument of the [`:not()` pseudo-class](#extended-css-not).
+> The `:nth-ancestor()` pseudo-class is not supported inside the argument of the [`:not()` pseudo-class](#extended-css-not).
 
 **Examples**
 
@@ -2072,7 +2072,7 @@ subject:upward(ancestor)
 
 ##### `:upward()` limitations {#extended-css-upward-limitations}
 
-> The `:upward()` pseudo-class is not supported inside argument of the [`:not()` pseudo-class](#extended-css-not).
+> The `:upward()` pseudo-class is not supported inside the argument of the [`:not()` pseudo-class](#extended-css-not).
 
 **Examples**
 
@@ -2201,7 +2201,7 @@ The `:not()` pseudo-class allows to select elements which are *not matched* by s
 
 > If the `:not()` pseudo-class argument `selectors` is an extended selector, due to the way how the `:not()` pseudo-class is implemented in ExtendedCss v2.0, it is impossible to apply it to the top DOM node which is `html`, i.e. `#?#html:not(<extended-selectors>)` does not work. So if `target` is not defined or defined as a [universal selector](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*`, the extended pseudo-class applying is limited to **`html`'s children**, e.g. rules `#?#:not(...)` and `#?#*:not(...)` are parsed as `#?#html *:not(...)`. Please note that there is no such limitation for a standard selector arg, i.e. `#?#html:not(.locked)` works fine.
 
-> The `:not()` is considered as a standard CSS pseudo-class inside argument of the [`:upward()` pseudo-class](#extended-css-upward) because `:upward()` supports only standard selectors.
+> The `:not()` is considered as a standard CSS pseudo-class inside the argument of the [`:upward()` pseudo-class](#extended-css-upward) because `:upward()` supports only standard selectors.
 
 > "Up-looking" pseudo-classes which are [`:nth-ancestor()`](#extended-css-nth-ancestor) and [`:upward()`](#extended-css-upward) are not supported inside `selectors` argument for `:not()` pseudo-class.
 
