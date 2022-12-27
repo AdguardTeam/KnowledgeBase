@@ -1674,8 +1674,8 @@ Draft CSS 4.0 specification describes the [`:has()` pseudo-class](https://www.w3
 ```
 [target]:has(selector)
 ```
-- `target` — optional, standard or extended css selector, can be missed for checking *any* element
-- `selector` — required, standard or extended css selector
+- `target` — optional, standard or extended CSS selector, can be missed for checking *any* element
+- `selector` — required, standard or extended CSS selector
 
 The pseudo-class `:has()` selects the `target` elements that fit to the `selector`. Also the `selector` can start with a combinator.
 
@@ -1761,7 +1761,7 @@ The `:contains()` pseudo-class principle is very simple: it allows to select the
 ```
 [target]:contains(match)
 ```
-- `target` — optional, standard or extended css selector, can be missed for checking *any* element
+- `target` — optional, standard or extended CSS selector, can be missed for checking *any* element
 - `match` — required, string or regular expression for matching element `textContent`. Regular expression flags are supported.
 
 **Examples**
@@ -1804,7 +1804,7 @@ The `:matches-css()` pseudo-class allows to match the element by its current sty
 ```
 [target]:matches-css([pseudo-element, ] property: pattern)
 ```
-- `target` — optional, standard or extended css selector, can be missed for checking *any* element
+- `target` — optional, standard or extended CSS selector, can be missed for checking *any* element
 - `pseudo-element` — optional, valid standard pseudo-element, e.g. `before`, `after`, `first-line`, etc.
 - `property` — required, a name of CSS property to check the element for
 - `pattern` —  required, a value pattern that is using the same simple wildcard matching as in the basic url filtering rules OR a regular expression. For this type of matching, AdGuard always does matching in a case insensitive manner. In the case of a regular expression, the pattern looks like `/regexp/`.
@@ -1865,7 +1865,7 @@ The `:matches-attr()` pseudo-class allows to select an element by its attributes
 ```
 [target]:matches-attr("name"[="value"])
 ```
-- `target` — optional, standard or extended css selector, can be missed for checking *any* element
+- `target` — optional, standard or extended CSS selector, can be missed for checking *any* element
 - `name` — required, simple string *or* string with wildcard *or* regular expression for attribute name matching
 - `value` — optional, simple string *or* string with wildcard *or* regular expression for attribute value matching
 
@@ -1916,7 +1916,7 @@ The `:matches-property()` pseudo-class allows to select an element by matching i
 ```
 [target]:matches-property("name"[="value"])
 ```
-- `target` — optional, standard or extended css selector, can be missed for checking *any* element
+- `target` — optional, standard or extended CSS selector, can be missed for checking *any* element
 - `name` — required, simple string *or* string with wildcard *or* regular expression for element property name matching
 - `value` — optional, simple string *or* string with wildcard *or* regular expression for element property value matching
 
@@ -1984,7 +1984,7 @@ The `:xpath()` pseudo-class allows to select an element by evaluating a XPath ex
 ```
 [target]:xpath(expression)
 ```
-- `target`- optional, standard or extended css selector
+- `target`- optional, standard or extended CSS selector
 - `expression` — required, valid XPath expression
 
 ##### `:xpath()` limitations {#extended-css-xpath-limitations}
@@ -2019,7 +2019,7 @@ The `:nth-ancestor()` pseudo-class allows to lookup the *nth* ancestor relative 
 ```
 subject:nth-ancestor(n)
 ```
-- `subject` — required, standard or extended css selector
+- `subject` — required, standard or extended CSS selector
 - `n` — required, number >= 1 and < 256, distance to the needed ancestor from the element selected by `subject`
 
 **Syntax**
@@ -2027,7 +2027,7 @@ subject:nth-ancestor(n)
 ```
 subject:nth-ancestor(n)
 ```
-- `subject` — required, standard or extended css selector
+- `subject` — required, standard or extended CSS selector
 - `n` — required, number >= 1 and < 256, distance to the needed ancestor from the element selected by `subject`
 
 ##### `:nth-ancestor()` limitations {#extended-css-nth-ancestor-limitations}
@@ -2065,10 +2065,10 @@ The `:upward()` pseudo-class allows to lookup the ancestor relative to the previ
 ```
 subject:upward(ancestor)
 ```
-- `subject` — required, standard or extended css selector
+- `subject` — required, standard or extended CSS selector
 - `ancestor` — required, specification for the ancestor of the element selected by `subject`, can be set as:
   - *number* >= 1 and < 256 for distance to the needed ancestor, same as [`:nth-ancestor()`](#extended-css-nth-ancestor)
-  - *standard css selector* for matching closest ancestor
+  - *standard CSS selector* for matching closest ancestor
 
 ##### `:upward()` limitations {#extended-css-upward-limitations}
 
@@ -2113,7 +2113,7 @@ selector:remove()
 ! pseudo-property
 selector { remove: true; }
 ```
-- `selector` — required, standard or extended css selector
+- `selector` — required, standard or extended CSS selector
 
 ##### `:remove()` and `remove` limitations {#extended-css-remove-limitations}
 
@@ -2147,7 +2147,7 @@ The `:is()` pseudo-class allows to match any element that can be selected by any
 ```
 [target]:is(selectors)
 ```
-- `target` — optional, standard or extended css selector, can be missed for checking *any* element
+- `target` — optional, standard or extended CSS selector, can be missed for checking *any* element
 - `selectors` — [*forgiving selector list*](https://drafts.csswg.org/selectors-4/#typedef-forgiving-selector-list) of standard or extended selectors. For extended selectors only compound selectors are supported, not complex.
 
 ##### `:is()` limitations {#extended-css-is-limitations}
@@ -2192,7 +2192,7 @@ The `:not()` pseudo-class allows to select elements which are *not matched* by s
 ```
 [target]:not(selectors)
 ```
-- `target` — optional, standard or extended css selector, can be missed for checking *any* element
+- `target` — optional, standard or extended CSS selector, can be missed for checking *any* element
 - `selectors` — selector list of standard or extended selectors
 
 ##### `:not()` limitations {#extended-css-not-limitations}
