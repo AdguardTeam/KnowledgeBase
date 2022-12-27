@@ -1819,7 +1819,7 @@ The `:matches-css()` pseudo-class allows to match the element by its current sty
 
 > **Restrictions**
 >
-> Regexp patterns **does not support** flags.
+> Regexp patterns **do not support** flags.
 
 **Examples**
 
@@ -1876,7 +1876,7 @@ The `:matches-attr()` pseudo-class allows to select an element by its attributes
 
 > **Restrictions**
 >
-> Regexp patterns **does not support** flags.
+> Regexp patterns **do not support** flags.
 
 **Examples**
 
@@ -1932,7 +1932,7 @@ The `:matches-property()` pseudo-class allows to select an element by matching i
 
 > **Restrictions**
 >
-> Regexp patterns **does not support** flags.
+> Regexp patterns **do not support** flags.
 
 **Examples**
 
