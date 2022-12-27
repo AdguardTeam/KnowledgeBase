@@ -1977,7 +1977,7 @@ div:matches-property(memoizedProps._owner.src=/ad/)
 
 #### Pseudo-class `:xpath()` {#extended-css-xpath}
 
-The `:xpath()` pseudo-class allows to select an element by evaluating a XPath expression.
+The `:xpath()` pseudo-class allows to select an element by evaluating an XPath expression.
 
 **Syntax**
 
