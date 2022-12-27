@@ -1970,7 +1970,7 @@ div:matches-property(memoizedProps._owner.src=/ad/)
 
 > **For filters maintainers:**
 >
-> To check properties of specific element, you should do:
+> To check properties of a specific element, do the following:
 > 1. Inspect the needed page element or select it in `Elements` tab of browser DevTools.
 > 2. Run `console.dir($0)` in `Console` tab.
 
