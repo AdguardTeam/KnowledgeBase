@@ -1679,7 +1679,7 @@ Draft CSS 4.0 specification describes the [`:has()` pseudo-class](https://www.w3
 
 The pseudo-class `:has()` selects the `target` elements that fit to the `selector`. Also the `selector` can start with a combinator.
 
-A selector list can be set in `selector` as well. In this case **all** selectors in the list are being matched for now. In future it will be fixed for [`<forgiving-relative-selector-list>`](https://www.w3.org/TR/selectors-4/#typedef-forgiving-relative-selector-list) as argument.
+A selector list can be set in `selector` as well. In this case **all** selectors in the list are being matched for now. In the future it will be fixed for [`<forgiving-relative-selector-list>`](https://www.w3.org/TR/selectors-4/#typedef-forgiving-relative-selector-list) as argument.
 
 ##### `:has()` limitations {#extended-css-has-limitations}
 
