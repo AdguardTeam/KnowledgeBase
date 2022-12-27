@@ -2193,7 +2193,7 @@ The `:not()` pseudo-class allows to select elements which are *not matched* by s
 [target]:not(selectors)
 ```
 - `target` — optional, standard or extended CSS selector, can be missed for checking *any* element
-- `selectors` — selector list of standard or extended selectors
+- `selectors` — list of standard or extended selectors
 
 ##### `:not()` limitations {#extended-css-not-limitations}
 
