@@ -1467,7 +1467,6 @@ Basic URL exceptions shall not disable rules with `$jsonprune` modifier. They ca
         }
     ]
 }
-</details>
 ```
 
 </details>
@@ -1517,7 +1516,7 @@ Basic URL exceptions shall not disable rules with `$jsonprune` modifier. They ca
 
 > In AdGuard for Windows, Mac and Android, **running CoreLibs version 1.11 or later**, JSONPath expressions may be used as keys in filter expressions.
 
-* `||example.org^$jsonprune=\$.elems[?(has "\$.a.b.c")]` – remove all children of `elems` which have a property selectable by the JSONPath expression `$.a.b.c`.
+* `||example.org^$jsonprune=\$.elems[?(has "\$.a.b.c")]` removes all children of `elems` which have a property selectable by the JSONPath expression `$.a.b.c`.
 
 <details>
 <summary>Input</summary>
@@ -1555,7 +1554,7 @@ Basic URL exceptions shall not disable rules with `$jsonprune` modifier. They ca
 
 </details>
 
-* `||example.org^$jsonprune=\$.elems[?(key-eq "\$.a.b.c" "abc")]` – remove all children of `elems` which have a property selectable by the JSONPath expression `$.a.b.c` with a value equal to `"abc"`.
+* `||example.org^$jsonprune=\$.elems[?(key-eq "\$.a.b.c" "abc")]` removes all children of `elems` which have a property selectable by the JSONPath expression `$.a.b.c` with a value equal to `"abc"`.
 
 <details>
 <summary>Input</summary>
