@@ -42,7 +42,7 @@ sidebar_position: 4
 
 [本地化指南](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) 包含广泛的语言列表。 不同语言复数形式的数量以这种方式显示： 'nplurals=2', 'nplurals=4' ，依此类推。 '=' 等号后的数字表示相应语言的形式数量。
 
-Also, you can get information about plural forms in the [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). CLDR 复数规则，即指十进制数字（1.5; 2.3; 100.1…）的其他词形式。但在 AdGuard 翻译中我们不使用它们。
+此外，您还可以在 [Unicode 通用语言环境数据存储库](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules)（CLDR）中获取有关复数形式的相关信息。 CLDR 复数规则，即指十进制数字（1.5; 2.3; 100.1…）的其他词形式。但在 AdGuard 翻译中我们不使用它们。
 
 ## AdGuard 翻译中的复数形式 {#translations}
 
@@ -74,7 +74,7 @@ Also, you can get information about plural forms in the [Unicode Common Locale D
 
 如果您的语言名词具有三种复数形式（正如波兰语)，请用逗号分隔每一个复数形式。
 
-`hour, hours -→ godzinę, godziny, godzin`
+`hour, hours — godzinę, godziny, godzin`
 
 如果一个名词只有两种形式，则无需重复写同一形式（*通常仅适用于这种带有复数形式的字符串！*）。 但是，如果您把同一个形式重写两次也不会出错。
 

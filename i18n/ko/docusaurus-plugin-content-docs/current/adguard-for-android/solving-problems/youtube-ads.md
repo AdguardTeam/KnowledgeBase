@@ -8,7 +8,7 @@ sidebar_position: 7
 
 ## YouTube 광고 차단하는 방법
 
-![Instruction *mobile](https://cdn.adtidy.org/public/Adguard/Blog/Android/3-6/share.gif)
+![지침 *mobile](https://cdn.adtidy.org/public/Adguard/Blog/Android/3-6/share.gif)
 
 1. YouTube 앱을 열고 원하는 동영상을 시청합니다.
 2. *공유* 버튼을 누르고 앱 목록에서 *Android용 AdGuard*를 선택합니다.

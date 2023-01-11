@@ -8,7 +8,7 @@ sidebar_position: 7
 
 ## Смотрите Youtube в приложении AdGuard
 
-![Instruction *mobile](https://cdn.adtidy.org/public/Adguard/Blog/Android/3-6/share.gif)
+![Инструкция *mobile](https://cdn.adtidy.org/public/Adguard/Blog/Android/3-6/share.gif)
 
 1. Откройте приложение YouTube и включите видео, которое хотите посмотреть.
 2. Нажмите на кнопку *Поделиться* и выберите *AdGuard для Android* в списке приложений.

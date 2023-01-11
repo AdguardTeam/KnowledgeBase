@@ -14,12 +14,12 @@ Firefox Nightly가 AdGuard 인증서를 신뢰하도록 하려면 다음 단계�
 1. 브라우저를 실행합니다.
 2. **설정**>** Firefox 정보**로 이동합니다.
 
-![About Firefox *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
+![Firefox 정보 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
 
 3. Firefox 로고를 5번 탭합니다.
 4. **설정**>** Secret Settings**으로 이동합니다.
 
-![Secret Settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
+![비밀 설정 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
 
 5. **Use third party CA certificates** 기능을 활성화합니다.
 
@@ -40,9 +40,9 @@ Firefox Nightly가 AdGuard 인증서를 신뢰하도록 하려면 다음 단계�
 6. 지정된 폴더에는 두 개의 파일이 필요합니다.
     - `cert9.db`
     - `key4.db`
-7. We need to move these files to a folder of the browser where the security certificate issue occurred:
+7. 보안 인증서 문제가 발생한 브라우저의 폴더로 이러한 파일을 이동해야 합니다.
 - `data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyy.default`.
-8. The full command will look like this:
+8. 전체 명령은 다음과 같습니다.
     - `adb shell su`
     - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxxx.default/cert9.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
     - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxxx.default/key4.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`

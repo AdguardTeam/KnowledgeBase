@@ -3,7 +3,7 @@ title: 受限模式导致的一些问题
 sidebar_position: 10
 ---
 
-拥有安卓7+操作系统的手机、笔记本或电视的用户可能会遇到使用**受限模式（Restricted Mode）的配置文件**导致的问题。 如您有遇到这种情况，**AdGuard** 与其他使用 VPN 的应用程序一样进行选择性过滤 VPN 流量时，受其限制。 因此，AdGuard 无法使用**本地 VPN 模式**开启保护。 Also, one of the reasons for this situation may be using **Dual App/Dual Messenger profile** on your device. 以下是您可以规避该问题的操作。
+拥有安卓7+操作系统的手机、笔记本或电视的用户可能会遇到使用**受限模式（Restricted Mode）的配置文件**导致的问题。 如您有遇到这种情况，**AdGuard** 与其他使用 VPN 的应用程序一样进行选择性过滤 VPN 流量时，受其限制。 因此，AdGuard 无法使用**本地 VPN 模式**开启保护。 除此之外，如您在设备上使用**双开应用/应用分身帐户**也会导致相似的问题。 以下是您可以规避该问题的操作。
 
 ## 解决方法
 
@@ -41,13 +41,13 @@ sidebar_position: 10
 
 ## LG 和三星设备
 
-**LG** 或**三星**手机的用户也可能会遇到相同的问题。 It can be caused by using **Dual App/Dual Messenger** function (which automatically creates a restricted profile). 为了解决该问题，您需要禁用该功能。
+**LG** 或**三星**手机的用户也可能会遇到相同的问题。 这可能是由**双开应用/双 Messenger 账户**功能（其本质是隐式创建了受限账户）引起的。 为了解决该问题，您需要禁用该功能。
 
 ### 三星
 
 - 前往**设置**；
 - 点击**高级**功能；
-- Scroll down and press **Dual messenger**;
+- 向下移动，点击**双 Messenger 账户**；
 - 禁用所有应用使用**应用分身**；
 - 锁定您的设备5分钟；
 - 解锁屏幕并重新试图创建 VPN 账号。
@@ -56,6 +56,6 @@ sidebar_position: 10
 
 - 前往**设置**；
 - 选择**常规**标签钮；
-- Scroll down and press **Dual app**;
+- 向下移动，点击**双开应用**；
 - 移除应用分身列表中所有的应用；
 - 重启您的设备。

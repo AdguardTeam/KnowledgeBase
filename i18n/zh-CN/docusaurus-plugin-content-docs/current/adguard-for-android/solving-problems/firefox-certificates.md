@@ -14,12 +14,12 @@ sidebar_position: 11
 1. 打开浏览器
 2. 前往**「设置」**>**「关于 Firefox Nightly」**
 
-![About Firefox *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
+![关于 Firefox *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
 
 3. 点击 Firefox 徽标五次
 4. 前往**「设置」**>**「Secret Settings」**
 
-![Secret Settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
+![秘密设置 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
 
 5. 开启**使用第三方 CA 证书**（Use third party CA certificates）
 
@@ -40,9 +40,9 @@ sidebar_position: 11
 6. 在指定文件夹里我们需要两个文件：
     - `cert9.db`
     - `key4.db`
-7. We need to move these files to a folder of the browser where the security certificate issue occurred:
-- `data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyy.default`.
-8. The full command will look like this:
+7. 我们需要将这些文件移到发生安全证书问题的浏览器的一个文件夹中：
+- `data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyy.default`。
+8. 完整命令如下所示：
     - `adb shell su`
     - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxxx.default/cert9.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
     - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxxx.default/key4.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`

@@ -7,9 +7,9 @@ sidebar_position: 5
 
 如果您怀疑计算机被恶意软件植入或病毒感染了，首先可以使用领先的防病毒软件的实用程序检查您的计算机。
 
-**免费的防病毒实用程序**
+## Free antivirus utilities {#free-antivirus}
 
-There are many of them and you can use any one you prefer, for example:
+实用程序不可枚举，您可以使用任何自己喜欢的，比如：
 
 [Dr.Web CureIt!](http://www.freedrweb.com/cureit/?lng=en)
 
@@ -17,9 +17,9 @@ There are many of them and you can use any one you prefer, for example:
 
 ## 如何清除在系统上的恶意广告软件 {#adware}
 
-在互联网上可以找到许多用于解决此问题的应用程序。 您可以使用任何自己喜欢的实用程序。 但是我们强烈建议您使用 **Malwarebytes** 的 **[AdwareCleaner ](https://www.malwarebytes.com/adwcleaner)**。 此应用程序非常易于使用，自行处理也一般不会遇到任何问题。
+在互联网上可以找到许多用于解决此问题的应用程序。 您可以使用任何自己喜欢的实用程序。 But we strongly recommend using **[AdwareCleaner](https://www.malwarebytes.com/adwcleaner)** by **Malwarebytes**, **[Avast One](https://www.avast.com/c-adware-removal-tool)** by **Avast**, or **[Adaware](https://www.adaware.com)**. 这些广告软件扫描器非常易于使用，自行处理也一般不会遇到任何问题。
 
-结束下载应用程序并成功安装后，应执行以下步骤：
+让我们以 AdwareCleaner 为例。 结束下载应用程序并成功安装后，请执行以下步骤：
 
 1) 启动应用程序。单击**立即扫描**。
 
@@ -60,23 +60,3 @@ There are many of them and you can use any one you prefer, for example:
 恶意软件和广告软件程序通常以非常简单的方式安装其首页。它们替代浏览器的桌面快捷键，任务栏和*开始*菜单项。
 
 在这种情况下，最简单的解决方式是手动删除所有快捷键，然后自己重新创建它们。
-
-### 如何删除 sindex.biz {#sindex.biz}
-
-如果您一直打开的是 sindex.biz 而不是浏览器首页，则您的浏览器的快捷键可能已经被替代。 因此，请尝试[重新创建快捷键](#shortcuts)以排除此问题。
-
-### 如何删除 Mobogenie {#mobogenie}
-
-为了删除该软件，请使用免费的实用程序检查计算机：例如 [Dr.Web CureIt！](http://www.freedrweb.com/cureit/)
-
-### 如何通过 BetterSurf 删除广告 {#bettersurf}
-
-**什么是 BetterSurf？**
-
-BetterSurf 是一款广告程序，您可将其内置到您的浏览器中。 该程序在您访问的所有网站上投放广告。 看起来，此类广告很普通，经常出现在网站发布的常规横幅中。 您很容易就会忽略它们。但是，只要稍作观察，您就可以发现这些广告以前“并不存在”。 例如，尤其在 Facebook 或 Twitter 等网站上更容易注意到这一点。
-
-要摆脱此程序，请使用[此说明](http://malwaretips.com/blogs/bettersurf-virus-removal/)。
-
-### 如何删除 Rvzr-a.akamaihd.net {#rvzr}
-
-*Rvzr-a.akamaihd.net* 的弹出窗口，则很可能是您的计算机被直接植入了恶意广告软件。 您可以在[此链接](http://malwaretips.com/blogs/rvzr-a-akamaihd-net-virus/)中找到有关如何删除它的说明。

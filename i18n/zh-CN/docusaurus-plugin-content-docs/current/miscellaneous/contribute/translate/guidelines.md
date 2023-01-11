@@ -7,18 +7,18 @@ sidebar_position: 3
 
 一旦您在 [Crowdin](https://crowdin.com/profile/adguard/) 上打开我们的页面，选择您需要的任何项目并选择您的语言。
 
-![Language *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/language.png)
+![语言 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/language.png)
 
 即使在打开某一个软件文件夹后，您也能切换语言。
 
-![Language1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/language1.png)
+![语言1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/language1.png)
 
 选择任何可用的软件文件夹并选择一个文件，现在您可以开始翻译了。
 
-![Files *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/files.png)
-> Please note: you can also change the Crowdin interface language by clicking the *Settings* icon in the top right corner of the page. In the opened window scroll down to the *UI language* tab. Open it, choose a language and click **Change**.
+![文件1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/files.png)
+> 请注意：用户也可以通过点击页面右上角的「*Settings*」图标改变 Crowdin 的界面语言。 在打开的窗口中向下滚动到「*UI language*」标签。 打开它，选择一种语言，然后点击「**Change**」。
 
-![Language1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/settings_en.png)
+![语言1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/settings_en.png)
 
 **以下指南将帮助您多了解翻译的过程。**
 
@@ -64,7 +64,7 @@ sidebar_position: 3
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/tasks.png)
 
-9. 有时候您会见到具有复数形式的短语。 由于中文的复数形式与英文不同，在这种情况下您只需要翻译一次。 You can read how to translate plural forms [here](../plural-forms).
+9. 有时候您会见到具有复数形式的短语。 由于中文的复数形式与英文不同，在这种情况下您只需要翻译一次。 您可以[在这里](../plural-forms)阅读如何翻译复数形式。
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/plurals.png)
 

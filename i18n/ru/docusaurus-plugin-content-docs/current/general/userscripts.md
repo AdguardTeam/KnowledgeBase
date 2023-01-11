@@ -7,21 +7,21 @@ sidebar_position: 5
 
 ### Поддерживаемые продукты
 
-AdGuard может значительно расширять функциональность сайтов, работая как менеджер пользовательских скриптов. You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](/adguard-for-windows/overview), [AdGuard for Android](/adguard-for-android/overview) and [AdGuard for Mac](/adguard-for-mac/overview).
+AdGuard может значительно расширять функциональность сайтов, работая как менеджер пользовательских скриптов. Добавлять собственные скрипты или управлять существующими вы можете в трёх наших продуктах: [AdGuard для Windows](/adguard-for-windows/overview), [AdGuard для Android](/adguard-for-android/overview) и [AdGuard для Mac](/adguard-for-mac/overview).
 
 ### Рекомендуемые скрипты AdGuard
 
 > Эти пользовательские скрипты разработаны в AdGuard, и мы можем гарантировать, что они эффективны и безопасны. Помните: каждый раз, когда вы загружаете пользовательский скрипт из неизвестного источника, вы подвергаете себя риску, поскольку некоторые скрипты могут быть опасны для вашего компьютера. Старайтесь скачивать новые расширения только из проверенных источников, которым вы доверяете на 100%. Чуть позже мы приведём [несколько примеров](#more-userscripts) популярных сайтов.
 
-* **AdGuard Extra**. An extension that blocks advertising in difficult cases when the usual filter-based approach is not enough.
+* **AdGuard Extra**. Расширение, которое блокирует рекламу в сложных случаях, когда привычного подхода, основанного на фильтрах, недостаточно.
 
-* **AdGuard Popup Blocker**. The name speaks for itself: it blocks popups — one of the most annoying types of ads on web pages.
+* **AdGuard Popup Blocker**. Он блокирует один из самых раздражающих типов рекламы — всплывающие окна.
 
-* **AdGuard Assistant** (legacy version). This custom extension is designed to control filtering directly from the browser page (manual blocking, exclusion of the site, etc.).
+* **Помощник AdGuard** (старая версия). Расширение, предназначенное для управления фильтрацией прямо со страницы браузера (ручная блокировка, занесение сайта в исключения и т. д.).
 
 > Обратите внимание, что это устаревшая версия Помощника и нет смысла использовать её на новых системах, потому что её давно заменил [Браузерный помощник](https://adguard.com/adguard-assistant/overview.html). Но старый Помощник может пригодиться, если для вашего браузера нет расширения Браузерного помощника.
 
-* **Disable AMP**. A script, pre-installed only in AdGuard for Android, that disables AMP (Accelerated Mobile Pages) on the Google search results page.
+* **Отключить AMP**. Скрипт, предустановленный только в AdGuard для Android, который отключает AMP (Accelerated Mobile Pages) на странице результатов поиска Google.
 
 ## Где взять больше пользовательских скриптов{#more-userscripts}
 

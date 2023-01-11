@@ -5,7 +5,7 @@ sidebar_position: 2
 
 Цель Базы знаний — предоставить пользователям актуальную информацию по всем вопросам, касающимся блокировщика AdGuard. Так как в продуктах постоянно происходят изменения, статьи часто теряют свою актуальность.
 
-This is why we placed all of our KB content on [GitHub](https://github.com/AdguardTeam/KnowledgeBase), and now literally anyone can contribute to it by suggesting edits and translations to existing articles, as well as totally new ones.
+По этой причине мы переместили всё содержимое нашей Базы знаний на [GitHub](https://github.com/AdguardTeam/KnowledgeBase), и теперь буквально каждый человек может принять участие в её обновлении — редактировать и переводить существующие статьи или создавать новые.
 
 ## Как предложить изменение или написать новую статью {#suggest-change}
 
@@ -15,13 +15,13 @@ This is why we placed all of our KB content on [GitHub](https://github.com/Adgua
 
 Сайт Базы знаний создан с помощью Docusaurus 2 — современного генератора статических сайтов. Предлагая изменения или дополнения, вам необходимо учитывать принципы работы платформы. Вы можете прочитать о них в [Docusaurus Guides](https://docusaurus.io/docs/category/guides).
 
-Для предварительного просмотра предложенных изменений вы можете развернуть эту Базу знаний локально на своём компьютере. Detailed instructions on how to do this can be found [in the README file](https://github.com/AdguardTeam/KnowledgeBase#readme) on this Knowledge base's GitHub page.
+Для предварительного просмотра предложенных изменений вы можете развернуть эту Базу знаний локально на своём компьютере. Подробную инструкцию о том, как это сделать, можно найти в [файле README](https://github.com/AdguardTeam/KnowledgeBase#readme) на странице Базы знаний на GitHub.
 
 ## Переводы статей {#translate-adguard}
 
-Translation of the existing articles of the Knowledge base is carried out on [the Crowdin platform](https://crowdin.com/profile/adguard). All the details about translations and working with Crowdin can be found [in the dedicated article](../translate/guidelines) of the AdGuard Ad Blocker Knowledge base.
+Cуществующие статьи Базы знаний можно перевести на [платформе Crowdin](https://crowdin.com/profile/adguard). Все подробности о переводах статей и работе с Crowdin можно найти [в соответствующей статье](../translate/guidelines) Базы знаний блокировщика рекламы AdGuard.
 
-При работе над статьями Базы знаний AdGuard вы можете встретить строки, содержащие формы множественного числа (плюральные формы). К их переводу стоит отнестись с особым вниманием. [In a separate article](../translate/plural-forms), we described in detail the difficulties that can arise when translating strings with plural forms and gave extensive instructions on how to work with them on the Crowdin platform.
+При работе над статьями Базы знаний AdGuard вы можете встретить строки, содержащие формы множественного числа (плюральные формы). К их переводу стоит отнестись с особым вниманием. [В отдельной статье](../translate/plural-forms) мы подробно описали трудности, которые могут возникнуть при переводе таких строк, и дали исчерпывающие инструкции по работе с ними на платформе Crowdin на английском языке.
 
 ## Работа над существующими задачами
 

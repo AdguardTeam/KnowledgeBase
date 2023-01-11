@@ -5,7 +5,7 @@ sidebar_position: 3
 
 Основная функция Браузерного Помощника — это управление фильтрацией прямо из браузера. Он существует уже довольно давно, и его форма и содержание менялись. Раньше он был обычным пользовательским скриптом, встроенным в приложение AdGuard для Windows, а потом превратился в полноценное браузерное расширение. Теперь он определённо приносит больше пользы.
 
-![Browser Assistant *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/assistant-menu.png)
+![Браузерный помощник *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/assistant-menu.png)
 
 ## Преимущества
 
@@ -15,7 +15,7 @@ sidebar_position: 3
 
 ### Совместимость с основным приложением
 
-If you got into the habit of using our previous AdGuard Ad Blocker extension [in Integration mode](/adguard-browser-extension/integration-mode), you may like the solution that we have developed for the new Browser Assistant.
+Если вы привыкли использовать предыдущее расширение блокировщика рекламы AdGuard [в режиме интеграции](/adguard-browser-extension/integration-mode), вам может понравиться решение, которое мы разработали для нового Браузерного помощника.
 
 Справочная информация:
 
@@ -29,7 +29,7 @@ If you got into the habit of using our previous AdGuard Ad Blocker extension [in
 
 У нового Браузерного помощника есть своя вкладка в настройках AdGuard для Windows, наряду с Антитрекингом, Антифишингом, Родительским контролем и другими. Там вы найдёте ссылку для загрузки расширения для вашего браузера по умолчанию. Кроме того, там можно установить флажок для включения прежней версии Помощника.
 
-![Settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
+![Настройки *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 
 ## Предыдущая версия Помощника
 

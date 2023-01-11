@@ -17,7 +17,7 @@ To start configuring AdGuard for Mac, you need to click the gear in the upper ri
 
 ## General Preferences
 
-![General](https://cdn.adtidy.org/content/kb/ad_blocker/mac/General.jpg)
+![常规](https://cdn.adtidy.org/content/kb/ad_blocker/mac/General.jpg)
 
 Descriptions under option titles seem self-explanatory, but still:
 
@@ -43,7 +43,7 @@ Aside from the more general and universally applicable filters (like Base filter
 * filters aimed at tracking prevention (like Tracking Protection filter),
 * language-specific ad filters that block content in a selected language,
 * Social media filter that removes “Like” and “Share” buttons,
-* Annoyances filter for cookie warnings, in-page popups and others of the same ilk,
+* Annoyances filter for cookie warnings, in-page pop-ups and others of the same ilk,
 * and even a filter that unblocks some ads instead of blocking them — Filter for search ads and self-promotions.
 
 AdGuard filters are automatically updated. Our developers create them all based on user feedback received. You can always help other AdGuard users (and yourself, in perspective) by sending us reports right from the app's Assistant (it's really handy, we'll tell you more about the Assistant further on), or from the [website](https://agrd.io/report). If you wish to know more about AdGuard filters, here is [some info](/general/ad-filtering/adguard-filters).
@@ -124,11 +124,11 @@ As for the second option — well, yes, in fact you can use AdGuard as a regular
 
 There are other useful AdGuard options that shouldn't go unnoticed in this article, since they add much to user experience.
 
-### License
+### 许可证
 
 First, there's the License tab that you can open from the dropdown main menu (the one that opens once you click the gear icon on the upper right of the main window). From this tab you can see which license type you are using, check its status and validity period.
 
-![License](https://cdn.adtidy.org/content/kb/ad_blocker/mac/License.jpg)
+![许可证](https://cdn.adtidy.org/content/kb/ad_blocker/mac/License.jpg)
 
 In this same tab you can refresh your license status, renew your license or reset the license key using the corresponding buttons.
 

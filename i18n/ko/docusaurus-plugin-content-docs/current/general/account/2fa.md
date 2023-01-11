@@ -18,14 +18,14 @@ AdGuard 계정에서 이중 인증 기능을 설정하는 것을 권해드립니
 
 3) 휴대폰의 카메라 또는 인증 앱을 통해 인증 코드를 스캔합니다.
 
-![The verification code *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/2Fa2en.png)
+![인증 코드 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/2Fa2en.png)
 
 *중요 정보*
 * 인증 백업 코드를 저장하십시오. 휴대폰 분실과 같은 비상시에 인증 코드를 통해 계정을 복구할 수 있습니다.
 
 모든 것이 완료되면 다음번에 계정에 로그인할 때 다음과 같은 페이지가 표시됩니다.
 
-![The result *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/2Fa3en.png)
+![결과 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/2Fa3en.png)
 
 모바일 인증 앱을 사용하여 코드를 읽고 입력하세요. 이제 계정에 로그인되었습니다.
 

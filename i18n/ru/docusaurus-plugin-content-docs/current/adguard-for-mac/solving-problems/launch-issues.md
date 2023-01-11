@@ -24,14 +24,14 @@ sidebar_position: 6
 1. Откройте **Терминал** и введите команду `ls -@lOae /private/var/db/KernelExtensionManagement`.
 2. Убедитесь, что флаг `restricted` отсутствует (как на скриншоте).
 
-![Command example *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/restricted-flag.jpg)
+![Пример команды *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/restricted-flag.jpg)
 
 3. Перезагрузите ваш Mac в режиме восстановления.
-4. Open **Utilities** → **Terminal**.
+4. Откройте **Утилиты** → **Терминал**.
 5. Введите `csrutil disable`.
 6. Введите пароль администратора.
 7. Перезагрузите Mac.
 8. Откройте **Терминал** и введите команду `sudo chflags restricted /private/var/db/KernelExtensionManagement`.
 9. Перезагрузите ваш Mac в режиме восстановления.
-10. Open **Utilities** → **Terminal** → Enter `csrutil enable` → Enter administrator password → Reboot your Mac.
+10. Откройте **Утилиты** → **Терминал** → Введите `csrutil enable` → Введите пароль администратора → Перезагрузите Mac.
 11. Включите защиту AdGuard.

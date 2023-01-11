@@ -83,7 +83,7 @@ In Stealth Mode, you can prevent a website from seeing the search queries from y
 
 Apart from the large key modules of AdGuard Browser extension, there are several more specific features that can be configured in the *General* and *Additional settings* tabs of the extension settings.
 
-### General {#general}
+### 常规 {#general}
 
 In the *General* tab, you can allow search ads and the [self-promotion of websites](/general/ad-filtering/search-ads), enable the automatic activation of language-specific filters, indicate the filters update interval, etc.
 
