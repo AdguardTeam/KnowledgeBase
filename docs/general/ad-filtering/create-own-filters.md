@@ -1365,8 +1365,9 @@ preroll.ts
 
 #### **`$jsonprune`** {#jsonprune-modifier}
 
-`$jsonprune` rules modify the JSON response of a matching request by removing JSON items that match a modified
-[JSONPath](https://goessner.net/articles/JsonPath/) expression. They do not modify responses which are not valid JSON.
+`$jsonprune` rules modify the response to a matching request by removing JSON items that match a modified
+[JSONPath](https://goessner.net/articles/JsonPath/) expression. They do not modify responses which are not
+valid JSON or JSONP (padded JSON) documents.
 
 **Syntax**
 
