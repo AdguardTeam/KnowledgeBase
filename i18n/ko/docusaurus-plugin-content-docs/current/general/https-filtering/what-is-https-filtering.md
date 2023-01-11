@@ -51,7 +51,7 @@ EV 인증서는 더 높은 수준의 보안을 의미하며 일반 인증서보�
 
 ### HTTPS 필터링과 관련된 문제
 
-A [2017 study](https://cdn.adtidy.org/public/Adguard/Blog/https/interception-ndss17.pdf) shows that 5 to 10% of HTTPS connections are established by HTTPS-filtering applications. 이 HTTPS 필터링 애플리케이션 중 대부분 바이러스 백신 소프트웨어입니다. 나쁜 소식은 테스트된 26개의 바이러스 중 24개가 연결 보안 수준을 떨어뜨렸고 3분의 2가 해킹 연결에 취약하다는 것입니다.
+[2017년 연구](https://cdn.adtidy.org/public/Adguard/Blog/https/interception-ndss17.pdf)에 따르면 HTTPS 연결의 5~10%가 HTTPS 필터링을 사용하는 애플리케이션에 의해 이루어집니다. 이 HTTPS 필터링 애플리케이션 중 대부분 바이러스 백신 소프트웨어입니다. 나쁜 소식은 테스트된 26개의 바이러스 중 24개가 연결 보안 수준을 떨어뜨렸고 3분의 2가 해킹 연결에 취약하다는 것입니다.
 
 연구원들의 결론은 인터넷 보안 커뮤니티가 보안 연결을 필터링하는 애플리케이션에 세심한주의를 기울여야 한다는 것입니다. 그리고 그러한 프로그램의 개발자는 필터링 구현의 품질에 가장 진지하게주의를 진지하게 임해야 합니다.
 
@@ -59,7 +59,7 @@ AdGuard는 연구원들에 의해 테스트되지 않았습니다. 저희 추정
 
 AdGuard는 연구원의 결과에 전적으로 동의합니다. 또한 현재 겪고 있는 문제와 필터링 메커니즘의 품질 및 보안을 개선하기 위한 계획에 대해 알려 드리고자 합니다. 이러한 목록은 우선 순위에 따라 정렬됩니다.
 
-위의 연구에서 발견된 대부분의 문제는 인증서 유효성 검사 메커니즘과 관련이 있습니다. 저희는 별도의 인증서 유효성 검사 라이브러리를 생성 중입니다. 또한 인증서 유효성 검사 라이브러리를 오픈 소스로 만들고 싶습니다. A [separate article](../known-issues) lists all the known drawbacks of HTTPS filtering in AdGuard and our plans to fix them.
+위의 연구에서 발견된 대부분의 문제는 인증서 유효성 검사 메커니즘과 관련이 있습니다. 저희는 별도의 인증서 유효성 검사 라이브러리를 생성 중입니다. 또한 인증서 유효성 검사 라이브러리를 오픈 소스로 만들고 싶습니다. AdGuard의 HTTPS 필터링 단점에 대한 [자세한 내용](../known-issues)은 이 기사에서 확인할 수 있습니다.
 
 #### Android 7 이상에서 HTTPS 필터링 문제
 

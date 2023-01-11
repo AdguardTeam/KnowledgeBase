@@ -11,7 +11,7 @@ sidebar_position: 2
 
 ## Как получить возврат
 
-В соответствии с нашими [Условиями продажи](https://adguard.com/terms-of-sale.html), вы можете получить 100% возврат средств за лицензионный ключ AdGuard, который приобрели на https://adguard.com. To get a refund, contact our support team at **support@adguard.com** and indicate the payment option you've used.
+В соответствии с нашими [Условиями продажи](https://adguard.com/terms-of-sale.html), вы можете получить 100% возврат средств за лицензионный ключ AdGuard, который приобрели на https://adguard.com. Чтобы получить возврат, свяжитесь с нашей командой поддержки по адресу **support@adguard.com** и укажите способ оплаты, который вы использовали.
 
 В возврате может быть отказано, если вы:
 * приобрели лицензию более 60 дней назад,

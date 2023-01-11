@@ -5,7 +5,7 @@ sidebar_position: 1
 
 AdGuard for Safari was designed to conform to Apple's restrictions for ad blocking browser extensions and is the most popupar ad blocker for Safari. Although it can’t be compared to our desktop ad blocking apps, it's free and can protect you from ads, trackers, phishing, and malicious websites.
 
-## General {#general}
+## 常规 {#general}
 
 ![General tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/General.png)
 
@@ -50,7 +50,7 @@ This content blocker is the main tool against counters and other web analytics t
 
 ### AdGuard Social {#adguard_social}
 
-*AdGuard Social* contains filters against social media buttons, widgets, scripts, and icons. Other annoyance filters can also be found in this section: filters against popups, mobile app banners, cookie notices, and more. To enable them, find *Social Widgets* in the Filters tab.
+*AdGuard Social* contains filters against social media buttons, widgets, scripts, and icons. Other annoyance filters can also be found in this section: filters against pop-ups, mobile app banners, cookie notices, and more. To enable them, find *Social Widgets* in the Filters tab.
 
 ### AdGuard Security {#adguard_security}
 

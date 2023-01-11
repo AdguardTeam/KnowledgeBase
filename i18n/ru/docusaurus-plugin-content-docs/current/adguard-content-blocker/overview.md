@@ -9,7 +9,7 @@ sidebar_position: 1
 
 В качестве альтернативы Google предлагает разработчикам API блокировки контента. У этого API есть строгие ограничения. Сейчас его поддерживают поддерживают два браузера: Яндекс Браузер и Samsung Internet Browser. С этим API не работают многие сложные правила фильтрации, которые поддерживаются в других продуктах AdGuard.
 
-![Available browsers *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker.png)
+![Доступные браузеры *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker.png)
 
 Блокировщик контента AdGuard был разработан в соответствии с политикой Google Play. По сравнению с другими продуктами AdGuard, Блокировщик контента имеет меньше возможностей блокировки рекламы:
 

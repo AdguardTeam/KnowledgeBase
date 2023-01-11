@@ -94,7 +94,7 @@ If a rule is subject to the list of limitations described below, then it won’t
 
 **What will be blocked with this filter?**
 
-- This filter will block obstructions on the page. These elements are not ads, but they obstruct the view and make it difficult to see the actual content of the website. Such elements include cookie notices, third-party widgets, in-page popups, email subscription forms, banners with special offers, and aggressively placed social media widgets.
+- This filter will block obstructions on the page. These elements are not ads, but they obstruct the view and make it difficult to see the actual content of the website. Such elements include cookie notices, third-party widgets, in-page pop-ups, email subscription forms, banners with special offers, and aggressively placed social media widgets.
 
 **Limitations and Exceptions**
 

@@ -21,43 +21,43 @@ AdGuard для Android не представлен на Google Play: Google за
 * Для Android 8+: разрешите загрузку [AdGuard apk](https://adguard.com/ru/adguard-android/overview.html) (см. следующий шаг). В открывшемся окне нажмите **Настройки** &gt **Далее из этого источника**. Продолжите установку.
 * Android 6 и 7: откройте **Настройки**, перейдите в пункт **Система и устройство** и выберите **Расширенные настройки**. Сдвиньте переключатель **Неизвестные источники** вправо. В сообщении предупреждения нажмите **ОК**.
 
-![Installing apps from unknown sources *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/unknown_sources1.png)
+![Установка приложений из неизвестных источников *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/unknown_sources1.png)
 
 * Android 5: откройте **Настройки**, затем в разделе **Личные данные** выберите пункт **Безопасность**. Отметьте галочкой пункт **Неизвестные источники**. В сообщении предупреждения нажмите **ОК**.
 
-![Installing apps from unknown sources *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/unknown_sources2.png)
+![Установка приложений из неизвестных источников *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/unknown_sources2.png)
 
 Теперь можно установить приложение. Запустите браузер и введите [https://adguard.com/apk](https://adguard.com/apk) или отсканируйте QR-код:
 
-![QR code *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/qr.png)
+![QR-код *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/qr.png)
 
 Вы увидите запрос на сохранение загруженного файла. Нажмите **ОК**.
 
-![Save the file *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/save_the_file.png)
+![Сохраните файл *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/save_the_file.png)
 
 Когда загрузка завершится, система попросит подтверждения. Нажмите **Установить**.
 
-![Installation *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/1.png)
+![Установка *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/1.png)
 
 Вам предложат прочитать **Лицензионное соглашение** и **Политику конфиденциальности**. Вы также можете помочь в разработке продукта. Для этого отметьте галочкой *Отправлять автоматические отчёты об ошибках* и *Отправлять технические данные и информацию о взаимодействиях*. После этого нажмите**Принять**.
 
-![Privacy Policy *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/2.png)
+![Политика конфиденциальности *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/2.png)
 
 Дальше вам нужно будет выбрать между **быстрой** и **полной** настройкой.
 
-![Setups *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/3.png)
+![Настройки *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/3.png)
 
 Полная настройка запускает серию экранов, на которых можно настроить функции приложения под себя. Сначала вас спросят, хотите ли вы видеть поисковую рекламу:
 
-![Search ads *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/5.png)
+![Поисковая реклама *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/5.png)
 
 Затем укажите, хотите ли вы блокировать виджеты соцсетей:
 
-![Social widgets *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/6.png)
+![Социальные виджеты *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/6.png)
 
 На следующем экране вас спросят, блокировать ли раздражители: уведомления о файлах cookie, окна онлайн-консультантов и др.:
 
-![Annoyances *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/7.png)
+![Раздражители *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/7.png)
 
 На этом экране вам не нужно ничего выбирать: просто обратите внимание на информацию о том, как смотреть видео на YouTube без рекламы:
 
@@ -65,19 +65,19 @@ AdGuard для Android не представлен на Google Play: Google за
 
 Далее появится экран настроек защиты от трекинга. Выберите желаемый уровень защиты:
 
-![Privacy settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/8.png)
+![Настройки конфиденциальности *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/8.png)
 
 На следующем экране выберите, хотите ли вы получать уведомления об опасных сайтах:
 
-![Security *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/9.png)
+![Безопасность *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/9.png)
 
 Следующий шаг довольно важен. Вам предложат включить HTTPS-фильтрацию. Рекомендуем сделать это, чтобы блокировать рекламу на большинстве сайтов и приложений:
 
-![HTTPS filtering *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/10.png)
+![HTTPS-фильтрация *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/10.png)
 
 Последний шаг — включить локальный VPN:
 
-![Local VPN *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/11.png)
+![Локальный VPN *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/11.png)
 
 Установка **AdGuard** завершена.
 
@@ -85,6 +85,6 @@ AdGuard для Android не представлен на Google Play: Google за
 
 Если вам нужно переустановить AdGuard на устройстве, сначала удалите его. Для этого откройте **Настройки** и выберите **Установленные приложения** (Android 6), **Приложения** (Android 5 и 7) или **Приложения и уведомления** (Android 8+). Найдите **AdGuard** в списке установленных приложений и нажмите **Удалить**.
 
-![Reinstall AdGuard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/12.png)
+![Переустановите AdGuard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/12.png)
 
 Чтобы переустановить приложение, повторите действия, описанные в разделе «Установка».

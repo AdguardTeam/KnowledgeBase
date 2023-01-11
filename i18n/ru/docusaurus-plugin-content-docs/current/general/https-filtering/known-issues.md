@@ -3,15 +3,15 @@ title: Известные проблемы
 sidebar_position: 2
 ---
 
-> Last update: September 20, 2022
+> Последнее обновление: 20 сентября 2022 года
 
-> Understanding this article may require some basic knowledge about encryption, TLS, and HTTPS.
+> Понимание этой статьи может потребовать некоторых базовых знаний о шифровании, TLS и HTTPS.
 
 Для начала посмотрите на эту диаграмму, которая показывает общую структуру протокола HTTPS:
 
 ![Что такое HTTPS-фильтрация](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
 
-AdGuard copies properties of the TLS connection that your browser uses:
+AdGuard копирует свойства TLS-соединения, которые использует ваш браузер:
 
 * AdGuard использует ту же самую версию TLS
 * AdGuard использует те же методы шифрования (ciphers), что и ваш браузер

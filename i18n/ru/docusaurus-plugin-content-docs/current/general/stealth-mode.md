@@ -23,7 +23,7 @@ sidebar_position: 4
 
 #### Очистить URL от параметров отслеживания
 
-If you enable this option, AdGuard will strip tracking parameters like `utm_*` and `fb_ref` from pages’ URLs.
+AdGuard уберёт из адресов страниц такие параметры отслеживания, как `utm_*` и `fb_ref`.
 
 ### Методы отслеживания {#tracking-methods}
 
@@ -97,4 +97,4 @@ DPI (Deep Packet Inspection) — это система глубокого ана
 
 AdGuard может изменять данные исходящих пакетов, чтобы клиент не попадал под критерии блокировки по DPI. А это значит, что, включив эту опцию, пользователи смогут обойти ограничения и получить доступ к необходимому контенту. Пока функция обхода DPI работает не для всех провайдеров, но мы продолжаем работать над её улучшением.
 
-> The "Protect from DPI" feature is already implemented in AdGuard for Windows, AdGuard for Mac, and AdGuard for Android.
+> Функция «Защита от DPI» уже реализована в приложениях AdGuard для Windows, AdGuard для Mac и AdGuard для Android.

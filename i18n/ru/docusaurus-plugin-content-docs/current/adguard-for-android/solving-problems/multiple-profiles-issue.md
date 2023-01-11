@@ -9,8 +9,8 @@ sidebar_position: 13
 
 Чтобы решить эту проблему, вам нужно удалить приложение для всех пользователей: перейдите в Настройки > Все приложения > AdGuard. Нажмите три точки в правом верхнем углу и выберите *Удалить для всех пользователей*.
 
-![Uninstall *mobile](https://cdn.adtidy.org/public/Adguard/kb/android/multiple_users/uninst_en.png)
+![Удалить *mobile](https://cdn.adtidy.org/public/Adguard/kb/android/multiple_users/uninst_en.png)
 
-![Uninstall *mobile](https://cdn.adtidy.org/public/Adguard/kb/android/multiple_users/uninst2_en.png)
+![Удалить *mobile](https://cdn.adtidy.org/public/Adguard/kb/android/multiple_users/uninst2_en.png)
 
-![Uninstall *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/multiple-profiles-issue/uninst3_en.png)
+![Удалить *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/multiple-profiles-issue/uninst3_en.png)

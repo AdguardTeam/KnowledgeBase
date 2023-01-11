@@ -13,7 +13,7 @@ sidebar_position: 1
 
 Чтобы устранить это недоразумение, мы добавили новый раздел «Расход батареи». Вы можете получить доступ к нему, нажав на значок батареи в правом верхнем углу главного экрана.
 
-![Battery stats *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/battery/batterystats.png)
+![Данные о батарее *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/battery/batterystats.png)
 
 Внутри вы найдёте график, показывающий реальное потребление ресурса батареи AdGuard запоследние 24 часа, с возможностью получить более детальную информацию о почасовом расходе, нажав на точки на графике. Кроме того, там также есть числовая разбивка релевантных данных и краткое техническое пояснение.
 
@@ -21,7 +21,7 @@ sidebar_position: 1
 
 На скриншотах ниже показана статистика потребления батареи за ночь и утро:
 
-![Battery 1 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_1.png) ![Battery 2 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_2.png) ![Battery 3 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_3.png)
+![Батарея 1 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_1.png) ![Батарея 2 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_2.png) ![Батарея 3 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_3.png)
 
 Из этих скриншотов видно, что:
 

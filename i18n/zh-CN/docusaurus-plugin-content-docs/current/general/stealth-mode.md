@@ -11,7 +11,7 @@ Below we will list and describe the main features and options that you can contr
 
 > Some options may not be available depending on the particular product due to OS or other limitations.
 
-### General {#general}
+### 常规 {#general}
 
 #### Hide your search queries {#searchqueries}
 

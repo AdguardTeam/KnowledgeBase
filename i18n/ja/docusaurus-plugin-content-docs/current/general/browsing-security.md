@@ -61,4 +61,4 @@ We will gladly accept any help! If you want to send us a complaint about a phish
 
 ### False-positive responses
 
-Occasionally, some non-malicious websites get added to AdGuard's filters. We do our best to reduce the percentage of false positives, but they still occur. If you come across this behavior from AdGuard, please send us a complaint about the false-positive alarm. You can submit such complaints via our technical support at **support@adguard.com** or on [our Forum](http://forum.adguard.com/).
+Occasionally, some non-malicious websites get added to AdGuard's filters. We do our best to reduce the percentage of false positives, but they still occur. If you come across this behavior from AdGuard, please send us a complaint about the false-positive alarm. You can submit such complaints via our technical support at **support@adguard.com** or on [our forum](http://forum.adguard.com/).

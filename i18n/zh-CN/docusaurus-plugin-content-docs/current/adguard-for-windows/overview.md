@@ -27,13 +27,13 @@ At the very bottom of the screen you will find *Advanced Settings*. Changing som
 
 ### Ad Blocker
 
-This is the main module of AdGuard for Windows that removes ads from the websites you visit and from the apps installed on your device. To filter out advertising and privacy-threatening content such as banners, pop-ups, or trackers AdGuard uses different filters: groups of rules with a similar purpose written with a special syntax. To understand what filters are and how they work read [this article](/general/ad-filtering/how-ad-blocking-works).
+This is the main module of AdGuard for Windows that removes ads from the websites you visit and from the apps installed on your device. To filter out advertising and privacy-threatening content such as banners, pop-ups, or trackers AdGuard uses different filters: groups of rules with a similar purpose written with a [special syntax](/general/ad-filtering/create-own-filters). To understand what filters are and how they work read [this article](/general/ad-filtering/how-ad-blocking-works).
 
 ![Ad Blocker *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/ad-blocker.png)
 
 In the Ad Blocker module you can:
-* enable automatic activation of language-specific filters
-* disable [search ads and self-promotion](/general/ad-filtering/search-ads) blocking
+* enable automatic activation of language-specific filters,
+* disable [search ads and self-promotion](/general/ad-filtering/search-ads) blocking,
 * activate pre-installed filters such as *AdGuard Base filter*,
 * install filters from the list or add a custom filter by clicking the *Add a filter* button,
 * make changes to existing rule groups using the *Filter editor* button,
@@ -54,7 +54,7 @@ To learn everything about Stealth Mode and its many options, [read this article]
 
 ### Browsing Security
 
-Browsing Security gives strong protection against malicious and fishing websites. No, AdGuard for Windows is not an antivirus. It will neither stop the download of a virus when it's already started, nor delete the already existing ones. But it will warn you if you're about to proceed to a website whose domain has been added to our "untrusted sites" database, or to download a file from such website. You can find more information about how this module works in the [dedicated article](/general/stealth-mode).
+Browsing Security gives strong protection against malicious and fishing websites. No, AdGuard for Windows is not an antivirus. It will neither stop the download of a virus when it's already started, nor delete the already existing ones. But it will warn you if you're about to proceed to a website whose domain has been added to our "untrusted sites" database, or to download a file from such website. You can find more information about how this module works in the [dedicated article](/general/browsing-security).
 
 In this module you can
 * enable notifications to block requests to malicious and phishing sites,
@@ -76,6 +76,8 @@ In the DNS protection module of AdGuard for Windows you can select the DNS serve
 ### Parental Control
 
 There are numerous websites access to which should be restricted if the PC is used by children. This task is accomplished by Parental Control.
+
+![Parental Control](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
 
 The module checks the contents of web pages opened in the browser and filters those with content undesirable for children: images and texts for adults, crude language, violence, drug propaganda, etc. Parental Control settings are password protected so that the child is not able to go round the restrictions. This module not only blocks directions to undesirable sites but can also delete the links that are inappropriate for children from the search results. Filter sensitivity is flexibly adjusted.
 
@@ -109,13 +111,13 @@ AdGuard Assistant is Legacy Assistant that you may use if the [new Assistant](..
 
 **AdGuard Extra**
 
-This is a custom extension designed to fight the technique of re-inserting blocked ads - the so-called ad blocker circumvention/ad reinjection. Both are advanced anti-ad blocker methods that continue to rise in popularity among advertisers.
+This is a custom extension designed to fight the technique of re-inserting blocked ads — the so-called ad blocker circumvention/ad reinjection. Both are advanced anti-ad blocker methods that continue to rise in popularity among advertisers.
 
 AdGuard Extra is essentially a mini-program that changes the way pages work,and it does so in such a way that it becomes much more difficult for sites to use the above-mentioned functions to bypass blockers.
 
 **AdGuard Popup Blocker**
 
-This extension prevents popup windows from opening when you view web pages. Some popups are considered useful – they may contain settings for site administering or additional reference information demonstrated upon clicking a link. That is why you can turn off the Blocker if needed. This extension doesn’t work on websites added to the AdGuard exceptions list either. It is turned off by default, but you can turn it on in the application settings. You will find more detailed information about this extension in our Knowledge base.
+This extension prevents popup windows from opening when you view web pages. Some pop-ups are considered useful – they may contain settings for site administering or additional reference information demonstrated upon clicking a link. That is why you can turn off the Blocker if needed. This extension doesn’t work on websites added to the AdGuard exceptions list either. It is turned off by default, but you can turn it on in the application settings. You will find more detailed information about this extension in our Knowledge base.
 
 **Web of Trust**
 
@@ -127,7 +129,7 @@ The penultimate module is dedicated to network filtering, and here you will find
 
 ![Network Settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/network-settings.png)
 
-In this module you can check the checkbox "Use AdGuard as an HTTP proxy" to use AdGuard as a regular HTTP proxy which will filter all traffic passing through it. You can also enable the "Filter websites with EV certificates" feature. Extended Validation (EV) SSL Certificates offer a stronger safety guarantee; owners of such websites have to pass a thorough and globally standardized identity verification process defined by EV guidelines. Which is the reason why some users trust websites with such certificates and prefer not to filter them.
+In this module you can check the checkbox "Use AdGuard as an HTTP proxy" to use AdGuard as a regular HTTP proxy which will filter all traffic passing through it. You can also enable the *Filter websites with EV certificates* feature. Extended Validation (EV) SSL Certificates offer a stronger safety guarantee; owners of such websites have to pass a thorough and globally standardized identity verification process defined by EV guidelines. Which is the reason why some users trust websites with such certificates and prefer not to filter them.
 
 At last, there is a section with proxy settings. There you can specify which proxy server AdGuard should use to update filters, get new versions and so on.
 
@@ -156,7 +158,7 @@ There are other useful AdGuard options that shouldn't go unnoticed in this artic
 
 By clicking the Support tab you will open a dialog box through which you can report a bug, submit a feature request, or simply share your opinion of the product.
 
-### License
+### 许可证
 
 ![License *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
 

@@ -13,7 +13,7 @@ sidebar_position: 1
 
 以减轻大家对该问题的误解，我们设计了新屏幕称为“电池使用率”。 您可以在主屏幕的右上角上点击「电池」图标以查看。
 
-![Battery stats *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/battery/batterystats.png)
+![电池统计 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/battery/batterystats.png)
 
 这里可以查看最近24小时内 AdGuard 电池的使用量。点击图标上的绿线可以按每一个小时查看关于流量使用的更详细信息。 除此之外，还有相关数据的信息以及简短技术说明。
 
@@ -21,7 +21,7 @@ sidebar_position: 1
 
 在以下的截图上您可以看到夜间和早间电池使用量的统计：
 
-![Battery 1 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_1.png) ![Battery 2 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_2.png) ![Battery 3 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_3.png)
+![电池1 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_1.png) ![电池2 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_2.png) ![电池3 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_3.png)
 
 在以上的截图中可以发现:
 
@@ -56,7 +56,7 @@ _cpu.active=_ 100-200mA 是指中央处理器（CPU） 运行导致的额外消�
 
 来将第二张截图上的 _CPU total_ 转换为毫秒：506000
 
-A coefficient _cpu.active_ for 2GHz will be roughly equal to 225mAh
+2GHz 的 _cpu.active_ 系数大约等于 225mAh
 
 最后结果
 > 506000 * 225 / (60 * 60 * 1000) = 31,625mAh

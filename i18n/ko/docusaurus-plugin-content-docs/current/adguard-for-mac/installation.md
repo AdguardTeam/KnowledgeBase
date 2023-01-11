@@ -17,7 +17,7 @@ sidebar_position: 2
 
 컴퓨터에 Mac용 AdGuard를 설치하려면 브라우저를 열고 주소 표시 줄에 _adguard.com_을 입력한 후 열리는 페이지에서 **다운로드**를 누릅니다.
 
-![Download the app *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/1.jpg)
+![앱 다운로드 *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/1.jpg)
 
 _AdguardInstaller.dmg_가 다운로드될 때까지 기다렸다가 Dock 패널에 다운로드된 파일 목록에서 해당 아이콘을 두 번 클릭합니다.
 
@@ -58,13 +58,13 @@ Finder 앱을 엽니다.
 
 응용 프로그램 섹션으로 이동하여 AdGuard를 우클릭하고 **휴지통으로 이동**을 선택합니다.
 
-![Move AdGuard to Trash *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/11.jpg)
+![AdGuard를 휴지통으로 이동 *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/11.jpg)
 
 ### 고급 제거 방법
 
-**Use this instruction only if you know what you are doing or if our support service specifically recommended you the 'advanced uninstall'. Also, do all the steps from the "regular uninstall" first.**
+**고객 지원 팀에서 특별히 '고급 제거'를 권장하거나 고급 제거에 익숙한 경우에만 이 지침을 사용하십시오. 또한 '일반 제거'의 모든 단계를 먼저 수행하십시오.**
 
-* After that, delete following AdGuard files:
+* 그다음에는 다음 AdGuard 파일을 삭제하세요.
     * /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (폴더)
     * ~/Library/Preferences/com.adguard.mac.adguard.plist (파일)
     * ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac (폴더)
@@ -73,7 +73,7 @@ Finder 앱을 엽니다.
     * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log (파일)
     * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log (파일)
 
-**이 파일을 삭제하시려면** 터미널 앱을 열고 다음 명령을 입력하고 실행하십시오.
+이 파일을 삭제하시려면 터미널 앱을 열고 다음 명령을 입력하고 실행하십시오.
 
 `sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"` `rm -R "$HOME/Library/Application Support/com.adguard.mac.adguard"` `rm $HOME/Library/Preferences/com.adguard.mac.adguard.plist` `rm -R "$HOME/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac"` `find "$HOME/Library/Application Support" -name "com.adguard.browser_extension_host.nm.json" -delete` `sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist` `sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist` `sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log` `sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log`
 

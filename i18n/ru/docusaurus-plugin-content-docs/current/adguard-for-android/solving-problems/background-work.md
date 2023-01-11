@@ -19,7 +19,7 @@ sidebar_position: 9
 
 Зайдите в **Настройки** > **Приложения** > **Управление приложениями** > прокрутите вниз, чтобы найти **AdGuard**, включите **Автозапуск**.
 
-![Xiaomi Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
+![Настройки Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
 
 На том же экране прокрутите вниз до настройки **Контроль активности**, перейдите в неё и выберите "Нет ограничений".
 
@@ -29,19 +29,19 @@ sidebar_position: 9
 
 Нажмите на значок **шестерёнки** в правом верхнем углу экрана.
 
-![Miui Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_1.jpeg)
+![Настройки Miui *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_1.jpeg)
 
 На экране "Настройки" выберите пункт **"Ускорение"**.
 
-![Miui Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_2.png)
+![Настройки Miui *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_2.png)
 
 Затем нажмите на **"Закрепленные приложения"**.
 
-![Miui Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_3.jpeg)
+![Настройки Miui *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_3.jpeg)
 
 На экране **Закреплённые приложения** переведите тумблер AdGuard в активное положение.
 
-![Miui Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_4.jpeg)
+![Настройки Miui *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_4.jpeg)
 
 Готово! Вы успешно закрепили приложение AdGuard.
 
@@ -216,7 +216,7 @@ Huawei чрезвычайно изобретательны в оптимизац
 
 **Вам нужно**:
 
-1) [Install ADB *mobile_border](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer;
+1) [Установите ADB *mobile_border](https://www.xda-developers.com/install-adb-windows-macos-linux/) на ваш компьютер;
 
 2) Подключить телефон с помощью кабеля передачи данных;
 
@@ -257,7 +257,7 @@ Huawei чрезвычайно изобретательны в оптимизац
 
   - Нажмите на кнопку **Недавние задачи**:
 
-  ![Huawei recent apps *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweirecentapps.jpeg)
+  ![Недавние приложения Huawei *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweirecentapps.jpeg)
 
   - Нажмите на значок замка:
 

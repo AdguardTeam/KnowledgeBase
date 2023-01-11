@@ -18,14 +18,14 @@ sidebar_position: 3
 
 3) 使用您手机上的认证软件扫描二维码：
 
-![The verification code *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/2Fa2en.png)
+![验证码 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/2Fa2en.png)
 
 *重要信息*
 * 请您保存第二个备用密码。该密码是在您的手机丢失或被偷窃的情况下用于恢复您的帐号的必要信息。
 
 如果每个步骤都完成，下次登录个人帐号时，您将看到：
 
-![The result *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/2Fa3en.png)
+![结果 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/2Fa3en.png)
 
 使用手机的认证软件扫码并输入验证码。 登录成功了！
 

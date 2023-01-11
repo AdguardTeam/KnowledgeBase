@@ -18,14 +18,14 @@ sidebar_position: 3
 
 3) Отсканируйте код подтверждения с помощью любого приложения-аутентификатора на вашем телефоне:
 
-![The verification code *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/2Fa2en.png)
+![Проверочный код *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/2Fa2en.png)
 
 *Важно*
 * Сохраните где-нибудь резервный код второго фактора, он понадобится для восстановления вашей учётной записи в случае потери или кражи мобильного телефона;
 
 Если всё сделано правильно, то при следующем входе в аккаунт вы увидите это:
 
-![The result *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/2Fa3en.png)
+![Результат *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/2Fa3en.png)
 
 Используйте мобильное приложение-аутентификатор, чтобы считать код и ввести его. Теперь у вас должно получиться войти в аккаунт!
 

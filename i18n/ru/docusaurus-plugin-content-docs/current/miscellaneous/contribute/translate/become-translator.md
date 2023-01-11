@@ -15,7 +15,7 @@ sidebar_position: 2
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/languages.png)
 
-Вы можете начать переводить любой понравившийся вам продукт. We have some recommendations about [what files are better to start with in AdGuard Websites project](../translation-priority).
+Вы можете начать переводить любой понравившийся вам продукт. У нас есть несколько рекомендаций о том, [с каких файлов лучше начинать работу в проекте AdGuard Websites](../translation-priority).
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/folders.png)
 
@@ -35,7 +35,7 @@ sidebar_position: 2
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/mode.png)
 
-You can find some [helpful tips on translating AdGuard in this article](../guidelines). Пожалуйста, ознакомьтесь с ней.
+Мы собрали для вас [самые полезные советы и рекомендации в одной статье](../guidelines). Пожалуйста, ознакомьтесь с ней.
 
 ### Как стать пруфридером {#proofreaders}
 
@@ -51,4 +51,4 @@ You can find some [helpful tips on translating AdGuard in this article](../guide
 
 - Отвечают на комментарии, относящиеся к переводам на их язык.
 
-Каждый год лучшие пруфридеры получают подарки от AdGuard. Активные переводчики тоже не остаются без награды. Read more about our [reward system](../rewards).
+Каждый год лучшие пруфридеры получают подарки от AdGuard. Активные переводчики тоже не остаются без награды. Узнайте больше о нашей [системе вознаграждения](../rewards).

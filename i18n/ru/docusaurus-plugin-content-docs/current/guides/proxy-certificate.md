@@ -121,7 +121,7 @@ HTTP-трафик будет фильтроваться в любом случа
 
 5. Перенесите загруженный файл **cert.cer** на устройство, трафик которого вы хотите направлять через AdGuard.
 
-6. Найдите загруженный сертификат в *Файлах*. Должно появиться всплывающее окно с сообщением о загруженном профиле.
+6. Open **Settings** → **Security** → **Encryption & Credentials** → **Install a certificate**. Android devices do not trust certificates by default so there will be a warning when you choose **CA certificate**. Tap **Install anyway**.
 
 7. Откройте **Настройки** → **Профиль загружен** и нажмите **Установить** в правом верхнем углу. Введите пароль и подтвердите установку. Нажмите **Готово**.
 

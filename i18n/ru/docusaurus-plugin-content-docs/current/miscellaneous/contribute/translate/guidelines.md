@@ -7,18 +7,18 @@ sidebar_position: 3
 
 После того как вы откроете [нашу страницу в Crowdin](https://crowdin.com/profile/adguard/), выберите любой проект и язык, на который вы будете переводить.
 
-![Language *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/language.png)
+![Язык *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/language.png)
 
 Вы также сможете переключаться между языками даже после открытия определенных папок продукта.
 
-![Language1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/language1.png)
+![Язык1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/language1.png)
 
 Выберите файл (или все файлы) из любой доступной папки и приступайте к переводу.
 
-![Files *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/files.png)
+![Файлы *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/files.png)
 > Обратите внимание: вы также можете изменить язык интерфейса Crowdin, нажав на значок *Settings* в правом верхнем углу страницы. В открывшемся окне прокрутите вниз до вкладки *UI language* . Откройте её, выберите язык и нажмите **Изменить**.
 
-![Language1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/settings_en.png)
+![Язык1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/settings_en.png)
 
 **Следующие рекомендации помогут вам в этом процессе.**
 
@@ -64,7 +64,7 @@ sidebar_position: 3
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/tasks.png)
 
-9. Иногда можно встретить фразы с плюральными формами. Будьте особенно внимательны при переводе таких фраз. You can read how to translate plural forms [here](../plural-forms).
+9. Иногда можно встретить фразы с плюральными формами. Будьте особенно внимательны при переводе таких фраз. Чтобы узнать, как правильно их переводить, читайте [соответствующую статью](../plural-forms).
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/plurals.png)
 

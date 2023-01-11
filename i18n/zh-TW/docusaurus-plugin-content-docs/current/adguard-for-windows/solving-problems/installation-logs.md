@@ -5,9 +5,9 @@ sidebar_position: 4
 
 If any problems occur during the installation of AdGuard, the support team might ask you to collect and send them AdGuard installation logs. In this case you need to:
 
-1. Select **Run** command in Start menu or press **Win + R** on the keyboard.
+1. Select *Run* command in Start menu or press *Win + R* on the keyboard.
 
-2. Type in **%tmp%** and click **OK**.
+2. Type in *%tmp%* and click *OK*.
 
 ![Open temp folder *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/install-logs-1.png)
 
