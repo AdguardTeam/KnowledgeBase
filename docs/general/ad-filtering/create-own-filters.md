@@ -1367,7 +1367,9 @@ preroll.ts
 
 `$jsonprune` rules modify the response to a matching request by removing JSON items that match a modified
 [JSONPath](https://goessner.net/articles/JsonPath/) expression. They do not modify responses which are not
-valid JSON or JSONP (padded JSON) documents.
+valid JSON documents.
+
+> In AdGuard for Windows, Mac and Android, **running CoreLibs version 1.11 or later**, `$jsonprune` also supports modifying JSONP (padded JSON) documents.
 
 **Syntax**
 
