@@ -9,7 +9,13 @@ In some cases, apps won't stay in the background ("alive" or in a sleep mode) du
 
 Information on Asus devices is still far from being exhaustive so there may be more issues than listed here. We're going to update this part of the article when we know more.
 
-Go to Settings > Power Manager > Mobile Manager > Settings > Battery-saving options > Auto-start manager > AdGuard > uncheck.
+The main source of potential problems with background work on Asus devices is associated with the optimization app called Power Master. It is pre-installed and has pretty aggressive default settings, e.g. to block apps from starting and to kill background tasks when your screen turns off. To make sure apps background processing works, set up the following:
+
+1) Uncheck **Mobile Manager** > **PowerMaster** > **Settings** (or **Battery-saving options**) > **Clean up in suspend**
+
+2) Uncheck **Mobile Manager** > **PowerMaster** > **Settings** (or **Battery-saving options**) > **Auto-deny apps from auto starting**.
+
+Alternatively, instead of unchecking **Auto-deny apps from auto starting** entirely, you can go to **Settings** > **Battery-saving options** > **Auto-start manager** > **AdGuard** and uncheck it.
 
 ## Xiaomi
 
