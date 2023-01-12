@@ -19,6 +19,8 @@ Alternatively, instead of unchecking **Auto-deny apps from auto starting** entir
 
 ## Xiaomi
 
+Xiaomi (and especially MIUI) devices are among the most troublesome ones when it comes to background work. They are known to limit background processes and have non-standard permissions with a lack of proper documentation to top it off. Sometimes apps just don't work right on Xiaomi phones and there's little that can be done about that. Below are some actions you might attempt to perform if you run into any trouble regarding AdGuard's background work on various Xiaomi devices.
+
 ### MIUI 12.0.8+
 
 To let your AdGuard app run successfully in the background, do the following:
@@ -30,6 +32,8 @@ In **Settings** > **Apps** > **Manage apps** > scroll down to locate **AdGuard**
 Scroll down to **Battery saver**, tap it, and set to "No restrictions".
  
 ![Miui *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_0a.png)
+
+In Other Permissions, set all possible permissions to “On”
 
 Run the **Security** app.
 
@@ -53,11 +57,12 @@ That’s all! You’ve successfully pinned the AdGuard app.
 
 ### MIUI 12
 
-![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
-
 Go to **Settings** > **Apps** > **Manage apps** > **AdGuard**. 
 
+![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
+
 - Set Autostart to “On”
+- Set all possible permissions in Other Permissions to “On”
 - Set Battery saver to **No restrictions**
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi5en.jpeg)
@@ -72,11 +77,13 @@ Tap and hold it until a special menu pops up. Select a lock icon.
 
 The lock icon should appear above the app window.
 
-![Xiaomi](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi8en.jpeg)
+![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi8en.jpeg)
 
 ### MIUI 10-11
 
-To let your app run successfully in the background, configure settings as follows:
+To let your app run successfully in the background, configure its settings as follows:
+
+- Set Autostart to “On”
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/xiaomi1en.png)
 
@@ -88,23 +95,27 @@ To let your app run successfully in the background, configure settings as follow
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/xiaomi3en.png)
 
-### Power management
+### All models
+
+The following steps should be performed on any Xiaomi device that keeps killing the AdGuard app:
+
+#### Power management
 
 Please enable:
 
 - **Settings** > **Advanced Settings** > **Battery manager** > set **Power plan** to **Performance**
-- **Device Settings** > **Advanced Settings** > **Battery Manager** > **Protected apps** – your app needs to be Protected
-- **Device Settings** > **Apps** > **your app** > **Battery** > **Power-intensive prompt** and **Keep running after screen off**
+- **Device Settings** > **Advanced Settings** > **Battery Manager** > **Protected apps** – AdGuard needs to be Protected
+- **Device Settings** > **Apps** > **AdGuard** > **Battery** > **Power-intensive prompt** and **Keep running after screen off**
 - **Settings** > **Additional Settings** > **Battery & Performance** > **Manage apps’ battery usage** and here:
 
-1. Switch Power Saving Modes to Off
-2. Choose the following options: **Saving Power in The Background** > **Choose apps** > **Select your app** > **Background Settings** > **No restrictions**
+1. Switch Power Saving Modes to “Off”
+2. Choose the following options: **Saving Power in The Background** > **Choose apps** > **AdGuard** > **Background Settings** > **No restrictions**
 
-### App battery saver
+#### App battery saver
 
-**Security** > **Battery** > **App Battery Saver** > **AdGuard** > **No restriction**
+Set **Security** > **Battery** > **App Battery Saver** > **AdGuard** to **No restriction**
 
-### App pinning
+#### App pinning
 
 To set up AdGuard's background work for Xiaomi devices you should pay attention to Battery and Permissions.
 
