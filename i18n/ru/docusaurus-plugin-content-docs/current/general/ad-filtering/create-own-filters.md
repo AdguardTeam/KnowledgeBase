@@ -450,7 +450,7 @@ h_value = string / regexp
 
 > **Предупреждение об устаревании**
 > 
-> This modifier is deprecated and is no longer supported. Правила с ним не работают. Если вы хотите блокировать WebRTC, рассмотрите возможность использования [скриптлета](#scriptlets) `nowebrtc`.
+> Этот модификатор устарел и больше не поддерживается. Правила с ним не работают. Если вы хотите блокировать WebRTC, рассмотрите возможность использования [скриптлета](#scriptlets) `nowebrtc`.
 
 Правило применяется только к WebRTC-соединениям.
 
@@ -463,7 +463,7 @@ h_value = string / regexp
 
 > **Предупреждение об устаревании**
 > 
-> `$object-subrequest` modifier is deprecated and is no longer supported. Правила с ним не работают. Правило соответствует запросам плагинов браузера (обычно это Flash).
+> Модификатор `$object-subrequest` устарел и больше не поддерживается. Правила с ним не работают. Правило соответствует запросам плагинов браузера (обычно это Flash).
 
 #### Модификаторы правил-исключений {#exception-modifiers}
 
@@ -1350,9 +1350,9 @@ preroll.ts
 
 #### **`$jsonprune`** {#jsonprune-modifier}
 
-`$jsonprune` rules modify the response to a matching request by removing JSON items that match a modified [JSONPath](https://goessner.net/articles/JsonPath/) expression. They do not modify responses which are not valid JSON documents.
+Правила `$jsonprune` модифицируют ответ на соответствующий запрос, удаляя JSON-элементы, которые соответствуют модифицированному выражению [JSONPath](https://goessner.net/articles/JsonPath/). Эти правила не изменяют ответы, которые не являются действительными JSON-документами.
 
-> In AdGuard for Windows, Mac and Android, **running CoreLibs version 1.11 or later**, `$jsonprune` also supports modifying JSONP (padded JSON) documents.
+> В AdGuard для Windows, Mac и Android **с CoreLibs версии 1.11 или выше** `$jsonprune` также поддерживается модификация JSONP-документов (padded JSON).
 
 **Синтаксис**
 
@@ -1401,7 +1401,7 @@ preroll.ts
 * `||example.org^$jsonprune=\$..[one\, "two three"]` удаляет все вхождения ключей one и two three в любом месте JSON-документа.
 
 <details>
-<summary>Input</summary>
+<summary>До</summary>
 
 ```
 {
@@ -1416,7 +1416,7 @@ preroll.ts
 </details>
 
 <details>
-<summary>Output</summary>
+<summary>После</summary>
 
 ```
 {
@@ -1431,7 +1431,7 @@ preroll.ts
 * `||example.org^$jsonprune=\$.a[?(has ad_origin)]` удаляет всех прямых потомков `a`, которые обладают свойством `ad_origin`.
 
 <details>
-<summary>Input</summary>
+<summary>До</summary>
 
 ```
 {
@@ -1450,7 +1450,7 @@ preroll.ts
 </details>
 
 <details>
-<summary>Output</summary>
+<summary>После</summary>
 
 ```
 {
@@ -1467,7 +1467,7 @@ preroll.ts
 * `||example.org^$jsonprune=\$.*.*[?(key-eq 'Some key' 'Some value')]` удаляет все элементы на уровне вложенности 3, обладающие свойством Some key, равным Some value.
 
 <details>
-<summary>Input</summary>
+<summary>До</summary>
 
 ```
 {
@@ -1479,7 +1479,7 @@ preroll.ts
 </details>
 
 <details>
-<summary>Output</summary>
+<summary>После</summary>
 
 ```
 {
@@ -1490,14 +1490,14 @@ preroll.ts
 
 </details>
 
-**Nested JSONPath expressions**
+**Вложенные выражения JSONPath**
 
-> In AdGuard for Windows, Mac and Android, **running CoreLibs version 1.11 or later**, JSONPath expressions may be used as keys in filter expressions.
+> В AdGuard для Windows, Mac и Android **с CoreLibs версии 1.11 или выше** выражения JSONPath могут быть использованы как ключи в выражениях фильтра.
 
-* `||example.org^$jsonprune=\$.elems[?(has "\$.a.b.c")]` removes all children of `elems` which have a property selectable by the JSONPath expression `$.a.b.c`.
+* `||example.org^$jsonprune=\$.elems[?(has "\$.a.b.c")]` удаляет всех прямых потомков `elems`, которые обладают свойством, выбираемым JSONPath-выражением `$.a.b.c`.
 
 <details>
-<summary>Input</summary>
+<summary>До</summary>
 
 ```
 {
@@ -1517,7 +1517,7 @@ preroll.ts
 </details>
 
 <details>
-<summary>Output</summary>
+<summary>После</summary>
 
 ```
 {
@@ -1532,10 +1532,10 @@ preroll.ts
 
 </details>
 
-* `||example.org^$jsonprune=\$.elems[?(key-eq "\$.a.b.c" "abc")]` removes all children of `elems` which have a property selectable by the JSONPath expression `$.a.b.c` with a value equal to `"abc"`.
+* `||example.org^$jsonprune=\$.elems[?(key-eq "\$.a.b.c" "abc")]` удаляет всех прямых потомков `elems`, которые обладают свойством, выбираемым выражением JSONPath `$.a.b.c` со значением, равным `"abc"`.
 
 <details>
-<summary>Input</summary>
+<summary>До</summary>
 
 ```
 {
@@ -1553,7 +1553,7 @@ preroll.ts
 </details>
 
 <details>
-<summary>Output</summary>
+<summary>После</summary>
 
 ```
 {
@@ -1748,13 +1748,13 @@ example.com#@$#.textad { visibility: hidden; }
 * [Псевдокласс `:nth-ancestor()`](#extended-css-nth-ancestor)
 * [Псевдокласс `:upward()`](#extended-css-upward)
 * [Псевдокласс `:remove()` и псевдосвойство `remove`](#remove-pseudos)
-* [Pseudo-class `:is()`](#extended-css-is)
-* [Pseudo-class `:not()`](#extended-css-not)
-* [Pseudo-class `:if-not()` (deprecated)](#extended-css-if-not)
+* [Псевдокласс `:is()`](#extended-css-is)
+* [Псевдокласс `:not()`](#extended-css-not)
+* [Псевдокласс `:if-not()` (устаревший)](#extended-css-if-not)
 
-Возможностей CSS 3.0 не всегда хватает для блокировки рекламы. Чтобы решить эту проблему, AdGuard расширяет возможности CSS, добавляя поддержку новых псевдоэлементов. We have developed a separate [open-source library](https://github.com/AdguardTeam/ExtendedCss) for non-standard element selecting and applying CSS styles with extended properties.
+Возможностей CSS 3.0 не всегда хватает для блокировки рекламы. Чтобы решить эту проблему, AdGuard расширяет возможности CSS, добавляя поддержку новых псевдоэлементов. Мы разработали отдельную [библиотеку с открытым исходным кодом](https://github.com/AdguardTeam/ExtendedCss) для выбора нестандартных элементов и применения CSS-стилей с расширенными свойствами.
 
-The idea of extended capabilities is an opportunity to match DOM elements with selectors based on their own representation (style, text content, etc.) or relations with other elements. There is also an opportunity to apply styles with non-standard CSS properties.
+Идея расширенных возможностей заключается в возможности сопоставлять элементы DOM с селекторами на основе их собственного представления (стиль, текстовое содержимое и т. д.) или отношений с другими элементами. Также есть возможность применять стили с нестандартными свойствами CSS.
 
 > **Область применения**
 > 
@@ -1766,7 +1766,7 @@ The idea of extended capabilities is an opportunity to match DOM elements with s
 
 **Синтаксис**
 
-Regardless of the CSS pseudo-classes you are using in the rule, you can use special markers to force applying these rules by ExtendedCss. It is recommended to use these markers for all extended CSS cosmetic rules so that it was easier to find them.
+Независимо от того, какие CSS-псевдоклассы вы используете в правилах, вы можете использовать специальные маркеры для принудительного применения этих правил с помощью ExtendedCss. Рекомендуется использовать эти маркеры для всех косметических расширенных CSS-правил, чтобы их было легче отличить.
 
 Синтаксис расширенных CSS-правил:
 
@@ -1782,62 +1782,62 @@ Regardless of the CSS pseudo-classes you are using in the rule, you can use spec
 * `example.net#?#.banner:matches-css(width: 360px)` — это правило блокирует все элементы `.banner`, которые содержат стиль `width: 360px`. При этом правило будет работать только для домена `example.net` и всех его поддоменов.
 * `example.net#@?#.banner:matches-css(width: 360px)` — это правило отменяет действие предыдущего правила.
 
-> You can apply standard CSS selectors using the ExtendedCss library by using a rule marker `#?#`, e.g. `#?#div.banner`.
+> Вы можете применять стандартные CSS-селекторы с помощью библиотеки ExtendedCss, используя маркер правила `#?#`, например, `#?#div.banner`.
 
 Узнайте больше об [отладке расширенных селекторов](#selectors-debugging-mode).
 
 > **Примечание**
 > 
-> Some pseudo-classes do not require selector before it. Still adding a [universal selector](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*` makes an extended selector easier to read, even though it has no effect on the matching behavior. So selector `#block :has(> .inner)` works exactly like `#block *:has(> .inner)` but second one is more obvious.
+> Некоторые псевдоклассы не требуют селектора перед ними. Добавление универсального селектора [](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*` облегчает чтение расширенного селектора, хотя и не влияет на поведение при подборе. Поэтому селектор `#block :has(> .inner)` работает точно так же, как `#block *:has(> .inner)` , но второй более очевиден.
 > 
-> Pseudo-class names are case-insensitive, e.g. `:HAS()` works as `:has()`. Still the lower-case names are used commonly.
+> Имена псевдоклассов не чувствительны к регистру, например, `:HAS()` работает как `:has()`. До сих пор часто используются названия в нижнем регистре.
 
-#### ExtendedCss Limitations {#extended-css-limitations}
+#### Ограничения ExtendedCss {#extended-css-limitations}
 
-1. CSS [comments](https://developer.mozilla.org/en-US/docs/Web/CSS/Comments) and [at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) are not supported.
+1. [CSS-комментарии](https://developer.mozilla.org/en-US/docs/Web/CSS/Comments) и [at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) не поддерживаются.
 
-2. Specific pseudo-class may have its own limitations: [`:has()`](#extended-css-has-limitations), [`:xpath()`](#extended-css-xpath-limitations), [`:nth-ancestor()`](#extended-css-nth-ancestor-limitations), [`:upward()`](#extended-css-upward-limitations), [`:is()`](#extended-css-is-limitations), [`:not()`](#extended-css-not-limitations), and [`:remove()`](#extended-css-remove-limitations).
+2. У конкретного псевдокласса могут быть свои ограничения: [`:has()`](#extended-css-has-limitations), [`:xpath()`](#extended-css-xpath-limitations), [`:nth-ancestor()`](#extended-css-nth-ancestor-limitations), [`:upward()`](#extended-css-upward-limitations), [`:is()`](#extended-css-is-limitations), [`:not()`](#extended-css-not-limitations), and [`:remove()`](#extended-css-remove-limitations).
 
 
 #### Псевдокласс `:has()` {#extended-css-has}
 
-Draft CSS 4.0 specification describes the [`:has()` pseudo-class](https://www.w3.org/TR/selectors-4/#relational). Unfortunately, [it is not yet supported](https://caniuse.com/css-has) by all popular browsers.
+Проект спецификации CSS 4.0 описывает псевдокласс [`:has()`](https://www.w3.org/TR/selectors-4/#relational). К сожалению, [пока не поддерживается](https://caniuse.com/css-has) всеми популярными браузерами.
 
 > **Примечание**
 > 
-> Rules with the `:has()` pseudo-class should use the [native implementation of `:has()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:has) if they use `##` marker and if it is possible, i.e. with no other extended selectors inside. To force applying of ExtendedCss rules with `:has()`, use `#?#`/`#$?#` marker explicitly.
+> Правила с псевдоклассом `:has()` должны использовать [нативную реализацию `:has()`](https://developer.mozilla.org/ru/docs/Web/CSS/:has), если они используют маркер `##` и если это возможно, то есть без других расширенных селекторов внутри. Чтобы принудительно применить правила ExtendedCss с `:has()`, используйте маркер `#?#`/`#$?#` явно.
 
-> **Compatibility with other pseudo-classes**
+> **Совместимость с другими псевдоклассами**
 > 
-> Synonyms `:-abp-has()` is supported by ExtendedCss for better compatibility.
+> Синонимы `:-abp-has()` поддерживаются ExtendedCss для лучшей совместимости.
 
 > **Предупреждение об устаревании**
 > 
-> `:if()` is no longer supported as a synonym for `:has()`.
+> `:if()` больше не поддерживается как синоним для `:has()`.
 
 **Синтаксис**
 
 ```
 [target]:has(selector)
 ```
-- `target` — optional, standard or extended CSS selector, can be missed for checking *any* element
-- `selector` — required, standard or extended CSS selector
+- `target` — необязательный, стандартный или расширенный CSS-селектор, может быть пропущен для проверки *любых* элементов
+- `selector` — необходимый, стандартный или расширенный CSS-селектор
 
-The pseudo-class `:has()` selects the `target` elements that fit to the `selector`. Also the `selector` can start with a combinator.
+Псевдокласс `:has()` выбирает `target`-элементы, которые подходят под `selector`. Также селектор `` может начинаться с комбинатора.
 
-A selector list can be set in `selector` as well. In this case **all** selectors in the list are being matched for now. In the future it will be fixed for [`<forgiving-relative-selector-list>`](https://www.w3.org/TR/selectors-4/#typedef-forgiving-relative-selector-list) as argument.
+Список селекторов можно задать и в `selector`. В этом случае **все** селекторы в списке будут сопоставляться. В будущем это будет исправлено для [`<forgiving-relative-selector-list>`](https://www.w3.org/TR/selectors-4/#typedef-forgiving-relative-selector-list) как аргумента.
 
-##### `:has()` limitations {#extended-css-has-limitations}
+##### Ограничения `:has()` {#extended-css-has-limitations}
 
-> Usage of the `:has()` pseudo-class is [restricted for some cases (2, 3)](https://bugs.chromium.org/p/chromium/issues/detail?id=669058#c54): - disallow `:has()` inside the pseudos accepting only compound selectors; - disallow `:has()` after regular pseudo-elements.
+> Использование псевдокласса `:has()` [ограничено в некоторых случаях (2, 3)](https://bugs.chromium.org/p/chromium/issues/detail?id=669058#c54): - `:has()` запрещён внутри псевдо, принимающих только составные селекторы; - `:has()` запрещён после регулярных псевдоэлементов.
 
-> Native `:has()` pseudo-class does not allow `:has()`, `:is()`, `:where()` inside `:has()` argument to avoid increasing the `:has()` invalidation complexity ([case 1](https://bugs.chromium.org/p/chromium/issues/detail?id=669058#c54)). But ExtendedCss did not have such limitation earlier and filter lists already contain such rules, so we have not added this limitation to ExtendedCss and allow to use `:has()` inside `:has()` as it was possible before. To use it, just force ExtendedCss usage by setting `#?#`/`#$?#` rule marker.
+> Нативный псевдокласс `:has()` не допускает аргумент `:has()`, `:is()`, `:where()` внутри `:has()`, чтобы избежать увеличения сложности аннулирования ([случай 1](https://bugs.chromium.org/p/chromium/issues/detail?id=669058#c54)) `:has()`. Но ранее ExtendedCss не имел такого ограничения, а списки фильтров уже содержат такие правила, поэтому мы не стали добавлять это ограничение в ExtendedCss и разрешили использовать `:has()` внутри `:has()`, как это было возможно ранее. Чтобы использовать его, просто принудительно используйте ExtendedCss, установив `#?#`/`#$?#` маркер правила.
 
-> Native implementation does not allow any usage of `:scope` inside `:has()` argument ([[1]](https://github.com/w3c/csswg-drafts/issues/7211), [[2]](https://github.com/w3c/csswg-drafts/issues/6399)). Still, there are some such rules in filter lists: `div:has(:scope > a)` which we continue to support by simply converting them to `div:has(> a)`, as it used to be done previously.
+> Нативная реализация не позволяет использовать `:scope` внутри `:has()` аргумента ([[1]](https://github.com/w3c/csswg-drafts/issues/7211), [[2]](https://github.com/w3c/csswg-drafts/issues/6399)). Тем не менее, в списках фильтров есть такие правила: `div:has(:scope > a)`, которые мы продолжаем поддерживать, просто преобразуя их в `div:has(> a)`, как это делалось ранее.
 
 **Примеры**
 
-`div:has(.banner)` selects all `div` elements which **include** an element with the `banner` class:
+`div:has(.banner)` выбирает все `div`-элементы, которые **включают** элемент с классом `banner`:
 ```html
 <!-- HTML code -->
 <div>Not selected</div>
@@ -1846,7 +1846,7 @@ A selector list can be set in `selector` as well. In this case **all** selectors
 </div>
 ```
 
-`div:has(> .banner)` selects all `div` elements which **include** an `banner` class element as a *direct child* of `div`:
+`div:has(> .banner)` выбирает все `div`-элементы, которые **включают** элемент класса `banner` в качестве *прямого дочернего* элемента `div`:
 ```html
 <!-- HTML code -->
 <div>Not selected</div>
@@ -1855,7 +1855,7 @@ A selector list can be set in `selector` as well. In this case **all** selectors
 </div>
 ```
 
-`div:has(+ .banner)` selects all `div` elements **preceding** `banner` class element which *immediately follows* the `div` and both are children of the same parent:
+`div:has(+ .banner)` выбирает все `div`-элементы, **предшествующие** элементу класса `banner`, который *непосредственно следует* за `div` и оба являются детьми одного родителя:
 ```html
 <!-- HTML code -->
 <div>Not selected</div>
@@ -1864,7 +1864,7 @@ A selector list can be set in `selector` as well. In this case **all** selectors
 <span>Not selected</span>
 ```
 
-`div:has(~ .banner)` selects all `div` elements **preceding** `banner` class element which *follows* the `div` but *not necessarily immediately* and both are children of the same parent:
+`div:has(~ .banner)` выбирает все `div`-элементы, **предшествующие** элементу класса `banner`, который *следует* за `div`, но *не обязательно сразу*, и оба являются детьми одного родителя:
 ```html
 <!-- HTML code -->
 <div>Not selected</div>
@@ -1873,7 +1873,7 @@ A selector list can be set in `selector` as well. In this case **all** selectors
 <p class="banner">general sibling</p>
 ```
 
-`div:has(span, .banner)` selects all `div` elements which **include both** `span` element and `banner` class element:
+`div:has(span, .banner)` выбирает все элементы `div`, которые **включают в себя как элемент** `span`, так и элемент `banner` класса:
 ```html
 <!-- HTML code -->
 <div>Not selected</div>
@@ -1883,34 +1883,34 @@ A selector list can be set in `selector` as well. In this case **all** selectors
 </div>
 ```
 
-> **Compatibility with old syntax**
+> **Совместимость со старым синтаксисом**
 > 
-> [Backward compatible syntax for `:has()`](https://github.com/AdguardTeam/ExtendedCss#old-syntax-has) is supported but **not recommended**.
+> [Синтаксис обратной совместимости для `:has()`](https://github.com/AdguardTeam/ExtendedCss#old-syntax-has) поддерживается, но **не рекомендуется**.
 
 
 #### Псевдокласс `:contains()` {#extended-css-contains}
 
-The `:contains()` pseudo-class principle is very simple: it allows to select the elements that contain specified text or which content matches a specified regular expression. Regexp flags are supported.
+Принцип действия псевдокласса `:contains()` очень прост: он позволяет выбрать элементы, которые содержат заданный текст или содержимое которых соответствует указанному регулярному выражению. Поддерживаются флаги регулярных выражений.
 
 > **Примечание**
 > 
-> The `:contains()` pseudo-class uses the `textContent` element property for matching, not the `innerHTML`.
+> Псевдокласс `:contains()` использует для сопоставления свойство элемента `textContent`, а не `innerHTML`.
 
-> **Compatibility with other pseudo-classes**
+> **Совместимость с другими псевдоклассами**
 > 
-> Synonyms `:-abp-contains()` and `:has-text()` are supported for better compatibility.
+> Синонимы `:-abp-contains()` и `:has-text()` поддерживаются для лучшей совместимости.
 
 **Синтаксис**
 
 ```
 [target]:contains(match)
 ```
-- `target` — optional, standard or extended CSS selector, can be missed for checking *any* element
-- `match` — required, string or regular expression for matching element `textContent`. Regular expression flags are supported.
+- `target` — необязательный, стандартный или расширенный CSS-селектор, может быть пропущен для проверки *любых* элементов
+- `match` — требуется, строка или регулярное выражение для соответствия элементу `textContent`. Также поддерживаются флаги регулярных выражений.
 
 **Примеры**
 
-For such DOM:
+Для таких DOM:
 ```html
 <!-- HTML code -->
 <div>Not selected</div>
@@ -1918,54 +1918,54 @@ For such DOM:
 <div>Not selected <div class="banner"></div></div>
 ```
 
-the element `div#match` can be selected by any on these extended selectors:
+элемент `div#match` может быть выбран любым из этих расширенных селекторов:
 ```
 ! plain text
 div:contains(banner)
 
-! regular expression
+! регулярное выражение
 div:contains(/as .* banner/)
 
-! regular expression with flags
+! регулярное выражение с флагами
 div:contains(/it .* banner/gi)
 ```
 
 > **Примечание**
 > 
-> Only the `div` with `id=match` is selected because the next element does not contain any text, and `banner` is a part of code, not a text.
+> Выбран только `div` с `id=match`, так как следующий элемент не содержит текст, а `banner` — это часть кода, а не текст.
 
-> **Compatibility with old syntax**
+> **Совместимость со старым синтаксисом**
 > 
-> [Backward compatible syntax for `:contains()`](https://github.com/AdguardTeam/ExtendedCss#old-syntax-contains) is supported but **not recommended**.
+> [Синтаксис обратной совместимости для `:contains()`](https://github.com/AdguardTeam/ExtendedCss#old-syntax-contains) поддерживается, но **не рекомендуется**.
 
 
 #### Псевдокласс `:matches-css()` {#extended-css-matches-css}
 
-The `:matches-css()` pseudo-class allows to match the element by its current style properties. The work of the pseudo-class is based on using the [`Window.getComputedStyle()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle) method.
+Псевдокласс `:matches-css()` позволяет сопоставить элемент по свойствам его текущего стиля. Работа псевдокласса основана на использовании метода [`Window.getComputedStyle()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle).
 
 **Синтаксис**
 
 ```
 [target]:matches-css([pseudo-element, ] property: pattern)
 ```
-- `target` — optional, standard or extended CSS selector, can be missed for checking *any* element
-- `pseudo-element` — optional, valid standard pseudo-element, e.g. `before`, `after`, `first-line`, etc.
-- `property` — required, a name of CSS property to check the element for
-- `pattern` —  required, a value pattern that is using the same simple wildcard matching as in the basic url filtering rules OR a regular expression. For this type of matching, AdGuard always does matching in a case-insensitive manner. В случае с регулярными выражениями паттерн будет выглядеть так: `/regexp/`.
+- `target` — необязательный, стандартный или расширенный CSS-селектор, может быть пропущен для проверки *любых* элементов
+- `pseudo-element` — необязательный, допустимый стандартный псевдоэлемент, например, `before`, `after`, `first-line` и т. д.
+- `property` — требуется, название CSS-свойства, которое будет проверено у элемента
+- `pattern` — требуется, паттерн значений, который использует то же простое сопоставление с wildcard-знаками, что и в основных правилах фильтрации URL-адресов, ИЛИ регулярное выражение. Для этого типа соответствия AdGuard не обращает внимание на регистр. В случае с регулярными выражениями паттерн будет выглядеть так: `/regexp/`.
 
-> **Special characters escaping and unescaping**
+> **Экранирование и снятие специальных символов**
 > 
-> For **non-regexp** patterns `(`,`)`,`[`,`]` must be **unescaped**, e.g. `:matches-css(background-image:url(data:*))`.
+> Для **нерегулярных выражений** паттерны `(`,`)`,`[`,`]` должны **без экранирования**,  например, `:matches-css(background-image:url(data:*))`.
 > 
-> For **regexp** patterns `\` should be **escaped**, e.g. `:matches-css(background-image: /^url\\("data:image\\/gif;base64.+/)`.
+> Для **регулярных выражений** паттерны `\` должны быть **экранированы**, например, `:matches-css(background-image: /^url\\("data:image\\/gif;base64.+/)`.
 
 > **Ограничения**
 > 
-> Regexp patterns **do not support** flags.
+> Паттерны регулярных выражений **не поддерживают** флаги.
 
 **Примеры**
 
-For such DOM:
+Для таких DOM:
 ```html
 <!-- HTML code -->
 <style type="text/css">
@@ -1977,69 +1977,69 @@ For such DOM:
 <div id="not-matched"></div>
 ```
 
-the `div` elements with pseudo-element `::before` and with specified `content` property can be selected by any of these extended selectors:
+`div`-элементы с псевдоэлементом `::before` и с указанным свойством `content` могут быть выбраны любым из этих расширенных селекторов:
 ```
-! string pattern
+! паттерн строки
 div:matches-css(before, content: block me)
 
-! string pattern with wildcard
+! паттерн строки с подстановочным знаком
 div:matches-css(before, content: block*)
 
-! regular expression pattern
+! паттерн регулярного выражения
 div:matches-css(before, content: /block me/)
 ```
 
-> **Compatibility with other pseudo-classes**
+> **Совместимость с другими псевдоклассами**
 > 
-> Obsolete pseudo-classes `:matches-css-before()` and `:matches-css-after()` are no longer recommended but still are supported for better compatibility.
+> Устаревшие псевдоклассы `:matches-css-before()` и `:matches-css-after()` больше не рекомендуются, но по-прежнему поддерживаются для лучшей совместимости.
 
-> **Compatibility with old syntax**
+> **Совместимость со старым синтаксисом**
 > 
-> [Backward compatible syntax for `:matches-css()`](https://github.com/AdguardTeam/ExtendedCss#old-syntax-matches-css) is supported but **not recommended**.
+> [Синтаксис обратной совместимости для `:matches-css()`](https://github.com/AdguardTeam/ExtendedCss#old-syntax-matches-css) поддерживается, но **не рекомендуется**.
 
 
 #### Псевдокласс `:matches-attr()` {#extended-css-matches-attr}
 
-The `:matches-attr()` pseudo-class allows to select an element by its attributes, especially if they are randomized.
+Псевдокласс `:matches-attr()` позволяет выбрать элемент по его атрибутам, особенно если они рандомизированы.
 
 **Синтаксис**
 
 ```
 [target]:matches-attr("name"[="value"])
 ```
-- `target` — optional, standard or extended CSS selector, can be missed for checking *any* element
-- `name` — required, simple string *or* string with wildcard *or* regular expression for attribute name matching
-- `value` — optional, simple string *or* string with wildcard *or* regular expression for attribute value matching
+- `target` — необязательный, стандартный или расширенный CSS-селектор, может быть пропущен для проверки *любых* элементов
+- `name` — требуется, простая строка, *или* строка с подстановочным знаком, *или* регулярное выражение для сопоставления имени атрибута
+- `value` — необязательный, простая строка, *или* строка с подстановочным знаком, *или* регулярное выражение для сопоставления значения атрибута
 
 > **Экранирование специальных символов**
 > 
-> For **regexp** patterns `"` and `\` should be **escaped**, e.g. `div:matches-attr(class=/[\\w]{5}/)`.
+> Для паттернов **регулярных выражений** `"` и `\` должны быть **экранированы**,  например, `div:matches-attr(class=/[\\w]{5}/)`.
 
 > **Ограничения**
 > 
-> Regexp patterns **do not support** flags.
+> Паттерны регулярных выражений **не поддерживают** флаги.
 
 **Примеры**
 
-`div:matches-attr("ad-link")` selects the element `div#target1`:
+`div:matches-attr("ad-link")` выбирает элемент `div#target1`:
 ```html
 <!-- HTML code -->
 <div id="target1" ad-link="1random23-banner_240x400"></div>
 ```
 
-`div:matches-attr("data-*"="adBanner")` selects the element `div#target2`:
+`div:matches-attr("data-*"="adBanner")` выбирает элемент `div#target2`:
 ```html
 <!-- HTML code -->
 <div id="target2" data-1random23="adBanner"></div>
 ```
 
-`div:matches-attr(*unit*=/^click$/)` selects the element `div#target3`:
+`div:matches-attr(*unit*=/^click$/)` выбирает элемент `div#target3`:
 ```html
 <!-- HTML code -->
 <div id="target3" random123-unit094="click"></div>
 ```
 
-`*:matches-attr("/.{5,}delay$/"="/^[0-9]*$/")` selects the element `#target4`:
+`*:matches-attr("/.{5,}delay$/"="/^[0-9]*$/")` выбирает элемент `#target4`:
 ```html
 <!-- HTML code -->
 <div>
@@ -2050,32 +2050,32 @@ The `:matches-attr()` pseudo-class allows to select an element by its attributes
 
 #### Псевдокласс `:matches-property()` {#extended-css-property}
 
-The `:matches-property()` pseudo-class allows to select an element by matching its properties.
+Псевдокласс `:matches-property()` позволяет выбирать элемент, сопоставляя его свойства.
 
 **Синтаксис**
 
 ```
 [target]:matches-property("name"[="value"])
 ```
-- `target` — optional, standard or extended CSS selector, can be missed for checking *any* element
-- `name` — required, simple string *or* string with wildcard *or* regular expression for element property name matching
-- `value` — optional, simple string *or* string with wildcard *or* regular expression for element property value matching
+- `target` — необязательный, стандартный или расширенный CSS-селектор, может быть пропущен для проверки *любых* элементов
+- `name` — требуется, простая строка, *или* строка с подстановочным знаком, *или* регулярное выражение для сопоставления имени свойства элемента
+- `value` — необязательный, простая строка, *или* строка с подстановочным знаком, *или* регулярное выражение для сопоставления значения свойства элемента
 
 > **Экранирование специальных символов**
 > 
-> For **regexp** patterns `"` and `\` should be escaped, e.g. `div:matches-property(prop=/[\\w]{4}/)`.
+> Для паттернов **регулярных выражений** `"` и `\` должны быть экранированы,  например, `div:matches-property(prop=/[\\w]{4}/)`.
 
 > **Примечание**
 > 
-> Regexp patterns are supported in `name` for any property in chain, e.g. `prop./^unit[\\d]{4}$/.type`.
+> Паттерны регулярных выражений поддерживаются в `name` для любого свойства в цепочке, например, `prop./^unit[\\d]{4}$/.type`.
 
 > **Ограничения**
 > 
-> Regexp patterns **do not support** flags.
+> Паттерны регулярных выражений **не поддерживают** флаги.
 
 **Примеры**
 
-An element with such properties:
+Элемент с такими свойствами:
 ```javascript
 divProperties = {
   id: 1,
@@ -2094,7 +2094,7 @@ divProperties = {
 };
 ```
 
-can be selected by any of these extended selectors:
+может быть выбран любым из этих расширенных селекторов:
 ```
 div:matches-property(check.track)
 
@@ -2107,40 +2107,40 @@ div:matches-property(memoizedProps.key="null")
 div:matches-property(memoizedProps._owner.src=/ad/)
 ```
 
-> **For filters maintainers:**
+> **Для разработчиков фильтров:**
 > 
-> To check properties of a specific element, do the following: 1. Inspect the page element or select it in `Elements` tab of browser DevTools. 2. Run `console.dir($0)` in `Console` tab.
+> Чтобы проверить свойства конкретного элемента, сделайте следующее: 1. Проверьте элемент страницы или выберите его в Инструментах разработчика браузера во вкладке `Элементы`. 2. Запустите `console.dir($0)` во вкладке `Консоль`.
 
 
 #### Псевдокласс `:xpath()` {#extended-css-xpath}
 
-The `:xpath()` pseudo-class allows to select an element by evaluating an XPath expression.
+Псевдокласс `:xpath()` позволяет выбирать элементы согласно выражению XPath.
 
 **Синтаксис**
 
 ```
 [target]:xpath(expression)
 ```
-- `target`- optional, standard or extended CSS selector
-- `expression` — required, valid XPath expression
+- `target` — необязательный, стандартный или расширенный CSS-селектор
+- `expression` — требуется, допустимое XPath выражение
 
-##### `:xpath()` limitations {#extended-css-xpath-limitations}
+##### Ограничения `:xpath()` {#extended-css-xpath-limitations}
 
-> `target` can be omitted so it is optional. For any other pseudo-class that would mean "apply to *all* DOM nodes", but in case of `:xpath()` it just means "apply to the *whole* document", and such applying slows elements selecting significantly. That's why rules like `#?#:xpath(expression)` are limited to looking inside the `body` tag. For example, rule `#?#:xpath(//div[@data-st-area=\'Advert\'])` is parsed as `#?#body:xpath(//div[@data-st-area=\'Advert\'])`.
+> `target` можно опустить, поэтому использовать его необязательно. Для любого другого псевдокласса это будет означать «применить ко *всем* узлам DOM», но в случае `:xpath()` это просто означает «применить к *целым* документам», и такое применение значительно замедляет выбор элементов. Вот почему такие правила, как `#?#:xpath(expression)`, ограничены поиском внутри тега `body`. Например, правило `#?#:xpath(//div[@data-st-area=\'Advert\'])` парсится как `#?#body:xpath(//div[@data-st- area=\'Advert\'])`.
 
-> Extended selectors with defined `target` as *any* selector — `*:xpath(expression)` — can still be used but it is not recommended, so `target` should be specified instead.
+> Расширенные селекторы с `target`, определённым как *любой* селектор, — `*:xpath(expression)` — всё ещё можно использовать, но не рекомендуется. Поэтому следует уточнить `target`.
 
-> Works properly only at the end of selector, except for [pseudo-class :remove()](#remove-pseudos).
+> Корректно работает только в конце селектора, за исключением псевдокласса [:remove()](#remove-pseudos).
 
 **Примеры**
 
-`:xpath(//*[@class="banner"])` selects the element `div#target1`:
+`:xpath(//*[@class="banner"])` выбирает элемент `div#target1`:
 ```html
 <!-- HTML code -->
 <div id="target1" class="banner"></div>
 ```
 
-`:xpath(//*[@class="inner"]/..)` selects the element `div#target2`:
+`:xpath(//*[@class="inner"]/..)` выбирает элемент `div#target2`:
 ```html
 <!-- HTML code -->
 <div id="target2">
@@ -2151,29 +2151,29 @@ The `:xpath()` pseudo-class allows to select an element by evaluating an XPath e
 
 #### Псевдокласс `:nth-ancestor()` {#extended-css-nth-ancestor}
 
-The `:nth-ancestor()` pseudo-class allows to lookup the *nth* ancestor relative to the previously selected element.
+Псевдокласс `:nth-ancestor()` позволяет искать *n-ного* предка по отношению к ранее выбранному элементу.
 
 ```
 subject:nth-ancestor(n)
 ```
-- `subject` — required, standard or extended CSS selector
-- `n` — required, number >= 1 and < 256, distance to the needed ancestor from the element selected by `subject`
+- `subject` — требуется стандартный или расширенный CSS-селектор
+- `n` — требуется, число >= 1 и < 256, расстояние до нужного родителя от элемента, выбранного `subject`
 
 **Синтаксис**
 
 ```
 subject:nth-ancestor(n)
 ```
-- `subject` — required, standard or extended CSS selector
-- `n` — required, number >= 1 and < 256, distance to the needed ancestor from the element selected by `subject`
+- `subject` — требуется стандартный или расширенный CSS-селектор
+- `n` — требуется, число >= 1 и < 256, расстояние до нужного предка от элемента, выбранного `subject`
 
-##### `:nth-ancestor()` limitations {#extended-css-nth-ancestor-limitations}
+##### Ограничения `:nth-ancestor()` {#extended-css-nth-ancestor-limitations}
 
-> The `:nth-ancestor()` pseudo-class is not supported inside the argument of the [`:not()` pseudo-class](#extended-css-not).
+> Псевдокласс `:nth-ancestor()` не поддерживается внутри аргумента псевдокласса [`:not()`](#extended-css-not).
 
 **Примеры**
 
-For such DOM:
+Для таких DOM:
 ```html
 <!-- HTML code -->
 <div id="target1">
@@ -2189,30 +2189,30 @@ For such DOM:
 </div>
 ```
 
-`.child:nth-ancestor(1)` selects the element `div#target1`, `div[class="inner"]:nth-ancestor(3)` selects the element `div#target2`.
+`.child:nth-ancestor(1)` выбирает элемент `div#target1`, `div[class="inner"]:nth-ancestor(3)` выбирает элемент `div#target2`.
 
 
 #### Псевдокласс `:upward()` {#extended-css-upward}
 
-The `:upward()` pseudo-class allows to lookup the ancestor relative to the previously selected element.
+Псевдокласс `:upward()` позволяет искать предка по отношению к ранее выбранному элементу.
 
 **Синтаксис**
 
 ```
 subject:upward(ancestor)
 ```
-- `subject` — required, standard or extended CSS selector
-- `ancestor` — required, specification for the ancestor of the element selected by `subject`, can be set as:
-  - *number* >= 1 and < 256 for distance to the needed ancestor, same as [`:nth-ancestor()`](#extended-css-nth-ancestor)
-  - *standard CSS selector* for matching closest ancestor
+- `subject` — требуется стандартный или расширенный CSS-селектор
+- `ancestor` — требуется, спецификация для предка элемента, выбранного `subject`, может быть задана как:
+  - *число* >= 1 и < 256 для указания расстояния до нужного предка, то же, что и [`:nth-ancestor()`](#extended-css-nth-ancestor)
+  - *стандартный CSS-селектор* для поиска ближайшего предка
 
-##### `:upward()` limitations {#extended-css-upward-limitations}
+##### Ограничения `:upward()` {#extended-css-upward-limitations}
 
-> The `:upward()` pseudo-class is not supported inside the argument of the [`:not()` pseudo-class](#extended-css-not).
+> Псевдокласс `:upward()` не поддерживается внутри аргумента псевдокласса [`:not()`](#extended-css-not).
 
 **Примеры**
 
-For such DOM:
+Для таких DOM:
 ```html
 <!-- HTML code -->
 <div id="target1" data="true">
@@ -2228,12 +2228,12 @@ For such DOM:
 </div>
 ```
 
-`.inner:upward(div[data])` selects the element `div#target1`, `.inner:upward(div[id])` selects the element `div#target2`, `.child:upward(1)` selects the element `div#target1`, `.inner:upward(3)` selects the element `div#target2`.
+`.inner:upward(div[data])` выбирает элемент `div#target1`, `.inner:upward(div[id])` выбирает элемент `div#target2`, `.child:upward(1)` выбирает элемент `div#target1`, `.inner:upward(3)` выбирает элемент `div#target2`.
 
 
 #### Псевдокласс `:remove()` и псевдосвойство `remove` {#remove-pseudos}
 
-Иногда необходимо удалить определённый элемент, а не просто скрыть его или применить какие-либо правила стиля. In order to do it, you can use the `:remove()` pseudo-class as well as the `remove` pseudo-property.
+Иногда необходимо удалить определённый элемент, а не просто скрыть его или применить какие-либо правила стиля. Для этого можно использовать псевдокласс `:remove()`, а также псевдосвойство `remove`.
 
 > **Псевдокласс `:remove()` может быть только в конце селектора.**
 
@@ -2246,15 +2246,15 @@ selector:remove()
 ! псевдосвойство
 selector { remove: true; }
 ```
-- `selector` — required, standard or extended CSS selector
+- `selector` — необходимый, стандартный или расширенный CSS-селектор
 
-##### `:remove()` and `remove` limitations {#extended-css-remove-limitations}
+##### Ограничения `:remove()` и `remove` {#extended-css-remove-limitations}
 
-> The `:remove()` pseudo-class is limited to work properly only at the end of selector.
+> Псевдокласс `:remove()` может корректно работать только в конце селектора.
 
-> For applying the `:remove()` pseudo-class to any element, a [universal selector](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*` should be used. Otherwise such extended selector may be considered as invalid, e.g. `.banner > :remove()` is not valid for removing any child element of `banner` class element, so it should look like `.banner > *:remove()`.
+> Для применения псевдокласса `:remove()` к любому элементу следует использовать [универсальный селектор](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*`. В противном случае такой расширенный селектор может считаться некорректным, например, `.banner > :remove()` недействителен для удаления любого дочернего элемента `элемента класса banner`, поэтому он должен выглядеть как `.banner > *:remove()`.
 
-> If the `:remove()` pseudo-class or the `remove` pseudo-property is used, all style properties are ignored except for the [`debug` pseudo-property](#selectors-debug-mode).
+> Если используется псевдокласс `:remove()` или псевдосвойство `remove`, все свойства стиля игнорируются, кроме псевдосвойства [`debug`](#selectors-debug-mode).
 
 
 **Примеры**
@@ -2268,32 +2268,32 @@ div[class]:has(> a > img) { remove: true; }
 
 > **Примечание**
 > 
-> Rules with the `remove` pseudo-property should use `#$?#` marker: `$` for CSS style rules syntax, `?` for ExtendedCss syntax.
+> Правила с псевдосвойством `remove` должны использовать маркер `#$?#`: `$` для синтаксиса правил CSS-стиля, `?` для синтаксиса ExtendedCss.
 
 
-#### Pseudo-class `:is()` {#extended-css-is}
+#### Псевдокласс `:is()` {#extended-css-is}
 
-The `:is()` pseudo-class allows to match any element that can be selected by any of selectors passed to it. Invalid selectors are skipped and the pseudo-class deals with valid ones with no error thrown. Our implementation of the [native `:is()` pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/:is).
+Псевдокласс `:is()` позволяет сопоставить любой элемент, который может быть выбран любым из переданных ему селекторов. Некорректные селекторы пропускаются, и псевдокласс работает с допустимыми селекторами без каких-либо ошибок. Наша реализация [нативного `:is()` псевдокласса](https://developer.mozilla.org/en-US/docs/Web/CSS/:is).
 
 **Синтаксис**
 
 ```
 [target]:is(selectors)
 ```
-- `target` — optional, standard or extended CSS selector, can be missed for checking *any* element
-- `selectors` — [*forgiving selector list*](https://drafts.csswg.org/selectors-4/#typedef-forgiving-selector-list) of standard or extended selectors. For extended selectors only compound selectors are supported, not complex.
+- `target` — необязательный, стандартный или расширенный CSS-селектор, может быть пропущен для проверки *любых* элементов
+- `selectors` — [*щадящий список*](https://drafts.csswg.org/selectors-4/#typedef-forgiving-selector-list) стандартных и расширенных селекторов. Для расширенных селекторов поддерживаются только составные селекторы, а не сложные.
 
-##### `:is()` limitations {#extended-css-is-limitations}
+##### Ограничения `:is()` {#extended-css-is-limitations}
 
-> Rules with the `:is()` pseudo-class should use the [native implementation of `:is()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:is) if rules use `##` marker and it is possible, i.e. with no other extended selectors inside. To force applying ExtendedCss rules with `:is()`, use `#?#`/`#$?#` marker explicitly.
+> Правила с псевдоклассом `:is()` должны использовать [нативную реализацию `:is()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:is), если они используют маркер `##` и если это возможно, то есть без других расширенных селекторов внутри. Чтобы принудительно применить правила ExtendedCss с `:is()`, используйте маркер `#?#`/`#$?#` явно.
 
-> If the `:is()` pseudo-class argument `selectors` is an extended selector, due to the way how the `:is()` pseudo-class is implemented in ExtendedCss v2.0, it is impossible to apply it to the top DOM node which is `html`, i.e. `#?#html:is(<extended-selectors>)` does not work. So if `target` is not defined or defined as a [universal selector](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*`, the extended pseudo-class applying is limited to **`html`'s children**, e.g. rules `#?#:is(...)` and `#?#*:is(...)` are parsed as `#?#html *:is(...)`. Please note that there is no such limitation for a standard selector argument, i.e. `#?#html:is(.locked)` works fine.
+> Если `selectors` аргумент псевдокласса `:is()` — расширенный селектор, то из-за того, как псевдокласс `:is()` реализован в ExtendedCss 2.0, его невозможно применить к верхнему узлу DOM, который является `html`, т.е. `#?#html:is(<extended-selectors>)` не работает. Таким образом, если `target` не определён или определён как [универсальный селектор](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*`, применение расширенного псевдокласса ограничено **`html`дочерними элементами**, например, правила `#?#:is(...)` и `#?#*:is(...)` парсятся как `#?#html *:is(...)`. Обратите внимание, что для стандартного аргумента селектора такого ограничения нет, т.е. `#?#html:is(.locked)` работает нормально.
 
-> [Complex selectors](https://www.w3.org/TR/selectors-4/#complex) with extended pseudo-classes are not supported as `selectors` argument for `:is()` pseudo-class, only [compound ones](https://www.w3.org/TR/selectors-4/#compound) are allowed. Check examples below for more details.
+> [Сложные селекторы](https://www.w3.org/TR/selectors-4/#complex) с расширенными псевдоклассами не поддерживаются в качестве аргумента `selectors` для псевдокласса `:is()` — разрешены только [составные](https://www.w3.org/TR/selectors-4/#compound). Ознакомьтесь с примерами, чтобы разобраться в деталях.
 
 **Примеры**
 
-`#container *:is(.inner, .footer)` selects only the element `div#target1`:
+`#container *:is(.inner, .footer)` выбирает только элемент `div#target1`:
 ```html
 <!-- HTML code -->
 <div id="container">
@@ -2305,7 +2305,7 @@ The `:is()` pseudo-class allows to match any element that can be selected by any
 </div>
 ```
 
-Due to limitations `:is(*:not([class]) > .banner)'` does not work but `:is(*:not([class]):has(> .banner))` can be used instead of it to select the element `div#target2`:
+Из-за ограничений `:is(*:not([class]) > .banner)'` не работает, но `:is(*:not([class]):has(> .banner))` можно использовать вместо него для выбора элемента `div#target2`:
 ```html
 <!-- HTML code -->
 <span class="span">text</span>
@@ -2315,31 +2315,31 @@ Due to limitations `:is(*:not([class]) > .banner)'` does not work but `:is(*:not
 ```
 
 
-#### Pseudo-class `:not()` {#extended-css-not}
+#### Псевдокласс `:not()` {#extended-css-not}
 
-The `:not()` pseudo-class allows to select elements which are *not matched* by selectors passed as argument. Invalid argument selectors are not allowed and error is to be thrown. Our implementation of the [`:not()` pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/:not).
+Псевдокласс `:not()` позволяет выбрать элементы, которые *не соответствуют* селекторам, переданным в качестве аргумента. Неправильные селекторы аргументов не допускаются, и будет выдана ошибка. Наша реализация псевдокласса [`:not()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:not).
 
 **Синтаксис**
 
 ```
 [target]:not(selectors)
 ```
-- `target` — optional, standard or extended CSS selector, can be missed for checking *any* element
-- `selectors` — list of standard or extended selectors
+- `target` — необязательный, стандартный или расширенный CSS-селектор, может быть пропущен для проверки *любых* элементов
+- `selectors` — список стандартных или расширенных селекторов
 
-##### `:not()` limitations {#extended-css-not-limitations}
+##### Ограничения `:not()` {#extended-css-not-limitations}
 
-> Rules with the `:not()` pseudo-class should use the [native implementation of `:not()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:not) if rules use `##` marker and it is possible, i.e. with no other extended selectors inside. To force applying ExtendedCss rules with `:not()`, use `#?#`/`#$?#` marker explicitly.
+> Правила с псевдоклассом `:not()` должны использовать [нативную реализацию `:not()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:not), если они используют маркер `##` и если это возможно, то есть без других расширенных селекторов внутри. Чтобы принудительно применить правила ExtendedCss с `:not()`, используйте маркер `#?#`/`#$?#` явно.
 
-> If the `:not()` pseudo-class argument `selectors` is an extended selector, due to the way how the `:not()` pseudo-class is implemented in ExtendedCss v2.0, it is impossible to apply it to the top DOM node which is `html`, i.e. `#?#html:not(<extended-selectors>)` does not work. So if `target` is not defined or defined as a [universal selector](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*`, the extended pseudo-class applying is limited to **`html`'s children**, e.g. rules `#?#:not(...)` and `#?#*:not(...)` are parsed as `#?#html *:not(...)`. Please note that there is no such limitation for a standard selector argument, i.e. `#?#html:not(.locked)` works fine.
+> Если `selectors` аргумент псевдокласса `:not()` — расширенный селектор, то из-за того, как псевдокласс `:not()` реализован в ExtendedCss 2.0, его невозможно применить к верхнему узлу DOM, который является `html`, т.е. `#?#html:not(<extended-selectors>)` не работает. Таким образом, если `target` не определён или определён как [универсальный селектор](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*`, применение расширенного псевдокласса ограничено **`html`дочерними элементами**, например, rules `#?#:not(...)` и `#?#*:not(...)` парсятся как `#?#html *:not(...)`. Обратите внимание, что для стандартного аргумента селектора такого ограничения нет, т.е. `#?#html:not(.locked)` работает нормально.
 
-> The `:not()` is considered as a standard CSS pseudo-class inside the argument of the [`:upward()` pseudo-class](#extended-css-upward) because `:upward()` supports only standard selectors.
+> Псевдокласс `:not()` рассматривается как стандартный псевдокласс CSS внутри аргумента псевдокласса [`:upward()`](#extended-css-upward), поскольку `:upward()` поддерживает только стандартные селекторы.
 
-> "Up-looking" pseudo-classes which are [`:nth-ancestor()`](#extended-css-nth-ancestor) and [`:upward()`](#extended-css-upward) are not supported inside `selectors` argument for `:not()` pseudo-class.
+> «Восходящие» псевдоклассы [`:nth-ancestor()`](#extended-css-nth-ancestor) и [`:upward()`](#extended-css-upward) не поддерживаются внутри аргумента `selectors` для псевдокласса `:not()`.
 
 **Примеры**
 
-`#container > *:not(h2, .text)` selects only the element `div#target1`:
+`#container > *:not(h2, .text)` выбирает только элемент `div#target1`:
 ```html
 <!-- HTML code -->
 <div id="container">
@@ -2350,13 +2350,13 @@ The `:not()` pseudo-class allows to select elements which are *not matched* by s
 ```
 
 
-#### Pseudo-class `:if-not()` (deprecated) {#extended-css-if-not}
+#### Псевдокласс `:if-not()` (устаревший) {#extended-css-if-not}
 
 > **Предупреждение об устаревании**
 > 
-> The `:if-not()` pseudo-class is deprecated and is no longer supported. Правила с ним не работают.
+> Псевдокласс `:if-not()` устарел и больше не поддерживается. Правила с ним не работают.
 
-This pseudo-class was basically a shortcut for `:not(:has())`. It was supported by ExtendedCss for better compatibility with some filters subscriptions.
+Этот псевдокласс изначально был сокращением для `:not(:has())`. Он поддерживался ExtendedCss для лучшей совместимости с подписками на некоторые фильтры.
 
 
 ### Приоритет косметических правил {#cosmetic-rules-priority}
@@ -2960,25 +2960,25 @@ example.org#@#.adBanner
 
 ### Режим отладки селекторов {#selectors-debug-mode}
 
-Иногда у вас может возникнуть необходимость проверить производительность того или иного селектора или таблицы стилей. Чтобы сделать это без непосредственного взаимодействия с JavaScript, вы можете использовать свойство стиля `debug`. When `ExtendedCss` meets this property, it enables the debugging mode either for a single selector or for all selectors, depending on the `debug` value.
+Иногда у вас может возникнуть необходимость проверить производительность того или иного селектора или таблицы стилей. Чтобы сделать это без непосредственного взаимодействия с JavaScript, вы можете использовать свойство стиля `debug`. Когда `ExtendedCss` встречает это свойство, он включает режим отладки для конкретного селектора или для всех селекторов, в зависимости от значения `debug`.
 
-Откройте консоль браузера, находясь на веб-странице, чтобы посмотреть статистику по времени, затраченному на применение селектора(-ов). Debugging mode displays the following stats as object where each of the debugged selectors are keys, and value is an object with such properties:
+Откройте консоль браузера, находясь на веб-странице, чтобы посмотреть статистику по времени, затраченному на применение селектора(-ов). В режиме отладки следующая статистика отображается в виде объекта, где каждый из отлаживаемых селекторов является ключом, а значение — объектом с такими свойствами:
 
-**Always printed:**
-* `selectorParsed` — text of eventually parsed selector
-* `timings` — list of DOM nodes matched by the selector
-  * `appliesCount` — total number of times that the selector has been applied on the page
-  * `appliesTimings` — time that it took to apply the selector on the page, for each of the instances that it has been applied (in milliseconds)
-  * `meanTiming` — mean time that it took to apply the selector on the page
-  * `standardDeviation` — standard deviation
-  * `timingsSum` — total time it took to apply the selector on the page across all instances
+**Всегда выводится:**
+* `selectorParsed` — окончательный текст селектора после парсинга
+* `timings` — список узлов DOM, соответствующих селектору
+  * `appliesCount` — общее количество раз, когда на странице был применён селектор
+  * `appliesTimings` — время, которое ушло на применение селектора на странице, для каждого из случаев применения этого селектора (в миллисекундах)
+  * `meanTiming` — среднее время, ушедшее на применение селектора на странице
+  * `standardDeviation` — стандартное отклонение
+  * `timingsSum` — общее время, ушедшее на все применения селектора на текущей странице
 
-**Printed only for remove pseudos:**
-* `removed` — flag to signal if elements we removed
+**Выводится только для удалённых псевдоэлементов:**
+* `removed` — флаг, сигнализирующий об удалении элементов
 
-**Printed if elements are not removed:**
-* `matchedElements` — list of DOM nodes matched by the selector
-* `styleApplied` — parsed rule style declaration related to the selector
+**Выводится, если элементы не удалены:**
+* `matchedElements` — список узлов DOM, соответствующих селектору
+* `styleApplied` — объявление обработанного стиля правила, связанного с селектором
 
 **Примеры**
 
@@ -2992,7 +2992,7 @@ example.org#@#.adBanner
 
 **Включение глобальной отладки:**
 
-When the value of the `debug` property is `global`, the console will display information about all extended CSS selectors that have matches on the current page, for all the rules from any of the enabled filters.
+Когда значение свойства `debug` равно `global`, в консоли будет отображаться информация по всем CSS-селекторам, которые были применены на данной странице, для всех правил из любого из включённых фильтров.
 
 ```
 #$?#.banner { display: none; debug: global; }
@@ -3000,7 +3000,7 @@ When the value of the `debug` property is `global`, the console will display inf
 
 **Тестирование расширенных селекторов без AdGuard**
 
-ExtendedCss can be executed on any page without using any AdGuard product. In order to do that you should copy and execute the following code in a browser console:
+ExtendedCss может быть выполнен на любой странице без использования какого-либо продукта AdGuard. Чтобы сделать это, скопируйте и запустите следующий код в консоли браузера:
 
 ```js
 !function(e,t,d){C=e.createElement(t),C.src=d,C.onload=function(){alert("ExtendedCss loaded successfully")},s=e.getElementsByTagName(t)[0],s?s.parentNode.insertBefore(C,s):(h=e.getElementsByTagName("head")[0],h.appendChild(C))}(document,"script","https://AdguardTeam.github.io/ExtendedCss/extended-css.min.js");
@@ -3008,14 +3008,14 @@ ExtendedCss can be executed on any page without using any AdGuard product. In or
 
 В качестве альтернативы установите [пользовательский скрипт ExtendedCssDebugger](https://github.com/AdguardTeam/Userscripts/blob/master/extendedCssDebugger/extended-css.debugger.user.js).
 
-Now you can now use the `ExtendedCss` from global scope, and run its method [`query()`](https://github.com/AdguardTeam/ExtendedCss#extended-css-query) as `Document.querySelectorAll()`.
+Теперь вы можете использовать `ExtendedCss` глобально и запустить его метод [`query()`](https://github.com/AdguardTeam/ExtendedCss#extended-css-query) как `Document.querySelectorAll()`.
 
 **Примеры**
 
 ```js
 const selector = 'div.block:has=(.header:matches-css(after, content: Ads))';
 
-// array of HTMLElements matched the `selector` is to be returned
+// массив HTMLElements, соответствующих `selector`, должен быть возвращён
 ExtendedCss.query(selector);
 ```
 
