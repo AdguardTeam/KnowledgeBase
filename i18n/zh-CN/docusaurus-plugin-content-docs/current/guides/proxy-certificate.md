@@ -61,7 +61,7 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 1. 记下装有 AdGuard 的台式计算机的 IP 地址。
 
-2. Make sure AdGuard’s protection is enabled. Then check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings.
+2. Make sure AdGuard’s protection is enabled. Then go to **Settings** → **Network** → **HTTP proxy** and check the box **Use AdGuard as an HTTP proxy**.
 
 3. On the same computer with AdGuard follow this link using any browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
@@ -83,11 +83,11 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 12. Under *Secure Sockets Layers (SSL)*, select **Always Trust**.
 
-13. Open **System Preferences** → **Network** → **Wi-Fi**.
+13. Open **System Preferences** → **Network** and choose the upper active connection.
 
-14. Navigate to the **Proxies** tab.
+14. Click **Details...** and navigate to the **Proxies** tab.
 
-15. Tick the checkbox *Web Proxy (HTTP)*. For **Web Proxy Server**, enter the noted IP address of your computer (step 1). In the field next to it (separated with a colon), enter the port chosen in the network settings of the AdGuard desktop app.
+15. Tick two checkboxes: *Web proxy (HTTP)* and *Secure web proxy (HTTPS)*. In the **Server** field, enter the noted IP address of your computer (step 1). In the **Port** field, enter the port chosen in the network settings of the AdGuard desktop app.
 
 ### 安卓系统 {#android}
 
