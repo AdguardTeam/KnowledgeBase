@@ -1,5 +1,5 @@
 ---
-title: 本地 adguard.com 域
+title: Local.adguard.org 域名
 sidebar_position: 3
 ---
 
@@ -11,7 +11,7 @@ Windows，Mac 和 Android 的 AdGuard 用户可能会注意到 AdGuard 在每个
 
 但是，这是怎么回事，为什么要这样做？ 请阅读以下技术说明。
 
-1. AdGuard 是一个网络级内容阻止程序，因此它不能跟浏览器扩展程序一样简单地将自定义 JavaScript 和 CSS 添加到网页中。 但是，这样做对于高质量的内容拦截至关重要。
+1. AdGuard is a network-level content blocker so it cannot simply add custom JavaScript and CSS to webpages like what browser extensions do. 但是，这样做对于高质量的内容拦截至关重要。
 2. 为了做到这一点，AdGuard 注入了一个“内容脚本”：`<script src="https://local.adguard.org/.../content-script.js">`。 这个“内容脚本”会处理修饰符过滤，隐藏或删除网页中的广告内容。
 3. AdGuard 在网络级别拦截 `local.adguard.org` 域名地址的连接并**在本地进行处理**。 这就是为什么该域名具有多年不变的“静态” IP 地址。
 

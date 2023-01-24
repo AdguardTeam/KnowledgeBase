@@ -13,7 +13,7 @@ Battery and traffic consumption shown in devices statistics **do not represent t
 
 To mitigate this misconception, we added a new screen called 'Battery usage'. You can access it by tapping on the battery icon in the top right corner of the main screen.
 
-![Battery stats](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/battery/batterystats.png)
+![Battery stats *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/battery/batterystats.png)
 
 Inside you will find a chart that shows the AdGuard battery resource consumption within the last 24 hours, with an option to get more detailed hour-to-hour data by tapping on the dots on the chart. Besides that, there’s also a numeric breakdown of the relevant data and a short technical explanation.
 
@@ -21,9 +21,9 @@ Inside you will find a chart that shows the AdGuard battery resource consumption
 
 On the screenshots below you can see the battery resource consumption statistics for a night and subsequent morning:
 
-![Battery 1](https://cdn.adguard.com/public/Adguard/kb/PicturesEN/battery_1.png)
-![Battery 2](https://cdn.adguard.com/public/Adguard/kb/PicturesEN/battery_2.png)
-![Battery 3](https://cdn.adguard.com/public/Adguard/kb/PicturesEN/battery_3.png)
+![Battery 1 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_1.png)
+![Battery 2 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_2.png)
+![Battery 3 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_3.png)
 
 From these screenshots you can see that:
 
@@ -59,7 +59,7 @@ Let's put real numbers into this formula.
 
 Let's take _CPU total_ from the second screenshot and convert into milliseconds: 506000
 
-A coefficient _cpu.active_ for 2GHz will be roughly equal to 225mA
+A coefficient _cpu.active_ for 2GHz will be roughly equal to 225mAh
 
 Final result
 

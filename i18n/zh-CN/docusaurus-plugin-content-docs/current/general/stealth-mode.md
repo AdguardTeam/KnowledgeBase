@@ -11,7 +11,7 @@ Below we will list and describe the main features and options that you can contr
 
 > Some options may not be available depending on the particular product due to OS or other limitations.
 
-### General {#general}
+### 常规 {#general}
 
 #### Hide your search queries {#searchqueries}
 
@@ -23,7 +23,7 @@ It sends a Do-Not-Track (DNT) HTTP header to queried websites, thus requiring we
 
 #### Strip tracking parameters from URLs
 
-If you enable this option, AdGuard will strip tracking parameters like utm_* and fb_ref from pages’ URLs.
+If you enable this option, AdGuard will strip tracking parameters like `utm_*` and `fb_ref` from pages’ URLs.
 
 ### Tracking methods {#tracking-methods}
 
@@ -69,7 +69,7 @@ The Flash Player plugin has become increasingly vulnerable to such online threat
 
 Some websites and web services still use the old technology to support Java plugins. The Java plugin API, which is the basis of Java plugins, has serious security flaws. For security purposes, you can disable such plugins. Nevertheless, even if you decide to use the "Block Java" option, JavaScript will still be enabled.
 
-### Miscellaneous {#miscellaneous}
+### 其它 {#miscellaneous}
 
 #### Hide Referrer from third-parties {#referrer}
 
@@ -97,4 +97,4 @@ The Deep Packet Inspection is a system of deep analysis and filtering of traffic
 
 AdGuard can modify outgoing packet data so that the client does not fall under the DPI blocking criteria. This means that by enabling this option, users can get access to the content they want. Not all DPI systems can be bypassed at this time, but we are constantly working to improve this.
 
-> "Protect from DPI" feature is already implemented in AdGuard for Windows, AdGuard for Mac, and AdGuard for Android apps.
+> The "Protect from DPI" feature is already implemented in AdGuard for Windows, AdGuard for Mac, and AdGuard for Android.

@@ -1,83 +1,83 @@
 ---
-title: Legacy licenses FAQ
+title: 'Устаревшие лицензии: часто задаваемые вопросы'
 sidebar_position: 4
 ---
 
-We have written this article to avoid confusion and explain in detail how you can renew/upgrade an outdated (legacy) AdGuard license.
+Мы написали эту статью, чтобы избежать путаницы и подробно объяснить, как можно продлить/обновить устаревшую лицензию AdGuard.
 
-## About the outdated licenses
+## Об устаревших лицензиях
 
-Initially licenses of the following types were available to activate AdGuard products:
+Изначально для активации продуктов AdGuard были доступны лицензии следующих типов:
 
-**Standard** — for desktop applications AdGuard for Windows/AdGuard for Mac
+**Стандартная** — для десктопных приложений AdGuard для Windows и AdGuard для Mac
 
-**Mobile** — for mobile applications AdGuard for Android/AdGuard for iOS
+**Мобильная** — для мобильных приложений AdGuard для Android и AdGuard для iOS
 
-**Premium** — a license that combines desktop + mobile application
+**Премиум** — лицензия для десктопных и мобильных приложений
 
-Standard and Mobile licenses could be purchased for 1 to 9 devices.
+Стандартную и Мобильную лицензии можно было приобрести для использования на 1–9 устройствах.
 
-Standard were valid only for desktops, and Mobile were only for smartphones and tablets.
+Стандартные лицензии можно было использовать только для компьютерах, а Мобильные — только на смартфонах и планшетах.
 
-Premium licenses could have been used on 2-18 devices. Depending on the number of devices selected upon purchasing, they allowed you to simultaneously activate AdGuard on an equal number of computers and mobile devices: 2+2, 3+3, etc.
+Премиум-лицензии можно было использовать на 2–18 устройствах. В зависимости от выбранного при покупке количества, они позволяли одновременно активировать AdGuard на одинаковом количестве компьютеров и мобильных устройств: 2+2, 3+3 и т. д.
 
-For example, you might have had a Premium license for 2+2 devices, that is, the license could be installed on 2 computers and 2 phones/tablets. Or, for example, for 9+9 (18 devices in total), then the license could be installed on 9 computers and 9 phones/tablets.
+У вас могла быть Премиум-лицензия 2+2, то есть лицензию можно было установить на 2 компьютера и 2 телефона/планшета. Или, например, на 9+9 (в сумме 18 устройств), тогда лицензия устанавливается на 9 компьютеров и 9 телефонов/планшетов.
 
-For all types (Standard, Mobile, Premium) there were options for a Yearly and Lifetime license.
+Для всех типов (Стандартные, Мобильные, Премиум) существовали варианты Годовой и Вечной лицензии.
 
-In October 2019 AdGuard switched to the new licensing system: from then on, licenses can still be purchased for 1 year or Lifetime, but their types have become **Personal** (for up to 3 devices) or **Family** (for up to 9 devices).
+С октября 2019 года AdGuard перешёл на новую систему тарифов: теперь лицензии также можно купить на 1 год или навечно, но они стали **Персональными** (на 3 устройства) или **Семейными** (на 9 устройств).
 
-One more change: **license keys of the new type can now be used on any device, in any combination. For example, a Personal License can be installed on Android, Mac and iOS, just like on two Windows computers and an Apple tablet, etc.**
+Ещё одно изменение: **ключи нового типа можно использовать на любых устройствах, в любых комбинациях. Например, Персональную лицензию можно установить на Android, Мас и iOS, точно так же, как и, например, на два компьютера Windows и планшет Apple.**
 
-## What happened to the outdated licenses?
+## Что стало с устаревшими лицензиями
 
-Standard were automatically made universal, which means that they can be activated on any devices.
+Стандартные автоматически стали универсальными, а это значит, что их можно активировать на любых устройствах.
 
-Mobile licenses remained unchanged and platform-limited (they can still only be used on phones or tablets).
+Мобильные ключи остались без изменений и сохранили ограничение по платформе (их по-прежнему можно использовать только на телефонах/планшетах).
 
-Premium licenses also remained unchanged and platform-limited. And although **Premium licenses are now displayed in your personal account by the total number of devices**, they can still be activated on desktop + mobile set of devices.
+Премиум-ключи также сохранили разграничение по платформам (используются пополам на десктопных и мобильных устройствах). Теперь все **Премиум-лицензии отображаются в личном кабинете по суммарному количеству устройств**. Их по-прежнему можно активировать на десктопных и мобильных устройствах.
 
-For example, this is how the 1+1 key looks like:
+Вот так, например, выглядит ключ 1+1:
 
-![1+1 key](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/1.outdatedlicenses_en.png)
+![ключ 1+1](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/1.outdatedlicenses_en.png)
 
-*But despite the total number of devices (2) it can be activated on 1 desktop and 1 mobile device.*
-> All the outdated licenses have a “legacy” badge in the AdGuard account. And they are automatically converted to a new type when you either renew or upgrade them. But there are some nuances. Let's see which licenses can be converted to a new type and how to do it.
+*Несмотря отображение общего количества устройств, использоваться он может всё так же на одном десктопном и одном мобильном устройстве.*
+> Все устаревшие лицензии отображаются в личном кабинете с пометкой «старая версия». Они автоматически преобразуются в новый тип, когда вы их улучшаете или продлеваете. Однако тут есть небольшие технические ограничения. Ниже рассказываем, какие лицензии можно преобразовать в ключи нового типа и как это сделать.
 
-## I have an outdated (legacy) key. What renewal/upgrade options are available for me?
+## У меня устаревший ключ. Как я могу продлить или улучшить его?
 
-You can check this on the [renewal page](https://adguard.com/renew.html) or in your [AdGuard account](https://my.adguard.com/main.html):
+Сделать это можно на [странице продления](https://adguard.com/renew.html) или в [личном кабинете AdGuard](https://my.adguard.com/main.html):
 
-![Upgrade](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_en.png)
-> Go to “My licenses” tab and check what actions are available to you for each specific key. Below we will explain with specific examples.
+![Улучшить](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_en.png)
+> Перейдите в «Мои лицензии» и проверьте, какие улучшения вам доступны для каждого конкретного ключа. Ниже поясним на конкретных примерах.
 
-### Licenses for 1/2/3 devices
+### Лицензии на 1/2/3 устройства
 
-**Yearly** licenses for 1, 2, 3 devices can be converted to either Personal or Family:
+**Годовые** лицензии на 1, 2, 3 устройства могут быть сконвертированы как в Персональную, так и в Семейную лицензию при продлении:
 
-![Upgrade or renew](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/3.yearly_en.png)
-> Choose based on how many devices you need to protect.
+![Обновить или улучшить](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/3.yearly_en.png)
+> Выбирайте, сколько устройств вам нужно защитить.
 
-Instead of renewal you can switch to Lifetime:
+Вы также можете не продлевать лицензии, а сделать их вечными:
 
-![Lifetime](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/4.lifetime_en.png)
+![Вечная](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/4.lifetime_en.png)
 
-**Lifetime** licenses can only be converted to Family (9 devices) due to technical limitations:
+**Вечные** лицензии из-за технических ограничений можно конвертировать только в Семейные (на 9 устройств):
 
-![Lifetime upgrade](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/5.lifetimeupgrade_en.png)
+![Улучшить до Вечной](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/5.lifetimeupgrade_en.png)
 
-### Licenses for 4+ devices (up to 9)
+### Лицензии на 4+ устройства (до 9)
 
-**Yearly** keys of this configuration can only be converted into a Family license:
+**Годовые** ключи такой конфигурации можно превратить только в Семейную лицензию:
 
-![Yearly license for 4 devices](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/6.yearly4+devices_en.png)
+![Годовая лицензия на 4 устройства](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/6.yearly4+devices_en.png)
 
-**Lifetime** licenses for 4 or more devices cannot be upgraded due to technical limitation:
+**Вечные** ключи на 4 и более устройств нельзя улучшить. Здесь также действует техническое ограничение:
 
-![Lifetime license for 4 devices](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/7.lifetime4+devices_en.png)
+![Вечная лицензия на 4 устройства](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/7.lifetime4+devices_en.png)
 
-### Licenses for 9+ devices
+### Лицензии на 9+ устройств
 
-Premium keys (5+5 and more) and custom keys for 10+ devices that you purchased individually with the help of our managers.
+Речь о премиум-ключах 5+5 (и далее) и на специальные ключи от 10 устройств, которые вы приобретали у наших менеджеров в индивидуальном порядке.
 
-These are quite unique cases, so if you want to upgrade your license to Lifetime, please contact us at partners@adguard.com. We will make you a special offer depending on the specific configuration of your license.
+Это достаточно уникальные случаи, поэтому если вы захотите улучшить подобную Годовую лицензию до Вечной, то, пожалуйста, напишите нам на partners@adguard.com. Мы вышлем вам спецпредложение в зависимости от конкретной конфигурации вашей лицензии.

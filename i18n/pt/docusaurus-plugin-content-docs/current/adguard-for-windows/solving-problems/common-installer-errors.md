@@ -32,7 +32,7 @@ You could say this is a particular sub-case of Error 1603. The possible solution
 
 - Start and re-register Microsoft Installer service. It requires some work.
 
-    1) Press **Win + R** and enter "***services.msc***. 2) Find in the list and double click on **Windows Installer**. 3) Hit **Start** button under *Service status** and hit **OK**. If the service status is **running**, you should click on **Stop** first and then hit **Start**. 4) Press  **Win + R**, type and enter "***msiexec /unregister*** and hit **Enter**. 5) Press  **Win + R** again, type and enter "***msiexec /regserver*** and hit **Enter**
+    1) Press *Win + R* and enter **services.msc**. 2) Find in the list and double click on *Windows Installer*. 3) Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click on *Stop* first and then hit *Start*. 4) Press *Win + R*, type and enter ***msiexec /unregister*** and hit *Enter*. 5) Press *Win + R* again, type and enter ***msiexec /regserver*** and hit *Enter*
 
 - Reboot the PC and start the installation all over again. Sometimes that's enough to fix the problem.
 
@@ -50,19 +50,19 @@ If you got this error code, chances are you have interrupted the installation pr
 
 The error sounds scarier than it actually is. In reality, this is a rather generic error that can have many different causes, and some of them are easily fixed. Try the following solutions:
 
-- Press the **Win** key, search for **Command Prompt** and run it. There, type in `sfc /scannow` and press **Enter**.
+- Press the *Win* key, search for *Command Prompt* and run it. There, type in `sfc /scannow` and press *Enter*.
 
 - Choose a different installation folder. It is possible that the current installation folder has some access restrictions. Also make sure you don't select an external drive, a virtual drive, etc.
 
-- Uninstall AdGuard using our special [uninstall tool](/adguard-for-windows/installation.md#advanced) and then repeat the installation.
+- Uninstall AdGuard using our special [uninstall tool](../../installation#advanced) and then repeat the installation.
 
 - Start and re-register Microsoft Installer service. It requires some work.
 
-    1) Press **Win + R** and enter "***services.msc***. 2) Find in the list and double click on **Windows Installer**. 3) Hit **Start** button under **Service status** and hit **OK**. If the service status is **running**, you should click on **Stop** first and then hit **Start**. 4) Press  **Win + R**, type and enter "***msiexec /unregister*** and hit **Enter**. 5) Press  **Win + R** again, type and enter "***msiexec /regserver*** and hit **Enter**
+    1) Press *Win + R* and enter ***services.msc***. 2) Find in the list and double click on *Windows Installer*. 3) Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click on *Stop* first and then hit *Start*. 4) Press *Win + R*, type and enter ***msiexec /unregister*** and hit *Enter*. 5) Press *Win + R* again, type and enter ***msiexec /regserver*** and hit *Enter*
 
 - Acquire full permissions on the drive for installation. It is possible that the error 1603 occurs because you don’t have full permissions on the file location. It's also not as easy as some of the other solutions:
 
-    1) Open **File Explorer**, right click on the drive containing the installation location and select **Properties**. 2) Go to **Security** tab and click on **Edit**. 3) Single click on **SYSTEM** and ensure that the **Allow** box of every item in **Permissions for SYSTEM** is checked (if it is checkable). Do the same check for **Administrators**. 4) Click on **OK** to go back to **Properties** dialog. Then click on **Advanced**. 5) Click on **Change Permissions**. 6) On **Permissions** tab, double click on **Administrators**. 7) Select **This folder, subfolders and files** for **Applies to** field and tick all the available **Basic permissions**. After that hit **OK**. 8) Do the same operation above (from item 7) for **SYSTEM**. 9) Click on **OK** all the way out. Try installing AdGuard again.
+    1) Open *File Explorer*, right click on the drive containing the installation location and select *Properties*. 2) Go to *Security* tab and click on *Edit*. 3) Single click on *SYSTEM* and ensure that the *Allow* box of every item in *Permissions for SYSTEM* is checked (if it is checkable). Do the same check for *Administrators*. 4) Click on *OK* to go back to *Properties* dialog. Then click on *Advanced*. 5) Click on *Change Permissions*. 6) On *Permissions* tab, double click on *Administrators*. 7) Select *This folder, subfolders and files* for *Applies to* field and tick all the available *Basic permissions*. After that hit *OK*. 8) Do the same operation above (from item 7) for *SYSTEM*. 9) Click on *OK* all the way out. Try installing AdGuard again.
 
 ### Error 1618: Another installation is already in progress {#error-1618}
 
@@ -76,16 +76,16 @@ This error occurs when there are several instances of AdGuard installer launched
 
 It's very likely that you've already installed AdGuard before.
 
-- Check if AdGuard is already installed on your computer. You can do it by pressing the **Win** key and typing in ***AdGuard***.
+- Check if AdGuard is already installed on your computer. You can do it by pressing the *Win* key and typing in ***AdGuard***.
 
-- Maybe there's some leftover files from a previous AdGuard installation. Uninstall AdGuard using our special [uninstall tool](/adguard-for-windows/installation.md#advanced) and then repeat the installation.
+- Maybe there's some leftover files from a previous AdGuard installation. Uninstall AdGuard using our special [uninstall tool](../../installation#advanced) and then repeat the installation.
 
 ### Other errors {#other}
 
 If you've encountered an error that's not listed above, it is possible that we can solve it by ourselves. But in order to do that, we need log files from you. Please perform the following steps:
 
-- Find and archive **AdGuard installation logs** as it is described in [this article](/adguard-for-windows/solving-problems/installation-logs.md).
+- Find and archive **AdGuard installation logs** as it is described in [this article](../installation-logs).
 
-- Find and save to disk **Event Viewer** logs. [This article](/adguard-for-windows/solving-problems/system-logs.md) explains how to do that.
+- Find and save to disk **Event Viewer** logs. [This article](../system-logs) explains how to do that.
 
-- Please email all these files from two previous steps to the **[support team](/support/contact.md)** and describe the problem in the message body. Our tech support agents will reply to you as soon as possible.
+- Please email all these files from two previous steps to the support team at **support@adguard.com** and describe the problem in the message body. Our tech support agents will reply to you as soon as possible.

@@ -11,8 +11,8 @@ sidebar_position: 3
 
 ## Браузерный помощник AdGuard
 
-![Браузерный помощник AdGuard](https://cdn.adguard.com/content/kb/ad_blocker/browser_extension/ad_blocker_browser_extension_assistant.png)
+![Браузерный помощник AdGuard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/ad_blocker_browser_extension_assistant.png)
 
-Браузерный помощник AdGuard — новое браузерное расширение, которое в своей работе ощущается и ведёт себя как режим интеграции, но намного легче, потому что не дублирует функции приложения AdGuard и не конфликтует с ним. Вы можете [прочитать больше о Браузерном помощнике для Windows](/adguard-for-windows/browser-assistant.md) и [Mac](/adguard-for-mac/browser-assistant.md) или [скачать его с нашего сайта](https://adguard.com/adguard-assistant/overview.html).
+Браузерный помощник AdGuard — новое браузерное расширение, которое в своей работе ощущается и ведёт себя как режим интеграции, но намного легче, потому что не дублирует функции приложения AdGuard и не конфликтует с ним. Вы можете [прочитать больше о Браузерном помощнике для Windows](/adguard-for-windows/browser-assistant) и [Mac](/adguard-for-mac/browser-assistant) или [скачать его с нашего сайта](https://adguard.com/adguard-assistant/overview.html).
 
 Браузерный помощник AdGuard доступен во всех основных браузерах.

@@ -1,32 +1,32 @@
 ---
-title: How to collect Windows system logs
+title: Как получить файлы журнала Windows
 sidebar_position: 5
 ---
 
-To analyse and diagnose different problems that may potentially arise, the AdGuard support service might need Windows system log files. Windows event logs contain records about all errors that occurr with the installed software, including AdGuard. Below is the brief instruction describing the way to get the log files and to send them to our support service if necessary.
+Для анализа и диагностики сложных проблем, связанных с работой AdGuard, службе поддержки могут понадобиться файлы журнала Windows. Журналы Windows содержат записи о системных событиях и ошибках за последнее время. Ниже представлена инструкция для получения и отправки этих файлов.
 
-1. Press **Win + R**
+1. Нажмите *Win + R*
 
-2. In the window that appears type in `eventvwr` and click on **OK**:
+2. В появившемся окне введите `eventvwr` и нажмите *OK*:
 
-![Run window](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/eng_event_logs_1.png)
+![Окно запуска *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_1.png)
 
-3. Event Viewer window appears as shown in the picture.
+3. Окно программы «Просмотр событий» выглядит, как показано ниже.
 
-![Event viewer](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/eng_event_logs_2.png)
+![Просмотр событий *border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_2.png)
 
-To save files that we need, do the following:
+Чтобы сохранить нужные нам файлы, сделайте следующее:
 
-- Open **Application**: **Event Viewer (Local)** -> **Windows Logs** -> **Application**.
+- Откройте *Приложение*: *Просмотр событий (локальный)* -> *Логи Windows* -> *Приложение*.
 
-- Right-click on the **Application** and in drop-down menu select **Save All Events As...**
+- Щёлкните правой кнопкой мыши по разделу *Приложение* и в выпадающем меню выберите *Сохранять все события как...*
 
-- Select a name and where to save, click **Save**. Select **Display information for the following languages**. You need to tick the box next to **English**. Click **OK**.
+- Выберите имя и место сохранения, нажмите *Сохранить*. Выберите *Отображать сведения для следующих языков*. Поставьте галочку напротив пункта *Английский язык*. Нажмите *OK*.
 
-- Open **System**: **Event Viewer (Local)** -> **Windows Logs** ->  **System**.
+- Откройте *Система*: *Просмотр событий (локальный)* -> *Логи Windows* -> *Приложение*.
 
-- Right-click on **System** and in the drop-down menu, select **Save All Events As...**
+- Щёлкните правой кнопкой мыши по разделу *Система* и в выпадающем меню выберите *Сохранять все события как...*
 
-- Choose a destination folder, enter the name, click **Save**. Select **Display information for the following languages**. You need to tick the box next to **English**. Click **OK**.
+- Выберите папку назначения, введите имя и нажмите *Сохранить*. Выберите *Отображать сведения для следующих языков*. Поставьте галочку напротив пункта *Английский язык*. Нажмите *OK*.
 
-Please send the two files that you've recently saved to the AdGuard support service at **support@adguard.com**.
+Полученные два файла отправьте в службу поддержки AdGuard: **support@adguard.com**.

@@ -3,13 +3,15 @@ title: Known issues
 sidebar_position: 2
 ---
 
-> Last update: September 20, 2022 Understanding this article may require some basic knowledge about encryption, the TLS protocol, and HTTPS.
+> Last update: September 20, 2022
+
+> Understanding this article may require some basic knowledge about encryption, TLS, and HTTPS.
 
 First, look at this simple diagram that shows the general structure of the HTTPS protocol:
 
-![What is HTTPS filtering](https://cdn.adguard.com/public/Adguard/Blog/https/what_is_https_filtering.png)
+![What is HTTPS filtering](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
 
-AdGuard copies properties of the TLS-connection that your browser uses:
+AdGuard copies properties of the TLS connection that your browser uses:
 
 * AdGuard uses the same TLS version
 * AdGuard uses the same encrypting methods (ciphers) as your browser
@@ -38,4 +40,4 @@ AdGuard products which use [CoreLibs](https://github.com/AdguardTeam/CoreLibs/) 
 
 ## Have remarks or suggestions?
 
-If you’d like to add something, report any errors, or ask a question, please contact us at: `devteam at adguard.com`.
+If you’d like to add something, report any errors, or ask a question, please contact us at: `devteam@adguard.com`.

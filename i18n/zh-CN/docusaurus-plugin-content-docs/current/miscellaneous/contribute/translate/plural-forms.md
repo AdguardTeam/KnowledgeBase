@@ -18,7 +18,7 @@ sidebar_position: 4
 
 我们来看看这张图片。 在这里，可以看到一组数字。按这些数字要选择数字后面的单词形式。
 
-![波兰语](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
+![波兰语](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
 > [在此处](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals)查找其他示例。
 
@@ -54,7 +54,7 @@ sidebar_position: 4
 
 ### 1. 带有 `.singular`、`.dual`、`.plural` 作为结尾的字符串键的短语 {#1type}
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/plurals/dual_it.png)
+![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/dual_it.png)
 
 其中大多数属于 `AdGuard for Windows` 项目中，仅包含一两个单词：
 
@@ -70,13 +70,13 @@ sidebar_position: 4
 
 请看示例：
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/plurals/android_fr.png)
+![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/android_fr.png)
 
 如果您的语言名词具有三种复数形式（正如波兰语)，请用逗号分隔每一个复数形式。
 
-`hour, hours --> godzinę, godziny, godzin`
+`hour, hours — godzinę, godziny, godzin`
 
-如果一个名词只有两种形式，则无需重复写同一形式（**通常仅适用于这种带有复数形式的字符串！**）。 但是，如果您把同一个形式重写两次也不会出错。
+如果一个名词只有两种形式，则无需重复写同一形式（*通常仅适用于这种带有复数形式的字符串！*）。 但是，如果您把同一个形式重写两次也不会出错。
 
 ### 3. 使用 Crowdin 发展模式的字符串 {#3type}
 
@@ -88,7 +88,7 @@ Crowdin 为用户提供翻译一定数量具有不同复数形式的短语的功
 
 例如：
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/plurals/crowdin_scheme.png)
+![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/crowdin_scheme.png)
 
 在翻译和批准这些字符串时，请注意一下， 如果您不知道 “Other” 字段的含义，则只需粘贴与 “ Many” 字段中相同的表单即可。 “Many” 和 “Other” 字段的内容可以相同。
 
@@ -98,9 +98,9 @@ Crowdin 为用户提供翻译一定数量具有不同复数形式的短语的功
 
 请密切注意句子与原始短语中的 **%count%** 占位符之间的竖线符号。这将帮助您识别需要使用复数形式短语的翻译。
 
-![crowdin](https://cdn.adguard.com/public/Adguard/kb/en/plurals/plurals_site.png)
+![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/plurals_site.png)
 
-现在，我们来想象一下。您将面临这样的短语：*"Standard license for %count% computer|Standard license for %count% computers"*。
+现在，我们来想象一下。您将面临这样的短语：`"Standard license for %count% computer | Standard license for %count% computers"`。
 
 您应该知道哪些信息才能正确翻译它？
 
@@ -108,7 +108,7 @@ Crowdin 为用户提供翻译一定数量具有不同复数形式的短语的功
 
 回到示例，由于英语仅包含两种复数形式，因此应分别有两个模板：
 
-`**Standard license for *%count%* computer|Standard license for *%count%* computers**`
+`Standard license for *%count%* computer | Standard license for *%count%* computers`
 
 其中**模板 （template）1** – *％count％* 台计算机（computer）的标准许可，
 
@@ -120,22 +120,22 @@ Crowdin 为用户提供翻译一定数量具有不同复数形式的短语的功
 
 例如，当我们将上面提到的短语翻译成斯洛伐克语时，根据 [Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) 的规则，它具有三种词形，正确的翻译应该是这样的：
 
-`**Štandartná licencia pre *%count%* počítač|Štandartná licencia pre *%count%* počítače|Štandartná licencia pre *%count%* počítačov**`
+`**Štandartná licencia pre *%count%* počítač | Štandartná licencia pre *%count%* počítače | Štandartná licencia pre *%count%* počítačov**`
 
-![斯洛伐克语](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/slovak.png)
+![斯洛伐克语](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/slovak.png)
 
 在这种情况下，我们看到三个模板，其中包含斯洛伐克语中单词 *"počítač"* （计算机）的三种形式。
 
-**如果我们忽略其中一种形式，而只为斯洛伐克语使用两个，而不是三个模板，则系统将无法为某些数字采用适当的模板。结果是，句子中将出现语法错误，例如英语：Standard license for 5 computer（正确应是：Standard license for 5 computers）**。
+*如果我们忽略其中一种形式，而只为斯洛伐克语使用两个，而不是三个模板，则系统将无法为某些数字采用适当的模板*。结果是，句子中将出现语法错误，例如英语：*Standard license for 5 computer（正确应是：Standard license for 5 computers）*。
 > **即使单词本身的单词形式较少，也要始终使用尽可能多的形式。**
 
 例如，塞尔维亚单词 *'računar'*（计算机（computer））只有两种形式。 但是塞尔维亚语有 3 种复数形式。
 
-![塞尔维亚语](https://cdn.adguard.com/content/Kb/ad_blocker/miscellaneous/adguard_translations/serbian.png)
+![塞尔维亚语](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/serbian.png)
 
 因此，英语翻译成塞尔维亚语是：
 
-`**Standardna licenca za *%count%* računar|Standardna licenca za *%count%* računara|Standardna licenca za *%count%* računara**`
+`**Standardna licenca za *%count%* računar | Standardna licenca za *%count%* računara | Standardna licenca za *%count%* računara**`
 
 尽管很明显，最后两个模板没有区别，但保持规则非常重要：**模板的数量应反映相应语言的复数形式** (通常针对这种带复数的字符串)。
 
@@ -148,8 +148,6 @@ Crowdin 为用户提供翻译一定数量具有不同复数形式的短语的功
 重申一次：如果您遇到包含两个重要元素的原始词组：**竖线符号**和 **％count％** 占位符，请执行以下操作：
 
 + 指翻译成一种语言的复数规则；
-
-+ 保留确切数量的模板；
 
 > 即使在某些单词本身具有较少形式的情况下，模板的数量也应与语言所包含的复数形式的数量相一致。 两种复数形式对应翻译中的两个模板；五个复数形式对应五个模板等。
 

@@ -14,18 +14,18 @@ sidebar_position: 3
 
 1) 登录 [AdGuard 帐号](https://auth.adguard.com/login.html)并前往设置标签，然后向下滚动到密码和安全部分。 2) 点击标题后第一行的「更改」按钮：
 
-![更改按钮](https://cdn.adguard.com/content/kb/ad_blocker/general/2fa.png)
+![更改按钮](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa.png)
 
 3) 使用您手机上的认证软件扫描二维码：
 
-![验证码](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/2Fa2en.png)
+![验证码 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/2Fa2en.png)
 
 *重要信息*
 * 请您保存第二个备用密码。该密码是在您的手机丢失或被偷窃的情况下用于恢复您的帐号的必要信息。
 
 如果每个步骤都完成，下次登录个人帐号时，您将看到：
 
-![结果](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/2Fa3en.png)
+![结果 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/2Fa3en.png)
 
 使用手机的认证软件扫码并输入验证码。 登录成功了！
 

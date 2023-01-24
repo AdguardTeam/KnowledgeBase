@@ -1,108 +1,108 @@
 ---
-title: Advanced (low-level) Settings guide
+title: Расширенные (низкоуровневые) настройки
 sidebar_position: 7
 ---
 
-Previously known as low-level settings, Advanced Settings mostly contain settings that go beyond the average user's competence and don't have application in the everyday use. AdGuard for Windows is designed to work without ever having to change any of them, but they will provide additional options in some corner-case situations or when solving an uncommon problem.
+Ранее известные как низкоуровневые настройки, расширенные настройки содержат параметры, которые выходят за рамки компетенции среднего пользователя и не находят применения в повседневном использовании. AdGuard для Windows функционирует без необходимости изменять любой из низкоуровневых параметров. Однако они предоставляют дополнительные возможности в некоторых сложных ситуациях или при решении нестандартных проблем.
 
-> Mindlessly changing *Advanced Settings* can potentially cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only make changes to these settings if you are sure of what you are doing or if our support team has asked you to do so.
+> Изменение *Расширенных настроек* может вызвать проблемы с производительностью AdGuard, нарушить подключение к интернету или поставить под угрозу вашу безопасность и конфиденциальность. Вносить изменения в эти настройки следует только в том случае, если вы уверены в том, что делаете, или если об этом вас попросила наша служба поддержки.
 
-## How to reach Advanced Settings
+## Как перейти к Расширенным настройкам
 
-To go to *Advanced settings*, in the main windows click *Settings —> General Settings* and scroll down to *Advanced Settings*. Alternatively, select *Advanced -> Advanced settings...* in the tray menu.
+Чтобы попасть в *Расширенные настройки*, на главном экране откройте *Настройки —> Основные настройки* и прокрутите вниз до *Расширенных настроек*. Или выберите *Расширенные → Расширенные настройки...* в трей-меню.
 
 ## Расширенные настройки
 
-Once you open Advanced Settings, you will be presented with the following options:
+После того как вы откроете Расширенные настройки, вам будут представлены следующие опции:
 
-### Block TCP Fast Open
+### Блокировать TCP Fast Open
 
-If enabled, AdGuard will block TCP Fast Open in the Edge browser. To apply settings, you need to restart the browser.
+Если эта функция включена, AdGuard будет блокировать TCP Fast Open в браузере Edge. Чтобы применить настройки, необходимо перезапустить браузер.
 
-### Exclude app from filtering by entering the full path
+### Исключите приложение из фильтрации, введя полный путь
 
-If you want AdGuard not to filter any specific application, specify the full path to them and the apps will be excluded from filtering. Separate different paths by semicolons.
+Если вы хотите, чтобы AdGuard не фильтровал конкретные приложения, укажите полный путь к ним, и приложения будут исключены из фильтрации. Разделите разные пути точкой с запятой.
 
-### Enable AdGuard pop-up notifications
+### Включить всплывающие уведомления AdGuard
 
-Enable this feature to see AdGuard pop-up notifications. They do not appear too often and contain only important information. You can also use the tray menu to recall the last pop-up notification.
+Включите эту функцию, чтобы видеть всплывающие уведомления AdGuard. Они появляются не слишком часто и содержат только важную информацию. Вы также можете использовать трей-меню, чтобы вызвать последнее всплывающее уведомление.
 
-### Automatically intercept filter subscription URLs
+### Автоматически перехватывать URL-адрес фильтра
 
-Enable this feature if you want AdGuard to automatically intercept filter subscription URLs (i.e. `abp:subscribe` and alike) and to open a custom filter installation dialog.
+Включите эту функцию, если вы хотите, чтобы AdGuard автоматически перехватывал URL фильтра (например, `abp:subscribe` и т.п.) и открывал диалог установки пользовательского фильтра.
 
-### Use redirect driver mode
+### Использовать драйвер в режиме перенаправления
 
-If this option is enabled, AdGuard intercepts all the traffic and redirects it to the local proxy server for further filtering.
+Если эта опция включена, AdGuard перехватывает весь трафик и перенаправляет его на локальный прокси-сервер для дальнейшей фильтрации.
 
-Otherwise, AdGuard will filter all the traffic on the fly, without redirection. In this case, the system will consider AdGuard to be the sole application that connects to the Internet (other applications are routed through it). The downside is that it will make the system Firewall less effective. The upside is that this approach works a little bit faster.
+В противном случае AdGuard будет фильтровать весь трафик на лету, без перенаправления. При этом система будет считать AdGuard единственным приложением, которое подключается к интернету (другие приложения будут направляться через него). Минусом является то, что это сделает системный брандмауэр менее эффективным. А плюсом — то, что этот подход работает немного быстрее.
 
-### Open main window at system start-up
+### Открывать главное окно при запуске системы
 
-Enable this option to make the main AdGuard window open after the system is loaded. Note that it doesn't affect whether the actual filtering service is launched or not, this setting is located in *Settings -> General Settings*
+Включите эту опцию, чтобы главное окно AdGuard открывалось при каждом запуске системы. Обратите внимание, что эта настройка не влияет на то, запущена ли реальная фильтрация или нет. Она находится в разделе *Настройки → Общие настройки*
 
-### Filter localhost
+### Фильтровать локальные адреса
 
-If you want AdGuard to filter loopback connections, check the box. This option will always be on if you have AdGuard VPN installed, because otherwise it won't be able to work.
+Если вы хотите, чтобы AdGuard фильтровал соединения loopback, установите флажок. Эта опция всегда будет включена, если у вас установлен AdGuard VPN, потому что в противном случае он не сможет работать.
 
-### Enable HAR writing
+### Включить запись HAR
 
-This option should be enabled **only for debugging purposes**. If you tick the checkmark, AdGuard will create a file that contains information about all filtered HTTP requests in HAR 1.2 format. This file can be analyzed with the Fiddler app. Note that it may slow down your web browsing significantly.
+Эта опция должна быть включена **только в целях отладки**. Если вы установите флажок, AdGuard создаст файл, содержащий информацию обо всех отфильтрованных HTTP-запросах в формате HAR 1.2. Этот файл можно проанализировать с помощью приложения Fiddler. Обратите внимание, что это может значительно замедлить просмотр веб-страниц.
 
-### Show QUIC
+### Показывать QUIC
 
-Allows displaying the QUIC protocol records in the filtering log. For blocked requests only.
+Позволяет отображать записи протокола QUIC в отчёте журнала фильтрации. Эта опция работает только для заблокированных запросов.
 
-### Block Java
+### Блокировать Java
 
-Some websites and web services still support Java Plug-Ins. The API that serves as the basis for Java plug-ins has serious security vulnerabilities. You can disable such plug-ins for security purposes. Nevertheless, even if you decide to use *Block Java* option, Javascript will still be enabled.
+Некоторые сайты и веб-сервисы до сих пор используют устаревшие технологии поддержки Java-плагинов. API-интерфейс, лежащий в основе Java-плагинов, небезопасен. Вы можете отключить такие плагины в целях безопасности. Тем не менее, даже если вы решите использовать опцию *Блокировать Java*, JavaScript будет по-прежнему включён.
 
-### Action applied to blocked DNS requests
+### Действие, применяемое к заблокированным DNS-запросам
 
-Here you can select the way AdGuard will respond to DNS queries that should be blocked:
+Здесь вы можете выбрать способ, которым AdGuard будет отвечать на DNS-запросы, которые должны быть заблокированы:
 
-* Reply with “Refused” error
-* Reply with “NxDomain” error
-* Reply with a custom IP address
+* Ответ ошибкой «Refused»
+* Ответ ошибкой «NxDomain»
+* Ответ пользовательским IP-адресом
 
-### Custom IPv4 address
+### Пользовательский IPv4-адрес
 
-If “Custom IP address” is selected as an action applied to blocked DNS requests, here you should specify the IPv4 address that will be returned in response to blocked “A” requests. If none are specified, AdGuard will reply with the default “Refused” error.
+Если в качестве ответа на заблокированные DNS-запросы выбран «Пользовательский IP-адрес», здесь необходимо указать IPv4-адрес, который будет возвращён в ответ на заблокированные запросы «A». Если он не указан, AdGuard ответит ошибкой «Refused» по умолчанию.
 
-### Custom IPv6 address
+### Пользовательский IPv6-адрес
 
-If “Custom IP address” is selected as an action applied to blocked DNS requests, here you should specify the IPv6 address that will be returned in response to blocked “AAAA” requests. If none are specified, AdGuard will reply with the default “Refused” error.
+Если в качестве ответа на заблокированные DNS-запросы выбран «Пользовательский IP-адрес», здесь необходимо указать IPv6-адрес, который будет возвращён в ответ на заблокированные запросы «AAAA». Если он не указан, AdGuard ответит ошибкой «Refused» по умолчанию.
 
-### Fallback-серверы
+### Резервные (fallback) серверы
 
-Here you can specify an alternate DNS server to which a DNS request will be rerouted if the main server fails to respond within the timeout period specified in the next section. There are three options to choose from:
+Здесь вы можете указать альтернативный DNS-сервер, на который будет перенаправлен DNS-запрос, если основной сервер не ответит в течение времени ожидания, указанного в следующем разделе. Есть три варианта на выбор:
 
-* Don’t use fallback servers;
-* Use system default servers;
-* Use custom servers.
+* Не использовать резервные серверы;
+* Использовать системные серверы;
+* Использовать пользовательские серверы.
 
-### DNS server timeout period
+### Время ожидания ответа DNS-сервера
 
-Here you can specify the time in milliseconds that AdGuard will wait for the response from the selected DNS server before resorting to fallback. If you don’t fill in this field or enter an invalid value, the value of 5000 will be used.
+В этом поле вы можете указать время в миллисекундах, в течение которого AdGuard будет ждать ответа от выбранного DNS-сервера, прежде чем прибегнуть к резервному. Если вы не заполните это поле или введёте недопустимое значение, будет использовано значение 5000.
 
-### List of custom fallback servers
+### Список пользовательских резервных (fallback) серверов
 
-If you want AdGuard to use custom fallback servers, list them in this section, one per line.
+Если вы хотите, чтобы AdGuard использовал пользовательские fallback-серверы, перечислите их в этом разделе, по одному в строке.
 
-### List of custom bootstrap addresses
+### Список пользовательских bootstrap-адресов
 
-A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in *DNS protection*. Such a "middle ground" is needed when using protocols that denote the server address by letters (such as DNS-over-TLS, for example). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
+Bootstrap — это промежуточный DNS-сервер, используемый для получения IP-адреса безопасного DNS-сервера, который вы выбрали ранее в разделе *DNS-защита*. Такое «промежуточное звено» нужно при использовании протоколов, которые обозначают адрес сервера буквами (например, DNS-over-TLS). В этом случае bootstrap выступает в роли переводчика, трансформируя буквы в цифры, понятные вашей системе.
 
-By default, the system DNS resolver is used, and the initial bootstrap request is made through port 53. If this does not suit you, list here the IP addresses of the DNS servers that will be used to determine the address of the encrypted DNS server in the top-to-bottom order. The specified IP addresses will be applied in the order listed. If you specify invalid addresses, or no addresses at all, the system IPs will be used.
+По умолчанию используется системный DNS-резолвер, а первоначальный bootstrap-запрос идёт через 53 порт. Если вас это не устраивает, перечислите здесь IP-адреса DNS-серверов, которые будут использоваться для определения адреса зашифрованного DNS-сервера. Указанные IP-адреса будут применены в порядке перечисления. Если вы укажете некорректные адреса или не укажете их вовсе, будут использованы системные IP-адреса.
 
-### DNS exclusions
+### DNS-исключения
 
-All DNS requests to domains listed here will be redirected to the system default DNS server instead of the DNS server specified in the app’s settings. Also, DNS blocking rules will not be applied to such requests.
+Все DNS-запросы к перечисленным здесь доменам будут перенаправляться на системный DNS-сервер вместо DNS-сервера, указанного в настройках приложения. Также к таким запросам не будут применяться правила DNS-фильтрации.
 
-### Block ECH
+### Блокировать ECH
 
-If enabled, AdGuard strips Encrypted Client Hello parameters from responses.
+Если опция включена, AdGuard удаляет из ответов параметры Encrypted Client Hello.
 
-### Enable filtering of secure DNS requests
+### Включить фильтрацию зашифрованных DNS-запросов
 
-When enabled, AdGuard redirects secure DNS requests to the local DNS proxy, in addition to plain DNS requests.
+Если опция включена, AdGuard перенаправляет зашифрованные DNS-запросы на локальный DNS-прокси в дополнение к обычным DNS-запросам.

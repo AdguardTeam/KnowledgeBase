@@ -14,18 +14,18 @@ sidebar_position: 3
 
 1) Войдите в свой личный кабинет [AdGuard](https://auth.adguard.com/login.html), перейдите во вкладку «Настройки», а затем прокрутите вниз до раздела «Пароль и безопасность». 2) Нажмите кнопку «Изменить» в первой строке после заголовка:
 
-![Кнопка «Изменить»](https://cdn.adguard.com/content/kb/ad_blocker/general/2fa.png)
+![Кнопка «Изменить»](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa.png)
 
 3) Отсканируйте код подтверждения с помощью любого приложения-аутентификатора на вашем телефоне:
 
-![Провероверочный код](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/2Fa2en.png)
+![Проверочный код *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/2Fa2en.png)
 
 *Важно*
 * Сохраните где-нибудь резервный код второго фактора, он понадобится для восстановления вашей учётной записи в случае потери или кражи мобильного телефона;
 
 Если всё сделано правильно, то при следующем входе в аккаунт вы увидите это:
 
-![Результат](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/2Fa3en.png)
+![Результат *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/2Fa3en.png)
 
 Используйте мобильное приложение-аутентификатор, чтобы считать код и ввести его. Теперь у вас должно получиться войти в аккаунт!
 

@@ -28,7 +28,7 @@ sidebar_position: 1
 
 7. Установите флажок ***Отключить кэш***.
 
-![chrome](https://cdn.adguard.com/content/Kb/ad_blocker/guides/chrome.png)
+![chrome](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/chrome.png)
 
 8. Воспроизведите действия, создающие проблему.
 
@@ -55,7 +55,7 @@ sidebar_position: 1
 
 7. Установите флажок ***Отключить кэш***.
 
-![edge](https://cdn.adguard.com/content/Kb/ad_blocker/guides/edge.png)
+![edge](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/edge.png)
 
 8. Воспроизведите действия, создающие проблему.
 
@@ -82,7 +82,7 @@ sidebar_position: 1
 
 6. Установите флажок ***Отключить кэш***.
 
-![firefox](https://cdn.adguard.com/content/Kb/ad_blocker/guides/firefox.png)
+![firefox](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/firefox.png)
 
 7. Воспроизведите действия, создающие проблему.
 
@@ -155,7 +155,7 @@ sidebar_position: 1
 
 6. Теперь снова выключите `pref.har.capture` .
 
-7. Перейдите назад, затем нажмите на ***Экспорт журналов и системной информации*** -> ***Сохранить***.
+7. Перейдите назад, затем нажмите ***Экспортировать логи и информацию о системе*** → ***Сохранить***.
 
 ## Windows {#windows}
 
@@ -165,6 +165,6 @@ sidebar_position: 1
 
 3. Воспроизведите проблему.
 
-4. Перейдите на страницу ***Общие настройки*** -> Нажмите на ***Экспортировать логи*** -> ***Сохранить***.
+4. Перейдите на страницу ***Общие настройки*** → Нажмите ***Экспортировать логи*** → ***Сохранить***.
 
 5. Запретите запись HAR, сняв соответствующий флажок.

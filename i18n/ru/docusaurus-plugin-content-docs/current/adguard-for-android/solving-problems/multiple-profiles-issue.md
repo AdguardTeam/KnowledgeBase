@@ -1,16 +1,16 @@
 ---
-title: Problems caused by multiple user profiles
+title: Проблемы, вызванные использованием нескольких профилей пользователей
 sidebar_position: 13
 ---
 
-On Android 9 and later, if AdGuard is installed for more than one user profile on your device, you may encounter problems when uninstalling the app. When you uninstall AdGuard from one user profile, the app will still appear on the app list, but you won't be able to uninstall or reinstall it. It happens because AdGuard is installed for a different user profile on the device.
+На Android 9 и более поздних версиях, если AdGuard установлен более чем для одного пользовательского профиля на вашем устройстве, вы можете столкнуться с проблемами при удалении приложения. Когда вы удаляете AdGuard из одного пользовательского профиля, приложение по-прежнему будет отображаться в списке приложений, но вы не сможете удалить или переустановить его. Это происходит потому, что AdGuard установлен для другого профиля пользователя на устройстве.
 
-If you try to reinstall AdGuard after an unsuccessful removal attempt, you will see the error message "You can't install the app on your device".
+Если вы попытаетесь переустановить AdGuard после неудачной попытки удаления, вы увидите сообщение об ошибке «Вы не можете установить приложение на своё устройство».
 
-To solve this problem, you need to uninstall the application for all users: go to Settings > All apps > AdGuard. Tap three dots at the upper right corner and select *Uninstall for all users*.
+Чтобы решить эту проблему, вам нужно удалить приложение для всех пользователей: перейдите в Настройки > Все приложения > AdGuard. Нажмите три точки в правом верхнем углу и выберите *Удалить для всех пользователей*.
 
-![Удалить](https://cdn.adguard.com/public/Adguard/kb/android/multiple_users/uninst_en.png)
+![Удалить *mobile](https://cdn.adtidy.org/public/Adguard/kb/android/multiple_users/uninst_en.png)
 
-![Удалить](https://cdn.adguard.com/public/Adguard/kb/android/multiple_users/uninst2_en.png)
+![Удалить *mobile](https://cdn.adtidy.org/public/Adguard/kb/android/multiple_users/uninst2_en.png)
 
-![Удалить](https://cdn.adguard.com/content/kb/ad_blocker/android/solving_problems/multiple-profiles-issue/uninst3_en.png)
+![Удалить *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/multiple-profiles-issue/uninst3_en.png)

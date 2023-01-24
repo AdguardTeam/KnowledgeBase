@@ -1,70 +1,70 @@
 ---
-title: 'Install/Uninstall'
+title: 'インストール/アンインストール'
 sidebar_position: 2
 ---
 
-## System  requirements
+## 動作環境
 
-**Operating system version:** macOS 10.13 (64 bit) or higher
+**OSバージョン**: macOS 10.13 (64 bit) 以上
 
-**RAM:** at least 2 GB
+**RAM**: 2 GB以上
 
-**Browsers:** Safari, Chrome, Firefox, Opera, Yandex.Browser, and any other macOS compatible browser
+**対応ブラウザ**: Safari, Google Chrome, Opera, Yandex.Browser, Mozilla Firefox, およびその他のmacOSと互換性のあるブラウザ
 
-**Free disk space:** 120 MB
+**空きディスク容量**: 120 MB
 
-## Installation
+## インストール方法
 
-To install AdGuard for macOS on your computer, launch your browser, type _adguard.com_ in the address bar, and press **Download** on the page that opens.
+AdGuard for Macをインストールするには、ブラウザで _adguard.com_ を開き、「**ダウンロード**」ボタンを押してください。
 
-![Download the app](https://cdn.adguard.com/content/kb/ad_blocker/mac/1.jpg)
+![アプリをダウンロード *border](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ja/mac-1.png)
 
-Wait for _AdguardInstaller.dmg_ to download and double-click its icon in the list of downloaded files on the Dock panel.
+「_AdguardInstaller.dmg_」がダウンロード完了したら、クリックします。（Finderから開くこともできます。）
 
-![Double click to open the file](https://cdn.adguard.com/content/kb/ad_blocker/mac/installation_open_the_file.jpg)
+![ダブルクリックでファイルを開く](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ja/mac-2.png)
 
-The AdGuard icon will appear on your desktop. Click it to open the installation app and double-click the AdGuard icon in the opened window.
+表示されたインストールアプリでAdGuardアイコンをダブルクリックしてください。
 
-![Double click on the AdGuard icon](https://cdn.adguard.com/content/kb/ad_blocker/mac/3.jpg)
+![AdGuardのアイコンをダブルクリック](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ja/mac-3.png)
 
-Upon the first AdGuard launch, your operating system will warn you that this application has been downloaded from the Internet. Click **Open**.
+AdGuard初インストールの際に、OSからの警告が表示されます。 「**開く**」を押してください。
 
-![Click Open](https://cdn.adguard.com/content/kb/ad_blocker/mac/4.jpg)
+![「開く」をクリック](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ja/mac-4.png)
 
-In the next step, you'll need to click **Install**.
+次に、「**インストール**」を押してください。
 
-![Click Install](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/en/5.png)
+![「インストール」をクリック](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ja/mac-5.png)
 
-Wait for the installer to download the required files.
+インストーラが必要なファイルをダウンロード完了するのをお待ちください。
 
-![Wait until the necessary files are downloaded](https://cdn.adguard.com/content/kb/ad_blocker/mac/6.jpg)
+![必要なファイルがダウンロードされるまで待ちます](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ja/mac-6.png)
 
-To use the application, you will need the administrator password for your macOS account. Enter the password when propped in the dialogue box and press **OK**.
+AdGuardアプリを使用するにはmacOS管理者アカウントのパスワードが必要になります。 パスワードを入力して「**OK**」を押してください。
 
-![Enter the password](https://cdn.adguard.com/content/kb/ad_blocker/mac/7.jpg)
+![パスワードを入力します。](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ja/mac-7.png)
 
-Now, you'll see a quick installation wizard where you'll be offered to configure protection to your needs. You can either start fine-tuning right away ("Let's do it!") or skip for now ("Leave as it is").
+次に、自分に合わせて設定を簡単にカスタマイズできるチュートリアル画面表示されます。 「はじめる」を押して微調整を開始するか、 「スキップ」を押して今はスキップすることができます。
 
-![Configure protection](https://cdn.adguard.com/content/kb/ad_blocker/mac/installation-wizard.jpg)
+![保護を設定する](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ja/mac-8.jpg)
 
-Here we are, AdGuard is installed on your Mac!
+これで、お使いのMacへのAdGuardインストールは完了です！
 
-## Uninstall
+## アンインストール
 
-### Regular
-First of all, open the Finder app by clicking the respective icon:
+### レギュラー
+まず、Finderを開いてください。
 
-![Open Finder](https://cdn.adguard.com/public/Adguard/En/Articles/howtodelete/finder.png)
+![Finderを開く](https://cdn.adtidy.org/public/Adguard/En/Articles/howtodelete/finder.png)
 
-Go to the Applications section. Find AdGuard there, right-click it and choose **Move to Trash**.
+「アプリケーション」→ 「AdGuard」アイコンを右クリック→「**こみ箱に入れる**」
 
-![Move AdGuard to Trash](https://cdn.adguard.com/content/kb/ad_blocker/mac/11.jpg)
+![AdGuardをゴミ箱に移動する *border](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ja/mac-9.jpg)
 
-### Advanced
+### アドバンスド
 
-**Use this instruction only if you know what you are doing or if our support service specifically recommended you the 'advanced uninstall'. Also, do all the steps from the 'regular uninstall first'.** After that, do the following:
+**※この手順は、技術的なことが分かる場合、またはAdGuardサポートに「アドバンスドアンインストール」を案内された場合にのみ使用してください。 また、最初に「通常のアンインストール」手順のステップをすべて行ってください。**
 
-* Delete following AdGuard files:
+* 次に、以下のAdGuardファイルを削除してください:
     * /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (folder)
     * ~/Library/Preferences/com.adguard.mac.adguard.plist (file)
     * ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac (folder)
@@ -73,17 +73,17 @@ Go to the Applications section. Find AdGuard there, right-click it and choose **
     * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log (file)
     * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log (file)
 
-**To do so**, open the Terminal app, then enter and execute the following commands:
+To do so, open the Terminal app, then enter and execute the following commands:
 
 `sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"` `rm -R "$HOME/Library/Application Support/com.adguard.mac.adguard"` `rm $HOME/Library/Preferences/com.adguard.mac.adguard.plist` `rm -R "$HOME/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac"` `find "$HOME/Library/Application Support" -name "com.adguard.browser_extension_host.nm.json" -delete` `sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist` `sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist` `sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log` `sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log`
 
-* Run ’Activity Monitor’ app.
-* Using search tool, find the process **cfprefsd**.
+* 「アクティビティモニタ」アプリを起動する
+* 検索ツールを使用して「**cfprefsd**」プロセスを見つける
 
-![Run Activity Monitor](https://cdn.adguard.com/content/kb/ad_blocker/mac/22.jpg)
+![アクティビティモニタを実行する](https://cdn.adtidy.org/content/kb/ad_blocker/mac/22.jpg)
 
-* Stop the process which is being run under the user (not the one run under root). To do so, click the process and then click X on the upper left. Confirm it in the dialogue window.
+* ユーザーで実行されているプロセス（ルートで実行されているものではないほう）を停止します。 そうするにはプロセスをクリックして、左上の「X」をクリックしてください。 表示されたダイアログで確認してください。
 
-![Confirm](https://cdn.adguard.com/content/kb/ad_blocker/mac/33.jpg)
+![確認](https://cdn.adtidy.org/content/kb/ad_blocker/mac/33.jpg)
 
-AdGuard is removed from your computer now.
+AdGuardアドバンスドアンインストール完了です。

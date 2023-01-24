@@ -15,13 +15,13 @@ sidebar_position: 2
 
 知识库网站是用 Docusaurus 2 建立的，这是一个现代静态网站生成器。 在提出修改或补充建议时，要考虑到所有文件必须符合平台的规则。 用户可以在 [ Docusaurus 指南](https://docusaurus.io/docs/category/guides)了解它们。
 
-您可以把这个知识库部署在您的电脑上，以概述您建议的变化。 有关执行此操作的详细说明，可以在此知识库的 GitHub 页面上的 [README.md 文件](https://github.com/AdguardTeam/KnowledgeBaseDNS/blob/main/README.md)中找到。
+您可以把这个知识库部署在您的电脑上，以概述您建议的变化。 有关执行此操作的详细说明，可以在此知识库的 GitHub 页面上的 [README 文件](https://github.com/AdguardTeam/KnowledgeBase#readme)中找到。
 
 ## 翻译文章 {#translate-adguard}
 
-知识库现有文章的翻译是在 Crowdin 平台上进行的。 有关翻译和使用 Crowdin 的所有详细信息，都可以在 AdGuard 广告拦截程序知识库的专用文章中找到。
+知识库现有文章的翻译是在 [Crowdin 平台](https://crowdin.com/profile/adguard)上进行的。 有关翻译和使用 Crowdin 的所有详细信息，都可以在 [AdGuard 广告拦截程序知识库的专用文章](../translate/guidelines)中找到。
 
-在撰写 AdGuard 知识库文章时，您可能会遇到包含复数形式的字符串，您应该格外注意翻译。 在另一篇文章中，我们详细描述了翻译具有复数形式的字符串时可能出现的困难，并如何在 Crowdin 平台上处理这些问题给出了大量说明。
+在撰写 AdGuard 知识库文章时，您可能会遇到包含复数形式的字符串，您应该格外注意翻译。 [在另一篇文章中](../translate/plural-forms)，我们详细描述了翻译具有复数形式的字符串时可能出现的困难，并就如何在 Crowdin 平台上处理这些问题给出了大量说明。
 
 ## 处理未解决的问题
 

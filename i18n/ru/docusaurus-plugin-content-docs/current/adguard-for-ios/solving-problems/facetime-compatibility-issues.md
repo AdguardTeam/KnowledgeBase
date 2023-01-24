@@ -11,7 +11,7 @@ sidebar_position: 3
 
 **Если вы хотите использовать FaceTime без каких-либо проблем совместимости, используйте режим Split-Tunnel.**
 
-![Экран туннельного режима](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ru/iOS/tunnel-mode.PNG?!)
+![Экран туннельного режима *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ru/iOS/tunnel-mode.PNG?!)
 
 Чтобы включить его, следуйте инструкции:
 1. Откройте AdGuard для iOS и перейдите в *Настройки* > *Общие настройки*.

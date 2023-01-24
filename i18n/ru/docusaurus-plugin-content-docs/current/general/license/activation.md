@@ -1,37 +1,127 @@
 ---
-title: How to activate
+title: Как активировать лицензию
 sidebar_position: 3
 ---
 
-## How to activate a license
+## Как активировать лицензию
 
-To activate your license, go to the *License* section of your AdGuard product and find the *Log in* field or *Activate* button. You can use the login and password of your AdGuard account. If you don't have an account yet, you will be offered to create one and log in.
+Чтобы активировать лицензию, перейдите в раздел *Лицензия* вашего продукта AdGuard и найдите поле *Войти* или кнопку *Активировать*. Для входа используйте электронную почту и пароль от вашего аккаунта AdGuard. Если у вас ещё нет аккаунта, вам будет предложено создать его.
 
-In AdGuard for Windows and AdGuard for Mac, you can also use the [license key](what-is.md#license-key) to activate the license. Clicking the *Reset license* button logs you out from your device and unbinds the device from your AdGuard account.
+> Примечание: чтобы активировать лицензию через аккаунт AdGuard, нужна действующая лицензия с хотя бы одним свободным слотом. Если ваша лицензия уже используется на максимальном количестве устройств, вы можете [улучшить её](#how-to-upgrade-a-license) или [перенести её с одного устройства на другое](#how-to-transfer-a-license-to-another-device).
 
-## How to transfer a license to another device
+Кроме того, для активации лицензии можно использовать лицензионный ключ [](../what-is#license-key).
 
-The license key can be activated on a [limited number of devices](what-is.md#devices). If the key has already been used on the maximum allowed number of devices, you need to unbind a device from your account. You can do that in three ways:
-* by clicking the *Reset license* button (applies to desktop apps),
-* by logging out of your account in an AdGuard product,
-* by clicking the cross icon next to a device in your AdGuard account.
+**Ниже вы можете ознакомиться с пошаговыми инструкциями по активации для каждой платформы.**
 
-After you have unbound the number of devices you need, you can log in to your AdGuard account on new devices. The license will be bound to them.
+### Активация AdGuard для Windows
 
-## How to upgrade a license
+1. Откройте приложение AdGuard
 
-To make it more convenient to use your AdGuard products, you can upgrade your license.
+Дважды щёлкните по иконке AdGuard на рабочем столе:
 
-1. To increase the functionality of your AdGuard products, you can **upgrade your free or trial license to the full version**.
-2. To extend the number of devices, you can **upgrade your AdGuard Ad Blocker Personal license to Family**.
-3. You can also **upgrade your subscription to a Lifetime license**.
+![Иконка AdGuard на рабочем столе](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowsEn.png)
 
-You can upgrade your license by:
-* purchasing another license on the official websites of AdGuard products,
-* clicking the *Upgrade* button in your AdGuard account.
+либо дважды щёлкните по иконке AdGuard в области уведомлений на панели задач:
 
-## How to cancel a subscription
+![Иконка AdGuard в системном трей-меню](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windows2En.png)
 
-The subscription can be canceled in your AdGuard account. To cancel your subscription, click the card or the cross icon next to it and select *Unsubscribe*. The canceled subscription will be valid until its expiry date.
+2. Перейдите на вкладку **Лицензия** в меню приложения и нажмите **Активировать лицензию**
 
-> Subscriptions purchased on the App Store can be managed in the App Store account or in the device's settings.
+![Нажмите «Активировать лицензию»](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowslicense1en.png)
+
+3. Вам будет предложено два варианта активации:
+
+- Ввести **электронную почту** и **пароль** от **аккаунта AdGuard** (или Facebook, Google или Apple)
+
+![Войдите в аккаунт AdGuard](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowslicense2en.png)
+
+- Ввести **лицензионный ключ**
+
+![Введите лицензионный ключ](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowslicense3en.png)
+
+### Активация AdGuard для Mac
+
+1. Откройте приложение AdGuard (нажмите на иконку AdGuard в строке меню)
+
+![Иконка AdGuard в строке меню](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ja/General/mac1.png)
+
+2. Нажмите на иконку **шестерёнки** в правом верхнем углу
+3. Нажмите **Лицензия**
+
+![Перейдите в раздел «Настройки и Лицензия»](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/macEn.png)
+
+4. В открывшемся окне нажмите кнопку **Активировать**
+
+![Нажмите «Активировать»](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/maclicenseen1.png)
+
+5. Вам будет предложено два варианта активации:
+- Ввести **электронную почту** и **пароль** от **аккаунта AdGuard** (или Facebook, Google или Apple)
+
+![Войдите в аккаунт, чтобы активировать лицензию](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/maclicenseen2.png)
+
+- Ввести **лицензионный ключ**
+
+![Введите лицензионный ключ для активации](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/maclicenseen3.png)
+
+### Активация AdGuard для Android
+
+1. Откройте приложение AdGuard
+2. Нажмите на иконку меню **(☰)** в левом верхнем углу экрана
+3. Нажмите **Получить премиум** (или **Статус лицензии**)
+
+![Нажмите «Получить премиум» или «Статус лицензии» *mobile](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidlicense1en.png)
+
+4. Нажмите на иконку меню **(⋮)** в левом верхнем углу экрана
+
+![Нажмите кнопку меню из трёх точек *mobile](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/android2En.png)
+
+5. Нажмите **Активировать Премиум**, и вам будет предложено два варианта активации:
+
+- Ввести **электронную почту** и **пароль** от **аккаунта AdGuard** (Facebook или Google)
+
+![Войдите, чтобы активировать *mobile](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidlicense2en.png)
+
+- Ввести **лицензионный ключ**
+
+![Введите лицензионный ключ для активации *mobile](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidlicense3en.png)
+
+### Активация AdGuard для iOS
+
+1. Откройте приложение AdGuard и нажмите на иконку шестерёнки **** в правом нижнем углу экрана
+
+2. Нажмите **Лицензия**
+
+3. Нажмите **Войти** в правом верхнем углу экрана
+
+![Нажмите «Войти» в правом верхнем углу экрана «Премиум»](https://cdn.adguard.com/content/kb/ad_blocker/iOS/ioslicense1en.png)
+
+4. Введите **email** и **пароль** от **аккаунта AdGuard**
+
+![Войти](https://cdn.adguard.com/content/kb/ad_blocker/iOS/ioslicense2en.png)
+
+## Как перенести лицензию на другое устройство
+
+Лицензионный ключ можно активировать на [ограниченном количестве устройств](../what-is#devices). Если ключ уже используется на максимально допустимом количестве устройств, вам необходимо отвязать устройство от учётной записи. Это можно сделать тремя способами:
+* нажав кнопку *Сбросить лицензию* (в десктопных приложениях),
+* выйдя из своего аккаунта в продукте AdGuard,
+* нажав на крестик напротив устройства в личном кабинете AdGuard.
+
+После того как вы отвяжете необходимое количество устройств, вы можете войти в свой аккаунт AdGuard на новых устройствах. Лицензия будет привязана к ним.
+
+## Как улучшить лицензию
+
+Чтобы пользоваться продуктами AdGuard было удобнее, вы можете улучшить лицензию.
+
+1. Чтобы расширить функциональность продуктов AdGuard, вы можете **улучшить бесплатную или пробную лицензию до полной версии**.
+2. Чтобы увеличить количество устройств, вы можете **улучшить Персональную лицензию до Семейной**.
+3. Вы также можете **улучшить свою подписку до Вечной лицензии**.
+
+Вы можете улучшить свою лицензию следующим образом:
+* купив другую лицензию на официальном сайте AdGuard,
+* нажав кнопку *Обновить* в аккаунте AdGuard.
+
+## Как отменить подписку
+
+Подписку можно отменить в личном кабинете AdGuard. Чтобы отменить подписку, нажмите на карточку или иконку крестика рядом с ней и выберите *Отменить подписку*. Отменённая подписка будет действительна до истечения срока её действия.
+
+> Подписками, купленными в App Store, можно управлять в учётной записи App Store или в настройках устройства.

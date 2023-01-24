@@ -27,7 +27,7 @@ sidebar_position: 10
 4. 在您的 PC 上打开**命令行**：
 - 如您使用的是 **Windows**，打开 **Cmd.exe**；
 - 如您使用的是 **macOS**，打开 ** Terminal **；
-5. Enter the command `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` and press **Enter**.
+5. 输入 `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` 的命令并点击**回车键**。
 
 ### 方案 2：移除**受限用户帐户**
 
@@ -41,13 +41,13 @@ sidebar_position: 10
 
 ## LG 和三星设备
 
-**LG** 或**三星**手机的用户也可能会遇到相同的问题。 一般由**双开应用/应用分身**功能（自动创建受限帐户）引起。 为了解决该问题，您需要禁用该功能。
+**LG** 或**三星**手机的用户也可能会遇到相同的问题。 这可能是由**双开应用/双 Messenger 账户**功能（其本质是隐式创建了受限账户）引起的。 为了解决该问题，您需要禁用该功能。
 
 ### 三星
 
 - 前往**设置**；
 - 点击**高级**功能；
-- 向下移动，点击**应用分身**；
+- 向下移动，点击**双 Messenger 账户**；
 - 禁用所有应用使用**应用分身**；
 - 锁定您的设备5分钟；
 - 解锁屏幕并重新试图创建 VPN 账号。

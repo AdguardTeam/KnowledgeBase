@@ -1,20 +1,20 @@
 ---
-title: How to install AdGuard
+title: 如何安装 AdGuard
 sidebar_position: 8
 ---
 
-Depending on which AdGuard app or browser extension you want to install, follow one of these links to find the relevant article:
+根据您想安装的 AdGuard 应用程序或浏览器扩展，请按照以下不同的链接找到相关文章：
 
-[AdGuard for Android](/adguard-for-android/installation.md)
+[AdGuard Android版](/adguard-for-android/installation)
 
-[AdGuard for iOS](/adguard-for-ios/installation.md)
+[AdGuard iOS版](/adguard-for-ios/installation)
 
-[AdGuard for Windows](/adguard-for-windows/installation.md)
+[AdGuard Windows版](/adguard-for-windows/installation)
 
-[AdGuard for Mac](/adguard-for-mac/installation.md)
+[AdGuard Mac版](/adguard-for-mac/installation)
 
-[AdGuard Browser extension](/adguard-browser-extension/installation.md)
+[AdGuard 浏览器扩展](/adguard-browser-extension/installation)
 
-[AdGuard for Safari](/adguard-for-safari/installation.md)
+[AdGuard Safari版](/adguard-for-safari/installation)
 
-[AdGuard Content Blocker](/adguard-content-blocker/installation.md)
+[AdGuard 内容拦截器](/adguard-content-blocker/installation)

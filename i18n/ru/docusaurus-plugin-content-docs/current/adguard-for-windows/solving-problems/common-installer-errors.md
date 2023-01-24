@@ -1,91 +1,91 @@
 ---
-title: Common installer errors
+title: Типичные ошибки установщика
 sidebar_position: 6
 ---
 
-This article contains some of the most common errors that you can encounter during the AdGuard for Windows installation, and possible ways to solve them.
+В этой статье собраны наиболее частые ошибки, с которыми вы можете столкнуться во время установки AdGuard для Windows, и возможные пути их решения.
 
-### Error 5: Access Denied {#error-5}
+### Ошибка 5: Отказано в доступе {#error-5}
 
-This error occurs when there's something wrong with permissions. There may be several different reasons why AdGuard installer doesn't have the permissions it requires to properly finish the installation process. You can try the following steps:
+Эта ошибка возникает, когда что-то не в порядке с разрешением на доступ. Почему у установщика AdGuard нет разрешения, которое требуется для завершения установки, может объясняться рядом причин. Выполните следующие действия:
 
-- Temporarily disable your antiviruses. Some of them may interfere with the installation, depending on the severity of their settings.
+- Временно отключите антивирусы. Некоторые из них могут мешать установке, это зависит от степени жёсткости ваших настроек.
 
-- Choose a different installation folder. It is possible that the current installation folder has some access restrictions. Also make sure you don't select an external drive, a virtual drive, etc.
+- Выберите другую папку установки. Возможно, что у текущей папки есть ограничения доступа. Также удостоверьтесь, что не выбрали внешний или виртуальный жёсткий диск.
 
-- Reboot your computer. Sometimes the permission issues are temporary and can be solved by restarting the PC.
+- Перезагрузите компьютер. Иногда проблемы с разрешением временные, и их можно решить с помощью простой перезагрузки.
 
-### Error 112: Disk is full, Error 1632: Temporary folder full or inaccessible {#error-112}
+### Ошибка 112: Недостаточно места на диске, Ошибка 1632: Временная папка переполнена или к ней нет доступа {#error-112}
 
 
-These are two different errors with very similar solutions. As their names suggest, AdGuard installer didn't find enough disk space to complete the installation. There are several things you can attempt to fix the problem:
+Две разные ошибки с очень похожими решениями. Как видно из названия, в обоих случаях установщик AdGuard не нашёл достаточно места, чтобы завершить процесс. Вот что вы можете попробовать, чтобы устранить проблему:
 
-- Uninstall some programs or delete unnecessary files from the drive you were trying to install AdGuard to.
+- Удалите некоторые программы или ненужные файлы с вашего диска, на который вы пытались установить AdGuard.
 
-- Download, install, and run [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/), a free piece of software by Malwarebytes. It will, among other things, clean your system from all kinds of extra "leftover" files that remain after incorrectly uninstall programs and such. It will help clean up some disk space.
+- Загрузите, установите и запустите [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/), бесплатный инструмент от Malwarebytes. Помимо прочего, он очистит вашу систему от файлов, оставшихся после неправильно удалённых программ. Это освободит место на диске.
 
-- Reboot your computer. Sometimes temporary files can take up a considerable amount of disk space, and restarting your PC is the most reliable way to get rid of them.
+- Перезагрузите компьютер. Иногда временные файлы могут занимать много места на диске, и перезагрузка компьютера — самый надёжный способ избавиться от них.
 
-### Error 1601: Windows Installer is not accessible {#error-1601}
+### Ошибка 1601: Нет доступа к службе установки Windows {#error-1601}
 
-You could say this is a particular sub-case of Error 1603. The possible solutions are similar:
+Можно сказать, что это частный случай Ошибки 1603. Возможные решения аналогичны:
 
-- Start and re-register Microsoft Installer service. It requires some work.
+- Запустите и пройдите перерегистрацию службы установщика Microsoft. На это потребуется некоторое время.
 
-    1) Press **Win + R** and enter "***services.msc***. 2) Find in the list and double click on **Windows Installer**. 3) Hit **Start** button under *Service status** and hit **OK**. If the service status is **running**, you should click on **Stop** first and then hit **Start**. 4) Press  **Win + R**, type and enter "***msiexec /unregister*** and hit **Enter**. 5) Press  **Win + R** again, type and enter "***msiexec /regserver*** and hit **Enter**
+    1) Нажмите *Win + R* и введите **services.msc**. 2) Найдите в списке и дважды щёлкните на *Установщик Windows*. 3) Нажмите *Запустить* под *Статусом сервиса* и нажмите *OK*. Если статус **Запущен**, сначала нажмите *Остановить*, а затем *Запустить*. 4) Нажмите *Win + R*, введите ***msiexec /unregister*** и нажмите *Enter*. 5) Снова нажмите *Win + R*, введите ***msiexec /unregister*** и нажмите *Enter*
 
-- Reboot the PC and start the installation all over again. Sometimes that's enough to fix the problem.
+- Перезагрузите компьютер и запустите установщик заново. Иногда этого достаточно, чтобы устранить проблему.
 
-### Error 1602: Canceled by user {#error-1602}
+### Ошибка 1602: Отменено пользователем {#error-1602}
 
-If you got this error code, chances are you have interrupted the installation process manually in one way or another. What you can do is:
+Если у вас возник этот код ошибки, весьма вероятно, что вы тем или иным способом прервали процесс установки вручную. Что вы можете сделать:
 
-- Don't close the installer window. When the installation is complete, it will close automatically.
+- Не закрывайте окно установщика. Когда установка будет завершена, оно закроется автоматически.
 
-- If a dialogue window pops up during the installation, hit "Yes" to grant the installer the required permissions. Clicking on "No" will cancel he installation.
+- Если во время установки всплывает диалоговое окно, нажмите «Да», чтобы предоставить установщику необходимое разрешение. Нажатие «Нет» отменит установку.
 
-- Don't start other processes while the installation process is going on.
+- Не запускайте другие процессы во время установки.
 
-### Error 1603: Fatal error during installation {#error-1603}
+### Ошибка 1603: Во время установки произошла неустранимая ошибка {#error-1603}
 
-The error sounds scarier than it actually is. In reality, this is a rather generic error that can have many different causes, and some of them are easily fixed. Try the following solutions:
+Эта ошибка звучит страшнее, чем она есть на самом деле. На практике же это довольно стандартная ошибка, которая может быть обусловлена разными причинами, и некоторые из них легко поправить. Попробуйте следующие решения:
 
-- Press the **Win** key, search for **Command Prompt** and run it. There, type in `sfc /scannow` and press **Enter**.
+- Нажмите клавишу *Win*, найдите *командную строку* и запустите её. В открывшемся окне введите `sfc /scannow` и нажмите *Enter*.
 
-- Choose a different installation folder. It is possible that the current installation folder has some access restrictions. Also make sure you don't select an external drive, a virtual drive, etc.
+- Выберите другую папку установки. Возможно, что у текущей папки есть ограничения доступа. Также удостоверьтесь, что не выбрали внешний или виртуальный жёсткий диск.
 
-- Uninstall AdGuard using our special [uninstall tool](/adguard-for-windows/installation.md#advanced) and then repeat the installation.
+- Удалите AdGuard с помощью нашего специального [инструмента удаления](../../installation#advanced), а затем повторите установку.
 
-- Start and re-register Microsoft Installer service. It requires some work.
+- Запустите и пройдите перерегистрацию службы установщика Microsoft. На это потребуется некоторое время.
 
-    1) Press **Win + R** and enter "***services.msc***. 2) Find in the list and double click on **Windows Installer**. 3) Hit **Start** button under **Service status** and hit **OK**. If the service status is **running**, you should click on **Stop** first and then hit **Start**. 4) Press  **Win + R**, type and enter "***msiexec /unregister*** and hit **Enter**. 5) Press  **Win + R** again, type and enter "***msiexec /regserver*** and hit **Enter**
+    1) Нажмите *Win + R* и введите ***services.msc***. 2) Найдите в списке и дважды щёлкните на *Установщик Windows*. 3) Нажмите *Запустить* под *Статусом сервиса* и нажмите *OK*. Если статус **Запущен**, сначала нажмите *Остановить*, а затем *Запустить*. 4) Нажмите *Win + R*, введите ***msiexec /unregister*** и нажмите *Enter*. 5) Снова нажмите *Win + R*, введите ***msiexec /unregister*** и нажмите *Enter*
 
-- Acquire full permissions on the drive for installation. It is possible that the error 1603 occurs because you don’t have full permissions on the file location. It's also not as easy as some of the other solutions:
+- Получите полный доступ к диску для установки. Возможно, что ошибка 1603 возникает, если у вас нет полного доступа к местоположению файла. Это решение также требует некоторой работы:
 
-    1) Open **File Explorer**, right click on the drive containing the installation location and select **Properties**. 2) Go to **Security** tab and click on **Edit**. 3) Single click on **SYSTEM** and ensure that the **Allow** box of every item in **Permissions for SYSTEM** is checked (if it is checkable). Do the same check for **Administrators**. 4) Click on **OK** to go back to **Properties** dialog. Then click on **Advanced**. 5) Click on **Change Permissions**. 6) On **Permissions** tab, double click on **Administrators**. 7) Select **This folder, subfolders and files** for **Applies to** field and tick all the available **Basic permissions**. After that hit **OK**. 8) Do the same operation above (from item 7) for **SYSTEM**. 9) Click on **OK** all the way out. Try installing AdGuard again.
+    1) Откройте *Проводник*, щёлкните правой кнопкой мыши диск, содержащий место установки, и выберите *Свойства*. 2) Перейдите на вкладку *Безопасность* и нажмите на *Редактировать*. 3) Один раз щёлкните по разделу *СИСТЕМА* и убедитесь, что для каждого элемента в *Разрешения для СИСТЕМЫ* установлен флажок *Разрешить* (если он есть). Проверьте то же самое для вкладки *Администраторы*. 4) Нажмите на *OK*, чтобы вернуться к окну *Свойства*. Затем нажмите *Расширенные*. 5) Выберите *Изменить разрешения*. 6) На вкладке *Разрешения* дважды щёлкните *Администраторы*. 7) Выберите *Эта папка, подпапки и файлы* для поля *Применяется к* и отметьте все доступные *Основные разрешения*. После этого нажмите *OK*. 8) Повторите операцию из пункта 7 для *СИСТЕМА*. 9) Нажимайте *OK* до конца. Попробуйте установить AdGuard заново.
 
-### Error 1618: Another installation is already in progress {#error-1618}
+### Ошибка 1618: Уже выполняется другая установка {#error-1618}
 
-This error occurs when there are several instances of AdGuard installer launched at the same time. What to do if you get this error:
+Эта ошибка возникает, когда установщик AdGuard запущен несколько раз. Что делать при возникновении этой ошибки:​
 
-- Reboot your PC and start the installer again. When you restart the computer, all ongoing processes will stop, including all copies of the installer.
+- Перезагрузите компьютер и запустите установщик заново. Когда вы сделаете это, все текущие процессы будут остановлены, включая копии установщика.
 
-- Don't make multiple clicks on the installer even if doesn't start right away. Sometimes it may take a few seconds to display the installer UI.
+- Не нажимайте на установщик несколько раз, если он не запускается сразу. Иногда отображение интерфейса может занять несколько секунд.
 
-### Error 1638: Another version of this product is already installed {#error-1638}
+### Ошибка 1638: Другая версия этой программы уже установлена {#error-1638}
 
-It's very likely that you've already installed AdGuard before.
+Очень вероятно, что вы ранее устанавливали AdGuard.
 
-- Check if AdGuard is already installed on your computer. You can do it by pressing the **Win** key and typing in ***AdGuard***.
+- Проверьте, установлен ли AdGuard на вашем компьютере. Вы можете сделать это, нажав клавишу *Win* и введя ***AdGuard***.
 
-- Maybe there's some leftover files from a previous AdGuard installation. Uninstall AdGuard using our special [uninstall tool](/adguard-for-windows/installation.md#advanced) and then repeat the installation.
+- Может быть, у вас остались файлы от предыдущей установки AdGuard. Удалите AdGuard с помощью нашего специального [инструмента удаления](../../installation#advanced), а затем повторите установку.
 
-### Other errors {#other}
+### Другие ошибки {#other}
 
-If you've encountered an error that's not listed above, it is possible that we can solve it by ourselves. But in order to do that, we need log files from you. Please perform the following steps:
+Если вы столкнулись с ошибкой, не указанной выше, возможно, мы сможем её решить. Но чтобы это сделать, нам нужны ваши логи. Пожалуйста, выполните следующие шаги:
 
-- Find and archive **AdGuard installation logs** as it is described in [this article](/adguard-for-windows/solving-problems/installation-logs.md).
+- Найдите и архивируйте **файлы журнала установки AdGuard**, как описано в [этой статье](../installation-logs).
 
-- Find and save to disk **Event Viewer** logs. [This article](/adguard-for-windows/solving-problems/system-logs.md) explains how to do that.
+- Найдите и сохраните на диск логи **Просмотра событий**. [Наша статья](../system-logs) объясняет, как это сделать.
 
-- Please email all these files from two previous steps to the **[support team](/support/contact.md)** and describe the problem in the message body. Our tech support agents will reply to you as soon as possible.
+- Пожалуйста, отправьте файлы из двух предыдущих шагов команде поддержки по адресу **support@adguard.com** и опишите проблему. Наши специалисты технической поддержки ответят вам в кратчайшее время.

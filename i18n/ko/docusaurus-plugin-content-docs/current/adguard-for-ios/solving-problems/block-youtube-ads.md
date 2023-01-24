@@ -7,7 +7,7 @@ sidebar_position: 4
 
 안타깝게도 기술적인 제한으로 인해 YouTube 앱에서 광고를 차단하는 것이 불가능합니다. 그러나 Safari에서 YouTube를 열면 광고를 차단할 수 있습니다. Safari에서 광고를 차단하는 확장 기능(iOS용 AdGuard v4.2부터 사용 가능)을 개발했습니다. iOS용 AdGuard을 4.2 버전으로 업데이트하면 이 확장 기능이 자동으로 설치됩니다. 이 확장 기능은 광고뿐만 아니라 iPad에서 차단된 후 남아 있는 자리 표시자를 제거합니다. 또한 이제는 YouTube 동영상들이 자동으로 시청됩니다.
 
-![Safari에서 YouTube 광고를 차단하는 방법](https://cdn.adguard.com/public/Adguard/Blog/ios_safari_extension.png)
+![Safari에서 YouTube 광고를 차단하는 방법 *mobile](https://cdn.adtidy.org/public/Adguard/Blog/ios_safari_extension.png)
 
 Safari에서 YouTube 광고를 차단하는 확장을 활성화하려면 다음 단계를 따르세요.
 

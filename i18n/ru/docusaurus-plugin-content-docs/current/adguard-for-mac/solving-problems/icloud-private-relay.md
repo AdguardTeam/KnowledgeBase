@@ -34,8 +34,8 @@ Network extensions API имеет VPN-подобную конфигурацию 
 
 ## Альтернативное решение
 
-Вы можете запретить AdGuard использовать "default route", отключив последний.  Это можно сделать через Расширенные настройки -> `network.extension.monterey.force.split.tunnel`.
+Вы можете запретить AdGuard использовать "default route", отключив последний.  Это можно сделать через Расширенные настройки → `network.extension.monterey.force.split.tunnel`.
 
-![Отключить маршрут по умолчанию в расширенных настройках](https://cdn.adguard.com/public/Adguard/kb/mac/mac_adguard_advanced_settings_ru.png)
+![Отключить маршрут по умолчанию в расширенных настройках *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/mac_adguard_advanced_settings.jpg)
 
 Имейте в виду, что в этом случае вы столкнётесь с проблемами, описанными выше.

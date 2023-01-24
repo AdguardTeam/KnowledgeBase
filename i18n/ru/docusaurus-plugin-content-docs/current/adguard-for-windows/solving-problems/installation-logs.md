@@ -1,18 +1,18 @@
 ---
-title: How to collect AdGuard installation logs
+title: Как собирать логи установки AdGuard
 sidebar_position: 4
 ---
 
-If any problems occur during the installation of AdGuard, the support team might ask you to collect and send them AdGuard installation logs. In this case you need to:
+Если во время установки AdGuard возникнут какие-либо проблемы, служба поддержки может попросить вас собрать и отправить им журналы установки AdGuard. В этом случае вам необходимо:
 
-1. Select **Run** command in Start menu or press **Win + R** on the keyboard.
+1. Выберите команду *Выполнить* в меню «Пуск» или нажмите *Win + R* на клавиатуре.
 
-2. Type in **%tmp%** and click **OK**.
+2. Введите *%tmp%* и нажмите *OK*.
 
-![Open temp folder](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/install-logs-1.png)
+![Откройте временную папку *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/install-logs-1.png)
 
-2. In the opened folder select all files starting with `Adguard` and add them to archive (using WinRAR or any other archiving software).
+2. В открывшейся папке выберите все файлы, начинающиеся с `AdGuard`, и добавьте их в архив (используя WinRAR или любую другую программу архивации).
 
-![AdGuard installation log files](https://cdn.adguard.com/content/kb/ad_blocker/windows/solving-problems/install-logs-2.png)
+![Файлы журнала установки AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/install-logs-2.png)
 
-3. Send this archive to AdGuard [tech support](/support/contact.md).
+3. Отправьте этот архив в техподдержку AdGuard по адресу **support@adguard.com**.

@@ -1,61 +1,61 @@
 ---
-title: Problems caused by using a Restricted Mode profile
+title: Проблемы, вызванные использованием профиля с ограниченным доступом
 sidebar_position: 10
 ---
 
-The owners of phones, tablets, or TVs running the Android 7+ operating system might face the problem caused by using **a profile with Restricted Mode**. If you have such a profile, **AdGuard**, like other applications that use VPN, gets restrictions on selective filtering of VPN traffic. As a result, AdGuard cannot launch protection in a **local VPN mode**. Also, one of the reasons for this situation may be using **Dual app/Dual messenger profile** on your device. Below are described the recommendations that you can apply when this problem occurs.
+Владельцы телефонов, планшетов или телевизоров под операционной системой Android 7+ могут встретиться с проблемой, вызванной использованием на устройстве **профиля с ограниченным доступом**. При наличии такого профиля **AdGuard**, как и другие приложения, использующие VPN, получает ограничения на выборочную фильтрацию VPN-трафика. В результате AdGuard не может запустить защиту в режиме **локального VPN**. Кроме того, одной из причин этой ситуации может быть использование профиля **Dual App/Dual Messenger** на вашем устройстве. Ниже описаны рекомендации, которые можно применить при возникновении проблемы.
 
-## Solutions
+## Решения
 
-You have three ways to solve the issue:
+Есть три пути решения проблемы:
 
-### Option 1: Grant permissions to AdGuard using ADB
+### Вариант 1: Выдать разрешения для AdGuard с помощью ADB
 
-> Please note, that this approach is available starting from **AdGuard v3.5 nightly 6**. If you're using an older version, you can get the latest update [here](https://adguard.com/adguard-android/overview.html).
+> Пожалуйста, обратите внимание, что этот вариант доступен, начиная с версии **AdGuard 3.5 nightly 6**. Если вы используете более старую версию, получить последнее обновление можно [здесь](https://adguard.com/adguard-android/overview.html).
 
 1. Активируйте режим разработчика **** и включите отладку по USB ****:
 - Откройте приложение **Настройки** на своём телефоне;
 - Перейдите в раздел **О системе** (последний пункт в меню настроек). В этом разделе найдите подпункт **О телефоне**;
-- Нажмите на строку **Номер сборки** 7 раз. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
-- Open **System Settings** > **Developer Options** > Scroll down and enable **USB debugging** > Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
+- Нажмите на строку **Номер сборки** 7 раз. После этого вы получите уведомление, что **Теперь вы разработчик** (При необходимости введите код разблокировки устройства);
+- Откройте **Настройки системы** > **Для разработчиков** > Прокрутите вниз и включите **отладку по USB** > Подтвердите включение отладки в окне **Разрешить отладку по USB**, внимательно прочитав предупреждение.
 
-> If you have any difficulties or additional questions, full instructions can be found [here](https://developer.android.com/studio/debug/dev-options).
+> Если у вас возникнут трудности или дополнительные вопросы, полные инструкции можно найти [здесь](https://developer.android.com/studio/debug/dev-options).
 
 2. [Установите и настройте](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb;
 > На платформе Windows владельцам **Samsung** может потребоваться установить [эту утилиту](https://developer.samsung.com/mobile/android-usb-driver.html).
-3. Connect your device using a **USB cable** to the computer or laptop on which you installed **ADB**;
-4. Open **the command line** on your PC:
-- **Cmd.exe** if you are using **Windows**;
-- **Terminal** if you are using **macOS**;
-5. Enter the command `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` and press **Enter**.
+3. Подключите устройство с помощью кабеля USB **** к компьютеру или ноутбуку, на котором вы установили **ADB**;
+4. Откройте **командную строку** на вашем ПК:
+- **Cmd.exe** если вы используете **Windows**;
+- **Terminal**, если вы используете **macOS**;
+5. Введите команду `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` и нажмите **Enter**.
 
-### Option 2: Remove *restricted user account*
+### Вариант 2: Удалить *учётную запись с ограниченным доступом*
 
-About how to manage user accounts from an Android device you can [find here](https://support.google.com/a/answer/6223444?hl=en).
+[Узнайте](https://support.google.com/a/answer/6223444?hl=en), как управлять учётными записями пользователей с устройства Android.
 
-> Please note, that in some cases restricted user accounts are created implicitly and cannot be removed. For instance, when you use Dual messenger or Dual app features on **Samsung** or **LG** devices. You can read below how to fix the issue in these cases.
+> Обратите внимание, что в некоторых случаях ограниченные учётные записи пользователей создаются неявно и не могут быть удалены. Например, когда вы используете функции Dual Messenger или Dual App на **устройствах Samsung** или **LG**. Читайте ниже, как исправить проблему в этих случаях.
 
-### Option 3: Use AdGuard in *Local HTTP proxy mode* (requires root)
+### Вариант 3: Использовать AdGuard в режиме *Локального HTTP прокси* (необходимо наличие root-прав)
 
-To enable this mode open **AdGuard Settings** > **Network** > **Filtering method** > **Local HTTP proxy**
+Чтобы включить этот режим, откройте **Настройки AdGuard** > **Сеть** > **Режим фильтрации** > **Локальный HTTP-прокси**
 
-## LG and Samsung devices
+## Устройства LG и Samsung
 
-Owners of **LG** or **Samsung** phones may also encounter a similar issue. It can be caused by using **Dual app/Dual messenger** function (which automatically creates a restricted profile). To solve this issue, you need to disable this feature.
+Владельцы телефонов **LG** или **Samsung** также могут столкнуться с подобной проблемой. Она может быть вызвана использованием функции **Dual App/Dual Messenger** (которая автоматически создаёт ограниченный профиль). Чтобы решить эту проблему, вам нужно отключить эту функцию.
 
 ### Samsung
 
-- Open **Settings**;
-- Press **Advanced**;
-- Scroll down, and then press **Dual messenger**;
-- Disable the **Dual messenger** for all applications;
-- Lock the device for 5 minutes;
-- Unlock the screen and try again to create the VPN profile.
+- Откройте **Настройки**;
+- Нажмите **Расширенные**;
+- Прокрутите вниз и нажмите **Dual Messenger**;
+- Отключите **Dual Messenger** для всех приложений;
+- Заблокируйте устройство на 5 минут;
+- Разблокируйте экран и повторите попытку создания VPN-профиля.
 
 ### LG
 
-- Open **Settings**;
-- Choose **General** tab;
-- Scroll down, and then press **Dual app**;
-- Remove all applications from the list;
-- Reboot your device.
+- Откройте **Настройки**;
+- Выберите вкладку **Основные**;
+- Прокрутите вниз и нажмите **Dual App**;
+- Удалите все приложения из списка;
+- Перезагрузите устройство.

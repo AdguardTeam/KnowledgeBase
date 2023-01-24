@@ -1,5 +1,5 @@
 ---
-title: Installation
+title: インストール/アンインストール
 sidebar_position: 2
 ---
 
@@ -9,17 +9,17 @@ AdGuard for Safari is a free app presented on the App Store. To install it on yo
 
 1. Open the App Store and find the needed extension there.
 
-![AdGuard for Safari on the App Store](https://cdn.adguard.com/content/Kb/ad_blocker/safari/adguard-for-safari-app-store.png)
+![AdGuard for Safari on the App Store](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-app-store.png)
 
 2. Press *Get* > *Install* > *Open*.
 
 3. To set up AdGuard for Safari, enable the AdGuard extensions in the Safari settings. In a notification, click *Fix it*. In an opened window, check the boxes next to AdGuard extensions.
 
-![Notification: Some extensions are disabled](https://cdn.adguard.com/content/Kb/ad_blocker/safari/adguard-for-safari-notification.png)
+![Notification: Some extensions are disabled](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-notification.png)
 
 > Not all extensions are required for AdGuard for Safari to function correctly. For instance, checking the *Icon* extension enables the icon in the tray menu. However, we recommend to enable all of them.
 
-![Extensions checked](https://cdn.adguard.com/content/Kb/ad_blocker/safari/adguard-for-safari-extensions-checked.png)
+![Extensions checked](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-extensions-checked.png)
 
 After you complete steps 1-3, AdGuard for Safari will start functioning. You can now configure its settings.
 
@@ -32,11 +32,11 @@ To uninstall AdGuard for Safari, do the following:
 3. Choose the Extensions tab. You will see a list of extensions, AdGuard has eight.
 4. Uncheck all checkboxes and press *Uninstall* below any of them.
 
-![Extensions checked](https://cdn.adguard.com/public/Adguard/kb/installation/Safari/extensionschecked.png)
+![Extensions checked](https://cdn.adtidy.org/public/Adguard/kb/installation/Safari/extensionschecked.png)
 
 At this point you will see a notification:
 
-![Notification: uninstall AdGuard for Safari](https://cdn.adguard.com/public/Adguard/kb/installation/Safari/showinfinder.png)
+![Notification: uninstall AdGuard for Safari](https://cdn.adtidy.org/public/Adguard/kb/installation/Safari/showinfinder.png)
 
 5. Press *Show in Finder* and move the application to the bin.
 

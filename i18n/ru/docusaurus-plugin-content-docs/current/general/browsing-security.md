@@ -3,62 +3,62 @@ title: Антифишинг
 sidebar_position: 3
 ---
 
-Every day, tens of thousands of people fall prey to virus attacks or fraud on the Internet. We have added special filters to the AdGuard app to protect you from malicious and phishing websites.
+Каждый день десятки тысяч людей становятся жертвами вирусных атак или мошенничества в интернете. Чтобы защитить пользователей AdGuard от вредоносных и фишинговых сайтов, мы добавили в приложение AdGuard специальные фильтры.
 
-So far, we have categorized more than 15 million sites, and our filters contain about 1.5 million phishing and malware sites. Just think about it: 10% of all known sites can be dangerous for you! Inexperienced users can easily become victims of fraudsters or hackers. We hope that using protection against malicious websites will help you avoid all hazards that you may encounter.
+На сегодняшний день мы классифицировали более 15 миллионов сайтов, и наши фильтры содержат около 1,5 миллиона фишинговых и вредоносных сайтов. Только вдумайтесь: 10% всех известных сайтов могут быть опасны для вас! Неискушённый пользователь легко может стать жертвой мошенников или хакеров. Мы надеемся, что использование защиты от вредоносных сайтов поможет избежать всех угроз, которые могут вам повстречаться.
 
-## How does a check work?
+## Как происходит проверка
 
-The scope and methods of checks depend on the product you use. In our browser extensions, AdGuard inspects only the pages you visit. In AdGuard for Windows, Mac, or Android, we offer you the best possible protection by checking both the pages and all objects loaded on them.
+Способ и качество проверки зависит от того, какой продукт вы используете. Если речь идёт об одном из наших браузерных расширений, то AdGuard проверяет только те страницы, которые вы посещаете. Если же вы используете AdGuard для Windows, Mac или Android, то, помимо самой страницы, мы проверяем и каждый загружаемый на неё объект.
 
-### AdGuard for Windows, Mac, and Android
+### AdGuard для Windows, Mac и Android
 
-We use the protocol [Safe Browsing API version 2.2](https://code.google.com/p/google-safe-browsing/wiki/Protocolv2Spec) for our work with filters. This protocol allows us to keep your personal data absolutely safe. Our server knows nothing about the websites that you visit. We use hash prefixes for checks, not the opened URLs.
+Мы используем протокол [Safe Browsing API версии 2.2](https://code.google.com/p/google-safe-browsing/wiki/Protocolv2Spec) для работы с фильтрами. Этот протокол позволяет сохранить ваши личные данные в полной безопасности. Наш сервер ничего не знает о тех сайтах, которые вы посещаете. Для проверок используются не открытые адреса, а префиксы их хешей.
 
-The figure below provides a general understanding of how the Browsing Security module works, using AdGuard for Windows as an example.
+Приблизительный алгоритм работы антифишингового модуля изображён на рисунке ниже на примере приложения AdGuard для Windows.
 
-![Functioning algorithm of Browsing Security module](https://images.adguard.com/public/Adguard/En/Articles/safebrowsing_adguard_for_windows.png)
+![Алгоритм работы модуля «Антифишинг»](https://images.adguard.com/public/Adguard/En/Articles/safebrowsing_adguard_for_windows.png)
 
-### AdGuard Browser extensions
+### Браузерные расширения AdGuard
 
-Browser extensions work differently, using the so-called [_Lookup API_](https://github.com/AdguardTeam/AdguardForAndroid/issues/162) to check the pages you visit. Every time you visit any website, your local client exchanges information with our backend server in the form of hashes and hash prefixes. For those interested in the process at a deeper level, the link above will be helpful. As a result of that exchange, the local client determines if the website belongs to the database of potentially dangerous websites or not.
+Браузерные расширения работают иначе, используя так называемый [_Lookup API_](https://github.com/AdguardTeam/AdguardForAndroid/issues/162#issue-115487668) для проверки адресов страниц, которые вы посещаете. Каждый раз, когда вы посещаете какой-либо сайт, ваш локальный клиент обменивается информацией с нашим внутренним сервером в виде хешей и хеш-префиксов. Тем, кому этот процесс интересен на более глубоком уровне, будет полезна ссылка выше. В результате этого обмена локальный клиент определяет, входит ли сайт в базу потенциально опасных сайтов.
 
-We bring to your attention that we never get any information that could allow us to determine which websites you visit and use that data in any way.
+Обращаем ваше внимание на то, что мы никогда не получаем никакой информации, которая позволила бы нам определить, какие сайты вы посещаете, и каким-либо образом использовать эти данные.
 
-An approximate algorithm of the functioning of the Browsing Security module is shown in the picture below.
+Приблизительный алгоритм работы антифишингового модуля изображён на рисунке ниже.
 
-![Functioning algorithm of Browsing Security module in AdGuard browser extensions.](https://images.adguard.com/public/Adguard/En/Articles/safebrowsing_extension.png)
+![Алгоритм работы модуля «Антифишинг» в браузерных расширениях AdGuard.](https://images.adguard.com/public/Adguard/En/Articles/safebrowsing_extension.png)
 
 ## Фильтры AdGuard
 
-We currently maintain two AdGuard filters. One protects against phishing and fraudulent websites. The other protects against malicious websites, visiting which may lead to a virus infection.
+В настоящее время мы поддерживаем два фильтра AdGuard. Один защищает от фишинга и мошеннических сайтов. Другой — от вредоносных сайтов, посещение которых может привести к заражению устройства вирусом.
 
-### Phishing sites filter
+### Фильтр фишинговых сайтов
 
-_Phishing_ is a type of online fraud aimed at gaining access to confidential data of users — username and password. If you are interested in this topic, we suggest that you read [this article at Wikipedia](http://en.wikipedia.org/wiki/Phishing).
+_Фишинг_ — вид интернет-мошенничества, целью которого является получение доступа к конфиденциальным данным пользователей — логинам и паролям. Если вас заинтересовала эта тема, советуем ознакомиться со [статьёй на Википедии](https://ru.wikipedia.org/wiki/Фишинг).
 
-Apart from phishing sites, this filter also covers different fraudulent sites, including all kinds of scams, sales of nonexistent content, and such.
+Помимо фишинговых сайтов, этот фильтр содержит также разнообразные мошеннические сайты. К ним относятся всевозможные обманные схемы, продажа несуществующего контента и тому подобное.
 
-### Malicious sites filter
+### Фильтр вредоносных сайтов
 
-This filter contains links to pages that lead to the execution of malicious code. It can initiate leakage or loss of data or harm the device of a user. It can be authorized (for example, when downloading and running the executable file) or unauthorized (for example, when being attacked with spyware).
+Фильтр содержит ссылки на страницы, которые приводят к исполнению вредоносного кода. Исполнение может инициировать утечку или потерю данных, а также причинить вред устройству пользователя. Этот процесс может быть санкционированным (например, при скачивании и запуске исполняемого файла) или несанкционированным (например, при атаке шпионским программным обеспечением).
 
-## How do we fill up our filters?
+## Как мы пополняем фильтры
 
-Our filters are constantly filled with new addresses. Since most of the work is automated, you can be sure that new malware and phishing addresses fall into our database as quickly as possible.
+Наши фильтры постоянно пополняются новыми адресами. Так как большая часть работы автоматизирована, вы можете быть уверены, что новые фишинговые и вредоносные адреса попадут в нашу базу максимально быстро.
 
-### AdGuard Browsing Security Community
+### Антифишинговое сообщество AdGuard
 
-An important tool for maintaining the highest level of filtering is _AdGuard Browsing Security Community_. Any user of our products — be it AdGuard for Windows or our browser extension — can become a member of the community and help us in the making of AdGuard filters.
+Механизм _Антифишингового сообщества AdGuard_ — это важный инструмент для поддержания фильтрации на высочайшем уровне. Любой пользователь наших продуктов, будь то AdGuard для Windows или браузерное расширение, может стать участником сообщества и помогать нам в составлении фильтров AdGuard.
 
-In the picture below we described an algorithm of Browsing Security Community work:
+На рисунке ниже мы изобразили алгоритм работы Антифишингового сообщества:
 
-![The way AdGuard Browsing Security Community works](https://images.adguard.com/public/Adguard/En/Articles/browsing_security_community.png)
+![Как работает Антифишинговое сообщество AdGuard](https://images.adguard.com/public/Adguard/En/Articles/browsing_security_community.png)
 
-### Want to help?
+### Как помочь
 
-We will gladly accept any help! If you want to send us a complaint about a phishing or malware site, you can do it via [technical support](mailto:support@adguard.com), or [on our Forum](http://forum.adguard.com/).
+Мы с радостью примем любую помощь! Если вы хотите отправить нам жалобу на фишинговый или вредоносный сайт, вы можете написать в поддержку по адресу **support@adguard.com** или [на наш форуме](http://forum.adguard.com/).
 
-### False-positive responses
+### Ложно-положительные срабатывания
 
-Occasionally, some non-malicious websites get added to AdGuard's filters. We do our best to reduce the percentage of false positives, but they still occur. If you come across this behavior from AdGuard, please send us a complaint about the false-positive alarm. You can submit such complaints via our [technical support](mailto:support@adguard.com) or on [our Forum](http://forum.adguard.com/).
+Изредка происходит так, что в фильтры AdGuard попадают сайты, которые не являются опасными. Мы стараемся уменьшить процент ложных срабатываний, но, тем не менее, они могут происходить. Если вы встретили подобное поведение AdGuard, пожалуйста, отправьте нам жалобу на ложноположительное срабатывание. Вы можете обратиться с такими жалобами в техническую поддержку по адресу **support@adguard.com** или нaписать о них [на форуме](http://forum.adguard.com/).

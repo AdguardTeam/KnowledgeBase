@@ -1,42 +1,42 @@
 ---
-title: Browser Assistant
+title: Браузерный помощник
 sidebar_position: 3
 ---
 
-AdGuard Assistant’s primary function is to manage filtering directly from the browser. It has existed for quite a long time, and its form and content have changed. More precisely, it used to be a mere userscript incorporated into the AdGuard for Mac app and became a full-fledged browser extension. Now it definitely yields more benefits.
+Основная функция Браузерного Помощника — это управление фильтрацией прямо из браузера. Он существует уже довольно давно, и его форма и содержание менялись. Раньше он был обычным пользовательским скриптом, встроенным в приложение AdGuard для Mac, а потом превратился в полноценное браузерное расширение. Теперь он определённо приносит больше пользы.
 
-![Browser Assistant](https://cdn.adguard.com/content/kb/ad_blocker/mac/assistantmac.jpg)
+![Браузерный помощник](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistantmac.jpg)
 
-## Benefits
-### Independence
-AdGuard Browser Assistant is an extension installed in a browser, so there is no need to wait for the userscript to be injected into the filtered web page, as it was with the preceding one. In other words, it is more autonomous from the main AdGuard app. Still, Browser Assistant needs the installed AdGuard for Mac, because there is no point in using the extension without the app.
+## Преимущества
+### Независимость
+Браузерный помощник AdGuard — это расширение, устанавливаемое в браузер, поэтому нет необходимости ждать, пока пользовательский скрипт будет встроен в отфильтрованную веб-страницу, как это было раньше. Другими словами, расширение более автономно от основного приложения AdGuard. Тем не менее Браузерный помощник нуждается в установленном AdGuard для Mac, поскольку без приложения использовать расширение бессмысленно.
 
-### Compatibility with the main app
-If you got into the habit of using our previous AdGuard ad blocker extension [in Integration mode](https://kb.adguard.com/en/browser-extensions/integration-mode), you may like the solution that we have developed for the new Browser Assistant.
+### Совместимость с основным приложением
+Если вы привыкли использовать предыдущее расширение блокировщика рекламы AdGuard [в режиме интеграции](/adguard-browser-extension/integration-mode), вам может понравиться решение, которое мы разработали для нового Браузерного помощника.
 
-Background information:
-> In previous versions of the AdGuard Browser Extension (before v3.5), if you had it installed along with a desktop AdGuard for Mac, the extension took over the functions of Assistant, stopped filtering itself and relied on the app to do this. The extension and the app worked in conjunction but sometimes the integration would fail. Some websites would stop being protected by the desktop program and be backed up only by the less powerful extension.
+Справочная информация:
+> В предыдущих версиях Браузерного расширения AdGuard (до версии 3.5), если оно было установлено вместе с AdGuard для Mac, расширение брало на себя функции Помощника, прекращало фильтровать самостоятельно и полагалось на приложение. Расширение и приложение работали вместе, но иногда интеграция давала сбой. Приложение прекращало фильтровать некоторые сайты, вместо него это делало расширение, обладающее заметно меньшими возможностями.
 
-> When using the Browser Assistant, all these problems don’t matter as there can be no conflicts in essence. The role of the Browser Assistant is well defined and it can’t hinder the functioning of the main app, so there is no need to worry.
+> При использовании Браузерного помощника все эти проблемы не имеют значения, поскольку конфликтов по сути быть не может. Роль Браузерного помощника чётко определена, и он не может помешать работе основного приложения, так что не о чем беспокоиться.
 
-### Smart onboarding
-When AdGuard for Mac is installed for the first time, the thing a user encounters in the first place is the onboarding. During this process the user quickly learns about AdGuard's settings and can customize filtering to their liking. At one stage AdGuard will determine the user's default browser and provide them with a download link for the new Assistant.
+### Умная установка
+Когда AdGuard для Mac устанавливается впервые, первое, с чем сталкивается пользователь, — это установка. В ходе этого процесса пользователь быстро узнаёт о настройках AdGuard и может настроить фильтрацию, как ему нравится. На определённом этапе AdGuard определит браузер пользователя по умолчанию и предоставит ссылку для загрузки нового Помощника.
 
-![Installing a new browser assistant](https://cdn.adguard.com/content/kb/ad_blocker/mac/assistant_onboarding_safari.jpg)
+![Установка нового Браузерного помощника](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_onboarding_safari.jpg)
 
-> On rare occasions, a browser may prove incompatible with the Browser Assistant, and the user will be offered to install the legacy version instead.
+> В редких случаях браузер может оказаться несовместимым с Браузерным помощником, и вместо него пользователю предложат установить легаси-версию.
 
-## Separate tab in settings
-The new Browser Assistant has its own tab in AdGuard for Mac settings, together with Stealth Mode, Browsing Security, Parental Control and others. Don’t worry if you missed the opportunity to install Browser Assistant during the onboarding, you'll find this option in the app's settings. Besides, there is a checkbox to enable the legacy Assistant.
+## Отдельная вкладка в настройках
+У нового Браузерного помощника есть своя вкладка в настройках AdGuard для Mac, наряду с Антитрекингом, Антифишингом и другими. Не волнуйтесь, если пропустили шаг со скачиванием Браузерного помощника во время установки, вы найдёте эту опцию в настройках приложения. Кроме того, там можно установить флажок для включения прежней версии Помощника.
 
-![Browser Assistant tab](https://cdn.adguard.com/content/kb/ad_blocker/mac/assistant-separate-tab.png)
+![Вкладка Браузерного помощника](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant-separate-tab.png)
 
-## Legacy Assistant
-Legacy Assistant is the previous version of Assistant, which is a mere userscript, not a browser extension. Basically, there are two cases when you might want to pick it instead of the new Browser Assistant: 1) the new Assistant is not available for your browser; 2) you are used to the green shield icon and want to leave things as they were.  If you recognize yourself in any of these scenarios, then the legacy version will suit you.
+## Предыдущая версия Помощника
+Легаси — это предыдущая версия Помощника, который по сути был пользовательским скриптом, а не браузерным расширением. В основном, есть два случая, когда вы можете предпочесть её новому Браузерному помощнику: 1) новый Помощник недоступен для вашего браузера; 2) вы привыкли к иконке с зелёным щитом и хотите оставить всё как было.  Если вы узнали себя в одном из этих сценариев, тогда легаси-версия вам подходит.
 
-## How to install AdGuard Browser Assistant
-Technically, you won’t need to do it on your own: during the onboarding process AdGuard app will determine your default browser and offer to install Browser Assistant for it. Yet, if you missed that step, you can download it yourself.
+## Как установить Браузерный помощник AdGuard
+Технически, вам не нужно делать это самостоятельно: во время установки приложение AdGuard определит ваш браузер по умолчанию и предложит установить Браузерный помощник для него. Но если вы пропустили этот шаг, то можете скачать его самостоятельно.
 
-AdGuard Browser Assistant is available for all popular browsers: Chrome, Firefox, Safari, Edge, Opera, and Yandex. To install the Browser Assistant for your default browser, you can do it directly from the app settings, but you also have an opportunity to install it for other browsers.
+Браузерный помощник AdGuard доступен для всех популярных браузеров: Chrome, Firefox, Safari, Edge, Opera и Яндекс.Браузера. Установить Браузерный помощник для браузера по умолчанию можно прямо из настроек приложения, но у вас также есть возможность установить его для других браузеров.
 
-To install the one you need (or many, it is not prohibited but even encouraged), go to [our website](https://adguard.com/en/adguard-assistant/overview.html), click the browser icon and then the *Install* button. That’s it!
+Чтобы установить Помощник для нужного браузера (или несколько, это не запрещено, а даже приветствуется), перейдите на [наш сайт](https://adguard.com/ru/adguard-assistant/overview.html), кликните на иконку браузера и нажмите кнопку *«Скачать»*. Вот и всё!

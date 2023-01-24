@@ -5,7 +5,7 @@ sidebar_position: 6
 
 When discussing AdGuard ad filters, one topic often comes up – whether AdGuard should block this or that ad. By setting the rules, we stick to specific criteria that are very similar to [EasyList Policy](https://easylist.to/pages/policy.html), which we find correct and appropriate. However, we have made some changes to it.
 
-![To filter or not to filter](https://cdn.adguard.com/public/Adguard/Common/page_filtering.png)
+![To filter or not to filter](https://cdn.adtidy.org/public/Adguard/Common/page_filtering.png)
 
 ## Terminology
 
@@ -94,7 +94,7 @@ If a rule is subject to the list of limitations described below, then it won’t
 
 **What will be blocked with this filter?**
 
-- This filter will block obstructions on the page. These elements are not ads, but they obstruct the view and make it difficult to see the actual content of the website. Such elements include cookie notices, third-party widgets, in-page popups, email subscription forms, banners with special offers, and aggressively placed social media widgets.
+- This filter will block obstructions on the page. These elements are not ads, but they obstruct the view and make it difficult to see the actual content of the website. Such elements include cookie notices, third-party widgets, in-page pop-ups, email subscription forms, banners with special offers, and aggressively placed social media widgets.
 
 **Limitations and Exceptions**
 
@@ -106,7 +106,7 @@ If a rule is subject to the list of limitations described below, then it won’t
 
 ## Filter unblocking search ads and self-promotion
 
-Unlike other filters, this one **unblocks** certain ads. Read more about it in the [article on search ads and self-promotion](search-ads.md).
+Unlike other filters, this one **unblocks** certain ads. Read more about it in the [article on search ads and self-promotion](../search-ads).
 
 **What will be unblocked with this filter?**
 

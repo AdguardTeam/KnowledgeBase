@@ -1,78 +1,78 @@
 {
   "version.label": {
-    "message": "Next",
+    "message": "下一页",
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.General": {
-    "message": "General",
+    "message": "常规",
     "description": "The label for category General in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Ad filtering": {
-    "message": "Ad filtering",
+    "message": "广告过滤",
     "description": "The label for category Ad filtering in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.HTTPS filtering": {
-    "message": "HTTPS filtering",
+    "message": "HTTPS 过滤",
     "description": "The label for category HTTPS filtering in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.AdGuard account": {
-    "message": "AdGuard account",
+    "message": "AdGuard 账号",
     "description": "The label for category AdGuard account in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.License": {
-    "message": "License",
+    "message": "许可证",
     "description": "The label for category License in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.AdGuard for Windows": {
-    "message": "AdGuard for Windows",
+    "message": "AdGuard Windows版",
     "description": "The label for category AdGuard for Windows in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.AdGuard for Mac": {
-    "message": "AdGuard for Mac",
+    "message": "AdGuard Mac版",
     "description": "The label for category AdGuard for Mac in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Solving problems": {
-    "message": "Solving problems",
+    "message": "解决问题",
     "description": "The label for category Solving problems in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.AdGuard for Android": {
-    "message": "AdGuard for Android",
+    "message": "AdGuard Android版",
     "description": "The label for category AdGuard for Android in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.AdGuard for iOS": {
-    "message": "AdGuard for iOS",
+    "message": "AdGuard iOS版",
     "description": "The label for category AdGuard for iOS in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.AdGuard Browser extension": {
-    "message": "AdGuard Browser extension",
+    "message": "AdGuard 浏览器扩展",
     "description": "The label for category AdGuard Browser extension in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.AdGuard for Safari": {
-    "message": "AdGuard for Safari",
+    "message": "AdGuard Safari版",
     "description": "The label for category AdGuard for Safari in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.AdGuard Content Blocker": {
-    "message": "AdGuard Content Blocker",
+    "message": "AdGuard 内容拦截器",
     "description": "The label for category AdGuard Content Blocker in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Miscellaneous": {
-    "message": "Miscellaneous",
+    "message": "其它",
     "description": "The label for category Miscellaneous in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Contribute to AdGuard": {
-    "message": "Contribute to AdGuard",
+    "message": "为 AdGuard 做贡献",
     "description": "The label for category Contribute to AdGuard in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Translating AdGuard": {
-    "message": "Translating AdGuard",
+    "message": "翻译 AdGuard",
     "description": "The label for category Translating AdGuard in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Guides": {
-    "message": "Guides",
+    "message": "指南",
     "description": "The label for category Guides in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Technical support": {
-    "message": "Technical support",
+    "message": "技术支持",
     "description": "The label for category Technical support in sidebar tutorialSidebar"
   }
 }

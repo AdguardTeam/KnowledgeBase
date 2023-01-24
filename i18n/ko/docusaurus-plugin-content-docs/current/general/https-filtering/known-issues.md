@@ -3,11 +3,13 @@ title: 'HTTPS 필터링: 알려진 문제'
 sidebar_position: 2
 ---
 
-> 마지막 업데이트: 2022년 9월 20일 이 기사를 읽으려면 암호화, TLS 프로토콜 및 HTTPS에 대한 기본 지식이 필요할 수 있습니다.
+> 수정: 2022년 9월 20일
+
+> 이 글을 이해하려면 암호화, TLS 및 HTTPS에 대한 기본 지식이 필요할 수 있습니다.
 
 아래의 그림에서 HTTPS 필터링 작동 방식을 확인할 수 있습니다.
 
-![HTTPS 필터링이란 무엇인가요](https://cdn.adguard.com/public/Adguard/Blog/https/what_is_https_filtering_ko.png)
+![HTTPS 필터링이란 무엇인가요](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
 
 AdGuard는 브라우저에서 사용하는 TLS 연결 속성을 복사합니다.
 

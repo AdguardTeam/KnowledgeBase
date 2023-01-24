@@ -1,77 +1,77 @@
 ---
-title: What is HTTPS filtering
+title: Что такое HTTPS-фильтрация
 sidebar_position: 1
 ---
 
-### What is HTTPS?
+### Что такое HTTPS?
 
-HTTPS (HyperText Transfer Protocol Secure) is an extension of the HTTP protocol that supports encryption to increase security. This protocol is used to securely transmit valuable information like personal data, credit card details, etc.
+HTTPS (аббр. от англ. HyperText Transfer Protocol Secure) — расширение HTTP-протокола, поддерживающее шифрование для повышения безопасности. Этот протокол используется для защищённой передачи важной информации, такой как персональные данные, реквизиты банковских карт и т. д.
 
-Using HTTPS is highly advantageous because encrypted traffic is protected against eavesdropping by a third party, and we can only welcome this. HTTPS acceptance has been growing in recent years, mainly because it is [encouraged by Google](https://webmasters.googleblog.com/2014/08/https-as-ranking-signal.html) and also due to the emergence of a free certificate authority [Let’s Encrypt](https://en.wikipedia.org/wiki/Let's_Encrypt).
+Использование HTTPS — сугубо положительная вещь, ведь зашифрованный трафик защищён от прослушивания третьей стороной, и мы это только приветствуем. Рост HTTPS сильно ускорился в последние годы в связи с тем, что это [поощряется Google](https://webmasters.googleblog.com/2014/08/https-as-ranking-signal.html), а также с появлением бесплатного центра сертификации [Let’s Encrypt](https://ru.wikipedia.org/wiki/Let’s_Encrypt).
 
-The diagram below describes the difference between plain HTTP protocol and secure HTTPS protocol.
+На диаграмме ниже мы описали разницу между простым HTTP-протоколом и защищённым HTTPS-протоколом.
 
-![What is HTTPS](https://cdn.adguard.com/public/Adguard/Blog/https/what_is_https.png)
+![Что такое HTTPS](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https.png)
 
-### What is a security certificate?
+### Что такое сертификат безопасности
 
-Simply put, HTTPS means data encryption. But there’s still a problem: how can you be sure that you’ve established an encrypted connection with the right website? That’s where security certificates come into play. A certificate serves as proof that the website is really what it tells you it is. If a website doesn’t have such a certificate, or if the certificate contains incorrect information, the browser will not allow you to establish a secure connection. It is important that the certificate a website uses is issued by a certificate authority (CA) trusted by your browser. Such a CA guarantees that the SSL certificate is, indeed, issued to the website’s owner.
+Проще говоря, HTTPS означает шифрование данных. Но остаётся ещё одна проблема: как быть уверенным, что вы установили зашифрованное соединение именно с тем сайтом, с которым планировали? Тут в игру и вступают сертификаты безопасности. Сертификат — это удостоверение, что сайт представляет собой именно тот ресурс, за который себя выдаёт. Если такого сертификата у сайта нет или в нём содержится неправильная информация, браузер не позволит вам установить защищённое соединение. При этом важно, чтобы сертификат, используемый сайтом, был выдан центром сертификации, которому доверяет ваш браузер. Такие центры сертификации гарантируют, что сертификат выдан именно владельцу сайта.
 
-### Why does AdGuard need to be able to filter HTTPS?
+### Зачем AdGuard нужно уметь фильтровать HTTPS?
 
-Most websites are now using HTTPS, and the same applies to advertising. Here are a few popular websites where you can’t remove ads without HTTPS filtering: youtube.com, facebook.com, and twitter.com.
+Большинство сайтов теперь используют HTTPS, то же самое относится и к рекламным сетям. Вот примеры популярных сайтов, рекламу на которых невозможно убрать без HTTPS-фильтрации: youtube.com, facebook.com, twitter.com.
 
-### How does HTTPS filtering work?
+### Как работает HTTPS-фильтрация
 
-If it were easy, HTTPS wouldn’t be that secure. When a browser attempts to connect to a server, AdGuard establishes two secure connections: one with the browser (or another app) and the other with the server. The browser must trust AdGuard and the connections it creates. For this purpose, AdGuard generates a special (and unique) root certificate and installs it into the system and, when it is required, into some browsers (e.g., Firefox). Thus, AdGuard can see what is happening inside the secure connection and do its job — block ads and trackers.
+Если бы это было просто, HTTPS не был бы безопасным. При попытке браузера соединиться с сервером, AdGuard устанавливает два защищённых соединения: одно с браузером (или с другим приложением), а другое с сервером. Важно, чтобы при этом браузер доверял AdGuard и созданному им соединению. Для этого AdGuard генерирует специальный (и уникальный) корневой сертификат и устанавливает его в систему и, при необходимости, в некоторые браузеры (например, Firefox). Таким образом, AdGuard может видеть, что происходит внутри защищённого соединения, и выполнять свою работу — блокировать рекламу и трекеры.
 
-For better understanding we depicted this process:
+Для лучшего понимания мы изобразили этот процесс на картинке:
 
-![How does HTTPS filtering work](https://cdn.adguard.com/public/Adguard/Blog/https/what_is_https_filtering.png)
+![Как работает HTTPS-фильтрация](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
 
-### Does my traffic remain encrypted and secure?
+### Остаётся ли мой трафик зашифрованным и безопасным?
 
-Of course! Your connection with a remote server remains encrypted and secure. AdGuard, just like your browser, checks the server’s certificate before deciding whether to filter it or not.
+Конечно! Ваше соединение с удалённым сервером остаётся зашифрованным и защищённым. AdGuard, как и браузер, проверяет сертификат сервера, прежде чем решить, фильтровать ли его.
 
-However, HTTPS filtering has its drawbacks. The most important one is that it hides from the browser the actual certificate of the website. Instead, the browser sees the certificate issued by AdGuard.
+Однако HTTPS-фильтрация имеет свои недостатки. Самым важным из них является то, что она скрывает от браузера свойства реального сертификата, используемого сайтом. Вместо этого браузер видит сертификат, сгенерированный AdGuard.
 
-Because of this, we have taken additional measures to improve connection security.
+В связи с этим мы приняли дополнительные меры для повышения безопасности соединения.
 
-### Financial websites and websites with sensitive personal data
+### Финансовые сайты и сайты с конфиденциальными личными данными
 
-By default, AdGuard doesn’t filter any information on websites of banks, payment systems, or websites with valuable personal data. We maintain a list of [thousands of exclusions](https://github.com/AdguardTeam/HttpsExclusions).
+По умолчанию AdGuard не фильтрует информацию на сайтах банков, платёжных систем или сайтах с ценными личными данными. Мы поддерживаем список из более чем [1300 таких сайтов-исключений](https://github.com/AdguardTeam/HttpsExclusions).
 
-If you believe some website should be added to this list, please [let us know](https://github.com/AdguardTeam/HttpsExclusions/issues/new).
+Если вы считаете, что какой-то сайт должен быть добавлен в этот список, пожалуйста, [напишите нам об этом](https://github.com/AdguardTeam/HttpsExclusions/issues/new).
 
-### Extended Validation (EV) certificates
+### Сертификаты высокой надёжности (EV)
 
-AdGuard allows you to disable filtering for all websites that use extended validation certificates.
+AdGuard предоставляет возможность исключить из фильтрации все сайты, которые используют сертификаты высокой надёжности (extended validation или EV).
 
-An EV certificate offers a higher level of security and provides more guarantees than a regular certificate, proving that the website is not fraudulent or fake.
+Сертификат высокой надёжности обеспечивает более высокий уровень надёжности и гарантий безопасности чем стандартные сертификаты, доказывая тем самым, что сайт не является мошенническим или поддельным.
 
-### Problems related to HTTPS filtering
+### Известные проблемы, связанные с HTTPS-фильтрацией
 
-This recent [study](https://cdn.adguard.com/public/Adguard/Blog/https/interception-ndss17.pdf) shows that 5 to 10% of HTTPS connections are established by HTTPS-filtering applications. It is usually done by various kinds of antivirus software. The bad news is that 24 out of 26 tested antiviruses reduced, in various ways, the connection security level, while two-thirds created connections prone to hacking.
+[Исследование 2017 года](https://cdn.adtidy.org/public/Adguard/Blog/https/interception-ndss17.pdf) показало, что 5–10% HTTPS-соединений устаналиваются приложениями с HTTPS-фильтрацией. Обычно это делают разнообразные антивирусы. Плохая новость заключается в том, что 24 из 26 протестированных антивирусов тем или иным способом снижали уровень безопасности соединения, а две трети создавали соединения, подверженные взлому.
 
-The researchers came to a simple conclusion: the Internet security community should pay close attention to applications that filter secure connections. And the developers of such software must pay serious attention to the quality of filtering implementations.
+Исследователи пришли к простому выводу: сообщество интернет-безопасности должно обратить пристальное внимание на приложения, фильтрующие защищённые соединения. И разработчики такого ПО должны уделять серьёзное внимание качеству фильтрации.
 
-We would like to note that AdGuard was not tested in the above study. We ran estimates according to their set of tests, and at the time of testing, we could have received the maximum score – A\*. However, this score is not perfect. During the study, the researchers identified some issues that were omitted in the final evaluation.
+Мы хотели бы отметить, что AdGuard не тестировался в вышеуказанном исследовании. По нашим прикидкам, судя по набору проверок, на момент тестирования мы бы получили максимальную оценку A*. Однако этот показатель не идеален. Есть целый набор проблем, которые были обозначены исследователями, но которые не учитывались в итоговой оценке.
 
-Here at AdGuard, we fully agree with those conclusions. Moreover, we would like to be as open with users as possible and talk about the problems we are currently experiencing and the steps we are taking to improve the quality and security of the filtering mechanism. The list of these problems is sorted by priority.
+Мы в AdGuard совершенно согласны с выводами, сделанными исследователями. Более того, мы хотим быть открытыми с пользователями и рассказать о том, какие проблемы у нас сейчас есть и какие шаги мы предпринимаем для улучшения качества и защищённости механизмов фильтрации. Список этих проблем отсортирован по приоритету.
 
-Most of the problems discovered in the above study are related to certificate validation mechanisms. This is what we want to focus on first. We are working on a separate certificate validation library. Moreover, we want to make it open source. A [separate article](known-issues.md) lists all the known drawbacks of HTTPS filtering in AdGuard and our plans to fix them.
+Большая часть проблем, найденных в исследовании выше, связаны с механизмами валидации сертификатов. На этом мы хотим сконцентрироваться в первую очередь. Мы работаем над отдельной библиотекой проверки сертификатов. Более того, мы хотим выложить её код в открытый доступ. В [отдельной статье](../known-issues) мы перечислили все известные недостатки HTTPS-фильтрации в AdGuard и планируемые сроки их устранения.
 
-#### HTTPS filtering issues on Android 7+
+#### Проблемы HTTPS-фильтрации на Android 7+
 
-[Starting from Android 7](https://blog.adguard.com/en/android-nougat-release-and-what-does-it-mean-for-adguard-users/), developers have to explicitly indicate that their apps trust user-installed certificates. Not everyone wants to, or bothers with it. What does it mean for AdGuard? AdGuard installs a user certificate to be able to filter HTTPS traffic. If an app doesn't trust this certificate, its HTTPS traffic will not be filtered. What to do?
+[Начиная с Android 7](https://blog.adguard.com/en/android-nougat-release-and-what-does-it-mean-for-adguard-users/), разработчики должны явно указывать, что их приложения доверяют пользовательским сертификатам. Не все из них делают это — кто-то не хочет, кто-то просто не утруждается. Что это значит для пользователей AdGuard? AdGuard устанавливает свой сертификат в пользовательское хранилище, чтобы иметь возможность фильтровать HTTPS-трафик. Если приложение не доверяет этому сертификату, его HTTPS-трафик останется неотфильтрованным. Что делать?
 
-The first thing worth mentioning is that many apps (even modern ones) still trust user certificates. Nothing has changed in this regard. Almost all browsers also trust such certificates. There may be some exotic browsers that do not, but they are a rare exception to common practice.
+Первое, о чём стоит упомянуть, это то, что многие приложения (даже современные) по-прежнему доверяют пользовательским сертификатам. В их отношении ничего не меняется. Почти все браузеры также доверяют таким сертификатам. Возможно, существуют некоторые экзотические браузеры, которые этого не делают, но они — редкое исключение из общей практики.
 
-Finally, if your device is rooted, you can move the AdGuard certificate to the system storage. This way, you don't have to worry about any permissions a particular app may or may not have — HTTPS traffic will be filtered for modern apps just as well as for older ones. Please keep in mind that in this case, some additional security restrictions (e.g., HPKP or `Expect-CT`) apply to AdGuard.
+Наконец, если у вас есть root-доступ к устройству, вы можете переместить сертификат AdGuard в системное хранилище. Тогда вам не придётся волноваться о том, доверяет то или иное приложение пользовательским сертификатам — HTTPS-трафик будет фильтроваться одинаково хорошо в любых приложениях. Обратите внимание, что перенос сертификата в системные влечёт за собой дополнительные ограничения безопасности: HPKP и `Certificate Transparency`.
 
-### How to manually check HTTPS quality?
+### Как самостоятельно проверить качество HTTPS
 
-There are several dedicated websites where you can check the quality of your HTTPS connection. These websites check if your browser (or, in our case, your browser plus AdGuard) is susceptible to common vulnerabilities. If you plan to use any program that filters HTTPS, not necessarily AdGuard (e.g., an antivirus), we advise that you check the connection quality on these websites.
+Существует несколько сайтов, созданных специально для проверки качества HTTPS-соединений. Эти сайты проверяют, подвержен ли браузер (или, в нашем случае, ваш браузер плюс AdGuard) распространённым уязвимостям. Если вы собираетесь использовать программу, фильтрующую HTTPS (не обязательно AdGuard, это может быть антивирус), мы советуем проверить качество соединения на этих сайтах.
 
 * [https://www.ssllabs.com/ssltest/viewMyClient.html](https://www.ssllabs.com/ssltest/viewMyClient.html)
 * [https://www.howsmyssl.com/](https://www.howsmyssl.com/)

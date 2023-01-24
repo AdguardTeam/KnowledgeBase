@@ -1,45 +1,45 @@
 ---
-title: How to configure system-wide filtering with AdGuard for iOS
+title: iOS版AdGuardでSafari外の広告ブロックを設定する方法（システムワイドブロック）
 sidebar_position: 2
 ---
 
-## About system-wide filtering
+## システムワイドブロックについて
 
-System-wide filtering means blocking ads and trackers beyond the Safari browser, i.e. in other apps and browsers. This article will tell you how to set it up on your iOS device.
+iOSでのシステムワイドブロックとは、Safariブラウザ以外、つまり他のアプリやブラウザで、ネットワークレベルで広告やトラッカー（個人情報追跡ソフト）をブロックすることです。 ほとんどの広告ブロッカーはこれをできませんが、AdGuardはできます。ただし、少し設定が必要であり、この記事では、お使いのiOSデバイスでこの機能を設定する方法をご紹介します。
 
-On iOS, the only way to block ads and trackers system-wide is to use [DNS filtering](https://adguard-dns.io/kb/general/dns-filtering/). First, you have to enable DNS protection. To do so, open *AdGuard for iOS settings* —> *DNS protection* and switch it on.
+iOSでは、広告やトラッカーをシステム全体でブロックする唯一の方法は、[DNSフィルタリング](https://adguard-dns.io/kb/general/dns-filtering/)を使用することです。 まず、「DNS通信を保護」を有効にする必要があります。 AdGuard for iOSアプリのメイン画面→設定（右下の⚙アイコン）→「DNS通信を保護」→オンにする
 
-![DNS protection screen](https://cdn.adguard.com/public/Adguard/Blog/ios_dns_protection.PNG)
+![DNS通信を保護画面 *mobile_border](https://cdn.adguard.com/public/Adguard/Blog/ios_dns_protection_ja.PNG)
 
-Now, if your purpose is to block ads and trackers system-wide, you have two options:
+AdGuardを使ってシステムワイドブロックを行うには2つの方法があります。
 
-1. Enable AdGuard DNS server (*Settings* —> *DNS protection* —> *DNS server* —> *AdGuard DNS*).
-2. Add a DNS filter/hosts file that will block ad and tracking domains, e.g. AdGuard DNS filter.
+1. AdGuard DNSを有効にする（*設定*⚙→*DNS通信を保護*→*DNSサーバー*→*AdGuard DNS*）
+2. 追跡・広告ドメインをブロックするDNSフィルタやホストファイルを使う（例えば「AdGuard DNSフィルタ」）
 
-The second option takes a bit more time to set up but has several advantages:
+両方とも効果は近いですが、DNSフィルタを有効にする方法２には、メリットがあります:
 
-* You can use any DNS server at your discretion and you are not tied up to a specific blocking server.
-* You can add multiple DNS filters and/or hosts files at the same time, but you can't use multiple DNS servers at once.
+* DNSサーバーは任意のものにすることが可能（もしくは接続しない）
+* DNSホワイトリストを使えて、複数のDNSフィルタやホストファイルを同時に使える
 
-![How DNS filtering works](https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_en.png)
+![DNSフィルタリングの仕組み](https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_ja.png)
 
-## How to add a DNS filter/hosts file
+## DNSフィルタ/ホストファイルを追加する方法
 
-You can add any DNS filter or hosts file, the instruction will be the same for all of them. For the sake of the example, let's add [AdGuard DNS filter](https://github.com/AdguardTeam/AdguardSDNSFilter). It is composed of several other filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList, EasyPrivacy, etc.) and it's simplified specifically to be better compatible with DNS-level ad blocking.
+どのDNSフィルタやhostsファイルを追加しても、手順は同じです。 おすすめとして、[AdGuard DNSフィルター](https://github.com/AdguardTeam/AdguardSDNSFilter)を追加してみましょう。 他のいくつかのフィルタ（AdGuardベースフィルタ、SNS用フィルタ、追跡防止フィルタ、モバイル広告フィルタ、EasyList、EasyPrivacy）から構成され、DNSレベルの広告ブロックとの互換性を向上するように簡素化されたフィルタです。
 
-1. Open *AdGuard for iOS settings* —> *General*.
-2. Enable *Advanced mode*. The *Advanced settings* tab will appear. Open it.
+1. AdGuard iOSアプリ→*設定*（右下の⚙）→*一般設定*
+2. 高度な設定モード→オン。 そうすると、「詳細設定」という項目が現れますので、 それを開きます。
 
-![Open AdGuard Settings and enable Advanced mode](https://cdn.adguard.com/public/Adguard/Release_notes/iOS/v4.0/advanced_mode_en.jpg)
+![AdGuardの設定を開き、高度な設定モードをオンにします *mobile_border](https://cdn.adguard.com/public/Adguard/Release_notes/iOS/v4.0/advanced_mode_ja.jpg)
 
-![Advanced settings screen](https://cdn.adguard.com/public/Adguard/Blog/ios_advanced_settings.PNG)
+![詳細設定画面 *mobile_border](https://cdn.adguard.com/public/Adguard/Blog/ios_advanced_settings_ja.PNG)
 
-> Note: We don't recommend touching other settings you'll find inside the *Advanced settings* tab, especially when it comes to *Low-level settings*. Some of them might break the Internet connection or compromise your privacy and security, so it's better to be careful. The text below describes the exact actions required to add AdGuard DNS filter.
+> ※「*詳細設定*」タブにある設定をそのままオンにすることはお勧めできません（特に「*ローレベル設定*」）。 中には、インターネット接続が切断されたり、プライバシーやセキュリティが損なわれたりするものもありますので、注意が必要です。 　
 
-3. Copy this link: `https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt` (it's a link for AdGuard DNS filter)
-4. Open *AdGuard for iOS settings* —> *DNS protection* —> *DNS filtering* (available while *Advanced mode* is enabled) —> *DNS filters*.
-5. Click *Add a filter*, paste the link into the filter URL field, and click 'Next'.
+3. このリンクをコピーする: `https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt` （AdGuard DNSフィルタのリンクです）
+4. *AdGuard設定* → *DNS通信を保護* → *DNSフィルタリング* (「高度な設定」モードのオンが必須) → *DNSフィルタ*
+5. 「*フィルタを追加する*」→フィルタのURL欄に「3.」でコピーしたリンクを貼り付ける→次へ
 
-![Adding a DNS filter screen](https://cdn.adguard.com/public/Adguard/Blog/ios_adding_a_filter.PNG)
+![DNSフィルタ追加画面 *mobile_border](https://cdn.adguard.com/public/Adguard/Blog/ios_adding_a_filter_ja.PNG)
 
-> Add any number of other DNS filters the same way by pasting a different URL at step 3. You can find various filters and links to them [here](https://filterlists.com).
+> 完了です。ステップ3で別のURLをコピーして貼り付けることで、同じように他のDNSフィルターをいくつでも追加できます。 様々なフィルターやそのリンクは[こちら](https://filterlists.com)で確認することができます。
