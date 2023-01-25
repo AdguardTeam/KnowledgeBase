@@ -840,7 +840,7 @@ For the requests matching a `$permissions` rule, AdGuard strengthens response's 
 `$permissions` value syntax is similar to the `Permissions-Policy` (or `Feature-Policy`) header [syntax](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy).
 The list of the available directives is available [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives).
 
-`$permissions` value can be empty in the case of exception rules. See examples section for further information.
+`$permissions` value can be empty in the case of exception rules — see examples below.
 
 > **Limitations**
 >
