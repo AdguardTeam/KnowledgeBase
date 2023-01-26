@@ -47,6 +47,23 @@ In the opened dialog window, press _Add extension_.
 
 ![Edge dialog window *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_edge1.png)
 
+Alternatively, you install AdGuard Browser extension for Edge from the [Chrome Web Store](https://agrd.io/extension_chrome). Open its web page in your Edge browser and select *Allow extensions from other stores* in the banner at the top of the page.
+
+![Edge banner on the Chrome Web Store *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/edge_banner.jpg)
+
+In the opened dialog box, click *Allow*.
+
+![Edge dialog box “Allow extensions from other web stores”](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/allow_from_stores.jpg)
+
+Click *Add to Chrome*.
+
+![Add to Chrome button *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/add_to_chrome.jpg)
+
+In the opened dialog window, click *Add extension* to install AdGuard for Edge. 
+
+![Add to Edge button](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/add_to_edge.jpg)
+
+
 ## How to install AdGuard Browser extension for Safari
 
 AdGuard for Safari is not a browser extension in a common sense. You can read more about it in a [devoted artile](/adguard-for-safari/overview). Or you can [download the installation file](https://agrd.io/safari_release) directly from this page.
