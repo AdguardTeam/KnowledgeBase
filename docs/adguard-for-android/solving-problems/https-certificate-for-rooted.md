@@ -7,14 +7,14 @@ AdGuard for Android provides a feature called [HTTPS filtering](../../overview#h
 
 On a non-rooted devices CA certificates can be installed to the **User store**. Only a limited subset of apps (mostly, browsers) trust CA certificates installed to the User store, meaning HTTPS filtering won't work for apps that don't trust it.
 
-However, on rooted devices, you can install the certificate to the **System store** and allow HTTPS filtering of all other apps' traffic too. 
+However, on rooted devices, you can install the certificate to the **System store** and allow HTTPS filtering of other apps' traffic too.
 
 Here's how to do that.
 
 ## How to install AdGuard Certificate to System store (on a rooted device)
 
 1. Enable HTTPS filtering in AdGuard for Android and save AdGuard's certificate to the User store (use [this instruction](../../overview#https-filtering) if needed)
-2. Go to **AdGuard app** > **Menu** (≡) > **Settings** > **Network** > **HTTPS filtering** > **Secure certificate** >
+2. Go to **AdGuard app** → **Menu** (≡) → **Settings** → **Network** → **HTTPS filtering** → **Secure certificate** → tap “**Copy to the system store**”
 tap “**Copy to the system store**”
 
 That is enough for older versions of Magisk.
@@ -37,7 +37,7 @@ In that case, proceed to steps below:
 
 5. Download the `.zip` file (of “AdGuard Certificate” module) from the [latest release on GitHub](https://github.com/AdguardTeam/adguardcert/releases/latest/)
 
-6. Go to **Magisk** -> **Modules** -> **Install from storage** and select the downloaded `.zip` file
+6. Go to **Magisk** → **Modules** → **Install from storage** and select the downloaded `.zip` file
 
 ![Open Magisk modules *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-4.png)
 
@@ -51,7 +51,7 @@ In that case, proceed to steps below:
 
 If a new version of "AdGuard certificate" module comes out, repeat steps 3-7 to update the module.
 
-The module does its work during the system boot. If your AdGuard certificate changes,
+The module does its work during the system boot. If your AdGuard certificate changes, you'll have to reboot the device for the new certificate to be copied to the system store.
 you'll have to reboot the device for the new certificate to be copied to the system store.
 
 ### Bromite browser
