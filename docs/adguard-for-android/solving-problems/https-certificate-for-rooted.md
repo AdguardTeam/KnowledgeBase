@@ -56,7 +56,7 @@ you'll have to reboot the device for the new certificate to be copied to the sys
 
 ### Bromite browser
 
-Please note that in order for **Bromite** browser to work properly, in addition to the steps mentioned above, you need to enable the "Allow user certificates" flag in `chrome://flags`.
+Please note that in order for **Bromite** browser to work properly, in addition to the steps mentioned above, you need to set "Allow user certificates" in `chrome://flags` to "Enabled" state.
 
 ### Chrome and Chromium-based browsers
 
