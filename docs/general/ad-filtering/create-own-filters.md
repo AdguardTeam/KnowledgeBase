@@ -823,6 +823,42 @@ For the requests matching a `$csp` rule, we will strengthen response security po
 >
 > Rules with `$csp` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
 
+#### **`$permissions`** {#permissions-modifier}
+
+This modifier completely changes the rule behavior. If it is applied to a rule, it will not block the matching request. The response headers are going to be modified instead.
+
+> In order to use this type of rules, it is required to have the basic understanding of the [Feature Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Feature_Policy) security layer.
+
+For the requests matching a `$permissions` rule, AdGuard strengthens response's feature policy by adding additional feature policy equal to the `$permissions` modifier contents. `$permissions` rules are applied independently from any other rule type. Other basic rules have no influence on it **save for document-level exceptions** (see the examples section).
+
+> **Multiple rules matching a single request.**
+>
+> In case if multiple `$permissions` rules match a single request, AdGuard will apply each of them.
+
+**Syntax**
+
+`$permissions` value syntax is similar to the `Permissions-Policy` (or `Feature-Policy`) header [syntax](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy).
+The list of the available directives is available [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives).
+
+`$permissions` value can be empty in the case of exception rules — see examples below.
+
+> **Limitations**
+>
+> 1. Two characters are forbidden in the `$permissions` value: `,` and `$`;
+> 2. `$permissions` is compatible with the limited list of modifiers: `$domain`, `$important`, and `$subdocument`.
+
+**Examples**
+
+* `||example.org^$permissions=sync-xhr 'none'` disallows synchronous `XMLHttpRequest` requests across `example.org`.
+* `@@||example.org/page/*$permissions=sync-xhr 'none'` disables all rules with the `$permissions` modifier exactly matching `sync-xhr 'none'` on all the pages matching the rule pattern. For instance, the rule above.
+* `@@||example.org/page/*$permissions` disables all the `$permissions` rules on all the pages matching the rule pattern.
+* `$domain=example.org|example.com,permission=oversized-images 'none'; sync-script 'none'; unsized-media 'none';` disallows oversized images, synchronous scripts and unsized media features across `example.org` and `example.com`.
+* `@@||example.org^$document` or `@@||example.org^$urlblock` disables all the `$permission` rules on all the pages matching the rule pattern.
+
+> **Compatibility with different versions of AdGuard**
+>
+> Rules with the `$permissions` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**.
+
 #### **`$all`** {#all-modifier}
 
 `$all` modifier is made of [`$document`](#document-modifier), [`$popup`](#popup-modifier), [`$csp`](#csp-modifier) modifiers. E.g. rule `||example.org^$all` is converting into such set of rules:
