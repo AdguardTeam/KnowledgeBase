@@ -1,5 +1,5 @@
 ---
-title: Moving CA certificate to System store on rooted devices
+title: Moving CA certificate to the System store on rooted devices
 sidebar_position: 13
 ---
 
@@ -15,7 +15,6 @@ Here's how to do that.
 
 1. Enable HTTPS filtering in AdGuard for Android and save AdGuard's certificate to the User store (use [this instruction](../../overview#https-filtering) if needed)
 2. Go to **AdGuard app** → **Menu** (≡) → **Settings** → **Network** → **HTTPS filtering** → **Security certificate** → tap “**Copy to the system store**”
-tap “**Copy to the system store**”
 
 That is enough for older versions of Magisk.
 
@@ -52,7 +51,6 @@ In that case, proceed to steps below:
 If a new version of "AdGuard certificate" module comes out, repeat steps 3-7 to update the module.
 
 The module does its work during the system boot. If your AdGuard certificate changes, you'll have to reboot the device for the new certificate to be copied to the system store.
-you'll have to reboot the device for the new certificate to be copied to the system store.
 
 ### Bromite browser
 
