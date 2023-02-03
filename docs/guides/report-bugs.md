@@ -13,7 +13,7 @@ Check that you have the most up-to-date version, and if not, upgrade: the bug mi
 
 Check if the bug hasn’t been reported before. We advise paying attention to both open and closed issues.
 
-![Closed issues](https://uploads.adguard.org/up85_lpbvy.png) 
+![Closed issues](https://cdn.adtidy.org/content/kb/ad_blocker/general/closed_issues.png) 
 
 ### How to describe a problem
 
