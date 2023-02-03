@@ -3,7 +3,7 @@ title: Tracking filter rules statistics
 sidebar_position: 4
 ---
 
-> NOTE: The *“Send statistics for ad filters usage”* option is disabled by default. Nothing will be sent unless user manually enables it to help us improve our blocking filters.
+> NOTE: The *"Send statistics for ad filters usage"* option is disabled by default. Nothing will be sent unless user manually enables it to help us improve our blocking filters.
 
 ### Why do we need ad filters?
 
@@ -25,10 +25,10 @@ If you enable the *Send statistics for ad filters usage* option, the following i
 * Browser type (Chrome/Firefox/Opera/Yandex.Browser/Safari).
 * List of enabled ad filters.
 * The list that consists of the following elements:
-  * *The domain name of the website* 
-  * *The number of recent page views* 
-  * *The list of filtering rules and Filter ID which were activated on this website* 
-  * *The domain name of blocked requests is sent for URL rules* 
+  * *The domain name of the website*
+  * *The number of recent page views*
+  * *The list of filtering rules and Filter ID which were activated on this website*
+  * *The domain name of blocked requests is sent for URL rules*
 The list is created based on the website's visit statistics since the last time statistical data was sent.
 
 The collected statistics will be sent periodically to our server for analysis and filter optimization.

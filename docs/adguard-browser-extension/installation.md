@@ -5,7 +5,7 @@ sidebar_position: 2
 
 ##  How to install AdGuard Browser extension for Google Chrome or Chromium browsers
 
-Open the extension's page in [Chrome Web Store](https://agrd.io/extension_chrome) and click _Add to Chrome_. 
+Open the extension's page in [Chrome Web Store](https://agrd.io/extension_chrome) and click _Add to Chrome_.
 
 ![AdGuard Browser extension in Chrome Web Store *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_chrome.png)
 
@@ -39,7 +39,7 @@ Scroll down to find AdGuard, then click _Install_.
 
 ## How to install AdGuard Browser extension for Microsoft Edge
 
-Find AdGuard Browser extension in the [Edge Add-ons store](https://agrd.io/extension_edge) and click _Get_. 
+Find AdGuard Browser extension in the [Edge Add-ons store](https://agrd.io/extension_edge) and click _Get_.
 
 ![AdGuard Browser extension in Edge Add-ons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_edge.png)
 
@@ -53,13 +53,13 @@ Alternatively, you can install AdGuard Browser extension for Edge from the [Chro
 
 In the opened dialog box, click *Allow*.
 
-![Edge dialog box “Allow extensions from other web stores”](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/allow_from_stores.jpg)
+![Edge dialog box "Allow extensions from other web stores"](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/allow_from_stores.jpg)
 
 Click *Add to Chrome*.
 
 ![Add to Chrome button *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/add_to_chrome.jpg)
 
-In the opened dialog window, click *Add extension* to install AdGuard Browser extension. 
+In the opened dialog window, click *Add extension* to install AdGuard Browser extension.
 
 ![Add to Edge button](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/add_to_edge.jpg)
 
