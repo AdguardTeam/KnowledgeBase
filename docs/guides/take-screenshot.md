@@ -3,14 +3,14 @@ title: How to take a screesnhot
 sidebar_position: 4
 ---
 
-Screenshot is a capture of your computer’s or mobile device’s screen, which can be obtained by using standard tools or a special program/app. 
+Screenshot is a capture of your computer’s or mobile device’s screen, which can be obtained by using standard tools or a special program/app.
 
 Sometimes a screenshot (or screenshots) are requested by the support team for a better understanding. Here you will find all the necessary hotkeys you should know in order to take screenshots on your computer or mobile device.
 
 
 ### Android {#android}
 
-Taking a screenshot on an Android device can be done in various ways — depending on the device model and its manufacturer. 
+Taking a screenshot on an Android device can be done in various ways — depending on the device model and its manufacturer.
 
 Generally, you should use the following button combination for Android:
 
@@ -20,7 +20,7 @@ Your Android device will capture the entire screen and save it as a photo. So, y
 
 But, as it has been already said, there can be differences depending on a particular device. Let’s look at other possible combinations:
 
-+ **Hold down at once *Home* and *Power* for 1–2 seconds;**  	 
++ **Hold down at once *Home* and *Power* for 1–2 seconds;**
 + **Hold down at once the *Back* and the *Home* buttons**
 
 On Android 8 and later you can also take a screenshot with other manipulations, for example by placing your hand vertically along the left or right edge of your phone and swiping in from that edge with your hand touching the screen (Samsung devices), or you can do it with three fingers swiping down (OnePlus devices), etc.
@@ -32,7 +32,7 @@ Besides, you can always use any special applications for taking screenshots on y
 
 ### iOS {#ios}
 
-Any iOS device (barring ancient ones) lets you take a screenshot using standard tools. 
+Any iOS device (barring ancient ones) lets you take a screenshot using standard tools.
 
 To take a screenshot on an iOS device, use the following combination:
 
@@ -53,7 +53,7 @@ On some notebooks you have to hold *Fn* and then press *PrtScn*.
 
 *Please note: PrtScn (Print Screen) button can be differently abbreviated on various keyboards — PrntScrn, PrtScn, PrtScr or PrtSc.*
 
-Windows captures the entire screen and copies it to the (invisible) clipboard. 
+Windows captures the entire screen and copies it to the (invisible) clipboard.
 
 To take a screenshot of an active window, use the following combination:
 
@@ -63,7 +63,7 @@ To take a screenshot of a specific area, you should use the following combinatio
 
 + **Hold down *Win* (the Windows button) and *Shift* and press *S***
 
-After you take a screenshot, it will be saved in the clipboard. In most cases you will be able to paste it into a document that you are currently editing by using *Ctrl + V* button combination. Alternatively, if you need to save the screenshot into a file, you should open the standard **Paint** program (or any other app that can work with images). Paste your screenshot there using the same button combination or by clicking the Paste button (usually in the top left corner of the screen) and then save it. 
+After you take a screenshot, it will be saved in the clipboard. In most cases you will be able to paste it into a document that you are currently editing by using *Ctrl + V* button combination. Alternatively, if you need to save the screenshot into a file, you should open the standard **Paint** program (or any other app that can work with images). Paste your screenshot there using the same button combination or by clicking the Paste button (usually in the top left corner of the screen) and then save it.
 
 Windows 8 and 10 let you take a screenshot very quickly with a *Win + PrtScn* combination. As soon as you press these buttons, the screenshot will be automatically saved as a file to your *Pictures* → *Screenshots Folder*.
 
@@ -76,13 +76,13 @@ Besides, you can also try using different apps for taking screenshots on your co
 
 To take a screenshot on Mac, use the following button combination:
 
-+ **Press and hold together *⌘ Cmd + Shift + 3***	
++ **Press and hold together *⌘ Cmd + Shift + 3***
 
-Your Mac will capture the entire screen and save it as a file on the desktop. 
+Your Mac will capture the entire screen and save it as a file on the desktop.
 
 To take a screenshot of an active window, use the following combination:
 
-+ **Press and hold together *⌘ Cmd + Shift + 4 + Space bar*.  The pointer will change to a camera icon. Click the window to capture it. Press the Esc button to cancel taking a screenshot** 
++ **Press and hold together *⌘ Cmd + Shift + 4 + Space bar*.  The pointer will change to a camera icon. Click the window to capture it. Press the Esc button to cancel taking a screenshot**
 
 To take a screenshot of a specific area, you should use the following combination:
 
@@ -94,6 +94,6 @@ To take a screenshot of the *Touch Bar* (MacBook Pro) use the following combinat
 
 Your Mac captures the entire *Touch Bar* and saves it as a file on the desktop.
 
-To copy a screenshot to the clipboard instead of saving it, hold down *Ctrl* together with any of the combinations above. Then you can paste the screenshot (from the clipboard) into a document or an image you are currently editing by using *Cmd + V* combination.  
+To copy a screenshot to the clipboard instead of saving it, hold down *Ctrl* together with any of the combinations above. Then you can paste the screenshot (from the clipboard) into a document or an image you are currently editing by using *Cmd + V* combination.
 
 You can also take screenshots by using **Preview** and choosing **Take screenshot** (of the selected area, window, or the entire screen). With **Preview** you can save your screenshots in JPG, TIFF, PDF, and other file formats.
