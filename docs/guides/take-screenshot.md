@@ -1,6 +1,6 @@
 ---
 title: How to take a screesnhot
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 Screenshot is a capture of your computer’s or mobile device’s screen, which can be obtained by using standard tools or a special program/app.
