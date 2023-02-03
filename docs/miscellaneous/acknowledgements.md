@@ -7,7 +7,7 @@ Our dev team would like to thank the developers of this third-party software, ou
 
 ## Third-party software {#software}
 
-This is the list of libraries and other resources that really helped us with AdGuard software development process. 
+This is the list of libraries and other resources that really helped us with AdGuard software development process.
 
 ## AdGuard for Windows {#win}
 
@@ -19,12 +19,12 @@ This is the list of libraries and other resources that really helped us with AdG
 ## AdGuard for Mac {#mac}
 
 * Red Sweater Software, LLC for RSVerticallyCenteredTextFieldCell component: [http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes](http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes)
-* Ilija Tovilo for ITProgressIndicator component: [https://github.com/iluuu1994/ITProgressIndicator](https://github.com/iluuu1994/ITProgressIndicator) 
-* Sparkle Project for Sparkle.framework component: [http://sparkle-project.org](http://sparkle-project.org) 
-* Robbie Hanson for GCDAsyncSocket component: [https://github.com/robbiehanson/CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket) 
-* Tony Million for Reachability component: [https://github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability) 
-* August «Gus» Mueller for Fmdb component: [https://github.com/ccgus/fmdb](https://github.com/ccgus/fmdb) 
-* Stephen F. Booth for SFBCrashReporter project: [https://github.com/sbooth/SFBCrashReporter](https://github.com/sbooth/SFBCrashReporter) 
+* Ilija Tovilo for ITProgressIndicator component: [https://github.com/iluuu1994/ITProgressIndicator](https://github.com/iluuu1994/ITProgressIndicator)
+* Sparkle Project for Sparkle.framework component: [http://sparkle-project.org](http://sparkle-project.org)
+* Robbie Hanson for GCDAsyncSocket component: [https://github.com/robbiehanson/CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket)
+* Tony Million for Reachability component: [https://github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
+* August «Gus» Mueller for Fmdb component: [https://github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
+* Stephen F. Booth for SFBCrashReporter project: [https://github.com/sbooth/SFBCrashReporter](https://github.com/sbooth/SFBCrashReporter)
 * Bartosz Janda for Acextract component: [https://github.com/bartoszj/acextract](https://github.com/bartoszj/acextract)
 * FLOPageViewController: [https://github.com/floschliep/FLOPageViewController](https://github.com/floschliep/FLOPageViewController)
 
@@ -140,7 +140,7 @@ Also a huge thanks and gratitude to all beta testers and other engaged users, wh
 * Görkem Emrah Güler (gork7777) — translator and proofreader to Turkish in Crowdin
 * hanschke — beta tester, active AdGuard Forum member
 * iDjay — outstanding beta tester of AdGuard for iOS
-* Imre Kristoffer Eilertsen (DandelionSprout) — maintainer of “Dandelion Sprout’s Nordic Filters” that are included in all AdGuard tools
+* Imre Kristoffer Eilertsen (DandelionSprout) — maintainer of "Dandelion Sprout’s Nordic Filters" that are included in all AdGuard tools
 * IONIL — translator and proofreader to Hebrew in Crowdin
 * itabmedia — beta tester, active AdGuard Forum member
 * kirasam — beta tester, active AdGuard Forum member
@@ -168,7 +168,7 @@ Also a huge thanks and gratitude to all beta testers and other engaged users, wh
 * [TPS](https://github.com/TPS) — bug finder, filter contributor
 * Yuki2718 — actively contributes to AdGuard filters
 * zznosar — active beta tester focused on AdGuard for iOS
-* Sergey Zozulya (sviperz) — active member of our Telegram group, beta tester 
+* Sergey Zozulya (sviperz) — active member of our Telegram group, beta tester
 
 ---
 

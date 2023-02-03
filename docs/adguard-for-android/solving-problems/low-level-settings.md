@@ -37,7 +37,7 @@ If enabled AdGuard detects search domains and automatically forwards them to the
 
 `pref.dns.fallback`
 
-Here you can specify a fallback DNS resolver that will be used when the configured server is not available. If not specified, the system default DNS is used as a fallback. A string “none” means no fallback at all.
+Here you can specify a fallback DNS resolver that will be used when the configured server is not available. If not specified, the system default DNS is used as a fallback. A string "none" means no fallback at all.
 
 
 `pref.dns.fallback.domains`
@@ -66,7 +66,7 @@ Here you can list the ports connections to which will be filtered.
 
 `pref.har.capture`
 
-Here you can enable HAR file capture. Use it only for debugging purposes! If the setting is enabled, AdGuard will create a directory named “har” inside the app cache directory. It contains information about all filtered HTTP requests in HAR 1.2 format and can be analyzed with the Fiddler program.
+Here you can enable HAR file capture. Use it only for debugging purposes! If the setting is enabled, AdGuard will create a directory named "har" inside the app cache directory. It contains information about all filtered HTTP requests in HAR 1.2 format and can be analyzed with the Fiddler program.
 
 `pref.https.ignored.errors`
 
@@ -90,7 +90,7 @@ If enabled, AdGuard shows you a notification if any app doesn’t trust our HTTP
 
 `pref.proxy.block.ipv6`
 
-If enabled, AdGuard blocks all Internet connections through IPv6 when working in “Proxy with automatic setup” mode.
+If enabled, AdGuard blocks all Internet connections through IPv6 when working in "Proxy with automatic setup" mode.
 
 `pref.proxy.disable.reconfigure`
 
@@ -122,7 +122,7 @@ If enabled, AdGuard applies a workaround solution that mitigates the soft reboot
 
 `pref.vpn.capture`
 
-If enabled, AdGuard will create the special file name “tun.pcap”. It contains all network packets transferred through the VPN. This file is located in the app cache directory and can be analyzed with the Wireshark program.
+If enabled, AdGuard will create the special file name "tun.pcap". It contains all network packets transferred through the VPN. This file is located in the app cache directory and can be analyzed with the Wireshark program.
 
 `pref.vpn.disable.pause`
 

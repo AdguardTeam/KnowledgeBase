@@ -61,17 +61,17 @@ Some websites and web services still support Java Plug-Ins. The API that serves 
 
 Here you can select the way AdGuard will respond to DNS queries that should be blocked:
 
-* Reply with “Refused” error
-* Reply with “NxDomain” error
+* Reply with "Refused" error
+* Reply with "NxDomain" error
 * Reply with a custom IP address
 
 ### Custom IPv4 address
 
-If “Custom IP address” is selected as an action applied to blocked DNS requests, here you should specify the IPv4 address that will be returned in response to blocked “A” requests. If none are specified, AdGuard will reply with the default “Refused” error.
+If "Custom IP address" is selected as an action applied to blocked DNS requests, here you should specify the IPv4 address that will be returned in response to blocked "A" requests. If none are specified, AdGuard will reply with the default "Refused" error.
 
 ### Custom IPv6 address
 
-If “Custom IP address” is selected as an action applied to blocked DNS requests, here you should specify the IPv6 address that will be returned in response to blocked “AAAA” requests. If none are specified, AdGuard will reply with the default “Refused” error.
+If "Custom IP address" is selected as an action applied to blocked DNS requests, here you should specify the IPv6 address that will be returned in response to blocked "AAAA" requests. If none are specified, AdGuard will reply with the default "Refused" error.
 
 ### Fallback servers
 
