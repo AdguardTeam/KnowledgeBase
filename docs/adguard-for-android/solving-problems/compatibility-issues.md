@@ -19,15 +19,15 @@ The Private DNS feature was introduced in Android Pie. Before version Q, Private
 
 ### Unsupported browsers
 
-1. **UC Browsers**: UC Browser, UC Browser for x86, UC Mini, UC Browser HD
+**UC Browsers: UC Browser, UC Browser for x86, UC Mini, UC Browser HD**
 
 To be able to filter HTTPS traffic, AdGuard requires the user to install a certificate into the device's trusted user certificates. Unfortunately, UC-family browsers don't trust user certificates, so AdGuard cannot perform HTTPS filtering there.
 
 **Solution**
 
-*Requires root access*. To solve this problem, move the certificate to the system certificates store.
+*Requires root access*. To solve this problem, move the certificate to the system certificate store.
 
-2. **Opera mini**: Opera mini, Opera mini with Yandex
+**Opera mini: Opera mini, Opera mini with Yandex**
 
 Opera mini drives traffic through a compression proxy by default and AdGuard is not able to decompress and filter it at the same time.
 
@@ -35,7 +35,7 @@ Opera mini drives traffic through a compression proxy by default and AdGuard is 
 
 There is no solution at this moment.
 
-3. **Dolphin Browser**: Dolphin Browser, Dolphin Browser Express
+**Dolphin Browser: Dolphin Browser, Dolphin Browser Express**
 
 AdGuard cannot filter its traffic when operating in **Manual proxy mode** because this browser ignores system proxy settings.
 
@@ -43,7 +43,7 @@ AdGuard cannot filter its traffic when operating in **Manual proxy mode** becaus
 
 Use *Local VPN* filtering mode.
 
-4. **Puffin Browser**: Puffin Browser, Puffin Browser Pro
+**Puffin Browser: Puffin Browser, Puffin Browser Pro**
 
 Puffin Browser drives traffic through a compression proxy by default and AdGuard is not able to decompress and filter it at the same time.
 
