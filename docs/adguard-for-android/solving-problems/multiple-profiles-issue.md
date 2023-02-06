@@ -1,6 +1,6 @@
 ---
 title: Problems caused by multiple user profiles
-sidebar_position: 13
+sidebar_position: 14
 ---
 
 On Android 9 and later, if AdGuard is installed for more than one user profile on your device, you may encounter problems when uninstalling the app. When you uninstall AdGuard from one user profile, the app will still appear on the app list, but you won't be able to uninstall or reinstall it. It happens because AdGuard is installed for a different user profile on the device.
