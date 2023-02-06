@@ -5,7 +5,7 @@ sidebar_position: 2
 
 Sometimes in order to understand a problem and fix it we need to collect **log files**, or **logs**. Basically, these files contain information about the program and it's work.
 
-#### Collecting debug log
+### Collecting debug log
 
 To collect **debug** log and send it to us you need to perform following steps:
 
@@ -23,7 +23,7 @@ As an alternative, you can export the logs (along with the *state.txt* file that
 
 To export logs and system information into a file, go to "Settings" — "Advanced" and tap "Export logs and system info". Select the destination folder and tap "Save".
 
-#### Collecting web requests log
+### Collecting web requests log
 
 To collect **web requests** log and send it to us you need to perform following steps:
 
