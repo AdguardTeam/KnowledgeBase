@@ -140,7 +140,7 @@ sidebar_position: 2
 * Görkem Emrah Güler (gork7777) — Crowdin 的土耳其语翻译和审核员
 * hanschke — beta 测试员，活跃的 AdGuard 论坛成员
 * iDjay — AdGuard iOS版的优秀 beta 测试人员
-* Imre Kristoffer Eilertsen (DandelionSprout) — 包含在所有 AdGuard 工具中的 “Dandelion Sprout’s Nordic Filters” 的创造者
+* Imre Kristoffer Eilertsen (DandelionSprout) — maintainer of "Dandelion Sprout’s Nordic Filters" that are included in all AdGuard tools
 * IONIL — Crowdin 上的希伯来语翻译和审核员
 * itabmedia — beta 测试员，活跃的 AdGuard 论坛成员
 * kirasam — beta 测试员，活跃的 AdGuard 论坛成员

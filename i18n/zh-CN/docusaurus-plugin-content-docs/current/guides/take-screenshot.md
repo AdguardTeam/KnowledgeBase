@@ -1,6 +1,6 @@
 ---
 title: 如何截取屏幕截图
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 屏幕截图是捕获计算机或移动设备屏幕信息的操作，可以使用标准工具或特殊程序/应用程序来获取。

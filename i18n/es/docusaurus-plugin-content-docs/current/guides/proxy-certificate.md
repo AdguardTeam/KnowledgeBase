@@ -73,7 +73,7 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 7. Enter the administrator password and then click **Modify Keychain**.
 
-8. Go to **Spotlight** (the search icon in the top right corner), type in “Keychain Access”, and then select **Keychain Access** from the search results.
+8. Go to **Spotlight** (the search icon in the top right corner), type in "Keychain Access", and then select **Keychain Access** from the search results.
 
 9. Under *System*, highlight the certificate that you added.
 

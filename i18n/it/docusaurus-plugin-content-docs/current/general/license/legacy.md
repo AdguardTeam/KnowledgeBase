@@ -42,14 +42,14 @@ For example, this is how the 1+1 key looks like:
 ![1+1 key](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/1.outdatedlicenses_en.png)
 
 *But despite the total number of devices (2) it can be activated on 1 desktop and 1 mobile device.*
-> All the outdated licenses have a “legacy” badge in the AdGuard account. And they are automatically converted to a new type when you either renew or upgrade them. But there are some nuances. Let's see which licenses can be converted to a new type and how to do it.
+> All the outdated licenses have a "legacy" badge in the AdGuard account. And they are automatically converted to a new type when you either renew or upgrade them. But there are some nuances. Let's see which licenses can be converted to a new type and how to do it.
 
 ## I have an outdated (legacy) key. What renewal/upgrade options are available for me?
 
 You can check this on the [renewal page](https://adguard.com/renew.html) or in your [AdGuard account](https://my.adguard.com/main.html):
 
 ![Upgrade](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_en.png)
-> Go to “My licenses” tab and check what actions are available to you for each specific key. Below we will explain with specific examples.
+> Go to "My licenses" tab and check what actions are available to you for each specific key. Below we will explain with specific examples.
 
 ### Licenses for 1/2/3 devices
 

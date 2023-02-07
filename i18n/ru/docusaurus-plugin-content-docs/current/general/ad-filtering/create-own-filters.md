@@ -812,6 +812,41 @@ replace = "/" regexp "/" replacement "/" modifiers
 > 
 > Правила с модификатором `$csp` не поддерживаются в AdGuard Content Blocker, AdGuard для iOS и для Safari.
 
+#### **`$permissions`** {#permissions-modifier}
+
+Этот модификатор полностью меняет поведение страницы. Когда он применяется, правило не блокирует запрос. Вместо этого будут изменены заголовки ответа.
+
+> Чтобы использовать правила этого типа, необходимо базовое понимание слоя безопасности [Feature Policy](https://developer.mozilla.org/ru/docs/Web/HTTP/Permissions_Policy).
+
+Для запросов, соответствующих правилу `$permissions`, AdGuard усиливает «политику функций» ответа, добавляя дополнительную политику, равную содержимому модификатора `$permissions`. Правила `$permissions` применяются независимо от правил любого другого типа. Прочие базовые правила никак на них не влияют, **кроме правил исключений уровня document** (см. примеры).
+
+> **Несколько правил, соответствующих одному запросу.**
+> 
+> В случае, когда несколько правил `$permissions` соответствуют одному запросу, AdGuard применит каждое из них.
+
+**Синтаксис**
+
+Синтаксис значения `$permissions` аналогичен [синтаксису заголовка](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy) `Permissions Policy` (или `Feature Policy`). Список доступных директив доступен [здесь](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives).
+
+Значение `$permissions` может быть пустым в случае правил-исключений — смотрите примеры ниже.
+
+> **Ограничения**
+> 
+> 1. В `$permissions` запрещены два символа: `,` и `$`;
+> 2. `$permissions`-правила совместимы с ограниченным списком модификаторов: `$domain`, `$important` и `$subdocument`.
+
+**Примеры**
+
+* `||example.org^$permissions=sync-xhr 'none'` запрещает синхронные `XMLHttpRequest` запросы на `example.org`.
+* `@@||example.org/page/*$permissions=sync-xhr 'none'` отключает все правила с модификатором `$permissions`, в точности соответствующим `sync-xhr 'none'` на всех страницах, подходящих под паттерн правила. Например, правило выше.
+* `@@||example.org/page/*$permissions` отключает все `$permissions`-правила на всех страницах, подходящих под паттерн правила.
+* `$domain=example.org|example.com,permission=oversized-images 'none'; sync-script 'none'; unsized-media 'none';` запрещает использование изображений большого размера, синхронных сценариев и медиа-функций нестандартного размера на сайтах `example.org` и `example.com`.
+* `@@||example.org^$document` или `@@||example.org^$urlblock` отключает все `$permission`-правила на всех страницах, подходящих под паттерн правила.
+
+> **Совместимость с различными версиями AdGuard**
+> 
+> Правила с модификатором `$permissions` поддерживаются в AdGuard для Windows, Mac и Android с **CoreLibs версии 1.11 или выше**.
+
 #### **`$all`** {#all-modifier}
 
 Модификатор `$all` состоит из модификаторов [`$document`](#document-modifier), [`$popup`](#popup-modifier), [`$csp`](#csp-modifier). Например, правило `||example.org^$all` конвертируется в такой набор правил:

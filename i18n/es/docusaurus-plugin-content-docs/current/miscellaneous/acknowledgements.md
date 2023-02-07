@@ -140,7 +140,7 @@ Also a huge thanks and gratitude to all beta testers and other engaged users, wh
 * Görkem Emrah Güler (gork7777) — translator and proofreader to Turkish in Crowdin
 * hanschke — beta tester, active AdGuard Forum member
 * iDjay — outstanding beta tester of AdGuard for iOS
-* Imre Kristoffer Eilertsen (DandelionSprout) — maintainer of “Dandelion Sprout’s Nordic Filters” that are included in all AdGuard tools
+* Imre Kristoffer Eilertsen (DandelionSprout) — maintainer of "Dandelion Sprout’s Nordic Filters" that are included in all AdGuard tools
 * IONIL — translator and proofreader to Hebrew in Crowdin
 * itabmedia — beta tester, active AdGuard Forum member
 * kirasam — beta tester, active AdGuard Forum member

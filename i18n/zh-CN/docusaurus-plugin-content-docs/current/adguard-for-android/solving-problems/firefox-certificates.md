@@ -5,7 +5,7 @@ sidebar_position: 11
 
 为了让 Adguard 在火狐浏览器中成功过滤 HTTPS 流量，浏览器需要信任 AdGuard 证书。 根据火狐浏览器的版本，您要执行以下操作。
 
-#### 第一个方法
+### Method 1
 
 > 改方法在安卓版火狐浏览器 90.0 及以上的版本可用。
 
@@ -23,7 +23,7 @@ sidebar_position: 11
 
 5. 开启**使用第三方 CA 证书**（Use third party CA certificates）
 
-#### 第二个方法
+### Method 2
 
 > 此方法仅在有 **Root 权限**的设备上有效。
 

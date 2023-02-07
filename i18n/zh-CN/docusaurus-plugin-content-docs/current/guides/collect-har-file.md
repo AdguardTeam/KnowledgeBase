@@ -159,7 +159,7 @@ To create a HAR file in Safari:
 
 ## Windows {#windows}
 
-1. Open ***Settings*** —> ***General settings*** —> ***Advanced settings** and scroll down.
+1. Open ***Settings*** → ***General settings*** → ***Advanced settings** and scroll down.
 
 2. Check the ***Enable HAR writing*** box.
 

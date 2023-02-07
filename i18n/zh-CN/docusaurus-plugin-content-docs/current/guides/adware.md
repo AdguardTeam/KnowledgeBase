@@ -1,6 +1,6 @@
 ---
 title: 恶意广告软件和病毒
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 > **请注意：** AdGuard 不是防病毒程序。 当用户要访问一个恶意软件或钓鱼网站时，AdGuard 可以警告您，但 **，它不能从用户的设备上清除病毒。**
