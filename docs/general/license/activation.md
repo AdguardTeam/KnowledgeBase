@@ -93,11 +93,11 @@ or double-click on the AdGuard icon in the system tray:
 
 3. Tap **Log in** in the top right corner of the screen
 
-![Tap Log in in the top right corner of Premium screen](https://cdn.adguard.com/content/kb/ad_blocker/iOS/ioslicense1en.png)
+![Tap Log in in the top right corner of Premium screen *mobile](https://cdn.adguard.com/content/kb/ad_blocker/iOS/ioslicense1en.png)
 
 4. Enter **email** and **password** from your **AdGuard account**
 
-![Log in](https://cdn.adguard.com/content/kb/ad_blocker/iOS/ioslicense2en.png)
+![Log in *mobile](https://cdn.adguard.com/content/kb/ad_blocker/iOS/ioslicense2en.png)
 
 ## How to transfer a license to another device
 
