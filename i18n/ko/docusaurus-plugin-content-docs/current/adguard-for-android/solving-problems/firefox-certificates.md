@@ -5,7 +5,7 @@ sidebar_position: 11
 
 AdGuard가 Firefox에서 HTTPS 트래픽을 성공적으로 필터링하기 위해서는 브라우저가 AdGuard의 인증서를 신뢰해야 합니다. Firefox 버전에 따라 브라우저가 인증서를 신뢰하도록 하는 방법은 다릅니다.
 
-#### 방법 1
+### Method 1
 
 > 이 방법은 Firefox Nightly 90.0a1 이상 버전에서만 사용될 수 있습니다. Firefox의 베타 및 일반 버전이 v90에 도달하면 이 방법을 해당 버전에도 적용할 수 있습니다.
 
@@ -23,7 +23,7 @@ Firefox Nightly가 AdGuard 인증서를 신뢰하도록 하려면 다음 단계�
 
 5. **Use third party CA certificates** 기능을 활성화합니다.
 
-#### 방법 2
+### Method 2
 
 > 이 방법은 **루팅된 기기**에서만 사용할 수 있습니다.
 

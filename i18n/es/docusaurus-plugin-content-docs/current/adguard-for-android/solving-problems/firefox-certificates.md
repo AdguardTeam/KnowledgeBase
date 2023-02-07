@@ -5,7 +5,7 @@ sidebar_position: 11
 
 For AdGuard to successfully filter HTTPS traffic in Firefox, the browser needs to trust AdGuard's certificate. It can be achieved differently for different versions of the Firefox.
 
-#### Method 1
+### Method 1
 
 > This method works in Firefox for Android version 90.0 and later.
 
@@ -23,7 +23,7 @@ To make Firefox trust the AdGuard certificate, do the following:
 
 5. Toggle **Use third party CA certificates**.
 
-#### Method 2
+### Method 2
 
 > This method will only work on **rooted** devices.
 

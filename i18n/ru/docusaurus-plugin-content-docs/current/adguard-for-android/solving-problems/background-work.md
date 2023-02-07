@@ -33,7 +33,7 @@ sidebar_position: 9
 
 ![Miui *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_0a.png)
 
-В разделе **Другие разрешения** включите все возможные разрешения.
+В разделе **Другие разрешения** включите все возможные разрешения
 
 Запустите приложение **Безопасность**.
 
