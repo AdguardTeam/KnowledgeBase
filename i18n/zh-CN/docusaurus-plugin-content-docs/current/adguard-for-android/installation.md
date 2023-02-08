@@ -1,5 +1,5 @@
 ---
-title: 安装
+title: Installation
 sidebar_position: 2
 ---
 
@@ -11,7 +11,7 @@ sidebar_position: 2
 
 **可用磁盘空间**： 120MB。
 
-## 安装
+## Installation
 虽然大部分用于安卓系统的应用程序可以通过谷歌商店分发，但是 AdGuard 不在里面。谷歌禁止通过谷歌商店分发网络层的广告拦截程序，即，在其他应用程序里屏蔽商业广告的应用程序。 [在我们的博客上](https://blog.adguard.com/en/google-removes-adguard-android-app-google-play/)可以了解更多关于谷歌限制性政策的相关信息。
 
 由于上述原因，您只可以手动安装适用于安卓的 AdGuard。 为了在移动设备上使用该应用程序，您需要执行以下操作。

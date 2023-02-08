@@ -1,5 +1,5 @@
 ---
-title: 奖励制度
+title: Reward system
 sidebar_position: 6
 ---
 

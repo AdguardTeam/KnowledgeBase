@@ -1,18 +1,18 @@
 ---
-title: Integration mode (legacy)
+title: 整合模式（旧版）
 sidebar_position: 3
 ---
 
-## What is the integration mode?
+## 什么是整合模式?
 
-In older versions of AdGuard Browser extension, if you had it installed along with one of the AdGuard desktop apps (AdGuard for Windows or AdGuard for Mac), the extension took upon itself the functions of AdGuard Assistant — a tool that helped manage the filtering right from the web page. At the same time, the ad blocking itself was completely under of the desktop app's control, the extension and its settings played no role in that.
+在旧版本的 AdGuard 浏览器扩展中，如果您将它与一个 AdGuard 桌面应用程序（AdGuard for Windows 或 AdGuard for Mac）一起安装，则该扩展会自行承担 AdGuard 助手的功能 —— 一种帮助直接从网页管理过滤的工具。 同时，广告拦截本身完全在桌面应用程序的控制之下，扩展及其设置对此没有任何作用。
 
-The problem was, in some cases the app and the extension would hamper each other’s work. Some websites would stop being protected by the desktop program and were backed up only by the extension which has less possibilities. Thus, starting with AdGuard Browser Extension v3.5, the integration mode was removed. Instead, the new AdGuard Browser Assistant was implemented.
+问题是，在某些情况下，应用程序和扩展程序会彼此妨碍对方的工作。 一些网站将不再受到桌面程序的保护，并且仅由能力较小的扩展程序支持。 因此，从 AdGuard 浏览器扩展 v3.5 版本开始，整合模式被删除。 取而代之的是，新的 AdGuard 浏览器助手已开始使用。
 
-## AdGuard Browser Assistant
+## AdGuard 浏览器助手
 
-![AdGuard Browser Assistant *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/ad_blocker_browser_extension_assistant.png)
+![AdGuard 浏览器助手 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/ad_blocker_browser_extension_assistant.png)
 
-AdGuard Browser Assistant is a new browser extension that works and feels just like the integration mode but much lighter, without redundant functions, and doesn't interfere with the desktop apps. You can [read more about Browser Assistant for Windows](/adguard-for-windows/browser-assistant) or [Mac](/adguard-for-mac/browser-assistant), or [download it from our website](https://adguard.com/adguard-assistant/overview.html).
+AdGuard 浏览器助手是一个新的浏览器扩展，其工作方式和整合模式一样，但更轻，没有冗赘功能，并且不会干扰桌面应用程序。 您可以[阅读有关 Windows 浏览器助手 ](/adguard-for-windows/browser-assistant)或 [Mac 浏览器助手](/adguard-for-mac/browser-assistant)的更多信息，或 [从我们的网站](https://adguard.com/adguard-assistant/overview.html)下载它。
 
-AdGuard Browser Assistant is available in all major browsers.
+AdGuard 浏览器助手可在所有主流浏览器中下载。

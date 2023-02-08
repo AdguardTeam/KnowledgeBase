@@ -1,127 +1,127 @@
 ---
-title: How to activate
+title: 激活许可证的方式
 sidebar_position: 3
 ---
 
-## How to activate a license
+## 如何激活许可证
 
-To activate your license, go to the *License* section of your AdGuard product and find the *Log in* field or *Activate* button. Use the email and password of your AdGuard account to log in. If you don't have an account yet, you will be offered to create one.
+要激活许可证，请打开 AdGuard 软件的「*许可证*」部分，前往「*登录*」或「*激活*」按钮。 使用您的 AdGuard 账号的电子邮件和密码登录。 如果您还没有一个账号，您将被提示创建一个。
 
-> Note: To activate a license via AdGuard account, you need to have a valid license with at least one open slot there. If your license is already used on a maximum number of devices, you can [upgrade it](#how-to-upgrade-a-license) or [transfer it from one device to another](#how-to-transfer-a-license-to-another-device).
+> 注意：要用 AdGuard 账号激活许可证，您需要一个许可证中至少还有一个可连接的设备。 如果您的许可证可连接的设备数量已达上限，您可以[升级](#how-to-upgrade-a-license) ，或者[将许可证从一个设备转移到另一个](#how-to-transfer-a-license-to-another-device)。
 
-Alternatively, you can use a [license key](../what-is#license-key) to activate the license.
+您还可以使用[许可证密钥](../what-is#license-key)激活许可证。
 
-**Below you can check step-by-step activation instructions for each platform.**
+**您可以在下方查看每个操作系统的激活说明。**
 
-### Activating AdGuard for Windows
+### 在 Windows 版的 AdGuard 激活许可证
 
-1. Open the AdGuard app
+1. 开启 AdGuard 软件
 
-To do it, double-click on the AdGuard icon on the desktop:
+请鼠标双击桌面上的 AdGuard 图标：
 
-![AdGuard icon on the desktop](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowsEn.png)
+![桌面上的 AdGuard 图标](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowsEn.png)
 
-or double-click on the AdGuard icon in the system tray:
+或也可以在通知栏双击 AdGuard 图标：
 
-![AdGuard icon in the system tray](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windows2En.png)
+![系统托盘中的 AdGuard 图标](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windows2En.png)
 
-2. Go to **License** tab in the app menu and click **Activate license**
+2. 在应用程序菜单中进入「**许可证**」标签，并点击「**激活许可证**」
 
-![Click Activate license](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowslicense1en.png)
+![单击「激活许可证」](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowslicense1en.png)
 
-3. You will be presented with two options for activation:
+3. 您将会看到两个激活方式：
 
-- Via entering **email** and **password** from your **AdGuard account** (or from your Facebook, Google or Apple account)
+- 输入您的 **AdGuard 账号** （或 Facebook、Google 或 Apple 账户）的**电子邮件**和**密码**。
 
-![Log in to your AdGuard account](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowslicense2en.png)
+![登录您的 AdGuard 账号](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowslicense2en.png)
 
-- Via entering a **license key**
+- 输入**许可证密钥**
 
-![Enter license key](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowslicense3en.png)
+![输入许可证密钥](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowslicense3en.png)
 
-### Activating AdGuard for Mac
+### 在 Mac 版的 AdGuard 激活许可证
 
-1. Open the AdGuard app (click the AdGuard icon in the menu bar)
+1. 打开 AdGuard 应用程序（在菜单栏点击 AdGuard 图标）
 
-![AdGuard icon in the menu bar](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ja/General/mac1.png)
+![菜单栏中的 AdGuard 图标](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ja/General/mac1.png)
 
-2. Click the **gear icon** in the top right corner
-3. Click **License...**
+2. 在右上角点击**齿轮图标**
+3. 点击**许可...**
 
-![Go to Settings and License](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/macEn.png)
+![转到设置和许可证](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/macEn.png)
 
-4. In the opened window press **Activate** button
+4. 在弹出的窗口中按「**激活**」按钮
 
-![Press Activate](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/maclicenseen1.png)
+![按激活](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/maclicenseen1.png)
 
-5. You will be presented with two options for activation:
-- Via entering **email** and **password** from your **AdGuard  account** (or from your Facebook, Google or Apple account)
+5. 您将会看到两个激活方式：
+- 输入您的 **AdGuard 账号** （或 Facebook、Google 或 Apple 账户）的**电子邮件**和**密码**。
 
-![Log in to your AdGuard account to activate](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/maclicenseen2.png)
+![登录您的 AdGuard 账号激活许可证](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/maclicenseen2.png)
 
-- Via entering a **license key**
+- 输入**许可证密钥**
 
-![Enter your license key to activate](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/maclicenseen3.png)
+![输入您的许可证密钥激活](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/maclicenseen3.png)
 
-### Activating AdGuard for Android
+### 在 Android 版的 AdGuard 激活许可证
 
-1. Open the AdGuard app
-2. Tap **menu icon (☰)** in the top left corner of the screen
-3. Tap **Get Premium** bar (or tap **License Status**)
+1. 开启 AdGuard 软件
+2. 在屏幕上的左上角点击**菜单图标 (☰)**
+3. 点击「**获取高级版**」（或点击「**许可证状态**」）
 
-![Tap Get Premium or License Status *mobile](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidlicense1en.png)
+![点选「获得高级版本」或「许可证状态」 *mobile](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidlicense1en.png)
 
-4. Tap **three-dot menu (⋮)** in the top right corner of the screen
+4. 请点击屏幕右上角的 **三点式菜单 (⋮)**
 
-![Tap three-dot menu *mobile](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/android2En.png)
+![点击三点菜单 *mobile](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/android2En.png)
 
-5. Press **Activate Premium**, and you will be presented with two activation options:
+5. 按「**激活高级版本**」后，您有几种激活方式：
 
-- Via entering **email** and **password** from your **AdGuard account** (or from your Facebook or Google account)
+- 输入您的 **AdGuard 账号** （或 Facebook、Google 账户）的**电子邮件**和**密码**
 
-![Log in to activate *mobile](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidlicense2en.png)
+![登录以激活 *mobile](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidlicense2en.png)
 
-- Via entering a **license key**
+- 输入**许可证密钥**
 
-![Enter your license key to activate *mobile](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidlicense3en.png)
+![输入您的许可证密钥以激活 *mobile](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidlicense3en.png)
 
-### Activating AdGuard for iOS
+### 在 iOS 版的 AdGuard 激活许可证
 
-1. Open the AdGuard app and tap the **gear icon** in the bottom right corner of the screen
+1. 打开 AdGuard 应用程序，点击屏幕右上角的**齿轮图标**
 
-2. Tap **License**
+2. 点击**许可证**。
 
-3. Tap **Log in** in the top right corner of the screen
+3. 然后点击屏幕右上角的**登录**
 
-![Tap Log in in the top right corner of Premium screen](https://cdn.adguard.com/content/kb/ad_blocker/iOS/ioslicense1en.png)
+![在高级屏幕右上角点击「登录」](https://cdn.adguard.com/content/kb/ad_blocker/iOS/ioslicense1en.png)
 
-4. Enter **email** and **password** from your **AdGuard account**
+4. 输入您的 **AdGuard 账号**的**电子邮件** 和 **密码**
 
-![Log in](https://cdn.adguard.com/content/kb/ad_blocker/iOS/ioslicense2en.png)
+![登录](https://cdn.adguard.com/content/kb/ad_blocker/iOS/ioslicense2en.png)
 
-## How to transfer a license to another device
+## 如何将许可证转移到另一台设备
 
-The license key can be activated on a [limited number of devices](../what-is#devices). If the key has already been used on the maximum allowed number of devices, you need to unbind a device from your account. You can do that in three ways:
-* by clicking the *Reset license* button (applies to desktop apps),
-* by logging out of your account in an AdGuard product,
-* by clicking the cross icon next to a device in your AdGuard account.
+许可证密钥可以在[有限数量的设备上激活](../what-is#devices)。 如果许可证密钥已经在最大数量的设备上被使用，您需要通过您的账号解除设备绑定。 您可以通过三种方式做到这一点：
+* 点击「*重置许可*」按钮（桌面应用程序），
+* 在 AdGuard 软件里退出账号，
+* 在 AdGuard 账号里点击设备旁边的十字图标。
 
-After you have unbound the number of devices you need, you can log in to your AdGuard account on new devices. The license will be bound to them.
+在您解绑所需要的设备数量后，您可以在新设备上登录 AdGuard 账号。 该许可证就会绑定到新设备。
 
-## How to upgrade a license
+## 升级许可证的方式
 
-To make it more convenient to use your AdGuard products, you can upgrade your license.
+为了更方便地使用 AdGuard 软件，您可以升级您的许可证。
 
-1. To increase the functionality of your AdGuard products, you can **upgrade your free or trial license to the full version**.
-2. To extend the number of devices, you can **upgrade your AdGuard Ad Blocker Personal license to Family**.
-3. You can also **upgrade your subscription to a Lifetime license**.
+1. 要增加 AdGuard 软件的功能，您可以**将免费或试用期的许可证升级到完整版**。
+2. 要扩展设备数量，您可以**将 AdGuard 广告拦截程序的个人许可证升级到家庭**。
+3. 您也可以 **，将许可证升级为终生许可**。
 
-You can upgrade your license by:
-* purchasing another license on the official websites of AdGuard products,
-* clicking the *Upgrade* button in your AdGuard account.
+您可以通过以下方式升级许可证：
+* 在 AdGuard 软件的官网上购买另一个许可证，
+* 在 AdGuard 账号中点击「*升级*」按钮。
 
-## How to cancel a subscription
+## 取消订阅的方式
 
-The subscription can be canceled in your AdGuard account. To cancel your subscription, click the card or the cross icon next to it and select *Unsubscribe*. The canceled subscription will be valid until its expiry date.
+用户可以在 AdGuard账 账号中取消订阅。 要取消订阅，请点击卡片或旁边的十字图标，选择「*取消订阅*」。 被取消的订阅将在其到期日之前有效。
 
-> Subscriptions purchased on the App Store can be managed in the App Store account or in the device's settings.
+> 在 App Store 购买的订阅可以在 App Store 账户或设备的设置中进行管理。

@@ -1,170 +1,170 @@
 ---
-title: How to collect a HAR file
+title: 收集 HAR 文件的方式
 sidebar_position: 1
 ---
 
-## Creating a HAR File {#har}
+## 创建 HAR 文件 {#har}
 
-HAR files help our technical support teams troubleshoot complex issues. To create these files, we recommend using Chrome or Firefox. However, IE 11, Edge, and Safari also provide `.har` file generation and export capability.
+HAR 文件可帮助我们的技术支持团队解决复杂的问题。 为了创建这种文件，我们建议使用 Chrome 或火狐浏览器。 不过， IE 11、Edge 和 Safari 也支持 `.har` 文件的生成和导出功能。
 
-## Chrome {#chrome}
+## Chrome 浏览器 {#chrome}
 
-To create a HAR file in Chrome:
+如要在 Chrome 中创建 HAR 文件请执行以下操作：
 
-1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
+1. 前往出现问题的 URL。 暂时不要重复导致问题的操作。
 
-2. Open ***Developer Tools***:
+2. 打开***开发者工具***：
 
-- From menu: ***Menu > More Tools > Developer Tools***.
-- Keyboard: ***Ctrl+Shift+C***, or ***Ctrl+Alt+I***, or ***⌥+⌘+I for Mac***.
+- 从菜单中找到：***「菜单」>「更多工具」>「开发者工具」***。
+- 键盘：***Ctrl + Shift + C***，或 ***Ctrl + Alt + I***，或***⌥+⌘+ I（使用于 Mac）***。
 
-3. Click on the ***Network tab***.
+3. 单击 ***「Network」（网络）标签***。
 
-4. Locate the round button at the top left of the Network tab and confirm it is in red recording mode. If it's grey, click to turn red to start recording.
+4. 找到 Network 标签中的左上角的圆形按钮，并确认它处于红色录音模式。 如果是灰色的，请您单击使其变为红色的，并开始录音。
 
-5. Use the ***clear*** button (the circle button with a line through it next to the record button) to clear all previous activity.
+5. 使用「***clear***」（清除）按钮（记录按钮旁边带有一条线的圆圈按钮）以清除所有之前的活动。
 
-6. Select the ***Preserve log*** check box on the Network tab.
+6. 选择 Network 标签中的「***Preserve log***」（保留日志）复选框。
 
-7. Check the ***Disable cache*** check box.
+7. 勾选「***Disable cache***」（禁用缓存）复选框。
 
-![chrome](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/chrome.png)
+![chrome 浏览器](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/chrome.png)
 
-8. Reproduce the steps that create the issue.
+8. 重复导致问题的步骤。
 
-9. Save session as a .har file by right clicking on the grid and selecting ***Save as HAR with content***.
+9. 通过右键单击网格并选择「***Save as HAR with content***」（另存为带内容的 HAR），将内容另存为 .har 文件。
 
-10. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+10. 发送至 AdGuard 支持团队（support@adguard.com），并详细描述问题。 屏幕截图也会有所帮助。
 
-## Edge {#edge}
+## Edge 浏览器 {#edge}
 
-1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
+1. 前往出现问题的 URL。 暂时不要重复导致问题的操作。
 
-2. Open ***Developer Tools***:
+2. 打开 ***Developer Tools***（开发者工具）：
 
-- From menu: ***Menu > More Tools > Developer Tools***.
-- Keyboard: ***Ctrl+Shift+C***, or ***Ctrl+Alt+I***, or ***⌥+⌘+I for Mac***.
+- 从菜单中找到：***「菜单」>「更多工具」>「开发者工具」***。
+- 键盘：***Ctrl + Shift + C***，或 ***Ctrl + Alt + I***，或***⌥+⌘+ I（使用于 Mac）***。
 
-3. Click on the ***Network tab***.
+3. 单击 ***「Network」（网络）标签***。
 
-4. Locate the round button at the top left of the Network tab and confirm it is in red recording mode. If it's grey, click to turn red to start recording.
+4. 找到 Network 标签中的左上角的圆形按钮，并确认它处于红色录音模式。 如果是灰色的，请您单击使其变为红色的，并开始录音。
 
-5. Use the ***clear*** button (the circle button with a line through it next to the record button) to clear all previous activity.
+5. 使用「***clear***」（清除）按钮（记录按钮旁边带有一条线的圆圈按钮）以清除所有之前的活动。
 
-6. Select the ***Preserve log*** check box on the Network tab.
+6. 选择 Network 标签中的「***Preserve log***」（保留日志）复选框。
 
-7. Check the ***Disable cache*** check box.
+7. 勾选「***Disable cache***」（禁用缓存）复选框。
 
-![edge](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/edge.png)
+![edge 浏览器](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/edge.png)
 
-8. Reproduce the steps that create the issue.
+8. 重复导致问题的步骤。
 
-9. Save session as a .har file by right clicking on the grid and selecting ***Save as HAR with content***.
+9. 通过右键单击网格并选择「***Save as HAR with content***」（另存为带内容的 HAR），将内容另存为 .har 文件。
 
-10. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+10. 发送至 AdGuard 支持团队（support@adguard.com），并详细描述问题。 屏幕截图也会有所帮助。
 
-## Firefox {#firefox}
+## Firefox 浏览器 {#firefox}
 
-To create a HAR file in Firefox:
+如要在火狐浏览器中创建 HAR 文件请执行以下操作：
 
-1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
+1. 前往出现问题的 URL。 暂时不要重复导致问题的操作。
 
-2. Open Developer Tools in ***Network*** mode:
-- From menu: ***Menu > Web Developer > Network***.
-- Keyboard: ***Ctrl+Shift+C***, or **⌥+⌘+E (Mac)**.
+2. 在「***Network***」（网络）模式下打开开发者工具：
+- 从菜单中找到：***「菜单」>「Web 开发者」>「网络」***。
+- 键盘：***Ctrl + Shift + C*** 或 **⌥+⌘+ E（使用于 Mac）**。
 
-3. Note the ***play/pause*** button at the top left of the Network tab.
-- Button should be in play mode.
+3. 注意：网络标签左上方的***继续/暂停***按钮。
+- 按钮应处于继续记录模式。
 
-4. If any information is currently displayed in the grid, clear by clicking the ***delete trash can*** button next to the play/pause button.
+4. 如果当前在网格中显示任何信息，请单击继续/暂停按钮旁边的***删除垃圾箱***按钮进行清除。
 
-5. Select the ***Persist Logs*** check box on the Network tab.
+5. 选中网络标签上的「***Persist Logs***」（继续记录）复选框。
 
-6. Check the ***Disable cache*** check box.
+6. 勾选「***Disable cache***」（禁用缓存）复选框。
 
-![firefox](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/firefox.png)
+![firefox 浏览器](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/firefox.png)
 
-7. Reproduce the steps that create the issue.
+7. 重复导致问题的步骤。
 
-8. Save session as a .har file by right clicking on the grid and selecting ***Save all as HAR***.
+8. 通过右键单击网格并选择「***Save as HAR***」（另存为 HAR），将内容另存为 .har 文件。
 
-9. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+9. 发送至 AdGuard 支持团队（support@adguard.com），并详细描述问题。 屏幕截图也会有所帮助。
 
-## Internet Explorer 11 {#ie11}
+## Internet Explorer11 浏览器 {#ie11}
 
-To create a HAR file in Internet Explorer 11:
+要在 Internet Explorer 11 中创建 HAR 文件：
 
-1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
+1. 前往出现问题的 URL。 暂时不要重复导致问题的操作。
 
-2. Open Developer Tools in ***Network*** mode:
-- From Tools cog wheel menu: ***Developer Tools*** > ***Network tab***.
-- Keyboard: ***F12 > Network*** tab
+2. 在「***Network***」（网络）模式下打开开发者工具：
+- 从工具齿轮菜单中找到：***「开发者工具」***>***「网络」标签***。
+- 键盘：***F12 > 「网络」***标签
 
-3. Note the start profiling session ***Play*** button and stop profiling ***Stop*** button at top left of Network tab.
-- Play button will be gray when recording and Stop button will be red. Put in ***Play*** mode.
+3. 请注意网络标签左上方的开始分析会话「***Play***」（继续）按钮和停止分析的「***Stop***」（停止）按钮。
+- 录音时继续按钮将变为灰色，停止按钮为红色。 置于「*** Play***」（继续）模式。
 
-4. Clear any session info appearing in the lower grid using the ***Clear session*** button on Network tab. Hover over icons to see names.
-- ***Clear session*** button is a three line icon with an x on it.
+4. 使用网络标签上的「***Clear session***」（清除会话）按钮以清除显示在下部网格中的所有会话信息。 将鼠标悬停在图标上可以查看名称。
+- 「***Clear session*** 」（清除会话）按钮是一个三行图标，上面带有一个「X」。
 
-5. Check the ***Disable cache*** check box.
+5. 勾选「***Disable cache***」（禁用缓存）复选框。
 
-6. Reproduce the steps that create the issue.
+6. 重复导致问题的步骤。
 
-7. Save session as a .har file by clicking on the ***Save disk*** button (Export as HAR) on Network tab.
+7. 单击网络标签上的「***Save disk***」（保存磁盘） 按钮（导出为 HAR）将会话内容另存为 .har 文件。
 
-8. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+8. 发送至 AdGuard 支持团队（support@adguard.com），并详细描述问题。 屏幕截图也会有所帮助。
 
-## Safari {#safari}
+## Safari 浏览器 {#safari}
 
-To create a HAR file in Safari:
+如要在 Safari 中创建 HAR 文件请执行以下操作：
 
-1. Check the Safari menu bar at the top of the screen for a ***Develop*** menu. Check the checkbox at the bottom next to ***Show Develop menu in menu bar***.
-- If not visible, turn it on by going to ***Safari > Preferences > Advanced***.
+1. 查看屏幕顶部的 Safari 菜单栏是否有「***Develop***」（开发）菜单。 选菜单栏中的「***Show Develop menu in menu bar***」（显示开发菜单）和底部的复选框。
+- 如果没有，请转到 ***Safari >「Preferences 」（首选项）>「Advanced」（高级）***将其启用。
 
-2. Go to the URL where the issue occurs. Do not reproduce the issue yet.
+2. 前往出现问题的 URL。 暂时不要重复导致问题的操作。
 
-3. Open ***Network*** tab in Web Inspector:
-- From menu: ***Develop > Show Web Inspector > Network***.
-- Keyboard: ***⌥+⌘+I > Network***
+3. 在 Web Inspector（Web 检查器）中打开「***Network***」（网络）标签：
+- 从菜单中找到：***「开发」>「显示 Web 检查器」>「网络」***。
+- 键盘：***⌥+⌘+ I > 网络***
 
-4. Check ***Preserve Log*** checkbox on right side of the Network tabs.
+4. 选网络标签右侧的「***Preserve Log***」（保留日志）复选框。
 
-5. Clear current Network items by clicking the ***delete Trash*** icon at the far right of Network tabs.
+5. 单击「Network」最右侧的「***delete Trash***」（删除垃圾箱）图标，清除当前的网络项目。
 
-6. Check the ***Disable cache*** check box.
+6. 勾选「***Disable cache***」（禁用缓存）复选框。
 
-7. Reproduce the steps that create the issue.
+7. 重复导致问题的步骤。
 
-8. Save session as a .har file by clicking the ***Export*** icon next to ***Preserve Log***.
+8. 单击「***Preserve Log***」旁边的「***Export***」（导出）图标，将会话内容另存为 .har 文件。
 
-9. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, too.
+9. 发送至 AdGuard 支持团队（support@adguard.com），并详细描述问题。 屏幕截图也会有所帮助。
 
 ## 安卓系统 {#android}
 
 要获取 HAR 文件，请执行以下步骤：
 
-1. Open AdGuard and go to ***Settings***.
+1. 打开 AdGuard 并转到「***设置***」
 
-2. Choose ***Advanced*** in the menu.
+2. 在菜单中选择「***高级***」
 
-3. Choose ***Low Level Settings***
+3. 选择「***低级设置***」
 
-4. Activate `pref.har.capture` (you will have to restart the protection).
+4. 激活 `pref.har.capture`（您必须重新启动保护）
 
-5. Now reproduce the problem — open the app, perform the necessary actions to make the ad appear.
+5. 重试导致问题的操作：打开应用程序，执行必要的操作以使广告出现。
 
-6. Now turn `pref.har.capture` off again.
+6. 现在再次关闭 `pref.har.capture`。
 
-7. Go Back, then tap on ***Export logs and system info*** → ***Save***.
+7. 返回，然后点击「***导出日志和系统信息***」→「***保存***」。
 
-## Windows {#windows}
+## Windows 系统 {#windows}
 
-1. Open ***Settings*** → ***General settings*** → ***Advanced settings** and scroll down.
+1. 打开「***设置***」→「***一般设置***」→ 「**高级设置**」并向下滚动。
 
-2. Check the ***Enable HAR writing*** box.
+2. 勾选「***Enable HAR writing***」（启用 HAR 写入）复选框。
 
-3. Reproduce the problem.
+3. 重复导致问题的步骤。
 
-4. Go to ***General settings*** → Click on ***Export logs*** → ***Save***.
+4. 前往「***General settings***」（常规设置）→ 点击「***Export logs***」（导出日志）→「***Save***」（保存）。
 
-5. Disable HAR writing by unchecking the corresponding box.
+5. 通过取消勾选相应的方框禁止 HAR 写入。
