@@ -1,69 +1,69 @@
 ---
-title: How to install
+title: 安装方式
 sidebar_position: 2
 ---
 
-## How to install AdGuard Browser extension for Google Chrome or Chromium browsers
+## 如何为 Google Chrome 浏览器或使用 Chromium 内核的浏览器安装 AdGuard 浏览器扩展
 
-Open the extension's page in [Chrome Web Store](https://agrd.io/extension_chrome) and click _Add to Chrome_.
+在 [Chrome Web Store](https://agrd.io/extension_chrome) 中打开本扩展的页面然后点击「_添加至 Chrome_」（Add to Chrome）。
 
-![AdGuard Browser extension in Chrome Web Store *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_chrome.png)
+![Chrome Web Store 中的 AdGuard 浏览器扩展 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_chrome.png)
 
-In the opened dialog box, click _Add extension_.
+在打开的对话框中，点击「_添加此扩展_」（Add extension）。
 
-![Dialog box in Chrome Web Store *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_chrome1.png)
+![Chrome Web Store 中的对话框 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_chrome1.png)
 
-## How to install AdGuard Browser extension for Opera
+## 如何为 Opera 浏览器安装 AdGuard 浏览器扩展
 
-Open the page [addons.opera.com](https://agrd.io/extension_opera).
+打开 [addons.opera.com](https://agrd.io/extension_opera) 页面。
 
-![AdGuard Browser extension in Opera addons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_opera.png)
+![Opera 插件商店中的 AdGuard 浏览器扩展 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_opera.png)
 
-Click _Add to Opera_.
+点击「_添加至 Opera_」（Add to Opera）。
 
-## How to install AdGuard Browser extension for Firefox
+## 如何为 Firefox 浏览器安装 AdGuard 浏览器扩展
 
-Open the page [addons.mozilla.org](https://agrd.io/extension_firefox).
+打开 [addons.mozilla.org](https://agrd.io/extension_firefox) 网页。
 
-![AdGuard Browser extension in Firefox add-ons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_firefox.png)
+![Firefox 附加组件中的 AdGuard 浏览器扩展 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_firefox.png)
 
-Click _Add to Firefox_.
+点击「_添加至 Firefox_」（Add to Firefox）。
 
-## How to install AdGuard Browser extension for Yandex Browser
+## 如何为 Yandex 浏览器安装 AdGuard 浏览器扩展
 
-Click the browser settings button in the upper right corner of the browser, then choose _Add-ons_ in the drop-down menu.
+点击浏览器右上角浏览器设置按钮，然后在下拉菜单中选择「_扩展_」（Add-ons）。
 
-Scroll down to find AdGuard, then click _Install_.
+向下滚动找到 AdGuard，然后点击「_安装_」（Install）。
 
-![AdGuard Browser extension in Yandex Add-ons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_yandex.png)
+![Yandex 附加组件中的 AdGuard 浏览器扩展 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_yandex.png)
 
-## How to install AdGuard Browser extension for Microsoft Edge
+## 如何为 Microsoft Edge 安装 AdGuard 浏览器扩展
 
-Find AdGuard Browser extension in the [Edge Add-ons store](https://agrd.io/extension_edge) and click _Get_.
+在 [Edge 浏览器插件商店](https://agrd.io/extension_edge)中找到 AdGuard 浏览器扩展，然后点击「_获取_」（Get）。
 
-![AdGuard Browser extension in Edge Add-ons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_edge.png)
+![Edge 插件中的 AdGuard 浏览器扩展 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_edge.png)
 
-In the opened dialog window, press _Add extension_.
+在打开的对话框中，按下「_添加扩展_」（Add extension）。
 
-![Edge dialog window *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_edge1.png)
+![Edge 对话框窗口 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_edge1.png)
 
-Alternatively, you can install AdGuard Browser extension for Edge from the [Chrome Web Store](https://agrd.io/extension_chrome). Open its web page in your Edge browser and select *Allow extensions from other stores* on the banner at the top of the page.
+或者，您可以从 [Chrome 网上应用店](https://agrd.io/extension_chrome)安装适用于 Edge 的 AdGuard 浏览器扩展。 在 Edge 浏览器中打开 Chrome 的网页，在页面顶部的横幅上选择「*允许来自其他应用商店的扩展程序*」（Allow extensions from other stores）。
 
-![Edge banner on the Chrome Web Store *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/edge_banner.jpg)
+![在 Chrome Web Store 上的 Edge 横幅 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/edge_banner.jpg)
 
-In the opened dialog box, click *Allow*.
+在弹出的对话框中，点击「*允许*」（Allow）。
 
-![Edge dialog box "Allow extensions from other web stores"](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/allow_from_stores.jpg)
+![Edge 对话框"允许来自其他应用商店的扩展程序"](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/allow_from_stores.jpg)
 
-Click *Add to Chrome*.
+点击「*添加到 Chrome*」（Add to Chrome）。
 
-![Add to Chrome button *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/add_to_chrome.jpg)
+![添加到 Chrome 按钮 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/add_to_chrome.jpg)
 
-In the opened dialog window, click *Add extension* to install AdGuard Browser extension.
+在打开的对话窗口中，点击「*添加扩展*」（Add extension）安装 AdGuard 浏览器扩展。
 
-![Add to Edge button](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/add_to_edge.jpg)
+![添加到 Edge 按钮](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/add_to_edge.jpg)
 
 
-## How to install AdGuard Browser extension for Safari
+## 如何为 Safari 浏览器安装 AdGuard 浏览器扩展
 
-AdGuard for Safari is not a browser extension in a common sense. You can read more about it in a [dedicated artile](/adguard-for-safari/overview). Or you can [download the installation file](https://agrd.io/safari_release) directly from this page.
+适用于 Safari 的 AdGuard 不是一般意义上的浏览器扩展。 您可以在[知识库](/adguard-for-safari/overview)中阅读更多相关信息， 或者您可以直接从本网页[下载安装文件](https://agrd.io/safari_release)。

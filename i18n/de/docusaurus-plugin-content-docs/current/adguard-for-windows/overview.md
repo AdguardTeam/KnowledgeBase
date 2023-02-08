@@ -158,7 +158,7 @@ There are other useful AdGuard options that shouldn't go unnoticed in this artic
 
 By clicking the Support tab you will open a dialog box through which you can report a bug, submit a feature request, or simply share your opinion of the product.
 
-### License
+### Lizenz
 
 ![License *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
 
@@ -166,7 +166,7 @@ This tab contains information about your license. Here you can:
 * find out the license type (nightly build, beta or release), the number of devices available for simultaneous connection to AdGuard, the license expiration date;
 * click the button to go to the license purchase page, and activate, reset or recover a license.
 
-### About
+### Über uns
 
 ![About *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
 

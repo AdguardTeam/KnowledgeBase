@@ -1,127 +1,127 @@
 ---
-title: How to activate
+title: So aktivieren Sie AdGuard
 sidebar_position: 3
 ---
 
-## How to activate a license
+## Wie man eine Lizenz aktiviert
 
-To activate your license, go to the *License* section of your AdGuard product and find the *Log in* field or *Activate* button. Use the email and password of your AdGuard account to log in. If you don't have an account yet, you will be offered to create one.
+Um Ihre Lizenz zu aktivieren, gehen Sie zum Abschnitt *Lizenz* Ihres AdGuard-Produkts und suchen Sie das Feld *Anmelden* oder die Schaltfläche *Aktivieren* . Verwenden Sie die E-Mail und das Passwort Ihres AdGuard-Kontos, um sich anzumelden. Wenn Sie noch kein Konto haben, wird Ihnen angeboten, eines zu erstellen.
 
-> Note: To activate a license via AdGuard account, you need to have a valid license with at least one open slot there. If your license is already used on a maximum number of devices, you can [upgrade it](#how-to-upgrade-a-license) or [transfer it from one device to another](#how-to-transfer-a-license-to-another-device).
+> Hinweis: Um eine Lizenz über das AdGuard-Konto zu aktivieren, müssen Sie über eine gültige Lizenz mit mindestens einem offenen Slot verfügen. Wenn Ihre Lizenz bereits auf einer maximalen Anzahl von Geräten verwendet wird, können Sie sie [aktualisieren](#how-to-upgrade-a-license) oder [von einem Gerät auf ein anderes übertragen](#how-to-transfer-a-license-to-another-device).
 
-Alternatively, you can use a [license key](../what-is#license-key) to activate the license.
+Alternativ können Sie auch einen [Lizenzschlüssel](../what-is#license-key) verwenden, um die Lizenz zu aktivieren.
 
-**Below you can check step-by-step activation instructions for each platform.**
+**Nachstehend finden Sie eine schrittweise Anleitung zur Aktivierung für jede Plattform.**
 
-### Activating AdGuard for Windows
+### Aktivieren von AdGuard für Windows
 
-1. Open the AdGuard app
+1. Öffnen Sie die AdGuard-App
 
-To do it, double-click on the AdGuard icon on the desktop:
+Doppelklicken Sie dazu auf das AdGuard-Symbol auf dem Desktop:
 
-![AdGuard icon on the desktop](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowsEn.png)
+![AdGuard-Symbol auf dem Desktop](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowsEn.png)
 
-or double-click on the AdGuard icon in the system tray:
+oder doppelklicken Sie auf das AdGuard-Symbol in der Taskleiste:
 
-![AdGuard icon in the system tray](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windows2En.png)
+![AdGuard-Symbol in der Taskleiste](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windows2En.png)
 
-2. Go to **License** tab in the app menu and click **Activate license**
+2. Gehen Sie im Menü der App auf die Registerkarte **Lizenz** und klicken Sie auf **Lizenz aktivieren**
 
-![Click Activate license](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowslicense1en.png)
+![Auf „Lizenz aktivieren“ klicken](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowslicense1en.png)
 
-3. You will be presented with two options for activation:
+3. Es werden Ihnen zwei Optionen zum Aktivieren angeboten:
 
-- Via entering **email** and **password** from your **AdGuard account** (or from your Facebook, Google or Apple account)
+- Durch Eingabe von **E-Mail** und **Passwort** von Ihrem **AdGuard-Konto** (oder von Ihrem Facebook-, Google- oder Apple-Konto)
 
-![Log in to your AdGuard account](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowslicense2en.png)
+![Beim AdGuard-Konto anmelden](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowslicense2en.png)
 
-- Via entering a **license key**
+- Über die Eingabe eines **Lizenzschlüssels**
 
-![Enter license key](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowslicense3en.png)
+![Lizenzschlüssel eingeben](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/windowslicense3en.png)
 
-### Activating AdGuard for Mac
+### Aktivieren von AdGuard für Mac
 
-1. Open the AdGuard app (click the AdGuard icon in the menu bar)
+1. Öffnen Sie die AdGuard-App (klicken Sie auf das AdGuard-Symbol in der Menüleiste)
 
-![AdGuard icon in the menu bar](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ja/General/mac1.png)
+![AdGuard-Symbol in der Menüleiste](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ja/General/mac1.png)
 
-2. Click the **gear icon** in the top right corner
-3. Click **License...**
+2. Klicken Sie auf **das Zahnradsymbol** in der oberen rechten Ecke.
+3. Klicken Sie auf **Lizenz...**
 
-![Go to Settings and License](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/macEn.png)
+![Zu Einstellungen und Lizenz gehen](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/macEn.png)
 
-4. In the opened window press **Activate** button
+4. Drücken Sie im geöffneten Fenster die Schaltfläche **Aktivieren**
 
-![Press Activate](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/maclicenseen1.png)
+![„Aktivieren“ drücken](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/maclicenseen1.png)
 
-5. You will be presented with two options for activation:
-- Via entering **email** and **password** from your **AdGuard  account** (or from your Facebook, Google or Apple account)
+5. Es werden Ihnen zwei Optionen zun Aktivieren angeboten:
+- Durch Eingabe von **E-Mail** und **Passwort** von Ihrem **AdGuard-Konto** (oder von Ihrem Facebook-, Google- oder Apple-Konto)
 
-![Log in to your AdGuard account to activate](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/maclicenseen2.png)
+![Beim AdGuard-Konto anmelden](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/maclicenseen2.png)
 
-- Via entering a **license key**
+- Über die Eingabe eines **Lizenzschlüssels**
 
-![Enter your license key to activate](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/maclicenseen3.png)
+![Lizenzschlüssel zum Aktivieren eingeben](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/maclicenseen3.png)
 
-### Activating AdGuard for Android
+### Aktivieren von AdGuard für Android
 
-1. Open the AdGuard app
-2. Tap **menu icon (☰)** in the top left corner of the screen
-3. Tap **Get Premium** bar (or tap **License Status**)
+1. Öffnen Sie die AdGuard-App
+2. Tippen Sie auf das Menüsymbol **(☰)** in der oberen linken Ecke des Bildschirms.
+3. Tippen Sie auf die Leiste **Premium abrufen** (oder auf **Lizenzstatus**)
 
-![Tap Get Premium or License Status *mobile](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidlicense1en.png)
+![Auf „Premium- oder Lizenzstatus abrufen“ tippen *mobile](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidlicense1en.png)
 
-4. Tap **three-dot menu (⋮)** in the top right corner of the screen
+4. Tippen Sie auf **Drei-Punkte-Menü (⋮)** in der oberen rechten Ecke des Bildschirms
 
-![Tap three-dot menu *mobile](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/android2En.png)
+![Auf das Drei-Punkte-Menü tippen *mobile](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/android2En.png)
 
-5. Press **Activate Premium**, and you will be presented with two activation options:
+5. Drücken Sie **Premium-Version aktivieren**, und Sie erhalten zwei Aktivierungsoptionen:
 
-- Via entering **email** and **password** from your **AdGuard account** (or from your Facebook or Google account)
+- Durch Eingabe von **E-Mail** und **Passwort** von Ihrem **AdGuard-Konto** (oder von Ihrem Facebook- oder Google-Konto)
 
-![Log in to activate *mobile](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidlicense2en.png)
+![Anmelden, um zu aktivieren  *mobile](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidlicense2en.png)
 
-- Via entering a **license key**
+- Über die Eingabe eines **Lizenzschlüssels**
 
-![Enter your license key to activate *mobile](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidlicense3en.png)
+![Lizenzschlüssel zum Aktivieren eingeben *mobile](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/En/General/androidlicense3en.png)
 
-### Activating AdGuard for iOS
+### Aktivieren von AdGuard für iOS
 
-1. Open the AdGuard app and tap the **gear icon** in the bottom right corner of the screen
+1. Öffnen Sie die AdGuard-App und tippen Sie auf **das Zahnradsymbol** in der unteren rechten Ecke des Bildschirms
 
-2. Tap **License**
+2. Tippen Sie auf **Lizenz**
 
-3. Tap **Log in** in the top right corner of the screen
+3. Tippen Sie auf **Anmelden** in der oberen rechten Ecke des Bildschirms
 
-![Tap Log in in the top right corner of Premium screen](https://cdn.adguard.com/content/kb/ad_blocker/iOS/ioslicense1en.png)
+![Auf Anmelden in der oberen rechten Ecke des Premium-Bildschirms tippen](https://cdn.adguard.com/content/kb/ad_blocker/iOS/ioslicense1en.png)
 
-4. Enter **email** and **password** from your **AdGuard account**
+4. Geben Sie **E-Mail** und **Passwort** von Ihrem **AdGuard-Konto**
 
-![Log in](https://cdn.adguard.com/content/kb/ad_blocker/iOS/ioslicense2en.png)
+![Anmelden](https://cdn.adguard.com/content/kb/ad_blocker/iOS/ioslicense2en.png)
 
-## How to transfer a license to another device
+## Wie überträgt man eine Lizenz auf ein anderes Gerät
 
-The license key can be activated on a [limited number of devices](../what-is#devices). If the key has already been used on the maximum allowed number of devices, you need to unbind a device from your account. You can do that in three ways:
-* by clicking the *Reset license* button (applies to desktop apps),
-* by logging out of your account in an AdGuard product,
-* by clicking the cross icon next to a device in your AdGuard account.
+Der Lizenzschlüssel kann auf einer [begrenzten Anzahl von Geräten](../what-is#devices) aktiviert werden. Wenn der Schlüssel bereits auf der maximal zulässigen Anzahl von Geräten verwendet wurde, müssen Sie die Bindung eines Geräts an Ihr Konto aufheben. Dafür gibt es drei Möglichkeiten:
+* indem Sie auf die Schaltfläche *Lizenz zurücksetzen* klicken (gilt für Desktop-Anwendungen),
+* indem Sie sich von Ihrem Konto in einem AdGuard-Produkt abmelden,
+* indem Sie auf das Kreuzsymbol neben einem Gerät in Ihrem AdGuard-Konto klicken.
 
-After you have unbound the number of devices you need, you can log in to your AdGuard account on new devices. The license will be bound to them.
+Nachdem Sie die benötigte Anzahl von Geräten freigeschaltet haben, können Sie sich mit den neuen Geräten bei Ihrem AdGuard-Konto anmelden. Die Lizenz wird an sie gebunden sein.
 
-## How to upgrade a license
+## Wie man eine Lizenz aktualisiert
 
-To make it more convenient to use your AdGuard products, you can upgrade your license.
+Um die Nutzung Ihrer AdGuard-Produkte zu vereinfachen, können Sie Ihre Lizenz aktualisieren.
 
-1. To increase the functionality of your AdGuard products, you can **upgrade your free or trial license to the full version**.
-2. To extend the number of devices, you can **upgrade your AdGuard Ad Blocker Personal license to Family**.
-3. You can also **upgrade your subscription to a Lifetime license**.
+1. Um den Funktionsumfang Ihrer AdGuard-Produkte zu erweitern, können Sie **Ihre kostenlose oder Testlizenz auf die Vollversion** erweitern.
+2. Um die Anzahl der Geräte zu erweitern, können Sie **Ihre AdGuard Werbeblocker-Enzellizenz auf Familienlizenz** erweitern.
+3. Sie können auch **Ihre Lizenz auf eine lebenslange erweitern**.
 
-You can upgrade your license by:
-* purchasing another license on the official websites of AdGuard products,
-* clicking the *Upgrade* button in your AdGuard account.
+Sie können Ihre Lizenz auch aktualisieren, indem Sie:
+* eine weitere Lizenz auf den offiziellen Websites der AdGuard-Produkte erwerben,
+* auf die Schaltfläche *Erweitern* in Ihrem AdGuard-Konto klicken.
 
-## How to cancel a subscription
+## Wie man ein Abonnement kündigt
 
-The subscription can be canceled in your AdGuard account. To cancel your subscription, click the card or the cross icon next to it and select *Unsubscribe*. The canceled subscription will be valid until its expiry date.
+Das Abonnement kann in Ihrem AdGuard-Konto gekündigt werden. Um Ihr Abonnement zu kündigen, klicken Sie auf die Karte oder das Kreuzsymbol daneben und wählen Sie *Abo kündigen*. Das gekündigte Abonnement bleibt bis zu seinem Ablaufdatum gültig.
 
-> Subscriptions purchased on the App Store can be managed in the App Store account or in the device's settings.
+> Im App Store gekaufte Abonnements können im App Store-Konto oder in den Einstellungen des Geräts verwaltet werden.

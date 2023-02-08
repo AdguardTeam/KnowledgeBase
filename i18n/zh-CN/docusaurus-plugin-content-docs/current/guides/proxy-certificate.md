@@ -13,7 +13,7 @@ sidebar_position: 2
 
 Depending on the operation system of your device (Windows/Mac/Android/iOS), follow one of these instructions:
 
-### Windows {#windows}
+### Windows 系统 {#windows}
 
 1. 记下装有 AdGuard 的台式计算机的 IP 地址。
 

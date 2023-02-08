@@ -1,5 +1,5 @@
 ---
-title: Problems caused by multiple user profiles
+title: Birden çok kullanıcı profilinden kaynaklanan sorunlar
 sidebar_position: 14
 ---
 

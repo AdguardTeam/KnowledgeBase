@@ -1,15 +1,15 @@
 ---
-title: Integration mode (legacy)
+title: Režim integrace (zastaralá verze)
 sidebar_position: 3
 ---
 
-## What is the integration mode?
+## Co je režim integrace?
 
-In older versions of AdGuard Browser extension, if you had it installed along with one of the AdGuard desktop apps (AdGuard for Windows or AdGuard for Mac), the extension took upon itself the functions of AdGuard Assistant — a tool that helped manage the filtering right from the web page. At the same time, the ad blocking itself was completely under of the desktop app's control, the extension and its settings played no role in that.
+Ve starších verzích Rozšíření prohlížeče AdGuard, pokud jste je měli nainstalované spolu s jednou z aplikací AdGuard pro PC (AdGuard pro Windows nebo AdGuard pro macOS), převzalo rozšíření funkce asistenta AdGuard. — nástroj, který pomohl spravovat filtrování přímo z webových stránek. Samotné blokování reklam přitom bylo zcela pod kontrolou desktopové aplikace. Rozšíření a jeho nastavení v tom nehrálo žádnou roli.
 
-The problem was, in some cases the app and the extension would hamper each other’s work. Some websites would stop being protected by the desktop program and were backed up only by the extension which has less possibilities. Thus, starting with AdGuard Browser Extension v3.5, the integration mode was removed. Instead, the new AdGuard Browser Assistant was implemented.
+Problémem bylo, že v některých případech si aplikace a rozšíření vzájemně překážely v práci. Některé webové stránky přestaly být chráněny desktopovým programem a byly podpořeny pouze rozšířením, které má menší možnosti. Od verze Rozšíření prohlížeče AdGuard v3.5 byl tedy režim integrace odstraněn. Místo toho byl implementován nový AdGuard Asistent prohlížeče.
 
-## AdGuard Browser Assistant
+## AdGuard Asistent prohlížeče
 
 ![AdGuard Browser Assistant *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/ad_blocker_browser_extension_assistant.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Userscripts
+title: Benutzerskripte
 sidebar_position: 5
 ---
 
