@@ -122,7 +122,7 @@ For example, you are faced with a situation that your favorite website won’t o
 4. If turning off all the filters hasn't produced any results, apply rule **@@||example.com^$document,extension**; where **example.com** is an example site name that needs to be replaced by your own option;
 5. In case of failure (issue not solved), turn to section **Stealth Mode**.
 
-### **Stealth Mode**
+### **Režim utajení**
 
 1. Disable **Stealth Mode**;
 2. If this solved the problem, turn the module on and turn off the **Stealth Mode** options one by one. This is done to detect which filters are "breaking" the page;

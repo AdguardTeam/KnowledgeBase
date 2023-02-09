@@ -1,5 +1,5 @@
 ---
-title: Stealth Mode
+title: Režim utajení
 sidebar_position: 4
 ---
 

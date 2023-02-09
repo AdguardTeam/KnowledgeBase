@@ -1,23 +1,23 @@
 ---
-title: Features overview
+title: Přehled funkcí
 sidebar_position: 1
 ---
 
-AdGuard has two Android apps: [AdGuard for Android](https://adguard.com/adguard-android/overview.html) and [AdGuard Content Blocker](https://adguard.com/adguard-content-blocker/overview.html). AdGuard for Android has a much wider range of functionality: it blocks ads, trackers, and annoyances in browsers and apps, uses filters as well as domain-level ad blocking, and supports user rules. AdGuard Content Blocker is limited by its functionality.
+AdGuard má dvě aplikace pro Android: [AdGuard pro Android](https://adguard.com/adguard-android/overview.html) a [Blokátor obsahu AdGuard](https://adguard.com/adguard-content-blocker/overview.html). AdGuard pro Android má mnohem širší rozsah funkcí: blokuje reklamy, slídiče a obtěžující prvky v prohlížečích a aplikacích, používá filtry i blokování reklam na úrovni domény a podporuje uživatelská pravidla. Blokátor obsahu AdGuard je svými funkcemi omezen.
 
-Full-fledged ad blockers can’t be introduced to Google Play due to the policy of the store. Google Play [has banned](https://adguard.com/en/blog/google-removes-adguard-android-app-google-play.html) "apps that block or interfere with another app displaying ads". Thus, AdGuard for Android can be downloaded on AdGuard's official website only.
+Plnohodnotné blokátory reklam nelze v Google Play zveřejnit kvůli zásadám obchodu. Google Play [zablokoval](https://adguard.com/en/blog/google-removes-adguard-android-app-google-play.html) "aplikace, které blokují nebo zasahují do jiné aplikace zobrazující reklamy". AdGuard pro Android lze tedy stáhnout pouze na oficiálních stránkách AdGuardu.
 
-As an alternative, Google offers to developers the Content blocking API. The API has strict limitations and is currently supported by two browsers: Yandex Browser and Samsung Internet browser. Many complex filtering rules supported in other AdGuard products don't work with this API.
+Jako alternativu nabízí Google vývojářům rozhraní API pro blokování obsahu. Rozhraní API má přísná omezení a v současné době je podporováno dvěma prohlížeči: Yandex Browser a Samsung Internet browser. Mnoho složitých pravidel filtrování podporovaných v jiných produktech AdGuardu s tímto rozhraním API nefunguje.
 
-![Available browsers *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker.png)
+![Dostupné prohlížeče *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker.png)
 
-AdGuard Content Blocker was designed to fit the Google Play policy framework. Compared to other AdGuard products, AdGuard Content Blocker has less ad blocking capabilities:
+Blokátor obsahu AdGuard byl navržen tak, aby odpovídal zásadám Google Play. V porovnání s ostatními produkty AdGuardu má Blokátor obsahu AdGuard méně možností pro blokování reklam:
 
-1. AdGuard Content Blocker works only in browsers that support the content blocking technology. Currently, there are two: Yandex Browser and Samsung Internet browser.
-2. Within the existing technology, the functionality of AdGuard Content Blocker is limited: for example it cannot block ads and trackers in apps or other browsers, has no filtering log and doesn't support filtering at the domain level.
+1. Blokátor obsahu AdGuard funguje pouze v prohlížečích, které podporují technologii blokování obsahu. V současné době existují dva: Yandex Browser a Samsung Internet Browser.
+2. V rámci stávající technologie jsou funkce Blokátoru obsahu AdGuard omezené: například nedokáže blokovat reklamy a slídiče v aplikacích nebo jiných prohlížečích, nemá záznamy filtrování a nepodporuje filtrování na úrovni domény.
 
-However, AdGuard Content Blocker has 35 filters that allow you to block ads, trackers, and annoyances in two supported browsers. You can also customize ad blocking by selecting appropriate language-specific filters or adding user rules.
+Blokátor obsahu AdGuard však obsahuje 35 filtrů, které umožňují blokovat reklamy, slídiče a obtěžující prvky ve dvou podporovaných prohlížečích. Blokování reklam můžete také přizpůsobit výběrem příslušných jazykových filtrů nebo přidáním uživatelských pravidel.
 
-AdGuard Content Blocker is a free open-source software. Its source code is available [on GitHub](https://github.com/AdguardTeam/ContentBlocker).
+Blokátor obsahu AdGuard je bezplatný software s otevřeným zdrojovým kódem. Jeho zdrojový kód je dostupný na [GitHubu](https://github.com/AdguardTeam/ContentBlocker).
 
-For a better and more customizable ad blocking experience, try using the full-fledged Android app. AdGuard for Android can be downloaded [from our website](https://adguard.com/adguard-android/overview.html).
+Pro lepší a lépe přizpůsobitelné blokování reklam zkuste použít plnohodnotnou aplikaci pro Android. AdGuard pro Android můžete stáhnout [z našich webových stránek](https://adguard.com/adguard-android/overview.html).
