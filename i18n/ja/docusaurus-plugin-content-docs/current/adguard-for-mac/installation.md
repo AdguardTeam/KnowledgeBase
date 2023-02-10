@@ -17,35 +17,35 @@ sidebar_position: 2
 
 AdGuard for Macをインストールするには、ブラウザで _adguard.com_ を開き、「**ダウンロード**」ボタンを押してください。
 
-![アプリをダウンロード *border](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ja/mac-1.png)
+![アプリをダウンロード *border](https://cdn.adtidy.org/public/Adguard/kb/installation/Mac/ja/mac-1.png)
 
 「_AdguardInstaller.dmg_」がダウンロード完了したら、クリックします。（Finderから開くこともできます。）
 
-![ダブルクリックでファイルを開く](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ja/mac-2.png)
+![ダブルクリックでファイルを開く](https://cdn.adtidy.org/public/Adguard/kb/installation/Mac/ja/mac-2.png)
 
 表示されたインストールアプリでAdGuardアイコンをダブルクリックしてください。
 
-![AdGuardのアイコンをダブルクリック](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ja/mac-3.png)
+![AdGuardのアイコンをダブルクリック](https://cdn.adtidy.org/public/Adguard/kb/installation/Mac/ja/mac-3.png)
 
 AdGuard初インストールの際に、OSからの警告が表示されます。 「**開く**」を押してください。
 
-![「開く」をクリック](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ja/mac-4.png)
+![「開く」をクリック](https://cdn.adtidy.org/public/Adguard/kb/installation/Mac/ja/mac-4.png)
 
 次に、「**インストール**」を押してください。
 
-![「インストール」をクリック](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ja/mac-5.png)
+![「インストール」をクリック](https://cdn.adtidy.org/public/Adguard/kb/installation/Mac/ja/mac-5.png)
 
 インストーラが必要なファイルをダウンロード完了するのをお待ちください。
 
-![必要なファイルがダウンロードされるまで待ちます](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ja/mac-6.png)
+![必要なファイルがダウンロードされるまで待ちます](https://cdn.adtidy.org/public/Adguard/kb/installation/Mac/ja/mac-6.png)
 
 AdGuardアプリを使用するにはmacOS管理者アカウントのパスワードが必要になります。 パスワードを入力して「**OK**」を押してください。
 
-![パスワードを入力します。](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ja/mac-7.png)
+![パスワードを入力します。](https://cdn.adtidy.org/public/Adguard/kb/installation/Mac/ja/mac-7.png)
 
 次に、自分に合わせて設定を簡単にカスタマイズできるチュートリアル画面表示されます。 「はじめる」を押して微調整を開始するか、 「スキップ」を押して今はスキップすることができます。
 
-![保護を設定する](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ja/mac-8.jpg)
+![保護を設定する](https://cdn.adtidy.org/public/Adguard/kb/installation/Mac/ja/mac-8.jpg)
 
 これで、お使いのMacへのAdGuardインストールは完了です！
 
@@ -58,7 +58,7 @@ AdGuardアプリを使用するにはmacOS管理者アカウントのパスワ�
 
 「アプリケーション」→ 「AdGuard」アイコンを右クリック→「**こみ箱に入れる**」
 
-![AdGuardをゴミ箱に移動する *border](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ja/mac-9.jpg)
+![AdGuardをゴミ箱に移動する *border](https://cdn.adtidy.org/public/Adguard/kb/installation/Mac/ja/mac-9.jpg)
 
 ### アドバンスド
 

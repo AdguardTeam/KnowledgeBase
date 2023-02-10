@@ -11,7 +11,7 @@ AdGuardが「Full-Tunnel（VPNアイコンなし）」モードになってい�
 
 **AdGuard使用時にFaceTimeを使用し、ビデオ/オーディオ通話が停止しないようにするには、「Split-Tunnel」モードに切り替えてください。（※この不具合は、「DNS通信を保護」がオンの場合にのみ発生します。）**
 
-![Tunnelモード画面 *mobile](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ja/iOS/tunnel-mode.png?!)
+![Tunnelモード画面 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/iOS/tunnel-mode.png?!)
 
 【「Split-Tunnel」モードに切り替える方法】
 1. AdGuardアプリ内*設定*⚙ → *一般設定*

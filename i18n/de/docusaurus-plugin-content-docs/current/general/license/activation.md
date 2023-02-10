@@ -43,7 +43,7 @@ oder doppelklicken Sie auf das AdGuard-Symbol in der Taskleiste:
 
 1. Öffnen Sie die AdGuard-App (klicken Sie auf das AdGuard-Symbol in der Menüleiste)
 
-![AdGuard-Symbol in der Menüleiste](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ja/General/mac1.png)
+![AdGuard-Symbol in der Menüleiste](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/mac1.png)
 
 2. Klicken Sie auf **das Zahnradsymbol** in der oberen rechten Ecke.
 3. Klicken Sie auf **Lizenz...**

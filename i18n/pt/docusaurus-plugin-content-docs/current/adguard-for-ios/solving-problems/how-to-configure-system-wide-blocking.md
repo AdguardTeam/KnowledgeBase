@@ -9,7 +9,7 @@ System-wide blocking means blocking ads and trackers beyond the Safari browser, 
 
 On iOS, the only way to block ads and trackers system-wide is to use [DNS filtering](https://adguard-dns.io/kb/general/dns-filtering/). First, you have to enable DNS protection. To do so, open *AdGuard for iOS settings* —> *DNS protection* and switch it on.
 
-![DNS protection screen](https://cdn.adguard.com/public/Adguard/Blog/ios_dns_protection.PNG)
+![DNS protection screen](https://cdn.adtidy.org/public/Adguard/Blog/ios_dns_protection.PNG)
 
 Now, if your purpose is to block ads and trackers system-wide, you have two options:
 
@@ -21,7 +21,7 @@ The second option takes a bit more time to set up but has several advantages:
 * You can use any DNS server at your discretion and you are not tied up to a specific blocking server.
 * You can add multiple DNS filters and/or hosts files at the same time, but you can't use multiple DNS servers at once.
 
-![How DNS filtering works](https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_en.png)
+![How DNS filtering works](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_en.png)
 
 ## How to add a DNS filter/hosts file
 
@@ -30,9 +30,9 @@ You can add any DNS filter or hosts file, the instruction will be the same for a
 1. Open *AdGuard for iOS settings* —> *General*.
 2. Enable *Advanced mode*. The 'Advanced settings' tab will appear. Open it.
 
-![Open AdGuard Settings and enable Advanced mode](https://cdn.adguard.com/public/Adguard/Release_notes/iOS/v4.0/advanced_mode_en.jpg)
+![Open AdGuard Settings and enable Advanced mode](https://cdn.adtidy.org/public/Adguard/Release_notes/iOS/v4.0/advanced_mode_en.jpg)
 
-![Advanced settings screen](https://cdn.adguard.com/public/Adguard/Blog/ios_advanced_settings.PNG)
+![Advanced settings screen](https://cdn.adtidy.org/public/Adguard/Blog/ios_advanced_settings.PNG)
 
 > Note: We don't recommend touching other settings you'll find inside the *Advanced settings* tab, especially when it comes to *Low-level settings*. Some of them might break the Internet connection or compromise your privacy and security, so it's better to be careful. The text below describes the exact actions required to add AdGuard DNS filter.
 
@@ -40,6 +40,6 @@ You can add any DNS filter or hosts file, the instruction will be the same for a
 4. Open *AdGuard for iOS settings* —> *DNS protection* —> *DNS filtering* (available while *Advanced mode* is enabled) —> *DNS filters*.
 5. Click *Add a filter*, paste the link into the filter URL field, and click 'Next'.
 
-![Adding a DNS filter screen](https://cdn.adguard.com/public/Adguard/Blog/ios_adding_a_filter.PNG)
+![Adding a DNS filter screen](https://cdn.adtidy.org/public/Adguard/Blog/ios_adding_a_filter.PNG)
 
 > Add any number of other DNS filters the same way by pasting a different URL at step 3. You can find various filters and links to them [here](https://filterlists.com).

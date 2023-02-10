@@ -43,7 +43,7 @@ sidebar_position: 3
 
 1. AdGuardアプリを開く（メニューバーでAdGuardアイコンをクリック  ）
 
-![メニューバーでのAdGuardアイコン *mobile](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ja/General/mac1.png)
+![メニューバーでのAdGuardアイコン *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/mac1.png)
 
 2. 右上の**⚙アイコン**を押す
 3. 「**ライセンス…**」をクリックする
