@@ -43,7 +43,7 @@ or double-click on the AdGuard icon in the system tray:
 
 1. Open the AdGuard app (click the AdGuard icon in the menu bar)
 
-![AdGuard icon in the menu bar](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/mac1.png)
+![AdGuard icon in the menu bar](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ja/General/mac1.png)
 
 2. Click the **gear icon** in the top right corner
 3. Click **License...**

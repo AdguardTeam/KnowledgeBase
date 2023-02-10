@@ -39,7 +39,7 @@ sidebar_position: 9
 
 Нажмите на значок **шестерёнки** в правом верхнем углу экрана.
 
-![Настройки Miui *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/android/miui12_ru_1.jpg)
+![Настройки Miui *mobile_border](https://cdn.adguard.com/public/Adguard/kb/android/miui12_ru_1.jpg)
 
 На экране «Настройки» выберите пункт **Ускорение**.
 

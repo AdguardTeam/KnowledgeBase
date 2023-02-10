@@ -3056,7 +3056,7 @@ Open the browser console while on a web page to see the timing statistics for se
   * `standardDeviation` — standard deviation
   * `timingsSum` — total time it took to apply the selector on the page across all instances
 
-**Printed only for removed pseudos:**
+**Printed only for remove pseudos:**
 * `removed` — flag to signal if elements we removed
 
 **Printed if elements are not removed:**

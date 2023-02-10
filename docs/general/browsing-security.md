@@ -17,7 +17,7 @@ We use the protocol [Safe Browsing API version 2.2](https://code.google.com/p/go
 
 The figure below provides a general understanding of how the Browsing Security module works, using AdGuard for Windows as an example.
 
-![Functioning algorithm of Browsing Security module *mobile_border](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_adguard_for_windows.png)
+![Functioning algorithm of Browsing Security module](https://images.adguard.com/public/Adguard/En/Articles/safebrowsing_adguard_for_windows.png)
 
 ### AdGuard Browser extensions
 
@@ -27,7 +27,7 @@ We bring to your attention that we never get any information that could allow us
 
 An approximate algorithm of the functioning of the Browsing Security module is shown in the picture below.
 
-![Functioning algorithm of Browsing Security module in AdGuard browser extensions *mobile_border](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_extension.png)
+![Functioning algorithm of Browsing Security module in AdGuard browser extensions.](https://images.adguard.com/public/Adguard/En/Articles/safebrowsing_extension.png)
 
 ## AdGuard filters
 
@@ -53,7 +53,7 @@ An important tool for maintaining the highest level of filtering is _AdGuard Bro
 
 In the picture below we described an algorithm of Browsing Security Community work:
 
-![The way AdGuard Browsing Security Community works *mobile_border](https://cdn.adtidy.org/public/Adguard/En/Articles/browsing_security_community.png)
+![The way AdGuard Browsing Security Community works](https://images.adguard.com/public/Adguard/En/Articles/browsing_security_community.png)
 
 ### Want to help?
 

@@ -43,7 +43,7 @@ sidebar_position: 3
 
 1. 打开 AdGuard 应用程序（在菜单栏点击 AdGuard 图标）
 
-![菜单栏中的 AdGuard 图标](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/mac1.png)
+![菜单栏中的 AdGuard 图标](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ja/General/mac1.png)
 
 2. 在右上角点击**齿轮图标**
 3. 点击**许可...**
