@@ -209,6 +209,7 @@ Example:
 #### Basic modifiers {#basic-rules-basic-modifiers}
 
 * [`$domain`](#domain-modifier)
+* [`$to`](#to-modifier)
 * [`$third-party`](#third-party-modifier)
 * [`$popup`](#popup-modifier)
 * [`$match-case`](#match-case-modifier)
@@ -218,7 +219,7 @@ The following modifiers are the most simple and frequently used.
 
 #### **`$domain`** {#domain-modifier}
 
-`$domain` limits the rule application area to a list of domains and their subdomains. To add multiple domains to one rule, use the `|`  character as a separator.
+`$domain` limits the rule scope to requests made **from** the specified domains and their subdomains (as indicated by the [Referer](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer) HTTP header). To add multiple domains to one rule, use the `|`  character as a separator.
 
 **Examples**
 
@@ -254,7 +255,7 @@ If the referrer matches a rule with `$domain` that explicitly excludes the refer
 * `*$cookie,domain=example.org|example.com` will block cookies for all requests to and from `example.org` and `example.com`.
 * `*$document,domain=example.org|example.com` will block all requests to and from `example.org` and `example.com`.
 
-In the following examples it is implied that requests are sent from `http://example.org/page`(the referrer) and the target URL is `http://targetdomain.com/page`.
+In the following examples it is implied that requests are sent from `http://example.org/page` (the referrer) and the target URL is `http://targetdomain.com/page`.
 
 * `page$domain=example.org` will be matched, as it matches the referrer domain.
 * `page$domain=targetdomain.com` will be matched, as it matches the target domain and satisfies all requirements mentioned above.
@@ -266,6 +267,29 @@ In the following examples it is implied that requests are sent from `http://exam
 > **Limitations**
 >
 > Safari does not support the simultaneous use of allowed and disallowed domains, so rules like `||baddomain.com^$domain=example.org|~foo.example.org` will not work in AdGuard for Safari.
+
+> **Compatibility with different versions of AdGuard**
+>
+> Starting with CoreLibs v1.12, the `$domain` modifier can be alternatively spelled as `$from`.
+
+#### **`$to`** {#to-modifier}
+
+`$to` limits the rule scope to requests made **to** the specified domains and their subdomains. To add multiple domains to one rule, use the `|`  character as a separator.
+
+**Examples**
+
+* `/ads$to=evil.com|evil.org` blocks any request to `evil.com` or `evil.org` and their subdomains with a path matching `/ads`.
+* `/ads$to=~not.evil.com|evil.com` blocks any request to `evil.com` and its subdomains, with a path matching `/ads`, except requests to `not.evil.com` and its subdomains.
+* `/ads$to=~good.com|~good.org` blocks any request with a path matching `/ads`, except requests to `good.com` or `good.org` and their subdomains.
+
+> **Compatibility with other modifiers**
+>
+> [`$denyallow`](#denyallow-modifier) can not be used together with `$to`. It can be expressed with inverted `$to`:
+> `$denyallow=a.com|b.com` is equivalent to `$to=~a.com|~b.com`.
+
+> **Compatibility with different versions of AdGuard**
+>
+> `$to` is availabe starting with CoreLibs v1.12.
 
 #### **`$third-party`** {#third-party-modifier}
 
