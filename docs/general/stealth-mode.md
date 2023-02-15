@@ -75,8 +75,13 @@ Some websites and web services still use the old technology to support Java plug
 
 ### Hide Referrer from third-parties {#referrer}
 
-Referrer is an HTTP header used in browser-to-server requests. It contains the URL of the request source. When you navigate from one page to another, Referrer saves the URL of the initial page. The server often has software that parses Referrer and extracts various pieces of information from it. Enabling this option hides the current website from third-party sites by changing the HTTP header.
-You can also set an arbitrary value for Referrer by entering it into the Custom Referrer field. To use default Referrer, leave the field blank.
+Referrer is an HTTP header used in browser-to-server requests. It contains the URL of the request source. When you navigate from one page to another, Referrer saves the URL of the initial page. The server that hosts the destination web page often has software that parses Referrer and extracts various pieces of information from it. Enabling the *Hide Referrer from third-parties* option hides the current website from third-party sites by altering the HTTP header. 
+
+You can also set an arbitrary value for Referrer by entering it into the *Custom Referrer* field. To use default Referrer, leave the field blank.
+
+Note that AdGuard apps route all browser traffic through themselves before sending it to the server. Referrer is getting hidden or substituted after the request leaves the browser but before AdGuard forwards it to the server. This means that if you monitor Referrer inside the browser (for example, with the help of Chrome's Developer Tools), you will see the original Referrer because the request hasn't reached AdGuard yet. You can use software like [Fiddler](https://www.telerik.com/fiddler) to make sure that Referrer gets altered correctly.
+
+On the opposite, due to the nature of all browser extensions, AdGuard Browser extension works 'inside' the browser. It will alter the Referrer right then and there, so Developer Tools will show the desired Referrer for your requests.   
 
 ### Hide your User-Agent {#useragent}
 
