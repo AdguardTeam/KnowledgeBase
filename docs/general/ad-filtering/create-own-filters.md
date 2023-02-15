@@ -1429,7 +1429,7 @@ preroll.ts
 [JSONPath](https://goessner.net/articles/JsonPath/) expression. They do not modify responses which are not
 valid JSON documents.
 
-> In AdGuard for Windows, Mac and Android, **running CoreLibs version 1.11 or later**, `$jsonprune` also supports modifying JSONP (padded JSON) documents.
+> In AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**, `$jsonprune` also supports modifying JSONP (padded JSON) documents.
 
 **Syntax**
 
@@ -1438,21 +1438,24 @@ valid JSON documents.
 > Due to the way rule parsing works, the characters `$` and `,` must be escaped with `\` inside `expression`.
 
 The modified JSONPath syntax has the following differences from the original:
-1. Script expressions are not supported.
-2. The supported filter expressions are:
-  * `?(has <key>)` — true if the current object has the specified key.
-  * `?(key-eq <key> <value>)` — true if the current object has the specified key, and its value is equal to the specified value.
-  * `?(key-substr <key> <value>)` — true if the specified value is a substring of the value of the specified key of the current object.
-3. Whitespace outside of double- or single-quoted strings has no meaning.
-4. Both double- and single-quoted strings can be used.
-5. Expressions ending with `..` are not supported.
-6. Multiple array slices can be specified in square brackets.
 
-There are various online tools for testing JSONPath expressions, e.g.
-https://jsonpath.herokuapp.com/
+1.  Script expressions are not supported.
+2.  The supported filter expressions are:
+      * `?(has <key>)` — true if the current object has the specified key.
+      * `?(key-eq <key> <value>)` — true if the current object has the specified key, and its value is equal to the specified value.
+      * `?(key-substr <key> <value>)` — true if the specified value is a substring of the value of the specified key of the current object.
+3.  Whitespace outside of double- or single-quoted strings has no meaning.
+4.  Both double- and single-quoted strings can be used.
+5.  Expressions ending with `..` are not supported.
+6.  Multiple array slices can be specified in square brackets.
+
+There are various online tools that make working with JSONPath expressions more convenient: 
+
+https://www.site24x7.com/tools/jsonpath-finder-validator.html
+https://jsonpathfinder.com/
 https://jsonpath.com/
 
-Keep in mind, though, that all JSONPath implementations on this planet have unique features/quirks and are subtly incompatible with each other.
+Keep in mind, though, that all JSONPath implementations have unique features/quirks and are subtly incompatible with each other.
 
 **Exceptions**
 
