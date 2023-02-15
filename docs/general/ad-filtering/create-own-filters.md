@@ -289,7 +289,7 @@ In the following examples it is implied that requests are sent from `http://exam
 
 > **Compatibility with different versions of AdGuard**
 >
-> `$to` is availabe starting with CoreLibs v1.12.
+> `$to` is available starting with CoreLibs v1.12.
 
 #### **`$third-party`** {#third-party-modifier}
 
