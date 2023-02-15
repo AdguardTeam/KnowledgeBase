@@ -270,25 +270,28 @@ In the following examples it is implied that requests are sent from `http://exam
 >
 > Safari does not support the simultaneous use of allowed and disallowed domains, so rules like `||baddomain.com^$domain=example.org|~foo.example.org` will not work in AdGuard for Safari.
 
-> Starting with CoreLibs version 1.12, the `$domain` modifier can be alternatively spelled as `$from`.
+> **Compatibility with different versions of AdGuard**
+>
+> Starting with CoreLibs v1.12, the `$domain` modifier can be alternatively spelled as `$from`.
 
 #### **`$to`** {#to-modifier}
 
-`$to` limits the rule scope to requests made **to** the specified domains and their subdomains.
-To add multiple domains to one rule, use the `|`  character as a separator.
+`$to` limits the rule scope to requests made **to** the specified domains and their subdomains. To add multiple domains to one rule, use the `|`  character as a separator.
 
 **Examples**
 
-* `/ads$to=evil.com|evil.org` — block any request to `evil.com` or `evil.org` (and their subdomains) with a path matching `/ads`.
-* `/ads$to=~not.evil.com|evil.com` — block any request to `evil.com` (and its subdomains), with a path matching `/ads`,
-  except requests to `not.evil.com` (and its subdomains).
-* `/ads$to=~good.com|~good.org` — block any request with a path matching `/ads`,
-  except requests to `good.com` or `good.org` (and their subdomains).
+* `/ads$to=evil.com|evil.org` blocks any request to `evil.com` or `evil.org` and their subdomains with a path matching `/ads`.
+* `/ads$to=~not.evil.com|evil.com` blocks any request to `evil.com` and its subdomains, with a path matching `/ads`, except requests to `not.evil.com` and its subdomains.
+* `/ads$to=~good.com|~good.org` blocks any request with a path matching `/ads`, except requests to `good.com` or `good.org` and their subdomains.
 
-> `$to` is availabe starting with CoreLibs version **1.12**.
-
-> [`$denyallow`](#denyallow-modifier) can be expressed with inverted `$to`:
+> **Compatibility with other modifiers**
+>
+> [`$denyallow`](#denyallow-modifier) can not be used together with `$to`. It can be expressed with inverted `$to`:
 > `$denyallow=a.com|b.com` is equivalent to `$to=~a.com|~b.com`.
+
+> **Compatibility with different versions of AdGuard**
+>
+> `$to` is availabe starting with CoreLibs v1.12.
 
 #### **`$third-party`** {#third-party-modifier}
 
