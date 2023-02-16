@@ -673,6 +673,7 @@ Disables generic basic rules on pages that correspond to exception rule.
 * [`$cookie`](#cookie-modifier)
 * [`$network`](#network-modifier)
 * [`$app`](#app-modifier)
+* [`$method`](#method-modifier)
 * [`$redirect`](#redirect-modifier)
 * [`$redirect-rule`](#redirect-rule-modifier)
 * [`$denyallow`](#denyallow-modifier)
@@ -1005,6 +1006,20 @@ If you want the rule not to be applied to certain apps, start the app name with 
 > **Compatibility with different versions of AdGuard**
 >
 > Only AdGuard for Windows, Mac, Android are technically capable of using rules with `$app` modifier.
+
+#### **`$method`** {#method-modifier}
+
+This modifier limits the scope of the rule to requests that use the specified set of HTTP methods. Negated methods are allowed. The set of allowed methods is the same as in Chrome's [declarativeNetRequest](https://developer.chrome.com/docs/extensions/reference/declarativeNetRequest/#type-RequestMethod).
+
+**Examples**
+
+* `||evil.com^$method=get|head` blocks only GET and HEAD requests to `evil.com`.
+* `||evil.com^$~post|~put` blocks any requests except POST or PUT to `evil.com`.
+
+> **Compatibility with different versions of AdGuard**
+>
+> `$method` is available starting with CoreLibs v1.12.
+
 
 #### **`$redirect`** {#redirect-modifier}
 
