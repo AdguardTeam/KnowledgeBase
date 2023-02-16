@@ -1014,7 +1014,7 @@ This modifier limits the scope of the rule to requests that use the specified se
 **Examples**
 
 * `||evil.com^$method=get|head` blocks only GET and HEAD requests to `evil.com`.
-* `||evil.com^$~post|~put` blocks any requests except POST or PUT to `evil.com`.
+* `||evil.com^$method=~post|~put` blocks any requests except POST or PUT to `evil.com`.
 
 > **Compatibility with different versions of AdGuard**
 >
