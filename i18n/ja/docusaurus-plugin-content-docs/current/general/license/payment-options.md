@@ -1,20 +1,20 @@
 ---
-title: How to purchase
+title: ご購入方法
 sidebar_position: 2
 ---
 
-## ライセンスのご購入方法
+## AdGuardライセンスのご購入方法
 
-AdGuardライセンスは [adguard.com](https://adguard.com/license.html)にてご購入いただけます: 1. 「購入する」を押してご購入ページへ移動 2. お好みのライセンス種類を選択（1年版／永久版、パーソナル／ファミリー） 3. メールアドレスを入力 ※このメールアドレスにはライセンスキーとAdGuardアカウント認証用リンクが送信されますので、ご入力の際には間違いのないよう十分ご注意ください。 4. お支払い方法を選択 iOS用「AdGuard Pro」は、App Storeで購入することができます。 また、広告ブロッカーライセンスは、様々な販売代理店からも販売されています。
+AdGuardライセンスは [adguard.com](https://adguard.com/license.html)にてご購入いただけます: 1.  「購入する」を押してご購入ページへ移動 2.  お好みのライセンス種類を選択（1年版／永久版、パーソナル／ファミリー） 3.  メールアドレスを入力 ※このメールアドレスにはライセンスキーとAdGuardアカウント認証用リンクが送信されますので、ご入力の際には間違いのないよう十分ご注意ください。 4.  お支払い方法を選択 iOS用「AdGuard Pro」は、App Storeで購入することができます。 また、AdGuard広告ブロッカーライセンスは、様々な販売代理店からも販売されています。
 
-> ※AdGuard製品がアプリストアや販売代理店で入手可能かどうかは、お住まいの国によって異なります。
+> ※AdGuard製品が各アプリストアや販売代理店で入手可能かどうかは、お住まいの国によって異なります。
 
 ## 返金を受ける方法
 
-In accordance with our [Terms of Sale](https://adguard.com/terms-of-sale.html), you can get a 100% refund on the AdGuard license key you purchased at https://adguard.com. To get a refund, contact our support team at **support@adguard.com** and indicate the payment option you've used.
+当社 [販売条件](https://adguard.com/terms-of-sale.html)に基づき、お客様が https://adguard.com で購入したAdGuardライセンスキーの全額返金を受けることができます。 返金をご希望の場合は、AdGuardサポートチーム（ **support@adguard.com** （日本語対応））まで、ご利用になられたお支払い方法を明記の上、返金ご希望であることをご連絡ください。
 
-A refund may be denied if you:
-* purchased the license more than 60 days ago,
-* purchaded the license by a distributor,
-* purchased the license on the App Store,
-* applied for a partial refund for license key upgrade or prolongation.
+以下のような場合、返金をお断りすることがありますのでご了承ください:
+* ライセンス購入日から60日間以上経過した場合
+* adguard.com ではなく販売代理店からライセンスを購入された場合
+* App Storeでライセンスを購入された場合（App Storeでご購入の場合、AdGuardから返金することはできず、Apple側の判断での返金となります）
+* ライセンスキーのアップグレードまたは延長という一部返金を申し込まれた場合

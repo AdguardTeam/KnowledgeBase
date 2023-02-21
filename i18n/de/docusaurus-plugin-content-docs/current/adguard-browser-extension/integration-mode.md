@@ -1,5 +1,5 @@
 ---
-title: Integration mode (legacy)
+title: Integrationsmodus (Legacy)
 sidebar_position: 3
 ---
 

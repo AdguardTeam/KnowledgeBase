@@ -1,5 +1,5 @@
 ---
-title: Features overview
+title: Özelliklere genel bakış
 sidebar_position: 1
 ---
 
@@ -42,7 +42,7 @@ In the Ad Blocker module you can:
 
 Before you start manually writing your own rules read our detailed [syntax guide](/general/ad-filtering/create-own-filters).
 
-### Stealth Mode
+### Gizlilik Modu
 
 Many websites gather information about their visitors, such as their IP addresses, information about the browser and operating system installed, screen resolution, and even what page the user came or was redirected from. Some web pages use cookies to mark the browser and save your personal settings, user preferences, or "recognize" you upon your next visit. Stealth Mode safeguards your personal information from such data and statistics gathering systems.
 

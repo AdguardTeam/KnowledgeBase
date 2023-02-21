@@ -1,18 +1,18 @@
 ---
-title: How to block ads in the Youtube app
+title: Jak blokovat reklamy v YouTube
 sidebar_position: 7
 ---
 
-One of the most popular questions users ask us is: 'Is it possible to block ads in YouTube on Android?'. Due to the technical restrictions of the Android OS, there is no way to *completely* remove ads from the YouTube app. But we've found an alternative that brings you to it as close as possible, while getting around the Android-imposed restrictions.
+Jedna z nejčastějších otázek, kterou nám uživatelé kladou, zní: "Je možné blokovat reklamy YouTube v systému Android?". Vzhledem k technickým omezením operačního systému Android neexistuje způsob, jak *zcela* odstranit reklamy z aplikace YouTube. Našli jsme však alternativu, která vás k němu co nejvíce přiblíží a zároveň obejde omezení daná systémem Android.
 
 
-## Watch YouTube in the AdGuard app
+## Sledování YouTube v aplikaci AdGuard
 
-![Instruction *mobile](https://cdn.adtidy.org/public/Adguard/Blog/Android/3-6/share.gif)
+![Návod *mobile](https://cdn.adtidy.org/public/Adguard/Blog/Android/3-6/share.gif)
 
-1. Open the YouTube app and start the video you want to watch.
-2. Tap the *Share* button and select *AdGuard for Android* from the list of apps.
+1. Otevřete YouTube a spusťte video, které chcete sledovat.
+2. Klepněte na tlačítko *Sdílet* a vyberte *AdGuard pro Android* ze seznamu aplikací.
 
-That's it! A new window with the video will open where you'll be able to watch it without being interrupted by ads.
+A je to! Otevře se nové okno s videem, ve kterém jej budete moci sledovat bez přerušování reklamami.
 
-* You can also watch YouTube in a browser and there will be no ads if you have AdGuard installed and enabled.
+* Pokud máte nainstalovaný a spuštěný AdGuard, můžete YouTube sledovat také v prohlížeči a nebudou se zobrazovat žádné reklamy.

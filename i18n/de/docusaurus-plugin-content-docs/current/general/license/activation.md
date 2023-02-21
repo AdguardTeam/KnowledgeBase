@@ -1,5 +1,5 @@
 ---
-title: So aktivieren Sie AdGuard
+title: Wie man aktiviert
 sidebar_position: 3
 ---
 
@@ -43,7 +43,7 @@ oder doppelklicken Sie auf das AdGuard-Symbol in der Taskleiste:
 
 1. Öffnen Sie die AdGuard-App (klicken Sie auf das AdGuard-Symbol in der Menüleiste)
 
-![AdGuard-Symbol in der Menüleiste](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ja/General/mac1.png)
+![AdGuard-Symbol in der Menüleiste](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/mac1.png)
 
 2. Klicken Sie auf **das Zahnradsymbol** in der oberen rechten Ecke.
 3. Klicken Sie auf **Lizenz...**
@@ -93,11 +93,11 @@ oder doppelklicken Sie auf das AdGuard-Symbol in der Taskleiste:
 
 3. Tippen Sie auf **Anmelden** in der oberen rechten Ecke des Bildschirms
 
-![Tap Log in in the top right corner of Premium screen *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense1en.png)
+![Auf Anmelden in der oberen rechten Ecke des Premium-Bildschirms tippen *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense1en.png)
 
 4. Geben Sie **E-Mail** und **Passwort** von Ihrem **AdGuard-Konto**
 
-![Log in *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense2en.png)
+![Anmelden *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense2en.png)
 
 ## Wie überträgt man eine Lizenz auf ein anderes Gerät
 

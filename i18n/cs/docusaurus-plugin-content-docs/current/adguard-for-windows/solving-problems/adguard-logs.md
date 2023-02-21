@@ -9,7 +9,7 @@ To analyse and diagnose different problems that may potentially arise, the AdGua
 
 ![Debug logging level *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
 
-2. Reproduce the issue.
+2. Znovu reprodukujte problém.
 
 - We strongly advise to take note of the exact time when you reproduced the issue: it will help our support team to find relevant log entries and solve the problem faster.
 
@@ -43,7 +43,7 @@ Please don't leave the service running:
 
 ![Debug *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
 
-5. Reproduce the issue.
+5. Znovu reprodukujte problém.
 
 - We strongly advise to take note of the exact time when you reproduced the issue: it will help our support team to find relevant log entries and solve the problem faster.
 

@@ -1,5 +1,5 @@
 ---
-title: Features overview
+title: Özelliklere genel bakış
 sidebar_position: 1
 ---
 
@@ -7,7 +7,7 @@ AdGuard provides a range of software products that block ads and trackers on dif
 
 ![AdGuard Browser extension for Chrome *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
 
-## Availability {#br-extension}
+## Kullanılabilirlik {#br-extension}
 
 [AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html) is available for most major browsers. You can easily find it in your browser’s online store or on our official website.
 
@@ -17,7 +17,7 @@ AdGuard provides a range of software products that block ads and trackers on dif
 
 **Do not forget that the functionality of each extension is strictly limited by the browser’s capabilities.** So if you want to get full-fledged protection, consider installing a standalone program for your computer. There's [a reason why](#comparison).
 
-## Ad blocking {#adblocker}
+## Reklam engelleme {#adblocker}
 
 Blocking ads is clearly the key functionality of any ad blocker, and AdGuard is not an exception. The extension will successfully block ads on any page in your browser. Ad blocking is based on so-called filter lists, or simply [filters](/general/ad-filtering/how-ad-blocking-works). Filters can be enabled or disabled in your extension's settings. You can customize ad blocking by activating specific filters.
 
@@ -43,7 +43,7 @@ To add a filter, just click *Add custom filter*, enter the URL or the file path 
 
 ![Add a custom filter *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
 
-### User rules {#user-rules}
+### Kullanıcı kuralları {#user-rules}
 
 *User rules* is another tool that helps you customize the blocking of ads.
 
@@ -69,7 +69,7 @@ The *allowlist* can be inverted, too: you can unblock ads everywhere except on t
 
 You can also import and export existing allowlists. It is useful, for instance, if you want to apply the same allowing rules in each of your browsers.
 
-## Stealth Mode {#stealth-mode}
+## Gizlilik Modu {#stealth-mode}
 
 *Stealth Mode* aims to ensure the protection of sensitive personal data from online trackers and fraudsters.
 

@@ -209,6 +209,7 @@ Example:
 #### Basic modifiers {#basic-rules-basic-modifiers}
 
 * [`$domain`](#domain-modifier)
+* [`$to`](#to-modifier)
 * [`$third-party`](#third-party-modifier)
 * [`$popup`](#popup-modifier)
 * [`$match-case`](#match-case-modifier)
@@ -218,7 +219,7 @@ The following modifiers are the most simple and frequently used.
 
 #### **`$domain`** {#domain-modifier}
 
-`$domain` limits the rule application area to a list of domains and their subdomains. To add multiple domains to one rule, use the `|`  character as a separator.
+`$domain` limits the rule scope to requests made **from** the specified domains and their subdomains (as indicated by the [Referer](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer) HTTP header). To add multiple domains to one rule, use the `|`  character as a separator.
 
 **Examples**
 
@@ -251,7 +252,7 @@ If the referrer matches a rule with `$domain` that explicitly excludes the refer
 * `*$cookie,domain=example.org|example.com` will block cookies for all requests to and from `example.org` and `example.com`.
 * `*$document,domain=example.org|example.com` will block all requests to and from `example.org` and `example.com`.
 
-In the following examples it is implied that requests are sent from `http://example.org/page`(the referrer) and the target URL is `http://targetdomain.com/page`.
+In the following examples it is implied that requests are sent from `http://example.org/page` (the referrer) and the target URL is `http://targetdomain.com/page`.
 
 * `page$domain=example.org` will be matched, as it matches the referrer domain.
 * `page$domain=targetdomain.com` will be matched, as it matches the target domain and satisfies all requirements mentioned above.
@@ -260,9 +261,31 @@ In the following examples it is implied that requests are sent from `http://exam
 * `/banner\d+/$domain=targetdomain.com` will not be matched as it contains a regular expression.
 * `page$domain=targetdomain.com|~example.org` will not be matched because the referrer domain is explicitly excluded.
 
-> **Limitations**
+> **Omezení**
 > 
 > Safari does not support the simultaneous use of allowed and disallowed domains, so rules like `||baddomain.com^$domain=example.org|~foo.example.org` will not work in AdGuard for Safari.
+
+> **Compatibility with different versions of AdGuard**
+> 
+> Starting with CoreLibs v1.12, the `$domain` modifier can be alternatively spelled as `$from`.
+
+#### **`$to`** {#to-modifier}
+
+`$to` limits the rule scope to requests made **to** the specified domains and their subdomains. To add multiple domains to one rule, use the `|`  character as a separator.
+
+**Examples**
+
+* `/ads$to=evil.com|evil.org` blocks any request to `evil.com` or `evil.org` and their subdomains with a path matching `/ads`.
+* `/ads$to=~not.evil.com|evil.com` blocks any request to `evil.com` and its subdomains, with a path matching `/ads`, except requests to `not.evil.com` and its subdomains.
+* `/ads$to=~good.com|~good.org` blocks any request with a path matching `/ads`, except requests to `good.com` or `good.org` and their subdomains.
+
+> **Compatibility with other modifiers**
+> 
+> [`$denyallow`](#denyallow-modifier) can not be used together with `$to`. It can be expressed with inverted `$to`: `$denyallow=a.com|b.com` is equivalent to `$to=~a.com|~b.com`.
+
+> **Compatibility with different versions of AdGuard**
+> 
+> `$to` is available starting with CoreLibs v1.12.
 
 #### **`$third-party`** {#third-party-modifier}
 
@@ -794,7 +817,7 @@ For the requests matching a `$csp` rule, we will strengthen response security po
 
 `$csp` value can be empty in the case of exception rules. See examples section below.
 
-> **Limitations**
+> **Omezení**
 > 
 > 1. There are a few characters forbidden in the `$csp` value: `,`, `$`.
 > 2. `$csp` rules support limited list of modifiers: `$domain`, `$important`, `$subdocument`.
@@ -830,7 +853,7 @@ For the requests matching a `$permissions` rule, AdGuard strengthens response's 
 
 `$permissions` value can be empty in the case of exception rules — see examples below.
 
-> **Limitations**
+> **Omezení**
 > 
 > 1. Two characters are forbidden in the `$permissions` value: `,` and `$`;
 > 2. `$permissions` is compatible with the limited list of modifiers: `$domain`, `$important`, and `$subdocument`.
@@ -914,7 +937,7 @@ every time AdGuard encounters a cookie called `NAME` in a request to `example.or
 * `@@||example.org^$cookie=concept` unblocks a single cookie named `concept`
 * `@@||example.org^$cookie=/^_ga_/` unblocks every cookie that matches the regular expression
 
-> **Limitations**
+> **Omezení**
 > 
 > `$cookie` rules support a limited list of modifiers: `$domain`, `$~domain`, `$important`, `$third-party`, `$~third-party`.
 
@@ -1692,7 +1715,7 @@ You can use both approaches in a single rule. For example, `example.org,~subdoma
 * `example.com,example.org###adblock` — hides an element with attribute `id` equals `adblock` at `example.com`, `example.org` and all subdomains.
 * `~example.com##.textad` — hides an element with a class `textad` at all domains, except `example.com` and its subdomains.
 
-> **Limitations**
+> **Omezení**
 > 
 > Safari does not support both permitted and restricted domains. So the rules like `example.org,~foo.example.org##.textad` are invalid in AdGuard for Safari.
 
@@ -1773,7 +1796,7 @@ We recommend to use this kind of exceptions only if it is not possible to change
 
 ### Extended CSS selectors {#extended-css-selectors}
 
-* [Limitations](#extended-css-limitations)
+* [Omezení](#extended-css-limitations)
 * [Pseudo-class `:has()`](#extended-css-has)
 * [Pseudo-class `:contains()`](#extended-css-contains)
 * [Pseudo-class `:matches-css()`](#extended-css-matches-css)

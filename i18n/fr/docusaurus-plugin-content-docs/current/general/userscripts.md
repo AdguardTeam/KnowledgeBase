@@ -1,5 +1,5 @@
 ---
-title: Userscripts
+title: Scripts utilisateur
 sidebar_position: 5
 ---
 

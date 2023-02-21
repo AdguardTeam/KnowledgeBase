@@ -1,20 +1,20 @@
 ---
-title: How to purchase
+title: Cómo comprar
 sidebar_position: 2
 ---
 
-## How to purchase a license
+## Cómo comprar una licencia
 
-AdGuard license can be bought on [adguard.com](https://adguard.com/license.html). AdGuard Pro for iOS can be bought on the App Store. Ad Blocker licenses are also sold by various distributors.
+La licencia de AdGuard se puede comprar en [adguard.com](https://adguard.com/license.html). AdGuard Pro para iOS se puede comprar en la App Store. Varios distribuidores también venden licencias del bloqueador de anuncios.
 
-> The availability of AdGuard products in app stores and by distributors depends on your country.
+> La disponibilidad de los productos de AdGuard en las tiendas de aplicaciones y por distribuidores depende de tu país.
 
-## How to get a refund
+## Cómo obtener un reembolso
 
-In accordance with our [Terms of Sale](https://adguard.com/terms-of-sale.html), you can get a 100% refund on the AdGuard license key you purchased at https://adguard.com. To get a refund, contact our support team at **support@adguard.com** and indicate the payment option you've used.
+De acuerdo con nuestros [Términos de venta](https://adguard.com/terms-of-sale.html), puedes obtener un reembolso del 100% de la clave de licencia de AdGuard que compraste en https://adguard.com. Para obtener un reembolso, comunícate con nuestro equipo de soporte en **support@adguard.com** e indica la opción de pago que has utilizado.
 
-A refund may be denied if you:
-* purchased the license more than 60 days ago,
-* purchaded the license by a distributor,
-* purchased the license on the App Store,
-* applied for a partial refund for license key upgrade or prolongation.
+Se puede denegar un reembolso si:
+* compraste la licencia hace más de 60 días,
+* compraste la licencia de un distribuidor,
+* compraste la licencia en la App Store,
+* solicitaste un reembolso parcial por la actualización o prolongación de la clave de licencia.

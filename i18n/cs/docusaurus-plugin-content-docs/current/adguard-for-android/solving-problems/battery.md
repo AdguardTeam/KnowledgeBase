@@ -1,66 +1,66 @@
 ---
-title: Battery and traffic consumption issues
+title: Problémy se spotřebou baterie a datového provozu
 sidebar_position: 1
 ---
 
-Sometimes you may notice that, according to Android built-in statistics, AdGuard consumes a lot of traffic and/or battery resource.
+Někdy si můžete všimnout, že podle statistik integrovaných v systému Android spotřebovává AdGuard velké množství dat a/nebo zdrojů baterie.
 
-Both these problems are two sides of the same coin. Since in the process of filtering all the mobile traffic goes through AdGuard, Android decides that it is AdGuard that consumes it all. In reality, of course, it is not true.
+Oba tyto problémy jsou dvě strany jedné mince. Vzhledem k tomu, že v procesu filtrování prochází veškerý datový provoz přes AdGuard, systém Android rozhodne, že je to právě AdGuard, kdo jej celý spotřebuje. Ve skutečnosti to ovšem není pravda.
 
-Battery and traffic consumption shown in devices statistics **do not represent the facts**. The thing is, Android attributes all of the WiFi and Mobile traffic to AdGuard, which was in fact consumed by other apps. Due to this, AdGuards real share of total consumed traffic and battery resource increases, and the share of other apps, on the contrary, decreases.
+Spotřeba baterie a datového provozu uvedená ve statistikách zařízení **neodpovídá skutečnosti**. Jde o to, že systém Android připisuje veškerý datový provoz přes Wi-Fi a mobilní sítě AdGuardu, který byl ve skutečnosti spotřebován jinými aplikacemi. Díky tomu se skutečný podíl AdGuardu na celkovém spotřebovaném datovém provozu a prostředcích baterie zvyšuje a podíl ostatních aplikací naopak klesá.
 
-### Own battery usage stats screen
+### Vlastní obrazovka statistik využití baterie
 
-To mitigate this misconception, we added a new screen called 'Battery usage'. You can access it by tapping on the battery icon in the top right corner of the main screen.
+Abychom tuto mylnou představu zmírnili, přidali jsme novou obrazovku s názvem "Využití baterie". Můžete ji otevřít klepnutím na ikonu baterie v pravém horním rohu hlavní obrazovky.
 
-![Battery stats *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/battery/batterystats.png)
+![Statistiky baterie *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/battery/batterystats.png)
 
-Inside you will find a chart that shows the AdGuard battery resource consumption within the last 24 hours, with an option to get more detailed hour-to-hour data by tapping on the dots on the chart. Besides that, there’s also a numeric breakdown of the relevant data and a short technical explanation.
+Uvnitř najdete graf, který zobrazuje spotřebu zdrojů baterie AdGuard za posledních 24 hodin s možností získat podrobnější údaje po jednotlivých hodinách klepnutím na tečky v grafu. Kromě toho je zde také číselný rozpis příslušných údajů a krátké technické vysvětlení.
 
-### Real example
+### Skutečný příklad
 
-On the screenshots below you can see the battery resource consumption statistics for a night and subsequent morning:
+Na níže uvedených snímcích obrazovky vidíte statistiky spotřeby zdrojů baterie za noc a následující ráno:
 
-![Battery 1 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_1.png) ![Battery 2 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_2.png) ![Battery 3 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_3.png)
+![Baterie 1 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_1.png) ![Baterie 2 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_2.png) ![Baterie 3 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_3.png)
 
-From these screenshots you can see that:
+Z těchto snímků obrazovky je patrné, že:
 
-1. AdGuard, as expected, is at the top of the chart. This is generally typical for smartphones (and not at all for tablets without 4G, since WiFi is much less 'costly' in terms of battery consumption).
+1. AdGuard je podle očekávání na vrcholu žebříčku. To je obecně typické pro chytré telefony (a vůbec ne pro tablety bez 4G, protože WiFi je mnohem méně "nákladná" z hlediska spotřeby baterie).
 
-2. Pay attention to the number of sent Mobile and WiFi packages, which were attributed to AdGuard (Mobile packets sent и Wi-Fi packets sent) on the second screenshot.
+2. Na druhém snímku obrazovky si všimněte počtu odeslaných mobilních a Wi-Fi paketů, které byly připsány AdGuardu (odeslané mobilní pakety и odeslané Wi-Fi pakety).
 
-3. On the third screenshot are stats for one of the real traffic consumers, Yandex.Browser. It was not attributed almost any traffic at all, while in reality 70% of the total traffic was consumed by it.
+3. Na třetím snímku jsou statistiky pro jednoho ze skutečných konzumentů provozu, Yandex.Browser. Nebyl mu připsán téměř žádný datový provoz, zatímco ve skutečnosti spotřeboval 70 % celkového datového provozu.
 
-### How much battery resource does AdGuard really consume?
+### Kolik prostředků baterie AdGuard skutečně spotřebovává?
 
-First, let us lay down a little bit of theory and links with necessary data.
+Nejprve si řekneme něco málo z teorie a uvedeme si souvislosti s potřebnými údaji.
 
-1. Android derives traffic consumption judging on so-called Power Profile, which is given by every manufacturer: <https://source.android.com/devices/tech/power/values.html>
+1. Android odvozuje spotřebu baterie podle takzvaného "Profilu napájení", který udává každý výrobce: <https://source.android.com/devices/tech/power/values.html>
 
-2. Main part of Power Profile is a set of values in mAh which define battery consumption for every component of the device: <https://source.android.com/devices/tech/power/values.html>
+2. Hlavní součástí tohoto profilu je soubor hodnot v mAh, které určují spotřebu baterie pro každou část zařízení: <https://source.android.com/devices/tech/power/values.html>
 
-For example, from the table above:
+Například podle výše uvedené tabulky:
 
-_wifi.active=_ 31mA additional consumption in mAh caused by WiFi data exchange.
+_wifi.active=_ 31mA dodatečná spotřeba v mAh způsobená výměnou dat Wi-Fi.
 
-_radio.active=_ 100-300mA additional consumption in mAh caused by data exchange over Mobile network.
+_radio.active=_ 100-300mA dodatečná spotřeba v mAh způsobená výměnou dat přes mobilní síť.
 
-_cpu.active=_ 100-200mA additional consumption in mAh caused by CPU work.
+_cpu.active=_ 100-200mA dodatečná spotřeba v mAh způsobená prací procesoru.
 
-3. AdGuard by itself almost doesn't consume any traffic, so for the sake of evaluating battery resource consumption let's get rid of 'Mobile/WiFi packets' and stcik to 'CPU'.
+3. AdGuard sám o sobě nespotřebovává téměř žádné prostředky, takže pro účely vyhodnocení spotřeby baterie se zbavme 'paketů Mobile/WiFi' a 'CPU'.
 
-Formulа to calculate the consumption:
+Vzorec pro výpočet spotřeby:
 > "CPU TIME (ms)" X "cpu.active" / (60 * 60 * 1000) = "POWER USE mAh"
 
-Let's put real numbers into this formula.
+Doplňme do tohoto vzorce reálná čísla.
 
-Let's take _CPU total_ from the second screenshot and convert into milliseconds: 506000
+Vezmeme _CPU celkem_ z druhého snímku obrazovky a převedeme na milisekundy: 506000
 
-A coefficient _cpu.active_ for 2GHz will be roughly equal to 225mAh
+Koeficient _cpu.active_ pro 2GHz bude roven zhruba 225mAh
 
-Final result
+Konečný výsledek
 > 506000 * 225 / (60 * 60 * 1000) = 31,625mAh
 
-### Conclusion
+### Závěr
 
-Real consumption is **several times less** than it is shown in Android statistics. Instead of 220mAh it should be somewhere around 31-40mAh. On the other hand, browser's consumption should be not 66mAh, but ~200mAh.
+Skutečná spotřeba je **několikanásobně nižší** než se uvádí ve statistikách systému Android. Místo 220mAh by to mělo být někde kolem 31-40mAh. Na druhou stranu spotřeba prohlížeče by neměla být 66mAh, ale ~200mAh.

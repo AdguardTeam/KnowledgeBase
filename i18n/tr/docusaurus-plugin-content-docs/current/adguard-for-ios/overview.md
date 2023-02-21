@@ -1,5 +1,5 @@
 ---
-title: Features overview
+title: Özelliklere genel bakış
 sidebar_position: 1
 ---
 
@@ -9,7 +9,7 @@ If you look for AdGuard in the App Store, you'll find two apps — [AdGuard](htt
 
 AdGuard and AdGuard Pro for iOS offer lots of features for blocking ads, trackers and creating user rules, both in Safari and on network level.
 
-### Content blockers {#content-blockers}
+### İçerik engelleyiciler {#content-blockers}
 
 Content blockers serve as 'containers' for filtering rules that do the actual job of blocking ads and tracking. AdGuard for iOS contains six content blockers: General, Privacy, Social, Security, Custom, and Other. Previously Apple only allowed each content blocker to contain a maximum of 50K filtering rules, but with iOS 15 release the upper limit has moved to 150K rules.
 
@@ -33,7 +33,7 @@ There are eight of them, each category unites several filters that serve and sha
 
 > Custom filters category is empty by default for users to add there their filters by URL. You can find filters on the Internet or even try to [create one by yourself](/general/ad-filtering/create-own-filters).
 
-### User rules {#user-rules}
+### Kullanıcı kuralları {#user-rules}
 
 Here you can add new rules — either by entering them manually, or by using [the AdGuard manual blocking tool in Safari](#assistant). Use this tool to customize Safari filtering without adding an entire filter list.
 
@@ -85,7 +85,7 @@ To get access to this setting, *Advanced mode* has to be enabled from the *Gener
 
 Similar to filters that work in Safari, DNS filters are sets of rules written according to special [syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/). AdGuard will monitor your DNS traffic and block requests that match one or more rules. You can use filters such as [AdGuard DNS filter](https://github.com/AdguardTeam/AdguardSDNSFilter) or add hosts files as filters. Multiple filters can be added simultaneously. To know how to do it, get acquainted with [an exhaustive manual](../solving-problems/system-wide-filtering).
 
-#### Allowlist and Blocklist {#allowlist-blocklist}
+#### İzin listesi ve Engelleme listesi {#allowlist-blocklist}
 
 On top of DNS filters, you can have targeted impact on DNS filtering by adding single domains to Blocklist or to Allowlist. Blocklist even supports the same DNS syntax, and both of them can be imported and exported, just like Allowlist in Safari content blocking.
 
@@ -101,7 +101,7 @@ To enable *Advanced protection*, open the *Protection* tab by tapping the second
 
 ![Protection screen on iOS 14 and earlier *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_14_en.jpeg)
 
-### Compatibility with AdGuard VPN {#compatibility}
+### AdGuard VPN ile uyumluluk {#compatibility}
 
 In most cases, the ad blocker and the VPN application cannot work together, simply because there are certain system limitations. Nevertheless we've managed to find a solution to befriend [AdGuard VPN](https://adguard-vpn.com/) and AdGuard Ad Blocker. For your convenience we've added the *AdGuard VPN* block to the *Protection* section, so you can easily switch between two apps.
 
@@ -183,9 +183,9 @@ AdGuard supports widgets that provide quick access to Safari content blocking an
 
 If this setting is enabled, AdGuard will use only Wi-Fi for background filter updates.
 
-- **Invert the Allowlist**
+- **İzin listesini ters çevir**
 
-An alternative mode for Safari filtering, it unblocks ads everywhere except for the specified websites from the list. Disabled by default.
+An alternative mode for Safari filtering, it unblocks ads everywhere except for the specified websites from the list. Varsayılan olarak devre dışı.
 
 - **Advanced mode**
 

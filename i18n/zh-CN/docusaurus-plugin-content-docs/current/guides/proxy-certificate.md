@@ -11,122 +11,122 @@ sidebar_position: 2
 
 ## 如何下载并安装证书
 
-Depending on the operation system of your device (Windows/Mac/Android/iOS), follow one of these instructions:
+根据您设备的类型 (Windows/Mac/Android/iOS)，请遵守以下说明中的一条：
 
 ### Windows 系统 {#windows}
 
 1. 记下装有 AdGuard 的台式计算机的 IP 地址。
 
-2. Make sure AdGuard’s protection is enabled. Then check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings.
+2. 请确保 AdGuard 保护已启用。 然后在设置的「**网络**」中勾选「**将 AdGuard 用作 HTTP 代理**」。
 
-3. On the same device with AdGuard follow this link using any browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+3. 在装有 AdGuard 的同一台设备上，通过浏览器打开此链接： [http://local.adguard.org/cert](http://local.adguard.org/cert)
 
 4. 单击**下载**按钮。
 
-5. Transfer the downloaded **cert.cer** file to the device which traffic you want to route through AdGuard.
+5. 将下载的 **cert.cer** 文件传输到您想通过 AdGuard 路由流量的设备
 
-6. On that device, press the **Win** button, type `Manage computer certificates` and press **Enter**.
+6. 在该设备上，按 **Win** 按钮，输入 `管理计算机证书` ，按 **Enter**。
 
-7. On the *Certificates - Local Computer* page, find the *Trusted Root Certification* → *Certificates* folder.
+7. 在*「证书」-「本地计算机」*页面，找到*「受信任根证书」*→「*证书*」文件夹。
 
-8. Right-click the *Certificates* folder and click **All Tasks** → **Import**.
+8. 右键单击「*证书*」文件夹，并单击「**所有任务**」→「**导入**」。
 
-9. On the *Certificate Import Wizard* page, click **Next**.
+9. 在「*证书导入向导*」页面，单击「**下一步**」。
 
-10. Click **Browse** to import the certificate.
+10. 点击「**浏览**」，导入证书。
 
-11. Navigate to the **cert.cer** certificate file, select it, then click **Open**.
+11. 导航到 **cert.cer** 证书文件，选择它，然后点击「**打开**」。
 
-12. Click **Next**.
+12. 单击「**下一步**」。
 
-13. Select the **Place all certificates in the following store** checkbox.
+13. 选择「**将所有证书放置在以下存储区中**」复选框。
 
-14. Ensure that the *Certificate store* field displays *Trusted Root Certification Authorities* and click **Next**.
+14. 确保「*证书存储*」字段显示「*受信任的根证书颁发机构*」，然后点击「**下一步**」。
 
-15. Click **Finish**.
+15. 单击「**完成**」。
 
-16. Press the **Win** key, then open **Settings**.
+16. 按 **Win** 键，然后打开「**设置**」。
 
-17. Select **Network & Internet** → **Proxy**.
+17. 选择「**网络&Internet **」→「**代理**」。
 
-18. Toggle *Automatically detect settings* off.
+18. 关闭「*自动检测设置*」。
 
-19. Click **Set up** in the *Use a proxy server* tab.
+19. 在「*使用代理服务器*」中，点击「**设置**」。
 
-20. Turn the toggle on. For **Proxy IP address**, enter the noted IP address of your desktop computer (step 1). For **Port**, enter the port chosen in the network settings of the desktop AdGuard app.
+20. 打开开关。 对于「**代理 IP 地址**」，输入在第一步记下的台式计算机的 IP 地址。 对于**端口**，输入在桌面 AdGuard 应用程序的网络设置中选择的端口。
 
-21. Click **Save**.
+21. 单击「**保存**」。
 
 ### Mac 系统 {#mac}
 
 1. 记下装有 AdGuard 的台式计算机的 IP 地址。
 
-2. Make sure AdGuard’s protection is enabled. Then go to **Settings** → **Network** → **HTTP proxy** and check the box **Use AdGuard as an HTTP proxy**.
+2. 请确保 AdGuard 保护已启用。 然后转到 「**设置**」→「**网络**」→「**HTTP 代理**」并选中「**AdGuard 用作 HTTP 代理**」复选框。
 
-3. On the same computer with AdGuard follow this link using any browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+3. 在装有 AdGuard 的同一台计算机上，通过浏览器打开此链接： [http://local.adguard.org/cert](http://local.adguard.org/cert)
 
 4. 单击**下载**按钮。
 
-5. Transfer the downloaded **cert.cer** file to the device which traffic you want to route through AdGuard.
+5. 将下载的 **cert.cer** 文件传输到您想通过 AdGuard 路由流量的设备
 
-6. Double-click the downloaded certificate file.
+6. 双击下载的证书文件。
 
-7. Enter the administrator password and then click **Modify Keychain**.
+7. 输入管理员密码，然后点击「**修改钥匙串**」。
 
 8. Go to **Spotlight** (the search icon in the top right corner), type in "Keychain Access", and then select **Keychain Access** from the search results.
 
-9. Under *System*, highlight the certificate that you added.
+9. 在「*系统*」中，突出显示您添加的证书。
 
-10. Right-click on it and choose **Get Info** from the context menu.
+10. 右键单击它并从上下文菜单中选择「**查看信息**」。
 
-11. Expand *Trust* to display the trust policies for the certificate.
+11. 展开「*信任*」以显示该证书的信任政策。
 
-12. Under *Secure Sockets Layers (SSL)*, select **Always Trust**.
+12. 在「*安全套接层（SSL）*」，选择「**始终信任**」。
 
-13. Open **System Preferences** → **Network** and choose the upper active connection.
+13. 打开「**系统偏好**」→「**网络**」，选择上层活动连接。
 
-14. Click **Details...** and navigate to the **Proxies** tab.
+14. 点击「**更多信息...** ，并转到「**代理**」。
 
-15. Tick two checkboxes: *Web proxy (HTTP)* and *Secure web proxy (HTTPS)*. In the **Server** field, enter the noted IP address of your computer (step 1). In the **Port** field, enter the port chosen in the network settings of the AdGuard desktop app.
+15. 勾选两个复选框。「*网络代理（HTTP）*」和「*安全网络代理（HTTPS）*」。 在「**代理**」，请输入在第一步记下的您的计算机的 IP 地址。 在「**端口**」，输入在桌面 AdGuard 应用程序的网络设置中选择的端口。
 
 ### 安卓系统 {#android}
 
 1. 记下装有 AdGuard 的台式计算机的 IP 地址。
 
-2. Make sure AdGuard’s protection is enabled. Then check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings.
+2. 请确保 AdGuard 保护已启用。 然后在设置的「**网络**」中勾选「**将 AdGuard 用作 HTTP 代理**」。
 
-3. On the same computer with AdGuard follow this link using any browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+3. 在装有 AdGuard 的同一台计算机上，通过浏览器打开此链接： [http://local.adguard.org/cert](http://local.adguard.org/cert)
 
 4. 单击**下载**按钮。
 
-5. Transfer the downloaded **cert.cer** file to the device which traffic you want to route through AdGuard.
+5. 将下载的 **cert.cer** 文件传输到您想通过 AdGuard 路由流量的设备
 
-6. Locate and tap the previously downloaded **cert.cer** certificate to open the file.
+6. 找到并点击先前下载的 **cert.cer** 证书以打开文件。
 
 7. 在某些手机上，可能会要求您输入设备密码。 然后再按**确定**。 证书安装成功。
 
-8. Open advanced settings of the active Wi-Fi network.
+8. 打开连接的 Wi-Fi 网络的高级设置。
 
-9. 将**代理类型**切换为**手动**。 For **Proxy hostname**, enter the noted IP address of your desktop computer (step 1). For **Proxy port**, enter the port chosen in the network settings of the AdGuard desktop app.
+9. 将**代理类型**切换为**手动**。 对于「**代理主机名**」，请输入在第一步记下的 IP 地址。 对于「**代理端口**」，输入在桌面 AdGuard 应用程序的网络设置中选择的端口。
 
 ### iOS 系统 {#ios}
 
 1. 记下装有 AdGuard 的台式计算机的 IP 地址。
 
-2. Make sure AdGuard’s protection is enabled. Then check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings.
+2. 请确保 AdGuard 保护已启用。 然后在设置的「**网络**」中勾选「**将 AdGuard 用作 HTTP 代理**」。
 
-3. On the same computer with AdGuard follow this link using any browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+3. 在装有 AdGuard 的同一台计算机上，通过浏览器打开此链接： [http://local.adguard.org/cert](http://local.adguard.org/cert)
 
 4. 单击**下载**按钮。
 
-5. Transfer the downloaded **cert.cer** file to the device which traffic you want to route through AdGuard.
+5. 将下载的 **cert.cer** 文件传输到您想通过 AdGuard 路由流量的设备
 
-6. Open **Settings** → **Security** → **Encryption & Credentials** → **Install a certificate**. Android devices do not trust certificates by default so there will be a warning when you choose **CA certificate**. Tap **Install anyway**.
+6. 打开「**设置**」→「**安全**」→「**加密&凭证**」→「**安装证书**」。 安卓设备默认不信任证书，所以当您选择「**CA证书**」，您会收到警告。 点击「**继续安装**」。
 
-7. Open **Settings** → **Profile Donwloaded** and tap **Install** in the top right corner. 输入密码并确认安装。 点击**完成**。
+7. 打开「**设置**」→「**配置文件下载**」，然后点击右上角的「**安装**」。 输入密码并确认安装。 点击**完成**。
 
-8. Go to **Settings** → **General** → **About** → **Certificate Trust Settings**. Enable the switch beside *Adguard Personal CA*. 证书安装成功。
+8. 转到「**设置**」→ 「**常规**」→ 「**关于**」→ 「**证书信任设置**」。 启用「*Adguard Personal CA*」旁边的开关。 证书安装成功。
 
-9. On that device, open advanced settings of the active Wi-Fi network.
+9. 在该设备上，打开连接的 Wi-Fi 网络的高级设置。
 
-10. 将**代理类型**切换为**手动**。 For **Proxy hostname**, enter the noted IP address of your computer (step 1). For **Proxy port**, enter the port chosen in the network settings of the AdGuard desktop app.
+10. 将**代理类型**切换为**手动**。 对于「**代理主机名**」，请输入在第一步记下的您的计算机的 IP 地址。 对于「**代理端口**」，输入在桌面 AdGuard 应用程序的网络设置中选择的端口。

@@ -7,7 +7,7 @@ sidebar_position: 6
 
 如果您怀疑计算机被恶意软件植入或病毒感染了，首先可以使用领先的防病毒软件的实用程序检查您的计算机。
 
-## Free antivirus utilities {#free-antivirus}
+## 免费的防病毒软件 {#free-antivirus}
 
 实用程序不可枚举，您可以使用任何自己喜欢的，比如：
 
@@ -17,7 +17,7 @@ sidebar_position: 6
 
 ## 如何清除在系统上的恶意广告软件 {#adware}
 
-在互联网上可以找到许多用于解决此问题的应用程序。 您可以使用任何自己喜欢的实用程序。 But we strongly recommend using **[AdwareCleaner](https://www.malwarebytes.com/adwcleaner)** by **Malwarebytes**, **[Avast One](https://www.avast.com/c-adware-removal-tool)** by **Avast**, or **[Adaware](https://www.adaware.com)**. 这些广告软件扫描器非常易于使用，自行处理也一般不会遇到任何问题。
+在互联网上可以找到许多用于解决此问题的应用程序。 您可以使用任何自己喜欢的实用程序。 但我们强烈建议使用 **Malwarebytes** 的 **[AdwareCleaner](https://www.malwarebytes.com/adwcleaner)**、**Avast** 的 **[Avast One](https://www.avast.com/c-adware-removal-tool)**，或 **[Adaware](https://www.adaware.com)**。 这些广告软件扫描器非常易于使用，自行处理也一般不会遇到任何问题。
 
 让我们以 AdwareCleaner 为例。 结束下载应用程序并成功安装后，请执行以下步骤：
 

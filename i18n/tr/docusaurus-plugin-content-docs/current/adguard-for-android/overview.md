@@ -1,15 +1,15 @@
 ---
-title: Features overview
+title: Özelliklere genel bakış
 sidebar_position: 1
 ---
 
 > Disclaimer: AdGuard for Android is not to be confused with AdGuard Content Blocker. AdGuard Content Blocker is an app available in Google Play that has truncated functionality to meet restrictions imposed by the store. AdGuard for Android, on the contrary, is a powerful application to block ads, manage applications, and perform other roles that will be described in this article. The only place it can be downloaded from is [the AdGuard website](https://adguard.com/adguard-android/overview.html).
 
-## Ad blocking
+## Reklam engelleme
 
 Any ad blocker's main purpose is to block ads, and for the majority of AdGuard software ad-blocking algorithms are mostly the same. The mechanism of filtering ads is described [here](/general/ad-filtering/how-ad-blocking-works).
 
-![Ad blocking](https://cdn.adtidy.org/public/Adguard/Blog/manifestv3/adblockingworks.png)
+![Reklam engelleme](https://cdn.adtidy.org/public/Adguard/Blog/manifestv3/adblockingworks.png)
 
 The ad-blocking feature is pretty obvious in its concept, but there are some points worthy of a separate mention. Most importantly, AdGuard works as a universal filter sifting through your apps traffic and deciding what to do with this or that web request. The whole process is managed by filters — lists of special rules. The program has a default and constantly updated set of filters but you can also add your own filtering rules and filters to this set.
 
@@ -63,7 +63,7 @@ In case you have problems with the certificate installation, read [this article]
 
 > **We want to emphasize that AdGuard Ad Blocker will function without HTTPS filtering. However, it won't be able to properly filter ads on sites that use the HTTPS protocol (most of sites do that). So if you want to use the full functionality of the app and get the best ad filtering quality and processing speed, we strongly recommend you to activate HTTPS-filtering.**
 
-## Stealth Mode
+## Gizlilik Modu
 
 Many websites gather information about their visitors, such as their IP addresses, information about the browser and operating system installed, screen resolution, and even what page the user came or was redirected from. Some web pages use cookies to mark the browser and save your personal settings, user preferences, or "recognize" you upon your next visit. Stealth Mode safeguards your personal information from such data and statistics gathering systems.
 
@@ -111,7 +111,7 @@ In the Filtering Log, you can directly observe all web requests made by browsers
 
 You can block each request right there in one tap (or unblock it, if the request is already blocked). There's also detailed information about each request, although it is mostly aimed at the advanced users, particularly those who create their own filtering rules. We will be elaborating on it just a bit further below.
 
-## User rules
+## Kullanıcı kuralları
 
 As mentioned above, AdGuard for Android uses a set of filters to block ads. And then there is the User rules section that allows you to create and adjust your own filtering rules. It is located in the Settings tab of the AdGuard menu.
 
@@ -201,7 +201,7 @@ Userscripts (we also call them extensions) are basically mini-programs written i
 
 By the way, you can tap any added userscript to see more details, and to reinstall or delete it.
 
-## Compatibility with AdGuard VPN
+## AdGuard VPN ile uyumluluk
 
 The best kind of compatibility is when you install two apps and they just start working together. Presuming you already have AdGuard Ad Blocker installed, just download AdGuard VPN from Play Store (you can get there right from the ad blocker app, there's an item in General settings).
 
@@ -214,7 +214,7 @@ If you'd like to disable Compatibility Mode for any reason, it's very simple to 
 ## License
 
 While some ot the features in AdGuard for Android are free, others require [purchasing a license](https://adguard.com/en/license.html). There are Personal (up to three devices) and Family (up to 9 devices), Yearly and Lifetime license keys. The premium version offers the following features to its users:
-* Stealth Mode
+* Gizlilik Modu
 * Browsing security
 * Extensions
 * Ad blocking in all apps (not only browsers)

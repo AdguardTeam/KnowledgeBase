@@ -43,7 +43,7 @@ sidebar_position: 3
 
 1. Откройте приложение AdGuard (нажмите на иконку AdGuard в строке меню)
 
-![Иконка AdGuard в строке меню](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ja/General/mac1.png)
+![Иконка AdGuard в строке меню](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/mac1.png)
 
 2. Нажмите на иконку **шестерёнки** в правом верхнем углу
 3. Нажмите **Лицензия**

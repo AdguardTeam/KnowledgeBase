@@ -52,7 +52,7 @@ You can flexibly adjust the work of Stealth Mode: for instance, you can prohibit
 
 To learn everything about Stealth Mode and its many options, [read this article](/general/stealth-mode).
 
-### Browsing Security
+### Bezpečné prohlížení
 
 Browsing Security gives strong protection against malicious and fishing websites. No, AdGuard for Windows is not an antivirus. It will neither stop the download of a virus when it's already started, nor delete the already existing ones. But it will warn you if you're about to proceed to a website whose domain has been added to our "untrusted sites" database, or to download a file from such website. You can find more information about how this module works in the [dedicated article](/general/browsing-security).
 
@@ -152,13 +152,13 @@ To get more information about AdGuard VPN dive into the [AdGuard VPN Knowledge B
 
 There are other useful AdGuard options that shouldn't go unnoticed in this article, since they add much to user experience.
 
-### Support
+### Podpora
 
 ![Support *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/support.png)
 
 By clicking the Support tab you will open a dialog box through which you can report a bug, submit a feature request, or simply share your opinion of the product.
 
-### License
+### Licence
 
 ![License *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
 
@@ -166,7 +166,7 @@ This tab contains information about your license. Here you can:
 * find out the license type (nightly build, beta or release), the number of devices available for simultaneous connection to AdGuard, the license expiration date;
 * click the button to go to the license purchase page, and activate, reset or recover a license.
 
-### About
+### Informace
 
 ![About *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
 

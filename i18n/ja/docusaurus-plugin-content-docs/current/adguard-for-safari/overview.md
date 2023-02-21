@@ -5,7 +5,7 @@ sidebar_position: 1
 
 AdGuard for Safari was designed to conform to Apple's restrictions for ad blocking browser extensions and is the most popupar ad blocker for Safari. Although it can’t be compared to our desktop ad blocking apps, it's free and can protect you from ads, trackers, phishing, and malicious websites.
 
-## General {#general}
+## 一般 {#general}
 
 ![General tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/General.png)
 
@@ -72,7 +72,7 @@ If you need more filters, you can add them to *AdGuard Custom*. To add a custom 
 
 User rules can be used to customize ad blocking. They can be added manually, imported, or created automatically when you block an element on the page. To add your own filering rules, use a [special syntax](/general/ad-filtering/create-own-filters).
 
-## About {#about}
+## AdGuardについて {#about}
 
 ![About tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/About.png)
 

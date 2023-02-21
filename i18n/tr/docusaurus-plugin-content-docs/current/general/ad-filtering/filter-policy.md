@@ -22,15 +22,15 @@ These equally apply to rules in all filters.
 - Rules that often cause problems with the work of some websites will be deleted.
 - Website-specific rules will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
 
-## Ad filters
+## Tüm filtreler
 
 This part describes the AdGuard Base filter, the Mobile Ads filter, and the following language-specific filters: Russian, German, Dutch, Spanish/Portuguese, Japanese, Turkish, Chinese, and French.
 
-**What shall these filters block?**
+**Bu filtreler neyi engelleyecek?**
 
-- These filters will block ads wherever possible.
-- Ads should be blocked regardless of their reasons and goals.
-- We will block ads caused by malicious apps or extensions that inject ads. Please note that we do it only on the condition that you specify how to install such an app or extension.
+- Bu filtreler, mümkün olan her yerde reklamları engeller.
+- Nedenleri ve amaçları ne olursa olsun reklamlar engellenmelidir.
+- Kötü amaçlı uygulamaların veya reklam ekleyen uzantıların neden olduğu reklamları engelleriz. Please note that we do it only on the condition that you specify how to install such an app or extension.
 
 **Limitations and Exceptions**
 
@@ -59,11 +59,11 @@ If a rule is subject to the list of limitations described below, then it won’t
 - Rules that cause problems with website functionality will be removed.
 - Website-specific rules will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
 
-## AdGuard URL Tracking filter
+## AdGuard URL İzleme filtresi
 
 **What will be blocked with this filter?**
 
-- This filter will strip all tracking parameters from URLs.
+- Bu filtre, tüm izleme parametrelerini URL'lerden arındırır.
 
 We define **tracking** as collecting data regarding an individual’s identity or activity across one or more websites. Even if such data is considered to be personally unidentifiable, it’s still tracking.
 
@@ -108,7 +108,7 @@ If a rule is subject to the list of limitations described below, then it won’t
 
 Unlike other filters, this one **unblocks** certain ads. Read more about it in the [article on search ads and self-promotion](../search-ads).
 
-**What will be unblocked with this filter?**
+**Bu filtre ile nelerin engeli kaldırılacaktır?**
 
 - Search ads (ads that you see among the results when using an online search engine).
 - Website self-promotion (when an ad on a website is promoting this very website or other websites/social media/etc closely related to it).

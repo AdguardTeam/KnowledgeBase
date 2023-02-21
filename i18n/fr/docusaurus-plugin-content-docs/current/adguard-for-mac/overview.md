@@ -17,7 +17,7 @@ To start configuring AdGuard for Mac, you need to click the gear in the upper ri
 
 ## General Preferences
 
-![General](https://cdn.adtidy.org/content/kb/ad_blocker/mac/General.jpg)
+![Général](https://cdn.adtidy.org/content/kb/ad_blocker/mac/General.jpg)
 
 Descriptions under option titles seem self-explanatory, but still:
 
@@ -124,19 +124,19 @@ As for the second option — well, yes, in fact you can use AdGuard as a regular
 
 There are other useful AdGuard options that shouldn't go unnoticed in this article, since they add much to user experience.
 
-### License
+### Licence
 
 First, there's the License tab that you can open from the dropdown main menu (the one that opens once you click the gear icon on the upper right of the main window). From this tab you can see which license type you are using, check its status and validity period.
 
-![License](https://cdn.adtidy.org/content/kb/ad_blocker/mac/License.jpg)
+![Licence](https://cdn.adtidy.org/content/kb/ad_blocker/mac/License.jpg)
 
 In this same tab you can refresh your license status, renew your license or reset the license key using the corresponding buttons.
 
-### Support
+### Assistance
 
 Click the gear icon in the upper right corner, select "Support", and you will be able to send a bug report or a feature request to our support team. Be sure to add your real actual email though, because without it the message won't be sent.
 
-![Support](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Support.jpg)
+![Assistance](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Support.jpg)
 
 To report a missed ad or a broken website, please follow the link above the message window, we use a separate reporting tool for those types of issues.
 
