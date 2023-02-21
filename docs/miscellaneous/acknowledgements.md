@@ -147,7 +147,6 @@ Also a huge thanks and gratitude to all beta testers and other engaged users, wh
 * krystian3w — very active filter contributor
 * lancelot.moon — translator and proofreader to Chinese Traditional in Crowdin, beta tester
 * Lord Ami — beta tester, active AdGuard Forum member
-* Lukas Novotny (novas78) — translator and proofreader to Czech in Crowdin
 * malware1 — beta tester, active AdGuard Forum member
 * milder — beta tester, active AdGuard Forum member
 * Nicos18 — beta tester, active AdGuard Forum member
