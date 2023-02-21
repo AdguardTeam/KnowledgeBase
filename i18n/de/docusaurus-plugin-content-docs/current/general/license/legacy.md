@@ -1,83 +1,83 @@
 ---
-title: Legacy licenses FAQ
+title: 'Altlizenzen: FAQ'
 sidebar_position: 4
 ---
 
-We have written this article to avoid confusion and explain in detail how you can renew/upgrade an outdated (legacy) AdGuard license.
+Wir haben diesen Artikel geschrieben, um Verwirrung zu vermeiden und ausführlich zu erklären, wie Sie eine veraltete (legacy) AdGuard-Lizenz erneuern/erweitern können.
 
-## About the outdated licenses
+## Über die veralteten Lizenzen
 
-Initially licenses of the following types were available to activate AdGuard products:
+Ursprünglich waren Lizenzen der folgenden Typen verfügbar, um AdGuard-Produkte zu aktivieren:
 
-**Standard** — for desktop applications AdGuard for Windows/AdGuard for Mac
+**Standard** – für Desktop-Anwendungen AdGuard für Windows/AdGuard für Mac
 
-**Mobile** — for mobile applications AdGuard for Android/AdGuard for iOS
+**Mobile** — für mobile Apps AdGuard für Android/AdGuard für iOS
 
-**Premium** — a license that combines desktop + mobile application
+**Premium** – eine Lizenz, die Desktop- und mobile Apps kombiniert
 
-Standard and Mobile licenses could be purchased for 1 to 9 devices.
+Standard- und Mobile-Lizenzen können für 1 bis 9 Geräte erworben werden.
 
-Standard were valid only for desktops, and Mobile were only for smartphones and tablets.
+Standard galt nur für Desktops und Mobile nur für Smartphones und Tablets.
 
-Premium licenses could have been used on 2-18 devices. Depending on the number of devices selected upon purchasing, they allowed you to simultaneously activate AdGuard on an equal number of computers and mobile devices: 2+2, 3+3, etc.
+Premium-Lizenzen hätten auf 2-18 Geräten verwendet werden können. Abhängig von der Anzahl der beim Kauf ausgewählten Geräte konnten Sie AdGuard gleichzeitig auf einer gleichen Anzahl von Computern und Mobilgeräten aktivieren: 2+2, 3+3 usw.
 
-For example, you might have had a Premium license for 2+2 devices, that is, the license could be installed on 2 computers and 2 phones/tablets. Or, for example, for 9+9 (18 devices in total), then the license could be installed on 9 computers and 9 phones/tablets.
+Beispielsweise könnten Sie eine Premium-Lizenz für 2+2 Geräte gehabt haben, d. h. die Lizenz könnte auf 2 Computern und 2 Telefonen/Tablets installiert werden. Oder beispielsweise für 9+9 (insgesamt 18 Geräte) könnte die Lizenz auf 9 Computern und 9 Telefonen/Tablets installiert werden.
 
-For all types (Standard, Mobile, Premium) there were options for a Yearly and Lifetime license.
+Für alle Typen (Standard, Mobil, Premium) gab es Optionen für eine Jahres- und Lebenslange Lizenz.
 
-In October 2019 AdGuard switched to the new licensing system: from then on, licenses can still be purchased for 1 year or Lifetime, but their types have become **Personal** (for up to 3 devices) or **Family** (for up to 9 devices).
+Im Oktober 2019 hat AdGuard auf das neue Lizenzierungssystem umgestellt: Seitdem können Lizenzen weiterhin für 1 Jahr oder auf Lebenszeit erworben werden, aber die Lizenztypen sind nun **Einzellizenz** (für bis zu 3 Geräte) oder **Familienlizenz** (für bis zu 9 Geräte).
 
-One more change: **license keys of the new type can now be used on any device, in any combination. For example, a Personal License can be installed on Android, Mac and iOS, just like on two Windows computers and an Apple tablet, etc.**
+Eine weitere Änderung: **Lizenzschlüssel des neuen Typs können jetzt auf jedem Gerät und in jeder Kombination verwendet werden. Beispielsweise kann eine Einzellizenz auf Android, Mac und iOS installiert werden, genauso wie auf zwei Windows-Computern und einem Apple-Tablet usw.**
 
-## What happened to the outdated licenses?
+## Was ist mit den veralteten Lizenzen passiert?
 
-Standard were automatically made universal, which means that they can be activated on any devices.
+Standard-Lizenzen wurden automatisch universell gemacht, was bedeutet, dass sie auf beliebigen Geräten aktiviert werden können.
 
-Mobile licenses remained unchanged and platform-limited (they can still only be used on phones or tablets).
+Mobile Lizenzen blieben unverändert und plattformbeschränkt (sie können weiterhin nur auf Telefonen oder Tablets verwendet werden).
 
-Premium licenses also remained unchanged and platform-limited. And although **Premium licenses are now displayed in your personal account by the total number of devices**, they can still be activated on desktop + mobile set of devices.
+Premium-Lizenzen blieben ebenfalls unverändert und plattformbeschränkt. Und obwohl **Premium-Lizenzen jetzt in Ihrem persönlichen Konto nach der Gesamtzahl der Geräte** angezeigt werden, können sie immer noch nur gleichermaßen auf Desktop- und Mobilgeräten aktiviert werden.
 
-For example, this is how the 1+1 key looks like:
+So sieht zum Beispiel die Taste 1+1 aus:
 
-![1+1 key](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/1.outdatedlicenses_en.png)
+![1+1 Schlüssel](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/1.outdatedlicenses_en.png)
 
-*But despite the total number of devices (2) it can be activated on 1 desktop and 1 mobile device.*
-> All the outdated licenses have a "legacy" badge in the AdGuard account. And they are automatically converted to a new type when you either renew or upgrade them. But there are some nuances. Let's see which licenses can be converted to a new type and how to do it.
+*Aber trotz der Gesamtzahl der Geräte (2) kann es auf 1 Desktop und 1 Mobilgerät aktiviert werden.*
+> Alle veralteten Lizenzen haben ein „Legacy“-Abzeichen im AdGuard-Konto. Und sie werden automatisch in einen neuen Typ umgewandelt, wenn Sie sie entweder erneuern oder erweitern. Aber es gibt einige Nuancen. Sehen wir uns an, welche Lizenzen in einen neuen Typ umgewandelt werden können und wie das geht.
 
-## I have an outdated (legacy) key. What renewal/upgrade options are available for me?
+## Ich habe einen veralteten (Legacy) Schlüssel. Welche Erneuern/Erweitern-Optionen stehen mir zur Verfügung?
 
-You can check this on the [renewal page](https://adguard.com/renew.html) or in your [AdGuard account](https://my.adguard.com/main.html):
+Sie können dies auf der [Verlängerungsseite](https://adguard.com/renew.html) oder in Ihrem [AdGuard-Konto](https://my.adguard.com/main.html) überprüfen:
 
-![Upgrade](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_en.png)
-> Go to "My licenses" tab and check what actions are available to you for each specific key. Below we will explain with specific examples.
+![Erweitern](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_en.png)
+> Gehen Sie zur Registerkarte „Meine Lizenzen“ und prüfen Sie, welche Aktionen Ihnen für jeden bestimmten Schlüssel zur Verfügung stehen. Im Folgenden erläutern wir dies anhand konkreter Beispiele.
 
-### Licenses for 1/2/3 devices
+### Lizenzen für 1/2/3 Geräte
 
-**Yearly** licenses for 1, 2, 3 devices can be converted to either Personal or Family:
+**Jährliche** Lizenzen für 1, 2, 3 Geräte können entweder in Einzel- oder Familien-Lizenz umgewandelt werden:
 
-![Upgrade or renew](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/3.yearly_en.png)
-> Choose based on how many devices you need to protect.
+![Erweitern oder erneuern](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/3.yearly_en.png)
+> Wählen Sie aus, wie viele Geräte Sie schützen möchten.
 
-Instead of renewal you can switch to Lifetime:
+Anstelle einer Erneuerung können Sie auf Lebenslange Lizenz umsteigen:
 
-![Lifetime](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/4.lifetime_en.png)
+![Lebenslang](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/4.lifetime_en.png)
 
-**Lifetime** licenses can only be converted to Family (9 devices) due to technical limitations:
+**Lebenslange** Lizenzen können aufgrund technischer Einschränkungen nur in Familienlizenz (9 Geräte) umgewandelt werden:
 
-![Lifetime upgrade](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/5.lifetimeupgrade_en.png)
+![Auf Lebenslange erweitern](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/5.lifetimeupgrade_en.png)
 
-### Licenses for 4+ devices (up to 9)
+### Lizenzen für 4+ Geräte (bis zu 9)
 
-**Yearly** keys of this configuration can only be converted into a Family license:
+**Jährliche** Schlüssel dieser Konfiguration können nur in eine Familienlizenz umgewandelt werden:
 
-![Yearly license for 4 devices](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/6.yearly4+devices_en.png)
+![Jahreslizenz für 4 Geräte](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/6.yearly4+devices_en.png)
 
-**Lifetime** licenses for 4 or more devices cannot be upgraded due to technical limitation:
+**Lebenslange** Lizenzen für 4 oder mehr Geräte können aufgrund technischer Einschränkungen nicht aktualisiert werden:
 
-![Lifetime license for 4 devices](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/7.lifetime4+devices_en.png)
+![Lebenslange Lizenz für 4 Geräte](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/7.lifetime4+devices_en.png)
 
-### Licenses for 9+ devices
+### Lizenzen für 9+ Geräte
 
-Premium keys (5+5 and more) and custom keys for 10+ devices that you purchased individually with the help of our managers.
+Premium-Schlüssel (5+5 und mehr) und benutzerdefinierte Schlüssel für 10+ Geräte, die Sie individuell mit Hilfe unserer Manager erworben haben.
 
-These are quite unique cases, so if you want to upgrade your license to Lifetime, please contact us at partners@adguard.com. We will make you a special offer depending on the specific configuration of your license.
+Da es sich hierbei um Einzelfälle handelt, wenden Sie sich bitte an partners@adguard.com, wenn Sie Ihre Lizenz auf Lebenslange erweitern möchten. Abhängig von der konkreten Konfiguration Ihrer Lizenz machen wir Ihnen ein spezielles Angebot.

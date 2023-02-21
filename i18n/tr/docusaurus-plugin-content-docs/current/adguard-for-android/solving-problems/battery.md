@@ -17,7 +17,7 @@ To mitigate this misconception, we added a new screen called 'Battery usage'. Yo
 
 Inside you will find a chart that shows the AdGuard battery resource consumption within the last 24 hours, with an option to get more detailed hour-to-hour data by tapping on the dots on the chart. Besides that, there’s also a numeric breakdown of the relevant data and a short technical explanation.
 
-### Real example
+### Gerçek örnek
 
 On the screenshots below you can see the battery resource consumption statistics for a night and subsequent morning:
 

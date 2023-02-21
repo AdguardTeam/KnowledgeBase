@@ -1,5 +1,5 @@
 ---
-title: Userscripts
+title: Uživatelské skripty
 sidebar_position: 5
 ---
 

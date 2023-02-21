@@ -3,40 +3,40 @@ title: 什么是 AdGuard 许可密钥
 sidebar_position: 1
 ---
 
-## 什么是 AdGuard 许可密钥
+## 什么是 AdGuard 许可证密钥
 
-A license is permission to use the AdGuard product, provided in accordance with the End User License Agreement. AdGuard licenses exist in the form of license keys, activation codes, and product cards in the user's [AdGuard account](../../account/register).
+许可证是使用 AdGuard 产品的许可，根据《最终用户许可协议》提供的。 AdGuard 许可证以许可证密钥、激活码和产品卡的形式存在于用户的 [AdGuard 账号](../../account/register)中。
 
-Some licenses need to be purchased (e.g. AdGuard Ad Blocker Personal), some are free and limited by term (e.g. trial licenses of AdGuard apps) or have a limited functionality (e.g. AdGuard for iOS or AdGuard Browser extension). Here's the list of all types of AdGuard Ad Blocker licenses.
+有些许可证需要支付（如 AdGuard 广告拦截程序个人版），有些是免费的，但有期限限制（如 AdGuard 应用程序的试用许可证）或功能有限（如 AdGuard iOS 版或 AdGuard 浏览器扩展）。 以下是所有类型的 AdGuard 广告拦截程序的许可证的列表。
 
-1. **Trial licenses** are free time-limited licenses with full functionality: AdGuard for Windows — 14-day trial, AdGuard for Mac — 14-day trial, AdGuard for Android — 7-day trial.
-2. **Free licenses** are not time-limited, but have limited functionality: AdGuard Browser extension, AdGuard Content Blocker, AdGuard for iOS.
-3. **Subscriptions** are paid licenses that are renewed automatically every month or every year. They can also be extended manually. AdGuard Ad Blocker Monthly subscription, AdGuard Ad Blocker 1-year subscription.
-4. **Licenses purchased from distributors** and **gifted licenses** are time-limited and cannot be renewed automatically. Though, they can be extended manually: AdGuard Ad Blocker Monthly license, AdGuard Ad Blocker 1-year license.
-5. **Lifetime licenses** are not time-limited and have full functionality: AdGuard Ad Blocker Lifetime, AdGuard Pro for iOS.
+1. **试用许可证**是启用所有功能的免费许可证，具有期限的限制： AdGuard Windows版有14天试用期、 AdGuard Mac版有14天试用期、 AdGuard Android版有7天试用期。
+2. **免费许可证**没有时间限制，但部分功能受限： AdGuard 浏览器扩展、 AdGuard 内容拦截器、 AdGuard iOS版。
+3. **订阅**是每月或每年自动或者 手动更新的付费许可证。 AdGuard 广告拦截程序月度订阅， AdGuard 广告拦截程序一年订阅。
+4. **通过分销商购买的许可证** ，以及**赠送的许可证** ，有时间限制，无法自动更新。 但是，用户可以手动续订它们： AdGuard 广告拦截程序月度许可证， AdGuard 广告拦截程序一年许可证。
+5. **终身许可证** ，不受时间限制，具有完整的功能： AdGuard 广告拦截程序终身、 AdGuard Pro iOS版。
 
-## How many devices can be added{#devices}
+## 用户可以连接多少设备 {#devices}
 
-Different licenses can be used with a different number of devices:
-* Personal: up to three devices,
-* Family: up to nine devices,
-* AdGuard Pro for iOS: one device.
+不同许可证可用于不同数量的设备：
+* 个人版：最多支持 3 台设备；
+* 家庭版：最多支持 9 台设备；
+* iOS版 AdGuard Pro：支持 1 台设备。
 
-> To use your license on a device, log in to your [AdGuard account](../../account/features) on it. To extend the device limit, you can [upgrade](../activation#how-to-upgrade-a-license) your license.
+> 要在设备上使用您的许可证，请登录您的 [AdGuard 账号](../../account/features)。 要增加设备数量，用户可以[升级](../activation#how-to-upgrade-a-license)许可证。
 
-## What is a license key{#license-key}
+## 什么是许可证密钥{#license-key}
 
-A license key is a unique sequence of characters that represents an AdGuard Ad Blocker license. It is automatically registered for the email you used for license purchase. With a license key, you can:
-* log in to your AdGuard account in some products (e.g. AdGuard for Windows),
-* [activate your license](../activation) in a product, if you don't have an AdGuard account,
-* bind your license to your AdGuard account and unbind it.
+许可证密钥是一个独一无二的字符序列，代表 AdGuard 广告拦截程序的许可证。 密钥将自动绑定到用户购买许可证时输入的电子邮箱。 有了许可证密钥，用户可以：
+* 在一些软件里登录 AdGuard 账号（例如 AdGuard Windows版）；
+* 如果没有 AdGuard 账号，您可以[在软件里激活许可证](../activation) ；
+* 将您的许可证绑定到 AdGuard 帐账号并解除绑定。
 
-> When unbinding a license, be sure you write the license key down beforehand or note in some other (safe) way. You'll need the key for re-binding your license or transferring it to another account.
+> 当解除许可证时，请确保您记下许可密钥或以其他（安全的）方式记住它。 您将需要许可证密钥重新绑定您的许可证或将其转移到另一个账号。
 
-## How to recover a license key
+## 如何恢复许可证密钥
 
-You can easily check which license keys belong to you in your [AdGuard Account](../../account/register).
+用户可以在[AdGuard 账号](../../account/register)中查看自己的许可证密钥。
 
-The license key is bound to your account via the email address you used to purchase AdGuard.
+许可证密钥通过用户购买 AdGuard 时输入的电子邮件地址绑定到账号。
 
-**Please note** that it is often not enough to just find out what your license key is. If it was already used on another computer, it’s necessary to unbind it from that computer through the AdGuard Account before using it again.
+**温馨提示**：在许多情况下，仅仅知道自己许可证密钥是不够的。 如用户在另一台计算机上使用它，并且设备数量达到了上限，用户必须在 AdGuard 账号中解除对该设备的绑定，才能再次使用它。

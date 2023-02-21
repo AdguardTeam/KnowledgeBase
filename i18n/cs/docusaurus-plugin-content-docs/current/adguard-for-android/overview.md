@@ -1,41 +1,41 @@
 ---
-title: Features overview
+title: Přehled funkcí
 sidebar_position: 1
 ---
 
-> Disclaimer: AdGuard for Android is not to be confused with AdGuard Content Blocker. AdGuard Content Blocker is an app available in Google Play that has truncated functionality to meet restrictions imposed by the store. AdGuard for Android, on the contrary, is a powerful application to block ads, manage applications, and perform other roles that will be described in this article. The only place it can be downloaded from is [the AdGuard website](https://adguard.com/adguard-android/overview.html).
+> Upozornění: AdGuard pro Android nelze zaměňovat s Blokátorem obsahu AdGuard. Blokátor obsahu AdGuard je aplikace dostupná v Google Play, která má omezené funkce, aby splňovala stanovy obchodu. AdGuard pro Android je naopak výkonná aplikace pro blokování reklam, správu aplikací a další funkce, které jsou popsány v tomto článku. AdGuard pro Android můžete stáhnout [webových stránek AdGuardu](https://adguard.com/adguard-android/overview.html).
 
 ## Blokování reklam
 
-Any ad blocker's main purpose is to block ads, and for the majority of AdGuard software ad-blocking algorithms are mostly the same. The mechanism of filtering ads is described [here](/general/ad-filtering/how-ad-blocking-works).
+Hlavním účelem blokátoru reklam je blokování reklam, algoritmy blokování reklam jsou u většiny programů AdGuard stejné. Mechanismus filtrování reklam je popsán [zde](/general/ad-filtering/how-ad-blocking-works).
 
 ![Blokování reklam](https://cdn.adtidy.org/public/Adguard/Blog/manifestv3/adblockingworks.png)
 
-The ad-blocking feature is pretty obvious in its concept, but there are some points worthy of a separate mention. Most importantly, AdGuard works as a universal filter sifting through your apps traffic and deciding what to do with this or that web request. The whole process is managed by filters — lists of special rules. The program has a default and constantly updated set of filters but you can also add your own filtering rules and filters to this set.
+Funkce blokování reklam je ve svém pojetí zcela zřejmá, ale některé body si zaslouží samostatnou zmínku. Nejdůležitější je, že AdGuard funguje jako univerzální filtr, který prochází provoz aplikací a rozhoduje, co s tím či oním webovým požadavkem udělat. Celý proces se řídí pomocí filtrů — seznamů speciálních pravidel. Program má výchozí a neustále aktualizovanou sadu filtrů, ale můžete do ní přidat i vlastní pravidla filtrování a filtry.
 
-Most mobile ad blockers for Android use this principle, but what is pretty much the whole app in their case is only one of the many features for AdGuard. Read [this comparative article](https://adguard.com/en/blog/adguard-vs-adaway-dns66.html) to learn the differences between AdGuard and other ad blockers.
+Tento princip využívá většina blokátorů mobilních reklam pro Android. To, co je v jejich případě v podstatě celá aplikace, je pro AdGuard pouze jednou z mnoha funkcí. Přečtěte si [tento srovnávací článek](https://adguard.com/en/blog/adguard-vs-adaway-dns66.html) a zjistěte, jaké jsou rozdíly mezi AdGuardem a jinými blokátory reklam.
 
-## Filters
+## Filtry
 
-The program uses a lot of different filters, our own and third-party ones, sorted by language and their purpose. For example, filters in the Annoyances category are very different from the language-specific ones.
+Program používá mnoho různých filtrů, vlastních i cizích, seřazených podle jazyka a účelu. Například filtry v kategorii Obtěžování se velmi liší od jazykově specifických filtrů.
 
-![Filters *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filters1.png)
+![Filtry *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filters1.png)
 
-Find out more about all the filters available for AdGuard products by reading their descriptions in the app or [this comprehensive article](/general/ad-filtering/adguard-filters).
+Více informací o všech filtrech dostupných pro produkty AdGuardu získáte přečtením jejich popisu v aplikaci nebo v [tomto obsáhlém článku](/general/ad-filtering/adguard-filters).
 
 ## Vlastní filtry
 
-![Custom filters *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/custom-filters.png)
+![Vlastní filtry *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/custom-filters.png)
 
-AdGuard allows you to create your own custom filters, using the same type of rules that we have in our filters. If you want to try your hand at this, we would recommend studying [the article on creating your own ad filters](/general/ad-filtering/create-own-filters) which describes the AdGuard rules syntax in detail and provides plenty of examples.
+AdGuard umožňuje vytvářet vlastní filtry pomocí stejného typu pravidel, jaká máme v našich filtrech. Pokud si to chcete vyzkoušet, doporučujeme prostudovat článek o [vytváření vlastních filtrůreklam ](/general/ad-filtering/create-own-filters), který podrobně popisuje syntaxi pravidel AdGuardu a uvádí spoustu příkladů.
 
-> Tip: use the Import feature to transfer your rules to a different device.
+> Tip: pomocí funkce Import přeneste svá pravidla do jiného zařízení.
 
-## HTTPS filtering
+## HTTPS filtrování
 
 Nowadays almost all websites work via HTTPS, the web protocol where the last S letter stands for "secure". It happened so that most advertisers use this protocol as well, this is why [HTTPS filtering](/general/https-filtering/what-is-https-filtering) is really crucial for a modern ad blocker.
 
-![What is https](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https.png)
+![Co je https](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https.png)
 
 To be able to filter HTTPS traffic, AdGuard needs to install a certificate into your device's user storage. On older versions of Android OS this was done automatically during the onboarding process or later via AdGuard settings, and it only required a couple of taps. On Android 11 and later automatic certificate installation is no longer available. Now you need to install the certificate manually.
 
@@ -71,19 +71,19 @@ You can flexibly adjust the work of Stealth Mode: for instance, you can prohibit
 
 To learn all the main features and options you can manage in the Stealth mode settings, [read this article](/general/stealth-mode).
 
-![Stealth mode *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/stealth-mode.png)
+![Režim utajení *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/stealth-mode.png)
 
-## Browsing Security
+## Bezpečné prohlížení
 
 Phishing is a fraudulent online practice aimed at obtaining sensitive information like usernames, passwords, credit card details and such from internet users. This form of fraud, effected through spoof emailing and fake websites posing as trusted mediums like banks, social services etc., is causing more financial damage every year. As for malware (malicious software), it is as the name suggests — any type of software designed with the intent to damage the personal computer or other device it gets into. What once began as a prank now is a tool to steal confidential information from users and businesses.
 
-![Browsing security *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/browsing-security.png)
+![Bezpečné prohlížení *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/browsing-security.png)
 
 Fortunately, AdGuard's Browsing Security module protects you from visiting phishing and malicious websites. It also warns you about malware being downloaded onto your device. In case you want to learn more about Browsing Security, read [this article](/general/browsing-security).
 
 > But note that AdGuard for Android is not an antivirus. It will neither stop the actual download of a virus nor delete the already existing ones. For the complete protection of your device, we recommend using AdGuard in tandem with a dedicated AV tool.
 
-![Browsing security warning *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/browsing_security_warning.png)
+![Upozornění Bezpečného prohlížení *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/browsing_security_warning.png)
 
 At the same time, we'd like to emphasize that your personal data is *not* transferred anywhere, and AdGuard does *not* know which websites you are visiting. The security check is not performed against an open web address (URL) but through hash prefixes (hash is a certain data structure that renders unambiguous each address added to the base). However, you can send us information on the websites you visit to improve the database, if you opt to. Learn more about AdGuard's phishing and malware protection.
 
@@ -95,7 +95,7 @@ One of the main stated purposes of AdGuard for Android is to give users back the
 
 In the Apps Management module you can choose which apps should have Wi-Fi or mobile data access, which will be filtered by AdGuard and which not. You can also change the background Internet access rules for your apps when the screen is locked. These settings can be applied to all installed apps at once or on the individual basis.
 
-![Apps management *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/apps-management.png)
+![Správa aplikací *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/apps-management.png)
 
 You can find extra settings in the upper right corner of the Apps Management screen. They will help you fine-tune AdGuard for Android to your preference. For example, you can make the common settings applicable to each and every app, or select the apps which need a more detailed approach.
 
@@ -107,7 +107,7 @@ By tapping the icons, you will see a screen showing app-specific traffic to help
 
 In the Filtering Log, you can directly observe all web requests made by browsers and apps. Thanks to this feature, you have full control over all processes on your device.
 
-![Filtering log *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering-log.png)
+![Záznam filtrování *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering-log.png)
 
 You can block each request right there in one tap (or unblock it, if the request is already blocked). There's also detailed information about each request, although it is mostly aimed at the advanced users, particularly those who create their own filtering rules. We will be elaborating on it just a bit further below.
 
@@ -115,7 +115,7 @@ You can block each request right there in one tap (or unblock it, if the request
 
 As mentioned above, AdGuard for Android uses a set of filters to block ads. And then there is the User rules section that allows you to create and adjust your own filtering rules. It is located in the Settings tab of the AdGuard menu.
 
-![User rules *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/user-rules.png)
+![Uživatelská pravidla *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/user-rules.png)
 
 When you first install AdGuard, the User rules section is empty. To fill it with rules, you will need to understand the basics of the rules syntax. Don't worry if you are not familiar with it, here's a good place to start should you feel an urge to delve deeper into custom rules creation.
 
@@ -135,7 +135,7 @@ DNS filtering has its own separate tab within the AdGuard for Android app home s
 
 DNS blocking is a standalone feature that complements AdGuard protection suite.
 
-![DNS mechanism](https://cdn.adtidy.org/public/Adguard/Blog/android-features/DNS-mechanism.jpg)
+![Mechanismus DNS](https://cdn.adtidy.org/public/Adguard/Blog/android-features/DNS-mechanism.jpg)
 
 There are two methods of DNS blocking:
 
@@ -171,7 +171,7 @@ To enable DoQ in AdGuard for Android, perform the following steps:
 
 It is very much like the regular User filter, but for DNS requests.
 
-![DNS user filter *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/dns-user-filter.png)
+![Uživatelský filtr DNS *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/dns-user-filter.png)
 
 You'll find DNS user filter at *Settings > DNS Filtering > DNS Requests blocking*. DNS User filter supports two types of syntax: a limited portion of AdGuard syntax and "hosts" syntax. You can read more about it in our Knowledge Base.
 
@@ -179,7 +179,7 @@ You'll find DNS user filter at *Settings > DNS Filtering > DNS Requests blocking
 
 You can add any [custom DNS filters](https://filterlists.com/) or custom hosts lists. A useful feature considering how popular hosts lists are among Internet users.
 
-![DNS filters *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/dns-filters.png)
+![DNS filtry *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/dns-filters.png)
 
 This option is available on the *Settings > DNS Filtering > DNS Requests blocking* screen.
 
@@ -189,7 +189,7 @@ A proxy server is basically another computer serving as a hub that processes you
 
 > Some popular VPN providers offer an alternative way to use their service as a proxy. This can be used to run them alongside AdGuard in local VPN mode.
 
-![Proxy settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/proxy-settings.png)
+![Nastavení proxy *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/proxy-settings.png)
 
 Contrary to a popular opinion, using a proxy server is not just about bypassing access restriction to geoblocked resources. It is about security! If you are using a proxy server, intruders won't know what websites you visit. You can also use AdGuard along with the anonymity network TOR (we have already integrated AdGuard with Tor for your convenience!). Here is a [Wiki article](https://en.wikipedia.org/wiki/Tor_(anonymity_network)) where the whole concept of TOR network is nicely explained in case you wish to find out more.
 
@@ -197,7 +197,7 @@ Contrary to a popular opinion, using a proxy server is not just about bypassing 
 
 Userscripts (we also call them extensions) are basically mini-programs written in JavaScript that extend the functionality of one or more websites. Usually, you'd need some special userscript manager to add them, and it's traditionally more of a desktop thing. But with AdGuard everything is possible! Now you can add any userscripts by URL or load them from a file, and AdGuard will serve as a userscript manager and take care of the rest. Go to *Settings > Extensions* to enable some of the pre-installed extensions or to add custom userscripts.
 
-![Extensions *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/extensions.png)
+![Rozšíření *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/extensions.png)
 
 By the way, you can tap any added userscript to see more details, and to reinstall or delete it.
 
@@ -205,13 +205,13 @@ By the way, you can tap any added userscript to see more details, and to reinsta
 
 The best kind of compatibility is when you install two apps and they just start working together. Presuming you already have AdGuard Ad Blocker installed, just download AdGuard VPN from Play Store (you can get there right from the ad blocker app, there's an item in General settings).
 
-![Compatibility *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/compatibility.png)
+![Kompatibilita *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/compatibility.png)
 
 Both apps will detect each other and do everything that's needed for smooth joint work. All that will be left for you is to enjoy both ad-free Internet and the benefits of a VPN. It also works the other way around just as well: install AdGuard Ad Blocker on top of an already-running AdGuard VPN and you're good.
 
 If you'd like to disable Compatibility Mode for any reason, it's very simple to do so from AdGuard Ad Blocker settings, just toggle the switch. Additionally, you can add AdGuard Ad Blocker and AdGuard VPN tiles to your device's notification bar and toggle them in one tap at your own will — thanks to Compatibility Mode the configuration will change immediately and silently.
 
-## License
+## Licence
 
 While some ot the features in AdGuard for Android are free, others require [purchasing a license](https://adguard.com/en/license.html). There are Personal (up to three devices) and Family (up to 9 devices), Yearly and Lifetime license keys. The premium version offers the following features to its users:
 * Režim utajení

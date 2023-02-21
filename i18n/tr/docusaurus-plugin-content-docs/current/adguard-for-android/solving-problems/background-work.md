@@ -424,7 +424,7 @@ Other solutions:
 
 Devices with OxygenOS on board are the most problematic, with its OS-specific cache cleaning and free RAM, including OS optimization. In addition, OxygenOS can interrupt the AdGuard's work if you do not use it for a while. To avoid these unwanted consequences, follow these steps.
 
-### Locking the app
+### Uygulamayı kilitleme
 
  - Go to **Settings**
 
@@ -476,7 +476,7 @@ Go to **Settings** → **Advanced** → **Recent app management** → Switch to 
 
 ## Sony
 
-Sony was the first mobile OS developer to introduce non-standard background process optimization. It is called **Stamina mode** and it instantly breaks all background processes if enabled. To solve this:
+Sony was the first mobile OS developer to introduce non-standard background process optimization. It is called **Stamina mode** and it instantly breaks all background processes if enabled. Bunu çözmek için:
 
 Go to **Settings** → **Battery** → Disable **STAMINA mode**
 

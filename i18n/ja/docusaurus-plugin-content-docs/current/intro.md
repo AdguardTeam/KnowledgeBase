@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: 総合概要
 sidebar_position: 1
 slug: /
 ---
@@ -15,7 +15,7 @@ AdGuard is one of the leaders on the market of ad-blocking software with 10+ yea
 
 But we also develop and maintain free browser extensions for all popular browsers:
 
-* [AdGuard Browser extension](/adguard-browser-extension/overview)
+* [AdGuard ブラウザ拡張機能](/adguard-browser-extension/overview)
 * [AdGuard for Safari](/adguard-for-safari/overview)
 
 ## Not just ad blocking

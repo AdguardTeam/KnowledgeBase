@@ -5,16 +5,16 @@ sidebar_position: 8
 
 Depending on which AdGuard app or browser extension you want to install, follow one of these links to find the relevant article:
 
-[AdGuard for Android](/adguard-for-android/installation)
+[AdGuard pour Android](/adguard-for-android/installation)
 
-[AdGuard for iOS](/adguard-for-ios/installation)
+[AdGuard pour iOS](/adguard-for-ios/installation)
 
-[AdGuard for Windows](/adguard-for-windows/installation)
+[AdGuard pour Windows](/adguard-for-windows/installation)
 
-[AdGuard for Mac](/adguard-for-mac/installation)
+[AdGuard pour Mac](/adguard-for-mac/installation)
 
-[AdGuard Browser extension](/adguard-browser-extension/installation)
+[Extension de navigateur AdGuard](/adguard-browser-extension/installation)
 
-[AdGuard for Safari](/adguard-for-safari/installation)
+[AdGuard pour Safari](/adguard-for-safari/installation)
 
-[AdGuard Content Blocker](/adguard-content-blocker/installation)
+[Bloqueur de contenu AdGuard](/adguard-content-blocker/installation)

@@ -1,83 +1,83 @@
 ---
-title: Legacy licenses FAQ
+title: 旧ライセンスに関するFAQ
 sidebar_position: 4
 ---
 
-We have written this article to avoid confusion and explain in detail how you can renew/upgrade an outdated (legacy) AdGuard license.
+この記事では、混乱を避けるために、旧（レガシー）AdGuardライセンスを更新/アップグレードする方法について詳しく説明しております。
 
-## About the outdated licenses
+## 旧ライセンスについて
 
-Initially licenses of the following types were available to activate AdGuard products:
+当初、AdGuard製品のアクティベーションのために、以下の種類のライセンスが用意されていました:
 
-**Standard** — for desktop applications AdGuard for Windows/AdGuard for Mac
+**スタンダート**　AdGuard for Windows・AdGuard for Mac用ライセンス
 
-**Mobile** — for mobile applications AdGuard for Android/AdGuard for iOS
+**モバイル**　AdGuard for Android・AdGuard for iOS用ライセンス
 
-**Premium** — a license that combines desktop + mobile application
+**プレミアム**　モバイル＋スタンダート、つまりPCでもモバイルでも使えるライセンス
 
-Standard and Mobile licenses could be purchased for 1 to 9 devices.
+スタンダードライセンスおよびモバイルライセンスは、1台〜9台版を購入することが可能でした。
 
 Standard were valid only for desktops, and Mobile were only for smartphones and tablets.
 
-Premium licenses could have been used on 2-18 devices. Depending on the number of devices selected upon purchasing, they allowed you to simultaneously activate AdGuard on an equal number of computers and mobile devices: 2+2, 3+3, etc.
+プレミアムライセンスは、2～18台のデバイスで使用することが可能でした。 購入時に選択したデバイス数（「2+2」、「3+3」など）に応じて、同数のパソコンとモバイルデバイスでAdGuardを同時に有効化することが可能でした。。
 
-For example, you might have had a Premium license for 2+2 devices, that is, the license could be installed on 2 computers and 2 phones/tablets. Or, for example, for 9+9 (18 devices in total), then the license could be installed on 9 computers and 9 phones/tablets.
+例えば、2+2のプレミアムライセンスをお持ちだった場合、2台のパソコンと2台のスマホ・タブレットにライセンスを使用することが可能だったということです。 あるいは、例えば9+9（合計18台）の場合、9台のパソコンと9台のスマホ・タブレットにライセンスを使用することが可能でした。
 
-For all types (Standard, Mobile, Premium) there were options for a Yearly and Lifetime license.
+全タイプ (スタンダート、モバイル、プレミアム) において、1年ラと永久のオプションがありました。
 
-In October 2019 AdGuard switched to the new licensing system: from then on, licenses can still be purchased for 1 year or Lifetime, but their types have become **Personal** (for up to 3 devices) or **Family** (for up to 9 devices).
+2019年10月、AdGuardは新しいライセンス形態に切り替わりました。それ以降、ライセンスは引き続き1年版または永久版を購入できますが、台数によるタイプは**パーソナル** （デバイス3台版）または**ファミリー**（デバイス9台版）となっています。
 
-One more change: **license keys of the new type can now be used on any device, in any combination. For example, a Personal License can be installed on Android, Mac and iOS, just like on two Windows computers and an Apple tablet, etc.**
+もう一つの変更点は、**新タイプのライセンスキーは、PC・モバイルに関係なく、どのデバイスでも、どのような組み合わせでも使用できるようになったことです。 例えば、パーソナルライセンスは、Windows/Android/Mac/iOSのうちのどの3台にも使用することが可能です（例：Windowsパソコン2台とiPhone 1台）**。
 
-## What happened to the outdated licenses?
+## 旧ライセンスは現在どのような扱いか？
 
-Standard were automatically made universal, which means that they can be activated on any devices.
+スタンダードライセンスは自動的にユニバーサル化され、パソコンだけでなく、どのようなデバイスでも使用できるようになりました。
 
-Mobile licenses remained unchanged and platform-limited (they can still only be used on phones or tablets).
+モバイルライセンスは、従来通り、プラットフォームが限定されています（スマホまたはタブレット端末でのみ使用可能）。
 
-Premium licenses also remained unchanged and platform-limited. And although **Premium licenses are now displayed in your personal account by the total number of devices**, they can still be activated on desktop + mobile set of devices.
+プレミアムライセンスも従来通り、プラットフォーム制限があります。 また、 **プレミアムライセンスは、AdGuardアカウントではデバイスの総数で表示されるようになりましたが、**今まで通り、デスクトップ◯台＋モバイル◯台のセットで有効にするしかできませんのでご注意ください。
 
-For example, this is how the 1+1 key looks like:
+例えば、1+1キーはこんな風に表示されます:
 
-![1+1 key](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/1.outdatedlicenses_en.png)
+![1+1キー](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/1.outdatedlicenses_en.png)
 
-*But despite the total number of devices (2) it can be activated on 1 desktop and 1 mobile device.*
-> All the outdated licenses have a "legacy" badge in the AdGuard account. And they are automatically converted to a new type when you either renew or upgrade them. But there are some nuances. Let's see which licenses can be converted to a new type and how to do it.
+*しかし、合計2台にもかかわらず、使用できる台数は、パソコン1台とモバイル端末1台となります。*
+> すべての旧式ライセンスには、AdGuardアカウントに「(旧)」というバッジがついています。 また、更新時やアップグレード時には、自動的に新しいタイプに変換されます。 しかし、いくつかのニュアンスがあります。 では、どのライセンスを新しいタイプに変換できるのかとその方法について見てみましょう。
 
-## I have an outdated (legacy) key. What renewal/upgrade options are available for me?
+## 旧キーを持っています。 更新・アップグレードする方法は？
 
-You can check this on the [renewal page](https://adguard.com/renew.html) or in your [AdGuard account](https://my.adguard.com/main.html):
+[更新用ページ](https://adguard.com/renew.html)または[AdGuardアカウント](https://my.adguard.com/main.html)で確認することができます。
 
-![Upgrade](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_en.png)
-> Go to "My licenses" tab and check what actions are available to you for each specific key. Below we will explain with specific examples.
+![アップグレード](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_en.png)
+> 「ライセンス」タブで、キーごとにどのようなアクションが可能かを確認することができます。 以下、具体的な例を挙げて説明しております。
 
-### Licenses for 1/2/3 devices
+### 1〜3台用ライセンス
 
-**Yearly** licenses for 1, 2, 3 devices can be converted to either Personal or Family:
+1台、2台、3台用の**1年**ライセンスは、パーソナルまたはファミリーのいずれかに変更可能です。
 
-![Upgrade or renew](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/3.yearly_en.png)
-> Choose based on how many devices you need to protect.
+![アップグレードまたは更新](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/3.yearly_en.png)
+> 保護したいデバイスの台数に応じてお選びください。
 
-Instead of renewal you can switch to Lifetime:
+更新の代わりに永久版に切り替えることもできます。
 
-![Lifetime](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/4.lifetime_en.png)
+![永久版](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/4.lifetime_en.png)
 
-**Lifetime** licenses can only be converted to Family (9 devices) due to technical limitations:
+**永久版**ライセンスは、技術的な制約によりファミリー（9台版）にのみ変換可能です。
 
-![Lifetime upgrade](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/5.lifetimeupgrade_en.png)
+![永久版へのアップグレード](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/5.lifetimeupgrade_en.png)
 
-### Licenses for 4+ devices (up to 9)
+### 4台以上用ライセンス
 
-**Yearly** keys of this configuration can only be converted into a Family license:
+この場合、**1年版** キーは、ファミリーライセンスにのみ変換することができます。
 
-![Yearly license for 4 devices](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/6.yearly4+devices_en.png)
+![4 台用1年版ライセンス](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/6.yearly4+devices_en.png)
 
-**Lifetime** licenses for 4 or more devices cannot be upgraded due to technical limitation:
+4台以上用**永久版**ライセンスは、技術的な制約によりファミリー（9台版）にのみ変換可能です。
 
-![Lifetime license for 4 devices](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/7.lifetime4+devices_en.png)
+![4 台用永久版ライセンス](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/7.lifetime4+devices_en.png)
 
-### Licenses for 9+ devices
+### 9台以上用ライセンス
 
-Premium keys (5+5 and more) and custom keys for 10+ devices that you purchased individually with the help of our managers.
+特別に入手されたプレミアムキー（5+5以上）および10台以上用カスタムキー。
 
-These are quite unique cases, so if you want to upgrade your license to Lifetime, please contact us at partners@adguard.com. We will make you a special offer depending on the specific configuration of your license.
+これらはかなり特殊なケースですので、ライセンスを永久版にアップグレードしたい場合は、partners@adguard.com までご連絡ください。 お客様の特殊ライセンスの構成に応じて、特別なご提案をさせていただきます。

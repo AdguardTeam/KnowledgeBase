@@ -1,5 +1,5 @@
 ---
-title: Features overview
+title: Özelliklere genel bakış
 sidebar_position: 1
 ---
 
@@ -22,7 +22,7 @@ Filters are combined into eight thematic categories: *Ad Blocking, Privacy, Soci
 
 In the Filters tab, you can enable the whole category or separate filters. Changes in the Filters tab are reflected in the Content Blockers section (located in the General tab).
 
-## Content blockers {#contentblockers}
+## İçerik engelleyiciler {#contentblockers}
 
 ![Content blockers tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/Contentblockers.png)
 
@@ -68,7 +68,7 @@ This content blocker unites several security-related filters. *Malware Domains B
 
 If you need more filters, you can add them to *AdGuard Custom*. To add a custom filter, enter a URL or a local file path in the relevant field. You can find new filters at [filterlists.com](https://filterlists.com/).
 
-## User rules {#userrules}
+## Kullanıcı kuralları {#userrules}
 
 User rules can be used to customize ad blocking. They can be added manually, imported, or created automatically when you block an element on the page. To add your own filering rules, use a [special syntax](/general/ad-filtering/create-own-filters).
 

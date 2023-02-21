@@ -78,7 +78,7 @@ sidebar_position: 3
 
 ![forma2 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma2en.png)
 
-3. Enter the address of the page and the browser (or the download link in case of an app) where you've encountered a problem;
+3. 输入您遇到问题的页面的地址和您使用的浏览器（如果是应用程序，则输入下载链接）；
 
 ![forma3 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma3en.png)
 

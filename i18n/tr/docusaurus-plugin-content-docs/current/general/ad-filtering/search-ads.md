@@ -29,7 +29,7 @@ Partly, this is due to ethical reasons, but mostly because such ads are rarely t
 
 By enabling 'Search ads and self-promotion', AdGuard users can unblock some of these self-promotion ads.
 
-### What ads are on the list?
+### Listede hangi reklamlar var?
 
 When you enable 'Search ads and self-promotion', search ads from the following search engines are shown:
 

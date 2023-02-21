@@ -1,25 +1,25 @@
 ---
-title: How to get HAR files
+title: Jak získat soubory HAR
 sidebar_position: 5
 ---
 
-## What are HAR files?
-The HAR (HTTP ARchive) format is a JSON-formatted archive file for logging of a web browser's interaction with a site. The specifications of HAR format defines an archival data for HTTP transactions that used by a browser to export detailed information about web pages it loads. More detailed description of HAR file format and its specification you can find at [softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/) website.
+## Co jsou soubory HAR?
+Formát HAR (HTTP ARchive) je archivní soubor ve formátu JSON pro zaznamenávání interakce webového prohlížeče s webem. Specifikace formátu HAR definuje archivační data pro transakce HTTP, která prohlížeč používá k exportu podrobných informací o načítaných webových stránkách. Podrobnější popis formátu HAR a jeho specifikace naleznete na webové stránce [ softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/).
 
-## How to get HAR files?
-Sometimes we need to analyze it to block specific ads that are difficult to reproduce for some reason. To get HAR files follow these steps:
-1. Open AdGuard and go to "Settings".
-2. Choose "Advanced" in the menu.
-3. Choose "Low Level Settings".
-4. Activate "pref.har.capture" (you will have to restart the protection).
-5. Now reproduce the problem - open the app, perform the necessary actions to make the ad appear.
-6. Now turn "pref.har.capture" off again.
-7. Go Back, then tap "Export logs and system info" > Save.
+## Jak získat soubory HAR?
+Někdy musíme analyzovat, abychom zablokovali konkrétní reklamy, které je z nějakého důvodu obtížné reprodukovat. Chcete-li získat soubory HAR, postupujte takto:
+1. Otevřete AdGuard a přejděte do "Nastavení".
+2. V menu zvolte možnost "Pokročilé".
+3. Vyberte možnost "Nízkoúrovňová nastavení".
+4. Aktivujte "pref.har.capture" (budete muset restartovat ochranu).
+5. Nyní problém reprodukujte – otevřete aplikaci a proveďte potřebné akce, aby se reklama zobrazila.
+6. Nyní "pref.har.capture" opět vypněte.
+7. Přejděte zpět a klepněte na "Exportovat protokoly a systémové informace" > Uložit.
 
-**Please send the file with logs (that you've got as a result) to the AdGuard support service.**
-> Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message.
+**Zašlete prosím soubor se záznamy (které jste získali jako výsledek) službě podpory AdGuardu.**
+> Poznámka: Náš tým podpory zpracuje vaši žádost mnohem rychleji, pokud ve zprávě uvedete číslo HelpDesk nebo číslo problému GitHub.
 
-## How to analyze HAR files?
-Here are some sources that we can recommend to analyze HAR files:
-* [HTTP Archive Viewer master](https://gitgrimbo.github.io/harviewer/master/) is a HAR analyzer tool, visualizes HTTP Archive (HAR) log files created by HTTP tracking tools.
-* [Fiddler](https://www.telerik.com/fiddler) is a web debugging proxy, lets you capture, inspect, monitor all HTTP(S) traffic between your computer and the Internet, mock requests, and diagnose network issues.
+## Jak analyzovat soubory HAR?
+Zde je několik zdrojů, které můžeme doporučit k analýze souborů HAR:
+* [HTTP Archive Viewer master](https://gitgrimbo.github.io/harviewer/master/) je nástroj pro analýzu HAR, který vizualizuje soubory protokolu HTTP Archive (HAR) vytvořené nástroji pro sledování HTTP.
+* [Fiddler](https://www.telerik.com/fiddler) je proxy server pro ladění webu, který umožňuje zachytávat, kontrolovat a monitorovat veškerý provoz HTTP(S) mezi počítačem a Internetem, falšovat požadavky a diagnostikovat síťové problémy.

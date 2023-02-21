@@ -44,7 +44,7 @@ This is the list of libraries and other resources that really helped us with AdG
 * Minizip-ng library by Nathan Moinvaziri: [https://github.com/zlib-ng/minizip-ng](https://github.com/zlib-ng/minizip-ng)
 * Lottie for iOS library by Brandon Withrow: [https://github.com/airbnb/lottie-ios](https://github.com/airbnb/lottie-ios)
 
-## AdGuard Browser extension {#extension}
+## AdGuard ブラウザ拡張機能 {#extension}
 
 * moment: [https://github.com/moment/moment](https://github.com/moment/moment)
 * simply-deferred: [https://github.com/sudhirj/simply-deferred](https://github.com/moment/moment)
@@ -147,6 +147,7 @@ Also a huge thanks and gratitude to all beta testers and other engaged users, wh
 * krystian3w — very active filter contributor
 * lancelot.moon — translator and proofreader to Chinese Traditional in Crowdin, beta tester
 * Lord Ami — beta tester, active AdGuard Forum member
+* Lukas Novotny (novas78) — translator and proofreader to Czech in Crowdin
 * malware1 — beta tester, active AdGuard Forum member
 * milder — beta tester, active AdGuard Forum member
 * Nicos18 — beta tester, active AdGuard Forum member

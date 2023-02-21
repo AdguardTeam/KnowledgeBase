@@ -1,16 +1,16 @@
 ---
-title: How to use Samsung Pay with AdGuard in South Korea
+title: Jak používat Samsung Pay s AdGuardem v Jižní Korei
 sidebar_position: 16
 ---
 
-This problem occurs almost exclusively on devices registered in South Korea. Samsung Pay occasionally doesn't work on such devices with running VPN services. However, there is a way to solve this problem.
+Tento problém se vyskytuje téměř výhradně u zařízení registrovaných v Jižní Korei. Samsung Pay na těchto zařízeních se spuštěnými službami VPN občas nefunguje. Tento problém se však dá vyřešit.
 
-By default, AdGuard uses Local VPN to filter traffic. This was the reason why the South Korean users had to disable AdGuard when making payments with Samsung Pay. Now it is possible to avoid such difficulties.
+Ve výchozím nastavení používá AdGuard k filtrování provozu lokální VPN. To byl důvod, proč museli jihokorejští uživatelé při platbách pomocí Samsung Pay vypnout AdGuard. Nyní je možné se těmto potížím vyhnout.
 
-The **"pref.samsungpay.autopause.enable"** feature was developed specifically for South Korean users. So, what process does it initiate? If the "pref.samsungpay.autopause.enable" option is enabled, the AdGuard app is suspended when a user opens the Samsung Pay app. But once the app is closed, AdGuard resumes operation.
+Funkce **"pref.samsungpay.autopause.enable"** byla vyvinuta speciálně pro jihokorejské uživatele. Jaký proces tedy iniciuje? Pokud je povolena možnost "pref.samsungpay.autopause.enable", AdGuard se pozastaví, když uživatel otevře aplikaci Samsung Pay. Po zavření aplikace však AdGuard znovu obnoví svou činnost.
 
-Let's see how it works.
+Podívejme se, jak to funguje.
 
 ![samsungpay *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/samsungpay-with-adguard-in-south-korea/en.gif)
 
-> **Note:** this feature will work only if the Local VPN filtering mode is chosen in AdGuard settings. If another mode is being used, Samsung Pay will function without any interruptions.
+> **Poznámka:** tato funkce bude fungovat pouze v případě, že je v nastavení AdGuardu zvolen režim filtrování lokální VPN. Pokud používáte jiný režim, Samsung Pay bude fungovat bez přerušení.

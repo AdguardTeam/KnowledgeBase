@@ -7,6 +7,8 @@ sidebar_position: 6
 
 Чтобы запросить **годовой лицензионный ключ AdGuard** или **годовую подписку на AdGuard VPN**, вы должны перевести не менее **500** и **2 500** слов соответственно.
 
+To check your translation progress, open a project you have worked on, click the *Reports* tab and select *My Contribution*. You can sum up the number of words translated in different projects to get a license.
+
 **Вот как работает наша система вознаграждений**
 
 ```

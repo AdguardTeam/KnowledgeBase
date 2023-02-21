@@ -42,7 +42,7 @@ To make Firefox trust the AdGuard certificate, do the following:
     - `key4.db`
 7. We need to move these files to a folder of the browser where the security certificate issue occurred:
 - `data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyy.default`.
-8. The full command will look like this:
+8. Tam komut şöyle görünür:
     - `adb shell su`
     - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxxx.default/cert9.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
     - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxxx.default/key4.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`

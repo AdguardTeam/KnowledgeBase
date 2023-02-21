@@ -80,7 +80,7 @@ This is the list of libraries and other resources that really helped us with AdG
 * request: [https://github.com/request/request](https://github.com/request/request)
 * require-dir: [https://github.com/aseemk/requireDir](https://github.com/aseemk/requireDir)
 
-## AdGuard Browser Assistant {#assistant}
+## AdGuard Tarayıcı Asistanı {#assistant}
 
 * React: [https://github.com/facebook/react](https://github.com/facebook/react)
 * webextension-polyfill: [https://github.com/mozilla/webextension-polyfill](https://github.com/mozilla/webextension-polyfill)
@@ -147,6 +147,7 @@ Also a huge thanks and gratitude to all beta testers and other engaged users, wh
 * krystian3w — very active filter contributor
 * lancelot.moon — translator and proofreader to Chinese Traditional in Crowdin, beta tester
 * Lord Ami — beta tester, active AdGuard Forum member
+* Lukas Novotny (novas78) — translator and proofreader to Czech in Crowdin
 * malware1 — beta tester, active AdGuard Forum member
 * milder — beta tester, active AdGuard Forum member
 * Nicos18 — beta tester, active AdGuard Forum member

@@ -1,5 +1,5 @@
 ---
-title: Writing about AdGuard
+title: AdGuard hakkında yazın
 sidebar_position: 3
 ---
 

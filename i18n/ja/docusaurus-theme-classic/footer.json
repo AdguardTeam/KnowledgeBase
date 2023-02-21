@@ -4,35 +4,35 @@
     "description": "The title of the footer links column with title=adguard in the footer"
   },
   "link.title.products": {
-    "message": "Products",
+    "message": "製品一覧",
     "description": "The title of the footer links column with title=products in the footer"
   },
   "link.title.support": {
-    "message": "Support",
+    "message": "サポート",
     "description": "The title of the footer links column with title=support in the footer"
   },
   "link.title.license": {
-    "message": "License",
+    "message": "ライセンス",
     "description": "The title of the footer links column with title=license in the footer"
   },
   "link.item.label.official_website": {
-    "message": "Official website",
+    "message": "公式ホームページ",
     "description": "The label of footer link with label=official_website linking to https://adguard.com"
   },
   "link.item.label.about": {
-    "message": "About",
+    "message": "AdGuardについて",
     "description": "The label of footer link with label=about linking to https://adguard.com/contacts.html"
   },
   "link.item.label.in_the_press": {
-    "message": "In the press",
+    "message": "メディア掲載",
     "description": "The label of footer link with label=in_the_press linking to https://adguard.com/press-releases.html"
   },
   "link.item.label.media_kits": {
-    "message": "Media kits",
+    "message": "メディアキット",
     "description": "The label of footer link with label=media_kits linking to https://adguard.com/media-materials.html"
   },
   "link.item.label.awards": {
-    "message": "Awards",
+    "message": "受賞",
     "description": "The label of footer link with label=awards linking to https://adguard.com/awards.html"
   },
   "link.item.label.adguard_for_windows": {
@@ -52,47 +52,47 @@
     "description": "The label of footer link with label=adguard_for_ios linking to https://adguard.com/adguard-ios/overview.html"
   },
   "link.item.label.adguard_for_ios_pro": {
-    "message": "AdGuard for iOS Pro",
+    "message": "AdGuard Pro for iOS",
     "description": "The label of footer link with label=adguard_for_ios_pro linking to https://adguard.com/adguard-ios-pro/overview.html"
   },
   "link.item.label.support_center": {
-    "message": "Support Center",
+    "message": "サポートセンター",
     "description": "The label of footer link with label=support_center linking to https://adguard.com/support.html"
   },
   "link.item.label.how_to_create_your_own_ad_filter": {
-    "message": "How to create your own ad filter",
+    "message": "独自の広告フィルタを作成する方法",
     "description": "The label of footer link with label=how_to_create_your_own_ad_filter linking to /general/ad-filtering/create-own-filters"
   },
   "link.item.label.adguard_ad_filters": {
-    "message": "AdGuard Ad Filters",
+    "message": "AdGuard広告フィルタ",
     "description": "The label of footer link with label=adguard_ad_filters linking to /general/ad-filtering/adguard-filters"
   },
   "link.item.label.removal_instructions": {
-    "message": "Removal Instructions",
+    "message": "AdGuardの削除方法",
     "description": "The label of footer link with label=removal_instructions linking to https://adguard.com/removal.html"
   },
   "link.item.label.userscripts": {
-    "message": "Userscripts",
+    "message": "ユーザースクリプト",
     "description": "The label of footer link with label=userscripts linking to /general/userscripts"
   },
   "link.item.label.purchase_license": {
-    "message": "Purchase License",
+    "message": "ライセンスを購入する",
     "description": "The label of footer link with label=purchase_license linking to https://adguard.com/license.html"
   },
   "link.item.label.recover_license": {
-    "message": "Recover License",
+    "message": "ライセンスを復元する",
     "description": "The label of footer link with label=recover_license linking to /general/license/what-is"
   },
   "link.item.label.terms_of_sale": {
-    "message": "Terms of sale",
+    "message": "販売条件",
     "description": "The label of footer link with label=terms_of_sale linking to https://adguard.com/terms-of-sale.html"
   },
   "link.item.label.get_free_license": {
-    "message": "Get Free License",
+    "message": "無料ライセンスを取得する",
     "description": "The label of footer link with label=get_free_license linking to https://adguard.com/get-adguard-for-free.html"
   },
   "link.item.label.contribute_to_adguard": {
-    "message": "Contribute to AdGuard",
+    "message": "AdGuardに貢献する",
     "description": "The label of footer link with label=contribute_to_adguard linking to https://adguard.com/contribute.html"
   },
   "copyright": {

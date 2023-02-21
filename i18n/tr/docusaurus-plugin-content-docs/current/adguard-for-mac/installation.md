@@ -1,5 +1,5 @@
 ---
-title: 'Install/Uninstall'
+title: 'Kurma/Kaldırma'
 sidebar_position: 2
 ---
 

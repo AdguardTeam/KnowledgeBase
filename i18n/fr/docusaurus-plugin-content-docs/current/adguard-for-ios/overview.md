@@ -199,10 +199,10 @@ Clears all statistical data, such as number of requests, etc.
 
 This option will reset all your settings.
 
-- **Support**
+- **Assistance**
 
 Use this option to contact support, report a missed ad (although we advise to use the Assistant or AdGuard's Safari Web extension for your own convenience), export logs or to make a feature request.
 
-- **About**
+- **À propos**
 
 Contains the current version of the app and an assortment of rarely needed options and links.

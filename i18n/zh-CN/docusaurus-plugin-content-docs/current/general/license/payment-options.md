@@ -1,20 +1,20 @@
 ---
-title: How to purchase
+title: 支付方式
 sidebar_position: 2
 ---
 
-## How to purchase a license
+## 支付许可证的方式
 
-AdGuard license can be bought on [adguard.com](https://adguard.com/license.html). AdGuard Pro for iOS can be bought on the App Store. Ad Blocker licenses are also sold by various distributors.
+AdGuard 许可证可以在 [adguard.com](https://adguard.com/license.html) 上购买。 iOS 版 的 AdGuard Pro 可以在 App Store 上购买。 此外，用户也可以通过经销商购买广告拦截程序的许可证。
 
-> The availability of AdGuard products in app stores and by distributors depends on your country.
+> AdGuard 软件在应用商店和分销商店的购买情况取决于您的位于的位置。
 
-## How to get a refund
+## 如何退款
 
-In accordance with our [Terms of Sale](https://adguard.com/terms-of-sale.html), you can get a 100% refund on the AdGuard license key you purchased at https://adguard.com. To get a refund, contact our support team at **support@adguard.com** and indicate the payment option you've used.
+根据我们的[销售条款](https://adguard.com/terms-of-sale.html)，用户在https://adguard.com 购买 AdGuard 许可证密钥后可以100%退款。 为了申请退款，请联系我们的支持团队：**support@adguard.com** ，并说明您使用的付款方式。
 
-A refund may be denied if you:
-* purchased the license more than 60 days ago,
-* purchaded the license by a distributor,
-* purchased the license on the App Store,
-* applied for a partial refund for license key upgrade or prolongation.
+在以下情况下，退款可能会被拒绝：
+* 超过 60 天前购买了许可证，
+* 通过经销商购买了许可证，
+* 在 App Store 上购买了许可证，
+* 申请了许可证密钥升级或续订的部分价格进行退款。
