@@ -1009,7 +1009,7 @@ If you want the rule not to be applied to certain apps, start the app name with 
 
 #### **`$method`** {#method-modifier}
 
-This modifier limits the rule scope to requests that use the specified set of HTTP methods. Negated methods are allowed. The set of allowed methods is the same as in Chrome's [declarativeNetRequest](https://developer.chrome.com/docs/extensions/reference/declarativeNetRequest/#type-RequestMethod).
+This modifier limits the rule scope to requests that use the specified set of HTTP methods. Negated methods are allowed. The methods must be specified in all lowercase characters, but are matched case-insensitively.
 
 **Examples**
 
