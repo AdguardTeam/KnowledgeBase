@@ -9,7 +9,7 @@ If you decide to filter Tor and check its box in *Preferences* → *Network* →
 
 [AdGuard dialog window](https://cdn.adtidy.org/content/kb/ad_blocker/mac/tor-setup.png)
 
-By updating Tor setting, AdGuard will set the following:
+By updating Tor settings, AdGuard will set the following:
 
 `security.enterprise_roots.enabled`: true
 This setting will cause Tor to trust root certificates. [Learn more](https://support.mozilla.org/en-US/kb/setting-certificate-authorities-firefox)
