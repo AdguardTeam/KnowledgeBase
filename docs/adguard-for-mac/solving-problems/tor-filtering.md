@@ -5,9 +5,9 @@ sidebar_position: 10
 
 By default, Tor Browser is added to AdGuard’s list of filtered applications. However, to filter it, AdGuard needs to change Tor's security settings. This will make Tor trust AdGuard's CA certificate.
 
-If you decide to filter Tor and check its box in *Preferences* → *Network* → *Applications*, AdGuard will show you this dialog window:
+If you decide to filter Tor and check it in *Preferences* → *Network* → *Applications*, AdGuard will show you this dialog box:
 
-[AdGuard dialog window](https://cdn.adtidy.org/content/kb/ad_blocker/mac/tor-setup.png)
+[AdGuard dialog box](https://cdn.adtidy.org/content/kb/ad_blocker/mac/tor-setup.png)
 
 By updating Tor settings, AdGuard will set the following:
 
