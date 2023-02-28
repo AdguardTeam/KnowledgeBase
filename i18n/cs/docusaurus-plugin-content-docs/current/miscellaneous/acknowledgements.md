@@ -147,7 +147,7 @@ Obrovský dík a vděčnost patří také všem beta testerům a dalším zapoje
 * krystian3w — velmi aktivní přispěvatel filtrů
 * lancelot.moon — překladatel a korektor tradiční čínštiny, beta tester
 * Lord Ami — beta tester, aktivní člen fóra AdGuard
-* Lukas Novotny (novas78) — translator and proofreader to Czech in Crowdin
+* Lukas Novotny (novas78) — překladatel a korektor češtiny
 * malware1 — beta tester, aktivní člen fóra AdGuard
 * milder — beta tester, aktivní člen fóra AdGuard
 * Nicos18 — beta tester, aktivní člen fóra AdGuard
