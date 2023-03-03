@@ -13,7 +13,7 @@ sidebar_position: 2
 
 **Browsers:** Microsoft Edge, Microsoft Internet Explorer (all versions), Opera, Google Chrome, Yandex.Browser, Mozilla Firefox, and many other browsers.
 
-## AdGuard Installation 
+## AdGuard Installation
 
 To use AdGuard on a PC or tablet under Microsoft Windows, you should download the installation package and launch the installation program. Perform the following actions:
 
@@ -45,7 +45,7 @@ Congratulations! You have successfully installed AdGuard on your computer. On th
 
 ## How to uninstall AdGuard for Windows {#uninstall}
 
-### Regular method 
+### Regular method
 
 If you need to uninstall or reinstall AdGuard, do the following:
 
@@ -65,15 +65,15 @@ If you need to uninstall or reinstall AdGuard, do the following:
 
 ### Advanced method {#advanced}
 
-In case regular uninstall doesn't work for any reason, you can try to use an advanced method. First of all, you need to [download the uninstaller tool](https://cdn.adtidy.org/public/Adguard/tools/Uninstall_Utility.zip) created by our developers. Extract the archive to any folder on your PC and run the **Adguard.UninstallUtility.exe** file, and allow the app to make changes to your device. Then follow the instruction below:
+In case regular uninstall doesn't work for any reason, you can try to use an advanced method. First of all, you need to [download the uninstaller tool](https://cdn.adtidy.org/distr/windows/Uninstall_Utility.zip) created by our developers. Extract the archive to any folder on your PC and run the **Adguard.UninstallUtility.exe** file, and allow the app to make changes to your device. Then follow the instruction below:
 
 * Choose *Standard uninstall*, *Delete AdGuard* and click *Uninstall*.
 
 ![Standard uninstall *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/standard-uninstall.png)
-                                 
+
 * Wait until uninstall is finished — there will be a string in the window:
 `[OK] Uninstall finished`
-                            
+
 ![Uninstall finished *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/standard-uninstall-2.png)
 
 > Follow the next steps only if after performing first two steps wasn’t enough for some reason. Usually it can be determined by seeing incorrect reinstall of AdGuard, but we strongly suggest contacting our support before using steps 3-4 of advanced uninstall instruction.
@@ -81,10 +81,10 @@ In case regular uninstall doesn't work for any reason, you can try to use an adv
 * Choose *Advanced uninstall* and click *Uninstall*.
 
 ![Advanced uninstall *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/advanced-uninstall.png)
-                                 
+
 * Wait until uninstall is finished — there will be a string in the window:
 `[OK] Uninstall finished`
 
 ![Uninstall finished *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/advanced-uninstall-2.png)
-                                 
+
 AdGuard is successfully uninstalled!
