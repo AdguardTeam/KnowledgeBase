@@ -508,7 +508,7 @@ The rule applies only to WebRTC connections.
 * [`$specifichide`](#specifichide-modifier)
 * [Generic rules](#exception-modifiers-generic-rules)
   * [`$generichide`](#generichide-modifier)
-  * [`$generichide`](#generichide-modifier)
+  * [`$genericblock`](#genericblock-modifier)
 
 Exception rules disable the other basic rules for the addresses to which they correspond. They begin with a `@@` mark. All the basic modifiers listed above can be applied to them and they also have a few special modifiers.
 
@@ -653,7 +653,7 @@ Disables all generic [cosmetic rules](#cosmetic-rules) on pages that correspond 
 
 * `@@||example.com^generichide` — disables generic cosmetic rules on any pages at `example.com` and all subdomains.
 
-##### **`$genericblock`** {#generichide-modifier}
+##### **`$genericblock`** {#genericblock-modifier}
 
 Disables generic basic rules on pages that correspond to exception rule.
 
