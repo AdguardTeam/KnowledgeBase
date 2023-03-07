@@ -239,12 +239,16 @@ If you want the rule not to be applied to certain domains, start a domain name w
 
 In some cases the `$domain` modifier can match not only the referrer domain, but also the target domain. This happens when all of the following is true:
 
-1) The request has `document` content type.
-2) The rule pattern does not match any particular domains.
-3) The rule pattern does not contain regular expressions.
-4) The `$domain` modifier contains only excluded domains, e.g. `$domain=~example.org|~example.com`.
+1. The request has `document` content type.
+1. The rule pattern does not match any particular domains.
+1. The rule pattern does not contain regular expressions.
+1. The `$domain` modifier contains only excluded domains, e.g. `$domain=~example.org|~example.com`.
 
-The following predicate should be satisfied to perform a target domain matching: `1 AND ((2 AND 3) OR 4)`. That is, if the modifier `$domain` contains only excluded domains, then the rule does not need to meet the second and third conditions to match the target domain against the modifier `$domain`.
+The following predicate should be satisfied to perform a target domain matching:
+```
+1 AND ((2 AND 3) OR 4)
+```
+That is, if the modifier `$domain` contains only excluded domains, then the rule does not need to meet the second and third conditions to match the target domain against the modifier `$domain`.
 
 If some of the conditions above are not met but the rule contains [`$cookie`](#cookie-modifier) or [`$csp`](#csp-modifier) modifier, the target domain will still be matched.
 
