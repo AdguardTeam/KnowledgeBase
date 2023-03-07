@@ -299,9 +299,11 @@ In the following examples it is implied that requests are sent from `http://exam
 
 A restriction of third-party and own requests. A third-party request is a request from a different domain. For example, a request to `example.org`, from `domain.com` is a third-party request.
 
+> **Note**
+>
 > To be considered as such, a third-party request should meet one of the following conditions:
-> 1) Its referrer is not a subdomain of the target domain or the other way round. For example, a request to `subdomain.example.org` from `example.org` is not a third-party request.
-> 2) Its `Sec-Fetch-Site` header is set to `cross-site`.
+> 1. Its referrer is not a subdomain of the target domain or the other way round. For example, a request to `subdomain.example.org` from `example.org` is not a third-party request.
+> 1. Its `Sec-Fetch-Site` header is set to `cross-site`.
 If there is a `$third-party` modifier, the rule is only applied to third-party requests.
 
 **Examples**
