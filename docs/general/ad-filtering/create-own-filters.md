@@ -673,6 +673,7 @@ Disables generic basic rules on pages that correspond to exception rule.
 * [`$badfilter`](#badfilter-modifier)
 * [`$replace`](#replace-modifier)
 * [`$csp`](#csp-modifier)
+* [`$permissions`](#permissions-modifier)
 * [`$all`](#all-modifier)
 * [`$inline-script`](#inline-script-modifier)
 * [`$inline-font`](#inline-font-modifier)
