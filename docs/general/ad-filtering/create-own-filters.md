@@ -476,7 +476,7 @@ The rule applies only to WebSocket connections.
 
 > **Compatibility with different versions of AdGuard**
 >
-> AdGuard for Safari and iOS cannot properly apply rules with `websocket` modifier due to Safari limitations.
+> `$websocket` modifier is supported on devices with macOS Monterey (version 12) and iOS 16 or higher.
 
 #### **`$other`** {#other-modifier}
 
