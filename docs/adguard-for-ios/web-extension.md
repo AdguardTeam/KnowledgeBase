@@ -37,7 +37,7 @@ You will see the following list of options:
 
 Web extension is not a standalone tool and requires AdGuard for iOS. If you don't have AdGuard for iOS installed on your device, please [install it first](../installation) and complete the onboarding process to prepare it for work.
 
-Once done, open *Settings > Safari > Extensions*. 
+Once done, open *Settings→Safari→Extensions*. 
 
 ![Select "Safari" *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings1_en.png)
 
@@ -67,9 +67,9 @@ Then find the *Manage Extensions* option in the list and tap it. In the opened w
 
 If you use this method, you may have to go to Safari settings to grant AdGuard extension the necessary permissions anyway.
 
-You should now be able to see AdGuard among the available extensions. Tap it, and then tap on the yellow **i** icon. Enable **Advanced protection** by tapping the *Turn on* button and confirming the action.
+You should now be able to see AdGuard among the available extensions. Tap it and then the yellow **i** icon. Enable **Advanced protection** by tapping the *Turn on* button and confirming the action.
 
->If you use AdGuard for iOS without Premium subscription, you won't be able to enable **Advanced protection**. 
+> If you use AdGuard for iOS without Premium subscription, you won't be able to enable **Advanced protection**. 
 
 Alternatively, you can enable **Advanced protection** directly from the app, in the **Protection** tab (second from the left in the bottom icon row). 
 

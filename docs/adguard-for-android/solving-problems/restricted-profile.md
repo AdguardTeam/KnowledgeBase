@@ -17,7 +17,7 @@ You have three ways to solve the issue:
 - Open the **Settings** application on your phone;
 - Go to **System** section (last item in the settings menu). In this section find sub-item **About phone**;
 - Click on the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
-- Open **System Settings** > **Developer Options** > Scroll down and enable **USB debugging** > Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
+- Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
 
 >  If you have any difficulties or additional questions, full instructions can be found [here](https://developer.android.com/studio/debug/dev-options).
 
@@ -37,7 +37,7 @@ About how to manage user accounts from an Android device you can [find here](htt
 
 ### Option 3: Use AdGuard in *Local HTTP proxy mode* (requires root)
 
-To enable this mode open **AdGuard Settings** > **Network** > **Filtering method** > **Local HTTP proxy**
+To enable this mode, open **AdGuard Settings** → **Network** → **Filtering method** → **Local HTTP proxy**
 
 ## LG and Samsung devices
 

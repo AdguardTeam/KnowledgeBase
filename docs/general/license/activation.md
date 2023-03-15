@@ -17,11 +17,11 @@ Alternatively, you can use a [license key](../what-is#license-key) to activate t
 
 1. Open the AdGuard app
    
-To do it, double-click on the AdGuard icon on the desktop:   
+To do it, double-click the AdGuard icon on the desktop:   
 
 ![AdGuard icon on the desktop](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowsEn.png)
 
-or double-click on the AdGuard icon in the system tray:   
+or double-click the AdGuard icon in the system tray:   
 
 ![AdGuard icon in the system tray](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windows2En.png)
 
