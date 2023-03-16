@@ -15,7 +15,7 @@ By default, Safari provides only basic tools to content blockers. These tools do
 
 AdGuard's Safari Web extension compliments AdGuard by giving it the ability to employ these types of filtering rules.
 
-Besides that, AdGuard's Safari Web extension can be used to quickly manage AdGuard for iOS right from the browser. Tap the *Extensions* button — it's the one with a jigsaw icon, depending on your device type it may be located to the left or to the right of the address bar. Find **AdGuard** in the list and tap it. 
+Besides that, AdGuard's Safari Web extension can be used to quickly manage AdGuard for iOS right from the browser. Tap the *Extensions* button — it's the one with a jigsaw icon, depending on your device type it may be located to the left or to the right of the address bar. Find **AdGuard** in the list and tap it.
 
 ![Web extension menu *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/ext_adguard_en.png?1)
 
@@ -37,17 +37,17 @@ You will see the following list of options:
 
 Web extension is not a standalone tool and requires AdGuard for iOS. If you don't have AdGuard for iOS installed on your device, please [install it first](../installation) and complete the onboarding process to prepare it for work.
 
-Once done, open *Settings→Safari→Extensions*. 
+Once done, open *Settings → Safari → Extensions*.
 
 ![Select "Safari" *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings1_en.png)
 
 ![Select "Extensions" *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings2_en.png)
 
-Find **ALLOW THESE EXTENSIONS** section and then find **AdGuard** among the available extensions. 
+Find **ALLOW THESE EXTENSIONS** section and then find **AdGuard** among the available extensions.
 
 ![Select "AdGuard" in ALLOW THESE EXTENSIONS section *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings3_en.png)
 
-Tap it, then turn on the switch. On the same screen make sure that the AdGuard extension has required permissions: **All Websites** should have the *Allow* status. 
+Tap it, then turn on the switch. On the same screen make sure that the AdGuard extension has required permissions: **All Websites** should have the *Allow* status.
 
 ![](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings4_en.png)
 
@@ -55,11 +55,11 @@ Tap it, then turn on the switch. On the same screen make sure that the AdGuard e
 
 ### In Safari
 
-Alternitavely, you can also turn AdGuard extension on from the Safari browser. Tap the *Extensions* button (if you don't see it next to the address bar, tap the `aA` icon). 
+Alternitavely, you can also turn AdGuard extension on from the Safari browser. Tap the *Extensions* button (if you don't see it next to the address bar, tap the `aA` icon).
 
 ![In Safari tap aA icon *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari1_en.png)
 
-Then find the *Manage Extensions* option in the list and tap it. In the opened window turn on the switch next to **AdGuard**. 
+Then find the *Manage Extensions* option in the list and tap it. In the opened window turn on the switch next to **AdGuard**.
 
 ![Extensions *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari2_en.png)
 
@@ -69,8 +69,8 @@ If you use this method, you may have to go to Safari settings to grant AdGuard e
 
 You should now be able to see AdGuard among the available extensions. Tap it and then the yellow **i** icon. Enable **Advanced protection** by tapping the *Turn on* button and confirming the action.
 
-> If you use AdGuard for iOS without Premium subscription, you won't be able to enable **Advanced protection**. 
+> If you use AdGuard for iOS without Premium subscription, you won't be able to enable **Advanced protection**.
 
-Alternatively, you can enable **Advanced protection** directly from the app, in the **Protection** tab (second from the left in the bottom icon row). 
+Alternatively, you can enable **Advanced protection** directly from the app, in the **Protection** tab (second from the left in the bottom icon row).
 
 AdGuard's Safari Web extension only works on iOS versions 15 and later.
