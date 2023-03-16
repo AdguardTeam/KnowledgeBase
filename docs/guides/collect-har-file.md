@@ -13,7 +13,7 @@ To create a HAR file in Chrome:
 
 2. Open ***Developer Tools***:
 
-- From menu: ***Menu→More Tools→Developer Tools***.
+- From menu: ***Menu → More Tools → Developer Tools***.
 - Keyboard: ***Ctrl+Shift+C***, or ***Ctrl+Alt+I***, or ***⌥+⌘+I for Mac***.
 
 3. Click on the ***Network tab***.
@@ -40,7 +40,7 @@ To create a HAR file in Chrome:
 
 2. Open ***Developer Tools***:
 
-- From menu: ***Menu→More Tools→Developer Tools***.
+- From menu: ***Menu → More Tools → Developer Tools***.
 - Keyboard: ***Ctrl+Shift+C***, or ***Ctrl+Alt+I***, or ***⌥+⌘+I for Mac***.
 
 3. Click on the ***Network tab***.
