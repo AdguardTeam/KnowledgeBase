@@ -3,7 +3,7 @@ title: Features overview
 sidebar_position: 1
 ---
 
-If you look for AdGuard in the App Store, you'll find two apps — [AdGuard](https://itunes.apple.com/app/id1047223162) and [AdGuard Pro](https://itunes.apple.com/app/id1126386264). These apps are designed to block ads and trackers in Safari, other browsers, and apps, and to manage DNS protection. Don't be misled by their names, both apps block ads on smartphones and tablets by Apple. They used to differ in functionality due to the changing App Store review guidelines, but now these two apps are [basically the same](https://adguard.com/en/blog/updating-adguard-pro-for-ios.html). So if you have purchased AdGuard Pro, there is no need to download AdGuard and buy a license there, and vice versa. 
+If you look for AdGuard in the App Store, you'll find two apps — [AdGuard](https://itunes.apple.com/app/id1047223162) and [AdGuard Pro](https://itunes.apple.com/app/id1126386264). These apps are designed to block ads and trackers in Safari, other browsers, and apps, and to manage DNS protection. Don't be misled by their names, both apps block ads on smartphones and tablets by Apple. They used to differ in functionality due to the changing App Store review guidelines, but now these two apps are [basically the same](https://adguard.com/en/blog/updating-adguard-pro-for-ios.html). So if you have purchased AdGuard Pro, there is no need to download AdGuard and buy a license there, and vice versa.
 
 ## Features {#features}
 
@@ -11,9 +11,9 @@ AdGuard and AdGuard Pro for iOS offer lots of features for blocking ads, tracker
 
 ### Content blockers {#content-blockers}
 
-Content blockers serve as 'containers' for filtering rules that do the actual job of blocking ads and tracking. AdGuard for iOS contains six content blockers: General, Privacy, Social, Security, Custom, and Other. Previously Apple only allowed each content blocker to contain a maximum of 50K filtering rules, but with iOS 15 release the upper limit has moved to 150K rules. 
+Content blockers serve as 'containers' for filtering rules that do the actual job of blocking ads and tracking. AdGuard for iOS contains six content blockers: General, Privacy, Social, Security, Custom, and Other. Previously Apple only allowed each content blocker to contain a maximum of 50K filtering rules, but with iOS 15 release the upper limit has moved to 150K rules.
 
-All content blockers, their statuses, which thematic filters they currently include, and a total number of used filtering rules can be found on the respective screen in *Advanced settings* (tap the gear icon at the bottom right→*General*→*Advanced settings*→*Content blockers*).
+All content blockers, their statuses, which thematic filters they currently include, and a total number of used filtering rules can be found on the respective screen in *Advanced settings* (tap the gear icon at the bottom right → *General* → *Advanced settings* → *Content blockers*).
 
 ![Content blockers *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/content_blockers_en.jpeg)
 
@@ -23,19 +23,19 @@ All content blockers, their statuses, which thematic filters they currently incl
 
 Content blockers' work is based on filters, also sometimes referred to as filter lists. Each filter is a list of filtering rules. If you have an enabled ad blocker when browsing, it constantly checks the visited pages and elements on them against these filtering rules, and blocks anything that matches. Rules are developed to block ads, trackers, and more.
 
-All filters are grouped into thematic categories. To see the full list of these categories (not to be confused with content blockers), open the *Protection* section by tapping the shield icon, then go to *Safari protection*→*Filters*.
+All filters are grouped into thematic categories. To see the full list of these categories (not to be confused with content blockers), open the *Protection* section by tapping the shield icon, then go to *Safari protection* → *Filters*.
 
 ![Filter groups *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/filters_group_en.jpeg)
 
-There are eight of them, each category unites several filters that serve and share a common purpose, i.e. blocking ads, social media widgets, cookie notices, protecting the user from online scams. To decide which filters suit your needs, read their descriptions and navigate by the labels (`ads`, `privacy`, `recommended`, etc.).  
+There are eight of them, each category unites several filters that serve and share a common purpose, i.e. blocking ads, social media widgets, cookie notices, protecting the user from online scams. To decide which filters suit your needs, read their descriptions and navigate by the labels (`ads`, `privacy`, `recommended`, etc.).
 
 > More enabled filters does not guarantee that there will be less ads. A large number of various filters enabled simultaneously reduces the quality of ad blocking.
 
-> Custom filters category is empty by default for users to add there their filters by URL. You can find filters on the Internet or even try to [create one by yourself](/general/ad-filtering/create-own-filters).  
+> Custom filters category is empty by default for users to add there their filters by URL. You can find filters on the Internet or even try to [create one by yourself](/general/ad-filtering/create-own-filters).
 
 ### User rules {#user-rules}
 
-Here you can add new rules — either by entering them manually, or by using [the AdGuard manual blocking tool in Safari](#assistant). Use this tool to customize Safari filtering without adding an entire filter list. 
+Here you can add new rules — either by entering them manually, or by using [the AdGuard manual blocking tool in Safari](#assistant). Use this tool to customize Safari filtering without adding an entire filter list.
 
 > Learn [how to create your own ad filters](/general/ad-filtering/create-own-filters). But please note that many of them won't work in Safari on iOS.
 
@@ -47,7 +47,7 @@ The third section of the *Safari protection* screen. If you want to disable ad b
 
 ### DNS protection {#dns-protection}
 
-[DNS protection module *mobile_border](https://adguard-dns.io/kb/general/dns-filtering/) enhances your privacy by encrypting your DNS traffic. Unlike with Safari content blocking, DNS protection works system-wide, i.e. beyond Safari, in apps and other browsers. You have to enable this module before you're able to use it. You can do this on the home screen by tapping the shield icon at the top of the screen, or by going to the *Protection*→*DNS protection* tab.
+[DNS protection module *mobile_border](https://adguard-dns.io/kb/general/dns-filtering/) enhances your privacy by encrypting your DNS traffic. Unlike with Safari content blocking, DNS protection works system-wide, i.e. beyond Safari, in apps and other browsers. You have to enable this module before you're able to use it. You can do this on the home screen by tapping the shield icon at the top of the screen, or by going to the *Protection* → *DNS protection* tab.
 
 > To be able to manage DNS settings, AdGuard apps require establishing a local VPN. It will not route your traffic through any remote servers. Nevertheless, the system will ask you to confirm permission access.
 
@@ -55,7 +55,7 @@ The third section of the *Safari protection* screen. If you want to disable ad b
 
 ![DNS implementation screen *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/implementation_en.jpeg)
 
-This section has two options: AdGuard and Native implementation. Basically, these are two methods of setting up DNS. 
+This section has two options: AdGuard and Native implementation. Basically, these are two methods of setting up DNS.
 
 In Native implementation, the DNS is handled by the system and not the app. This means that AdGuard doesn't have to create a local VPN. Sadly, this will not help you circumvent system restrictions and use AdGuard alongside other VPN-based applications — if any VPN is enabled, native DNS is ignored. Consequently, you won't be able to filter traffic locally or to use our brand new [DNS-over-QUIC protocol (DoQ)](https://adguard.com/en/blog/dns-over-quic.html).
 
@@ -83,7 +83,7 @@ To get access to this setting, *Advanced mode* has to be enabled from the *Gener
 
 #### DNS filters {#dns-filters}
 
-Similar to filters that work in Safari, DNS filters are sets of rules written according to special [syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/). AdGuard will monitor your DNS traffic and block requests that match one or more rules. You can use filters such as [AdGuard DNS filter](https://github.com/AdguardTeam/AdguardSDNSFilter) or add hosts files as filters. Multiple filters can be added simultaneously. To know how to do it, get acquainted with [an exhaustive manual](../solving-problems/system-wide-filtering). 
+Similar to filters that work in Safari, DNS filters are sets of rules written according to special [syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/). AdGuard will monitor your DNS traffic and block requests that match one or more rules. You can use filters such as [AdGuard DNS filter](https://github.com/AdguardTeam/AdguardSDNSFilter) or add hosts files as filters. Multiple filters can be added simultaneously. To know how to do it, get acquainted with [an exhaustive manual](../solving-problems/system-wide-filtering).
 
 #### Allowlist and Blocklist {#allowlist-blocklist}
 
@@ -91,31 +91,31 @@ On top of DNS filters, you can have targeted impact on DNS filtering by adding s
 
 ### Advanced protection {#advanced-protection}
 
-In iOS 15 Apple has added the support for Safari Web Extensions, and we in turn added a new *Advanced protection* module to AdGuard for iOS. It allows AdGuard to apply advanced filtering rules, such as CSS rules, CSS selectors, and scriptlets, and therefore to deal even with the complex ads, such as YouTube ads. 
+In iOS 15 Apple has added the support for Safari Web Extensions, and we in turn added a new *Advanced protection* module to AdGuard for iOS. It allows AdGuard to apply advanced filtering rules, such as CSS rules, CSS selectors, and scriptlets, and therefore to deal even with the complex ads, such as YouTube ads.
 
 ![Advanced protection screen *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_15_en.jpeg)
 
 To enable *Advanced protection*, open the *Protection* tab by tapping the second left icon at the bottom of the screen, select the *Advanced protection* module, activate the feature by toggling the switch slider, and follow the instructions below.
 
-> The *Advanced protection* only works on iOS 15 and later versions. If you are using earlier versions of iOS, you will see the *YouTube ad blocking* module in the app instead of the *Advanced protection*. 
+> The *Advanced protection* only works on iOS 15 and later versions. If you are using earlier versions of iOS, you will see the *YouTube ad blocking* module in the app instead of the *Advanced protection*.
 
 ![Protection screen on iOS 14 and earlier *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_14_en.jpeg)
 
 ### Compatibility with AdGuard VPN {#compatibility}
 
-In most cases, the ad blocker and the VPN application cannot work together, simply because there are certain system limitations. Nevertheless we've managed to find a solution to befriend [AdGuard VPN](https://adguard-vpn.com/) and AdGuard Ad Blocker. For your convenience we've added the *AdGuard VPN* block to the *Protection* section, so you can easily switch between two apps. 
+In most cases, the ad blocker and the VPN application cannot work together, simply because there are certain system limitations. Nevertheless we've managed to find a solution to befriend [AdGuard VPN](https://adguard-vpn.com/) and AdGuard Ad Blocker. For your convenience we've added the *AdGuard VPN* block to the *Protection* section, so you can easily switch between two apps.
 
 ### Assistant {#assistant}
 
 ![Safari Assistant *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/assistant_en.jpeg)
 
-Assistant is a tool that helps you manage filtering in Safari right from the browser without switching back to the app. 
+Assistant is a tool that helps you manage filtering in Safari right from the browser without switching back to the app.
 
 To see it, do the following: open Safari and tap the arrow-in-a-box symbol. Then scroll down to AdGuard/AdGuard Pro (depending on the app you use) and tap it to fetch a window with several options:
 
 1. **Enable on this page.** Turn the switch off to add the current domain to the Allowlist.
 2. **Block an element on this page.** Tap it to enter the 'Element blocking' mode: choose any element on the page, adjust the size by tapping 'plus' or 'minus', preview if necessary and then tap the checkmark icon to confirm. The selected element will be hidden from the page and a corresponding rule will be added to User rules. Remove or disable it there to revert the change.
-3. **Report an issue on this page.** Opens a web reporting tool that will help you send a report to our support team in just a few taps. Use it if you noticed a missed ad or an incorrect blocking on the page. 
+3. **Report an issue on this page.** Opens a web reporting tool that will help you send a report to our support team in just a few taps. Use it if you noticed a missed ad or an incorrect blocking on the page.
 
 > On iOS 15 devices, the Assistant features are available through [AdGuard Safari Web Extension](../web-extension), which enhances the capabilities of AdGuard for iOS and allows you to take advantage of iOS 15. With this web extension, AdGuard can apply advanced filter rules and, as a result, block more ads.
 
@@ -143,9 +143,9 @@ Aside from the *Activity* screen, you can find global statistics on the home scr
 
 ## Low-level settings {#low-level-settings}
 
-![Low-level settings *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_lowlevel.PNG) 
+![Low-level settings *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_lowlevel.PNG)
 
-To open the *Low-level settings*, go to *Settings*→*General*→(Enable *Advanced mode* if it's off)→*Advanced settings*→*Low-level settings*. 
+To open the *Low-level settings*, go to *Settings* → *General* → (Enable *Advanced mode* if it's off) → *Advanced settings* → *Low-level settings*.
 
 For the most part, the settings in this section are best left untouched: only use them if you're sure about what you're doing, or if the support team has asked for them. But some settings could be changed without any risk.
 
