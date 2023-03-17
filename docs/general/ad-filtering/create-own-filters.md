@@ -322,15 +322,26 @@ If there is a `$~third-party` modifier, the rule is only applied to the requests
 
 AdGuard will try to close the browser tab with any address that matches a blocking rule with this modifier. Please note that not all the tabs can be closed.
 
+> **Note**
+>
+> It may not work if the popped up page is cached by the browser.
+
 **Examples**
 
 * `||domain.com^$popup` — if you try to go to `http://domain.com/` from any page in the browser, a new tab in which specified site has to be opened will be closed by this rule.
 
-> It may not work if the popped up page is cached by the browser. It also will not work with some tricky popup methods. In such cases, it is better to use [AdGuard Popup Blocker](https://github.com/AdguardTeam/PopupBlocker) extension.
-
-> **Note**
+> **Compatibility with different versions of AdGuard**
 >
-> Unlike with AdGuard Browser extension, `$popup` modifier is very unreliable when used with AdGuard for Windows, Mac and Android. In AdGuard for Safari and iOS, `$popup` rules will simply block the page right away.
+> `$popup` modifier is reliable in AdGuard Browser extension.
+> In AdGuard for Safari and iOS, `$popup` rules will simply block the page right away.
+>
+> When it is used with AdGuard for Windows, Mac and Android, it is very unreliable.
+> `$popup` modifier applies `document` content type with special flag which is passed to blocking page.
+> Blocking page itself can do some checks and close the window if it is really popup.
+> Otherwise, page should be loaded.
+> It can be combined with other request type modifiers, as well as `$third-party` and `$important`.
+> However, blocking page may not detect popup in some cases, so it is recommended to use
+> [AdGuard Popup Blocker](https://github.com/AdguardTeam/PopupBlocker) userscript instead.
 
 #### **`$match-case`** {#match-case-modifier}
 
