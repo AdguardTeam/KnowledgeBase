@@ -5,7 +5,7 @@ sidebar_position: 5
 
 ## How to cancel a subscription
 
-The subscription can be canceled in your AdGuard account. To cancel your subscription, 
+The subscription can be canceled in your AdGuard account. To cancel your subscription:
 
  1. Go to your [AdGuard account](https://my.adguard.com/)
  2. Go to **Licenses** tab
