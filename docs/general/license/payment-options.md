@@ -18,6 +18,6 @@ To make it more convenient to use your AdGuard products, you can upgrade your li
 3. You can also **upgrade your subscription to a Lifetime license**.
 
 You can upgrade your license by:
-  * purchasing another license on the official websites of AdGuard products,
+  * purchasing another license on the [official AdGuard website](www.adguard.com),
   * clicking the *Upgrade to Lifetime* and/or *Increase device limit* in your AdGuard account:
     ![Upgrade *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)

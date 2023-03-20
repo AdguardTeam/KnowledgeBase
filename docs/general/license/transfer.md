@@ -21,7 +21,6 @@ There are three ways to do it:
      3. Click **Remove**
         ![Click Remove *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2.png) 
 
-
 After you have unbound the number of devices you need, you can log in to your AdGuard account on new devices. The license will be bound to them.
 
 ## How to transfer a license to another AdGuard account{#transferaccount}
@@ -30,7 +29,7 @@ After you have unbound the number of devices you need, you can log in to your Ad
  2. Go to the **Licenses** tab
  3. Find the license you want to transfer and click **Unbind from account**
     ![Click Unbind from account *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account.png)
- 4. Click **Unbind** (**IMPORTANT**: be sure to note/remember the license key)
+ 4. Click **Unbind** (**Important**: be sure to note/remember the license key)
     ![Remeber license key *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account-1.png)
  4. Go to the second AdGuard account
  5. Go to the **Licenses** tab
