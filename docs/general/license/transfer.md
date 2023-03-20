@@ -14,7 +14,7 @@ There's three ways in which you can do it:
   * by clicking the *Reset license* button (applies to desktop apps)
   * by logging out of your account in an AdGuard product
   * by removing the device in your AdGuard account:
-     1. Click **AdGuard Ad Blocker** in your [AdGuard account](my.adguard.com)
+     1. Click **AdGuard Ad Blocker** in your [AdGuard account](https://my.adguard.com/)
         ![Account Ad Blocker tab *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
      2. In the license card, click the device you want to unbind
         ![Select device *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-1.png)
@@ -26,7 +26,7 @@ After you have unbound the number of devices you need, you can log in to your Ad
 
 ## How to transfer a license to another AdGuard account{#transferaccount}
 
- 1. Go the first AdGuard account
+ 1. Go to the first AdGuard account
  2. Go to **Licenses** tab in the menu
  3. Find the license you want to transfer and click **Unbind from account**
     ![Click Unbind from account *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account.png)
