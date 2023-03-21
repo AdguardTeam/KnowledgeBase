@@ -9,7 +9,7 @@ The subscription can be canceled in your AdGuard account. To cancel your subscri
 
  1. Go to your [AdGuard account](https://my.adguard.com/)
  2. Go to **Licenses** tab
- 3. Click **Cancel subscription** under the subscription you no longer need
+ 3. Click **Cancel subscription** below the subscription you no longer need
     ![Cancel *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-cancel-sub.png)
  
  The canceled subscription will be valid until its expiry date.
