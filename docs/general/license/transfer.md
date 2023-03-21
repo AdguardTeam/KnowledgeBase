@@ -11,7 +11,7 @@ The license key can be activated on a [limited number of devices](../what-is#dev
 
 There are three ways to do it:
 
-  * by clicking the *Reset license* button (applies to desktop apps)
+  * by clicking the *Reset license* button (can be done only in AdGuard desktop apps)
   * by logging out of your account in an AdGuard product
   * by removing the device in your AdGuard account:
      1. Click **AdGuard Ad Blocker** in your [AdGuard account](https://my.adguard.com/)
