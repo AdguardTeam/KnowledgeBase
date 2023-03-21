@@ -11,11 +11,11 @@ AdGuard license can be bought on [adguard.com](https://adguard.com/license.html)
 
 ## How to upgrade a license{#upgrade}
 
-To make it more convenient to use your AdGuard products, you can upgrade your license.
+To make more use of your AdGuard products, you can upgrade your license for following benefits.
 
 1. To increase the functionality of your AdGuard products, you can **upgrade your free or trial license to the full version**.
 2. To extend the number of devices, you can **upgrade your Personal license to a Family one**.
-3. You can also **upgrade your subscription to a Lifetime license**.
+3. You can also **upgrade your [subscription](../what-is) to a Lifetime license**.
 
 You can upgrade your license by:
   * purchasing another license on the [official AdGuard website](https://adguard.com),
