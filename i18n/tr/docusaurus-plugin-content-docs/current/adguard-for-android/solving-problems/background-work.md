@@ -221,7 +221,7 @@ Open phone **Settings** → **Battery** → **Background usage limits** → Disa
 
 For early Samsung devices, there is no huge need for setting up the background work, but if in your case the AdGuard application is getting closed or disappears from the recent tasks after a while, do the following:
 
- - Tap the **Recent tasks** button, tap on the **Additional settings** icon. It should look like this:
+ - Tap the **Recent tasks** button, tap the **Additional settings** icon. It should look like this:
 
  ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/samsungoptions.png)
 
@@ -326,18 +326,18 @@ Old Huawei devices are the easiest to set up, it is enough to perform two simple
 
 Besides, to set up the background work of AdGuard more effectively, you should open device settings and do the following:
 
-- Go to **Advanced Settings** → then open **Battery Manager** → Set **Power plan** to **Performance**;
+- Go to **Settings** → open **Battery Manager** → set **Power plan** to **Performance**;
 - Then choose **Protected apps** in the **Battery Manager** and check if AdGuard is Protected;
-- Go to **Apps** in the main settings and click on AdGuard there → choose **Battery** → enable **Power-intensive prompt** and **Keep running after screen is off**;
+- Go to **Apps** in the main settings and click AdGuard there → choose **Battery** → enable **Power-intensive prompt** and **Keep running after screen is off**;
 - Then in the **Apps** section open **Settings** (at the bottom) → **Special access** → choose **Ignore battery optimization** → press **Allowed** → **All apps** → find AdGuard on the list and set it to **Deny**.
 
 ## Meizu
 
 Meizu has almost the same approach to the background process limitations as Huawei and Xiaomi. So you can avoid disabling the background work of AdGuard and any other app by adjusting the following settings:
 
-- Go to **Advanced Settings** → then open **Battery Manager** → set **Power plan** to **Performance**;
+- Go to **Advanced Settings** → open **Battery Manager** → set **Power plan** to **Performance**;
 - Then choose **Protected apps** in the **Battery Manager** and check if AdGuard is Protected;
-- Go to **Apps** section and click on AdGuard there → choose **Battery** → enable **Power-intensive prompt** and **Keep running after screen is off**.
+- Go to **Apps** section and click AdGuard there → choose **Battery** → enable **Power-intensive prompt** and **Keep running after screen is off**.
 
 ## Nokia
 
@@ -384,7 +384,7 @@ On these devices there is a task killer called **DuraSpeed** that terminates all
 
 > NOTE: You need both **Global** and **System** type settings. The screenshot shows only Global as an example.
 
-### Other Nokia models
+### Nokia'nın diğer modelleri
 
 - Go to phone **Settings** → **Apps** → **See all apps**.
 
@@ -454,7 +454,7 @@ Devices with OxygenOS on board are the most problematic, with its OS-specific ca
 
 ### App Auto-Launch
 
-App Auto-Launch (on some OnePlus phones) essentially prevents apps from working in the background. Please disable it for AdGuard.
+App Auto-Launch (on some OnePlus phones) essentially prevents apps from working in the background. Lütfen AdGuard için devre dışı bırakın.
 
 ### Enhanced / Advanced optimization
 

@@ -21,11 +21,11 @@ sidebar_position: 2
 
 _AdguardInstaller.dmg_가 다운로드될 때까지 기다렸다가 Dock 패널에 다운로드된 파일 목록에서 해당 아이콘을 두 번 클릭합니다.
 
-![두 번 클릭하여 파일 열기](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation_open_the_file.jpg)
+![Double-click to open the file](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation_open_the_file.jpg)
 
 바탕 화면에 AdGuard 아이콘이 표시될 것입니다. 설치 앱을 열려면 아이콘을 클릭합니다. 다음 열린 설치 창에서 AdGuard 아이콘을 두 번 클릭합니다.
 
-![AdGuard 아이콘을 두 번 클릭하세요](https://cdn.adtidy.org/content/kb/ad_blocker/mac/3.jpg)
+![Double-click the AdGuard icon](https://cdn.adtidy.org/content/kb/ad_blocker/mac/3.jpg)
 
 AdGuard가 처음 시작되면 운영 체제에서 이 프로그램이 인터넷에서 다운로드되었음을 경고합니다. **열기**를 클릭합니다.
 

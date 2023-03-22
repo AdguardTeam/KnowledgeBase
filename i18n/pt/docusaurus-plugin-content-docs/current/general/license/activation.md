@@ -17,11 +17,11 @@ Como alternativa, você pode usar uma chave [](../what-is#license-key) para ativ
 
 1. Abra o aplicativo do AdGuard
 
-Para isso, clique duas vezes no ícone do AdGuard na área de trabalho:
+To do it, double-click the AdGuard icon on the desktop:
 
 ![Ícone do AdGuard na área de trabalho](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowsEn.png)
 
-ou clique duas vezes no ícone do AdGuard na barra do sistema:
+or double-click the AdGuard icon in the system tray:
 
 ![Ícone do AdGuard na barra do sistema](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windows2En.png)
 

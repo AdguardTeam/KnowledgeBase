@@ -1,65 +1,65 @@
 ---
-title: Certificate-related issues
+title: Problémy související s certifikátem
 sidebar_position: 2
 ---
 
-To be able to filter HTTPS-traffic and efficiently block ads and trackers, AdGuard generates a special (and unique) root certificate and installs it into the system storage. You can learn more about why a certificate is required by reading [this article](/general/https-filtering/what-is-https-filtering).
+Aby mohl AdGuard filtrovat provoz HTTPS a účinně blokovat reklamy a slídiče, vygeneruje speciální (a jedinečný) kořenový certifikát a nainstaluje jej do systémového úložiště. Více informací o tom, proč je certifikát vyžadován, najdete v [tomto článku](/general/https-filtering/what-is-https-filtering).
 
-Normally browsers trust the AdGuard certificate once it's added to the system certificate storage during the installation process. But in some cases this is not enough and you may come across warnings or errors. This happens most often in Firefox-based browsers like Mozilla Firefox, PaleMoon, Waterfox, etc., or in Yandex.Browser.
+Prohlížeče obvykle důvěřují AdGuard certifikátu, jakmile je přidán do systémového úložiště certifikátů během procesu instalace. V některých případech to však nestačí a můžete narazit na varování nebo chyby. Nejčastěji se to stává v prohlížečích založených na Firefoxu, jako jsou Mozilla Firefox, PaleMoon, Waterfox atd., nebo v prohlížeči Yandex.Browser.
 
-## *Potential Security Risk* error in Firefox-based browsers
+## *Potenciální chyba bezpečnostního rizika* v prohlížečích založených na Firefoxu
 
 ![Security risk error](https://cdn.adtidy.org/public/Adguard/kb/en/certificate/cert_error_en.png)
 
-Old FireFox versions, as well as browsers based on them, do not trust certificates from the system storage, but only those from their local storage. Since v68, FireFox trusts the system certificates, but you still can face the "Connection is untrusted" error. If something like this happens, first try to click the *Reinstall Certificate* button — you will find it in the *Network* tab.
+Starší verze Firefoxu a prohlížeče na něm založené nedůvěřují certifikátům ze systémového úložiště, ale pouze certifikátům z místního úložiště. Od verze 68 Firefox důvěřuje systémovým certifikátům, ale stále se můžete setkat s chybou "Připojení není důvěryhodné". Pokud se něco takového stane, zkuste nejprve kliknout na tlačítko *Přeinstalovat certifikát* — najdete to na kartě *Síť*.
 
 ![Reinstall Certificate](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/reinstall.jpg)
 
-If that doesn't help, follow the instructions for manually adding the AdGuard certificate to the FireFox storage.
-> This instruction is for Firefox browser. Names of buttons and menu items may differ in other Firefox-based browsers.
+Pokud to nepomůže, postupujte podle pokynů pro ruční přidání AdGuard certifikátu do úložiště Firefoxu.
+> Tento návod je určen pro prohlížeč Firefox. Názvy tlačítek a položek menu se mohou v různých prohlížečích Firefox lišit.
 
-1) Run AdGuard.
+1) Spusťte AdGuard.
 
-2) Go to [http://local.adguard.org/cert](http://local.adguard.org/cert) and click the *Download* button. The browser should start downloading **cert.cer** file.
-> You can also open the download page by clicking on the link via the AdGuard app at *Settings → Network → HTTPS filtering*.
+2) Přejděte na [http://local.adguard.org/cert](http://local.adguard.org/cert) a klikněte na tlačítko *Stáhnout*. Prohlížeč by měl začít stahovat soubor **cert.cer**.
+> Stránku pro stažení můžete otevřít také kliknutím na odkaz prostřednictvím aplikace AdGuard v *Nastavení → Síť → HTTPS filtrování*.
 
 ![Certificate settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/link.jpeg)
 
-3) Open your browser and then open *Settings*.
+3) Otevřete prohlížeč a poté otevřete *Nastavení*.
 
-4) Go to *Privacy & Security* tab.
+4) Přejděte na kartu *Soukromí a zabezpečení*.
 
-5) Scroll down to *Certificates* and click on the *View Certificates* button.
+5) Přejděte dolů na položku *Certifikáty* a klikněte na tlačítko *Zobrazit certifikáty*.
 
 ![View certificates window](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import1.jpeg)
 
-6) Select *Authorities* tab.
+6) Vyberte kartu *Autority*.
 
-7) Click *Import...*.
+7) Klikněte na *Importovat...*.
 
 ![Certificate settings — import](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import2.jpeg)
 
-8) Browse the downloaded **cert.cer** file and click *Open*.
+8) Vyhledejte stažený soubor **cert.cer** a klikněte na *Otevřít*.
 
-9) Check the *Trust this CA to identify websites* box and then lick *OK*.
+9) Zaškrtněte políčko *Důvěřovat tomuto certifikátu k identifikaci webových stránek* a poté klikněte na *OK*.
 
-You've successfully installed AdGuard certificate. Restart the browser and the error should go away.
+Úspěšně jste nainstalovali AdGuard certifikát. Restartujte prohlížeč a chyba by měla zmizet.
 
-## Yandex.Browser certificate warning
+## Upozornění na certifikát Yandex.Browser
 
-If you are a user of both AdGuard for Windows and Yandex.Browser you may have come across this warning:
+Pokud používáte AdGuard pro Windows i Yandex.Browser, možná jste na toto upozornění narazili:
 
 ![Yandex certificate warning](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/yandex-cert.png)
 
-### Why is this happening
+### Proč k tomu došlo
 
-Both AdGuard and Yandex take users' security on the Internet very seriously. Current Yandex policy is to warn their users about any certificate that is not recognized by the browser. This is not unsubstantiated, because sometimes malicious apps can inject their own certificates and use this to harm the system and steal private data.
+AdGuard i Yandex berou bezpečnost uživatelů na internetu velmi vážně. Současná politika společnosti Yandex je varovat uživatele před certifikátem, který není prohlížečem rozpoznán. Není to nepodložené, protože někdy mohou škodlivé aplikace vložit vlastní certifikáty a využít je k poškození systému a krádeži soukromých dat.
 
-However, AdGuard also adds its certificate to the trusted ones. This leads to the warning message you have encountered.
+AdGuard však mezi důvěryhodné certifikáty přidává také svůj certifikát. To vede k varovné zprávě, na kterou jste narazili.
 
-### How to solve the problem
+### Jak tento problém vyřešit
 
-The easiest way is to click on the **Go to site** button. This will tell Yandex.Browser to remember AdGuard certificate as a trusted one, at least for a while. Normally, you won't have to see this message anymore, but it is not beyond the realm of possibility for it to appear occasionally, for whatever reasons. In such cases, simply press the same button again *(make sure it is AdGuard's certificate!)*.
+Nejjednodušší způsob je kliknout na tlačítko **Přejít na web**. Tím řeknete prohlížeči Yandex.Browser, aby si certifikát AdGuardu alespoň na chvíli zapamatoval jako důvěryhodný. Obvykle se tato zpráva již nezobrazuje, ale není vyloučeno, že se občas z nějakých důvodů objeví. V takových případech stačí znovu stisknout stejné tlačítko *(ujistěte se, že se jedná o certifikát AdGuardu!)*.
 
-Disabling the HTTPS filtering in AdGuard will also prevent Yandex.Browser from showing this message again, but it comes with a big price: all ads that are loaded by HTTPS (including **Yandex's own ads**) will show up — on such websites as YouTube, Facebook, Instagram, and many more. We strongly advise against it if you want to keep the quality of ad blocking high.
+Vypnutím HTTPS filtrování v AdGuardu také zabráníte tomu, aby prohlížeč Yandex.Browser tuto zprávu znovu zobrazoval, ale má to velkou nevýhodu: zobrazí se všechny reklamy, které se načítají pomocí HTTPS (včetně **vlastních reklam společnosti Yandex**) — např. na webových stránkách YouTube, Facebook, Instagram a mnoha dalších. Pokud chcete zachovat vysokou kvalitu blokování reklam, důrazně vám to nedoporučujeme.
 

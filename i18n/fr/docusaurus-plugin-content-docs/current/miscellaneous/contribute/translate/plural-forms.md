@@ -1,38 +1,38 @@
 ---
-title: Plural forms
+title: Formes plurielles
 sidebar_position: 4
 ---
 
 
-There are a lot of differences between the world’s languages. One of these differences is the use of plural forms that can cause huge difficulties when it comes to localization issue.
+Il y a beaucoup de différences entre les langues du monde. L'une de ces différences est l'utilisation de formes plurielles qui peuvent causer d'énormes difficultés en matière de localisation.
 
-We strongly recommend you to properly read this article to learn more about plural forms and how they are being used in AdGuard translations.
+Nous vous recommandons vivement de lire attentivement cet article pour en savoir plus sur les formes plurielles et la façon dont elles sont utilisées dans les traductions AdGuard.
 
-## What do plural forms mean? {#plurals}
+## Que signifient les formes plurielles ? {#plurals}
 
-Nouns in different languages can have several plural word forms. Their usage depends on the number of things you are talking about.
+Les substantifs dans les langues différentes peuvent avoir plusieurs formes de mots au pluriel. Leur utilisation dépend du nombre de choses dont vous parlez.
 
-For instance, English words have two word forms when speaking about something in the singular, like *'one star'*, and in the plural – *'two stars'*. It doesn’t matter if you say five, twenty six or even five hundred thirty two stars – the ending 's' will remain the same. But some languages can contain only one or many plural forms.
+Par exemple, les mots anglais ont deux formes de mots lorsqu'ils parlent de quelque chose au singulier, comme *'one star'*, et au pluriel – *'two stars'*. Peu importe que vous disiez cinq, vingt-six ou même cinq cent trente-deux 'stars' (étoiles), la terminaison « s » restera la même. Mais certaines langues ne peuvent contenir qu'une ou plusieurs formes plurielles.
 
-In contrast to English, the Polish language has three plural forms of nouns. One of them is used when speaking about something in the singular, another form is used in the plural but with numbers ending in 2-4, excluding 12-14, and the third form – for words with other numbers in front of them.
+Contrairement à l'anglais, la langue polonaise a trois formes plurielles de noms. L'une d'entre elles est utilisée pour parler de quelque chose au singulier, une autre forme est utilisée au pluriel, mais avec des nombres se terminant par 2-4, à l'exclusion de 12-14, et la troisième forme - pour les mots avec d'autres nombres devant eux.
 
-Let’s have a look at this picture. Here you can see the groups of numerals which determine a word form when standing in front of it.
+Jetons un coup d'œil à cette image. Vous pouvez voir ici les groupes de chiffres qui déterminent la forme d'un mot lorsqu'on se trouve en face de lui.
 
-![Polish](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
+![Polonais](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
-> Find other examples [here](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals).
+> Trouvez d'autres exemples [ici](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals).
 
-Let’s draw a small parallel between English and Polish for better understanding: 
+Pour mieux comprendre, établissons un petit parallèle entre l'anglais et le polonais : 
 
-      The English version:                                                 The Polish equivalents:
+      La version anglaise :                                                 Les équivalents polonais :
     
-      1. form - It takes one hour.                                     1. form - Zajmuje to godzinę. 
-      2. form - It takes two hours.                                    2. form - Zajmuje to dwie godziny. 
-      3. form - It takes five hours.                                   3. form - Zajmuje to pięć godzin.
+      1. forme - It takes one hour.                                     1. forme - Zajmuje to godzinę. 
+      2. forme - It takes two hours.                                    2. forme - Zajmuje to dwie godziny. 
+      3. forme - It takes five hours.                                   3. forme - Zajmuje to pięć godzin.
 
-Now it is clear that the Polish *'godzinę'* (hour) has three different forms, whereas the English word changes its form with given numbers only twice.
+Maintenant c'est clair que le polonais *'godzinę'* (heure) a trois formes différentes, alors que le mot anglais ne change de forme avec des nombres donnés que deux fois.
 
-Except for Polish, there are a lot of other languages that have three plural forms and more, such as Russian, Serbian, Slovak, Czech etc. But not all of them obey the same rule. That's why it is so important to know how many plural forms your language contains and how you can apply them.
+Sans parler du polonais, il existe encore de nombreuses autres langues qui ont trois formes plurielles et plus, telles que le russe, le serbe, le slovaque, le tchèque, etc. But not all of them obey the same rule. That's why it is so important to know how many plural forms your language contains and how you can apply them.
 
 ## Where can you learn about the number of plural forms? {#where-to-learn}
 

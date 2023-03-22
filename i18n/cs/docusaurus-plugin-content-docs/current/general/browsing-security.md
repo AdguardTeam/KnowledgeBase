@@ -3,62 +3,62 @@ title: Bezpečné prohlížení
 sidebar_position: 3
 ---
 
-Every day, tens of thousands of people fall prey to virus attacks or fraud on the Internet. We have added special filters to the AdGuard app to protect you from malicious and phishing websites.
+Každý den se na internetu stanou obětí virových útoků nebo podvodů desítky tisíc lidí. Do aplikace AdGuard jsme přidali speciální filtry, které vás ochrání před škodlivými a podvodnými webovými stránkami.
 
-So far, we have categorized more than 15 million sites, and our filters contain about 1.5 million phishing and malware sites. Just think about it: 10% of all known sites can be dangerous for you! Inexperienced users can easily become victims of fraudsters or hackers. We hope that using protection against malicious websites will help you avoid all hazards that you may encounter.
+Dosud jsme kategorizovali více než 15 milionů stránek a naše filtry obsahují přibližně 1,5 milionu phishingových a malwarových stránek. Jen se nad tím zamyslete: 10% všech známých webů může být pro vás nebezpečných! Nezkušení uživatelé se mohou snadno stát obětí podvodníků nebo hackerů. Doufáme, že používání ochrany proti škodlivým webům vám pomůže vyhnout se všem nebezpečím, se kterými se můžete setkat.
 
-## How does a check work?
+## Jak kontrola funguje?
 
-The scope and methods of checks depend on the product you use. In our browser extensions, AdGuard inspects only the pages you visit. In AdGuard for Windows, Mac, or Android, we offer you the best possible protection by checking both the pages and all objects loaded on them.
+Rozsah a metody kontrol závisí na používaném produktu. V našich rozšířeních prohlížeče kontroluje AdGuard pouze navštívené stránky. V nástroji AdGuardu pro Windows, Mac nebo Android vám nabízíme nejlepší možnou ochranu tím, že kontrolujeme jak stránky, tak všechny objekty na nich načtené.
 
-### AdGuard for Windows, Mac, and Android
+### AdGuard pro Windows, Mac, a Android
 
-We use the protocol [Safe Browsing API version 2.2](https://code.google.com/p/google-safe-browsing/wiki/Protocolv2Spec) for our work with filters. This protocol allows us to keep your personal data absolutely safe. Our server knows nothing about the websites that you visit. We use hash prefixes for checks, not the opened URLs.
+Pro práci s filtry používáme protokol [Safe Browsing API verze 2.2](https://code.google.com/p/google-safe-browsing/wiki/Protocolv2Spec). Tento protokol nám umožňuje uchovávat vaše osobní údaje v naprostém bezpečí. Náš server neví nic o webových stránkách, které jste navštívili. Pro kontroly používáme prefixy hash, nikoli otevřené adresy URL.
 
-The figure below provides a general understanding of how the Browsing Security module works, using AdGuard for Windows as an example.
+Následující obrázek poskytuje obecnou představu o tom, jak modul Bezpečné prohlížení funguje. Jako příklad uvádíme AdGuard pro Windows.
 
 ![Functioning algorithm of Browsing Security module](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_adguard_for_windows.png)
 
-### AdGuard Browser extensions
+### Rozšíření prohlížeče AdGuard
 
-Browser extensions work differently, using the so-called [_Lookup API_](https://github.com/AdguardTeam/AdguardForAndroid/issues/162#issue-115487668) to check the pages you visit. Every time you visit any website, your local client exchanges information with our backend server in the form of hashes and hash prefixes. For those interested in the process at a deeper level, the link above will be helpful. As a result of that exchange, the local client determines if the website belongs to the database of potentially dangerous websites or not.
+Rozšíření prohlížeče pracují jinak a ke kontrole navštívených stránek používají takzvané rozhraní [_Lookup API_](https://github.com/AdguardTeam/AdguardForAndroid/issues/162#issue-115487668). Při každé návštěvě jakékoli webové stránky si místní klient vyměňuje informace s naším koncovým serverem ve formě hashů a prefixů hash. Pro ty, kteří se o tento proces zajímají hlouběji, bude užitečný výše uvedený odkaz. Na základě této výměny místní klient určí, zda webová stránka patří do databáze potenciálně nebezpečných webových stránek, nebo ne.
 
-We bring to your attention that we never get any information that could allow us to determine which websites you visit and use that data in any way.
+Upozorňujeme vás, že nikdy nezískáváme žádné informace, které by nám umožnily zjistit, které webové stránky navštěvujete a tyto údaje jakkoli využít.
 
-An approximate algorithm of the functioning of the Browsing Security module is shown in the picture below.
+Přibližný algoritmus fungování modulu Bezpečného prohlížení je znázorněn na obrázku níže.
 
 ![Functioning algorithm of Browsing Security module in AdGuard browser extensions.](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_extension.png)
 
-## AdGuard filters
+## Filtry AdGuardu
 
-We currently maintain two AdGuard filters. One protects against phishing and fraudulent websites. The other protects against malicious websites, visiting which may lead to a virus infection.
+V současné době spravujeme dva AdGuard filtry. Jeden chrání před phishingem a podvodnými webovými stránkami. Druhý chrání před škodlivými webovými stránkami, jejichž návštěva může vést k infikování virem.
 
-### Phishing sites filter
+### Filtr phishingových stránek
 
-_Phishing_ is a type of online fraud aimed at gaining access to confidential data of users — username and password. If you are interested in this topic, we suggest that you read [this article at Wikipedia](http://en.wikipedia.org/wiki/Phishing).
+_Phishing_ je typ online podvodu, jehož cílem je získat přístup k důvěrným údajům uživatelů — uživatelské jména a hesla. Pokud vás toto téma zajímá, doporučujeme vám přečíst si [tento článek na Wikipedii](http://en.wikipedia.org/wiki/Phishing).
 
-Apart from phishing sites, this filter also covers different fraudulent sites, including all kinds of scams, sales of nonexistent content, and such.
+Kromě phishingových stránek tento filtr pokrývá také různé podvodné stránky, včetně všech druhů podvodů, prodeje neexistujícího obsahu a podobně.
 
-### Malicious sites filter
+### Filtr škodlivých stránek
 
-This filter contains links to pages that lead to the execution of malicious code. It can initiate leakage or loss of data or harm the device of a user. It can be authorized (for example, when downloading and running the executable file) or unauthorized (for example, when being attacked with spyware).
+Tento filtr obsahuje odkazy na stránky, které vedou ke spuštění škodlivého kódu. Může iniciovat únik informací, ztrátu dat nebo poškodit zařízení uživatele. Může být autorizovaný (např. při stažení a spuštění spustitelného souboru) nebo neautorizovaný (např. při napadení spywarem).
 
-## How do we fill up our filters?
+## Jak doplňujeme naše filtry?
 
-Our filters are constantly filled with new addresses. Since most of the work is automated, you can be sure that new malware and phishing addresses fall into our database as quickly as possible.
+Naše filtry se neustále plní novými adresami. Vzhledem k tomu, že většina práce je automatizovaná, můžete si být jisti, že nový malware a phishingové adresy se do naší databáze dostanou co nejrychleji.
 
-### AdGuard Browsing Security Community
+### Bezpečné prohlížení Adguard — komunita
 
-An important tool for maintaining the highest level of filtering is _AdGuard Browsing Security Community_. Any user of our products — be it AdGuard for Windows or our browser extension — can become a member of the community and help us in the making of AdGuard filters.
+Důležitým nástrojem pro udržení nejvyšší úrovně filtrování je _komunita Bezpečného prohlížení Adguardu_. Členem komunity se může stát každý uživatel našich produktů — ať už jde o AdGuard pro Windows nebo naše rozšíření pro prohlížeče — a pomoci nám tak při vytváření AdGuard filtrů.
 
-In the picture below we described an algorithm of Browsing Security Community work:
+Na obrázku níže jsme popsali algoritmus práce komunity pro Bezpečné prohlížení:
 
-![The way AdGuard Browsing Security Community works](https://cdn.adtidy.org/public/Adguard/En/Articles/browsing_security_community.png)
+![Způsob, jak funguje komunita pro Bezpečné prohlížení Adguardu](https://cdn.adtidy.org/public/Adguard/En/Articles/browsing_security_community.png)
 
-### Want to help?
+### Chcete nám pomoci?
 
-We will gladly accept any help! If you want to send us a complaint about a phishing or malware site, you can do it via technical support at **support@adguard.com** or [on our forum](http://forum.adguard.com/).
+Rádi přijmeme jakoukoli pomoc! Pokud nám chcete zaslat stížnost na phishingové nebo malwarové stránky, můžete tak učinit prostřednictvím technické podpory skrze **support@adguard.com** nebo [na našem fóru](http://forum.adguard.com/).
 
-### False-positive responses
+### Falešně pozitivní odezvy
 
-Occasionally, some non-malicious websites get added to AdGuard's filters. We do our best to reduce the percentage of false positives, but they still occur. If you come across this behavior from AdGuard, please send us a complaint about the false-positive alarm. You can submit such complaints via our technical support at **support@adguard.com** or on [our forum](http://forum.adguard.com/).
+Občas se do AdGuard filtrů přidají i jiné než škodlivé webové stránky. Snažíme se procento falešných pozitivních výsledků snížit, ale stále se vyskytují. Pokud se s tímto chováním AdGuardu setkáte, pošlete nám stížnost na falešně pozitivní výsledek. Takové stížnosti můžete podat prostřednictvím naší technické podpory skrze **support@adguard.com** nebo na [našem fóru](http://forum.adguard.com/).

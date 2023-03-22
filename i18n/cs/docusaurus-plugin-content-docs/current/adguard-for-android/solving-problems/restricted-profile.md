@@ -17,7 +17,7 @@ Problém můžete vyřešit třemi způsoby:
 - V telefonu otevřete **Nastavení**;
 - Přejděte do sekce **Systém** (poslední položka v nabídce). V této sekci vyhledejte podpoložku **Informace o telefonu**;
 - Sedmkrát klepněte na řádek **Číslo sestavení**. Poté se zobrazí oznámení **Nyní jste vývojářem** (v případě potřeby zadejte kód pro odemčení zařízení);
-- Otevřete **Nastavení systému** > **Možnosti pro vývojáře** > přejeďte dolů a zapněte **USB ladění** > po pečlivém přečtení varování potvrďte, že je ladění povoleno v okně **Povolit ladění USB**.
+- Otevřete **Nastavení systému** → **Možnosti pro vývojáře** → přejeďte dolů a zapněte **USB ladění** → po pečlivém přečtení varování potvrďte, že je ladění povoleno v okně **Povolit ladění USB**.
 
 > Pokud máte nějaké potíže nebo otázky, úplné pokyny naleznete [zde](https://developer.android.com/studio/debug/dev-options).
 
@@ -37,7 +37,7 @@ Informace o tom, jak spravovat uživatelské účty ze zařízení s Androidem, 
 
 ### Možnost 3: Použití AdGuardu v *režimu místního HTTP proxy* (vyžaduje root)
 
-Chcete-li tento režim povolit, otevřete **Nastavení AdGuardu** > **Síť** > **Metoda filtrování** > **Lokální HTTP proxy**
+Chcete-li tento režim povolit, otevřete **Nastavení AdGuardu** → **Síť** → **Metoda filtrování** → **Lokální HTTP proxy**
 
 ## Zařízení LG a Samsung
 

@@ -62,9 +62,9 @@ DNS filtering is one of the most useful features, thanks to which all your DNS t
 
 In the DNS panel you can select the DNS servers from known DNS providers or even add custom DNS servers. Also you can add domains to DNS blocklist or allowlist and add complicated rules using DNS rules syntax. Finally, you can [add DNS filters of your choice](https://filterlists.com).
 
-## Stealth Mode
+## ステルスモード
 
-![Stealth Mode](https://cdn.adtidy.org/content/kb/ad_blocker/mac/StealthMode.jpg)
+![ステルスモード](https://cdn.adtidy.org/content/kb/ad_blocker/mac/StealthMode.jpg)
 
 This module is a very useful tool that will help you maintain your privacy from websites that try to retain such info about you as your IP address, computer parameters, browser settings and even the initial page from which you were redirected, not to mention cart contents if we speak of web stores. If this list of info potentially to be shared with shady third parties doesn't make you think twice, then might we add that in most cases they will also get such personal data as your age, yearly income, medical history, physical address and your kids' names. Eliminating such things as unwanted cookies or clandestine insertion of tracking parameters into your browser is what Stealth Mode does best.
 

@@ -17,11 +17,11 @@ sidebar_position: 3
 
 1. AdGuardアプリを開く
 
-デスクトップ上のAdGuardアイコンをダブルクリックします。
+To do it, double-click the AdGuard icon on the desktop:
 
 ![デスクトップ上のAdGuardアイコン](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowsEn.png)
 
-もしくは、システムトレイでAdGuardアイコンをダブルクリックします。
+or double-click the AdGuard icon in the system tray:
 
 ![システムトレイでのAdGuardアイコン](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windows2En.png)
 

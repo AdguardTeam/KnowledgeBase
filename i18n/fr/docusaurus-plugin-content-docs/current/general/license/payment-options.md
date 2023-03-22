@@ -1,20 +1,20 @@
 ---
-title: How to purchase
+title: Comment acheter
 sidebar_position: 2
 ---
 
-## How to purchase a license
+## Comment acheter une licence
 
-AdGuard license can be bought on [adguard.com](https://adguard.com/license.html). AdGuard Pro for iOS can be bought on the App Store. Ad Blocker licenses are also sold by various distributors.
+La licence AdGuard peut être achetée sur [adguard.com](https://adguard.com/license.html). AdGuard Pro pour iOS peut être acheté sur l'App Store. Des licences du Bloqueur sont également vendues par des distributeurs.
 
-> The availability of AdGuard products in app stores and by distributors depends on your country.
+> La disponibilité des produits AdGuard dans les magasins d'applications et chez les distributeurs dépend de votre pays.
 
-## How to get a refund
+## Comment obtenir un remboursement
 
-In accordance with our [Terms of Sale](https://adguard.com/terms-of-sale.html), you can get a 100% refund on the AdGuard license key you purchased at https://adguard.com. To get a refund, contact our support team at **support@adguard.com** and indicate the payment option you've used.
+Conformément à nos conditions de vente [](https://adguard.com/terms-of-sale.html), vous pouvez obtenir un remboursement de 100% pour la clef de licence AdGuard que vous avez achetée sur https://adguard.com. Pour obtenir un remboursement, contactez notre équipe d'assistance sur **support@adguard.com** et indiquez l'option de paiement que vous avez utilisée.
 
-A refund may be denied if you:
-* purchased the license more than 60 days ago,
-* purchaded the license by a distributor,
-* purchased the license on the App Store,
-* applied for a partial refund for license key upgrade or prolongation.
+Un remboursement peut être refusé si vous :
+* avez acheté la licence il y a plus de 60 jours,
+* avez acheté la licence par l'intermédiaire d'un distributeur,
+* avez acheté la licence sur l'App Store,
+* avez demandé un remboursement partiel pour le surclassement ou la prolongation de la clef de licence.

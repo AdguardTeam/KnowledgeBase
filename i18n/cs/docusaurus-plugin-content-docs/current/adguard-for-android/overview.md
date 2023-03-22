@@ -163,7 +163,7 @@ Chcete-li se dozvědět více o DNS-over-QUIC, přečtěte si [tento článek](h
 Chcete-li zapnout DoQ v AdGuardu pro Android, proveďte následující kroky:
 
 * Otevřete aplikaci a poté otevřete postranní menu
-* Přejděte do *Nastavení > DNS filtrování* a zapněte jej
+* Přejděte do *Nastavení → DNS filtrování* a zapněte jej
 * Vyberte některý ze serverů AdGuard DNS ze seznamu dostupných serverů
 * V části *Typ serveru* vyberte *DNS-over-QUIC*
 
@@ -173,7 +173,7 @@ Je velmi podobný běžnému uživatelskému filtru, ale pro požadavky DNS.
 
 ![Uživatelský filtr DNS *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/dns-user-filter.png)
 
-Uživatelský filtr DNS najdete v *Nastavení > DNS filtrování > Blokování požadavků DNS*. Uživatelský filtr DNS podporuje dva typy syntaxe: omezenou část syntaxe AdGuardu a syntaxi "hosts". Další informace si můžete přečíst v naší databázi znalostí.
+Uživatelský filtr DNS najdete v *Nastavení → DNS filtrování → Blokování požadavků DNS*. Uživatelský filtr DNS podporuje dva typy syntaxe: omezenou část syntaxe AdGuardu a syntaxi "hosts". Další informace si můžete přečíst v naší databázi znalostí.
 
 ## Vlastní DNS filtry
 
@@ -181,53 +181,53 @@ Můžete přidat libovolný počet [vlastních DNS filtrů](https://filterlists.
 
 ![DNS filtry *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/dns-filters.png)
 
-Tato možnost je k dispozici v sekci *Nastavení > DNS filtrování > Blokování požadavků DNS*.
+Tato možnost je k dispozici v sekci *Nastavení → DNS filtrování → Blokování požadavků DNS*.
 
-## Proxy and TOR
+## Proxy a TOR
 
-A proxy server is basically another computer serving as a hub that processes your internet requests. You can set up AdGuard to route all your device's traffic through any proxy — and you'll be able to configure the whole thing right inside the app. And here is [an instruction on how to set up a proxy](../solving-problems/outbound-proxy).
+Proxy server je v podstatě další počítač sloužící jako centrum, které zpracovává vaše internetové požadavky. AdGuard můžete nastavit tak, aby směroval veškerý provoz vašeho zařízení přes libovolný proxy server — a celou věc budete moci nakonfigurovat přímo v aplikaci. A zde je [návod, jak nastavit proxy](../solving-problems/outbound-proxy).
 
-> Some popular VPN providers offer an alternative way to use their service as a proxy. This can be used to run them alongside AdGuard in local VPN mode.
+> Někteří populární poskytovatelé VPN nabízejí alternativní způsob, jak používat jejich služby jako proxy. To lze použít ke spuštění spolu s AdGuardem v místním režimu VPN.
 
 ![Nastavení proxy *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/proxy-settings.png)
 
-Contrary to a popular opinion, using a proxy server is not just about bypassing access restriction to geoblocked resources. It is about security! If you are using a proxy server, intruders won't know what websites you visit. You can also use AdGuard along with the anonymity network TOR (we have already integrated AdGuard with Tor for your convenience!). Here is a [Wiki article](https://en.wikipedia.org/wiki/Tor_(anonymity_network)) where the whole concept of TOR network is nicely explained in case you wish to find out more.
+Navzdory rozšířenému názoru není používání proxy jen o obcházení omezení přístupu ke geoblokovaným zdrojům. Jde o bezpečnost! Pokud používáte proxy, útočníci nebudou vědět, jaké webové stránky navštěvujete. AdGuard můžete používat také společně s anonymní sítí TOR (pro vaše pohodlí jsme již AdGuard s Tor integrovali!). Zde je článek [Wiki](https://en.wikipedia.org/wiki/Tor_(anonymity_network)), kde je celý koncept sítě TOR pěkně vysvětlen, pokud se chcete dozvědět více.
 
-## Extensions support
+## Podpora rozšíření
 
-Userscripts (we also call them extensions) are basically mini-programs written in JavaScript that extend the functionality of one or more websites. Usually, you'd need some special userscript manager to add them, and it's traditionally more of a desktop thing. But with AdGuard everything is possible! Now you can add any userscripts by URL or load them from a file, and AdGuard will serve as a userscript manager and take care of the rest. Go to *Settings > Extensions* to enable some of the pre-installed extensions or to add custom userscripts.
+Uživatelské skripty (říkáme jim také rozšíření) jsou v podstatě miniprogramy napsané v jazyce JavaScript, které rozšiřují funkčnost jedné nebo více webových stránek. Obvykle byste k jejich přidání potřebovali nějaký speciální správce uživatelských skriptů a tradičně se jedná spíše o desktopovou záležitost. Ale s AdGuardem je možné všechno! Nyní můžete přidávat libovolné uživatelské skripty pomocí adresy URL nebo je načíst ze souboru a AdGuard bude sloužit jako správce uživatelských skriptů a postará se o zbytek. Přejděte do *Nastavení → Rozšíření* a povolte některá předinstalovaná rozšíření nebo přidejte vlastní uživatelské skripty.
 
 ![Rozšíření *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/extensions.png)
 
-By the way, you can tap any added userscript to see more details, and to reinstall or delete it.
+Mimochodem, klepnutím na jakýkoli přidaný uživatelský skript můžete zobrazit další podrobnosti a znovu jej nainstalovat nebo odstranit.
 
-## Compatibility with AdGuard VPN
+## Kompatibilita s AdGuard VPN
 
-The best kind of compatibility is when you install two apps and they just start working together. Presuming you already have AdGuard Ad Blocker installed, just download AdGuard VPN from Play Store (you can get there right from the ad blocker app, there's an item in General settings).
+Nejlepší kompatibilita je, když nainstalujete dvě aplikace a ty začnou spolupracovat. Za předpokladu, že již máte nainstalovaný blokátor reklam AdGuard, stačí si stáhnout AdGuard VPN z Google Play (dostanete se tam přímo z aplikace pro blokování reklam, je tam položka v obecném nastavení).
 
 ![Kompatibilita *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/compatibility.png)
 
-Both apps will detect each other and do everything that's needed for smooth joint work. All that will be left for you is to enjoy both ad-free Internet and the benefits of a VPN. It also works the other way around just as well: install AdGuard Ad Blocker on top of an already-running AdGuard VPN and you're good.
+Obě aplikace se vzájemně detekují a provedou vše potřebné pro bezproblémovou společnou práci. Zbývá už jen využívat internet bez reklam a výhody sítě VPN. Stejně dobře to funguje i obráceně: nainstalujte blokátor reklam AdGuard na již spuštěnou AdGuard VPN a je to v pořádku.
 
-If you'd like to disable Compatibility Mode for any reason, it's very simple to do so from AdGuard Ad Blocker settings, just toggle the switch. Additionally, you can add AdGuard Ad Blocker and AdGuard VPN tiles to your device's notification bar and toggle them in one tap at your own will — thanks to Compatibility Mode the configuration will change immediately and silently.
+Pokud chcete z jakéhokoli důvodu režim kompatibility vypnout, lze to velmi jednoduše provést v nastavení blokátoru reklam AdGuard –⁠ stačí přepnout přepínač. Kromě toho můžete do oznamovací lišty svého zařízení přidat dlaždice blokátoru reklam AdGuard a AdGuard VPN a přepínat je jedním klepnutím podle vlastního uvážení — díky režimu kompatibility se konfigurace změní okamžitě a tiše.
 
 ## Licence
 
-While some ot the features in AdGuard for Android are free, others require [purchasing a license](https://adguard.com/en/license.html). There are Personal (up to three devices) and Family (up to 9 devices), Yearly and Lifetime license keys. The premium version offers the following features to its users:
+Zatímco některé funkce AdGuardu pro Android jsou zdarma, jiné vyžadují [zakoupení licence](https://adguard.com/en/license.html). K dispozici jsou osobní (až tři zařízení) a rodinné (až 9 zařízení), roční a doživotní licenční klíče. Prémiová verze nabízí uživatelům následující funkce:
 * Režim utajení
 * Bezpečné prohlížení
 * Rozšíření
 * Blokování reklam ve všech aplikacích (nejen v prohlížečích)
 * Vlastní filtry
 
-Read [this article](./general/license/activation) to learn how to activate the license key.
+Přečtěte si [tento článek](./general/license/activation) a zjistěte, jak aktivovat licenční klíč.
 
-## Other features
+## Další funkce
 
-There are too many features to describe them all in detail, so let us simply list them here:
+Je příliš mnoho funkcí na to, abychom je všechny podrobně popisovali, proto je zde jednoduše vyjmenujeme:
 
-* When you visit certain screens for the first time, there will appear tooltips that describe the purpose of that screen and its main features
-* You can export or import AdGuard settings (for a faster switch between the settings profiles or to transfer your profile between different devices)
-* Select an update channel, i.e. the mode in which the application receives its updates (stable release channel, less stable beta channel and raw ["nightly" channel](https://adguard.com/en/blog/nightly-builds/)
-* By tapping a little battery icon on the main screen of the app you will get to the "Battery Usage" screen. System battery stats [are often wrong](../solving-problems/battery), so we decided to have our own, one that would reflect the real state of things
-* You can change the app's language in the General Settings tab
+* Při první návštěvě některých obrazovek se zobrazí popisky, které popisují účel dané obrazovky a její hlavní funkce
+* Můžete exportovat nebo importovat nastavení AdGuardu (pro rychlejší přepínání mezi profily nastavení nebo pro přenos profilu mezi různými zařízeními)
+* Zvolte aktualizační kanál, tj. režim, ve kterém aplikace přijímá aktualizace (kanál stabilního vydání, méně stabilní kanál beta a nestabilní kanál) ["nightly"](https://adguard.com/en/blog/nightly-builds/)
+* Klepnutím na malou ikonu baterie na hlavní obrazovce aplikace se dostanete na obrazovku "Využití baterie". Statistiky baterií zobrazované systémem [jsou často chybné](../solving-problems/battery), proto jsme se rozhodli mít vlastní, které odrážejí skutečný stav
+* Jazyk aplikace můžete změnit na kartě Obecná nastavení

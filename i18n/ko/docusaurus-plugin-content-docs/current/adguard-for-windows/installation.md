@@ -53,11 +53,11 @@ AdGuard 제거 및 재설치 방법은 다음과 같습니다.
 
 ![Windows 10 & 11 제거 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/win10-uninstall.png)
 
-* Microsoft Windows 8: 작업 표시줄의 왼쪽 하단에 있는 *빈 공간*을 우클릭하고 *제어판*을 선택합니다. *프로그램* 섹션에서 *프로그램 제거*를 클릭합니다. 설치된 앱 목록 중에 *AdGuard*를 선택하고 목록 바로 위에 있는 *제거* 버튼을 누릅니다. 열리는 창에서 *AdGuard 제거*를 클릭하여 확인합니다.
+* For Microsoft Windows 8: Right-click the *empty space* in the lower left corner of the task bar and select *Control Panel*. *프로그램* 섹션에서 *프로그램 제거*를 클릭합니다. 설치된 앱 목록 중에 *AdGuard*를 선택하고 목록 바로 위에 있는 *제거* 버튼을 누릅니다. 열리는 창에서 *AdGuard 제거*를 클릭하여 확인합니다.
 
 ![Windows 8 제거](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/win8-uninstall.png)
 
-* Microsoft Windows 8.1: *시작 버튼*을 마우스 우클릭하고 *제어판*을 선택합니다. *프로그램* 섹션에서 *프로그램 제거*를 클릭합니다. 설치된 앱 목록 중에 *AdGuard*를 선택하고 목록 바로 위에 있는 *제거* 버튼을 누릅니다. 열리는 창에서 *AdGuard 제거*를 클릭하여 확인합니다.
+* For Microsoft Windows 8.1: Right-click the *Start button* and select *Control Panel*. *프로그램* 섹션에서 *프로그램 제거*를 클릭합니다. 설치된 앱 목록 중에 *AdGuard*를 선택하고 목록 바로 위에 있는 *제거* 버튼을 누릅니다. 열리는 창에서 *AdGuard 제거*를 클릭하여 확인합니다.
 
 * Microsoft Windows 7: *시작 메뉴*를 엽니다. 검색 창에 *제어판*을 입력합니다. *프로그램* 섹션에서 *프로그램 제거*를 클릭합니다. 설치된 앱 목록 중에 *AdGuard*를 선택하고 목록 바로 위에 있는 *제거* 버튼을 누릅니다. 열리는 창에서 *AdGuard 제거*를 클릭하여 확인합니다.
 
@@ -65,7 +65,7 @@ AdGuard 제거 및 재설치 방법은 다음과 같습니다.
 
 ### 고급 방법 {#advanced}
 
-일반 방법으로 프로그램이 제거되지 않으면 고급 방법을 시도할 수 있습니다. 먼저 개발자들이 만든 [제거 도구](https://cdn.adtidy.org/public/Adguard/tools/Uninstall_Utility.zip)를 다운로드하세요. 이 링크를 클릭하면 제거 도구를 다운로드할 수 있습니다. PC의 폴더에 압축을 풀고 **Adguard_Uninstall_Utility.exe** 파일을 실행합니다. 그런 다음 아래 지침을 따르십시오.
+일반 방법으로 프로그램이 제거되지 않으면 고급 방법을 시도할 수 있습니다. First of all, you need to [download the uninstaller tool](https://cdn.adtidy.org/distr/windows/Uninstall_Utility.zip) created by our developers. 이 링크를 클릭하면 제거 도구를 다운로드할 수 있습니다. PC의 폴더에 압축을 풀고 **Adguard_Uninstall_Utility.exe** 파일을 실행합니다. 그런 다음 아래 지침을 따르십시오.
 
 * *Standart uninstall*를 선택한 다음 *Delete AdGuard*를 선택하고 *uninstall*를 클릭합니다.
 

@@ -12,12 +12,12 @@ sidebar_position: 11
 Чтобы Firefox доверял сертификату AdGuard, выполните следующие шаги:
 
 1. Запустите браузер.
-2. Перейдите на страницу **Настройки** > **О Firefox**.
+2. Go to **Settings** → **About Firefox**.
 
 ![О Firefox *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
 
 3. Коснитесь логотипа Firefox пять раз.
-4. Перейдите в раздел **Настройки** > **Тайные настройки**.
+4. Navigate to **Settings** → **Secret Settings**.
 
 ![Секретные настройки *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
 
@@ -33,9 +33,9 @@ sidebar_position: 11
     - Откройте приложение **Настройки** на своём телефоне;
     - Перейдите в раздел **О системе** (последний пункт в меню настроек). В этом разделе найдите подпункт **О телефоне**;
     - Нажмите на строку **Номер сборки** 7 раз. После этого вы получите уведомление, что **Теперь вы разработчик** (При необходимости введите код разблокировки устройства);
-    - Откройте **Настройки системы** > **Для разработчиков** > Прокрутите вниз и включите **отладку по USB** > Подтвердите включение отладки в окне **Разрешить отладку по USB**, внимательно прочитав предупреждение.
+    - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
 3. Установите браузер [Firefox](https://www.mozilla.org/en-US/firefox/releases/) (релизную версию);
-4. Откройте **настройки AdGuard** > **Сеть** > **HTTPS-фильтрация** > Установите сертификат в браузер **Firefox** > **УСТАНОВИТЬ ДЛЯ СТАРЫХ ВЕРСИЙ**;
+4. Open the **AdGuard settings** → **Network** → **HTTPS Filtering** → Install the certificate in **Firefox** → **INSTALL FOR OLD VERSIONS**;
 5. Откройте папку `data/data/org.mozilla.firefox/files/mozilla`, используя `adb shell su` и `cd data/data/...`, перейдите в папку `xxxxxxx.default` и запомните её название;
 6. В указанной папке нас интересуют два файла:
     - `cert9.db`

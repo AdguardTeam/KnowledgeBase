@@ -116,7 +116,7 @@ Some rules can be used only in trusted filters. This category includes:
 
 ## Basic rules
 
-The most simple rules are so-called *Basic rules*. They are used to block requests to specific URLs. Or to unblock it, if there is a special marker "@@" at the beginning of the rule. The basic principle for this type of rules is quite simple: you have to specify the address and additional parameters that limit or expand the scope of the rule.
+The most simple rules are so-called *Basic rules*. They are used to block requests to specific URLs. Or to unblock it, if there is a special marker "@@" at the beginning of the rule. The basic principle for this type of rules is quite simple: you have to specify the address and additional parameters that limit or expand the rule scope.
 
 > **Sub-requests**
 > 
@@ -135,7 +135,7 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 
 * **`pattern`** — an address mask. Every request URL is collated to this mask. You can also use special characters in the template, their description is [below](#basic-rules-special-characters). Note that AdGuard trims URLs to a length of 4096 characters in order to speed up matching and avoid issues with ridiculously long URLs.
 * **`@@`** — a marker that is used in rules of exception. To turn off filtering for a request, start your rule with this marker.
-* **`modifiers`** — parameters that "clarify" the basic rule. Some of them limit the scope of the rule and some can completely change they way it works.
+* **`modifiers`** — parameters that "clarify" the basic rule. Some of them limit the rule scope and some can completely change they way it works.
 
 ### Special characters {#basic-rules-special-characters}
 
@@ -239,9 +239,16 @@ If you want the rule not to be applied to certain domains, start a domain name w
 
 In some cases the `$domain` modifier can match not only the referrer domain, but also the target domain. This happens when all of the following is true:
 
-1) The request has `document` content type. 2) The rule pattern does not match any particular domains. 3) The rule pattern does not contain regular expressions. 4) The `$domain` modifier contains only excluded domains, e.g. `$domain=~example.org|~example.com`.
+1. The request has `document` content type.
+1. The rule pattern does not match any particular domains.
+1. The rule pattern does not contain regular expressions.
+1. The `$domain` modifier contains only excluded domains, e.g. `$domain=~example.org|~example.com`.
 
-The following predicate should be satisfied to perform a target domain matching: `1 AND ((2 AND 3) OR 4)`. That is, if the modifier `$domain` contains only excluded domains, then the rule does not need to meet the second and third conditions to match the target domain against the modifier `$domain`.
+The following predicate should be satisfied to perform a target domain matching:
+```
+1 AND ((2 AND 3) OR 4)
+```
+That is, if the modifier `$domain` contains only excluded domains, then the rule does not need to meet the second and third conditions to match the target domain against the modifier `$domain`.
 
 If some of the conditions above are not met but the rule contains [`$cookie`](#cookie-modifier) or [`$csp`](#csp-modifier) modifier, the target domain will still be matched.
 
@@ -291,7 +298,9 @@ In the following examples it is implied that requests are sent from `http://exam
 
 A restriction of third-party and own requests. A third-party request is a request from a different domain. For example, a request to `example.org`, from `domain.com` is a third-party request.
 
-> To be considered as such, a third-party request should meet one of the following conditions: 1) Its referrer is not a subdomain of the target domain or the other way round. For example, a request to `subdomain.example.org` from `example.org` is not a third-party request. 2) Its `Sec-Fetch-Site` header is set to `cross-site`. If there is a `$third-party` modifier, the rule is only applied to third-party requests.
+> **Note**
+> 
+> To be considered as such, a third-party request should meet one of the following conditions: 1. Its referrer is not a subdomain of the target domain or the other way round. For example, a request to `subdomain.example.org` from `example.org` is not a third-party request. 1. Its `Sec-Fetch-Site` header is set to `cross-site`. If there is a `$third-party` modifier, the rule is only applied to third-party requests.
 
 **Examples**
 
@@ -309,15 +318,19 @@ If there is a `$~third-party` modifier, the rule is only applied to the requests
 
 AdGuard will try to close the browser tab with any address that matches a blocking rule with this modifier. Please note that not all the tabs can be closed.
 
+> **Note**
+> 
+> It may not work if the popped up page is cached by the browser.
+
 **Examples**
 
 * `||domain.com^$popup` — if you try to go to `http://domain.com/` from any page in the browser, a new tab in which specified site has to be opened will be closed by this rule.
 
-> It may not work if the popped up page is cached by the browser. It also will not work with some tricky popup methods. In such cases, it is better to use [AdGuard Popup Blocker](https://github.com/AdguardTeam/PopupBlocker) extension.
-
-> **Note**
+> **Compatibility with different versions of AdGuard**
 > 
-> Unlike with AdGuard Browser extension, `$popup` modifier is very unreliable when used with AdGuard for Windows, Mac and Android. In AdGuard for Safari and iOS, `$popup` rules will simply block the page right away.
+> 1. `$popup` modifier works best in AdGuard Browser Extension.
+> 2. In AdGuard for Safari and iOS, `$popup` rules simply block the page right away.
+> 3. In AdGuard for Windows, Mac, and Android, `$popup` modifier may not detect a popup in some cases and it won't be blocked. `$popup` modifier applies the `document` content type with a special flag which is passed to a blocking page. Blocking page itself can do some checks and close the window if it is really a popup. Otherwise, page should be loaded. It can be combined with other request type modifiers, such as `$third-party` and `$important`. However, the blocking page may not detect a popup in some cases, so it is recommended to use [AdGuard Popup Blocker](https://github.com/AdguardTeam/PopupBlocker) userscript instead.
 
 #### **`$match-case`** {#match-case-modifier}
 
@@ -463,7 +476,7 @@ The rule applies only to WebSocket connections.
 
 > **Compatibility with different versions of AdGuard**
 > 
-> AdGuard for Safari and iOS cannot properly apply rules with `websocket` modifier due to Safari limitations.
+> `$websocket` modifier is supported in all AdGuard products except AdGuard Content Blocker. As for AdGuard for Safari and AdGuard for iOS, it's supported on devices with macOS Monterey (version 12) and iOS 16 or higher.
 
 #### **`$other`** {#other-modifier}
 
@@ -499,7 +512,7 @@ The rule applies only to WebRTC connections.
 * [`$specifichide`](#specifichide-modifier)
 * [Generic rules](#exception-modifiers-generic-rules)
   * [`$generichide`](#generichide-modifier)
-  * [`$generichide`](#generichide-modifier)
+  * [`$genericblock`](#genericblock-modifier)
 
 Exception rules disable the other basic rules for the addresses to which they correspond. They begin with a `@@` mark. All the basic modifiers listed above can be applied to them and they also have a few special modifiers.
 
@@ -642,7 +655,7 @@ Disables all generic [cosmetic rules](#cosmetic-rules) on pages that correspond 
 
 * `@@||example.com^generichide` — disables generic cosmetic rules on any pages at `example.com` and all subdomains.
 
-##### **`$genericblock`** {#generichide-modifier}
+##### **`$genericblock`** {#genericblock-modifier}
 
 Disables generic basic rules on pages that correspond to exception rule.
 
@@ -656,12 +669,14 @@ Disables generic basic rules on pages that correspond to exception rule.
 * [`$badfilter`](#badfilter-modifier)
 * [`$replace`](#replace-modifier)
 * [`$csp`](#csp-modifier)
+* [`$permissions`](#permissions-modifier)
 * [`$all`](#all-modifier)
 * [`$inline-script`](#inline-script-modifier)
 * [`$inline-font`](#inline-font-modifier)
 * [`$cookie`](#cookie-modifier)
 * [`$network`](#network-modifier)
 * [`$app`](#app-modifier)
+* [`$method`](#method-modifier)
 * [`$redirect`](#redirect-modifier)
 * [`$redirect-rule`](#redirect-rule-modifier)
 * [`$denyallow`](#denyallow-modifier)
@@ -992,6 +1007,20 @@ If you want the rule not to be applied to certain apps, start the app name with 
 > **Compatibility with different versions of AdGuard**
 > 
 > Only AdGuard for Windows, Mac, Android are technically capable of using rules with `$app` modifier.
+
+#### **`$method`** {#method-modifier}
+
+This modifier limits the rule scope to requests that use the specified set of HTTP methods. Negated methods are allowed. The methods must be specified in all lowercase characters, but are matched case-insensitively.
+
+**Examples**
+
+* `||evil.com^$method=get|head` blocks only GET and HEAD requests to `evil.com`.
+* `||evil.com^$method=~post|~put` blocks any requests except POST or PUT to `evil.com`.
+
+> **Compatibility with different versions of AdGuard**
+> 
+> `$method` is available starting with CoreLibs v1.12.
+
 
 #### **`$redirect`** {#redirect-modifier}
 
@@ -1410,7 +1439,7 @@ preroll.ts
 
 `$jsonprune` rules modify the response to a matching request by removing JSON items that match a modified [JSONPath](https://goessner.net/articles/JsonPath/) expression. They do not modify responses which are not valid JSON documents.
 
-> In AdGuard for Windows, Mac and Android, **running CoreLibs version 1.11 or later**, `$jsonprune` also supports modifying JSONP (padded JSON) documents.
+> In AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**, `$jsonprune` also supports modifying JSONP (padded JSON) documents.
 
 **Syntax**
 
@@ -1419,19 +1448,22 @@ preroll.ts
 > Due to the way rule parsing works, the characters `$` and `,` must be escaped with `\` inside `expression`.
 
 The modified JSONPath syntax has the following differences from the original:
-1. Script expressions are not supported.
-2. The supported filter expressions are:
-  * `?(has <key>)` — true if the current object has the specified key.
-  * `?(key-eq <key> <value>)` — true if the current object has the specified key, and its value is equal to the specified value.
-  * `?(key-substr <key> <value>)` — true if the specified value is a substring of the value of the specified key of the current object.
-3. Whitespace outside of double- or single-quoted strings has no meaning.
-4. Both double- and single-quoted strings can be used.
-5. Expressions ending with `..` are not supported.
-6. Multiple array slices can be specified in square brackets.
 
-There are various online tools for testing JSONPath expressions, e.g. https://jsonpath.herokuapp.com/ https://jsonpath.com/
+1.  Script expressions are not supported.
+2.  The supported filter expressions are:
+      * `?(has <key>)` — true if the current object has the specified key.
+      * `?(key-eq <key> <value>)` — true if the current object has the specified key, and its value is equal to the specified value.
+      * `?(key-substr <key> <value>)` — true if the specified value is a substring of the value of the specified key of the current object.
+3.  Whitespace outside of double- or single-quoted strings has no meaning.
+4.  Both double- and single-quoted strings can be used.
+5.  Expressions ending with `..` are not supported.
+6.  Multiple array slices can be specified in square brackets.
 
-Keep in mind, though, that all JSONPath implementations on this planet have unique features/quirks and are subtly incompatible with each other.
+There are various online tools that make working with JSONPath expressions more convenient:
+
+https://www.site24x7.com/tools/jsonpath-finder-validator.html https://jsonpathfinder.com/ https://jsonpath.com/
+
+Keep in mind, though, that all JSONPath implementations have unique features/quirks and are subtly incompatible with each other.
 
 **Exceptions**
 
@@ -3010,7 +3042,7 @@ Filtering log is an advanced tool that will be helpful mostly to filter develope
 Depending on which AdGuard product you are using, Filtering log can be located in different places.
 
 * In **AdGuard for Windows** you will find it inside *Ad Blocker* tab or via the tray menu;
-* In **AdGuard for Mac** it is under *Settings > Advanced > Filtering log*;
+* In **AdGuard for Mac** it is under *Settings → Advanced → Filtering log*;
 * In **AdGuard for Android** it is a separate item in the side menu, also filtering log for a specific app or website is accessible from the Assistant.
 * In **AdGuard Browser extension** it is accessible from the *Miscellaneous* settings tab or by right-clicking the extension icon. Only Chromium- and Firefox-based browsers show applied **element hiding rules** (including CSS, ExtCSS) and **JS rules and scriptlets** in their Filtering logs.
 

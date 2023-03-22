@@ -1,37 +1,37 @@
 ---
-title: Launch issues on macOS
+title: macOSでAdGuardアプリが起動しない問題
 sidebar_position: 6
 ---
 
-Occasionally macOS may cause the corruption of AdGuard's Network Extension module, making it unable to use the app. In this case you should follow one of these instructions, based on your OS version.
+時折、macOSでAdGuardのNetwork拡張モジュールが破損し、AdGuardアプリが使用できなくなる場合があります。 この場合、お使いのOSのバージョンに応じて、以下のいずれかの方法で対処してください。
 
-## Launch issues on macOS 11 and higher
+## macOS 11以降でのAdGuard起動問題
 
-If you have problems launching AdGuard for Mac on Big Sur and Monterey operating systems, please use this instruction:
+Big Sur、Monterey、Venturaのオペレーティングシステムで AdGuard for Mac の起動に問題がある場合は、こちらの手順をご利用ください:
 
-1. Reboot Mac and enter [recovery mode](https://support.apple.com/en-us/HT201255).
-2. Disable SIP (Launch **Terminal** from the **Utilities** menu and type `csrutil disable`).
-3. Reboot Mac.
-4. Close the AdGuard app, open **Terminal** and type `systemextensionsctl reset`.
-5. Reboot Mac and enter recovery mode.
-6. Enable SIP (Launch **Terminal** from the **Utilities** menu and type `csrutil enable`).
-7. Launch the AdGuard app and enable protection.
+1. Macを再起動し、 [リカバリー（復旧）モードに入る](https://support.apple.com/ja-jp/HT204904)
+2. SIPを無効にする（**ユーティリティー**メニューから「**ターミナル**」を起動し、 `csrutil disable`と入力します）
+3. Macを再起動する
+4. AdGuardアプリを閉じ、「**ターミナル**」を開き、 `systemextensionsctl reset`と入力します。
+5. Macを再起動し、リカバリー（復旧）モードに入る
+6. SIPを有効にする（**ユーティリティー**メニューから「**ターミナル**」を起動し、 `csrutil enable`と入力します）
+7. AdGuardアプリを起動し、保護をオンにします。
 
-## Launch issues on macOS 10
+## macOS 10以下でのAdGuard起動問題
 
-If you have problems launching AdGuard for Mac on Sierra, Mojave and Catalina operating systems, please use this instruction:
+Sierra、Mojave、Catalinaのオペレーティングシステムで AdGuard for Mac の起動に問題がある場合は、こちらの手順をご利用ください:
 
-1. Open **Terminal** and enter command `ls -@lOae /private/var/db/KernelExtensionManagement`.
-2. Check that the `restricted` flag is not present (like on the screenshot).
+1. 「**ターミナル**」を開き、`ls -@lOae /private/var/db/KernelExtensionManagement`というコマンドを入力する
+2. （以下のスクリーンショットのように）`restricted` フラグがなし（-）になっていることを確認してください。
 
-![Command example *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/restricted-flag.jpg)
+![コマンドの例 *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/restricted-flag.jpg)
 
-3. Reboot your Mac in recovery mode.
-4. Open **Utilities** → **Terminal**.
-5. Enter `csrutil disable`.
-6. Enter administrator password.
-7. Reboot your Mac.
-8. Open **Terminal** and enter the following command: `sudo chflags restricted /private/var/db/KernelExtensionManagement`.
-9. Reboot your Mac in recovery mode.
-10. Open **Utilities** → **Terminal** → Enter `csrutil enable` → Enter administrator password → Reboot your Mac.
-11. Enable AdGuard protection.
+3. Macをリカバリーモードで再起動する
+4. 「**ユーティリティ**」→「**ターミナル**」を開く
+5. `csrutil disable`と入力する
+6. 管理者パスワードを入力する
+7. Macを再起動する
+8. 「**ターミナル**」を開き、`sudo chflags restricted /private/var/db/KernelExtensionManagement`というコマンドを入力する
+9. Macをリカバリーモードで再起動する
+10. 「**ユーティリティ**」→「**ターミナル**」→ `csrutil enable`と入力する → 管理者パスワードを入力する → Macを再起動する
+11. AdGuard保護をオンにする

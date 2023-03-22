@@ -17,11 +17,11 @@ También puedes utilizar una clave [](../what-is#license-key) para activar la li
 
 1. Abre la aplicación AdGuard
 
-Para ello, haz doble clic en el icono de AdGuard del escritorio:
+To do it, double-click the AdGuard icon on the desktop:
 
 ![Icono de AdGuard en el escritorio](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowsEn.png)
 
-o haz doble clic en el icono de AdGuard en la bandeja del sistema:
+or double-click the AdGuard icon in the system tray:
 
 ![Icono de AdGuard en la bandeja del sistema](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windows2En.png)
 

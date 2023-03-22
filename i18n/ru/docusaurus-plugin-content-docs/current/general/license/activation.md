@@ -17,11 +17,11 @@ sidebar_position: 3
 
 1. Откройте приложение AdGuard
 
-Дважды щёлкните по иконке AdGuard на рабочем столе:
+To do it, double-click the AdGuard icon on the desktop:
 
 ![Иконка AdGuard на рабочем столе](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowsEn.png)
 
-либо дважды щёлкните по иконке AdGuard в области уведомлений на панели задач:
+or double-click the AdGuard icon in the system tray:
 
 ![Иконка AdGuard в системном трей-меню](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windows2En.png)
 
@@ -93,11 +93,11 @@ sidebar_position: 3
 
 3. Нажмите **Войти** в правом верхнем углу экрана
 
-![Tap Log in in the top right corner of Premium screen *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense1en.png)
+![Нажмите «Войти» в правом верхнем углу экрана «Премиум» *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense1en.png)
 
 4. Введите **email** и **пароль** от **аккаунта AdGuard**
 
-![Log in *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense2en.png)
+![Войти *мобильный](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense2en.png)
 
 ## Как перенести лицензию на другое устройство
 

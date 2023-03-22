@@ -1,94 +1,94 @@
 ---
-title: How to report bugs
+title: 如何报告错误
 sidebar_position: 4
 ---
 
-If you notice a bug while using AdGuard products, please help us address it. Here’s how to report bugs most effectively.
+如果您使用 AdGuard 服务时遇到错误，别犹豫，请直接与我们联系。 过程非常简单，请根据以下步骤报告错误。
 
-## Before you start
+## 开始前
 
-### When to report bugs
+### 什么时候需要报告错误
 
-Check that you have the most up-to-date version, and if not, upgrade: the bug might have already been resolved in the new version.
+检查您是否已有最新的版本，如果还没，我们建议您请先试试升级：该错误可能已经在新版本中得到了解决。
 
-Check if the bug hasn’t been reported before. We advise paying attention to both open and closed issues.
+还有请留意这个错误是否还没有被其他用户上报过。 我们建议大家留意处理中和已解决的问题。
 
-![Closed issues](https://cdn.adtidy.org/content/kb/ad_blocker/general/closed_issues.png)
+![已解决的问题](https://cdn.adtidy.org/content/kb/ad_blocker/general/closed_issues.png)
 
-### How to describe a problem
+### 如何描述错误
 
-Try to provide as many details as possible — that'll make it easier for us to reproduce the bug and figure out how to fix it. Here’s what we’re expecting to see in a bug report:
+请您提供尽量多的细节，这将使我们更容易重现该错误，然后着手修复它。 因此，请大家在上报错误时参考以下模版：
 
-* Your app version
-* Your OS version
-* When you noticed the problem
-* What you were doing or what happened to the app before you noticed the problem. Steps to reproduce it
-* Whether it recurred and with what frequency
-* Whether you have a VPN or an antivirus software
+* 应用程序版本
+* 操作系统版本
+* 发现问题的时间
+* 在您发现问题前，您进行什么操作或应用程序执行什么操作。 请重现操作步骤
+* 问题是否重复发生，发生频率如何
+* 您是否开启 VPN 或防病毒软件
 
-### How to collect logs
+### 如何收集日志记录
 
-Read about collecting logs in dedicated articles for each platform.
+请在描述相应操作系统的文章上了解如何收集日志记录。
 
-## How to vote for bug reports or feature requests
+## 为错误报告或功能请求投票
 
-If you want to support the implementation of a new feature or bugfix, you can vote for it on GitHub. To vote, just react with some emoji.
+如您想添加新功能或尽快修复某一个错误，用户可以在 GitHub 上投票。 要留下您的反馈，发送某一个表情即可。
 
-![GitHub issue with reactions](https://cdn.adtidy.org/content/kb/ad_blocker/general/github_reaction.png)
+![GitHub 上的反馈表情](https://cdn.adtidy.org/content/kb/ad_blocker/general/github_reaction.png)
 
-![GitHub issue without reactions](https://cdn.adtidy.org/content/kb/ad_blocker/general/github_reaction2.png)
+![GitHub 上没有表情反应](https://cdn.adtidy.org/content/kb/ad_blocker/general/github_reaction2.png)
 
-You can find reactions in the upper right corner or at the bottom of an issue.
+您可以在问题的右上角或底部找到表情反应。
 
 
-## Instructions for all platforms
+## 用于不同操作系统的说明
 
 ### AdGuard Windows版
 
-1. Check out the [Windows repo](https://github.com/AdguardTeam/AdGuardforWindows/issues) to make sure the issue hasn’t been reported yet.
+1. 请查看 [Windows 存储库](https://github.com/AdguardTeam/AdGuardforWindows/issues)以确保尚未报告该问题。
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForWindows/issues/new/choose) and select *Bug report*.
+2. 打开[创建新问题的页面](https://github.com/AdguardTeam/AdguardForWindows/issues/new/choose)并选择「*错误报告*」。
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. 填写表格。 如果可以，请插入屏幕截图或屏幕视频。
 
-![Reporting a bug via GitHub *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows_gh.png)
+![通过 GitHub 报告错误 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows_gh.png)
 
 ### AdGuard Mac版
 
-1. Check out the [Mac repo](https://github.com/AdguardTeam/AdGuardforMac/issues) to make sure the issue hasn’t been reported yet.
+1. 请查看 [Mac 存储库](https://github.com/AdguardTeam/AdGuardforMac/issues)以确保尚未报告该问题。
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForMac/issues/new).
+2. 打开[创建新问题的页面](https://github.com/AdguardTeam/AdguardForMac/issues/new)。
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. 填写表格。 如果可以，请插入屏幕截图或屏幕视频。
 
 ### AdGuard Android版
 
-1. Check out the [Android repo](https://github.com/AdguardTeam/AdGuardforAndroid/issues) to make sure the issue hasn’t been reported yet.
+1. 请查看 [Android 存储库](https://github.com/AdguardTeam/AdGuardforAndroid/issues)以确保尚未报告该问题。
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForAndroid/issues/new/choose) and select *Bug report*.
+2. 打开[创建新问题的页面](https://github.com/AdguardTeam/AdguardForAndroid/issues/new/choose)并选择「*错误报告*」。
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. 填写表格。 如果可以，请插入屏幕截图或屏幕视频。
 
 ### AdGuard iOS版
 
-1. Check out the [iOS repo](https://github.com/AdguardTeam/AdGuardforiOS/issues) to make sure the issue hasn’t been reported yet.
+1. 请查看 [iOS 存储库](https://github.com/AdguardTeam/AdGuardforiOS/issues)以确保尚未报告该问题。
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForiOS/issues/new/choose), select *Bug report*.
+2. 打开[创建新问题的页面](https://github.com/AdguardTeam/AdguardForiOS/issues/new/choose)并选择「*错误报告*」。
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. 填写表格。 如果可以，请插入屏幕截图或屏幕视频。
 
-### AdGuard Browser Extension
+### AdGuard 浏览器扩展
 
-1. Check out the [Browser Extension repo](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/) to make sure the issue hasn’t been reported yet.
+1. 请查看[浏览器扩展存储库](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/)以确保尚未报告该问题。
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose) and select *Bug report*.
+2. 打开[创建新问题的页面](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose)并选择「*错误报告*」。
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. 填写表格。 如果可以，请插入屏幕截图或屏幕视频。
 
 ### AdGuard Safari版
 
-1. Check out the [Safari repo](https://github.com/AdguardTeam/AdGuardForSafari/issues) to make sure the issue hasn’t been reported yet.
+1. 请查看 [Safari 存储库](https://github.com/AdguardTeam/AdGuardForSafari/issues)以确保尚未报告该问题。
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdGuardForSafari/issues/new/choose) and select *Bug report*.
+2. 打开[创建新问题的页面](https://github.com/AdguardTeam/AdGuardForSafari/issues/new/choose)并选择「*错误报告*」。
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. 填写表格。 如果可以，请插入屏幕截图或屏幕视频。

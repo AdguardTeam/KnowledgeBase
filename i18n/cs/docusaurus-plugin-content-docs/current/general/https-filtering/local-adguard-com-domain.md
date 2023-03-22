@@ -1,27 +1,27 @@
 ---
-title: Local.adguard.org domain
+title: Doména local.adguard.org
 sidebar_position: 3
 ---
 
-Users of AdGuard for Windows, Mac, and Android may notice that AdGuard adds a small script to every web page, that is loaded from the `local.adguard.org` domain.
+Uživatelé AdGuardu pro Windows, Mac a Android si mohou všimnout, že AdGuard přidává malý skript na každou webovou stránku, která se načítá z domény `local.adguard.org`.
 
-First of all, don't worry, this is not a real domain, and there is actually no real server with that name. This domain is used to apply cosmetic filtering to web pages, but everything is done locally right on your device without connecting to any server.
+Nebojte se, toto není skutečná doména a ve skutečnosti neexistuje žádný skutečný server s tímto názvem. Tato doména slouží k použití kosmetického filtrování webových stránek, ale vše se provádí lokálně přímo v zařízení bez připojení k serveru.
 
-### Technical explanation
+### Technické vysvětlení
 
-But what's going on and why is it done? Please read the technical explanation below.
+Co se ale děje a proč? Níže si přečtěte technické vysvětlení.
 
-1. AdGuard is a network-level content blocker so it cannot simply add custom JavaScript and CSS to webpages like what browser extensions do. However, doing this is crucial for quality content blocking.
-2. In order to do it AdGuard injects a "content script" that looks like this: `<script src="https://local.adguard.org/.../content-script.js">`. This "content script" takes care of cosmetic filtering, hides or removes ad content from the web pages.
-3. Connections to the IP address of the `local.adguard.org` domain are intercepted by AdGuard on the network level and **processed locally**. This is why that domain has a "static" IP address that does not change for years.
+1. AdGuard je blokátor obsahu na úrovni sítě, takže nemůže jednoduše přidávat vlastní JavaScript a CSS na webové stránky, jako to dělají rozšíření prohlížeče. Pro kvalitní blokování obsahu je to však zásadní.
+2. Za tímto účelem AdGuard vloží "obsahový skript", který vypadá takto: `<script src="https://local.adguard.org/.../content-script.js">`. Tento "obsahový skript" se stará o kosmetické filtrování, skrývá nebo odstraňuje obsah reklamy z webových stránek.
+3. Připojení na IP adresu domény `local.adguard.org` jsou zachycena AdGuardem na síťové úrovni a **zpracována lokálně**. To je důvod, proč má tato doména "statickou" IP adresu, která se roky nemění.
 
-**Why do we need to use a real IP address for that?**
+**Proč k tomu potřebujeme skutečnou IP adresu?**
 
-* We cannot use `127.0.0.1` as the browsers won't accept it.
-* Using some IP address from the private subnets is possible, but this solution has two downsides.
-    * First, there is a slight chance of intersecting with an existing intranet service and breaking access to it.
-    * Second, some DNS servers may consider this a DNS rebinding attack and refuse to respond to `local.adguard.org`.
+* Nemůžeme použít adresu `127.0.0.1`, protože ji prohlížeče neakceptují.
+* Použití některé IP adresy z privátních podsítí je možné, ale toto řešení má dvě nevýhody.
+    * Zaprvé, existuje malá pravděpodobnost, že dojde ke křížení se stávající intranetovou službou a narušení přístupu k ní.
+    * Za druhé, některé DNS servery to mohou považovat za útok na opětovné svázání DNS a odmítnout odpovědět na `local.adguard.org`.
 
-### Verification
+### Ověření
 
-This is easy to verify. If you disable AdGuard, you'll see that it is simply impossible to establish connection to `local.adguard.org` since there is no server with that address. Just try opening it in your browser when AdGuard is disabled.
+Tuto skutečnost lze snadno ověřit. Pokud AdGuard vypnete, zjistíte, že na `local.adguard.org` nelze navázat spojení, protože neexistuje žádný server s touto adresou. Zkuste ji otevřít v prohlížeči, když je AdGuard vypnutý.

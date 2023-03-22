@@ -57,7 +57,7 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 21. Click **Save**.
 
-### Mac {#mac}
+### AdGuard for Mac の場合 {#mac}
 
 1. Note the IP address of your desktop computer with installed AdGuard.
 
@@ -77,7 +77,7 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 9. Under *System*, highlight the certificate that you added.
 
-10. Right-click on it and choose **Get Info** from the context menu.
+10. Right-click it and choose **Get Info** from the context menu.
 
 11. Expand *Trust* to display the trust policies for the certificate.
 

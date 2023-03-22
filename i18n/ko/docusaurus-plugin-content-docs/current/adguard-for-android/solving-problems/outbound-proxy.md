@@ -7,7 +7,7 @@ sidebar_position: 8
 
 ### Tor와 함께 AdGuard를 사용하는 방법
 
-1. AdGuard를 열고 **설정**>**네트워크**>**프록시**로 이동합니다. **Tor와 통합** 버튼을 누르거나 [Google Play](https://play.google.com/store/apps/details?id=org.torproject.android&noprocess)에서 ‘Orbot: Proxy with Tor’를 다운로드합니다.
+1. Open AdGuard and go to **Settings** → **Network** → **Proxy settings**. **Tor와 통합** 버튼을 누르거나 [Google Play](https://play.google.com/store/apps/details?id=org.torproject.android&noprocess)에서 ‘Orbot: Proxy with Tor’를 다운로드합니다.
 
 2. Orbot을 열고 애플리케이션의 메인 화면에서 **시작** 버튼을 누릅니다.
 
@@ -33,7 +33,7 @@ sidebar_position: 8
 
 *기기에 PIA VPN이 이미 설치되어 있는 경우 다음 단계를 따르세요.*
 
-1. AdGuard를 열고 **설정**>**네트워크**>**프록시**로 이동합니다.
+1. Open AdGuard and go to **Settings** → **Network** → **Proxy settings**.
 
 2. **프록시 서버 추가** 버튼을 누르고 다음 데이터를 입력합니다.
 
@@ -53,7 +53,7 @@ sidebar_position: 8
 
 *기기에 TorGuard가 이미 설치되어 있는 경우 다음 단계를 따르세요.*
 
-1. AdGuard를 열고 **설정**>**네트워크**>**프록시**로 이동합니다.
+1. Open AdGuard and go to **Settings** → **Network** → **Proxy settings**.
 
 2. **프록시 서버 추가** 버튼을 누르고 다음 데이터를 입력합니다.
 
@@ -71,7 +71,7 @@ sidebar_position: 8
 
 ### NordVPN과 함께 AdGuard를 사용하는 방법
 
-1. AdGuard를 열고 **설정**>**네트워크**>**프록시**로 이동합니다.
+1. Open AdGuard and go to **Settings** → **Network** → **Proxy settings**.
 
 2. **프록시 서버 추가** 버튼을 누르고 다음 데이터를 입력합니다.
 
@@ -93,7 +93,7 @@ sidebar_position: 8
 
 **참고: 무한 루프와 드롭을 방지하려면 설정하기 전에 필터링에서 Shadowsock 앱을 제거해야 합니다. (AdGuard -> 앱 관리 -> Shadowsocks -> 보호 비활성화).**
 
-1. AdGuard를 열고 **설정**>**네트워크**>**프록시**로 이동합니다.
+1. Open AdGuard and go to  **Settings** → **Network** → **Proxy settings**.
 
 2. **프록시 서버 추가**를 탭하고 필드를 입력합니다.
 

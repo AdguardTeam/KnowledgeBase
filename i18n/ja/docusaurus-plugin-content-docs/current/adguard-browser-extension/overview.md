@@ -69,7 +69,7 @@ The *allowlist* can be inverted, too: you can unblock ads everywhere except on t
 
 You can also import and export existing allowlists. It is useful, for instance, if you want to apply the same allowing rules in each of your browsers.
 
-## Stealth Mode {#stealth-mode}
+## ステルスモード {#stealth-mode}
 
 *Stealth Mode* aims to ensure the protection of sensitive personal data from online trackers and fraudsters.
 

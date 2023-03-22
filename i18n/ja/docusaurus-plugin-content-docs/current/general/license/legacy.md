@@ -17,7 +17,7 @@ sidebar_position: 4
 
 スタンダードライセンスおよびモバイルライセンスは、1台〜9台版を購入することが可能でした。
 
-Standard were valid only for desktops, and Mobile were only for smartphones and tablets.
+スタンダートはPCのみ、モバイルはスマートフォン・タブレットのみで使用可能でした。
 
 プレミアムライセンスは、2～18台のデバイスで使用することが可能でした。 購入時に選択したデバイス数（「2+2」、「3+3」など）に応じて、同数のパソコンとモバイルデバイスでAdGuardを同時に有効化することが可能でした。。
 

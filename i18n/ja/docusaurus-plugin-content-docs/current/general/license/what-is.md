@@ -11,7 +11,7 @@ sidebar_position: 1
 
 1. **試用ライセンス**は期間限定で無料です： AdGuard for Windows — 試用期間14日間、 AdGuard for Mac — 試用期間14日間、 AdGuard for Android — 試用期間7日間
 2. **無料ライセンス**は無期限ですが、機能が制限されています： AdGuard ブラウザ拡張機能、 AdGuard コンテンツブロッカー、 AdGuard for iOS
-3. **サブスクリプション**は、毎月または毎年自動的に更新される有償ライセンスです （手動で延長することも可能です）： AdGuard Ad Blocker Monthly subscription, AdGuard Ad Blocker 1-year subscription.
+3. **サブスクリプション**は、毎月または毎年自動的に更新される有償ライセンスです （手動で延長することも可能です）： AdGuard広告ブロッカー月額サブスクリプション、 AdGuard広告ブロッカー1年サブスクリプション
 4. **販売代理店から購入したライセンス**および**付与されたライセンス**は期限付きで、自動更新はできません。 ただし、手動で延長することができます： AdGuard広告ブロッカー月額ライセンス、 AdGuard広告ブロッカー1年ライセンス
 5. **永久ライセンス**は無期限でフル機能を提供します： AdGuard広告ブロッカー永久版ライセンス、 iOS用「AdGuard Pro」アプリ
 

@@ -1,20 +1,20 @@
 ---
-title: How to purchase
+title: Jak zakoupit
 sidebar_position: 2
 ---
 
-## How to purchase a license
+## Jak zakoupit licenci
 
-AdGuard license can be bought on [adguard.com](https://adguard.com/license.html). AdGuard Pro for iOS can be bought on the App Store. Ad Blocker licenses are also sold by various distributors.
+Licenci AdGuardu lze zakoupit na stránce [adguard.com](https://adguard.com/license.html). AdGuard Pro pro iOS lze zakoupit v App Store. Licence blokátoru reklam AdGuard prodávají také různí distributoři.
 
-> The availability of AdGuard products in app stores and by distributors depends on your country.
+> Dostupnost AdGuard produktů v obchodech s aplikacemi a u distributorů závisí na vaší zemi.
 
-## How to get a refund
+## Jak získat refundaci
 
-In accordance with our [Terms of Sale](https://adguard.com/terms-of-sale.html), you can get a 100% refund on the AdGuard license key you purchased at https://adguard.com. To get a refund, contact our support team at **support@adguard.com** and indicate the payment option you've used.
+V souladu s našimi [Podmínkami prodeje](https://adguard.com/terms-of-sale.html) můžete získat 100% náhradu za licenční klíč AdGuardu, který jste zakoupili na https://adguard.com. Chcete-li získat peníze zpět, kontaktujte náš tým podpory na adrese **support@adguard.com** a uveďte způsob platby, který jste použili.
 
-A refund may be denied if you:
-* purchased the license more than 60 days ago,
-* purchaded the license by a distributor,
-* purchased the license on the App Store,
-* applied for a partial refund for license key upgrade or prolongation.
+Refundace může být zamítnuta, pokud jste:
+* licenci zakoupili před více než 60 dny,
+* licenci zakoupili od distributora,
+* licenci zakoupil v App Store,
+* požádali o částečné vrácení peněz za upgrade nebo prodloužení licenčního klíče.

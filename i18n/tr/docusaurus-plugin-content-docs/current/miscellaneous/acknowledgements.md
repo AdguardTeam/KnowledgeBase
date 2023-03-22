@@ -5,7 +5,7 @@ sidebar_position: 2
 
 Our dev team would like to thank the developers of this third-party software, our beta testers and other interested users who helped AdGuard improve and grow.
 
-## Third-party software {#software}
+## Üçüncü taraf yazılımı {#software}
 
 This is the list of libraries and other resources that really helped us with AdGuard software development process.
 
@@ -144,31 +144,31 @@ Also a huge thanks and gratitude to all beta testers and other engaged users, wh
 * IONIL — translator and proofreader to Hebrew in Crowdin
 * itabmedia — beta tester, active AdGuard Forum member
 * kirasam — beta tester, active AdGuard Forum member
-* krystian3w — very active filter contributor
+* krystian3w — çok aktif filtre katkıda bulunan
 * lancelot.moon — translator and proofreader to Chinese Traditional in Crowdin, beta tester
-* Lord Ami — beta tester, active AdGuard Forum member
+* Lord Ami — beta test kullanıcısı, aktif AdGuard Forum üyesi
 * Lukas Novotny (novas78) — Crowdin'de Çekçe çevirmen ve düzeltmen
-* malware1 — beta tester, active AdGuard Forum member
-* milder — beta tester, active AdGuard Forum member
-* Nicos18 — beta tester, active AdGuard Forum member
+* malware1 — beta test kullanıcısı, aktif AdGuard Forum üyesi
+* milder — beta test kullanıcısı, aktif AdGuard Forum üyesi
+* Nicos18 — beta test kullanıcısı, aktif AdGuard Forum üyesi
 * Oizaro — translator and proofreader to Italian in Crowdin
-* Oleg Chashko — very active beta tester of AdGuard for Safari
+* Oleg Chashko — Safari için AdGuard'ın çok aktif beta test kullanıcısı
 * Oskari Lavinto (olavinto) — translator and proofreader to Finnish in Crowdin
-* ouzbed — beta tester, active AdGuard Forum member
-* PentagramTr — filter contributor, namely, he has brought a lot of new things to the Turkish filter
+* ouzbed — beta test kullanıcısı, aktif AdGuard Forum üyesi
+* PentagramTr — filtre katkıda bulunan, yani Türkçe filtreye birçok yeni şey getirdi
 * Peter Hubinsky (hubak) — translator and proofreader to Slovak in Crowdin
-* PiQuark6046 — filter contributor
-* rickyoh — beta tester, active AdGuard Forum member
-* Ronin427 — beta tester, active AdGuard Forum member
-* Sanjay Nand — beta tester, active AdGuard Forum member
-* saturnotaku — beta tester, active AdGuard Forum member
-* steve1209 — beta tester, active AdGuard Forum member
-* streetwolf — beta tester, active AdGuard Forum member
+* PiQuark6046 — filtre katkıda bulunan
+* rickyoh — beta test kullanıcısı, aktif AdGuard Forum üyesi
+* Ronin427 — beta test kullanıcısı, aktif AdGuard Forum üyesi
+* Sanjay Nand — beta test kullanıcısı, aktif AdGuard Forum üyesi
+* saturnotaku — beta test kullanıcısı, aktif AdGuard Forum üyesi
+* steve1209 — beta test kullanıcısı, aktif AdGuard Forum üyesi
+* streetwolf — beta test kullanıcısı, aktif AdGuard Forum üyesi
 * superlex — helps us with scriptlets, filters, and AdGuard for Safari
-* TayTayTheKiller — beta tester, active AdGuard Forum member
-* [TPS](https://github.com/TPS) — bug finder, filter contributor
-* Yuki2718 — actively contributes to AdGuard filters
-* zznosar — active beta tester focused on AdGuard for iOS
+* TayTayTheKiller — beta test kullanıcısı, aktif AdGuard Forum üyesi
+* [TPS](https://github.com/TPS) — hata bulucu, filtre katkıda bulunan
+* Yuki2718 - AdGuard filtrelerine aktif olarak katkıda bulunur
+* zznosar - iOS için AdGuard'a odaklanan aktif beta test kullanıcısı
 * Sergey Zozulya (sviperz) — active member of our Telegram group, beta tester
 
 ---

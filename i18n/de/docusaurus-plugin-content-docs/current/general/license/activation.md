@@ -17,11 +17,11 @@ Alternativ können Sie auch einen [Lizenzschlüssel](../what-is#license-key) ver
 
 1. Öffnen Sie die AdGuard-App
 
-Doppelklicken Sie dazu auf das AdGuard-Symbol auf dem Desktop:
+To do it, double-click the AdGuard icon on the desktop:
 
 ![AdGuard-Symbol auf dem Desktop](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowsEn.png)
 
-oder doppelklicken Sie auf das AdGuard-Symbol in der Taskleiste:
+or double-click the AdGuard icon in the system tray:
 
 ![AdGuard-Symbol in der Taskleiste](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windows2En.png)
 
