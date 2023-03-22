@@ -17,11 +17,11 @@ sidebar_position: 3
 
 1. 开启 AdGuard 软件
 
-请鼠标双击桌面上的 AdGuard 图标：
+To do it, double-click the AdGuard icon on the desktop:
 
 ![桌面上的 AdGuard 图标](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowsEn.png)
 
-或也可以在通知栏双击 AdGuard 图标：
+or double-click the AdGuard icon in the system tray:
 
 ![系统托盘中的 AdGuard 图标](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windows2En.png)
 

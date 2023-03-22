@@ -5,13 +5,13 @@ sidebar_position: 8
 
 Для диагностики проблем и ошибок, с которыми пользователи могут столкнуться при использовании AdGuard, службе поддержки может понадобиться файл дампа. Файл дампа помогает разработчикам увидеть процессы, которые выполнялись в приложении за определённый период времени. Ниже вы можете ознакомиться с инструкциями о том, как собрать файл дампа на вашем компьютере.
 
-1. Нажмите **Ctrl + Shift + Esc** и нажмите **Диспетчер задач**
+1. Press **Ctrl + Shift + Esc** and click **Task Manager**
 2. В верхней строке меню выберите **Подробности**
 
 ![Сведения о диспетчере задач](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/details_en.png)
 
-3. Щёлкните правой кнопкой мыши на процесс, для которого вы хотите создать файл дампа (например, служба поддержки может попросить вас создать дамп для `Adguard.exe`)
-4. В раскрывающемся меню нажмите **Создать файл дампа**
+3. Right-click the process that you want to create the dump file for (for example, the support team may ask you to create a dump for `Adguard.exe`)
+4. In the drop-down menu click **Create dump file**
 5. Файл успешно создан!
 
 ![Создать файл дампа](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/create_dump_file_en.png)

@@ -7,7 +7,7 @@ sidebar_position: 5
 
 1. Нажмите *Win + R*
 
-2. В появившемся окне введите `eventvwr` и нажмите *OK*:
+2. In the window that appears type in `eventvwr` and click *OK*:
 
 ![Окно запуска *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_1.png)
 
@@ -17,15 +17,15 @@ sidebar_position: 5
 
 Чтобы сохранить нужные нам файлы, сделайте следующее:
 
-- Откройте *Приложение*: *Просмотр событий (локальный)* -> *Логи Windows* -> *Приложение*.
+- Open *Application*: *Event Viewer (Local)* → *Windows Logs* → *Application*.
 
-- Щёлкните правой кнопкой мыши по разделу *Приложение* и в выпадающем меню выберите *Сохранять все события как...*
+- Right-click *Application* and in the drop-down menu select *Save All Events As...*
 
 - Выберите имя и место сохранения, нажмите *Сохранить*. Выберите *Отображать сведения для следующих языков*. Поставьте галочку напротив пункта *Английский язык*. Нажмите *OK*.
 
-- Откройте *Система*: *Просмотр событий (локальный)* -> *Логи Windows* -> *Приложение*.
+- Open *System*: *Event Viewer (Local)* → *Windows Logs* →  *System*.
 
-- Щёлкните правой кнопкой мыши по разделу *Система* и в выпадающем меню выберите *Сохранять все события как...*
+- Right-click *System* and in the drop-down menu select *Save All Events As...*
 
 - Выберите папку назначения, введите имя и нажмите *Сохранить*. Выберите *Отображать сведения для следующих языков*. Поставьте галочку напротив пункта *Английский язык*. Нажмите *OK*.
 

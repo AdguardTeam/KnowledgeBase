@@ -15,11 +15,11 @@ Pokud používáte [ *Zabezpečenou složku* ve vašem zařízení Android](http
 
 
 1. Po instalaci aplikace a připojení k síti VPN klepněte na *Zapnout* vedle zprávy *Filtrování HTTPS je vypnuto*.
-2. Klepněte na *Další* > *Další* > *Uložit nyní* > *Povolit*.
+2. Klepněte na *Další* → *Další* → *Uložit nyní* → *Povolit*.
 3. Certifikát uložte (v této fázi jej můžete přejmenovat, abyste jej snáze našli).
 4. Po zobrazení obrazovky *Jak nainstalovat certifikát?* NEKLEPEJTE na položku *Otevřít nastavení*.
 5. Minimalizujte aplikaci a přejděte do zabezpečené složky.
 6. Klepněte na menu se třemi tečkami a přejděte na další nastavení zabezpečení.
-7. Klepněte na *Nainstalovat z úložiště* > *CA Certifikát* > *Přesto nainstalovat* > zadejte gesto/heslo/otisk prstu > vyhledejte uložený certifikát a vyberte jej.
+7. Klepněte na *Nainstalovat z úložiště* → *CA Certifikát* → *Přesto nainstalovat* → zadejte gesto/heslo/otisk prstu → vyhledejte uložený certifikát a vyberte jej.
 8. Vraťte se do aplikace AdGuard a zavřete obrazovku "Jak nainstalovat certifikát?" klepnutím na tlačítko s křížkem.
 9. Hotovo! Certifikát byl nainstalován.

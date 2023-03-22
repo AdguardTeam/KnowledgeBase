@@ -1,28 +1,28 @@
 ---
-title: Updating the Knowledge base
+title: ナレッジベースの更新・変更
 sidebar_position: 2
 ---
 
-The goal of AdGuard Ad Blocker Knowledge base is to provide everyone with the most up-to-date information on all kinds of AdGuard-related topics. But things constantly change, and sometimes an article doesn't reflect the current state of things anymore.
+AdGuardナレッジベース（知恵袋）の目的は、AdGuard関連のあらゆるトピックに関する最新情報・説明・使い方を皆様に提供することです。 しかし、情報は常に変化し、記事が現状を反映しきれなくなることがあります。
 
-This is why we placed all of our KB content on [GitHub](https://github.com/AdguardTeam/KnowledgeBase), and now literally anyone can contribute to it by suggesting edits and translations to existing articles, as well as totally new ones.
+そのため、AdGuardナレッジベースコンテンツをすべて[GitHub](https://github.com/AdguardTeam/KnowledgeBase)に置き、既存の記事の編集や翻訳、まったく新しい記事の提案など、誰もが貢献できるようにしています。
 
-## How to suggest a change or write a new article {#suggest-change}
+## 変更点を提案する・新しい記事を書く方法 {#suggest-change}
 
-You can suggest changes to current articles and add new ones to our Knowledge base using the functionality of GitHub mentioned above. If you are unfamiliar with principles of working with the platform, start by reading [GitHub documentation](https://docs.github.com/en).
+上記のGitHubの機能を使って、既存記事への変更を提案したり、新しい記事をナレッジベースに追加することができます。 GitHubプラットフォームでの作業方法をあまりわからない場合は、[こちらのGitHubの使い方に関するドキュメント](https://docs.github.com/ja)を確認することから始めてください。
 
-Once you are ready to start, work in the [KnowledgeBase repository](https://github.com/AdguardTeam/KnowledgeBase). All texts in our Knowledge base are written in `Markdown` markup language. Keep this in mind when editing or writing articles. Follow [this link](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) to learn more about Markdown syntax.
+準備ができましたら、[KnowledgeBaseリポジトリ](https://github.com/AdguardTeam/KnowledgeBase)で作業してください。 ナレッジベースにあるすべてのテキスト・文章は、 `Markdown`マークアップ言語を使って書かれています。 記事の編集や執筆の際には、このことを念頭に置いてください。 [こちら](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)で、Markdownの構文について詳しく知ることができます。
 
-The Knowledge base website is built using Docusaurus 2 — a modern static website generator. When suggesting changes or additions, take into account that all documents must comply with the principles of the platform. You can read about them in [Docusaurus Guides](https://docusaurus.io/docs/category/guides).
+ナレッジベースのウェブサイトは、現代の静的ウェブサイトジェネレータである「Docusaurus 2」を使用して構築されています。 変更または追加を提案する場合、すべてのテキストがのDocusaurus 2に準拠している必要があります。 Docusaurus 2の原則は、 [このリンク先のDocusaurusガイド](https://docusaurus.io/docs/category/guides)で確認することができます。
 
-You can deploy this Knowledge base locally on your computer to preview the changes you suggest. Detailed instructions on how to do this can be found [in the README file](https://github.com/AdguardTeam/KnowledgeBase#readme) on this Knowledge base's GitHub page.
+このナレッジベースは、お使いのコンピュータでローカルに展開することで、提案する変更をプレビューすることができます。 この方法は、本ナレッジベースの[GitHubページにあるREADME.mdファイル](https://github.com/AdguardTeam/KnowledgeBase#readme)に記載されています。
 
-## Translating articles {#translate-adguard}
+## 記事を翻訳する方法 {#translate-adguard}
 
-Translation of the existing articles of the Knowledge base is carried out on [the Crowdin platform](https://crowdin.com/profile/adguard). All the details about translations and working with Crowdin can be found [in the dedicated article](../translate/guidelines) of the AdGuard Ad Blocker Knowledge base.
+ナレッジベースの既存記事の翻訳は、 [Crowdin platform](https://crowdin.com/profile/adguard)を使って行われています。 Crowdinの翻訳と作業に関するすべての詳細は、AdGuard広告ブロッカーのナレッジベースにある[専用記事](../translate/guidelines)に記載されています。
 
-When working on AdGuard Knowledge base articles, you may meet strings containing plural forms that you should translate with extra attention. [In a separate article](../translate/plural-forms), we described in detail the difficulties that can arise when translating strings with plural forms and gave extensive instructions on how to work with them on the Crowdin platform.
+AdGuardナレッジベースの記事を翻訳する際、複数形を含む文字列に遭遇することがありますが、複数形がいっぱいある言語の場合は特に注意して翻訳してください。 [別の記事](https://kb.adguard.com/ja/miscellaneous/plurals)で、複数形の文字列を翻訳する際に起こりうる困難について詳しく説明し、複数形に関するCrowdinプラットフォームでの作業方法について幅広く解説しています。
 
-## Working on open issues
+## Open issue（GitHub）に対する作業・貢献
 
-Sometimes there exist [open tasks](https://github.com/AdguardTeam/KnowledgeBase/issues) related to updating the Knowledge base. You can help us speed up their completion [the same way](#suggest-change) you would suggest any other changes to the Knowledge base. Choose any issue that you find appealing and start working on it. If you have any questions — you can ask them right in the comments to that issue.
+ナレッジベースの更新に関連する[オープンタスク](https://github.com/AdguardTeam/KnowledgeBase/issues)が存在することがあります。 このナレッジベースに対する他の変更を提案するのと[同じ方法](#suggest-change)で、タスクの完了を高速化いただくことができます。 お好みのissueを選んで、ぜひ作業を始めてください。 issueに関してご質問等があれば、お気軽にissueのコメント欄で直接メッセージしてください。

@@ -17,7 +17,7 @@ To collect **debug** log and send it to us you need to perform following steps:
 
 4. Reproduce the problem and set the logging level back to "Default". Notice the exact time when it happened.
 
-5. Send us a message from program by choosing "Support" > "Send Feedback" in the menu. Don't forget to check the "Send detailed system info" checkbox under the text field and to include the timestamp from the step 4 into the message.
+5. Send us a message from program by choosing "Support" → "Send Feedback" in the menu. Don't forget to check the "Send detailed system info" checkbox under the text field and to include the timestamp from the step 4 into the message.
 
 As an alternative, you can export the logs (along with the *state.txt* file that contains system information and information about AdGuard settings) directly into a local file. It can be convenient, for example, if you are having a conversation with a developer on [GitHub](https://github.com/AdguardTeam/AdguardForAndroid/issues), [forum](https://forum.adguard.com/) or on another platform.
 
@@ -35,7 +35,7 @@ To collect **web requests** log and send it to us you need to perform following 
 
 4. Reproduce the problem and set the logging level back to "Default". Notice the exact time when it happened.
 
-5. Send us a message from program by choosing "Support" > "Send Feedback" in the menu. Don't forget to check the "Send detailed system info" checkbox under the text field and to include the timestamp from the step 4 into the message.
+5. Send us a message from program by choosing "Support" → "Send Feedback" in the menu. Don't forget to check the "Send detailed system info" checkbox under the text field and to include the timestamp from the step 4 into the message.
 
 As an alternative, you can export the logs (along with the *state.txt* file that contains system information and information about AdGuard settings) directly into a local file. It can be convenient, for example, if you are having a conversation with a developer on [GitHub](https://github.com/AdguardTeam/AdguardForAndroid/issues), [forum](https://forum.adguard.com/) or on another platform.
 

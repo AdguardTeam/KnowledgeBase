@@ -24,7 +24,7 @@ Pokud však máte novější verzi, zobrazí se tato zpráva:
 
 V takovém případě přejděte k následujícím krokům:
 
-3. Přejděte do **Magisk** -> **Nastavení**
+3. Přejděte do **Magisk** → **Nastavení**
 
 ![Otevřít nastavení Magisk *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-1.png)
 

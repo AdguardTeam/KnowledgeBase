@@ -1,34 +1,34 @@
 ---
-title: Protect Mail Activity and AdGuard
+title: Protect Mail Activity a AdGuard
 sidebar_position: 8
 ---
 
-## In a nutshell
+## Ve stručnosti
 
-Apple's Mail app now uses a proxy to hide a user's IP address when downloading images from emails.
+Aplikace Apple Mail nyní používá proxy ke skrytí IP adresy uživatele při stahování obrázků z e-mailů.
 
 ![Mail privacy protection](https://cdn.adtidy.org/content/kb/ad_blocker/mac/mac_protectMailActivity.jpg)
 
-However, it won't work if there's an active VPN connection. As it treats AdGuard as a VPN, it won't preload images automatically.
+To však nebude fungovat, pokud je aktivní připojení VPN. Vzhledem k tomu, že AdGuard chová jako VPN, nebude automaticky přednačítat obrázky.
 
-Apple explains this issue [here](https://support.apple.com/HT212797).
+Apple tento problém vysvětluje [zde](https://support.apple.com/HT212797).
 
-## In detail
+## Podrobněji
 
-AdGuard for Mac now uses macOS built-in socket filtering based on the network extensions API. This new and rather buggy mechanism replaced good old Kernel extensions. Over the last 1.5 years, we've reported more than 20(!) bugs to Apple regarding their new filtering method.
+AdGuard pro Mac nyní používá filtrování integrované v systému macOS na základě rozhraní API síťových rozšíření. Tento nový a poměrně chybový mechanismus nahradil staré dobré Rozšíření jádra. Za posledních 1,5 roku jsme společnosti Apple nahlásili více než 20(!) chyb týkajících se jejich nové metody filtrování.
 
-The network extensions API has a VPN-like configuration with a list of route-like entries. On Big Sur, AdGuard used "split-tunnel" rules to avoid creating the "default route" rule because it causes problems on early Big Sur releases. These problems were solved in Monterey so nothing prevents us from using the "default route" rule.
+Rozhraní API síťových rozšíření má konfiguraci podobnou VPN se seznamem položek směrování. V systému Big Sur použila společnost AdGuard pravidla "dělený tunel", aby se vyhnula vytváření pravidla "výchozí směrování", protože v prvních verzích systému Big Sur způsobuje problémy. Tyto problémy byly vyřešeny v Monterey, takže nám nic nebrání používat pravidlo "výchozí směrování".
 
-On Monterey, iCloud Private Relay got introduced. Privacy features of Mail.app also use Private Relay servers.
+V systému Monterey byl představen iCloud Private Relay. Funkce ochrany osobních údajů aplikace Mail také využívají servery iCloud Private Relay.
 
-As a result, AdGuard can't work together with iCloud Private Relay and Mail.app privacy features:
-1. iCloud Private Relay is applied to connections at the library level - before they reach the socket level, where AdGuard operates.
-2. iCloud Private Relay uses QUIC, which AdGuard can't filter because HTTP/3 filtering is not yet available.
-3. As AdGuard blocks QUIC, including iCloud Private Relay traffic - otherwise, ad blocking is impossible.
-4. When you use iCloud Private Relay and switch AdGuard into the "split-tunnel" mode, you can't open websites in Safari.
-5. To work around this issue for Monterey, we apply the "default route" rule. When Private Relay sees that rule, it disables itself automatically. So, AdGuard works seamlessly on Monterey, but iCloud Private Relay gets disabled.
+AdGuard proto nemůže spolupracovat s funkcemi soukromí aplikace iCloud Private Relay a aplikací Mail:
+1. iCloud Private Relay se použije pro připojení na úrovni knihovny — předtím, než se dostanou na úroveň, kde funguje AdGuard.
+2. iCloud Private Relay používá QUIC, který AdGuard nemůže filtrovat, protože filtrování HTTP/3 ještě není k dispozici.
+3. Protože AdGuard blokuje QUIC, včetně provozu iCloud Private Relay — jinak je blokování reklam nemožné.
+4. Když používáte iCloud Private Relay a přepnete AdGuard do režimu "dělený tunel", nemůžete v Safari otevírat webové stránky.
+5. Abychom tento problém pro Monterey obešli, použijeme pravidlo "výchozí směrování". Když iCloud Private Relay uvidí toto pravidlo, automaticky se deaktivuje. AdGuard tedy v Monterey funguje bez problémů, ale iCloud Private Relay je vypnuto.
 
-`network.extension.monterey.force.split.tunnel` restores the "Big Sur" behavior, but this option may break access to websites due to (3) and (4). We keep searching for a solution to this issue. One of the options is implementing HTTP/3 filtering.
+`network.extension.monterey.force.split.tunnel` obnoví chování "Big Sur", ale tato možnost může přerušit přístup k webům kvůli (3) a (4). Stále hledáme řešení tohoto problému. Jednou z možností je implementace filtrování HTTP/3.
 
-## Recommended solution
-At this point, we recommend using a more traditional VPN service, such as [AdGuard VPN](https://adguard-vpn.com/), instead of the new Apple's privacy features.
+## Doporučené řešení
+V tuto chvíli doporučujeme místo nových funkcí ochrany osobních údajů Apple používat tradičnější službu VPN, například [AdGuard VPN](https://adguard-vpn.com/).

@@ -1,41 +1,41 @@
 ---
-title: Tracking filter rules statistics
+title: Statistiky pravidel filtrů sledování
 sidebar_position: 4
 ---
 
-> NOTE: The *"Send statistics for ad filters usage"* option is disabled by default. Nothing will be sent unless user manually enables it to help us improve our blocking filters.
+> POZNÁMKA: Možnost *"Odesílat statistiky o použití filtrů reklam"* je ve výchozím nastavení vypnutá. Nic nebude odesláno, pokud to uživatel ručně nepovolí.
 
-### Why do we need ad filters?
+### Proč potřebujeme filtry reklam?
 
-Let's start by defining what ad filters are. Thanks to these filters, AdGuard removes ads from websites. They are manually compiled based on your complaints about ads on websites. Ad filters are an essential element of AdGuard — their quality determines the overall quality of AdGuard ad blocking.
+Nejprve si definujme, co jsou to filtry reklam. Díky těmto filtrům AdGuard odstraňuje reklamy z webových stránek. Jsou sestavovány ručně na základě vašich stížností na reklamy na webových stránkách. Filtry reklam jsou základním prvkem AdGuardu – jejich kvalita určuje celkovou kvalitu blokování reklam AdGuardem.
 
-However, there is a downside. Over the years, more and more ad filters have been appearing. And the more ad filters are there, the more memory AdGuard consumes, thus slowing down the rendering of web pages. At the same time, some of the filters start to expire, gradually becoming a dead weight that has no use, only consumes memory, and slows down the program.
+Má to však i svou nevýhodu. V průběhu let se objevuje stále více filtrů reklam. Čím více je filtrů reklam, tím více paměti AdGuard spotřebovává a tím zpomaluje vykreslování webových stránek. Zároveň některé filtry začnou dosluhovat a postupně se stávají nefunkční. Nemají využití, pouze spotřebovávají paměť a zpomalují program.
 
-### Why do we need statistics?
+### Proč potřebujeme statistiky?
 
-We want to solve the problem of outdated filtering rules once and for all. But we need your help to do so. By gathering statistics on used filtering rules, we detect and remove the rules that are no longer used. As a result, it will help all those who use AdGuard.
+Problém zastaralých pravidel filtrování chceme vyřešit jednou provždy. K tomu však potřebujeme vaši pomoc. Shromažďováním statistik o používaných pravidlech filtrování zjišťujeme a odstraňujeme pravidla, která se již nepoužívají. Díky tomu pomůže všem, kteří AdGuard používají.
 
-If your computer is powerful enough, it won’t really affect you. But the difference will be very noticeable for users of low-power netbooks or tablets.
+Pokud je váš počítač dostatečně výkonný, nijak vás to neovlivní. Rozdíl však bude velmi znatelný pro uživatele netbooků nebo tabletů s nízkým výkonem.
 
-### What kind of statistics will be sent?
+### Jaké statistiky budou odesílány?
 
-If you enable the *Send statistics for ad filters usage* option, the following information is sent periodically:
+Pokud povolíte možnost *Odesílat statistiky o použití filtrů reklam*, budou se pravidelně odesílat následující informace:
 
-* Extension version
-* Browser type (Chrome/Firefox/Opera/Yandex.Browser/Safari).
-* List of enabled ad filters.
-* The list that consists of the following elements:
-  * *The domain name of the website*
-  * *The number of recent page views*
-  * *The list of filtering rules and Filter ID which were activated on this website*
-  * *The domain name of blocked requests is sent for URL rules* The list is created based on the website's visit statistics since the last time statistical data was sent.
+* Verze rozšíření
+* Typ prohlížeče (Chrome/Firefox/Opera/Yandex.Browser/Safari).
+* Seznam povolených filtrů reklam.
+* Seznam, který se skládá z následujících prvků:
+  * *Název domény webové stránky*
+  * *Počet posledních zobrazení stránek*
+  * *Seznam pravidel filtrování a ID filtrů, které byyl aktivovány na této webové stránce*
+  * *Název domény blokovaných požadavků je odesílán pro pravidla URL.* Seznam je vytvořen na základě statistik návštěvnosti webových stránek od posledního odeslání statistických údajů.
 
-The collected statistics will be sent periodically to our server for analysis and filter optimization.
+Shromážděné statistiky budou pravidelně odesílány na náš server k analýze a optimalizaci filtrů.
 
-It's important to note that all the statistics we get are averaged and anonymized. We don't use these statistics for any purpose other than optimizing the filters, and we do not sell this data to third parties. You can read about our Privacy Policy [here](https://adguard.com/en/privacy.html).
+Je důležité si uvědomit, že všechny získané statistiky jsou zprůměrované a anonymizované. Tyto statistiky nepoužíváme k jiným účelům než k optimalizaci filtrů a tyto údaje neprodáváme třetím stranám. O našich Zásadách ochrany osobních údajů si můžete přečíst [zde](https://adguard.com/en/privacy.html).
 
-### What does tracking filter rules statistics fraught with?
+### Čím jsou statistika pravidel filtrů sledování zatížena?
 
-For the vast majority of users, the change in computer speed will not be really noticeable. However, netbook and tablet users may notice a slight slowdown.
+Pro naprostou většinu uživatelů nebude změna rychlosti počítače skutečně znatelná. Uživatelé netbooků a tabletů však mohou zaznamenat mírné zpomalení.
 
-Periodically, we will send the gathered statistics to the server. The size of the transmitted data is not very large and is comparable to the size of an average web page.
+Pravidelně budeme na server odesílat shromážděné statistiky. Velikost přenášených dat není příliš velká a je srovnatelná s velikostí průměrné webové stránky.

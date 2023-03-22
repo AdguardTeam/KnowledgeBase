@@ -14,7 +14,7 @@ AdGuardが「Full-Tunnel（VPNアイコンなし）」モードになってい�
 ![Tunnelモード画面 *mobile](https://cdn.adguard.com/public/Adguard/kb/newscreenshots/Ja/iOS/tunnel-mode.png?!)
 
 【「Split-Tunnel」モードに切り替える方法】
-1. AdGuardアプリ内*設定*⚙ → *一般設定*
+1. Go to AdGuard for iOS *Settings* → *General settings*.
 2. 「*高度な設定モード*」のスイッチをオンにして、その下に現れる「*詳細設定*」をタップ
 3. *Tunnelモード* → *Split-Tunnel* を選択してください。
 

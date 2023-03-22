@@ -1,38 +1,38 @@
 ---
-title: AdGuard beta testing
+title: Prueba beta de AdGuard
 sidebar_position: 1
 ---
 
-There is an AdGuard app for virtually every major platform out there, and we regularly release updates for all of them. This would not be possible without beta testing and, more importantly, beta testers. Want to become one? Here's how you can do it.
+Hay una aplicación AdGuard para prácticamente todas las plataformas principales que existen, y publicamos regularmente actualizaciones para todas ellas. Esto no sería posible sin las pruebas beta y, lo que es más importante, los probadores beta. ¿Quiere convertirse en uno? Aquí explicamos cómo puede hacerlo.
 
-## How to become a beta tester {#intro}
+## Cómo convertirte en probador beta {#intro}
 
-Our requirements are easy: use AdGuard, upgrade to the beta version when it becomes available, and report any bugs you notice. However, you will need either a [forum](https://forum.adguard.com/index.php) or a [GitHub](https://github.com/) account (or both) to become our beta tester, so you may want to get that out of the way first.
+Nuestros requisitos son sencillos: usa AdGuard, actualiza a la versión beta cuando esté disponible e informa cualquier error que observes. Sin embargo, necesitarás una cuenta en el [foro](https://forum.adguard.com/index.php) o en [GitHub](https://github.com/) (o ambas) para convertirte en nuestro probador beta, por lo que es posible que desees crearlas primero.
 
-In any case, every single thing you need to know is gathered on a [dedicated page](https://adguard.com/en/beta.html).
+En cualquier caso, todo lo que necesitas saber está recopilado en una [página](https://adguard.com/en/beta.html).
 
-If you want to skip the description part and get straight to the action, you can apply [here](https://surveys.adguard.com/beta_testing_program/form.html). Your application will be reviewed within 1-3 working days, and you'll get a reply via email.
+Si deseas omitir la parte de descripción y pasar directamente a la acción, puedes solicitar [aquí](https://surveys.adguard.com/beta_testing_program/form.html). Tu solicitud será revisada dentro de 1 a 3 días hábiles y recibirás una respuesta por correo electrónico.
 
-## How to report a bug {#report-a-bug}
+## Cómo informar de un error {#report-a-bug}
 
-If you spotted a bug or just want to share your suggestion, let us know in any of the possible ways:
+Si detectaste un error o simplemente quieres compartir tu sugerencia, háznoslo saber de cualquiera de las formas posibles:
 
-* Go to [forum.adguard.com](https://forum.adguard.com/index.php) and post there a new thread (or find an existing one) in the beta forum [category](https://forum.adguard.com/index.php?categories/48/). Make sure to read [forum rules](https://forum.adguard.com/index.php?threads/14859/);
+* Vete a [forum.adguard.com](https://forum.adguard.com/index.php) y publicar allí un nuevo hilo (o encontrar uno existente) en la categoría [foro beta](https://forum.adguard.com/index.php?categories/48/). Asegúrate de leer las [normas del foro](https://forum.adguard.com/index.php?threads/14859/);
 
-* Go to [GitHub](https://github.com/AdguardTeam/) and find a suitable repository. Create a new issue there and describe the bug/feature request in detail.
+* Vete a [GitHub](https://github.com/AdguardTeam/) y encontra un repositorio adecuado. Cree un nuevo problema allí y describa la solicitud de error / característica en detalle.
 
-The above two methods are the most preferred, but you can use others if necessary:
+Los dos métodos anteriores son los más preferidos, pero puede usar otros si es necesario:
 
-* Find us on various social media platforms, like [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/), etc. However, this is not the most convenient way to discuss technical matters.
+* Encuéntrenos en las diferentes redes sociales, como [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/), etc. Sin embargo, esta no es la forma más conveniente de discutir asuntos técnicos.
 
-* Email our support team from the Support tab in the app or write directly to [support@adguard.com](mailto:support@adguard.com).
+* Envía un correo electrónico a nuestro equipo de asistencia desde la pestaña de asistencia de la aplicación o escríbenos directamente a [support@adguard.com](mailto:support@adguard.com).
 
-## How to activate the beta key in the iOS application {#ios}
+## Cómo activar la clave beta en la aplicación iOS {#ios}
 
-If you have already received a beta key and it is listed in your `adguard.com` account, go to the app and open the license section (Get Premium). Once there, enter the credentials from your AdGuard account. After that, the premium features will become available automatically.
+Si ya has recibido una clave beta y aparece en tu cuenta de `adguard.com`, ve a la aplicación y abre la sección de licencias (Get Premium). Una vez allí, ingresa las credenciales de tu cuenta de AdGuard. Después de eso, las funciones premium estarán disponibles automáticamente.
 
-### What else?
+### ¿Qué más?
 
-There is not much more to add. You don't have to go out of your way to find bugs. You can continue using AdGuard as usual. However, if you encounter a bug, please report it. Of course, we appreciate any additional effort and/or extra forum activity, etc.
+No hay mucho más que añadir. No hay que esforzarse mucho para encontrar errores. Puedes continuar usando AdGuard como de costumbre. Sin embargo, si encuentras un error, infórmalo. Por supuesto, apreciamos cualquier esfuerzo adicional y/o actividad adicional en el foro, etc.
 
-Occasionally, you will receive our newsletters, keeping you informed of the latest changes in the beta (in case you missed them) and other important news. You can unsubscribe from it at any time.
+Ocasionalmente, recibirás nuestros boletines, manteniéndote informado de los últimos cambios en la versión beta (en caso de que se los haya perdido) y otras noticias importantes. Puedes cancelar la suscripción en cualquier momento.

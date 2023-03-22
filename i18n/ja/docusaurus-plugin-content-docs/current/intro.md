@@ -4,7 +4,7 @@ sidebar_position: 1
 slug: /
 ---
 
-## What is AdGuard Ad Blocker?
+## AdGuard 広告ブロッカーとは何ですか？
 
 AdGuard is one of the leaders on the market of ad-blocking software with 10+ years of experience, almost a dozen products for various platforms, and over 30 million user installs. Unlike other ad-blocking solutions, most of which are browser-based, we offer standalone apps for all major platforms, both desktop and mobile. AdGuard apps are more powerful than browser extensions, can block more and do it more efficiently:
 

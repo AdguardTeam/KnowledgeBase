@@ -326,7 +326,7 @@ Stará zařízení Huawei se nastavují nejsnadněji, stačí provést dva jedno
 
 Kromě toho byste pro efektivnější nastavení práce AdGuardu na pozadí měli otevřít nastavení zařízení a provést následující kroky:
 
-- Jděte na **Pokročilá nastavení** → poté otevřete **Správce baterie** → nastavte **Plán napájení** na **Výkon**;
+- Jděte na **Nastavení** → otevřete **Správce baterie** → nastavte **Plán napájení** na **Výkon**;
 - Poté zvolte **Chráněné aplikace** ve **Správci baterie** a zkontrolujte, zda je AdGuard chráněn;
 - Jděte na **Aplikace** v hlavním nastavení a klikněte na AdGuard → vyberte **Baterie** → zapněte **Energeticky náročné výzvy** a **Neuspávat po vypnutí obrazovky**;
 - Poté v sekci **Aplikace** otevřete **Nastavení** (dole) → **Speciální přístup** → vyberte **Ignorovat optimalizaci baterie** → stiskněte **Povoleno** → **Všechny aplikace** → v seznamu vyhledejte AdGuard a nastavte na **Odmítnout**.
@@ -335,7 +335,7 @@ Kromě toho byste pro efektivnější nastavení práce AdGuardu na pozadí měl
 
 Meizu má téměř stejný přístup k omezování procesů na pozadí jako Huawei a Xiaomi. Zakázání práce AdGuardu a dalších aplikací na pozadí se tak můžete vyhnout úpravou následujících nastavení:
 
-- Jděte na **Pokročilá nastavení** → poté otevřete **Správce baterie** → nastavte **Plán napájení** na **Výkon**;
+- Jděte na **Pokročilá nastavení** → otevřete **Správce baterie** → nastavte **Plán napájení** na **Výkon**;
 - Poté zvolte **Chráněné aplikace** ve **Správci baterie** a zkontrolujte, zda je AdGuard chráněn;
 - Jděte na **Aplikace** v hlavním nastavení a klikněte na AdGuard → vyberte **Baterie** → zapněte **Energeticky náročné výzvy** a **Neuspávat po vypnutí obrazovky**.
 

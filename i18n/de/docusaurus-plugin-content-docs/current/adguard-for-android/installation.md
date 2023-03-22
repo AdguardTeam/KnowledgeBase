@@ -3,7 +3,7 @@ title: Installation
 sidebar_position: 2
 ---
 
-## System  requirements
+## Systemanforderungen
 
 **OS version:** Android 5.0 or higher.
 

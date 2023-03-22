@@ -42,14 +42,14 @@ AdGuard 이전 라이선스 키를 업그레이드·갱신하는 방법을 살�
 ![1+1 키](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/1.outdatedlicenses_en.png)
 
 *개인 계정에서 이전 라이선스는 '이전 버전’으로 표시됩니다.*
-> All the outdated licenses have a "legacy" badge in the AdGuard account. 그러나 이러한 라이선스는 갱신 또는 업그레이드 시 자동으로 새로운 유형으로 변환됩니다. 어떤 라이선스를 새로운 유형으로 변환할 수 있는지, 어떻게 변환하는지 살펴보겠습니다.
+> 이전 라이선스가 있는 경우 계정에 '이전 라이선스'라는 문구가 표시됩니다. 그러나 이러한 라이선스는 갱신 또는 업그레이드 시 자동으로 새로운 유형으로 변환됩니다. 어떤 라이선스를 새로운 유형으로 변환할 수 있는지, 어떻게 변환하는지 살펴보겠습니다.
 
 ## 이전 키 업그레이드· 갱신 방법
 
 [갱신 페이지](https://adguard.com/renew.html) 또는 [AdGuard 계정](https://my.adguard.com/main.html)에서 라이선스 변경이 가능합니다.
 
 ![업그레이드](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_en.png)
-> Go to "My licenses" tab and check what actions are available to you for each specific key. 구체적인 예를 살펴 보겠습니다.
+> '내 라이선스'에서 특정 키에 대한 업그레이드·갱신 가능성을 확인할 수 있습니다. 구체적인 예를 살펴 보겠습니다.
 
 ### 1/2/3개의 기기용 일반/모바일 라이선스 또는 1+1 프리미엄
 

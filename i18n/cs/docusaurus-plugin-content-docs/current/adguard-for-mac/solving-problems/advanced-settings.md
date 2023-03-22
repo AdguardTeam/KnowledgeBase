@@ -1,111 +1,111 @@
 ---
-title: Advanced Settings guide
+title: Průvodce pokročilými nastaveními
 sidebar_position: 9
 ---
 
-## How to reach the Advanced settings
+## Jak dosáhnout pokročilých nastavení
 
-> Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only open this section if you are sure of what you are doing or our support team has asked you to do it. To go to *Advanced settings*, follow this route: the AdGuard icon at the tray menu → the gear icon → Advanced → Advanced settings.
+> Změna *Nízkoúrovňových nastavení* může způsobit problémy s výkonem AdGuardu, může přerušit internetové připojení nebo ohrozit vaši bezpečnost a soukromí. Tuto část byste měli otevřít pouze v případě, že jste si jisti tím, co děláte, nebo pokud se vás na to zeptal náš tým podpory. Chcete-li přejít na *Pokročilá nastavení*, postupujte takto: ikona AdGuardu v menu → ikona ozubeného kola → Pokročilé → Pokročilá nastavení.
 
-## Advanced settings
+## Pokročilá nastavení
 
 `network.extension.exclude.domains`
 
-The listed domains will be excluded from filtering in *Network Extension* mode. Use a comma or line break to separate values.
+Uvedené domény budou z filtrování v režimu *Rozšíření sítě* vyloučeny. Pro oddělení hodnot použijte čárku nebo zalomení řádku.
 
 `network.extension.exclude.ports`
 
-The listed ports will be excluded from filtering in *Network Extension* mode. Use a comma or line break to separate values.
+Uvedené porty budou z filtrování v režimu *Rozšíření sítě* vyloučeny. Pro oddělení hodnot použijte čárku nebo zalomení řádku.
 
 `network.extension.route.exclude`
 
-The listed routes will be excluded from filtering in *Network Extension* mode. Set routes using an IP address or destination CIDR. Separate values with commas or line breaks.
+Uvedené routery budou z filtrování v režimu *Rozšíření sítě* vyloučeny. Nastavte routery pomocí IP adresy nebo cílového CIDR. Hodnoty oddělujte čárkami nebo zalomením řádků.
 
 `network.extension.http.downgrade.bundleids`
 
-Here you can specify a list of applications for which the HTTP/2 protocol will be downgraded to HTTP/1.1 in the *Network Extension* filtering mode. The bundle ID should be separated by a comma or a line break.
+Zde můžete zadat seznam aplikací, pro které bude protokol HTTP/2 v režimu filtrování *Rozšíření sítě* ponížen na HTTP/1.1. ID svazku by mělo být odděleno čárkou nebo zalomením řádku.
 
 `network.extension.monterey.force.split.tunnel`
 
-Here you can prohibit AdGuard from using the "default route" which is enabled by default in *Network Extension* mode on macOS Monterey. AdGuard uses "default route" to disable iCloud Private Relay and Protect Mail Activity, because it cannot work with them simultaneously.
+Zde můžete AdGuardu zakázat používání "výchozí trasy", která je ve výchozím nastavení povolena v režimu *Rozšíření sítě* v systému MacOS Monterey. AdGuard používá "výchozí trasu" pro zakázání iCloud Private Relay a Protect Mail Activity, protože s nimi nemůže pracovat současně.
 
-You will find more information about the problem [in this article](../icloud-private-relay).
+Více informací o tomto problému najdete v [tomto článku](../icloud-private-relay).
 
 `network.extension.dns.redirect.exclude.bundleids`
 
-Here you can specify a list of applications that make DNS queries directly not via system DNS resolver (for example, some VPN clients or DNS filtering applications). DNS filtering will be disabled for them in the *Network Extension mode*. The bundle IDs should be separated by a comma or line break.
+Zde můžete zadat seznam aplikací, které provádějí dotazy DNS přímo, nikoli prostřednictvím systémového DNS řešitele (například někteří klienti VPN nebo aplikace pro filtrování DNS). DNS filtrování pro ně bude zakázáno v režimu *Rozšíření sítě*. ID svazku by mělo být odděleno čárkou nebo zalomením řádku.
 
 `network.https.ocsp.check`
 
-By setting `true`, you enable HTTPS certificate revocation checking.
+Nastavením `true` povolíte kontrolu odvolání certifikátu HTTPS.
 
 `network.filtering.localnetwork`
 
-By setting `true`, you enable local network filtering.
+Nastavením `true` povolíte filtrování lokální sítě.
 
 `network.filtering.localhost`
 
-By setting `true`, you enable LoopBack filtering.
+Nastavením `true` povolíte filtrování LoopBack.
 
 `upstream.proxy`
 
-In this string, you can specify a proxy server for upstream connections. For example:
+V tomto řetězci můžete zadat proxy server pro odchozí připojení. Např:
 
-* SOCKS5 proxy with authentication — `socks5://username:password@proxy.example.org:1080`
-* Local HTTP proxy without authentication — `http://localhost:3128`
+* Proxy SOCKS5 s ověřováním — `socks5://username:password@proxy.example.org:1080`
+* Lokální proxyHTTP bez ověřování — `http://localhost:3128`
 
 `upstream.proxy.socks5udp`
 
-By setting `true`, you enable redirection of UDP traffic through the local server in SOCKS5 mode. Note: If your SOCKS5 server does not support the UDP protocol, enabling this setting will cause your Internet connection to fail.
+Nastavením `true` povolíte přesměrování provozu UDP přes lokální server v režimu SOCKS5. Poznámka: Pokud váš server SOCKS5 nepodporuje protokol UDP, zapnutí tohoto nastavení způsobí, že připojení k Internetu selže.
 
 `dns.proxy.bootstrap.ips`
 
-Here you can enter the IP addresses of the DNS servers that will be used to determine the address of the encrypted DNS server.
+Zde můžete zadat IP adresy DNS serverů, které budou použity k určení adresy šifrovaného DNS serveru.
 
 `dns.proxy.fallback.ips`
 
-Here you can specify a list of IP addresses of DNS servers that will be used as backups in case the encrypted DNS server fails to respond.
+Zde můžete zadat seznam IP adres DNS serverů, které budou použity jako zálohy v případě, že šifrovaný DNS server neodpoví.
 
 `dns.proxy.detect.search.domains`
 
-This option enables automatic detection of the local network domain, which will be automatically redirected to the fallback DNS server instead of the main DNS server.
+Tato možnost umožňuje automatickou detekci domény lokální sítě, která bude automaticky přesměrována na záložní DNS server namísto hlavního DNS serveru.
 
 `dns.proxy.fallback.domains`
 
-Here you can list domains for which the fallback DNS server will be used instead of the main DNS server.
+Zde můžete uvést seznam domén, pro které bude použit záložní DNS server namísto hlavního DNS serveru.
 
 `dns.proxy.adblockrules.blocking.mode`
 
-Here you can specify the type of DNS server response to blocked requests, corresponding to ad-blocker-style rules.
+Zde můžete zadat typ odezvy DNS serveru na blokované požadavky odpovídající pravidlům typu ad-blocker.
 
-0 — respond with REFUSED 1 — respond with NXDOMAIN 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
+0 — odezva s REFUSED 1 — odezva s NXDOMAIN 2 — odezva s 0.0.0.0 nebou adresou uvedenou v `dns.proxy.blocking.response.IPv4.address` a/nebo `dns.proxy.blocking.response.IPv6.address`
 
 `dns.proxy.hostrules.blocking.mode`
 
-Here you can specify the type of DNS server response to blocked requests, corresponding to hosts rules:
+Zde můžete zadat typ odezvy DNS serveru na blokované požadavky odpovídající pravidlům typu hosts:
 
-0 — respond with REFUSED 1 — respond with NXDOMAIN 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
+0 — odezva s REFUSED 1 — odezva s NXDOMAIN 2 — odezva s 0.0.0.0 nebou adresou uvedenou v `dns.proxy.blocking.response.IPv4.address` a/nebo `dns.proxy.blocking.response.IPv6.address`
 
 `dns.proxy.blocking.response.IPv4.address`
 
-Here you can specify the IPv4 address that will be returned in response to blocked "A" requests when `dns.proxy.adblockrules.blocking.mode` or `dns.proxy.hostrules.blocking.mode` is set to the response type "ADDRESS".
+Zde můžete zadat adresu IPv4, která bude vrácena jako odezva na blokované požadavky "A", pokud je `dns.proxy.adblockrules.blocking.mode` nebo `dns.proxy.hostrules.blocking.mode` nastaven na typ odezvy "ADDRESS".
 
 `dns.proxy.blocking.response.IPv6.address`
 
-Here you can specify the IPv6 address that will be returned in response to blocked "AAAA" requests when `dns.proxy.adblockrules.blocking.mode` or `dns.proxy.hostrules.blocking.mode` is set to the response type "ADDRESS".
+Zde můžete zadat adresu IPv6, která bude vrácena jako odezva na blokované požadavky "AAAA", pokud je `dns.proxy.adblockrules.blocking.mode` nebo `dns.proxy.hostrules.blocking.mode` nastaven na typ odezvy "ADDRESS".
 
 `dns.proxy.block.AAAA.requests`
 
-Here you can enable IPv6 DNS query blocking.
+Zde můžete povolit blokování DNS dotazů IPv6.
 
 `dns.proxy.blocked.response.TTL.in.seconds`
 
-Here you can specify the TTL (time to live) value that will be returned in response to a blocked request.
+Zde můžete zadat hodnotu TTL (time to live), která bude vrácena jako odpověď na zablokovaný požadavek.
 
 `subscription.link.interception.userscript`
 
-Activate this feature if you want AdGuard to automatically intercept the URLs of userscripts and open the installation window.
+Tuto funkci aktivujte, pokud chcete, aby AdGuard automaticky zachycoval adresy URL uživatelských skriptů a otevíral instalační okno.
 
 `subscription.link.interception.filter`
 
-Activate this feature if you want AdGuard to automatically intercept subscription URLs (for example, abp:subscribe, etc.) and open the custom filter setup window.
+Tuto funkci aktivujte, pokud chcete, aby AdGuard automaticky zachycoval adresy URL odběru (například abp:subscribe atd.) a otevřel okno nastavení vlastního filtru.

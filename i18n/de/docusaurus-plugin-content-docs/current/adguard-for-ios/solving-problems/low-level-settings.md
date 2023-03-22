@@ -5,7 +5,7 @@ sidebar_position: 5
 
 ## How to reach the Low-level settings
 
-> Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only open this section if you are sure of what you are doing or our support-team has asked you about it.
+> Das Ändern von *Low-Level-Einstellungen* kann Probleme mit der Leistung von AdGuard verursachen, die Internetverbindung unterbrechen oder Ihre Sicherheit und Privatsphäre gefährden. You should only open this section if you are sure of what you are doing or our support-team has asked you about it.
 
 To go to *Low-level settings*, tap the gear icon at the bottom right of the screen to open *Settings*. Select the *General* section and then toggle on the *Advanced mode* switch, after that the *Advanced settings* section will appear below. Tap *Advanced settings* to reach the *Low-level settings* section.
 
@@ -33,7 +33,7 @@ By moving the toggle to the right, you activate IPv6 query blocking (AAAA reques
 
 ### Blocked response TTL
 
-Here you can specify the TTL (time to live) value that will be returned in response to a blocked request.
+Hier können Sie den TTL-Wert (Time to Live) angeben, der als Antwort auf eine blockierte Anfrage zurückgegeben wird.
 
 ### Bootstrap servers
 

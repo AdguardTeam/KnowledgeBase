@@ -73,11 +73,11 @@ sidebar_position: 2
 
 7. 输入管理员密码，然后点击「**修改钥匙串**」。
 
-8. Go to **Spotlight** (the search icon in the top right corner), type in "Keychain Access", and then select **Keychain Access** from the search results.
+8. 转到「**Spotlight**」（右上角的搜索图标），输入“Keychain Access”（钥匙串访问），然后从搜索结果中选择「**Keychain Access**」（钥匙串访问）。
 
 9. 在「*系统*」中，突出显示您添加的证书。
 
-10. 右键单击它并从上下文菜单中选择「**查看信息**」。
+10. 右键单击证书并从上下文菜单中选择「**查看信息**」。
 
 11. 展开「*信任*」以显示该证书的信任政策。
 

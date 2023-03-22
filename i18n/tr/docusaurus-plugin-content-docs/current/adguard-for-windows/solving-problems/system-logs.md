@@ -7,7 +7,7 @@ To analyse and diagnose different problems that may potentially arise, the AdGua
 
 1. Press *Win + R*
 
-2. In the window that appears type in `eventvwr` and click on *OK*:
+2. Açılan pencerede `eventvwr` yazın ve *Tamam* öğesine tıklayın:
 
 ![Run window *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_1.png)
 
@@ -17,15 +17,15 @@ To analyse and diagnose different problems that may potentially arise, the AdGua
 
 To save files that we need, do the following:
 
-- Open *Application*: *Event Viewer (Local)* -> *Windows Logs* -> *Application*.
+- *Uygulama* öğesini açın: *Olay Görüntüleyicisi (Yerel)* → *Windows Günlükleri* → *Uygulama*.
 
-- Right-click on the *Application* and in drop-down menu select *Save All Events As...*
+- Right-click *Application* and in the drop-down menu select *Save All Events As...*
 
 - Select a name and where to save, click *Save*. Select *Display information for the following languages*. You need to tick the box next to *English*. Click *OK*.
 
-- Open *System*: *Event Viewer (Local)* -> *Windows Logs* ->  *System*.
+- Open *System*: *Event Viewer (Local)* → *Windows Logs* →  *System*.
 
-- Right-click on *System* and in the drop-down menu, select *Save All Events As...*
+- *Sistem* öğesine sağ tıklayın ve açılır menüden *Tüm Olayları Farklı Kaydet...* öğesini seçin
 
 - Choose a destination folder, enter the name, click *Save*. Select *Display information for the following languages*. You need to tick the box next to *English*. Click *OK*.
 

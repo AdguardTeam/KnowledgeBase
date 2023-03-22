@@ -1,16 +1,16 @@
 ---
-title: Installation problems solving
+title: Řešení problémů s instalací
 sidebar_position: 5
 ---
 
-## "Installation failed" error in macOS Catalina
+## Chyba "Instalace se nezdařila" v macOS Catalina
 
-During the installation you can face an error like this:
+Během instalace se můžete setkat s touto chybou:
 
-![Installation error screen](https://cdn.adtidy.org/content/kb/ad_blocker/mac/macerrorscreenEN.jpg)
+![Obrazovka s chybou instalace](https://cdn.adtidy.org/content/kb/ad_blocker/mac/macerrorscreenEN.jpg)
 
-Follow this instruction to solve the problem:
+Pro vyřešení problému postupujte podle těchto pokynů:
 
-1) Restart your Mac 2) As your Mac restarts, press and hold down the *Command(⌘) + R* keys immediately upon hearing the startup chime. Hold the keys until the Apple logo appears to get the computer into Recovery mode. 3) From the top bar select *Utilities* > *Terminal*, and execute this command: `csrutil disable` 4) Restart the Mac and log into Administrator's profile 5) Open the Finder window and select from the top bar *Go* > *Go to Folder* and type `~/private/` 6) Create a folder named *tmp* and type in your password 7) Launch AdGuard installation
+1) Restartujte Mac 2) Při restartu počítače Mac stiskněte a podržte klávesy *Command(⌘) + R* ihned poté, co uslyšíte spouštěcí gong. Podržte klávesy, dokud se neobjeví logo Apple, přepněte počítač do režimu obnovení. 3) Z horní lišty vyberte *Nástroje* → *Terminal*, a proveďte tento příkaz: `csrutil disable` 4) Restartujte Mac a přihlaste se do profilu správce 5) Otevřete okno Finderu a z horní lišty vyberte *Přejít* → *Přejít do složky* a zadejte `~/private/` 6) Vytvořte složku s názvem *tmp* a zadejte své heslo 7) Spusťte instalaci AdGuardu
 
-As the installation is completed, restart your Mac in Recovery mode using the instruction above and execute `csrutil enable` command in Terminal to enable system protection.
+Po dokončení instalace restartujte Mac v režimu obnovení podle výše uvedených pokynů a v Terminalu spusťte příkaz `csrutil enable`, abyste zapnuli ochranu systému.

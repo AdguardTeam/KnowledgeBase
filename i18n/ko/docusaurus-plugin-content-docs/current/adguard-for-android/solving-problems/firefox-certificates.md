@@ -12,12 +12,12 @@ AdGuard가 Firefox에서 HTTPS 트래픽을 성공적으로 필터링하기 위�
 Firefox Nightly가 AdGuard 인증서를 신뢰하도록 하려면 다음 단계를 따르십시오.
 
 1. 브라우저를 실행합니다.
-2. **설정**>** Firefox 정보**로 이동합니다.
+2. Go to **Settings** → **About Firefox**.
 
 ![Firefox 정보 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
 
 3. Firefox 로고를 5번 탭합니다.
-4. **설정**>** Secret Settings**으로 이동합니다.
+4. Navigate to **Settings** → **Secret Settings**.
 
 ![비밀 설정 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
 
@@ -33,9 +33,9 @@ Firefox Nightly가 AdGuard 인증서를 신뢰하도록 하려면 다음 단계�
     - 휴대폰에서 **설정**을 엽니다.
     - **시스템** 섹션(설정 메뉴의 마지막 항목)으로 이동합니다. 이 섹션에서 **휴대전화 정보**를 찾습니다.
     - **빌드 번호** 줄을 7번 클릭합니다. 그 후에 '**개발자 모드를 켰습니다'**라는 알림을 받게 됩니다. 필요한 경우 기기의 잠금 해제 코드를 입력하세요.
-    - **시스템 설정**>** 개발자 옵션**> 아래로 스크롤하여 **USB 디버깅 활성화**> 경고를 읽은 후 **USB 디버깅 허용** 창에서 디버깅이 활성화되었는지 확인합니다.
+    - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
 3. [Firefox ](https://www.mozilla.org/en-US/firefox/releases/)브라우저(정식 버전)를 설치합니다.
-4. **AdGuard 설정**>** 네트워크**>**HTTPS 필터링**> 엽니다. **Firefox**에 인증서를 설치한 후 **이전 버전으로 설치**를 클릭합니다.
+4. Open the **AdGuard settings** → **Network** → **HTTPS Filtering** → Install the certificate in **Firefox** → **INSTALL FOR OLD VERSIONS**;
 5. `adb shell su` 및 `cd data/data/...`를 사용하여 `data/data/org.mozilla.firefox/files/mozilla` 폴더를 엽니다. `xxxxxxx.default`라는 폴더를 찾아 이름을 기억하세요.
 6. 지정된 폴더에는 두 개의 파일이 필요합니다.
     - `cert9.db`

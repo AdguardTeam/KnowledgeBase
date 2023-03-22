@@ -1,158 +1,158 @@
 ---
-title: Plural forms
+title: 複数形がある言語の場合
 sidebar_position: 4
 ---
 
 
-There are a lot of differences between the world’s languages. One of these differences is the use of plural forms that can cause huge difficulties when it comes to localization issue.
+世界の言語には、さまざまなところで違いがあります。 そのひとつが複数形で、複数形はローカライズの際に大きな困難を招くことがあります。
 
-We strongly recommend you to properly read this article to learn more about plural forms and how they are being used in AdGuard translations.
+複数形のある言語に翻訳いただく場合は、複数形そのものについて、またはAdGuardの翻訳でどのように複数形が使われているのかについて、この記事をしっかり読んでいただくことを強くお勧めします。
 
-## What do plural forms mean? {#plurals}
+## 複数形とは？ {#plurals}
 
-Nouns in different languages can have several plural word forms. Their usage depends on the number of things you are talking about.
+名詞がいくつかの複数形の語形を持つ言語があります。 その使い方は、示される物の数によって異なります。
 
-For instance, English words have two word forms when speaking about something in the singular, like *'one star'*, and in the plural – *'two stars'*. It doesn’t matter if you say five, twenty six or even five hundred thirty two stars – the ending 's' will remain the same. But some languages can contain only one or many plural forms.
+例えば、英単語は、 「*one star*」のように単数形で何かを語る場合と、 「*two stars*」のように複数形で語る場合の2つの語形を持っています。 星が５つでも26個でも、あるいは5302個でも、語尾の「s」は変わりません。 しかし、言語によっては、複数形が1つだけだったり、逆に2つ以上あったりもします。
 
-In contrast to English, the Polish language has three plural forms of nouns. One of them is used when speaking about something in the singular, another form is used in the plural but with numbers ending in 2-4, excluding 12-14, and the third form – for words with other numbers in front of them.
+英語とは対照的に、ポーランド語には名詞の複数形が3つあります。 そのうちの一つは、単数形で何かを語るときに使われ、もう一つの形は、複数形だが2〜4（12〜14を除く）で終わる個数に使われ、第三の形は、その他の個数に使われます。
 
-Let’s have a look at this picture. Here you can see the groups of numerals which determine a word form when standing in front of it.
+以下の画像を見てみましょう。 ここでは、前に立つと語形が決まる数字のグループを見ることができます（ポーランド語の場合）。
 
-![Polish](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
+![ポーランド語](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
-> Find other examples [here](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals).
+> 他の例は[こちら](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals)で確認できます。
 
-Let’s draw a small parallel between English and Polish for better understanding: 
+理解を深めるために、1個・2個・5個の場合の英語とポーランド語の複数形を比べてみましょう。 
 
-      The English version:                                                 The Polish equivalents:
+      英語の場合:                                                 ポーランド語の場合:
     
-      1. form - It takes one hour.                                     1. form - Zajmuje to godzinę. 
-      2. form - It takes two hours.                                    2. form - Zajmuje to dwie godziny. 
-      3. form - It takes five hours.                                   3. form - Zajmuje to pięć godzin.
+      1. It takes one hour.                                     1. Zajmuje to godzinę. 
+      2. It takes two hours.                                    2. Zajmuje to dwie godziny. 
+      3. It takes five hours.                                   3. Zajmuje to pięć godzin.
 
-Now it is clear that the Polish *'godzinę'* (hour) has three different forms, whereas the English word changes its form with given numbers only twice.
+さて、ポーランド語の *'godzinę'* (「時間」) には3種類の形があるのに対し、英語では単語が形を変えるのは2回だけであることがわかります。
 
-Except for Polish, there are a lot of other languages that have three plural forms and more, such as Russian, Serbian, Slovak, Czech etc. But not all of them obey the same rule. That's why it is so important to know how many plural forms your language contains and how you can apply them.
+ポーランド語を除けば、ロシア語、セルビア語、スロバキア語、チェコ語など、3つの複数形を持つ言語やそれ以上の複数形を持つ言語がたくさんあります。 しかも、複数形に対する規則も様々です。 だからこそ、特定の言語にはいくつの複数形があり、それをどのように応用すべきかを知ることはとても大切なことなのです。
 
-## Where can you learn about the number of plural forms? {#where-to-learn}
+## 複数形がいくつあるのかは、どこで確認できますか？ {#where-to-learn}
 
-When you are faced with a translation that requires the use of plurals, you may not be able to realize right away how many word forms your language contains.
+複数形の使用が必要な翻訳に直面したとき、自分の言語にはどれだけの語形があるのか、すぐには気づけないかもしれません。
 
-Here are some sources of information you can use.
+そういった情報を確認できるところをご紹介します。
 
-[Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contains a wide list of languages. The number of plural forms for different languages is shown this way: 'nplurals=2', 'nplurals=4' and so on. The numeral after the Equals sign '='  means the number of plural forms of the respective language.
+[Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) は、幅広い言語リストを含んでいます。 異なる言語の複数形の数は、「nplurals=2」「nplurals=4」といった具合に表示されます。 イコール記号「=」の後の数字は、それぞれの言語の複数形の数を示します。
 
-Also, you can get information about plural forms in the [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). The CLDR Plural Rules indicate an additional word form for decimal numbers (1.5; 2.3; 100.1…), but we don’t use them in AdGuard translations.
+また、 [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR)で複数形に関する情報を入手することもできます。 CLDR Plural Rulesでは、10進数（1.5; 2.3; 100.1…）に対する追加の語形が示されていますが、AdGuardの翻訳ではそのような数字は使用していません。
 
-## Plurals in AdGuard translations {#translations}
+## AdGuardの翻訳における複数形について {#translations}
 
-First of all, we want to mention that not every AdGuard translation requires the use of plural forms.
+まず最初に、AdGuard翻訳のすべてで複数形の使用が必要というわけでもないことをお伝えしておきます。
 
-Currently, we have 4 types of strings on Crowdin that involve the use of plurals.
+現在、Crowdinでは、複数形の使用を伴う文字列を4種類扱っています。
 
-Let's take a closer look at them.
+それらを詳しく見ていきましょう。
 
-### 1. Phrases with string keys ending in `.singular`, `.dual`, `.plural` {#1type}
+### 1. String keyが `.singular`, `.dual`, `.plural` で終わるフレーズ {#1type}
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/dual_it.png)
 
-Most of them are represented in the `AdGuard for Windows` project and consist of only one or two words:
+その多くは、 `AdGuard for Windows` プロジェクトで使用されており、それぞれ1～2語で構成されています:
 
 - `days;`
 - `extensions;`
 - `hours`
 
-Please pay attention to the string keys of such phrases and to the "Context" field where you can see some important notes about plurals. The string keys may contain `Singular`, `Dual`, `Plural` words (ex.`FormatDayDeclensionDual`). In this case, you should leave the appropriate plural form as it is specified in the key.
+このようなフレーズのstring keyと、複数形に関する重要な注意事項が記載されていたりする「Context」欄にご注目ください。 string keyには、 `Singular`, `Dual`, `Plural` という単語が含まれる場合があります（例:`FormatDayDeclensionDual`）。 この場合、keyで指定されているとおりに適切な複数形にしておく必要があります。
 
-### 2. Strings with singular and plural nouns separated by commas {#2type}
+### 2. 単数・複数の名詞をカンマで区切った文字列 {#2type}
 
-This kind of strings is mostly concentrated in the `AdGuard for Android` project.
+この種の文字列のほとんどは、 `AdGuard for Android`プロジェクトにあります。
 
-Please look at the example:
+こちらの例をご覧ください:
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/android_fr.png)
 
-If there are 3 plural forms of nouns in your language (like in Polish), please write all plural forms separated by commas.
+あなたの言語で名詞の複数形が3つある場合（ポーランド語のように）、すべての複数形をカンマで区切って書いてください。
 
 `hour, hours — godzinę, godziny, godzin`
 
-In case a noun has only 2 forms, there is no need to write the same form twice (*typically only for this type of strings with plurals!*). However, it won't be a mistake if you repeat the form twice.
+名詞に2つの形しかない場合、同じ形を2回書く必要はありません（*※このような複数形文字列の場合のみ*）。 ただし、形を2回書いても間違いにはなりません。
 
-### 3. Strings that use the Crowdin-developed pattern {#3type}
+### 3. Crowdin開発のパターンを使用する文字列 {#3type}
 
-This is the most user-friendly scheme of translating strings with plurals.
+これは、複数形文字列の最も使いやすい翻訳方式です。
 
-Crowdin suggests to users that they translate the certain amount of phrases with different plural forms.
+この場合、Crowdinは、ユーザーに対して、複数形の異なるフレーズを一定量翻訳することを提案します。
 
-If your language provides only one plural form, then you will see only one phrase to translate. If three or more forms, Crowdin will provide you with the string divided into other two or three strings to translate.
+例えば、複数形が1つしかない言語の場合、翻訳するフレーズは1つ表示されます。 3つ以上の複数形がある場合、Crowdinは翻訳する文字列をさらに3つ以上に分割してくれます。
 
-For example:
+例えば、こんな感じです:
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/crowdin_scheme.png)
 
-Please be attentive when translating these strings and approving them. If you have no idea what the "Other" field means, then just paste the same form as it is in the "Many" field. The translations of "Many" and "Other" fields can be the same.
+これらの文字列を翻訳する際やApprove(✔️)する際には、十分な配慮をお願いします。 「Other」欄の意味がわからない場合は、「Many」欄と同じ複数形を貼り付けてください。 「Many」欄と「Other」欄の訳語は同じになっていることが可能です。
 
-### 4. Strings with templates separated by the vertical bar sign {#4type}
+### 4. 縦棒記号で区切られた文字列 {#4type}
 
-This is the most complicated type of AdGuard strings which is mostly used in `AdGuard Websites` project.
+これは最も複雑な種類のAdGuard文字列で、主に`AdGuard Websites`プロジェクトで使用されています。
 
-Pay close attention to a vertical bar sign between the sentences and **%count%** placeholders in original phrases – this will help you identify phrases where translations require the use of plural forms.
+文と文の間にある縦棒記号や、原文のフレーズにある「**%count%**」というプレースホルダーに注意してください。これらは、翻訳で複数形の使用が必要なフレーズを識別するのに役立ちます。
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/plurals_site.png)
 
-Now, let’s imagine — you are faced with such a string: `Standard license for %count% computer | Standard license for %count% computers`.
+さて、 `Standard license for %count% computer | Standard license for %count% computers`。
 
-What should you know to translate it correctly?
+これを正しく訳すために知っておくべきことは？
 
-Let's call the sentences which are divided by a vertical bar sign **"templates"**, because actually they serve as templates for phrases with different numbers.
+縦棒記号で区切られた文章を「**テンプレート**」と呼ぶことにしましょう（異なる番号を持つフレーズのテンプレートとして機能するからです）。
 
-Coming back to the example, as the English language includes only two forms, there should be two templates respectively:
+例題に戻ると、英語には2つの複数形しかないので、それぞれ2つのテンプレートがあるはずです。
 
 `Standard license for *%count%* computer | Standard license for *%count%* computers`
 
-where **template 1** – Standard license for *%count%* computer,
+ここで、 **テンプレート①** は Standard license for *%count%* computer
 
-and **template 2** – Standard license for *%count%* computers
+**テンプレート②** は Standard license for *%count%* computers
 
-Another important thing you should pay your attention to is **%count%** placeholders that, as usual, take place before the words they define. Instead of **%count%** here will appear different numbers depending on which templates are being chosen.
+もう一つ注意しなければならないのは、通常、定義する単語の前に位置する「**%count%**」というプレースホルダーです。 ユーザーに見える文章では、 **%count%** の代わりに、選択されているテンプレートに応じて異なる数字が表示されます。
 
-In a situation with another language that has, let’s say, three plural forms, there should be three templates with two vertical bar signs between them.
+他の言語（例えば3つの複数形がある言語）の場合、テンプレートは3つで、その間に2つの縦棒記号があるはずです。
 
-For example, when we translate the above mentioned phrase into Slovak, that according to the rule of [Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) has three word forms, the correct translation will look so:
+例えば、上記のフレーズをスロバキア語に翻訳する場合、 [Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) のルールによれば、スロバキア語には3つの語形があり、正しい訳は以下のようになります:
 
 `**Štandartná licencia pre *%count%* počítač | Štandartná licencia pre *%count%* počítače | Štandartná licencia pre *%count%* počítačov**`
 
-![Slovak](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/slovak.png)
+![スロバキア語](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/slovak.png)
 
-In this case, we see three templates which contain three forms of the word *"počítač"* (computer) in Slovak.
+この場合、スロバキア語の*"počítač"* (コンピュータ)という単語の3つの形式に応じて3つのテンプレートが表示されます。
 
-*If we ignore one of the forms and use only two templates for Slovak instead of three, the system won’t be able to take an appropriate template for certain numbers* and, as a result, we will have grammar mistakes in sentences, like in English: *Standard license for 5 computer*.
-> **Always use as many forms as there are in your language, even when the word itself has fewer word forms.**
+*形式を1個無視して、スロバキア語のテンプレートを3つではなく2つだけ使用すると、システムは特定の数字に対して適切なテンプレートを取ることができなくなります。*その結果、英語の *Standard license for 5 computer* のように、文中に文法ミスが発生してしまいます。
+> **特定の単語の語形がより少ない場合でも、常に言語にあるだけの最大数の語形を使用してください。**
 
-For example, the Serbian word *'računar'* (computer) has only two forms. But there are 3 plural forms in Serbian.
+例えば、セルビア語の *'računar'* （コンピュータ）には、2つの形しかありません。 しかし、セルビア語には3つの複数形があります。
 
-![Serbian](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/serbian.png)
+![セルビア語](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/serbian.png)
 
-Thus, the translation from English into Serbian should be:
+したがって、英語からセルビア語への訳語はこうなるべきです:
 
 `**Standardna licenca za *%count%* računar | Standardna licenca za *%count%* računara | Standardna licenca za *%count%* računara**`
 
-Although it is obvious that the last two templates have no differences, it is very important to keep the rule: **The number of templates should reflect the number of plural forms of the respective language!**(typically for this type of strings with plurals).
+この場合、最後の2つのテンプレートに違いがないことは明らかですが、このルールを守ることは非常に重要です。 **テンプレートの数は、それぞれの言語の複数形の数を反映する必要があります。**(このような複数形文字列の場合)。
 
-### Short summary {#summury}
+### 簡単な要約 {#summury}
 
-When translating AdGuard projects pay your close attention to phrases which require the use of plural forms.
+AdGuardのプロジェクトを翻訳する際には、複数形の使用を必要とするフレーズに細心の注意を払う必要があります。
 
-While first three types of such strings are more or less easy to perform, the fourth type demands more vigilance.
+最初の3つの種類は簡単に対応できるのですが、4つ目の種類（縦棒記号で区切られた文字列）はより注意深く翻訳する必要があります。
 
-And again: if you come across an original phrase with two important elements: **the vertical bar sign** and **%count%** placeholders, please do the following:
+もう一度繰り返しますが、**縦棒記号**と**%count%**プレースホルダーの2つの重要な要素を持つフレーズに出会ったら、以下のことを行ってください:
 
-+ Refer to the plural rule of a language you translate into;
++ 翻訳する言語の複数形ルールを参照してください。
 
-> The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms – two templates in translations; five plural forms – five templates, etc.
+> テンプレートは、その言語に含まれる複数形の数と一致させる必要があります（たとえ、特定単語自体の形式数が少ない場合でも、言語の数に合わせます）。 言語に2つの複数形がある場合、翻訳では2つのテンプレートを使用、言語に5つの複数形がある場合、翻訳では5つのテンプレートを使用、など。
 
-+ Do not forget to use a vertical bar sign between templates as it is represented in original strings;
++ テンプレートとテンプレートの間は、元の文字列と同じように縦棒記号を使用することを忘れないでください。
 
-+ Do not translate, fill in or delete **%count%** placeholders.
++ **%count%**プレースホルダーを翻訳したり、変更したり、削除したりしないでください。
 
-By following these simple rules you will help AdGuard developers avoid a lot of unnecessary complications during the localization process.
+これらの簡単なルールをもとに翻訳いただくと、AdGuardの開発者はローカライズプロセスにおける不必要な複雑さを回避することができ、大変助かります。

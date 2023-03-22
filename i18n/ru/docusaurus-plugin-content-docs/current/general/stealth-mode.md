@@ -71,9 +71,15 @@ Push API даёт серверам возможность отправлять �
 
 ## Разное {#miscellaneous}
 
-### Скрывать Referrer от сторонних ресурсов {#referrer}
+### Hide Referrer from third parties {#referrer}
 
-Referrer — это HTTP-заголовок, используемый в запросах браузера к серверу. Он содержит URL-адрес источника запроса. Когда вы переходите с одной страницы на другую, Referrer сохраняет URL начальной страницы. Часто на сервере устанавливается программное обеспечение, анализирующее Referrer и извлекающее из него различную информацию. Включение этой опции скрывает текущий сайт от посторонних ресурсов, подменяя HTTP-заголовок. Вы также можете установить произвольный Referrer, введя его в поле «Настроить Referrer». Оставьте поле пустым, чтобы использовать Referrer по умолчанию.
+Referrer — это HTTP-заголовок, используемый в запросах браузера к серверу. Он содержит URL-адрес источника запроса. Когда вы переходите с одной страницы на другую, Referrer сохраняет URL начальной страницы. The server that hosts the destination web page often has software that parses Referrer and extracts various pieces of information from it. Enabling the *Hide Referrer from third-parties* option hides the current website from third-party sites by altering the HTTP header.
+
+You can also set an arbitrary value for Referrer by entering it into the *Custom Referrer* field. To use default Referrer, leave the field blank.
+
+Note that to be able to filter traffic, AdGuard applications 'intercept' browser-to-server requests. Requests to ad, tracking, and phishing servers may be altered before sending them to the server or blocked completely. Same goes for the *Hide Referrer from third parties* option: AdGuard intercepts HTTP(s) requests, in particular to remove or change the Referrer header if this option is enabled. However, it happens only after these requests “leave” the browser. This means that if you monitor Referrer inside the browser (for example, with the help of Chrome's Developer Tools), you will see the original Referrer because the request hasn't reached AdGuard yet. You can use software like [Fiddler](https://www.telerik.com/fiddler) to make sure that Referrer gets altered correctly.
+
+On the opposite, due to the nature of all browser extensions, AdGuard Browser extension works 'inside' the browser. It will alter the Referrer right then and there, so Developer Tools will show the desired Referrer for your requests.
 
 ### Скрыть User-Agent {#useragent}
 

@@ -21,11 +21,11 @@ sidebar_position: 2
 
 请等待 _AdguardInstaller.dmg_ 下载完成后，在 Dock 栏上已安装的文件列表里双击它的图标。
 
-![双击打开文件](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation_open_the_file.jpg)
+![Double-click to open the file](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation_open_the_file.jpg)
 
 AdGuard 图标将出现在您的桌面上。 单击它打开安装应用程序，然后在打开的窗口中双击 AdGuard 图标。
 
-![双击 AdGuard 图标](https://cdn.adtidy.org/content/kb/ad_blocker/mac/3.jpg)
+![Double-click the AdGuard icon](https://cdn.adtidy.org/content/kb/ad_blocker/mac/3.jpg)
 
 当您第一次启用 AdGuard 时，您的操作系统将会提示您：该应用程序是从互联网下载的 App。 点击**打开**。
 

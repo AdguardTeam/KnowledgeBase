@@ -21,11 +21,11 @@ sidebar_position: 2
 
 Дождитесь окончания загрузки файла _AdguardInstaller.dmg_ и щёлкните мышью по его значку в списке загруженных объектов на Dock-панели.
 
-![Дважды щёлкните, чтобы открыть файл](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation_open_the_file.jpg)
+![Double-click to open the file](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation_open_the_file.jpg)
 
 На рабочем столе отобразится значок AdGuard. Щёлкните по нему, чтобы открыть окно программы установки. В окне программы установки дважды кликните мышью по значку AdGuard.
 
-![Дважды щёлкните значок AdGuard](https://cdn.adtidy.org/content/kb/ad_blocker/mac/3.jpg)
+![Double-click the AdGuard icon](https://cdn.adtidy.org/content/kb/ad_blocker/mac/3.jpg)
 
 При первом запуске AdGuard операционная система предупредит вас о том, что приложение загружено из интернета. Нажмите **Открыть**.
 

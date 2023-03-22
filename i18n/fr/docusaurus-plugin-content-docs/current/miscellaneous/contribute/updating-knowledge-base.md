@@ -9,7 +9,7 @@ This is why we placed all of our KB content on [GitHub](https://github.com/Adgua
 
 ## How to suggest a change or write a new article {#suggest-change}
 
-You can suggest changes to current articles and add new ones to our Knowledge base using the functionality of GitHub mentioned above. If you are unfamiliar with principles of working with the platform, start by reading [GitHub documentation](https://docs.github.com/en).
+Vous pouvez suggérer des modifications aux articles actuels et en ajouter de nouveaux à la Base de connaissances en utilisant la fonctionnalité de GitHub mentionné ci-dessus. If you are unfamiliar with principles of working with the platform, start by reading [GitHub documentation](https://docs.github.com/en).
 
 Once you are ready to start, work in the [KnowledgeBase repository](https://github.com/AdguardTeam/KnowledgeBase). All texts in our Knowledge base are written in `Markdown` markup language. Keep this in mind when editing or writing articles. Follow [this link](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) to learn more about Markdown syntax.
 

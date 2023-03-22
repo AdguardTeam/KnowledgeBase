@@ -3,8 +3,6 @@ title: How to collect a HAR file
 sidebar_position: 1
 ---
 
-## Creating a HAR File {#har}
-
 HAR files help our technical support teams troubleshoot complex issues. To create these files, we recommend using Chrome or Firefox. However, IE 11, Edge, and Safari also provide `.har` file generation and export capability.
 
 ## Chrome {#chrome}
@@ -15,7 +13,7 @@ To create a HAR file in Chrome:
 
 2. Open ***Developer Tools***:
 
-- From menu: ***Menu > More Tools > Developer Tools***.
+- From menu: ***Menu → More Tools → Developer Tools***.
 - Keyboard: ***Ctrl+Shift+C***, or ***Ctrl+Alt+I***, or ***⌥+⌘+I for Mac***.
 
 3. Click on the ***Network tab***.
@@ -42,7 +40,7 @@ To create a HAR file in Chrome:
 
 2. Open ***Developer Tools***:
 
-- From menu: ***Menu > More Tools > Developer Tools***.
+- From menu: ***Menu → More Tools → Developer Tools***.
 - Keyboard: ***Ctrl+Shift+C***, or ***Ctrl+Alt+I***, or ***⌥+⌘+I for Mac***.
 
 3. Click on the ***Network tab***.
@@ -70,7 +68,7 @@ To create a HAR file in Firefox:
 1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
 
 2. Open Developer Tools in ***Network*** mode:
-- From menu: ***Menu > Web Developer > Network***.
+- From menu: ***Menu→Web Developer→Network***.
 - Keyboard: ***Ctrl+Shift+C***, or **⌥+⌘+E (Mac)**.
 
 3. Note the ***play/pause*** button at the top left of the Network tab.
@@ -97,8 +95,8 @@ To create a HAR file in Internet Explorer 11:
 1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
 
 2. Open Developer Tools in ***Network*** mode:
-- From Tools cog wheel menu: ***Developer Tools*** > ***Network tab***.
-- Keyboard: ***F12 > Network*** tab
+- From Tools cog wheel menu: ***Developer Tools*** → ***Network tab***.
+- Keyboard: ***F12→Network*** tab.
 
 3. Note the start profiling session ***Play*** button and stop profiling ***Stop*** button at top left of Network tab.
 - Play button will be gray when recording and Stop button will be red. Put in ***Play*** mode.
@@ -119,13 +117,13 @@ To create a HAR file in Internet Explorer 11:
 To create a HAR file in Safari:
 
 1. Check the Safari menu bar at the top of the screen for a ***Develop*** menu. Check the checkbox at the bottom next to ***Show Develop menu in menu bar***.
-- If not visible, turn it on by going to ***Safari > Preferences > Advanced***.
+- If not visible, turn it on by going to ***Safari→Preferences→Advanced***.
 
 2. Go to the URL where the issue occurs. Do not reproduce the issue yet.
 
 3. Open ***Network*** tab in Web Inspector:
-- From menu: ***Develop > Show Web Inspector > Network***.
-- Keyboard: ***⌥+⌘+I > Network***
+- From menu: ***Develop→Show Web Inspector→Network***.
+- Keyboard: ***⌥+⌘+I→Network***
 
 4. Check ***Preserve Log*** checkbox on right side of the Network tabs.
 
@@ -155,7 +153,7 @@ To get HAR files follow these steps:
 
 6. Now turn `pref.har.capture` off again.
 
-7. Go Back, then tap on ***Export logs and system info*** → ***Save***.
+7. Go back and tap ***Export logs and system info*** → ***Save***.
 
 ## Windows {#windows}
 
@@ -163,7 +161,7 @@ To get HAR files follow these steps:
 
 2. Check the ***Enable HAR writing*** box.
 
-3. Reproduce the problem.
+3. Sorunu yeniden oluşturun.
 
 4. Go to ***General settings*** → Click on ***Export logs*** → ***Save***.
 

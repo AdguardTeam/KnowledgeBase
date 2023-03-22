@@ -26,7 +26,7 @@ So, ready to get your hands dirty? Here are actions that, when included in the i
 
 `stop` stops the protection, no extra data required;
 
-`pause` pauses the protection. The difference between this and `stop` is that a notification will appear that restarts the protection when you tap on it. No extra data required;
+`pause` pauses the protection. The difference between this and `stop` is that a notification will appear that restarts the protection when you tap it. No extra data required;
 
 `update` checks for available filter and app updates, no additional data is needed;
 

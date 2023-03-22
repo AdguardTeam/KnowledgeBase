@@ -1,83 +1,83 @@
 ---
-title: Legacy licenses FAQ
+title: FAQ ke starším licencím
 sidebar_position: 4
 ---
 
-We have written this article to avoid confusion and explain in detail how you can renew/upgrade an outdated (legacy) AdGuard license.
+Tento článek jsme napsali, abychom předešli zmatkům a podrobně vysvětlili, jak můžete obnovit/upgradovat zastaralou (starší) licenci AdGuardu.
 
-## About the outdated licenses
+## Informace o zastaralých licencích
 
-Initially licenses of the following types were available to activate AdGuard products:
+Zpočátku byly k aktivaci produktů AdGuard k dispozici následující typy licencí:
 
-**Standard** — for desktop applications AdGuard for Windows/AdGuard for Mac
+**Standardní** — pro desktopové aplikace AdGuard pro Windows/AdGuard pro Mac
 
-**Mobile** — for mobile applications AdGuard for Android/AdGuard for iOS
+**Mobilní** — pro mobilní aplikace AdGuard pro Android/AdGuard pro iOS
 
-**Premium** — a license that combines desktop + mobile application
+**Prémiová** — licence, která kombinuje desktopovou + mobilní aplikaci
 
-Standard and Mobile licenses could be purchased for 1 to 9 devices.
+Standardní a Mobilní licence bylo možné zakoupit pro 1 až 9 zařízení.
 
-Standard were valid only for desktops, and Mobile were only for smartphones and tablets.
+Standardní platily pouze pro PC a mobilní pouze pro chytré telefony a tablety.
 
-Premium licenses could have been used on 2-18 devices. Depending on the number of devices selected upon purchasing, they allowed you to simultaneously activate AdGuard on an equal number of computers and mobile devices: 2+2, 3+3, etc.
+Prémiové licence bylo možné používat na 2-18 zařízeních. V závislosti na počtu zařízení vybraných při nákupu umožňovali současně aktivovat AdGuard na stejném počtu PC a mobilních zařízení: 2+2, 3+3 atd.
 
-For example, you might have had a Premium license for 2+2 devices, that is, the license could be installed on 2 computers and 2 phones/tablets. Or, for example, for 9+9 (18 devices in total), then the license could be installed on 9 computers and 9 phones/tablets.
+Například jste mohli mít prémiovou licenci pro 2+2 zařízení. To znamená, že licence mohla být nainstalována na 2 počítačích a 2 telefonech/tabletech. Nebo například v pro 9+9 (celkem 18 zařízení) může být licence nainstalována na 9 počítačích a 9 telefonech/tabletech.
 
-For all types (Standard, Mobile, Premium) there were options for a Yearly and Lifetime license.
+U všech typů (Standardní, Mobilní, Prémiová) byly možnosti pro roční a doživotní licenci.
 
-In October 2019 AdGuard switched to the new licensing system: from then on, licenses can still be purchased for 1 year or Lifetime, but their types have become **Personal** (for up to 3 devices) or **Family** (for up to 9 devices).
+V říjnu 2019 přešel AdGuard na nový systém licencování: od té doby lze stále zakoupit licence na 1 rok nebo doživotní licence, ale jejich typy se změnily na **Osobní** (až pro 3 zařízení) nebo **Rodinnou** (až pro 9 zařízení).
 
-One more change: **license keys of the new type can now be used on any device, in any combination. For example, a Personal License can be installed on Android, Mac and iOS, just like on two Windows computers and an Apple tablet, etc.**
+Ještě jedna změna: **licenční klíče nového typu lze nyní používat na jakémkoli zařízení a v libovolné kombinaci. Osobní licenci lze například nainstalovat na Android, Mac a iOS, stejně jako na dva počítače s Windows, tablet Apple atd.**
 
-## What happened to the outdated licenses?
+## Co se stalo se zastaralými licencemi?
 
-Standard were automatically made universal, which means that they can be activated on any devices.
+Standardní byly automaticky změněny na univerzální, což znamená, že je lze aktivovat na jakémkoli zařízení.
 
-Mobile licenses remained unchanged and platform-limited (they can still only be used on phones or tablets).
+Mobilní zůstaly nezměněny a omezeny na platformu (lze je stále používat pouze na telefonech nebo tabletech).
 
-Premium licenses also remained unchanged and platform-limited. And although **Premium licenses are now displayed in your personal account by the total number of devices**, they can still be activated on desktop + mobile set of devices.
+Prémiové licence zůstaly také beze změny a s omezením na platformu. A i když se nyní na vašem osobním účtu zobrazují **Prémiové licencí podle celkového počtu zařízení**, stále je lze aktivovat na sadě stolních a mobilních zařízení.
 
-For example, this is how the 1+1 key looks like:
+Takto například vypadá klíč 1+1:
 
 ![1+1 key](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/1.outdatedlicenses_en.png)
 
-*But despite the total number of devices (2) it can be activated on 1 desktop and 1 mobile device.*
-> All the outdated licenses have a "legacy" badge in the AdGuard account. And they are automatically converted to a new type when you either renew or upgrade them. But there are some nuances. Let's see which licenses can be converted to a new type and how to do it.
+*Ale navzdory celkovému počtu zařízení (2) ji lze aktivovat na 1 stolním počítači a 1 mobilním zařízení.*
+> Všechny zastaralé licence mají v účtu AdGuard odznak "starší". Při obnově nebo upgrade se automaticky převedou na nový typ. Existují však určité nuance. Podívejme se, které licence lze převést na nový typ a jak to provést.
 
-## I have an outdated (legacy) key. What renewal/upgrade options are available for me?
+## Mám zastaralý (starší) klíč. Jaké možnosti obnovení/upgrade mám k dispozici?
 
-You can check this on the [renewal page](https://adguard.com/renew.html) or in your [AdGuard account](https://my.adguard.com/main.html):
+Můžete to zkontrolovat na [stránce obnovení](https://adguard.com/renew.html) nebo ve svém [AdGuard účtu](https://my.adguard.com/main.html):
 
 ![Upgrade](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_en.png)
-> Go to "My licenses" tab and check what actions are available to you for each specific key. Below we will explain with specific examples.
+> Přejděte na kartu "Moje licence" a zkontrolujte, jaké akce máte k dispozici pro každý konkrétní klíč. Níže to vysvětlíme na konkrétních příkladech.
 
-### Licenses for 1/2/3 devices
+### Licence pro 1/2/3 zařízení
 
-**Yearly** licenses for 1, 2, 3 devices can be converted to either Personal or Family:
+**Roční licence** pro 1, 2 nebo 3 zařízení lze převést na Osobní nebo Rodinné:
 
 ![Upgrade or renew](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/3.yearly_en.png)
-> Choose based on how many devices you need to protect.
+> Vyberte si podle toho, kolik zařízení potřebujete chránit.
 
-Instead of renewal you can switch to Lifetime:
+Místo obnovení můžete přejít na doživotní:
 
 ![Lifetime](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/4.lifetime_en.png)
 
-**Lifetime** licenses can only be converted to Family (9 devices) due to technical limitations:
+**Doživotní licence** lze z důvodu technických omezení převést pouze na Rodinné (9 zařízení):
 
 ![Lifetime upgrade](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/5.lifetimeupgrade_en.png)
 
-### Licenses for 4+ devices (up to 9)
+### Licence pro více než 4 zařízení (až 9)
 
-**Yearly** keys of this configuration can only be converted into a Family license:
+**Roční** klíče této konfigurace lze převést pouze na Rodinnou licenci:
 
 ![Yearly license for 4 devices](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/6.yearly4+devices_en.png)
 
-**Lifetime** licenses for 4 or more devices cannot be upgraded due to technical limitation:
+**Doživotní** licence pro 4 a více zařízení nelze upgradovat z důvodu technického omezení:
 
 ![Lifetime license for 4 devices](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/7.lifetime4+devices_en.png)
 
-### Licenses for 9+ devices
+### Licence pro 9 a více zařízení
 
-Premium keys (5+5 and more) and custom keys for 10+ devices that you purchased individually with the help of our managers.
+Prémiové klíče (5+5 a více) a vlastní klíče pro 10+ zařízení, které jste si zakoupili individuálně s pomocí našich manažerů.
 
-These are quite unique cases, so if you want to upgrade your license to Lifetime, please contact us at partners@adguard.com. We will make you a special offer depending on the specific configuration of your license.
+Jedná se o zcela výjimečné případy, takže pokud chcete licenci upgradovat na doživotní, kontaktujte nás na partners@adguard.com. V závislosti na konkrétní konfiguraci vaší licence vám připravíme speciální nabídku.

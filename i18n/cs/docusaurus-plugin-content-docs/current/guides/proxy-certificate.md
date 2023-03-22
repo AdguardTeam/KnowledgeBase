@@ -1,132 +1,132 @@
 ---
-title: How to install a proxy certificate
+title: Jak nainstalovat certifikát proxy
 sidebar_position: 2
 ---
 
-Desktop AdGuard apps (AdGuard for Windows and AdGuard for Mac) can be used as a proxy. This means that you can route other devices' traffic through AdGuard (entirely, or traffic of specific apps/browsers).
+Desktopové aplikace AdGuardu (AdGuard pro Windows a AdGuard pro Mac) lze použít jako proxy. To znamená, že můžete přesměrovat provoz jiných zařízení přes AdGuard (zcela, nebo provoz konkrétních aplikací/prohlížečů).
 
-> Note that these devices must be in the same network as the PC or Mac on which AdGuard is installed.
+> Všimněte si, že tato zařízení musí být ve stejné síti jako PC nebo Mac, na kterém je AdGuard nainstalován.
 
-HTTP traffic will be filtered in any case, but for AdGuard to be able to filter HTTPS traffic you need to manually install AdGuard certificate on the connected device.
+Provoz HTTP bude filtrován v každém případě, ale aby AdGuard mohl filtrovat provoz HTTPS, je třeba do připojeného zařízení ručně nainstalovat AdGuard certifikát.
 
-## How to download and install the certificate
+## Jak stáhnout a nainstalovat certifikát
 
-Depending on the operation system of your device (Windows/Mac/Android/iOS), follow one of these instructions:
+V závislosti na operačním systému vašeho zařízení (Windows/Mac/Android/iOS) postupujte podle jednoho z těchto pokynů:
 
 ### Windows {#windows}
 
-1. Note the IP address of your desktop computer with installed AdGuard.
+1. Poznamenejte si IP adresu vašeho PC s nainstalovaným AdGuardem.
 
-2. Make sure AdGuard’s protection is enabled. Then check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings.
+2. Zkontrolujte, zda je ochrana AdGuard zapnuta. Poté zaškrtněte políčko **Použít AdGuard jako HTTP proxy** na kartě **Síť** v jeho nastavení.
 
-3. On the same device with AdGuard follow this link using any browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+3. Na stejném zařízení s AdGuardem použijte tento odkaz pomocí libovolného prohlížeče: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
-4. Click the **Download** button.
+4. Klepněte na tlačítko **Stáhnout**.
 
-5. Transfer the downloaded **cert.cer** file to the device which traffic you want to route through AdGuard.
+5. Přeneste stažený soubor **cert.cer** do zařízení, jehož provoz chcete přes AdGuard směrovat.
 
-6. On that device, press the **Win** button, type `Manage computer certificates` and press **Enter**.
+6. Na tomto zařízení stiskněte tlačítko **Win**, napište `Spravovat certifikáty počítače` a stiskněte **Enter**.
 
-7. On the *Certificates - Local Computer* page, find the *Trusted Root Certification* → *Certificates* folder.
+7. Na stránce *Certifikáty – místní počítač* najděte složku *Důvěryhodná kořenová certifikace* → *Certifikáty*.
 
-8. Right-click the *Certificates* folder and click **All Tasks** → **Import**.
+8. Klepněte pravým tlačítkem myši na složku *Certifikáty* a klepněte na **Všechny úlohy** → **Importovat**.
 
-9. On the *Certificate Import Wizard* page, click **Next**.
+9. Na stránce *Průvodce importem certifikátu* klikněte na položku **Další**.
 
-10. Click **Browse** to import the certificate.
+10. Kliknutím na **Procházet** certifikát importujte.
 
-11. Navigate to the **cert.cer** certificate file, select it, then click **Open**.
+11. Přejděte na soubor certifikátu **cert.cer**, vyberte jej a klikněte na **Otevřít**.
 
-12. Click **Next**.
+12. Klikněte na **Další**.
 
-13. Select the **Place all certificates in the following store** checkbox.
+13. Zaškrtněte políčko **Umístit všechny certifikáty do následujícího úložiště**.
 
-14. Ensure that the *Certificate store* field displays *Trusted Root Certification Authorities* and click **Next**.
+14. Ujistěte se, že se v poli *Úložiště certifikátů* zobrazuje položka *Důvěryhodné kořenové certifikační autority* a klikněte na **Další**.
 
-15. Click **Finish**.
+15. Klikněte na **Dokončit**.
 
-16. Press the **Win** key, then open **Settings**.
+16. Stiskněte klávesu **Win**, poté otevřete **Nastavení**.
 
-17. Select **Network & Internet** → **Proxy**.
+17. Vyberte **Síť a Internet** → **Proxy**.
 
-18. Toggle *Automatically detect settings* off.
+18. Vypněte *Automaticky zjišťovat nastavení*.
 
-19. Click **Set up** in the *Use a proxy server* tab.
+19. Klikněte na **Nastavit** na kartě *Použít proxy server*.
 
-20. Turn the toggle on. For **Proxy IP address**, enter the noted IP address of your desktop computer (step 1). For **Port**, enter the port chosen in the network settings of the desktop AdGuard app.
+20. Zapněte přepínač. Pro **IP adresu proxy** zadejte uvedenou IP adresu vašeho stolního počítače (krok 1). Pro **Port** zadejte port zvolený v síťových nastaveních desktopové aplikace AdGuard.
 
-21. Click **Save**.
+21. Klikněte na **Uložit**.
 
 ### Mac {#mac}
 
-1. Note the IP address of your desktop computer with installed AdGuard.
+1. Poznamenejte si IP adresu vašeho PC s nainstalovaným AdGuardem.
 
-2. Make sure AdGuard’s protection is enabled. Then go to **Settings** → **Network** → **HTTP proxy** and check the box **Use AdGuard as an HTTP proxy**.
+2. Zkontrolujte, zda je ochrana AdGuard zapnuta. Poté přejděte do **Nastavení** → **Síť** → **HTTP proxy** a zaškrtněte políčko **Použít AdGuard jako HTTP proxy**.
 
-3. On the same computer with AdGuard follow this link using any browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+3. Na stejném počítači s AdGuardem použijte tento odkaz pomocí libovolného prohlížeče: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
-4. Click the **Download** button.
+4. Klepněte na tlačítko **Stáhnout**.
 
-5. Transfer the downloaded **cert.cer** file to the device which traffic you want to route through AdGuard.
+5. Přeneste stažený soubor **cert.cer** do zařízení, jehož provoz chcete přes AdGuard směrovat.
 
-6. Double-click the downloaded certificate file.
+6. Dvakrát klikněte na stažený soubor certifikátu.
 
-7. Enter the administrator password and then click **Modify Keychain**.
+7. Zadejte heslo administrátora a klikněte na **Modify Keychain**.
 
-8. Go to **Spotlight** (the search icon in the top right corner), type in "Keychain Access", and then select **Keychain Access** from the search results.
+8. Přejděte na **Spotlight** (ikona vyhledávání v pravém horním rohu), zadejte "Keychain Access" a poté z výsledků vyhledávání vyberte **Keychain Access**.
 
-9. Under *System*, highlight the certificate that you added.
+9. V části *Systém* zvýrazněte certifikát, který jste přidali.
 
-10. Right-click on it and choose **Get Info** from the context menu.
+10. Klikněte na něj pravým tlačítkem myši a z kontextové nabídky vyberte možnost **Získat informace**.
 
-11. Expand *Trust* to display the trust policies for the certificate.
+11. Rozbalte *Trust* a zobrazte zásady důvěryhodnosti pro certifikát.
 
-12. Under *Secure Sockets Layers (SSL)*, select **Always Trust**.
+12. V části *Secure Sockets Layers (SSL)* vyberte **Vždy důvěřovat**.
 
-13. Open **System Preferences** → **Network** and choose the upper active connection.
+13. Otevřete **Předvolby systému** → **Síť** a vyberte nahoře aktivní připojení.
 
-14. Click **Details...** and navigate to the **Proxies** tab.
+14. Klikněte na **Podrobnosti...** a přejděte na kartu **Proxy**.
 
-15. Tick two checkboxes: *Web proxy (HTTP)* and *Secure web proxy (HTTPS)*. In the **Server** field, enter the noted IP address of your computer (step 1). In the **Port** field, enter the port chosen in the network settings of the AdGuard desktop app.
+15. Zaškrtněte dvě políčka: *Web proxy (HTTP)* a *Secure web proxy (HTTPS)*. Do pole **Server** zadejte zaznamenanou IP adresu počítače (krok 1). Do pole **Port** zadejte port zvolený v síťových nastaveních desktopové aplikace AdGuard.
 
 ### Android {#android}
 
-1. Note the IP address of your desktop computer with installed AdGuard.
+1. Poznamenejte si IP adresu vašeho PC s nainstalovaným AdGuardem.
 
-2. Make sure AdGuard’s protection is enabled. Then check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings.
+2. Zkontrolujte, zda je ochrana AdGuard zapnuta. Poté zaškrtněte políčko **Použít AdGuard jako HTTP proxy** na kartě **Síť** v jeho nastavení.
 
-3. On the same computer with AdGuard follow this link using any browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+3. Na stejném počítači s AdGuardem použijte tento odkaz pomocí libovolného prohlížeče: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
-4. Click the **Download** button.
+4. Klepněte na tlačítko **Stáhnout**.
 
-5. Transfer the downloaded **cert.cer** file to the device which traffic you want to route through AdGuard.
+5. Přeneste stažený soubor **cert.cer** do zařízení, jehož provoz chcete přes AdGuard směrovat.
 
-6. Locate and tap the previously downloaded **cert.cer** certificate to open the file.
+6. Vyhledejte a klepněte na dříve stažený certifikát **cert.cer** a otevřete soubor.
 
-7. On some phones, you might be asked to enter your device password. Do that, then press **OK**. The certificate is now installed.
+7. V některých telefonech můžete být vyzváni k zadání hesla zařízení. To proveďte a poté stiskněte tlačítko **OK**. Certifikát byl nainstalován.
 
-8. Open advanced settings of the active Wi-Fi network.
+8. Otevřete pokročilá nastavení aktivní Wi-Fi sítě.
 
-9. Switch the **Proxy type** to **Manual**. For **Proxy hostname**, enter the noted IP address of your desktop computer (step 1). For **Proxy port**, enter the port chosen in the network settings of the AdGuard desktop app.
+9. Přepněte **Typ proxy** na **Ruční**. Pro **název hostitele proxy** zadejte uvedenou IP adresu vašeho stolního počítače (krok 1). Do pole **Port proxy** zadejte port zvolený v síťových nastaveních desktopové aplikace AdGuard.
 
 ### iOS {#ios}
 
-1. Note the IP address of your desktop computer with installed AdGuard.
+1. Poznamenejte si IP adresu vašeho PC s nainstalovaným AdGuardem.
 
-2. Make sure AdGuard’s protection is enabled. Then check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings.
+2. Zkontrolujte, zda je ochrana AdGuard zapnuta. Poté zaškrtněte políčko **Použít AdGuard jako HTTP proxy** na kartě **Síť** v jeho nastavení.
 
-3. On the same computer with AdGuard follow this link using any browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+3. Na stejném počítači s AdGuardem použijte tento odkaz pomocí libovolného prohlížeče: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
-4. Click the **Download** button.
+4. Klepněte na tlačítko **Stáhnout**.
 
-5. Transfer the downloaded **cert.cer** file to the device which traffic you want to route through AdGuard.
+5. Přeneste stažený soubor **cert.cer** do zařízení, jehož provoz chcete přes AdGuard směrovat.
 
-6. Open **Settings** → **Security** → **Encryption & Credentials** → **Install a certificate**. Android devices do not trust certificates by default so there will be a warning when you choose **CA certificate**. Tap **Install anyway**.
+6. Otevřete **Nastavení** → **Zabezpečení** → **Šifrování a pověření** → **Instalace certifikátu**. Zařízení Android ve výchozím nastavení nedůvěřují certifikátům, takže když zvolíte **Certifikát CA**, zobrazí se varování. Klepněte na **Přesto instalovat**.
 
-7. Open **Settings** → **Profile Donwloaded** and tap **Install** in the top right corner. Enter your password and confirm the installation. Tap **Done**.
+7. Otevřete **Nastavení** → **Stažený profil** a klepněte na **Nainstalovat** v pravém horním rohu. Zadejte své heslo a potvrďte instalaci. Klepněte na **Hotovo**.
 
-8. Go to **Settings** → **General** → **About** → **Certificate Trust Settings**. Enable the switch beside *Adguard Personal CA*. The certificate is now installed.
+8. Přejděte na **Nastavení** → **Obecné** → **Informace** → **Důvěryhodnost certifikátu**. Zapněte přepínač vedle *Adguard Personal CA*. Certifikát byl nainstalován.
 
-9. On that device, open advanced settings of the active Wi-Fi network.
+9. Na tomto zařízení otevřete pokročilá nastavení aktivní Wi-Fi sítě.
 
-10. Switch the **Proxy type** to **Manual**. For **Proxy hostname**, enter the noted IP address of your computer (step 1). For **Proxy port**, enter the port chosen in the network settings of the AdGuard desktop app.
+10. Přepněte **Typ proxy** na **Ruční**. Pro **název hostitele proxy** zadejte uvedenou IP adresu vašeho počítače (krok 1). Do pole **Port proxy** zadejte port zvolený v síťových nastaveních desktopové aplikace AdGuard.

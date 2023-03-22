@@ -1,94 +1,94 @@
 ---
-title: How to report bugs
+title: Cómo informar de un error
 sidebar_position: 4
 ---
 
-If you notice a bug while using AdGuard products, please help us address it. Here’s how to report bugs most effectively.
+Si observas un error al usar los productos de AdGuard, ayúdanos a solucionarlo. A continuación, te mostramos cómo informar errores de manera más efectiva.
 
-## Before you start
+## Antes de que empieces
 
-### When to report bugs
+### Cuándo reportar errores
 
-Check that you have the most up-to-date version, and if not, upgrade: the bug might have already been resolved in the new version.
+Verifica si tienes la versión más actualizada y, si no, actualiza: es posible que el error ya se haya resuelto en la nueva versión.
 
-Check if the bug hasn’t been reported before. We advise paying attention to both open and closed issues.
+Verifica si el error no se ha informado antes. Aconsejamos prestar atención tanto a los temas abiertos como a los cerrados.
 
-![Closed issues](https://cdn.adtidy.org/content/kb/ad_blocker/general/closed_issues.png)
+![Problemas cerrados](https://cdn.adtidy.org/content/kb/ad_blocker/general/closed_issues.png)
 
-### How to describe a problem
+### Cómo describir un problema
 
-Try to provide as many details as possible — that'll make it easier for us to reproduce the bug and figure out how to fix it. Here’s what we’re expecting to see in a bug report:
+Intenta proporcionar tantos detalles como sea posible; eso nos facilitará la reproducción del error y descubriremos cómo solucionarlo. Esto es lo que esperamos ver en un informe de errores:
 
-* Your app version
-* Your OS version
-* When you noticed the problem
-* What you were doing or what happened to the app before you noticed the problem. Steps to reproduce it
-* Whether it recurred and with what frequency
-* Whether you have a VPN or an antivirus software
+* La versión de tu aplicación
+* La versión de tu sistema operativo
+* Cuando notaste el problema
+* Lo que estaba haciendo o lo que le sucedió a la aplicación antes de notar el problema. Pasos para reproducirlo
+* Si se repitió y con qué frecuencia
+* Si tienes una VPN o un software antivirus
 
-### How to collect logs
+### Cómo recopilar registros
 
-Read about collecting logs in dedicated articles for each platform.
+Lee sobre la recopilación de registros en los artículos dedicados a cada plataforma.
 
-## How to vote for bug reports or feature requests
+## Cómo votar por informes de errores o solicitudes de funciones
 
-If you want to support the implementation of a new feature or bugfix, you can vote for it on GitHub. To vote, just react with some emoji.
+Si deseas apoyar la implementación de una nueva función o corrección de errores, puedes votar por ello en GitHub. Para votar, basta con reaccionar con algún emoji.
 
-![GitHub issue with reactions](https://cdn.adtidy.org/content/kb/ad_blocker/general/github_reaction.png)
+![Propuesta de GitHub con reacciones](https://cdn.adtidy.org/content/kb/ad_blocker/general/github_reaction.png)
 
-![GitHub issue without reactions](https://cdn.adtidy.org/content/kb/ad_blocker/general/github_reaction2.png)
+![Propuesta de GitHub sin reacciones](https://cdn.adtidy.org/content/kb/ad_blocker/general/github_reaction2.png)
 
-You can find reactions in the upper right corner or at the bottom of an issue.
+Puedes encontrar reacciones en la esquina superior derecha o en la parte inferior de un problema.
 
 
-## Instructions for all platforms
+## Instrucciones para todas las plataformas
 
 ### AdGuard para Windows
 
-1. Check out the [Windows repo](https://github.com/AdguardTeam/AdGuardforWindows/issues) to make sure the issue hasn’t been reported yet.
+1. Consulta el repositorio [de Windows](https://github.com/AdguardTeam/AdGuardforWindows/issues) para asegurarse de que el problema aún no se haya informado.
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForWindows/issues/new/choose) and select *Bug report*.
+2. Abre una página [para crear nuevas propuestas](https://github.com/AdguardTeam/AdguardForWindows/issues/new/choose) y selecciona *Informe de errores*.
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. Rellena el formulario. Si es posible, adjunta capturas de pantalla o una grabación de la pantalla.
 
-![Reporting a bug via GitHub *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows_gh.png)
+![Informar un error a través de GitHub *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows_gh.png)
 
 ### AdGuard para Mac
 
-1. Check out the [Mac repo](https://github.com/AdguardTeam/AdGuardforMac/issues) to make sure the issue hasn’t been reported yet.
+1. Consulta el repositorio [Mac repo](https://github.com/AdguardTeam/AdGuardforMac/issues) para asegurarte de que el problema aún no se haya informado.
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForMac/issues/new).
+2. Abrir una página [para crear nuevas propuestas](https://github.com/AdguardTeam/AdguardForMac/issues/new).
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. Rellena el formulario. Si es posible, adjunta capturas de pantalla o una grabación de la pantalla.
 
 ### AdGuard para Android
 
-1. Check out the [Android repo](https://github.com/AdguardTeam/AdGuardforAndroid/issues) to make sure the issue hasn’t been reported yet.
+1. Consulte el repositorio de Android [](https://github.com/AdguardTeam/AdGuardforAndroid/issues) para asegurarte de que el problema aún no se haya informado.
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForAndroid/issues/new/choose) and select *Bug report*.
+2. Abre una página [para crear nuevas propuestas](https://github.com/AdguardTeam/AdguardForAndroid/issues/new/choose) y selecciona *Informe de errores*.
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. Rellena el formulario. Si es posible, adjunta capturas de pantalla o una grabación de la pantalla.
 
 ### AdGuard para iOS
 
-1. Check out the [iOS repo](https://github.com/AdguardTeam/AdGuardforiOS/issues) to make sure the issue hasn’t been reported yet.
+1. Consulta el repositorio [iOS repo](https://github.com/AdguardTeam/AdGuardforiOS/issues) para asegurarte de que el problema aún no se haya informado.
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForiOS/issues/new/choose), select *Bug report*.
+2. Abre una página [para crear nuevas propuestas](https://github.com/AdguardTeam/AdguardForiOS/issues/new/choose), selecciona *Informe de errores*.
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. Rellena el formulario. Si es posible, adjunta capturas de pantalla o una grabación de la pantalla.
 
-### AdGuard Browser Extension
+### Extensión de navegador AdGuard
 
-1. Check out the [Browser Extension repo](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/) to make sure the issue hasn’t been reported yet.
+1. Consulta el [repositorio de la extensión del navegador](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/) para asegurarte de que el problema aún no se haya informado.
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose) and select *Bug report*.
+2. Abre una página [para crear nuevas propuestas](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose) y selecciona *Informe de errores*.
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. Rellena el formulario. Si es posible, adjunta capturas de pantalla o una grabación de la pantalla.
 
 ### AdGuard para Safari
 
-1. Check out the [Safari repo](https://github.com/AdguardTeam/AdGuardForSafari/issues) to make sure the issue hasn’t been reported yet.
+1. Consulta el repositorio [Safari](https://github.com/AdguardTeam/AdGuardForSafari/issues) para asegurarte de que el problema aún no se haya informado.
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdGuardForSafari/issues/new/choose) and select *Bug report*.
+2. Abre una página [para crear nuevos problemas](https://github.com/AdguardTeam/AdGuardForSafari/issues/new/choose) y selecciona *Informe de errores*.
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. Rellena el formulario. Si es posible, adjunta capturas de pantalla o una grabación de la pantalla.

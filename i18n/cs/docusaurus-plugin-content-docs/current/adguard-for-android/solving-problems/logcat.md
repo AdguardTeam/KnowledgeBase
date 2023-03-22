@@ -25,6 +25,7 @@ Chcete-li získat hlášení o chybě přímo ze zařízení, postupujte takto:
 ![Hlášení o chybě *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
 
 5. Odešlete tento protokol našemu týmu podpory.
+
 > Poznámka: Náš tým podpory zpracuje vaši žádost mnohem rychleji, pokud ve zprávě uvedete číslo HelpDesk nebo číslo problému GitHub.
 
 ## Další pokyny (pro staré verze systému Android)
@@ -33,7 +34,7 @@ Na starých zařízeních se systémem Android taková možnost automatického z
 
 **Část #1: příprava zařízení**
 
-1. Přepněte zařízení do režimu pro vývojáře. Postupujte takto: přejděte do **Nastavení** > **O zařízení** > klepněte na **Číslo sestavení** 7krát.
+1. Přepněte zařízení do režimu pro vývojáře. Postupujte takto: přejděte do **Nastavení** → **O zařízení** → klepněte na **Číslo sestavení** 7krát.
 
 2. Přejděte na **Možnosti pro vývojáře**.
 
@@ -59,6 +60,7 @@ Přímý odkaz ke stažení:
 <https://www.androidfilehost.com/?fid=24052804347803384>
 
 3. Spusťte tento příkaz v konzole (otevře se po instalaci):
+
 > adb logcat -v threadtime -d > C:\logcat.txt
 
 Tento protokol nám zašlete prostřednictvím podpory nebo jiným způsobem.
@@ -74,4 +76,5 @@ Tento protokol nám zašlete prostřednictvím podpory nebo jiným způsobem.
 4. Otevřete CatLog a stiskněte **Ukončit záznam** v menu.
 
 5. Odešlete tento protokol našemu týmu podpory.
+
 > Poznámka: Náš tým podpory zpracuje vaši žádost mnohem rychleji, pokud ve zprávě uvedete číslo HelpDesk nebo číslo problému GitHub.

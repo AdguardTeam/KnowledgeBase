@@ -12,12 +12,12 @@ Aby AdGuard úspěšně filtroval přenosy HTTPS ve Firefoxu, musí prohlížeč
 Chcete-li, aby Firefox důvěřoval certifikátu AdGuard, proveďte následující kroky:
 
 1. Spusťte prohlížeč.
-2. Přejděte do **Nastavení** > **O Firefoxu**.
+2. Přejděte do **Nastavení** → **O Firefoxu**.
 
 ![O prohlížeči Firefox *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
 
 3. Klepněte pětkrát na logo Firefox.
-4. Přejděte do **Nastavení** > **Tajná nastavení**.
+4. Přejděte do **Nastavení** → **Tajná nastavení**.
 
 ![Tajná nastavení *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
 
@@ -33,9 +33,9 @@ Chcete-li, aby Firefox důvěřoval certifikátu AdGuard, proveďte následujíc
     - V telefonu otevřete **Nastavení**;
     - Přejděte do sekce **Systém** (poslední položka v nabídce). V této sekci vyhledejte podpoložku **Informace o telefonu**;
     - Sedmkrát klepněte na řádek **Číslo sestavení**. Poté se zobrazí oznámení **Nyní jste vývojářem** (v případě potřeby zadejte kód pro odemčení zařízení);
-    - Otevřete **Nastavení systému** > **Možnosti pro vývojáře** > přejeďte dolů a zapněte **USB ladění** > po pečlivém přečtení varování potvrďte, že je ladění povoleno v okně **Povolit ladění USB**.
+    - Otevřete **Nastavení systému** → **Možnosti pro vývojáře** → přejeďte dolů a zapněte **USB ladění** → po pečlivém přečtení varování potvrďte, že je ladění povoleno v okně **Povolit ladění USB**.
 3. Nainstalujte prohlížeč [Firefox](https://www.mozilla.org/en-US/firefox/releases/) (hlavní verze);
-4. Otevřete **nastavení AdGuardu** > **Síť** > **HTTPS filtrování** > Instalovat certifikát do prohlížeče **Firefox** > **INSTALOVAT PRO STARŠÍ VERZE**;
+4. Otevřete **nastavení AdGuardu** → **Síť** → **HTTPS filtrování** → Instalovat certifikát do prohlížeče **Firefox** → **INSTALOVAT PRO STARŠÍ VERZE**;
 5. Otevřete složku `data/data/org.mozilla.firefox/files/mozilla` pomocí příkazu `adb shell su` a `cd data/data/...`, poté přejděte do složky s názvem `xxxxxxx.default` a zapamatujte si její název;
 6. V uvedené složce nás zajímají dva soubory:
     - `cert9.db`
