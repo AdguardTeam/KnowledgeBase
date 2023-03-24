@@ -22,14 +22,14 @@ We recommend setting up two-factor authentication for your AdGuard account. It w
 
 3) Follow the on-screen instructions to install an authenticator app and scan the QR code:
 
-![The verification code](https://cdn.adtidy.org/public/Adguard/kb/ad_blocker/general/2fa_enable.png)
+![The verification code](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_enable.png)
 
 ***Important***
 * Save the second-factor backup code somewhere, it will be necessary to recover your account in case your mobile phone gets lost or stolen;
 
 If everything is done right, you will see this when you log into your account the next time:
 
-![The result *mobile](https://cdn.adtidy.org/public/Adguard/kb/ad_blocker/general/2fa_success.png)
+![The result *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_success.png)
 
 Use your mobile authenticator app to read the code and enter it. You should be logged in now!
 
