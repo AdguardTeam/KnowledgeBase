@@ -33,7 +33,7 @@ If the verification takes too long, AdGuard will establish a connection and cont
 
 ### Use Encrypted ClientHello
 
-Every encrypted Internet connection has an unencrypted part. This is the very first packet which contains the name of the server you are connecting to. Encrypted Client Hello technology is supposed to solve this issue and encrypt that last bit of unencrypted information. To benefit from it, enable the **Use Encrypted ClientHello** option. It uses a local DNS proxy to look for ECH configuration for the domain. If it is found, ClientHello packet will be encrypted.
+Every encrypted Internet connection has an unencrypted part. This is the very first packet which contains the name of the server you are connecting to. Encrypted Client Hello technology is supposed to solve this issue and encrypt that last bit of unencrypted information. To benefit from it, enable the *Use Encrypted ClientHello* option. It uses a local DNS proxy to look for ECH configuration for the domain. If it is found, ClientHello packet will be encrypted.
 
 ### Check websites' certificate transparency
 
