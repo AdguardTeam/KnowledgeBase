@@ -21,7 +21,7 @@ If enabled, AdGuard will block TCP Fast Open in the Edge browser. To apply setti
 
 ### Show AdGuard VPN in Settings
 
-If you have AdGuard VPN for Windows on your computer, activate this feature to open AdGuard VPN or visit its website from the AdGuard app.
+Enabling this option allows you to display the AdGuard VPN tab in Settings for easy opening of the corresponding app and the product's website.
 
 ### Enable asynchronous OCSP SSL/TLS certificate revocation checks
 
