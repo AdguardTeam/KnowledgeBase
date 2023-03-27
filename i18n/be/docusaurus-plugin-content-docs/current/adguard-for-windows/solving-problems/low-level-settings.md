@@ -21,7 +21,7 @@ If enabled, AdGuard will block TCP Fast Open in the Edge browser. To apply setti
 
 ### Show AdGuard VPN in Settings
 
-Enabling this option allows you to display the AdGuard VPN tab in Settings for easy opening of the corresponding app and the product's website.
+Enabling this option allows you to display the AdGuard VPN tab in Settings for easy opening of the app and the product's website.
 
 ### Enable asynchronous OCSP SSL/TLS certificate revocation checks
 
@@ -29,7 +29,7 @@ Once enabled, this option runs asynchronous OCSP checks to check whether the web
 
 If the OCSP check completes within the minimum timeout, AdGuard will immediately apply the result: block the connection if the certificate is revoked or establish a connection if the certificate is valid. 
 
-If the verification takes too long, AdGuard will establish a connection and continue checking in the background. If the certificate is revoked, the current and future connections to the domain will be blocked.
+If the verification takes too long, AdGuard will establish a connection and continue checking in the background. If the certificate is revoked, current and future connections to the domain will be blocked.
 
 ### Use Encrypted ClientHello
 
