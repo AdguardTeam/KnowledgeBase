@@ -23,7 +23,7 @@ If enabled, AdGuard will block TCP Fast Open in the Edge browser. To apply setti
 
 If you have AdGuard VPN for Windows on your computer, activate this feature to open AdGuard VPN or visit its website from the AdGuard app.
 
-### Check SSL/TLS certificates of web services
+### Enable asynchronous OCSP SSL/TLS certificate revocation checks
 
 Once enabled, this option runs asynchronous OCSP checks to check whether the website’s SSL/TLS certificate is revoked. 
 
@@ -147,21 +147,29 @@ Once enabled, all upstreams are queried in parallel and the first successful res
 
 If address resolving failed on each of the forwarded upstreams, as well as on the fallback domains, then the response to the DNS request will be `SERVFAIL`.
 
-### Action applied to blocked DNS requests
+### Blocking mode for adblock-style rules
 
-Here you can select the way AdGuard will respond to DNS queries that should be blocked:
+Here you can select the way AdGuard will respond to domains blocked by DNS rules based on [adblock-style syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax).
 
-* Reply with "Refused" error
-* Reply with "NxDomain" error
+* Reply with “Refused” error
+* Reply with “NxDomain” error
+* Reply with a custom IP address
+
+### Blocking mode for hosts rules
+
+Here you can select the way AdGuard will respond to domains blocked by DNS rules based on [hosts rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
+
+* Reply with “Refused” error
+* Reply with “NxDomain” error
 * Reply with a custom IP address
 
 ### Custom IPv4 address
 
-If "Custom IP address" is selected as an action applied to blocked DNS requests, here you should specify the IPv4 address that will be returned in response to blocked "A" requests. If none are specified, AdGuard will reply with the default "Refused" error.
+If Custom IP address is selected in Blocking mode for hosts rules or Blocking mode for adblock-style rules, this IP address will be returned in response to blocked A requests. If none are specified, AdGuard will reply with the default Refused error.
 
 ### Custom IPv6 address
 
-If "Custom IP address" is selected as an action applied to blocked DNS requests, here you should specify the IPv6 address that will be returned in response to blocked "AAAA" requests. If none are specified, AdGuard will reply with the default "Refused" error.
+If Custom IP address is selected in Blocking mode for hosts rules or Blocking mode for adblock-style rules, this IP address will be returned in response to blocked AAAA requests. If none are specified, AdGuard will reply with the default "Refused" error.
 
 ### Fallback servers
 
