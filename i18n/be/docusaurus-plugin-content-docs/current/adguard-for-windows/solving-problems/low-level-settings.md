@@ -63,7 +63,7 @@ Enable this option to make the main AdGuard window open after the system is load
 
 ### Enable filtering at system start-up
 
-Starting from v7.12, by default, AdGuard for Windows does not filter traffic after auto-start on OS startup if the option *Launch AdGuard at system start-up* is disabled. In other words, the AdGuard service is started in “idle” mode. Enable this option to make AdGuard filter traffic even if the app is not launched. 
+Starting from v7.12, by default, AdGuard's service does not filter traffic after OS startup if the option Launch AdGuard at system start-up is disabled. In other words, the AdGuard's service is started in “idle” mode. Enable this option to make AdGuard filter traffic even if the app is not launched.
 
 *Note that before v7.12 the AdGuard service started in filtering mode by default (even if the *Launch AdGuard at system start-up” was disabled). If you were satisfied with the old behavior, enable this option.*
 
