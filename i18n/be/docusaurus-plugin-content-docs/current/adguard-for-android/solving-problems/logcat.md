@@ -16,7 +16,9 @@ To get a bug report directly from your device, do the following:
 
 ![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
 
-3. Select the type of bug report you want and tap **Report**. >After a moment you get a notification that the bug report is ready (see figure 2).
+3. Select the type of bug report you want and tap **Report**. 
+
+> After a moment you get a notification that the bug report is ready (see figure 2).
 
 ![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
 
@@ -53,19 +55,21 @@ Follow this instruction:
 
 1. Connect your device to PC with USB cable.
 
-2. Download and install Minimal ADB:
+2. Download [Android SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools#downloads). Choose the appropriate download link for your OS from the Downloads section. Once you click the link, a ZIP file will be downloaded. You can extract the ADB (Android Debug Bridge) files from the ZIP file and store them wherever you want.
 
-<http://forum.xda-developers.com/showthread.php?t=2317790>
+3. Open the Command Prompt, PowerShell or Terminal and enter the directory where you unzipped the file earlier. The command may look like this:
 
-Direct download link:
+`cd C:\Program Files\platform-tools`
 
-<https://www.androidfilehost.com/?fid=24052804347803384>
+4. Test whether ADB is working properly: connect your Android device to your computer using a USB cable and run the following command:
 
-3. Run this command in the console (it will be opened after install):
+`./adb devices` or `adb devices`
 
-> adb logcat -v threadtime -d > C:\logcat.txt
+5. Then run the following command (insert the relevant path):
 
-Send this log to us by contacting support or by any other way.
+`./adb logcat -v threadtime -d > C:\Program Files\platform-tools/logs.txt` 
+
+Send the created `txt` file to us by contacting support or by any other way.
 
 **Alternative way for ROOT users:**
 
