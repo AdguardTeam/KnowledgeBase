@@ -1,11 +1,11 @@
 ---
-title: How to get Logcat log
+title: How to get the system logs
 sidebar_position: 4
 ---
 
 ## General Instruction
 
-For troubleshooting problems with crashes a regular log is almost always not enough. In such cases to identify the origin of the problem we need the system log. Below is the instruction how to collect and get it.
+For troubleshooting problems with crashes a regular log may not be enough. In such cases to identify the origin of the problem we need the system log. Below is the instruction how to collect and get it: via Developer Options and Logcat. 
 
 ## Capture a bug report from a device
 To get a bug report directly from your device, do the following:
@@ -30,7 +30,9 @@ To get a bug report directly from your device, do the following:
 
 ## Additional Instruction (for old Android versions)
 
-On old Android devices there is no such option to take a bug report automatically. It has to be done manually by following this instruction:
+On old Android devices there is no such option to take a bug report automatically. It has to be done manually via Logcat — a standard Android command-line tool that dumps a log of system messages. 
+
+Follow this instruction:
 
 **Part #1: prepare the device**
 
@@ -44,7 +46,7 @@ On old Android devices there is no such option to take a bug report automaticall
 
 4MB should be enough for storing the logs we need until you're able to do the second part (getting log from the device);
 
-**Important:** you need to reproduce the problem after you've done with the first part!
+**Important:** you need to reproduce the problem after you've done with the first part.
 
 
 **Part #2: get the log**
