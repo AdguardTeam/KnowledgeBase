@@ -63,11 +63,11 @@ Follow this instruction:
 
 4. Test whether ADB is working properly: connect your Android device to your computer using a USB cable and run the following command:
 
-`./adb devices` or `adb devices`
+`./adb devices`
 
 5. Then run the following command (insert the relevant path):
 
-`./adb logcat -v threadtime -d > C:\Program Files\platform-tools/logs.txt` 
+`./adb logcat -v threadtime -d > C:\Program Files\platform-tools\logs.txt` 
 
 Send the created `txt` file to us by contacting support or by any other way.
 
