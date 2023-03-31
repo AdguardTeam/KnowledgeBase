@@ -5,7 +5,7 @@ sidebar_position: 4
 
 ## General instruction
 
-Sometimes a regular log may not be enough to identify the origin of the problem. In such cases the system log is neede. Below is the instruction how to collect and get it: via Developer options and Logcat. 
+Sometimes a regular log may not be enough to identify the origin of the problem. In such cases a system log is needed. Below is the instruction how to collect and get it: via Developer options and Logcat. 
 
 ## Capture a bug report from a device
 
