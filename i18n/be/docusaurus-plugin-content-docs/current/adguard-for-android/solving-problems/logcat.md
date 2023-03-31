@@ -1,22 +1,23 @@
 ---
-title: How to get the system logs
+title: How to get system logs
 sidebar_position: 4
 ---
 
-## General Instruction
+## General instruction
 
 For troubleshooting problems with crashes a regular log may not be enough. In such cases to identify the origin of the problem we need the system log. Below is the instruction how to collect and get it: via Developer Options and Logcat. 
 
 ## Capture a bug report from a device
+
 To get a bug report directly from your device, do the following:
 
-1. Be sure you have [Developer Options](https://developer.android.com/studio/run/device.html#developer-device-options) enabled.
+1. Be sure you have [Developer options](https://developer.android.com/studio/run/device.html#developer-device-options) enabled.
 
 2. In **Developer options**, tap **Take bug report**.
 
 ![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
 
-3. Select the type of bug report you want and tap **Report**. 
+3. Select the type of the bug report you want and tap **Report**. 
 
 > After a moment you get a notification that the bug report is ready (see figure 2).
 
@@ -30,7 +31,7 @@ To get a bug report directly from your device, do the following:
 
 > Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
 
-## Additional Instruction (for old Android versions)
+## Additional instruction (for Android 7 and lower versions)
 
 On old Android devices there is no such option to take a bug report automatically. It has to be done manually via Logcat — a standard Android command-line tool that dumps a log of system messages. 
 
@@ -46,14 +47,13 @@ Follow this instruction:
 
 4. Increase **Logger buffer** sizes to 4MB per log buffer.
 
-4MB should be enough for storing the logs we need until you're able to do the second part (getting log from the device);
+4MB should be enough for storing the logs we need until you're able to do the second part (getting the log from the device);
 
-**Important:** you need to reproduce the problem after you've done with the first part.
-
+**Important:** you need to reproduce the problem after you're done with the first part.
 
 **Part #2: get the log**
 
-1. Connect your device to PC with USB cable.
+1. Connect your device to a PC with a USB cable.
 
 2. Download [Android SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools#downloads). Choose the appropriate download link for your OS from the Downloads section. Once you click the link, a ZIP file will be downloaded. You can extract the ADB (Android Debug Bridge) files from the ZIP file and store them wherever you want.
 
