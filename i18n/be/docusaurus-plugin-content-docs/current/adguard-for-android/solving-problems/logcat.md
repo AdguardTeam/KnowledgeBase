@@ -69,7 +69,7 @@ Follow this instruction:
 
 `./adb logcat -v threadtime -d > C:\Program Files\platform-tools\logs.txt` 
 
-Send the created `txt` file to us by contacting support or by any other way.
+Send the created `txt` file to our support team via email (support@adguard.com).
 
 **Alternative way for ROOT users:**
 
