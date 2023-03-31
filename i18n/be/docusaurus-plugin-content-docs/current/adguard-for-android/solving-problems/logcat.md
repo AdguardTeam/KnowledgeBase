@@ -5,7 +5,7 @@ sidebar_position: 4
 
 ## General instruction
 
-For troubleshooting problems with crashes a regular log may not be enough. In such cases to identify the origin of the problem we need the system log. Below is the instruction how to collect and get it: via Developer Options and Logcat. 
+Sometimes a regular log may not be enough to identify the origin of the problem. In such cases the system log is neede. Below is the instruction how to collect and get it: via Developer options and Logcat. 
 
 ## Capture a bug report from a device
 
@@ -47,7 +47,7 @@ Follow this instruction:
 
 4. Increase **Logger buffer** sizes to 4MB per log buffer.
 
-4MB should be enough for storing the logs we need until you're able to do the second part (getting the log from the device);
+4 MB should be enough for storing the logs we need until you're able to do the second part (getting the log from the device);
 
 **Important:** you need to reproduce the problem after you're done with the first part.
 
@@ -69,7 +69,7 @@ Follow this instruction:
 
 `./adb logcat -v threadtime -d > C:\Program Files\platform-tools\logs.txt` 
 
-Send the created `txt` file to our support team via email (support@adguard.com).
+Email the created `txt` file to our support team at support@adguard.com.
 
 **Alternative way for ROOT users:**
 
