@@ -3,8 +3,6 @@ title: How to get system logs
 sidebar_position: 4
 ---
 
-## General instruction
-
 Sometimes a regular log may not be enough to identify the origin of the problem. In such cases a system log is needed. Below is the instruction how to collect and get it: via Developer options and Logcat. 
 
 ## Capture a bug report from a device
@@ -31,15 +29,16 @@ To get a bug report directly from your device, do the following:
 
 > Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
 
-## Additional instruction (for Android 7 and lower versions)
+## Capture a bug report via Logcat
 
-On old Android devices there is no such option to take a bug report automatically. It has to be done manually via Logcat — a standard Android command-line tool that dumps a log of system messages. 
+On devices with Android 7 and below, it is not possible to send a bug report automatically. Then you can capture it manually via Logcat — a standard Android command-line tool that dumps a log of system messages.
 
 Follow this instruction:
 
 **Part #1: prepare the device**
 
-1. Switch device to the developer mode. To do this: go to **Settings** → **About** → tap **Build Number** 7 times.
+1. Switch device to the developer mode. To do this: go to
+ **Settings** → **About** → tap **Build Number** 7 times.
 
 2. Go to **Developer Options**.
 
