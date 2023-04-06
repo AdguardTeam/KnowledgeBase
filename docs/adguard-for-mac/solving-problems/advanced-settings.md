@@ -38,7 +38,7 @@ Here you can specify a list of applications that make DNS queries directly not v
 
 `network.dns.filter.secure.request`
 
-Redirects secure DNS requests to a local DNS proxy, if one is available.
+Redirects secure DNS requests to a local DNS proxy, if there is one available.
 
 `network.https.ocsp.check`
 
@@ -54,7 +54,7 @@ Idle time, in seconds, before sending a keepalive probe. If 0 is specified, the 
 
 `network.tcp.keepalive.timeout.seconds`
 
-Time, in seconds, before sending another keepalive probe to an unresponsive peer. If 0 is specified, the value selected by the system will be used
+Time, in seconds, before sending another keepalive probe to an unresponsive peer. If 0 is specified, the value selected by the system will be used.
 
 `network.https.ech.enabled`
 
@@ -62,7 +62,7 @@ Uses a local DNS proxy to look for configs in the ECH Config Lists. If found, en
 
 `network.https.enforce.certificate.transparency`
 
-Verifies the authenticity of all certificates for the domain based on Chrome Certificate Transparency Policy
+Verifies the authenticity of all certificates for the domain based on Chrome Certificate Transparency Policy.
 
 `network.filtering.localnetwork`
 
@@ -82,7 +82,7 @@ Here you can specify a list of IP addresses of DNS servers that will be used as 
 
 `dns.proxy.fallback.on.upstreams.failure.enabled`
 
-Normal queries will be redirected to a fallback upstream if all normal upstreams fail
+Normal queries will be redirected to a fallback upstream if all normal upstreams fail.
 
 `dns.proxy.detect.search.domains`
 
@@ -126,15 +126,15 @@ Here you can specify the TTL (time to live) value that will be returned in respo
 
 `dns.proxy.parallel.upstream.queries.enabled`
 
-All upstreams are queried in parallel. The first response is returned
+All upstreams are queried simultaneously. The first response is returned.
 
 `dns.proxy.servfail.on.upstreams.failure.enabled`
 
-Responds to upstream failure with a SERVFAIL packet
+Responds to upstream failure with a SERVFAIL packet.
 
 `dns.proxy.http3.enabled` 
 
-Enables HTTP/3 for DNS-over-HTTPS upstreams to accelerate connection
+Enables HTTP/3 for DNS-over-HTTPS upstreams to accelerate connection.
 
 `dns.proxy.block.encrypted.client.hello.response`
 
@@ -150,7 +150,7 @@ This option specifies the size of TCP packet fragmentation, which helps avoid de
 
 `stealth.antidpi.http.space.juggling`
 
-Adds extra space between the HTTP method and the URL and removes space after "Host:" field
+Adds extra space between the HTTP method and the URL and removes space after "Host:" field.
 
 `subscription.link.interception.userscript`
 
