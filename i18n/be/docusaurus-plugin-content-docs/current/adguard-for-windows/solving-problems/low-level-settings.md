@@ -75,6 +75,10 @@ If you want AdGuard to filter loopback connections, check the box. This option w
 
 If you don't want AdGuard to filter particular subnets, enable this feature and specify the IP ranges in the CIDR notation (e.g. 98.51.100.14/24) in the **IP ranges excluded from filtering** section below.
 
+### IP ranges excluded from filtering
+
+Specify here any number of IP ranges excluded from filtering, using CIDR notation, one per line. The listed IP ranges will be excluded from filtering, if the corresponding setting is enabled. To add comments, use '//'. Empty lines are ignored.
+
 ### Add an extra space to the plain HTTP request
 
 Adds extra space between the HTTP method and the URL and removes space after the "Host:" field to avoid deep packet inspection. For instance, the request 
