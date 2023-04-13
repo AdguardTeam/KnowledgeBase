@@ -1,6 +1,6 @@
 ---
 title: 'Altlizenzen: FAQ'
-sidebar_position: 4
+sidebar_position: 6
 ---
 
 Wir haben diesen Artikel geschrieben, um Verwirrung zu vermeiden und ausführlich zu erklären, wie Sie eine veraltete (legacy) AdGuard-Lizenz erneuern/erweitern können.

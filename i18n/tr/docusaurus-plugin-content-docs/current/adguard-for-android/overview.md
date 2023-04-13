@@ -51,7 +51,7 @@ Here is the installation instruction:
 
 5. Tap *Install certificate* and then *CA certificate*.
 
-6. A warning message will appear. Read through it and tap *Install anyway* to proceed.
+6. Bir uyarı mesajı görünür. Read through it and tap *Install anyway* to proceed.
 
 7. Select the recently downloaded AdGuard certificate. A *CA certificate installed* toast message should show up.
 
@@ -99,7 +99,7 @@ In the Apps Management module you can choose which apps should have Wi-Fi or mob
 
 You can find extra settings in the upper right corner of the Apps Management screen. They will help you fine-tune AdGuard for Android to your preference. For example, you can make the common settings applicable to each and every app, or select the apps which need a more detailed approach.
 
-![Chrome *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/chrome.png)
+![Chrome *mobil](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/chrome.png)
 
 By tapping the icons, you will see a screen showing app-specific traffic to help you make more informed decisions. AdGuard is of help not only with ad filtering and privacy protection, it can aid your device function better, saving battery life and traffic as well.
 
@@ -107,7 +107,7 @@ By tapping the icons, you will see a screen showing app-specific traffic to help
 
 In the Filtering Log, you can directly observe all web requests made by browsers and apps. Thanks to this feature, you have full control over all processes on your device.
 
-![Filtering log *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering-log.png)
+![Filtreleme günlüğü *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering-log.png)
 
 You can block each request right there in one tap (or unblock it, if the request is already blocked). There's also detailed information about each request, although it is mostly aimed at the advanced users, particularly those who create their own filtering rules. We will be elaborating on it just a bit further below.
 
@@ -131,7 +131,7 @@ A bit of a theory refresher: DNS stands for "Domain name system", and its purpos
 
 DNS filtering has its own separate tab within the AdGuard for Android app home screen. Here you can choose which type of DNS you wish to use (it can be either regular DNS or high-security DNS — we will get to that later on) as well as enable DNS-level blocking.
 
-## DNS blocking
+## DNS engelleme
 
 DNS blocking is a standalone feature that complements AdGuard protection suite.
 
@@ -220,7 +220,7 @@ While some ot the features in AdGuard for Android are free, others require [purc
 * Ad blocking in all apps (not only browsers)
 * Custom filters
 
-Read [this article](./general/license/activation) to learn how to activate the license key.
+Lisans anahtarının nasıl etkinleştirileceğini öğrenmek için <[bu makaleyi](/general/license/activation) okuyun.
 
 ## Other features
 

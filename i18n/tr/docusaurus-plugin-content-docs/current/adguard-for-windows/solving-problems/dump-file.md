@@ -8,7 +8,7 @@ To diagnose the reasons for potential problems that users might encounter while 
 1. Press **Ctrl + Shift + Esc** and click **Task Manager**
 2. In the upper menu bar select **Details**
 
-![Task Manager details](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/details_en.png)
+![Görev Yöneticisi ayrıntıları](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/details_en.png)
 
 3. Döküm dosyasını oluşturmak istediğiniz işleme sağ tıklayın (örneğin, destek ekibi sizden `Adguard.exe` için bir döküm oluşturmanızı isteyebilir)
 4. Açılır menüde **Döküm dosyası oluştur** öğesine tıklayın

@@ -35,9 +35,33 @@ sidebar_position: 9
 
 Здесь можно указать список приложений, осуществляющих DNS-запросы напрямую, а не через DNS-резолвер (например, некоторые VPN-клиенты или приложения с DNS-фильтрацией). Для них *в режиме Сетевого расширения* DNS-фильтрация будет отключена. Идентификаторы приложений (bundle ID) следует разделять запятой или переносом строки.
 
+`network.dns.filter.secure.request`
+
+Redirects secure DNS requests to a local DNS proxy, if there is one available.
+
 `network.https.ocsp.check`
 
 Установив значение `true`, вы включите проверку отзыва HTTPS-сертификатов.
+
+`network.tcp.keepalive.enabled`
+
+Periodically sends TCP packets over an idle connection to ensure that it remains active and to renew NAT timeouts.
+
+`network.tcp.keepalive.interval.seconds`
+
+Idle time, in seconds, before sending a keepalive probe. If 0 is specified, the system will use the default value.
+
+`network.tcp.keepalive.timeout.seconds`
+
+Time, in seconds, before sending another keepalive probe to an unresponsive peer. If 0 is specified, the value selected by the system will be used.
+
+`network.https.ech.enabled`
+
+Uses a local DNS proxy to look for configs in the ECH Config Lists. If found, encrypts ClientHellos.
+
+`network.https.enforce.certificate.transparency`
+
+Verifies the authenticity of all certificates for the domain based on Chrome Certificate Transparency Policy.
 
 `network.filtering.localnetwork`
 
@@ -47,17 +71,6 @@ sidebar_position: 9
 
 Установив значение `true`, вы включите фильтрацию loopback-соединений.
 
-`upstream.proxy`
-
-В этой строке можно указать прокси-сервер для исходящих соединений. Например:
-
-* SOCKS5 proxy, требующий проверки подлинности — `socks5://username:password@proxy.example.org:1080`
-* Локальный HTTP-прокси без аутентификации — `http://localhost:3128`
-
-`upstream.proxy.socks5udp`
-
-Установив значение `true`, вы включите перенаправление UDP-трафика через локальный сервер в режиме SOCKS5. Обратите внимание: если ваш SOCKS5-сервер не поддерживает протокол UDP, включение данной настройки приведёт к обрыву интернет-соединения.
-
 `dns.proxy.bootstrap.ips`
 
 Сюда можно внести IP-адреса DNS-серверов, которые будут использоваться для определения адреса зашифрованного DNS-сервера.
@@ -65,6 +78,10 @@ sidebar_position: 9
 `dns.proxy.fallback.ips`
 
 Здесь можно указать список IP-адресов DNS-серверов, которые будут использоваться в качестве резервных в случае, есть зашифрованный DNS-сервер не будет отвечать.
+
+`dns.proxy.fallback.on.upstreams.failure.enabled`
+
+Normal queries will be redirected to a fallback upstream if all normal upstreams fail.
 
 `dns.proxy.detect.search.domains`
 
@@ -78,13 +95,17 @@ sidebar_position: 9
 
 Здесь вы можете указать тип ответа DNS-сервера на заблокированные запросы, соответствующие правилам в стиле блокировщика рекламы.
 
-0 — отвечать кодом REFUSED 1 — отвечать кодом NXDOMAIN 2 — отвечать 0.0.0.0 или адресами, указанными в `dns.proxy.blocking.response.IPv4.address` и/или `dns.proxy.blocking.response.IPv6.address`
+* 0 — respond with REFUSED
+* 1 — respond with NXDOMAIN
+* 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
 
 `dns.proxy.hostrules.blocking.mode`
 
 Здесь вы можете указать тип ответа DNS-сервера на заблокированные запросы, соответствующие правилам hosts:
 
-0 — отвечать кодом REFUSED 1 — отвечать кодом NXDOMAIN 2 — отвечать 0.0.0.0 или адресами, указанными в `dns.proxy.blocking.response.IPv4.address` и/или `dns.proxy.blocking.response.IPv6.address`
+* 0 — respond with REFUSED
+* 1 — respond with NXDOMAIN
+* 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
 
 `dns.proxy.blocking.response.IPv4.address`
 
@@ -101,6 +122,34 @@ sidebar_position: 9
 `dns.proxy.blocked.response.TTL.in.seconds`
 
 Здесь вы можете указать значение TTL (время жизни пакета данных в протоколе IP), которое будет возвращено в ответ на заблокированный запрос.
+
+`dns.proxy.parallel.upstream.queries.enabled`
+
+All upstreams are queried simultaneously. The first response is returned.
+
+`dns.proxy.servfail.on.upstreams.failure.enabled`
+
+Responds to upstream failure with a SERVFAIL packet.
+
+`dns.proxy.http3.enabled`
+
+Enables HTTP/3 for DNS-over-HTTPS upstreams to accelerate connection.
+
+`dns.proxy.block.encrypted.client.hello.response`
+
+Removes the Encrypted Client Hello parameters from responses.
+
+`stealth.antidpi.http.split.fragment.size`
+
+Adjusts the size of the HTTP request fragmentation. Accepted values: 1–1500. If an invalid size is specified, the system will use the default value.
+
+`stealth.antidpi.clienthello.split.fragment.size`
+
+This option specifies the size of TCP packet fragmentation, which helps avoid deep packet inspection. Accepted values: 1–1500. If an invalid size is specified, the system will use the default value.
+
+`stealth.antidpi.http.space.juggling`
+
+Adds extra space between the HTTP method and the URL and removes space after the "Host:" field.
 
 `subscription.link.interception.userscript`
 

@@ -1,20 +1,22 @@
 ---
-title: Como comprar
+title: How to purchase/upgrade
 sidebar_position: 2
 ---
 
-## Como comprar uma licença
+## How to purchase a license{#purchase}
 
 A licença do AdGuard pode ser comprada em [adguard.com](https://adguard.com/license.html). AdGuard Pro para iOS pode ser comprado na App Store. As licenças do Bloqueador de Anúncios AdGuard também são vendidas por vários distribuidores.
 
 > A disponibilidade dos produtos AdGuard em lojas de aplicativos e por distribuidores depende do seu país.
 
-## Como obter um reembolso
+## How to upgrade a license{#upgrade}
 
-De acordo com nossos [Termos de Venda](https://adguard.com/terms-of-sale.html), você pode obter um reembolso de 100% na chave de licença do AdGuard adquirida em https://adguard.com. Para obter um reembolso, entre em contato com nossa equipe de suporte em **support@adguard.com** e indique a opção de pagamento que você usou.
+To make more use of your AdGuard products, you can upgrade your license for the following benefits.
 
-Um reembolso pode ser negado se você:
-* comprou a licença há mais de 60 dias,
-* adquiriu a licença de um distribuidor,
-* adquiriu a licença na App Store,
-* solicitou um reembolso parcial para atualização ou prolongamento da chave de licença.
+1. Para aumentar a funcionalidade dos seus produtos AdGuard, você pode **atualizar sua licença gratuita ou de avaliação para a versão completa**.
+2. To extend the number of devices, you can **upgrade your Personal license to a Family one**.
+3. You can also **upgrade your [subscription](../what-is) to a Lifetime license**.
+
+Você pode atualizar sua licença:
+  * purchasing another license on the [official AdGuard website](https://adguard.com),
+  * clicking the *Upgrade to Lifetime* and/or *Increase device limit* in your AdGuard account: ![Upgrade *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)

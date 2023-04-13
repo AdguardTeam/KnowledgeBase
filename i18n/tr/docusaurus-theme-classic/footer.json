@@ -80,7 +80,7 @@
     "description": "The label of footer link with label=purchase_license linking to https://adguard.com/license.html"
   },
   "link.item.label.recover_license": {
-    "message": "Recover License",
+    "message": "Lisansı Kurtar",
     "description": "The label of footer link with label=recover_license linking to /general/license/what-is"
   },
   "link.item.label.terms_of_sale": {

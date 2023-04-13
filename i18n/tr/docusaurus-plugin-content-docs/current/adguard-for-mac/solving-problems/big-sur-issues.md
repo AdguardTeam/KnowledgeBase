@@ -21,7 +21,7 @@ For a deeper understanding of this problem, read [this article](../icloud-privat
 
 We recommend using AdGuard together with a more traditional VPN service such as [AdGuard VPN](https://adguard-vpn.com/).
 
-**Alternative solution**
+**Alternatif çözüm**
 
 You can prevent AdGuard from using the "default route" by disabling it. It can be done via Advanced Settings → `network.extension.monterey.force.split.tunnel`. Note that enabling this setting will cause the problems described above.
 
@@ -60,7 +60,7 @@ Despite AdGuard is displayed as a VPN in system settings, it shouldn't cause any
 
 1) Open AdGuard's menu. 2) Select *Preferences...*. 3) Switch to the *Network* tab. 4) Click the *Applications...* button. 5) Find the app you want to exclude and uncheck the checkbox next to it.
 
-![Filtered applications](https://cdn.adtidy.org/content/kb/ad_blocker/mac/legacy.jpg)
+![Filtrelenen uygulamalar](https://cdn.adtidy.org/content/kb/ad_blocker/mac/legacy.jpg)
 
 ## Already fixed problems
 
@@ -137,7 +137,7 @@ If you chose SOCKS5 protocol, you also need to set the value of the `upstream.pr
 
 It's impossible to foresee each and every possible problem that can pop up in Big Sur or Monterey, there are countless various hardware/software and settings configurations. If you face any compatibility issues, please contact our support team, but feel free to try one of these workarounds first.
 
-### Using "Automatic proxy" filtering mode {#automatic-proxy}
+### "Otomatik proxy" filtreleme modunu kullanma {#automatic-proxy}
 
 If you face problems in Big Sur or Monterey which can't be resolved by any of the methods above, you can try switching AdGuard to *Automatic proxy* mode.
 

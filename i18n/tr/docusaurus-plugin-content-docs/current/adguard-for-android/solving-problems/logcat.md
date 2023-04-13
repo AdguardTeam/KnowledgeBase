@@ -34,7 +34,7 @@ On old Android devices there is no such option to take a bug report automaticall
 
 **Part #1: prepare the device**
 
-1. Switch device to the developer mode. To do this: go to **Settings** → **About** → tap **Build Number** 7 times.
+1. Cihazı geliştirici moduna geçirin. To do this: go to **Settings** → **About** → tap **Build Number** 7 times.
 
 2. Go to **Developer Options**.
 
@@ -71,7 +71,7 @@ Send this log to us by contacting support or by any other way.
 
 2. Choose **Record** in the menu. Choose a name for a log file or just press **OK**. Now you can press **Home** button, CatLog will continue recording the log in background.
 
-3. Reproduce the issue.
+3. Sorunu yeniden oluşturun.
 
 4. Open CatLog and press **Stop record** in the menu.
 

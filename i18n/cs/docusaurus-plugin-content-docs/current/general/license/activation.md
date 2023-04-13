@@ -7,7 +7,7 @@ sidebar_position: 3
 
 Chcete-li aktivovat licenci, přejděte do části *Licence* svého produktu AdGuard a vyhledejte pole *Přihlásit se* nebo tlačítko *Aktivovat*. K přihlášení použijte e-mail a heslo svého AdGuard účtu. Pokud ještě nemáte účet, bude vám nabídnuto jeho vytvoření.
 
-> Poznámka: Chcete-li aktivovat licenci prostřednictvím AdGuard účtu, musíte mít platnou licenci s alespoň jedním otevřeným slotem. Pokud je vaše licence již použita na maximálním počtu zařízení, můžete ji [upgradovat](#how-to-upgrade-a-license) nebo [přenést z jednoho zařízení do jiného](#how-to-transfer-a-license-to-another-device).
+> Poznámka: Chcete-li aktivovat licenci prostřednictvím AdGuard účtu, musíte mít platnou licenci s alespoň jedním otevřeným slotem. Pokud je vaše licence již použita na maximálním počtu zařízení, můžete ji [upgradovat](../payment-options#upgrade) nebo [přenést z jednoho zařízení do jiného](../transfer).
 
 Případně můžete k aktivaci použít [licenční klíč](../what-is#license-key).
 
@@ -98,30 +98,3 @@ nebo dvakrát klikněte na ikonu AdGuardu na hlavním panelu:
 4. Zadejte **e-mail** a **heslo** z vašeho **AdGuard účtu**
 
 ![Log in *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense2en.png)
-
-## Jak přenést licenci do jiného zařízení
-
-Licenční klíč lze aktivovat na [omezený počet zařízení](../what-is#devices). Pokud byl klíč již použit na maximálním povoleném počtu zařízení, je třeba zrušit připojení zařízení z účtu. To můžete provést třemi způsoby:
-* kliknutím na tlačítko *Resetovat licenci* (platí pro desktopové aplikace),
-* odhlášením z účtu v produktu AdGuard,
-* kliknutím na ikonu křížku vedle zařízení ve vašem AdGuard účtu.
-
-Poté, co zrušíte připojení na potřebný počet zařízení, můžete se přihlásit k AdGuard účtu na nových zařízeních. Licence na ně bude navázána.
-
-## Jak upgradovat licenci
-
-Abyste mohli produkty AdGuard používat pohodlněji, můžete svou licenci upgradovat.
-
-1. Chcete-li rozšířit funkčnost svých produktů AdGuard, můžete **upgradovat svou bezplatnou nebo zkušební licenci na plnou verzi**.
-2. Chcete-li rozšířit počet zařízení, můžete **upgradovat Osobní licenci blokátoru reklam AdGuard na licenci Rodinnou**.
-3. Můžete také **upgradovat své předplatné na doživotní licenci**.
-
-Svou licenci můžete aktualizovat tak, že:
-* zakoupíte další licence na oficiálních stránkách produktů AdGuard,
-* kliknete na tlačítko *Upgradovat* ve svém AdGuard účtu.
-
-## Jak zrušit zrušit předplatné
-
-Předplatné lze zrušit ve vašem AdGuard účtu. Chcete-li zrušit předplatné, klikněte na kartu nebo na ikonu křížku vedle ní a vyberte možnost *Odhlásit*. Zrušené předplatné bude platné do data vypršení jeho platnosti.
-
-> Předplatné zakoupené v App Store lze spravovat v účtu App Store nebo v nastavení zařízení.

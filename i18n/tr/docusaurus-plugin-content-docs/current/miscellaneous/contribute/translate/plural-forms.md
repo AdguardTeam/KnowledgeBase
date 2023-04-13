@@ -18,7 +18,7 @@ In contrast to English, the Polish language has three plural forms of nouns. One
 
 Let’s have a look at this picture. Here you can see the groups of numerals which determine a word form when standing in front of it.
 
-![Polish](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
+![Lehçe](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
 > Find other examples [here](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals).
 
@@ -86,7 +86,7 @@ Crowdin suggests to users that they translate the certain amount of phrases with
 
 If your language provides only one plural form, then you will see only one phrase to translate. If three or more forms, Crowdin will provide you with the string divided into other two or three strings to translate.
 
-For example:
+Örneğin:
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/crowdin_scheme.png)
 
@@ -122,7 +122,7 @@ For example, when we translate the above mentioned phrase into Slovak, that acco
 
 `**Štandartná licencia pre *%count%* počítač | Štandartná licencia pre *%count%* počítače | Štandartná licencia pre *%count%* počítačov**`
 
-![Slovak](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/slovak.png)
+![Slovakça](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/slovak.png)
 
 In this case, we see three templates which contain three forms of the word *"počítač"* (computer) in Slovak.
 
@@ -131,7 +131,7 @@ In this case, we see three templates which contain three forms of the word *"po�
 
 For example, the Serbian word *'računar'* (computer) has only two forms. But there are 3 plural forms in Serbian.
 
-![Serbian](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/serbian.png)
+![Sırpça](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/serbian.png)
 
 Thus, the translation from English into Serbian should be:
 

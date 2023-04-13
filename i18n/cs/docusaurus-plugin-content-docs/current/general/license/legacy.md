@@ -1,6 +1,6 @@
 ---
 title: FAQ ke starším licencím
-sidebar_position: 4
+sidebar_position: 6
 ---
 
 Tento článek jsme napsali, abychom předešli zmatkům a podrobně vysvětlili, jak můžete obnovit/upgradovat zastaralou (starší) licenci AdGuardu.

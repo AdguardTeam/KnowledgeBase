@@ -17,7 +17,7 @@ Requires iPadOS 11.2 or later.
 
 Requires iOS 11.2 or later.
 
-## AdGuard for iOS installation
+## iOS için AdGuard yüklemesi
 
 AdGuard for iOS is an app presented in the App Store. To install it on your device, open the App Store and tap the _Search_ icon on the bottom of the screen.
 

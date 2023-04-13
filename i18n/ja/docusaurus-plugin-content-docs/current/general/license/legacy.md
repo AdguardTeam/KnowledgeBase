@@ -1,6 +1,6 @@
 ---
 title: 旧ライセンスに関するFAQ
-sidebar_position: 4
+sidebar_position: 6
 ---
 
 この記事では、混乱を避けるために、旧（レガシー）AdGuardライセンスを更新/アップグレードする方法について詳しく説明しております。

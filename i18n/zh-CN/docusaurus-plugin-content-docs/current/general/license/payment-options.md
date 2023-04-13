@@ -1,20 +1,22 @@
 ---
-title: 支付方式
+title: How to purchase/upgrade
 sidebar_position: 2
 ---
 
-## 支付许可证的方式
+## How to purchase a license{#purchase}
 
 AdGuard 许可证可以在 [adguard.com](https://adguard.com/license.html) 上购买。 iOS 版 的 AdGuard Pro 可以在 App Store 上购买。 此外，用户也可以通过经销商购买广告拦截程序的许可证。
 
 > AdGuard 软件在应用商店和分销商店的购买情况取决于您的位于的位置。
 
-## 如何退款
+## How to upgrade a license{#upgrade}
 
-根据我们的[销售条款](https://adguard.com/terms-of-sale.html)，用户在https://adguard.com 购买 AdGuard 许可证密钥后可以100%退款。 为了申请退款，请联系我们的支持团队：**support@adguard.com** ，并说明您使用的付款方式。
+To make more use of your AdGuard products, you can upgrade your license for the following benefits.
 
-在以下情况下，退款可能会被拒绝：
-* 超过 60 天前购买了许可证，
-* 通过经销商购买了许可证，
-* 在 App Store 上购买了许可证，
-* 申请了许可证密钥升级或续订的部分价格进行退款。
+1. 要增加 AdGuard 软件的功能，您可以**将免费或试用期的许可证升级到完整版**。
+2. To extend the number of devices, you can **upgrade your Personal license to a Family one**.
+3. You can also **upgrade your [subscription](../what-is) to a Lifetime license**.
+
+您可以通过以下方式升级许可证：
+  * purchasing another license on the [official AdGuard website](https://adguard.com),
+  * clicking the *Upgrade to Lifetime* and/or *Increase device limit* in your AdGuard account: ![Upgrade *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)

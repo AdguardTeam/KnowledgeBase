@@ -1,5 +1,5 @@
 ---
-title: How to collect a full log
+title: Tam günlük nasıl toplanır
 sidebar_position: 2
 ---
 
@@ -13,7 +13,7 @@ To collect **debug** log and send it to us you need to perform following steps:
 
 2. Choose "Advanced".
 
-3. Set "Logging level" to "Record everything". It's desirable to close all background apps that don't concern the problem beforehand.
+3. "Günlük kayıt düzeyi" öğesini "Her şeyi kaydet" olarak ayarlayın. It's desirable to close all background apps that don't concern the problem beforehand.
 
 4. Reproduce the problem and set the logging level back to "Default". Notice the exact time when it happened.
 

@@ -35,9 +35,33 @@ Weitere Informationen zum Problem finden Sie in [diesem Artikel](../icloud-priva
 
 Hier können Sie eine Liste von Anwendungen angeben, die DNS-Abfragen direkt und nicht über den System-DNS-Resolver durchführen (z. B. einige VPN-Clients oder DNS-Filteranwendungen). Die DNS-Filterung wird für sie im *Netzwerk-Erweiterung* Modus deaktiviert. Die Bundle-IDs sollten durch ein Komma oder einen Zeilenumbruch getrennt werden.
 
+`network.dns.filter.secure.request`
+
+Redirects secure DNS requests to a local DNS proxy, if there is one available.
+
 `network.https.ocsp.check`
 
 Indem Sie `true` festlegen, aktivieren Sie die Sperrprüfung von HTTPS-Zertifikaten.
+
+`network.tcp.keepalive.enabled`
+
+Periodically sends TCP packets over an idle connection to ensure that it remains active and to renew NAT timeouts.
+
+`network.tcp.keepalive.interval.seconds`
+
+Idle time, in seconds, before sending a keepalive probe. If 0 is specified, the system will use the default value.
+
+`network.tcp.keepalive.timeout.seconds`
+
+Time, in seconds, before sending another keepalive probe to an unresponsive peer. If 0 is specified, the value selected by the system will be used.
+
+`network.https.ech.enabled`
+
+Uses a local DNS proxy to look for configs in the ECH Config Lists. If found, encrypts ClientHellos.
+
+`network.https.enforce.certificate.transparency`
+
+Verifies the authenticity of all certificates for the domain based on Chrome Certificate Transparency Policy.
 
 `network.filtering.localnetwork`
 
@@ -47,17 +71,6 @@ Indem Sie `true` setzen, aktivieren Sie die lokale Netzwerkfilterung.
 
 Wenn Sie `true` setzen, aktivieren Sie die LoopBack-Filterung.
 
-`upstream.proxy`
-
-In dieser Zeichenfolge können Sie einen Proxy-Server für Upstream-Verbindungen angeben. Zum Beispiel:
-
-* SOCKS5-Proxy mit Authentifizierung – `socks5://username:password@proxy.example.org:1080`
-* Lokaler HTTP-Proxy ohne Authentifizierung – `http://localhost:3128`
-
-`upstream.proxy.socks5udp`
-
-Indem Sie `true` festlegen, aktivieren Sie die Umleitung des UDP-Datenverkehrs über den lokalen Server im SOCKS5-Modus. Hinweis: Wenn Ihr SOCKS5-Server das UDP-Protokoll nicht unterstützt, führt die Aktivierung dieser Einstellung dazu, dass Ihre Internetverbindung fehlschlägt.
-
 `dns.proxy.bootstrap.ips`
 
 Hier können Sie die IP-Adressen der DNS-Server eingeben, die verwendet werden, um die Adresse des verschlüsselten DNS-Servers zu ermitteln.
@@ -65,6 +78,10 @@ Hier können Sie die IP-Adressen der DNS-Server eingeben, die verwendet werden, 
 `dns.proxy.fallback.ips`
 
 Hier können Sie eine Liste mit IP-Adressen von DNS-Servern angeben, die als Backup verwendet werden, falls der verschlüsselte DNS-Server nicht antwortet.
+
+`dns.proxy.fallback.on.upstreams.failure.enabled`
+
+Normal queries will be redirected to a fallback upstream if all normal upstreams fail.
 
 `dns.proxy.detect.search.domains`
 
@@ -78,13 +95,17 @@ Hier können Sie Domains auflisten, für die der Fallback-DNS-Server anstelle de
 
 Hier können Sie die Art der Antwort des DNS-Servers auf blockierte Anfragen festlegen, die den Regeln im Stil von Werbeblockern entsprechen.
 
-0 – antwortet mit REFUSED; 1 – antwortet mit NXDOMAIN; 2 – antwortet mit 0.0.0.0 oder den in `dns.proxy.blocking.response.IPv4.address` und/oder `dns.proxy.blocking.response.IPv6.address` angegebenen Adressen
+* 0 — respond with REFUSED
+* 1 — respond with NXDOMAIN
+* 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
 
 `dns.proxy.hostrules.blocking.mode`
 
 Hier können Sie die Art der Antwort des DNS-Servers auf blockierte Anfragen entsprechend den Hosts-Regeln festlegen:
 
-0 – antwortet mit REFUSED; 1 – antwortet mit NXDOMAIN; 2 – antwortet mit 0.0.0.0 oder den in `dns.proxy.blocking.response.IPv4.address` und/oder `dns.proxy.blocking.response.IPv6.address` angegebenen Adressen
+* 0 — respond with REFUSED
+* 1 — respond with NXDOMAIN
+* 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
 
 `dns.proxy.blocking.response.IPv4.address`
 
@@ -101,6 +122,34 @@ Hier können Sie die Blockierung von IPv6-DNS-Abfragen aktivieren.
 `dns.proxy.blocked.response.TTL.in.seconds`
 
 Hier können Sie den TTL-Wert (Time to Live) angeben, der als Antwort auf eine blockierte Anfrage zurückgegeben wird.
+
+`dns.proxy.parallel.upstream.queries.enabled`
+
+All upstreams are queried simultaneously. The first response is returned.
+
+`dns.proxy.servfail.on.upstreams.failure.enabled`
+
+Responds to upstream failure with a SERVFAIL packet.
+
+`dns.proxy.http3.enabled`
+
+Enables HTTP/3 for DNS-over-HTTPS upstreams to accelerate connection.
+
+`dns.proxy.block.encrypted.client.hello.response`
+
+Removes the Encrypted Client Hello parameters from responses.
+
+`stealth.antidpi.http.split.fragment.size`
+
+Adjusts the size of the HTTP request fragmentation. Accepted values: 1–1500. If an invalid size is specified, the system will use the default value.
+
+`stealth.antidpi.clienthello.split.fragment.size`
+
+This option specifies the size of TCP packet fragmentation, which helps avoid deep packet inspection. Accepted values: 1–1500. If an invalid size is specified, the system will use the default value.
+
+`stealth.antidpi.http.space.juggling`
+
+Adds extra space between the HTTP method and the URL and removes space after the "Host:" field.
 
 `subscription.link.interception.userscript`
 

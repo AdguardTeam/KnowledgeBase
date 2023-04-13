@@ -854,9 +854,9 @@ For the requests matching a `$csp` rule, we will strengthen response security po
 
 This modifier completely changes the rule behavior. If it is applied to a rule, it will not block the matching request. The response headers are going to be modified instead.
 
-> In order to use this type of rules, it is required to have the basic understanding of the [Feature Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Feature_Policy) security layer.
+> In order to use this type of rules, it is required to have the basic understanding of the [Permissions Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Permissions_Policy) security layer.
 
-For the requests matching a `$permissions` rule, AdGuard strengthens response's feature policy by adding additional feature policy equal to the `$permissions` modifier contents. `$permissions` rules are applied independently from any other rule type. Other basic rules have no influence on it **save for document-level exceptions** (see the examples section).
+For the requests matching a `$permissions` rule, AdGuard strengthens response's permissions policy by adding additional permission policy equal to the `$permissions` modifier contents. `$permissions` rules are applied independently from any other rule type. Other basic rules have no influence on it **save for document-level exceptions** (see the examples section).
 
 > **Multiple rules matching a single request.**
 > 
@@ -864,21 +864,21 @@ For the requests matching a `$permissions` rule, AdGuard strengthens response's 
 
 **Syntax**
 
-`$permissions` value syntax is similar to the `Permissions-Policy` (or `Feature-Policy`) header [syntax](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy). The list of the available directives is available [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives).
+`$permissions` value syntax is similar to the `Permissions-Policy` header [syntax](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy) with one exception: comma that separates several features **MUST** be escaped — see examples below. The list of the available directives is available [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives).
 
 `$permissions` value can be empty in the case of exception rules — see examples below.
 
 > **제한**
 > 
-> 1. Two characters are forbidden in the `$permissions` value: `,` and `$`;
+> 1. Characters forbidden in the `$permissions` value: `$`;
 > 2. `$permissions` is compatible with the limited list of modifiers: `$domain`, `$important`, and `$subdocument`.
 
 **Examples**
 
-* `||example.org^$permissions=sync-xhr 'none'` disallows synchronous `XMLHttpRequest` requests across `example.org`.
-* `@@||example.org/page/*$permissions=sync-xhr 'none'` disables all rules with the `$permissions` modifier exactly matching `sync-xhr 'none'` on all the pages matching the rule pattern. For instance, the rule above.
+* `||example.org^$permissions=sync-xhr=()` disallows synchronous `XMLHttpRequest` requests across `example.org`.
+* `@@||example.org/page/*$permissions=sync-xhr=()` disables all rules with the `$permissions` modifier exactly matching `sync-xhr=()` on all the pages matching the rule pattern. For instance, the rule above.
 * `@@||example.org/page/*$permissions` disables all the `$permissions` rules on all the pages matching the rule pattern.
-* `$domain=example.org|example.com,permission=oversized-images 'none'; sync-script 'none'; unsized-media 'none';` disallows oversized images, synchronous scripts and unsized media features across `example.org` and `example.com`.
+* `$domain=example.org|example.com,permissions=oversized-images=()\, sync-script=()\, unsized-media=()` disallows oversized images, synchronous scripts and unsized media features across `example.org` and `example.com`.
 * `@@||example.org^$document` or `@@||example.org^$urlblock` disables all the `$permission` rules on all the pages matching the rule pattern.
 
 > **Compatibility with different versions of AdGuard**

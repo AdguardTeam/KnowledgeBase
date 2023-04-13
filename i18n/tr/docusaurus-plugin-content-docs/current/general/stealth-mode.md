@@ -49,7 +49,7 @@ When a browser addresses a page, the server assigns an ETag to that page. This E
 
 ## Browser API {#browser-api}
 
-### Block WebRTC {#webrtc}
+### WebRTC'i engelle {#webrtc}
 
 WebRTC (Web Real-Time Communication) is a technology that allows direct streaming of data between browsers and apps. It can let others know your true IP address, even if you use a proxy or VPN. Enabling this option can disrupt the work of certain browser applications, such as messengers, chats, cinemas, or games.
 
@@ -89,7 +89,7 @@ You can also set an arbitrary value for User-Agent by entering it into the Custo
 
 ### Hide your IP address {#ip}
 
-Stealth Mode cannot hide your IP address. However, we can conceal it so that websites you visit will think you are a proxy. Sometimes this helps, and websites ignore your true IP address.
+Gizli Mod, IP adresinizi gizleyemez. However, we can conceal it so that websites you visit will think you are a proxy. Sometimes this helps, and websites ignore your true IP address.
 
 You can set an arbitrary IP address, which you would like others to perceive as yours, by simply entering it into the corresponding field. To use the default IP address, leave the field blank.
 

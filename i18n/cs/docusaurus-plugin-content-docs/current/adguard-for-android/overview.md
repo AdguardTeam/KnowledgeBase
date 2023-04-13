@@ -220,7 +220,7 @@ Zatímco některé funkce AdGuardu pro Android jsou zdarma, jiné vyžadují [za
 * Blokování reklam ve všech aplikacích (nejen v prohlížečích)
 * Vlastní filtry
 
-Přečtěte si [tento článek](./general/license/activation) a zjistěte, jak aktivovat licenční klíč.
+Přečtěte si [tento článek](/general/license/activation) a zjistěte, jak aktivovat licenční klíč.
 
 ## Další funkce
 

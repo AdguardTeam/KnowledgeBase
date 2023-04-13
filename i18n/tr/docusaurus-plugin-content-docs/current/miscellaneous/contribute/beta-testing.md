@@ -3,7 +3,7 @@ title: AdGuard beta testing
 sidebar_position: 1
 ---
 
-There is an AdGuard app for virtually every major platform out there, and we regularly release updates for all of them. This would not be possible without beta testing and, more importantly, beta testers. Want to become one? Here's how you can do it.
+There is an AdGuard app for virtually every major platform out there, and we regularly release updates for all of them. This would not be possible without beta testing and, more importantly, beta testers. Bunlardan biri olmak ister misiniz? İşte bunu nasıl yapabileceğiniz.
 
 ## How to become a beta tester {#intro}
 
@@ -13,7 +13,7 @@ In any case, every single thing you need to know is gathered on a [dedicated pag
 
 If you want to skip the description part and get straight to the action, you can apply [here](https://surveys.adguard.com/beta_testing_program/form.html). Your application will be reviewed within 1-3 working days, and you'll get a reply via email.
 
-## How to report a bug {#report-a-bug}
+## Hata nasıl bildirilir {#report-a-bug}
 
 If you spotted a bug or just want to share your suggestion, let us know in any of the possible ways:
 

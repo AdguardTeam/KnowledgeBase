@@ -5,7 +5,7 @@ sidebar_position: 6
 
 Protože každá poctivá a dobře odvedená práce by měla být odměněna, mohou aktivní překladatelé na Crowdinu požádat o bezplatný licenční klíč AdGuardu a předplatné VPN.
 
-Chcete-li požádat o **roční licenci AdGuardu** nebo **roční předplatné AdGuard VPN**, musíte přeložit alespoň **500** a **2500** slov.
+Chcete-li požádat o **roční licenci AdGuardu** nebo **roční předplatné AdGuard VPN**, musíte přeložit alespoň **500**, respektive **2500** slov.
 
 Chcete-li zkontrolovat průběh překladů, otevřete projekt, na kterém jste pracovali, klikněte na kartu *Reports* a vyberte možnost *My Contribution*. Pro získání licence můžete sečíst počet přeložených slov v různých projektech.
 
