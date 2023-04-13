@@ -220,7 +220,7 @@ This option is available on the *Settings → DNS Filtering → DNS Requests blo
 * Блокировка рекламы в приложениях (не только в браузерах)
 * Собственные фильтры
 
-Read [this article](/general/license/activation) to learn how to activate the license key.
+Прочтите [эту статью](/general/license/activation), чтобы узнать, как активировать лицензионный ключ.
 
 ## Другие функции
 

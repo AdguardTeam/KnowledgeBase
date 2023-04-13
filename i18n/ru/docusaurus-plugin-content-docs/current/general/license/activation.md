@@ -3,11 +3,11 @@ title: Как активировать лицензию
 sidebar_position: 3
 ---
 
-## How to activate a license
+## Как активировать лицензию
 
 Чтобы активировать лицензию, перейдите в раздел *Лицензия* вашего продукта AdGuard и найдите поле *Войти* или кнопку *Активировать*. Для входа используйте электронную почту и пароль от вашего аккаунта AdGuard. Если у вас ещё нет аккаунта, вам будет предложено создать его.
 
-> Note: To activate a license via AdGuard account, you need to have a valid license with at least one open slot there. If your license is already used on a maximum number of devices, you can [upgrade it](../payment-options#upgrade) or [transfer it from one device to another](../transfer).
+> Примечание: чтобы активировать лицензию через аккаунт AdGuard, нужна действующая лицензия с хотя бы одним свободным слотом. Если ваша лицензия уже используется на максимальном количестве устройств, вы можете [улучшить её](../payment-options#upgrade) или [перенести её с одного устройства на другое](../transfer).
 
 Кроме того, для активации лицензии можно использовать лицензионный ключ [](../what-is#license-key).
 
@@ -17,11 +17,11 @@ sidebar_position: 3
 
 1. Откройте приложение AdGuard
 
-To do it, double-click the AdGuard icon on the desktop:
+Дважды щёлкните по иконке AdGuard на рабочем столе:
 
 ![Иконка AdGuard на рабочем столе](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowsEn.png)
 
-or double-click the AdGuard icon in the system tray:
+либо дважды щёлкните по иконке AdGuard в области уведомлений на панели задач:
 
 ![Иконка AdGuard в системном трей-меню](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windows2En.png)
 
