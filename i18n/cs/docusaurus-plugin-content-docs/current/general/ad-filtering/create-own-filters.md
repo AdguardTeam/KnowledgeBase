@@ -854,7 +854,7 @@ Hodnota `$csp` může být v případě pravidel pro výjimky prázdná. Viz ní
 
 Tento modifikátor zcela mění chování pravidla. Pokud je použitý na pravidlo, nezablokuje odpovídající požadavek. Namísto toho se upraví záhlaví odpovědí.
 
-> In order to use this type of rules, it is required to have the basic understanding of the [Permissions Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Permissions_Policy) security layer.
+> Pro použití tohoto typu pravidel je nutné mít základní znalosti o vrstvě zabezpečení [Permissions Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Permissions_Policy).
 
 For the requests matching a `$permissions` rule, AdGuard strengthens response's permissions policy by adding additional permission policy equal to the `$permissions` modifier contents. Pravidla `$permissions` jsou aplikována nezávisle na jakémkoli jiném typu pravidla. Ostatní základní pravidla na to nemají žádný vliv, **kromě výjimek na úrovni dokumentu** (viz část s příklady).
 
