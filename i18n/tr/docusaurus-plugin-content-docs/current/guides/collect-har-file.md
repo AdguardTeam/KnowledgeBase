@@ -1,5 +1,5 @@
 ---
-title: How to collect a HAR file
+title: HAR dosyası nasıl toplanır
 sidebar_position: 1
 ---
 
@@ -7,9 +7,9 @@ HAR files help our technical support teams troubleshoot complex issues. To creat
 
 ## Chrome {#chrome}
 
-To create a HAR file in Chrome:
+Chrome'da bir HAR dosyası oluşturmak için:
 
-1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
+1. Sorunun oluştuğu URL'ye gidin. Sorunu henüz yeniden oluşturmayın.
 
 2. Open ***Developer Tools***:
 
@@ -36,7 +36,7 @@ To create a HAR file in Chrome:
 
 ## Edge {#edge}
 
-1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
+1. Sorunun oluştuğu URL'ye gidin. Sorunu henüz yeniden oluşturmayın.
 
 2. Open ***Developer Tools***:
 
@@ -65,7 +65,7 @@ To create a HAR file in Chrome:
 
 To create a HAR file in Firefox:
 
-1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
+1. Sorunun oluştuğu URL'ye gidin. Sorunu henüz yeniden oluşturmayın.
 
 2. Open Developer Tools in ***Network*** mode:
 - From menu: ***Menu→Web Developer→Network***.
@@ -90,9 +90,9 @@ To create a HAR file in Firefox:
 
 ## Internet Explorer 11 {#ie11}
 
-To create a HAR file in Internet Explorer 11:
+Internet Explorer 11'de HAR dosyası oluşturmak için:
 
-1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
+1. Sorunun oluştuğu URL'ye gidin. Sorunu henüz yeniden oluşturmayın.
 
 2. Open Developer Tools in ***Network*** mode:
 - From Tools cog wheel menu: ***Developer Tools*** → ***Network tab***.
@@ -114,12 +114,12 @@ To create a HAR file in Internet Explorer 11:
 
 ## Safari {#safari}
 
-To create a HAR file in Safari:
+Safari'de bir HAR dosyası oluşturmak için:
 
 1. Check the Safari menu bar at the top of the screen for a ***Develop*** menu. Check the checkbox at the bottom next to ***Show Develop menu in menu bar***.
 - If not visible, turn it on by going to ***Safari→Preferences→Advanced***.
 
-2. Go to the URL where the issue occurs. Do not reproduce the issue yet.
+2. Sorunun oluştuğu URL'ye gidin. Sorunu henüz yeniden oluşturmayın.
 
 3. Open ***Network*** tab in Web Inspector:
 - From menu: ***Develop→Show Web Inspector→Network***.

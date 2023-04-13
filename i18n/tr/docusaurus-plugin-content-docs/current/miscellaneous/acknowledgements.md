@@ -130,15 +130,15 @@ Also a huge thanks and gratitude to all beta testers and other engaged users, wh
 * Andy Kleinert (AndyKl) — translator and proofreader to German in Crowdin
 * BigDargon — contributed the hostsVN project as a source to the list of AdGuard DNS
 * Blaz — started as a filter contributor and now working at AdGuard
-* Boo Berry — forum and Telegram group moderator
-* buuuuuuu190 — beta tester, active AdGuard Forum member
-* clarke — beta tester, active AdGuard Forum member
-* [dartrax](https://github.com/dartrax) — beta tester, active AdGuard Forum member
-* dja2k — beta tester, active AdGuard Forum member
+* Boo Berry - forum ve Telegram grubu moderatörü
+* buuuuuuu190 — beta test kullanıcısı, aktif AdGuard Forum üyesi
+* clarke — beta test kullanıcısı, aktif AdGuard Forum üyesi
+* [dartrax](https://github.com/dartrax) — beta test kullanıcısı, aktif AdGuard Forum üyesi
+* dja2k — beta test kullanıcısı, aktif AdGuard Forum üyesi
 * Eduardo Addad de Oliveira (eduardoaddad) — translator and proofreader to Portuguese and Portuguese, Brazilian in Crowdin
-* fabjazz — beta tester, active AdGuard Forum member
+* fabjazz — beta test kullanıcısı, aktif AdGuard Forum üyesi
 * Görkem Emrah Güler (gork7777) — translator and proofreader to Turkish in Crowdin
-* hanschke — beta tester, active AdGuard Forum member
+* hanschke — beta test kullanıcısı, aktif AdGuard Forum üyesi
 * iDjay — outstanding beta tester of AdGuard for iOS
 * Imre Kristoffer Eilertsen (DandelionSprout) — maintainer of "Dandelion Sprout’s Nordic Filters" that are included in all AdGuard tools
 * IONIL — translator and proofreader to Hebrew in Crowdin
@@ -175,4 +175,4 @@ Also a huge thanks and gratitude to all beta testers and other engaged users, wh
 
 We also want to thank the [xda-developers users](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/). Thank you for your helpful feedback!
 
-We always appreciate comments from our users, especially constructive ones. You can always contact us to share your thoughts about AdGuard, request new features, and submit bugs. Join the [AdGuard Forum](http://forum.adguard.com/forumdisplay.php?25-English-Forums), [Subreddit](https://reddit.com/r/adguard), [Xda-developers Forum](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/) or visit our page on [GitHub](https://github.com/AdguardTeam).
+Kullanıcılarımızdan gelen yorumları, özellikle yapıcı olanları her zaman takdir ediyoruz. You can always contact us to share your thoughts about AdGuard, request new features, and submit bugs. Join the [AdGuard Forum](http://forum.adguard.com/forumdisplay.php?25-English-Forums), [Subreddit](https://reddit.com/r/adguard), [Xda-developers Forum](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/) or visit our page on [GitHub](https://github.com/AdguardTeam).

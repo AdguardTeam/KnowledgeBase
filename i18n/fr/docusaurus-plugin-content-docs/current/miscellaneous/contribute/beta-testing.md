@@ -1,38 +1,38 @@
 ---
-title: AdGuard beta testing
+title: Testing bêta de AdGuard
 sidebar_position: 1
 ---
 
-There is an AdGuard app for virtually every major platform out there, and we regularly release updates for all of them. This would not be possible without beta testing and, more importantly, beta testers. Want to become one? Here's how you can do it.
+Il existe une application AdGuard pour pratiquement toutes les plates-formes principales, et nous publions régulièrement des mises à jour pour chacune d'entre elles. Cela ne serait pas possible sans les tests bêta et, surtout, sans les bêta-testeurs. Vous souhaitez devenir bêta-testeur ? Voici comment faire.
 
-## How to become a beta tester {#intro}
+## Comment devenir bêta-testeur {#intro}
 
-Our requirements are easy: use AdGuard, upgrade to the beta version when it becomes available, and report any bugs you notice. However, you will need either a [forum](https://forum.adguard.com/index.php) or a [GitHub](https://github.com/) account (or both) to become our beta tester, so you may want to get that out of the way first.
+Nos exigences sont simples : utilisez AdGuard, passez à la version bêta lorsqu'elle sera disponible et signalez les bugs que vous constatez. Cependant, vous aurez besoin d'un compte sur le [forum](https://forum.adguard.com/index.php) ou d'un compte [GitHub](https://github.com/) (ou les deux) pour devenir notre testeur bêta, vous voudrez peut-être d'abord vous charger de ça.
 
-In any case, every single thing you need to know is gathered on a [dedicated page](https://adguard.com/en/beta.html).
+De toute façon, tout ce que vous devez savoir est rassemblé sur une [page dédiée](https://adguard.com/en/beta.html).
 
-If you want to skip the description part and get straight to the action, you can apply [here](https://surveys.adguard.com/beta_testing_program/form.html). Your application will be reviewed within 1-3 working days, and you'll get a reply via email.
+Si vous souhaitez ignorer la partie description et passer directement à l'action, vous pouvez vous inscrire [ici](https://surveys.adguard.com/beta_testing_program/form.html). Votre candidature sera examinée dans un délai de 1 à 3 jours ouvrables et vous recevrez une réponse par e-mail.
 
-## How to report a bug {#report-a-bug}
+## Comment signaler un problème {#report-a-bug}
 
-If you spotted a bug or just want to share your suggestion, let us know in any of the possible ways:
+Si vous avez repéré un bug ou si vous souhaitez simplement partager votre suggestion, faites-le nous savoir de l'une des manières possibles :
 
-* Go to [forum.adguard.com](https://forum.adguard.com/index.php) and post there a new thread (or find an existing one) in the beta forum [category](https://forum.adguard.com/index.php?categories/48/). Make sure to read [forum rules](https://forum.adguard.com/index.php?threads/14859/);
+* Rendez-vous sur le [forum.adguard.com](https://forum.adguard.com/index.php) et postez-y un nouveau fil de discussion (ou trouvez-en un déjà existant) dans la [catégorie](https://forum.adguard.com/index.php?categories/48/) du forum bêta. Assurez-vous de lire les [règles du forum](https://forum.adguard.com/index.php?threads/14859/) ;
 
-* Go to [GitHub](https://github.com/AdguardTeam/) and find a suitable repository. Create a new issue there and describe the bug/feature request in detail.
+* Accédez à [GitHub](https://github.com/AdguardTeam/) et trouvez un référentiel approprié. Créez-y un nouveau problème et décrivez le bogue ou la demande de fonctionnalité en détail.
 
-The above two methods are the most preferred, but you can use others if necessary:
+Les deux méthodes ci-dessus sont les plus privilégiées, mais vous pouvez en utiliser d'autres si nécessaire :
 
-* Find us on various social media platforms, like [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/), etc. However, this is not the most convenient way to discuss technical matters.
+* Retrouvez-nous sur des plateformes de médias sociaux diverses, comme [Facebook](https://www.facebook.com/AdguardFr/), [Reddit](https://www.reddit.com/r/Adguard/), etc. Toutefois, ce n'est pas le moyen le plus pratique de discuter de questions techniques.
 
-* Email our support team from the Support tab in the app or write directly to [support@adguard.com](mailto:support@adguard.com).
+* Envoyez un e-mail à notre équipe d'assistance depuis l'onglet Assistance dans l'application ou écrivez directement à [support@adguard.com](mailto:support@adguard.com).
 
-## How to activate the beta key in the iOS application {#ios}
+## Comment activer la clef bêta dans l'application iOS {#ios}
 
-If you have already received a beta key and it is listed in your `adguard.com` account, go to the app and open the license section (Get Premium). Once there, enter the credentials from your AdGuard account. After that, the premium features will become available automatically.
+Si vous avez déjà reçu une clef bêta et qu'elle est répertoriée dans votre compte `adguard.com`, accédez à l'application et ouvrez la section licence (Obtenez Premium). Une fois là-bas, saisissez les informations d'identification de votre compte AdGuard. Après cela, les fonctionnalités premium seront disponibles automatiquement.
 
-### What else?
+### Quoi d'autre?
 
-There is not much more to add. You don't have to go out of your way to find bugs. You can continue using AdGuard as usual. However, if you encounter a bug, please report it. Of course, we appreciate any additional effort and/or extra forum activity, etc.
+Il n'y a pas grand-chose à ajouter. Vous n'avez pas à sortir de votre chemin pour trouver des bugs. Vous pouvez continuer à utiliser AdGuard comme d'habitude. Cependant, si vous rencontrez un bogue, merci de le signaler. Bien sûr, nous apprécions tout effort supplémentaire et/ou activité supplémentaire sur le forum, etc.
 
-Occasionally, you will receive our newsletters, keeping you informed of the latest changes in the beta (in case you missed them) and other important news. You can unsubscribe from it at any time.
+Occasionnellement, vous recevrez nos lettres d'information, qui vous tiendront au courant des dernières modifications apportées à la version bêta (au cas où vous les auriez manquées) et d'autres nouvelles importantes. Vous pouvez vous en désinscrire à tout moment.

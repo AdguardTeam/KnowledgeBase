@@ -23,7 +23,7 @@ AdGuard pro iOS je aplikace uvedená v App Store. Chcete-li AdGuard nainstalovat
 
 ![Na hlavní obrazovce App Store klepněte na možnost Hledat *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/1.png)
 
-Do vyhledávacího pole zadejte _adguard_ a klepněte na řetězec _adGuard_, který bude mezi výsledky vyhledávání.
+Do vyhledávacího pole zadejte _adguard_ a klepněte na řetězec _adguard_, který bude mezi výsledky vyhledávání.
 
 ![Do vyhledávacího pole zadejte "AdGuard" *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/2.png)
 

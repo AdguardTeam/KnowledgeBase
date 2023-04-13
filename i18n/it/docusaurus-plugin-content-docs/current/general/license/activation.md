@@ -3,11 +3,11 @@ title: Come attivare
 sidebar_position: 3
 ---
 
-## Come attivare una licenza
+## How to activate a license
 
 Per attivare la tua licenza, vai alla sezione *Licenza* del tuo prodotto AdGuard e trova il campo *Accedi* o il pulsante *Attiva*. Utilizza l'email e la password del tuo profilo di AdGuard per accedere. Se ancora non hai un profilo, ti sarà offerto di crearne uno.
 
-> Nota: per attivare una licenza tramite il profilo di AdGuard, devi possederne una valida, con almeno uno slot disponibile. Se la tua licenza è già in uso su un numero massimo di dispositivi, puoi [aggiornarla](#how-to-upgrade-a-license) o [trasferirla da un dispositivo a un altro](#how-to-transfer-a-license-to-another-device).
+> Note: To activate a license via AdGuard account, you need to have a valid license with at least one open slot there. If your license is already used on a maximum number of devices, you can [upgrade it](../payment-options#upgrade) or [transfer it from one device to another](../transfer).
 
 Altrimenti, puoi utilizzare una [chiave di licenza](../what-is#license-key) per attivarla.
 
@@ -98,30 +98,3 @@ o doppio click sull'icona di AdGuard nella barra delle applicazioni di sistema:
 4. Inserisci l'**email** e la **password** dal tuo **profilo di AdGuard**
 
 ![Accedi *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense2en.png)
-
-## Come trasferire una licenza a un altro dispositivo
-
-La chiave di licenza è attivabile su un [numero limitato di dispositivi](../what-is#devices). Se la chiave è già in uso sul numero massimo consentito di dispositivi, devi scollegare un dispositivo dal tuo profilo. Puoi farlo in tre modi:
-* cliccando il pulsante *Ripristina licenza* (si applica alle app desktop),
-* disconnettendoti dal tuo profilo su un prodotto di AdGuard,
-* cliccando l'icona della croce affianco a un dispositivo, nel tuo profilo di AdGuard.
-
-Dopo aver scollegato il numero di dispositivi necessari, puoi accedere al tuo profilo di AdGuard sui nuovi dispositivi. La licenza sarà vincolata a essi.
-
-## Come aggiornare una licenza
-
-Per rendere più comodo l'utilizzo dei tuoi prodotti di AdGuard, puoi aggiornare la tua licenza.
-
-1. Per aumentare la funzionalità dei tuoi prodotti di AdGuard, puoi **aggiornare la tua licenza gratuita o di prova alla versione completa**.
-2. Per estendere il numero di dispositivi, puoi **aggiornare la tua licenza Personale di AdGuard Ad Blocker a Famiglia**.
-3. Inoltre, puoi **aggiornare il tuo abbonamento a una Licenza A Vita**.
-
-Puoi aggiornare la tua licenza:
-* acquistandone un'altra sui siti web ufficiali dei prodotti di AdGuard,
-* cliccando il pulsante *Aggiorna* sul tuo profilo di AdGuard.
-
-## Come annullare un abbonamento
-
-L'abbonamento può essere annullato sul tuo profilo di AdGuard. Per annullarlo, clicca sulla scheda o sull'icona a forma di croce affianco a esso e seleziona *Annulla abbonamento*. L'abbonamento annullato sarà valido fino alla sua data di scadenza.
-
-> Gli abbonamenti acquistati sull'App Store possono essere gestiti nel profilo dell'App Store o nelle impostazioni del dispositivo.

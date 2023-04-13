@@ -1,20 +1,22 @@
 ---
-title: ご購入方法
+title: How to purchase/upgrade
 sidebar_position: 2
 ---
 
-## AdGuardライセンスのご購入方法
+## How to purchase a license{#purchase}
 
 AdGuardライセンスは [adguard.com](https://adguard.com/license.html)にてご購入いただけます: 1.  「購入する」を押してご購入ページへ移動 2.  お好みのライセンス種類を選択（1年版／永久版、パーソナル／ファミリー） 3.  メールアドレスを入力 ※このメールアドレスにはライセンスキーとAdGuardアカウント認証用リンクが送信されますので、ご入力の際には間違いのないよう十分ご注意ください。 4.  お支払い方法を選択 iOS用「AdGuard Pro」は、App Storeで購入することができます。 また、AdGuard広告ブロッカーライセンスは、様々な販売代理店からも販売されています。
 
 > ※AdGuard製品が各アプリストアや販売代理店で入手可能かどうかは、お住まいの国によって異なります。
 
-## 返金を受ける方法
+## How to upgrade a license{#upgrade}
 
-当社 [販売条件](https://adguard.com/terms-of-sale.html)に基づき、お客様が https://adguard.com で購入したAdGuardライセンスキーの全額返金を受けることができます。 返金をご希望の場合は、AdGuardサポートチーム（ **support@adguard.com** （日本語対応））まで、ご利用になられたお支払い方法を明記の上、返金ご希望であることをご連絡ください。
+To make more use of your AdGuard products, you can upgrade your license for the following benefits.
 
-以下のような場合、返金をお断りすることがありますのでご了承ください:
-* ライセンス購入日から60日間以上経過した場合
-* adguard.com ではなく販売代理店からライセンスを購入された場合
-* App Storeでライセンスを購入された場合（App Storeでご購入の場合、AdGuardから返金することはできず、Apple側の判断での返金となります）
-* ライセンスキーのアップグレードまたは延長という一部返金を申し込まれた場合
+1. お使いのAdGuard製品の機能を拡張するために、 **無料または試用版ライセンスをフル版にアップグレードすることができます**。
+2. To extend the number of devices, you can **upgrade your Personal license to a Family one**.
+3. You can also **upgrade your [subscription](../what-is) to a Lifetime license**.
+
+ライセンスのアップグレードは、以下の方法いずれかで行えます:
+  * purchasing another license on the [official AdGuard website](https://adguard.com),
+  * clicking the *Upgrade to Lifetime* and/or *Increase device limit* in your AdGuard account: ![Upgrade *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)

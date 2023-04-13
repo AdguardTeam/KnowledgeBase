@@ -1,6 +1,6 @@
 ---
 title: FAQ sobre licencias heredadas
-sidebar_position: 4
+sidebar_position: 6
 ---
 
 Escribimos este artículo para evitar confusiones y explicar en detalle cómo puedes renovar/actualizar una licencia de AdGuard obsoleta (heredada).

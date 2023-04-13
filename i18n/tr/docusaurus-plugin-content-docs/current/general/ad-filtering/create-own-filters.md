@@ -15,7 +15,7 @@ To describe the syntax of our filtering rules, we use [Augmented BNF for Syntax 
 
 Any line that starts with an exclamation mark is a comment. In the list of rules it is displayed in gray color. AdGuard will ignore this line, so you can write anything you want. Comments are usually placed above the rules and used to describe what a rule does.
 
-For example:
+Örneğin:
 
 ```
 ! This is the comment. Under this line there is an actual filtering rule.
@@ -24,11 +24,11 @@ For example:
 
 ## Örnekler
 
-#### Blocking by domain name
+#### Alan adına göre engelleme
 
-![Blocking by domain name](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/0_blocking_domain.svg)
+![Alan adına göre engelleme](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/0_blocking_domain.svg)
 
-**This rule blocks:**
+**Bu kural şunları engeller:**
 
 * `http://example.org/ad1.gif`
 * `http://subdomain.example.org/ad1.gif`
@@ -43,7 +43,7 @@ For example:
 
 ![Blocking exact address](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/1_exact_address.svg)
 
-**This rule blocks:**
+**Bu kural şunları engeller:**
 
 * `http://example.org/`
 
@@ -57,7 +57,7 @@ Filtering rules support numerous modifiers that allow you to fine-tune the rule 
 
 ![Basic rule modifiers](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/2_basic_rule_options.svg)
 
-**This rule blocks:**
+**Bu kural şunları engeller:**
 
 * `http://example.org/script.js` if this script is loaded from `example.com`.
 
@@ -70,7 +70,7 @@ Filtering rules support numerous modifiers that allow you to fine-tune the rule 
 
 ![](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/3_basic_exception.svg)
 
-**This rule unblocks:**
+**Bu kural şunların engelini kaldırır:**
 
 * `http://example.org/banner.png` even if there is a blocking rule for this address.
 
@@ -109,7 +109,7 @@ Cosmetic rules are based on using a special language named CSS, which every brow
 
 #### Trusted filters {#trusted-filters}
 
-Some rules can be used only in trusted filters. This category includes:
+Some rules can be used only in trusted filters. Bu kategori şunları içerir:
 > * filter lists [created by the AdGuard team](../adguard-filters),
 > * custom filter lists installed as `trusted`,
 > * user rules.
@@ -137,7 +137,7 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 * **`@@`** — a marker that is used in rules of exception. To turn off filtering for a request, start your rule with this marker.
 * **`modifiers`** — parameters that "clarify" the basic rule. Some of them limit the rule scope and some can completely change they way it works.
 
-### Special characters {#basic-rules-special-characters}
+### Özel karakterler {#basic-rules-special-characters}
 
 * **`*`** — a wildcard character. It is used to represent "any set of characters". This can also be an empty string or a string of any length.
 * **`||`** — matching the beginning of an address. With this character you do not have to specify a particular protocol and subdomain in address mask. It means, `||` stands for `http://*.`, `https://*.`, `ws://*.`, `wss://*.` at once.
@@ -761,7 +761,7 @@ This modifier completely changes the rule behavior. If it is applied, the rule w
 
 > `$replace` value can be empty in the case of exception rules. See examples section for further information.
 
-> **Multiple rules matching a single request**
+> **Tek bir istekle eşleşen birden fazla kural**
 > 
 > In case if multiple `$replace` rules match a single request, we will apply each of them. **The order is defined alphabetically.**
 
@@ -822,7 +822,7 @@ This modifier completely changes the rule behavior. If it is applied to a rule, 
 
 For the requests matching a `$csp` rule, we will strengthen response security policy by enhancing the content security policy, similar to the content security policy of the `$csp` modifier contents. `$csp` rules are applied independently from any other rule type. Other basic rules have no influence on it **save for document-level exceptions** (see the examples section below).
 
-> **Multiple rules matching a single request**
+> **Tek bir istekle eşleşen birden fazla kural**
 > 
 > In case if multiple `$csp` rules match a single request, we will apply each of them.
 
@@ -854,9 +854,9 @@ For the requests matching a `$csp` rule, we will strengthen response security po
 
 This modifier completely changes the rule behavior. If it is applied to a rule, it will not block the matching request. The response headers are going to be modified instead.
 
-> In order to use this type of rules, it is required to have the basic understanding of the [Feature Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Feature_Policy) security layer.
+> In order to use this type of rules, it is required to have the basic understanding of the [Permissions Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Permissions_Policy) security layer.
 
-For the requests matching a `$permissions` rule, AdGuard strengthens response's feature policy by adding additional feature policy equal to the `$permissions` modifier contents. `$permissions` rules are applied independently from any other rule type. Other basic rules have no influence on it **save for document-level exceptions** (see the examples section).
+For the requests matching a `$permissions` rule, AdGuard strengthens response's permissions policy by adding additional permission policy equal to the `$permissions` modifier contents. `$permissions` rules are applied independently from any other rule type. Other basic rules have no influence on it **save for document-level exceptions** (see the examples section).
 
 > **Multiple rules matching a single request.**
 > 
@@ -864,21 +864,21 @@ For the requests matching a `$permissions` rule, AdGuard strengthens response's 
 
 **Söz dizimi**
 
-`$permissions` value syntax is similar to the `Permissions-Policy` (or `Feature-Policy`) header [syntax](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy). The list of the available directives is available [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives).
+`$permissions` value syntax is similar to the `Permissions-Policy` header [syntax](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy) with one exception: comma that separates several features **MUST** be escaped — see examples below. The list of the available directives is available [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives).
 
 `$permissions` value can be empty in the case of exception rules — see examples below.
 
 > **Limitations**
 > 
-> 1. Two characters are forbidden in the `$permissions` value: `,` and `$`;
+> 1. Characters forbidden in the `$permissions` value: `$`;
 > 2. `$permissions` is compatible with the limited list of modifiers: `$domain`, `$important`, and `$subdocument`.
 
 **Örnekler**
 
-* `||example.org^$permissions=sync-xhr 'none'` disallows synchronous `XMLHttpRequest` requests across `example.org`.
-* `@@||example.org/page/*$permissions=sync-xhr 'none'` disables all rules with the `$permissions` modifier exactly matching `sync-xhr 'none'` on all the pages matching the rule pattern. For instance, the rule above.
+* `||example.org^$permissions=sync-xhr=()` disallows synchronous `XMLHttpRequest` requests across `example.org`.
+* `@@||example.org/page/*$permissions=sync-xhr=()` disables all rules with the `$permissions` modifier exactly matching `sync-xhr=()` on all the pages matching the rule pattern. For instance, the rule above.
 * `@@||example.org/page/*$permissions` disables all the `$permissions` rules on all the pages matching the rule pattern.
-* `$domain=example.org|example.com,permission=oversized-images 'none'; sync-script 'none'; unsized-media 'none';` disallows oversized images, synchronous scripts and unsized media features across `example.org` and `example.com`.
+* `$domain=example.org|example.com,permissions=oversized-images=()\, sync-script=()\, unsized-media=()` disallows oversized images, synchronous scripts and unsized media features across `example.org` and `example.com`.
 * `@@||example.org^$document` or `@@||example.org^$urlblock` disables all the `$permission` rules on all the pages matching the rule pattern.
 
 > **Compatibility with different versions of AdGuard**
@@ -913,7 +913,7 @@ For the requests matching a `$permissions` rule, AdGuard strengthens response's 
 
 The `$cookie` modifier completely changes rule behavior. Instead of blocking a request, this modifier makes us suppress or modify the `Cookie` and `Set-Cookie` headers.
 
-> **Multiple rules matching a single request**
+> **Tek bir istekle eşleşen birden fazla kural**
 > 
 > In case if multiple `$cookie` rules match a single request, we will apply each of them one by one.
 
@@ -1036,7 +1036,7 @@ AdGuard uses the same filtering rules syntax as uBlock Origin. Also, it is compa
 
 > `$redirect` rules' priority is higher than the regular basic blocking rules' priority. This means that if there is a basic blocking rule (even with `$important` modifier), `$redirect` rule will prevail over it. If there is an allowlist (`@@`) rule matching the same URL, it will disable redirecting as well (unless the `$redirect` rule is also marked as `$important`).
 
-##### Disabling `$redirect` rules
+##### `$redirect` kurallarını devre dışı bırakma
 
 
 * `||example.org/script.js$script,redirect=noopjs` — this rule redirects all requests to `example.org/script.js` to the resource named `noopjs`.
@@ -1162,7 +1162,7 @@ Use `@@` to negate `$removeparam`:
 * `@@||example.org^$removeparam=param` negates the rule with `$removeparam=param` for any request matching `||example.org^`.
 * `@@||example.org^$removeparam=/regexp/` negates the rule with `$removeparam=/regexp/` for any request matching `||example.org^`.
 
-> **Multiple rules matching a single request**
+> **Tek bir istekle eşleşen birden fazla kural**
 > 
 > In the case when multiple `$removeparam` rules match a single request, each of them will be applied one by one.
 
@@ -1246,7 +1246,7 @@ Use `@@` to negate `$removeheader`:
 
 > `$removeheader` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers will not do that. For example, `@@||example.com^` will not disable `$removeheader=p` for requests to `example.com`, but `@@||example.com^$urlblock` will.
 
-> **Multiple rules matching a single request**
+> **Tek bir istekle eşleşen birden fazla kural**
 > 
 > In case of multiple `$removeheader` rules matching a single request, we will apply each of them one by one.
 
@@ -1340,7 +1340,7 @@ Use `@@` to negate `$removeheader`:
 
 **Exceptions**
 
-Basic URL exceptions shall not disable rules with `$hls` modifier. They can be disabled as described below:
+Basic URL exceptions shall not disable rules with `$hls` modifier. Aşağıda açıklandığı gibi devre dışı bırakılabilirler:
 * `@@||example.org^$hls` disables all `$hls` rules for responses from URLs matching `||example.org^`.
 * `@@||example.org^$hls=text` disables all `$hls` rules with the value of the `$hls` modifier equal to `text` for responses from URLs matching `||example.org^`.
 
@@ -1467,7 +1467,7 @@ Keep in mind, though, that all JSONPath implementations have unique features/qui
 
 **Exceptions**
 
-Basic URL exceptions shall not disable rules with `$jsonprune` modifier. They can be disabled as described below:
+Basic URL exceptions shall not disable rules with `$jsonprune` modifier. Aşağıda açıklandığı gibi devre dışı bırakılabilirler:
 * `@@||example.org^$jsonprune` disables all `$jsonprune` rules for responses from URLs matching `||example.org^`.
 * `@@||example.org^$jsonprune=text` disable all `$jsonprune` rules with the value of the `$jsonprune` modifier equal to `text` for responses from URLs matching `||example.org^`.
 
@@ -1777,7 +1777,7 @@ The same can be achieved by adding this rule:
 
 We recommend to use this kind of exceptions only if it is not possible to change the hiding rule itself. In other cases it is better to change the original rule, using domain restrictions.
 
-### CSS rules {#cosmetic-css-rules}
+### CSS kuralları {#cosmetic-css-rules}
 
 Sometimes, simple hiding of an element is not enough to deal with advertising. For example, blocking an advertising element can just break the page layout. In this case AdGuard can use rules that are much more flexible than hiding rules. With this rules you can basically add any CSS styles to the page.
 
@@ -2449,7 +2449,7 @@ The `:not()` pseudo-class allows to select elements which are *not matched* by s
 This pseudo-class was basically a shortcut for `:not(:has())`. It was supported by ExtendedCss for better compatibility with some filters subscriptions.
 
 
-### Cosmetic rules priority {#cosmetic-rules-priority}
+### Kozmetik kuralları önceliği {#cosmetic-rules-priority}
 
 The way **element hiding** and **CSS rules** are applied is platform-specific.
 
@@ -2537,7 +2537,7 @@ Specifies the maximum length for content of HTML element. If this parameter is s
 > 
 > If this parameter is not specified, the `max-length` is considered to be 8192.
 
-For example:
+Örneğin:
 ```
 $$div[tag-content="banner"][max-length="400"]
 ```
@@ -2547,7 +2547,7 @@ This rule will remove all the `div` elements, whose code contains the substring 
 
 Specifies the minimum length for content of HTML element. If this parameter is set and the content length is less than preset value, a rule does not apply to the element.
 
-For example:
+Örneğin:
 ```
 $$div[tag-content="banner"][min-length="400"]
 ```
@@ -2949,7 +2949,7 @@ example.org#@#.adBanner
 !+ HINT_NAME1(PARAMS) HINT_NAME2(PARAMS)
 ```
 
-> Multiple hints can be applied.
+> Birden fazla ipucu uygulanabilir.
 
 #### `NOT_OPTIMIZED` hint
 
@@ -3080,7 +3080,7 @@ When the value of the `debug` property is `true`, only information about this se
 #$?#.banner { display: none; debug: true; }
 ```
 
-**Enabling global debug:**
+**Global hata ayıklamayı etkinleştirme:**
 
 When the value of the `debug` property is `global`, the console will display information about all extended CSS selectors that have matches on the current page, for all the rules from any of the enabled filters.
 

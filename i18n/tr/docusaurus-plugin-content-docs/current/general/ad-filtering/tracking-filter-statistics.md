@@ -23,7 +23,7 @@ If you enable the *Send statistics for ad filters usage* option, the following i
 
 * Extension version
 * Browser type (Chrome/Firefox/Opera/Yandex.Browser/Safari).
-* List of enabled ad filters.
+* Etkinleştirilmiş reklam filtrelerinin listesi.
 * The list that consists of the following elements:
   * *The domain name of the website*
   * *The number of recent page views*

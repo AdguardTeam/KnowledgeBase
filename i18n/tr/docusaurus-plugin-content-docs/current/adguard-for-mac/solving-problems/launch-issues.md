@@ -17,7 +17,7 @@ If you have problems launching AdGuard for Mac on Big Sur and Monterey operating
 6. Enable SIP (Launch **Terminal** from the **Utilities** menu and type `csrutil enable`).
 7. Launch the AdGuard app and enable protection.
 
-## Launch issues on macOS 10
+## macOS 10'da başlatma sorunları
 
 If you have problems launching AdGuard for Mac on Sierra, Mojave and Catalina operating systems, please use this instruction:
 
@@ -30,7 +30,7 @@ If you have problems launching AdGuard for Mac on Sierra, Mojave and Catalina op
 4. Open **Utilities** → **Terminal**.
 5. Enter `csrutil disable`.
 6. Enter administrator password.
-7. Reboot your Mac.
+7. Mac'inizi yeniden başlatın.
 8. Open **Terminal** and enter the following command: `sudo chflags restricted /private/var/db/KernelExtensionManagement`.
 9. Reboot your Mac in recovery mode.
 10. Open **Utilities** → **Terminal** → Enter `csrutil enable` → Enter administrator password → Reboot your Mac.

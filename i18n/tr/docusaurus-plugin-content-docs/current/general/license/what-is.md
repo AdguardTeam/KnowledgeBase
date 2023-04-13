@@ -26,7 +26,7 @@ Different licenses can be used with a different number of devices:
 
 ## What is a license key{#license-key}
 
-A license key is a unique sequence of characters that represents an AdGuard Ad Blocker license. It is automatically registered for the email you used for license purchase. With a license key, you can:
+A license key is a unique sequence of characters that represents an AdGuard Ad Blocker license. It is automatically registered for the email you used for license purchase. Lisans anahtarıyla şunları yapabilirsiniz:
 * log in to your AdGuard account in some products (e.g. AdGuard for Windows),
 * [activate your license](../activation) in a product, if you don't have an AdGuard account,
 * bind your license to your AdGuard account and unbind it.

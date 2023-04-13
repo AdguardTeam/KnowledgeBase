@@ -1,23 +1,22 @@
 ---
-title: How to get system logs
+title: How to get Logcat log
 sidebar_position: 4
 ---
 
-Sometimes a regular log may not be enough to identify the origin of the problem. In such cases a system log is needed. Below is the instruction how to collect and get it: via Developer options and Logcat. 
+## General Instruction
+
+For troubleshooting problems with crashes a regular log is almost always not enough. In such cases to identify the origin of the problem we need the system log. Below is the instruction how to collect and get it.
 
 ## Capture a bug report from a device
-
 To get a bug report directly from your device, do the following:
 
-1. Be sure you have [Developer options](https://developer.android.com/studio/run/device.html#developer-device-options) enabled.
+1. Be sure you have [Developer Options](https://developer.android.com/studio/run/device.html#developer-device-options) enabled.
 
 2. In **Developer options**, tap **Take bug report**.
 
 ![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
 
-3. Select the type of the bug report you want and tap **Report**. 
-
-> After a moment you get a notification that the bug report is ready (see figure 2).
+3. Select the type of bug report you want and tap **Report**. >After a moment you get a notification that the bug report is ready (see figure 2).
 
 ![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
 
@@ -29,16 +28,13 @@ To get a bug report directly from your device, do the following:
 
 > Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
 
-## Capture a bug report via Logcat
+## Additional Instruction (for old Android versions)
 
-On devices with Android 7 and below, it is not possible to send a bug report automatically. Then you can capture it manually via Logcat — a standard Android command-line tool that dumps a log of system messages.
-
-Follow this instruction:
+On old Android devices there is no such option to take a bug report automatically. It has to be done manually by following this instruction:
 
 **Part #1: prepare the device**
 
-1. Switch device to the developer mode. To do this: go to
- **Settings** → **About** → tap **Build Number** 7 times.
+1. Switch device to the developer mode. To do this: go to **Settings** → **About** → tap **Build Number** 7 times.
 
 2. Go to **Developer Options**.
 
@@ -46,29 +42,28 @@ Follow this instruction:
 
 4. Increase **Logger buffer** sizes to 4MB per log buffer.
 
-4 MB should be enough for storing the logs we need until you're able to do the second part (getting the log from the device);
+4MB should be enough for storing the logs we need until you're able to do the second part (getting log from the device);
 
-**Important:** you need to reproduce the problem after you're done with the first part.
+**Important:** you need to reproduce the problem after you've done with the first part!
+
 
 **Part #2: get the log**
 
-1. Connect your device to a PC with a USB cable.
+1. Connect your device to PC with USB cable.
 
-2. Download [Android SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools#downloads). Choose the appropriate download link for your OS from the Downloads section. Once you click the link, a ZIP file will be downloaded. You can extract the ADB (Android Debug Bridge) files from the ZIP file and store them wherever you want.
+2. Download and install Minimal ADB:
 
-3. Open the Command Prompt, PowerShell or Terminal and enter the directory where you unzipped the file earlier. The command may look like this:
+<http://forum.xda-developers.com/showthread.php?t=2317790>
 
-`cd C:\Program Files\platform-tools`
+Direct download link:
 
-4. Test whether ADB is working properly: connect your Android device to your computer using a USB cable and run the following command:
+<https://www.androidfilehost.com/?fid=24052804347803384>
 
-`./adb devices`
+3. Run this command in the console (it will be opened after install):
 
-5. Then run the following command (insert the relevant path):
+> adb logcat -v threadtime -d > C:\logcat.txt
 
-`./adb logcat -v threadtime -d > C:\Program Files\platform-tools\logs.txt` 
-
-Email the created `txt` file to our support team at support@adguard.com.
+Send this log to us by contacting support or by any other way.
 
 **Alternative way for ROOT users:**
 

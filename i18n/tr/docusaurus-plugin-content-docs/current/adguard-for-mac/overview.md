@@ -15,7 +15,7 @@ The first thing you see upon startup will be a screen with a big On/Off toggle. 
 
 To start configuring AdGuard for Mac, you need to click the gear in the upper right corner of the window and select "Preferences".
 
-## General Preferences
+## Genel Tercihler
 
 ![General](https://cdn.adtidy.org/content/kb/ad_blocker/mac/General.jpg)
 
@@ -46,7 +46,7 @@ Aside from the more general and universally applicable filters (like Base filter
 * Annoyances filter for cookie warnings, in-page pop-ups and others of the same ilk,
 * and even a filter that unblocks some ads instead of blocking them — Filter for search ads and self-promotions.
 
-AdGuard filters are automatically updated. Our developers create them all based on user feedback received. You can always help other AdGuard users (and yourself, in perspective) by sending us reports right from the app's Assistant (it's really handy, we'll tell you more about the Assistant further on), or from the [website](https://agrd.io/report). If you wish to know more about AdGuard filters, here is [some info](/general/ad-filtering/adguard-filters).
+AdGuard filtreleri otomatik olarak güncellenir. Our developers create them all based on user feedback received. You can always help other AdGuard users (and yourself, in perspective) by sending us reports right from the app's Assistant (it's really handy, we'll tell you more about the Assistant further on), or from the [website](https://agrd.io/report). If you wish to know more about AdGuard filters, here is [some info](/general/ad-filtering/adguard-filters).
 
 ## Kullanıcı kuralları
 
@@ -106,7 +106,7 @@ Extensions are small programs that do exactly what their name implies — they e
 
 **2. AdGuard Extra** This extension is used to solve the more complicated ad blocking cases you might encounter. We would recommend you to always keep it switched on, unless you have a serious reason not to.
 
-**3. AdGuard Popup Blocker** Prevents all these annoying popup windows from opening when you view webpages. Blocks popup ads on web pages.
+**3. AdGuard Popup Blocker** Prevents all these annoying popup windows from opening when you view webpages. Web sayfalarında açılır pencere reklamlarını engeller.
 
 One of the important features of AdGuard for Mac is that the application can work as a cross-browser userscript manager. You can easily add any scripts you like and manage existing ones without having to switch browsers every time.
 

@@ -32,7 +32,7 @@ As a result, AdGuard can't work together with iCloud Private Relay and the Mail 
 
 We recommend using AdGuard together with a more traditional VPN service such as [AdGuard VPN](https://adguard-vpn.com/).
 
-## Alternative solution
+## Alternatif çözüm
 
 You can prevent AdGuard from using the "default route" by disabling the "default route".  It can be done via Advanced Settings → `network.extension.monterey.force.split.tunnel`.
 

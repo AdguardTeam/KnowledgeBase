@@ -17,7 +17,7 @@ Tor 浏览器默认添加到「过滤应用程序」的 AdGuard 列表内。 不
 
 `security.cert_pinning.enforcement_level`: 1
 
-Public Key Pinning（公钥固定）是一种安全措施，允许网站确保网站和用户之间的连接是真实的。 这包含网站发布一个它所信任的公钥列表（pin）。 在执行级别设置（enforcement level）为「1」的情况下，锁定（pinning）对自定义 CA 证书来说是不执行的。 [了解更多](https://wiki.mozilla.org/SecurityEngineering/Public_Key_Pinning)
+Public Key Pinning（公钥固定）是一种安全措施，允许网站确保网站和用户之间的连接是真实的。 这涉及到网站发布一个它所信任的公钥列表。 在执行级别设置（enforcement level）为「1」的情况下，锁定（pinning）对自定义 CA 证书来说是不执行的。 [了解更多](https://wiki.mozilla.org/SecurityEngineering/Public_Key_Pinning)
 
 为了应用更改，请重新开启 Tor 浏览器。
 

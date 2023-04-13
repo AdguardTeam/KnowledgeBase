@@ -1,6 +1,6 @@
 ---
 title: Domande frequenti sulle licenze ereditarie
-sidebar_position: 4
+sidebar_position: 6
 ---
 
 Abbiamo redatto questo articolo per evitare confusione e spiegare nel dettaglio come puoi rinnovare/aggiornare una licenza obsoleta (ereditaria) di AdGuard.

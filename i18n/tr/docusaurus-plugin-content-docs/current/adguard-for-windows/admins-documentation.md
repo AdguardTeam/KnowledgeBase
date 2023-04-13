@@ -5,11 +5,11 @@ sidebar_position: 5
 
 This page describes the features and details of AdGuard’s central management of policies and preferences.
 
-## 1. Download the MSI {#msi-download}
+## 1. MSI'ı indirin {#msi-download}
 
 [AdGuard MSI'yı](https://cdn.adtidy.org/distr/windows/AdGuard.msi) indirin.
 
-## 2. Configure the settings for your network {#settings-configuring}
+## 2. Ağınız için ayarları yapılandırın {#settings-configuring}
 
 On machines that are joined to an Active Directory domain, policy settings may also be stored in the registry under `HKEY_LOCAL_MACHINE` in the following path: `Software\Policies\AdGuard\`.
 

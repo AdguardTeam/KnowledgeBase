@@ -9,8 +9,8 @@ If you try to reinstall AdGuard after an unsuccessful removal attempt, you will 
 
 Bu sorunu çözmek için uygulamayı tüm kullanıcılardan kaldırmanız gerekir: Ayarlar → Tüm uygulamalar → AdGuard'a gidin. Tap three dots at the upper right corner and select *Uninstall for all users*.
 
-![Uninstall *mobile](https://cdn.adtidy.org/public/Adguard/kb/android/multiple_users/uninst_en.png)
+![Kaldır *mobile](https://cdn.adtidy.org/public/Adguard/kb/android/multiple_users/uninst_en.png)
 
-![Uninstall *mobile](https://cdn.adtidy.org/public/Adguard/kb/android/multiple_users/uninst2_en.png)
+![Kaldır *mobile](https://cdn.adtidy.org/public/Adguard/kb/android/multiple_users/uninst2_en.png)
 
-![Uninstall *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/multiple-profiles-issue/uninst3_en.png)
+![Kaldır *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/multiple-profiles-issue/uninst3_en.png)

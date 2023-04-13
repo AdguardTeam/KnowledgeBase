@@ -1,5 +1,5 @@
 ---
-title: How ad blocking works
+title: Reklam engelleme nasıl çalışır
 sidebar_position: 1
 ---
 
@@ -11,9 +11,9 @@ AdGuard has many ad-blocking products for various platforms, and each product ha
 
 Filter lists, also called filters, lie at the core of any ad blocker. Filters are literally lists of rules written in a special syntax. Ad blockers can understand this complex syntax. They interpret filtering rules and perform actions on web traffic based on what the rules tell them to do: block specific elements, alter web pages in certain ways, etc.
 
-![How ad blocking works](https://cdn.adtidy.org/public/Adguard/Blog/manifestv3/adblockingworks.png)
+![Reklam engelleme nasıl çalışır](https://cdn.adtidy.org/public/Adguard/Blog/manifestv3/adblockingworks.png)
 
-## Filter lists
+## Filtre listeleri
 
 To better understand ad blocking, it's important to know the underlying principles of how filters work.
 
@@ -33,7 +33,7 @@ Filters can do more than just block ads. There are filters that block tracking, 
 
 There are many types of filtering rules that serve different purposes. Depending on the ad blocker you use, and especially on your OS, some types of rules may not be supported.
 
-### Basic filtering rules
+### Temel filtreleme kuralları
 
 To be displayed on a web page or in an app, the ad has to be loaded from a server first. To do so, the browser or the app needs to send a web request. The most basic way of preventing an ad from appearing on your screen is to block this request so it never reaches the server, and thus there's no reply.
 

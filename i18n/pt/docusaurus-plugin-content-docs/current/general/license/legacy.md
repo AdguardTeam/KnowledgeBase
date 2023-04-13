@@ -1,6 +1,6 @@
 ---
 title: Perguntas frequentes sobre licenças herdadas
-sidebar_position: 4
+sidebar_position: 6
 ---
 
 Escrevemos este artigo para evitar confusão e explicar em detalhes como você pode renovar/atualizar uma licença AdGuard desatualizada (herdada).

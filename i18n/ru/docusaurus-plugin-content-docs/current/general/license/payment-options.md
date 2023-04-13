@@ -1,20 +1,22 @@
 ---
-title: Как купить
+title: How to purchase/upgrade
 sidebar_position: 2
 ---
 
-## Как купить лицензию
+## How to purchase a license{#purchase}
 
 Лицензию AdGuard можно купить на сайте [adguard.com](https://adguard.com/license.html). AdGuard Pro для iOS можно купить в App Store. Лицензии Блокировщика рекламы также продают дистрибьюторы.
 
 > Доступность продуктов AdGuard в магазинах приложений и у дистрибьюторов зависит от того, в какой стране вы находитесь.
 
-## Как получить возврат
+## How to upgrade a license{#upgrade}
 
-В соответствии с нашими [Условиями продажи](https://adguard.com/terms-of-sale.html), вы можете получить 100% возврат средств за лицензионный ключ AdGuard, который приобрели на https://adguard.com. Чтобы получить возврат, свяжитесь с нашей командой поддержки по адресу **support@adguard.com** и укажите способ оплаты, который вы использовали.
+To make more use of your AdGuard products, you can upgrade your license for the following benefits.
 
-В возврате может быть отказано, если вы:
-* приобрели лицензию более 60 дней назад,
-* приобрели лицензию у дистрибьютора,
-* приобрели лицензию в App Store,
-* подали заявку на частичный возврат средств за обновление или продление лицензионного ключа.
+1. Чтобы расширить функциональность продуктов AdGuard, вы можете **улучшить бесплатную или пробную лицензию до полной версии**.
+2. To extend the number of devices, you can **upgrade your Personal license to a Family one**.
+3. You can also **upgrade your [subscription](../what-is) to a Lifetime license**.
+
+Вы можете улучшить свою лицензию следующим образом:
+  * purchasing another license on the [official AdGuard website](https://adguard.com),
+  * clicking the *Upgrade to Lifetime* and/or *Increase device limit* in your AdGuard account: ![Upgrade *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)

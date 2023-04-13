@@ -61,7 +61,7 @@ Go to **Settings** → **Apps** → **Manage apps** → **AdGuard**.
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
 
-- Set Autostart to "On"
+- Otomatik başlatmayı "Açık" olarak ayarlayın
 - Set all possible permissions in Other Permissions to "On"
 - Set Battery saver to **No restrictions**
 
@@ -83,7 +83,7 @@ The lock icon should appear above the app window.
 
 To let your app run successfully in the background, configure its settings as follows:
 
-- Set Autostart to "On"
+- Otomatik başlatmayı "Açık" olarak ayarlayın
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/xiaomi1en.png)
 
@@ -101,7 +101,7 @@ The following steps should be performed on any Xiaomi device that keeps killing 
 
 #### Power management
 
-Please enable:
+Lütfen etkinleştirin:
 
 - **Settings** → **Advanced Settings** → **Battery manager** → set **Power plan** to **Performance**
 - **Device Settings** → **Advanced Settings** → **Battery Manager** → **Protected apps** – AdGuard needs to be **Protected**
@@ -115,7 +115,7 @@ Please enable:
 
 Set **Security** → **Battery** → **App Battery Saver** → **AdGuard** to **No restriction**
 
-#### App pinning
+#### Uygulama sabitleme
 
 To set up AdGuard's background work for Xiaomi devices you should pay attention to Battery and Permissions.
 
@@ -195,7 +195,7 @@ Open phone **Settings** → **Battery** → **Background usage limits** → Disa
 
 - Check that **Phone settings** → **Apps** → **Sleep as Android** → **Battery** → **Background restriction** is set to **App can use battery in background** for AdGuard.
 
-- Remove AdGuard from Sleeping apps. To do that:
+- Remove AdGuard from Sleeping apps. Bunu yapmak için:
 
 1. Go to **Phone settings** → **Device care**
 
@@ -229,7 +229,7 @@ For early Samsung devices, there is no huge need for setting up the background w
 
  ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/samsunglockapps.png)
 
-  - Tap on the lock icon
+  - Kilit simgesine dokunun
 
  ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/samsunglock.png)
 
@@ -426,7 +426,7 @@ Devices with OxygenOS on board are the most problematic, with its OS-specific ca
 
 ### Uygulamayı kilitleme
 
- - Go to **Settings**
+ - **Ayarlar** öğesine gidin
 
  - **Battery** → **Battery optimization**
 

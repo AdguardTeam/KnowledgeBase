@@ -23,11 +23,11 @@ Wait for _AdguardInstaller.dmg_ to download and double-click its icon in the lis
 
 ![Dosyayı açmak için çift tıklayın](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation_open_the_file.jpg)
 
-The AdGuard icon will appear on your desktop. Click it to open the installation app and double-click the AdGuard icon in the opened window.
+AdGuard simgesi masaüstünüzde görünür. Click it to open the installation app and double-click the AdGuard icon in the opened window.
 
 ![AdGuard simgesine çift tıklayın](https://cdn.adtidy.org/content/kb/ad_blocker/mac/3.jpg)
 
-Upon the first AdGuard launch, your operating system will warn you that this application has been downloaded from the Internet. Click **Open**.
+Upon the first AdGuard launch, your operating system will warn you that this application has been downloaded from the Internet. **Aç** öğesine tıklayın.
 
 ![Click Open](https://cdn.adtidy.org/content/kb/ad_blocker/mac/4.jpg)
 
@@ -45,7 +45,7 @@ To use the application, you will need the administrator password for your macOS 
 
 Now, you'll see a quick installation wizard where you'll be offered to configure protection to your needs. You can either start fine-tuning right away ("Let's do it!") veya şimdilik atlayın ("Olduğu gibi bırakın").
 
-![Configure protection](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation-wizard.jpg)
+![Korumayı yapılandır](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation-wizard.jpg)
 
 Here we are, AdGuard is installed on your Mac!
 
@@ -56,7 +56,7 @@ First of all, open the Finder app by clicking the respective icon:
 
 ![Open Finder](https://cdn.adtidy.org/public/Adguard/En/Articles/howtodelete/finder.png)
 
-Go to the Applications section. Find AdGuard there, right-click it and choose **Move to Trash**.
+Uygulamalar bölümüne gidin. Find AdGuard there, right-click it and choose **Move to Trash**.
 
 ![Move AdGuard to Trash *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/11.jpg)
 

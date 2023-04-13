@@ -120,6 +120,6 @@ Unlike other filters, this one **unblocks** certain ads. Read more about it in t
 
 ## Quality requirements for filtering rules
 
-- The rules should be as efficient as possible in terms of performance.
+- Kurallar performans açısından mümkün olduğunca verimli olmalıdır.
 - Exception rules should be as specific as possible in order to avoid unnecessary unblocking.
 - CSS and JS injection rules should be used as rarely as possible and only when it is impossible to block ads without them.

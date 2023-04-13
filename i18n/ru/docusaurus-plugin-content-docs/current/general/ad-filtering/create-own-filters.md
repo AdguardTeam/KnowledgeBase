@@ -603,7 +603,7 @@ $stealth [= opt1 [| opt2 [| opt3 [...]]]]
 
 > **Примечание**
 > 
-> Блокировка куки и скрытие параметров отслеживания достигается использованием правил с модификаторами [``](#cookie-modifier)$cookie и [`$removeparam`](#removeparam-modifier). Правила-исключения только с модификатором `$stealth` не дадут желаемого результата. Если вы хотите полностью отключить все функции «Антитрекинга» для определённого домена, вам надо включить в правило все три модификатора:   `@@||example.org^$stealth,removeparam,cookie`
+> Блокировка куки и скрытие параметров отслеживания достигается использованием правил с модификаторами [`$cookie`](#cookie-modifier) и [`$removeparam`](#removeparam-modifier). Правила-исключения только с модификатором `$stealth` не дадут желаемого результата. Если вы хотите полностью отключить все функции «Антитрекинга» для определённого домена, вам надо включить в правило все три модификатора:   `@@||example.org^$stealth,removeparam,cookie`
 
 > **Совместимость с различными версиями AdGuard**
 > 
@@ -854,9 +854,9 @@ replace = "/" regexp "/" replacement "/" modifiers
 
 Этот модификатор полностью меняет поведение страницы. Когда он применяется, правило не блокирует запрос. Вместо этого будут изменены заголовки ответа.
 
-> Чтобы использовать правила этого типа, необходимо базовое понимание слоя безопасности [Feature Policy](https://developer.mozilla.org/ru/docs/Web/HTTP/Permissions_Policy).
+> In order to use this type of rules, it is required to have the basic understanding of the [Permissions Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Permissions_Policy) security layer.
 
-Для запросов, соответствующих правилу `$permissions`, AdGuard усиливает «политику функций» ответа, добавляя дополнительную политику, равную содержимому модификатора `$permissions`. Правила `$permissions` применяются независимо от правил любого другого типа. Прочие базовые правила никак на них не влияют, **кроме правил исключений уровня document** (см. примеры).
+For the requests matching a `$permissions` rule, AdGuard strengthens response's permissions policy by adding additional permission policy equal to the `$permissions` modifier contents. Правила `$permissions` применяются независимо от правил любого другого типа. Прочие базовые правила никак на них не влияют, **кроме правил исключений уровня document** (см. примеры).
 
 > **Несколько правил, соответствующих одному запросу.**
 > 
@@ -864,21 +864,21 @@ replace = "/" regexp "/" replacement "/" modifiers
 
 **Синтаксис**
 
-Синтаксис значения `$permissions` аналогичен [синтаксису заголовка](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy) `Permissions Policy` (или `Feature Policy`). Список доступных директив доступен [здесь](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives).
+`$permissions` value syntax is similar to the `Permissions-Policy` header [syntax](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy) with one exception: comma that separates several features **MUST** be escaped — see examples below. Список доступных директив доступен [здесь](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives).
 
 Значение `$permissions` может быть пустым в случае правил-исключений — смотрите примеры ниже.
 
 > **Ограничения**
 > 
-> 1. В `$permissions` запрещены два символа: `,` и `$`;
+> 1. Characters forbidden in the `$permissions` value: `$`;
 > 2. `$permissions`-правила совместимы с ограниченным списком модификаторов: `$domain`, `$important` и `$subdocument`.
 
 **Примеры**
 
-* `||example.org^$permissions=sync-xhr 'none'` запрещает синхронные `XMLHttpRequest` запросы на `example.org`.
-* `@@||example.org/page/*$permissions=sync-xhr 'none'` отключает все правила с модификатором `$permissions`, в точности соответствующим `sync-xhr 'none'` на всех страницах, подходящих под паттерн правила. Например, правило выше.
+* `||example.org^$permissions=sync-xhr=()` disallows synchronous `XMLHttpRequest` requests across `example.org`.
+* `@@||example.org/page/*$permissions=sync-xhr=()` disables all rules with the `$permissions` modifier exactly matching `sync-xhr=()` on all the pages matching the rule pattern. Например, правило выше.
 * `@@||example.org/page/*$permissions` отключает все `$permissions`-правила на всех страницах, подходящих под паттерн правила.
-* `$domain=example.org|example.com,permission=oversized-images 'none'; sync-script 'none'; unsized-media 'none';` запрещает использование изображений большого размера, синхронных сценариев и медиа-функций нестандартного размера на сайтах `example.org` и `example.com`.
+* `$domain=example.org|example.com,permissions=oversized-images=()\, sync-script=()\, unsized-media=()` disallows oversized images, synchronous scripts and unsized media features across `example.org` and `example.com`.
 * `@@||example.org^$document` или `@@||example.org^$urlblock` отключает все `$permission`-правила на всех страницах, подходящих под паттерн правила.
 
 > **Совместимость с различными версиями AdGuard**
@@ -2792,22 +2792,22 @@ url = pattern
 
 Если вы разрабатываете сторонний фильтр, известный AdGuard, вам может быть интересна информация, представленная в этом разделе. Пожалуйста, имейте в виду, что подсказки будут применяться только к зарегистрированным фильтрам. Фильтр считается зарегистрированным и известным AdGuard, если он присутствует в [перечне известных фильтров](https://filters.adtidy.org/extension/chromium/filters.json). Если вы желаете зарегистрировать свой фильтр, пожалуйста, направьте запрос в [репозиторий AdGuardFilters](https://github.com/AdguardTeam/AdguardFilters).
 
-### Препроцессорные директивы
+### Директивы препроцессора
 
-Мы предоставляем несколько препроцессорных директив, которые могут быть использованы разработчиками фильтров для улучшения совместимости с различными блокировщиками рекламы. Директивы могут:
+Мы предоставляем несколько директив препроцессора, которые могут быть использованы разработчиками фильтров для улучшения совместимости с различными блокировщиками рекламы. Директивы могут:
 * [включать содержимое отдельного файла в фильтр](#include-directive)
 * [применять правила в зависимости от типа блокировщика](#conditions-directive)
 * [уточнять блокировщик контента для применения правил в Safari](#safari-affinity-directive)
 
 > **Примечание**
 > 
-> Любая ошибка в препроцессорной директиве приведёт к невозможности обновить фильтр, как если бы URL фильтра был недоступен.
+> Любая ошибка в директиве препроцессора приведёт к невозможности обновить фильтр, как если бы URL фильтра был недоступен.
 
-> Препроцессорные директивы можно использовать в Пользовательских правилах в собственных фильтрах.
+> Препроцессорные директивы можно использовать в пользовательских правилах или фильтрах.
 
 #### Включение файла {#include-directive}
 
-Директива `!#include` позволяет включать в фильтр содержимое заданного файла. Она поддерживает только файлы из того же источника, чтобы удостовериться, что разработчик фильтров является владельцем указанного файла. Включённый файл также может содержать препроцессорные директивы (даже другие`!#include`-директивы). Блокировщики должны принимать во внимание случай рекурсивного использования `!#include` и внедрять защитный механизм.
+Директива `!#include` позволяет включать в фильтр содержимое заданного файла. Она поддерживает только файлы из того же источника, чтобы удостовериться, что разработчик фильтров является владельцем указанного файла. Включённый файл также может содержать директивы препроцессора (даже другие`!#include`-директивы). Блокировщики должны принимать во внимание случай рекурсивного использования `!#include` и внедрять защитный механизм.
 
 **Синтаксис**
 

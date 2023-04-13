@@ -13,6 +13,6 @@ One of the most popular questions users ask us is: 'Is it possible to block ads 
 1. Open the YouTube app and start the video you want to watch.
 2. Tap the *Share* button and select *AdGuard for Android* from the list of apps.
 
-That's it! A new window with the video will open where you'll be able to watch it without being interrupted by ads.
+Bu kadar! A new window with the video will open where you'll be able to watch it without being interrupted by ads.
 
 * You can also watch YouTube in a browser and there will be no ads if you have AdGuard installed and enabled.
