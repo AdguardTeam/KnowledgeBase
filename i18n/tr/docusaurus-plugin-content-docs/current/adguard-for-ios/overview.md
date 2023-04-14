@@ -47,7 +47,7 @@ The third section of the *Safari protection* screen. If you want to disable ad b
 
 ### DNS protection {#dns-protection}
 
-[DNS protection module](https://adguard-dns.io/kb/general/dns-filtering/) enhances your privacy by encrypting your DNS traffic. Unlike with Safari content blocking, DNS protection works system-wide, i.e. beyond Safari, in apps and other browsers. You have to enable this module before you're able to use it. Bunu ana ekranda ekranın üst kısmındaki kalkan simgesine dokunarak veya *Koruma* → *DNS koruması* sekmesine giderek yapabilirsiniz.
+[DNS koruma modülü](https://adguard-dns.io/kb/general/dns-filtering/), DNS trafiğinizi şifreleyerek gizliliğinizi artırır. Unlike with Safari content blocking, DNS protection works system-wide, i.e. beyond Safari, in apps and other browsers. You have to enable this module before you're able to use it. Bunu ana ekranda ekranın üst kısmındaki kalkan simgesine dokunarak veya *Koruma* → *DNS koruması* sekmesine giderek yapabilirsiniz.
 
 > To be able to manage DNS settings, AdGuard apps require establishing a local VPN. It will not route your traffic through any remote servers. Nevertheless, the system will ask you to confirm permission access.
 

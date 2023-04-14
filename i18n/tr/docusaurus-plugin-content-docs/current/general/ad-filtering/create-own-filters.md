@@ -26,7 +26,7 @@ Any line that starts with an exclamation mark is a comment. In the list of rules
 
 #### Alan adına göre engelleme
 
-![Alan adına göre engelleme](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/0_blocking_domain.svg)
+![Alan adına göre engelleme](https://cdn.adtidy.org/content/kb/ad_blocker/general/0_blocking_domain.svg)
 
 **Bu kural şunları engeller:**
 
@@ -41,7 +41,7 @@ Any line that starts with an exclamation mark is a comment. In the list of rules
 
 #### Blocking exact address
 
-![Blocking exact address](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/1_exact_address.svg)
+![Blocking exact address](https://cdn.adtidy.org/content/kb/ad_blocker/general/1_exact_address.svg)
 
 **Bu kural şunları engeller:**
 
@@ -55,7 +55,7 @@ Any line that starts with an exclamation mark is a comment. In the list of rules
 
 Filtering rules support numerous modifiers that allow you to fine-tune the rule behavior. Here is an example of a rule with some simple modifiers.
 
-![Basic rule modifiers](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/2_basic_rule_options.svg)
+![Basic rule modifiers](https://cdn.adtidy.org/content/kb/ad_blocker/general/2_basic_rule_options.svg)
 
 **Bu kural şunları engeller:**
 
@@ -68,7 +68,7 @@ Filtering rules support numerous modifiers that allow you to fine-tune the rule 
 
 #### Unblocking an address
 
-![](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/3_basic_exception.svg)
+![](https://cdn.adtidy.org/content/kb/ad_blocker/general/3_basic_exception.svg)
 
 **Bu kural şunların engelini kaldırır:**
 
@@ -78,7 +78,7 @@ Filtering rules support numerous modifiers that allow you to fine-tune the rule 
 
 #### Unblocking everything on a website
 
-![Unblocking everything](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/4_unblock_entire_website.svg)
+![Unblocking everything](https://cdn.adtidy.org/content/kb/ad_blocker/general/4_unblock_entire_website.svg)
 
 **This rule unblocks**
 
@@ -87,7 +87,7 @@ Filtering rules support numerous modifiers that allow you to fine-tune the rule 
 
 #### Cosmetic rule
 
-![Cosmetic rule](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/5_cosmetic_rules.svg)
+![Cosmetic rule](https://cdn.adtidy.org/content/kb/ad_blocker/general/5_cosmetic_rules.svg)
 
 Cosmetic rules are based on using a special language named CSS, which every browser understands. Basically, it adds a new CSS style to the website which purpose is to hide particular elements. You can learn more about CSS in general [here](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors).
 

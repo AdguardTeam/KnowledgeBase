@@ -121,7 +121,7 @@ This is the list of libraries and other resources that really helped us with AdG
 * SQLite: [https://www.sqlite.org/copyright.html](https://www.sqlite.org/copyright.html)
 * zlib: [https://zlib.net/zlib_license.html](https://zlib.net/zlib_license.html)
 
-## Special thanks {#testers}
+## Agradecimentos especiais {#testers}
 
 Also a huge thanks and gratitude to all beta testers and other engaged users, whose help in finding/eliminating all the bugs, translating AdGuard and moderating our communities was priceless. Special thanks to:
 
