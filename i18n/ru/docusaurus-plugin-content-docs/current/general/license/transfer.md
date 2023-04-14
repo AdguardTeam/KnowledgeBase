@@ -1,34 +1,34 @@
 ---
-title: How to transfer
+title: Как перенести лицензию
 sidebar_position: 4
 ---
 
-## How to transfer a license to another device{#transfer}
+## Как перенести лицензию на другое устройство
 
-The license key can be activated on a [limited number of devices](../what-is#devices). If the key has already been used on the maximum allowed number of devices, you need to unbind a device from your account.
+Лицензионный ключ можно активировать на [ограниченном количестве устройств](../what-is#devices). Если ключ уже используется на максимально допустимом количестве устройств, вам необходимо отвязать устройство от аккаунта.
 
-### How to unbind a device
+### Как отвязать устройство
 
-There are three ways to do it:
+Есть три способа сделать это:
 
-  * by clicking the *Reset license* button (can be done only in AdGuard desktop apps)
-  * by logging out of your account in an AdGuard product
-  * by removing the device in your AdGuard account:
-     1. Click **AdGuard Ad Blocker** in your [AdGuard account](https://my.adguard.com/) ![Account Ad Blocker tab *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
-     2. In the license card, click the device you want to unbind ![Select device *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-1.png)
-     3. Click **Remove** ![Click Remove *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2.png)
+  * нажав кнопку *Сбросить лицензию* (есть только в десктопных приложениях)
+  * выйдя из своего аккаунта в продукте AdGuard
+  * удалив устройство в аккаунте AdGuard:
+     1. Нажмите **Блокировщик AdGuard** в вашем аккаунте [AdGuard](https://my.adguard.com/) ![Вкладка «Блокировщик рекламы» *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
+     2. В карточке лицензии нажмите на устройство, которое хотите отвязать ![Выберите устройство *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-1.png)
+     3. Нажмите **Удалить** ![Нажмите «Удалить» *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2.png)
 
-After you have unbound the number of devices you need, you can log in to your AdGuard account on new devices. The license will be bound to them.
+После того как вы отвяжете необходимое количество устройств, вы можете войти в свой аккаунт AdGuard на новых устройствах. Лицензия будет привязана к ним.
 
-## How to transfer a license to another AdGuard account{#transferaccount}
+## Как перенести лицензию на другой аккаунт AdGuard
 
- 1. Go to the AdGuard account that contains the license you would like to transfer
- 2. Go to the **Licenses** tab
- 3. Find the license you want to transfer and click **Unbind from account** ![Click Unbind from account *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account.png)
- 4. Click **Unbind** (**Important**: be sure to note/remember the license key) ![Remeber license key *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account-1.png)
- 4. Go to the AdGuard account that you would like to transfer the license to
- 5. Go to the **Licenses** tab
- 6. Click **Bind license** in the upper right corner ![Bind license *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account-2.png)
- 7. Enter your license key (from step 3)
+ 1. Перейдите в аккаунт AdGuard, содержащий лицензию, которую вы хотите перенести
+ 2. Перейдите во вкладку **Лицензия**
+ 3. Найдите лицензию, которую хотите перенести, и нажмите **Отвязать от аккаунта** ![Нажмите «Отвязать от аккаунта» *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account.png)
+ 4. Нажмите **Отвязать** (**Важно**: обязательно запишите/запомните лицензионный ключ) ![Запомните лицензионный ключ *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account-1.png)
+ 4. Перейдите в аккаунт AdGuard, в который вы хотите перенести лицензию
+ 5. Перейдите во вкладку **Лицензия**
+ 6. Нажмите **Привязать лицензию** в правом верхнем углу ![Привязать лицензию *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account-2.png)
+ 7. Введите лицензионный ключ (из шага 3)
 
-In case you can't access your initial account, please contact our support team at support@adguard.com.
+Если вы не можете получить доступ к своему первоначальному аккаунту, пожалуйста, свяжитесь с нашей службой поддержки по адресу support@adguard.com.

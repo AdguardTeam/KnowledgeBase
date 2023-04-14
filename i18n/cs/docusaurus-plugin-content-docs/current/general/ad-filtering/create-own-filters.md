@@ -26,7 +26,7 @@ Např:
 
 #### Blokování podle názvu domény
 
-![Blocking by domain name](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/0_blocking_domain.svg)
+![Blocking by domain name](https://cdn.adtidy.org/content/kb/ad_blocker/general/0_blocking_domain.svg)
 
 **Toto pravidlo blokuje:**
 
@@ -41,7 +41,7 @@ Např:
 
 #### Blokování přesné adresy
 
-![Blocking exact address](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/1_exact_address.svg)
+![Blocking exact address](https://cdn.adtidy.org/content/kb/ad_blocker/general/1_exact_address.svg)
 
 **Toto pravidlo blokuje:**
 
@@ -55,7 +55,7 @@ Např:
 
 Pravidla filtrování podporují řadu modifikátorů, které umožňují doladit chování pravidla. Zde je příklad pravidla s několika jednoduchými modifikátory.
 
-![Basic rule modifiers](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/2_basic_rule_options.svg)
+![Basic rule modifiers](https://cdn.adtidy.org/content/kb/ad_blocker/general/2_basic_rule_options.svg)
 
 **Toto pravidlo blokuje:**
 
@@ -68,7 +68,7 @@ Pravidla filtrování podporují řadu modifikátorů, které umožňují doladi
 
 #### Odblokování adresy
 
-![](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/3_basic_exception.svg)
+![](https://cdn.adtidy.org/content/kb/ad_blocker/general/3_basic_exception.svg)
 
 **Toto pravidlo odblokuje:**
 
@@ -78,7 +78,7 @@ Pravidla filtrování podporují řadu modifikátorů, které umožňují doladi
 
 #### Odblokování všeho na webové stránce
 
-![Unblocking everything](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/4_unblock_entire_website.svg)
+![Unblocking everything](https://cdn.adtidy.org/content/kb/ad_blocker/general/4_unblock_entire_website.svg)
 
 **Toto pravidlo odblokuje**
 
@@ -87,7 +87,7 @@ Pravidla filtrování podporují řadu modifikátorů, které umožňují doladi
 
 #### Kosmetické pravidlo
 
-![Cosmetic rule](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/5_cosmetic_rules.svg)
+![Cosmetic rule](https://cdn.adtidy.org/content/kb/ad_blocker/general/5_cosmetic_rules.svg)
 
 Kosmetická pravidla jsou založena na použití speciálního jazyka CSS, kterému rozumí každý prohlížeč. V podstatě přidává na webové stránky nový styl CSS, jehož účelem je skrýt určité prvky. Více o CSS obecně se můžete dozvědět [zde](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors).
 
@@ -856,7 +856,7 @@ Tento modifikátor zcela mění chování pravidla. Pokud je použitý na pravid
 
 > Pro použití tohoto typu pravidel je nutné mít základní znalosti o vrstvě zabezpečení [Permissions Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Permissions_Policy).
 
-For the requests matching a `$permissions` rule, AdGuard strengthens response's permissions policy by adding additional permission policy equal to the `$permissions` modifier contents. Pravidla `$permissions` jsou aplikována nezávisle na jakémkoli jiném typu pravidla. Ostatní základní pravidla na to nemají žádný vliv, **kromě výjimek na úrovni dokumentu** (viz část s příklady).
+U požadavků, které odpovídají pravidlu `$permissions`, AdGuard posiluje zásady funkcí odpovědi přidáním dalších zásad oprávnění, které se rovnají obsahu modifikátoru `$permissions`. Pravidla `$permissions` jsou aplikována nezávisle na jakémkoli jiném typu pravidla. Ostatní základní pravidla na to nemají žádný vliv, **kromě výjimek na úrovni dokumentu** (viz část s příklady).
 
 > **Vícenásobná pravidla odpovídajících jednomu požadavku.**
 > 
@@ -864,21 +864,21 @@ For the requests matching a `$permissions` rule, AdGuard strengthens response's 
 
 **Syntaxe**
 
-`$permissions` value syntax is similar to the `Permissions-Policy` header [syntax](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy) with one exception: comma that separates several features **MUST** be escaped — see examples below. Seznam dostupných direktiv je k dispozici [zde](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives).
+Hodnota syntaxe `$permissions` je podobná [syntaxi](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy) záhlaví `Permissions-Policy` s jednou výjimkou: čárka, která odděluje několik prvků **MUSÍ** být uvozena — viz příklady níže. Seznam dostupných direktiv je k dispozici [zde](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives).
 
 Hodnota `$permissions` může být v případě pravidel pro výjimky prázdná — viz příklady níže.
 
 > **Omezení**
 > 
-> 1. Characters forbidden in the `$permissions` value: `$`;
+> 1. Zakázané znaky v `$permissions` hodnotě: `$`;
 > 2. `$permissions` je kompatibilní s omezeným seznamem modifikátorů: `$domain`, `$important`, a `$subdocument`.
 
 **Příklady**
 
-* `||example.org^$permissions=sync-xhr=()` disallows synchronous `XMLHttpRequest` requests across `example.org`.
-* `@@||example.org/page/*$permissions=sync-xhr=()` disables all rules with the `$permissions` modifier exactly matching `sync-xhr=()` on all the pages matching the rule pattern. Např. výše uvedené pravidlo.
+* `||example.org^$permissions=sync-xhrˇ=()` zakazuje synchronní požadavky `XMLHttpRequest` napříč `example.org`.
+* `@@||example.org/page/*$permissions=sync-xhr=()` zakáže všechna pravidla s modifikátorem `$permissions` přesně odpovídajícím příznakem `sync-xhr=()` na všech stránkách odpovídajících vzoru pravidla. Např. výše uvedené pravidlo.
 * `@@||example.org/page/*$permissions` zakáže všechna pravidla `$permissions` na všech stránkách odpovídajících vzoru pravidla.
-* `$domain=example.org|example.com,permissions=oversized-images=()\, sync-script=()\, unsized-media=()` disallows oversized images, synchronous scripts and unsized media features across `example.org` and `example.com`.
+* `$domain=example.org|example.com,permissions=oversized-images=()\; sync-script=()\; unsized-media=()` zakazuje nadměrné obrázky, synchronní skripty a nevhodné velikosti multimediálních prvků napříč `example.org` a `example.com`.
 * `@@||example.org^$document` nebo `@@||example.org^$urlblock` zakáží všechna pravidla `$permission` na všech stránkách odpovídajících vzoru pravidla.
 
 > **Kompatibilita s různými verzemi AdGuardu**
