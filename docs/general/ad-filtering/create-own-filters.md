@@ -339,7 +339,7 @@ AdGuard will try to close the browser tab with any address that matches a blocki
 > with a special flag which is passed to a blocking page. Blocking page itself can do some checks
 > and close the window if it is really a popup. Otherwise, page should be loaded.
 > It can be combined with other request type modifiers, such as `$third-party` and `$important`.
-> However, the blocking page may not detect a popup in some cases, so it is recommended to use an
+> However, the blocking page may not detect a popup in some cases, so it is recommended to use the
 > [AdGuard Popup Blocker](https://github.com/AdguardTeam/PopupBlocker) userscript instead.
 
 #### **`$match-case`** {#match-case-modifier}
@@ -1481,7 +1481,7 @@ The modified JSONPath syntax has the following differences from the original:
 5.  Expressions ending with `..` are not supported.
 6.  Multiple array slices can be specified in square brackets.
 
-There are various online tools that make working with JSONPath expressions more convenient: 
+There are various online tools that make working with JSONPath expressions more convenient:
 
 https://www.site24x7.com/tools/jsonpath-finder-validator.html
 https://jsonpathfinder.com/
