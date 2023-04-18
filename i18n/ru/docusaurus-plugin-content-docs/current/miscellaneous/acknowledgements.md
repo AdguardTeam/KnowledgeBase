@@ -147,7 +147,7 @@ sidebar_position: 2
 * krystian3w – очень активный разработчик фильтров
 * lancelot.moon — переводчик и редактор традиционного китайского языка в Crowdin, бета-тестировщик
 * Lord Ami — бета-тестировщик, активный участник форума AdGuard
-* Lukas Novotny (novas78) — translator and proofreader to Czech in Crowdin
+* Lukas Novotny (novas78) —переводчик и редактор чешского языка в Crowdin
 * malware1 — бета-тестировщик, активный участник форума AdGuard
 * milder — бета-тестировщик, активный участник форума AdGuard
 * Nicos18 — бета-тестировщик, активный участник форума AdGuard

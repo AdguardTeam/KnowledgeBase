@@ -14,9 +14,9 @@ You have three ways to solve the issue:
 > Please note, that this approach is available starting from **AdGuard v3.5 nightly 6**. If you're using an older version, you can get the latest update [here](https://adguard.com/adguard-android/overview.html).
 
 1. Activate the **developer mode** and enable **USB debugging**:
-- Open the **Settings** application on your phone;
-- Go to **System** section (last item in the settings menu). In this section find sub-item **About phone**;
-- Click on the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
+- Open the **Settings** app phone;
+- Go to **System** section (last item in the settings menu). In this section, find the sub-item **About phone**;
+- Tap the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
 - **Sistem Ayarları** → **Geliştirici Seçenekleri** öğesini açın → Aşağı kaydırın ve **USB hata ayıklaması** öğesini etkinleştirin → Uyarıyı dikkatlice okuduktan sonra **USB hata ayıklamasına izin ver** penceresinde hata ayıklamanın etkinleştirildiğini onaylayın.
 
 > If you have any difficulties or additional questions, full instructions can be found [here](https://developer.android.com/studio/debug/dev-options).

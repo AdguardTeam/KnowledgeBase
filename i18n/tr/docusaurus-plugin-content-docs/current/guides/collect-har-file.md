@@ -30,7 +30,7 @@ Chrome'da bir HAR dosyası oluşturmak için:
 
 8. Reproduce the steps that create the issue.
 
-9. Save session as a .har file by right clicking on the grid and selecting ***Save as HAR with content***.
+9. Save session as a .har file by right-clicking the grid and selecting ***Save as HAR with content***.
 
 10. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
 
@@ -57,7 +57,7 @@ Chrome'da bir HAR dosyası oluşturmak için:
 
 8. Reproduce the steps that create the issue.
 
-9. Save session as a .har file by right clicking on the grid and selecting ***Save as HAR with content***.
+9. Save session as a .har file by right-clicking the grid and selecting ***Save as HAR with content***.
 
 10. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
 
@@ -84,7 +84,7 @@ To create a HAR file in Firefox:
 
 7. Reproduce the steps that create the issue.
 
-8. Save session as a .har file by right clicking on the grid and selecting ***Save all as HAR***.
+8. Save session as a .har file by right-clicking the grid and selecting ***Save all as HAR***.
 
 9. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
 

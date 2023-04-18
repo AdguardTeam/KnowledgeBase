@@ -7,7 +7,7 @@ sidebar_position: 3
 
 라이선스를 활성화하려면 AdGuard 제품의 *라이선스* 섹션으로 이동하여 *로그인* 필드 또는 *활성화* 버튼을 찾으세요. AdGuard 계정의 이메일과 비밀번호를 사용하여 로그인할 수 있습니다. 아직 계정이 없는 경우, 계정을 만들라는 메시지가 표시됩니다.
 
-> Note: To activate a license via AdGuard account, you need to have a valid license with at least one open slot there. If your license is already used on a maximum number of devices, you can [upgrade it](../payment-options#upgrade) or [transfer it from one device to another](../transfer).
+> Note: To activate a license via the AdGuard account, a valid license with at least one free slot is required. If your license is already used on a maximum number of devices, you can [upgrade it](../payment-options#upgrade) or [transfer it from one device to another](../transfer).
 
 또는 [라이선스 키](../what-is#license-key)를 사용하여 라이선스를 활성화할 수 있습니다.
 

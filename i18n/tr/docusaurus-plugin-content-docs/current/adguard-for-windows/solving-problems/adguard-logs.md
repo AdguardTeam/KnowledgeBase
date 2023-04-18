@@ -27,7 +27,7 @@ To analyse and diagnose different problems that may potentially arise, the AdGua
 
 Sometimes support team members may ask you to send *trace* logs. Then you will need to do the following:
 
-1. Stop AdGuard by right-clicking on the AdGuard icon in the tray menu and choosing *Exit AdGuard*:
+1. Stop AdGuard by right-clicking the AdGuard icon in the tray menu and choosing *Exit AdGuard*:
 
 ![Exit AdGuard *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-3.png)
 

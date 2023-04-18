@@ -1,5 +1,5 @@
 ---
-title: 如何在 YouTube 上拦截广告
+title: How to block ads in the YouTube app
 sidebar_position: 7
 ---
 

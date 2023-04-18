@@ -93,7 +93,7 @@ sidebar_position: 8
 
 **참고: 무한 루프와 드롭을 방지하려면 설정하기 전에 필터링에서 Shadowsock 앱을 제거해야 합니다. (AdGuard -> 앱 관리 -> Shadowsocks -> 보호 비활성화).**
 
-1. Open AdGuard and go to  **Settings** → **Network** → **Proxy settings**.
+1. Open AdGuard and go to **Settings** → **Network** → **Proxy settings**.
 
 2. **프록시 서버 추가**를 탭하고 필드를 입력합니다.
 
