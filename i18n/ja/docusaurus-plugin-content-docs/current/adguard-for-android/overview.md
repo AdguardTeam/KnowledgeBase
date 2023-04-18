@@ -31,7 +31,7 @@ AdGuard allows you to create your own custom filters, using the same type of rul
 
 > Tip: use the Import feature to transfer your rules to a different device.
 
-## HTTPSフィルタリング
+## HTTPSフィルタリング {#https-filtering}
 
 Nowadays almost all websites work via HTTPS, the web protocol where the last S letter stands for "secure". It happened so that most advertisers use this protocol as well, this is why [HTTPS filtering](/general/https-filtering/what-is-https-filtering) is really crucial for a modern ad blocker.
 

@@ -26,7 +26,7 @@ sidebar_position: 5
 
 #### Блокировка по имени домена
 
-![Блокировка по имени домена](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/0_blocking_domain.svg)
+![Блокировка по имени домена](https://cdn.adtidy.org/content/kb/ad_blocker/general/0_blocking_domain.svg)
 
 **Это правило блокирует:**
 
@@ -41,7 +41,7 @@ sidebar_position: 5
 
 #### Блокировка конкретного адреса
 
-![Блокировка конкретного адреса](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/1_exact_address.svg)
+![Блокировка конкретного адреса](https://cdn.adtidy.org/content/kb/ad_blocker/general/1_exact_address.svg)
 
 **Это правило блокирует:**
 
@@ -55,7 +55,7 @@ sidebar_position: 5
 
 Правила фильтрации поддерживают множество модификаторов, которые позволяют вам точно настраивать поведение правила. Вот пример правила с некоторыми простыми модификаторами.
 
-![Модификаторы базовых правил](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/2_basic_rule_options.svg)
+![Модификаторы базовых правил](https://cdn.adtidy.org/content/kb/ad_blocker/general/2_basic_rule_options.svg)
 
 **Это правило блокирует:**
 
@@ -68,7 +68,7 @@ sidebar_position: 5
 
 #### Разблокировка адреса
 
-![](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/3_basic_exception.svg)
+![](https://cdn.adtidy.org/content/kb/ad_blocker/general/3_basic_exception.svg)
 
 **Это правило разблокирует:**
 
@@ -78,7 +78,7 @@ sidebar_position: 5
 
 #### Разблокировка всего сайта
 
-![Разблокировка всего](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/4_unblock_entire_website.svg)
+![Разблокировка всего](https://cdn.adtidy.org/content/kb/ad_blocker/general/4_unblock_entire_website.svg)
 
 **Это правило разблокирует**
 
@@ -87,7 +87,7 @@ sidebar_position: 5
 
 #### Косметические правила
 
-![Косметические правила](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/5_cosmetic_rules.svg)
+![Косметические правила](https://cdn.adtidy.org/content/kb/ad_blocker/general/5_cosmetic_rules.svg)
 
 Косметические правила применяются с использованием CSS — специального языка программирования, который понимает каждый браузер. В основном, он добавляет новый стиль CSS на сайт, цель которого — скрыть определённые элементы. Вы можете узнать больше о CSS в целом [здесь](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors).
 

@@ -28,7 +28,7 @@ Here you can specify a list of applications for which the HTTP/2 protocol will b
 
 `network.extension.monterey.force.split.tunnel`
 
-Here you can prohibit AdGuard from using the "default route" which is enabled by default in *Network Extension* mode on macOS Monterey. AdGuard uses "default route" to disable iCloud Private Relay and Protect Mail Activity, because it cannot work with them simultaneously.
+Here you can prohibit AdGuard from using the "default route" which is enabled by default in *Network Extension* mode on macOS Monterey. AdGuard uses "default route" to disable iCloud Private Relay and Protect Mail Activity, as it cannot operate in unison with them.
 
 You will find more information about the problem [in this article](../icloud-private-relay).
 

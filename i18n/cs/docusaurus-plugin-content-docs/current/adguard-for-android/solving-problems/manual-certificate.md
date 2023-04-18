@@ -3,7 +3,7 @@ title: Problémy s instalací certifikátu na zařízeních se systémem Android
 sidebar_position: 12
 ---
 
-Aby bylo možné filtrovat provoz HTTPS (což je velmi důležité, protože většina reklam používá HTTPS), musí AdGuard nainstalovat certifikát do uživatelského úložiště vašeho zařízení. Ve starších verzích operačního systému Android se to provádělo automaticky, ale v Androidu 11 a novějších verzích jej uživatelé musí [nainstalovat ručně](../../overview).
+Aby bylo možné filtrovat provoz HTTPS (což je velmi důležité, protože většina reklam používá HTTPS), musí AdGuard nainstalovat certifikát do uživatelského úložiště vašeho zařízení. Ve starších verzích operačního systému Android se to provádělo automaticky, ale v Androidu 11 a novějších verzích jej uživatelé musí [nainstalovat ručně](../../overview#https-filtering).
 
 ![Certifikát *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/Android/3-5/cert-en.gif)
 

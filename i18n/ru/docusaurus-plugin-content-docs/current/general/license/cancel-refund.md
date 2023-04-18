@@ -1,15 +1,15 @@
 ---
-title: How to cancel/refund
+title: Как отменить/вернуть деньги за подписку
 sidebar_position: 5
 ---
 
 ## Как отменить подписку
 
-Подписку можно отменить в личном кабинете AdGuard. To cancel your subscription:
+Подписку можно отменить в личном кабинете AdGuard. Чтобы отменить подписку:
 
- 1. Go to your [AdGuard account](https://my.adguard.com/)
- 2. Go to **Licenses** tab
- 3. Click **Cancel subscription** below the subscription you no longer need ![Cancel *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-cancel-sub.png)
+ 1. Откройте [личный кабинет AdGuard](https://my.adguard.com/)
+ 2. Перейдите во вкладку **Лицензия**
+ 3. Нажмите **Отменить подписку** под подпиской, которая вам больше не нужна ![Отменить *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-cancel-sub.png)
 
  Отменённая подписка будет действительна до истечения срока её действия.
 
@@ -17,10 +17,10 @@ sidebar_position: 5
 
 ## Как получить возврат
 
-В соответствии с нашими [Условиями продажи](https://adguard.com/terms-of-sale.html), вы можете получить 100% возврат средств за лицензионный ключ AdGuard, который приобрели на https://adguard.com. To get a refund, contact our support team at **support@adguard.com** and specify the payment option you've used.
+В соответствии с нашими [Условиями продажи](https://adguard.com/terms-of-sale.html), вы можете получить 100% возврат средств за лицензионный ключ AdGuard, который приобрели на https://adguard.com. Чтобы получить возврат, свяжитесь с нашей командой поддержки по адресу **support@adguard.com** и укажите способ оплаты, который вы использовали.
 
-A refund may be declined if:
-* a license was purchased more than 60 days ago,
-* a license was purchased from a distributor,
-* a license was purchased from the App Store,
-* you applied for a partial refund for a license key upgrade or renewal.
+В возврате может быть отказано, если вы:
+* лицензия была приобретена более 60 дней назад,
+* лицензия была приобретена у дистрибьютора,
+* лицензия была приобретена в App Store,
+* вы подали заявку на частичный возврат средств за улучшение или продление лицензионного ключа.
