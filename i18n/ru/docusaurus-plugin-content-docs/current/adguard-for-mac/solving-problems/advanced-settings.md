@@ -37,7 +37,7 @@ sidebar_position: 9
 
 `network.dns.filter.secure.request`
 
-Redirects secure DNS requests to a local DNS proxy, if there is one available.
+Перенаправляет безопасные DNS-запросы на локальный DNS-прокси, если он доступен.
 
 `network.https.ocsp.check`
 
@@ -45,23 +45,23 @@ Redirects secure DNS requests to a local DNS proxy, if there is one available.
 
 `network.tcp.keepalive.enabled`
 
-Periodically sends TCP packets over an idle connection to ensure that it remains active and to renew NAT timeouts.
+Периодически отправляет TCP-пакеты по неактивному соединению, чтобы убедиться в его работоспособности и продлить время ожидания NAT.
 
 `network.tcp.keepalive.interval.seconds`
 
-Idle time, in seconds, before sending a keepalive probe. If 0 is specified, the system will use the default value.
+Время простоя в секундах перед отправкой проверки активности. Если указано 0, система будет использовать значение по умолчанию.
 
 `network.tcp.keepalive.timeout.seconds`
 
-Time, in seconds, before sending another keepalive probe to an unresponsive peer. If 0 is specified, the value selected by the system will be used.
+Время в секундах, прежде чем отправить ещё одну проверку активности не отвечающему узлу. Если указано 0, будет использоваться значение, установленное системой.
 
 `network.https.ech.enabled`
 
-Uses a local DNS proxy to look for configs in the ECH Config Lists. If found, encrypts ClientHellos.
+Использует локальный DNS-прокси для поиска конфигураций в списках конфигураций ECH. Если такие найдены, шифрует ClientHellos.
 
 `network.https.enforce.certificate.transparency`
 
-Verifies the authenticity of all certificates for the domain based on Chrome Certificate Transparency Policy.
+Проверяет подлинность всех сертификатов для домена на основе политики прозрачности сертификатов Chrome.
 
 `network.filtering.localnetwork`
 
@@ -81,7 +81,7 @@ Verifies the authenticity of all certificates for the domain based on Chrome Cer
 
 `dns.proxy.fallback.on.upstreams.failure.enabled`
 
-Normal queries will be redirected to a fallback upstream if all normal upstreams fail.
+Если все обычные upstream-серверы не работают, запросы будут перенаправляться на резервный upstream-сервер.
 
 `dns.proxy.detect.search.domains`
 
@@ -95,17 +95,17 @@ Normal queries will be redirected to a fallback upstream if all normal upstreams
 
 Здесь вы можете указать тип ответа DNS-сервера на заблокированные запросы, соответствующие правилам в стиле блокировщика рекламы.
 
-* 0 — respond with REFUSED
-* 1 — respond with NXDOMAIN
-* 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
+* 0 — отвечать REFUSED
+* 1 — отвечать NXDOMAIN
+* 2 — отвечать 0.0.0.0 или адресами, указанными в `dns.proxy.blocking.response.IPv4.address` и/или `dns.proxy.blocking.response.IPv6.address`
 
 `dns.proxy.hostrules.blocking.mode`
 
 Здесь вы можете указать тип ответа DNS-сервера на заблокированные запросы, соответствующие правилам hosts:
 
-* 0 — respond with REFUSED
-* 1 — respond with NXDOMAIN
-* 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
+* 0 — отвечать REFUSED
+* 1 — отвечать NXDOMAIN
+* 2 — отвечать 0.0.0.0 или адресами, указанными в `dns.proxy.blocking.response.IPv4.address` и/или `dns.proxy.blocking.response.IPv6.address`
 
 `dns.proxy.blocking.response.IPv4.address`
 
@@ -125,31 +125,31 @@ Normal queries will be redirected to a fallback upstream if all normal upstreams
 
 `dns.proxy.parallel.upstream.queries.enabled`
 
-All upstreams are queried simultaneously. The first response is returned.
+Все upstream-серверы запрашиваются одновременно. Возвращается первый ответ.
 
 `dns.proxy.servfail.on.upstreams.failure.enabled`
 
-Responds to upstream failure with a SERVFAIL packet.
+Реагирует на сбой пакетом SERVFAIL.
 
 `dns.proxy.http3.enabled`
 
-Enables HTTP/3 for DNS-over-HTTPS upstreams to accelerate connection.
+Включает HTTP/3 для upstream-серверов DNS-over-HTTPS для ускорения соединения.
 
 `dns.proxy.block.encrypted.client.hello.response`
 
-Removes the Encrypted Client Hello parameters from responses.
+Удаляет параметры Encrypted Client Hello из ответов.
 
 `stealth.antidpi.http.split.fragment.size`
 
-Adjusts the size of the HTTP request fragmentation. Accepted values: 1–1500. If an invalid size is specified, the system will use the default value.
+Настраивает размер фрагментации HTTP-запроса. Допустимые значения: 1–1500. Если указан недопустимый размер, система будет использовать значение по умолчанию.
 
 `stealth.antidpi.clienthello.split.fragment.size`
 
-This option specifies the size of TCP packet fragmentation, which helps avoid deep packet inspection. Accepted values: 1–1500. If an invalid size is specified, the system will use the default value.
+Этот параметр определяет размер фрагментации пакетов TCP, что помогает избежать глубокой проверки пакетов (Deep Packet Inspection). Допустимые значения: 1–1500. Если указан недопустимый размер, система будет использовать значение по умолчанию.
 
 `stealth.antidpi.http.space.juggling`
 
-Adds extra space between the HTTP method and the URL and removes space after the "Host:" field.
+Добавляет дополнительный пробел между методом HTTP и URL и удаляет пробел после поля “Host:”.
 
 `subscription.link.interception.userscript`
 

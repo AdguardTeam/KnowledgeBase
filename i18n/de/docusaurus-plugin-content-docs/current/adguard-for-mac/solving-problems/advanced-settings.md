@@ -11,15 +11,15 @@ sidebar_position: 9
 
 `network.extension.exclude.domains`
 
-Die aufgelisteten Domains werden von der Filterung im Modus *Netzwerk-Erweiterung* ausgeschlossen. Verwenden Sie ein Komma oder einen Zeilenumbruch, um Werte zu trennen.
+The listed domains will be excluded from filtering in the *Network Extension* mode. Verwenden Sie ein Komma oder einen Zeilenumbruch, um Werte zu trennen.
 
 `network.extension.exclude.ports`
 
-Die aufgelisteten Ports werden im Modus *Netzwerk-Erweiterung* von der Filterung ausgeschlossen. Verwenden Sie ein Komma oder einen Zeilenumbruch, um Werte zu trennen.
+The listed ports will be excluded from filtering in the *Network Extension* mode. Verwenden Sie ein Komma oder einen Zeilenumbruch, um Werte zu trennen.
 
 `network.extension.route.exclude`
 
-Die aufgelisteten Routen werden von der Filterung im Modus *Netzwerk-Erweiterung* ausgeschlossen. Legen Sie Routen mit einer IP-Adresse oder einem Ziel-CIDR fest. Trennen Sie die Werte durch Kommas oder Zeilenumbrüche.
+The listed routes will be excluded from filtering in the *Network Extension* mode. Legen Sie Routen mit einer IP-Adresse oder einem Ziel-CIDR fest. Trennen Sie die Werte durch Kommas oder Zeilenumbrüche.
 
 `network.extension.http.downgrade.bundleids`
 
@@ -27,7 +27,7 @@ Hier können Sie eine Liste von Anwendungen angeben, für die das HTTP/2-Protoko
 
 `network.extension.monterey.force.split.tunnel`
 
-Hier können Sie AdGuard verbieten, die „Standard-Route“ zu verwenden, die im Modus *Netzwerk-Erweiterung* unter macOS Monterey standardmäßig aktiviert ist. AdGuard verwendet „Standard-Route“, um iCloud Private Relay und Protect Mail Activity zu deaktivieren, da es nicht gleichzeitig mit ihnen arbeiten kann.
+Here you can prohibit AdGuard from using the "default route" which is enabled by default in the *Network Extension* mode on macOS Monterey. AdGuard uses "default route" to disable iCloud Private Relay and Protect Mail Activity, as it cannot operate in unison with them.
 
 Weitere Informationen zum Problem finden Sie in [diesem Artikel](../icloud-private-relay).
 

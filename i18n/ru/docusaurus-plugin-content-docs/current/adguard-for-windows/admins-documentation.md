@@ -7,7 +7,7 @@ sidebar_position: 5
 
 ## 1. Скачайте MSI-установщик {#msi-download}
 
-Download the [AdGuard MSI](https://cdn.adtidy.org/distr/windows/AdGuard.msi).
+Скачайте [AdGuard MSI](https://cdn.adtidy.org/distr/windows/AdGuard.msi).
 
 ## 2. Настройте параметры сети {#settings-configuring}
 

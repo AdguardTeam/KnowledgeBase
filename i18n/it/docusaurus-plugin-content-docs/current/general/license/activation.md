@@ -7,7 +7,7 @@ sidebar_position: 3
 
 Per attivare la tua licenza, vai alla sezione *Licenza* del tuo prodotto AdGuard e trova il campo *Accedi* o il pulsante *Attiva*. Utilizza l'email e la password del tuo profilo di AdGuard per accedere. Se ancora non hai un profilo, ti sarà offerto di crearne uno.
 
-> Note: To activate a license via AdGuard account, you need to have a valid license with at least one open slot there. If your license is already used on a maximum number of devices, you can [upgrade it](../payment-options#upgrade) or [transfer it from one device to another](../transfer).
+> Note: To activate a license via the AdGuard account, a valid license with at least one free slot is required. If your license is already used on a maximum number of devices, you can [upgrade it](../payment-options#upgrade) or [transfer it from one device to another](../transfer).
 
 Altrimenti, puoi utilizzare una [chiave di licenza](../what-is#license-key) per attivarla.
 

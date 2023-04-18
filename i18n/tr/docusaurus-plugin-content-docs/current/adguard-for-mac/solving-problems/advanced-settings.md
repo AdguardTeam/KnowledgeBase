@@ -11,15 +11,15 @@ sidebar_position: 9
 
 `network.extension.exclude.domains`
 
-The listed domains will be excluded from filtering in *Network Extension* mode. Use a comma or line break to separate values.
+The listed domains will be excluded from filtering in the *Network Extension* mode. Use a comma or line break to separate values.
 
 `network.extension.exclude.ports`
 
-The listed ports will be excluded from filtering in *Network Extension* mode. Use a comma or line break to separate values.
+The listed ports will be excluded from filtering in the *Network Extension* mode. Use a comma or line break to separate values.
 
 `network.extension.route.exclude`
 
-The listed routes will be excluded from filtering in *Network Extension* mode. Set routes using an IP address or destination CIDR. Separate values with commas or line breaks.
+The listed routes will be excluded from filtering in the *Network Extension* mode. Set routes using an IP address or destination CIDR. Separate values with commas or line breaks.
 
 `network.extension.http.downgrade.bundleids`
 
@@ -27,7 +27,7 @@ Here you can specify a list of applications for which the HTTP/2 protocol will b
 
 `network.extension.monterey.force.split.tunnel`
 
-Here you can prohibit AdGuard from using the "default route" which is enabled by default in *Network Extension* mode on macOS Monterey. AdGuard uses "default route" to disable iCloud Private Relay and Protect Mail Activity, because it cannot work with them simultaneously.
+Here you can prohibit AdGuard from using the "default route" which is enabled by default in the *Network Extension* mode on macOS Monterey. AdGuard uses "default route" to disable iCloud Private Relay and Protect Mail Activity, as it cannot operate in unison with them.
 
 You will find more information about the problem [in this article](../icloud-private-relay).
 

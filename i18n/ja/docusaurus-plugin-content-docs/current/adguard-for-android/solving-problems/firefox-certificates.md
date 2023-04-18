@@ -30,9 +30,9 @@ Firefox (およびそれをベースにしたブラウザ) がAdGuard証明書�
 1. ADBをインストトールして設定します（方法：[Windows編](https://expnote.com/how-to-install-android-debug-bridge/)、[Mac編](https://child-programmer.com/m-adb/)）
 > Windowsでは、**Samsung** のユーザーは、[こちらのユーティリティ](https://developer.samsung.com/mobile/android-usb-driver.html)をインストールする必要があるかもしれません。
 2. **開発者モード**をアクティブにし、**USBデバッグ**を有効にします（※端末によって下記メニュー項目の名称が多少違ったりする場合がございます）:
-    - 端末で**設定**アプリを開きます。
-    - **システム**セクションに移動し（設定メニューの最後の項目）、 サブアイテム「**端末について**」を見つけます。
-    - 「**ビルド番号**」の行を7回タップします。 その後、「**開発者になりました！**」のような通知が表示されます（必要に応じて、デバイスのロック解除コードを入力してください）。
+    - Open the **Settings** app on your phone;
+    - **システム**セクションに移動し（設定メニューの最後の項目）、 In this section, find the sub-item **About phone**;
+    - Tap the **Build number** line 7 times. その後、「**開発者になりました！**」のような通知が表示されます（必要に応じて、デバイスのロック解除コードを入力してください）。
     - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
 3. [Firefox](https://www.mozilla.org/en-US/firefox/releases/)ブラウザ（リリース版）をインストールします
 4. Open the **AdGuard settings** → **Network** → **HTTPS Filtering** → Install the certificate in **Firefox** → **INSTALL FOR OLD VERSIONS**;

@@ -1,5 +1,5 @@
 ---
-title: Jak blokovat reklamy v YouTube
+title: How to block ads in the YouTube app
 sidebar_position: 7
 ---
 

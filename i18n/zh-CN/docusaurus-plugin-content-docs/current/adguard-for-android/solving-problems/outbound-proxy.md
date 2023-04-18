@@ -93,7 +93,7 @@ sidebar_position: 8
 
 **请注意：在您开始设置前，请将 Shadowsocks 应用程序从过滤的应用程序列表移除（「AdGuard」--> 「应用管理」--> 「Shadowsocks」--> 「禁用保护」）以避免运行错误。**
 
-1. Open AdGuard and go to  **Settings** → **Network** → **Proxy settings**.
+1. Open AdGuard and go to **Settings** → **Network** → **Proxy settings**.
 
 2. 点击**「添加代理」**按钮并输入以下数据：
 

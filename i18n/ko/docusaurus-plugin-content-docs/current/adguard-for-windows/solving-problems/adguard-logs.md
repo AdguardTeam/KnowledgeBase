@@ -27,7 +27,7 @@ sidebar_position: 3
 
 가끔 지원 팀은 **추적 로그**를 보내달라고 요청할 수 있습니다. 추적 로그를 수집하는 방법은 다음과 같습니다.
 
-1. 트레이 메뉴에서 AdGuard 아이콘을 마우스 우클릭하고 **AdGuard 종료**를 선택하여 AdGuard를 중지합니다.
+1. Stop AdGuard by right-clicking the AdGuard icon in the tray menu and choosing *Exit AdGuard*:
 
 ![AdGuard 종료 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-3.png)
 

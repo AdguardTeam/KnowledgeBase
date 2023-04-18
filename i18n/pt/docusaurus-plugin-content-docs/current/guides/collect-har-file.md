@@ -30,7 +30,7 @@ Para criar um arquivo HAR no Chrome:
 
 8. Reproduza as etapas que criam o problema.
 
-9. Salve a sessão como um arquivo .har clicando com o botão direito do mouse na grade e selecionando ***Salvar como HAR com conteúdo***.
+9. Save session as a .har file by right-clicking the grid and selecting ***Save as HAR with content***.
 
 10. Encaminhe para o suporte do AdGuard (support@adguard.com) com uma explicação detalhada do problema. Capturas de tela de suporte também podem ser úteis.
 
@@ -57,7 +57,7 @@ Para criar um arquivo HAR no Chrome:
 
 8. Reproduza as etapas que criam o problema.
 
-9. Salve a sessão como um arquivo .har clicando com o botão direito do mouse na grade e selecionando ***Salvar como HAR com conteúdo***.
+9. Save session as a .har file by right-clicking the grid and selecting ***Save as HAR with content***.
 
 10. Encaminhe para o suporte do AdGuard (support@adguard.com) com uma explicação detalhada do problema. Capturas de tela de suporte também podem ser úteis.
 
@@ -84,7 +84,7 @@ Para criar um arquivo HAR no Firefox:
 
 7. Reproduza as etapas que criam o problema.
 
-8. Salve a sessão como um arquivo .har clicando com o botão direito do mouse na grade e selecionando ***Salvar tudo como HAR***.
+8. Save session as a .har file by right-clicking the grid and selecting ***Save all as HAR***.
 
 9. Encaminhe para o suporte do AdGuard (support@adguard.com) com uma explicação detalhada do problema. Capturas de tela de suporte também podem ser úteis.
 

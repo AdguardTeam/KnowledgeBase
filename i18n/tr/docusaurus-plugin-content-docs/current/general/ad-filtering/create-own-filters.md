@@ -300,7 +300,7 @@ A restriction of third-party and own requests. A third-party request is a reques
 
 > **Not**
 > 
-> To be considered as such, a third-party request should meet one of the following conditions: 1. Its referrer is not a subdomain of the target domain or the other way round. For example, a request to `subdomain.example.org` from `example.org` is not a third-party request. 1. Its `Sec-Fetch-Site` header is set to `cross-site`. If there is a `$third-party` modifier, the rule is only applied to third-party requests.
+> To be considered as such, a third-party request should meet one of the following conditions: 1. Its referrer is not a subdomain of the target domain or vice versa. For example, a request to `subdomain.example.org` from `example.org` is not a third-party request. 1. Its `Sec-Fetch-Site` header is set to `cross-site`. If there is a `$third-party` modifier, the rule is only applied to third-party requests.
 
 **Örnekler**
 
@@ -330,7 +330,7 @@ AdGuard will try to close the browser tab with any address that matches a blocki
 > 
 > 1. `$popup` modifier works best in AdGuard Browser Extension.
 > 2. In AdGuard for Safari and iOS, `$popup` rules simply block the page right away.
-> 3. In AdGuard for Windows, Mac, and Android, `$popup` modifier may not detect a popup in some cases and it won't be blocked. `$popup` modifier applies the `document` content type with a special flag which is passed to a blocking page. Blocking page itself can do some checks and close the window if it is really a popup. Otherwise, page should be loaded. It can be combined with other request type modifiers, such as `$third-party` and `$important`. However, the blocking page may not detect a popup in some cases, so it is recommended to use [AdGuard Popup Blocker](https://github.com/AdguardTeam/PopupBlocker) userscript instead.
+> 3. In AdGuard for Windows, Mac, and Android, `$popup` modifier may not detect a popup in some cases and it won't be blocked. `$popup` modifier applies the `document` content type with a special flag which is passed to a blocking page. Blocking page itself can do some checks and close the window if it is really a popup. Otherwise, page should be loaded. It can be combined with other request type modifiers, such as `$third-party` and `$important`. However, the blocking page may not detect a popup in some cases, so it is recommended to use the [AdGuard Popup Blocker](https://github.com/AdguardTeam/PopupBlocker) userscript instead.
 
 #### **`$match-case`** {#match-case-modifier}
 
@@ -927,7 +927,7 @@ where:
   * **`seconds`** — number of seconds for current time to offset the expiration date of cookie.
   * **`strategy`** — string for [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite) strategy to make cookie use.
 
-For example
+For example,
 ```
 ||example.org^$cookie=NAME;maxAge=3600;sameSite=lax
 ```
@@ -2803,7 +2803,7 @@ We provide preprocessor directives that can be used by filters maintainers to im
 > 
 > Any mistake in a preprocessor directive will lead to AdGuard failing the filter update in the same way as if the filter URL was unavailable.
 
-> Preprocessor directives can be used in the User Rules or in the custom filters.
+> Preprocessor directives can be used in the user rules or in the custom filters.
 
 #### Including a file {#include-directive}
 

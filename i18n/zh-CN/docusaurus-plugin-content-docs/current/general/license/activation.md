@@ -7,7 +7,7 @@ sidebar_position: 3
 
 要激活许可证，请打开 AdGuard 软件的「*许可证*」部分，前往「*登录*」或「*激活*」按钮。 使用您的 AdGuard 账号的电子邮件和密码登录。 如果您还没有一个账号，您将被提示创建一个。
 
-> Note: To activate a license via AdGuard account, you need to have a valid license with at least one open slot there. If your license is already used on a maximum number of devices, you can [upgrade it](../payment-options#upgrade) or [transfer it from one device to another](../transfer).
+> Note: To activate a license via the AdGuard account, a valid license with at least one free slot is required. If your license is already used on a maximum number of devices, you can [upgrade it](../payment-options#upgrade) or [transfer it from one device to another](../transfer).
 
 您还可以使用[许可证密钥](../what-is#license-key)激活许可证。
 

@@ -1,5 +1,5 @@
 ---
-title: How to block ads in the Youtube app
+title: How to block ads in the YouTube app
 sidebar_position: 7
 ---
 

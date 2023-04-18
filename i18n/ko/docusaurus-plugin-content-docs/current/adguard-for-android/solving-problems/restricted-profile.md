@@ -14,9 +14,9 @@ Android 7 이상 운영 체제를 실행하는 휴대폰, 태블릿 또는 TV �
 > **AdGuard v3.5 Nightly 6** 또는 최신 버전이 있는 경우 이 방법을 사용할 수 있습니다. 이전 버전을 사용하면 [여기](https://adguard.com/adguard-android/overview.html)에서 Nightly 버전 다운로드가 가능합니다.
 
 1. **개발자 모드** 및 **USB 디버깅**을 활성화합니다.
-- 휴대폰에서 **설정**을 엽니다.
-- **시스템** 섹션(설정 메뉴의 마지막 항목)으로 이동합니다. 이 섹션에서 **휴대전화 정보**를 찾습니다.
-- **빌드 번호** 줄을 7번 클릭합니다. 그 후에 **개발자 모드를 켰습니다**라는 알림을 받게 됩니다. 필요한 경우 기기의 잠금 해제 코드를 입력하세요.
+- Open the **Settings** app phone;
+- **시스템** 섹션(설정 메뉴의 마지막 항목)으로 이동합니다. In this section, find the sub-item **About phone**;
+- Tap the **Build number** line 7 times. 그 후에 **개발자 모드를 켰습니다**라는 알림을 받게 됩니다. 필요한 경우 기기의 잠금 해제 코드를 입력하세요.
 - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
 
 > 어려움이나 추가 질문이있는 경우 [여기](https://developer.android.com/studio/debug/dev-options)에서 자세한 지침을 확인할 수 있습니다.

@@ -30,9 +30,9 @@ Firefox Nightly가 AdGuard 인증서를 신뢰하도록 하려면 다음 단계�
 1. adb를 [설치하고 구성합니다.](https://www.xda-developers.com/install-adb-windows-macos-linux/)
 > Windows 플랫폼을 사용하는 경우, adb를 설치하고 구성합니다. **삼성 기기**를 사용하는 경우, [이 드라이버](https://developer.samsung.com/mobile/android-usb-driver.html)를 설치해야 합니다.
 2. **개발자 모드** 및 **USB 디버깅**을 활성화합니다.
-    - 휴대폰에서 **설정**을 엽니다.
-    - **시스템** 섹션(설정 메뉴의 마지막 항목)으로 이동합니다. 이 섹션에서 **휴대전화 정보**를 찾습니다.
-    - **빌드 번호** 줄을 7번 클릭합니다. 그 후에 '**개발자 모드를 켰습니다'**라는 알림을 받게 됩니다. 필요한 경우 기기의 잠금 해제 코드를 입력하세요.
+    - Open the **Settings** app on your phone;
+    - **시스템** 섹션(설정 메뉴의 마지막 항목)으로 이동합니다. In this section, find the sub-item **About phone**;
+    - Tap the **Build number** line 7 times. 그 후에 '**개발자 모드를 켰습니다'**라는 알림을 받게 됩니다. 필요한 경우 기기의 잠금 해제 코드를 입력하세요.
     - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
 3. [Firefox ](https://www.mozilla.org/en-US/firefox/releases/)브라우저(정식 버전)를 설치합니다.
 4. Open the **AdGuard settings** → **Network** → **HTTPS Filtering** → Install the certificate in **Firefox** → **INSTALL FOR OLD VERSIONS**;

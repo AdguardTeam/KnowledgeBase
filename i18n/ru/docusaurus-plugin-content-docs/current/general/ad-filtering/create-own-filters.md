@@ -116,7 +116,7 @@ sidebar_position: 5
 
 ## Базовые правила
 
-Самые простые правила — это так называемые *Базовые правила*. Они используются для блокировки запросов к определённым URL-адресам. Либо, при наличии специального маркера @@ в начале правила, для разблокировки запроса. The basic principle for this type of rules is quite simple: you have to specify the address and additional parameters that limit or expand the rule scope.
+Самые простые правила — это так называемые *Базовые правила*. Они используются для блокировки запросов к определённым URL-адресам. Либо, при наличии специального маркера @@ в начале правила, для разблокировки запроса. Основной принцип для этого типа правил достаточно прост: необходимо указать адрес и дополнительные параметры, которые ограничивают или расширяют область действия правила.
 
 > **Подзапросы**
 > 
@@ -135,7 +135,7 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 
 * **`pattern`** — маска адреса. URL каждого запроса сопоставляется с этой маской. В шаблоне вы можете использовать некоторые специальные символы, описание которых будет дано [ниже](#basic-rules-special-characters). Обратите внимание, что AdGuard обрезает URL до 4096 символов, чтобы ускорить сопоставление и избежать проблем с длинными URL.
 * **`@@`** — маркер, который используется для обозначения правил-исключений. С такого маркера должны начинаться правила, отключающие фильтрацию для запроса.
-* **`modifiers`** — параметры, используемые для «уточнения»‎ базового правила. Some of them limit the rule scope and some can completely change they way it works.
+* **`modifiers`** — параметры, используемые для «уточнения»‎ базового правила. Некоторые параметры ограничивают область действия правила, а некоторые могут полностью изменить принцип его работы.
 
 ### Специальные символы {#basic-rules-special-characters}
 
@@ -219,7 +219,7 @@ Wildcard-символы поддерживаются для TLD-доменов �
 
 #### **`$domain`** {#domain-modifier}
 
-`$domain` limits the rule scope to requests made **from** the specified domains and their subdomains (as indicated by the [Referer](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer) HTTP header). Чтобы добавить несколько доменов в одно правило, используйте символ `|` в качестве разделителя.
+`$domain` ограничивает область действия правила запросами, сделанными **с** указанных доменов и их поддоменов (как указано в HTTP-заголовке [Referer](https://developer.mozilla.org/ru/docs/Web/HTTP/Headers/Referer)). Чтобы добавить несколько доменов в одно правило, используйте символ `|` в качестве разделителя.
 
 **Примеры**
 
@@ -239,14 +239,14 @@ Wildcard-символы поддерживаются для TLD-доменов �
 
 В некоторых случаях модификатор `$domain` может соответствовать не только домену-рефереру, но и целевому домену. Это происходит в случае, когда всё из перечисленного верно:
 
-1. The request has `document` content type.
-1. The rule pattern does not match any particular domains.
-1. The rule pattern does not contain regular expressions.
-1. The `$domain` modifier contains only excluded domains, e.g. `$domain=~example.org|~example.com`.
+1. Тип контента запроса — `document`.
+1. Шаблон правила не соответствует ни одному конкретному домену.
+1. Шаблон правила не содержит регулярных выражений.
+1. Модификатор `$domain` содержит только исключённые домены, например, `$domain=~example.org|~example.com`.
 
-The following predicate should be satisfied to perform a target domain matching:
+Для сопоставления целевого домена должен выполняться следующий предикат:
 ```
-1 AND ((2 AND 3) OR 4)
+1 И ((2 И 3) ИЛИ 4)
 ```
 То есть, если модификатор `$domain` содержит только исключённые домены, то правилу не нужно выполнять второе и третье условия, чтобы соответствовать целевому домену `$domain`.
 
@@ -259,7 +259,7 @@ The following predicate should be satisfied to perform a target domain matching:
 * `*$cookie,domain=example.org|example.com` заблокирует cookies для всех запросов от и к `example.org` и `example.com`.
 * `*$document,domain=example.org|example.com` заблокирует все запросы от и к `example.org` и `example.com`.
 
-In the following examples it is implied that requests are sent from `http://example.org/page` (the referrer) and the target URL is `http://targetdomain.com/page`.
+В следующих примерах предполагается, что запросы отправляются от `http://example.org/page` (реферер), а целевой URL — `http://targetdomain.com/page`.
 
 * `page$domain=example.org` сработает, так как соответствует рефереру.
 * `page$domain=targetdomain.com` сработает, так как соответствует целевому домену и удовлетворяет всем требованиям, перечисленным выше.
@@ -274,25 +274,25 @@ In the following examples it is implied that requests are sent from `http://exam
 
 > **Совместимость с различными версиями AdGuard**
 > 
-> Starting with CoreLibs v1.12, the `$domain` modifier can be alternatively spelled as `$from`.
+> Начиная с CoreLibs 1.12, модификатор `$domain` можно также записать как `$from`.
 
 #### **`$to`** {#to-modifier}
 
-`$to` limits the rule scope to requests made **to** the specified domains and their subdomains. Чтобы добавить несколько доменов в одно правило, используйте символ `|` в качестве разделителя.
+`$to` ограничивает область действия правила запросами, сделанными **на** указанные домены и их поддомены. Чтобы добавить несколько доменов в одно правило, используйте символ `|` в качестве разделителя.
 
 **Примеры**
 
-* `/ads$to=evil.com|evil.org` blocks any request to `evil.com` or `evil.org` and their subdomains with a path matching `/ads`.
-* `/ads$to=~not.evil.com|evil.com` blocks any request to `evil.com` and its subdomains, with a path matching `/ads`, except requests to `not.evil.com` and its subdomains.
-* `/ads$to=~good.com|~good.org` blocks any request with a path matching `/ads`, except requests to `good.com` or `good.org` and their subdomains.
+* `/ads$to=evil.com|evil.org` блокирует любые запросы к `evil.com` или `evil.org` и их поддоменам с путём, соответствующим `/ads`.
+* `/ads$to=~not.evil.com|evil.com` блокирует любые запросы к `evil.com` и его поддоменам с путём, совпадающим с `/ads`, за исключением запросов к `not.evil.com` и его поддоменам.
+* `/ads$to=~good.com|~good.org` блокирует любые запросы с путём, соответствующим `/ads`, за исключением запросов к `good.com` или `good.org` и их поддоменам.
 
 > **Совместимость с другими модификаторами**
 > 
-> [`$denyallow`](#denyallow-modifier) can not be used together with `$to`. It can be expressed with inverted `$to`: `$denyallow=a.com|b.com` is equivalent to `$to=~a.com|~b.com`.
+> [`$denyallow`](#denyallow-modifier) нельзя использовать вместе с `$to`. Его можно выразить инвертированным `$to`: `$denyallow=a.com|b.com` эквивалентно `$to=~a.com|~b.com`.
 
 > **Совместимость с различными версиями AdGuard**
 > 
-> `$to` is available starting with CoreLibs v1.12.
+> `$to` доступен, начиная с CoreLibs 1.12.
 
 #### **`$third-party`** {#third-party-modifier}
 
@@ -300,7 +300,7 @@ In the following examples it is implied that requests are sent from `http://exam
 
 > **Примечание**
 > 
-> To be considered as such, a third-party request should meet one of the following conditions: 1. Its referrer is not a subdomain of the target domain or the other way round. Например, запрос к `subdomain.example.org`, отправленный с домена `example.org`, не является сторонним. 1. Its `Sec-Fetch-Site` header is set to `cross-site`. Если указан модификатор `$third-party`, то правило применяется только к сторонним запросам.
+> Чтобы считаться таковым, сторонний запрос должен соответствовать одному из следующих условий: 1. Его реферер — это не поддомен целевого домена, или наоборот. Например, запрос к `subdomain.example.org`, отправленный с домена `example.org`, не является сторонним. 1. Значение его заголовка `Sec-Fetch-Site` — `cross-site`. Если указан модификатор `$third-party`, то правило применяется только к сторонним запросам.
 
 **Примеры**
 
@@ -328,9 +328,9 @@ AdGuard будет пытаться закрыть браузерную вкла
 
 > **Совместимость с различными версиями AdGuard**
 > 
-> 1. `$popup` modifier works best in AdGuard Browser Extension.
-> 2. In AdGuard for Safari and iOS, `$popup` rules simply block the page right away.
-> 3. In AdGuard for Windows, Mac, and Android, `$popup` modifier may not detect a popup in some cases and it won't be blocked. `$popup` modifier applies the `document` content type with a special flag which is passed to a blocking page. Blocking page itself can do some checks and close the window if it is really a popup. Otherwise, page should be loaded. It can be combined with other request type modifiers, such as `$third-party` and `$important`. However, the blocking page may not detect a popup in some cases, so it is recommended to use [AdGuard Popup Blocker](https://github.com/AdguardTeam/PopupBlocker) userscript instead.
+> 1. Модификатор `$popup` лучше всего работает в браузерном расширении AdGuard.
+> 2. В AdGuard для Safari и iOS `$popup-правила` просто заблокируют страницу.
+> 3. В AdGuard для Windows, Mac и Android модификатор `$popup` в некоторых случаях может не обнаружить всплывающее окно, и оно не будет заблокировано. Модификатор `$popup` применяет тип контента `document` со специальным флагом, который передаётся блокирующей странице. Блокирующая страница сама может провести некоторые проверки и закрыть окно, если это действительно всплывающее окно. В противном случае страница должна быть загружена. Его можно комбинировать с другими модификаторами типа request, такими как `$third-party` и `$important`. Однако в некоторых случаях страница блокировки может не обнаружить всплывающее окно, поэтому вместо этого рекомендуется использовать пользовательский скрипт [Блокировщик всплывающей рекламы AdGuard](https://github.com/AdguardTeam/PopupBlocker).
 
 #### **`$match-case`** {#match-case-modifier}
 
@@ -460,7 +460,7 @@ h_value = string / regexp
 
 > **Совместимость с различными версиями AdGuard**
 > 
-> AdGuard для Windows, Mac и Android часто не может точно определить `navigator.sendBeacon()`. For reliable detection, use AdGuard Browser extension.
+> AdGuard для Windows, Mac и Android часто не может точно определить `navigator.sendBeacon()`. Для надёжного обнаружения используйте Браузерное расширение AdGuard.
 
 #### **`$xmlhttprequest`** {#xmlhttprequest-modifier}
 
@@ -468,7 +468,7 @@ h_value = string / regexp
 
 > **Совместимость с различными версиями AdGuard**
 > 
-> AdGuard для Windows, Mac и Android часто не может точно определить этот тип модификатора и иногда определяет его как [`$other`](#other-modifier) или [`$script`](#script-modifier). For reliable detection, use AdGuard Browser extension.
+> AdGuard для Windows, Mac и Android часто не может точно определить этот тип модификатора и иногда определяет его как [`$other`](#other-modifier) или [`$script`](#script-modifier). Для надёжного обнаружения используйте Браузерное расширение AdGuard.
 
 #### **`$websocket`** {#websocket-modifier}
 
@@ -476,7 +476,7 @@ h_value = string / regexp
 
 > **Совместимость с различными версиями AdGuard**
 > 
-> `$websocket` modifier is supported in all AdGuard products except AdGuard Content Blocker. As for AdGuard for Safari and AdGuard for iOS, it's supported on devices with macOS Monterey (version 12) and iOS 16 or higher.
+> Модификатор `$websocket` поддерживается во всех продуктах AdGuard, кроме AdGuard Content Blocker. Что касается AdGuard для Safari и AdGuard для iOS, то они поддерживаются на устройствах с macOS Monterey (версия 12) и iOS 16 и выше.
 
 #### **`$other`** {#other-modifier}
 
@@ -854,9 +854,9 @@ replace = "/" regexp "/" replacement "/" modifiers
 
 Этот модификатор полностью меняет поведение страницы. Когда он применяется, правило не блокирует запрос. Вместо этого будут изменены заголовки ответа.
 
-> In order to use this type of rules, it is required to have the basic understanding of the [Permissions Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Permissions_Policy) security layer.
+> Чтобы использовать правила этого типа, необходимо базовое понимание слоя безопасности [Feature Policy](https://developer.mozilla.org/ru/docs/Web/HTTP/Permissions_Policy).
 
-For the requests matching a `$permissions` rule, AdGuard strengthens response's permissions policy by adding additional permission policy equal to the `$permissions` modifier contents. Правила `$permissions` применяются независимо от правил любого другого типа. Прочие базовые правила никак на них не влияют, **кроме правил исключений уровня document** (см. примеры).
+Для запросов, соответствующих правилу `$permissions`, AdGuard усиливает «политику функций» ответа, добавляя дополнительную политику, равную содержимому модификатора `$permissions`. Правила `$permissions` применяются независимо от правил любого другого типа. Прочие базовые правила никак на них не влияют, **кроме правил исключений уровня document** (см. примеры).
 
 > **Несколько правил, соответствующих одному запросу.**
 > 
@@ -864,21 +864,21 @@ For the requests matching a `$permissions` rule, AdGuard strengthens response's 
 
 **Синтаксис**
 
-`$permissions` value syntax is similar to the `Permissions-Policy` header [syntax](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy) with one exception: comma that separates several features **MUST** be escaped — see examples below. Список доступных директив доступен [здесь](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives).
+Синтаксис значения `$permissions` подобен заголовку `Permissions-Policy` [синтаксису](https://developer.mozilla.org/ru/docs/Web/HTTP/Permissions_Policy) с одним исключением: запятая, разделяющая несколько функций **, ДОЛЖНА** экранироваться — см. примеры ниже. Список доступных директив доступен [здесь](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives).
 
 Значение `$permissions` может быть пустым в случае правил-исключений — смотрите примеры ниже.
 
 > **Ограничения**
 > 
-> 1. Characters forbidden in the `$permissions` value: `$`;
+> 1. В значении `$permissions` запрещён символ `$`;
 > 2. `$permissions`-правила совместимы с ограниченным списком модификаторов: `$domain`, `$important` и `$subdocument`.
 
 **Примеры**
 
-* `||example.org^$permissions=sync-xhr=()` disallows synchronous `XMLHttpRequest` requests across `example.org`.
-* `@@||example.org/page/*$permissions=sync-xhr=()` disables all rules with the `$permissions` modifier exactly matching `sync-xhr=()` on all the pages matching the rule pattern. Например, правило выше.
+* `||example.org^$permissions=sync-xhr=()` запрещает синхронные запросы `XMLHttpRequest` на `example.org`.
+* `@@||example.org/page/*$permissions=sync-xhr=()` отключает все правила с модификатором `$permissions`, в точности соответствующим `sync-xhr=()` на всех страницах, подходящих под паттерн правила. Например, правило выше.
 * `@@||example.org/page/*$permissions` отключает все `$permissions`-правила на всех страницах, подходящих под паттерн правила.
-* `$domain=example.org|example.com,permissions=oversized-images=()\, sync-script=()\, unsized-media=()` disallows oversized images, synchronous scripts and unsized media features across `example.org` and `example.com`.
+* `$domain=example.org|example.com,permissions=oversized-images=()\, sync-script=()\, unsized-media=()` запрещает использование изображений большого размера, синхронных сценариев и медиа-функций нестандартного размера на сайтах `example.org` и `example.com`.
 * `@@||example.org^$document` или `@@||example.org^$urlblock` отключает все `$permission`-правила на всех страницах, подходящих под паттерн правила.
 
 > **Совместимость с различными версиями AdGuard**
@@ -927,7 +927,7 @@ $cookie [= name[; maxAge = seconds [; sameSite = strategy ]]]
   * **`seconds`** — количество секунд, на которое сместится истечение срока действия куки.
   * **`strategy`** — строка для стратегии [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite) для использования куки.
 
-Например
+Например,
 ```
 ||example.org^$cookie=NAME;maxAge=3600;sameSite=lax
 ```
@@ -1010,16 +1010,16 @@ $cookie [= name[; maxAge = seconds [; sameSite = strategy ]]]
 
 #### **`$method`** {#method-modifier}
 
-This modifier limits the rule scope to requests that use the specified set of HTTP methods. Negated methods are allowed. The methods must be specified in all lowercase characters, but are matched case-insensitively.
+Этот модификатор ограничивает область действия правила запросами, использующими указанный набор методов HTTP. Допускаются отрицательные методы. Методы должны быть указаны строчными буквами, но сопоставляются они без учёта регистра.
 
 **Примеры**
 
-* `||evil.com^$method=get|head` blocks only GET and HEAD requests to `evil.com`.
-* `||evil.com^$method=~post|~put` blocks any requests except POST or PUT to `evil.com`.
+* `||evil.com^$method=get|head` блокирует только запросы GET и HEAD к `evil.com`.
+* `||evil.com^$method=~post|~put` блокирует любые запросы, кроме POST или PUT к `evil.com`.
 
 > **Совместимость с различными версиями AdGuard**
 > 
-> `$method` is available starting with CoreLibs v1.12.
+> `$method` доступен, начиная с CoreLibs 1.12.
 
 
 #### **`$redirect`** {#redirect-modifier}
@@ -1439,7 +1439,7 @@ preroll.ts
 
 Правила `$jsonprune` модифицируют ответ на соответствующий запрос, удаляя JSON-элементы, которые соответствуют модифицированному выражению [JSONPath](https://goessner.net/articles/JsonPath/). Эти правила не изменяют ответы, которые не являются действительными JSON-документами.
 
-> In AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**, `$jsonprune` also supports modifying JSONP (padded JSON) documents.
+> В AdGuard для Windows, Mac и Android **с CoreLibs версии 1.11 или выше** `$jsonprune` также поддерживается модификация JSONP-документов (padded JSON).
 
 **Синтаксис**
 
@@ -1459,11 +1459,11 @@ preroll.ts
 5.  Выражения, оканчивающиеся на `..`, не поддерживаются.
 6.  Разрешено указывать несколько срезов массива (array slices) в квадратных скобках.
 
-There are various online tools that make working with JSONPath expressions more convenient:
+Существуют различные онлайн-инструменты, которые делают работу с выражениями JSONPath удобнее:
 
 https://www.site24x7.com/tools/jsonpath-finder-validator.html https://jsonpathfinder.com/ https://jsonpath.com/
 
-Keep in mind, though, that all JSONPath implementations have unique features/quirks and are subtly incompatible with each other.
+Обратите внимание, что различные имплементации JSONPath обладают уникальными особенностями и могут быть несовместимы друг с другом.
 
 **Исключения**
 
@@ -2246,7 +2246,7 @@ div:matches-property(memoizedProps._owner.src=/ad/)
 ```
 subject:nth-ancestor(n)
 ```
-- `subject` — required, standard or extended CSS selector
+- `subject` — стандартный или расширенный CSS-селектор, необходим
 - `n` — требуется, число >= 1 и < 256, расстояние до нужного родителя от элемента, выбранного `subject`
 
 **Синтаксис**
@@ -2254,7 +2254,7 @@ subject:nth-ancestor(n)
 ```
 subject:nth-ancestor(n)
 ```
-- `subject` — required, standard or extended CSS selector
+- `subject` — требуется стандартный или расширенный CSS-селектор
 - `n` — требуется, число >= 1 и < 256, расстояние до нужного родителя от элемента, выбранного `subject`
 
 ##### Ограничения `:nth-ancestor()` {#extended-css-nth-ancestor-limitations}
@@ -2291,7 +2291,7 @@ subject:nth-ancestor(n)
 ```
 subject:upward(ancestor)
 ```
-- `subject` — required, standard or extended CSS selector
+- `subject` — требуется стандартный или расширенный CSS-селектор
 - `ancestor` — требуется, спецификация для предка элемента, выбранного `subject`, может быть задана как:
   - *число* >= 1 и < 256 для указания расстояния до нужного предка, то же, что и [`:nth-ancestor()`](#extended-css-nth-ancestor)
   - *стандартный CSS-селектор* для поиска ближайшего предка
@@ -3042,7 +3042,7 @@ example.org#@#.adBanner
 В зависимости от используемого вами продукта AdGuard, Журнал фильтрации может находиться в различных пунктах меню.
 
 * В **AdGuard для Windows** вы найдёте его во вкладке настроек *Антибаннер* или через меню трея;
-* In **AdGuard for Mac** it is under *Settings → Advanced → Filtering log*;
+* В **AdGuard для Mac** он располагается в разделе *Настройки → Дополнительно → Журнал запросов*;
 * В **AdGuard для Android** это отдельный пункт бокового меню. Также в Журнал фильтрации отдельного приложения или сайта можно перейти из Помощника.
 * В **Браузерном расширении AdGuard** он находится во вкладке настроек *Дополнительно*, а также доступен после правого клика по иконке расширения. Только браузеры на основе Chromium и Firefox отображают **правила скрытия элементов** (включая CSS, ExtCSS) и **JS-правила и скриптлеты** в своих Журналах фильтрации.
 
