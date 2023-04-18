@@ -7,21 +7,21 @@ sidebar_position: 3
 
 To activate your license, go to the *License* section of your AdGuard product and find the *Log in* field or *Activate* button. Use the email and password of your AdGuard account to log in. If you don't have an account yet, you will be offered to create one.
 
-> Note: To activate a license via AdGuard account, you need to have a valid license with at least one open slot there. If your license is already used on a maximum number of devices, you can [upgrade it](../payment-options#upgrade) or [transfer it from one device to another](../transfer).
+> Note: To activate a license via the AdGuard account, a valid license with at least one free slot is required. If your license is already used on a maximum number of devices, you can [upgrade it](../payment-options#upgrade) or [transfer it from one device to another](../transfer).
 
-Alternatively, you can use a [license key](../what-is#license-key) to activate the license. 
+Alternatively, you can use a [license key](../what-is#license-key) to activate the license.
 
 **Below you can check step-by-step activation instructions for each platform.**
 
 ### Activating AdGuard for Windows
 
 1. Open the AdGuard app
-   
-To do it, double-click the AdGuard icon on the desktop:   
+
+To do it, double-click the AdGuard icon on the desktop:
 
 ![AdGuard icon on the desktop](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowsEn.png)
 
-or double-click the AdGuard icon in the system tray:   
+or double-click the AdGuard icon in the system tray:
 
 ![AdGuard icon in the system tray](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windows2En.png)
 
@@ -46,11 +46,11 @@ or double-click the AdGuard icon in the system tray:
 ![AdGuard icon in the menu bar](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/mac1.png)
 
 2. Click the **gear icon** in the top right corner
-3. Click **License...** 
+3. Click **License...**
 
 ![Go to Settings and License](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/macEn.png)
 
-4. In the opened window press **Activate** button   
+4. In the opened window press **Activate** button
 
 ![Press Activate](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/maclicenseen1.png)
 

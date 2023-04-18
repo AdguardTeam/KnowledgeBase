@@ -302,7 +302,7 @@ A restriction of third-party and own requests. A third-party request is a reques
 > **Note**
 >
 > To be considered as such, a third-party request should meet one of the following conditions:
-> 1. Its referrer is not a subdomain of the target domain or the other way round. For example, a request to `subdomain.example.org` from `example.org` is not a third-party request.
+> 1. Its referrer is not a subdomain of the target domain or vice versa. For example, a request to `subdomain.example.org` from `example.org` is not a third-party request.
 > 1. Its `Sec-Fetch-Site` header is set to `cross-site`.
 If there is a `$third-party` modifier, the rule is only applied to third-party requests.
 
@@ -339,7 +339,7 @@ AdGuard will try to close the browser tab with any address that matches a blocki
 > with a special flag which is passed to a blocking page. Blocking page itself can do some checks
 > and close the window if it is really a popup. Otherwise, page should be loaded.
 > It can be combined with other request type modifiers, such as `$third-party` and `$important`.
-> However, the blocking page may not detect a popup in some cases, so it is recommended to use
+> However, the blocking page may not detect a popup in some cases, so it is recommended to use the
 > [AdGuard Popup Blocker](https://github.com/AdguardTeam/PopupBlocker) userscript instead.
 
 #### **`$match-case`** {#match-case-modifier}
@@ -943,7 +943,7 @@ where:
   * **`seconds`** — number of seconds for current time to offset the expiration date of cookie.
   * **`strategy`** — string for [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite) strategy to make cookie use.
 
-For example
+For example,
 ```
 ||example.org^$cookie=NAME;maxAge=3600;sameSite=lax
 ```
@@ -1481,7 +1481,7 @@ The modified JSONPath syntax has the following differences from the original:
 5.  Expressions ending with `..` are not supported.
 6.  Multiple array slices can be specified in square brackets.
 
-There are various online tools that make working with JSONPath expressions more convenient: 
+There are various online tools that make working with JSONPath expressions more convenient:
 
 https://www.site24x7.com/tools/jsonpath-finder-validator.html
 https://jsonpathfinder.com/
@@ -2855,7 +2855,7 @@ We provide preprocessor directives that can be used by filters maintainers to im
 >
 > Any mistake in a preprocessor directive will lead to AdGuard failing the filter update in the same way as if the filter URL was unavailable.
 
-> Preprocessor directives can be used in the User Rules or in the custom filters.
+> Preprocessor directives can be used in the user rules or in the custom filters.
 
 #### Including a file {#include-directive}
 
