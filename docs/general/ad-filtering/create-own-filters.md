@@ -1663,6 +1663,10 @@ If a request matches multiple `$referrerpolicy` rules not disabled by exceptions
 * `@@||example.com^$referrerpolicy=unsafe-url` disables the previous rule.
 * `@@||example.com/abcd.html^$referrerpolicy` disables all `$referrerpolicy` rules on `example.com/abcd.html`.
 
+> **Restrictions**
+>
+> `$referrepolicy` rules can only be used in [**trusted filters**](#trusted-filters).
+
 #### **`noop`** {#noop-modifier}
 
 `noop` modifier does nothing and can be used solely to increase rules' readability. It consists of a sequence of underscore characters (`_`) of any length and can appear in a rule as many times as needed.
