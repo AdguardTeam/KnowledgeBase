@@ -219,7 +219,7 @@ The following modifiers are the most simple and frequently used.
 
 #### **`$domain`** {#domain-modifier}
 
-`$domain` limits the rule scope to requests made **from** the specified domains and their subdomains (as indicated by the [Referer](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer) HTTP header). To add multiple domains to one rule, use the `|`  character as a separator.
+`$domain` limits the rule scope to requests made **from** the specified domains and their subdomains (as indicated by the [Referer](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer) HTTP header). To add multiple domains to one rule, use the `|` character as a separator.
 
 **Examples**
 
@@ -263,8 +263,8 @@ In the following examples it is implied that requests are sent from `http://exam
 
 * `page$domain=example.org` will be matched, as it matches the referrer domain.
 * `page$domain=targetdomain.com` will be matched, as it matches the target domain and satisfies all requirements mentioned above.
-* `||*page$domain=targetdomain.com` will not be matched, as the pattern `||*page` matches specific domains.
-* `||*page$domain=targetdomain.com,cookie` will be matched despite the pattern `||*page` matches specific domains because it contains `$cookie` modifier.
+* `||*page$domain=targetdomain.com` will not be matched, as the `$domain` modifier matches specific domains.
+* `||*page$domain=targetdomain.com,cookie` will be matched despite the `$domain` modifier matches specific domains because it contains `$cookie` modifier.
 * `/banner\d+/$domain=targetdomain.com` will not be matched as it contains a regular expression.
 * `page$domain=targetdomain.com|~example.org` will not be matched because the referrer domain is explicitly excluded.
 
