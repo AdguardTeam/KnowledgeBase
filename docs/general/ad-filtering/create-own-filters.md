@@ -680,6 +680,7 @@ Disables generic basic rules on pages that correspond to exception rule.
 * [`$removeheader`](#removeheader-modifier)
 * [`$hls`](#hls-modifier)
 * [`$jsonprune`](#jsonprune-modifier)
+* [`$referrerpolicy`](#referrerpolicy-modifier)
 * [`noop`](#noop-modifier)
 * [`$empty` (deprecated)](#empty-modifier)
 * [`$mp4` (deprecated)](#mp4-modifier)
@@ -1645,6 +1646,22 @@ Basic URL exceptions shall not disable rules with `$jsonprune` modifier. They ca
 ```
 
 </details>
+
+#### **`$referrerpolicy`** {#referrerpolicy-modifier}
+
+These rules allow overriding of a page's [referrer policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy).
+Responses to matching requests will have all of their `Referrer-Policy` headers replaced with a single header with the value equal to the matching rule's modifier value.
+If the response carries an HTML document with a `<meta name="referrer"...` tag, the `content` attribute of the tag will also be replaced with the modifier value.
+
+An exception rule with a modifier value disables the blocking rule with the same modifier value.
+An exception rule without a modifier value disables all matched referrer-policy rules.
+
+If a request matches multiple `$referrerpolicy` rules not disabled by exceptions, only one of them (it is unspecified, which one) is applied.
+
+**Examples**
+* `||example.com^$referrerpolicy=unsafe-url` overrides the referrer policy for `example.com` with `unsafe-url`.
+* `@@||example.com^$referrerpolicy=unsafe-url` disables the previous rule.
+* `@@||example.com/abcd.html^$referrerpolicy` disables all `$referrerpolicy` rules on `example.com/abcd.html`.
 
 #### **`noop`** {#noop-modifier}
 
