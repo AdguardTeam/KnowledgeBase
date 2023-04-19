@@ -263,8 +263,10 @@ In the following examples it is implied that requests are sent from `http://exam
 
 * `page$domain=example.org` will be matched, as it matches the referrer domain.
 * `page$domain=targetdomain.com` will be matched, as it matches the target domain and satisfies all requirements mentioned above.
-* `||*page$domain=targetdomain.com` will not be matched, as the `$domain` modifier matches specific domains.
-* `||*page$domain=targetdomain.com,cookie` will be matched despite the `$domain` modifier matches specific domains because it contains `$cookie` modifier.
+* `||*page$domain=targetdomain.com` will not be matched, as the pattern `||*page` may match specific domains,
+e.g. `example.page`.
+* `||*page$domain=targetdomain.com,cookie` will be matched because the rule contains `$cookie` modifier
+despite the pattern `||*page` may match specific domains.
 * `/banner\d+/$domain=targetdomain.com` will not be matched as it contains a regular expression.
 * `page$domain=targetdomain.com|~example.org` will not be matched because the referrer domain is explicitly excluded.
 
