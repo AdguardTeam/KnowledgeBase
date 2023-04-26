@@ -12,13 +12,14 @@ sidebar_position: 2
 **Free disk space:** 120 MB.
 
 ## Installation
-Most Android-based apps are distributed via Google Play; however, AdGuard is not presented there, because Google prohibits distribution of network-level ad blockers via Google Play, i.e. apps that block commercials in other apps. You will find more information about Google restrictive policy [in our blog](https://blog.adguard.com/en/google-removes-adguard-android-app-google-play/).
+
+Most Android-based apps are distributed via Google Play; however, AdGuard is not presented there, because Google prohibits distribution of network-level ad blockers via Google Play, i.e. apps that block commercials in other apps. You will find more information about Google restrictive policy [in our blog](https://blog.adguard.com/google-removes-adguard-android-app-google-play/).
 
 That’s why you can only install AdGuard for Android manually. To use the app on your mobile device, you will need to do the following.
 
 First of all, allow installing apps from unknown sources in your device’s OS settings. For this you will need to:
 
-* For Android 8+: start downloading [AdGuard apk](https://adguard.com/en/adguard-android/overview.html) (see the next step), you'll be prompted to allow permission. Tap **Settings** in the opened window and enable **Allow from this source** switch. Then resume the installation.
+* For Android 8+: start downloading [AdGuard apk](https://adguard.com/download.html?auto=1) (see the next step), you'll be prompted to allow permission. Tap **Settings** in the opened window and enable **Allow from this source** switch. Then resume the installation.
 * For Android 6 and 7: open **Settings**, then select **Additional settings** in **System & Device**. Switch on **Unknown sources** and press **OK** in the system warning window.
 
 ![Installing apps from unknown sources *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/unknown_sources1.png)
