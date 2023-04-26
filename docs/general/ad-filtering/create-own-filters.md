@@ -1667,6 +1667,10 @@ If a request matches multiple `$referrerpolicy` rules not disabled by exceptions
 >
 > `$referrepolicy` rules can only be used in [**trusted filters**](#trusted-filters).
 
+> **Compatibility with different versions of AdGuard**
+>
+> `$referrerpolicy` is available starting with CoreLibs v1.12.
+
 #### **`noop`** {#noop-modifier}
 
 `noop` modifier does nothing and can be used solely to increase rules' readability. It consists of a sequence of underscore characters (`_`) of any length and can appear in a rule as many times as needed.
