@@ -9,7 +9,7 @@ To analyse and diagnose different problems that may potentially arise, the AdGua
 
 ![Debug logging level *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
 
-2. Reproduce the issue.
+2. Sorunu yeniden oluşturun.
 
 - We strongly advise to take note of the exact time when you reproduced the issue: it will help our support team to find relevant log entries and solve the problem faster.
 
@@ -27,7 +27,7 @@ To analyse and diagnose different problems that may potentially arise, the AdGua
 
 Sometimes support team members may ask you to send *trace* logs. Then you will need to do the following:
 
-1. Stop AdGuard by right-clicking on the AdGuard icon in the tray menu and choosing *Exit AdGuard*:
+1. Stop AdGuard by right-clicking the AdGuard icon in the tray menu and choosing *Exit AdGuard*:
 
 ![Exit AdGuard *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-3.png)
 
@@ -43,7 +43,7 @@ Please don't leave the service running:
 
 ![Debug *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
 
-5. Reproduce the issue.
+5. Sorunu yeniden oluşturun.
 
 - We strongly advise to take note of the exact time when you reproduced the issue: it will help our support team to find relevant log entries and solve the problem faster.
 

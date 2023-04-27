@@ -3,7 +3,7 @@ title: Advanced (low-level) Settings guide
 sidebar_position: 7
 ---
 
-Previously known as low-level settings, Advanced Settings mostly contain options that go beyond the average user competence and aren't applied in everyday use. AdGuard for Windows is designed to work without ever having to change any of them, but they will provide additional features in some corner cases or when solving an uncommon problem.
+Previously known as low-level settings, Advanced Settings mostly contain settings that go beyond the average user's competence and don't have application in the everyday use. AdGuard for Windows is designed to work without ever having to change any of them, but they will provide additional options in some corner-case situations or when solving an uncommon problem.
 
 > Mindlessly changing *Advanced Settings* can potentially cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only make changes to these settings if you are sure of what you are doing or if our support team has asked you to do so.
 
@@ -18,26 +18,6 @@ Once you open Advanced Settings, you will be presented with the following option
 ### Block TCP Fast Open
 
 If enabled, AdGuard will block TCP Fast Open in the Edge browser. To apply settings, you need to restart the browser.
-
-### Show AdGuard VPN in Settings
-
-Enabling this option allows you to display the AdGuard VPN tab in Settings for easy opening of the app and the product's website.
-
-### Enable asynchronous OCSP SSL/TLS certificate revocation checks
-
-Once enabled, this option runs asynchronous OCSP checks to check whether the website’s SSL/TLS certificate is revoked. 
-
-If the OCSP check completes within the minimum timeout, AdGuard will immediately apply the result: block the connection if the certificate is revoked or establish a connection if the certificate is valid. 
-
-If the verification takes too long, AdGuard will establish a connection and continue checking in the background. If the certificate is revoked, current and future connections to the domain will be blocked.
-
-### Use Encrypted ClientHello
-
-Every encrypted Internet connection has an unencrypted part. This is the very first packet which contains the name of the server you are connecting to. Encrypted Client Hello technology is supposed to solve this issue and encrypt that last bit of unencrypted information. To benefit from it, enable the *Use Encrypted ClientHello* option. It uses a local DNS proxy to look for ECH configuration for the domain. If it is found, ClientHello packet will be encrypted.
-
-### Check websites' certificate transparency
-
-Verifies the authenticity of all certificates for the domain based on Chrome Certificate Transparency Policy. If the certificate does not comply with the Chrome CT Policy, AdGuard will not filter the website. Chrome, in turn, will block it.
 
 ### Exclude app from filtering by entering the full path
 
@@ -115,65 +95,25 @@ This option should be enabled **only for debugging purposes**. If you tick the c
 
 Allows displaying the QUIC protocol records in the filtering log. For blocked requests only.
 
-### Enable TCP keepalive
-
-Periodically sends TCP packets over idle connection to ensure it is alive and to renew NAT timeouts. This option can be useful to bypass the strict network address translation (NAT) settings that some ISPs use. 
-
-### TCP keepalive interval
-
-Here you can specify an idle time period, in seconds, before sending a keepalive probe. If 0 is specified, the value selected by the system will be used. 
-
-Note that this setting only works when the *Enable TCP keepalive* option is enabled. 
-
-### TCP keepalive timeout
-
-Here you can specify time, in seconds, before sending another keepalive probe to an unresponsive peer. If 0 is specified, the value selected by the system will be used.
-
-Note that this setting only works when the *Enable TCP keepalive* option is enabled. 
-
 ### Block Java
 
 Some websites and web services still support Java Plug-Ins. The API that serves as the basis for Java plug-ins has serious security vulnerabilities. You can disable such plug-ins for security purposes. Nevertheless, even if you decide to use *Block Java* option, JavaScript will still be enabled.
 
-### Use HTTP/3 for DNS-over-HTTPS
+### Action applied to blocked DNS requests
 
-Enables HTTP/3 for DNS-over-HTTPS upstreams to accelerate connection if the selected upstream supports this protocol. This means that enabling this option does not guarantee that all DNS requests will be sent via HTTP/3.
+Here you can select the way AdGuard will respond to DNS queries that should be blocked:
 
-### Use fallback DNS upstreams
-
-If enabled, normal queries will be redirected to the fallback upstream if all DNS requests to the selected upstreams fail.
-
-### Query DNS upstreams in parallel
-
-Once enabled, all upstreams are queried in parallel and the first successful response is returned. Since DNS queries are made in parallel, enabling this feature increases the Internet speed.
-
-### Always respond to failed DNS queries
-
-If address resolving failed on each of the forwarded upstreams, as well as on the fallback domains, then the response to the DNS request will be `SERVFAIL`.
-
-### Blocking mode for adblock-style rules
-
-Here you can select the way AdGuard will respond to domains blocked by DNS rules based on [adblock-style syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax).
-
-* Reply with “Refused” error
-* Reply with “NxDomain” error
-* Reply with a custom IP address
-
-### Blocking mode for hosts rules
-
-Here you can select the way AdGuard will respond to domains blocked by DNS rules based on [hosts rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
-
-* Reply with “Refused” error
-* Reply with “NxDomain” error
+* Reply with "Refused" error
+* Reply with "NxDomain" error
 * Reply with a custom IP address
 
 ### Custom IPv4 address
 
-If Custom IP address is selected in Blocking mode for hosts rules or Blocking mode for adblock-style rules, this IP address will be returned in response to blocked A requests. If none are specified, AdGuard will reply with the default Refused error.
+If "Custom IP address" is selected as an action applied to blocked DNS requests, here you should specify the IPv4 address that will be returned in response to blocked "A" requests. If none are specified, AdGuard will reply with the default "Refused" error.
 
 ### Custom IPv6 address
 
-If Custom IP address is selected in Blocking mode for hosts rules or Blocking mode for adblock-style rules, this IP address will be returned in response to blocked AAAA requests. If none are specified, AdGuard will reply with the default "Refused" error.
+If "Custom IP address" is selected as an action applied to blocked DNS requests, here you should specify the IPv6 address that will be returned in response to blocked "AAAA" requests. If none are specified, AdGuard will reply with the default "Refused" error.
 
 ### Fallback servers
 
@@ -208,7 +148,3 @@ If enabled, AdGuard strips Encrypted Client Hello parameters from responses.
 ### Enable filtering of secure DNS requests
 
 When enabled, AdGuard redirects secure DNS requests to the local DNS proxy, in addition to plain DNS requests.
-
-### Exclude specified Wi-Fi networks names (SSIDs) from the DNS filtering
-
-DNS protection will not work for the Wi-Fi networks listed in this section. Specify Wi-Fi networks names (SSIDs) one per line. This can be useful if a particular Wi-Fi network is already protected by AdGuard Home or another DNS protection system. In this case, it is superfluous to filter DNS requests again.

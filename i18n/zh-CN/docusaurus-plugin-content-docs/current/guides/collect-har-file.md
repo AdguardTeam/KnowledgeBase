@@ -30,7 +30,7 @@ HAR 文件可帮助我们的技术支持团队解决复杂的问题。 为了创
 
 8. 重复导致问题的步骤。
 
-9. 通过右键单击网格并选择「***Save as HAR with content***」（另存为带内容的 HAR），将内容另存为 .har 文件。
+9. Save session as a .har file by right-clicking the grid and selecting ***Save as HAR with content***.
 
 10. 发送至 AdGuard 支持团队（support@adguard.com），并详细描述问题。 屏幕截图也会有所帮助。
 
@@ -57,7 +57,7 @@ HAR 文件可帮助我们的技术支持团队解决复杂的问题。 为了创
 
 8. 重复导致问题的步骤。
 
-9. 通过右键单击网格并选择「***Save as HAR with content***」（另存为带内容的 HAR），将内容另存为 .har 文件。
+9. Save session as a .har file by right-clicking the grid and selecting ***Save as HAR with content***.
 
 10. 发送至 AdGuard 支持团队（support@adguard.com），并详细描述问题。 屏幕截图也会有所帮助。
 
@@ -84,7 +84,7 @@ HAR 文件可帮助我们的技术支持团队解决复杂的问题。 为了创
 
 7. 重复导致问题的步骤。
 
-8. 通过右键单击网格并选择「***Save as HAR***」（另存为 HAR），将内容另存为 .har 文件。
+8. Save session as a .har file by right-clicking the grid and selecting ***Save all as HAR***.
 
 9. 发送至 AdGuard 支持团队（support@adguard.com），并详细描述问题。 屏幕截图也会有所帮助。
 

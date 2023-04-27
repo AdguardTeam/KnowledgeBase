@@ -11,7 +11,7 @@ sidebar_position: 2
 
 > 注意：AdGuard 内容拦截程序可在两种浏览器中使用： [Yandex 浏览器](https://browser.yandex.com/)和[三星浏览器](https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser)。
 
-安装完成后，点击「_打开_」运行应用程序。
+After the installation is completed, tap _Open_ to run the app.
 
 ![安装内容拦截器 *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_play_market_installed.jpg)
 

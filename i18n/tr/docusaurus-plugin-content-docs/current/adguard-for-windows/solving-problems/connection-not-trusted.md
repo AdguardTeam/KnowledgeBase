@@ -13,7 +13,7 @@ Normally browsers trust the AdGuard certificate once it's added to the system ce
 
 Old FireFox versions, as well as browsers based on them, do not trust certificates from the system storage, but only those from their local storage. Since v68, FireFox trusts the system certificates, but you still can face the "Connection is untrusted" error. If something like this happens, first try to click the *Reinstall Certificate* button — you will find it in the *Network* tab.
 
-![Reinstall Certificate](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/reinstall.jpg)
+![Sertifikayı yeniden yükle](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/reinstall.jpg)
 
 If that doesn't help, follow the instructions for manually adding the AdGuard certificate to the FireFox storage.
 > This instruction is for Firefox browser. Names of buttons and menu items may differ in other Firefox-based browsers.

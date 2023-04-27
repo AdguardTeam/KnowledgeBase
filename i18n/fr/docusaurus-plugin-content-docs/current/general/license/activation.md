@@ -3,11 +3,11 @@ title: Comment activer
 sidebar_position: 3
 ---
 
-## Comment activer une licence
+## How to activate a license
 
 Pour activer votre licence, accédez à la section *Licence* de votre produit AdGuard et recherchez le champ *Connexion* ou le bouton *Activer*. Utilisez l'e-mail et le mot de passe de votre compte AdGuard pour vous connecter. Si vous n'avez pas encore de compte, il vous sera proposé d'en créer un.
 
-> Note : Pour activer une licence via le compte AdGuard, vous devez avoir une licence valide avec au moins un slot ouvert. Si votre licence est déjà utilisée sur un nombre maximal d'appareils, vous pouvez [la surclasser](#how-to-upgrade-a-license) ou [la transférer d'un appareil à un autre](#how-to-transfer-a-license-to-another-device).
+> Note: To activate a license via the AdGuard account, a valid license with at least one free slot is required. If your license is already used on a maximum number of devices, you can [upgrade it](../payment-options#upgrade) or [transfer it from one device to another](../transfer).
 
 Alternativement, vous pouvez utiliser une [clef de licence](../what-is#license-key) pour activer la licence.
 
@@ -98,30 +98,3 @@ soit double-cliquez sur l'icône AdGuard dans la barre d'état système :
 4. Saisissez **l'email** et **le mot de passe** de votre **compte AdGuard**
 
 ![Se connecter *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense2en.png)
-
-## Comment transférer une licence vers un autre appareil
-
-La clef de licence peut être activée sur un [nombre limité d'appareils](../what-is#devices). Si la clef a déjà été utilisée sur le nombre maximal d'appareils autorisé, vous devez délier un appareil de votre compte. Vous pouvez procéder de trois manières :
-* en cliquant sur le bouton *Réinitialiser la licence* (s'applique aux apps de bureau),
-* en vous déconnectant de votre compte dans un logiciel AdGuard,
-* en cliquant sur l'icône en forme de croix à côté d'un appareil dans votre compte AdGuard.
-
-Après avoir dissocié le nombre d'appareils dont vous avez besoin, vous pouvez vous connecter à votre compte AdGuard sur de nouveaux appareils. La licence y sera liée.
-
-## Comment surclasser une licence
-
-Pour rendre l'utilisation de vos produits AdGuard plus pratique, vous pouvez surclasser votre licence.
-
-1. Pour augmenter la fonctionnalité de vos produits AdGuard, vous pouvez **surclasser votre licence gratuite ou d'essai vers la version complète**.
-2. Pour augmenter le nombre d'appareils, vous pouvez **surclasser votre licence Personnelle du Bloqueur AdGuard vers la licence Familiale**.
-3. Vous pouvez également **surclasser votre abonnement vers une licence À vie**.
-
-Vous pouvez mettre à niveau votre licence en :
-* achetant une autre licence sur les sites officiels des produits AdGuard,
-* en cliquant sur le bouton *Surclasser* dans votre compte AdGuard.
-
-## Comment annuler un abonnement
-
-L'abonnement peut être annulé dans votre compte AdGuard. Pour annuler votre abonnement, cliquez sur la carte ou sur l'icône en forme de croix à côté de celle-ci et sélectionnez *Se désabonner*. L'abonnement annulé sera valable jusqu'à sa date d'expiration.
-
-> Les abonnements achetés sur l'App Store peuvent être gérés dans le compte App Store ou dans les paramètres de l'appareil.

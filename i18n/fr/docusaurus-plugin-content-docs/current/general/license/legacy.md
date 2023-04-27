@@ -1,6 +1,6 @@
 ---
 title: FAQ sur les licences anciennes
-sidebar_position: 4
+sidebar_position: 6
 ---
 
 Nous avons écrit cet article pour éviter toute confusion et expliquer en détail comment vous pouvez renouveler/surclasser une licence AdGuard obsolète.

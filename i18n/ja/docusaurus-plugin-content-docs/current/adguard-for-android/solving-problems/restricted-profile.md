@@ -14,9 +14,9 @@ sidebar_position: 10
 > ※この方法は**AdGuard v3.5 Nightly 6**以降で利用できることに注意してください。 古いバージョンを使用している場合は、[こちら](https://adguard.com/adguard-android/overview.html)からのNightly最新バージョンを入手できます（もしくはAdGuardアプリ内設定で「アップデートチャンネル」を「Nightly」に切り替えてアプリをアップデートできます）。
 
 1. **開発者モード**をアクティブにし、**USBデバッグ**を有効にします（※端末によって下記メニュー項目の名称が多少違ったりする場合がございます）:
-- 端末で**設定**アプリを開きます。
-- **システム**セクションに移動し（設定メニューの最後の項目）、 サブアイテム「**端末について**」を見つけます。
-- 「**ビルド番号**」の行を7回タップします。 その後、「**開発者になりました！**」のような通知が表示されます（必要に応じて、デバイスのロック解除コードを入力してください）。
+- Open the **Settings** app phone;
+- **システム**セクションに移動し（設定メニューの最後の項目）、 In this section, find the sub-item **About phone**;
+- Tap the **Build number** line 7 times. その後、「**開発者になりました！**」のような通知が表示されます（必要に応じて、デバイスのロック解除コードを入力してください）。
 - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
 
 > 上記に関してまだご不明やお困りな点ございましたら、[こちら](https://developer.android.com/studio/debug/dev-options)でさらに詳しい手順をご確認ください。

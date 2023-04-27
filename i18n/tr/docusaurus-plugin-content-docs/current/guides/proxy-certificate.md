@@ -1,5 +1,5 @@
 ---
-title: How to install a proxy certificate
+title: Proxy sertifikası nasıl yüklenir
 sidebar_position: 2
 ---
 
@@ -17,7 +17,7 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 1. Note the IP address of your desktop computer with installed AdGuard.
 
-2. Make sure AdGuard’s protection is enabled. Then check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings.
+2. Make sure the AdGuard protection is enabled. Then check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings.
 
 3. On the same device with AdGuard follow this link using any browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
@@ -55,21 +55,21 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 20. Turn the toggle on. For **Proxy IP address**, enter the noted IP address of your desktop computer (step 1). For **Port**, enter the port chosen in the network settings of the desktop AdGuard app.
 
-21. Click **Save**.
+21. **Kaydet** öğesine tıklayın.
 
 ### Mac {#mac}
 
 1. Note the IP address of your desktop computer with installed AdGuard.
 
-2. Make sure AdGuard’s protection is enabled. Then go to **Settings** → **Network** → **HTTP proxy** and check the box **Use AdGuard as an HTTP proxy**.
+2. Make sure the AdGuard protection is enabled. Then go to **Settings** → **Network** → **HTTP proxy** and check the box **Use AdGuard as an HTTP proxy**.
 
-3. On the same computer with AdGuard follow this link using any browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+3. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
 4. Click the **Download** button.
 
 5. Transfer the downloaded **cert.cer** file to the device which traffic you want to route through AdGuard.
 
-6. Double-click the downloaded certificate file.
+6. İndirilen sertifika dosyasına çift tıklayın.
 
 7. Enter the administrator password and then click **Modify Keychain**.
 
@@ -93,9 +93,9 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 1. Note the IP address of your desktop computer with installed AdGuard.
 
-2. Make sure AdGuard’s protection is enabled. Then check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings.
+2. Make sure the AdGuard protection is enabled. Then check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings.
 
-3. On the same computer with AdGuard follow this link using any browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+3. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
 4. Click the **Download** button.
 
@@ -103,7 +103,7 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 6. Locate and tap the previously downloaded **cert.cer** certificate to open the file.
 
-7. On some phones, you might be asked to enter your device password. Do that, then press **OK**. The certificate is now installed.
+7. On some phones, you might be asked to enter your device password. Do that, then press **OK**. Sertifika şimdi yüklenmiştir.
 
 8. Open advanced settings of the active Wi-Fi network.
 
@@ -113,9 +113,9 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 1. Note the IP address of your desktop computer with installed AdGuard.
 
-2. Make sure AdGuard’s protection is enabled. Then check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings.
+2. Make sure the AdGuard protection is enabled. Then check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings.
 
-3. On the same computer with AdGuard follow this link using any browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+3. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
 4. Click the **Download** button.
 
@@ -125,7 +125,7 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 7. Open **Settings** → **Profile Donwloaded** and tap **Install** in the top right corner. Enter your password and confirm the installation. Tap **Done**.
 
-8. Go to **Settings** → **General** → **About** → **Certificate Trust Settings**. Enable the switch beside *Adguard Personal CA*. The certificate is now installed.
+8. Go to **Settings** → **General** → **About** → **Certificate Trust Settings**. Enable the switch beside *Adguard Personal CA*. Sertifika şimdi yüklenmiştir.
 
 9. On that device, open advanced settings of the active Wi-Fi network.
 

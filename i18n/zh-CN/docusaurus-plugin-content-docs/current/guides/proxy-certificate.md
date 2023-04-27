@@ -17,7 +17,7 @@ sidebar_position: 2
 
 1. 记下装有 AdGuard 的台式计算机的 IP 地址。
 
-2. 请确保 AdGuard 保护已启用。 然后在设置的「**网络**」中勾选「**将 AdGuard 用作 HTTP 代理**」。
+2. Make sure the AdGuard protection is enabled. 然后在设置的「**网络**」中勾选「**将 AdGuard 用作 HTTP 代理**」。
 
 3. 在装有 AdGuard 的同一台设备上，通过浏览器打开此链接： [http://local.adguard.org/cert](http://local.adguard.org/cert)
 
@@ -61,9 +61,9 @@ sidebar_position: 2
 
 1. 记下装有 AdGuard 的台式计算机的 IP 地址。
 
-2. 请确保 AdGuard 保护已启用。 然后转到 「**设置**」→「**网络**」→「**HTTP 代理**」并选中「**AdGuard 用作 HTTP 代理**」复选框。
+2. Make sure the AdGuard protection is enabled. 然后转到 「**设置**」→「**网络**」→「**HTTP 代理**」并选中「**AdGuard 用作 HTTP 代理**」复选框。
 
-3. 在装有 AdGuard 的同一台计算机上，通过浏览器打开此链接： [http://local.adguard.org/cert](http://local.adguard.org/cert)
+3. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
 4. 单击**下载**按钮。
 
@@ -93,9 +93,9 @@ sidebar_position: 2
 
 1. 记下装有 AdGuard 的台式计算机的 IP 地址。
 
-2. 请确保 AdGuard 保护已启用。 然后在设置的「**网络**」中勾选「**将 AdGuard 用作 HTTP 代理**」。
+2. Make sure the AdGuard protection is enabled. 然后在设置的「**网络**」中勾选「**将 AdGuard 用作 HTTP 代理**」。
 
-3. 在装有 AdGuard 的同一台计算机上，通过浏览器打开此链接： [http://local.adguard.org/cert](http://local.adguard.org/cert)
+3. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
 4. 单击**下载**按钮。
 
@@ -113,9 +113,9 @@ sidebar_position: 2
 
 1. 记下装有 AdGuard 的台式计算机的 IP 地址。
 
-2. 请确保 AdGuard 保护已启用。 然后在设置的「**网络**」中勾选「**将 AdGuard 用作 HTTP 代理**」。
+2. Make sure the AdGuard protection is enabled. 然后在设置的「**网络**」中勾选「**将 AdGuard 用作 HTTP 代理**」。
 
-3. 在装有 AdGuard 的同一台计算机上，通过浏览器打开此链接： [http://local.adguard.org/cert](http://local.adguard.org/cert)
+3. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
 4. 单击**下载**按钮。
 

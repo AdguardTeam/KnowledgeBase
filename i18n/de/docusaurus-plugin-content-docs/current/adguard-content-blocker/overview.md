@@ -3,7 +3,7 @@ title: Funktionsübersicht
 sidebar_position: 1
 ---
 
-AdGuard has two Android apps: [AdGuard for Android](https://adguard.com/adguard-android/overview.html) and [AdGuard Content Blocker](https://adguard.com/adguard-content-blocker/overview.html). AdGuard for Android has a much wider range of functionality: it blocks ads, trackers, and annoyances in browsers and apps, uses filters as well as domain-level ad blocking, and supports user rules. AdGuard Content Blocker is limited by its functionality.
+AdGuard has two Android apps: [AdGuard for Android](https://adguard.com/adguard-android/overview.html) and [AdGuard Content Blocker](https://adguard.com/adguard-content-blocker/overview.html). AdGuard for Android has a much wider range of functionality: it blocks ads, trackers, and annoyances in browsers and apps, uses filters as well as domain-level ad blocking, and supports user rules. AdGuard Content Blocker has a limited functionality.
 
 Full-fledged ad blockers can’t be introduced to Google Play due to the policy of the store. Google Play [has banned](https://adguard.com/en/blog/google-removes-adguard-android-app-google-play.html) "apps that block or interfere with another app displaying ads". Thus, AdGuard for Android can be downloaded on AdGuard's official website only.
 

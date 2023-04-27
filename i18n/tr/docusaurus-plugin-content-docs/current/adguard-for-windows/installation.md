@@ -23,7 +23,7 @@ To use AdGuard on a PC or tablet under Microsoft Windows, you should download th
 
 2) When the download is finished, press the *Open* button shown in the Downloads bar or click the file name *adguardInstaller.exe*.
 
-![Press "Run"](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/click-download.png)
+!["Çalıştır" öğesine basın](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/click-download.png)
 
 3) You’ll see the User Account Control dialogue box requesting to allow the app to make changes to your PC. Click *Yes*.
 
@@ -43,7 +43,7 @@ If you do not agree with the default installation path, press *Browse*, select t
 
 Congratulations! You have successfully installed AdGuard on your computer. On the screen you will see the main window where you can change the app’s settings.
 
-## How to uninstall AdGuard for Windows {#uninstall}
+## Windows için AdGuard nasıl kaldırılır {#uninstall}
 
 ### Regular method
 

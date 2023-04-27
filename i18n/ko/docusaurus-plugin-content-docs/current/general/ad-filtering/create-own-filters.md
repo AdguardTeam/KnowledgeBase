@@ -26,7 +26,7 @@ For example:
 
 #### Blocking by domain name
 
-![Blocking by domain name](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/0_blocking_domain.svg)
+![Blocking by domain name](https://cdn.adtidy.org/content/kb/ad_blocker/general/0_blocking_domain.svg)
 
 **This rule blocks:**
 
@@ -41,7 +41,7 @@ For example:
 
 #### Blocking exact address
 
-![Blocking exact address](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/1_exact_address.svg)
+![Blocking exact address](https://cdn.adtidy.org/content/kb/ad_blocker/general/1_exact_address.svg)
 
 **This rule blocks:**
 
@@ -55,7 +55,7 @@ For example:
 
 Filtering rules support numerous modifiers that allow you to fine-tune the rule behavior. Here is an example of a rule with some simple modifiers.
 
-![Basic rule modifiers](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/2_basic_rule_options.svg)
+![Basic rule modifiers](https://cdn.adtidy.org/content/kb/ad_blocker/general/2_basic_rule_options.svg)
 
 **This rule blocks:**
 
@@ -68,7 +68,7 @@ Filtering rules support numerous modifiers that allow you to fine-tune the rule 
 
 #### Unblocking an address
 
-![](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/3_basic_exception.svg)
+![](https://cdn.adtidy.org/content/kb/ad_blocker/general/3_basic_exception.svg)
 
 **This rule unblocks:**
 
@@ -78,7 +78,7 @@ Filtering rules support numerous modifiers that allow you to fine-tune the rule 
 
 #### Unblocking everything on a website
 
-![Unblocking everything](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/4_unblock_entire_website.svg)
+![Unblocking everything](https://cdn.adtidy.org/content/kb/ad_blocker/general/4_unblock_entire_website.svg)
 
 **This rule unblocks**
 
@@ -87,7 +87,7 @@ Filtering rules support numerous modifiers that allow you to fine-tune the rule 
 
 #### Cosmetic rule
 
-![Cosmetic rule](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/5_cosmetic_rules.svg)
+![Cosmetic rule](https://cdn.adtidy.org/content/kb/ad_blocker/general/5_cosmetic_rules.svg)
 
 Cosmetic rules are based on using a special language named CSS, which every browser understands. Basically, it adds a new CSS style to the website which purpose is to hide particular elements. You can learn more about CSS in general [here](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors).
 
@@ -300,7 +300,7 @@ A restriction of third-party and own requests. A third-party request is a reques
 
 > **Note**
 > 
-> To be considered as such, a third-party request should meet one of the following conditions: 1. Its referrer is not a subdomain of the target domain or the other way round. For example, a request to `subdomain.example.org` from `example.org` is not a third-party request. 1. Its `Sec-Fetch-Site` header is set to `cross-site`. If there is a `$third-party` modifier, the rule is only applied to third-party requests.
+> To be considered as such, a third-party request should meet one of the following conditions: 1. Its referrer is not a subdomain of the target domain or vice versa. For example, a request to `subdomain.example.org` from `example.org` is not a third-party request. 1. Its `Sec-Fetch-Site` header is set to `cross-site`. If there is a `$third-party` modifier, the rule is only applied to third-party requests.
 
 **Examples**
 
@@ -330,7 +330,7 @@ AdGuard will try to close the browser tab with any address that matches a blocki
 > 
 > 1. `$popup` modifier works best in AdGuard Browser Extension.
 > 2. In AdGuard for Safari and iOS, `$popup` rules simply block the page right away.
-> 3. In AdGuard for Windows, Mac, and Android, `$popup` modifier may not detect a popup in some cases and it won't be blocked. `$popup` modifier applies the `document` content type with a special flag which is passed to a blocking page. Blocking page itself can do some checks and close the window if it is really a popup. Otherwise, page should be loaded. It can be combined with other request type modifiers, such as `$third-party` and `$important`. However, the blocking page may not detect a popup in some cases, so it is recommended to use [AdGuard Popup Blocker](https://github.com/AdguardTeam/PopupBlocker) userscript instead.
+> 3. In AdGuard for Windows, Mac, and Android, `$popup` modifier may not detect a popup in some cases and it won't be blocked. `$popup` modifier applies the `document` content type with a special flag which is passed to a blocking page. Blocking page itself can do some checks and close the window if it is really a popup. Otherwise, page should be loaded. It can be combined with other request type modifiers, such as `$third-party` and `$important`. However, the blocking page may not detect a popup in some cases, so it is recommended to use the [AdGuard Popup Blocker](https://github.com/AdguardTeam/PopupBlocker) userscript instead.
 
 #### **`$match-case`** {#match-case-modifier}
 
@@ -854,9 +854,9 @@ For the requests matching a `$csp` rule, we will strengthen response security po
 
 This modifier completely changes the rule behavior. If it is applied to a rule, it will not block the matching request. The response headers are going to be modified instead.
 
-> In order to use this type of rules, it is required to have the basic understanding of the [Feature Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Feature_Policy) security layer.
+> In order to use this type of rules, it is required to have the basic understanding of the [Permissions Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Permissions_Policy) security layer.
 
-For the requests matching a `$permissions` rule, AdGuard strengthens response's feature policy by adding additional feature policy equal to the `$permissions` modifier contents. `$permissions` rules are applied independently from any other rule type. Other basic rules have no influence on it **save for document-level exceptions** (see the examples section).
+For the requests matching a `$permissions` rule, AdGuard strengthens response's permissions policy by adding additional permission policy equal to the `$permissions` modifier contents. `$permissions` rules are applied independently from any other rule type. Other basic rules have no influence on it **save for document-level exceptions** (see the examples section).
 
 > **Multiple rules matching a single request.**
 > 
@@ -864,21 +864,21 @@ For the requests matching a `$permissions` rule, AdGuard strengthens response's 
 
 **Syntax**
 
-`$permissions` value syntax is similar to the `Permissions-Policy` (or `Feature-Policy`) header [syntax](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy). The list of the available directives is available [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives).
+`$permissions` value syntax is similar to the `Permissions-Policy` header [syntax](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy) with one exception: comma that separates several features **MUST** be escaped — see examples below. The list of the available directives is available [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives).
 
 `$permissions` value can be empty in the case of exception rules — see examples below.
 
 > **제한**
 > 
-> 1. Two characters are forbidden in the `$permissions` value: `,` and `$`;
+> 1. Characters forbidden in the `$permissions` value: `$`;
 > 2. `$permissions` is compatible with the limited list of modifiers: `$domain`, `$important`, and `$subdocument`.
 
 **Examples**
 
-* `||example.org^$permissions=sync-xhr 'none'` disallows synchronous `XMLHttpRequest` requests across `example.org`.
-* `@@||example.org/page/*$permissions=sync-xhr 'none'` disables all rules with the `$permissions` modifier exactly matching `sync-xhr 'none'` on all the pages matching the rule pattern. For instance, the rule above.
+* `||example.org^$permissions=sync-xhr=()` disallows synchronous `XMLHttpRequest` requests across `example.org`.
+* `@@||example.org/page/*$permissions=sync-xhr=()` disables all rules with the `$permissions` modifier exactly matching `sync-xhr=()` on all the pages matching the rule pattern. For instance, the rule above.
 * `@@||example.org/page/*$permissions` disables all the `$permissions` rules on all the pages matching the rule pattern.
-* `$domain=example.org|example.com,permission=oversized-images 'none'; sync-script 'none'; unsized-media 'none';` disallows oversized images, synchronous scripts and unsized media features across `example.org` and `example.com`.
+* `$domain=example.org|example.com,permissions=oversized-images=()\, sync-script=()\, unsized-media=()` disallows oversized images, synchronous scripts and unsized media features across `example.org` and `example.com`.
 * `@@||example.org^$document` or `@@||example.org^$urlblock` disables all the `$permission` rules on all the pages matching the rule pattern.
 
 > **Compatibility with different versions of AdGuard**
@@ -927,7 +927,7 @@ where:
   * **`seconds`** — number of seconds for current time to offset the expiration date of cookie.
   * **`strategy`** — string for [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite) strategy to make cookie use.
 
-For example
+For example,
 ```
 ||example.org^$cookie=NAME;maxAge=3600;sameSite=lax
 ```
@@ -2803,7 +2803,7 @@ We provide preprocessor directives that can be used by filters maintainers to im
 > 
 > Any mistake in a preprocessor directive will lead to AdGuard failing the filter update in the same way as if the filter URL was unavailable.
 
-> Preprocessor directives can be used in the User Rules or in the custom filters.
+> Preprocessor directives can be used in the user rules or in the custom filters.
 
 #### Including a file {#include-directive}
 

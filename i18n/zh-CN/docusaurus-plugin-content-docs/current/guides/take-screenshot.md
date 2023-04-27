@@ -1,5 +1,5 @@
 ---
-title: 如何截取屏幕截图
+title: How to take a screenshot
 sidebar_position: 5
 ---
 

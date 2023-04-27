@@ -114,7 +114,9 @@ Extra: `password:*******`
 
 Package name: `com.adguard.android`
 
-Class: `com.adguard.android.receivers.AutomationReceiver`
+Class: `com.adguard.android.receiver.AutomationReceiver`
+
+> Note: Before v4.0 the class was called `com.adguard.android.receivers.AutomationReceiver` but then we changed its name to `com.adguard.android.receiver.AutomationReceiver`. If you used this feature, please pay attention and use the new name.
 
 ### Execution without notification
 

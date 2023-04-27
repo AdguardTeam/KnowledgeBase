@@ -31,7 +31,7 @@ AdGuard umožňuje vytvářet vlastní filtry pomocí stejného typu pravidel, j
 
 > Tip: pomocí funkce Import přeneste svá pravidla do jiného zařízení.
 
-## HTTPS filtrování
+## HTTPS filtrování {#https-filtering}
 
 V dnešní době téměř všechny webové stránky fungují prostřednictvím protokolu HTTPS, kde poslední písmeno S znamená "secure". Stalo se, že tento protokol používá i většina inzerentů, a proto je [Filtrování HTTPS](/general/https-filtering/what-is-https-filtering) pro moderní blokátor reklam opravdu klíčové.
 
@@ -220,7 +220,7 @@ Zatímco některé funkce AdGuardu pro Android jsou zdarma, jiné vyžadují [za
 * Blokování reklam ve všech aplikacích (nejen v prohlížečích)
 * Vlastní filtry
 
-Přečtěte si [tento článek](./general/license/activation) a zjistěte, jak aktivovat licenční klíč.
+Přečtěte si [tento článek](/general/license/activation) a zjistěte, jak aktivovat licenční klíč.
 
 ## Další funkce
 

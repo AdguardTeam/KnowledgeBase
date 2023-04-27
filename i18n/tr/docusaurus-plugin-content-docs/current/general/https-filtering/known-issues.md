@@ -1,5 +1,5 @@
 ---
-title: Known issues
+title: Bilinen sorunlar
 sidebar_position: 2
 ---
 
@@ -20,7 +20,7 @@ Effectively, it means that if you use a modern, safe browser, it will take all k
 
 **What does AdGuard do when there are any doubts about the certificate’s validity?** In such cases, AdGuard entirely ceases filtering of all connections to this domain and leaves the browser in charge of all decisions.
 
-## Known issues
+## Bilinen sorunlar
 
 HTTPS filtering in AdGuard has its drawbacks. Almost all of them are scheduled to be eliminated in the next few AdGuard versions.
 

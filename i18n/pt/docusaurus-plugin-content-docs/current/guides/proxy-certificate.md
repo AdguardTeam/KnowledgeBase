@@ -17,7 +17,7 @@ Dependendo do sistema operacional do seu dispositivo (Windows/Mac/Android/iOS), 
 
 1. Anote o endereço IP do seu computador desktop com o AdGuard instalado.
 
-2. Verifique se a proteção do AdGuard está ativada. Em seguida, marque a caixa **Use AdGuard como um proxy HTTP** na aba **Rede** de suas configurações.
+2. Make sure the AdGuard protection is enabled. Em seguida, marque a caixa **Use AdGuard como um proxy HTTP** na aba **Rede** de suas configurações.
 
 3. No mesmo dispositivo com o AdGuard, siga este link usando qualquer navegador: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
@@ -61,9 +61,9 @@ Dependendo do sistema operacional do seu dispositivo (Windows/Mac/Android/iOS), 
 
 1. Anote o endereço IP do seu computador desktop com o AdGuard instalado.
 
-2. Verifique se a proteção do AdGuard está ativada. Em seguida, vá para **Configurações** → **Rede** → **Proxy HTTP** e marque a caixa **Usar AdGuard como proxy HTTP**.
+2. Make sure the AdGuard protection is enabled. Em seguida, vá para **Configurações** → **Rede** → **Proxy HTTP** e marque a caixa **Usar AdGuard como proxy HTTP**.
 
-3. No mesmo dispositivo com o AdGuard instalado, siga este link usando qualquer navegador: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+3. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
 4. Clique no botão **Baixar**.
 
@@ -93,9 +93,9 @@ Dependendo do sistema operacional do seu dispositivo (Windows/Mac/Android/iOS), 
 
 1. Anote o endereço IP do seu computador desktop com o AdGuard instalado.
 
-2. Verifique se a proteção do AdGuard está ativada. Em seguida, marque a caixa **Use AdGuard como um proxy HTTP** na aba **Rede** de suas configurações.
+2. Make sure the AdGuard protection is enabled. Em seguida, marque a caixa **Use AdGuard como um proxy HTTP** na aba **Rede** de suas configurações.
 
-3. No mesmo dispositivo com o AdGuard instalado, siga este link usando qualquer navegador: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+3. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
 4. Clique no botão **Baixar**.
 
@@ -113,9 +113,9 @@ Dependendo do sistema operacional do seu dispositivo (Windows/Mac/Android/iOS), 
 
 1. Anote o endereço IP do seu computador desktop com o AdGuard instalado.
 
-2. Verifique se a proteção do AdGuard está ativada. Em seguida, marque a caixa **Use AdGuard como um proxy HTTP** na aba **Rede** de suas configurações.
+2. Make sure the AdGuard protection is enabled. Em seguida, marque a caixa **Use AdGuard como um proxy HTTP** na aba **Rede** de suas configurações.
 
-3. No mesmo dispositivo com o AdGuard instalado, siga este link usando qualquer navegador: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+3. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
 4. Clique no botão **Baixar**.
 

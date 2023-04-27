@@ -28,8 +28,8 @@ After you complete steps 1-3, AdGuard for Safari will start functioning. You can
 To uninstall AdGuard for Safari, do the following:
 
 1. Quit the app.
-2. Open Safari preferences.
-3. Choose the Extensions tab. You will see a list of extensions, AdGuard has eight.
+2. Safari tercihlerini açın.
+3. Uzantılar sekmesini seçin. You will see a list of extensions, AdGuard has eight.
 4. Uncheck all checkboxes and press *Uninstall* below any of them.
 
 ![Extensions checked](https://cdn.adtidy.org/public/Adguard/kb/installation/Safari/extensionschecked.png)

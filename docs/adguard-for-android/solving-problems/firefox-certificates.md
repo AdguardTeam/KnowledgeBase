@@ -30,9 +30,9 @@ To make Firefox trust the AdGuard certificate, do the following:
 1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; 
 > On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
 2. Activate the **developer mode** and enable **USB debugging**:
-    - Open the **Settings** application on your phone;
-    - Go to **System** section (last item in the settings menu). In this section find sub-item **About phone**;
-    - Click on the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
+    - Open the **Settings** app on your phone;
+    - Go to **System** section (last item in the settings menu). In this section, find the sub-item **About phone**;
+    - Tap the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
     - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
 3. Install the [Firefox](https://www.mozilla.org/en-US/firefox/releases/) browser (release version);
 4. Open the **AdGuard settings** → **Network** → **HTTPS Filtering** → Install the certificate in **Firefox** → **INSTALL FOR OLD VERSIONS**;

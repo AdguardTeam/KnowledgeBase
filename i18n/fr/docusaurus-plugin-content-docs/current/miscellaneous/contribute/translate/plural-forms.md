@@ -32,127 +32,127 @@ Pour mieux comprendre, établissons un petit parallèle entre l'anglais et le po
 
 Maintenant c'est clair que le polonais *'godzinę'* (heure) a trois formes différentes, alors que le mot anglais ne change de forme avec des nombres donnés que deux fois.
 
-Sans parler du polonais, il existe encore de nombreuses autres langues qui ont trois formes plurielles et plus, telles que le russe, le serbe, le slovaque, le tchèque, etc. But not all of them obey the same rule. That's why it is so important to know how many plural forms your language contains and how you can apply them.
+Sans parler du polonais, il existe encore de nombreuses autres langues qui ont trois formes plurielles et plus, telles que le russe, le serbe, le slovaque, le tchèque, etc. Mais tous n'obéissent pas à la même règle. C'est pourquoi c'est si important de savoir combien de formes plurielles votre langue contient et comment vous pouvez les appliquer.
 
-## Where can you learn about the number of plural forms? {#where-to-learn}
+## Où peut-on apprendre plus sur le nombre de formes plurielles ? {#where-to-learn}
 
-When you are faced with a translation that requires the use of plurals, you may not be able to realize right away how many word forms your language contains.
+Faisant face à une traduction qui nécessite l'utilisation de pluriels, vous ne pourrez peut-être pas vous rendre compte tout de suite du nombre de formes de mots que contient votre langue.
 
-Here are some sources of information you can use.
+Voici quelques sources d'informations que vous pouvez utiliser.
 
-[Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contains a wide list of languages. The number of plural forms for different languages is shown this way: 'nplurals=2', 'nplurals=4' and so on. The numeral after the Equals sign '='  means the number of plural forms of the respective language.
+[Guide de localisation](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contient une large liste de langues. Le nombre de formes plurielles pour les langues différentes est indiqué de la manière suivante : "nplurals=2", "nplurals=4", etc. Le chiffre après le signe égal '=' signifie le nombre de formes plurielles de la langue respective.
 
-Also, you can get information about plural forms in the [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). The CLDR Plural Rules indicate an additional word form for decimal numbers (1.5; 2.3; 100.1…), but we don’t use them in AdGuard translations.
+En outre, vous pouvez obtenir des informations sur les formes plurielles dans le répertoire [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). Les règles plurielles CLDR indiquent une forme de mot supplémentaire pour les nombres décimaux (1.5 ; 2.3 ; 100.1…), mais nous ne les utilisons pas dans les traductions AdGuard.
 
-## Plurals in AdGuard translations {#translations}
+## Les pluriels dans les traductions de AdGuard {#translations}
 
-First of all, we want to mention that not every AdGuard translation requires the use of plural forms.
+Tout d'abord, nous tenons à préciser que toutes les traductions AdGuard ne requièrent pas l'utilisation du pluriel.
 
-Currently, we have 4 types of strings on Crowdin that involve the use of plurals.
+Actuellement, nous avons 4 types de chaînes sur Crowdin qui impliquent l'utilisation de pluriels.
 
-Let's take a closer look at them.
+Examinons-les de plus près.
 
-### 1. Phrases with string keys ending in `.singular`, `.dual`, `.plural` {#1type}
+### 1. Phrases avec des clés de chaîne se terminant par `.singular`, `.dual`, `.plural` {#1type}
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/dual_it.png)
 
-Most of them are represented in the `AdGuard for Windows` project and consist of only one or two words:
+La plupart d'entre elles sont représentées dans le projet `AdGuard for Windows` et consistent en seulement un ou deux mots :
 
-- `days;`
+- `jours;`
 - `extensions;`
-- `hours`
+- `heures`
 
-Please pay attention to the string keys of such phrases and to the "Context" field where you can see some important notes about plurals. The string keys may contain `Singular`, `Dual`, `Plural` words (ex.`FormatDayDeclensionDual`). In this case, you should leave the appropriate plural form as it is specified in the key.
+Veuillez prêter attention aux clés de chaîne de ces phrases et au champ "Contexte" où vous trouverez des remarques importantes sur les pluriels. Les clés de chaînes peuvent contenir des mots `Singular`, `Dual`, `Plural` (ex.`FormatDayDeclensionDual`). Dans ce cas, vous devez laisser la forme plurielle appropriée telle qu'elle est spécifiée dans la clé.
 
-### 2. Strings with singular and plural nouns separated by commas {#2type}
+### 2. Les chaînes avec des noms singuliers et pluriels séparés par des virgules {#2type}
 
-This kind of strings is mostly concentrated in the `AdGuard for Android` project.
+Ce type de chaînes est principalement concentré dans le projet `AdGuard for Android`.
 
-Please look at the example:
+Veuillez consulter l'exemple :
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/android_fr.png)
 
-If there are 3 plural forms of nouns in your language (like in Polish), please write all plural forms separated by commas.
+S'il existe 3 formes plurielles de noms dans votre langue (comme en polonais), veuillez écrire toutes les formes plurielles séparées par des virgules.
 
-`hour, hours — godzinę, godziny, godzin`
+`heure, heures — godzinę, godziny, godzin`
 
-In case a noun has only 2 forms, there is no need to write the same form twice (*typically only for this type of strings with plurals!*). However, it won't be a mistake if you repeat the form twice.
+Dans le cas où un nom n'a que 2 formes, ce n'est pas nécessaire d'écrire deux fois la même forme (*typiquement uniquement pour ce type de chaînes avec des pluriels !*). Cependant, ce ne sera pas une erreur si vous répétez le formulaire deux fois.
 
-### 3. Strings that use the Crowdin-developed pattern {#3type}
+### 3. Les chaînes qui utilisent le modèle développé par Crowdin {#3type}
 
-This is the most user-friendly scheme of translating strings with plurals.
+Il s'agit de la méthode la plus conviviale pour traduire les chaînes de caractères contenant des pluriels.
 
-Crowdin suggests to users that they translate the certain amount of phrases with different plural forms.
+Crowdin suggère aux utilisateurs de traduire un certain nombre de phrases avec différentes formes plurielles.
 
-If your language provides only one plural form, then you will see only one phrase to translate. If three or more forms, Crowdin will provide you with the string divided into other two or three strings to translate.
+Si votre langue ne propose qu'une seule forme plurielle, vous ne verrez alors qu'une seule phrase à traduire. S'il s'agit de trois formes ou plus, Crowdin vous fournira la chaîne divisée en deux ou trois autres chaînes à traduire.
 
-For example:
+Par exemple :
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/crowdin_scheme.png)
 
-Please be attentive when translating these strings and approving them. If you have no idea what the "Other" field means, then just paste the same form as it is in the "Many" field. The translations of "Many" and "Other" fields can be the same.
+Soyez attentifs pendant la traduction de ces chaînes et quand vous les approuvez. Si vous n'avez aucune idée de la signification du champ "Autre", il vous suffit de coller le même formulaire que dans le champ "Plusieurs". Les traductions des champs "Plusieurs" et "Autres" peuvent être identiques.
 
-### 4. Strings with templates separated by the vertical bar sign {#4type}
+### 4. Les chaînes avec des modèles séparés par le signe de la barre verticale {#4type}
 
-This is the most complicated type of AdGuard strings which is mostly used in `AdGuard Websites` project.
+Il s'agit du type de chaînes AdGuard le plus compliqué qui est principalement utilisé dans le projet `AdGuard Websites`.
 
-Pay close attention to a vertical bar sign between the sentences and **%count%** placeholders in original phrases – this will help you identify phrases where translations require the use of plural forms.
+Soyez attentif à la présence d'une barre verticale entre les phrases et des espaces réservés **%count%** dans les phrases originales - cela vous aidera à identifier les phrases pour lesquelles les traductions ont besoin de l'utilisation du pluriel.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/plurals_site.png)
 
-Now, let’s imagine — you are faced with such a string: `Standard license for %count% computer | Standard license for %count% computers`.
+Maintenant, imaginons — vous faites face à une chaîne de ce genre : `Standard license for %count% computer | Standard license for %count% computers`.
 
-What should you know to translate it correctly?
+Que faut-il savoir pour traduire cela correctement ?
 
-Let's call the sentences which are divided by a vertical bar sign **"templates"**, because actually they serve as templates for phrases with different numbers.
+Appelons les phrases qui sont divisées par un signe de barre verticale **"modèles"**, car elles servent en effet de modèles pour les phrases qui comportent des quantités différentes.
 
-Coming back to the example, as the English language includes only two forms, there should be two templates respectively:
+Pour en revenir à l'exemple, comme la langue anglaise ne comprend que deux formulaires, il devrait y avoir respectivement deux modèles :
 
 `Standard license for *%count%* computer | Standard license for *%count%* computers`
 
-where **template 1** – Standard license for *%count%* computer,
+où **modèle 1** – Standard license for *%count%* computer,
 
-and **template 2** – Standard license for *%count%* computers
+et **modèle 2** – Standard license for *%count%* computers
 
-Another important thing you should pay your attention to is **%count%** placeholders that, as usual, take place before the words they define. Instead of **%count%** here will appear different numbers depending on which templates are being chosen.
+Une autre chose importante à laquelle vous devriez prêter attention c'est les espaces réservés **%count%** qui, comme d'habitude, se placent avant les mots qu'ils définissent. De différents nombres apparaîtront ici au lieu de **%count%**, en fonction des modèles choisis.
 
-In a situation with another language that has, let’s say, three plural forms, there should be three templates with two vertical bar signs between them.
+Dans le cas d'une langue ayant, par exemple, trois formes de pluriel, il doit y avoir trois modèles séparés par deux barres verticales.
 
-For example, when we translate the above mentioned phrase into Slovak, that according to the rule of [Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) has three word forms, the correct translation will look so:
+Par exemple, lorsque nous traduisons la phrase mentionnée ci-dessus en slovaque, qui, selon la règle du [Guide de la localisation](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) a trois formes de mots, la traduction correcte sera comme suit :
 
 `**Štandartná licencia pre *%count%* počítač | Štandartná licencia pre *%count%* počítače | Štandartná licencia pre *%count%* počítačov**`
 
-![Slovak](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/slovak.png)
+![Slovaque](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/slovak.png)
 
-In this case, we see three templates which contain three forms of the word *"počítač"* (computer) in Slovak.
+Dans ce cas, nous voyons trois modèles qui contiennent trois formes du mot *"počítač"* (ordinateur) en slovaque.
 
-*If we ignore one of the forms and use only two templates for Slovak instead of three, the system won’t be able to take an appropriate template for certain numbers* and, as a result, we will have grammar mistakes in sentences, like in English: *Standard license for 5 computer*.
-> **Always use as many forms as there are in your language, even when the word itself has fewer word forms.**
+*Si nous ignorons l'une des formes et n'utilisons que deux modèles pour le slovaque au lieu de trois, le système ne pourra pas prendre un modèle approprié pour certains nombres* et, par conséquent, nous aurons des erreurs de grammaire dans les phrases, comme en anglais : *Standard license for 5 computer*.
+> **Utilisez toujours autant de formes qu'il existe dans votre langue, même lorsque le mot lui-même a moins de formes de mots.**
 
-For example, the Serbian word *'računar'* (computer) has only two forms. But there are 3 plural forms in Serbian.
+Par exemple, le mot serbe *'računar'* (ordinateur) n'a que deux formes. Mais il existe 3 formes plurielles en serbe.
 
-![Serbian](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/serbian.png)
+![Serbe](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/serbian.png)
 
-Thus, the translation from English into Serbian should be:
+Ainsi, la traduction de l'anglais vers le serbe devrait être :
 
 `**Standardna licenca za *%count%* računar | Standardna licenca za *%count%* računara | Standardna licenca za *%count%* računara**`
 
-Although it is obvious that the last two templates have no differences, it is very important to keep the rule: **The number of templates should reflect the number of plural forms of the respective language!**(typically for this type of strings with plurals).
+Bien qu'il soit évident que les deux derniers modèles ne présentent aucune différence, il est très important de respecter la règle : **Le nombre de modèles doit refléter le nombre de formes plurielles de la langue concernée !**(typiquement pour ce type de chaînes avec des pluriels).
 
-### Short summary {#summury}
+### Résumé bref {#summury}
 
-When translating AdGuard projects pay your close attention to phrases which require the use of plural forms.
+Lors de la traduction de projets AdGuard, portez une attention particulière aux phrases qui nécessitent l'utilisation de formes plurielles.
 
-While first three types of such strings are more or less easy to perform, the fourth type demands more vigilance.
+Alors que les trois premiers types de chaînes sont plus ou moins faciles à réaliser, le quatrième type demande plus de vigilance.
 
-And again: if you come across an original phrase with two important elements: **the vertical bar sign** and **%count%** placeholders, please do the following:
+Encore une fois : si vous rencontrez une phrase originale comportant deux éléments importants : **le signe de la barre verticale** et **%count%** les espaces réservés, veuillez faire ce qui suit :
 
-+ Refer to the plural rule of a language you translate into;
++ Référez-vous à la règle du pluriel d’une langue dans laquelle vous traduisez ;
 
-> The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms – two templates in translations; five plural forms – five templates, etc.
+> Le nombre de vos modèles doit être cohérent avec le nombre de formes plurielles que comprend votre langue, même dans les cas où certains mots ont eux-mêmes moins de formes. Deux formes plurielles - deux modèles de traduction ; cinq formes plurielles - cinq modèles, etc.
 
-+ Do not forget to use a vertical bar sign between templates as it is represented in original strings;
++ N'oubliez pas d'utiliser le signe de la barre verticale entre les modèles, comme il est représenté dans les chaînes originales ;
 
-+ Do not translate, fill in or delete **%count%** placeholders.
++ Ne traduisez pas, ne remplissez pas et ne supprimez pas les espaces réservés **%count%**.
 
-By following these simple rules you will help AdGuard developers avoid a lot of unnecessary complications during the localization process.
+En suivant ces règles simples, vous aiderez les développeurs AdGuard à éviter de nombreuses complications inutiles lors du processus de localisation.

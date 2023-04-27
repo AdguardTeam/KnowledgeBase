@@ -1,15 +1,15 @@
 ---
-title: Known issues of AdGuard for Windows
+title: Известные проблемы AdGuard для Windows
 sidebar_position: 10
 ---
 
-## AdGuard for Windows and AdGuard VPN for Windows compatibility issues
+## Проблемы совместимости AdGuard для Windows и AdGuard VPN для Windows
 
-Once you install AdGuard for Windows and AdGuard VPN for Windows, they just start working together without any effort on your part. However, changing some of their default settings may cause the apps to work incorrectly when they run at the same time.
+Как только вы установите AdGuard для Windows и AdGuard VPN для Windows, они начнут работать вместе без каких-либо усилий с вашей стороны. Однако изменение некоторых настроек по умолчанию может привести к некорректной работе приложений при их одновременном запуске.
 
-There are two specific settings in AdGuard for Windows: *Use redirect driver mode* and *Filter localhost*. By default, the first is disabled, and the second is enabled. Changing any of these settings will inevitably disrupt AdGuard's filtering if both AdGuard Ad Blocker and AdGuard VPN are enabled on your device.
+В AdGuard для Windows есть две специальные настройки: *Использовать драйвер в режиме перенаправления* и *Фильтровать локальные адреса*. По умолчанию первая отключена, а вторая включена. Изменение любой из этих настроек неизбежно нарушит фильтрацию AdGuard, если на вашем устройстве включены и Блокировщик AdGuard, и AdGuard VPN.
 
-Changing these settings is only necessary to resolve issues related to the simultaneous operation of AdGuard Ad Blocker and network-level apps such as  antiviruses, VPNs, and network filters. If you come across a situation where you need to change the default state of the above settings and still want AdGuard Ad Blocker and AdGuard VPN to work simultaneously and correctly — [create an issue on GitHub](https://github.com/AdguardTeam/AdguardForWindows/issues/new/choose) so we can help you personally.
+Изменение этих настроек необходимо только для решения проблем, связанных с одновременной работой Блокировщика AdGuard и сетевых приложений, таких как антивирусы, VPN и сетевые фильтры. Если вы столкнулись с ситуацией, когда вам нужно изменить состояние вышеуказанных настроек по умолчанию, но при этом вы хотите, чтобы Блокировщик AdGuard и AdGuard VPN работали одновременно и корректно, [создайте тикет на GitHub](https://github.com/AdguardTeam/AdguardForWindows/issues/new/choose), чтобы мы могли помочь вам лично.
 
-We are currently working on overcoming the above-listed limitations of the simultaneous work of our apps. 
+Мы работаем над преодолением перечисленных выше ограничений одновременной работы наших приложений. 
 

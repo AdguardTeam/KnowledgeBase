@@ -63,7 +63,7 @@ You don't have to choose anything on this screen: just take note of the informat
 
 ![YouTube *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/youtube.jpg)
 
-Up next is privacy settings. Choose a desirable protection level:
+Sırada gizlilik ayarları var. Choose a desirable protection level:
 
 ![Privacy settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/8.png)
 

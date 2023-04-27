@@ -1,6 +1,6 @@
 ---
 title: 이전 라이선스 키
-sidebar_position: 4
+sidebar_position: 6
 ---
 
 AdGuard 이전 라이선스 키를 업그레이드·갱신하는 방법을 살펴 보겠습니다.

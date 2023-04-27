@@ -25,7 +25,7 @@ Blocking ads is clearly the key functionality of any ad blocker, and AdGuard is 
 
 In essence, filter lists are sets of rules written in a special language. Your ad blocker interpretes the rules and implements them. As a result, you stop seeing ads on your webpages.
 
-![Filters *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters.png)
+![Filtreler *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters.png)
 
 All filters are grouped according to their role. For example, there are categories for ad-blocking filters, privacy protection filters, social media-related filters, etc. You can enable either individual filters or the entire group at once.
 
@@ -49,7 +49,7 @@ To add a filter, just click *Add custom filter*, enter the URL or the file path 
 
 ![User rules *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_user_rules.png)
 
-There are several ways to add new rules. The most straightforward is to just type a rule in, but it requires some knowledge of the [rule syntax](/general/ad-filtering/create-own-filters).
+Yeni kurallar eklemenin birkaç yolu vardır. The most straightforward is to just type a rule in, but it requires some knowledge of the [rule syntax](/general/ad-filtering/create-own-filters).
 
 You can import a ready-to-use filter list from a text file as well. **Make sure that different rules are separated by line breaks.** Note that importing a ready-to-use filter list is better done in the [Custom filters](#custom) tab.
 
@@ -79,7 +79,7 @@ In Stealth Mode, you can prevent a website from seeing the search queries from y
 
 > Note that some of the *Stealth Mode* options available in full-fledged apps are not present in the browser extensions due to technical restrictions.
 
-## Other features and options {#other}
+## Diğer özellikler ve seçenekler {#other}
 
 Apart from the large key modules of AdGuard Browser extension, there are several more specific features that can be configured in the *General* and *Additional settings* tabs of the extension settings.
 
@@ -101,13 +101,13 @@ The *Additional settings* section contains a range of various settings that are 
 
 From this tab, you can activate optimized filters, enable notifications about extension updates, open the *Filtering log*, or clear the statistics of blocked ads and trackers.
 
-Besides, you can opt to help us with the development of filters by sending the statistics on applied rules: which ones are triggered, on which websites, and how often. All data is strictly anonymized; this option is disabled by default.
+Besides, you can opt to help us with the development of filters by sending the statistics on applied rules: which ones are triggered, on which websites, and how often. This option is disabled by default as we do not collect user data without consent. Yet, if you enable it, all data will be strictly anonymized.
 
 ### About {#about}
 
 In the *About* section, you can find infos about the current version, links to the EULA and Privacy policy, and to the repository of the Browser extension on GitHub.
 
-![About *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)
+![Hakkında *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)
 
 ## Extension’s main menu {#main-menu}
 
@@ -135,4 +135,4 @@ Whereas AdGuard Browser extension is free and easy to install, and has filters t
 
 `2` – the extension is unable to detect requests from other extensions. If a malicious or tracking extension sends a request to its server to show you ads or track your activity, AdGuard Browser extension will not be able to block that request;
 
-`3` – not all types of ads and threats can be blocked by browser extensions due to certain browser restrictions. Some elements may get to the page and slow down the loading process. Besides, unlike browser-based ad blockers, the AdGuard app blocks ads before they are loaded to the browser. This saves traffic and speeds up page loading.
+`3` – not all types of ads and threats can be blocked by browser extensions due to certain browser limitations. Some elements may get to the page and slow down the loading process. Besides, unlike browser-based ad blockers, the AdGuard app blocks ads before they are loaded to the browser. This saves traffic and speeds up page loading.

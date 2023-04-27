@@ -30,9 +30,9 @@ sidebar_position: 11
 1. [安装以及配置](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB；
 > 在 Windows 平台上，**三星**用户最可能需要安装此[实用程序](https://developer.samsung.com/mobile/android-usb-driver.html)（Utility）。
 2. 启用**「开发者模式」**以及开启**「USB 调试」**：
-    - 在手机上打开**「设置」**；
-    - 前往**系统**部分（设置中最后一项选项）。 这里前往**关于手机**；
-    - 点击**版本号**7次。 之后您将会收到通知说明现在**您是开发人员**（如需要的话，输入解锁密码）；
+    - Open the **Settings** app on your phone;
+    - 前往**系统**部分（设置中最后一项选项）。 In this section, find the sub-item **About phone**;
+    - Tap the **Build number** line 7 times. 之后您将会收到通知说明现在**您是开发人员**（如需要的话，输入解锁密码）；
     - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
 3. 安装[火狐浏览器](https://www.mozilla.org/en-US/firefox/releases/)（发布版本）；
 4. Open the **AdGuard settings** → **Network** → **HTTPS Filtering** → Install the certificate in **Firefox** → **INSTALL FOR OLD VERSIONS**;

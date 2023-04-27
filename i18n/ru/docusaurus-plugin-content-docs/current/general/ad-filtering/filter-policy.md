@@ -20,7 +20,7 @@ sidebar_position: 6
 Они применяются к правилам всех фильтров.
 
 - Правила, которые часто вызывают проблемы с работой сайтов, будут удаляться.
-- Website-specific rules will be added only if a website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as followers on social media. A website's traffic is considered sufficient when it has 100 thousand visits per month. We will consider adding a rule for a website that's not that popular, but the final decision is up to the filter list maintainer.
+- Правила для конкретного сайта будут добавлены только в том случае, если на нём достаточно трафика. Посещаемость определяется по открытой статистике (если она есть) либо по косвенным признакам, например, по количеству подписчиков в социальных сетях. Посещаемость сайта считается достаточной, если количество посещений достигает 100 тысяч в месяц. Мы рассмотрим возможность добавления правила для сайта, который не так популярен, но окончательное решение остаётся за составителем фильтра.
 
 ## Рекламные фильтры
 
@@ -37,7 +37,7 @@ sidebar_position: 6
 Если правило подпадает под описанный ниже список ограничений, то оно не будет добавлено в основные фильтры.
 
 - Собственная реклама сайтов не должна удаляться специально. С другой стороны, она не должна быть разблокирована, если это может привести к появлению сторонней рекламы.
-- Website-specific rules will be added only if a website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as followers on social media. A website's traffic is considered sufficient when it has 100 thousand visits per month. We will consider adding a rule for a website that's not that popular, but the final decision is up to the filter list maintainer.
+- Правила для конкретного сайта будут добавлены только в том случае, если на нём достаточно трафика. Посещаемость определяется по открытой статистике (если она есть) либо по косвенным признакам, например, по количеству подписчиков в социальных сетях. Посещаемость сайта считается достаточной, если количество посещений достигает 100 тысяч в месяц. Мы рассмотрим возможность добавления правила для сайта, который не так популярен, но окончательное решение остаётся за составителем фильтра.
 - Противоблокировочные скрипты будут блокироваться только в том случае, если они ограничивают функциональность сайта или серьёзно мешают его использованию.
 - Противоблокировочные скрипты не будут блокироваться в случаях, когда это запрещено законом.
 - Правила, которые часто вызывают проблемы с работой сайтов, будут удаляться.
@@ -57,7 +57,7 @@ sidebar_position: 6
 Если правило подпадает под описанный ниже список ограничений, то оно не будет добавлено в фильтр.
 
 - Правила, которые часто вызывают проблемы с работой сайтов, будут удаляться.
-- Website-specific rules will be added only if a website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as followers on social media. A website's traffic is considered sufficient when it has 100 thousand visits per month. We will consider adding a rule for a website that's not that popular, but the final decision is up to the filter list maintainer.
+- Правила для конкретного сайта будут добавлены только в том случае, если на нём достаточно трафика. Посещаемость определяется по открытой статистике (если она есть) либо по косвенным признакам, например, по количеству подписчиков в социальных сетях. Посещаемость сайта считается достаточной, если количество посещений достигает 100 тысяч в месяц. Мы рассмотрим возможность добавления правила для сайта, который не так популярен, но окончательное решение остаётся за составителем фильтра.
 
 ## Фильтр отслеживания по URL
 
@@ -73,7 +73,7 @@ sidebar_position: 6
 
 - Правила, снижающие уровень безопасности пользователей, будут удаляться.
 - Правила, которые часто вызывают проблемы с работой сайтов, будут удаляться.
-- Website-specific rules will be added only if a website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as followers on social media. A website's traffic is considered sufficient when it has 100 thousand visits per month. We will consider adding a rule for a website that's not that popular, but the final decision is up to the filter list maintainer.
+- Правила для конкретного сайта будут добавлены только в том случае, если на нём достаточно трафика. Посещаемость определяется по открытой статистике (если она есть) либо по косвенным признакам, например, по количеству подписчиков в социальных сетях. Посещаемость сайта считается достаточной, если количество посещений достигает 100 тысяч в месяц. Мы рассмотрим возможность добавления правила для сайта, который не так популярен, но окончательное решение остаётся за составителем фильтра.
 
 ## Фильтр виджетов социальных сетей
 
@@ -88,7 +88,7 @@ sidebar_position: 6
 - Правила, которые блокируют виджеты, являющиеся частью функциональности сайта, такие как «Комментарии», «Встроенная запись», «Опросы» или виджеты, требующие авторизации через социальные сети.
 - Правила, блокирующие ссылки на сообщества сайта в социальных сетях.
 - Правила, которые часто вызывают проблемы с работой сайтов, будут удаляться.
-- Website-specific rules will be added only if a website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as followers on social media. A website's traffic is considered sufficient when it has 100 thousand visits per month. We will consider adding a rule for a website that's not that popular, but the final decision is up to the filter list maintainer.
+- Правила для конкретного сайта будут добавлены только в том случае, если на нём достаточно трафика. Посещаемость определяется по открытой статистике (если она есть) либо по косвенным признакам, например, по количеству подписчиков в социальных сетях. Посещаемость сайта считается достаточной, если количество посещений достигает 100 тысяч в месяц. Мы рассмотрим возможность добавления правила для сайта, который не так популярен, но окончательное решение остаётся за составителем фильтра.
 
 ## Фильтр раздражителей
 
@@ -102,7 +102,7 @@ sidebar_position: 6
 
 - Правила, блокирующие элементы, необходимые для нормального функционирования сайта (например, формы авторизации), не будут заблокированы, даже если они подходят под определение.
 - Правила, которые часто вызывают проблемы с работой сайтов, будут удаляться.
-- Website-specific rules will be added only if a website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as followers on social media. A website's traffic is considered sufficient when it has 100 thousand visits per month. We will consider adding a rule for a website that's not that popular, but the final decision is up to the filter list maintainer.
+- Правила для конкретного сайта будут добавлены только в том случае, если на нём достаточно трафика. Посещаемость определяется по открытой статистике (если она есть) либо по косвенным признакам, например, по количеству подписчиков в социальных сетях. Посещаемость сайта считается достаточной, если количество посещений достигает 100 тысяч в месяц. Мы рассмотрим возможность добавления правила для сайта, который не так популярен, но окончательное решение остаётся за составителем фильтра.
 
 ## Фильтр поисковой рекламы и саморекламы
 
@@ -116,7 +116,7 @@ sidebar_position: 6
 **Ограничения и исключения**
 
 - Правила, которые часто вызывают проблемы с работой сайтов, будут удаляться.
-- Website-specific rules will be added only if a website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as followers on social media. A website's traffic is considered sufficient when it has 100 thousand visits per month. We will consider adding a rule for a website that's not that popular, but the final decision is up to the filter list maintainer.
+- Правила для конкретного сайта будут добавлены только в том случае, если на нём достаточно трафика. Посещаемость определяется по открытой статистике (если она есть) либо по косвенным признакам, например, по количеству подписчиков в социальных сетях. Посещаемость сайта считается достаточной, если количество посещений достигает 100 тысяч в месяц. Мы рассмотрим возможность добавления правила для сайта, который не так популярен, но окончательное решение остаётся за составителем фильтра.
 
 ## Требования к качеству правил фильтрации
 

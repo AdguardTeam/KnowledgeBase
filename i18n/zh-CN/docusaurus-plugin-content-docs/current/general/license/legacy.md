@@ -1,6 +1,6 @@
 ---
 title: 关于旧版许可证的常见问题
-sidebar_position: 4
+sidebar_position: 6
 ---
 
 我们写了这篇文章的原因是，向用户详细解释如何续订/升级旧版 AdGuard 许可证，这样可以避免一切误解。
