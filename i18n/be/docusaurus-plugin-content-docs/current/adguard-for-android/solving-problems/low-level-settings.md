@@ -7,163 +7,195 @@ sidebar_position: 6
 
 > Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only open this section if you are sure of what you are doing or our support-team has asked you about it.
 
-To go to *Low-level settings*, open the main menu, tap *Settings*, choose *Advanced* and find *Low-Level Settings* at the bottom of the screen.
+To go to *Low-level settings*, open AdGUard and tap the gear icon on the bottom-right corner of the screen. Then choose *General → Advanced → Low-level settings*.
 
 ## Low-level settings
 
-`pref.boot.startup.delay`
+For Android v4.0 we completely redesigned the low-level settings: divided them into logic blocks, made them clearer, added validation of entered values and other safety valves, got rid of some and added some other settings. 
 
-Here you can set AdGuard’s startup delay after device boot-up (in seconds). This setting is only relevant if AdGuard autostart is enabled (Settings → General → AdGuard autostart).
+### DNS protection
 
-`pref.dns.blocking.type`
-
-Here you can select the way AdGuard will respond to blocked DNS queries:
-
-0 — means block requests with *Refused* response code for *Network filtering rules* and with *Unspecified IP* for *Host rules*. 1 — means block requests with *NXDomain* for all kinds of filtering rules. 2 — means block requests with *Unspecified IP* for all kinds of filtering rules. 3 — means block requests with *Unspecified IP* for all kinds of filtering rules. 4 — means block requests with *Refused* response code for all kinds of filtering rules.
-
-1 is used by default if the entered value is not valid.
-
-`pref.dns.bootstrap`
-
-Bootstrap DNS for DoH, DoT, and DoQ servers. The System DNS server is used by default.
-
-`pref.dns.detect.search.domains`
-
-If enabled AdGuard detects search domains and automatically forwards them to the fallback upstreams if they exist.
-
-`pref.dns.fallback`
+#### Fallback upstreams 
 
 Here you can specify a fallback DNS resolver that will be used when the configured server is not available. If not specified, the system default DNS is used as a fallback. A string "none" means no fallback at all.
 
-
-`pref.dns.fallback.domains`
+#### Fallback domains
 
 Here you can list domains that will be directly forwarded to the fallback upstreams (if they exist).
 
-`pref.dns.timeout`
+#### Detect search domains
 
-Here you can specify a timeout in milliseconds to be used for each DNS request. Please note that if you are using multiple upstreams, the fallback DNS resolver will only be used after all the timeouts of each upstream.
+If enabled AdGuard detects search domains and automatically forwards them to the fallback upstreams if they exist.
 
-`pref.enforce.https.filtering`
+#### Bootstrap upstreams
 
-Here are already listed package names of apps for which AdGuard enforces HTTPS filtering. You can add this list with any app even if it targets Android 7+. But before check if the application trusts the AdGuard’s HTTPS certificate, which is located in the User storage, or the developers have not provided such an option.
+Bootstrap DNS for DoH, DoT, and DoQ servers. The System DNS server is used by default.
 
-`pref.enforce.paused.notification`
+#### Blocking mode for adblock-style rules
 
-Enforce notification about paused protection even when the notification icon is set to Disabled (for Android below Oreo).
+Here you can specify the response type for domains blocked by DNS rules based on adblock rule syntax.
 
-`pref.excluded.packages`
+*  Respond with REFUSED (default)
+*  Respond with NXDOMAIN
+*  Respond with Custom IP address (IPv4 and IPv6 addresses can be specified here)
 
-Here you can list the packages and UIDs you want to exclude from filtering.
+#### Blocking mode for hosts rules
 
-`pref.filtered.ports`
+Here you can specify the response type for domains blocked by DNS rules based on hosts rule syntax.
 
-Here you can list the ports connections to which will be filtered.
+*  Respond with REFUSED
+*  Respond with NXDOMAIN
+*  Respond with Custom IP address (IPv4 and IPv6 addresses can be specified here) – default
 
-`pref.har.capture`
+#### DNS request timeout
+
+Here you can specify the time in milliseconds that AdGuard will wait for the response from the selected DNS server before resorting to fallback. If you don’t fill in this field or enter an invalid value, the value of 5000 will be used.
+
+#### Blocked response TTL
+
+Here you can specify the TTL (time to live) value that will be returned in response to a blocked request.
+
+#### DNS cache size
+Here you can specify the maximum number of cached responses. Default value is 1000.
+
+#### ECH blocking
+
+If enabled, AdGuard strips Encrypted Client Hello parameters from DNS responses.
+
+#### Ignore unavailable outbound proxy
+
+Enable this feature to make AdGuard send DNS requests directly if the outbound proxy is unavailable. 
+
+#### Try HTTP/3 for DNS-over-HTTPS upstreams
+
+If enabled, AdGuard uses HTTP/3 to speed up DNS query resolution for DNS-over-HTTPS upstreams. 
+
+#### SERVFAIL failure response
+
+Once enabled, AdGuard sends a SERVFAIL response to the client if all upstreams, including fallback ones, fail to reply. When this setting is disabled, no response is sent to the client. 
+
+#### Use fallback for non-fallback domains
+
+Enable this feature if you want AdGuard to use fallback upstream for all domains. Otherwise fallback upstream will be only used for fallback domains.
+
+#### Validate DNS upstreams
+
+Enable to make AdGuard test DNS upstreams before adding or updating custom DNS servers.
+
+### Filtering
+
+#### Capture HAR
 
 Here you can enable HAR file capture. Use it only for debugging purposes! If the setting is enabled, AdGuard will create a directory named "har" inside the app cache directory. It contains information about all filtered HTTP requests in HAR 1.2 format and can be analyzed with the Fiddler program.
 
-`pref.https.ignored.errors`
+### HTTPS filtering
 
-For the domains and package names listed here, notifications that they do not trust AdGuard's HTTPS certificate will be disabled.
+#### Encrypted Client Hello
 
-`pref.https.opportunistic`
+Every encrypted Internet connection has an unencrypted part. This is the very first packet which contains the name of the server you are connecting to. Encrypted Client Hello technology is supposed to solve this issue and encrypt that last bit of unencrypted information. To benefit from it, enable the *Encrypted Client Hello* option. It uses a local DNS proxy to look for ECH configuration for the domain. If it is found, ClientHello packet will be encrypted.
 
-If enabled, AdGuard will bypass the traffic of any app that does not trust our certificate. It is enabled by default.
+#### OCSP checking
 
-`pref.ipv4.routs.excluded`
+Once enabled, this option runs asynchronous OCSP checks to check whether the website’s SSL certificate is revoked. 
 
-Here you can find the list of IPv4 ranges excluded from filtering. For instance, we don’t filter connections to the private IP ranges. You can add this list if required.
+If the OCSP check completes within the minimum timeout, AdGuard will immediately apply the result: block the connection if the certificate is revoked or establish a connection if the certificate is valid. 
 
-`pref.ipv6.routs.excluded`
+If the verification takes too long, AdGuard will establish a connection and continue checking in the background. If the certificate is revoked, current and future connections to the domain will be blocked.
 
-Here you can list the IPv6 ranges which you want to exclude from filtering.
+#### Redirect DNS-over-HTTPS requests
 
-`pref.notify.on.unknown.ca`
+IF enabled, DNS-over-HTTPS requests will be redirected to the DNS filtering module. We recommend disabling fallback upstreams and use only encrypted DNS servers to maintain privacy.
 
-If enabled, AdGuard shows you a notification if any app doesn’t trust our HTTPS certificate.
+### Outbound Proxy
 
-`pref.proxy.block.ipv6`
+#### Show the Filter DNS requests setting
 
-If enabled, AdGuard blocks all Internet connections through IPv6 when working in "Proxy with automatic setup" mode.
+By enabling this feature, you allow changing the *Filter DNS requests* setting in the outbound proxy settings.
 
-`pref.proxy.disable.reconfigure`
+### Protection
 
-Here you can disable AdGuard automatic root proxy reconfiguration when network connectivity changes.
+#### Port ranges
 
-`pref.quic.bypass.packages`
+Here you can specify ports that should be filtered. 
 
-Here you can list packages for which AdGuard will bypass QUIC traffic.
+#### Log removed HTML events
 
-`pref.removed.html.log`
+If you want AdGuard to write info about blocked HTML elements to the filtering log, enable this feature.
 
-If enabled, AdGuard shows information about blocked HTML elements in the filtering log.
+#### Scriplet debugging
 
-`pref.root.clear.youtube`
+If you need to activate debugging of scriptlets, enable this feature.
 
-If enabled, AdGuard clears YouTube app data on booting to block YouTube ads. Root access is required.
+#### Excluded apps
 
-`pref.root.set.oom_adj`
+Here can be listed packages and UIDs you want to exclude from AdGuard’s protection.
 
-If enabled, AdGuard sets the `minimum oom_score_adj` for its own process to stay alive all the time. Requires root access.
+#### QUIC bypass packages
 
-`pref.samsungpay.autopause.enable`
+Here you can specify packages names for which AdGuard should bypass QUIC traffic.
 
-If enabled, AdGuard pauses protection when you open the Samsung Pay app. Requires usage access.
+#### IPv6 filtering
 
-`pref.vpn.android10.mitigate`
+If enabled, AdGuard filters IPv6 networks if an IPv6 network interface is available
 
-If enabled, AdGuard applies a workaround solution that mitigates the soft reboots issue caused by an Android 10 bug.
+#### IPv4 ranges excluded from filtering 
 
-`pref.vpn.capture`
+Filtering for IPv4 ranges, listed in this section, will be disabled.
 
-If enabled, AdGuard will create the special file name "tun.pcap". It contains all network packets transferred through the VPN. This file is located in the app cache directory and can be analyzed with the Wireshark program.
+#### IPv6 ranges excluded from filtering 
 
-`pref.vpn.disable.pause`
+Filtering for IPv6 ranges, listed in this section, will be disabled.
 
-This feature disables automatic VPN pause in case of network absence, tethering, or power-saving mode.
+#### TCP keepalive for outgoing sockets
 
-`pref.vpn.disable.reconfigure`
+Periodically sends TCP packets over idle connection to ensure it is alive and to renew NAT timeouts. This option can be useful to bypass the strict network address translation (NAT) settings that some ISPs use. 
 
-This feature disables VPN automatic reconfiguration in case of network absence, tethering, or power-saving mode.
+Here you can specify the TCP keepalive interval and timeout. 
 
-`pref.vpn.ipv4.address`
+### Local VPN settings
+
+#### Recovery delay for revoked VPN
+
+Here you can set the time of a delay in milliseconds before AdGuard will try to restore VPN protection after it has been revoked by a third-party VPN app or by deleting the VPN profile. The default value is 5000 ms.
+
+#### Reschedule delay for revoked VPN recovery
+
+Here you can set the time of a delay in milliseconds before AdGuard will reschedule the restoration of VPN protection after it has been revoked by a third-party VPN app or by deleting the VPN profile. The default value is 5000 ms.
+
+#### MTU
+
+Here you can set the maximum transmission unit (MTU) of the VPN interface. The recommended range is 1500-1900 bytes. 
+
+#### Restore VPN automatically
+
+If enabled, this feature automatically re-enables AdGuard’s local VPN after it has been turned off due to network absence, tethering, or low-power mode.
+
+#### Packet capture (PCAP)
+
+If enabled, AdGuard will create the special file name `tun.pcap`. It contains all network packets transferred through the VPN. This file is located in the app cache directory and can be analyzed with the Wireshark program.
+
+#### Include Wi-Fi gateway in VPN routes
+
+If you want the gateway IP addresses to be added to VPN routes when on Wi-Fi, enable this feature.
+
+#### IPv4 address
 
 TUN interface IPv4 address.
 
-`pref.vpn.ipv4.bypass`
+#### Forcibly route LAN IPv4
 
-If enabled, VPN will be configured to bypass all the IPv4 traffic. In this case, IPv4 will work, but it will not be filtered.
+When enabled, AdGuard filters all LAN connections. 
 
-`pref.vpn.ipv4.force.complex`
+#### Route all LAN IPv4 connections
 
-If enabled, VPN will bypass the LAN when possible. However, for complex networks, the LAN is not excluded and connections will be filtered, including local ones.
+Once enabled, AdGuard excludes LAN connections from filtering for simple networks. May not work for complex networks. 
 
-`pref.vpn.ipv4.force.default`
-
-This feature disables the routes we use to exclude LAN from filtering.
-
-`pref.vpn.ipv6.address`
+#### IPv6 address
 
 TUN interface IPv6 address.
 
-`pref.vpn.ipv6.bypass`
+### Miscellaneous
 
-If enabled, VPN will be configured to bypass all the IPv6 traffic. In this case, IPv6 will work, but it will not be filtered.
+#### Detect Samsung Pay
 
-`pref.vpn.ipv6.disable`
-
-This feature forcibly disables filtering for IPv6 networks. In this case, IPv6 will not work at all.
-
-`pref.vpn.ipv6.force`
-
-This feature forcibly enables filtering for IPv6 networks. The app doesn’t filter IPv6 on Lollipop and some cell carriers by default.
-
-`pref.vpn.tun.mtu`
-
-Here you can set the maximum transmission unit (MTU) of the VPN interface. The recommended interval for the experiments is from 1500 to 9000.
-
-`Reset`
-
-You always can reset Low-level settings to default.
+Enable this feature to pause AdGuards’ protection when you open the Samsung Pay app.
