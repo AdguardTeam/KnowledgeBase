@@ -210,14 +210,78 @@ Example:
 
 [//]: # (Please, keep them sorted)
 
+* [`$app`](#app-modifier)
+* [`$denyallow`](#denyallow-modifier)
 * [`$domain`](#domain-modifier)
 * [`$header`](#header-modifier)
+* [`$important`](#important-modifier)
 * [`$match-case`](#match-case-modifier)
+* [`$method`](#method-modifier)
 * [`$popup`](#popup-modifier)
 * [`$third-party`](#third-party-modifier)
 * [`$to`](#to-modifier)
 
-The following modifiers are the most simple and frequently used.
+The following modifiers are the most simple and frequently used. Basically, they just limit the scope of rule application.
+
+#### **`$app`** {#app-modifier}
+
+This modifier lets you narrow the rule coverage down to a specific application (or a list of applications). This might be not too important on Windows and Mac, but this is very important on mobile where some of the filtering rules must be application-specific.
+
+* Android — use the app package name, e.g. `org.example.app`.
+* Windows — use the process name, e.g. `chrome.exe`.
+* Mac — use the bundle ID or the process name, e.g. `com.google.Chrome`.
+
+> For Mac, you can find out the bundle ID or the process name of the app by viewing the respective request details in the Filtering log.
+
+**Examples**
+
+* `||baddomain.com^$app=org.example.app` — a rule to block requests that match the specified mask, and are sent from the `org.example.app` Android app.
+* `||baddomain.com^$app=org.example.app1|org.example.app2` — the same rule, but it works for both `org.example.app1` and `org.example.app2` apps.
+
+If you want the rule not to be applied to certain apps, start the app name with `~` sign.
+
+* `||baddomain.com^$app=~org.example.app` — a rule to block requests that match the specified mask, and are sent from any app save for the `org.example.app`.
+* `||baddomain.com^$app=~org.example.app1|~org.example.app2` — same as above, but now two apps are excluded: `org.example.app1` and `org.example.app2`.
+
+> **Compatibility with different versions of AdGuard**
+>
+> Only AdGuard for Windows, Mac, Android are technically capable of using rules with `$app` modifier.
+
+#### **`$denyallow`** {#denyallow-modifier}
+
+`$denyallow` modifier allows to avoid creating additional rules when it is needed to disable a certain rule for specific domains. `$denyallow` matches only target domains and not referrer domains.
+
+Adding this modifier to a rule is equivalent to excluding the domains by the rule's matching pattern or to adding the corresponding exclusion rules. To add multiple domains to one rule, use the `|`  character as a separator.
+
+> **Restrictions**
+>
+> * The rule's matching pattern cannot target any specific domains, e.g. it cannot start with `||`.
+> * Domains in the modifier value cannot be negated, e.g. `$denyallow=~x.com`, or have a wildcard TLD, e.g. `$denyallow=x.*`.
+>
+> The rules which violate these restrictions are considered invalid.
+
+**Examples**
+
+This rule:
+```
+*$script,domain=a.com|b.com,denyallow=x.com|y.com
+```
+
+is equivalent to this one:
+```
+/^(?!.*(x.com|y.com)).*$/$script,domain=a.com|b.com
+```
+
+or to the combination of these three:
+```
+*$script,domain=a.com|b.com
+@@||x.com$script,domain=a.com|b.com
+@@||y.com$script,domain=a.com|b.com
+```
+
+> **Compatibility with different versions of AdGuard**
+>
+> Rules with `$denyallow` modifier are not supported by AdGuard Content Blocker.
 
 #### **`$domain`** {#domain-modifier}
 
@@ -308,6 +372,31 @@ The modifier `":" h_value` part may be omitted. In that case the modifier matche
 * `@@||example.com^$header=set-cookie:/foo\, bar\$/` unblocks requests which responses have the `Set-Cookie` header with value matching the `foo, bar$` regular expression.
 * `@@||example.com^$header=set-cookie` unblocks requests which responses have a `Set-Cookie` header with any value.
 
+#### **`$important`** {#important-modifier}
+
+The `$important` modifier applied to a rule increases its priority over any other rule without `$important` modifier. Even over basic exception rules.
+
+**Examples**
+
+```
+! blocking rule will block all requests despite of the exception rule
+||example.org^$important
+@@||example.org^
+```
+
+```
+! if the exception rule also has `$important` modifier it will prevail, so no requests will not be blocked
+||example.org^$important
+@@||example.org^$important
+```
+
+```
+! if a document-level exception rule is applied to the document, the `$important` modifier will be ignored;
+! so if a request to `example.org` is sent from the `test.org` domain, the blocking rule will not be applied despite it has the `$important` modifier
+||example.org^$important
+@@||test.org^$document
+```
+
 #### **`$match-case`** {#match-case-modifier}
 
 This modifier defines a rule which applies only to addresses that match the case. Default rules are case-insensitive.
@@ -315,6 +404,19 @@ This modifier defines a rule which applies only to addresses that match the case
 **Examples**
 
 * `*/BannerAd.gif$match-case` — this rule will block `http://example.com/BannerAd.gif`, but not `http://example.com/bannerad.gif`.
+
+#### **`$method`** {#method-modifier}
+
+This modifier limits the rule scope to requests that use the specified set of HTTP methods. Negated methods are allowed. The methods must be specified in all lowercase characters, but are matched case-insensitively.
+
+**Examples**
+
+* `||evil.com^$method=get|head` blocks only GET and HEAD requests to `evil.com`.
+* `||evil.com^$method=~post|~put` blocks any requests except POST or PUT to `evil.com`.
+
+> **Compatibility with different versions of AdGuard**
+>
+> `$method` is available starting with CoreLibs v1.12.
 
 #### **`$popup`** {#popup-modifier}
 
@@ -688,17 +790,13 @@ Disables all generic [cosmetic rules](#cosmetic-rules) on pages that correspond 
 [//]: # (Please, keep them sorted)
 
 * [`$all`](#all-modifier)
-* [`$app`](#app-modifier)
 * [`$badfilter`](#badfilter-modifier)
 * [`$cookie`](#cookie-modifier)
 * [`$csp`](#csp-modifier)
-* [`$denyallow`](#denyallow-modifier)
 * [`$hls`](#hls-modifier)
-* [`$important`](#important-modifier)
 * [`$inline-font`](#inline-font-modifier)
 * [`$inline-script`](#inline-script-modifier)
 * [`$jsonprune`](#jsonprune-modifier)
-* [`$method`](#method-modifier)
 * [`$network`](#network-modifier)
 * [`$permissions`](#permissions-modifier)
 * [`$redirect`](#redirect-modifier)
@@ -721,30 +819,6 @@ These modifiers are able to completely change the behaviour of basic rules.
 ||example.org^$csp=font-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
 ||example.org^
 ```
-
-#### **`$app`** {#app-modifier}
-
-This modifier lets you narrow the rule coverage down to a specific application (or a list of applications). This might be not too important on Windows and Mac, but this is very important on mobile where some of the filtering rules must be application-specific.
-
-* Android — use the app package name, e.g. `org.example.app`.
-* Windows — use the process name, e.g. `chrome.exe`.
-* Mac — use the bundle ID or the process name, e.g. `com.google.Chrome`.
-
-> For Mac, you can find out the bundle ID or the process name of the app by viewing the respective request details in the Filtering log.
-
-**Examples**
-
-* `||baddomain.com^$app=org.example.app` — a rule to block requests that match the specified mask, and are sent from the `org.example.app` Android app.
-* `||baddomain.com^$app=org.example.app1|org.example.app2` — the same rule, but it works for both `org.example.app1` and `org.example.app2` apps.
-
-If you want the rule not to be applied to certain apps, start the app name with `~` sign.
-
-* `||baddomain.com^$app=~org.example.app` — a rule to block requests that match the specified mask, and are sent from any app save for the `org.example.app`.
-* `||baddomain.com^$app=~org.example.app1|~org.example.app2` — same as above, but now two apps are excluded: `org.example.app1` and `org.example.app2`.
-
-> **Compatibility with different versions of AdGuard**
->
-> Only AdGuard for Windows, Mac, Android are technically capable of using rules with `$app` modifier.
 
 #### **`$badfilter`** {#badfilter-modifier}
 
@@ -863,42 +937,6 @@ For the requests matching a `$csp` rule, we will strengthen response security po
 >
 > Rules with `$csp` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
 
-#### **`$denyallow`** {#denyallow-modifier}
-
-`$denyallow` modifier allows to avoid creating additional rules when it is needed to disable a certain rule for specific domains. `$denyallow` matches only target domains and not referrer domains.
-
-Adding this modifier to a rule is equivalent to excluding the domains by the rule's matching pattern or to adding the corresponding exclusion rules. To add multiple domains to one rule, use the `|`  character as a separator.
-
-> **Restrictions**
->
-> * The rule's matching pattern cannot target any specific domains, e.g. it cannot start with `||`.
-> * Domains in the modifier value cannot be negated, e.g. `$denyallow=~x.com`, or have a wildcard TLD, e.g. `$denyallow=x.*`.
->
-> The rules which violate these restrictions are considered invalid.
-
-**Examples**
-
-This rule:
-```
-*$script,domain=a.com|b.com,denyallow=x.com|y.com
-```
-
-is equivalent to this one:
-```
-/^(?!.*(x.com|y.com)).*$/$script,domain=a.com|b.com
-```
-
-or to the combination of these three:
-```
-*$script,domain=a.com|b.com
-@@||x.com$script,domain=a.com|b.com
-@@||y.com$script,domain=a.com|b.com
-```
-
-> **Compatibility with different versions of AdGuard**
->
-> Rules with `$denyallow` modifier are not supported by AdGuard Content Blocker.
-
 #### **`$hls`** {#hls-modifier}
 
 `$hls` rules modify the response of a matching request. They are intended as a convenient way to remove segments from [HLS playlists (RFC 8216)](https://datatracker.ietf.org/doc/html/rfc8216).
@@ -1012,31 +1050,6 @@ preroll.ts
 > **Compatibility with different versions of AdGuard**
 >
 > Rules with the `$hls` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.10 or later**.
-
-#### **`$important`** {#important-modifier}
-
-The `$important` modifier applied to a rule increases its priority over any other rule without `$important` modifier. Even over basic exception rules.
-
-**Examples**
-
-```
-! blocking rule will block all requests despite of the exception rule
-||example.org^$important
-@@||example.org^
-```
-
-```
-! if the exception rule also has `$important` modifier it will prevail, so no requests will not be blocked
-||example.org^$important
-@@||example.org^$important
-```
-
-```
-! if a document-level exception rule is applied to the document, the `$important` modifier will be ignored;
-! so if a request to `example.org` is sent from the `test.org` domain, the blocking rule will not be applied despite it has the `$important` modifier
-||example.org^$important
-@@||test.org^$document
-```
 
 #### **`$inline-script`** {#inline-script-modifier}
 
@@ -1277,19 +1290,6 @@ Basic URL exceptions shall not disable rules with `$jsonprune` modifier. They ca
 ```
 
 </details>
-
-#### **`$method`** {#method-modifier}
-
-This modifier limits the rule scope to requests that use the specified set of HTTP methods. Negated methods are allowed. The methods must be specified in all lowercase characters, but are matched case-insensitively.
-
-**Examples**
-
-* `||evil.com^$method=get|head` blocks only GET and HEAD requests to `evil.com`.
-* `||evil.com^$method=~post|~put` blocks any requests except POST or PUT to `evil.com`.
-
-> **Compatibility with different versions of AdGuard**
->
-> `$method` is available starting with CoreLibs v1.12.
 
 #### **`$network`** {#network-modifier}
 
