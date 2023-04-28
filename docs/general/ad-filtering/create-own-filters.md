@@ -493,15 +493,15 @@ If there is a `$~third-party` modifier, the rule is only applied to the requests
 * [`$image`](#image-modifier)
 * [`$media`](#media-modifier)
 * [`$object`](#object-modifier)
-* [`$object-subrequest` (deprecated)](#object-subrequest-modifier)
 * [`$other`](#other-modifier)
 * [`$ping`](#ping-modifier)
 * [`$script`](#script-modifier)
 * [`$stylesheet`](#stylesheet-modifier)
 * [`$subdocument`](#subdocument-modifier)
-* [`$webrtc` (deprecated)](#webrtc-modifier)
 * [`$websocket`](#websocket-modifier)
 * [`$xmlhttprequest`](#xmlhttprequest-modifier)
+* [`$object-subrequest` (deprecated)](#object-subrequest-modifier)
+* [`$webrtc` (deprecated)](#webrtc-modifier)
 
 There is a set of modifiers, which can be used to limit the rule's application area to certain type of content. These modifiers can also be combined to cover, for example, both images and scripts.
 
@@ -553,13 +553,6 @@ The rule corresponds to requests for media files — music and video, e.g. `.mp4
 
 The rule corresponds to browser plugins resources, e.g. Java or Flash.
 
-#### **`$object-subrequest` (deprecated)** {#object-subrequest-modifier}
-
-> **Deprecation notice**
->
-> `$object-subrequest` modifier is deprecated and is no longer supported. Rules with it are considered as invalid.
-> The rule corresponds to requests by browser plugins (it is usually Flash).
-
 #### **`$other`** {#other-modifier}
 
 The rule applies to requests for which the type has not been determined or does not match the types listed above.
@@ -589,20 +582,6 @@ The rule corresponds to requests for built-in pages — HTML tags `frame` and `i
 * `||example.com^$subdocument` blocks built-in page requests (`frame` and `iframe`) to `example.com` and all its subdomains anywhere.
 * `||example.com^$subdocument,domain=domain.com` blocks built-in page requests (`frame` и `iframe`) to `example.com` (and its subdomains) from `domain.com` and all its subdomains.
 
-#### **`$webrtc` (deprecated)** {#webrtc-modifier}
-
-> **Deprecation notice**
->
-> This modifier is deprecated and is no longer supported. Rules with it are considered as invalid.
-> If you need to suppress WebRTC, consider using the `nowebrtc` [scriptlet](#scriptlets).
-
-The rule applies only to WebRTC connections.
-
-**Examples**
-
-* `||example.com^$webrtc,domain=example.org` blocks webRTC connections to `example.com` for `example.org`.
-* `@@*$webrtc,domain=example.org` disables the RTC wrapper for `example.org`.
-
 #### **`$websocket`** {#websocket-modifier}
 
 The rule applies only to WebSocket connections.
@@ -618,6 +597,27 @@ The rule applies only to ajax requests (requests sent via javascript object `XML
 > **Compatibility with different versions of AdGuard**
 >
 > AdGuard for Windows, Mac, Android often cannot accurately detect this type and sometimes detects it as [`$other`](#other-modifier) or [`$script`](#script-modifier). For reliable detection, use AdGuard Browser extension.
+
+#### **`$object-subrequest` (deprecated)** {#object-subrequest-modifier}
+
+> **Deprecation notice**
+>
+> `$object-subrequest` modifier is deprecated and is no longer supported. Rules with it are considered as invalid.
+> The rule corresponds to requests by browser plugins (it is usually Flash).
+
+#### **`$webrtc` (deprecated)** {#webrtc-modifier}
+
+> **Deprecation notice**
+>
+> This modifier is deprecated and is no longer supported. Rules with it are considered as invalid.
+> If you need to suppress WebRTC, consider using the `nowebrtc` [scriptlet](#scriptlets).
+
+The rule applies only to WebRTC connections.
+
+**Examples**
+
+* `||example.com^$webrtc,domain=example.org` blocks webRTC connections to `example.com` for `example.org`.
+* `@@*$webrtc,domain=example.org` disables the RTC wrapper for `example.org`.
 
 #### Exception modifiers {#exception-modifiers}
 
