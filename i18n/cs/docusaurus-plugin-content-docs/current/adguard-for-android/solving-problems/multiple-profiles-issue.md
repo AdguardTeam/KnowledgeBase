@@ -7,7 +7,7 @@ Pokud je v systému Android 9 a novějším nainstalována aplikace AdGuard pro 
 
 Pokud se po neúspěšném pokusu o odstranění pokusíte aplikaci AdGuard znovu nainstalovat, zobrazí se chybová zpráva "Aplikaci nelze do zařízení nainstalovat".
 
-Chcete-li tento problém vyřešit, musíte aplikaci odinstalovat pro všechny uživatele: přejděte do Nastavení → Všechny aplikace → AdGuard. Tap the three dots at the upper right corner and select *Uninstall for all users*.
+Chcete-li tento problém vyřešit, musíte aplikaci odinstalovat pro všechny uživatele: přejděte do Nastavení → Všechny aplikace → AdGuard. Klepněte na tři tečky v pravém horním rohu a vyberte *Odinstalovat pro všechny uživatele*.
 
 ![Odinstalovat *mobile](https://cdn.adtidy.org/public/Adguard/kb/android/multiple_users/uninst_en.png)
 

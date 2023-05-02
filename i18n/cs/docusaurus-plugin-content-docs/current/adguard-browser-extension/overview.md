@@ -101,7 +101,7 @@ Sekce *Další nastavení* obsahuje řadu různých nastavení, která souvisej�
 
 Na této kartě můžete aktivovat optimalizované filtry, zapnout oznámení o aktualizacích rozšíření, otevřít *Záznam filtrování* nebo vymazat statistiky blokovaných reklam a slídičů.
 
-Kromě toho nám můžete pomoci s vývojem filtrů zasíláním statistik o použitých pravidlech: které z nich se spouští, na kterých webových stránkách a jak často. This option is disabled by default as we do not collect user data without consent. Yet, if you enable it, all data will be strictly anonymized.
+Kromě toho nám můžete pomoci s vývojem filtrů zasíláním statistik o použitých pravidlech: které z nich se spouští, na kterých webových stránkách a jak často. Tato možnost je ve výchozím nastavení vypnutá, protože neshromažďujeme údaje uživatelů bez jejich souhlasu. Pokud ji zapnete, budou všechna data přísně anonymizovaná.
 
 ### Informace {#about}
 
@@ -135,4 +135,4 @@ Zatímco Rozšíření prohlížeče AdGuard je zdarma, snadno se instaluje a ob
 
 `2` – rozšíření není schopno detekovat požadavky od jiných rozšíření. Pokud škodlivé nebo sledovací rozšíření odešle na svůj server požadavek na zobrazení reklamy nebo sledování vaší aktivity, Rozšíření prohlížeče AdGuard nebude schopno tento požadavek zablokovat;
 
-`3` – not all types of ads and threats can be blocked by browser extensions due to certain browser limitations. Některé prvky se mohou dostat na stránku a zpomalit proces načítání. Kromě toho aplikace AdGuard na rozdíl od blokátorů reklam v prohlížeči blokuje reklamy ještě před jejich načtením do prohlížeče. To šetří provoz a zrychluje načítání stránek.
+`3` – ne všechny typy reklam a hrozeb lze blokovat pomocí rozšíření prohlížeče z důvodu určitých omezení prohlížeče. Některé prvky se mohou dostat na stránku a zpomalit proces načítání. Kromě toho aplikace AdGuard na rozdíl od blokátorů reklam v prohlížeči blokuje reklamy ještě před jejich načtením do prohlížeče. To šetří provoz a zrychluje načítání stránek.

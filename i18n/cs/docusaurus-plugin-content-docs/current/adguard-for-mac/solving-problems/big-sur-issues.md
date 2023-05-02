@@ -43,7 +43,7 @@ Tyto problémy společnost Apple zatím neodstranila nebo je odstranila jen čá
 
 #### Kompatibilita s Cisco AnyConnect
 
-AdGuard will not work together with Cisco AnyConnect while in the *Network Extension* mode. Musíte přepnout AdGuard do režimu *Automatický proxy*. Chcete-li tak učinit, postupujte podle [těchto pokynů](#automatic-proxy).
+AdGuard nebude fungovat společně s Cisco AnyConnect v režimu *Rozšíření sítě*. Musíte přepnout AdGuard do režimu *Automatický proxy*. Chcete-li tak učinit, postupujte podle [těchto pokynů](#automatic-proxy).
 
 
 #### Kompatibilita s Flutter

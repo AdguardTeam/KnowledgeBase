@@ -27,7 +27,7 @@ K analýze a diagnostice různých problémů, které mohou potenciálně nastat
 
 Někdy vás členové týmu podpory mohou požádat o zaslání *záznamů trasování*. Pak je třeba provést následující:
 
-1. Stop AdGuard by right-clicking the AdGuard icon in the tray menu and choosing *Exit AdGuard*:
+1. Ukončete AdGuard kliknutím pravým tlačítkem na ikonu AdGuardu v nabídce na hlavním panelu a výběrem *Ukončit AdGuard*:
 
 ![Exit AdGuard *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-3.png)
 

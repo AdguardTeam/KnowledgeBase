@@ -3,11 +3,11 @@ title: 有効化する方法
 sidebar_position: 3
 ---
 
-## How to activate a license
+## AdGuardライセンスを有効化する方法
 
 ライセンスを有効にするには、お使いのAdGuard製品の「*ライセンス*」セクションに移動し、「*ログイン*」または「*認証する*」ボタンを見つけてください。 AdGuardアカウントのメールアドレスとパスワードを使用してログインします。 AdGuardアカウントをまだお持ちでない場合は、その場でアカウントを新規登録できます（メールアドレスのみが必要）。
 
-> Note: To activate a license via the AdGuard account, a valid license with at least one free slot is required. If your license is already used on a maximum number of devices, you can [upgrade it](../payment-options#upgrade) or [transfer it from one device to another](../transfer).
+> ※ AdGuardアカウントを使ってライセンスを有効化するには、少なくとも端末1台分の空きスロットがあるライセンスが必要です。 ライセンスがすでに最大数の端末で使用されている場合、[ライセンスをアップグレードする](../payment-options#upgrade)か、[一つの端末から別の端末にライセンスを移行する](../transfer)ことができます。
 
 または、アカウントログインでなく、[ライセンスキー](../what-is#license-key)を直接入力することでAdGuardライセンスを有効化することも可能です。
 
@@ -17,11 +17,11 @@ sidebar_position: 3
 
 1. AdGuardアプリを開く
 
-To do it, double-click the AdGuard icon on the desktop:
+デスクトップ上のAdGuardアイコンをダブルクリックします。
 
 ![デスクトップ上のAdGuardアイコン](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowsEn.png)
 
-or double-click the AdGuard icon in the system tray:
+もしくは、システムトレイでAdGuardアイコンをダブルクリックします。
 
 ![システムトレイでのAdGuardアイコン](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windows2En.png)
 

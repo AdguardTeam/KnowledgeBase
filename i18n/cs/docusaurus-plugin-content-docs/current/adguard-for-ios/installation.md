@@ -27,7 +27,7 @@ Do vyhledávacího pole zadejte _adguard_ a klepněte na řetězec _adguard_, kt
 
 ![Do vyhledávacího pole zadejte "AdGuard" *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/2.png)
 
-Na otevřené stránce App Store klepněte na _ZÍSKAT_ pod řetězcem _AdGuard - adblock&privacy_ a poté klepněte na _INSTALOVAT_. Můžete být požádáni o zadání přihlašovacího jména a hesla k Apple ID. Zadejte ho a počkejte na dokončení instalace.
+[Na otevřené stránce App Store klepněte](https://adguard.com/download.html?auto=1) na _ZÍSKAT_ pod řetězcem _AdGuard - adblock&privacy_ a poté klepněte na _INSTALOVAT_. Můžete být požádáni o zadání přihlašovacího jména a hesla k Apple ID. Zadejte ho a počkejte na dokončení instalace.
 
 ![Klepněte na ZÍSKAT pod AdGuardem *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/3.png)
 

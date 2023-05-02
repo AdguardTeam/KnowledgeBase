@@ -48,7 +48,7 @@ sidebar_position: 3
 2. Нажмите на иконку **шестерёнки** в правом верхнем углу
 3. Нажмите **Лицензия**
 
-![Перейдите в раздел «Настройки и Лицензия»](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/macEn.png)
+![Go to Settings and License *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/macEn.png)
 
 4. В открывшемся окне нажмите кнопку **Активировать**
 

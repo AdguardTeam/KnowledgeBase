@@ -23,7 +23,7 @@ Chcete-li uložit soubory, které potřebujeme, postupujte takto:
 
 - Vyberte název a místo uložení a klikněte na *Uložit*. Vyberte *Zobrazit informace pro následující jazyky*. Musíte zaškrtnout políčko vedle *Angličtiny*. Klikněte na *OK*.
 
-- Open *System*: *Event Viewer (Local)* → *Windows Logs* → *System*.
+- Otevřete *Systém*: *Prohlížeč událostí (místní)* → *Záznamy systému Windows* → *Systém*.
 
 - Klikněte pravým tlačítkem na *Systém* a v rozevíracím menu vyberte *Uložit všechny události jako...*
 

@@ -48,7 +48,7 @@ veya sistem tepsisindeki AdGuard simgesine çift tıklayın:
 2. Click the **gear icon** in the top right corner
 3. Click **License...**
 
-![Go to Settings and License](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/macEn.png)
+![Ayarlar ve Lisans bölümüne git *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/macEn.png)
 
 4. In the opened window press **Activate** button
 

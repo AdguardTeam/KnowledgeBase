@@ -12,13 +12,14 @@ sidebar_position: 2
 **디스크 여유 공간**: 120 Mbytes
 
 ## 설치 방법
+
 대부분의 Android 기반 앱은 Google Play에서 다운로드할 수 있지만 Google은 Google Play를 통한 네트워크 수준 광고 차단기(다른 앱의 광고를 차단하는 앱)를 배포하는 것을 금지하기 때문에 Google Play에서 AdGuard 광고 차단 앱이 없습니다. [AdGuard 블로그](https://blog.adguard.com/en/google-removes-adguard-android-app-google-play/)에서 Google 제한 정책에 대한 자세한 내용을 확인하실 수 있습니다.
 
 그래서 Android용 AdGuard는 수동으로만 설치할 수 있습니다. 휴대폰에서 앱을 사용하려면 다음 단계를 수행하세요.
 
 먼저 기기의 OS 설정에서 알 수 없는 소스의 앱 설치를 허용해 주세요. 알 수 없는 소스의 앱 설치를 허용하는 방법은 다음과 같습니다.
 
-* Android 8 이상: [AdGuard apk](https://adguard.com/en/adguard-android/overview.html)가 로드되도록 허용합니다(다음 단계 참조). 열린 창에서 **설정**을 누르고 **이 출처 허용** 스위치를 활성화합니다. 다음 프로그램 설치를 계속하십시오.
+* For Android 8+: start downloading [AdGuard apk](https://adguard.com/download.html?auto=1) (see the next step), you'll be prompted to allow permission. 열린 창에서 **설정**을 누르고 **이 출처 허용** 스위치를 활성화합니다. 다음 프로그램 설치를 계속하십시오.
 * Android 6, 7: **설정**으로 이동한 후 **시스템 및 기기**에서 **추가 설정**을 선택합니다. **알 수 없는 소스**를 켜고 시스템 경고 창에서 **확인**을 누릅니다.
 
 ![알 수 없는 소스의 앱 설치 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/unknown_sources1.png)

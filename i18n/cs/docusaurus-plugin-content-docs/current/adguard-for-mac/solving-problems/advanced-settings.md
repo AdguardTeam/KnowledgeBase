@@ -11,15 +11,15 @@ sidebar_position: 9
 
 `network.extension.exclude.domains`
 
-The listed domains will be excluded from filtering in the *Network Extension* mode. Pro oddělení hodnot použijte čárku nebo zalomení řádku.
+Uvedené domény budou z filtrování v režimu *Rozšíření sítě* vyloučeny. Pro oddělení hodnot použijte čárku nebo zalomení řádku.
 
 `network.extension.exclude.ports`
 
-The listed ports will be excluded from filtering in the *Network Extension* mode. Pro oddělení hodnot použijte čárku nebo zalomení řádku.
+Uvedené porty budou z filtrování v režimu *Rozšíření sítě* vyloučeny. Pro oddělení hodnot použijte čárku nebo zalomení řádku.
 
 `network.extension.route.exclude`
 
-The listed routes will be excluded from filtering in the *Network Extension* mode. Nastavte routery pomocí IP adresy nebo cílového CIDR. Hodnoty oddělujte čárkami nebo zalomením řádků.
+Uvedené routery budou z filtrování v režimu *Rozšíření sítě* vyloučeny. Nastavte routery pomocí IP adresy nebo cílového CIDR. Hodnoty oddělujte čárkami nebo zalomením řádků.
 
 `network.extension.http.downgrade.bundleids`
 
@@ -27,7 +27,7 @@ Zde můžete zadat seznam aplikací, pro které bude protokol HTTP/2 v režimu f
 
 `network.extension.monterey.force.split.tunnel`
 
-Here you can prohibit AdGuard from using the "default route" which is enabled by default in the *Network Extension* mode on macOS Monterey. AdGuard uses "default route" to disable iCloud Private Relay and Protect Mail Activity, as it cannot operate in unison with them.
+Zde můžete AdGuardu zakázat používání "výchozí trasy", která je ve výchozím nastavení povolena v režimu *Rozšíření sítě* v systému MacOS Monterey. AdGuard používá "výchozí trasu" pro zakázání iCloud Private Relay a Protect Mail Activity, protože s nimi nemůže pracovat současně.
 
 Více informací o tomto problému najdete v [tomto článku](../icloud-private-relay).
 

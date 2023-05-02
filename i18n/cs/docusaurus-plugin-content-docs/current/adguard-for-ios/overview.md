@@ -49,7 +49,7 @@ Třetí část obrazovky *Ochrana Safari*. Pokud chcete vypnout blokování rekl
 
 [Modul DNS ochrana](https://adguard-dns.io/kb/general/dns-filtering/) zlepšuje vaše soukromí šifrováním provozu DNS. Na rozdíl od blokování obsahu v Safari funguje DNS ochrana v celém systému, tj. i mimo Safari, v aplikacích a dalších prohlížečích. Před použitím tohoto modulu jej musíte povolit. Můžete to udělat na domovské obrazovce klepnutím na ikonu štítu v horní části obrazovky nebo přechodem na kartu *Ochrana* → *DNS ochrana*.
 
-> Aby bylo možné spravovat nastavení DNS, vyžadují aplikace AdGuardu vytvoření lokální VPN. Provoz nebude směrován přes žádné vzdálené servery. Nevertheless, the system will ask you to confirm access permission.
+> Aby bylo možné spravovat nastavení DNS, vyžadují aplikace AdGuardu vytvoření lokální VPN. Provoz nebude směrován přes žádné vzdálené servery. Přesto vás systém požádá o potvrzení oprávnění k přístupu.
 
 ### DNS implementace {#dns-implementation}
 
@@ -73,7 +73,7 @@ V dolní části obrazovky je navíc možnost přidat vlastní DNS server. Podpo
 
 ![Obrazovka nastavení sítě *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/network_settings_en.jpeg)
 
-Uživatelé mohou na obrazovce Nastavení sítě také řešit zabezpečení DNS. *Filter mobile data* and *Filter Wi-Fi* enable or disable DNS protection for the respective network types. Dále ve *výjimkách Wi-Fi* můžete vyloučit konkrétní sítě Wi-Fi z ochrany DNS (můžete například chtít vyloučit svou domácí síť, pokud používáte [AdGuard Home](https://adguard.com/en/adguard-home/overview.html)).
+Uživatelé mohou na obrazovce Nastavení sítě také řešit zabezpečení DNS. *Filtrovat mobilní data* a *Filtrovat Wi-Fi* zapnout nebo vypnout ochranu DNS pro příslušné typy sítí. Dále ve *výjimkách Wi-Fi* můžete vyloučit konkrétní sítě Wi-Fi z ochrany DNS (můžete například chtít vyloučit svou domácí síť, pokud používáte [AdGuard Home](https://adguard.com/en/adguard-home/overview.html)).
 
 ### DNS filtrování {#dns-filtering}
 
@@ -83,7 +83,7 @@ Abyste získali přístup k tomuto nastavení, je třeba na obrazovce *Obecná n
 
 #### DNS filtry {#dns-filters}
 
-Podobně jako filtry v Safari jsou DNS filtry sadami pravidel zapsaných podle speciální [syntaxe](https://adguard-dns.io/kb/general/dns-filtering-syntax/). AdGuard bude monitorovat provoz DNS a blokovat požadavky, které odpovídají jednomu nebo více pravidlům. Můžete použít filtry, jako je [filtr AdGuard DNS](https://github.com/AdguardTeam/AdguardSDNSFilter), nebo přidat soubory hosts jako filtry. Lze přidávat více filtrů současně. To know how to do it, get acquainted with [this exhaustive manual](../solving-problems/system-wide-filtering).
+Podobně jako filtry v Safari jsou DNS filtry sadami pravidel zapsaných podle speciální [syntaxe](https://adguard-dns.io/kb/general/dns-filtering-syntax/). AdGuard bude monitorovat provoz DNS a blokovat požadavky, které odpovídají jednomu nebo více pravidlům. Můžete použít filtry, jako je [filtr AdGuard DNS](https://github.com/AdguardTeam/AdguardSDNSFilter), nebo přidat soubory hosts jako filtry. Lze přidávat více filtrů současně. Chcete-li vědět, jak na to, seznamte se s touto [vyčerpávající příručkou](../solving-problems/system-wide-filtering).
 
 #### Seznam povolených a seznam zakázaných {#allowlist-blocklist}
 

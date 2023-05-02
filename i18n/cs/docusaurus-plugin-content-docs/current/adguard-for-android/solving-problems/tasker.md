@@ -5,7 +5,7 @@ sidebar_position: 3
 
 Mnoho lidí si vybírá systém Android, protože si rádi přizpůsobují nastavení a chtějí mít své zařízení zcela pod kontrolou. A je zcela normální, že někteří uživatelé AdGuardu nejsou spokojeni s jeho výchozím chováním. Řekněme, že chcete, aby se ochrana při spuštění určité aplikace zastavila a po jejím zavření se znovu spustila. Toto je úkol pro aplikaci Tasker.
 
-## AdGuard interface
+## Rozhraní AdGuardu
 
 Existuje mnoho aplikací Tasker, např. [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&noprocess), [AutomateIt](https://play.google.com/store/apps/details?id=AutomateIt.mainPackage&noprocess) atd. AdGuard poskytuje rozhraní, které těmto aplikacím umožňuje nastavit různá automatizační pravidla.
 
@@ -41,7 +41,7 @@ Jste připraveni zašpinit si ruce? Zde jsou uvedeny akce, kterým bude AdGuard 
 `dns_server` přepíná mezi DNS servery, je třeba uvést další údaje:
 
  `server:adguard dns` přepne na server AdGuard DNS;
-> Note: the full list of supported provider names can be found inside AdGuard DNS settings under the "Custom DNS settings"
+> Poznámka: úplný seznam podporovaných názvů poskytovatelů naleznete v nastavení AdGuard DNS v části "Vlastní nastavení DNS"
 
  `server:custom` přepne na dříve přidaný server s názvem `custom`;
 
@@ -114,9 +114,9 @@ Dodatek: `password:*******`
 
 Název balíčku: `com.adguard.android`
 
-Class: `com.adguard.android.receiver.AutomationReceiver`
+Třída: `com.adguard.android.receiver.AutomationReceiver`
 
-> Note: Before v4.0 the class was called `com.adguard.android.receivers.AutomationReceiver` but then we changed its name to `com.adguard.android.receiver.AutomationReceiver`. If you used this feature, please pay attention and use the new name.
+> Poznámka: před verzí 4.0 se třída jmenovala `com.adguard.android.receivers.AutomationReceiver`, ale pak jsme její název změnili na `com.adguard.android.receiver.AutomationReceiver`. Pokud jste tuto funkci používali, věnujte jí pozornost a používejte nový název.
 
 ### Provedení bez oznámení
 

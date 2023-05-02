@@ -30,9 +30,9 @@ Chcete-li, aby Firefox důvěřoval certifikátu AdGuard, proveďte následujíc
 1. [Instalace a konfigurace](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB;
 > Na platformě Windows mohou majitelé zařízení **Samsung** potřebovat nainstalovat [tento nástroj](https://developer.samsung.com/mobile/android-usb-driver.html).
 2. Aktivace **Režimu pro vývojáře** a povolení **USB ladění**:
-    - Open the **Settings** app on your phone;
-    - Přejděte do sekce **Systém** (poslední položka v nabídce). In this section, find the sub-item **About phone**;
-    - Tap the **Build number** line 7 times. Poté se zobrazí oznámení **Nyní jste vývojářem** (v případě potřeby zadejte kód pro odemčení zařízení);
+    - V telefonu otevřete **Nastavení**;
+    - Přejděte do sekce **Systém** (poslední položka v nabídce). V této sekci vyhledejte podpoložku **Informace o telefonu**;
+    - Sedmkrát klepněte na řádek **Číslo sestavení**. Poté se zobrazí oznámení **Nyní jste vývojářem** (v případě potřeby zadejte kód pro odemčení zařízení);
     - Otevřete **Nastavení systému** → **Možnosti pro vývojáře** → přejeďte dolů a zapněte **USB ladění** → po pečlivém přečtení varování potvrďte, že je ladění povoleno v okně **Povolit ladění USB**.
 3. Nainstalujte prohlížeč [Firefox](https://www.mozilla.org/en-US/firefox/releases/) (hlavní verze);
 4. Otevřete **nastavení AdGuardu** → **Síť** → **HTTPS filtrování** → Instalovat certifikát do prohlížeče **Firefox** → **INSTALOVAT PRO STARŠÍ VERZE**;
