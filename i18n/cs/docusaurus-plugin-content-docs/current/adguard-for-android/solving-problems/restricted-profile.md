@@ -14,9 +14,9 @@ Problém můžete vyřešit třemi způsoby:
 > Upozorňujeme, že tento přístup je k dispozici od verze **AdGuardu v3.5 nightly 6**. Pokud používáte starší verzi, můžete získat nejnovější aktualizace [zde](https://adguard.com/adguard-android/overview.html).
 
 1. Aktivace **Režimu pro vývojáře** a povolení **USB ladění**:
-- Open the **Settings** app phone;
-- Přejděte do sekce **Systém** (poslední položka v nabídce). In this section, find the sub-item **About phone**;
-- Tap the **Build number** line 7 times. Poté se zobrazí oznámení **Nyní jste vývojářem** (v případě potřeby zadejte kód pro odemčení zařízení);
+- V telefonu otevřete **Nastavení**;
+- Přejděte do sekce **Systém** (poslední položka v nabídce). V této sekci vyhledejte podpoložku **Informace o telefonu**;
+- Sedmkrát klepněte na řádek **Číslo sestavení**. Poté se zobrazí oznámení **Nyní jste vývojářem** (v případě potřeby zadejte kód pro odemčení zařízení);
 - Otevřete **Nastavení systému** → **Možnosti pro vývojáře** → přejeďte dolů a zapněte **USB ladění** → po pečlivém přečtení varování potvrďte, že je ladění povoleno v okně **Povolit ladění USB**.
 
 > Pokud máte nějaké potíže nebo otázky, úplné pokyny naleznete [zde](https://developer.android.com/studio/debug/dev-options).

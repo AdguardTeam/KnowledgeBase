@@ -21,7 +21,7 @@ Funkce Soukromý DNS byla představena v Android Pie. Před verzí Q služba Sou
 
 ### Prohlížeče UC: UC Browser, UC Browser pro x86, UC Mini, UC Browser HD
 
-To be able to filter HTTPS traffic, AdGuard requires the user to add a certificate to the device's trusted user certificates. Prohlížeče z rodiny UC bohužel nedůvěřují uživatelským certifikátům, takže v nich AdGuard nemůže provádět filtrování HTTPS.
+Aby mohl AdGuard filtrovat přenosy HTTPS, musí uživatel přidat certifikát do důvěryhodných uživatelských certifikátů zařízení. Prohlížeče z rodiny UC bohužel nedůvěřují uživatelským certifikátům, takže v nich AdGuard nemůže provádět filtrování HTTPS.
 
 **Řešení**
 

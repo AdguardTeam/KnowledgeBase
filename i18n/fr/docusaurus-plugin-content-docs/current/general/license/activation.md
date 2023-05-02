@@ -48,7 +48,7 @@ soit double-cliquez sur l'icône AdGuard dans la barre d'état système :
 2. Cliquez sur **l'icône d'engrenage** dans le coin supérieur droit
 3. Cliquez sur **Licence...**
 
-![Allez dans Paramètres et Licence](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/macEn.png)
+![Go to Settings and License *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/macEn.png)
 
 4. Dans la fenêtre qui s'ouvre, appuyez sur le bouton **Activer**
 

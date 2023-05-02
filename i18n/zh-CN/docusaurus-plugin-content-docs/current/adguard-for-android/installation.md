@@ -12,13 +12,14 @@ sidebar_position: 2
 **可用磁盘空间**： 120MB。
 
 ## Installation
+
 虽然大部分用于安卓系统的应用程序可以通过谷歌商店分发，但是 AdGuard 不在里面。谷歌禁止通过谷歌商店分发网络层的广告拦截程序，即，在其他应用程序里屏蔽商业广告的应用程序。 [在我们的博客上](https://blog.adguard.com/en/google-removes-adguard-android-app-google-play/)可以了解更多关于谷歌限制性政策的相关信息。
 
 由于上述原因，您只可以手动安装适用于安卓的 AdGuard。 为了在移动设备上使用该应用程序，您需要执行以下操作。
 
 首先，请在操作系统设置里允许安装未知来源的应用程序。 以执行此操作请您：
 
-* 对于 Android 8+：开始下载 [AdGuard apk 文件](https://adguard.com/en/adguard-android/overview.html)（请参阅下一步），系统会提示您允许访问权限。 在打开的窗口点击**设置**并启用**允许此来源**。 然后继续安装。
+* For Android 8+: start downloading [AdGuard apk](https://adguard.com/download.html?auto=1) (see the next step), you'll be prompted to allow permission. 在打开的窗口点击**设置**并启用**允许此来源**。 然后继续安装。
 * 安卓 6 和 7：打开**设置**，在**系统和设备**部分选择**其他设置**。 启用**未知来源**并在系统警示窗口上点击**OK**。
 
 ![安装未知来源的应用程序 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/unknown_sources1.png)

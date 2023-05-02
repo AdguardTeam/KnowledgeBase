@@ -15,7 +15,7 @@ sidebar_position: 2
 
 ## Instalace
 
-Chcete-li do počítače nainstalovat AdGuard pro macOS, spusťte prohlížeč, do adresního řádku zadejte _adguard.com_ a na otevřené stránce stiskněte **Stáhnout**.
+Chcete-li do počítače nainstalovat AdGuard pro macOS, spusťte prohlížeč, do adresního řádku zadejte _adguard.com_ a stiskněte **Stáhnout** [na otevřené stránce](https://adguard.com/download.html?auto=1).
 
 ![Download the app *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/1.jpg)
 
@@ -64,26 +64,33 @@ Přejděte do sekce Aplikace. Vyhledejte tam AdGuard, klikněte na něj pravým 
 
 **Tento pokyn použijte pouze v případě, že víte, co děláte, nebo pokud vám naše služba podpory výslovně doporučila "pokročilou odinstalaci". Také nejprve proveďte všechny kroky z "obvyklé odinstalace".**
 
-* Poté odstraňte následující soubory AdGuardu:
-    * /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (složka)
-    * ~/Library/Preferences/com.adguard.mac.adguard.plist (soubor)
-    * ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac (složka)
-    * /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist (soubor)
-    * /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist (soubor)
-    * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log (soubor)
-    * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log (soubor)
+1. Poté odstraňte následující soubory AdGuardu:
+    - /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (složka)
+    - ~/Library/Preferences/com.adguard.mac.adguard.plist (soubor)
+    - ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac (složka)
+    - /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist (soubor)
+    - /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist (soubor)
+    - /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log (soubor)
+    - /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log (soubor)
 
-Za tímto účelem otevřete aplikaci Terminal, zadejte a proveďte následující příkazy:
+    Za tímto účelem otevřete aplikaci Terminal, zadejte a proveďte následující příkazy:
+    - `sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"`
+    - `rm -R "$HOME/Library/Application Support/com.adguard.mac.adguard"`
+    - `rm $HOME/Library/Preferences/com.adguard.mac.adguard.plist`
+    - `rm -R "$HOME/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac"`
+    - `find "$HOME/Library/Application Support" -name "com.adguard.browser_extension_host.nm.json" -delete`
+    - `sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist`
+    - `sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist`
+    - `sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log`
+    - `sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log`
 
-`sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"` `rm -R "$HOME/Library/Application Support/com.adguard.mac.adguard"` `rm $HOME/Library/Preferences/com.adguard.mac.adguard.plist` `rm -R "$HOME/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac"` `find "$HOME/Library/Application Support" -name "com.adguard.browser_extension_host.nm.json" -delete` `sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist` `sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist` `sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log` `sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log`
+1. Spusťte aplikaci **Monitor aktivity**.
+1. Pomocí vyhledávacího nástroje vyhledejte proces **cfprefsd**.
 
-* Spusťte aplikaci "Monitor aktivity".
-* Pomocí vyhledávacího nástroje vyhledejte proces **cfprefsd**.
+    ![Run Activity Monitor](https://cdn.adtidy.org/content/kb/ad_blocker/mac/22.jpg)
 
-![Run Activity Monitor](https://cdn.adtidy.org/content/kb/ad_blocker/mac/22.jpg)
+1. Ukončete proces, který je spuštěn pod uživatelem (ne ten, který je spuštěn pod root). Chcete-li tak učinit, klikněte na proces a poté klikněte na tlačítko X v levém horním rohu. Potvrďte to v dialogovém okně.
 
-* Ukončete proces, který je spuštěn pod uživatelem (ne ten, který je spuštěn pod root). Chcete-li tak učinit, klikněte na proces a poté klikněte na tlačítko X v levém horním rohu. Potvrďte to v dialogovém okně.
-
-![Confirm](https://cdn.adtidy.org/content/kb/ad_blocker/mac/33.jpg)
+    ![Confirm](https://cdn.adtidy.org/content/kb/ad_blocker/mac/33.jpg)
 
 AdGuard je nyní z Macu odstraněn.

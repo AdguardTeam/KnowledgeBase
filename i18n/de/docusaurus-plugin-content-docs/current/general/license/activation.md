@@ -48,7 +48,7 @@ or double-click the AdGuard icon in the system tray:
 2. Klicken Sie auf **das Zahnradsymbol** in der oberen rechten Ecke.
 3. Klicken Sie auf **Lizenz...**
 
-![Zu Einstellungen und Lizenz gehen](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/macEn.png)
+![Go to Settings and License *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/macEn.png)
 
 4. Drücken Sie im geöffneten Fenster die Schaltfläche **Aktivieren**
 

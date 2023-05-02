@@ -15,7 +15,7 @@ sidebar_position: 2
 
 ## 설치 방법
 
-컴퓨터에 Mac용 AdGuard를 설치하려면 브라우저를 열고 주소 표시 줄에 _adguard.com_을 입력한 후 열리는 페이지에서 **다운로드**를 누릅니다.
+To install AdGuard for macOS on your computer, launch your browser, type _adguard.com_ in the address bar, and press **Download** [on the page that opens](https://adguard.com/download.html?auto=1).
 
 ![앱 다운로드 *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/1.jpg)
 
@@ -64,26 +64,33 @@ Finder 앱을 엽니다.
 
 **고객 지원 팀에서 특별히 '고급 제거'를 권장하거나 고급 제거에 익숙한 경우에만 이 지침을 사용하십시오. 또한 '일반 제거'의 모든 단계를 먼저 수행하십시오.**
 
-* 그다음에는 다음 AdGuard 파일을 삭제하세요.
-    * /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (폴더)
-    * ~/Library/Preferences/com.adguard.mac.adguard.plist (파일)
-    * ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac (폴더)
-    * /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist (파일)
-    * /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist (파일)
-    * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log (파일)
-    * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log (파일)
+1. After that, delete following AdGuard files:
+    - /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (folder)
+    - ~/Library/Preferences/com.adguard.mac.adguard.plist (file)
+    - ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac (folder)
+    - /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist (file)
+    - /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist (file)
+    - /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log (file)
+    - /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log (file)
 
-이 파일을 삭제하시려면 터미널 앱을 열고 다음 명령을 입력하고 실행하십시오.
+    To do so, open the Terminal app, then enter and execute the following commands:
+    - `sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"`
+    - `rm -R "$HOME/Library/Application Support/com.adguard.mac.adguard"`
+    - `rm $HOME/Library/Preferences/com.adguard.mac.adguard.plist`
+    - `rm -R "$HOME/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac"`
+    - `find "$HOME/Library/Application Support" -name "com.adguard.browser_extension_host.nm.json" -delete`
+    - `sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist`
+    - `sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist`
+    - `sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log`
+    - `sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log`
 
-`sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"` `rm -R "$HOME/Library/Application Support/com.adguard.mac.adguard"` `rm $HOME/Library/Preferences/com.adguard.mac.adguard.plist` `rm -R "$HOME/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac"` `find "$HOME/Library/Application Support" -name "com.adguard.browser_extension_host.nm.json" -delete` `sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist` `sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist` `sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log` `sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log`
+1. Run the **Activity Monitor** app.
+1. 검색 도구를 사용하여 **cfprefsd** 프로세스를 찾습니다.
 
-* '활동 모니터' 앱을 실행합니다.
-* 검색 도구를 사용하여 **cfprefsd** 프로세스를 찾습니다.
+    ![활동 모니터 실행](https://cdn.adtidy.org/content/kb/ad_blocker/mac/22.jpg)
 
-![활동 모니터 실행](https://cdn.adtidy.org/content/kb/ad_blocker/mac/22.jpg)
+1. 사용자로 실행중인 프로세스를 중지합니다 (루트에서 실행되는 프로세스 제외). 프로세스를 중지하려면 프로세스를 클릭한 후 왼쪽 상단의 X를 클릭합니다. 대화 창에서 종료를 합니다.
 
-* 사용자로 실행중인 프로세스를 중지합니다 (루트에서 실행되는 프로세스 제외). 프로세스를 중지하려면 프로세스를 클릭한 후 왼쪽 상단의 X를 클릭합니다. 대화 창에서 종료를 합니다.
-
-![확인](https://cdn.adtidy.org/content/kb/ad_blocker/mac/33.jpg)
+    ![확인](https://cdn.adtidy.org/content/kb/ad_blocker/mac/33.jpg)
 
 이제 AdGuard가 맥북에서 제거되었습니다.

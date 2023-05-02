@@ -48,7 +48,7 @@ or double-click the AdGuard icon in the system tray:
 2. 오른쪽 상단 모서리에 있는 **톱니바퀴 아이콘**을 클릭합니다.
 3. **라이선스**를 누릅니다.
 
-![설정 및 라이선스로 이동](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/macEn.png)
+![Go to Settings and License *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/macEn.png)
 
 4. 열린 창에서 **활성화** 버튼을 누릅니다.
 

@@ -15,7 +15,7 @@ sidebar_position: 2
 
 ## Установка
 
-Чтобы установить AdGuard для macOS на компьютер, откройте браузер, наберите в адресной строке _adguard.com_ и на открывшейся веб-странице нажмите кнопку **Скачать**.
+To install AdGuard for macOS on your computer, launch your browser, type _adguard.com_ in the address bar, and press **Download** [on the page that opens](https://adguard.com/download.html?auto=1).
 
 ![Скачайте приложение *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/1.jpg)
 
@@ -64,26 +64,33 @@ sidebar_position: 2
 
 **Используйте эту инструкцию, только если вы точно знаете, что делаете, или если наша команда поддержки рекомендовала вам именно «продвинутое удаление». Кроме того, сначала выполните все шаги из «обычного удаления».**
 
-* После этого удалите следующие файлы AdGuard:
-    * /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (папка)
-    * ~/Library/Preferences/com.adguard.mac.adguard.plist (файл)
-    * ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac (папка)
-    * /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist (файл)
-    * /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist (файл)
-    * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log (файл)
-    * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log (файл)
+1. After that, delete following AdGuard files:
+    - /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (folder)
+    - ~/Library/Preferences/com.adguard.mac.adguard.plist (file)
+    - ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac (folder)
+    - /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist (file)
+    - /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist (file)
+    - /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log (file)
+    - /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log (file)
 
-Для этого введите и выполните следующие команды через Терминал:
+    To do so, open the Terminal app, then enter and execute the following commands:
+    - `sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"`
+    - `rm -R "$HOME/Library/Application Support/com.adguard.mac.adguard"`
+    - `rm $HOME/Library/Preferences/com.adguard.mac.adguard.plist`
+    - `rm -R "$HOME/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac"`
+    - `find "$HOME/Library/Application Support" -name "com.adguard.browser_extension_host.nm.json" -delete`
+    - `sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist`
+    - `sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist`
+    - `sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log`
+    - `sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log`
 
-`sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"` `rm -R "$HOME/Library/Application Support/com.adguard.mac.adguard"` `rm $HOME/Library/Preferences/com.adguard.mac.adguard.plist` `rm -R "$HOME/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac"` `find "$HOME/Library/Application Support" -name "com.adguard.browser_extension_host.nm.json" -delete` `sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist` `sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist` `sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log` `sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log`
+1. Run the **Activity Monitor** app.
+1. Через поиск найдите процесс **’cfprefsd’**.
 
-* Запустите приложение «Мониторинг системы».
-* Через поиск найдите процесс **’cfprefsd’**.
+    ![Запустите приложение «Мониторинг системы»](https://cdn.adtidy.org/content/kb/ad_blocker/mac/22.jpg)
 
-![Запустите приложение «Мониторинг системы»](https://cdn.adtidy.org/content/kb/ad_blocker/mac/22.jpg)
+1. Остановите процесс, запущенный от имени пользователя. Для этого нажмите на него, а после нажмите на X в левом верхнем углу. Подтвердите завершение процесса.
 
-* Остановите процесс, запущенный от имени пользователя. Для этого нажмите на него, а после нажмите на X в левом верхнем углу. Подтвердите завершение процесса.
-
-![Подтвердите](https://cdn.adtidy.org/content/kb/ad_blocker/mac/33.jpg)
+    ![Подтвердите](https://cdn.adtidy.org/content/kb/ad_blocker/mac/33.jpg)
 
 Теперь AdGuard удалён с вашего компьютера.

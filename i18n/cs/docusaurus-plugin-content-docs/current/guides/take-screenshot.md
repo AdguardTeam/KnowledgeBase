@@ -1,5 +1,5 @@
 ---
-title: How to take a screenshot
+title: Jak pořídit snímek obrazovky
 sidebar_position: 5
 ---
 

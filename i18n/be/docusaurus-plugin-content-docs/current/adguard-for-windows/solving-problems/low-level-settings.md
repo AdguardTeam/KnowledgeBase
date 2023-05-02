@@ -41,51 +41,9 @@ Otherwise, AdGuard will filter all the traffic on the fly, without redirection. 
 
 Enable this option to make the main AdGuard window open after the system is loaded. Note that it doesn't affect whether the actual filtering service is launched or not, this setting is located in *Settings → General Settings*
 
-### Enable filtering at system start-up
-
-Starting from v7.12, by default, AdGuard's service does not filter traffic after OS startup if the option Launch AdGuard at system start-up is disabled. In other words, the AdGuard's service is started in “idle” mode. Enable this option to make AdGuard filter traffic even if the app is not launched.
-
-*Note that before v7.12 the AdGuard's service started in filtering mode by default (even if the *Launch AdGuard at system start-up* was disabled). If you were satisfied with the old behavior, enable this option.*
-
 ### Filter localhost
 
 If you want AdGuard to filter loopback connections, check the box. This option will always be on if you have AdGuard VPN installed, because otherwise it won't be able to work.
-
-### Exclude specified IP ranges from filtering
-
-If you don't want AdGuard to filter particular subnets, enable this feature and specify the IP ranges in the CIDR notation (e.g. 98.51.100.14/24) in the **IP ranges excluded from filtering** section below.
-
-### IP ranges excluded from filtering
-
-Specify here any number of IP ranges excluded from filtering, using CIDR notation, one per line. The listed IP ranges will be excluded from filtering, if the corresponding setting is enabled. To add comments, use '//'. Empty lines are ignored.
-
-### Add an extra space to the plain HTTP request
-
-Adds extra space between the HTTP method and the URL and removes space after the "Host:" field to avoid deep packet inspection. For instance, the request 
-
-`GET /foo/bar/ HTTP/1.1
-Host: example.org` 
-
-will be converted to 
-
-`GET  /foo/bar/ HTTP/1.1
-Host:example.org`
-
-This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
-
-### Adjust size of fragmentation of initial TLS packet
-
-Specifies the size of the TCP packet fragmentation, avoiding deep packet inspection. This option only affects secured HTTPS traffic. 
-
-If this option is enabled, AdGuard splits the initial TLS packet (the ClientHello packet) into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole initial TLS packet.
-
-Acceptable values: 1–1500. If invalid size is specified, the value selected by the system will be used. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
-
-### Plain HTTP request fragment size
-
-Adjusts the size of the HTTP request fragmentation. This option only affects plain HTTP traffic. If this option is enabled, AdGuard splits the initial packet into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole original packet.
-
-Acceptable values: 1–1500. If invalid size is specified, the value selected by the system will be used. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
 ### Enable HAR writing
 

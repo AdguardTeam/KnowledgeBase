@@ -7,7 +7,7 @@ sidebar_position: 3
 
 Chcete-li aktivovat licenci, přejděte do části *Licence* svého produktu AdGuard a vyhledejte pole *Přihlásit se* nebo tlačítko *Aktivovat*. K přihlášení použijte e-mail a heslo svého AdGuard účtu. Pokud ještě nemáte účet, bude vám nabídnuto jeho vytvoření.
 
-> Note: To activate a license via the AdGuard account, a valid license with at least one free slot is required. Pokud je vaše licence již použita na maximálním počtu zařízení, můžete ji [upgradovat](../payment-options#upgrade) nebo [přenést z jednoho zařízení do jiného](../transfer).
+> Poznámka: K aktivaci licence prostřednictvím účtu AdGuard je nutná platná licence s alespoň jedním volným slotem. Pokud je vaše licence již použita na maximálním počtu zařízení, můžete ji [upgradovat](../payment-options#upgrade) nebo [přenést z jednoho zařízení do jiného](../transfer).
 
 Případně můžete k aktivaci použít [licenční klíč](../what-is#license-key).
 
@@ -48,7 +48,7 @@ nebo dvakrát klikněte na ikonu AdGuardu na hlavním panelu:
 2. Klikněte na **ikonu ozubeného kola** v pravém horním rohu
 3. Klikněte na položku **Licence**
 
-![Go to Settings and License](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/macEn.png)
+![Go to Settings and License *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/macEn.png)
 
 4. V otevřeném okně stiskněte tlačítko **Aktivovat**
 

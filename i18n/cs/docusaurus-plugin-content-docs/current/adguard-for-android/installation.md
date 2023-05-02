@@ -12,13 +12,14 @@ sidebar_position: 2
 **Volné místo na disku:** 120 MB.
 
 ## Instalace
+
 Většina aplikací pro Android je distribuována prostřednictvím služby Google Play. AdGuard zde však není prezentován, protože společnost Google zakazuje distribuci blokátorů reklam na úrovni sítě prostřednictvím služby Google Play, tj. aplikace, které blokují reklamy v jiných aplikacích. Další informace o restriktivní politice Google najdete v [našem blogu](https://blog.adguard.com/en/google-removes-adguard-android-app-google-play/).
 
 Proto můžete AdGuard pro Android nainstalovat pouze ručně. Chcete-li aplikaci používat v mobilním zařízení, musíte provést následující kroky.
 
 Nejprve povolte instalaci aplikací z neznámých zdrojů v nastavení operačního systému zařízení. K tomu je třeba:
 
-* Pro Android 8+: začněte stahovat [AdGuard apk](https://adguard.com/en/adguard-android/overview.html) (viz další krok), budete vyzváni k povolení oprávnění. Klepněte na **Nastavení** v otevřeném okně a zapněte možnost **Povolit z tohoto zdroje**. Poté pokračujte v instalaci.
+* Pro Android 8+: začněte stahovat [AdGuard apk](https://adguard.com/download.html?auto=1) (viz další krok), budete vyzváni k povolení oprávnění. Klepněte na **Nastavení** v otevřeném okně a zapněte možnost **Povolit z tohoto zdroje**. Poté pokračujte v instalaci.
 * Pro Android 6 a 7: otevřete **Nastavení** a poté vyberte **Další nastavení** v **Systém a zařízení**. Zapněte **Neznámé zdroje** a stiskněte **OK** v okně s varováním.
 
 ![Instalace aplikací z neznámých zdrojů *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/unknown_sources1.png)

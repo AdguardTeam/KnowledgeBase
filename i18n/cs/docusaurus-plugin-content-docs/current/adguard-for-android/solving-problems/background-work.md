@@ -3,7 +3,7 @@ title: Jak chránit AdGuard před ukončením systémem
 sidebar_position: 9
 ---
 
-In some cases, apps won't stay in the background ("alive" or in a sleep mode) due to the Android OS optimization function, or the so-called "battery save mode" — this function can kill background apps. Může být nepohodlné je znovu spouštět pokaždé, když se zavřou. Chcete-li se vyhnout ukončení aplikace na pozadí, musíte postupovat podle kroků, které jsme popsali zvlášť pro každého výrobce (verzi) operačního systému Android. Všimněte si, že pokyny různých výrobců jsou většinou velmi podobné.
+V některých případech aplikace nezůstanou na pozadí ("naživu" nebo v režimu spánku) kvůli optimalizační funkci operačního systému Android nebo takzvanému "režimu úspory baterie" — tato funkce může aplikace na pozadí ukončit. Může být nepohodlné je znovu spouštět pokaždé, když se zavřou. Chcete-li se vyhnout ukončení aplikace na pozadí, musíte postupovat podle kroků, které jsme popsali zvlášť pro každého výrobce (verzi) operačního systému Android. Všimněte si, že pokyny různých výrobců jsou většinou velmi podobné.
 
 ## Asus
 
@@ -129,7 +129,7 @@ Chcete-li nastavit práci AdGuardu na pozadí pro zařízení Xiaomi, měli byst
 
 - Přejděte na **Baterie**
 
-- Select the **battery saver** app
+- Vyberte **spořič baterie**
 
 - Vyhledejte a vyberte **AdGuard**
 
@@ -147,7 +147,7 @@ Chcete-li nastavit práci AdGuardu na pozadí pro zařízení Xiaomi, měli byst
 
 ## Samsung
 
-V mnoha Samsung zařízeních se aplikace nepoužívaná po dobu 3 dnů nemůže spustit z pozadí. Abyste tomu zabránili, měli byste vypnout možnosti **Adaptivní baterie** a **Uspat aplikace**. Note that after an app or OS update, these settings often revert to their default values and will need to be turned off again.
+V mnoha Samsung zařízeních se aplikace nepoužívaná po dobu 3 dnů nemůže spustit z pozadí. Abyste tomu zabránili, měli byste vypnout možnosti **Adaptivní baterie** a **Uspat aplikace**. Upozorňujeme, že po aktualizaci aplikace nebo operačního systému se tato nastavení často vrátí na výchozí hodnoty a je třeba je znovu vypnout.
 
 ### Android 11+
 
@@ -219,7 +219,7 @@ Otevřete **Nastavení** telefonu → **Baterie** → **Omezení používání n
 
 ### Starší zařízení Samsung
 
-For early Samsung devices, there is no huge need for setting up the background operation, but if in your case the AdGuard app is getting closed or disappears from the recent tasks after a while, do the following:
+U prvních zařízení Samsung není potřeba nastavovat operaci na pozadí. Pokud se ve vašem případě aplikace AdGuard po chvíli zavírá nebo mizí z nedávných úloh, proveďte následující kroky:
 
  - Klepněte na tlačítko **Nedávné úlohy**, klepněte na ikonu **Další nastavení**. Mělo by to vypadat takto:
 
@@ -235,7 +235,7 @@ For early Samsung devices, there is no huge need for setting up the background o
 
 ## Huawei
 
-Huawei and their Android customization **EMUI** belongs to the most troublesome on the market with respect to non-standard background process limitations. Ve výchozím nastavení se prakticky všechny aplikace, které pracují na pozadí, potýkají s problémy a nakonec se přestanou fungovat.
+Společnost Huawei a její přizpůsobení systému Android **EMUI** patří k nejproblematičtějším na trhu, pokud jde o nestandardní omezení procesů na pozadí. Ve výchozím nastavení se prakticky všechny aplikace, které pracují na pozadí, potýkají s problémy a nakonec se přestanou fungovat.
 
 ### Spouštění aplikací na některých zařízeních s EMUI 8, 9 a 10 (Huawei P20, Huawei P20 Lite, Huawei Mate 10…)
 
@@ -265,7 +265,7 @@ Pro spolehlivé procesy na pozadí může být také nutné odinstalovat **Power
 
 Společnost Huawei je při ukončování aplikací ve svých zařízeních velmi vynalézavá. Kromě všech níže popsaných nestandardních opatření pro správu napájení představili v systému Android Pie aplikaci pro ukončování úloh integrovanou přímo do rozhraní EMUI 9.
 
-Jmenuje se **PowerGenie** a ukončuje všechny aplikace, které nejsou na seznamu povolených. Na jejich předdefinovaný seznam povolených nelze přidávat vlastní aplikace. This means there is no other way to achieve proper app functionality on Huawei than uninstalling PowerGenie.
+Jmenuje se **PowerGenie** a ukončuje všechny aplikace, které nejsou na seznamu povolených. Na jejich předdefinovaný seznam povolených nelze přidávat vlastní aplikace. To znamená, že neexistuje jiný způsob, jak opravit správnou funkčnost aplikací Huawei, než odinstalovat PowerGenie.
 
 Bohužel se jedná o systémovou aplikaci, kterou lze plně odinstalovat pouze pomocí ADB (Android Debug Bridge).
 
@@ -359,7 +359,7 @@ Zařízení Nokia se systémem Android 9+ mají **vypnutý spořič energie Even
 
 ### Nokia 3.1 a 5.1
 
-V těchto zařízeních je k dispozici nástroj **DuraSpeed**, který ukončuje všechny aplikace na pozadí. Nelze ho odinstalovat ani zakázat běžnými prostředky. Tyto akce vyžadují ADB, a i když to zakážete, DuraSpeed se při restartu znovu aktivuje. You need a tasker app like [MacroDroid](https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid) for automatic DuraSpeed's disabling.
+V těchto zařízeních je k dispozici nástroj **DuraSpeed**, který ukončuje všechny aplikace na pozadí. Nelze ho odinstalovat ani zakázat běžnými prostředky. Tyto akce vyžadují ADB, a i když to zakážete, DuraSpeed se při restartu znovu aktivuje. K automatickému vypnutí DuraSpeed potřebujete aplikaci Tasker, například [MacroDroid](https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid).
 
 1) [Nainstalujte ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) do vašeho PC;
 
@@ -390,7 +390,7 @@ V těchto zařízeních je k dispozici nástroj **DuraSpeed**, který ukončuje 
 
 - Klepněte na nabídku v pravém horním rohu → **Zobrazit systémové aplikace**.
 
-Find **Power saver app** on the list, select it and tap **Force close**. It will remain stopped for a while but will restart at some point.
+Vyhledejte v seznamu aplikaci **Spořič energie**, vyberte ji a klepněte na **Vynutit ukončení**. Na chvíli se ukončí, ale v určitém okamžiku se znovu spustí.
 
 Od této chvíle by měl AdGuard fungovat normálně a používat standardní optimalizace baterie Androidu, dokud se nerestartuje spořič energie.
 
@@ -410,7 +410,7 @@ Alternativní, trvalejší řešení pro technicky zdatnější uživatele:
 
 ## Oppo
 
-Sometimes background services are being killed (including accessibility services, which then need re-enabling) when you turn the screen off. Zatím to lze obejít takto:
+Někdy se při každém vypnutí obrazovky ukončují služby na pozadí (včetně služeb pro přístupnost, které je pak třeba znovu povolit). Zatím to lze obejít takto:
 
 Přejděte na **Centrum zabezpečení** → klepněte na **Oprávnění k ochraně soukromí** → **Správce spouštění** a povolte spouštění aplikace AdGuard na pozadí.
 
@@ -440,7 +440,7 @@ Nejproblematičtější jsou zařízení s operačním systémem OxygenOS, kter�
 
  ![Onepluslock *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/android/onepluslock.png)
 
-- Lock AdGuard app:
+- Uzamkněte aplikaci AdGuard:
 
 ![Oneplusdots *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/android/oneplusdots.png)
 
@@ -486,7 +486,7 @@ V systému Android 11+ je na stejné obrazovce s režimem STAMINA nastavení s n
 
 Je také třeba AdGuard vyjmout z funkce úspory energie:
 
-**System settings** ​→ **Apps & Notifications** ​→ **Advanced** ​→ **Special app access** ​→ **Power saving feature** → Switch AdGuard to **Excepted**
+**Nastavení systému** ​→ **Aplikace a oznámení** ​→ **Pokročilé** ​→ **Speciální přístup aplikací** ​→ **Funkce šetření baterie** → Přepnout AdGuard na **Vyjmuto**
 
 ## Wiko
 
@@ -498,7 +498,7 @@ Zařízení Wiko jsou problematická z hlediska nestandardních optimalizací pr
 
 ## Zařízení Pixel/Nexus/Essential
 
-Android stock OS normally does not conflict with apps working in the background, but if you are facing any issues you will need to switch on the **Always-on VPN** mode.
+Čistý operační systém Android obvykle není v konfliktu s aplikacemi pracujícími na pozadí, ale pokud se potýkáte s nějakými problémy, musíte zapnout režim **Trvalá síť VPN**.
 
  - Přejděte do **Nastavení** → **Síť a Internet**
 

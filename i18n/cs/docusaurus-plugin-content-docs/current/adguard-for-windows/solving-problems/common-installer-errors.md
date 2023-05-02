@@ -42,7 +42,7 @@ Pokud se vám zobrazil tento chybový kód, je pravděpodobné, že jste tak či
 
 - Okno instalačního programu nezavírejte. Po dokončení instalace se zavře automaticky.
 
-- Pokud se během instalace zobrazí dialogové okno, stiskněte tlačítko "Ano" a udělte instalačnímu programu požadovaná oprávnění. Clicking "No" will cancel the installation.
+- Pokud se během instalace zobrazí dialogové okno, stiskněte tlačítko "Ano" a udělte instalačnímu programu požadovaná oprávnění. Kliknutím na tlačítko "Ne" instalaci zrušíte.
 
 - Během instalace nespouštějte jiné procesy.
 
@@ -62,7 +62,7 @@ Chyba zní děsivěji, než ve skutečnosti je. Ve skutečnosti se jedná o pom�
 
 - Získejte plná oprávnění na jednotce pro instalaci. Je možné, že k chybě 1603 dochází, protože nemáte úplná oprávnění k umístění souboru. Také to není tak snadné jako některá jiná řešení:
 
-    1) Open *File Explorer*, right-click the drive containing the installation location and select *Properties*. 2) Přejděte na *Zabezpečení* a klikněte na *Upravit*. 3) Single-click *SYSTEM* and ensure that the *Allow* box of every item in *Permissions for SYSTEM* is checked (if it is checkable). Stejnou kontrolu proveďte i pro *Správce*. 4) Click *OK* to go back to *Properties* dialog. Poté klikněte na *Pokročilé*. 5) Click *Change Permissions*. 6) Na kartě *Oprávnění* dvakrát klikněte na *Správci*. 7) Vyberte *Tato složka, podsložky a soubory* pro pole *Použít pro* a zaškrtněte všechna dostupná *Základní oprávnění*. Poté stiskněte *OK*. 8) Proveďte stejnou operaci jako výše (od bodu 7) pro *SYSTÉM*. 9) Click *OK* all the way out. Zkuste AdGuard nainstalovat znovu.
+    1) Otevřete *Průzkumník souborů*, klepněte pravým tlačítkem myši na jednotku obsahující umístění instalace a vyberte *Vlastnosti*. 2) Přejděte na *Zabezpečení* a klikněte na *Upravit*. 3) Klikněte jednou myší na *SYSTÉM* a ujistěte se, že je *zaškrtnuto* políčko u každé položky v části *Oprávnění pro SYSTÉM* (pokud je možné je zaškrtnout). Stejnou kontrolu proveďte i pro *Správce*. 4) Kliknutím na *OK* se vrátíte do dialogu *Vlastnosti*. Poté klikněte na *Pokročilé*. 5) Klikněte na *Změnit oprávnění*. 6) Na kartě *Oprávnění* dvakrát klikněte na *Správci*. 7) Vyberte *Tato složka, podsložky a soubory* pro pole *Použít pro* a zaškrtněte všechna dostupná *Základní oprávnění*. Poté stiskněte *OK*. 8) Proveďte stejnou operaci jako výše (od bodu 7) pro *SYSTÉM*. 9) Úplně nakonec klikněte na *OK*. Zkuste AdGuard nainstalovat znovu.
 
 ### Chyba 1618: Již probíhá jiná instalace {#error-1618}
 

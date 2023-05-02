@@ -11,7 +11,7 @@ Chcete-li nainstalovat Blokátor obsahu AdGuard z Google Play, vyhledejte _Blok�
 
 > Poznámka: Blokátor obsahu AdGuard funguje ve dvou prohlížečích.: [Yandex Browser](https://browser.yandex.com/) a [Samsung Internet Browser](https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser).
 
-After the installation is completed, tap _Open_ to run the app.
+Po dokončení instalace klepněte na _Otevřít_ a aplikaci spusťte.
 
 ![Nainstalovaný blokátor obsahu *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_play_market_installed.jpg)
 

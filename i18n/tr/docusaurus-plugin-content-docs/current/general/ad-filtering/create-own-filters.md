@@ -98,7 +98,7 @@ Cosmetic rules are based on using a special language named CSS, which every brow
 | Name                         | CSS selector                     | Description                                                                                                                                                                               |
 | ---------------------------- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ID selector                  | `#banners`                       | Matches all elements with `id` attribute equal to `banners`.<br/>![](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_id_selector.png)                                  |
-| Class selector               | `.banners`                       | Matches all elements with `class` attribute containing `banners`.<br/>![](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_selector.png)                          |
+| Class selector               | `.banner`                        | Matches all elements with `class` attribute containing `banners`.<br/>![](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_selector.png)                          |
 | Attribute selector           | `div[class="banners"]`           | Matches all `div` elements with `class` attribute **exactly equal** to `banners`.<br/>![](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_attr.png)              |
 | Attribute substring selector | `div[class^="advert1"]`          | Matches all `div` elements which `class` attribute **starts with** the `advert1` string.<br/>![](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_attr_start.png) |
 | Attribute substring selector | `div[class$="banners_ads"]`      | Matches all `div` elements which `class` attribute **ends with** the `banners_ads` string.<br/>![](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_attr_end.png) |
@@ -2197,7 +2197,7 @@ div:matches-property(memoizedProps.key="null")
 div:matches-property(memoizedProps._owner.src=/ad/)
 ```
 
-> **For filters maintainers:**
+> **Filtre yöneticileri için:**
 > 
 > To check properties of a specific element, do the following: 1. Inspect the page element or select it in `Elements` tab of browser DevTools. 2. Run `console.dir($0)` in `Console` tab.
 
@@ -2788,7 +2788,7 @@ where `pattern` is pretty much the same as [`pattern` of the basic rules](#basic
 > 
 > Rules with the `$url` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**.
 
-## Information for filters maintainers
+## Filtre yöneticileri için bilgiler
 
 If you maintain a third-party filter that is known to AdGuard, you might be interested in the information presented in this section. Please note that hints will be applied to registered filters only. The filter is considered to be registered and known by AdGuard, if it is present in the [known filters index](https://filters.adtidy.org/extension/chromium/filters.json). If you want your filter to be registered, please file an issue to [AdguardFilters repo](https://github.com/AdguardTeam/AdguardFilters).
 
@@ -2840,7 +2840,7 @@ Filter URL: `https://example.org/path/filter.txt`
 
 #### Conditions {#conditions-directive}
 
-Filters maintainers can use conditions to supply different rules depending on the ad blocker type. When an adblocker encounters an `!#if` directive, followed eventually by an `!#endif` directive, it will compile the code inside of the directives block only if the specified condition is true. Condition supports all the basic logical operators.
+Filtre yöneticileri, reklam engelleyici türüne bağlı olarak farklı kurallar sağlamak için koşulları kullanabilir. When an adblocker encounters an `!#if` directive, followed eventually by an `!#endif` directive, it will compile the code inside of the directives block only if the specified condition is true. Condition supports all the basic logical operators.
 
 > A conditional directive beginning with an `!#if` directive must explicitly be terminated with an `!#endif` directive.
 

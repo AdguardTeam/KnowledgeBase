@@ -17,7 +17,7 @@ V závislosti na operačním systému vašeho zařízení (Windows/Mac/Android/i
 
 1. Poznamenejte si IP adresu vašeho PC s nainstalovaným AdGuardem.
 
-2. Make sure the AdGuard protection is enabled. Poté zaškrtněte políčko **Použít AdGuard jako HTTP proxy** na kartě **Síť** v jeho nastavení.
+2. Zkontrolujte, zda je ochrana AdGuard zapnuta. Poté zaškrtněte políčko **Použít AdGuard jako HTTP proxy** na kartě **Síť** v jeho nastavení.
 
 3. Na stejném zařízení s AdGuardem použijte tento odkaz pomocí libovolného prohlížeče: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
@@ -61,9 +61,9 @@ V závislosti na operačním systému vašeho zařízení (Windows/Mac/Android/i
 
 1. Poznamenejte si IP adresu vašeho PC s nainstalovaným AdGuardem.
 
-2. Make sure the AdGuard protection is enabled. Poté přejděte do **Nastavení** → **Síť** → **HTTP proxy** a zaškrtněte políčko **Použít AdGuard jako HTTP proxy**.
+2. Zkontrolujte, zda je ochrana AdGuard zapnuta. Poté přejděte do **Nastavení** → **Síť** → **HTTP proxy** a zaškrtněte políčko **Použít AdGuard jako HTTP proxy**.
 
-3. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+3. Na stejném počítači s AdGuardem použijte tento odkaz pomocí libovolného prohlížeče: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
 4. Klepněte na tlačítko **Stáhnout**.
 
@@ -93,9 +93,9 @@ V závislosti na operačním systému vašeho zařízení (Windows/Mac/Android/i
 
 1. Poznamenejte si IP adresu vašeho PC s nainstalovaným AdGuardem.
 
-2. Make sure the AdGuard protection is enabled. Poté zaškrtněte políčko **Použít AdGuard jako HTTP proxy** na kartě **Síť** v jeho nastavení.
+2. Zkontrolujte, zda je ochrana AdGuard zapnuta. Poté zaškrtněte políčko **Použít AdGuard jako HTTP proxy** na kartě **Síť** v jeho nastavení.
 
-3. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+3. Na stejném počítači s AdGuardem použijte tento odkaz pomocí libovolného prohlížeče: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
 4. Klepněte na tlačítko **Stáhnout**.
 
@@ -113,9 +113,9 @@ V závislosti na operačním systému vašeho zařízení (Windows/Mac/Android/i
 
 1. Poznamenejte si IP adresu vašeho PC s nainstalovaným AdGuardem.
 
-2. Make sure the AdGuard protection is enabled. Poté zaškrtněte políčko **Použít AdGuard jako HTTP proxy** na kartě **Síť** v jeho nastavení.
+2. Zkontrolujte, zda je ochrana AdGuard zapnuta. Poté zaškrtněte políčko **Použít AdGuard jako HTTP proxy** na kartě **Síť** v jeho nastavení.
 
-3. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+3. Na stejném počítači s AdGuardem použijte tento odkaz pomocí libovolného prohlížeče: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
 4. Klepněte na tlačítko **Stáhnout**.
 

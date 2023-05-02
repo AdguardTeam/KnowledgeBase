@@ -300,7 +300,7 @@ Omezení požadavků třetích stran a vlastních požadavků. Požadavek třet�
 
 > **Poznámka**
 > 
-> Aby mohla být žádost třetí strany považována za takovou, měla by splňovat jednu z následujících podmínek: 1. Its referrer is not a subdomain of the target domain or vice versa. Např. požadavek na `subdomain.example.org` z `example.org` není požadavek třetí strany. 1. Její záhlaví `Sec-Fetch-Site` je nastaveno na `cross-site`. Pokud existuje modifikátor `$third-party`, pravidlo se použije pouze na požadavky třetích stran.
+> Aby mohla být žádost třetí strany považována za takovou, měla by splňovat jednu z následujících podmínek: 1. Její odkazující doména není subdoménou cílové domény nebo naopak. Např. požadavek na `subdomain.example.org` z `example.org` není požadavek třetí strany. 1. Její záhlaví `Sec-Fetch-Site` je nastaveno na `cross-site`. Pokud existuje modifikátor `$third-party`, pravidlo se použije pouze na požadavky třetích stran.
 
 **Příklady**
 
@@ -330,7 +330,7 @@ AdGuard se pokusí zavřít kartu prohlížeče s jakoukoli adresou, která odpo
 > 
 > 1. Modifikátor `$popup` funguje nejlépe v Rozšíření prohlížeče AdGuard.
 > 2. V AdGuardu pro Safari a iOS, pravidla `$popup` stránku jednoduše a okamžitě zablokují.
-> 3. V AdGuardu pro Windows, Mac a Android nemusí modifikátor `$popup` v některých případech detekovat vyskakovací okno a nebude zablokováno. Modifikátor `$popup` použije typ obsahu `document` se speciálním příznakem, který je předán blokovací stránce. Samotná blokovací stránka může provést některé kontroly a zavřít okno, pokud se skutečně jedná o vyskakovací okno. V opačném případě by se stránka měla načíst. Lze to kombinovat s dalšími modifikátory typu požadavku, jako je `$third-party` a `$important`. However, the blocking page may not detect a popup in some cases, so it is recommended to use the [AdGuard Popup Blocker](https://github.com/AdguardTeam/PopupBlocker) userscript instead.
+> 3. V AdGuardu pro Windows, Mac a Android nemusí modifikátor `$popup` v některých případech detekovat vyskakovací okno a nebude zablokováno. Modifikátor `$popup` použije typ obsahu `document` se speciálním příznakem, který je předán blokovací stránce. Samotná blokovací stránka může provést některé kontroly a zavřít okno, pokud se skutečně jedná o vyskakovací okno. V opačném případě by se stránka měla načíst. Lze to kombinovat s dalšími modifikátory typu požadavku, jako je `$third-party` a `$important`. Blokovací stránka však nemusí v některých případech detekovat vyskakovací okno, proto se doporučuje místo toho použít uživatelský skript [AdGuard Blokátor vyskakovacích oken](https://github.com/AdguardTeam/PopupBlocker).
 
 #### **`$match-case`** {#match-case-modifier}
 
@@ -927,7 +927,7 @@ kde:
   * **`seconds`** — počet sekund aktuálního času pro posunutí data vypršení platnosti souboru cookie.
   * **`strategy`** — řetězec pro strategii použití cookie [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite).
 
-For example,
+Např.
 ```
 ||example.org^$cookie=NAME;maxAge=3600;sameSite=lax
 ```
@@ -2803,7 +2803,7 @@ Poskytujeme preprocesorové direktivy, které mohou být použity správci filtr
 > 
 > Jakákoli chyba v direktivě preprocesoru povede k tomu, že AdGuard selže při aktualizaci filtru stejným způsobem, jako kdyby adresa URL filtru byla nedostupná.
 
-> Preprocessor directives can be used in the user rules or in the custom filters.
+> Direktivy preprocesoru lze použít v uživatelských pravidlech nebo ve vlastních filtrech.
 
 #### Zahrnutý soubor {#include-directive}
 

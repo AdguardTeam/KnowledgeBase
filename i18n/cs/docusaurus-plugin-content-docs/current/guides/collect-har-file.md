@@ -30,7 +30,7 @@ Postup vytvoření souboru HAR v Chrome:
 
 8. Reprodukujte kroky, které způsobují problém.
 
-9. Save session as a .har file by right-clicking the grid and selecting ***Save as HAR with content***.
+9. Uložte relaci jako soubor .har kliknutím pravým tlačítkem na mřížku a výběrem ***Save as HAR with content***.
 
 10. Přepošlete na podporu AdGuardu (support@adguard.com) s podrobným vysvětlením problému. Užitečné mohou být i podpůrné snímky obrazovky.
 
@@ -57,7 +57,7 @@ Postup vytvoření souboru HAR v Chrome:
 
 8. Reprodukujte kroky, které způsobují problém.
 
-9. Save session as a .har file by right-clicking the grid and selecting ***Save as HAR with content***.
+9. Uložte relaci jako soubor .har kliknutím pravým tlačítkem na mřížku a výběrem ***Save as HAR with content***.
 
 10. Přepošlete na podporu AdGuardu (support@adguard.com) s podrobným vysvětlením problému. Užitečné mohou být i podpůrné snímky obrazovky.
 
@@ -84,7 +84,7 @@ Postup vytvoření souboru HAR ve Firefoxu:
 
 7. Reprodukujte kroky, které způsobují problém.
 
-8. Save session as a .har file by right-clicking the grid and selecting ***Save all as HAR***.
+8. Uložte relaci jako soubor .har kliknutím pravým tlačítkem na mřížku a výběrem ***Save all as HAR***.
 
 9. Přepošlete na podporu AdGuardu (support@adguard.com) s podrobným vysvětlením problému. Užitečné mohou být i podpůrné snímky obrazovky.
 
