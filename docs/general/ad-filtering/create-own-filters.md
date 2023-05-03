@@ -225,7 +225,7 @@ The following modifiers are the most simple and frequently used. Basically, they
 
 #### **`$app`** {#app-modifier}
 
-This modifier lets you narrow the rule coverage down to a specific application (or a list of applications). This might be not too important on Windows and Mac, but this is very important on mobile where some of the filtering rules must be application-specific.
+This modifier lets you narrow the rule coverage down to a specific application (or a list of applications). This might be not too important on Windows and Mac, but this is very important on mobile devices where some of the filtering rules must be app-specific.
 
 * Android — use the app package name, e.g. `org.example.app`.
 * Windows — use the process name, e.g. `chrome.exe`.
