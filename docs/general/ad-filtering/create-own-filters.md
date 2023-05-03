@@ -367,10 +367,10 @@ The modifier `":" h_value` part may be omitted. In that case the modifier matche
 
 **Examples**
 
-* `||example.com^$header=set-cookie:foo` blocks requests which responses have the `Set-Cookie` header with the value matching `foo` literally.
-* `||example.com^$header=set-cookie` blocks requests which responses have the `Set-Cookie` header with any value.
-* `@@||example.com^$header=set-cookie:/foo\, bar\$/` unblocks requests which responses have the `Set-Cookie` header with value matching the `foo, bar$` regular expression.
-* `@@||example.com^$header=set-cookie` unblocks requests which responses have a `Set-Cookie` header with any value.
+* `||example.com^$header=set-cookie:foo` blocks requests whose responses have the `Set-Cookie` header with the value matching `foo` literally.
+* `||example.com^$header=set-cookie` blocks requests whose responses have the `Set-Cookie` header with any value.
+* `@@||example.com^$header=set-cookie:/foo\, bar\$/` unblocks requests whose responses have the `Set-Cookie` header with value matching the `foo, bar$` regular expression.
+* `@@||example.com^$header=set-cookie` unblocks requests whose responses have a `Set-Cookie` header with any value.
 
 #### **`$important`** {#important-modifier}
 
@@ -783,7 +783,7 @@ Disables all generic [cosmetic rules](#cosmetic-rules) on pages that correspond 
 
 **Examples**
 
-* `@@||example.com^generichide` disables generic cosmetic rules on any pages at `example.com` and its subdomains.
+* `@@||example.com^$generichide` disables generic cosmetic rules on any pages at `example.com` and its subdomains.
 
 ### Advanced capabilities
 
@@ -852,7 +852,7 @@ In that case, the `$badfilter` rule will disable the corresponding rule for doma
 
 #### **`$cookie`** {#cookie-modifier}
 
-The `$cookie` modifier completely changes rule behavior. Instead of blocking a request, this modifier makes us suppress or modify the `Cookie` and `Set-Cookie` headers.
+The `$cookie` modifier completely changes rule behavior. Instead of blocking a request, this modifier makes AdGuard suppress or modify the `Cookie` and `Set-Cookie` headers.
 
 > **Multiple rules matching a single request**
 >
@@ -903,7 +903,7 @@ every time AdGuard encounters a cookie called `NAME` in a request to `example.or
 
 #### **`$csp`** {#csp-modifier}
 
-This modifier completely changes the rule behavior. If it is applied to a rule, it will not block the matching request. The response headers are going to be modified instead.
+This modifier completely changes the rule behavior. If it is applied to a rule, the rule will not block the matching request. Response headers will be modified instead.
 
 > In order to use this type of rules, it is required to have the basic understanding of the [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) security layer.
 
@@ -964,10 +964,10 @@ Basic URL exceptions shall not disable rules with `$hls` modifier. They can be d
 
 > **Restrictions**
 >
-> * `$hls` rules are only allowed in trusted filters.
-> * `$hls` rules are not compatible with any other modifiers except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
-> * `$hls` rules only apply to HLS playlists, which are UTF-8 encoded text starting with the line `#EXTM3U`. Any other response will not be modified by these rules.
-> * `$hls` rules do not apply if the size of the original response is more than 3 MB.
+> * `$hls` rules are only allowed in trusted filters
+> * `$hls` rules are not compatible with any other modifiers except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`
+> * `$hls` rules only apply to HLS playlists, which are UTF-8 encoded text starting with the line `#EXTM3U`. Any other response will not be modified by these rules
+> * `$hls` rules do not apply if the size of the original response is more than 3 MB
 
 > **Note**
 >
@@ -1317,7 +1317,7 @@ This is basically a Firewall-like rule allowing to fully block or unblock access
 
 #### **`$permissions`** {#permissions-modifier}
 
-This modifier completely changes the rule behavior. If it is applied to a rule, it will not block the matching request. The response headers are going to be modified instead.
+This modifier completely changes the rule behavior. If it is applied to a rule, the rule will not block the matching request. Response headers will be modified instead.
 
 > In order to use this type of rules, it is required to have a basic understanding of the [Permissions Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Permissions_Policy) security layer.
 
