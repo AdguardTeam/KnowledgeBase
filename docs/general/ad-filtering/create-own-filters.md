@@ -486,7 +486,7 @@ If there is a `$~third-party` modifier, the rule is only applied to the requests
 
 #### Restriction by content type {#content-type-modifiers}
 
-[//]: # (Please, keep them sorted)
+[//]: # (Please keep them sorted)
 
 * [`$document`](#document-modifier)
 * [`$font`](#font-modifier)
@@ -621,7 +621,7 @@ The rule applies only to WebRTC connections.
 
 #### Exception modifiers {#exception-modifiers}
 
-[//]: # (Please, keep them sorted)
+[//]: # (Please keep them sorted)
 
 * [`$content`](#content-modifier)
 * [`$elemhide`](#elemhide-modifier)
@@ -787,7 +787,7 @@ Disables all generic [cosmetic rules](#cosmetic-rules) on pages that correspond 
 
 ### Advanced capabilities
 
-[//]: # (Please, keep them sorted)
+[//]: # (Please keep them sorted)
 
 * [`$all`](#all-modifier)
 * [`$badfilter`](#badfilter-modifier)
@@ -2730,7 +2730,7 @@ More information about trusted scriptlets can be found [on GitHub](https://githu
 
 ## Modifiers for non-basic type of rules
 
-[//]: # (Please, keep them sorted)
+[//]: # (Please keep them sorted)
 
 * [`$app`](#non-basic-app-modifier)
 * [`$domain`](#non-basic-domain-modifier)
