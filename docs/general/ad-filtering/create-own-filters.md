@@ -236,11 +236,11 @@ This modifier lets you narrow the rule coverage down to a specific application (
 **Examples**
 
 * `||baddomain.com^$app=org.example.app` — a rule to block requests that match the specified mask and are sent from the `org.example.app` Android app.
-* `||baddomain.com^$app=org.example.app1|org.example.app2` — the same rule, but it works for both `org.example.app1` and `org.example.app2` apps.
+* `||baddomain.com^$app=org.example.app1|org.example.app2` — the same rule but it works for both `org.example.app1` and `org.example.app2` apps.
 
-If you want the rule not to be applied to certain apps, start the app name with `~` sign.
+If you want the rule not to be applied to certain apps, start the app name with the `~` sign.
 
-* `||baddomain.com^$app=~org.example.app` — a rule to block requests that match the specified mask, and are sent from any app save for the `org.example.app`.
+* `||baddomain.com^$app=~org.example.app` — a rule to block requests that match the specified mask and are sent from any app save for the `org.example.app`.
 * `||baddomain.com^$app=~org.example.app1|~org.example.app2` — same as above, but now two apps are excluded: `org.example.app1` and `org.example.app2`.
 
 > **Compatibility with different versions of AdGuard**
@@ -385,7 +385,7 @@ The `$important` modifier applied to a rule increases its priority over any othe
 ```
 
 ```
-! if the exception rule also has `$important` modifier it will prevail, so no requests will not be blocked
+! if the exception rule also has `$important` modifier, it will prevail and requests won't be blocked
 ||example.org^$important
 @@||example.org^$important
 ```
@@ -444,7 +444,7 @@ AdGuard will try to close the browser tab with any address that matches a blocki
 
 #### **`$third-party`** {#third-party-modifier}
 
-A restriction of third-party and own requests. A third-party request is a request from a different domain. For example, a request to `example.org`, from `domain.com` is a third-party request.
+A restriction of third-party and own requests. A third-party request is a request from a different domain. For example, a request to `example.org` from `domain.com` is a third-party request.
 
 > **Note**
 >
@@ -457,9 +457,9 @@ If there is a `$third-party` modifier, the rule is only applied to third-party r
 
 **`$third-party`:**
 
-* `||domain.com^$third-party` — this rule applies to all domains, except `domain.com` and its subdomains. A third-party request example: `http://example.org/banner.jpg`.
+* `||domain.com^$third-party` — this rule applies to all domains, except `domain.com` and its subdomains. An example of a third-party request: `http://example.org/banner.jpg`.
 
-If there is a `$~third-party` modifier, the rule is only applied to the requests that are not from third-party. Which means, they have to be sent from the same domain.
+If there is a `$~third-party` modifier, the rule is only applied to the requests that are not from third parties. Which means, they have to be sent from the same domain.
 
 **`$~third-party`:**
 
@@ -563,7 +563,7 @@ The rule corresponds to requests caused by either `navigator.sendBeacon()` or th
 
 > **Compatibility with different versions of AdGuard**
 >
-> AdGuard for Windows, Mac, Android often cannot accurately detect `navigator.sendBeacon()`. For reliable detection, use AdGuard Browser extension.
+> AdGuard for Windows, Mac, and Android often cannot accurately detect `navigator.sendBeacon()`. For reliable detection, use AdGuard Browser Extension.
 
 #### **`$script`** {#script-modifier}
 
@@ -596,7 +596,7 @@ The rule applies only to ajax requests (requests sent via javascript object `XML
 
 > **Compatibility with different versions of AdGuard**
 >
-> AdGuard for Windows, Mac, Android often cannot accurately detect this type and sometimes detects it as [`$other`](#other-modifier) or [`$script`](#script-modifier). For reliable detection, use AdGuard Browser extension.
+> AdGuard for Windows, Mac, Android often cannot accurately detect this type and sometimes detects it as [`$other`](#other-modifier) or [`$script`](#script-modifier). For reliable detection, use AdGuard Browser Extension.
 
 #### **`$object-subrequest` (deprecated)** {#object-subrequest-modifier}
 
@@ -736,7 +736,7 @@ The list of the available modifier options:
 
 > **Compatibility with different versions of AdGuard**
 >
-> * Stealth Mode is available in AdGuard for Windows, Mac, Android, and AdGuard Browser extension. All other products will ignore the rules with `$stealth` modifier.
+> * Stealth Mode is available in AdGuard for Windows, Mac, Android, and AdGuard Browser Extension. All other products will ignore the rules with `$stealth` modifier.
 > * `$stealth` modifier with specific options is supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.10 or later**.
 
 #### **`$urlblock`** {#urlblock-modifier}
@@ -775,15 +775,15 @@ Disables generic basic rules on pages that correspond to exception rule.
 
 **Examples**
 
-* `@@||example.com^$genericblock` — disables generic basic rules on any pages at `example.com` and all subdomains.
+* `@@||example.com^$genericblock` disables generic basic rules on any pages at `example.com` and all subdomains.
 
 ##### **`$generichide`** {#generichide-modifier}
 
-Disables all generic [cosmetic rules](#cosmetic-rules) on pages that correspond to exception rule.
+Disables all generic [cosmetic rules](#cosmetic-rules) on pages that correspond to the exception rule.
 
 **Examples**
 
-* `@@||example.com^generichide` — disables generic cosmetic rules on any pages at `example.com` and all subdomains.
+* `@@||example.com^generichide` disables generic cosmetic rules on any pages at `example.com` and its subdomains.
 
 ### Advanced capabilities
 
@@ -812,7 +812,7 @@ These modifiers are able to completely change the behaviour of basic rules.
 
 #### **`$all`** {#all-modifier}
 
-`$all` modifier is made of [`$document`](#document-modifier), [`$popup`](#popup-modifier), [`$csp`](#csp-modifier) modifiers. E.g. rule `||example.org^$all` is converting into such set of rules:
+`$all` modifier is made of [`$document`](#document-modifier), [`$popup`](#popup-modifier), and [`$csp`](#csp-modifier) modifiers. E.g. rule `||example.org^$all` is converting into such a set of rules:
 ```
 ||example.org^$document,popup
 ||example.org^$csp=script-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
@@ -1071,7 +1071,7 @@ preroll.ts
 [JSONPath](https://goessner.net/articles/JsonPath/) expression. They do not modify responses which are not
 valid JSON documents.
 
-> In AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**, `$jsonprune` also supports modifying JSONP (padded JSON) documents.
+> In AdGuard for Windows, Mac, and Android **running CoreLibs v1.11 or later**, `$jsonprune` also supports modifying JSONP (padded JSON) documents.
 
 **Syntax**
 
@@ -1216,7 +1216,7 @@ Basic URL exceptions shall not disable rules with `$jsonprune` modifier. They ca
 
 **Nested JSONPath expressions**
 
-> In AdGuard for Windows, Mac and Android, **running CoreLibs version 1.11 or later**, JSONPath expressions may be used as keys in filter expressions.
+> In AdGuard for Windows, Mac and Android **running CoreLibs v1.11 or later**, JSONPath expressions may be used as keys in filter expressions.
 
 * `||example.org^$jsonprune=\$.elems[?(has "\$.a.b.c")]` removes all children of `elems` which have a property selectable by the JSONPath expression `$.a.b.c`.
 
@@ -1293,7 +1293,7 @@ Basic URL exceptions shall not disable rules with `$jsonprune` modifier. They ca
 
 #### **`$network`** {#network-modifier}
 
-This is basically a Firewall-kind of rules allowing to fully block or unblock access to a specified remote address.
+This is basically a Firewall-like rule allowing to fully block or unblock access to a specified remote address.
 
 1. `$network` rules match **IP addresses only**! You cannot use them to block or unblock access to a domain.
 2. To match an IPv6 address, you have to use the collapsed syntax, e.g. use `[2001:4860:4860::8888]$network` instead of `[2001:4860:4860:0:0:0:0:8888]$network`.
@@ -1319,9 +1319,9 @@ This is basically a Firewall-kind of rules allowing to fully block or unblock ac
 
 This modifier completely changes the rule behavior. If it is applied to a rule, it will not block the matching request. The response headers are going to be modified instead.
 
-> In order to use this type of rules, it is required to have the basic understanding of the [Permissions Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Permissions_Policy) security layer.
+> In order to use this type of rules, it is required to have a basic understanding of the [Permissions Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Permissions_Policy) security layer.
 
-For the requests matching a `$permissions` rule, AdGuard strengthens response's permissions policy by adding additional permission policy equal to the `$permissions` modifier contents. `$permissions` rules are applied independently from any other rule type. Other basic rules have no influence on it **save for document-level exceptions** (see the examples section).
+For the requests matching a `$permissions` rule, AdGuard strengthens response's permissions policy by adding an additional permission policy equal to the `$permissions` modifier contents. `$permissions` rules are applied independently from any other rule type. Other basic rules have no influence on it **save for document-level exceptions** (see the examples section).
 
 > **Multiple rules matching a single request.**
 >
@@ -1497,7 +1497,7 @@ Use `@@` to negate `$removeheader`:
 
 > **Compatibility with different versions of AdGuard**
 >
-> Rules with `$removeheader` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard Browser extension for Chrome, Firefox, Edge.
+> Rules with `$removeheader` modifier are supported by AdGuard for Windows, Mac, and Android, and AdGuard Browser extension for Chrome, Firefox, and Edge.
 
 #### **`$removeparam`** {#removeparam-modifier}
 
@@ -1511,7 +1511,7 @@ Rules with `$removeparam` modifier are intended to strip query parameters from r
 
 **Basic syntax**
 
-* `$removeparam=param` — removes query parameter with the name `param` from URLs of any request, e.g. a request to `http://example.com/page?param=1&another=2` will be transformed to `http://example.com/page?another=2`.
+* `$removeparam=param` removes query parameter with the name `param` from URLs of any request, e.g. a request to `http://example.com/page?param=1&another=2` will be transformed into `http://example.com/page?another=2`.
 
 > `$removeparam` basic syntax is supported starting with v1.7 of [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) and v3.6 of AdGuard Browser Extension.
 
@@ -1521,7 +1521,7 @@ You can also use regular expressions to match query parameters and/or their valu
 
 * `$removeparam=/regexp/[options]` — removes query parameters that matches the `regexp` regular expression from URLs of any request. Unlike basic syntax, it means *"remove query parameters normalized to a `name=value` string which match the `regexp` regular expression"*. `[options]` here is the list of regular expression options. At the moment, the only supported option is `i` which makes matching case-insensitive.
 
-> `$removeparam` syntax for regular expressions will be supported starting with v1.8 of CoreLibs and v4.0 of AdGuard Browser Extension. For now, use the simplified version: `$removeparam=param`.
+> `$removeparam` syntax for regular expressions will be supported starting with CoreLibs v1.8 and AdGuard Browser Extension v4.0. For now, use the simplified version: `$removeparam=param`.
 
 > **Escaping special characters**
 >
@@ -1529,7 +1529,7 @@ You can also use regular expressions to match query parameters and/or their valu
 
 > **Note**
 >
-> Regexp-type rules target both name and value of the parameter. In order to minimize the chance of mistakes, it is safer to start every regexp with `/^` unless you specifically target parameter values.
+> Regexp-type rules target both name and value of the parameter. To minimize mistakes, it is safer to start every regexp with `/^` unless you specifically target parameter values.
 
 > We will try to detect and ignore unescaped `$` automatically using a simple rule of thumb:
 > It is not an options delimiter if all three are true:
@@ -1574,7 +1574,7 @@ $removeparam=/^(utm_content|utm_campaign|utm_referrer)=/
 
 With these rules some [UTM parameters](https://en.wikipedia.org/wiki/UTM_parameters) will be stripped out from any request, except that requests to `example.com` will not be stripped at all, e.g. `http://google.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` will be transformed to `http://google.com/page`, but `http://example.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` will not be affected by the blocking rule.
 
-* `$removeparam=utm_source` — removes `utm_source` query parameter from all requests.
+* `$removeparam=utm_source` removes `utm_source` query parameter from all requests.
 
 * `$removeparam=/utm_.*/` — removes all `utm_* query` parameters from URL queries of any request, e.g. a request to `http://example.com/page?utm_source=test` will be transformed to `http://example.com/page`.
 
@@ -1610,7 +1610,7 @@ With these rules, specified UTM parameters will be removed from any request save
 
 > ##### **Compatibility with different versions of AdGuard** {#removeparam-modifier-compatibility}
 >
-> * Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard browser extensions for Chrome, Firefox, Edge.
+> * Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac, and Android and AdGuard Browser Extension for Chrome, Firefox, and Edge.
 >
 > * `POST` request types are supported only by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.10 or later**.
 
@@ -1682,7 +1682,7 @@ http://regexr.com/3cesk
 
 > **Compatibility with different versions of AdGuard**
 >
-> Rules with `$replace` modifier are supported by AdGuard for Windows, Mac, Android, and AdGuard Browser extension for Firefox. Such rules do not work in extensions for other browsers because they are unable to modify content on the network level.
+> Rules with `$replace` modifier are supported by AdGuard for Windows, Mac, and Android and AdGuard Browser Extension for Firefox. Such rules do not work in extensions for other browsers because they are unable to modify content on the network level.
 
 > **Restrictions**
 >
