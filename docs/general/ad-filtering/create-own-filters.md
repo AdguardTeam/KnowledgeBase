@@ -208,7 +208,7 @@ Example:
 
 #### Basic modifiers {#basic-rules-basic-modifiers}
 
-[//]: # (Please, keep them sorted)
+[//]: # (Please keep them sorted)
 
 * [`$app`](#app-modifier)
 * [`$denyallow`](#denyallow-modifier)
