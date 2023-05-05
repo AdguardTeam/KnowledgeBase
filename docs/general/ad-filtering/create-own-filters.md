@@ -895,7 +895,7 @@ every time AdGuard encounters a cookie called `NAME` in a request to `example.or
 
 > **Limitations**
 >
-> `$cookie` rules support a limited list of modifiers: `$domain`, `$~domain`, `$important`, `$third-party`, `$~third-party`.
+> `$cookie` rules support a limited list of modifiers: `$domain`, `$~domain`, `$important`, `$third-party`, and `$~third-party`.
 
 > **Compatibility with different versions of AdGuard**
 >
