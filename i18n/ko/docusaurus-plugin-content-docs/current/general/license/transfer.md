@@ -1,34 +1,34 @@
 ---
-title: How to transfer
+title: 라이선스를 이전하는 방법
 sidebar_position: 4
 ---
 
-## How to transfer a license to another device{#transfer}
+## 다른 기기로 라이선스를 이전하는 방법{#transfer}
 
-The license key can be activated on a [limited number of devices](../what-is#devices). If the key has already been used on the maximum allowed number of devices, you need to unbind a device from your account.
+라이선스 키는 [제한된 수의 기기](../what-is#devices)에서만 활성화할 수 있습니다. 허용된 최대 기기 수에서 이미 키를 사용한 경우에는 계정에서 기기 연결을 해제해야 합니다.
 
-### How to unbind a device
+### 기기 연결을 해제하는 방법
 
-There are three ways to do it:
+기기 연결을 해제하는 방법은 세 가지가 있습니다.
 
-  * by clicking the *Reset license* button (can be done only in AdGuard desktop apps)
-  * by logging out of your account in an AdGuard product
-  * by removing the device in your AdGuard account:
-     1. Click **AdGuard Ad Blocker** in your [AdGuard account](https://my.adguard.com/) ![Account Ad Blocker tab *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
-     2. In the license card, click the device you want to unbind ![Select device *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-1.png)
-     3. Click **Remove** ![Click Remove *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2.png)
+  * *라이선스 초기화* 버튼을 클릭합니다(AdGuard 데스크톱 앱에서만 수행 가능).
+  * AdGuard 제품의 계정에서 로그아웃합니다.
+  * AdGuard 계정에서 기기를 제거합니다.
+     1. [AdGard 계정](https://my.adguard.com/)에서 **AdGard 광고 차단기**를 클릭합니다. ![광고 차단기 탭 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
+     2. 라이선스 카드에서 연결을 해제하려는 기기를 클릭합니다.![기기 선택 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-1.png)
+     3. **삭제**를 클릭합니다. ![삭제를 클릭 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2.png)
 
-After you have unbound the number of devices you need, you can log in to your AdGuard account on new devices. The license will be bound to them.
+필요한 수의 기기를 삭제한 후, 새 기기에서 AdGuard 계정에 로그인할 수 있습니다. 라이선스가 새 기기에 추가됩니다.
 
-## How to transfer a license to another AdGuard account{#transferaccount}
+## 다른 AdGuard 계정으로 라이선스를 이전하는 방법{#transferaccount}
 
- 1. Go to the AdGuard account that contains the license you would like to transfer
- 2. Go to the **Licenses** tab
- 3. Find the license you want to transfer and click **Unbind from account** ![Click Unbind from account *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account.png)
- 4. Click **Unbind** (**Important**: be sure to note/remember the license key) ![Remeber license key *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account-1.png)
- 4. Go to the AdGuard account that you would like to transfer the license to
- 5. Go to the **Licenses** tab
- 6. Click **Bind license** in the upper right corner ![Bind license *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account-2.png)
- 7. Enter your license key (from step 3)
+ 1. 이전하려는 라이선스가 포함된 AdGuard 계정으로 이동합니다.
+ 2. **라이선스** 탭으로 이동합니다.
+ 3. 이전하려는 라이선스를 찾아 **계정에서 연결 해제**를 클릭합니다. ![계정에서 연결 해제를 클릭합니다. *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account.png)
+ 4. **연결 해제**를 클릭합니다(라이선스 키를 기록/기억하는 것이 **중요**). ![라이선스 키 기억하기 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account-1.png)
+ 4. 라이선스를 이전하려는 AdGuard 계정으로 이동합니다.
+ 5. **라이선스** 탭으로 이동합니다.
+ 6. 오른쪽 상단 모서리에서 **라이선스 연결**을 클릭합니다. ![라이선스 연결 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account-2.png)
+ 7. 라이선스 키를 입력합니다(3단계).
 
-In case you can't access your initial account, please contact our support team at support@adguard.com.
+원래 계정에 액세스할 수 없는 경우, 지원 팀(support@adguard.com)으로 문의하시기 바랍니다.

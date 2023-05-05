@@ -89,7 +89,7 @@ This option enables automatic detection of the local network domain, which will 
 
 `dns.proxy.fallback.domains`
 
-Here you can list domains for which the fallback DNS server will be used instead of the main DNS server.
+Burada, ana DNS sunucusu yerine yedek DNS sunucusunun kullanılacağı alan adlarını listeleyebilirsiniz.
 
 `dns.proxy.adblockrules.blocking.mode`
 
@@ -117,11 +117,11 @@ Here you can specify the IPv6 address that will be returned in response to block
 
 `dns.proxy.block.AAAA.requests`
 
-Here you can enable IPv6 DNS query blocking.
+Burada IPv6 DNS sorgu engellemeyi etkinleştirebilirsiniz.
 
 `dns.proxy.blocked.response.TTL.in.seconds`
 
-Here you can specify the TTL (time to live) value that will be returned in response to a blocked request.
+Burada, engellenen bir isteğe yanıt olarak döndürülecek TTL (kullanım süresi) değerini belirtebilirsiniz.
 
 `dns.proxy.parallel.upstream.queries.enabled`
 
@@ -133,7 +133,7 @@ Bir SERVFAIL paketi ile üst kaynak hatasına yanıt verir.
 
 `dns.proxy.http3.enabled`
 
-Enables HTTP/3 for DNS-over-HTTPS upstreams to accelerate connection.
+Bağlantıyı hızlandırmak için DNS-over-HTTPS üst kaynakları için HTTP/3'ü etkinleştirir.
 
 `dns.proxy.block.encrypted.client.hello.response`
 
@@ -149,7 +149,7 @@ This option specifies the size of TCP packet fragmentation, which helps avoid de
 
 `stealth.antidpi.http.space.juggling`
 
-Adds extra space between the HTTP method and the URL and removes space after the "Host:" field.
+HTTP yöntemi ile URL arasına fazladan boşluk ekler ve "Host:" alanından sonraki boşluğu kaldırır.
 
 `subscription.link.interception.userscript`
 

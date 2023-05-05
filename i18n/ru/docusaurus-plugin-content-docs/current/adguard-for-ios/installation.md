@@ -27,7 +27,7 @@ iOS 11.2 и выше.
 
 ![Введите "AdGuard" в строке поиска *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/2.png)
 
-[On the opened page of the App Store](https://adguard.com/download.html?auto=1) tap _GET_ under the string _AdGuard - adblock&privacy_ and then tap _INSTALL_. Вам может потребоваться ввести логин и пароль Apple ID. Введите его и дождитесь завершения установки.
+[На открывшейся странице App Store](https://adguard.com/download.html?auto=1) нажмите на кнопку _ЗАГРУЗИТЬ_, расположенную под надписью _AdGuard - блокировщик рекламы_, а затем на кнопку _УСТАНОВИТЬ_. Вам может потребоваться ввести логин и пароль Apple ID. Введите его и дождитесь завершения установки.
 
 ![Нажмите СКАЧАТЬ под приложением AdGuard *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/3.png)
 
