@@ -33,7 +33,7 @@ By moving the toggle to the right, you activate IPv6 query blocking (AAAA reques
 
 ### Blocked response TTL
 
-Here you can specify the TTL (time to live) value that will be returned in response to a blocked request.
+Burada, engellenen bir isteğe yanıt olarak döndürülecek TTL (kullanım süresi) değerini belirtebilirsiniz.
 
 ### Bootstrap servers
 

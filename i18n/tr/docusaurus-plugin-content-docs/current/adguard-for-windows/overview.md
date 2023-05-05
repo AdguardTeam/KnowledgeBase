@@ -3,7 +3,7 @@ title: Özelliklere genel bakış
 sidebar_position: 1
 ---
 
-AdGuard for Windows is an easy-to-use tool that blocks annoying banners, pop-ups, video ads and trackers. But that's not all: it helps you save traffic, load web pages faster, and guard your computer from undesirable and potentially malicious content. AdGuard can also protect you from phishing sites, and your children — from information they shouldn't be exposed to due to age restrictions.
+Windows için AdGuard can sıkıcı afişleri, açılır pencereleri, video reklamları ve izleyicileri engelleyen, kullanımı kolay bir araçtır. Ancak hepsi bu kadar değil: veri tasarrufu yapmanıza, web sayfalarını daha hızlı yüklemenize, bilgisayarınızı istenmeyen ve potansiyel olarak kötü amaçlı sitelerden korumanıza yardımcı olur. AdGuard ayrıca sizi kimlik avı sitelerinden korur ve çocuklarınızı uygunsuz içerikten uzak tutar.
 
 ## Home screen
 

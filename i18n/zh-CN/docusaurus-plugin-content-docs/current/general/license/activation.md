@@ -5,9 +5,9 @@ sidebar_position: 3
 
 ## 如何激活许可证
 
-要激活许可证，请打开 AdGuard 软件的「*许可证*」部分，前往「*登录*」或「*激活*」按钮。 使用 AdGuard 账号的电子邮件和密码登录。 如果您还没有一个账号，您将被提示创建一个。
+要激活许可证，请打开 AdGuard 软件的「*许可证*」部分，前往「*登录*」或「*激活*」按钮。 使用 AdGuard 账号的电子邮件和密码登录。 如果用户还没有一个账号，将被提示创建一个。
 
-> Note: To activate a license via the AdGuard account, a valid license with at least one free slot is required. If your license is already used on a maximum number of devices, you can [upgrade it](../payment-options#upgrade) or [transfer it from one device to another](../transfer).
+> 注意：要用 AdGuard 账号激活许可证，用户需要一个许可证至少还有一台可连接的设备。 如果许可证可连接的设备数量已达上限，可以[升级](../payment-options#upgrade) ，或者[将许可证从一台设备连接到另一台](../transfer)。
 
 您还可以使用[许可证密钥](../what-is#license-key)激活许可证。
 
@@ -17,11 +17,11 @@ sidebar_position: 3
 
 1. 开启 AdGuard 软件
 
-To do it, double-click the AdGuard icon on the desktop:
+请鼠标双击桌面上的 AdGuard 图标：
 
 ![桌面上的 AdGuard 图标](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowsEn.png)
 
-or double-click the AdGuard icon in the system tray:
+或也可以在通知栏双击 AdGuard 图标：
 
 ![系统托盘中的 AdGuard 图标](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windows2En.png)
 
@@ -48,7 +48,7 @@ or double-click the AdGuard icon in the system tray:
 2. 在右上角点击**齿轮图标**
 3. 点击**许可...**
 
-![Go to Settings and License *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/macEn.png)
+![转到设置和许可证 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/macEn.png)
 
 4. 在弹出的窗口中按「**激活**」按钮
 

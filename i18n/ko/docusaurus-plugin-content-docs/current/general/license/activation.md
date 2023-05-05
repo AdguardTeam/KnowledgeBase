@@ -3,11 +3,11 @@ title: 라이선스를 활성화하는 방법
 sidebar_position: 3
 ---
 
-## How to activate a license
+## 라이선스를 활성화하는 방법
 
 라이선스를 활성화하려면 AdGuard 제품의 *라이선스* 섹션으로 이동하여 *로그인* 필드 또는 *활성화* 버튼을 찾으세요. AdGuard 계정의 이메일과 비밀번호를 사용하여 로그인할 수 있습니다. 아직 계정이 없는 경우, 계정을 만들라는 메시지가 표시됩니다.
 
-> Note: To activate a license via the AdGuard account, a valid license with at least one free slot is required. If your license is already used on a maximum number of devices, you can [upgrade it](../payment-options#upgrade) or [transfer it from one device to another](../transfer).
+> AdGuard 계정을 통해 라이선스를 활성화하기 위해서는 최소 하나의 여유 슬롯이 있는 유효한 라이선스가 필요합니다. 라이선스가 이미 최대 수의 기기에서 사용되고 있는 경우, 라이선스를 [업그레이드](../payment-options#upgrade)하거나 [한 기기에서 다른 기기로 이전](../transfer)할 수 있습니다.
 
 또는 [라이선스 키](../what-is#license-key)를 사용하여 라이선스를 활성화할 수 있습니다.
 
@@ -17,11 +17,11 @@ sidebar_position: 3
 
 1. AdGuard 앱을 엽니다.
 
-To do it, double-click the AdGuard icon on the desktop:
+AdGuard 앱을 열려면 바탕 화면에서 AdGuard 아이콘을 두 번 클릭합니다.
 
 ![바탕 화면의 AdGuard 아이콘](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowsEn.png)
 
-or double-click the AdGuard icon in the system tray:
+또는 시스템 트레이에서 AdGuard 아이콘을 두 번 클릭합니다.
 
 ![시스템 트레이의 AdGuard 아이콘](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windows2En.png)
 
@@ -48,7 +48,7 @@ or double-click the AdGuard icon in the system tray:
 2. 오른쪽 상단 모서리에 있는 **톱니바퀴 아이콘**을 클릭합니다.
 3. **라이선스**를 누릅니다.
 
-![Go to Settings and License *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/macEn.png)
+![설정 및 라이선스로 이동 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/macEn.png)
 
 4. 열린 창에서 **활성화** 버튼을 누릅니다.
 
