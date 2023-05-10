@@ -233,6 +233,10 @@ This modifier lets you narrow the rule coverage down to a specific application (
 
 > For Mac, you can find out the bundle ID or the process name of the app by viewing the respective request details in the Filtering log.
 
+> **Compatibility with different versions of AdGuard**
+>
+> Starting with CoreLibs v1.12, the `$app` modifier for Windows is case-insensitive.
+
 **Examples**
 
 * `||baddomain.com^$app=org.example.app` — a rule to block requests that match the specified mask and are sent from the `org.example.app` Android app.
