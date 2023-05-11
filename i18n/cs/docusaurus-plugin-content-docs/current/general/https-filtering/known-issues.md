@@ -1,43 +1,43 @@
 ---
-title: Known issues
+title: Známé problémy
 sidebar_position: 2
 ---
 
-> Last update: September 20, 2022
+> Poslední aktualizace: 20. září 2022
 
-> Understanding this article may require some basic knowledge about encryption, TLS, and HTTPS.
+> Pochopení tohoto článku může vyžadovat základní znalosti o šifrování, TLS a HTTPS.
 
-First, look at this simple diagram that shows the general structure of the HTTPS protocol:
+Nejprve se podívejte na tento jednoduchý diagram, který ukazuje obecnou strukturu protokolu HTTPS:
 
 ![What is HTTPS filtering](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
 
-AdGuard copies properties of the TLS connection that your browser uses:
+AdGuard zkopíruje vlastnosti připojení TLS, které používá váš prohlížeč:
 
-* AdGuard uses the same TLS version
-* AdGuard uses the same encrypting methods (ciphers) as your browser
+* AdGuard používá stejnou verzi TLS
+* AdGuard používá stejné šifrovací metody (šifry) jako váš prohlížeč
 
-Effectively, it means that if you use a modern, safe browser, it will take all known TLS problems into account and won’t attempt to use unsafe ciphers.
+V podstatě to znamená, že pokud používáte moderní a bezpečný prohlížeč, bude brát v úvahu všechny známé problémy TLS a nebude se pokoušet používat nebezpečné šifry.
 
-**What does AdGuard do when there are any doubts about the certificate’s validity?** In such cases, AdGuard entirely ceases filtering of all connections to this domain and leaves the browser in charge of all decisions.
+**Jak AdGuard postupuje v případě pochybností o platnosti certifikátu?** V takových případech AdGuard zcela ukončí filtrování všech připojení k této doméně a ponechá veškerá rozhodnutí na prohlížeči.
 
-## Known issues
+## Známé problémy
 
-HTTPS filtering in AdGuard has its drawbacks. Almost all of them are scheduled to be eliminated in the next few AdGuard versions.
+HTTPS filtrování v AdGuardu má své nevýhody. Téměř všechny z nich mají být odstraněny v několika příštích verzích AdGuardu.
 
-All the issues known to us and the ETAs on their fixes are listed below.
+Všechny nám známé problémy a předpokládané termíny jejich oprav jsou uvedeny níže.
 
-### Inspecting the original certificate
+### Kontrola originálu certifikátu
 
-The most important drawback of the HTTPS filtering mechanism is that it hides the real certificate of a website. You cannot simply check its original certificate because you can only see the one issued by AdGuard.
+Největší nevýhodou mechanismu HTTPS filtrování je, že skrývá skutečný certifikát webové stránky. Nemůžete jednoduše zkontrolovat jeho originální certifikát, protože vidíte pouze ten, který vydal AdGuard.
 
-This problem is solved in [Browser Assistant](https://adguard.com/adguard-assistant/overview.html). This browser extension helps you manage filtering directly from the browser and allows you to inspect the original certificate of any website.
+Tento problém řeší v [Asistent prohlížeče](https://adguard.com/adguard-assistant/overview.html). Toto rozšíření prohlížeče vám pomůže spravovat filtrování přímo z prohlížeče a umožní vám zkontrolovat originální certifikát jakékoli webové stránky.
 
-### Certificate Transparency
+### Transparentnost certifikátu
 
-Thanks to modern cryptography, browsers can usually detect malicious websites that are provisioned with forged or fake SSL certificates. However, current cryptographic mechanisms aren’t so good at detecting malicious websites if they’re provisioned with mistakenly issued certificates or certificates that have been issued by a certificate authority (CA) that’s been compromised or gone rogue. Certificate Transparency aims to remedy these certificate-based threats by making the issuance and existence of SSL certificates open to scrutiny by domain owners, CAs, and domain users.
+Díky moderní kryptografii dokáží prohlížeče obvykle odhalit škodlivé webové stránky, které jsou opatřeny padělanými nebo falešnými certifikáty SSL. Současné kryptografické mechanismy však nejsou tak dobré při odhalování škodlivých webových stránek, pokud jsou vybaveny chybně vydanými certifikáty nebo certifikáty, které byly vydány kompromitovanou nebo nepoctivou certifikační autoritou. Transparentnost certifikátů si klade za cíl odstranit tyto hrozby založené na certifikátech tím, že zpřístupní vydávání a existenci certifikátů SSL kontrole ze strany vlastníků domén, certifikačních autorit a uživatelů domén.
 
-AdGuard products which use [CoreLibs](https://github.com/AdguardTeam/CoreLibs/) starting with version **1.11** will implement a policy based on [Chrome Certificate Transparency Policy](https://googlechrome.github.io/CertificateTransparency/ct_policy.html).
+Produkty AdGuard, které používají [CoreLibs](https://github.com/AdguardTeam/CoreLibs/) počínaje verzí **1.11**, budou implementovat zásady založené na [Chrome Certificate Transparency Policy](https://googlechrome.github.io/CertificateTransparency/ct_policy.html).
 
-## Have remarks or suggestions?
+## Máte připomínky nebo návrhy?
 
-If you’d like to add something, report any errors, or ask a question, please contact us at: `devteam@adguard.com`.
+Pokud chcete něco doplnit, nahlásit chyby nebo položit dotaz, kontaktujte nás na: `devteam@adguard.com`.

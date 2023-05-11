@@ -13,16 +13,16 @@ You have three ways to solve the issue:
 
 > Please note, that this approach is available starting from **AdGuard v3.5 nightly 6**. If you're using an older version, you can get the latest update [here](https://adguard.com/adguard-android/overview.html).
 
-1. Activate the **developer mode** and enable **USB debugging**:
-- Open the **Settings** application on your phone;
-- Go to **System** section (last item in the settings menu). In this section find sub-item **About phone**;
-- Click on the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
-- Open **System Settings** > **Developer Options** > Scroll down and enable **USB debugging** > Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
+1. **Geliştirici modunu** etkinleştirin ve **USB hata ayıklamayı** etkinleştirin:
+- Open the **Settings** app phone;
+- **Sistem** bölümüne gidin (ayarlar menüsündeki son öğe). Bu bölümde **Telefon hakkında** alt öğesini bulun;
+- Tap the **Build number** line 7 times. Bundan sonra, artık **Bir geliştirici olduğunuza dair** bir bildirim alırsınız (Gerekirse, cihaz için bir kilit açma kodu girin);
+- **Sistem Ayarları** → **Geliştirici Seçenekleri** öğesini açın → Aşağı kaydırın ve **USB hata ayıklaması** öğesini etkinleştirin → Uyarıyı dikkatlice okuduktan sonra **USB hata ayıklamasına izin ver** penceresinde hata ayıklamanın etkinleştirildiğini onaylayın.
 
 > If you have any difficulties or additional questions, full instructions can be found [here](https://developer.android.com/studio/debug/dev-options).
 
 2. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb;
-> On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+> Windows platformunda, **Samsung** sahiplerinin [bu yardımcı programı](https://developer.samsung.com/mobile/android-usb-driver.html) yüklemeleri gerekebilir.
 3. Connect your device using a **USB cable** to the computer or laptop on which you installed **ADB**;
 4. Open **the command line** on your PC:
 - **Cmd.exe** if you are using **Windows**;
@@ -37,7 +37,7 @@ About how to manage user accounts from an Android device you can [find here](htt
 
 ### Option 3: Use AdGuard in *Local HTTP proxy mode* (requires root)
 
-To enable this mode open **AdGuard Settings** > **Network** > **Filtering method** > **Local HTTP proxy**
+To enable this mode, open **AdGuard Settings** → **Network** → **Filtering method** → **Local HTTP proxy**
 
 ## LG and Samsung devices
 

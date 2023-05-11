@@ -11,7 +11,7 @@ AdGuard для Safari — это бесплатная программа. Она
 
 ![AdGuard для Safari в App Store](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-app-store.png)
 
-2. Нажмите *Установить* > *Открыть*.
+2. Нажмите *Загрузить* → *Установить* → *Открыть*.
 
 3. Чтобы настроить AdGuard для Safari, включите расширения AdGuard в настройках Safari. В уведомлении нажмите *Исправить*. В открывшемся окне поставьте галочки напротив расширений AdGuard.
 

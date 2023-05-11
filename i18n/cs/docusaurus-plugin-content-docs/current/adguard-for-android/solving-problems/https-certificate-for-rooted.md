@@ -1,63 +1,63 @@
 ---
-title: Moving CA certificate to System store on rooted devices
+title: Přesunutí certifikátu CA do systémového úložiště na zařízeních s root přístupem
 sidebar_position: 13
 ---
 
-AdGuard for Android provides a feature called [HTTPS filtering](../../overview#https-filtering) that makes it possible to [filter encrypted HTTPS traffic](/general/https-filtering/what-is-https-filtering) on your Android device. This feature requires adding the AdGuard's CA certificate to the list of trusted certificates.
+AdGuard pro Android nabízí funkci nazvanou [HTTPS filtrování](../../overview#https-filtering), která umožňuje [filtrovat šifrovaný provoz HTTPS](/general/https-filtering/what-is-https-filtering) v zařízení se systémem Android. Tato funkce vyžaduje přidání certifikátu CA AdGuardu do seznamu důvěryhodných certifikátů.
 
-On non-rooted devices CA certificates can be installed to the **User store**. Only a limited subset of apps (mostly browsers) trust CA certificates installed to the User store, meaning HTTPS filtering will work only for such apps.
+V zařízeních bez přístupu root lze certifikáty CA nainstalovat do **Uživatelského úložiště**. Pouze omezená podmnožina aplikací (většinou prohlížeče) důvěřuje certifikátům CA nainstalovaným do uživatelského úložiště, což znamená, že filtrování HTTPS bude fungovat pouze pro tyto aplikace.
 
-However, on rooted devices, you can install the certificate to the **System store** and allow HTTPS filtering of other apps' traffic too.
+Na zařízeních s root přístupem však můžete nainstalovat certifikát do **Systémového úložiště** a povolit HTTPS filtrování provozu jiných aplikací.
 
-Here's how to do that.
+Zde je návod, jak to udělat:
 
-## How to install AdGuard's Certificate to System store (on a rooted device)
+## Jak nainstalovat certifikát AdGuardu do systémového úložiště (na zařízení s root přístupem)
 
-1. Enable HTTPS filtering in AdGuard for Android and save AdGuard's certificate to the User store (use [this instruction](../../overview#https-filtering) if needed)
-2. Go to **AdGuard app** → **Menu** (≡) → **Settings** → **Network** → **HTTPS filtering** → **Security certificate** → tap “**Copy to the system store**”
+1. Povolte filtrování HTTPS v AdGuardu pro Android a uložte certifikát AdGuardu do uživatelského úložiště (v případě potřeby použijte [tento pokyn](../../overview#https-filtering))
+2. Jděte do **aplikace AdGuard** → **Menu** (≡) → **Nastavení** → **Síť** → **HTTPS filtrování** → **Bezpečnostní certifikát** → klepněte na "**Kopírovat do systémového úložiště**"
 
-That is enough for older versions of Magisk.
+To stačí pro starší verze Magisk.
 
-However, if you have a newer version, you will get this message:
+Pokud však máte novější verzi, zobrazí se tato zpráva:
 
-> Unable to copy the certificate to the system store. Try using “AdGuard Certificate” module.
+> Nelze zkopírovat certifikát do systémového úložiště. Zkuste použít modul "AdGuard Certificate".
 
-In that case, proceed to steps below:
+V takovém případě přejděte k následujícím krokům:
 
-3. Go to **Magisk** -> **Settings**
+3. Přejděte do **Magisk** → **Nastavení**
 
-![Open Magisk settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-1.png)
+![Otevřít nastavení Magisk *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-1.png)
 
-4. Enable **Zygisk**
+4. Zapněte **Zygisk**
 
-![Enable Zygisk *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-2.png)
+![Zapnout Zygisk *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-2.png)
 
-![Go back to Magisk main screen *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-3.png)
+![Návrat na hlavní obrazovku Magisk *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-3.png)
 
-5. Download the `.zip` file (of “AdGuard Certificate” module) from the [latest release on GitHub](https://github.com/AdguardTeam/adguardcert/releases/latest/)
+5. Stáhněte soubor `.zip` (modulu "AdGuard Certificate") z nejnovější vydání na [na GitHubu](https://github.com/AdguardTeam/adguardcert/releases/latest/)
 
-6. Go to **Magisk** → **Modules** → **Install from storage** and select the downloaded `.zip` file
+6. Přejděte do **Magisk** → **Moduly** → **Instalovat z úložiště** a vyberte stažený soubor `.zip`
 
-![Open Magisk modules *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-4.png)
+![Otevřít moduly Magisk *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-4.png)
 
-![Install from storage *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-5.png)
+![Instalovat z úložiště *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-5.png)
 
-![Select AdGuard certificate module *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-6.png)
+![Vybrat modul AdGuard Certificate *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-6.png)
 
-7. Reboot
+7. Restartujte
 
-![Reboot the device](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-7.png)
+![Restartovat zařízení](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-7.png)
 
-If a new version of "AdGuard certificate" module comes out, repeat steps 3-7 to update the module.
+Pokud vyjde nová verze modulu "AdGuard Certificate", zopakujte kroky 3-7 a modul aktualizujte.
 
-The module does its work during the system boot. If your AdGuard certificate changes, you'll have to reboot the device for the new certificate to be copied to the system store.
+Modul vykonává svou práci během zavádění systému. Pokud se váš certifikát AdGuardu změní, budete muset zařízení restartovat, aby se nový certifikát zkopíroval do systémového úložiště.
 
-### Bromite browser
+### Prohlížeč Bromite
 
-Please note that in order for **Bromite** browser to work properly, in addition to the steps mentioned above, you need to set "Allow user certificates" in `chrome://flags` to "Enabled" state.
+Vezměte prosím na vědomí, že pro správnou funkci **Bromite** je kromě výše uvedených kroků nutné nastavit položku "Povolit uživatelské certifikáty" v `chrome://flags` do stavu "Povoleno".
 
-### Chrome and Chromium-based browsers
+### Chrome a prohlížeče založené na Chromium
 
-Long story short, you will have no problems with HTTPS filtering in Chrome and Chromium-based browsers on rooted devices, if you use "AdGuard Certificate" module.
+Zkrátka a dobře, pokud použijete modul "AdGuard Certificate", nebudete mít s filtrováním HTTPS v prohlížečích Chrome a Chromium na zařízeních s přístupem root žádné problémy.
 
-Here is a bit more detailed explanation: Chrome (and subsequently many other Chromium-based browsers) has recently started requiring CT logs for CA certs found in the **System store**. "AdGuard Certificate" module copies AdGuard's CA certificate from the **User store** to the **System store**. It also contains a Zygisk module that reverts any modifications done by Magisk for [certain browsers](https://github.com/AdguardTeam/adguardcert/blob/master/zygisk_module/jni/browsers.inc). This way the browsers only find AdGuard’s certificate in the User store and don’t complain about the missing CT log, while other apps continue to use the same certificate from the System store.
+Zde je trochu podrobnější vysvětlení: Chrome (a následně mnoho dalších prohlížečů založených na Chromium) začal nedávno vyžadovat protokoly CT pro certifikáty CA nalezené v **Systémovém úložišti**. Modul "AdGuard Certificate" zkopíruje certifikát CA AdGuardu z **Uživatelského úložiště** do **Systémového úložiště**. Obsahuje také modul Zygisk, který vrátí všechny úpravy provedené přes Magisk pro [některé prohlížeče](https://github.com/AdguardTeam/adguardcert/blob/master/zygisk_module/jni/browsers.inc). Prohlížeče tak najdou certifikát AdGuardu pouze v Uživatelském úložišti a nebudou si stěžovat na chybějící protokol CT, zatímco ostatní aplikace budou nadále používat stejný certifikát ze Systémového úložiště.

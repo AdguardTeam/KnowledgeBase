@@ -1,20 +1,22 @@
 ---
-title: How to purchase
+title: How to purchase/upgrade
 sidebar_position: 2
 ---
 
-## How to purchase a license
+## How to purchase a license{#purchase}
 
-AdGuard license can be bought on [adguard.com](https://adguard.com/license.html). AdGuard Pro for iOS can be bought on the App Store. Ad Blocker licenses are also sold by various distributors.
+A licença do AdGuard pode ser comprada em [adguard.com](https://adguard.com/license.html). AdGuard Pro para iOS pode ser comprado na App Store. As licenças do Bloqueador de Anúncios AdGuard também são vendidas por vários distribuidores.
 
-> The availability of AdGuard products in app stores and by distributors depends on your country.
+> A disponibilidade dos produtos AdGuard em lojas de aplicativos e por distribuidores depende do seu país.
 
-## How to get a refund
+## How to upgrade a license{#upgrade}
 
-In accordance with our [Terms of Sale](https://adguard.com/terms-of-sale.html), you can get a 100% refund on the AdGuard license key you purchased at https://adguard.com. To get a refund, contact our support team at **support@adguard.com** and indicate the payment option you've used.
+To make more use of your AdGuard products, you can upgrade your license for the following benefits.
 
-A refund may be denied if you:
-* purchased the license more than 60 days ago,
-* purchaded the license by a distributor,
-* purchased the license on the App Store,
-* applied for a partial refund for license key upgrade or prolongation.
+1. Para aumentar a funcionalidade dos seus produtos AdGuard, você pode **atualizar sua licença gratuita ou de avaliação para a versão completa**.
+2. To extend the number of devices, you can **upgrade your Personal license to a Family one**.
+3. You can also **upgrade your [subscription](../what-is) to a Lifetime license**.
+
+Você pode atualizar sua licença:
+  * purchasing another license on the [official AdGuard website](https://adguard.com),
+  * clicking the *Upgrade to Lifetime* and/or *Increase device limit* in your AdGuard account: ![Upgrade *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)

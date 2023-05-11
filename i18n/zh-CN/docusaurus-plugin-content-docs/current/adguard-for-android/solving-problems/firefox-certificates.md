@@ -12,12 +12,12 @@ sidebar_position: 11
 为了让 AdGuard 证书在火狐浏览器中受信任，请执行以下操作：
 
 1. 打开浏览器
-2. 前往**「设置」**>**「关于 Firefox Nightly」**
+2. Go to **Settings** → **About Firefox**.
 
 ![关于 Firefox *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
 
 3. 点击 Firefox 徽标五次
-4. 前往**「设置」**>**「Secret Settings」**
+4. Navigate to **Settings** → **Secret Settings**.
 
 ![秘密设置 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
 
@@ -30,12 +30,12 @@ sidebar_position: 11
 1. [安装以及配置](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB；
 > 在 Windows 平台上，**三星**用户最可能需要安装此[实用程序](https://developer.samsung.com/mobile/android-usb-driver.html)（Utility）。
 2. 启用**「开发者模式」**以及开启**「USB 调试」**：
-    - 在手机上打开**「设置」**；
-    - 前往**系统**部分（设置中最后一项选项）。 这里前往**关于手机**；
-    - 点击**版本号**7次。 之后您将会收到通知说明现在**您是开发人员**（如需要的话，输入解锁密码）；
-    - 前往**系统设置** > **开发人员选项** > 向下移动，启用 **USB 调试** > 在是否**允许 USB 调试**提示中仔细阅读警告后，确定允许调试。
+    - Open the **Settings** app on your phone;
+    - 前往**系统**部分（设置中最后一项选项）。 In this section, find the sub-item **About phone**;
+    - Tap the **Build number** line 7 times. 之后您将会收到通知说明现在**您是开发人员**（如需要的话，输入解锁密码）；
+    - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
 3. 安装[火狐浏览器](https://www.mozilla.org/en-US/firefox/releases/)（发布版本）；
-4. 打开 **AdGuard 设置** > **「网络」** > **「HTTPS 过滤」** >「安装证书至 **Firefox 浏览器**」> **「为旧版本安装」**；
+4. Open the **AdGuard settings** → **Network** → **HTTPS Filtering** → Install the certificate in **Firefox** → **INSTALL FOR OLD VERSIONS**;
 5. 使用 `adb shell su` 和 `cd data/data/...` 打开 `data/data/org.mozilla.firefox/files/mozilla` 文件夹，找 `xxxxxxx.default` 文件并记住其名称；
 6. 在指定文件夹里我们需要两个文件：
     - `cert9.db`

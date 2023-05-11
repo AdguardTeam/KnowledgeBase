@@ -4,95 +4,95 @@
     "description": "The title of the footer links column with title=adguard in the footer"
   },
   "link.title.products": {
-    "message": "Products",
+    "message": "Produkty",
     "description": "The title of the footer links column with title=products in the footer"
   },
   "link.title.support": {
-    "message": "Support",
+    "message": "Podpora",
     "description": "The title of the footer links column with title=support in the footer"
   },
   "link.title.license": {
-    "message": "License",
+    "message": "Licence",
     "description": "The title of the footer links column with title=license in the footer"
   },
   "link.item.label.official_website": {
-    "message": "Official website",
+    "message": "Oficiální stránka",
     "description": "The label of footer link with label=official_website linking to https://adguard.com"
   },
   "link.item.label.about": {
-    "message": "About",
+    "message": "Informace",
     "description": "The label of footer link with label=about linking to https://adguard.com/contacts.html"
   },
   "link.item.label.in_the_press": {
-    "message": "In the press",
+    "message": "V médiích",
     "description": "The label of footer link with label=in_the_press linking to https://adguard.com/press-releases.html"
   },
   "link.item.label.media_kits": {
-    "message": "Media kits",
+    "message": "Sady médií",
     "description": "The label of footer link with label=media_kits linking to https://adguard.com/media-materials.html"
   },
   "link.item.label.awards": {
-    "message": "Awards",
+    "message": "Ocenění",
     "description": "The label of footer link with label=awards linking to https://adguard.com/awards.html"
   },
   "link.item.label.adguard_for_windows": {
-    "message": "AdGuard for Windows",
+    "message": "AdGuard pro Windows",
     "description": "The label of footer link with label=adguard_for_windows linking to https://adguard.com/adguard-windows/overview.html"
   },
   "link.item.label.adguard_for_android": {
-    "message": "AdGuard for Android",
+    "message": "AdGuard pro Android",
     "description": "The label of footer link with label=adguard_for_android linking to https://adguard.com/adguard-android/overview.html"
   },
   "link.item.label.adguard_for_mac": {
-    "message": "AdGuard for Mac",
+    "message": "AdGuard pro macOS",
     "description": "The label of footer link with label=adguard_for_mac linking to https://adguard.com/adguard-mac/overview.html"
   },
   "link.item.label.adguard_for_ios": {
-    "message": "AdGuard for iOS",
+    "message": "AdGuard pro iOS",
     "description": "The label of footer link with label=adguard_for_ios linking to https://adguard.com/adguard-ios/overview.html"
   },
   "link.item.label.adguard_for_ios_pro": {
-    "message": "AdGuard for iOS Pro",
+    "message": "AdGuard pro iOS Pro",
     "description": "The label of footer link with label=adguard_for_ios_pro linking to https://adguard.com/adguard-ios-pro/overview.html"
   },
   "link.item.label.support_center": {
-    "message": "Support Center",
+    "message": "Centrum podpory",
     "description": "The label of footer link with label=support_center linking to https://adguard.com/support.html"
   },
   "link.item.label.how_to_create_your_own_ad_filter": {
-    "message": "How to create your own ad filter",
+    "message": "Jak vytvořit váš vlastní filtr reklam",
     "description": "The label of footer link with label=how_to_create_your_own_ad_filter linking to /general/ad-filtering/create-own-filters"
   },
   "link.item.label.adguard_ad_filters": {
-    "message": "AdGuard Ad Filters",
+    "message": "Filtry reklam AdGuard",
     "description": "The label of footer link with label=adguard_ad_filters linking to /general/ad-filtering/adguard-filters"
   },
   "link.item.label.removal_instructions": {
-    "message": "Removal Instructions",
+    "message": "Pokyny pro odstranění",
     "description": "The label of footer link with label=removal_instructions linking to https://adguard.com/removal.html"
   },
   "link.item.label.userscripts": {
-    "message": "Userscripts",
+    "message": "Uživatelské skripty",
     "description": "The label of footer link with label=userscripts linking to /general/userscripts"
   },
   "link.item.label.purchase_license": {
-    "message": "Purchase License",
+    "message": "Zakoupit licenci",
     "description": "The label of footer link with label=purchase_license linking to https://adguard.com/license.html"
   },
   "link.item.label.recover_license": {
-    "message": "Recover License",
+    "message": "Obnovit licenci",
     "description": "The label of footer link with label=recover_license linking to /general/license/what-is"
   },
   "link.item.label.terms_of_sale": {
-    "message": "Terms of sale",
+    "message": "Podmínky prodeje",
     "description": "The label of footer link with label=terms_of_sale linking to https://adguard.com/terms-of-sale.html"
   },
   "link.item.label.get_free_license": {
-    "message": "Get Free License",
+    "message": "Získejte licenci zdarma",
     "description": "The label of footer link with label=get_free_license linking to https://adguard.com/get-adguard-for-free.html"
   },
   "link.item.label.contribute_to_adguard": {
-    "message": "Contribute to AdGuard",
+    "message": "Přispět na AdGuard",
     "description": "The label of footer link with label=contribute_to_adguard linking to https://adguard.com/contribute.html"
   },
   "copyright": {

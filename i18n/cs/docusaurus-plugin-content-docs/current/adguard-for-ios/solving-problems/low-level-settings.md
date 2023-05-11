@@ -1,48 +1,48 @@
 ---
-title: Low-level Settings guide
+title: Průvodce nízkoúrovňových nastavení
 sidebar_position: 5
 ---
 
-## How to reach the Low-level settings
+## Jak dosáhnout nízkoúrovňových nastavení
 
-> Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only open this section if you are sure of what you are doing or our support-team has asked you about it.
+> Změna *Nízkoúrovňových nastavení* může způsobit problémy s výkonem AdGuardu, může přerušit internetové připojení nebo ohrozit vaši bezpečnost a soukromí. Tuto část byste měli otevřít pouze v případě, že jste si jisti tím, co děláte, nebo pokud se vás na to zeptal náš tým podpory.
 
-To go to *Low-level settings*, tap the gear icon at the bottom right of the screen to open *Settings*. Select the *General* section and then toggle on the *Advanced mode* switch, after that the *Advanced settings* section will appear below. Tap *Advanced settings* to reach the *Low-level settings* section.
+Chcete-li přejít na *Nízkoúrovňová nastavení*, klepněte na ikonu ozubeného kola v pravém dolním rohu obrazovky a otevřete *Nastavení*. Vyberte sekci *Obecné* a poté přepněte přepínač *Pokročilý režim*, poté se níže zobrazí sekce *Pokročilá nastavení*. Klepnutím na *Pokročilá nastavení* přejděte do části *Nízkoúrovňová nastavení*.
 
-## Low-level settings
+## Nízkoúrovňová nastavení
 
-### Tunnel mode
+### Režim Tunel
 
-There are two main tunnel modes: *Split* and *Full*. *Split-Tunnel* mode provides compatibility of AdGuard and so-called "Personal VPN" apps. In *Full-Tunnel* mode no other VPN can work simultaneously with AdGuard.
+Existují dva hlavní režimy tunelu: *Dělený* a *Úplný*. Režim *Dělený tunel* poskytuje kompatibilitu aplikací AdGuard a takzvaných "Osobních VPN". V režimu *Úplný tunel* nemůže žádná jiná VPN pracovat současně s AdGuardem.
 
-There is a specific feature of *Split-Tunnel* mode: if DNS proxy does not perform well, for example, if the response from the AdGuard DNS server was not returned in time, iOS will "amerce" it and reroute traffic through DNS server, specified in iOS settings. No ads are blocked at this time and DNS traffic is not encrypted.
+Existuje specifická funkce režimu *Dělený tunel*: pokud proxy server DNS nefunguje dobře, například pokud se odpověď ze serveru AdGuard DNS nevrátila včas, systém iOS jej "zneplatní" a přesměruje provoz přes server DNS zadaný v nastavení systému iOS. V tuto chvíli nejsou blokovány žádné reklamy a provoz DNS není šifrován.
 
-In *Full-Tunnel* mode only the DNS server specified in AdGuard settings is used. If it does not respond, the Internet will simply not work. Enabled *Full-Tunnel* mode may cause the incorrect performance of some programs (for instance, Facetime), and lead to problems with app updates.
+V režimu *Úplný tunel* se používá pouze server DNS zadaný v nastavení AdGuardu. Pokud neodpovídá, internet jednoduše nefunguje. Zapnutý režim *Úplný tunel* může způsobit nesprávný výkon některých programů (například FaceTime) a vést k problémům s aktualizacemi aplikací.
 
-By default, AdGuard uses *Split-Tunnel* mode as the most stable option.
+Ve výchozím nastavení používá AdGuard režim *Dělený tunel* jako nejstabilnější možnost.
 
-There is also an additional mode called *Full-Tunnel (without VPN icon)*. This is exactly the same as *Full-Tunnel* mode, but it is set up so that the VPN icon is not displayed in the system line.
+K dispozici je také další režim nazvaný *Úplný tunel (bez ikony VPN)*. Tento režim je naprosto stejný jako režim *Úplný tunel*, ale je nastaven tak, že se v systémovém řádku nezobrazuje ikona VPN.
 
-### Blocking mode
+### Režim blokování
 
-In this module you can select the way AdGuard will respond to DNS queries that should be blocked: REFUSED — respond with REFUSED code NXDOMAIN — respond with NXDOMAIN code Unspecified IP — respond with zero IP address Custom IP — respond with a manually set IP address
+V tomto modulu můžete vybrat způsob, jakým bude AdGuard reagovat na dotazy DNS, které mají být blokovány: REFUSED — odezva s kódem REFUSED NXDOMAIN — odezva s kódem NXDOMAIN Unspecified IP — odezva s nulovou IP adresou Custom IP — odezva s ručně nastavenou IP adresou
 
-### Block IPv6
+### Blokování IPv6
 
-By moving the toggle to the right, you activate IPv6 query blocking (AAAA requests).
+Posunutím přepínače doprava zapnete blokování dotazů IPv6 (požadavky AAAA).
 
-### Blocked response TTL
+### Blokovaná odezva TTL
 
-Here you can specify the TTL (time to live) value that will be returned in response to a blocked request.
+Zde můžete zadat hodnotu TTL (time to live), která bude vrácena jako odpověď na zablokovaný požadavek.
 
-### Bootstrap servers
+### Bootstrap servery
 
-For DNS-over-HTTPS, DNS-over-TLS, and DNS-over-QUIC a bootstrap server is required for getting the IP address of the main DNS server. If not specified, the DNS server from iOS settings is used as the bootstrap server.
+Pro DNS-over-HTTPS, DNS-over-TLS a DNS-over-QUIC je vyžadován bootstrap server pro získání IP adresy hlavního serveru DNS. Pokud není zadán, použije se jako bootstrap server DNS server z nastavení systému iOS.
 
-### Fallback servers
+### Záložní server
 
-Here you can specify an alternate server to which a request will be rerouted if the main server fails to respond. If not specified, the system DNS server will be used as the fallback. It is also possible to specify `none`, in this case, there will be no fallback server set and only the main DNS server will be used.
+Zde můžete zadat alternativní server, na který bude požadavek přesměrován, pokud hlavní server neodpoví. Pokud není zadán, použije se jako záložní server systémový DNS server. Je také možné zadat `žádný`, v tomto případě nebude nastaven žádný záložní server a bude použit pouze hlavní DNS server.
 
-### Background app refresh time
+### Doba obnovení aplikace na pozadí
 
-Here you can select the frequency at which the application will check for filter updates while in the background. Note that update checks will not be performed more often than the specified period, but the exact intervals may not be respected.
+Zde můžete vybrat frekvenci, s jakou bude aplikace na pozadí kontrolovat aktualizace filtrů. Všimněte si, že kontroly aktualizací nebudou prováděny častěji než v zadané periodě, ale přesné intervaly nemusí být dodrženy.

@@ -1,233 +1,233 @@
 ---
-title: Features overview
+title: Přehled funkcí
 sidebar_position: 1
 ---
 
-> Disclaimer: AdGuard for Android is not to be confused with AdGuard Content Blocker. AdGuard Content Blocker is an app available in Google Play that has truncated functionality to meet restrictions imposed by the store. AdGuard for Android, on the contrary, is a powerful application to block ads, manage applications, and perform other roles that will be described in this article. The only place it can be downloaded from is [the AdGuard website](https://adguard.com/adguard-android/overview.html).
+> Upozornění: AdGuard pro Android nelze zaměňovat s Blokátorem obsahu AdGuard. Blokátor obsahu AdGuard je aplikace dostupná v Google Play, která má omezené funkce, aby splňovala stanovy obchodu. AdGuard pro Android je naopak výkonná aplikace pro blokování reklam, správu aplikací a další funkce, které jsou popsány v tomto článku. AdGuard pro Android můžete stáhnout [webových stránek AdGuardu](https://adguard.com/adguard-android/overview.html).
 
 ## Blokování reklam
 
-Any ad blocker's main purpose is to block ads, and for the majority of AdGuard software ad-blocking algorithms are mostly the same. The mechanism of filtering ads is described [here](/general/ad-filtering/how-ad-blocking-works).
+Hlavním účelem blokátoru reklam je blokování reklam, algoritmy blokování reklam jsou u většiny programů AdGuard stejné. Mechanismus filtrování reklam je popsán [zde](/general/ad-filtering/how-ad-blocking-works).
 
 ![Blokování reklam](https://cdn.adtidy.org/public/Adguard/Blog/manifestv3/adblockingworks.png)
 
-The ad-blocking feature is pretty obvious in its concept, but there are some points worthy of a separate mention. Most importantly, AdGuard works as a universal filter sifting through your apps traffic and deciding what to do with this or that web request. The whole process is managed by filters — lists of special rules. The program has a default and constantly updated set of filters but you can also add your own filtering rules and filters to this set.
+Funkce blokování reklam je ve svém pojetí zcela zřejmá, ale některé body si zaslouží samostatnou zmínku. Nejdůležitější je, že AdGuard funguje jako univerzální filtr, který prochází provoz aplikací a rozhoduje, co s tím či oním webovým požadavkem udělat. Celý proces se řídí pomocí filtrů — seznamů speciálních pravidel. Program má výchozí a neustále aktualizovanou sadu filtrů, ale můžete do ní přidat i vlastní pravidla filtrování a filtry.
 
-Most mobile ad blockers for Android use this principle, but what is pretty much the whole app in their case is only one of the many features for AdGuard. Read [this comparative article](https://adguard.com/en/blog/adguard-vs-adaway-dns66.html) to learn the differences between AdGuard and other ad blockers.
+Tento princip využívá většina blokátorů mobilních reklam pro Android. To, co je v jejich případě v podstatě celá aplikace, je pro AdGuard pouze jednou z mnoha funkcí. Přečtěte si [tento srovnávací článek](https://adguard.com/en/blog/adguard-vs-adaway-dns66.html) a zjistěte, jaké jsou rozdíly mezi AdGuardem a jinými blokátory reklam.
 
-## Filters
+## Filtry
 
-The program uses a lot of different filters, our own and third-party ones, sorted by language and their purpose. For example, filters in the Annoyances category are very different from the language-specific ones.
+Program používá mnoho různých filtrů, vlastních i cizích, seřazených podle jazyka a účelu. Například filtry v kategorii Obtěžování se velmi liší od jazykově specifických filtrů.
 
-![Filters *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filters1.png)
+![Filtry *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filters1.png)
 
-Find out more about all the filters available for AdGuard products by reading their descriptions in the app or [this comprehensive article](/general/ad-filtering/adguard-filters).
+Více informací o všech filtrech dostupných pro produkty AdGuardu získáte přečtením jejich popisu v aplikaci nebo v [tomto obsáhlém článku](/general/ad-filtering/adguard-filters).
 
 ## Vlastní filtry
 
-![Custom filters *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/custom-filters.png)
+![Vlastní filtry *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/custom-filters.png)
 
-AdGuard allows you to create your own custom filters, using the same type of rules that we have in our filters. If you want to try your hand at this, we would recommend studying [the article on creating your own ad filters](/general/ad-filtering/create-own-filters) which describes the AdGuard rules syntax in detail and provides plenty of examples.
+AdGuard umožňuje vytvářet vlastní filtry pomocí stejného typu pravidel, jaká máme v našich filtrech. Pokud si to chcete vyzkoušet, doporučujeme prostudovat článek o [vytváření vlastních filtrůreklam ](/general/ad-filtering/create-own-filters), který podrobně popisuje syntaxi pravidel AdGuardu a uvádí spoustu příkladů.
 
-> Tip: use the Import feature to transfer your rules to a different device.
+> Tip: pomocí funkce Import přeneste svá pravidla do jiného zařízení.
 
-## HTTPS filtering
+## HTTPS filtrování {#https-filtering}
 
-Nowadays almost all websites work via HTTPS, the web protocol where the last S letter stands for "secure". It happened so that most advertisers use this protocol as well, this is why [HTTPS filtering](/general/https-filtering/what-is-https-filtering) is really crucial for a modern ad blocker.
+V dnešní době téměř všechny webové stránky fungují prostřednictvím protokolu HTTPS, kde poslední písmeno S znamená "secure". Stalo se, že tento protokol používá i většina inzerentů, a proto je [Filtrování HTTPS](/general/https-filtering/what-is-https-filtering) pro moderní blokátor reklam opravdu klíčové.
 
-![What is https](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https.png)
+![Co je https](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https.png)
 
-To be able to filter HTTPS traffic, AdGuard needs to install a certificate into your device's user storage. On older versions of Android OS this was done automatically during the onboarding process or later via AdGuard settings, and it only required a couple of taps. On Android 11 and later automatic certificate installation is no longer available. Now you need to install the certificate manually.
+Aby mohl AdGuard filtrovat přenosy HTTPS, musí do uživatelského úložiště vašeho zařízení nainstalovat certifikát. Ve starších verzích operačního systému Android se to provádělo automaticky během procesu přihlašování nebo později prostřednictvím nastavení AdGuardu a vyžadovalo to pouze několik klepnutí. V systému Android 11 a novějším již není k dispozici automatická instalace certifikátu. Certifikát je nutné nainstalovat ručně.
 
-Here is the installation instruction:
+Zde jsou pokyny k instalaci:
 
-1. Go to the app's main screen and tap *Turn on* next to the *HTTPS filtering is off* message (it will be highlighted in orange if the AdGuard certificate is not installed yet).
+1. Přejděte na hlavní obrazovku aplikace a klepněte na *Zapnout* vedle zprávy *Filtrování HTTPS je vypnuto* (pokud certifikát AdGuardu ještě není nainstalován, bude zvýrazněn oranžově).
 
-2. A new screen will appear, tap *Next*, *Next* and *Save it now* when prompted to download the AdGuard certificate.
+2. Zobrazí se nová obrazovka, na výzvu ke stažení certifikátu AdGuardu klepněte na *Další*, *Další* a *Uložit nyní*.
 
-3. After the certificate is downloaded, you will see a new screen. Tap *Open security settings*.
+3. Po stažení certifikátu se zobrazí nová obrazovka. Klepněte na *Otevřít nastavení zabezpečení*.
 
-4. This will bring up system settings. Scroll down to *Advanced*, open it and then tap *Encryption & credentials* (these settings may be called variously on different devices — the main thing is to choose advanced security settings).
+4. Zobrazí se nastavení systému. Přejděte dolů na *Pokročilé*, otevřete, poté klepněte na *Šifrování a pověření* (tato nastavení se mohou na různých zařízeních jmenovat různě — hlavní je zvolit pokročilé nastavení zabezpečení).
 
-5. Tap *Install certificate* and then *CA certificate*.
+5. Klepněte na *Instalovat certifikát* a poté na *Certifikát CA*.
 
-6. A warning message will appear. Read through it and tap *Install anyway* to proceed.
+6. Zobrazí se varovná zpráva. Přečtěte si ji a klepnutím na *Přesto instalovat* pokračujte.
 
-7. Select the recently downloaded AdGuard certificate. A *CA certificate installed* toast message should show up.
+7. Vyberte nedávno stažený certifikát AdGuardu. Měla by se zobrazit zpráva *CA certifikát nainstalován*.
 
-8. The AdGuard certificate is successfully installed and HTTPS filtering is working now!
+8. Certifikát AdGuardu byl úspěšně nainstalován a filtrování HTTPS nyní funguje!
 
-> If you update from Android 10 to Android 11, there's a chance that the already installed certificate will still be accepted. Otherwise, the *HTTPS filtering is off* warning will appear on the main screen, highlighted in orange. So you'll need to go through the same process of reinstalling the certificate manually.
+> Pokud aktualizujete systém Android 10 na Android 11, je možné, že již nainstalovaný certifikát bude stále akceptován. V opačném případě se na hlavní obrazovce zobrazí oranžově zvýrazněné upozornění *Filtrování HTTPPS je vypnuto*. Proto budete muset stejný proces přeinstalace certifikátu provést ručně.
 
-In case you have problems with the certificate installation, read [this article](../solving-problems/manual-certificate) or contact our support team at support@adguard.com.
+V případě problémů s instalací certifikátu si přečtěte [tento článek](../solving-problems/manual-certificate) nebo kontaktujte náš tým podpory na adrese support@adguard.com.
 
-> **We want to emphasize that AdGuard Ad Blocker will function without HTTPS filtering. However, it won't be able to properly filter ads on sites that use the HTTPS protocol (most of sites do that). So if you want to use the full functionality of the app and get the best ad filtering quality and processing speed, we strongly recommend you to activate HTTPS-filtering.**
+> **Chceme zdůraznit, že blokátor reklam AdGuard bude fungovat i bez filtrování HTTPS. Nebude však schopen správně filtrovat reklamy na webech, které používají protokol HTTPS (většina webů tak činí). Pokud tedy chcete využívat všechny funkce aplikace a získat nejlepší kvalitu filtrování reklam a rychlost zpracování, důrazně doporučujeme aktivovat filtrování HTTPS.**
 
 ## Režim utajení
 
-Many websites gather information about their visitors, such as their IP addresses, information about the browser and operating system installed, screen resolution, and even what page the user came or was redirected from. Some web pages use cookies to mark the browser and save your personal settings, user preferences, or "recognize" you upon your next visit. Stealth Mode safeguards your personal information from such data and statistics gathering systems.
+Mnoho webových stránek shromažďuje informace o svých návštěvnících, například jejich IP adresy, informace o nainstalovaném prohlížeči a operačním systému, rozlišení obrazovky, a dokonce i o tom, na jakou stránku uživatel přišel nebo z jaké stránky byl přesměrován. Některé webové stránky používají soubory cookies k označení prohlížeče a uložení vašich osobních nastavení, uživatelských preferencí nebo k vašemu "rozpoznání" při příští návštěvě. Režim utajení chrání vaše osobní údaje před takovými systémy sběru dat a statistik.
 
-You can flexibly adjust the work of Stealth Mode: for instance, you can prohibit the website to receive the search request you used to find it on the Internet, automatically delete both third-party and website’s own cookies, and disable location sharing in your browser that can be used to track your whereabouts.
+Práci v Režimu utajení můžete flexibilně nastavit: můžete například zakázat, aby webová stránka obdržela požadavek na vyhledávání, který jste použili k jejímu nalezení na internetu, automaticky vymazat soubory cookies třetích stran i vlastní soubory cookies webové stránky a zakázat sdílení polohy ve vašem prohlížeči, které lze použít ke sledování vaší polohy.
 
-To learn all the main features and options you can manage in the Stealth mode settings, [read this article](/general/stealth-mode).
+Chcete-li se seznámit se všemi hlavními funkcemi a možnostmi, které můžete spravovat v nastavení Režimu utajení, přečtěte si [tento článek](/general/stealth-mode).
 
-![Stealth mode *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/stealth-mode.png)
+![Režim utajení *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/stealth-mode.png)
 
-## Browsing Security
+## Bezpečné prohlížení
 
-Phishing is a fraudulent online practice aimed at obtaining sensitive information like usernames, passwords, credit card details and such from internet users. This form of fraud, effected through spoof emailing and fake websites posing as trusted mediums like banks, social services etc., is causing more financial damage every year. As for malware (malicious software), it is as the name suggests — any type of software designed with the intent to damage the personal computer or other device it gets into. What once began as a prank now is a tool to steal confidential information from users and businesses.
+Krádež identity je podvodná online praktika, jejímž cílem je získat od uživatelů internetu citlivé informace, jako jsou uživatelská jména, hesla, údaje o kreditních kartách a podobně. Tato forma podvodu, která se uskutečňuje prostřednictvím podvržených e-mailů a falešných webových stránek vydávajících se za důvěryhodná média, jako jsou banky, sociální služby atd., způsobuje každým rokem velké finanční újmy. Co se týče malwaru (škodlivého softwaru), jak název napovídá, je jakýkoli typ softwaru navržený s cílem poškodit osobní počítač nebo jiné zařízení, do kterého se dostane. To, co kdysi začalo jako žert, je nyní nástrojem ke krádeži důvěrných informací uživatelů a firem.
 
-![Browsing security *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/browsing-security.png)
+![Bezpečné prohlížení *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/browsing-security.png)
 
-Fortunately, AdGuard's Browsing Security module protects you from visiting phishing and malicious websites. It also warns you about malware being downloaded onto your device. In case you want to learn more about Browsing Security, read [this article](/general/browsing-security).
+Modul Bezpečné prohlížení AdGuard vás naštěstí chrání před návštěvou těchto nebezpečných stránek. Upozorní vás také na malware stažený do vašeho zařízení. Pokud se chcete dozvědět více o Bezpečném prohlížení, přečtěte si [tento článek](/general/browsing-security).
 
-> But note that AdGuard for Android is not an antivirus. It will neither stop the actual download of a virus nor delete the already existing ones. For the complete protection of your device, we recommend using AdGuard in tandem with a dedicated AV tool.
+> Upozorňujeme však, že AdGuard pro Android není antivirus. Nezastaví ani samotné stahování viru, ani neodstraní již viry existující. Pro kompletní ochranu vašeho zařízení doporučujeme používat AdGuard společně se specializovaným antivirovým nástrojem.
 
-![Browsing security warning *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/browsing_security_warning.png)
+![Upozornění Bezpečného prohlížení *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/browsing_security_warning.png)
 
-At the same time, we'd like to emphasize that your personal data is *not* transferred anywhere, and AdGuard does *not* know which websites you are visiting. The security check is not performed against an open web address (URL) but through hash prefixes (hash is a certain data structure that renders unambiguous each address added to the base). However, you can send us information on the websites you visit to improve the database, if you opt to. Learn more about AdGuard's phishing and malware protection.
+Zároveň bychom rádi zdůraznili, že vaše osobní údaje *nejsou* nikam přenášeny a AdGuard *neví*, které webové stránky navštěvujete. Bezpečnostní kontrola se neprovádí na základě otevřené webové adresy (URL), ale prostřednictvím prefixů hash (hash je určitá datová struktura, která jednoznačně určuje každou adresu přidanou do základu). Pokud si to však přejete, můžete nám zasílat informace o vámi navštěvovaných webových stránkách za účelem vylepšení databáze. Přečtěte si více o AdGuard ochraně proti krádeži identity a malwaru.
 
-# Control your apps
+# Ovládání aplikací
 
-One of the main stated purposes of AdGuard for Android is to give users back the full control over their devices. With AdGuard, you can see comprehensive information about all web requests coming through your device. No app will be able to go online without you knowing.
+Jedním z hlavních cílů AdGuardu pro Android je vrátit uživatelům plnou kontrolu nad jejich zařízeními. Pomocí AdGuardu můžete zobrazit komplexní informace o všech webových požadavcích, které přicházejí skrze vaše zařízení. Žádná aplikace nebude moci být online bez vašeho vědomí.
 
-## Apps management
+## Správa aplikací
 
-In the Apps Management module you can choose which apps should have Wi-Fi or mobile data access, which will be filtered by AdGuard and which not. You can also change the background Internet access rules for your apps when the screen is locked. These settings can be applied to all installed apps at once or on the individual basis.
+V modulu Správa aplikací můžete zvolit, které aplikace mají mít přístup k Wi-Fi nebo mobilním datům, které budou filtrovány AdGuardem a které ne. Můžete také změnit pravidla přístupu k internetu na pozadí pro aplikace, když je obrazovka zamčená. Tato nastavení lze použít pro všechny nainstalované aplikace najednou nebo pro jednotlivé aplikace.
 
-![Apps management *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/apps-management.png)
+![Správa aplikací *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/apps-management.png)
 
-You can find extra settings in the upper right corner of the Apps Management screen. They will help you fine-tune AdGuard for Android to your preference. For example, you can make the common settings applicable to each and every app, or select the apps which need a more detailed approach.
+Další nastavení najdete v pravém horním rohu obrazovky s názvem Správa aplikací. Pomohou vám vyladit AdGuard pro Android podle vašich představ. Můžete například nastavit společná nastavení použitelná pro každou aplikaci nebo vybrat aplikace, které vyžadují podrobnější přístup.
 
 ![Chrome *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/chrome.png)
 
-By tapping the icons, you will see a screen showing app-specific traffic to help you make more informed decisions. AdGuard is of help not only with ad filtering and privacy protection, it can aid your device function better, saving battery life and traffic as well.
+Po klepnutí na ikony se zobrazí obrazovka s informacemi o provozu v jednotlivých aplikacích, které vám pomohou činit informovanější rozhodnutí. AdGuard vám pomůže nejen s filtrováním reklam a ochranou soukromí, ale také pomůže vašemu zařízení lépe fungovat, šetřit baterii a datový provoz.
 
-## Filtering log
+## Záznam filtrování
 
-In the Filtering Log, you can directly observe all web requests made by browsers and apps. Thanks to this feature, you have full control over all processes on your device.
+V záznamu filtrování můžete přímo sledovat všechny webové požadavky provedené prohlížeči a aplikacemi. Díky této funkci máte plnou kontrolu nad všemi procesy v zařízení.
 
-![Filtering log *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering-log.png)
+![Záznam filtrování *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filtering-log.png)
 
-You can block each request right there in one tap (or unblock it, if the request is already blocked). There's also detailed information about each request, although it is mostly aimed at the advanced users, particularly those who create their own filtering rules. We will be elaborating on it just a bit further below.
+Každý požadavek můžete jedním klepnutím zablokovat (nebo odblokovat, pokud je již zablokován). K dispozici jsou také podrobné informace o každém požadavku, i když jsou určeny především pokročilým uživatelům, zejména těm, kteří si vytvářejí vlastní pravidla filtrování. Níže se tomu budeme věnovat o něco podrobněji.
 
-## User rules
+## Uživatelská pravidla
 
-As mentioned above, AdGuard for Android uses a set of filters to block ads. And then there is the User rules section that allows you to create and adjust your own filtering rules. It is located in the Settings tab of the AdGuard menu.
+Jak bylo uvedeno výše, AdGuard pro Android používá k blokování reklam sadu filtrů. A pak je tu sekce Uživatelská pravidla, která umožňuje vytvářet a upravovat vlastní pravidla filtrování. Nachází se na kartě Nastavení v menu AdGuardu.
 
-![User rules *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/user-rules.png)
+![Uživatelská pravidla *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/user-rules.png)
 
-When you first install AdGuard, the User rules section is empty. To fill it with rules, you will need to understand the basics of the rules syntax. Don't worry if you are not familiar with it, here's a good place to start should you feel an urge to delve deeper into custom rules creation.
+Při první instalaci AdGuardu je sekce Uživatelská pravidla prázdná. Abyste ji mohli vyplnit pravidly, musíte znát základy syntaxe pravidel. Nebojte se, pokud s tím nejste obeznámeni. Zde je dobré místo, kde začít, pokud cítíte potřebu proniknout hlouběji do tvorby vlastních pravidel.
 
-By the way, whenever you use Filtering Log to block anything, a corresponding rule will appear in User rules, so use it if you ever want to undo the blocking. And generally speaking, Filtering Log and User rules go together particularly well: you can use the former to monitor requests in order to build a correct rule for the User rules.
+Mimochodem, kdykoli použijete záznam filtrování k zablokování čehokoli, objeví se v uživatelských pravidlech odpovídající pravidlo, takže pokud budete chtít zablokování zrušit, použijte jej. Obecně lze říci, že záznam filtrování a uživatelská pravidla jdou obzvláště dobře dohromady: první z nich můžete použít ke sledování požadavků, abyste mohli sestavit správné pravidlo pro uživatelská pravidla.
 
-## DNS filtering
+## DNS filtrování
 
-The DNS Filtering module allows to configure DNS settings on the user's device, including the chosen DNS server, DNS protocol, and DNS filters that block ads and trackers.
+Modul DNS filtrování umožňuje konfigurovat nastavení DNS v zařízení uživatele, včetně vybraného serveru DNS, protokolu DNS a filtrů DNS, které blokují reklamy a slídiče.
 
 ![AdGuard DNS](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/adguard_dns_en.jpg)
 
-A bit of a theory refresher: DNS stands for "Domain name system", and its purpose is to translate domain names into something browsers can understand, i.e. IP addresses. So, each time you go to a website, your browser sends a DNS request to a server, usually determined by your ISP. That server either redirects the request to another (upstream) server or replies with an IP address. If you use a special DNS server instead of a default one, it can send unsafe and potentially dangerous requests to the "void". Thus, the responses with the IP addresses won't be received and "bad requests" will be nipped in the bud.
+Malé osvěžení teorie: DNS je zkratka pro "Domain name system" (decentralizovaný systém doménových názvů) a jeho účelem je překládat domény do podoby srozumitelné prohlížečům, tj. IP adres. Pokaždé, když přejdete na webovou stránku, odešle váš prohlížeč požadavek DNS na server, který obvykle určuje váš poskytovatel internetových služeb. Tento server buď přesměruje požadavek na jiný (odchozí) server, nebo odpoví IP adresou. Pokud místo výchozího serveru DNS použijete speciální server DNS, může odesílat nebezpečné a potenciálně nebezpečné požadavky do "prázdna". Odpovědi s IP adresami tak nebudou přijímány a "špatné požadavky" budou zlikvidovány hned v zárodku.
 
-DNS filtering has its own separate tab within the AdGuard for Android app home screen. Here you can choose which type of DNS you wish to use (it can be either regular DNS or high-security DNS — we will get to that later on) as well as enable DNS-level blocking.
+DNS filtrování má na domovské obrazovce AdGuardu pro Android vlastní samostatnou kartu. Zde můžete zvolit typ DNS, který chcete používat (může to být běžný DNS nebo vysoce zabezpečený DNS — k tomu se dostaneme později) a také povolit blokování na úrovni DNS.
 
-## DNS blocking
+## DNS blokování
 
-DNS blocking is a standalone feature that complements AdGuard protection suite.
+DNS blokování je samostatná funkce, která doplňuje sadu ochrany AdGuardem.
 
-![DNS mechanism](https://cdn.adtidy.org/public/Adguard/Blog/android-features/DNS-mechanism.jpg)
+![Mechanismus DNS](https://cdn.adtidy.org/public/Adguard/Blog/android-features/DNS-mechanism.jpg)
 
-There are two methods of DNS blocking:
+Existují dva způsoby DNS blokování:
 
-1. Some DNS servers can block DNS requests to potentially harmful domains.
-2. There is built-in DNS filtering that works right on your device and can block DNS requests, in addition to what's blocked by the selected DNS server.
+1. Některé DNS servery mohou blokovat požadavky DNS na potenciálně škodlivé domény.
+2. K dispozici je vestavěné DNS filtrování, které funguje přímo v zařízení a může blokovat DNS požadavky kromě těch, které jsou blokovány vybraným serverem DNS.
 
-How exactly does DNS filtering work? It has a special DNS filter which contains a large list of ad and tracker domains, which it uses in conjunction with User rules to recognize 'bad' requests. Every request is checked against this filter, and if there's a hit, instead of forwarding it to the DNS server, it is being rerouted to a 'blackhole'.
+Jak přesně funguje DNS filtrování? Má speciální DNS filtr, který obsahuje rozsáhlý seznam reklamních a sledovacích domén, který ve spojení s uživatelskými pravidly používá k rozpoznání "špatných" požadavků. Každý požadavek je kontrolován podle tohoto filtru. Pokud je nalezena shoda, je namísto přesměrování na DNS server přesměrován do tzv. "černé díry".
 
-The simplicity of this approach is both a benefit and a disadvantage. The main advantage of this approach is that it's both battery life friendly and traffic-saving. Once a domain is blocked, it won't be requested again within an hour. The disadvantage would be the "roughness" of this method: specific URLs can't be blocked, only whole domains. Sometimes the only way to block ads by DNS is to add a rule that will break something at the same time. In this case, we just don't add this rule and the ad remains unblocked — because the alternative where the website does not work at all is even worse.
+Jednoduchost tohoto přístupu je výhodou i nevýhodou. Hlavní výhodou tohoto přístupu je, že je šetrný k životnosti baterie a šetří datový provoz. Jakmile je doména zablokována, nebude během hodiny znovu vyžádána. Nevýhodou je tzv. "hrubost" této metody: nelze blokovat konkrétní adresy URL, ale pouze celé domény. Někdy je jediným způsobem, jak blokovat reklamy pomocí DNS, přidat pravidlo, které zároveň něco poruší. V tomto případě toto pravidlo prostě nepřidáme a reklama zůstane zobrazena — protože alternativa, kdy webová stránka nefunguje vůbec, je ještě horší.
 
-## DNS servers
+## DNS servery
 
-But AdGuard for Android "DNS package" does not end just there. One of the useful perks is an option to select *absolutely any* DNS server to use. At your service is a list consisting of dozens of servers to choose from, from our own AdGuard DNS servers to other popular providers like Google DNS, Cloudflare and others. On top of that, if your favorite server is not in the default list, you still can enter its address manually and use it anyway. See the comprehensive list of popular DNS providers — you can find many DNS servers there and any to AdGuard with a tap of a finger.
+"DNS Balíček" AdGuard pro Android tím však nekončí. Jednou z užitečných výhod je možnost vybrat si *naprosto libovolný* DNS server, který chcete používat. K dispozici máte seznam desítek serverů, z nichž si můžete vybrat. Od našich vlastních serverů AdGuard DNS až po další populární poskytovatele, jako je Google DNS, Cloudflare a další. Pokud navíc váš oblíbený server není ve výchozím seznamu, můžete jeho adresu zadat ručně a použít ji i tak. Podívejte se na obsáhlý seznam oblíbených poskytovatelů DNS — najdete v něm mnoho serverů DNS, které můžete do AdGuardu přidat pouhým klepnutím prstu.
 
-There are several reasons to use a custom DNS server instead of one offered by your ISP by default. Some servers are faster, some provide ad blocking or parental control solutions, some enhance your privacy etc.
+Existuje několik důvodů, proč používat vlastní DNS server namísto serveru nabízeného poskytovatelem internetových služeb ve výchozím nastavení. Některé servery jsou rychlejší, některé poskytují řešení pro blokování reklam nebo rodičovskou kontrolu, některé zvyšují vaše soukromí atd.
 
-But DNS servers not only vary by function. Besides, they can also differ by supported protocol types. There are three main types of protocols that DNS servers work over: HTTPS, TLS, and QUIC. Correspondingly, there are DNS-over-HTTPS (DoH), DNS-over-TLS (DoT) and DNS-over-QUIC (DoQ). While the first two are standard protocols, the third (DoQ) is experimental, yet the most outstanding one. We'll describe it later. Choosing a DNS server from a trusted provider is essential to protect DNS traffic. When user's DNS traffic is safe, their privacy and security are increased, and it's easier to prevent eavesdropping and manipulation of DNS data via man-in-the-middle attacks (MITMs).
+DNS servery se však neliší pouze funkcí. Kromě toho se mohou lišit také podle podporovaných typů protokolů. DNS servery pracují se třemi hlavními typy protokolů: HTTPS, TLS a QUIC. Podle toho existují DNS-over-HTTPS (DoH), DNS-over-TLS (DoT) a DNS-over-QUIC (DoQ). Zatímco první dva jsou standardní protokoly, třetí (DoQ) je experimentální, ale nejvýznamnější. Popíšeme to později. Výběr DNS serveru od důvěryhodného poskytovatele je pro ochranu provozu DNS zásadní. Pokud je provoz DNS uživatele bezpečný, zvyšuje se jeho soukromí a bezpečnost a je snazší zabránit odposlechu a manipulaci s daty DNS prostřednictvím útoků typu man-in-the-middle (MITM).
 
 ### DNS-over-QUIC
 
-DNS-over-QUIC (DoQ) is a rather new encryption protocol and AdGuard DNS is the first public resolver that supports it. Unlike DoH and DoT, it uses QUIC as a transport protocol and finally brings DNS back to its roots — working over UDP. It brings all the good things that QUIC has to offer — out-of-the-box encryption, reduced connection times, better performance when data packets are lost. Also, QUIC is supposed to be a transport-level protocol and there are no risks of metadata leaks that could happen with DoH.
+DNS skrze QUIC (DoQ) je poměrně nový šifrovací protokol a AdGuard DNS je první veřejný řešitel, který jej podporuje. Na rozdíl od DoH a DoT používá jako transportní protokol QUIC a konečně vrací DNS k jeho kořenům — pracuje přes UDP. Přináší všechny dobré vlastnosti, které nabízí QUIC — výchozí šifrování, zkrácení doby připojení, lepší výkon při ztrátě datových paketů. Kromě toho má být QUIC protokolem na transportní úrovni a nehrozí zde žádné riziko úniku metadat, k němuž by mohlo dojít v případě DoH.
 
-To learn more about DNS-over-QUIC, check out [this article](https://adguard.com/en/blog/dns-over-quic.html) dedicated entirely to it.
+Chcete-li se dozvědět více o DNS-over-QUIC, přečtěte si [tento článek](https://adguard.com/en/blog/dns-over-quic.html), který je tomu věnovaný.
 
-To enable DoQ in AdGuard for Android, perform the following steps:
+Chcete-li zapnout DoQ v AdGuardu pro Android, proveďte následující kroky:
 
-* Open the app, then open the side menu
-* Go to *Settings > DNS Filtering* and enable it
-* Select any of AdGuard DNS servers from the list of available servers
-* Under *Server type* choose *DNS-over-QUIC*
+* Otevřete aplikaci a poté otevřete postranní menu
+* Přejděte do *Nastavení → DNS filtrování* a zapněte jej
+* Vyberte některý ze serverů AdGuard DNS ze seznamu dostupných serverů
+* V části *Typ serveru* vyberte *DNS-over-QUIC*
 
-## DNS user filter
+## Uživatelský filtr DNS
 
-It is very much like the regular User filter, but for DNS requests.
+Je velmi podobný běžnému uživatelskému filtru, ale pro požadavky DNS.
 
-![DNS user filter *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/dns-user-filter.png)
+![Uživatelský filtr DNS *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/dns-user-filter.png)
 
-You'll find DNS user filter at *Settings > DNS Filtering > DNS Requests blocking*. DNS User filter supports two types of syntax: a limited portion of AdGuard syntax and "hosts" syntax. You can read more about it in our Knowledge Base.
+Uživatelský filtr DNS najdete v *Nastavení → DNS filtrování → Blokování požadavků DNS*. Uživatelský filtr DNS podporuje dva typy syntaxe: omezenou část syntaxe AdGuardu a syntaxi "hosts". Další informace si můžete přečíst v naší databázi znalostí.
 
-## Custom DNS filters
+## Vlastní DNS filtry
 
-You can add any [custom DNS filters](https://filterlists.com/) or custom hosts lists. A useful feature considering how popular hosts lists are among Internet users.
+Můžete přidat libovolný počet [vlastních DNS filtrů](https://filterlists.com/) nebo vlastních seznamů hostitelů. Je to užitečná funkce vzhledem k tomu, jak jsou seznamy hostitelů mezi uživateli internetu oblíbené.
 
-![DNS filters *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/dns-filters.png)
+![DNS filtry *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/dns-filters.png)
 
-This option is available on the *Settings > DNS Filtering > DNS Requests blocking* screen.
+Tato možnost je k dispozici v sekci *Nastavení → DNS filtrování → Blokování požadavků DNS*.
 
-## Proxy and TOR
+## Proxy a TOR
 
-A proxy server is basically another computer serving as a hub that processes your internet requests. You can set up AdGuard to route all your device's traffic through any proxy — and you'll be able to configure the whole thing right inside the app. And here is [an instruction on how to set up a proxy](../solving-problems/outbound-proxy).
+Proxy server je v podstatě další počítač sloužící jako centrum, které zpracovává vaše internetové požadavky. AdGuard můžete nastavit tak, aby směroval veškerý provoz vašeho zařízení přes libovolný proxy server — a celou věc budete moci nakonfigurovat přímo v aplikaci. A zde je [návod, jak nastavit proxy](../solving-problems/outbound-proxy).
 
-> Some popular VPN providers offer an alternative way to use their service as a proxy. This can be used to run them alongside AdGuard in local VPN mode.
+> Někteří populární poskytovatelé VPN nabízejí alternativní způsob, jak používat jejich služby jako proxy. To lze použít ke spuštění spolu s AdGuardem v místním režimu VPN.
 
-![Proxy settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/proxy-settings.png)
+![Nastavení proxy *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/proxy-settings.png)
 
-Contrary to a popular opinion, using a proxy server is not just about bypassing access restriction to geoblocked resources. It is about security! If you are using a proxy server, intruders won't know what websites you visit. You can also use AdGuard along with the anonymity network TOR (we have already integrated AdGuard with Tor for your convenience!). Here is a [Wiki article](https://en.wikipedia.org/wiki/Tor_(anonymity_network)) where the whole concept of TOR network is nicely explained in case you wish to find out more.
+Navzdory rozšířenému názoru není používání proxy jen o obcházení omezení přístupu ke geoblokovaným zdrojům. Jde o bezpečnost! Pokud používáte proxy, útočníci nebudou vědět, jaké webové stránky navštěvujete. AdGuard můžete používat také společně s anonymní sítí TOR (pro vaše pohodlí jsme již AdGuard s Tor integrovali!). Zde je článek [Wiki](https://en.wikipedia.org/wiki/Tor_(anonymity_network)), kde je celý koncept sítě TOR pěkně vysvětlen, pokud se chcete dozvědět více.
 
-## Extensions support
+## Podpora rozšíření
 
-Userscripts (we also call them extensions) are basically mini-programs written in JavaScript that extend the functionality of one or more websites. Usually, you'd need some special userscript manager to add them, and it's traditionally more of a desktop thing. But with AdGuard everything is possible! Now you can add any userscripts by URL or load them from a file, and AdGuard will serve as a userscript manager and take care of the rest. Go to *Settings > Extensions* to enable some of the pre-installed extensions or to add custom userscripts.
+Uživatelské skripty (říkáme jim také rozšíření) jsou v podstatě miniprogramy napsané v jazyce JavaScript, které rozšiřují funkčnost jedné nebo více webových stránek. Obvykle byste k jejich přidání potřebovali nějaký speciální správce uživatelských skriptů a tradičně se jedná spíše o desktopovou záležitost. Ale s AdGuardem je možné všechno! Nyní můžete přidávat libovolné uživatelské skripty pomocí adresy URL nebo je načíst ze souboru a AdGuard bude sloužit jako správce uživatelských skriptů a postará se o zbytek. Přejděte do *Nastavení → Rozšíření* a povolte některá předinstalovaná rozšíření nebo přidejte vlastní uživatelské skripty.
 
-![Extensions *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/extensions.png)
+![Rozšíření *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/extensions.png)
 
-By the way, you can tap any added userscript to see more details, and to reinstall or delete it.
+Mimochodem, klepnutím na jakýkoli přidaný uživatelský skript můžete zobrazit další podrobnosti a znovu jej nainstalovat nebo odstranit.
 
-## Compatibility with AdGuard VPN
+## Kompatibilita s AdGuard VPN
 
-The best kind of compatibility is when you install two apps and they just start working together. Presuming you already have AdGuard Ad Blocker installed, just download AdGuard VPN from Play Store (you can get there right from the ad blocker app, there's an item in General settings).
+Nejlepší kompatibilita je, když nainstalujete dvě aplikace a ty začnou spolupracovat. Za předpokladu, že již máte nainstalovaný blokátor reklam AdGuard, stačí si stáhnout AdGuard VPN z Google Play (dostanete se tam přímo z aplikace pro blokování reklam, je tam položka v obecném nastavení).
 
-![Compatibility *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/compatibility.png)
+![Kompatibilita *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/compatibility.png)
 
-Both apps will detect each other and do everything that's needed for smooth joint work. All that will be left for you is to enjoy both ad-free Internet and the benefits of a VPN. It also works the other way around just as well: install AdGuard Ad Blocker on top of an already-running AdGuard VPN and you're good.
+Obě aplikace se vzájemně detekují a provedou vše potřebné pro bezproblémovou společnou práci. Zbývá už jen využívat internet bez reklam a výhody sítě VPN. Stejně dobře to funguje i obráceně: nainstalujte blokátor reklam AdGuard na již spuštěnou AdGuard VPN a je to v pořádku.
 
-If you'd like to disable Compatibility Mode for any reason, it's very simple to do so from AdGuard Ad Blocker settings, just toggle the switch. Additionally, you can add AdGuard Ad Blocker and AdGuard VPN tiles to your device's notification bar and toggle them in one tap at your own will — thanks to Compatibility Mode the configuration will change immediately and silently.
+Pokud chcete z jakéhokoli důvodu režim kompatibility vypnout, lze to velmi jednoduše provést v nastavení blokátoru reklam AdGuard –⁠ stačí přepnout přepínač. Kromě toho můžete do oznamovací lišty svého zařízení přidat dlaždice blokátoru reklam AdGuard a AdGuard VPN a přepínat je jedním klepnutím podle vlastního uvážení — díky režimu kompatibility se konfigurace změní okamžitě a tiše.
 
-## License
+## Licence
 
-While some ot the features in AdGuard for Android are free, others require [purchasing a license](https://adguard.com/en/license.html). There are Personal (up to three devices) and Family (up to 9 devices), Yearly and Lifetime license keys. The premium version offers the following features to its users:
+Zatímco některé funkce AdGuardu pro Android jsou zdarma, jiné vyžadují [zakoupení licence](https://adguard.com/en/license.html). K dispozici jsou osobní (až tři zařízení) a rodinné (až 9 zařízení), roční a doživotní licenční klíče. Prémiová verze nabízí uživatelům následující funkce:
 * Režim utajení
-* Browsing security
-* Extensions
-* Ad blocking in all apps (not only browsers)
+* Bezpečné prohlížení
+* Rozšíření
+* Blokování reklam ve všech aplikacích (nejen v prohlížečích)
 * Vlastní filtry
 
-Read [this article](./general/license/activation) to learn how to activate the license key.
+Přečtěte si [tento článek](/general/license/activation) a zjistěte, jak aktivovat licenční klíč.
 
-## Other features
+## Další funkce
 
-There are too many features to describe them all in detail, so let us simply list them here:
+Je příliš mnoho funkcí na to, abychom je všechny podrobně popisovali, proto je zde jednoduše vyjmenujeme:
 
-* When you visit certain screens for the first time, there will appear tooltips that describe the purpose of that screen and its main features
-* You can export or import AdGuard settings (for a faster switch between the settings profiles or to transfer your profile between different devices)
-* Select an update channel, i.e. the mode in which the application receives its updates (stable release channel, less stable beta channel and raw ["nightly" channel](https://adguard.com/en/blog/nightly-builds/)
-* By tapping a little battery icon on the main screen of the app you will get to the "Battery Usage" screen. System battery stats [are often wrong](../solving-problems/battery), so we decided to have our own, one that would reflect the real state of things
-* You can change the app's language in the General Settings tab
+* Při první návštěvě některých obrazovek se zobrazí popisky, které popisují účel dané obrazovky a její hlavní funkce
+* Můžete exportovat nebo importovat nastavení AdGuardu (pro rychlejší přepínání mezi profily nastavení nebo pro přenos profilu mezi různými zařízeními)
+* Zvolte aktualizační kanál, tj. režim, ve kterém aplikace přijímá aktualizace (kanál stabilního vydání, méně stabilní kanál beta a nestabilní kanál) ["nightly"](https://adguard.com/en/blog/nightly-builds/)
+* Klepnutím na malou ikonu baterie na hlavní obrazovce aplikace se dostanete na obrazovku "Využití baterie". Statistiky baterií zobrazované systémem [jsou často chybné](../solving-problems/battery), proto jsme se rozhodli mít vlastní, které odrážejí skutečný stav
+* Jazyk aplikace můžete změnit na kartě Obecná nastavení

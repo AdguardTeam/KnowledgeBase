@@ -1,25 +1,27 @@
 ---
-title: Reward system
+title: Système de récompenses
 sidebar_position: 6
 ---
 
-As any honest and well-performed effort should be rewarded, active translators on Crowdin can request a free AdGuard license key and a VPN subscription.
+Comme tout effort honnête et bien fait doit être récompensé, les traducteurs actifs sur Crowdin peuvent demander une clef de licence AdGuard gratuite et un abonnement VPN.
 
-To request a **one-year AdGuard license key** or a **one-year AdGuard VPN subscription**, you must translate at least **500** and **2,500** words respectively.
+Pour demander une **clef de licence AdGuard d'un an** ou **un abonnement VPN AdGuard d'un an**, vous devez traduire au moins **500** et **2 500** mots respectivement.
 
-**Here’s how our reward system works**
+Pour vérifier la progression de votre traduction, ouvrez un projet sur lequel vous avez travaillé, cliquez sur l'onglet *Rapports* et sélectionnez *Ma contribution*. Vous pouvez additionner le nombre de mots traduits dans des différents projets pour obtenir une licence.
 
-```
-For the first one-year AdGuard license, you need to translate 500 words.
-For the second license, you need 1,000 words, i.e. 1,500 words altogether.
-All subsequent licenses require an additional 1,500 words per license.
-
-For the first one-year AdGuard VPN subscription, you need to translate 2,500 words.
-All subsequent subscriptions or renewals require an additional 2,500 words per subscription.
+**Voici comment fonctionne notre système de récompenses**
 
 ```
-Just send us a request to [translate@adguard.com](mailto:translate@adguard.com) and you’ll get the license as a token of our gratitude.
+Pour la première licence AdGuard d'un an, vous devez traduire 500 mots.
+Pour la deuxième licence, vous avez besoin de 1 000 mots, soit 1 500 mots au total.
+Toutes les licences ultérieures nécessitent 1 500 mots supplémentaires par licence.
 
-Besides, the most active translators may receive proofreader status in the future, should they express such an intention, and that promises even more good stuff.
+Pour le premier abonnement AdGuard VPN d'un an, vous devez traduire 2 500 mots.
+Tous les abonnements ou renouvellements ultérieurs nécessitent 2 500 mots supplémentaires par abonnement.
 
-Every year we present gifts with the AdGuard logo to our active proofreaders. If you want to become one of them, please write to [translate@adguard.com](mailto:translate@adguard.com).
+```
+Envoyez-nous simplement une demande à [translate@adguard.com](mailto:translate@adguard.com) et vous obtiendrez la licence en guise de remerciement.
+
+D'ailleurs, les traducteurs les plus actifs peuvent recevoir le statut de relecteur à l'avenir, s'ils expriment une telle intention, et cela promet encore plus de bonnes choses à venir.
+
+Chaque année, nous offrons des cadeaux avec le logo AdGuard à nos relecteurs actifs. Si vous souhaitez devenir l'un d'entre eux, veuillez écrire à [translate@adguard.com](mailto:translate@adguard.com).

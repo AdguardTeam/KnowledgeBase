@@ -1,20 +1,20 @@
 ---
-title: How to install AdGuard
+title: Jak nainstalovat AdGuard
 sidebar_position: 8
 ---
 
-Depending on which AdGuard app or browser extension you want to install, follow one of these links to find the relevant article:
+Podle toho, kterou aplikaci AdGuard nebo rozšíření prohlížeče chcete nainstalovat, vyhledejte příslušný článek pomocí jednoho z těchto odkazů:
 
-[AdGuard for Android](/adguard-for-android/installation)
+[AdGuard pro Android](/adguard-for-android/installation)
 
-[AdGuard for iOS](/adguard-for-ios/installation)
+[AdGuard pro iOS](/adguard-for-ios/installation)
 
-[AdGuard for Windows](/adguard-for-windows/installation)
+[AdGuard pro Windows](/adguard-for-windows/installation)
 
-[AdGuard for Mac](/adguard-for-mac/installation)
+[AdGuard pro macOS](/adguard-for-mac/installation)
 
-[AdGuard Browser extension](/adguard-browser-extension/installation)
+[Rozšíření prohlížeče AdGuard](/adguard-browser-extension/installation)
 
-[AdGuard for Safari](/adguard-for-safari/installation)
+[AdGuard pro Safari](/adguard-for-safari/installation)
 
-[AdGuard Content Blocker](/adguard-content-blocker/installation)
+[Blokátor obsahu AdGuard](/adguard-content-blocker/installation)

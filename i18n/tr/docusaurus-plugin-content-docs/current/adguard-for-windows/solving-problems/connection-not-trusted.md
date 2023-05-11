@@ -13,7 +13,7 @@ Normally browsers trust the AdGuard certificate once it's added to the system ce
 
 Old FireFox versions, as well as browsers based on them, do not trust certificates from the system storage, but only those from their local storage. Since v68, FireFox trusts the system certificates, but you still can face the "Connection is untrusted" error. If something like this happens, first try to click the *Reinstall Certificate* button — you will find it in the *Network* tab.
 
-![Reinstall Certificate](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/reinstall.jpg)
+![Sertifikayı yeniden yükle](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/reinstall.jpg)
 
 If that doesn't help, follow the instructions for manually adding the AdGuard certificate to the FireFox storage.
 > This instruction is for Firefox browser. Names of buttons and menu items may differ in other Firefox-based browsers.
@@ -29,7 +29,7 @@ If that doesn't help, follow the instructions for manually adding the AdGuard ce
 
 4) Go to *Privacy & Security* tab.
 
-5) Scroll down to *Certificates* and click on the *View Certificates* button.
+5) Scroll down to *Certificates* and click the *View Certificates* button.
 
 ![View certificates window](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import1.jpeg)
 
@@ -59,7 +59,7 @@ However, AdGuard also adds its certificate to the trusted ones. This leads to th
 
 ### How to solve the problem
 
-The easiest way is to click on the **Go to site** button. This will tell Yandex.Browser to remember AdGuard certificate as a trusted one, at least for a while. Normally, you won't have to see this message anymore, but it is not beyond the realm of possibility for it to appear occasionally, for whatever reasons. In such cases, simply press the same button again *(make sure it is AdGuard's certificate!)*.
+The easiest way is to click the **Go to site** button. This will tell Yandex.Browser to remember AdGuard certificate as a trusted one, at least for a while. Normally, you won't have to see this message anymore, but it is not beyond the realm of possibility for it to appear occasionally, for whatever reasons. In such cases, simply press the same button again *(make sure it is AdGuard's certificate!)*.
 
 Disabling the HTTPS filtering in AdGuard will also prevent Yandex.Browser from showing this message again, but it comes with a big price: all ads that are loaded by HTTPS (including **Yandex's own ads**) will show up — on such websites as YouTube, Facebook, Instagram, and many more. We strongly advise against it if you want to keep the quality of ad blocking high.
 

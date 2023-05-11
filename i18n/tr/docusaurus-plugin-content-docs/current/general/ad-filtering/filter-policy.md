@@ -19,107 +19,107 @@ A "third party" is any party that does not fall within the definition of the fir
 
 These equally apply to rules in all filters.
 
-- Rules that often cause problems with the work of some websites will be deleted.
-- Website-specific rules will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
+- Bazı sitelerin çalışmasında sıklıkla sorunlara neden olan kurallar silinecektir.
+- Siteye özgü kurallar, yalnızca bir site yeterli trafiğe sahipse eklenecektir. Trafik, açık istatistiklerle (varsa) veya sosyal medyadaki takipçiler gibi başka yollarla belirlenir. Ayda 100 bin ziyareti olan bir site trafiği yeterli kabul edilir. Çok popüler olmayan bir site için bir kural eklemeyi düşüneceğiz, ancak son karar filtre listesi yöneticisine aittir.
 
-## Ad filters
+## Tüm filtreler
 
 This part describes the AdGuard Base filter, the Mobile Ads filter, and the following language-specific filters: Russian, German, Dutch, Spanish/Portuguese, Japanese, Turkish, Chinese, and French.
 
-**What shall these filters block?**
+**Bu filtreler neyi engelleyecek?**
 
-- These filters will block ads wherever possible.
-- Ads should be blocked regardless of their reasons and goals.
-- We will block ads caused by malicious apps or extensions that inject ads. Please note that we do it only on the condition that you specify how to install such an app or extension.
+- Bu filtreler, mümkün olan her yerde reklamları engeller.
+- Nedenleri ve amaçları ne olursa olsun reklamlar engellenmelidir.
+- Kötü amaçlı uygulamaların veya reklam ekleyen uzantıların neden olduğu reklamları engelleriz. Please note that we do it only on the condition that you specify how to install such an app or extension.
 
 **Limitations and Exceptions**
 
 If a rule is subject to the list of limitations described below, then it won’t be added to the main filters.
 
 - Websites’ own ads should not be removed on purpose. On the other hand, they should not be unblocked if it may cause third-party ads to reappear.
-- Website-specific rules will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
+- Siteye özgü kurallar, yalnızca bir site yeterli trafiğe sahipse eklenecektir. Trafik, açık istatistiklerle (varsa) veya sosyal medyadaki takipçiler gibi başka yollarla belirlenir. Ayda 100 bin ziyareti olan bir site trafiği yeterli kabul edilir. Çok popüler olmayan bir site için bir kural eklemeyi düşüneceğiz, ancak son karar filtre listesi yöneticisine aittir.
 - Anti-adblock scripts will be blocked only if they limit or affect the functionality of a website.
 - Anti-adblock scripts will not be blocked in cases when it is prohibited by law.
-- Rules that often cause problems with the work of some websites will be deleted.
+- Bazı sitelerin çalışmasında sıklıkla sorunlara neden olan kurallar silinecektir.
 
 ## Tracking Protection filter
 
 **What will be blocked with this filter?**
 
-- This filter will block all trackers that collect user personal data.
+- Bu filtre, kullanıcının kişisel verilerini toplayan tüm izleyicileri engeller.
 
-We define **tracking** as collecting data regarding an individual’s identity or activity across one or more websites. Even if such data is considered to be personally unidentifiable, it’s still tracking.
+We define **tracking** as collecting data regarding an individual’s identity or activity across one or more websites. Bu tür veriler kişisel olarak tanımlanamaz olarak kabul edilse bile, yine de izlenmektedir.
 
-**Tracker** is an online script that has tracking as its only purpose, or as one of its purposes.
+**İzleyici**, tek amacı veya amaçlarından biri olan izlemeyi içeren çevrimiçi bir betiktir.
 
 **Limitations and Exceptions**
 
-If a rule is subject to the list of limitations described below, then it won’t be added to this filter.
+Bir kural aşağıda açıklanan kısıtlamalar listesine dahilse, bu filtreye eklenmeyecektir.
 
-- Rules that cause problems with website functionality will be removed.
-- Website-specific rules will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
+- Site işlevselliğiyle ilgili sorunlara neden olan kurallar kaldırılacaktır.
+- Siteye özgü kurallar, yalnızca bir site yeterli trafiğe sahipse eklenecektir. Trafik, açık istatistiklerle (varsa) veya sosyal medyadaki takipçiler gibi başka yollarla belirlenir. Ayda 100 bin ziyareti olan bir site trafiği yeterli kabul edilir. Çok popüler olmayan bir site için bir kural eklemeyi düşüneceğiz, ancak son karar filtre listesi yöneticisine aittir.
 
-## AdGuard URL Tracking filter
+## AdGuard URL İzleme filtresi
 
 **What will be blocked with this filter?**
 
-- This filter will strip all tracking parameters from URLs.
+- Bu filtre, tüm izleme parametrelerini URL'lerden arındırır.
 
-We define **tracking** as collecting data regarding an individual’s identity or activity across one or more websites. Even if such data is considered to be personally unidentifiable, it’s still tracking.
+We define **tracking** as collecting data regarding an individual’s identity or activity across one or more websites. Bu tür veriler kişisel olarak tanımlanamaz olarak kabul edilse bile, yine de izlenmektedir.
 
 **Limitations and Exceptions**
 
-If a rule is subject to the list of limitations described below, then it won’t be added to this filter.
+Bir kural aşağıda açıklanan kısıtlamalar listesine dahilse, bu filtreye eklenmeyecektir.
 
-- Rules that would reduce user security levels will be removed.
-- Rules that cause problems with website functionality will be removed.
-- Website-specific rules will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
+- Kullanıcı güvenlik seviyelerini düşürecek kurallar kaldırılacaktır.
+- Site işlevselliğiyle ilgili sorunlara neden olan kurallar kaldırılacaktır.
+- Siteye özgü kurallar, yalnızca bir site yeterli trafiğe sahipse eklenecektir. Trafik, açık istatistiklerle (varsa) veya sosyal medyadaki takipçiler gibi başka yollarla belirlenir. Ayda 100 bin ziyareti olan bir site trafiği yeterli kabul edilir. Çok popüler olmayan bir site için bir kural eklemeyi düşüneceğiz, ancak son karar filtre listesi yöneticisine aittir.
 
 ## Social Media filter
 
 **What will be blocked with this filter?**
 
-- This filter will block social media widgets (on third-party websites) such as "Like" and "Share" buttons, recommendation widgets, and more.
+- Bu filtre, "Beğen" ve "Paylaş" düğmeleri, öneri araçları ve daha fazlası gibi sosyal medya pencere öğelerini (üçüncü taraf sitelerde) engeller.
 
 **Limitations and Exceptions**
 
-If a rule is subject to the list of limitations described below, then it won’t be added to this filter.
+Bir kural aşağıda açıklanan kısıtlamalar listesine dahilse, bu filtreye eklenmeyecektir.
 
 - Rules that block widgets that are a part of a website’s functionality, such as "Comments," "Embedded Post," "Surveys," or widgets that require authorization via social networks.
-- Rules that block links to a website’s communities in social networks.
-- Rules that cause problems with website functionality will be removed.
-- Website-specific rules will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
+- Bir sitenin sosyal ağlardaki topluluklarına bağlantıları engelleyen kurallar.
+- Site işlevselliğiyle ilgili sorunlara neden olan kurallar kaldırılacaktır.
+- Siteye özgü kurallar, yalnızca bir site yeterli trafiğe sahipse eklenecektir. Trafik, açık istatistiklerle (varsa) veya sosyal medyadaki takipçiler gibi başka yollarla belirlenir. Ayda 100 bin ziyareti olan bir site trafiği yeterli kabul edilir. Çok popüler olmayan bir site için bir kural eklemeyi düşüneceğiz, ancak son karar filtre listesi yöneticisine aittir.
 
 ## Annoyances filter
 
 **What will be blocked with this filter?**
 
-- This filter will block obstructions on the page. These elements are not ads, but they obstruct the view and make it difficult to see the actual content of the website. Such elements include cookie notices, third-party widgets, in-page pop-ups, email subscription forms, banners with special offers, and aggressively placed social media widgets.
+- This filter will block obstructions on the page. Bu öğeler reklam değildir, ancak sitenin gerçek içeriğinin görülmesini zorlaştırır ve görmeyi engeller. Such elements include cookie notices, third-party widgets, in-page pop-ups, email subscription forms, banners with special offers, and aggressively placed social media widgets.
 
 **Limitations and Exceptions**
 
-If a rule is subject to the list of limitations described below, then it won’t be added to this filter.
+Bir kural aşağıda açıklanan kısıtlamalar listesine dahilse, bu filtreye eklenmeyecektir.
 
 - Rules that block elements that are essential for the website functioning (e.g. authorization forms) will not be blocked even if they satisfy other requirements.
-- Rules that cause problems with website functionality will be removed.
-- Website-specific rules will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
+- Site işlevselliğiyle ilgili sorunlara neden olan kurallar kaldırılacaktır.
+- Siteye özgü kurallar, yalnızca bir site yeterli trafiğe sahipse eklenecektir. Trafik, açık istatistiklerle (varsa) veya sosyal medyadaki takipçiler gibi başka yollarla belirlenir. Ayda 100 bin ziyareti olan bir site trafiği yeterli kabul edilir. Çok popüler olmayan bir site için bir kural eklemeyi düşüneceğiz, ancak son karar filtre listesi yöneticisine aittir.
 
 ## Filter unblocking search ads and self-promotion
 
 Unlike other filters, this one **unblocks** certain ads. Read more about it in the [article on search ads and self-promotion](../search-ads).
 
-**What will be unblocked with this filter?**
+**Bu filtre ile nelerin engeli kaldırılacaktır?**
 
 - Search ads (ads that you see among the results when using an online search engine).
 - Website self-promotion (when an ad on a website is promoting this very website or other websites/social media/etc closely related to it).
 
 **Limitations and Exceptions**
 
-- Rules that cause problems with website functionality will be removed.
-- Website-specific rules will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
+- Site işlevselliğiyle ilgili sorunlara neden olan kurallar kaldırılacaktır.
+- Siteye özgü kurallar, yalnızca bir site yeterli trafiğe sahipse eklenecektir. Trafik, açık istatistiklerle (varsa) veya sosyal medyadaki takipçiler gibi başka yollarla belirlenir. Ayda 100 bin ziyareti olan bir site trafiği yeterli kabul edilir. Çok popüler olmayan bir site için bir kural eklemeyi düşüneceğiz, ancak son karar filtre listesi yöneticisine aittir.
 
-## Quality requirements for filtering rules
+## Filtreleme kuralları için kalite gereksinimleri
 
-- The rules should be as efficient as possible in terms of performance.
+- Kurallar performans açısından mümkün olduğunca verimli olmalıdır.
 - Exception rules should be as specific as possible in order to avoid unnecessary unblocking.
-- CSS and JS injection rules should be used as rarely as possible and only when it is impossible to block ads without them.
+- CSS ve JS enjeksiyon kuralları, mümkün olduğunca nadiren ve yalnızca bunlar olmadan reklamları engellemenin imkansız olduğu durumlarda kullanılmalıdır.

@@ -1,20 +1,20 @@
 ---
-title: Contribute to AdGuard filters
+title: Contribuir a los filtros de AdGuard
 sidebar_position: 4
 ---
 
-### Filtering rules {#filtering-rules}
+### Reglas de filtrado {#filtering-rules}
 
-As you probably know, AdGuard uses filtering rules to block ads, and these rules are combined into thematic [blocking filters](/general/ad-filtering/adguard-filters), like AdGuard Base filter, Mobile ads filter, etc. [Read more about how ad blocking works](/general/ad-filtering/how-ad-blocking-works).
+Como probablemente sepas, AdGuard usa reglas de filtrado para bloquear anuncios, y estas reglas se combinan en filtros de bloqueo temáticos [](/general/ad-filtering/adguard-filters), como el filtro base de AdGuard, el filtro de anuncios móviles, etc. [Obtén más información sobre cómo funciona el bloqueo de anuncios](/general/ad-filtering/how-ad-blocking-works).
 
-Websites constantly change the way they embed ads, and we add new rules to our filters to keep them effective. Filter engineers are working on creating new rules, but we always welcome the help and support of volunteers.
+Los sitios web cambian constantemente la forma en que insertan los anuncios y agregamos nuevas reglas a nuestros filtros para mantener su eficacia. Los ingenieros de filtros están trabajando en la creación de nuevas reglas, pero siempre agradecemos la ayuda y el apoyo de los voluntarios.
 
-### How to start {#how-to-start}
+### Cómo empezar {#how-to-start}
 
-However, working with blocking filters requires specific skills. If you have them and know how to create rules, then head straight to our [AdGuard Filters repository](https://github.com/AdguardTeam/AdguardFilters) on GitHub. There you will find a lot of open issues, each one referencing a problem with some website problem — a missed ad, a false positive, etc. Choose any and suggest your own rules in comments. AdGuard filter engineers will review your suggestions, and if they find them appropriate, your rules will be added to AdGuard filters.
+Sin embargo, trabajar con filtros de bloqueo requiere habilidades específicas. Si las tienes y sabes cómo crear reglas, dirígete directamente a nuestro repositorio[de filtros AdGuard](https://github.com/AdguardTeam/AdguardFilters) en GitHub. Allí encontrará muchos problemas abiertos, cada uno de los cuales hace referencia a un problema del sitio web: un anuncio perdido, un falso positivo, etc. Elige cualquiera y sugiere tus propias reglas en los comentarios. Los ingenieros de filtros de AdGuard revisarán tus sugerencias y, si las encuentran apropiadas, tus reglas se agregarán a los filtros de AdGuard.
 
-If you are not yet familiar with our filtering rules syntax, or maybe need a refresher, you'll find the basics about the syntax [in our Knowledge base](/general/ad-filtering/create-own-filters). More advanced guides can be found on the internet, and if you have any questions about the syntax, visit our [forum](https://forum.adguard.com/).
+Si aún no estás familiarizado con la sintaxis de nuestras reglas de filtrado, o tal vez necesites un repaso, encontrarás los conceptos básicos sobre la sintaxis [en nuestra Base de conocimientos](/general/ad-filtering/create-own-filters). Se pueden encontrar guías más avanzadas en Internet, y si tienes alguna pregunta sobre la sintaxis, visita nuestro [foro](https://forum.adguard.com/).
 
-### Rewards {#rewards}
+### Recompensas {#rewards}
 
-If you have suggested several filtering rules and some of them were approved, then it's time for you to get a reward. Send us a message at [st@adguard.com](mailto:st@adguard.com) with your GitHub account name, and you'll get a free AdGuard license key. As for the exact number of rules you need to get approved to become eligible, there are no hard rules. This task is not easy, so anything north of 5 should be enough.
+Si has sugerido varias reglas de filtrado y algunas de ellas han sido aprobadas, entonces es hora de que obtengas una recompensa. Envíanos un mensaje a [st@adguard.com](mailto:st@adguard.com) con el nombre de su cuenta de GitHub y obtendrás una clave de licencia de AdGuard gratuita. En cuanto a la cantidad exacta de reglas que necesitas para ser aprobado para ser elegible, no hay reglas estrictas. Esta tarea no es fácil, por lo que cualquier valor por encima de 5 debe ser suficiente.

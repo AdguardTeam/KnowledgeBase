@@ -1,5 +1,5 @@
 ---
-title: What can be done in the AdGuard Account
+title: AdGuard Hesabında neler yapılabilir
 sidebar_position: 2
 ---
 
@@ -15,7 +15,7 @@ In this section, you can also manage your email preferences:
 * receive emails about AdGuard special offers and promotions,
 * send read receipts to AdGuard when you open emails.
 
-## Manage licenses
+## Lisansları yönet
 
 In the *Licenses* section, you can manage your licenses and the devices bound to them.
 

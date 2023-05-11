@@ -24,7 +24,7 @@ sidebar_position: 13
 
 В этом случае перейдите к шагам ниже:
 
-3. Перейдите в **Magisk** -> **Настройки**
+3. Перейдите в **Magisk** → **Настройки**
 
 ![Откройте настройки Magisk *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-1.png)
 

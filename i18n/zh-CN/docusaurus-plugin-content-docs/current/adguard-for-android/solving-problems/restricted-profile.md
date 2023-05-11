@@ -14,10 +14,10 @@ sidebar_position: 10
 > 请注意！该方法仅由 **AdGuard v3.5 nightly 6** 起可用。 如您仍在使用旧版本，您可以[在此处](https://adguard.com/adguard-android/overview.html)下载 nightly 版本。
 
 1. 激活**开发人员模式**以及启用 **USB 调试**：
-- 在手机上前往**设置**；
-- 前往**系统**部分（设置中最后一项选项）。 这里前往**关于手机**；
-- 点击**版本号**7次。 之后您将会收到通知说明现在**您是开发人员**（如需要的话，输入解锁密码）；
-- 前往**系统设置** > **开发人员选项** > 向下移动，启用 **USB 调试** > 在是否**允许 USB 调试**提示中仔细阅读警告后，确定允许调试。
+- Open the **Settings** app phone;
+- 前往**系统**部分（设置中最后一项选项）。 In this section, find the sub-item **About phone**;
+- Tap the **Build number** line 7 times. 之后您将会收到通知说明现在**您是开发人员**（如需要的话，输入解锁密码）；
+- Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
 
 > 如您遇到任何困难或其他问题，[在此处](https://developer.android.com/studio/debug/dev-options)可查看完整说明。
 
@@ -37,7 +37,7 @@ sidebar_position: 10
 
 ### 方案 3：使用 AdGuard 的本地 HTTP 代理模式（需要 root 权限）
 
-开启该模式需要打开 **AdGuard 设置** > **网络** > **过滤方式** > **本地 HTTP 代理**
+To enable this mode, open **AdGuard Settings** → **Network** → **Filtering method** → **Local HTTP proxy**
 
 ## LG 和三星设备
 

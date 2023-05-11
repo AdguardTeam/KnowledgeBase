@@ -147,6 +147,7 @@ sidebar_position: 2
 * krystian3w — 非常活跃的过滤器贡献者
 * lancelot.moon — Crowdin 繁体中文的翻译和审核员，beta 测试员
 * Lord Ami — beta 测试员，活跃的 AdGuard 论坛成员
+* Lukas Novotny (novas78) — 在 Crowdin 上捷克语的翻译和审核员
 * malware1 — beta 测试员，活跃的 AdGuard 论坛成员
 * milder — beta 测试员，活跃的 AdGuard 论坛成员
 * Nicos18 — beta 测试员，活跃的 AdGuard 论坛成员

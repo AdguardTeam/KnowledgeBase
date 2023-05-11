@@ -1,77 +1,80 @@
 ---
-title: How to get Logcat log
+title: Jak získat záznam Logcat
 sidebar_position: 4
 ---
 
-## General Instruction
+## Obecné pokyny
 
-For troubleshooting problems with crashes a regular log is almost always not enough. In such cases to identify the origin of the problem we need the system log. Below is the instruction how to collect and get it.
+Pro řešení problémů s pády téměř vždy nestačí běžný protokol. V takových případech potřebujeme k identifikaci původu problému systémový záznam. Níže je uveden návod, jak jej získat.
 
-## Capture a bug report from a device
-To get a bug report directly from your device, do the following:
+## Zachycení hlášení o chybě ze zařízení
+Chcete-li získat hlášení o chybě přímo ze zařízení, postupujte takto:
 
-1. Be sure you have [Developer Options](https://developer.android.com/studio/run/device.html#developer-device-options) enabled.
+1. Ujistěte se, že máte zapnuté [Možnosti pro vývojáře](https://developer.android.com/studio/run/device.html#developer-device-options).
 
-2. In **Developer options**, tap **Take bug report**.
+2. V **Možnostech pro vývojáře** klepněte na **Vytvořit hlášení o chybě**.
 
-![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
+![Hlášení o chybě *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
 
-3. Select the type of bug report you want and tap **Report**. >After a moment you get a notification that the bug report is ready (see figure 2).
+3. Vyberte požadovaný typ hlášení o chybě a klepněte na **Nahlásit**. >Po chvíli se zobrazí oznámení, že hlášení o chybě je připraveno (viz obrázek 2).
 
-![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
+![Hlášení o chybě *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
 
-4. To share the bug report, tap the notification.
+4. Chcete-li sdílet hlášení o chybě, klepněte na oznámení.
 
-![Bug report *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
+![Hlášení o chybě *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
 
-5. Send this log to our support team.
-> Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+5. Odešlete tento protokol našemu týmu podpory.
 
-## Additional Instruction (for old Android versions)
+> Poznámka: Náš tým podpory zpracuje vaši žádost mnohem rychleji, pokud ve zprávě uvedete číslo HelpDesk nebo číslo problému GitHub.
 
-On old Android devices there is no such option to take a bug report automatically. It has to be done manually by following this instruction:
+## Další pokyny (pro staré verze systému Android)
 
-**Part #1: prepare the device**
+Na starých zařízeních se systémem Android taková možnost automatického zachycení hlášení o chybě neexistuje. To je třeba provést ručně podle tohoto návodu:
 
-1. Switch device to the developer mode. To do this: go to **Settings** > **About** > tap on **Build Number** 7 times.
+**Část #1: příprava zařízení**
 
-2. Go to **Developer Options**.
+1. Přepněte zařízení do režimu pro vývojáře. Postupujte takto: přejděte do **Nastavení** → **O zařízení** → klepněte na **Číslo sestavení** 7krát.
 
-3. Enable **USB debugging**.
+2. Přejděte na **Možnosti pro vývojáře**.
 
-4. Increase **Logger buffer** sizes to 4MB per log buffer.
+3. Zapněte **USB ladění**.
 
-4MB should be enough for storing the logs we need until you're able to do the second part (getting log from the device);
+4. Navyšte **velikost vyrovnávací paměti** na 4 MB.
 
-**Important:** you need to reproduce the problem after you've done with the first part!
+4 MB by mělo stačit na uložení záznamů, které potřebujeme, dokud nebudete schopni provést druhou část (získání záznamů ze zařízení);
+
+**Důležité:** Po dokončení první části musíte problém znovu reprodukovat!
 
 
-**Part #2: get the log**
+**Část #2: získání záznamu**
 
-1. Connect your device to PC with USB cable.
+1. Připojte zařízení k počítači pomocí kabelu USB.
 
-2. Download and install Minimal ADB:
+2. Stáhnětei a nainstalujte Minimal ADB:
 
 <http://forum.xda-developers.com/showthread.php?t=2317790>
 
-Direct download link:
+Přímý odkaz ke stažení:
 
 <https://www.androidfilehost.com/?fid=24052804347803384>
 
-3. Run this command in the console (it will be opened after install):
+3. Spusťte tento příkaz v konzole (otevře se po instalaci):
+
 > adb logcat -v threadtime -d > C:\logcat.txt
 
-Send this log to us by contacting support or by any other way.
+Tento protokol nám zašlete prostřednictvím podpory nebo jiným způsobem.
 
-**Alternative way for ROOT users:**
+**Alternativní způsob pro uživatele s přístupem ROOT:**
 
-1. Download and run [Logcat](https://play.google.com/store/apps/details?id=com.pluscubed.matlog).
+1. Stáhněte a spusťte [Logcat](https://play.google.com/store/apps/details?id=com.pluscubed.matlog).
 
-2. Choose **Record** in the menu. Choose a name for a log file or just press **OK**. Now you can press **Home** button, CatLog will continue recording the log in background.
+2. V menu vyberte **Zaznamenat**. Zvolte název souboru protokolu nebo stiskněte **OK**. Nyní můžete stisknout tlačítko **Domů**, CatLog bude pokračovat v nahrávání záznamu na pozadí.
 
-3. Reproduce the issue.
+3. Znovu reprodukujte problém.
 
-4. Open CatLog and press **Stop record** in the menu.
+4. Otevřete CatLog a stiskněte **Ukončit záznam** v menu.
 
-5. Send this log to our support team.
-> Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+5. Odešlete tento protokol našemu týmu podpory.
+
+> Poznámka: Náš tým podpory zpracuje vaši žádost mnohem rychleji, pokud ve zprávě uvedete číslo HelpDesk nebo číslo problému GitHub.

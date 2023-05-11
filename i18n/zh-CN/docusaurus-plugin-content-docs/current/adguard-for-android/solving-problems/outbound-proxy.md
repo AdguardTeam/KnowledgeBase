@@ -7,7 +7,7 @@ sidebar_position: 8
 
 ### 如何同时使用 AdGuard 和 Tor
 
-1. 请您打开 AdGuard 并前往**「设置」**>** 「网路」**>**「代理設置」**。 打开[谷歌商店](https://play.google.com/store/apps/details?id=org.torproject.android&noprocess)，或者点击**「配置 Tor® 整合」**以下载 "Orbot: Proxy with Tor"。
+1. Open AdGuard and go to **Settings** → **Network** → **Proxy settings**. 打开[谷歌商店](https://play.google.com/store/apps/details?id=org.torproject.android&noprocess)，或者点击**「配置 Tor® 整合」**以下载 "Orbot: Proxy with Tor"。
 
 2. 打开 Orbot 并在应用程序的首页点击**「开启」**按钮。
 
@@ -33,7 +33,7 @@ sidebar_position: 8
 
 *假设您已是 PIA VPN 的客户，且已将它安装在您的设备上。*
 
-1. 请您打开 AdGuard 并前往**「设置」**>** 「网路」**>**「代理設置」**。
+1. Open AdGuard and go to **Settings** → **Network** → **Proxy settings**.
 
 2. 点击**「添加代理」**按钮并输入以下的数据：
 
@@ -53,7 +53,7 @@ sidebar_position: 8
 
 *假设您已是 TorGuard 的客户，且已将它安装在您的设备上。*
 
-1. 请您打开 AdGuard 并前往**「设置」**>** 「网路」**>**「代理設置」**。
+1. Open AdGuard and go to **Settings** → **Network** → **Proxy settings**.
 
 2. 点击**「添加代理」**按钮并输入以下的数据：
 
@@ -71,7 +71,7 @@ sidebar_position: 8
 
 ### 如何同时使用 AdGuard 和 NordVPN
 
-1. 请您打开 AdGuard 并前往**「设置」**>** 「网路」**>**「代理設置」**。
+1. Open AdGuard and go to **Settings** → **Network** → **Proxy settings**.
 
 2. 点击**「添加代理」**按钮并输入以下的数据：
 
@@ -93,7 +93,7 @@ sidebar_position: 8
 
 **请注意：在您开始设置前，请将 Shadowsocks 应用程序从过滤的应用程序列表移除（「AdGuard」--> 「应用管理」--> 「Shadowsocks」--> 「禁用保护」）以避免运行错误。**
 
-1. 打开 AdGuard 并前往**「设置」**>** 「网路」**>**「代理色设置」**。
+1. Open AdGuard and go to **Settings** → **Network** → **Proxy settings**.
 
 2. 点击**「添加代理」**按钮并输入以下数据：
 

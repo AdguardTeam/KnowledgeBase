@@ -89,50 +89,50 @@ Na kartě *Obecné* můžete povolit reklamy ve vyhledávání a vlastní propag
 
 ![Obecné *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_general.png)
 
-Besides, here you can enable [*Phishing and malware protection*](/general/browsing-security).
+Kromě toho zde můžete zapnout [*ochranu proti krádeži identity a malwaru*](/general/browsing-security).
 
-You can save your settings configuration by clicking the *Export settings* button. The settings will be saved as a .json file. To upload the previously saved settings configuration, use the *Import settings* function. You can even use it to quickly switch between different settings profiles or even to transfer settings configurations between different browsers.
+Konfiguraci nastavení můžete uložit kliknutím na tlačítko *Exportovat nastavení*. Nastavení se uloží jako soubor .json. Chcete-li nahrát dříve uloženou konfiguraci nastavení, použijte funkci *Importovat nastavení*. Můžete to použít i k rychlému přepínání mezi různými profily nastavení nebo dokonce k přenosu konfigurací nastavení mezi různými prohlížeči.
 
-### Additional settings {#misc}
+### Další nastavení {#misc}
 
-The *Additional settings* section contains a range of various settings that are related to the ad blocking process and application usability.
+Sekce *Další nastavení* obsahuje řadu různých nastavení, která souvisejí s procesem blokování reklam a použitelností aplikace.
 
 ![Další nastavení *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_additional_settings.png)
 
-From this tab, you can activate optimized filters, enable notifications about extension updates, open the *Filtering log*, or clear the statistics of blocked ads and trackers.
+Na této kartě můžete aktivovat optimalizované filtry, zapnout oznámení o aktualizacích rozšíření, otevřít *Záznam filtrování* nebo vymazat statistiky blokovaných reklam a slídičů.
 
-Besides, you can opt to help us with the development of filters by sending the statistics on applied rules: which ones are triggered, on which websites, and how often. All data is strictly anonymized; this option is disabled by default.
+Kromě toho nám můžete pomoci s vývojem filtrů zasíláním statistik o použitých pravidlech: které z nich se spouští, na kterých webových stránkách a jak často. Tato možnost je ve výchozím nastavení vypnutá, protože neshromažďujeme údaje uživatelů bez jejich souhlasu. Pokud ji zapnete, budou všechna data přísně anonymizovaná.
 
-### About {#about}
+### Informace {#about}
 
-In the *About* section, you can find infos about the current version, links to the EULA and Privacy policy, and to the repository of the Browser extension on GitHub.
+V sekci *Informace* najdete informace o aktuální verzi, odkazy na smlouvu EULA a zásady ochrany osobních údajů a na úložiště rozšíření prohlížeče na GitHubu.
 
 ![Informace *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)
 
-## Extension’s main menu {#main-menu}
+## Hlavní nabídka rozšíření {#main-menu}
 
-The extension's main page can be accessed by clicking on the extension's icon on the toolbar of your browser.
+Hlavní stránka rozšíření je přístupná po kliknutí na ikonu rozšíření na panelu nástrojů prohlížeče.
 
 ![Hlavní nabídka *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
 
-On the main page, you can hide any element on any page manually (a corresponding rule will be added to the *User rules*), open the *Filtering log* to view the complete information about your browser's traffic and block requests on the go, or look at a website’s security report. Besides, you can submit a complaint about any website (for example, if there are missed ads on the page, our filter engineers will review the report and fix the problem) and see the statistics on applied blocking rules.
+Na hlavní stránce můžete ručně skrýt libovolný prvek na libovolné stránce (příslušné pravidlo bude přidáno do *Uživatelských pravidel*), otevřít *Záznam filtrování* a zobrazit kompletní informace o provozu prohlížeče a blokovat požadavky za chodu nebo se podívat na zprávu o zabezpečení webové stránky. Kromě toho můžete podat stížnost na jakoukoli webovou stránku (například pokud jsou na stránce zobrazené reklamy, naši technici filtrů zprávu přezkoumají a problém vyřeší) a zobrazit statistiky použitých pravidel blokování.
 
-All web requests made by the browser are displayed in the *Filtering log*, along with detailed information about each request. The *Filtering log* makes it easy, for example, to monitor requests blocked by AdGuard Browser extension. Besides, it allows you to block any request or add a previously blocked request to Allowlist in two clicks. The *Filtering log* also offers you a wide variety of options for sorting web requests, which can be helpful when creating your own filtering rules. You can open the *Filtering log* by selecting the corresponding item in the main menu, or from the settings page (in the "Additional settings" tab).
+Všechny webové požadavky provedené prohlížečem se zobrazují v *Záznamu filtrování* spolu s podrobnými informacemi o každém požadavku. *Záznam filtrování* umožňuje například snadno sledovat požadavky blokované Rozšířením prohlížeče AdGuard. Kromě toho vám umožňuje zablokovat jakýkoli požadavek nebo přidat dříve zablokovaný požadavek na seznam povolených pouze dvěma kliknutími. *Záznam filtrování* vám také nabízí širokou škálu možností pro třídění webových požadavků, což může být užitečné při vytváření vlastních pravidel filtrování. *Záznam filtrování* můžete otevřít výběrem příslušné položky v hlavní nabídce nebo na stránce nastavení (na kartě "Další nastavení").
 
-By clicking the icons in the top right corner of the extension's main menu, you can open the extension settings or pause the protection.
+Kliknutím na ikony v pravém horním rohu hlavní nabídky rozšíření můžete otevřít nastavení rozšíření nebo pozastavit ochranu.
 
-## AdGuard Browser extension vs. standalone apps {#comparison}
+## Rozšíření prohlížeče AdGuard vs. Plnohodnotná aplikace {#comparison}
 
-The main advantage of AdGuard standalone programs over browser extensions is that the programs can block ads in every browser and in almost all apps. You may use different browsers at the same time, the app will filter ads and online threats in all of them equally well.
+Hlavní výhodou plnohodnotných programů AdGuard oproti rozšířením prohlížeče je, že tyto programy mohou blokovat reklamy v každém prohlížeči a téměř ve všech aplikacích. Můžete používat různé prohlížeče současně, aplikace bude stejně dobře filtrovat reklamy a online hrozby ve všech z nich.
 
-The second difference is that the possibilities of extension-based ad blockers are strictly limited by browser guidelines. The browser extensions have to conform to the policies of the browsers, where ad blocking might be restricted. Thus, some types of filtering rules are not supported by the extensions. The functionality of the desktop apps is not limited, so they have a better filtering quality.
+Druhý rozdíl spočívá v tom, že možnosti blokátorů reklam založených na rozšířeních jsou přísně omezeny pokyny prohlížeče. Rozšíření prohlížeče musí být v souladu se zásadami prohlížečů, kde může být blokování reklam omezeno. Některé typy pravidel filtrování tedy rozšíření nepodporují. Funkce desktopových aplikací nejsou omezené, takže mají lepší kvalitu filtrování.
 
-Whereas AdGuard Browser extension is free and easy to install, and has filters to block ads and fight online threats, the full-fledged apps are more powerful and have a list of advanced features. See all the differences in the comparative table below.
+Zatímco Rozšíření prohlížeče AdGuard je zdarma, snadno se instaluje a obsahuje filtry pro blokování reklam a boj proti online hrozbám, plnohodnotné aplikace jsou výkonnější a mají seznam pokročilých funkcí. Všechny rozdíly najdete ve srovnávací tabulce níže.
 
 ![Rozšíření vs. aplikace *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_comparison.png)
 
-`1` – within browser restrictions and only in the browser where it is installed;
+`1` – v rámci omezení prohlížeče a pouze v prohlížeči, ve kterém je nainstalováno;
 
-`2` – the extension is unable to detect requests from other extensions. If a malicious or tracking extension sends a request to its server to show you ads or track your activity, AdGuard Browser extension will not be able to block that request;
+`2` – rozšíření není schopno detekovat požadavky od jiných rozšíření. Pokud škodlivé nebo sledovací rozšíření odešle na svůj server požadavek na zobrazení reklamy nebo sledování vaší aktivity, Rozšíření prohlížeče AdGuard nebude schopno tento požadavek zablokovat;
 
-`3` – not all types of ads and threats can be blocked by browser extensions due to certain browser restrictions. Some elements may get to the page and slow down the loading process. Besides, unlike browser-based ad blockers, the AdGuard app blocks ads before they are loaded to the browser. This saves traffic and speeds up page loading.
+`3` – ne všechny typy reklam a hrozeb lze blokovat pomocí rozšíření prohlížeče z důvodu určitých omezení prohlížeče. Některé prvky se mohou dostat na stránku a zpomalit proces načítání. Kromě toho aplikace AdGuard na rozdíl od blokátorů reklam v prohlížeči blokuje reklamy ještě před jejich načtením do prohlížeče. To šetří provoz a zrychluje načítání stránek.

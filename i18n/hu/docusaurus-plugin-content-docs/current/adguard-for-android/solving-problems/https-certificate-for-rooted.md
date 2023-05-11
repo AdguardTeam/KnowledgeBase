@@ -24,7 +24,7 @@ However, if you have a newer version, you will get this message:
 
 In that case, proceed to steps below:
 
-3. Go to **Magisk** -> **Settings**
+3. Go to **Magisk** → **Settings**
 
 ![Open Magisk settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-1.png)
 

@@ -1,73 +1,73 @@
 ---
-title: Userscripts
+title: Uživatelské skripty
 sidebar_position: 5
 ---
 
-Userscripts (we also call them "extensions") are, de-facto, mini-programs written in JavaScript. They modify or extend the functionality of one or more websites. Many AdGuard users may be already familiar with such userscripts as AdGuard Assistant, Popup Blocker, and AdGuard Extra.
+Uživatelské skripty (říkáme jim také "rozšíření") jsou de facto miniprogramy napsané v jazyce JavaScript. Upravují nebo rozšiřují funkce jedné nebo více webových stránek. Mnoho uživatelů AdGuardu již možná zná uživatelské skripty jako AdGuard asistent, Blokátor vyskakovacích oken a AdGuard Extra.
 
-### Supported apps
+### Podporované aplikace
 
-AdGuard can significantly broaden website functionality by acting as a userscript manager. You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](/adguard-for-windows/overview), [AdGuard for Android](/adguard-for-android/overview) and [AdGuard for Mac](/adguard-for-mac/overview).
+AdGuard může výrazně rozšířit funkčnost webových stránek tím, že funguje jako správce uživatelských skriptů. V našich třech produktech můžete přidávat vlastní skripty nebo spravovat ty stávající: [AdGuard pro Windows](/adguard-for-windows/overview), [AdGuard pro Android](/adguard-for-android/overview) a [AdGuard pro Mac](/adguard-for-mac/overview).
 
-### Recommended AdGuard scripts
+### Doporučené skripty AdGuardu
 
-> These userscripts come directly from the AdGuard developers, and we can guarantee that they are effective and safe. Remember: whenever you download a userscript from an unknown source, you expose yourself to risk, as some scripts may be harmful to your computer. Get new scripts only from the sources you trust 100%. Furthermore, here are [some examples](#more-userscripts) of popular sites with scripts.
+> Tyto uživatelské skripty pocházejí přímo od vývojářů AdGuardu a můžeme zaručit, že jsou účinné a bezpečné. Nezapomeňte, že kdykoli stahujete uživatelský skript z neznámého zdroje, vystavujete se riziku, protože některé skripty mohou být pro váš počítač škodlivé. Nové skripty získávejte pouze ze zdrojů, kterým stoprocentně důvěřujete. Dále zde uvádíme [příklady](#more-userscripts) oblíbených webů se skripty.
 
-* **AdGuard Extra**. An extension that blocks advertising in difficult cases when the usual filter-based approach is not enough.
+* **AdGuard Extra**. Rozšíření, které blokuje reklamu v obtížných případech, kdy běžný přístup založený na filtru nestačí.
 
-* **AdGuard Popup Blocker**. The name speaks for itself: it blocks pop-ups — one of the most annoying types of ads on web pages.
+* **Blokátor vyskakovacích oken**. Název mluví sám za sebe: blokuje vyskakovací okna — jeden z nejotravnějších typů reklam na webových stránkách.
 
-* **AdGuard Assistant** (legacy version). This custom extension is designed to control filtering directly from the browser page (manual blocking, exclusion of the site, etc.).
+* **AdGuard asistent** (starší verze). Toto vlastní rozšíření je určeno k ovládání filtrování přímo ze stránky prohlížeče (ruční blokování, vyloučení webu atd.).
 
-> Note that this version of Assistant is legacy and there is no point in using it on new systems, since it has been replaced with the full-fledged [Browser Assistant](https://adguard.com/adguard-assistant/overview.html). But legacy Assistant might be of help if there is no Browser Assistant extension for your browser.
+> Všimněte si, že tato verze Asistenta je starší a nemá smysl ji používat v nových systémech, protože byla nahrazena plnohodnotným [Asistentem prohlížeče](https://adguard.com/adguard-assistant/overview.html). Pokud však pro váš prohlížeč neexistuje rozšíření Asistent prohlížeče, může vám pomoci starší asistent.
 
-* **Disable AMP**. A script, pre-installed only in AdGuard for Android, that disables AMP (Accelerated Mobile Pages) on the Google search results page.
+* **Zákázat AMP**. Skript předinstalovaný pouze v AdGuardu pro Android, který na stránce s výsledky vyhledávání Google zakáže AMP (Accelerated Mobile Pages).
 
-## Where can you get more userscripts?{#more-userscripts}
+## Kde můžete získat další uživatelské skripty?{#more-userscripts}
 
-As userscripts are created mainly by enthusiasts, you should be cautious when installing them. Yet, there is a great variety of interesting scripts that can really make using some websites more convenient.
+Protože uživatelské skripty vytvářejí především nadšenci, měli byste být při jejich instalaci opatrní. Přesto existuje velké množství zajímavých skriptů, které mohou používání některých webových stránek opravdu zpříjemnit.
 
-Here we will describe some of the most popular userscript catalogs.
+Zde popíšeme některé z nejoblíbenějších katalogů uživatelských skriptů.
 
 ### Stylish (userstyles.org)
 
-[Userstyles.org](https://userstyles.org/) is a catalog of user styles, but it allows you to load them as userscripts. Thus, any user style can be installed via AdGuard. Be careful if you decide to install an unpopular script — there's a risk it might be harmful.
+[Userstyles.org](https://userstyles.org/) je katalog uživatelských stylů, ale umožňuje je načíst jako uživatelské skripty. Prostřednictvím AdGuardu lze tedy nainstalovat jakýkoli uživatelský styl. Pokud se rozhodnete nainstalovat neoblíbený skript, buďte opatrní — existuje riziko, že může být škodlivý.
 
 ### Greasy Fork
 
-[Greasy Fork](https://greasyfork.org/) is a userscript catalog by Stylish creators. Unlike the above-mentioned userstyles.org, the scripts in this catalog undergo moderation, so their credibility is much higher.
+[Greasy Fork](https://greasyfork.org/) je katalog uživatelských skriptů od tvůrců Stylish. Na rozdíl od výše zmíněného userstyles.org jsou skripty v tomto katalogu moderovány, takže jejich důvěryhodnost je mnohem vyšší.
 
 ### OpenUserJS.org
 
-[OpenUserJS.org](https://openuserjs.org/) is an open source userscript catalog written in nodeJS. It doesn't have moderation so stay alert to any suspicious scripts.
+[OpenUserJS.org](https://openuserjs.org/) je open source katalog uživatelských skriptů napsaný v nodeJS. Není moderován, takže si dávejte pozor na podezřelé skripty.
 
-### Community
+### Komunita
 
-If you like the idea of personifying your browser with the help of userscripts, and you have any questions, you can ask them on one of these websites:
+Pokud se vám myšlenka personifikace prohlížeče pomocí uživatelských skriptů líbí a máte nějaké dotazy, můžete je položit na jedné z těchto webových stránek:
 
 - [Stackoverflow](https://stackoverflow.com/questions/tagged/userscripts)
 - [FreeNode](https://webchat.freenode.net/#greasemonkey)
 - [Reddit](https://www.reddit.com/r/userscripts/)
 
-## Development
+## Vývoj
 
-### Request License
+### Žádost o licenci
 
-If you are developing your own custom script and want to test how it works with AdGuard, request a beta-license key for the app.
+Pokud vyvíjíte vlastní skript a chcete si vyzkoušet, jak s AdGuardem funguje, požádejte o licenční klíč pro beta verzi aplikace.
 
-To get it, please send an email to devteam@adguard.com with the following information:
+Chcete-li ji získat, zašlete e-mail na adresu devteam@adguard.com a uveďte následující informace:
 
-**Subject:** Userscript author license request
+**Předmět:** Žádost o autorskou licenci uživatelského skriptu
 
-**Body:** Please tell us about the userscripts you are working on.
+**Popis:** Řekněte nám prosím o uživatelských skriptech, na kterých pracujete.
 
-Here is a [mailto link](mailto:devteam@adguard.com?Subject=Userscript%20author%20license%20request&Body=Hello%2C%0A%0AMy%20userscript%28s%29%3A%20LINK).
+Zde je [odkaz](mailto:devteam@adguard.com?Subject=Userscript%20author%20license%20request&Body=Hello%2C%0A%0AMy%20userscript%28s%29%3A%20LINK).
 
-### Compatibility
+### Kompatibilita
 
-#### Metadata block
+#### Blokování metadat
 
-##### Supported properties
+##### Podporované vlastnosti
 
 ```
 @name
@@ -97,21 +97,21 @@ Here is a [mailto link](mailto:devteam@adguard.com?Subject=Userscript%20author%2
 @icon64URL
 ```
 
-##### Unsupported properties
+##### Nepodporované vlastnosti
 
-These properties will be simply ignored by Adguard.
+Tyto vlastnosti bude Adguard jednoduše ignorovat.
 
 ```
 @unwrap
 ```
 
-#### Supported GM functions
+#### Podporované funkce GM
 
-AdGuard supports both old GM\_ functions and new GM4 API that use GM object.
+AdGuard podporuje jak staré funkce GM\_, tak nové rozhraní GM4 API, které používá objekt GM.
 
-##### Values
+##### Hodnoty
 
-Note that all listed old Greasemonkey functions are deprecated but still supported.
+Všimněte si, že všechny uvedené staré funkce Greasemonkey jsou zastaralé, ale stále podporované.
 
 ```
 GM.info / GM_info
@@ -130,9 +130,9 @@ GM_addStyle
 GM_log 
 ```
 
-[Here](https://wiki.greasespot.net/GM.info) you can find more information about Greasemonkey API.
+[Zde](https://wiki.greasespot.net/GM.info) najdete další informace o rozhraní Greasemonkey API.
 
-### Example
+### Příklad
 
 ```javascript
 // ==UserScript==

@@ -1,32 +1,32 @@
 ---
-title: How to collect Windows system logs
+title: Jak shromažďovat systémové záznamy Windows
 sidebar_position: 5
 ---
 
-To analyse and diagnose different problems that may potentially arise, the AdGuard support service might need Windows system log files. Windows event logs contain records about all errors that occurr with the installed software, including AdGuard. Below is the brief instruction describing the way to get the log files and to send them to our support service if necessary.
+K analýze a diagnostice různých problémů, které mohou potenciálně nastat, může služba podpory AdGuard potřebovat soubory záznamů Windows. Záznamy událostí systému Windows obsahují záznamy o všech chybách, které se vyskytnou v nainstalovaném softwaru, včetně AdGuardu. Níže je uveden stručný návod popisující způsoby, jak získat soubory záznamů a v případě potřeby je odeslat službě podpory.
 
-1. Press *Win + R*
+1. Stiskněte *Win + R*
 
-2. In the window that appears type in `eventvwr` and click on *OK*:
+2. V zobrazeném okně napište `eventvwr` a klikněte na *OK*:
 
 ![Run window *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_1.png)
 
-3. Event Viewer window appears as shown in the picture.
+3. Zobrazí se okno Prohlížeče událostí, jak je znázorněno na obrázku.
 
 ![Event viewer *border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_2.png)
 
-To save files that we need, do the following:
+Chcete-li uložit soubory, které potřebujeme, postupujte takto:
 
-- Open *Application*: *Event Viewer (Local)* -> *Windows Logs* -> *Application*.
+- Otevřete *Aplikace*: *Prohlížeč událostí (místní)* → *Záznamy systému Windows* → *Aplikace*.
 
-- Right-click on the *Application* and in drop-down menu select *Save All Events As...*
+- Klikněte pravým tlačítkem na *Aplikace* a v rozevíracím menu vyberte *Uložit všechny události jako...*
 
-- Select a name and where to save, click *Save*. Select *Display information for the following languages*. You need to tick the box next to *English*. Click *OK*.
+- Vyberte název a místo uložení a klikněte na *Uložit*. Vyberte *Zobrazit informace pro následující jazyky*. Musíte zaškrtnout políčko vedle *Angličtiny*. Klikněte na *OK*.
 
-- Open *System*: *Event Viewer (Local)* -> *Windows Logs* ->  *System*.
+- Otevřete *Systém*: *Prohlížeč událostí (místní)* → *Záznamy systému Windows* → *Systém*.
 
-- Right-click on *System* and in the drop-down menu, select *Save All Events As...*
+- Klikněte pravým tlačítkem na *Systém* a v rozevíracím menu vyberte *Uložit všechny události jako...*
 
-- Choose a destination folder, enter the name, click *Save*. Select *Display information for the following languages*. You need to tick the box next to *English*. Click *OK*.
+- Vyberte cílovou složku, zadejte název a klikněte na *Uložit*. Vyberte *Zobrazit informace pro následující jazyky*. Musíte zaškrtnout políčko vedle *Angličtiny*. Klikněte na *OK*.
 
-Please send the two files that you've recently saved to **support@adguard.com**.
+Odešlete prosím dva soubory, které jste nedávno uložili na adresu **support@adguard.com**.

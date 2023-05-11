@@ -26,7 +26,7 @@ So, ready to get your hands dirty? Here are actions that, when included in the i
 
 `stop` stops the protection, no extra data required;
 
-`pause` pauses the protection. The difference between this and `stop` is that a notification will appear that restarts the protection when you tap on it. No extra data required;
+`pause` pauses the protection. The difference between this and `stop` is that a notification will appear that restarts the protection when you tap it. No extra data required;
 
 `update` checks for available filter and app updates, no additional data is needed;
 
@@ -114,7 +114,9 @@ Extra: `password:*******`
 
 Package name: `com.adguard.android`
 
-Class: `com.adguard.android.receivers.AutomationReceiver`
+Class: `com.adguard.android.receiver.AutomationReceiver`
+
+> Note: Before v4.0 the class was called `com.adguard.android.receivers.AutomationReceiver` but then we changed its name to `com.adguard.android.receiver.AutomationReceiver`. If you used this feature, please pay attention and use the new name.
 
 ### Execution without notification
 

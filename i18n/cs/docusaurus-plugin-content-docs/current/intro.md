@@ -1,23 +1,23 @@
 ---
-title: Overview
+title: Přehled
 sidebar_position: 1
 slug: /
 ---
 
-## What is AdGuard Ad Blocker?
+## Co je blokátor reklam AdGuard?
 
-AdGuard is one of the leaders on the market of ad-blocking software with 10+ years of experience, almost a dozen products for various platforms, and over 30 million user installs. Unlike other ad-blocking solutions, most of which are browser-based, we offer standalone apps for all major platforms, both desktop and mobile. AdGuard apps are more powerful than browser extensions, can block more and do it more efficiently:
+AdGuard je jedním z lídrů na trhu softwaru pro blokování reklam s více než 10 lety zkušeností, téměř desítkou produktů pro různé platformy a více než 30 miliony instalací. Na rozdíl od jiných řešení pro blokování reklam, z nichž většina je založena na prohlížeči, nabízíme samostatné aplikace pro všechny hlavní platformy a to jak pro počítače, tak pro mobilní zařízení. Aplikace AdGuard jsou výkonnější než rozšíření prohlížeče, dokáží blokovat více a efektivněji:
 
-* [AdGuard for Windows](/adguard-for-windows/overview)
-* [AdGuard for Mac](/adguard-for-mac/overview)
-* [AdGuard for Android](/adguard-for-android/overview)
-* [AdGuard for iOS](/adguard-for-ios/overview)
+* [AdGuard pro Windows](/adguard-for-windows/overview)
+* [AdGuard pro macOS](/adguard-for-mac/overview)
+* [AdGuard pro Android](/adguard-for-android/overview)
+* [AdGuard pro iOS](/adguard-for-ios/overview)
 
-But we also develop and maintain free browser extensions for all popular browsers:
+Vyvíjíme a spravujeme také bezplatná rozšíření prohlížeče pro všechny oblíbené prohlížeče:
 
-* [AdGuard Browser extension](/adguard-browser-extension/overview)
-* [AdGuard for Safari](/adguard-for-safari/overview)
+* [Rozšíření prohlížeče AdGuard](/adguard-browser-extension/overview)
+* [AdGuard pro Safari](/adguard-for-safari/overview)
 
-## Not just ad blocking
+## Nejen blokování reklam
 
-AdGuard Ad Blocker does more than just block ads. It will protect you from online tracking and enhance your privacy in many ways. Depending on the specific product, AdGuard can also offer such perks as DNS filtering for more rounded-up protection, Parental Control to shield your kids from inappropriate content, Filtering log to have better control over your internet traffic, and more. This Knowledge base contains detailed information about any and all of them — feel free to jump to any article that interests you.
+Blokátor reklam AdGuard umí víc než jen blokovat reklamy. Ochrání vás před sledováním online a v mnoha ohledech posílí vaše soukromí. V závislosti na konkrétním produktu může AdGuard nabízet také takové výhody, jako je DNS filtrování pro lepší ochranu, rodičovská ochrana, která chrání vaše děti před nevhodným obsahem, záznam filtrování pro lepší kontrolu internetového provozu a další. Tato databáze znalostí obsahuje podrobné informace o všech z nich — neváhejte přejít na článek, který vás zajímá.

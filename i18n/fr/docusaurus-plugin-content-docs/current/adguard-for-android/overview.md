@@ -31,7 +31,7 @@ AdGuard allows you to create your own custom filters, using the same type of rul
 
 > Tip: use the Import feature to transfer your rules to a different device.
 
-## HTTPS filtering
+## Filtrage HTTPS {#https-filtering}
 
 Nowadays almost all websites work via HTTPS, the web protocol where the last S letter stands for "secure". It happened so that most advertisers use this protocol as well, this is why [HTTPS filtering](/general/https-filtering/what-is-https-filtering) is really crucial for a modern ad blocker.
 
@@ -163,7 +163,7 @@ To learn more about DNS-over-QUIC, check out [this article](https://adguard.com/
 To enable DoQ in AdGuard for Android, perform the following steps:
 
 * Open the app, then open the side menu
-* Go to *Settings > DNS Filtering* and enable it
+* Go to *Settings → DNS Filtering* and enable it
 * Select any of AdGuard DNS servers from the list of available servers
 * Under *Server type* choose *DNS-over-QUIC*
 
@@ -173,7 +173,7 @@ It is very much like the regular User filter, but for DNS requests.
 
 ![DNS user filter *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/dns-user-filter.png)
 
-You'll find DNS user filter at *Settings > DNS Filtering > DNS Requests blocking*. DNS User filter supports two types of syntax: a limited portion of AdGuard syntax and "hosts" syntax. You can read more about it in our Knowledge Base.
+You'll find DNS user filter at *Settings → DNS Filtering → DNS Requests blocking*. DNS User filter supports two types of syntax: a limited portion of AdGuard syntax and "hosts" syntax. You can read more about it in our Knowledge Base.
 
 ## Custom DNS filters
 
@@ -181,7 +181,7 @@ You can add any [custom DNS filters](https://filterlists.com/) or custom hosts l
 
 ![DNS filters *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/dns-filters.png)
 
-This option is available on the *Settings > DNS Filtering > DNS Requests blocking* screen.
+This option is available on the *Settings → DNS Filtering → DNS Requests blocking* screen.
 
 ## Proxy and TOR
 
@@ -195,7 +195,7 @@ Contrary to a popular opinion, using a proxy server is not just about bypassing 
 
 ## Extensions support
 
-Userscripts (we also call them extensions) are basically mini-programs written in JavaScript that extend the functionality of one or more websites. Usually, you'd need some special userscript manager to add them, and it's traditionally more of a desktop thing. But with AdGuard everything is possible! Now you can add any userscripts by URL or load them from a file, and AdGuard will serve as a userscript manager and take care of the rest. Go to *Settings > Extensions* to enable some of the pre-installed extensions or to add custom userscripts.
+Userscripts (we also call them extensions) are basically mini-programs written in JavaScript that extend the functionality of one or more websites. Usually, you'd need some special userscript manager to add them, and it's traditionally more of a desktop thing. But with AdGuard everything is possible! Now you can add any userscripts by URL or load them from a file, and AdGuard will serve as a userscript manager and take care of the rest. Go to *Settings → Extensions* to enable some of the pre-installed extensions or to add custom userscripts.
 
 ![Extensions *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/extensions.png)
 
@@ -211,7 +211,7 @@ Both apps will detect each other and do everything that's needed for smooth join
 
 If you'd like to disable Compatibility Mode for any reason, it's very simple to do so from AdGuard Ad Blocker settings, just toggle the switch. Additionally, you can add AdGuard Ad Blocker and AdGuard VPN tiles to your device's notification bar and toggle them in one tap at your own will — thanks to Compatibility Mode the configuration will change immediately and silently.
 
-## License
+## Licence
 
 While some ot the features in AdGuard for Android are free, others require [purchasing a license](https://adguard.com/en/license.html). There are Personal (up to three devices) and Family (up to 9 devices), Yearly and Lifetime license keys. The premium version offers the following features to its users:
 * Stealth Mode
@@ -220,7 +220,7 @@ While some ot the features in AdGuard for Android are free, others require [purc
 * Ad blocking in all apps (not only browsers)
 * Custom filters
 
-Read [this article](./general/license/activation) to learn how to activate the license key.
+Read [this article](/general/license/activation) to learn how to activate the license key.
 
 ## Other features
 

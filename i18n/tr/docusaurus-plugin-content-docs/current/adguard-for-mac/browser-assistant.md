@@ -39,4 +39,4 @@ Technically, you won’t need to do it on your own: during the onboarding proces
 
 AdGuard Browser Assistant is available for all popular browsers: Chrome, Firefox, Safari, Edge, Opera, and Yandex. To install the Browser Assistant for your default browser, you can do it directly from the app settings, but you also have an opportunity to install it for other browsers.
 
-To install the one you need (or many, it is not prohibited but even encouraged), go to [our website](https://adguard.com/en/adguard-assistant/overview.html), click the browser icon and then the *Install* button. That’s it!
+To install the one you need (or many, it is not prohibited but even encouraged), go to [our website](https://adguard.com/en/adguard-assistant/overview.html), click the browser icon and then the *Install* button. Bu kadar!

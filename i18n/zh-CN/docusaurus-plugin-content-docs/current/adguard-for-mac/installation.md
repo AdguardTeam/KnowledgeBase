@@ -15,17 +15,17 @@ sidebar_position: 2
 
 ## 安装过程
 
-为了将 AdGuard macOS 版安装到您的电脑上，请您打开浏览器，在地址栏键入 _adguard.com_ 后，在打开的网页上点击**下载**即可。
+To install AdGuard for macOS on your computer, launch your browser, type _adguard.com_ in the address bar, and press **Download** [on the page that opens](https://adguard.com/download.html?auto=1).
 
 ![下载应用 *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/1.jpg)
 
 请等待 _AdguardInstaller.dmg_ 下载完成后，在 Dock 栏上已安装的文件列表里双击它的图标。
 
-![双击打开文件](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation_open_the_file.jpg)
+![Double-click to open the file](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation_open_the_file.jpg)
 
 AdGuard 图标将出现在您的桌面上。 单击它打开安装应用程序，然后在打开的窗口中双击 AdGuard 图标。
 
-![双击 AdGuard 图标](https://cdn.adtidy.org/content/kb/ad_blocker/mac/3.jpg)
+![Double-click the AdGuard icon](https://cdn.adtidy.org/content/kb/ad_blocker/mac/3.jpg)
 
 当您第一次启用 AdGuard 时，您的操作系统将会提示您：该应用程序是从互联网下载的 App。 点击**打开**。
 
@@ -64,26 +64,33 @@ AdGuard 图标将出现在您的桌面上。 单击它打开安装应用程序�
 
 **除非您知道如何操作或有我们技术支持专门为您推荐使用进阶方式卸载应用程序，我们不推荐您使用该方式。 另外，先执行「标准卸载」的所有步骤。**
 
-* 之后，删除以下 AdGuard 文件：
-    * /Library/Application Support/AdGuard Software/com.adguard.mac.adguard（文件夹）
-    * ~/Library/Preferences/com.adguard.mac.adguard.plist（文件）
-    * ~/Library/Group\Containers/TC3Q7MAJXF.com.adguard.mac（文件夹）
-    * /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist（文件）
-    * /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist（文件）
-    * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard-pac.daemon.log（文件）。
-    * /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log（文件）
+1. After that, delete following AdGuard files:
+    - /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (folder)
+    - ~/Library/Preferences/com.adguard.mac.adguard.plist (file)
+    - ~/Library/Group\ Containers/TC3Q7MAJXF.com.adguard.mac (folder)
+    - /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist (file)
+    - /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist (file)
+    - /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log (file)
+    - /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log (file)
 
-To do so, open the Terminal app, then enter and execute the following commands:
+    To do so, open the Terminal app, then enter and execute the following commands:
+    - `sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"`
+    - `rm -R "$HOME/Library/Application Support/com.adguard.mac.adguard"`
+    - `rm $HOME/Library/Preferences/com.adguard.mac.adguard.plist`
+    - `rm -R "$HOME/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac"`
+    - `find "$HOME/Library/Application Support" -name "com.adguard.browser_extension_host.nm.json" -delete`
+    - `sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist`
+    - `sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist`
+    - `sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log`
+    - `sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log`
 
-`sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"` `rm -R "$HOME/Library/Application Support/com.adguard.mac.adguard"` `rm $HOME/Library/Preferences/com.adguard.mac.adguard.plist` `rm -R "$HOME/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac"` `find "$HOME/Library/Application Support" -name "com.adguard.browser_extension_host.nm.json" -delete` `sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist` `sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist` `sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log` `sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log`
+1. Run the **Activity Monitor** app.
+1. 通过搜索查找 **cfprefsd** 进程。
 
-* 开启 ’活动监视器’。
-* 通过搜索查找 **cfprefsd** 进程。
+    ![开启活动监视器](https://cdn.adtidy.org/content/kb/ad_blocker/mac/22.jpg)
 
-![开启活动监视器](https://cdn.adtidy.org/content/kb/ad_blocker/mac/22.jpg)
+1. 退出在用户态下运行的进程（不是在 root 权限运行的）。 为了退出，请点击进程，然后在左上角点击 X。 在对话窗确认要退出。
 
-* 退出在用户态下运行的进程（不是在 root 权限运行的）。 为了退出，请点击进程，然后在左上角点击 X。 在对话窗确认要退出。
-
-![确认](https://cdn.adtidy.org/content/kb/ad_blocker/mac/33.jpg)
+    ![确认](https://cdn.adtidy.org/content/kb/ad_blocker/mac/33.jpg)
 
 AdGuard 卸载完成。

@@ -1,35 +1,35 @@
 ---
-title: How to prioritize the translations of Crowdin files
+title: Übersetzungspriorität der Crowdin-Dateien
 sidebar_position: 5
 --- 
 
-There are five major AdGuard projects on Crowdin — [AdGuard Applications](https://crowdin.com/project/adguard-applications), [AdGuard Websites](https://crowdin.com/project/adguard-websites), [AdGuard Ad Blocker Knowledge base](https://crowdin.com/project/adguard-knowledge-base), [AdGuard VPN Knowledge Base](https://crowdin.com/project/adguard-vpn-knowledge-base), and [AdGuard DNS Knowledge Base](https://crowdin.com/project/adguard-knowledge-bases).
+Es gibt fünf große AdGuard-Projekte auf Crowdin – [AdGuard Applications](https://crowdin.com/project/adguard-applications), [AdGuard Websites](https://crowdin.com/project/adguard-websites), [AdGuard Knowledge Base](https://crowdin.com/project/adguard-knowledge-base), [AdGuard VPN Knowledge Base](https://crowdin.com/project/adguard-vpn-knowledge-base) und [AdGuard DNS Knowledge Base](https://crowdin.com/project/adguard-knowledge-bases).
 
-We do not have clear guidelines on which files or products of the *AdGuard Applications* project to start with. Just choose any product you like.
+Wir haben keine klaren Richtlinien, mit welchen Dateien oder Produkten des Projekts *AdGuard Applications* Sie beginnen sollen. Wählen Sie einfach ein beliebiges Produkt aus.
 
-There are just a couple of things we want to mention:
+Es gibt nur ein paar Dinge, die wir erwähnen möchten:
 
-* You can see the app only in those languages for which all translations are completed in Crowdin;
-* We recommend translating the descriptions for app stores in the second place, because without the translation of products themselves, the descriptions won't be needed.
+* Sie können die App nur in den Sprachen sehen, für die alle Übersetzungen in Crowdin abgeschlossen sind;
+* Wir empfehlen, die Beschreibungen für App-Stores an zweiter Stelle zu übersetzen, da die Beschreibungen ohne die Übersetzung der Produkte selbst nicht benötigt werden.
 
-The situation is different in the *AdGuard Websites* project. Languages can be added to the site even if a full set of translations is not available. However, this depends on which files have already been translated. That's why we recommend that you start with the most important files — they are listed below:
+Anders verhält es sich bei dem Projekt *AdGuard Websites* . Sprachen können der Website auch dann hinzugefügt werden, wenn noch keine vollständigen Übersetzungen vorhanden sind. Dies hängt jedoch davon ab, welche Dateien bereits übersetzt wurden. Deshalb empfehlen wir Ihnen, mit den wichtigsten Dateien zu beginnen – sie sind unten aufgeführt:
 
-[AdGuard Ad Blocker website](https://crowdin.com/project/adguard-websites/en#/adguard.com)
+[AdGuard Werbeblocker-Website](https://crowdin.com/project/adguard-websites/en#/adguard.com)
 
 * `critical.resx`
 * `auth.resx`
 * `welcome.resx`
 
-[AdGuard VPN website](https://crowdin.com/project/adguard-websites/en#/adguard-vpn.com)
+[AdGuard VPN-Website](https://crowdin.com/project/adguard-websites/en#/adguard-vpn.com)
 
 * `critical.resx`
 * `auth.resx`
 
-[AdGuard DNS website](https://crowdin.com/project/adguard-websites/en#/adguard-dns.com)
+[AdGuard DNS-Website](https://crowdin.com/project/adguard-websites/en#/adguard-dns.com)
 
 * `critical.resx`
 * `auth.resx`
 
-> Adding new strings as well as updating existing ones in these files requires special attention from the project translators and proofreaders.
+> Das Hinzufügen neuer Strings sowie das Aktualisieren vorhandener in diesen Dateien erfordert besondere Aufmerksamkeit von den Projektübersetzern und Korrekturlesern.
 
-In addition to websites, there is a file for translating [transactional emails](https://crowdin.com/project/adguard-websites/de#/emails) in the AdGuard Websites project. Newly added strings in this file also have a high translation priority.
+Neben Websites gibt es im AdGuard Websites-Projekt eine Datei zum Übersetzen von [Transaktions-E-Mails](https://crowdin.com/project/adguard-websites/de#/emails). Neu hinzugefügte Phrasen in dieser Datei haben ebenfalls eine hohe Übersetzungspriorität.

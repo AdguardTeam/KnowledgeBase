@@ -1,52 +1,52 @@
 ---
-title: Known compatibility issues with Android apps
+title: Známé problémy kompatibility s aplikacemi pro Android
 sidebar_position: 15
 ---
 
-## VPN apps
+## Aplikace VPN
 
-Other VPN apps are incompatible with AdGuard running in the Local VPN filtering mode since you cannot have two active VPNs at the same time. To solve this problem we suggest you:
+Ostatní aplikace VPN nejsou kompatibilní se službou AdGuard spuštěnou v režimu filtrování místní sítě VPN, protože nelze mít současně aktivní dvě sítě VPN. K vyřešení tohoto problému vám doporučujeme:
 
-* use [AdGuard VPN](https://adguard-vpn.com/welcome.html) — it has Integrated mode that allows two apps to operate seamlessly
-* use AdGuard in Local HTTP Proxy mode. *Please note that 'manual' HTTP Proxy mode is not supported on devices since Android 10*
-* if you use a third-party VPN app, figure out whether it supports SOCKS4/SOCKS5 mode. If it does, you can configure your VPN app to work as outbound proxy and set up local outbound proxy with params from the third-party app. For instance, AdGuard can be automatically configured with 'Orbot: Proxy with Tor'
+* použít [AdGuard VPN](https://adguard-vpn.com/welcome.html) — má integrovaný režim, který umožňuje bezproblémové fungování dvou aplikací
+* použít AdGuard v režimu místního HTTP proxy. *Vezměte prosím na vědomí, že manuální režim HTTP proxy není na zařízeních se systémem Android 10 podporován*
+* pokud používáte aplikaci VPN třetí strany, zjistěte, zda podporuje režim SOCKS4/SOCKS5. Pokud ano, můžete nakonfigurovat aplikaci VPN tak, aby fungovala jako odchozí proxy server, a nastavit místní odchozí proxy server pomocí parametrů z aplikace třetí strany. AdGuard lze například automaticky nakonfigurovat pomocí nástroje 'Orbot: Proxy with Tor'
 
-## Private DNS
+## Soukromý DNS
 
-The Private DNS feature was introduced in Android Pie. Before version Q, Private DNS didn't break AdGuard DNS filtering logic and the DNS forwarding through AdGuard worked normally. But starting from version Q, the presence of Private DNS forces apps to redirect traffic through the system resolver instead of AdGuard. See Android [devs blog](https://android-developers.googleblog.com/2018/04/dns-over-tls-support-in-android-p.html) for more details.
+Funkce Soukromý DNS byla představena v Android Pie. Před verzí Q služba Soukromý DNS neporušovala logiku filtrování AdGuard DNS a předávání DNS prostřednictvím AdGuardu fungovalo normálně. Od verze Q však přítomnost služby Soukromý DNS nutí aplikace přesměrovávat přenosy přes systémový řešitel namísto přes AdGuard. Další podrobnosti najdete v [blogu vývojářů](https://android-developers.googleblog.com/2018/04/dns-over-tls-support-in-android-p.html) systému Android.
 
-> Some device manufacturers keep Private DNS settings hidden and set 'Automatic' mode as a default one. Thus, disabling Private DNS is impossible but we can make the system think that the upstream is not valid by blocking it with a `$network` rule. For instance, if the system uses Google DNS by default, we can add rules `|8.8.4.4^$network` and `|8.8.8.8^$network` to block Google DNS.
+> Někteří výrobci zařízení nechávají nastavení Soukromých DNS skryté a jako výchozí nastavují režim "Automaticky". Zakázat službu Soukromý DNS tedy nelze, ale můžeme systém přimět, aby si myslel, že odchozí server není platný, a to tak, že jej zablokujeme pomocí pravidla `$network`. Pokud například systém ve výchozím nastavení používá Google DNS, můžeme přidat pravidla `|8.8.4.4^$network` a `|8.8.8.8^$network` pro zablokování Google DNS.
 
-## Unsupported browsers
+## Nepodporované prohlížeče
 
-### UC Browsers: UC Browser, UC Browser for x86, UC Mini, UC Browser HD
+### Prohlížeče UC: UC Browser, UC Browser pro x86, UC Mini, UC Browser HD
 
-To be able to filter HTTPS traffic, AdGuard requires the user to install a certificate into the device's trusted user certificates. Unfortunately, UC-family browsers don't trust user certificates, so AdGuard cannot perform HTTPS filtering there.
+Aby mohl AdGuard filtrovat přenosy HTTPS, musí uživatel přidat certifikát do důvěryhodných uživatelských certifikátů zařízení. Prohlížeče z rodiny UC bohužel nedůvěřují uživatelským certifikátům, takže v nich AdGuard nemůže provádět filtrování HTTPS.
 
-**Solution**
+**Řešení**
 
-*Requires root access*. To solve this problem, move the certificate to the system certificate store.
+*Vyřaduje root přístup*. Chcete-li tento problém vyřešit, přesuňte certifikát do systémového úložiště certifikátů.
 
 ### Opera mini: Opera mini, Opera mini with Yandex
 
-Opera mini drives traffic through a compression proxy by default and AdGuard is not able to decompress and filter it at the same time.
+Opera mini ve výchozím nastavení řídí přenosy přes kompresní proxy server a AdGuard je nedokáže dekomprimovat a filtrovat současně.
 
-**Solution**
+**Řešení**
 
-There is no solution at this moment.
+V tuto chvíli neexistují žádná řešení.
 
-### Dolphin Browser: Dolphin Browser, Dolphin Browser Express
+### Prohlížeče Dolphin: Dolphin Browser, Dolphin Browser Express
 
-AdGuard cannot filter its traffic when operating in **Manual proxy mode** because this browser ignores system proxy settings.
+AdGuard nemůže filtrovat provoz v režimu **Manuální proxy**, protože tento prohlížeč ignoruje systémové nastavení proxy.
 
-**Solution**
+**Řešení**
 
-Use *Local VPN* filtering mode.
+Použijte režim filtrování *Lokální VPN*.
 
-### Puffin Browser: Puffin Browser, Puffin Browser Pro
+### Prohlížeč Puffin: Puffin Browser, Puffin Browser Pro
 
-Puffin Browser drives traffic through a compression proxy by default and AdGuard is not able to decompress and filter it at the same time.
+Prohlížeč Puffin ve výchozím nastavení řídí přenosy přes kompresní proxy server a AdGuard je nedokáže dekomprimovat a filtrovat současně.
 
-**Solution**
+**Řešení**
 
-There is no solution at this moment.
+V tuto chvíli neexistují žádná řešení.

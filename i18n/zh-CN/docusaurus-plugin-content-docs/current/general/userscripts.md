@@ -1,5 +1,5 @@
 ---
-title: Userscripts
+title: 用户脚本
 sidebar_position: 5
 ---
 

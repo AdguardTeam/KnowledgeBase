@@ -1,5 +1,5 @@
 ---
-title: How to install
+title: AdGuard installieren
 sidebar_position: 2
 ---
 

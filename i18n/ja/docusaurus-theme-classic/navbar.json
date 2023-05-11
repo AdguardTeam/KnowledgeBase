@@ -4,11 +4,11 @@
     "description": "Navbar item with label docs"
   },
   "item.label.blog": {
-    "message": "Blog",
+    "message": "AdGuard公式ブログ",
     "description": "Navbar item with label blog"
   },
   "item.label.official_website": {
-    "message": "Official website",
+    "message": "公式ホームページ",
     "description": "Navbar item with label official_website"
   },
   "item.label.GitHub": {

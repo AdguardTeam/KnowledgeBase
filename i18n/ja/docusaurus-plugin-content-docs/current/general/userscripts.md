@@ -1,5 +1,5 @@
 ---
-title: Userscripts
+title: ユーザースクリプト
 sidebar_position: 5
 ---
 

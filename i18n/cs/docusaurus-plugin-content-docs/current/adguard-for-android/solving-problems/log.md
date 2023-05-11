@@ -1,42 +1,42 @@
 ---
-title: How to collect a full log
+title: Jak shromažďovat kompletní záznamy
 sidebar_position: 2
 ---
 
-Sometimes in order to understand a problem and fix it we need to collect **log files**, or **logs**. Basically, these files contain information about the program and it's work.
+Někdy k pochopení problému a jeho odstranění potřebujeme shromáždit **soubory záznamů** nebo **záznamy**. Tyto soubory v podstatě obsahují informace o programu a jeho práci.
 
-### Collecting debug log
+### Shromažďování záznamů ladění
 
-To collect **debug** log and send it to us you need to perform following steps:
+Chcete-li shromáždit záznam **ladění** a odeslat nám jej, musíte provést následující kroky:
 
-1. Open AdGuard and go to "Settings".
+1. Otevřete AdGuard a přejděte do "Nastavení".
 
-2. Choose "Advanced".
+2. Vyberte "Pokročilé".
 
-3. Set "Logging level" to "Record everything". It's desirable to close all background apps that don't concern the problem beforehand.
+3. Nastavte "Úroveň záznamu" na "Zaznamenat vše". Je žádoucí předem zavřít všechny aplikace na pozadí, které se problému netýkají.
 
-4. Reproduce the problem and set the logging level back to "Default". Notice the exact time when it happened.
+4. Zopakujte problém a nastavte úroveň záznamu zpět na "Výchozí". Všimněte si přesného času, kdy se to stalo.
 
-5. Send us a message from program by choosing "Support" > "Send Feedback" in the menu. Don't forget to check the "Send detailed system info" checkbox under the text field and to include the timestamp from the step 4 into the message.
+5. Odešlete nám zprávu z programu výběrem "Podpora" → "Odeslat zpětnou vazbu" v menu. Nezapomeňte zaškrtnout políčko "Odeslat podrobné systémové informace" pod textovým polem a do zprávy vložit časové razítko z kroku 4.
 
-As an alternative, you can export the logs (along with the *state.txt* file that contains system information and information about AdGuard settings) directly into a local file. It can be convenient, for example, if you are having a conversation with a developer on [GitHub](https://github.com/AdguardTeam/AdguardForAndroid/issues), [forum](https://forum.adguard.com/) or on another platform.
+Alternativně můžete záznamy (spolu se souborem *state.txt*, který obsahuje systémové informace a informace o nastavení AdGuardu) exportovat přímo do místního souboru. Může se to hodit, například pokud vedete konverzaci s vývojářem na [GitHubu](https://github.com/AdguardTeam/AdguardForAndroid/issues), [fóru](https://forum.adguard.com/) nebo na jiné platformě.
 
-To export logs and system information into a file, go to "Settings" — "Advanced" and tap "Export logs and system info". Select the destination folder and tap "Save".
+Chcete-li exportovat záznamy a systémové informace do souboru, přejděte do nabídky "Nastavení" - "Pokročilé" a klepněte na položku "Exportovat záznamy a systémové informace". Vyberte cílovou složku a klepněte na "Uložit".
 
-### Collecting web requests log
+### Shromažďování záznamů webových požadavků
 
-To collect **web requests** log and send it to us you need to perform following steps:
+Chcete-li shromáždit záznam **webových požadavků** a odeslat nám jej, musíte provést následující kroky:
 
-1. Open AdGuard and go to "Settings".
+1. Otevřete AdGuard a přejděte do "Nastavení".
 
-2. Choose "Advanced".
+2. Vyberte "Pokročilé".
 
-3. Set "Logging level" to "Record web requests". It's desirable to close all background apps that don't concern the problem beforehand.
+3. Nastavte "Úroveň záznamu" na "Zaznamenat webové požadavky". Je žádoucí předem zavřít všechny aplikace na pozadí, které se problému netýkají.
 
-4. Reproduce the problem and set the logging level back to "Default". Notice the exact time when it happened.
+4. Zopakujte problém a nastavte úroveň záznamu zpět na "Výchozí". Všimněte si přesného času, kdy se to stalo.
 
-5. Send us a message from program by choosing "Support" > "Send Feedback" in the menu. Don't forget to check the "Send detailed system info" checkbox under the text field and to include the timestamp from the step 4 into the message.
+5. Odešlete nám zprávu z programu výběrem "Podpora" → "Odeslat zpětnou vazbu" v menu. Nezapomeňte zaškrtnout políčko "Odeslat podrobné systémové informace" pod textovým polem a do zprávy vložit časové razítko z kroku 4.
 
-As an alternative, you can export the logs (along with the *state.txt* file that contains system information and information about AdGuard settings) directly into a local file. It can be convenient, for example, if you are having a conversation with a developer on [GitHub](https://github.com/AdguardTeam/AdguardForAndroid/issues), [forum](https://forum.adguard.com/) or on another platform.
+Alternativně můžete záznamy (spolu se souborem *state.txt*, který obsahuje systémové informace a informace o nastavení AdGuardu) exportovat přímo do místního souboru. Může se to hodit, například pokud vedete konverzaci s vývojářem na [GitHubu](https://github.com/AdguardTeam/AdguardForAndroid/issues), [fóru](https://forum.adguard.com/) nebo na jiné platformě.
 
-To export logs and system information into a file, go to "Settings" — "Advanced" and tap "Export logs and system info". Select the destination folder and tap "Save".
+Chcete-li exportovat záznamy a systémové informace do souboru, přejděte do nabídky "Nastavení" - "Pokročilé" a klepněte na položku "Exportovat záznamy a systémové informace". Vyberte cílovou složku a klepněte na "Uložit".

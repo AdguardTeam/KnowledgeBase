@@ -1,5 +1,5 @@
 ---
-title: Possible DNS leaks
+title: Olası DNS sızıntıları
 sidebar_position: 9
 ---
 
@@ -7,7 +7,7 @@ AdGuard for Windows allows users to specify a DNS server address to resolve quer
 
 Many AdGuard for Windows users appreciate the DNS protection feature. But some of them encounter the following issue: a check on a website like https://ipleak.net/ shows that requests are handled by default DNS server instead of the selected one. In this article we will tell you why this happens and how to avoid it.
 
-## Bootstrap DNS address
+## Önyükleme DNS adresi
 
 The DNS server addresses could be written as IPs or as domain names. In the case of IP addresses there are no difficulties: AdGuard forwards the DNS request directly to the server specified in the DNS protection module. However, encrypted DNS server addresses, like DoT or DoH, are most often written as domain names. In this case, to first resolve the encrypted DNS server address, AdGuard sends a DNS query to the bootstrap address, which is by default a system DNS server. This connection is what check services perceive as a leak.
 
@@ -16,7 +16,7 @@ The DNS server addresses could be written as IPs or as domain names. In the case
 * go to the *Advanced settings*
 * scroll down to the *List of custom bootstrap addresses* section
 * enter the custom bootstrap address in IP address format (you may use [the list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/))
-* click *Save*
+* *kaydet* öğesine tıklayın
 
 ## Fallback DNS server
 

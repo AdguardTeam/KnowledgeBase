@@ -1,83 +1,83 @@
 ---
-title: Legacy licenses FAQ
-sidebar_position: 4
+title: 关于旧版许可证的常见问题
+sidebar_position: 6
 ---
 
-We have written this article to avoid confusion and explain in detail how you can renew/upgrade an outdated (legacy) AdGuard license.
+我们写了这篇文章的原因是，向用户详细解释如何续订/升级旧版 AdGuard 许可证，这样可以避免一切误解。
 
-## About the outdated licenses
+## 关于旧版的许可证
 
-Initially licenses of the following types were available to activate AdGuard products:
+最开始，我们有以下的许可证用来激活 AdGuard 软件：
 
-**Standard** — for desktop applications AdGuard for Windows/AdGuard for Mac
+**标准版** —— 用于 Windows/Mac 的 AdGuard 桌面端应用程序
 
-**Mobile** — for mobile applications AdGuard for Android/AdGuard for iOS
+**移动版** —— 用于 Android/iOS 的 AdGuard 移动端应用程序
 
-**Premium** — a license that combines desktop + mobile application
+**高级版** —— 同时用于桌面端和移动端的许可证
 
-Standard and Mobile licenses could be purchased for 1 to 9 devices.
+标准版和移动版可以支付用于1到9台设备。
 
-Standard were valid only for desktops, and Mobile were only for smartphones and tablets.
+标准版限制用于桌面端，而移动版只能用于收集和平板电脑。
 
-Premium licenses could have been used on 2-18 devices. Depending on the number of devices selected upon purchasing, they allowed you to simultaneously activate AdGuard on an equal number of computers and mobile devices: 2+2, 3+3, etc.
+高级版的许可证可以同时在2-18台设备上使用。 取决于用户购买时选择的所需要的设备数量。用户可以在同等数量的桌面端和移动端设备上激活许可证：2+2、3+3 等等。
 
-For example, you might have had a Premium license for 2+2 devices, that is, the license could be installed on 2 computers and 2 phones/tablets. Or, for example, for 9+9 (18 devices in total), then the license could be installed on 9 computers and 9 phones/tablets.
+比如说，您可能有可用于2+2的高级版许可证，该许可证可以安装在两台电脑和两台手机/平板电脑。 或者，比方说，您购买力9+9（总共18 台设备），那么您可以在9个电脑和9个手机/平板电脑安装该许可证。
 
-For all types (Standard, Mobile, Premium) there were options for a Yearly and Lifetime license.
+所有许可证的类型（标准版、移动版、高级版）有一年和终身的效期。
 
-In October 2019 AdGuard switched to the new licensing system: from then on, licenses can still be purchased for 1 year or Lifetime, but their types have become **Personal** (for up to 3 devices) or **Family** (for up to 9 devices).
+2019年10月 AdGuard 有新版许可证。用户仍然可以选择两个效期，即一年和终身，但是许可证的类型改变了。现在我们有**个人版**（可以用于3台设备）和**家庭版**（可以用于9台设备）。
 
-One more change: **license keys of the new type can now be used on any device, in any combination. For example, a Personal License can be installed on Android, Mac and iOS, just like on two Windows computers and an Apple tablet, etc.**
+请注意：**新版的许可证密钥可以用于所有设备上，无论是哪一种桌面端或移动端组合。 比如说，个人版的许可证可以安装在3台设备，即 Android、Mac 和 iOS，或是两个 Windows 电脑和一个 Apple iPad 上等等。**
 
-## What happened to the outdated licenses?
+## 旧版许可证现在怎么用？
 
-Standard were automatically made universal, which means that they can be activated on any devices.
+标准版的许可证自动换成“通用版”，即可以用于所有设备，无论是桌面端还是移动端。
 
-Mobile licenses remained unchanged and platform-limited (they can still only be used on phones or tablets).
+移动版的许可证未受改变（设备数量保持不变，依然只能用于手机或平板电脑上）。
 
-Premium licenses also remained unchanged and platform-limited. And although **Premium licenses are now displayed in your personal account by the total number of devices**, they can still be activated on desktop + mobile set of devices.
+高级版的许可证也没改变，依然收到设备数量的限制。 虽然**高级版的许可证显示在用户的个人账号里（包括总计设备数量）**。该许可证现在也可以激活在桌面端+移动端的设备组合。
 
-For example, this is how the 1+1 key looks like:
+比如说，以下是1+1许可证密钥的例子：
 
-![1+1 key](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/1.outdatedlicenses_en.png)
+![1+1许可证密钥](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/1.outdatedlicenses_en.png)
 
-*But despite the total number of devices (2) it can be activated on 1 desktop and 1 mobile device.*
-> All the outdated licenses have a "legacy" badge in the AdGuard account. And they are automatically converted to a new type when you either renew or upgrade them. But there are some nuances. Let's see which licenses can be converted to a new type and how to do it.
+*无论设备的总数（2）许可证密钥仅仅可以在1个桌面端和1个移动端激活。*
+> 所有旧版的许可证在 AdGuard 账号里带有「旧版」标记。 当用户续订获省级许可证时，它们自动转换成新版的许可证。 不过，也有一些细微的差别。 让我们看看哪些许可证可以转换成新版，以及如何做到这一点。
 
-## I have an outdated (legacy) key. What renewal/upgrade options are available for me?
+## 我有旧版许可证密钥。 我有什么续订/升级选择？
 
-You can check this on the [renewal page](https://adguard.com/renew.html) or in your [AdGuard account](https://my.adguard.com/main.html):
+用户可以在[续订网页](https://adguard.com/renew.html)或 [AdGuard 账号](https://my.adguard.com/main.html)里查看该消息：
 
-![Upgrade](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_en.png)
-> Go to "My licenses" tab and check what actions are available to you for each specific key. Below we will explain with specific examples.
+![升级](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_en.png)
+> 请前往「我的许可证」选项卡，检查每个特定密钥有哪些操作可供执行。 下面我们将用具体的例子给您解释。
 
-### Licenses for 1/2/3 devices
+### 1/2/3台设备的许可证
 
-**Yearly** licenses for 1, 2, 3 devices can be converted to either Personal or Family:
+用于1、2、3台设备的**一年许可证**可以转换成个人或家庭：
 
-![Upgrade or renew](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/3.yearly_en.png)
-> Choose based on how many devices you need to protect.
+![升级或续订](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/3.yearly_en.png)
+> 根据您需要保护的设备数量进行选择。
 
-Instead of renewal you can switch to Lifetime:
+除了续订，您可以转为终身版：
 
-![Lifetime](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/4.lifetime_en.png)
+![终身](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/4.lifetime_en.png)
 
-**Lifetime** licenses can only be converted to Family (9 devices) due to technical limitations:
+由于技术限制**终身版**的许可证只能转换成家庭版（9台设备）：
 
-![Lifetime upgrade](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/5.lifetimeupgrade_en.png)
+![终身升级](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/5.lifetimeupgrade_en.png)
 
-### Licenses for 4+ devices (up to 9)
+### 4+台设备的许可证（最多可连接到9台设备）
 
-**Yearly** keys of this configuration can only be converted into a Family license:
+**一年的**许可证密钥配置仅能转换成家庭版的许可证：
 
-![Yearly license for 4 devices](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/6.yearly4+devices_en.png)
+![4 台设备的年度许可证](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/6.yearly4+devices_en.png)
 
-**Lifetime** licenses for 4 or more devices cannot be upgraded due to technical limitation:
+由于技术限制用于4太或更多设备上的**终身版**许可证无法升级：
 
-![Lifetime license for 4 devices](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/7.lifetime4+devices_en.png)
+![4 台设备的终身许可证](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/7.lifetime4+devices_en.png)
 
-### Licenses for 9+ devices
+### 9台设备的许可证
 
-Premium keys (5+5 and more) and custom keys for 10+ devices that you purchased individually with the help of our managers.
+高级版的许可证密钥（5+5 和更多）和您在我们帮助下单独购买的10多个设备的定制密钥。
 
-These are quite unique cases, so if you want to upgrade your license to Lifetime, please contact us at partners@adguard.com. We will make you a special offer depending on the specific configuration of your license.
+这些都是比较特殊的情况，所以如果您想把自己的许可证升级为终身制，请联系我们：partners@adguard.com。 我们将根据您的许可证的具体配置，并提供一个不同的价格。

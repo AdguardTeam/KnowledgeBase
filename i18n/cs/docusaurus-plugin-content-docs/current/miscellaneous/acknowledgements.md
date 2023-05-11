@@ -1,22 +1,22 @@
 ---
-title: Credits & Acknowledgements
+title: Kredity a poděkování
 sidebar_position: 2
 ---
 
-Our dev team would like to thank the developers of this third-party software, our beta testers and other interested users who helped AdGuard improve and grow.
+Náš vývojový tým by rád poděkoval vývojářům tohoto softwaru třetí strany, našim beta testerům a dalším zainteresovaným uživatelům, kteří pomohli AdGuardu se zlepšovat a růst.
 
-## Third-party software {#software}
+## Software třetích stran {#software}
 
-This is the list of libraries and other resources that really helped us with AdGuard software development process.
+Toto je seznam knihoven a dalších zdrojů, které nám skutečně pomohly při vývoji softwaru AdGuard.
 
-## AdGuard for Windows {#win}
+## AdGuard pro Windows {#win}
 
 * SQLLite database engine: [https://sqlite.org](https://sqlite.org)
 * ADO.NET provider for SQLite: [https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki](https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki)
 * Json.NET — high-performance JSON framework for .NET: [https://www.newtonsoft.com/json](https://www.newtonsoft.com/json)
 * AvalonEdit — WPF-based text editor component: [https://avalonedit.net](https://avalonedit.net)
 
-## AdGuard for Mac {#mac}
+## AdGuard pro macOS {#mac}
 
 * Red Sweater Software, LLC for RSVerticallyCenteredTextFieldCell component: [http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes](http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes)
 * Ilija Tovilo for ITProgressIndicator component: [https://github.com/iluuu1994/ITProgressIndicator](https://github.com/iluuu1994/ITProgressIndicator)
@@ -28,7 +28,7 @@ This is the list of libraries and other resources that really helped us with AdG
 * Bartosz Janda for Acextract component: [https://github.com/bartoszj/acextract](https://github.com/bartoszj/acextract)
 * FLOPageViewController: [https://github.com/floschliep/FLOPageViewController](https://github.com/floschliep/FLOPageViewController)
 
-## AdGuard for Android {#android}
+## AdGuard pro Android {#android}
 
 * Logback-android by Tony19: [https://tony19.github.io/logback-android](https://tony19.github.io/logback-android)
 * Otto by Square: [http://square.github.io/otto](http://square.github.io/otto)
@@ -36,7 +36,7 @@ This is the list of libraries and other resources that really helped us with AdG
 * MaterialDateRangePicker by Supratim Chakraborty: [https://github.com/borax12/MaterialDateRangePicker](https://github.com/borax12/MaterialDateRangePicker)
 * HelloCharts by Leszek Wach: [https://github.com/lecho/hellocharts-android](https://github.com/lecho/hellocharts-android)
 
-## AdGuard for iOS {#ios}
+## AdGuard pro iOS {#ios}
 
 * Reachability component by Tony Million: [https://github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
 * Fmdb component by August «Gus» Mueller: [https://github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
@@ -44,7 +44,7 @@ This is the list of libraries and other resources that really helped us with AdG
 * Minizip-ng library by Nathan Moinvaziri: [https://github.com/zlib-ng/minizip-ng](https://github.com/zlib-ng/minizip-ng)
 * Lottie for iOS library by Brandon Withrow: [https://github.com/airbnb/lottie-ios](https://github.com/airbnb/lottie-ios)
 
-## AdGuard Browser extension {#extension}
+## Rozšíření prohlížeče AdGuard {#extension}
 
 * moment: [https://github.com/moment/moment](https://github.com/moment/moment)
 * simply-deferred: [https://github.com/sudhirj/simply-deferred](https://github.com/moment/moment)
@@ -55,7 +55,7 @@ This is the list of libraries and other resources that really helped us with AdG
 * crypto-js: [https://github.com/brix/crypto-js](https://github.com/brix/crypto-js)
 * ace: [https://github.com/ajaxorg/ace](https://github.com/ajaxorg/ace)
 
-## AdGuard for Safari {#safari}
+## AdGuard pro Safari {#safari}
 
 * ace: [https://github.com/ajaxorg/ace](https://github.com/ajaxorg/ace)
 * adm-zip: [https://github.com/cthackers/adm-zip](https://github.com/cthackers/adm-zip)
@@ -121,57 +121,58 @@ This is the list of libraries and other resources that really helped us with AdG
 * SQLite: [https://www.sqlite.org/copyright.html](https://www.sqlite.org/copyright.html)
 * zlib: [https://zlib.net/zlib_license.html](https://zlib.net/zlib_license.html)
 
-## Special thanks {#testers}
+## Zvláštní poděkování {#testers}
 
-Also a huge thanks and gratitude to all beta testers and other engaged users, whose help in finding/eliminating all the bugs, translating AdGuard and moderating our communities was priceless. Special thanks to:
+Obrovský dík a vděčnost patří také všem beta testerům a dalším zapojeným uživatelům, jejichž pomoc při hledání/odstraňování všech chyb, překládání AdGuardu a moderování našich komunit byla k nezaplacení. Zvláštní poděkování:
 
-* ag_bug_finder — beta tester of AdGuard for Windows
-* Aikatsui — active contributor to AdGuard Home
-* Andy Kleinert (AndyKl) — translator and proofreader to German in Crowdin
-* BigDargon — contributed the hostsVN project as a source to the list of AdGuard DNS
-* Blaz — started as a filter contributor and now working at AdGuard
-* Boo Berry — forum and Telegram group moderator
-* buuuuuuu190 — beta tester, active AdGuard Forum member
-* clarke — beta tester, active AdGuard Forum member
-* [dartrax](https://github.com/dartrax) — beta tester, active AdGuard Forum member
-* dja2k — beta tester, active AdGuard Forum member
-* Eduardo Addad de Oliveira (eduardoaddad) — translator and proofreader to Portuguese and Portuguese, Brazilian in Crowdin
-* fabjazz — beta tester, active AdGuard Forum member
-* Görkem Emrah Güler (gork7777) — translator and proofreader to Turkish in Crowdin
-* hanschke — beta tester, active AdGuard Forum member
-* iDjay — outstanding beta tester of AdGuard for iOS
-* Imre Kristoffer Eilertsen (DandelionSprout) — maintainer of "Dandelion Sprout’s Nordic Filters" that are included in all AdGuard tools
-* IONIL — translator and proofreader to Hebrew in Crowdin
-* itabmedia — beta tester, active AdGuard Forum member
-* kirasam — beta tester, active AdGuard Forum member
-* krystian3w — very active filter contributor
-* lancelot.moon — translator and proofreader to Chinese Traditional in Crowdin, beta tester
-* Lord Ami — beta tester, active AdGuard Forum member
-* malware1 — beta tester, active AdGuard Forum member
-* milder — beta tester, active AdGuard Forum member
-* Nicos18 — beta tester, active AdGuard Forum member
-* Oizaro — translator and proofreader to Italian in Crowdin
-* Oleg Chashko — very active beta tester of AdGuard for Safari
-* Oskari Lavinto (olavinto) — translator and proofreader to Finnish in Crowdin
-* ouzbed — beta tester, active AdGuard Forum member
-* PentagramTr — filter contributor, namely, he has brought a lot of new things to the Turkish filter
-* Peter Hubinsky (hubak) — translator and proofreader to Slovak in Crowdin
-* PiQuark6046 — filter contributor
-* rickyoh — beta tester, active AdGuard Forum member
-* Ronin427 — beta tester, active AdGuard Forum member
-* Sanjay Nand — beta tester, active AdGuard Forum member
-* saturnotaku — beta tester, active AdGuard Forum member
-* steve1209 — beta tester, active AdGuard Forum member
-* streetwolf — beta tester, active AdGuard Forum member
-* superlex — helps us with scriptlets, filters, and AdGuard for Safari
-* TayTayTheKiller — beta tester, active AdGuard Forum member
-* [TPS](https://github.com/TPS) — bug finder, filter contributor
-* Yuki2718 — actively contributes to AdGuard filters
-* zznosar — active beta tester focused on AdGuard for iOS
-* Sergey Zozulya (sviperz) — active member of our Telegram group, beta tester
+* ag_bug_finder — beta tester AdGuard pro Windows
+* Aikatsui — aktivní přispěvatel do AdGuard Home
+* Andy Kleinert (AndyKl) — překladatel a korektor němčiny
+* BigDargon — přispěl projektem hostsVN jako zdroj do seznamu AdGuard DNS
+* Blaz — začínal jako přispěvatel do filtrů a nyní pracuje ve společnosti AdGuard
+* Boo Berry — moderátor fóra a skupiny na Telegramu
+* buuuuuuu190 — beta tester, aktivní člen fóra AdGuard
+* clarke — beta tester, aktivní člen fóra AdGuard
+* [dartrax](https://github.com/dartrax) — beta tester, aktivní člen fóra AdGuard
+* dja2k — beta tester, aktivní člen fóra AdGuard
+* Eduardo Addad de Oliveira (eduardoaddad) — překladatel a korektor portugalštiny a brazilštiny
+* fabjazz — beta tester, aktivní člen fóra AdGuard
+* Görkem Emrah Güler (gork7777) — překladatel a korektor turečtiny
+* hanschke — beta tester, aktivní člen fóra AdGuard
+* iDjay — vynikající beta tester AdGuardu pro iOS
+* Imre Kristoffer Eilertsen (DandelionSprout) — správce "Dandelion Sprout’s Nordic Filters", které jsou součástí všech nástrojů AdGuard
+* IONIL — překladatel a korektor hebrejštiny
+* itabmedia — beta tester, aktivní člen fóra AdGuard
+* kirasam — beta tester, aktivní člen fóra AdGuard
+* krystian3w — velmi aktivní přispěvatel filtrů
+* lancelot.moon — překladatel a korektor tradiční čínštiny, beta tester
+* Lord Ami — beta tester, aktivní člen fóra AdGuard
+* Lukas Novotny (novas78) — překladatel a korektor češtiny
+* malware1 — beta tester, aktivní člen fóra AdGuard
+* milder — beta tester, aktivní člen fóra AdGuard
+* Nicos18 — beta tester, aktivní člen fóra AdGuard
+* Oizaro — překladatel a korektor italštiny
+* Oleg Chashko — velmi aktivní beta tester AdGuardu pro Safari
+* Oskari Lavinto (olavinto) — překladatel a korektor finštiny
+* ouzbed — beta tester, aktivní člen fóra AdGuard
+* PentagramTr — přispěvatel filtrů, konkrétně přinesl do tureckého filtru spoustu nových věcí
+* Peter Hubinský (hubák) — překladatel a korektor slovenštiny
+* PiQuark6046 — přispěvatel filtrů
+* rickyoh — beta tester, aktivní člen fóra AdGuard
+* Ronin427 — beta tester, aktivní člen fóra AdGuard
+* Sanjay Nand — beta tester, aktivní člen fóra AdGuard
+* saturnotaku — beta tester, aktivní člen fóra AdGuard
+* steve1209 — beta tester, aktivní člen fóra AdGuard
+* streetwolf — beta tester, aktivní člen fóra AdGuard
+* superlex — pomáhá nám se skripty, filtry a AdGuardem pro Safari
+* TayTayTheKiller — beta tester, aktivní člen fóra AdGuard
+* [TPS](https://github.com/TPS) — vyhledávač chyb, přispěvatel filtrů
+* Yuki2718 — aktivně přispívá k filtrům AdGuardu
+* zznosar — aktivní beta tester zaměřený na AdGuard pro iOS
+* Sergey Zozulya (sviperz) — aktivní člen naší skupiny na Telegramu, beta tester
 
 ---
 
-We also want to thank the [xda-developers users](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/). Thank you for your helpful feedback!
+Chceme také poděkovat uživatelům [xda-developers](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/). Děkujeme Vám za zpětnou vazbu!
 
-We always appreciate comments from our users, especially constructive ones. You can always contact us to share your thoughts about AdGuard, request new features, and submit bugs. Join the [AdGuard Forum](http://forum.adguard.com/forumdisplay.php?25-English-Forums), [Subreddit](https://reddit.com/r/adguard), [Xda-developers Forum](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/) or visit our page on [GitHub](https://github.com/AdguardTeam).
+Vždy si vážíme připomínek našich uživatelů, zejména těch konstruktivních. Vždy nás můžete kontaktovat a podělit se s námi o své názory na AdGuard, požádat o nové funkce a nahlásit chyby. Připojte se k [AdGuard fóru](http://forum.adguard.com/forumdisplay.php?25-English-Forums), [Subredditu](https://reddit.com/r/adguard), [Xda-developers fóru](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/) nebo navštivte náš [GitHub](https://github.com/AdguardTeam).

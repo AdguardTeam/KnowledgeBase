@@ -12,13 +12,14 @@ sidebar_position: 2
 **ディスクの空き容量**: 120 Mb
 
 ## AdGuard for Android のインストール方法
+
 【AdGuardがGoogle Playにない理由】これは、Googleがネットワークレベルの広告ブロッカー（つまり、他のアプリの広告をブロックするアプリ）のGoogle Playでの配布を禁止しているためです。 Googleの制限的なポリシーについては、[私たちのブログ記事](https://blog.adguard.com/en/google-removes-adguard-android-app-google-play/)でご確認いただけます。
 
 この理由で、AdGuard for Androidは直接AdGuardウェブサイトから手動でインストールする必要があります。 方法は以下の通りです。
 
 まず、デバイスのOS設定で提供元不明のアプリケーションのインストールを許可する必要があります:
 
-* 【Android 8以降の場合】[こちら](https://adguard.com/ja/adguard-android/overview.html)からダウンロードしたAdGuardのAPKファイルをタップし、[インストール] をタップ。 ブラウザからのインストールが許可されていない場合は通知が表示され、 [**設定**]→[**この提供元を許可する**]→戻る→[インストール]　 でインストールが完了します。
+* For Android 8+: start downloading [AdGuard apk](https://adguard.com/download.html?auto=1) (see the next step), you'll be prompted to allow permission. ブラウザからのインストールが許可されていない場合は通知が表示され、 [**設定**]→[**この提供元を許可する**]→戻る→[インストール]　 でインストールが完了します。
 * 【Android 7の場合】お使いのデバイスで「**設定**」→「**セキュリティ**」より「提供元不明のアプリ」をタップしてトグルをONにする。 【Android 6の場合】[**設定**]を開き、[システムとデバイス]から[その他の設定]を選択。[セキュリティ]の[提供元不明のアプリ]をオンにし、システム警告ウィンドウが開きましたらOKをタップ。 ※端末によって少し手順と項目が異なる場合があります。
 
 ![提供元不明のアプリをインストールする *mobile](https://cdn.adguard.com/public/Adguard/kb/installation/Android/ja/d1.jpg)

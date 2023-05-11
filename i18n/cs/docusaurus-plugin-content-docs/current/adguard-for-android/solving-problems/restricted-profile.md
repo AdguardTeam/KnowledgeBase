@@ -1,61 +1,61 @@
 ---
-title: Problems caused by using a Restricted Mode profile
+title: Problémy způsobené používáním profilu s omezeným režimem
 sidebar_position: 10
 ---
 
-The owners of phones, tablets, or TVs running the Android 7+ operating system might face the problem caused by using **a profile with Restricted Mode**. If you have such a profile, **AdGuard**, like other applications that use VPN, gets restrictions on selective filtering of VPN traffic. As a result, AdGuard cannot launch protection in a **local VPN mode**. Also, one of the reasons for this situation may be using **Dual App/Dual Messenger profile** on your device. Below are described the recommendations that you can apply when this problem occurs.
+Majitelé telefonů a tabletů nebo TV s operačním systémem Android 7+ se mohou potýkat s problémem způsobeným používáním **profilu s Omezeným režimem**. Pokud máte takový profil, **AdGuard**, stejně jako ostatní aplikace využívající VPN, získá omezení pro selektivní filtrování provozu VPN. V důsledku toho nemůže AdGuard spustit ochranu v **režimu lokální VPN**. Jednou z příčin této situace může být také používání profilu **Duální aplikace/Duální Messenger** ve vašem zařízení. Níže jsou popsána doporučení, která můžete použít v případě výskytu tohoto problému.
 
-## Solutions
+## Řešení
 
-You have three ways to solve the issue:
+Problém můžete vyřešit třemi způsoby:
 
-### Option 1: Grant permissions to AdGuard using ADB
+### Možnost 1: Udělení oprávnění aplikaci AdGuard pomocí ADB
 
-> Please note, that this approach is available starting from **AdGuard v3.5 nightly 6**. If you're using an older version, you can get the latest update [here](https://adguard.com/adguard-android/overview.html).
+> Upozorňujeme, že tento přístup je k dispozici od verze **AdGuardu v3.5 nightly 6**. Pokud používáte starší verzi, můžete získat nejnovější aktualizace [zde](https://adguard.com/adguard-android/overview.html).
 
-1. Activate the **developer mode** and enable **USB debugging**:
-- Open the **Settings** application on your phone;
-- Go to **System** section (last item in the settings menu). In this section find sub-item **About phone**;
-- Click on the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
-- Open **System Settings** > **Developer Options** > Scroll down and enable **USB debugging** > Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
+1. Aktivace **Režimu pro vývojáře** a povolení **USB ladění**:
+- V telefonu otevřete **Nastavení**;
+- Přejděte do sekce **Systém** (poslední položka v nabídce). V této sekci vyhledejte podpoložku **Informace o telefonu**;
+- Sedmkrát klepněte na řádek **Číslo sestavení**. Poté se zobrazí oznámení **Nyní jste vývojářem** (v případě potřeby zadejte kód pro odemčení zařízení);
+- Otevřete **Nastavení systému** → **Možnosti pro vývojáře** → přejeďte dolů a zapněte **USB ladění** → po pečlivém přečtení varování potvrďte, že je ladění povoleno v okně **Povolit ladění USB**.
 
-> If you have any difficulties or additional questions, full instructions can be found [here](https://developer.android.com/studio/debug/dev-options).
+> Pokud máte nějaké potíže nebo otázky, úplné pokyny naleznete [zde](https://developer.android.com/studio/debug/dev-options).
 
-2. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb;
-> On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
-3. Connect your device using a **USB cable** to the computer or laptop on which you installed **ADB**;
-4. Open **the command line** on your PC:
-- **Cmd.exe** if you are using **Windows**;
-- **Terminal** if you are using **macOS**;
-5. Enter the command `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` and press **Enter**.
+2. [Instalace a konfigurace](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB;
+> Na platformě Windows mohou majitelé zařízení **Samsung** potřebovat nainstalovat [tento nástroj](https://developer.samsung.com/mobile/android-usb-driver.html).
+3. Připojte zařízení pomocí **USB kabelu** k počítači nebo notebooku, na který jste nainstalovali **ADB**;
+4. Otevřete **příkazový řádek** v počítači:
+- **Cmd.exe**, pokud používáte **Windows**;
+- **Terminal**, pokud používáte **macOS**;
+5. Zadejet příkaz `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` a stiskněte **Enter**.
 
-### Option 2: Remove *restricted user account*
+### Možnost 2: Odebrání *Uživatelského účtu s omezeným přístupem*
 
-About how to manage user accounts from an Android device you can [find here](https://support.google.com/a/answer/6223444?hl=en).
+Informace o tom, jak spravovat uživatelské účty ze zařízení s Androidem, [naleznete zde](https://support.google.com/a/answer/6223444?hl=en).
 
-> Please note, that in some cases restricted user accounts are created implicitly and cannot be removed. For instance, when you use Dual messenger or Dual app features on **Samsung** or **LG** devices. You can read below how to fix the issue in these cases.
+> Upozorňujeme, že v některých případech jsou uživatelské účty s omezeným přístupem vytvořeny implicitně a nelze je odstranit. Například při používání funkcí Duální Messenger nebo Duální aplikace na zařízeních **Samsung** nebo **LG**. Níže si přečtěte, jak v těchto případech problém vyřešit.
 
-### Option 3: Use AdGuard in *Local HTTP proxy mode* (requires root)
+### Možnost 3: Použití AdGuardu v *režimu místního HTTP proxy* (vyžaduje root)
 
-To enable this mode open **AdGuard Settings** > **Network** > **Filtering method** > **Local HTTP proxy**
+Chcete-li tento režim povolit, otevřete **Nastavení AdGuardu** → **Síť** → **Metoda filtrování** → **Lokální HTTP proxy**
 
-## LG and Samsung devices
+## Zařízení LG a Samsung
 
-Owners of **LG** or **Samsung** phones may also encounter a similar issue. It can be caused by using **Dual App/Dual Messenger** function (which automatically creates a restricted profile). To solve this issue, you need to disable this feature.
+S podobným problémem se mohou setkat také majitelé telefonů **LG** nebo **Samsung**. Může to být způsobeno použitím funkce **Duální aplikace/Duální Messenger** (která automaticky vytvoří omezený profil). Chcete-li tento problém vyřešit, musíte tuto funkci vypnout.
 
 ### Samsung
 
-- Open **Settings**;
-- Press **Advanced**;
-- Scroll down and press **Dual messenger**;
-- Disable the **Dual messenger** for all applications;
-- Lock the device for 5 minutes;
-- Unlock the screen and try again to create the VPN profile.
+- Otevřete **Nastavení**;
+- Stiskněte **Pokročilé**;
+- Přejeďte dolů a stiskněte **Duální Messenger**;
+- Zakažte **Duální Messenger** pro všechny aplikace;
+- Uzamkněte zařízení na 5 minut;
+- Odemkněte obrazovku a zkuste profil VPN vytvořit znovu.
 
 ### LG
 
-- Open **Settings**;
-- Choose **General** tab;
-- Scroll down and press **Dual app**;
-- Remove all applications from the list;
-- Reboot your device.
+- Otevřete **Nastavení**;
+- Vyberte kartu **Obecné**;
+- Přejeďte dolů a stiskněte **Duální aplikace**;
+- Odeberte všechny aplikace ze seznamu;
+- Restartujte zařízení.

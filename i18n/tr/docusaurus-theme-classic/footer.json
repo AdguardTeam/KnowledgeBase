@@ -24,7 +24,7 @@
     "description": "The label of footer link with label=about linking to https://adguard.com/contacts.html"
   },
   "link.item.label.in_the_press": {
-    "message": "In the press",
+    "message": "Basında Biz",
     "description": "The label of footer link with label=in_the_press linking to https://adguard.com/press-releases.html"
   },
   "link.item.label.media_kits": {
@@ -52,19 +52,19 @@
     "description": "The label of footer link with label=adguard_for_ios linking to https://adguard.com/adguard-ios/overview.html"
   },
   "link.item.label.adguard_for_ios_pro": {
-    "message": "AdGuard for iOS Pro",
+    "message": "iOS için AdGuard Pro",
     "description": "The label of footer link with label=adguard_for_ios_pro linking to https://adguard.com/adguard-ios-pro/overview.html"
   },
   "link.item.label.support_center": {
-    "message": "Support Center",
+    "message": "Destek Merkezi",
     "description": "The label of footer link with label=support_center linking to https://adguard.com/support.html"
   },
   "link.item.label.how_to_create_your_own_ad_filter": {
-    "message": "How to create your own ad filter",
+    "message": "Kendi reklam filtrenizi nasıl oluşturursunuz",
     "description": "The label of footer link with label=how_to_create_your_own_ad_filter linking to /general/ad-filtering/create-own-filters"
   },
   "link.item.label.adguard_ad_filters": {
-    "message": "AdGuard Ad Filters",
+    "message": "AdGuard Reklam Filtreleri",
     "description": "The label of footer link with label=adguard_ad_filters linking to /general/ad-filtering/adguard-filters"
   },
   "link.item.label.removal_instructions": {
@@ -76,11 +76,11 @@
     "description": "The label of footer link with label=userscripts linking to /general/userscripts"
   },
   "link.item.label.purchase_license": {
-    "message": "Purchase License",
+    "message": "Lisans Satın Al",
     "description": "The label of footer link with label=purchase_license linking to https://adguard.com/license.html"
   },
   "link.item.label.recover_license": {
-    "message": "Recover License",
+    "message": "Lisansı Kurtar",
     "description": "The label of footer link with label=recover_license linking to /general/license/what-is"
   },
   "link.item.label.terms_of_sale": {

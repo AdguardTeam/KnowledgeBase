@@ -41,7 +41,7 @@ Otherwise, AdGuard will filter all the traffic on the fly, without redirection. 
 
 Enable this option to make the main AdGuard window open after the system is loaded. Note that it doesn't affect whether the actual filtering service is launched or not, this setting is located in *Settings → General Settings*
 
-### Filter localhost
+### localhost'u filtrele
 
 If you want AdGuard to filter loopback connections, check the box. This option will always be on if you have AdGuard VPN installed, because otherwise it won't be able to work.
 
@@ -65,19 +65,19 @@ Here you can select the way AdGuard will respond to DNS queries that should be b
 * Reply with "NxDomain" error
 * Reply with a custom IP address
 
-### Custom IPv4 address
+### Özel IPv4 adresi
 
 If "Custom IP address" is selected as an action applied to blocked DNS requests, here you should specify the IPv4 address that will be returned in response to blocked "A" requests. If none are specified, AdGuard will reply with the default "Refused" error.
 
-### Custom IPv6 address
+### Özel IPv6 adresi
 
 If "Custom IP address" is selected as an action applied to blocked DNS requests, here you should specify the IPv6 address that will be returned in response to blocked "AAAA" requests. If none are specified, AdGuard will reply with the default "Refused" error.
 
-### Fallback servers
+### Yedek sunucular
 
 Here you can specify an alternate DNS server to which a DNS request will be rerouted if the main server fails to respond within the timeout period specified in the next section. There are three options to choose from:
 
-* Don’t use fallback servers;
+* Yedek sunucuları kullanmayın;
 * Use system default servers;
 * Use custom servers.
 

@@ -69,7 +69,7 @@ The *allowlist* can be inverted, too: you can unblock ads everywhere except on t
 
 You can also import and export existing allowlists. It is useful, for instance, if you want to apply the same allowing rules in each of your browsers.
 
-## Stealth Mode {#stealth-mode}
+## ステルスモード {#stealth-mode}
 
 *Stealth Mode* aims to ensure the protection of sensitive personal data from online trackers and fraudsters.
 
@@ -83,7 +83,7 @@ In Stealth Mode, you can prevent a website from seeing the search queries from y
 
 Apart from the large key modules of AdGuard Browser extension, there are several more specific features that can be configured in the *General* and *Additional settings* tabs of the extension settings.
 
-### General {#general}
+### 一般 {#general}
 
 In the *General* tab, you can allow search ads and the [self-promotion of websites](/general/ad-filtering/search-ads), enable the automatic activation of language-specific filters, indicate the filters update interval, etc.
 
@@ -101,9 +101,9 @@ The *Additional settings* section contains a range of various settings that are 
 
 From this tab, you can activate optimized filters, enable notifications about extension updates, open the *Filtering log*, or clear the statistics of blocked ads and trackers.
 
-Besides, you can opt to help us with the development of filters by sending the statistics on applied rules: which ones are triggered, on which websites, and how often. All data is strictly anonymized; this option is disabled by default.
+Besides, you can opt to help us with the development of filters by sending the statistics on applied rules: which ones are triggered, on which websites, and how often. This option is disabled by default as we do not collect user data without consent. Yet, if you enable it, all data will be strictly anonymized.
 
-### About {#about}
+### AdGuardについて {#about}
 
 In the *About* section, you can find infos about the current version, links to the EULA and Privacy policy, and to the repository of the Browser extension on GitHub.
 
@@ -135,4 +135,4 @@ Whereas AdGuard Browser extension is free and easy to install, and has filters t
 
 `2` – the extension is unable to detect requests from other extensions. If a malicious or tracking extension sends a request to its server to show you ads or track your activity, AdGuard Browser extension will not be able to block that request;
 
-`3` – not all types of ads and threats can be blocked by browser extensions due to certain browser restrictions. Some elements may get to the page and slow down the loading process. Besides, unlike browser-based ad blockers, the AdGuard app blocks ads before they are loaded to the browser. This saves traffic and speeds up page loading.
+`3` – not all types of ads and threats can be blocked by browser extensions due to certain browser limitations. Some elements may get to the page and slow down the loading process. Besides, unlike browser-based ad blockers, the AdGuard app blocks ads before they are loaded to the browser. This saves traffic and speeds up page loading.

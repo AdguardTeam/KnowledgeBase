@@ -40,7 +40,7 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 
 ### Android {#android}
 
-* Open AdGuard settings;
+* AdGuard ayarlarını açın;
 * Сhoose **Support**, then **Send Feedback** → **Missed ad**/**Incorrect blocking**:
 
 ![android *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/android.png)
@@ -58,7 +58,7 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 
 ### iOS {#ios}
 
-* Open AdGuard settings;
+* AdGuard ayarlarını açın;
 * Choose **Support**, then **Report incorrect blocking**:
 
 ![ios *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/ios_issue.png)
@@ -66,7 +66,7 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 * Fill in the form for reporting a complaint;
 * After you've done it, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
 
-## Filling in the form {#form}
+## Formu doldurma {#form}
 
 > **Note**: When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. Except for the screenshots, you'll have to make and attach them yourself. If you're using a [direct link](https://reports.adguard.com/en/new_issue.html), you’ll need to enter data manually.
 
@@ -122,7 +122,7 @@ For example, you are faced with a situation that your favorite website won’t o
 4. If turning off all the filters hasn't produced any results, apply rule **@@||example.com^$document,extension**; where **example.com** is an example site name that needs to be replaced by your own option;
 5. In case of failure (issue not solved), turn to section **Stealth Mode**.
 
-### **Stealth Mode**
+### **Gizlilik Modu**
 
 1. Disable **Stealth Mode**;
 2. If this solved the problem, turn the module on and turn off the **Stealth Mode** options one by one. This is done to detect which filters are "breaking" the page;

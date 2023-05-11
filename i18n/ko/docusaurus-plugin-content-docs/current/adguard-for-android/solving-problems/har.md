@@ -14,12 +14,13 @@ HAR(HTTP ARchive) 형식은 웹 브라우저와 사이트 간의 상호 작용�
 4. pref.har.capture 활성화합니다(보호를 다시 시작해야 함).
 5. 문제를 재현해 주세요. 앱을 열고 광고가 표시될 때까지 앱을 사용합니다.
 6. pref.har.capture 비활성화합니다.
-7. 뒤로 이동한 다음 '로그 및 시스템 정보 내보내기'> 저장을 탭합니다.
+7. Go back and tap "Export logs and system info" → Save.
 
 **.har 파일을 AdGuard 지원 팀에 보내 주세요.**
+
 > 참고: 메시지에 헬프 데스크 티켓 번호 또는 GitHub 문제 번호를 첨부 시 문제를 더 빠르게 처리할 수 있습니다.
 
-## HAR 파일을 분석하는 방법은 무엇인가요?
+## How to analyze HAR files
 다음은 HAR 파일을 분석하기 위한 몇 가지 소스입니다.
 * [HTTP 아카이브 뷰어 마스터](https://gitgrimbo.github.io/harviewer/master/)는 HAR 분석기 도구로, HTTP 추적 도구로 생성 된 HTTP 아카이브 (HAR) 로그 파일을 시각화합니다.
 * [Fiddler](https://www.telerik.com/fiddler)는 웹 디버깅 프록시로, 컴퓨터와 인터넷 간의 모든 HTTP(S) 트래픽을 캡처, 검사, 모니터링하고 모의 요청을 수행하고 네트워크 문제를 진단할 수 있습니다.

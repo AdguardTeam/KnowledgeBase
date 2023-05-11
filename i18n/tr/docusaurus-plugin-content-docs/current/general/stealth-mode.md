@@ -1,5 +1,5 @@
 ---
-title: Stealth Mode
+title: Gizlilik Modu
 sidebar_position: 4
 ---
 
@@ -49,7 +49,7 @@ When a browser addresses a page, the server assigns an ETag to that page. This E
 
 ## Browser API {#browser-api}
 
-### Block WebRTC {#webrtc}
+### WebRTC'i engelle {#webrtc}
 
 WebRTC (Web Real-Time Communication) is a technology that allows direct streaming of data between browsers and apps. It can let others know your true IP address, even if you use a proxy or VPN. Enabling this option can disrupt the work of certain browser applications, such as messengers, chats, cinemas, or games.
 
@@ -71,9 +71,15 @@ Some websites and web services still use the old technology to support Java plug
 
 ## Miscellaneous {#miscellaneous}
 
-### Hide Referrer from third-parties {#referrer}
+### Referrer'i üçüncü taraflardan gizle {#referrer}
 
-Referrer is an HTTP header used in browser-to-server requests. It contains the URL of the request source. When you navigate from one page to another, Referrer saves the URL of the initial page. The server often has software that parses Referrer and extracts various pieces of information from it. Enabling this option hides the current website from third-party sites by changing the HTTP header. You can also set an arbitrary value for Referrer by entering it into the Custom Referrer field. To use default Referrer, leave the field blank.
+Referrer is an HTTP header used in browser-to-server requests. It contains the URL of the request source. When you navigate from one page to another, Referrer saves the URL of the initial page. The server that hosts the destination web page often has software that parses Referrer and extracts various pieces of information from it. Enabling the *Hide Referrer from third-parties* option hides the current website from third-party sites by altering the HTTP header.
+
+You can also set an arbitrary value for Referrer by entering it into the *Custom Referrer* field. To use default Referrer, leave the field blank.
+
+Note that to be able to filter traffic, AdGuard applications 'intercept' browser-to-server requests. Requests to ad, tracking, and phishing servers may be altered before sending them to the server or blocked completely. Same goes for the *Hide Referrer from third parties* option: AdGuard intercepts HTTP(S) requests, in particular to remove or change the Referrer header if this option is enabled. However, it happens only after these requests “leave” the browser. This means that if you monitor Referrer inside the browser (for example, with the help of Chrome's Developer Tools), you will see the original Referrer because the request hasn't reached AdGuard yet. You can use software like [Fiddler](https://www.telerik.com/fiddler) to make sure that Referrer gets altered correctly.
+
+On the opposite, due to the nature of all browser extensions, AdGuard Browser extension works 'inside' the browser. It will alter the Referrer right then and there, so Developer Tools will show the desired Referrer for your requests.
 
 ### Hide your User-Agent {#useragent}
 
@@ -83,7 +89,7 @@ You can also set an arbitrary value for User-Agent by entering it into the Custo
 
 ### Hide your IP address {#ip}
 
-Stealth Mode cannot hide your IP address. However, we can conceal it so that websites you visit will think you are a proxy. Sometimes this helps, and websites ignore your true IP address.
+Gizli Mod, IP adresinizi gizleyemez. However, we can conceal it so that websites you visit will think you are a proxy. Sometimes this helps, and websites ignore your true IP address.
 
 You can set an arbitrary IP address, which you would like others to perceive as yours, by simply entering it into the corresponding field. To use the default IP address, leave the field blank.
 

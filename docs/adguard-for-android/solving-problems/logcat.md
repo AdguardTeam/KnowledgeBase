@@ -27,7 +27,7 @@ To get a bug report directly from your device, do the following:
 
 5. Send this log to our support team.
 
->Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+> Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
 
 ## Additional Instruction (for old Android versions)
 
@@ -35,7 +35,7 @@ On old Android devices there is no such option to take a bug report automaticall
 
 **Part #1: prepare the device**
 
-1. Switch device to the developer mode. To do this: go to **Settings** > **About** > tap on **Build Number** 7 times.
+1. Switch device to the developer mode. To do this: go to **Settings** → **About** → tap **Build Number** 7 times.
 
 2. Go to **Developer Options**.
 
@@ -62,7 +62,7 @@ Direct download link:
 
 3. Run this command in the console (it will be opened after install):
 
->adb logcat -v threadtime -d > C:\logcat.txt
+> adb logcat -v threadtime -d > C:\logcat.txt
 
 Send this log to us by contacting support or by any other way.
 
@@ -78,4 +78,4 @@ Send this log to us by contacting support or by any other way.
 
 5. Send this log to our support team.
 
->Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+> Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.

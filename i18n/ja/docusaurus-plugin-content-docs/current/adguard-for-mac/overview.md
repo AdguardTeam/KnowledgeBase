@@ -17,7 +17,7 @@ To start configuring AdGuard for Mac, you need to click the gear in the upper ri
 
 ## General Preferences
 
-![General](https://cdn.adtidy.org/content/kb/ad_blocker/mac/General.jpg)
+![一般](https://cdn.adtidy.org/content/kb/ad_blocker/mac/General.jpg)
 
 Descriptions under option titles seem self-explanatory, but still:
 
@@ -62,9 +62,9 @@ DNS filtering is one of the most useful features, thanks to which all your DNS t
 
 In the DNS panel you can select the DNS servers from known DNS providers or even add custom DNS servers. Also you can add domains to DNS blocklist or allowlist and add complicated rules using DNS rules syntax. Finally, you can [add DNS filters of your choice](https://filterlists.com).
 
-## Stealth Mode
+## ステルスモード
 
-![Stealth Mode](https://cdn.adtidy.org/content/kb/ad_blocker/mac/StealthMode.jpg)
+![ステルスモード](https://cdn.adtidy.org/content/kb/ad_blocker/mac/StealthMode.jpg)
 
 This module is a very useful tool that will help you maintain your privacy from websites that try to retain such info about you as your IP address, computer parameters, browser settings and even the initial page from which you were redirected, not to mention cart contents if we speak of web stores. If this list of info potentially to be shared with shady third parties doesn't make you think twice, then might we add that in most cases they will also get such personal data as your age, yearly income, medical history, physical address and your kids' names. Eliminating such things as unwanted cookies or clandestine insertion of tracking parameters into your browser is what Stealth Mode does best.
 
@@ -124,19 +124,19 @@ As for the second option — well, yes, in fact you can use AdGuard as a regular
 
 There are other useful AdGuard options that shouldn't go unnoticed in this article, since they add much to user experience.
 
-### License
+### ライセンス
 
 First, there's the License tab that you can open from the dropdown main menu (the one that opens once you click the gear icon on the upper right of the main window). From this tab you can see which license type you are using, check its status and validity period.
 
-![License](https://cdn.adtidy.org/content/kb/ad_blocker/mac/License.jpg)
+![ライセンス](https://cdn.adtidy.org/content/kb/ad_blocker/mac/License.jpg)
 
 In this same tab you can refresh your license status, renew your license or reset the license key using the corresponding buttons.
 
-### Support
+### サポート
 
 Click the gear icon in the upper right corner, select "Support", and you will be able to send a bug report or a feature request to our support team. Be sure to add your real actual email though, because without it the message won't be sent.
 
-![Support](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Support.jpg)
+![サポート](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Support.jpg)
 
 To report a missed ad or a broken website, please follow the link above the message window, we use a separate reporting tool for those types of issues.
 

@@ -1,169 +1,169 @@
 ---
-title: Low Level Settings guide
+title: Průvodce nízkoúrovňových nastavení
 sidebar_position: 6
 ---
 
-## How to reach the Low-level settings
+## Jak dosáhnout nízkoúrovňových nastavení
 
-> Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only open this section if you are sure of what you are doing or our support-team has asked you about it.
+> Změna *Nízkoúrovňových nastavení* může způsobit problémy s výkonem AdGuardu, může přerušit internetové připojení nebo ohrozit vaši bezpečnost a soukromí. Tuto část byste měli otevřít pouze v případě, že jste si jisti tím, co děláte, nebo pokud se vás na to zeptal náš tým podpory.
 
-To go to *Low-level settings*, open the main menu, tap *Settings*, choose *Advanced* and find *Low-Level Settings* at the bottom of the screen.
+Chcete-li přejít na *Nízkoúrovňová nastavení*, otevřete hlavní nabídku, klepněte na *Nastavení*, vyberte *Pokročilé* a v dolní části obrazovky vyhledejte *Nízkoúrovňová nastavení*.
 
-## Low-level settings
+## Nízkoúrovňová nastavení
 
 `pref.boot.startup.delay`
 
-Here you can set AdGuard’s startup delay after device boot-up (in seconds). This setting is only relevant if AdGuard autostart is enabled (Settings → General → AdGuard autostart).
+Zde můžete nastavit zpoždění spuštění AdGuardu po startu zařízení (v sekundách). Toto nastavení je relevantní pouze v případě, že je povoleno automatické spuštění AdGuardu (Nastavení → Obecné → Automatické spuštění AdGuardu).
 
 `pref.dns.blocking.type`
 
-Here you can select the way AdGuard will respond to blocked DNS queries:
+Zde můžete vybrat způsob, jakým bude AdGuard reagovat na blokované dotazy DNS:
 
-0 — means block requests with *Refused* response code for *Network filtering rules* and with *Unspecified IP* for *Host rules*. 1 — means block requests with *NXDomain* for all kinds of filtering rules. 2 — means block requests with *Unspecified IP* for all kinds of filtering rules. 3 — means block requests with *Unspecified IP* for all kinds of filtering rules. 4 — means block requests with *Refused* response code for all kinds of filtering rules.
+0 - znamená blokování požadavků s odezvou *Refused* pro pravidla filtrování sítě ** a s *Unspecified IP* pro pravidla *Hosts*. 1 - znamená blokování požadavků s odezvou *NXDomain* pro všechny druhy pravidel filtrování. 2 - znamená blokování požadavků s odezvou *Unspecified IP* pro všechny druhy pravidel filtrování. 3 - znamená blokování požadavků s odezvou *Unspecified IP* pro všechny druhy pravidel filtrování. 4 - znamená blokování požadavků s odezvou *Refused* pro všechny druhy pravidel filtrování.
 
-1 is used by default if the entered value is not valid.
+Pokud zadaná hodnota není platná, použije se ve výchozím nastavení hodnota 1.
 
 `pref.dns.bootstrap`
 
-Bootstrap DNS for DoH, DoT, and DoQ servers. The System DNS server is used by default.
+Bootstrap DNS pro servery DoH, DoT a DoQ. Ve výchozím nastavení se používá systémový DNS server.
 
 `pref.dns.detect.search.domains`
 
-If enabled AdGuard detects search domains and automatically forwards them to the fallback upstreams if they exist.
+Pokud je tato funkce zapnuta, AdGuard detekuje vyhledávací domény a automaticky je přeposílá na záložní upstreamy, pokud existují.
 
 `pref.dns.fallback`
 
-Here you can specify a fallback DNS resolver that will be used when the configured server is not available. If not specified, the system default DNS is used as a fallback. A string "none" means no fallback at all.
+Zde můžete zadat záložní DNS řešitel, který bude použit, když nakonfigurovaný server nebude k dispozici. Pokud není zadán, použije se jako náhradní řešení výchozí DNS systému. Řetězec "none" znamená, že se záloha vůbec neprovádí.
 
 
 `pref.dns.fallback.domains`
 
-Here you can list domains that will be directly forwarded to the fallback upstreams (if they exist).
+Zde můžete uvést domény, které budou přímo přesměrovány na záložní upstreamy (pokud existují).
 
 `pref.dns.timeout`
 
-Here you can specify a timeout in milliseconds to be used for each DNS request. Please note that if you are using multiple upstreams, the fallback DNS resolver will only be used after all the timeouts of each upstream.
+Zde můžete zadat časový limit v milisekundách, který se použije pro každý požadavek DNS. Prosím, berte na vědomí, že pokud používáte vícero odchozích DNS serverů, záložní DNS server se použije až po vypršení platnosti požadavků všech odchozích DNS serverů.
 
 `pref.enforce.https.filtering`
 
-Here are already listed package names of apps for which AdGuard enforces HTTPS filtering. You can add this list with any app even if it targets Android 7+. But before check if the application trusts the AdGuard’s HTTPS certificate, which is located in the User storage, or the developers have not provided such an option.
+Zde jsou již uvedeny názvy balíčků aplikací, pro které AdGuard vynucuje filtrování HTTPS. Tento seznam můžete přidat s jakoukoli aplikací, i když je cílen na systém Android 7+. Předtím však zkontrolujte, zda aplikace důvěřuje certifikátu HTTPS AdGuardu, který je umístěn v úložišti uživatele, nebo zda vývojáři tuto možnost neposkytli.
 
 `pref.enforce.paused.notification`
 
-Enforce notification about paused protection even when the notification icon is set to Disabled (for Android below Oreo).
+Vynucení oznámení o pozastavené ochraně, i když je ikona oznámení nastavena na hodnotu Vypnuto (pro Android Oreo a nižší).
 
 `pref.excluded.packages`
 
-Here you can list the packages and UIDs you want to exclude from filtering.
+Zde můžete uvést balíčky a UID, které chcete z filtrování vyloučit.
 
 `pref.filtered.ports`
 
-Here you can list the ports connections to which will be filtered.
+Zde můžete vypsat porty, na kterých budou připojení filtrována.
 
 `pref.har.capture`
 
-Here you can enable HAR file capture. Use it only for debugging purposes! If the setting is enabled, AdGuard will create a directory named "har" inside the app cache directory. It contains information about all filtered HTTP requests in HAR 1.2 format and can be analyzed with the Fiddler program.
+Zde můžete povolit zachycení souboru HAR. Používejte to pouze pro účely ladění! Pokud je toto nastavení povoleno, AdGuard vytvoří adresář s názvem "har" uvnitř adresáře mezipaměti aplikace. Obsahuje informace o všech filtrovaných požadavcích HTTP ve formátu HAR 1.2 a lze je analyzovat pomocí programu Fiddler.
 
 `pref.https.ignored.errors`
 
-For the domains and package names listed here, notifications that they do not trust AdGuard's HTTPS certificate will be disabled.
+Pro zde uvedené domény a názvy balíčků budou vypnuta oznámení, že nedůvěřují certifikátu HTTPS AdGuardu.
 
 `pref.https.opportunistic`
 
-If enabled, AdGuard will bypass the traffic of any app that does not trust our certificate. It is enabled by default.
+Pokud je tato funkce povolena, AdGuard obejde přenosy všech aplikací, které nedůvěřují našemu certifikátu. Ve výchozím nastavení je funkce povolena.
 
 `pref.ipv4.routs.excluded`
 
-Here you can find the list of IPv4 ranges excluded from filtering. For instance, we don’t filter connections to the private IP ranges. You can add this list if required.
+Zde najdete seznam rozsahů IPv4 vyloučených z filtrování. Například není filtrováno připojení k privátním rozsahům IP. V případě potřeby můžete tento seznam přidat.
 
 `pref.ipv6.routs.excluded`
 
-Here you can list the IPv6 ranges which you want to exclude from filtering.
+Zde můžete uvést rozsahy IPv6, které chcete z filtrování vyloučit.
 
 `pref.notify.on.unknown.ca`
 
-If enabled, AdGuard shows you a notification if any app doesn’t trust our HTTPS certificate.
+Když je tato funkce povolena, zobrazí vám AdGuard oznámení, pokud některá aplikace nedůvěřuje našemu certifikátu HTTPS.
 
 `pref.proxy.block.ipv6`
 
-If enabled, AdGuard blocks all Internet connections through IPv6 when working in "Proxy with automatic setup" mode.
+Pokud je tato funkce povolena, AdGuard při práci v režimu "Proxy s automatickým nastavením" blokuje všechna internetová připojení přes IPv6.
 
 `pref.proxy.disable.reconfigure`
 
-Here you can disable AdGuard automatic root proxy reconfiguration when network connectivity changes.
+Zde můžete zakázat automatickou rekonfiguraci kořenového proxy serveru AdGuardu při změně síťového připojení.
 
 `pref.quic.bypass.packages`
 
-Here you can list packages for which AdGuard will bypass QUIC traffic.
+Zde můžete uvést seznam balíčků, pro které bude AdGuard obcházet provoz QUIC.
 
 `pref.removed.html.log`
 
-If enabled, AdGuard shows information about blocked HTML elements in the filtering log.
+Pokud je tato funkce povolena, zobrazuje AdGuard informace o blokovaných prvcích HTML v záznamu filtrování.
 
 `pref.root.clear.youtube`
 
-If enabled, AdGuard clears YouTube app data on booting to block YouTube ads. Root access is required.
+Pokud je tato funkce povolena, AdGuard při spuštění vymaže data aplikace YouTube a zablokuje reklamy v YouTube. Je vyžadován přístup root.
 
 `pref.root.set.oom_adj`
 
-If enabled, AdGuard sets the `minimum oom_score_adj` for its own process to stay alive all the time. Requires root access.
+Pokud je tato funkce povolena, AdGuard nastaví minimální hodnotu `oom_score_adj` pro svůj vlastní proces, aby zůstal spuštěný po celou dobu. Vyžaduje root přístup.
 
 `pref.samsungpay.autopause.enable`
 
-If enabled, AdGuard pauses protection when you open the Samsung Pay app. Requires usage access.
+Pokud je tato funkce povolena, ochrana AdGuardem se pozastaví, když otevřete aplikaci Samsung Pay. Vyžaduje přístup k používání.
 
 `pref.vpn.android10.mitigate`
 
-If enabled, AdGuard applies a workaround solution that mitigates the soft reboots issue caused by an Android 10 bug.
+Pokud je tato funkce povolena, AdGuard použije řešení, které zmírňuje problém s měkkými restarty způsobenými chybou systému Android 10.
 
 `pref.vpn.capture`
 
-If enabled, AdGuard will create the special file name "tun.pcap". It contains all network packets transferred through the VPN. This file is located in the app cache directory and can be analyzed with the Wireshark program.
+Pokud je tato funkce povolena, AdGuard vytvoří speciální soubor s názvem "tun.pcap". Obsahuje všechny síťové pakety přenášené prostřednictvím VPN. Tento soubor se nachází v adresáři mezipaměti aplikace a lze jej analyzovat pomocí programu Wireshark.
 
 `pref.vpn.disable.pause`
 
-This feature disables automatic VPN pause in case of network absence, tethering, or power-saving mode.
+Tato funkce deaktivuje automatické pozastavení VPN v případě nepřítomnosti sítě, tetheringu nebo úsporného režimu.
 
 `pref.vpn.disable.reconfigure`
 
-This feature disables VPN automatic reconfiguration in case of network absence, tethering, or power-saving mode.
+Tato funkce zakazuje automatickou rekonfiguraci VPN v případě nepřítomnosti sítě, tetheringu nebo úsporného režimu.
 
 `pref.vpn.ipv4.address`
 
-TUN interface IPv4 address.
+TUN z IPv4 adres.
 
 `pref.vpn.ipv4.bypass`
 
-If enabled, VPN will be configured to bypass all the IPv4 traffic. In this case, IPv4 will work, but it will not be filtered.
+Pokud je tato funkce povolena, bude VPN nakonfigurována tak, aby obcházela veškerý provoz IPv4. V tomto případě bude IPv4 fungovat, ale nebude filtrována.
 
 `pref.vpn.ipv4.force.complex`
 
-If enabled, VPN will bypass the LAN when possible. However, for complex networks, the LAN is not excluded and connections will be filtered, including local ones.
+Pokud je tato funkce povolena, VPN obejde síť LAN, pokud je to možné. Nicméně, při rozsáhlé síti není LAN obcházena a filtrování zahrnuje všechna připojení, včetně lokálních.
 
 `pref.vpn.ipv4.force.default`
 
-This feature disables the routes we use to exclude LAN from filtering.
+Tato funkce vypne trasy, které používáme pro vyloučení LAN připojení z filtrování.
 
 `pref.vpn.ipv6.address`
 
-TUN interface IPv6 address.
+TUN z IPv6 adres.
 
 `pref.vpn.ipv6.bypass`
 
-If enabled, VPN will be configured to bypass all the IPv6 traffic. In this case, IPv6 will work, but it will not be filtered.
+Pokud je tato funkce povolena, bude VPN nakonfigurována tak, aby obcházela veškerý provoz IPv6. V tomto případě bude IPv6 fungovat, ale nebude filtrována.
 
 `pref.vpn.ipv6.disable`
 
-This feature forcibly disables filtering for IPv6 networks. In this case, IPv6 will not work at all.
+Tato funkce násilně zakáže filtrování pro sítě IPv6. V takovém případě nebude IPv6 fungovat vůbec.
 
 `pref.vpn.ipv6.force`
 
-This feature forcibly enables filtering for IPv6 networks. The app doesn’t filter IPv6 on Lollipop and some cell carriers by default.
+Tato funkce násilně povolí filtrování pro sítě IPv6. Aplikace ve výchozím nastavení nefiltruje IPv6 v systému Lollipop a u některých mobilních operátorů.
 
 `pref.vpn.tun.mtu`
 
-Here you can set the maximum transmission unit (MTU) of the VPN interface. The recommended interval for the experiments is from 1500 to 9000.
+Zde můžete nastavit maximální přenosovou jednotku (MTU) rozhraní VPN. Doporučený interval pro experimenty je od 1500 do 9000.
 
 `Reset`
 
-You always can reset Low-level settings to default.
+Vždy můžete resetovat nízkoúrovňová nastavení na výchozí hodnoty.

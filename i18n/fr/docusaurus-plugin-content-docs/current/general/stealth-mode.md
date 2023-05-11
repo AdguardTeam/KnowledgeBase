@@ -11,7 +11,7 @@ Below we will list and describe the main features and options that you can contr
 
 > Some options may not be available depending on the particular product due to OS or other limitations.
 
-## General {#general}
+## Général {#general}
 
 ### Hide your search queries {#searchqueries}
 
@@ -69,11 +69,17 @@ The Flash Player plugin has become increasingly vulnerable to such online threat
 
 Some websites and web services still use the old technology to support Java plugins. The Java plugin API, which is the basis of Java plugins, has serious security flaws. For security purposes, you can disable such plugins. Nevertheless, even if you decide to use the "Block Java" option, JavaScript will still be enabled.
 
-## Miscellaneous {#miscellaneous}
+## Divers {#miscellaneous}
 
-### Hide Referrer from third-parties {#referrer}
+### Hide Referrer from third parties {#referrer}
 
-Referrer is an HTTP header used in browser-to-server requests. It contains the URL of the request source. When you navigate from one page to another, Referrer saves the URL of the initial page. The server often has software that parses Referrer and extracts various pieces of information from it. Enabling this option hides the current website from third-party sites by changing the HTTP header. You can also set an arbitrary value for Referrer by entering it into the Custom Referrer field. To use default Referrer, leave the field blank.
+Referrer is an HTTP header used in browser-to-server requests. It contains the URL of the request source. When you navigate from one page to another, Referrer saves the URL of the initial page. The server that hosts the destination web page often has software that parses Referrer and extracts various pieces of information from it. Enabling the *Hide Referrer from third-parties* option hides the current website from third-party sites by altering the HTTP header.
+
+You can also set an arbitrary value for Referrer by entering it into the *Custom Referrer* field. To use default Referrer, leave the field blank.
+
+Note that to be able to filter traffic, AdGuard applications 'intercept' browser-to-server requests. Requests to ad, tracking, and phishing servers may be altered before sending them to the server or blocked completely. Same goes for the *Hide Referrer from third parties* option: AdGuard intercepts HTTP(S) requests, in particular to remove or change the Referrer header if this option is enabled. However, it happens only after these requests “leave” the browser. This means that if you monitor Referrer inside the browser (for example, with the help of Chrome's Developer Tools), you will see the original Referrer because the request hasn't reached AdGuard yet. You can use software like [Fiddler](https://www.telerik.com/fiddler) to make sure that Referrer gets altered correctly.
+
+On the opposite, due to the nature of all browser extensions, AdGuard Browser extension works 'inside' the browser. It will alter the Referrer right then and there, so Developer Tools will show the desired Referrer for your requests.
 
 ### Hide your User-Agent {#useragent}
 
