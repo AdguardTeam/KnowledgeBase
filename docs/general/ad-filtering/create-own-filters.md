@@ -1417,6 +1417,8 @@ If a request matches multiple `$referrerpolicy` rules not disabled by exceptions
 * `@@||example.com^$referrerpolicy=unsafe-url` disables the previous rule.
 * `@@||example.com/abcd.html^$referrerpolicy` disables all `$referrerpolicy` rules on `example.com/abcd.html`.
 
+> **Compatibility with other modifiers**
+>
 > `$referrerpolicy` rules are compatible only with `$document` and `$subdocument` [content type modifiers](#content-type-modifiers).
 
 > **Restrictions**
