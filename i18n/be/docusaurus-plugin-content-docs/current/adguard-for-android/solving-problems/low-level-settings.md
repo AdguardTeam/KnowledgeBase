@@ -175,7 +175,7 @@ If enabled, this feature automatically re-enables AdGuard’s local VPN after it
 
 #### Packet capture (PCAP)
 
-If enabled, AdGuard will create the special file name `timestamp>.pcap` (for instance, 1682599851461.pcap). It contains all network packets transferred through the VPN. This file is located in the app cache directory and can be analyzed with the Wireshark program.
+If enabled, AdGuard will create the special file name `timestamp.pcap` (for instance, 1682599851461.pcap). It contains all network packets transferred through the VPN. This file is located in the app cache directory and can be analyzed with the Wireshark program.
 
 #### Include Wi-Fi gateway in VPN routes
 
