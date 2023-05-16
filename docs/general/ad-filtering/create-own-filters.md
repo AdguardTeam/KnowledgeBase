@@ -1421,10 +1421,6 @@ If a request matches multiple `$referrerpolicy` rules not disabled by exceptions
 >
 > `$referrerpolicy` rules are compatible only with `$document` and `$subdocument` [content type modifiers](#content-type-modifiers).
 
-> **Restrictions**
->
-> `$referrerpolicy` rules can only be used in [**trusted filters**](#trusted-filters).
-
 > **Compatibility with different versions of AdGuard**
 >
 > `$referrerpolicy` is available starting with CoreLibs v1.12.
