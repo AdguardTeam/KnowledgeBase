@@ -75,6 +75,10 @@ If you want AdGuard to filter loopback connections, check the box. This option w
 
 If you don't want AdGuard to filter particular subnets, enable this feature and specify the IP ranges in the CIDR notation (e.g. 98.51.100.14/24) in the **IP ranges excluded from filtering** section below.
 
+### Enable HAR writing
+
+This option should be enabled **only for debugging purposes**. If you tick the checkmark, AdGuard will create a file that contains information about all filtered HTTP requests in HAR 1.2 format. This file can be analyzed with the Fiddler app. Note that it may slow down your web browsing significantly.
+
 ### Add an extra space to the plain HTTP request
 
 Adds extra space between the HTTP method and the URL and removes space after the "Host:" field to avoid deep packet inspection. For instance, the request 
@@ -103,10 +107,6 @@ Adjusts the size of the HTTP request fragmentation. This option only affects pla
 
 Acceptable values: 1–1500. If invalid size is specified, the value selected by the system will be used. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
-### Enable HAR writing
-
-This option should be enabled **only for debugging purposes**. If you tick the checkmark, AdGuard will create a file that contains information about all filtered HTTP requests in HAR 1.2 format. This file can be analyzed with the Fiddler app. Note that it may slow down your web browsing significantly.
-
 ### Show QUIC
 
 Allows displaying the QUIC protocol records in the filtering log. For blocked requests only.
@@ -131,6 +131,10 @@ Note that this setting only works when the *Enable TCP keepalive* option is enab
 
 Some websites and web services still support Java Plug-Ins. The API that serves as the basis for Java plug-ins has serious security vulnerabilities. You can disable such plug-ins for security purposes. Nevertheless, even if you decide to use *Block Java* option, JavaScript will still be enabled.
 
+### DNS server timeout period
+
+Here you can specify the time in milliseconds that AdGuard will wait for the response from the selected DNS server before resorting to fallback. If you don’t fill in this field or enter an invalid value, the value of 5000 will be used.
+
 ### Use HTTP/3 for DNS-over-HTTPS
 
 Enables HTTP/3 for DNS-over-HTTPS upstreams to accelerate connection if the selected upstream supports this protocol. This means that enabling this option does not guarantee that all DNS requests will be sent via HTTP/3.
@@ -147,17 +151,21 @@ Once enabled, all upstreams are queried in parallel and the first successful res
 
 If address resolving failed on each of the forwarded upstreams, as well as on the fallback domains, then the response to the DNS request will be `SERVFAIL`.
 
-### Blocking mode for adblock-style rules
+### Enable filtering of secure DNS requests
 
-Here you can select the way AdGuard will respond to domains blocked by DNS rules based on [adblock-style syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax).
+When enabled, AdGuard redirects secure DNS requests to the local DNS proxy, in addition to plain DNS requests.
+
+### Blocking mode for hosts rules
+
+Here you can select the way AdGuard will respond to domains blocked by DNS rules based on [hosts rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
 
 * Reply with “Refused” error
 * Reply with “NxDomain” error
 * Reply with a custom IP address
 
-### Blocking mode for hosts rules
+### Blocking mode for adblock-style rules
 
-Here you can select the way AdGuard will respond to domains blocked by DNS rules based on [hosts rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
+Here you can select the way AdGuard will respond to domains blocked by DNS rules based on [adblock-style syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax).
 
 * Reply with “Refused” error
 * Reply with “NxDomain” error
@@ -179,9 +187,9 @@ Here you can specify an alternate DNS server to which a DNS request will be rero
 * Use system default servers;
 * Use custom servers.
 
-### DNS server timeout period
+### Block ECH
 
-Here you can specify the time in milliseconds that AdGuard will wait for the response from the selected DNS server before resorting to fallback. If you don’t fill in this field or enter an invalid value, the value of 5000 will be used.
+If enabled, AdGuard strips Encrypted Client Hello parameters from responses.
 
 ### List of custom fallback servers
 
@@ -196,14 +204,6 @@ By default, the system DNS resolver is used, and the initial bootstrap request i
 ### DNS exclusions
 
 All DNS requests to domains listed here will be redirected to the system default DNS server instead of the DNS server specified in the app’s settings. Also, DNS blocking rules will not be applied to such requests.
-
-### Block ECH
-
-If enabled, AdGuard strips Encrypted Client Hello parameters from responses.
-
-### Enable filtering of secure DNS requests
-
-When enabled, AdGuard redirects secure DNS requests to the local DNS proxy, in addition to plain DNS requests.
 
 ### Exclude specified Wi-Fi networks names (SSIDs) from the DNS filtering
 
