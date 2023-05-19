@@ -3,7 +3,7 @@ title: Advanced (low-level) Settings guide
 sidebar_position: 7
 ---
 
-Previously known as low-level settings, Advanced Settings mostly contain settings that go beyond the average user's competence and don't have application in everyday use. AdGuard for Windows is designed to work without ever having to change any of them, but they will provide additional options in some corner-case situations or when solving an uncommon problem.
+Previously known as low-level settings, Advanced Settings mostly contain options that go beyond the average user competence and aren't applied in everyday use. AdGuard for Windows is designed to work without ever having to change any of them, but they will provide additional features in some corner cases or when solving an uncommon problem.
 
 > Mindlessly changing *Advanced Settings* can potentially cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only make changes to these settings if you are sure of what you are doing or if our support team has asked you to do so.
 
@@ -21,19 +21,19 @@ If enabled, AdGuard will block TCP Fast Open in the Edge browser. To apply setti
 
 ### Show AdGuard VPN in Settings
 
-If you have AdGuard VPN for Windows on your computer, activate this feature to open AdGuard VPN or visit its website from the AdGuard app.
+Enabling this option allows you to display the AdGuard VPN tab in Settings for easy opening of the app and the product's website.
 
-### Check SSL/TLS certificates of web services
+### Enable asynchronous OCSP SSL/TLS certificate revocation checks
 
 Once enabled, this option runs asynchronous OCSP checks to check whether the website’s SSL/TLS certificate is revoked. 
 
-If the OCSP check completes within the minimum timeout, AdGuard will immediately apply the result: block the connection if the certificate is revoked, or establish a connection if the certificate is valid. 
+If the OCSP check completes within the minimum timeout, AdGuard will immediately apply the result: block the connection if the certificate is revoked or establish a connection if the certificate is valid. 
 
-If the verification takes too long, AdGuard will establish a connection and continue checking in the background. If the certificate is revoked, the current and future connections to the domain will be blocked.
+If the verification takes too long, AdGuard will establish a connection and continue checking in the background. If the certificate is revoked, current and future connections to the domain will be blocked.
 
-### Use Encrypted Client Hello
+### Use Encrypted ClientHello
 
-Every encrypted Internet connection has an unencrypted part. This is the very first packet, which contains the name of the server you are connecting to. Encrypted Client Hello technology is supposed to solve this issue and encrypt that last bit of unencrypted information. To benefit from it enable the **Use Encrypted Client Hello** option. It uses a local DNS proxy to look for configs in the ECH Config Lists. If found, encrypts ClientHellos.
+Every encrypted Internet connection has an unencrypted part. This is the very first packet which contains the name of the server you are connecting to. Encrypted Client Hello technology is supposed to solve this issue and encrypt that last bit of unencrypted information. To benefit from it, enable the *Use Encrypted ClientHello* option. It uses a local DNS proxy to look for ECH configuration for the domain. If it is found, ClientHello packet will be encrypted.
 
 ### Check websites' certificate transparency
 
@@ -63,9 +63,9 @@ Enable this option to make the main AdGuard window open after the system is load
 
 ### Enable filtering at system start-up
 
-Starting from v7.12, by default, AdGuard for Windows does not filter traffic after auto-start on OS startup if the option *Launch AdGuard at system start-up* is disabled. In other words, the AdGuard service is started in “idle” mode. Enable this option to make AdGuard filter traffic even if the app is not launched. 
+Starting from v7.12, by default, AdGuard's service does not filter traffic after OS startup if the option Launch AdGuard at system start-up is disabled. In other words, the AdGuard's service is started in “idle” mode. Enable this option to make AdGuard filter traffic even if the app is not launched.
 
-*Note that before v7.12 the AdGuard service started in filtering mode by default (even if the *Launch AdGuard at system start-up” was disabled). If you were satysfyed with the old behavior, enable this option.*
+*Note that before v7.12 the AdGuard's service started in filtering mode by default (even if the *Launch AdGuard at system start-up” was disabled). If you were satisfied with the old behavior, enable this option.*
 
 ### Filter localhost
 
@@ -73,7 +73,7 @@ If you want AdGuard to filter loopback connections, check the box. This option w
 
 ### Exclude specified IP ranges from filtering
 
-If you want AdGuard not to filter particular subnets, you should enable this feature and specify the IP ranges in the CIDR notation (e.g. 98.51.100.14/24) at the **IP ranges excluded from filtering** section below.
+If you don't want AdGuard to filter particular subnets, enable this feature and specify the IP ranges in the CIDR notation (e.g. 98.51.100.14/24) in the **IP ranges excluded from filtering** section below.
 
 ### Add an extra space to the plain HTTP request
 
@@ -91,17 +91,17 @@ This option is only applied when the *Protect from DPI* Stealth mode option is e
 
 ### Adjust size of fragmentation of initial TLS packet
 
-Specifies the size of the TCP packet fragmentation, avoiding deep packet inspection. This option only affects secured HTTPs traffic. 
+Specifies the size of the TCP packet fragmentation, avoiding deep packet inspection. This option only affects secured HTTPS traffic. 
 
-If this option is enabled AdGuard splits the initial TLS packet (the “Client hello” packet) into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole initial TLS packet.
+If this option is enabled, AdGuard splits the initial TLS packet (the ClientHello packet) into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole initial TLS packet.
 
 Acceptable values: 1–1500. If invalid size is specified, the value selected by the system will be used. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
 ### Plain HTTP request fragment size
 
-Adjusts the size of the HTTP request fragmentation. This option only affects plain HTTP traffic. If this option is enabled AdGuard splits the initial packet into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole original packet.
+Adjusts the size of the HTTP request fragmentation. This option only affects plain HTTP traffic. If this option is enabled, AdGuard splits the initial packet into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole original packet.
 
-Accepted values: 1–1500. If invalid size is specified, the value selected by the system will be used. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
+Acceptable values: 1–1500. If invalid size is specified, the value selected by the system will be used. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
 
 ### Enable HAR writing
 
@@ -117,7 +117,7 @@ Periodically sends TCP packets over idle connection to ensure it is alive and to
 
 ### TCP keepalive interval
 
-Here you can specify an idle time, in seconds, before sending a keepalive probe. If 0 is specified, the value selected by the system will be used. 
+Here you can specify an idle time period, in seconds, before sending a keepalive probe. If 0 is specified, the value selected by the system will be used. 
 
 Note that this setting only works when the *Enable TCP keepalive* option is enabled. 
 
@@ -131,18 +131,9 @@ Note that this setting only works when the *Enable TCP keepalive* option is enab
 
 Some websites and web services still support Java Plug-Ins. The API that serves as the basis for Java plug-ins has serious security vulnerabilities. You can disable such plug-ins for security purposes. Nevertheless, even if you decide to use *Block Java* option, JavaScript will still be enabled.
 
-### Action applied to blocked DNS requests
-
-Here you can select the way AdGuard will respond to DNS queries that should be blocked:
-
-* Reply with "Refused" error
-* Reply with "NxDomain" error
-* Reply with a custom IP address
-
 ### Use HTTP/3 for DNS-over-HTTPS
 
-Enables HTTP/3 for DNS-over-HTTPS upstreams to accelerate connection if selected upstream supports this protocol. This means that enabling this option does not guarantee that all DNS requests will be sent via HTTP/3.
-
+Enables HTTP/3 for DNS-over-HTTPS upstreams to accelerate connection if the selected upstream supports this protocol. This means that enabling this option does not guarantee that all DNS requests will be sent via HTTP/3.
 
 ### Use fallback DNS upstreams
 
@@ -150,19 +141,35 @@ If enabled, normal queries will be redirected to the fallback upstream if all DN
 
 ### Query DNS upstreams in parallel
 
-Once enabled, all upstreams are queried in parallel and the first successful response is returned. Since DNS queries are made in parallel, enabling this feature increases the speed of the Internet.
+Once enabled, all upstreams are queried in parallel and the first successful response is returned. Since DNS queries are made in parallel, enabling this feature increases the Internet speed.
 
 ### Always respond to failed DNS queries
 
-If address resolving failed on each of the forwarded upstreams, as well as on the fallback domains, then the response to the dns request will be SERVFAIL.
+If address resolving failed on each of the forwarded upstreams, as well as on the fallback domains, then the response to the DNS request will be `SERVFAIL`.
+
+### Blocking mode for adblock-style rules
+
+Here you can select the way AdGuard will respond to domains blocked by DNS rules based on [adblock-style syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax).
+
+* Reply with “Refused” error
+* Reply with “NxDomain” error
+* Reply with a custom IP address
+
+### Blocking mode for hosts rules
+
+Here you can select the way AdGuard will respond to domains blocked by DNS rules based on [hosts rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
+
+* Reply with “Refused” error
+* Reply with “NxDomain” error
+* Reply with a custom IP address
 
 ### Custom IPv4 address
 
-If "Custom IP address" is selected as an action applied to blocked DNS requests, here you should specify the IPv4 address that will be returned in response to blocked "A" requests. If none are specified, AdGuard will reply with the default "Refused" error.
+If Custom IP address is selected in Blocking mode for hosts rules or Blocking mode for adblock-style rules, this IP address will be returned in response to blocked A requests. If none are specified, AdGuard will reply with the default Refused error.
 
 ### Custom IPv6 address
 
-If "Custom IP address" is selected as an action applied to blocked DNS requests, here you should specify the IPv6 address that will be returned in response to blocked "AAAA" requests. If none are specified, AdGuard will reply with the default "Refused" error.
+If Custom IP address is selected in Blocking mode for hosts rules or Blocking mode for adblock-style rules, this IP address will be returned in response to blocked AAAA requests. If none are specified, AdGuard will reply with the default "Refused" error.
 
 ### Fallback servers
 
