@@ -19,9 +19,13 @@ Once you open Advanced Settings, you will be presented with the following option
 
 If enabled, AdGuard will block TCP Fast Open in the Edge browser. To apply settings, you need to restart the browser.
 
-### Show AdGuard VPN in Settings
+### Use Encrypted ClientHello
 
-Enabling this option allows you to display the AdGuard VPN tab in Settings for easy opening of the app and the product's website.
+Every encrypted Internet connection has an unencrypted part. This is the very first packet which contains the name of the server you are connecting to. Encrypted Client Hello technology is supposed to solve this issue and encrypt that last bit of unencrypted information. To benefit from it, enable the *Use Encrypted ClientHello* option. It uses a local DNS proxy to look for ECH configuration for the domain. If it is found, ClientHello packet will be encrypted.
+
+### Check websites' certificate transparency
+
+Verifies the authenticity of all certificates for the domain based on Chrome Certificate Transparency Policy. If the certificate does not comply with the Chrome CT Policy, AdGuard will not filter the website. Chrome, in turn, will block it.
 
 ### Enable SSL/TLS certificate revocation checks
 
@@ -31,13 +35,9 @@ If the OCSP check completes within the minimum timeout, AdGuard will immediately
 
 If the verification takes too long, AdGuard will establish a connection and continue checking in the background. If the certificate is revoked, current and future connections to the domain will be blocked.
 
-### Use Encrypted ClientHello
+### Show AdGuard VPN in Settings
 
-Every encrypted Internet connection has an unencrypted part. This is the very first packet which contains the name of the server you are connecting to. Encrypted Client Hello technology is supposed to solve this issue and encrypt that last bit of unencrypted information. To benefit from it, enable the *Use Encrypted ClientHello* option. It uses a local DNS proxy to look for ECH configuration for the domain. If it is found, ClientHello packet will be encrypted.
-
-### Check websites' certificate transparency
-
-Verifies the authenticity of all certificates for the domain based on Chrome Certificate Transparency Policy. If the certificate does not comply with the Chrome CT Policy, AdGuard will not filter the website. Chrome, in turn, will block it.
+Enabling this option allows you to display the AdGuard VPN tab in Settings for easy opening of the app and the product's website.
 
 ### Exclude app from filtering by entering the full path
 
