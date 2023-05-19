@@ -228,7 +228,7 @@ The following modifiers are the most simple and frequently used. Basically, they
 This modifier lets you narrow the rule coverage down to a specific application (or a list of applications). This might be not too important on Windows and Mac, but this is very important on mobile devices where some of the filtering rules must be app-specific.
 
 * Android — use the app package name, e.g. `org.example.app`.
-* Windows — use the process name, e.g. `chrome.exe`. Note, that the process name is case-insensitive starting with CoreLibs v1.12.
+* Windows — use the process name, e.g. `chrome.exe`. Note that the process name is case-insensitive starting with CoreLibs v1.12.
 * Mac — use the bundle ID or the process name, e.g. `com.google.Chrome`.
 
 > For Mac, you can find out the bundle ID or the process name of the app by viewing the respective request details in the Filtering log.
