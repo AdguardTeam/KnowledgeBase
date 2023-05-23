@@ -138,7 +138,7 @@ Here you can specify package names for which AdGuard should bypass QUIC traffic.
 
 #### Reconfigure Automatic proxy when network changes
 
-Enable this setting if you want the protection to restart to reconfigure the automatic proxy settings when the device connects to another network. The state of this setting affects operation only if the current Routing Mode is Automatic proxy.
+Enable this setting if you want the protection to restart to reconfigure the automatic proxy settings when the device connects to another network. The state of this setting affects operation only if the current routing mode is Automatic proxy.
 
 #### IPv6 filtering
 
