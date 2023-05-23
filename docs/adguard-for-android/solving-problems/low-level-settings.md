@@ -7,7 +7,7 @@ sidebar_position: 6
 
 > Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only open this section if you are sure of what you are doing or our support-team has asked you about it.
 
-To go to *Low-level settings*, open AdGuard and tap the gear icon in the lower right corner of the screen. Then choose *General → Advanced → Low-level settings*.
+To go to *Low-level settings*, open the AdGuard app and tap the gear icon in the lower right corner of the screen. Then choose *General → Advanced → Low-level settings*.
 
 ## Low-level settings
 
