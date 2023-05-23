@@ -112,7 +112,7 @@ IF enabled, DNS-over-HTTPS requests will be redirected to the DNS Protection mod
 
 #### Show the Filter DNS requests setting
 
-When this feature is enabled, in the *Settings ➝ Filtering ➝ Network ➝ Proxy ➝ Proxy server ➝ Add proxy server* section, the string *Filter DNS requests* appears with the switch opposite it. By toggling the switch, you can enable filtering of DNS requests that pass through the proxy. 
+When this feature is enabled, the string *Filter DNS requests* appears in the *Settings ➝ Filtering ➝ Network ➝ Proxy ➝ Proxy server ➝ Add proxy server* section with the switch next to it. By toggling the switch, you can enable filtering of DNS requests passing through the proxy.
 
 ### Protection
 
