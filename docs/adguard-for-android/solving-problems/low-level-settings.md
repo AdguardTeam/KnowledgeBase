@@ -186,7 +186,7 @@ If you want the gateway IP addresses to be added to VPN routes when on Wi-Fi, en
 
 #### IPv4 address
 
-Here you can enter IP address that will be used to create a TUN interface. By default, it is `172.18.11.218`.
+Here you can enter the IP address that will be used to create a TUN interface. By default, it is `172.18.11.218`.
 
 #### Forcibly route LAN IPv4
 
