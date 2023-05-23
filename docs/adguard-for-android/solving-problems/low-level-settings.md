@@ -122,7 +122,7 @@ Here you can specify port ranges that should be filtered.
 
 #### Log removed HTML events
 
-If enabled, AdGuard writes info about blocked HTML elements to the filtering log.
+If enabled, AdGuard records blocked HTML elements in the filtering log.
 
 #### Scriplet debugging
 
