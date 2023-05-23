@@ -162,7 +162,7 @@ After a system-defined number of unsuccessful attempts to get a response from th
 
 #### Recovery delay for revoked VPN
 
-Here you can set the time of a delay in milliseconds before AdGuard will try to restore VPN protection after it has been revoked by a third-party VPN app or by deleting the VPN profile. The default value is 5000 ms.
+Here you can set the time of a delay in milliseconds before AdGuard tries to restore VPN protection after it has been revoked by a third-party VPN app or by deleting the VPN profile. The default value is 5000 ms.
 
 #### Reschedule delay for revoked VPN recovery
 
