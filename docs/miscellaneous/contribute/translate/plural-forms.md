@@ -20,8 +20,6 @@ Let’s have a look at this picture. Here you can see the groups of numerals whi
 
 ![Polish](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
-> Find other examples [here](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals).
-
 Let’s draw a small parallel between English and Polish for better understanding: 
 
       The English version:                                                 The Polish equivalents:
