@@ -1868,7 +1868,7 @@ We recommend to use this kind of exceptions only if it is not possible to change
 * [Pseudo-class `:contains()`](#extended-css-contains)
 * [Pseudo-class `:matches-css()`](#extended-css-matches-css)
 * [Pseudo-class `:matches-attr()`](#extended-css-matches-attr)
-* [Pseudo-class `:matches-property()`](#extended-css-matches-property)
+* [Pseudo-class `:matches-property()`](#extended-css-property)
 * [Pseudo-class `:xpath()`](#extended-css-xpath)
 * [Pseudo-class `:nth-ancestor()`](#extended-css-nth-ancestor)
 * [Pseudo-class `:upward()`](#extended-css-upward)
@@ -1923,7 +1923,6 @@ Learn more about [how to debug extended selectors](#selectors-debugging-mode).
 
 2. Specific pseudo-class may have its own limitations:
 [`:has()`](#extended-css-has-limitations), [`:xpath()`](#extended-css-xpath-limitations), [`:nth-ancestor()`](#extended-css-nth-ancestor-limitations), [`:upward()`](#extended-css-upward-limitations), [`:is()`](#extended-css-is-limitations), [`:not()`](#extended-css-not-limitations), and [`:remove()`](#extended-css-remove-limitations).
-
 
 #### Pseudo-class `:has()` {#extended-css-has}
 
@@ -2066,7 +2065,6 @@ div:contains(/it .* banner/gi)
 >
 > [Backward compatible syntax for `:contains()`](https://github.com/AdguardTeam/ExtendedCss#old-syntax-contains) is supported but **not recommended**.
 
-
 #### Pseudo-class `:matches-css()` {#extended-css-matches-css}
 
 The `:matches-css()` pseudo-class allows to match the element by its current style properties. The work of the pseudo-class is based on using the [`Window.getComputedStyle()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle) method.
@@ -2127,7 +2125,6 @@ div:matches-css(before, content: /block me/)
 >
 > [Backward compatible syntax for `:matches-css()`](https://github.com/AdguardTeam/ExtendedCss#old-syntax-matches-css) is supported but **not recommended**.
 
-
 #### Pseudo-class `:matches-attr()` {#extended-css-matches-attr}
 
 The `:matches-attr()` pseudo-class allows to select an element by its attributes, especially if they are randomized.
@@ -2177,7 +2174,6 @@ The `:matches-attr()` pseudo-class allows to select an element by its attributes
   <inner-random23 id="target4" nt4f5be90delay="1000"></inner-random23>
 </div>
 ```
-
 
 #### Pseudo-class `:matches-property()` {#extended-css-property}
 
@@ -2246,7 +2242,6 @@ div:matches-property(memoizedProps._owner.src=/ad/)
 > 1. Inspect the page element or select it in `Elements` tab of browser DevTools.
 > 2. Run `console.dir($0)` in `Console` tab.
 
-
 #### Pseudo-class `:xpath()` {#extended-css-xpath}
 
 The `:xpath()` pseudo-class allows to select an element by evaluating an XPath expression.
@@ -2282,7 +2277,6 @@ The `:xpath()` pseudo-class allows to select an element by evaluating an XPath e
   <div class="inner"></div>
 </div>
 ```
-
 
 #### Pseudo-class `:nth-ancestor()` {#extended-css-nth-ancestor}
 
@@ -2327,7 +2321,6 @@ For such DOM:
 `.child:nth-ancestor(1)` selects the element `div#target1`,
 `div[class="inner"]:nth-ancestor(3)` selects the element `div#target2`.
 
-
 #### Pseudo-class `:upward()` {#extended-css-upward}
 
 The `:upward()` pseudo-class allows to lookup the ancestor relative to the previously selected element.
@@ -2369,7 +2362,6 @@ For such DOM:
 `.child:upward(1)` selects the element `div#target1`,
 `.inner:upward(3)` selects the element `div#target2`.
 
-
 #### Pseudo-class `:remove()` and pseudo-property `remove` {#remove-pseudos}
 
 Sometimes, it is necessary to remove a matching element instead of hiding it or applying custom styles. In order to do it, you can use the `:remove()` pseudo-class as well as the `remove` pseudo-property.
@@ -2395,7 +2387,6 @@ selector { remove: true; }
 
 > If the `:remove()` pseudo-class or the `remove` pseudo-property is used, all style properties are ignored except for the [`debug` pseudo-property](#selectors-debug-mode).
 
-
 **Examples**
 ```
 div.banner:remove()
@@ -2408,7 +2399,6 @@ div[class]:has(> a > img) { remove: true; }
 > **Note**
 >
 > Rules with the `remove` pseudo-property should use `#$?#` marker: `$` for CSS style rules syntax, `?` for ExtendedCss syntax.
-
 
 #### Pseudo-class `:is()` {#extended-css-is}
 
@@ -2454,7 +2444,6 @@ but `:is(*:not([class]):has(> .banner))` can be used instead of it to select the
 </div>
 ```
 
-
 #### Pseudo-class `:not()` {#extended-css-not}
 
 The `:not()` pseudo-class allows to select elements which are *not matched* by selectors passed as argument. Invalid argument selectors are not allowed and error is to be thrown. Our implementation of the [`:not()` pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/:not).
@@ -2489,7 +2478,6 @@ The `:not()` pseudo-class allows to select elements which are *not matched* by s
 </div>
 ```
 
-
 #### Pseudo-class `:if-not()` (deprecated) {#extended-css-if-not}
 
 > **Deprecation notice**
@@ -2497,7 +2485,6 @@ The `:not()` pseudo-class allows to select elements which are *not matched* by s
 > The `:if-not()` pseudo-class is deprecated and is no longer supported. Rules with it are considered as invalid.
 
 This pseudo-class was basically a shortcut for `:not(:has())`. It was supported by ExtendedCss for better compatibility with some filters subscriptions.
-
 
 ### Cosmetic rules priority {#cosmetic-rules-priority}
 
