@@ -378,6 +378,8 @@ The modifier `":" h_value` part may be omitted. In that case the modifier matche
 
 The `$important` modifier applied to a rule increases its priority over any other rule without `$important` modifier. Even over basic exception rules.
 
+Go to [rules priorities](#rule-priorities) for more details.
+
 **Examples**
 
 ```
@@ -390,13 +392,6 @@ The `$important` modifier applied to a rule increases its priority over any othe
 ! if the exception rule also has `$important` modifier, it will prevail and requests won't be blocked
 ||example.org^$important
 @@||example.org^$important
-```
-
-```
-! if a document-level exception rule is applied to the document, the `$important` modifier will be ignored;
-! so if a request to `example.org` is sent from the `test.org` domain, the blocking rule will not be applied despite it has the `$important` modifier
-||example.org^$important
-@@||test.org^$document
 ```
 
 #### **`$match-case`** {#match-case-modifier}
@@ -523,12 +518,11 @@ The rule corresponds to the main frame document requests, i.e. HTML documents th
 
 By default, AdGuard does not block the requests that are loaded in the browser tab (e.g. "main frame bypass"). The idea is not to prevent pages from loading as the user clearly indicated that they want this page to be loaded. However, if the `$document` modifier is specified explicitly, AdGuard does not use that logic and prevents the page load. Instead, it responds with a "blocking page".
 
-If this modifier is used with an exclusion rule (`@@`), it completely disables blocking on corresponding pages. It is equivalent to using `$elemhide`, `$content`, `$urlblock`, `$jsinject`, and `$extension` modifiers simultaneously.
+If this modifier is used with an exclusion rule (`@@`) **without any other modifiers**, it completely disables blocking on corresponding pages. It is equivalent to using `$elemhide`, `$content`, `$urlblock`, `$jsinject`, `$extension` and `$popup` modifiers simultaneously.
 
 **Examples**
 
 * `@@||example.com^$document` completely disables filtering on all pages at `example.com` and all subdomains.
-* `@@||example.com^$document,~extension` completely disables blocking on any pages at `example.com` and all subdomains, but continues to run userscripts there.
 
 * `||example.com^$document` blocks HTML document request to `example.com` with a blocking page.
 * `||example.com^$document,redirect=noopframe` redirects HTML document request to `example.com` to an empty html document.
@@ -743,7 +737,7 @@ The list of the available modifier options:
 
 #### **`$urlblock`** {#urlblock-modifier}
 
-Disables blocking of all requests sent from the pages matching the rule.
+Disables blocking of all requests sent from the pages matching the rule and sisables all [`$cookie`](#cookie-modifier) rules.
 
 **Examples**
 
@@ -814,13 +808,12 @@ These modifiers are able to completely change the behaviour of basic rules.
 
 #### **`$all`** {#all-modifier}
 
-`$all` modifier is made of [`$document`](#document-modifier), [`$popup`](#popup-modifier), and [`$csp`](#csp-modifier) modifiers. E.g. rule `||example.org^$all` is converting into such a set of rules:
+`$all` modifier is made of [all content-types modifiers](#content-type-modifiers) and [`$popup`](#popup-modifier). E.g. rule `||example.org^$all` is converting into rule:
 ```
-||example.org^$document,popup
-||example.org^$csp=script-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
-||example.org^$csp=font-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
-||example.org^
+||example.org^$document,subdocument,font,image,media,object,other,ping,script,stylesheet,websocket,xmlhttprequest,popup
 ```
+
+This modifier cannot be used as an exception with the `@@` mark.
 
 #### **`$badfilter`** {#badfilter-modifier}
 
@@ -889,9 +882,10 @@ every time AdGuard encounters a cookie called `NAME` in a request to `example.or
 * `$cookie=/__utm[a-z]/` blocks Google Analytics cookies everywhere
 * `||facebook.com^$third-party,cookie=c_user` prevents Facebook from tracking you even if you are logged in
 
-`$cookie` rules are not affected by regular exception rules (`@@`) unless it is a `$document` exception. In order to disable a `$cookie` rule, the exception rule should also have a `$cookie` modifier. How it works:
+`$cookie` rules are not affected by regular exception rules (`@@`) unless it is a `$urlblock` exception (which is contained in the exception alias `$document` - `$elemhide,jsinject,content,urlblock,extension,popup`). In order to disable a `$cookie` rule, the exception rule should also have a `$cookie` modifier or a `$urlblock` modifier. How it works:
 
 * `@@||example.org^$cookie` unblocks all cookies set by `example.org`
+* `@@||example.org^$urlblock` unblocks all cookies set by `example.org`
 * `@@||example.org^$cookie=concept` unblocks a single cookie named `concept`
 * `@@||example.org^$cookie=/^_ga_/` unblocks every cookie that matches the regular expression
 
@@ -1365,7 +1359,9 @@ AdGuard uses the same filtering rules syntax as uBlock Origin. Also, it is compa
 
 > The value of the `$redirect` modifier must be the name of the resource that will be used for redirection.
 
-> `$redirect` rules' priority is higher than the regular basic blocking rules' priority. This means that if there is a basic blocking rule (even with `$important` modifier), `$redirect` rule will prevail over it. If there is an allowlist (`@@`) rule matching the same URL, it will disable redirecting as well (unless the `$redirect` rule is also marked as `$important`).
+> `$redirect` rules' priority is higher than the regular basic blocking rules' priority and higher than exception rules. This means that if there is a basic blocking rule or allowlist rule with `@@` mark, `$redirect` rule will prevail over it. If rule with the `$important` modifier matching the same URL, it will disable redirecting as well (unless the `$redirect` rule is also marked as `$important`).
+
+Go to [rules priorities](#rule-priorities) for more details.
 
 ##### Disabling `$redirect` rules
 
@@ -1383,7 +1379,9 @@ AdGuard uses the same filtering rules syntax as uBlock Origin. Also, it is compa
 
 #### **`$redirect-rule`** {#redirect-rule-modifier}
 
-This is basically an alias to [`$redirect`](#redirect-modifier) since it has the same "redirection" values and the logic is almost similar. The difference is that `$redirect-rule` is applied only in the case when the target request is blocked by a different basic rule.
+This is basically an alias to [`$redirect`](#redirect-modifier) since it has the same "redirection" values and the logic is almost similar. The difference is that `$redirect-rule` is applied only in the case when the target request is blocked by a different basic rule and it has more priority than usual `$redirect` rules.
+
+Go to [rules priorities](#rule-priorities) for more details.
 
 > Negating `$redirect-rule` works exactly the same way as for regular `$redirect` rules. Even more than that, `@@||example.org^$redirect` will negate both `$redirect` and `$redirect-rule` rules.
 
@@ -1737,7 +1735,7 @@ As a response to blocked request AdGuard returns a short video placeholder.
 >
 > Rules with `$mp4` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
 
-### Rule priorities
+### Rule priorities {#rule-priorities}
 Each rule has its own priority, which is necessary when several rules match the request and the filtering system needs to select one of them.
 Priority is measured by a natural integer. The higher the priority of a rule, the higher its priority value.
 In the case of a conflict between two rules with the same priority value, there is undefined behavior, depending on the implementation.
@@ -1746,7 +1744,12 @@ In the case of a conflict between two rules with the same priority value, there 
 
 To calculate priority, modifiers have been divided into several groups. They are arranged in order of priority from lowest to highest. The more a modifier narrows the scope of a rule, the more priority it adds to the total weight of the rule or the more a rule covers requests, the lower its priority. Note that there are modifiers where setting one parameter has a higher priority than setting two or more, for example, for `$domain=example.com|example.org`, because a rule with two domains has a smaller, infinitesimal, effective area, but still larger than a rule with one resolved domain.
 
-The base priority weight of any rule is 1. If the priority is a floating point number, it will be rounded to the **nearest** whole number.
+The base priority weight of any rule is 1. If the priority is a floating point number, it will be rounded to the **nearest whole number**.
+
+> **Compatibility with different versions of AdGuard**
+>
+> Numerical priorities for rules are available in tsurlfilter since version `v2.1.0`.
+
 
 #### 1. Basic modifiers, the presence of each adds 1 to the priority: {#priority-category-1}
  * [`$third-party`](#third-party-modifier),
@@ -1812,7 +1815,7 @@ Specified domains through `$domain` and specified applications through `$app` ad
 Each of which adds `10^3` to the priority.
 
 As well as
-- exception with a only one modifier - [`$document`](#document-modifier) (because it's an alias for `$elemhide,content,jsinject,urlblock,popup`)
+- exception with a only one modifier (**without any other modifiers**) - [`$document`](#document-modifier) (because it's an alias for `$elemhide,content,jsinject,urlblock,extension,popup`)
 
 In addition, each of the exceptions implicitly adds the two allowed content types `$document,subdocument`.
 
@@ -1891,7 +1894,7 @@ Rule weight: base weight + allowlist rule, [category 5](#priority-category-5) + 
 
 ##### Example 7.
 `@@||example.org^$document` - without additional modifiers is an alias for
-`@@|||example.com^$elemhide,content,jsinject,urlblock,popup`
+`@@|||example.com^$elemhide,content,jsinject,urlblock,extension,popup`
 
 Rule weight: base weight + specific exceptions, [category 4](#priority-category-4) + two allowed content types (document and subdocument), [category 2](#priority-category-2):
 `1 + 1000 * 4 + (50 + 50 / 2) = 4076`.
