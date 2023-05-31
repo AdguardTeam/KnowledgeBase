@@ -1737,6 +1737,177 @@ As a response to blocked request AdGuard returns a short video placeholder.
 >
 > Rules with `$mp4` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
 
+### Rule priorities
+Each rule has its own priority, which is necessary when several rules match the request and the filtering system needs to select one of them.
+Priority is measured by a natural integer. The higher the priority of a rule, the higher its priority value.
+In the case of a conflict between two rules with the same priority value, there is undefined behavior, depending on the implementation.
+
+#### Priority counting
+
+To calculate priority, modifiers have been divided into several groups. They are arranged in order of priority from lowest to highest. The more a modifier narrows the scope of a rule, the more priority it adds to the total weight of the rule or the more a rule covers requests, the lower its priority. Note that there are modifiers where setting one parameter has a higher priority than setting two or more, for example, for `$domain=example.com|example.org`, because a rule with two domains has a smaller, infinitesimal, effective area, but still larger than a rule with one resolved domain.
+
+The base priority weight of any rule is 1. If the priority is a floating point number, it will be rounded to the **nearest** whole number.
+
+#### 1. Basic modifiers, the presence of each adds 1 to the priority: {#priority-category-1}
+ * [`$third-party`](#third-party-modifier),
+ * [`$match-case`](#match-case-modifier),
+ * [`$to`](#to-modifier),
+ * [`$method`](#method-modifier),
+ * [`$denyallow`](#denyallow-modifier),
+ * [`$header`](#header-modifier),
+ * [`$dnsrewrite`](#dnsrewrite-modifier),
+ * [`$app`](#app-modifier) with forbidden applications using `~`,
+ * [`$domain`](#domain-modifier) with forbidden domains using `~`,
+ * banned content-types with `~`.
+
+For forbidden `$domain` and content-type, we add 1 for the presence of the modifier itself disregarding the number of forbidden domains or content-types, because the scope of the rule is infinitely large in the limit anyway, in other words, by banning several domains and content-types, we only *insignificantly* narrowed the scope of the rule.
+
+#### 2. Defined content types, $popup, special exceptions: {#priority-category-2}
+* [`$document`](#document-modifier),
+* [`$font`](#font-modifier),
+* [`$image`](#image-modifier),
+* [`$media`](#media-modifier),
+* [`$object`](#object-modifier),
+* [`$other`](#other-modifier),
+* [`$ping`](#ping-modifier),
+* [`$script`](#script-modifier),
+* [`$stylesheet`](#stylesheet-modifier),
+* [`$subdocument`](#subdocument-modifier),
+* [`$websocket`](#websocket-modifier),
+* [`$xmlhttprequest`](#xmlhttprequest-modifier);
+
+This also includes rules that implicitly add the modifier `$document`:
+* [`$popup`](#popup-modifier);
+
+or special exceptions that implicitly add `$document,subdocument`:
+* [`$content`](#content-modifier),
+* [`$elemhide`](#elemhide-modifier),
+* [`$extension`](#extension-modifier),
+* [`$jsinject`](#jsinject-modifier),
+* [`$specifichide`](#specifichide-modifier),
+* [`$urlblock`](#urlblock-modifier),
+* [`$genericblock`](#genericblock-modifier),
+* [`$generichide`](#generichide-modifier);
+
+
+Specified content-types add `50 + 50 / number_of_forbidden_content_types`, for example:
+`||example.com^$image,script` will add `50 + 50 / 2 = 50 + 25 = 75` to the total weight of the rule. The `$popup` also belongs to this category, because it implicitly adds the modifier `$document`. Similarly, specific exceptions add `$document,subdocument`.
+
+#### 3. $domain or $app with allowed domains or applications: {#priority-category-3}
+Specified domains through `$domain` and specified applications through `$app` add `101 + 100 / number_domains (or number_applications)`, for example:
+`||example.com^$domain=example.com|example.org|example.net` will add `101 + 100 / 3 = 134.3 = 134` or
+`||example.com^$app=org.example.app1|org.example.app2` will add `101 + 100 / 2 = 151`.
+
+#### 4. Specific exceptions: {#priority-category-4}
+* [`$content`](#content-modifier),
+* [`$elemhide`](#elemhide-modifier),
+* [`$extension`](#extension-modifier),
+* [`$jsinject`](#jsinject-modifier),
+* [`$specifichide`](#specifichide-modifier),
+* [`$urlblock`](#urlblock-modifier),
+* [`$genericblock`](#genericblock-modifier),
+* [`$generichide`](#generichide-modifier),
+* [`$extension`](#extension-modifier);
+
+Each of which adds `10^3` to the priority.
+
+As well as
+- exception with a only one modifier - [`$document`](#document-modifier) (because it's an alias for `$elemhide,content,jsinject,urlblock,popup`)
+
+In addition, each of the exceptions implicitly adds the two allowed content types `$document,subdocument`.
+
+#### 5. Allowlist rule {#priority-category-5}
+Modifier `@@` adds `10^4` to rule priority.
+
+#### 6. $redirect rules {#priority-category-6}
+The modifier [`$redirect`](#redirect-modifier) adds `10^5` to rule priority.
+Modifier [`$redirect-rule`](#redirect-rule-modifier) adds `10^5 + 1` to rule priority
+The `$redirect-rule` in the presence of a blocking rule is a higher priority than a normal `$redirect`.
+
+#### 7. important rules {#priority-category-7}
+Modifier [`$important`](#important-modifier) adds `10^6` to rule priority.
+
+#### Rules for which there is no priority count {#priority-category-extra}
+Rules that do not override blocking, but do additional post- or pre-processing of requests:
+* [`$removeparam`](#removeparam-modifier),
+* [`$removeheader`](#removeheader-modifier),
+* [`$replace`](#replace-modifier),
+* [`$cookie`](#cookie-modifier),
+* [`$csp`](#csp-modifier),
+* [`$csp`](#jsonprune-modifier);
+
+Rules that do not need priority:
+* [`$badfilter`](#badfilter-modifier),
+* [`$stealth`](#stealth-modifier).
+
+#### Explanation for complicated cases:
+
+1. Simultaneous blocking and `$removeparam`.
+For example `*&p1=param` and `*$removeparam=p1`.
+The blocking rule will be applied first, because otherwise, after removing the parameter, the request will not be blocked.
+
+2. `$header` and `$removeheader`.
+Two rules:
+`||example.com^$header=header-name` - blocking.
+`||example.com^$removeheader=header-name` - remove header.
+The blocking rule will be applied first, because `$header` will add 1 to the priority calculation.
+
+#### Examples
+
+##### Example 1.
+`||example.com^`
+
+Weight of the rule without modifiers: `1`.
+
+##### Example 2.
+`||example.com^$match-case`
+
+Weight of the rule: base weight + weight of the modifier from [category 1](#priority-category-1):
+`1 + 1 = 2`.
+
+##### Example 3.
+`||example.org^$removeparam=p`
+
+Weight of the rule: base weight + 0, since $removeparam [is not involved](#priority-category-extra) in the priority calculation:
+`1 + 0 = 1`.
+
+##### Example 4.
+`||example.org^$document,redirect=nooptext`
+
+Rule weight: base weight + allowed content type, [category 3](#priority-category-3) + $redirect from [category 6](#priority-category-6):
+`1 + (101 + 100 / 1) + 100000 = 100202`.
+
+##### Example 5.
+`@@||example.org^$removeparam=p,document`
+
+Rule weight: base weight + allowlist rule, [category 5](#priority-category-5) + 0 because $removeparam [is not involved](#priority-category-extra) in the priority calculation + allowed content type, [category 2](#priority-category-2):
+`1 + 10000 + 0 + (50 + 50 / 1) = 10101`.
+
+##### Example 6.
+`@@||example.com/ad/*$domain=example.org|example.net,important`
+
+Rule weight: base weight + allowlist rule, [category 5](#priority-category-5) + important rule, [category 7](#priority-category-7) + allowed domains, [category 3](#priority-category-3):
+`1 + 10000 + 1000000 + (101 + 100 / 2) = 1010152`.
+
+##### Example 7.
+`@@||example.org^$document` - without additional modifiers is an alias for
+`@@|||example.com^$elemhide,content,jsinject,urlblock,popup`
+
+Rule weight: base weight + specific exceptions, [category 4](#priority-category-4) + two allowed content types (document and subdocument), [category 2](#priority-category-2):
+`1 + 1000 * 4 + (50 + 50 / 2) = 4076`.
+
+##### Example 8.
+`*$script,domain=a.com,denyallow=x.com|y.com`
+
+Rule weight: base weight + allowed content type, [category 2](#priority-category-2) + allowed domain, [category 3](#priority-category-3) + denyallow, [category 1](#priority-category-1):
+`1 + (50 + 50/1) + (101 + 100 / 1) + 1 = 303`.
+
+##### Example 9.
+`||example.com^$all` (alias to `@@|||example.com^$document,subdocument,image,script,media,etc. + $popup`)
+
+Rule weight: base weight + allowed content types, [category 2](#priority-category-2):
+`1 + (50 + 50/12) = 55`.
+
 # Non-basic rules
 
 However, the capabilities of the basic rules may not be sufficient to block ads. Sometimes you need to hide an element or change part of the HTML code of a web page without breaking anything. The rules described in this section are created specifically for this purpose.
