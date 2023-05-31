@@ -660,11 +660,23 @@ Disables any [cosmetic rules](#cosmetic-rules) on the pages matching the rule.
 
 #### **`$extension`** {#extension-modifier}
 
-Disables all userscripts on the pages matching this rule.
+Disables specific userscripts or all userscripts for a given domain.
+
+**Syntax**
+
+```
+$extension="userscript_name1"[,"userscript_name2"[,"userscript_name3"[...]]]
+```
+
+`userscript_name(i)` stand for specific userscripts name to be disabled by the modifier. The modifier can contain any number of userscript names or not contain them at all. In the latter case the modifier disables all the userscripts.
+
+Each userscript name should be separately quoted (") and multiple userscript names should be comma separated.
 
 **Examples**
 
-* `@@||example.com^$extension` — userscripts will not work on all pages of the `example.com` website.
+* `@@||example.com^$extension="AdGuard Assistant"` - disables the "AdGuard Assistant" userscript on `example.com` website.
+* `@@||example.com^$extension="AdGuard Assistant","Popup Blocker"` - disables both "AdGuard Assistant" and "Popup Blocker" userscripts on `example.com` website.
+* `@@||example.com^$extension` — all userscripts will not work on all pages of the `example.com` website.
 
 > **Compatibility with different versions of AdGuard**
 >
