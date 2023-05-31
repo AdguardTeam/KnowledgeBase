@@ -672,11 +672,19 @@ $extension="userscript_name1"[,"userscript_name2"[,"userscript_name3"[...]]]
 
 Each userscript name should be separately quoted (") and multiple userscript names should be comma separated.
 
+If a userscript's name includes quotes, they must be escaped with a backslash ("\\").
+
+```
+$extension="userscript_name_with_\"quote\""
+```
+Here, `userscript_name_with_"quote"` represents a userscript name that includes quotes.
+
 **Examples**
 
-* `@@||example.com^$extension="AdGuard Assistant"` - disables the "AdGuard Assistant" userscript on `example.com` website.
-* `@@||example.com^$extension="AdGuard Assistant","Popup Blocker"` - disables both "AdGuard Assistant" and "Popup Blocker" userscripts on `example.com` website.
+* `@@||example.com^$extension="AdGuard Assistant"` - disables the `AdGuard Assistant` userscript on `example.com` website.
+* `@@||example.com^$extension="AdGuard Assistant","Popup Blocker"` - disables both `AdGuard Assistant` and `Popup Blocker` userscripts on `example.com` website.
 * `@@||example.com^$extension` — all userscripts will not work on all pages of the `example.com` website.
+* `@@||example.com^$extension="AdGuard \"Assistant\""` - disables the `AdGuard "Assistant"` userscript on `example.com` website.
 
 > **Compatibility with different versions of AdGuard**
 >
