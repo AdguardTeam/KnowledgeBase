@@ -670,7 +670,7 @@ $extension[="userscript_name1"[|"userscript_name2"[|"userscript_name3"[...]]]]
 
 `userscript_name(i)` stand for specific userscripts name to be disabled by the modifier. The modifier can contain any number of userscript names or not contain them at all. In the latter case the modifier disables all the userscripts. Note that the specific userscript name is available starting with CoreLibs v1.13.
 
-Each userscript name should be separately quoted (") and multiple userscript names should be separated with a pipe (`|`).
+Each userscript name should be separately quoted. Both single (`'`) and double (`"`) ASCII quotes are supported. Multiple userscript names should be separated with a pipe (`|`).
 
 You can also exclude userscript by adding a `~` character before the value. In this case, userscript will not be excluded.
 
