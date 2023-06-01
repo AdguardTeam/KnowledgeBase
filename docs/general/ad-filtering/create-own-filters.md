@@ -1826,7 +1826,7 @@ Each of which adds `10^3` to the priority.
 As well as
 - exception with a only one modifier (**without any other modifiers**) - [`$document`](#document-modifier) (because it's an alias for `$elemhide,content,jsinject,urlblock,extension`)
 
-In addition, each of the exceptions implicitly adds the two allowed content types `$document,subdocument`.
+In addition, each of the exceptions implicitly adds the two allowed content-type modifiers `$document,subdocument`.
 
 #### 5. Allowlist rule {#priority-category-5}
 
