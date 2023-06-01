@@ -665,24 +665,30 @@ Disables specific userscripts or all userscripts for a given domain.
 **Syntax**
 
 ```
-$extension="userscript_name1"[,"userscript_name2"[,"userscript_name3"[...]]]
+$extension="userscript_name1"[|"userscript_name2"[|"userscript_name3"[...]]]
 ```
 
 `userscript_name(i)` stand for specific userscripts name to be disabled by the modifier. The modifier can contain any number of userscript names or not contain them at all. In the latter case the modifier disables all the userscripts.
 
-Each userscript name should be separately quoted (") and multiple userscript names should be comma separated.
+Each userscript name should be separately quoted (") and multiple userscript names should be separated with a pipe (`|`).
 
-If a userscript's name includes quotes, they must be escaped with a backslash ("\\").
+You can also exclude userscript by adding a `~` character before the value. In this case, userscript will not be excluded.
 
 ```
-$extension="userscript_name_with_\"quote\""
+$extension=~"userscript name"
 ```
-Here, `userscript_name_with_"quote"` represents a userscript name that includes quotes.
+
+If a userscript's name includes quotes (`"`), commas (`,`), or pipes (`|`), they must be escaped with a backslash (`\`).
+
+```
+$extension="userscript name\, with \"quote\""
+```
 
 **Examples**
 
 * `@@||example.com^$extension="AdGuard Assistant"` - disables the `AdGuard Assistant` userscript on `example.com` website.
-* `@@||example.com^$extension="AdGuard Assistant","Popup Blocker"` - disables both `AdGuard Assistant` and `Popup Blocker` userscripts on `example.com` website.
+* `@@||example.com^$extension="AdGuard Assistant"|"Popup Blocker"` - disables both `AdGuard Assistant` and `Popup Blocker` userscripts on `example.com` website.
+* `@@||example.com^$extension=~"AdGuard Assistant"` - disables all user scripts on `example.com` website, except `AdGuard Assistant`.
 * `@@||example.com^$extension` — all userscripts will not work on all pages of the `example.com` website.
 * `@@||example.com^$extension="AdGuard \"Assistant\""` - disables the `AdGuard "Assistant"` userscript on `example.com` website.
 
