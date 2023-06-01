@@ -737,7 +737,7 @@ The list of the available modifier options:
 
 #### **`$urlblock`** {#urlblock-modifier}
 
-Disables blocking of all requests sent from the pages matching the rule and sisables all [`$cookie`](#cookie-modifier) rules.
+Disables blocking of all requests sent from the pages matching the rule and disables all [`$cookie`](#cookie-modifier) rules.
 
 **Examples**
 
