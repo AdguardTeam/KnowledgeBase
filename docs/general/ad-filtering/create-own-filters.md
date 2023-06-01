@@ -1359,7 +1359,7 @@ AdGuard uses the same filtering rules syntax as uBlock Origin. Also, it is compa
 
 > The value of the `$redirect` modifier must be the name of the resource that will be used for redirection.
 
-> `$redirect` rules' priority is higher than the regular basic blocking rules' priority and higher than exception rules. This means that if there is a basic blocking rule or allowlist rule with `@@` mark, `$redirect` rule will prevail over it. If rule with the `$important` modifier matching the same URL, it will disable redirecting as well (unless the `$redirect` rule is also marked as `$important`).
+> `$redirect` rules' priority is higher than the regular basic blocking rules' priority and higher than exception rules. This means that if there is a basic blocking rule or allowlist rule with `@@` mark, `$redirect` rule will prevail over it. If basic rule with the `$important` modifier matching the same URL, it will prevail over `$redirect` rule (unless the `$redirect` rule is also marked as `$important`).
 
 Go to [rules priorities](#rule-priorities) for more details.
 
@@ -1799,7 +1799,7 @@ or special exceptions that implicitly add `$document,subdocument`:
 * [`$generichide`](#generichide-modifier);
 
 
-Specified content-types add `50 + 50 / number_of_forbidden_content_types`, for example:
+Specified content-types add `50 + 50 / number_of_content_types`, for example:
 `||example.com^$image,script` will add `50 + 50 / 2 = 50 + 25 = 75` to the total weight of the rule. The `$popup` also belongs to this category, because it implicitly adds the modifier `$document`. Similarly, specific exceptions add `$document,subdocument`.
 
 #### 3. $domain or $app with allowed domains or applications: {#priority-category-3}
