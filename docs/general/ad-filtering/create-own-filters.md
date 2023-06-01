@@ -1753,20 +1753,24 @@ The base priority weight of any rule is 1. If the priority is a floating point n
 
 #### 1. Basic modifiers, the presence of each adds 1 to the priority: {#priority-category-1}
 
- * [`$third-party`](#third-party-modifier),
- * [`$match-case`](#match-case-modifier),
- * [`$to`](#to-modifier),
- * [`$method`](#method-modifier),
- * [`$denyallow`](#denyallow-modifier),
- * [`$header`](#header-modifier),
- * [`$dnsrewrite`](#dnsrewrite-modifier),
- * [`$app`](#app-modifier) with forbidden applications using `~`,
- * [`$domain`](#domain-modifier) with forbidden domains using `~`,
- * banned content-types with `~`.
+[//]: # (Please keep them sorted)
 
-For forbidden `$domain` and content-type, we add 1 for the presence of the modifier itself disregarding the number of forbidden domains or content-types, because the scope of the rule is infinitely large in the limit anyway, in other words, by banning several domains and content-types, we only *insignificantly* narrowed the scope of the rule.
+ * [`$app`](#app-modifier) with forbidden applications using `~`,
+ * [`$denyallow`](#denyallow-modifier),
+ * [`$dnsrewrite`](#dnsrewrite-modifier),
+ * [`$domain`](#domain-modifier) with forbidden domains using `~`,
+ * [`$header`](#header-modifier),
+ * [`$match-case`](#match-case-modifier),
+ * [`$method`](#method-modifier),
+ * [`$third-party`](#third-party-modifier),
+ * [`$to`](#to-modifier),
+ * banned [content-types](#content-type-modifiers) with `~`.
+
+For forbidden domain, app or content-type, we add 1 for the presence of the modifier itself disregarding the number of forbidden domains or content-types, because the scope of the rule is infinitely large in the limit anyway, in other words, by banning several domains and content-types, we only *insignificantly* narrowed the scope of the rule.
 
 #### 2. Defined content types, $popup, special exceptions: {#priority-category-2}
+
+[//]: # (Please keep them sorted)
 
 * [`$document`](#document-modifier),
 * [`$font`](#font-modifier),
@@ -1806,6 +1810,8 @@ Specified domains through `$domain` and specified applications through `$app` ad
 
 #### 4. Specific exceptions: {#priority-category-4}
 
+[//]: # (Please keep them sorted)
+
 * [`$content`](#content-modifier),
 * [`$elemhide`](#elemhide-modifier),
 * [`$extension`](#extension-modifier),
@@ -1813,8 +1819,7 @@ Specified domains through `$domain` and specified applications through `$app` ad
 * [`$specifichide`](#specifichide-modifier),
 * [`$urlblock`](#urlblock-modifier),
 * [`$genericblock`](#genericblock-modifier),
-* [`$generichide`](#generichide-modifier),
-* [`$extension`](#extension-modifier);
+* [`$generichide`](#generichide-modifier);
 
 Each of which adds `10^3` to the priority.
 
@@ -1839,13 +1844,15 @@ Modifier [`$important`](#important-modifier) adds `10^6` to rule priority.
 
 #### Rules for which there is no priority count {#priority-category-extra}
 
+[//]: # (Please keep them sorted)
+
 Rules that do not override blocking, but do additional post- or pre-processing of requests:
-* [`$removeparam`](#removeparam-modifier),
-* [`$removeheader`](#removeheader-modifier),
-* [`$replace`](#replace-modifier),
 * [`$cookie`](#cookie-modifier),
 * [`$csp`](#csp-modifier),
-* [`$csp`](#jsonprune-modifier);
+* [`$jsonprune`](#jsonprune-modifier),
+* [`$removeheader`](#removeheader-modifier),
+* [`$removeparam`](#removeparam-modifier),
+* [`$replace`](#replace-modifier);
 
 Rules that do not need priority:
 * [`$badfilter`](#badfilter-modifier),
