@@ -1766,7 +1766,7 @@ The base priority weight of any rule is 1. If the priority is a floating point n
  * [`$to`](#to-modifier),
  * banned [content-types](#content-type-modifiers) with `~`.
 
-For forbidden domain, app or content-type, we add 1 for the presence of the modifier itself disregarding the number of forbidden domains or content-types, because the scope of the rule is infinitely large in the limit anyway, in other words, by banning several domains and content-types, we only *insignificantly* narrowed the scope of the rule.
+For forbidden domain, app or content-type, we add 1 for the presence of the modifier itself disregarding the number of forbidden domains or content-types, because the scope of the rule is infinitely large anyway. In other words, by banning several domains and content-types, we only *insignificantly* narrowed the scope of the rule.
 
 #### 2. Defined content types, $popup, special exceptions: {#priority-category-2}
 
