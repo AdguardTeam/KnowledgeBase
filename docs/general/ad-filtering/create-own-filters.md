@@ -1768,7 +1768,7 @@ The base priority weight of any rule is 1. If the priority is a floating point n
 
 For forbidden domain, app or content-type, we add 1 for the presence of the modifier itself disregarding the number of forbidden domains or content-types, because the scope of the rule is infinitely large anyway. In other words, by banning several domains and content-types, we only *insignificantly* narrowed the scope of the rule.
 
-#### 2. Defined content types, $popup, special exceptions: {#priority-category-2}
+#### 2. Defined content-type modifiers, $popup, special exceptions: {#priority-category-2}
 
 [//]: # (Please keep them sorted)
 
