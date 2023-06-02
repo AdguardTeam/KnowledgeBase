@@ -670,7 +670,7 @@ $extension[="userscript_name1"[|"userscript_name2"[|"userscript_name3"[...]]]]
 
 `userscript_name(i)` stands for a specific userscript name to be disabled by the modifier. The modifier can contain any number of userscript names or not contain them at all. In the latter case the modifier disables all the userscripts.
 
-Each userscript name should be separately quoted. Both single (`'`) and double (`"`) ASCII quotes are supported. Multiple userscript names should be separated with a pipe (`|`).
+Userscript names usually contain spaces or other special characters, which is why you should enclose the name in quotes. Both single (`'`) and double (`"`) ASCII quotes are supported. Multiple userscript names should be separated with a pipe (`|`).
 
 You can also exclude userscript by adding a `~` character before the value. In this case, userscript will not be excluded.
 
@@ -690,7 +690,8 @@ $extension="userscript name\, with \"quote\""
 **Examples**
 
 * `@@||example.com^$extension="AdGuard Assistant"` disables the `AdGuard Assistant` userscript on `example.com` website.
-* `@@||example.com^$extension="AdGuard Assistant"|"Popup Blocker"` disables both `AdGuard Assistant` and `Popup Blocker` userscripts on `example.com` website.
+* `@@||example.com^$extension=MyUserscript` disables the `MyUserscript` userscript on `example.com` website.
+* `@@||example.com^$extension='AdGuard Assistant'|'Popup Blocker'` disables both `AdGuard Assistant` and `Popup Blocker` userscripts on `example.com` website.
 * `@@||example.com^$extension=~"AdGuard Assistant"` disables all user scripts on `example.com` website, except `AdGuard Assistant`.
 * `@@||example.com^$extension` all userscripts will not work on all pages of the `example.com` website.
 * `@@||example.com^$extension="AdGuard \"Assistant\""` disables the `AdGuard "Assistant"` userscript on `example.com` website.
