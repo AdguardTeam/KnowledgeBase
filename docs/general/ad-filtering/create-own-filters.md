@@ -885,7 +885,7 @@ every time AdGuard encounters a cookie called `NAME` in a request to `example.or
 `$cookie` rules are not affected by regular exception rules (`@@`) unless it is a `$urlblock` exception (which is contained in the exception alias `$document` - `$elemhide,jsinject,content,urlblock,extension`). In order to disable a `$cookie` rule, the exception rule should also have a `$cookie` modifier or a `$urlblock` modifier. How it works:
 
 * `@@||example.org^$cookie` unblocks all cookies set by `example.org`
-* `@@||example.org^$urlblock` unblocks all cookies set by `example.org`
+* `@@||example.org^$urlblock` unblocks all cookies set by `example.org` and disables blocking of all requests sent from `example.org`
 * `@@||example.org^$cookie=concept` unblocks a single cookie named `concept`
 * `@@||example.org^$cookie=/^_ga_/` unblocks every cookie that matches the regular expression
 
@@ -1608,6 +1608,11 @@ With these rules, specified UTM parameters will be removed from any request save
 >
 > `$removeparam` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers do not do that. For example, `@@||example.com^` will not disable `$removeparam=p` for requests to **example.com**, but `@@||example.com^$urlblock` will.
 
+> **Note**
+>
+> Simultaneous blocking and `$removeparam`, for example `*&p1=param` and `*$removeparam=p1`.
+> The blocking rule will be applied first, because otherwise, after removing the parameter, the request will not be blocked.
+
 > ##### **Compatibility with different versions of AdGuard** {#removeparam-modifier-compatibility}
 >
 > * Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac, and Android and AdGuard Browser Extension for Chrome, Firefox, and Edge.
@@ -1738,7 +1743,7 @@ As a response to blocked request AdGuard returns a short video placeholder.
 ### Rule priorities {#rule-priorities}
 
 Each rule has its own priority, which is necessary when several rules match the request and the filtering system needs to select one of them.
-Priority is measured by a natural integer. The higher the priority of a rule, the higher its priority value.
+Priority is measured by a positive integer. The higher the priority of a rule, the higher its priority value.
 In the case of a conflict between two rules with the same priority value, there is undefined behavior, depending on the implementation.
 
 #### Priority counting
@@ -1749,7 +1754,7 @@ The base priority weight of any rule is 1. If the priority is a floating point n
 
 > **Compatibility with different versions of AdGuard**
 >
-> Numerical priorities for rules are available in tsurlfilter since version `v2.1.0`.
+> Numerical priorities for rules are available in `tsurlfilter` since version `v2.1.0`.
 
 #### 1. Basic modifiers, the presence of each adds 1 to the priority: {#priority-category-1}
 
@@ -1798,15 +1803,15 @@ or special exceptions that implicitly add `$document,subdocument`:
 * [`$genericblock`](#genericblock-modifier),
 * [`$generichide`](#generichide-modifier);
 
-
-Specified content-types add `50 + 50 / number_of_content_types`, for example:
+The presence of any content-type modifiers adds `(50 + 50/N)`, where `N` is the number of modifiers present, for example:
 `||example.com^$image,script` will add `50 + 50 / 2 = 50 + 25 = 75` to the total weight of the rule. The `$popup` also belongs to this category, because it implicitly adds the modifier `$document`. Similarly, specific exceptions add `$document,subdocument`.
 
 #### 3. $domain or $app with allowed domains or applications: {#priority-category-3}
 
-Specified domains through `$domain` and specified applications through `$app` add `100 + 100 / number_domains (or number_applications)`, for example:
-`||example.com^$domain=example.com|example.org|example.net` will add `100 + 100 / 3 = 134.3 = 134` or
-`||example.com^$app=org.example.app1|org.example.app2` will add `100 + 100 / 2 = 151`.
+Specified domains through `$domain` or specified applications through `$app` add `100 + 100 / N`, where `N` is the number of modifier values for example:
+`||example.com^$domain=example.com|example.org|example.net` will add `100 + 100 / 3 = 134.3 = 135` or
+`||example.com^$app=org.example.app1|org.example.app2` will add `100 + 100 / 2 = 151` or
+`||example.com^$domain=example.com,app=org.example.app1|org.example.app2` will add `100 + 100/1` ($domain part) and `100 + 100/2` ($app part) - will add `350` in total.
 
 #### 4. Specific exceptions: {#priority-category-4}
 
@@ -1823,8 +1828,8 @@ Specified domains through `$domain` and specified applications through `$app` ad
 
 Each of which adds `10^3` to the priority.
 
-As well as
-- exception with a only one modifier (**without any other modifiers**) - [`$document`](#document-modifier) (because it's an alias for `$elemhide,content,jsinject,urlblock,extension`)
+As well as exception with [`$document modifier`](#document-modifier): because it's an alias for `$elemhide,content,jsinject,urlblock,extension`.
+It will add `10^3 * 5` for each modifier from [the top list](#priority-category-4).
 
 In addition, each of the exceptions implicitly adds the two allowed content-type modifiers `$document,subdocument`.
 
@@ -1832,11 +1837,15 @@ In addition, each of the exceptions implicitly adds the two allowed content-type
 
 Modifier `@@` adds `10^4` to rule priority.
 
-#### 6. $redirect rules {#priority-category-6}
+#### 6. $redirect and $replace rules {#priority-category-6}
 
-The modifier [`$redirect`](#redirect-modifier) adds `10^5` to rule priority.
-Modifier [`$redirect-rule`](#redirect-rule-modifier) adds `10^5 + 1` to rule priority
-The `$redirect-rule` in the presence of a blocking rule is a higher priority than a normal `$redirect`.
+[//]: # (Please keep them sorted)
+
+* [`$redirect`](#redirect-modifier),
+* [`$redirect-rule`](#redirect-rule-modifier),
+* [`$replace`](#replace-modifier),
+
+Each of which adds `10^5` to rule priority.
 
 #### 7. important rules {#priority-category-7}
 
@@ -1851,8 +1860,7 @@ Rules that do not override blocking, but do additional post- or pre-processing o
 * [`$csp`](#csp-modifier),
 * [`$jsonprune`](#jsonprune-modifier),
 * [`$removeheader`](#removeheader-modifier),
-* [`$removeparam`](#removeparam-modifier),
-* [`$replace`](#replace-modifier);
+* [`$removeparam`](#removeparam-modifier);
 
 Rules that do not need priority:
 * [`$badfilter`](#badfilter-modifier),
