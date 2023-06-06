@@ -518,7 +518,7 @@ The rule corresponds to the main frame document requests, i.e. HTML documents th
 
 By default, AdGuard does not block the requests that are loaded in the browser tab (e.g. "main frame bypass"). The idea is not to prevent pages from loading as the user clearly indicated that they want this page to be loaded. However, if the `$document` modifier is specified explicitly, AdGuard does not use that logic and prevents the page load. Instead, it responds with a "blocking page".
 
-If this modifier is used with an exclusion rule (`@@`) **without any other modifiers**, it completely disables blocking on corresponding pages. It is equivalent to using `$elemhide`, `$content`, `$urlblock`, `$jsinject`, `$extension` modifiers simultaneously.
+If this modifier is used with an exclusion rule (`@@`), it completely disables blocking on corresponding pages. It is equivalent to using `$elemhide`, `$content`, `$urlblock`, `$jsinject`, `$extension` modifiers simultaneously.
 
 **Examples**
 
@@ -1769,7 +1769,7 @@ The base priority weight of any rule is 1. If the priority is a floating point n
  * [`$method`](#method-modifier),
  * [`$third-party`](#third-party-modifier),
  * [`$to`](#to-modifier),
- * banned [content-types](#content-type-modifiers) with `~`.
+ * restricted [content-types](#content-type-modifiers) with `~`.
 
 For forbidden domain, app or content-type, we add 1 for the presence of the modifier itself disregarding the number of forbidden domains or content-types, because the scope of the rule is infinitely large anyway. In other words, by banning several domains and content-types, we only *insignificantly* narrowed the scope of the rule.
 
@@ -1829,21 +1829,20 @@ Specified domains through `$domain` or specified applications through `$app` add
 Each of which adds `10^3` to the priority.
 
 As well as exception with [`$document modifier`](#document-modifier): because it's an alias for `$elemhide,content,jsinject,urlblock,extension`.
-It will add `10^3 * 5` for each modifier from [the top list](#priority-category-4).
+It will add `10^3` for each modifier from [the top list](#priority-category-4), `10^3 * 5` in total.
 
-In addition, each of the exceptions implicitly adds the two allowed content-type modifiers `$document,subdocument`.
+In addition, each of these exceptions implicitly adds the two allowed content-type modifiers `$document,subdocument`.
 
 #### 5. Allowlist rule {#priority-category-5}
 
 Modifier `@@` adds `10^4` to rule priority.
 
-#### 6. $redirect and $replace rules {#priority-category-6}
+#### 6. $redirect rules {#priority-category-6}
 
 [//]: # (Please keep them sorted)
 
 * [`$redirect`](#redirect-modifier),
-* [`$redirect-rule`](#redirect-rule-modifier),
-* [`$replace`](#replace-modifier),
+* [`$redirect-rule`](#redirect-rule-modifier).
 
 Each of which adds `10^5` to rule priority.
 
@@ -1853,18 +1852,11 @@ Modifier [`$important`](#important-modifier) adds `10^6` to rule priority.
 
 #### Rules for which there is no priority count {#priority-category-extra}
 
-[//]: # (Please keep them sorted)
+[Other modifiers](#advanced-capabilities), which do not override a lock but perform additional post- or pre-processing of requests, have no priority.
 
-Rules that do not override blocking, but do additional post- or pre-processing of requests:
-* [`$cookie`](#cookie-modifier),
-* [`$csp`](#csp-modifier),
-* [`$jsonprune`](#jsonprune-modifier),
-* [`$removeheader`](#removeheader-modifier),
-* [`$removeparam`](#removeparam-modifier);
-
-Rules that do not need priority:
-* [`$badfilter`](#badfilter-modifier),
-* [`$stealth`](#stealth-modifier).
+> **Note**
+>
+> The [`$replace`](#replace-modifier) modifier takes precedence over all blocking rules of categories 1-3, as well as rules of exceptions from categories 3-5, **except** [`$content`](#content-modifier), because an exception with the `$content` modifier overrides all `$replace` rules.
 
 #### Explanation for complicated cases:
 
