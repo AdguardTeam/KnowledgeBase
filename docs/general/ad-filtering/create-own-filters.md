@@ -1379,7 +1379,7 @@ Go to [rules priorities](#rule-priorities) for more details.
 
 #### **`$redirect-rule`** {#redirect-rule-modifier}
 
-This is basically an alias to [`$redirect`](#redirect-modifier) since it has the same "redirection" values and the logic is almost similar. The difference is that `$redirect-rule` is applied only in the case when the target request is blocked by a different basic rule and it has more priority than usual `$redirect` rules.
+This is basically an alias to [`$redirect`](#redirect-modifier) since it has the same "redirection" values and the logic is almost similar. The difference is that `$redirect-rule` is applied only in the case when the target request is blocked by a different basic rule.
 
 Go to [rules priorities](#rule-priorities) for more details.
 
@@ -1803,7 +1803,7 @@ or special exceptions that implicitly add `$document,subdocument`:
 * [`$genericblock`](#genericblock-modifier),
 * [`$generichide`](#generichide-modifier);
 
-The presence of any content-type modifiers adds `(50 + 50/N)`, where `N` is the number of modifiers present, for example:
+The presence of any content-type modifiers adds `(50 + 50 / N)`, where `N` is the number of modifiers present, for example:
 `||example.com^$image,script` will add `50 + 50 / 2 = 50 + 25 = 75` to the total weight of the rule. The `$popup` also belongs to this category, because it implicitly adds the modifier `$document`. Similarly, specific exceptions add `$document,subdocument`.
 
 #### 3. $domain or $app with allowed domains or applications: {#priority-category-3}
