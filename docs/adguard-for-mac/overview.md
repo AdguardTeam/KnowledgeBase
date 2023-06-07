@@ -3,6 +3,12 @@ title: Features overview
 sidebar_position: 1
 ---
 
+:::note
+
+This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 AdGuard for Mac, as one of our main staples, merits a full how-to guide. We decided to help new users out and to highlight some finer, but less obvious points that even seasoned AdGuard for Mac fans might have been missing.
 
 AdGuard for Mac is a standalone ad blocker for macOS. While AdGuard for Safari is [limited in ad-blocking capabilities](https://adguard.com/en/blog/youtube-ads-in-safari-explained.html) due to Safari Content Blocking, AdGuard for Mac is full-fledged and can offer more to its users. Let us walk you through the main features.
