@@ -3,6 +3,12 @@ title: Common installer errors
 sidebar_position: 6
 ---
 
+:::note
+
+This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 This article contains some of the most common errors that you can encounter during the AdGuard for Windows installation, and possible ways to solve them.
 
 ### Error 5: Access Denied {#error-5}
