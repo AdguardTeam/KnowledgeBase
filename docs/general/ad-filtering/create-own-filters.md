@@ -672,7 +672,7 @@ $extension[="userscript_name1"[|"userscript_name2"[|"userscript_name3"[...]]]]
 
 Userscript names usually contain spaces or other special characters, which is why you should enclose the name in quotes. Both single (`'`) and double (`"`) ASCII quotes are supported. Multiple userscript names should be separated with a pipe (`|`). However, if a userscript name is a single word without any special characters, it can be used without quotes.
 
-You can also exclude userscript by adding a `~` character before the value. In this case, userscript will not be excluded.
+You can also exclude a userscript by adding a `~` character before it. In this case, the userscript will not be disabled by the modifier.
 
 ```
 $extension=~"userscript name"
