@@ -2780,7 +2780,7 @@ url = pattern
 
 **Примеры**
 
-* `[$url=||example.com/ads/*]##.textad` скрывает `div` с классом `textad` в запросах, например, к `http://example.com/ads/banner.jpg` и `http://subdomain.example.com/ads/otherbanner.html`.
+* `[$url=||example.com/content/*]##div.textad` скрывает `div` с классом `textad` на страницах `https://example.com/content/article.html` и `https://subdomain.example.com/content/article.html`.
 * `[$url=||example.org^]###adblock` скрывает элемент с атрибутом `id` равным `adblock` в запросах к `example.org` и всем его поддоменам.
 * `[$url=/\[a-z\]+\\.example\\.com^/]##.textad` скрывает `div` с классом `textad` в запросах ко всем доменам, соответствующим регулярному выражению `[a-z]+\.example\.com^`.
 
