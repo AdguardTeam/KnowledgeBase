@@ -1764,17 +1764,19 @@ The base priority weight of any rule is 1. If the priority is a floating point n
  * [`$denyallow`](#denyallow-modifier),
  * [`$dnsrewrite`](#dnsrewrite-modifier),
  * [`$domain`](#domain-modifier) with forbidden domains using `~`,
+ * `$first-party`,
  * [`$header`](#header-modifier),
  * [`$match-case`](#match-case-modifier),
- * [`$method`](#method-modifier),
+ * [`$method`](#method-modifier) with forbidden methods using `~`,
  * [`$third-party`](#third-party-modifier),
  * [`$to`](#to-modifier),
  * restricted [content-types](#content-type-modifiers) with `~`.
 
 For forbidden domain, app or content-type, we add 1 for the presence of the modifier itself disregarding the number of forbidden domains or content-types, because the scope of the rule is infinitely large anyway. In other words, by banning several domains and content-types, we only *insignificantly* narrowed the scope of the rule.
 
-#### 2. Defined content-type modifiers, $popup, special exceptions: {#priority-category-2}
+#### 2. Defined content-type modifiers, defined methods, $popup, special exceptions: {#priority-category-2}
 
+All allowed content types:
 [//]: # (Please keep them sorted)
 
 * [`$document`](#document-modifier),
@@ -1803,8 +1805,13 @@ or special exceptions that implicitly add `$document,subdocument`:
 * [`$genericblock`](#genericblock-modifier),
 * [`$generichide`](#generichide-modifier);
 
+Or allowed methods via [`$method`](#method-modifier).
+
 The presence of any content-type modifiers adds `(50 + 50 / N)`, where `N` is the number of modifiers present, for example:
 `||example.com^$image,script` will add `50 + 50 / 2 = 50 + 25 = 75` to the total weight of the rule. The `$popup` also belongs to this category, because it implicitly adds the modifier `$document`. Similarly, specific exceptions add `$document,subdocument`.
+
+If there is a `$method` modifier in the rule with allowed methods it adds `(50 + 50 / N)`, where `N` is the number of methods allowed, for example:
+`||example.com^$method=GET|POST|PUT` will add `50 + 50 / 3 = 50 + 16.6 = 67` to the total weight of the rule.
 
 #### 3. $domain or $app with allowed domains or applications: {#priority-category-3}
 
@@ -1812,6 +1819,8 @@ Specified domains through `$domain` or specified applications through `$app` add
 `||example.com^$domain=example.com|example.org|example.net` will add `100 + 100 / 3 = 134.3 = 135` or
 `||example.com^$app=org.example.app1|org.example.app2` will add `100 + 100 / 2 = 151` or
 `||example.com^$domain=example.com,app=org.example.app1|org.example.app2` will add `100 + 100/1` ($domain part) and `100 + 100/2` ($app part) - will add `350` in total.
+
+`$domain` with regexps or tld values adds only 1 for the sake of simplicity.
 
 #### 4. Specific exceptions: {#priority-category-4}
 
