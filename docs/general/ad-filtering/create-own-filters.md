@@ -418,7 +418,7 @@ This modifier limits the rule scope to requests that use the specified set of HT
 
 > **Compatibility with different versions of AdGuard**
 >
-> Rules with the `$method` are supported by AdGuard for Windows, Mac, Android, **running CoreLibs version v1.12 or later**, and AdGuard Browser extension for Chrome, Firefox, Edge. 
+> Rules with the `$method` are supported by AdGuard for Windows, Mac, Android, **running CoreLibs v1.12 or later**, and AdGuard Browser extension for Chrome, Firefox, Edge. 
 
 #### **`$popup`** {#popup-modifier}
 
