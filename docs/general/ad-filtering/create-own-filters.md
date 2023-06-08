@@ -1925,7 +1925,7 @@ Rule weight: base weight + allowlist rule, [category 5](#priority-category-5) + 
 ##### Example 7.
 
 `@@||example.org^$document` - without additional modifiers is an alias for
-`@@|||example.com^$elemhide,content,jsinject,urlblock,extension`
+`@@||example.com^$elemhide,content,jsinject,urlblock,extension`
 
 Rule weight: base weight + specific exceptions, [category 4](#priority-category-4) + two allowed content types (document and subdocument), [category 2](#priority-category-2):
 `1 + 1000 * 4 + (50 + 50 / 2) = 4076`.
