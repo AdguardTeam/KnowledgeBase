@@ -622,13 +622,12 @@ The rule applies only to WebRTC connections.
 * [`$content`](#content-modifier)
 * [`$elemhide`](#elemhide-modifier)
 * [`$extension`](#extension-modifier)
+* [`$genericblock`](#genericblock-modifier)
+* [`$generichide`](#generichide-modifier)
 * [`$jsinject`](#jsinject-modifier)
 * [`$specifichide`](#specifichide-modifier)
 * [`$stealth`](#stealth-modifier)
 * [`$urlblock`](#urlblock-modifier)
-* [Generic rules](#exception-modifiers-generic-rules)
-  * [`$genericblock`](#genericblock-modifier)
-  * [`$generichide`](#generichide-modifier)
 
 Exception rules disable the other basic rules for the addresses to which they correspond. They begin with a `@@` mark. All the basic modifiers listed above can be applied to them and they also have a few special modifiers.
 
@@ -1799,11 +1798,11 @@ or special exceptions that implicitly add `$document,subdocument`:
 * [`$content`](#content-modifier),
 * [`$elemhide`](#elemhide-modifier),
 * [`$extension`](#extension-modifier),
+* [`$genericblock`](#genericblock-modifier),
+* [`$generichide`](#generichide-modifier),
 * [`$jsinject`](#jsinject-modifier),
 * [`$specifichide`](#specifichide-modifier),
-* [`$urlblock`](#urlblock-modifier),
-* [`$genericblock`](#genericblock-modifier),
-* [`$generichide`](#generichide-modifier);
+* [`$urlblock`](#urlblock-modifier)';
 
 Or allowed methods via [`$method`](#method-modifier).
 
@@ -1829,11 +1828,11 @@ Specified domains through `$domain` or specified applications through `$app` add
 * [`$content`](#content-modifier),
 * [`$elemhide`](#elemhide-modifier),
 * [`$extension`](#extension-modifier),
+* [`$genericblock`](#genericblock-modifier),
+* [`$generichide`](#generichide-modifier),
 * [`$jsinject`](#jsinject-modifier),
 * [`$specifichide`](#specifichide-modifier),
-* [`$urlblock`](#urlblock-modifier),
-* [`$genericblock`](#genericblock-modifier),
-* [`$generichide`](#generichide-modifier);
+* [`$urlblock`](#urlblock-modifier);
 
 Each of which adds `10^3` to the priority.
 
