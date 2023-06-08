@@ -1939,7 +1939,7 @@ Rule weight: base weight + allowed content type, [category 2](#priority-category
 
 ##### Example 9.
 
-`||example.com^$all` (alias to `@@|||example.com^$document,subdocument,image,script,media,etc. + $popup`)
+`||example.com^$all` (alias to `||example.com^$document,subdocument,image,script,media,etc. + $popup`)
 
 Rule weight: base weight + allowed content types, [category 2](#priority-category-2):
 `1 + (50 + 50/12) = 55`.
