@@ -1610,7 +1610,7 @@ With these rules, specified UTM parameters will be removed from any request save
 
 > **Note**
 >
-> Simultaneous blocking and `$removeparam`, for example `*&p1=param` and `*$removeparam=p1`.
+> Simultaneous blocking and `$removeparam` rules, for example `*&p1=param` and `*$removeparam=p1`.
 > The blocking rule will be applied first, because otherwise, after removing the parameter, the request will not be blocked.
 
 > ##### **Compatibility with different versions of AdGuard** {#removeparam-modifier-compatibility}
