@@ -1819,9 +1819,20 @@ Specified domains through `$domain` or specified applications through `$app` add
 `||example.com^$app=org.example.app1|org.example.app2` will add `100 + 100 / 2 = 151` or
 `||example.com^$domain=example.com,app=org.example.app1|org.example.app2` will add `100 + 100/1` ($domain part) and `100 + 100/2` ($app part) - will add `350` in total.
 
-`$domain` with regexps or tld values adds only 1 for the sake of simplicity.
+Modifier values that are regexps or tld will be interpreted as normal entries of the form `example.com` and counted one by one, for example:
+`||example.com^$domain=example.*` will add `100 + 100 / 1 = 200` or
+`||example.com^$domain=example.*|adguard.*` will add `100 + 100 / 2 = 150`.
 
-#### 4. Specific exceptions: {#priority-category-4}
+#### 4. $redirect rules {#priority-category-6}
+
+[//]: # (Please keep them sorted)
+
+* [`$redirect`](#redirect-modifier),
+* [`$redirect-rule`](#redirect-rule-modifier).
+
+Each of which adds `10^3` to rule priority.
+
+#### 5. Specific exceptions: {#priority-category-4}
 
 [//]: # (Please keep them sorted)
 
@@ -1834,25 +1845,16 @@ Specified domains through `$domain` or specified applications through `$app` add
 * [`$specifichide`](#specifichide-modifier),
 * [`$urlblock`](#urlblock-modifier);
 
-Each of which adds `10^3` to the priority.
+Each of which adds `10^4` to the priority.
 
 As well as exception with [`$document modifier`](#document-modifier): because it's an alias for `$elemhide,content,jsinject,urlblock,extension`.
-It will add `10^3` for each modifier from [the top list](#priority-category-4), `10^3 * 5` in total.
+It will add `10^4` for each modifier from [the top list](#priority-category-4), `10^4 * 5` in total.
 
 In addition, each of these exceptions implicitly adds the two allowed content-type modifiers `$document,subdocument`.
 
-#### 5. Allowlist rule {#priority-category-5}
+#### 6. Allowlist rule {#priority-category-5}
 
-Modifier `@@` adds `10^4` to rule priority.
-
-#### 6. $redirect rules {#priority-category-6}
-
-[//]: # (Please keep them sorted)
-
-* [`$redirect`](#redirect-modifier),
-* [`$redirect-rule`](#redirect-rule-modifier).
-
-Each of which adds `10^5` to rule priority.
+Modifier `@@` adds `10^5` to rule priority.
 
 #### 7. important rules {#priority-category-7}
 
@@ -1860,7 +1862,7 @@ Modifier [`$important`](#important-modifier) adds `10^6` to rule priority.
 
 #### Rules for which there is no priority count {#priority-category-extra}
 
-[Other modifiers](#advanced-capabilities), which do not override a lock but perform additional post- or pre-processing of requests, have no priority.
+[Other modifiers](#advanced-capabilities), which do not override a blocking but perform additional post- or pre-processing of requests, have no priority.
 
 > **Note**
 >
@@ -1905,7 +1907,7 @@ Weight of the rule: base weight + 0, since $removeparam [is not involved](#prior
 `||example.org^$document,redirect=nooptext`
 
 Rule weight: base weight + allowed content type, [category 3](#priority-category-3) + $redirect from [category 6](#priority-category-6):
-`1 + (100 + 100 / 1) + 100000 = 100201`.
+`1 + (100 + 100 / 1) + 1000 = 1201`.
 
 ##### Example 5.
 
@@ -1927,7 +1929,7 @@ Rule weight: base weight + allowlist rule, [category 5](#priority-category-5) + 
 `@@||example.com^$elemhide,content,jsinject,urlblock,extension`
 
 Rule weight: base weight + specific exceptions, [category 4](#priority-category-4) + two allowed content types (document and subdocument), [category 2](#priority-category-2):
-`1 + 1000 * 4 + (50 + 50 / 2) = 4076`.
+`1 + 10000 * 4 + (50 + 50 / 2) = 40076`.
 
 ##### Example 8.
 
