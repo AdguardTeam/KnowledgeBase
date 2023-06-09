@@ -1362,7 +1362,8 @@ AdGuard uses the same filtering rules syntax as uBlock Origin. Also, it is compa
 
 > The value of the `$redirect` modifier must be the name of the resource that will be used for redirection.
 
-> `$redirect` rules' priority is higher than the regular basic blocking rules' priority and higher than exception rules. This means that if there is a basic blocking rule or allowlist rule with `@@` mark, `$redirect` rule will prevail over it. If basic rule with the `$important` modifier matching the same URL, it will prevail over `$redirect` rule (unless the `$redirect` rule is also marked as `$important`).
+> `$redirect` rules' priority is higher than the regular basic blocking rules' priority. This means that if there is a basic blocking rule `$redirect` rule will prevail over it. Allowlist rules with `@@` mark have a higher priority than `$redirect` rules. If basic rule with the `$important` modifier matching the same URL, it will prevail over `$redirect` rule (unless the `$redirect` rule is also marked as `$important`).
+> In short: `$important` > `@@` > `$redirect` > `basic rules`
 
 Go to [rules priorities](#rule-priorities) for more details.
 
@@ -1758,7 +1759,7 @@ In the case of a conflict between two rules with the same priority value, there 
 
 To calculate priority, modifiers have been divided into several groups. They are arranged in order of priority from lowest to highest. The more a modifier narrows the scope of a rule, the more priority it adds to the total weight of the rule or the more a rule covers requests, the lower its priority. Note that there are modifiers where setting one parameter has a higher priority than setting two or more, for example, for `$domain=example.com|example.org`, because a rule with two domains has a smaller, infinitesimal, effective area, but still larger than a rule with one resolved domain.
 
-The base priority weight of any rule is 1. If the priority is a floating point number, it will be **rounded up** to the smaller integer greater than or equal to the calculated weight.
+The base priority weight of any rule is 1. If the priority is a floating point number, it will be **rounded up** to the smallest integer greater than or equal to the calculated weight.
 
 > **Compatibility with different versions of AdGuard**
 >
