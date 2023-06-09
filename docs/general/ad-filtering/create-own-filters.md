@@ -363,10 +363,6 @@ where:
 
 The modifier `":" h_value` part may be omitted. In that case the modifier matches the header name only.
 
-> **Note**
->
-> When there are two rules: a blocking rule with `$header` - `||example.com^$header=value` and a modifying rule with `$removeheader` - `||example.com^$removeheader=value`, the engine will choose the blocking rule because the modifier `$header` adds 1 to the weight of the rule. For more information, go to [rules priorities](#rule-priorities).
-
 > **Compatibility with different versions of AdGuard**
 >
 > Rules with the `$header` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**.
@@ -1489,10 +1485,6 @@ Use `@@` to negate `$removeheader`:
 >
 > 3. `$removeheader` rules are not compatible with any other modifiers except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and [content type modifiers](#content-type-modifiers), e.g. `$script`, `$stylesheet`, etc. The rules which have any other modifiers are considered invalid and will be discarded.
 
-> **Note**
->
-> When there are two rules: a blocking rule with `$header` - `||example.com^$header=value` and a modifying rule with `$removeheader` - `||example.com^$removeheader=value`, the engine will choose the blocking rule because the modifier `$header` adds 1 to the weight of the rule. For more information, go to [rules priorities](#rule-priorities).
-
 **Examples**
 
 * `||example.org^$removeheader=refresh` removes `Refresh` header from all HTTP responses returned by `example.org` and its subdomains.
@@ -1616,11 +1608,6 @@ With these rules, specified UTM parameters will be removed from any request save
 > **Note**
 >
 > `$removeparam` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers do not do that. For example, `@@||example.com^` will not disable `$removeparam=p` for requests to **example.com**, but `@@||example.com^$urlblock` will.
-
-> **Note**
->
-> Simultaneous blocking and `$removeparam` rules, for example `*&p1=param` and `*$removeparam=p1`.
-> The blocking rule will be applied first, because otherwise, after removing the parameter, the request will not be blocked.
 
 > ##### **Compatibility with different versions of AdGuard** {#removeparam-modifier-compatibility}
 >
@@ -1763,7 +1750,7 @@ The base priority weight of any rule is 1. If the priority is a floating point n
 
 > **Compatibility with different versions of AdGuard**
 >
-> Numerical priorities for rules are available in `tsurlfilter` since version `v2.1.0`.
+> The calculation of numerical priorities for rules is effective in `tsurlfilter` since `v2.1.0`.
 
 #### 1. Basic modifiers, the presence of each adds 1 to the priority: {#priority-category-1}
 
