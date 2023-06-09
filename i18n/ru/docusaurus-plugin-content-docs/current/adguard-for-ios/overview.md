@@ -3,6 +3,12 @@ title: Обзор функций
 sidebar_position: 1
 ---
 
+:::note
+
+This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 Если вы будете искать AdGuard в App Store, то найдёте два приложения — [AdGuard](https://itunes.apple.com/app/id1047223162) и [AdGuard Pro](https://itunes.apple.com/app/id1126386264). Они созданы для блокировки рекламы и трекинга в Safari, в других браузерах и приложениях, а также для управления DNS-фильтрацией. Не дайте разным названиям себя обмануть, оба приложения одинаково блокируют рекламу на айфонах и айпадах. Раньше их функционал отличался из-за меняющихся принципов App Store, но теперь приложения [практически идентичны](https://adguard.com/ru/blog/updating-adguard-pro-for-ios.html). Так что если у вас уже есть AdGuard Pro, не нужно скачивать AdGuard и покупать там лицензию, и наоборот.
 
 ## Функции {#features}

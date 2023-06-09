@@ -3,6 +3,12 @@ title: Как собирать логи
 sidebar_position: 2
 ---
 
+:::note
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 Иногда для того, чтобы разобраться в проблеме и найти решение, нам необходимы так называемые **логи**. В основном эти файлы содержат информацию о программе и её работе.
 
 ### Сбор отладочных логов

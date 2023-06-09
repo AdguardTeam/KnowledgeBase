@@ -3,6 +3,12 @@ title: How to protect AdGuard from being disabled by the system
 sidebar_position: 9
 ---
 
+:::note
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 In some cases, apps won't stay in the background ("alive" or in a sleep mode) due to the Android OS optimization function, or the so-called "battery save mode" — this function can kill background apps. It may be inconvenient to relaunch them each time they are getting closed. To avoid the background app termination, you need to follow the steps we described separately for each manufacturer (version) of Android OS. Note that instructions for different manufacturers are mostly very similar.
 
 ## Asus

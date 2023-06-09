@@ -3,6 +3,12 @@ title: Android용 AdGuard에서 로그 수집 방법
 sidebar_position: 2
 ---
 
+:::note
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 가끔 문제의 원인을 이해하고 문제를 해결하기 위해서는 **로그 파일**이 필요합니다. 이 파일은 프로그램과 프로그램 작동에 대한 정보가 포함되어 있습니다.
 
 ### Collecting debug log

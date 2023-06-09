@@ -3,6 +3,12 @@ title: Как установить
 sidebar_position: 2
 ---
 
+:::note
+
+This article is about the AdGuard Browser extension, which safeguards only your browser. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## Как установить расширение AdGuard для браузеров Google Chrome или Chromium
 
 Откройте страницу расширения в [интернет-магазине Chrome](https://agrd.io/extension_chrome) и нажмите _Добавить в Chrome_.

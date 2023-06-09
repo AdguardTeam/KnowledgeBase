@@ -20,7 +20,7 @@
     "description": "The label for category AdGuard account in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.License": {
-    "message": "License",
+    "message": "Lisans",
     "description": "The label for category License in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.AdGuard for Windows": {

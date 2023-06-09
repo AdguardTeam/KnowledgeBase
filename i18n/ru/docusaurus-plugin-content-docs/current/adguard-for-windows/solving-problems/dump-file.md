@@ -3,6 +3,12 @@ title: Как создать файл дампа
 sidebar_position: 8
 ---
 
+:::note
+
+This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 Для диагностики проблем и ошибок, с которыми пользователи могут столкнуться при использовании AdGuard, службе поддержки может понадобиться файл дампа. Файл дампа помогает разработчикам увидеть процессы, которые выполнялись в приложении за определённый период времени. Ниже вы можете ознакомиться с инструкциями о том, как собрать файл дампа на вашем компьютере.
 
 1. Нажмите **Ctrl + Shift + Esc** и нажмите **Диспетчер задач**

@@ -3,6 +3,12 @@ title: How to setup outbound proxy
 sidebar_position: 8
 ---
 
+:::note
+
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Android için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+
+:::
+
 This article explains how to set up some of the most popular proxies to work with AdGuard.
 
 ### How to use AdGuard with Tor

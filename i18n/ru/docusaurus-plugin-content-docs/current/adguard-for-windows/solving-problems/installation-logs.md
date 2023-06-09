@@ -3,6 +3,12 @@ title: Как собирать логи установки AdGuard
 sidebar_position: 4
 ---
 
+:::note
+
+This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 Если во время установки AdGuard возникнут какие-либо проблемы, служба поддержки может попросить вас собрать и отправить им журналы установки AdGuard. В этом случае вам необходимо:
 
 1. Выберите команду *Выполнить* в меню «Пуск» или нажмите *Win + R* на клавиатуре.

@@ -3,6 +3,12 @@ title: インストール方法
 sidebar_position: 2
 ---
 
+:::note
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## 動作環境
 
 **OSバージョン**: Android 5.0以上
@@ -24,7 +30,7 @@ sidebar_position: 2
 
 ![提供元不明のアプリをインストールする *mobile](https://cdn.adguard.com/public/Adguard/kb/installation/Android/ja/d1.jpg)
 
-* 【Android 5の場合】[**設定**]を開き、**パーソナル**セクションにある[**セキュリティ**]を選択。 [**提供元不明のアプリ**]をオンにし、システムの警告ウィンドウが開きましたら[**OK**]をタップ。
+* 【Android 5の場合】[**設定**]を開き、**パーソナル**セクションにある[**セキュリティ**]を選択。
 
 ![提供元不明のアプリをインストールする *mobile](https://cdn.adguard.com/public/Adguard/kb/installation/Android/ja/d1.jpg)
 

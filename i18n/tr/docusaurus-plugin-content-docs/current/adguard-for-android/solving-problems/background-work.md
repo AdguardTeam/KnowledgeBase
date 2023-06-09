@@ -3,6 +3,12 @@ title: How to protect AdGuard from being disabled by the system
 sidebar_position: 9
 ---
 
+:::note
+
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Android için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+
+:::
+
 In some cases, apps won't stay in the background ("alive" or in a sleep mode) due to the Android OS optimization function, or the so-called "battery save mode" — this function can kill background apps. It may be inconvenient to relaunch them each time they are getting closed. To avoid the background app termination, you need to follow the steps we described separately for each manufacturer (version) of Android OS. Note that instructions for different manufacturers are mostly very similar.
 
 ## Asus
@@ -59,25 +65,25 @@ That’s all! You’ve successfully pinned the AdGuard app.
 
 Go to **Settings** → **Apps** → **Manage apps** → **AdGuard**.
 
-![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
+![Xiaomi *mobil_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
 
 - Otomatik başlatmayı "Açık" olarak ayarlayın
 - Set all possible permissions in Other Permissions to "On"
 - Set Battery saver to **No restrictions**
 
-![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi5en.jpeg)
+![Xiaomi *mobil_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi5en.jpeg)
 
 Now launch the active apps manager by swiping up from the bottom of the screen and look for the AdGuard app.
 
-![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi6.jpeg)
+![Xiaomi *mobil_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi6.jpeg)
 
 Tap and hold it until a special menu pops up. Select a lock icon.
 
-![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi7en.jpeg)
+![Xiaomi *mobil_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi7en.jpeg)
 
 The lock icon should appear above the app window.
 
-![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi8en.jpeg)
+![Xiaomi *mobil_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi8en.jpeg)
 
 ### MIUI 10-11
 
@@ -85,15 +91,15 @@ To let your app run successfully in the background, configure its settings as fo
 
 - Otomatik başlatmayı "Açık" olarak ayarlayın
 
-![Xiaomi *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/xiaomi1en.png)
+![Xiaomi *mobil_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/xiaomi1en.png)
 
 - **Settings** → **Battery & performance** → switch-off **Battery saver** function
 
-![Xiaomi *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/xiaomi2en.png)
+![Xiaomi *mobil_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/xiaomi2en.png)
 
 - Then open **App battery saver** settings → **AdGuard** → **No restrictions**
 
-![Xiaomi *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/xiaomi3en.png)
+![Xiaomi *mobil_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/xiaomi3en.png)
 
 ### All models
 
@@ -121,11 +127,11 @@ To set up AdGuard's background work for Xiaomi devices you should pay attention 
 
 - Tap the **Recent tasks** button and swipe AdGuard down to make options *visible* (as shown on the screenshot):
 
-![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomirecent.png)
+![Xiaomi *mobil_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomirecent.png)
 
 - Tap on the **lock** icon. This will stop Xiaomi from closing AdGuard automatically. It should look like this:
 
-![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomilocked.png)
+![Xiaomi *mobil_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomilocked.png)
 
 - Go to **Battery**
 
@@ -135,7 +141,7 @@ To set up AdGuard's background work for Xiaomi devices you should pay attention 
 
 - Set up the following **Background settings**:
 
-![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomirest.png)
+![Xiaomi *mobil_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomirest.png)
 
 - Go to **Permissions**
 
@@ -143,7 +149,7 @@ To set up AdGuard's background work for Xiaomi devices you should pay attention 
 
 - Make sure that autostart function is enabled for AdGuard:
 
-![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomiautostart.png)
+![Xiaomi *mobil_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomiautostart.png)
 
 ## Samsung
 

@@ -3,6 +3,12 @@ title: Firefoxブラウザへのセキュリティ証明書の手動インスト
 sidebar_position: 11
 ---
 
+:::note
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 Firefoxのバージョンによって、AdGuardがHTTPS フィルタリングを実行するために必要なアプローチが異なります。 セキュリティ証明書をブラウザ自体に直接インストールすることができない場合（主に79.0以降のFirefoxバージョンで発生し、今後のバージョンでMozillaに対応してもらいたい状況です）、下の「対策①」をお試しください。 それも効かなければ、手間かかりますがFIrefox全バージョンに対応するはずの「対策②」をお試しください。
 
 ### 【対策①】

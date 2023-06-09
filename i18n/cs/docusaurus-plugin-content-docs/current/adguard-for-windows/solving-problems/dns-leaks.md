@@ -3,6 +3,12 @@ title: Možné úniky DNS
 sidebar_position: 9
 ---
 
+:::note
+
+Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 AdGuard pro Windows umožňuje uživatelům zadat adresu DNS serveru pro řešení dotazů namísto systémového DNS serveru, který je poskytován ISP, pokud není v nastavení systému potlačen. Použití jiného než výchozího DNS serveru může ochránit vaše přenosy DNS před zachycením ISP. Výběrem šifrovaného a/nebo filtrujícího DNS serveru navíc získáte další vrstvu ochrany před záškodníky a obtěžujícími reklamami.
 
 Mnoho uživatelů AdGuardu pro Windows oceňuje funkci DNS ochrany. Někteří z nich se však setkávají s následujícím problémem: kontrola na webových stránkách, jako je https://ipleak.net/ ukazuje, že požadavky jsou zpracovávány výchozím DNS serverem namísto vybraným. V tomto článku se dozvíte, proč k tomu dochází a jak se tomu vyhnout.

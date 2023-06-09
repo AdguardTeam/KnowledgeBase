@@ -3,6 +3,12 @@ title: Protect Mail Activity and AdGuard
 sidebar_position: 8
 ---
 
+:::note
+
+This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## In a nutshell
 
 Apple's Mail app now uses a proxy to hide a user's IP address when downloading images from emails.

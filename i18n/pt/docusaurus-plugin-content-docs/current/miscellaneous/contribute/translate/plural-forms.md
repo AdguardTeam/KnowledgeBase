@@ -20,8 +20,6 @@ Vamos dar uma olhada nesta imagem. Aqui pode ver os grupos de numerais que deter
 
 ![Polonês](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
-> Encontre outros exemplos [aqui](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals).
-
 Vamos traçar um pequeno paralelo entre o inglês e o polonês para melhor compreensão: 
 
       A versão em inglês:                                                 Os equivalentes poloneses:

@@ -3,6 +3,12 @@ title: How to configure system-wide filtering with AdGuard for iOS
 sidebar_position: 2
 ---
 
+:::note
+
+This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## About system-wide filtering
 
 System-wide filtering means blocking ads and trackers beyond the Safari browser, i.e. in other apps and browsers. This article will tell you how to set it up on your iOS device.

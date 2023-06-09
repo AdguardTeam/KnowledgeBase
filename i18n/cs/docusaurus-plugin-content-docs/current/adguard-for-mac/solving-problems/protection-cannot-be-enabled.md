@@ -2,7 +2,13 @@
 title: Ochranu nelze povolit
 sidebar_position: 2
 ---
- 
+
+:::note
+
+Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 Pokud ochranu AdGuardem nelze z nějakého důvodu povolit, proveďte následující kroky:
 
 1. Klikněte na ikonu AdGuardu v menu → přejděte na Pokročilé → Obnovit nastavení... → Ukončit AdGuard...

@@ -3,6 +3,12 @@ title: 설치 방법
 sidebar_position: 2
 ---
 
+:::note
+
+This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## 시스템 요구 사항
 
 ### iPhone

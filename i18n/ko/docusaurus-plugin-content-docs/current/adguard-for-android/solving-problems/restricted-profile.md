@@ -3,6 +3,12 @@ title: 제한 모드 상태에서 프로필 사용으로 인한 문제
 sidebar_position: 10
 ---
 
+:::note
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 Android 7 이상 운영 체제를 실행하는 휴대폰, 태블릿 또는 TV 사용자는 **제한 모드 프로필** 사용 시 문제를 겪을 수 있습니다. 제한 모드 프로파일을 사용하는 경우 VPN을 사용하는 다른 응용 프로그램과 마찬가지로 **AdGuard**의 VPN 트래픽 필터링 선택에 제한이 발생합니다. 결과적으로 AdGuard가 **로컬 VPN 모드**에서 보호를 실행할 수 없게 됩니다. 또한 **듀얼 앱/듀얼 메신저** 프로필을 사용할 때 이 문제가 발생할 수 있습니다. 해당 문제를 해결하는 방법은 다음과 같습니다.
 
 ## 솔루션

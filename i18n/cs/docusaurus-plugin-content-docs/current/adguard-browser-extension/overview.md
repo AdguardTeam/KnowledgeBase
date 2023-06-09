@@ -3,6 +3,12 @@ title: Přehled funkcí
 sidebar_position: 1
 ---
 
+:::note
+
+Tento článek je o Rozšíření prohlížeče AdGuard, které chrání pouze váš prohlížeč. Chcete-li chránit celé zařízení, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 AdGuard nabízí řadu softwarových produktů, které blokují reklamy a slídiče na různých platformách. Jedním z nejoblíbenějších produktů AdGuardu je bezplatné rozšíření, které funguje v pěti oblíbených prohlížečích: Chrome, Firefox, Edge, Opera a Yandex Browser. Rozšíření prohlížeče obsahují základní funkce pro blokování reklam, ale nelze je srovnávat s plnohodnotnými programy pro stolní počítače, jako jsou např. [AdGuard pro Windows](/adguard-for-windows/overview) a [AdGuard pro macOS](/adguard-for-mac/overview).
 
 ![Rozšíření prohlížeče AdGuard pro Chrome *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)

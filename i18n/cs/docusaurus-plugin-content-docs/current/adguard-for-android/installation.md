@@ -3,6 +3,12 @@ title: Instalace
 sidebar_position: 2
 ---
 
+:::note
+
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## Požadavky na systém
 
 **Verze OS:** Android 5.0 nebo vyšší.

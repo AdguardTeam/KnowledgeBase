@@ -3,6 +3,12 @@ title: iCloud Private Relay and AdGuard
 sidebar_position: 7
 ---
 
+:::note
+
+This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## Problem description in a nutshell
 
 By default, AdGuard uses the "default route" which disables iCloud Private Relay.

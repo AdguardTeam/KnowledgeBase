@@ -3,6 +3,12 @@ title: Známé problémy kompatibility s aplikacemi pro Android
 sidebar_position: 15
 ---
 
+:::note
+
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## Aplikace VPN
 
 Ostatní aplikace VPN nejsou kompatibilní se službou AdGuard spuštěnou v režimu filtrování místní sítě VPN, protože nelze mít současně aktivní dvě sítě VPN. K vyřešení tohoto problému vám doporučujeme:

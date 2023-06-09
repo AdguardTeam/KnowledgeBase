@@ -3,6 +3,12 @@ title: Manuelle Installation des Zertifikats
 sidebar_position: 1
 ---
 
+:::note
+
+This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 AdGuard für Mac muss das Root-Zertifikat im Zertifikatspeicher installieren, um [HTTPS-Datenverkehr filtern zu können](/general/https-filtering/what-is-https-filtering). Diese Aktion wird in den meisten Fällen automatisch ausgeführt, wenn Sie die App zum ersten Mal ausführen, aber Benutzer von Gecko-basierten Browsern (Firefox, Waterfox, usw.), die ein Master-Passwort für ihren Browser eingerichtet haben, müssen möglicherweise zusätzliche Schritte unternehmen (weil diese Browser ihren eigenen Zertifikatsspeicher anstelle des Systemspeichers verwenden). Sie müssen entweder das Master-Passwort eingeben, wenn sie dazu aufgefordert werden (um AdGuard Zugriff auf den Zertifikatsspeicher zu gewähren) oder das Zertifikat manuell installieren.
 
 Um das Zertifikat manuell in einem Firefox-ähnlichen Browser zu installieren, machen Sie Folgendes:

@@ -3,6 +3,12 @@ title: AdGuard 로그 수집하는 방법
 sidebar_position: 3
 ---
 
+:::note
+
+This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 다양한 문제의 분석 및 진단을 위해 지원 서비스는 AdGuard 로그 파일이 필요할 수 있습니다. 이 파일에는 소프트웨어에서 발생한 모든 오류에 대한 기록이 있습니다. AdGuard 로그를 수집하여 지원 팀에 보내는 방법을 살펴보겠습니다.
 
 1. AdGuard 설정을 엽니다. *일반 설정* 섹션으로 이동하여 아래로 스크롤한 후 *로깅 레벨*을 *디버그*로 전환합니다.

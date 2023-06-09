@@ -3,6 +3,12 @@ title: Как настроить вышестоящий прокси-серве�
 sidebar_position: 8
 ---
 
+:::note
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 Эта статья рассказывает, как настроить работу некоторых наиболее популярных прокси параллельно с AdGuard.
 
 ### Как использовать AdGuard вместе с Tor

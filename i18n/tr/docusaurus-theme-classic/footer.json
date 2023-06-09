@@ -8,11 +8,11 @@
     "description": "The title of the footer links column with title=products in the footer"
   },
   "link.title.support": {
-    "message": "Support",
+    "message": "Destek",
     "description": "The title of the footer links column with title=support in the footer"
   },
   "link.title.license": {
-    "message": "License",
+    "message": "Lisans",
     "description": "The title of the footer links column with title=license in the footer"
   },
   "link.item.label.official_website": {

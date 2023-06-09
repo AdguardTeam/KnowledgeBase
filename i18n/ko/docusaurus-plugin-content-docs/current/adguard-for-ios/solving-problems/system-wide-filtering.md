@@ -3,6 +3,12 @@ title: iOS용 AdGuard로 시스템 전체 필터링을 설정하는 방법
 sidebar_position: 2
 ---
 
+:::note
+
+This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## 시스템 전체 필터링 정보
 
 시스템 전체 필터링은 Safari 브라우저 외부, 즉 다른 앱과 브라우저에서 광고 및 추적기를 차단하는 것입니다. iOS 기기에서 전체 시스템 차단을 설정하는 방법을 살펴볼까요?

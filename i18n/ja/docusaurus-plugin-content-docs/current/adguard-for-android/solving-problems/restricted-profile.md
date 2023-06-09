@@ -3,6 +3,12 @@ title: 制限付きプロファイルが原因の問題
 sidebar_position: 10
 ---
 
+:::note
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 **制限付きプロファイル**（アカウント）のあるAndroid 7以降デバイスの一部（特にSamsung Galaxy S10系端末）で起こる問題です。 このようなプロファイルがある場合、**AdGuard**は、VPNを使用する他アプリケーションと同様に、VPNトラフィックの選択的なフィルタリングに対する制限がかかってしまいます。 その結果、AdGuardは**ローカルVPNモード**での保護を起動できなくなります。 また、この状況の理由の1つは、デバイスで**デュアルアプリ/デュアルメッセンジャー**を使用していることです。 以下に、この問題が発生した場合の対策をまとめました。
 
 ## 解決方法

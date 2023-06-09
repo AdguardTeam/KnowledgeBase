@@ -20,8 +20,6 @@ sidebar_position: 4
 
 ![波兰语](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
-> [在此处](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals)查找其他示例。
-
 我们来在英语和波兰语之间做个小比较，以便更好理解： 
 
       英文版：                                                  波兰语等效：

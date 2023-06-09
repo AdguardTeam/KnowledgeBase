@@ -3,6 +3,12 @@ title: Tor Browser'da filtrelemeyi ayarlama
 sidebar_position: 10
 ---
 
+:::note
+
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Mac için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+
+:::
+
 Varsayılan olarak Tor Browser, AdGuard'ın filtrelenen uygulamalar listesine eklenir. Ancak, filtrelemek için AdGuard'ın Tor'un güvenlik ayarlarını değiştirmesi gerekir. Bu, Tor'un AdGuard'ın CA sertifikasına güvenmesini sağlar.
 
 Tor'u filtrelemeye karar verirseniz ve bunu *Tercihler* → *Ağ* → *Uygulamalar* bölümünde işaretlerseniz, AdGuard size bu uyarı kutusunu gösterir:

@@ -3,6 +3,12 @@ title: Logcat 로그 수집 방법
 sidebar_position: 4
 ---
 
+:::note
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## 일반 지침
 
 충돌 문제 해결 시 일반 로그 수집으로는 충분하지 않기 때문에 시스템 로그 수집이 필요합니다. 로그 수집 방법은 다음과 같습니다.

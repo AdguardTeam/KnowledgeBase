@@ -3,6 +3,12 @@ title: HAR 파일 수집 방법
 sidebar_position: 5
 ---
 
+:::note
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## HAR 파일이란 무엇인가요?
 HAR(HTTP ARchive) 형식은 웹 브라우저와 사이트 간의 상호 작용을 로깅하기 위한 JSON 형식의 아카이브 파일로, 브라우저가 불러오는 웹 페이지에 대한 자세한 정보를 내보내는 데 이용되는 HTTP 트랜잭션에 대한 보관 데이터를 정의합니다. HAR 파일 형식에 대한 자세한 내용은 [softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/)에서 확인하실 수 있습니다.
 

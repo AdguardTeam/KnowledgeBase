@@ -3,6 +3,12 @@ title: How to automate AdGuard for Android
 sidebar_position: 3
 ---
 
+:::note
+
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Android için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+
+:::
+
 Many people choose Android because they like customizing settings and want to control their device completely. And it's totally normal if some of AdGuard users are not satisfied with its default behavior. Let's say, you want protection to stop when a certain app is launched, and then restart it again when the app is closed. This is a job for the Tasker app.
 
 ## AdGuard interface

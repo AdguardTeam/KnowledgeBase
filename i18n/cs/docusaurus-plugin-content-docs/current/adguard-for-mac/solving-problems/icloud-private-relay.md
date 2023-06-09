@@ -3,6 +3,12 @@ title: iCloud Private Relay a AdGuard
 sidebar_position: 7
 ---
 
+:::note
+
+Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## Stručný popis problému
 
 Ve výchozím nastavení používá AdGuard "výchozí směrování", která vypíná iCloud Private Relay.

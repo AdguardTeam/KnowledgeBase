@@ -3,6 +3,12 @@ title: Ruční instalace bezpečnostního certifikátu do prohlížeče Firefox
 sidebar_position: 11
 ---
 
+:::note
+
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 Aby AdGuard úspěšně filtroval přenosy HTTPS ve Firefoxu, musí prohlížeč důvěřovat certifikátu AdGuard. Toho lze dosáhnout různě pro různé verze Firefoxu.
 
 ### Metoda 1

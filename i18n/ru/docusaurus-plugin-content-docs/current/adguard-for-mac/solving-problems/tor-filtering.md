@@ -3,6 +3,12 @@ title: Настройка фильтрации в браузере Tor
 sidebar_position: 10
 ---
 
+:::note
+
+This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 По умолчанию Tor есть в списке фильтруемых приложений AdGuard, но для его фильтрации AdGuard необходимо изменить настройки безопасности Tor. Это нужно, чтобы Tor доверял сертификату центра сертификации AdGuard.
 
 Если вы хотите фильтровать Tor, выберите его в *Настройках* → *Сеть* → *Приложения*, и AdGuard покажет вам это диалоговое окно:

@@ -3,6 +3,12 @@ title: Firefox 브라우저의 인증서 신뢰 문제
 sidebar_position: 11
 ---
 
+:::note
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 AdGuard가 Firefox에서 HTTPS 트래픽을 성공적으로 필터링하기 위해서는 브라우저가 AdGuard의 인증서를 신뢰해야 합니다. Firefox 버전에 따라 브라우저가 인증서를 신뢰하도록 하는 방법은 다릅니다.
 
 ### Method 1

@@ -3,6 +3,12 @@ title: Filtry AdGuardu
 sidebar_position: 2
 ---
 
+:::note
+
+Tento článek je věnován filtrům, které vyvíjíme a které jsou předinstalovány v AdGuardu. Chcete-li je zkontrolovat, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 Tento článek je o filtrech, které vytváříme pro použití v AdGuardu a jiném softwaru pro blokování reklam (např. uBlock Origin). Filtry jsou sady pravidel v textovém formátu, které aplikace a programy AdGuard používají k filtrování reklamy a obsahu ohrožujícího soukromí, jako jsou bannery, vyskakovací okna nebo slídiče. Filtry obsahují seznamy pravidel podle jejich účelu. Jazykově specifické filtry obsahují pravidla pro příslušné jazykové segmenty internetu (např. německý filtr). Filtry založené na úkolech sdružují pravidla, která plní konkrétní úkol, např. filtr sociálních médií nebo filtr ochrany sledování. Povolení nebo zakázání filtru usnadňuje práci s celým seznamem pravidel najednou.
 
 ## Filtry AdGuardu
@@ -25,7 +31,7 @@ Tento článek je o filtrech, které vytváříme pro použití v AdGuardu a jin
 * **Holandský filtr** odstraňuje reklamy z webových stránek s obsahem v holandštině. Založen na filtru [EasyList Dutch](https://easylist.to/) a následně námi upraven podle stížností uživatelů. [Zobrazit pravidla](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_8_Dutch/filter.txt)
 * **Španělský/Portugalský filtr** odstraňuje reklamy z webových stránek s obsahem ve španělštině a portugalštině. Založen na filtru [Fanboy’s Spanish/Portuguese](https://www.fanboy.co.nz/fanboy-espanol.txt) a následně námi upraven podle stížností uživatelů. [Zobrazit pravidla](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_9_Spanish/filter.txt)
 * **Turecký filtr** odstraňuje reklamy z webových stránek s obsahem v turečtině. Vytvořen námi na základě stížností uživatelů. [Zobrazit pravidla](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_13_Turkish/filter.txt)
-* **Čínský filtr** odstraňuje reklamy z webových stránek s obsahem v čínštině. Založen na filtru [EasyList China](http://abpchina.org/forum/forum.php) a následně námi upraven podle stížností uživatelů. [Zobrazit pravidla](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_224_Chinese/filter.txt)
+* **Čínský filtr** odstraňuje reklamy z webových stránek s obsahem v čínštině. Založen na filtru [EasyList China](https://github.com/easylist/easylistchina) a následně námi upraven podle stížností uživatelů. [Zobrazit pravidla](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_224_Chinese/filter.txt)
 * **Experimentální filtr** slouží k testování některých nových pravidel filtrování, která mohou potenciálně způsobovat konflikty a narušovat práci webových stránek. Pokud tato pravidla fungují bez problémů, přidají se do hlavních filtrů. [Zobrazit pravidla](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_5_Experimental/filter.txt)
 * **Filtr mobilních reklam** blokuje reklamy v mobilních zařízeních. Obsahuje všechny známé sítě mobilní reklamy. [Zobrazit pravidla](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_11_Mobile/filter.txt)
 * **DNS filtr** — (Základní filtrAdGuard, Filtr sociálních médií, Filtr ochrany sledování, Filtr mobilních reklam, EasyList a EasyPrivacy), který je zjednodušený pro lepší kompatibilitu s blokováním reklamy na úrovni DNS. Tento filtr používá servery [AdGuard DNS](https://adguard-dns.io/kb) k blokování reklam a sledování. [Zobrazit pravidla](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt)
