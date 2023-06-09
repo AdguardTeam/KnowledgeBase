@@ -1875,7 +1875,7 @@ Modifier [`$important`](#important-modifier) adds `10^6` to rule priority.
 
 > **Note**
 >
-> The [`$replace`](#replace-modifier) modifier takes precedence over all blocking rules of categories 1-3, as well as rules of exceptions from categories 3-5, **except** [`$content`](#content-modifier), because an exception with the `$content` modifier overrides all `$replace` rules.
+> The [`$replace`](#replace-modifier) modifier takes precedence over all blocking rules of categories 1-3, as well as exception rules from categories 3-5, **except** [`$content`](#content-modifier), because an exception with the `$content` modifier overrides all `$replace` rules.
 
 #### Explanation for complicated cases:
 
