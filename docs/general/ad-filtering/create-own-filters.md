@@ -1753,7 +1753,7 @@ As a response to blocked request AdGuard returns a short video placeholder.
 
 Each rule has its own priority, which is necessary when several rules match the request and the filtering system needs to select one of them.
 Priority is measured by a positive integer. The higher the priority of a rule, the higher its priority value.
-In the case of a conflict between two rules with the same priority value, there is undefined behavior, depending on the implementation.
+In the case of a conflict between two rules with the same priority value, it is unspecified which one of them will be chosen.
 
 #### Priority counting
 
