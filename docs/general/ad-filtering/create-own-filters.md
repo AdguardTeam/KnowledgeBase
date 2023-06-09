@@ -363,6 +363,10 @@ where:
 
 The modifier `":" h_value` part may be omitted. In that case the modifier matches the header name only.
 
+> **Note**
+>
+> When there are two rules: a blocking rule with `$header` - `||example.com^$header=value` and a modifying rule with `$removeheader` - `||example.com^$removeheader=value`, the engine will choose the blocking rule because the modifier `$header` adds 1 to the weight of the rule. For more information, go to [rules priorities](#rule-priorities).
+
 > **Compatibility with different versions of AdGuard**
 >
 > Rules with the `$header` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**.
@@ -1375,6 +1379,7 @@ Go to [rules priorities](#rule-priorities) for more details.
 > **Compatibility with different versions of AdGuard**
 >
 > Rules with `$redirect` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
+> `$redirect` in uBlock Origin supports specifying priority, e.g. `$redirect=noopjs:42`. AdGuard does not support it and instead just discards the priority postfix.
 
 #### **`$redirect-rule`** {#redirect-rule-modifier}
 
@@ -1482,6 +1487,10 @@ Use `@@` to negate `$removeheader`:
 >   * `upgrade`
 >
 > 3. `$removeheader` rules are not compatible with any other modifiers except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and [content type modifiers](#content-type-modifiers), e.g. `$script`, `$stylesheet`, etc. The rules which have any other modifiers are considered invalid and will be discarded.
+
+> **Note**
+>
+> When there are two rules: a blocking rule with `$header` - `||example.com^$header=value` and a modifying rule with `$removeheader` - `||example.com^$removeheader=value`, the engine will choose the blocking rule because the modifier `$header` adds 1 to the weight of the rule. For more information, go to [rules priorities](#rule-priorities).
 
 **Examples**
 
