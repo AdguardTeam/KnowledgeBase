@@ -3,6 +3,12 @@ title: How to setup outbound proxy
 sidebar_position: 8
 ---
 
+:::note
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 인기 프록시와 AdGuard를 함께 작동하도록 하기 위해 설정해야하는 방법을 확인하세요.
 
 ### Tor와 함께 AdGuard를 사용하는 방법

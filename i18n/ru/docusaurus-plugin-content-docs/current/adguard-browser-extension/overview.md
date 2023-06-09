@@ -3,6 +3,12 @@ title: Обзор функций
 sidebar_position: 1
 ---
 
+:::note
+
+This article is about the AdGuard Browser extension, which safeguards only your browser. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 У AdGuard есть ряд продуктов для блокировки рекламы и трекеров на различных платформах. Один из самых популярных продуктов AdGuard — это бесплатное расширение, которое работает в пяти популярных браузерах: Chrome, Firefox, Edge, Opera и Яндекс Браузере. Браузерные расширения включают базовые функции по блокировке рекламы, но уступают полноценным приложениям, таким как [AdGuard для Windows](/adguard-for-windows/overview) или [AdGuard для Mac](/adguard-for-mac/overview).
 
 ![Браузерное расширение AdGuard для Chrome *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)

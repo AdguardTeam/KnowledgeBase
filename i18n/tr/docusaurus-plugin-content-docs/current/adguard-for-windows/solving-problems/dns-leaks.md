@@ -3,6 +3,12 @@ title: Olası DNS sızıntıları
 sidebar_position: 9
 ---
 
+:::note
+
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Windows için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+
+:::
+
 AdGuard for Windows allows users to specify a DNS server address to resolve queries instead of system DNS server, which is provided by your ISP if not overridden in the system settings. Using a non-default DNS server can safeguard your DNS traffic from the ISP’s interception. Moreover, by choosing an encrypted and/or filtering DNS server, you get another layer of protection against bad actors and annoying ads.
 
 Many AdGuard for Windows users appreciate the DNS protection feature. But some of them encounter the following issue: a check on a website like https://ipleak.net/ shows that requests are handled by default DNS server instead of the selected one. In this article we will tell you why this happens and how to avoid it.
@@ -13,7 +19,7 @@ The DNS server addresses could be written as IPs or as domain names. In the case
 
 **To eliminate this leak:**
 
-* go to the *Advanced settings*
+* *Gelişmiş ayarlar* öğesine gidin
 * scroll down to the *List of custom bootstrap addresses* section
 * enter the custom bootstrap address in IP address format (you may use [the list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/))
 * *kaydet* öğesine tıklayın
@@ -24,19 +30,19 @@ It could happen that AdGuard cannot reach the specified server because of a weak
 
 **To eliminate this leak:**
 
-* go to the *Advanced settings*
+* *Gelişmiş ayarlar* öğesine gidin
 * scroll down to the *Fallback servers* section
 * check the *Use custom servers* option
 * then find the *List of custom fallback servers* section and enter custom fallback servers one per line
 
-or
+veya
 
-* go to the *Advanced settings*
+* *Gelişmiş ayarlar* öğesine gidin
 * scroll down to the *Fallback servers* section
 * check the *Don’t use fallback servers* option
 
-or
+veya
 
-* go to the *Advanced settings*
+* *Gelişmiş ayarlar* öğesine gidin
 * scroll down to the *DNS server timeout period* section
 * enter an arbitrary large number

@@ -3,6 +3,12 @@ title: How to install
 sidebar_position: 2
 ---
 
+:::note
+
+Bu makale, yalnızca tarayıcınızı koruyan AdGuard Tarayıcı uzantısı hakkındadır. Tüm cihazınızı korumak için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## How to install AdGuard Browser extension for Google Chrome or Chromium browsers
 
 Open the extension's page in [Chrome Web Store](https://agrd.io/extension_chrome) and click _Add to Chrome_.
@@ -66,4 +72,4 @@ In the opened dialog window, click *Add extension* to install AdGuard Browser ex
 
 ## How to install AdGuard Browser extension for Safari
 
-AdGuard for Safari is not a browser extension in a common sense. You can read more about it in a [dedicated artile](/adguard-for-safari/overview). Or you can [download the installation file](https://agrd.io/safari_release) directly from this page.
+AdGuard for Safari is not a browser extension in a common sense. Bu konuyla ilgili daha fazla bilgiye [bu makale](/adguard-for-safari/overview)'den ulaşabilirsiniz. Or you can [download the installation file](https://agrd.io/safari_release) directly from this page.

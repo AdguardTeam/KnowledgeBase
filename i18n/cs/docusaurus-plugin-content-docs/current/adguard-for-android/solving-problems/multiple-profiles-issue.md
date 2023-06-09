@@ -3,6 +3,12 @@ title: Problémy způsobené více uživatelskými profily
 sidebar_position: 14
 ---
 
+:::note
+
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 Pokud je v systému Android 9 a novějším nainstalována aplikace AdGuard pro více než jeden uživatelský profil v zařízení, mohou se při odinstalování aplikace vyskytnout problémy. Po odinstalování aplikace AdGuard z jednoho uživatelského profilu se aplikace stále zobrazí v seznamu aplikací, ale nebude možné ji odinstalovat nebo znovu nainstalovat. K tomu dochází, protože AdGuard je v zařízení nainstalován pro jiný uživatelský profil.
 
 Pokud se po neúspěšném pokusu o odstranění pokusíte aplikaci AdGuard znovu nainstalovat, zobrazí se chybová zpráva "Aplikaci nelze do zařízení nainstalovat".

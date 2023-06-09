@@ -3,6 +3,12 @@ title: Обзор функций
 sidebar_position: 1
 ---
 
+:::note
+
+This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 AdGuard для Windows — это простой в использовании инструмент, блокирующий раздражающие баннеры, всплывающие окна, видеорекламу и трекеры. Но это ещё не всё: он помогает экономить трафик, быстрее загружать веб-страницы, а также защищает компьютер от нежелательных и потенциально вредоносных сайтов. Также AdGuard защищает вас от фишинговых сайтов, а ваших детей — от неприемлемого контента.
 
 ## Главный экран

@@ -20,8 +20,6 @@ Diamo un'occhiata a quest'immagine. Qui, puoi vedere il gruppo di numeri che det
 
 ![Polacco](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
-> Trova altri esempi [qui](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals).
-
 Facciamo un piccolo parallelo tra l'inglese e il polacco, per una migliore comprensione: 
 
       La versione inglese:                                                 Gli equivalenti in polacco:

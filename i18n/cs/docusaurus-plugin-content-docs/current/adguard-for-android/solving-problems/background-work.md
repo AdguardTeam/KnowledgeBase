@@ -3,6 +3,12 @@ title: Jak chránit AdGuard před ukončením systémem
 sidebar_position: 9
 ---
 
+:::note
+
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 V některých případech aplikace nezůstanou na pozadí ("naživu" nebo v režimu spánku) kvůli optimalizační funkci operačního systému Android nebo takzvanému "režimu úspory baterie" — tato funkce může aplikace na pozadí ukončit. Může být nepohodlné je znovu spouštět pokaždé, když se zavřou. Chcete-li se vyhnout ukončení aplikace na pozadí, musíte postupovat podle kroků, které jsme popsali zvlášť pro každého výrobce (verzi) operačního systému Android. Všimněte si, že pokyny různých výrobců jsou většinou velmi podobné.
 
 ## Asus

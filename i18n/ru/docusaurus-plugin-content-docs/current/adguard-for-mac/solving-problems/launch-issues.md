@@ -3,6 +3,12 @@ title: Проблемы с запуском в macOS
 sidebar_position: 6
 ---
 
+:::note
+
+This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 Иногда macOS может нарушить работу модуля AdGuard «Сеть», тем самым делая невозможным использование приложения. В таком случае выполните одну из инструкций ниже, которая подходит для вашей версии ОС.
 
 ## Проблемы с запуском на операционных системах macOS 11 и выше

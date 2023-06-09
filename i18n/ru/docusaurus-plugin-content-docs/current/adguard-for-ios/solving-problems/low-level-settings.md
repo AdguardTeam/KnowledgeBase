@@ -3,6 +3,12 @@ title: Низкоуровневые настройки
 sidebar_position: 5
 ---
 
+:::note
+
+This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## Как найти Низкоуровневые настройки
 
 > Изменение *Низкоуровневых настроек* может вызвать проблемы с производительностью AdGuard, нарушить подключение к интернету или поставить под угрозу вашу безопасность и конфиденциальность. Вам следует открывать этот раздел только в том случае, если вы уверены в том, что делаете, или наша служба поддержки попросила вас об этом.

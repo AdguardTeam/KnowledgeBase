@@ -3,6 +3,12 @@ title: 'Install/Uninstall'
 sidebar_position: 2
 ---
 
+:::note
+
+This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## System  requirements
 
 **Operating system version:** macOS 10.13 (64 bit) or higher

@@ -3,6 +3,12 @@ title: Přehled funkcí
 sidebar_position: 1
 ---
 
+:::note
+
+Tento článek popisuje AdGuard pro iOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 Pokud v App Store vyhledáte AdGuard, najdete dvě aplikace — [AdGuard](https://itunes.apple.com/app/id1047223162) a [AdGuard Pro](https://itunes.apple.com/app/id1126386264). Tyto aplikace jsou určeny k blokování reklam a slídičů v Safari, jiných prohlížečích a aplikacích a ke správě ochrany DNS. Nenechte se zmást jejich názvy, obě aplikace blokují reklamy v chytrých telefonech a tabletech společnosti Apple. Dříve se lišily funkcemi kvůli měnícím se pokynům pro hodnocení v App Store, ale nyní jsou tyto dvě aplikace [téměř stejné](https://adguard.com/en/blog/updating-adguard-pro-for-ios.html). Pokud jste si tedy zakoupili AdGuard Pro, není nutné stahovat AdGuard a kupovat licenci a naopak.
 
 ## Funkce {#features}

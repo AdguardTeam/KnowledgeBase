@@ -3,6 +3,12 @@ title: How to create a dump file
 sidebar_position: 8
 ---
 
+:::note
+
+Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 To diagnose the reasons for potential problems that users might encounter while using AdGuard, the support team might need the process dump file. The dump file helps developers to see the processes that were executed in the application over a given period of time. Below you can check on the instructions of how to collect the dump file on your PC.
 
 1. Press **Ctrl + Shift + Esc** and click **Task Manager**

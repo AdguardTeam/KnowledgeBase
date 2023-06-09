@@ -3,6 +3,12 @@ title: Přesunutí certifikátu CA do systémového úložiště na zařízeníc
 sidebar_position: 13
 ---
 
+:::note
+
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 AdGuard pro Android nabízí funkci nazvanou [HTTPS filtrování](../../overview#https-filtering), která umožňuje [filtrovat šifrovaný provoz HTTPS](/general/https-filtering/what-is-https-filtering) v zařízení se systémem Android. Tato funkce vyžaduje přidání certifikátu CA AdGuardu do seznamu důvěryhodných certifikátů.
 
 V zařízeních bez přístupu root lze certifikáty CA nainstalovat do **Uživatelského úložiště**. Pouze omezená podmnožina aplikací (většinou prohlížeče) důvěřuje certifikátům CA nainstalovaným do uživatelského úložiště, což znamená, že filtrování HTTPS bude fungovat pouze pro tyto aplikace.

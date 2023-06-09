@@ -3,6 +3,12 @@ title: Moving CA certificate to System store on rooted devices
 sidebar_position: 13
 ---
 
+:::note
+
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Android için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+
+:::
+
 AdGuard for Android provides a feature called [HTTPS filtering](../../overview#https-filtering) that makes it possible to [filter encrypted HTTPS traffic](/general/https-filtering/what-is-https-filtering) on your Android device. This feature requires adding the AdGuard's CA certificate to the list of trusted certificates.
 
 On non-rooted devices CA certificates can be installed to the **User store**. Only a limited subset of apps (mostly browsers) trust CA certificates installed to the User store, meaning HTTPS filtering will work only for such apps.

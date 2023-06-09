@@ -3,6 +3,12 @@ title: Kompatibilitätsprobleme mit verschiedenen macOS-Versionen
 sidebar_position: 4
 ---
 
+:::note
+
+This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## Aktuell bestehende Probleme
 
 Jedes Jahr veröffentlicht Apple eine neue Version von macOS, die innovative Lösungen einführt und neue nützliche Funktionen hinzufügt. Einige von ihnen, wie Netzwerk-Erweiterungs API (Big Sur) oder iCloud Private Relay (Monterey), verursachen jedoch einige Probleme für viele Anwendungen, wobei AdGuard keine Ausnahme bildet. In diesem Artikel betrachten wir die bekannten Probleme, die für jede macOS-Version spezifisch sind, und auch die möglichen Lösungen.

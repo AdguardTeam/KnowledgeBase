@@ -3,6 +3,12 @@ title: Ошибки, связанные с сертификатом
 sidebar_position: 2
 ---
 
+:::note
+
+This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 Чтобы фильтровать HTTPS-трафик и эффективно блокировать рекламу и трекеры, AdGuard генерирует специальный (и уникальный) корневой сертификат и устанавливает его в системное хранилище. Подробнее о том, почему требуется сертификат, вы можете узнать в [этой статье](/general/https-filtering/what-is-https-filtering).
 
 Обычно браузеры доверяют сертификату AdGuard после его добавления в системное хранилище сертификатов в процессе установки. Но в некоторых случаях этого недостаточно, и вы можете столкнуться с предупреждениями или ошибками. Чаще всего это происходит в браузерах на базе Firefox, таких как Mozilla Firefox, PaleMoon, Waterfox и т. д., или в Яндекс.Браузере.

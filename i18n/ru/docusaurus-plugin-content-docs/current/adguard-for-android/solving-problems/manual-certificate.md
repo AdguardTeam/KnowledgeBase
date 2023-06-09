@@ -3,6 +3,12 @@ title: Проблемы с установкой сертификата на ус
 sidebar_position: 12
 ---
 
+:::note
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 Чтобы фильтровать HTTPS-трафик (что крайне важно, поскольку большинство рекламных объявлений используют HTTPS), AdGuard необходимо установить сертификат в пользовательское хранилище вашего устройства. На старых версиях ОС Android это происходило автоматически, но на Android 11 и более поздних версиях приходится [устанавливать его вручную](../../overview#https-filtering).
 
 ![Сертификат *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/Android/3-5/cert-en.gif)

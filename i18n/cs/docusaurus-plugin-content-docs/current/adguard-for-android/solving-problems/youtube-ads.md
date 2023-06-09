@@ -3,6 +3,12 @@ title: Jak blokovat reklamy v YouTube
 sidebar_position: 7
 ---
 
+:::note
+
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 Jedna z nejčastějších otázek, kterou nám uživatelé kladou, zní: "Je možné blokovat reklamy YouTube v systému Android?". Vzhledem k technickým omezením operačního systému Android neexistuje způsob, jak *zcela* odstranit reklamy z aplikace YouTube. Našli jsme však alternativu, která vás k němu co nejvíce přiblíží a zároveň obejde omezení daná systémem Android.
 
 

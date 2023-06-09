@@ -3,6 +3,12 @@ title: AdGuard 설치 로그를 수집하는 방법
 sidebar_position: 4
 ---
 
+:::note
+
+This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 AdGuard 설치 중 문제가 발생하면 지원 팀에서 AdGuard 설치 로그를 수집하여 보내달라고 요청할 수 있습니다. AdGuard 설치 로그 수집 및 전송 방법은 다음과 같습니다.
 
 1. 시작 메뉴에서 *실행* 명령을 선택하거나 *Win+R*을 누릅니다.

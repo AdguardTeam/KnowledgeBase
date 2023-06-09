@@ -3,6 +3,12 @@ title: 如何收集 HAR 文件
 sidebar_position: 5
 ---
 
+:::note
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## 什么是 HAR 文件？
 HAR（HTTP ARchive）格式是 JSON 格式的存档文件，用于记录 Web 浏览器与站点的交互。 HAR 格式的规范定义了 HTTP 交易的存档数据，浏览器使用该数据来导出其加载的网页的详细信息。 您可以在 [softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/) 网站上找到有关 HAR 文件格式及其使用规范的更详细说明。
 

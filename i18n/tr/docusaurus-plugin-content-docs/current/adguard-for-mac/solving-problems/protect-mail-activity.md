@@ -3,6 +3,12 @@ title: Protect Mail Activity and AdGuard
 sidebar_position: 8
 ---
 
+:::note
+
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Mac için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## In a nutshell
 
 Apple's Mail app now uses a proxy to hide a user's IP address when downloading images from emails.

@@ -3,6 +3,12 @@ title: Установка
 sidebar_position: 2
 ---
 
+:::note
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## Системные требования
 
 **Версия ОС:** Android 5.0 или выше.
@@ -24,7 +30,7 @@ AdGuard для Android не представлен на Google Play: Google за
 
 ![Установка приложений из неизвестных источников *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/unknown_sources1.png)
 
-* Android 5: откройте **Настройки**, затем в разделе **Личные данные** выберите пункт **Безопасность**. Отметьте галочкой пункт **Неизвестные источники**. В сообщении предупреждения нажмите **ОК**.
+* Android 5: откройте **Настройки**, затем в разделе **Личные данные** выберите пункт **Безопасность**. Сдвиньте переключатель **Неизвестные источники** вправо. В сообщении предупреждения нажмите **ОК**.
 
 ![Установка приложений из неизвестных источников *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/unknown_sources2.png)
 

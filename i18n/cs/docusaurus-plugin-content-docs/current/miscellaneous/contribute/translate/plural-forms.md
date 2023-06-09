@@ -20,8 +20,6 @@ Podívejme se na tento obrázek. Zde vidíte skupiny číslovek, které určují
 
 ![Polish](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
-> Další příklady najdete [zde](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals).
-
 Pro lepší pochopení si udělejme malou paralelu mezi angličtinou a polštinou: 
 
       Anglická verze:                                                 Polské ekvivalenty:

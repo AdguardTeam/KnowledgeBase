@@ -3,6 +3,12 @@ title: 如何收集和发送日志记录
 sidebar_position: 2
 ---
 
+:::note
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 有时候我们需要收集用户**日志文件**或**记录**以理解问题的原因。 该文件主要包含关于软件以及其运行的信息。
 
 ### Collecting debug log

@@ -3,6 +3,12 @@ title: Installation
 sidebar_position: 2
 ---
 
+:::note
+
+Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## Systemanforderungen
 
 **Operating system:** Microsoft Windows 11, 10, 8.1, 8, 7, Vista.

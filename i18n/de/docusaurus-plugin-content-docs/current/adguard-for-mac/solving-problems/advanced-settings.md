@@ -3,6 +3,12 @@ title: Erweiterte Einstellungen
 sidebar_position: 9
 ---
 
+:::note
+
+This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## Wo findet man die Eweiterten Einstellungen
 
 > Das Ändern von *Low-Level-Einstellungen* kann Probleme mit der Leistung von AdGuard verursachen, die Internetverbindung unterbrechen oder Ihre Sicherheit und Privatsphäre gefährden. Sie sollten diesen Abschnitt nur öffnen, wenn Sie sicher sind, was Sie tun, oder wenn unser Support-Team Sie darum gebeten hat. Um zu *Erweiterte Einstellungen* zu gelangen, folgen Sie dieser Route: das AdGuard-Symbol im Taskleistenmenü → das Zahnradsymbol → Erweitert → Erweiterte Einstellungen.
@@ -53,7 +59,7 @@ Idle time, in seconds, before sending a keepalive probe. If 0 is specified, the 
 
 `network.tcp.keepalive.timeout.seconds`
 
-Time, in seconds, before sending another keepalive probe to an unresponsive peer. If 0 is specified, the value selected by the system will be used.
+Time, in seconds, before sending another keepalive probe to an unresponsive peer. Wird 0 (Null) angegeben, wird der vom System gewählte Wert verwendet.
 
 `network.https.ech.enabled`
 
@@ -61,7 +67,7 @@ Uses a local DNS proxy to look for configs in the ECH Config Lists. If found, en
 
 `network.https.enforce.certificate.transparency`
 
-Verifies the authenticity of all certificates for the domain based on Chrome Certificate Transparency Policy.
+Überprüft die Authentizität aller Zertifikate für die Domain basierend auf der Chrome Certificate Transparency Policy.
 
 `network.filtering.localnetwork`
 
@@ -141,7 +147,7 @@ Removes the Encrypted Client Hello parameters from responses.
 
 `stealth.antidpi.http.split.fragment.size`
 
-Adjusts the size of the HTTP request fragmentation. Accepted values: 1–1500. If an invalid size is specified, the system will use the default value.
+Passt die Größe der Fragmentierung der HTTP-Anfrage an. Accepted values: 1–1500. If an invalid size is specified, the system will use the default value.
 
 `stealth.antidpi.clienthello.split.fragment.size`
 

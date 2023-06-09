@@ -3,6 +3,12 @@ title: Jak vytvořit soubor výpisu
 sidebar_position: 8
 ---
 
+:::note
+
+Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 K diagnostice příčin možných problémů, se kterými se uživatelé mohou setkat při používání AdGuardu, může tým podpory potřebovat soubor výpisu procesu. Soubor výpisu pomáhá vývojářům zobrazit procesy, které byly v aplikaci v daném časovém období spuštěny. Níže se můžete podívat na pokyny, jak shromáždit soubor výpisu v PC.
 
 1. Stiskněte **Ctrl + Shift + Esc** a klikněte na **Správce úloh**

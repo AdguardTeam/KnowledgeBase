@@ -3,6 +3,12 @@ title: Özelliklere genel bakış
 sidebar_position: 1
 ---
 
+:::note
+
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Windows için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+
+:::
+
 Windows için AdGuard can sıkıcı afişleri, açılır pencereleri, video reklamları ve izleyicileri engelleyen, kullanımı kolay bir araçtır. Ancak hepsi bu kadar değil: veri tasarrufu yapmanıza, web sayfalarını daha hızlı yüklemenize, bilgisayarınızı istenmeyen ve potansiyel olarak kötü amaçlı sitelerden korumanıza yardımcı olur. AdGuard ayrıca sizi kimlik avı sitelerinden korur ve çocuklarınızı uygunsuz içerikten uzak tutar.
 
 ## Home screen
@@ -152,13 +158,13 @@ To get more information about AdGuard VPN dive into the [AdGuard VPN Knowledge B
 
 There are other useful AdGuard options that shouldn't go unnoticed in this article, since they add much to user experience.
 
-### Support
+### Destek
 
 ![Support *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/support.png)
 
 By clicking the Support tab you will open a dialog box through which you can report a bug, submit a feature request, or simply share your opinion of the product.
 
-### License
+### Lisans
 
 ![License *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
 

@@ -3,6 +3,12 @@ title: Běžné chyby instalačního programu
 sidebar_position: 6
 ---
 
+:::note
+
+Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 Tento článek obsahuje některé z nejčastějších chyb, se kterými se můžete setkat během instalace AdGuardu pro Windows, a možné způsoby jejich řešení.
 
 ### Chyba 5: Přístup odepřen {#error-5}

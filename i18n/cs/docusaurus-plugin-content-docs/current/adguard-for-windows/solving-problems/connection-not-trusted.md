@@ -3,6 +3,12 @@ title: Problémy související s certifikátem
 sidebar_position: 2
 ---
 
+:::note
+
+Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 Aby mohl AdGuard filtrovat provoz HTTPS a účinně blokovat reklamy a slídiče, vygeneruje speciální (a jedinečný) kořenový certifikát a nainstaluje jej do systémového úložiště. Více informací o tom, proč je certifikát vyžadován, najdete v [tomto článku](/general/https-filtering/what-is-https-filtering).
 
 Prohlížeče obvykle důvěřují AdGuard certifikátu, jakmile je přidán do systémového úložiště certifikátů během procesu instalace. V některých případech to však nestačí a můžete narazit na varování nebo chyby. Nejčastěji se to stává v prohlížečích založených na Firefoxu, jako jsou Mozilla Firefox, PaleMoon, Waterfox atd., nebo v prohlížeči Yandex.Browser.

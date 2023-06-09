@@ -2,7 +2,13 @@
 title: Protection cannot be enabled
 sidebar_position: 2
 ---
- 
+
+:::note
+
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Mac için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+
+:::
+
 If AdGuard Protection cannot be enabled for some reason, perform the following steps:
 
 1. Click the AdGuard icon at the Menu Bar → go to Advanced → Reset settings... → Quit AdGuard...

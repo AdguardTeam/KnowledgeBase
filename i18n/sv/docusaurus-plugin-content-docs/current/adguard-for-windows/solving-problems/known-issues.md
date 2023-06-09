@@ -3,6 +3,12 @@ title: Known issues of AdGuard for Windows
 sidebar_position: 10
 ---
 
+:::note
+
+This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## AdGuard for Windows and AdGuard VPN for Windows compatibility issues
 
 Once you install AdGuard for Windows and AdGuard VPN for Windows, they just start working together without any effort on your part. However, changing some of their default settings may cause the apps to work incorrectly when they run at the same time.

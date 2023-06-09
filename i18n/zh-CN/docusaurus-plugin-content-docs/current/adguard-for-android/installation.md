@@ -3,6 +3,12 @@ title: Installation
 sidebar_position: 2
 ---
 
+:::note
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## 系统需求
 
 **操作系统版本**： 安卓 5.0 以上。

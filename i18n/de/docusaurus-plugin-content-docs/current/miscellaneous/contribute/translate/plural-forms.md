@@ -20,8 +20,6 @@ Schauen wir uns dieses Bild an. Hier sieht man die Zahlengruppen, die eine Wortf
 
 ![Polnisch](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
-> Weitere Beispiele finden Sie [hier](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals).
-
 Ziehen wir zum besseren Verständnis eine kleine Parallele zwischen Englisch und Polnisch: 
 
       Die englische Version:                                                 Die polnischen Entsprechung:

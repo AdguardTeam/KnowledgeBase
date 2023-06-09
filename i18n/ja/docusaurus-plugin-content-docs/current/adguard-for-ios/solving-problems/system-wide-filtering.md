@@ -3,6 +3,12 @@ title: iOS版AdGuardでSafari外の広告ブロックを設定する方法（シ
 sidebar_position: 2
 ---
 
+:::note
+
+This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## システムワイドブロックについて
 
 iOSでのシステムワイドブロックとは、Safariブラウザ以外、つまり他のアプリやブラウザで、ネットワークレベルで広告やトラッカー（個人情報追跡ソフト）をブロックすることです。 ほとんどの広告ブロッカーはこれをできませんが、AdGuardはできます。ただし、少し設定が必要であり、この記事では、お使いのiOSデバイスでこの機能を設定する方法をご紹介します。

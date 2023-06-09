@@ -3,6 +3,12 @@ title: 在 Tor 浏览器设置过滤
 sidebar_position: 10
 ---
 
+:::note
+
+This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 Tor 浏览器默认添加到「过滤应用程序」的 AdGuard 列表内。 不过，为了进行过滤，AdGuard 需要更改 Tor 浏览器的安全设置。 这样，Tor 将信任 AdGuard CA 证书。
 
 如您想要在 Tor 浏览器进行过滤，并在「*首选项*」→「*网络*」→「*应用程序*」开启 AdGuard 过滤，那么 AdGuard 将为您显示以下内容的窗口 ：

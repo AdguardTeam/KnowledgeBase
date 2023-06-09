@@ -3,6 +3,12 @@ title: Tam günlük nasıl toplanır
 sidebar_position: 2
 ---
 
+:::note
+
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Android için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+
+:::
+
 Sometimes in order to understand a problem and fix it we need to collect **log files**, or **logs**. Basically, these files contain information about the program and it's work.
 
 ### Collecting debug log

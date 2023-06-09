@@ -3,6 +3,12 @@ title: 如何设置外出代理
 sidebar_position: 8
 ---
 
+:::note
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 这篇文章为用户讲述如何设置一些主流的代理，让它们与 AdGuard 一起运行。
 
 ### 如何同时使用 AdGuard 和 Tor

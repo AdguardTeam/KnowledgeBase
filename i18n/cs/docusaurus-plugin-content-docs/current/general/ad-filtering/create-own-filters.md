@@ -3,6 +3,12 @@ title: Jak vytvářet vlastní filtry reklam
 sidebar_position: 5
 ---
 
+:::note
+
+V tomto článku vysvětlíme, jak napsat vlastní pravidla filtrování pro použití v produktech AdGuardu. Chcete-li otestovat svá pravidla, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 Filtr je sada pravidel filtrování aplikovaných na konkrétní obsah, například bannery nebo vyskakovací okna. AdGuard má seznam standardních filtrů vytvořených naším týmem. Neustále je vylepšujeme, aktualizujeme a snažíme se vyhovět potřebám většiny našich uživatelů.
 
 AdGuard zároveň umožňuje vytvářet vlastní filtry pomocí stejných typů pravidel, které máme v našich filtrech.
@@ -55,7 +61,7 @@ Např:
 
 Pravidla filtrování podporují řadu modifikátorů, které umožňují doladit chování pravidla. Zde je příklad pravidla s několika jednoduchými modifikátory.
 
-![Basic rule modifiers](https://cdn.adtidy.org/content/kb/ad_blocker/general/2_basic_rule_options.svg)
+![Modifikátory základních pravidel](https://cdn.adtidy.org/content/kb/ad_blocker/general/2_basic_rule_options.svg)
 
 **Toto pravidlo blokuje:**
 
@@ -208,14 +214,78 @@ Příklad:
 
 #### Základní modifikátory {#basic-rules-basic-modifiers}
 
+* [`$app`](#app-modifier)
+* [`$denyallow`](#denyallow-modifier)
 * [`$domain`](#domain-modifier)
-* [`$to`](#to-modifier)
-* [`$third-party`](#third-party-modifier)
-* [`$popup`](#popup-modifier)
-* [`$match-case`](#match-case-modifier)
 * [`$header`](#header-modifier)
+* [`$important`](#important-modifier)
+* [`$match-case`](#match-case-modifier)
+* [`$method`](#method-modifier)
+* [`$popup`](#popup-modifier)
+* [`$third-party`](#third-party-modifier)
+* [`$to`](#to-modifier)
 
-Následující modifikátory jsou nejjednodušší a nejčastěji používané.
+Následující modifikátory jsou nejjednodušší a nejčastěji používané. V podstatě jen omezují rozsah použití pravidel.
+
+#### **`$app`** {#app-modifier}
+
+Tento modifikátor umožňuje zúžit pokrytí pravidla na konkrétní aplikaci (nebo seznam aplikací). V systémech Windows a Mac to nemusí být příliš důležité, ale v mobilních zařízeních, kde některá pravidla filtrování musí být specifická pro konkrétní aplikaci, je to velmi důležité.
+
+* Android — použijte název balíčku aplikace, např. `org.example.app`.
+* Windows — použijte název procesu, např. `chrome.exe`. Mějte na vědomí, že od verze CoreLibs v1.12 se v názvu procesu nerozlišují velká a malá písmena.
+* Mac — použijte ID svazku nebo název procesu, např. `com.google.Chrome`.
+
+> V případě počítače Mac můžete ID svazku nebo název procesu aplikace zjistit zobrazením příslušných podrobností o požadavku v záznamu filtrování.
+
+**Příklady**
+
+* `||baddomain.com^$app=org.example.app` — pravidlo pro blokování požadavků, které odpovídají zadané masce a jsou odeslány z Android aplikace `org.example.app`.
+* `||baddomain.com^$app=org.example.app1|org.example.app2` — stejné pravidlo, ale funguje jak pro `org.example.app1`, tak i pro `org.example.app2`.
+
+Pokud chcete, aby se pravidlo nevztahovalo na určité aplikace, začněte název aplikace znakem `~`.
+
+* `||baddomain.com^$app=~org.example.app` — pravidlo pro blokování požadavků, které odpovídají zadané masce a jsou odeslány z jakékoli aplikace kromě `org.example.app`.
+* `||baddomain.com^$app=~org.example.app1|~org.example.app2` — stejně jako výše, ale nyní jsou vyloučeny dvě aplikace: `org.example.app1` a `org.example.app2`.
+
+> **Kompatibilita s různými verzemi AdGuardu**
+> 
+> Pouze AdGuard pro Windows, Mac a Android jsou technicky schopné používat pravidla s modifikátorem `$app`.
+
+#### **`$denyallow`** {#denyallow-modifier}
+
+Modifikátor `$denyallow` umožňuje vyhnout se vytváření dalších pravidel, pokud je potřeba zakázat určité pravidlo pro konkrétní domény. `$denyallow` odpovídá pouze cílovým doménám, nikoli doménám odkazujícím.
+
+Přidání tohoto modifikátoru k pravidlu je ekvivalentní vyloučení domén podle shodného vzoru pravidla nebo přidání odpovídajících pravidel výjimek. Chcete-li do jednoho pravidla přidat více domén, použijte jako oddělovací znak `|`.
+
+> **Omezení**
+> 
+> * Vzor shody pravidla se nemůže zaměřit na žádné konkrétní domény, např. nemůže začínat `||`.
+> * Domény v hodnotě modifikátoru nemohou být negovány, např. `$denyallow=~x.com`, nebo mít zástupný znak TLD, např. `$denyallow=x.*`.
+> 
+> Pravidla, která tato omezení porušují, jsou považována za neplatná.
+
+**Příklady**
+
+Toto pravidlo:
+```
+*$script,domain=a.com|b.com,denyallow=x.com|y.com
+```
+
+odpovídá tomuto:
+```
+/^(?!.*(x.com|y.com)).*$/$script,domain=a.com|b.com
+```
+
+nebo kombinaci těchto tří:
+```
+*$script,domain=a.com|b.com
+@@||x.com$script,domain=a.com|b.com
+@@||y.com$script,domain=a.com|b.com
+```
+
+> **Kompatibilita s různými verzemi AdGuardu**
+> 
+> Pravidla s modifikátorem `$denyallow` nejsou Blokátorem obsahu AdGuard podporována.
 
 #### **`$domain`** {#domain-modifier}
 
@@ -263,8 +333,8 @@ V následujících příkladech se předpokládá, že požadavky jsou odesílá
 
 * `page$domain=example.org` bude přiřazena, protože odpovídá doméně odkazu.
 * `page$domain=targetdomain.com` bude přiřazena, protože odpovídá cílové doméně a splňuje všechny výše uvedené požadavky.
-* `||*page$domain=targetdomain.com` nebude přiřazena, protože vzor `||*page` odpovídá konkrétním doménám.
-* `||*page$domain=targetdomain.com,cookie` bude přiřazena navzdory vzoru `||*page` shodným se specifickými doménami, protože obsahuje modifikátor `$cookie`.
+* `||*page$domain=targetdomain.com` nebude přiřazena, protože vzor `||*page` odpovídá konkrétním doménám, např. `example.page`.
+* `||*page$domain=targetdomain.com,cookie` bude přiřazena, protože pravidlo obsahuje modifikátor `$cookie`, přestože vzor `||*page` může odpovídat konkrétním doménám.
 * `/banner\d+/$domain=targetdomain.com` nebude přiřazena, protože obsahuje regulární výraz.
 * `page$domain=targetdomain.com|~example.org` nebude přiřazena, protože doména odkazu je výslovně vyloučena.
 
@@ -275,70 +345,6 @@ V následujících příkladech se předpokládá, že požadavky jsou odesílá
 > **Kompatibilita s různými verzemi AdGuardu**
 > 
 > Počínaje verzí CoreLibs v1.12 lze modifikátor `$domain` alternativně napsat jako `$from`.
-
-#### **`$to`** {#to-modifier}
-
-`$to` omezuje rozsah pravidla na požadavky **na** zadané domény a jejich subdomény. Chcete-li do jednoho pravidla přidat více domén, použijte jako oddělovací znak `|`.
-
-**Příklady**
-
-* `/ads$to=evil.com|evil.org` zablokuje jakýkoliv požadavek na `evil.com` nebo `evil.org` a jejich subdomény s cestou, která odpovídá `/ads`.
-* `/ads$to=~not.evil.com|evil.com` zablokuje jakýkoliv požadavek na `evil.com` a její subdomény s cestou, která odpovídá `/ads`, kromě požadavků na `not.evil.com` a její subdomény.
-* `/ads$to=~good.com|~good.org` zablokuje všechny požadavky s cestou, která odpovídá `/ads`, kromě požadavků na `good.com` nebo `good.org` a jejich subdomény.
-
-> **Kompatibilita s jinými modifikátory**
-> 
-> [`$denyallow`](#denyallow-modifier) nelze použít společně s `$to`. Lze ji vyjádřit pomocí invertovaného `$to`: `$denyallow=a.com|b.com`, což je je ekvivalent k `$to=~a.com|~b.com`.
-
-> **Kompatibilita s různými verzemi AdGuardu**
-> 
-> `$to` je k dispozici počínaje verzí CoreLibs v1.12.
-
-#### **`$third-party`** {#third-party-modifier}
-
-Omezení požadavků třetích stran a vlastních požadavků. Požadavek třetí strany je požadavek z jiné domény. Např. požadavek na `example.org` z `domain.com` je požadavek třetí strany.
-
-> **Poznámka**
-> 
-> Aby mohla být žádost třetí strany považována za takovou, měla by splňovat jednu z následujících podmínek: 1. Její odkazující doména není subdoménou cílové domény nebo naopak. Např. požadavek na `subdomain.example.org` z `example.org` není požadavek třetí strany. 1. Její záhlaví `Sec-Fetch-Site` je nastaveno na `cross-site`. Pokud existuje modifikátor `$third-party`, pravidlo se použije pouze na požadavky třetích stran.
-
-**Příklady**
-
-**`$third-party`:**
-
-* `||domain.com^$third-party` — toto pravidlo bude použito na všechny domény, kromě `domain.com` a její subdomény. Příklad požadavku třetí strany: `http://example.org/banner.jpg`.
-
-Pokud existuje modifikátor `$third-party`, pravidlo se použije pouze na požadavky, které nejsou od třetí strany. To znamená, že musí být odeslány ze stejné domény.
-
-**`$~third-party`:**
-
-* `||domain.com$~third-party` — toto pravidlo se použije pro `domain.com`, ale ne pro ostatní domény. Příklad požadavku, který není požadavkem třetí strany: `http://domain.com/icon.ico`.
-
-#### **`$popup`** {#popup-modifier}
-
-AdGuard se pokusí zavřít kartu prohlížeče s jakoukoli adresou, která odpovídá pravidlu blokování s tímto modifikátorem. Upozorňujeme, že ne všechny karty lze zavřít.
-
-> **Poznámka**
-> 
-> Pokud je zobrazená stránka uložena v mezipaměti prohlížeče, nemusí to fungovat.
-
-**Příklady**
-
-* `||domain.com^$popup` — pokud se pokusíte přejít na `http://domain.com/` z libovolné stránky v prohlížeči, nová karta, ve které má být zadaný web otevřen, bude tímto pravidlem zavřena.
-
-> **Kompatibilita s různými verzemi AdGuardu**
-> 
-> 1. Modifikátor `$popup` funguje nejlépe v Rozšíření prohlížeče AdGuard.
-> 2. V AdGuardu pro Safari a iOS, pravidla `$popup` stránku jednoduše a okamžitě zablokují.
-> 3. V AdGuardu pro Windows, Mac a Android nemusí modifikátor `$popup` v některých případech detekovat vyskakovací okno a nebude zablokováno. Modifikátor `$popup` použije typ obsahu `document` se speciálním příznakem, který je předán blokovací stránce. Samotná blokovací stránka může provést některé kontroly a zavřít okno, pokud se skutečně jedná o vyskakovací okno. V opačném případě by se stránka měla načíst. Lze to kombinovat s dalšími modifikátory typu požadavku, jako je `$third-party` a `$important`. Blokovací stránka však nemusí v některých případech detekovat vyskakovací okno, proto se doporučuje místo toho použít uživatelský skript [AdGuard Blokátor vyskakovacích oken](https://github.com/AdguardTeam/PopupBlocker).
-
-#### **`$match-case`** {#match-case-modifier}
-
-Tento modifikátor definuje pravidlo, které se vztahuje pouze na adresy odpovídající danému případu. Výchozí pravidla nerozlišují velká a malá písmena.
-
-**Příklady**
-
-* `*/BannerAd.gif$match-case` — toto pravidlo zablokuje `http://example.com/BannerAd.gif`, ale ne `http://example.com/bannerad.gif`.
 
 #### **`$header`** {#header-modifier}
 
@@ -370,20 +376,122 @@ kde:
 * `@@||example.com^$header=set-cookie:/foo\, bar\$/` odblokuje požadavky, jejichž odpovědi mají hlavičku `Set-Cookie` s hodnotou odpovídající regulárnímu výrazu `foo, bar$`.
 * `@@||example.com^$header=set-cookie` odblokuje požadavky, jejichž odpovědi mají hlavičku `Set-Cookie` s libovolnou hodnotou.
 
+#### **`$important`** {#important-modifier}
+
+Modifikátor `$important` použitý na pravidlo zvyšuje jeho prioritu před jakýmkoli jiným pravidlem bez modifikátoru `$important`. Dokonce i přes základní pravidla výjimek.
+
+**Příklady**
+
+```
+! pravidlo blokování zablokuje všechny požadavky navzdory pravidlu výjimky
+||example.org^$important
+@@||example.org^
+```
+
+```
+! pokud má pravidlo výjimky také modifikátor `$important`, bude mít přednost a žádné požadavky nebudou blokovány
+||example.org^$important
+@@||example.org^$important
+```
+
+```
+! pokud je na dokument použito pravidlo výjimky na úrovni dokumentu, modifikátor `$important` bude ignorován;
+! takže pokud je požadavek na `example.org` odeslán z domény `test.org`, pravidlo blokování se nepoužije, přestože má modifikátor `$important`.
+||example.org^$important
+@@||test.org^$document
+```
+
+#### **`$match-case`** {#match-case-modifier}
+
+Tento modifikátor definuje pravidlo, které se vztahuje pouze na adresy odpovídající danému případu. Výchozí pravidla nerozlišují velká a malá písmena.
+
+**Příklady**
+
+* `*/BannerAd.gif$match-case` — toto pravidlo zablokuje `http://example.com/BannerAd.gif`, ale ne `http://example.com/bannerad.gif`.
+
+#### **`$method`** {#method-modifier}
+
+Tento modifikátor omezuje rozsah pravidla na požadavky, které používají zadanou sadu metod HTTP. Negované metody jsou povoleny. Metody musí být zadány malými písmeny, ale při porovnávání se nerozlišují velká a malá písmena.
+
+**Příklady**
+
+* `||evil.com^$method=get|head` blokuje pouze požadavky GET a HEAD na doméně `evil.com`.
+* `||evil.com^$method=~post|~put` blokuje všechny požadavky kromě POST nebo PUT na doméně `evil.com`.
+
+> **Kompatibilita s různými verzemi AdGuardu**
+> 
+> `$method` je k dispozici počínaje verzí CoreLibs v1.12.
+
+#### **`$popup`** {#popup-modifier}
+
+AdGuard se pokusí zavřít kartu prohlížeče s jakoukoli adresou, která odpovídá pravidlu blokování s tímto modifikátorem. Upozorňujeme, že ne všechny karty lze zavřít.
+
+> **Poznámka**
+> 
+> Pokud je zobrazená stránka uložena v mezipaměti prohlížeče, nemusí to fungovat.
+
+**Příklady**
+
+* `||domain.com^$popup` — pokud se pokusíte přejít na `http://domain.com/` z libovolné stránky v prohlížeči, nová karta, ve které má být zadaný web otevřen, bude tímto pravidlem zavřena.
+
+> **Kompatibilita s různými verzemi AdGuardu**
+> 
+> 1. Modifikátor `$popup` funguje nejlépe v Rozšíření prohlížeče AdGuard.
+> 2. V AdGuardu pro Safari a iOS, pravidla `$popup` stránku jednoduše a okamžitě zablokují.
+> 3. V AdGuardu pro Windows, Mac a Android nemusí modifikátor `$popup` v některých případech detekovat vyskakovací okno a nebude zablokováno. Modifikátor `$popup` použije typ obsahu `document` se speciálním příznakem, který je předán blokovací stránce. Samotná blokovací stránka může provést některé kontroly a zavřít okno, pokud se skutečně jedná o vyskakovací okno. V opačném případě by se stránka měla načíst. Lze to kombinovat s dalšími modifikátory typu požadavku, jako je `$third-party` a `$important`. Blokovací stránka však nemusí v některých případech detekovat vyskakovací okno, proto se doporučuje místo toho použít uživatelský skript [AdGuard Blokátor vyskakovacích oken](https://github.com/AdguardTeam/PopupBlocker).
+
+#### **`$third-party`** {#third-party-modifier}
+
+Omezení požadavků třetích stran a vlastních požadavků. Požadavek třetí strany je požadavek z jiné domény. Např. požadavek na `example.org` z `domain.com` je požadavek třetí strany.
+
+> **Poznámka**
+> 
+> Aby mohla být žádost třetí strany považována za takovou, měla by splňovat jednu z následujících podmínek: 1. Její odkazující doména není subdoménou cílové domény nebo naopak. Např. požadavek na `subdomain.example.org` z `example.org` není požadavek třetí strany. 1. Její záhlaví `Sec-Fetch-Site` je nastaveno na `cross-site`. Pokud existuje modifikátor `$third-party`, pravidlo se použije pouze na požadavky třetích stran.
+
+**Příklady**
+
+**`$third-party`:**
+
+* `||domain.com^$third-party` — toto pravidlo bude použito na všechny domény, kromě `domain.com` a její subdomény. Příklad požadavku třetí strany: `http://example.org/banner.jpg`.
+
+Pokud existuje modifikátor `$third-party`, pravidlo se použije pouze na požadavky, které nejsou od třetích stran. To znamená, že musí být odeslány ze stejné domény.
+
+**`$~third-party`:**
+
+* `||domain.com$~third-party` — toto pravidlo se použije pro `domain.com`, ale ne pro ostatní domény. Příklad požadavku, který není požadavkem třetí strany: `http://domain.com/icon.ico`.
+
+#### **`$to`** {#to-modifier}
+
+`$to` omezuje rozsah pravidla na požadavky **na** zadané domény a jejich subdomény. Chcete-li do jednoho pravidla přidat více domén, použijte jako oddělovací znak `|`.
+
+**Příklady**
+
+* `/ads$to=evil.com|evil.org` zablokuje jakýkoliv požadavek na `evil.com` nebo `evil.org` a jejich subdomény s cestou, která odpovídá `/ads`.
+* `/ads$to=~not.evil.com|evil.com` zablokuje jakýkoliv požadavek na `evil.com` a její subdomény s cestou, která odpovídá `/ads`, kromě požadavků na `not.evil.com` a její subdomény.
+* `/ads$to=~good.com|~good.org` zablokuje všechny požadavky s cestou, která odpovídá `/ads`, kromě požadavků na `good.com` nebo `good.org` a jejich subdomény.
+
+> **Kompatibilita s jinými modifikátory**
+> 
+> [`$denyallow`](#denyallow-modifier) nelze použít společně s `$to`. Lze ji vyjádřit pomocí invertovaného `$to`: `$denyallow=a.com|b.com`, což je je ekvivalent k `$to=~a.com|~b.com`.
+
+> **Kompatibilita s různými verzemi AdGuardu**
+> 
+> `$to` je k dispozici počínaje verzí CoreLibs v1.12.
+
 #### Omezení podle typu obsahu {#content-type-modifiers}
 
 * [`$document`](#document-modifier)
-* [`$image`](#image-modifier)
-* [`$stylesheet`](#stylesheet-modifier)
-* [`$script`](#script-modifier)
-* [`$object`](#object-modifier)
 * [`$font`](#font-modifier)
+* [`$image`](#image-modifier)
 * [`$media`](#media-modifier)
-* [`$subdocument`](#subdocument-modifier)
-* [`$ping`](#ping-modifier)
-* [`$xmlhttprequest`](#xmlhttprequest-modifier)
-* [`$websocket`](#websocket-modifier)
+* [`$object`](#object-modifier)
 * [`$other`](#other-modifier)
+* [`$ping`](#ping-modifier)
+* [`$script`](#script-modifier)
+* [`$stylesheet`](#stylesheet-modifier)
+* [`$subdocument`](#subdocument-modifier)
+* [`$websocket`](#websocket-modifier)
+* [`$xmlhttprequest`](#xmlhttprequest-modifier)
 * [`$object-subrequest` (zastaralé)](#object-subrequest-modifier)
 * [`$webrtc` (zastaralé)](#webrtc-modifier)
 
@@ -421,29 +529,41 @@ Pokud je tento modifikátor použit s pravidlem výjimky (`@@`), zcela zakáže 
 > 
 > Pravidla blokování s modifikátorem `$document` nejsou Blokátorem obsahu AdGuard podporována.
 
+#### **`$font`** {#font-modifier}
+
+Pravidlo odpovídá požadavkům na písma, např. s příponou `.woff`.
+
 #### **`$image`** {#image-modifier}
 
 Pravidlo odpovídá požadavkům na obrázky.
 
-#### **`$stylesheet`** {#stylesheet-modifier}
+#### **`$media`** {#media-modifier}
 
-Pravidlo odpovídá požadavkům na soubory CSS.
-
-#### **`$script`** {#script-modifier}
-
-Pravidlo odpovídá požadavkům na skripty, např. javascript, vbscript.
+Pravidlo odpovídá požadavkům na mediální soubory — hudbu a video, např. soubory `.mp4`.
 
 #### **`$object`** {#object-modifier}
 
 Pravidlo odpovídá prostředkům pluginů prohlížeče, např. Java nebo Flash.
 
-#### **`$font`** {#font-modifier}
+#### **`$other`** {#other-modifier}
 
-Pravidlo odpovídá požadavkům na písma, např. s příponou `.woff`.
+Pravidlo se vztahuje na požadavky, jejichž typ nebyl určen nebo neodpovídá výše uvedeným typům.
 
-#### **`$media`** {#media-modifier}
+#### **`$ping`** {#ping-modifier}
 
-Pravidlo odpovídá požadavkům na mediální soubory — hudbu a video, např. soubory `.mp4`.
+Pravidlo odpovídá požadavkům vyvolaným buď `navigator.sendBeacon()`, nebo atributem `ping` v odkazech.
+
+> **Kompatibilita s různými verzemi AdGuardu**
+> 
+> AdGuard pro Windows, Mac a Android často nedokáží přesně detekovat `navigator.sendBeacon()`. Pro spolehlivou detekci použijte Rozšíření prohlížeče AdGuard.
+
+#### **`$script`** {#script-modifier}
+
+Pravidlo odpovídá požadavkům na skripty, např. javascript, vbscript.
+
+#### **`$stylesheet`** {#stylesheet-modifier}
+
+Pravidlo odpovídá požadavkům na soubory CSS.
 
 #### **`$subdocument`** {#subdocument-modifier}
 
@@ -454,13 +574,13 @@ Pravidlo odpovídá požadavkům na vestavěné stránky — značky HTML `frame
 * `||example.com^$subdocument` blokuje integrované požadavky (`frame` a `iframe`) na `example.com` a všechny její subdomény kdekoli.
 * `||example.com^$subdocument,domain=domain.com` blokuje integrované požadavky (`frame` и `iframe`) na `example.com` (a její subdomény) z `domain.com` a všech jejích subdomén.
 
-#### **`$ping`** {#ping-modifier}
+#### **`$websocket`** {#websocket-modifier}
 
-Pravidlo odpovídá požadavkům vyvolaným buď `navigator.sendBeacon()`, nebo atributem `ping` v odkazech.
+Pravidlo se vztahuje pouze na připojení WebSocket.
 
 > **Kompatibilita s různými verzemi AdGuardu**
 > 
-> AdGuard pro Windows, Mac a Android často nedokáží přesně detekovat `navigator.sendBeacon()`. Pro spolehlivou detekci použijte Rozšíření prohlížeče AdGuard.
+> Modifikátor `$websocket` je podporován ve všech produktech AdGuardu kromě Blokátoru obsahu AdGuard. Pokud jde o AdGuard pro Safari a AdGuard pro iOS, je podporován v zařízeních s macOS Monterey (verze 12) a iOS 16 nebo novějším.
 
 #### **`$xmlhttprequest`** {#xmlhttprequest-modifier}
 
@@ -470,17 +590,11 @@ Pravidlo se vztahuje pouze na požadavky ajax (požadavky odeslané prostřednic
 > 
 > AdGuard pro Windows, Mac a Android často nedokáží tento typ přesně detekovat a někdy jej detekují jako [`$other`](#other-modifier) nebo [`$script`](#script-modifier). Pro spolehlivou detekci použijte Rozšíření prohlížeče AdGuard.
 
-#### **`$websocket`** {#websocket-modifier}
+#### **`$object-subrequest` (zastaralé)** {#object-subrequest-modifier}
 
-Pravidlo se vztahuje pouze na připojení WebSocket.
-
-> **Kompatibilita s různými verzemi AdGuardu**
+> **Upozornění na vyřazení**
 > 
-> Modifikátor `$websocket` je podporován ve všech produktech AdGuardu kromě Blokátoru obsahu AdGuard. Pokud jde o AdGuard pro Safari a AdGuard pro iOS, je podporován v zařízeních s macOS Monterey (verze 12) a iOS 16 nebo novějším.
-
-#### **`$other`** {#other-modifier}
-
-Pravidlo se vztahuje na požadavky, jejichž typ nebyl určen nebo neodpovídá výše uvedeným typům.
+> Modifikátor `$object-subrequest` je zastaralý a již není podporován. Pravidla s tímto modifikátorem jsou považována za neplatná. Pravidlo odpovídá požadavkům pluginů prohlížeče (obvykle se jedná o Flash).
 
 #### **`$webrtc` (zastaralé)** {#webrtc-modifier}
 
@@ -495,38 +609,24 @@ Pravidlo se vztahuje pouze na připojení WebRTC.
 * `||example.com^$webrtc,domain=example.org` blokuje připojení webRTC na `example.com` pro `example.org`.
 * `@@*$webrtc,domain=example.org` zakáže RTC wrapper pro `example.org`.
 
-#### **`$object-subrequest` (zastaralé)** {#object-subrequest-modifier}
-
-> **Upozornění na vyřazení**
-> 
-> Modifikátor `$object-subrequest` je zastaralý a již není podporován. Pravidla s tímto modifikátorem jsou považována za neplatná. Pravidlo odpovídá požadavkům pluginů prohlížeče (obvykle se jedná o Flash).
-
 #### Modifikátory výjimek {#exception-modifiers}
 
-* [`$elemhide`](#elemhide-modifier)
 * [`$content`](#content-modifier)
-* [`$jsinject`](#jsinject-modifier)
-* [`$urlblock`](#urlblock-modifier)
+* [`$elemhide`](#elemhide-modifier)
 * [`$extension`](#extension-modifier)
-* [`$stealth`](#stealth-modifier)
+* [`$jsinject`](#jsinject-modifier)
 * [`$specifichide`](#specifichide-modifier)
+* [`$stealth`](#stealth-modifier)
+* [`$urlblock`](#urlblock-modifier)
 * [Generická pravidla](#exception-modifiers-generic-rules)
-  * [`$generichide`](#generichide-modifier)
   * [`$genericblock`](#genericblock-modifier)
+  * [`$generichide`](#generichide-modifier)
 
 Pravidla výjimek deaktivují ostatní základní pravidla pro adresy, kterým odpovídají. Začínají značkou `@@`. Lze na ně aplikovat všechny výše uvedené základní modifikátory a mají také několik speciálních modifikátorů.
 
 > **Vizuální znázornění**
 > 
 > Doporučujeme také seznámit se s [tímto článkem](https://adblockplus.org/filter-cheatsheet#blocking), abyste lépe pochopili, jak taková pravidla vytvářet.
-
-#### **`$elemhide`** {#elemhide-modifier}
-
-Zakáže jakákoliv [kosmetická pravidla](#cosmetic-rules) na stránkách odpovídajících pravidlu.
-
-**Příklady**
-
-* `@@||example.com^$elemhide` zakáže všechna kosmetická pravidla na `example.com` a všech subdoménách.
 
 #### **`$content`** {#content-modifier}
 
@@ -536,21 +636,13 @@ Zakáže [filtrování HTML](#html-filtering-rules) a pravidla [`$replace`](#rep
 
 * `@@||example.com^$content` zakáže všechna pravidla filtrování HTML a pravidla nahrazování na `example.com` a všech jejích subdoménách.
 
-#### **`$jsinject`** {#jsinject-modifier}
+#### **`$elemhide`** {#elemhide-modifier}
 
-Zakazuje přidávání javascriptového kódu na stránku. O pravidlech javascriptu si můžete přečíst dále.
-
-**Příklady**
-
-* `@@||example.com^$jsinject` zakáže javasript na `example.com` a všech subdoménách.
-
-#### **`$urlblock`** {#urlblock-modifier}
-
-Zakáže blokování všech požadavků odeslaných ze stránek odpovídajících pravidlu.
+Zakáže jakákoliv [kosmetická pravidla](#cosmetic-rules) na stránkách odpovídajících pravidlu.
 
 **Příklady**
 
-* `@@||example.com^$urlblock` — nebudou blokovány žádné požadavky odeslané z `example.com` a ze všech subdomén.
+* `@@||example.com^$elemhide` zakáže všechna kosmetická pravidla na `example.com` a všech subdoménách.
 
 #### **`$extension`** {#extension-modifier}
 
@@ -563,6 +655,30 @@ Zakáže všechny uživatelské skripty na stránkách odpovídajících tomuto 
 > **Kompatibilita s různými verzemi AdGuardu**
 > 
 > Pouze AdGuard pro Windows, Mac a Android jsou technicky schopné používat pravidla s modifikátorem `$extension`.
+
+#### **`$jsinject`** {#jsinject-modifier}
+
+Zakazuje přidávání javascriptového kódu na stránku. O pravidlech javascriptu si můžete přečíst dále.
+
+**Příklady**
+
+* `@@||example.com^$jsinject` zakáže javasript na `example.com` a všech subdoménách.
+
+#### **`specifichide`** {#specifichide-modifier}
+
+Zakáže všechna specifická pravidla pro skrývání prvků a CSS, ale ne obecná pravidla. Má opačný účinek než [`$generichide`](#generichide-modifier).
+
+**Příklady**
+
+* `@@||example.org^$specifichide` zakáže `example.org##.banner`, ale ne `##.banner`.
+
+> **Poznámka**
+> 
+> Všechna kosmetická pravidla — nejen ta specifická — lze zakázat pomocí modifikátoru [`$elemhide`](#elemhide-modifier).
+
+> **Kompatibilita s různými verzemi AdGuardu**
+> 
+> Pravidla s modifikátorem `$specifichide` podporuje AdGuard pro Windows, Mac, Android a Rozšíření prohlížeče AdGuard pro Chrome, Firefox a Edge.
 
 #### **`$stealth`** {#stealth-modifier}
 
@@ -610,21 +726,13 @@ Seznam dostupných možností modifikátoru:
 > * Režim utajení je k dispozici v AdGuardu pro Windows, Mac, Android a Rozšíření prohlížeče AdGuard. Všechny ostatní produkty budou ignorovat pravidla s modifikátorem `$stealth`.
 > * Modifikátor `$stealth` je podporován AdGuardem pro Windows, Mac a Android, **s knihovnou CoreLibs verze 1.10 nebo novější**.
 
-#### **`specifichide`** {#specifichide-modifier}
+#### **`$urlblock`** {#urlblock-modifier}
 
-Zakáže všechna specifická pravidla pro skrývání prvků a CSS, ale ne obecná pravidla. Má opačný účinek než [`$generichide`](#generichide-modifier).
+Zakáže blokování všech požadavků odeslaných ze stránek odpovídajících pravidlu.
 
 **Příklady**
 
-* `@@||example.org^$specifichide` zakáže `example.org##.banner`, ale ne `##.banner`.
-
-> **Poznámka**
-> 
-> Všechna kosmetická pravidla — nejen ta specifická — lze zakázat pomocí modifikátoru [`$elemhide`](#elemhide-modifier).
-
-> **Kompatibilita s různými verzemi AdGuardu**
-> 
-> Pravidla s modifikátorem `$specifichide` podporuje AdGuard pro Windows, Mac, Android a Rozšíření prohlížeče AdGuard pro Chrome, Firefox a Edge.
+* `@@||example.com^$urlblock` — nebudou blokovány žádné požadavky odeslané z `example.com` a ze všech subdomén.
 
 #### Generická pravidla {#exception-modifiers-generic-rules}
 
@@ -647,72 +755,53 @@ domain.com###banner
 ||domain.com^$domain=example.com
 ```
 
-##### **`$generichide`** {#generichide-modifier}
-
-Zakáže všechna generická [kosmetická pravidla](#cosmetic-rules) na stránkách, které odpovídají pravidlu výjimky.
-
-**Příklady**
-
-* `@@||example.com^generichide` — zakáže všechna kosmetická pravidla na `example.com` a všech subdoménách.
-
 ##### **`$genericblock`** {#genericblock-modifier}
 
 Zakáže generická základní pravidla na stránkách, které odpovídají pravidlu výjimky.
 
 **Příklady**
 
-* `@@||example.com^$genericblock` — zakáže generická základní pravidla na `example.com` a všech subdoménách.
+* `@@||example.com^$genericblock` zakáže generická základní pravidla na `example.com` a všech subdoménách.
+
+##### **`$generichide`** {#generichide-modifier}
+
+Zakáže všechna generická [kosmetická pravidla](#cosmetic-rules) na stránkách, které odpovídají pravidlu výjimky.
+
+**Příklady**
+
+* `@@||example.com^$generichide` zakáže všechna kosmetická pravidla na `example.com` a jejích subdoménách.
 
 ### Pokročilé schopnosti
 
-* [`$important`](#important-modifier)
-* [`$badfilter`](#badfilter-modifier)
-* [`$replace`](#replace-modifier)
-* [`$csp`](#csp-modifier)
-* [`$permissions`](#permissions-modifier)
 * [`$all`](#all-modifier)
-* [`$inline-script`](#inline-script-modifier)
-* [`$inline-font`](#inline-font-modifier)
+* [`$badfilter`](#badfilter-modifier)
 * [`$cookie`](#cookie-modifier)
+* [`$csp`](#csp-modifier)
+* [`$hls`](#hls-modifier)
+* [`$inline-font`](#inline-font-modifier)
+* [`$inline-script`](#inline-script-modifier)
+* [`$jsonprune`](#jsonprune-modifier)
 * [`$network`](#network-modifier)
-* [`$app`](#app-modifier)
-* [`$method`](#method-modifier)
+* [`$permissions`](#permissions-modifier)
 * [`$redirect`](#redirect-modifier)
 * [`$redirect-rule`](#redirect-rule-modifier)
-* [`$denyallow`](#denyallow-modifier)
+* [`$replace`](#replace-modifier)
 * [`$removeparam`](#removeparam-modifier)
 * [`$removeheader`](#removeheader-modifier)
-* [`$hls`](#hls-modifier)
-* [`$jsonprune`](#jsonprune-modifier)
 * [`noop`](#noop-modifier)
 * [`$empty` (zastaralé)](#empty-modifier)
 * [`$mp4` (zastaralé)](#mp4-modifier)
 
 Tyto modifikátory mohou zcela změnit chování základních pravidel.
 
-#### **`$important`** {#important-modifier}
+#### **`$all`** {#all-modifier}
 
-Modifikátor `$important` použitý na pravidlo zvyšuje jeho prioritu před jakýmkoli jiným pravidlem bez modifikátoru `$important`. Dokonce i přes základní pravidla výjimek.
-
-**Příklady**
-
+Modifikátor `$all` se skládá z modifikátorů [`$document`](#document-modifier), [`$popup`](#popup-modifier) a [`$csp`](#csp-modifier). Např. pravidlo `||example.org^$all` se převádí na takovou sadu pravidel:
 ```
-! pravidlo blokování zablokuje všechny požadavky navzdory pravidlu výjimky
-||example.org^$important
-@@||example.org^
-```
-
-```
-! pokud má pravidlo výjimky také modifikátor `$important`, bude mít přednost, takže žádné požadavky nebudou blokovány
-||example.org^$important
-@@||example.org^$important
-```
-
-```
-! pokud je na dokument použito pravidlo výjimky na úrovni dokumentu, modifikátor `$important` bude ignorován;
-! takže pokud je požadavek na `example.org` odeslán z domény `test.org`, pravidlo blokování se nepoužije, přestože má modifikátor `$important`.
-||example.org^$important
-@@||test.org^$document
+||example.org^$document,popup
+||example.org^$csp=script-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
+||example.org^$csp=font-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
+||example.org^
 ```
 
 #### **`$badfilter`** {#badfilter-modifier}
@@ -745,173 +834,9 @@ V takovém případě pravidlo `$badfilter` zakáže odpovídající pravidlo pr
 > 
 > Pravidla s modifikátorem `$badfilter` nejsou Blokátorem obsahu AdGuard podporována.
 
-#### **`$replace`** {#replace-modifier}
-
-Tento modifikátor zcela mění chování pravidla. Pokud je použitý, pravidlo požadavek nezablokuje. Namísto toho bude odpověď upravena.
-
-> K použití modifikátoru `$replace` budete potřebovat určité znalosti regulárních výrazů.
-
-**Funkce**
-
-* Pravidla `$replace` platí pro jakoukoli textovou odpověď, ale neplatí pro binární (`media`, `image`, `object` atd.).
-* Pravidla `$replace` neplatí, pokud je velikost původní odpovědi větší než 3 MB.
-* Pravidla `$replace` mají vyšší prioritu než ostatní základní pravidla (**včetně** pravidel výjimek). Pokud tedy požadavek odpovídá dvěma různým pravidlům, z nichž jedno má modifikátor `$replace`, použije se toto pravidlo.
-* Pravidla výjimek na úrovni dokumentu s modifikátory `$content` nebo `$document` zakáží pravidla `$replace` pro požadavky, které jim odpovídají.
-* Ostatní pravidla výjimek na úrovni dokumentu (`$generichide`, `$elemhide` nebo modifikátory `$jsinject`) se uplatňují vedle pravidel `$replace`. To znamená, že můžete upravit obsah stránky pomocí pravidla `$replace` a zároveň zde zakázat kosmetická pravidla.
-
-> Hodnota `$replace` může být v případě pravidel pro výjimky prázdná. Další informace naleznete v části Příklady.
-
-> **Vícenásobná pravidla odpovídajících jednomu požadavku**
-> 
-> V případě, že jednomu požadavku odpovídá více pravidel `$replace`, použijeme každé z nich. **Pořadí je stanoveno abecedně.**
-
-**Syntaxe**
-
-Obecně je syntaxe `$replace` podobná nahrazování regulárními výrazy v [Perl](http://perldoc.perl.org/perlrequick.html#Search-and-replace).
-
-```
-replace = "/" regexp "/" replacement "/" modifiers
-```
-
-* **`regexp`** — regulární výraz.
-* **`replacement`** — řetězec, který bude použit k nahrazení řetězce odpovídajícího `regexp`.
-* **`modifiers`** — příznaky regulárního výrazu. Například `i` — necitlivé vyhledávání nebo `s` — jednořádkový režim.
-
-V hodnotě `$replace` musí být dva znaky uvozeny: čárka `,` a znak dolaru `$`. Použijte pro to zpětné lomítko `\`. Např. uvozená čárka vypadá takto: `\,`.
-
-**Příklady**
-
-```
-||example.org^$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<\/VAST>/i
-```
-
-Toto pravidlo má tři části:
-* `regexp` - `(<VAST(.|\s)*?>)(.|\s)*<\/VAST>`;
-* `replacement` — `\$1<\/VAST>` kde `$` je uvozeno;
-* `modifikátory` — `i` pro necitlivé vyhledávání.
-
-Jak toto pravidlo funguje, se můžete podívat zde: http://regexr.com/3cesk
-
-**Vícenásobná pravidla `$replace`**
-
-1. `||example.org^$replace=/X/Y/`
-2. `||example.org^$replace=/Z/Y/`
-3. `@@||example.org/page/*$replace=/Z/Y/`
-
-* Jak pravidlo 1, tak pravidlo 2 se použijí na všechny požadavky odeslané na `example.org`.
-* Pravidlo 2 je zakázáno pro požadavky odpovídající na `||example.org/page/`, **ale pravidlo 1 stále funguje!**
-
-**Zakázání pravidel `$replace`**
-
-* `@@||example.org^$replace` zakáže všechna pravidla `$replace` odpovídající na `||example.org^`.
-* `@@||example.org^$document` nebo `@@||example.org^$content` zakáže všechna pravidla `$replace` **pocházející ze** stránek `example.org` **včetně stránky samotné**.
-
-> **Kompatibilita s různými verzemi AdGuardu**
-> 
-> Pravidla s modifikátorem `$replace` podporuje AdGuard pro Windows, Mac, Android a Rozšíření prohlížeče AdGuard pro Firefox. Taková pravidla v rozšířeních pro jiné prohlížeče nefungují, protože nemohou měnit obsah na úrovni sítě.
-
-> **Omezení**
-> 
-> Pravidla s modifikátorem `$replace` lze použít [**pouze v důvěryhodných filtrech**](#trusted-filters).
-
-#### **`$csp`** {#csp-modifier}
-
-Tento modifikátor zcela mění chování pravidla. Pokud je použitý na pravidlo, nezablokuje odpovídající požadavek. Namísto toho se upraví záhlaví odpovědí.
-
-> Pro použití tohoto typu pravidel je nutné mít základní znalosti o vrstvě zabezpečení [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy).
-
-U požadavků, které odpovídají pravidlu `$csp`, posílíme zásady zabezpečení odezvy posílením zásad zabezpečení obsahu, podobně jako u zásad zabezpečení obsahu modifikátoru obsahu `$csp`. Pravidla `$csp` jsou aplikována nezávisle na jakémkoli jiném typu pravidla. Ostatní základní pravidla na to nemají žádný vliv, **kromě výjimek na úrovni dokumentu** (viz část s příklady níže).
-
-> **Vícenásobná pravidla odpovídajících jednomu požadavku**
-> 
-> V případě, že jednomu požadavku odpovídá více pravidel `$csp`, použijeme každé z nich.
-
-**Syntaxe**
-
-Syntaxe hodnoty `$csp` je podobná syntaxi záhlaví Content Security Policy.
-
-Hodnota `$csp` může být v případě pravidel pro výjimky prázdná. Viz níže uvedený oddíl s příklady.
-
-> **Omezení**
-> 
-> 1. V hodnotě `$csp` je zakázáno několik znaků: `,`, `$`.
-> 2. Pravidla `$csp` podporují omezený seznam modifikátorů: `$domain`, `$important`, `$subdocument`.
-> 3. Pravidla s direktivami `report-*` jsou považována za neplatná.
-
-**Příklady**
-
-* `||example.org^$csp=frame-src 'none'` blokuje všechny obrázky na example.org a jejích subdoménách.
-* `@@||example.org/page/*$csp=frame-src 'none'` zakáže všechna pravidla s modifikátorem `$csp` přesně odpovídajícím příznakem `frame-src 'none'` na všech stránkách odpovídajících vzoru pravidla. Např. výše uvedené pravidlo.
-* `@@||example.org/page/*$csp` zakáže všechna pravidla `$csp` na všech stránkách odpovídajících vzoru pravidla.
-* `||example.org^$csp=script-src 'self' 'unsafe-eval' http: https:` zakáže vložené skripty na všech stránkách odpovídajících vzoru pravidla.
-* `@@||example.org^$document` nebo `@@||example.org^$urlblock` zakáží všechna pravidla `$csp` na všech stránkách odpovídajících vzoru pravidla.
-
-> **Kompatibilita s různými verzemi AdGuardu**
-> 
-> Pravidla s modifikátorem `$csp` nejsou podporována Blokátorem obsahu AdGuard, AdGuardem pro iOS a Safari.
-
-#### **`$permissions`** {#permissions-modifier}
-
-Tento modifikátor zcela mění chování pravidla. Pokud je použitý na pravidlo, nezablokuje odpovídající požadavek. Namísto toho se upraví záhlaví odpovědí.
-
-> Pro použití tohoto typu pravidel je nutné mít základní znalosti o vrstvě zabezpečení [Permissions Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Permissions_Policy).
-
-U požadavků, které odpovídají pravidlu `$permissions`, AdGuard posiluje zásady funkcí odpovědi přidáním dalších zásad oprávnění, které se rovnají obsahu modifikátoru `$permissions`. Pravidla `$permissions` jsou aplikována nezávisle na jakémkoli jiném typu pravidla. Ostatní základní pravidla na to nemají žádný vliv, **kromě výjimek na úrovni dokumentu** (viz část s příklady).
-
-> **Vícenásobná pravidla odpovídajících jednomu požadavku.**
-> 
-> V případě, že jednomu požadavku odpovídá více pravidel `$permissions`, použijem AdGuard každé z nich.
-
-**Syntaxe**
-
-Hodnota syntaxe `$permissions` je podobná [syntaxi](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy) záhlaví `Permissions-Policy` s jednou výjimkou: čárka, která odděluje několik prvků **MUSÍ** být uvozena — viz příklady níže. Seznam dostupných direktiv je k dispozici [zde](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives).
-
-Hodnota `$permissions` může být v případě pravidel pro výjimky prázdná — viz příklady níže.
-
-> **Omezení**
-> 
-> 1. Zakázané znaky v `$permissions` hodnotě: `$`;
-> 2. `$permissions` je kompatibilní s omezeným seznamem modifikátorů: `$domain`, `$important`, a `$subdocument`.
-
-**Příklady**
-
-* `||example.org^$permissions=sync-xhrˇ=()` zakazuje synchronní požadavky `XMLHttpRequest` napříč `example.org`.
-* `@@||example.org/page/*$permissions=sync-xhr=()` zakáže všechna pravidla s modifikátorem `$permissions` přesně odpovídajícím příznakem `sync-xhr=()` na všech stránkách odpovídajících vzoru pravidla. Např. výše uvedené pravidlo.
-* `@@||example.org/page/*$permissions` zakáže všechna pravidla `$permissions` na všech stránkách odpovídajících vzoru pravidla.
-* `$domain=example.org|example.com,permissions=oversized-images=()\; sync-script=()\; unsized-media=()` zakazuje nadměrné obrázky, synchronní skripty a nevhodné velikosti multimediálních prvků napříč `example.org` a `example.com`.
-* `@@||example.org^$document` nebo `@@||example.org^$urlblock` zakáží všechna pravidla `$permission` na všech stránkách odpovídajících vzoru pravidla.
-
-> **Kompatibilita s různými verzemi AdGuardu**
-> 
-> Pravidla s modifikátorem `$permissions` jsou podporována AdGuardem pro Windows, Mac a Android, **s knihovnou CoreLibs verze 1.11 nebo novější**.
-
-#### **`$all`** {#all-modifier}
-
-Modifikátor `$all` se skládá z modifikátorů [`$document`](#document-modifier), [`$popup`](#popup-modifier), [`$csp`](#csp-modifier). Např. pravidlo `||example.org^$all` se převádí na takovou sadu pravidel:
-```
-||example.org^$document,popup
-||example.org^$csp=script-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
-||example.org^$csp=font-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
-||example.org^
-```
-
-#### **`$inline-script`** {#inline-script-modifier}
-
-Modifikátor `$inline-script` je jakousi zkratkou pro modifikátor [`$csp`](#csp-modifier) s konkrétní hodnotou. Např. pravidlo `||example.org^$inline-script` se převádí na takovou sadu pravidel:
-```
-||example.org^$csp=script-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
-```
-
-#### **`$inline-font`** {#inline-font-modifier}
-
-Modifikátor `$inline-font` je jakousi zkratkou pro modifikátor [`$csp`](#csp-modifier) s konkrétní hodnotou. Např. pravidlo `||example.org^$inline-font` se převádí na takovou sadu pravidel:
-```
-||example.org^$csp=font-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
-```
-
 #### **`$cookie`** {#cookie-modifier}
 
-Modifikátor `$cookie` zcela mění chování pravidla. Namísto blokování požadavku, tento modifikátor potlačí nebo změní záhlaví `Cookie` a `Set-Cookie`.
+Modifikátor `$cookie` zcela mění chování pravidla. Namísto blokování požadavku, tento modifikátor potlačí AdGuard nebo změní záhlaví `Cookie` a `Set-Cookie`.
 
 > **Vícenásobná pravidla odpovídajících jednomu požadavku**
 > 
@@ -954,372 +879,47 @@ Pravidla `$cookie` nejsou ovlivněna pravidly pro běžné výjimky (`@@`), poku
 
 > **Omezení**
 > 
-> Pravidla `$cookie` podporují omezený seznam modifikátorů: `$domain`, `$~domain`, `$important`, `$third-party`, `$~third-party`.
+> Pravidla `$cookie` podporují omezený seznam modifikátorů: `$domain`, `$~domain`, `$important`, `$third-party` a `$~third-party`.
 
 > **Kompatibilita s různými verzemi AdGuardu**
 > 
 > Pravidla s modifikátorem `$cookie` nejsou podporována Blokátorem obsahu AdGuard, AdGuardem pro iOS a Safari.
 
-#### **`$network`** {#network-modifier}
+#### **`$csp`** {#csp-modifier}
 
-Jedná se v podstatě o pravidla typu brány Firewall, která umožňují plně zablokovat nebo odblokovat přístup na zadanou vzdálenou adresu.
+Tento modifikátor zcela mění chování pravidla. Pokud je použitý na pravidlo, pravidlo nezablokuje odpovídající požadavek. Namísto toho se upraví záhlaví odpovědí.
 
-1. Pravidla `$network` odpovídají **pouze IP adresám**! Nelze je použít k zablokování nebo odblokování přístupu k doméně.
-2. Chcete-li se shodovat s adresou IPv6, musíte použít sbalenou syntaxi, např. `[2001:4860:4860::8888]$network` namísto `[2001:4860:4860:0:0:0:0:8888]$network`.
-3. Pravidlo seznamu povolených `$network` způsobí, že AdGuard bude obcházet data odpovídajícího koncového bodu, např. nebude provádět žádné další filtrování.
-4. Pokud část IP začíná a končí znakem `/`, je považována za regulární výraz.
+> Pro použití tohoto typu pravidel je nutné mít základní znalosti o vrstvě zabezpečení [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy).
 
-> Pro lepší pochopení regulárních výrazů doporučujeme seznámit se s tímto [článkem](#regexp-support).
-
-**Příklady**
-
-* `174.129.166.49:3478^$network` blokuje přístup k `174.129.166.49:3478` (ale ne k `174.129.166.49:34788`).
-* `[2001:4860:4860::8888]:443^$network` blokuje přístup k `[2001:4860:4860::8888]:443`.
-* `174.129.166.49$network` blokuje přístup k `174.129.166.49:*`.
-* `@@174.129.166.49$network` způsobí, že AdGuard bude koncovému bodu předávat data. Žádná jiná pravidla se neuplatňují.
-* `/.+:3[0-9]{4}/$network` blokuje přístup k libovolnému portu od 30000 do 39999.
-* `/8.8.8.(:?8|4)/$network` blokuje přístup k `8.8.8.8` a `8.8.8.4`.
-
-> **Kompatibilita s různými verzemi AdGuardu**
-> 
-> Pouze AdGuard pro Windows, Mac a Android jsou technicky schopné používat pravidla s modifikátorem `$network`.
-
-#### **`$app`** {#app-modifier}
-
-Tento modifikátor umožňuje zúžit pokrytí pravidla na konkrétní aplikaci (nebo seznam aplikací). V systémech Windows a Mac to nemusí být příliš důležité, ale v mobilních zařízeních, kde některá pravidla filtrování musí být specifická pro konkrétní aplikaci, je to velmi důležité.
-
-* Android — použijte název balíčku aplikace, např. `org.example.app`.
-* Windows — použijte název procesu, např. `chrome.exe`.
-* Mac — použijte ID svazku nebo název procesu, např. `com.google.Chrome`.
-
-> V případě počítače Mac můžete ID svazku nebo název procesu aplikace zjistit zobrazením příslušných podrobností o požadavku v záznamu filtrování.
-
-**Příklady**
-
-* `||baddomain.com^$app=org.example.app` — pravidlo pro blokování požadavků, které odpovídají zadané masce a jsou odeslány z Android aplikace `org.example.app`.
-* `||baddomain.com^$app=org.example.app1|org.example.app2` — stejné pravidlo, ale funguje jak pro `org.example.app1`, tak i pro `org.example.app2`.
-
-Pokud chcete, aby se pravidlo nevztahovalo na určité aplikace, začněte název aplikace znakem `~`.
-
-* `||baddomain.com^$app=~org.example.app` — pravidlo pro blokování požadavků, které odpovídají zadané masce a jsou odeslány z jakékoli aplikace kromě `org.example.app`.
-* `||baddomain.com^$app=~org.example.app1|~org.example.app2` — stejně jako výše, ale nyní jsou vyloučeny dvě aplikace: `org.example.app1` a `org.example.app2`.
-
-> **Kompatibilita s různými verzemi AdGuardu**
-> 
-> Pouze AdGuard pro Windows, Mac a Android jsou technicky schopné používat pravidla s modifikátorem `$app`.
-
-#### **`$method`** {#method-modifier}
-
-Tento modifikátor omezuje rozsah pravidla na požadavky, které používají zadanou sadu metod HTTP. Negované metody jsou povoleny. Metody musí být zadány malými písmeny, ale při porovnávání se nerozlišují velká a malá písmena.
-
-**Příklady**
-
-* `||evil.com^$method=get|head` blokuje pouze požadavky GET a HEAD na doméně `evil.com`.
-* `||evil.com^$method=~post|~put` blokuje všechny požadavky kromě POST nebo PUT na doméně `evil.com`.
-
-> **Kompatibilita s různými verzemi AdGuardu**
-> 
-> `$method` je k dispozici počínaje verzí CoreLibs v1.12.
-
-
-#### **`$redirect`** {#redirect-modifier}
-
-AdGuard je schopen přesměrovat webové požadavky na místní "zdroj".
-
-**Syntaxe**
-
-AdGuard používá stejnou syntaxi pravidel filtrování jako uBlock Origin. Je také kompatibilní s modifikátorem ABP `$rewrite=abp-resource`.
-
-`$redirect` je modifikátor pro [základní pravidla filtrování](#basic-rules), takže pravidla s tímto modifikátorem podporují všechny ostatní základní modifikátory, jako jsou `$domain`, `$third-party`, `$script` atd.
-
-> Hodnota modifikátoru `$redirect` musí být název zdroje, který bude použit pro přesměrování.
-
-> `$redirect` je priorita pravidel vyšší než priorita běžných základních pravidel blokování. To znamená, že pokud existuje základní pravidlo blokování (i s modifikátorem `$important`), má před ním přednost pravidlo `$redirect`. Pokud existuje pravidlo seznamu povolených (`@@`) odpovídající stejné adrese URL, zakáže se i přesměrování (pokud není pravidlo `$redirect` označeno také jako `$important`).
-
-##### Zakázání pravidel `$redirect`
-
-
-* `||example.org/script.js$script,redirect=noopjs` — toto pravidlo přesměruje všechny požadavky na `example.org/script.js` na zdroj s názvem `noopjs`.
-* `||example.org/test.mp4$media,redirect=noopmp4-1s` — toto pravidlo přesměruje všechny požadavky na `example.org/test.mp4` na zdroj s názvem `noopmp4-1s`.
-* `@@||example.org^$redirect` zakáže všechna pravidla `$redirect` pro URL adresy, které odpovídají `||example.org^`.
-* `@@||example.org^$redirect=nooptext` zakáže všechna pravidla s `$redirect=nooptext` pro všechny požadavky, které odpovídají `||example.org^`.
-
-> Další informace o přesměrování a jeho použití jsou k dispozici na adrese [na GitHubu](https://github.com/AdguardTeam/Scriptlets#redirect-resources).
-
-> **Kompatibilita s různými verzemi AdGuardu**
-> 
-> Pravidla s modifikátorem `$redirect` nejsou podporována Blokátorem obsahu AdGuard, AdGuardem pro iOS a Safari.
-
-#### **`$redirect-rule`** {#redirect-rule-modifier}
-
-Toto je v podstatě alias [`$redirect`](#redirect-modifier), protože má stejné hodnoty "přesměrování" a logika je téměř podobná. Rozdíl je v tom, že `$redirect-rule` se použije pouze v případě, kdy je cílový požadavek blokován jiným základním pravidlem.
-
-> Negace `$redirect-rule` funguje úplně stejně jako u běžných pravidel `$redirect`. Ještě více než to, bude `@@||example.org^$redirect` negovat jak pravidla `$redirect`, tak `$redirect-rule`.
-
-**Příklady**
-
-```
-||example.org/script.js
-||example.org^$redirect-rule=noopjs
-```
-
-V tomto případě budou pouze požadavky na `example.org/script.js` "přesměrovány" na `noopjs`. Všechny ostatní požadavky na `example.org` zůstanou nedotčeny.
-
-> **Kompatibilita s různými verzemi AdGuardu**
-> 
-> Pravidla s modifikátorem `$redirect-rule` nejsou podporována Blokátorem obsahu AdGuard, AdGuardem pro iOS a Safari.
-
-#### **`$denyallow`** {#denyallow-modifier}
-
-Modifikátor `$denyallow` umožňuje vyhnout se vytváření dalších pravidel, pokud je potřeba zakázat určité pravidlo pro konkrétní domény. `$denyallow` odpovídá pouze cílovým doménám, nikoli doménám odkazujícím.
-
-Přidání tohoto modifikátoru k pravidlu je ekvivalentní vyloučení domén podle shodného vzoru pravidla nebo přidání odpovídajících pravidel výjimek. Chcete-li do jednoho pravidla přidat více domén, použijte jako oddělovací znak `|`.
-
-> **Omezení**
-> 
-> * Vzor shody pravidla se nemůže zaměřit na žádné konkrétní domény, např. nemůže začínat `||`.
-> * Domény v hodnotě modifikátoru nemohou být negovány, např. `$denyallow=~x.com`, nebo mít zástupný znak TLD, např. `$denyallow=x.*`.
-> 
-> Pravidla, která tato omezení porušují, jsou považována za neplatná.
-
-**Příklady**
-
-Toto pravidlo:
-```
-*$script,domain=a.com|b.com,denyallow=x.com|y.com
-```
-
-odpovídá tomuto:
-```
-/^(?!.*(x.com|y.com)).*$/$script,domain=a.com|b.com
-```
-
-nebo kombinaci těchto tří:
-```
-*$script,domain=a.com|b.com
-@@||x.com$script,domain=a.com|b.com
-@@||y.com$script,domain=a.com|b.com
-```
-
-> **Kompatibilita s různými verzemi AdGuardu**
-> 
-> Pravidla s modifikátorem `$denyallow` nejsou Blokátorem obsahu AdGuard podporována.
-
-#### **`$removeparam`** {#removeparam-modifier}
-
-> `$queryprune` je alias `$removeparam`. Protože je `$queryprune` zastaralý, nepoužívejte jej a místo něj použijte `$removeparam`.
-
-Pravidla s modifikátorem `$removeparam` jsou určena k odstranění parametrů dotazu z požadavků adres URL. Vezměte prosím na vědomí, že tato pravidla platí pouze pro `GET`, `HEAD`, `OPTIONS` a [někdy požadavky](#removeparam-modifier-compatibility) `POST`.
-
-> Pravidla `$removeparam`, která neobsahují žádné modifikátory typu obsahu [](#content-type-modifiers), budou odpovídat pouze požadavkům, jejichž typem obsahu je `document`.
-
-**Syntaxe**
-
-**Základní syntaxe**
-
-* `$removeparam=param` — odstraní parametr dotazu s názvem `param` z URL libovolného požadavku, např. požadavek na `http://example.com/page?param=1&another=2` bude transformován na `http://example.com/page?another=2`.
-
-> Základní syntaxe `$removeparam` je podporována počínaje verzí [CoreLibs 1.7](https://adguard.com/en/blog/introducing-corelibs.html) a Rozšířením prohlížeče AdGuard v3.6.
-
-**Regulární výrazy**
-
-Regulární výrazy můžete použít také k porovnání parametrů dotazu a/nebo jejich hodnot:
-
-* `$removeparam=/regexp/[options]` — odstraní parametry dotazu, které odpovídají regulárnímu výrazu `regexp` z adres URL jakéhokoli požadavku. Na rozdíl od základní syntaxe to znamená *"odebrat parametry dotazu normalizované na řetězec `name=value`, který odpovídá regulárnímu výrazu `regexp` "*. `[options]` zde je seznam možností regulárních výrazů. V současné době je jedinou podporovanou možností `i`, díky čemuž se nerozlišují malá a velká písmena.
-
-> Syntaxe regulárních výrazů `$removeparam` bude podporována od CoreLibs v1.8 a Rozšíření prohlížeče AdGuard v4.0. Prozatím používejte zjednodušenou verzi: `$removeparam=param`.
-
-> **Uvození speciálních znaků**
-> 
-> Nezapomeňte v regulárních výrazech uvodit speciální znaky jako `,`, `/` a `$`. Pro tento účel použijte znak `\`. Např. uvozená čárka by měla vypadat takto: `\,`.
-
-> **Poznámka**
-> 
-> Pravidla typu regexp se zaměřují na název i hodnotu parametru. Aby se minimalizovala možnost chyb, je bezpečnější začínat každý regexp znakem `/^`, pokud se nezaměřujete výslovně na hodnoty parametrů.
-
-> Pokusíme se automaticky detekovat a ignorovat neuvozený znak `$` pomocí jednoduchého pravidla: Nejedná se o oddělovač možností, pokud jsou všechny tři hodnoty pravdivé: 1. Vypadá to jako `$/`; 2. Nalevo od něj je další znak lomítka `/`; 3. Nalevo od tohoto znaku lomítka je další znak dolaru bez uvození `$`.
-
-**Odebrat všechny parametry dotazu**
-
-Chcete-li odstranit všechny parametry dotazu, zadejte samostatně `$removeparam`:
-
-* `||example.org^$removeparam` — odstraní všechny parametry dotazu z adres URL odpovídajících `||example.org^`.
-
-**Inverze**
-
-Pro použití inverze použijte `~`:
-
-* `$removeparam=~param` — odstraní všechny parametry dotazu s názvem odlišným od `param`.
-* `$removeparam=~/regexp/` — odstraní všechny parametry dotazu, které neodpovídají regulárnímu výrazu `regexp`.
-
-**Negace `$removeparam`**
-
-Tento druh pravidel funguje v podstatě stejně jako u modifikátorů [`$csp`](#csp-modifier) a [`$redirect`](#redirect-modifier).
-
-K negaci `$removeparam` použijte `@@`:
-
-* `@@||example.org^$removeparam` neguje všechna pravidla `$removeparam` pro URL adresy, které odpovídají `||example.org^`.
-* `@@||example.org^$removeparam=param` neguje všechna pravidla s `$removeparam=param` pro jakýkoliv požadavek, který odpovídá `||example.org^`.
-* `@@||example.org^$removeparam=/regexp/` neguje všechna pravidla s `$removeparam=/regexp/` pro jakýkoliv požadavek, který odpovídá `||example.org^`.
+U požadavků, které odpovídají pravidlu `$csp`, posílíme zásady zabezpečení odezvy posílením zásad zabezpečení obsahu, podobně jako u zásad zabezpečení obsahu modifikátoru obsahu `$csp`. Pravidla `$csp` jsou aplikována nezávisle na jakémkoli jiném typu pravidla. Ostatní základní pravidla na to nemají žádný vliv, **kromě výjimek na úrovni dokumentu** (viz část s příklady níže).
 
 > **Vícenásobná pravidla odpovídajících jednomu požadavku**
 > 
-> V případě, že jednomu požadavku odpovídá více pravidel `$removeparam`, bude každé z nich použito jedno po druhém.
-
-**Příklady**
-
-```
-$removeparam=/^(utm_source|utm_medium|utm_term)=/
-$removeparam=/^(utm_content|utm_campaign|utm_referrer)=/
-@@||example.com^$removeparam
-```
-
-S těmito pravidly bude z jakéhokoli požadavku odstraněno [UTM parametrů](https://en.wikipedia.org/wiki/UTM_parameters), kromě toho, že požadavky na `example.com` nebudou odstraněny vůbec, např. `http://google.com/page?utm_source=s&utm_referrer= fb.com&utm_content=img` bude transformováno na `http://google.com/page`, ale `http://example.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` nebude ovlivněno pravidlem blokování.
-
-* `$removeparam=utm_source` — odstraní parametr dotazu `utm_source` ze všech požadavků.
-
-* `$removeparam=/utm_.*/` — odstraní všechny parametry `utm_* query` z URL libovolného požadavku, např. požadavek na `http://example.com/page?utm_source=test` bude transformován na `http://example.com/page`.
-
-* `$removeparam=/^utm_source=campaign$/` — odstraní parametr dotazu `utm_source` s hodnotou rovnou `campaign`. Nemá vliv na ostatní parametry `utm_source`.
-
-**Negace pravidla `$removeparam` a jeho nahrazení jiným pravidlem**
-
-```
-$removeparam=/^(gclid|yclid|fbclid)=/
-@@||example.com^$removeparam=/^(gclid|yclid|fbclid)=/
-||example.com^$removeparam=/^(yclid|fbclid)=/
-```
-
-Díky těmto pravidlům budou ze všech požadavků odstraněny identifikátory kliknutí Google, Yandex a Facebook. Existuje jedna výjimka: Z požadavků na example.com nebude odstraněno Google Click ID (gclid).
-
-**Negace pro všechny parametry `$removeparam`**
-
-```
-$removeparam=/^(utm_source|utm_medium|utm_term)=/
-$removeparam=/^(utm_content|utm_campaign|utm_referrer)=/
-@@||example.com^$removeparam
-```
-
-Díky těmto pravidlům budou zadané parametry UTM odstraněny ze všech požadavků s výjimkou požadavků na `example.org`.
-
-> **Kompatibilita s jinými modifikátory**
-> 
-> Pravidla `$removeparam` jsou kompatibilní se [základními modifikátory](#basic-rules-common-modifiers), [modifikátory typu obsahu](#content-type-modifiers) a s modifikátory `$important` a `$app`. Pravidla s jinými modifikátory jsou považována za neplatná a budou vyřazena.
-
-> **Poznámka**
-> 
-> Pravidla `$removeparam` lze také zakázat pravidly výjimek `$document` a `$urlblock`. Základní pravidla pro výjimky bez modifikátorů to však nedělají. Např. `@@||example.com^` nezakáže `$removeparam=p` pro požadavky na **example.com**, ale `@@||example.com^$urlblock` ano.
-
-> ##### **Kompatibilita s různými verzemi AdGuardu** {#removeparam-modifier-compatibility}
-> 
-> * Pravidla s modifikátorem `$removeparam` podporuje AdGuard pro Windows, Mac, Android a Rozšíření prohlížeče AdGuard pro Chrome, Firefox a Edge.
-> 
-> * Typy požadavků `POST` podporuje pouze AdGuard pro Windows, Mac a Android ** s CoreLibs verze 1.10 nebo novější**.
-
-> **Omezení**
-> 
-> Pravidla s modifikátorem `$removeparam` lze použít [**pouze v důvěryhodných filtrech**](#trusted-filters).
-
-#### **`$removeheader`** {#removeheader-modifier}
-
-Pravidla s modifikátorem `$removeheader` jsou určena k odstranění záhlaví z požadavků a odpovědí HTTP. Původní motivací pro tento typ pravidla je možnost zbavit se záhlaví `Refresh`, které se často používá k přesměrování uživatelů na nežádoucí místo. To však není jediný případ, kdy může být tento modifikátor užitečný.
-
-Stejně jako `$csp`, `$redirect`, `$removeparam` a `$cookie` i tento modifikátor existuje samostatně, pravidla s ním nezávisí na běžných základních pravidlech, tj. pravidelná výjimka nebo pravidla blokování jej neovlivní. Ve výchozím nastavení ovlivňuje pouze záhlavíodpovědí. Můžete jej však také změnit tak, aby odstraňoval hlavičky z požadavků HTTP.
+> V případě, že jednomu požadavku odpovídá více pravidel `$csp`, použijeme každé z nich.
 
 **Syntaxe**
 
-**Základní syntaxe**
+Syntaxe hodnoty `$csp` je podobná syntaxi záhlaví Content Security Policy.
 
-* `||example.org^$removeheader=header-name` odstraní **odpověď** záhlaví s názvem `header-name`
-* `||example.org^$removeheader=request:header-name` odstraní **požadavek** záhlaví s názvem `header-name`
-
-> `$removeheader` nerozlišuje velká a malá písmena, doporučujeme vždy používat malá písmena.
-
-**Negace `$removeheader`**
-
-Tento typ pravidel funguje v podstatě stejně jako u modifikátorů `$csp` a `$redirect`.
-
-K negaci `$removeheader` použijte `@@`:
-
-* `@@||example.org^$removeheader` neguje **všechna** pravidla `$removeheader` pro URL adresy, které odpovídají `||example.org^`.
-* `@@||example.org^$removeheader=header` neguje všechna pravidla s `$removeheader=header` pro jakýkoliv požadavek, který odpovídá `||example.org^`.
-
-> Pravidla `$removeheader` lze také zakázat pravidly výjimek `$document` a `$urlblock`. Základní pravidla pro výjimky bez modifikátorů to však nedělají. Např. `@@||example.com^` nezakáže `$removeheader=p` pro požadavky na `example.com`, ale `@@||example.com^$urlblock` ano.
-
-> **Vícenásobná pravidla odpovídajících jednomu požadavku**
-> 
-> V případě, že jednomu požadavku odpovídá více pravidel `$removeheader`, použijeme každé z nich.
+Hodnota `$csp` může být v případě pravidel pro výjimky prázdná. Viz níže uvedený oddíl s příklady.
 
 > **Omezení**
 > 
-> 1. Tento typ pravidel lze použít [**pouze v důvěryhodných filtrech**](#trusted-filters).
-> 
-> 2. Aby nedošlo k narušení bezpečnosti, nelze z níže uvedeného seznamu odstranit záhlaví `$removeheader`:
->     
->     * `access-control-allow-origin`
->     * `access-control-allow-credentials`
->     * `access-control-allow-headers`
->     * `access-control-allow-methods`
->     * `access-control-expose-headers`
->     * `access-control-max-age`
->     * `access-control-request-headers`
->     * `access-control-request-method`
->     * `origin`
->     * `timing-allow-origin`
->     * `allow`
->     * `cross-origin-embedder-policy`
->     * `cross-origin-opener-policy`
->     * `cross-origin-resource-policy`
->     * `content-security-policy`
->     * `content-security-policy-report-only`
->     * `expect-ct`
->     * `feature-policy`
->     * `origin-isolation`
->     * `strict-transport-security`
->     * `upgrade-insecure-requests`
->     * `x-content-type-options`
->     * `x-download-options`
->     * `x-frame-options`
->     * `x-permitted-cross-domain-policies`
->     * `x-powered-by`
->     * `x-xss-protection`
->     * `public-key-pins`
->     * `public-key-pins-report-only`
->     * `sec-websocket-key`
->     * `sec-websocket-extensions`
->     * `sec-websocket-accept`
->     * `sec-websocket-protocol`
->     * `sec-websocket-version`
->     * `p3p`
->     * `sec-fetch-mode`
->     * `sec-fetch-dest`
->     * `sec-fetch-site`
->     * `sec-fetch-user`
->     * `referrer-policy`
->     * `content-type`
->     * `content-length`
->     * `accept`
->     * `accept-encoding`
->     * `host`
->     * `connection`
->     * `transfer-encoding`
->     * `upgrade`
-> 3. Pravidla `$removeheader` nejsou kompatibilní s žádnými jinými modifikátory kromě `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, a [modifikátorů typu obsahu](#content-type-modifiers), např. `$script`, `$stylesheet`, atd. Pravidla s jinými modifikátory jsou považována za neplatná a budou vyřazena.
+> 1. V hodnotě `$csp` je zakázáno několik znaků: `,`, `$`.
+> 2. Pravidla `$csp` podporují omezený seznam modifikátorů: `$domain`, `$important`, `$subdocument`.
+> 3. Pravidla s direktivami `report-*` jsou považována za neplatná.
 
 **Příklady**
 
-* `||example.org^$removeheader=refresh` odstraní záhlaví `Refresh` ze všech HTTP odpovědí vrácených doménou `example.org` a jejími subdoménami.
-* `||example.org^$removeheader=request:x-client-data` odstraní záhlaví `X-Client-Data` ze všech požadavků HTTP.
-* Další blok pravidel odstraní záhlaví `Refresh` a `Location` ze všech odpovědí HTTP vrácených doménou `example.org` s výjimkou požadavků na `example.org/path/*`, u kterých nebudou odstraněny žádné záhlaví:
-  ```
-  ||example.org^$removeheader=refresh
-  ||example.org^$removeheader=location
-  @@||example.org/path/$removeheader
-  ```
+* `||example.org^$csp=frame-src 'none'` blokuje všechny obrázky na example.org a jejích subdoménách.
+* `@@||example.org/page/*$csp=frame-src 'none'` zakáže všechna pravidla s modifikátorem `$csp` přesně odpovídajícím příznakem `frame-src 'none'` na všech stránkách odpovídajících vzoru pravidla. Např. výše uvedené pravidlo.
+* `@@||example.org/page/*$csp` zakáže všechna pravidla `$csp` na všech stránkách odpovídajících vzoru pravidla.
+* `||example.org^$csp=script-src 'self' 'unsafe-eval' http: https:` zakáže vložené skripty na všech stránkách odpovídajících vzoru pravidla.
+* `@@||example.org^$document` nebo `@@||example.org^$urlblock` zakáží všechna pravidla `$csp` na všech stránkách odpovídajících vzoru pravidla.
 
 > **Kompatibilita s různými verzemi AdGuardu**
 > 
-> Pravidla s modifikátorem `$removeheader` podporuje AdGuard pro Windows, Mac, Android a Rozšíření prohlížeče AdGuard pro Chrome, Firefox a Edge.
+> Pravidla s modifikátorem `$csp` nejsou podporována Blokátorem obsahu AdGuard, AdGuardem pro iOS a Safari.
 
 #### **`$hls`** {#hls-modifier}
 
@@ -1348,10 +948,10 @@ Základní výjimky URL nesmí zakázat pravidla s modifikátorem `$hls`. Lze je
 
 > **Omezení**
 > 
-> * Pravidla `$hls` jsou povolena pouze v důvěryhodných filtrech.
-> * Pravidla `$hls` nejsou kompatibilní s žádnými jinými modifikátory kromě `$domain`, `$third- party`, `$app`, `$important`, `$match- case` a `$xmlhttprequest`.
-> * `$hls` pravidla platí pouze pro seznamy stop HLS, což je text kódovaný v UTF-8 začínající řádkem `#EXTM3U`. Jakákoli jiná odpověď nebude těmito pravidly upravena.
-> * Pravidla `$hls` neplatí, pokud je velikost původní odpovědi větší než 3 MB.
+> * Pravidla `$hls` jsou povolena pouze v důvěryhodných filtrech
+> * Pravidla `$hls` nejsou kompatibilní s žádnými jinými modifikátory kromě `$domain`, `$third- party`, `$app`, `$important`, `$match- case` a `$xmlhttprequest`
+> * `$hls` pravidla platí pouze pro seznamy stop HLS, což je text kódovaný v UTF-8 začínající řádkem `#EXTM3U`. Jakákoli jiná odpověď nebude těmito pravidly upravena
+> * Pravidla `$hls` neplatí, pokud je velikost původní odpovědi větší než 3 MB
 
 > **Poznámka**
 > 
@@ -1435,11 +1035,25 @@ preroll.ts
 > 
 > Pravidla s modifikátorem `$hls` jsou podporována AdGuardem pro Windows, Mac a Android, **s knihovnou CoreLibs verze 1.10 nebo novější**.
 
+#### **`$inline-script`** {#inline-script-modifier}
+
+Modifikátor `$inline-script` je jakousi zkratkou pro modifikátor [`$csp`](#csp-modifier) s konkrétní hodnotou. Např. pravidlo `||example.org^$inline-script` se převádí na takovou sadu pravidel:
+```
+||example.org^$csp=script-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
+```
+
+#### **`$inline-font`** {#inline-font-modifier}
+
+Modifikátor `$inline-font` je jakousi zkratkou pro modifikátor [`$csp`](#csp-modifier) s konkrétní hodnotou. Např. pravidlo `||example.org^$inline-font` se převádí na takovou sadu pravidel:
+```
+||example.org^$csp=font-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
+```
+
 #### **`$jsonprune`** {#jsonprune-modifier}
 
 Pravidla `$jsonprune` upravují odpověď na odpovídající požadavek odstraněním položek JSON, které odpovídají upravenému výrazu [JSONPath](https://goessner.net/articles/JsonPath/). Nemění odpovědi, které nejsou platnými dokumenty JSON.
 
-> V AdGuardu pro Windows, Mac a Android **s CoreLibs verze 1.11 nebo novější**, podporuje `$jsonprune` také úpravu dokumentů JSONP (padded JSON).
+> V AdGuardu pro Windows, Mac a Android **s CoreLibs v1.11 nebo novější**, podporuje `$jsonprune` také úpravu dokumentů JSONP (padded JSON).
 
 **Syntaxe**
 
@@ -1582,7 +1196,7 @@ Základní výjimky URL nesmí zakázat pravidla s modifikátorem `$jsonprune`. 
 
 **Vnořené výrazy JSONPath**
 
-> V AdGuardu pro Windows, Mac a Android, **s knihovnou CoreLibs verze 1.11 nebo novější**, lze výrazy JSONPath použít jako klíče ve výrazech filtru.
+> V AdGuardu pro Windows, Mac a Android, **s knihovnou CoreLibs v1.11 nebo novější**, lze výrazy JSONPath použít jako klíče ve výrazech filtru.
 
 * `||example.org^$jsonprune=\$.elems[?(má "\$.abc")]` odstraní všechny potomky `elems`, které mají vlastnost volitelnou výrazem JSONPath `$.abc`.
 
@@ -1656,6 +1270,397 @@ Základní výjimky URL nesmí zakázat pravidla s modifikátorem `$jsonprune`. 
 ```
 
 </details>
+
+#### **`$network`** {#network-modifier}
+
+Jedná se v podstatě o pravidla typu brány Firewall, která umožňují plně zablokovat nebo odblokovat přístup na zadanou vzdálenou adresu.
+
+1. Pravidla `$network` odpovídají **pouze IP adresám**! Nelze je použít k zablokování nebo odblokování přístupu k doméně.
+2. Chcete-li se shodovat s adresou IPv6, musíte použít sbalenou syntaxi, např. `[2001:4860:4860::8888]$network` namísto `[2001:4860:4860:0:0:0:0:8888]$network`.
+3. Pravidlo seznamu povolených `$network` způsobí, že AdGuard bude obcházet data odpovídajícího koncového bodu, např. nebude provádět žádné další filtrování.
+4. Pokud část IP začíná a končí znakem `/`, je považována za regulární výraz.
+
+> Pro lepší pochopení regulárních výrazů doporučujeme seznámit se s tímto [článkem](#regexp-support).
+
+**Příklady**
+
+* `174.129.166.49:3478^$network` blokuje přístup k `174.129.166.49:3478` (ale ne k `174.129.166.49:34788`).
+* `[2001:4860:4860::8888]:443^$network` blokuje přístup k `[2001:4860:4860::8888]:443`.
+* `174.129.166.49$network` blokuje přístup k `174.129.166.49:*`.
+* `@@174.129.166.49$network` způsobí, že AdGuard bude koncovému bodu předávat data. Žádná jiná pravidla se neuplatňují.
+* `/.+:3[0-9]{4}/$network` blokuje přístup k libovolnému portu od 30000 do 39999.
+* `/8.8.8.(:?8|4)/$network` blokuje přístup k `8.8.8.8` a `8.8.8.4`.
+
+> **Kompatibilita s různými verzemi AdGuardu**
+> 
+> Pouze AdGuard pro Windows, Mac a Android jsou technicky schopné používat pravidla s modifikátorem `$network`.
+
+#### **`$permissions`** {#permissions-modifier}
+
+Tento modifikátor zcela mění chování pravidla. Pokud je použitý na pravidlo, pravidlo nezablokuje odpovídající požadavek. Namísto toho se upraví záhlaví odpovědí.
+
+> Pro použití tohoto typu pravidel je nutné mít základní znalosti o vrstvě zabezpečení [Permissions Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Permissions_Policy).
+
+U požadavků, které odpovídají pravidlu `$permissions`, AdGuard posiluje zásady funkcí odpovědi přidáním dalších zásad oprávnění, které se rovnají obsahu modifikátoru `$permissions`. Pravidla `$permissions` jsou aplikována nezávisle na jakémkoli jiném typu pravidla. Ostatní základní pravidla na to nemají žádný vliv, **kromě výjimek na úrovni dokumentu** (viz část s příklady).
+
+> **Vícenásobná pravidla odpovídajících jednomu požadavku.**
+> 
+> V případě, že jednomu požadavku odpovídá více pravidel `$permissions`, použijem AdGuard každé z nich.
+
+**Syntaxe**
+
+Hodnota syntaxe `$permissions` je podobná [syntaxi](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy) záhlaví `Permissions-Policy` s jednou výjimkou: čárka, která odděluje několik prvků **MUSÍ** být uvozena — viz příklady níže. Seznam dostupných direktiv je k dispozici [zde](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives).
+
+Hodnota `$permissions` může být v případě pravidel pro výjimky prázdná — viz příklady níže.
+
+> **Omezení**
+> 
+> 1. Zakázané znaky v `$permissions` hodnotě: `$`;
+> 2. `$permissions` je kompatibilní s omezeným seznamem modifikátorů: `$domain`, `$important`, a `$subdocument`.
+
+**Příklady**
+
+* `||example.org^$permissions=sync-xhrˇ=()` zakazuje synchronní požadavky `XMLHttpRequest` napříč `example.org`.
+* `@@||example.org/page/*$permissions=sync-xhr=()` zakáže všechna pravidla s modifikátorem `$permissions` přesně odpovídajícím příznakem `sync-xhr=()` na všech stránkách odpovídajících vzoru pravidla. Např. výše uvedené pravidlo.
+* `@@||example.org/page/*$permissions` zakáže všechna pravidla `$permissions` na všech stránkách odpovídajících vzoru pravidla.
+* `$domain=example.org|example.com,permissions=oversized-images=()\; sync-script=()\; unsized-media=()` zakazuje nadměrné obrázky, synchronní skripty a nevhodné velikosti multimediálních prvků napříč `example.org` a `example.com`.
+* `@@||example.org^$document` nebo `@@||example.org^$urlblock` zakáží všechna pravidla `$permission` na všech stránkách odpovídajících vzoru pravidla.
+
+> **Kompatibilita s různými verzemi AdGuardu**
+> 
+> Pravidla s modifikátorem `$permissions` jsou podporována AdGuardem pro Windows, Mac a Android, **s knihovnou CoreLibs verze 1.11 nebo novější**.
+
+#### **`$redirect`** {#redirect-modifier}
+
+AdGuard je schopen přesměrovat webové požadavky na místní "zdroj".
+
+**Syntaxe**
+
+AdGuard používá stejnou syntaxi pravidel filtrování jako uBlock Origin. Je také kompatibilní s modifikátorem ABP `$rewrite=abp-resource`.
+
+`$redirect` je modifikátor pro [základní pravidla filtrování](#basic-rules), takže pravidla s tímto modifikátorem podporují všechny ostatní základní modifikátory, jako jsou `$domain`, `$third-party`, `$script` atd.
+
+> Hodnota modifikátoru `$redirect` musí být název zdroje, který bude použit pro přesměrování.
+
+> `$redirect` je priorita pravidel vyšší než priorita běžných základních pravidel blokování. To znamená, že pokud existuje základní pravidlo blokování (i s modifikátorem `$important`), má před ním přednost pravidlo `$redirect`. Pokud existuje pravidlo seznamu povolených (`@@`) odpovídající stejné adrese URL, zakáže se i přesměrování (pokud není pravidlo `$redirect` označeno také jako `$important`).
+
+##### Zakázání pravidel `$redirect`
+
+
+* `||example.org/script.js$script,redirect=noopjs` — toto pravidlo přesměruje všechny požadavky na `example.org/script.js` na zdroj s názvem `noopjs`.
+* `||example.org/test.mp4$media,redirect=noopmp4-1s` — toto pravidlo přesměruje všechny požadavky na `example.org/test.mp4` na zdroj s názvem `noopmp4-1s`.
+* `@@||example.org^$redirect` zakáže všechna pravidla `$redirect` pro URL adresy, které odpovídají `||example.org^`.
+* `@@||example.org^$redirect=nooptext` zakáže všechna pravidla s `$redirect=nooptext` pro všechny požadavky, které odpovídají `||example.org^`.
+
+> Další informace o přesměrování a jeho použití jsou k dispozici na adrese [na GitHubu](https://github.com/AdguardTeam/Scriptlets#redirect-resources).
+
+> **Kompatibilita s různými verzemi AdGuardu**
+> 
+> Pravidla s modifikátorem `$redirect` nejsou podporována Blokátorem obsahu AdGuard, AdGuardem pro iOS a Safari.
+
+#### **`$redirect-rule`** {#redirect-rule-modifier}
+
+Toto je v podstatě alias [`$redirect`](#redirect-modifier), protože má stejné hodnoty "přesměrování" a logika je téměř podobná. Rozdíl je v tom, že `$redirect-rule` se použije pouze v případě, kdy je cílový požadavek blokován jiným základním pravidlem.
+
+> Negace `$redirect-rule` funguje úplně stejně jako u běžných pravidel `$redirect`. Ještě více než to, bude `@@||example.org^$redirect` negovat jak pravidla `$redirect`, tak `$redirect-rule`.
+
+**Příklady**
+
+```
+||example.org/script.js
+||example.org^$redirect-rule=noopjs
+```
+
+V tomto případě budou pouze požadavky na `example.org/script.js` "přesměrovány" na `noopjs`. Všechny ostatní požadavky na `example.org` zůstanou nedotčeny.
+
+> **Kompatibilita s různými verzemi AdGuardu**
+> 
+> Pravidla s modifikátorem `$redirect-rule` nejsou podporována Blokátorem obsahu AdGuard, AdGuardem pro iOS a Safari.
+
+#### **`$removeheader`** {#removeheader-modifier}
+
+Pravidla s modifikátorem `$removeheader` jsou určena k odstranění záhlaví z požadavků a odpovědí HTTP. Původní motivací pro tento typ pravidla je možnost zbavit se záhlaví `Refresh`, které se často používá k přesměrování uživatelů na nežádoucí místo. To však není jediný případ, kdy může být tento modifikátor užitečný.
+
+Stejně jako `$csp`, `$redirect`, `$removeparam` a `$cookie` i tento modifikátor existuje samostatně, pravidla s ním nezávisí na běžných základních pravidlech, tj. pravidelná výjimka nebo pravidla blokování jej neovlivní. Ve výchozím nastavení ovlivňuje pouze záhlavíodpovědí. Můžete jej však také změnit tak, aby odstraňoval hlavičky z požadavků HTTP.
+
+**Syntaxe**
+
+**Základní syntaxe**
+
+* `||example.org^$removeheader=header-name` odstraní **odpověď** záhlaví s názvem `header-name`
+* `||example.org^$removeheader=request:header-name` odstraní **požadavek** záhlaví s názvem `header-name`
+
+> `$removeheader` nerozlišuje velká a malá písmena, doporučujeme vždy používat malá písmena.
+
+**Negace `$removeheader`**
+
+Tento typ pravidel funguje v podstatě stejně jako u modifikátorů `$csp` a `$redirect`.
+
+K negaci `$removeheader` použijte `@@`:
+
+* `@@||example.org^$removeheader` neguje **všechna** pravidla `$removeheader` pro URL adresy, které odpovídají `||example.org^`.
+* `@@||example.org^$removeheader=header` neguje všechna pravidla s `$removeheader=header` pro jakýkoliv požadavek, který odpovídá `||example.org^`.
+
+> Pravidla `$removeheader` lze také zakázat pravidly výjimek `$document` a `$urlblock`. Základní pravidla pro výjimky bez modifikátorů to však nedělají. Např. `@@||example.com^` nezakáže `$removeheader=p` pro požadavky na `example.com`, ale `@@||example.com^$urlblock` ano.
+
+> **Vícenásobná pravidla odpovídajících jednomu požadavku**
+> 
+> V případě, že jednomu požadavku odpovídá více pravidel `$removeheader`, použijeme každé z nich.
+
+> **Omezení**
+> 
+> 1. Tento typ pravidel lze použít [**pouze v důvěryhodných filtrech**](#trusted-filters).
+> 
+> 2. Aby nedošlo k narušení bezpečnosti, nelze z níže uvedeného seznamu odstranit záhlaví `$removeheader`:
+>     
+>     * `access-control-allow-origin`
+>     * `access-control-allow-credentials`
+>     * `access-control-allow-headers`
+>     * `access-control-allow-methods`
+>     * `access-control-expose-headers`
+>     * `access-control-max-age`
+>     * `access-control-request-headers`
+>     * `access-control-request-method`
+>     * `origin`
+>     * `timing-allow-origin`
+>     * `allow`
+>     * `cross-origin-embedder-policy`
+>     * `cross-origin-opener-policy`
+>     * `cross-origin-resource-policy`
+>     * `content-security-policy`
+>     * `content-security-policy-report-only`
+>     * `expect-ct`
+>     * `feature-policy`
+>     * `origin-isolation`
+>     * `strict-transport-security`
+>     * `upgrade-insecure-requests`
+>     * `x-content-type-options`
+>     * `x-download-options`
+>     * `x-frame-options`
+>     * `x-permitted-cross-domain-policies`
+>     * `x-powered-by`
+>     * `x-xss-protection`
+>     * `public-key-pins`
+>     * `public-key-pins-report-only`
+>     * `sec-websocket-key`
+>     * `sec-websocket-extensions`
+>     * `sec-websocket-accept`
+>     * `sec-websocket-protocol`
+>     * `sec-websocket-version`
+>     * `p3p`
+>     * `sec-fetch-mode`
+>     * `sec-fetch-dest`
+>     * `sec-fetch-site`
+>     * `sec-fetch-user`
+>     * `referrer-policy`
+>     * `content-type`
+>     * `content-length`
+>     * `accept`
+>     * `accept-encoding`
+>     * `host`
+>     * `connection`
+>     * `transfer-encoding`
+>     * `upgrade`
+> 3. Pravidla `$removeheader` nejsou kompatibilní s žádnými jinými modifikátory kromě `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, a [modifikátorů typu obsahu](#content-type-modifiers), např. `$script`, `$stylesheet`, atd. Pravidla s jinými modifikátory jsou považována za neplatná a budou vyřazena.
+
+**Příklady**
+
+* `||example.org^$removeheader=refresh` odstraní záhlaví `Refresh` ze všech HTTP odpovědí vrácených doménou `example.org` a jejími subdoménami.
+* `||example.org^$removeheader=request:x-client-data` odstraní záhlaví `X-Client-Data` ze všech požadavků HTTP.
+* Další blok pravidel odstraní záhlaví `Refresh` a `Location` ze všech odpovědí HTTP vrácených doménou `example.org` s výjimkou požadavků na `example.org/path/*`, u kterých nebudou odstraněny žádné záhlaví:
+  ```
+  ||example.org^$removeheader=refresh
+  ||example.org^$removeheader=location
+  @@||example.org/path/$removeheader
+  ```
+
+> **Kompatibilita s různými verzemi AdGuardu**
+> 
+> Pravidla s modifikátorem `$removeheader` podporuje AdGuard pro Windows, Mac, Android a Rozšíření prohlížeče AdGuard pro Chrome, Firefox a Edge.
+
+#### **`$removeparam`** {#removeparam-modifier}
+
+> `$queryprune` je alias `$removeparam`. Protože je `$queryprune` zastaralý, nepoužívejte jej a místo něj použijte `$removeparam`.
+
+Pravidla s modifikátorem `$removeparam` jsou určena k odstranění parametrů dotazu z požadavků adres URL. Vezměte prosím na vědomí, že tato pravidla platí pouze pro `GET`, `HEAD`, `OPTIONS` a [někdy požadavky](#removeparam-modifier-compatibility) `POST`.
+
+> Pravidla `$removeparam`, která neobsahují žádné modifikátory typu obsahu [](#content-type-modifiers), budou odpovídat pouze požadavkům, jejichž typem obsahu je `document`.
+
+**Syntaxe**
+
+**Základní syntaxe**
+
+* `$removeparam=param` odstraní parametr dotazu s názvem `param` z URL libovolného požadavku, např. požadavek na `http://example.com/page?param=1&another=2` bude transformován na `http://example.com/page?another=2`.
+
+> Základní syntaxe `$removeparam` je podporována počínaje verzí [CoreLibs 1.7](https://adguard.com/en/blog/introducing-corelibs.html) a Rozšířením prohlížeče AdGuard v3.6.
+
+**Regulární výrazy**
+
+Regulární výrazy můžete použít také k porovnání parametrů dotazu a/nebo jejich hodnot:
+
+* `$removeparam=/regexp/[options]` — odstraní parametry dotazu, které odpovídají regulárnímu výrazu `regexp` z adres URL jakéhokoli požadavku. Na rozdíl od základní syntaxe to znamená *"odebrat parametry dotazu normalizované na řetězec `name=value`, který odpovídá regulárnímu výrazu `regexp` "*. `[options]` zde je seznam možností regulárních výrazů. V současné době je jedinou podporovanou možností `i`, díky čemuž se nerozlišují malá a velká písmena.
+
+> Syntaxe regulárních výrazů `$removeparam` bude podporována od CoreLibs v1.8 a Rozšíření prohlížeče AdGuard v4.0. Prozatím používejte zjednodušenou verzi: `$removeparam=param`.
+
+> **Uvození speciálních znaků**
+> 
+> Nezapomeňte v regulárních výrazech uvodit speciální znaky jako `,`, `/` a `$`. Pro tento účel použijte znak `\`. Např. uvozená čárka by měla vypadat takto: `\,`.
+
+> **Poznámka**
+> 
+> Pravidla typu regexp se zaměřují na název i hodnotu parametru. Aby se minimalizovala možnost chyb, je bezpečnější začínat každý regexp znakem `/^`, pokud se nezaměřujete výslovně na hodnoty parametrů.
+
+> Pokusíme se automaticky detekovat a ignorovat neuvozený znak `$` pomocí jednoduchého pravidla: Nejedná se o oddělovač možností, pokud jsou všechny tři hodnoty pravdivé: 1. Vypadá to jako `$/`; 2. Nalevo od něj je další znak lomítka `/`; 3. Nalevo od tohoto znaku lomítka je další znak dolaru bez uvození `$`.
+
+**Odebrat všechny parametry dotazu**
+
+Chcete-li odstranit všechny parametry dotazu, zadejte samostatně `$removeparam`:
+
+* `||example.org^$removeparam` — odstraní všechny parametry dotazu z adres URL odpovídajících `||example.org^`.
+
+**Inverze**
+
+Pro použití inverze použijte `~`:
+
+* `$removeparam=~param` — odstraní všechny parametry dotazu s názvem odlišným od `param`.
+* `$removeparam=~/regexp/` — odstraní všechny parametry dotazu, které neodpovídají regulárnímu výrazu `regexp`.
+
+**Negace `$removeparam`**
+
+Tento druh pravidel funguje v podstatě stejně jako u modifikátorů [`$csp`](#csp-modifier) a [`$redirect`](#redirect-modifier).
+
+K negaci `$removeparam` použijte `@@`:
+
+* `@@||example.org^$removeparam` neguje všechna pravidla `$removeparam` pro URL adresy, které odpovídají `||example.org^`.
+* `@@||example.org^$removeparam=param` neguje všechna pravidla s `$removeparam=param` pro jakýkoliv požadavek, který odpovídá `||example.org^`.
+* `@@||example.org^$removeparam=/regexp/` neguje všechna pravidla s `$removeparam=/regexp/` pro jakýkoliv požadavek, který odpovídá `||example.org^`.
+
+> **Vícenásobná pravidla odpovídajících jednomu požadavku**
+> 
+> V případě, že jednomu požadavku odpovídá více pravidel `$removeparam`, bude každé z nich použito jedno po druhém.
+
+**Příklady**
+
+```
+$removeparam=/^(utm_source|utm_medium|utm_term)=/
+$removeparam=/^(utm_content|utm_campaign|utm_referrer)=/
+@@||example.com^$removeparam
+```
+
+S těmito pravidly bude z jakéhokoli požadavku odstraněno [UTM parametrů](https://en.wikipedia.org/wiki/UTM_parameters), kromě toho, že požadavky na `example.com` nebudou odstraněny vůbec, např. `http://google.com/page?utm_source=s&utm_referrer= fb.com&utm_content=img` bude transformováno na `http://google.com/page`, ale `http://example.com/page?utm_source=s&utm_referrer=fb.com&utm_content=img` nebude ovlivněno pravidlem blokování.
+
+* `$removeparam=utm_source` odstraní parametr dotazu `utm_source` ze všech požadavků.
+
+* `$removeparam=/utm_.*/` — odstraní všechny parametry `utm_* query` z URL libovolného požadavku, např. požadavek na `http://example.com/page?utm_source=test` bude transformován na `http://example.com/page`.
+
+* `$removeparam=/^utm_source=campaign$/` — odstraní parametr dotazu `utm_source` s hodnotou rovnou `campaign`. Nemá vliv na ostatní parametry `utm_source`.
+
+**Negace pravidla `$removeparam` a jeho nahrazení jiným pravidlem**
+
+```
+$removeparam=/^(gclid|yclid|fbclid)=/
+@@||example.com^$removeparam=/^(gclid|yclid|fbclid)=/
+||example.com^$removeparam=/^(yclid|fbclid)=/
+```
+
+Díky těmto pravidlům budou ze všech požadavků odstraněny identifikátory kliknutí Google, Yandex a Facebook. Existuje jedna výjimka: Z požadavků na example.com nebude odstraněno Google Click ID (gclid).
+
+**Negace pro všechny parametry `$removeparam`**
+
+```
+$removeparam=/^(utm_source|utm_medium|utm_term)=/
+$removeparam=/^(utm_content|utm_campaign|utm_referrer)=/
+@@||example.com^$removeparam
+```
+
+Díky těmto pravidlům budou zadané parametry UTM odstraněny ze všech požadavků s výjimkou požadavků na `example.org`.
+
+> **Kompatibilita s jinými modifikátory**
+> 
+> Pravidla `$removeparam` jsou kompatibilní se [základními modifikátory](#basic-rules-common-modifiers), [modifikátory typu obsahu](#content-type-modifiers) a s modifikátory `$important` a `$app`. Pravidla s jinými modifikátory jsou považována za neplatná a budou vyřazena.
+
+> **Poznámka**
+> 
+> Pravidla `$removeparam` lze také zakázat pravidly výjimek `$document` a `$urlblock`. Základní pravidla pro výjimky bez modifikátorů to však nedělají. Např. `@@||example.com^` nezakáže `$removeparam=p` pro požadavky na **example.com**, ale `@@||example.com^$urlblock` ano.
+
+> ##### **Kompatibilita s různými verzemi AdGuardu** {#removeparam-modifier-compatibility}
+> 
+> * Pravidla s modifikátorem `$removeparam` podporuje AdGuard pro Windows, Mac, Android a Rozšíření prohlížeče AdGuard pro Chrome, Firefox a Edge.
+> 
+> * Typy požadavků `POST` podporuje pouze AdGuard pro Windows, Mac a Android ** s CoreLibs verze 1.10 nebo novější**.
+
+> **Omezení**
+> 
+> Pravidla s modifikátorem `$removeparam` lze použít [**pouze v důvěryhodných filtrech**](#trusted-filters).
+
+#### **`$replace`** {#replace-modifier}
+
+Tento modifikátor zcela mění chování pravidla. Pokud je použitý, pravidlo požadavek nezablokuje. Namísto toho bude odpověď upravena.
+
+> K použití modifikátoru `$replace` budete potřebovat určité znalosti regulárních výrazů.
+
+**Funkce**
+
+* Pravidla `$replace` platí pro jakoukoli textovou odpověď, ale neplatí pro binární (`media`, `image`, `object` atd.).
+* Pravidla `$replace` neplatí, pokud je velikost původní odpovědi větší než 3 MB.
+* Pravidla `$replace` mají vyšší prioritu než ostatní základní pravidla (**včetně** pravidel výjimek). Pokud tedy požadavek odpovídá dvěma různým pravidlům, z nichž jedno má modifikátor `$replace`, použije se toto pravidlo.
+* Pravidla výjimek na úrovni dokumentu s modifikátory `$content` nebo `$document` zakáží pravidla `$replace` pro požadavky, které jim odpovídají.
+* Ostatní pravidla výjimek na úrovni dokumentu (`$generichide`, `$elemhide` nebo modifikátory `$jsinject`) se uplatňují vedle pravidel `$replace`. To znamená, že můžete upravit obsah stránky pomocí pravidla `$replace` a zároveň zde zakázat kosmetická pravidla.
+
+> Hodnota `$replace` může být v případě pravidel pro výjimky prázdná. Další informace naleznete v části Příklady.
+
+> **Vícenásobná pravidla odpovídajících jednomu požadavku**
+> 
+> V případě, že jednomu požadavku odpovídá více pravidel `$replace`, použijeme každé z nich. **Pořadí je stanoveno abecedně.**
+
+**Syntaxe**
+
+Obecně je syntaxe `$replace` podobná nahrazování regulárními výrazy v [Perl](http://perldoc.perl.org/perlrequick.html#Search-and-replace).
+
+```
+replace = "/" regexp "/" replacement "/" modifiers
+```
+
+* **`regexp`** — regulární výraz.
+* **`replacement`** — řetězec, který bude použit k nahrazení řetězce odpovídajícího `regexp`.
+* **`modifiers`** — příznaky regulárního výrazu. Například `i` — necitlivé vyhledávání nebo `s` — jednořádkový režim.
+
+V hodnotě `$replace` musí být dva znaky uvozeny: čárka `,` a znak dolaru `$`. Použijte pro to zpětné lomítko `\`. Např. uvozená čárka vypadá takto: `\,`.
+
+**Příklady**
+
+```
+||example.org^$replace=/(<VAST[\s\S]*?>)[\s\S]*<\/VAST>/\$1<\/VAST>/i
+```
+
+Toto pravidlo má tři části:
+* `regexp` - `(<VAST(.|\s)*?>)(.|\s)*<\/VAST>`;
+* `replacement` — `\$1<\/VAST>` kde `$` je uvozeno;
+* `modifikátory` — `i` pro necitlivé vyhledávání.
+
+Jak toto pravidlo funguje, se můžete podívat zde: http://regexr.com/3cesk
+
+**Vícenásobná pravidla `$replace`**
+
+1. `||example.org^$replace=/X/Y/`
+2. `||example.org^$replace=/Z/Y/`
+3. `@@||example.org/page/*$replace=/Z/Y/`
+
+* Jak pravidlo 1, tak pravidlo 2 se použijí na všechny požadavky odeslané na `example.org`.
+* Pravidlo 2 je zakázáno pro požadavky odpovídající na `||example.org/page/`, **ale pravidlo 1 stále funguje!**
+
+**Zakázání pravidel `$replace`**
+
+* `@@||example.org^$replace` zakáže všechna pravidla `$replace` odpovídající na `||example.org^`.
+* `@@||example.org^$document` nebo `@@||example.org^$content` zakáže všechna pravidla `$replace` **pocházející ze** stránek `example.org` **včetně stránky samotné**.
+
+> **Kompatibilita s různými verzemi AdGuardu**
+> 
+> Pravidla s modifikátorem `$replace` podporuje AdGuard pro Windows, Mac, Android a Rozšíření prohlížeče AdGuard pro Firefox. Taková pravidla v rozšířeních pro jiné prohlížeče nefungují, protože nemohou měnit obsah na úrovni sítě.
+
+> **Omezení**
+> 
+> Pravidla s modifikátorem `$replace` lze použít [**pouze v důvěryhodných filtrech**](#trusted-filters).
 
 #### **`noop`** {#noop-modifier}
 
@@ -1833,7 +1838,7 @@ Tento druh výjimek doporučujeme používat pouze v případě, že není možn
 * [Pseudo-třída `:contains()`](#extended-css-contains)
 * [Pseudo-třída `:matches-css()`](#extended-css-matches-css)
 * [Pseudo-třída `:matches-attr()`](#extended-css-matches-attr)
-* [Pseudo-třída `:matches-property()`](#extended-css-matches-property)
+* [Pseudo-třída `:matches-property()`](#extended-css-property)
 * [Pseudo-třída `:xpath()`](#extended-css-xpath)
 * [Pseudo-třída `:nth-ancestor()`](#extended-css-nth-ancestor)
 * [Pseudo-třída `:upward()`](#extended-css-upward)
@@ -1887,7 +1892,6 @@ Přečtěte si další informace o [ladění rozšířených selektorů](#select
 1. CSS [komentáře](https://developer.mozilla.org/en-US/docs/Web/CSS/Comments) a [at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) nejsou podporovány.
 
 2. Konkrétní pseudo-třída může mít svá vlastní omezení: [`:has()`](#extended-css-has-limitations), [`:xpath()`](#extended-css-xpath-limitations), [`:nth-ancestor()`](#extended-css-nth-ancestor-limitations), [`:upward()`](#extended-css-upward-limitations), [`:is()`](#extended-css-is-limitations), [`:not()`](#extended-css-not-limitations), and [`:remove()`](#extended-css-remove-limitations).
-
 
 #### Pseudo-třída `:has()` {#extended-css-has}
 
@@ -2028,7 +2032,6 @@ div:contains(/it .* banner/gi)
 > 
 > [Zpětně kompatibilní syntaxe pro `:contains()`](https://github.com/AdguardTeam/ExtendedCss#old-syntax-contains) je podporována, ale **nedoporučuje se**.
 
-
 #### Pseudo-třída `:matches-css()` {#extended-css-matches-css}
 
 Pseudo-třída `:matches-css()` umožňuje porovnat prvek podle jeho aktuálních vlastností stylu. Práce pseudo-třídy je založena na použití metody [`Window.getComputedStyle()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle).
@@ -2087,7 +2090,6 @@ div:matches-css(before, content: /block me/)
 > 
 > [Zpětně kompatibilní syntaxe pro `:matches-css()`](https://github.com/AdguardTeam/ExtendedCss#old-syntax-matches-css) je podporována, ale **nedoporučuje se**.
 
-
 #### Pseudo-třída `:matches-attr()` {#extended-css-matches-attr}
 
 Pseudo-třída `:matches-attr()` umožňuje vybrat prvek podle jeho atributů, zejména pokud jsou náhodné.
@@ -2136,7 +2138,6 @@ Pseudo-třída `:matches-attr()` umožňuje vybrat prvek podle jeho atributů, z
   <inner-random23 id="target4" nt4f5be90delay="1000"></inner-random23>
 </div>
 ```
-
 
 #### Pseudo-třída `:matches-property()` {#extended-css-property}
 
@@ -2201,7 +2202,6 @@ div:matches-property(memoizedProps._owner.src=/ad/)
 > 
 > Chcete-li zkontrolovat vlastnosti konkrétního prvku, postupujte takto: 1. Zkontrolujte prvek stránky nebo jej vyberte na kartě `Elements` v nástroji DevTools prohlížeče. 2. Spusťte `console.dir($0)` na kartě `Console`.
 
-
 #### Pseudo-třída `:xpath()` {#extended-css-xpath}
 
 Pseudo-třída `:xpath()` umožňuje vybrat prvek vyhodnocením výrazu XPath.
@@ -2237,7 +2237,6 @@ Pseudo-třída `:xpath()` umožňuje vybrat prvek vyhodnocením výrazu XPath.
   <div class="inner"></div>
 </div>
 ```
-
 
 #### Pseudo-třída `:nth-ancestor()` {#extended-css-nth-ancestor}
 
@@ -2281,7 +2280,6 @@ Pro DOM:
 
 `.child:nth-ancestor(1)` vybere prvek `div#target1`, `div[class="inner"]:nth-ancestor(3)` vybere prvek `div#target2`.
 
-
 #### Pseudo-třída `:upward()` {#extended-css-upward}
 
 Pseudo-třída `:upward()` umožňuje vyhledat předka vzhledem k dříve vybranému prvku.
@@ -2320,7 +2318,6 @@ Pro DOM:
 
 `.inner:upward(div[data])` vybere prvek `div#target1`, `.inner:upward(div[id])` vybere prvek `div#target2`, `.child:upward(1)` vybere prvek `div#target1`, `.inner:upward(3)` vybere prvek `div#target2`.
 
-
 #### Pseudo-třída `:remove()` a pseudo-vlastnost `remove` {#remove-pseudos}
 
 Někdy je nutné odpovídající prvek odstranit namísto jeho skrytí nebo použití vlastních stylů. Chcete-li to provést, můžete použít pseudo-třídu `:remove()` a také pseudo-vlastnost `remove`.
@@ -2346,7 +2343,6 @@ selector { remove: true; }
 
 > Pokud je použita pseudo-třída `:remove()` nebo pseudovlastnost `remove`, všechny vlastnosti stylu se ignorují kromě pseudovlastnosti [`debug`](#selectors-debug-mode).
 
-
 **Příklady**
 ```
 div.banner:remove()
@@ -2359,7 +2355,6 @@ div[class]:has(> a > img) { remove: true; }
 > **Poznámka**
 > 
 > Pravidla s pseudovlastností `remove` by měla používat znak `#$?#`: `$` pro syntaxi pravidel stylu CSS, `?` pro syntaxi ExtendedCss.
-
 
 #### Pseudo-třída `:is()` {#extended-css-is}
 
@@ -2404,7 +2399,6 @@ Kvůli omezením `:is(*:not([class]) > .banner)'` nefunguje, ale lze místo něj
 </div>
 ```
 
-
 #### Pseudo-třída `:not()` {#extended-css-not}
 
 Pseudo-třída `:not()` umožňuje vybrat prvky, které se *neshodují* se selektory předávanými jako argument. Neplatné selektory argumentů nejsou povoleny a je třeba vyhodit chybu. Naše implementace pseudo-třídy [`:not()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:not).
@@ -2439,7 +2433,6 @@ Pseudo-třída `:not()` umožňuje vybrat prvky, které se *neshodují* se selek
 </div>
 ```
 
-
 #### Pseudo-třída `:if-not()` (zastaralé) {#extended-css-if-not}
 
 > **Upozornění na vyřazení**
@@ -2447,7 +2440,6 @@ Pseudo-třída `:not()` umožňuje vybrat prvky, které se *neshodují* se selek
 > Pseudo-třída `:if-not()` je zastaralá a již není podporována. Pravidla s tímto modifikátorem jsou považována za neplatná.
 
 Tato pseudo-třída byla v podstatě zkratkou pro `:not(:has())`. Byla podporována ExtendedCss pro lepší kompatibilitu s některými odběry filtrů.
-
 
 ### Přednost kosmetických pravidel {#cosmetic-rules-priority}
 
@@ -2780,7 +2772,7 @@ kde `pattern` je v podstatě stejný jako [`pattern` základních pravidel](#bas
 
 **Příklady**
 
-* `[$url=||example.com/ads/*]##.textad` skryje `div` se třídou `textad` na adrese jako `http://example.com/ads/banner.jpg` a dokonce i `http://subdomain.example.com/ads/otherbanner.jpg`.
+* `[$url=||example.com/content/*]##div.textad` skryje `div` se třídou `textad` na adrese jako `https://example.com/content/article.html` a dokonce i `https://subdomain.example.com/content/article.html`.
 * `[$url=||example.org^]###adblock` skryje prvek s atributem `id`, který se rovná `adblock` na `example.org` a jejích subdoménách.
 * `[$url=/\[az\]+\\.example\\.com^/]##.textad` skryje prvky třídy `div` `textad` pro všechny domény odpovídající regulárnímu výrazu `[a-z]+\. example\.com^`.
 
@@ -3115,25 +3107,25 @@ Pokud používáte Rozšíření prohlížeče AdGuard a chcete vyladit pravidlo
 
 Následující skriptlety jsou speciálně vyvinuty zejména pro účely ladění:
 
-* [`debug-current-inline-script`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets#debug-current-inline-script)
-* [`debug-on-property-read`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets#debug-on-property-read)
-* [`debug-on-property-write`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets#abort-on-property-write)
-* [`log-addEventListener`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets#log-addEventListener)
-* [`log-on-stack-trace`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets#log-on-stack-trace)
-* [`log-eval`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets#log-eval)
-* [`log`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets#log)
+* [`debug-current-inline-script`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#debug-current-inline-script)
+* [`debug-on-property-read`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#debug-on-property-read)
+* [`debug-on-property-write`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#abort-on-property-write)
+* [`log-addEventListener`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#log-addEventListener)
+* [`log-on-stack-trace`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#log-on-stack-trace)
+* [`log-eval`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#log-eval)
+* [`log`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#log)
 
 Následující skriptlety lze také použít pro účely ladění:
 
-* [`json-prune`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets#json-prune)
-* [`prevent-fetch`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets#prevent-fetch)
-* [`prevent-requestAnimationFrame`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets#prevent-requestanimationframe)
-* [`prevent-setInterval`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets#prevent-setinterval)
-* [`prevent-setTimeout`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets#prevent-settimeout)
-* [`prevent-window-open`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets#prevent-window-open) se specifikovaným parametrem `replacement`
-* [`prevent-xhr`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets#prevent-xhr)
-* [`trusted-replace-fetch-response`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-trusted-scriptlets#trusted-replace-fetch-response)
-* [`trusted-replace-xhr-response`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-trusted-scriptlets#trusted-replace-xhr-response)
+* [`json-prune`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#json-prune)
+* [`prevent-fetch`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-fetch)
+* [`prevent-requestAnimationFrame`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-requestanimationframe)
+* [`prevent-setInterval`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-setinterval)
+* [`prevent-setTimeout`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-settimeout)
+* [`prevent-window-open`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-window-open) se specifikovaným parametrem `replacement`
+* [`prevent-xhr`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-xhr)
+* [`trusted-replace-fetch-response`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-trusted-scriptlets.md#trusted-replace-fetch-response)
+* [`trusted-replace-xhr-response`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-trusted-scriptlets.md#trusted-replace-xhr-response)
 
 ## Hodně štěstí při vytváření filtrů!
 

@@ -3,6 +3,12 @@ title: Features overview
 sidebar_position: 1
 ---
 
+:::note
+
+This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 AdGuard for Windows is an easy-to-use tool that blocks annoying banners, popups, video ads, and trackers. But that's not all: it helps you save traffic, load web pages faster, and protect your computer from undesirable and potentially malicious websites. AdGuard also protects you from phishing websites and keeps your kids away from inappropriate content.
 
 ## Home screen

@@ -3,6 +3,12 @@ title: Problémy způsobené používáním profilu s omezeným režimem
 sidebar_position: 10
 ---
 
+:::note
+
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 Majitelé telefonů a tabletů nebo TV s operačním systémem Android 7+ se mohou potýkat s problémem způsobeným používáním **profilu s Omezeným režimem**. Pokud máte takový profil, **AdGuard**, stejně jako ostatní aplikace využívající VPN, získá omezení pro selektivní filtrování provozu VPN. V důsledku toho nemůže AdGuard spustit ochranu v **režimu lokální VPN**. Jednou z příčin této situace může být také používání profilu **Duální aplikace/Duální Messenger** ve vašem zařízení. Níže jsou popsána doporučení, která můžete použít v případě výskytu tohoto problému.
 
 ## Řešení
