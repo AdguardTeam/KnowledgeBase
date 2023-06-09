@@ -1878,18 +1878,6 @@ Modifier [`$important`](#important-modifier) adds `10^6` to rule priority.
 >
 > The [`$replace`](#replace-modifier) modifier takes precedence over all blocking rules of categories 1-3, as well as exception rules from categories 3-5, **except** [`$content`](#content-modifier), because an exception with the `$content` modifier overrides all `$replace` rules.
 
-#### Explanation for complicated cases:
-
-1. Simultaneous blocking and `$removeparam`.
-For example `*&p1=param` and `*$removeparam=p1`.
-The blocking rule will be applied first, because otherwise, after removing the parameter, the request will not be blocked.
-
-2. `$header` and `$removeheader`.
-Two rules:
-`||example.com^$header=header-name` - blocking.
-`||example.com^$removeheader=header-name` - remove header.
-The blocking rule will be applied first, because `$header` will add 1 to the priority calculation.
-
 #### Examples
 
 ##### Example 1.
