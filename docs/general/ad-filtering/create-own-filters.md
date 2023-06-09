@@ -881,7 +881,8 @@ every time AdGuard encounters a cookie called `NAME` in a request to `example.or
 * `$cookie=/__utm[a-z]/` blocks Google Analytics cookies everywhere
 * `||facebook.com^$third-party,cookie=c_user` prevents Facebook from tracking you even if you are logged in
 
-`$cookie` rules are not affected by regular exception rules (`@@`) unless it is a `$urlblock` exception (which is also contained in the exception alias `$document` - `$elemhide,jsinject,content,urlblock,extension`). Another way to disable a `$cookie` rule is the exception `$cookie` rule. How it works:
+There are two ways to disable `$cookie` rules: first, default way, is to use exception with `@@` mark - `@@||example.org^$cookie`. Another way is to use `$urlblock` exception (which is also contained in the exception alias `$document` - `$elemhide,jsinject,content,urlblock,extension`)
+How it works:
 
 * `@@||example.org^$cookie` unblocks all cookies set by `example.org`
 * `@@||example.org^$urlblock` unblocks all cookies set by `example.org` and disables blocking of all requests sent from `example.org`
@@ -1739,7 +1740,7 @@ As a response to blocked request AdGuard returns a short video placeholder.
 ### Rule priorities {#rule-priorities}
 
 Each rule has its own priority, which is necessary when several rules match the request and the filtering system needs to select one of them.
-Priority is measured by a positive integer. The higher the priority of a rule, the higher its priority value.
+Priority is measured by a positive integer.
 In the case of a conflict between two rules with the same priority value, it is unspecified which one of them will be chosen.
 
 #### Priority computation
