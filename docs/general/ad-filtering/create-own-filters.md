@@ -1742,7 +1742,7 @@ Each rule has its own priority, which is necessary when several rules match the 
 Priority is measured by a positive integer. The higher the priority of a rule, the higher its priority value.
 In the case of a conflict between two rules with the same priority value, it is unspecified which one of them will be chosen.
 
-#### Priority counting
+#### Priority computation
 
 To calculate priority, modifiers have been divided into several groups. They are arranged in order of priority from lowest to highest. The more a modifier narrows the scope of a rule, the more priority it adds to the total weight of the rule or the more a rule covers requests, the lower its priority. Note that there are modifiers where setting one parameter has a higher priority than setting two or more, for example, for `$domain=example.com|example.org`, because a rule with two domains has a smaller, infinitesimal, effective area, but still larger than a rule with one resolved domain.
 
