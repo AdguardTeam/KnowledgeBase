@@ -1766,7 +1766,6 @@ The base priority weight of any rule is 1. If the calculated priority is a float
  * [`$dnsrewrite`](#dnsrewrite-modifier),
  * [`$domain`](#domain-modifier) with negated domains using `~`,
  * `$first-party`,
- * [`$header`](#header-modifier),
  * [`$match-case`](#match-case-modifier),
  * [`$method`](#method-modifier) with negated methods using `~`,
  * [`$third-party`](#third-party-modifier),
@@ -1775,7 +1774,7 @@ The base priority weight of any rule is 1. If the calculated priority is a float
 
 For negated domain, app or content-type, we add 1 for the presence of the modifier itself disregarding the number of negated domains or content-types, because the scope of the rule is infinitely large anyway. In other words, by banning several domains and content-types, we only *insignificantly* narrowed the scope of the rule.
 
-#### 2. Defined content-type modifiers, defined methods, $popup, special exceptions: {#priority-category-2}
+#### 2. Defined content-type modifiers, defined methods, defined headers, $popup, special exceptions: {#priority-category-2}
 
 All allowed content types:
 [//]: # (Please keep them sorted)
@@ -1808,11 +1807,15 @@ or special exceptions that implicitly add `$document,subdocument`:
 
 Or allowed methods via [`$method`](#method-modifier).
 
+Or rules with [`$header`](#header-modifier).
+
 The presence of any content-type modifiers adds `(50 + 50 / N)`, where `N` is the number of modifiers present, for example:
 `||example.com^$image,script` will add `50 + 50 / 2 = 50 + 25 = 75` to the total weight of the rule. The `$popup` also belongs to this category, because it implicitly adds the modifier `$document`. Similarly, specific exceptions add `$document,subdocument`.
 
 If there is a `$method` modifier in the rule with allowed methods it adds `(50 + 50 / N)`, where `N` is the number of methods allowed, for example:
 `||example.com^$method=GET|POST|PUT` will add `50 + 50 / 3 = 50 + 16.6 = 67` to the total weight of the rule.
+
+If there is a `$header` modifier in the rule it adds `50`.
 
 #### 3. $domain or $app with allowed domains or applications: {#priority-category-3}
 
