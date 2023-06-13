@@ -1754,7 +1754,7 @@ The base priority weight of any rule is 1. If the calculated priority is a float
 
 > **Compatibility with different versions of AdGuard**
 >
-> The concept of priority has been introduced in `tsurlfilter v2.1.0` and `CoreLibs v2.13`.
+> The concept of priority has been introduced in `tsurlfilter v2.1.0` and `CoreLibs v1.13`.
 > Before that AdGuard didn't have any special priority computation algorithm and collisions handling could be different depending on AdGuard product and version.
 
 #### 1. Basic modifiers, the presence of each adds 1 to the priority: {#priority-category-1}
