@@ -1772,7 +1772,7 @@ The base priority weight of any rule is 1. If the calculated priority is a float
  * [`$to`](#to-modifier),
  * restricted [content-types](#content-type-modifiers) with `~`.
 
-For negated domain, app or content-type, we add 1 for the presence of the modifier itself disregarding the number of negated domains or content-types, because the scope of the rule is infinitely large anyway. In other words, by banning several domains and content-types, we only *insignificantly* narrowed the scope of the rule.
+When dealing with a negated domain, app, method, or content-type, we add a point for the existence of the modifier itself, regardless of the quantity of negated domains or content-types. This is because the rule's scope is already infinitely broad. Put simply, by prohibiting multiple domains, content-types, methods or apps, the scope of the rule becomes only minimally smaller.
 
 #### 2. Defined content-type modifiers, defined methods, defined headers, $popup, special exceptions: {#priority-category-2}
 
