@@ -881,8 +881,8 @@ every time AdGuard encounters a cookie called `NAME` in a request to `example.or
 * `$cookie=/__utm[a-z]/` blocks Google Analytics cookies everywhere
 * `||facebook.com^$third-party,cookie=c_user` prevents Facebook from tracking you even if you are logged in
 
-There are two ways to disable `$cookie` rules: first, default way, is to use exception with `@@` mark - `@@||example.org^$cookie`. Another way is to use `$urlblock` exception (which is also contained in the exception alias `$document` - `$elemhide,jsinject,content,urlblock,extension`)
-How it works:
+There are two methods to deactivate `$cookie` rules: the primary method involves using an exception marked with `@@` - `@@||example.org^$cookie`. The alternative method employs a `$urlblock` exception (also included under the `$document` exception alias - `$elemhide,jsinject,content,urlblock,extension`).
+Here's how it works:
 
 * `@@||example.org^$cookie` unblocks all cookies set by `example.org`
 * `@@||example.org^$urlblock` unblocks all cookies set by `example.org` and disables blocking of all requests sent from `example.org`
