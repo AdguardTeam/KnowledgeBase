@@ -1761,19 +1761,19 @@ The base priority weight of any rule is 1. If the calculated priority is a float
 
 [//]: # (Please keep them sorted)
 
- * [`$app`](#app-modifier) with forbidden applications using `~`,
+ * [`$app`](#app-modifier) with negated applications using `~`,
  * [`$denyallow`](#denyallow-modifier),
  * [`$dnsrewrite`](#dnsrewrite-modifier),
- * [`$domain`](#domain-modifier) with forbidden domains using `~`,
+ * [`$domain`](#domain-modifier) with negated domains using `~`,
  * `$first-party`,
  * [`$header`](#header-modifier),
  * [`$match-case`](#match-case-modifier),
- * [`$method`](#method-modifier) with forbidden methods using `~`,
+ * [`$method`](#method-modifier) with negated methods using `~`,
  * [`$third-party`](#third-party-modifier),
  * [`$to`](#to-modifier),
  * restricted [content-types](#content-type-modifiers) with `~`.
 
-For forbidden domain, app or content-type, we add 1 for the presence of the modifier itself disregarding the number of forbidden domains or content-types, because the scope of the rule is infinitely large anyway. In other words, by banning several domains and content-types, we only *insignificantly* narrowed the scope of the rule.
+For negated domain, app or content-type, we add 1 for the presence of the modifier itself disregarding the number of negated domains or content-types, because the scope of the rule is infinitely large anyway. In other words, by banning several domains and content-types, we only *insignificantly* narrowed the scope of the rule.
 
 #### 2. Defined content-type modifiers, defined methods, $popup, special exceptions: {#priority-category-2}
 
