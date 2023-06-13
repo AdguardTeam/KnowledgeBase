@@ -1741,7 +1741,7 @@ As a response to blocked request AdGuard returns a short video placeholder.
 ### Rule priorities {#rule-priorities}
 
 Each rule has its own priority, which is necessary when several rules match the request and the filtering system needs to select one of them.
-Priority is measured by a positive integer.
+Priority is measured as a positive integer.
 In the case of a conflict between two rules with the same priority value, it is not specified which one of them will be chosen.
 
 #### Priority computation
