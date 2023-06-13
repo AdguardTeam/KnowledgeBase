@@ -1758,6 +1758,11 @@ The base priority weight of any rule is 1. If the calculated priority is a float
 > The concept of priority has been introduced in `tsurlfilter v2.1.0` and `CoreLibs v1.13`.
 > Before that AdGuard didn't have any special priority computation algorithm and collisions handling could be different depending on AdGuard product and version.
 
+
+ > **Note**
+ >
+ > Aliases are not visibly included in these categories, however, they are utilized within the engine to compute weight.
+
 #### 1. Basic modifiers, the presence of each adds 1 to the priority: {#priority-category-1}
 
 [//]: # (Please keep them sorted)
@@ -1766,7 +1771,6 @@ The base priority weight of any rule is 1. If the calculated priority is a float
  * [`$denyallow`](#denyallow-modifier),
  * [`$dnsrewrite`](#dnsrewrite-modifier),
  * [`$domain`](#domain-modifier) with negated domains using `~`,
- * `$first-party`,
  * [`$match-case`](#match-case-modifier),
  * [`$method`](#method-modifier) with negated methods using `~`,
  * [`$third-party`](#third-party-modifier),
