@@ -1745,7 +1745,9 @@ In the case of a conflict between two rules with the same priority value, it is 
 
 #### Priority computation
 
-To calculate priority, modifiers have been divided into several groups. They are arranged in order of priority from lowest to highest. The more a modifier narrows the scope of a rule, the more priority it adds to the total weight of the rule or the more a rule covers requests, the lower its priority. Note that there are modifiers where setting one parameter has a higher priority than setting two or more, for example, for `$domain=example.com|example.org`, because a rule with two domains has a smaller, infinitesimal, effective area, but still larger than a rule with one resolved domain.
+To calculate priority, we've categorized modifiers into different groups. These groups are ranked based on their priority, from lowest to highest. A modifier that significantly narrows the scope of a rule adds more weight to its total priority. Conversely, if a rule applies to a broader range of requests, its priority decreases.
+
+It's worth noting that there are cases where a single-parameter modifier has a higher priority than multi-parameter ones. For instance, in the case of `$domain=example.com|example.org`, a rule that includes two domains has a slightly broader effective area than a rule with one specified domain, therefore its priority is lower.
 
 The base priority weight of any rule is 1. If the calculated priority is a floating-point number, it will be **rounded up** to the smallest integer greater than or equal to the calculated weight.
 
