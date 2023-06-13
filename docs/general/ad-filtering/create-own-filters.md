@@ -1377,6 +1377,7 @@ Go to [rules priorities](#rule-priorities) for more details.
 > **Compatibility with different versions of AdGuard**
 >
 > Rules with `$redirect` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
+
 > `$redirect` in uBlock Origin supports specifying priority, e.g. `$redirect=noopjs:42`. AdGuard does not support it and instead just discards the priority postfix.
 
 #### **`$redirect-rule`** {#redirect-rule-modifier}
