@@ -693,6 +693,7 @@ $extension="userscript name\, with \"quote\""
 * `@@||example.com^$extension=MyUserscript` disables the `MyUserscript` userscript on `example.com` website.
 * `@@||example.com^$extension='AdGuard Assistant'|'Popup Blocker'` disables both `AdGuard Assistant` and `Popup Blocker` userscripts on `example.com` website.
 * `@@||example.com^$extension=~"AdGuard Assistant"` disables all user scripts on `example.com` website, except `AdGuard Assistant`.
+* `@@||example.com^$extension=~"AdGuard Assistant"|~"Popup Blocker"` disables all user scripts on `example.com` website, except `AdGuard Assistant` and `Popup Blocker`.
 * `@@||example.com^$extension` all userscripts will not work on all pages of the `example.com` website.
 * `@@||example.com^$extension="AdGuard \"Assistant\""` disables the `AdGuard "Assistant"` userscript on `example.com` website.
 
