@@ -384,6 +384,8 @@ The modifier `":" h_value` part may be omitted. In that case the modifier matche
 
 The `$important` modifier applied to a rule increases its priority over any other rule without `$important` modifier. Even over basic exception rules.
 
+Go to [rules priorities](#rule-priorities) for more details.
+
 **Examples**
 
 ```
@@ -396,13 +398,6 @@ The `$important` modifier applied to a rule increases its priority over any othe
 ! if the exception rule also has `$important` modifier, it will prevail and requests won't be blocked
 ||example.org^$important
 @@||example.org^$important
-```
-
-```
-! if a document-level exception rule is applied to the document, the `$important` modifier will be ignored;
-! so if a request to `example.org` is sent from the `test.org` domain, the blocking rule will not be applied despite it has the `$important` modifier
-||example.org^$important
-@@||test.org^$document
 ```
 
 #### **`$match-case`** {#match-case-modifier}
@@ -529,12 +524,11 @@ The rule corresponds to the main frame document requests, i.e. HTML documents th
 
 By default, AdGuard does not block the requests that are loaded in the browser tab (e.g. "main frame bypass"). The idea is not to prevent pages from loading as the user clearly indicated that they want this page to be loaded. However, if the `$document` modifier is specified explicitly, AdGuard does not use that logic and prevents the page load. Instead, it responds with a "blocking page".
 
-If this modifier is used with an exclusion rule (`@@`), it completely disables blocking on corresponding pages. It is equivalent to using `$elemhide`, `$content`, `$urlblock`, `$jsinject`, and `$extension` modifiers simultaneously.
+If this modifier is used with an exclusion rule (`@@`), it completely disables blocking on corresponding pages. It is equivalent to using `$elemhide`, `$content`, `$urlblock`, `$jsinject`, `$extension` modifiers simultaneously.
 
 **Examples**
 
 * `@@||example.com^$document` completely disables filtering on all pages at `example.com` and all subdomains.
-* `@@||example.com^$document,~extension` completely disables blocking on any pages at `example.com` and all subdomains, but continues to run userscripts there.
 
 * `||example.com^$document` blocks HTML document request to `example.com` with a blocking page.
 * `||example.com^$document,redirect=noopframe` redirects HTML document request to `example.com` to an empty html document.
@@ -749,7 +743,7 @@ The list of the available modifier options:
 
 #### **`$urlblock`** {#urlblock-modifier}
 
-Disables blocking of all requests sent from the pages matching the rule.
+Disables blocking of all requests sent from the pages matching the rule and disables all [`$cookie`](#cookie-modifier) rules.
 
 **Examples**
 
@@ -820,13 +814,12 @@ These modifiers are able to completely change the behaviour of basic rules.
 
 #### **`$all`** {#all-modifier}
 
-`$all` modifier is made of [`$document`](#document-modifier), [`$popup`](#popup-modifier), and [`$csp`](#csp-modifier) modifiers. E.g. rule `||example.org^$all` is converting into such a set of rules:
+`$all` modifier is made of [all content-types modifiers](#content-type-modifiers) and [`$popup`](#popup-modifier). E.g. rule `||example.org^$all` is converting into rule:
 ```
-||example.org^$document,popup
-||example.org^$csp=script-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
-||example.org^$csp=font-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
-||example.org^
+||example.org^$document,subdocument,font,image,media,object,other,ping,script,stylesheet,websocket,xmlhttprequest,popup
 ```
+
+This modifier cannot be used as an exception with the `@@` mark.
 
 #### **`$badfilter`** {#badfilter-modifier}
 
@@ -895,9 +888,11 @@ every time AdGuard encounters a cookie called `NAME` in a request to `example.or
 * `$cookie=/__utm[a-z]/` blocks Google Analytics cookies everywhere
 * `||facebook.com^$third-party,cookie=c_user` prevents Facebook from tracking you even if you are logged in
 
-`$cookie` rules are not affected by regular exception rules (`@@`) unless it is a `$document` exception. In order to disable a `$cookie` rule, the exception rule should also have a `$cookie` modifier. How it works:
+There are two methods to deactivate `$cookie` rules: the primary method involves using an exception marked with `@@` - `@@||example.org^$cookie`. The alternative method employs a `$urlblock` exception (also included under the `$document` exception alias - `$elemhide,jsinject,content,urlblock,extension`).
+Here's how it works:
 
 * `@@||example.org^$cookie` unblocks all cookies set by `example.org`
+* `@@||example.org^$urlblock` unblocks all cookies set by `example.org` and disables blocking of all requests sent from `example.org`
 * `@@||example.org^$cookie=concept` unblocks a single cookie named `concept`
 * `@@||example.org^$cookie=/^_ga_/` unblocks every cookie that matches the regular expression
 
@@ -1371,7 +1366,10 @@ AdGuard uses the same filtering rules syntax as uBlock Origin. Also, it is compa
 
 > The value of the `$redirect` modifier must be the name of the resource that will be used for redirection.
 
-> `$redirect` rules' priority is higher than the regular basic blocking rules' priority. This means that if there is a basic blocking rule (even with `$important` modifier), `$redirect` rule will prevail over it. If there is an allowlist (`@@`) rule matching the same URL, it will disable redirecting as well (unless the `$redirect` rule is also marked as `$important`).
+> `$redirect` rules' priority is higher than the regular basic blocking rules' priority. This means that if there is a basic blocking rule `$redirect` rule will prevail over it. Allowlist rules with `@@` mark have a higher priority than `$redirect` rules. If basic rule with the `$important` modifier matching the same URL, it will prevail over `$redirect` rule (unless the `$redirect` rule is also marked as `$important`).
+> In short: `$important` > `@@` > `$redirect` > `basic rules`
+
+Go to [rules priorities](#rule-priorities) for more details.
 
 ##### Disabling `$redirect` rules
 
@@ -1387,9 +1385,13 @@ AdGuard uses the same filtering rules syntax as uBlock Origin. Also, it is compa
 >
 > Rules with `$redirect` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
 
+> `$redirect` in uBlock Origin supports specifying priority, e.g. `$redirect=noopjs:42`. AdGuard does not support it and instead just discards the priority postfix.
+
 #### **`$redirect-rule`** {#redirect-rule-modifier}
 
 This is basically an alias to [`$redirect`](#redirect-modifier) since it has the same "redirection" values and the logic is almost similar. The difference is that `$redirect-rule` is applied only in the case when the target request is blocked by a different basic rule.
+
+Go to [rules priorities](#rule-priorities) for more details.
 
 > Negating `$redirect-rule` works exactly the same way as for regular `$redirect` rules. Even more than that, `@@||example.org^$redirect` will negate both `$redirect` and `$redirect-rule` rules.
 
@@ -1742,6 +1744,210 @@ As a response to blocked request AdGuard returns a short video placeholder.
 > **Compatibility with different versions of AdGuard**
 >
 > Rules with `$mp4` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
+
+### Rule priorities {#rule-priorities}
+
+Each rule has its own priority, which is necessary when several rules match the request and the filtering system needs to select one of them.
+Priority is measured as a positive integer.
+In the case of a conflict between two rules with the same priority value, it is not specified which one of them will be chosen.
+
+#### Priority computation
+
+To calculate priority, we've categorized modifiers into different groups. These groups are ranked based on their priority, from lowest to highest. A modifier that significantly narrows the scope of a rule adds more weight to its total priority. Conversely, if a rule applies to a broader range of requests, its priority decreases.
+
+It's worth noting that there are cases where a single-parameter modifier has a higher priority than multi-parameter ones. For instance, in the case of `$domain=example.com|example.org`, a rule that includes two domains has a slightly broader effective area than a rule with one specified domain, therefore its priority is lower.
+
+The base priority weight of any rule is 1. If the calculated priority is a floating-point number, it will be **rounded up** to the smallest integer greater than or equal to the calculated weight.
+
+> **Compatibility with different versions of AdGuard**
+>
+> The concept of priority has been introduced in `tsurlfilter v2.1.0` and `CoreLibs v1.13`.
+> Before that AdGuard didn't have any special priority computation algorithm and collisions handling could be different depending on AdGuard product and version.
+
+
+ > **Note**
+ >
+ > Aliases are not visibly included in these categories, however, they are utilized within the engine to compute weight.
+
+#### 1. Basic modifiers, the presence of each adds 1 to the priority: {#priority-category-1}
+
+[//]: # (Please keep them sorted)
+
+ * [`$app`](#app-modifier) with negated applications using `~`,
+ * [`$denyallow`](#denyallow-modifier),
+ * [`$dnsrewrite`](#dnsrewrite-modifier),
+ * [`$domain`](#domain-modifier) with negated domains using `~`,
+ * [`$match-case`](#match-case-modifier),
+ * [`$method`](#method-modifier) with negated methods using `~`,
+ * [`$third-party`](#third-party-modifier),
+ * [`$to`](#to-modifier),
+ * restricted [content-types](#content-type-modifiers) with `~`.
+
+When dealing with a negated domain, app, method, or content-type, we add a point for the existence of the modifier itself, regardless of the quantity of negated domains or content-types. This is because the rule's scope is already infinitely broad. Put simply, by prohibiting multiple domains, content-types, methods or apps, the scope of the rule becomes only minimally smaller.
+
+#### 2. Defined content-type modifiers, defined methods, defined headers, $popup, special exceptions: {#priority-category-2}
+
+All allowed content types:
+[//]: # (Please keep them sorted)
+
+* [`$document`](#document-modifier),
+* [`$font`](#font-modifier),
+* [`$image`](#image-modifier),
+* [`$media`](#media-modifier),
+* [`$object`](#object-modifier),
+* [`$other`](#other-modifier),
+* [`$ping`](#ping-modifier),
+* [`$script`](#script-modifier),
+* [`$stylesheet`](#stylesheet-modifier),
+* [`$subdocument`](#subdocument-modifier),
+* [`$websocket`](#websocket-modifier),
+* [`$xmlhttprequest`](#xmlhttprequest-modifier);
+
+This also includes rules that implicitly add the modifier `$document`:
+* [`$popup`](#popup-modifier);
+
+or special exceptions that implicitly add `$document,subdocument`:
+* [`$content`](#content-modifier),
+* [`$elemhide`](#elemhide-modifier),
+* [`$extension`](#extension-modifier),
+* [`$genericblock`](#genericblock-modifier),
+* [`$generichide`](#generichide-modifier),
+* [`$jsinject`](#jsinject-modifier),
+* [`$specifichide`](#specifichide-modifier),
+* [`$urlblock`](#urlblock-modifier);
+
+Or allowed methods via [`$method`](#method-modifier).
+
+Or rules with [`$header`](#header-modifier).
+
+The presence of any content-type modifiers adds `(50 + 50 / N)`, where `N` is the number of modifiers present, for example:
+`||example.com^$image,script` will add `50 + 50 / 2 = 50 + 25 = 75` to the total weight of the rule. The `$popup` also belongs to this category, because it implicitly adds the modifier `$document`. Similarly, specific exceptions add `$document,subdocument`.
+
+If there is a `$method` modifier in the rule with allowed methods it adds `(50 + 50 / N)`, where `N` is the number of methods allowed, for example:
+`||example.com^$method=GET|POST|PUT` will add `50 + 50 / 3 = 50 + 16.6 = 67` to the total weight of the rule.
+
+If there is a `$header` modifier in the rule it adds `50`.
+
+#### 3. $domain or $app with allowed domains or applications: {#priority-category-3}
+
+Specified domains through `$domain` or specified applications through `$app` add `100 + 100 / N`, where `N` is the number of modifier values for example:
+`||example.com^$domain=example.com|example.org|example.net` will add `100 + 100 / 3 = 134.3 = 135` or
+`||example.com^$app=org.example.app1|org.example.app2` will add `100 + 100 / 2 = 151` or
+`||example.com^$domain=example.com,app=org.example.app1|org.example.app2` will add `100 + 100/1` ($domain part) and `100 + 100/2` ($app part) - will add `350` in total.
+
+Modifier values that are regexps or tld will be interpreted as normal entries of the form `example.com` and counted one by one, for example:
+`||example.com^$domain=example.*` will add `100 + 100 / 1 = 200` or
+`||example.com^$domain=example.*|adguard.*` will add `100 + 100 / 2 = 150`.
+
+#### 4. $redirect rules {#priority-category-6}
+
+[//]: # (Please keep them sorted)
+
+* [`$redirect`](#redirect-modifier),
+* [`$redirect-rule`](#redirect-rule-modifier).
+
+Each of which adds `10^3` to rule priority.
+
+#### 5. Specific exceptions: {#priority-category-4}
+
+[//]: # (Please keep them sorted)
+
+* [`$content`](#content-modifier),
+* [`$elemhide`](#elemhide-modifier),
+* [`$extension`](#extension-modifier),
+* [`$genericblock`](#genericblock-modifier),
+* [`$generichide`](#generichide-modifier),
+* [`$jsinject`](#jsinject-modifier),
+* [`$specifichide`](#specifichide-modifier),
+* [`$urlblock`](#urlblock-modifier);
+
+Each of which adds `10^4` to the priority.
+
+As well as exception with [`$document modifier`](#document-modifier): because it's an alias for `$elemhide,content,jsinject,urlblock,extension`.
+It will add `10^4` for each modifier from [the top list](#priority-category-4), `10^4 * 5` in total.
+
+In addition, each of these exceptions implicitly adds the two allowed content-type modifiers `$document,subdocument`.
+
+#### 6. Allowlist rule {#priority-category-5}
+
+Modifier `@@` adds `10^5` to rule priority.
+
+#### 7. important rules {#priority-category-7}
+
+Modifier [`$important`](#important-modifier) adds `10^6` to rule priority.
+
+#### Rules for which there is no priority count {#priority-category-extra}
+
+[Other modifiers](#advanced-capabilities), which do not override a blocking but perform additional post- or pre-processing of requests, have no priority.
+
+> **Note**
+>
+> The [`$replace`](#replace-modifier) modifier takes precedence over all blocking rules of categories 1-3, as well as exception rules from categories 3-5, **except** [`$content`](#content-modifier), because an exception with the `$content` modifier overrides all `$replace` rules.
+
+#### Examples
+
+##### Example 1.
+
+`||example.com^`
+
+Weight of the rule without modifiers: `1`.
+
+##### Example 2.
+
+`||example.com^$match-case`
+
+Weight of the rule: base weight + weight of the modifier from [category 1](#priority-category-1):
+`1 + 1 = 2`.
+
+##### Example 3.
+
+`||example.org^$removeparam=p`
+
+Weight of the rule: base weight + 0, since $removeparam [is not involved](#priority-category-extra) in the priority calculation:
+`1 + 0 = 1`.
+
+##### Example 4.
+
+`||example.org^$document,redirect=nooptext`
+
+Rule weight: base weight + allowed content type, [category 3](#priority-category-3) + $redirect from [category 6](#priority-category-6):
+`1 + (100 + 100 / 1) + 1000 = 1201`.
+
+##### Example 5.
+
+`@@||example.org^$removeparam=p,document`
+
+Rule weight: base weight + allowlist rule, [category 5](#priority-category-5) + 0 because $removeparam [is not involved](#priority-category-extra) in the priority calculation + allowed content type, [category 2](#priority-category-2):
+`1 + 10000 + 0 + (50 + 50 / 1) = 10101`.
+
+##### Example 6.
+
+`@@||example.com/ad/*$domain=example.org|example.net,important`
+
+Rule weight: base weight + allowlist rule, [category 5](#priority-category-5) + important rule, [category 7](#priority-category-7) + allowed domains, [category 3](#priority-category-3):
+`1 + 10000 + 1000000 + (100 + 100 / 2) = 1010152`.
+
+##### Example 7.
+
+`@@||example.org^$document` - without additional modifiers is an alias for
+`@@||example.com^$elemhide,content,jsinject,urlblock,extension`
+
+Rule weight: base weight + specific exceptions, [category 4](#priority-category-4) + two allowed content types (document and subdocument), [category 2](#priority-category-2):
+`1 + 10000 * 4 + (50 + 50 / 2) = 40076`.
+
+##### Example 8.
+
+`*$script,domain=a.com,denyallow=x.com|y.com`
+
+Rule weight: base weight + allowed content type, [category 2](#priority-category-2) + allowed domain, [category 3](#priority-category-3) + denyallow, [category 1](#priority-category-1):
+`1 + (50 + 50/1) + (100 + 100 / 1) + 1 = 303`.
+
+##### Example 9.
+
+`||example.com^$all` (alias to `||example.com^$document,subdocument,image,script,media,etc. + $popup`)
+
+Rule weight: base weight + allowed content types, [category 2](#priority-category-2):
+`1 + (50 + 50/12) = 55`.
 
 # Non-basic rules
 
