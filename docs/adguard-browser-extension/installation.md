@@ -3,7 +3,7 @@ title: How to install
 sidebar_position: 2
 ---
 
-:::note
+:::info
 
 This article is about the AdGuard Browser extension, which safeguards only your browser. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 

@@ -3,7 +3,7 @@ title: How to create your own ad filters
 sidebar_position: 5
 ---
 
-:::note
+:::info
 
 In this article, we explain how to write custom filtering rules for use in AdGuard products. To test your rules, you can [download the AdGuard app](https://adguard.com/download.html?auto=true)
 

@@ -3,6 +3,12 @@ title: Installation
 sidebar_position: 2
 ---
 
+:::info
+
+This article is about AdGuard for Safari, which safeguards only your Safari browser. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## How to install AdGuard for Safari {#install}
 
 AdGuard for Safari is a free app presented on the App Store. To install it on your device, do the following.

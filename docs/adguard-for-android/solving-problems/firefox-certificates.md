@@ -3,7 +3,7 @@ title: Manual installation of the security certificate into the Firefox browser
 sidebar_position: 11
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -13,7 +13,7 @@ For AdGuard to successfully filter HTTPS traffic in Firefox, the browser needs t
 
 ### Method 1
 
-> This method works in Firefox for Android version 90.0 and later. 
+> This method works in Firefox for Android version 90.0 and later.
 
 To make Firefox trust the AdGuard certificate, do the following:
 
@@ -33,7 +33,7 @@ To make Firefox trust the AdGuard certificate, do the following:
 
 > This method will only work on **rooted** devices.
 
-1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; 
+1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb;
 > On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
 2. Activate the **developer mode** and enable **USB debugging**:
     - Open the **Settings** app on your phone;
@@ -46,7 +46,7 @@ To make Firefox trust the AdGuard certificate, do the following:
 6. In the specified folder we are interested in two files:
     - `cert9.db`
     - `key4.db`
-7. We need to move these files to a folder of the browser where the security certificate issue occurred: 
+7. We need to move these files to a folder of the browser where the security certificate issue occurred:
 - `data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyy.default`.
 8. The full command will look like this:
     - `adb shell su`

@@ -3,7 +3,7 @@ title: Advanced (low-level) Settings guide
 sidebar_position: 7
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -35,9 +35,9 @@ Verifies the authenticity of all certificates for the domain based on Chrome Cer
 
 ### Enable SSL/TLS certificate revocation checks
 
-Once enabled, this option runs asynchronous OCSP checks to check whether the website’s SSL/TLS certificate is revoked. 
+Once enabled, this option runs asynchronous OCSP checks to check whether the website’s SSL/TLS certificate is revoked.
 
-If the OCSP check completes within the minimum timeout, AdGuard will immediately apply the result: block the connection if the certificate is revoked or establish a connection if the certificate is valid. 
+If the OCSP check completes within the minimum timeout, AdGuard will immediately apply the result: block the connection if the certificate is revoked or establish a connection if the certificate is valid.
 
 If the verification takes too long, AdGuard will establish a connection and continue checking in the background. If the certificate is revoked, current and future connections to the domain will be blocked.
 
@@ -87,12 +87,12 @@ This option should be enabled **only for debugging purposes**. If you tick the c
 
 ### Add an extra space to the plain HTTP request
 
-Adds extra space between the HTTP method and the URL and removes space after the "Host:" field to avoid deep packet inspection. For instance, the request 
+Adds extra space between the HTTP method and the URL and removes space after the "Host:" field to avoid deep packet inspection. For instance, the request
 
 `GET /foo/bar/ HTTP/1.1
-Host: example.org` 
+Host: example.org`
 
-will be converted to 
+will be converted to
 
 `GET  /foo/bar/ HTTP/1.1
 Host:example.org`
@@ -101,7 +101,7 @@ This option is only applied when the *Protect from DPI* Stealth mode option is e
 
 ### Adjust size of fragmentation of initial TLS packet
 
-Specifies the size of the TCP packet fragmentation, avoiding deep packet inspection. This option only affects secured HTTPS traffic. 
+Specifies the size of the TCP packet fragmentation, avoiding deep packet inspection. This option only affects secured HTTPS traffic.
 
 If this option is enabled, AdGuard splits the initial TLS packet (the ClientHello packet) into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole initial TLS packet.
 
@@ -119,19 +119,19 @@ Allows displaying the QUIC protocol records in the filtering log. For blocked re
 
 ### Enable TCP keepalive
 
-Periodically sends TCP packets over idle connection to ensure it is alive and to renew NAT timeouts. This option can be useful to bypass the strict network address translation (NAT) settings that some ISPs use. 
+Periodically sends TCP packets over idle connection to ensure it is alive and to renew NAT timeouts. This option can be useful to bypass the strict network address translation (NAT) settings that some ISPs use.
 
 ### TCP keepalive interval
 
-Here you can specify an idle time period, in seconds, before sending a keepalive probe. If 0 is specified, the value selected by the system will be used. 
+Here you can specify an idle time period, in seconds, before sending a keepalive probe. If 0 is specified, the value selected by the system will be used.
 
-Note that this setting only works when the *Enable TCP keepalive* option is enabled. 
+Note that this setting only works when the *Enable TCP keepalive* option is enabled.
 
 ### TCP keepalive timeout
 
 Here you can specify time, in seconds, before sending another keepalive probe to an unresponsive peer. If 0 is specified, the value selected by the system will be used.
 
-Note that this setting only works when the *Enable TCP keepalive* option is enabled. 
+Note that this setting only works when the *Enable TCP keepalive* option is enabled.
 
 ### Block Java
 

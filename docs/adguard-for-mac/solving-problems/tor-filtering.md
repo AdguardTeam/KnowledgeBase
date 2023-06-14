@@ -3,7 +3,7 @@ title: Setting up filtering in Tor Browser
 sidebar_position: 10
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -24,7 +24,7 @@ This setting will cause Tor to trust root certificates. [Learn more](https://sup
 `security.cert_pinning.enforcement_level`: 1
 
 Public Key Pinning is a security measure that allows websites to ensure that the connection between a website and a user is authentic. This involves the website publishing a list of public keys, or pins, that it trusts. With the enforcement level set to 1, pinning is not enforced for custom CAs. [Learn more](https://wiki.mozilla.org/SecurityEngineering/Public_Key_Pinning)
- 
+
 To apply the changes, you’ll need to restart Tor Browser.
 
 > If you manually change these settings, Tor filtering will be stopped.
