@@ -3,7 +3,7 @@ title: Low Level Settings guide
 sidebar_position: 6
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -17,11 +17,11 @@ To go to *Low-level settings*, open the AdGuard app and tap the gear icon in the
 
 ## Low-level settings
 
-For AdGuard v4.0 for Android we've completely redesigned the low-level settings: divided them into thematic blocks, made them clearer, added validation of entered values and other safety valves, got rid of some settings, and added others.  
+For AdGuard v4.0 for Android we've completely redesigned the low-level settings: divided them into thematic blocks, made them clearer, added validation of entered values and other safety valves, got rid of some settings, and added others.
 
 ### DNS protection
 
-#### Fallback upstreams 
+#### Fallback upstreams
 
 Here you can specify the fallback DNS resolver(s) to be used if the configured server is unavailable. There are three options: *Automatic DNS*, *None*, and *Custom DNS*. If no fallback server is specified, the *Automatic DNS* — the system DNS or AdGuard DNS — will be used. *None* means no fallback at all. Selecting *Custom DNS* allows you to list IPv4 and IPv6 server addresses to use as upstreams.
 
@@ -72,15 +72,15 @@ If enabled, AdGuard strips Encrypted Client Hello parameters from DNS responses.
 
 #### Ignore unavailable outbound proxy
 
-Enable this feature to make AdGuard send DNS requests directly if the outbound proxy is unavailable. 
+Enable this feature to make AdGuard send DNS requests directly if the outbound proxy is unavailable.
 
 #### Try HTTP/3 for DNS-over-HTTPS upstreams
 
-By default, all DNS requests for DNS-over-HTTPS are sent via HTTP/2 protocol. If enabled, AdGuard uses HTTP/3 to speed up DNS query resolution for DoH upstreams. 
+By default, all DNS requests for DNS-over-HTTPS are sent via HTTP/2 protocol. If enabled, AdGuard uses HTTP/3 to speed up DNS query resolution for DoH upstreams.
 
 #### SERVFAIL failure response
 
-Once enabled, AdGuard sends a SERVFAIL response to the client if all upstreams, including fallback ones, fail to reply. When this setting is disabled, no response is sent to the client. 
+Once enabled, AdGuard sends a SERVFAIL response to the client if all upstreams, including fallback ones, fail to reply. When this setting is disabled, no response is sent to the client.
 
 #### Use fallback for non-fallback domains
 
@@ -104,7 +104,7 @@ Every encrypted Internet connection has an unencrypted part. This is the very fi
 
 #### OCSP checking
 
-Once enabled, this option runs asynchronous OCSP checks to check whether the website’s SSL certificate is revoked. 
+Once enabled, this option runs asynchronous OCSP checks to check whether the website’s SSL certificate is revoked.
 
 If the OCSP check is completed within the minimum timeout, AdGuard will immediately block the connection if the certificate is revoked or establish the connection if the certificate is valid.
 
@@ -124,7 +124,7 @@ When this feature is enabled, the string *Filter DNS requests* appears in the *S
 
 #### Port ranges
 
-Here you can specify port ranges that should be filtered. 
+Here you can specify port ranges that should be filtered.
 
 #### Log removed HTML events
 
@@ -150,11 +150,11 @@ Enable this setting if you want the protection to restart to reconfigure the aut
 
 If enabled, AdGuard filters IPv6 networks if an IPv6 network interface is available.
 
-#### IPv4 ranges excluded from filtering 
+#### IPv4 ranges excluded from filtering
 
 Filtering for IPv4 ranges, listed in this section, will be disabled.
 
-#### IPv6 ranges excluded from filtering 
+#### IPv6 ranges excluded from filtering
 
 Filtering for IPv6 ranges, listed in this section, will be disabled.
 
@@ -176,7 +176,7 @@ Here you can set the time of a delay in milliseconds before AdGuard reschedules 
 
 #### MTU
 
-Here you can set the maximum transmission unit (MTU) of the VPN interface. The recommended range is 1500-1900 bytes. 
+Here you can set the maximum transmission unit (MTU) of the VPN interface. The recommended range is 1500-1900 bytes.
 
 #### Restore VPN automatically
 

@@ -3,7 +3,7 @@ title: Common installer errors
 sidebar_position: 6
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -40,7 +40,7 @@ You could say this is a particular sub-case of Error 1603. The possible solution
 
     1) Press *Win + R* and enter **services.msc**.
     2) Find in the list and double click *Windows Installer*.
-    3) Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click *Stop* first and then hit *Start*. 
+    3) Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click *Stop* first and then hit *Start*.
     4) Press *Win + R*, type and enter ***msiexec /unregister*** and hit *Enter*.
     5) Press *Win + R* again, type and enter ***msiexec /regserver*** and hit *Enter*
 
@@ -70,7 +70,7 @@ The error sounds scarier than it actually is. In reality, this is a rather gener
 
     1) Press *Win + R* and enter ***services.msc***.
     2) Find in the list and double click *Windows Installer*.
-    3) Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click *Stop* first and then hit *Start*. 
+    3) Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click *Stop* first and then hit *Start*.
     4) Press *Win + R*, type and enter ***msiexec /unregister*** and hit *Enter*.
     5) Press *Win + R* again, type and enter ***msiexec /regserver*** and hit *Enter*
 

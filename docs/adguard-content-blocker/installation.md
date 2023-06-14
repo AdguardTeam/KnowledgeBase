@@ -3,6 +3,12 @@ title: Installation
 sidebar_position: 2
 ---
 
+:::info
+
+This article is about AdGuard Content Blocker, which only safeguards your Samsung Internet browser or Yandex Browser. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 The application is available in five stores: [Google Play](https://play.google.com/store/apps/details?id=com.adguard.android.contentblocker), [Samsung Galaxy store](https://galaxystore.samsung.com/detail/com.adguard.android.contentblocker), [Huawei AppGallery](https://appgallery.huawei.com/#/app/C100440597), [Aptoide](https://adguard-content-blocker.en.aptoide.com/), and [F-Droid](https://f-droid.org/en/packages/com.adguard.android.contentblocker/).
 
 To install AdGuard Content Blocker from Google Play, search _AdGuard Content Blocker_ and tap _Install_.

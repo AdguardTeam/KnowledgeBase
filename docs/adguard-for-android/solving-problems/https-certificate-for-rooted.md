@@ -3,7 +3,7 @@ title: Moving CA certificate to System store on rooted devices
 sidebar_position: 13
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -64,7 +64,7 @@ Please note that in order for **Bromite** browser to work properly, in addition 
 
 ### Chrome and Chromium-based browsers
 
-Long story short, you will have no problems with HTTPS filtering in Chrome and Chromium-based browsers on rooted devices, if you use "AdGuard Certificate" module. 
+Long story short, you will have no problems with HTTPS filtering in Chrome and Chromium-based browsers on rooted devices, if you use "AdGuard Certificate" module.
 
 Here is a bit more detailed explanation: Chrome (and subsequently many other Chromium-based browsers) has recently started requiring CT logs for CA certs found in the **System store**. "AdGuard Certificate" module copies AdGuard's CA certificate from the **User store** to the **System store**. It also contains a Zygisk module that reverts any modifications done by Magisk for [certain browsers](https://github.com/AdguardTeam/adguardcert/blob/master/zygisk_module/jni/browsers.inc).
 This way the browsers only find AdGuard’s certificate in the User store and don’t complain about the missing CT log, while other apps continue to use the same certificate from the System store.

@@ -3,7 +3,7 @@ title: Problems caused by using a Restricted Mode profile
 sidebar_position: 10
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -27,10 +27,10 @@ You have three ways to solve the issue:
 
 >  If you have any difficulties or additional questions, full instructions can be found [here](https://developer.android.com/studio/debug/dev-options).
 
-2. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; 
+2. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb;
 > On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
 3. Connect your device using a **USB cable** to the computer or laptop on which you installed **ADB**;
-4. Open **the command line** on your PC: 
+4. Open **the command line** on your PC:
 - **Cmd.exe** if you are using **Windows**;
 - **Terminal** if you are using **macOS**;
 5. Enter the command `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` and press **Enter**.

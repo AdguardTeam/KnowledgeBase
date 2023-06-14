@@ -3,7 +3,7 @@ title: How to collect AdGuard logs
 sidebar_position: 3
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -15,7 +15,7 @@ To analyse and diagnose different problems that may potentially arise, the AdGua
 
 ![Debug logging level *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
 
-2. Reproduce the issue. 
+2. Reproduce the issue.
 
 - We strongly advise to take note of the exact time when you reproduced the issue: it will help our support team to find relevant log entries and solve the problem faster.
 
