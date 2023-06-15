@@ -107,11 +107,13 @@ Or you  can configure remove parameters manually:
 
  `[trust]` applies for **HTTPS_CONNECT** server type only and include option **Trust any certificates**. It is necessary to set **true or false** value.
 
- > **Example**:
+:::note Example
 
 `setting by name`: server:MyServer
 
  `manually settings`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
+
+ :::
 
 -----
 
@@ -123,7 +125,11 @@ Package name: `com.adguard.android`
 
 Class: `com.adguard.android.receiver.AutomationReceiver`
 
-> Note: Before v4.0 the class was called `com.adguard.android.receivers.AutomationReceiver` but then we changed its name to `com.adguard.android.receiver.AutomationReceiver`. If you used this feature, please pay attention and use the new name.
+:::note
+
+Before v4.0 the class was called `com.adguard.android.receivers.AutomationReceiver` but then we changed its name to `com.adguard.android.receiver.AutomationReceiver`. If you used this feature, please pay attention and use the new name.
+
+:::
 
 ### Execution without notification
 

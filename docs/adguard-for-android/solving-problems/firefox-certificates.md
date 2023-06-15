@@ -13,7 +13,11 @@ For AdGuard to successfully filter HTTPS traffic in Firefox, the browser needs t
 
 ### Method 1
 
-> This method works in Firefox for Android version 90.0 and later.
+:::note
+
+This method works in Firefox for Android version 90.0 and later.
+
+:::
 
 To make Firefox trust the AdGuard certificate, do the following:
 
@@ -31,10 +35,14 @@ To make Firefox trust the AdGuard certificate, do the following:
 
 ### Method 2
 
-> This method will only work on **rooted** devices.
+:::note
+
+This method will only work on **rooted** devices.
+
+:::
 
 1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb;
-> On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
 2. Activate the **developer mode** and enable **USB debugging**:
     - Open the **Settings** app on your phone;
     - Go to **System** section (last item in the settings menu). In this section, find the sub-item **About phone**;

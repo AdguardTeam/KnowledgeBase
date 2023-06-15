@@ -24,7 +24,11 @@ Sometimes we need to analyze it to block specific ads that are difficult to repr
 
 **Please send the file with logs (that you've got as a result) to the AdGuard support service.**
 
-> Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message.
+:::note
+
+Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message.
+
+:::
 
 ## How to analyze HAR files
 Here are some sources that we can recommend to analyze HAR files:
