@@ -660,15 +660,48 @@ Disables any [cosmetic rules](#cosmetic-rules) on the pages matching the rule.
 
 #### **`$extension`** {#extension-modifier}
 
-Disables all userscripts on the pages matching this rule.
+Disables specific userscripts or all userscripts for a given domain.
+
+**Syntax**
+
+```
+$extension[="userscript_name1"[|"userscript_name2"[|"userscript_name3"[...]]]]
+```
+
+`userscript_name(i)` stands for a specific userscript name to be disabled by the modifier. The modifier can contain any number of userscript names or not contain them at all. In the latter case the modifier disables all the userscripts.
+
+Userscript names usually contain spaces or other special characters, which is why you should enclose the name in quotes. Both single (`'`) and double (`"`) ASCII quotes are supported. Multiple userscript names should be separated with a pipe (`|`). However, if a userscript name is a single word without any special characters, it can be used without quotes.
+
+You can also exclude a userscript by adding a `~` character before it. In this case, the userscript will not be disabled by the modifier.
+
+```
+$extension=~"userscript name"
+```
+
+**NOTE**: When excluding a userscript, you must place `~` outside the quotes.
+
+
+If a userscript's name includes quotes (`"`), commas (`,`), or pipes (`|`), they must be escaped with a backslash (`\`).
+
+```
+$extension="userscript name\, with \"quote\""
+```
 
 **Examples**
 
-* `@@||example.com^$extension` — userscripts will not work on all pages of the `example.com` website.
+* `@@||example.com^$extension="AdGuard Assistant"` disables the `AdGuard Assistant` userscript on `example.com` website.
+* `@@||example.com^$extension=MyUserscript` disables the `MyUserscript` userscript on `example.com` website.
+* `@@||example.com^$extension='AdGuard Assistant'|'Popup Blocker'` disables both `AdGuard Assistant` and `Popup Blocker` userscripts on `example.com` website.
+* `@@||example.com^$extension=~"AdGuard Assistant"` disables all user scripts on `example.com` website, except `AdGuard Assistant`.
+* `@@||example.com^$extension=~"AdGuard Assistant"|~"Popup Blocker"` disables all user scripts on `example.com` website, except `AdGuard Assistant` and `Popup Blocker`.
+* `@@||example.com^$extension` all userscripts will not work on all pages of the `example.com` website.
+* `@@||example.com^$extension="AdGuard \"Assistant\""` disables the `AdGuard "Assistant"` userscript on `example.com` website.
 
 > **Compatibility with different versions of AdGuard**
 >
 > Only AdGuard for Windows, Mac, Android are technically capable of using rules with `$extension` modifier.
+>
+> `$extension` modifier with specific userscript name is supported by AdGuard for Windows, Mac, and Android, running CoreLibs version 1.13 or later.
 
 #### **`$jsinject`** {#jsinject-modifier}
 
