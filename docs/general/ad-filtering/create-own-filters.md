@@ -1399,20 +1399,28 @@ AdGuard uses the same filtering rules syntax as uBlock Origin. Also, it is compa
 
 > The value of the `$redirect` modifier must be the name of the resource that will be used for redirection.
 
-> `$redirect` rules' priority is higher than the regular basic blocking rules' priority. This means that if there is a basic blocking rule `$redirect` rule will prevail over it. Allowlist rules with `@@` mark have a higher priority than `$redirect` rules. If basic rule with the `$important` modifier matching the same URL, it will prevail over `$redirect` rule (unless the `$redirect` rule is also marked as `$important`).
-> In short: `$important` > `@@` > `$redirect` > `basic rules`
-
-Go to [rules priorities](#rule-priorities) for more details.
-
 ##### Disabling `$redirect` rules
-
 
 * `||example.org/script.js$script,redirect=noopjs` — this rule redirects all requests to `example.org/script.js` to the resource named `noopjs`.
 * `||example.org/test.mp4$media,redirect=noopmp4-1s` — this rule redirects all requests to `example.org/test.mp4` to the resource named `noopmp4-1s`.
 * `@@||example.org^$redirect` will disable all `$redirect` rules for URLs that match `||example.org^`.
 * `@@||example.org^$redirect=nooptext` will disable all rules with `$redirect=nooptext` for any request that matches `||example.org^`.
 
-> More information on redirects and their usage is available [on GitHub](https://github.com/AdguardTeam/Scriptlets#redirect-resources).
+More information on redirects and their usage is available [on GitHub](https://github.com/AdguardTeam/Scriptlets#redirect-resources).
+
+#### Priorities of `$redirect` rules {#redirect-rule-priorities}
+
+`$redirect` rules' priority is higher than the regular basic blocking rules' priority.
+This means that if there is a basic blocking rule, `$redirect` rule will prevail over it.
+Allowlist rules with `@@` mark have a higher priority than `$redirect` rules.
+If basic rule with the `$important` modifier matching the same URL,
+it will prevail over `$redirect` rule (unless the `$redirect` rule is also marked as `$important`).
+
+[//]: # (Please do not replace `>` by `→`)
+
+**In short: `$important` > `@@` > `$redirect` > `basic rules`.**
+
+Go to [rules priorities](#rule-priorities) for more details.
 
 > **Compatibility with different versions of AdGuard**
 >
