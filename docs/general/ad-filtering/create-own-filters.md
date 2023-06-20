@@ -423,7 +423,7 @@ Please note, that rules with mixed value restriction are considered invalid. So,
 
 > **Compatibility with different versions of AdGuard**
 >
-> Rules with the `$method` are supported by AdGuard for Windows, Mac, Android, **running CoreLibs v1.12 or later**, and AdGuard Browser extension for Chrome, Firefox, Edge. 
+> Rules with the `$method` are supported by AdGuard for Windows, Mac, Android, **running CoreLibs v1.12 or later**, and AdGuard Browser extension for Chrome, Firefox, Edge, **running TSUrlFilter v2.1.1 or later**
 
 #### **`$popup`** {#popup-modifier}
 
