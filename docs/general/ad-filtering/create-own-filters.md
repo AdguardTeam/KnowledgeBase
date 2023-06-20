@@ -485,7 +485,7 @@ If there is a `$~third-party` modifier, the rule is only applied to the requests
 
 > **Compatibility with different versions of AdGuard**
 >
-> `$to` is available starting with CoreLibs v1.12.
+> `$to` is available starting with CoreLibs v1.12 and TSUrlFilter X.X.X.
 
 #### Restriction by content type {#content-type-modifiers}
 
