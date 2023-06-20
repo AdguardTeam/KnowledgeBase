@@ -1410,11 +1410,11 @@ More information on redirects and their usage is available [on GitHub](https://g
 
 #### Priorities of `$redirect` rules {#redirect-rule-priorities}
 
-`$redirect` rules' priority is higher than the regular basic blocking rules' priority.
-This means that if there is a basic blocking rule, `$redirect` rule will prevail over it.
-Allowlist rules with `@@` mark have a higher priority than `$redirect` rules.
-If basic rule with the `$important` modifier matching the same URL,
-it will prevail over `$redirect` rule (unless the `$redirect` rule is also marked as `$important`).
+The priority of `$redirect` rules is higher than the priority of regular basic blocking rules.
+This means that if there is a basic blocking rule, the `$redirect` rule will override it.
+Allowlist rules with `@@` mark have higher priority than `$redirect` rules.
+If a basic rule with the `$important` modifier matches the same URL,
+it will override the `$redirect` rule (unless the `$redirect` rule is also marked as `$important`).
 
 [//]: # (Please do not replace `>` by `→`)
 
