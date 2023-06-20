@@ -414,9 +414,9 @@ This modifier limits the rule scope to requests that use the specified set of HT
 **Examples**
 
 * `||evil.com^$method=get|head` blocks only GET and HEAD requests to `evil.com`.
-* `||evil.com^$method=~post|~put` blocks any requests  to `evil.com`,except POST or PUT.
+* `||evil.com^$method=~post|~put` blocks any requests to `evil.com` except POST or PUT.
 * `@@||evil.com$method=get` unblocks only GET requests to `evil.com`.
-* `@@||evil.com$method=~post` blocks any requests to `evil.com`, except POST.
+* `@@||evil.com$method=~post` unblocks any requests to `evil.com` except POST.
 
 Please note, that rules with mixed value restriction are considered invalid. So, for example, the rule
 `||evil.com^$method=get|~head` will be rejected.
