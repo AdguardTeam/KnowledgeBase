@@ -85,7 +85,7 @@ You can also set an arbitrary value for Referrer by entering it into the *Custom
 
 Note that to be able to filter traffic, AdGuard applications 'intercept' browser-to-server requests. Requests to ad, tracking, and phishing servers may be altered before sending them to the server or blocked completely. Same goes for the *Hide Referrer from third parties* option: AdGuard intercepts HTTP(S) requests, in particular to remove or change the Referrer header if this option is enabled. However, it happens only after these requests “leave” the browser. This means that if you monitor Referrer inside the browser (for example, with the help of Chrome's Developer Tools), you will see the original Referrer because the request hasn't reached AdGuard yet. You can use software like [Fiddler](https://www.telerik.com/fiddler) to make sure that Referrer gets altered correctly.
 
-On the opposite, due to the nature of all browser extensions, AdGuard Browser extension works 'inside' the browser. It will alter the Referrer right then and there, so Developer Tools will show the desired Referrer for your requests.
+On the opposite, due to the nature of all browser extensions, AdGuard Browser Extension works 'inside' the browser. It will alter the Referrer right then and there, so Developer Tools will show the desired Referrer for your requests.
 
 ### Hide your User-Agent {#useragent}
 

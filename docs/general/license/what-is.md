@@ -14,7 +14,7 @@ Some licenses need to be purchased (e.g. AdGuard Ad Blocker Personal), some are 
     AdGuard for Mac — 14-day trial,
     AdGuard for Android — 7-day trial.
 2. **Free licenses** are not time-limited, but have limited functionality:
-    AdGuard Browser extension,
+    AdGuard Browser Extension,
     AdGuard Content Blocker,
     AdGuard for iOS.
 3. **Subscriptions** are paid licenses that are renewed automatically every month or every year. They can also be extended manually.
