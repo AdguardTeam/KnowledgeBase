@@ -5,11 +5,11 @@ sidebar_position: 2
 
 ## System  requirements
 
-**OS version:** Android 5.0 or higher.
+**OS version:** Android 7.0 or higher
 
-**RAM:** at least 2 GB.
+**RAM:** at least 2 GB
 
-**Free disk space:** 120 MB.
+**Free disk space:** 500 MB
 
 ## Installation
 
@@ -17,75 +17,54 @@ Most Android-based apps are distributed via Google Play; however, AdGuard is not
 
 That’s why you can only install AdGuard for Android manually. To use the app on your mobile device, you will need to do the following.
 
-First of all, allow installing apps from unknown sources in your device’s OS settings. For this you will need to:
+1. **Download the app on your device**. Here are a few ways you could go about this:
 
-* For Android 8+: start downloading [AdGuard apk](https://adguard.com/download.html?auto=1) (see the next step), you'll be prompted to allow permission. Tap **Settings** in the opened window and enable **Allow from this source** switch. Then resume the installation.
-* For Android 6 and 7: open **Settings**, then select **Additional settings** in **System & Device**. Switch on **Unknown sources** and press **OK** in the system warning window.
+    * head over to [our website](https://adguard.com/en/adguard-android/overview.html) and tap the *Download* button
+    * start the browser and type in the following URL: [https://adguard.com/apk](https://adguard.com/apk)
+    * or scan this QR code
 
-![Installing apps from unknown sources *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/unknown_sources1.png)
+    ![QR code *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_qr.png)
 
-* For Android 5: open **Settings**, then select **Security** in the **Personal** section. Switch on **Unknown sources** and press **OK** in the system warning window.
+2. **Allow installing apps from unknown sources**. Once the file download is complete, tap on the *Open* option in the notification. 
 
-![Installing apps from unknown sources *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/unknown_sources2.png)
+![Installing apps from unknown sources *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_1.png)
 
-You can now install the app on your device. Start the browser and type in the following URL: [https://adguard.com/apk](https://adguard.com/apk), or scan this QR code:
+A popup will then appear, prompting you to adjust *Settings*. Tap on *Settings*, navigate to *Install unknown apps*, and grant permission for the browser you've used to download the file.
 
-![QR code *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/qr.png)
+![Installing apps from unknown sources *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_3.png)
 
-You will see the request to save the downloaded file. Press **OK**.
+This tutorial is right for Android 8+. If you have an older OS version, before downloading the apk file, open *Settings*, then select *Additional settings* in *System & Device*. Switch on *Unknown sources* and tap *OK* in the system warning window.
 
-![Save the file *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/save_the_file.png)
+3. **Install the app**. Once the browser secures the necessary permission, the system will ask you if you want to install the AdGuard app. Tap *Install*.
 
-When the download is complete, the system will ask you if you want to install the AdGuard app. Press **Install**.
+![Installing apps from unknown sources *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_4.png)
 
-![Installation *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/1.png)
+You will then be asked to read the *License agreement* and AdGuard's *Privacy Policy*. You can also participate in product development. To do this, you should check boxes *Send crash reports automatically* and *Send technical and interaction data*. Tap *Continue* after that.
 
-You will then be asked to read the **License agreement** and AdGuard's **Privacy Policy**. You can also participate in product development. To do this, you should check boxes *Send automatic crash reports* and *Send technical and interaction data*. Tap **Accept** after that.
+![Privacy Policy *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_3.png)
 
-![Privacy Policy *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/2.png)
+4. **Create a local VPN**. To filter all the traffic right on your device and not to rout it through a remote server AdGuard needs to set up a VPN connection. 
 
-Then you'll need to choose between a **Quick** and **Thorough** setups.
+![Create a local VPN *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_2.png)
 
-![Setups *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/3.png)
+5. **Enable HTTPS filtering**. It is not a mandatory option, however, we advice to turn it on for the best ad-blocking quality.
 
-The latter starts a first launch sequence to configure the app to suit your needs. First, you'll be asked whether you want to enable search ads:
+If your device runs on Android 7-9, after setting up a local VPN, you'll be prompted with a screen to install a root certificate and configure HTTPS filtering. 
 
-![Search ads *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/5.png)
+![Enable HTTPS filtering on Android 7-9 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/cert_1.jpg)
 
-The next step is to block or keep social widgets (e.g. "Like" buttons):
+After you hit *Install now*, a prompt will pop up requesting you to authenticate the certificate installation using a password or fingerprint.
 
-![Social widgets *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/6.png)
+![Enable HTTPS filtering on Android 7-9. Step 2 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/cert_2.jpg)
 
-Next is Annoyances: cookie notifications, support windows etc.:
+If you have Android 10+ on your device, then after creating a local VPN, you will see the main app screen with a snack bar at the bottom: tap *Enable* and follow the instructions on the next screen.  
 
-![Annoyances *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/7.png)
-
-You don't have to choose anything on this screen: just take note of the information on how to watch YouTube videos without ads:
-
-![YouTube *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/youtube.jpg)
-
-Up next is privacy settings. Choose a desirable protection level:
-
-![Privacy settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/8.png)
-
-On the next screen, select whether you want to get notifications about dangerous websites:
-
-![Security *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/9.png)
-
-The next step is rather important. It's about HTTPS filtering, and we recommend turning it on for the best ad-blocking quality:
-
-![HTTPS filtering *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/10.png)
-
-The last step is to enable local VPN:
-
-![Local VPN *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/11.png)
-
-The **AdGuard** app installation is complete.
+![Enable HTTPS filtering *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_5.png)
 
 ## Uninstalling/Reinstalling AdGuard
 
-If you need to reinstall AdGuard on your mobile device, first delete it by opening **Settings** and choosing **Installed Apps** (Android 6), **Apps** (Android 5 and 7) or **Apps & notifications** (Android 8+). Find **AdGuard** in the list of installed apps and press **Uninstall**.
+If you need to reinstall AdGuard on your mobile device, first delete it by opening **Settings** and choosing **Apps** (Android 7) or **Apps & notifications** (Android 8+). Find **AdGuard** in the list of installed apps and press **Uninstall**.
 
-![Reinstall AdGuard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/12.png)
+![Reinstall AdGuard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_4.png)
 
 To reinstall the app, repeat the actions described in the Installation section.
