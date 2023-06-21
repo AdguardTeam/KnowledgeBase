@@ -27,4 +27,4 @@ Public Key Pinning is a security measure that allows websites to ensure that the
 
 To apply the changes, you’ll need to restart Tor Browser.
 
-> If you manually change these settings, Tor filtering will be stopped.
+If you manually change these settings, Tor filtering will be stopped.

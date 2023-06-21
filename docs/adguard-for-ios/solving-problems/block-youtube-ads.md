@@ -23,4 +23,8 @@ To activate the extension and block ads on YouTube, do the following:
 
 YouTube is now ad-free! Please note that you need to run this extension again if you reload the page.
 
-> In some cases the AdGuard extension may be not displayed. If you don't see it, try to follow the instruction again or restart your device
+:::tip
+
+In some cases the AdGuard extension may be not displayed. If you don't see it, try to follow the instruction again or restart your device
+
+:::
