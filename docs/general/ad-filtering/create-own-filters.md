@@ -456,16 +456,21 @@ This modifier defines a rule which applies only to addresses that match the case
 
 #### **`$method`** {#method-modifier}
 
-This modifier limits the rule scope to requests that use the specified set of HTTP methods. Negated methods are allowed. The methods must be specified in all lowercase characters, but are matched case-insensitively.
+This modifier limits the rule scope to requests that use the specified set of HTTP methods. Negated methods are allowed. The methods must be specified in all lowercase characters, but are matched case-insensitively. To add multiple domains to one rule, use the `|` character as a separator.
 
 **Examples**
 
 * `||evil.com^$method=get|head` blocks only GET and HEAD requests to `evil.com`.
-* `||evil.com^$method=~post|~put` blocks any requests except POST or PUT to `evil.com`.
+* `||evil.com^$method=~post|~put` blocks any requests to `evil.com` except POST or PUT.
+* `@@||evil.com$method=get` unblocks only GET requests to `evil.com`.
+* `@@||evil.com$method=~post` unblocks any requests to `evil.com` except POST.
+
+Please note, that rules with mixed value restriction are considered invalid. So, for example, the rule
+`||evil.com^$method=get|~head` will be rejected.
 
 :::info Compatibility
 
-Rules with the `$method` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.12 or later**.
+Rules with the `$method` are supported by AdGuard for Windows, Mac, Android, **running CoreLibs v1.12 or later**, and AdGuard Browser extension for Chrome, Firefox, Edge, **running TSUrlFilter v2.1.1 or later**.
 
 :::
 
