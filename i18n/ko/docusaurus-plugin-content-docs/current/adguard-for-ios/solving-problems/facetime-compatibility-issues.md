@@ -3,6 +3,12 @@ title: FaceTime과의 호환성 문제를 해결하는 방법
 sidebar_position: 3
 ---
 
+:::note
+
+This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 풀 터널 모드는 VPN 앱뿐만 아니라 FaceTime의 작동을 방해할 수 있습니다.
 
 iOS용 AdGuard의 풀 터널 모드를 켜져 있을 때 FaceTime이 작동하지 않은 경우가 있었습니다.

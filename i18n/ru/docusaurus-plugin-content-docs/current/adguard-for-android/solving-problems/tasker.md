@@ -3,6 +3,12 @@ title: Как автоматизировать AdGuard для Android
 sidebar_position: 3
 ---
 
+:::note
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 Многие пользователи выбирают Android из-за возможностей настроить устройство под себя. Поведение устройства по умолчанию может устраивать не всех. Допустим, вы хотите, чтобы защита отключалась при запуске определённого приложения и снова включалась при его остановке. Это работа для приложения Tasker.
 
 ## Интерфейс AdGuard

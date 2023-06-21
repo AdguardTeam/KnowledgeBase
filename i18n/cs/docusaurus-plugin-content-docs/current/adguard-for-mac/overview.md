@@ -3,6 +3,12 @@ title: Přehled funkcí
 sidebar_position: 1
 ---
 
+:::note
+
+Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 AdGuard pro Mac si jako jeden z našich hlavních produktů zaslouží podrobného průvodce. Rozhodli jsme se pomoci novým uživatelům a upozornit na některé jemnější, ale méně zřejmé body, které mohly uniknout i zkušeným fanouškům AdGuardu pro Mac.
 
 AdGuard pro Mac je samostatný blokátor reklam pro macOS. Zatímco AdGuard pro Safari má [omezené možnosti blokování reklam](https://adguard.com/en/blog/youtube-ads-in-safari-explained.html) kvůli blokování obsahu v Safari, AdGuard pro Mac je plnohodnotný a může svým uživatelům nabídnout více. Provedeme vás hlavními funkcemi.

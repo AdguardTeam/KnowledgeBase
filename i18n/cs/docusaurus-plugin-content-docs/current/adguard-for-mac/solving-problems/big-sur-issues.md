@@ -3,6 +3,12 @@ title: Problémy kompatibility s různými verzemi macOS
 sidebar_position: 4
 ---
 
+:::note
+
+Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## Současné problémy
 
 Společnost Apple každý rok vydává novou verzi systému macOS, která přináší inovativní řešení a přidává nové užitečné funkce. Některé z nich, například Network Extensions API (Big Sur) nebo iCloud Private Relay (Monterey), však způsobují problémy mnoha aplikacím, přičemž AdGuard není výjimkou. V tomto článku probereme známé problémy specifické pro jednotlivé verze systému macOS a možné způsoby jejich řešení.

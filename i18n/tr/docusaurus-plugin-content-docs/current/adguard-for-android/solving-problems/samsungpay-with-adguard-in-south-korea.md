@@ -3,6 +3,12 @@ title: How to use Samsung Pay with AdGuard in South Korea
 sidebar_position: 16
 ---
 
+:::note
+
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Android için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+
+:::
+
 This problem occurs almost exclusively on devices registered in South Korea. Samsung Pay occasionally doesn't work on such devices with running VPN services. However, there is a way to solve this problem.
 
 By default, AdGuard uses Local VPN to filter traffic. This was the reason why the South Korean users had to disable AdGuard when making payments with Samsung Pay. Now it is possible to avoid such difficulties.

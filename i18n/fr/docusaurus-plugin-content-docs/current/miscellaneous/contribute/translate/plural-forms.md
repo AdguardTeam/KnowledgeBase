@@ -20,8 +20,6 @@ Jetons un coup d'œil à cette image. Vous pouvez voir ici les groupes de chiffr
 
 ![Polonais](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
-> Trouvez d'autres exemples [ici](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals).
-
 Pour mieux comprendre, établissons un petit parallèle entre l'anglais et le polonais : 
 
       La version anglaise :                                                 Les équivalents polonais :

@@ -3,6 +3,12 @@ title: Типичные ошибки установщика
 sidebar_position: 6
 ---
 
+:::note
+
+This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 В этой статье собраны наиболее частые ошибки, с которыми вы можете столкнуться во время установки AdGuard для Windows, и возможные пути их решения.
 
 ### Ошибка 5: Отказано в доступе {#error-5}

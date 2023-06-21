@@ -3,6 +3,12 @@ title: Známé problémy AdGuardu pro Windows
 sidebar_position: 10
 ---
 
+:::note
+
+Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## Problémy s kompatibilitou AdGuardu pro Windows a AdGuard VPN pro Windows
 
 Jakmile nainstalujete AdGuard pro Windows a AdGuard VPN pro Windows, začnou spolupracovat bez jakéhokoli úsilí z vaší strany. Změna některých jejich výchozích nastavení však může způsobit, že aplikace budou při současném spuštění pracovat nesprávně.

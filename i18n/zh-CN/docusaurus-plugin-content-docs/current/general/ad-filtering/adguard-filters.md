@@ -3,6 +3,12 @@ title: AdGuard 过滤器
 sidebar_position: 2
 ---
 
+:::note
+
+This article is about the filters that we develop and that come pre-installed in AdGuard. To check them out, you can [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 本文介绍的是我们创建用于 AdGuard 和其他广告拦截软件（例如 uBlock Origin）的过滤器。 每个过滤器均代表一组文本格式的规则，AdGuard 应用和程序可使用这些规则来过滤广告和隐私威胁的内容（例如横幅、弹出式窗口、跟踪器等）。 过滤器包含基于其用途的规则列表。 语言过滤器包括互联网的相应语言的规则（例如，中文过滤器）。 基于特定任务的过滤器将完成特定任务的规则分组，例如社交媒体过滤器或跟踪保护过滤器。 启用或禁用过滤器让用户更轻松地同时处理整个规则列表。
 
 ## AdGuard 过滤器
@@ -25,7 +31,7 @@ sidebar_position: 2
 * **荷兰语过滤器**删除荷兰语网站上的广告。 最初是基于 [EasyList Dutch](https://easylist.to/) 过滤器，随后我们根据用户的反馈进行修改。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_8_Dutch/filter.txt)
 * **西班牙语/葡萄牙语过滤器**删除西班牙语和葡萄牙语网站上的广告。 最初是基于 [Fanboy’s Spanish/Portuguese](https://www.fanboy.co.nz/fanboy-espanol.txt) 过滤器，随后我们根据用户的反馈进行修改。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_9_Spanish/filter.txt)
 * **土耳其语过滤器**删除土耳其语网站上的广告。 由我们根据用户的反馈创建。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_13_Turkish/filter.txt)
-* **中文过滤器**删除中文网站上的广告。 最初是基于 [EasyList China](http://abpchina.org/forum/forum.php) 过滤器，随后我们根据用户的反馈进行修改。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_224_Chinese/filter.txt)
+* **中文过滤器**删除中文网站上的广告。 Originally based on the [EasyList China](https://github.com/easylist/easylistchina) filter and subsequently modified by us according to the complaints from users. [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_224_Chinese/filter.txt)
 * **实验性过滤器**，此过滤器设计用于在将某些有风险的过滤规则添加到基本过滤器之前对其进行测试。 如果这些规则执行没有任何问题，它们会被添加到主过滤器中。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_5_Experimental/filter.txt)
 * **移动广告过滤器**拦截移动设备上的广告。 包含所有已知的移动广告网络。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_11_Mobile/filter.txt)
 * **DNS 过滤器** — 此过滤器由其他几个过滤器 (AdGuard 基础过滤器、社交媒体过滤器、防跟踪保护过滤器、移动广告过滤器、EasyList 和 EasyPrivacy) 组成，并经过简化，以便更好地与 DNS 级别的广告拦截兼容。 [AdGuard DNS](https://adguard-dns.io/kb) 服务器使用此过滤器来拦截广告和跟踪器。 [查看规则](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt)

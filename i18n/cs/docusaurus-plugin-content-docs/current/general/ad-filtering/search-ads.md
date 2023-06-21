@@ -11,7 +11,7 @@ Aby bylo jasné, toto je **zcela volitelné**. Zobrazování těchto reklam mů�
 
 Reklamy ve vyhledávání jsou reklamy, které se zobrazují mezi výsledky vyhledávacích dotazů při používání online vyhledávačů, jako jsou Google, Bing, DuckDuckGo atd.
 
-![search ads](https://user-images.githubusercontent.com/28726429/27697369-b3d2556e-5cfc-11e7-9203-3c95a7de7c28.png)
+![Reklamy ve vyhledávání](https://cdn.adtidy.org/content/kb/ad_blocker/general/googlead.jpg)
 
 Tyto reklamy jsou vždy kontextové: jsou cílené na klíčová slova, která jste použili v dotazu. Díky tomu můžete najít přesně to, co hledáte. Kromě toho jsou reklamy ve vyhledávání (protože procházejí ruční úpravou) často relevantnější a užitečnější než ostatní výsledky vyhledávání.
 
@@ -21,7 +21,7 @@ Dalším argumentem na obhajobu reklam ve vyhledávání je, že jsou mnohem mé
 
 V zásadě platí, že pokud reklama na webové stránce propaguje tuto konkrétní webovou stránku nebo úzce související webové stránky, sociální média apod., je taková reklama považována za vlastní propagaci.
 
-![self-promo](https://user-images.githubusercontent.com/8577533/27700604-c9b6f330-5d06-11e7-8ac9-1a9120f720c8.png)
+![Reklamy ve vyhledávání](https://cdn.adtidy.org/content/kb/ad_blocker/general/echodot.jpg)
 
 Náš obecný postoj je zde velmi podobný zásadám EasyList týkajícím se reklam s vlastní propagací. Podle našich zásad [filtru](../filter-policy) bychom tyto reklamy neměli blokovat; neměli bychom však udělat výjimku, pokud je taková reklama zablokována podle nějakého pravidla 'spolu s' běžnou reklamou.
 

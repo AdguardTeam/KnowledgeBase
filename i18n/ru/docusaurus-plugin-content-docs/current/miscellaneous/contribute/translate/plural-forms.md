@@ -20,8 +20,6 @@ sidebar_position: 4
 
 ![польский](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
-> Другие примеры можно найти [здесь](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals).
-
 Вот таблица сравнения плюральных форм в английском и польском: 
 
       Английская версия:                                                 Польские эквиваленты:

@@ -3,6 +3,12 @@ title: Lösung von Installationsproblemen
 sidebar_position: 5
 ---
 
+:::note
+
+This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## Fehler „Installation fehlgeschlagen“ in macOS Catalina
 
 Während der Installation kann ein Fehler wie dieser auftreten:
@@ -11,6 +17,12 @@ Während der Installation kann ein Fehler wie dieser auftreten:
 
 Folgen Sie dieser Anleitung, um das Problem zu lösen:
 
-1) Starten Sie Ihren Mac neu; 2) Halten Sie beim Neustart Ihres Mac die Tasten *Command(⌘) + R* sofort, wenn Sie den Startton hören. Halten Sie die Tasten gedrückt, bis das Apple-Logo erscheint, um den Computer in den Wiederherstellungsmodus zu versetzen. 3) Wählen Sie in der oberen Leiste *Utilities* → *Terminal* und führen Sie diesen Befehl aus: `csrutil disable`; 4) Starten Sie den Mac neu und melden Sie sich beim Administratorprofil an; 5) Öffnen Sie das Finder-Fenster und wählen Sie in der oberen Leiste *Go*  → *Go to Folder* und geben Sie `~/private/` ein; 6) Erstellen Sie einen Ordner namens *tmp* und geben Sie Ihr Passwort ein. 7) Starten Sie die AdGuard-Installation
+1. Restart your Mac
+2. As your Mac restarts, press and hold down the *Command(⌘) + R* keys immediately upon hearing the startup chime. Halten Sie die Tasten gedrückt, bis das Apple-Logo erscheint, um den Computer in den Wiederherstellungsmodus zu versetzen.
+3. From the top bar select *Utilities* → *Terminal*, and execute this command: `csrutil disable`
+4. Restart the Mac and log into Administrator's profile
+5. Open the Finder window and select from the top bar *Go* → *Go to Folder* and type `~/private/`
+6. Create a folder named *tmp* and type in your password
+7. Launch AdGuard installation
 
 Wenn die Installation abgeschlossen ist, starten Sie Ihren Mac im Wiederherstellungsmodus mithilfe der obigen Anweisungen neu und führen Sie den Befehl `csrutil enable` im Terminal aus, um den Systemschutz zu aktivieren.

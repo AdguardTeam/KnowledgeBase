@@ -3,6 +3,12 @@ title: Как получить лог Logсat
 sidebar_position: 4
 ---
 
+:::note
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## Общая инструкция
 
 Для решения проблем с вылетами и отключениями программы обычного лога почти всегда оказывается недостаточно. В таких случаях для определения источника проблемы нам нужен системный лог. Инструкция ниже описывает, как его собрать и получить.

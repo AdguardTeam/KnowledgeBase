@@ -43,7 +43,7 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 14. Ensure that the *Certificate store* field displays *Trusted Root Certification Authorities* and click **Next**.
 
-15. Click **Finish**.
+15. **Bitir** öğesine tıklayın.
 
 16. Press the **Win** key, then open **Settings**.
 
@@ -83,7 +83,7 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 12. Under *Secure Sockets Layers (SSL)*, select **Always Trust**.
 
-13. Open **System Preferences** → **Network** and choose the upper active connection.
+13. **Sistem Tercihleri** → **Ağ** öğesini açın ve üstteki etkin bağlantıyı seçin.
 
 14. Click **Details...** and navigate to the **Proxies** tab.
 

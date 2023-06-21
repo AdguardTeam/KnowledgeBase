@@ -1,9 +1,9 @@
 ---
-title: Credits & Acknowledgements
+title: Emeği Geçenler & Katkıda Bulunanlar
 sidebar_position: 2
 ---
 
-Our dev team would like to thank the developers of this third-party software, our beta testers and other interested users who helped AdGuard improve and grow.
+Geliştirme ekibimiz, bu üçüncü taraf yazılımın geliştiricilerine, beta test kullanıcıları, AdGuard'ın gelişmesine ve büyümesine yardımcı olan diğer ilgili kullanıcılara teşekkür eder.
 
 ## Üçüncü taraf yazılımı {#software}
 
@@ -105,9 +105,9 @@ This is the list of libraries and other resources that really helped us with AdG
 * BoringSSL: [https://github.com/google/boringssl/blob/master/LICENSE](https://github.com/google/boringssl/blob/master/LICENSE)
 * brotli: [https://github.com/google/brotli/blob/master/LICENSE](https://github.com/google/brotli/blob/master/LICENSE)
 * Chromium: [https://github.com/chromium/chromium/blob/master/LICENSE](https://github.com/chromium/chromium/blob/master/LICENSE)
-* Detours: [https://github.com/microsoft/Detours/blob/master/LICENSE](https://github.com/microsoft/Detours/blob/master/LICENSE)
+* Detours: [https://github.com/microsoft/Detours/blob/main/LICENSE.md](https://github.com/microsoft/Detours/blob/main/LICENSE.md)
 * eDistantObject: [https://github.com/google/eDistantObject/blob/master/LICENSE](https://github.com/google/eDistantObject/blob/master/LICENSE)
-* FF/FFOS libs by Simon Zolin: [https://github.com/stsaz/ff/blob/master/README](https://github.com/stsaz/ff/blob/master/README)
+* FF/FFOS libs by Simon Zolin: [https://github.com/stsaz/ffbase/blob/master/README.md](https://github.com/stsaz/ffbase/blob/master/README.md)
 * Google test: [https://github.com/google/googletest/blob/master/LICENSE](https://github.com/google/googletest/blob/master/LICENSE)
 * http-parser: [https://github.com/nodejs/http-parser/blob/master/LICENSE-MIT](https://github.com/nodejs/http-parser/blob/master/LICENSE-MIT)
 * jsmn: [https://github.com/zserge/jsmn/blob/master/LICENSE](https://github.com/zserge/jsmn/blob/master/LICENSE)
@@ -126,7 +126,7 @@ This is the list of libraries and other resources that really helped us with AdG
 Also a huge thanks and gratitude to all beta testers and other engaged users, whose help in finding/eliminating all the bugs, translating AdGuard and moderating our communities was priceless. Special thanks to:
 
 * ag_bug_finder — beta tester of AdGuard for Windows
-* Aikatsui — active contributor to AdGuard Home
+* Aikatsui — AdGuard Home'a aktif olarak katkıda bulunan
 * Andy Kleinert (AndyKl) — translator and proofreader to German in Crowdin
 * BigDargon — contributed the hostsVN project as a source to the list of AdGuard DNS
 * Blaz — started as a filter contributor and now working at AdGuard
@@ -142,8 +142,8 @@ Also a huge thanks and gratitude to all beta testers and other engaged users, wh
 * iDjay — outstanding beta tester of AdGuard for iOS
 * Imre Kristoffer Eilertsen (DandelionSprout) — maintainer of "Dandelion Sprout’s Nordic Filters" that are included in all AdGuard tools
 * IONIL — translator and proofreader to Hebrew in Crowdin
-* itabmedia — beta tester, active AdGuard Forum member
-* kirasam — beta tester, active AdGuard Forum member
+* itabmedia — beta test kullanıcısı, aktif AdGuard Forum üyesi
+* kirasam — beta test kullanıcısı, aktif AdGuard Forum üyesi
 * krystian3w — çok aktif filtre katkıda bulunan
 * lancelot.moon — translator and proofreader to Chinese Traditional in Crowdin, beta tester
 * Lord Ami — beta test kullanıcısı, aktif AdGuard Forum üyesi

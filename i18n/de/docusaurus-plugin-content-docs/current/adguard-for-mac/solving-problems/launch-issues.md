@@ -3,6 +3,12 @@ title: Startprobleme unter macOS
 sidebar_position: 6
 ---
 
+:::note
+
+This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 Gelegentlich kann macOS die Beschädigung des Netzwerkerweiterungsmoduls von AdGuard verursachen, wodurch die App nicht verwendet werden kann. In diesem Fall sollten Sie je nach Betriebssystemversion einer dieser Anweisungen folgen.
 
 ## Startprobleme unter macOS 11 und höher

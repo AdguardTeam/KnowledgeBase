@@ -20,8 +20,6 @@ sidebar_position: 4
 
 ![ポーランド語](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
-> 他の例は[こちら](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals)で確認できます。
-
 理解を深めるために、1個・2個・5個の場合の英語とポーランド語の複数形を比べてみましょう。 
 
       英語の場合:                                                 ポーランド語の場合:

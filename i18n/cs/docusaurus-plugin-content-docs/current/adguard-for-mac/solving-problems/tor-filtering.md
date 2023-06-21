@@ -3,6 +3,12 @@ title: Nastavení filtrování v prohlížeči Tor
 sidebar_position: 10
 ---
 
+:::note
+
+Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 Ve výchozím nastavení je prohlížeč Tor přidán do seznamu filtrovaných aplikací AdGuard. Aby jej však AdGuard mohl filtrovat, musí změnit nastavení zabezpečení Toru. Díky tomu bude Tor důvěřovat CA certifikátu AdGuardu.
 
 Pokud se rozhodnete filtrovat Tor a zaškrtnete jej v *Předvolby* → *Síť* → *Aplikace*, AdGuard vám zobrazí toto dialogové okno:

@@ -3,6 +3,12 @@ title: Как настроить системную фильтрацию в AdGu
 sidebar_position: 2
 ---
 
+:::note
+
+This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## Фильтрация на системном уровне
 
 Фильтрация на системном уровне — это блокировка рекламы и трекеров за пределами Safari, то есть в других браузерах и приложениях. В этой статье мы расскажем, как настроить её на вашем устройстве iOS.

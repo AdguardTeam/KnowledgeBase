@@ -3,6 +3,12 @@ title: Configurando a filtragem no navegador Tor
 sidebar_position: 10
 ---
 
+:::note
+
+This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 Por padrão, o navegador Tor é adicionado à lista de aplicativos filtrados do AdGuard. No entanto, para filtrá-lo, o AdGuard precisa alterar as configurações de segurança do Tor. Isso fará com que o Tor confie no certificado CA do AdGuard.
 
 Se você decidir filtrar o Tor e selecioná-lo em *Preferências* → *Rede* → *Aplicativos*, o AdGuard mostrará esta caixa de diálogo:

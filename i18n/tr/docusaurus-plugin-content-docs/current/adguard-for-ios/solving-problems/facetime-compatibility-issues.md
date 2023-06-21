@@ -3,6 +3,12 @@ title: How to avoid compatibility problem with FaceTime
 sidebar_position: 3
 ---
 
+:::note
+
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan iOS için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+
+:::
+
 It turned out that Full-Tunnel mode might interfere not only with compatibility with other VPN applications, but also with FaceTime.
 
 Some users have encountered the problem that FaceTime does not work on the device when the AdGuard app for iOS is in Full-Tunnel mode.

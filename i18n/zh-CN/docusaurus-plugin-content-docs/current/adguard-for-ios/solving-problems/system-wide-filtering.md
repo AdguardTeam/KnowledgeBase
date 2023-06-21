@@ -3,6 +3,12 @@ title: 如何在 AdGuard iOS 版设置系统层面的过滤？
 sidebar_position: 2
 ---
 
+:::note
+
+This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## 关于系统层面上的过滤
 
 系统层面上的过滤是指不仅在 Safari 浏览器里，而且在其它应用程序和浏览器里屏蔽广告及跟踪器。 这篇文章的内容讲述如何在您的 iOS 设备上设置系统层面的广告拦截。

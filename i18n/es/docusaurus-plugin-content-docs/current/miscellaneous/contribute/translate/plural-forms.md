@@ -20,8 +20,6 @@ Veamos esta imagen. Aquí puedes ver los grupos de números que determinan la fo
 
 ![Polaco](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
-> Encuentra otros ejemplos [aquí](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals).
-
 Dibujemos un pequeño paralelo entre el inglés y el polaco para una mejor comprensión: 
 
       La versión en inglés:                                                 Los equivalentes polacos:

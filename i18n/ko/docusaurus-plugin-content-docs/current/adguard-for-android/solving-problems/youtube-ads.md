@@ -3,6 +3,12 @@ title: How to block ads in the YouTube app
 sidebar_position: 7
 ---
 
+:::note
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 사용자는 종종 Android의 YouTube에서 광고를 차단할 수 있는지 묻습니다. Android OS의 기술적인 제한으로 인해 YouTube 앱에서 광고를 *완전히* 제거할 수 있는 방법이 없습니다. 그러나 Android에서 부과한 제한을 피하면서 YouTube 광고를 차단하는 방법을 찾았습니다.
 
 

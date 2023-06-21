@@ -3,6 +3,12 @@ title: How to block ads in the YouTube app
 sidebar_position: 7
 ---
 
+:::note
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 用户最常所提的问题是：“有没有办法在安卓设备上屏蔽 YouTube 应用里的广告?”。 由于安卓操作系统的技术限制，确实没有办法**彻底**移除 YouTube 应用程序里的广告。 但是我们找到了一种让我们尽可能接近拦截广告以及绕过安卓限制的方法。
 
 

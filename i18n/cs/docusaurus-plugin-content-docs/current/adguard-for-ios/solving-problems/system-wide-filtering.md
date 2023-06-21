@@ -3,6 +3,12 @@ title: Jak nakonfigurovat filtrování v celém systému pomocí AdGuardu pro iO
 sidebar_position: 2
 ---
 
+:::note
+
+Tento článek popisuje AdGuard pro iOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## O filtrování v celém systému
 
 Filtrování v celém systému znamená blokování reklam a slídičů mimo prohlížeč Safari, tedy v jiných aplikacích a prohlížečích. V tomto článku se dozvíte, jak to v zařízení se systémem iOS nastavit.

@@ -3,6 +3,12 @@ title: Jak shromažďovat kompletní záznamy
 sidebar_position: 2
 ---
 
+:::note
+
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 Někdy k pochopení problému a jeho odstranění potřebujeme shromáždit **soubory záznamů** nebo **záznamy**. Tyto soubory v podstatě obsahují informace o programu a jeho práci.
 
 ### Shromažďování záznamů ladění

@@ -3,6 +3,12 @@ title: Фильтры AdGuard
 sidebar_position: 2
 ---
 
+:::note
+
+This article is about the filters that we develop and that come pre-installed in AdGuard. To check them out, you can [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 Эта статья посвящена фильтрам, которые мы создаём для использования в AdGuard и в других блокировщиках рекламы (например, uBlock Origin). Фильтры — это наборы правил в текстовом формате, опираясь на которые, приложения и программы AdGuard фильтруют рекламу и контент, угрожающий вашей конфиденциальности, такой как баннеры, всплывающие окна или трекеры. Обычно фильтр состоит из правил с похожим назначением. Например, правила, нацеленные на конкретный сегмент интернета (Немецкий фильтр, Русский фильтр и т. д.). либо служащие определённой цели (Фильтр счётчиков и систем аналитики, Фильтр виджетов социальных сетей и т. д.), объединяются в один фильтр. Соответственно, их можно включать и выключать как единое целое.
 
 ## Фильтры AdGuard
@@ -25,7 +31,7 @@ sidebar_position: 2
 * **Голландский фильтр** убирает рекламу с сайтов на голландском языке. Изначально основан на фильтре [EasyList Dutch](https://easylist.to/) и доработан нами исходя из жалоб и сообщений пользователей. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_8_Dutch/filter.txt)
 * **Испано-португальский фильтр** убирает рекламу с сайтов на испанском и португальском языках. Изначально основан на фильтре [Fanboy’s Spanish/Portuguese](https://www.fanboy.co.nz/fanboy-espanol.txt) и доработан нами исходя из жалоб и сообщений пользователей. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_9_Spanish/filter.txt)
 * **Турецкий фильтр** убирает рекламу с сайтов на турецком языке. Создан нами в соответствии с жалобами пользователей. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_13_Turkish/filter.txt)
-* **Китайский фильтр** убирает рекламу с сайтов на китайском языке. Изначально основан на фильтре [EasyList China](http://abpchina.org/forum/forum.php) и доработан нами исходя из жалоб и сообщений пользователей. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_224_Chinese/filter.txt)
+* **Китайский фильтр** убирает рекламу с сайтов на китайском языке. Изначально основан на фильтре [EasyList China](https://github.com/easylist/easylistchina) и доработан нами исходя из жалоб и сообщений пользователей. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_224_Chinese/filter.txt)
 * **Экспериментальный фильтр** предназначен для проверки некоторых новых правил фильтрации, которые потенциально могут вызывать конфликты или ломать работу сайтов. В случае успешной проверки правила из этого фильтра добавляются в основные фильтры. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_5_Experimental/filter.txt)
 * **Фильтр мобильной рекламы** блокирует рекламу на мобильных устройствах. Содержит все известные нам рекламные сети. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_11_Mobile/filter.txt)
 * **DNS-фильтр** составлен из нескольких фильтров (Базовый фильтр AdGuard, Фильтр социальных сетей, Фильтр счётчиков и систем аналитики, Фильтр мобильной рекламы, EasyList и EasyPrivacy) и специально упрощён для лучшей совместимости с блокировкой рекламы на DNS-уровне. Этот фильтр используется серверами [AdGuard DNS](https://adguard-dns.io/kb) для блокировки рекламы и трекинга. [Посмотреть правила](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt)

@@ -3,6 +3,12 @@ title: Problémy se spotřebou baterie a datového provozu
 sidebar_position: 1
 ---
 
+:::note
+
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 Někdy si můžete všimnout, že podle statistik integrovaných v systému Android spotřebovává AdGuard velké množství dat a/nebo zdrojů baterie.
 
 Oba tyto problémy jsou dvě strany jedné mince. Vzhledem k tomu, že v procesu filtrování prochází veškerý datový provoz přes AdGuard, systém Android rozhodne, že je to právě AdGuard, kdo jej celý spotřebuje. Ve skutečnosti to ovšem není pravda.

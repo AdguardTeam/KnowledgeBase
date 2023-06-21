@@ -3,6 +3,12 @@ title: Jak nainstalovat
 sidebar_position: 2
 ---
 
+:::note
+
+Tento článek je o Rozšíření prohlížeče AdGuard, které chrání pouze váš prohlížeč. Chcete-li chránit celé zařízení, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## Jak nainstalovat Rozšíření prohlížeče AdGuard pro Google Chrome nebo Chromium
 
 Otevřete stránku s rozšířením v [Internetovém obchodě Chrome](https://agrd.io/extension_chrome) a klikněte na _Přidat do Chromu_.

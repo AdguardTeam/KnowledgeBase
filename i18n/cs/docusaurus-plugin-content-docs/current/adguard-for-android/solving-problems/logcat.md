@@ -3,6 +3,12 @@ title: Jak získat záznam Logcat
 sidebar_position: 4
 ---
 
+:::note
+
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## Obecné pokyny
 
 Pro řešení problémů s pády téměř vždy nestačí běžný protokol. V takových případech potřebujeme k identifikaci původu problému systémový záznam. Níže je uveden návod, jak jej získat.

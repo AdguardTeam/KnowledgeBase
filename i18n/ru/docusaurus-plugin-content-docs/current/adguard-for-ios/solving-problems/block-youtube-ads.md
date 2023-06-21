@@ -3,6 +3,12 @@ title: Как заблокировать рекламу на YouTube в Safari
 sidebar_position: 4
 ---  
 
+:::note
+
+This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## Как заблокировать рекламу на YouTube в Safari
 
 К сожалению, блокировка рекламы в приложении YouTube технически невозможна, но если вы смотрите YouTube в Safari, возможность её обойти всё-таки есть. Мы разработали расширение (доступно с версии AdGuard v4.2 для iOS), предназначенное специально для блокировки рекламы на YouTube. После того, как вы обновите свое приложение до версии 4.2, это расширение будет установлено автоматически — вам не нужно следовать каким-либо сложным инструкциям. Помимо рекламы, расширение удаляет заполнители, которые остаются после блокировки рекламы на iPad. Кроме того, видео на YouTube снова воспроизводятся автоматически, дополнительные нажатия не нужны.

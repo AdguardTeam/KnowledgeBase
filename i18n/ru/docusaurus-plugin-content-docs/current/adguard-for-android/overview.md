@@ -3,6 +3,12 @@ title: Обзор функций
 sidebar_position: 1
 ---
 
+:::note
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 > Обратите внимание: AdGuard для Android не следует путать с Блокировщиком контента AdGuard. Блокировщик контента AdGuard — это приложение, представленное в Google Play. Он подчиняется политике Google, вследствие чего его функциональность ограничена. AdGuard для Android — это, напротив, мощное приложение, которое позволяет блокировать рекламу, управлять другими приложениями и выполнять другие функции, описанные в этой статье. AdGuard для Android можно скачать только [на сайте AdGuard](https://adguard.com/adguard-android/overview.html).
 
 ## Блокировка рекламы

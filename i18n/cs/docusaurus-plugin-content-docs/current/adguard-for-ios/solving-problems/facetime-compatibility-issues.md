@@ -3,6 +3,12 @@ title: Jak se vyhnout problémům s kompatibilitou s FaceTime
 sidebar_position: 3
 ---
 
+:::note
+
+Tento článek popisuje AdGuard pro iOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 Ukázalo se, že režim Úplný tunel může narušovat nejen kompatibilitu s jinými aplikacemi VPN, ale také s FaceTime.
 
 Někteří uživatelé se setkali s problémem, že FaceTime na zařízení nefunguje, když je aplikace AdGuard pro iOS v režimu Úplného tunelu.

@@ -3,6 +3,12 @@ title: 如何在 Safari 中拦截 YouTube 广告
 sidebar_position: 4
 ---  
 
+:::note
+
+This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## 如何在 Safari 中拦截 YouTube 广告
 
 很遗憾，在技术上其实无法屏蔽 YouTube 应用程序里的广告，但是如您通过 Safari 浏览器打开 YouTube，我们有个解决方案。 为了屏蔽在 Safari 中打开的 YouTube 上的广告，我们发布了 Action 扩展（在 AdGuard iOS 版 v4.2 以上可用）。 升级到 v4.2 以后，您无需执行额外操作，此扩展会自动安装。 除了广告以外，此扩展在 iPad 上移除拦截广告后留下的占位符。 此外，现在又重新可以自动播放 YouTube 影片了，您不需要额外点击。

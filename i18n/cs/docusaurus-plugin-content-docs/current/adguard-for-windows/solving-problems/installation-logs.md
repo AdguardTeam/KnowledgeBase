@@ -3,6 +3,12 @@ title: Jak shromažďovat záznamy o instalaci AdGuardu
 sidebar_position: 4
 ---
 
+:::note
+
+Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 Pokud se během instalace AdGuardu vyskytnou nějaké problémy, tým podpory vás může požádat o shromáždění a zaslání záznamů o instalaci AdGuardu. V tomto případě je třeba:
 
 1. V nabídce Start vyberte příkaz *Spustit* nebo na klávesnici stiskněte kombinaci kláves *Win + R*.

@@ -3,6 +3,12 @@ title: 'Instalace/odinstalace'
 sidebar_position: 2
 ---
 
+:::note
+
+Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## Požadavky na systém
 
 **Verze operačního systému:** macOS 10.13 (64 bitů) nebo vyšší

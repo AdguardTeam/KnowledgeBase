@@ -3,6 +3,12 @@ title: Известные проблемы совместимости с при�
 sidebar_position: 15
 ---
 
+:::note
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## VPN-приложения
 
 Другие VPN-приложения несовместимы с AdGuard, работающим в режиме фильтрации «Локальный VPN», поскольку у вас не может быть двух активных VPN одновременно. Для решения этой проблемы мы предлагаем:

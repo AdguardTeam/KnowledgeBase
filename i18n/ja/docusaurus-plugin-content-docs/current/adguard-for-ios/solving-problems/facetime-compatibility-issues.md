@@ -3,6 +3,12 @@ title: AdGuard使用時FaceTime不具合の対処法
 sidebar_position: 3
 ---
 
+:::note
+
+This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 「Full-Tunnel」モードは、他のVPNアプリケーションとの互換性だけでなく、FaceTimeとのAdGuard互換性も阻害する可能性があることが判明しております。
 
 一部のユーザーは、iOS用AdGuardアプリが「Full-Tunnel」モードの場合、デバイス上でFaceTimeが機能しないという問題に遭遇しています。
