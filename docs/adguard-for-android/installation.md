@@ -25,7 +25,7 @@ That’s why you can only install AdGuard for Android manually. To use the app o
 
     ![QR code *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_qr.png)
 
-2. **Allow installing apps from unknown sources**. Once the file download is complete, tap on the *Open* option in the notification. 
+2. **Allow installing apps from unknown sources**. Once the file download is complete, tap *Open* in the notification.
 
 ![Installing apps from unknown sources *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_1.png)
 
