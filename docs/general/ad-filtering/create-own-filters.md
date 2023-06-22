@@ -1087,12 +1087,16 @@ Basic URL exceptions shall not disable rules with `$hls` modifier. They can be d
 
 :::
 
-**Restrictions**
+:::caution Restrictions
 
-* `$hls` rules are only allowed in trusted filters
-* `$hls` rules are not compatible with any other modifiers except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`
-* `$hls` rules only apply to HLS playlists, which are UTF-8 encoded text starting with the line `#EXTM3U`. Any other response will not be modified by these rules
-* `$hls` rules do not apply if the size of the original response is more than 3 MB
+* `$hls` rules are only allowed [**in trusted filters**](#trusted-filters).
+* `$hls` rules are not compatible with any other modifiers
+  except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
+* `$hls` rules only apply to HLS playlists, which are UTF-8 encoded text starting with the line `#EXTM3U`.
+  Any other response will not be modified by these rules.
+* `$hls` rules do not apply if the size of the original response is more than 3 MB.
+
+:::
 
 :::note
 
@@ -1235,10 +1239,13 @@ Basic URL exceptions shall not disable rules with `$jsonprune` modifier. They ca
 
 `$jsonprune` rules can also be disabled by `$document`, `$content` and `$urlblock` exception rules.
 
-**Restrictions**
+:::caution Restrictions
 
-* `$jsonprune` rules are not compatible with any other modifiers except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
+* `$jsonprune` rules are not compatible with any other modifiers
+  except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
 * `$jsonprune` rules do not apply if the size of the original response is more than 3 MB.
+
+:::
 
 :::note
 
@@ -1588,61 +1595,66 @@ Use `@@` to negate `$removeheader`:
 
 In case of multiple `$removeheader` rules matching a single request, we will apply each of them one by one.
 
-**Restrictions**
+:::caution Restrictions
 
 1. This type of rules can be used [**only in trusted filters**](#trusted-filters).
 
-2. In order to avoid compromising the security `$removeheader` cannot remove headers from the list below:
-* `access-control-allow-origin`
-* `access-control-allow-credentials`
-* `access-control-allow-headers`
-* `access-control-allow-methods`
-* `access-control-expose-headers`
-* `access-control-max-age`
-* `access-control-request-headers`
-* `access-control-request-method`
-* `origin`
-* `timing-allow-origin`
-* `allow`
-* `cross-origin-embedder-policy`
-* `cross-origin-opener-policy`
-* `cross-origin-resource-policy`
-* `content-security-policy`
-* `content-security-policy-report-only`
-* `expect-ct`
-* `feature-policy`
-* `origin-isolation`
-* `strict-transport-security`
-* `upgrade-insecure-requests`
-* `x-content-type-options`
-* `x-download-options`
-* `x-frame-options`
-* `x-permitted-cross-domain-policies`
-* `x-powered-by`
-* `x-xss-protection`
-* `public-key-pins`
-* `public-key-pins-report-only`
-* `sec-websocket-key`
-* `sec-websocket-extensions`
-* `sec-websocket-accept`
-* `sec-websocket-protocol`
-* `sec-websocket-version`
-* `p3p`
-* `sec-fetch-mode`
-* `sec-fetch-dest`
-* `sec-fetch-site`
-* `sec-fetch-user`
-* `referrer-policy`
-* `content-type`
-* `content-length`
-* `accept`
-* `accept-encoding`
-* `host`
-* `connection`
-* `transfer-encoding`
-* `upgrade`
+1. In order to avoid compromising the security `$removeheader` cannot remove headers from the list below:
+    * `access-control-allow-origin`
+    * `access-control-allow-credentials`
+    * `access-control-allow-headers`
+    * `access-control-allow-methods`
+    * `access-control-expose-headers`
+    * `access-control-max-age`
+    * `access-control-request-headers`
+    * `access-control-request-method`
+    * `origin`
+    * `timing-allow-origin`
+    * `allow`
+    * `cross-origin-embedder-policy`
+    * `cross-origin-opener-policy`
+    * `cross-origin-resource-policy`
+    * `content-security-policy`
+    * `content-security-policy-report-only`
+    * `expect-ct`
+    * `feature-policy`
+    * `origin-isolation`
+    * `strict-transport-security`
+    * `upgrade-insecure-requests`
+    * `x-content-type-options`
+    * `x-download-options`
+    * `x-frame-options`
+    * `x-permitted-cross-domain-policies`
+    * `x-powered-by`
+    * `x-xss-protection`
+    * `public-key-pins`
+    * `public-key-pins-report-only`
+    * `sec-websocket-key`
+    * `sec-websocket-extensions`
+    * `sec-websocket-accept`
+    * `sec-websocket-protocol`
+    * `sec-websocket-version`
+    * `p3p`
+    * `sec-fetch-mode`
+    * `sec-fetch-dest`
+    * `sec-fetch-site`
+    * `sec-fetch-user`
+    * `referrer-policy`
+    * `content-type`
+    * `content-length`
+    * `accept`
+    * `accept-encoding`
+    * `host`
+    * `connection`
+    * `transfer-encoding`
+    * `upgrade`
 
-3. `$removeheader` rules are not compatible with any other modifiers except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and [content type modifiers](#content-type-modifiers), e.g. `$script`, `$stylesheet`, etc. The rules which have any other modifiers are considered invalid and will be discarded.
+1. `$removeheader` rules are not compatible with any other modifiers
+  except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`,
+  and [content type modifiers](#content-type-modifiers), e.g. `$script`, `$stylesheet`, etc.
+  The rules which have any other modifiers are considered invalid and will be discarded.
+
+:::
 
 **Examples**
 
@@ -2218,9 +2230,11 @@ We recommend to use this kind of exceptions only if it is not possible to change
 
 Sometimes, simple hiding of an element is not enough to deal with advertising. For example, blocking an advertising element can just break the page layout. In this case AdGuard can use rules that are much more flexible than hiding rules. With this rules you can basically add any CSS styles to the page.
 
-**Restrictions**
+:::caution Restrictions
 
 Styles that lead to loading any resource are forbidden. Basically, it means that you cannot use any `<url>` type of value in the style.
+
+:::
 
 :::info Compatibility
 
@@ -2474,6 +2488,8 @@ div:contains(/it .* banner/gi)
 
 Only the `div` with `id=match` is selected because the next element does not contain any text, and `banner` is a part of code, not a text.
 
+:::
+
 **Compatibility with old syntax**
 
 [Backward compatible syntax for `:contains()`](https://github.com/AdguardTeam/ExtendedCss#old-syntax-contains) is supported but **not recommended**.
@@ -2498,9 +2514,11 @@ For **non-regexp** patterns `(`,`)`,`[`,`]` must be **unescaped**, e.g. `:matche
 
 For **regexp** patterns `\` should be **escaped**, e.g. `:matches-css(background-image: /^url\\("data:image\\/gif;base64.+/)`.
 
-**Restrictions**
+:::caution Restrictions
 
 Regexp patterns **do not support** flags.
+
+:::
 
 **Examples**
 
@@ -2553,9 +2571,11 @@ The `:matches-attr()` pseudo-class allows to select an element by its attributes
 
 For **regexp** patterns `"` and `\` should be **escaped**, e.g. `div:matches-attr(class=/[\\w]{5}/)`.
 
-**Restrictions**
+:::caution Restrictions
 
 Regexp patterns **do not support** flags.
+
+:::
 
 **Examples**
 
@@ -2606,9 +2626,13 @@ For **regexp** patterns `"` and `\` should be escaped, e.g. `div:matches-propert
 
 Regexp patterns are supported in `name` for any property in chain, e.g. `prop./^unit[\\d]{4}$/.type`.
 
-**Restrictions**
+:::
+
+:::caution Restrictions
 
 Regexp patterns **do not support** flags.
+
+:::
 
 **Examples**
 
@@ -3032,9 +3056,11 @@ We recommend to use this kind of exceptions only if it is not possible to change
 
 AdGuard supports a special type of rules that allows you to inject any javascript code to websites pages.
 
-**Restrictions**
+:::caution Restrictions
 
 JavaScript rules can be used [**only in trusted filters**](#trusted-filters).
+
+:::
 
 :::info Compatibility
 
@@ -3083,13 +3109,17 @@ We recommend to use this kind of exceptions only if it is not possible to change
 
 Scriptlet is a JavaScript function that provides extended capabilities for content blocking. These functions can be used in a declarative manner in AdGuard filtering rules.
 
-**Restrictions**
+:::caution Restrictions
 
 Trusted scriptlets rules can be used [**only in trusted filters**](#trusted-filters).
+
+:::
 
 :::note
 
 AdGuard supports a lot of different scriptlets. In order to achieve cross-blocker compatibility, we also support syntax of uBO and ABP.
+
+:::
 
 **Syntax**
 
@@ -3123,7 +3153,9 @@ Trusted scriptlets are [scriptlets](#scriptlets) with extended functionality. It
 
 :::note
 
-Trusted scriptlets are not compatible with other ad blockers except AdGuard
+Trusted scriptlets are not compatible with other ad blockers except AdGuard.
+
+:::
 
 :::info Compatibility
 
