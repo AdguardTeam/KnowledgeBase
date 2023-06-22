@@ -1087,17 +1087,6 @@ Basic URL exceptions shall not disable rules with `$hls` modifier. They can be d
 
 :::
 
-:::caution Restrictions
-
-* `$hls` rules are only allowed [**in trusted filters**](#trusted-filters).
-* `$hls` rules are not compatible with any other modifiers
-  except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
-* `$hls` rules only apply to HLS playlists, which are UTF-8 encoded text starting with the line `#EXTM3U`.
-  Any other response will not be modified by these rules.
-* `$hls` rules do not apply if the size of the original response is more than 3 MB.
-
-:::
-
 :::note
 
 When multiple `$hls` rules match the same request, their effect is cumulative.
@@ -1178,6 +1167,17 @@ preroll.ts
 ```
 </details>
 
+:::caution Restrictions
+
+* `$hls` rules are only allowed [**in trusted filters**](#trusted-filters).
+* `$hls` rules are not compatible with any other modifiers
+  except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
+* `$hls` rules only apply to HLS playlists, which are UTF-8 encoded text starting with the line `#EXTM3U`.
+  Any other response will not be modified by these rules.
+* `$hls` rules do not apply if the size of the original response is more than 3 MB.
+
+:::
+
 :::info Compatibility
 
 Rules with the `$hls` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.10 or later**.
@@ -1239,23 +1239,9 @@ Basic URL exceptions shall not disable rules with `$jsonprune` modifier. They ca
 
 `$jsonprune` rules can also be disabled by `$document`, `$content` and `$urlblock` exception rules.
 
-:::caution Restrictions
-
-* `$jsonprune` rules are not compatible with any other modifiers
-  except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
-* `$jsonprune` rules do not apply if the size of the original response is more than 3 MB.
-
-:::
-
 :::note
 
 When multiple `$jsonprune` rules match the same request, they are sorted in lexicographical order, the first rule is applied to the original response, and each of the remaining rules is applied to the result of applying the previous one.
-
-:::
-
-:::info Compatibility
-
-Rules with the `$jsonprune` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.10 or later**.
 
 :::
 
@@ -1430,6 +1416,20 @@ In AdGuard for Windows, Mac and Android **running CoreLibs v1.11 or later**, JSO
 
 </details>
 
+:::caution Restrictions
+
+* `$jsonprune` rules are not compatible with any other modifiers
+  except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
+* `$jsonprune` rules do not apply if the size of the original response is more than 3 MB.
+
+:::
+
+:::info Compatibility
+
+Rules with the `$jsonprune` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.10 or later**.
+
+:::
+
 #### **`$network`** {#network-modifier}
 
 This is basically a Firewall-like rule allowing to fully block or unblock access to a specified remote address.
@@ -1591,9 +1591,22 @@ Use `@@` to negate `$removeheader`:
 
 `$removeheader` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers will not do that. For example, `@@||example.com^` will not disable `$removeheader=p` for requests to `example.com`, but `@@||example.com^$urlblock` will.
 
-**Multiple rules matching a single request**
+:::note
 
 In case of multiple `$removeheader` rules matching a single request, we will apply each of them one by one.
+
+:::
+
+**Examples**
+
+* `||example.org^$removeheader=refresh` removes `Refresh` header from all HTTP responses returned by `example.org` and its subdomains.
+* `||example.org^$removeheader=request:x-client-data` removes `X-Client-Data` header from all HTTP requests.
+* Next block of rules removes `Refresh` and `Location` headers from all HTTP responses returned by `example.org` save for requests to `example.org/path/*`, for which no headers will be removed:
+  ```
+  ||example.org^$removeheader=refresh
+  ||example.org^$removeheader=location
+  @@||example.org/path/$removeheader
+  ```
 
 :::caution Restrictions
 
@@ -1655,17 +1668,6 @@ In case of multiple `$removeheader` rules matching a single request, we will app
   The rules which have any other modifiers are considered invalid and will be discarded.
 
 :::
-
-**Examples**
-
-* `||example.org^$removeheader=refresh` removes `Refresh` header from all HTTP responses returned by `example.org` and its subdomains.
-* `||example.org^$removeheader=request:x-client-data` removes `X-Client-Data` header from all HTTP requests.
-* Next block of rules removes `Refresh` and `Location` headers from all HTTP responses returned by `example.org` save for requests to `example.org/path/*`, for which no headers will be removed:
-  ```
-  ||example.org^$removeheader=refresh
-  ||example.org^$removeheader=location
-  @@||example.org/path/$removeheader
-  ```
 
 :::info Compatibility
 
@@ -2230,20 +2232,6 @@ We recommend to use this kind of exceptions only if it is not possible to change
 
 Sometimes, simple hiding of an element is not enough to deal with advertising. For example, blocking an advertising element can just break the page layout. In this case AdGuard can use rules that are much more flexible than hiding rules. With this rules you can basically add any CSS styles to the page.
 
-:::caution Restrictions
-
-Styles that lead to loading any resource are forbidden. Basically, it means that you cannot use any `<url>` type of value in the style.
-
-:::
-
-:::info Compatibility
-
-CSS rules are not supported by AdGuard Content Blocker.
-
-CSS rules may operate differently [depending on the platform](#cosmetic-rules-priority).
-
-:::
-
 **Syntax**
 
 ```
@@ -2278,7 +2266,23 @@ If you want to disable it for `example.com`, you can create an exception rule:
 example.com#@$#.textad { visibility: hidden; }
 ```
 
-We recommend to use this kind of exceptions only if it is not possible to change the CSS rule itself. In other cases it is better to change the original rule, using domain restrictions.
+We recommend to use this kind of exceptions only if it is not possible to change the CSS rule itself.
+In other cases it is better to change the original rule, using domain restrictions.
+
+:::caution Restrictions
+
+Styles that lead to loading any resource are forbidden.
+Basically, it means that you cannot use any `<url>` type of value in the style.
+
+:::
+
+:::info Compatibility
+
+CSS rules are not supported by AdGuard Content Blocker.
+
+CSS rules may operate differently [depending on the platform](#cosmetic-rules-priority).
+
+:::
 
 ### Extended CSS selectors {#extended-css-selectors}
 
@@ -2435,9 +2439,12 @@ Native implementation does not allow any usage of `:scope` inside `:has()` argum
 </div>
 ```
 
-**Compatibility with old syntax**
+:::danger Old syntax
 
-[Backward compatible syntax for `:has()`](https://github.com/AdguardTeam/ExtendedCss#old-syntax-has) is supported but **not recommended**.
+[Backward compatible syntax for `:has()`](https://github.com/AdguardTeam/ExtendedCss#old-syntax-has)
+is supported but **not recommended**.
+
+:::
 
 
 #### Pseudo-class `:contains()` {#extended-css-contains}
@@ -2490,9 +2497,12 @@ Only the `div` with `id=match` is selected because the next element does not con
 
 :::
 
-**Compatibility with old syntax**
+:::danger Old syntax
 
-[Backward compatible syntax for `:contains()`](https://github.com/AdguardTeam/ExtendedCss#old-syntax-contains) is supported but **not recommended**.
+[Backward compatible syntax for `:contains()`](https://github.com/AdguardTeam/ExtendedCss#old-syntax-contains)
+is supported but **not recommended**.
+
+:::
 
 #### Pseudo-class `:matches-css()` {#extended-css-matches-css}
 
@@ -2513,12 +2523,6 @@ The `:matches-css()` pseudo-class allows to match the element by its current sty
 For **non-regexp** patterns `(`,`)`,`[`,`]` must be **unescaped**, e.g. `:matches-css(background-image:url(data:*))`.
 
 For **regexp** patterns `\` should be **escaped**, e.g. `:matches-css(background-image: /^url\\("data:image\\/gif;base64.+/)`.
-
-:::caution Restrictions
-
-Regexp patterns **do not support** flags.
-
-:::
 
 **Examples**
 
@@ -2546,13 +2550,24 @@ div:matches-css(before, content: block*)
 div:matches-css(before, content: /block me/)
 ```
 
-**Compatibility with other pseudo-classes**
+:::caution Restrictions
+
+Regexp patterns **do not support** flags.
+
+:::
+
+:::info Compatibility
 
 Obsolete pseudo-classes `:matches-css-before()` and `:matches-css-after()` are no longer recommended but still are supported for better compatibility.
 
-**Compatibility with old syntax**
+:::
 
-[Backward compatible syntax for `:matches-css()`](https://github.com/AdguardTeam/ExtendedCss#old-syntax-matches-css) is supported but **not recommended**.
+:::danger Old syntax
+
+[Backward compatible syntax for `:matches-css()`](https://github.com/AdguardTeam/ExtendedCss#old-syntax-matches-css)
+is supported but **not recommended**.
+
+:::
 
 #### Pseudo-class `:matches-attr()` {#extended-css-matches-attr}
 
@@ -2570,12 +2585,6 @@ The `:matches-attr()` pseudo-class allows to select an element by its attributes
 **Escaping special characters**
 
 For **regexp** patterns `"` and `\` should be **escaped**, e.g. `div:matches-attr(class=/[\\w]{5}/)`.
-
-:::caution Restrictions
-
-Regexp patterns **do not support** flags.
-
-:::
 
 **Examples**
 
@@ -2605,6 +2614,12 @@ Regexp patterns **do not support** flags.
 </div>
 ```
 
+:::caution Restrictions
+
+Regexp patterns **do not support** flags.
+
+:::
+
 #### Pseudo-class `:matches-property()` {#extended-css-property}
 
 The `:matches-property()` pseudo-class allows to select an element by matching its properties.
@@ -2625,12 +2640,6 @@ For **regexp** patterns `"` and `\` should be escaped, e.g. `div:matches-propert
 :::note
 
 Regexp patterns are supported in `name` for any property in chain, e.g. `prop./^unit[\\d]{4}$/.type`.
-
-:::
-
-:::caution Restrictions
-
-Regexp patterns **do not support** flags.
 
 :::
 
@@ -2668,11 +2677,19 @@ div:matches-property(memoizedProps.key="null")
 div:matches-property(memoizedProps._owner.src=/ad/)
 ```
 
-**For filters maintainers:**
+:::tip For filters maintainers
 
 To check properties of a specific element, do the following:
 1. Inspect the page element or select it in `Elements` tab of browser DevTools.
-2. Run `console.dir($0)` in `Console` tab.
+1. Run `console.dir($0)` in `Console` tab.
+
+:::
+
+:::caution Restrictions
+
+Regexp patterns **do not support** flags.
+
+:::
 
 #### Pseudo-class `:xpath()` {#extended-css-xpath}
 
@@ -3056,18 +3073,6 @@ We recommend to use this kind of exceptions only if it is not possible to change
 
 AdGuard supports a special type of rules that allows you to inject any javascript code to websites pages.
 
-:::caution Restrictions
-
-JavaScript rules can be used [**only in trusted filters**](#trusted-filters).
-
-:::
-
-:::info Compatibility
-
-JavaScript rules are not supported by AdGuard Content Blocker.
-
-:::
-
 We **strongly recommend** using [scriptlets](#scriptlets) instead of JavaScript rules whenever possible. JS rules are supposed to help with debugging, but as a long-time solution a scriptlet rule should be used.
 
 **Syntax**
@@ -3103,17 +3108,25 @@ Sometimes, it may be necessary to disable all restriction rules. For example, to
 #@%#window.__gaq = undefined;
 ```
 
-We recommend to use this kind of exceptions only if it is not possible to change the hiding rule itself. In other cases it is better to change the original rule, using domain restrictions.
-
-## Scriptlet rules {#scriptlets}
-
-Scriptlet is a JavaScript function that provides extended capabilities for content blocking. These functions can be used in a declarative manner in AdGuard filtering rules.
+We recommend to use this kind of exceptions only if it is not possible to change the hiding rule itself.
+In other cases it is better to change the original rule, using domain restrictions.
 
 :::caution Restrictions
 
-Trusted scriptlets rules can be used [**only in trusted filters**](#trusted-filters).
+JavaScript rules can be used [**only in trusted filters**](#trusted-filters).
 
 :::
+
+:::info Compatibility
+
+JavaScript rules are not supported by AdGuard Content Blocker.
+
+:::
+
+## Scriptlet rules {#scriptlets}
+
+Scriptlet is a JavaScript function that provides extended capabilities for content blocking.
+These functions can be used in a declarative manner in AdGuard filtering rules.
 
 :::note
 
@@ -3157,9 +3170,15 @@ Trusted scriptlets are not compatible with other ad blockers except AdGuard.
 
 :::
 
+:::caution Restrictions
+
+Trusted scriptlets rules can be used [**only in trusted filters**](#trusted-filters).
+
+:::
+
 :::info Compatibility
 
-Trusted scriptlets rules are now supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.10.141 or later**.
+Trusted scriptlets rules are not supported by AdGuard Content Blocker.
 
 :::
 
