@@ -19,7 +19,7 @@ That’s why you can only install AdGuard for Android manually. To use the app o
 
 1. **Download the app on your device**. Here are a few ways you can do this:
 
-    * head over to [our website](https://adguard.com/en/adguard-android/overview.html) and tap the *Download* button
+    * head over to [our website](https://adguard.com/adguard-android/overview.html) and tap the *Download* button
     * start the browser and type in the following URL: [https://adguard.com/apk](https://adguard.com/apk)
     * or scan this QR code
 
