@@ -43,7 +43,7 @@ You will then be asked to read AdGuard's *License Agreement* and *Privacy Policy
 
 ![Privacy Policy *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_3.png)
 
-4. **Create a local VPN**. To filter all the traffic right on your device and not to rout it through a remote server AdGuard needs to set up a VPN connection. 
+4. **Create a local VPN**. In order to filter all traffic directly on your device and not route it through a remote server, AdGuard needs to establish a VPN connection.
 
 ![Create a local VPN *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_2.png)
 
