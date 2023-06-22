@@ -53,7 +53,7 @@ If your device is running Android 7–9, you'll be prompted to install a root ce
 
 ![Enable HTTPS filtering on Android 7-9 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/cert_1.jpg)
 
-After you hit *Install now*, a prompt will pop up requesting you to authenticate the certificate installation using a password or fingerprint.
+After you tap *Install now*, a prompt will appear asking you to authenticate the certificate installation with a password or fingerprint.
 
 ![Enable HTTPS filtering on Android 7-9. Step 2 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/cert_2.jpg)
 
