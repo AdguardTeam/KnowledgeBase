@@ -49,7 +49,7 @@ You will then be asked to read AdGuard's *License Agreement* and *Privacy Policy
 
 5. **Enable HTTPS filtering**. It is not a mandatory option, however, we advice to turn it on for the best ad-blocking quality.
 
-If your device runs on Android 7-9, after setting up a local VPN, you'll be prompted with a screen to install a root certificate and configure HTTPS filtering. 
+If your device is running Android 7–9, you'll be prompted to install a root certificate and configure HTTPS filtering after the local VPN setup.
 
 ![Enable HTTPS filtering on Android 7-9 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/cert_1.jpg)
 
