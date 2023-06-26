@@ -29,8 +29,13 @@ Pokud potřebujete spustit aktualizaci, použijte tento příkaz: `Msiexec /q /i
 
 **Upozorňujeme, že tyto příkazy musíte spouštět s právy administrátora.**
 
-> Pokud chcete nainstalovat AdGuard do počítače se systémem Windows 7 ujistěte se, že je v něm nainstalován profil Client .NET 4: https://www.microsoft.com/en-us/download/details.aspx?id=24872
-> **Důležité!** Při instalaci AdGuardu pro Windows z MSI jsou automatické aktualizace zakázány. Pokud chcete povolit aktualizace pro uživatele (což se nedoporučuje, protože centralizované aktualizace nebudou možné), nastavte hodnotu parametru `AllowCheckUpdates` pro klíč `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` na `ANO` (nerozlišuje se velikost písmen). V tomto případě budou automatické aktualizace povoleny. Jakákoli jiná hodnota nebo žádná hodnota tohoto parametru automatické aktualizace zakáže.
+Pokud chcete nainstalovat AdGuard do počítače se systémem Windows 7 ujistěte se, že je v něm nainstalován profil Client .NET 4: https://www.microsoft.com/en-us/download/details.aspx?id=24872
+
+:::info
+
+Při instalaci AdGuardu pro Windows z MSI jsou automatické aktualizace zakázány. Pokud chcete povolit aktualizace pro uživatele (což se nedoporučuje, protože centralizované aktualizace nebudou možné), nastavte hodnotu parametru `AllowCheckUpdates` pro klíč `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` na `ANO` (nerozlišuje se velikost písmen). V tomto případě budou automatické aktualizace povoleny. Jakákoli jiná hodnota nebo žádná hodnota tohoto parametru automatické aktualizace zakáže.
+
+:::note
 
 ## 5. Test instalace {#installation-test}
 

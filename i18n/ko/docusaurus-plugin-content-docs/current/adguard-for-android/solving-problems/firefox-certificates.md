@@ -3,7 +3,7 @@ title: Firefox 브라우저의 인증서 신뢰 문제
 sidebar_position: 11
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -13,7 +13,11 @@ AdGuard가 Firefox에서 HTTPS 트래픽을 성공적으로 필터링하기 위�
 
 ### Method 1
 
-> 이 방법은 Firefox Nightly 90.0a1 이상 버전에서만 사용될 수 있습니다. Firefox의 베타 및 일반 버전이 v90에 도달하면 이 방법을 해당 버전에도 적용할 수 있습니다.
+:::note
+
+이 방법은 Firefox Nightly 90.0a1 이상 버전에서만 사용될 수 있습니다. Firefox의 베타 및 일반 버전이 v90에 도달하면 이 방법을 해당 버전에도 적용할 수 있습니다.
+
+:::
 
 Firefox Nightly가 AdGuard 인증서를 신뢰하도록 하려면 다음 단계를 따르십시오.
 
@@ -31,10 +35,13 @@ Firefox Nightly가 AdGuard 인증서를 신뢰하도록 하려면 다음 단계�
 
 ### Method 2
 
-> 이 방법은 **루팅된 기기**에서만 사용할 수 있습니다.
+:::note
 
-1. adb를 [설치하고 구성합니다.](https://www.xda-developers.com/install-adb-windows-macos-linux/)
-> Windows 플랫폼을 사용하는 경우, adb를 설치하고 구성합니다. **삼성 기기**를 사용하는 경우, [이 드라이버](https://developer.samsung.com/mobile/android-usb-driver.html)를 설치해야 합니다.
+이 방법은 **루팅된 기기**에서만 사용할 수 있습니다.
+
+:::
+
+1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
 2. **개발자 모드** 및 **USB 디버깅**을 활성화합니다.
     - Open the **Settings** app on your phone;
     - **시스템** 섹션(설정 메뉴의 마지막 항목)으로 이동합니다. In this section, find the sub-item **About phone**;

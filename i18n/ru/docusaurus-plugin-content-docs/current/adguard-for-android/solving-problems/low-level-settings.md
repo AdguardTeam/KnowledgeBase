@@ -3,7 +3,7 @@ title: Низкоуровневые настройки
 sidebar_position: 6
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -11,7 +11,11 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 ## Как получить доступ к Низкоуровневым настройкам
 
-> Изменение *Низкоуровневых настроек* может вызвать проблемы с производительностью AdGuard, нарушить подключение к интернету или поставить под угрозу вашу безопасность и конфиденциальность. Заходите в этот раздел, только если вы уверены в своих действиях или наша служба поддержки попросила вас об этом.
+:::caution
+
+Изменение *Низкоуровневых настроек* может вызвать проблемы с производительностью AdGuard, нарушить подключение к интернету или поставить под угрозу вашу безопасность и конфиденциальность. Заходите в этот раздел, только если вы уверены в своих действиях или наша служба поддержки попросила вас об этом.
+
+:::
 
 To go to *Low-level settings*, open the AdGuard app and tap the gear icon in the lower right corner of the screen. Then choose *General → Advanced → Low-level settings*.
 
@@ -99,7 +103,7 @@ Enable this feature if you want AdGuard to use fallback upstream for all domains
 
 #### Encrypted Client Hello
 
-У каждого зашифрованного интернет-соединения есть незашифрованная часть. Это самый первый пакет, который содержит имя сервера, к которому вы подключаетесь. Технология Encrypted Client Hello должна решить эту проблему и зашифровать последний бит незашифрованной информации. Чтобы воспользоваться ей, включите опцию *Использовать Encrypted Client Hello*. Она использует локальный DNS-прокси для поиска ECH-конфигурации для домена. Если она найдена, пакет ClientHello будет зашифрован.
+У каждого зашифрованного интернет-соединения есть незашифрованная часть. Это самый первый пакет, который содержит имя сервера, к которому вы подключаетесь. Технология Encrypted Client Hello должна решить эту проблему и зашифровать последний бит незашифрованной информации. Чтобы воспользоваться ей, включите опцию *Использовать Encrypted Client Hello*. It uses a local DNS proxy to look for the ECH configuration for the domain. Если она найдена, пакет ClientHello будет зашифрован.
 
 #### Проверка OCSP
 

@@ -3,7 +3,7 @@ title: Jak nakonfigurovat filtrování v celém systému pomocí AdGuardu pro iO
 sidebar_position: 2
 ---
 
-:::note
+:::info
 
 Tento článek popisuje AdGuard pro iOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 
@@ -40,12 +40,16 @@ Můžete přidat libovolný filtr DNS nebo soubor hosts, pokyny budou pro všech
 
 ![Obrazovka pokročilých nastavení *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_advanced_settings.PNG)
 
-> Poznámka: Nedoporučujeme se dotýkat dalších nastavení, která najdete na kartě *Pokročilá nastavení*, zejména pokud jde o *Nízkoúrovňová nastavení*. Některé z nich mohou narušit internetové připojení nebo ohrozit vaše soukromí a bezpečnost, proto je lepší být opatrný. Níže uvedený text popisuje přesné úkony potřebné k přidání filtru AdGuard DNS.
+:::note
+
+Nedoporučujeme se dotýkat dalších nastavení, která najdete na kartě *Pokročilá nastavení*, zejména pokud jde o *Nízkoúrovňová nastavení*. Některé z nich mohou narušit internetové připojení nebo ohrozit vaše soukromí a bezpečnost, proto je lepší být opatrný. Níže uvedený text popisuje přesné úkony potřebné k přidání filtru AdGuard DNS.
+
+:::
 
 3. Zkopírujte tento odkaz: `https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt` (je to odkaz na filtr AdGuard DNS)
 4. Otevřete *Nastavení AdGuardu pro iOS* → *DNS ochrana* → *DNS filtrování* (dostupné, když je povolen *Pokročilý režim*) → *DNS filtry*.
-5. Klikněte na *Přidat filtr*, vložte odkaz do pole URL filtru a klikněte na "Další".
+5. Klepněte na *Přidat filtr*, vložte odkaz do pole URL filtru a klepněte na "Další".
 
 ![Obrazovka přidání DNS filtru *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_adding_a_filter.PNG)
 
-> Stejným způsobem můžete přidat libovolný počet dalších DNS filtrů vložením jiné adresy URL v kroku 3. Různé filtry a odkazy na ně najdete [zde](https://filterlists.com).
+Stejným způsobem můžete přidat libovolný počet dalších DNS filtrů vložením jiné adresy URL v kroku 3. Různé filtry a odkazy na ně najdete [zde](https://filterlists.com).

@@ -3,7 +3,7 @@ title: インストール/アンインストール
 sidebar_position: 2
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -81,7 +81,11 @@ In case regular uninstall doesn't work for any reason, you can try to use an adv
 
 ![Uninstall finished *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/standard-uninstall-2.png)
 
-> 【注意】 最初の2つのステップを実行した後、何らかの理由で十分ではなかった場合にのみ、ステップ3と4を行なってください。 通常、AdGuardの再インストールが正しく行われていないことが原因であると考えられますが、アドバンスドアンインストール手順の3と4を行う前に、弊社サポートにお問い合わせいただくことを強くお勧めします。
+:::caution
+
+【注意】 最初の2つのステップを実行した後、何らかの理由で十分ではなかった場合にのみ、ステップ3と4を行なってください。 通常、AdGuardの再インストールが正しく行われていないことが原因であると考えられますが、アドバンスドアンインストール手順の3と4を行う前に、弊社サポートにお問い合わせいただくことを強くお勧めします。
+
+:::
 
 * ’*Advanced uninstall*’ を選択して ’*Uninstall*’ をクリック
 

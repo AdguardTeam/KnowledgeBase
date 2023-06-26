@@ -3,7 +3,7 @@ title: Známé problémy AdGuardu pro Windows
 sidebar_position: 10
 ---
 
-:::note
+:::info
 
 Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 
@@ -17,5 +17,4 @@ V AdGuardu pro Windows existují dvě specifická nastavení: *Použít režim p
 
 Změna těchto nastavení je nutná pouze pro řešení problémů souvisejících se současným provozem blokátoru reklam AdGuard a aplikací na síťové úrovni, jako jsou antiviry, VPN a síťové filtry. Pokud narazíte na situaci, kdy potřebujete změnit výchozí stav výše uvedených nastavení a přesto chcete, aby blokátor reklam AdGuard a AdGuard VPN fungovaly současně a správně — [vytvořte hlášení na GitHubu](https://github.com/AdguardTeam/AdguardForWindows/issues/new/choose) a my vám pomůžeme.
 
-V současné době pracujeme na překonání výše uvedených omezení souběžné práce našich aplikací. 
-
+V současné době pracujeme na překonání výše uvedených omezení souběžné práce našich aplikací.

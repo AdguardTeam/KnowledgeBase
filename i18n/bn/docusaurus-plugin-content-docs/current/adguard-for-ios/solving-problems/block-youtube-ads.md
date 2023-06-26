@@ -1,9 +1,9 @@
 ---
 title: How to block YouTube ads in Safari
 sidebar_position: 4
----  
+---
 
-:::note
+:::info
 
 This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -23,4 +23,8 @@ To activate the extension and block ads on YouTube, do the following:
 
 YouTube is now ad-free! Please note that you need to run this extension again if you reload the page.
 
-> In some cases the AdGuard extension may be not displayed. If you don't see it, try to follow the instruction again or restart your device
+:::tip
+
+In some cases the AdGuard extension may be not displayed. If you don't see it, try to follow the instruction again or restart your device
+
+:::

@@ -1,7 +1,7 @@
 ---
 title: Comment hiérarchiser les traductions des fichiers Crowdin
 sidebar_position: 5
---- 
+---
 
 Il existe cinq grands projets AdGuard sur Crowdin - [AdGuard Applications](https://crowdin.com/project/adguard-applications), [AdGuard Websites](https://crowdin.com/project/adguard-websites), [AdGuard Ad Blocker Knowledge base](https://crowdin.com/project/adguard-knowledge-base), [AdGuard VPN Knowledge Base](https://crowdin.com/project/adguard-vpn-knowledge-base), et [AdGuard DNS Knowledge Base](https://crowdin.com/project/adguard-knowledge-bases).
 
@@ -30,6 +30,6 @@ La situation est différente dans le projet *AdGuard Websites*. Des langues peuv
 * `critical.resx`
 * `auth.resx`
 
-> L'ajout de nouvelles chaînes de caractères et la mise à jour des chaînes existantes dans ces fichiers requièrent une attention particulière de la part des traducteurs et des réviseurs du projet.
+Adding new strings as well as updating existing ones in these files requires special attention from the project translators and proofreaders.
 
-Outre les sites web, il existe un fichier pour la traduction des [e-mails transactionnels](https://crowdin.com/project/adguard-websites/de#/emails) dans le projet AdGuard Websites. Les chaînes nouvellement ajoutées dans ce fichier ont également une priorité de traduction élevée.
+In addition to websites, there is a file for translating [transactional emails](https://crowdin.com/project/adguard-websites/de#/emails) in the AdGuard Websites project. Newly added strings in this file also have a high translation priority.

@@ -16,7 +16,11 @@ You can help us by filling in an application form with examples of ads you faced
 
 ## Report a website {#report}
 
-> **Note**: When you send a complaint via the app or via AdGuard Browser Assistant, all information is pre-filled automatically. Except for the screenshots, you'll have to make and attach them yourself. If you're using a [direct link](https://reports.adguard.com/new_issue.html), you’ll need to enter data manually.
+:::note
+
+When you send a complaint via the app or via AdGuard Browser Assistant, all information is pre-filled automatically. Except for the screenshots, you'll have to make and attach them yourself. If you're using a [direct link](https://reports.adguard.com/new_issue.html), you’ll need to enter data manually.
+
+:::
 
 To report a reinsertion of an ad or incorrect displaying of a website, you need to:
 
@@ -68,7 +72,11 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 
 ## Formu doldurma {#form}
 
-> **Note**: When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. Except for the screenshots, you'll have to make and attach them yourself. If you're using a [direct link](https://reports.adguard.com/en/new_issue.html), you’ll need to enter data manually.
+:::note
+
+When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. Except for the screenshots, you'll have to make and attach them yourself. If you're using a [direct link](https://reports.adguard.com/en/new_issue.html), you’ll need to enter data manually.
+
+:::
 
 1. Filling in the form starts with detailing the type and version of a product;
 
@@ -129,7 +137,7 @@ For example, you are faced with a situation that your favorite website won’t o
 3. If you have managed to to detect which setting "breaks" a page, you should inform the developers when filling out the form (see above). In this case, it is desirable to return to the initial settings;
 4. In case of failure (issue not solved), turn to section **Extensions**.
 
-### **Extensions**
+### **Uzantılar**
 
 1. Disable **Extensions**;
 2. If this solved the problem, turn on the module and turn off **Extensions** settings one by one. This is done to find out which setting "breaks" the page;

@@ -3,7 +3,7 @@ title: Как настроить системную фильтрацию в AdGu
 sidebar_position: 2
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -40,12 +40,16 @@ This article covers AdGuard for iOS, a multifunctional ad blocker that protects 
 
 ![Экран расширенных настроек *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_advanced_settings.PNG)
 
-> Важно: мы не рекомендуем менять другие *Расширенные настройки*, особенно *Низкоуровневые настройки*. Изменение некоторых из них может привести к проблемам с интернетом или скомпрометировать вашу онлайн-конфиденциальность. Не меняйте их, если не знаете, что делаете. Далее описаны точные шаги, необходимые для добавления фильтра AdGuard DNS.
+:::note
+
+We don't recommend touching other settings you'll find inside the *Advanced settings* tab, especially when it comes to *Low-level settings*. Изменение некоторых из них может привести к проблемам с интернетом или скомпрометировать вашу онлайн-конфиденциальность. Не меняйте их, если не знаете, что делаете. Далее описаны точные шаги, необходимые для добавления фильтра AdGuard DNS.
+
+:::
 
 3. Скопируйте эту ссылку: `https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt` (это ссылка на фильтр AdGuard DNS)
 4. Откройте *настройки AdGuard для iOS* → *DNS-защита* → *DNS-фильтрация* (доступна, когда *Расширенный режим* включен) → *DNS-фильтры*.
-5. Нажмите кнопку *«Добавить фильтр»*, вставьте ссылку в поле URL фильтра и нажмите кнопку «Далее».
+5. Tap *Add a filter*, paste the link into the filter URL field, and yap 'Next'.
 
 ![Экран добавления DNS-фильтра *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_adding_a_filter.PNG)
 
-> Вы можете добавлять любое количество других фильтров аналогичным образом, подставляя их URL на шаге 3. Огромный выбор различных фильтров и ссылки на них доступны [здесь](https://filterlists.com).
+Вы можете добавлять любое количество других фильтров аналогичным образом, подставляя их URL на шаге 3. Огромный выбор различных фильтров и ссылки на них доступны [здесь](https://filterlists.com).

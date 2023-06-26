@@ -3,6 +3,12 @@ title: インストール/アンインストール
 sidebar_position: 2
 ---
 
+:::info
+
+This article is about AdGuard for Safari, which safeguards only your Safari browser. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## How to install AdGuard for Safari {#install}
 
 AdGuard for Safari is a free app presented on the App Store. To install it on your device, do the following.
@@ -17,7 +23,11 @@ AdGuard for Safari is a free app presented on the App Store. To install it on yo
 
 ![Notification: Some extensions are disabled](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-notification.png)
 
-> Not all extensions are required for AdGuard for Safari to function correctly. For instance, checking the *Icon* extension enables the icon in the tray menu. However, we recommend to enable all of them.
+:::note
+
+Not all extensions are required for AdGuard for Safari to function correctly. For instance, checking the *Icon* extension enables the icon in the tray menu. However, we recommend to enable all of them.
+
+:::
 
 ![Extensions checked](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-extensions-checked.png)
 

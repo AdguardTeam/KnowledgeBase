@@ -20,12 +20,12 @@ sidebar_position: 4
 
 ![ポーランド語](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
-理解を深めるために、1個・2個・5個の場合の英語とポーランド語の複数形を比べてみましょう。 
+理解を深めるために、1個・2個・5個の場合の英語とポーランド語の複数形を比べてみましょう。
 
       英語の場合:                                                 ポーランド語の場合:
     
-      1. It takes one hour.                                     1. Zajmuje to godzinę. 
-      2. It takes two hours.                                    2. Zajmuje to dwie godziny. 
+      1. It takes one hour.                                     1. Zajmuje to godzinę.
+      2. It takes two hours.                                    2. Zajmuje to dwie godziny.
       3. It takes five hours.                                   3. Zajmuje to pięć godzin.
 
 さて、ポーランド語の *'godzinę'* (「時間」) には3種類の形があるのに対し、英語では単語が形を変えるのは2回だけであることがわかります。
@@ -125,7 +125,7 @@ sidebar_position: 4
 この場合、スロバキア語の*"počítač"* (コンピュータ)という単語の3つの形式に応じて3つのテンプレートが表示されます。
 
 *形式を1個無視して、スロバキア語のテンプレートを3つではなく2つだけ使用すると、システムは特定の数字に対して適切なテンプレートを取ることができなくなります。*その結果、英語の *Standard license for 5 computer* のように、文中に文法ミスが発生してしまいます。
-> **特定の単語の語形がより少ない場合でも、常に言語にあるだけの最大数の語形を使用してください。**
+> **Always use as many forms as there are in your language, even when the word itself has fewer word forms.**
 
 例えば、セルビア語の *'računar'* （コンピュータ）には、2つの形しかありません。 しかし、セルビア語には3つの複数形があります。
 
@@ -147,10 +147,10 @@ AdGuardのプロジェクトを翻訳する際には、複数形の使用を必�
 
 + 翻訳する言語の複数形ルールを参照してください。
 
-> テンプレートは、その言語に含まれる複数形の数と一致させる必要があります（たとえ、特定単語自体の形式数が少ない場合でも、言語の数に合わせます）。 言語に2つの複数形がある場合、翻訳では2つのテンプレートを使用、言語に5つの複数形がある場合、翻訳では5つのテンプレートを使用、など。
+The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms – two templates in translations; five plural forms – five templates, etc.
 
 + テンプレートとテンプレートの間は、元の文字列と同じように縦棒記号を使用することを忘れないでください。
 
 + **%count%**プレースホルダーを翻訳したり、変更したり、削除したりしないでください。
 
-これらの簡単なルールをもとに翻訳いただくと、AdGuardの開発者はローカライズプロセスにおける不必要な複雑さを回避することができ、大変助かります。
+By following these simple rules you will help AdGuard developers avoid a lot of unnecessary complications during the localization process.

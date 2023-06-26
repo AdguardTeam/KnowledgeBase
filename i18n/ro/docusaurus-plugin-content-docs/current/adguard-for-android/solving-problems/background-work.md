@@ -3,7 +3,7 @@ title: How to protect AdGuard from being disabled by the system
 sidebar_position: 9
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -267,7 +267,11 @@ Also for reliable background processes you may need to uninstall **PowerGenie** 
 
 ### EMUI 9+ devices and PowerGenie
 
-> Note: On phones with EMUI 9+ (Android P+) there is a task killer app called PowerGenie which forces to quit all apps not whitelisted by Huawei and does not give users any configuration options. See below how to uninstall it.
+:::note
+
+On phones with EMUI 9+ (Android P+) there is a task killer app called PowerGenie which forces to quit all apps not whitelisted by Huawei and does not give users any configuration options. See below how to uninstall it.
+
+:::
 
 Huawei is extremely inventive in breaking apps on their devices. In addition to all the non-standard power management measures described below, they introduced a task killer app built right into EMUI 9 on Android Pie.
 
@@ -275,7 +279,11 @@ It is called **PowerGenie** and it kills all apps that are not on its whitelist.
 
 Unfortunately, this is a system app that can only be fully uninstalled using ADB (Android Debug Bridge).
 
-> Source: [XDA forum](https://forum.xda-developers.com/mate-20-pro/themes/remove-powergenie-to-allow-background-t3890409).
+:::note Source
+
+[XDA forum](https://forum.xda-developers.com/mate-20-pro/themes/remove-powergenie-to-allow-background-t3890409).
+
+:::
 
 **You need to**:
 
@@ -312,11 +320,11 @@ Open device settings → **Apps** → **Settings** → **Special access** → ch
 
 ### Huawei P20, Huawei Honor 9 Lite and Huawei Mate 9 Pro:
 
-Open device settings → **Battery** → **App launch**> then set AdGuard to **Manage manually** and make sure everything is turned on.
+Open device settings → **Battery** → **App launch** → set AdGuard to **Manage manually** and make sure everything is turned on.
 
 ### Huawei P20, Huawei P20 Lite, Huawei Mate 10:
 
-**Phone settings** → **Battery** → **App launch** and then set AdGuard to **Manage manually** and make sure everything is turned on. Also for reliable background processes you may need to uninstall PowerGenie as described above.
+**Phone settings** → **Battery** → **App launch** → set AdGuard to **Manage manually** and make sure everything is turned on. Also for reliable background processes you may need to uninstall PowerGenie as described above.
 
 ### Early Huawei
 
@@ -388,7 +396,11 @@ On these devices there is a task killer called **DuraSpeed** that terminates all
 
 ![Nokia tasker *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/nokia_tasker.png)
 
-> NOTE: You need both **Global** and **System** type settings. The screenshot shows only Global as an example.
+:::note
+
+You need both **Global** and **System** type settings. The screenshot shows only Global as an example.
+
+:::
 
 ### Other Nokia models
 
@@ -450,7 +462,11 @@ Devices with OxygenOS on board are the most problematic, with its OS-specific ca
 
 ![Oneplusdots *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/android/oneplusdots.png)
 
-> On some OnePlus phones there is also a thing called App Auto-Launch and Deep Optimization which essentially prevents apps from working in the background. Please disable it for AdGuard.
+:::caution
+
+On some OnePlus phones there is also a thing called App Auto-Launch and Deep Optimization which essentially prevents apps from working in the background. Please disable it for AdGuard.
+
+:::
 
 ### Battery optimization
 

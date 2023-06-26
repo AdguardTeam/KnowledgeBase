@@ -32,8 +32,6 @@ Zobrazí se vám následující seznam možností:
 
 ### V nastavení iOS
 
-> Webové rozšíření pro Safari od AdGuardu výrazně zlepšuje kvalitu blokování reklam, proto jej doporučujeme povolit na všech webech.
-
 Webové rozšíření není samostatný nástroj a vyžaduje AdGuard pro iOS. Pokud na svém zařízení nemáte nainstalovaný AdGuard pro iOS, [nejprve](../installation) jej nainstalujte a dokončete proces registrace, abyste jej připravili k práci.
 
 Po dokončení otevřete *Nastavení → Safari → Rozšíření*.
@@ -50,7 +48,11 @@ Klepněte na něj a zapněte přepínač. Na stejné obrazovce se ujistěte, že
 
 ![](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings4_en.png)
 
-> Webové rozšíření pro Safari od AdGuardu vyžaduje ke své činnosti přístup k obsahu webových stránek, ale nepoužívá jej k jiným účelům než k blokování reklam.
+:::note
+
+Webové rozšíření pro Safari od AdGuardu vyžaduje ke své činnosti přístup k obsahu webových stránek, ale nepoužívá jej k jiným účelům než k blokování reklam.
+
+:::
 
 ### V Safari
 
@@ -68,7 +70,11 @@ Pokud použijete tuto metodu, možná budete muset přejít do nastavení Safari
 
 Mezi dostupnými rozšířeními byste nyní měli vidět AdGuard. Klepněte na něj a poté klepněte na žlutou ikonu **i**. Zapněte **Pokročilou ochranu** klepnutím na tlačítko *Zapnout* a potvrďte akci.
 
-> Pokud používáte AdGuard pro iOS bez předplatného Premium, nebudete moci zapnout **Pokročilou ochranu**.
+:::note
+
+Pokud používáte AdGuard pro iOS bez předplatného Premium, nebudete moci zapnout **Pokročilou ochranu**.
+
+:::
 
 Případně můžete zapnout **Pokročilou ochranu** přímo z aplikace na kartě **Ochrana** (druhá zleva v dolní řadě ikon).
 

@@ -5,7 +5,7 @@ sidebar_position: 3
 
 ## 什么是整合模式?
 
-在旧版本的 AdGuard 浏览器扩展中，如果您将它与一个 AdGuard 桌面应用程序（AdGuard for Windows 或 AdGuard for Mac）一起安装，则该扩展会自行承担 AdGuard 助手的功能 —— 一种帮助直接从网页管理过滤的工具。 同时，广告拦截本身完全在桌面应用程序的控制之下，扩展及其设置对此没有任何作用。
+In older versions of AdGuard Browser Extension, if you had it installed along with one of the AdGuard desktop apps (AdGuard for Windows or AdGuard for Mac), the extension took upon itself the functions of AdGuard Assistant — a tool that helped manage the filtering right from the web page. 同时，广告拦截本身完全在桌面应用程序的控制之下，扩展及其设置对此没有任何作用。
 
 问题是，在某些情况下，应用程序和扩展程序会彼此妨碍对方的工作。 一些网站将不再受到桌面程序的保护，并且仅由能力较小的扩展程序支持。 因此，从 AdGuard 浏览器扩展 v3.5 版本开始，整合模式被删除。 取而代之的是，新的 AdGuard 浏览器助手已开始使用。
 

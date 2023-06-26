@@ -3,7 +3,11 @@ title: Adware a viry
 sidebar_position: 6
 ---
 
-> **Poznámka:** AdGuard není antivirový program. Může vás varovat, když se chystáte navštívit škodlivou nebo phishingovou stránku, ale **neodstraní viry z vašeho zařízení.**
+:::note
+
+AdGuard není antivirový program. Může vás varovat, když se chystáte navštívit škodlivou nebo phishingovou stránku, ale **neodstraní viry z vašeho zařízení.**
+
+:::
 
 Pokud máte podezření, že je váš počítač napaden malwarem nebo viry, můžete nejprve počítač zkontrolovat pomocí nástrojů předních antivirových programů.
 

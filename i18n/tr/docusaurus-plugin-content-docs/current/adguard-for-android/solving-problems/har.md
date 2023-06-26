@@ -3,7 +3,7 @@ title: How to get HAR files
 sidebar_position: 5
 ---
 
-:::note
+:::info
 
 Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Android için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
 
@@ -24,7 +24,11 @@ Sometimes we need to analyze it to block specific ads that are difficult to repr
 
 **Please send the file with logs (that you've got as a result) to the AdGuard support service.**
 
-> Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message.
+:::note
+
+Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message.
+
+:::
 
 ## HAR dosyaları nasıl analiz edilir
 Here are some sources that we can recommend to analyze HAR files:

@@ -1,9 +1,9 @@
 ---
 title: Jak blokovat reklamy YouTube v Safari
 sidebar_position: 4
----  
+---
 
-:::note
+:::info
 
 Tento článek popisuje AdGuard pro iOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 
@@ -23,4 +23,8 @@ Chcete-li aktivovat rozšíření a blokovat reklamy YouTube, postupujte takto:
 
 YouTube je nyní bez reklam! Upozorňujeme, že pokud znovu stránku obnovíte, musíte toto rozšíření spustit znovu.
 
-> V některých případech se rozšíření AdGuardu nemusí zobrazit. Pokud se nezobrazí, zkuste znovu postupovat podle pokynů nebo restartujte zařízení.
+:::tip
+
+V některých případech se rozšíření AdGuardu nemusí zobrazit. Pokud se nezobrazí, zkuste znovu postupovat podle pokynů nebo restartujte zařízení.
+
+:::

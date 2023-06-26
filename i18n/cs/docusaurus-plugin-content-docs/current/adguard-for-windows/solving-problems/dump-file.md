@@ -3,7 +3,7 @@ title: Jak vytvořit soubor výpisu
 sidebar_position: 8
 ---
 
-:::note
+:::info
 
 Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 
@@ -24,7 +24,11 @@ K diagnostice příčin možných problémů, se kterými se uživatelé mohou s
 
 Po vytvoření souboru výpisu přejděte do umístění souboru. Ihned po vytvoření souboru výpisu byste měli být vyzváni k otevření složky obsahující tento soubor. Jinak jej najdete ve složce **%tmp%**. Vytvořený soubor výpisu (`.DMP`) má stejný název jako název procesu, který jste vybrali v předchozích krocích. Soubor je poměrně velký, proto jej před odesláním na podporu zkomprimujte do archivu.
 
-> Upozorňujeme, že AdGuard pro Windows má dva spuštěné procesy (`Adguard.exe` a `AdguardSvc.exe`). Proto je třeba vytvořit soubor výpisu pro každý proces zvlášť.
+:::note
+
+AdGuard pro Windows má dva spuštěné procesy (`Adguard.exe` a `AdguardSvc.exe`). Proto je třeba vytvořit soubor výpisu pro každý proces zvlášť.
+
+:::
 
 ![AdGuard processes](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/processes_en.png)
 

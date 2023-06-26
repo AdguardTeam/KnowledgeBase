@@ -11,7 +11,7 @@ AdGuard může výrazně rozšířit funkčnost webových stránek tím, že fun
 
 ### Doporučené skripty AdGuardu
 
-> Tyto uživatelské skripty pocházejí přímo od vývojářů AdGuardu a můžeme zaručit, že jsou účinné a bezpečné. Nezapomeňte, že kdykoli stahujete uživatelský skript z neznámého zdroje, vystavujete se riziku, protože některé skripty mohou být pro váš počítač škodlivé. Nové skripty získávejte pouze ze zdrojů, kterým stoprocentně důvěřujete. Dále zde uvádíme [příklady](#more-userscripts) oblíbených webů se skripty.
+Tyto uživatelské skripty pocházejí přímo od vývojářů AdGuardu a můžeme zaručit, že jsou účinné a bezpečné. Nezapomeňte, že kdykoli stahujete uživatelský skript z neznámého zdroje, vystavujete se riziku, protože některé skripty mohou být pro váš počítač škodlivé. Nové skripty získávejte pouze ze zdrojů, kterým stoprocentně důvěřujete. Dále zde uvádíme [příklady](#more-userscripts) oblíbených webů se skripty.
 
 * **AdGuard Extra**. Rozšíření, které blokuje reklamu v obtížných případech, kdy běžný přístup založený na filtru nestačí.
 
@@ -19,7 +19,11 @@ AdGuard může výrazně rozšířit funkčnost webových stránek tím, že fun
 
 * **AdGuard asistent** (starší verze). Toto vlastní rozšíření je určeno k ovládání filtrování přímo ze stránky prohlížeče (ruční blokování, vyloučení webu atd.).
 
-> Všimněte si, že tato verze Asistenta je starší a nemá smysl ji používat v nových systémech, protože byla nahrazena plnohodnotným [Asistentem prohlížeče](https://adguard.com/adguard-assistant/overview.html). Pokud však pro váš prohlížeč neexistuje rozšíření Asistent prohlížeče, může vám pomoci starší asistent.
+:::note
+
+Tato verze Asistenta je starší a nemá smysl ji používat v nových systémech, protože byla nahrazena plnohodnotným [Asistentem prohlížeče](https://adguard.com/adguard-assistant/overview.html). Pokud však pro váš prohlížeč neexistuje rozšíření Asistent prohlížeče, může vám pomoci starší asistent.
+
+:::
 
 * **Zákázat AMP**. Skript předinstalovaný pouze v AdGuardu pro Android, který na stránce s výsledky vyhledávání Google zakáže AMP (Accelerated Mobile Pages).
 
@@ -125,9 +129,9 @@ GM.xmlHttpRequest / GM_xmlhttpRequest
 GM.openInTab / GM_openInTab
 GM.notification
 unsafeWindow
-GM_getResourceText 
-GM_addStyle 
-GM_log 
+GM_getResourceText
+GM_addStyle
+GM_log
 ```
 
 [Zde](https://wiki.greasespot.net/GM.info) najdete další informace o rozhraní Greasemonkey API.

@@ -3,7 +3,7 @@ title: Nastavení filtrování v prohlížeči Tor
 sidebar_position: 10
 ---
 
-:::note
+:::info
 
 Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 
@@ -27,4 +27,4 @@ Public Key Pinning je bezpečnostní opatření, které webovým stránkám umo�
 
 Chcete-li použít změny, budete muset restartovat Tor.
 
-> Pokud tato nastavení změníte ručně, filtrování Tor bude ukončeno.
+Pokud tato nastavení změníte ručně, filtrování Tor bude ukončeno.

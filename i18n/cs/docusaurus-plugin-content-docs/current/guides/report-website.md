@@ -16,7 +16,11 @@ Můžete nám pomoci vyplněním formuláře s příklady reklam, se kterými js
 
 ## Nahlásit webovou stránku {#report}
 
-> **Poznámka**: Při odesílání hlášení prostřednictvím aplikace nebo AdGuard Asistenta prohlížeče se všechny informace vyplní automaticky. Kromě snímků obrazovky, ty si budete muset vytvořit a přiložit sami. Pokud používáte přímý odkaz [](https://reports.adguard.com/new_issue.html), musíte zadat údaje ručně.
+:::note
+
+Při odesílání hlášení prostřednictvím aplikace nebo AdGuard Asistenta prohlížeče se všechny informace vyplní automaticky. Kromě snímků obrazovky, ty si budete muset vytvořit a přiložit sami. Pokud používáte přímý odkaz [](https://reports.adguard.com/new_issue.html), musíte zadat údaje ručně.
+
+:::
 
 Chcete-li nahlásit opakované vložení reklamy nebo nesprávné zobrazení webu, musíte:
 
@@ -68,7 +72,11 @@ Chcete-li nahlásit opakované vložení reklamy nebo nesprávné zobrazení web
 
 ## Vyplnění formuláře {#form}
 
-> **Poznámka**: Při odesílání hlášení prostřednictvím aplikace nebo AdGuard asistenta se všechny informace vyplní automaticky. Kromě snímků obrazovky, ty si budete muset vytvořit a přiložit sami. Pokud používáte přímý odkaz [](https://reports.adguard.com/en/new_issue.html), musíte zadat údaje ručně.
+:::note
+
+Při odesílání hlášení prostřednictvím aplikace nebo AdGuard asistenta se všechny informace vyplní automaticky. Kromě snímků obrazovky, ty si budete muset vytvořit a přiložit sami. Pokud používáte přímý odkaz [](https://reports.adguard.com/en/new_issue.html), musíte zadat údaje ručně.
+
+:::
 
 1. Vyplnění formuláře začíná uvedením typu a verze produktu;
 

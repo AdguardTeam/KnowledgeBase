@@ -3,7 +3,11 @@ title: Adware & virus
 sidebar_position: 6
 ---
 
-> **Nota:** AdGuard no es un programa antivirus. Puede avisarte cuando vayas a visitar un sitio web de malware o phishing, pero **no elimina los virus de tu dispositivo.**
+:::note
+
+AdGuard is not an antivirus program. Puede avisarte cuando vayas a visitar un sitio web de malware o phishing, pero **no elimina los virus de tu dispositivo.**
+
+:::
 
 Si sospechas que tu computadora está infectada por malware o virus, antes que nada puedes inspeccionar tu computadora con las utilidades de los principales antivirus.
 

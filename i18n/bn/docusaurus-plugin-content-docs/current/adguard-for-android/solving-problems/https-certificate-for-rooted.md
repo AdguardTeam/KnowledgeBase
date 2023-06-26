@@ -3,7 +3,7 @@ title: Moving CA certificate to System store on rooted devices
 sidebar_position: 13
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 

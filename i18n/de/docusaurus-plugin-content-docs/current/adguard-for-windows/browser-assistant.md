@@ -19,11 +19,11 @@ If you got into the habit of using our previous AdGuard Ad Blocker extension [in
 
 Hintergrundinformationen:
 
-> In previous versions of the AdGuard Browser Extension (before v3.5), if you had it installed along with the AdGuard for Windows app, the extension took over the functions of Assistant, stopped filtering itself and relied on the app to do this.
+In previous versions of the AdGuard Browser Extension (before v3.5), if you had it installed along with the AdGuard for Windows app, the extension took over the functions of Assistant, stopped filtering itself and relied on the app to do this.
 
-> Die Erweiterung und die App funktionierten zusammen, aber manchmal schlug die Integration fehl. Einige Websites würden nicht mehr durch das Desktop-Programm geschützt und nur noch von der weniger leistungsstarken Erweiterung gesichert.
+The extension and the app worked in conjunction but sometimes the integration would fail. Some websites would stop being protected by the desktop program and be backed up only by the less powerful extension.
 
-Bei der Verwendung des Browser-Assistenten spielen all diese Probleme keine Rolle, da es im Wesentlichen keine Konflikte geben kann. The role of the Browser Assistant is well-defined and it can’t hinder the functioning of the main app, so there is no need to worry.
+When using the Browser Assistant, all these problems don’t matter as there can be no conflicts in essence. The role of the Browser Assistant is well-defined and it can’t hinder the functioning of the main app, so there is no need to worry.
 
 ## Separate Registerkarte in den Einstellungen
 
