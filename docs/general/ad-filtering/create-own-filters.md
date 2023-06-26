@@ -333,7 +333,7 @@ Rules with `$denyallow` modifier are not supported by AdGuard for iOS, Safari, a
 
 `$domain` limits the rule scope to requests made **from** the specified domains and their subdomains (as indicated by the [Referer](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer) HTTP header). 
 
-###### Syntax
+**Syntax**
 
 The modifier is a list of one or more expressions separated by `|` symbol, each of which is matched against a domain in a certain way depending on its type (see below).
 
@@ -346,8 +346,11 @@ The modifier is a list of one or more expressions separated by `|` symbol, each 
 * **`any_tld_domain`** — a domain name ending with wildcard character as TLD (`domain.*`).  Corresponds to the specified domain and its subdomains with any TLD. It is matched lexicographically.
 * **`regexp`** — a regular expression, starts and ends with `/`. The pattern works the same way as in the basic URL rules, but the characters `/`, `$`, and `|` must be escaped with `\`.
 
-> **Compatibility with different versions of AdGuard.** Rules with regular expressions in the `$domain` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**.
-> Rules with `$domain` modifier as `regular_domain` or `any_tld_domain` supported by all AdGuard products.
+:::info
+
+Rules with `$domain` modifier as `regular_domain` or `any_tld_domain` supported by all AdGuard products.
+
+:::
 
 **Examples**
 
@@ -409,6 +412,8 @@ Safari does not support the simultaneous use of allowed and disallowed domains, 
 :::
 
 :::info Compatibility
+
+Rules with regular expressions in the `$domain` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**.
 
 In AdGuard for Windows, Mac and Android **running CoreLibs version 1.12 or later** the `$domain` modifier can be alternatively spelled as `$from`.
 

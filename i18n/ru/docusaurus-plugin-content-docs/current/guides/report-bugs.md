@@ -57,7 +57,7 @@ sidebar_position: 4
 
 1. Проверьте [репозиторий Mac](https://github.com/AdguardTeam/AdGuardforMac/issues), чтобы убедиться, что о проблеме ещё не сообщалось.
 
-2. Откройте <a href="[страницу для создания новых задач](https://github.com/AdguardTeam/AdguardForMac/issues/new).
+2. Откройте [страницу для создания новых задач](https://github.com/AdguardTeam/AdguardForMac/issues/new).
 
 3. Заполните форму. Если возможно, приложите скриншоты или запись экрана.
 
