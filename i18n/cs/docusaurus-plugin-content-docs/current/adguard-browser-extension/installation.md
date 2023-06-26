@@ -21,7 +21,7 @@ V otevřeném dialogovém okně klikněte na _Přidat rozšíření_.
 
 ## Jak nainstalovat Rozšíření prohlížeče AdGuard pro Operu
 
-Otevřete stránku <a "https://agrd.io/extension_opera">addons.opera.com</a>.
+Otevřete stránku [addons.opera.com](https://agrd.io/extension_opera).
 
 ![AdGuard Browser Extension in Opera addons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_opera.png)
 
