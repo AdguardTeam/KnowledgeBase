@@ -3,7 +3,7 @@ title: Ruční instalace bezpečnostního certifikátu do prohlížeče Firefox
 sidebar_position: 11
 ---
 
-:::note
+:::info
 
 Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 
@@ -13,7 +13,11 @@ Aby AdGuard úspěšně filtroval přenosy HTTPS ve Firefoxu, musí prohlížeč
 
 ### Metoda 1
 
-> Tato metoda funguje ve Firefoxu pro Android verze 90.0 a novější.
+:::note
+
+Tato metoda funguje ve Firefoxu pro Android verze 90.0 a novější.
+
+:::
 
 Chcete-li, aby Firefox důvěřoval certifikátu AdGuard, proveďte následující kroky:
 
@@ -31,10 +35,13 @@ Chcete-li, aby Firefox důvěřoval certifikátu AdGuard, proveďte následujíc
 
 ### Metoda 2
 
-> Tato metoda bude fungovat pouze na zařízeních s **root přístupem**.
+:::note
 
-1. [Instalace a konfigurace](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB;
-> Na platformě Windows mohou majitelé zařízení **Samsung** potřebovat nainstalovat [tento nástroj](https://developer.samsung.com/mobile/android-usb-driver.html).
+Tato metoda bude fungovat pouze na zařízeních s **root přístupem**.
+
+:::
+
+1. [Instalace a konfigurace](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; Na platformě Windows mohou majitelé zařízení **Samsung** potřebovat nainstalovat [tento nástroj](https://developer.samsung.com/mobile/android-usb-driver.html).
 2. Aktivace **Režimu pro vývojáře** a povolení **USB ladění**:
     - V telefonu otevřete **Nastavení**;
     - Přejděte do sekce **Systém** (poslední položka v nabídce). V této sekci vyhledejte podpoložku **Informace o telefonu**;

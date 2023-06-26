@@ -13,11 +13,11 @@ A assinatura pode ser cancelada em sua conta do AdGuard. To cancel your subscrip
 
  A assinatura cancelada será válida até a data de vencimento.
 
-> As assinaturas compradas na App Store podem ser gerenciadas na conta da App Store ou nas configurações do dispositivo.
+Subscriptions purchased on the App Store can be managed in the App Store account or in the device's settings.
 
 ## Como obter um reembolso
 
-De acordo com nossos [Termos de Venda](https://adguard.com/terms-of-sale.html), você pode obter um reembolso de 100% na chave de licença do AdGuard adquirida em https://adguard.com. To get a refund, contact our support team at **support@adguard.com** and specify the payment option you've used.
+In accordance with our [Terms of Sale](https://adguard.com/terms-of-sale.html), you can get a 100% refund on the AdGuard license key you purchased at https://adguard.com. To get a refund, contact our support team at **support@adguard.com** and specify the payment option you've used.
 
 A refund may be declined if:
 * a license was purchased more than 60 days ago,

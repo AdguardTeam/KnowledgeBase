@@ -3,7 +3,7 @@ title: How to collect AdGuard installation logs
 sidebar_position: 4
 ---
 
-:::note
+:::info
 
 Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 

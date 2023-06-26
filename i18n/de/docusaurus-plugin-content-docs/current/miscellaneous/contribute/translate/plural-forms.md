@@ -20,12 +20,12 @@ Schauen wir uns dieses Bild an. Hier sieht man die Zahlengruppen, die eine Wortf
 
 ![Polnisch](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
-Ziehen wir zum besseren Verständnis eine kleine Parallele zwischen Englisch und Polnisch: 
+Ziehen wir zum besseren Verständnis eine kleine Parallele zwischen Englisch und Polnisch:
 
       Die englische Version:                                                 Die polnischen Entsprechung:
     
-      1. Form — It takes one hour.                                     1. Form — Zajmuje to godzinę. 
-      2. Form — It takes two hours.                                    2. Form — Zajmuje to dwie godziny. 
+      1. Form — It takes one hour.                                     1. Form — Zajmuje to godzinę.
+      2. Form — It takes two hours.                                    2. Form — Zajmuje to dwie godziny.
       3. Form — It takes five hours.                                   3. Form — Zajmuje to pięć godzin.
 
 Nun ist klar, dass die polnische *'godzinę'* (Stunde) drei verschiedene Formen hat, während das englische Wort seine Form bei gegebenen Zahlen nur zweimal ändert.
@@ -125,7 +125,7 @@ Wenn wir zum Beispiel den oben erwähnten Satz ins Slowakische übersetzen, der 
 In diesem Fall sehen wir drei Vorlagen, die drei Formen des slowakischen Wortes *„počítač“* (Computer) enthalten.
 
 *Wenn wir eine der Formen ignorieren und nur zwei statt drei Vorlagen für Slowakisch verwenden, kann das System für bestimmte Zahlen keine geeignete Vorlage verwenden*, und als Ergebnis haben wir Grammatikfehler in Sätzen, wie z. B. im Englischen: *Standard license for 5 computer*.
-> **Verwenden Sie immer so viele Formen, wie es in Ihrer Sprache gibt, auch wenn das Wort selbst weniger Wortformen hat.**
+> **Always use as many forms as there are in your language, even when the word itself has fewer word forms.**
 
 Zum Beispiel hat das serbische Wort *'računar'* (Computer) nur zwei Formen. Aber es gibt 3 Pluralformen im Serbischen.
 
@@ -147,10 +147,10 @@ Und noch einmal: Wenn Sie auf einen Originalsatz mit zwei wichtigen Elementen st
 
 + Beziehen Sie sich auf die Pluralregel einer Sprache, in die Sie übersetzen;
 
-> Die Anzahl Ihrer Vorlagen sollte mit der Anzahl der Pluralformen in Ihrer Sprache übereinstimmen, auch wenn einige Wörter selbst weniger Formen haben. Zwei Pluralformen – zwei Vorlagen in Übersetzungen; fünf Pluralformen – fünf Vorlagen usw.
+The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms – two templates in translations; five plural forms – five templates, etc.
 
 + Vergessen Sie nicht, ein vertikales Balkenzeichen zwischen Vorlagen zu verwenden, wie es in Originalphrasen dargestellt wird;
 
 + Die **%count%**-Platzhalter dürfen nicht übersetzt, ausgefüllt oder gelöscht werden.
 
-Indem Sie diese einfachen Regeln befolgen, helfen Sie AdGuard-Entwicklern, viele unnötige Schwierigkeiten während des Lokalisierungsprozesses zu vermeiden.
+By following these simple rules you will help AdGuard developers avoid a lot of unnecessary complications during the localization process.

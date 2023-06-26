@@ -3,7 +3,7 @@ title: iOS용 AdGuard로 시스템 전체 필터링을 설정하는 방법
 sidebar_position: 2
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -40,12 +40,16 @@ iOS 기기의 전체 시스템에서 추적기와 광고를 차단하려면 [DNS
 
 ![고급 설정 화면 *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_advanced_settings.PNG)
 
-> 참고: *고급 설정* 탭에서 다른 설정, 특히 *로우 레벨 설정*은 사용하지 않는 것이 좋습니다. 어떤 설정으로 인해 인터넷 연결이 떨어질 수 있거나 개인정보 및 보안이 손상될 수 있습니다. AdGuard DNS 필터를 추가하려면 다음 단계를 따르세요.
+:::note
+
+We don't recommend touching other settings you'll find inside the *Advanced settings* tab, especially when it comes to *Low-level settings*. 어떤 설정으로 인해 인터넷 연결이 떨어질 수 있거나 개인정보 및 보안이 손상될 수 있습니다. AdGuard DNS 필터를 추가하려면 다음 단계를 따르세요.
+
+:::
 
 3. 아래 링크를 복사합니다. `https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt` (AdGuard DNS 필터의 링크)
 4. *iOS용 AdGuard 설정* → *DNS 보호* → *DNS 필터링*(고급 모드가 활성화된 상태에서 사용 가능) → *DNS 필터*를 엽니다.
-5. *필터 추가*를 클릭하고 링크를 필터 URL 필드에 붙여넣은 후 '다음'을 클릭합니다.
+5. Tap *Add a filter*, paste the link into the filter URL field, and yap 'Next'.
 
 ![DNS 필터 화면 추가 *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_adding_a_filter.PNG)
 
-> 3 단계에서 다른 URL을 붙여넣어 동일한 방식으로 다른 DNS 필터를 추가하세요. [여기](https://filterlists.com)에서 다양한 필터와 링크를 확인할 수 있습니다.
+3 단계에서 다른 URL을 붙여넣어 동일한 방식으로 다른 DNS 필터를 추가하세요. [여기](https://filterlists.com)에서 다양한 필터와 링크를 확인할 수 있습니다.

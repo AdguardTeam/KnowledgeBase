@@ -3,7 +3,7 @@ title: 使用的流量与电池消耗的问题
 sidebar_position: 1
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 

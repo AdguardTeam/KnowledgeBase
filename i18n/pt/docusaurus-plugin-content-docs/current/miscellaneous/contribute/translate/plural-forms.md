@@ -20,12 +20,12 @@ Vamos dar uma olhada nesta imagem. Aqui pode ver os grupos de numerais que deter
 
 ![Polonês](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
-Vamos traçar um pequeno paralelo entre o inglês e o polonês para melhor compreensão: 
+Vamos traçar um pequeno paralelo entre o inglês e o polonês para melhor compreensão:
 
       A versão em inglês:                                                 Os equivalentes poloneses:
     
-      1. forma - It takes one hour.                                     1. forma - Zajmuje para godzinę. 
-      2. forma - It takes two hours.                                    2. forma - Zajmuje para dwie godziny. 
+      1. forma - It takes one hour.                                     1. forma - Zajmuje para godzinę.
+      2. forma - It takes two hours.                                    2. forma - Zajmuje para dwie godziny.
       3. forma - It takes five hours.                                   3. forma - Zajmuje para pięć godzin.
 
 Agora está claro que o polonês *'godzinę'* (hora) tem três formas diferentes, enquanto a palavra em inglês muda sua forma com determinados números apenas duas vezes.
@@ -125,7 +125,7 @@ Por exemplo, quando traduzimos a frase acima mencionada para o eslovaco, que de 
 Neste caso, vemos três modelos que contêm três formas da palavra *"počítač"* (computador) em eslovaco.
 
 *Se ignorarmos uma das formas e usarmos apenas duas predefinições para o eslovaco em vez de três, o sistema não conseguirá aceitar uma predefinição adequada para determinados números* e, como resultado, teremos erros gramaticais nas frases, como em inglês: *Standard license for 5 computer*.
-> **Sempre use tantas formas quantas houver em seu idioma, mesmo quando a própria palavra tiver menos formas.**
+> **Always use as many forms as there are in your language, even when the word itself has fewer word forms.**
 
 Por exemplo, a palavra sérvia *'računar'* (computador) tem apenas duas formas. Mas existem 3 formas plurais em sérvio.
 
@@ -147,10 +147,10 @@ E novamente: se você encontrar uma frase original com dois elementos importante
 
 + Consulte a regra do plural do idioma para o qual você traduz;
 
-> O número de seus modelos deve ser consistente com o número de formas plurais que seu idioma inclui, mesmo nos casos em que algumas palavras tenham menos formas. Duas formas plurais – dois modelos em traduções; cinco formas plurais – cinco modelos, etc.
+The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms – two templates in translations; five plural forms – five templates, etc.
 
 + Não se esqueça de usar um sinal de barra vertical entre os modelos da forma que é representado nas strings originais;
 
 + Não traduza, preencha ou exclua os placeholders **%count%**.
 
-Ao seguir essas regras simples, você ajudará os desenvolvedores do AdGuard a evitar muitas complicações desnecessárias durante o processo de localização.
+By following these simple rules you will help AdGuard developers avoid a lot of unnecessary complications during the localization process.

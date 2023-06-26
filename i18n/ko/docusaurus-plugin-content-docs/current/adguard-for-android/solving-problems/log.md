@@ -3,7 +3,7 @@ title: Android용 AdGuard에서 로그 수집 방법
 sidebar_position: 2
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 

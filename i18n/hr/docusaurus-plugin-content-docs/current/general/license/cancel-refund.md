@@ -13,7 +13,7 @@ The subscription can be canceled in your AdGuard account. To cancel your subscri
 
  The canceled subscription will be valid until its expiry date.
 
-> Subscriptions purchased on the App Store can be managed in the App Store account or in the device's settings.
+Subscriptions purchased on the App Store can be managed in the App Store account or in the device's settings.
 
 ## How to get a refund
 

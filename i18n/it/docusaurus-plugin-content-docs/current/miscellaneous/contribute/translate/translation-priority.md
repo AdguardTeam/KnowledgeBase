@@ -1,7 +1,7 @@
 ---
 title: Come dare priorità alle traduzioni dei file di Crowdin
 sidebar_position: 5
---- 
+---
 
 Esistono cinque progetti principali di AdGuard su Crowdin — [AdGuard Applications](https://crowdin.com/project/adguard-applications), [AdGuard Websites](https://crowdin.com/project/adguard-websites), [AdGuard Ad Blocker Knowledge base](https://crowdin.com/project/adguard-knowledge-base), [AdGuard VPN Knowledge Base](https://crowdin.com/project/adguard-vpn-knowledge-base) e [AdGuard DNS Knowledge Base](https://crowdin.com/project/adguard-knowledge-bases).
 
@@ -30,6 +30,6 @@ La situazione è differente nel progetto *AdGuard Websites*. Le lingue possono e
 * `critical.resx`
 * `auth.resx`
 
-> Aggiungere nuove stringhe, nonché aggiornare quelle esistenti in questi file, richiede un'attenzione particolare da parte dei traduttori e revisori del progetto.
+Adding new strings as well as updating existing ones in these files requires special attention from the project translators and proofreaders.
 
-Oltre ai siti web, esiste un file per la traduzione delle [email transazionali](https://crowdin.com/project/adguard-websites/de#/emails), nel progetto di AdGuard Websites. Le stringhe appena aggiunte in questo file, inoltre, hanno una priorità di traduzione elevata.
+In addition to websites, there is a file for translating [transactional emails](https://crowdin.com/project/adguard-websites/de#/emails) in the AdGuard Websites project. Newly added strings in this file also have a high translation priority.

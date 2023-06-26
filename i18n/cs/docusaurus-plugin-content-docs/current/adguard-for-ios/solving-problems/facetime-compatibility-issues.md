@@ -3,7 +3,7 @@ title: Jak se vyhnout problémům s kompatibilitou s FaceTime
 sidebar_position: 3
 ---
 
-:::note
+:::info
 
 Tento článek popisuje AdGuard pro iOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 

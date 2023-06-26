@@ -3,9 +3,9 @@ title: Bilinen sorunlar
 sidebar_position: 2
 ---
 
-> Last update: September 20, 2022
+Last update: September 20, 2022
 
-> Understanding this article may require some basic knowledge about encryption, TLS, and HTTPS.
+Understanding this article may require some basic knowledge about encryption, TLS, and HTTPS.
 
 First, look at this simple diagram that shows the general structure of the HTTPS protocol:
 

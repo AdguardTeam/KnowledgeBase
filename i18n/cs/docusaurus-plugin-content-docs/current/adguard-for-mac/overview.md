@@ -3,7 +3,7 @@ title: Přehled funkcí
 sidebar_position: 1
 ---
 
-:::note
+:::info
 
 Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 
@@ -82,7 +82,11 @@ Režim utajení obsahuje širokou škálu možností, které zajišťují jeho f
 
 Dále máme panel Zabezpečení, kde se nachází modul známý také jako Bezpečné prohlížení. Jedná se o ochranu před škodlivými a phishingovými webovými stránkami.
 
-> Všimněte si, že AdGuard není antivirus, ale zcela jiný program. Zobrazí vám varování, pokud se chystáte přejít na infikovanou doménu, ale nemůže vám zabránit ve stahování podezřelých souborů nebo vám pomoci vypořádat se s již existujícími viry. Phishing je velmi častý internetový podvod, jehož cílem je krádež osobních údajů (hesel, údajů o bankovních účtech atd.). Provádí se pomocí falešných webových stránek napodobujících oblíbené webové stránky nebo skutečné služby, jako jsou webové obchody nebo sociální sítě. Mnoho phishingových webových stránek má adresy URL, které se od skutečných liší jen několika symboly. Pokud uživatel zadá své údaje na takovém webu, určitě se dostanou do nesprávných rukou.
+:::note
+
+AdGuard není antivirus, ale zcela jiný program. Zobrazí vám varování, pokud se chystáte přejít na infikovanou doménu, ale nemůže vám zabránit ve stahování podezřelých souborů nebo vám pomoci vypořádat se s již existujícími viry. Phishing je velmi častý internetový podvod, jehož cílem je krádež osobních údajů (hesel, údajů o bankovních účtech atd.). Provádí se pomocí falešných webových stránek napodobujících oblíbené webové stránky nebo skutečné služby, jako jsou webové obchody nebo sociální sítě. Mnoho phishingových webových stránek má adresy URL, které se od skutečných liší jen několika symboly. Pokud uživatel zadá své údaje na takovém webu, určitě se dostanou do nesprávných rukou.
+
+:::
 
 Bezpečné prohlížení poskytuje silnou ochranu před takovými incidenty. Zároveň se nikam nepřenášejí osobní údaje uživatele a servery AdGuardu nevědí, které webové stránky uživatel navštěvuje, protože bezpečnostní kontrola se neprovádí prostřednictvím otevřené webové adresy (URL), ale pomocí hash prefixů (hash je určitá datová struktura, díky níž je každá adresa přidaná do základu jednoznačná).
 
@@ -108,7 +112,11 @@ Rozšíření jsou malé programy, které dělají přesně to, co naznačuje je
 
 **1. Asistent AdGuardu** (zastaralá verze) Toto rozšíření pomáhá uživateli měnit základní nastavení AdGuardu v prohlížeči, aniž by bylo nutné otevírat samotnou aplikaci. Stejně jako Asistent prohlížeče funguje i zastaralý Asistent se všemi prohlížeči kompatibilními se systémem macOS. Díky tomuto malému nástroji můžete udělat několik věcí, aniž byste museli opustit prohlížeč: přidat určitou webovou stránku do seznamu "neblokovat", vybrat a zablokovat obzvláště obtěžující prvek na stránce, nahlásit webovou stránku, pokud se jí přesto podaří dostat k vám reklamy.
 
-> Všimněte si, že tato verze Asistenta je starší a nemá smysl ji používat v nových systémech, protože byla nahrazena plnohodnotným Asistentem prohlížeče. Pokud však pro váš prohlížeč neexistuje rozšíření Asistent prohlížeče, může vám pomoci starší asistent.
+:::note
+
+Tato verze Asistenta je starší a nemá smysl ji používat v nových systémech, protože byla nahrazena plnohodnotným Asistentem prohlížeče. Pokud však pro váš prohlížeč neexistuje rozšíření Asistent prohlížeče, může vám pomoci starší asistent.
+
+:::
 
 **2. AdGuard Extra** Toto rozšíření se používá k řešení složitějších případů blokování reklam, se kterými se můžete setkat. Doporučujeme vám, abyste ho měli vždy zapnuté, pokud k tomu nemáte vážný důvod.
 

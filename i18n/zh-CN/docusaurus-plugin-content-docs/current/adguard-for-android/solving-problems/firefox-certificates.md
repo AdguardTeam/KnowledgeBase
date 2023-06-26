@@ -3,7 +3,7 @@ title: 手动将安全证书安装到火狐浏览器中
 sidebar_position: 11
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -13,7 +13,11 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 ### Method 1
 
-> 改方法在安卓版火狐浏览器 90.0 及以上的版本可用。
+:::note
+
+改方法在安卓版火狐浏览器 90.0 及以上的版本可用。
+
+:::
 
 为了让 AdGuard 证书在火狐浏览器中受信任，请执行以下操作：
 
@@ -31,10 +35,13 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 ### Method 2
 
-> 此方法仅在有 **Root 权限**的设备上有效。
+:::note
 
-1. [安装以及配置](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB；
-> 在 Windows 平台上，**三星**用户最可能需要安装此[实用程序](https://developer.samsung.com/mobile/android-usb-driver.html)（Utility）。
+此方法仅在有 **Root 权限**的设备上有效。
+
+:::
+
+1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
 2. 启用**「开发者模式」**以及开启**「USB 调试」**：
     - Open the **Settings** app on your phone;
     - 前往**系统**部分（设置中最后一项选项）。 In this section, find the sub-item **About phone**;

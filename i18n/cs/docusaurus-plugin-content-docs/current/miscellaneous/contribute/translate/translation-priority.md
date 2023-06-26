@@ -1,7 +1,7 @@
 ---
 title: Jak upřednostnit překlady souborů na Crowdinu
 sidebar_position: 5
---- 
+---
 
 Na serveru Crowdin je pět hlavních projektů AdGuard — [AdGuard Applications](https://crowdin.com/project/adguard-applications), [AdGuard Websites](https://crowdin.com/project/adguard-websites), [AdGuard Ad Blocker Knowledge base](https://crowdin.com/project/adguard-knowledge-base), [AdGuard VPN Knowledge Base](https://crowdin.com/project/adguard-vpn-knowledge-base) a [AdGuard DNS Knowledge Base](https://crowdin.com/project/adguard-knowledge-bases).
 
@@ -30,6 +30,6 @@ V projektu *AdGuard Websites* je situace jiná. Jazyky lze na web přidat, i kdy
 * `critical.resx`
 * `auth.resx`
 
-> Přidávání nových i aktualizace stávajících řetězců v těchto souborech vyžaduje zvláštní pozornost překladatelů a korektorů projektu.
+Přidávání nových i aktualizace stávajících řetězců v těchto souborech vyžaduje zvláštní pozornost překladatelů a korektorů projektu.
 
 Kromě webových stránek je v projektu AdGuard Websites k dispozici soubor pro překlad [transakčních e-mailů](https://crowdin.com/project/adguard-websites/de#/emails). Nově přidané řetězce v tomto souboru mají také vysokou prioritu překladu.

@@ -3,7 +3,7 @@ title: Tor Browser'da filtrelemeyi ayarlama
 sidebar_position: 10
 ---
 
-:::note
+:::info
 
 Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Mac için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
 
@@ -27,4 +27,4 @@ Ortak Anahtar Sabitleme, sitelerin bir site ile bir kullanıcı arasındaki bağ
 
 Değişiklikleri uygulamak için Tor Browser'ı yeniden başlatmanız gerekir.
 
-> Bu ayarları elle değiştirirseniz, Tor filtreleme durdurulacaktır.
+If you manually change these settings, Tor filtering will be stopped.

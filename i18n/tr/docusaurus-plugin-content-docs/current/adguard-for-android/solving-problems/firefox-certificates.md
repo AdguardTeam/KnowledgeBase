@@ -3,7 +3,7 @@ title: Manual installation of the security certificate into the Firefox browser
 sidebar_position: 11
 ---
 
-:::note
+:::info
 
 Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Android için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
 
@@ -13,7 +13,11 @@ For AdGuard to successfully filter HTTPS traffic in Firefox, the browser needs t
 
 ### Method 1
 
-> This method works in Firefox for Android version 90.0 and later.
+:::note
+
+This method works in Firefox for Android version 90.0 and later.
+
+:::
 
 To make Firefox trust the AdGuard certificate, do the following:
 
@@ -31,10 +35,13 @@ To make Firefox trust the AdGuard certificate, do the following:
 
 ### Method 2
 
-> This method will only work on **rooted** devices.
+:::note
 
-1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb;
-> Windows platformunda, **Samsung** sahiplerinin [bu yardımcı programı](https://developer.samsung.com/mobile/android-usb-driver.html) yüklemeleri gerekebilir.
+This method will only work on **rooted** devices.
+
+:::
+
+1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
 2. **Geliştirici modunu** etkinleştirin ve **USB hata ayıklamayı** etkinleştirin:
     - Open the **Settings** app on your phone;
     - **Sistem** bölümüne gidin (ayarlar menüsündeki son öğe). Bu bölümde **Telefon hakkında** alt öğesini bulun;

@@ -13,11 +13,11 @@ L'abonnement peut être annulé dans votre compte AdGuard. To cancel your subscr
 
  L'abonnement annulé sera valable jusqu'à sa date d'expiration.
 
-> Les abonnements achetés sur l'App Store peuvent être gérés dans le compte App Store ou dans les paramètres de l'appareil.
+Subscriptions purchased on the App Store can be managed in the App Store account or in the device's settings.
 
 ## Comment obtenir un remboursement
 
-Conformément à nos conditions de vente [](https://adguard.com/terms-of-sale.html), vous pouvez obtenir un remboursement de 100% pour la clef de licence AdGuard que vous avez achetée sur https://adguard.com. To get a refund, contact our support team at **support@adguard.com** and specify the payment option you've used.
+In accordance with our [Terms of Sale](https://adguard.com/terms-of-sale.html), you can get a 100% refund on the AdGuard license key you purchased at https://adguard.com. To get a refund, contact our support team at **support@adguard.com** and specify the payment option you've used.
 
 A refund may be declined if:
 * a license was purchased more than 60 days ago,

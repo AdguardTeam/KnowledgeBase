@@ -3,9 +3,9 @@ title: Známé problémy
 sidebar_position: 2
 ---
 
-> Poslední aktualizace: 20. září 2022
+Poslední aktualizace: 20. září 2022
 
-> Pochopení tohoto článku může vyžadovat základní znalosti o šifrování, TLS a HTTPS.
+Pochopení tohoto článku může vyžadovat základní znalosti o šifrování, TLS a HTTPS.
 
 Nejprve se podívejte na tento jednoduchý diagram, který ukazuje obecnou strukturu protokolu HTTPS:
 
@@ -34,7 +34,7 @@ Tento problém řeší v [Asistent prohlížeče](https://adguard.com/adguard-as
 
 ### Transparentnost certifikátu
 
-Díky moderní kryptografii dokáží prohlížeče obvykle odhalit škodlivé webové stránky, které jsou opatřeny padělanými nebo falešnými certifikáty SSL. Současné kryptografické mechanismy však nejsou tak dobré při odhalování škodlivých webových stránek, pokud jsou vybaveny chybně vydanými certifikáty nebo certifikáty, které byly vydány kompromitovanou nebo nepoctivou certifikační autoritou. Transparentnost certifikátů si klade za cíl odstranit tyto hrozby založené na certifikátech tím, že zpřístupní vydávání a existenci certifikátů SSL kontrole ze strany vlastníků domén, certifikačních autorit a uživatelů domén.
+Díky moderní kryptografii dokáží prohlížeče obvykle odhalit škodlivé webové stránky, které jsou opatřeny padělanými nebo falešnými certifikáty SSL. Současné kryptografické mechanismy však nejsou tak dobré při odhalování škodlivých webových stránek, pokud jsou vybaveny chybně vydanými certifikáty nebo certifikáty, které byly vydány kompromitovanou nebo nepoctivou certifikační autoritou (CA). Transparentnost certifikátů si klade za cíl odstranit tyto hrozby založené na certifikátech tím, že zpřístupní vydávání a existenci certifikátů SSL kontrole ze strany vlastníků domén, certifikačních autorit a uživatelů domén.
 
 Produkty AdGuard, které používají [CoreLibs](https://github.com/AdguardTeam/CoreLibs/) počínaje verzí **1.11**, budou implementovat zásady založené na [Chrome Certificate Transparency Policy](https://googlechrome.github.io/CertificateTransparency/ct_policy.html).
 

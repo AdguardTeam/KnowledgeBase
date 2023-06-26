@@ -44,7 +44,7 @@ sidebar_position: 2
 * Nathan Moinvaziri 的 Minizip-ng 库： [https://github.com/zlib-ng/minizip-ng](https://github.com/zlib-ng/minizip-ng)
 * Brandon Withrow 的 Lottie for iOS 库： [https://github.com/airbnb/lottie-ios](https://github.com/airbnb/lottie-ios)
 
-## AdGuard 广告拦截扩展 {#extension}
+## AdGuard 浏览器扩展 {#extension}
 
 * moment: [https://github.com/moment/moment](https://github.com/moment/moment)
 * simply-deferred: [https://github.com/sudhirj/simply-deferred](https://github.com/moment/moment)

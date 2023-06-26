@@ -3,7 +3,7 @@ title: Filtry AdGuardu
 sidebar_position: 2
 ---
 
-:::note
+:::info
 
 Tento článek je věnován filtrům, které vyvíjíme a které jsou předinstalovány v AdGuardu. Chcete-li je zkontrolovat, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 

@@ -3,7 +3,7 @@ title: FaceTime과의 호환성 문제를 해결하는 방법
 sidebar_position: 3
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 

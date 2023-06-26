@@ -3,7 +3,7 @@ title: Ручная установка сертификата безопасно
 sidebar_position: 11
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -13,7 +13,11 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 ### Метод 1
 
-> Этот метод работает в Firefox для Android версии 90.0 и выше.
+:::note
+
+Этот метод работает в Firefox для Android версии 90.0 и выше.
+
+:::
 
 Чтобы Firefox доверял сертификату AdGuard, выполните следующие шаги:
 
@@ -31,10 +35,13 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 ### Метод 2
 
-> Этот метод работает только на **рутированных** устройствах.
+:::note
 
-1. [Установите и настройте](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb;
-> На платформе Windows владельцам **Samsung** может потребоваться установить [эту утилиту](https://developer.samsung.com/mobile/android-usb-driver.html).
+Этот метод работает только на **рутированных** устройствах.
+
+:::
+
+1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
 2. Активируйте режим разработчика **** и включите отладку по USB ****:
     - Откройте приложение **Настройки** на своём телефоне;
     - Перейдите в раздел **О системе** (последний пункт в меню настроек). В этом разделе найдите подпункт **О телефоне**;

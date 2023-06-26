@@ -3,7 +3,7 @@ title: 如何在 AdGuard iOS 版设置系统层面的过滤？
 sidebar_position: 2
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -40,12 +40,16 @@ This article covers AdGuard for iOS, a multifunctional ad blocker that protects 
 
 ![高级设置屏幕 *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_advanced_settings.PNG)
 
-> 温馨提示：我们不推荐您更改其它**高级设置**标签里的设置，特别是**低级设置**。 有些设置可能会导致互联网连接中断或会造成您的隐私安全被泄露，因此您要保持警惕。 下面的内容讲述的是，为了添加 AdGuard DNS 过滤器需要进行的步骤。
+:::note
+
+We don't recommend touching other settings you'll find inside the *Advanced settings* tab, especially when it comes to *Low-level settings*. 有些设置可能会导致互联网连接中断或会造成您的隐私安全被泄露，因此您要保持警惕。 下面的内容讲述的是，为了添加 AdGuard DNS 过滤器需要进行的步骤。
+
+:::
 
 3. 请复制此链接：`https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt`（这是 AdGuard DNS 过滤器的链接）。
 4. 打开 *AdGuard iOS 版的设置* → *「DNS 保护」* → *「DNS 过滤」*（仅在*高级模式*开启时使用）→*「DNS 过滤器」*。
-5. 点击**「添加过滤器」**按钮,在过滤器的 URL 字段里粘贴上述链接并点击「下一步」。
+5. Tap *Add a filter*, paste the link into the filter URL field, and yap 'Next'.
 
 ![添加 DNS 过滤器屏幕 *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_adding_a_filter.PNG)
 
-> 通过在第三步粘贴另一个链接，您就可以使用同样的方式添加任何其它的 DNS 过滤器。 [在这里](https://filterlists.com)您可以找到各种过滤器以及它们的链接。
+通过在第三步粘贴另一个链接，您就可以使用同样的方式添加任何其它的 DNS 过滤器。 [在这里](https://filterlists.com)您可以找到各种过滤器以及它们的链接。

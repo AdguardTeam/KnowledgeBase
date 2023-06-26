@@ -3,7 +3,7 @@ title: Leitfaden für erweiterte (low-level) Einstellungen
 sidebar_position: 7
 ---
 
-:::note
+:::info
 
 Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://adguard.com/download.html?auto=true)
 
@@ -11,7 +11,11 @@ Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbebloc
 
 Die früher als Low-Level-Einstellungen bezeichneten erweiterten Einstellungen enthalten meist Optionen, die über die Fähigkeiten des durchschnittlichen Benutzers hinausgehen und im Alltag nicht verwendet werden. AdGuard für Windows ist so konzipiert, dass es ohne Änderungen funktioniert, aber in bestimmten Fällen oder bei der Lösung eines ungewöhnlichen Problems werden zusätzliche Funktionen bereitgestellt.
 
-> Das unbedachte Ändern von *Erweiterten Einstellungen* kann möglicherweise Probleme mit der Leistung von AdGuard verursachen, die Internetverbindung unterbrechen oder Ihre Sicherheit und Privatsphäre gefährden. Sie sollten diese Einstellungen nur dann ändern, wenn Sie sich sicher sind, was Sie tun, oder wenn unser Support-Team Sie dazu aufgefordert hat.
+:::caution
+
+Das unbedachte Ändern von *Erweiterten Einstellungen* kann möglicherweise Probleme mit der Leistung von AdGuard verursachen, die Internetverbindung unterbrechen oder Ihre Sicherheit und Privatsphäre gefährden. Sie sollten diese Einstellungen nur dann ändern, wenn Sie sich sicher sind, was Sie tun, oder wenn unser Support-Team Sie dazu aufgefordert hat.
+
+:::
 
 ## So öffnen Sie die erweiterten Einstellungen
 
@@ -27,11 +31,11 @@ Wenn aktiviert, blockiert AdGuard TCP Fast Open im Edge-Browser. Um die Einstell
 
 ### Encrypted ClientHello verwenden
 
-Jede verschlüsselte Internetverbindung hat einen unverschlüsselten Teil. Dies ist das allererste Paket, das den Namen des Servers enthält, mit dem Sie sich verbinden. Die verschlüsselte Client-Hallo-Technologie soll dieses Problem lösen und das letzte bisschen an unverschlüsselter Information verschlüsseln. Um davon zu profitieren, aktivieren Sie die Option *Encrypted ClientHello verwenden*. Er verwendet einen lokalen DNS-Proxy, um nach der ECH-Konfiguration für die Domain zu suchen. Wenn es gefunden wird, wird das ClientHello-Paket verschlüsselt.
+Jede verschlüsselte Internetverbindung hat einen unverschlüsselten Teil. Dies ist das allererste Paket, das den Namen des Servers enthält, mit dem Sie sich verbinden. Die verschlüsselte Client-Hallo-Technologie soll dieses Problem lösen und das letzte bisschen an unverschlüsselter Information verschlüsseln. Um davon zu profitieren, aktivieren Sie die Option *Encrypted ClientHello verwenden*. It uses a local DNS proxy to look for the ECH configuration for the domain. Wenn es gefunden wird, wird das ClientHello-Paket verschlüsselt.
 
 ### Zertifikatstransparenz von Websites prüfen
 
-Überprüft die Authentizität aller Zertifikate für die Domain basierend auf der Chrome Certificate Transparency Policy. Wenn das Zertifikat nicht den CT-Richtlinien von Chrome entspricht, filtert AdGuard die Website nicht. Chrome wiederum sperrt sie.
+Überprüft die Authentizität aller Zertifikate für die Domain basierend auf der Chrome Certificate Transparency Policy. If the certificate does not comply with the Chrome Certificate Transparency Policy, AdGuard will not filter the website. Chrome wiederum sperrt sie.
 
 ### SSL/TLS-Zertifikatssperrprüfungen aktivieren
 
@@ -71,7 +75,7 @@ Aktivieren Sie diese Option, damit sich das Hauptfenster von AdGuard nach dem La
 
 Ab v7.12 filtert der AdGuard-Dienst standardmäßig keinen Datenverkehr nach dem Start des Betriebssystems, wenn die Option „AdGuard beim Systemstart starten” deaktiviert ist. Mit anderen Worten, der Dienst von AdGuard wird im „Leerlaufmodus” gestartet. Aktivieren Sie diese Option, damit AdGuard den Datenverkehr auch dann filtert, wenn die App nicht gestartet ist.
 
-*Beachten Sie, dass vor v7.12 AdGuard standardmäßig im Filtermodus gestartet wurde (auch wenn die Option „AdGuard beim Systemstart starten” deaktiviert war). Wenn Sie mit dem alten Verhalten zufrieden waren, aktivieren Sie diese Option.*
+*Note that before v7.12 the AdGuard's service started in filtering mode by default (even if the *Launch AdGuard at system start-up* was disabled). If you were satisfied with the old behavior, enable this option.*
 
 ### Localhost filtern
 
@@ -95,23 +99,23 @@ Host: example.org`
 umgewandelt in
 
 `GET  /foo/bar/ HTTP/1.1
-Host:example.org`
+Host: example.org`
 
 Diese Option wird nur angewendet, wenn die Option *Schutz vor DPI* im Privatsphärenmodus aktiviert ist.
 
 ### Größe der Fragmentierung des ersten TLS-Pakets anpassen
 
-Gibt die Größe der TCP-Paketfragmentierung an, um eine Deep Packet Inspection zu vermeiden. Diese Option betrifft nur verschlüsselten HTTPS-Verkehr.
+Gibt die Größe der TCP-Paketfragmentierung an, um eine Deep Packet Inspection zu vermeiden. This option only affects secured (HTTPS) traffic.
 
 Wenn diese Option aktiviert ist, teilt AdGuard das initiale TLS-Paket (das ClientHello-Paket) in zwei Teile auf: der erste hat die angegebene Länge und der zweite den Rest, bis zur Länge des gesamten initialen TLS-Pakets.
 
-Zulässige Werte: 1-1500. Wird eine ungültige Größe angegeben, wird der vom System ausgewählte Wert verwendet. Diese Option wird nur angewendet, wenn die Option *Schutz vor DPI* im Privatsphärenmodus aktiviert ist.
+Valid values: 1–1500. Wird eine ungültige Größe angegeben, wird der vom System ausgewählte Wert verwendet. Diese Option wird nur angewendet, wenn die Option *Schutz vor DPI* im Privatsphärenmodus aktiviert ist.
 
 ### Fragmentgröße einer einfachen HTTP-Anfrage
 
 Passt die Größe der Fragmentierung der HTTP-Anfrage an. Diese Option betrifft nur den einfachen HTTP-Verkehr. Wenn diese Option aktiviert ist, teilt AdGuard das ursprüngliche Paket in zwei Teile auf: der erste hat die angegebene Länge und der zweite den Rest, bis zur Länge des gesamten ursprünglichen Pakets.
 
-Zulässige Werte: 1-1500. Wird eine ungültige Größe angegeben, wird der vom System ausgewählte Wert verwendet. Diese Option wird nur angewendet, wenn die Option *Schutz vor DPI* im Privatsphärenmodus aktiviert ist.
+Valid values: 1–1500. Wird eine ungültige Größe angegeben, wird der vom System ausgewählte Wert verwendet. Diese Option wird nur angewendet, wenn die Option *Schutz vor DPI* im Privatsphärenmodus aktiviert ist.
 
 ### QUIC anzeigen
 
@@ -129,7 +133,7 @@ Beachten Sie, dass diese Einstellung nur funktioniert, wenn die Option *TCP-Keep
 
 ### TCP-Keepalive-Zeitüberschreitung
 
-Hier können Sie die Zeit in Sekunden angeben, bevor Sie eine weitere Keepalive-Prüfung an eine nicht reagierende Gegenstelle senden. Wird 0 (Null) angegeben, wird der vom System gewählte Wert verwendet.
+Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. Wird 0 (Null) angegeben, wird der vom System gewählte Wert verwendet.
 
 Beachten Sie, dass diese Einstellung nur funktioniert, wenn die Option *TCP-Keepalive aktivieren* aktiviert ist.
 
@@ -147,11 +151,11 @@ Aktiviert HTTP/3 für DNS-over-HTTPS-Upstreams, um die Verbindung zu beschleunig
 
 ### Fallback-DNS-Upstreams verwenden
 
-Wenn diese Option aktiviert ist, werden normale Anfragen an den Fallback-Upstream weitergeleitet, wenn alle DNS-Anfragen an die ausgewählten Upstreams fehlschlagen.
+Normal queries will be redirected to the fallback upstream if all DNS requests to the selected upstreams fail.
 
 ### Parallele Abfrage von DNS-Upstreams
 
-Nach der Aktivierung werden alle Upstreams parallel abgefragt und die erste erfolgreiche Antwort wird zurückgegeben. Da DNS-Abfragen parallel durchgeführt werden, erhöht das Aktivieren dieser Funktion die Internetgeschwindigkeit.
+All upstreams will be queried in parallel and the first response is returned. Da DNS-Abfragen parallel durchgeführt werden, erhöht das Aktivieren dieser Funktion die Internetgeschwindigkeit.
 
 ### Immer auf fehlgeschlagene DNS-Anfragen antworten
 
@@ -159,7 +163,7 @@ Wenn die Adressauflösung in jedem der weitergeleiteten Upstreams sowie in den F
 
 ### Filtern von sicheren DNS-Anfragen aktivieren
 
-Wenn diese Option aktiviert ist, leitet AdGuard sichere DNS-Anfragen an den lokalen DNS-Proxy um, zusätzlich zu den normalen DNS-Anfragen.
+AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to plain DNS requests.
 
 ### Sperrmodus für Hosts-Regeln
 
@@ -213,4 +217,4 @@ Alle DNS-Anfragen an die hier aufgeführten Domains werden an den Standard-DNS-S
 
 ### Bestimmte WLAN-Netzwerknamen (SSIDs) von der DNS-Filterung ausschließen
 
-Der DNS-Schutz funktioniert nicht für die in diesem Abschnitt aufgeführten WLAN-Netzwerke. Geben Sie die Namen der WLAN-Netzwerke (SSIDs) an, eine pro Zeile. Dies kann nützlich sein, wenn ein bestimmtes WLAN-Netzwerk bereits durch AdGuard Home oder ein anderes DNS-Schutzsystem geschützt ist. In diesem Fall ist es überflüssig, DNS-Anfragen erneut zu filtern.
+DNS protection will not include Wi-Fi networks listed in this section. Geben Sie die Namen der WLAN-Netzwerke (SSIDs) an, eine pro Zeile. Dies kann nützlich sein, wenn ein bestimmtes WLAN-Netzwerk bereits durch AdGuard Home oder ein anderes DNS-Schutzsystem geschützt ist. In diesem Fall ist es überflüssig, DNS-Anfragen erneut zu filtern.

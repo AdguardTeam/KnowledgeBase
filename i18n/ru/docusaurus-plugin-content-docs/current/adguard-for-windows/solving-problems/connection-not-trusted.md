@@ -3,7 +3,7 @@ title: Ошибки, связанные с сертификатом
 sidebar_position: 2
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -68,4 +68,3 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 Самый простой способ — нажать на кнопку **Перейти на сайт**. Это заставит Яндекс.Браузер запомнить сертификат AdGuard как доверенный хотя бы на время. Скорее всего вам больше не придётся видеть это сообщение, но вполне возможно, оно будет время от времени появляться по каким-то другим причинам. В таких случаях просто нажмите ту же кнопку ещё раз *(убедитесь, что это сертификат AdGuard!)*.
 
 Отключение HTTPS-фильтрации в AdGuard также предотвратит повторное отображение этого сообщения в Яндекс.Браузере. Однако это приведёт к тому, что вы будете видеть рекламу, загружаемую по HTTPS (в том числе **собственную рекламу Яндекса**) на таких сайтах, как YouTube , Facebook, Instagram и многие другие. Мы настоятельно не рекомендуем делать это, если вы хотите сохранить высокое качество блокировки рекламы.
-

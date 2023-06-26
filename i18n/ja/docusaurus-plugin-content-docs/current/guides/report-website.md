@@ -16,7 +16,11 @@ sidebar_position: 3
 
 ## ウェブサイトを報告する方法 {#report}
 
-> **※**AdGuardアプリまたはAdGuardブラウザアシスタント経由でご報告を送信しますとと、ほとんどの情報が自動入力されて便利です。 お手数ですが、スクリーンショットだけはご自身で作成し添付してください。 なお、[報告フォームの直リンク](https://reports.adguard.com/new_issue.html)を使ってご報告される場合は、情報を全部手入力することが必要になります。
+:::note
+
+When you send a complaint via the app or via AdGuard Browser Assistant, all information is pre-filled automatically. お手数ですが、スクリーンショットだけはご自身で作成し添付してください。 なお、[報告フォームの直リンク](https://reports.adguard.com/new_issue.html)を使ってご報告される場合は、情報を全部手入力することが必要になります。
+
+:::
 
 広告の再挿入やWebサイトの誤表示などを報告する方法:
 
@@ -68,7 +72,11 @@ sidebar_position: 3
 
 ## 問題報告用フォーム記入する方法 {#form}
 
-> **※**AdGuardアプリまたはAdGuardブラウザアシスタント経由で問題報告を送信しますとと、ほとんどの情報が自動入力されて便利です。 お手数ですが、スクリーンショットだけはご自身で作成し添付してください。 なお、[報告フォームの直リンク](https://reports.adguard.com/ja/new_issue.html)を使って報告される場合は、情報を全部手入力することが必要になります。
+:::note
+
+When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. お手数ですが、スクリーンショットだけはご自身で作成し添付してください。 なお、[報告フォームの直リンク](https://reports.adguard.com/ja/new_issue.html)を使って報告される場合は、情報を全部手入力することが必要になります。
+
+:::
 
 1. 最初に、お使いの製品とそのバージョンを記入してください。
 

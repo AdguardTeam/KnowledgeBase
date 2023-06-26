@@ -3,7 +3,7 @@ title: Erweiterte Einstellungen
 sidebar_position: 9
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -11,7 +11,13 @@ This article covers AdGuard for Mac, a multifunctional ad blocker that protects 
 
 ## Wo findet man die Eweiterten Einstellungen
 
-> Das Ändern von *Low-Level-Einstellungen* kann Probleme mit der Leistung von AdGuard verursachen, die Internetverbindung unterbrechen oder Ihre Sicherheit und Privatsphäre gefährden. Sie sollten diesen Abschnitt nur öffnen, wenn Sie sicher sind, was Sie tun, oder wenn unser Support-Team Sie darum gebeten hat. Um zu *Erweiterte Einstellungen* zu gelangen, folgen Sie dieser Route: das AdGuard-Symbol im Taskleistenmenü → das Zahnradsymbol → Erweitert → Erweiterte Einstellungen.
+:::caution
+
+Das Ändern von *Low-Level-Einstellungen* kann Probleme mit der Leistung von AdGuard verursachen, die Internetverbindung unterbrechen oder Ihre Sicherheit und Privatsphäre gefährden. Sie sollten diesen Abschnitt nur öffnen, wenn Sie sicher sind, was Sie tun, oder wenn unser Support-Team Sie darum gebeten hat.
+
+:::
+
+Um zu *Erweiterte Einstellungen* zu gelangen, folgen Sie dieser Route: das AdGuard-Symbol im Taskleistenmenü → das Zahnradsymbol → Erweitert → Erweiterte Einstellungen.
 
 ## Erweiterte Einstellungen
 
