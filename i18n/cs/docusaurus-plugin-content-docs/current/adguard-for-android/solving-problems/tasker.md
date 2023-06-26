@@ -3,7 +3,7 @@ title: Jak automatizovat AdGuard pro Android
 sidebar_position: 3
 ---
 
-:::note
+:::info
 
 Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 
@@ -106,11 +106,14 @@ Nebo můžete parametry odebrání nakonfigurovat ručně:
 
  `[trust]` použít pouze na typ serveru ** HTTPS_CONNECT** a zahrnout možnost **Důvěřovat všem certifikátům**. Je nutné nastavit hodnotu **true nebo false**.
 
- > **Příklad**:
+:::note Příklad
 
 `nastavení podle názvu`: server:MůjServer
 
  `ruční nastavení`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
+
+
+:::
 
 -----
 
@@ -122,7 +125,11 @@ Název balíčku: `com.adguard.android`
 
 Třída: `com.adguard.android.receiver.AutomationReceiver`
 
-> Poznámka: před verzí 4.0 se třída jmenovala `com.adguard.android.receivers.AutomationReceiver`, ale pak jsme její název změnili na `com.adguard.android.receiver.AutomationReceiver`. Pokud jste tuto funkci používali, věnujte jí pozornost a používejte nový název.
+:::note
+
+Před verzí 4.0 se třída jmenovala `com.adguard.android.receivers.AutomationReceiver`, ale pak jsme její název změnili na `com.adguard.android.receiver.AutomationReceiver`. Pokud jste tuto funkci používali, věnujte jí pozornost a používejte nový název.
+
+:::
 
 ### Provedení bez oznámení
 

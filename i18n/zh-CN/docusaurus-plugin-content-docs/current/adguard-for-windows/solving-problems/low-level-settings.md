@@ -3,7 +3,7 @@ title: 高级（低级）设置指南
 sidebar_position: 7
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -11,7 +11,11 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 以前称为低级设置的「高级设置」主要包含超出普通用户能力的选项，并且在日常使用中不使用。 AdGuard Windows 版的设计允许用户不改变任何高级设置，而有效地使用软件。不过，高级设置在一些情况下或解决一个不常见的问题时为用户提供一些额外的功能。
 
-> 盲目地更改「*高级设置*」可能会导致 AdGuard 的运作问题，也会断开互联网连接或侵害安全和隐私。 只有用户确定自己在做什么或我们的支持团队要求这样做，用户才应该更改这些设置。
+:::caution
+
+盲目地更改「*高级设置*」可能会导致 AdGuard 的运作问题，也会断开互联网连接或侵害安全和隐私。 只有用户确定自己在做什么或我们的支持团队要求这样做，用户才应该更改这些设置。
+
+:::
 
 ## 如何转到高级设置
 
@@ -27,11 +31,11 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 ### 使用 Encrypted ClientHello
 
-每一个加密的互联网连接都有一个未加密的部分， 就是发送的第一个数据包，包含用户要连接的服务器名称。 Encrypted ClientHello（ECH）的技术能够解决该问题，成功加密最后一位未加密的信息。 要使用该功能，请启用「*使用 Encrypted ClientHello*」选项。 本功能使用本地 DNS 代理查找域名的 ECH 配置。 如果找到，将对 ClientHello 数据包进行加密。
+每一个加密的互联网连接都有一个未加密的部分， 就是发送的第一个数据包，包含用户要连接的服务器名称。 Encrypted ClientHello（ECH）的技术能够解决该问题，成功加密最后一位未加密的信息。 要使用该功能，请启用「*使用 Encrypted ClientHello*」选项。 It uses a local DNS proxy to look for the ECH configuration for the domain. 如果找到，将对 ClientHello 数据包进行加密。
 
 ### 检查网站的证书透明度
 
-基于 Chrome 证书透明度（英文：Chrome Certificate Transparency，简称：Chrome CT）政策验证域名内所有证书的真实性。 如果证书不符合 Chrome CT 政策，AdGuard 将不过滤该网站， 而 Chrome 则会屏蔽它。
+基于 Chrome 证书透明度（英文：Chrome Certificate Transparency，简称：Chrome CT）政策验证域名内所有证书的真实性。 If the certificate does not comply with the Chrome Certificate Transparency Policy, AdGuard will not filter the website. 而 Chrome 则会屏蔽它。
 
 ### 启用 SSL/TLS 证书撤销检查
 
@@ -71,7 +75,7 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 从 v7.12 版本开始，默认情况下，如果「AdGuard 随系统启动」选项被禁用，AdGuard 服务不会在操作系统启动后开始过滤流量。 这意味着，AdGuard 服务是以“待机”模式启动的。 启用此选项，使 AdGuard 过滤流量，即使应用程序没有启动。
 
-*请注意，在 v7.12 版本之前，AdGuard 的服务在默认情况下以过滤模式启动（即使「AdGuard 随系统启动」被禁用）。 如果有用户对该应用程序以前的行为感到满意，请启用该选项。*
+*Note that before v7.12 the AdGuard's service started in filtering mode by default (even if the *Launch AdGuard at system start-up* was disabled). If you were satisfied with the old behavior, enable this option.*
 
 ### 过滤 localhost 连接
 
@@ -95,23 +99,23 @@ Host: example.org`
 将转换为
 
 `GET  /foo/bar/ HTTP/1.1
-Host:example.org`
+Host: example.org`
 
 此选项仅在启用隐身模式的「*保护免受 DPI 影响*」选项时被应用。
 
 ### 调整初始 TLS 数据包的碎片大小
 
-指定 TCP 数据包碎片的大小，避免深度包检测。 此选项仅影响受保护的 HTTPS 流量。
+指定 TCP 数据包碎片的大小，避免深度包检测。 This option only affects secured (HTTPS) traffic.
 
 如果开启该选项，AdGuard 将初始 TLS 数据包（ClientHello 数据包）分成两部分：第一部分包含指定的长度，第二部分包含剩余的长度，直到整个初始 TLS 数据包的长度。
 
-可接受的值位于范围：1 – 1500。 如果指定无效大小，将使用系统选择的数值。 此选项仅在启用隐身模式的「*保护免受 DPI 影响*」选项时被应用。
+Valid values: 1–1500. 如果指定无效大小，将使用系统选择的数值。 此选项仅在启用隐身模式的「*保护免受 DPI 影响*」选项时被应用。
 
 ### 普通 HTTP 请求片段大小
 
 调整 HTTP 请求片段大小。 此选项仅影响普通 HTTP 流量。 开启该选项后，AdGuard 会将初始数据包分成两部分：第一部分是指定的长度，第二部分是指定的长度，直到原始数据包的长度。
 
-可接受的值位于范围：1 – 1500。 如果指定无效大小，将使用系统选择的数值。 此选项仅在启用隐身模式的「*保护免受 DPI 影响*」选项时被应用。
+Valid values: 1–1500. 如果指定无效大小，将使用系统选择的数值。 此选项仅在启用隐身模式的「*保护免受 DPI 影响*」选项时被应用。
 
 ### 显示 QUIC
 
@@ -129,7 +133,7 @@ Host:example.org`
 
 ### TCP 保活超时
 
-用户可以指定时间（以秒为单位），然后向没有响应的对等发送另一个 keepalive 探测。 如果指定 0，使用系统选择的数值。
+Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. 如果指定 0，使用系统选择的数值。
 
 请注意，此设置仅在启用*「启用 TCP 保活」*选项时有效。
 
@@ -147,11 +151,11 @@ Host:example.org`
 
 ### 使用备用 DNS 上游
 
-如果用户启用此选项，在所选上游的 DNS 请求发送失败的情况下，正常查询将被重定向到后备上游。
+Normal queries will be redirected to the fallback upstream if all DNS requests to the selected upstreams fail.
 
 ### 并行查询 DNS 上游
 
-启用后，将并行查询所有上游，并返回第一个成功的响应。 由于 DNS 查询以并行方式处理，因此启用此功能可以提高上网速度。
+All upstreams will be queried in parallel and the first response is returned. 由于 DNS 查询以并行方式处理，因此启用此功能可以提高上网速度。
 
 ### 始终响应故障的 DNS 查询
 
@@ -159,7 +163,7 @@ Host:example.org`
 
 ### 启用安全 DNS 请求的过滤
 
-启用后，AdGuard 除了无加密的 DNS 请求外，将安全 DNS 请求也重定向到本地 DNS 代理。
+AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to plain DNS requests.
 
 ### host 规则的拦截模式
 
@@ -213,4 +217,4 @@ Bootstrap 是一个中间 DNS 服务器，用于获取用户在「*DNS 保护*�
 
 ### 从 DNS 过滤中排除指定的 Wi-Fi 网络名称（SSID）
 
-DNS 保护将不会为列出的 Wi-Fi 网络启用. 每行指定一个 Wi-Fi 网络名称（SSID）。 如果一个特定的 Wi-Fi 网络已经被 AdGuard Home 或其他 DNS 保护系统保护，此功能很实用。 在这种情况下，再次过滤 DNS 请求是多余的。
+DNS protection will not include Wi-Fi networks listed in this section. 每行指定一个 Wi-Fi 网络名称（SSID）。 如果一个特定的 Wi-Fi 网络已经被 AdGuard Home 或其他 DNS 保护系统保护，此功能很实用。 在这种情况下，再次过滤 DNS 请求是多余的。

@@ -16,7 +16,11 @@ Você pode nos ajudar preenchendo um formulário de inscrição com exemplos de 
 
 ## Reportar um site {#report}
 
-> **Nota**: Quando você envia uma reclamação pelo aplicativo ou pelo AdGuard Browser Assistant, todas as informações são preenchidas automaticamente. Com exceção das capturas de tela, você mesmo terá que criá-las e anexá-las. Se você estiver usando um link direto [](https://reports.adguard.com/new_issue.html), precisará inserir os dados manualmente.
+:::note
+
+When you send a complaint via the app or via AdGuard Browser Assistant, all information is pre-filled automatically. Com exceção das capturas de tela, você mesmo terá que criá-las e anexá-las. Se você estiver usando um link direto [](https://reports.adguard.com/new_issue.html), precisará inserir os dados manualmente.
+
+:::
 
 Para denunciar a reinserção de um anúncio ou exibição incorreta de um site, você precisa:
 
@@ -68,7 +72,11 @@ Para denunciar a reinserção de um anúncio ou exibição incorreta de um site,
 
 ## Preenchendo o formulário {#form}
 
-> **Nota**: Quando você envia uma reclamação pelo aplicativo ou pelo AdGuard Assistant, todas as informações são preenchidas automaticamente. Com exceção das capturas de tela, você mesmo terá que criá-las e anexá-las. Se você estiver usando um link direto [](https://reports.adguard.com/en/new_issue.html), precisará inserir os dados manualmente.
+:::note
+
+When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. Com exceção das capturas de tela, você mesmo terá que criá-las e anexá-las. Se você estiver usando um link direto [](https://reports.adguard.com/en/new_issue.html), precisará inserir os dados manualmente.
+
+:::
 
 1. O preenchimento do formulário começa com o detalhamento do tipo e versão de um produto;
 

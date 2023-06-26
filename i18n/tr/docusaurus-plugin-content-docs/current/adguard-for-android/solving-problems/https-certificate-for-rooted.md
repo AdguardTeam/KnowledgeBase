@@ -3,7 +3,7 @@ title: Moving CA certificate to System store on rooted devices
 sidebar_position: 13
 ---
 
-:::note
+:::info
 
 Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Android için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
 

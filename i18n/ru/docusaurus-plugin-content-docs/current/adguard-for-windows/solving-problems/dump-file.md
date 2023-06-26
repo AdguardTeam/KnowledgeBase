@@ -3,7 +3,7 @@ title: Как создать файл дампа
 sidebar_position: 8
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -24,7 +24,11 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 После создания файла дампа перейдите к его расположению. Вам будет предложено открыть папку, содержащую файл дампа, сразу после его создания. В противном случае вы сможете найти его в папке **%tmp%**. Созданный файл дампа (`.DMP`) имеет то же название, что и процесс, который вы выбрали в предыдущих пунктах. Файл довольно большой, поэтому перед отправкой в поддержку сожмите его в архив.
 
-> Обратите внимание, что AdGuard для Windows имеет два запущенных процесса (`Adguard.exe` и `AdguardSvc.exe`). Поэтому вам нужно создать файл дампа отдельно для каждого процесса.
+:::note
+
+AdGuard for Windows has two running processes (`Adguard.exe` and `AdguardSvc.exe`). Поэтому вам нужно создать файл дампа отдельно для каждого процесса.
+
+:::
 
 ![Процессы AdGuard](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/processes_en.png)
 

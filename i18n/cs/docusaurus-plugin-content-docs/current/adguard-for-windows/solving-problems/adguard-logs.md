@@ -3,7 +3,7 @@ title: Jak shromažďovat a záznamy AdGuardu
 sidebar_position: 3
 ---
 
-:::note
+:::info
 
 Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 
@@ -17,13 +17,13 @@ K analýze a diagnostice různých problémů, které mohou potenciálně nastat
 
 2. Znovu reprodukujte problém.
 
-- Důrazně doporučujeme zaznamenat přesný čas, kdy jste problém reprodukovali: pomůže to našemu týmu podpory najít příslušné záznamy v záznamu a rychleji vyřešit problém.
+Důrazně doporučujeme zaznamenat přesný čas, kdy jste problém reprodukovali: pomůže to našemu týmu podpory najít příslušné záznamy v záznamu a rychleji vyřešit problém.
 
 3. Exportujte záznamy pomocí tlačítka *Exportovat protokoly*.
 
 ![Export logs *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
-- Archiv uložte do libovolné složky.
+Archiv uložte do libovolné složky.
 
 4. **Důležité**: po exportu záznamů nastavte úroveň záznamu zpět na *Výchozí*. Úroveň *Ladění* zpomalí aplikaci.
 
@@ -45,18 +45,12 @@ Nenechávejte službu spuštěnou:
 
 3. Spusťte aplikaci pomocí příkazu `C:\"Program Files (x86)"\Adguard\Adguard.exe /trace`, pokud používáte 64bitový systém Windows, nebo `C:\"Program Files"\Adguard\Adguard.exe /trace` v případě, že používáte 32bitový.
 
-4. Vyberte úroveň záznamu *Ladění*.
+4. Znovu reprodukujte problém.
 
-![Debug *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
+Důrazně doporučujeme zaznamenat přesný čas, kdy jste problém reprodukovali: pomůže to našemu týmu podpory najít příslušné záznamy v záznamu a rychleji vyřešit problém.
 
-5. Znovu reprodukujte problém.
-
-- Důrazně doporučujeme zaznamenat přesný čas, kdy jste problém reprodukovali: pomůže to našemu týmu podpory najít příslušné záznamy v záznamu a rychleji vyřešit problém.
-
-6. Exportujte záznamy pomocí tlačítka *Exportovat protokoly*.
+5. Exportujte záznamy pomocí tlačítka *Exportovat protokoly*.
 
 ![Export logs *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
-
-7. **Důležité**: po exportu záznamů nastavte úroveň záznamu zpět na *Výchozí*. Úroveň *Ladění* zpomalí aplikaci.
 
 Nedělejte si starosti, pokud je soubor záznamu velký. Abychom mohli váš problém vyřešit, potřebujeme znát co nejvíce podrobností.

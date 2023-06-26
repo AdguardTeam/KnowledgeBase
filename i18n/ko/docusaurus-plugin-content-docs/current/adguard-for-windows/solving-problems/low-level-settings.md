@@ -3,7 +3,7 @@ title: 고급(로우 레벨) 설정 가이드
 sidebar_position: 7
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -11,7 +11,11 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 이전에는 로우 레벨 설정으로 알려진 고급 설정에는 대부분 평균적인 사용자 역량을 넘어서는 옵션이 포함되어 있으며 일상적인 사용에는 적용되지 않습니다. Windows용 AdGuard는 이러한 기능을 변경할 필요 없이 작동하도록 설계되었지만, 일부 특수한 경우나 흔하지 않은 문제를 해결할 때 추가 기능을 제공할 수 있습니다.
 
-> *고급 설정*을 무심코 변경하면 AdGuard의 성능에 문제가 발생하거나 인터넷 연결이 끊어지거나 보안 및 개인정보가 손상될 수 있습니다. 이러한 설정은 본인이 무엇을 하고 있는지 알고 있거나 지원팀에서 요청하는 경우에만 변경하세요.
+:::caution
+
+*고급 설정*을 무심코 변경하면 AdGuard의 성능에 문제가 발생하거나 인터넷 연결이 끊어지거나 보안 및 개인정보가 손상될 수 있습니다. 이러한 설정은 본인이 무엇을 하고 있는지 알고 있거나 지원팀에서 요청하는 경우에만 변경하세요.
+
+:::
 
 ## 고급 설정으로 이동하는 방법
 
@@ -27,11 +31,11 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 ### Encrypted ClientHello 사용
 
-모든 암호화된 인터넷 연결에는 암호화되지 않은 부분이 있습니다. 이것은 연결하려는 서버의 이름이 포함된 첫 번째 패킷입니다. Encrypted Client Hello 기술은 이 문제를 해결하고 암호화되지 않은 마지막 비트의 정보를 암호화합니다. 이 기능을 사용하려면 *Encrypted ClientHello 사용* 옵션을 활성화하세요. 로컬 DNS 프록시를 사용하여 도메인에 대한 ECH 구성을 찾습니다. ECH 구성이 발견되면 ClientHello 패킷이 암호화됩니다.
+모든 암호화된 인터넷 연결에는 암호화되지 않은 부분이 있습니다. 이것은 연결하려는 서버의 이름이 포함된 첫 번째 패킷입니다. Encrypted Client Hello 기술은 이 문제를 해결하고 암호화되지 않은 마지막 비트의 정보를 암호화합니다. 이 기능을 사용하려면 *Encrypted ClientHello 사용* 옵션을 활성화하세요. It uses a local DNS proxy to look for the ECH configuration for the domain. ECH 구성이 발견되면 ClientHello 패킷이 암호화됩니다.
 
 ### 웹사이트의 인증서 투명성 확인
 
-Chrome 인증서 투명성 정책에 따라 도메인의 모든 인증서를 확인합니다. 인증서가 Chrome 인증서 투명성 정책을 준수하지 않는 경우, AdGuard는 웹사이트를 필터링하지 않습니다. 반면에 Chrome은 이 사이트를 차단합니다.
+Chrome 인증서 투명성 정책에 따라 도메인의 모든 인증서를 확인합니다. If the certificate does not comply with the Chrome Certificate Transparency Policy, AdGuard will not filter the website. 반면에 Chrome은 이 사이트를 차단합니다.
 
 ### SSL/TLS 인증서 해지 확인 활성화
 
@@ -71,7 +75,7 @@ AdGuard가 필터 구독 URL(예: `abp:subscribe` 등)을 자동으로 가로채
 
 7.12 버전부터 시스템 시작 시 AdGard 실행 옵션이 비활성화되어 있는 경우, 기본적으로 AdGard 서비스는 OS 시작 후 트래픽을 필터링하지 않습니다. 즉, AdGuard의 서비스는 '유휴' 모드에서 시작됩니다. 이 옵션을 활성화하면 앱이 실행되지 않은 상태에서도 AdGuard가 트래픽을 필터링하도록 설정할 수 있습니다.
 
-*7.12 버전 이전에는 **시스템 시작 시 AdGard 실행** 기능이 비활성화되어 있어도 기본적으로 필터링 모드에서 AdGard 서비스가 시작되었습니다. 애플리케이션의 이전 동작에 만족했다면 이 옵션을 활성화하세요.*
+*Note that before v7.12 the AdGuard's service started in filtering mode by default (even if the *Launch AdGuard at system start-up* was disabled). If you were satisfied with the old behavior, enable this option.*
 
 ### 로컬 호스트 필터링
 
@@ -95,23 +99,23 @@ Host: example.org 요청은`
 다음과 같이 변환됩니다.
 
 `GET  /foo/bar/ HTTP/1.1
-Host:example.org`
+Host: example.org`
 
 이 설정은 스텔스 모드에서 *DP로부터 보호* 옵션이 활성화된 경우에만 적용됩니다.
 
 ### 초기 TLS 패킷의 조각화 크기 조정
 
-심층 패킷 검사를 피하기 위해 TCP 패킷 조각화의 크기를 지정합니다. 이 옵션은 보안 HTTPS 트래픽에만 영향을 줍니다.
+심층 패킷 검사를 피하기 위해 TCP 패킷 조각화의 크기를 지정합니다. This option only affects secured (HTTPS) traffic.
 
 이 옵션을 활성화하면 AdGuard는 초기 TLS 패킷(ClientHello 패킷)을 두 부분으로 분할합니다. 첫 번째 부분은 지정된 길이를 가지며 두 번째 부분은 나머지 길이(전체 초기 TLS 패킷의 길이까지)를 가집니다.
 
-허용되는 값은 1~1500입니다. 잘못된 크기를 지정하면 시스템에서 선택한 값이 사용됩니다. 이 설정은 스텔스 모드에서 *DP로부터 보호* 옵션이 활성화된 경우에만 적용됩니다.
+Valid values: 1–1500. 잘못된 크기를 지정하면 시스템에서 선택한 값이 사용됩니다. 이 설정은 스텔스 모드에서 *DP로부터 보호* 옵션이 활성화된 경우에만 적용됩니다.
 
 ### 일반 HTTP 조각 크기
 
 HTTP 요청 조각화의 크기를 조정합니다. 이 옵션은 일반 HTTP 트래픽에만 영향을 줍니다. 이 옵션을 활성화하면 AdGuard는 초기 패킷을 두 부분으로 분할하여 첫 번째 패킷은 지정된 길이로, 두 번째 패킷은 전체 원본 패킷의 길이까지 나머지 부분을 차지합니다.
 
-허용되는 값은 1~1500입니다. 잘못된 크기를 지정하면 시스템에서 선택한 값이 사용됩니다. 이 설정은 스텔스 모드에서 *DP로부터 보호* 옵션이 활성화된 경우에만 적용됩니다.
+Valid values: 1–1500. 잘못된 크기를 지정하면 시스템에서 선택한 값이 사용됩니다. 이 설정은 스텔스 모드에서 *DP로부터 보호* 옵션이 활성화된 경우에만 적용됩니다.
 
 ### QUIC 보기
 
@@ -129,7 +133,7 @@ HTTP 요청 조각화의 크기를 조정합니다. 이 옵션은 일반 HTTP �
 
 ### TCP 연결 유지 시간 초과
 
-응답하지 않는 피어에게 다른 킵얼라이브 프로브를 보내기 전에 시간을 초 단위로 지정할 수 있습니다. 0을 지정하면 시스템에서 선택한 값이 사용됩니다.
+Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. 0을 지정하면 시스템에서 선택한 값이 사용됩니다.
 
 이 설정은 *TCP 연결 유지 사용* 옵션이 활성화된 경우에만 작동합니다.
 
@@ -147,11 +151,11 @@ HTTP 요청 조각화의 크기를 조정합니다. 이 옵션은 일반 HTTP �
 
 ### 폴백 DNS 업스트림 사용
 
-이 옵션을 활성화하면 선택한 업스트림에 대한 모든 DNS 요청이 실패할 경우, 일반 쿼리가 폴백 업스트림으로 리디렉션됩니다.
+Normal queries will be redirected to the fallback upstream if all DNS requests to the selected upstreams fail.
 
 ### DNS 업스트림 쿼리를 병렬로 수행
 
-활성화되면 모든 업스트림이 병렬로 쿼리되고 첫 번째 성공적인 응답이 반환됩니다. DNS 쿼리는 병렬로 이루어지므로 이 기능을 활성화하면 인터넷 속도가 빨라집니다.
+All upstreams will be queried in parallel and the first response is returned. DNS 쿼리는 병렬로 이루어지므로 이 기능을 활성화하면 인터넷 속도가 빨라집니다.
 
 ### 실패한 DNS 쿼리에 항상 응답
 
@@ -159,7 +163,7 @@ HTTP 요청 조각화의 크기를 조정합니다. 이 옵션은 일반 HTTP �
 
 ### 보안 DNS 요청 필터링 사용
 
-이 옵션을 활성화하면 AdGuard는 일반 DNS 요청 외에도 보안 DNS 요청을 로컬 DNS 프록시로 리디렉션합니다.
+AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to plain DNS requests.
 
 ### 호스트 규칙에 대한 차단 모드
 
@@ -213,4 +217,4 @@ AdGuard가 사용자 정의 폴백 서버를 사용하도록 하려면 이 섹�
 
 ### 지정된 Wi-Fi 네트워크 이름(SSID)을 DNS 필터링하지 않기
 
-이 섹션에 나열된 Wi-Fi 네트워크에서는 DNS 보호 기능이 작동하지 않습니다. Wi-Fi 네트워크 이름(SSID)을 한 줄에 하나씩 지정합니다. 특정 Wi-Fi 네트워크가 이미 AdGuard Home 또는 다른 DNS 보호 시스템에 의해 보호되고 있는 경우 유용할 수 있습니다. 이 경우 DNS 요청을 다시 필터링할 필요가 없습니다.
+DNS protection will not include Wi-Fi networks listed in this section. Wi-Fi 네트워크 이름(SSID)을 한 줄에 하나씩 지정합니다. 특정 Wi-Fi 네트워크가 이미 AdGuard Home 또는 다른 DNS 보호 시스템에 의해 보호되고 있는 경우 유용할 수 있습니다. 이 경우 DNS 요청을 다시 필터링할 필요가 없습니다.

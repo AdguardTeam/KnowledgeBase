@@ -3,7 +3,7 @@ title: Jak získat soubory HAR
 sidebar_position: 5
 ---
 
-:::note
+:::info
 
 Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 
@@ -24,7 +24,11 @@ Někdy musíme analyzovat, abychom zablokovali konkrétní reklamy, které je z 
 
 **Zašlete prosím soubor se záznamy (které jste získali jako výsledek) službě podpory AdGuardu.**
 
-> Poznámka: Náš tým podpory zpracuje vaši žádost mnohem rychleji, pokud ve zprávě uvedete číslo HelpDesk nebo číslo problému GitHub.
+:::note
+
+Náš tým podpory zpracuje vaši žádost mnohem rychleji, pokud ve zprávě uvedete číslo HelpDesk nebo číslo problému GitHub.
+
+:::
 
 ## Jak analyzovat soubory HAR
 Zde je několik zdrojů, které můžeme doporučit k analýze souborů HAR:

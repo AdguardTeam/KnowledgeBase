@@ -3,7 +3,7 @@ title: 제한 모드 상태에서 프로필 사용으로 인한 문제
 sidebar_position: 10
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -17,7 +17,11 @@ Android 7 이상 운영 체제를 실행하는 휴대폰, 태블릿 또는 TV �
 
 ### 옵션 1: ADB를 사용하여 AdGuard에 권한 부여
 
-> **AdGuard v3.5 Nightly 6** 또는 최신 버전이 있는 경우 이 방법을 사용할 수 있습니다. 이전 버전을 사용하면 [여기](https://adguard.com/adguard-android/overview.html)에서 Nightly 버전 다운로드가 가능합니다.
+:::note
+
+This approach is available starting from **AdGuard v3.5 nightly 6**. 이전 버전을 사용하면 [여기](https://adguard.com/adguard-android/overview.html)에서 Nightly 버전 다운로드가 가능합니다.
+
+:::
 
 1. **개발자 모드** 및 **USB 디버깅**을 활성화합니다.
 - Open the **Settings** app phone;
@@ -25,10 +29,13 @@ Android 7 이상 운영 체제를 실행하는 휴대폰, 태블릿 또는 TV �
 - Tap the **Build number** line 7 times. 그 후에 **개발자 모드를 켰습니다**라는 알림을 받게 됩니다. 필요한 경우 기기의 잠금 해제 코드를 입력하세요.
 - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
 
-> 어려움이나 추가 질문이있는 경우 [여기](https://developer.android.com/studio/debug/dev-options)에서 자세한 지침을 확인할 수 있습니다.
+:::note
 
-2. adb를 [설치하고 구성합니다.](https://www.xda-developers.com/install-adb-windows-macos-linux/)
-> Windows 플랫폼을 사용하는 경우, adb를 설치하고 구성합니다. **삼성 기기**를 사용하는 경우, [이 드라이버](https://developer.samsung.com/mobile/android-usb-driver.html)를 설치해야 합니다.
+어려움이나 추가 질문이있는 경우 [여기](https://developer.android.com/studio/debug/dev-options)에서 자세한 지침을 확인할 수 있습니다.
+
+:::
+
+2. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
 3. **USB 케이블**을 사용하여 **ADB**를 설치한 컴퓨터 또는 노트북에 기기를 연결합니다.
 4. PC에서 **명령줄**을 엽니다.
 - **Windows**를 사용하는 경우 **cmd.exe**
@@ -38,8 +45,11 @@ Android 7 이상 운영 체제를 실행하는 휴대폰, 태블릿 또는 TV �
 ### 옵션 2: 제한된 사용자 계정 삭제
 
 Android 기기에서 사용자 계정을 관리하는 방법은 [여기](https://support.google.com/a/answer/6223444?hl=en)에서 확인할 수 있습니다.
+> :::note
 
-> 삼성 또는 LG 기기에서 듀얼 메신저 또는 듀얼 앱 기능을 사용하면 제한된 사용자 계정이 암묵적으로 생성되어 삭제할 수 없습니다. 이러한 경우 문제를 해결하는 방법은 아래에서 확인할 수 있습니다.
+In some cases restricted user accounts are created implicitly and cannot be removed. 제한된 사용자 계정이 암묵적으로 생성되어 삭제할 수 없습니다. 이러한 경우 문제를 해결하는 방법은 아래에서 확인할 수 있습니다.
+
+:::
 
 ### 옵션 3: 로컬 HTTP 프록시 모드에서 AdGuard 사용 (루트 필요)
 

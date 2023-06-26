@@ -3,7 +3,7 @@ title: Logcat 로그 수집 방법
 sidebar_position: 4
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -32,7 +32,11 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 5. 이 로그를 지원 팀에 보냅니다.
 
-> 참고: 메시지에 헬프 데스크 티켓 번호 또는 GitHub 문제 번호를 첨부하면 지원팀이 티켓을 더 빠르게 처리할 수 있습니다.
+:::note
+
+Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+
+:::
 
 ## 추가 지침(Android 구 버전용)
 
@@ -67,7 +71,7 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 3. 콘솔에서 이 명령을 실행합니다(설치 후 열림):
 
-> adb logcat -v threadtime -d> C:\logcat.txt
+adb logcat -v threadtime -d> C:\logcat.txt
 
 지원 팀에 문의하거나 다른 방법으로 이 로그를 보내 주세요.
 
@@ -83,4 +87,8 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 5. 이 로그를 지원 팀에 보냅니다.
 
-> 참고: 메시지에 헬프 데스크 티켓 번호 또는 GitHub 문제 번호를 첨부하면 지원팀이 티켓을 더 빠르게 처리할 수 있습니다.
+:::note
+
+Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+
+:::

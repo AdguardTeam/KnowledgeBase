@@ -20,12 +20,12 @@ Podívejme se na tento obrázek. Zde vidíte skupiny číslovek, které určují
 
 ![Polish](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
-Pro lepší pochopení si udělejme malou paralelu mezi angličtinou a polštinou: 
+Pro lepší pochopení si udělejme malou paralelu mezi angličtinou a polštinou:
 
       Anglická verze:                                                 Polské ekvivalenty:
     
-      1. forma - It takes one hour.                                     1. forma - Zajmuje to godzinę. 
-      2. forma - It takes two hours.                                    2. forma - Zajmuje to dwie godziny. 
+      1. forma - It takes one hour.                                     1. forma - Zajmuje to godzinę.
+      2. forma - It takes two hours.                                    2. forma - Zajmuje to dwie godziny.
       3. forma - It takes five hours.                                   3. forma - Zajmuje to pięć godzin.
 
 Nyní je zřejmé, že polské slovo *"godzinę"* (hodina) má tři různé podoby, zatímco anglické slovo mění svůj tvar s danými číslovkami pouze dvakrát.
@@ -147,7 +147,7 @@ A ještě jednou: pokud narazíte na originální frázi se dvěma důležitými
 
 + Řiďte se pravidlem množného čísla jazyka, do kterého překládáte;
 
-> Počet vašich šablon by měl odpovídat počtu tvarů množného čísla, které váš jazyk obsahuje, a to i v případech, kdy některá slova mají sama o sobě méně tvarů. Dva tvary množného čísla – dvě šablony v překladu; pět tvarů množného čísla – pět šablon atd.
+Počet vašich šablon by měl odpovídat počtu tvarů množného čísla, které váš jazyk obsahuje, a to i v případech, kdy některá slova mají sama o sobě méně tvarů. Dva tvary množného čísla – dvě šablony v překladu; pět tvarů množného čísla – pět šablon atd.
 
 + Nezapomeňte mezi šablonami použít svislou čáru, jak je znázorněno v původních řetězcích;
 

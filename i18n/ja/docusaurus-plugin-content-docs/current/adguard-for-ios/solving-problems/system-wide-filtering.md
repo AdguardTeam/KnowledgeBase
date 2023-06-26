@@ -3,7 +3,7 @@ title: iOS版AdGuardでSafari外の広告ブロックを設定する方法（シ
 sidebar_position: 2
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -40,12 +40,16 @@ AdGuardを使ってシステムワイドブロックを行うには2つの方法
 
 ![詳細設定画面 *mobile_border](https://cdn.adguard.com/public/Adguard/Blog/ios_advanced_settings_ja.PNG)
 
-> ※「*詳細設定*」タブにある設定をそのままオンにすることはお勧めできません（特に「*ローレベル設定*」）。 中には、インターネット接続が切断されたり、プライバシーやセキュリティが損なわれたりするものもありますので、注意が必要です。 　
+:::note
+
+We don't recommend touching other settings you'll find inside the *Advanced settings* tab, especially when it comes to *Low-level settings*. 中には、インターネット接続が切断されたり、プライバシーやセキュリティが損なわれたりするものもありますので、注意が必要です。 　
+
+:::
 
 3. このリンクをコピーする: `https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt` （AdGuard DNSフィルタのリンクです）
 4. AdGuardアプリ → *設定⚙* → *DNS通信を保護* → *DNSフィルタリング* (この項目は表示させるには、「*高度な設定*」モードがオンになっている必要があります) → *DNSフィルタ*
-5. 「*フィルタを追加する*」→フィルタのURL欄に「3.」でコピーしたリンクを貼り付ける→次へ
+5. Tap *Add a filter*, paste the link into the filter URL field, and yap 'Next'.
 
 ![DNSフィルタ追加画面 *mobile_border](https://cdn.adguard.com/public/Adguard/Blog/ios_adding_a_filter_ja.PNG)
 
-> 完了です。ステップ3で別のURLをコピーして貼り付けることで、同じように他のDNSフィルターをいくつでも追加できます。 様々なフィルターやそのリンクは[こちら](https://filterlists.com)で確認することができます。
+完了です。ステップ3で別のURLをコピーして貼り付けることで、同じように他のDNSフィルターをいくつでも追加できます。 様々なフィルターやそのリンクは[こちら](https://filterlists.com)で確認することができます。

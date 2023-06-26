@@ -19,17 +19,17 @@ sidebar_position: 3
 
 Справочная информация:
 
-> В предыдущих версиях Браузерного расширения AdGuard (до версии 3.5), если оно было установлено вместе с AdGuard для Windows, расширение брало на себя функции Помощника, прекращало фильтровать самостоятельно и полагалось на приложение.
+In previous versions of the AdGuard Browser Extension (before v3.5), if you had it installed along with the AdGuard for Windows app, the extension took over the functions of Assistant, stopped filtering itself and relied on the app to do this.
 
-> Расширение и приложение работали вместе, но иногда интеграция давала сбой. Приложение прекращало фильтровать некоторые сайты, вместо него это делало расширение, обладающее заметно меньшими возможностями.
+The extension and the app worked in conjunction but sometimes the integration would fail. Some websites would stop being protected by the desktop program and be backed up only by the less powerful extension.
 
-При использовании Браузерного помощника все эти проблемы не имеют значения, поскольку конфликтов по сути быть не может. Роль Браузерного помощника чётко определена, и он не может помешать работе основного приложения, так что не о чем беспокоиться.
+When using the Browser Assistant, all these problems don’t matter as there can be no conflicts in essence. The role of the Browser Assistant is well-defined and it can’t hinder the functioning of the main app, so there is no need to worry.
 
 ## Отдельная вкладка в настройках
 
-У нового Браузерного помощника есть своя вкладка в настройках AdGuard для Windows, наряду с Антитрекингом, Антифишингом, Родительским контролем и другими. Там вы найдёте ссылку для загрузки расширения для вашего браузера по умолчанию. Кроме того, там можно установить флажок для включения прежней версии Помощника.
+The new Browser Assistant has its own tab in AdGuard for Windows settings, along with Stealth Mode, Browsing Security, Parental Control and others. There you will find a link to download the extension for your default browser. Кроме того, там можно установить флажок для включения прежней версии Помощника.
 
-![Настройки *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
+![Settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 
 ## Предыдущая версия Помощника
 
@@ -37,6 +37,6 @@ sidebar_position: 3
 
 ## Как установить Браузерный помощник AdGuard
 
-Если вы хотите установить Браузерный Помощник для своего браузера по умолчанию, вы можете сделать это прямо из настроек приложения. Однако у вас также есть возможность установить его для других браузеров.
+If you want to install the Browser Assistant for your default browser, you can do it directly from the app settings, but you also have an opportunity to install it for other browsers.
 
-Браузерный помощник AdGuard доступен для всех популярных браузеров: Chrome, Firefox, Edge, Opera и Яндекс. Чтобы установить Помощник для нужного браузера (или несколько, это не запрещено, а даже приветствуется), перейдите на [наш сайт](https://adguard.com/ru/adguard-assistant/overview.html), кликните на иконку браузера и нажмите кнопку *«Скачать»*. Вот и всё!
+AdGuard Browser Assistant is available for all popular browsers: Chrome, Firefox, Edge, Opera, and Yandex. To install the one you need (or many, it is not prohibited but even encouraged), go to [our website](https://adguard.com/en/adguard-assistant/overview.html), click the browser icon and tap the *Install* button. Вот и всё!

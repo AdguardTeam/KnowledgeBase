@@ -3,7 +3,7 @@ title: How to configure system-wide filtering with AdGuard for iOS
 sidebar_position: 2
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -40,12 +40,16 @@ You can add any DNS filter or hosts file, the instruction will be the same for a
 
 ![Advanced settings screen *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_advanced_settings.PNG)
 
-> Note: We don't recommend touching other settings you'll find inside the *Advanced settings* tab, especially when it comes to *Low-level settings*. Some of them might break the Internet connection or compromise your privacy and security, so it's better to be careful. The text below describes the exact actions required to add AdGuard DNS filter.
+:::note
+
+We don't recommend touching other settings you'll find inside the *Advanced settings* tab, especially when it comes to *Low-level settings*. Some of them might break the Internet connection or compromise your privacy and security, so it's better to be careful. The text below describes the exact actions required to add AdGuard DNS filter.
+
+:::
 
 3. Copy this link: `https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt` (it's a link for AdGuard DNS filter)
 4. Open *AdGuard for iOS settings* → *DNS protection* → *DNS filtering* (available while *Advanced mode* is enabled) → *DNS filters*.
-5. Click *Add a filter*, paste the link into the filter URL field, and click 'Next'.
+5. Tap *Add a filter*, paste the link into the filter URL field, and yap 'Next'.
 
 ![Adding a DNS filter screen *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_adding_a_filter.PNG)
 
-> Add any number of other DNS filters the same way by pasting a different URL at step 3. You can find various filters and links to them [here](https://filterlists.com).
+Add any number of other DNS filters the same way by pasting a different URL at step 3. You can find various filters and links to them [here](https://filterlists.com).

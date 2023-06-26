@@ -74,5 +74,9 @@
   "sidebar.tutorialSidebar.category.Technical support": {
     "message": "技术支持",
     "description": "The label for category Technical support in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.AdGuard Browser Extension": {
+    "message": "AdGuard 浏览器扩展",
+    "description": "The label for category AdGuard Browser Extension in sidebar tutorialSidebar"
   }
 }

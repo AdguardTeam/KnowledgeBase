@@ -19,9 +19,9 @@ Pokud jste si zvykli používat naše předchozí rozšíření pro blokování 
 
 Základní informace:
 
-> V předchozích verzích Rozšíření prohlížeče AdGuard (před verzí 3.5), pokud jste je měli nainstalované spolu s aplikací AdGuard pro Windows, převzalo rozšíření funkce Asistenta, přestalo filtrovat samo a spoléhalo se na aplikaci.
+V předchozích verzích Rozšíření prohlížeče AdGuard (před verzí 3.5), pokud jste je měli nainstalované spolu s aplikací AdGuard pro Windows, převzalo rozšíření funkce Asistenta, přestalo filtrovat samo a spoléhalo se na aplikaci.
 
-> Rozšíření a aplikace fungovaly společně, ale někdy integrace selhala. Některé webové stránky by přestaly být chráněny programem pro stolní počítače a byly by zálohovány pouze méně výkonným rozšířením.
+Rozšíření a aplikace fungovaly společně, ale někdy integrace selhala. Některé webové stránky by přestaly být chráněny programem pro stolní počítače a byly by zálohovány pouze méně výkonným rozšířením.
 
 Při použití Asistenta prohlížeče všechny tyto problémy nevadí, protože v podstatě nemůže dojít k žádným konfliktům. Úloha Asistenta prohlížeče je dobře definovaná a nemůže bránit fungování hlavní aplikace, takže se nemusíte obávat.
 

@@ -3,7 +3,7 @@ title: How to create a dump file
 sidebar_position: 8
 ---
 
-:::note
+:::info
 
 Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -24,7 +24,11 @@ To diagnose the reasons for potential problems that users might encounter while 
 
 After you’ve created the dump file, please navigate to the file location. You should be prompted to open the folder containing the dump file right after its creation. Otherwise, you will be able to find it inside the **%tmp%** folder. The created dump file (`.DMP`) has the same name as the name of the process you chose in the previous steps. The file is quite large, so please compress it into an archive before sending to support.
 
-> Please note, AdGuard for Windows has two running processes (`Adguard.exe` and `AdguardSvc.exe`). So you need to create the dump file separately for each process.
+:::note
+
+AdGuard for Windows has two running processes (`Adguard.exe` and `AdguardSvc.exe`). So you need to create the dump file separately for each process.
+
+:::
 
 ![AdGuard processes](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/processes_en.png)
 

@@ -5,7 +5,11 @@ sidebar_position: 2
 
 데스크톱 AdGuard 앱(Windows용 AdGuard 및 Mac용 AdGuard)을 프록시로 사용할 수 있습니다. 즉, 다른 디바이스의 트래픽(전체 또는 특정 앱/브라우저의 트래픽)을 AdGuard를 통해 라우팅할 수 있습니다.
 
-> 이러한 기기는 AdGuard가 설치된 PC 또는 Mac과 동일한 네트워크에 있어야 합니다.
+:::note
+
+These devices must be in the same network as the PC or Mac on which AdGuard is installed.
+
+:::
 
 HTTP 트래픽은 어떤 경우에도 필터링되지만, AdGard가 HTTPS 트래픽을 필터링할 수 있으려면 연결된 디바이스에 AdGard 인증서를 수동으로 설치해야 합니다.
 

@@ -3,7 +3,7 @@ title: Přesunutí certifikátu CA do systémového úložiště na zařízeníc
 sidebar_position: 13
 ---
 
-:::note
+:::info
 
 Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 

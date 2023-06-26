@@ -3,7 +3,7 @@ title: Funktionsübersicht
 sidebar_position: 1
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -82,7 +82,11 @@ Der Privatsphären-Modus enthält eine Vielzahl von Optionen, die eine flexible 
 
 Als nächstes haben wir das Sicherheitsfenster, in dem sich ein Modul befindet, das auch als Internetsicherheit bekannt ist. Es bietet Schutz vor bösartigen und Phishing-Websites.
 
-> Beachten Sie, dass AdGuard kein Antivirus ist, sondern ein völlig anderes Programm. Es zeigt Ihnen eine Warnung, wenn Sie im Begriff sind, auf eine infizierte Domain zu gehen, aber es kann Sie nicht daran hindern, etwas Verdächtiges herunterzuladen oder Ihnen helfen, mit bereits vorhandenen Viren fertig zu werden. Phishing ist ein weit verbreiteter Internetbetrug, der darauf abzielt, persönliche Daten (Passwörter, Bankkontodaten usw.) zu stehlen. Es wird mithilfe gefälschter Websites durchgeführt, die beliebte Websites oder echte Dienste wie Webshops oder soziale Netzwerke nachahmen. Viele Phishing-Websites haben URLs, die sich nur in wenigen Symbolen von den echten unterscheiden, um Sie abzuschrecken. Wenn ein Benutzer seine Daten auf einer solchen Website eingibt, landen sie definitiv in den falschen Händen.
+:::note
+
+AdGuard is not an antivirus, but an entirely different program. Es zeigt Ihnen eine Warnung, wenn Sie im Begriff sind, auf eine infizierte Domain zu gehen, aber es kann Sie nicht daran hindern, etwas Verdächtiges herunterzuladen oder Ihnen helfen, mit bereits vorhandenen Viren fertig zu werden. Phishing ist ein weit verbreiteter Internetbetrug, der darauf abzielt, persönliche Daten (Passwörter, Bankkontodaten usw.) zu stehlen. Es wird mithilfe gefälschter Websites durchgeführt, die beliebte Websites oder echte Dienste wie Webshops oder soziale Netzwerke nachahmen. Viele Phishing-Websites haben URLs, die sich nur in wenigen Symbolen von den echten unterscheiden, um Sie abzuschrecken. Wenn ein Benutzer seine Daten auf einer solchen Website eingibt, landen sie definitiv in den falschen Händen.
+
+:::
 
 Internetsicherheit bietet starken Schutz vor solchen Vorfällen. Gleichzeitig werden die persönlichen Daten des Nutzers nirgendwo übertragen, und die AdGuard-Server wissen nicht, welche Websites der Nutzer besucht, da die Sicherheitsprüfung nicht über die offene Webadresse (URL), sondern über Hash-Präfixe erfolgt (Hash ist eine bestimmte Datenstruktur, die jede zur Basis hinzugefügte Adresse eindeutig macht).
 
@@ -102,13 +106,17 @@ Bei der Erstinstallation von AdGuard (während des Einführungsprozesses) werden
 
 ## Erweiterungen
 
-![Erweiterungen](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Extensions.jpg)
+![Extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Extensions.jpg)
 
 Erweiterungen sind kleine Programme, die genau das tun, was ihr Name andeutet – sie erweitern die Funktionalität. Und AdGuard verwendet mehrere eigene Erweiterungen, auch Userscripts genannt, um seinen Funktionsumfang zu erweitern:
 
 **1. AdGuard Assistent** (Legacy-Version) Diese Erweiterung unterstützt den Benutzer beim Ändern grundlegender AdGuard-Einstellungen im Browser, ohne dass die App selbst geöffnet werden muss. Wie der Browser-Assistent funktioniert auch der Legacy-Assistent mit allen macOS-kompatiblen Browsern. Mit diesem kleinen Tool können Sie mehrere Dinge tun, ohne den Browser verlassen zu müssen: eine bestimmte Website auf die Liste der nicht blockierten Seiten setzen, ein besonders störendes Element auf der Seite auswählen und blockieren, die Website melden, wenn sie es trotzdem schafft, Werbung zu Ihnen durchzuschleusen.
 
-> Beachten Sie, dass es sich bei dieser Version des Assistenten um eine alte Version handelt, die auf neuen Systemen nicht mehr verwendet werden kann, da sie durch den vollwertigen Browser-Assistenten ersetzt wurde. Der ältere Assistent kann jedoch hilfreich sein, wenn es keine Browser-Assistent-Erweiterung für Ihren Browser gibt.
+:::note
+
+This version of Assistant is legacy and there is no point in using it on new systems, since it has been replaced with the full-fledged Browser Assistant. Der ältere Assistent kann jedoch hilfreich sein, wenn es keine Browser-Assistent-Erweiterung für Ihren Browser gibt.
+
+:::
 
 **2. AdGuard Extra** wird verwendet, um die komplizierteren Fälle von Werbeblockern zu lösen, denen Sie begegnen könnten. Wir empfehlen Ihnen, es immer eingeschaltet zu lassen, es sei denn, Sie haben einen schwerwiegenden Grund, dies nicht zu tun.
 

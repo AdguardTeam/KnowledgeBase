@@ -1,7 +1,7 @@
 ---
 title: Crowdinファイルの翻訳の優先順位
 sidebar_position: 5
---- 
+---
 
 Crowdinには、[AdGuard Applications](https://crowdin.com/project/adguard-applications), [AdGuard Websites](https://crowdin.com/project/adguard-websites), [AdGuard Ad Blocker Knowledge base](https://crowdin.com/project/adguard-knowledge-base), [AdGuard VPN Knowledge Base](https://crowdin.com/project/adguard-vpn-knowledge-base), [AdGuard DNS Knowledge Base](https://crowdin.com/project/adguard-knowledge-bases) という5つの主要なAdGuardプロジェクトがあります。
 
@@ -30,6 +30,6 @@ Crowdinには、[AdGuard Applications](https://crowdin.com/project/adguard-appli
 * `critical.resx`
 * `auth.resx`
 
-> これらのファイルに新しい文字列を追加したり、既存の文字列を更新したりするには、プロジェクトの翻訳者や校正者が特別な注意を払う必要があります。
+Adding new strings as well as updating existing ones in these files requires special attention from the project translators and proofreaders.
 
-Webサイトのほか、AdGuard Websitesプロジェクトには、 [ransactional emails](https://crowdin.com/project/adguard-websites/de#/emails) を翻訳するためのファイルも用意されています。 このファイルで新しく追加された文字列も、翻訳優先度が高いです。
+In addition to websites, there is a file for translating [transactional emails](https://crowdin.com/project/adguard-websites/de#/emails) in the AdGuard Websites project. Newly added strings in this file also have a high translation priority.

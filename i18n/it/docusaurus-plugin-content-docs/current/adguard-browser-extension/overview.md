@@ -3,23 +3,27 @@ title: Features overview
 sidebar_position: 1
 ---
 
-:::note
+:::info
 
-This article is about the AdGuard Browser extension, which safeguards only your browser. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+This article is about the AdGuard Browser Extension, which safeguards only your browser. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
 :::
 
 AdGuard provides a range of software products that block ads and trackers on different platforms. One of the most popular AdGuard products is a free extension that works in five popular browsers: Chrome, Firefox, Edge, Opera, and Yandex Browser. Browser extensions include basic ad-blocking features but cannot be compared with full-featured desktop programs, such as [AdGuard for Windows](/adguard-for-windows/overview) and [AdGuard for Mac](/adguard-for-mac/overview).
 
-![AdGuard Browser extension for Chrome *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
+![AdGuard Browser Extension for Chrome *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
 
 ## Availability {#br-extension}
 
-[AdGuard Browser extension](https://adguard.com/en/adguard-browser-extension/overview.html) is available for most major browsers. You can easily find it in your browser’s online store or on our official website.
+[AdGuard Browser Extension](https://adguard.com/en/adguard-browser-extension/overview.html) is available for most major browsers. You can easily find it in your browser’s online store or on our official website.
 
 ![Available for most popular browsers *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
 
-> We have a standalone extension for Safari. Since the release of [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html), most of the ad-blocking extensions have experienced huge issues and many of them stopped functioning. We had to develop a [separate extension for Safari](/adguard-for-safari/overview) that has some differences in comparison with the extension described in this article.
+:::note
+
+We have a standalone extension for Safari. Since the release of [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html), most of the ad-blocking extensions have experienced huge issues and many of them stopped functioning. We had to develop a [separate extension for Safari](/adguard-for-safari/overview) that has some differences in comparison with the extension described in this article.
+
+:::
 
 **Do not forget that the functionality of each extension is strictly limited by the browser’s capabilities.** So if you want to get full-fledged protection, consider installing a standalone program for your computer. There's [a reason why](#comparison).
 
@@ -83,11 +87,15 @@ You can also import and export existing allowlists. It is useful, for instance, 
 
 In Stealth Mode, you can prevent a website from seeing the search queries from you used to find it on the Internet, automatically delete third-party and website’s own cookies, etc. A [separate article](/general/stealth-mode) is devoted to all these features.
 
-> Note that some of the *Stealth Mode* options available in full-fledged apps are not present in the browser extensions due to technical restrictions.
+:::note
+
+Some of the *Stealth Mode* options available in full-fledged apps are not present in the browser extensions due to technical restrictions.
+
+:::
 
 ## Other features and options {#other}
 
-Apart from the large key modules of AdGuard Browser extension, there are several more specific features that can be configured in the *General* and *Additional settings* tabs of the extension settings.
+Apart from the large key modules of AdGuard Browser Extension, there are several more specific features that can be configured in the *General* and *Additional settings* tabs of the extension settings.
 
 ### Generali {#general}
 
@@ -123,22 +131,22 @@ The extension's main page can be accessed by clicking on the extension's icon on
 
 On the main page, you can hide any element on any page manually (a corresponding rule will be added to the *User rules*), open the *Filtering log* to view the complete information about your browser's traffic and block requests on the go, or look at a website’s security report. Besides, you can submit a complaint about any website (for example, if there are missed ads on the page, our filter engineers will review the report and fix the problem) and see the statistics on applied blocking rules.
 
-All web requests made by the browser are displayed in the *Filtering log*, along with detailed information about each request. The *Filtering log* makes it easy, for example, to monitor requests blocked by AdGuard Browser extension. Besides, it allows you to block any request or add a previously blocked request to Allowlist in two clicks. The *Filtering log* also offers you a wide variety of options for sorting web requests, which can be helpful when creating your own filtering rules. You can open the *Filtering log* by selecting the corresponding item in the main menu, or from the settings page (in the "Additional settings" tab).
+All web requests made by the browser are displayed in the *Filtering log*, along with detailed information about each request. The *Filtering log* makes it easy, for example, to monitor requests blocked by AdGuard Browser Extension. Besides, it allows you to block any request or add a previously blocked request to Allowlist in two clicks. The *Filtering log* also offers you a wide variety of options for sorting web requests, which can be helpful when creating your own filtering rules. You can open the *Filtering log* by selecting the corresponding item in the main menu, or from the settings page (in the "Additional settings" tab).
 
 By clicking the icons in the top right corner of the extension's main menu, you can open the extension settings or pause the protection.
 
-## AdGuard Browser extension vs. standalone apps {#comparison}
+## AdGuard Browser Extension vs. standalone apps {#comparison}
 
 The main advantage of AdGuard standalone programs over browser extensions is that the programs can block ads in every browser and in almost all apps. You may use different browsers at the same time, the app will filter ads and online threats in all of them equally well.
 
 The second difference is that the possibilities of extension-based ad blockers are strictly limited by browser guidelines. The browser extensions have to conform to the policies of the browsers, where ad blocking might be restricted. Thus, some types of filtering rules are not supported by the extensions. The functionality of the desktop apps is not limited, so they have a better filtering quality.
 
-Whereas AdGuard Browser extension is free and easy to install, and has filters to block ads and fight online threats, the full-fledged apps are more powerful and have a list of advanced features. See all the differences in the comparative table below.
+Whereas AdGuard Browser Extension is free and easy to install, and has filters to block ads and fight online threats, the full-fledged apps are more powerful and have a list of advanced features. See all the differences in the comparative table below.
 
 ![Extension vs. App *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_comparison.png)
 
 `1` – within browser restrictions and only in the browser where it is installed;
 
-`2` – the extension is unable to detect requests from other extensions. If a malicious or tracking extension sends a request to its server to show you ads or track your activity, AdGuard Browser extension will not be able to block that request;
+`2` – the extension is unable to detect requests from other extensions. If a malicious or tracking extension sends a request to its server to show you ads or track your activity, AdGuard Browser Extension will not be able to block that request;
 
 `3` – not all types of ads and threats can be blocked by browser extensions due to certain browser limitations. Some elements may get to the page and slow down the loading process. Besides, unlike browser-based ad blockers, the AdGuard app blocks ads before they are loaded to the browser. This saves traffic and speeds up page loading.

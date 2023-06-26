@@ -16,7 +16,11 @@ Puedes ayudarnos completando un formulario de solicitud con ejemplos de anuncios
 
 ## Reportar un sitio web {#report}
 
-> **Nota**: cuando envías una queja a través de la aplicación o del Asistente del navegador de AdGuard, toda la información se completa automáticamente. A excepción de las capturas de pantalla, tendrás que hacerlas y adjuntarlas tú mismo. Si está utilizando un [enlace directo](https://reports.adguard.com/new_issue.html), deberá ingresar los datos manualmente.
+:::note
+
+When you send a complaint via the app or via AdGuard Browser Assistant, all information is pre-filled automatically. A excepción de las capturas de pantalla, tendrás que hacerlas y adjuntarlas tú mismo. Si está utilizando un [enlace directo](https://reports.adguard.com/new_issue.html), deberá ingresar los datos manualmente.
+
+:::
 
 Para informar sobre la reinserción de un anuncio o la visualización incorrecta de un sitio web, debes:
 
@@ -68,7 +72,11 @@ Para informar sobre la reinserción de un anuncio o la visualización incorrecta
 
 ## Rellenando el formulario {#form}
 
-> **Nota**: cuando envías una queja a través de la aplicación o del Asistente de AdGuard, toda la información se completa automáticamente. A excepción de las capturas de pantalla, tendrás que hacerlas y adjuntarlas tú mismo. Si estás utilizando un [enlace directo](https://reports.adguard.com/en/new_issue.html), deberás ingresar los datos manualmente.
+:::note
+
+When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. A excepción de las capturas de pantalla, tendrás que hacerlas y adjuntarlas tú mismo. Si estás utilizando un [enlace directo](https://reports.adguard.com/en/new_issue.html), deberás ingresar los datos manualmente.
+
+:::
 
 1. El formulario comienza detallando el tipo y versión de un producto;
 

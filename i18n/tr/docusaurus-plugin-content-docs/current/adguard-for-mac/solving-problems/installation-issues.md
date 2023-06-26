@@ -3,7 +3,7 @@ title: Installation problems solving
 sidebar_position: 5
 ---
 
-:::note
+:::info
 
 Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Mac için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
 

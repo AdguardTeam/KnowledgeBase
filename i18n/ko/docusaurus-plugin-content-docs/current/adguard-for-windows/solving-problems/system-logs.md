@@ -3,7 +3,7 @@ title: Windows 로그 수집하는 방법
 sidebar_position: 5
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 

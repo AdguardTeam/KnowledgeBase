@@ -20,12 +20,12 @@ Jetons un coup d'œil à cette image. Vous pouvez voir ici les groupes de chiffr
 
 ![Polonais](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
-Pour mieux comprendre, établissons un petit parallèle entre l'anglais et le polonais : 
+Pour mieux comprendre, établissons un petit parallèle entre l'anglais et le polonais :
 
       La version anglaise :                                                 Les équivalents polonais :
     
-      1. forme - It takes one hour.                                     1. forme - Zajmuje to godzinę. 
-      2. forme - It takes two hours.                                    2. forme - Zajmuje to dwie godziny. 
+      1. forme - It takes one hour.                                     1. forme - Zajmuje to godzinę.
+      2. forme - It takes two hours.                                    2. forme - Zajmuje to dwie godziny.
       3. forme - It takes five hours.                                   3. forme - Zajmuje to pięć godzin.
 
 Maintenant c'est clair que le polonais *'godzinę'* (heure) a trois formes différentes, alors que le mot anglais ne change de forme avec des nombres donnés que deux fois.
@@ -125,7 +125,7 @@ Par exemple, lorsque nous traduisons la phrase mentionnée ci-dessus en slovaque
 Dans ce cas, nous voyons trois modèles qui contiennent trois formes du mot *"počítač"* (ordinateur) en slovaque.
 
 *Si nous ignorons l'une des formes et n'utilisons que deux modèles pour le slovaque au lieu de trois, le système ne pourra pas prendre un modèle approprié pour certains nombres* et, par conséquent, nous aurons des erreurs de grammaire dans les phrases, comme en anglais : *Standard license for 5 computer*.
-> **Utilisez toujours autant de formes qu'il existe dans votre langue, même lorsque le mot lui-même a moins de formes de mots.**
+> **Always use as many forms as there are in your language, even when the word itself has fewer word forms.**
 
 Par exemple, le mot serbe *'računar'* (ordinateur) n'a que deux formes. Mais il existe 3 formes plurielles en serbe.
 
@@ -147,10 +147,10 @@ Encore une fois : si vous rencontrez une phrase originale comportant deux élém
 
 + Référez-vous à la règle du pluriel d’une langue dans laquelle vous traduisez ;
 
-> Le nombre de vos modèles doit être cohérent avec le nombre de formes plurielles que comprend votre langue, même dans les cas où certains mots ont eux-mêmes moins de formes. Deux formes plurielles - deux modèles de traduction ; cinq formes plurielles - cinq modèles, etc.
+The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms – two templates in translations; five plural forms – five templates, etc.
 
 + N'oubliez pas d'utiliser le signe de la barre verticale entre les modèles, comme il est représenté dans les chaînes originales ;
 
 + Ne traduisez pas, ne remplissez pas et ne supprimez pas les espaces réservés **%count%**.
 
-En suivant ces règles simples, vous aiderez les développeurs AdGuard à éviter de nombreuses complications inutiles lors du processus de localisation.
+By following these simple rules you will help AdGuard developers avoid a lot of unnecessary complications during the localization process.

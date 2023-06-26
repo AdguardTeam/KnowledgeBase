@@ -3,6 +3,12 @@ title: Přehled funkcí
 sidebar_position: 1
 ---
 
+:::info
+
+Tento článek je o AdGuardu pro Safari, který chrání pouze váš prohlížeč Safari. Chcete-li chránit celé zařízení, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 AdGuard pro Safari byl navržen tak, aby splňoval omezení společnosti Apple pro rozšíření prohlížeče pro blokování reklam a je nejpoužívanějším blokátorem reklam pro Safari. Přestože se nedá srovnávat s našimi aplikacemi pro blokování reklam na počítači, je zdarma a dokáže vás ochránit před reklamami, slídiči, phishingem a škodlivými webovými stránkami.
 
 ## Obecné {#general}
@@ -18,7 +24,8 @@ První karta je obrazovka Obecné, kde můžete nastavit základní věci, jako 
 Filtr je seznam pravidel zapsaný ve speciální syntaxi. Podle těchto pravidel mohou blokátory obsahu filtrovat provoz webu: blokovat reklamy nebo požadavky na škodlivé webové stránky.
 
 Filtry jsou sdruženy do osmi tematických kategorií: *Blokování reklam, Ochrana soukromí, Widgety sociálních sítí, Obtěžování, Zabezpečení, Jazykově specifické filtry, Vlastní a Ostatní filtry.*.
-> Více informací o [filtrech AdGuardu](/general/ad-filtering/adguard-filters) nebo [filtrování reklam obecně](/general/ad-filtering/how-ad-blocking-works).
+
+Více informací o [filtrech AdGuardu](/general/ad-filtering/adguard-filters) nebo [filtrování reklam obecně](/general/ad-filtering/how-ad-blocking-works).
 
 Na kartě Filtry můžete povolit celou kategorii nebo jednotlivé filtry. Změny na kartě Filtry se projeví v části Blokátory obsahu (na kartě Obecné).
 
@@ -38,7 +45,11 @@ Zatímco limit byl zvýšen, struktura blokátorů obsahu zůstala stejná.
 
 Na kartě Blokátory obsahu můžete vidět, které blokátory obsahu jsou povoleny, kolik pravidel každý z nich používá a které filtry fungují.
 
-> Povolené filtry můžete spravovat na kartě Filtry. V části Blokátory obsahu se zobrazuje pouze seznam již povolených filtrů.
+:::tip
+
+Povolené filtry můžete spravovat na kartě Filtry. V části Blokátory obsahu se zobrazuje pouze seznam již povolených filtrů.
+
+:::
 
 ### AdGuard – General {#adguard_general}
 
@@ -60,7 +71,11 @@ Tento blokátor obsahu spojuje několik filtrů souvisejících se zabezpečení
 
 *AdGuard – Other* obsahuje filtry s různými funkcemi. Má například filtr, který odblokovává reklamy ve vyhledávání a sebepropagaci. V některých případech pomáhá najít přesně to, co hledáte, protože tyto druhy reklam jsou relevantnější a méně vtíravé než jiné.
 
-> Odmítnutí odpovědnosti: nemáme žádné "přijatelné reklamy" placené inzerenty. Místo toho uživatelům poskytujeme možnost vidět [reklamy ve vyhledávání a sebepropagaci](/general/ad-filtering/search-ads).
+::::::note Odmítnutí odpovědnosti
+
+Nemáme žádné "přijatelné reklamy" placené inzerenty. Místo toho uživatelům poskytujeme možnost vidět [reklamy ve vyhledávání a sebepropagaci](/general/ad-filtering/search-ads).
+
+:::
 
 ### AdGuard – Custom {#adguard_custom}
 
@@ -78,4 +93,8 @@ K přizpůsobení blokování reklam lze použít uživatelská pravidla. Lze je
 
 Na kartě O produktu se zobrazují informace o aktuální verzi produktu a odkazy na právní dokumenty. Je zde také odkaz na náš repozitář na GitHubu. Můžete zde sledovat vývoj produktu, vytvářet požadavky na funkce a hlásit chyby.
 
-> Připomínka: AdGuard pro Safari lze zdarma stáhnout [z App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259). Podrobný návod k nastavení je k dispozici ve [znalostní databázi](../installation).
+:::note Připomínka
+
+AdGuard pro Safari lze zdarma stáhnout [z App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259). Podrobný návod k nastavení je k dispozici ve [znalostní databázi](../installation).
+
+:::

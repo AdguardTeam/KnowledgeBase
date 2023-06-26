@@ -13,11 +13,11 @@ Das Abonnement kann in Ihrem AdGuard-Konto gekündigt werden. To cancel your sub
 
  Das gekündigte Abonnement bleibt bis zu seinem Ablaufdatum gültig.
 
-> Im App Store gekaufte Abonnements können im App Store-Konto oder in den Einstellungen des Geräts verwaltet werden.
+Subscriptions purchased on the App Store can be managed in the App Store account or in the device's settings.
 
 ## Wie man eine Erstattung erhält
 
-In Übereinstimmung mit unseren [Verkaufsbedingungen](https://adguard.com/terms-of-sale.html) können Sie eine 100%ige Rückerstattung für den AdGuard-Lizenzschlüssel erhalten, den Sie unter https://adguard.com erworben haben. To get a refund, contact our support team at **support@adguard.com** and specify the payment option you've used.
+In accordance with our [Terms of Sale](https://adguard.com/terms-of-sale.html), you can get a 100% refund on the AdGuard license key you purchased at https://adguard.com. To get a refund, contact our support team at **support@adguard.com** and specify the payment option you've used.
 
 A refund may be declined if:
 * a license was purchased more than 60 days ago,

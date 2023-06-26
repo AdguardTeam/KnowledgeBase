@@ -3,7 +3,7 @@ title: How to collect Windows system logs
 sidebar_position: 5
 ---
 
-:::note
+:::info
 
 Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Windows için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
 

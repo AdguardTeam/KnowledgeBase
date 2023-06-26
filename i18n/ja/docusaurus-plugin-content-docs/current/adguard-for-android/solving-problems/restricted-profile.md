@@ -3,7 +3,7 @@ title: 制限付きプロファイルが原因の問題
 sidebar_position: 10
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -17,7 +17,11 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 ### 【方法①】ADB経由でAdGuardに権限を与える
 
-> ※この方法は**AdGuard v3.5 Nightly 6**以降で利用できることに注意してください。 古いバージョンを使用している場合は、[こちら](https://adguard.com/adguard-android/overview.html)からのNightly最新バージョンを入手できます（もしくはAdGuardアプリ内設定で「アップデートチャンネル」を「Nightly」に切り替えてアプリをアップデートできます）。
+:::note
+
+This approach is available starting from **AdGuard v3.5 nightly 6**. 古いバージョンを使用している場合は、[こちら](https://adguard.com/adguard-android/overview.html)からのNightly最新バージョンを入手できます（もしくはAdGuardアプリ内設定で「アップデートチャンネル」を「Nightly」に切り替えてアプリをアップデートできます）。
+
+:::
 
 1. **開発者モード**をアクティブにし、**USBデバッグ**を有効にします（※端末によって下記メニュー項目の名称が多少違ったりする場合がございます）:
 - Open the **Settings** app phone;
@@ -25,10 +29,13 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 - Tap the **Build number** line 7 times. その後、「**開発者になりました！**」のような通知が表示されます（必要に応じて、デバイスのロック解除コードを入力してください）。
 - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
 
-> 上記に関してまだご不明やお困りな点ございましたら、[こちら](https://developer.android.com/studio/debug/dev-options)でさらに詳しい手順をご確認ください。
+:::note
 
-2. ADBをインストトールして設定します（方法：[Windows編](https://expnote.com/how-to-install-android-debug-bridge/)、[Mac編](https://child-programmer.com/m-adb/)）
-> Windowsでは、**Samsung** のユーザーは、[こちらのユーティリティ](https://developer.samsung.com/mobile/android-usb-driver.html)をインストールする必要があるかもしれません。
+上記に関してまだご不明やお困りな点ございましたら、[こちら](https://developer.android.com/studio/debug/dev-options)でさらに詳しい手順をご確認ください。
+
+:::
+
+2. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
 3. **USBケーブル**を使用して**ADB**をインストールしたコンピューターまたはラップトップにAndroidデバイスを接続します。
 4. PCで**コマンドライン**を開きます。
 - **Windows**を使用している場合は**Cmd.exe**
@@ -38,8 +45,11 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 ### 【方法②】*制限付きアカウント*を削除する
 
 多くの端末の場合、 [端末設定→詳細設定→複数ユーザー→制限付きプロファイルを削除する]という手順になります。 ユーザーアカウント管理については[こちら](https://support.google.com/a/answer/6223444?hl=en)にてご確認いただけます。
+> :::note
 
-> ※制限付きユーザーアカウントが他の機能を通じて作成され、直接削除できない場合があることに注意してください。 たとえば、**Samsung**または**LG**デバイスでデュアルメッセンジャーまたはデュアルアプリ機能を使用する場合です。 これらのケースで問題を解決する方法を以下に記載いたしました。
+In some cases restricted user accounts are created implicitly and cannot be removed. たとえば、**Samsung**または**LG**デバイスでデュアルメッセンジャーまたはデュアルアプリ機能を使用する場合です。 これらのケースで問題を解決する方法を以下に記載いたしました。
+
+:::
 
 ### 【方法③】*ローカルHTTPプロキシモード*でAdGuardを使用する（ルート権限が必要になります）
 

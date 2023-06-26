@@ -3,7 +3,7 @@ title: Běžné chyby instalačního programu
 sidebar_position: 6
 ---
 
-:::note
+:::info
 
 Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 
