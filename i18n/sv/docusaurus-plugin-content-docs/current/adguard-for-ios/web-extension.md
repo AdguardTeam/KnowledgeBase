@@ -32,8 +32,6 @@ You will see the following list of options:
 
 ### In the iOS settings
 
-> AdGuard's Safari Web extension greatly improves the ad blocking quality, so we recommend enabling it on all sites.
-
 Web extension is not a standalone tool and requires AdGuard for iOS. If you don't have AdGuard for iOS installed on your device, please [install it first](../installation) and complete the onboarding process to prepare it for work.
 
 Once done, open *Settings → Safari → Extensions*.
@@ -50,7 +48,11 @@ Tap it, then turn on the switch. On the same screen make sure that the AdGuard e
 
 ![](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings4_en.png)
 
-> AdGuard's Safari Web extension requires access to the web pages' content to operate, but doesn't use it for any purpose other than blocking ads.
+:::note
+
+AdGuard's Safari Web extension requires access to the web pages' content to operate, but doesn't use it for any purpose other than blocking ads.
+
+:::
 
 ### In Safari
 
@@ -68,7 +70,11 @@ If you use this method, you may have to go to Safari settings to grant AdGuard e
 
 You should now be able to see AdGuard among the available extensions. Tap it and then the yellow **i** icon. Enable **Advanced protection** by tapping the *Turn on* button and confirming the action.
 
-> If you use AdGuard for iOS without Premium subscription, you won't be able to enable **Advanced protection**.
+:::note
+
+If you use AdGuard for iOS without Premium subscription, you won't be able to enable **Advanced protection**.
+
+:::
 
 Alternatively, you can enable **Advanced protection** directly from the app, in the **Protection** tab (second from the left in the bottom icon row).
 

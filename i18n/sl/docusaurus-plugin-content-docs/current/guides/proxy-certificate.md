@@ -5,7 +5,11 @@ sidebar_position: 2
 
 Desktop AdGuard apps (AdGuard for Windows and AdGuard for Mac) can be used as a proxy. This means that you can route other devices' traffic through AdGuard (entirely, or traffic of specific apps/browsers).
 
-> Note that these devices must be in the same network as the PC or Mac on which AdGuard is installed.
+:::note
+
+These devices must be in the same network as the PC or Mac on which AdGuard is installed.
+
+:::
 
 HTTP traffic will be filtered in any case, but for AdGuard to be able to filter HTTPS traffic you need to manually install AdGuard certificate on the connected device.
 

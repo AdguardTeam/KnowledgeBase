@@ -3,7 +3,7 @@ title: Filterung im Tor-Browser einrichten
 sidebar_position: 10
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -27,4 +27,4 @@ Public Key Pinning ist eine Sicherheitsmaßnahme, mit der Websites sicherstellen
 
 Um die Änderungen zu übernehmen, müssen Sie den Tor-Browser neu starten.
 
-> Wenn Sie diese Einstellungen manuell ändern, wird die Tor-Filterung gestoppt.
+If you manually change these settings, Tor filtering will be stopped.

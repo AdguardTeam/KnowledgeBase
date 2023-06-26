@@ -3,7 +3,7 @@ title: Instalace
 sidebar_position: 2
 ---
 
-:::note
+:::info
 
 Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 
@@ -81,7 +81,11 @@ Pokud běžná odinstalace z nějakého důvodu nefunguje, můžete zkusit pokro
 
 ![Uninstall finished *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/standard-uninstall-2.png)
 
-> Další kroky proveďte pouze v případě, že provedení prvních dvou kroků z nějakého důvodu nestačilo. Obvykle to lze zjistit na základě nesprávné přeinstalace AdGuardu, ale před použitím kroků 3-4 pokročilého způsobu k odinstalaci důrazně doporučujeme kontaktovat naši podporu.
+:::caution
+
+Další kroky proveďte pouze v případě, že provedení prvních dvou kroků z nějakého důvodu nestačilo. Obvykle to lze zjistit na základě nesprávné přeinstalace AdGuardu, ale před použitím kroků 3-4 pokročilého způsobu k odinstalaci důrazně doporučujeme kontaktovat naši podporu.
+
+:::
 
 * Vyberte *Pokročilá odinstalace* a klikněte na *Odinstalovat*.
 

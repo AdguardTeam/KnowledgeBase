@@ -3,7 +3,7 @@ title: HAR 파일 수집 방법
 sidebar_position: 5
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -24,7 +24,11 @@ HAR(HTTP ARchive) 형식은 웹 브라우저와 사이트 간의 상호 작용�
 
 **.har 파일을 AdGuard 지원 팀에 보내 주세요.**
 
-> 참고: 메시지에 헬프 데스크 티켓 번호 또는 GitHub 문제 번호를 첨부 시 문제를 더 빠르게 처리할 수 있습니다.
+:::note
+
+Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message.
+
+:::
 
 ## How to analyze HAR files
 다음은 HAR 파일을 분석하기 위한 몇 가지 소스입니다.

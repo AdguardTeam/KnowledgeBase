@@ -7,7 +7,11 @@ sidebar_position: 3
 
 Chcete-li aktivovat licenci, přejděte do části *Licence* svého produktu AdGuard a vyhledejte pole *Přihlásit se* nebo tlačítko *Aktivovat*. K přihlášení použijte e-mail a heslo svého AdGuard účtu. Pokud ještě nemáte účet, bude vám nabídnuto jeho vytvoření.
 
-> Poznámka: K aktivaci licence prostřednictvím účtu AdGuard je nutná platná licence s alespoň jedním volným slotem. Pokud je vaše licence již použita na maximálním počtu zařízení, můžete ji [upgradovat](../payment-options#upgrade) nebo [přenést z jednoho zařízení do jiného](../transfer).
+:::note
+
+K aktivaci licence prostřednictvím účtu AdGuard je nutná platná licence s alespoň jedním volným slotem. Pokud je vaše licence již použita na maximálním počtu zařízení, můžete ji [upgradovat](../payment-options#upgrade) nebo [přenést z jednoho zařízení do jiného](../transfer).
+
+:::
 
 Případně můžete k aktivaci použít [licenční klíč](../what-is#license-key).
 

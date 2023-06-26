@@ -3,7 +3,7 @@ title: Известные проблемы AdGuard для Windows
 sidebar_position: 10
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -17,5 +17,4 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 Изменение этих настроек необходимо только для решения проблем, связанных с одновременной работой Блокировщика AdGuard и сетевых приложений, таких как антивирусы, VPN и сетевые фильтры. Если вы столкнулись с ситуацией, когда вам нужно изменить состояние вышеуказанных настроек по умолчанию, но при этом вы хотите, чтобы Блокировщик AdGuard и AdGuard VPN работали одновременно и корректно, [создайте тикет на GitHub](https://github.com/AdguardTeam/AdguardForWindows/issues/new/choose), чтобы мы могли помочь вам лично.
 
-Мы работаем над преодолением перечисленных выше ограничений одновременной работы наших приложений. 
-
+Мы работаем над преодолением перечисленных выше ограничений одновременной работы наших приложений.

@@ -20,12 +20,12 @@ Let’s have a look at this picture. Here you can see the groups of numerals whi
 
 ![Lehçe](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
-Let’s draw a small parallel between English and Polish for better understanding: 
+Let’s draw a small parallel between English and Polish for better understanding:
 
       The English version:                                                 The Polish equivalents:
     
-      1. form - It takes one hour.                                     1. form - Zajmuje to godzinę. 
-      2. form - It takes two hours.                                    2. form - Zajmuje to dwie godziny. 
+      1. form - It takes one hour.                                     1. form - Zajmuje to godzinę.
+      2. form - It takes two hours.                                    2. form - Zajmuje to dwie godziny.
       3. form - It takes five hours.                                   3. form - Zajmuje to pięć godzin.
 
 Now it is clear that the Polish *'godzinę'* (hour) has three different forms, whereas the English word changes its form with given numbers only twice.
@@ -147,7 +147,7 @@ And again: if you come across an original phrase with two important elements: **
 
 + Refer to the plural rule of a language you translate into;
 
-> The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms – two templates in translations; five plural forms – five templates, etc.
+The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms – two templates in translations; five plural forms – five templates, etc.
 
 + Do not forget to use a vertical bar sign between templates as it is represented in original strings;
 

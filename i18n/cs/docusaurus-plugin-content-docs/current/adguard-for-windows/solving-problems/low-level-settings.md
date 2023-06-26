@@ -3,7 +3,7 @@ title: Průvodce pokročilým (nízkoúrovňovým) nastavením
 sidebar_position: 7
 ---
 
-:::note
+:::info
 
 Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 
@@ -11,7 +11,11 @@ Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, kt
 
 Pokročilá nastavení, dříve známá jako nízkoúrovňová nastavení většinou obsahují možnosti, které přesahují kompetence běžného uživatele aí při každodenním používání se nepoužívají. AdGuard pro Windows je navržen tak, aby fungoval, aniž by bylo nutné cokoliv měnit, ale v některých případech nebo při řešení neobvyklého problému poskytuje další funkce.
 
-> Změna *Pokročilých nastavení* může nečekaně způsobit problémy s výkonem AdGuardu, může přerušit internetové připojení nebo ohrozit vaši bezpečnost a soukromí. Tuto část byste měli otevřít pouze v případě, že jste si jisti tím, co děláte, nebo pokud se vás na to zeptal náš tým podpory.
+:::caution
+
+Změna *Pokročilých nastavení* může nečekaně způsobit problémy s výkonem AdGuardu, může přerušit internetové připojení nebo ohrozit vaši bezpečnost a soukromí. Tuto část byste měli otevřít pouze v případě, že jste si jisti tím, co děláte, nebo pokud se vás na to zeptal náš tým podpory.
+
+:::
 
 ## Jak dosáhnout pokročilých nastavení
 
@@ -31,7 +35,7 @@ Každé šifrované internetové připojení má i nešifrovanou část. Jedná 
 
 ### Zkontrolovat transparentnost certifikátů webových stránek
 
-Ověřuje pravost všech certifikátů pro doménu na základě zásad transparentnosti certifikátů Chrome. Pokud certifikát není v souladu se zásadami Chrome CT, AdGuard webové stránky nefiltruje. Chrome to zase zablokuje.
+Ověřuje pravost všech certifikátů pro doménu na základě zásad transparentnosti certifikátů Chrome. Pokud certifikát není v souladu se zásadami Chrome Certificate Transparency, AdGuard webové stránky nefiltruje. Chrome to zase zablokuje.
 
 ### Povolit kontrolu odvolání certifikátů SSL/TLS
 
@@ -71,7 +75,7 @@ Tuto možnost povolte, aby se po načtení systému otevřelo hlavní okno AdGua
 
 Od verze 7.12 služba AdGuard ve výchozím nastavení nefiltruje provoz po spuštění operačního systému, pokud je zakázána možnost Spustit AdGuard při startu systému. Jinými slovy, služba AdGuard je spuštěna v režimu „nečinnosti“. Tuto možnost povolte, aby AdGuard filtroval provoz i v případě, že aplikace není spuštěna.
 
-*Všimněte si, že před verzí 7.12 se služba AdGuard ve výchozím nastavení spouštěla v režimu filtrování (i když byla zakázána volba *Spustit AdGuard při startu systému"). Pokud vám vyhovovalo staré chování, tuto možnost povolte.*
+*Všimněte si, že před verzí 7.12 se služba AdGuard ve výchozím nastavení spouštěla v režimu filtrování (i když byla zakázána volba *Spustit AdGuard při startu systému"*). Pokud vám vyhovovalo staré chování, tuto možnost povolte.*
 
 ### Filtrovat localhost
 
@@ -95,23 +99,23 @@ Host: example.org`
 bude převeden na
 
 `GET  /foo/bar/ HTTP/1.1
-Host:example.org`
+Host: example.org`
 
 Tato možnost se použije pouze v případě, že je povolena možnost *Ochrana před DPI* v Režimu utajení.
 
 ### Upravit velikost fragmentu úvodního paketu TLS
 
-Určuje velikost fragmentace paketů TCP, čímž se zabrání hloubkové kontrole paketů. Tato možnost má vliv pouze na zabezpečený HTTPS provoz.
+Určuje velikost fragmentace paketů TCP, čímž se zabrání hloubkové kontrole paketů. Tato možnost má vliv pouze na zabezpečený (HTTPS) provoz.
 
 Pokud je tato možnost povolena, AdGuard rozdělí počáteční paket TLS (paket ClientHello) na dvě části: první má zadanou délku a druhá obsahuje zbytek až do délky celého počátečního paketu TLS.
 
-Povolené hodnoty: 1–1500. Pokud je zadána neplatná velikost, použije se hodnota vybraná systémem. Tato možnost se použije pouze v případě, že je povolena možnost *Ochrana před DPI* v Režimu utajení.
+Platné hodnoty: 1–1500. Pokud je zadána neplatná velikost, použije se hodnota vybraná systémem. Tato možnost se použije pouze v případě, že je povolena možnost *Ochrana před DPI* v Režimu utajení.
 
 ### Velikost fragmentu běžného požadavku HTTP
 
 Upraví velikost fragmentace požadavků HTTP. Tato možnost má vliv pouze na prostý HTTP provoz. Pokud je tato možnost povolena, AdGuard rozdělí počáteční paket na dvě části: první má zadanou délku a druhá obsahuje zbytek až do délky celého původního paketu.
 
-Povolené hodnoty: 1–1500. Pokud je zadána neplatná velikost, použije se hodnota vybraná systémem. Tato možnost se použije pouze v případě, že je povolena možnost *Ochrana před DPI* v Režimu utajení.
+Platné hodnoty: 1–1500. Pokud je zadána neplatná velikost, použije se hodnota vybraná systémem. Tato možnost se použije pouze v případě, že je povolena možnost *Ochrana před DPI* v Režimu utajení.
 
 ### Zobrazit QUIC
 
@@ -147,11 +151,11 @@ Povolí HTTP/3 pro odchozí připojení DNS-over-HTTPS, aby se urychlilo připoj
 
 ### Použít záložní DNS odchozích připojení
 
-Pokud je tato možnost povolena, budou běžné dotazy přesměrovány na záložní odchozí server, pokud všechny požadavky DNS na vybrané odchozí připojení selžou.
+Běžné dotazy budou přesměrovány na záložní odchozí server, pokud všechny požadavky DNS na vybrané odchozí připojení selžou.
 
 ### Paralelní dotazování na odchozí připojení DNS
 
-Všechny odchozí připojení jsou po povolení dotazovány paralelně a je vrácena první odpověď. Vzhledem k tomu, že dotazy DNS jsou prováděny paralelně, zvyšuje se povolením této funkce rychlost internetu.
+Všechny odchozí připojení budou dotazovány paralelně a je vrácena první odpověď. Vzhledem k tomu, že dotazy DNS jsou prováděny paralelně, zvyšuje se povolením této funkce rychlost internetu.
 
 ### Vždy odpovídat na neúspěšné DNS dotazy
 
@@ -159,7 +163,7 @@ Pokud se překládání adres nezdařilo v každém z předávaných odchozích 
 
 ### Povolit filtrování zabezpečených DNS požadavků
 
-Pokud je tato funkce povolena, přesměruje AdGuard kromě běžných DNS požadavků také zabezpečené DNS požadavky na místní DNS proxy.
+Kromě běžných DNS požadavků bude AdGuard přesměrovávat zabezpečené DNS požadavky na místní DNS proxy.
 
 ### Režim blokování pro pravidla hosts
 
@@ -213,4 +217,4 @@ Všechny DNS požadavky na domény zde uvedené budou přesměrovány na výchoz
 
 ### Vyloučit zadané názvy sítí Wi-Fi (SSID) z DNS filtrování
 
-DNS chrana nebude fungovat pro sítě Wi-Fi uvedené v této části. Zadejte názvy sítí Wi-Fi (SSID), jeden na řádek. To může být užitečné, pokud je určitá síť Wi-Fi již chráněna pomocí AdGuard Home nebo jiným systémem DNS ochrany. V tomto případě je zbytečné znovu filtrovat DNS požadavky.
+DNS ochrana nebude fungovat pro sítě Wi-Fi uvedené v této části. Zadejte názvy sítí Wi-Fi (SSID), jeden na řádek. To může být užitečné, pokud je určitá síť Wi-Fi již chráněna pomocí AdGuard Home nebo jiným systémem DNS ochrany. V tomto případě je zbytečné znovu filtrovat DNS požadavky.

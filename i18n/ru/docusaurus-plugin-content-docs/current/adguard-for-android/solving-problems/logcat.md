@@ -3,7 +3,7 @@ title: Как получить лог Logсat
 sidebar_position: 4
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -32,7 +32,11 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 5. Отправьте этот лог нашей команде поддержки.
 
-> Примечание: наша команда поддержки обработает ваш тикет намного быстрее, если вы укажете номер тикета HelpDesk или номер ошибки на GitHub в своём сообщении.
+:::note
+
+Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+
+:::
 
 ## Дополнительная инструкция (для старых версий Android)
 
@@ -67,7 +71,7 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 3. Запустите эту команду в консоли (она откроется автоматически после установки приложения):
 
-> adb logcat -v threadtime -d > C:\logcat.txt
+adb logcat -v threadtime -d > C:\logcat.txt
 
 Отправьте нам этот лог, связавшись со службой поддержки или любым другим способом.
 
@@ -83,4 +87,8 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 5. Отправьте этот лог нашей команде поддержки.
 
-> Примечание: наша команда поддержки обработает ваш тикет намного быстрее, если вы укажете номер тикета HelpDesk или номер ошибки на GitHub в своём сообщении.
+:::note
+
+Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+
+:::

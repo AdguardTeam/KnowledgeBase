@@ -9,7 +9,11 @@ Práci Režimu utajení můžete flexibilně upravit: můžete například zaká
 
 Níže uvádíme a popisujeme hlavní funkce a možnosti, které můžete ovládat v nastavení **Režimu utajení**. Jsou rozděleny do čtyř skupin: **Obecné**, **Metody sledování**, **Rozhraní API prohlížeče** a **Různé**.
 
-> Některé možnosti nemusí být v závislosti na konkrétním produktu dostupné kvůli omezením operačního systému nebo jiným omezením.
+:::note
+
+Některé možnosti nemusí být v závislosti na konkrétním produktu dostupné kvůli omezením operačního systému nebo jiným omezením.
+
+:::
 
 ## Obecné {#general}
 
@@ -103,4 +107,4 @@ Deep Packet Inspection je systém hloubkové analýzy a filtrování provozu pod
 
 AdGuard může upravit odchozí data paketů tak, aby klient nespadal pod kritéria blokování DPI. To znamená, že zapnutím této možnosti mohou uživatelé získat přístup k požadovanému obsahu. V současné době nelze obejít všechny systémy DPI, ale neustále pracujeme na jejich vylepšení.
 
-> Funkce "Ochrana před DPI" je již implementována v aplikacích AdGuard pro Windows, AdGuard pro Mac a AdGuard pro Android.
+Funkce "Ochrana před DPI" je již implementována v aplikacích AdGuard pro Windows, AdGuard pro Mac a AdGuard pro Android.

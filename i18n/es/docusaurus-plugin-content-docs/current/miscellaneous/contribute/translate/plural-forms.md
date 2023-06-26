@@ -20,12 +20,12 @@ Veamos esta imagen. Aquí puedes ver los grupos de números que determinan la fo
 
 ![Polaco](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
-Dibujemos un pequeño paralelo entre el inglés y el polaco para una mejor comprensión: 
+Dibujemos un pequeño paralelo entre el inglés y el polaco para una mejor comprensión:
 
       La versión en inglés:                                                 Los equivalentes polacos:
     
-      1. forma: It takes one hour.                                     1. forma: Zajmuje a godzinę. 
-      2. form: It takes two hours.                                    2. forma: Zajmuje a dwie godziny. 
+      1. forma: It takes one hour.                                     1. forma: Zajmuje a godzinę.
+      2. form: It takes two hours.                                    2. forma: Zajmuje a dwie godziny.
       3. forma: It takes five hours.                                   3. forma: Zajmuje a pięć godzin.
 
 Ahora está claro que el polaco *'godzinę'* (hora) tiene tres formas diferentes, mientras que la palabra inglesa cambia su forma con números solo dos veces.
@@ -125,7 +125,7 @@ Por ejemplo, cuando traducimos la frase mencionada anteriormente al eslovaco, qu
 En este caso, vemos tres plantillas que contienen tres formas de la palabra *"počítač"* (computadora) en eslovaco.
 
 *Si ignoramos una de las formas y usamos solo dos plantillas para eslovaco en lugar de tres, el sistema no podrá tomar una plantilla adecuada para ciertos números* y, como resultado, tendremos errores gramaticales en las oraciones, como en inglés: *Standard license for 5 computer*.
-> **Siempre usa tantas formas como haya en tu idioma, incluso cuando la palabra en sí tiene menos formas de palabras.**
+> **Always use as many forms as there are in your language, even when the word itself has fewer word forms.**
 
 Por ejemplo, la palabra serbia *'računar'* (computadora) tiene solo dos formas. Pero hay 3 formas plurales en serbio.
 
@@ -147,10 +147,10 @@ Y de nuevo: si encuentras una frase original con dos elementos importantes: **, 
 
 + Consulta la regla del plural de la lengua a la que traduces;
 
-> La cantidad de tus plantillas debe ser consistente con la cantidad de formas plurales que tiene tu idioma, incluso en los casos en que algunas palabras tienen menos formas. Dos formas plurales, dos plantillas en traducciones; cinco formas plurales, cinco plantillas, etc.
+The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms – two templates in translations; five plural forms – five templates, etc.
 
 + No olvides usar un signo de barra vertical entre las plantillas tal como se representa en los strings originales;
 
 + No traduzcas, rellenes ni elimines los placeholders **%count%** .
 
-Al seguir estas sencillas reglas, ayudarás a los desarrolladores de AdGuard a evitar muchas complicaciones innecesarias durante el proceso de localización.
+By following these simple rules you will help AdGuard developers avoid a lot of unnecessary complications during the localization process.

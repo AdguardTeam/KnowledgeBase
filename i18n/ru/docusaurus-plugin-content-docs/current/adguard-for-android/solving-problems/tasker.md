@@ -3,7 +3,7 @@ title: Как автоматизировать AdGuard для Android
 sidebar_position: 3
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -47,7 +47,7 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 `dns_server` переключается между DNS-серверами, необходимо указать дополнительные данные:
 
  `server:adguard dns` переключается на сервер AdGuard DNS;
-> Примечание: полный список поддерживаемых имён провайдеров можно найти в настройках AdGuard DNS в разделе «Пользовательские настройки DNS»
+> Note: the full list of supported provider names can be found inside AdGuard DNS settings under the "Custom DNS settings"
 
  `server:custom` переключается на ранее добавленный сервер с именем `custom`;
 
@@ -106,11 +106,14 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
  `[trust]` применяется только для типа сервера: **HTTPS_CONNECT** и включает опцию **Trust any certificates**. Необходимо указать значение **true или false**.
 
- > **Пример**:
+:::note Example
 
-`настройка по имени сервера`: server:MyServer
+`setting by name`: server:MyServer
 
- `настройка вручную`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
+ `manually settings`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
+
+
+:::
 
 -----
 
@@ -122,7 +125,11 @@ Package: `com.adguard.android`
 
 Класс: `com.adguard.android.receiver.AutomationReceiver`
 
-> Примечание: до версии 4.0 класс назывался `com.adguard.android.receivers.AutomationReceiver`, но затем мы изменили его название на `com.adguard.android.receiver.AutomationReceiver`. Если вы пользовались этой функцией, пожалуйста, используйте новое название.
+:::note
+
+Before v4.0 the class was called `com.adguard.android.receivers.AutomationReceiver` but then we changed its name to `com.adguard.android.receiver.AutomationReceiver`. Если вы пользовались этой функцией, пожалуйста, используйте новое название.
+
+:::
 
 ### Выполнение без уведомлений
 

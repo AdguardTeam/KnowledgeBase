@@ -3,6 +3,12 @@ title: Обзор функций
 sidebar_position: 1
 ---
 
+:::info
+
+This article is about AdGuard for Safari, which safeguards only your Safari browser. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 AdGuard для Safari был разработан в соответствии с ограничениями Apple для браузерных расширений, блокирующих рекламу. Это самый популярный блокировщик рекламы для Safari. Хотя он менее мощный, чем десктопные приложения AdGuard, он бесплатен и может защитить вас от рекламы, трекеров, фишинга и вредоносных сайтов.
 
 ## Общие {#general}
@@ -18,27 +24,32 @@ AdGuard для Safari был разработан в соответствии с
 Фильтр — это список правил, написанных в специальном синтаксисе. Блокировщики контента считывают эти правила и блокируют рекламу или запросы к опасным сайтам.
 
 Фильтры объединены в восемь тематических категорий: *Блокировка рекламы, Конфиденциальность, Виджеты соцсетей, Фильтры раздражителей, Безопасность, Языковые фильтры, Пользовательские и Другие фильтры*.
-> Узнайте больше о [фильтрах AdGuard](/general/ad-filtering/adguard-filters) или [фильтрации рекламы в целом](/general/ad-filtering/how-ad-blocking-works).
 
-На вкладке «Фильтры» можно включить всю категорию или отдельные фильтры. Изменения во вкладке отражаются в разделе «Блокировщики контента» (вкладка «Общие»).
+Read more about [AdGuard filters](/general/ad-filtering/adguard-filters) or [ad filtering in general](/general/ad-filtering/how-ad-blocking-works).
+
+In the Filters tab, you can enable the whole category or separate filters. Changes in the Filters tab are reflected in the Content Blockers section (located in the General tab).
 
 ## Блокировщики контента {#contentblockers}
 
-![Вкладка «Блокировщики контента»](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/Contentblockers.png)
+![Content blockers tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/Contentblockers.png)
 
-Блокировщик контента — это тематический блок фильтров. Фильтры, связанные с конфиденциальностью, входят в блокировщик контента с соответствующим названием — *AdGuard Конфиденциальность*.
+A content blocker is a thematic cluster of filters. Privacy-related filters are included in the content blocker with the corresponding name — *AdGuard Privacy*.
 
-Блокировщики контента были разработаны по двум причинам: чтобы структурировать фильтры и соответствовать ограничениям Apple.
+Content Blockers were designed for two reasons: to structure filters and to conform to Apple’s restrictions.
 
-[В 2019 году](https://adguard.com/en/blog/adguard-safari-1-5.html) Apple наложила ограничения на блокировщики рекламы для Safari. Им можно было использовать до 50 000 правил фильтрации одновременно. Этого количества было недостаточно, чтобы обеспечить хорошее качество фильтрации (в одном Базовом фильтре AdGuard 30 000 правил). Поэтому мы разделили AdGuard для Safari на шесть блокировщиков контента, в каждом из которых содержится до 50 000 правил.
+[In 2019](https://adguard.com/en/blog/adguard-safari-1-5.html), Apple put limitations on ad blockers for Safari, allowing them to use only 50,000 filtering rules simultaneously. As this number was not enough for an ad blocker to provide a good filtering quality (AdGuard Base Filter alone has 30,000 filtering rules), we divided AdGuard for Safari into six content blockers each containing up to 50,000 rules.
 
-[В 2022 году](https://adguard.com/en/blog/adguard-for-safari-1-11.html) Apple увеличила лимит правил фильтрации для каждого блокировщика контента до 150 000 правил, применяемых одновременно. В случае AdGuard для Safari это значит, что для всех шести блокировщиков контента можно одновременно активировать до 900 000 правил.
+[In 2022](https://adguard.com/en/blog/adguard-for-safari-1-11.html), Apple increased the filtering rule limit for each content blocker to 150,000 rules applied simultaneously. Regarding AdGuard for Safari, up to 900,000 rules can be enabled for all six content blockers.
 
-Лимит был увеличен, но структура блокировщиков контента осталась прежней.
+Whereas the limit has been increased, the structure of content blockers has remained the same.
 
-На вкладке «Блокировщики контента» можно увидеть, какие блокировщики контента включены, сколько правил использует каждый из них и какие фильтры работают.
+In the Content blockers tab, you can see which content blockers are enabled, how many rules each of them is using, and which filters are functioning.
 
-> Управлять включёнными фильтрами можно на вкладке «Фильтры». В разделе «Блокировщики контента» отображается только их список.
+:::tip
+
+Управлять включёнными фильтрами можно на вкладке «Фильтры». В разделе «Блокировщики контента» отображается только их список.
+
+:::
 
 ### AdGuard Основные {#adguard_general}
 
@@ -60,7 +71,11 @@ AdGuard для Safari был разработан в соответствии с
 
 *AdGuard Другие* содержит фильтры с различными функциями. Например, в нём есть фильтр, который разблокирует поисковую рекламу и саморекламу сайтов. В некоторых случаях это помогает найти то, что нужно, потому что такая реклама более релевантна и менее навязчива, чем другие её виды.
 
-> У нас нет «приемлемой рекламы», оплачиваемой рекламодателями. Вместо этого мы даём пользователям возможность включить отображение [поисковой рекламы и саморекламы сайтов](/general/ad-filtering/search-ads).
+:::note Disclaimer
+
+We don’t have any ‘acceptable ads’ paid by advertisers. Вместо этого мы даём пользователям возможность включить отображение [поисковой рекламы и саморекламы сайтов](/general/ad-filtering/search-ads).
+
+:::
 
 ### AdGuard Пользовательские {#adguard_custom}
 
@@ -78,4 +93,8 @@ AdGuard для Safari был разработан в соответствии с
 
 На вкладке «О программе» находится информация о текущей версии продукта и ссылки на юридические документы. Там же находится ссылка на наш репозиторий на GitHub. Там вы можете следить за развитием продукта, предлагать новые функции и сообщать об ошибках.
 
-> AdGuard для Safari можно скачать бесплатно [из App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259). Подробная инструкция по установке доступна [в Базе знаний](../installation).
+:::note Reminder
+
+AdGuard for Safari can be downloaded for free [from the App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259). Подробная инструкция по установке доступна [в Базе знаний](../installation).
+
+:::

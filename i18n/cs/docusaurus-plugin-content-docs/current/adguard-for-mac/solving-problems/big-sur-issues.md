@@ -3,7 +3,7 @@ title: Problémy kompatibility s různými verzemi macOS
 sidebar_position: 4
 ---
 
-:::note
+:::info
 
 Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 
@@ -54,11 +54,13 @@ AdGuard nebude fungovat společně s Cisco AnyConnect v režimu *Rozšíření s
 
 #### Kompatibilita s Flutter
 
-> Tento problém je vyřešen ve Flutter 2.2, který byl vydán v červnu 2021. Pro opravu aplikací vyvinutých ve Flutteru je však třeba počkat na aktualizace. Používáte-li Flutter spolu s AdGuardem v režimu "Rozšíření sítě" (nebo s jinou aplikací typu "Transparentní proxy") v Monterey nebo Big Sur, narazíte na problémy: projekty se nebudou otevírat a Flutter bude fakticky nefunkční. Tuto chybu jsme již nahlásili společnosti Apple. Mezitím můžete použít tato dočasná řešení:
+Tento problém je vyřešen ve Flutter 2.2, který byl vydán v červnu 2021. Pro opravu aplikací vyvinutých ve Flutteru je však třeba počkat na aktualizace.
+
+Používáte-li Flutter spolu s AdGuardem v režimu "Rozšíření sítě" (nebo s jinou aplikací typu "Transparentní proxy") v Monterey nebo Big Sur, narazíte na problémy: projekty se nebudou otevírat a Flutter bude fakticky nefunkční. Tuto chybu jsme již nahlásili společnosti Apple. Mezitím můžete použít tato dočasná řešení:
 
 1) Použijte AdGuard v režimu [Automatický proxy](#automatic-proxy).
 
-2) Vypněte SIP a přepnněte AdGuard do režimu rozšíření jádra, jak je vysvětleno [zde](#kernel-extension).
+2) Vypněte SIP a přepněte AdGuard do režimu rozšíření jádra, jak je vysvětleno [zde](#kernel-extension).
 
 #### Aplikace VPN se starším rozhraním API
 
@@ -76,11 +78,15 @@ Tyto problémy již společnost Apple odstranila, ale ve starších verzích sys
 
 V tuto chvíli není režim Rozšíření sítě v AdGuardu kompatibilní s [Little Snitch 5](https://obdev.at/products/littlesnitch/index.html). Pokud jsou spuštěny obě aplikace, můžete se setkat s problémy s chováním různých aplikací, i když nejsou AdGuardem filtrovány. Tento problém je přímo způsoben chybou v Big Sur a společnost Apple jsme o něm již informovali. To nás vede k domněnce, že tento problém bude vyřešen v některé z příštích aktualizací.
 
-Je třeba říci, že tento problém nelze vyřešit vypnutím monitorování připojení v aplikaci Little Snitch, protože tato akce neodstraní rozšíření aplikace Little Snitch ze systému. Doporučujeme přepnout na režim filtrování [**Automatiký proxy**](#automatic-proxy) při spuštění AdGuardu spolu s Little Snitch na Big Sur, alespoň dokud Apple chybu neopraví.
+Je třeba říci, že tento problém nelze vyřešit vypnutím monitorování připojení v aplikaci Little Snitch, protože tato akce neodstraní rozšíření aplikace Little Snitch ze systému. Doporučujeme přepnout na režim filtrování [**Automatický proxy**](#automatic-proxy) při spuštění AdGuardu spolu s Little Snitch na Big Sur, alespoň dokud Apple chybu neopraví.
 
 ### Kompatibilita s lokálními proxy
 
-> Poznámka: AdGuard nyní dokáže (většinou) bez problémů filtrovat místní proxy. Pokud se setkáte s problémy ve verzích operačního systému 11.1+ nebo pokud používáte Big Sur 11.0, odeberte místní proxy z nastavení systému a nakonfigurujte v AdGuardu odchozí proxy podle níže uvedených pokynů.
+:::note
+
+AdGuard nyní dokáže (většinou) bez problémů filtrovat místní proxy. Pokud se setkáte s problémy ve verzích operačního systému 11.1+ nebo pokud používáte Big Sur 11.0, odeberte místní proxy z nastavení systému a nakonfigurujte v AdGuardu odchozí proxy podle níže uvedených pokynů.
+
+:::
 
 Chcete-li nakonfigurovat odchozí proxy v AdGuardi pro Mac v Big Sur, musíte jít do nabídky *AdGuard → Pokročilé → Pokročilá nastavení...*. Kliknutím na oblast *Hodnota* v nastavení `upstream.proxy` nakonfigurujte proxy.
 
@@ -90,13 +96,17 @@ Zadejte řetězec, který vypadá jako `scheme://user:password@host:port`, kde
 
 * `scheme` je buď `http`, `https`, `socks4` nebo `socks5`, v závislosti na typu vašeho proxy,
 
-> Pokud používáte typ proxy `socks5`, nastavte hodnotu `upstream.proxy.socks5udp` na `true`, aby AdGuard směroval provoz UDP na proxy.
+Pokud používáte typ proxy `socks5`, nastavte hodnotu `upstream.proxy.socks5udp` na `true`, aby AdGuard směroval provoz UDP na proxy.
 
 * `user` a `password` jsou odpovídající uživatelské jméno a heslo vašeho proxy (je-li potřeba). Ignorujte jedno z nich nebo obě, pokud nejsou použitelné,
 * `hosts` je IP adresa vašeho proxy,
 * `port` je požadované číslo portu, které má proxy používat.
 
-> Příklad: `socks5://localhost:6322` nakonfiguruje lokální proxy SOCKS5, který naslouchá portu 6322 a nevyžaduje uživatelské jméno ani heslo.
+:::note Příklad
+
+`socks5://localhost:6322` nakonfiguruje lokální proxy SOCKS5, který naslouchá portu 6322 a nevyžaduje uživatelské jméno ani heslo.
+
+:::
 
 Klikněte na *Použít*, aby AdGuard směroval veškerý provoz, který přes něj prošel na nakonfigurovaný proxy.
 
@@ -119,7 +129,11 @@ Především potřebujete funkční server na straně proxy. S největší pravd
 }
 ```
 
-> Více informací o tom, jak začít, najdete na webu [Shadowsocks](https://shadowsocks.org/guide/what-is-shadowsocks.html).
+:::tip
+
+Více informací o tom, jak začít, najdete na webu [Shadowsocks](https://shadowsocks.org/guide/what-is-shadowsocks.html).
+
+:::
 
 Pak byste museli do Macu nainstalovat klienta Shadowsocks. Ujistěte se, že jste v jeho nastavení zvolili "Manuální režim" nebo "Automatický režim"! Konfigurace nebude fungovat, pokud vyberete "Globální režim" (nebo "Automatický režim" ve verzích Big Sur před verzí 11.1).
 
@@ -153,7 +167,11 @@ Pokud se v Big Sur nebo Monterey setkáte s problémy, které nelze vyřešit ž
 
 Nyní AdGuard automaticky přidal soubor **.pac** do síťových nastavení vašeho Macu, takže systém bude považovat AdGuard za proxy a bude se snažit posílat veškerý provoz přes AdGuard.
 
-> Počítejte s tím, že některé aplikace mohou toto nastavení systému ignorovat a jejich provoz nebude filtrován.
+:::note
+
+Některé aplikace mohou toto nastavení systému ignorovat a jejich provoz nebude filtrován.
+
+:::
 
 ### Zapnutí režimu Rozšíření jádra v Big Sur a Monterey {#kernel-extension}
 
@@ -167,4 +185,8 @@ Nyní, když je SIP zakázáno, povolíte rozšíření jádra tímto způsobem:
 
 1) Otevřete menu AdGuardu. 2) Vyberte *Předvolby...*. 3) Přepněte na kartu *Síť*. 4) Klikněte na tlačítko *Vybrat režim...*. 5) Vyberte *Rozšíření jádra*. 6) Potvrďte, že chcete přepnout na režim Rozšíření jádra.
 
-> Tuto metodu však doporučujeme použít pouze v případě, že vše ostatní selže, protože to může vést k neočekávaným problémům.
+:::caution
+
+Tuto metodu však doporučujeme použít pouze v případě, že vše ostatní selže, protože to může vést k neočekávaným problémům.
+
+:::

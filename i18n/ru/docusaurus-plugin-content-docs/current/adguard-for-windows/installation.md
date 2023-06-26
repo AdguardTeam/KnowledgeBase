@@ -3,7 +3,7 @@ title: Установка
 sidebar_position: 2
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -81,7 +81,11 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 ![Удаление завершено *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/standard-uninstall-2.png)
 
-> Следующие шаги выполняйте только в том случае, если выполнения первых двух шагов по каким-то причинам оказалось недостаточно. Обычно это можно определить, увидев некорректную переустановку AdGuard, но мы настоятельно рекомендуем обратиться в службу поддержки, прежде чем использовать шаги 3–4 расширенной инструкции по удалению.
+:::caution
+
+Следующие шаги выполняйте только в том случае, если выполнения первых двух шагов по каким-то причинам оказалось недостаточно. Обычно это можно определить, увидев некорректную переустановку AdGuard, но мы настоятельно рекомендуем обратиться в службу поддержки, прежде чем использовать шаги 3–4 расширенной инструкции по удалению.
+
+:::
 
 * Выберите *Расширенное удаление* и нажмите *Удалить*.
 

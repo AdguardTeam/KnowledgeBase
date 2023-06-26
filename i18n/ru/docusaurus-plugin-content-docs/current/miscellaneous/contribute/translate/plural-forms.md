@@ -20,12 +20,12 @@ sidebar_position: 4
 
 ![польский](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
-Вот таблица сравнения плюральных форм в английском и польском: 
+Вот таблица сравнения плюральных форм в английском и польском:
 
       Английская версия:                                                 Польские эквиваленты:
     
-      1. форма — It takes one hour.                                     1. форма — Zajmuje to godzinę. 
-      2. форма — It takes two hours.                                    2. форма — Zajmuje to dwie godziny. 
+      1. форма — It takes one hour.                                     1. форма — Zajmuje to godzinę.
+      2. форма — It takes two hours.                                    2. форма — Zajmuje to dwie godziny.
       3. форма — It takes five hours.                                   3. форма — Zajmuje to pięć godzin.
 
 Польское *'godzinę'* (час) имеет три разные формы, английское слово с теми же числительными склоняется только по двум формам.
@@ -125,7 +125,7 @@ sidebar_position: 4
 Получается, если вы переводите на словацкий, вам нужно использовать три шаблона с тремя формами слова *počítač"* (компьютер).
 
 *Если мы проигнорируем одну из форм и будем использовать только два шаблона для словацкого языка вместо трёх, некоторые числа система подставит неправильно*. В результате появятся грамматические ошибки: *Standard license for 5 computer*.
-> **Всегда используйте столько форм, сколько есть в вашем языке, даже если в самом слове меньше словоформ.**
+> **Always use as many forms as there are in your language, even when the word itself has fewer word forms.**
 
 Например, сербское слово *računar* (компьютер) имеет только две формы. Но в сербском есть 3 плюральные формы.
 
@@ -147,10 +147,10 @@ sidebar_position: 4
 
 + Обратитесь к правилам употребления множественного числа в языке, на который переводите;
 
-> Количество шаблонов должно соответствовать количеству форм множественного числа в вашем языке. Это касается даже тех случаев, когда слово не меняется в зависимости от числительных. Две формы множественного числа – два шаблона в переводе; пять форм множественного числа – пять шаблонов и т. д.
+The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms – two templates in translations; five plural forms – five templates, etc.
 
 + Не забывайте использовать знак вертикальной черты между шаблонами, как в оригинальных строках;
 
 + Не переводите, не заполняйте и не удаляйте такие плейсхолдеры, как **%count%**.
 
-Если переводы выполнены по правилам, система верно считает форматирование и покажет нужную форму с нужным числительным, а у разработчиков AdGuard будет меньше трудностей.
+By following these simple rules you will help AdGuard developers avoid a lot of unnecessary complications during the localization process.

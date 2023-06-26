@@ -3,7 +3,7 @@ title: Jak získat záznam Logcat
 sidebar_position: 4
 ---
 
-:::note
+:::info
 
 Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 
@@ -32,7 +32,11 @@ Chcete-li získat hlášení o chybě přímo ze zařízení, postupujte takto:
 
 5. Odešlete tento protokol našemu týmu podpory.
 
-> Poznámka: Náš tým podpory zpracuje vaši žádost mnohem rychleji, pokud ve zprávě uvedete číslo HelpDesk nebo číslo problému GitHub.
+:::note
+
+Náš tým podpory zpracuje vaši žádost mnohem rychleji, pokud ve zprávě uvedete číslo HelpDesk nebo číslo problému GitHub.
+
+:::
 
 ## Další pokyny (pro staré verze systému Android)
 
@@ -67,7 +71,7 @@ Přímý odkaz ke stažení:
 
 3. Spusťte tento příkaz v konzole (otevře se po instalaci):
 
-> adb logcat -v threadtime -d > C:\logcat.txt
+adb logcat -v threadtime -d > C:\logcat.txt
 
 Tento protokol nám zašlete prostřednictvím podpory nebo jiným způsobem.
 
@@ -83,4 +87,8 @@ Tento protokol nám zašlete prostřednictvím podpory nebo jiným způsobem.
 
 5. Odešlete tento protokol našemu týmu podpory.
 
-> Poznámka: Náš tým podpory zpracuje vaši žádost mnohem rychleji, pokud ve zprávě uvedete číslo HelpDesk nebo číslo problému GitHub.
+:::note
+
+Náš tým podpory zpracuje vaši žádost mnohem rychleji, pokud ve zprávě uvedete číslo HelpDesk nebo číslo problému GitHub.
+
+:::

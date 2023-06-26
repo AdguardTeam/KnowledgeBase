@@ -1,9 +1,9 @@
 ---
 title: Safari에서 YouTube 광고를 차단하는 방법
 sidebar_position: 4
----  
+---
 
-:::note
+:::info
 
 This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -23,4 +23,8 @@ Safari에서 YouTube 광고를 차단하는 확장을 활성화하려면 다음 
 
 이제 광고없는 YouTube를 시청할 수 있습니다! 참고: 페이지 새로고침하면 확장 기능을 다시 실행해야 합니다.
 
-> 가끔 AdGuard 확장 기능이 표시되지 않을 수 있습니다. 표시되지 않는 경우, 지침을 다시 따르거나 기기를 다시 시작하십시오.
+:::tip
+
+가끔 AdGuard 확장 기능이 표시되지 않을 수 있습니다. 표시되지 않는 경우, 지침을 다시 따르거나 기기를 다시 시작하십시오.
+
+:::

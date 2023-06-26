@@ -14,17 +14,24 @@ AdGuard Browser-Assistent ist eine Erweiterung, die in einem Browser installiert
 ### Kompatibilität mit der Haupt-App
 Wenn Sie sich angewöhnt haben, unsere bisherige AdGuard-Werbeblocker-Erweiterung [im Integrationsmodus](/adguard-browser-extension/integration-mode) zu verwenden, wird Ihnen vielleicht die Lösung gefallen, die wir für den neuen Browser-Assistenten entwickelt haben.
 
-Hintergrundinformationen:
-> In früheren Versionen der AdGuard-Browsererweiterung (vor v3.5) übernahm die Erweiterung, wenn Sie sie zusammen mit einem Desktop-AdGuard für Mac installiert hatten, die Funktionen des Assistenten, hörte auf, sich selbst zu filtern, und verließ sich dabei auf die App. Die Erweiterung und die App funktionierten zusammen, aber manchmal schlug die Integration fehl. Einige Websites würden nicht mehr durch das Desktop-Programm geschützt und nur noch von der weniger leistungsstarken Erweiterung gesichert.
+:::note Background information
 
-> Bei der Verwendung des Browser-Assistenten spielen all diese Probleme keine Rolle, da es im Wesentlichen keine Konflikte geben kann. Die Rolle des Browser-Assistenten ist gut definiert und kann das Funktionieren der Haupt-App nicht beeinträchtigen, sodass Sie sich keine Sorgen machen müssen.
+In previous versions of the AdGuard Browser Extension (before v3.5), if you had it installed along with a desktop AdGuard for Mac, the extension took over the functions of Assistant, stopped filtering itself and relied on the app to do this. The extension and the app worked in conjunction but sometimes the integration would fail. Some websites would stop being protected by the desktop program and be backed up only by the less powerful extension.
+
+When using the Browser Assistant, all these problems don’t matter as there can be no conflicts in essence. The role of the Browser Assistant is well defined and it can’t hinder the functioning of the main app, so there is no need to worry.
+
+:::
 
 ### Intelligentes Onboarding
 Wenn AdGuard für Mac zum ersten Mal installiert wird, begegnet ein Benutzer als erstes dem Onboarding. Während dieses Vorgangs lernt der Benutzer schnell die Einstellungen von AdGuard kennen und kann die Filterung nach seinen Wünschen anpassen. In einer Phase ermittelt AdGuard den Standardbrowser des Benutzers und stellt ihm einen Download-Link für den neuen Assistenten zur Verfügung.
 
 ![Installieren eines neuen Browser-Assistenten](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_onboarding_safari.jpg)
 
-> In seltenen Fällen kann es vorkommen, dass ein Browser mit dem Browser-Assistenten nicht kompatibel ist, und dem Benutzer wird stattdessen angeboten, die Legacy-Version zu installieren.
+:::note
+
+In seltenen Fällen kann es vorkommen, dass ein Browser mit dem Browser-Assistenten nicht kompatibel ist, und dem Benutzer wird stattdessen angeboten, die Legacy-Version zu installieren.
+
+:::
 
 ## Separate Registerkarte in den Einstellungen
 Der neue Browser-Assistent hat eine eigene Registerkarte in den Einstellungen von AdGuard für Mac, zusammen mit Privatsphären-Modus, Internetsicherheit, Kindersicherung und anderen. Machen Sie sich keine Sorgen, wenn Sie die Möglichkeit verpasst haben, den Browser-Assistenten während des Onboardings zu installieren, Sie finden diese Option in den Einstellungen der App. Außerdem gibt es ein Kontrollkästchen, um den alten Assistenten zu aktivieren.

@@ -7,7 +7,7 @@ sidebar_position: 2
 
 Licenci AdGuardu lze zakoupit na stránce [adguard.com](https://adguard.com/license.html). AdGuard Pro pro iOS lze zakoupit v App Store. Licence blokátoru reklam AdGuard prodávají také různí distributoři.
 
-> Dostupnost AdGuard produktů v obchodech s aplikacemi a u distributorů závisí na vaší zemi.
+Dostupnost AdGuard produktů v obchodech s aplikacemi a u distributorů závisí na vaší zemi.
 
 ## Jak upgradovat licenci{#upgrade}
 

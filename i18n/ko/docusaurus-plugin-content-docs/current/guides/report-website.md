@@ -16,7 +16,11 @@ sidebar_position: 3
 
 ## 이 웹사이트에 관한 불만 사항 제출 {#report}
 
-> **참고**: 앱 또는 AdGuard 브라우저 어시스턴트를 통해 불만 사항을 보내면 모든 정보가 자동으로 미리 채워집니다. 스크린샷을 제외하고는 직접 만들어서 첨부해야 합니다. [직접 링크(](https://reports.adguard.com/new_issue.html))를 사용하는 경우 데이터를 수동으로 입력해야 합니다.
+:::note
+
+When you send a complaint via the app or via AdGuard Browser Assistant, all information is pre-filled automatically. 스크린샷을 제외하고는 직접 만들어서 첨부해야 합니다. [직접 링크(](https://reports.adguard.com/new_issue.html))를 사용하는 경우 데이터를 수동으로 입력해야 합니다.
+
+:::
 
 광고가 다시 삽입되거나 웹사이트가 잘못 표시되는 것을 신고하려면 다음과 같이 해야 합니다:
 
@@ -68,7 +72,11 @@ sidebar_position: 3
 
 ## 양식 작성 {#form}
 
-> **참고**: 앱 또는 AdGuard 어시스턴트를 통해 불만 사항을 보내면 모든 정보가 자동으로 미리 채워집니다. 스크린샷을 제외하고는 직접 만들어서 첨부해야 합니다. [직접 링크](https://reports.adguard.com/en/new_issue.html)를 사용하는 경우 데이터를 수동으로 입력해야 합니다.
+:::note
+
+When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. 스크린샷을 제외하고는 직접 만들어서 첨부해야 합니다. [직접 링크](https://reports.adguard.com/en/new_issue.html)를 사용하는 경우 데이터를 수동으로 입력해야 합니다.
+
+:::
 
 1. 양식 작성은 제품의 유형과 버전을 자세히 설명하는 것으로 시작됩니다;
 

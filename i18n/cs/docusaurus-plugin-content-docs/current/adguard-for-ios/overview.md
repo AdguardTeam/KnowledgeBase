@@ -3,7 +3,7 @@ title: Přehled funkcí
 sidebar_position: 1
 ---
 
-:::note
+:::info
 
 Tento článek popisuje AdGuard pro iOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 
@@ -23,7 +23,11 @@ Všechny blokátory obsahu a jejich stavy, které tematické filtry aktuálně o
 
 ![Blokátory obsahu *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/content_blockers_en.jpeg)
 
-> Tip: Pro nejlepší kvalitu filtrování ponechte všechny blokátory obsahu zapnuté.
+:::tip
+
+Pro nejlepší kvalitu filtrování ponechte všechny blokátory obsahu zapnuté.
+
+:::
 
 ### Filtry {#filters}
 
@@ -35,15 +39,19 @@ Všechny filtry jsou seskupeny do tematických kategorií. Chcete-li zobrazit ú
 
 Je jich osm a každá kategorie sdružuje několik filtrů, které mají společný účel, tj. blokování reklam, blokování widgetů sociálních sítí, upozornění na soubory cookies, ochranu uživatele před podvody online. Chcete-li se rozhodnout, které filtry vyhovují vašim potřebám, přečtěte si jejich popis a projděte štítky (`reklamy`, `soukromí`, `doporučeno` atd.).
 
-> Více povolených filtrů nezaručuje, že bude méně reklam. Velký počet současně aktivovaných různých filtrů snižuje kvalitu blokování reklam.
+:::note
 
-> Kategorie Vlastní filtry je ve výchozím nastavení prázdná, aby do ní uživatelé mohli přidávat své filtry podle adresy URL. Filtry můžete nalézt na internetu nebo si je dokonce [vytvořit sami](/general/ad-filtering/create-own-filters).
+Více povolených filtrů nezaručuje, že bude méně reklam. Velký počet současně aktivovaných různých filtrů snižuje kvalitu blokování reklam.
+
+:::
+
+Kategorie Vlastní filtry je ve výchozím nastavení prázdná, aby do ní uživatelé mohli přidávat své filtry podle adresy URL. Filtry můžete nalézt na internetu nebo si je dokonce [vytvořit sami](/general/ad-filtering/create-own-filters).
 
 ### Uživatelská pravidla {#user-rules}
 
 Zde můžete přidávat nová pravidla — buď je zadáte ručně, nebo použijete [nástroj pro ruční blokování AdGuard v Safari](#assistant). Pomocí tohoto nástroje můžete přizpůsobit filtrování Safari, aniž byste museli přidávat celý seznam filtrů.
 
-> Naučte se, jak vytvořit [vlastní filtry reklam](/general/ad-filtering/create-own-filters). Upozorňujeme však, že mnohé z nich nebudou v Safari v iOS fungovat.
+Naučte se, jak vytvořit [vlastní filtry reklam](/general/ad-filtering/create-own-filters). Upozorňujeme však, že mnohé z nich nebudou v Safari v iOS fungovat.
 
 ![Obrazovka uživatelských pravidel *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/user_rules_en.jpeg)
 
@@ -55,7 +63,11 @@ Třetí část obrazovky *Ochrana Safari*. Pokud chcete vypnout blokování rekl
 
 [Modul DNS ochrana](https://adguard-dns.io/kb/general/dns-filtering/) zlepšuje vaše soukromí šifrováním provozu DNS. Na rozdíl od blokování obsahu v Safari funguje DNS ochrana v celém systému, tj. i mimo Safari, v aplikacích a dalších prohlížečích. Před použitím tohoto modulu jej musíte povolit. Můžete to udělat na domovské obrazovce klepnutím na ikonu štítu v horní části obrazovky nebo přechodem na kartu *Ochrana* → *DNS ochrana*.
 
-> Aby bylo možné spravovat nastavení DNS, vyžadují aplikace AdGuardu vytvoření lokální VPN. Provoz nebude směrován přes žádné vzdálené servery. Přesto vás systém požádá o potvrzení oprávnění k přístupu.
+:::note
+
+Aby bylo možné spravovat nastavení DNS, vyžadují aplikace AdGuardu vytvoření lokální VPN. Provoz nebude směrován přes žádné vzdálené servery. Přesto vás systém požádá o potvrzení oprávnění k přístupu.
+
+:::
 
 ### DNS implementace {#dns-implementation}
 
@@ -103,7 +115,11 @@ V systému iOS 15 přidala společnost Apple podporu pro webová rozšíření S
 
 Chcete-li zapnout *Pokročilou ochranu*, otevřete kartu *Ochrana* klepnutím na druhou ikonu vlevo dole na obrazovce, vyberte modul *Pokročilá ochrana*, aktivujte funkci přepnutím posuvníku a postupujte podle níže uvedených pokynů.
 
-> *Pokročilá ochrana* funguje pouze v systému iOS 15 a novějším. Pokud používáte starší verze systému iOS, uvidíte v aplikaci modul *blokování reklam YouTube* namísto modulu *Pokročilá ochrana*.
+:::note
+
+*Pokročilá ochrana* funguje pouze v systému iOS 15 a novějším. Pokud používáte starší verze systému iOS, uvidíte v aplikaci modul *blokování reklam YouTube* namísto modulu *Pokročilá ochrana*.
+
+:::
 
 ![Obrazovka ochrany v systému iOS 14 a starších *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_14_en.jpeg)
 
@@ -123,7 +139,11 @@ Chcete-li jej zobrazit, postupujte takto: otevřete Safari a klepněte na symbol
 2. **Blokovat prvek na této stránce.** Klepnutím na to přejdete do režimu "Blokovat prvek": vyberte libovolný prvek na stránce, upravte velikost klepnutím na "+" nebo "-", v případě potřeby zobrazte náhled a potvrďte klepnutím na ikonu zaškrtnutí. Vybraný prvek bude na stránce skryt a do uživatelských pravidel bude přidáno odpovídající pravidlo. Chcete-li změnu vrátit, odstraňte to nebo vypněte.
 3. **Nahlásit problém na této stránce.** Otevře webový nástroj pro hlášení chyb, který vám pomůže odeslat hlášení našemu týmu podpory pomocí několika klepnutí. Použijte to, pokud jste si všimli nezablokované reklamy nebo nesprávného blokování na stránce.
 
-> Na zařízeních se systémem iOS 15 jsou funkce asistenta dostupné prostřednictvím [Rozšíření AdGuard Safari Web](../web-extension), které vylepšuje možnosti AdGuardu pro iOS a umožňuje využívat výhod iOS 15. Pomocí tohoto webového rozšíření může AdGuard používat pokročilá pravidla filtrování, a tím blokovat více reklam.
+:::tip
+
+Na zařízeních se systémem iOS 15 jsou funkce asistenta dostupné prostřednictvím [Rozšíření AdGuard Safari Web](../web-extension), které vylepšuje možnosti AdGuardu pro iOS a umožňuje využívat výhod iOS 15. Pomocí tohoto webového rozšíření může AdGuard používat pokročilá pravidla filtrování, a tím blokovat více reklam.
+
+:::
 
 ### Aktivita {#activity}
 
@@ -135,7 +155,11 @@ Zde AdGuard zobrazuje statistiky o požadavcích DNS zařízení, například ce
 
 Níže je uvedena stránka *Nedávná aktivita*. AdGuard ukládá posledních 1500 DNS požadavků, které byly odeslány z vašeho zařízení a zobrazuje jejich atributy, například typ protokolu a cílovou doménu.
 
-> AdGuard tyto informace nikam neodesílá. Tyto informace jsou 100% ukládány ve vašem zařízení.
+:::note
+
+AdGuard tyto informace nikam neodesílá. Tyto informace jsou 100% ukládány ve vašem zařízení.
+
+:::
 
 Klepnutím na libovolný požadavek zobrazíte další podrobnosti. K dispozici budou také tlačítka pro přidání požadavku do seznamu blokovaných/povolených jedním klepnutím.
 

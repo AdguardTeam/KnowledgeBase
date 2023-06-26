@@ -3,7 +3,7 @@ title: 如何设置外出代理
 sidebar_position: 8
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -33,11 +33,11 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 5. 开启 AdGuard 保护。
 
-> 现在 AdGuard 会将所有流量通过 Orbot 代理发送。 如您禁用 Orbot 代理，那么您在 AdGuard 设置中禁用外出代理设置前，互联网连接将不可用。
+Now AdGuard will forward all traffic through Orbot. If you disable Orbot, Internet connection will be unavailable until you disable outbound proxy settings in AdGuard.
 
 ### 如何同时使用 AdGuard 和 PIA（Private Internet Access）
 
-*假设您已是 PIA VPN 的客户，且已将它安装在您的设备上。*
+*Here we presume that you are already a PIA VPN client and have it installed on your device.*
 
 1. Open AdGuard and go to **Settings** → **Network** → **Proxy settings**.
 
@@ -57,7 +57,7 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 ### 如何同时使用 AdGuard 和 TorGuard
 
-*假设您已是 TorGuard 的客户，且已将它安装在您的设备上。*
+*Here we presume that you are already a TorGuard client and have it installed on your device.*
 
 1. Open AdGuard and go to **Settings** → **Network** → **Proxy settings**.
 
@@ -95,9 +95,9 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 ### 如何同时使用 Adguard 和 Shadowsocks
 
-*假设您已是 Shadowsocks 的客户，且已将它安装在您的设备上。*
+*Here we presume that you have already configured a Shadowsocks server and a client on your device.*
 
-**请注意：在您开始设置前，请将 Shadowsocks 应用程序从过滤的应用程序列表移除（「AdGuard」--> 「应用管理」--> 「Shadowsocks」--> 「禁用保护」）以避免运行错误。**
+**Note: You should remove Shadowsocks application from filtering before setting up the process (AdGuard - Apps management - Shadowsocks - Disable AdGuard protection) to avoid infinite loops and drops.**
 
 1. Open AdGuard and go to **Settings** → **Network** → **Proxy settings**.
 
@@ -113,4 +113,4 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 ### 限制
 
-请注意，有个因素可能会阻止一些特定的流量通过外出代理路由。 AdGuard 只重新发送经过它的流量。 基本上，也就是在**「应用管理」**里开启**广告拦截**的应用程序的流量。
+There is a factor that can prevent certain traffic from being routed through the outgoing proxy. AdGuard will only re-route traffic that goes through it. Basically, it means apps that have **Ad blocking** flag enabled in the **Apps Management** tab.

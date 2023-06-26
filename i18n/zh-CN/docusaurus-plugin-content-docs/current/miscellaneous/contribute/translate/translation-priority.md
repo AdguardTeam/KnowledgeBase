@@ -1,7 +1,7 @@
 ---
 title: AdGuard Crowdin：先翻译什么文件
 sidebar_position: 5
---- 
+---
 
 Crowdin上有五个主要的 AdGuard 项目，包括 [AdGuard 应用程序（AdGuard Applications）](https://crowdin.com/project/adguard-applications)、[AdGuard 网站（AdGuard Websites）](https://crowdin.com/project/adguard-websites)、[AdGuard 广告拦截程序的知识库（AdGuard Ad Blocker Knowledge base）](https://crowdin.com/project/adguard-knowledge-base)、[AdGuard VPN 知识库（AdGuard VPN Knowledge Base）](https://crowdin.com/project/adguard-vpn-knowledge-base)和 [AdGuard DNS 知识库（AdGuard DNS Knowledge Base）](https://crowdin.com/project/adguard-knowledge-bases)。
 
@@ -30,6 +30,6 @@ Crowdin上有五个主要的 AdGuard 项目，包括 [AdGuard 应用程序（AdG
 * `critical.resx`
 * `auth.resx`
 
-> 翻译人员和审核员需要特别注意在上述文件中添加新的或更新现有的字符串。
+Adding new strings as well as updating existing ones in these files requires special attention from the project translators and proofreaders.
 
-除了网站之外，AdGuard 网站项目中还有一个用于翻译[交易型电子邮件（transactional emails）](https://crowdin.com/project/adguard-websites/de#/emails)的文件。 此文件中新添加的字符串也具有较高翻译的优先级。
+In addition to websites, there is a file for translating [transactional emails](https://crowdin.com/project/adguard-websites/de#/emails) in the AdGuard Websites project. Newly added strings in this file also have a high translation priority.

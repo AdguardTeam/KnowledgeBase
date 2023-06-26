@@ -3,7 +3,7 @@ title: How to get HAR files
 sidebar_position: 5
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -24,7 +24,11 @@ Sometimes we need to analyze it to block specific ads that are difficult to repr
 
 **Please send the file with logs (that you've got as a result) to the AdGuard support service.**
 
-> Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message.
+:::note
+
+Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message.
+
+:::
 
 ## How to analyze HAR files
 Here are some sources that we can recommend to analyze HAR files:

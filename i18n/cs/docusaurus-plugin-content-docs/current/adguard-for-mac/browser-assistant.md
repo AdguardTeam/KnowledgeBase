@@ -14,17 +14,24 @@ AdGuard Asistent prohlížeče je rozšíření nainstalované v prohlížeči, 
 ### Kompatibilita s hlavní aplikací
 Pokud jste si zvykli používat naše předchozí rozšíření pro blokování reklam AdGuard [v režimu integrace](/adguard-browser-extension/integration-mode), možná se vám zalíbí řešení, které jsme vyvinuli pro nového Asistenta prohlížeče.
 
-Základní informace:
-> V předchozích verzích Rozšíření prohlížeče AdGuard (před verzí 3.5), pokud jste je měli nainstalované spolu s desktopovou aplikací AdGuard pro Mac, převzalo rozšíření funkce Asistenta, přestalo filtrovat samo a spoléhalo se na aplikaci. Rozšíření a aplikace fungovaly společně, ale někdy integrace selhala. Některé webové stránky by přestaly být chráněny programem pro stolní počítače a byly by zálohovány pouze méně výkonným rozšířením.
+:::note Základní informace
 
-> Při použití Asistenta prohlížeče všechny tyto problémy nevadí, protože v podstatě nemůže dojít k žádným konfliktům. Úloha Asistenta prohlížeče je dobře definovaná a nemůže bránit fungování hlavní aplikace, takže se nemusíte obávat.
+V předchozích verzích Rozšíření prohlížeče AdGuard (před verzí 3.5), pokud jste je měli nainstalované spolu s desktopovou aplikací AdGuard pro Mac, převzalo rozšíření funkce Asistenta, přestalo filtrovat samo a spoléhalo se na aplikaci. Rozšíření a aplikace fungovaly společně, ale někdy integrace selhala. Některé webové stránky by přestaly být chráněny programem pro stolní počítače a byly by zálohovány pouze méně výkonným rozšířením.
+
+Při použití Asistenta prohlížeče všechny tyto problémy nevadí, protože v podstatě nemůže dojít k žádným konfliktům. Úloha Asistenta prohlížeče je dobře definovaná a nemůže bránit fungování hlavní aplikace, takže se nemusíte obávat.
+
+:::
 
 ### Chytrý vstup do systému
 Při první instalaci aplikace AdGuard pro Mac se uživatel nejprve setká se vstupem do systému. Během tohoto procesu se uživatel rychle seznámí s nastavením AdGuardu a může si přizpůsobit filtrování podle svých představ. V jedné fázi AdGuard určí výchozí prohlížeč uživatele a poskytne mu odkaz ke stažení nového Asistenta.
 
 ![Instalace nového Asistenta prohlížeče](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_onboarding_safari.jpg)
 
-> V ojedinělých případech se může stát, že prohlížeč nebude s Asistentem prohlížeče kompatibilní a uživateli bude nabídnuta instalace starší verze.
+:::note
+
+V ojedinělých případech se může stát, že prohlížeč nebude s Asistentem prohlížeče kompatibilní a uživateli bude nabídnuta instalace starší verze.
+
+:::
 
 ## Samostatná karta v nastavení
 Nový Asistent prohlížeče má v nastavení AdGuardu pro Mac vlastní záložku spolu s Režimem utajení, Bezpečným prohlížením, Ochranou rodiny a dalšími. Nebojte se, pokud jste na začátku nestihli nainstalovat Asistenta prohlížeče, tuto možnost najdete v nastavení aplikace. Kromě toho je zde zaškrtávací políčko pro povolení staršího asistenta.

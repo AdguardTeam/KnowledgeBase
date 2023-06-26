@@ -3,7 +3,7 @@ title: Installation
 sidebar_position: 2
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -81,7 +81,11 @@ In case regular uninstall doesn't work for any reason, you can try to use an adv
 
 ![Uninstall finished *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/standard-uninstall-2.png)
 
-> 请注意！ 下述的第三四步，只在由于某些原因上述两个步骤无法卸载 AdGuard 的情况下，才可以执行。 即当您执行「一般卸载」后，还是无法重新安装 AdGuard 时。我们强烈推荐执行下述进阶卸载的第三四步前，请您先于技术支持联系。
+:::caution
+
+请注意！ 下述的第三四步，只在由于某些原因上述两个步骤无法卸载 AdGuard 的情况下，才可以执行。 即当您执行「一般卸载」后，还是无法重新安装 AdGuard 时。我们强烈推荐执行下述进阶卸载的第三四步前，请您先于技术支持联系。
+
+:::
 
 * 选择*进阶卸载*（Advanced uninstall）并点击*卸载*（Uninstall ）。
 

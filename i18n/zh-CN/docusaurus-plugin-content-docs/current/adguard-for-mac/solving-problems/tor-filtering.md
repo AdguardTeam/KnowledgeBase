@@ -3,7 +3,7 @@ title: 在 Tor 浏览器设置过滤
 sidebar_position: 10
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -27,4 +27,4 @@ Public Key Pinning（公钥固定）是一种安全措施，允许网站确保�
 
 为了应用更改，请重新开启 Tor 浏览器。
 
-> 如果您手动改变设置，Tor 浏览器过滤将被停止。
+If you manually change these settings, Tor filtering will be stopped.

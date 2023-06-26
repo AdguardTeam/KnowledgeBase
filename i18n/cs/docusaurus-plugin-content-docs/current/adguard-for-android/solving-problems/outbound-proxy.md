@@ -3,7 +3,7 @@ title: Jak nastavit odchozí proxy
 sidebar_position: 8
 ---
 
-:::note
+:::info
 
 Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 
@@ -33,7 +33,7 @@ Nebo můžete klepnout na **Přidat proxy**, zadat tyto hodnoty ručně a nastav
 
 5. Zapnout AdGuard ochranu.
 
-> Nyní bude AdGuard přeposílat veškerý provoz přes Orbot. Pokud zakážete Orbot, připojení k Internetu bude nedostupné, dokud nezakážete nastavení odchozího proxy v AdGuardu.
+Nyní bude AdGuard přeposílat veškerý provoz přes Orbot. Pokud zakážete Orbot, připojení k Internetu bude nedostupné, dokud nezakážete nastavení odchozího proxy v AdGuardu.
 
 ### Jak používat AdGuard s PIA (Private Internet Access)
 

@@ -9,7 +9,11 @@ You can flexibly adjust the work of Stealth Mode: for instance, you can prohibit
 
 Below we will list and describe the main features and options that you can control in the **Stealth Mode** settings. They are split into four groups: **General**, **Tracking methods**, **Browser API**, and **Miscellaneous**.
 
-> Some options may not be available depending on the particular product due to OS or other limitations.
+:::note
+
+Some options may not be available depending on the particular product due to OS or other limitations.
+
+:::
 
 ## 一般 {#general}
 
@@ -79,7 +83,7 @@ You can also set an arbitrary value for Referrer by entering it into the *Custom
 
 Note that to be able to filter traffic, AdGuard applications 'intercept' browser-to-server requests. Requests to ad, tracking, and phishing servers may be altered before sending them to the server or blocked completely. Same goes for the *Hide Referrer from third parties* option: AdGuard intercepts HTTP(S) requests, in particular to remove or change the Referrer header if this option is enabled. However, it happens only after these requests “leave” the browser. This means that if you monitor Referrer inside the browser (for example, with the help of Chrome's Developer Tools), you will see the original Referrer because the request hasn't reached AdGuard yet. You can use software like [Fiddler](https://www.telerik.com/fiddler) to make sure that Referrer gets altered correctly.
 
-On the opposite, due to the nature of all browser extensions, AdGuard Browser extension works 'inside' the browser. It will alter the Referrer right then and there, so Developer Tools will show the desired Referrer for your requests.
+On the opposite, due to the nature of all browser extensions, AdGuard Browser Extension works 'inside' the browser. It will alter the Referrer right then and there, so Developer Tools will show the desired Referrer for your requests.
 
 ### Hide your User-Agent {#useragent}
 
@@ -103,4 +107,4 @@ The Deep Packet Inspection is a system of deep analysis and filtering of traffic
 
 AdGuard can modify outgoing packet data so that the client does not fall under the DPI blocking criteria. This means that by enabling this option, users can get access to the content they want. Not all DPI systems can be bypassed at this time, but we are constantly working to improve this.
 
-> The "Protect from DPI" feature is already implemented in AdGuard for Windows, AdGuard for Mac, and AdGuard for Android.
+The "Protect from DPI" feature is already implemented in AdGuard for Windows, AdGuard for Mac, and AdGuard for Android.

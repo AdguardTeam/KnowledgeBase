@@ -3,41 +3,41 @@ title: 'HTTPS 필터링: 알려진 문제'
 sidebar_position: 2
 ---
 
-> 수정: 2022년 9월 20일
+Last update: September 20, 2022
 
-> 이 글을 이해하려면 암호화, TLS 및 HTTPS에 대한 기본 지식이 필요할 수 있습니다.
+Understanding this article may require some basic knowledge about encryption, TLS, and HTTPS.
 
-아래의 그림에서 HTTPS 필터링 작동 방식을 확인할 수 있습니다.
+First, look at this simple diagram that shows the general structure of the HTTPS protocol:
 
-![HTTPS 필터링이란 무엇인가요](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
+![What is HTTPS filtering](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
 
-AdGuard는 브라우저에서 사용하는 TLS 연결 속성을 복사합니다.
+AdGuard copies properties of the TLS connection that your browser uses:
 
 * AdGuard는 동일한 TLS 버전을 사용합니다.
 * AdGuard는 브라우저와 동일한 암호화 방법(ciphers)을 사용합니다.
 
-최신의 안전한 브라우저를 사용하는 경우, 알려진 TLS 문제에 대처하고 안전하지 않은 암호를 사용하지 않습니다.
+Effectively, it means that if you use a modern, safe browser, it will take all known TLS problems into account and won’t attempt to use unsafe ciphers.
 
-**인증서의 유효성이 의심되는 경우**, AdGuard는 도메인에 대한 모든 연결의 필터링을 중단하고 브라우저가 모든 결정을 담당하도록 합니다.
+**What does AdGuard do when there are any doubts about the certificate’s validity?** In such cases, AdGuard entirely ceases filtering of all connections to this domain and leaves the browser in charge of all decisions.
 
 ## 알려진 문제
 
-AdGuard의 HTTPS 필터링에는 단점이 있지만, 이미 이에 대한 업데이트 계획을 가지고 있습니다.
+HTTPS filtering in AdGuard has its drawbacks. Almost all of them are scheduled to be eliminated in the next few AdGuard versions.
 
-알려진 문제는 다음과 같습니다.
+All the issues known to us and the ETAs on their fixes are listed below.
 
 ### 실제 인증서 확인
 
-HTTPS 필터링을 사용하는 경우, 웹 사이트에서 사용하는 실제 인증서가 숨겨집니다. 실제 인증서를 확인할 수 없으며 AdGuard에서 발급한 인증서만 볼 수 있습니다.
+The most important drawback of the HTTPS filtering mechanism is that it hides the real certificate of a website. You cannot simply check its original certificate because you can only see the one issued by AdGuard.
 
-이 문제는 [브라우저 어시스턴트](https://adguard.com/adguard-assistant/overview.html)에서 해결되었습니다. 어시스턴트를 사용하면 브라우저에서 바로 필터링을 관리하고 모든 웹 사이트의 원본 인증서를 확인할 수 있습니다.
+This problem is solved in [Browser Assistant](https://adguard.com/adguard-assistant/overview.html). This browser extension helps you manage filtering directly from the browser and allows you to inspect the original certificate of any website.
 
 ### 인증서 투명성(Certificate Transparency)
 
-최신 암호화 덕분에 브라우저는 가짜 SSL 인증서를 가진 악성 웹 사이트를 탐지할 수 있습니다. 그러나 브라우저는 해킹된 인증 기관에서 발급한 인증서를 사용하거나 실제 인증 기관에서 실수로 발급한 인증서를 사용하는 악성 사이트를 탐지할 수 없습니다. 인증서 투명성은 SSL 인증서 발급 프로세스를 개방적이고 투명하게 만들어 이러한 위협으로부터 보호하도록 설계되었습니다.
+Thanks to modern cryptography, browsers can usually detect malicious websites that are provisioned with forged or fake SSL certificates. However, current cryptographic mechanisms aren’t so good at detecting malicious websites if they’re provisioned with mistakenly issued certificates or certificates that have been issued by a certificate authority (CA) that’s been compromised or gone rogue. Certificate Transparency aims to remedy these certificate-based threats by making the issuance and existence of SSL certificates open to scrutiny by domain owners, CAs, and domain users.
 
-**1.11 버전**부터 [CoreLibs](https://github.com/AdguardTeam/CoreLibs/)를 사용하는 AdGuard 제품은 [크롬 인증서 투명성 정책](https://googlechrome.github.io/CertificateTransparency/ct_policy.html)에 따라 정책을 시행할 것입니다.
+AdGuard products which use [CoreLibs](https://github.com/AdguardTeam/CoreLibs/) starting with version **1.11** will implement a policy based on [Chrome Certificate Transparency Policy](https://googlechrome.github.io/CertificateTransparency/ct_policy.html).
 
 ## 의견이나 제안이 있나요?
 
-의견, 제안 또는 질문이 있으시면 `devteam@adguard.com`으로 문의해 주십시오.
+If you’d like to add something, report any errors, or ask a question, please contact us at: `devteam@adguard.com`.

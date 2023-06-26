@@ -5,7 +5,11 @@ sidebar_position: 2
 
 Las aplicaciones de escritorio de AdGuard (AdGuard para Windows y AdGuard para Mac) se pueden usar como proxy. Esto significa que puedes enrutar el tráfico de otros dispositivos a través de AdGuard (totalmente o el tráfico de aplicaciones/navegadores específicos).
 
-> Ten en cuenta que estos dispositivos deben estar en la misma red que la PC o Mac en la que está instalado AdGuard.
+:::note
+
+These devices must be in the same network as the PC or Mac on which AdGuard is installed.
+
+:::
 
 El tráfico HTTP se filtrará en cualquier caso, pero para que AdGuard pueda filtrar el tráfico HTTPS, debes instalar manualmente el certificado de AdGuard en el dispositivo conectado.
 

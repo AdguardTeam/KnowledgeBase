@@ -22,7 +22,7 @@ Různé licence lze používat s různým počtem zařízení:
 * Rodinná: až pro 9 zařízení,
 * AdGuard Pro pro iOS: jedno zařízení.
 
-> Chcete-li použít svou licenci na zařízení, přihlaste se na něm ke svému [AdGuard účtu](../../account/features). Chcete-li rozšířit limit zařízení, můžete provést [upgrade](../activation#how-to-upgrade-a-license) licence.
+Chcete-li použít svou licenci na zařízení, přihlaste se na něm ke svému [AdGuard účtu](../../account/features). Chcete-li rozšířit limit zařízení, můžete provést [upgrade](../activation#how-to-upgrade-a-license) licence.
 
 ## Co je licenční klíč{#license-key}
 
@@ -31,7 +31,7 @@ Licenční klíč je jedinečná sekvence znaků, která představuje licenci Bl
 * [aktivovat si licenci](../activation) v produktu, pokud nemáte AdGuard účet,
 * připojit licenci na AdGuard účet a zrušit její vazbu.
 
-> Při odpojení licence si předem zapište licenční klíč nebo si jej poznamenejte jiným (bezpečným) způsobem. Klíč budete potřebovat k opětovnému připojení licence nebo k jejímu přenosu na jiný účet.
+Při odpojení licence si předem zapište licenční klíč nebo si jej poznamenejte jiným (bezpečným) způsobem. Klíč budete potřebovat k opětovnému připojení licence nebo k jejímu přenosu na jiný účet.
 
 ## Jak obnovit licenční klíč
 
