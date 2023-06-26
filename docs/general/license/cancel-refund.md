@@ -11,10 +11,10 @@ The subscription can be canceled in your AdGuard account. To cancel your subscri
  2. Go to **Licenses** tab
  3. Click **Cancel subscription** below the subscription you no longer need
     ![Cancel *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-cancel-sub.png)
- 
+
  The canceled subscription will be valid until its expiry date.
 
-> Subscriptions purchased on the App Store can be managed in the App Store account or in the device's settings.
+Subscriptions purchased on the App Store can be managed in the App Store account or in the device's settings.
 
 ## How to get a refund
 

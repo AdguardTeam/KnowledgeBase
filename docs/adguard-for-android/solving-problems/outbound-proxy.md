@@ -33,7 +33,7 @@ Or you can tap **Add proxy**, enter these values manually, and set Orbot as a de
 
 5. Enable AdGuard protection.
 
-> Now AdGuard will forward all traffic through Orbot. If you disable Orbot, Internet connection will be unavailable until you disable outbound proxy settings in AdGuard.
+Now AdGuard will forward all traffic through Orbot. If you disable Orbot, Internet connection will be unavailable until you disable outbound proxy settings in AdGuard.
 
 ### How to use AdGuard with PIA (Private Internet Access)
 
