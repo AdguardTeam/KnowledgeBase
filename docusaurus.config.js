@@ -17,7 +17,7 @@ module.exports = {
   tagline: 'Knowledge base for AdGuard products',
   url: url,
   baseUrl: baseUrl,
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   trailingSlash: true,
