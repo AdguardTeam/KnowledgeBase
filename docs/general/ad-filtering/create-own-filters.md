@@ -1578,17 +1578,24 @@ An exception rule without a modifier value disables all matched referrer-policy 
 If a request matches multiple `$referrerpolicy` rules not disabled by exceptions, only one of them (it is not specified which one) is applied.
 
 **Examples**
+
 * `||example.com^$referrerpolicy=unsafe-url` overrides the referrer policy for `example.com` with `unsafe-url`.
 * `@@||example.com^$referrerpolicy=unsafe-url` disables the previous rule.
 * `@@||example.com/abcd.html^$referrerpolicy` disables all `$referrerpolicy` rules on `example.com/abcd.html`.
 
-> **Compatibility with other modifiers**
->
-> `$referrerpolicy` rules are compatible only with `$document` and `$subdocument` [content type modifiers](#content-type-modifiers).
+:::caution Restrictions
 
-> **Compatibility with different versions of AdGuard**
->
-> `$referrerpolicy` is available starting with CoreLibs v1.12.
+`$referrerpolicy` rules are compatible only with
+`$document` and `$subdocument` [content type modifiers](#content-type-modifiers).
+
+:::
+
+:::info Compatibility
+
+Rules with the `$referrerpolicy` modifier are supported by AdGuard for Windows, Mac, and Android,
+**running CoreLibs version 1.12 or later**.
+
+:::
 
 #### **`$removeheader`** {#removeheader-modifier}
 
