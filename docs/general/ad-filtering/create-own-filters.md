@@ -335,7 +335,7 @@ Rules with `$denyallow` modifier are not supported by AdGuard for iOS, Safari, a
 
 **Syntax**
 
-The modifier is a list of one or more expressions separated by `|` symbol, each of which is matched against a domain in a certain way depending on its type (see below).
+The modifier is a list of one or more expressions separated by the `|` symbol, each of which is matched against a domain in a particular way depending on its type (see below).
 
 ```
  domains = ["~"] entry_0 ["|" ["~"] entry_1 ["|" ["~"]entry_2 ["|" ... ["|" ["~"]entry_N]]]]
