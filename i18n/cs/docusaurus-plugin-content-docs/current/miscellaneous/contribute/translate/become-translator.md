@@ -15,7 +15,7 @@ Zvolte jazyk a zobrazí se seznam dostupných složek produktů.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/languages.png)
 
-Výběrem příslušné složky můžete začít překládat doslova libovolný produkt. Máme několik doporučení, s jakými [soubory je lepší začít v projektu AdGuard Websites](../překlad-priorita).
+Výběrem příslušné složky můžete začít překládat doslova libovolný produkt. Máme několik doporučení, s jakými [soubory je lepší začít v projektu AdGuard Websites](../translation-priority).
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/folders.png)
 
