@@ -45,7 +45,7 @@ This guide is for Android 8+. If you have an older OS version, before downloadin
 
 ![Installing apps from unknown sources *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_4.png)
 
-You will be asked to read AdGuard's *License Agreement* and *Privacy Policy*. You can also participate in product development. To do this, check the boxes for *Send crash reports automatically* and *Send technical and interaction data*. Then tap *Continue*.
+You will then be asked to read AdGuard's *License Agreement* and *Privacy Policy*. You can also participate in product development. To do this, check the boxes for *Send crash reports automatically* and *Send technical and interaction data*. Then tap *Continue*.
 
 ![Privacy Policy *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_3.png)
 
