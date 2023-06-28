@@ -331,19 +331,19 @@ Rules with `$denyallow` modifier are not supported by AdGuard for iOS, Safari, a
 
 #### **`$domain`** {#domain-modifier}
 
-`$domain` limits the rule scope to requests made **from** the specified domains and their subdomains (as indicated by the [Referer](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer) HTTP header).
+`$domain` limits the rule scope to requests made **from** the specified domains and their subdomains (as indicated by the [Referer](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer) HTTP header). 
 
 **Syntax**
 
 The modifier is a list of one or more expressions separated by the `|` symbol, each of which is matched against a domain in a particular way depending on its type (see below).
 
 ```
-domains = ["~"] entry_0 ["|" ["~"] entry_1 ["|" ["~"]entry_2 ["|" ... ["|" ["~"]entry_N]]]]
-entry_i = ( regular_domain / any_tld_domain / regexp )
+ domains = ["~"] entry_0 ["|" ["~"] entry_1 ["|" ["~"]entry_2 ["|" ... ["|" ["~"]entry_N]]]]
+ entry_i = ( regular_domain / any_tld_domain / regexp )
 ```
 
 * **`regular_domain`** — a regular domain name (`domain.com`). Corresponds the specified domain and its subdomains. It is matched lexicographically.
-* **`any_tld_domain`** — a domain name ending with wildcard character as TLD (`domain.*`). Matches the specified domain and its subdomains with any TLD lexicographically.
+* **`any_tld_domain`** — a domain name ending with a wildcard character as a [public suffix](https://publicsuffix.org/learn/), e.g. for `example.*` it is `co.uk` in `example.co.uk`. Corresponds to the specified domain and its subdomains with any public suffix. It is matched lexicographically.
 * **`regexp`** — a regular expression, starts and ends with `/`. The pattern works the same way as in the basic URL rules, but the characters `/`, `$`, and `|` must be escaped with `\`.
 
 :::info
@@ -368,7 +368,7 @@ If you want the rule not to be applied to certain domains, start a domain name w
 * `||baddomain.com^$domain=~example.org` blocks requests matching the pattern sent from any domain except `example.org` and its subdomains.
 * `||baddomain.com^$domain=example.org|~foo.example.org` blocks requests sent from `example.org` and its subdomains, except the subdomain `foo.example.org`.
 * `||baddomain.com^$domain=/(^\|.+\.)example\.(com\|org)\$/` blocks requests sent from `example.org` and `example.com` domains and all their subdomains.
-* `||baddomain.com^$domain=~a.com|~b.*|~/(^\|.+\.)c\.(com\|org)\$/` blocks requests sent from any domains except `a.com`, `b` with any TLD (`b.com`, `b.co.uk`, etc.), `c.com` and `c.org`, as well as all subdomains of all the specified domains.
+* `||baddomain.com^$domain=~a.com|~b.*|~/(^\|.+\.)c\.(com\|org)\$/` blocks requests sent from any domains except `a.com`, `b` with any public suffix (`b.com`, `b.co.uk`, etc.), `c.com` and `c.org`, as well as all subdomains of all the specified domains.
 
 **`$domain` modifier matching target domain:**
 
