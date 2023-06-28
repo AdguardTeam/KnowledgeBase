@@ -338,8 +338,8 @@ Rules with `$denyallow` modifier are not supported by AdGuard for iOS, Safari, a
 The modifier is a list of one or more expressions separated by the `|` symbol, each of which is matched against a domain in a particular way depending on its type (see below).
 
 ```
- domains = ["~"] entry_0 ["|" ["~"] entry_1 ["|" ["~"]entry_2 ["|" ... ["|" ["~"]entry_N]]]]
- entry_i = ( regular_domain / any_tld_domain / regexp )
+domains = ["~"] entry_0 ["|" ["~"] entry_1 ["|" ["~"]entry_2 ["|" ... ["|" ["~"]entry_N]]]]
+entry_i = ( regular_domain / any_tld_domain / regexp )
 ```
 
 * **`regular_domain`** — a regular domain name (`domain.com`). Corresponds the specified domain and its subdomains. It is matched lexicographically.
