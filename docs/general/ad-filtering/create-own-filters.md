@@ -331,7 +331,7 @@ Rules with `$denyallow` modifier are not supported by AdGuard for iOS, Safari, a
 
 #### **`$domain`** {#domain-modifier}
 
-`$domain` limits the rule scope to requests made **from** the specified domains and their subdomains (as indicated by the [Referer](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer) HTTP header). 
+`$domain` limits the rule scope to requests made **from** the specified domains and their subdomains (as indicated by the [Referer](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer) HTTP header).
 
 **Syntax**
 
