@@ -343,7 +343,7 @@ The modifier is a list of one or more expressions separated by the `|` symbol, e
 ```
 
 * **`regular_domain`** — a regular domain name (`domain.com`). Corresponds the specified domain and its subdomains. It is matched lexicographically.
-* **`any_tld_domain`** — a domain name ending with wildcard character as TLD (`domain.*`).  Corresponds to the specified domain and its subdomains with any TLD. It is matched lexicographically.
+* **`any_tld_domain`** — a domain name ending with wildcard character as TLD (`domain.*`). Matches the specified domain and its subdomains with any TLD lexicographically.
 * **`regexp`** — a regular expression, starts and ends with `/`. The pattern works the same way as in the basic URL rules, but the characters `/`, `$`, and `|` must be escaped with `\`.
 
 :::info
