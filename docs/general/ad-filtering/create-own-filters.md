@@ -1522,7 +1522,7 @@ The list of the available directives is available [here](https://developer.mozil
 
 :::info Compatibility
 
-Rules with the `$permissions` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**.
+Rules with the `$permissions` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs  v1.11 or later**, and AdGuard Browser Extension, **running TSUrlFilter vX.X.X or later**.
 
 :::
 
