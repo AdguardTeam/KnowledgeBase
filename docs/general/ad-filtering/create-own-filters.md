@@ -1951,7 +1951,7 @@ Rules with `noop` modifier are not supported by AdGuard Content Blocker.
 
 This modifier is deprecated in favor of the [`$redirect` modifier](#redirect-modifier).
 Rules with `$empty` are still supported and being converted into `$redirect=nooptext` now
-but the support shall be removed in the future.
+but the support shall be removed in future.
 
 :::
 
@@ -1973,7 +1973,7 @@ Rules with `$empty` modifier are not supported by AdGuard Content Blocker, AdGua
 
 This modifier is deprecated in favor of the [`$redirect` modifier](#redirect-modifier).
 Rules with `$mp4` are still supported and being converted into `$redirect=noopmp4-1s,media` now
-but the support shall be removed in the future.
+but the support shall be removed in future.
 
 :::
 
