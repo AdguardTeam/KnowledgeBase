@@ -331,15 +331,15 @@ Rules with `$denyallow` modifier are not supported by AdGuard for iOS, Safari, a
 
 #### **`$domain`** {#domain-modifier}
 
-`$domain` limits the rule scope to requests made **from** the specified domains and their subdomains (as indicated by the [Referer](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer) HTTP header). 
+`$domain` limits the rule scope to requests made **from** the specified domains and their subdomains (as indicated by the [Referer](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer) HTTP header).
 
 **Syntax**
 
 The modifier is a list of one or more expressions separated by the `|` symbol, each of which is matched against a domain in a particular way depending on its type (see below).
 
 ```
- domains = ["~"] entry_0 ["|" ["~"] entry_1 ["|" ["~"]entry_2 ["|" ... ["|" ["~"]entry_N]]]]
- entry_i = ( regular_domain / any_tld_domain / regexp )
+domains = ["~"] entry_0 ["|" ["~"] entry_1 ["|" ["~"]entry_2 ["|" ... ["|" ["~"]entry_N]]]]
+entry_i = ( regular_domain / any_tld_domain / regexp )
 ```
 
 * **`regular_domain`** — a regular domain name (`domain.com`). Corresponds the specified domain and its subdomains. It is matched lexicographically.
@@ -581,8 +581,8 @@ Rules with the `$to` modifier are supported by AdGuard for Windows, Mac, and And
 * [`$subdocument`](#subdocument-modifier)
 * [`$websocket`](#websocket-modifier)
 * [`$xmlhttprequest`](#xmlhttprequest-modifier)
-* [`$object-subrequest` (deprecated)](#object-subrequest-modifier)
-* [`$webrtc` (deprecated)](#webrtc-modifier)
+* [`$object-subrequest` (removed)](#object-subrequest-modifier)
+* [`$webrtc` (removed)](#webrtc-modifier)
 
 There is a set of modifiers, which can be used to limit the rule's application area to certain type of content. These modifiers can also be combined to cover, for example, both images and scripts.
 
@@ -682,19 +682,19 @@ AdGuard for Windows, Mac, Android when filtering older browsers cannot accuratel
 
 :::
 
-#### **`$object-subrequest` (deprecated)** {#object-subrequest-modifier}
+#### **`$object-subrequest` (removed)** {#object-subrequest-modifier}
 
-:::danger Deprecation notice
+:::danger Removal notice
 
-`$object-subrequest` modifier is deprecated and is no longer supported. Rules with it are considered as invalid. The rule corresponds to requests by browser plugins (it is usually Flash).
+`$object-subrequest` modifier is removed and is no longer supported. Rules with it are considered as invalid. The rule corresponds to requests by browser plugins (it is usually Flash).
 
 :::
 
-#### **`$webrtc` (deprecated)** {#webrtc-modifier}
+#### **`$webrtc` (removed)** {#webrtc-modifier}
 
-:::danger Deprecation notice
+:::danger Removal notice
 
-This modifier is deprecated and is no longer supported. Rules with it are considered as invalid. If you need to suppress WebRTC, consider using the `nowebrtc` [scriptlet](#scriptlets).
+This modifier is removed and is no longer supported. Rules with it are considered as invalid. If you need to suppress WebRTC, consider using the `nowebrtc` [scriptlet](#scriptlets).
 
 :::
 
@@ -1947,9 +1947,11 @@ Rules with `noop` modifier are not supported by AdGuard Content Blocker.
 
 #### **`$empty` (deprecated)** {#empty-modifier}
 
-:::danger Deprecation notice
+:::caution Deprecation notice
 
-This modifier is deprecated in favor of the [`$redirect` modifier](#redirect-modifier). Rules with `$empty` are converting into `$redirect=nooptext` now.
+This modifier is deprecated in favor of the [`$redirect` modifier](#redirect-modifier).
+Rules with `$empty` are still supported and being converted into `$redirect=nooptext` now
+but the support shall be removed in future.
 
 :::
 
@@ -1967,9 +1969,11 @@ Rules with `$empty` modifier are not supported by AdGuard Content Blocker, AdGua
 
 #### **`$mp4` (deprecated)** {#mp4-modifier}
 
-:::danger Deprecation notice
+:::caution Deprecation notice
 
-This modifier is deprecated in favor of the [`$redirect` modifier](#redirect-modifier). Rules with `$mp4` are converting into `$redirect=noopmp4-1s,media` now.
+This modifier is deprecated in favor of the [`$redirect` modifier](#redirect-modifier).
+Rules with `$mp4` are still supported and being converted into `$redirect=noopmp4-1s,media` now
+but the support shall be removed in future.
 
 :::
 
@@ -2355,7 +2359,7 @@ CSS rules may operate differently [depending on the platform](#cosmetic-rules-pr
 * [Pseudo-class `:remove()` and pseudo-property `remove`](#remove-pseudos)
 * [Pseudo-class `:is()`](#extended-css-is)
 * [Pseudo-class `:not()`](#extended-css-not)
-* [Pseudo-class `:if-not()` (deprecated)](#extended-css-if-not)
+* [Pseudo-class `:if-not()` (removed)](#extended-css-if-not)
 
 CSS 3.0 is not always enough to block ads. To solve this problem AdGuard extends CSS capabilities by adding support for the new pseudo-elements. We have developed a separate [open-source library](https://github.com/AdguardTeam/ExtendedCss) for non-standard element selecting and applying CSS styles with extended properties.
 
@@ -2422,9 +2426,11 @@ Rules with the `:has()` pseudo-class should use the [native implementation of `:
 
 Synonyms `:-abp-has()` is supported by ExtendedCss for better compatibility.
 
-**Deprecation notice**
+:::danger Removal notice
 
 `:if()` is no longer supported as a synonym for `:has()`.
+
+:::
 
 **Syntax**
 
@@ -2986,11 +2992,13 @@ The `:not()` is considered as a standard CSS pseudo-class inside the argument of
 </div>
 ```
 
-#### Pseudo-class `:if-not()` (deprecated) {#extended-css-if-not}
+#### Pseudo-class `:if-not()` (removed) {#extended-css-if-not}
 
-**Deprecation notice**
+:::danger Removal notice
 
-The `:if-not()` pseudo-class is deprecated and is no longer supported. Rules with it are considered as invalid.
+The `:if-not()` pseudo-class is removed and is no longer supported. Rules with it are considered as invalid.
+
+:::
 
 This pseudo-class was basically a shortcut for `:not(:has())`. It was supported by ExtendedCss for better compatibility with some filters subscriptions.
 
