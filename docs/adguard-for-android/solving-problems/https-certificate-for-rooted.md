@@ -1,6 +1,6 @@
 ---
 title: Moving CA certificate to System store on rooted devices
-sidebar_position: 13
+sidebar_position: 14
 ---
 
 AdGuard for Android provides a feature called [HTTPS filtering](../../overview#https-filtering) that makes it possible to [filter encrypted HTTPS traffic](/general/https-filtering/what-is-https-filtering) on your Android device. This feature requires adding the AdGuard's CA certificate to the list of trusted certificates.
@@ -9,11 +9,15 @@ On non-rooted devices CA certificates can be installed to the **User store**. On
 
 However, on rooted devices, you can install the certificate to the **System store** and allow HTTPS filtering of other apps' traffic too.
 
+
 Here's how to do that.
 
 ## How to install AdGuard's Certificate to System store (on a rooted device)
 
 1. Enable HTTPS filtering in AdGuard for Android and save AdGuard's certificate to the User store (use [this instruction](../../overview#https-filtering) if needed)
+
+> From AdGuard for Android v4.1 and after users can install two certificates to the User store, which will help to filter websites in Chrome browser. 
+
 2. Go to **AdGuard app** → **Menu** (≡) → **Settings** → **Network** → **HTTPS filtering** → **Security certificate** → tap “**Copy to the system store**”
 
 That is enough for older versions of Magisk.
@@ -46,7 +50,7 @@ In that case, proceed to steps below:
 
 7. Reboot
 
-![Reboot the device](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-7.png)
+![Reboot the device *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-7.png)
 
 If a new version of "AdGuard certificate" module comes out, repeat steps 3-7 to update the module.
 
