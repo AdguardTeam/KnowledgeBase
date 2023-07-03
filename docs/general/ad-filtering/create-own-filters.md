@@ -1515,8 +1515,7 @@ The list of the available directives is available [here](https://developer.mozil
 
 :::caution Limitations
 
-1. Characters forbidden in the `$permissions` value: `$`;
-2. `$permissions` is compatible with the limited list of modifiers: `$domain`, `$important`, and `$subdocument`.
+1. `$permissions` is compatible with the limited list of modifiers: `$domain`, `$important`, and `$subdocument`.
 
 :::
 
