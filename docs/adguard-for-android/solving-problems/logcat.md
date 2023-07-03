@@ -74,7 +74,7 @@ An example of a successful result:
 
 `adb logcat -v threadtime -d > C:\Program Files\platform-tools\logs.txt` 
 
-Email the created `txt` file to our support team at support@adguard.com.
+Email the created `txt` file as well as problem reproduction time (from part #2) to our support team at support@adguard.com.
 
 ### Alternative way for ROOT users:
 
