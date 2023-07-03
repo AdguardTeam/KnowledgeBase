@@ -7,9 +7,9 @@ To be able to filter HTTPS traffic (which is extremely important as most ads use
 
 ![Certificate *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/Android/3-5/cert-en.gif)
 
-If you experience issues during the manual certificate installation (for example, you installed the certificate, but the application keeps ignoring it), you can follow one of the solutions below:
+If you experience issues during the manual certificate installation (for example, you installed the certificate, but the application keeps ignoring it), you can follow one of the solutions below.
 
 1. Restart AdGuard.
 2. Try to install the correct certificate (AdGuard Personal CA) one more time.
 
-If you still encounter a problem and can't install the certificate, please contact our support team (support@adguard.com). 
+If you still encounter a problem and can't install the certificate, please contact our support team at support@adguard.com. 
