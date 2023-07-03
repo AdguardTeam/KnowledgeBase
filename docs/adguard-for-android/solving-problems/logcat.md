@@ -66,7 +66,7 @@ It is important to reproduce the problem after you're done with the part #1.
 
 `adb devices`
 
-!(Step 3)[https://cdn.adtidy.org/content/kb/ad_blocker/android/logcat/logcat_step-3.png]
+![Step 3](https://cdn.adtidy.org/content/kb/ad_blocker/android/logcat/logcat_step-3.png)
 
 4. Then run the following command (insert the relevant path):
 
