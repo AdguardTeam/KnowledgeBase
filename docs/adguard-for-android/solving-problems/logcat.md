@@ -3,6 +3,12 @@ title: How to get system logs
 sidebar_position: 4
 ---
 
+:::info
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, first-hand [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 Sometimes a regular log may not be enough to identify the origin of the problem. In such cases a system log is needed. Below is the instruction how to collect and get it: via Developer options and Logcat. 
 
 ## Capture a bug report from a device
