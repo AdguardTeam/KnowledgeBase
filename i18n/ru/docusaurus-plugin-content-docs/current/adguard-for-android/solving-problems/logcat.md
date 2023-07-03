@@ -3,6 +3,12 @@ title: Как получить лог Logсat
 sidebar_position: 4
 ---
 
+:::info
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## Общая инструкция
 
 Для решения проблем с вылетами и отключениями программы обычного лога почти всегда оказывается недостаточно. В таких случаях для определения источника проблемы нам нужен системный лог. Инструкция ниже описывает, как его собрать и получить.
@@ -25,7 +31,12 @@ sidebar_position: 4
 ![Отчёт об ошибке *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
 
 5. Отправьте этот лог нашей команде поддержки.
-> Примечание: наша команда поддержки обработает ваш тикет намного быстрее, если вы укажете номер тикета HelpDesk или номер ошибки на GitHub в своём сообщении.
+
+:::note
+
+Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+
+:::
 
 ## Дополнительная инструкция (для старых версий Android)
 
@@ -33,7 +44,7 @@ sidebar_position: 4
 
 **Часть 1: подготовьте устройство**
 
-1. Переключите устройство в режим разработчика. Для этого: перейдите в **Настройки** > **Об устройстве** > нажмите на **Номер сборки** 7 раз.
+1. Переключите устройство в режим разработчика. Для этого: перейдите в **Настройки** → **Об устройстве** → нажмите на **Номер сборки** 7 раз.
 
 2. Перейдите в **Параметры разработчика**.
 
@@ -59,7 +70,8 @@ sidebar_position: 4
 <https://www.androidfilehost.com/?fid=24052804347803384>
 
 3. Запустите эту команду в консоли (она откроется автоматически после установки приложения):
-> adb logcat -v threadtime -d > C:\logcat.txt
+
+adb logcat -v threadtime -d > C:\logcat.txt
 
 Отправьте нам этот лог, связавшись со службой поддержки или любым другим способом.
 
@@ -74,4 +86,9 @@ sidebar_position: 4
 4. Откройте CatLog и нажмите **Прекратить запись** в меню.
 
 5. Отправьте этот лог нашей команде поддержки.
-> Примечание: наша команда поддержки обработает ваш тикет намного быстрее, если вы укажете номер тикета HelpDesk или номер ошибки на GitHub в своём сообщении.
+
+:::note
+
+Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+
+:::

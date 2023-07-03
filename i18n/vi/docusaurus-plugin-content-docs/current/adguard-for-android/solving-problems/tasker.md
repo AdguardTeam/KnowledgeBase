@@ -3,6 +3,12 @@ title: How to automate AdGuard for Android
 sidebar_position: 3
 ---
 
+:::info
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 Many people choose Android because they like customizing settings and want to control their device completely. And it's totally normal if some of AdGuard users are not satisfied with its default behavior. Let's say, you want protection to stop when a certain app is launched, and then restart it again when the app is closed. This is a job for the Tasker app.
 
 ## AdGuard interface
@@ -26,7 +32,7 @@ So, ready to get your hands dirty? Here are actions that, when included in the i
 
 `stop` stops the protection, no extra data required;
 
-`pause` pauses the protection. The difference between this and `stop` is that a notification will appear that restarts the protection when you tap on it. No extra data required;
+`pause` pauses the protection. The difference between this and `stop` is that a notification will appear that restarts the protection when you tap it. No extra data required;
 
 `update` checks for available filter and app updates, no additional data is needed;
 
@@ -100,11 +106,14 @@ Or you  can configure remove parameters manually:
 
  `[trust]` applies for **HTTPS_CONNECT** server type only and include option **Trust any certificates**. It is necessary to set **true or false** value.
 
- > **Example**:
+:::note Example
 
 `setting by name`: server:MyServer
 
  `manually settings`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
+
+
+:::
 
 -----
 
@@ -114,7 +123,13 @@ Extra: `password:*******`
 
 Package name: `com.adguard.android`
 
-Class: `com.adguard.android.receivers.AutomationReceiver`
+Class: `com.adguard.android.receiver.AutomationReceiver`
+
+:::note
+
+Before v4.0 the class was called `com.adguard.android.receivers.AutomationReceiver` but then we changed its name to `com.adguard.android.receiver.AutomationReceiver`. If you used this feature, please pay attention and use the new name.
+
+:::
 
 ### Execution without notification
 

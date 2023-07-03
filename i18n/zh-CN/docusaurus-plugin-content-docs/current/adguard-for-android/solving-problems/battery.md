@@ -3,6 +3,12 @@ title: 使用的流量与电池消耗的问题
 sidebar_position: 1
 ---
 
+:::info
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 有时用户会注意到，根据安卓内置统计，AdGuard 会消耗不少流量和/或电量。
 
 这两种问题反映的是一枚硬币的正反两面。 在过滤过程中，所有流量都会经过 AdGuard，因此安卓会误认为 AdGuard 正在使用流量。 当然，事实上这并不是这样的。

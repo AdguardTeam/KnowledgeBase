@@ -1,22 +1,28 @@
 ---
-title: Possible DNS leaks
+title: Olası DNS sızıntıları
 sidebar_position: 9
 ---
+
+:::info
+
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Windows için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+
+:::
 
 AdGuard for Windows allows users to specify a DNS server address to resolve queries instead of system DNS server, which is provided by your ISP if not overridden in the system settings. Using a non-default DNS server can safeguard your DNS traffic from the ISP’s interception. Moreover, by choosing an encrypted and/or filtering DNS server, you get another layer of protection against bad actors and annoying ads.
 
 Many AdGuard for Windows users appreciate the DNS protection feature. But some of them encounter the following issue: a check on a website like https://ipleak.net/ shows that requests are handled by default DNS server instead of the selected one. In this article we will tell you why this happens and how to avoid it.
 
-## Bootstrap DNS address
+## Önyükleme DNS adresi
 
 The DNS server addresses could be written as IPs or as domain names. In the case of IP addresses there are no difficulties: AdGuard forwards the DNS request directly to the server specified in the DNS protection module. However, encrypted DNS server addresses, like DoT or DoH, are most often written as domain names. In this case, to first resolve the encrypted DNS server address, AdGuard sends a DNS query to the bootstrap address, which is by default a system DNS server. This connection is what check services perceive as a leak.
 
 **To eliminate this leak:**
 
-* go to the *Advanced settings*
+* *Gelişmiş ayarlar* öğesine gidin
 * scroll down to the *List of custom bootstrap addresses* section
 * enter the custom bootstrap address in IP address format (you may use [the list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/))
-* click *Save*
+* *kaydet* öğesine tıklayın
 
 ## Fallback DNS server
 
@@ -24,19 +30,19 @@ It could happen that AdGuard cannot reach the specified server because of a weak
 
 **To eliminate this leak:**
 
-* go to the *Advanced settings*
+* *Gelişmiş ayarlar* öğesine gidin
 * scroll down to the *Fallback servers* section
 * check the *Use custom servers* option
 * then find the *List of custom fallback servers* section and enter custom fallback servers one per line
 
-or
+veya
 
-* go to the *Advanced settings*
+* *Gelişmiş ayarlar* öğesine gidin
 * scroll down to the *Fallback servers* section
 * check the *Don’t use fallback servers* option
 
-or
+veya
 
-* go to the *Advanced settings*
+* *Gelişmiş ayarlar* öğesine gidin
 * scroll down to the *DNS server timeout period* section
 * enter an arbitrary large number

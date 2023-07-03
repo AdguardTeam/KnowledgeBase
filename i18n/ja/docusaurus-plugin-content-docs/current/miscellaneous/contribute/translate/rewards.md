@@ -1,27 +1,27 @@
 ---
-title: Reward system
+title: 翻訳の報奨制度について
 sidebar_position: 6
 ---
 
-As any honest and well-performed effort should be rewarded, active translators on Crowdin can request a free AdGuard license key and a VPN subscription.
+正直な努力は報われるべきであるため、Crowdinの活発な翻訳者様は、AdGuardのライセンスキーやAdGuard VPNのサブスクリプションを無償で要求することができます。
 
-To request a **one-year AdGuard license key** or a **one-year AdGuard VPN subscription**, you must translate at least **500** and **2,500** words respectively.
+**1年版のAdGuardライセンスキー** または **1年版のAdGuard VPNサブスクリプション**をリクエストするには、それぞれ最低**500**語（AdGuard）もしくは**2,500**語（AdGuard VPN）を翻訳する必要があります。
 
-To check your translation progress, open a project you have worked on, click the *Reports* tab and select *My Contribution*. You can sum up the number of words translated in different projects to get a license.
+翻訳の進捗状況を確認するには、作業したプロジェクトを開き、 *Reports* タブをクリックし、 *My Contribution*を選択します。 異なるプロジェクトで翻訳した語数を合計して、ライセンスを取得することができます。
 
-**Here’s how our reward system works**
-
-```
-For the first one-year AdGuard license, you need to translate 500 words.
-For the second license, you need 1,000 words, i.e. 1,500 words altogether.
-All subsequent licenses require an additional 1,500 words per license.
-
-For the first one-year AdGuard VPN subscription, you need to translate 2,500 words.
-All subsequent subscriptions or renewals require an additional 2,500 words per subscription.
+**報奨制度の仕組みは以下の通りです。**
 
 ```
-Just send us a request to [translate@adguard.com](mailto:translate@adguard.com) and you’ll get the license as a token of our gratitude.
+AdGuardの最初の1年ライセンスを受け取るには、500語を翻訳する必要があります。
+2つ目のライセンスでは追加で1,000語、つまり合計1,500語の翻訳が必要です。
+それ以降のライセンスは、1ライセンスにつき1,500語の翻訳が必要です。
 
-Besides, the most active translators may receive proofreader status in the future, should they express such an intention, and that promises even more good stuff.
+AdGuard VPNサブスクリプションの最初の1年ライセンスを受け取るには、2,500語を翻訳する必要があります。
+それ以降のサブスクリプションは、1サブスクリプションにつき2,500語の翻訳が必要です。
 
-Every year we present gifts with the AdGuard logo to our active proofreaders. If you want to become one of them, please write to [translate@adguard.com](mailto:translate@adguard.com).
+```
+[translate@adguard.com](mailto:translate@adguard.com) にリクエストを送信するだけで、翻訳語数の条件を満たしていれば感謝の印としてライセンスを差し上げます。
+
+さらに、最も積極的な翻訳者は、将来的に校正者の地位を得る可能性があり、そのような意思を表明すれば、さらに良いものを用意しております。
+
+毎年、活躍した校正者にはAdGuardのロゴ入りプレゼントを贈っています。 もしあなたもそのうちの一人になりたいのなら、 [translate@adguard.com](mailto:translate@adguard.com)までご連絡ください。

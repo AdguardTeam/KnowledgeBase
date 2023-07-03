@@ -3,6 +3,12 @@ title: Installation
 sidebar_position: 2
 ---
 
+:::info
+
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan iOS için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## System requirements
 
 ### iPhone
@@ -17,7 +23,7 @@ Requires iPadOS 11.2 or later.
 
 Requires iOS 11.2 or later.
 
-## AdGuard for iOS installation
+## iOS için AdGuard yüklemesi
 
 AdGuard for iOS is an app presented in the App Store. To install it on your device, open the App Store and tap the _Search_ icon on the bottom of the screen.
 
@@ -27,7 +33,7 @@ Type _adguard_ in the search bar and tap the string _adGuard_ which will be amon
 
 ![Type "AdGuard" in the search bar *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/2.png)
 
-On the opened page of the App Store tap _GET_ under the string _AdGuard - adblock&privacy_ and then tap _INSTALL_. You may be requested to enter your Apple ID login and password. Type it in and wait for the installation to complete.
+[On the opened page of the App Store](https://adguard.com/download.html?auto=1) tap _GET_ under the string _AdGuard - adblock&privacy_ and then tap _INSTALL_. You may be requested to enter your Apple ID login and password. Type it in and wait for the installation to complete.
 
 ![Tap GET below the AdGuard app *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/3.png)
 

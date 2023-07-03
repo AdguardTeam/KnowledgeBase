@@ -3,6 +3,12 @@ title: Как избежать проблем совместимости с Face
 sidebar_position: 3
 ---
 
+:::info
+
+This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 Оказалось, что режим Full-Tunnel может мешать совместимости не только с другими VPN-приложениями, но и с FaceTime.
 
 Некоторые пользователи столкнулись с проблемой: FaceTime не работает на устройстве, на котором приложение AdGuard для iOS находится в режиме Full-Tunnel.
@@ -14,7 +20,7 @@ sidebar_position: 3
 ![Экран туннельного режима *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ru/iOS/tunnel-mode.PNG?!)
 
 Чтобы включить его, следуйте инструкции:
-1. Откройте AdGuard для iOS и перейдите в *Настройки* > *Общие настройки*.
+1. Откройте AdGuard для iOS и перейдите в *Настройки* → *Общие настройки*.
 2. Включите *Расширенный режим* и перейдите к разделу *Расширенные настройки* , который появится сразу после этого.
 3. Откройте *Туннельный режим* и выберите *Split-Tunnel*.
 

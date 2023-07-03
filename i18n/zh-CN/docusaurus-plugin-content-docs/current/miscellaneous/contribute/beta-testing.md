@@ -1,38 +1,38 @@
 ---
-title: AdGuard beta testing
+title: AdGuard Beta 测试版测试
 sidebar_position: 1
 ---
 
-There is an AdGuard app for virtually every major platform out there, and we regularly release updates for all of them. This would not be possible without beta testing and, more importantly, beta testers. Want to become one? Here's how you can do it.
+几乎所有的主要操作系统都支持 AdGuard 应用程序，而且我们定期为所有系统发布更新。 如果没有 Beta 测试阶段，更重要的是没有 Beta 测试者，这将是不可能的。 想成为一个 Beta 测试者吗？ 下面可以了解如何做到这一点。
 
-## How to become a beta tester {#intro}
+## 如何成为 Beta 版测试者 {#intro}
 
-Our requirements are easy: use AdGuard, upgrade to the beta version when it becomes available, and report any bugs you notice. However, you will need either a [forum](https://forum.adguard.com/index.php) or a [GitHub](https://github.com/) account (or both) to become our beta tester, so you may want to get that out of the way first.
+我们对 Beta 测试者的要求很简单：使用 AdGuard，随时升级到 Beta 测试版，并报告您发现的错误。 然而，Beta 测试者将需要一个 [GitHub](https://github.com/) 或/和一个 [论坛 ](https://forum.adguard.com/index.php)的账号来成为 AdGuard 软件的测试者，所以请您首先注册账号。
 
-In any case, every single thing you need to know is gathered on a [dedicated page](https://adguard.com/en/beta.html).
+无论如何，您需要了解的所有资料都集中在一个[专用页面](https://adguard.com/en/beta.html)上。
 
-If you want to skip the description part and get straight to the action, you can apply [here](https://surveys.adguard.com/beta_testing_program/form.html). Your application will be reviewed within 1-3 working days, and you'll get a reply via email.
+如果您想跳过描述部分，直接进入行动阶段，您可以[在这里](https://surveys.adguard.com/beta_testing_program/form.html)申请。 你的申请将在1-3个工作日内得到审查，我们将电子邮件回复。
 
-## How to report a bug {#report-a-bug}
+## 如何报告错误 {#report-a-bug}
 
-If you spotted a bug or just want to share your suggestion, let us know in any of the possible ways:
+如果您发现了一个程序错误或想分享您的反馈意见，请通过以下几种方式让我们知道：
 
-* Go to [forum.adguard.com](https://forum.adguard.com/index.php) and post there a new thread (or find an existing one) in the beta forum [category](https://forum.adguard.com/index.php?categories/48/). Make sure to read [forum rules](https://forum.adguard.com/index.php?threads/14859/);
+* 转到 [forum.adguard.com](https://forum.adguard.com/index.php) 并在论坛的[「Beta Testing」](https://forum.adguard.com/index.php?categories/48/)中发布一个新主题（或查找现有的主题）。 请阅读[论坛规则](https://forum.adguard.com/index.php?threads/14859/)；
 
-* Go to [GitHub](https://github.com/AdguardTeam/) and find a suitable repository. Create a new issue there and describe the bug/feature request in detail.
+* 转到 [GitHub](https://github.com/AdguardTeam/) ，找到相应的存储库。 在那里创建一个新问题，并详细描述该错误/功能请求。
 
-The above two methods are the most preferred, but you can use others if necessary:
+上述两个方法是最优选的，但如果需要，您可以使用其他方法：
 
-* Find us on various social media platforms, like [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/), etc. However, this is not the most convenient way to discuss technical matters.
+* 在各种社交媒体平台上找到我们，例如 [Facebook](https://www.facebook.com/AdguardEn/)、[Reddit](https://www.reddit.com/r/Adguard/) 等等。 然而，这并不是讨论技术问题的最有效方式。
 
-* Email our support team from the Support tab in the app or write directly to [support@adguard.com](mailto:support@adguard.com).
+* 从应用程序中的「支持」选项以向我们的支持团队发送电子邮件，或通过 [support@adguard.com](mailto:support@adguard.com) 电子邮件联系我们。
 
-## How to activate the beta key in the iOS application {#ios}
+## 如何在 iOS 版的应用程序上激活 Beta 测试版密钥 {#ios}
 
-If you have already received a beta key and it is listed in your `adguard.com` account, go to the app and open the license section (Get Premium). Once there, enter the credentials from your AdGuard account. After that, the premium features will become available automatically.
+如果您已经收到测试版的密钥，并且有许可证密钥列出在 `adguard.com` 账号中，请进入应用程序并打开许可证部分（「获取高级版」）。 在相应的部分，请输入您的 AdGuard 账号的登录信息。 然后，高级版本的功能将自动可用。
 
-### What else?
+### 还有什么？
 
-There is not much more to add. You don't have to go out of your way to find bugs. You can continue using AdGuard as usual. However, if you encounter a bug, please report it. Of course, we appreciate any additional effort and/or extra forum activity, etc.
+基本上，我们没有什么要补充的。 您不要勉强自己去找错误。 像往常一样，您可以继续享受 AdGuard 使用体验。 然而，如果您遇到一个错误，请向我们发送报告。 当然，我们感谢您的额外努力、论坛上的积极行为等等。
 
-Occasionally, you will receive our newsletters, keeping you informed of the latest changes in the beta (in case you missed them) and other important news. You can unsubscribe from it at any time.
+有时，您会收到我们的新闻简报，让您了解测试版的最新改进（以防您错过）和其他重要消息。 您可以随时取消订阅。

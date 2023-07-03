@@ -1,18 +1,18 @@
 ---
-title: How to prioritize the translations of Crowdin files
+title: Crowdinファイルの翻訳の優先順位
 sidebar_position: 5
---- 
+---
 
-There are five major AdGuard projects on Crowdin — [AdGuard Applications](https://crowdin.com/project/adguard-applications), [AdGuard Websites](https://crowdin.com/project/adguard-websites), [AdGuard Ad Blocker Knowledge base](https://crowdin.com/project/adguard-knowledge-base), [AdGuard VPN Knowledge Base](https://crowdin.com/project/adguard-vpn-knowledge-base), and [AdGuard DNS Knowledge Base](https://crowdin.com/project/adguard-knowledge-bases).
+Crowdinには、[AdGuard Applications](https://crowdin.com/project/adguard-applications), [AdGuard Websites](https://crowdin.com/project/adguard-websites), [AdGuard Ad Blocker Knowledge base](https://crowdin.com/project/adguard-knowledge-base), [AdGuard VPN Knowledge Base](https://crowdin.com/project/adguard-vpn-knowledge-base), [AdGuard DNS Knowledge Base](https://crowdin.com/project/adguard-knowledge-bases) という5つの主要なAdGuardプロジェクトがあります。
 
-We do not have clear guidelines on which files or products of the *AdGuard Applications* project to start with. Just choose any product you like.
+*AdGuard Applications*プロジェクトのどのファイルや製品から始めるべきか、明確なガイドラインはありません。 お好きな製品をお選びください。
 
-There are just a couple of things we want to mention:
+ただ、いくつか触れておきたいことがあります:
 
-* You can see the app only in those languages for which all translations are completed in Crowdin;
-* We recommend translating the descriptions for app stores in the second place, because without the translation of products themselves, the descriptions won't be needed.
+* Crowdinで翻訳が完了した言語のみが、AdGuardアプリのUIで表示されます。
+* 製品自体の翻訳がなければ説明文等は不要になるので、アプリストアの説明文などの翻訳は後回しにしたほうがお勧めです。
 
-The situation is different in the *AdGuard Websites* project. Languages can be added to the site even if a full set of translations is not available. However, this depends on which files have already been translated. That's why we recommend that you start with the most important files — they are listed below:
+ただし、*AdGuard Websites*プロジェクトの場合は異なります。 翻訳が100％完了していなくても、言語をサイトに追加することは可能です。 これはどのファイルがすでに翻訳されているかによります。 そのため、最も重要なファイルから順に翻訳されることをお勧めします（以下に記載）:
 
 [AdGuard Ad Blocker website](https://crowdin.com/project/adguard-websites/en#/adguard.com)
 
@@ -30,6 +30,6 @@ The situation is different in the *AdGuard Websites* project. Languages can be a
 * `critical.resx`
 * `auth.resx`
 
-> Adding new strings as well as updating existing ones in these files requires special attention from the project translators and proofreaders.
+Adding new strings as well as updating existing ones in these files requires special attention from the project translators and proofreaders.
 
 In addition to websites, there is a file for translating [transactional emails](https://crowdin.com/project/adguard-websites/de#/emails) in the AdGuard Websites project. Newly added strings in this file also have a high translation priority.

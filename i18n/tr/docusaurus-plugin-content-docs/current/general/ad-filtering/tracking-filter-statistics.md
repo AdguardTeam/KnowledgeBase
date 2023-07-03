@@ -3,7 +3,11 @@ title: Tracking filter rules statistics
 sidebar_position: 4
 ---
 
-> NOTE: The *"Send statistics for ad filters usage"* option is disabled by default. Nothing will be sent unless user manually enables it to help us improve our blocking filters.
+:::note
+
+The *"Send statistics for ad filters usage"* option is disabled by default. Nothing will be sent unless user manually enables it to help us improve our blocking filters.
+
+:::
 
 ### Why do we need ad filters?
 
@@ -23,7 +27,7 @@ If you enable the *Send statistics for ad filters usage* option, the following i
 
 * Extension version
 * Browser type (Chrome/Firefox/Opera/Yandex.Browser/Safari).
-* List of enabled ad filters.
+* Etkinleştirilmiş reklam filtrelerinin listesi.
 * The list that consists of the following elements:
   * *The domain name of the website*
   * *The number of recent page views*

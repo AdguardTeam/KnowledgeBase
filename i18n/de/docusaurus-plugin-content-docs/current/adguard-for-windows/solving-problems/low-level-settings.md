@@ -1,108 +1,220 @@
 ---
-title: Advanced (low-level) Settings guide
+title: Leitfaden für erweiterte (low-level) Einstellungen
 sidebar_position: 7
 ---
 
-Previously known as low-level settings, Advanced Settings mostly contain settings that go beyond the average user's competence and don't have application in the everyday use. AdGuard for Windows is designed to work without ever having to change any of them, but they will provide additional options in some corner-case situations or when solving an uncommon problem.
+:::info
 
-> Mindlessly changing *Advanced Settings* can potentially cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only make changes to these settings if you are sure of what you are doing or if our support team has asked you to do so.
+Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://adguard.com/download.html?auto=true)
 
-## How to reach Advanced Settings
+:::
 
-To go to *Advanced settings*, in the main windows click *Settings → General Settings* and scroll down to *Advanced Settings*. Alternatively, select *Advanced → Advanced settings...* in the tray menu.
+Die früher als Low-Level-Einstellungen bezeichneten erweiterten Einstellungen enthalten meist Optionen, die über die Fähigkeiten des durchschnittlichen Benutzers hinausgehen und im Alltag nicht verwendet werden. AdGuard für Windows ist so konzipiert, dass es ohne Änderungen funktioniert, aber in bestimmten Fällen oder bei der Lösung eines ungewöhnlichen Problems werden zusätzliche Funktionen bereitgestellt.
 
-## Advanced Settings
+:::caution
 
-Once you open Advanced Settings, you will be presented with the following options:
+Das unbedachte Ändern von *Erweiterten Einstellungen* kann möglicherweise Probleme mit der Leistung von AdGuard verursachen, die Internetverbindung unterbrechen oder Ihre Sicherheit und Privatsphäre gefährden. Sie sollten diese Einstellungen nur dann ändern, wenn Sie sich sicher sind, was Sie tun, oder wenn unser Support-Team Sie dazu aufgefordert hat.
 
-### Block TCP Fast Open
+:::
 
-If enabled, AdGuard will block TCP Fast Open in the Edge browser. To apply settings, you need to restart the browser.
+## So öffnen Sie die erweiterten Einstellungen
 
-### Exclude app from filtering by entering the full path
+Um zu *Erweiterte Einstellungen* zu gelangen, klicken Sie im Hauptfenster auf *Einstellungen* → *Allgemeine Einstellungen* und scrollen Sie nach unten zu *Erweiterte Einstellungen*. Wählen Sie alternativ *Erweitert → Erweiterte Einstellungen...* im Infobereich der Taskleiste.
 
-If you want AdGuard not to filter any specific application, specify the full path to them and the apps will be excluded from filtering. Separate different paths by semicolons.
+## Erweiterte Einstellungen
 
-### Enable AdGuard pop-up notifications
+Wenn Sie die erweiterten Einstellungen öffnen, werden Ihnen die folgenden Optionen angezeigt:
 
-Enable this feature to see AdGuard pop-up notifications. They do not appear too often and contain only important information. You can also use the tray menu to recall the last pop-up notification.
+### TCP Fast Open blockieren
 
-### Automatically intercept filter subscription URLs
+Wenn aktiviert, blockiert AdGuard TCP Fast Open im Edge-Browser. Um die Einstellungen zu übernehmen, müssen Sie den Browser neu starten.
 
-Enable this feature if you want AdGuard to automatically intercept filter subscription URLs (i.e. `abp:subscribe` and alike) and to open a custom filter installation dialog.
+### Encrypted ClientHello verwenden
 
-### Use redirect driver mode
+Jede verschlüsselte Internetverbindung hat einen unverschlüsselten Teil. Dies ist das allererste Paket, das den Namen des Servers enthält, mit dem Sie sich verbinden. Die verschlüsselte Client-Hallo-Technologie soll dieses Problem lösen und das letzte bisschen an unverschlüsselter Information verschlüsseln. Um davon zu profitieren, aktivieren Sie die Option *Encrypted ClientHello verwenden*. It uses a local DNS proxy to look for the ECH configuration for the domain. Wenn es gefunden wird, wird das ClientHello-Paket verschlüsselt.
 
-If this option is enabled, AdGuard intercepts all the traffic and redirects it to the local proxy server for further filtering.
+### Zertifikatstransparenz von Websites prüfen
 
-Otherwise, AdGuard will filter all the traffic on the fly, without redirection. In this case, the system will consider AdGuard to be the sole application that connects to the Internet (other applications are routed through it). The downside is that it will make the system Firewall less effective. The upside is that this approach works a little bit faster.
+Überprüft die Authentizität aller Zertifikate für die Domain basierend auf der Chrome Certificate Transparency Policy. If the certificate does not comply with the Chrome Certificate Transparency Policy, AdGuard will not filter the website. Chrome wiederum sperrt sie.
 
-### Open main window at system start-up
+### SSL/TLS-Zertifikatssperrprüfungen aktivieren
 
-Enable this option to make the main AdGuard window open after the system is loaded. Note that it doesn't affect whether the actual filtering service is launched or not, this setting is located in *Settings → General Settings*
+Wenn diese Option aktiviert ist, werden asynchrone OCSP-Prüfungen durchgeführt, um zu überprüfen, ob das SSL/TLS-Zertifikat der Website widerrufen wurde.
 
-### Filter localhost
+Wenn die OCSP-Prüfung innerhalb der Mindestzeit abgeschlossen ist, wendet AdGuard das Ergebnis sofort an: Sperren der Verbindung, wenn das Zertifikat gesperrt ist, oder Aufbau einer Verbindung, wenn das Zertifikat gültig ist.
 
-If you want AdGuard to filter loopback connections, check the box. This option will always be on if you have AdGuard VPN installed, because otherwise it won't be able to work.
+Wenn die Überprüfung zu lange dauert, stellt AdGuard eine Verbindung her und setzt die Überprüfung im Hintergrund fort. Wird das Zertifikat widerrufen, werden aktuelle und zukünftige Verbindungen zu der Domain gesperrt.
 
-### Enable HAR writing
+### AdGuard VPN in den Einstellungen anzeigen
 
-This option should be enabled **only for debugging purposes**. If you tick the checkmark, AdGuard will create a file that contains information about all filtered HTTP requests in HAR 1.2 format. This file can be analyzed with the Fiddler app. Note that it may slow down your web browsing significantly.
+Wenn Sie diese Option aktivieren, können Sie die Registerkarte „AdGuard VPN” in den Einstellungen anzeigen lassen, um die App und die Website des Produkts einfach zu öffnen.
 
-### Show QUIC
+### Anwendung von der Filterung ausschließen, durch Angabe des vollständigen Pfads
 
-Allows displaying the QUIC protocol records in the filtering log. For blocked requests only.
+Wenn Sie möchten, dass AdGuard bestimmte Anwendungen nicht filtert, geben Sie den vollständigen Pfad zu diesen Anwendungen an, damit diese von der Filterung ausgeschlossen werden. Trennen Sie verschiedene Pfade durch Semikolon.
 
-### Block Java
+### AdGuard Pop-up-Benachrichtigungen aktivieren
 
-Some websites and web services still support Java Plug-Ins. The API that serves as the basis for Java plug-ins has serious security vulnerabilities. You can disable such plug-ins for security purposes. Nevertheless, even if you decide to use *Block Java* option, JavaScript will still be enabled.
+Aktivieren Sie diese Funktion, um Popup-Benachrichtigungen von AdGuard anzuzeigen. Sie werden nicht allzu oft angezeigt und enthalten nur wichtige Informationen. Sie können auch das Symbol im Infobereich der Taskleiste verwenden, um die letzte Popup-Benachrichtigung aufzurufen.
 
-### Action applied to blocked DNS requests
+### Filter-Abonnement URLs automatisch filtern
 
-Here you can select the way AdGuard will respond to DNS queries that should be blocked:
+Aktivieren Sie diese Funktion, wenn Sie möchten, dass AdGuard automatisch Filter-URLs (z.B. `abp:subscribe` und ähnliche) abfängt und einen benutzerdefinierten Filter-Installationsdialog öffnet.
 
-* Reply with "Refused" error
-* Reply with "NxDomain" error
-* Reply with a custom IP address
+### Umleitungstreiber-Modus verwenden
 
-### Custom IPv4 address
+Wenn diese Option aktiviert ist, fängt AdGuard den gesamten Datenverkehr ab und leitet ihn zur weiteren Filterung an den lokalen Proxy-Server weiter.
 
-If "Custom IP address" is selected as an action applied to blocked DNS requests, here you should specify the IPv4 address that will be returned in response to blocked "A" requests. If none are specified, AdGuard will reply with the default "Refused" error.
+Andernfalls filtert AdGuard den gesamten Datenverkehr sofort und ohne Umleitung. In diesem Fall betrachtet das System AdGuard als die einzige Anwendung, die eine Verbindung zum Internet herstellt (andere Anwendungen werden über ihn geleitet). Der Nachteil ist, dass die System-Firewall dadurch weniger wirksam wird. Der Vorteil ist, dass dieser Ansatz ein wenig schneller funktioniert.
 
-### Custom IPv6 address
+### Hauptfenster bei Systemstart öffnen
 
-If "Custom IP address" is selected as an action applied to blocked DNS requests, here you should specify the IPv6 address that will be returned in response to blocked "AAAA" requests. If none are specified, AdGuard will reply with the default "Refused" error.
+Aktivieren Sie diese Option, damit sich das Hauptfenster von AdGuard nach dem Laden des Systems öffnet. Beachten Sie, dass es keinen Einfluss darauf hat, ob der eigentliche Filterdienst gestartet wird oder nicht. Diese Einstellung befindet sich in *Einstellungen → Allgemeine Einstellungen*
 
-### Fallback servers
+### Filterung beim Systemstart aktivieren
 
-Here you can specify an alternate DNS server to which a DNS request will be rerouted if the main server fails to respond within the timeout period specified in the next section. There are three options to choose from:
+Ab v7.12 filtert der AdGuard-Dienst standardmäßig keinen Datenverkehr nach dem Start des Betriebssystems, wenn die Option „AdGuard beim Systemstart starten” deaktiviert ist. Mit anderen Worten, der Dienst von AdGuard wird im „Leerlaufmodus” gestartet. Aktivieren Sie diese Option, damit AdGuard den Datenverkehr auch dann filtert, wenn die App nicht gestartet ist.
 
-* Don’t use fallback servers;
-* Use system default servers;
-* Use custom servers.
+*Note that before v7.12 the AdGuard's service started in filtering mode by default (even if the *Launch AdGuard at system start-up* was disabled). If you were satisfied with the old behavior, enable this option.*
 
-### DNS server timeout period
+### Localhost filtern
 
-Here you can specify the time in milliseconds that AdGuard will wait for the response from the selected DNS server before resorting to fallback. If you don’t fill in this field or enter an invalid value, the value of 5000 will be used.
+Wenn Sie möchten, dass AdGuard Loopback-Verbindungen filtert, markieren Sie das Kästchen. Diese Option wird immer aktiviert sein, wenn Sie AdGuard VPN installiert haben, da es sonst nicht funktionieren kann.
 
-### List of custom fallback servers
+### Festgelegte IP-Bereiche von der Filterung ausschließen
 
-If you want AdGuard to use custom fallback servers, list them in this section, one per line.
+Wenn Sie nicht möchten, dass AdGuard bestimmte Subnetze filtert, aktivieren Sie diese Funktion und geben Sie die IP-Bereiche in der CIDR-Notation (z.B. 98.51.100.14/24) im Abschnitt **IP-Bereiche, die von der Filterung ausgeschlossen sind** unten an.
 
-### List of custom bootstrap addresses
+### Das Schreiben im HAR-Format erlauben
 
-A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in *DNS protection*. Such a "middle ground" is needed when using protocols that denote the server address by letters (such as DNS-over-TLS, for example). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
+Diese Option sollte **nur für die Fehlersuche** aktiviert werden. Wenn Sie das Häkchen setzen, erstellt AdGuard eine Datei, die Informationen über alle gefilterten HTTP-Anfragen im Format HAR 1.2 enthält. Diese Datei kann mit der App „Fiddler“ analysiert werden. Beachten Sie, dass sich Ihr Surfen im Internet dadurch erheblich verlangsamen kann.
 
-By default, the system DNS resolver is used, and the initial bootstrap request is made through port 53. If this does not suit you, list here the IP addresses of the DNS servers that will be used to determine the address of the encrypted DNS server in the top-to-bottom order. The specified IP addresses will be applied in the order listed. If you specify invalid addresses, or no addresses at all, the system IPs will be used.
+### Zusätzliches Leerzeichen in die einfache HTTP-Anfrage einfügen
 
-### DNS exclusions
+Fügt ein zusätzliches Leerzeichen zwischen der HTTP-Methode und der URL ein und entfernt das Leerzeichen nach dem Feld „Host:”, um Deep Packet Inspection zu vermeiden. Zum Beispiel, wird die Anfrage
 
-All DNS requests to domains listed here will be redirected to the system default DNS server instead of the DNS server specified in the app’s settings. Also, DNS blocking rules will not be applied to such requests.
+`GET /foo/bar/ HTTP/1.1
+Host: example.org`
 
-### Block ECH
+umgewandelt in
 
-If enabled, AdGuard strips Encrypted Client Hello parameters from responses.
+`GET  /foo/bar/ HTTP/1.1
+Host: example.org`
 
-### Enable filtering of secure DNS requests
+Diese Option wird nur angewendet, wenn die Option *Schutz vor DPI* im Privatsphärenmodus aktiviert ist.
 
-When enabled, AdGuard redirects secure DNS requests to the local DNS proxy, in addition to plain DNS requests.
+### Größe der Fragmentierung des ersten TLS-Pakets anpassen
+
+Gibt die Größe der TCP-Paketfragmentierung an, um eine Deep Packet Inspection zu vermeiden. This option only affects secured (HTTPS) traffic.
+
+Wenn diese Option aktiviert ist, teilt AdGuard das initiale TLS-Paket (das ClientHello-Paket) in zwei Teile auf: der erste hat die angegebene Länge und der zweite den Rest, bis zur Länge des gesamten initialen TLS-Pakets.
+
+Valid values: 1–1500. Wird eine ungültige Größe angegeben, wird der vom System ausgewählte Wert verwendet. Diese Option wird nur angewendet, wenn die Option *Schutz vor DPI* im Privatsphärenmodus aktiviert ist.
+
+### Fragmentgröße einer einfachen HTTP-Anfrage
+
+Passt die Größe der Fragmentierung der HTTP-Anfrage an. Diese Option betrifft nur den einfachen HTTP-Verkehr. Wenn diese Option aktiviert ist, teilt AdGuard das ursprüngliche Paket in zwei Teile auf: der erste hat die angegebene Länge und der zweite den Rest, bis zur Länge des gesamten ursprünglichen Pakets.
+
+Valid values: 1–1500. Wird eine ungültige Größe angegeben, wird der vom System ausgewählte Wert verwendet. Diese Option wird nur angewendet, wenn die Option *Schutz vor DPI* im Privatsphärenmodus aktiviert ist.
+
+### QUIC anzeigen
+
+Ermöglicht die Anzeige der QUIC-Protokollsätze im Filterungsprotokoll. Nur für gesperrte Anfragen.
+
+### TCP-Keepalive aktivieren
+
+Sendet regelmäßig TCP-Pakete über eine inaktive Verbindung, um sicherzustellen, dass sie aktiv ist und um NAT-Timeouts zu erneuern. Diese Option kann nützlich sein, um die strengen NAT-Einstellungen (Network Address Translation) zu umgehen, die einige ISPs verwenden.
+
+### TCP-Keepalive-Intervall
+
+Hier können Sie eine Leerlaufzeit in Sekunden angeben, bevor ein Keepalive-Test gesendet wird. Wird 0 (Null) angegeben, wird der vom System gewählte Wert verwendet.
+
+Beachten Sie, dass diese Einstellung nur funktioniert, wenn die Option *TCP-Keepalive aktivieren* aktiviert ist.
+
+### TCP-Keepalive-Zeitüberschreitung
+
+Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. Wird 0 (Null) angegeben, wird der vom System gewählte Wert verwendet.
+
+Beachten Sie, dass diese Einstellung nur funktioniert, wenn die Option *TCP-Keepalive aktivieren* aktiviert ist.
+
+### Java blockieren
+
+Einige Websites und Webdienste unterstützen nach wie vor Java Plug-Ins. Die API, die als Grundlage für Java-Plug-ins dient, weist gravierende Sicherheitslücken auf. Sie können solche Plug-ins aus Sicherheitsgründen deaktivieren. Aber auch wenn Sie sich für die Option *Java sperren* entscheiden, wird JavaScript weiterhin aktiviert sein.
+
+### Zeitüberschreitung des DNS-Servers
+
+Hier können Sie die Zeit in Millisekunden angeben, die AdGuard auf die Antwort des ausgewählten DNS-Servers warten soll, bevor er auf den Fallback zurückgreift. Wenn Sie dieses Feld nicht ausfüllen oder einen ungültigen Wert eingeben, wird der Wert von 5.000 verwendet.
+
+### HTTP/3 für DNS-over-HTTPS verwenden
+
+Aktiviert HTTP/3 für DNS-over-HTTPS-Upstreams, um die Verbindung zu beschleunigen, wenn der ausgewählte Upstream dieses Protokoll unterstützt. Das bedeutet, dass die Aktivierung dieser Option nicht garantiert, dass alle DNS-Anfragen über HTTP/3 gesendet werden.
+
+### Fallback-DNS-Upstreams verwenden
+
+Normal queries will be redirected to the fallback upstream if all DNS requests to the selected upstreams fail.
+
+### Parallele Abfrage von DNS-Upstreams
+
+All upstreams will be queried in parallel and the first response is returned. Da DNS-Abfragen parallel durchgeführt werden, erhöht das Aktivieren dieser Funktion die Internetgeschwindigkeit.
+
+### Immer auf fehlgeschlagene DNS-Anfragen antworten
+
+Wenn die Adressauflösung in jedem der weitergeleiteten Upstreams sowie in den Fallback-Domains fehlgeschlagen ist, lautet die Antwort auf die DNS-Anfrage `SERVFAIL`.
+
+### Filtern von sicheren DNS-Anfragen aktivieren
+
+AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to plain DNS requests.
+
+### Sperrmodus für Hosts-Regeln
+
+Hier können Sie festlegen, wie AdGuard auf Domains reagieren soll, die durch DNS-Regeln basierend auf der [Hosts-Regelsyntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax) gesperrt werden.
+
+* Mit Fehler „Abgelehnt“ antworten
+* Mit Fehler „NxDomain“ antworten
+* Mit benutzerdefinierter IP-Adresse antworten
+
+### Sperrmodus für Regeln im Adblock-Stil
+
+Hier können Sie festlegen, wie AdGuard auf Domains reagieren soll, die durch DNS-Regeln auf Basis der [Adblock-Syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax) gesperrt werden.
+
+* Mit Fehler „Abgelehnt“ antworten
+* Mit Fehler „NxDomain“ antworten
+* Mit benutzerdefinierter IP-Adresse antworten
+
+### Benutzerdefinierte IPv4-Adresse
+
+Wenn die benutzerdefinierte IP-Adresse im Sperrmodus für Hosts-Regeln oder im Sperrmodus für Adblock-Stil-Regeln ausgewählt ist, wird diese IP-Adresse als Antwort auf gesperrte A-Anfragen zurückgegeben. Wenn keine angegeben werden, antwortet AdGuard mit dem Standardfehler „Abgelehnt“.
+
+### Benutzerdefiniertes IPv6-Adresse
+
+Wenn die benutzerdefinierte IP-Adresse im Sperrmodus für Hosts-Regeln oder im Sperrmodus für Adblock-Stil-Regeln ausgewählt ist, wird diese IP-Adresse als Antwort auf gesperrte AAAA-Anfragen zurückgegeben. Wird keine angegeben, antwortet AdGuard mit dem Standardfehler „Abgelehnt“.
+
+### Fallback-Server
+
+Hier können Sie einen alternativen DNS-Server angeben, an den eine DNS-Anfrage umgeleitet wird, wenn der Hauptserver nicht innerhalb der im nächsten Abschnitt angegebenen Zeitspanne antwortet. Es stehen drei Optionen zur Auswahl:
+
+* Keine Ausweichserver verwenden;
+* Standardserver des Systems verwenden;
+* Benutzerdefinierte Server verwenden.
+
+### ECH blockieren
+
+Wenn diese Option aktiviert ist, entfernt AdGuard die Parameter von Encrypted ClientHello aus den Antworten.
+
+### Liste der benutzerdefinierten Fallback-Server
+
+Wenn Sie möchten, dass AdGuard benutzerdefinierte Fallback-Server verwendet, führen Sie diese in diesem Abschnitt auf, einen pro Zeile.
+
+### Liste der benutzerdefinierten Bootstrap-Adressen
+
+Ein Bootstrap ist ein DNS-Zwischenserver, der verwendet wird, um die IP-Adresse des sicheren DNS-Servers zu erhalten, den Sie zuvor unter *DNS-Schutz* ausgewählt haben. Ein solcher „Mittelweg“ ist erforderlich, wenn Protokolle verwendet werden, bei denen die Serveradresse mit Buchstaben angegeben wird (wie z. B. DNS-over-TLS). In diesem Fall fungiert der Bootstrap als Übersetzer und wandelt die Buchstaben in Zahlen um, die Ihr System versteht.
+
+Standardmäßig wird der DNS-Auflöser des Systems verwendet, und die erste Bootstrap-Anfrage erfolgt über Port 53. Wenn Ihnen das nicht passt, listen Sie hier die IP-Adressen der DNS-Server auf, die zur Ermittlung der Adresse des verschlüsselten DNS-Servers verwendet werden, und zwar in der Reihenfolge von oben nach unten. Die angegebenen IP-Adressen werden in der aufgeführten Reihenfolge übernommen. Wenn Sie ungültige Adressen oder gar keine Adressen angeben, werden die System-IPs verwendet.
+
+### DNS-Ausschlüsse
+
+Alle DNS-Anfragen an die hier aufgeführten Domains werden an den Standard-DNS-Server des Systems umgeleitet, anstatt an den in den Einstellungen der App angegebenen DNS-Server. Außerdem werden die DNS-Sperrregeln nicht auf solche Anfragen angewandt.
+
+### Bestimmte WLAN-Netzwerknamen (SSIDs) von der DNS-Filterung ausschließen
+
+DNS protection will not include Wi-Fi networks listed in this section. Geben Sie die Namen der WLAN-Netzwerke (SSIDs) an, eine pro Zeile. Dies kann nützlich sein, wenn ein bestimmtes WLAN-Netzwerk bereits durch AdGuard Home oder ein anderes DNS-Schutzsystem geschützt ist. In diesem Fall ist es überflüssig, DNS-Anfragen erneut zu filtern.

@@ -1,7 +1,13 @@
 ---
-title: Как заблокировать рекламу в приложении Youtube
+title: Как заблокировать рекламу в приложении YouTube
 sidebar_position: 7
 ---
+
+:::info
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
 
 Один из самых популярных вопросов, которые задают нам пользователи: «Можно ли заблокировать рекламу в Youtube на Android?». Из-за технических ограничений ОС Android не существует способа *полностью* удалить рекламу из приложения YouTube. Но мы нашли способ, который позволяет максимально добиться желаемого, при этом обходя ограничения Android.
 

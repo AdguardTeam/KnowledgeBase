@@ -1,108 +1,220 @@
 ---
-title: Advanced (low-level) Settings guide
+title: Průvodce pokročilým (nízkoúrovňovým) nastavením
 sidebar_position: 7
 ---
 
-Previously known as low-level settings, Advanced Settings mostly contain settings that go beyond the average user's competence and don't have application in the everyday use. AdGuard for Windows is designed to work without ever having to change any of them, but they will provide additional options in some corner-case situations or when solving an uncommon problem.
+:::info
 
-> Mindlessly changing *Advanced Settings* can potentially cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only make changes to these settings if you are sure of what you are doing or if our support team has asked you to do so.
+Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 
-## How to reach Advanced Settings
+:::
 
-To go to *Advanced settings*, in the main windows click *Settings → General Settings* and scroll down to *Advanced Settings*. Alternatively, select *Advanced → Advanced settings...* in the tray menu.
+Pokročilá nastavení, dříve známá jako nízkoúrovňová nastavení většinou obsahují možnosti, které přesahují kompetence běžného uživatele aí při každodenním používání se nepoužívají. AdGuard pro Windows je navržen tak, aby fungoval, aniž by bylo nutné cokoliv měnit, ale v některých případech nebo při řešení neobvyklého problému poskytuje další funkce.
 
-## Advanced Settings
+:::caution
 
-Once you open Advanced Settings, you will be presented with the following options:
+Změna *Pokročilých nastavení* může nečekaně způsobit problémy s výkonem AdGuardu, může přerušit internetové připojení nebo ohrozit vaši bezpečnost a soukromí. Tuto část byste měli otevřít pouze v případě, že jste si jisti tím, co děláte, nebo pokud se vás na to zeptal náš tým podpory.
 
-### Block TCP Fast Open
+:::
 
-If enabled, AdGuard will block TCP Fast Open in the Edge browser. To apply settings, you need to restart the browser.
+## Jak dosáhnout pokročilých nastavení
 
-### Exclude app from filtering by entering the full path
+Chcete-li přejít na *Pokročilá nastavení*, v hlavním okně klikněte na *Nastavení → Obecná nastavení* a přejděte dolů na *Pokročilá nastavení*. Případně vyberte *Pokročilé → Pokročilá nastavení...* v menu.
 
-If you want AdGuard not to filter any specific application, specify the full path to them and the apps will be excluded from filtering. Separate different paths by semicolons.
+## Pokročilá nastavení
 
-### Enable AdGuard pop-up notifications
+Jakmile otevřete Pokročilá nastavení, zobrazí se vám následující možnosti:
 
-Enable this feature to see AdGuard pop-up notifications. They do not appear too often and contain only important information. You can also use the tray menu to recall the last pop-up notification.
+### Blokovat TCP Fast Open
 
-### Automatically intercept filter subscription URLs
+Pokud je tato funkce povolena, zablokuje AdGuard v prohlížeči Edge funkci TCP Fast Open. Chcete-li použít nastavení, budete muset restartovat prohlížeč.
 
-Enable this feature if you want AdGuard to automatically intercept filter subscription URLs (i.e. `abp:subscribe` and alike) and to open a custom filter installation dialog.
+### Použít Encrypted ClientHello
 
-### Use redirect driver mode
+Každé šifrované internetové připojení má i nešifrovanou část. Jedná se o první paket, který obsahuje název serveru, ke kterému se připojujete. Technologie Encrypted Client Hello má tento problém vyřešit a zašifrovat poslední kousek nešifrovaných informací. Chcete-li to využít, povolte možnost *Použít Encrypted ClientHello*. K vyhledání konfigurace ECH pro danou doménu používá místní proxy server DNS. Pokud je nalezen, paket ClientHello bude zašifrován.
 
-If this option is enabled, AdGuard intercepts all the traffic and redirects it to the local proxy server for further filtering.
+### Zkontrolovat transparentnost certifikátů webových stránek
 
-Otherwise, AdGuard will filter all the traffic on the fly, without redirection. In this case, the system will consider AdGuard to be the sole application that connects to the Internet (other applications are routed through it). The downside is that it will make the system Firewall less effective. The upside is that this approach works a little bit faster.
+Ověřuje pravost všech certifikátů pro doménu na základě zásad transparentnosti certifikátů Chrome. Pokud certifikát není v souladu se zásadami Chrome Certificate Transparency, AdGuard webové stránky nefiltruje. Chrome to zase zablokuje.
 
-### Open main window at system start-up
+### Povolit kontrolu odvolání certifikátů SSL/TLS
 
-Enable this option to make the main AdGuard window open after the system is loaded. Note that it doesn't affect whether the actual filtering service is launched or not, this setting is located in *Settings → General Settings*
+Po povolení této možnosti se spustí asynchronní kontroly OCSP, aby se ověřilo, zda není SSL/TLS certifikát webové stránky odvolán.
 
-### Filter localhost
+Pokud se kontrola OCSP dokončí během minimálního časového limitu, AdGuard okamžitě použije výsledek: zablokuje připojení, pokud je certifikát odvolán nebo naváže připojení, pokud je certifikát platný.
 
-If you want AdGuard to filter loopback connections, check the box. This option will always be on if you have AdGuard VPN installed, because otherwise it won't be able to work.
+Pokud ověření trvá příliš dlouho, AdGuard naváže spojení a pokračuje v kontrole na pozadí. Pokud je certifikát odvolán, budou současná i budoucí připojení k doméně zablokována.
 
-### Enable HAR writing
+### Zobrazit AdGuard VPN v nastavení
 
-This option should be enabled **only for debugging purposes**. If you tick the checkmark, AdGuard will create a file that contains information about all filtered HTTP requests in HAR 1.2 format. This file can be analyzed with the Fiddler app. Note that it may slow down your web browsing significantly.
+Povolení této možnosti umožňuje zobrazit kartu AdGuard VPN v nastavení pro snadné otevření aplikace a webové stránky produktu.
 
-### Show QUIC
+### Vyloučit aplikaci z filtrování zadáním úplné cesty
 
-Allows displaying the QUIC protocol records in the filtering log. For blocked requests only.
+Pokud chcete, aby AdGuard nefiltroval konkrétní aplikace, zadejte k nim úplnou cestu a tyto aplikace budou z filtrování vyloučeny. Jednotlivé cesty oddělte středníky.
 
-### Block Java
+### Povolit vyskakovací oznámení AdGuardu
 
-Some websites and web services still support Java Plug-Ins. The API that serves as the basis for Java plug-ins has serious security vulnerabilities. You can disable such plug-ins for security purposes. Nevertheless, even if you decide to use *Block Java* option, JavaScript will still be enabled.
+Povolením této funkce zobrazíte vyskakovací oznámení AdGuardu. Nezobrazují se příliš často a obsahují pouze důležité informace. Poslední vyskakovací oznámení můžete vyvolat také pomocí menu.
 
-### Action applied to blocked DNS requests
+### Automaticky zachytávat URL adresy pro odběr filtrů
 
-Here you can select the way AdGuard will respond to DNS queries that should be blocked:
+Tuto funkci povolte, pokud chcete, aby AdGuard automaticky zachycoval adresy URL pro přihlášení k odběru filtrů (tj. `abp:subscribe` a podobné) a otevíral dialogové okno pro instalaci vlastního filtru.
 
-* Reply with "Refused" error
-* Reply with "NxDomain" error
-* Reply with a custom IP address
+### Použít režim přesměrování ovladače
 
-### Custom IPv4 address
+Pokud je tato možnost povolena, AdGuard zachytí veškerý provoz a přesměruje jej na místní proxy pro další filtrování.
 
-If "Custom IP address" is selected as an action applied to blocked DNS requests, here you should specify the IPv4 address that will be returned in response to blocked "A" requests. If none are specified, AdGuard will reply with the default "Refused" error.
+V opačném případě bude AdGuard filtrovat veškerý provoz za běhu bez přesměrování. V tomto případě bude systém považovat AdGuard za jedinou aplikaci, která se připojuje k internetu (ostatní aplikace jsou směrovány přes něj). Nevýhodou je, že se tím sníží účinnost systémové brány Firewall. Výhodou je, že tento přístup funguje o něco rychleji.
 
-### Custom IPv6 address
+### Otevřít hlavní okno při startu systému
 
-If "Custom IP address" is selected as an action applied to blocked DNS requests, here you should specify the IPv6 address that will be returned in response to blocked "AAAA" requests. If none are specified, AdGuard will reply with the default "Refused" error.
+Tuto možnost povolte, aby se po načtení systému otevřelo hlavní okno AdGuardu. Všimněte si, že toto nastavení nemá vliv na to, zda je skutečná služba filtrování spuštěna, nebo ne, toto nastavení se nachází v *Nastavení → Obecná nastavení*
 
-### Fallback servers
+### Zapnout filtrování při spuštění systému
 
-Here you can specify an alternate DNS server to which a DNS request will be rerouted if the main server fails to respond within the timeout period specified in the next section. There are three options to choose from:
+Od verze 7.12 služba AdGuard ve výchozím nastavení nefiltruje provoz po spuštění operačního systému, pokud je zakázána možnost Spustit AdGuard při startu systému. Jinými slovy, služba AdGuard je spuštěna v režimu „nečinnosti“. Tuto možnost povolte, aby AdGuard filtroval provoz i v případě, že aplikace není spuštěna.
 
-* Don’t use fallback servers;
-* Use system default servers;
-* Use custom servers.
+*Všimněte si, že před verzí 7.12 se služba AdGuard ve výchozím nastavení spouštěla v režimu filtrování (i když byla zakázána volba *Spustit AdGuard při startu systému"*). Pokud vám vyhovovalo staré chování, tuto možnost povolte.*
 
-### DNS server timeout period
+### Filtrovat localhost
 
-Here you can specify the time in milliseconds that AdGuard will wait for the response from the selected DNS server before resorting to fallback. If you don’t fill in this field or enter an invalid value, the value of 5000 will be used.
+Pokud chcete, aby AdGuard filtroval zpětná připojení, zaškrtněte toto políčko. Tato možnost bude vždy zapnutá, pokud máte nainstalovanou AdGuard VPN, protože jinak nebude fungovat.
 
-### List of custom fallback servers
+### Vyloučit zadané rozsahy IP z filtrování
 
-If you want AdGuard to use custom fallback servers, list them in this section, one per line.
+Pokud nechcete, aby AdGuard filtroval určité podsítě, povolte tuto funkci a zadejte rozsahy IP v notaci CIDR (např. 98.51.100.14/24) v části **Rozsahy IP vyloučené z filtrování** níže.
 
-### List of custom bootstrap addresses
+### Povolit zápis HAR
 
-A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in *DNS protection*. Such a "middle ground" is needed when using protocols that denote the server address by letters (such as DNS-over-TLS, for example). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
+Tato možnost by měla být zapnuta **pouze pro účely ladění**. Pokud zaškrtnete toto políčko, AdGuard vytvoří soubor obsahující informace o všech filtrovaných požadavcích HTTP ve formátu HAR 1.2. Tento soubor lze analyzovat pomocí aplikace Fiddler. Upozorňujeme, že to může výrazně zpomalit prohlížení webu.
 
-By default, the system DNS resolver is used, and the initial bootstrap request is made through port 53. If this does not suit you, list here the IP addresses of the DNS servers that will be used to determine the address of the encrypted DNS server in the top-to-bottom order. The specified IP addresses will be applied in the order listed. If you specify invalid addresses, or no addresses at all, the system IPs will be used.
+### Přidat do běžného požadavku HTTP dodatečnou mezeru
 
-### DNS exclusions
+Přidá dodatečnou mezeru mezi metodu HTTP a URL adresu a odstraní mezeru za polem "Host:", aby se zabránilo hloubkové kontrole paketů. Např. požadavek
 
-All DNS requests to domains listed here will be redirected to the system default DNS server instead of the DNS server specified in the app’s settings. Also, DNS blocking rules will not be applied to such requests.
+`GET /foo/bar/ HTTP/1.1
+Host: example.org`
 
-### Block ECH
+bude převeden na
 
-If enabled, AdGuard strips Encrypted Client Hello parameters from responses.
+`GET  /foo/bar/ HTTP/1.1
+Host: example.org`
 
-### Enable filtering of secure DNS requests
+Tato možnost se použije pouze v případě, že je povolena možnost *Ochrana před DPI* v Režimu utajení.
 
-When enabled, AdGuard redirects secure DNS requests to the local DNS proxy, in addition to plain DNS requests.
+### Upravit velikost fragmentu úvodního paketu TLS
+
+Určuje velikost fragmentace paketů TCP, čímž se zabrání hloubkové kontrole paketů. Tato možnost má vliv pouze na zabezpečený (HTTPS) provoz.
+
+Pokud je tato možnost povolena, AdGuard rozdělí počáteční paket TLS (paket ClientHello) na dvě části: první má zadanou délku a druhá obsahuje zbytek až do délky celého počátečního paketu TLS.
+
+Platné hodnoty: 1–1500. Pokud je zadána neplatná velikost, použije se hodnota vybraná systémem. Tato možnost se použije pouze v případě, že je povolena možnost *Ochrana před DPI* v Režimu utajení.
+
+### Velikost fragmentu běžného požadavku HTTP
+
+Upraví velikost fragmentace požadavků HTTP. Tato možnost má vliv pouze na prostý HTTP provoz. Pokud je tato možnost povolena, AdGuard rozdělí počáteční paket na dvě části: první má zadanou délku a druhá obsahuje zbytek až do délky celého původního paketu.
+
+Platné hodnoty: 1–1500. Pokud je zadána neplatná velikost, použije se hodnota vybraná systémem. Tato možnost se použije pouze v případě, že je povolena možnost *Ochrana před DPI* v Režimu utajení.
+
+### Zobrazit QUIC
+
+Umožňuje zobrazit záznamy protokolu QUIC v záznamech filtrování. Pouze pro blokované požadavky.
+
+### Povolit udržování TCP
+
+Pravidelné odesílání paketů TCP přes neaktivní připojení, aby se zajistilo jeho fungování a resetování časových limitů NAT. Tato možnost může být užitečná pro obejití přísného nastavení překladu síťových adres (NAT), které používají někteří poskytovatelé internetových služeb.
+
+### Interval udržování TCP
+
+Zde můžete zadat dobu nečinnosti v sekundách před odesláním udržovací sondy. Pokud je zadána 0, použije se hodnota vybraná systémem.
+
+Všimněte si, že toto nastavení funguje pouze v případě, že je povolena možnost *Povolit udržování TCP*.
+
+### Časový limit udržování TCP
+
+Zde můžete zadat dobu v sekundách před odesláním další udržovací sondy neodpovídajícímu partnerovi. Pokud je zadána 0, použije se hodnota vybraná systémem.
+
+Všimněte si, že toto nastavení funguje pouze v případě, že je povolena možnost *Povolit udržování TCP*.
+
+### Blokovat Java
+
+Některé webové stránky a webové služby stále podporují zásuvné moduly Java. Rozhraní API, které slouží jako základ pro zásuvné moduly Java, obsahuje závažné bezpečnostní chyby. Tyto zásuvné moduly můžete z bezpečnostních důvodů zakázat. Nicméně, i když se rozhodnete použít možnost *Blokovat Java*, JavaScript bude stále povolen.
+
+### Časový limit DNS serveru
+
+Zde můžete zadat dobu v milisekundách, po kterou bude AdGuard čekat na odezvu od vybraného DNS serveru, než se uchýlí k nouzovému řešení. Pokud toto pole nevyplníte nebo zadáte neplatnou hodnotu, bude použita hodnota 5000.
+
+### Použít HTTP/3 pro DNS-over-HTTPS
+
+Povolí HTTP/3 pro odchozí připojení DNS-over-HTTPS, aby se urychlilo připojení, pokud vybrané odchozí připojení tento protokol podporuje. To znamená, že povolení této možnosti nezaručuje, že všechny požadavky DNS budou odesílány prostřednictvím HTTP/3.
+
+### Použít záložní DNS odchozích připojení
+
+Běžné dotazy budou přesměrovány na záložní odchozí server, pokud všechny požadavky DNS na vybrané odchozí připojení selžou.
+
+### Paralelní dotazování na odchozí připojení DNS
+
+Všechny odchozí připojení budou dotazovány paralelně a je vrácena první odpověď. Vzhledem k tomu, že dotazy DNS jsou prováděny paralelně, zvyšuje se povolením této funkce rychlost internetu.
+
+### Vždy odpovídat na neúspěšné DNS dotazy
+
+Pokud se překládání adres nezdařilo v každém z předávaných odchozích připojení a také v záložních doménách, bude odpovědí na požadavek DNS `SERVFAIL`.
+
+### Povolit filtrování zabezpečených DNS požadavků
+
+Kromě běžných DNS požadavků bude AdGuard přesměrovávat zabezpečené DNS požadavky na místní DNS proxy.
+
+### Režim blokování pro pravidla hosts
+
+Zde můžete vybrat způsob, jakým bude AdGuard reagovat na domény blokované pravidly DNS na základě [syntaxe pravidla hosts](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
+
+* Odpověď s chybou "Refused"
+* Odpověď s chybou "NxDomain"
+* Odpověď s vlastní IP adresou
+
+### Režim blokování pro pravidla stylu adblock
+
+Zde můžete vybrat způsob, jakým bude AdGuard reagovat na domény blokované pravidly DNS na základě [syntaxe stylu ad-block](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax).
+
+* Odpověď s chybou "Refused"
+* Odpověď s chybou "NxDomain"
+* Odpověď s vlastní IP adresou
+
+### Vlastní IPv4 adresa
+
+Pokud je v režimu blokování pro pravidla pro hostitele, nebo v režimu blokování pro pravidla typu adblock vybrána vlastní IP adresa, bude tato IP adresa vrácena v odpovědi na blokované požadavky A. Pokud nejsou zadáno nic, AdGuard odpoví výchozí chybou "Refused".
+
+### Vlastní IPv6 adresa
+
+Pokud je v režimu blokování pro pravidla pro hostitele, nebo v režimu blokování pro pravidla typu adblock vybrána vlastní IP adresa, bude tato IP adresa vrácena v odpovědi na blokované požadavky AAAA. Pokud nejsou zadáno nic, AdGuard odpoví výchozí chybou "Refused".
+
+### Záložní server
+
+Zde můžete zadat alternativní DNS server, na který bude požadavek DNS přesměrován, pokud hlavní server neodpoví v časovém limitu uvedeném v následující části. Na výběr jsou tři možnosti:
+
+* Nepoužívat záložní servery;
+* Použít výchozí systémové servery;
+* Použít vlastní servery.
+
+### Blokovat ECH
+
+Pokud je tato možnost povolena, AdGuard odstraní z dotazů parametry Encrypted Client Hello.
+
+### Seznam vlastních záložních serverů
+
+Pokud chcete, aby AdGuard používal vlastní záložní servery, uveďte je v této části po jednom na řádek.
+
+### Seznam vlastních bootstrap adres
+
+Bootstrap je zprostředkující DNS server používaný k získání IP adresy zabezpečeného DNS serveru, který jste vybrali dříve v menu *DNS ochrana*. Taková "střední cesta" je nutná při použití protokolů, které označují adresu serveru písmeny (například DNS-over-TLS). V tomto případě funguje bootstrap jako překladač a převádí písmena na čísla, kterým systém rozumí.
+
+Ve výchozím nastavení je použit systémový překladač DNS a bootstrap požadavek je odeslán prostřednictvím portu 53. Pokud vám to nevyhovuje, uveďte zde IP adresy DNS serverů, které budou použity k určení adresy šifrovaného DNS serveru v pořadí shora dolů. Zadané IP adresy budou použity v uvedeném pořadí. Pokud zadáte neplatné adresy nebo nezadáte žádné, budou použity systémové IP adresy.
+
+### DNS výjimky
+
+Všechny DNS požadavky na domény zde uvedené budou přesměrovány na výchozí systémový DNS server namísto DNS serveru zadaného v nastavení aplikace. Na tyto požadavky se také neuplatní pravidla DNS blokování.
+
+### Vyloučit zadané názvy sítí Wi-Fi (SSID) z DNS filtrování
+
+DNS ochrana nebude fungovat pro sítě Wi-Fi uvedené v této části. Zadejte názvy sítí Wi-Fi (SSID), jeden na řádek. To může být užitečné, pokud je určitá síť Wi-Fi již chráněna pomocí AdGuard Home nebo jiným systémem DNS ochrany. V tomto případě je zbytečné znovu filtrovat DNS požadavky.

@@ -3,6 +3,12 @@ title: Installation
 sidebar_position: 2
 ---
 
+:::info
+
+This article is about AdGuard for Safari, which safeguards only your Safari browser. Tüm cihazınızı korumak için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## How to install AdGuard for Safari {#install}
 
 AdGuard for Safari is a free app presented on the App Store. To install it on your device, do the following.
@@ -11,13 +17,17 @@ AdGuard for Safari is a free app presented on the App Store. To install it on yo
 
 ![AdGuard for Safari on the App Store](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-app-store.png)
 
-2. Press *Get* > *Install* > *Open*.
+2. Press *Get* → *Install* → *Open*.
 
 3. To set up AdGuard for Safari, enable the AdGuard extensions in the Safari settings. In a notification, click *Fix it*. In an opened window, check the boxes next to AdGuard extensions.
 
 ![Notification: Some extensions are disabled](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-notification.png)
 
-> Not all extensions are required for AdGuard for Safari to function correctly. For instance, checking the *Icon* extension enables the icon in the tray menu. However, we recommend to enable all of them.
+:::note
+
+Not all extensions are required for AdGuard for Safari to function correctly. For instance, checking the *Icon* extension enables the icon in the tray menu. However, we recommend to enable all of them.
+
+:::
 
 ![Extensions checked](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-extensions-checked.png)
 
@@ -28,8 +38,8 @@ After you complete steps 1-3, AdGuard for Safari will start functioning. You can
 To uninstall AdGuard for Safari, do the following:
 
 1. Quit the app.
-2. Open Safari preferences.
-3. Choose the Extensions tab. You will see a list of extensions, AdGuard has eight.
+2. Safari tercihlerini açın.
+3. Uzantılar sekmesini seçin. You will see a list of extensions, AdGuard has eight.
 4. Uncheck all checkboxes and press *Uninstall* below any of them.
 
 ![Extensions checked](https://cdn.adtidy.org/public/Adguard/kb/installation/Safari/extensionschecked.png)

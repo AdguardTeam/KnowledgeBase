@@ -1,7 +1,13 @@
 ---
 title: 如何在 Safari 中拦截 YouTube 广告
 sidebar_position: 4
----  
+---
+
+:::info
+
+This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
 
 ## 如何在 Safari 中拦截 YouTube 广告
 
@@ -17,4 +23,8 @@ sidebar_position: 4
 
 现在 YouTube 里没有广告了！ 请注意，如您重新加载网页，您要再次执行此扩展。
 
-> 在一些情况下，AdGuard 扩展不会显示。 如您没看见此扩展，请尝试重覆执行上述的步骤或重启您的设备。
+:::tip
+
+在一些情况下，AdGuard 扩展不会显示。 如您没看见此扩展，请尝试重覆执行上述的步骤或重启您的设备。
+
+:::

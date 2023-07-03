@@ -3,6 +3,12 @@ title: Ручная установка сертификата
 sidebar_position: 1
 ---
 
+:::info
+
+This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 AdGuard для Mac должен установить корневой сертификат в хранилище сертификатов, чтобы [фильтровать HTTPS-трафик](/general/https-filtering/what-is-https-filtering). В большинстве случаев это действие выполняется автоматически при первом запуске приложения, но пользователям браузеров на основе Gecko (Firefox, Waterfox и т. п.), установившим в браузере мастер-пароль, может потребоваться выполнить дополнительные шаги (т. к. эти браузеры используют собственное хранилище сертификатов вместо системного). Они должны либо ввести мастер-пароль, когда AdGuard попросит об этом (чтобы предоставить приложению доступ к хранилищу сертификатов), либо установить сертификат вручную.
 
 Чтобы установить сертификат вручную:

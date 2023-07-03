@@ -1,7 +1,13 @@
 ---
 title: SafariでYouTube広告をブロックする方法
 sidebar_position: 4
----  
+---
+
+:::info
+
+This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
 
 ## SafariでYouTube広告をブロックする方法
 
@@ -17,4 +23,8 @@ sidebar_position: 4
 
 完了です！広告なしでYouTubeを閲覧いただけます。 ※ページを再読み込みした際には手順の 2. と 3. を再度行ってください。
 
-> AdGuard拡張機能が表示されない場合があります。 表示されない場合は、再度手順を行ってみるか、端末を再起動してください。
+:::tip
+
+AdGuard拡張機能が表示されない場合があります。 表示されない場合は、再度手順を行ってみるか、端末を再起動してください。
+
+:::

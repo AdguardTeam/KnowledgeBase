@@ -44,7 +44,7 @@ sidebar_position: 2
 * Nathan Moinvaziri 的 Minizip-ng 库： [https://github.com/zlib-ng/minizip-ng](https://github.com/zlib-ng/minizip-ng)
 * Brandon Withrow 的 Lottie for iOS 库： [https://github.com/airbnb/lottie-ios](https://github.com/airbnb/lottie-ios)
 
-## AdGuard 广告拦截扩展 {#extension}
+## AdGuard 浏览器扩展 {#extension}
 
 * moment: [https://github.com/moment/moment](https://github.com/moment/moment)
 * simply-deferred: [https://github.com/sudhirj/simply-deferred](https://github.com/moment/moment)
@@ -105,9 +105,9 @@ sidebar_position: 2
 * BoringSSL: [https://github.com/google/boringssl/blob/master/LICENSE](https://github.com/google/boringssl/blob/master/LICENSE)
 * brotli: [https://github.com/google/brotli/blob/master/LICENSE](https://github.com/google/brotli/blob/master/LICENSE)
 * Chromium: [https://github.com/chromium/chromium/blob/master/LICENSE](https://github.com/chromium/chromium/blob/master/LICENSE)
-* Detours: [https://github.com/microsoft/Detours/blob/master/LICENSE](https://github.com/microsoft/Detours/blob/master/LICENSE)
+* Detours: [https://github.com/microsoft/Detours/blob/main/LICENSE.md](https://github.com/microsoft/Detours/blob/main/LICENSE.md)
 * eDistantObject: [https://github.com/google/eDistantObject/blob/master/LICENSE](https://github.com/google/eDistantObject/blob/master/LICENSE)
-* Simon Zolin 的 FF/FFOS libs: [https://github.com/stsaz/ff/blob/master/README](https://github.com/stsaz/ff/blob/master/README)
+* FF/FFOS libs by Simon Zolin: [https://github.com/stsaz/ffbase/blob/master/README.md](https://github.com/stsaz/ffbase/blob/master/README.md)
 * Google test: [https://github.com/google/googletest/blob/master/LICENSE](https://github.com/google/googletest/blob/master/LICENSE)
 * http-parser: [https://github.com/nodejs/http-parser/blob/master/LICENSE-MIT](https://github.com/nodejs/http-parser/blob/master/LICENSE-MIT)
 * jsmn: [https://github.com/zserge/jsmn/blob/master/LICENSE](https://github.com/zserge/jsmn/blob/master/LICENSE)
@@ -147,7 +147,7 @@ sidebar_position: 2
 * krystian3w — 非常活跃的过滤器贡献者
 * lancelot.moon — Crowdin 繁体中文的翻译和审核员，beta 测试员
 * Lord Ami — beta 测试员，活跃的 AdGuard 论坛成员
-* Lukas Novotny (novas78) — translator and proofreader to Czech in Crowdin
+* Lukas Novotny (novas78) — 在 Crowdin 上捷克语的翻译和审核员
 * malware1 — beta 测试员，活跃的 AdGuard 论坛成员
 * milder — beta 测试员，活跃的 AdGuard 论坛成员
 * Nicos18 — beta 测试员，活跃的 AdGuard 论坛成员

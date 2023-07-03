@@ -7,7 +7,7 @@ Users of AdGuard for Windows, Mac, and Android may notice that AdGuard adds a sm
 
 First of all, don't worry, this is not a real domain, and there is actually no real server with that name. This domain is used to apply cosmetic filtering to web pages, but everything is done locally right on your device without connecting to any server.
 
-### Technical explanation
+### Teknik açıklama
 
 But what's going on and why is it done? Please read the technical explanation below.
 
@@ -24,4 +24,4 @@ But what's going on and why is it done? Please read the technical explanation be
 
 ### Verification
 
-This is easy to verify. If you disable AdGuard, you'll see that it is simply impossible to establish connection to `local.adguard.org` since there is no server with that address. Just try opening it in your browser when AdGuard is disabled.
+Bunu doğrulamak kolaydır. If you disable AdGuard, you'll see that it is simply impossible to establish connection to `local.adguard.org` since there is no server with that address. Just try opening it in your browser when AdGuard is disabled.

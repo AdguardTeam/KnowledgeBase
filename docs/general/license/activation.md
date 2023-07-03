@@ -7,21 +7,25 @@ sidebar_position: 3
 
 To activate your license, go to the *License* section of your AdGuard product and find the *Log in* field or *Activate* button. Use the email and password of your AdGuard account to log in. If you don't have an account yet, you will be offered to create one.
 
-> Note: To activate a license via AdGuard account, you need to have a valid license with at least one open slot there. If your license is already used on a maximum number of devices, you can [upgrade it](#how-to-upgrade-a-license) or [transfer it from one device to another](#how-to-transfer-a-license-to-another-device).
+:::note
 
-Alternatively, you can use a [license key](../what-is#license-key) to activate the license. 
+To activate a license via the AdGuard account, a valid license with at least one free slot is required. If your license is already used on a maximum number of devices, you can [upgrade it](../payment-options#upgrade) or [transfer it from one device to another](../transfer).
+
+:::
+
+Alternatively, you can use a [license key](../what-is#license-key) to activate the license.
 
 **Below you can check step-by-step activation instructions for each platform.**
 
 ### Activating AdGuard for Windows
 
 1. Open the AdGuard app
-   
-To do it, double-click on the AdGuard icon on the desktop:   
+
+To do it, double-click the AdGuard icon on the desktop:
 
 ![AdGuard icon on the desktop](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowsEn.png)
 
-or double-click on the AdGuard icon in the system tray:   
+or double-click the AdGuard icon in the system tray:
 
 ![AdGuard icon in the system tray](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windows2En.png)
 
@@ -46,11 +50,11 @@ or double-click on the AdGuard icon in the system tray:
 ![AdGuard icon in the menu bar](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/mac1.png)
 
 2. Click the **gear icon** in the top right corner
-3. Click **License...** 
+3. Click **License...**
 
-![Go to Settings and License](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/macEn.png)
+![Go to Settings and License *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/macEn.png)
 
-4. In the opened window press **Activate** button   
+4. In the opened window press **Activate** button
 
 ![Press Activate](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/maclicenseen1.png)
 
@@ -98,30 +102,3 @@ or double-click on the AdGuard icon in the system tray:
 4. Enter **email** and **password** from your **AdGuard account**
 
 ![Log in *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense2en.png)
-
-## How to transfer a license to another device
-
-The license key can be activated on a [limited number of devices](../what-is#devices). If the key has already been used on the maximum allowed number of devices, you need to unbind a device from your account. You can do that in three ways:
-* by clicking the *Reset license* button (applies to desktop apps),
-* by logging out of your account in an AdGuard product,
-* by clicking the cross icon next to a device in your AdGuard account.
-
-After you have unbound the number of devices you need, you can log in to your AdGuard account on new devices. The license will be bound to them.
-
-## How to upgrade a license
-
-To make it more convenient to use your AdGuard products, you can upgrade your license.
-
-1. To increase the functionality of your AdGuard products, you can **upgrade your free or trial license to the full version**.
-2. To extend the number of devices, you can **upgrade your AdGuard Ad Blocker Personal license to Family**.
-3. You can also **upgrade your subscription to a Lifetime license**.
-
-You can upgrade your license by:
-* purchasing another license on the official websites of AdGuard products,
-* clicking the *Upgrade* button in your AdGuard account.
-
-## How to cancel a subscription
-
-The subscription can be canceled in your AdGuard account. To cancel your subscription, click the card or the cross icon next to it and select *Unsubscribe*. The canceled subscription will be valid until its expiry date.
-
-> Subscriptions purchased on the App Store can be managed in the App Store account or in the device's settings.

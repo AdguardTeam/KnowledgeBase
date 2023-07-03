@@ -1,45 +1,55 @@
 ---
-title: How to configure system-wide filtering with AdGuard for iOS
+title: Jak nakonfigurovat filtrování v celém systému pomocí AdGuardu pro iOS
 sidebar_position: 2
 ---
 
-## About system-wide filtering
+:::info
 
-System-wide filtering means blocking ads and trackers beyond the Safari browser, i.e. in other apps and browsers. This article will tell you how to set it up on your iOS device.
+Tento článek popisuje AdGuard pro iOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 
-On iOS, the only way to block ads and trackers system-wide is to use [DNS filtering](https://adguard-dns.io/kb/general/dns-filtering/). First, you have to enable DNS protection. To do so, open *AdGuard for iOS settings* → *DNS protection* and switch it on.
+:::
 
-![DNS protection screen *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_dns_protection.PNG)
+## O filtrování v celém systému
 
-Now, if your purpose is to block ads and trackers system-wide, you have two options:
+Filtrování v celém systému znamená blokování reklam a slídičů mimo prohlížeč Safari, tedy v jiných aplikacích a prohlížečích. V tomto článku se dozvíte, jak to v zařízení se systémem iOS nastavit.
 
-1. Enable AdGuard DNS server (*Settings* → *DNS protection* → *DNS server* → *AdGuard DNS*).
-2. Add a DNS filter/hosts file that will block ad and tracking domains, e.g. AdGuard DNS filter.
+V systému iOS je jediným způsobem, jak blokovat reklamy a slídiče v celém systému, použití [DNS filtrování](https://adguard-dns.io/kb/general/dns-filtering/). Nejprve musíte zapnout DNS ochranu. Za tímto účelem otevřete *nastavení AdGuardu pro iOS* → *DNS ochrana* a zapněte ji.
 
-The second option takes a bit more time to set up but has several advantages:
+![Obrazovka DNS ochrany *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_dns_protection.PNG)
 
-* You can use any DNS server at your discretion and you are not tied up to a specific blocking server.
-* You can add multiple DNS filters and/or hosts files at the same time, but you can't use multiple DNS servers at once.
+Pokud je vaším cílem blokovat reklamy a slídiče v celém systému, máte dvě možnosti:
 
-![How DNS filtering works](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_en.png)
+1. Zapněte server AdGuard DNS (*Nastavení* → *DNS ochrana* → *DNS server* → *AdGuard DNS*).
+2. Přidejte soubor DNS filtr/hosts, který bude blokovat reklamy a slídiče, např. filtr AdGuard DNS.
 
-## How to add a DNS filter/hosts file
+Druhá možnost vyžaduje trochu více času na nastavení, ale má několik výhod:
 
-You can add any DNS filter or hosts file, the instruction will be the same for all of them. For the sake of the example, let's add [AdGuard DNS filter](https://github.com/AdguardTeam/AdguardSDNSFilter). It is composed of several other filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList, EasyPrivacy, etc.) and it's simplified specifically to be better compatible with DNS-level ad blocking.
+* Můžete používat libovolný DNS server podle vlastního uvážení a nejste vázáni na konkrétní server pro blokování.
+* Můžete přidat více DNS filtrů a/nebo souborů hostitelů najednou, ale nemůžete používat více DNS serverů najednou.
 
-1. Open *AdGuard for iOS settings* → *General*.
-2. Enable *Advanced mode*. The *Advanced settings* tab will appear. Open it.
+![Jak funguje DNS filtrování](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_en.png)
 
-![Open AdGuard Settings and enable Advanced mode *mobile_border](https://cdn.adtidy.org/public/Adguard/Release_notes/iOS/v4.0/advanced_mode_en.jpg)
+## Jak přidat soubor DNS filtr/hosts
 
-![Advanced settings screen *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_advanced_settings.PNG)
+Můžete přidat libovolný filtr DNS nebo soubor hosts, pokyny budou pro všechny stejné. Pro účely příkladu přidejme [filtr AdGuard DNS](https://github.com/AdguardTeam/AdguardSDNSFilter). Filtr složený z více jiných filtrů (Základní filtrAdGuard, Filtr sociálních médií, Filtr ochrany sledování, Filtr mobilních reklam, EasyList, EasyPrivacy atd.), který je zjednodušený pro lepší kompatibilitu s blokováním reklamy na úrovni DNS.
 
-> Note: We don't recommend touching other settings you'll find inside the *Advanced settings* tab, especially when it comes to *Low-level settings*. Some of them might break the Internet connection or compromise your privacy and security, so it's better to be careful. The text below describes the exact actions required to add AdGuard DNS filter.
+1. Otevřete *Nastavení AdGuardu pro iOS* → *Obecné*.
+2. Povolte *Pokročilý režim*. Zobrazí se karta *Pokročilá nastavení*. Otevřete ji.
 
-3. Copy this link: `https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt` (it's a link for AdGuard DNS filter)
-4. Open *AdGuard for iOS settings* → *DNS protection* → *DNS filtering* (available while *Advanced mode* is enabled) → *DNS filters*.
-5. Click *Add a filter*, paste the link into the filter URL field, and click 'Next'.
+![Otevřít Nastavení AdGuardu a povolit pokročilý režim *mobile_border](https://cdn.adtidy.org/public/Adguard/Release_notes/iOS/v4.0/advanced_mode_en.jpg)
 
-![Adding a DNS filter screen *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_adding_a_filter.PNG)
+![Obrazovka pokročilých nastavení *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_advanced_settings.PNG)
 
-> Add any number of other DNS filters the same way by pasting a different URL at step 3. You can find various filters and links to them [here](https://filterlists.com).
+:::note
+
+Nedoporučujeme se dotýkat dalších nastavení, která najdete na kartě *Pokročilá nastavení*, zejména pokud jde o *Nízkoúrovňová nastavení*. Některé z nich mohou narušit internetové připojení nebo ohrozit vaše soukromí a bezpečnost, proto je lepší být opatrný. Níže uvedený text popisuje přesné úkony potřebné k přidání filtru AdGuard DNS.
+
+:::
+
+3. Zkopírujte tento odkaz: `https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt` (je to odkaz na filtr AdGuard DNS)
+4. Otevřete *Nastavení AdGuardu pro iOS* → *DNS ochrana* → *DNS filtrování* (dostupné, když je povolen *Pokročilý režim*) → *DNS filtry*.
+5. Klepněte na *Přidat filtr*, vložte odkaz do pole URL filtru a klepněte na "Další".
+
+![Obrazovka přidání DNS filtru *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_adding_a_filter.PNG)
+
+Stejným způsobem můžete přidat libovolný počet dalších DNS filtrů vložením jiné adresy URL v kroku 3. Různé filtry a odkazy na ně najdete [zde](https://filterlists.com).

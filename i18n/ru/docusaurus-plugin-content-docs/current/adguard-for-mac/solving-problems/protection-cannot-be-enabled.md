@@ -2,7 +2,13 @@
 title: Не удаётся включить защиту
 sidebar_position: 2
 ---
- 
+
+:::info
+
+This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 Если по каким-либо причинам не удаётся включить защиту AdGuard, выполните следующие действия:
 
 1. Нажмите на иконку AdGuard в строке меню и откройте настройки, нажав на значок шестерёнки → Дополнительно → Сбросить настройки... → Завершить AdGuard...

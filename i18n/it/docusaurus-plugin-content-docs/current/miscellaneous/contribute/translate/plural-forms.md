@@ -1,158 +1,156 @@
 ---
-title: Plural forms
+title: Forme plurali
 sidebar_position: 4
 ---
 
 
-There are a lot of differences between the world’s languages. One of these differences is the use of plural forms that can cause huge difficulties when it comes to localization issue.
+Esistono molte differenze tra le lingue del mondo. Una di queste, è l'utilizzo delle forme plurali che possono causare enormi difficoltà, relativamente ai problemi di localizzazione.
 
-We strongly recommend you to properly read this article to learn more about plural forms and how they are being used in AdGuard translations.
+Ti suggeriamo vivamente di leggere correttamente questo articolo, per scoprire di più sulle forme plurali e su come sono utilizzate nelle traduzioni di AdGuard.
 
-## What do plural forms mean? {#plurals}
+## Cosa significano le forme plurali? {#plurals}
 
-Nouns in different languages can have several plural word forms. Their usage depends on the number of things you are talking about.
+I sostantivi in diverse lingue, possono avere diverse forme plurali. Il loro utilizzo dipende dal numero di cose di cui parli.
 
-For instance, English words have two word forms when speaking about something in the singular, like *'one star'*, and in the plural – *'two stars'*. It doesn’t matter if you say five, twenty six or even five hundred thirty two stars – the ending 's' will remain the same. But some languages can contain only one or many plural forms.
+Ad esempio, le parole in inglese hanno due forme, parlando di qualcosa al singolare, come *'one star'* e, al plurale, *'two stars'*. Non importa che tu dica cinque, ventisei o persino cinquecentotrentadue stars (stelle), la 's' finale rimarrà la stessa. Ma certe lingue possono contenere soltanto una o più forme plurali.
 
-In contrast to English, the Polish language has three plural forms of nouns. One of them is used when speaking about something in the singular, another form is used in the plural but with numbers ending in 2-4, excluding 12-14, and the third form – for words with other numbers in front of them.
+A differenza dell'inglese, il polacco ha tre forme plurali dei sostantivi. Una di esse è utilizzata parlando di qualcosa al singolare, un'altra al plurale ma con numeri che terminano per 2 o 4, esclusi 12 e 14, e la terza: per parole precedute da altri numeri.
 
-Let’s have a look at this picture. Here you can see the groups of numerals which determine a word form when standing in front of it.
+Diamo un'occhiata a quest'immagine. Qui, puoi vedere il gruppo di numeri che determinano la forma di una parola, quando ci si trova di fronte.
 
-![Polish](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
+![Polacco](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
-> Find other examples [here](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals).
+Facciamo un piccolo parallelo tra l'inglese e il polacco, per una migliore comprensione:
 
-Let’s draw a small parallel between English and Polish for better understanding: 
-
-      The English version:                                                 The Polish equivalents:
+      La versione inglese:                                                 Gli equivalenti in polacco:
     
-      1. form - It takes one hour.                                     1. form - Zajmuje to godzinę. 
-      2. form - It takes two hours.                                    2. form - Zajmuje to dwie godziny. 
-      3. form - It takes five hours.                                   3. form - Zajmuje to pięć godzin.
+      1. forma - It takes one hour.                                     1. forma - Zajmuje to godzinę.
+      2. forma - It takes two hours.                                    2. forma - Zajmuje to dwie godziny.
+      3. forma - It takes five hours.                                   3. forma - Zajmuje to pięć godzin.
 
-Now it is clear that the Polish *'godzinę'* (hour) has three different forms, whereas the English word changes its form with given numbers only twice.
+Ora, è chiaro che il polacco *'godzinę'* (ora) abbia tre forme differenti, mentre la parola in inglese cambia la sua forma con certi numeri soltanto due volte.
 
-Except for Polish, there are a lot of other languages that have three plural forms and more, such as Russian, Serbian, Slovak, Czech etc. But not all of them obey the same rule. That's why it is so important to know how many plural forms your language contains and how you can apply them.
+A eccezione del polacco, esistono molte altre lingue dotate di tre forme plurali o più, come il russo, il serbo, lo slovacco, il ceco, etc. Ma non tutte seguono la stessa regola. Ecco perché è così importante sapere quante forme plurali sono contenute dalla tua lingua e come puoi applicarle.
 
-## Where can you learn about the number of plural forms? {#where-to-learn}
+## Dove puoi scoprire il numero delle forme plurali? {#where-to-learn}
 
-When you are faced with a translation that requires the use of plurals, you may not be able to realize right away how many word forms your language contains.
+Quando ti trovi di fronte una traduzione che richiede l'uso dei plurali, potresti non accorgerti immediatamente di quante forme plurali sono contenute dalla tua lingua.
 
-Here are some sources of information you can use.
+Ecco alcune fonti di informazioni che puoi utilizzare.
 
-[Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contains a wide list of languages. The number of plural forms for different languages is shown this way: 'nplurals=2', 'nplurals=4' and so on. The numeral after the Equals sign '='  means the number of plural forms of the respective language.
+La [Guida di Localizzazione](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contiene un ampio elenco di lingue. Il numero di forme plurali per le diverse lingue è mostrato come segue: 'nplurals=2', 'nplurals=4' e così via. Il numero dopo il segno Uguale '=' indica il numero di forme plurali della rispettiva lingua.
 
-Also, you can get information about plural forms in the [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). The CLDR Plural Rules indicate an additional word form for decimal numbers (1.5; 2.3; 100.1…), but we don’t use them in AdGuard translations.
+Inoltre, puoi ottenere le informazioni sulle forme plurali nella [Repository Locale di Dati Comuni Unicode](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). Le Regole Plurali CLDR indicano una forma aggiuntiva della parola per i numeri decimali (1,5; 2,3; 100,1…), ma non le utilizziamo nelle traduzioni di AdGuard.
 
-## Plurals in AdGuard translations {#translations}
+## Plurali nelle traduzioni di AdGuard {#translations}
 
-First of all, we want to mention that not every AdGuard translation requires the use of plural forms.
+Prima di tutto, vogliamo ricordare che non tutte le traduzioni di AdGuard richiedono l'utilizzo delle forme plurali.
 
-Currently, we have 4 types of strings on Crowdin that involve the use of plurals.
+Correntemente, abbiamo 4 tipi di stringhe su Crowdin che implicano l'uso dei plurali.
 
-Let's take a closer look at them.
+Diamogli un'occhiata più da vicino.
 
-### 1. Phrases with string keys ending in `.singular`, `.dual`, `.plural` {#1type}
+### 1. Frasi contenenti chiavi di stringa in `.singular`, `.dual`, `.plural` {#1type}
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/dual_it.png)
 
-Most of them are represented in the `AdGuard for Windows` project and consist of only one or two words:
+Gran parte di esse sono rappresentate nel progetto `AdGuard per Windows` e consistono esclusivamente di una o due parole:
 
-- `days;`
-- `extensions;`
-- `hours`
+- `giorni;`
+- `estensioni;`
+- `ore`
 
-Please pay attention to the string keys of such phrases and to the "Context" field where you can see some important notes about plurals. The string keys may contain `Singular`, `Dual`, `Plural` words (ex.`FormatDayDeclensionDual`). In this case, you should leave the appropriate plural form as it is specified in the key.
+Sei pregato di prestare attenzione alle chiavi di stringhe di tali frasi e al campo "Contesto", dove puoi trovare importanti note sulle forme plurali. Le chiavi di stringhe potrebbero contenere parole `Singular`, `Dual`, `Plural` (es.`FormatDayDeclensionDual`). In questo caso, dovresti lasciare la forma plurale appropriata come specificata nella chiave.
 
-### 2. Strings with singular and plural nouns separated by commas {#2type}
+### 2. Le stringhe contenenti sostantivi singolari e plurali, separate da virgole {#2type}
 
-This kind of strings is mostly concentrated in the `AdGuard for Android` project.
+Questo tipo di stringhe si concentra per lo più nel progetto `AdGuard per Android`.
 
-Please look at the example:
+Sei pregato di guardare l'esempio:
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/android_fr.png)
 
-If there are 3 plural forms of nouns in your language (like in Polish), please write all plural forms separated by commas.
+Se nella tua lingua esistono 3 forme plurali di sostantivi (come in polacco), sei pregato di scriverle tutte, separandole con delle virgole.
 
-`hour, hours — godzinę, godziny, godzin`
+`ora, ore — godzinę, godziny, godzin`
 
-In case a noun has only 2 forms, there is no need to write the same form twice (*typically only for this type of strings with plurals!*). However, it won't be a mistake if you repeat the form twice.
+Nel caso in cui un sostantivo abbia soltanto 2 forme, non è necessario scrivere due volte la stessa forma (*tipicamente soltanto per questo tipo di stringhe contenenti plurali!*). Tuttavia, non sarà un errore ripetere la stessa forma due volte.
 
-### 3. Strings that use the Crowdin-developed pattern {#3type}
+### 3. Stringhe che utilizzano il modello sviluppato da Crowdin {#3type}
 
-This is the most user-friendly scheme of translating strings with plurals.
+Questo è lo schema più intuitivo per tradurre le stringhe contenenti plurali.
 
-Crowdin suggests to users that they translate the certain amount of phrases with different plural forms.
+Crowdin suggerisce agli utenti di tradurre un certo numero di frasi con diverse forme plurali.
 
-If your language provides only one plural form, then you will see only one phrase to translate. If three or more forms, Crowdin will provide you with the string divided into other two or three strings to translate.
+Se la tua lingua fornisce soltanto una forma plurale, visualizzerai soltanto una frase da tradurre. Se prevede tre o più forme, Crowdin ti fornirà la stringa, divisa in altre due o tre stringhe da tradurre.
 
-For example:
+Ad esempio:
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/crowdin_scheme.png)
 
-Please be attentive when translating these strings and approving them. If you have no idea what the "Other" field means, then just paste the same form as it is in the "Many" field. The translations of "Many" and "Other" fields can be the same.
+Sei pregato di prestare attenzione traducendo e approvando tali stringhe. Se non hai idea di cosa significhi il campo "Altro", incolla semplicemente la stessa forma del campo "Molti". Le traduzioni dei campi "Molti" e "Altro" possono essere le stesse.
 
-### 4. Strings with templates separated by the vertical bar sign {#4type}
+### 4. Stringhe con modelli separati dal simbolo della barra verticale {#4type}
 
-This is the most complicated type of AdGuard strings which is mostly used in `AdGuard Websites` project.
+Questo è il tipo più complicato di stringhe di AdGuard, prevalentemente utilizzato nel progetto `AdGuard Websites`.
 
-Pay close attention to a vertical bar sign between the sentences and **%count%** placeholders in original phrases – this will help you identify phrases where translations require the use of plural forms.
+Presta particolare attenzione al simbolo della barra verticale tra le frasi e ai segnaposto **%count%** nelle frasi originali: ti aiuteranno a identificare dove le traduzioni richiedono l'utilizzo delle forme plurali.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/plurals_site.png)
 
-Now, let’s imagine — you are faced with such a string: `Standard license for %count% computer | Standard license for %count% computers`.
+Ora, immaginiamo di trovarci di fronte a una stringa del genere: `Standard license for %count% computer | Standard license for %count% computers`.
 
-What should you know to translate it correctly?
+Cosa dovresti sapere per tradurlo correttamente?
 
-Let's call the sentences which are divided by a vertical bar sign **"templates"**, because actually they serve as templates for phrases with different numbers.
+Le frasi divise da un simbolo della barra verticale sono dette **"modelli"**, poiché servono effettivamente da modelli per frasi con numeri diversi.
 
-Coming back to the example, as the English language includes only two forms, there should be two templates respectively:
+Tornando all'esempio, poiché la lingua inglese include soltanto due forme, dovrebbero esser rispettivamente presenti due modelli:
 
 `Standard license for *%count%* computer | Standard license for *%count%* computers`
 
-where **template 1** – Standard license for *%count%* computer,
+dove **modello 1** –Standard license for *%count%* computer,
 
-and **template 2** – Standard license for *%count%* computers
+e **modello 2** – Standard license for *%count%* computers
 
-Another important thing you should pay your attention to is **%count%** placeholders that, as usual, take place before the words they define. Instead of **%count%** here will appear different numbers depending on which templates are being chosen.
+Un'altra cosa importante a cui dovresti prestare attenzione sono i segnaposto **%count%** che, solitamente, si trovano prima delle parole che definiscono. Invece di **%count%**, qui, appariranno vari numeri, a seconda di quali modelli sono scelti.
 
-In a situation with another language that has, let’s say, three plural forms, there should be three templates with two vertical bar signs between them.
+In una situazione con un'altra lingua avente, per esempio, tre forme plurali, dovrebbero essere presenti tre modelli separati da due simboli della barra verticale.
 
-For example, when we translate the above mentioned phrase into Slovak, that according to the rule of [Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) has three word forms, the correct translation will look so:
+Ad esempio, traducendo la suddetta frase in slovacco, che secondo la regola della [Guida di Localizzazione](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contiene tre forme della parola, la traduzione corretta sarà la seguente:
 
 `**Štandartná licencia pre *%count%* počítač | Štandartná licencia pre *%count%* počítače | Štandartná licencia pre *%count%* počítačov**`
 
-![Slovak](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/slovak.png)
+![Slovacco](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/slovak.png)
 
-In this case, we see three templates which contain three forms of the word *"počítač"* (computer) in Slovak.
+In questo caso, vediamo tre modelli contenenti tre forme della parola *"počítač"* (computer) in Slovacco.
 
-*If we ignore one of the forms and use only two templates for Slovak instead of three, the system won’t be able to take an appropriate template for certain numbers* and, as a result, we will have grammar mistakes in sentences, like in English: *Standard license for 5 computer*.
+*Se ignoriamo una di queste forme e utilizziamo soltanto due modelli per lo slovacco, invece di tre, il sistema non riuscirà a prelevare un modello appropriato per certi numeri* e, di conseguenza, avremo errori grammaticali nelle frasi, come in inglese: *Standard license for 5 computer*.
 > **Always use as many forms as there are in your language, even when the word itself has fewer word forms.**
 
-For example, the Serbian word *'računar'* (computer) has only two forms. But there are 3 plural forms in Serbian.
+Ad esempio, la parola serba *'računar'* (computer) prevede soltanto due forme. Ma in serbo esistono 3 forme plurali.
 
-![Serbian](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/serbian.png)
+![Serbo](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/serbian.png)
 
-Thus, the translation from English into Serbian should be:
+Pertanto, la traduzione dall'inglese al serbo dovrebbe essere:
 
 `**Standardna licenca za *%count%* računar | Standardna licenca za *%count%* računara | Standardna licenca za *%count%* računara**`
 
-Although it is obvious that the last two templates have no differences, it is very important to keep the rule: **The number of templates should reflect the number of plural forms of the respective language!**(typically for this type of strings with plurals).
+Sebbene sia ovvio che gli ultimi due modelli non presentino differenze, è molto importante seguire la regola: **Il numero di modelli dovrebbe riflettere il numero di forme plurali della rispettiva lingua!** (tipicamente, per questo tipo di stringhe contenenti plurali).
 
-### Short summary {#summury}
+### Riepilogo breve {#summury}
 
-When translating AdGuard projects pay your close attention to phrases which require the use of plural forms.
+Traducendo i progetti di AdGuard, presta particolare attenzione alle frasi che richiedono l'utilizzo di forme plurali.
 
-While first three types of such strings are more or less easy to perform, the fourth type demands more vigilance.
+Sebbene i primi tre tipi di tali stringhe siano più o meno facili da tradurre, il quarto richiede una maggiore attenzione.
 
-And again: if you come across an original phrase with two important elements: **the vertical bar sign** and **%count%** placeholders, please do the following:
+E ancora: se ti imbatti in una frase originale con due elementi importanti: **il simbolo della barra verticale** e i segnaposto **%count%**, sei pregato di procedere come segue:
 
-+ Refer to the plural rule of a language you translate into;
++ Fai riferimento alla regola del plurale della lingua verso cui traduci;
 
-> The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms – two templates in translations; five plural forms – five templates, etc.
+The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms – two templates in translations; five plural forms – five templates, etc.
 
-+ Do not forget to use a vertical bar sign between templates as it is represented in original strings;
++ Non dimenticarti di utilizzare un simbolo barra verticale tra i modelli, come rappresentato nelle stringhe originali;
 
-+ Do not translate, fill in or delete **%count%** placeholders.
++ Non tradurre, riempire o eliminare i segnaposto **%count%**.
 
 By following these simple rules you will help AdGuard developers avoid a lot of unnecessary complications during the localization process.

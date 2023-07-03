@@ -3,6 +3,12 @@ title: Installation
 sidebar_position: 2
 ---
 
+:::info
+
+This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## 系统要求
 
 ### iPhone
@@ -27,7 +33,7 @@ AdGuard iOS版是 App Store 中的一款应用程序。 如您想要在您的设
 
 ![在搜索栏中输入 "AdGuard" *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/2.png)
 
-在 App Store 打开的页面上 _AdGuard - adblock&privacy_ 选项下点击_获取_按钮，然后点击_安装_。 为了完成安装过程，您可能会看到要求输入您的苹果 ID 和密码的弹窗。 输入您的 ID 和密码后，请等待安装成功完成。
+[On the opened page of the App Store](https://adguard.com/download.html?auto=1) tap _GET_ under the string _AdGuard - adblock&privacy_ and then tap _INSTALL_. 为了完成安装过程，您可能会看到要求输入您的苹果 ID 和密码的弹窗。 输入您的 ID 和密码后，请等待安装成功完成。
 
 ![点击 AdGuard 应用程序下方的「获取」 *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/3.png)
 

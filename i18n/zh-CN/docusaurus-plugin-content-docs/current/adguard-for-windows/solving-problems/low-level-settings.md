@@ -1,108 +1,220 @@
 ---
-title: Advanced (low-level) Settings guide
+title: 高级（低级）设置指南
 sidebar_position: 7
 ---
 
-Previously known as low-level settings, Advanced Settings mostly contain settings that go beyond the average user's competence and don't have application in the everyday use. AdGuard for Windows is designed to work without ever having to change any of them, but they will provide additional options in some corner-case situations or when solving an uncommon problem.
+:::info
 
-> Mindlessly changing *Advanced Settings* can potentially cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only make changes to these settings if you are sure of what you are doing or if our support team has asked you to do so.
+This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
-## How to reach Advanced Settings
+:::
 
-To go to *Advanced settings*, in the main windows click *Settings → General Settings* and scroll down to *Advanced Settings*. Alternatively, select *Advanced → Advanced settings...* in the tray menu.
+以前称为低级设置的「高级设置」主要包含超出普通用户能力的选项，并且在日常使用中不使用。 AdGuard Windows 版的设计允许用户不改变任何高级设置，而有效地使用软件。不过，高级设置在一些情况下或解决一个不常见的问题时为用户提供一些额外的功能。
 
-## Advanced Settings
+:::caution
 
-Once you open Advanced Settings, you will be presented with the following options:
+盲目地更改「*高级设置*」可能会导致 AdGuard 的运作问题，也会断开互联网连接或侵害安全和隐私。 只有用户确定自己在做什么或我们的支持团队要求这样做，用户才应该更改这些设置。
 
-### Block TCP Fast Open
+:::
 
-If enabled, AdGuard will block TCP Fast Open in the Edge browser. To apply settings, you need to restart the browser.
+## 如何转到高级设置
 
-### Exclude app from filtering by entering the full path
+要进入「*高级设置*」，请在主窗口单击*「设置」→「常规设置」*，然后向下滚动到「*高级设置*」。 或者在托盘菜单中选择*「高级」→「高级设置…」*。
 
-If you want AdGuard not to filter any specific application, specify the full path to them and the apps will be excluded from filtering. Separate different paths by semicolons.
+## 高级设置
 
-### Enable AdGuard pop-up notifications
+一旦用户打开高级设置，会看到以下选项:
 
-Enable this feature to see AdGuard pop-up notifications. They do not appear too often and contain only important information. You can also use the tray menu to recall the last pop-up notification.
+### 拦截 TCP 快速打开
 
-### Automatically intercept filter subscription URLs
+如果启用，AdGuard 将阻止 Edge 浏览器中的 TCP 快速打开。 要应用设置，请重新启动浏览器。
 
-Enable this feature if you want AdGuard to automatically intercept filter subscription URLs (i.e. `abp:subscribe` and alike) and to open a custom filter installation dialog.
+### 使用 Encrypted ClientHello
 
-### Use redirect driver mode
+每一个加密的互联网连接都有一个未加密的部分， 就是发送的第一个数据包，包含用户要连接的服务器名称。 Encrypted ClientHello（ECH）的技术能够解决该问题，成功加密最后一位未加密的信息。 要使用该功能，请启用「*使用 Encrypted ClientHello*」选项。 It uses a local DNS proxy to look for the ECH configuration for the domain. 如果找到，将对 ClientHello 数据包进行加密。
 
-If this option is enabled, AdGuard intercepts all the traffic and redirects it to the local proxy server for further filtering.
+### 检查网站的证书透明度
 
-Otherwise, AdGuard will filter all the traffic on the fly, without redirection. In this case, the system will consider AdGuard to be the sole application that connects to the Internet (other applications are routed through it). The downside is that it will make the system Firewall less effective. The upside is that this approach works a little bit faster.
+基于 Chrome 证书透明度（英文：Chrome Certificate Transparency，简称：Chrome CT）政策验证域名内所有证书的真实性。 If the certificate does not comply with the Chrome Certificate Transparency Policy, AdGuard will not filter the website. 而 Chrome 则会屏蔽它。
 
-### Open main window at system start-up
+### 启用 SSL/TLS 证书撤销检查
 
-Enable this option to make the main AdGuard window open after the system is loaded. Note that it doesn't affect whether the actual filtering service is launched or not, this setting is located in *Settings → General Settings*
+启用后，此选项将运行异步 OCSP 检查，以检查网站的 SSL/TLS 证书是否被撤销。
 
-### Filter localhost
+如果在最短超时时间内完成 OCSP 检查，AdGuard 会立即应用检查结果；如果证书被撤销，则阻断连接，如果证书有效，则重新建立连接。
 
-If you want AdGuard to filter loopback connections, check the box. This option will always be on if you have AdGuard VPN installed, because otherwise it won't be able to work.
+如果验证时间过长，AdGuard 将建立连接并在后台继续检查。 如果证书被撤销，当前和将来该域名的连接将被阻止。
 
-### Enable HAR writing
+### 在设置中显示 AdGuard VPN
 
-This option should be enabled **only for debugging purposes**. If you tick the checkmark, AdGuard will create a file that contains information about all filtered HTTP requests in HAR 1.2 format. This file can be analyzed with the Fiddler app. Note that it may slow down your web browsing significantly.
+启用此选项可让用户在设置中显示 AdGuard VPN 选项卡，以便轻松打开应用程序和产品的网站。
 
-### Show QUIC
+### 过滤时按完整路径排除应用
 
-Allows displaying the QUIC protocol records in the filtering log. For blocked requests only.
+如果用户不想 AdGuard 过滤某款特定的应用程序流量，请指定应用程序的完整路径。这些应用程序将被排除在过滤之外。 请用分号分隔不同的路径。
 
-### Block Java
+### 启用 AdGuard 弹窗通知
 
-Some websites and web services still support Java Plug-Ins. The API that serves as the basis for Java plug-ins has serious security vulnerabilities. You can disable such plug-ins for security purposes. Nevertheless, even if you decide to use *Block Java* option, JavaScript will still be enabled.
+启用此功能查看 AdGuard 弹出式通知。 通知不经常出现，只包含重要的信息。 用户还可以使用托盘菜单来召回最后的弹出通知。
 
-### Action applied to blocked DNS requests
+### 自动截取过滤器订阅 URL
 
-Here you can select the way AdGuard will respond to DNS queries that should be blocked:
+如果用户想让 AdGuard 自动拦截过滤器订阅 URL（如 `abp:subscribe` 等）并打开自定义过滤器安装对话框，请启用此功能。
 
-* Reply with "Refused" error
-* Reply with "NxDomain" error
-* Reply with a custom IP address
+### 使用重定向驱动模式
 
-### Custom IPv4 address
+如果启用该选项，AdGuard 将拦截所有流量，并将其重定向到本地代理服务器进行进一步过滤。
 
-If "Custom IP address" is selected as an action applied to blocked DNS requests, here you should specify the IPv4 address that will be returned in response to blocked "A" requests. If none are specified, AdGuard will reply with the default "Refused" error.
+否则，AdGuard 将对所有流量进行实时过滤，而不进行重定向。 在这种情况下，系统将认为 AdGuard 是连接到互联网的唯一一款应用程序（其他应用程序的流量通过 AdGuard 路由）。 缺点是本功能会降低系统防火墙的有效性。 好处是这种方法工作起来快了一点。
 
-### Custom IPv6 address
+### 随系统启动时显示主窗口
 
-If "Custom IP address" is selected as an action applied to blocked DNS requests, here you should specify the IPv6 address that will be returned in response to blocked "AAAA" requests. If none are specified, AdGuard will reply with the default "Refused" error.
+启用此选项可在加载系统后打开 AdGuard 主窗口。 请注意，本功能不影响实际过滤服务是否启动，此设置位于*「设置」→「常规设置」*中。
 
-### Fallback servers
+### 在系统启动时启用过滤
 
-Here you can specify an alternate DNS server to which a DNS request will be rerouted if the main server fails to respond within the timeout period specified in the next section. There are three options to choose from:
+从 v7.12 版本开始，默认情况下，如果「AdGuard 随系统启动」选项被禁用，AdGuard 服务不会在操作系统启动后开始过滤流量。 这意味着，AdGuard 服务是以“待机”模式启动的。 启用此选项，使 AdGuard 过滤流量，即使应用程序没有启动。
 
-* Don’t use fallback servers;
-* Use system default servers;
-* Use custom servers.
+*Note that before v7.12 the AdGuard's service started in filtering mode by default (even if the *Launch AdGuard at system start-up* was disabled). If you were satisfied with the old behavior, enable this option.*
 
-### DNS server timeout period
+### 过滤 localhost 连接
 
-Here you can specify the time in milliseconds that AdGuard will wait for the response from the selected DNS server before resorting to fallback. If you don’t fill in this field or enter an invalid value, the value of 5000 will be used.
+如果用户希望 AdGuard 过滤环回（Loopback）连接，请选中复选框。 如果用户已安装 AdGuard VPN，此选项将始终处于开启状态，否则 AdGuard VPN 将无法工作。
 
-### List of custom fallback servers
+### 从过滤中排除特定 IP 范围
 
-If you want AdGuard to use custom fallback servers, list them in this section, one per line.
+如果用户不希望 AdGuard 过滤特定的子网，请启用此功能，并在下面**「无需进行过滤的 IP 范围」**指定 CIDR 表记中的 IP 范围（例如 98.51.100.14/24）。
 
-### List of custom bootstrap addresses
+### 启用 HAR 写入
 
-A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in *DNS protection*. Such a "middle ground" is needed when using protocols that denote the server address by letters (such as DNS-over-TLS, for example). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
+此选项**仅用于调试目的**。 如果勾选复选标记，AdGuard 将创建一个文件，其中包含 HAR 1.2 格式的所有已过滤 HTTP 请求的信息。 这个文件可以用 Fiddler 应用程序分析。 注意，这可能会显著降低网页加载速度。
 
-By default, the system DNS resolver is used, and the initial bootstrap request is made through port 53. If this does not suit you, list here the IP addresses of the DNS servers that will be used to determine the address of the encrypted DNS server in the top-to-bottom order. The specified IP addresses will be applied in the order listed. If you specify invalid addresses, or no addresses at all, the system IPs will be used.
+### 在普通的 HTTP 请求中添加额外的空间
 
-### DNS exclusions
+在 HTTP 方法和 URL 之间添加额外的空格，并在“主机”（Host）字段后删除空格以避免深度包检测。 例如，请求
 
-All DNS requests to domains listed here will be redirected to the system default DNS server instead of the DNS server specified in the app’s settings. Also, DNS blocking rules will not be applied to such requests.
+`GET /foo/bar/ HTTP/1.1
+Host: example.org`
 
-### Block ECH
+将转换为
 
-If enabled, AdGuard strips Encrypted Client Hello parameters from responses.
+`GET  /foo/bar/ HTTP/1.1
+Host: example.org`
 
-### Enable filtering of secure DNS requests
+此选项仅在启用隐身模式的「*保护免受 DPI 影响*」选项时被应用。
 
-When enabled, AdGuard redirects secure DNS requests to the local DNS proxy, in addition to plain DNS requests.
+### 调整初始 TLS 数据包的碎片大小
+
+指定 TCP 数据包碎片的大小，避免深度包检测。 This option only affects secured (HTTPS) traffic.
+
+如果开启该选项，AdGuard 将初始 TLS 数据包（ClientHello 数据包）分成两部分：第一部分包含指定的长度，第二部分包含剩余的长度，直到整个初始 TLS 数据包的长度。
+
+Valid values: 1–1500. 如果指定无效大小，将使用系统选择的数值。 此选项仅在启用隐身模式的「*保护免受 DPI 影响*」选项时被应用。
+
+### 普通 HTTP 请求片段大小
+
+调整 HTTP 请求片段大小。 此选项仅影响普通 HTTP 流量。 开启该选项后，AdGuard 会将初始数据包分成两部分：第一部分是指定的长度，第二部分是指定的长度，直到原始数据包的长度。
+
+Valid values: 1–1500. 如果指定无效大小，将使用系统选择的数值。 此选项仅在启用隐身模式的「*保护免受 DPI 影响*」选项时被应用。
+
+### 显示 QUIC
+
+允许在过滤日志中显示 QUIC 协议记录。 仅适用于被阻止的请求。
+
+### 启用 TCP 保活（keepalive）
+
+定期在 IDLE 连接上发送 TCP 数据包，以确保它是保活的，并更新 NAT 超时。 此选项可用于绕过某些 ISP（互联网服务提供商）使用的严格的网络地址转换（NAT）设置。
+
+### TCP 保活间隔
+
+用户可以指定在发送 keepalive 探测之前的空闲时间段（以秒为单位）。 If 0 is specified, the value selected by the system will be used.
+
+请注意，此设置仅在启用*「启用 TCP 保活」*选项时有效。
+
+### TCP 保活超时
+
+Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. 如果指定 0，使用系统选择的数值。
+
+请注意，此设置仅在启用*「启用 TCP 保活」*选项时有效。
+
+### 拦截 Java
+
+一些网站和 Web 服务仍然支持 Java 插件。 作为 Java 插件基础的 API 存在严重的安全漏洞。 出于安全考虑，可以禁用此类插件。 然而，即使用户决定使用*「拦截 Java」*选项，JavaScript 仍然会被启用。
+
+### DNS 服务器的超时期限
+
+用户可以指定 AdGuard 在使用后备服务器之前，等待选定 DNS 服务器响应的时间（以毫秒为单位）。 如果数值无效或为空，要使用的数值为 5000。
+
+### 将 HTTP/3 用于 DNS-over-HTTPS
+
+如果所选上游支持此协议，为 DNS-over-HTTPS 上游启用 HTTP/3 以加速连接。 这意味着，启用该选项并不能保证所有 DNS 请求都将通过 HTTP/3 发送。
+
+### 使用备用 DNS 上游
+
+Normal queries will be redirected to the fallback upstream if all DNS requests to the selected upstreams fail.
+
+### 并行查询 DNS 上游
+
+All upstreams will be queried in parallel and the first response is returned. 由于 DNS 查询以并行方式处理，因此启用此功能可以提高上网速度。
+
+### 始终响应故障的 DNS 查询
+
+如果地址解析在每个转发的上游以及后备域名上失败，对 DNS 请求的响应将是 `SERVFAIL`。
+
+### 启用安全 DNS 请求的过滤
+
+AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to plain DNS requests.
+
+### host 规则的拦截模式
+
+用户可以选择 AdGuard 将根据 [hosts 规则的语法](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax)对被 DNS 规则阻止的域名作出反应的方式。
+
+* 将「REFUSED」的错误作出回应
+* 将「NxDomain」的错误作出回应
+* 使用自定义 IP 地址作出回应
+
+### adblock 规则的拦截模式
+
+用户可以选择 AdGuard 将根据 [ adblock 规则的语法](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax)对被 DNS 规则阻止的域名作出反应的方式。
+
+* 将「REFUSED」的错误作出回应
+* 将「NxDomain」的错误作出回应
+* 使用自定义 IP 地址作出回应
+
+### 自定义 IPv4 地址
+
+如果在 host 规则的「拦截模式」或 adblock 规则的「拦截模式」中选择「自定义 IP 地址」，所有被阻止的「A」请求将返回该 IP 地址. 如果没有指定，AdGuard 将回复默认的「REFUSED」错误。
+
+### 自定义 IPv6 地址
+
+如果在 host 规则的「拦截模式」或 adblock 规则的「拦截模式」中选择「自定义 IP 地址」，所有被阻止的「AAAA」请求将返回该 IP 地址. 如果没有指定，AdGuard 将回复默认的「REFUSED」错误。
+
+### 后备（Fallback）服务器
+
+用户可以指定一个后备 DNS 服务器，如果主服务器未能在下一节指定的超时期限内做出响应，DNS 请求将被重新路由到后备服务器。 有三个选项可供选择：
+
+* 不要使用后备服务器；
+* 使用系统默认的服务器；
+* 使用自定义服务器。
+
+### 拦截 ECH
+
+如果启用，AdGuard 将从响应中去除 Encrypted Client Hello 参数。
+
+### 自定义后备服务器的列表
+
+如果用户希望 AdGuard 使用自定义后备服务器，请在此部分列出它们，每行一个。
+
+### 自定义 bootstrap 地址的列表
+
+Bootstrap 是一个中间 DNS 服务器，用于获取用户在「*DNS 保护*」中选择的安全 DNS 服务器的 IP 地址。 当使用用字母表示服务器地址的协议（例如 DNS-over-TLS）时，需要这样的“中间立场”。 在这种情况下，bootstrap 充当翻译器，将字母转换为系统可以理解的数字。
+
+默认情况下，使用系统 DNS 解析器，初始 bootstrap 请求通过端口53发出。 如果该方式不适合，请按从上到下的顺序列出将用于确定加密 DNS 服务器地址的 DNS 服务器的 IP 地址。 指定的 IP 地址将按列出的顺序应用。 如果用户指定的地址无效，或者没有指定地址，系统 IP 将被使用。
+
+### DNS 排除项
+
+所有对这里列出的域名的 DNS 请求将被重定向到系统默认的 DNS 服务器，而不是在应用程序设置中指定的 DNS 服务器。 此外，DNS 拦截规则将不会应用于此类请求。
+
+### 从 DNS 过滤中排除指定的 Wi-Fi 网络名称（SSID）
+
+DNS protection will not include Wi-Fi networks listed in this section. 每行指定一个 Wi-Fi 网络名称（SSID）。 如果一个特定的 Wi-Fi 网络已经被 AdGuard Home 或其他 DNS 保护系统保护，此功能很实用。 在这种情况下，再次过滤 DNS 请求是多余的。

@@ -1,20 +1,20 @@
 ---
-title: Contribute to AdGuard filters
+title: Přispět k rozvoji filtrů AdGuardu
 sidebar_position: 4
 ---
 
-### Filtering rules {#filtering-rules}
+### Pravidla filtrování {#filtering-rules}
 
-As you probably know, AdGuard uses filtering rules to block ads, and these rules are combined into thematic [blocking filters](/general/ad-filtering/adguard-filters), like AdGuard Base filter, Mobile ads filter, etc. [Read more about how ad blocking works](/general/ad-filtering/how-ad-blocking-works).
+Jak pravděpodobně víte, AdGuard používá k blokování reklam pravidla filtrování a tato pravidla jsou sdružena do tematických [filtrů blokování](/general/ad-filtering/adguard-filters), jako je AdGuard Base filter, Mobile ads filter atd. Více informací o tom, jak blokování reklam funguje, najdete [zde](/general/ad-filtering/how-ad-blocking-works).
 
-Websites constantly change the way they embed ads, and we add new rules to our filters to keep them effective. Filter engineers are working on creating new rules, but we always welcome the help and support of volunteers.
+Webové stránky neustále mění způsob vkládání reklam a my do našich filtrů přidáváme nová pravidla, aby byly účinné. Inženýři filtrů pracují na vytvoření nových pravidel, ale vždy uvítáme pomoc a podporu dobrovolníků.
 
-### How to start {#how-to-start}
+### Jak začít {#how-to-start}
 
-However, working with blocking filters requires specific skills. If you have them and know how to create rules, then head straight to our [AdGuard Filters repository](https://github.com/AdguardTeam/AdguardFilters) on GitHub. There you will find a lot of open issues, each one referencing a problem with some website problem — a missed ad, a false positive, etc. Choose any and suggest your own rules in comments. AdGuard filter engineers will review your suggestions, and if they find them appropriate, your rules will be added to AdGuard filters.
+Práce s filtry blokování však vyžaduje specifické dovednosti. Pokud je máte a umíte vytvářet pravidla, přejděte rovnou do našeho [repozitáře AdGuard Filters](https://github.com/AdguardTeam/AdguardFilters) na GitHubu. Najdete zde spoustu otevřených problémů, z nichž každý odkazuje na problém s nějakou webovou stránkou — nezablokovaná reklama, falešný pozitivní výsledek atd. Vyberte si, co chcete a navrhněte vlastní pravidla v komentářích. Inženýři AdGuard filtrů vaše návrhy posoudí a pokud je shledají vhodnými, budou vaše pravidla přidána do filtrů AdGuardu.
 
-If you are not yet familiar with our filtering rules syntax, or maybe need a refresher, you'll find the basics about the syntax [in our Knowledge base](/general/ad-filtering/create-own-filters). More advanced guides can be found on the internet, and if you have any questions about the syntax, visit our [forum](https://forum.adguard.com/).
+Pokud ještě neznáte syntaxi našich pravidel filtrování nebo si ji potřebujete osvěžit, najdete základní informace o syntaxi v [naší databázi znalostí](/general/ad-filtering/create-own-filters). Pokročilejší návody najdete na internetu, a pokud máte dotazy k syntaxi, navštivte naše [fórum](https://forum.adguard.com/).
 
-### Rewards {#rewards}
+### Odměny {#rewards}
 
-If you have suggested several filtering rules and some of them were approved, then it's time for you to get a reward. Send us a message at [st@adguard.com](mailto:st@adguard.com) with your GitHub account name, and you'll get a free AdGuard license key. As for the exact number of rules you need to get approved to become eligible, there are no hard rules. This task is not easy, so anything north of 5 should be enough.
+Pokud jste navrhli několik pravidel filtrování a některá z nich byla schválena, je čas získat odměnu. Odešlete nám zprávu na [st@adguard.com](mailto:st@adguard.com) s názvem svého účtu GitHub a získáte bezplatný licenční klíč AdGuardu. Pokud jde o přesný počet pravidel, která musíte získat, abyste se stali způsobilými, neexistují žádná pevná pravidla. Tento úkol není snadný, takže by mělo stačit cokoli od 5 výše.

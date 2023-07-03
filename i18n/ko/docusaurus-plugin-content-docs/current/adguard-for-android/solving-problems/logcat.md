@@ -3,6 +3,12 @@ title: Logcat 로그 수집 방법
 sidebar_position: 4
 ---
 
+:::info
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## 일반 지침
 
 충돌 문제 해결 시 일반 로그 수집으로는 충분하지 않기 때문에 시스템 로그 수집이 필요합니다. 로그 수집 방법은 다음과 같습니다.
@@ -25,7 +31,12 @@ sidebar_position: 4
 ![버그 신고 *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
 
 5. 이 로그를 지원 팀에 보냅니다.
-> 참고: 메시지에 헬프 데스크 티켓 번호 또는 GitHub 문제 번호를 첨부하면 지원팀이 티켓을 더 빠르게 처리할 수 있습니다.
+
+:::note
+
+Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+
+:::
 
 ## 추가 지침(Android 구 버전용)
 
@@ -33,7 +44,7 @@ sidebar_position: 4
 
 **1단계: 기기 준비**
 
-1. 기기를 개발자 모드로 전환하기 위해 **설정**>** 정보**로 이동하고 **빌드 번호** 줄을 7번 클릭합니다.
+1. 기기를 개발자 모드로 전환하기 위해 To do this: go to **Settings** → **About** → tap **Build Number** 7 times.
 
 2. **개발자 옵션**으로 이동합니다.
 
@@ -59,7 +70,8 @@ sidebar_position: 4
 <https://www.androidfilehost.com/?fid=24052804347803384>
 
 3. 콘솔에서 이 명령을 실행합니다(설치 후 열림):
-> adb logcat -v threadtime -d> C:\logcat.txt
+
+adb logcat -v threadtime -d> C:\logcat.txt
 
 지원 팀에 문의하거나 다른 방법으로 이 로그를 보내 주세요.
 
@@ -74,4 +86,9 @@ sidebar_position: 4
 4. CatLog를 열고 메뉴에서 **기록 중지**를 누릅니다.
 
 5. 이 로그를 지원 팀에 보냅니다.
-> 참고: 메시지에 헬프 데스크 티켓 번호 또는 GitHub 문제 번호를 첨부하면 지원팀이 티켓을 더 빠르게 처리할 수 있습니다.
+
+:::note
+
+Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+
+:::

@@ -3,7 +3,11 @@ title: Tracking filter rules statistics
 sidebar_position: 4
 ---
 
-> NOTE: The *"Send statistics for ad filters usage"* option is disabled by default. Nothing will be sent unless user manually enables it to help us improve our blocking filters.
+:::note
+
+The *"Send statistics for ad filters usage"* option is disabled by default. Nothing will be sent unless user manually enables it to help us improve our blocking filters.
+
+:::
 
 ### Why do we need ad filters?
 

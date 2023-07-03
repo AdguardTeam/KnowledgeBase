@@ -3,6 +3,12 @@ title: Launch issues on macOS
 sidebar_position: 6
 ---
 
+:::info
+
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Mac için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+
+:::
+
 Occasionally macOS may cause the corruption of AdGuard's Network Extension module, making it unable to use the app. In this case you should follow one of these instructions, based on your OS version.
 
 ## Launch issues on macOS 11 and higher
@@ -17,7 +23,7 @@ If you have problems launching AdGuard for Mac on Big Sur and Monterey operating
 6. Enable SIP (Launch **Terminal** from the **Utilities** menu and type `csrutil enable`).
 7. Launch the AdGuard app and enable protection.
 
-## Launch issues on macOS 10
+## macOS 10'da başlatma sorunları
 
 If you have problems launching AdGuard for Mac on Sierra, Mojave and Catalina operating systems, please use this instruction:
 
@@ -30,7 +36,7 @@ If you have problems launching AdGuard for Mac on Sierra, Mojave and Catalina op
 4. Open **Utilities** → **Terminal**.
 5. Enter `csrutil disable`.
 6. Enter administrator password.
-7. Reboot your Mac.
+7. Mac'inizi yeniden başlatın.
 8. Open **Terminal** and enter the following command: `sudo chflags restricted /private/var/db/KernelExtensionManagement`.
 9. Reboot your Mac in recovery mode.
 10. Open **Utilities** → **Terminal** → Enter `csrutil enable` → Enter administrator password → Reboot your Mac.

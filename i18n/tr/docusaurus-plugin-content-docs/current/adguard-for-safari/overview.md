@@ -3,6 +3,12 @@ title: Özelliklere genel bakış
 sidebar_position: 1
 ---
 
+:::info
+
+This article is about AdGuard for Safari, which safeguards only your Safari browser. Tüm cihazınızı korumak için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+
+:::
+
 AdGuard for Safari was designed to conform to Apple's restrictions for ad blocking browser extensions and is the most popupar ad blocker for Safari. Although it can’t be compared to our desktop ad blocking apps, it's free and can protect you from ads, trackers, phishing, and malicious websites.
 
 ## General {#general}
@@ -18,13 +24,14 @@ The first tab is the General screen where you can set up basic things like notif
 A filter is a list of rules written in a special syntax. Following these rules, content blockers can filter web traffic: block ads or requests to malicious websites.
 
 Filters are combined into eight thematic categories: *Ad Blocking, Privacy, Social widgets, Annoyances, Security, Language-specific filters, Custom, and Other filters*.
-> Read more about [AdGuard filters](/general/ad-filtering/adguard-filters) or [ad filtering in general](/general/ad-filtering/how-ad-blocking-works).
 
-In the Filters tab, you can enable the whole category or separate filters. Changes in the Filters tab are reflected in the Content Blockers section (located in the General tab).
+Read more about [AdGuard filters](/general/ad-filtering/adguard-filters) or [ad filtering in general](/general/ad-filtering/how-ad-blocking-works).
+
+Filtreler sekmesinde, tüm kategoriyi veya ayrı filtreleri etkinleştirebilirsiniz. Filtreler sekmesindeki değişiklikler, İçerik Engelleyiciler bölümünde (Genel sekmesinde bulunur) yansıtılır.
 
 ## İçerik engelleyiciler {#contentblockers}
 
-![Content blockers tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/Contentblockers.png)
+![İçerik engelleyiciler sekmesi](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/Contentblockers.png)
 
 A content blocker is a thematic cluster of filters. Privacy-related filters are included in the content blocker with the corresponding name — *AdGuard Privacy*.
 
@@ -38,7 +45,11 @@ Whereas the limit has been increased, the structure of content blockers has rema
 
 In the Content blockers tab, you can see which content blockers are enabled, how many rules each of them is using, and which filters are functioning.
 
-> You can manage enabled filters in the Filters tab. In the Content blockers section, you can only see the list of already enabled filters.
+:::tip
+
+You can manage enabled filters in the Filters tab. In the Content blockers section, you can only see the list of already enabled filters.
+
+:::
 
 ### AdGuard General {#adguard_general}
 
@@ -60,9 +71,13 @@ This content blocker unites several security-related filters. *Malware Domains B
 
 *AdGuard Other* contains filters with various functions. For example, it has a filter that unblocks search ads and self-promo ads. In some cases, it helps find exactly what you are looking for, because these kinds of ads are more relevant and less intrusive than others.
 
-> Disclaimer: we don’t have any ‘acceptable ads’ paid by advertisers. Instead, we provide users with an option to see [search ads and websites' self-promotion](/general/ad-filtering/search-ads).
+:::note Disclaimer
 
-### AdGuard Custom {#adguard_custom}
+We don’t have any ‘acceptable ads’ paid by advertisers. Instead, we provide users with an option to see [search ads and websites' self-promotion](/general/ad-filtering/search-ads).
+
+:::
+
+### AdGuard Özel {#adguard_custom}
 
 ![Custom tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/AGCustom.png)
 
@@ -78,4 +93,8 @@ User rules can be used to customize ad blocking. They can be added manually, imp
 
 In the About tab, you can see info about the current version of your product and links to legal documents. There is also a link to our repository on GitHub. You can monitor the product development, create feature requests and report bugs there.
 
-> Reminder: AdGuard for Safari can be downloaded for free [from the App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259). A detailed setup instruction is available in the [Knowledge base](../installation).
+:::note Reminder
+
+AdGuard for Safari can be downloaded for free [from the App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259). A detailed setup instruction is available in the [Knowledge base](../installation).
+
+:::

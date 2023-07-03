@@ -3,6 +3,12 @@ title: Battery and traffic consumption issues
 sidebar_position: 1
 ---
 
+:::info
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 Sometimes you may notice that, according to Android built-in statistics, AdGuard consumes a lot of traffic and/or battery resource.
 
 Both these problems are two sides of the same coin. Since in the process of filtering all the mobile traffic goes through AdGuard, Android decides that it is AdGuard that consumes it all. In reality, of course, it is not true.

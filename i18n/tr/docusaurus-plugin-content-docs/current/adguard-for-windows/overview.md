@@ -3,7 +3,13 @@ title: Özelliklere genel bakış
 sidebar_position: 1
 ---
 
-AdGuard for Windows is an easy-to-use tool that blocks annoying banners, pop-ups, video ads and trackers. But that's not all: it helps you save traffic, load web pages faster, and guard your computer from undesirable and potentially malicious content. AdGuard can also protect you from phishing sites, and your children — from information they shouldn't be exposed to due to age restrictions.
+:::info
+
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Windows için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+
+:::
+
+Windows için AdGuard can sıkıcı afişleri, açılır pencereleri, video reklamları ve izleyicileri engelleyen, kullanımı kolay bir araçtır. Ancak hepsi bu kadar değil: veri tasarrufu yapmanıza, web sayfalarını daha hızlı yüklemenize, bilgisayarınızı istenmeyen ve potansiyel olarak kötü amaçlı sitelerden korumanıza yardımcı olur. AdGuard ayrıca sizi kimlik avı sitelerinden korur ve çocuklarınızı uygunsuz içerikten uzak tutar.
 
 ## Home screen
 
@@ -17,15 +23,15 @@ Once you start AdGuard for Windows, you will see the main screen of the app. Its
 
 *Settings* is the section that requires the most attention. This is where you can configure the app so that it fully meets your requirements: blocks only what bothers you, uses the DNS server of the trusted provider, removes third-party cookies, and so on.
 
-### General settings
+### Genel ayarlar
 
 Here you can set the language and theme (Dark or Light), enable AdGuard launching at system start-up and silent automatic updates, choose the update channel and filter update check interval. Also Settings is the place to go if AdGuard for Windows is not working properly and the support team asked you to [collect *Debug logs*](../solving-problems/adguard-logs).
 
 ![Advanced Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/advanced-settings.png)
 
-At the very bottom of the screen you will find *Advanced Settings*. Changing some of them mindlessly may potentially cause problems with AdGuard's performance, break the Internet connection or compromise your security and privacy. That's why we suggest you open this section only if you are sure of what you are doing or our support team has asked you about it. If you want to understend what can be set up in *Advanced Setting* read the [dedicated article](../solving-problems/low-level-settings).
+At the very bottom of the screen you will find *Advanced Settings*. Changing some of them mindlessly may potentially cause problems with AdGuard's performance, break the Internet connection or compromise your security and privacy. That's why we suggest you open this section only if you are sure of what you are doing or our support team has asked you about it. If you want to know what can be set up in *Advanced Setting* read the [dedicated article](../solving-problems/low-level-settings).
 
-### Ad Blocker
+### Reklam Engelleyici
 
 This is the main module of AdGuard for Windows that removes ads from the websites you visit and from the apps installed on your device. To filter out advertising and privacy-threatening content such as banners, pop-ups, or trackers AdGuard uses different filters: groups of rules with a similar purpose written with a [special syntax](/general/ad-filtering/create-own-filters). To understand what filters are and how they work read [this article](/general/ad-filtering/how-ad-blocking-works).
 
@@ -58,7 +64,7 @@ Browsing Security gives strong protection against malicious and fishing websites
 
 In this module you can
 * enable notifications to block requests to malicious and phishing sites,
-* activate sound notifications,
+* sesli bildirimleri etkinleştirin,
 * agree to submit anonymous security-related info to the AdGuard server to help us keep the malicious and fishing websites database up to date.
 
 ![Browsing Security *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/browsing-security.png)
@@ -91,7 +97,7 @@ In the Parental Control module you can enable the *Safe search* and manage the *
 
 From this tab you can easily proceed to install AdGuard Browser Assistant, which primary function is to manage filtering directly from the browser. We explained more about how to work with it and what to do if there is no Browser Assistant for your browser in the [separate article](../browser-assistant).
 
-## Extensions
+## Uzantılar
 
 AdGuard can significantly broaden website functionality working as a [user script manager](/general/userscripts). AdGuard Users can add their own scripts, as well as manage existing ones.
 
@@ -152,13 +158,13 @@ To get more information about AdGuard VPN dive into the [AdGuard VPN Knowledge B
 
 There are other useful AdGuard options that shouldn't go unnoticed in this article, since they add much to user experience.
 
-### Support
+### Destek
 
 ![Support *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/support.png)
 
 By clicking the Support tab you will open a dialog box through which you can report a bug, submit a feature request, or simply share your opinion of the product.
 
-### License
+### Lisans
 
 ![License *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
 
@@ -180,7 +186,7 @@ To check for filters and userscripts updates, click the rotating arrows icon in 
 
 ### Tray menu
 
-To save you time navigating around AdGuard menus, many of the frequently used options and settings are available from the tray menu. To call the menu, right-click the AdGuard icon in the tray. It will offer you the following options:
+To save you time navigating around AdGuard menus, many of the frequently used options and settings are available from the tray menu. To call the menu, right-click the AdGuard icon in the tray. Size aşağıdaki seçenekleri sunar:
 
 * enable protection
 * disable protection: completely or for 30 seconds

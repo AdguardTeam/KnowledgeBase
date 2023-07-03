@@ -3,6 +3,12 @@ title: 배터리 및 트래픽 소비 문제
 sidebar_position: 1
 ---
 
+:::info
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 Android 내장 통계에 따르면 AdGuard가 많은 트래픽 및 배터리를 소비한다는 것을 아실 수 있습니다.
 
 이것은 동전의 양면과 같은 문제입니다. 필터링 적용 시 모든 모바일 트래픽이 AdGuard를 통과하므로 Android는 AdGuard가 이 트래픽을 소비한다고 판단합니다. 그러나 실제로는 그렇지 않습니다.

@@ -3,6 +3,12 @@ title: Jak shromažďovat kompletní záznamy
 sidebar_position: 2
 ---
 
+:::info
+
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 Někdy k pochopení problému a jeho odstranění potřebujeme shromáždit **soubory záznamů** nebo **záznamy**. Tyto soubory v podstatě obsahují informace o programu a jeho práci.
 
 ### Shromažďování záznamů ladění
@@ -17,7 +23,7 @@ Chcete-li shromáždit záznam **ladění** a odeslat nám jej, musíte provést
 
 4. Zopakujte problém a nastavte úroveň záznamu zpět na "Výchozí". Všimněte si přesného času, kdy se to stalo.
 
-5. Odešlete nám zprávu z programu výběrem "Podpora" > "Odeslat zpětnou vazbu" v menu. Nezapomeňte zaškrtnout políčko "Odeslat podrobné systémové informace" pod textovým polem a do zprávy vložit časové razítko z kroku 4.
+5. Odešlete nám zprávu z programu výběrem "Podpora" → "Odeslat zpětnou vazbu" v menu. Nezapomeňte zaškrtnout políčko "Odeslat podrobné systémové informace" pod textovým polem a do zprávy vložit časové razítko z kroku 4.
 
 Alternativně můžete záznamy (spolu se souborem *state.txt*, který obsahuje systémové informace a informace o nastavení AdGuardu) exportovat přímo do místního souboru. Může se to hodit, například pokud vedete konverzaci s vývojářem na [GitHubu](https://github.com/AdguardTeam/AdguardForAndroid/issues), [fóru](https://forum.adguard.com/) nebo na jiné platformě.
 
@@ -35,7 +41,7 @@ Chcete-li shromáždit záznam **webových požadavků** a odeslat nám jej, mus
 
 4. Zopakujte problém a nastavte úroveň záznamu zpět na "Výchozí". Všimněte si přesného času, kdy se to stalo.
 
-5. Odešlete nám zprávu z programu výběrem "Podpora" > "Odeslat zpětnou vazbu" v menu. Nezapomeňte zaškrtnout políčko "Odeslat podrobné systémové informace" pod textovým polem a do zprávy vložit časové razítko z kroku 4.
+5. Odešlete nám zprávu z programu výběrem "Podpora" → "Odeslat zpětnou vazbu" v menu. Nezapomeňte zaškrtnout políčko "Odeslat podrobné systémové informace" pod textovým polem a do zprávy vložit časové razítko z kroku 4.
 
 Alternativně můžete záznamy (spolu se souborem *state.txt*, který obsahuje systémové informace a informace o nastavení AdGuardu) exportovat přímo do místního souboru. Může se to hodit, například pokud vedete konverzaci s vývojářem na [GitHubu](https://github.com/AdguardTeam/AdguardForAndroid/issues), [fóru](https://forum.adguard.com/) nebo na jiné platformě.
 

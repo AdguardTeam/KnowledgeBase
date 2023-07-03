@@ -1,38 +1,38 @@
 ---
-title: AdGuard beta testing
+title: AdGuardベータテスト
 sidebar_position: 1
 ---
 
-There is an AdGuard app for virtually every major platform out there, and we regularly release updates for all of them. This would not be possible without beta testing and, more importantly, beta testers. Want to become one? Here's how you can do it.
+AdGuardアプリは、すべての主要プラットフォーム（iOS/Android/Windows/Mac）に対応しており、定期的に各プラットフォーム版のアップデートをリリースしております。 これは、ベータテストそのものと、特にベータテスターの皆様のおかげです。 ベータテスターになりたいですか？ 以下では、AdGuardベータテスターになる方法をご紹介します。
 
-## How to become a beta tester {#intro}
+## AdGuardベータ版テスターになる方法 {#intro}
 
-Our requirements are easy: use AdGuard, upgrade to the beta version when it becomes available, and report any bugs you notice. However, you will need either a [forum](https://forum.adguard.com/index.php) or a [GitHub](https://github.com/) account (or both) to become our beta tester, so you may want to get that out of the way first.
+基本要件は簡単で、AdGuardを使用し、ベータ版が利用可能になったらアップグレードし、気づいたバグをご報告いただく、という三つだけです。 ただし、ベータテスターには、 [フォーラム](https://forum.adguard.com/index.php) または [GitHub](https://github.com/) アカウントのいずれか（または両方）が必要になりますので、まずはアカウントを登録するのがよいかもしれません。
 
-In any case, every single thing you need to know is gathered on a [dedicated page](https://adguard.com/en/beta.html).
+いずれにせよ、ベータテストを行うにあたって必要なことはすべて[こちらの専用ページ](https://adguard.com/en/beta.html)に集約されています。
 
-If you want to skip the description part and get straight to the action, you can apply [here](https://surveys.adguard.com/beta_testing_program/form.html). Your application will be reviewed within 1-3 working days, and you'll get a reply via email.
+説明を飛ばして、すぐに行動に移りたい方は、[こちら](https://surveys.adguard.com/beta_testing_program/form.html)からベータテスト参加をお申し込みください。 申請は1〜3営業日以内に審査され、メールで結果を返信いたします。
 
-## How to report a bug {#report-a-bug}
+## バグ・不具合を報告する方法 {#report-a-bug}
 
-If you spotted a bug or just want to share your suggestion, let us know in any of the possible ways:
+バグを発見した場合、または単に提案を共有したい場合、以下のいずれの方法でお知らせてください:
 
-* Go to [forum.adguard.com](https://forum.adguard.com/index.php) and post there a new thread (or find an existing one) in the beta forum [category](https://forum.adguard.com/index.php?categories/48/). Make sure to read [forum rules](https://forum.adguard.com/index.php?threads/14859/);
+* [forum.adguard.com](https://forum.adguard.com/index.php) にアクセスし、[フォーラムの「Beta Testing」カテゴリ](https://forum.adguard.com/index.php?categories/48/)に新しいスレッドを投稿してください（または同じ問題に関する既存のスレッドを見つけてください）。 ※事前に[フォーラムルール](https://forum.adguard.com/index.php?threads/14859/)をおご確認ください。
 
-* Go to [GitHub](https://github.com/AdguardTeam/) and find a suitable repository. Create a new issue there and describe the bug/feature request in detail.
+* [AdGuardのGitHub](https://github.com/AdguardTeam/)にアクセスし、適当なレポジトリを見つけます。 新issueを作成してバグや機能リクエストを詳細にご説明ください。
 
-The above two methods are the most preferred, but you can use others if necessary:
+上記の2つの方法が最も望ましいですが、必要に応じて以下の方法を用いることもできます:
 
-* Find us on various social media platforms, like [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/), etc. However, this is not the most convenient way to discuss technical matters.
+* [Facebook](https://www.facebook.com/AdguardEn/)、[Reddit](https://www.reddit.com/r/Adguard/)など、様々なSNSプラットフォームで私たちを見つけてご連絡ください。 ※技術的なことを話し合うのに一番効率的な方法とは言えません。
 
-* Email our support team from the Support tab in the app or write directly to [support@adguard.com](mailto:support@adguard.com).
+* AdGuardアプリ内の「サポート」セクションからサポートチームにメッセージを送るか、[support@adguard.com](mailto:support@adguard.com)（日本語対応）までご連絡ください。
 
-## How to activate the beta key in the iOS application {#ios}
+## iOS版AdGuardアプリでベータテスト用キーを有効にする方法 {#ios}
 
-If you have already received a beta key and it is listed in your `adguard.com` account, go to the app and open the license section (Get Premium). Once there, enter the credentials from your AdGuard account. After that, the premium features will become available automatically.
+すでにベータキーを受け取っていて、 `adguard.com` のマイ・アカウントにそのキーが追加されている場合は、アプリを開いてログイン画面（「プレミアム版でパワーアップ」→右上の「ログイン」）を開いてください。 そちらで、AdGuard アカウントの認証情報（メールアドレスとパスワード）を入力します。 そうしますと、自動的にプレミアム機能が利用できるようになります。
 
-### What else?
+### 最後に
 
-There is not much more to add. You don't have to go out of your way to find bugs. You can continue using AdGuard as usual. However, if you encounter a bug, please report it. Of course, we appreciate any additional effort and/or extra forum activity, etc.
+これ以上、付け加えることはあまりありません。 わざわざ無理してバグを見つける必要はございません。 AdGuardを通常通りご利用いただけます。 ただし、バグ・不具合が見つかった場合はご報告ください。 もちろん、追加の努力やフォーラム活動などは大歓迎しております。
 
-Occasionally, you will receive our newsletters, keeping you informed of the latest changes in the beta (in case you missed them) and other important news. You can unsubscribe from it at any time.
+時折、ベータ版の最新の変更点やその他の重要なニュースを含むニュースレターをお届けいたします。 いつでも配信を停止することができます。

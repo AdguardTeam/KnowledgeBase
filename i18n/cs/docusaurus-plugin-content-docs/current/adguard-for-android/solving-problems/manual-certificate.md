@@ -3,7 +3,13 @@ title: Problémy s instalací certifikátu na zařízeních se systémem Android
 sidebar_position: 12
 ---
 
-Aby bylo možné filtrovat provoz HTTPS (což je velmi důležité, protože většina reklam používá HTTPS), musí AdGuard nainstalovat certifikát do uživatelského úložiště vašeho zařízení. Ve starších verzích operačního systému Android se to provádělo automaticky, ale v Androidu 11 a novějších verzích jej uživatelé musí [nainstalovat ručně](../../overview).
+:::info
+
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
+Aby bylo možné filtrovat provoz HTTPS (což je velmi důležité, protože většina reklam používá HTTPS), musí AdGuard nainstalovat certifikát do uživatelského úložiště vašeho zařízení. Ve starších verzích operačního systému Android se to provádělo automaticky, ale v Androidu 11 a novějších verzích jej uživatelé musí [nainstalovat ručně](../../overview#https-filtering).
 
 ![Certifikát *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/Android/3-5/cert-en.gif)
 
@@ -15,11 +21,11 @@ Pokud používáte [ *Zabezpečenou složku* ve vašem zařízení Android](http
 
 
 1. Po instalaci aplikace a připojení k síti VPN klepněte na *Zapnout* vedle zprávy *Filtrování HTTPS je vypnuto*.
-2. Klepněte na *Další* > *Další* > *Uložit nyní* > *Povolit*.
+2. Klepněte na *Další* → *Další* → *Uložit nyní* → *Povolit*.
 3. Certifikát uložte (v této fázi jej můžete přejmenovat, abyste jej snáze našli).
 4. Po zobrazení obrazovky *Jak nainstalovat certifikát?* NEKLEPEJTE na položku *Otevřít nastavení*.
 5. Minimalizujte aplikaci a přejděte do zabezpečené složky.
 6. Klepněte na menu se třemi tečkami a přejděte na další nastavení zabezpečení.
-7. Klepněte na *Nainstalovat z úložiště* > *CA Certifikát* > *Přesto nainstalovat* > zadejte gesto/heslo/otisk prstu > vyhledejte uložený certifikát a vyberte jej.
+7. Klepněte na *Nainstalovat z úložiště* → *CA Certifikát* → *Přesto nainstalovat* → zadejte gesto/heslo/otisk prstu → vyhledejte uložený certifikát a vyberte jej.
 8. Vraťte se do aplikace AdGuard a zavřete obrazovku "Jak nainstalovat certifikát?" klepnutím na tlačítko s křížkem.
 9. Hotovo! Certifikát byl nainstalován.

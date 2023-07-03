@@ -3,24 +3,35 @@ title: Advanced Settings guide
 sidebar_position: 9
 ---
 
+:::info
+
+This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## How to reach the Advanced settings
 
-> Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only open this section if you are sure of what you are doing or our support team has asked you to do it.
+:::caution
+
+Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only open this section if you are sure of what you are doing or our support team has asked you to do it.
+
+:::
+
 To go to *Advanced settings*, follow this route: the AdGuard icon at the tray menu → the gear icon → Advanced → Advanced settings.
 
 ## Advanced settings
 
 `network.extension.exclude.domains`
 
-The listed domains will be excluded from filtering in *Network Extension* mode. Use a comma or line break to separate values.
+The listed domains will be excluded from filtering in the *Network Extension* mode. Use a comma or line break to separate values.
 
 `network.extension.exclude.ports`
 
-The listed ports will be excluded from filtering in *Network Extension* mode. Use a comma or line break to separate values.
+The listed ports will be excluded from filtering in the *Network Extension* mode. Use a comma or line break to separate values.
 
 `network.extension.route.exclude`
 
-The listed routes will be excluded from filtering in *Network Extension* mode. Set routes using an IP address or destination CIDR. Separate values with commas or line breaks.
+The listed routes will be excluded from filtering in the *Network Extension* mode. Set routes using an IP address or destination CIDR. Separate values with commas or line breaks.
 
 `network.extension.http.downgrade.bundleids`
 
@@ -28,7 +39,7 @@ Here you can specify a list of applications for which the HTTP/2 protocol will b
 
 `network.extension.monterey.force.split.tunnel`
 
-Here you can prohibit AdGuard from using the "default route" which is enabled by default in *Network Extension* mode on macOS Monterey. AdGuard uses "default route" to disable iCloud Private Relay and Protect Mail Activity, because it cannot work with them simultaneously.
+Here you can prohibit AdGuard from using the "default route" which is enabled by default in the *Network Extension* mode on macOS Monterey. AdGuard uses "default route" to disable iCloud Private Relay and Protect Mail Activity, as it cannot operate in unison with them.
 
 You will find more information about the problem [in this article](../icloud-private-relay).
 
@@ -36,9 +47,33 @@ You will find more information about the problem [in this article](../icloud-pri
 
 Here you can specify a list of applications that make DNS queries directly not via system DNS resolver (for example, some VPN clients or DNS filtering applications). DNS filtering will be disabled for them in the *Network Extension mode*. The bundle IDs should be separated by a comma or line break.
 
+`network.dns.filter.secure.request`
+
+Redirects secure DNS requests to a local DNS proxy, if there is one available.
+
 `network.https.ocsp.check`
 
 By setting `true`, you enable HTTPS certificate revocation checking.
+
+`network.tcp.keepalive.enabled`
+
+Periodically sends TCP packets over an idle connection to ensure that it remains active and to renew NAT timeouts.
+
+`network.tcp.keepalive.interval.seconds`
+
+Idle time, in seconds, before sending a keepalive probe. If 0 is specified, the system will use the default value.
+
+`network.tcp.keepalive.timeout.seconds`
+
+Time, in seconds, before sending another keepalive probe to an unresponsive peer. If 0 is specified, the value selected by the system will be used.
+
+`network.https.ech.enabled`
+
+Uses a local DNS proxy to look for configs in the ECH Config Lists. If found, encrypts ClientHellos.
+
+`network.https.enforce.certificate.transparency`
+
+Verifies the authenticity of all certificates for the domain based on Chrome Certificate Transparency Policy.
 
 `network.filtering.localnetwork`
 
@@ -48,17 +83,6 @@ By setting `true`, you enable local network filtering.
 
 By setting `true`, you enable LoopBack filtering.
 
-`upstream.proxy`
-
-In this string, you can specify a proxy server for upstream connections. For example:
-
-* SOCKS5 proxy with authentication — `socks5://username:password@proxy.example.org:1080`
-* Local HTTP proxy without authentication — `http://localhost:3128`
-
-`upstream.proxy.socks5udp`
-
-By setting `true`, you enable redirection of UDP traffic through the local server in SOCKS5 mode. Note: If your SOCKS5 server does not support the UDP protocol, enabling this setting will cause your Internet connection to fail.
-
 `dns.proxy.bootstrap.ips`
 
 Here you can enter the IP addresses of the DNS servers that will be used to determine the address of the encrypted DNS server.
@@ -66,6 +90,10 @@ Here you can enter the IP addresses of the DNS servers that will be used to dete
 `dns.proxy.fallback.ips`
 
 Here you can specify a list of IP addresses of DNS servers that will be used as backups in case the encrypted DNS server fails to respond.
+
+`dns.proxy.fallback.on.upstreams.failure.enabled`
+
+Normal queries will be redirected to a fallback upstream if all normal upstreams fail.
 
 `dns.proxy.detect.search.domains`
 
@@ -79,17 +107,17 @@ Here you can list domains for which the fallback DNS server will be used instead
 
 Here you can specify the type of DNS server response to blocked requests, corresponding to ad-blocker-style rules.
 
-0 — respond with REFUSED
-1 — respond with NXDOMAIN
-2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
+* 0 — respond with REFUSED
+* 1 — respond with NXDOMAIN
+* 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
 
 `dns.proxy.hostrules.blocking.mode`
 
 Here you can specify the type of DNS server response to blocked requests, corresponding to hosts rules:
 
-0 — respond with REFUSED
-1 — respond with NXDOMAIN
-2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
+* 0 — respond with REFUSED
+* 1 — respond with NXDOMAIN
+* 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
 
 `dns.proxy.blocking.response.IPv4.address`
 
@@ -106,6 +134,34 @@ Here you can enable IPv6 DNS query blocking.
 `dns.proxy.blocked.response.TTL.in.seconds`
 
 Here you can specify the TTL (time to live) value that will be returned in response to a blocked request.
+
+`dns.proxy.parallel.upstream.queries.enabled`
+
+All upstreams are queried simultaneously. The first response is returned.
+
+`dns.proxy.servfail.on.upstreams.failure.enabled`
+
+Responds to upstream failure with a SERVFAIL packet.
+
+`dns.proxy.http3.enabled`
+
+Enables HTTP/3 for DNS-over-HTTPS upstreams to accelerate connection.
+
+`dns.proxy.block.encrypted.client.hello.response`
+
+Removes the Encrypted Client Hello parameters from responses.
+
+`stealth.antidpi.http.split.fragment.size`
+
+Adjusts the size of the HTTP request fragmentation. Accepted values: 1–1500. If an invalid size is specified, the system will use the default value.
+
+`stealth.antidpi.clienthello.split.fragment.size`
+
+This option specifies the size of TCP packet fragmentation, which helps avoid deep packet inspection. Accepted values: 1–1500. If an invalid size is specified, the system will use the default value.
+
+`stealth.antidpi.http.space.juggling`
+
+Adds extra space between the HTTP method and the URL and removes space after the "Host:" field.
 
 `subscription.link.interception.userscript`
 

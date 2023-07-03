@@ -3,21 +3,31 @@ title: Ruční instalace bezpečnostního certifikátu do prohlížeče Firefox
 sidebar_position: 11
 ---
 
+:::info
+
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 Aby AdGuard úspěšně filtroval přenosy HTTPS ve Firefoxu, musí prohlížeč důvěřovat certifikátu AdGuard. Toho lze dosáhnout různě pro různé verze Firefoxu.
 
 ### Metoda 1
 
-> Tato metoda funguje ve Firefoxu pro Android verze 90.0 a novější.
+:::note
+
+Tato metoda funguje ve Firefoxu pro Android verze 90.0 a novější.
+
+:::
 
 Chcete-li, aby Firefox důvěřoval certifikátu AdGuard, proveďte následující kroky:
 
 1. Spusťte prohlížeč.
-2. Přejděte do **Nastavení** > **O Firefoxu**.
+2. Přejděte do **Nastavení** → **O Firefoxu**.
 
 ![O prohlížeči Firefox *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
 
 3. Klepněte pětkrát na logo Firefox.
-4. Přejděte do **Nastavení** > **Tajná nastavení**.
+4. Přejděte do **Nastavení** → **Tajná nastavení**.
 
 ![Tajná nastavení *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
 
@@ -25,17 +35,20 @@ Chcete-li, aby Firefox důvěřoval certifikátu AdGuard, proveďte následujíc
 
 ### Metoda 2
 
-> Tato metoda bude fungovat pouze na zařízeních s **root přístupem**.
+:::note
 
-1. [Instalace a konfigurace](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB;
-> Na platformě Windows mohou majitelé zařízení **Samsung** potřebovat nainstalovat [tento nástroj](https://developer.samsung.com/mobile/android-usb-driver.html).
+Tato metoda bude fungovat pouze na zařízeních s **root přístupem**.
+
+:::
+
+1. [Instalace a konfigurace](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; Na platformě Windows mohou majitelé zařízení **Samsung** potřebovat nainstalovat [tento nástroj](https://developer.samsung.com/mobile/android-usb-driver.html).
 2. Aktivace **Režimu pro vývojáře** a povolení **USB ladění**:
     - V telefonu otevřete **Nastavení**;
     - Přejděte do sekce **Systém** (poslední položka v nabídce). V této sekci vyhledejte podpoložku **Informace o telefonu**;
     - Sedmkrát klepněte na řádek **Číslo sestavení**. Poté se zobrazí oznámení **Nyní jste vývojářem** (v případě potřeby zadejte kód pro odemčení zařízení);
-    - Otevřete **Nastavení systému** > **Možnosti pro vývojáře** > přejeďte dolů a zapněte **USB ladění** > po pečlivém přečtení varování potvrďte, že je ladění povoleno v okně **Povolit ladění USB**.
+    - Otevřete **Nastavení systému** → **Možnosti pro vývojáře** → přejeďte dolů a zapněte **USB ladění** → po pečlivém přečtení varování potvrďte, že je ladění povoleno v okně **Povolit ladění USB**.
 3. Nainstalujte prohlížeč [Firefox](https://www.mozilla.org/en-US/firefox/releases/) (hlavní verze);
-4. Otevřete **nastavení AdGuardu** > **Síť** > **HTTPS filtrování** > Instalovat certifikát do prohlížeče **Firefox** > **INSTALOVAT PRO STARŠÍ VERZE**;
+4. Otevřete **nastavení AdGuardu** → **Síť** → **HTTPS filtrování** → Instalovat certifikát do prohlížeče **Firefox** → **INSTALOVAT PRO STARŠÍ VERZE**;
 5. Otevřete složku `data/data/org.mozilla.firefox/files/mozilla` pomocí příkazu `adb shell su` a `cd data/data/...`, poté přejděte do složky s názvem `xxxxxxx.default` a zapamatujte si její název;
 6. V uvedené složce nás zajímají dva soubory:
     - `cert9.db`

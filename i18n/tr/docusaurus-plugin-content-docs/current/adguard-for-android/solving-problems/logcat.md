@@ -3,6 +3,12 @@ title: How to get Logcat log
 sidebar_position: 4
 ---
 
+:::info
+
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Android için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## General Instruction
 
 For troubleshooting problems with crashes a regular log is almost always not enough. In such cases to identify the origin of the problem we need the system log. Below is the instruction how to collect and get it.
@@ -25,7 +31,12 @@ To get a bug report directly from your device, do the following:
 ![Bug report *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
 
 5. Send this log to our support team.
-> Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+
+:::note
+
+Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+
+:::
 
 ## Additional Instruction (for old Android versions)
 
@@ -33,7 +44,7 @@ On old Android devices there is no such option to take a bug report automaticall
 
 **Part #1: prepare the device**
 
-1. Switch device to the developer mode. To do this: go to **Settings** > **About** > tap on **Build Number** 7 times.
+1. Cihazı geliştirici moduna geçirin. To do this: go to **Settings** → **About** → tap **Build Number** 7 times.
 
 2. Go to **Developer Options**.
 
@@ -59,7 +70,8 @@ Direct download link:
 <https://www.androidfilehost.com/?fid=24052804347803384>
 
 3. Run this command in the console (it will be opened after install):
-> adb logcat -v threadtime -d > C:\logcat.txt
+
+adb logcat -v threadtime -d > C:\logcat.txt
 
 Send this log to us by contacting support or by any other way.
 
@@ -69,9 +81,14 @@ Send this log to us by contacting support or by any other way.
 
 2. Choose **Record** in the menu. Choose a name for a log file or just press **OK**. Now you can press **Home** button, CatLog will continue recording the log in background.
 
-3. Reproduce the issue.
+3. Sorunu yeniden oluşturun.
 
 4. Open CatLog and press **Stop record** in the menu.
 
 5. Send this log to our support team.
-> Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+
+:::note
+
+Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+
+:::

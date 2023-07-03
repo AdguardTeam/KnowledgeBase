@@ -1,6 +1,6 @@
 ---
 title: Legacy licenses FAQ
-sidebar_position: 4
+sidebar_position: 6
 ---
 
 We have written this article to avoid confusion and explain in detail how you can renew/upgrade an outdated (legacy) AdGuard license.

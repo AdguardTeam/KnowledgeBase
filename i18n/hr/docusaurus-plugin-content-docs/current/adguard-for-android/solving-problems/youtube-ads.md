@@ -1,7 +1,13 @@
 ---
-title: How to block ads in the Youtube app
+title: How to block ads in the YouTube app
 sidebar_position: 7
 ---
+
+:::info
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
 
 One of the most popular questions users ask us is: 'Is it possible to block ads in YouTube on Android?'. Due to the technical restrictions of the Android OS, there is no way to *completely* remove ads from the YouTube app. But we've found an alternative that brings you to it as close as possible, while getting around the Android-imposed restrictions.
 

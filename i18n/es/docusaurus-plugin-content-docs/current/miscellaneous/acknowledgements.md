@@ -1,50 +1,50 @@
 ---
-title: Credits & Acknowledgements
+title: Créditos & Agradecimientos
 sidebar_position: 2
 ---
 
-Our dev team would like to thank the developers of this third-party software, our beta testers and other interested users who helped AdGuard improve and grow.
+Nuestro equipo de desarrollo desea agradecer a los desarrolladores de este software de terceros, a nuestros probadores beta y a otros usuarios interesados que ayudaron a AdGuard a mejorar y crecer.
 
-## Third-party software {#software}
+## Software de terceros {#software}
 
-This is the list of libraries and other resources that really helped us with AdGuard software development process.
+Esta es la lista de bibliotecas y otros recursos que realmente nos ayudaron con el proceso de desarrollo del software AdGuard.
 
 ## AdGuard para Windows {#win}
 
-* SQLLite database engine: [https://sqlite.org](https://sqlite.org)
-* ADO.NET provider for SQLite: [https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki](https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki)
-* Json.NET — high-performance JSON framework for .NET: [https://www.newtonsoft.com/json](https://www.newtonsoft.com/json)
-* AvalonEdit — WPF-based text editor component: [https://avalonedit.net](https://avalonedit.net)
+* Motor de base de datos SQLLite: [https://sqlite.org](https://sqlite.org)
+* Proveedor ADO.NET para SQLite: [https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki](https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki)
+* Json.NET — Marco JSON de alto rendimiento para .NET: [https://www.newtonsoft.com/json](https://www.newtonsoft.com/json)
+* AvalonEdit: componente de editor de texto basado en WPF: [https://avalonedit.net](https://avalonedit.net)
 
 ## AdGuard para Mac {#mac}
 
-* Red Sweater Software, LLC for RSVerticallyCenteredTextFieldCell component: [http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes](http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes)
-* Ilija Tovilo for ITProgressIndicator component: [https://github.com/iluuu1994/ITProgressIndicator](https://github.com/iluuu1994/ITProgressIndicator)
-* Sparkle Project for Sparkle.framework component: [http://sparkle-project.org](http://sparkle-project.org)
-* Robbie Hanson for GCDAsyncSocket component: [https://github.com/robbiehanson/CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket)
-* Tony Million for Reachability component: [https://github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
-* August «Gus» Mueller for Fmdb component: [https://github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
-* Stephen F. Booth for SFBCrashReporter project: [https://github.com/sbooth/SFBCrashReporter](https://github.com/sbooth/SFBCrashReporter)
-* Bartosz Janda for Acextract component: [https://github.com/bartoszj/acextract](https://github.com/bartoszj/acextract)
+* Red Sweater Software, LLC para el componente RSVerticalCenteredTextFieldCell: [http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes](http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes)
+* Ilija Tovilo para el componente ITProgressIndicator: [https://github.com/iluuu1994/ITProgressIndicator](https://github.com/iluuu1994/ITProgressIndicator)
+* Proyecto Sparkle para el componente Sparkle.framework: [http://sparkle-project.org](http://sparkle-project.org)
+* Robbie Hanson para el componente GCDAsyncSocket: [https://github.com/robbiehanson/CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket)
+* Tony Million para el componente Accesibilidad: [https://github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
+* August «Gus» Mueller para el componente Fmdb: [https://github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
+* Stephen F. Booth para el proyecto SFBCrashReporter: [https://github.com/sbooth/SFBCrashReporter](https://github.com/sbooth/SFBCrashReporter)
+* Bartosz Janda para el componente Acextract: [https://github.com/bartoszj/acextract](https://github.com/bartoszj/acextract)
 * FLOPageViewController: [https://github.com/floschliep/FLOPageViewController](https://github.com/floschliep/FLOPageViewController)
 
 ## AdGuard para Android {#android}
 
-* Logback-android by Tony19: [https://tony19.github.io/logback-android](https://tony19.github.io/logback-android)
-* Otto by Square: [http://square.github.io/otto](http://square.github.io/otto)
-* RootTools Library by Stericson: [https://github.com/Stericson/RootTools](https://github.com/Stericson/RootTools)
-* MaterialDateRangePicker by Supratim Chakraborty: [https://github.com/borax12/MaterialDateRangePicker](https://github.com/borax12/MaterialDateRangePicker)
-* HelloCharts by Leszek Wach: [https://github.com/lecho/hellocharts-android](https://github.com/lecho/hellocharts-android)
+* Logback-android por Tony19: [https://tony19.github.io/logback-android](https://tony19.github.io/logback-android)
+* Otto por Square: [http://square.github.io/otto](http://square.github.io/otto)
+* Biblioteca RootTools de Stericson: [https://github.com/Stericson/RootTools](https://github.com/Stericson/RootTools)
+* MaterialDateRangePicker por Supratim Chakraborty: [https://github.com/borax12/MaterialDateRangePicker](https://github.com/borax12/MaterialDateRangePicker)
+* HelloCharts por Leszek Wach: [https://github.com/lecho/hellocharts-android](https://github.com/lecho/hellocharts-android)
 
 ## AdGuard para iOS {#ios}
 
-* Reachability component by Tony Million: [https://github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
-* Fmdb component by August «Gus» Mueller: [https://github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
-* NSStringPunycodeAdditions component by Nate Weaver: [https://github.com/Wevah/Punycode-Cocoa](https://github.com/Wevah/Punycode-Cocoa)
-* Minizip-ng library by Nathan Moinvaziri: [https://github.com/zlib-ng/minizip-ng](https://github.com/zlib-ng/minizip-ng)
-* Lottie for iOS library by Brandon Withrow: [https://github.com/airbnb/lottie-ios](https://github.com/airbnb/lottie-ios)
+* Componente de accesibilidad de Tony Million: [https://github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
+* Componente Fmdb de August «Gus» Mueller: [https://github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
+* Componente NSStringPunycodeAdditions de Nate Weaver: [https://github.com/Wevah/Punycode-Cocoa](https://github.com/Wevah/Punycode-Cocoa)
+* Biblioteca Minizip-ng de Nathan Moinvaziri: [https://github.com/zlib-ng/minizip-ng](https://github.com/zlib-ng/minizip-ng)
+* Biblioteca Lottie para iOS de Brandon Withrow: [https://github.com/airbnb/lottie-ios](https://github.com/airbnb/lottie-ios)
 
-## Extensión de navegador de AdGuard {#extension}
+## Extensión de navegador AdGuard {#extension}
 
 * moment: [https://github.com/moment/moment](https://github.com/moment/moment)
 * simply-deferred: [https://github.com/sudhirj/simply-deferred](https://github.com/moment/moment)
@@ -105,9 +105,9 @@ This is the list of libraries and other resources that really helped us with AdG
 * BoringSSL: [https://github.com/google/boringssl/blob/master/LICENSE](https://github.com/google/boringssl/blob/master/LICENSE)
 * brotli: [https://github.com/google/brotli/blob/master/LICENSE](https://github.com/google/brotli/blob/master/LICENSE)
 * Chromium: [https://github.com/chromium/chromium/blob/master/LICENSE](https://github.com/chromium/chromium/blob/master/LICENSE)
-* Detours: [https://github.com/microsoft/Detours/blob/master/LICENSE](https://github.com/microsoft/Detours/blob/master/LICENSE)
+* Detours: [https://github.com/microsoft/Detours/blob/main/LICENSE.md](https://github.com/microsoft/Detours/blob/main/LICENSE.md)
 * eDistantObject: [https://github.com/google/eDistantObject/blob/master/LICENSE](https://github.com/google/eDistantObject/blob/master/LICENSE)
-* FF/FFOS libs by Simon Zolin: [https://github.com/stsaz/ff/blob/master/README](https://github.com/stsaz/ff/blob/master/README)
+* FF/FFOS libs by Simon Zolin: [https://github.com/stsaz/ffbase/blob/master/README.md](https://github.com/stsaz/ffbase/blob/master/README.md)
 * Google test: [https://github.com/google/googletest/blob/master/LICENSE](https://github.com/google/googletest/blob/master/LICENSE)
 * http-parser: [https://github.com/nodejs/http-parser/blob/master/LICENSE-MIT](https://github.com/nodejs/http-parser/blob/master/LICENSE-MIT)
 * jsmn: [https://github.com/zserge/jsmn/blob/master/LICENSE](https://github.com/zserge/jsmn/blob/master/LICENSE)
@@ -121,58 +121,58 @@ This is the list of libraries and other resources that really helped us with AdG
 * SQLite: [https://www.sqlite.org/copyright.html](https://www.sqlite.org/copyright.html)
 * zlib: [https://zlib.net/zlib_license.html](https://zlib.net/zlib_license.html)
 
-## Special thanks {#testers}
+## Agradecimientos especiales {#testers}
 
-Also a huge thanks and gratitude to all beta testers and other engaged users, whose help in finding/eliminating all the bugs, translating AdGuard and moderating our communities was priceless. Special thanks to:
+También un enorme agradecimiento y gratitud a todos los beta testers y otros usuarios comprometidos, cuya ayuda para encontrar / eliminar todos los errores, traducir AdGuard y moderar nuestras comunidades no tiene precio. Agradecimientos especiales:
 
-* ag_bug_finder — beta tester of AdGuard for Windows
-* Aikatsui — active contributor to AdGuard Home
-* Andy Kleinert (AndyKl) — translator and proofreader to German in Crowdin
-* BigDargon — contributed the hostsVN project as a source to the list of AdGuard DNS
-* Blaz — started as a filter contributor and now working at AdGuard
-* Boo Berry — forum and Telegram group moderator
-* buuuuuuu190 — beta tester, active AdGuard Forum member
-* clarke — beta tester, active AdGuard Forum member
-* [dartrax](https://github.com/dartrax) — beta tester, active AdGuard Forum member
-* dja2k — beta tester, active AdGuard Forum member
-* Eduardo Addad de Oliveira (eduardoaddad) — translator and proofreader to Portuguese and Portuguese, Brazilian in Crowdin
-* fabjazz — beta tester, active AdGuard Forum member
-* Görkem Emrah Güler (gork7777) — translator and proofreader to Turkish in Crowdin
-* hanschke — beta tester, active AdGuard Forum member
-* iDjay — outstanding beta tester of AdGuard for iOS
-* Imre Kristoffer Eilertsen (DandelionSprout) — maintainer of "Dandelion Sprout’s Nordic Filters" that are included in all AdGuard tools
-* IONIL — translator and proofreader to Hebrew in Crowdin
-* itabmedia — beta tester, active AdGuard Forum member
-* kirasam — beta tester, active AdGuard Forum member
-* krystian3w — very active filter contributor
-* lancelot.moon — translator and proofreader to Chinese Traditional in Crowdin, beta tester
-* Lord Ami — beta tester, active AdGuard Forum member
-* Lukas Novotny (novas78) — translator and proofreader to Czech in Crowdin
-* malware1 — beta tester, active AdGuard Forum member
-* milder — beta tester, active AdGuard Forum member
-* Nicos18 — beta tester, active AdGuard Forum member
-* Oizaro — translator and proofreader to Italian in Crowdin
-* Oleg Chashko — very active beta tester of AdGuard for Safari
-* Oskari Lavinto (olavinto) — translator and proofreader to Finnish in Crowdin
-* ouzbed — beta tester, active AdGuard Forum member
-* PentagramTr — filter contributor, namely, he has brought a lot of new things to the Turkish filter
-* Peter Hubinsky (hubak) — translator and proofreader to Slovak in Crowdin
-* PiQuark6046 — filter contributor
-* rickyoh — beta tester, active AdGuard Forum member
-* Ronin427 — beta tester, active AdGuard Forum member
-* Sanjay Nand — beta tester, active AdGuard Forum member
-* saturnotaku — beta tester, active AdGuard Forum member
-* steve1209 — beta tester, active AdGuard Forum member
-* streetwolf — beta tester, active AdGuard Forum member
-* superlex — helps us with scriptlets, filters, and AdGuard for Safari
-* TayTayTheKiller — beta tester, active AdGuard Forum member
-* [TPS](https://github.com/TPS) — bug finder, filter contributor
-* Yuki2718 — actively contributes to AdGuard filters
-* zznosar — active beta tester focused on AdGuard for iOS
-* Sergey Zozulya (sviperz) — active member of our Telegram group, beta tester
+* ag_bug_finder — probador beta de AdGuard para Windows
+* Aikatsui — colaborador activo de AdGuard Home
+* Andy Kleinert (AndyKl) — traductor y revisor al alemán en Crowdin
+* BigDargon: contribuyó con el proyecto hostsVN como fuente a la lista de AdGuard DNS
+* Blaz — empezó como colaborador de filtros y ahora trabaja en AdGuard
+* Boo Berry — moderador del foro y del grupo de Telegram
+* buuuuuuu190 — probador beta, miembro activo del foro de AdGuard
+* clarke — beta tester, miembro activo del foro de AdGuard
+* [dartrax](https://github.com/dartrax): probador beta, miembro activo del foro de AdGuard
+* dja2k — probador beta, miembro activo del foro de AdGuard
+* Eduardo Addad de Oliveira (eduardoaddad) — traductor y revisor al portugués y portugués brasileño en Crowdin
+* fabjazz — probador beta, miembro activo del foro de AdGuard
+* Görkem Emrah Güler (gork7777) — traductor y corrector al turco en Crowdin
+* hanschke — probador beta, miembro activo del foro de AdGuard
+* iDjay: destacado probador beta de AdGuard para iOS
+* Imre Kristoffer Eilertsen (DandelionSprout): mantenedor de los "Dandelion Sprout’s Nordic Filters" que se incluyen en todas las herramientas de AdGuard
+* IONIL — traductor y revisor al hebreo en Crowdin
+* itabmedia — probador beta, miembro activo del foro de AdGuard
+* kirasam — probador beta, miembro activo del foro de AdGuard
+* krystian3w — colaborador de filtro muy activo
+* lancelot.moon — traductor y revisor al chino tradicional en Crowdin, beta tester
+* Lord Ami — probador beta, miembro activo del foro de AdGuard
+* Lukas Novotny (novas78) — traductor y revisor al checo en Crowdin
+* malware1 — probador beta, miembro activo del foro de AdGuard
+* milder — beta tester, miembro activo del foro de AdGuard
+* Nicos18 — probador beta, miembro activo del foro de AdGuard
+* Oizaro — traductor y revisor al italiano en Crowdin
+* Oleg Chashko — probador beta muy activo de AdGuard para Safari
+* Oskari Lavinto (olavinto) — traductor y revisor al finés en Crowdin
+* ouzbed — probador beta, miembro activo del foro de AdGuard
+* PentagramTr - colaborador del filtro, a saber, ha aportado muchas cosas nuevas al filtro turco
+* Peter Hubinsky (hubak) — traductor y revisor al eslovaco en Crowdin
+* PiQuark6046 — colaborador de filtro
+* rickyoh — probador beta, miembro activo del foro de AdGuard
+* Ronin427: probador beta, miembro activo del foro de AdGuard
+* Sanjay Nand: probador beta, miembro activo del foro de AdGuard
+* saturnotaku — probador beta, miembro activo del foro de AdGuard
+* steve1209 — probador beta, miembro activo del foro de AdGuard
+* streetwolf — probador beta, miembro activo del foro de AdGuard
+* superlex: nos ayuda con scriptlets, filtros y AdGuard para Safari
+* TayTayTheKiller: probador beta, miembro activo del foro de AdGuard
+* [TPS](https://github.com/TPS) — buscador de errores, colaborador de filtros
+* Yuki2718 - contribuye activamente a los filtros de AdGuard
+* zznosar — probador beta activo centrado en AdGuard para iOS
+* Sergey Zozulya (sviperz) — miembro activo de nuestro grupo de Telegram, probador beta
 
 ---
 
-We also want to thank the [xda-developers users](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/). Thank you for your helpful feedback!
+También queremos agradecer a los [usuarios de xda-developers](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/). ¡Gracias por tus comentarios!
 
-We always appreciate comments from our users, especially constructive ones. You can always contact us to share your thoughts about AdGuard, request new features, and submit bugs. Join the [AdGuard Forum](http://forum.adguard.com/forumdisplay.php?25-English-Forums), [Subreddit](https://reddit.com/r/adguard), [Xda-developers Forum](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/) or visit our page on [GitHub](https://github.com/AdguardTeam).
+Siempre apreciamos los comentarios de nuestros usuarios, especialmente los constructivos. Siempre puedes comunicarte con nosotros para compartir tus opiniones sobre AdGuard, solicitar nuevas funciones y enviar errores. Únete al [AdGuard Forum](http://forum.adguard.com/forumdisplay.php?25-English-Forums), [Subreddit](https://reddit.com/r/adguard), [Xda-developers Forum](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/) o visita nuestra página en [GitHub](https://github.com/AdguardTeam).

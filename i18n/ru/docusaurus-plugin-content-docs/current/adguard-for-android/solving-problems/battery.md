@@ -3,6 +3,12 @@ title: Проблемы с батареей и потреблением траф
 sidebar_position: 1
 ---
 
+:::info
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 Иногда вы можете заметить, что, согласно встроенной статистике Android, AdGuard расходует большое количество трафика и/или ресурса батареи.
 
 Эти проблемы — две стороны одной медали. Так как в процессе фильтрации весь мобильный трафик проходит через AdGuard, Android считает, что именно AdGuard потребляет его весь. В реальности это, конечно, не так.

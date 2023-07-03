@@ -1,39 +1,39 @@
 ---
-title: What is AdGuard license
+title: Qu'est-ce qu'une licence AdGuard
 sidebar_position: 1
 ---
 
-## What is AdGuard license
+## Qu'est-ce qu'une licence AdGuard
 
-A license is permission to use the AdGuard product, provided in accordance with the End User License Agreement. AdGuard licenses exist in the form of license keys, activation codes, and product cards in the user's [AdGuard account](../../account/register).
+Une licence est l'autorisation d'utiliser le logiciel AdGuard, fournie conformément au contrat de licence utilisateur final. Les licences AdGuard existent sous forme de clefs de licence, de codes d'activation et de cartes de produit dans le [ compte d'utilisateur AdGuard](../../account/register).
 
-Some licenses need to be purchased (e.g. AdGuard Ad Blocker Personal), some are free and limited by term (e.g. trial licenses of AdGuard apps) or have a limited functionality (e.g. AdGuard for iOS or AdGuard Browser extension). Here's the list of all types of AdGuard Ad Blocker licenses.
+Certaines licences doivent être achetées (par exemple, la licence personnelle du Bloqueur AdGuard), certaines sont gratuites et limitées dans le temps (par exemple, les licences d'essai des applications AdGuard) ou ont une fonctionnalité limitée (par exemple, AdGuard pour iOS ou l'extension de navigateur AdGuard). Voici la liste de tous les types de licences du Bloqueur AdGuard.
 
-1. **Trial licenses** are free time-limited licenses with full functionality: AdGuard for Windows — 14-day trial, AdGuard for Mac — 14-day trial, AdGuard for Android — 7-day trial.
-2. **Free licenses** are not time-limited, but have limited functionality: AdGuard Browser extension, AdGuard Content Blocker, AdGuard for iOS.
-3. **Subscriptions** are paid licenses that are renewed automatically every month or every year. They can also be extended manually. AdGuard Ad Blocker Monthly subscription, AdGuard Ad Blocker 1-year subscription.
-4. **Licenses purchased from distributors** and **gifted licenses** are time-limited and cannot be renewed automatically. Though, they can be extended manually: AdGuard Ad Blocker Monthly license, AdGuard Ad Blocker 1-year license.
-5. **Lifetime licenses** are not time-limited and have full functionality: AdGuard Ad Blocker Lifetime, AdGuard Pro for iOS.
+1. **Les licences d'essai** sont des licences gratuites à durée limitée avec toutes les fonctionnalités : AdGuard pour Windows — essai de 14 jours, AdGuard pour Mac — essai de 14 jours, AdGuard pour Android — essai de 7 jours.
+2. **Free licenses** are not time-limited, but have limited functionality: AdGuard Browser Extension, AdGuard Content Blocker, AdGuard for iOS.
+3. **Les abonnements** sont des licences payantes qui se renouvellent automatiquement chaque mois ou chaque année. Ils peuvent également être prolongés manuellement. Abonnement mensuel au Bloqueur AdGuard, Abonnement d'un an Bloqueur AdGuard.
+4. **Les licences achetées auprès des distributeurs** et **licences offertes** sont limitées dans le temps et ne peuvent pas être renouvelées automatiquement. Par contre, elles peuvent être prolongées manuellement : Licence mensuelle du Bloqueur AdGuard, Licence d'un an du Bloqueur AdGuard.
+5. **Les licences À vie** ne sont pas limitées dans le temps et disposent de toutes les fonctionnalités : Licence À vie du Bloqueur AdGuard, AdGuard Pro pour iOS.
 
-## How many devices can be added{#devices}
+## Combien d'appareils peuvent être ajoutés{#devices}
 
-Different licenses can be used with a different number of devices:
-* Personal: up to three devices,
-* Family: up to nine devices,
-* AdGuard Pro for iOS: one device.
+Les licences différentes peuvent être utilisées avec un nombre différent d'appareils :
+* Personnelle : jusqu’à trois appareils,
+* Familiale : jusqu’à neuf appareils,
+* AdGuard Pro pour iOS : un seul appareil.
 
-> To use your license on a device, log in to your [AdGuard account](../../account/features) on it. To extend the device limit, you can [upgrade](../activation#how-to-upgrade-a-license) your license.
+To use your license on a device, log in to your [AdGuard account](../../account/features) on it. To extend the device limit, you can [upgrade](../activation#how-to-upgrade-a-license) your license.
 
-## What is a license key{#license-key}
+## Qu'est-ce qu'une clef de licence{#license-key}
 
 A license key is a unique sequence of characters that represents an AdGuard Ad Blocker license. It is automatically registered for the email you used for license purchase. With a license key, you can:
-* log in to your AdGuard account in some products (e.g. AdGuard for Windows),
-* [activate your license](../activation) in a product, if you don't have an AdGuard account,
-* bind your license to your AdGuard account and unbind it.
+* vous connecter à votre compte AdGuard dans certains produits (par exemple, AdGuard pour Windows),
+* [activer votre licence](../activation) dans un produit, si vous n'avez pas de compte AdGuard,
+* lier votre licence à votre compte AdGuard et la délier.
 
-> When unbinding a license, be sure you write the license key down beforehand or note in some other (safe) way. You'll need the key for re-binding your license or transferring it to another account.
+When unbinding a license, be sure you write the license key down beforehand or note in some other (safe) way. You'll need the key for re-binding your license or transferring it to another account.
 
-## How to recover a license key
+## Comment récupérer une clef de licence
 
 You can easily check which license keys belong to you in your [AdGuard Account](../../account/register).
 

@@ -20,14 +20,12 @@ sidebar_position: 4
 
 ![波兰语](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
-> [在此处](https://developer.mozilla.org/en-US/docs/Mozilla/Localization/Localization_and_Plurals)查找其他示例。
-
-我们来在英语和波兰语之间做个小比较，以便更好理解： 
+我们来在英语和波兰语之间做个小比较，以便更好理解：
 
       英文版：                                                  波兰语等效：
     
-      1. 形式 - It takes one hour.                                     1. 形式 - Zajmuje to godzinę. 
-      2. 形式 - It takes two hours.                                    2. 形式 - Zajmuje to dwie godziny. 
+      1. 形式 - It takes one hour.                                     1. 形式 - Zajmuje to godzinę.
+      2. 形式 - It takes two hours.                                    2. 形式 - Zajmuje to dwie godziny.
       3. 形式 - It takes five hours.                                   3. 形式 - Zajmuje to pięć godzin.
 
 现在很明显的是，波兰语 *'godzinę'*（小时）具有三种不同的形式，而英语单词仅更改两次单词形式。
@@ -127,7 +125,7 @@ Crowdin 为用户提供翻译一定数量具有不同复数形式的短语的功
 在这种情况下，我们看到三个模板，其中包含斯洛伐克语中单词 *"počítač"* （计算机）的三种形式。
 
 *如果我们忽略其中一种形式，而只为斯洛伐克语使用两个，而不是三个模板，则系统将无法为某些数字采用适当的模板*。结果是，句子中将出现语法错误，例如英语：*Standard license for 5 computer（正确应是：Standard license for 5 computers）*。
-> **即使单词本身的单词形式较少，也要始终使用尽可能多的形式。**
+> **Always use as many forms as there are in your language, even when the word itself has fewer word forms.**
 
 例如，塞尔维亚单词 *'računar'*（计算机（computer））只有两种形式。 但是塞尔维亚语有 3 种复数形式。
 
@@ -149,10 +147,10 @@ Crowdin 为用户提供翻译一定数量具有不同复数形式的短语的功
 
 + 指翻译成一种语言的复数规则；
 
-> 即使在某些单词本身具有较少形式的情况下，模板的数量也应与语言所包含的复数形式的数量相一致。 两种复数形式对应翻译中的两个模板；五个复数形式对应五个模板等。
+The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms – two templates in translations; five plural forms – five templates, etc.
 
 + 不要忘记在模板之间使用竖线符号；
 
 + 请勿翻译，填写或删除 **％count％** 占位符。
 
-通过遵循这些简单的规则，您将会帮助 AdGuard 开发人员避免翻译过程中发生的许多不必要的复杂问题。
+By following these simple rules you will help AdGuard developers avoid a lot of unnecessary complications during the localization process.

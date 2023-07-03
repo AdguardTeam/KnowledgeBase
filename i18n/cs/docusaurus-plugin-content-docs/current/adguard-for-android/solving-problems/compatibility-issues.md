@@ -3,6 +3,12 @@ title: Známé problémy kompatibility s aplikacemi pro Android
 sidebar_position: 15
 ---
 
+:::info
+
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## Aplikace VPN
 
 Ostatní aplikace VPN nejsou kompatibilní se službou AdGuard spuštěnou v režimu filtrování místní sítě VPN, protože nelze mít současně aktivní dvě sítě VPN. K vyřešení tohoto problému vám doporučujeme:
@@ -15,13 +21,17 @@ Ostatní aplikace VPN nejsou kompatibilní se službou AdGuard spuštěnou v re�
 
 Funkce Soukromý DNS byla představena v Android Pie. Před verzí Q služba Soukromý DNS neporušovala logiku filtrování AdGuard DNS a předávání DNS prostřednictvím AdGuardu fungovalo normálně. Od verze Q však přítomnost služby Soukromý DNS nutí aplikace přesměrovávat přenosy přes systémový řešitel namísto přes AdGuard. Další podrobnosti najdete v [blogu vývojářů](https://android-developers.googleblog.com/2018/04/dns-over-tls-support-in-android-p.html) systému Android.
 
-> Někteří výrobci zařízení nechávají nastavení Soukromých DNS skryté a jako výchozí nastavují režim "Automaticky". Zakázat službu Soukromý DNS tedy nelze, ale můžeme systém přimět, aby si myslel, že odchozí server není platný, a to tak, že jej zablokujeme pomocí pravidla `$network`. Pokud například systém ve výchozím nastavení používá Google DNS, můžeme přidat pravidla `|8.8.4.4^$network` a `|8.8.8.8^$network` pro zablokování Google DNS.
+:::tip
+
+Někteří výrobci zařízení nechávají nastavení Soukromých DNS skryté a jako výchozí nastavují režim "Automaticky". Zakázat službu Soukromý DNS tedy nelze, ale můžeme systém přimět, aby si myslel, že odchozí server není platný, a to tak, že jej zablokujeme pomocí pravidla `$network`. Pokud například systém ve výchozím nastavení používá Google DNS, můžeme přidat pravidla `|8.8.4.4^$network` a `|8.8.8.8^$network` pro zablokování Google DNS.
+
+:::
 
 ## Nepodporované prohlížeče
 
 ### Prohlížeče UC: UC Browser, UC Browser pro x86, UC Mini, UC Browser HD
 
-Aby mohl AdGuard filtrovat přenosy HTTPS, musí uživatel nainstalovat certifikát do důvěryhodných uživatelských certifikátů zařízení. Prohlížeče z rodiny UC bohužel nedůvěřují uživatelským certifikátům, takže v nich AdGuard nemůže provádět filtrování HTTPS.
+Aby mohl AdGuard filtrovat přenosy HTTPS, musí uživatel přidat certifikát do důvěryhodných uživatelských certifikátů zařízení. Prohlížeče z rodiny UC bohužel nedůvěřují uživatelským certifikátům, takže v nich AdGuard nemůže provádět filtrování HTTPS.
 
 **Řešení**
 

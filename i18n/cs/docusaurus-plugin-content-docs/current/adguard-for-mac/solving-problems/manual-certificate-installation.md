@@ -1,22 +1,28 @@
 ---
-title: Manual certificate installation
+title: Ruční instalace certifikátu
 sidebar_position: 1
 ---
 
-AdGuard for Mac needs to install the root certificate into certificate storage to be able to [filter HTTPS traffic](/general/https-filtering/what-is-https-filtering). This action is performed automatically in most cases as you run the app for the first time, but users of Gecko-based browsers (Firefox, Waterfox etc.) who have a master password set up for their browser may be required to take additional steps (because these browsers use their own certificate storage instead of the system one). They need to either enter the master password when prompted (to grant AdGuard access to the certificate storage) or manually install the certificate.
+:::info
 
-To manually install the certificate into Firefox-like browser:
+Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 
-  1. Open "Preferences"
+:::
 
-  2. Go to "Privacy & Security" — "Certificates"
+AdGuard for Mac potřebuje nainstalovat kořenový certifikát do úložiště certifikátů, aby mohl [filtrovat HTTPS provoz](/general/https-filtering/what-is-https-filtering). Tato akce se ve většině případů provede automaticky při prvním spuštění aplikace, ale uživatelé prohlížečů založených na technologii Gecko (Firefox, Waterfox atd.), kteří mají pro svůj prohlížeč nastaveno hlavní heslo, mohou být nuceni provést další kroky (protože tyto prohlížeče používají vlastní úložiště certifikátů namísto systémového). Na výzvu musí buďto zadat hlavní heslo (aby AdGuard získal přístup k úložišti certifikátů), nebo certifikát nainstalovat ručně.
 
-  3. Click on "View Certificates"
+Ruční instalace certifikátu do prohlížeče podobného Firefoxu:
 
-  4. Navigate to "Authorities" tab and click on "Import..." button
+  1. Otevřete "Předvolby"
 
-  5. Select file `/Library/Application Support/AdGuard Software/com.adguard.mac.adguard/AdguardCore/Adguard Personal CA.cer` or just download it from http://local.adguard.org/cert using a Chromium-based browser (e.g Google Chrome or new Edge) and with a HTTPS-filtering running in AdGuard
+  2. Jděte do "Ochrana soukromí & Zabezpečení" — "Certifikáty"
 
-Exact actions required for different Gecko-based browsers may vary, but the general sequence and the path to `AdGuard Personal CA.cer` file will be the same.
+  3. Klikněte na "Zobrazit certifikáty"
 
-PS: For [Setapp application version](https://setapp.com/apps/adguard) the file path is the following: `/Library/Application Support/com.adguard.mac.adguard-setapp/AdguardCore/Adguard Personal CA.cer`
+  4. Přejděte na kartu "Oprávnění" a klikněte na tlačítko "Importovat..."
+
+  5. Vyberte soubor `/Library/Application Support/AdGuard Software/com.adguard.mac.adguard/AdguardCore/Adguard Personal CA.cer` nebo si jej stáhněte z http://local.adguard.org/cert pomocí prohlížeče založeného na Chromiu (např. Google Chrome nebo nový Edge) a se spuštěným HTTPS filtrováním v AdGuardu
+
+Přesné úkony vyžadované v různých prohlížečích založených na technologii Gecko se mohou lišit, ale obecná posloupnost a cesta k souboru `AdGuard Personal CA.cer` budou podobné nebo stejné.
+
+PS: Pro verze [aplikace Setapp](https://setapp.com/apps/adguard) je cesta k souboru následující: `/Library/Application Support/com.adguard.mac.adguard-setapp/AdguardCore/Adguard Personal CA.cer`

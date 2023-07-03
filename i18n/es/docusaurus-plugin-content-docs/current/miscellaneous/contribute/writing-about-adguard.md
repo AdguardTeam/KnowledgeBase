@@ -1,10 +1,10 @@
 ---
-title: Writing about AdGuard
+title: Escribe sobre AdGuard
 sidebar_position: 3
 ---
 
-If you like AdGuard and want to spread your impressions of the product(s) over the internet — in social media, personal blogs and/or on websites — then this article can be useful for you.
+Si te gusta AdGuard y quieres difundir tus impresiones sobre los productos a través de Internet (en las redes sociales, blogs personales y/o en sitios web) entonces este artículo puede ser útil para ti.
 
-Once you share your experience online, send us a link to [pr@adguard.com](mailto:pr@adguard.com) and we'll thank you with a free license key. It does not really matter if your website's audience is ten people or a thousand, we respect every effort. The only note to keep in mind is that your review should be roughly about 300 to 500 words.
+Una vez que compartas tu experiencia en línea, envíanos un enlace a [pr@adguard.com](mailto:pr@adguard.com) y te lo agradeceremos con una clave de licencia gratuita. Realmente no importa si la audiencia de tu sitio web es de diez o mil personas, respetamos cada esfuerzo. La única nota a tener en cuenta es que tu comentario debe tener aproximadamente entre 300 y 500 palabras.
 
-If you want to make a video or to do something else, let us know in advance, just to avoid misunderstandings in the future. The same applies if your plan includes the use of AdGuard logo, banners or other visual elements. The contact email remains the same: [pr@adguard.com](mailto:pr@adguard.com).
+Si quieres hacer un video o hacer algo más, háznoslo saber con anticipación, solo para evitar malentendidos en el futuro. Lo mismo se aplica si tu plan incluye el uso del logotipo, banners u otros elementos visuales de AdGuard. El correo electrónico de contacto sigue siendo el mismo: [pr@adguard.com](mailto:pr@adguard.com).

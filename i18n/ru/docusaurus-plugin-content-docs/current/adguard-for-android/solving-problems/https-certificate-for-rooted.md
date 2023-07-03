@@ -3,6 +3,12 @@ title: Перемещение сертификата ЦС в системное 
 sidebar_position: 13
 ---
 
+:::info
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 В AdGuard для Android есть функция [HTTPS-фильтрации](../../overview#https-filtering), которая позволяет [фильтровать зашифрованный HTTPS-трафик](/general/https-filtering/what-is-https-filtering) на устройствах Android. Эта функция требует добавления ЦС-сертификата AdGuard в список доверенных сертификатов.
 
 На некорневых устройствах сертификаты ЦС могут быть установлены в **пользовательское хранилище**. Только некоторые приложение (в основном браузеры) доверяют сертификатам ЦС, установленным в хранилище пользователя, что означает, что HTTPS-фильтрация будет работать только для таких приложений.
@@ -24,7 +30,7 @@ sidebar_position: 13
 
 В этом случае перейдите к шагам ниже:
 
-3. Перейдите в **Magisk** -> **Настройки**
+3. Перейдите в **Magisk** → **Настройки**
 
 ![Откройте настройки Magisk *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-1.png)
 

@@ -3,11 +3,15 @@ title: Cómo activar
 sidebar_position: 3
 ---
 
-## Cómo activar una licencia
+## How to activate a license
 
 Para activar tu licencia, ve a la sección *Licencia* de tu producto AdGuard y busca el *campo Iniciar sesión* o el botón *Activar*. Utiliza el correo electrónico y la contraseña de tu cuenta de AdGuard para iniciar sesión. Si aún no tienes una cuenta, se te ofrecerá crear una.
 
-> Nota: Para activar una licencia a través de la cuenta de AdGuard, debes tener una licencia válida con al menos un espacio disponible. Si tu licencia ya se usa en una cantidad máxima de dispositivos, puedes [actualizarla](#how-to-upgrade-a-license) o [transferirla de un dispositivo a otro](#how-to-transfer-a-license-to-another-device).
+:::note
+
+To activate a license via the AdGuard account, a valid license with at least one free slot is required. If your license is already used on a maximum number of devices, you can [upgrade it](../payment-options#upgrade) or [transfer it from one device to another](../transfer).
+
+:::
 
 También puedes utilizar una clave [](../what-is#license-key) para activar la licencia.
 
@@ -17,11 +21,11 @@ También puedes utilizar una clave [](../what-is#license-key) para activar la li
 
 1. Abre la aplicación AdGuard
 
-Para ello, haz doble clic en el icono de AdGuard del escritorio:
+To do it, double-click the AdGuard icon on the desktop:
 
 ![Icono de AdGuard en el escritorio](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowsEn.png)
 
-o haz doble clic en el icono de AdGuard en la bandeja del sistema:
+or double-click the AdGuard icon in the system tray:
 
 ![Icono de AdGuard en la bandeja del sistema](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windows2En.png)
 
@@ -48,7 +52,7 @@ o haz doble clic en el icono de AdGuard en la bandeja del sistema:
 2. Haz clic en el **** icono en la esquina superior derecha
 3. Haz clic en **Licencia**
 
-![Ir a Configuración y Licencia](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/macEn.png)
+![Go to Settings and License *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/macEn.png)
 
 4. En la ventana abierta presiona el botón **Activar**
 
@@ -98,30 +102,3 @@ o haz doble clic en el icono de AdGuard en la bandeja del sistema:
 4. Ingresa **correo electrónico** y **contraseña** de tu **cuenta de AdGuard**
 
 ![Iniciar sesión *móvil](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense2en.png)
-
-## Cómo transferir una licencia a otro dispositivo
-
-La clave de licencia se puede activar en un [número limitado de dispositivos](../what-is#devices). Si la clave ya se usó en la cantidad máxima permitida de dispositivos, debes desvincular un dispositivo de tu cuenta. Puedes hacerlo de tres maneras:
-* haciendo clic en el botón *Restablecer licencia* (se aplica a las aplicaciones de escritorio),
-* al cerrar sesión en tu cuenta en un producto de AdGuard,
-* haciendo clic en el icono de X junto a un dispositivo en tu cuenta de AdGuard.
-
-Una vez que hayas desvinculado la cantidad de dispositivos que necesitas, puedes iniciar sesión en tu cuenta de AdGuard en nuevos dispositivos. La licencia estará vinculada a ellos.
-
-## Cómo actualizar una licencia
-
-Para que sea más conveniente usar tus productos AdGuard, puedes actualizar tu licencia.
-
-1. Para aumentar la funcionalidad de tus productos AdGuard, puedes **actualizar tu licencia gratuita o de prueba a la versión completa**.
-2. Para ampliar la cantidad de dispositivos, puedes **actualizar tu licencia de AdGuard Ad Blocker Personal a Familiar**.
-3. También puedes **actualizar tu suscripción a una licencia vitalicia**.
-
-Puedes actualizar tu licencia:
-* comprar otra licencia en los sitios web oficiales de los productos de AdGuard;
-* haciendo clic en el botón *Actualizar* en tu cuenta de AdGuard.
-
-## Cómo cancelar una suscripción
-
-La suscripción se puede cancelar en tu cuenta de AdGuard. Para cancelar tu suscripción, haz clic en la tarjeta o en el ícono de X al lado y selecciona *Cancelar suscripción*. La suscripción cancelada será válida hasta su fecha de vencimiento.
-
-> Las suscripciones compradas en App Store se pueden administrar en la cuenta de App Store o en la configuración del dispositivo.

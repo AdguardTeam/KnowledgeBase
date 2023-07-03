@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "docusaurus start",
+    "start": "docusaurus start --host 0.0.0.0",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "yarn crowdin:sync && docusaurus deploy",
@@ -16,7 +16,7 @@
     "crowdin:sync": "docusaurus write-translations && crowdin upload && crowdin download"
   },
   "dependencies": {
-    "@crowdin/cli": "3",
+    "@crowdin/cli": "3.13.0",
     "@docusaurus/core": "^2.2.0",
     "@docusaurus/plugin-ideal-image": "^2.2.0",
     "@docusaurus/preset-classic": "^2.2.0",

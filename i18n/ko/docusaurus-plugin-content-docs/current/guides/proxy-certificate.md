@@ -1,132 +1,136 @@
 ---
-title: How to install a proxy certificate
+title: 프록시 인증서를 설치하는 방법
 sidebar_position: 2
 ---
 
-Desktop AdGuard apps (AdGuard for Windows and AdGuard for Mac) can be used as a proxy. This means that you can route other devices' traffic through AdGuard (entirely, or traffic of specific apps/browsers).
+데스크톱 AdGuard 앱(Windows용 AdGuard 및 Mac용 AdGuard)을 프록시로 사용할 수 있습니다. 즉, 다른 디바이스의 트래픽(전체 또는 특정 앱/브라우저의 트래픽)을 AdGuard를 통해 라우팅할 수 있습니다.
 
-> Note that these devices must be in the same network as the PC or Mac on which AdGuard is installed.
+:::note
 
-HTTP traffic will be filtered in any case, but for AdGuard to be able to filter HTTPS traffic you need to manually install AdGuard certificate on the connected device.
+These devices must be in the same network as the PC or Mac on which AdGuard is installed.
 
-## How to download and install the certificate
+:::
 
-Depending on the operation system of your device (Windows/Mac/Android/iOS), follow one of these instructions:
+HTTP 트래픽은 어떤 경우에도 필터링되지만, AdGard가 HTTPS 트래픽을 필터링할 수 있으려면 연결된 디바이스에 AdGard 인증서를 수동으로 설치해야 합니다.
+
+## 인증서를 다운로드하고 설치하는 방법
+
+사용 중인 디바이스의 운영 체제(Windows/Mac/Android/iOS)에 따라 다음 지침 중 하나를 따르세요:
 
 ### Windows {#windows}
 
-1. Note the IP address of your desktop computer with installed AdGuard.
+1. AdGuard가 설치된 데스크톱 컴퓨터의 IP 주소를 기록해 두세요.
 
-2. Make sure AdGuard’s protection is enabled. Then check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings.
+2. AdGuard 보호 기능이 활성화되어 있는지 확인하세요. 그런 다음 설정의 **네트워크** 탭에서 **AdGuard를 HTTP 프록시로 사용** 확인란을 선택합니다.
 
-3. On the same device with AdGuard follow this link using any browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+3. AdGuard가 설치된 동일한 기기에서 브라우저를 사용하여 다음 링크를 따르세요: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
-4. Click the **Download** button.
+4. **다운로드** 버튼을 클릭합니다.
 
-5. Transfer the downloaded **cert.cer** file to the device which traffic you want to route through AdGuard.
+5. 다운로드한 **cert.cer** 파일을 AdGuard를 통해 라우팅할 트래픽이 있는 디바이스로 전송합니다.
 
-6. On that device, press the **Win** button, type `Manage computer certificates` and press **Enter**.
+6. 해당 장치에서 **Win** 버튼을 누르고 `컴퓨터 인증서 관리` 를 입력한 다음 **Enter**를 누릅니다.
 
-7. On the *Certificates - Local Computer* page, find the *Trusted Root Certification* → *Certificates* folder.
+7. *인증서 - 로컬 컴퓨터* 페이지에서 *신뢰할 수 있는 루트 인증* → *인증서* 폴더를 찾습니다.
 
-8. Right-click the *Certificates* folder and click **All Tasks** → **Import**.
+8. *인증서* 폴더를 마우스 오른쪽 버튼으로 클릭하고 **모든 작업** → **가져오기**를 클릭합니다.
 
-9. On the *Certificate Import Wizard* page, click **Next**.
+9. *인증서 가져오기 마법사* 페이지에서 **다음**을 클릭합니다.
 
-10. Click **Browse** to import the certificate.
+10. **찾아보기**를 클릭하여 인증서를 가져옵니다.
 
-11. Navigate to the **cert.cer** certificate file, select it, then click **Open**.
+11. **cert.cer** 인증서 파일로 이동하여 선택한 다음 **열기**를 클릭합니다.
 
-12. Click **Next**.
+12. **다음**을 클릭합니다.
 
-13. Select the **Place all certificates in the following store** checkbox.
+13. **모든 인증서를 다음 스토어에 배치** 확인란을 선택합니다.
 
-14. Ensure that the *Certificate store* field displays *Trusted Root Certification Authorities* and click **Next**.
+14. *인증서 저장소* 필드에 *신뢰할 수 있는 루트 인증 기관* 이 표시되는지 확인하고 **다음**을 클릭합니다.
 
-15. Click **Finish**.
+15. **마침**을 클릭합니다.
 
-16. Press the **Win** key, then open **Settings**.
+16. **Win** 키를 누른 다음 **설정**을 엽니다.
 
-17. Select **Network & Internet** → **Proxy**.
+17. **네트워크 & 인터넷** → **프록시**를 선택합니다.
 
-18. Toggle *Automatically detect settings* off.
+18. *자동 감지 설정* 끄기.
 
-19. Click **Set up** in the *Use a proxy server* tab.
+19. *프록시 서버 사용* 탭에서 **설정**을 클릭합니다.
 
-20. Turn the toggle on. For **Proxy IP address**, enter the noted IP address of your desktop computer (step 1). For **Port**, enter the port chosen in the network settings of the desktop AdGuard app.
+20. 토글을 켭니다. **프록시 IP 주소**, 데스크톱 컴퓨터의 명시된 IP 주소를 입력합니다(1단계). **포트**, 데스크톱 AdGuard 앱의 네트워크 설정에서 선택한 포트를 입력합니다.
 
-21. Click **Save**.
+21. **저장**을 클릭합니다.
 
 ### Mac {#mac}
 
-1. Note the IP address of your desktop computer with installed AdGuard.
+1. AdGuard가 설치된 데스크톱 컴퓨터의 IP 주소를 기록해 두세요.
 
-2. Make sure AdGuard’s protection is enabled. Then go to **Settings** → **Network** → **HTTP proxy** and check the box **Use AdGuard as an HTTP proxy**.
+2. AdGuard 보호 기능이 활성화되어 있는지 확인하세요. 그런 다음 **설정** → **네트워크** → **HTTP 프록시** 로 이동하여 **HTTP 프록시로 AdGuard 사용**확인란을 선택합니다.
 
-3. On the same computer with AdGuard follow this link using any browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+3. AdGuard가 설치된 컴퓨터에서 웹 브라우저를 사용하여 다음 링크를 따르세요: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
-4. Click the **Download** button.
+4. **다운로드** 버튼을 클릭합니다.
 
-5. Transfer the downloaded **cert.cer** file to the device which traffic you want to route through AdGuard.
+5. 다운로드한 **cert.cer** 파일을 AdGuard를 통해 라우팅할 트래픽이 있는 디바이스로 전송합니다.
 
-6. Double-click the downloaded certificate file.
+6. 다운로드한 인증서 파일을 두 번 클릭합니다.
 
-7. Enter the administrator password and then click **Modify Keychain**.
+7. 관리자 비밀번호를 입력한 다음 **키체인 수정**을 클릭합니다.
 
-8. Go to **Spotlight** (the search icon in the top right corner), type in "Keychain Access", and then select **Keychain Access** from the search results.
+8. **Spotlight** (오른쪽 상단의 검색 아이콘)로 이동하여 '키체인 액세스'를 입력한 다음 검색 결과에서 **키체인 액세스** 를 선택합니다.
 
-9. Under *System*, highlight the certificate that you added.
+9. *시스템*에서 추가한 인증서를 강조 표시합니다.
 
-10. Right-click on it and choose **Get Info** from the context menu.
+10. 마우스 오른쪽 버튼을 클릭하고 컨텍스트 메뉴에서 **정보 얻기** 를 선택합니다.
 
-11. Expand *Trust* to display the trust policies for the certificate.
+11. *신뢰*를 확장하여 인증서에 대한 신뢰 정책을 표시합니다.
 
-12. Under *Secure Sockets Layers (SSL)*, select **Always Trust**.
+12. *보안 소켓 계층(SSL)*에서 **항상 신뢰**를 선택합니다.
 
-13. Open **System Preferences** → **Network** and choose the upper active connection.
+13. **시스템 환경설정** → **네트워크** 을 열고 상단의 활성 연결을 선택합니다.
 
-14. Click **Details...** and navigate to the **Proxies** tab.
+14. **세부 정보...** 를 클릭하고 **프록시** 탭으로 이동합니다.
 
-15. Tick two checkboxes: *Web proxy (HTTP)* and *Secure web proxy (HTTPS)*. In the **Server** field, enter the noted IP address of your computer (step 1). In the **Port** field, enter the port chosen in the network settings of the AdGuard desktop app.
+15. 두 개의 확인란을 선택합니다: *웹 프록시(HTTP)* 및 *보안 웹 프록시(HTTPS)*. **서버** 필드에 컴퓨터의 IP 주소를 입력합니다(1단계). **포트** 필드에 AdGuard 데스크톱 앱의 네트워크 설정에서 선택한 포트를 입력합니다.
 
 ### Android {#android}
 
-1. Note the IP address of your desktop computer with installed AdGuard.
+1. AdGuard가 설치된 데스크톱 컴퓨터의 IP 주소를 기록해 두세요.
 
-2. Make sure AdGuard’s protection is enabled. Then check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings.
+2. AdGuard 보호 기능이 활성화되어 있는지 확인하세요. 그런 다음 설정의 **네트워크** 탭에서 **AdGuard를 HTTP 프록시로 사용** 확인란을 선택합니다.
 
-3. On the same computer with AdGuard follow this link using any browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+3. AdGuard가 설치된 컴퓨터에서 웹 브라우저를 사용하여 다음 링크를 따르세요: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
-4. Click the **Download** button.
+4. **다운로드** 버튼을 클릭합니다.
 
-5. Transfer the downloaded **cert.cer** file to the device which traffic you want to route through AdGuard.
+5. 다운로드한 **cert.cer** 파일을 AdGuard를 통해 라우팅할 트래픽이 있는 디바이스로 전송합니다.
 
-6. Locate and tap the previously downloaded **cert.cer** certificate to open the file.
+6. 이전에 다운로드한 **cert.cer** 인증서를 찾아서 탭하여 파일을 엽니다.
 
-7. On some phones, you might be asked to enter your device password. Do that, then press **OK**. The certificate is now installed.
+7. 일부 휴대폰에서는 디바이스 비밀번호를 입력하라는 메시지가 표시될 수 있습니다. 그런 다음 **확인**을 누릅니다. 이제 인증서가 설치되었습니다.
 
-8. Open advanced settings of the active Wi-Fi network.
+8. 활성 Wi-Fi 네트워크의 고급 설정을 엽니다.
 
-9. Switch the **Proxy type** to **Manual**. For **Proxy hostname**, enter the noted IP address of your desktop computer (step 1). For **Proxy port**, enter the port chosen in the network settings of the AdGuard desktop app.
+9. **프록시 유형** 을 **매뉴얼**으로 전환합니다. **프록시 호스트 이름**, 데스크톱 컴퓨터의 IP 주소를 입력합니다(1단계). **프록시 포트**, AdGuard 데스크톱 앱의 네트워크 설정에서 선택한 포트를 입력합니다.
 
 ### iOS {#ios}
 
-1. Note the IP address of your desktop computer with installed AdGuard.
+1. AdGuard가 설치된 데스크톱 컴퓨터의 IP 주소를 기록해 두세요.
 
-2. Make sure AdGuard’s protection is enabled. Then check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings.
+2. AdGuard 보호 기능이 활성화되어 있는지 확인하세요. 그런 다음 설정의 **네트워크** 탭에서 **AdGuard를 HTTP 프록시로 사용** 확인란을 선택합니다.
 
-3. On the same computer with AdGuard follow this link using any browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+3. AdGuard가 설치된 컴퓨터에서 웹 브라우저를 사용하여 다음 링크를 따르세요: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
-4. Click the **Download** button.
+4. **다운로드** 버튼을 클릭합니다.
 
-5. Transfer the downloaded **cert.cer** file to the device which traffic you want to route through AdGuard.
+5. 다운로드한 **cert.cer** 파일을 AdGuard를 통해 라우팅할 트래픽이 있는 디바이스로 전송합니다.
 
-6. Open **Settings** → **Security** → **Encryption & Credentials** → **Install a certificate**. Android devices do not trust certificates by default so there will be a warning when you choose **CA certificate**. Tap **Install anyway**.
+6. 열기 **설정** → **보안** → **암호화 & 자격 증명** → **인증서 설치**. Android 디바이스는 기본적으로 인증서를 신뢰하지 않으므로 **CA 인증서**를 선택하면 경고가 표시됩니다. **어쨌든 설치**를 탭합니다.
 
-7. Open **Settings** → **Profile Donwloaded** and tap **Install** in the top right corner. Enter your password and confirm the installation. Tap **Done**.
+7. **설정** → **프로필 다운로드** 를 열고 오른쪽 상단에서 **설치** 를 탭합니다. 비밀번호를 입력하고 설치를 확인합니다. **완료**를 탭합니다.
 
-8. Go to **Settings** → **General** → **About** → **Certificate Trust Settings**. Enable the switch beside *Adguard Personal CA*. The certificate is now installed.
+8. **설정** → **일반** → **정보** → **인증서 신뢰 설정**으로 이동합니다. 옆의 스위치를 활성화합니다 *Adguard Personal CA*. 이제 인증서가 설치되었습니다.
 
-9. On that device, open advanced settings of the active Wi-Fi network.
+9. 해당 장치에서 활성 Wi-Fi 네트워크의 고급 설정을 엽니다.
 
-10. Switch the **Proxy type** to **Manual**. For **Proxy hostname**, enter the noted IP address of your computer (step 1). For **Proxy port**, enter the port chosen in the network settings of the AdGuard desktop app.
+10. **프록시 유형** 을 **매뉴얼**으로 전환합니다. **프록시 호스트 이름**, 표시된 컴퓨터의 IP 주소를 입력합니다(1단계). **프록시 포트**, AdGuard 데스크톱 앱의 네트워크 설정에서 선택한 포트를 입력합니다.

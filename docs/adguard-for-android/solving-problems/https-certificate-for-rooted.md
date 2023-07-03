@@ -3,6 +3,12 @@ title: Moving CA certificate to System store on rooted devices
 sidebar_position: 14
 ---
 
+:::info
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 AdGuard for Android provides a feature called [HTTPS filtering](../../overview#https-filtering) that makes it possible to [filter encrypted HTTPS traffic](/general/https-filtering/what-is-https-filtering) on your Android device. This feature requires adding the AdGuard's CA certificate to the list of trusted certificates.
 
 On non-rooted devices CA certificates can be installed to the **User store**. Only a limited subset of apps (mostly browsers) trust CA certificates installed to the User store, meaning HTTPS filtering will work only for such apps.
@@ -28,7 +34,7 @@ However, if you have a newer version, you will get this message:
 
 In that case, proceed to steps below:
 
-3. Go to **Magisk** -> **Settings**
+3. Go to **Magisk** → **Settings**
 
 ![Open Magisk settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-1.png)
 
@@ -62,7 +68,7 @@ Please note that in order for **Bromite** browser to work properly, in addition 
 
 ### Chrome and Chromium-based browsers
 
-Long story short, you will have no problems with HTTPS filtering in Chrome and Chromium-based browsers on rooted devices, if you use "AdGuard Certificate" module. 
+Long story short, you will have no problems with HTTPS filtering in Chrome and Chromium-based browsers on rooted devices, if you use "AdGuard Certificate" module.
 
 Here is a bit more detailed explanation: Chrome (and subsequently many other Chromium-based browsers) has recently started requiring CT logs for CA certs found in the **System store**. "AdGuard Certificate" module copies AdGuard's CA certificate from the **User store** to the **System store**. It also contains a Zygisk module that reverts any modifications done by Magisk for [certain browsers](https://github.com/AdguardTeam/adguardcert/blob/master/zygisk_module/jni/browsers.inc).
 This way the browsers only find AdGuard’s certificate in the User store and don’t complain about the missing CT log, while other apps continue to use the same certificate from the System store.

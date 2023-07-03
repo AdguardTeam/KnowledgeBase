@@ -3,6 +3,12 @@ title: Защитой конфиденциальности в Почте и AdGu
 sidebar_position: 8
 ---
 
+:::info
+
+This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## В двух словах
 
 Приложение Почта Apple теперь использует прокси-сервер для скрытия IP-адреса пользователя при загрузке изображений из электронных писем.

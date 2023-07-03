@@ -1,42 +1,49 @@
 ---
-title: Browser Assistant
+title: Asistent prohlížeče
 sidebar_position: 3
 ---
 
-AdGuard Assistant’s primary function is to manage filtering directly from the browser. It has existed for quite a long time, and its form and content have changed. More precisely, it used to be a mere userscript incorporated into the AdGuard for Mac app and became a full-fledged browser extension. Now it definitely yields more benefits.
+Hlavní funkcí Asistenta AdGuardu je správa filtrování přímo z prohlížeče. Existuje již poměrně dlouho a jeho forma i obsah se měnily. Přesněji řečeno, dříve to byl pouhý uživatelský skript začleněný do aplikace AdGuard pro Mac a stalo se z něj plnohodnotné rozšíření prohlížeče. Nyní rozhodně přináší více výhod.
 
-![Browser Assistant](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistantmac.jpg)
+![Asistent prohlížeče](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistantmac.jpg)
 
-## Benefits
-### Independence
-AdGuard Browser Assistant is an extension installed in a browser, so there is no need to wait for the userscript to be injected into the filtered web page, as it was with the preceding one. In other words, it is more autonomous from the main AdGuard app. Still, Browser Assistant needs the installed AdGuard for Mac, because there is no point in using the extension without the app.
+## Výhody
+### Nezávislost
+AdGuard Asistent prohlížeče je rozšíření nainstalované v prohlížeči, takže není třeba čekat na vložení uživatelského skriptu do filtrované webové stránky, jako tomu bylo u předchozího rozšíření. Jinými slovy, je více nezávislý na hlavní aplikaci AdGuard. Asistent prohlížeče přesto potřebuje nainstalovaný AdGuard pro Mac, protože bez této aplikace nemá smysl rozšíření používat.
 
-### Compatibility with the main app
-If you got into the habit of using our previous AdGuard ad blocker extension [in Integration mode](/adguard-browser-extension/integration-mode), you may like the solution that we have developed for the new Browser Assistant.
+### Kompatibilita s hlavní aplikací
+Pokud jste si zvykli používat naše předchozí rozšíření pro blokování reklam AdGuard [v režimu integrace](/adguard-browser-extension/integration-mode), možná se vám zalíbí řešení, které jsme vyvinuli pro nového Asistenta prohlížeče.
 
-Background information:
-> In previous versions of the AdGuard Browser Extension (before v3.5), if you had it installed along with a desktop AdGuard for Mac, the extension took over the functions of Assistant, stopped filtering itself and relied on the app to do this. The extension and the app worked in conjunction but sometimes the integration would fail. Some websites would stop being protected by the desktop program and be backed up only by the less powerful extension.
+:::note Základní informace
 
-> When using the Browser Assistant, all these problems don’t matter as there can be no conflicts in essence. The role of the Browser Assistant is well defined and it can’t hinder the functioning of the main app, so there is no need to worry.
+V předchozích verzích Rozšíření prohlížeče AdGuard (před verzí 3.5), pokud jste je měli nainstalované spolu s desktopovou aplikací AdGuard pro Mac, převzalo rozšíření funkce Asistenta, přestalo filtrovat samo a spoléhalo se na aplikaci. Rozšíření a aplikace fungovaly společně, ale někdy integrace selhala. Některé webové stránky by přestaly být chráněny programem pro stolní počítače a byly by zálohovány pouze méně výkonným rozšířením.
 
-### Smart onboarding
-When AdGuard for Mac is installed for the first time, the thing a user encounters in the first place is the onboarding. During this process the user quickly learns about AdGuard's settings and can customize filtering to their liking. At one stage AdGuard will determine the user's default browser and provide them with a download link for the new Assistant.
+Při použití Asistenta prohlížeče všechny tyto problémy nevadí, protože v podstatě nemůže dojít k žádným konfliktům. Úloha Asistenta prohlížeče je dobře definovaná a nemůže bránit fungování hlavní aplikace, takže se nemusíte obávat.
 
-![Installing a new browser assistant](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_onboarding_safari.jpg)
+:::
 
-> On rare occasions, a browser may prove incompatible with the Browser Assistant, and the user will be offered to install the legacy version instead.
+### Chytrý vstup do systému
+Při první instalaci aplikace AdGuard pro Mac se uživatel nejprve setká se vstupem do systému. Během tohoto procesu se uživatel rychle seznámí s nastavením AdGuardu a může si přizpůsobit filtrování podle svých představ. V jedné fázi AdGuard určí výchozí prohlížeč uživatele a poskytne mu odkaz ke stažení nového Asistenta.
 
-## Separate tab in settings
-The new Browser Assistant has its own tab in AdGuard for Mac settings, together with Stealth Mode, Browsing Security, Parental Control and others. Don’t worry if you missed the opportunity to install Browser Assistant during the onboarding, you'll find this option in the app's settings. Besides, there is a checkbox to enable the legacy Assistant.
+![Instalace nového Asistenta prohlížeče](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_onboarding_safari.jpg)
 
-![Browser Assistant tab](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant-separate-tab.png)
+:::note
 
-## Legacy Assistant
-Legacy Assistant is the previous version of Assistant, which is a mere userscript, not a browser extension. Basically, there are two cases when you might want to pick it instead of the new Browser Assistant: 1) the new Assistant is not available for your browser; 2) you are used to the green shield icon and want to leave things as they were.  If you recognize yourself in any of these scenarios, then the legacy version will suit you.
+V ojedinělých případech se může stát, že prohlížeč nebude s Asistentem prohlížeče kompatibilní a uživateli bude nabídnuta instalace starší verze.
 
-## How to install AdGuard Browser Assistant
-Technically, you won’t need to do it on your own: during the onboarding process AdGuard app will determine your default browser and offer to install Browser Assistant for it. Yet, if you missed that step, you can download it yourself.
+:::
 
-AdGuard Browser Assistant is available for all popular browsers: Chrome, Firefox, Safari, Edge, Opera, and Yandex. To install the Browser Assistant for your default browser, you can do it directly from the app settings, but you also have an opportunity to install it for other browsers.
+## Samostatná karta v nastavení
+Nový Asistent prohlížeče má v nastavení AdGuardu pro Mac vlastní záložku spolu s Režimem utajení, Bezpečným prohlížením, Ochranou rodiny a dalšími. Nebojte se, pokud jste na začátku nestihli nainstalovat Asistenta prohlížeče, tuto možnost najdete v nastavení aplikace. Kromě toho je zde zaškrtávací políčko pro povolení staršího asistenta.
 
-To install the one you need (or many, it is not prohibited but even encouraged), go to [our website](https://adguard.com/en/adguard-assistant/overview.html), click the browser icon and then the *Install* button. That’s it!
+![Karta Asistenta prohlížeče](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant-separate-tab.png)
+
+## Starý Asistent
+Starý Asistent je předchozí verze Asistenta, která je pouhým uživatelským skriptem, nikoli rozšířením prohlížeče. V zásadě existují dva případy, kdy jej budete chtít zvolit namísto nového Asistenta prohlížeče: 1) nový Asistent není pro váš prohlížeč k dispozici; 2) jste zvyklí na ikonu zeleného štítu a chcete ponechat vše při starém.  Pokud se v některém z těchto scénářů poznáváte, bude vám starší verze vyhovovat.
+
+## Jak nainstalovat Asistenta prohlížeče AdGuard
+Technicky vzato to nemusíte dělat sami: aplikace AdGuard během zaváděcího procesu určí váš výchozí prohlížeč a nabídne vám, že pro něj nainstaluje Asistenta prohlížeče. Pokud jste tento krok vynechali, můžete si jej stáhnout sami.
+
+Asistent prohlížeče AdGuard je k dispozici pro všechny oblíbené prohlížeče: Chrome, Firefox, Safari, Edge, Opera a Yandex. Chcete-li nainstalovat Asistenta prohlížeče pro svůj výchozí prohlížeč, můžete to provést přímo v nastavení aplikace, ale máte také možnost nainstalovat jej pro jiné prohlížeče.
+
+Chcete-li si nainstalovat ten, který potřebujete (nebo více, není to zakázáno, ale ani doporučeno), přejděte na [naše webové stránky](https://adguard.com/en/adguard-assistant/overview.html), klikněte na ikonu prohlížeče a poté na tlačítko *Nainstalovat*. To je vše!

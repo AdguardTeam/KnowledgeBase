@@ -3,7 +3,13 @@ title: Features overview
 sidebar_position: 1
 ---
 
-AdGuard for Windows is an easy-to-use tool that blocks annoying banners, pop-ups, video ads and trackers. But that's not all: it helps you save traffic, load web pages faster, and guard your computer from undesirable and potentially malicious content. AdGuard can also protect you from phishing sites, and your children — from information they shouldn't be exposed to due to age restrictions.
+:::info
+
+This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
+AdGuard for Windows is an easy-to-use tool that blocks annoying banners, popups, video ads, and trackers. But that's not all: it helps you save traffic, load web pages faster, and protect your computer from undesirable and potentially malicious websites. AdGuard also protects you from phishing websites and keeps your kids away from inappropriate content.
 
 ## Home screen
 
@@ -23,7 +29,7 @@ Here you can set the language and theme (Dark or Light), enable AdGuard launchin
 
 ![Advanced Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/advanced-settings.png)
 
-At the very bottom of the screen you will find *Advanced Settings*. Changing some of them mindlessly may potentially cause problems with AdGuard's performance, break the Internet connection or compromise your security and privacy. That's why we suggest you open this section only if you are sure of what you are doing or our support team has asked you about it. If you want to understend what can be set up in *Advanced Setting* read the [dedicated article](../solving-problems/low-level-settings).
+At the very bottom of the screen you will find *Advanced Settings*. Changing some of them mindlessly may potentially cause problems with AdGuard's performance, break the Internet connection or compromise your security and privacy. That's why we suggest you open this section only if you are sure of what you are doing or our support team has asked you about it. If you want to know what can be set up in *Advanced Setting* read the [dedicated article](../solving-problems/low-level-settings).
 
 ### Ad Blocker
 

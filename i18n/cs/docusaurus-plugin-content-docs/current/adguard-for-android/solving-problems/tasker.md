@@ -3,13 +3,19 @@ title: Jak automatizovat AdGuard pro Android
 sidebar_position: 3
 ---
 
+:::info
+
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 Mnoho lidí si vybírá systém Android, protože si rádi přizpůsobují nastavení a chtějí mít své zařízení zcela pod kontrolou. A je zcela normální, že někteří uživatelé AdGuardu nejsou spokojeni s jeho výchozím chováním. Řekněme, že chcete, aby se ochrana při spuštění určité aplikace zastavila a po jejím zavření se znovu spustila. Toto je úkol pro aplikaci Tasker.
 
 ## Rozhraní AdGuardu
 
 Existuje mnoho aplikací Tasker, např. [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&noprocess), [AutomateIt](https://play.google.com/store/apps/details?id=AutomateIt.mainPackage&noprocess) atd. AdGuard poskytuje rozhraní, které těmto aplikacím umožňuje nastavit různá automatizační pravidla.
 
-![AdGuard Automation *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/tasker/adgautomation.png)
+![Automatizace AdGuardu *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/tasker/adgautomation.png)
 
 Díky tomuto rozhraní může každá aplikace odeslat speciální zprávu (tzv. "záměr"), která obsahuje název akce a případně další údaje. AdGuard se na tento záměr podívá a provede požadované akce.
 
@@ -43,83 +49,92 @@ Jste připraveni zašpinit si ruce? Zde jsou uvedeny akce, kterým bude AdGuard 
  `server:adguard dns` přepne na server AdGuard DNS;
 > Poznámka: úplný seznam podporovaných názvů poskytovatelů naleznete v nastavení AdGuard DNS v části "Vlastní nastavení DNS"
 
- `server:custom` switches to the previously added server named `custom`;
+ `server:custom` přepne na dříve přidaný server s názvem `custom`;
 
- `server:tls://dns.adguard.com` creates a new server and switches to it if the previously added servers and providers don't contain a server with the same address. Otherwise, it switches to the respective server. You can add server addresses as IP ( regular DNS), `sdns://…` (DNSCrypt or DNS-over-HTTPS), `https://…` (DNS-over-HTTPS) or  `tls://...` (DNS-over-TLS);
+ `server:tls://dns.adguard.com` vytvoří nový server a přepne na něj, pokud dříve přidané servery a poskytovatelé neobsahují server se stejnou adresou. V opačném případě přepne na příslušný server. Adresy serverů můžete přidat jako IP (obvyklý DNS), `sdns://…` (DNSCrypt nebo DNS-over-HTTPS), `https://…` (DNS-over-HTTPS) nebo  `tls://...` (DNS-over-TLS);
 
- `server:1.1.1.1, tls://1.1.1.1` creates a server with comma separated addresses and switches to it. When adding a server via `server:1.1.1.1, tls://1.1.1.1`, the previously added server is removed.
+ `server:1.1.1.1, tls://1.1.1.1` vytvoří server s adresami oddělenými čárkou a přepne se na něj. Při přidávání serveru prostřednictvím `server:1.1.1.1, tls://1.1.1.1`, je dříve přidaný server odebrán.
 
- `server:system` resets DNS settings to default system DNS servers.
+ `server:system` obnoví nastavení DNS na výchozí systémové DNS servery.
 
  -----
 
 
 
-`proxy_state` enables/disables the outbound proxy.  Vyžaduje příznak navíc:
+`proxy_state` zapíná/vypíná odchozí proxy.  Vyžaduje příznak navíc:
 
-`enable:true` or `enable:false` activates or deactivates the outbound proxy, accordingly.
+`enable:true` nebo `enable:false` aktivuje nebo deaktivuje odchozí proxy.
 
 -----
 
 
-`proxy_default` sets the proxy from the list of previously added ones as default or creates a new one if server has not been added before.
+`proxy_default` nastaví proxy ze seznamu dříve přidaných jako výchozí nebo vytvoří nový, pokud server nebyl přidán dříve.
 
-You need to specify additional data:
+Musíte zadat další údaje:
 
-`server:[name]` where `[name]` is the name of the outbound proxy from the list.
+`server:[name]` kde `[name]` je název odchozího proxy ze seznamu.
 
-Or you can configure server parameters manually:
-
-`server:[type=…&host=…&port=…&username=…&password=…&udp=…&trust=…]`.
-
-`proxy_remove` removes the proxy server from the list of previously added ones.
-
-`server:[name]` where `[name]` is the name of the outbound proxy from the list.
-
-Or you  can configure remove parameters manually:
+Nebo můžete parametry serveru nakonfigurovat ručně:
 
 `server:[type=…&host=…&port=…&username=…&password=…&udp=…&trust=…]`.
 
-* **Compulsory parameters**:
+`proxy_remove` odstraní proxy server ze seznamu dříve přidaných serverů.
 
-`[type]` — proxy server type:
+`server:[name]` kde `[name]` je název odchozího proxy ze seznamu.
+
+Nebo můžete parametry odebrání nakonfigurovat ručně:
+
+`server:[type=…&host=…&port=…&username=…&password=…&udp=…&trust=…]`.
+
+* **Povinné parametry**:
+
+`[type]` — typ proxy:
 - HTTP;
 - SOCKS4;
 - SOCKS5;
 - HTTPS_CONNECT.
 
-`[host]` — outbound proxy domain or IP address;
+`[host]` — doména nebo IP adresa odchozího proxy;
 
-`[port]` — outbound proxy port (integer number from 1 to 65535);
+`[port]` — odchozí port proxy (celé číslo od 1 do 65535);
 
-* **Optional parameters**:
+* **Volitelné parametry**:
 
- `[login and password]` — only if proxy requires it. This data is ignored when setting up **SOCKS4**;
+ `[přihlášení a heslo]` — pouze v případě, že to vyžaduje proxy. Tyto údaje jsou při nastavování **SOCKS4** ignorovány;
 
- `[udp]` applied only on **SOCKS5** server type and include option **UDP through SOCKS5**. It is necessary to set **true or false** value;
+ `[udp]` použít pouze na typ serveru **SOCKS5** a zahrnout možnost **UDP skrze SOCKS5**. Je nutné nastavit hodnotu **true nebo false**;
 
- `[trust]` applies for **HTTPS_CONNECT** server type only and include option **Trust any certificates**. It is necessary to set **true or false** value.
+ `[trust]` použít pouze na typ serveru ** HTTPS_CONNECT** a zahrnout možnost **Důvěřovat všem certifikátům**. Je nutné nastavit hodnotu **true nebo false**.
 
- > **Example**:
+:::note Příklad
 
-`setting by name`: server:MyServer
+`nastavení podle názvu`: server:MůjServer
 
- `manually settings`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
+ `ruční nastavení`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
+
+
+:::
 
 -----
 
-**Don't forget to include the password as an extra and mention package name and class! You need to do so for every intent!**
+**Nezapomeňte uvést heslo jako dodatek a zmínit název balíčku a třídy! Musíte tak učinit pro každý záměr!**
 
-Extra: `password:*******`
+Dodatek: `password:*******`
 
-Package name: `com.adguard.android`
+Název balíčku: `com.adguard.android`
 
-Class: `com.adguard.android.receivers.AutomationReceiver`
+Třída: `com.adguard.android.receiver.AutomationReceiver`
 
-### Execution without notification
+:::note
 
-To perform a task without showing a toast, add an additional EXTRA `quiet: true`
+Před verzí 4.0 se třída jmenovala `com.adguard.android.receivers.AutomationReceiver`, ale pak jsme její název změnili na `com.adguard.android.receiver.AutomationReceiver`. Pokud jste tuto funkci používali, věnujte jí pozornost a používejte nový název.
 
-### Example
+:::
 
-![Automation *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/tasker/automation2.png)
+### Provedení bez oznámení
+
+Chcete-li provést úkol bez zobrazení informační zprávy, přidejte další DOPLŇEK `quiet: true`
+
+### Příklad
+
+![Automatizace *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/tasker/automation2.png)

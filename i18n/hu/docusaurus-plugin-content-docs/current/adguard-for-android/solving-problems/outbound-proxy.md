@@ -3,11 +3,17 @@ title: How to setup outbound proxy
 sidebar_position: 8
 ---
 
+:::info
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 This article explains how to set up some of the most popular proxies to work with AdGuard.
 
 ### How to use AdGuard with Tor
 
-1. Open AdGuard and go to **Settings** > **Network** > **Proxy settings**. Download "Orbot: Proxy with Tor" by tapping **Integrate with Tor** or directly from [Google Play](https://play.google.com/store/apps/details?id=org.torproject.android&noprocess).
+1. Open AdGuard and go to **Settings** → **Network** → **Proxy settings**. Download "Orbot: Proxy with Tor" by tapping **Integrate with Tor** or directly from [Google Play](https://play.google.com/store/apps/details?id=org.torproject.android&noprocess).
 
 2. Open Orbot and press the **Start** button on the application's main screen.
 
@@ -27,13 +33,13 @@ Or you can tap **Add proxy**, enter these values manually, and set Orbot as a de
 
 5. Enable AdGuard protection.
 
-> Now AdGuard will forward all traffic through Orbot. If you disable Orbot, Internet connection will be unavailable until you disable outbound proxy settings in AdGuard.
+Now AdGuard will forward all traffic through Orbot. If you disable Orbot, Internet connection will be unavailable until you disable outbound proxy settings in AdGuard.
 
 ### How to use AdGuard with PIA (Private Internet Access)
 
 *Here we presume that you are already a PIA VPN client and have it installed on your device.*
 
-1. Open AdGuard and go to **Settings** > **Network** > **Proxy settings**.
+1. Open AdGuard and go to **Settings** → **Network** → **Proxy settings**.
 
 2. Tap the **Add proxy server** button and enter the following data:
 
@@ -53,7 +59,7 @@ Or you can tap **Add proxy**, enter these values manually, and set Orbot as a de
 
 *Here we presume that you are already a TorGuard client and have it installed on your device.*
 
-1. Open AdGuard and go to **Settings** > **Network** > **Proxy settings**.
+1. Open AdGuard and go to **Settings** → **Network** → **Proxy settings**.
 
 2. Tap the **Add proxy server** button and enter the following data:
 
@@ -71,7 +77,7 @@ Or you can tap **Add proxy**, enter these values manually, and set Orbot as a de
 
 ### How to use AdGuard with NordVPN
 
-1. Open AdGuard and go to **Settings** > **Network** > **Proxy settings**.
+1. Open AdGuard and go to **Settings** → **Network** → **Proxy settings**.
 
 2. Tap the **Add proxy server** button and enter the following data:
 
@@ -93,7 +99,7 @@ Or you can tap **Add proxy**, enter these values manually, and set Orbot as a de
 
 **Note: You should remove Shadowsocks application from filtering before setting up the process (AdGuard - Apps management - Shadowsocks - Disable AdGuard protection) to avoid infinite loops and drops.**
 
-1. Open AdGuard and go to  **Settings** > **Network** > **Proxy settings**.
+1. Open AdGuard and go to **Settings** → **Network** → **Proxy settings**.
 
 2. Tap the **Add proxy server** and fill the fields:
 

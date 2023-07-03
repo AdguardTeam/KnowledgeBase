@@ -1,81 +1,100 @@
 ---
-title: Features overview
+title: Přehled funkcí
 sidebar_position: 1
 ---
 
-AdGuard for Safari was designed to conform to Apple's restrictions for ad blocking browser extensions and is the most popupar ad blocker for Safari. Although it can’t be compared to our desktop ad blocking apps, it's free and can protect you from ads, trackers, phishing, and malicious websites.
+:::info
+
+Tento článek je o AdGuardu pro Safari, který chrání pouze váš prohlížeč Safari. Chcete-li chránit celé zařízení, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
+AdGuard pro Safari byl navržen tak, aby splňoval omezení společnosti Apple pro rozšíření prohlížeče pro blokování reklam a je nejpoužívanějším blokátorem reklam pro Safari. Přestože se nedá srovnávat s našimi aplikacemi pro blokování reklam na počítači, je zdarma a dokáže vás ochránit před reklamami, slídiči, phishingem a škodlivými webovými stránkami.
 
 ## Obecné {#general}
 
 ![General tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/General.png)
 
-The first tab is the General screen where you can set up basic things like notifications, update intervals, and launching AdGuard at system startup. You can also choose to display the AdGuard icon in the menu bar. There you can also turn on [content blockers](#contentblockers) to block ads, trackers, annoyances, etc.
+První karta je obrazovka Obecné, kde můžete nastavit základní věci, jako jsou oznámení, intervaly aktualizací a spouštění AdGuardu při spuštění systému. Můžete také zvolit zobrazení ikony AdGuardu v panelu nabídek. Můžete také zapnout [blokátory obsahu](#contentblockers) pro blokování reklam, slídičů, obtěžování atd.
 
-## Filters {#filters}
+## Filtry {#filters}
 
 ![Filters tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/Filters.png)
 
-A filter is a list of rules written in a special syntax. Following these rules, content blockers can filter web traffic: block ads or requests to malicious websites.
+Filtr je seznam pravidel zapsaný ve speciální syntaxi. Podle těchto pravidel mohou blokátory obsahu filtrovat provoz webu: blokovat reklamy nebo požadavky na škodlivé webové stránky.
 
-Filters are combined into eight thematic categories: *Ad Blocking, Privacy, Social widgets, Annoyances, Security, Language-specific filters, Custom, and Other filters*.
-> Read more about [AdGuard filters](/general/ad-filtering/adguard-filters) or [ad filtering in general](/general/ad-filtering/how-ad-blocking-works).
+Filtry jsou sdruženy do osmi tematických kategorií: *Blokování reklam, Ochrana soukromí, Widgety sociálních sítí, Obtěžování, Zabezpečení, Jazykově specifické filtry, Vlastní a Ostatní filtry.*.
 
-In the Filters tab, you can enable the whole category or separate filters. Changes in the Filters tab are reflected in the Content Blockers section (located in the General tab).
+Více informací o [filtrech AdGuardu](/general/ad-filtering/adguard-filters) nebo [filtrování reklam obecně](/general/ad-filtering/how-ad-blocking-works).
 
-## Content blockers {#contentblockers}
+Na kartě Filtry můžete povolit celou kategorii nebo jednotlivé filtry. Změny na kartě Filtry se projeví v části Blokátory obsahu (na kartě Obecné).
+
+## Blokátory obsahu {#contentblockers}
 
 ![Content blockers tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/Contentblockers.png)
 
-A content blocker is a thematic cluster of filters. Privacy-related filters are included in the content blocker with the corresponding name — *AdGuard Privacy*.
+Blokátor obsahu je tematická skupina filtrů. Filtry související s ochranou soukromí jsou zahrnuty do blokování obsahu pod odpovídajícím názvem — *AdGuard Privacy*.
 
-Content Blockers were designed for two reasons: to structure filters and to conform to Apple’s restrictions.
+Blokátory obsahu byly navrženy ze dvou důvodů: pro strukturování filtrů a pro splnění omezení společnosti Apple.
 
-[In 2019](https://adguard.com/en/blog/adguard-safari-1-5.html), Apple put limitations on ad blockers for Safari, allowing them to use only 50,000 filtering rules simultaneously. As this number was not enough for an ad blocker to provide a good filtering quality (AdGuard Base Filter alone has 30,000 filtering rules), we divided AdGuard for Safari into six content blockers each containing up to 50,000 rules.
+[V roce 2019](https://adguard.com/en/blog/adguard-safari-1-5.html), společnost Apple zavedla omezení pro blokátory reklam v Safari, které umožňují používat současně pouze 50 000 pravidel filtrování. Protože tento počet nestačí k tomu, aby blokátor reklamy poskytoval dobrou kvalitu filtrování (samotný AdGuard Base Filter má 30 000 pravidel filtrování), rozdělili jsme AdGuard pro Safari do šesti blokátorů obsahu, z nichž každý obsahuje až 50 000 pravidel.
 
-[In 2022](https://adguard.com/en/blog/adguard-for-safari-1-11.html), Apple increased the filtering rule limit for each content blocker to 150,000 rules applied simultaneously. Regarding AdGuard for Safari, up to 900,000 rules can be enabled for all six content blockers.
+[V roce 2022](https://adguard.com/en/blog/adguard-for-safari-1-11.html), společnost Apple zvýšila limit pravidel filtrování pro každý blokátor obsahu na 150 000 pravidel použitých současně. Pokud jde o AdGuard pro Safari, lze povolit až 900 000 pravidel pro všech šest blokátorů obsahu.
 
-Whereas the limit has been increased, the structure of content blockers has remained the same.
+Zatímco limit byl zvýšen, struktura blokátorů obsahu zůstala stejná.
 
-In the Content blockers tab, you can see which content blockers are enabled, how many rules each of them is using, and which filters are functioning.
+Na kartě Blokátory obsahu můžete vidět, které blokátory obsahu jsou povoleny, kolik pravidel každý z nich používá a které filtry fungují.
 
-> You can manage enabled filters in the Filters tab. In the Content blockers section, you can only see the list of already enabled filters.
+:::tip
 
-### AdGuard General {#adguard_general}
+Povolené filtry můžete spravovat na kartě Filtry. V části Blokátory obsahu se zobrazuje pouze seznam již povolených filtrů.
 
-*AdGuard General* is a content blocker that combines the most essential filters for blocking ads. We recommend keeping the AdGuard Base Filter always enabled.
+:::
 
-### AdGuard Privacy {#adguard_privacy}
+### AdGuard – General {#adguard_general}
 
-This content blocker is the main tool against counters and other web analytics tools. The *AdGuard Tracking Protection filter* is enabled by default.
+*AdGuard – General* je blokátor obsahu, který kombinuje nejdůležitější filtry pro blokování reklam. Doporučujeme ponechat základní filtr AdGuardu vždy zapnutý.
 
-### AdGuard Social {#adguard_social}
+### AdGuard – Privacy {#adguard_privacy}
 
-*AdGuard Social* contains filters against social media buttons, widgets, scripts, and icons. Other annoyance filters can also be found in this section: filters against pop-ups, mobile app banners, cookie notices, and more. To enable them, find *Social Widgets* in the Filters tab.
+Tento blokátor obsahu je hlavním nástrojem proti čítačům a dalším nástrojům webové analytiky. Ve výchozím nastavení je povolen filtr *AdGuard ochrana sledování*.
 
-### AdGuard Security {#adguard_security}
+### AdGuard – Social {#adguard_social}
 
-This content blocker unites several security-related filters. *Malware Domains Blocklist* blocks domains that are notorious for spreading malware and spyware. *Spam404* protects you from Internet fraudsters. *NoCoin Filter List* disrupts browser-based cryptominers, such as Coinhive.
+*AdGuard – Social* obsahuje filtry proti tlačítkům, widgetům, skriptům a ikonám sociálních médií. V této části najdete také další filtry proti obtěžování: filtry proti vyskakovacím oknům, bannerům mobilních aplikací, upozorněním na soubory cookies a další. Chcete-li to povolit, najděte na kartě Filtry stránku *Widgety sociálních sítí*.
 
-### AdGuard Other {#adguard_other}
+### AdGuard – Security {#adguard_security}
 
-*AdGuard Other* contains filters with various functions. For example, it has a filter that unblocks search ads and self-promo ads. In some cases, it helps find exactly what you are looking for, because these kinds of ads are more relevant and less intrusive than others.
+Tento blokátor obsahu spojuje několik filtrů souvisejících se zabezpečením. *Blokování domén s malwarem* blokuje domény, které jsou známé šířením malwaru a spywaru. *Spam404* vás chrání před podvodníky a internetu. *NoCoin Filter List* blokuje těžbu kryptoměn v prohlížeči, například Coinhive.
 
-> Disclaimer: we don’t have any ‘acceptable ads’ paid by advertisers. Instead, we provide users with an option to see [search ads and websites' self-promotion](/general/ad-filtering/search-ads).
+### AdGuard – Other {#adguard_other}
 
-### AdGuard Custom {#adguard_custom}
+*AdGuard – Other* obsahuje filtry s různými funkcemi. Má například filtr, který odblokovává reklamy ve vyhledávání a sebepropagaci. V některých případech pomáhá najít přesně to, co hledáte, protože tyto druhy reklam jsou relevantnější a méně vtíravé než jiné.
+
+::::::note Odmítnutí odpovědnosti
+
+Nemáme žádné "přijatelné reklamy" placené inzerenty. Místo toho uživatelům poskytujeme možnost vidět [reklamy ve vyhledávání a sebepropagaci](/general/ad-filtering/search-ads).
+
+:::
+
+### AdGuard – Custom {#adguard_custom}
 
 ![Custom tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/AGCustom.png)
 
-If you need more filters, you can add them to *AdGuard Custom*. To add a custom filter, enter a URL or a local file path in the relevant field. You can find new filters at [filterlists.com](https://filterlists.com/).
+Pokud potřebujete další filtry, můžete je přidat do sekce *AdGuard – Custom*. Pro přidání vlastního filtru zadejte do příslušného pole adresu URL nebo cestu k místnímu souboru. Nové filtry najdete na [filterlists.com](https://filterlists.com/).
 
-## User rules {#userrules}
+## Uživatelská pravidla {#userrules}
 
-User rules can be used to customize ad blocking. They can be added manually, imported, or created automatically when you block an element on the page. To add your own filering rules, use a [special syntax](/general/ad-filtering/create-own-filters).
+K přizpůsobení blokování reklam lze použít uživatelská pravidla. Lze je přidat ručně, importovat nebo vytvořit automaticky při zablokování prvku na stránce. Chcete-li přidat vlastní pravidla, použijte [speciální syntaxi](/general/ad-filtering/create-own-filters).
 
 ## Informace {#about}
 
 ![About tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/About.png)
 
-In the About tab, you can see info about the current version of your product and links to legal documents. There is also a link to our repository on GitHub. You can monitor the product development, create feature requests and report bugs there.
+Na kartě O produktu se zobrazují informace o aktuální verzi produktu a odkazy na právní dokumenty. Je zde také odkaz na náš repozitář na GitHubu. Můžete zde sledovat vývoj produktu, vytvářet požadavky na funkce a hlásit chyby.
 
-> Reminder: AdGuard for Safari can be downloaded for free [from the App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259). A detailed setup instruction is available in the [Knowledge base](../installation).
+:::note Připomínka
+
+AdGuard pro Safari lze zdarma stáhnout [z App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259). Podrobný návod k nastavení je k dispozici ve [znalostní databázi](../installation).
+
+:::

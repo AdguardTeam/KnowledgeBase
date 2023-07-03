@@ -105,9 +105,9 @@ Toto je seznam knihoven a dalších zdrojů, které nám skutečně pomohly při
 * BoringSSL: [https://github.com/google/boringssl/blob/master/LICENSE](https://github.com/google/boringssl/blob/master/LICENSE)
 * brotli: [https://github.com/google/brotli/blob/master/LICENSE](https://github.com/google/brotli/blob/master/LICENSE)
 * Chromium: [https://github.com/chromium/chromium/blob/master/LICENSE](https://github.com/chromium/chromium/blob/master/LICENSE)
-* Detours: [https://github.com/microsoft/Detours/blob/master/LICENSE](https://github.com/microsoft/Detours/blob/master/LICENSE)
+* Detours: [https://github.com/microsoft/Detours/blob/main/LICENSE.md](https://github.com/microsoft/Detours/blob/main/LICENSE.md)
 * eDistantObject: [https://github.com/google/eDistantObject/blob/master/LICENSE](https://github.com/google/eDistantObject/blob/master/LICENSE)
-* FF/FFOS libs by Simon Zolin: [https://github.com/stsaz/ff/blob/master/README](https://github.com/stsaz/ff/blob/master/README)
+* FF/FFOS libs by Simon Zolin: [https://github.com/stsaz/ffbase/blob/master/README.md](https://github.com/stsaz/ffbase/blob/master/README.md)
 * Google test: [https://github.com/google/googletest/blob/master/LICENSE](https://github.com/google/googletest/blob/master/LICENSE)
 * http-parser: [https://github.com/nodejs/http-parser/blob/master/LICENSE-MIT](https://github.com/nodejs/http-parser/blob/master/LICENSE-MIT)
 * jsmn: [https://github.com/zserge/jsmn/blob/master/LICENSE](https://github.com/zserge/jsmn/blob/master/LICENSE)
@@ -147,7 +147,7 @@ Obrovský dík a vděčnost patří také všem beta testerům a dalším zapoje
 * krystian3w — velmi aktivní přispěvatel filtrů
 * lancelot.moon — překladatel a korektor tradiční čínštiny, beta tester
 * Lord Ami — beta tester, aktivní člen fóra AdGuard
-* Lukas Novotny (novas78) — translator and proofreader to Czech in Crowdin
+* Lukas Novotny (novas78) — překladatel a korektor češtiny
 * malware1 — beta tester, aktivní člen fóra AdGuard
 * milder — beta tester, aktivní člen fóra AdGuard
 * Nicos18 — beta tester, aktivní člen fóra AdGuard
