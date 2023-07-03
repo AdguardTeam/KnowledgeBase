@@ -561,7 +561,7 @@ If there is a `$~third-party` modifier, the rule is only applied to the requests
 
 :::info Compatibility
 
-Rules with the `$to` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.12 or later**.
+Rules with the `$to` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs v1.12 or later**, and AdGuard Browser Extension, **running TSUrlFilter v2.1.3 or later**.
 
 :::
 
