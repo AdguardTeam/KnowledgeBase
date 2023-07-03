@@ -22,7 +22,7 @@ To collect **debug** log and send it to us you need to perform following steps:
 
 or to act more effective
 
-4. Wait a while, then return to the *Advanced* screen and export logs via *Export logs and system info*. Then report a bug on GitHub by following these [instructions](../guides/repor-bugs.md).
+4. Wait a while, then return to the *Advanced* screen and export logs via *Export logs and system info*. Then report a bug on GitHub by following these [instructions](/guides/report-bugs.md).
 5. After creating an issue on GitHub send the log file to devteam@adguard.com. Specify the time of the error and attach a link to your issue or its number (it appears as #number next to the title).
 Alternatively, you can upload the log file to Google Drive and share it with devteam@adguard.com. Attach the file link to your GitHub issue.
 
