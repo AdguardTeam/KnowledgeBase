@@ -39,7 +39,7 @@ After a moment, you will see a notification that the bug report is ready (see Fi
 
 ::: note
 
-Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
 
 :::
 
@@ -104,6 +104,6 @@ Email the created `txt` file as well as the time the problem was reproduced (fro
 
 ::: note
 
-Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
 
 :::
