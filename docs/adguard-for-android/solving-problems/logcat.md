@@ -9,7 +9,7 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 :::
 
-Sometimes a regular log may not be enough to identify the origin of the problem. In such cases a system log is needed. Below is the instruction how to collect and get it: via Developer options and Logcat. 
+Sometimes a regular log may not be sufficient to identify the origin of the problem. In such cases a system log is needed. Below are instructions on how to collect and get it: via Developer options and Logcat. 
 
 ## Capture a bug report from a device
 
@@ -88,7 +88,7 @@ An example of a successful result:
 
 `adb logcat -v threadtime -d > C:\Program Files\platform-tools\logs.txt` 
 
-Email the created `txt` file as well as problem reproduction time (from part #2) to our support team at support@adguard.com.
+Email the created `txt` file as well as the time the problem was reproduced (from part #2) to our support team at support@adguard.com.
 
 ### Alternative way for ROOT users:
 
