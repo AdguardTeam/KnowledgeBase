@@ -20,7 +20,7 @@ Sometimes we need to analyze it to block specific ads that are difficult to repr
 4. Open the app and perform the necessary actions to reproduce the problem.
 5. Turn **Capture HAR** off.
 6. Go back to **Advanced**.
-7. Tap **Export logs and system info**, then tap **Allow** (if necessary) and **Save**.
+7. Tap **Export logs and system info** → **Allow** (if necessary) → **Save**.
 
 **Please send the file with logs (that you've got as a result) to the AdGuard support service.**
 
