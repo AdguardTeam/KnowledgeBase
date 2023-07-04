@@ -5,7 +5,7 @@ sidebar_position: 4
 
 :::info
 
-This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, first-hand [download the AdGuard app](https://adguard.com/download.html?auto=true)
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, firsthand [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
 :::
 
@@ -23,7 +23,11 @@ To get a bug report directly from your device, do the following:
 
 3. Select the type of the bug report you want and tap **Report**. 
 
-> After a moment you get a notification that the bug report is ready (see figure 2).
+::: note
+
+After a moment, you will see a notification that the bug report is ready (see Figure 2).
+
+:::
 
 ![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
 
@@ -33,7 +37,11 @@ To get a bug report directly from your device, do the following:
 
 5. Send this log to our support team.
 
-> Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+::: note
+
+Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+
+:::
 
 ## Capture a bug report via Logcat
 
@@ -56,19 +64,19 @@ Follow this instruction:
 
 **Part #2: reproduce the problem**
 
-It is important to reproduce the problem after you're done with the part #1.
+It is important to reproduce the problem after you're done with the first part.
 
 1. Reproduce the problem.
 
-2. Remember/write down the date/time of reproduction and specify it in the email to our support later.
+2. Remember/write down the date and time of reproduction and include it in the email to our support later.
 
 **Part #3: get the log**
 
 1. Connect your device to a PC with a USB cable.
 
-2. Download [Android SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools#downloads). Choose the appropriate download link for your OS from the Downloads section. Once you click the link, a ZIP file will be downloaded. You can extract the ADB (Android Debug Bridge) files from the ZIP file and store them wherever you want.
+2. Download [Android SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools#downloads). Choose the appropriate download link for your OS from the Downloads section. Once you tap the link, a ZIP file will be downloaded. You can extract the ADB (Android Debug Bridge) files from the ZIP file and store them wherever you want.
 
-3. Test whether ADB is working properly: connect your Android device to your computer using a USB cable, open the Command Prompt, PowerShell or Terminal  and run the following command:
+3. Test whether ADB is working properly: connect your Android device to your computer using a USB cable, open the Command Prompt, PowerShell or Terminal and run the following command:
 
 `adb devices`
 
@@ -94,4 +102,8 @@ Email the created `txt` file as well as problem reproduction time (from part #2)
 
 5. Send this log to our support team.
 
-> Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+::: note
+
+Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+
+:::
