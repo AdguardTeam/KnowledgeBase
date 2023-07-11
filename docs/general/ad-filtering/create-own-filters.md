@@ -445,9 +445,15 @@ The modifier `":" h_value` part may be omitted. In that case the modifier matche
 * `@@||example.com^$header=set-cookie:/foo\, bar\$/` unblocks requests whose responses have the `Set-Cookie` header with value matching the `foo, bar$` regular expression.
 * `@@||example.com^$header=set-cookie` unblocks requests whose responses have a `Set-Cookie` header with any value.
 
+:::caution Limitations
+
+In Adguard Browser Extension, [`$header`](#header-modifier) modifier is only compatible with [`$csp`](#csp-modifier) and [`$removeheader`](#removeheader-modifier) advanced modifiers. Rules that use [`$header`](#header-modifier) modifier with one of these, are subject to allowlisting logic of advanced modifiers.
+
+:::
+
 :::info Compatibility
 
-Rules with the `$header` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**.
+Rules with the `$header` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**, and AdGuard Browser Extension, **running TSUrlFilter vX.X.X or later**.
 
 :::
 
