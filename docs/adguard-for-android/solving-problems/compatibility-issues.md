@@ -28,11 +28,7 @@ Please note that on Android 10 and later devices, the 'manual' HTTP proxy mode i
 
 The Private DNS feature was introduced in Android Pie. Before version Q, Private DNS didn't break AdGuard DNS filtering logic and the DNS forwarding through AdGuard worked normally. But starting from version Q, the presence of Private DNS forces apps to redirect traffic through the system resolver instead of AdGuard. See Android [devs blog](https://android-developers.googleblog.com/2018/04/dns-over-tls-support-in-android-p.html) for more details.
 
-:::tip
-
-To solve the problem with Private DNS, use the `$network` rule
-
-:::
+* To solve the problem with Private DNS, use the `$network` rule
 
 Some device manufacturers keep Private DNS settings hidden and set 'Automatic' mode as a default one. Thus, disabling Private DNS is impossible but we can make the system think that the upstream is not valid by blocking it with a `$network` rule. For instance, if the system uses Google DNS by default, we can add rules `|8.8.4.4^$network` and `|8.8.8.8^$network` to block Google DNS.
 
@@ -42,11 +38,7 @@ Some device manufacturers keep Private DNS settings hidden and set 'Automatic' m
 
 To be able to filter HTTPS traffic, AdGuard requires the user to add a certificate to the device's trusted user certificates. Unfortunately, UC-family browsers don't trust user certificates, so AdGuard cannot perform HTTPS filtering there.
 
-:::tip
-
-To solve this problem, move the certificate to the system certificate store
-
-:::
+* To solve this problem, move the certificate to the system certificate store
 
 :::caution
 
@@ -58,11 +50,7 @@ Requires root access.
 
 AdGuard cannot filter its traffic when operating in **Manual proxy mode** because this browser ignores system proxy settings.
 
-:::tip
-
-Use the **Local VPN** filtering mode to solve this problem
-
-:::
+* Use the **Local VPN** filtering mode to solve this problem
 
 ### Opera mini: Opera mini, Opera mini with Yandex
 
