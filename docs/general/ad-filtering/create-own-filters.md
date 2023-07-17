@@ -2210,11 +2210,11 @@ Rule weight: base weight + allowed content type, [category 2](#priority-category
 Rule weight: base weight + allowed content types, [category 2](#priority-category-2):
 `1 + (50 + 50/12) = 55`.
 
-# Non-basic rules
+## Non-basic rules
 
 However, the capabilities of the basic rules may not be sufficient to block ads. Sometimes you need to hide an element or change part of the HTML code of a web page without breaking anything. The rules described in this section are created specifically for this purpose.
 
-## Cosmetic rules {#cosmetic-rules}
+### Cosmetic rules {#cosmetic-rules}
 
 :::info
 
