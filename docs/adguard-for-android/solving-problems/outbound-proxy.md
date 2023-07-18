@@ -27,11 +27,11 @@ In this article we give examples of how to set up some of the most popular proxi
 
 5. All the required fields will be pre-filled:
 
-Field      |  Value
--------    | ---------
-Proxy type | *SOCKS4* or *SOCKS5*
-Proxy host | *127.0.0.1*
-Proxy port | *9050*
+    Field      |  Value
+    -------    | ---------
+    Proxy type | *SOCKS4* or *SOCKS5*
+    Proxy host | *127.0.0.1*
+    Proxy port | *9050*
 
 Or you can tap **Proxy server** → **Add proxy server**, enter these values manually, and set Orbot as a default proxy.
 
@@ -47,11 +47,11 @@ Now AdGuard will forward all traffic through Orbot. If you disable Orbot, Intern
 
 2. Tap the **Add proxy server** button and enter the following data:
 
-Field      |  Value
--------    | ---------
-Proxy type | *SOCKS5*
-Proxy host | *proxy-nl.privateinternetaccess.com*
-Proxy port | *1080*
+    Field      |  Value
+    -------    | ---------
+    Proxy type | *SOCKS5*
+    Proxy host | *proxy-nl.privateinternetaccess.com*
+    Proxy port | *1080*
 
 3. You also need to fill out the **Username/Password** fields. To do so, log in to the [Client Control Panel](https://www.privateinternetaccess.com/pages/client-sign-in) on the PIA website. Click the **Generate Password** button under the **Generate PPTP/L2TP/SOCKS Password** section. A username starting with "x" and a random password will be shown. Use them to fill out the **Proxy username** and **Proxy password** fields in AdGuard.
 
@@ -85,11 +85,11 @@ Proxy port | *1080*
 
 2. Tap the **Add proxy server** button and enter the following data:
 
-Field      |  Value
--------    | ---------
-Proxy type | *SOCKS5*
-Proxy host | *any server from [this list](https://support.nordvpn.com/Connectivity/Proxy/)*
-Proxy port | *1080*
+    Field      |  Value
+    -------    | ---------
+    Proxy type | *SOCKS5*
+    Proxy host | *any server from [this list](https://support.nordvpn.com/Connectivity/Proxy/)*
+    Proxy port | *1080*
 
 3. For **Username** and **Password** fields, enter your NordVPN Username and Password.
 
@@ -111,11 +111,11 @@ You should remove Shadowsocks application from filtering before setting up the p
 
 2. Tap the **Add proxy server** and fill the fields:
 
-Field      |  Value
--------    | ---------
-Proxy type | *SOCKS5*
-Proxy host | *127.0.0.1*
-Proxy port | *1080*
+    Field      |  Value
+    -------    | ---------
+    Proxy type | *SOCKS5*
+    Proxy host | *127.0.0.1*
+    Proxy port | *1080*
 
 3. Enable the main Proxy switch and AdGuard protection to route your device's traffic through the proxy.
 
