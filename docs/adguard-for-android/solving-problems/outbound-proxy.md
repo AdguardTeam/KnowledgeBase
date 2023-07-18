@@ -21,11 +21,11 @@ In this article we give examples of how to set up some of the most popular proxi
 
 2. Open Orbot and press the **Start** button on the application's main screen.
 
-2. Go back to the **Proxy** screen of AdGuard.
+3. Go back to the **Proxy** screen of AdGuard.
 
-3. Tap the **Integrate with Tor** button.
+4. Tap the **Integrate with Tor** button.
 
-4. All the required fields will be pre-filled:
+5. All the required fields will be pre-filled:
 
 Field      |  Value
 -------    | ---------
@@ -35,7 +35,7 @@ Proxy port | *9050*
 
 Or you can tap **Proxy server** → **Add proxy server**, enter these values manually, and set Orbot as a default proxy.
 
-5. Enable the main Proxy switch and AdGuard protection to route your device's traffic through the proxy.
+6. Enable the main Proxy switch and AdGuard protection to route your device's traffic through the proxy.
 
 Now AdGuard will forward all traffic through Orbot. If you disable Orbot, Internet connection will be unavailable until you disable outbound proxy settings in AdGuard.
 
@@ -67,11 +67,11 @@ Proxy port | *1080*
 
 2. Tap the **Add proxy server** button and enter the following data:
 
-Field      |  Value
--------    | ---------
-Proxy type | *SOCKS5*
-Proxy host | *proxy.torguard.org* or *proxy.torguard.io*
-Proxy port | *1080* or *1085* or *1090*
+    Field      |  Value
+    -------    | ---------
+    Proxy type | *SOCKS5*
+    Proxy host | *proxy.torguard.org* or *proxy.torguard.io*
+    Proxy port | *1080* or *1085* or *1090*
 
 3. For **Username** and **Password** fields, enter your proxy username and proxy password you have chosen at TorGuard signup.
 
@@ -117,7 +117,7 @@ Proxy type | *SOCKS5*
 Proxy host | *127.0.0.1*
 Proxy port | *1080*
 
-5. Enable the main Proxy switch and AdGuard protection to route your device's traffic through the proxy.
+3. Enable the main Proxy switch and AdGuard protection to route your device's traffic through the proxy.
 
 ## Limitations
 
