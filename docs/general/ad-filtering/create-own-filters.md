@@ -1679,11 +1679,9 @@ In case of multiple `$removeheader` rules matching a single request, we will app
 
 :::caution Restrictions
 
-This type of rules can be used [**only in trusted filters**](#trusted-filters).
+1. This type of rules can be used [**only in trusted filters**](#trusted-filters).
 
-:::
-
-In order to avoid compromising the security `$removeheader` cannot remove headers from the list below:
+2. In order to avoid compromising the security `$removeheader` cannot remove headers from the list below:
     * `access-control-allow-origin`
     * `access-control-allow-credentials`
     * `access-control-allow-headers`
@@ -1733,7 +1731,9 @@ In order to avoid compromising the security `$removeheader` cannot remove header
     * `transfer-encoding`
     * `upgrade`
 
-`$removeheader` rules are only compatible with `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and [content type modifiers](#content-type-modifiers) such as `$script` and `$stylesheet`. The rules which have any other modifiers are considered invalid and will be discarded.
+3. `$removeheader` rules are only compatible with `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and [content type modifiers](#content-type-modifiers) such as `$script` and `$stylesheet`. The rules which have any other modifiers are considered invalid and will be discarded.
+
+:::
 
 :::info Compatibility
 
