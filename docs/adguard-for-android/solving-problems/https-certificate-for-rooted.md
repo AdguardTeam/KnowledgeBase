@@ -60,7 +60,11 @@ The module does its work during the system boot. If your AdGuard certificate cha
 
 ### Bromite browser
 
-Please note that in order for **Bromite** browser to work properly, in addition to the steps mentioned above, you need to set "Allow user certificates" in `chrome://flags` to "Enabled" state.
+:::note
+
+In order for the **Bromite** browser to work properly, in addition to the steps mentioned above, you need to set "Allow user certificates" in `chrome://flags` to "Enabled" state.
+
+:::
 
 ### Chrome and Chromium-based browsers
 

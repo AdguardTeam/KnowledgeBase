@@ -465,7 +465,7 @@ This modifier limits the rule scope to requests that use the specified set of HT
 * `@@||evil.com$method=get` unblocks only GET requests to `evil.com`.
 * `@@||evil.com$method=~post` unblocks any requests to `evil.com` except POST.
 
-Please note, that rules with mixed value restriction are considered invalid. So, for example, the rule
+Please note that rules with mixed value restriction are considered invalid. So, for example, the rule
 `||evil.com^$method=get|~head` will be rejected.
 
 :::info Compatibility
@@ -755,7 +755,7 @@ $extension="userscript name\, with \"quote\""
 * `@@||example.com^$extension='AdGuard Assistant'|'Popup Blocker'` disables both `AdGuard Assistant` and `Popup Blocker` userscripts on `example.com` website.
 * `@@||example.com^$extension=~"AdGuard Assistant"` disables all user scripts on `example.com` website, except `AdGuard Assistant`.
 * `@@||example.com^$extension=~"AdGuard Assistant"|~"Popup Blocker"` disables all user scripts on `example.com` website, except `AdGuard Assistant` and `Popup Blocker`.
-* `@@||example.com^$extension` all userscripts will not work on all pages of the `example.com` website.
+* `@@||example.com^$extension` no userscript will work on webpages on `example.com`.
 * `@@||example.com^$extension="AdGuard \"Assistant\""` disables the `AdGuard "Assistant"` userscript on `example.com` website.
 
 :::info Compatibility
@@ -992,7 +992,7 @@ If regular expression `name` is used for matching, two characters must be escape
 * `$cookie=/__utm[a-z]/` blocks Google Analytics cookies everywhere
 * `||facebook.com^$third-party,cookie=c_user` prevents Facebook from tracking you even if you are logged in
 
-There are two methods to deactivate `$cookie` rules: the primary method involves using an exception marked with `@@` - `@@||example.org^$cookie`. The alternative method employs a `$urlblock` exception (also included under the `$document` exception alias - `$elemhide,jsinject,content,urlblock,extension`).
+There are two methods to deactivate `$cookie` rules: the primary method involves using an exception marked with `@@` — `@@||example.org^$cookie`. The alternative method employs a `$urlblock` exception (also included under the `$document` exception alias — `$elemhide,jsinject,content,urlblock,extension`).
 Here's how it works:
 
 * `@@||example.org^$cookie` unblocks all cookies set by `example.org`
@@ -1090,7 +1090,7 @@ Basic URL exceptions shall not disable rules with `$hls` modifier. They can be d
 **Restrictions**
 
 * `$hls` rules are only allowed in trusted filters
-* `$hls` rules are not compatible with any other modifiers except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`
+* `$hls` rules are only compatible with the modifiers `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`
 * `$hls` rules only apply to HLS playlists, which are UTF-8 encoded text starting with the line `#EXTM3U`. Any other response will not be modified by these rules
 * `$hls` rules do not apply if the size of the original response is more than 3 MB
 
@@ -1237,7 +1237,7 @@ Basic URL exceptions shall not disable rules with `$jsonprune` modifier. They ca
 
 **Restrictions**
 
-* `$jsonprune` rules are not compatible with any other modifiers except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
+* `$jsonprune` rules are only compatible with `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest` modifiers.
 * `$jsonprune` rules do not apply if the size of the original response is more than 3 MB.
 
 :::note
@@ -1516,11 +1516,11 @@ More information on redirects and their usage is available [on GitHub](https://g
 
 ##### Priorities of `$redirect` rules {#redirect-rule-priorities}
 
-The priority of `$redirect` rules is higher than the priority of regular basic blocking rules.
+`$redirect` rules have higher priority than regular basic blocking rules.
 This means that if there is a basic blocking rule, the `$redirect` rule will override it.
 Allowlist rules with `@@` mark have higher priority than `$redirect` rules.
-If a basic rule with the `$important` modifier matches the same URL,
-it will override the `$redirect` rule (unless the `$redirect` rule is also marked as `$important`).
+If a basic rule with the `$important` modifier and the `$redirect` rule matches the same URL,
+the latter is overridden unless it's also marked as `$important`.
 
 [//]: # (Please do not replace `>` by `→`)
 
@@ -1642,7 +1642,7 @@ In case of multiple `$removeheader` rules matching a single request, we will app
 * `transfer-encoding`
 * `upgrade`
 
-3. `$removeheader` rules are not compatible with any other modifiers except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and [content type modifiers](#content-type-modifiers), e.g. `$script`, `$stylesheet`, etc. The rules which have any other modifiers are considered invalid and will be discarded.
+3. `$removeheader` rules are only compatible with these specific modifiers: `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and [content type modifiers](#content-type-modifiers) such as `$script`, `$stylesheet`. The rules which have any other modifiers are considered invalid and will be discarded.
 
 **Examples**
 
@@ -1697,8 +1697,7 @@ Regexp-type rules target both name and value of the parameter. To minimize mista
 
 :::
 
-We will try to detect and ignore unescaped `$` automatically using a simple rule of thumb:
-It is not an options delimiter if all three are true:
+We will try to detect and ignore unescaped `$` automatically using a simple rule of thumb — it is not an options delimiter if all three are true:
 1. It looks like `$/`;
 2. There is another slash character `/` to the left of it;
 3. There is another unescaped dollar sign `$` to the left of that slash character.
@@ -1791,7 +1790,7 @@ You will need some knowledge of regular expressions to use `$replace` modifier.
 
 **Features**
 
-* `$replace` rules apply to any text response, but will not apply to binary (`media`, `image`, `object`, etc).
+* `$replace` rules apply to any text response, but will not apply to binary (`media`, `image`, `object`, etc.).
 * `$replace` rules do not apply if the size of the original response is more than 3MB.
 * `$replace` rules have a higher priority than other basic rules (**including** exception rules). So if a request corresponds to two different rules one of which has the `$replace` modifier, this rule will be applied.
 * Document-level exception rules with `$content` or `$document` modifiers do disable `$replace` rules for requests matching them.
@@ -1948,7 +1947,7 @@ The base priority of any rule is 1. If the calculated priority is a floating-poi
 
 :::note
 
-Modifier aliases (`1p`, `3p`, etc) are not included in these categories, however, they are utilized within the engine to compute the rule priority.
+Modifier aliases (`1p`, `3p`, etc.) are not included in these categories, however, they are utilized within the engine to compute the rule priority.
 
 :::
 
@@ -2115,7 +2114,7 @@ Rule weight: base weight + allowlist rule, [category 5](#priority-category-5) + 
 
 **Example 7**
 
-`@@||example.org^$document` - without additional modifiers is an alias for
+`@@||example.org^$document` without additional modifiers is an alias for
 `@@||example.com^$elemhide,content,jsinject,urlblock,extension`
 
 Rule weight: base weight + specific exceptions, [category 4](#priority-category-4) + two allowed content types (document and subdocument), [category 2](#priority-category-2):
@@ -3191,7 +3190,7 @@ The modifier's behavior and syntax perfectly match the corresponding [basic rule
 * `[$domain=example.com|example.org]###adblock` — hides an element with attribute `id` equals `adblock` at `example.com`, `example.org` and all subdomains.
 * `[$domain=~example.com]##.textad` — this rule hides `div` elements of the class `textad` for all domains, except `example.com` and its subdomains.
 
-Please note that there are 2 ways to specify domain restrictions for non-basic rules:
+There are 2 ways to specify domain restrictions for non-basic rules:
 1. the "classic" way is to specify domains before rule mask and attributes: `example.com##.textad`;
 2. the modifier approach is to specify domains via `$domain` modifier: `[$domain=example.com]##.textad`.
 

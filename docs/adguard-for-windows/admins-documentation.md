@@ -29,7 +29,11 @@ Otherwise, you can run the MSI on the target machine directly (and silently) wit
 If you need to roll out an update, use this command:
 `Msiexec /q /i AdGuard.msi REINSTALL=ALL REINSTALLMODE=vomus`
 
-**Please note, that you must run these commands with admin privileges.**
+:::note
+
+You must run these commands with admin privileges.
+
+:::
 
 If you want to install AdGuard on a Windows 7 computer, make sure that it has .NET 4 Client Profile installed: https://www.microsoft.com/en-us/download/details.aspx?id=24872
 

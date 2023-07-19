@@ -14,6 +14,7 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 For troubleshooting problems with crashes a regular log is almost always not enough. In such cases to identify the origin of the problem we need the system log. Below is the instruction how to collect and get it.
 
 ## Capture a bug report from a device
+
 To get a bug report directly from your device, do the following:
 
 1. Be sure you have [Developer Options](https://developer.android.com/studio/run/device.html#developer-device-options) enabled.
@@ -23,7 +24,8 @@ To get a bug report directly from your device, do the following:
 ![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
 
 3. Select the type of bug report you want and tap **Report**.
->After a moment you get a notification that the bug report is ready (see figure 2).
+
+> After a moment you get a notification that the bug report is ready (see figure 2).
 
 ![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
 
@@ -51,9 +53,9 @@ On old Android devices there is no such option to take a bug report automaticall
 
 3. Enable **USB debugging**.
 
-4. Increase **Logger buffer** sizes to 4MB per log buffer.
+4. Increase **Logger buffer** sizes to 4 MB per log buffer.
 
-4MB should be enough for storing the logs we need until you're able to do the second part (getting log from the device);
+4 MB should be enough for storing the logs we need until you're able to do the second part (getting log from the device);
 
 **Important:** you need to reproduce the problem after you've done with the first part!
 

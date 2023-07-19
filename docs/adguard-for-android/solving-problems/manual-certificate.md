@@ -27,5 +27,5 @@ If you use [the *Secure folder* on your Android](https://www.samsung.com/uk/supp
 5. Minimize the application and go to the secure folder.
 6. Tap the three-dot menu and go to additional security settings.
 7. Tap *Install from memory* → *CA certificate* → *Install anyway* → Enter a graphic key/password/fingerprint → Find the saved certificate and select it.
-8. Return to the AdGuard application and close the screen "How to install a certificate?" by tapping the cross button.
+8. Return to the AdGuard app and close the screen "How to install a certificate?" by tapping the cross button.
 9. Done! The certificate has been installed.

@@ -48,7 +48,11 @@ So, ready to get your hands dirty? Here are actions that, when included in the i
 
  `server:adguard dns` switches to AdGuard DNS server;
 
->Note: the full list of supported provider names can be found inside AdGuard DNS settings under the "Custom DNS settings"
+:::note
+
+The full list of supported provider names can be found inside AdGuard DNS settings under the "Custom DNS settings".
+
+:::
 
  `server:custom` switches to the previously added server named `custom`;
 

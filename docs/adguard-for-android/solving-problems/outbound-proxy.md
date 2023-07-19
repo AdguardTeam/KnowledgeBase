@@ -97,7 +97,11 @@ Proxy port | *1080*
 
 *Here we presume that you have already configured a Shadowsocks server and a client on your device.*
 
-**Note: You should remove Shadowsocks application from filtering before setting up the process (AdGuard - Apps management - Shadowsocks - Disable AdGuard protection) to avoid infinite loops and drops.**
+:::note
+
+You should remove Shadowsocks application from filtering before setting up the process (AdGuard → Apps management → Shadowsocks → Disable AdGuard protection) to avoid infinite loops and drops.
+
+:::
 
 1. Open AdGuard and go to **Settings** → **Network** → **Proxy settings**.
 
