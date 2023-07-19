@@ -1660,63 +1660,6 @@ Use `@@` to negate `$removeheader`:
 
 `$removeheader` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers will not do that. For example, `@@||example.com^` will not disable `$removeheader=p` for requests to `example.com`, but `@@||example.com^$urlblock` will.
 
-**Restrictions**
-
-1. This type of rules can be used [**only in trusted filters**](#trusted-filters).
-
-2. In order to avoid compromising the security `$removeheader` cannot remove headers from the list below:
-
-* `access-control-allow-origin`
-* `access-control-allow-credentials`
-* `access-control-allow-headers`
-* `access-control-allow-methods`
-* `access-control-expose-headers`
-* `access-control-max-age`
-* `access-control-request-headers`
-* `access-control-request-method`
-* `origin`
-* `timing-allow-origin`
-* `allow`
-* `cross-origin-embedder-policy`
-* `cross-origin-opener-policy`
-* `cross-origin-resource-policy`
-* `content-security-policy`
-* `content-security-policy-report-only`
-* `expect-ct`
-* `feature-policy`
-* `origin-isolation`
-* `strict-transport-security`
-* `upgrade-insecure-requests`
-* `x-content-type-options`
-* `x-download-options`
-* `x-frame-options`
-* `x-permitted-cross-domain-policies`
-* `x-powered-by`
-* `x-xss-protection`
-* `public-key-pins`
-* `public-key-pins-report-only`
-* `sec-websocket-key`
-* `sec-websocket-extensions`
-* `sec-websocket-accept`
-* `sec-websocket-protocol`
-* `sec-websocket-version`
-* `p3p`
-* `sec-fetch-mode`
-* `sec-fetch-dest`
-* `sec-fetch-site`
-* `sec-fetch-user`
-* `referrer-policy`
-* `content-type`
-* `content-length`
-* `accept`
-* `accept-encoding`
-* `host`
-* `connection`
-* `transfer-encoding`
-* `upgrade`
-
-3. `$removeheader` rules are only compatible with these specific modifiers: `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and [content type modifiers](#content-type-modifiers) such as `$script`, `$stylesheet`. The rules which have any other modifiers are considered invalid and will be discarded.
-
 :::note
 
 In case of multiple `$removeheader` rules matching a single request, we will apply each of them one by one.
@@ -1736,9 +1679,11 @@ In case of multiple `$removeheader` rules matching a single request, we will app
 
 :::caution Restrictions
 
-1. This type of rules can be used [**only in trusted filters**](#trusted-filters).
+This type of rules can be used [**only in trusted filters**](#trusted-filters).
 
-1. In order to avoid compromising the security `$removeheader` cannot remove headers from the list below:
+:::
+
+In order to avoid compromising the security `$removeheader` cannot remove headers from the list below:
     * `access-control-allow-origin`
     * `access-control-allow-credentials`
     * `access-control-allow-headers`
@@ -1788,12 +1733,7 @@ In case of multiple `$removeheader` rules matching a single request, we will app
     * `transfer-encoding`
     * `upgrade`
 
-1. `$removeheader` rules are not compatible with any other modifiers
-  except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`,
-  and [content type modifiers](#content-type-modifiers), e.g. `$script`, `$stylesheet`, etc.
-  The rules which have any other modifiers are considered invalid and will be discarded.
-
-:::
+`$removeheader` rules are only compatible with `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and [content type modifiers](#content-type-modifiers) such as `$script` and `$stylesheet`. The rules which have any other modifiers are considered invalid and will be discarded.
 
 :::info Compatibility
 
