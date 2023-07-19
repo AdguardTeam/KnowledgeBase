@@ -30,7 +30,7 @@ Any line that starts with an exclamation mark is a comment. In the list of rules
 For example:
 
 ```
-! This is the comment. Under this line there is an actual filtering rule.
+! This is the comment. Below this line, there is an actual filtering rule.
 ||example.org^
 ```
 
@@ -71,7 +71,7 @@ Filtering rules support numerous modifiers that allow you to fine-tune the rule 
 
 **This rule blocks:**
 
-* `http://example.org/script.js` if this script is loaded from `example.com`.
+* `http://example.org/script.js` if this script is loaded from `example.org`.
 
 **This rule does not block:**
 
@@ -88,9 +88,9 @@ Filtering rules support numerous modifiers that allow you to fine-tune the rule 
 
 Blocking rules with [`$important`](#important-modifier) modifier can override exceptions.
 
-### Unblocking everything on a website
+### Unblocking an entire website
 
-![Unblocking everything](https://cdn.adtidy.org/content/kb/ad_blocker/general/4_unblock_entire_website.svg)
+![Unblocking an entire website](https://cdn.adtidy.org/content/kb/ad_blocker/general/4_unblock_entire_website.svg)
 
 **This rule unblocks**
 
@@ -133,7 +133,7 @@ It is not to be confused with the fully functional AdGuard for Android that can 
 [our website](https://adguard.com/adguard-android/overview.html). Unfortunately, AdGuard Content Blocker capabilities
 are limited by what the browsers allow and they only support an old Adblock Plus filters syntax:
 
-* Basic blocking rules with the following modifiers: `$domain`, `$third-party`, [content type modifiers](#content-type-modifiers).
+* Basic blocking rules with the following modifiers: `$domain`, `$third-party`, [content-type modifiers](#content-type-modifiers).
 * Basic exception rules with the following modifiers: `$document`, `$elemhide`.
 * Basic [element hiding rules](#cosmetic-elemhide-rules) with no extended CSS support.
 
@@ -229,7 +229,7 @@ Rules with wildcard for TLD are not supported by AdGuard Content Blocker.
 ### Basic rules modifiers
 
 * [Basic modifiers](#basic-rules-basic-modifiers)
-* [Content type modifiers](#content-type-modifiers)
+* [Content-type modifiers](#content-type-modifiers)
 * [Exception modifiers](#exception-modifiers)
 
 :::note
@@ -436,7 +436,7 @@ where:
     * **`string`** — a sequence of characters. It is matched against the header value lexicographically;
     * **`regexp`** — a regular expression, starts and ends with `/`. The pattern works the same way as in the basic URL rules, but the characters `/`, `$` and `,` must be escaped with `\`.
 
-The modifier `":" h_value` part may be omitted. In that case the modifier matches the header name only.
+The modifier `":" h_value` part may be omitted. In that case, the modifier matches the header name only.
 
 **Examples**
 
@@ -490,8 +490,12 @@ This modifier limits the rule scope to requests that use the specified set of HT
 * `@@||evil.com$method=get` unblocks only GET requests to `evil.com`.
 * `@@||evil.com$method=~post` unblocks any requests to `evil.com` except POST.
 
-Please note that rules with mixed value restriction are considered invalid. So, for example, the rule
+:::note
+
+Rules with mixed value restriction are considered invalid. So, for example, the rule
 `||evil.com^$method=get|~head` will be rejected.
+
+:::
 
 :::info Compatibility
 
@@ -565,7 +569,7 @@ Rules with the `$to` modifier are supported by AdGuard for Windows, Mac, and And
 
 :::
 
-### Content type modifiers {#content-type-modifiers}
+### Content-type modifiers {#content-type-modifiers}
 
 [//]: # (Please keep them sorted)
 
@@ -592,7 +596,7 @@ There is a big difference in how AdGuard determines the content type on differen
 
 :::
 
-**Content type modifiers examples**
+**Examples of content-type modifiers**
 
 * `||example.org^$image` — corresponds to all images from `example.org`.
 * `||example.org^$script,stylesheet` — corresponds to all the scripts and styles from `example.org`.
@@ -1203,8 +1207,7 @@ preroll.ts
 :::caution Restrictions
 
 * `$hls` rules are only allowed [**in trusted filters**](#trusted-filters).
-* `$hls` rules are not compatible with any other modifiers
-  except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
+* `$hls` rules are compatible with the modifiers `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest` only.
 * `$hls` rules only apply to HLS playlists, which are UTF-8 encoded text starting with the line `#EXTM3U`.
   Any other response will not be modified by these rules.
 * `$hls` rules do not apply if the size of the original response is more than 3 MB.
@@ -1456,8 +1459,7 @@ In AdGuard for Windows, Mac and Android **running CoreLibs v1.11 or later**, JSO
 
 :::caution Restrictions
 
-* `$jsonprune` rules are not compatible with any other modifiers
-  except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
+* `$jsonprune` rules are only compatible with these specific modifiers: `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
 * `$jsonprune` rules do not apply if the size of the original response is more than 3 MB.
 
 :::
@@ -1623,7 +1625,7 @@ If a request matches multiple `$referrerpolicy` rules not disabled by exceptions
 :::caution Restrictions
 
 `$referrerpolicy` rules are compatible only with
-`$document` and `$subdocument` [content type modifiers](#content-type-modifiers).
+`$document` and `$subdocument` [content-type modifiers](#content-type-modifiers).
 
 :::
 
@@ -1850,7 +1852,7 @@ With these rules, specified UTM parameters will be removed from any request save
 :::caution Restrictions
 
 * Rules with `$removeparam` modifier can be used [**only in trusted filters**](#trusted-filters).
-* `$removeparam` rules are compatible with [basic modifiers](#basic-rules-common-modifiers), [content type modifiers](#content-type-modifiers), and with `$important` and `$app` modifiers. The rules which have any other modifiers are considered invalid and will be discarded.
+* `$removeparam` rules are compatible with [basic modifiers](#basic-rules-common-modifiers), [content-type modifiers](#content-type-modifiers), and with `$important` and `$app` modifiers. The rules which have any other modifiers are considered invalid and will be discarded.
 
 :::
 
