@@ -11,9 +11,9 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 On Android devices running OS 6 and earlier, built-in statistics often attributed high data and/or battery usage to AdGuard. This was because AdGuard counted all the traffic it filtered from various apps. As a result, AdGuard's share of total data and battery usage was overstated, while other apps were understated.
 
-With OS 7, however, this scenario has improved. Now the data reflected in Android's built-in data usage statistics is very close to reality, although there are minor discrepancies in the battery usage data.
+With Android 7, however, this scenario has improved. Now the data reflected in Android's built-in data usage statistics is very close to reality, although there are minor discrepancies in the battery usage data.
 
-Nevertheless, AdGuard users can always get a true picture of the situation on the *Battery usage* screen.
+However, AdGuard users can always get a true picture of the situation on the *Battery usage* screen.
 
 ### Own battery usage stats screen
 
@@ -25,7 +25,7 @@ Inside you will find a chart that shows the AdGuard battery resource consumption
 
 ### How much battery resource does AdGuard really consume?
 
-First, let us lay down a little bit of theory and links with necessary data.
+First, let us lay down a bit of theory and links with necessary data.
 
 1. Android derives traffic consumption judging on so-called Power Profile, which is given by every manufacturer: <https://source.android.com/devices/tech/power/values.html>
 

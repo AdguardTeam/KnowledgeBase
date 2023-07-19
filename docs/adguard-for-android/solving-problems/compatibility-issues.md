@@ -18,7 +18,7 @@ Other VPN apps are incompatible with AdGuard running in the Local VPN filtering 
 
 :::caution
 
-Please note that on Android 10 and later devices, the 'manual' HTTP proxy mode is no longer supported.
+On Android 10 and later, the 'manual' HTTP proxy mode is no longer supported.
 
 :::
 

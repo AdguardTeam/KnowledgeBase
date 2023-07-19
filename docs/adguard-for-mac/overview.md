@@ -107,7 +107,7 @@ AdGuard Browser Assistant’s primary function is to manage filtering directly f
 
 ![Assistant popup menu *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/safari_assistant_pop-up_menu.jpg)
 
-You will be prompted to install the Browser Assistant for your default browser when you first install AdGuard (during the onboarding process). If you missed it, you can [download it for any browser](https://adguard.com/en/adguard-assistant/overview.html) at any time.
+You will be prompted to install the Browser Assistant for your default browser when you first install AdGuard (during the onboarding process). If you missed it, you can [download it for any browser](https://adguard.com/adguard-assistant/overview.html) at any time.
 
 ## Extensions
 
