@@ -23,7 +23,7 @@ To get a bug report directly from your device, do the following:
 
 3. Select the type of the bug report you want and tap **Report**. 
 
-::: note
+:::note
 
 After a moment, you will see a notification that the bug report is ready (see Figure 2).
 
@@ -37,7 +37,7 @@ After a moment, you will see a notification that the bug report is ready (see Fi
 
 5. Send this log to our support team.
 
-::: note
+:::note
 
 Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
 
@@ -102,7 +102,7 @@ Email the created `txt` file as well as the time the problem was reproduced (fro
 
 5. Send this log to our support team.
 
-::: note
+:::note
 
 Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
 
