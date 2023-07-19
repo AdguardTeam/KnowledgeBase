@@ -21,7 +21,7 @@ To get a bug report directly from your device, do the following:
 
 ![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
 
-3. Select the type of the bug report you want and tap **Report**. 
+3. Select the type of bug report you want and tap **Report**. 
 
 :::note
 
@@ -58,7 +58,7 @@ Follow this instruction:
 
 3. Enable **USB debugging**.
 
-4. Increase **Logger buffer** sizes to 4MB per log buffer.
+4. Increase **Logger buffer** sizes to 4 MB per log buffer.
 
 4 MB should be enough for storing the logs we need until you're able to do the second part (getting the log from the device);
 
