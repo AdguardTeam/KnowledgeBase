@@ -1,94 +1,94 @@
 ---
-title: Como reportar bugs
+title: How to report bugs
 sidebar_position: 4
 ---
 
-Se você notar um bug ao usar os produtos AdGuard, ajude-nos a resolvê-lo. Veja aqui como reportar bugs da forma mais eficaz.
+If you notice a bug while using AdGuard products, please help us address it. Here’s how to report bugs most effectively.
 
-## Antes de começar
+## Before you start
 
-### Quando reportar bugs
+### When to report bugs
 
-Verifique se você tem a versão mais atualizada e, caso não tenha, atualize: o bug já pode ter sido resolvido na nova versão.
+Check that you have the most up-to-date version, and if not, upgrade: the bug might have already been resolved in the new version.
 
-Verificar se o bug não foi reportado antes. Aconselhamos prestar atenção a questões abertas e fechadas.
+Check if the bug hasn’t been reported before. We advise paying attention to both open and closed issues.
 
-![Questões fechadas](https://cdn.adtidy.org/content/kb/ad_blocker/general/closed_issues.png)
+![Closed issues](https://cdn.adtidy.org/content/kb/ad_blocker/general/closed_issues.png)
 
-### Como descrever um problema
+### How to describe a problem
 
-Tente fornecer o máximo de detalhes possível, isso facilitará a reprodução do bug e a descoberta de como corrigi-lo. Aqui está o que esperamos ver em um relatório de bug:
+Try to provide as many details as possible — that'll make it easier for us to reproduce the bug and figure out how to fix it. Here’s what we’re expecting to see in a bug report:
 
-* A versão do seu aplicativo
-* A sua versão do SO
-* Quando você percebeu o problema
-* O que você estava fazendo ou o que aconteceu com o aplicativo antes de perceber o problema. Passos para reproduzi-lo
-* Se se repetiu e com que frequência
-* Se você tem uma VPN ou um software antivírus
+* Your app version
+* Your OS version
+* When you noticed the problem
+* What you were doing or what happened to the app before you noticed the problem. Steps to reproduce it
+* Whether it recurred and with what frequency
+* Whether you have a VPN or an antivirus software
 
-### Como coletar registros
+### How to collect logs
 
-Leia sobre a coleta de logs em artigos dedicados para cada plataforma.
+Read about collecting logs in dedicated articles for each platform.
 
-## Como votar em relatórios de bugs ou solicitações de recursos
+## How to vote for bug reports or feature requests
 
-Se você deseja oferecer suporte à implementação de um novo recurso ou correção de bug, pode votar nele no GitHub. Para votar, basta reagir com algum emoji.
+If you want to support the implementation of a new feature or bugfix, you can vote for it on GitHub. To vote, just react with some emoji.
 
-![Problema do GitHub com reações](https://cdn.adtidy.org/content/kb/ad_blocker/general/github_reaction.png)
+![GitHub issue with reactions](https://cdn.adtidy.org/content/kb/ad_blocker/general/github_reaction.png)
 
-![Problema do GitHub sem reações](https://cdn.adtidy.org/content/kb/ad_blocker/general/github_reaction2.png)
+![GitHub issue without reactions](https://cdn.adtidy.org/content/kb/ad_blocker/general/github_reaction2.png)
 
-Você pode encontrar as reações no canto superior direito ou na parte inferior de um problema.
+You can find reactions in the upper right corner or at the bottom of an issue.
 
 
-## Instruções para todas as plataformas
+## Instructions for all platforms
 
-### AdGuard para Windows
+### AdGuard for Windows
 
-1. Confira o repositório [do Windows](https://github.com/AdguardTeam/AdGuardforWindows/issues) para garantir que o problema ainda não tenha sido relatado.
+1. Check out the [Windows repo](https://github.com/AdguardTeam/AdGuardforWindows/issues) to make sure the issue hasn’t been reported yet.
 
-2. Abra uma página [para criar novos problemas](https://github.com/AdguardTeam/AdguardForWindows/issues/new/choose) e selecione *Relatório de bug*.
+2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForWindows/issues/new/choose) and select *Bug report*.
 
-3. Preencha o formulário. Se possível, anexe capturas de tela ou uma gravação de tela.
+3. Fill out the form. If possible, attach screenshots or a screen recording.
 
-![Relatando um bug via GitHub *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows_gh.png)
+![Reporting a bug via GitHub *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows_gh.png)
 
-### AdGuard para Mac
+### AdGuard for Mac
 
-1. Confira o repositório [do Windows](https://github.com/AdguardTeam/AdGuardforMac/issues) para garantir que o problema ainda não tenha sido relatado.
+1. Check out the [Mac repo](https://github.com/AdguardTeam/AdGuardforMac/issues) to make sure the issue hasn’t been reported yet.
 
-2. Abra uma página [para criar novos problemas](https://github.com/AdguardTeam/AdguardForMac/issues/new).
+2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForMac/issues/new).
 
-3. Preencha o formulário. Se possível, anexe capturas de tela ou uma gravação de tela.
+3. Fill out the form. If possible, attach screenshots or a screen recording.
 
-### AdGuard para Android
+### AdGuard for Android
 
-1. Confira o [Repositório Android](https://github.com/AdguardTeam/AdGuardforAndroid/issues) para se certificar de que o problema ainda não tenha sido relatado.
+1. Check out the [Android repo](https://github.com/AdguardTeam/AdGuardforAndroid/issues) to make sure the issue hasn’t been reported yet.
 
-2. Abrir um [página para criar novos problemas](https://github.com/AdguardTeam/AdguardForAndroid/issues/new/choose) e selecione *Relatório de bug*.
+2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForAndroid/issues/new/choose) and select *Bug report*.
 
-3. Preencha o formulário. Se possível, anexe capturas de tela ou uma gravação de tela.
+3. Fill out the form. If possible, attach screenshots or a screen recording.
 
-### AdGuard para iOS
+### AdGuard for iOS
 
-1. Confira o repositório [do Windows](https://github.com/AdguardTeam/AdGuardforiOS/issues) para garantir que o problema ainda não tenha sido relatado.
+1. Check out the [iOS repo](https://github.com/AdguardTeam/AdGuardforiOS/issues) to make sure the issue hasn’t been reported yet.
 
-2. Abra uma página [para criar novos problemas](https://github.com/AdguardTeam/AdguardForiOS/issues/new/choose) e selecione *Relatório de bug*.
+2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForiOS/issues/new/choose), select *Bug report*.
 
-3. Preencha o formulário. Se possível, anexe capturas de tela ou uma gravação de tela.
+3. Fill out the form. If possible, attach screenshots or a screen recording.
 
-### Extensão do AdGuard para navegador
+### AdGuard Browser Extension
 
-1. Confira o repositório [da extensão do navegador](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/) para garantir que o problema ainda não tenha sido relatado.
+1. Check out the [Browser Extension repo](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/) to make sure the issue hasn’t been reported yet.
 
-2. Abra uma página [para criar novas entradas ](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose) e selecione *Relatório de erro*.
+2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose) and select *Bug report*.
 
-3. Preencha o formulário. Se possível, anexe capturas de tela ou uma gravação de tela.
+3. Fill out the form. If possible, attach screenshots or a screen recording.
 
-### AdGuard para Safari
+### AdGuard for Safari
 
-1. Confira o repositório [do Safari](https://github.com/AdguardTeam/AdGuardForSafari/issues) para garantir que o problema ainda não tenha sido relatado.
+1. Check out the [Safari repo](https://github.com/AdguardTeam/AdGuardForSafari/issues) to make sure the issue hasn’t been reported yet.
 
-2. Abra uma página [para criar uma nova entrada](https://github.com/AdguardTeam/AdGuardForSafari/issues/new/choose) e selecione *Relatório de erro*.
+2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdGuardForSafari/issues/new/choose) and select *Bug report*.
 
-3. Preencha o formulário. Se possível, anexe capturas de tela ou uma gravação de tela.
+3. Fill out the form. If possible, attach screenshots or a screen recording.

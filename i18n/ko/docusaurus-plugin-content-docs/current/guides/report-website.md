@@ -18,7 +18,7 @@ sidebar_position: 3
 
 :::note
 
-When you send a complaint via the app or via AdGuard Browser Assistant, all information is pre-filled automatically. 스크린샷을 제외하고는 직접 만들어서 첨부해야 합니다. [직접 링크(](https://reports.adguard.com/new_issue.html))를 사용하는 경우 데이터를 수동으로 입력해야 합니다.
+When you send a complaint via the app or via AdGuard Browser Assistant, all information is pre-filled automatically. 스크린샷을 제외하고는 직접 만들어서 첨부해야 합니다. [직접 링크](https://reports.adguard.com/new_issue.html)를 사용하는 경우 데이터를 수동으로 입력해야 합니다.
 
 :::
 
@@ -74,7 +74,7 @@ When you send a complaint via the app or via AdGuard Browser Assistant, all info
 
 :::note
 
-When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. 스크린샷을 제외하고는 직접 만들어서 첨부해야 합니다. [직접 링크](https://reports.adguard.com/en/new_issue.html)를 사용하는 경우 데이터를 수동으로 입력해야 합니다.
+When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. 스크린샷을 제외하고는 직접 만들어서 첨부해야 합니다. [직접 링크](https://reports.adguard.com/new_issue.html)를 사용하는 경우 데이터를 수동으로 입력해야 합니다.
 
 :::
 

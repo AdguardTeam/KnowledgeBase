@@ -75,7 +75,11 @@ Activa esta opción para que la ventana principal de AdGuard se abra después de
 
 A partir de la versión 7.12, de forma predeterminada, el servicio de AdGuard no filtra el tráfico después del inicio del sistema operativo si la opción Iniciar AdGuard al iniciar el sistema está deshabilitada. En otras palabras, el servicio de AdGuard se inicia en modo "inactivo". Habilita esta opción para que AdGuard filtre el tráfico incluso si la aplicación no se inicia.
 
-*Note that before v7.12 the AdGuard's service started in filtering mode by default (even if the *Launch AdGuard at system start-up* was disabled). If you were satisfied with the old behavior, enable this option.*
+:::note
+
+Before v7.12, the AdGuard service started in filtering mode by default (even if the *Launch AdGuard at system start-up* was disabled). If you were satisfied with the old behavior, enable this option.
+
+:::
 
 ### Filtrar localhost
 
@@ -129,13 +133,21 @@ Envía periódicamente paquetes TCP a través de una conexión inactiva para ase
 
 Aquí puedes especificar un período de tiempo de inactividad, en segundos, antes de enviar una prueba de keepalive. If 0 is specified, the value selected by the system will be used.
 
-Ten en cuenta que esta configuración solo funciona cuando la opción *Activar TCP keepalive* está habilitada.
+:::note
+
+This setting only works when the *Enable TCP keepalive* option is enabled.
+
+:::
 
 ### Tiempo de espera de TCP keepalive
 
 Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. Si se especifica 0, se utilizará el valor seleccionado por el sistema.
 
-Ten en cuenta que esta configuración solo funciona cuando la opción *Activar TCP keepalive* está habilitada.
+:::note
+
+This setting only works when the *Enable TCP keepalive* option is enabled.
+
+:::
 
 ### Bloquear Java
 

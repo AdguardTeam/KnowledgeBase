@@ -15,7 +15,7 @@ Many people choose Android because they like customizing settings and want to co
 
 There are a lot of tasker apps out there, for example [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&noprocess), [AutomateIt](https://play.google.com/store/apps/details?id=AutomateIt.mainPackage&noprocess) etc. AdGuard provides an interface that allows these apps to setup various automation rules.
 
-![AdGuard Automation *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/tasker/adgautomation.png)
+![Automation *mobile_border](https://cdn.adtidy.org/blog/new/mmwmfautomation.jpg)
 
 Thanks to this interface, any app can send a special message (called "intent") that contains the name of the action and some additional data, if needed. AdGuard will look at this intent and perform the required actions.
 
@@ -47,7 +47,12 @@ So, ready to get your hands dirty? Here are actions that, when included in the i
 `dns_server` switches between DNS servers, you need to include additional data:
 
  `server:adguard dns` switches to AdGuard DNS server;
-> Note: the full list of supported provider names can be found inside AdGuard DNS settings under the "Custom DNS settings"
+
+:::note
+
+The full list of supported provider names can be found inside AdGuard DNS settings under the "Custom DNS settings".
+
+:::
 
  `server:custom` switches to the previously added server named `custom`;
 

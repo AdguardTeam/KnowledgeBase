@@ -15,7 +15,7 @@ AdGuard provides a range of software products that block ads and trackers on dif
 
 ## Kullanılabilirlik {#br-extension}
 
-[AdGuard Tarayıcı Uzantısı](https://adguard.com/en/adguard-browser-extension/overview.html) çoğu büyük tarayıcıda kullanılabilir. You can easily find it in your browser’s online store or on our official website.
+[AdGuard Tarayıcı Uzantısı](https://adguard.com/adguard-browser-extension/overview.html) çoğu büyük tarayıcıda kullanılabilir. You can easily find it in your browser’s online store or on our official website.
 
 ![Available for most popular browsers *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
 
@@ -105,7 +105,7 @@ In the *General* tab, you can allow search ads and the [self-promotion of websit
 
 Besides, here you can enable [*Phishing and malware protection*](/general/browsing-security).
 
-You can save your settings configuration by clicking the *Export settings* button. The settings will be saved as a .json file. To upload the previously saved settings configuration, use the *Import settings* function. You can even use it to quickly switch between different settings profiles or even to transfer settings configurations between different browsers.
+You can save your settings configuration by clicking the *Export settings* button. Ayarlar bir .json dosyası olarak kaydedilecektir. To upload the previously saved settings configuration, use the *Import settings* function. You can even use it to quickly switch between different settings profiles or even to transfer settings configurations between different browsers.
 
 ### Additional settings {#misc}
 
@@ -149,4 +149,4 @@ Whereas AdGuard Browser Extension is free and easy to install, and has filters t
 
 `2` – the extension is unable to detect requests from other extensions. If a malicious or tracking extension sends a request to its server to show you ads or track your activity, AdGuard Browser Extension will not be able to block that request;
 
-`3` – not all types of ads and threats can be blocked by browser extensions due to certain browser limitations. Some elements may get to the page and slow down the loading process. Besides, unlike browser-based ad blockers, the AdGuard app blocks ads before they are loaded to the browser. This saves traffic and speeds up page loading.
+`3` – not all types of ads and threats can be blocked by browser extensions due to certain browser limitations. Some elements may get to the page and slow down the loading process. Besides, unlike browser-based ad blockers, the AdGuard app blocks ads before they are loaded to the browser. Bu, veri tasarrufu ve sayfa açılışını hızlandırır.

@@ -26,7 +26,7 @@ HAR 文件可帮助我们的技术支持团队解决复杂的问题。 为了创
 
 7. 勾选「***Disable cache***」（禁用缓存）复选框。
 
-![chrome 浏览器](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/chrome.png)
+![Chrome 浏览器](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/chrome.png)
 
 8. 重复导致问题的步骤。
 
@@ -139,7 +139,7 @@ HAR 文件可帮助我们的技术支持团队解决复杂的问题。 为了创
 
 ## 安卓系统 {#android}
 
-要获取 HAR 文件，请执行以下步骤：
+To create HAR files, follow these steps:
 
 1. 打开 AdGuard 并转到「***设置***」
 

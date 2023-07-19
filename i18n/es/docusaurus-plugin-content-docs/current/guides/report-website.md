@@ -74,7 +74,7 @@ Para informar sobre la reinserción de un anuncio o la visualización incorrecta
 
 :::note
 
-When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. A excepción de las capturas de pantalla, tendrás que hacerlas y adjuntarlas tú mismo. Si estás utilizando un [enlace directo](https://reports.adguard.com/en/new_issue.html), deberás ingresar los datos manualmente.
+When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. A excepción de las capturas de pantalla, tendrás que hacerlas y adjuntarlas tú mismo. Si está utilizando un [enlace directo](https://reports.adguard.com/new_issue.html), deberá ingresar los datos manualmente.
 
 :::
 

@@ -41,7 +41,7 @@ If this option is enabled, AdGuard will detect search domains and automatically 
 
 Bootstrap DNS for DoH, DoT, and DoQ servers. The *Automatic DNS* - the system DNS or AdGuard DNS - is used by default. By selecting *Custom DNS*, you can list IPv4 and IPv6 server addresses to use as bootstrap upstreams.
 
-#### Modo de bloqueio para regras de estilo adblock
+#### Blocking mode for adblock-style rules
 
 Here you can specify the response type for domains blocked by DNS rules based on adblock rule syntax (for instance, `||example.org^`).
 
@@ -49,7 +49,7 @@ Here you can specify the response type for domains blocked by DNS rules based on
 *  Respond with NXDOMAIN
 *  Respond with Custom IP address (IPv4 and IPv6 addresses can be specified here)
 
-#### Modo de bloqueio para regras de hosts
+#### Blocking mode for hosts rules
 
 Here you can specify the response type for domains blocked by DNS rules based on hosts rule syntax (for instance, `<ip> <domain> 0.0.0.0 example.com`).
 
@@ -59,7 +59,7 @@ Here you can specify the response type for domains blocked by DNS rules based on
 
 #### DNS request timeout
 
-Aqui você pode especificar o tempo em milissegundos que o AdGuard aguardará pela resposta do servidor DNS selecionado antes de recorrer ao fallback. Caso não preencha este campo ou insira um valor inválido, será utilizado o valor de 5000.
+Here you can specify the time in milliseconds that AdGuard will wait for the response from the selected DNS server before resorting to fallback. If you don’t fill in this field or enter an invalid value, the value of 5000 will be used.
 
 #### Blocked response TTL
 
@@ -99,11 +99,11 @@ Enable to make AdGuard test DNS upstreams before adding or updating custom DNS s
 
 Here you can enable HAR file capture. Use it only for debugging purposes! If the setting is enabled, AdGuard will create a directory named "har" inside the app cache directory. It contains information about all filtered HTTP requests in HAR 1.2 format and can be analyzed with the Fiddler program.
 
-### Filtragem HTTPS
+### HTTPS filtering
 
 #### Encrypted Client Hello
 
-Cada conexão de Internet criptografada tem uma parte não criptografada. Estamos falando do primeiro pacote, que contém o nome do servidor ao qual você está se conectando. A tecnologia Encrypted ClientHello deve resolver esse problema e criptografar esta última parte de informação não criptografada. To benefit from it, enable the *Encrypted Client Hello* option. It uses a local DNS proxy to look for the ECH configuration for the domain. Se encontrado, o pacote ClientHello será criptografado.
+Every encrypted Internet connection has an unencrypted part. This is the very first packet which contains the name of the server you are connecting to. Encrypted Client Hello technology is supposed to solve this issue and encrypt that last bit of unencrypted information. To benefit from it, enable the *Encrypted Client Hello* option. It uses a local DNS proxy to look for the ECH configuration for the domain. If it is found, ClientHello packet will be encrypted.
 
 #### OCSP checking
 
@@ -163,7 +163,7 @@ Filtering for IPv6 ranges, listed in this section, will be disabled.
 
 #### TCP keepalive for outgoing sockets
 
-If enabled, AdGuard sends a keepalive probe after the specified time period to ensure if the TCP connection is alive. Here you can specify the TCP keepalive idle time before starting keepalive probes and time between keepalive probes for an unresponsive peer.
+If enabled, AdGuard sends a keepalive probe after the specified time period to ensure that the TCP connection is alive. Here you can specify the TCP keepalive idle time before starting keepalive probes and time between keepalive probes for an unresponsive peer.
 
 After a system-defined number of unsuccessful attempts to get a response from the server, the system automatically closes the TCP connection.
 
@@ -209,7 +209,7 @@ Once enabled, AdGuard excludes LAN connections from filtering for simple network
 
 Here you can enter the IP address that will be used to create a TUN interface. By default, it is `2001:db8:ad:0:ff::`.
 
-### Diversos
+### Miscellaneous
 
 #### Detect Samsung Pay
 

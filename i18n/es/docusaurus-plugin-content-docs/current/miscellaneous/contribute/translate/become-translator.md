@@ -35,7 +35,7 @@ Además, existe la oportunidad de abrir las traducciones en un modo de votación
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/mode.png)
 
-Puedes encontrar [consejos útiles sobre la traducción de AdGuard en este artículo](../guidelines). Por favor, échale un vistazo.
+Puedes encontrar [consejos útiles sobre la traducción de AdGuard en este artículo](../guidelines). Please take a look at it.
 
 ### Cómo convertirte en corrector {#proofreaders}
 
@@ -51,4 +51,4 @@ Entonces, ¿de qué son responsables los correctores?
 
 - Responder a los comentarios relacionados con las traducciones en su idioma.
 
-Cada año, los mejores correctores reciben regalos de AdGuard. Los traductores activos tampoco quedan sin recompensa. Lee más sobre nuestro [Sistema de recompensas](../rewards).
+Every year, the best proofreaders receive gifts from AdGuard. Los traductores activos tampoco quedan sin recompensa. Lee más sobre nuestro [Sistema de recompensas](../rewards).

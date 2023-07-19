@@ -97,7 +97,7 @@ To activate a license via the AdGuard account, a valid license with at least one
 
 3. 然后点击屏幕右上角的**登录**
 
-![在「高级」屏幕右上角点击「登录」 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense1en.png)
+![Tap Log in in the top right corner of the Premium screen *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense1en.png)
 
 4. 输入您的 **AdGuard 账号**的**电子邮件** 和 **密码**
 

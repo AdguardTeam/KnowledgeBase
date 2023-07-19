@@ -5,7 +5,7 @@ sidebar_position: 3
 
 :::info
 
-This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://adguard.com/download.html?auto=true)
 
 :::
 
@@ -15,7 +15,7 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 Существует множество приложений-таскеров‎, например, [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&noprocess), [AutomateIt](https://play.google.com/store/apps/details?id=AutomateIt.mainPackage&noprocess) и другие. AdGuard предоставляет интерфейс, который позволяет этим приложениям настраивать различные правила автоматизации.
 
-![Автоматизация AdGuard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/tasker/adgautomation.png)
+![Автоматизация *mobile_border](https://cdn.adtidy.org/blog/new/mmwmfautomation.jpg)
 
 Благодаря этому интерфейсу любое приложение может послать специальное сообщение (intent), которое содержит имя действия и дополнительную информацию. AdGuard увидит этот интент и выполнит запрашиваемое действие.
 
@@ -47,7 +47,12 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 `dns_server` переключается между DNS-серверами, необходимо указать дополнительные данные:
 
  `server:adguard dns` переключается на сервер AdGuard DNS;
-> Note: the full list of supported provider names can be found inside AdGuard DNS settings under the "Custom DNS settings"
+
+:::note
+
+Полный список поддерживаемых имён провайдеров можно найти в настройках AdGuard DNS в разделе «Пользовательские настройки DNS».
+
+:::
 
  `server:custom` переключается на ранее добавленный сервер с именем `custom`;
 
@@ -106,11 +111,11 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
  `[trust]` применяется только для типа сервера: **HTTPS_CONNECT** и включает опцию **Trust any certificates**. Необходимо указать значение **true или false**.
 
-:::note Example
+:::note Пример
 
-`setting by name`: server:MyServer
+`настройка по имени сервера`: server:MyServer
 
- `manually settings`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
+ `настройка вручную`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
 
 
 :::
@@ -127,7 +132,7 @@ Package: `com.adguard.android`
 
 :::note
 
-Before v4.0 the class was called `com.adguard.android.receivers.AutomationReceiver` but then we changed its name to `com.adguard.android.receiver.AutomationReceiver`. Если вы пользовались этой функцией, пожалуйста, используйте новое название.
+До версии 4.0 класс назывался `com.adguard.android.receivers.AutomationReceiver`, но затем мы изменили его название на `com.adguard.android.receiver.AutomationReceiver`. Если вы пользовались этой функцией, пожалуйста, используйте новое название.
 
 :::
 

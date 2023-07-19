@@ -55,7 +55,7 @@ Certifikát EV nabízí vyšší úroveň zabezpečení a poskytuje více záruk
 
 Výzkumníci dospěli k jednoduchému závěru: komunita zabývající se internetovou bezpečností by měla věnovat velkou pozornost aplikacím, které filtrují zabezpečená připojení. Vývojáři takového softwaru musí věnovat velkou pozornost kvalitě implementace filtrování.
 
-Rádi bychom poznamenali, že AdGuard nebyl ve výše uvedené studii testován. Provedli jsme odhady podle jejich sady testů a v době testování jsme mohli získat maximální skóre – A\*. Toto skóre však není perfektní. V průběhu studie výzkumníci zjistili některé problémy, které byly v závěrečném hodnocení vynechány.
+Rádi bychom poznamenali, že AdGuard nebyl ve výše uvedené studii testován. We ran estimates according to their set of tests, and at the time of testing, we could have received the maximum score — A\*. Toto skóre však není perfektní. V průběhu studie výzkumníci zjistili některé problémy, které byly v závěrečném hodnocení vynechány.
 
 V AdGuardu s těmito závěry plně souhlasíme. Kromě toho bychom chtěli být vůči uživatelům co nejotevřenější a hovořit o problémech, se kterými se v současné době potýkáme a o krocích, které podnikáme ke zlepšení kvality a bezpečnosti mechanismu filtrování. Seznam těchto problémů je seřazen podle priority.
 

@@ -26,7 +26,7 @@ Postup vytvoření souboru HAR v Chrome:
 
 7. Zaškrtněte políčko ***Disable cache***.
 
-![chrome](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/chrome.png)
+![Chrome](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/chrome.png)
 
 8. Reprodukujte kroky, které způsobují problém.
 
@@ -139,7 +139,7 @@ Postup vytvoření souboru HAR v Safari:
 
 ## Android {#android}
 
-Chcete-li získat soubory HAR, postupujte takto:
+To create HAR files, follow these steps:
 
 1. Otevřete AdGuard a přejděte do ***Nastavení***.
 

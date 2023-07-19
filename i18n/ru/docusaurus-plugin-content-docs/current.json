@@ -4,7 +4,7 @@
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.General": {
-    "message": "Основные",
+    "message": "Основное",
     "description": "The label for category General in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Ad filtering": {

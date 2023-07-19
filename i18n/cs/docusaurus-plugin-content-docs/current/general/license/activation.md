@@ -97,7 +97,7 @@ nebo dvakrát klikněte na ikonu AdGuardu na hlavním panelu:
 
 3. Klepněte na položku **Přihlásit se** v pravém horním rohu obrazovky
 
-![Tap Log in in the top right corner of Premium screen *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense1en.png)
+![Tap Log in in the top right corner of the Premium screen *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense1en.png)
 
 4. Zadejte **e-mail** a **heslo** z vašeho **AdGuard účtu**
 

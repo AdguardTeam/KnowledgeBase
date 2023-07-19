@@ -5,7 +5,7 @@ sidebar_position: 8
 
 :::info
 
-This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://adguard.com/download.html?auto=true)
 
 :::
 
@@ -33,11 +33,11 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 5. Включите защиту AdGuard.
 
-Now AdGuard will forward all traffic through Orbot. If you disable Orbot, Internet connection will be unavailable until you disable outbound proxy settings in AdGuard.
+Теперь AdGuard будет перенаправлять весь трафик через Orbot. Если вы отключите Orbot, подключение к интернету будет недоступно до тех пор, пока вы не отключите настройки исходящего прокси в AdGuard.
 
 ### Как использовать AdGuard с PIA (Private Internet Access)
 
-*Here we presume that you are already a PIA VPN client and have it installed on your device.*
+*Здесь мы предполагаем, что вы уже клиент PIA VPN и он установлен на вашем устройстве.*
 
 1. Откройте AdGuard и перейдите в раздел **Настройки** → **Сеть** → **Настройки прокси**.
 
@@ -57,7 +57,7 @@ Now AdGuard will forward all traffic through Orbot. If you disable Orbot, Intern
 
 ### Как использовать AdGuard с TorGuard
 
-*Here we presume that you are already a TorGuard client and have it installed on your device.*
+*Здесь мы предполагаем, что вы уже клиент TorGuard и он установлен на вашем устройстве.*
 
 1. Откройте AdGuard и перейдите в раздел **Настройки** → **Сеть** → **Настройки прокси**.
 
@@ -95,9 +95,13 @@ Now AdGuard will forward all traffic through Orbot. If you disable Orbot, Intern
 
 ### Как использовать AdGuard вместе с Shadowsocks
 
-*Here we presume that you have already configured a Shadowsocks server and a client on your device.*
+*Подразумевается, что вы уже настроили Shadowsocks и он установлен на вашем устройстве.*
 
-**Note: You should remove Shadowsocks application from filtering before setting up the process (AdGuard - Apps management - Shadowsocks - Disable AdGuard protection) to avoid infinite loops and drops.**
+:::note
+
+Исключите Shadowsocks из фильтрации AdGuard перед настройкой процесса (AdGuard → Настройки приложений → Shadowsocks → Отключить защиту), чтобы избежать бесконечных циклов и падений.
+
+:::
 
 1. Откройте AdGuard и перейдите в раздел **Настройки** → **Сеть** → **Настройки прокси**.
 
@@ -113,4 +117,4 @@ Now AdGuard will forward all traffic through Orbot. If you disable Orbot, Intern
 
 ### Ограничения
 
-There is a factor that can prevent certain traffic from being routed through the outgoing proxy. AdGuard will only re-route traffic that goes through it. Basically, it means apps that have **Ad blocking** flag enabled in the **Apps Management** tab.
+Есть фактор, который может помешать определённому трафику проходить через исходящий прокси. AdGuard будет направлять через прокси только тот трафик, который проходит через сам AdGuard. По сути, это означает приложения, у которых выставлена галочка напротив пункта **Блокировка рекламы** на вкладке **Настройки приложений**.

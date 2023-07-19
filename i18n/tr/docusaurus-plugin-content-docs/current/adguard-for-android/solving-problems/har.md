@@ -14,13 +14,13 @@ The HAR (HTTP ARchive) format is a JSON-formatted archive file for logging of a 
 
 ## HAR dosyaları nasıl edinilir
 Sometimes we need to analyze it to block specific ads that are difficult to reproduce for some reason. To get HAR files follow these steps:
-1. Open AdGuard and go to "Settings".
-2. Choose "Advanced" in the menu.
-3. Choose "Low Level Settings".
-4. Activate "pref.har.capture" (you will have to restart the protection).
-5. Now reproduce the problem - open the app, perform the necessary actions to make the ad appear.
-6. Now turn "pref.har.capture" off again.
-7. Geri dönün ve "Günlükleri ve sistem bilgisini dışa aktar" → Kaydet öğesine dokunun.
+1. Open AdGuard and go to **Settings** (⚙ icon in the lower right corner).
+2. Tap **General** →**Advanced** → **Low-level settings**.
+3. Scroll down and activate **Capture HAR** in the Filtering section.
+4. Open the app and perform the necessary actions to reproduce the problem.
+5. Turn **Capture HAR** off.
+6. Go back to **Advanced**.
+7. Tap **Export logs and system info** → **Allow** (if necessary) → **Save**.
 
 **Please send the file with logs (that you've got as a result) to the AdGuard support service.**
 

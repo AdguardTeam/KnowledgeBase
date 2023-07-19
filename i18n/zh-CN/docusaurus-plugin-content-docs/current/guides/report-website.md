@@ -74,7 +74,7 @@ When you send a complaint via the app or via AdGuard Browser Assistant, all info
 
 :::note
 
-When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. 除了屏幕截图，您还必须自己制作并附加它们。 如果您使用的是[此链接](https://reports.adguard.com/en/new_issue.html)，则需要手动输入数据。
+When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. 除了屏幕截图，您还必须自己制作并附加它们。 如果您使用的是[此链接](https://reports.adguard.com/new_issue.html)，则需要手动输入数据。
 
 :::
 

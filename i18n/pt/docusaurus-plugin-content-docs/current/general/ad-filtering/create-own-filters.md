@@ -7,7 +7,7 @@ toc_max_heading_level: 4
 
 :::info
 
-In this article, we explain how to write custom filtering rules for use in AdGuard products. To test your rules, you can [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Neste artigo, explicamos como escrever regras de filtragem personalizadas para utilização nos produtos AdGuard. To test your rules, you can [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
 :::
 
@@ -30,7 +30,7 @@ Any line that starts with an exclamation mark is a comment. In the list of rules
 For example:
 
 ```
-! This is the comment. Under this line there is an actual filtering rule.
+! This is the comment. Below this line, there is an actual filtering rule.
 ||example.org^
 ```
 
@@ -71,7 +71,7 @@ Filtering rules support numerous modifiers that allow you to fine-tune the rule 
 
 **This rule blocks:**
 
-* `http://example.org/script.js` if this script is loaded from `example.com`.
+* `http://example.org/script.js` if this script is loaded from `example.org`.
 
 **This rule does not block:**
 
@@ -88,9 +88,9 @@ Filtering rules support numerous modifiers that allow you to fine-tune the rule 
 
 Blocking rules with [`$important`](#important-modifier) modifier can override exceptions.
 
-### Unblocking everything on a website
+### Unblocking an entire website
 
-![Unblocking everything](https://cdn.adtidy.org/content/kb/ad_blocker/general/4_unblock_entire_website.svg)
+![Unblocking an entire website](https://cdn.adtidy.org/content/kb/ad_blocker/general/4_unblock_entire_website.svg)
 
 **This rule unblocks**
 
@@ -126,11 +126,11 @@ Some rules can be used only in trusted filters. This category includes:
 * custom filter lists installed as `trusted`,
 * user rules.
 
-### Bloqueador de conteúdo do AdGuard
+### AdGuard Content Blocker
 
 AdGuard Content Blocker is an extension for Samsung and Yandex browsers that can be installed from Google Play. It is not to be confused with the fully functional AdGuard for Android that can only be downloaded from [our website](https://adguard.com/adguard-android/overview.html). Unfortunately, AdGuard Content Blocker capabilities are limited by what the browsers allow and they only support an old Adblock Plus filters syntax:
 
-* Basic blocking rules with the following modifiers: `$domain`, `$third-party`, [content type modifiers](#content-type-modifiers).
+* Basic blocking rules with the following modifiers: `$domain`, `$third-party`, [content-type modifiers](#content-type-modifiers).
 * Basic exception rules with the following modifiers: `$document`, `$elemhide`.
 * Basic [element hiding rules](#cosmetic-elemhide-rules) with no extended CSS support.
 
@@ -226,7 +226,7 @@ Rules with wildcard for TLD are not supported by AdGuard Content Blocker.
 ### Basic rules modifiers
 
 * [Basic modifiers](#basic-rules-basic-modifiers)
-* [Content type modifiers](#content-type-modifiers)
+* [Content-type modifiers](#content-type-modifiers)
 * [Exception modifiers](#exception-modifiers)
 
 :::note
@@ -326,7 +326,26 @@ Rules with `$denyallow` modifier are not supported by AdGuard for iOS, Safari, a
 
 #### **`$domain`** {#domain-modifier}
 
-`$domain` limits the rule scope to requests made **from** the specified domains and their subdomains (as indicated by the [Referer](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer) HTTP header). To add multiple domains to one rule, use the `|` character as a separator.
+`$domain` limits the rule scope to requests made **from** the specified domains and their subdomains (as indicated by the [Referer](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer) HTTP header).
+
+**Syntax**
+
+The modifier is a list of one or more expressions separated by the `|` symbol, each of which is matched against a domain in a particular way depending on its type (see below).
+
+```
+domains = ["~"] entry_0 ["|" ["~"] entry_1 ["|" ["~"]entry_2 ["|" ... ["|" ["~"]entry_N]]]]
+entry_i = ( regular_domain / any_tld_domain / regexp )
+```
+
+* **`regular_domain`** — a regular domain name (`domain.com`). Corresponds the specified domain and its subdomains. It is matched lexicographically.
+* **`any_tld_domain`** — a domain name ending with a wildcard character as a [public suffix](https://publicsuffix.org/learn/), e.g. for `example.*` it is `co.uk` in `example.co.uk`. Corresponds to the specified domain and its subdomains with any public suffix. It is matched lexicographically.
+* **`regexp`** — a regular expression, starts and ends with `/`. The pattern works the same way as in the basic URL rules, but the characters `/`, `$`, and `|` must be escaped with `\`.
+
+:::info
+
+Rules with `$domain` modifier as `regular_domain` or `any_tld_domain` are supported by all AdGuard products.
+
+:::
 
 **Examples**
 
@@ -339,8 +358,12 @@ If you want the rule not to be applied to certain domains, start a domain name w
 
 **`$domain` and negation `~`:**
 
+* `||baddomain.com^$domain=example.org` blocks requests that match the specified mask and are sent from the `example.org` domain or its subdomains.
+* `||baddomain.com^$domain=example.org|example.com` — the same rule, but it works for both `example.org` and `example.com`.
 * `||baddomain.com^$domain=~example.org` blocks requests matching the pattern sent from any domain except `example.org` and its subdomains.
 * `||baddomain.com^$domain=example.org|~foo.example.org` blocks requests sent from `example.org` and its subdomains, except the subdomain `foo.example.org`.
+* `||baddomain.com^$domain=/(^\|.+\.)example\.(com\|org)\$/` blocks requests sent from `example.org` and `example.com` domains and all their subdomains.
+* `||baddomain.com^$domain=~a.com|~b.*|~/(^\|.+\.)c\.(com\|org)\$/` blocks requests sent from any domains, except `a.com`, `b` with any public suffix (`b.com`, `b.co.uk`, etc.), `c.com`, `c.org`, and their subdomains.
 
 **`$domain` modifier matching target domain:**
 
@@ -383,7 +406,9 @@ Safari does not support the simultaneous use of allowed and disallowed domains, 
 
 :::info Compatibility
 
-In AdGuard for Windows, Mac and Android **running CoreLibs version 1.12 or later** the `$domain` modifier can be alternatively spelled as `$from`.
+Rules with regular expressions in the `$domain` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs v1.11 or later**.
+
+In AdGuard for Windows, Mac and Android **running CoreLibs v1.12 or later** the `$domain` modifier can be alternatively spelled as `$from`.
 
 :::
 
@@ -404,7 +429,7 @@ where:
     * **`string`** — a sequence of characters. It is matched against the header value lexicographically;
     * **`regexp`** — a regular expression, starts and ends with `/`. The pattern works the same way as in the basic URL rules, but the characters `/`, `$` and `,` must be escaped with `\`.
 
-The modifier `":" h_value` part may be omitted. In that case the modifier matches the header name only.
+The modifier `":" h_value` part may be omitted. In that case, the modifier matches the header name only.
 
 **Examples**
 
@@ -458,7 +483,11 @@ This modifier limits the rule scope to requests that use the specified set of HT
 * `@@||evil.com$method=get` unblocks only GET requests to `evil.com`.
 * `@@||evil.com$method=~post` unblocks any requests to `evil.com` except POST.
 
-Please note, that rules with mixed value restriction are considered invalid. So, for example, the rule `||evil.com^$method=get|~head` will be rejected.
+:::note
+
+Rules with mixed value restriction are considered invalid. So, for example, the rule `||evil.com^$method=get|~head` will be rejected.
+
+:::
 
 :::info Compatibility
 
@@ -526,11 +555,11 @@ If there is a `$~third-party` modifier, the rule is only applied to the requests
 
 :::info Compatibility
 
-Rules with the `$to` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.12 or later**.
+Rules with the `$to` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs v1.12 or later**, and AdGuard Browser Extension, **running TSUrlFilter v2.1.3 or later**.
 
 :::
 
-### Content type modifiers {#content-type-modifiers}
+### Content-type modifiers {#content-type-modifiers}
 
 * [`$document`](#document-modifier)
 * [`$font`](#font-modifier)
@@ -544,8 +573,8 @@ Rules with the `$to` modifier are supported by AdGuard for Windows, Mac, and And
 * [`$subdocument`](#subdocument-modifier)
 * [`$websocket`](#websocket-modifier)
 * [`$xmlhttprequest`](#xmlhttprequest-modifier)
-* [`$object-subrequest` (deprecated)](#object-subrequest-modifier)
-* [`$webrtc` (deprecated)](#webrtc-modifier)
+* [`$object-subrequest` (removed)](#object-subrequest-modifier)
+* [`$webrtc` (removed)](#webrtc-modifier)
 
 There is a set of modifiers, which can be used to limit the rule's application area to certain type of content. These modifiers can also be combined to cover, for example, both images and scripts.
 
@@ -555,7 +584,7 @@ There is a big difference in how AdGuard determines the content type on differen
 
 :::
 
-**Content type modifiers examples**
+**Examples of content-type modifiers**
 
 * `||example.org^$image` — corresponds to all images from `example.org`.
 * `||example.org^$script,stylesheet` — corresponds to all the scripts and styles from `example.org`.
@@ -645,19 +674,19 @@ AdGuard for Windows, Mac, Android when filtering older browsers cannot accuratel
 
 :::
 
-#### **`$object-subrequest` (deprecated)** {#object-subrequest-modifier}
+#### **`$object-subrequest` (removed)** {#object-subrequest-modifier}
 
-:::danger Deprecation notice
+:::danger Removal notice
 
-`$object-subrequest` modifier is deprecated and is no longer supported. Rules with it are considered as invalid. The rule corresponds to requests by browser plugins (it is usually Flash).
+`$object-subrequest` modifier is removed and is no longer supported. Rules with it are considered as invalid. The rule corresponds to requests by browser plugins (it is usually Flash).
 
 :::
 
-#### **`$webrtc` (deprecated)** {#webrtc-modifier}
+#### **`$webrtc` (removed)** {#webrtc-modifier}
 
-:::danger Deprecation notice
+:::danger Removal notice
 
-This modifier is deprecated and is no longer supported. Rules with it are considered as invalid. If you need to suppress WebRTC, consider using the `nowebrtc` [scriptlet](#scriptlets).
+This modifier is removed and is no longer supported. Rules with it are considered as invalid. If you need to suppress WebRTC, consider using the `nowebrtc` [scriptlet](#scriptlets).
 
 :::
 
@@ -741,7 +770,7 @@ $extension="userscript name\, with \"quote\""
 * `@@||example.com^$extension='AdGuard Assistant'|'Popup Blocker'` disables both `AdGuard Assistant` and `Popup Blocker` userscripts on `example.com` website.
 * `@@||example.com^$extension=~"AdGuard Assistant"` disables all user scripts on `example.com` website, except `AdGuard Assistant`.
 * `@@||example.com^$extension=~"AdGuard Assistant"|~"Popup Blocker"` disables all user scripts on `example.com` website, except `AdGuard Assistant` and `Popup Blocker`.
-* `@@||example.com^$extension` all userscripts will not work on all pages of the `example.com` website.
+* `@@||example.com^$extension` no userscript will work on webpages on `example.com`.
 * `@@||example.com^$extension="AdGuard \"Assistant\""` disables the `AdGuard "Assistant"` userscript on `example.com` website.
 
 :::info Compatibility
@@ -976,7 +1005,7 @@ If regular expression `name` is used for matching, two characters must be escape
 * `$cookie=/__utm[a-z]/` blocks Google Analytics cookies everywhere
 * `||facebook.com^$third-party,cookie=c_user` prevents Facebook from tracking you even if you are logged in
 
-There are two methods to deactivate `$cookie` rules: the primary method involves using an exception marked with `@@` - `@@||example.org^$cookie`. The alternative method employs a `$urlblock` exception (also included under the `$document` exception alias - `$elemhide,jsinject,content,urlblock,extension`). Here's how it works:
+There are two methods to deactivate `$cookie` rules: the primary method involves using an exception marked with `@@` — `@@||example.org^$cookie`. The alternative method employs a `$urlblock` exception (also included under the `$document` exception alias — `$elemhide,jsinject,content,urlblock,extension`). Here's how it works:
 
 * `@@||example.org^$cookie` unblocks all cookies set by `example.org`
 * `@@||example.org^$urlblock` unblocks all cookies set by `example.org` and disables blocking of all requests sent from `example.org`
@@ -1070,6 +1099,13 @@ Basic URL exceptions shall not disable rules with `$hls` modifier. They can be d
 
 :::
 
+**Restrictions**
+
+* `$hls` rules are only allowed in trusted filters
+* `$hls` rules are only compatible with the modifiers `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`
+* `$hls` rules only apply to HLS playlists, which are UTF-8 encoded text starting with the line `#EXTM3U`. Any other response will not be modified by these rules
+* `$hls` rules do not apply if the size of the original response is more than 3 MB
+
 :::note
 
 When multiple `$hls` rules match the same request, their effect is cumulative.
@@ -1153,7 +1189,7 @@ preroll.ts
 :::caution Restrictions
 
 * `$hls` rules are only allowed [**in trusted filters**](#trusted-filters).
-* `$hls` rules are not compatible with any other modifiers except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
+* `$hls` rules are compatible with the modifiers `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest` only.
 * `$hls` rules only apply to HLS playlists, which are UTF-8 encoded text starting with the line `#EXTM3U`. Any other response will not be modified by these rules.
 * `$hls` rules do not apply if the size of the original response is more than 3 MB.
 
@@ -1216,6 +1252,11 @@ Basic URL exceptions shall not disable rules with `$jsonprune` modifier. They ca
 * `@@||example.org^$jsonprune=text` disable all `$jsonprune` rules with the value of the `$jsonprune` modifier equal to `text` for responses from URLs matching `||example.org^`.
 
 `$jsonprune` rules can also be disabled by `$document`, `$content` and `$urlblock` exception rules.
+
+**Restrictions**
+
+* `$jsonprune` rules are only compatible with `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest` modifiers.
+* `$jsonprune` rules do not apply if the size of the original response is more than 3 MB.
 
 :::note
 
@@ -1396,7 +1437,7 @@ In AdGuard for Windows, Mac and Android **running CoreLibs v1.11 or later**, JSO
 
 :::caution Restrictions
 
-* `$jsonprune` rules are not compatible with any other modifiers except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
+* `$jsonprune` rules are only compatible with these specific modifiers: `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
 * `$jsonprune` rules do not apply if the size of the original response is more than 3 MB.
 
 :::
@@ -1499,7 +1540,7 @@ More information on redirects and their usage is available [on GitHub](https://g
 
 ##### Priorities of `$redirect` rules {#redirect-rule-priorities}
 
-The priority of `$redirect` rules is higher than the priority of regular basic blocking rules. This means that if there is a basic blocking rule, the `$redirect` rule will override it. Allowlist rules with `@@` mark have higher priority than `$redirect` rules. If a basic rule with the `$important` modifier matches the same URL, it will override the `$redirect` rule (unless the `$redirect` rule is also marked as `$important`).
+`$redirect` rules have higher priority than regular basic blocking rules. This means that if there is a basic blocking rule, the `$redirect` rule will override it. Allowlist rules with `@@` mark have higher priority than `$redirect` rules. If a basic rule with the `$important` modifier and the `$redirect` rule matches the same URL, the latter is overridden unless it's also marked as `$important`.
 
 **In short: `$important` > `@@` > `$redirect` > `basic rules`.**
 
@@ -1544,17 +1585,22 @@ An exception rule with a modifier value disables the blocking rule with the same
 If a request matches multiple `$referrerpolicy` rules not disabled by exceptions, only one of them (it is not specified which one) is applied.
 
 **Examples**
+
 * `||example.com^$referrerpolicy=unsafe-url` overrides the referrer policy for `example.com` with `unsafe-url`.
 * `@@||example.com^$referrerpolicy=unsafe-url` disables the previous rule.
 * `@@||example.com/abcd.html^$referrerpolicy` disables all `$referrerpolicy` rules on `example.com/abcd.html`.
 
-> **Compatibility with other modifiers**
-> 
-> `$referrerpolicy` rules are compatible only with `$document` and `$subdocument` [content type modifiers](#content-type-modifiers).
+:::caution Restrictions
 
-> **Compatibility with different versions of AdGuard**
-> 
-> `$referrerpolicy` is available starting with CoreLibs v1.12.
+`$referrerpolicy` rules are compatible only with `$document` and `$subdocument` [content-type modifiers](#content-type-modifiers).
+
+:::
+
+:::info Compatibility
+
+Rules with the `$referrerpolicy` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.12 or later**.
+
+:::
 
 #### **`$removeheader`** {#removeheader-modifier}
 
@@ -1603,7 +1649,7 @@ In case of multiple `$removeheader` rules matching a single request, we will app
 
 1. This type of rules can be used [**only in trusted filters**](#trusted-filters).
 
-1. In order to avoid compromising the security `$removeheader` cannot remove headers from the list below:
+2. In order to avoid compromising the security `$removeheader` cannot remove headers from the list below:
     * `access-control-allow-origin`
     * `access-control-allow-credentials`
     * `access-control-allow-headers`
@@ -1653,7 +1699,7 @@ In case of multiple `$removeheader` rules matching a single request, we will app
     * `transfer-encoding`
     * `upgrade`
 
-1. `$removeheader` rules are not compatible with any other modifiers except `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and [content type modifiers](#content-type-modifiers), e.g. `$script`, `$stylesheet`, etc. The rules which have any other modifiers are considered invalid and will be discarded.
+3. `$removeheader` rules are only compatible with `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and [content type modifiers](#content-type-modifiers) such as `$script` and `$stylesheet`. The rules which have any other modifiers are considered invalid and will be discarded.
 
 :::
 
@@ -1699,7 +1745,7 @@ Regexp-type rules target both name and value of the parameter. To minimize mista
 
 :::
 
-We will try to detect and ignore unescaped `$` automatically using a simple rule of thumb: It is not an options delimiter if all three are true:
+We will try to detect and ignore unescaped `$` automatically using a simple rule of thumb — it is not an options delimiter if all three are true:
 1. It looks like `$/`;
 2. There is another slash character `/` to the left of it;
 3. There is another unescaped dollar sign `$` to the left of that slash character.
@@ -1772,7 +1818,7 @@ With these rules, specified UTM parameters will be removed from any request save
 :::caution Restrictions
 
 * Rules with `$removeparam` modifier can be used [**only in trusted filters**](#trusted-filters).
-* `$removeparam` rules are compatible with [basic modifiers](#basic-rules-common-modifiers), [content type modifiers](#content-type-modifiers), and with `$important` and `$app` modifiers. The rules which have any other modifiers are considered invalid and will be discarded.
+* `$removeparam` rules are compatible with [basic modifiers](#basic-rules-common-modifiers), [content-type modifiers](#content-type-modifiers), and with `$important` and `$app` modifiers. The rules which have any other modifiers are considered invalid and will be discarded.
 
 :::
 
@@ -1792,7 +1838,7 @@ You will need some knowledge of regular expressions to use `$replace` modifier.
 
 **Features**
 
-* `$replace` rules apply to any text response, but will not apply to binary (`media`, `image`, `object`, etc).
+* `$replace` rules apply to any text response, but will not apply to binary (`media`, `image`, `object`, etc.).
 * `$replace` rules do not apply if the size of the original response is more than 3MB.
 * `$replace` rules have a higher priority than other basic rules (**including** exception rules). So if a request corresponds to two different rules one of which has the `$replace` modifier, this rule will be applied.
 * Document-level exception rules with `$content` or `$document` modifiers do disable `$replace` rules for requests matching them.
@@ -1876,9 +1922,9 @@ Rules with `noop` modifier are not supported by AdGuard Content Blocker.
 
 #### **`$empty` (deprecated)** {#empty-modifier}
 
-:::danger Deprecation notice
+:::caution Deprecation notice
 
-This modifier is deprecated in favor of the [`$redirect` modifier](#redirect-modifier). Rules with `$empty` are converting into `$redirect=nooptext` now.
+This modifier is deprecated in favor of the [`$redirect` modifier](#redirect-modifier). Rules with `$empty` are still supported and being converted into `$redirect=nooptext` now but the support shall be removed in the future.
 
 :::
 
@@ -1896,9 +1942,9 @@ Rules with `$empty` modifier are not supported by AdGuard Content Blocker, AdGua
 
 #### **`$mp4` (deprecated)** {#mp4-modifier}
 
-:::danger Deprecation notice
+:::caution Deprecation notice
 
-This modifier is deprecated in favor of the [`$redirect` modifier](#redirect-modifier). Rules with `$mp4` are converting into `$redirect=noopmp4-1s,media` now.
+This modifier is deprecated in favor of the [`$redirect` modifier](#redirect-modifier). Rules with `$mp4` are still supported and being converted into `$redirect=noopmp4-1s,media` now but the support shall be removed in the future.
 
 :::
 
@@ -1947,7 +1993,7 @@ The base priority of any rule is 1. If the calculated priority is a floating-poi
 
 :::note
 
-Modifier aliases (`1p`, `3p`, etc) are not included in these categories, however, they are utilized within the engine to compute the rule priority.
+Modifier aliases (`1p`, `3p`, etc.) are not included in these categories, however, they are utilized within the engine to compute the rule priority.
 
 :::
 
@@ -2080,7 +2126,7 @@ Rule weight: base weight + allowlist rule, [category 5](#priority-category-5) + 
 
 **Example 7**
 
-`@@||example.org^$document` - without additional modifiers is an alias for `@@||example.com^$elemhide,content,jsinject,urlblock,extension`
+`@@||example.org^$document` without additional modifiers is an alias for `@@||example.com^$elemhide,content,jsinject,urlblock,extension`
 
 Rule weight: base weight + specific exceptions, [category 4](#priority-category-4) + two allowed content types (document and subdocument), [category 2](#priority-category-2): `1 + 10000 * 4 + (50 + 50 / 2) = 40076`.
 
@@ -2241,7 +2287,7 @@ CSS rules may operate differently [depending on the platform](#cosmetic-rules-pr
 * [Pseudo-class `:remove()` and pseudo-property `remove`](#remove-pseudos)
 * [Pseudo-class `:is()`](#extended-css-is)
 * [Pseudo-class `:not()`](#extended-css-not)
-* [Pseudo-class `:if-not()` (deprecated)](#extended-css-if-not)
+* [Pseudo-class `:if-not()` (removed)](#extended-css-if-not)
 
 CSS 3.0 is not always enough to block ads. To solve this problem AdGuard extends CSS capabilities by adding support for the new pseudo-elements. We have developed a separate [open-source library](https://github.com/AdguardTeam/ExtendedCss) for non-standard element selecting and applying CSS styles with extended properties.
 
@@ -2307,9 +2353,11 @@ Rules with the `:has()` pseudo-class should use the [native implementation of `:
 
 Synonyms `:-abp-has()` is supported by ExtendedCss for better compatibility.
 
-**Deprecation notice**
+:::danger Removal notice
 
 `:if()` is no longer supported as a synonym for `:has()`.
+
+:::
 
 **Syntax**
 
@@ -2863,11 +2911,13 @@ The `:not()` is considered as a standard CSS pseudo-class inside the argument of
 </div>
 ```
 
-#### Pseudo-class `:if-not()` (deprecated) {#extended-css-if-not}
+#### Pseudo-class `:if-not()` (removed) {#extended-css-if-not}
 
-**Deprecation notice**
+:::danger Removal notice
 
-The `:if-not()` pseudo-class is deprecated and is no longer supported. Rules with it are considered as invalid.
+The `:if-not()` pseudo-class is removed and is no longer supported. Rules with it are considered as invalid.
+
+:::
 
 This pseudo-class was basically a shortcut for `:not(:has())`. It was supported by ExtendedCss for better compatibility with some filters subscriptions.
 
@@ -3163,7 +3213,7 @@ Such rules with `$app` modifier are supported by AdGuard for Windows, Mac, and A
 * `[$domain=example.com|example.org]###adblock` — hides an element with attribute `id` equals `adblock` at `example.com`, `example.org` and all subdomains.
 * `[$domain=~example.com]##.textad` — this rule hides `div` elements of the class `textad` for all domains, except `example.com` and its subdomains.
 
-Please note that there are 2 ways to specify domain restrictions for non-basic rules:
+There are 2 ways to specify domain restrictions for non-basic rules:
 1. the "classic" way is to specify domains before rule mask and attributes: `example.com##.textad`;
 2. the modifier approach is to specify domains via `$domain` modifier: `[$domain=example.com]##.textad`.
 

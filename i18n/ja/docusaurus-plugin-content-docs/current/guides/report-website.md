@@ -74,7 +74,7 @@ When you send a complaint via the app or via AdGuard Browser Assistant, all info
 
 :::note
 
-When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. お手数ですが、スクリーンショットだけはご自身で作成し添付してください。 なお、[報告フォームの直リンク](https://reports.adguard.com/ja/new_issue.html)を使って報告される場合は、情報を全部手入力することが必要になります。
+When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. お手数ですが、スクリーンショットだけはご自身で作成し添付してください。 なお、[報告フォームの直リンク](https://reports.adguard.com/new_issue.html)を使ってご報告される場合は、情報を全部手入力することが必要になります。
 
 :::
 

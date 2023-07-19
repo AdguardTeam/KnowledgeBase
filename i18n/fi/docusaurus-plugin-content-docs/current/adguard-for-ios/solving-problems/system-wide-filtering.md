@@ -48,7 +48,7 @@ We don't recommend touching other settings you'll find inside the *Advanced sett
 
 3. Copy this link: `https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt` (it's a link for AdGuard DNS filter)
 4. Open *AdGuard for iOS settings* → *DNS protection* → *DNS filtering* (available while *Advanced mode* is enabled) → *DNS filters*.
-5. Tap *Add a filter*, paste the link into the filter URL field, and yap 'Next'.
+5. Tap *Add a filter*, paste the link into the filter URL field, and tap 'Next'.
 
 ![Adding a DNS filter screen *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_adding_a_filter.PNG)
 

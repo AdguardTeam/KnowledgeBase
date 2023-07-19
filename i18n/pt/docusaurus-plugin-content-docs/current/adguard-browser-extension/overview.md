@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-This article is about the AdGuard Browser Extension, which safeguards only your browser. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Este artigo é sobre a extensão do navegador AdGuard, que protege apenas o seu navegador. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
 :::
 
@@ -15,7 +15,7 @@ AdGuard provides a range of software products that block ads and trackers on dif
 
 ## Availability {#br-extension}
 
-[AdGuard Browser Extension](https://adguard.com/en/adguard-browser-extension/overview.html) is available for most major browsers. You can easily find it in your browser’s online store or on our official website.
+[AdGuard Browser Extension](https://adguard.com/adguard-browser-extension/overview.html) is available for most major browsers. You can easily find it in your browser’s online store or on our official website.
 
 ![Available for most popular browsers *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
 
@@ -97,7 +97,7 @@ Some of the *Stealth Mode* options available in full-fledged apps are not presen
 
 Apart from the large key modules of AdGuard Browser Extension, there are several more specific features that can be configured in the *General* and *Additional settings* tabs of the extension settings.
 
-### Geral {#general}
+### General {#general}
 
 In the *General* tab, you can allow search ads and the [self-promotion of websites](/general/ad-filtering/search-ads), enable the automatic activation of language-specific filters, indicate the filters update interval, etc.
 
@@ -117,7 +117,7 @@ From this tab, you can activate optimized filters, enable notifications about ex
 
 Besides, you can opt to help us with the development of filters by sending the statistics on applied rules: which ones are triggered, on which websites, and how often. This option is disabled by default as we do not collect user data without consent. Yet, if you enable it, all data will be strictly anonymized.
 
-### Sobre {#about}
+### About {#about}
 
 In the *About* section, you can find infos about the current version, links to the EULA and Privacy policy, and to the repository of the Browser extension on GitHub.
 

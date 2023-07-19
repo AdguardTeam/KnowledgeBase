@@ -48,7 +48,7 @@ Nedoporučujeme se dotýkat dalších nastavení, která najdete na kartě *Pokr
 
 3. Zkopírujte tento odkaz: `https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt` (je to odkaz na filtr AdGuard DNS)
 4. Otevřete *Nastavení AdGuardu pro iOS* → *DNS ochrana* → *DNS filtrování* (dostupné, když je povolen *Pokročilý režim*) → *DNS filtry*.
-5. Klepněte na *Přidat filtr*, vložte odkaz do pole URL filtru a klepněte na "Další".
+5. Tap *Add a filter*, paste the link into the filter URL field, and tap 'Next'.
 
 ![Obrazovka přidání DNS filtru *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_adding_a_filter.PNG)
 

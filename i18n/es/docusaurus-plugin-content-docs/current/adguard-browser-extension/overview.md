@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-This article is about the AdGuard Browser Extension, which safeguards only your browser. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Este artículo trata sobre la extensión del navegador de AdGuard, que protege solo tu navegador. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
 :::
 
@@ -15,7 +15,7 @@ AdGuard provides a range of software products that block ads and trackers on dif
 
 ## Availability {#br-extension}
 
-[AdGuard Browser Extension](https://adguard.com/en/adguard-browser-extension/overview.html) is available for most major browsers. You can easily find it in your browser’s online store or on our official website.
+[AdGuard Browser Extension](https://adguard.com/adguard-browser-extension/overview.html) is available for most major browsers. You can easily find it in your browser’s online store or on our official website.
 
 ![Available for most popular browsers *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
 

@@ -48,7 +48,7 @@ We don't recommend touching other settings you'll find inside the *Advanced sett
 
 3. このリンクをコピーする: `https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt` （AdGuard DNSフィルタのリンクです）
 4. AdGuardアプリ → *設定⚙* → *DNS通信を保護* → *DNSフィルタリング* (この項目は表示させるには、「*高度な設定*」モードがオンになっている必要があります) → *DNSフィルタ*
-5. Tap *Add a filter*, paste the link into the filter URL field, and yap 'Next'.
+5. Tap *Add a filter*, paste the link into the filter URL field, and tap 'Next'.
 
 ![DNSフィルタ追加画面 *mobile_border](https://cdn.adguard.com/public/Adguard/Blog/ios_adding_a_filter_ja.PNG)
 

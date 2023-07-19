@@ -3,7 +3,7 @@ title: Zásady AdGuard filtrů
 sidebar_position: 6
 ---
 
-Při diskusích o filtrech reklam AdGuardu se často objevuje jedno téma – zda by měl AdGuard blokovat tu či onu reklamu. Nastavením pravidel se držíme konkrétních kritérií, která jsou velmi podobná zásadám [EasyList](https://easylist.to/pages/policy.html), které považujeme za správné a vhodné. Provedli jsme v nich však několik změn.
+When discussing AdGuard ad filters, one topic often comes up — whether AdGuard should block this or that ad. Nastavením pravidel se držíme konkrétních kritérií, která jsou velmi podobná zásadám [EasyList](https://easylist.to/pages/policy.html), které považujeme za správné a vhodné. Provedli jsme v nich však několik změn.
 
 ![To filter or not to filter](https://cdn.adtidy.org/public/Adguard/Common/page_filtering.png)
 

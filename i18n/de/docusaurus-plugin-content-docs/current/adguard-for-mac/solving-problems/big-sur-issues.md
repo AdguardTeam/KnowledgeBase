@@ -3,7 +3,7 @@ title: Kompatibilitätsprobleme mit verschiedenen macOS-Versionen
 sidebar_position: 4
 ---
 
-:::info
+:::Info
 
 This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -88,9 +88,7 @@ Now AdGuard can filter local proxies (mostly) without any problems. Wenn Sie in 
 
 :::
 
-Um einen Upstream-Proxy in AdGuard für Mac in Big Sur zu konfigurieren, müssen Sie zum *AdGuard-Menü → Erweitert → Erweiterte Einstellungen...* gehen. Klicken Sie auf die Schaltfläche *Wert* der `upstream.proxy`-Einstellung zum Konfigurieren eines Proxys.
-
-![Proxy-Einstellungen in AdGuard für Mac auf Big Sur](https://cdn.adtidy.org/content/kb/ad_blocker/mac/proxy_en.jpg)
+To configure an upstream proxy in AdGuard for Mac in Big Sur, open AdGuard's settings *Preferences → Network → Outbound proxy*. Click the *Value* area of the `upstream.proxy` setting to configure a proxy.
 
 Geben Sie eine Zeichenfolge ein, die wie folgt aussieht: `scheme://user:password@host:port`, wobei
 
@@ -185,7 +183,7 @@ Nachdem SIP deaktiviert ist, aktivieren Sie die Kernel-Erweiterung folgendermaß
 
 1) Öffnen Sie das AdGuard-Menü. 2) Wählen Sie *Einstellungen...*. 3) Wechseln Sie auf die Registerkarte *Netzwerk*. 4) Klicken Sie auf die Schaltfläche *Modus auswählen...*. 5) Wählen Sie *Kernel-Erweiterung* aus. 6) Bestätigen Sie, dass Sie zur Kernel-Erweiterung wechseln möchten.
 
-:::caution
+:::Zur Beachtung
 
 Wir empfehlen jedoch nur, diese Methode zu verwenden, wenn alles andere fehlschlägt, da dies zu unerwarteten Problemen führen kann.
 

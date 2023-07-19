@@ -33,8 +33,8 @@ In seltenen Fällen kann es vorkommen, dass ein Browser mit dem Browser-Assisten
 
 :::
 
-## Separate Registerkarte in den Einstellungen
-Der neue Browser-Assistent hat eine eigene Registerkarte in den Einstellungen von AdGuard für Mac, zusammen mit Privatsphären-Modus, Internetsicherheit, Kindersicherung und anderen. Machen Sie sich keine Sorgen, wenn Sie die Möglichkeit verpasst haben, den Browser-Assistenten während des Onboardings zu installieren, Sie finden diese Option in den Einstellungen der App. Außerdem gibt es ein Kontrollkästchen, um den alten Assistenten zu aktivieren.
+## Separate tab in Settings
+The new Browser Assistant has its own tab in the AdGuard for Mac settings, together with Stealth Mode, Browsing Security, Parental Control and others. Machen Sie sich keine Sorgen, wenn Sie die Möglichkeit verpasst haben, den Browser-Assistenten während des Onboardings zu installieren, Sie finden diese Option in den Einstellungen der App. Außerdem gibt es ein Kontrollkästchen, um den alten Assistenten zu aktivieren.
 
 ![Browser-Assistent](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant-separate-tab.png)
 
@@ -46,4 +46,4 @@ Technisch gesehen müssen Sie dies nicht selbst tun: Während des Onboarding-Pro
 
 AdGuard Browser-Assistent ist für alle gängigen Browser verfügbar: Chrome, Firefox, Safari, Edge, Opera und Yandex. Um den Browser-Assistenten für Ihren Standardbrowser zu installieren, können Sie dies direkt über die App-Einstellungen tun, aber Sie haben auch die Möglichkeit, ihn für andere Browser zu installieren.
 
-Um das benötigte zu installieren (oder viele, es ist nicht verboten, aber sogar empfohlen), gehen Sie zu [unserer Website](https://adguard.com/en/adguard-assistant/overview.html), klicken Sie auf das Browsersymbol und dann auf die Schaltfläche *Installieren*. Das war's!
+To install the one you need (or many, it is not prohibited but even encouraged), go to [our website](https://adguard.com/adguard-assistant/overview.html), click the browser icon and then the *Install* button. Das war's!

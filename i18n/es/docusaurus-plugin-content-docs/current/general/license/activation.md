@@ -97,7 +97,7 @@ or double-click the AdGuard icon in the system tray:
 
 3. Toca **Iniciar sesión** en la esquina superior derecha de la pantalla
 
-![Toca Iniciar sesión en la esquina superior derecha de la pantalla Premium *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense1en.png)
+![Tap Log in in the top right corner of the Premium screen *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense1en.png)
 
 4. Ingresa **correo electrónico** y **contraseña** de tu **cuenta de AdGuard**
 

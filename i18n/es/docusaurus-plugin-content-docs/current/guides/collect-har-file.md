@@ -26,7 +26,7 @@ Para crear un archivo HAR en Chrome:
 
 7. Marca la casilla de verificación ***Desactivar caché***.
 
-![chrome](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/chrome.png)
+![Chrome](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/chrome.png)
 
 8. Reproduce los pasos que crean el problema.
 
@@ -139,7 +139,7 @@ Para crear un archivo HAR en Chrome:
 
 ## Android {#android}
 
-Para obtener archivos HAR, sigue estos pasos:
+To create HAR files, follow these steps:
 
 1. Abra AdGuard y ve a ***Configuración***.
 

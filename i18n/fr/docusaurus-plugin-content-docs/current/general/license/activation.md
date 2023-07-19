@@ -97,7 +97,7 @@ soit double-cliquez sur l'icône AdGuard dans la barre d'état système :
 
 3. Appuyez sur **Se connecter** dans le coin supérieur droit de l'écran
 
-![Appuyez sur Connexion dans le coin supérieur droit de l'écran Premium *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense1en.png)
+![Tap Log in in the top right corner of the Premium screen *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense1en.png)
 
 4. Saisissez **l'email** et **le mot de passe** de votre **compte AdGuard**
 

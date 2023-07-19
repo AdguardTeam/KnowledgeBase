@@ -3,7 +3,7 @@ title: HAR dosyası nasıl toplanır
 sidebar_position: 1
 ---
 
-HAR files help our technical support teams troubleshoot complex issues. To create these files, we recommend using Chrome or Firefox. However, IE 11, Edge, and Safari also provide `.har` file generation and export capability.
+HAR files help our technical support teams troubleshoot complex issues. Bu dosyaları oluşturmak için Chrome veya Firefox kullanmanızı tavsiye ederiz. Ancak, IE 11, Edge ve Safari de `.har` dosyası oluşturma ve dışa aktarma özelliği sağlar.
 
 ## Chrome {#chrome}
 
@@ -26,7 +26,7 @@ Chrome'da bir HAR dosyası oluşturmak için:
 
 7. Check the ***Disable cache*** check box.
 
-![chrome](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/chrome.png)
+![Chrome](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/chrome.png)
 
 8. Reproduce the steps that create the issue.
 
@@ -63,7 +63,7 @@ Chrome'da bir HAR dosyası oluşturmak için:
 
 ## Firefox {#firefox}
 
-To create a HAR file in Firefox:
+Firefox'ta HAR dosyası oluşturmak için:
 
 1. Sorunun oluştuğu URL'ye gidin. Sorunu henüz yeniden oluşturmayın.
 
@@ -139,7 +139,7 @@ Safari'de bir HAR dosyası oluşturmak için:
 
 ## Android {#android}
 
-To get HAR files follow these steps:
+HAR dosyaları oluşturmak için şu adımları izleyin:
 
 1. Open AdGuard and go to ***Settings***.
 

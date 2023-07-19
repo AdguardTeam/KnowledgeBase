@@ -48,7 +48,7 @@ We don't recommend touching other settings you'll find inside the *Advanced sett
 
 3. 아래 링크를 복사합니다. `https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt` (AdGuard DNS 필터의 링크)
 4. *iOS용 AdGuard 설정* → *DNS 보호* → *DNS 필터링*(고급 모드가 활성화된 상태에서 사용 가능) → *DNS 필터*를 엽니다.
-5. Tap *Add a filter*, paste the link into the filter URL field, and yap 'Next'.
+5. Tap *Add a filter*, paste the link into the filter URL field, and tap 'Next'.
 
 ![DNS 필터 화면 추가 *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_adding_a_filter.PNG)
 

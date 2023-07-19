@@ -12,11 +12,11 @@ Ti suggeriamo vivamente di leggere correttamente questo articolo, per scoprire d
 
 I sostantivi in diverse lingue, possono avere diverse forme plurali. Il loro utilizzo dipende dal numero di cose di cui parli.
 
-Ad esempio, le parole in inglese hanno due forme, parlando di qualcosa al singolare, come *'one star'* e, al plurale, *'two stars'*. Non importa che tu dica cinque, ventisei o persino cinquecentotrentadue stars (stelle), la 's' finale rimarrà la stessa. Ma certe lingue possono contenere soltanto una o più forme plurali.
+For instance, English words have two word forms when speaking about something in the singular, like *'one star'*, and in the plural — *'two stars'*. It doesn’t matter if you say five, twenty six or even five hundred thirty two stars — the ending 's' will remain the same. Ma certe lingue possono contenere soltanto una o più forme plurali.
 
-A differenza dell'inglese, il polacco ha tre forme plurali dei sostantivi. Una di esse è utilizzata parlando di qualcosa al singolare, un'altra al plurale ma con numeri che terminano per 2 o 4, esclusi 12 e 14, e la terza: per parole precedute da altri numeri.
+A differenza dell'inglese, il polacco ha tre forme plurali dei sostantivi. One of them is used when speaking about something in the singular, another form is used in the plural but with numbers ending in 2-4, excluding 12-14, and the third form — for words with other numbers in front of them.
 
-Diamo un'occhiata a quest'immagine. Qui, puoi vedere il gruppo di numeri che determinano la forma di una parola, quando ci si trova di fronte.
+Let’s take a look at this picture. Qui, puoi vedere il gruppo di numeri che determinano la forma di una parola, quando ci si trova di fronte.
 
 ![Polacco](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
@@ -94,7 +94,7 @@ Sei pregato di prestare attenzione traducendo e approvando tali stringhe. Se non
 
 Questo è il tipo più complicato di stringhe di AdGuard, prevalentemente utilizzato nel progetto `AdGuard Websites`.
 
-Presta particolare attenzione al simbolo della barra verticale tra le frasi e ai segnaposto **%count%** nelle frasi originali: ti aiuteranno a identificare dove le traduzioni richiedono l'utilizzo delle forme plurali.
+Pay close attention to a vertical bar sign between the sentences and **%count%** placeholders in original phrases — this will help you identify phrases where translations require the use of plural forms.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/plurals_site.png)
 
@@ -108,9 +108,9 @@ Tornando all'esempio, poiché la lingua inglese include soltanto due forme, dovr
 
 `Standard license for *%count%* computer | Standard license for *%count%* computers`
 
-dove **modello 1** –Standard license for *%count%* computer,
+where **template 1** is Standard license for *%count%* computer,
 
-e **modello 2** – Standard license for *%count%* computers
+and **template 2** is Standard license for *%count%* computers
 
 Un'altra cosa importante a cui dovresti prestare attenzione sono i segnaposto **%count%** che, solitamente, si trovano prima delle parole che definiscono. Invece di **%count%**, qui, appariranno vari numeri, a seconda di quali modelli sono scelti.
 
@@ -147,7 +147,7 @@ E ancora: se ti imbatti in una frase originale con due elementi importanti: **il
 
 + Fai riferimento alla regola del plurale della lingua verso cui traduci;
 
-The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms – two templates in translations; five plural forms – five templates, etc.
+The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms — two templates in translations; five plural forms — five templates, etc.
 
 + Non dimenticarti di utilizzare un simbolo barra verticale tra i modelli, come rappresentato nelle stringhe originali;
 

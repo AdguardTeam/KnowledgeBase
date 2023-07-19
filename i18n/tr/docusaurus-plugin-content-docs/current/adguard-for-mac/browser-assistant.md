@@ -33,8 +33,8 @@ On rare occasions, a browser may prove incompatible with the Browser Assistant, 
 
 :::
 
-## Separate tab in settings
-The new Browser Assistant has its own tab in AdGuard for Mac settings, together with Stealth Mode, Browsing Security, Parental Control and others. Don’t worry if you missed the opportunity to install Browser Assistant during the onboarding, you'll find this option in the app's settings. Besides, there is a checkbox to enable the legacy Assistant.
+## Ayarlar'da ayrı sekme
+Yeni Tarayıcı Asistanı, Mac için AdGuard ayarlarında Gizlilik Modu, Gezinti Koruması, Ebeveyn Denetimi ve diğerleriyle birlikte kendi sekmesine sahiptir. Don’t worry if you missed the opportunity to install Browser Assistant during the onboarding, you'll find this option in the app's settings. Besides, there is a checkbox to enable the legacy Assistant.
 
 ![Browser Assistant tab](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant-separate-tab.png)
 
@@ -46,4 +46,4 @@ Technically, you won’t need to do it on your own: during the onboarding proces
 
 AdGuard Browser Assistant is available for all popular browsers: Chrome, Firefox, Safari, Edge, Opera, and Yandex. To install the Browser Assistant for your default browser, you can do it directly from the app settings, but you also have an opportunity to install it for other browsers.
 
-To install the one you need (or many, it is not prohibited but even encouraged), go to [our website](https://adguard.com/en/adguard-assistant/overview.html), click the browser icon and then the *Install* button. Bu kadar!
+To install the one you need (or many, it is not prohibited but even encouraged), go to [our website](https://adguard.com/adguard-assistant/overview.html), click the browser icon and then the *Install* button. Bu kadar!

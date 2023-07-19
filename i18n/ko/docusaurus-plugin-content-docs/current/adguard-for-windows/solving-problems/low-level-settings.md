@@ -75,7 +75,11 @@ AdGuard가 필터 구독 URL(예: `abp:subscribe` 등)을 자동으로 가로채
 
 7.12 버전부터 시스템 시작 시 AdGard 실행 옵션이 비활성화되어 있는 경우, 기본적으로 AdGard 서비스는 OS 시작 후 트래픽을 필터링하지 않습니다. 즉, AdGuard의 서비스는 '유휴' 모드에서 시작됩니다. 이 옵션을 활성화하면 앱이 실행되지 않은 상태에서도 AdGuard가 트래픽을 필터링하도록 설정할 수 있습니다.
 
-*Note that before v7.12 the AdGuard's service started in filtering mode by default (even if the *Launch AdGuard at system start-up* was disabled). If you were satisfied with the old behavior, enable this option.*
+:::note
+
+Before v7.12, the AdGuard service started in filtering mode by default (even if the *Launch AdGuard at system start-up* was disabled). If you were satisfied with the old behavior, enable this option.
+
+:::
 
 ### 로컬 호스트 필터링
 
@@ -129,13 +133,21 @@ Valid values: 1–1500. 잘못된 크기를 지정하면 시스템에서 선택�
 
 킵얼라이브 프로브를 보내기 전에 유휴 기간을 초 단위로 지정할 수 있습니다. If 0 is specified, the value selected by the system will be used.
 
-이 설정은 *TCP 연결 유지 사용* 옵션이 활성화된 경우에만 작동합니다.
+:::note
+
+This setting only works when the *Enable TCP keepalive* option is enabled.
+
+:::
 
 ### TCP 연결 유지 시간 초과
 
 Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. 0을 지정하면 시스템에서 선택한 값이 사용됩니다.
 
-이 설정은 *TCP 연결 유지 사용* 옵션이 활성화된 경우에만 작동합니다.
+:::note
+
+This setting only works when the *Enable TCP keepalive* option is enabled.
+
+:::
 
 ### Java 차단
 

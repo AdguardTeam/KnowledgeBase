@@ -27,13 +27,17 @@ AdGuard подключается к двум хостам: `api.adguard.org` и 
 
 Если вам нужно накатить обновление, используйте эту команду: `Msiexec /q /i AdGuard.msi REINSTALL=ALL REINSTALLMODE=vomus`
 
-**Пожалуйста, обратите внимание, что вы должны запускать эти команды с правами администратора.**
+:::note
 
-If you want to install AdGuard on a Windows 7 computer, make sure that it has .NET 4 Client Profile installed: https://www.microsoft.com/en-us/download/details.aspx?id=24872
+Вы должны запускать эти команды с правами администратора.
+
+:::
+
+Если вы хотите установить AdGuard на машину с Windows 7, убедитесь, что на ней установлен .NET 4 Client Profile: https://www.microsoft.com/en-us/download/details.aspx?id=24872
 
 :::info
 
-Automatic updates are disabled when you install AdGuard for Windows from MSI. Если вы всё-таки хотите разрешить обновления пользователю (что не рекомендуется, т. к. в таком случае станет невозможным централизованное обновление), то в в реестре у ключа `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` параметру `AllowCheckUpdates` нужно присвоить значение `YES` (нечувствителен к регистру). В таком случае обновления будут разрешены, любое другое значение или отсутствие значения у данного параметра в реестре запрещает автоматические обновления.
+При установке AdGuard для Windows из MSI автоматические обновления AdGuard не происходят. Если вы всё-таки хотите разрешить обновления пользователю (что не рекомендуется, т. к. в таком случае станет невозможным централизованное обновление), то в в реестре у ключа `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` параметру `AllowCheckUpdates` нужно присвоить значение `YES` (нечувствителен к регистру). В таком случае обновления будут разрешены, любое другое значение или отсутствие значения у данного параметра в реестре запрещает автоматические обновления.
 
 :::note
 

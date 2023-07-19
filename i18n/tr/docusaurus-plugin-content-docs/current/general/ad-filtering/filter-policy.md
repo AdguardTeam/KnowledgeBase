@@ -3,7 +3,7 @@ title: AdGuard filter policy
 sidebar_position: 6
 ---
 
-When discussing AdGuard ad filters, one topic often comes up – whether AdGuard should block this or that ad. By setting the rules, we stick to specific criteria that are very similar to [EasyList Policy](https://easylist.to/pages/policy.html), which we find correct and appropriate. However, we have made some changes to it.
+AdGuard reklam filtrelerini tartışırken, AdGuard'ın bunu mu yoksa bu reklamı mı engellemesi gerektiği gibi sık sık bir konu ortaya çıkar. By setting the rules, we stick to specific criteria that are very similar to [EasyList Policy](https://easylist.to/pages/policy.html), which we find correct and appropriate. However, we have made some changes to it.
 
 ![To filter or not to filter](https://cdn.adtidy.org/public/Adguard/Common/page_filtering.png)
 
@@ -11,7 +11,7 @@ When discussing AdGuard ad filters, one topic often comes up – whether AdGuard
 
 Throughout this text, we use the terms **first party** and **third party**.
 
-A "first party" is a website that a user visits intentionally and knowingly, plus a set of resources on the web operated by the same organization. In practice, we consider resources to belong to the same party if they are part of the same registrable domain: a public suffix plus one additional label. Example: `site.example`, `www.site.example`, and `s.u.b.site.example` belong to the same party because `site.example` is their common registrable domain.
+"Birinci taraf", bir kullanıcının bilerek ve isteyerek ziyaret ettiği bir sitesiyle aynı kuruluş tarafından işletilen web üzerindeki bir dizi kaynaktır. In practice, we consider resources to belong to the same party if they are part of the same registrable domain: a public suffix plus one additional label. Example: `site.example`, `www.site.example`, and `s.u.b.site.example` belong to the same party because `site.example` is their common registrable domain.
 
 A "third party" is any party that does not fall within the definition of the first party above. Interactions with other parties are considered third-party, even if the user is transiently informed in context (for example, in the form of a redirect). Merely hovering over, muting, pausing, or closing a given piece of content does not constitute an intention to interact.
 
@@ -104,9 +104,9 @@ Bir kural aşağıda açıklanan kısıtlamalar listesine dahilse, bu filtreye e
 - Site işlevselliğiyle ilgili sorunlara neden olan kurallar kaldırılacaktır.
 - Siteye özgü kurallar, yalnızca bir site yeterli trafiğe sahipse eklenecektir. Trafik, açık istatistiklerle (varsa) veya sosyal medyadaki takipçiler gibi başka yollarla belirlenir. Ayda 100 bin ziyareti olan bir site trafiği yeterli kabul edilir. Çok popüler olmayan bir site için bir kural eklemeyi düşüneceğiz, ancak son karar filtre listesi yöneticisine aittir.
 
-## Filter unblocking search ads and self-promotion
+## Arama motoru reklamları ve öz tanıtımına izin veren filtre
 
-Unlike other filters, this one **unblocks** certain ads. Read more about it in the [article on search ads and self-promotion](../search-ads).
+Diğer filtrelerin aksine, bu filtre belirli reklamların **engelini kaldırır**. Read more about it in the [article on search ads and self-promotion](../search-ads).
 
 **Bu filtre ile nelerin engeli kaldırılacaktır?**
 

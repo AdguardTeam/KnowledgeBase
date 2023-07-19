@@ -1,5 +1,5 @@
 ---
-title: How to activate
+title: Nasıl etkinleştirilir
 sidebar_position: 3
 ---
 
@@ -9,7 +9,7 @@ To activate your license, go to the *License* section of your AdGuard product an
 
 :::note
 
-To activate a license via the AdGuard account, a valid license with at least one free slot is required. If your license is already used on a maximum number of devices, you can [upgrade it](../payment-options#upgrade) or [transfer it from one device to another](../transfer).
+AdGuard hesabı aracılığıyla bir lisansı etkinleştirmek için en az bir boş alana sahip geçerli bir lisans gereklidir. If your license is already used on a maximum number of devices, you can [upgrade it](../payment-options#upgrade) or [transfer it from one device to another](../transfer).
 
 :::
 
@@ -27,7 +27,7 @@ Bunu yapmak için masaüstündeki AdGuard simgesine çift tıklayın:
 
 veya sistem tepsisindeki AdGuard simgesine çift tıklayın:
 
-![AdGuard icon in the system tray](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windows2En.png)
+![Sistem tepsisindeki AdGuard simgesi](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windows2En.png)
 
 2. Go to **License** tab in the app menu and click **Activate license**
 
@@ -77,7 +77,7 @@ veya sistem tepsisindeki AdGuard simgesine çift tıklayın:
 
 4. Tap **three-dot menu (⋮)** in the top right corner of the screen
 
-![Tap three-dot menu *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/android2En.png)
+![Üç noktalı menüye dokunun *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/android2En.png)
 
 5. Press **Activate Premium**, and you will be presented with two activation options:
 
@@ -89,15 +89,15 @@ veya sistem tepsisindeki AdGuard simgesine çift tıklayın:
 
 ![Enter your license key to activate *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/androidlicense3en.png)
 
-### Activating AdGuard for iOS
+### iOS için AdGuard'ı etkinleştirme
 
-1. Open the AdGuard app and tap the **gear icon** in the bottom right corner of the screen
+1. AdGuard uygulamasını açın ve ekranın sağ alt köşesindeki **dişli çark simgesine** dokunun
 
-2. Tap **License**
+2. **Lisans** öğesine dokunun
 
-3. Tap **Log in** in the top right corner of the screen
+3. Ekranın sağ üst köşesindeki **Giriş yap** öğesine dokunun
 
-![Tap Log in in the top right corner of Premium screen *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense1en.png)
+![Premium ekranın sağ üst köşesindeki Giriş yap öğesine dokunun *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense1en.png)
 
 4. Enter **email** and **password** from your **AdGuard account**
 

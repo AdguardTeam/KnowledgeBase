@@ -49,7 +49,7 @@ Use the Import feature to transfer your rules to a different device.
 
 Nowadays almost all websites work via HTTPS, the web protocol where the last S letter stands for "secure". It happened so that most advertisers use this protocol as well, this is why [HTTPS filtering](/general/https-filtering/what-is-https-filtering) is really crucial for a modern ad blocker.
 
-![What is https](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https.png)
+![What is HTTPS](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https.png)
 
 To be able to filter HTTPS traffic, AdGuard needs to install a certificate into your device's user storage. On older versions of Android OS this was done automatically during the onboarding process or later via AdGuard settings, and it only required a couple of taps. On Android 11 and later automatic certificate installation is no longer available. Now you need to install the certificate manually.
 
@@ -174,7 +174,7 @@ The simplicity of this approach is both a benefit and a disadvantage. The main a
 
 ## DNS servers
 
-But AdGuard for Android "DNS package" does not end just there. One of the useful perks is an option to select *absolutely any* DNS server to use. At your service is a list consisting of dozens of servers to choose from, from our own AdGuard DNS servers to other popular providers like Google DNS, Cloudflare and others. On top of that, if your favorite server is not in the default list, you still can enter its address manually and use it anyway. See the comprehensive list of popular DNS providers — you can find many DNS servers there and any to AdGuard with a tap of a finger.
+But AdGuard for Android "DNS package" does not end just there. One of the useful perks is an option to select *absolutely any* DNS server to use. At your service is a list consisting of dozens of servers to choose from, from our own AdGuard DNS servers to other popular providers like Google DNS, Cloudflare and others. On top of that, if your favorite server is not in the default list, you still can enter its address manually and use it anyway. See the comprehensive list of popular DNS providers — you can find many DNS servers there and add any to AdGuard with a tap of a finger.
 
 There are several reasons to use a custom DNS server instead of one offered by your ISP by default. Some servers are faster, some provide ad blocking or parental control solutions, some enhance your privacy etc.
 
@@ -237,13 +237,13 @@ The best kind of compatibility is when you install two apps and they just start 
 
 ![Compatibility *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/compatibility.png)
 
-Both apps will detect each other and do everything that's needed for smooth joint work. All that will be left for you is to enjoy both ad-free Internet and the benefits of a VPN. It also works the other way around just as well: install AdGuard Ad Blocker on top of an already-running AdGuard VPN and you're good.
+Both apps will detect each other and do everything that's needed for smooth joint work. All that will be left for you is to enjoy both ad-free Internet and the benefits of a VPN. It also works the other way around just as well: install AdGuard Ad Blocker on top of an already-running AdGuard VPN and you're good to go.
 
 If you'd like to disable Compatibility Mode for any reason, it's very simple to do so from AdGuard Ad Blocker settings, just toggle the switch. Additionally, you can add AdGuard Ad Blocker and AdGuard VPN tiles to your device's notification bar and toggle them in one tap at your own will — thanks to Compatibility Mode the configuration will change immediately and silently.
 
 ## License
 
-While some ot the features in AdGuard for Android are free, others require [purchasing a license](https://adguard.com/en/license.html). There are Personal (up to three devices) and Family (up to 9 devices), Yearly and Lifetime license keys. The premium version offers the following features to its users:
+While some ot the features in AdGuard for Android are free, others require [purchasing a license](https://adguard.com/license.html). There are Personal (up to three devices) and Family (up to 9 devices), Yearly and Lifetime license keys. The premium version offers the following features to its users:
 * Stealth Mode
 * Browsing security
 * Extensions
@@ -258,6 +258,6 @@ There are too many features to describe them all in detail, so let us simply lis
 
 * When you visit certain screens for the first time, there will appear tooltips that describe the purpose of that screen and its main features
 * You can export or import AdGuard settings (for a faster switch between the settings profiles or to transfer your profile between different devices)
-* Select an update channel, i.e. the mode in which the application receives its updates (stable release channel, less stable beta channel and raw ["nightly" channel](https://adguard.com/en/blog/nightly-builds/)
+* Select an update channel, i.e. the mode in which the app receives its updates (stable release channel, less stable beta channel and raw ["nightly" channel](https://adguard.com/en/blog/nightly-builds/)
 * By tapping a little battery icon on the main screen of the app you will get to the "Battery Usage" screen. System battery stats [are often wrong](../solving-problems/battery), so we decided to have our own, one that would reflect the real state of things
 * You can change the app's language in the General Settings tab

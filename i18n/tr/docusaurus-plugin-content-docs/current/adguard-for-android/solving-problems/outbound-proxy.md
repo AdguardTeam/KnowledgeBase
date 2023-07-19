@@ -97,7 +97,11 @@ Now AdGuard will forward all traffic through Orbot. If you disable Orbot, Intern
 
 *Here we presume that you have already configured a Shadowsocks server and a client on your device.*
 
-**Note: You should remove Shadowsocks application from filtering before setting up the process (AdGuard - Apps management - Shadowsocks - Disable AdGuard protection) to avoid infinite loops and drops.**
+:::note
+
+You should remove Shadowsocks application from filtering before setting up the process (AdGuard → Apps management → Shadowsocks → Disable AdGuard protection) to avoid infinite loops and drops.
+
+:::
 
 1. AdGuard'ı açın ve **Ayarlar** → **Ağ** → **Proxy ayarları** öğesine gidin.
 

@@ -5,7 +5,7 @@ sidebar_position: 8
 
 :::info
 
-This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+В этой статье рассказывается об AdGuard для Windows — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://adguard.com/download.html?auto=true)
 
 :::
 
@@ -26,7 +26,7 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 :::note
 
-AdGuard for Windows has two running processes (`Adguard.exe` and `AdguardSvc.exe`). Поэтому вам нужно создать файл дампа отдельно для каждого процесса.
+AdGuard для Windows имеет два запущенных процесса (`Adguard.exe` и `AdguardSvc.exe`). Поэтому вам нужно создать файл дампа отдельно для каждого процесса.
 
 :::
 

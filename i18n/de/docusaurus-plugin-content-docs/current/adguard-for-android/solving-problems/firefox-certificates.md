@@ -3,7 +3,7 @@ title: Manual installation of the security certificate into the Firefox browser
 sidebar_position: 11
 ---
 
-:::info
+:::Info
 
 This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 

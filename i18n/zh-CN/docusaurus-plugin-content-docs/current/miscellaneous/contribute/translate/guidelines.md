@@ -16,7 +16,12 @@ sidebar_position: 3
 选择任何可用的软件文件夹并选择一个文件，现在您可以开始翻译了。
 
 ![文件1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/files.png)
-> 请注意：用户也可以通过点击页面右上角的「*Settings*」图标改变 Crowdin 的界面语言。 在打开的窗口中向下滚动到「*UI language*」标签。 打开它，选择一种语言，然后点击「**Change**」。
+
+:::note
+
+You can also change the Crowdin interface language by clicking the *Settings* icon in the top right corner of the page. 在打开的窗口中向下滚动到「*UI language*」标签。 打开它，选择一种语言，然后点击「**Change**」。
+
+:::
 
 ![语言1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/settings_en.png)
 
@@ -44,7 +49,11 @@ sidebar_position: 3
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/screenshot.png)
 
-请注意您也可以按「REQUEST」按钮以要求我们为您提供具体的内容。
+:::tip
+
+You can request context by clicking the "REQUEST" button.
+
+:::
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/request.png)
 

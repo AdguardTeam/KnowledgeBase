@@ -15,7 +15,7 @@ AdGuard nabízí řadu softwarových produktů, které blokují reklamy a slídi
 
 ## Dostupnost {#br-extension}
 
-[Rozšíření prohlížeče AdGuard](https://adguard.com/en/adguard-browser-extension/overview.html) je k dispozici pro většinu známých prohlížečů. Snadno jej najdete v internetovém obchodě svého prohlížeče nebo na našich oficiálních stránkách.
+[AdGuard Browser Extension](https://adguard.com/adguard-browser-extension/overview.html) is available for most major browsers. Snadno jej najdete v internetovém obchodě svého prohlížeče nebo na našich oficiálních stránkách.
 
 ![Dostupné pro většinu oblíbených prohlížečů *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
 

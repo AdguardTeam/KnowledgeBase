@@ -123,7 +123,7 @@ AdGuard Extra is essentially a mini-program that changes the way pages work,and 
 
 **AdGuard Popup Blocker**
 
-This extension prevents popup windows from opening when you view web pages. Some pop-ups are considered useful – they may contain settings for site administering or additional reference information demonstrated upon clicking a link. That is why you can turn off the Blocker if needed. This extension doesn’t work on websites added to the AdGuard exceptions list either. It is turned off by default, but you can turn it on in the application settings. You will find more detailed information about this extension in our Knowledge base.
+This extension prevents popup windows from opening when you view web pages. Some pop-ups are considered useful — they may contain settings for site administering or additional reference information demonstrated upon clicking a link. That is why you can turn off the Blocker if needed. This extension doesn’t work on websites added to the AdGuard exceptions list either. It is turned off by default, but you can turn it on in the application settings. You will find more detailed information about this extension in our Knowledge base.
 
 **Web of Trust**
 
@@ -158,13 +158,13 @@ To get more information about AdGuard VPN dive into the [AdGuard VPN Knowledge B
 
 There are other useful AdGuard options that shouldn't go unnoticed in this article, since they add much to user experience.
 
-### Suporte
+### Support
 
 ![Support *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/support.png)
 
 By clicking the Support tab you will open a dialog box through which you can report a bug, submit a feature request, or simply share your opinion of the product.
 
-### Licença
+### License
 
 ![License *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
 
@@ -172,7 +172,7 @@ This tab contains information about your license. Here you can:
 * find out the license type (nightly build, beta or release), the number of devices available for simultaneous connection to AdGuard, the license expiration date;
 * click the button to go to the license purchase page, and activate, reset or recover a license.
 
-### Sobre
+### About
 
 ![About *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
 

@@ -1,9 +1,9 @@
 ---
-title: What is AdGuard license
+title: AdGuard lisansı nedir
 sidebar_position: 1
 ---
 
-## What is AdGuard license
+## AdGuard lisansı nedir
 
 A license is permission to use the AdGuard product, provided in accordance with the End User License Agreement. AdGuard licenses exist in the form of license keys, activation codes, and product cards in the user's [AdGuard account](../../account/register).
 

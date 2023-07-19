@@ -3,7 +3,7 @@ title: Common installer errors
 sidebar_position: 6
 ---
 
-:::info
+:::Info
 
 Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 

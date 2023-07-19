@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-This article is about the filters that we develop and that come pre-installed in AdGuard. To check them out, you can [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Эта статья о фильтрах, которые мы разрабатываем и которые предустановлены в AdGuard. Чтобы проверить их, [скачайте приложение AdGuard](https://adguard.com/download.html?auto=true)
 
 :::
 

@@ -14,11 +14,11 @@ sidebar_position: 3
 ### Совместимость с основным приложением
 Если вы привыкли использовать предыдущее расширение блокировщика рекламы AdGuard [в режиме интеграции](/adguard-browser-extension/integration-mode), вам может понравиться решение, которое мы разработали для нового Браузерного помощника.
 
-:::note Background information
+:::note Справка
 
-In previous versions of the AdGuard Browser Extension (before v3.5), if you had it installed along with a desktop AdGuard for Mac, the extension took over the functions of Assistant, stopped filtering itself and relied on the app to do this. The extension and the app worked in conjunction but sometimes the integration would fail. Some websites would stop being protected by the desktop program and be backed up only by the less powerful extension.
+В предыдущих версиях Браузерного расширения AdGuard (до версии 3.5), если оно было установлено вместе с AdGuard для Mac, расширение брало на себя функции Помощника, прекращало фильтровать самостоятельно и полагалось на приложение. Расширение и приложение работали вместе, но иногда интеграция давала сбой. Приложение прекращало фильтровать некоторые сайты, вместо него это делало расширение, обладающее заметно меньшими возможностями.
 
-When using the Browser Assistant, all these problems don’t matter as there can be no conflicts in essence. The role of the Browser Assistant is well defined and it can’t hinder the functioning of the main app, so there is no need to worry.
+При использовании Браузерного помощника все эти проблемы не имеют значения, поскольку конфликтов по сути быть не может. Роль Браузерного помощника чётко определена, и он не может помешать работе основного приложения, так что не о чем беспокоиться.
 
 :::
 
@@ -33,8 +33,8 @@ When using the Browser Assistant, all these problems don’t matter as there can
 
 :::
 
-## Отдельная вкладка в настройках
-У нового Браузерного помощника есть своя вкладка в настройках AdGuard для Mac, наряду с Антитрекингом, Антифишингом и другими. Не волнуйтесь, если пропустили шаг со скачиванием Браузерного помощника во время установки, вы найдёте эту опцию в настройках приложения. Кроме того, там можно установить флажок для включения прежней версии Помощника.
+## Отдельная вкладка в Настройках
+У нового Браузерного Помощника есть своя вкладка в настройках AdGuard для Mac, наряду с Антитрекингом, Антифишингом и другими. Не волнуйтесь, если пропустили шаг со скачиванием Браузерного помощника во время установки, вы найдёте эту опцию в настройках приложения. Кроме того, там можно установить флажок для включения прежней версии Помощника.
 
 ![Вкладка Браузерного помощника](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant-separate-tab.png)
 
@@ -46,4 +46,4 @@ When using the Browser Assistant, all these problems don’t matter as there can
 
 Браузерный помощник AdGuard доступен для всех популярных браузеров: Chrome, Firefox, Safari, Edge, Opera и Яндекс.Браузера. Установить Браузерный помощник для браузера по умолчанию можно прямо из настроек приложения, но у вас также есть возможность установить его для других браузеров.
 
-Чтобы установить Помощник для нужного браузера (или несколько, это не запрещено, а даже приветствуется), перейдите на [наш сайт](https://adguard.com/ru/adguard-assistant/overview.html), кликните на иконку браузера и нажмите кнопку *«Скачать»*. Вот и всё!
+Чтобы установить Помощник для нужного браузера (или несколько, это не запрещено, а даже приветствуется), перейдите на [наш сайт](https://adguard.com/adguard-assistant/overview.html), кликните на иконку браузера и нажмите кнопку *«Скачать»*. Вот и всё!

@@ -16,7 +16,12 @@ Mezi jazyky budete moci přepínat i po otevření určitých složek produktů.
 Vyberte některou z dostupných složek produktu a vyberte soubor — nyní můžete začít překládat.
 
 ![Files *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/files.png)
-> Upozornění: Jazyk rozhraní Crowdin můžete změnit také kliknutím na ikonu *Nastavení* v pravém horním rohu stránky. V otevřeném okně přejděte na kartu *UI language*. Otevřete jej, vyberte jazyk a klikněte na **Change**.
+
+:::note
+
+You can also change the Crowdin interface language by clicking the *Settings* icon in the top right corner of the page. V otevřeném okně přejděte na kartu *UI language*. Otevřete jej, vyberte jazyk a klikněte na **Change**.
+
+:::
 
 ![Language1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/settings_en.png)
 
@@ -44,7 +49,11 @@ Můžete navrhnout svůj překlad termínů v projektu [AdGuard Glossary](https:
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/screenshot.png)
 
-Vezměte prosím na vědomí, že kontext si můžete vyžádat kliknutím na tlačítko "REQUEST".
+:::tip
+
+You can request context by clicking the "REQUEST" button.
+
+:::
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/request.png)
 
