@@ -3,7 +3,7 @@ title: Problémy související s certifikátem
 sidebar_position: 2
 ---
 
-:::note
+:::info
 
 Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 
@@ -68,4 +68,3 @@ AdGuard však mezi důvěryhodné certifikáty přidává také svůj certifiká
 Nejjednodušší způsob je kliknout na tlačítko **Přejít na web**. Tím řeknete prohlížeči Yandex.Browser, aby si certifikát AdGuardu alespoň na chvíli zapamatoval jako důvěryhodný. Obvykle se tato zpráva již nezobrazuje, ale není vyloučeno, že se občas z nějakých důvodů objeví. V takových případech stačí znovu stisknout stejné tlačítko *(ujistěte se, že se jedná o certifikát AdGuardu!)*.
 
 Vypnutím HTTPS filtrování v AdGuardu také zabráníte tomu, aby prohlížeč Yandex.Browser tuto zprávu znovu zobrazoval, ale má to velkou nevýhodu: zobrazí se všechny reklamy, které se načítají pomocí HTTPS (včetně **vlastních reklam společnosti Yandex**) — např. na webových stránkách YouTube, Facebook, Instagram a mnoha dalších. Pokud chcete zachovat vysokou kvalitu blokování reklam, důrazně vám to nedoporučujeme.
-

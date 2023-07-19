@@ -3,7 +3,7 @@ title: Průvodce nízkoúrovňových nastavení
 sidebar_position: 6
 ---
 
-:::note
+:::info
 
 Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 
@@ -11,7 +11,11 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 ## Jak dosáhnout nízkoúrovňových nastavení
 
-> Změna *Nízkoúrovňových nastavení* může způsobit problémy s výkonem AdGuardu, může přerušit internetové připojení nebo ohrozit vaši bezpečnost a soukromí. Tuto část byste měli otevřít pouze v případě, že jste si jisti tím, co děláte, nebo pokud se vás na to zeptal náš tým podpory.
+:::caution
+
+Změna *Nízkoúrovňových nastavení* může způsobit problémy s výkonem AdGuardu, může přerušit internetové připojení nebo ohrozit vaši bezpečnost a soukromí. Tuto část byste měli otevřít pouze v případě, že jste si jisti tím, co děláte, nebo pokud se vás na to zeptal náš tým podpory.
+
+:::
 
 Chcete-li přejít na *Nízkoúrovňová nastavení*, otevřete aplikaci AdGuard a klepněte na ikonu ozubeného kola v pravém dolním rohu obrazovky. Poté zvolte *Obecné → Pokročilé → Nízkoůrovňová nastavení*.
 

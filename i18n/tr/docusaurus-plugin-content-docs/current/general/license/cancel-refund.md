@@ -13,13 +13,13 @@ Abonelik, AdGuard hesabınızdan iptal edilebilir. Aboneliğinizi iptal etmek i�
 
  İptal edilen abonelik, sona erme tarihine kadar geçerli olacaktır.
 
-> App Store'dan satın alınan abonelikler, App Store hesabında veya cihazın ayarlarında yönetilebilir.
+Subscriptions purchased on the App Store can be managed in the App Store account or in the device's settings.
 
 ## Para iadesi nasıl alınır
 
-In accordance with our [Terms of Sale](https://adguard.com/terms-of-sale.html), you can get a 100% refund on the AdGuard license key you purchased at https://adguard.com. Para iadesi almak için **support@adguard.com** adresinden destek ekibimizle iletişime geçin ve kullandığınız ödeme seçeneğini belirtin.
+In accordance with our [Terms of Sale](https://adguard.com/terms-of-sale.html), you can get a 100% refund on the AdGuard license key you purchased at https://adguard.com. To get a refund, contact our support team at **support@adguard.com** and specify the payment option you've used.
 
-Aşağıdaki durumlarda para iadesi reddedilebilir:
+A refund may be declined if:
 * a license was purchased more than 60 days ago,
 * a license was purchased from a distributor,
 * a license was purchased from the App Store,

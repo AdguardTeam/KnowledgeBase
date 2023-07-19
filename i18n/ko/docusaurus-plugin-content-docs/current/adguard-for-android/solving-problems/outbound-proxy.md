@@ -3,7 +3,7 @@ title: How to setup outbound proxy
 sidebar_position: 8
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -33,11 +33,11 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 5. AdGuard 보호를 활성화합니다.
 
-> 이제는 AdGuard가 Orbot 프록시를 통해 트래픽을 전달합니다. Orbot 프록시를 비활성화하는 경우, AdGuard에서 아웃바운드 프록시 설정을 비활성화할 때까지 인터넷 연결을 사용할 수 없습니다.
+Now AdGuard will forward all traffic through Orbot. If you disable Orbot, Internet connection will be unavailable until you disable outbound proxy settings in AdGuard.
 
 ### PIA(Private Internet Access)와 함께 AdGuard를 사용하는 방법
 
-*기기에 PIA VPN이 이미 설치되어 있는 경우 다음 단계를 따르세요.*
+*Here we presume that you are already a PIA VPN client and have it installed on your device.*
 
 1. Open AdGuard and go to **Settings** → **Network** → **Proxy settings**.
 
@@ -57,7 +57,7 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 ### TorGuard와 함께 AdGuard를 사용하는 방법
 
-*기기에 TorGuard가 이미 설치되어 있는 경우 다음 단계를 따르세요.*
+*Here we presume that you are already a TorGuard client and have it installed on your device.*
 
 1. Open AdGuard and go to **Settings** → **Network** → **Proxy settings**.
 
@@ -95,9 +95,9 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 ### Shadowsock과 함께 AdGuard를 사용하는 방법
 
-*기기에 Shadowsock가 이미 설치되어 있는 경우 다음 단계를 따르세요.*
+*Here we presume that you have already configured a Shadowsocks server and a client on your device.*
 
-**참고: 무한 루프와 드롭을 방지하려면 설정하기 전에 필터링에서 Shadowsock 앱을 제거해야 합니다. (AdGuard -> 앱 관리 -> Shadowsocks -> 보호 비활성화).**
+**Note: You should remove Shadowsocks application from filtering before setting up the process (AdGuard - Apps management - Shadowsocks - Disable AdGuard protection) to avoid infinite loops and drops.**
 
 1. Open AdGuard and go to **Settings** → **Network** → **Proxy settings**.
 
@@ -113,4 +113,4 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 ### 제한
 
-특정 트래픽이 발신 프록시를 통해 라우팅되는 것을 방지할 수 있는 요소가 있습니다. AdGuard는 자신을 통과하는 트래픽만 다시 라우팅합니다. **앱 관리** 탭에서 **광고 차단** 확인란이 활성화된 앱을 의미합니다.
+There is a factor that can prevent certain traffic from being routed through the outgoing proxy. AdGuard will only re-route traffic that goes through it. Basically, it means apps that have **Ad blocking** flag enabled in the **Apps Management** tab.

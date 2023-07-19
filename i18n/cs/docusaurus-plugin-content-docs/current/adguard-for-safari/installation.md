@@ -3,6 +3,12 @@ title: Instalace
 sidebar_position: 2
 ---
 
+:::info
+
+Tento článek je o AdGuardu pro Safari, který chrání pouze váš prohlížeč Safari. Chcete-li chránit celé zařízení, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## Jak nainstalovat AdGuard pro Safari {#install}
 
 AdGuard pro Safari je bezplatná aplikace uvedená v App Store. Chcete-li ji nainstalovat do zařízení, postupujte takto.
@@ -17,7 +23,11 @@ AdGuard pro Safari je bezplatná aplikace uvedená v App Store. Chcete-li ji nai
 
 ![Oznámení: Některá rozšíření jsou zakázána](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-notification.png)
 
-> Pro správnou funkci AdGuardu pro Safari nejsou nutná všechna rozšíření. Například zaškrtnutím rozšíření *Icon* zapnete ikonu v nabídce. Doporučujeme však povolit všechny.
+:::note
+
+Pro správnou funkci AdGuardu pro Safari nejsou nutná všechna rozšíření. Například zaškrtnutím rozšíření *Icon* zapnete ikonu v nabídce. Doporučujeme však povolit všechny.
+
+:::
 
 ![Rozšíření zaškrtnuta](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-extensions-checked.png)
 

@@ -13,7 +13,7 @@ sidebar_position: 8
 
 [AdGuard for Mac](/adguard-for-mac/installation)
 
-[AdGuard ブラウザ拡張機能](/adguard-browser-extension/installation)
+[AdGuard Browser Extension](/adguard-browser-extension/installation)
 
 [AdGuard for Safari](/adguard-for-safari/installation)
 

@@ -3,7 +3,7 @@ title: How to get Logcat log
 sidebar_position: 4
 ---
 
-:::note
+:::info
 
 Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Android için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
 
@@ -32,7 +32,11 @@ To get a bug report directly from your device, do the following:
 
 5. Send this log to our support team.
 
-> Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+:::note
+
+Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+
+:::
 
 ## Additional Instruction (for old Android versions)
 
@@ -67,7 +71,7 @@ Direct download link:
 
 3. Run this command in the console (it will be opened after install):
 
-> adb logcat -v threadtime -d > C:\logcat.txt
+adb logcat -v threadtime -d > C:\logcat.txt
 
 Send this log to us by contacting support or by any other way.
 
@@ -83,4 +87,8 @@ Send this log to us by contacting support or by any other way.
 
 5. Send this log to our support team.
 
-> Note: Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+:::note
+
+Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+
+:::

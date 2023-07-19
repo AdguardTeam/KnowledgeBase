@@ -3,7 +3,7 @@ title: Low Level Settings guide
 sidebar_position: 6
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -11,7 +11,11 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 ## How to reach the Low-level settings
 
-> Das Ändern von *Low-Level-Einstellungen* kann Probleme mit der Leistung von AdGuard verursachen, die Internetverbindung unterbrechen oder Ihre Sicherheit und Privatsphäre gefährden. You should only open this section if you are sure of what you are doing or our support-team has asked you about it.
+:::caution
+
+Das Ändern von *Low-Level-Einstellungen* kann Probleme mit der Leistung von AdGuard verursachen, die Internetverbindung unterbrechen oder Ihre Sicherheit und Privatsphäre gefährden. You should only open this section if you are sure of what you are doing or our support-team has asked you about it.
+
+:::
 
 To go to *Low-level settings*, open the AdGuard app and tap the gear icon in the lower right corner of the screen. Then choose *General → Advanced → Low-level settings*.
 
@@ -99,7 +103,7 @@ Here you can enable HAR file capture. Use it only for debugging purposes! If the
 
 #### Encrypted Client Hello
 
-Jede verschlüsselte Internetverbindung hat einen unverschlüsselten Teil. Dies ist das allererste Paket, das den Namen des Servers enthält, mit dem Sie sich verbinden. Die verschlüsselte Client-Hallo-Technologie soll dieses Problem lösen und das letzte bisschen an unverschlüsselter Information verschlüsseln. To benefit from it, enable the *Encrypted Client Hello* option. Er verwendet einen lokalen DNS-Proxy, um nach der ECH-Konfiguration für die Domain zu suchen. Wenn es gefunden wird, wird das ClientHello-Paket verschlüsselt.
+Jede verschlüsselte Internetverbindung hat einen unverschlüsselten Teil. Dies ist das allererste Paket, das den Namen des Servers enthält, mit dem Sie sich verbinden. Die verschlüsselte Client-Hallo-Technologie soll dieses Problem lösen und das letzte bisschen an unverschlüsselter Information verschlüsseln. To benefit from it, enable the *Encrypted Client Hello* option. It uses a local DNS proxy to look for the ECH configuration for the domain. Wenn es gefunden wird, wird das ClientHello-Paket verschlüsselt.
 
 #### OCSP checking
 

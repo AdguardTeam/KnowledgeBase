@@ -7,7 +7,7 @@ sidebar_position: 2
 
 AdGuard license can be bought on [adguard.com](https://adguard.com/license.html). AdGuard Pro for iOS can be bought on the App Store. Ad Blocker licenses are also sold by various distributors.
 
-> The availability of AdGuard products in app stores and by distributors depends on your country.
+The availability of AdGuard products in app stores and by distributors depends on your country.
 
 ## How to upgrade a license{#upgrade}
 

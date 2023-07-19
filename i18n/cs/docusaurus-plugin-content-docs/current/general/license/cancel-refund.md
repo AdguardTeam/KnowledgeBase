@@ -13,7 +13,7 @@ Předplatné lze zrušit ve vašem AdGuard účtu. Pro zrušení předplatného:
 
  Zrušené předplatné bude platné do data vypršení jeho platnosti.
 
-> Předplatné zakoupené v App Store lze spravovat v účtu App Store nebo v nastavení zařízení.
+Předplatné zakoupené v App Store lze spravovat v účtu App Store nebo v nastavení zařízení.
 
 ## Jak získat refundaci
 

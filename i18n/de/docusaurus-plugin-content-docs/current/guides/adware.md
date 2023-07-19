@@ -3,7 +3,11 @@ title: Adware & Viren
 sidebar_position: 6
 ---
 
-> **Bitte beachten Sie:** AdGuard ist kein Antivirenprogramm. Es kann Sie warnen, wenn Sie eine Malware- oder Phishing-Website besuchen, aber **kann keine Viren von Ihrem Gerät entfernen.**
+:::note
+
+AdGuard is not an antivirus program. Es kann Sie warnen, wenn Sie eine Malware- oder Phishing-Website besuchen, aber **kann keine Viren von Ihrem Gerät entfernen.**
+
+:::
 
 Wenn Sie vermuten, dass Ihr Computer mit Malware oder Viren infiziert ist, können Sie Ihren Computer zunächst mit Dienstprogrammen führender Antivirenprogramme untersuchen.
 

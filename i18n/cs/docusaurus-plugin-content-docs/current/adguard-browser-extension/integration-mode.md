@@ -5,7 +5,7 @@ sidebar_position: 3
 
 ## Co je režim integrace?
 
-Ve starších verzích Rozšíření prohlížeče AdGuard, pokud jste je měli nainstalované spolu s jednou z aplikací AdGuard pro PC (AdGuard pro Windows nebo AdGuard pro macOS), převzalo rozšíření funkce asistenta AdGuard. — nástroj, který pomohl spravovat filtrování přímo z webových stránek. Samotné blokování reklam přitom bylo zcela pod kontrolou desktopové aplikace. Rozšíření a jeho nastavení v tom nehrálo žádnou roli.
+Ve starších verzích Rozšíření prohlížeče AdGuard, pokud jste je měli nainstalované spolu s jednou z aplikací AdGuard pro PC (AdGuard pro Windows nebo AdGuard pro macOS), převzalo rozšíření funkce asistenta AdGuard — nástroj, který pomohl spravovat filtrování přímo z webových stránek. Samotné blokování reklam přitom bylo zcela pod kontrolou desktopové aplikace. Rozšíření a jeho nastavení v tom nehrálo žádnou roli.
 
 Problémem bylo, že v některých případech si aplikace a rozšíření vzájemně překážely v práci. Některé webové stránky přestaly být chráněny desktopovým programem a byly podpořeny pouze rozšířením, které má menší možnosti. Od verze Rozšíření prohlížeče AdGuard v3.5 byl tedy režim integrace odstraněn. Místo toho byl implementován nový AdGuard Asistent prohlížeče.
 

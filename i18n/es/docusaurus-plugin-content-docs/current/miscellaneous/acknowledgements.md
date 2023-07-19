@@ -44,7 +44,7 @@ Esta es la lista de bibliotecas y otros recursos que realmente nos ayudaron con 
 * Biblioteca Minizip-ng de Nathan Moinvaziri: [https://github.com/zlib-ng/minizip-ng](https://github.com/zlib-ng/minizip-ng)
 * Biblioteca Lottie para iOS de Brandon Withrow: [https://github.com/airbnb/lottie-ios](https://github.com/airbnb/lottie-ios)
 
-## Extensión de navegador de AdGuard {#extension}
+## Extensión de navegador AdGuard {#extension}
 
 * moment: [https://github.com/moment/moment](https://github.com/moment/moment)
 * simply-deferred: [https://github.com/sudhirj/simply-deferred](https://github.com/moment/moment)

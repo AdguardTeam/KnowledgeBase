@@ -3,7 +3,7 @@ title: Установка
 sidebar_position: 2
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -11,11 +11,11 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 ## Системные требования
 
-**Версия ОС:** Android 5.0 или выше.
+**OS version:** Android 7.0 or higher
 
-**Объём оперативной памяти**: от 2 ГБ.
+**Объём оперативной памяти**: от 2 ГБ
 
-**Свободное пространство на диске**: 120 МБ.
+**Free disk space:** 500 MB
 
 ## Установка
 
@@ -23,75 +23,54 @@ AdGuard для Android не представлен на Google Play: Google за
 
 Поэтому установить AdGuard для Android можно только вручную. Ниже — инструкции, как это сделать.
 
-Прежде всего, разрешите установку приложений из неизвестных источников в настройках ОС вашего устройства. Для этого нужно:
+1. **Download the app on your device**. Here are a few ways you can do this:
 
-* Для Android 8+: разрешите загрузку [AdGuard apk](https://adguard.com/download.html?auto=1) (см. следующий шаг), после чего дайте приложению необходимые разрешения. В открывшемся окне нажмите **Настройки** &gt **Далее из этого источника**. Продолжите установку.
-* Android 6 и 7: откройте **Настройки**, перейдите в пункт **Система и устройство** и выберите **Расширенные настройки**. Сдвиньте переключатель **Неизвестные источники** вправо. В сообщении предупреждения нажмите **ОК**.
+    * head over to [our website](https://adguard.com/adguard-android/overview.html) and tap the *Download* button
+    * start the browser and type in the following URL: [https://adguard.com/apk](https://adguard.com/apk)
+    * or scan this QR code
 
-![Установка приложений из неизвестных источников *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/unknown_sources1.png)
+    ![QR code *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_qr.png)
 
-* Android 5: откройте **Настройки**, затем в разделе **Личные данные** выберите пункт **Безопасность**. Сдвиньте переключатель **Неизвестные источники** вправо. В сообщении предупреждения нажмите **ОК**.
+2. **Allow installing apps from unknown sources**. Once the file download is complete, tap *Open* in the notification.
 
-![Установка приложений из неизвестных источников *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/unknown_sources2.png)
+![Installing apps from unknown sources *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_1.png)
 
-Теперь можно установить приложение. Запустите браузер и введите [https://adguard.com/apk](https://adguard.com/apk) или отсканируйте QR-код:
+A popup will appear. Tap *Settings*, navigate to *Install unknown apps*, and grant permission for the browser you've used to download the file.
 
-![QR-код *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/qr.png)
+![Installing apps from unknown sources *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_3.png)
 
-Вы увидите запрос на сохранение загруженного файла. Нажмите **ОК**.
+This guide is for Android 8+. If you have an older OS version, before downloading the apk file, go to *Settings* and select *Additional settings* in *System & Device*. Enable *Unknown sources* and tap *OK* in the system warning window.
 
-![Сохраните файл *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/save_the_file.png)
+3. **Install the app**. Once the browser has obtained the necessary permissions, the system will ask you if you want to install the AdGuard application. Tap *Install*.
 
-Когда загрузка завершится, система попросит подтверждения. Нажмите **Установить**.
+![Installing apps from unknown sources *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_4.png)
 
-![Установка *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/1.png)
+You will then be asked to read AdGuard's *License Agreement* and *Privacy Policy*. Вы также можете помочь в разработке продукта. To do this, check the boxes for *Send crash reports automatically* and *Send technical and interaction data*. Then tap *Continue*.
 
-Вам предложат прочитать **Лицензионное соглашение** и **Политику конфиденциальности**. Вы также можете помочь в разработке продукта. Для этого отметьте галочкой *Отправлять автоматические отчёты об ошибках* и *Отправлять технические данные и информацию о взаимодействиях*. После этого нажмите**Принять**.
+![Политика конфиденциальности *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_3.png)
 
-![Политика конфиденциальности *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/2.png)
+4. **Create a local VPN**. In order to filter all traffic directly on your device and not route it through a remote server, AdGuard needs to establish a VPN connection.
 
-Дальше вам нужно будет выбрать между **быстрой** и **полной** настройкой.
+![Create a local VPN *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_2.png)
 
-![Настройки *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/3.png)
+5. **Enable HTTPS filtering**. It is not a mandatory option, however, we advice to turn it on for the best ad-blocking quality.
 
-Полная настройка запускает серию экранов, на которых можно настроить функции приложения под себя. Сначала вас спросят, хотите ли вы видеть поисковую рекламу:
+If your device is running Android 7–9, you'll be prompted to install a root certificate and configure HTTPS filtering after the local VPN setup.
 
-![Поисковая реклама *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/5.png)
+![Enable HTTPS filtering on Android 7-9 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/cert_1.jpg)
 
-Затем укажите, хотите ли вы блокировать виджеты соцсетей:
+After you tap *Install now*, a prompt will appear asking you to authenticate the certificate installation with a password or fingerprint.
 
-![Социальные виджеты *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/6.png)
+![Enable HTTPS filtering on Android 7-9. Step 2 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/cert_2.jpg)
 
-На следующем экране вас спросят, блокировать ли раздражители: уведомления о файлах cookie, окна онлайн-консультантов и др.:
+If you have Android 10+ on your device, then after creating a local VPN, you will see the main app screen with a snack bar at the bottom: tap *Enable* and follow the instructions on the next screen.
 
-![Раздражители *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/7.png)
-
-На этом экране вам не нужно ничего выбирать: просто обратите внимание на информацию о том, как смотреть видео на YouTube без рекламы:
-
-![YouTube *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/youtube.jpg)
-
-Далее появится экран настроек защиты от трекинга. Выберите желаемый уровень защиты:
-
-![Настройки конфиденциальности *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/8.png)
-
-На следующем экране выберите, хотите ли вы получать уведомления об опасных сайтах:
-
-![Безопасность *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/9.png)
-
-Следующий шаг довольно важен. Вам предложат включить HTTPS-фильтрацию. Рекомендуем сделать это, чтобы блокировать рекламу на большинстве сайтов и приложений:
-
-![HTTPS-фильтрация *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/10.png)
-
-Последний шаг — включить локальный VPN:
-
-![Локальный VPN *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/11.png)
-
-Установка **AdGuard** завершена.
+![Enable HTTPS filtering *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_5.png)
 
 ## Удаление/переустановка AdGuard
 
-Если вам нужно переустановить AdGuard на устройстве, сначала удалите его. Для этого откройте **Настройки** и выберите **Установленные приложения** (Android 6), **Приложения** (Android 5 и 7) или **Приложения и уведомления** (Android 8+). Найдите **AdGuard** в списке установленных приложений и нажмите **Удалить**.
+If you need to reinstall AdGuard on your mobile device, first delete it by opening **Settings** and choosing **Apps** (Android 7) or **Apps & notifications** (Android 8+). Найдите **AdGuard** в списке установленных приложений и нажмите **Удалить**.
 
-![Переустановите AdGuard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/12.png)
+![Переустановите AdGuard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_4.png)
 
 Чтобы переустановить приложение, повторите действия, описанные в разделе «Установка».

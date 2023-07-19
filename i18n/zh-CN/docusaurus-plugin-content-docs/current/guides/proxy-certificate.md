@@ -5,7 +5,11 @@ sidebar_position: 2
 
 桌面 AdGuard 应用程序 (适用于 Windows 和 Mac 的 AdGuard) 可以用作代理。 这意味着您可以通过 AdGuard 路由其他设备的流量（全部或特定应用程序或浏览器的流量）。
 
-> 请注意，这些设备必须与已安装 AdGuard 的 PC 或 Mac 位于同一网络中。
+:::note
+
+These devices must be in the same network as the PC or Mac on which AdGuard is installed.
+
+:::
 
 在任何情况下，HTTP 流量都会被过滤，但是要使 AdGuard 能够过滤 HTTPS 流量，您需要在连接的设备上手动安装 AdGuard 证书。
 

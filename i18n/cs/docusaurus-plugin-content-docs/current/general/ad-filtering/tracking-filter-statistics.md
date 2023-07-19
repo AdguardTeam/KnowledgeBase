@@ -3,7 +3,11 @@ title: Statistiky pravidel filtrů sledování
 sidebar_position: 4
 ---
 
-> POZNÁMKA: Možnost *"Odesílat statistiky o použití filtrů reklam"* je ve výchozím nastavení vypnutá. Nic nebude odesláno, pokud to uživatel ručně nepovolí.
+:::note
+
+Možnost *"Odesílat statistiky o použití filtrů reklam"* je ve výchozím nastavení vypnutá. Nic nebude odesláno, pokud to uživatel ručně nepovolí.
+
+:::
 
 ### Proč potřebujeme filtry reklam?
 

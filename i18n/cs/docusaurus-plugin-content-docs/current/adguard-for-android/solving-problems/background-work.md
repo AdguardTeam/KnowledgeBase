@@ -3,7 +3,7 @@ title: Jak chránit AdGuard před ukončením systémem
 sidebar_position: 9
 ---
 
-:::note
+:::info
 
 Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 
@@ -267,7 +267,11 @@ Pro spolehlivé procesy na pozadí může být také nutné odinstalovat **Power
 
 ### Zařízení s EMUI 9+ a PowerGenie
 
-> Poznámka: V telefonech s EMUI 9+ (Android P+) je k dispozici aplikace PowerGenie, která nutí ukončit všechny aplikace, které nejsou na seznamu povolených společnosti Huawei, a neposkytuje uživatelům žádné možnosti konfigurace. Níže naleznete návod, jak ji odinstalovat.
+:::note
+
+V telefonech s EMUI 9+ (Android P+) je k dispozici aplikace PowerGenie, která nutí ukončit všechny aplikace, které nejsou na seznamu povolených společnosti Huawei, a neposkytuje uživatelům žádné možnosti konfigurace. Níže naleznete návod, jak ji odinstalovat.
+
+:::
 
 Společnost Huawei je při ukončování aplikací ve svých zařízeních velmi vynalézavá. Kromě všech níže popsaných nestandardních opatření pro správu napájení představili v systému Android Pie aplikaci pro ukončování úloh integrovanou přímo do rozhraní EMUI 9.
 
@@ -275,7 +279,11 @@ Jmenuje se **PowerGenie** a ukončuje všechny aplikace, které nejsou na seznam
 
 Bohužel se jedná o systémovou aplikaci, kterou lze plně odinstalovat pouze pomocí ADB (Android Debug Bridge).
 
-> Zdroj: [XDA](https://forum.xda-developers.com/mate-20-pro/themes/remove-powergenie-to-allow-background-t3890409).
+:::note Zdroj
+
+[XDA forum](https://forum.xda-developers.com/mate-20-pro/themes/remove-powergenie-to-allow-background-t3890409).
+
+:::
 
 **Musíte**:
 
@@ -312,11 +320,11 @@ Otevřete nastavení zařízení → **Aplikace** → **Nastavení** → **Speci
 
 ### Huawei P20, Huawei Honor 9 Lite a Huawei Mate 9 Pro:
 
-Otevřete nastavení zařízení → **Baterie** → **Spouštění aplikací **> poté nastavte AdGuard na **Spravovat ručně** a zkontrolujte, zda je vše zapnuto.
+Otevřete nastavení zařízení → **Baterie** → **Spouštění aplikací ** nastavte AdGuard na **Spravovat ručně** a zkontrolujte, zda je vše zapnuto.
 
 ### Huawei P20, Huawei P20 Lite, Huawei Mate 10:
 
-**Nastavení zařízení** → **Baterie** → **Spouštění aplikací **> </strong> poté nastavte AdGuard na **Spravovat ručně** a zkontrolujte, zda je vše zapnuto. Pro spolehlivé procesy na pozadí může být také nutné odinstalovat PowerGenie, jak je popsáno výše.
+**Nastavení zařízení** → **Baterie** → **Spouštění aplikací** → nastavte AdGuard na **Spravovat ručně** a zkontrolujte, zda je vše zapnuto. Pro spolehlivé procesy na pozadí může být také nutné odinstalovat PowerGenie, jak je popsáno výše.
 
 ### Starší zařízení Huawei
 
@@ -388,7 +396,11 @@ V těchto zařízeních je k dispozici nástroj **DuraSpeed**, který ukončuje 
 
 ![Nokia tasker *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/nokia_tasker.png)
 
-> POZNÁMKA: Potřebujete nastavit typ **Obecný** i **Systém**. Na snímku obrazovky je jako příklad zobrazen pouze obecný.
+:::note
+
+Potřebujete nastavit typ **Obecný** i **Systém**. Na snímku obrazovky je jako příklad zobrazen pouze obecný.
+
+:::
 
 ### Další modely Nokia
 
@@ -450,7 +462,11 @@ Nejproblematičtější jsou zařízení s operačním systémem OxygenOS, kter�
 
 ![Oneplusdots *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/android/oneplusdots.png)
 
-> Na některých telefonech OnePlus existuje také funkce nazvaná Automatické spouštění aplikací a hloubková optimalizace, která zabraňuje práci aplikací na pozadí. Deaktivujte ji pro AdGuard.
+:::caution
+
+Na některých telefonech OnePlus existuje také funkce nazvaná Automatické spouštění aplikací a hloubková optimalizace, která zabraňuje práci aplikací na pozadí. Deaktivujte ji pro AdGuard.
+
+:::
 
 ### Optimalizace baterie
 

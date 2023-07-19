@@ -13,13 +13,13 @@ sidebar_position: 5
 
  Отменённая подписка будет действительна до истечения срока её действия.
 
-> Подписками, купленными в App Store, можно управлять в учётной записи App Store или в настройках устройства.
+Subscriptions purchased on the App Store can be managed in the App Store account or in the device's settings.
 
 ## Как получить возврат
 
-В соответствии с нашими [Условиями продажи](https://adguard.com/terms-of-sale.html), вы можете получить 100% возврат средств за лицензионный ключ AdGuard, который приобрели на https://adguard.com. Чтобы получить возврат, свяжитесь с нашей командой поддержки по адресу **support@adguard.com** и укажите способ оплаты, который вы использовали.
+In accordance with our [Terms of Sale](https://adguard.com/terms-of-sale.html), you can get a 100% refund on the AdGuard license key you purchased at https://adguard.com. To get a refund, contact our support team at **support@adguard.com** and specify the payment option you've used.
 
-В возврате может быть отказано, если вы:
+A refund may be declined if:
 * лицензия была приобретена более 60 дней назад,
 * лицензия была приобретена у дистрибьютора,
 * лицензия была приобретена в App Store,

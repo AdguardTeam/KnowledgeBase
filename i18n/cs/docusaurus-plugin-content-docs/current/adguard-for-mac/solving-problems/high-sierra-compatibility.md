@@ -3,7 +3,7 @@ title: Jak nainstalovat AdGuard v systému macOS High Sierra a novějším
 sidebar_position: 3
 ---
 
-:::note
+:::info
 
 Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 

@@ -5,7 +5,11 @@ sidebar_position: 2
 
 Desktopové aplikace AdGuardu (AdGuard pro Windows a AdGuard pro Mac) lze použít jako proxy. To znamená, že můžete přesměrovat provoz jiných zařízení přes AdGuard (zcela, nebo provoz konkrétních aplikací/prohlížečů).
 
-> Všimněte si, že tato zařízení musí být ve stejné síti jako PC nebo Mac, na kterém je AdGuard nainstalován.
+:::note
+
+Tato zařízení musí být ve stejné síti jako PC nebo Mac, na kterém je AdGuard nainstalován.
+
+:::
 
 Provoz HTTP bude filtrován v každém případě, ale aby AdGuard mohl filtrovat provoz HTTPS, je třeba do připojeného zařízení ručně nainstalovat AdGuard certifikát.
 

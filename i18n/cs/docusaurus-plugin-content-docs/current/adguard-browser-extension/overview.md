@@ -3,7 +3,7 @@ title: Přehled funkcí
 sidebar_position: 1
 ---
 
-:::note
+:::info
 
 Tento článek je o Rozšíření prohlížeče AdGuard, které chrání pouze váš prohlížeč. Chcete-li chránit celé zařízení, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 
@@ -11,7 +11,7 @@ Tento článek je o Rozšíření prohlížeče AdGuard, které chrání pouze v
 
 AdGuard nabízí řadu softwarových produktů, které blokují reklamy a slídiče na různých platformách. Jedním z nejoblíbenějších produktů AdGuardu je bezplatné rozšíření, které funguje v pěti oblíbených prohlížečích: Chrome, Firefox, Edge, Opera a Yandex Browser. Rozšíření prohlížeče obsahují základní funkce pro blokování reklam, ale nelze je srovnávat s plnohodnotnými programy pro stolní počítače, jako jsou např. [AdGuard pro Windows](/adguard-for-windows/overview) a [AdGuard pro macOS](/adguard-for-mac/overview).
 
-![Rozšíření prohlížeče AdGuard pro Chrome *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
+![AdGuard Browser Extension for Chrome *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
 
 ## Dostupnost {#br-extension}
 
@@ -19,7 +19,11 @@ AdGuard nabízí řadu softwarových produktů, které blokují reklamy a slídi
 
 ![Dostupné pro většinu oblíbených prohlížečů *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
 
-> Máme samostatné rozšíření pro Safari. Od vydání [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html) se u většiny rozšíření pro blokování reklam objevily velké problémy, a mnoho z nich přestalo fungovat. Museli jsme vyvinout samostatné rozšíření [pro Safari](/adguard-for-safari/overview), které má oproti rozšíření popsanému v tomto článku některé odlišnosti.
+:::note
+
+Máme samostatné rozšíření pro Safari. Od vydání [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html) se u většiny rozšíření pro blokování reklam objevily velké problémy, a mnoho z nich přestalo fungovat. Museli jsme vyvinout samostatné rozšíření [pro Safari](/adguard-for-safari/overview), které má oproti rozšíření popsanému v tomto článku některé odlišnosti.
+
+:::
 
 **Nezapomeňte, že funkčnost každého rozšíření je přísně omezena možnostmi prohlížeče.** Pokud tedy chcete získat plnohodnotnou ochranu, zvažte instalaci samostatného programu pro svůj počítač. Zde je [důvod, proč](#comparison).
 
@@ -83,7 +87,11 @@ Můžete také importovat a exportovat stávající seznamy povolených. To je u
 
 V Režimu utajení můžete zabránit tomu, aby webová stránka viděla vyhledávací dotazy, které jste použili k jejímu nalezení na internetu, automaticky odstranit soubory cookies třetích stran a vlastní soubory cookies webové stránky atd. Všem těmto funkcím je věnován [zvláštní článek](/general/stealth-mode).
 
-> Všimněte si, že některé možnosti *Režimu utajení* dostupné v plnohodnotných aplikacích nejsou v rozšířeních prohlížeče z důvodu technických omezení k dispozici.
+:::note
+
+Některé možnosti *Režimu utajení* dostupné v plnohodnotných aplikacích nejsou v rozšířeních prohlížeče z důvodu technických omezení k dispozici.
+
+:::
 
 ## Další funkce a možnosti {#other}
 

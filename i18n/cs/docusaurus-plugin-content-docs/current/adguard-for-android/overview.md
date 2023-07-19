@@ -3,13 +3,17 @@ title: Přehled funkcí
 sidebar_position: 1
 ---
 
-:::note
+:::info
 
 Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 
 :::
 
-> Upozornění: AdGuard pro Android nelze zaměňovat s Blokátorem obsahu AdGuard. Blokátor obsahu AdGuard je aplikace dostupná v Google Play, která má omezené funkce, aby splňovala stanovy obchodu. AdGuard pro Android je naopak výkonná aplikace pro blokování reklam, správu aplikací a další funkce, které jsou popsány v tomto článku. AdGuard pro Android můžete stáhnout [webových stránek AdGuardu](https://adguard.com/adguard-android/overview.html).
+::::::note Odmítnutí odpovědnosti
+
+AdGuard pro Android nelze zaměňovat s Blokátorem obsahu AdGuard. Blokátor obsahu AdGuard je aplikace dostupná v Google Play, která má omezené funkce, aby splňovala stanovy obchodu. AdGuard pro Android je naopak výkonná aplikace pro blokování reklam, správu aplikací a další funkce, které jsou popsány v tomto článku. AdGuard pro Android můžete stáhnout [webových stránek AdGuardu](https://adguard.com/adguard-android/overview.html).
+
+:::
 
 ## Blokování reklam
 
@@ -35,7 +39,11 @@ Více informací o všech filtrech dostupných pro produkty AdGuardu získáte p
 
 AdGuard umožňuje vytvářet vlastní filtry pomocí stejného typu pravidel, jaká máme v našich filtrech. Pokud si to chcete vyzkoušet, doporučujeme prostudovat článek o [vytváření vlastních filtrůreklam ](/general/ad-filtering/create-own-filters), který podrobně popisuje syntaxi pravidel AdGuardu a uvádí spoustu příkladů.
 
-> Tip: pomocí funkce Import přeneste svá pravidla do jiného zařízení.
+:::tip
+
+Pomocí funkce Import přeneste svá pravidla do jiného zařízení.
+
+:::
 
 ## HTTPS filtrování {#https-filtering}
 
@@ -63,11 +71,19 @@ Zde jsou pokyny k instalaci:
 
 8. Certifikát AdGuardu byl úspěšně nainstalován a filtrování HTTPS nyní funguje!
 
-> Pokud aktualizujete systém Android 10 na Android 11, je možné, že již nainstalovaný certifikát bude stále akceptován. V opačném případě se na hlavní obrazovce zobrazí oranžově zvýrazněné upozornění *Filtrování HTTPPS je vypnuto*. Proto budete muset stejný proces přeinstalace certifikátu provést ručně.
+:::note
+
+Pokud aktualizujete systém Android 10 na Android 11, je možné, že již nainstalovaný certifikát bude stále akceptován. V opačném případě se na hlavní obrazovce zobrazí oranžově zvýrazněné upozornění *Filtrování HTTPPS je vypnuto*. Proto budete muset stejný proces přeinstalace certifikátu provést ručně.
+
+:::
 
 V případě problémů s instalací certifikátu si přečtěte [tento článek](../solving-problems/manual-certificate) nebo kontaktujte náš tým podpory na adrese support@adguard.com.
 
-> **Chceme zdůraznit, že blokátor reklam AdGuard bude fungovat i bez filtrování HTTPS. Nebude však schopen správně filtrovat reklamy na webech, které používají protokol HTTPS (většina webů tak činí). Pokud tedy chcete využívat všechny funkce aplikace a získat nejlepší kvalitu filtrování reklam a rychlost zpracování, důrazně doporučujeme aktivovat filtrování HTTPS.**
+:::note
+
+**Chceme zdůraznit, že blokátor reklam AdGuard bude fungovat i bez filtrování HTTPS. Nebude však schopen správně filtrovat reklamy na webech, které používají protokol HTTPS (většina webů tak činí). Pokud tedy chcete využívat všechny funkce aplikace a získat nejlepší kvalitu filtrování reklam a rychlost zpracování, důrazně doporučujeme aktivovat filtrování HTTPS.**
+
+:::
 
 ## Režim utajení
 
@@ -87,7 +103,11 @@ Krádež identity je podvodná online praktika, jejímž cílem je získat od u�
 
 Modul Bezpečné prohlížení AdGuard vás naštěstí chrání před návštěvou těchto nebezpečných stránek. Upozorní vás také na malware stažený do vašeho zařízení. Pokud se chcete dozvědět více o Bezpečném prohlížení, přečtěte si [tento článek](/general/browsing-security).
 
-> Upozorňujeme však, že AdGuard pro Android není antivirus. Nezastaví ani samotné stahování viru, ani neodstraní již viry existující. Pro kompletní ochranu vašeho zařízení doporučujeme používat AdGuard společně se specializovaným antivirovým nástrojem.
+:::note
+
+AdGuard pro Android není antivir. Nezastaví ani samotné stahování viru, ani neodstraní již viry existující. Pro kompletní ochranu vašeho zařízení doporučujeme používat AdGuard společně se specializovaným antivirovým nástrojem.
+
+:::
 
 ![Upozornění Bezpečného prohlížení *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/browsing_security_warning.png)
 
@@ -193,7 +213,11 @@ Tato možnost je k dispozici v sekci *Nastavení → DNS filtrování → Blokov
 
 Proxy server je v podstatě další počítač sloužící jako centrum, které zpracovává vaše internetové požadavky. AdGuard můžete nastavit tak, aby směroval veškerý provoz vašeho zařízení přes libovolný proxy server — a celou věc budete moci nakonfigurovat přímo v aplikaci. A zde je [návod, jak nastavit proxy](../solving-problems/outbound-proxy).
 
-> Někteří populární poskytovatelé VPN nabízejí alternativní způsob, jak používat jejich služby jako proxy. To lze použít ke spuštění spolu s AdGuardem v místním režimu VPN.
+:::tip
+
+Někteří populární poskytovatelé VPN nabízejí alternativní způsob, jak používat jejich služby jako proxy. To lze použít ke spuštění spolu s AdGuardem v místním režimu VPN.
+
+:::
 
 ![Nastavení proxy *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/proxy-settings.png)
 

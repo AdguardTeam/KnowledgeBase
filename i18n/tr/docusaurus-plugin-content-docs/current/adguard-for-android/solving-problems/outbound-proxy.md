@@ -3,7 +3,7 @@ title: How to setup outbound proxy
 sidebar_position: 8
 ---
 
-:::note
+:::info
 
 Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Android için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
 
@@ -33,7 +33,7 @@ Or you can tap **Add proxy**, enter these values manually, and set Orbot as a de
 
 5. Enable AdGuard protection.
 
-> Now AdGuard will forward all traffic through Orbot. If you disable Orbot, Internet connection will be unavailable until you disable outbound proxy settings in AdGuard.
+Now AdGuard will forward all traffic through Orbot. If you disable Orbot, Internet connection will be unavailable until you disable outbound proxy settings in AdGuard.
 
 ### How to use AdGuard with PIA (Private Internet Access)
 

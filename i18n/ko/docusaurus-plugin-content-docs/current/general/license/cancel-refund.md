@@ -13,13 +13,13 @@ AdGuard 계정에서 구독을 취소할 수 있습니다. 구독을 취소하�
 
  취소된 구독은 만료일까지 유효합니다.
 
-> App Store에서 구매한 구독은 App Store 계정 또는 기기 설정에서 관리할 수 있습니다.
+Subscriptions purchased on the App Store can be managed in the App Store account or in the device's settings.
 
 ## 환불 받는 방법
 
-[판매 약관](https://adguard.com/terms-of-sale.html)에 따라 구매한 AdGuard 라이선스 키는 https://adguard.com에서 100% 환불 받을 수 있습니다. 환불을 받기 위해서는 지원 팀(**support@adguard.com**)에 문의하여 사용한 결제 옵션을 지정하세요.
+In accordance with our [Terms of Sale](https://adguard.com/terms-of-sale.html), you can get a 100% refund on the AdGuard license key you purchased at https://adguard.com. To get a refund, contact our support team at **support@adguard.com** and specify the payment option you've used.
 
-다음과 같은 경우 환불이 거부될 수 있습니다.
+A refund may be declined if:
 * 라이선스를 구매한 지 60일이 지난 경우,
 * 디스트리뷰터로부터 라이선스를 구매한 경우,
 * App Store에서 라이선스를 구매한 경우,

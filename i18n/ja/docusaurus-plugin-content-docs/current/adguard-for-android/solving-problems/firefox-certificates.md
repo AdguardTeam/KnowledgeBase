@@ -3,7 +3,7 @@ title: Firefoxブラウザへのセキュリティ証明書の手動インスト
 sidebar_position: 11
 ---
 
-:::note
+:::info
 
 This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -13,7 +13,11 @@ Firefoxのバージョンによって、AdGuardがHTTPS フィルタリングを
 
 ### 【対策①】
 
-> この方法は、Android版Firefoxのバージョン90.0以降で動作します。
+:::note
+
+この方法は、Android版Firefoxのバージョン90.0以降で動作します。
+
+:::
 
 Firefox (およびそれをベースにしたブラウザ) がAdGuard証明書を信頼できるようにするには、以下を行ってください:
 
@@ -31,10 +35,13 @@ Firefox (およびそれをベースにしたブラウザ) がAdGuard証明書�
 
 ### 【対策②】
 
-> この方法は、**root化された**デバイスでのみ機能します。
+:::note
 
-1. ADBをインストトールして設定します（方法：[Windows編](https://expnote.com/how-to-install-android-debug-bridge/)、[Mac編](https://child-programmer.com/m-adb/)）
-> Windowsでは、**Samsung** のユーザーは、[こちらのユーティリティ](https://developer.samsung.com/mobile/android-usb-driver.html)をインストールする必要があるかもしれません。
+この方法は、**root化された**デバイスでのみ機能します。
+
+:::
+
+1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
 2. **開発者モード**をアクティブにし、**USBデバッグ**を有効にします（※端末によって下記メニュー項目の名称が多少違ったりする場合がございます）:
     - Open the **Settings** app on your phone;
     - **システム**セクションに移動し（設定メニューの最後の項目）、 In this section, find the sub-item **About phone**;

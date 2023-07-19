@@ -5,7 +5,11 @@ sidebar_position: 1
 
 AdGuard nabízí mnoho produktů pro blokování reklam pro různé platformy a každý produkt má své vlastní jedinečné funkce. Všechny však spojuje to, že blokují reklamy a slídiče. Tento článek popisuje, jak blokování reklam funguje zevnitř.
 
-> Zde se nezabýváme DNS filtrováním. Jedná se o jiný způsob blokování reklam, který má své výhody i nevýhody. Kliknutím na tento odkaz získáte [další informace o DNS filtrování](https://adguard-dns.io/kb/general/dns-filtering#how-does-dns-filtering-work).
+:::note
+
+Zde se nezabýváme DNS filtrováním. Jedná se o jiný způsob blokování reklam, který má své výhody i nevýhody. Kliknutím na tento odkaz získáte [další informace o DNS filtrování](https://adguard-dns.io/kb/general/dns-filtering#how-does-dns-filtering-work).
+
+:::
 
 ## Obecný princip
 
@@ -27,7 +31,7 @@ Uživatelé AdGuardu [mají přístup ke speciálnímu webovému nástroji pro v
 
 Filtry umí více než jen blokovat reklamy. Existují filtry, které blokují sledování, widgety sociálních médií a obtěžující prvky, jako jsou upozornění na soubory cookies. Různí uživatelé si mohou zvolit různé kombinace filtrů podle svých osobních preferencí. Existují webové stránky jako [filterlists.com](https://filterlists.com/), které se věnují seznamům filtrů a mají obrovské databáze.
 
-> Vyvíjíme a spravujeme [vlastní sadu seznamů filtrů](../adguard-filters), které lze použít s AdGuardem nebo jinými blokátory reklam.
+Vyvíjíme a spravujeme [vlastní sadu seznamů filtrů](../adguard-filters), které lze použít s AdGuardem nebo jinými blokátory reklam.
 
 ## Typy pravidel filtrování
 
@@ -51,4 +55,8 @@ Ve většině případů stačí k filtrování reklam použít výše uvedená 
 
 Tato pravidla jsou poměrně složitá a vyžadují, aby blokátor reklam získal určitá přístupová práva, takže ne všechny platformy je podporují. V současné době tato pravidla fungují pouze v doplňku AdGuard pro Firefox a v aplikacích AdGuard pro Windows, Mac a Android.
 
-> Existují i další typy pravidel filtrování, ale jejich fungování vyžaduje pokročilejší technické znalosti. Pokud máte zájem, podívejte se na [našeho komplexního průvodce pravidly filtrování v odkazovaném článku](../create-own-filters).
+:::info
+
+Existují i další typy pravidel filtrování, ale jejich fungování vyžaduje pokročilejší technické znalosti. Pokud máte zájem, podívejte se na [našeho komplexního průvodce pravidly filtrování v odkazovaném článku](../create-own-filters).
+
+:::

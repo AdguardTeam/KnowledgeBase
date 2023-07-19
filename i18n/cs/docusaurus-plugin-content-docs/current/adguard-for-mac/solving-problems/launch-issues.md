@@ -3,7 +3,7 @@ title: Problémy se spouštěním v macOS
 sidebar_position: 6
 ---
 
-:::note
+:::info
 
 Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 
