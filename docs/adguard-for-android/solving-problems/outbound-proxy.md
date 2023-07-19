@@ -9,7 +9,7 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 :::
 
-AdGuard allows you to route your device's traffic through a proxy server. You can access proxy settings by opening **Settings** and then proceeding to **Filtering** → **Network** → **Proxy**.
+AdGuard allows you to route your device's traffic through a proxy server. To access proxy settings, open **Settings** and then proceed to **Filtering** → **Network** → **Proxy**.
 
 ## Proxy configuration examples
 
@@ -55,7 +55,7 @@ Now AdGuard will forward all traffic through Orbot. If you disable Orbot, Intern
 
 3. You also need to fill out the **Username/Password** fields. To do so, log in to the [Client Control Panel](https://www.privateinternetaccess.com/pages/client-sign-in) on the PIA website. Click the **Generate Password** button under the **Generate PPTP/L2TP/SOCKS Password** section. A username starting with "x" and a random password will be shown. Use them to fill out the **Proxy username** and **Proxy password** fields in AdGuard.
 
-4. Click **Save and select**.
+4. Tap **Save and select**.
 
 5. Enable the main Proxy switch and AdGuard protection to route your device's traffic through the proxy.
 
@@ -75,7 +75,7 @@ Now AdGuard will forward all traffic through Orbot. If you disable Orbot, Intern
 
 3. For **Username** and **Password** fields, enter your proxy username and proxy password you have chosen at TorGuard signup.
 
-4. Set this proxy as a default one by toggling the switch, then click **Save and select**.
+4. Tap **Save and select**.
 
 5. Enable the main Proxy switch and AdGuard protection to route your device's traffic through the proxy.
 
@@ -93,7 +93,7 @@ Now AdGuard will forward all traffic through Orbot. If you disable Orbot, Intern
 
 3. For **Username** and **Password** fields, enter your NordVPN Username and Password.
 
-4. Set this proxy as a default one by toggling the switch, then click **Save and select**.
+4. Tap **Save and select**.
 
 5. Enable the main Proxy switch and AdGuard protection to route your device's traffic through the proxy.
 
@@ -117,7 +117,9 @@ You should remove Shadowsocks application from filtering before setting up the p
     Proxy host | *127.0.0.1*
     Proxy port | *1080*
 
-3. Enable the main Proxy switch and AdGuard protection to route your device's traffic through the proxy.
+3. Tap **Save and select**.
+
+4. Enable the main Proxy switch and AdGuard protection to route your device's traffic through the proxy.
 
 ## Limitations
 
