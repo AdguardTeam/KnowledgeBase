@@ -32,7 +32,7 @@ You will see the following list of options:
 
 ### In the iOS settings
 
-Web extension is not a standalone tool and requires AdGuard for iOS. If you don't have AdGuard for iOS installed on your device, please [install it first](../installation) and complete the onboarding process to prepare it for work.
+The Web extension is not a standalone tool and requires AdGuard for iOS. If you don't have AdGuard for iOS installed on your device, please [install it first](../installation) and complete the onboarding process to prepare it for work.
 
 Once done, open *Settings → Safari → Extensions*.
 

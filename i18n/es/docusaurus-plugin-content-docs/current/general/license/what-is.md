@@ -1,9 +1,9 @@
 ---
-title: Qué es una licencia de AdGuard
+title: What is an AdGuard license
 sidebar_position: 1
 ---
 
-## Qué es una licencia de AdGuard
+## What is an AdGuard license
 
 Una licencia es un permiso para utilizar el producto AdGuard, proporcionado de conformidad con el Acuerdo de Licencia de Usuario Final. Las licencias de AdGuard existen en forma de claves de licencia, códigos de activación y tarjetas de producto en la [cuenta de AdGuard](../../account/register)del usuario.
 

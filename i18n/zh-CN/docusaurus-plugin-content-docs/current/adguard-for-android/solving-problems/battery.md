@@ -9,37 +9,23 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 :::
 
-有时用户会注意到，根据安卓内置统计，AdGuard 会消耗不少流量和/或电量。
+On Android devices running OS 6 and earlier, built-in statistics often attributed high data and/or battery usage to AdGuard. This was because AdGuard counted all the traffic it filtered from various apps. As a result, AdGuard's share of total data and battery usage was overstated, while other apps were understated.
 
-这两种问题反映的是一枚硬币的正反两面。 在过滤过程中，所有流量都会经过 AdGuard，因此安卓会误认为 AdGuard 正在使用流量。 当然，事实上这并不是这样的。
+With Android 7, however, this scenario has improved. Now the data reflected in Android's built-in data usage statistics is very close to reality, although there are minor discrepancies in the battery usage data.
 
-设备上的流量和电池使用量的统计显示的**不是实际情况**。 其他应用程序所使用的 WiFi 和移动流量，安卓将其都归于 AdGuard。 因此，从总消耗来看， AdGuard 电池和流量的使用量增高，相反，其他应用程序的使用量却降低。
+However, AdGuard users can always get a true picture of the situation on the *Battery usage* screen.
 
 ### 电池使用情况
 
-以减轻大家对该问题的误解，我们设计了新屏幕称为“电池使用率”。 您可以在主屏幕的右上角上点击「电池」图标以查看。
+You can access it by navigating to *Statistics* → *Battery usage*.
 
-![电池统计 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/battery/batterystats.png)
+![电池统计 *mobile_border](https://cdn.adtidy.org/content/articles/battery/1.png)
 
-这里可以查看最近24小时内 AdGuard 电池的使用量。点击图标上的绿线可以按每一个小时查看关于流量使用的更详细信息。 除此之外，还有相关数据的信息以及简短技术说明。
-
-### 举个例子
-
-在以下的截图上您可以看到夜间和早间电池使用量的统计：
-
-![电池1 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_1.png) ![电池2 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_2.png) ![电池3 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_3.png)
-
-在以上的截图中可以发现:
-
-1. AdGuard 不出乎意料地出现在图标的顶部。 这对于手机来说是很正常的（而与不支持 4G 的平板电脑不同，因为使用 WiFi 对电池的消耗要小得多）。
-
-2. 请注意截图二，发送移动和 WiFi 包的数量，都归于 AdGuard 使用的流量（“Mobile data sent” 和 “Wi-Fi packets sent”）。
-
-3. 截图三是真实消耗流量的软件，Yandex.Browser。 它几乎没有被分类到任何流量中，而实际上它消耗了总流量的 70％。
+Inside you will find a chart that shows the AdGuard battery resource consumption within the last 24 hours, with an option to get more detailed hour-to-hour data by tapping on the chart. 除此之外，还有相关数据的信息以及简短技术说明。
 
 ### AdGuard 真实电池消耗是多少？
 
-首先，我们从理论角度看该问题并附上必要数据的链接。
+First, let us lay down a bit of theory and links with necessary data.
 
 1. 安卓使用自带的 Power Profile 来计算流量使用量：<https://source.android.com/devices/tech/power/values.html>
 

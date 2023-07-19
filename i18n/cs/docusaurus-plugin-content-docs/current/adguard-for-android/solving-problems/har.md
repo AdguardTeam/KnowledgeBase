@@ -14,13 +14,13 @@ Formát HAR (HTTP ARchive) je archivní soubor ve formátu JSON pro zaznamenáv�
 
 ## Jak získat soubory HAR
 Někdy musíme analyzovat, abychom zablokovali konkrétní reklamy, které je z nějakého důvodu obtížné reprodukovat. Chcete-li získat soubory HAR, postupujte takto:
-1. Otevřete AdGuard a přejděte do "Nastavení".
-2. V menu zvolte možnost "Pokročilé".
-3. Vyberte možnost "Nízkoúrovňová nastavení".
-4. Aktivujte "pref.har.capture" (budete muset restartovat ochranu).
-5. Nyní problém reprodukujte – otevřete aplikaci a proveďte potřebné akce, aby se reklama zobrazila.
-6. Nyní "pref.har.capture" opět vypněte.
-7. Přejděte zpět a klepněte na "Exportovat protokoly a systémové informace" → Uložit.
+1. Otevřete AdGuard a přejděte do **Nastavení** (ikona ⚙ v pravém dolním rohu).
+2. Klepněte na **Obecné** →**Pokročilé** → **Nízkoúrovňová nastavení**.
+3. Přejděte dolů a aktivujte **Zachytit HAR** v části Filtrování.
+4. Otevřete aplikaci a proveďte potřebné akce k reprodukci problému.
+5. Vypněte **Zachytit HAR**.
+6. Přejděte zpět na **Pokročilé**.
+7. Klepněte na **Exportovat protokoly a systémové informace** → **Povolit** (je-li to nutné) → **Uložit**.
 
 **Zašlete prosím soubor se záznamy (které jste získali jako výsledek) službě podpory AdGuardu.**
 

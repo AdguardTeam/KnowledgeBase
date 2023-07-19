@@ -41,7 +41,7 @@ A popup will appear. Tap *Settings*, navigate to *Install unknown apps*, and gra
 
 This guide is for Android 8+. If you have an older OS version, before downloading the apk file, go to *Settings* and select *Additional settings* in *System & Device*. Enable *Unknown sources* and tap *OK* in the system warning window.
 
-3. **Install the app**. Once the browser has obtained the necessary permissions, the system will ask you if you want to install the AdGuard application. Tap *Install*.
+3. **Install the app**. Once the browser has obtained the necessary permissions, the system will ask you if you want to install the AdGuard app. Tap *Install*.
 
 ![Installing apps from unknown sources *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_4.png)
 

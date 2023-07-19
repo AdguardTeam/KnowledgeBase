@@ -5,7 +5,7 @@ sidebar_position: 4
 
 :::note
 
-The *"Send statistics for ad filters usage"* option is disabled by default. Nothing will be sent unless user manually enables it to help us improve our blocking filters.
+The *Send statistics for ad filters usage* option is disabled by default. Nothing will be sent unless a user manually enables it to help us improve our blocking filters.
 
 :::
 
@@ -36,7 +36,7 @@ If you enable the *Send statistics for ad filters usage* option, the following i
 
 The collected statistics will be sent periodically to our server for analysis and filter optimization.
 
-It's important to note that all the statistics we get are averaged and anonymized. We don't use these statistics for any purpose other than optimizing the filters, and we do not sell this data to third parties. You can read about our Privacy Policy [here](https://adguard.com/en/privacy.html).
+It's important to note that all the statistics we get are averaged and anonymized. We don't use these statistics for any purpose other than optimizing the filters, and we do not sell this data to third parties. You can read about our Privacy Policy [here](https://adguard.com/privacy.html).
 
 ### What does tracking filter rules statistics fraught with?
 

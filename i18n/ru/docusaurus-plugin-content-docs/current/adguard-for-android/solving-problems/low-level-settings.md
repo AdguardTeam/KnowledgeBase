@@ -5,7 +5,7 @@ sidebar_position: 6
 
 :::info
 
-This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://adguard.com/download.html?auto=true)
 
 :::
 
@@ -17,17 +17,17 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 :::
 
-To go to *Low-level settings*, open the AdGuard app and tap the gear icon in the lower right corner of the screen. Then choose *General → Advanced → Low-level settings*.
+Чтобы перейти к *Низкоуровневым настройкам*, откройте приложение AdGuard и коснитесь значка шестерёнки в правом нижнем углу экрана. Затем выберите *Общие → Дополнительные → Низкоуровневые настройки*.
 
 ## Низкоуровневые настройки
 
-For AdGuard v4.0 for Android we've completely redesigned the low-level settings: divided them into thematic blocks, made them clearer, added validation of entered values and other safety valves, got rid of some settings, and added others.
+В AdGuard 4.0 для Android мы полностью переработали низкоуровневые настройки: разделили их на тематические блоки, сделали более понятными, добавили проверку введённых значений и другие меры предосторожности, избавились от одних настроек и добавили другие.
 
 ### DNS-защита
 
 #### Резервные серверы
 
-Здесь вы можете указать резервный DNS-резолвер, который будет использоваться, если настроенный сервер недоступен. There are three options: *Automatic DNS*, *None*, and *Custom DNS*. If no fallback server is specified, the *Automatic DNS* — the system DNS or AdGuard DNS — will be used. *None* means no fallback at all. Selecting *Custom DNS* allows you to list IPv4 and IPv6 server addresses to use as upstreams.
+Здесь вы можете указать резервный DNS-резолвер, который будет использоваться, если настроенный сервер недоступен. Существует три варианта: *Автоматический DNS*, *Отсутствует* и *Пользовательский DNS*. Если резервный сервер не указан, то будет использоваться *Aвтоматический DNS* — системный DNS-сервер или AdGuard DNS. *Отсутствует* означает отсутствие запасного варианта. Выбирая *Пользовательский DNS*, вы можете использовать IPv4- и IPv6-адреса в качестве upstream-серверов.
 
 #### Резервные домены
 
@@ -35,15 +35,15 @@ For AdGuard v4.0 for Android we've completely redesigned the low-level settings:
 
 #### Обнаруживать search-домены
 
-If this option is enabled, AdGuard will detect search domains and automatically forward them to fallback upstreams.
+Если эта опция включена, AdGuard будет определять поисковые домены и автоматически перенаправлять их на резервные upstream-серверы.
 
 #### Bootstrap DNS-серверы
 
-Загрузочный DNS для серверов DoH, DoT и DoQ. The *Automatic DNS* - the system DNS or AdGuard DNS - is used by default. By selecting *Custom DNS*, you can list IPv4 and IPv6 server addresses to use as bootstrap upstreams.
+Загрузочный DNS для серверов DoH, DoT и DoQ. По умолчанию используется *Автоматический DNS* — системный DNS-сервер или AdGuard DNS. Выбирая *Пользовательский DNS*, вы можете использовать IPv4- и IPv6-адреса в качестве upstream-серверов.
 
 #### Режим блокировки для правил adblock
 
-Here you can specify the response type for domains blocked by DNS rules based on adblock rule syntax (for instance, `||example.org^`).
+Здесь можно указать тип ответа для доменов, блокируемых правилами DNS на основе синтаксиса правил adblock (например, `||example.org^`).
 
 *  Отвечать кодом REFUSED (по умолчанию)
 *  Отвечать кодом NXDOMAIN
@@ -51,7 +51,7 @@ Here you can specify the response type for domains blocked by DNS rules based on
 
 #### Режим блокировки для правил hosts
 
-Here you can specify the response type for domains blocked by DNS rules based on hosts rule syntax (for instance, `<ip> <domain> 0.0.0.0 example.com`).
+Здесь можно указать тип ответа для доменов, блокируемых правилами DNS на основе синтаксиса правил hosts (например, `<ip> <domain> 0.0.0.0 example.com`).
 
 *  Отвечать кодом REFUSED
 *  Отвечать кодом NXDOMAIN
@@ -67,7 +67,7 @@ Here you can specify the response type for domains blocked by DNS rules based on
 
 #### Размер кеша DNS
 
-Here you can specify the maximum number of cached responses. Значение по умолчанию — 1000.
+Здесь вы можете указать максимальное количество кешируемых ответов. Значение по умолчанию — 1000.
 
 #### Блокировка ECH
 
@@ -75,19 +75,19 @@ Here you can specify the maximum number of cached responses. Значение п
 
 #### Игнорировать недоступный исходящий прокси-сервер
 
-Enable this feature to make AdGuard send DNS requests directly if the outbound proxy is unavailable.
+Включите эту функцию, чтобы AdGuard отправлял DNS-запросы напрямую, если исходящий прокси недоступен.
 
 #### Пробовать HTTP/3 для upstream-серверов DNS-over-HTTPS
 
-By default, all DNS requests for DNS-over-HTTPS are sent via HTTP/2 protocol. If enabled, AdGuard uses HTTP/3 to speed up DNS query resolution for DoH upstreams.
+По умолчанию все DNS-запросы для DNS-over-HTTPS отправляются по протоколу HTTP/2. Если эта опция включена, AdGuard использует HTTP/3 для ускорения разрешения DNS-запросов для upstream-серверов DoH.
 
 #### Отвечать на ошибку кодом SERVFAIL
 
-Once enabled, AdGuard sends a SERVFAIL response to the client if all upstreams, including fallback ones, fail to reply. When this setting is disabled, no response is sent to the client.
+После включения этой функции AdGuard отправляет клиенту ответ SERVFAIL, если все upstream-серверы, включая резервные, не отвечают. Если эта настройка отключена, ответ клиенту не отправляется.
 
 #### Использовать резервный сервер для нерезервных доменов
 
-Enable this feature if you want AdGuard to use fallback upstream for all domains. Otherwise, fallback upstream will only be used for fallback domains and search domains if the corresponding option is enabled.
+Включите эту функцию, если хотите, чтобы AdGuard использовал резервный upstream-сервер для всех доменов. В противном случае резервный сервер будет использоваться только для резервных и поисковых доменов, если соответствующий параметр включён.
 
 #### Проверять upstream-серверы DNS
 
@@ -103,7 +103,7 @@ Enable this feature if you want AdGuard to use fallback upstream for all domains
 
 #### Encrypted Client Hello
 
-У каждого зашифрованного интернет-соединения есть незашифрованная часть. Это самый первый пакет, который содержит имя сервера, к которому вы подключаетесь. Технология Encrypted Client Hello должна решить эту проблему и зашифровать последний бит незашифрованной информации. Чтобы воспользоваться ей, включите опцию *Использовать Encrypted Client Hello*. It uses a local DNS proxy to look for the ECH configuration for the domain. Если она найдена, пакет ClientHello будет зашифрован.
+У каждого зашифрованного интернет-соединения есть незашифрованная часть. Это самый первый пакет, который содержит имя сервера, к которому вы подключаетесь. Технология Encrypted Client Hello должна решить эту проблему и зашифровать последний бит незашифрованной информации. Чтобы воспользоваться ей, включите опцию *Использовать Encrypted Client Hello*. Она использует локальный DNS-прокси для поиска ECH-конфигурации для домена. Если она найдена, пакет ClientHello будет зашифрован.
 
 #### Проверка OCSP
 
@@ -115,39 +115,39 @@ Enable this feature if you want AdGuard to use fallback upstream for all domains
 
 #### Перенаправлять запросы DNS-over-HTTPS
 
-IF enabled, DNS-over-HTTPS requests will be redirected to the DNS Protection module. We recommend disabling fallback upstreams and use only encrypted DNS servers to maintain privacy.
+Если эта опция включена, то запросы DNS-over-HTTPS будут перенаправляться на модуль DNS-защиты. Для сохранения конфиденциальности мы рекомендуем отключить резервные upstream-серверы и использовать только зашифрованные DNS-серверы.
 
 ### Исходящий прокси
 
 #### Показывать настройку «Фильтровать DNS-запросы»
 
-When this feature is enabled, the string *Filter DNS requests* appears in the *Settings ➝ Filtering ➝ Network ➝ Proxy ➝ Proxy server ➝ Add proxy server* section with the switch next to it. By toggling the switch, you can enable filtering of DNS requests passing through the proxy.
+Когда эта функция включена, в разделе *Настройки ➝ Фильтрация ➝ Сеть ➝ Прокси ➝ Прокси-сервер ➝ Добавить прокси-сервер* появляется опция *Фильтровать DNS-запросы*. Включив её, можно фильтровать DNS-запросы, проходящие через прокси-сервер.
 
 ### Защита
 
 #### Диапазоны портов
 
-Here you can specify port ranges that should be filtered.
+Здесь вы можете указать диапазоны портов, которые должны быть отфильтрованы.
 
 #### Фиксировать удаление HTML-элементов
 
-If enabled, AdGuard records blocked HTML elements in the filtering log.
+Если этот параметр включён, AdGuard записывает заблокированные HTML-элементы в журнал фильтрации.
 
 #### Отладка скриптлетов
 
-If you need to activate debugging of scriptlets, enable this feature. Then there will be messages in the browser log that some scriplet rules have been applied.
+Если вам нужно активировать отладку скриптлетов, включите эту функцию. Тогда в журнале браузера будут сообщения о том, что были применены правила скриптлетов.
 
 #### Исключённые приложения
 
-Here you can list package names and UIDs that you want to exclude from AdGuard protection.
+Здесь вы можете перечислить имена пакетов и UID, которые вы хотите исключить из защиты AdGuard.
 
 #### Пакеты для обхода QUIC
 
-Here you can specify package names for which AdGuard should bypass QUIC traffic.
+Здесь вы можете указать имена пакетов, для которых AdGuard должен обходить трафик QUIC.
 
 #### Перенастраивать Автоматический прокси при изменении сети
 
-Enable this setting if you want the protection to restart to reconfigure the automatic proxy settings when the device connects to another network. The state of this setting affects operation only if the current routing mode is Automatic proxy.
+Включите этот параметр, если вы хотите, чтобы при подключении устройства к другой сети защита перезапускалась для перенастройки автоматического прокси. Этот параметр влияет на работу приложения только в том случае, если текущий режим маршрутизации — Автоматический прокси.
 
 #### Фильтрация IPv6
 
@@ -155,27 +155,27 @@ Enable this setting if you want the protection to restart to reconfigure the aut
 
 #### Диапазоны IPv4-адресов, исключённые из фильтрации
 
-Filtering for IPv4 ranges, listed in this section, will be disabled.
+Фильтрация для диапазонов IPv4, перечисленных в данном разделе, будет отключена.
 
 #### Диапазоны IPv6-адресов, исключённые из фильтрации
 
-Filtering for IPv6 ranges, listed in this section, will be disabled.
+Фильтрация для диапазонов IPv6, перечисленных в этом разделе, будет отключена.
 
 #### TCP keepalive для исходящих сокетов
 
-If enabled, AdGuard sends a keepalive probe after the specified time period to ensure if the TCP connection is alive. Here you can specify the TCP keepalive idle time before starting keepalive probes and time between keepalive probes for an unresponsive peer.
+Если эта опция включена, AdGuard отправляет проверку активности через указанный период времени, чтобы убедиться, что TCP-соединение активно. Здесь вы можете указать время простоя проверки активности TCP перед запуском проверок активности и время между проверками активности для неотвечающего узла.
 
-After a system-defined number of unsuccessful attempts to get a response from the server, the system automatically closes the TCP connection.
+После заданного системой количества неудачных попыток получить ответ от сервера система автоматически закрывает TCP-соединение.
 
 ### Настройки локального VPN
 
 #### Время ожидания для остановленного VPN
 
-Here you can set the time of a delay in milliseconds before AdGuard tries to restore VPN protection after it has been revoked by a third-party VPN app or by deleting the VPN profile. Значение по умолчанию — 5000 мс.
+Здесь вы можете установить время задержки в миллисекундах, прежде чем AdGuard попытается восстановить VPN-защиту после её отзыва сторонним VPN-приложением или удалением VPN-профиля. Значение по умолчанию — 5000 мс.
 
 #### Задержка для восстановления отключённого VPN
 
-Here you can set the time of a delay in milliseconds before AdGuard reschedules the restoration of VPN protection after it has been revoked by a third-party VPN app or by deleting the VPN profile. Значение по умолчанию — 5000 мс.
+Здесь вы можете установить время задержки в миллисекундах, прежде чем AdGuard перенесёт восстановление VPN-защиты после того, как она была отозвана сторонним VPN-приложением или путём удаления VPN-профиля. Значение по умолчанию — 5000 мс.
 
 #### MTU
 
@@ -183,34 +183,34 @@ Here you can set the time of a delay in milliseconds before AdGuard reschedules 
 
 #### Автоматически возобновлять работу VPN
 
-If enabled, this feature automatically re-enables AdGuard’s local VPN after it has been turned off due to network absence, tethering, or low-power mode.
+Если эта функция включена, она автоматически повторно включает локальный VPN AdGuard после того, как он был отключён из-за отсутствия сети, модема или режима низкого энергопотребления.
 
 #### Захват пакетов (PCAP)
 
-If enabled, AdGuard will create the special file name `timestamp.pcap` (for instance, 1682599851461.pcap). Он содержит все сетевые пакеты, передаваемые через VPN. Этот файл находится в папке кэша приложения и может быть проанализирован с помощью программы Wireshark.
+Если эта опция включена, то AdGuard создаст специальный файл с именем `timestamp.pcap` (например, 1682599851461.pcap). Он содержит все сетевые пакеты, передаваемые через VPN. Этот файл находится в папке кэша приложения и может быть проанализирован с помощью программы Wireshark.
 
 #### Включить шлюз Wi-Fi в маршруты VPN
 
-If you want the gateway IP addresses to be added to VPN routes when on Wi-Fi, enable this feature.
+Если вы хотите, чтобы IP-адреса шлюза добавлялись к VPN-маршрутам при подключении к сети Wi-Fi, включите эту функцию.
 
 #### IPv4-адрес
 
-Here you can enter the IP address that will be used to create a TUN interface. By default, it is `172.18.11.218`.
+Здесь вы можете ввести IP-адрес, который будет использоваться для создания интерфейса TUN. По умолчанию это `172.18.11.218`.
 
 #### Принудительно маршрутизировать LAN IPv4
 
-When enabled, AdGuard filters all LAN connections, including local IPv4 network traffic, even if the *Route all LAN IPv4 connections* option is enabled.
+Если эта опция включена, AdGuard фильтрует все LAN-соединения, включая трафик локальной сети IPv4, даже если включена опция *Маршрутизировать все IPv4-подключения в локальной сети*.
 
 #### Маршрутизировать все IPv4-подключения в локальной сети
 
-Once enabled, AdGuard excludes LAN connections from filtering for simple networks. Может не работать для сложных сетей. Works only with the *Forcibly route LAN IPv4* option disabled.
+После включения этой опции AdGuard исключает из фильтрации LAN-соединения для простых сетей. Может не работать для сложных сетей. Работает только при отключённой опции *Принудительно маршрутизировать LAN IPv4*.
 
 #### IPv6-адрес
 
-Here you can enter the IP address that will be used to create a TUN interface. By default, it is `2001:db8:ad:0:ff::`.
+Здесь вы можете ввести IP-адрес, который будет использоваться для создания интерфейса TUN. По умолчанию это `2001:db8:ad:0:ff::`.
 
 ### Разное
 
 #### Обнаруживать Samsung Pay
 
-Korean users may encounter issues with Samsung Pay when AdGuard is enabled. Activate this feature to pause AdGuard's protection and use the Samsung Pay app seamlessly.
+Корейские пользователи могут столкнуться с проблемами с Samsung Pay при включённом AdGuard. Активируйте эту функцию, чтобы приостановить защиту AdGuard и беспрепятственно пользоваться приложением Samsung Pay.

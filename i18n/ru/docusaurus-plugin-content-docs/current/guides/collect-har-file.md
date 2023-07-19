@@ -26,7 +26,7 @@ sidebar_position: 1
 
 7. Установите флажок ***Отключить кэш***.
 
-![chrome](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/chrome.png)
+![Chrome](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/chrome.png)
 
 8. Воспроизведите действия, создающие проблему.
 

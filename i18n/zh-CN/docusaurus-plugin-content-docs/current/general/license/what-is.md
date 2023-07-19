@@ -1,9 +1,9 @@
 ---
-title: 什么是 AdGuard 许可密钥
+title: What is an AdGuard license
 sidebar_position: 1
 ---
 
-## 什么是 AdGuard 许可证密钥
+## What is an AdGuard license
 
 许可证是使用 AdGuard 产品的许可，根据《最终用户许可协议》提供的。 AdGuard 许可证以许可证密钥、激活码和产品卡的形式存在于用户的 [AdGuard 账号](../../account/register)中。
 

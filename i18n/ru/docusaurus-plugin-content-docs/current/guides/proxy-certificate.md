@@ -7,7 +7,7 @@ sidebar_position: 2
 
 :::note
 
-These devices must be in the same network as the PC or Mac on which AdGuard is installed.
+Эти устройства должны находиться в одной сети с ПК или Mac, на котором установлен AdGuard.
 
 :::
 

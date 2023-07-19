@@ -97,7 +97,7 @@ AdGuard 앱을 열려면 바탕 화면에서 AdGuard 아이콘을 두 번 클릭
 
 3. 화면 오른쪽 상단에 있는 **로그인**을 누릅니다.
 
-![프리미엄 화면의 오른쪽 상단에 있는 로그인을 누르세요 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense1en.png)
+![Tap Log in in the top right corner of the Premium screen *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense1en.png)
 
 4. **AdGuard 계정**의 **이메일**과 **비밀번호**를 입력합니다.
 

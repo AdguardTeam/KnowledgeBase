@@ -115,7 +115,11 @@ AdGuard supports both old GM\_ functions and new GM4 API that use GM object.
 
 ##### Values
 
-Note that all listed old Greasemonkey functions are deprecated but still supported.
+:::note
+
+All listed old Greasemonkey functions are deprecated but still supported.
+
+:::
 
 ```
 GM.info / GM_info

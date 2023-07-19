@@ -3,7 +3,7 @@ title: How to setup outbound proxy
 sidebar_position: 8
 ---
 
-:::info
+:::Info
 
 This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -97,7 +97,11 @@ Now AdGuard will forward all traffic through Orbot. If you disable Orbot, Intern
 
 *Here we presume that you have already configured a Shadowsocks server and a client on your device.*
 
-**Note: You should remove Shadowsocks application from filtering before setting up the process (AdGuard - Apps management - Shadowsocks - Disable AdGuard protection) to avoid infinite loops and drops.**
+:::note
+
+You should remove Shadowsocks application from filtering before setting up the process (AdGuard → Apps management → Shadowsocks → Disable AdGuard protection) to avoid infinite loops and drops.
+
+:::
 
 1. Open AdGuard and go to **Settings** → **Network** → **Proxy settings**.
 

@@ -55,7 +55,7 @@ A [2017 study](https://cdn.adtidy.org/public/Adguard/Blog/https/interception-nds
 
 The researchers came to a simple conclusion: the Internet security community should pay close attention to applications that filter secure connections. And the developers of such software must pay serious attention to the quality of filtering implementations.
 
-We would like to note that AdGuard was not tested in the above study. We ran estimates according to their set of tests, and at the time of testing, we could have received the maximum score – A\*. However, this score is not perfect. During the study, the researchers identified some issues that were omitted in the final evaluation.
+We would like to note that AdGuard was not tested in the above study. We ran estimates according to their set of tests, and at the time of testing, we could have received the maximum score — A\*. However, this score is not perfect. During the study, the researchers identified some issues that were omitted in the final evaluation.
 
 Here at AdGuard, we fully agree with those conclusions. Moreover, we would like to be as open with users as possible and talk about the problems we are currently experiencing and the steps we are taking to improve the quality and security of the filtering mechanism. The list of these problems is sorted by priority.
 

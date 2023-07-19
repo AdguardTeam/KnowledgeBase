@@ -3,7 +3,7 @@ title: Low-level Settings guide
 sidebar_position: 5
 ---
 
-:::info
+:::Info
 
 This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -11,7 +11,7 @@ This article covers AdGuard for iOS, a multifunctional ad blocker that protects 
 
 ## How to reach the Low-level settings
 
-:::caution
+:::Zur Beachtung
 
 Das Ändern von *Low-Level-Einstellungen* kann Probleme mit der Leistung von AdGuard verursachen, die Internetverbindung unterbrechen oder Ihre Sicherheit und Privatsphäre gefährden. You should only open this section if you are sure of what you are doing or our support-team has asked you about it.
 

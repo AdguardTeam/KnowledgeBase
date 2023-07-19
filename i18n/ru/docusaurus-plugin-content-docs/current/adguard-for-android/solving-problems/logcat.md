@@ -1,19 +1,18 @@
 ---
-title: Как получить лог Logсat
+title: Как получить системные логи
 sidebar_position: 4
 ---
 
 :::info
 
-This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, сначала [скачайте приложение AdGuard](https://adguard.com/download.html?auto=true)
 
 :::
 
-## Общая инструкция
-
-Для решения проблем с вылетами и отключениями программы обычного лога почти всегда оказывается недостаточно. В таких случаях для определения источника проблемы нам нужен системный лог. Инструкция ниже описывает, как его собрать и получить.
+Иногда обычных логов может быть недостаточно, чтобы определить источник проблемы. В таких случаях необходимы системные логи. Их можно собрать через настройки разработчика и Logcat, ниже — подробные инструкции.
 
 ## Получение отчёта об ошибке с устройства
+
 Чтобы получить отчёт об ошибке непосредственно с вашего устройства, выполните следующие действия:
 
 1. Убедитесь, что у вас включена вкладка [Для разработчиков](https://developer.android.com/studio/run/device.html#developer-device-options).
@@ -22,7 +21,13 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 ![Отчёт об ошибке *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
 
-3. Выберите нужный тип отчета об ошибке и нажмите **Отправить отчёт**. >Через некоторое время вы получите уведомление о том, что отчёт об ошибке готов (см. рисунок 2).
+3. Выберите нужный тип отчёта об ошибке и нажмите **Отправить отчёт**.
+
+:::note
+
+Через некоторое время вы увидите уведомление о том, что отчёт об ошибке готов (см. рисунок 2).
+
+:::
 
 ![Отчёт об ошибке *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
 
@@ -34,13 +39,15 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 :::note
 
-Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+Наша команда поддержки обработает ваш запрос намного быстрее, если вы укажете в сообщении номер тикета HelpDesk или номер ошибки на GitHub.
 
 :::
 
-## Дополнительная инструкция (для старых версий Android)
+## Получение отчёта об ошибке через Logcat
 
-На старых устройствах Android нет возможности автоматически принимать отчёт об ошибке. Это нужно сделать вручную, следуя инструкции:
+На устройствах с Android 7 и более ранними версиями невозможно автоматически отправить отчёт об ошибке. Его можно получить вручную с помощью Logcat — стандартного инструмента командной строки Android, который выгружает логи системных сообщений.
+
+Следуйте этой инструкции:
 
 **Часть 1: подготовьте устройство**
 
@@ -54,28 +61,35 @@ Our support team will process your ticket much faster if you specify the HelpDes
 
 4 МБ должно быть достаточно для хранения нужных вам логов до тех пор, пока вы не перейдёте ко второй части (извлечение самих логов с устройства);
 
-**Важно:** вам нужно воспроизвести сбой после того, как вы закончите с первой частью!
+**Часть 2: воспроизведите проблему**
 
+Важно воспроизвести сбой после того, как вы закончите с первой частью.
 
-**Часть 2: получите лог**
+1. Воспроизведите проблему.
+
+2. Запомните/запишите дату и время воспроизведения и укажите их в письме в поддержку.
+
+**Часть 3: получите лог**
 
 1. Подключите устройство к компьютеру с помощью USB-кабеля.
 
-2. Загрузите и установите Minimal ADB:
+2. Скачайте [Инструменты платформы Android SDK](https://developer.android.com/studio/releases/platform-tools#downloads). Выберите соответствующую ссылку для загрузки для вашей ОС в разделе «Загрузки». Когда вы нажмёте на ссылку, будет загружен ZIP-файл. Вы можете извлечь файлы ADB (Android Debug Bridge) из ZIP-файла и сохранить их в любом месте.
 
-<http://forum.xda-developers.com/showthread.php?t=2317790>
+3. Проверьте работоспособность ADB: подключите устройство Android к компьютеру с помощью USB-кабеля, откройте Командную строку, PowerShell или Терминал и выполните следующую команду:
 
-Прямая ссылка на скачивание:
+`устройства adb`
 
-<https://www.androidfilehost.com/?fid=24052804347803384>
+Пример успешного результата:
 
-3. Запустите эту команду в консоли (она откроется автоматически после установки приложения):
+![Шаг 3](https://cdn.adtidy.org/content/kb/ad_blocker/android/logcat/logcat_step-3.png)
 
-adb logcat -v threadtime -d > C:\logcat.txt
+4. Затем выполните следующую команду (вставьте соответствующий путь):
 
-Отправьте нам этот лог, связавшись со службой поддержки или любым другим способом.
+`adb logcat -v threadtime -d > C:\Program Files\platform-tools\logs.txt`
 
-**Альтернативный способ для пользователей с ROOT:**
+Отправьте созданный файл `txt` и время воспроизведения проблемы (из части 2) нашей команде поддержки по адресу support@adguard.com.
+
+### Альтернативный способ для пользователей с ROOT:
 
 1. Скачайте и запустите приложение [Logcat](https://play.google.com/store/apps/details?id=com.pluscubed.matlog).
 
@@ -89,6 +103,6 @@ adb logcat -v threadtime -d > C:\logcat.txt
 
 :::note
 
-Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+Наша команда поддержки обработает ваш запрос намного быстрее, если вы укажете в сообщении номер тикета HelpDesk или номер ошибки на GitHub.
 
 :::

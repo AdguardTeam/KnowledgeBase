@@ -123,7 +123,7 @@ AdGuard Extra je v podstatě miniprogram, který mění způsob, jakým stránky
 
 **AdGuard blokátor vyskakovacích oken**
 
-Toto rozšíření zabraňuje otevírání vyskakovacích oken při prohlížení webových stránek. Některá vyskakovací okna jsou považována za užitečná – mohou obsahovat nastavení pro správu webu nebo další referenční informace zobrazené po kliknutí na odkaz. Proto můžete blokátor v případě potřeby vypnout. Toto rozšíření nefunguje ani na webových stránkách přidaných do seznamu výjimek AdGuardu. Ve výchozím nastavení je vypnuto, ale můžete jej zapnout v nastavení aplikace. Podrobnější informace o tomto rozšíření najdete v naší databázi znalostí.
+Toto rozšíření zabraňuje otevírání vyskakovacích oken při prohlížení webových stránek. Some pop-ups are considered useful — they may contain settings for site administering or additional reference information demonstrated upon clicking a link. Proto můžete blokátor v případě potřeby vypnout. Toto rozšíření nefunguje ani na webových stránkách přidaných do seznamu výjimek AdGuardu. Ve výchozím nastavení je vypnuto, ale můžete jej zapnout v nastavení aplikace. Podrobnější informace o tomto rozšíření najdete v naší databázi znalostí.
 
 **Web of Trust**
 

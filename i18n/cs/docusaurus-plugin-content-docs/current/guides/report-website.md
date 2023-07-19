@@ -74,7 +74,7 @@ Chcete-li nahlásit opakované vložení reklamy nebo nesprávné zobrazení web
 
 :::note
 
-Při odesílání hlášení prostřednictvím aplikace nebo AdGuard asistenta se všechny informace vyplní automaticky. Kromě snímků obrazovky, ty si budete muset vytvořit a přiložit sami. Pokud používáte přímý odkaz [](https://reports.adguard.com/en/new_issue.html), musíte zadat údaje ručně.
+Při odesílání hlášení prostřednictvím aplikace nebo AdGuard asistenta se všechny informace vyplní automaticky. Kromě snímků obrazovky, ty si budete muset vytvořit a přiložit sami. Pokud používáte přímý odkaz [](https://reports.adguard.com/new_issue.html), musíte zadat údaje ručně.
 
 :::
 

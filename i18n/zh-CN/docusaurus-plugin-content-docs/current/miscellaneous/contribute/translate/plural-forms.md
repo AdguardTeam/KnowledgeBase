@@ -12,11 +12,11 @@ sidebar_position: 4
 
 不同语言的名词可以有几种复数形式。 它们的用法取决于单词前面的特定数字，以指示该单词表示的数目。
 
-例如，当谈论不同数量时，英语单词有两种单词形式。例如 *'one star'* 或 *'two stars'*。 无论您说的是五颗星，二十六颗星还是五百三十二颗星，结尾 's' 都将保持不变。 但是有些语言只有一种形式，反之，有些语言也可以有更多种复数形式。
+For instance, English words have two word forms when speaking about something in the singular, like *'one star'*, and in the plural — *'two stars'*. It doesn’t matter if you say five, twenty six or even five hundred thirty two stars — the ending 's' will remain the same. 但是有些语言只有一种形式，反之，有些语言也可以有更多种复数形式。
 
-与英语相比，波兰语里的名词具有三种复数形式。 在说单数形式时使用一种形式，复数形式时以 2-4 数字为结尾的名词（不包括 12-14）使用另一种形式。但还有第三种形式，前面带有其他数字的单词。
+与英语相比，波兰语里的名词具有三种复数形式。 One of them is used when speaking about something in the singular, another form is used in the plural but with numbers ending in 2-4, excluding 12-14, and the third form — for words with other numbers in front of them.
 
-我们来看看这张图片。 在这里，可以看到一组数字。按这些数字要选择数字后面的单词形式。
+Let’s take a look at this picture. 在这里，可以看到一组数字。按这些数字要选择数字后面的单词形式。
 
 ![波兰语](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
@@ -94,7 +94,7 @@ Crowdin 为用户提供翻译一定数量具有不同复数形式的短语的功
 
 这是最复杂的 AdGuard 字符串类型，通常在 `AdGuard Websites` 项目中使用。
 
-请密切注意句子与原始短语中的 **%count%** 占位符之间的竖线符号。这将帮助您识别需要使用复数形式短语的翻译。
+Pay close attention to a vertical bar sign between the sentences and **%count%** placeholders in original phrases — this will help you identify phrases where translations require the use of plural forms.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/plurals_site.png)
 
@@ -108,9 +108,9 @@ Crowdin 为用户提供翻译一定数量具有不同复数形式的短语的功
 
 `Standard license for *%count%* computer | Standard license for *%count%* computers`
 
-其中**模板 （template）1** – *％count％* 台计算机（computer）的标准许可，
+where **template 1** is Standard license for *%count%* computer,
 
-和**模板（template）2** – *％count％* 台计算机（computers）的标准许可
+and **template 2** is Standard license for *%count%* computers
 
 您应注意的另一重要事项是 **％count％** 占位符，通常在其定义的单词前出现。 根据选择的模板，此处将显示不同的数字，而不是 **％count％** 。
 
@@ -147,7 +147,7 @@ Crowdin 为用户提供翻译一定数量具有不同复数形式的短语的功
 
 + 指翻译成一种语言的复数规则；
 
-The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms – two templates in translations; five plural forms – five templates, etc.
+The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms — two templates in translations; five plural forms — five templates, etc.
 
 + 不要忘记在模板之间使用竖线符号；
 

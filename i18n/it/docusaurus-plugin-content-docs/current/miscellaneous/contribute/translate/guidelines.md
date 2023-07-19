@@ -16,7 +16,12 @@ Inoltre, potrai passare tra più lingue, anche dopo aver aperto le cartelle dei 
 Scegli qualsiasi cartella disponibile dei prodotti e seleziona un file; ora puoi iniziare a tradurre.
 
 ![File *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/files.png)
-> Sei pregato di notare che puoi anche modificare la lingua dell'interfaccia di Crowdin, cliccando sull'icona delle *Impostazioni* in alto a destra della pagina. Nella finestra che si apre, scorri in giù alla scheda *UI Language* (Lingua dell'UI). Aprila, scegli una lingua e clicca **Cambia**.
+
+:::note
+
+You can also change the Crowdin interface language by clicking the *Settings* icon in the top right corner of the page. Nella finestra che si apre, scorri in giù alla scheda *UI Language* (Lingua dell'UI). Aprila, scegli una lingua e clicca **Cambia**.
+
+:::
 
 ![Lingua1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/settings_en.png)
 
@@ -44,7 +49,11 @@ Puoi suggerire la tua traduzione per i termini traducibili nel progetto [AdGuard
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/screenshot.png)
 
-Sei pregato di notare che puoi richiedere il contesto, cliccando sul pulsante "RICHIEDI".
+:::tip
+
+You can request context by clicking the "REQUEST" button.
+
+:::
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/request.png)
 

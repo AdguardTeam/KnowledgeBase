@@ -1,28 +1,33 @@
 ---
-title: How to get Logcat log
+title: How to get system logs
 sidebar_position: 4
 ---
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Android için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Android için AdGuard'ı ele alır. To see how it works, firsthand [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
 :::
 
-## General Instruction
-
-For troubleshooting problems with crashes a regular log is almost always not enough. In such cases to identify the origin of the problem we need the system log. Below is the instruction how to collect and get it.
+Sometimes a regular log may not be sufficient to identify the origin of the problem. In such cases a system log is needed. Below are instructions on how to collect and get it: via Developer options and Logcat.
 
 ## Capture a bug report from a device
+
 To get a bug report directly from your device, do the following:
 
-1. Be sure you have [Developer Options](https://developer.android.com/studio/run/device.html#developer-device-options) enabled.
+1. Be sure you have [Developer options](https://developer.android.com/studio/run/device.html#developer-device-options) enabled.
 
 2. In **Developer options**, tap **Take bug report**.
 
 ![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
 
-3. Select the type of bug report you want and tap **Report**. >After a moment you get a notification that the bug report is ready (see figure 2).
+3. Select the type of bug report you want and tap **Report**.
+
+:::note
+
+After a moment, you will see a notification that the bug report is ready (see Figure 2).
+
+:::
 
 ![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
 
@@ -30,7 +35,7 @@ To get a bug report directly from your device, do the following:
 
 ![Bug report *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
 
-5. Send this log to our support team.
+5. Bu günlüğü destek ekibimize gönderin.
 
 :::note
 
@@ -38,9 +43,11 @@ Our support team will process your ticket much faster if you specify the HelpDes
 
 :::
 
-## Additional Instruction (for old Android versions)
+## Capture a bug report via Logcat
 
-On old Android devices there is no such option to take a bug report automatically. It has to be done manually by following this instruction:
+On devices with Android 7 and below, it is not possible to send a bug report automatically. Then you can capture it manually via Logcat — a standard Android command-line tool that dumps a log of system messages.
+
+Follow this instruction:
 
 **Part #1: prepare the device**
 
@@ -50,32 +57,39 @@ On old Android devices there is no such option to take a bug report automaticall
 
 3. Enable **USB debugging**.
 
-4. Increase **Logger buffer** sizes to 4MB per log buffer.
+4. Increase **Logger buffer** sizes to 4 MB per log buffer.
 
-4MB should be enough for storing the logs we need until you're able to do the second part (getting log from the device);
+4 MB should be enough for storing the logs we need until you're able to do the second part (getting the log from the device);
 
-**Important:** you need to reproduce the problem after you've done with the first part!
+**Part #2: reproduce the problem**
 
+It is important to reproduce the problem after you're done with the first part.
 
-**Part #2: get the log**
+1. Sorunu yeniden oluşturun.
 
-1. Connect your device to PC with USB cable.
+2. Remember/write down the date and time of reproduction and include it in the email to our support later.
 
-2. Download and install Minimal ADB:
+**Part #3: get the log**
 
-<http://forum.xda-developers.com/showthread.php?t=2317790>
+1. Connect your device to a PC with a USB cable.
 
-Direct download link:
+2. Download [Android SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools#downloads). Choose the appropriate download link for your OS from the Downloads section. Once you tap the link, a ZIP file will be downloaded. You can extract the ADB (Android Debug Bridge) files from the ZIP file and store them wherever you want.
 
-<https://www.androidfilehost.com/?fid=24052804347803384>
+3. Test whether ADB is working properly: connect your Android device to your computer using a USB cable, open the Command Prompt, PowerShell or Terminal and run the following command:
 
-3. Run this command in the console (it will be opened after install):
+`adb cihazları`
 
-adb logcat -v threadtime -d > C:\logcat.txt
+Başarılı bir sonuç örneği:
 
-Send this log to us by contacting support or by any other way.
+![Step 3](https://cdn.adtidy.org/content/kb/ad_blocker/android/logcat/logcat_step-3.png)
 
-**Alternative way for ROOT users:**
+4. Then run the following command (insert the relevant path):
+
+`adb logcat -v threadtime -d > C:\Program Files\platform-tools\logs.txt`
+
+Email the created `txt` file as well as the time the problem was reproduced (from part #2) to our support team at support@adguard.com.
+
+### Alternative way for ROOT users:
 
 1. Download and run [Logcat](https://play.google.com/store/apps/details?id=com.pluscubed.matlog).
 
@@ -85,7 +99,7 @@ Send this log to us by contacting support or by any other way.
 
 4. Open CatLog and press **Stop record** in the menu.
 
-5. Send this log to our support team.
+5. Bu günlüğü destek ekibimize gönderin.
 
 :::note
 

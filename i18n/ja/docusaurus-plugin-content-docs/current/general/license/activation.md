@@ -97,7 +97,7 @@ To activate a license via the AdGuard account, a valid license with at least one
 
 3. 画面右上の「**ログイン**」をタップ
 
-![画面右上の「ログイン」をタップ *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/ios1.jpeg)
+![Tap Log in in the top right corner of the Premium screen *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/ios1.jpeg)
 
 4. お持ちの**AdGuardアカウント**の**メールアドレス**と**パスワード**を入力してログインする
 

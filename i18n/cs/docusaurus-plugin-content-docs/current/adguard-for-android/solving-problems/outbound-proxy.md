@@ -97,7 +97,11 @@ Nyní bude AdGuard přeposílat veškerý provoz přes Orbot. Pokud zakážete O
 
 *Zde předpokládáme, že jste již nakonfigurovali server Shadowsocks a klienta ve svém zařízení.*
 
-**Poznámka: Před nastavením procesu byste měli odstranit aplikaci Shadowsocks z filtrování (AdGuard - Správa aplikací - Shadowsocks - Vypnout ochranu AdGuardem), abyste předešli nekonečným smyčkám a výpadkům.**
+:::note
+
+You should remove Shadowsocks application from filtering before setting up the process (AdGuard → Apps management → Shadowsocks → Disable AdGuard protection) to avoid infinite loops and drops.
+
+:::
 
 1. Otevřete nastavení AdGuardu a přejděte do **Nastavení** → **Síť** → **Nastavení proxy**.
 

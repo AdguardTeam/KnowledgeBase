@@ -27,9 +27,9 @@ Once you start AdGuard for Windows, you will see the main screen of the app. Its
 
 Here you can set the language and theme (Dark or Light), enable AdGuard launching at system start-up and silent automatic updates, choose the update channel and filter update check interval. Also Settings is the place to go if AdGuard for Windows is not working properly and the support team asked you to [collect *Debug logs*](../solving-problems/adguard-logs).
 
-![Advanced Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/advanced-settings.png)
+![Gelişmiş Ayarlar *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/advanced-settings.png)
 
-At the very bottom of the screen you will find *Advanced Settings*. Changing some of them mindlessly may potentially cause problems with AdGuard's performance, break the Internet connection or compromise your security and privacy. That's why we suggest you open this section only if you are sure of what you are doing or our support team has asked you about it. If you want to know what can be set up in *Advanced Setting* read the [dedicated article](../solving-problems/low-level-settings).
+Ekranın en altında *Gelişmiş Ayarlar* öğesini bulacaksınız. Changing some of them mindlessly may potentially cause problems with AdGuard's performance, break the Internet connection or compromise your security and privacy. That's why we suggest you open this section only if you are sure of what you are doing or our support team has asked you about it. If you want to know what can be set up in *Advanced Setting* read the [dedicated article](../solving-problems/low-level-settings).
 
 ### Reklam Engelleyici
 
@@ -37,7 +37,7 @@ This is the main module of AdGuard for Windows that removes ads from the website
 
 ![Ad Blocker *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/ad-blocker.png)
 
-In the Ad Blocker module you can:
+Reklam Engelleyici modülünde şunları yapabilirsiniz:
 * enable automatic activation of language-specific filters,
 * disable [search ads and self-promotion](/general/ad-filtering/search-ads) blocking,
 * activate pre-installed filters such as *AdGuard Base filter*,
@@ -46,7 +46,7 @@ In the Ad Blocker module you can:
 * see all the requests sent by browsers and apps installed on your computer by clicking the *Filtering log* button. From there you can also block or unblock any request by creating a custom rule,
 * compose a filter from your own rules written manually, imported or created with the AdGuard Assistant extension.
 
-Before you start manually writing your own rules read our detailed [syntax guide](/general/ad-filtering/create-own-filters).
+Kendi kurallarınızı elle yazmaya başlamadan önce ayrıntılı [söz dizimi rehberimizi](/general/ad-filtering/create-own-filters)okuyun.
 
 ### Gizlilik Modu
 
@@ -73,7 +73,7 @@ In case you want to learn more about Browsing Security, read [this article](/gen
 
 ### DNS Protection
 
-There are three significant reasons why you might want to explore the DNS protection settings. First, to avoid being tracked by your ISP. Every time you open a website, for example `google.com`, your browser sends a request to a DNS server to get the IP address of the website in return. Usually, the DNS server belongs to your ISP, which allows them to track your online activity. Second, to encrypt you DNS traffic. And the third one is to [block content on DNS level](https://adguard-dns.io/kb/general/dns-filtering/).
+There are three significant reasons why you might want to explore the DNS protection settings. First, to avoid being tracked by your ISP. Every time you open a website, for example `google.com`, your browser sends a request to a DNS server to get the IP address of the website in return. Usually, the DNS server belongs to your ISP, which allows them to track your online activity. İkincisi, DNS trafiğinizi şifrelemek için. And the third one is to [block content on DNS level](https://adguard-dns.io/kb/general/dns-filtering/).
 
 ![DNS Protection *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/dns-settings.png)
 
@@ -123,11 +123,11 @@ AdGuard Extra is essentially a mini-program that changes the way pages work,and 
 
 **AdGuard Popup Blocker**
 
-This extension prevents popup windows from opening when you view web pages. Some pop-ups are considered useful – they may contain settings for site administering or additional reference information demonstrated upon clicking a link. That is why you can turn off the Blocker if needed. This extension doesn’t work on websites added to the AdGuard exceptions list either. It is turned off by default, but you can turn it on in the application settings. You will find more detailed information about this extension in our Knowledge base.
+This extension prevents popup windows from opening when you view web pages. Some pop-ups are considered useful — they may contain settings for site administering or additional reference information demonstrated upon clicking a link. That is why you can turn off the Blocker if needed. This extension doesn’t work on websites added to the AdGuard exceptions list either. Varsayılan olarak kapalıdır, ancak uygulama ayarlarından açabilirsiniz. Bu uzantı hakkında daha ayrıntılı bilgiyi Bilgi tabanımızda bulabilirsiniz.
 
 **Web of Trust**
 
-Web of Trust lets you see the reputation of each website based on its users’ opinions. The site is rated by a number of specific criteria: trust, security, etc. This extension is turned off by default, but you can turn it on in the application settings. Please, note that AdGuard is not the developer of this extension.
+Web of Trust lets you see the reputation of each website based on its users’ opinions. Site bir dizi özel kritere göre derecelendirilir: güven, güvenlik, vb. Bu uzantı varsayılan olarak kapalıdır, ancak uygulama ayarlarından açabilirsiniz. Lütfen AdGuard'ın bu uzantının geliştiricisi olmadığını unutmayın.
 
 ### Network
 

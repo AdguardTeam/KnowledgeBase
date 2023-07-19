@@ -75,7 +75,11 @@ Enable this option to make the main AdGuard window open after the system is load
 
 Starting from v7.12, by default, AdGuard's service does not filter traffic after OS startup if the option Launch AdGuard at system start-up is disabled. In other words, the AdGuard's service is started in “idle” mode. Enable this option to make AdGuard filter traffic even if the app is not launched.
 
-*Note that before v7.12 the AdGuard's service started in filtering mode by default (even if the *Launch AdGuard at system start-up* was disabled). Eski davranıştan memnunsanız, bu seçeneği etkinleştirin.*
+:::note
+
+Before v7.12, the AdGuard service started in filtering mode by default (even if the *Launch AdGuard at system start-up* was disabled). If you were satisfied with the old behavior, enable this option.
+
+:::
 
 ### localhost'u filtrele
 
@@ -129,13 +133,21 @@ Periodically sends TCP packets over idle connection to ensure it is alive and to
 
 Here you can specify an idle time period, in seconds, before sending a keepalive probe. 0 belirtilirse, sistem tarafından seçilen değer kullanılacaktır.
 
-Note that this setting only works when the *Enable TCP keepalive* option is enabled.
+:::note
+
+This setting only works when the *Enable TCP keepalive* option is enabled.
+
+:::
 
 ### TCP keepalive timeout
 
 Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. 0 belirtilirse, sistem tarafından seçilen değer kullanılacaktır.
 
-Note that this setting only works when the *Enable TCP keepalive* option is enabled.
+:::note
+
+This setting only works when the *Enable TCP keepalive* option is enabled.
+
+:::
 
 ### Block Java
 

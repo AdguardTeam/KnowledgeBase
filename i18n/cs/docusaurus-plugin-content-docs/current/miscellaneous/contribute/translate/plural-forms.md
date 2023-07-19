@@ -12,11 +12,11 @@ Důrazně doporučujeme, abyste si tento článek řádně přečetli a dozvěd�
 
 Podstatná jména v různých jazycích mohou mít několik tvarů množného čísla. Jejich použití závisí na počtu věcí, o kterých mluvíte.
 
-Např. anglická slova mají dva slovní tvary, když se o něčem mluví v jednotném čísle, např. *'one star'* a v množném čísle – *'two stars'*. Je jedno, jestli řeknete pět, dvacet šest nebo třeba pět set třicet dva hvězdiček – koncové "s" zůstane stejné. Některé jazyky však mohou obsahovat pouze jeden nebo více tvarů množného čísla.
+For instance, English words have two word forms when speaking about something in the singular, like *'one star'*, and in the plural — *'two stars'*. It doesn’t matter if you say five, twenty six or even five hundred thirty two stars — the ending 's' will remain the same. Některé jazyky však mohou obsahovat pouze jeden nebo více tvarů množného čísla.
 
-Na rozdíl od angličtiny má polština tři tvary množného čísla podstatných jmen. Jeden z nich se používá, když se mluví o něčem v jednotném čísle, druhý tvar se používá v množném čísle, ale s číslovkami končícími na 2-4, s výjimkou 12-14, a třetí tvar – pro slova s jinými číslovkami před nimi.
+Na rozdíl od angličtiny má polština tři tvary množného čísla podstatných jmen. One of them is used when speaking about something in the singular, another form is used in the plural but with numbers ending in 2-4, excluding 12-14, and the third form — for words with other numbers in front of them.
 
-Podívejme se na tento obrázek. Zde vidíte skupiny číslovek, které určují tvar slova, když před ním stojíte.
+Let’s take a look at this picture. Zde vidíte skupiny číslovek, které určují tvar slova, když před ním stojíte.
 
 ![Polish](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
@@ -94,7 +94,7 @@ Při překladu těchto řetězců a jejich schvalování buďte pozorní. Pokud 
 
 Jedná se o nejsložitější typ řetězců AdGuardu, který se většinou používá v projektu `AdGuard Websites`.
 
-Věnujte zvýšenou pozornost svislému znaménku mezi větami a **%count%** zástupným znakům v originálních frázích – pomůže vám identifikovat fráze, kde překlad vyžaduje použití tvarů množného čísla.
+Pay close attention to a vertical bar sign between the sentences and **%count%** placeholders in original phrases — this will help you identify phrases where translations require the use of plural forms.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/plurals_site.png)
 
@@ -108,9 +108,9 @@ Vraťme se k příkladu, protože anglický jazyk obsahuje pouze dva tvary, měl
 
 `Standard license for *%count%* computer | Standard license for *%count%* computers`
 
-kde **šablona 1** – Standard license for *%count%* computer,
+where **template 1** is Standard license for *%count%* computer,
 
-a **šablona 2** – Standard license for *%count%* computers,
+and **template 2** is Standard license for *%count%* computers
 
 Další důležitou věcí, které byste měli věnovat pozornost jsou zástupné znaky **%count%**, které se jako obvykle nacházejí před slovy, která definují. Namísto **%count%** se zde zobrazí různá čísla v závislosti na tom, které šablony jsou vybrány.
 
@@ -147,7 +147,7 @@ A ještě jednou: pokud narazíte na originální frázi se dvěma důležitými
 
 + Řiďte se pravidlem množného čísla jazyka, do kterého překládáte;
 
-Počet vašich šablon by měl odpovídat počtu tvarů množného čísla, které váš jazyk obsahuje, a to i v případech, kdy některá slova mají sama o sobě méně tvarů. Dva tvary množného čísla – dvě šablony v překladu; pět tvarů množného čísla – pět šablon atd.
+Počet vašich šablon by měl odpovídat počtu tvarů množného čísla, které váš jazyk obsahuje, a to i v případech, kdy některá slova mají sama o sobě méně tvarů. Two plural forms — two templates in translations; five plural forms — five templates, etc.
 
 + Nezapomeňte mezi šablonami použít svislou čáru, jak je znázorněno v původních řetězcích;
 

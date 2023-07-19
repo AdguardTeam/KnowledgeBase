@@ -1,5 +1,5 @@
 ---
-title: Jak získat záznam Logcat
+title: Jak získat systémové záznamy
 sidebar_position: 4
 ---
 
@@ -9,11 +9,10 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 :::
 
-## Obecné pokyny
-
-Pro řešení problémů s pády téměř vždy nestačí běžný protokol. V takových případech potřebujeme k identifikaci původu problému systémový záznam. Níže je uveden návod, jak jej získat.
+Někdy nemusí běžný záznam stačit k identifikaci původu problému. V takových případech je nutný systémový záznam. Níže jsou uvedeny pokyny, jak je shromáždit a získat: prostřednictvím možností pro vývojáře a Logcat.
 
 ## Zachycení hlášení o chybě ze zařízení
+
 Chcete-li získat hlášení o chybě přímo ze zařízení, postupujte takto:
 
 1. Ujistěte se, že máte zapnuté [Možnosti pro vývojáře](https://developer.android.com/studio/run/device.html#developer-device-options).
@@ -22,7 +21,13 @@ Chcete-li získat hlášení o chybě přímo ze zařízení, postupujte takto:
 
 ![Hlášení o chybě *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
 
-3. Vyberte požadovaný typ hlášení o chybě a klepněte na **Nahlásit**. >Po chvíli se zobrazí oznámení, že hlášení o chybě je připraveno (viz obrázek 2).
+3. Select the type of bug report you want and tap **Report**.
+
+:::note
+
+Po chvíli se zobrazí oznámení, že hlášení o chybě je připraveno (viz obrázek 2).
+
+:::
 
 ![Hlášení o chybě *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
 
@@ -38,9 +43,11 @@ Náš tým podpory zpracuje vaši žádost mnohem rychleji, pokud ve zprávě uv
 
 :::
 
-## Další pokyny (pro staré verze systému Android)
+## Zachycení hlášení o chybě prostřednictvím Logcat
 
-Na starých zařízeních se systémem Android taková možnost automatického zachycení hlášení o chybě neexistuje. To je třeba provést ručně podle tohoto návodu:
+Na zařízeních se systémem Android 7 a nižším není možné automaticky odesílat hlášení o chybách. Pak je můžete zachytit ručně pomocí Logcat — standardního nástroje příkazového řádku systému Android, který vypíše záznamy systémových zpráv.
+
+Postupujte podle těchto pokynů:
 
 **Část #1: příprava zařízení**
 
@@ -50,32 +57,39 @@ Na starých zařízeních se systémem Android taková možnost automatického z
 
 3. Zapněte **USB ladění**.
 
-4. Navyšte **velikost vyrovnávací paměti** na 4 MB.
+4. Increase **Logger buffer** sizes to 4 MB per log buffer.
 
 4 MB by mělo stačit na uložení záznamů, které potřebujeme, dokud nebudete schopni provést druhou část (získání záznamů ze zařízení);
 
-**Důležité:** Po dokončení první části musíte problém znovu reprodukovat!
+**Část #2: reprodukujte problém**
 
+Po dokončení první části je důležité problém reprodukovat.
 
-**Část #2: získání záznamu**
+1. Reprodukujte problém.
+
+2. Zapamatujte si/zapište si datum a čas reprodukce a později je uveďte v e-mailu pro naši podporu.
+
+**Část #3: získání záznamu**
 
 1. Připojte zařízení k počítači pomocí kabelu USB.
 
-2. Stáhnětei a nainstalujte Minimal ADB:
+2. Stáhněte [Android SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools#downloads). V části Stahování vyberte příslušný odkaz ke stažení pro váš operační systém. Po klepnutí na odkaz se stáhne soubor ZIP. Soubory ADB (Android Debug Bridge) můžete ze souboru ZIP rozbalit a uložit kamkoli chcete.
 
-<http://forum.xda-developers.com/showthread.php?t=2317790>
+3. Otestujte, zda ADB funguje správně: připojte zařízení Android k počítači pomocí kabelu USB, otevřete příkazový řádek, prostředí PowerShell nebo Terminal a spusťte následující příkaz:
 
-Přímý odkaz ke stažení:
+`adb devices`
 
-<https://www.androidfilehost.com/?fid=24052804347803384>
+Příklad úspěšného výsledku:
 
-3. Spusťte tento příkaz v konzole (otevře se po instalaci):
+![Krok 3](https://cdn.adtidy.org/content/kb/ad_blocker/android/logcat/logcat_step-3.png)
 
-adb logcat -v threadtime -d > C:\logcat.txt
+4. Poté spusťte následující příkaz (vložte příslušnou cestu):
 
-Tento protokol nám zašlete prostřednictvím podpory nebo jiným způsobem.
+`adb logcat -v threadtime -d > C:\Program Files\platform-tools\logs.txt`
 
-**Alternativní způsob pro uživatele s přístupem ROOT:**
+Pošlete vytvořený `txt` soubor a čas, kdy byl problém reprodukován (z části #2) našemu týmu podpory na adresu support@adguard.com.
+
+### Alternativní způsob pro uživatele s přístupem ROOT:
 
 1. Stáhněte a spusťte [Logcat](https://play.google.com/store/apps/details?id=com.pluscubed.matlog).
 

@@ -23,11 +23,11 @@ To go to *Advanced settings*, follow this route: the AdGuard icon at the tray me
 
 `network.extension.exclude.domains`
 
-The listed domains will be excluded from filtering in the *Network Extension* mode. Use a comma or line break to separate values.
+The listed domains will be excluded from filtering in the *Network Extension* mode. Değerleri ayırmak için virgül veya satır sonu kullanın.
 
 `network.extension.exclude.ports`
 
-The listed ports will be excluded from filtering in the *Network Extension* mode. Use a comma or line break to separate values.
+The listed ports will be excluded from filtering in the *Network Extension* mode. Değerleri ayırmak için virgül veya satır sonu kullanın.
 
 `network.extension.route.exclude`
 
@@ -137,7 +137,7 @@ Burada, engellenen bir isteğe yanıt olarak döndürülecek TTL (kullanım sür
 
 `dns.proxy.parallel.upstream.queries.enabled`
 
-All upstreams are queried simultaneously. İlk yanıt döndürülür.
+Tüm üst kaynaklar aynı anda sorgulanır. İlk yanıt döndürülür.
 
 `dns.proxy.servfail.on.upstreams.failure.enabled`
 

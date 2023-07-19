@@ -1,6 +1,6 @@
 ---
 title: Přesunutí certifikátu CA do systémového úložiště na zařízeních s root přístupem
-sidebar_position: 13
+sidebar_position: 14
 ---
 
 :::info
@@ -15,11 +15,15 @@ V zařízeních bez přístupu root lze certifikáty CA nainstalovat do **Uživa
 
 Na zařízeních s root přístupem však můžete nainstalovat certifikát do **Systémového úložiště** a povolit HTTPS filtrování provozu jiných aplikací.
 
+
 Zde je návod, jak to udělat:
 
 ## Jak nainstalovat certifikát AdGuardu do systémového úložiště (na zařízení s root přístupem)
 
 1. Povolte filtrování HTTPS v AdGuardu pro Android a uložte certifikát AdGuardu do uživatelského úložiště (v případě potřeby použijte [tento pokyn](../../overview#https-filtering))
+
+> Od verze 4.1 AdGuard pro Android si uživatelé mohou do uživatelského úložiště nainstalovat dva certifikáty, které jim pomohou filtrovat webové stránky v prohlížeči Chrome.
+
 2. Jděte do **aplikace AdGuard** → **Menu** (≡) → **Nastavení** → **Síť** → **HTTPS filtrování** → **Bezpečnostní certifikát** → klepněte na "**Kopírovat do systémového úložiště**"
 
 To stačí pro starší verze Magisk.
@@ -52,7 +56,7 @@ V takovém případě přejděte k následujícím krokům:
 
 7. Restartujte
 
-![Restartovat zařízení](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-7.png)
+![Restartovat zařízení *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-7.png)
 
 Pokud vyjde nová verze modulu "AdGuard Certificate", zopakujte kroky 3-7 a modul aktualizujte.
 
@@ -60,7 +64,11 @@ Modul vykonává svou práci během zavádění systému. Pokud se váš certifi
 
 ### Prohlížeč Bromite
 
-Vezměte prosím na vědomí, že pro správnou funkci **Bromite** je kromě výše uvedených kroků nutné nastavit položku "Povolit uživatelské certifikáty" v `chrome://flags` do stavu "Povoleno".
+:::note
+
+In order for the **Bromite** browser to work properly, in addition to the steps mentioned above, you need to set "Allow user certificates" in `chrome://flags` to "Enabled" state.
+
+:::
 
 ### Chrome a prohlížeče založené na Chromium
 

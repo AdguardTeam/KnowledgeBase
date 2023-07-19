@@ -7,7 +7,7 @@ Geliştirme ekibimiz, bu üçüncü taraf yazılımın geliştiricilerine, beta 
 
 ## Üçüncü taraf yazılımı {#software}
 
-This is the list of libraries and other resources that really helped us with AdGuard software development process.
+Bu, AdGuard yazılım geliştirme sürecinde bize gerçekten yardımcı olan kütüphanelerin ve diğer kaynakların listesidir.
 
 ## AdGuard for Windows {#win}
 
@@ -175,4 +175,4 @@ Also a huge thanks and gratitude to all beta testers and other engaged users, wh
 
 We also want to thank the [xda-developers users](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/). Thank you for your helpful feedback!
 
-Kullanıcılarımızdan gelen yorumları, özellikle yapıcı olanları her zaman takdir ediyoruz. You can always contact us to share your thoughts about AdGuard, request new features, and submit bugs. Join the [AdGuard Forum](http://forum.adguard.com/forumdisplay.php?25-English-Forums), [Subreddit](https://reddit.com/r/adguard), [Xda-developers Forum](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/) or visit our page on [GitHub](https://github.com/AdguardTeam).
+Kullanıcılarımızdan gelen yorumları, özellikle yapıcı olanları her zaman takdir ediyoruz. AdGuard hakkındaki düşüncelerinizi paylaşmak, yeni özellikler talep etmek ve hata göndermek için bizimle her zaman iletişime geçebilirsiniz. Join the [AdGuard Forum](http://forum.adguard.com/forumdisplay.php?25-English-Forums), [Subreddit](https://reddit.com/r/adguard), [Xda-developers Forum](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/) or visit our page on [GitHub](https://github.com/AdguardTeam).

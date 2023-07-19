@@ -5,7 +5,7 @@ sidebar_position: 3
 
 :::info
 
-This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+В этой статье рассказывается об AdGuard для Windows — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://adguard.com/download.html?auto=true)
 
 :::
 
@@ -17,13 +17,13 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 2. Воспроизведите проблему.
 
-We strongly advise to take note of the exact time when you reproduced the issue: it will help our support team to find relevant log entries and solve the problem faster.
+Мы настоятельно рекомендуем записывать точное время, когда вы воспроизвели проблему: это поможет нашей команде поддержки найти соответствующие логи и решить проблему быстрее.
 
 3. Экспортируйте полученные логи при помощи кнопки *Экспортировать логи*.
 
-![Export logs *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
+![Экспорт логов *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
-Save the archive to any folder.
+Сохраните архив в любую папку.
 
 4. **Важно**: не забудьте вернуть *Стандартный* уровень логирования. *Подробный* уровень логирования может значительно замедлить работу приложения.
 
@@ -31,15 +31,15 @@ Save the archive to any folder.
 
 ### Трейсовые логи {#trace-logs}
 
-Sometimes support team members may ask you to send *trace* logs. Then you will need to do the following:
+Иногда в поддержке вас могут попросить прислать *трейсовые* логи. Тогда вам нужно будет сделать следующее:
 
 1. Остановите AdGuard, щёлкнув правой кнопкой мыши по значку AdGuard в меню трея и выбрав *Закрыть AdGuard*:
 
-![Exit AdGuard *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-3.png)
+![Выйти из AdGuard *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-3.png)
 
-Please don't leave the service running:
+Пожалуйста, не оставляйте приложение запущенным:
 
-![Stop AdGuard Service *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_logs_4.png)
+![Остановить AdGuard *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_logs_4.png)
 
 2. Откройте консоль (наберите `cmd` в стартовой панели).
 
@@ -47,10 +47,10 @@ Please don't leave the service running:
 
 4. Воспроизведите проблему.
 
-We strongly advise to take note of the exact time when you reproduced the issue: it will help our support team to find relevant log entries and solve the problem faster.
+Мы настоятельно рекомендуем записывать точное время, когда вы воспроизвели проблему: это поможет нашей команде поддержки найти соответствующие логи и решить проблему быстрее.
 
 5. Экспортируйте полученные логи при помощи кнопки *Экспортировать логи*.
 
-![Export logs *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
+![Экспортировать логи *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
 Не пугайтесь, если файл с логами будет большим. Нам необходимо узнать как можно больше подробностей, чтобы исправить вашу проблему.

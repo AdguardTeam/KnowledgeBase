@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-This article is about AdGuard Browser Extension, which safeguards only your browser. Tüm cihazınızı korumak için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+Bu makale, yalnızca tarayıcınızı koruyan AdGuard Tarayıcı Uzantısı hakkındadır. Tüm cihazınızı korumak için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
 
 :::
 
@@ -19,7 +19,7 @@ In the opened dialog box, click _Add extension_.
 
 ![Dialog box in Chrome Web Store *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_chrome1.png)
 
-## How to install AdGuard Browser Extension for Opera
+## Opera için AdGuard Tarayıcı Uzantısı nasıl yüklenir
 
 Open the page [addons.opera.com](https://agrd.io/extension_opera).
 
@@ -27,7 +27,7 @@ Open the page [addons.opera.com](https://agrd.io/extension_opera).
 
 Click _Add to Opera_.
 
-## How to install AdGuard Browser Extension for Firefox
+## Firefox için AdGuard Tarayıcı Uzantısı nasıl yüklenir
 
 Open the page [addons.mozilla.org](https://agrd.io/extension_firefox).
 
@@ -70,6 +70,6 @@ In the opened dialog window, click *Add extension* to install AdGuard Browser Ex
 ![Add to Edge button](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/add_to_edge.jpg)
 
 
-## How to install AdGuard Browser Extension for Safari
+## Safari için AdGuard Tarayıcı Uzantısı nasıl yüklenir
 
 AdGuard for Safari is not a browser extension in a common sense. Bu konuyla ilgili daha fazla bilgiye [bu makale](/adguard-for-safari/overview)'den ulaşabilirsiniz. Or you can [download the installation file](https://agrd.io/safari_release) directly from this page.

@@ -19,7 +19,7 @@ The figure below provides a general understanding of how the Browsing Security m
 
 ![Functioning algorithm of Browsing Security module](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_adguard_for_windows.png)
 
-### Extensão do AdGuard para navegador
+### AdGuard Browser Extension
 
 Browser extensions work differently, using the so-called [_Lookup API_](https://github.com/AdguardTeam/AdguardForAndroid/issues/162#issue-115487668) to check the pages you visit. Every time you visit any website, your local client exchanges information with our backend server in the form of hashes and hash prefixes. For those interested in the process at a deeper level, the link above will be helpful. As a result of that exchange, the local client determines if the website belongs to the database of potentially dangerous websites or not.
 

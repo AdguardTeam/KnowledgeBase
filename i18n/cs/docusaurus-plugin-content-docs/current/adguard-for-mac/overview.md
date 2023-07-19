@@ -102,7 +102,7 @@ Hlavní funkcí AdGuard Asistenta prohlížeče je správa filtrování přímo 
 
 ![Assistant popup menu *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/safari_assistant_pop-up_menu.jpg)
 
-Při první instalaci AdGuardu (během procesu zpracování) budete vyzváni k instalaci Asistenta prohlížeče pro váš výchozí prohlížeč. Pokud jste to nestihli, můžete si jej kdykoli stáhnout [pro jakýkoli prohlížeč](https://adguard.com/en/adguard-assistant/overview.html).
+Při první instalaci AdGuardu (během procesu zpracování) budete vyzváni k instalaci Asistenta prohlížeče pro váš výchozí prohlížeč. If you missed it, you can [download it for any browser](https://adguard.com/adguard-assistant/overview.html) at any time.
 
 ## Rozšíření
 

@@ -32,7 +32,7 @@ Zobrazí se vám následující seznam možností:
 
 ### V nastavení iOS
 
-Webové rozšíření není samostatný nástroj a vyžaduje AdGuard pro iOS. Pokud na svém zařízení nemáte nainstalovaný AdGuard pro iOS, [nejprve](../installation) jej nainstalujte a dokončete proces registrace, abyste jej připravili k práci.
+The Web extension is not a standalone tool and requires AdGuard for iOS. Pokud na svém zařízení nemáte nainstalovaný AdGuard pro iOS, [nejprve](../installation) jej nainstalujte a dokončete proces registrace, abyste jej připravili k práci.
 
 Po dokončení otevřete *Nastavení → Safari → Rozšíření*.
 

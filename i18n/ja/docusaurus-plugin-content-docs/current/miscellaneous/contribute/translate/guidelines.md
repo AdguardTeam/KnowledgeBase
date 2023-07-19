@@ -16,7 +16,12 @@ sidebar_position: 3
 製品フォルダを選択し、ファイルを選択すると、翻訳を開始することができます。
 
 ![Files *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/files.png)
-> ※ページ右上の*設定*アイコンをクリックすることで、Crowdinのインターフェース言語を変更することもできます。 開いたウィンドウで、 *UI language*タブにスクロールダウンしてください。 それを開き、言語を選択し、**Change**をクリックしてください。
+
+:::note
+
+You can also change the Crowdin interface language by clicking the *Settings* icon in the top right corner of the page. 開いたウィンドウで、 *UI language*タブにスクロールダウンしてください。 それを開き、言語を選択し、**Change**をクリックしてください。
+
+:::
 
 ![Language1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/settings_en.png)
 
@@ -44,7 +49,11 @@ sidebar_position: 3
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/screenshot.png)
 
-なお、コンテキストは「REQUEST」ボタンをクリックすることでリクエストすることもできます。
+:::tip
+
+You can request context by clicking the "REQUEST" button.
+
+:::
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/request.png)
 

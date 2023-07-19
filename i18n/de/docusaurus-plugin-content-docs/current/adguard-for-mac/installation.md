@@ -3,7 +3,7 @@ title: 'Installation/Deinstallation'
 sidebar_position: 2
 ---
 
-:::info
+:::Info
 
 This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -21,7 +21,7 @@ This article covers AdGuard for Mac, a multifunctional ad blocker that protects 
 
 ## Installation
 
-To install AdGuard for macOS on your computer, launch your browser, type _adguard.com_ in the address bar, and press **Download** [on the page that opens](https://adguard.com/download.html?auto=1).
+To install AdGuard for Mac on your computer, launch your browser, type _adguard.com_ in the address bar, and press **Download** [on the page that opens](https://adguard.com/download.html?auto=1).
 
 ![Laden Sie die App herunter *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/1.jpg)
 
@@ -45,7 +45,7 @@ Warten Sie auf die Ausführung des Installationsprogramms.
 
 ![Warten Sie, bis die erforderlichen Dateien heruntergeladen wurden](https://cdn.adtidy.org/content/kb/ad_blocker/mac/6.jpg)
 
-Um die App nutzen zu können, benötigen Sie das Administratorpasswort für Ihr macOS-Konto. Geben Sie das Passwort ein, wenn Sie im Dialogfeld dazu aufgefordert werden, und drücken Sie **OK**.
+Um die App nutzen zu können, benötigen Sie das Administratorpasswort für Ihr macOS-Konto. Enter the password when prompted in the dialogue box and press **OK**.
 
 ![Geben Sie das Passwort ein](https://cdn.adtidy.org/content/kb/ad_blocker/mac/7.jpg)
 

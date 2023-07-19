@@ -1,9 +1,9 @@
 ---
-title: AdGuard 라이선스란 무엇인가요?
+title: What is an AdGuard license
 sidebar_position: 1
 ---
 
-## AdGuard 라이선스란 무엇인가요?
+## What is an AdGuard license
 
 라이선스는 최종 사용자 라이선스 계약에 따라 제공되는 AdGuard 제품 사용 권한입니다. AdGuard 라이선스는 사용자의 [AdGuard 계정](../../account/register)에 라이선스 키, 활성화 코드 및 제품 카드 형태로 존재합니다.
 

@@ -1,5 +1,5 @@
 ---
-title: Wie man aktiviert
+title: Lizenz aktivieren
 sidebar_position: 3
 ---
 
@@ -97,7 +97,7 @@ or double-click the AdGuard icon in the system tray:
 
 3. Tippen Sie auf **Anmelden** in der oberen rechten Ecke des Bildschirms
 
-![Auf Anmelden in der oberen rechten Ecke des Premium-Bildschirms tippen *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense1en.png)
+![Tap Log in in the top right corner of the Premium screen *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense1en.png)
 
 4. Geben Sie **E-Mail** und **Passwort** von Ihrem **AdGuard-Konto**
 

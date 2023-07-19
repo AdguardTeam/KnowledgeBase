@@ -48,7 +48,7 @@ We don't recommend touching other settings you'll find inside the *Advanced sett
 
 3. 请复制此链接：`https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt`（这是 AdGuard DNS 过滤器的链接）。
 4. 打开 *AdGuard iOS 版的设置* → *「DNS 保护」* → *「DNS 过滤」*（仅在*高级模式*开启时使用）→*「DNS 过滤器」*。
-5. Tap *Add a filter*, paste the link into the filter URL field, and yap 'Next'.
+5. Tap *Add a filter*, paste the link into the filter URL field, and tap 'Next'.
 
 ![添加 DNS 过滤器屏幕 *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_adding_a_filter.PNG)
 

@@ -1,11 +1,11 @@
 ---
 title: Перемещение сертификата ЦС в системное хранилище на рутированных устройствах
-sidebar_position: 13
+sidebar_position: 14
 ---
 
 :::info
 
-This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://adguard.com/download.html?auto=true)
 
 :::
 
@@ -15,11 +15,15 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 Но на рутированных устройствах можно установить сертификат в **системное хранилище** и разрешить HTTPS-фильтрацию трафика других приложений.
 
+
 Вот как это сделать.
 
 ## Как установить сертификат AdGuard в системное хранилище на рутированном устройстве
 
 1. Включите HTTPS-фильтрацию в AdGuard для Android и сохраните сертификат AdGuard в пользовательское хранилище (при необходимости используйте [эту инструкцию](../../overview#https-filtering))
+
+> Начиная AdGuard для Android версии 4.1, пользователи могут установить два сертификата, которые помогут фильтровать сайты в браузере Chrome.
+
 2. Перейдите в **Приложение AdGuard** → **Меню** (≡) → **Настройки** → **Сеть** → **HTTPS-фильтрация** → **Сертификат безопасности** → нажмите «**Скопировать в системный магазин**»
 
 Этого достаточно для старых версий Magisk.
@@ -52,7 +56,7 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 7. Перезагрузка
 
-![Перезагрузите устройство](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-7.png)
+![Перезагрузка устройства *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-7.png)
 
 Если вышла новая версия модуля «Сертификат AdGuard», повторите шаги 3–7, чтобы обновить модуль.
 
@@ -60,7 +64,11 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 ### Браузер Bromite
 
-Обратите внимание, что для правильной работы браузера **Bromite**, в дополнение к шагам выше, вам необходимо включить опцию «Разрешить пользовательские сертификаты» в `chrome://flags`.
+:::note
+
+Для правильной работы браузера **Bromite**, в дополнение к шагам выше, вам необходимо включить опцию «Разрешить пользовательские сертификаты» в `chrome://flags`.
+
+:::
 
 ### Chrome и браузеры на базе Chromium
 

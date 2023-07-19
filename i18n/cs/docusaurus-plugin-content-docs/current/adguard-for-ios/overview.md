@@ -91,7 +91,7 @@ V dolní části obrazovky je navíc možnost přidat vlastní DNS server. Podpo
 
 ![Obrazovka nastavení sítě *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/network_settings_en.jpeg)
 
-Uživatelé mohou na obrazovce Nastavení sítě také řešit zabezpečení DNS. *Filtrovat mobilní data* a *Filtrovat Wi-Fi* zapnout nebo vypnout ochranu DNS pro příslušné typy sítí. Dále ve *výjimkách Wi-Fi* můžete vyloučit konkrétní sítě Wi-Fi z ochrany DNS (můžete například chtít vyloučit svou domácí síť, pokud používáte [AdGuard Home](https://adguard.com/en/adguard-home/overview.html)).
+Uživatelé mohou na obrazovce Nastavení sítě také řešit zabezpečení DNS. *Filtrovat mobilní data* a *Filtrovat Wi-Fi* zapnout nebo vypnout ochranu DNS pro příslušné typy sítí. Further down, at *Wi-Fi exceptions*, you can exclude particular Wi-Fi networks from DNS protection (for example, you might want to exclude your home network if you use [AdGuard Home](https://adguard.com/adguard-home/overview.html)).
 
 ### DNS filtrování {#dns-filtering}
 
@@ -181,7 +181,7 @@ Nastavení v této části je většinou lepší ponechat beze změny: používe
 
 ### Blokování IPv6 {#blockipv6}
 
-Na každý dotaz DNS odeslaný za účelem získání adresy IPv6 vrátí naše aplikace prázdnou odpověď (jako by tato adresa IPv6 neexistovala). Nyní existuje možnost nevracet adresy IPv6. Na tomto místě se popis této funkce stává příliš technickým: konfigurace nebo zakázání protokolu IPv6 je výhradní doménou pokročilých uživatelů. Pokud patříte mezi ně, bude dobré vědět, že tuto funkci nyní máme, pokud ne – není třeba se do ní nořit.
+Na každý dotaz DNS odeslaný za účelem získání adresy IPv6 vrátí naše aplikace prázdnou odpověď (jako by tato adresa IPv6 neexistovala). Nyní existuje možnost nevracet adresy IPv6. Na tomto místě se popis této funkce stává příliš technickým: konfigurace nebo zakázání protokolu IPv6 je výhradní doménou pokročilých uživatelů. Presumably, if you are one of them, it will be good to know that we now have this feature, if not — there is no need to dive into it.
 
 ### Bootstrap a záložní servery {#bootstrap-fallback}
 

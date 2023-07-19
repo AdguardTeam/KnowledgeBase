@@ -3,7 +3,7 @@ title: Features overview
 sidebar_position: 1
 ---
 
-:::info
+:::Info
 
 Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -123,7 +123,7 @@ AdGuard Extra is essentially a mini-program that changes the way pages work,and 
 
 **AdGuard Popup Blocker**
 
-This extension prevents popup windows from opening when you view web pages. Some pop-ups are considered useful – they may contain settings for site administering or additional reference information demonstrated upon clicking a link. That is why you can turn off the Blocker if needed. This extension doesn’t work on websites added to the AdGuard exceptions list either. It is turned off by default, but you can turn it on in the application settings. You will find more detailed information about this extension in our Knowledge base.
+This extension prevents popup windows from opening when you view web pages. Some pop-ups are considered useful — they may contain settings for site administering or additional reference information demonstrated upon clicking a link. That is why you can turn off the Blocker if needed. This extension doesn’t work on websites added to the AdGuard exceptions list either. It is turned off by default, but you can turn it on in the application settings. You will find more detailed information about this extension in our Knowledge base.
 
 **Web of Trust**
 

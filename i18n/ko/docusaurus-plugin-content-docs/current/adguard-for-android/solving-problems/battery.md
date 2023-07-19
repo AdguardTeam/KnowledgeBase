@@ -9,37 +9,23 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 :::
 
-Android 내장 통계에 따르면 AdGuard가 많은 트래픽 및 배터리를 소비한다는 것을 아실 수 있습니다.
+On Android devices running OS 6 and earlier, built-in statistics often attributed high data and/or battery usage to AdGuard. This was because AdGuard counted all the traffic it filtered from various apps. As a result, AdGuard's share of total data and battery usage was overstated, while other apps were understated.
 
-이것은 동전의 양면과 같은 문제입니다. 필터링 적용 시 모든 모바일 트래픽이 AdGuard를 통과하므로 Android는 AdGuard가 이 트래픽을 소비한다고 판단합니다. 그러나 실제로는 그렇지 않습니다.
+With Android 7, however, this scenario has improved. Now the data reflected in Android's built-in data usage statistics is very close to reality, although there are minor discrepancies in the battery usage data.
 
-기기 통계에 표시된 배터리 및 트래픽 소비는 **잘못 표시**되는 것입니다. Android가 소비한 것으로 표시되는 트래픽은 실제 WiFi 및 모바일 트래픽을 사용하는 다른 앱에서 사용됩니다. 이 때문에 총 소비 트래픽 및 배터리 리소스에서 AdGuard의 점유율이 증가하고 반대로 다른 앱의 점유율이 감소한 형태로 보여집니다.
+However, AdGuard users can always get a true picture of the situation on the *Battery usage* screen.
 
 ### 자체 배터리 사용 통계 화면
 
-위로 인해 발생할 수 있는 오해를 해소하기 위해 AdGuard에 '배터리 사용량' 기능이 추가되었습니다. 메뉴에서 '배터리 사용량'을 탭하여 액세스할 수 있습니다.
+You can access it by navigating to *Statistics* → *Battery usage*.
 
-![배터리 통계 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/battery/batterystats.png)
+![배터리 통계 *mobile_border](https://cdn.adtidy.org/content/articles/battery/1.png)
 
-이 페이지는 지난 24시간 동안의 AdGuard 배터리 리소스 소모량을 보여주는 차트를 표시하며, 차트를 탭하여 더 자세한 시간별 데이터를 얻을 수 있습니다. 또한 데이터의 숫자 분석과 간단한 기술 설명도 있습니다.
-
-### 예시
-
-아래 스크린샷에서 밤과 다음날 아침의 배터리 리소스 소비 통계를 볼 수 있습니다.
-
-![배터리 1 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_1.png) ![배터리 2 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_2.png) ![배터리 3 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_3.png)
-
-위 스크린샷을 참조해 주세요.
-
-1. 스마트폰 등 대부분의 경우에 AdGuard는 차트 상단에 위치합니다. 단, WiFi의 배터리 소모가 적기 때문에 4G 미사용 태블릿 등에서는 순위가 낮을 수 있습니다.
-
-2. 스크린샷 # 2: AdGuard의 전송된 모바일 및 WiFi 패키지 수를 확인해 주세요.
-
-3. 스크린샷 # 3: 실제 트래픽을 사용하는 음악 서비스인 Yandex.Music의 통계입니다. 트래픽을 거의 사용하지 않은 것처럼 보이지만 실제로는 전체 트래픽의 70%를 소비합니다.
+Inside you will find a chart that shows the AdGuard battery resource consumption within the last 24 hours, with an option to get more detailed hour-to-hour data by tapping on the chart. 또한 데이터의 숫자 분석과 간단한 기술 설명도 있습니다.
 
 ### AdGuard는 실제로 얼마나 많은 배터리를 소비합니까?
 
-먼저 필요한 데이터에 대한 정보와 링크를 제공합니다.
+First, let us lay down a bit of theory and links with necessary data.
 
 1. Android는 모든 제조업체에서 제공하는 소위 ‘전력 프로필’을 기준으로 트래픽 소비를 유도합니다: <https://source.android.com/devices/tech/power/values.html>
 

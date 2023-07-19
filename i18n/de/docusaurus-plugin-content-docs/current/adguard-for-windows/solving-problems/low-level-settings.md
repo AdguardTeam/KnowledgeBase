@@ -3,7 +3,7 @@ title: Leitfaden für erweiterte (low-level) Einstellungen
 sidebar_position: 7
 ---
 
-:::info
+:::Info
 
 Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://adguard.com/download.html?auto=true)
 
@@ -11,7 +11,7 @@ Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbebloc
 
 Die früher als Low-Level-Einstellungen bezeichneten erweiterten Einstellungen enthalten meist Optionen, die über die Fähigkeiten des durchschnittlichen Benutzers hinausgehen und im Alltag nicht verwendet werden. AdGuard für Windows ist so konzipiert, dass es ohne Änderungen funktioniert, aber in bestimmten Fällen oder bei der Lösung eines ungewöhnlichen Problems werden zusätzliche Funktionen bereitgestellt.
 
-:::caution
+:::Zur Beachtung
 
 Das unbedachte Ändern von *Erweiterten Einstellungen* kann möglicherweise Probleme mit der Leistung von AdGuard verursachen, die Internetverbindung unterbrechen oder Ihre Sicherheit und Privatsphäre gefährden. Sie sollten diese Einstellungen nur dann ändern, wenn Sie sich sicher sind, was Sie tun, oder wenn unser Support-Team Sie dazu aufgefordert hat.
 
@@ -75,7 +75,11 @@ Aktivieren Sie diese Option, damit sich das Hauptfenster von AdGuard nach dem La
 
 Ab v7.12 filtert der AdGuard-Dienst standardmäßig keinen Datenverkehr nach dem Start des Betriebssystems, wenn die Option „AdGuard beim Systemstart starten” deaktiviert ist. Mit anderen Worten, der Dienst von AdGuard wird im „Leerlaufmodus” gestartet. Aktivieren Sie diese Option, damit AdGuard den Datenverkehr auch dann filtert, wenn die App nicht gestartet ist.
 
-*Note that before v7.12 the AdGuard's service started in filtering mode by default (even if the *Launch AdGuard at system start-up* was disabled). If you were satisfied with the old behavior, enable this option.*
+:::note
+
+Before v7.12, the AdGuard service started in filtering mode by default (even if the *Launch AdGuard at system start-up* was disabled). If you were satisfied with the old behavior, enable this option.
+
+:::
 
 ### Localhost filtern
 
@@ -129,13 +133,21 @@ Sendet regelmäßig TCP-Pakete über eine inaktive Verbindung, um sicherzustelle
 
 Hier können Sie eine Leerlaufzeit in Sekunden angeben, bevor ein Keepalive-Test gesendet wird. Wird 0 (Null) angegeben, wird der vom System gewählte Wert verwendet.
 
-Beachten Sie, dass diese Einstellung nur funktioniert, wenn die Option *TCP-Keepalive aktivieren* aktiviert ist.
+:::note
+
+This setting only works when the *Enable TCP keepalive* option is enabled.
+
+:::
 
 ### TCP-Keepalive-Zeitüberschreitung
 
 Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. Wird 0 (Null) angegeben, wird der vom System gewählte Wert verwendet.
 
-Beachten Sie, dass diese Einstellung nur funktioniert, wenn die Option *TCP-Keepalive aktivieren* aktiviert ist.
+:::note
+
+This setting only works when the *Enable TCP keepalive* option is enabled.
+
+:::
 
 ### Java blockieren
 

@@ -1,5 +1,5 @@
 ---
-title: How to activate premium features
+title: Premium özellikler nasıl etkinleştirilir
 sidebar_position: 1
 ---
 

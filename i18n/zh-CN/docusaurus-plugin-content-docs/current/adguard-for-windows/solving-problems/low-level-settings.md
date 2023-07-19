@@ -75,7 +75,11 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 从 v7.12 版本开始，默认情况下，如果「AdGuard 随系统启动」选项被禁用，AdGuard 服务不会在操作系统启动后开始过滤流量。 这意味着，AdGuard 服务是以“待机”模式启动的。 启用此选项，使 AdGuard 过滤流量，即使应用程序没有启动。
 
-*Note that before v7.12 the AdGuard's service started in filtering mode by default (even if the *Launch AdGuard at system start-up* was disabled). If you were satisfied with the old behavior, enable this option.*
+:::note
+
+Before v7.12, the AdGuard service started in filtering mode by default (even if the *Launch AdGuard at system start-up* was disabled). If you were satisfied with the old behavior, enable this option.
+
+:::
 
 ### 过滤 localhost 连接
 
@@ -129,13 +133,21 @@ Valid values: 1–1500. 如果指定无效大小，将使用系统选择的数�
 
 用户可以指定在发送 keepalive 探测之前的空闲时间段（以秒为单位）。 If 0 is specified, the value selected by the system will be used.
 
-请注意，此设置仅在启用*「启用 TCP 保活」*选项时有效。
+:::note
+
+This setting only works when the *Enable TCP keepalive* option is enabled.
+
+:::
 
 ### TCP 保活超时
 
 Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. 如果指定 0，使用系统选择的数值。
 
-请注意，此设置仅在启用*「启用 TCP 保活」*选项时有效。
+:::note
+
+This setting only works when the *Enable TCP keepalive* option is enabled.
+
+:::
 
 ### 拦截 Java
 

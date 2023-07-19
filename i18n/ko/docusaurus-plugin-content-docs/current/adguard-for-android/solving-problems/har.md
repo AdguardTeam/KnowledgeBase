@@ -14,13 +14,13 @@ HAR(HTTP ARchive) 형식은 웹 브라우저와 사이트 간의 상호 작용�
 
 ## HAR 파일 수집 방법
 간혹 재생산하기 어려운 특정 광고를 차단하기 위해 HAR 파일 분석이 필요합니다. HAR 파일을 수집하려면 다음 단계를 따르십시오.
-1. AdGuard를 열고 '설정'으로 이동합니다.
-2. '고급'을 선택합니다.
-3. '로우 레벨 설정'을 선택합니다.
-4. pref.har.capture 활성화합니다(보호를 다시 시작해야 함).
-5. 문제를 재현해 주세요. 앱을 열고 광고가 표시될 때까지 앱을 사용합니다.
-6. pref.har.capture 비활성화합니다.
-7. Go back and tap "Export logs and system info" → Save.
+1. Open AdGuard and go to **Settings** (⚙ icon in the lower right corner).
+2. Tap **General** →**Advanced** → **Low-level settings**.
+3. Scroll down and activate **Capture HAR** in the Filtering section.
+4. Open the app and perform the necessary actions to reproduce the problem.
+5. Turn **Capture HAR** off.
+6. Go back to **Advanced**.
+7. Tap **Export logs and system info** → **Allow** (if necessary) → **Save**.
 
 **.har 파일을 AdGuard 지원 팀에 보내 주세요.**
 

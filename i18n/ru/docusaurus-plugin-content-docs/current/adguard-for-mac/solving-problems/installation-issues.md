@@ -5,7 +5,7 @@ sidebar_position: 5
 
 :::info
 
-This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+В этой статье рассказывается об AdGuard для Mac — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://adguard.com/download.html?auto=true)
 
 :::
 
@@ -17,12 +17,12 @@ This article covers AdGuard for Mac, a multifunctional ad blocker that protects 
 
 Следуйте этой инструкции, чтобы решить проблему:
 
-1. Restart your Mac
-2. As your Mac restarts, press and hold down the *Command(⌘) + R* keys immediately upon hearing the startup chime. Чтобы перевести компьютер в режим восстановления, удерживайте клавиши, пока не появится логотип Apple.
-3. From the top bar select *Utilities* → *Terminal*, and execute this command: `csrutil disable`
-4. Restart the Mac and log into Administrator's profile
-5. Open the Finder window and select from the top bar *Go* → *Go to Folder* and type `~/private/`
-6. Create a folder named *tmp* and type in your password
-7. Launch AdGuard installation
+1. Перезагрузите Mac
+2. Когда Mac перезагрузится, зажмите клавиши *Command(⌘) + R*. Чтобы перевести компьютер в режим восстановления, удерживайте клавиши, пока не появится логотип Apple.
+3. В верхней панели выберите *Утилиты* → *Терминал* и выполните следующую команду: `csrutil disable`
+4. Перезагрузите Mac и войдите в профиль администратора
+5. Откройте Finder и выберите на верхней панели *Переход* → *Переход к папке...* и введите `~/private/`
+6. Создайте папку с названием *tmp* и введите пароль
+7. Запустите установку AdGuard
 
 Как только установка будет завершена, перезапустите Mac в режиме восстановления, следуя инструкции выше, и выполните команду `csrutil enable` в Терминале, чтобы включить системную защиту.

@@ -26,7 +26,7 @@ Chrome에서 HAR 파일을 만들려면 다음을 수행합니다.
 
 7. ***캐시 사용 안 함*** 확인란을 선택합니다.
 
-![크롬](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/chrome.png)
+![Chrome](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/chrome.png)
 
 8. 문제를 만드는 단계를 재현합니다.
 
@@ -139,7 +139,7 @@ Safari에서 HAR 파일을 만들려면 다음을 수행합니다.
 
 ## Android {#android}
 
-HAR 파일을 수집하려면 다음 단계를 따르십시오.
+To create HAR files, follow these steps:
 
 1. AdGard를 열고 ***설정***으로 이동합니다.
 

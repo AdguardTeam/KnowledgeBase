@@ -3,7 +3,7 @@ title: AdGuard hakkında yazın
 sidebar_position: 3
 ---
 
-If you like AdGuard and want to spread your impressions of the product(s) over the internet — in social media, personal blogs and/or on websites — then this article can be useful for you.
+AdGuard'ı seviyorsanız ve ürün(ler) ile ilgili izlenimlerinizi internet üzerinden — sosyal medyada, kişisel bloglarda ve/veya sitelerde — yaymak istiyorsanız, bu makale sizin için yararlı olabilir.
 
 Çevrimiçi deneyiminizi paylaştığınızda, bize [pr@adguard.com](mailto:pr@adguard.com) adresine bir bağlantı gönderin, size ücretsiz bir lisans anahtarıyla teşekkür edelim. Sitenizin hedef kitlesinin on veya bin kişi olması hiç önemli değil, her türlü emeğe saygı duyuyoruz. Aklınızda tutmanız gereken tek not, incelemenizin yaklaşık 300 ila 500 kelime arasında olması gerektiğidir.
 

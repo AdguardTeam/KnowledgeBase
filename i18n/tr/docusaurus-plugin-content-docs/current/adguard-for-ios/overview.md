@@ -91,7 +91,7 @@ Ek olarak, ekranın alt kısmında özel bir DNS sunucusu ekleme seçeneği vard
 
 ![Network settings screen *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/network_settings_en.jpeg)
 
-Kullanıcılar, DNS güvenliklerini Ağ ayarları ekranından da yönetebilirler. *Filter mobile data* and *Filter Wi-Fi* enable or disable DNS protection for the respective network types. Further down, at *Wi-Fi exceptions*, you can exclude particular Wi-Fi networks from DNS protection (for example, you might want to exclude your home network if you use [AdGuard Home](https://adguard.com/en/adguard-home/overview.html)).
+Kullanıcılar, DNS güvenliklerini Ağ ayarları ekranından da yönetebilirler. *Filter mobile data* and *Filter Wi-Fi* enable or disable DNS protection for the respective network types. Further down, at *Wi-Fi exceptions*, you can exclude particular Wi-Fi networks from DNS protection (for example, you might want to exclude your home network if you use [AdGuard Home](https://adguard.com/adguard-home/overview.html)).
 
 ### DNS filtering {#dns-filtering}
 
@@ -181,7 +181,7 @@ For the most part, the settings in this section are best left untouched: only us
 
 ### Block IPv6 {#blockipv6}
 
-For any DNS query sent to get an IPv6 address, our app returns an empty response (as if this IPv6 address does not exist). Now there is an option not to return IPv6 addresses. At this point the description of this function becomes too technical: configuring or disabling IPv6 is the exclusive domain of advanced users. Presumably, if you are one of them, it will be good to know that we now have this feature, if not – there is no need to dive into it.
+For any DNS query sent to get an IPv6 address, our app returns an empty response (as if this IPv6 address does not exist). Now there is an option not to return IPv6 addresses. At this point the description of this function becomes too technical: configuring or disabling IPv6 is the exclusive domain of advanced users. Presumably, if you are one of them, it will be good to know that we now have this feature, if not — there is no need to dive into it.
 
 ### Bootstrap and Fallback servers {#bootstrap-fallback}
 

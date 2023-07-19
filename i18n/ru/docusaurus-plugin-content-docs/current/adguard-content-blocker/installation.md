@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-This article is about AdGuard Content Blocker, which only safeguards your Samsung Internet browser or Yandex Browser. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Эта статья посвящена AdGuard Content Blocker, который защищает только браузеры Samsung и Яндекс Браузер. Чтобы защитить всё устройство, [скачайте приложение AdGuard](https://adguard.com/download.html?auto=true)
 
 :::
 
@@ -17,7 +17,7 @@ This article is about AdGuard Content Blocker, which only safeguards your Samsun
 
 :::note
 
-AdGuard Content Blocker works in two browsers: [Yandex Browser](https://browser.yandex.com/) and [Samsung Internet Browser](https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser).
+AdGuard Content Blocker работает в двух браузерах: [Яндекс Браузере](https://browser.yandex.com/) и [Samsung Internet Browser](https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser).
 
 :::
 

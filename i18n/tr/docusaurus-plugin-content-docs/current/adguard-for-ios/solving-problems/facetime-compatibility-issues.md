@@ -24,4 +24,4 @@ To enable it, follow the instructions:
 2. Enable *Advanced mode* and go to the *Advanced settings* section that appears right after.
 3. Open *Tunnel mode* and select *Split-Tunnel*.
 
-Done! Now there should be no problems with FaceTime compatibility.
+Tamamlandı! Now there should be no problems with FaceTime compatibility.

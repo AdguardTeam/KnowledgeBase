@@ -21,7 +21,7 @@ This article covers AdGuard for Mac, a multifunctional ad blocker that protects 
 
 ## Installation
 
-To install AdGuard for macOS on your computer, launch your browser, type _adguard.com_ in the address bar, and press **Download** [on the page that opens](https://adguard.com/download.html?auto=1).
+To install AdGuard for Mac on your computer, launch your browser, type _adguard.com_ in the address bar, and press **Download** [on the page that opens](https://adguard.com/download.html?auto=1).
 
 ![Download the app *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/1.jpg)
 
@@ -45,7 +45,7 @@ Wait for the installer to download the required files.
 
 ![Wait until the necessary files are downloaded](https://cdn.adtidy.org/content/kb/ad_blocker/mac/6.jpg)
 
-To use the application, you will need the administrator password for your macOS account. Enter the password when propped in the dialogue box and press **OK**.
+To use the application, you will need the administrator password for your macOS account. Enter the password when prompted in the dialogue box and press **OK**.
 
 ![Enter the password](https://cdn.adtidy.org/content/kb/ad_blocker/mac/7.jpg)
 

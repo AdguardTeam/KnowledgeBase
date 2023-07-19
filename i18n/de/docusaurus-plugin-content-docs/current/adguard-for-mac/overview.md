@@ -3,7 +3,7 @@ title: Funktionsübersicht
 sidebar_position: 1
 ---
 
-:::info
+:::Info
 
 This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
@@ -102,7 +102,7 @@ Die Hauptfunktion des AdGuard Browser-Assistenten besteht darin, die Filterung d
 
 ![Pop-up-Menü des Assistenten *mobil](https://cdn.adtidy.org/content/kb/ad_blocker/mac/safari_assistant_pop-up_menu.jpg)
 
-Bei der Erstinstallation von AdGuard (während des Einführungsprozesses) werden Sie aufgefordert, den Browser-Assistenten für Ihren Standardbrowser zu installieren. Falls Sie es verpasst haben, können Sie es [jederzeit für jeden Browser](https://adguard.com/en/adguard-assistant/overview.html) herunterladen.
+Bei der Erstinstallation von AdGuard (während des Einführungsprozesses) werden Sie aufgefordert, den Browser-Assistenten für Ihren Standardbrowser zu installieren. If you missed it, you can [download it for any browser](https://adguard.com/adguard-assistant/overview.html) at any time.
 
 ## Erweiterungen
 

@@ -18,7 +18,7 @@ sidebar_position: 3
 
 :::note
 
-When you send a complaint via the app or via AdGuard Browser Assistant, all information is pre-filled automatically. Кроме скриншотов — их придётся прикреплять самостоятельно. Если вы используете [прямую ссылку](https://reports.adguard.com/new_issue.html), вам необходимо ввести данные вручную.
+При отправке жалобы через приложение или через Браузерный Помощник AdGuard вся информация заполняется автоматически. Кроме скриншотов — их придётся прикреплять самостоятельно. Если вы используете [прямую ссылку](https://reports.adguard.com/new_issue.html), вам необходимо ввести данные вручную.
 
 :::
 
@@ -74,7 +74,7 @@ When you send a complaint via the app or via AdGuard Browser Assistant, all info
 
 :::note
 
-When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. Кроме скриншотов — их придётся прикреплять самостоятельно. Если вы используете [прямую ссылку](https://reports.adguard.com/en/new_issue.html), вам необходимо ввести данные вручную.
+При отправке жалобы через приложение или через Браузерный Помощник AdGuard вся информация заполняется автоматически. Кроме скриншотов — их придётся прикреплять самостоятельно. Если вы используете [прямую ссылку](https://reports.adguard.com/new_issue.html), вам необходимо ввести данные вручную.
 
 :::
 

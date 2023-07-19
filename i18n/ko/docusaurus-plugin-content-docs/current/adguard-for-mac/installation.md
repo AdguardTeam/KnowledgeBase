@@ -21,7 +21,7 @@ This article covers AdGuard for Mac, a multifunctional ad blocker that protects 
 
 ## 설치 방법
 
-To install AdGuard for macOS on your computer, launch your browser, type _adguard.com_ in the address bar, and press **Download** [on the page that opens](https://adguard.com/download.html?auto=1).
+To install AdGuard for Mac on your computer, launch your browser, type _adguard.com_ in the address bar, and press **Download** [on the page that opens](https://adguard.com/download.html?auto=1).
 
 ![앱 다운로드 *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/1.jpg)
 
@@ -45,7 +45,7 @@ AdGuard가 처음 시작되면 운영 체제에서 이 프로그램이 인터넷
 
 ![필요한 파일이 다운로드될 때까지 기다리세요](https://cdn.adtidy.org/content/kb/ad_blocker/mac/6.jpg)
 
-프로그램을 사용하시려면 macOS 계정의 관리자 암호가 필요합니다. 대화 상자에 암호를 입력하고 **확인**을 누릅니다.
+프로그램을 사용하시려면 macOS 계정의 관리자 암호가 필요합니다. Enter the password when prompted in the dialogue box and press **OK**.
 
 ![비밀번호 입력](https://cdn.adtidy.org/content/kb/ad_blocker/mac/7.jpg)
 

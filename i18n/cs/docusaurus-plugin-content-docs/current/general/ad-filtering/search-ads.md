@@ -5,7 +5,7 @@ sidebar_position: 3
 
 **Zpřístupnění.** AdGuard sice poskytuje možnost zobrazovat některé reklamy, ale nemáme žádný program 'přijatelných reklam', jako je Adblock Plus a některé další blokátory reklam, které si za ponechání určitých reklam bez blokování berou peníze. To není náš případ. Za zobrazení žádné z reklam nedostáváme zaplaceno a termín 'přijatelný' nepoužíváme z jednoho důvodu: reklamy, které můžeme zobrazit, mohou být ve skutečnosti užitečné a ne jen 'přijatelné'. To vše platí pouze pro reklamy ve vyhledávání a vlastní propagaci.
 
-Aby bylo jasné, toto je **zcela volitelné**. Zobrazování těchto reklam můžete kdykoli vypnout bez jakýchkoli sankcí. Dále vysvětlíme, které reklamy splňují podmínky této definice.
+You can turn off the display of these ads at any time. Dále vysvětlíme, které reklamy splňují podmínky této definice.
 
 ### Reklamy ve vyhledávání
 

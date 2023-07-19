@@ -88,9 +88,7 @@ Now AdGuard can filter local proxies (mostly) without any problems. If you encou
 
 :::
 
-To configure an upstream proxy in AdGuard for Mac in Big Sur, you need to go to *AdGuard menu → Advanced → Advanced Settings...*. Click on the *Value* area of the `upstream.proxy` setting to configure a proxy.
-
-![Proxy settings in AdGuard for Mac on Big Sur](https://cdn.adtidy.org/content/kb/ad_blocker/mac/proxy_en.jpg)
+To configure an upstream proxy in AdGuard for Mac in Big Sur, open AdGuard's settings *Preferences → Network → Outbound proxy*. Click the *Value* area of the `upstream.proxy` setting to configure a proxy.
 
 Enter a string that looks like `scheme://user:password@host:port`, where
 

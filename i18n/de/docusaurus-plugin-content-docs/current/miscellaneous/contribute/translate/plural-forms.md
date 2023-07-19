@@ -12,11 +12,11 @@ Wir empfehlen Ihnen dringend, diesen Artikel sorgfältig zu lesen, um mehr über
 
 Substantive in verschiedenen Sprachen können mehrere Wortformen im Plural haben. Ihre Verwendung hängt von der Anzahl der Dinge ab, über die Sie sprechen.
 
-Zum Beispiel haben englische Wörter zwei Wortformen, wenn sie im Singular über etwas sprechen, wie *„one star“*, und im Plural – *„2 stars“*. Es spielt keine Rolle, ob Sie fünf, sechsundzwanzig oder sogar fünfhundertzweiunddreißig Sterne sagen – die Endung „s“ bleibt gleich. Einige Sprachen können jedoch nur eine oder mehrere Pluralformen enthalten.
+For instance, English words have two word forms when speaking about something in the singular, like *'one star'*, and in the plural — *'two stars'*. It doesn’t matter if you say five, twenty six or even five hundred thirty two stars — the ending 's' will remain the same. Einige Sprachen können jedoch nur eine oder mehrere Pluralformen enthalten.
 
-Im Gegensatz zum Englischen gibt es in der polnischen Sprache drei Substantivformen im Plural. Eine von ihnen wird verwendet, wenn über etwas im Singular gesprochen wird, eine andere Form wird im Plural verwendet, aber mit Zahlen, die auf 2-4 enden, außer 12-14, und die dritte Form – für Wörter mit anderen Zahlen davor.
+Im Gegensatz zum Englischen gibt es in der polnischen Sprache drei Substantivformen im Plural. One of them is used when speaking about something in the singular, another form is used in the plural but with numbers ending in 2-4, excluding 12-14, and the third form — for words with other numbers in front of them.
 
-Schauen wir uns dieses Bild an. Hier sieht man die Zahlengruppen, die eine Wortform bestimmen, wenn sie davor stehen.
+Let’s take a look at this picture. Hier sieht man die Zahlengruppen, die eine Wortform bestimmen, wenn sie davor stehen.
 
 ![Polnisch](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
@@ -94,7 +94,7 @@ Bitte seien Sie aufmerksam, wenn Sie diese Strings übersetzen und genehmigen. W
 
 Dies ist die komplizierteste Art von AdGuard-Strings, die am häufigsten in `AdGuard Websites`-Projekt verwendet wird.
 
-Achten Sie genau auf ein vertikales Balkenzeichen zwischen den Sätzen und **%count%**-Platzhalter in Originalphrasen – dies wird Ihnen helfen, Phrasen mit Pluralformen zu identifizieren.
+Pay close attention to a vertical bar sign between the sentences and **%count%** placeholders in original phrases — this will help you identify phrases where translations require the use of plural forms.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/plurals_site.png)
 
@@ -108,9 +108,9 @@ Um auf das Beispiel zurückzukommen: Da die englische Sprache nur zwei Formen um
 
 `Standard license for *%count%* computer | Standard license for *%count%* computers`
 
-wobei **Vorlage 1** –  Standard license for *%count%* computer,
+where **template 1** is Standard license for *%count%* computer,
 
-und **Vorlage 2** — Standard license for *%count%* computers
+and **template 2** is Standard license for *%count%* computers
 
 Eine weitere wichtige Sache, auf die Sie Ihre Aufmerksamkeit richten sollten, sind **%count%**-Platzhalter, die wie üblich vor den Wörtern stehen, die sie definieren. Anstelle von **%count%** erscheinen hier unterschiedliche Zahlen, je nachdem, welche Vorlagen ausgewählt werden.
 
@@ -147,7 +147,7 @@ Und noch einmal: Wenn Sie auf einen Originalsatz mit zwei wichtigen Elementen st
 
 + Beziehen Sie sich auf die Pluralregel einer Sprache, in die Sie übersetzen;
 
-The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms – two templates in translations; five plural forms – five templates, etc.
+The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms — two templates in translations; five plural forms — five templates, etc.
 
 + Vergessen Sie nicht, ein vertikales Balkenzeichen zwischen Vorlagen zu verwenden, wie es in Originalphrasen dargestellt wird;
 

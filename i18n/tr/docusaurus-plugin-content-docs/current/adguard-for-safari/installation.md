@@ -5,46 +5,46 @@ sidebar_position: 2
 
 :::info
 
-This article is about AdGuard for Safari, which safeguards only your Safari browser. Tüm cihazınızı korumak için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+Bu makale, yalnızca Safari tarayıcınızı koruyan Safari için AdGuard hakkındadır. Tüm cihazınızı korumak için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
 
 :::
 
-## How to install AdGuard for Safari {#install}
+## Safari için AdGuard nasıl yüklenir {#install}
 
-AdGuard for Safari is a free app presented on the App Store. To install it on your device, do the following.
+Safari için AdGuard, App Store'da sunulan ücretsiz bir uygulamadır. Cihazınıza yüklemek için aşağıdakileri yapın.
 
-1. Open the App Store and find the needed extension there.
+1. App Store'u açın ve gerekli uzantıyı orada bulun.
 
 ![AdGuard for Safari on the App Store](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-app-store.png)
 
 2. Press *Get* → *Install* → *Open*.
 
-3. To set up AdGuard for Safari, enable the AdGuard extensions in the Safari settings. In a notification, click *Fix it*. In an opened window, check the boxes next to AdGuard extensions.
+3. Safari için AdGuard'ı ayarlamak üzere Safari ayarlarında AdGuard uzantılarını etkinleştirin. Bir bildirimde *Düzelt* öğesine tıklayın. Açılan bir pencerede, AdGuard uzantılarının yanındaki kutuları işaretleyin.
 
 ![Notification: Some extensions are disabled](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-notification.png)
 
 :::note
 
-Not all extensions are required for AdGuard for Safari to function correctly. For instance, checking the *Icon* extension enables the icon in the tray menu. However, we recommend to enable all of them.
+Safari için AdGuard'ın düzgün çalışması için tüm uzantılar gerekli değildir. Örneğin, *Simge* uzantısının işaretlenmesi, tepsi menüsündeki simgeyi etkinleştirir. Ancak, hepsini etkinleştirmenizi tavsiye ederiz.
 
 :::
 
 ![Extensions checked](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-extensions-checked.png)
 
-After you complete steps 1-3, AdGuard for Safari will start functioning. You can now configure its settings.
+1-3 arasındaki adımları tamamladıktan sonra Safari için AdGuard çalışmaya başlar. Artık ayarlarını yapılandırabilirsiniz.
 
 
-## How to uninstall AdGuard for Safari {#uninstall}
-To uninstall AdGuard for Safari, do the following:
+## Safari için AdGuard nasıl kaldırılır {#uninstall}
+Safari için AdGuard'ı kaldırmak için aşağıdakileri yapın:
 
-1. Quit the app.
+1. Uygulamadan çıkın.
 2. Safari tercihlerini açın.
 3. Uzantılar sekmesini seçin. You will see a list of extensions, AdGuard has eight.
 4. Uncheck all checkboxes and press *Uninstall* below any of them.
 
 ![Extensions checked](https://cdn.adtidy.org/public/Adguard/kb/installation/Safari/extensionschecked.png)
 
-At this point you will see a notification:
+At this point, you will see a notification:
 
 ![Notification: uninstall AdGuard for Safari](https://cdn.adtidy.org/public/Adguard/kb/installation/Safari/showinfinder.png)
 
