@@ -156,7 +156,7 @@ This is the 'information hub' of AdGuard's DNS protection suite. You can quicksw
 
 ![Activity screen *mobile_border](https://cdn.adguard.com/content/github/ad_blocker/ios/activity.png)
 
-Here AdGuard displays stats about device's DNS requests, such as total number, number of blocked requests and average processing time. AdGuard can display the stats for a day, a week, a month, or in total.
+Here AdGuard displays stats about device's DNS requests, such as total number, number of blocked requests and data saved by blocking them. AdGuard can display the stats for a day, a week, a month, or in total.
 
 Below is the *Recent activity* feed. AdGuard stores the last 1500 DNS requests that have originated on your device and shows their attributes such as protocol type and target domain.
 
@@ -202,9 +202,9 @@ While Safari content blocking and DNS protection are indisputably two major modu
 
 - **Dark theme**
 
-![Light theme *mobile_border](https://uploads.adguard.org/homelight.jpeg)
+![Light theme *mobile_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
 
-![Dark theme *mobile_border](https://uploads.adguard.org/homedark.jpeg)
+![Dark theme *mobile_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
 
 Residing right at the top of **Settings** → **General** screen, this setting allows you to switch between dark and light themes.
 
