@@ -95,7 +95,12 @@ Users can also handle their DNS security on the Network settings screen. *Filter
 
 ### DNS filtering {#dns-filtering}
 
-To get access to this setting, *Advanced mode* has to be enabled from the *General settings* screen. After that, a new section will appear on the DNS protection screen. Tap it to customize your DNS traffic by applying own rules.
+In DNS filtering you can customize your DNS traffic by enabling AdGuard DNS filter, adding custom DNS filters and using DNS
+blocklist/allowlist.
+
+How to access:
+
+*Protection* 🛡 icon (the second icon in the bottom menu bar) → *DNS protection* → *DNS filtering*
 
 ![DNS filtering screen *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_filtering_en.jpeg)
 
@@ -149,9 +154,9 @@ On iOS 15 devices, the Assistant features are available through [AdGuard Safari 
 
 This is the 'information hub' of AdGuard's DNS protection suite. You can quickswitch to it by tapping the third icon in the row at the screen bottom. N.b. this screen is only seen when DNS protection is enabled.
 
-![Activity screen *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/activity_en.jpeg)
+![Activity screen *mobile_border](https://cdn.adguard.com/content/github/ad_blocker/ios/activity.png)
 
-Here AdGuard displays stats about device's DNS requests, such as total number, number of encrypted requests and average processing time. AdGuard can display the stats for a day, a week, a month, or in total.
+Here AdGuard displays stats about device's DNS requests, such as total number, number of blocked requests and average processing time. AdGuard can display the stats for a day, a week, a month, or in total.
 
 Below is the *Recent activity* feed. AdGuard stores the last 1500 DNS requests that have originated on your device and shows their attributes such as protocol type and target domain.
 
@@ -165,7 +170,7 @@ Tap any request to view more details. There will also be buttons to add the requ
 
 ![Request details *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/request_info_en.jpeg)
 
-Above the activity feed, there are *Most active companies*. Aggregated data on the last 1500 requests are shown here.
+Above the activity feed, there are *Most active* and *Most blocked* companies. Tap each to see data based on the last 1500 requests.
 
 ### Statistics {#statistics}
 
@@ -197,9 +202,9 @@ While Safari content blocking and DNS protection are indisputably two major modu
 
 - **Dark theme**
 
-![Light theme *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/main_screen_en.jpeg)
+![Light theme *mobile_border](https://uploads.adguard.org/homelight.jpeg)
 
-![Dark theme *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/main_screen_dark_en.jpeg)
+![Dark theme *mobile_border](https://uploads.adguard.org/homedark.jpeg)
 
 Residing right at the top of **Settings** → **General** screen, this setting allows you to switch between dark and light themes.
 
@@ -219,7 +224,7 @@ An alternative mode for Safari filtering, it unblocks ads everywhere except for 
 
 - **Advanced mode**
 
-Aside from unlocking **DNS filtering**, it grants access to **Advanced settings**. We don't recommend messing with those, unless you know what you're doing or you have consulted with technical support first.
+**Advanced mode** unlocks **Advanced settings**. We don't recommend messing with those, unless you know what you're doing or you have consulted with technical support first.
 
 - **Reset statistics**
 
