@@ -29,7 +29,7 @@ Now, if your purpose is to block ads and trackers system-wide, you have three op
  2. Use AdGuard DNS server (*Protection* 🛡 → *DNS protection* → *DNS server* → *AdGuard DNS*) or another blocking DNS server to your liking.
  3. Add a custom DNS filter/hosts file to your liking.
 
-The first and third option has several advantages:
+The first and third option have several advantages:
 
 * You can use any DNS server at your discretion and you are not tied up to a specific blocking server, because the filter does the blocking.
 * You can add multiple DNS filters and/or hosts files (although using too many might slow down AdGuard).
@@ -48,6 +48,6 @@ For the sake of the example, let's add [OISD Big filter](https://oisd.nl/).
 4. Paste the link into the filter URL field.
 5. Tap *Next* → *Add*.
 
-![Adding a DNS filter screen *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_adding_a_filter.PNG)
+![Adding a DNS filter screen *mobile_border](https://cdn.adtidy.org/blog/new/ot4okIMGD236EB8905471.jpeg)
 
 Add any number of other DNS filters the same way by pasting a different URL at step 4. You can find various filters and links to them [here](https://filterlists.com).
