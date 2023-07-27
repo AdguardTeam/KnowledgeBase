@@ -3,7 +3,17 @@ title: Features overview
 sidebar_position: 1
 ---
 
-> Disclaimer: AdGuard for Android is not to be confused with AdGuard Content Blocker. AdGuard Content Blocker is available in Google Play and has truncated functionality to meet the restrictions imposed by the store. AdGuard for Android, on the contrary, is a powerful app that allows you to block ads and trackers in browsers and apps, manage other apps installed on your device, and perform other actions described in this article. The only place it can be downloaded from is the [AdGuard website](https://adguard.com/adguard-android/overview.html).
+:::info
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
+:::note Disclaimer
+
+AdGuard for Android is not to be confused with AdGuard Content Blocker. AdGuard Content Blocker is available in Google Play and has truncated functionality to meet the restrictions imposed by the store. AdGuard for Android, on the contrary, is a powerful app that allows you to block ads and trackers in browsers and apps, manage other apps installed on your device, and perform other actions described in this article. The only place it can be downloaded from is the [AdGuard website](https://adguard.com/adguard-android/overview.html).
+
+:::
 
 #   Protection
 
@@ -337,7 +347,11 @@ This section allows you to select the traffic filtering method.
 
 * *Local VPN* filters traffic through a locally created VPN. This is the most reliable mode. Due to Android restrictions, it is also the only system-wide traffic filtering method available on non-rooted devices.
 
-> The *Local VPN* mode doesn't allow AdGuard to be used simultaneously with other VPNs. To use another VPN with AdGuard, you need to reconfigure it to work in proxy mode and set up an outbound proxy in AdGuard. For AdGuard VPN, this is done automatically with the help of the [*Integrated mode*](#integration-with-adguard-vpn).
+:::note
+
+The *Local VPN* mode doesn't allow AdGuard to be used simultaneously with other VPNs. To use another VPN with AdGuard, you need to reconfigure it to work in proxy mode and set up an outbound proxy in AdGuard. For AdGuard VPN, this is done automatically with the help of the [*Integrated mode*](#integration-with-adguard-vpn).
+
+:::
 
 * *Automatic proxy* is an alternative traffic routing method that does not require the use of a VPN. One significant advantage is that it can be run in parallel with a VPN. This mode requires root access.
 
@@ -351,7 +365,11 @@ AdGuard blocks ads, trackers, and annoyances by applying rules from its filters.
 
 Filters enabled by default are enough for normal AdGuard operation. However, if you want to customize ad blocking, you can use other AdGuard or third-party filters. To do this, select a category and enable the filters you'd like. To add a custom filter, tap *Custom filters* → *Add custom filter* and enter its URL or file path.
 
-> If you activate too many filters, some websites may work incorrectly.
+:::note
+
+If you activate too many filters, some websites may work incorrectly.
+
+:::
 
 [Read more about filters](https://adguard.com/en/blog/what-are-filters.html)
 
@@ -390,7 +408,11 @@ For unusual app behavior, select *Report a bug*. If possible, describe your prob
 
 For your suggestions, use *Request a feature*.
 
-> GitHub is an alternative way to report bugs and suggest new features. [Instructions and repository links](/guides/report-bugs/#adguard-for-android)
+:::note
+
+GitHub is an alternative way to report bugs and suggest new features. [Instructions and repository links](/guides/report-bugs/#adguard-for-android)
+
+:::
 
 #  Free vs full version
 
@@ -398,7 +420,11 @@ AdGuard for Android has a free and a paid version. Paid features extend AdGuard'
 
 * *Ad blocking in apps* allows you to block ads in non-browser apps. You can specify apps for filtering in [*App management*](#app-management)
 
-> AdGuard uses its own ad-free media player to block ads in YouTube videos. To open the media player, open the YouTube app and share a video with AdGuard. This feature is free.
+:::note
+
+AdGuard uses its own ad-free media player to block ads in YouTube videos. To open the media player, open the YouTube app and share a video with AdGuard. This feature is free.
+
+:::
 
 * *Tracking protection* increases your privacy by blocking tracking requests, online counters, UTM tags, analytics systems, and more. [Back to Tracking protection](#tracking-protection)
 
