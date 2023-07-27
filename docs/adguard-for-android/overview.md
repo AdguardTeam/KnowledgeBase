@@ -312,7 +312,7 @@ To block ads and trackers on most websites and in most apps, AdGuard needs to fi
 
 To manage encrypted traffic, AdGuard installs its CA certificate on your device. It's safe: the traffic is filtered locally and AdGuard verifies the security of the connection.
 
-On older versions of Android, the certificate is installed automatically. On Android 11 and later, you need to install it manually. [Installation instructions](/solving-problems/manual-certificate)
+On older versions of Android, the certificate is installed automatically. On Android 11 and later, you need to install it manually. [Installation instructions](/adguard-for-android/solving-problems/manual-certificate/)
 
 The CA certificate in the user store is enough to filter HTTPS traffic in browsers and some apps. However, there are apps that only trust certificates from the system store. To filter HTTPS traffic there, you need to install AdGuard's CA certificate into the system store. [Instructions](/adguard-for-android/solving-problems/https-certificate-for-rooted/)
 
@@ -335,7 +335,7 @@ By default, we also do not filter websites with Extended Validation (EV) certifi
 
 #### Proxy
 
-You can set up AdGuard to route all your device's traffic through your proxy server. [How to set up an outbound proxy](/solving-problems/outbound-proxy)
+You can set up AdGuard to route all your device's traffic through your proxy server. [How to set up an outbound proxy](/adguard-for-android/solving-problems/outbound-proxy)
 
 In this section, you can also set up a third-party VPN to work with AdGuard, if your VPN provider allows it.
 
