@@ -1,41 +1,47 @@
 ---
-title: iCloud Private Relay and AdGuard
+title: iCloud Private Relay a AdGuard
 sidebar_position: 7
 ---
 
-## Problem description in a nutshell
+:::info
 
-By default, AdGuard uses the "default route" which disables iCloud Private Relay.
+Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 
-Currently, AdGuard and iCloud Private Relay cannot work at the same time. AdGuard cannot block ads because iCloud Private Relay encrypts traffic before AdGuard can filter network connections.  When iCloud Private Relay is active, any filtering (including local filtering) becomes impossible. Thus, AdGuard can't filter traffic or perform DNS filtering in Safari. Yet, AdGuard still filters traffic in other browsers. To keep using iCloud Private Relay, consider installing [AdGuard for Safari](https://adguard.com/adguard-safari/overview.html).
+:::
 
-The same applies to using any VPN apps on Mac: you have to choose between using iCloud Private Relay or a VPN service.
+## Stručný popis problému
 
-## In detail
+Ve výchozím nastavení používá AdGuard "výchozí směrování", která vypíná iCloud Private Relay.
 
-AdGuard for Mac now uses macOS built-in socket filtering based on the network extensions API. This new and rather buggy mechanism replaced good old Kernel extensions. Over the last 1.5 years, we've reported more than 20(!) bugs to Apple regarding their new filtering method.
+V současné době nemohou AdGuard a iCloud Private Relay fungovat současně. AdGuard nemá možnost blokovat reklamy, protože iCloud Private Relay šifruje provoz předtím, než AdGuard může filtrovat síťová připojení.  Když je iCloud Private Relay aktivní, není možné žádné filtrování (včetně lokálního). AdGuard tedy nemůže v Safari filtrovat přenosy ani provádět DNS filtrování. Přesto AdGuard stále filtruje provoz v jiných prohlížečích. Chcete-li nadále používat iCloud Private Relay, zvažte instalaci [AdGuardu pro Safari](https://adguard.com/adguard-safari/overview.html).
 
-The network extensions API has a VPN-like configuration with a list of route-like entries. On Big Sur, AdGuard developed "split-tunnel" rules to avoid creating the "default route" rule because it causes problems on early Big Sur releases.
+Totéž platí pro používání jakýchkoli aplikací VPN na Macu: musíte si vybrat, zda použijete iCloud Private Relay, nebo službu VPN.
 
-On Monterey, iCloud Private Relay got introduced. Privacy features of the Mail app also use Private Relay servers.
+## Podrobněji
 
-As a result, AdGuard can't work together with iCloud Private Relay and the Mail app privacy features:
-1. iCloud Private Relay is applied to connections at the library level — before they reach the socket level, where AdGuard operates.
-2. iCloud Private Relay uses QUIC, which AdGuard can't filter in filtered apps because HTTP/3 filtering is not yet available.
-3. As AdGuard blocks QUIC, including iCloud Private Relay traffic — otherwise, ad blocking is impossible.
-4. When you use iCloud Private Relay and switch AdGuard into the "split-tunnel" mode, you can't open websites in Safari.
-5. To work around this issue for Monterey, we apply the "default route" rule. When Private Relay sees that rule, it disables itself automatically. So, AdGuard works seamlessly on Monterey, but iCloud Private Relay gets disabled.
+AdGuard pro Mac nyní používá filtrování integrované v systému macOS na základě rozhraní API síťových rozšíření. Tento nový a poměrně chybový mechanismus nahradil staré dobré Rozšíření jádra. Za posledních 1,5 roku jsme společnosti Apple nahlásili více než 20(!) chyb týkajících se jejich nové metody filtrování.
 
-`network.extension.monterey.force.split.tunnel` restores the "Big Sur" behavior, but this option may break access to websites due to (3) and (4). We keep searching for a solution to this issue. One of the options is implementing HTTP/3 filtering.
+Rozhraní API síťových rozšíření má konfiguraci podobnou VPN se seznamem položek směrování. V systému Big Sur vyvinula společnost AdGuard pravidla "dělený tunel", aby se vyhnula vytváření pravidla "výchozí směrování", protože v prvních verzích systému Big Sur způsobuje problémy.
 
-## Recommended solution
+V systému Monterey byl představen iCloud Private Relay. Funkce ochrany osobních údajů aplikace Mail také využívají servery iCloud Private Relay.
 
-We recommend using AdGuard together with a more traditional VPN service such as [AdGuard VPN](https://adguard-vpn.com/).
+AdGuard proto nemůže spolupracovat s funkcemi soukromí aplikace iCloud Private Relay a aplikací Mail:
+1. iCloud Private Relay se použije pro připojení na úrovni knihovny — předtím, než se dostanou na úroveň, kde funguje AdGuard.
+2. iCloud Private Relay používá QUIC, který AdGuard nemůže ve filtrovaných aplikacích filtrovat, protože filtrování HTTP/3 ještě není k dispozici.
+3. Protože AdGuard blokuje QUIC, včetně provozu iCloud Private Relay — jinak je blokování reklam nemožné.
+4. Když používáte iCloud Private Relay a přepnete AdGuard do režimu "dělený tunel", nemůžete v Safari otevírat webové stránky.
+5. Abychom tento problém pro Monterey obešli, použijeme pravidlo "výchozí směrování". Když iCloud Private Relay uvidí toto pravidlo, automaticky se deaktivuje. AdGuard tedy v Monterey funguje bez problémů, ale iCloud Private Relay je vypnuto.
 
-## Alternative solution
+`network.extension.monterey.force.split.tunnel` obnoví chování "Big Sur", ale tato možnost může přerušit přístup k webům kvůli (3) a (4). Stále hledáme řešení tohoto problému. Jednou z možností je implementace filtrování HTTP/3.
 
-You can prevent AdGuard from using the "default route" by disabling the "default route".  It can be done via Advanced Settings → `network.extension.monterey.force.split.tunnel`.
+## Doporučené řešení
 
-![Disable default route in advanced settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/mac_adguard_advanced_settings.jpg)
+Doporučujeme používat AdGuard společně s tradičnější službou VPN, např. [AdGuard VPN](https://adguard-vpn.com/).
 
-Bear in mind that, in this case, you'll face the issues described above.
+## Alternativní řešení
+
+Můžete zabránit tomu, aby AdGuard používal "výchozí směrování" tím, že jej deaktivujete".  Lze to provést přes Pokročilá nastavení → `network.extension.monterey.force.split.tunnel`.
+
+![Zakázat výchozí směrování v pokročilých nastavení *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/mac_adguard_advanced_settings.jpg)
+
+Mějte na paměti, že v tomto případě budete čelit výše popsaným problémům.

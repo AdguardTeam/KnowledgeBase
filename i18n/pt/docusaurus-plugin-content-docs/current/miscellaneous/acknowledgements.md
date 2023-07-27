@@ -1,50 +1,50 @@
 ---
-title: Credits & Acknowledgements
+title: Créditos & Agradecimentos
 sidebar_position: 2
 ---
 
-Our dev team would like to thank the developers of this third-party software, our beta testers and other interested users who helped AdGuard improve and grow.
+Nossa equipe de desenvolvimento gostaria de agradecer aos desenvolvedores deste software de terceiros, nossos testadores beta e outros usuários interessados que ajudaram o AdGuard a melhorar e crescer.
 
-## Third-party software {#software}
+## Software de terceiros {#software}
 
-This is the list of libraries and other resources that really helped us with AdGuard software development process.
+Esta é a lista de bibliotecas e outros recursos que realmente nos ajudaram no processo de desenvolvimento do software AdGuard.
 
 ## AdGuard para Windows {#win}
 
-* SQLLite database engine: [https://sqlite.org](https://sqlite.org)
-* ADO.NET provider for SQLite: [https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki](https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki)
-* Json.NET — high-performance JSON framework for .NET: [https://www.newtonsoft.com/json](https://www.newtonsoft.com/json)
-* AvalonEdit — WPF-based text editor component: [https://avalonedit.net](https://avalonedit.net)
+* Mecanismo de banco de dados SQLLite: [https://sqlite.org](https://sqlite.org)
+* Provedor ADO.NET para SQLite: [https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki](https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki)
+* Json.NET: estrutura JSON de alto desempenho para .NET: [https://www.newtonsoft.com/json](https://www.newtonsoft.com/json)
+* AvalonEdit, componente do editor de texto com base em WPF: [https://avalonedit.net](https://avalonedit.net)
 
 ## AdGuard para Mac {#mac}
 
-* Red Sweater Software, LLC for RSVerticallyCenteredTextFieldCell component: [http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes](http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes)
-* Ilija Tovilo for ITProgressIndicator component: [https://github.com/iluuu1994/ITProgressIndicator](https://github.com/iluuu1994/ITProgressIndicator)
-* Sparkle Project for Sparkle.framework component: [http://sparkle-project.org](http://sparkle-project.org)
-* Robbie Hanson for GCDAsyncSocket component: [https://github.com/robbiehanson/CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket)
-* Tony Million for Reachability component: [https://github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
-* August «Gus» Mueller for Fmdb component: [https://github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
-* Stephen F. Booth for SFBCrashReporter project: [https://github.com/sbooth/SFBCrashReporter](https://github.com/sbooth/SFBCrashReporter)
-* Bartosz Janda for Acextract component: [https://github.com/bartoszj/acextract](https://github.com/bartoszj/acextract)
+* Red Sweater Software, LLC para o componente RSVerticallyCenteredTextFieldCell: [http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes](http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes)
+* Ilija Tovilo para o componente ITProgressIndicator: [https://github.com/iluuu1994/ITProgressIndicator](https://github.com/iluuu1994/ITProgressIndicator)
+* Projeto Sparkle para o componente Sparkle.framework: [http://sparkle-project.org](http://sparkle-project.org)
+* Robbie Hanson para o componente GCDAsyncSocket: [https://github.com/robbiehanson/CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket)
+* Tony Million para o componente de Acessibilidade: [https://github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
+* August «Gus» Mueller para o componente Fmdb: [https://github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
+* Stephen F. Booth para o projeto SFBCrashReporter: [https://github.com/sbooth/SFBCrashReporter](https://github.com/sbooth/SFBCrashReporter)
+* Bartosz Janda para o componente Acextract: [https://github.com/bartoszj/acextract](https://github.com/bartoszj/acextract)
 * FLOPageViewController: [https://github.com/floschliep/FLOPageViewController](https://github.com/floschliep/FLOPageViewController)
 
 ## AdGuard para Android {#android}
 
-* Logback-android by Tony19: [https://tony19.github.io/logback-android](https://tony19.github.io/logback-android)
+* Logback-android por Tony19: [https://tony19.github.io/logback-android](https://tony19.github.io/logback-android)
 * Otto by Square: [http://square.github.io/otto](http://square.github.io/otto)
-* RootTools Library by Stericson: [https://github.com/Stericson/RootTools](https://github.com/Stericson/RootTools)
-* MaterialDateRangePicker by Supratim Chakraborty: [https://github.com/borax12/MaterialDateRangePicker](https://github.com/borax12/MaterialDateRangePicker)
-* HelloCharts by Leszek Wach: [https://github.com/lecho/hellocharts-android](https://github.com/lecho/hellocharts-android)
+* Biblioteca RootTools por Stericson: [https://github.com/Stericson/RootTools](https://github.com/Stericson/RootTools)
+* MaterialDateRangePicker por Supratim Chakraborty: [https://github.com/borax12/MaterialDateRangePicker](https://github.com/borax12/MaterialDateRangePicker)
+* HelloCharts por Leszek Wach: [https://github.com/lecho/hellocharts-android](https://github.com/lecho/hellocharts-android)
 
 ## AdGuard para iOS {#ios}
 
-* Reachability component by Tony Million: [https://github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
-* Fmdb component by August «Gus» Mueller: [https://github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
-* NSStringPunycodeAdditions component by Nate Weaver: [https://github.com/Wevah/Punycode-Cocoa](https://github.com/Wevah/Punycode-Cocoa)
-* Minizip-ng library by Nathan Moinvaziri: [https://github.com/zlib-ng/minizip-ng](https://github.com/zlib-ng/minizip-ng)
-* Lottie for iOS library by Brandon Withrow: [https://github.com/airbnb/lottie-ios](https://github.com/airbnb/lottie-ios)
+* Componente de acessibilidade por Tony Million: [https://github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
+* Componente Fmdb de August «Gus» Mueller: [https://github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
+* Componente NSStringPunycodeAdditions por Nate Weaver: [https://github.com/Wevah/Punycode-Cocoa](https://github.com/Wevah/Punycode-Cocoa)
+* Biblioteca Minizip-ng por Nathan Moinvaziri: [https://github.com/zlib-ng/minizip-ng](https://github.com/zlib-ng/minizip-ng)
+* Lottie para a biblioteca iOS por Brandon Withrow: [https://github.com/airbnb/lottie-ios](https://github.com/airbnb/lottie-ios)
 
-## Extensão do AdGuard para navegador {#extension}
+## AdGuard Browser Extension {#extension}
 
 * moment: [https://github.com/moment/moment](https://github.com/moment/moment)
 * simply-deferred: [https://github.com/sudhirj/simply-deferred](https://github.com/moment/moment)
@@ -55,7 +55,7 @@ This is the list of libraries and other resources that really helped us with AdG
 * crypto-js: [https://github.com/brix/crypto-js](https://github.com/brix/crypto-js)
 * ace: [https://github.com/ajaxorg/ace](https://github.com/ajaxorg/ace)
 
-## AdGuard para Safari {#safari}
+## AdGuard for Safari {#safari}
 
 * ace: [https://github.com/ajaxorg/ace](https://github.com/ajaxorg/ace)
 * adm-zip: [https://github.com/cthackers/adm-zip](https://github.com/cthackers/adm-zip)
@@ -105,9 +105,9 @@ This is the list of libraries and other resources that really helped us with AdG
 * BoringSSL: [https://github.com/google/boringssl/blob/master/LICENSE](https://github.com/google/boringssl/blob/master/LICENSE)
 * brotli: [https://github.com/google/brotli/blob/master/LICENSE](https://github.com/google/brotli/blob/master/LICENSE)
 * Chromium: [https://github.com/chromium/chromium/blob/master/LICENSE](https://github.com/chromium/chromium/blob/master/LICENSE)
-* Detours: [https://github.com/microsoft/Detours/blob/master/LICENSE](https://github.com/microsoft/Detours/blob/master/LICENSE)
+* Detours: [https://github.com/microsoft/Detours/blob/main/LICENSE.md](https://github.com/microsoft/Detours/blob/main/LICENSE.md)
 * eDistantObject: [https://github.com/google/eDistantObject/blob/master/LICENSE](https://github.com/google/eDistantObject/blob/master/LICENSE)
-* FF/FFOS libs by Simon Zolin: [https://github.com/stsaz/ff/blob/master/README](https://github.com/stsaz/ff/blob/master/README)
+* FF/FFOS libs by Simon Zolin: [https://github.com/stsaz/ffbase/blob/master/README.md](https://github.com/stsaz/ffbase/blob/master/README.md)
 * Google test: [https://github.com/google/googletest/blob/master/LICENSE](https://github.com/google/googletest/blob/master/LICENSE)
 * http-parser: [https://github.com/nodejs/http-parser/blob/master/LICENSE-MIT](https://github.com/nodejs/http-parser/blob/master/LICENSE-MIT)
 * jsmn: [https://github.com/zserge/jsmn/blob/master/LICENSE](https://github.com/zserge/jsmn/blob/master/LICENSE)

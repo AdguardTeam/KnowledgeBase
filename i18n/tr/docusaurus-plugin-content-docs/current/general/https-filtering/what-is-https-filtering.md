@@ -55,7 +55,7 @@ A [2017 study](https://cdn.adtidy.org/public/Adguard/Blog/https/interception-nds
 
 The researchers came to a simple conclusion: the Internet security community should pay close attention to applications that filter secure connections. And the developers of such software must pay serious attention to the quality of filtering implementations.
 
-We would like to note that AdGuard was not tested in the above study. We ran estimates according to their set of tests, and at the time of testing, we could have received the maximum score – A\*. However, this score is not perfect. During the study, the researchers identified some issues that were omitted in the final evaluation.
+We would like to note that AdGuard was not tested in the above study. We ran estimates according to their set of tests, and at the time of testing, we could have received the maximum score — A\*. However, this score is not perfect. During the study, the researchers identified some issues that were omitted in the final evaluation.
 
 Here at AdGuard, we fully agree with those conclusions. Moreover, we would like to be as open with users as possible and talk about the problems we are currently experiencing and the steps we are taking to improve the quality and security of the filtering mechanism. The list of these problems is sorted by priority.
 
@@ -63,7 +63,7 @@ Most of the problems discovered in the above study are related to certificate va
 
 #### HTTPS filtering issues on Android 7+
 
-[Starting from Android 7](https://blog.adguard.com/en/android-nougat-release-and-what-does-it-mean-for-adguard-users/), developers have to explicitly indicate that their apps trust user-installed certificates. Not everyone wants to, or bothers with it. What does it mean for AdGuard? AdGuard installs a user certificate to be able to filter HTTPS traffic. If an app doesn't trust this certificate, its HTTPS traffic will not be filtered. What to do?
+[Starting from Android 7](https://blog.adguard.com/en/android-nougat-release-and-what-does-it-mean-for-adguard-users/), developers have to explicitly indicate that their apps trust user-installed certificates. Not everyone wants to, or bothers with it. Bu AdGuard için ne anlama geliyor? AdGuard installs a user certificate to be able to filter HTTPS traffic. If an app doesn't trust this certificate, its HTTPS traffic will not be filtered. What to do?
 
 The first thing worth mentioning is that many apps (even modern ones) still trust user certificates. Nothing has changed in this regard. Almost all browsers also trust such certificates. There may be some exotic browsers that do not, but they are a rare exception to common practice.
 

@@ -3,98 +3,108 @@ title: Režim utajení
 sidebar_position: 4
 ---
 
-Many websites gather information about their visitors, such as their IP address, installed browser and operating system, screen resolution, and even the page from which a visitor was redirected. Some web pages use cookies to mark your browser and save your personal settings and preferences, or to "recognize" you upon your next visit. Stealth Mode safeguards your personal information from such data- and statistics-gathering systems.
+Mnoho webových stránek shromažďuje informace o svých návštěvnících, například jejich IP adresu, nainstalovaný prohlížeč a operační systém, rozlišení obrazovky a dokonce i stránku, ze které byl návštěvník přesměrován. Některé webové stránky používají soubory cookies k označení prohlížeče a uložení vašich osobních nastavení, uživatelských preferencí nebo k vašemu "rozpoznání" při příští návštěvě. Režim utajení chrání vaše osobní údaje před takovými systémy sběru dat a statistik.
 
-You can flexibly adjust the work of Stealth Mode: for instance, you can prohibit the website from receiving the search request you used to find it on the Internet, automatically delete both third-party and the website's own cookies, turn off browser geolocation sharing that can be used to track your whereabouts, and hide your true IP address or even replace it with an arbitrary one.
+Práci Režimu utajení můžete flexibilně upravit: můžete například zakázat webové stránce přijímat požadavky na vyhledávání, které jste použili k jejímu nalezení na internetu, automaticky odstranit soubory cookies třetích stran i vlastní soubory cookies webové stránky, vypnout sdílení zeměpisné polohy prohlížeče, které lze použít ke sledování vaší polohy a skrýt svou skutečnou IP adresu nebo ji dokonce nahradit libovolnou adresou.
 
-Below we will list and describe the main features and options that you can control in the **Stealth Mode** settings. They are split into four groups: **General**, **Tracking methods**, **Browser API**, and **Miscellaneous**.
+Níže uvádíme a popisujeme hlavní funkce a možnosti, které můžete ovládat v nastavení **Režimu utajení**. Jsou rozděleny do čtyř skupin: **Obecné**, **Metody sledování**, **Rozhraní API prohlížeče** a **Různé**.
 
-> Some options may not be available depending on the particular product due to OS or other limitations.
+:::note
+
+Některé možnosti nemusí být v závislosti na konkrétním produktu dostupné kvůli omezením operačního systému nebo jiným omezením.
+
+:::
 
 ## Obecné {#general}
 
-### Hide your search queries {#searchqueries}
+### Skrýt vyhledávací dotazy {#searchqueries}
 
-When you get directed to a website from Google, Yahoo, or any other search engine, this option hides the search query that you used to find that website.
+Když jste přesměrováni na webovou stránku z vyhledávače Google, Yahoo nebo jiného vyhledávače, tato možnost skryje vyhledávací dotaz, který jste použili k nalezení dané webové stránky.
 
-### Send Do-Not-Track header {#donottrack}
+### Odeslat žádost Do-Not-Track {#donottrack}
 
-It sends a Do-Not-Track (DNT) HTTP header to queried websites, thus requiring web apps to disable tracking of your activity.
+Odesílá žádost Do-Not-Track (DNT) HTTP dotazovaným webům, což vyžaduje, aby webové aplikace zakázaly sledování vaší aktivity.
 
-### Strip tracking parameters from URLs
+### Odebrat sledovací parametry z URL
 
-If you enable this option, AdGuard will strip tracking parameters like `utm_*` and `fb_ref` from pages’ URLs.
+Pokud tuto možnost povolíte, AdGuard odstraní z adres URL parametry sledování, jako je `utm_*` a `fb_ref`.
 
-### Tracking methods {#tracking-methods}
+### Metody sledování {#tracking-methods}
 
-### Self-destructing third-party cookies {#3p-cookie}
+### Automatická destrukce cookies třetích stran {#3p-cookie}
 
-Websites use cookies to store your information and preferences, such as the language you selected, your location, or the list of items in your shopping cart. When you return to a website, your browser sends back the cookies belonging to that website, which allows it to "remember" your data.
+Webové stránky používají soubory cookies k ukládání vašich informací a preferencí, jako je zvolený jazyk, vaše poloha nebo seznam položek v nákupním košíku. Když se vrátíte na webovou stránku, váš prohlížeč odešle zpět soubory cookies patřící dané webové stránce, což mu umožní "zapamatovat si" vaše údaje.
 
-Third-party cookies are those implemented by a website that is different from the one you are currently browsing. For example, cnn.com may have a Facebook "Like" widget on its homepage. This widget will implement a cookie that may be read later by Facebook. Some advertisers use such cookies to track what other sites you visit where their ads are placed.
+Soubory cookies třetích stran jsou ty, které jsou implementovány jinou webovou stránkou než tou, kterou právě prohlížíte. Například web cnn.com může mít na své domovské stránce widget "To se mi líbí" od Facebooku. Tento widget implementuje soubory cookies, které mmohou být později přečteny společností Facebook. Někteří inzerenti používají tyto soubory cookies ke sledování toho, jaké další stránky navštěvujete a kde jsou umístěny jejich reklamy.
 
-Set a time period (in minutes) at the end of which all third-party cookies will be destroyed. Set the timer to 0 to block them completely.
+Nastavte dobu (v minutách), po jejímž uplynutí budou všechny soubory cookies třetích stran zničeny. Pro úplné zablokování nastavte časovač na 0.
 
-### Self-destructing first-party cookies {#1p-cookie}
+### Automatická destrukce vlastních cookies {#1p-cookie}
 
-We do not recommend enabling this option as it may severely interfere with the work of certain sites. Set a time period (in minutes) at the end of which all cookies will be destroyed. Set the timer to 0 to block them completely.
+Tuto možnost nedoporučujeme povolovat, protože může vážně narušit práci některých webů. Nastavte dobu (v minutách), po jejímž uplynutí budou všechny soubory vlastních cookies zničeny. Pro úplné zablokování nastavte časovač na 0.
 
-### Disable cache for third-party requests {#3p-cache}
+### Zakázat mezipaměť požadavků třetích stran {#3p-cache}
 
-When a browser addresses a page, the server assigns an ETag to that page. This ETag is used by the browser to cache the page's contents. Upon subsequent requests, the browser sends the ETag to the corresponding server, thus letting the server learn the visitor’s identity. As long as the site's files are cached, the ETag is sent every time your browser addresses this site. If the site has embedded content from another server (such as an image or iframe), that server can track your activities without your knowledge.
+Když prohlížeč osloví stránku, server jí přiřadí značku ETag. Značka ETag používá prohlížeč k ukládání obsahu stránky do mezipaměti. Při dalších požadavcích prohlížeč odešle ETag příslušnému serveru, čímž mu umožní zjistit identitu návštěvníka. Dokud jsou soubory webu uloženy v mezipaměti, je značka ETag odesílána pokaždé, když se váš prohlížeč obrátí na tento web. Pokud je na webu vložen obsah z jiného serveru (například obrázek nebo iframe), může tento server sledovat vaše aktivity bez vašeho vědomí.
 
-### Block third-party Authorization header {#3p-auth}
+### Blokovat autorizační hlavičku třetí strany {#3p-auth}
 
-"Authorization" header value is cached by the browser, and then is sent alongside every request to that domain. It means that it can be used for tracking purposes just like cookies.
+Hodnota "Autorizační" hlavičky je uložena v mezipaměti prohlížeče a poté je odesílána spolu s každým požadavkem na danou doménu. To znamená, že ji lze použít pro účely sledování stejně jako soubory cookies.
 
-## Browser API {#browser-api}
+## API prohlížeče {#browser-api}
 
-### Block WebRTC {#webrtc}
+### Blokovat WebRTC {#webrtc}
 
-WebRTC (Web Real-Time Communication) is a technology that allows direct streaming of data between browsers and apps. It can let others know your true IP address, even if you use a proxy or VPN. Enabling this option can disrupt the work of certain browser applications, such as messengers, chats, cinemas, or games.
+WebRTC (Web Real-Time Communication) je technologie, která umožňuje přímé streamování dat mezi prohlížeči a aplikacemi. Umožňuje jiným uživatelům zjistit vaši skutečnou IP adresu, i když používáte proxy nebo VPN. Povolení této možnosti může narušit práci některých aplikací prohlížeče, například messengerů, chatů, kin nebo her.
 
-### Block Push API {#push}
+### Blokovat Push API {#push}
 
-The Push API enables servers to send messages to web applications regardless of the activity status of your browser. Thus, you may see notifications from various websites even if your browser is hidden in the tray or not launched. Enable this option to block the browser's Push API completely.
+Push API umožňuje serverům odesílat zprávy do webových aplikací bez ohledu na stav aktivity prohlížeče. Oznámení z různých webových stránek se tak mohou zobrazovat, i když je prohlížeč skrytý v liště nebo není spuštěný. Povolením této možnosti zcela zablokujete Push API prohlížeče.
 
-### Block Location API {#location}
+### Blokovat lokalizační API {#location}
 
-Enabling this option will prevent the browser from sending GPS data that could be used to determine your location, modify your search results, or otherwise influence your web experience.
+Povolením této možnosti zabráníte prohlížeči odesílat data GPS, která by mohla být použita k určení vaší polohy, úpravě výsledků vyhledávání nebo jinému ovlivnění vaší práce s webem.
 
-### Block Flash {#flash}
+### Blokovat Flash {#flash}
 
-The Flash Player plugin has become increasingly vulnerable to such online threats as viruses and hackers; it may also significantly affect website loading time. Turning this setting on makes AdGuard block browsers' ability to detect components (such as plugins and ActiveXObject objects) that allow Flash to display content. This effectively means that browsers are unable to support Flash.
+Zásuvný modul Flash Player je stále zranitelnější vůči online hrozbám, jako jsou viry a hackeři a může také výrazně ovlivnit dobu načítání webových stránek. Zapnutím tohoto nastavení zablokuje AdGuard schopnost prohlížečů detekovat komponenty (například zásuvné moduly a objekty ActiveXObject), které umožňují zobrazování obsahu ve formátu Flash. To ve skutečnosti znamená, že prohlížeče nejsou schopny podporovat Flash.
 
-### Block Java {#java}
+### Blokovat Java {#java}
 
-Some websites and web services still use the old technology to support Java plugins. The Java plugin API, which is the basis of Java plugins, has serious security flaws. For security purposes, you can disable such plugins. Nevertheless, even if you decide to use the "Block Java" option, JavaScript will still be enabled.
+Některé webové stránky a webové služby stále používají starou technologii podpory pluginů Java. Java plugin API, které je základem Java pluginů, má závažné bezpečnostní chyby. Z bezpečnostních důvodů můžete tyto pluginy zakázat. Nicméně, i když se rozhodnete použít možnost Blokovat Java, JavaScript bude stále povolen.
 
 ## Různé {#miscellaneous}
 
-### Hide Referrer from third-parties {#referrer}
+### Skrýt třetím stranám referenční ID {#referrer}
 
-Referrer is an HTTP header used in browser-to-server requests. It contains the URL of the request source. When you navigate from one page to another, Referrer saves the URL of the initial page. The server often has software that parses Referrer and extracts various pieces of information from it. Enabling this option hides the current website from third-party sites by changing the HTTP header. You can also set an arbitrary value for Referrer by entering it into the Custom Referrer field. To use default Referrer, leave the field blank.
+Referenční ID je hlavička HTTP používaná v požadavcích prohlížeče na server. Obsahuje adresu URL zdroje požadavku. Při přechodu z jedné stránky na druhou uloží referenční ID adresu URL původní stránky. Na serveru, který je hostitelem cílové webové stránky, je často instalován software, který analyzuje referenční ID a získává z něj různé informace. Povolením možnosti *Skrýt třetím stranám referenční ID* skryjete aktuální web před weby třetích stran změnou záhlaví HTTP.
 
-### Hide your User-Agent {#useragent}
+Můžete také nastavit libovolnou hodnotu pro referenční ID zadáním do pole *Vlastní referenční ID*. Chcete-li použít výchozí referenční ID, ponechte pole prázdné.
 
-When you visit a website, your browser sends its information to the server. It looks like a text line that is part of an HTTP request that begins with "User-Agent:". It usually includes the name and version of the browser, the operating system, and language settings. We cut User-Agent from identifying information so that advertisers cannot obtain it.
+Všimněte si, že aby bylo možné filtrovat provoz, aplikace AdGuard "zachycují" požadavky prohlížeče na server. Požadavky na reklamní, sledovací a phishingové servery mohou být před odesláním na server změněny nebo zcela zablokovány. Totéž platí pro možnost *Skrýt třetím stranám referenční ID*: AdGuard zachycuje požadavky HTTP(S) zejména za účelem odstranění nebo změny hlavičky referenčního ID, pokud je tato možnost povolena. K tomu však dochází až poté, co tyto požadavky "opustí" prohlížeč. To znamená, že pokud sledujete referenční ID v prohlížeči (například pomocí vývojářských nástrojů Chrome), uvidíte původní referenční ID, protože požadavek ještě nedorazil do AdGuardu. Můžete použít software jako [Fiddler](https://www.telerik.com/fiddler), abyste se ujistili, že referenční ID bude změněno správně.
 
-You can also set an arbitrary value for User-Agent by entering it into the Custom User-Agent field. To use default User-Agent, leave the field blank.
+Naopak, vzhledem k povaze všech rozšíření prohlížeče funguje Rozšíření prohlížeče AdGuard "uvnitř" prohlížeče. Hned na místě změní referenční ID, takže nástroje pro vývojáře budou zobrazovat požadované referenční ID pro vaše požadavky.
 
-### Hide your IP address {#ip}
+### Skrýt User-Agent {#useragent}
 
-Stealth Mode cannot hide your IP address. However, we can conceal it so that websites you visit will think you are a proxy. Sometimes this helps, and websites ignore your true IP address.
+Když navštívíte webovou stránku, váš prohlížeč odešle své informace na server. Vypadá jako textový řádek, který je součástí požadavku HTTP začínajícího slovy "User-Agent:". Obvykle obsahuje název a verzi prohlížeče, operační systém a nastavení jazyka. Omezili jsme User-Agent od identifikačních údajů, aby jej inzerenti nemohli získat.
 
-You can set an arbitrary IP address, which you would like others to perceive as yours, by simply entering it into the corresponding field. To use the default IP address, leave the field blank.
+Můžete také nastavit libovolnou hodnotu User-Agent zadáním do pole Vlastní User-Agent. Chcete-li použít User-Agent, ponechte pole prázdné.
 
-### Remove X-Client-Data header from HTTP requests {#xclientdata}
+### Skrýt IP adresu {#ip}
 
-It forbids Google Chrome from sending its version and modification information with requests to Google domains (including Double Click and Google Analytics).
+Režim utajení nemůže skrýt vaši IP adresu. Můžeme ji však skrýt, takže navštívené webové stránky si budou myslet, že jste proxy server. Někdy to pomůže a webové stránky vaši skutečnou IP adresu ignorují.
 
-### Protect from DPI {#dpi}
+Můžete nastavit libovolnou IP adresu, kterou chcete, aby ostatní vnímali jako vaši, a to tak, že ji jednoduše zadáte do příslušného pole. Chcete-li použít výchozí IP adresu, ponechte pole prázdné.
 
-The Deep Packet Inspection is a system of deep analysis and filtering of traffic by packet content, as well as the accumulation of statistical data. Using this technology, ISPs have the ability to control the passing traffic and limit access to content for their clients.
+### Odstranit záhlaví X-Client-Data z požadavků HTTP {#xclientdata}
 
-AdGuard can modify outgoing packet data so that the client does not fall under the DPI blocking criteria. This means that by enabling this option, users can get access to the content they want. Not all DPI systems can be bypassed at this time, but we are constantly working to improve this.
+Zakazuje prohlížeči Google Chrome odesílat informace o verzi a modifikaci s požadavky na domény Google (včetně DoubleClick a Google Analytics).
 
-> The "Protect from DPI" feature is already implemented in AdGuard for Windows, AdGuard for Mac, and AdGuard for Android.
+### Ochrana před DPI {#dpi}
+
+Deep Packet Inspection je systém hloubkové analýzy a filtrování provozu podle obsahu paketů a shromažďování statistických údajů. Pomocí této technologie mají poskytovatelé internetových služeb možnost kontrolovat procházející provoz a omezovat přístup k obsahu pro své klienty.
+
+AdGuard může upravit odchozí data paketů tak, aby klient nespadal pod kritéria blokování DPI. To znamená, že zapnutím této možnosti mohou uživatelé získat přístup k požadovanému obsahu. V současné době nelze obejít všechny systémy DPI, ale neustále pracujeme na jejich vylepšení.
+
+Funkce "Ochrana před DPI" je již implementována v aplikacích AdGuard pro Windows, AdGuard pro Mac a AdGuard pro Android.

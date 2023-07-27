@@ -1,20 +1,20 @@
 ---
-title: Contribute to AdGuard filters
+title: Contribuisci ai filtri di AdGuard
 sidebar_position: 4
 ---
 
-### Filtering rules {#filtering-rules}
+### Regole di filtraggio {#filtering-rules}
 
-As you probably know, AdGuard uses filtering rules to block ads, and these rules are combined into thematic [blocking filters](/general/ad-filtering/adguard-filters), like AdGuard Base filter, Mobile ads filter, etc. [Read more about how ad blocking works](/general/ad-filtering/how-ad-blocking-works).
+Come già probabilmente saprai, AdGuard utilizza le regole di filtraggio per bloccare gli annunci e, queste, sono combinate in [filtri di blocco](/general/ad-filtering/adguard-filters) tematici, come il filtro Base di AdGuard, il filtro Annunci mobile, etc. [Leggi di più sul funzionamento del blocco degli annunci](/general/ad-filtering/how-ad-blocking-works).
 
-Websites constantly change the way they embed ads, and we add new rules to our filters to keep them effective. Filter engineers are working on creating new rules, but we always welcome the help and support of volunteers.
+I siti web modificano costantemente come incorporano gli annunci e, noi, aggiungiamo nuove regole ai nostri filtri per mantenerli efficienti. Gli ingegneri di filtraggio lavorano alla creazione di nuove regole, ma accogliamo sempre l'aiuto e il supporto dei volontari.
 
-### How to start {#how-to-start}
+### Come iniziare {#how-to-start}
 
-However, working with blocking filters requires specific skills. If you have them and know how to create rules, then head straight to our [AdGuard Filters repository](https://github.com/AdguardTeam/AdguardFilters) on GitHub. There you will find a lot of open issues, each one referencing a problem with some website problem — a missed ad, a false positive, etc. Choose any and suggest your own rules in comments. AdGuard filter engineers will review your suggestions, and if they find them appropriate, your rules will be added to AdGuard filters.
+Tuttavia, lavorare con i filtri di blocco richiede delle competenze specifiche. Se le hai e sai come creare le regole, dirigiti direttamente alla nostra [repository dei Filtri di AdGuard](https://github.com/AdguardTeam/AdguardFilters) su Github. Lì, troverai molti ticket aperti, ognuno riferito a un problema con qualche sito web: un annuncio non bloccato, un falso positivo, etc. Scegline uno qualsiasi e suggerisci le tue regole nei commenti. Gli ingegneri di filtraggio di AdGuard revisioneranno i tuoi suggerimenti e, se li troveranno appropriati, le tue regole saranno aggiunte ai filtri di AdGuard.
 
-If you are not yet familiar with our filtering rules syntax, or maybe need a refresher, you'll find the basics about the syntax [in our Knowledge base](/general/ad-filtering/create-own-filters). More advanced guides can be found on the internet, and if you have any questions about the syntax, visit our [forum](https://forum.adguard.com/).
+Se ancora non sei familiare con la sintassi delle nostre regole di filtraggio, troverai i fondamenti sulla sintassi [sulla nostra Base di conoscenza](/general/ad-filtering/create-own-filters). Su Internet si possono trovare delle guide più avanzate e, se hai qualsiasi domanda sulla sintassi, puoi visitare il nostro [forum](https://forum.adguard.com/).
 
-### Rewards {#rewards}
+### Ricompense {#rewards}
 
-If you have suggested several filtering rules and some of them were approved, then it's time for you to get a reward. Send us a message at [st@adguard.com](mailto:st@adguard.com) with your GitHub account name, and you'll get a free AdGuard license key. As for the exact number of rules you need to get approved to become eligible, there are no hard rules. This task is not easy, so anything north of 5 should be enough.
+Se hai suggerito diverse regole di filtraggio e alcune di esse sono state approvate, è il momento di ricevere una ricompensa. Inviaci un messaggio a [st@adguard.com](mailto:st@adguard.com) con il nome del tuo profilo di GitHub, e riceverai una chiave di licenza gratuita di AdGuard. Quanto al numero esatto di regole approvate necessarie per essere idoneo, non esistono regole rigorose. Questo compito non è facile, quindi qualsiasi numero maggiore di 5 dovrebbe essere sufficiente.

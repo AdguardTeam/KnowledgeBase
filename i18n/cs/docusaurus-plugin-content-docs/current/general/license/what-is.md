@@ -1,42 +1,42 @@
 ---
-title: What is AdGuard license
+title: What is an AdGuard license
 sidebar_position: 1
 ---
 
-## What is AdGuard license
+## What is an AdGuard license
 
-A license is permission to use the AdGuard product, provided in accordance with the End User License Agreement. AdGuard licenses exist in the form of license keys, activation codes, and product cards in the user's [AdGuard account](../../account/register).
+Licence je povolení používat produkt AdGuard v souladu s licenční smlouvou s koncovým uživatelem. Licence AdGuardu existují ve formě licenčních klíčů, aktivačních kódů a produktových karet v uživatelském [AdGuard](../../account/register) účtu.
 
-Some licenses need to be purchased (e.g. AdGuard Ad Blocker Personal), some are free and limited by term (e.g. trial licenses of AdGuard apps) or have a limited functionality (e.g. AdGuard for iOS or AdGuard Browser extension). Here's the list of all types of AdGuard Ad Blocker licenses.
+Některé licence je třeba zakoupit (např. Blokátor reklam AdGuard), některé jsou bezplatné a časově omezené (např. zkušební licence aplikací AdGuard) nebo mají omezenou funkčnost (např. AdGuard pro iOS nebo Rozšíření prohlížeče AdGuard). Zde je seznam všech typů licencí Blokátoru reklam AdGuard.
 
-1. **Trial licenses** are free time-limited licenses with full functionality: AdGuard for Windows — 14-day trial, AdGuard for Mac — 14-day trial, AdGuard for Android — 7-day trial.
-2. **Free licenses** are not time-limited, but have limited functionality: AdGuard Browser extension, AdGuard Content Blocker, AdGuard for iOS.
-3. **Subscriptions** are paid licenses that are renewed automatically every month or every year. They can also be extended manually. AdGuard Ad Blocker Monthly subscription, AdGuard Ad Blocker 1-year subscription.
-4. **Licenses purchased from distributors** and **gifted licenses** are time-limited and cannot be renewed automatically. Though, they can be extended manually: AdGuard Ad Blocker Monthly license, AdGuard Ad Blocker 1-year license.
-5. **Lifetime licenses** are not time-limited and have full functionality: AdGuard Ad Blocker Lifetime, AdGuard Pro for iOS.
+1. **Zkušební licence** jsou bezplatné, časově omezené licence s plnou funkčností: AdGuard pro Windows — 14denní zkušební licence, AdGuard pro Mac — 14denní zkušební licence, AdGuard pro Android — 7denní zkušební licence.
+2. **Bezplatné licence** nejsou časově omezené, ale mají omezenou funkčnost: Rozšíření prohlížeče AdGuard, Blokátor obsahu AdGuard, AdGuard pro iOS.
+3. **Předplatné** jsou placené licence, které se automaticky obnovují každý měsíc nebo rok. Lze je také prodloužit ručně. Měsíční předplatné blokátoru reklam AdGuard, roční předplatné blokátoru reklam AdGuard.
+4. **Licence zakoupené od distributorů** a **darované licence** jsou časově omezené a nelze je automaticky obnovit. Lze je také prodloužit ručně: Měsíční licence blokátoru reklam AdGuard, roční licence blokátoru reklam AdGuard.
+5. **Doživotní licence** nejsou časově omezené a mají plnou funkčnost: Doživotní licence blokátoru reklam AdGuard, AdGuard Pro pro iOS.
 
-## How many devices can be added{#devices}
+## Kolik zařízení je možné přidat{#devices}
 
-Different licenses can be used with a different number of devices:
-* Personal: up to three devices,
-* Family: up to nine devices,
-* AdGuard Pro for iOS: one device.
+Různé licence lze používat s různým počtem zařízení:
+* Osobní: až pro 3 zařízení,
+* Rodinná: až pro 9 zařízení,
+* AdGuard Pro pro iOS: jedno zařízení.
 
-> To use your license on a device, log in to your [AdGuard account](../../account/features) on it. To extend the device limit, you can [upgrade](../activation#how-to-upgrade-a-license) your license.
+Chcete-li použít svou licenci na zařízení, přihlaste se na něm ke svému [AdGuard účtu](../../account/features). Chcete-li rozšířit limit zařízení, můžete provést [upgrade](../activation#how-to-upgrade-a-license) licence.
 
-## What is a license key{#license-key}
+## Co je licenční klíč{#license-key}
 
-A license key is a unique sequence of characters that represents an AdGuard Ad Blocker license. It is automatically registered for the email you used for license purchase. With a license key, you can:
-* log in to your AdGuard account in some products (e.g. AdGuard for Windows),
-* [activate your license](../activation) in a product, if you don't have an AdGuard account,
-* bind your license to your AdGuard account and unbind it.
+Licenční klíč je jedinečná sekvence znaků, která představuje licenci Blokátoru reklam AdGuard. Automaticky se zaregistruje na e-mail, který jste použili při nákupu licence. Pomocí licenčního klíče můžete:
+* přihlásit se ke svému AdGuard účtu v některých produktech (např. AdGuard pro Windows),
+* [aktivovat si licenci](../activation) v produktu, pokud nemáte AdGuard účet,
+* připojit licenci na AdGuard účet a zrušit její vazbu.
 
-> When unbinding a license, be sure you write the license key down beforehand or note in some other (safe) way. You'll need the key for re-binding your license or transferring it to another account.
+Při odpojení licence si předem zapište licenční klíč nebo si jej poznamenejte jiným (bezpečným) způsobem. Klíč budete potřebovat k opětovnému připojení licence nebo k jejímu přenosu na jiný účet.
 
-## How to recover a license key
+## Jak obnovit licenční klíč
 
-You can easily check which license keys belong to you in your [AdGuard Account](../../account/register).
+Ve svém [AdGuard účtu](../../account/register) můžete snadno zkontrolovat, které licenční klíče vám patří.
 
-The license key is bound to your account via the email address you used to purchase AdGuard.
+Licenční klíč je navázán na váš účet prostřednictvím e-mailové adresy, kterou jste použili k nákupu AdGuardu.
 
-**Please note** that it is often not enough to just find out what your license key is. If it was already used on another computer, it’s necessary to unbind it from that computer through the AdGuard Account before using it again.
+**Upozorňujeme**, že často nestačí pouze zjistit, jaký je váš licenční klíč. Pokud již byl použit v jiném počítači, je nutné jej z tohoto počítače před dalším použitím zrušit prostřednictvím AdGuard účtu.

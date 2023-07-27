@@ -1,139 +1,147 @@
 ---
-title: How to report a website
+title: Jak nahlásit webovou stránku
 sidebar_position: 3
 ---
 
 
-When using ad blockers, you may face incorrect work of certain websites or broken page elements. These problems might arise due to a variety of factors:
+Při používání blokátorů reklam se můžete setkat s nesprávnou prací některých webů nebo nefunkčními prvky. Tyto problémy mohou vzniknout v důsledku různých faktorů:
 
-* Incorrect user rules;
-* Modified algorithms of adding ads;
-* Added filters/extensions from third-party developers;
-* The authors of one of the filters made a mistake when creating the rule;
-* Advertising reinsertion. Find more about this method in our [blog](https://adguard.com/blog/ad-reinsertion.html).
+* Nesprávná uživatelská pravidla;
+* Modifikované algoritmy přidávání reklam;
+* Přidané filtry/rozšíření od vývojářů třetích stran;
+* Autoři jednoho z filtrů udělali při vytváření pravidla chybu;
+* Opakované vložení reklamy. Více informací o této metodě najdete na našem [blogu](https://adguard.com/blog/ad-reinsertion.html).
 
-You can help us by filling in an application form with examples of ads you faced with. To do it, please, use instructions for your OS.
+Můžete nám pomoci vyplněním formuláře s příklady reklam, se kterými jste se setkali. K tomu použijte pokyny pro váš operační systém.
 
-## Report a website {#report}
+## Nahlásit webovou stránku {#report}
 
-> **Note**: When you send a complaint via the app or via AdGuard Browser Assistant, all information is pre-filled automatically. Except for the screenshots, you'll have to make and attach them yourself. If you're using a [direct link](https://reports.adguard.com/new_issue.html), you’ll need to enter data manually.
+:::note
 
-To report a reinsertion of an ad or incorrect displaying of a website, you need to:
+Při odesílání hlášení prostřednictvím aplikace nebo AdGuard Asistenta prohlížeče se všechny informace vyplní automaticky. Kromě snímků obrazovky, ty si budete muset vytvořit a přiložit sami. Pokud používáte přímý odkaz [](https://reports.adguard.com/new_issue.html), musíte zadat údaje ručně.
 
-### Browser extension {#extension}
+:::
 
-* Open the browser extension settings by clicking on the corresponding icon;
-* Click on **Report an issue**:
+Chcete-li nahlásit opakované vložení reklamy nebo nesprávné zobrazení webu, musíte:
+
+### Rozšíření prohlížeče {#extension}
+
+* Otevřete nastavení rozšíření prohlížeče kliknutím na příslušnou ikonu;
+* Klikněte na **Nahlásit problém**:
 
 ![extension *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/extension_issue.png)
 
-* After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
+* Po vyplnění formuláře se automaticky vytvoří problém na [GitHubu](https://github.com/AdguardTeam/AdguardFilters/issues). K dispozici bude také odkaz pro sledování postupu řešení vašeho problému.
 
 ### Windows {#windows}
 
-* Open [AdGuard Browser Assistant](/adguard-for-windows/browser-assistant) and hit **Report an issue**:
+* Otevřete [AdGuard Asistenta prohlížeče](/adguard-for-windows/browser-assistant) a stiskněte **Nahlásit problém**:
 
 ![windows *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/browser-assistant.png)
 
-* Fill in the form for reporting a complaint;
-* After you've done it, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
+* Vyplňte formulář pro nahlášení problému;
+* Po vyplnění formuláře se automaticky vytvoří problém na [GitHubu](https://github.com/AdguardTeam/AdguardFilters/issues). K dispozici bude také odkaz pro sledování postupu řešení vašeho problému.
 
 ### Android {#android}
 
-* Open AdGuard settings;
-* Сhoose **Support**, then **Send Feedback** → **Missed ad**/**Incorrect blocking**:
+* Otevřete nastavení AdGuardu;
+* Vyberte **Podpora**, poté **Odeslat zpětnou vazbu** → **Nezablokovaná reklama**/**Nesprávné blokování**:
 
 ![android *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/android.png)
 
-* After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
+* Po vyplnění formuláře se automaticky vytvoří problém na [GitHubu](https://github.com/AdguardTeam/AdguardFilters/issues). K dispozici bude také odkaz pro sledování postupu řešení vašeho problému.
 
 ### Mac {#mac}
 
-* Open [AdGuard Browser Assistant](/adguard-for-mac/browser-assistant) and hit **Report an issue**:
+* Otevřete [AdGuard Asistenta prohlížeče](/adguard-for-mac/browser-assistant) a stiskněte **Nahlásit problém**:
 
 ![mac *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/guides/browser-assistant-mac.png)
 
-* Fill in the form for reporting a complaint;
-* After you've done it, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
+* Vyplňte formulář pro nahlášení problému;
+* Po vyplnění formuláře se automaticky vytvoří problém na [GitHubu](https://github.com/AdguardTeam/AdguardFilters/issues). K dispozici bude také odkaz pro sledování postupu řešení vašeho problému.
 
 ### iOS {#ios}
 
-* Open AdGuard settings;
-* Choose **Support**, then **Report incorrect blocking**:
+* Otevřete nastavení AdGuardu;
+* Vyberte **Podpora**, poté **Nahlásit nesprávné blokování**:
 
 ![ios *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/ios_issue.png)
 
-* Fill in the form for reporting a complaint;
-* After you've done it, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
+* Vyplňte formulář pro nahlášení problému;
+* Po vyplnění formuláře se automaticky vytvoří problém na [GitHubu](https://github.com/AdguardTeam/AdguardFilters/issues). K dispozici bude také odkaz pro sledování postupu řešení vašeho problému.
 
-## Filling in the form {#form}
+## Vyplnění formuláře {#form}
 
-> **Note**: When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. Except for the screenshots, you'll have to make and attach them yourself. If you're using a [direct link](https://reports.adguard.com/en/new_issue.html), you’ll need to enter data manually.
+:::note
 
-1. Filling in the form starts with detailing the type and version of a product;
+Při odesílání hlášení prostřednictvím aplikace nebo AdGuard asistenta se všechny informace vyplní automaticky. Kromě snímků obrazovky, ty si budete muset vytvořit a přiložit sami. Pokud používáte přímý odkaz [](https://reports.adguard.com/new_issue.html), musíte zadat údaje ručně.
+
+:::
+
+1. Vyplnění formuláře začíná uvedením typu a verze produktu;
 
 ![forma1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma1en.png)
 
-2. Specify the type of problem and additional information on using third-party software (antivirus, VPN);
+2. Uveďte typ problému a další informace o používání softwaru třetích stran (antivir, VPN);
 
 ![forma2 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma2en.png)
 
-3. Enter the address of the page and the browser (or the download link in case of an app) where you've encountered a problem;
+3. Zadejte adresu stránky a prohlížeče (nebo odkaz na stažení v případě aplikace), kde jste narazili na problém;
 
 ![forma3 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma3en.png)
 
-4. Application configuration must be specified:
-* Filters you use;
-* Stealth mode settings, if this function is enabled.
+4. Je třeba zadat konfiguraci aplikace:
+* Filtry, které používáte;
+* Nastavení Režimu utajení, pokud je tato funkce povolena.
 
 ![forma4 *border](https://cdn.adtidy.org/content/kb/ad_blocker/guides/forma4en.png)
 
-5. [Provide a screenshot](../take-screenshot) that captures the essence of a problem;
+5. [Poskytněte snímek obrazovky](../take-screenshot), který vystihuje podstatu problému;
 
-* **Important**: Hide your personal information (email, phone number, etc.) because screenshots will become publicly available.
+* **Důležité**: Skryjte své osobní údaje (e-mail, telefonní číslo atd.), protože snímky obrazovky budou veřejně dostupné.
 
 ![forma5 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma5en.png)
 
-6. Provide additional information that will help filter developers understand the situation;
+6. Poskytněte další informace, které pomohou vývojářům filtrů pochopit situaci;
 
-Also enter your account on **GitHub**, if available (it's necessary for developers to be able to reach you in case they need some additional details);
+Zadejte také svůj **GitHub** účet, pokud je k dispozici (je to nutné, aby vás vývojáři mohli kontaktovat v případě, že budou potřebovat nějaké další údaje);
 
 ![forma6 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma6en.png)
 
-7. Check each step before sending the form;
+7. Před odesláním formuláře zkontrolujte každý krok;
 
 ![forma7 *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma7en.png)
 
-8. You'll be provided with a link to track progress on your task.
+8. Zobrazí se vám odkaz, pomocí kterého můžete sledovat průběh plnění úkolu.
 
 ![forma8 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma8en.png)
 
-## Diagnosis of an issue {#issue}
+## Diagnostika problému {#issue}
 
-This option is suitable for those who aren’t afraid of difficulties and don’t mind trying to find the problem on their own. This does not require any special skills or in-depth knowledge of HTML and CSS.
+Tato možnost je vhodná pro ty, kteří se nebojí potíží a nevadí jim pokusit se najít problém na vlastní pěst. To nevyžaduje žádné zvláštní dovednosti ani hluboké znalosti HTML a CSS.
 
-For example, you are faced with a situation that your favorite website won’t open, authorization has broken, or some page elements are displayed incorrectly. The cause may be using a specific filter/extension/Stealth Mode setting. To diagnose these problems, you need to do the following:
+Například se setkáte s tím, že se vaše oblíbená webová stránka neotevře, došlo k přerušení autorizace nebo se některé prvky stránky zobrazují nesprávně. Příčinou může být použití určitého filtru/rozšíření/nastavení Režimu utajení. Pro diagnostiku těchto problémů je třeba provést následující:
 
-### **Filters**
+### **Filtry**
 
-1. Disable **Ad Blocker**;
-2. If it solved the problem, re-enable the module and disable filters one by one. This is done to identify filters that "break" the page;
-3. If you have managed to find out which filter "breaks" a page, you should inform the developers when filling out the form (see above). In this case, it is desirable to return to the initial settings;
-4. If turning off all the filters hasn't produced any results, apply rule **@@||example.com^$document,extension**; where **example.com** is an example site name that needs to be replaced by your own option;
-5. In case of failure (issue not solved), turn to section **Stealth Mode**.
+1. Vypněte **blokátor reklam**;
+2. Pokud to problém vyřešilo, znovu modul zapněte a postupně vypínejte filtry. To se provádí za účelem identifikace filtrů, které "rozbíjejí" stránku;
+3. Pokud se vám podařilo zjistit, který filtr "rozbíjí" stránku, měli byste o tom informovat vývojáře při vyplňování formuláře (viz výše). V tomto případě je žádoucí vrátit se k původnímu nastavení;
+4. Pokud vypnutí všech filtrů nepřineslo žádné výsledky, použijte pravidlo **@@||example.com^$document,extension**; kde **example.com** je příklad názvu webu, který je třeba nahradit vlastní možností;
+5. V případě neúspěchu (problém není vyřešen) přejděte do **Režimu utajení**.
 
 ### **Režim utajení**
 
-1. Disable **Stealth Mode**;
-2. If this solved the problem, turn the module on and turn off the **Stealth Mode** options one by one. This is done to detect which filters are "breaking" the page;
-3. If you have managed to to detect which setting "breaks" a page, you should inform the developers when filling out the form (see above). In this case, it is desirable to return to the initial settings;
-4. In case of failure (issue not solved), turn to section **Extensions**.
+1. Vypněte **Režim utajení**;
+2. Pokud se problém vyřešil, zapněte modul a postupně vypínejte možnosti **Režimu utajení**. Tím se zjišťuje, které filtry "rozbíjejí" stránku;
+3. Pokud se vám podařilo zjistit, které nastavení "rozbíjí" stránku, měli byste o tom informovat vývojáře při vyplňování formuláře (viz výše). V tomto případě je žádoucí vrátit se k původnímu nastavení;
+4. V případě neúspěchu (problém není vyřešen) přejděte do **Rozšíření**.
 
 ### **Rozšíření**
 
-1. Disable **Extensions**;
-2. If this solved the problem, turn on the module and turn off **Extensions** settings one by one. This is done to find out which setting "breaks" the page;
-3. If you have managed to detect which setting "breaks" a page, inform the developers when filling out the form (see above). In this case, it is desirable to return to the initial settings.
+1. Vypněte **Rozšíření**;
+2. Pokud se problém vyřešil, zapněte modul a postupně vypínejte nastavení **Rozšíření**. Tímto způsobem zjistíte, které nastavení "rozbíjí" stránku;
+3. Pokud se vám podařilo zjistit, které nastavení "rozbíjí" stránku, informujte o tom vývojáře při vyplňování formuláře (viz výše). V tomto případě je žádoucí vrátit se k původnímu nastavení.
 
-### **Third-party blockers**
-Some browsers and antivirus programs (such as Yandex Browser, Kaspersky, etc.) have built-in ad blockers. They may affect and cause problems in the operation of sites. If you use such programs, make sure that the problem is on the side of **AdGuard**: disable **AdGuard** filtering and try to repeat the problem. If it remains, it means that the problem is caused by another application or browser. If the problem is caused by **AdGuard**, follow the steps described in the previous paragraphs.
+### **Blokátory třetích stran**
+Některé prohlížeče a antivirové programy (například Yandex Browser, Kaspersky atd.) mají zabudované blokátory reklam. Mohou ovlivnit a způsobit problémy při provozu stránek. Pokud takové programy používáte, ujistěte se, že problém je na straně **AdGuardu**: vypněte filtrování **AdGuardem** a zkuste problém zopakovat. Pokud problém přetrvává, znamená to, že problém je způsoben jinou aplikací nebo prohlížečem. Pokud je problém způsoben **AdGuardem**, postupujte podle kroků popsaných v předchozích odstavcích.

@@ -1,20 +1,22 @@
 ---
-title: How to purchase
+title: Nasıl satın alınır ve yükseltilir
 sidebar_position: 2
 ---
 
-## How to purchase a license
+## Lisans nasıl satın alınır{#purchase}
 
 AdGuard license can be bought on [adguard.com](https://adguard.com/license.html). AdGuard Pro for iOS can be bought on the App Store. Ad Blocker licenses are also sold by various distributors.
 
-> The availability of AdGuard products in app stores and by distributors depends on your country.
+The availability of AdGuard products in app stores and by distributors depends on your country.
 
-## How to get a refund
+## Lisans nasıl yükseltilir{#upgrade}
 
-In accordance with our [Terms of Sale](https://adguard.com/terms-of-sale.html), you can get a 100% refund on the AdGuard license key you purchased at https://adguard.com. To get a refund, contact our support team at **support@adguard.com** and indicate the payment option you've used.
+AdGuard ürünlerinizden daha fazla yararlanmak için lisansınızı aşağıdaki avantajlardan yararlanarak yükseltebilirsiniz.
 
-A refund may be denied if you:
-* purchased the license more than 60 days ago,
-* purchaded the license by a distributor,
-* purchased the license on the App Store,
-* applied for a partial refund for license key upgrade or prolongation.
+1. AdGuard ürünlerinizin işlevselliğini artırmak için **ücretsiz veya deneme lisansınızı tam sürüme yükseltebilirsiniz**.
+2. Cihaz sayısını artırmak için **Kişisel lisansınızı Aile lisansına** yükseltebilirsiniz.
+3. Ayrıca **[aboneliğinizi](../what-is) Ömür Boyu lisansa yükseltebilirsiniz**.
+
+Lisansınızı şu şekilde yükseltebilirsiniz:
+  * purchasing another license on the [official AdGuard website](https://adguard.com),
+  * clicking the *Upgrade to Lifetime* and/or *Increase device limit* in your AdGuard account: ![Upgrade *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)

@@ -3,17 +3,27 @@ title: Přehled funkcí
 sidebar_position: 1
 ---
 
+:::info
+
+Tento článek je o Rozšíření prohlížeče AdGuard, které chrání pouze váš prohlížeč. Chcete-li chránit celé zařízení, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 AdGuard nabízí řadu softwarových produktů, které blokují reklamy a slídiče na různých platformách. Jedním z nejoblíbenějších produktů AdGuardu je bezplatné rozšíření, které funguje v pěti oblíbených prohlížečích: Chrome, Firefox, Edge, Opera a Yandex Browser. Rozšíření prohlížeče obsahují základní funkce pro blokování reklam, ale nelze je srovnávat s plnohodnotnými programy pro stolní počítače, jako jsou např. [AdGuard pro Windows](/adguard-for-windows/overview) a [AdGuard pro macOS](/adguard-for-mac/overview).
 
-![Rozšíření prohlížeče AdGuard pro Chrome *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
+![AdGuard Browser Extension for Chrome *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
 
 ## Dostupnost {#br-extension}
 
-[Rozšíření prohlížeče AdGuard](https://adguard.com/en/adguard-browser-extension/overview.html) je k dispozici pro většinu známých prohlížečů. Snadno jej najdete v internetovém obchodě svého prohlížeče nebo na našich oficiálních stránkách.
+[AdGuard Browser Extension](https://adguard.com/adguard-browser-extension/overview.html) is available for most major browsers. Snadno jej najdete v internetovém obchodě svého prohlížeče nebo na našich oficiálních stránkách.
 
 ![Dostupné pro většinu oblíbených prohlížečů *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
 
-> Máme samostatné rozšíření pro Safari. Od vydání [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html) se u většiny rozšíření pro blokování reklam objevily velké problémy, a mnoho z nich přestalo fungovat. Museli jsme vyvinout samostatné rozšíření [pro Safari](/adguard-for-safari/overview), které má oproti rozšíření popsanému v tomto článku některé odlišnosti.
+:::note
+
+Máme samostatné rozšíření pro Safari. Od vydání [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html) se u většiny rozšíření pro blokování reklam objevily velké problémy, a mnoho z nich přestalo fungovat. Museli jsme vyvinout samostatné rozšíření [pro Safari](/adguard-for-safari/overview), které má oproti rozšíření popsanému v tomto článku některé odlišnosti.
+
+:::
 
 **Nezapomeňte, že funkčnost každého rozšíření je přísně omezena možnostmi prohlížeče.** Pokud tedy chcete získat plnohodnotnou ochranu, zvažte instalaci samostatného programu pro svůj počítač. Zde je [důvod, proč](#comparison).
 
@@ -77,7 +87,11 @@ Můžete také importovat a exportovat stávající seznamy povolených. To je u
 
 V Režimu utajení můžete zabránit tomu, aby webová stránka viděla vyhledávací dotazy, které jste použili k jejímu nalezení na internetu, automaticky odstranit soubory cookies třetích stran a vlastní soubory cookies webové stránky atd. Všem těmto funkcím je věnován [zvláštní článek](/general/stealth-mode).
 
-> Všimněte si, že některé možnosti *Režimu utajení* dostupné v plnohodnotných aplikacích nejsou v rozšířeních prohlížeče z důvodu technických omezení k dispozici.
+:::note
+
+Některé možnosti *Režimu utajení* dostupné v plnohodnotných aplikacích nejsou v rozšířeních prohlížeče z důvodu technických omezení k dispozici.
+
+:::
 
 ## Další funkce a možnosti {#other}
 
@@ -101,7 +115,7 @@ Sekce *Další nastavení* obsahuje řadu různých nastavení, která souvisej�
 
 Na této kartě můžete aktivovat optimalizované filtry, zapnout oznámení o aktualizacích rozšíření, otevřít *Záznam filtrování* nebo vymazat statistiky blokovaných reklam a slídičů.
 
-Kromě toho nám můžete pomoci s vývojem filtrů zasíláním statistik o použitých pravidlech: které z nich se spouští, na kterých webových stránkách a jak často. Všechna data jsou striktně anonymizována; tato možnost je ve výchozím nastavení vypnuta.
+Kromě toho nám můžete pomoci s vývojem filtrů zasíláním statistik o použitých pravidlech: které z nich se spouští, na kterých webových stránkách a jak často. Tato možnost je ve výchozím nastavení vypnutá, protože neshromažďujeme údaje uživatelů bez jejich souhlasu. Pokud ji zapnete, budou všechna data přísně anonymizovaná.
 
 ### Informace {#about}
 

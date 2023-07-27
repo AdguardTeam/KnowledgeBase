@@ -1,94 +1,94 @@
 ---
-title: How to report bugs
+title: Jak nahlásit chybu
 sidebar_position: 4
 ---
 
-If you notice a bug while using AdGuard products, please help us address it. Here’s how to report bugs most effectively.
+Pokud si při používání produktů AdGuard všimnete chyby, pomozte nám ji vyřešit. Zde se dozvíte, jak co nejefektivněji nahlásit chyby.
 
-## Before you start
+## Než se do toho pustíte
 
-### When to report bugs
+### Kdy nahlásit chybu
 
-Check that you have the most up-to-date version, and if not, upgrade: the bug might have already been resolved in the new version.
+Zkontrolujte, zda máte nejnovější verzi, a pokud ne, aktualizujte: chyba již mohla být v nové verzi vyřešena.
 
-Check if the bug hasn’t been reported before. We advise paying attention to both open and closed issues.
+Zkontrolujte, zda nebyla chyba nahlášena již dříve. Doporučujeme věnovat pozornost otevřeným i uzavřeným problémům.
 
 ![Closed issues](https://cdn.adtidy.org/content/kb/ad_blocker/general/closed_issues.png)
 
-### How to describe a problem
+### Jak popsat problém
 
-Try to provide as many details as possible — that'll make it easier for us to reproduce the bug and figure out how to fix it. Here’s what we’re expecting to see in a bug report:
+Pokuste se uvést co nejvíce podrobností — usnadníte nám tak reprodukci chyby a zjistíme, jak ji opravit. V hlášení o chybě očekáváme následující informace:
 
-* Your app version
-* Your OS version
-* When you noticed the problem
-* What you were doing or what happened to the app before you noticed the problem. Steps to reproduce it
-* Whether it recurred and with what frequency
-* Whether you have a VPN or an antivirus software
+* Verzi aplikace
+* Verzi OS
+* Kdy jste si problému všimli
+* Co jste dělali nebo co se stalo s aplikací, než jste si problému všimli. Kroky k reprodukci problému
+* Zda se problém opakuje a s jakou frekvencí
+* Jestli používáte VPN nebo antivirový software
 
-### How to collect logs
+### Jak shromažďovat a záznamy
 
-Read about collecting logs in dedicated articles for each platform.
+O shromažďování záznamů se dočtete v článcích věnovaných jednotlivým platformám.
 
-## How to vote for bug reports or feature requests
+## Jak hlasovat pro hlášení chyb nebo požadavky na funkce
 
-If you want to support the implementation of a new feature or bugfix, you can vote for it on GitHub. To vote, just react with some emoji.
+Pokud chcete podpořit zavedení nové funkce nebo opravu chyby, můžete pro ni hlasovat na GitHubu. Chcete-li hlasovat, stačí reagovat pomocí emoji.
 
 ![GitHub issue with reactions](https://cdn.adtidy.org/content/kb/ad_blocker/general/github_reaction.png)
 
 ![GitHub issue without reactions](https://cdn.adtidy.org/content/kb/ad_blocker/general/github_reaction2.png)
 
-You can find reactions in the upper right corner or at the bottom of an issue.
+Reakce najdete v pravém horním rohu nebo na konci hlášení.
 
 
-## Instructions for all platforms
+## Pokyny pro všechny platformy
 
 ### AdGuard pro Windows
 
-1. Check out the [Windows repo](https://github.com/AdguardTeam/AdGuardforWindows/issues) to make sure the issue hasn’t been reported yet.
+1. Podívejte se na [repozitář Windows](https://github.com/AdguardTeam/AdGuardforWindows/issues) a ujistěte se, že problém ještě nebyl nahlášen.
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForWindows/issues/new/choose) and select *Bug report*.
+2. Otevřete [stránku pro vytváření nových problémů](https://github.com/AdguardTeam/AdguardForWindows/issues/new/choose) a vyberte *Bug report*.
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. Vyplňte formulář. Pokud je to možné, přiložte snímky obrazovky nebo záznam obrazovky.
 
 ![Reporting a bug via GitHub *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows_gh.png)
 
 ### AdGuard pro macOS
 
-1. Check out the [Mac repo](https://github.com/AdguardTeam/AdGuardforMac/issues) to make sure the issue hasn’t been reported yet.
+1. Podívejte se na [repozitář Mac](https://github.com/AdguardTeam/AdGuardforMac/issues) a ujistěte se, že problém ještě nebyl nahlášen.
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForMac/issues/new).
+2. Otevřete [stránku pro vytváření nových problémů](https://github.com/AdguardTeam/AdguardForMac/issues/new).
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. Vyplňte formulář. Pokud je to možné, přiložte snímky obrazovky nebo záznam obrazovky.
 
 ### AdGuard pro Android
 
-1. Check out the [Android repo](https://github.com/AdguardTeam/AdGuardforAndroid/issues) to make sure the issue hasn’t been reported yet.
+1. Podívejte se na [repozitář Android](https://github.com/AdguardTeam/AdGuardforAndroid/issues) a ujistěte se, že problém ještě nebyl nahlášen.
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForAndroid/issues/new/choose) and select *Bug report*.
+2. Otevřete [stránku pro vytváření nových problémů](https://github.com/AdguardTeam/AdguardForAndroid/issues/new/choose) a vyberte *Bug report*.
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. Vyplňte formulář. Pokud je to možné, přiložte snímky obrazovky nebo záznam obrazovky.
 
 ### AdGuard pro iOS
 
-1. Check out the [iOS repo](https://github.com/AdguardTeam/AdGuardforiOS/issues) to make sure the issue hasn’t been reported yet.
+1. Podívejte se na [repozitář iOS](https://github.com/AdguardTeam/AdGuardforiOS/issues) a ujistěte se, že problém ještě nebyl nahlášen.
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForiOS/issues/new/choose), select *Bug report*.
+2. Otevřete [stránku pro vytváření nových problémů](https://github.com/AdguardTeam/AdguardForiOS/issues/new/choose), vyberte *Bug report*.
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. Vyplňte formulář. Pokud je to možné, přiložte snímky obrazovky nebo záznam obrazovky.
 
-### AdGuard Browser Extension
+### Rozšíření prohlížeče AdGuard
 
-1. Check out the [Browser Extension repo](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/) to make sure the issue hasn’t been reported yet.
+1. Podívejte se na [repozitář Browser Extension](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/) a ujistěte se, že problém ještě nebyl nahlášen.
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose) and select *Bug report*.
+2. Otevřete [stránku pro vytváření nových problémů](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose) a vyberte *Bug report*.
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. Vyplňte formulář. Pokud je to možné, přiložte snímky obrazovky nebo záznam obrazovky.
 
 ### AdGuard pro Safari
 
-1. Check out the [Safari repo](https://github.com/AdguardTeam/AdGuardForSafari/issues) to make sure the issue hasn’t been reported yet.
+1. Podívejte se na [repozitář Safari](https://github.com/AdguardTeam/AdGuardForSafari/issues) a ujistěte se, že problém ještě nebyl nahlášen.
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdGuardForSafari/issues/new/choose) and select *Bug report*.
+2. Otevřete [stránku pro vytváření nových problémů](https://github.com/AdguardTeam/AdGuardForSafari/issues/new/choose) a vyberte *Bug report*.
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. Vyplňte formulář. Pokud je to možné, přiložte snímky obrazovky nebo záznam obrazovky.

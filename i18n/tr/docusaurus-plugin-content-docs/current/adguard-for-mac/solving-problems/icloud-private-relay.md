@@ -3,6 +3,12 @@ title: iCloud Private Relay and AdGuard
 sidebar_position: 7
 ---
 
+:::info
+
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Mac için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## Problem description in a nutshell
 
 By default, AdGuard uses the "default route" which disables iCloud Private Relay.
@@ -32,7 +38,7 @@ As a result, AdGuard can't work together with iCloud Private Relay and the Mail 
 
 We recommend using AdGuard together with a more traditional VPN service such as [AdGuard VPN](https://adguard-vpn.com/).
 
-## Alternative solution
+## Alternatif çözüm
 
 You can prevent AdGuard from using the "default route" by disabling the "default route".  It can be done via Advanced Settings → `network.extension.monterey.force.split.tunnel`.
 

@@ -3,6 +3,12 @@ title: AdGuard for iOS インストール方法
 sidebar_position: 2
 ---
 
+:::info
+
+This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## 動作環境
 
 ### iPhone
@@ -27,7 +33,7 @@ iOS 11.2以上
 
 ![検索バーに"AdGuard"と入力します。 *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/2.png)
 
-結果で表示される「_AdGuard ー Safariでしっかり広告ブロック_」アプリの下の「_入手する_」をタップして「_インストール_」をタップします。 必要に応じてApple IDのパスワードを入力してください。 インストールが完了するのを待ちます。
+[On the opened page of the App Store](https://adguard.com/download.html?auto=1) tap _GET_ under the string _AdGuard - adblock&privacy_ and then tap _INSTALL_. 必要に応じてApple IDのパスワードを入力してください。 インストールが完了するのを待ちます。
 
 ![AdGuardアプリの下の「入手する」をタップします。 *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/3.png)
 

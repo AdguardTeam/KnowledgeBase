@@ -3,6 +3,12 @@ title: Jak chránit AdGuard před ukončením systémem
 sidebar_position: 9
 ---
 
+:::info
+
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 V některých případech aplikace nezůstanou na pozadí ("naživu" nebo v režimu spánku) kvůli optimalizační funkci operačního systému Android nebo takzvanému "režimu úspory baterie" — tato funkce může aplikace na pozadí ukončit. Může být nepohodlné je znovu spouštět pokaždé, když se zavřou. Chcete-li se vyhnout ukončení aplikace na pozadí, musíte postupovat podle kroků, které jsme popsali zvlášť pro každého výrobce (verzi) operačního systému Android. Všimněte si, že pokyny různých výrobců jsou většinou velmi podobné.
 
 ## Asus
@@ -104,7 +110,7 @@ Následující kroky by měly být provedeny na jakémkoli zařízení Xiaomi, k
 Povolte následující:
 
 - **Nastavení** → **Pokročilá nastavení** → **Správce baterie** → nastavte **Plán napájení** na **Výkon**
-- **Nastavení zařízení** → **Pokročilá nastavení** → **Správce baterie** → **Chráněné aplikace** – AdGuard musí mít příznak **Chráněno**
+- **Device Settings** → **Advanced Settings** → **Battery Manager** → **Protected apps** — AdGuard needs to be **Protected**
 - **Nastavení zařízení** → **Aplikace** → **AdGuard** → **Baterie** → **Energeticky náročné výzvy** a **Po vypnutí obrazovky nechat spuštěno**
 - **Nastavení** → **Další nastavení** → **Baterie a výkon** → **Správa využití baterie aplikacemi** a zde:
 
@@ -147,7 +153,7 @@ Chcete-li nastavit práci AdGuardu na pozadí pro zařízení Xiaomi, měli byst
 
 ## Samsung
 
-V mnoha Samsung zařízeních se aplikace nepoužívaná po dobu 3 dnů nemůže spustit z pozadí. Abyste tomu zabránili, měli byste vypnout možnosti **Adaptivní baterie** a **Uspat aplikace**. Vezměte prosím na vědomí, že po aktualizaci aplikace nebo operačního systému se nastavení často vrátí na výchozí hodnoty, takže je musíte pokaždé znovu vypnout.
+V mnoha Samsung zařízeních se aplikace nepoužívaná po dobu 3 dnů nemůže spustit z pozadí. Abyste tomu zabránili, měli byste vypnout možnosti **Adaptivní baterie** a **Uspat aplikace**. Upozorňujeme, že po aktualizaci aplikace nebo operačního systému se tato nastavení často vrátí na výchozí hodnoty a je třeba je znovu vypnout.
 
 ### Android 11+
 
@@ -219,7 +225,7 @@ Otevřete **Nastavení** telefonu → **Baterie** → **Omezení používání n
 
 ### Starší zařízení Samsung
 
-U prvních zařízení Samsung není potřeba nastavovat práci na pozadí. Pokud se ve vašem případě aplikace AdGuard po chvíli zavírá nebo mizí z nedávných úloh, proveďte následující kroky:
+U prvních zařízení Samsung není potřeba nastavovat operaci na pozadí. Pokud se ve vašem případě aplikace AdGuard po chvíli zavírá nebo mizí z nedávných úloh, proveďte následující kroky:
 
  - Klepněte na tlačítko **Nedávné úlohy**, klepněte na ikonu **Další nastavení**. Mělo by to vypadat takto:
 
@@ -261,7 +267,11 @@ Pro spolehlivé procesy na pozadí může být také nutné odinstalovat **Power
 
 ### Zařízení s EMUI 9+ a PowerGenie
 
-> Poznámka: V telefonech s EMUI 9+ (Android P+) je k dispozici aplikace PowerGenie, která nutí ukončit všechny aplikace, které nejsou na seznamu povolených společnosti Huawei, a neposkytuje uživatelům žádné možnosti konfigurace. Níže naleznete návod, jak ji odinstalovat.
+:::note
+
+V telefonech s EMUI 9+ (Android P+) je k dispozici aplikace PowerGenie, která nutí ukončit všechny aplikace, které nejsou na seznamu povolených společnosti Huawei, a neposkytuje uživatelům žádné možnosti konfigurace. Níže naleznete návod, jak ji odinstalovat.
+
+:::
 
 Společnost Huawei je při ukončování aplikací ve svých zařízeních velmi vynalézavá. Kromě všech níže popsaných nestandardních opatření pro správu napájení představili v systému Android Pie aplikaci pro ukončování úloh integrovanou přímo do rozhraní EMUI 9.
 
@@ -269,7 +279,11 @@ Jmenuje se **PowerGenie** a ukončuje všechny aplikace, které nejsou na seznam
 
 Bohužel se jedná o systémovou aplikaci, kterou lze plně odinstalovat pouze pomocí ADB (Android Debug Bridge).
 
-> Zdroj: [XDA](https://forum.xda-developers.com/mate-20-pro/themes/remove-powergenie-to-allow-background-t3890409).
+:::note Zdroj
+
+[XDA forum](https://forum.xda-developers.com/mate-20-pro/themes/remove-powergenie-to-allow-background-t3890409).
+
+:::
 
 **Musíte**:
 
@@ -296,7 +310,7 @@ Pokud se AdGuard stále ukončuje, zkuste také spustit
 ### Zařízení s EMUI 6+ (a některá zařízení s EMUI 5):
 
 - **Nastavení telefonu** → **Pokročilá nastavení** → **Správce baterie** → nastavte **Plán napájení** na **Výkon**;
-- **Nastavení telefonu** → **Pokročilá nastavení** → **Správce baterie** → **Chráněné aplikace** – AdGuard musí mít příznak **Chráněno**;
+- **Phone Settings** → **Advanced Settings** → **Battery Manager** → **Protected apps** — set AdGuard as **Protected**;
 - **Nastavení telefonu** → **Aplikace** → **Vaše aplikace** → **Baterie** → **Energeticky náročné výzvy** `[uncheck]` a **Po vypnutí obrazovky neuspávat** `[check]`;
 - **Nastavení telefonu** → **Aplikace** → **Pokročilé (dole)** → **Ignorovat optimalizaci** → Klikněte na Povoleno → **Všechny aplikace** → Vyhledejte AdGuard ze seznamu a nastavte na **Povolit**.
 
@@ -306,11 +320,11 @@ Otevřete nastavení zařízení → **Aplikace** → **Nastavení** → **Speci
 
 ### Huawei P20, Huawei Honor 9 Lite a Huawei Mate 9 Pro:
 
-Otevřete nastavení zařízení → **Baterie** → **Spouštění aplikací **> poté nastavte AdGuard na **Spravovat ručně** a zkontrolujte, zda je vše zapnuto.
+Otevřete nastavení zařízení → **Baterie** → **Spouštění aplikací ** nastavte AdGuard na **Spravovat ručně** a zkontrolujte, zda je vše zapnuto.
 
 ### Huawei P20, Huawei P20 Lite, Huawei Mate 10:
 
-**Nastavení zařízení** → **Baterie** → **Spouštění aplikací **> </strong> poté nastavte AdGuard na **Spravovat ručně** a zkontrolujte, zda je vše zapnuto. Pro spolehlivé procesy na pozadí může být také nutné odinstalovat PowerGenie, jak je popsáno výše.
+**Nastavení zařízení** → **Baterie** → **Spouštění aplikací** → nastavte AdGuard na **Spravovat ručně** a zkontrolujte, zda je vše zapnuto. Pro spolehlivé procesy na pozadí může být také nutné odinstalovat PowerGenie, jak je popsáno výše.
 
 ### Starší zařízení Huawei
 
@@ -326,7 +340,7 @@ Stará zařízení Huawei se nastavují nejsnadněji, stačí provést dva jedno
 
 Kromě toho byste pro efektivnější nastavení práce AdGuardu na pozadí měli otevřít nastavení zařízení a provést následující kroky:
 
-- Jděte na **Pokročilá nastavení** → poté otevřete **Správce baterie** → nastavte **Plán napájení** na **Výkon**;
+- Jděte na **Nastavení** → otevřete **Správce baterie** → nastavte **Plán napájení** na **Výkon**;
 - Poté zvolte **Chráněné aplikace** ve **Správci baterie** a zkontrolujte, zda je AdGuard chráněn;
 - Jděte na **Aplikace** v hlavním nastavení a klikněte na AdGuard → vyberte **Baterie** → zapněte **Energeticky náročné výzvy** a **Neuspávat po vypnutí obrazovky**;
 - Poté v sekci **Aplikace** otevřete **Nastavení** (dole) → **Speciální přístup** → vyberte **Ignorovat optimalizaci baterie** → stiskněte **Povoleno** → **Všechny aplikace** → v seznamu vyhledejte AdGuard a nastavte na **Odmítnout**.
@@ -335,7 +349,7 @@ Kromě toho byste pro efektivnější nastavení práce AdGuardu na pozadí měl
 
 Meizu má téměř stejný přístup k omezování procesů na pozadí jako Huawei a Xiaomi. Zakázání práce AdGuardu a dalších aplikací na pozadí se tak můžete vyhnout úpravou následujících nastavení:
 
-- Jděte na **Pokročilá nastavení** → poté otevřete **Správce baterie** → nastavte **Plán napájení** na **Výkon**;
+- Jděte na **Pokročilá nastavení** → otevřete **Správce baterie** → nastavte **Plán napájení** na **Výkon**;
 - Poté zvolte **Chráněné aplikace** ve **Správci baterie** a zkontrolujte, zda je AdGuard chráněn;
 - Jděte na **Aplikace** v hlavním nastavení a klikněte na AdGuard → vyberte **Baterie** → zapněte **Energeticky náročné výzvy** a **Neuspávat po vypnutí obrazovky**.
 
@@ -382,7 +396,11 @@ V těchto zařízeních je k dispozici nástroj **DuraSpeed**, který ukončuje 
 
 ![Nokia tasker *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/nokia_tasker.png)
 
-> POZNÁMKA: Potřebujete nastavit typ **Obecný** i **Systém**. Na snímku obrazovky je jako příklad zobrazen pouze obecný.
+:::note
+
+Potřebujete nastavit typ **Obecný** i **Systém**. Na snímku obrazovky je jako příklad zobrazen pouze obecný.
+
+:::
 
 ### Další modely Nokia
 
@@ -390,7 +408,7 @@ V těchto zařízeních je k dispozici nástroj **DuraSpeed**, který ukončuje 
 
 - Klepněte na nabídku v pravém horním rohu → **Zobrazit systémové aplikace**.
 
-Vyhledejte v seznamu aplikaci **Spořič energie**, vyberte ji a klepněte na **Vynutit ukončení**. Chvíli zůstane ukončena, ale nakonec se sama znovu spustí.
+Vyhledejte v seznamu aplikaci **Spořič energie**, vyberte ji a klepněte na **Vynutit ukončení**. Na chvíli se ukončí, ale v určitém okamžiku se znovu spustí.
 
 Od této chvíle by měl AdGuard fungovat normálně a používat standardní optimalizace baterie Androidu, dokud se nerestartuje spořič energie.
 
@@ -444,7 +462,11 @@ Nejproblematičtější jsou zařízení s operačním systémem OxygenOS, kter�
 
 ![Oneplusdots *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/android/oneplusdots.png)
 
-> Na některých telefonech OnePlus existuje také funkce nazvaná Automatické spouštění aplikací a hloubková optimalizace, která zabraňuje práci aplikací na pozadí. Deaktivujte ji pro AdGuard.
+:::caution
+
+Na některých telefonech OnePlus existuje také funkce nazvaná Automatické spouštění aplikací a hloubková optimalizace, která zabraňuje práci aplikací na pozadí. Deaktivujte ji pro AdGuard.
+
+:::
 
 ### Optimalizace baterie
 

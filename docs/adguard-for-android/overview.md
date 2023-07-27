@@ -11,7 +11,7 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 :::note Disclaimer
 
-AdGuard for Android is not to be confused with AdGuard Content Blocker. AdGuard Content Blocker is available in Google Play and has truncated functionality to meet the restrictions imposed by the store. AdGuard for Android, on the contrary, is a powerful app that allows you to block ads and trackers in browsers and apps, manage other apps installed on your device, and perform other actions described in this article. The only place it can be downloaded from is the [AdGuard website](https://adguard.com/adguard-android/overview.html).
+AdGuard for Android is not to be confused with AdGuard Content Blocker. AdGuard Content Blocker is an app available in Google Play that has truncated functionality to meet restrictions imposed by the store. AdGuard for Android, on the contrary, is a powerful application to block ads, manage applications, and perform other roles that will be described in this article. The only place it can be downloaded from is [the AdGuard website](https://adguard.com/adguard-android/overview.html).
 
 :::
 

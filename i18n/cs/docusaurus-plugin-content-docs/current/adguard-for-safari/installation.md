@@ -1,43 +1,53 @@
 ---
-title: Installation
+title: Instalace
 sidebar_position: 2
 ---
 
-## How to install AdGuard for Safari {#install}
+:::info
 
-AdGuard for Safari is a free app presented on the App Store. To install it on your device, do the following.
+Tento článek je o AdGuardu pro Safari, který chrání pouze váš prohlížeč Safari. Chcete-li chránit celé zařízení, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 
-1. Open the App Store and find the needed extension there.
+:::
 
-![AdGuard for Safari on the App Store](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-app-store.png)
+## Jak nainstalovat AdGuard pro Safari {#install}
 
-2. Press *Get* > *Install* > *Open*.
+AdGuard pro Safari je bezplatná aplikace uvedená v App Store. Chcete-li ji nainstalovat do zařízení, postupujte takto.
 
-3. To set up AdGuard for Safari, enable the AdGuard extensions in the Safari settings. In a notification, click *Fix it*. In an opened window, check the boxes next to AdGuard extensions.
+1. Otevřete App Store a vyhledejte tam potřebné rozšíření.
 
-![Notification: Some extensions are disabled](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-notification.png)
+![AdGuard pro Safari v App Store](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-app-store.png)
 
-> Not all extensions are required for AdGuard for Safari to function correctly. For instance, checking the *Icon* extension enables the icon in the tray menu. However, we recommend to enable all of them.
+2. Stiskněte *Získat* → *Instalovat* → *Otevřít*.
 
-![Extensions checked](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-extensions-checked.png)
+3. Chcete-li nastavit AdGuard pro Safari, povolte AdGuard rozšíření v nastavení Safari. V oznámení klikněte na *Opravit*. V otevřeném okně zaškrtněte políčka vedle rozšíření AdGuardu.
 
-After you complete steps 1-3, AdGuard for Safari will start functioning. You can now configure its settings.
+![Oznámení: Některá rozšíření jsou zakázána](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-notification.png)
+
+:::note
+
+Pro správnou funkci AdGuardu pro Safari nejsou nutná všechna rozšíření. Například zaškrtnutím rozšíření *Icon* zapnete ikonu v nabídce. However, we recommend enabling all of them.
+
+:::
+
+![Rozšíření zaškrtnuta](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-extensions-checked.png)
+
+Po dokončení kroků 1-3 začne AdGuard pro Safari fungovat. Nyní můžete nakonfigurovat jeho nastavení.
 
 
-## How to uninstall AdGuard for Safari {#uninstall}
-To uninstall AdGuard for Safari, do the following:
+## Jak odinstalovat AdGuard pro Safari {#uninstall}
+Chcete-li odinstalovat AdGuard pro Safari, postupujte takto:
 
-1. Quit the app.
-2. Open Safari preferences.
-3. Choose the Extensions tab. You will see a list of extensions, AdGuard has eight.
-4. Uncheck all checkboxes and press *Uninstall* below any of them.
+1. Ukončete aplikaci.
+2. Otevřít předvolby Safari.
+3. Vyberte kartu Rozšíření. Zobrazí se seznam rozšíření, AdGuard jich má osm.
+4. Zrušte zaškrtnutí všech políček a stiskněte *Odinstalovat* pod kterýmkoli z nich.
 
-![Extensions checked](https://cdn.adtidy.org/public/Adguard/kb/installation/Safari/extensionschecked.png)
+![Rozšíření zaškrtnuta](https://cdn.adtidy.org/public/Adguard/kb/installation/Safari/extensionschecked.png)
 
-At this point you will see a notification:
+At this point, you will see a notification:
 
-![Notification: uninstall AdGuard for Safari](https://cdn.adtidy.org/public/Adguard/kb/installation/Safari/showinfinder.png)
+![Oznámení: odinstalovat AdGuard pro Safari](https://cdn.adtidy.org/public/Adguard/kb/installation/Safari/showinfinder.png)
 
-5. Press *Show in Finder* and move the application to the bin.
+5. Stiskněte *Zobrazit ve Finderu* a přesuňte aplikaci do koše.
 
-AdGuard for Safari will be removed from your device.
+AdGuard pro Safari bude z vašeho zařízení odstraněn.

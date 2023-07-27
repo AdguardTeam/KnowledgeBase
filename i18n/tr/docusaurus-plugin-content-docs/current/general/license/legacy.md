@@ -1,6 +1,6 @@
 ---
-title: Legacy licenses FAQ
-sidebar_position: 4
+title: Eski lisanslar hakkında SSS
+sidebar_position: 6
 ---
 
 We have written this article to avoid confusion and explain in detail how you can renew/upgrade an outdated (legacy) AdGuard license.
@@ -42,27 +42,27 @@ For example, this is how the 1+1 key looks like:
 ![1+1 key](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/1.outdatedlicenses_en.png)
 
 *But despite the total number of devices (2) it can be activated on 1 desktop and 1 mobile device.*
-> All the outdated licenses have a "legacy" badge in the AdGuard account. And they are automatically converted to a new type when you either renew or upgrade them. But there are some nuances. Let's see which licenses can be converted to a new type and how to do it.
+> All the outdated licenses have a "legacy" badge in the AdGuard account. And they are automatically converted to a new type when you either renew or upgrade them. But there are some nuances. Hangi lisansların yeni bir türe dönüştürülebileceğini ve bunun nasıl yapılacağını görelim.
 
-## I have an outdated (legacy) key. What renewal/upgrade options are available for me?
+## I have an outdated (legacy) key. Benim için hangi yenileme/yükseltme seçenekleri mevcut?
 
-You can check this on the [renewal page](https://adguard.com/renew.html) or in your [AdGuard account](https://my.adguard.com/main.html):
+Bunu [yenileme sayfasında](https://adguard.com/renew.html) veya [AdGuard hesabınızda](https://my.adguard.com/main.html) kontrol edebilirsiniz:
 
 ![Upgrade](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_en.png)
 > Go to "My licenses" tab and check what actions are available to you for each specific key. Below we will explain with specific examples.
 
 ### Licenses for 1/2/3 devices
 
-**Yearly** licenses for 1, 2, 3 devices can be converted to either Personal or Family:
+1, 2, 3 cihaz için **Yıllık** lisans, Kişisel veya Aile'ye dönüştürülebilir:
 
 ![Upgrade or renew](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/3.yearly_en.png)
-> Choose based on how many devices you need to protect.
+> Korumanız gereken cihaz sayısına göre seçim yapın.
 
-Instead of renewal you can switch to Lifetime:
+Yenileme yerine Ömür boyu'na geçebilirsiniz:
 
 ![Lifetime](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/4.lifetime_en.png)
 
-**Lifetime** licenses can only be converted to Family (9 devices) due to technical limitations:
+**Ömür boyu** lisanslar, teknik kısıtlamalar nedeniyle yalnızca Aile'ye (9 cihaz) dönüştürülebilir:
 
 ![Lifetime upgrade](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/5.lifetimeupgrade_en.png)
 
@@ -74,7 +74,7 @@ Instead of renewal you can switch to Lifetime:
 
 **Lifetime** licenses for 4 or more devices cannot be upgraded due to technical limitation:
 
-![Lifetime license for 4 devices](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/7.lifetime4+devices_en.png)
+![4 cihaz için Ömür boyu lisans](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/7.lifetime4+devices_en.png)
 
 ### Licenses for 9+ devices
 

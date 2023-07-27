@@ -1,54 +1,54 @@
 ---
-title: Becoming a translator/proofreader
+title: Jak se stát se překladatelem/korektorem
 sidebar_position: 2
 ---
 
-If you want to help translate AdGuard products, websites, and Knowledge bases, go to [Crowdin](https://crowdin.com/) and sign up/log in there.
+Pokud chcete pomáhat překládat produkty, webové stránky a znalostní databáze AdGuardu, přejděte na [Crowdin](https://crowdin.com/) a zaregistrujte se/přihlaste se.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/main-screen.png)
 
-Once you do, go to [our page](https://crowdin.com/profile/adguard/). You will see AdGuard projects, each with folders for different product strings.
+Jakmile tak učiníte, přejděte na [naši stránku](https://crowdin.com/profile/adguard/). Zobrazí se projekty AdGuardu se složkami pro různé produktové řetězce.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/projects.png)
 
-Choose your language and you will see the list of available product folders.
+Zvolte jazyk a zobrazí se seznam dostupných složek produktů.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/languages.png)
 
-You can start translating literally any product you like by choosing the respective folder. We have some recommendations about [what files are better to start with in AdGuard Websites project](../translation-priority).
+Výběrem příslušné složky můžete začít překládat doslova libovolný produkt. Máme několik doporučení, s jakými [soubory je lepší začít v projektu AdGuard Websites](../translation-priority).
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/folders.png)
 
-Filter phrases that are not yet translated and start your translation history.
+Filtrujte dosud nepřeložené fráze a spusťte historii překladů.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/filter.png)
 
-Suggest your version in the text box and save it.
+Navrhněte svou verzi v textovém poli a uložte ji.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/text-box.png)
 
-If you don't agree with an existing translation, you can suggest your version. Also, you can upvote and downvote suggestions made by other volunteers by clicking the "plus" and "minus" buttons.
+Pokud s existujícím překladem nesouhlasíte, můžete navrhnout vlastní verzi. Kliknutím na tlačítka "+" a "-" můžete také hlasovat pro a proti návrhům jiných překladatelů.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/vote.png)
 
-Besides, there is an opportunity to open translations in a Voting mode if you just want to rate translations.
+Kromě toho je zde možnost otevřít překlady v režimu hlasování, pokud chcete překlady pouze hodnotit.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/mode.png)
 
-You can find some [helpful tips on translating AdGuard in this article](../guidelines). Please have a look at it.
+Několik užitečných tipů pro překlad AdGuardu naleznete v [tomto článku](../guidelines). Please take a look at it.
 
-### How to become a proofreader {#proofreaders}
+### Jak se stát korektorem {#proofreaders}
 
-We have proofreaders (previously known as moderators) for each language. And every active translator has an option to become one.
+Pro každý jazyk máme korektory (dříve známí jako moderátoři). A každý aktivní překladatel má možnost se jím stát.
 
-So, what are proofreaders responsible for?
+Za co jsou tedy korektoři zodpovědní?
 
-**Proofreaders:**
+**Korektoři:**
 
-- Approve high-quality translations and disapprove the bad ones;
+- Schvalují vysoce kvalitní překlady a neschvalují ty špatné;
 
-- Look after the relevance of translations;
+- Dbají na relevanci překladů;
 
-- Respond to comments related to translations in their language.
+- Odpovídají na komentáře související s překlady v jejich jazyce.
 
-Every year best proofreaders receive gifts from AdGuard. Active translators do not go unrewarded either. Read more about our [reward system](../rewards).
+Every year, the best proofreaders receive gifts from AdGuard. Ani aktivní překladatelé nezůstanou bez odměny. Více informací o našem [systému odměn](../rewards).

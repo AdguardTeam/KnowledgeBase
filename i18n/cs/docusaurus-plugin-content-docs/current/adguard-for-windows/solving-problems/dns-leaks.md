@@ -1,42 +1,48 @@
 ---
-title: Possible DNS leaks
+title: Možné úniky DNS
 sidebar_position: 9
 ---
 
-AdGuard for Windows allows users to specify a DNS server address to resolve queries instead of system DNS server, which is provided by your ISP if not overridden in the system settings. Using a non-default DNS server can safeguard your DNS traffic from the ISP’s interception. Moreover, by choosing an encrypted and/or filtering DNS server, you get another layer of protection against bad actors and annoying ads.
+:::info
 
-Many AdGuard for Windows users appreciate the DNS protection feature. But some of them encounter the following issue: a check on a website like https://ipleak.net/ shows that requests are handled by default DNS server instead of the selected one. In this article we will tell you why this happens and how to avoid it.
+Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 
-## Bootstrap DNS address
+:::
 
-The DNS server addresses could be written as IPs or as domain names. In the case of IP addresses there are no difficulties: AdGuard forwards the DNS request directly to the server specified in the DNS protection module. However, encrypted DNS server addresses, like DoT or DoH, are most often written as domain names. In this case, to first resolve the encrypted DNS server address, AdGuard sends a DNS query to the bootstrap address, which is by default a system DNS server. This connection is what check services perceive as a leak.
+AdGuard pro Windows umožňuje uživatelům zadat adresu DNS serveru pro řešení dotazů namísto systémového DNS serveru, který je poskytován ISP, pokud není v nastavení systému potlačen. Použití jiného než výchozího DNS serveru může ochránit vaše přenosy DNS před zachycením ISP. Výběrem šifrovaného a/nebo filtrujícího DNS serveru navíc získáte další vrstvu ochrany před záškodníky a obtěžujícími reklamami.
 
-**To eliminate this leak:**
+Mnoho uživatelů AdGuardu pro Windows oceňuje funkci DNS ochrany. Někteří z nich se však setkávají s následujícím problémem: kontrola na webových stránkách, jako je https://ipleak.net/ ukazuje, že požadavky jsou zpracovávány výchozím DNS serverem namísto vybraným. V tomto článku se dozvíte, proč k tomu dochází a jak se tomu vyhnout.
 
-* go to the *Advanced settings*
-* scroll down to the *List of custom bootstrap addresses* section
-* enter the custom bootstrap address in IP address format (you may use [the list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/))
-* click *Save*
+## Bootstrap DNS adresa
 
-## Fallback DNS server
+Adresy DNS serverů lze zapsat jako IP adresy nebo jako názvy domén. V případě IP adres nejsou žádné potíže: AdGuard předá požadavek DNS přímo serveru uvedenému v modulu DNS ochrany. Šifrované adresy serverů DNS, jako je DoT nebo DoH, se však nejčastěji zapisují jako názvy domén. V tomto případě odešle AdGuard dotaz DNS na bootstrap adresu, což je ve výchozím nastavení systémový DNS server, aby nejprve vyřešil šifrovanou adresu DNS serveru. Toto připojení vnímají kontrolní služby jako únik.
 
-It could happen that AdGuard cannot reach the specified server because of a weak internet connection, an expiration of timeout set by default or some server related issues. In this case, it will connect to the fallback server, which is by default a system DNS server. This connection will also be considered by the check service as a leak.
+**Postup k odstranění tohoto úniku:**
 
-**To eliminate this leak:**
+* přejděte do *Pokročilých nastavení*
+* přejděte dolů do sekce *Seznam vlastních bootstrap adres*
+* zadejte vlastní bootstrap adresu ve formátu IP adresy (můžete použít [seznam známých poskytovatelů DNS](https://adguard-dns.io/kb/general/dns-providers/))
+* klikněte na *Uložit*
 
-* go to the *Advanced settings*
-* scroll down to the *Fallback servers* section
-* check the *Use custom servers* option
-* then find the *List of custom fallback servers* section and enter custom fallback servers one per line
+## Záložní DNS server
 
-or
+Může se stát, že AdGuard nemůže dosáhnout zadaného serveru z důvodu slabého připojení k internetu, vypršení výchozího časového limitu nebo jiných problémů souvisejících se serverem. V tomto případě se připojí k záložnímu serveru, kterým je ve výchozím nastavení systémový DNS server. Toto připojení bude kontrolní služba rovněž považovat za únik.
 
-* go to the *Advanced settings*
-* scroll down to the *Fallback servers* section
-* check the *Don’t use fallback servers* option
+**Postup k odstranění tohoto úniku:**
 
-or
+* přejděte do *Pokročilých nastavení*
+* přejděte dolů do sekce *Záložní servery*
+* zaškrtněte možnost *Použít vlastní servery*
+* pak vyhledejte sekci *Seznam vlastních záložních serverů* a zadejte vlastní záložní servery po jednom na řádek
 
-* go to the *Advanced settings*
-* scroll down to the *DNS server timeout period* section
-* enter an arbitrary large number
+nebo
+
+* přejděte do *Pokročilých nastavení*
+* přejděte dolů do sekce *Záložní servery*
+* zaškrtněte možnost *Nepoužívat záložní servery*
+
+nebo
+
+* přejděte do *Pokročilých nastavení*
+* přejděte dolů do sekce *Časový limit DNS serveru*
+* zadejte libovolně velké číslo

@@ -3,6 +3,12 @@ title: Přehled funkcí
 sidebar_position: 1
 ---
 
+:::info
+
+Tento článek je o Blokátoru obsahu AdGuard, který chrání pouze váš internetový prohlížeč Samsung nebo prohlížeč Yandex. Chcete-li chránit celé zařízení, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 AdGuard má dvě aplikace pro Android: [AdGuard pro Android](https://adguard.com/adguard-android/overview.html) a [Blokátor obsahu AdGuard](https://adguard.com/adguard-content-blocker/overview.html). AdGuard pro Android má mnohem širší rozsah funkcí: blokuje reklamy, slídiče a obtěžující prvky v prohlížečích a aplikacích, používá filtry i blokování reklam na úrovni domény a podporuje uživatelská pravidla. Blokátor obsahu AdGuard je svými funkcemi omezen.
 
 Plnohodnotné blokátory reklam nelze v Google Play zveřejnit kvůli zásadám obchodu. Google Play [zablokoval](https://adguard.com/en/blog/google-removes-adguard-android-app-google-play.html) "aplikace, které blokují nebo zasahují do jiné aplikace zobrazující reklamy". AdGuard pro Android lze tedy stáhnout pouze na oficiálních stránkách AdGuardu.

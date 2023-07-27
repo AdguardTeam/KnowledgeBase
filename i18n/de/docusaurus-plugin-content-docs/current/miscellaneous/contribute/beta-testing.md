@@ -1,38 +1,38 @@
 ---
-title: AdGuard beta testing
+title: AdGuard Beta Testing
 sidebar_position: 1
 ---
 
-There is an AdGuard app for virtually every major platform out there, and we regularly release updates for all of them. This would not be possible without beta testing and, more importantly, beta testers. Want to become one? Here's how you can do it.
+AdGuard-App gibt es für praktisch jede große Plattform, und wir veröffentlichen regelmäßig Updates für alle. Ohne Betatests und vor allem Betatester wäre dies nicht möglich. Möchten Sie einer werden? Hier erfahren Sie, wie Sie das machen können.
 
-## How to become a beta tester {#intro}
+## Beta-Tester:in werden {#intro}
 
-Our requirements are easy: use AdGuard, upgrade to the beta version when it becomes available, and report any bugs you notice. However, you will need either a [forum](https://forum.adguard.com/index.php) or a [GitHub](https://github.com/) account (or both) to become our beta tester, so you may want to get that out of the way first.
+Unsere Anforderungen sind einfach: Verwenden Sie AdGuard, aktualisieren Sie auf die Beta-Version, sobald diese verfügbar ist, und melden Sie alle Fehler, die Sie bemerken. Sie benötigen jedoch entweder ein [Forum-](https://forum.adguard.com/index.php) oder ein [GitHub-](https://github.com/)Konto (oder beides), um unser Beta-Tester zu werden.
 
-In any case, every single thing you need to know is gathered on a [dedicated page](https://adguard.com/en/beta.html).
+In jedem Fall ist alles, was Sie wissen müssen, auf einer [eigenen Seite](https://adguard.com/en/beta.html) gesammelt.
 
-If you want to skip the description part and get straight to the action, you can apply [here](https://surveys.adguard.com/beta_testing_program/form.html). Your application will be reviewed within 1-3 working days, and you'll get a reply via email.
+Wenn Sie den Beschreibungsteil überspringen und direkt zur Aktion übergehen möchten, können Sie sich hier [bewerben](https://surveys.adguard.com/beta_testing_program/form.html). Ihre Bewerbung wird innerhalb von 1-3 Werktagen geprüft und Sie erhalten eine Antwort per E-Mail.
 
-## How to report a bug {#report-a-bug}
+## Fehler melden {#report-a-bug}
 
-If you spotted a bug or just want to share your suggestion, let us know in any of the possible ways:
+Wenn Sie einen Fehler entdeckt haben oder einfach nur Ihren Vorschlag teilen möchten, teilen Sie uns dies auf eine der möglichen Arten mit:
 
-* Go to [forum.adguard.com](https://forum.adguard.com/index.php) and post there a new thread (or find an existing one) in the beta forum [category](https://forum.adguard.com/index.php?categories/48/). Make sure to read [forum rules](https://forum.adguard.com/index.php?threads/14859/);
+* Gehen Sie auf [forum.adguard.com](https://forum.adguard.com/index.php) und posten Sie dort einen neuen Thread (oder suchen Sie einen bestehenden) im Beta-Forum [Kategorie](https://forum.adguard.com/index.php?categories/48/). Lesen Sie unbedingt [Forenregeln](https://forum.adguard.com/index.php?threads/14859/);
 
-* Go to [GitHub](https://github.com/AdguardTeam/) and find a suitable repository. Create a new issue there and describe the bug/feature request in detail.
+* Gehen Sie auf [GitHub](https://github.com/AdguardTeam/) und suchen Sie ein passendes Repository. Erstellen Sie dort ein neues Thema (issue) und beschreiben Sie den Fehler bzw. den Wunsch nach einem neuen Feature im Detail.
 
-The above two methods are the most preferred, but you can use others if necessary:
+Die beiden oben genannten Methoden sind die am meisten bevorzugten, aber Sie können bei Bedarf auch andere verwenden:
 
-* Find us on various social media platforms, like [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/), etc. However, this is not the most convenient way to discuss technical matters.
+* Finden Sie uns auf verschiedenen Social-Media-Plattformen wie [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/), usw. Dies ist jedoch nicht der bequemste Weg, um technische Fragen zu diskutieren.
 
-* Email our support team from the Support tab in the app or write directly to [support@adguard.com](mailto:support@adguard.com).
+* Senden Sie eine E-Mail an unser Support-Team über die Registerkarte „Support“ in der App oder schreiben Sie direkt an [support@adguard.com](mailto:support@adguard.com).
 
-## How to activate the beta key in the iOS application {#ios}
+## Beta-Schlüssel in der iOS-App aktivieren {#ios}
 
-If you have already received a beta key and it is listed in your `adguard.com` account, go to the app and open the license section (Get Premium). Once there, enter the credentials from your AdGuard account. After that, the premium features will become available automatically.
+Wenn Sie bereits einen Beta-Schlüssel erhalten haben und dieser in Ihrem `adguard.com` Konto aufgeführt ist, gehen Sie zur App und öffnen Sie den Lizenzbereich (Get Premium). Geben Sie dort die Anmeldeinformationen Ihres AdGuard-Kontos ein. Danach werden die Premium-Funktionen automatisch verfügbar.
 
-### What else?
+### Was sonst?
 
-There is not much more to add. You don't have to go out of your way to find bugs. You can continue using AdGuard as usual. However, if you encounter a bug, please report it. Of course, we appreciate any additional effort and/or extra forum activity, etc.
+Es gibt nicht viel mehr hinzuzufügen. Sie müssen sich nicht die Mühe machen, Fehler zu finden. Sie können AdGuard wie gewohnt weiter verwenden. Wenn Sie jedoch auf einen Fehler stoßen, melden Sie ihn bitte. Natürlich freuen wir uns über jeden zusätzlichen Aufwand und/oder zusätzliche Forumsaktivitäten usw.
 
-Occasionally, you will receive our newsletters, keeping you informed of the latest changes in the beta (in case you missed them) and other important news. You can unsubscribe from it at any time.
+Gelegentlich erhalten Sie unsere Newsletter, die Sie über die neuesten Änderungen in der Beta (falls Sie sie verpasst haben) und andere wichtige Neuigkeiten auf dem Laufenden halten. Sie können sich jederzeit wieder abmelden.

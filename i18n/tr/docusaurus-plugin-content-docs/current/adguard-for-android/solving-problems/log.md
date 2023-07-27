@@ -1,42 +1,28 @@
 ---
-title: How to collect a full log
+title: Hata ayıklama günlükleri nasıl toplanır
 sidebar_position: 2
 ---
 
-Sometimes in order to understand a problem and fix it we need to collect **log files**, or **logs**. Basically, these files contain information about the program and it's work.
+:::info
+
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Android için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+
+:::
+
+Bu makalede, potansiyel olarak ortaya çıkabilecek karmaşık sorunları çözmek için önemli bir sorun giderme adımı olan hata ayıklama günlüklerini toplama sürecinde size rehberlik edeceğiz. Hata ayıklama günlükleri, Android için AdGuard'ın iç işleyişine ilişkin ayrıntılı bilgiler sağlar. AdGuard destek ekibi sizden hata ayıklama günlükleri sağlamanızı isterse, aşağıdaki talimatları uygulamanız yeterlidir.
 
 ### Collecting debug log
 
 To collect **debug** log and send it to us you need to perform following steps:
 
-1. Open AdGuard and go to "Settings".
+1. *Ayarlar* → *Genel* → *Gelişmiş* öğesine gidin.
+2. *Günlük düzeyi* öğesine dokunun ve bunu *Hata ayıklama* olarak ayarlayın.
+3. Sorunu yeniden oluşturun ve tam olarak ne zaman oluştuğunu hatırlamaya çalışın.
+4. Bir süre bekleyin, ardından *Ayarlar* öğesibe dönün ve *Destek* sekmesini seçin. *Hata bildir* öğesine dokunun ve gerekli alanları doldurun. *Uygulama günlüklerini ve sistem bilgisini gönder* onay kutusunu işaretlemeyi unutmayın. Son olarak *Gönder* öğesine dokunun.
 
-2. Choose "Advanced".
+Sorununuzun çözümünü takip etmek ve geliştiricilerle diyalog kurmakla ilgileniyorsanız, ilk üç adımı tamamladıktan sonra aşağıdaki adımları uygulamanızı tavsiye ederiz:
 
-3. Set "Logging level" to "Record everything". It's desirable to close all background apps that don't concern the problem beforehand.
+4. Bir süre bekleyin, ardından *Gelişmiş* ekranına dönün ve *Günlükleri ve sistem bilgisini dışa aktar* aracılığıyla günlükleri dışa aktarın. Ardından, bu [talimatları](/guides/report-bugs.md) izleyerek GitHub'da bir hata bildirin.
+5. GitHub'da bir sorun oluşturduktan sonra, günlük dosyasını devteam@adguard.com adresine gönderin. Hatanın zamanını ekleyin ve sorununuzun bağlantısını veya numarasını ekleyin (başlığın yanında #sayı olarak görünür). Alternatif olarak, günlük dosyasını Google Drive'a yükleyebilir ve devteam@adguard.com adresine gönderebilirsiniz. Dosya bağlantısını GitHub sorununuza ekleyin
 
-4. Reproduce the problem and set the logging level back to "Default". Notice the exact time when it happened.
 
-5. Send us a message from program by choosing "Support" > "Send Feedback" in the menu. Don't forget to check the "Send detailed system info" checkbox under the text field and to include the timestamp from the step 4 into the message.
-
-As an alternative, you can export the logs (along with the *state.txt* file that contains system information and information about AdGuard settings) directly into a local file. It can be convenient, for example, if you are having a conversation with a developer on [GitHub](https://github.com/AdguardTeam/AdguardForAndroid/issues), [forum](https://forum.adguard.com/) or on another platform.
-
-To export logs and system information into a file, go to "Settings" — "Advanced" and tap "Export logs and system info". Select the destination folder and tap "Save".
-
-### Collecting web requests log
-
-To collect **web requests** log and send it to us you need to perform following steps:
-
-1. Open AdGuard and go to "Settings".
-
-2. Choose "Advanced".
-
-3. Set "Logging level" to "Record web requests". It's desirable to close all background apps that don't concern the problem beforehand.
-
-4. Reproduce the problem and set the logging level back to "Default". Notice the exact time when it happened.
-
-5. Send us a message from program by choosing "Support" > "Send Feedback" in the menu. Don't forget to check the "Send detailed system info" checkbox under the text field and to include the timestamp from the step 4 into the message.
-
-As an alternative, you can export the logs (along with the *state.txt* file that contains system information and information about AdGuard settings) directly into a local file. It can be convenient, for example, if you are having a conversation with a developer on [GitHub](https://github.com/AdguardTeam/AdguardForAndroid/issues), [forum](https://forum.adguard.com/) or on another platform.
-
-To export logs and system information into a file, go to "Settings" — "Advanced" and tap "Export logs and system info". Select the destination folder and tap "Save".

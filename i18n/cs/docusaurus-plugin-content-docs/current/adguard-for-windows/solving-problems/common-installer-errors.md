@@ -1,91 +1,97 @@
 ---
-title: Common installer errors
+title: Běžné chyby instalačního programu
 sidebar_position: 6
 ---
 
-This article contains some of the most common errors that you can encounter during the AdGuard for Windows installation, and possible ways to solve them.
+:::info
 
-### Error 5: Access Denied {#error-5}
+Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 
-This error occurs when there's something wrong with permissions. There may be several different reasons why AdGuard installer doesn't have the permissions it requires to properly finish the installation process. You can try the following steps:
+:::
 
-- Temporarily disable your antiviruses. Some of them may interfere with the installation, depending on the severity of their settings.
+Tento článek obsahuje některé z nejčastějších chyb, se kterými se můžete setkat během instalace AdGuardu pro Windows, a možné způsoby jejich řešení.
 
-- Choose a different installation folder. It is possible that the current installation folder has some access restrictions. Also make sure you don't select an external drive, a virtual drive, etc.
+### Chyba 5: Přístup odepřen {#error-5}
 
-- Reboot your computer. Sometimes the permission issues are temporary and can be solved by restarting the PC.
+K této chybě dochází, pokud je něco v nepořádku s oprávněními. Může existovat několik různých důvodů, proč instalační program AdGuardu nemá oprávnění potřebná k řádnému dokončení procesu instalace. Můžete vyzkoušet následující kroky:
 
-### Error 112: Disk is full, Error 1632: Temporary folder full or inaccessible {#error-112}
+- Dočasně vypněte antivirové programy. Některé z nich mohou v závislosti na závažnosti svého nastavení instalaci narušovat.
+
+- Zvolte jinou složku pro instalaci. Je možné, že aktuální složka pro instalaci má nějaká omezení přístupu. Také se ujistěte, že jste nevybrali externí jednotku, virtuální jednotku atd.
+
+- Restartujte počítač. Někdy jsou problémy s oprávněním dočasné a lze je vyřešit restartováním počítače.
+
+### Chyba 112: Disk je plný, Chyba 1632: Dočasná složka je plná nebo nedostupná {#error-112}
 
 
-These are two different errors with very similar solutions. As their names suggest, AdGuard installer didn't find enough disk space to complete the installation. There are several things you can attempt to fix the problem:
+Jedná se o dvě různé chyby s velmi podobným řešením. Jak napovídá jejich název, instalační program AdGuardu nenašel dostatek místa na disku pro dokončení instalace. Problém můžete vyřešit několika způsoby:
 
-- Uninstall some programs or delete unnecessary files from the drive you were trying to install AdGuard to.
+- Odinstalujte některé programy nebo odstraňte nepotřebné soubory z jednotky, na kterou jste chtěli nainstalovat AdGuard.
 
-- Download, install, and run [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/), a free piece of software by Malwarebytes. It will, among other things, clean your system from all kinds of extra "leftover" files that remain after incorrectly uninstall programs and such. It will help clean up some disk space.
+- Stáhněte, nainstalujte a spusťte [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/), bezplatný software od společnosti Malwarebytes. Mimo jiné vyčistí váš systém od nejrůznějších pozůstatků souborů, které zůstaly po nesprávně odinstalovaných programech a podobně. Pomůže vyčistit místo na disku.
 
-- Reboot your computer. Sometimes temporary files can take up a considerable amount of disk space, and restarting your PC is the most reliable way to get rid of them.
+- Restartujte počítač. Dočasné soubory mohou někdy zabírat značné množství místa na disku a nejspolehlivějším způsobem, jak se jich zbavit, je restartování počítače.
 
-### Error 1601: Windows Installer is not accessible {#error-1601}
+### Chyba 1601: Instalační program pro Windows není přístupný {#error-1601}
 
-You could say this is a particular sub-case of Error 1603. The possible solutions are similar:
+Dalo by se říci, že se jedná o zvláštní podtyp chyby 1603. Možná řešení jsou podobná:
 
-- Start and re-register Microsoft Installer service. It requires some work.
+- Spusťte a znovu zaregistrujte službu Microsoft Installer. Vyžaduje to určitou práci.
 
-    1) Press *Win + R* and enter **services.msc**. 2) Find in the list and double click on *Windows Installer*. 3) Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click on *Stop* first and then hit *Start*. 4) Press *Win + R*, type and enter ***msiexec /unregister*** and hit *Enter*. 5) Press *Win + R* again, type and enter ***msiexec /regserver*** and hit *Enter*
+    1) Stiskněte *Win + R* a napište **services.msc**. 2) Vyhledejte v seznamu *Instalační služba systému Windows* a dvakrát na ni klikněte. 3) Stiskněte tlačítko *Spustit* pod položkou *Stav služby* a stiskněte *OK*. Pokud stav služby **běží**, měli byste nejprve kliknout na *Ukončit* a poté stisknout *Spustit*. 4) Stiskněte *Win + R*, napište ***msiexec /unregister*** a stiskněte *enter*. 5) Stiskněte znovu *Win + R*, napište ***msiexec /regserver*** a stiskněte *enter*
 
-- Reboot the PC and start the installation all over again. Sometimes that's enough to fix the problem.
+- Restartujte počítač a spusťte instalaci znovu. Někdy to k odstranění problému stačí.
 
-### Error 1602: Canceled by user {#error-1602}
+### Chyba 1602: Zrušeno uživatelem {#error-1602}
 
-If you got this error code, chances are you have interrupted the installation process manually in one way or another. What you can do is:
+Pokud se vám zobrazil tento chybový kód, je pravděpodobné, že jste tak či onak ručně přerušili proces instalace. Můžete udělat následující:
 
-- Don't close the installer window. When the installation is complete, it will close automatically.
+- Okno instalačního programu nezavírejte. Po dokončení instalace se zavře automaticky.
 
-- If a dialogue window pops up during the installation, hit "Yes" to grant the installer the required permissions. Clicking on "No" will cancel he installation.
+- Pokud se během instalace zobrazí dialogové okno, stiskněte tlačítko "Ano" a udělte instalačnímu programu požadovaná oprávnění. Kliknutím na tlačítko "Ne" instalaci zrušíte.
 
-- Don't start other processes while the installation process is going on.
+- Během instalace nespouštějte jiné procesy.
 
-### Error 1603: Fatal error during installation {#error-1603}
+### Chyba 1603: Závažná chyba během instalace {#error-1603}
 
-The error sounds scarier than it actually is. In reality, this is a rather generic error that can have many different causes, and some of them are easily fixed. Try the following solutions:
+Chyba zní děsivěji, než ve skutečnosti je. Ve skutečnosti se jedná o poměrně obecnou chybu, která může mít mnoho různých příčin a některé z nich lze snadno odstranit. Vyzkoušejte následující řešení:
 
-- Press the *Win* key, search for *Command Prompt* and run it. There, type in `sfc /scannow` and press *Enter*.
+- Stiskněte klávesu *Win*, vyhledejte *Příkazový řádek* a spusťte jej. Zde napište `sfc /scannow` a stiskněte *enter*.
 
-- Choose a different installation folder. It is possible that the current installation folder has some access restrictions. Also make sure you don't select an external drive, a virtual drive, etc.
+- Zvolte jinou složku pro instalaci. Je možné, že aktuální složka pro instalaci má nějaká omezení přístupu. Také se ujistěte, že jste nevybrali externí jednotku, virtuální jednotku atd.
 
-- Uninstall AdGuard using our special [uninstall tool](../../installation#advanced) and then repeat the installation.
+- Odinstalujte AdGuard pomocí našeho speciálního [nástroje pro odinstalaci](../../installation#advanced) a poté instalaci zopakujte.
 
-- Start and re-register Microsoft Installer service. It requires some work.
+- Spusťte a znovu zaregistrujte službu Microsoft Installer. Vyžaduje to určitou práci.
 
-    1) Press *Win + R* and enter ***services.msc***. 2) Find in the list and double click on *Windows Installer*. 3) Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click on *Stop* first and then hit *Start*. 4) Press *Win + R*, type and enter ***msiexec /unregister*** and hit *Enter*. 5) Press *Win + R* again, type and enter ***msiexec /regserver*** and hit *Enter*
+    1) Stiskněte *Win + R* a napište ***services.msc***. 2) Vyhledejte v seznamu *Instalační služba systému Windows* a dvakrát na ni klikněte. 3) Stiskněte tlačítko *Spustit* pod položkou *Stav služby* a stiskněte *OK*. Pokud stav služby **běží**, měli byste nejprve kliknout na *Ukončit* a poté stisknout *Spustit*. 4) Stiskněte *Win + R*, napište ***msiexec /unregister*** a stiskněte *enter*. 5) Stiskněte znovu *Win + R*, napište ***msiexec /regserver*** a stiskněte *enter*
 
-- Acquire full permissions on the drive for installation. It is possible that the error 1603 occurs because you don’t have full permissions on the file location. It's also not as easy as some of the other solutions:
+- Získejte plná oprávnění na jednotce pro instalaci. Je možné, že k chybě 1603 dochází, protože nemáte úplná oprávnění k umístění souboru. Také to není tak snadné jako některá jiná řešení:
 
-    1) Open *File Explorer*, right click on the drive containing the installation location and select *Properties*. 2) Go to *Security* tab and click on *Edit*. 3) Single click on *SYSTEM* and ensure that the *Allow* box of every item in *Permissions for SYSTEM* is checked (if it is checkable). Do the same check for *Administrators*. 4) Click on *OK* to go back to *Properties* dialog. Then click on *Advanced*. 5) Click on *Change Permissions*. 6) On *Permissions* tab, double click on *Administrators*. 7) Select *This folder, subfolders and files* for *Applies to* field and tick all the available *Basic permissions*. After that hit *OK*. 8) Do the same operation above (from item 7) for *SYSTEM*. 9) Click on *OK* all the way out. Try installing AdGuard again.
+    1) Otevřete *Průzkumník souborů*, klepněte pravým tlačítkem myši na jednotku obsahující umístění instalace a vyberte *Vlastnosti*. 2) Přejděte na *Zabezpečení* a klikněte na *Upravit*. 3) Klikněte jednou myší na *SYSTÉM* a ujistěte se, že je *zaškrtnuto* políčko u každé položky v části *Oprávnění pro SYSTÉM* (pokud je možné je zaškrtnout). Stejnou kontrolu proveďte i pro *Správce*. 4) Kliknutím na *OK* se vrátíte do dialogu *Vlastnosti*. Poté klikněte na *Pokročilé*. 5) Klikněte na *Změnit oprávnění*. 6) Na kartě *Oprávnění* dvakrát klikněte na *Správci*. 7) Vyberte *Tato složka, podsložky a soubory* pro pole *Použít pro* a zaškrtněte všechna dostupná *Základní oprávnění*. Poté stiskněte *OK*. 8) Proveďte stejnou operaci jako výše (od bodu 7) pro *SYSTÉM*. 9) Úplně nakonec klikněte na *OK*. Zkuste AdGuard nainstalovat znovu.
 
-### Error 1618: Another installation is already in progress {#error-1618}
+### Chyba 1618: Již probíhá jiná instalace {#error-1618}
 
-This error occurs when there are several instances of AdGuard installer launched at the same time. What to do if you get this error:
+K této chybě dochází při současném spuštění několika instancí instalačního programu AdGuard. Co dělat, když se tato chyba zobrazí:
 
-- Reboot your PC and start the installer again. When you restart the computer, all ongoing processes will stop, including all copies of the installer.
+- Restartujte počítač a spusťte instalaci znovu. Po restartování počítače se zastaví všechny probíhající procesy, včetně všech kopií instalačního programu.
 
-- Don't make multiple clicks on the installer even if doesn't start right away. Sometimes it may take a few seconds to display the installer UI.
+- Na instalační program neklikejte vícekrát, i když se nespustí hned. Zobrazení uživatelského rozhraní instalátoru může někdy trvat několik sekund.
 
-### Error 1638: Another version of this product is already installed {#error-1638}
+### Chyba 1638: Další verze tohoto produktu je již nainstalována {#error-1638}
 
-It's very likely that you've already installed AdGuard before.
+Je velmi pravděpodobné, že jste si AdGuard již dříve nainstalovali.
 
-- Check if AdGuard is already installed on your computer. You can do it by pressing the *Win* key and typing in ***AdGuard***.
+- Zkontrolujte, zda je v počítači již nainstalován AdGuard. Můžete to udělat stisknutím klávesy *Win* a zadáním názvu ***AdGuard***.
 
-- Maybe there's some leftover files from a previous AdGuard installation. Uninstall AdGuard using our special [uninstall tool](../../installation#advanced) and then repeat the installation.
+- Možná tam jsou nějaké zbytky souborů z předchozí instalace AdGuardu. Odinstalujte AdGuard pomocí našeho speciálního [nástroje pro odinstalaci](../../installation#advanced) a poté instalaci zopakujte.
 
-### Other errors {#other}
+### Další chyby {#other}
 
-If you've encountered an error that's not listed above, it is possible that we can solve it by ourselves. But in order to do that, we need log files from you. Please perform the following steps:
+Pokud jste narazili na chybu, která není uvedena výše, je možné, že ji dokážeme vyřešit sami. K tomu však od vás potřebujeme soubory záznamů. Proveďte následující kroky:
 
-- Find and archive **AdGuard installation logs** as it is described in [this article](../installation-logs).
+- Vyhledejte a archivujte **instalační protokoly AdGuardu** jak je popsáno v [tomto článku](../installation-logs).
 
-- Find and save to disk **Event Viewer** logs. [This article](../system-logs) explains how to do that.
+- Vyhledejte a uložte na disk **záznamy prohlížeče událostí**. [Tento článek](../system-logs) vysvětluje, jak to udělat.
 
-- Please email all these files from two previous steps to the support team at **support@adguard.com** and describe the problem in the message body. Our tech support agents will reply to you as soon as possible.
+- Všechny tyto soubory z předchozích dvou kroků zašlete e-mailem na adresu **support@adguard.com** a v těle zprávy popište problém. Naši agenti technické podpory vám odpoví co nejdříve.

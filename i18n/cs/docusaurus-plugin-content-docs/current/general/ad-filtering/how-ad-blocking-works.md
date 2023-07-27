@@ -1,54 +1,62 @@
 ---
-title: How ad blocking works
+title: Jak funguje blokování reklam
 sidebar_position: 1
 ---
 
-AdGuard has many ad-blocking products for various platforms, and each product has its own unique features. But what unites them all is that they block ads and trackers. This article describes how ad blocking works from the inside.
+AdGuard nabízí mnoho produktů pro blokování reklam pro různé platformy a každý produkt má své vlastní jedinečné funkce. Všechny však spojuje to, že blokují reklamy a slídiče. Tento článek popisuje, jak blokování reklam funguje zevnitř.
 
-> We don't cover DNS filtering here. It's a different way of blocking ads, with its own advantages and disadvantages. Follow this link to [learn more about DNS filtering](https://adguard-dns.io/kb/general/dns-filtering#how-does-dns-filtering-work).
+:::note
 
-## General principle
+Zde se nezabýváme DNS filtrováním. Jedná se o jiný způsob blokování reklam, který má své výhody i nevýhody. Kliknutím na tento odkaz získáte [další informace o DNS filtrování](https://adguard-dns.io/kb/general/dns-filtering#how-does-dns-filtering-work).
 
-Filter lists, also called filters, lie at the core of any ad blocker. Filters are literally lists of rules written in a special syntax. Ad blockers can understand this complex syntax. They interpret filtering rules and perform actions on web traffic based on what the rules tell them to do: block specific elements, alter web pages in certain ways, etc.
+:::
+
+## Obecný princip
+
+Základem každého blokátoru reklam jsou seznamy filtrů, kterým se také říká filtry. Filtry jsou doslova seznamy pravidel zapsané ve speciální syntaxi. Blokátory reklam této složité syntaxi rozumí. Interpretují pravidla filtrování a provádějí akce s webovým provozem na základě toho, co jim pravidla nařizují: blokují určité prvky, mění webové stránky určitým způsobem atd.
 
 ![How ad blocking works](https://cdn.adtidy.org/public/Adguard/Blog/manifestv3/adblockingworks.png)
 
-## Filter lists
+## Seznamy filtrů
 
-To better understand ad blocking, it's important to know the underlying principles of how filters work.
+Pro lepší pochopení blokování reklam je důležité znát základní principy fungování filtrů.
 
-Filtering rules that make up filters are not created automatically. They are developed by filter maintainers, including professionals and volunteers, who use browser developer consoles and other tools (such as the AdGuard's filtering log) to determine which rules will block a particular ad or tracker. This description of the process is very simplistic – some ads are particularly hard to block and require multiple rules, multiple iterations, and the use of complex syntax.
+Pravidla filtrování, ze kterých se filtry skládají, se nevytvářejí automaticky. Vyvíjejí je správci filtrů, včetně profesionálů a dobrovolníků, kteří pomocí vývojářských konzolí prohlížeče a dalších nástrojů (např. protokolu filtrování AdGuard) určují, která pravidla budou blokovat konkrétní reklamu nebo slídič. This description of the process is very simplistic — some ads are particularly hard to block and require multiple rules, multiple iterations, and the use of complex syntax.
 
-And even when a rule finally gets added to a filter, it doesn't mean that it stays there forever. Ads change, ways to serve the same ads on the same websites change, and the filter rules have to change, too. Sometimes rules become obsolete, a new ad appears, or a new filtering rule is needed to block the same ad. Filters are often maintained by one person, but even for a team of maintainers, it's impossible to constantly monitor the entire web. That's why many ad blockers have tools to help users easily report any filter-related issues they encounter.
+A i když je pravidlo nakonec přidáno do filtru, neznamená to, že tam zůstane navždy. Mění se reklamy, mění se způsoby zobrazování stejných reklam na stejných webových stránkách a musí se měnit i pravidla filtrování. Někdy pravidla zastarají, objeví se nová reklama nebo je potřeba nové pravidlo filtrování pro blokování stejné reklamy. Filtry často spravuje jeden člověk, ale ani tým správců nemůže neustále sledovat celý web. Proto má mnoho blokátorů reklam nástroje, které uživatelům pomáhají snadno nahlásit problémy související s filtrem.
 
 ![Filter update scheme](https://cdn.adtidy.org/public/Adguard/Blog/manifestv3/filtersupdates.png)
 
-AdGuard users [have access to a special web reporting tool](https://reports.adguard.com/new_issue.html). Thanks to user complaints, filter developers can focus on correcting their filter lists and not on scouring the Internet for new and old unblocked ads.
+Uživatelé AdGuardu [mají přístup ke speciálnímu webovému nástroji pro vytváření hlášení](https://reports.adguard.com/new_issue.html). Díky stížnostem uživatelů se mohou tvůrci filtrů soustředit na opravu svých seznamů filtrů a ne na hledání nových a starých neblokovaných reklam na internetu.
 
-Filters can do more than just block ads. There are filters that block tracking, social media widgets, and annoyances such as cookie notices. Different users may choose different combinations of filters to match their personal preferences. There are websites like [filterlists.com](https://filterlists.com/) that are dedicated to filter lists and have huge databases.
+Filtry umí více než jen blokovat reklamy. Existují filtry, které blokují sledování, widgety sociálních médií a obtěžující prvky, jako jsou upozornění na soubory cookies. Různí uživatelé si mohou zvolit různé kombinace filtrů podle svých osobních preferencí. Existují webové stránky jako [filterlists.com](https://filterlists.com/), které se věnují seznamům filtrů a mají obrovské databáze.
 
-> We develop and maintain [our own set of filter lists](../adguard-filters) that can be used with AdGuard or other ad blockers.
+Vyvíjíme a spravujeme [vlastní sadu seznamů filtrů](../adguard-filters), které lze použít s AdGuardem nebo jinými blokátory reklam.
 
-## Types of filtering rules
+## Typy pravidel filtrování
 
-There are many types of filtering rules that serve different purposes. Depending on the ad blocker you use, and especially on your OS, some types of rules may not be supported.
+Existuje mnoho typů pravidel filtrování, která slouží k různým účelům. V závislosti na použitém blokátoru reklam a zejména na operačním systému nemusí být některé typy pravidel podporovány.
 
-### Basic filtering rules
+### Základní pravidla filtrování
 
-To be displayed on a web page or in an app, the ad has to be loaded from a server first. To do so, the browser or the app needs to send a web request. The most basic way of preventing an ad from appearing on your screen is to block this request so it never reaches the server, and thus there's no reply.
+Aby se reklama mohla zobrazit na webové stránce nebo v aplikaci, musí být nejprve načtena ze serveru. Za tímto účelem musí prohlížeč nebo aplikace odeslat webový požadavek. Nejzákladnějším způsobem, jak zabránit zobrazení reklamy na obrazovce, je zablokovat tento požadavek tak, aby se nikdy nedostal na server a tím pádem nedošlo k odpovědi.
 
-Basically, all AdGuard Ad Blocker products can block web requests according to the active filter rules. This method is very effective at stopping the ad, but it has some drawbacks. The most obvious one is: whatever place an ad was taking up will be left empty or occupied by an ad leftover.
+Všechny produkty AdGuardu mohou v zásadě blokovat webové požadavky podle pravidel aktivního filtru. Tato metoda je velmi účinná při zastavení zobrazování reklamy, ale má některé nevýhody. Nejzřetelnější je, že místo, které reklama zabírala, zůstane prázdné nebo obsazené zbytkem reklamy.
 
-### Cosmetic filtering rules
+### Kosmetická pravidla filtrování
 
-Every web page has a Document Object Model (DOM), an HTML document containing the structure and elements of this page. As ads are also page elements, they get recorded in the DOM. Ad blockers can remove parts of the DOM, while filtering rules help them understand which parts are ads and should be removed, and which parts should be left intact.
+Každá webová stránka má objektový model dokumentu (DOM), dokument HTML obsahující strukturu a prvky této stránky. Protože reklamy jsou také prvky stránky, zaznamenávají se v DOM. Blokátory reklam mohou odstraňovat části DOM, zatímco pravidla filtrování jim pomáhají pochopit, které části jsou reklamy a měly by být odstraněny a které části by měly zůstat nedotčené.
 
-This method allows you to avoid above-mentioned blank spaces and ad leftovers, as well as perform other more complicated tasks.
+Tato metoda umožňuje vyhnout se výše zmíněným prázdným místům a zbytkům reklamy a provádět další složitější úkoly.
 
-### HTML filtering rules
+### HTML pravidla filtrování
 
-In most cases, it's enough to use the above-mentioned basic and cosmetic rules to filter ads. But when it is necessary to change the HTML code of the page itself before it is loaded, you need filtering rules for HTML content. These rules allow you to specify the HTML elements to be cut out before the browser even loads the page.
+Ve většině případů stačí k filtrování reklam použít výše uvedená základní a kosmetická pravidla. Pokud je však nutné změnit kód HTML samotné stránky před jejím načtením, potřebujete HTML pravidla pro filtrování obsahu. Tato pravidla umožňují určit prvky HTML, které mají být vyříznuty ještě před načtením stránky prohlížečem.
 
-These rules are quite complicated and require the ad blocker to be granted certain access rights, so not all platforms support them. Currently, these rules work only in the AdGuard Firefox add-on and in the AdGuard apps for Windows, Mac, and Android.
+Tato pravidla jsou poměrně složitá a vyžadují, aby blokátor reklam získal určitá přístupová práva, takže ne všechny platformy je podporují. V současné době tato pravidla fungují pouze v doplňku AdGuard pro Firefox a v aplikacích AdGuard pro Windows, Mac a Android.
 
-> There are other types of filtering rules, but they require more advanced technical knowledge to understand how they work. If you are interested, [check out our comprehensive guide on filtering rules in the linked article](../create-own-filters).
+:::info
+
+Existují i další typy pravidel filtrování, ale jejich fungování vyžaduje pokročilejší technické znalosti. Pokud máte zájem, podívejte se na [našeho komplexního průvodce pravidly filtrování v odkazovaném článku](../create-own-filters).
+
+:::
