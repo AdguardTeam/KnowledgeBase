@@ -156,7 +156,7 @@ This is the 'information hub' of AdGuard's DNS protection suite. You can quicksw
 
 ![Activity screen *mobile_border](https://cdn.adguard.com/content/github/ad_blocker/ios/activity.png)
 
-Here AdGuard displays stats about device's DNS requests, such as total number, number of blocked requests and data saved by blocking them. AdGuard can display the stats for a day, a week, a month, or in total.
+This is where AdGuard displays statistics about the device's DNS requests, such as total number, number of blocked requests and data saved by blocking them. AdGuard can display the statistics for a day, a week, a month or in total.
 
 Below is the *Recent activity* feed. AdGuard stores the last 1500 DNS requests that have originated on your device and shows their attributes such as protocol type and target domain.
 
