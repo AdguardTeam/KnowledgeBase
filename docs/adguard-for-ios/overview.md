@@ -95,8 +95,7 @@ Users can also handle their DNS security on the Network settings screen. *Filter
 
 ### DNS filtering {#dns-filtering}
 
-In DNS filtering you can customize your DNS traffic by enabling AdGuard DNS filter, adding custom DNS filters and using DNS
-blocklist/allowlist.
+DNS filtering allows you to customize your DNS traffic by enabling AdGuard DNS filter, adding custom DNS filters, and using the DNS blocklist/allowlist.
 
 How to access:
 
