@@ -154,7 +154,7 @@ On iOS 15 devices, the Assistant features are available through [AdGuard Safari 
 
 This is the 'information hub' of AdGuard's DNS protection suite. You can quickswitch to it by tapping the third icon in the row at the screen bottom. N.b. this screen is only seen when DNS protection is enabled.
 
-![Activity screen *mobile_border](https://cdn.adguard.com/content/github/ad_blocker/ios/activity.png)
+![Activity screen *mobile_border](https://cdn.adtidy.org/content/github/ad_blocker/ios/activity.png)
 
 This is where AdGuard displays statistics about the device's DNS requests, such as total number, number of blocked requests and data saved by blocking them. AdGuard can display the statistics for a day, a week, a month or in total.
 
