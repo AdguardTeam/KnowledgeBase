@@ -1,78 +1,82 @@
 {
   "version.label": {
-    "message": "Próximo",
+    "message": "Next",
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.General": {
-    "message": "Geral",
+    "message": "General",
     "description": "The label for category General in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Ad filtering": {
-    "message": "Filtragem de anúncios",
+    "message": "Ad filtering",
     "description": "The label for category Ad filtering in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.HTTPS filtering": {
-    "message": "Filtragem HTTPS",
+    "message": "HTTPS filtering",
     "description": "The label for category HTTPS filtering in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.AdGuard account": {
-    "message": "Conta do AdGuard",
+    "message": "AdGuard account",
     "description": "The label for category AdGuard account in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.License": {
-    "message": "Licença",
+    "message": "License",
     "description": "The label for category License in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.AdGuard for Windows": {
-    "message": "AdGuard para Windows",
+    "message": "AdGuard for Windows",
     "description": "The label for category AdGuard for Windows in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.AdGuard for Mac": {
-    "message": "AdGuard para Mac",
+    "message": "AdGuard for Mac",
     "description": "The label for category AdGuard for Mac in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Solving problems": {
-    "message": "Resolvendo problemas",
+    "message": "Solving problems",
     "description": "The label for category Solving problems in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.AdGuard for Android": {
-    "message": "AdGuard para Android",
+    "message": "AdGuard for Android",
     "description": "The label for category AdGuard for Android in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.AdGuard for iOS": {
-    "message": "AdGuard para iOS",
+    "message": "AdGuard for iOS",
     "description": "The label for category AdGuard for iOS in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.AdGuard Browser extension": {
-    "message": "Extensão do AdGuard para navegador",
+    "message": "AdGuard Browser extension",
     "description": "The label for category AdGuard Browser extension in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.AdGuard for Safari": {
-    "message": "AdGuard para Safari",
+    "message": "AdGuard for Safari",
     "description": "The label for category AdGuard for Safari in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.AdGuard Content Blocker": {
-    "message": "Bloqueador de conteúdo do AdGuard",
+    "message": "AdGuard Content Blocker",
     "description": "The label for category AdGuard Content Blocker in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Miscellaneous": {
-    "message": "Diversos",
+    "message": "Miscellaneous",
     "description": "The label for category Miscellaneous in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Contribute to AdGuard": {
-    "message": "Contribua com o AdGuard",
+    "message": "Contribute to AdGuard",
     "description": "The label for category Contribute to AdGuard in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Translating AdGuard": {
-    "message": "Traduzindo o AdGuard",
+    "message": "Translating AdGuard",
     "description": "The label for category Translating AdGuard in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Guides": {
-    "message": "Guias",
+    "message": "Guides",
     "description": "The label for category Guides in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Technical support": {
-    "message": "Suporte técnico",
+    "message": "Technical support",
     "description": "The label for category Technical support in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.AdGuard Browser Extension": {
+    "message": "AdGuard Browser Extension",
+    "description": "The label for category AdGuard Browser Extension in sidebar tutorialSidebar"
   }
 }

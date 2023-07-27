@@ -1,10 +1,10 @@
 ---
-title: Writing about AdGuard
+title: AdGuardについて書いていただく
 sidebar_position: 3
 ---
 
-If you like AdGuard and want to spread your impressions of the product(s) over the internet — in social media, personal blogs and/or on websites — then this article can be useful for you.
+AdGuardを気に入り、SNS、個人ブログ、ウェブサイトなど、インターネット上でAdGuard製品に関するご印象・ご感想を配信したいという方は、ぜひこの記事をチェックしてください。
 
-Once you share your experience online, send us a link to [pr@adguard.com](mailto:pr@adguard.com) and we'll thank you with a free license key. It does not really matter if your website's audience is ten people or a thousand, we respect every effort. The only note to keep in mind is that your review should be roughly about 300 to 500 words.
+書いていただいたレビュー・記事（オンラインで公開されているもの）などのリンクを [pr@adguard.com](mailto:pr@adguard.com) に送っていただければ、お礼に無料のライセンスキーを差し上げます。 あなたのウェブサイト・ブログの読者が10人であろうと10000人であろうと、努力された方には敬意と感謝を表します。 ※ただ、レビュー・記事の長さはおよそ600字〜1000字（英語で書かれる場合は300単語〜500単語）程度になるようお願いします。
 
-If you want to make a video or to do something else, let us know in advance, just to avoid misunderstandings in the future. The same applies if your plan includes the use of AdGuard logo, banners or other visual elements. The contact email remains the same: [pr@adguard.com](mailto:pr@adguard.com).
+もし動画などというちょっと違う種類のコンテンツを作りたい場合は、今後の誤解を避けるためにも、作られる前に一回ご連絡ください。 お客様のコンテンツにAdGuardのロゴ、バナー、その他のビジュアル要素を使用される場合も同じく事前にご連絡ください。 連絡先メールアドレスはどの場合も [pr@adguard.com](mailto:pr@adguard.com) です。

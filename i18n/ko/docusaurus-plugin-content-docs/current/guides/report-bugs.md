@@ -1,94 +1,94 @@
 ---
-title: How to report bugs
+title: 버그를 신고하는 방법
 sidebar_position: 4
 ---
 
-If you notice a bug while using AdGuard products, please help us address it. Here’s how to report bugs most effectively.
+AdGuard 제품을 사용하는 동안 버그를 발견하면 문제를 해결하도록 도와주세요. 버그를 가장 효과적으로 신고하는 방법은 다음과 같습니다.
 
-## Before you start
+## 시작하기 전에
 
-### When to report bugs
+### 버그를 신고해야 하는 경우
 
-Check that you have the most up-to-date version, and if not, upgrade: the bug might have already been resolved in the new version.
+최신 버전을 사용하고 있는지 확인하고, 그렇지 않은 경우 업그레이드하세요. 새 버전에서 버그가 이미 해결되었을 수 있습니다.
 
-Check if the bug hasn’t been reported before. We advise paying attention to both open and closed issues.
+해당 버그가 이전에 보고된 적이 없는지 확인하세요. 공개 이슈와 비공개 이슈 모두에 주의를 기울이는 것이 좋습니다.
 
-![Closed issues](https://cdn.adtidy.org/content/kb/ad_blocker/general/closed_issues.png)
+![종료된 이슈](https://cdn.adtidy.org/content/kb/ad_blocker/general/closed_issues.png)
 
-### How to describe a problem
+### 문제를 설명하는 방법
 
-Try to provide as many details as possible — that'll make it easier for us to reproduce the bug and figure out how to fix it. Here’s what we’re expecting to see in a bug report:
+가능한 한 많은 세부 정보를 제공해 주시면 버그를 재현하고 수정 방법을 쉽게 파악할 수 있습니다. 버그 보고서에서 예상되는 내용은 다음과 같습니다:
 
-* Your app version
-* Your OS version
-* When you noticed the problem
-* What you were doing or what happened to the app before you noticed the problem. Steps to reproduce it
-* Whether it recurred and with what frequency
-* Whether you have a VPN or an antivirus software
+* 앱 버전
+* OS 버전
+* 문제를 발견한 시점
+* 문제를 발견하기 전에 무엇을 하고 있었는지 또는 앱에 어떤 일이 발생했는지 알려주세요. 재현하는 단계
+* 반복 여부 및 빈도
+* VPN 또는 바이러스 백신 소프트웨어 사용 여부
 
-### How to collect logs
+### 로그 수집 방법
 
-Read about collecting logs in dedicated articles for each platform.
+각 플랫폼별 전용 문서에서 로그 수집에 대해 알아보세요.
 
-## How to vote for bug reports or feature requests
+## 버그 신고 또는 기능 요청에 투표하는 방법
 
-If you want to support the implementation of a new feature or bugfix, you can vote for it on GitHub. To vote, just react with some emoji.
+새로운 기능이나 버그 수정의 구현을 지원하려면 GitHub에서 투표할 수 있습니다. 투표하려면 이모티콘으로 반응하기만 하면 됩니다.
 
-![GitHub issue with reactions](https://cdn.adtidy.org/content/kb/ad_blocker/general/github_reaction.png)
+![리액션과 관련된 GitHub 문제](https://cdn.adtidy.org/content/kb/ad_blocker/general/github_reaction.png)
 
-![GitHub issue without reactions](https://cdn.adtidy.org/content/kb/ad_blocker/general/github_reaction2.png)
+![반응 없는 GitHub 이슈](https://cdn.adtidy.org/content/kb/ad_blocker/general/github_reaction2.png)
 
-You can find reactions in the upper right corner or at the bottom of an issue.
+오른쪽 상단 모서리 또는 이슈 하단에서 리액션을 찾을 수 있습니다.
 
 
-## Instructions for all platforms
+## 모든 플랫폼에 대한 지침
 
-### AdGuard for Windows
+### Windows용 AdGuard
 
-1. Check out the [Windows repo](https://github.com/AdguardTeam/AdGuardforWindows/issues) to make sure the issue hasn’t been reported yet.
+1. [Windows 리포지토리](https://github.com/AdguardTeam/AdGuardforWindows/issues) 에서 해당 문제가 아직 보고되지 않았는지 확인하세요.
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForWindows/issues/new/choose) and select *Bug report*.
+2. 새 이슈를 만들기 위한 [페이지](https://github.com/AdguardTeam/AdguardForWindows/issues/new/choose) 를 열고 *버그 신고*를 선택합니다.
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. 양식을 작성하세요. 가능하면 스크린샷이나 화면 녹화본을 첨부하세요.
 
-![Reporting a bug via GitHub *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows_gh.png)
+![GitHub를 통해 버그 신고하기 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows_gh.png)
 
-### AdGuard for Mac
+### Mac용 AdGuard
 
-1. Check out the [Mac repo](https://github.com/AdguardTeam/AdGuardforMac/issues) to make sure the issue hasn’t been reported yet.
+1. [Mac 리포지토리](https://github.com/AdguardTeam/AdGuardforMac/issues) 에서 해당 문제가 아직 보고되지 않았는지 확인하세요.
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForMac/issues/new).
+2. 새 이슈를 만들기 위한 [페이지를 엽니다](https://github.com/AdguardTeam/AdguardForMac/issues/new).
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. 양식을 작성하세요. 가능하면 스크린샷이나 화면 녹화본을 첨부하세요.
 
-### AdGuard for Android
+### Android용 AdGuard
 
-1. Check out the [Android repo](https://github.com/AdguardTeam/AdGuardforAndroid/issues) to make sure the issue hasn’t been reported yet.
+1. [Android 리포지토리](https://github.com/AdguardTeam/AdGuardforAndroid/issues) 에서 해당 문제가 아직 보고되지 않았는지 확인하세요.
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForAndroid/issues/new/choose) and select *Bug report*.
+2. 새 이슈를 만들기 위한 [페이지](https://github.com/AdguardTeam/AdguardForAndroid/issues/new/choose) 를 열고 *버그 신고*를 선택합니다.
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. 양식을 작성하세요. 가능하면 스크린샷이나 화면 녹화본을 첨부하세요.
 
-### AdGuard for iOS
+### iOS용 AdGuard
 
-1. Check out the [iOS repo](https://github.com/AdguardTeam/AdGuardforiOS/issues) to make sure the issue hasn’t been reported yet.
+1. [iOS 리포지토리](https://github.com/AdguardTeam/AdGuardforiOS/issues)에서 해당 문제가 아직 보고되지 않았는지 확인하세요.
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForiOS/issues/new/choose), select *Bug report*.
+2. 새 이슈를 만들기 위한 [페이지](https://github.com/AdguardTeam/AdguardForiOS/issues/new/choose) 를 열고 *버그 신고*를 선택합니다.
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. 양식을 작성하세요. 가능하면 스크린샷이나 화면 녹화본을 첨부하세요.
 
-### AdGuard Browser Extension
+### AdGuard 확장 프로그램
 
-1. Check out the [Browser Extension repo](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/) to make sure the issue hasn’t been reported yet.
+1. [확장 프로그램 리포지토리](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/)에서 해당 문제가 아직 보고되지 않았는지 확인하세요.
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose) and select *Bug report*.
+2. 새 이슈를 만들기 위한 [페이지](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose) 를 열고 *버그 신고*를 선택합니다.
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. 양식을 작성하세요. 가능하면 스크린샷이나 화면 녹화본을 첨부하세요.
 
-### AdGuard for Safari
+### Safari용 AdGuard
 
-1. Check out the [Safari repo](https://github.com/AdguardTeam/AdGuardForSafari/issues) to make sure the issue hasn’t been reported yet.
+1. [Safari 리포지토리](https://github.com/AdguardTeam/AdGuardForSafari/issues)에서 해당 문제가 아직 보고되지 않았는지 확인하세요.
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdGuardForSafari/issues/new/choose) and select *Bug report*.
+2. 새 이슈를 만들기 위한 [페이지](https://github.com/AdguardTeam/AdGuardForSafari/issues/new/choose) 를 열고 *버그 신고*를 선택합니다.
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. 양식을 작성하세요. 가능하면 스크린샷이나 화면 녹화본을 첨부하세요.

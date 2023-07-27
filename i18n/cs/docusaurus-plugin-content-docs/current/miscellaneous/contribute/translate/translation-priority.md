@@ -1,18 +1,18 @@
 ---
-title: How to prioritize the translations of Crowdin files
+title: Jak upřednostnit překlady souborů na Crowdinu
 sidebar_position: 5
---- 
+---
 
-There are five major AdGuard projects on Crowdin — [AdGuard Applications](https://crowdin.com/project/adguard-applications), [AdGuard Websites](https://crowdin.com/project/adguard-websites), [AdGuard Ad Blocker Knowledge base](https://crowdin.com/project/adguard-knowledge-base), [AdGuard VPN Knowledge Base](https://crowdin.com/project/adguard-vpn-knowledge-base), and [AdGuard DNS Knowledge Base](https://crowdin.com/project/adguard-knowledge-bases).
+Na serveru Crowdin je pět hlavních projektů AdGuard — [AdGuard Applications](https://crowdin.com/project/adguard-applications), [AdGuard Websites](https://crowdin.com/project/adguard-websites), [AdGuard Ad Blocker Knowledge base](https://crowdin.com/project/adguard-knowledge-base), [AdGuard VPN Knowledge Base](https://crowdin.com/project/adguard-vpn-knowledge-base) a [AdGuard DNS Knowledge Base](https://crowdin.com/project/adguard-knowledge-bases).
 
-We do not have clear guidelines on which files or products of the *AdGuard Applications* project to start with. Just choose any product you like.
+Nemáme jasné pokyny, se kterými soubory nebo produkty projektu *AdGuard Applications* začít. Stačí si vybrat libovolný produkt.
 
-There are just a couple of things we want to mention:
+Je tu jen pár věcí, které bychom rádi zmínili:
 
-* You can see the app only in those languages for which all translations are completed in Crowdin;
-* We recommend translating the descriptions for app stores in the second place, because without the translation of products themselves, the descriptions won't be needed.
+* Aplikaci můžete zobrazit pouze v těch jazycích, pro které jsou v aplikaci Crowdin dokončeny všechny překlady;
+* Popisy pro obchody s aplikacemi doporučujeme překládat až na druhém místě, protože bez překladu samotných produktů nebudou popisy potřeba.
 
-The situation is different in the *AdGuard Websites* project. Languages can be added to the site even if a full set of translations is not available. However, this depends on which files have already been translated. That's why we recommend that you start with the most important files — they are listed below:
+V projektu *AdGuard Websites* je situace jiná. Jazyky lze na web přidat, i když není k dispozici úplná sada překladů. To však závisí i na tom, které soubory již byly přeloženy. Proto doporučujeme začít nejdůležitějšími soubory, které jsou uvedeny níže:
 
 [AdGuard Ad Blocker website](https://crowdin.com/project/adguard-websites/en#/adguard.com)
 
@@ -30,6 +30,6 @@ The situation is different in the *AdGuard Websites* project. Languages can be a
 * `critical.resx`
 * `auth.resx`
 
-> Adding new strings as well as updating existing ones in these files requires special attention from the project translators and proofreaders.
+Přidávání nových i aktualizace stávajících řetězců v těchto souborech vyžaduje zvláštní pozornost překladatelů a korektorů projektu.
 
-In addition to websites, there is a file for translating [transactional emails](https://crowdin.com/project/adguard-websites/de#/emails) in the AdGuard Websites project. Newly added strings in this file also have a high translation priority.
+Kromě webových stránek je v projektu AdGuard Websites k dispozici soubor pro překlad [transakčních e-mailů](https://crowdin.com/project/adguard-websites/de#/emails). Nově přidané řetězce v tomto souboru mají také vysokou prioritu překladu.

@@ -7,7 +7,7 @@ This page describes the features and details of AdGuard’s central management o
 
 ## 1. Download the MSI {#msi-download}
 
-Download the [AdGuard MSI](https://cdn.adtidy.org/public/Windows/AdGuard.msi).
+Download the [AdGuard MSI](https://cdn.adtidy.org/distr/windows/AdGuard.msi).
 
 ## 2. Configure the settings for your network {#settings-configuring}
 
@@ -27,10 +27,19 @@ Otherwise, you can run the MSI on the target machine directly (and silently) wit
 
 If you need to roll out an update, use this command: `Msiexec /q /i AdGuard.msi REINSTALL=ALL REINSTALLMODE=vomus`
 
-**Please note, that you must run these commands with admin privileges.**
+:::note
 
-> If you want to install AdGuard on a Windows 7 computer, make sure that it has .NET 4 Client Profile installed: https://www.microsoft.com/en-us/download/details.aspx?id=24872
-> **Important!** Automatic updates are disabled when you install AdGuard for Windows from MSI. If you want to allow updates for a user (which is not recommended because centralized updates will become impossible), set the value of the `AllowCheckUpdates` parameter for the `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` key to `YES` (case insensitive). In this case automatic updates will be allowed, any other value or no value for this parameter disables automatic updates.
+You must run these commands with admin privileges.
+
+:::
+
+If you want to install AdGuard on a Windows 7 computer, make sure that it has .NET 4 Client Profile installed: https://www.microsoft.com/en-us/download/details.aspx?id=24872
+
+:::info
+
+Automatic updates are disabled when you install AdGuard for Windows from MSI. If you want to allow updates for a user (which is not recommended because centralized updates will become impossible), set the value of the `AllowCheckUpdates` parameter for the `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` key to `YES` (case insensitive). In this case automatic updates will be allowed, any other value or no value for this parameter disables automatic updates.
+
+:::note
 
 ## 5. Test your installation {#installation-test}
 

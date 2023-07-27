@@ -3,13 +3,19 @@ title: Jak automatizovat AdGuard pro Android
 sidebar_position: 3
 ---
 
+:::info
+
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 Mnoho lidí si vybírá systém Android, protože si rádi přizpůsobují nastavení a chtějí mít své zařízení zcela pod kontrolou. A je zcela normální, že někteří uživatelé AdGuardu nejsou spokojeni s jeho výchozím chováním. Řekněme, že chcete, aby se ochrana při spuštění určité aplikace zastavila a po jejím zavření se znovu spustila. Toto je úkol pro aplikaci Tasker.
 
 ## Rozhraní AdGuardu
 
 Existuje mnoho aplikací Tasker, např. [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&noprocess), [AutomateIt](https://play.google.com/store/apps/details?id=AutomateIt.mainPackage&noprocess) atd. AdGuard poskytuje rozhraní, které těmto aplikacím umožňuje nastavit různá automatizační pravidla.
 
-![Automatizace AdGuardu *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/tasker/adgautomation.png)
+![Automatizace *mobile_border](https://cdn.adtidy.org/blog/new/mmwmfautomation.jpg)
 
 Díky tomuto rozhraní může každá aplikace odeslat speciální zprávu (tzv. "záměr"), která obsahuje název akce a případně další údaje. AdGuard se na tento záměr podívá a provede požadované akce.
 
@@ -41,7 +47,12 @@ Jste připraveni zašpinit si ruce? Zde jsou uvedeny akce, kterým bude AdGuard 
 `dns_server` přepíná mezi DNS servery, je třeba uvést další údaje:
 
  `server:adguard dns` přepne na server AdGuard DNS;
-> Poznámka: úplný seznam podporovaných názvů poskytovatelů naleznete v nastavení AdGuard DNS v části "Vlastní nastavení DNS"
+
+:::note
+
+The full list of supported provider names can be found inside AdGuard DNS settings under the "Custom DNS settings".
+
+:::
 
  `server:custom` přepne na dříve přidaný server s názvem `custom`;
 
@@ -100,11 +111,14 @@ Nebo můžete parametry odebrání nakonfigurovat ručně:
 
  `[trust]` použít pouze na typ serveru ** HTTPS_CONNECT** a zahrnout možnost **Důvěřovat všem certifikátům**. Je nutné nastavit hodnotu **true nebo false**.
 
- > **Příklad**:
+:::note Příklad
 
 `nastavení podle názvu`: server:MůjServer
 
  `ruční nastavení`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
+
+
+:::
 
 -----
 
@@ -114,7 +128,13 @@ Dodatek: `password:*******`
 
 Název balíčku: `com.adguard.android`
 
-Třída: `com.adguard.android.receivers.AutomationReceiver`
+Třída: `com.adguard.android.receiver.AutomationReceiver`
+
+:::note
+
+Před verzí 4.0 se třída jmenovala `com.adguard.android.receivers.AutomationReceiver`, ale pak jsme její název změnili na `com.adguard.android.receiver.AutomationReceiver`. Pokud jste tuto funkci používali, věnujte jí pozornost a používejte nový název.
+
+:::
 
 ### Provedení bez oznámení
 

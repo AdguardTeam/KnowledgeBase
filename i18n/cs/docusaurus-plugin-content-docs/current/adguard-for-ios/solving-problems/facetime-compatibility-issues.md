@@ -1,21 +1,27 @@
 ---
-title: How to avoid compatibility problem with FaceTime
+title: Jak se vyhnout problémům s kompatibilitou s FaceTime
 sidebar_position: 3
 ---
 
-It turned out that Full-Tunnel mode might interfere not only with compatibility with other VPN applications, but also with FaceTime.
+:::info
 
-Some users have encountered the problem that FaceTime does not work on the device when the AdGuard app for iOS is in Full-Tunnel mode.
+Tento článek popisuje AdGuard pro iOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 
-It is likely but not guaranteed that FaceTime will work when AdGuard is in Full-Tunnel mode without VPN icon because it is also incompatible with other VPN apps and unstable.
+:::
 
-**If you want to use FaceTime and make sure that video/audio calls don't stop working, use Split-Tunnel mode.**
+Ukázalo se, že režim Úplný tunel může narušovat nejen kompatibilitu s jinými aplikacemi VPN, ale také s FaceTime.
 
-![Tunnel mode screen *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ru/iOS/tunnel-mode.PNG?!)
+Někteří uživatelé se setkali s problémem, že FaceTime na zařízení nefunguje, když je aplikace AdGuard pro iOS v režimu Úplného tunelu.
 
-To enable it, follow the instructions:
-1. Go to AdGuard for iOS *Settings* > *General settings*.
-2. Enable *Advanced mode* and go to the *Advanced settings* section that appears right after.
-3. Open *Tunnel mode* and select *Split-Tunnel*.
+Je pravděpodobné, ale není zaručeno, že FaceTime bude fungovat, když je AdGuard v režimu Úplný tunel bez ikony VPN, protože je také nekompatibilní s jinými aplikacemi VPN a nestabilní.
 
-Hotovo! Now there should be no problems with FaceTime compatibility.
+**Pokud chcete používat FaceTime a zajistit, aby video/audio hovory nepřestaly fungovat, použijte režim Dělený tunel.**
+
+![Obrazovka režimu Tunel *mobil](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ru/iOS/tunnel-mode.PNG?!)
+
+Chcete-li ji povolit, postupujte podle těchto pokynů:
+1. Přejděte do AdGuardu pro iOS *Nastavení* → *Obecná nastavení*.
+2. Povolte *Pokročilý režim* a přejděte do části *Pokročilá nastavení*, která se zobrazí hned poté.
+3. Otevřete *Režim Tunel* a vyberte *Dělený tunel*.
+
+Hotovo! Nyní by s kompatibilitou FaceTime neměly být žádné problémy.

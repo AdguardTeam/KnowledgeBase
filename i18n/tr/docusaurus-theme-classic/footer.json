@@ -8,11 +8,11 @@
     "description": "The title of the footer links column with title=products in the footer"
   },
   "link.title.support": {
-    "message": "Support",
+    "message": "Destek",
     "description": "The title of the footer links column with title=support in the footer"
   },
   "link.title.license": {
-    "message": "License",
+    "message": "Lisans",
     "description": "The title of the footer links column with title=license in the footer"
   },
   "link.item.label.official_website": {
@@ -76,11 +76,11 @@
     "description": "The label of footer link with label=userscripts linking to /general/userscripts"
   },
   "link.item.label.purchase_license": {
-    "message": "Purchase License",
+    "message": "Lisans Satın Al",
     "description": "The label of footer link with label=purchase_license linking to https://adguard.com/license.html"
   },
   "link.item.label.recover_license": {
-    "message": "Recover License",
+    "message": "Lisansı Kurtar",
     "description": "The label of footer link with label=recover_license linking to /general/license/what-is"
   },
   "link.item.label.terms_of_sale": {
@@ -96,7 +96,7 @@
     "description": "The label of footer link with label=contribute_to_adguard linking to https://adguard.com/contribute.html"
   },
   "copyright": {
-    "message": "© AdGuard, 2009–2022",
+    "message": "© AdGuard, 2009–2023",
     "description": "The footer copyright"
   }
 }

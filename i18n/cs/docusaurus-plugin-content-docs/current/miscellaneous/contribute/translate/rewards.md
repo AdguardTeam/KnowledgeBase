@@ -1,27 +1,27 @@
 ---
-title: Reward system
+title: Systém odměn
 sidebar_position: 6
 ---
 
-As any honest and well-performed effort should be rewarded, active translators on Crowdin can request a free AdGuard license key and a VPN subscription.
+Protože každá poctivá a dobře odvedená práce by měla být odměněna, mohou aktivní překladatelé na Crowdinu požádat o bezplatný licenční klíč AdGuardu a předplatné VPN.
 
-To request a **one-year AdGuard license key** or a **one-year AdGuard VPN subscription**, you must translate at least **500** and **2,500** words respectively.
+Chcete-li požádat o **roční licenci AdGuardu** nebo **roční předplatné AdGuard VPN**, musíte přeložit alespoň **500**, respektive **2500** slov.
 
-To check your translation progress, open a project you have worked on, click the *Reports* tab and select *My Contribution*. You can sum up the number of words translated in different projects to get a license.
+Chcete-li zkontrolovat průběh překladů, otevřete projekt, na kterém jste pracovali, klikněte na kartu *Reports* a vyberte možnost *My Contribution*. Pro získání licence můžete sečíst počet přeložených slov v různých projektech.
 
-**Here’s how our reward system works**
-
-```
-For the first one-year AdGuard license, you need to translate 500 words.
-For the second license, you need 1,000 words, i.e. 1,500 words altogether.
-All subsequent licenses require an additional 1,500 words per license.
-
-For the first one-year AdGuard VPN subscription, you need to translate 2,500 words.
-All subsequent subscriptions or renewals require an additional 2,500 words per subscription.
+**Zde je popsáno, jak funguje náš systém odměn**
 
 ```
-Just send us a request to [translate@adguard.com](mailto:translate@adguard.com) and you’ll get the license as a token of our gratitude.
+Pro první roční licenci AdGuardu je třeba přeložit 500 slov.
+Pro druhou licenci potřebujete 1000 slov, tj. dohromady 1500 slov.
+Všechny další licence vyžadují dalších 1500 slov na licenci.
 
-Besides, the most active translators may receive proofreader status in the future, should they express such an intention, and that promises even more good stuff.
+Pro první roční předplatné AdGuard VPN je třeba přeložit 2500 slov.
+Všechny další předplatné nebo obnovení vyžadují dalších 2500 slov na předplatné.
 
-Every year we present gifts with the AdGuard logo to our active proofreaders. If you want to become one of them, please write to [translate@adguard.com](mailto:translate@adguard.com).
+```
+Stačí nám zaslat žádost na adresu [translate@adguard.com](mailto:translate@adguard.com) a licenci dostanete jako projev našeho vděku.
+
+Kromě toho mohou nejaktivnější překladatelé v budoucnu získat status korektora, pokud o to projeví zájem, a to slibuje ještě více dobrých věcí.
+
+Každoročně předáváme našim aktivním korektorům dárky s logem AdGuardu. Pokud se chcete stát jedním z nich, napište nám na adresu [translate@adguard.com](mailto:translate@adguard.com).

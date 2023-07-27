@@ -1,36 +1,36 @@
 ---
-title: What can be done in the AdGuard Account
+title: Co lze dělat v AdGuard účtu
 sidebar_position: 2
 ---
 
-In your account, you can manage your licenses, devices bound to them, personal data, email and password, view purchases and contact support.
+Ve svém účtu můžete spravovat své licence, k nim vázaná zařízení, osobní údaje, e-mail a heslo, prohlížet nákupy a kontaktovat podporu.
 
-## Manage account settings
+## Správa nastavení účtu
 
-In the *Settings* section of your AdGuard account, you can update or reset your password, change your email address, enable [two-factor authentication](../2fa), view the data stored about you by AdGuard and choose the language of your personal account and notifications.
+V části *Nastavení* svého AdGuard účtu můžete aktualizovat nebo resetovat své heslo, změnit svou e-mailovou adresu, povolit [dvoufaktorové ověření](../2fa), zobrazit data, která o vás AdGuard ukládá, a zvolit jazyk svého osobního účtu a oznámení.
 
-In this section, you can also manage your email preferences:
-* receive transactional emails,
-* receive AdGuard’s monthly newsletters,
-* receive emails about AdGuard special offers and promotions,
-* send read receipts to AdGuard when you open emails.
+V této části můžete také spravovat e-mailové preference:
+* přijímat transakční e-maily,
+* dostávat měsíční zpravodaje AdGuardu,
+* zasílání e-mailů o speciálních nabídkách a propagačních akcích AdGuardu,
+* odesílání potvrzení o přečtení do AdGuardu při otevření e-mailů.
 
-## Manage licenses
+## Správa licencí
 
-In the *Licenses* section, you can manage your licenses and the devices bound to them.
+V sekci *Licence* můžete spravovat své licence a zařízení s nimi spojená.
 
-[AdGuard licenses](../../license/what-is) can be:
-* bound and unbound,
-* extended,
-* upgraded,
-* canceled. You can also update your payment details.
+[Licence AdGuardu](../../license/what-is) mohou být:
+* svázaná a nesvázaná,
+* rozšířená,
+* upgradovaná,
+* zrušená. Můžete zde také aktualizovat své platební údaje.
 
-The devices bound to your AdGuard Ad Blocker licenses can be unbound or renamed. You can unbind unused devices by clicking the cross icon next to them.
+Zařízení svázaná s licencemi blokátoru reklam AdGuard lze zrušit nebo přejmenovat. Nepoužívaná zařízení můžete odpojit kliknutím na ikonu křížku vedle nich.
 
-## View purchases
+## Zobrazení nákupů
 
-The Purchase history section displays all the licenses that you have ever purchased using the email account you registered your AdGuard account with. You will also find there information about the date of purchase, order number, payment method and cost of the purchase.
+V části Historie nákupů se zobrazují všechny licence, které jste kdy zakoupili pomocí e-mailového účtu, pod kterým jste účet AdGuard zaregistrovali. Najdete zde také informace o datu nákupu, čísle objednávky, způsobu platby a ceně nákupu.
 
-## Contact support
+## Kontaktování podpory
 
-The Support tab contains useful links to help you solve problems or find answers to your questions about AdGuard products. They are divided into six sections: FAQ, Send a bug repot/feature request, Report incorrect blocking, Contact support, Knowledge base and Discuss.
+Karta Podpora obsahuje užitečné odkazy, které vám pomohou vyřešit problémy nebo najít odpovědi na vaše otázky týkající se AdGuard produktů. Jsou rozděleny do šesti oddílů: FAQ, Odeslat požadavek na chybu/funkci, Nahlásit nesprávné blokování, Kontaktovat podporu, Databáze znalostí a Diskutovat.

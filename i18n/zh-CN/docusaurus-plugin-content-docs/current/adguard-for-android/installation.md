@@ -3,88 +3,74 @@ title: Installation
 sidebar_position: 2
 ---
 
+:::info
+
+This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## 系统需求
 
-**操作系统版本**： 安卓 5.0 以上。
+**OS version:** Android 7.0 or higher
 
-**RAM**： 至少 2 GB。
+**RAM**： 至少 2 GB
 
-**可用磁盘空间**： 120MB。
+**Free disk space:** 500 MB
 
 ## Installation
+
 虽然大部分用于安卓系统的应用程序可以通过谷歌商店分发，但是 AdGuard 不在里面。谷歌禁止通过谷歌商店分发网络层的广告拦截程序，即，在其他应用程序里屏蔽商业广告的应用程序。 [在我们的博客上](https://blog.adguard.com/en/google-removes-adguard-android-app-google-play/)可以了解更多关于谷歌限制性政策的相关信息。
 
 由于上述原因，您只可以手动安装适用于安卓的 AdGuard。 为了在移动设备上使用该应用程序，您需要执行以下操作。
 
-首先，请在操作系统设置里允许安装未知来源的应用程序。 以执行此操作请您：
+1. **Download the app on your device**. Here are a few ways you can do this:
 
-* 对于 Android 8+：开始下载 [AdGuard apk 文件](https://adguard.com/en/adguard-android/overview.html)（请参阅下一步），系统会提示您允许访问权限。 在打开的窗口点击**设置**并启用**允许此来源**。 然后继续安装。
-* 安卓 6 和 7：打开**设置**，在**系统和设备**部分选择**其他设置**。 启用**未知来源**并在系统警示窗口上点击**OK**。
+    * head over to [our website](https://adguard.com/adguard-android/overview.html) and tap the *Download* button
+    * start the browser and type in the following URL: [https://adguard.com/apk](https://adguard.com/apk)
+    * or scan this QR code
 
-![安装未知来源的应用程序 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/unknown_sources1.png)
+    ![QR code *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_qr.png)
 
-* 安卓 5：打开**设置**，在**个人**设置部分选择**安全**。 启用**未知来源**并在系统警示窗口上点击**OK**。
+2. **Allow installing apps from unknown sources**. Once the file download is complete, tap *Open* in the notification.
 
-![安装未知来源的应用程序 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/unknown_sources2.png)
+![Installing apps from unknown sources *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_1.png)
 
-现在您就可以在您的设备上安装应用程序了。 打开浏览器并输入以下的网址：[https://adguard.com/apk](https://adguard.com/apk)，或扫 QR 码：
+A popup will appear. Tap *Settings*, navigate to *Install unknown apps*, and grant permission for the browser you've used to download the file.
 
-![二维码 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/qr.png)
+![Installing apps from unknown sources *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_3.png)
 
-您将会看到确认下载文件的提示。 点击**下载**。
+This guide is for Android 8+. If you have an older OS version, before downloading the apk file, go to *Settings* and select *Additional settings* in *System & Device*. Enable *Unknown sources* and tap *OK* in the system warning window.
 
-![保存文件 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/save_the_file.png)
+3. **Install the app**. Once the browser has obtained the necessary permissions, the system will ask you if you want to install the AdGuard app. Tap *Install*.
 
-下载完成后，系统将会确认您是否想安装 AdGuard 应用程序。 点击**安装**。
+![Installing apps from unknown sources *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_4.png)
 
-![安装 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/1.png)
+You will then be asked to read AdGuard's *License Agreement* and *Privacy Policy*. 您还可以参与应用程序的改进过程。 To do this, check the boxes for *Send crash reports automatically* and *Send technical and interaction data*. Then tap *Continue*.
 
-点击安装后，您将会看到阅读**许可协议**和 AdGuard **隐私政策**的页面。 您还可以参与应用程序的改进过程。 如您想要参加，请您勾选*自动发送崩溃报告*和*发送技术和交互数据*。 点击**接受**即可。
+![隐私政策 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_3.png)
 
-![隐私政策 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/2.png)
+4. **Create a local VPN**. In order to filter all traffic directly on your device and not route it through a remote server, AdGuard needs to establish a VPN connection.
 
-现在您要选择**快速**或**完全设置**方式。
+![Create a local VPN *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_2.png)
 
-![设置 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/3.png)
+5. **Enable HTTPS filtering**. It is not a mandatory option, however, we advice to turn it on for the best ad-blocking quality.
 
-点击完全设置方式后，屏幕上将会出现几个显示设置选项，以让您按自己需求设置 AdGuard。 首先，我们会问您是否想要启用搜索广告的过滤器：
+If your device is running Android 7–9, you'll be prompted to install a root certificate and configure HTTPS filtering after the local VPN setup.
 
-![搜索广告 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/5.png)
+![Enable HTTPS filtering on Android 7-9 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/cert_1.jpg)
 
-下一个是，是否要拦截社交媒体小工具（比如，“赞”按钮）：
+After you tap *Install now*, a prompt will appear asking you to authenticate the certificate installation with a password or fingerprint.
 
-![社交小部件 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/6.png)
+![Enable HTTPS filtering on Android 7-9. Step 2 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/cert_2.jpg)
 
-下一个是恼人元素，包括 Cookie 通知、支持窗口等等：
+If you have Android 10+ on your device, then after creating a local VPN, you will see the main app screen with a snack bar at the bottom: tap *Enable* and follow the instructions on the next screen.
 
-![烦恼 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/7.png)
-
-您不必在这个屏幕上选择任何设置：只要注意到关于如何观看没有广告的 YouTube 视频的信息：
-
-![YouTube *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/youtube.jpg)
-
-下一个是隐私设置。 请选择您所想使用的保护水平：
-
-![隐私设置 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/8.png)
-
-在下一个屏幕上，选择您是否想收到关于危险网站的通知：
-
-![安全 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/9.png)
-
-下一步很重要，就是关于 HTTPS 过滤。 我们推荐您启用该选项，以让广告拦截更强：
-
-![HTTPS 过滤 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/10.png)
-
-最后一步是启用本地 VPN：
-
-![本地 VPN *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/11.png)
-
-现在 **AdGuard** 安装成功完成。
+![Enable HTTPS filtering *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_5.png)
 
 ## 卸载/重新安装 AdGuard
 
-如您想要在您的设备上重新安装 AdGuard，请您先删除应用程序，前往**设置** → **已安装的应用程序**（安卓 6）、**应用程序**（安卓 5 和 7）或**应用程序和通知**（安卓 8+）。 在已安装的应用程序列表内找到 **AdGuard** 并点击**卸载**。
+If you need to reinstall AdGuard on your mobile device, first delete it by opening **Settings** and choosing **Apps** (Android 7) or **Apps & notifications** (Android 8+). 在已安装的应用程序列表内找到 **AdGuard** 并点击**卸载**。
 
-![重新安装 AdGuard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/12.png)
+![重新安装 AdGuard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_4.png)
 
 为了重新安装应用程序，请执行上述“安装过程”部分讲述的步骤。

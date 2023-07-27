@@ -74,5 +74,9 @@
   "sidebar.tutorialSidebar.category.Technical support": {
     "message": "Supporto tecnico",
     "description": "The label for category Technical support in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.AdGuard Browser Extension": {
+    "message": "AdGuard Browser Extension",
+    "description": "The label for category AdGuard Browser Extension in sidebar tutorialSidebar"
   }
 }

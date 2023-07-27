@@ -1,77 +1,86 @@
 ---
-title: Guidelines and recommendations
+title: ガイドラインと推奨事項
 sidebar_position: 3
 ---
 
-There are several things we'd like you to know before you start translating. It will not only save your time and effort, but also ensure that we are on the same page in terms of the meaning of phrases being translated.
+翻訳を始める前に、ぜひ知っておいていただきたいことがいくつかあります。 あなたの手間を省くだけでなく、翻訳するフレーズの意味の理解が一致していることを確認するためのものです。
 
-Once you open [our page on Crowdin](https://crowdin.com/profile/adguard/), choose any project you need and select your language.
+[AdGuardのCrowdinページ](https://crowdin.com/profile/adguard/)を開きましたら、必要なプロジェクトを選び、言語を選択してください。
 
-![Language *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/language.png)
+![言語 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/language.png)
 
-You'll also be able to switch between languages even after opening certain product folders.
+特定の製品フォルダーを開いた後でも、言語の切り替えは可能です。
 
 ![Language1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/language1.png)
 
-Choose any of available product folders and select a file — now you can start translating.
+製品フォルダを選択し、ファイルを選択すると、翻訳を開始することができます。
 
 ![Files *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/files.png)
-> Please note: you can also change the Crowdin interface language by clicking the *Settings* icon in the top right corner of the page. In the opened window scroll down to the *UI language* tab. Open it, choose a language and click **Change**.
+
+:::note
+
+You can also change the Crowdin interface language by clicking the *Settings* icon in the top right corner of the page. 開いたウィンドウで、 *UI language*タブにスクロールダウンしてください。 それを開き、言語を選択し、**Change**をクリックしてください。
+
+:::
 
 ![Language1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/settings_en.png)
 
-**The following guidelines will help you through the process.**
+**以下のガイドラインを参考にしてください。**
 
-1. You can filter translations by clicking this button and selecting any offered option.
+1. このボタンをクリックすると、あらゆるオプションを使って翻訳したいものをフィルタリングすることができます。
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/filter.png)
 
-2. Easily move between the files of the project.
+2. プロジェクトのファイル間を簡単に移動することができます。
 
 ![crowdin *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/filter_files.png)
 
-3. Pay attention to the glossary terms highlighted with a dotted line in a source phrase. Usually, they are special words (like brand names) that should not be translated.
+3. ソースフレーズの中で、点線で強調されている用語に注目してください。 通常、翻訳してはいけない特殊な言葉（ブランド名など）がそのように強調されています。
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/terms.png)
 
-You can suggest your translation for translatable terms in the [AdGuard Glossary](https://crowdin.com/project/adguard-glossary) project.
+[AdGuard Glossary](https://crowdin.com/project/adguard-glossary)プロジェクトでは、翻訳可能な用語に対して翻訳を提案することができます。
 
-4. In Crowdin, strings can have notes that make it easier to understand and translate phrases. Look for them in the "Context" field of the source string.
+4. Crowdinでは、文字列に、フレーズの理解や翻訳を容易にするメモが付いていたりします。 ソース文字列の「Context」欄で確認してください。
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/context-note.png)
 
-5. Pay attention to screenshots that often go alongside source phrases in the "Context" field as well. They help to understand the context and convey the exact meaning.
+5. 「Context」欄には、ソースフレーズと一緒によく出てくるスクリーンショットにも注目してください。 文脈を理解し、翻訳でより正確な意味を伝えるのに役立ちます。
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/screenshot.png)
 
-Please note that you can request context by clicking the "REQUEST" button.
+:::tip
+
+You can request context by clicking the "REQUEST" button.
+
+:::
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/request.png)
 
-6. In addition to suggesting new translations, you can also leave comments on strings. Use comments to let us know about mistakes in the existing translations, make notes, or ask questions. If you see a comment left on your translation — try to respond to it.
+6. 新しい翻訳を提案するだけでなく、文字列に対してコメントを書くことも可能です。 コメント欄には、誤訳の指摘、メモ、質問などを書き込んでください。 もし、あなたの翻訳に対してコメントが残されているのを見かけたら、できれば返信するようにしてください。
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/comments.png)
 
-There's also a **Discussions** tab on the main project page that conveniently allows you to see all the comments for the specific language in this project.
+また、メインプロジェクトのページには、 **Discussions** タブがあり、このプロジェクトの特定の言語に対するすべてのコメントを見ることができる便利なものです。
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/discussions.png)
 
-7. Crowdin provides a very useful and convenient tool called _Translation Memory_. With its help, you can find the previously made translations of the same words and phrases and reuse them in your translations.
+7. Crowdinは、 _Translation Memory_という非常に便利で有用なツールを提供しています。 同じ単語やフレーズに対して過去に作られた翻訳を探し出し、翻訳に再利用することができます。
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/tm.png)
 
-8. Once you join a project by clicking the "Join" button, you will see the **Tasks** tab on the project page, where the tasks for specific project files get created. _Please pay attention to them: they usually have a higher priority._
+8. 「Join」ボタンをクリックしてプロジェクトに参加すると、プロジェクトページに **Tasks** タブが表示されます。このタブには、特定のプロジェクトファイルに対するタスクが作成されます。 _これらのタスクは通常、優先順位が高いので、注目してください。_
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/tasks.png)
 
-9. Sometimes you can find phrases with plural forms. Please be especially attentive when translating such phrases. You can read how to translate plural forms [here](../plural-forms).
+9. 複数形のあるフレーズを見つける場合があります。 このようなフレーズを翻訳する場合は、特に注意してください。 複数形の訳し方については[こちら](../plural-forms)にて詳しくご確認いただけます。
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/plurals.png)
 
-Using proper plural forms is extremely important:  please ask us in the comments if anything is unclear.
+複数形を正しく扱うことは非常に重要です。不明な点があれば、ぜひコメントでお尋ねください。
 
-10. **Please do not write directly to the project managers and proofreaders listed in the Project info.**
+10. **Project infoに記載されているプロジェクトマネージャーや校正者に直接メッセージを送ることはご遠慮ください。**
 
-If you have questions about translations, you can always ask our proofreaders or admins through comments.
+翻訳に関するご質問は、いつでもコメントを通じて校正者や管理者にお尋ねください。
 
-Also, you can send an email to [translate@adguard.com](mailto:translate@adguard.com) or ask a question in the [Telegram chat](https://t.me/joinchat/UVYTLcHbr8JmOGIy). The Admins will answer you as soon as possible.
+また、翻訳に関するご質問は、 [translate@adguard.com](mailto:translate@adguard.com) にメールを送るか、もしくは [Telegramチャット](https://t.me/joinchat/UVYTLcHbr8JmOGIy) で尋ねることが可能です。 担当者ができるだけ早く回答いたします。

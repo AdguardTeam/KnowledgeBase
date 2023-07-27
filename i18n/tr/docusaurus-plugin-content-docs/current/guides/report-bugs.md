@@ -77,7 +77,7 @@ You can find reactions in the upper right corner or at the bottom of an issue.
 
 3. Fill out the form. If possible, attach screenshots or a screen recording.
 
-### AdGuard Browser Extension
+### AdGuard Tarayıcı Uzantısı
 
 1. Check out the [Browser Extension repo](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/) to make sure the issue hasn’t been reported yet.
 

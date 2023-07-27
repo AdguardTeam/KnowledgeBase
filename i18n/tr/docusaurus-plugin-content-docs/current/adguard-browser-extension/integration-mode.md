@@ -1,15 +1,15 @@
 ---
-title: Integration mode (legacy)
+title: Entegrasyon modu (eski)
 sidebar_position: 3
 ---
 
-## What is the integration mode?
+## Entegrasyon modu nedir?
 
-In older versions of AdGuard Browser extension, if you had it installed along with one of the AdGuard desktop apps (AdGuard for Windows or AdGuard for Mac), the extension took upon itself the functions of AdGuard Assistant — a tool that helped manage the filtering right from the web page. At the same time, the ad blocking itself was completely under of the desktop app's control, the extension and its settings played no role in that.
+In older versions of AdGuard Browser Extension, if you had it installed along with one of the AdGuard desktop apps (AdGuard for Windows or AdGuard for Mac), the extension took upon itself the functions of AdGuard Assistant — a tool that helped manage the filtering right from the web page. At the same time, the ad blocking itself was completely under of the desktop app's control, the extension and its settings played no role in that.
 
 The problem was, in some cases the app and the extension would hamper each other’s work. Some websites would stop being protected by the desktop program and were backed up only by the extension which has less possibilities. Thus, starting with AdGuard Browser Extension v3.5, the integration mode was removed. Instead, the new AdGuard Browser Assistant was implemented.
 
-## AdGuard Browser Assistant
+## AdGuard Tarayıcı Asistanı
 
 ![AdGuard Browser Assistant *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/ad_blocker_browser_extension_assistant.png)
 

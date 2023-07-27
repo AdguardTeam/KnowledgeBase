@@ -1,18 +1,22 @@
 ---
-title: How to register
+title: Jak se zaregistrovat
 sidebar_position: 1
 ---
 
-## What an AdGuard account is
+## Co je AdGuard účet
 
-[AdGuard account](https://my.adguard.com/) is a user account that stores information about your AdGuard licenses and subscriptions, active devices, your purchase history, preferred language, and other preferences. Many AdGuard products offer an option to activate them by entering the credentials for your AdGuard account, provided it contains a valid license.
+[AdGuard účet](https://my.adguard.com/) je uživatelský účet, který ukládá informace o vašich licencích a předplatných AdGuardu, aktivních zařízeních, historii nákupů, preferovaném jazyce a dalších preferencích. Mnoho AdGuard produktů nabízí možnost aktivace zadáním pověření k AdGuard účtu, pokud obsahuje platnou licenci.
 
-## How to create an account
+## Jak vytvořit účet
 
-To create an account, go to [AdGuard's official website](https://adguard.com/welcome.html) and press the *My Account* button on the top right corner of the screen. Enter your email address and create a password — your account will be registered.
+Chcete-li vytvořit účet, přejděte na [oficiální web AdGuardu](https://adguard.com/welcome.html) a stiskněte tlačítko *Můj účet* v pravém horním rohu obrazovky. Zadejte svou e-mailovou adresu a vytvořte si heslo — váš účet bude zaregistrován.
 
-> If you enter your email address while purchasing a license or receive a license accociated with your email address as a gift, an account will be created automatically. To set a password, you can follow a link from a transactional or gift letter. You can also register with the above method.
+:::tip
 
-An account can also be created directly in an AdGuard app. Press the *Log in* or *Activate* button (it can be found in the *License* section or on a separate screen), enter your email and create a password.
+Pokud při nákupu licence zadáte svou e-mailovou adresu nebo licenci spojenou s vaší e-mailovou adresou obdržíte jako dárek, účet se vytvoří automaticky. Heslo můžete nastavit pomocí odkazu z transakčního nebo dárkového dopisu. Registrovat se můžete také výše uvedeným způsobem.
 
-After the account is created, activate it by following the link in the activation email.
+:::
+
+Účet lze vytvořit také přímo v aplikaci AdGuard. Stiskněte tlačítko *Přihlásit se* nebo *Aktivovat* (najdete ho v sekci *Licence*, nebo na samostatné obrazovce), zadejte svůj e-mail a vytvořte heslo.
+
+Po vytvoření účtu jej aktivujte pomocí odkazu v aktivačním e-mailu.

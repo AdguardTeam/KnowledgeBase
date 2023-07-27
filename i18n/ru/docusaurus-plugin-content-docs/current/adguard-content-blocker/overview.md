@@ -3,6 +3,12 @@ title: Обзор функций
 sidebar_position: 1
 ---
 
+:::info
+
+Эта статья посвящена AdGuard Content Blocker, который защищает только браузеры Samsung и Яндекс Браузер. Чтобы защитить всё устройство, [скачайте приложение AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 У AdGuard есть два приложения для Android: [AdGuard для Android](https://adguard.com/adguard-android/overview.html) и [Блокировщик контента AdGuard](https://adguard.com/adguard-content-blocker/overview.html). У AdGuard для Android больше функций: он блокирует рекламу, трекеры и раздражители не только в браузерах, но и в приложениях. AdGuard для Android блокирует рекламу как с помощью фильтров, так и на доменном уровне, и поддерживает пользовательские правила. Блокировщик контента AdGuard ограничен в функциональности.
 
 Из-за политики Google полноценные блокировщики рекламы нельзя добавить в Google Play. Google Play [запретил добавлять](https://adguard.com/en/blog/google-removes-adguard-android-app-google-play.html) «приложения, которые блокируют или мешают другим приложениям отображать рекламу». Поэтому AdGuard для Android можно скачать только с официального сайта AdGuard.

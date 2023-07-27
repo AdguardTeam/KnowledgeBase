@@ -1,125 +1,125 @@
 ---
-title: AdGuard filter policy
+title: Zásady AdGuard filtrů
 sidebar_position: 6
 ---
 
-When discussing AdGuard ad filters, one topic often comes up – whether AdGuard should block this or that ad. By setting the rules, we stick to specific criteria that are very similar to [EasyList Policy](https://easylist.to/pages/policy.html), which we find correct and appropriate. However, we have made some changes to it.
+When discussing AdGuard ad filters, one topic often comes up — whether AdGuard should block this or that ad. Nastavením pravidel se držíme konkrétních kritérií, která jsou velmi podobná zásadám [EasyList](https://easylist.to/pages/policy.html), které považujeme za správné a vhodné. Provedli jsme v nich však několik změn.
 
 ![To filter or not to filter](https://cdn.adtidy.org/public/Adguard/Common/page_filtering.png)
 
-## Terminology
+## Terminologie
 
-Throughout this text, we use the terms **first party** and **third party**.
+V celém textu používáme termíny **vlastní** a **třetí strana**.
 
-A "first party" is a website that a user visits intentionally and knowingly, plus a set of resources on the web operated by the same organization. In practice, we consider resources to belong to the same party if they are part of the same registrable domain: a public suffix plus one additional label. Example: `site.example`, `www.site.example`, and `s.u.b.site.example` belong to the same party because `site.example` is their common registrable domain.
+"Vlastní" je webová stránka, kterou uživatel navštíví úmyslně a vědomě, plus soubor zdrojů na webu provozovaných stejnou organizací. V praxi považujeme zdroje za patřící stejné straně, pokud jsou součástí stejné registrovatelné domény: veřejná přípona plus jedna další značka. Příklad: `site.example`, `www.site.example`, a `s.u.b.site.example` patří stejné straně, protože `site.example` je jejich společnou registrovatelnou doménou.
 
-A "third party" is any party that does not fall within the definition of the first party above. Interactions with other parties are considered third-party, even if the user is transiently informed in context (for example, in the form of a redirect). Merely hovering over, muting, pausing, or closing a given piece of content does not constitute an intention to interact.
+"Třetí strana" je jakákoli strana, která nespadá do výše uvedené definice "Vlastní". Interakce s jinými stranami se považují za interakce s třetími stranami, i když je uživatel informován přechodně v kontextu (např. formou přesměrování). Pouhé najetí na daný obsah, jeho ztlumení, pozastavení nebo zavření neznamená záměr interakce.
 
-## Common criteria
+## Společná kritéria
 
-These equally apply to rules in all filters.
+Platí stejně pro pravidla ve všech filtrech.
 
-- Rules that often cause problems with the work of some websites will be deleted.
-- Website-specific rules will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
+- Pravidla, která často způsobují problémy při práci s některými webovými stránkami, budou odstraněna.
+- Pravidla pro konkrétní webové stránky budou přidána pouze v případě, že má webová stránka dostatečnou návštěvnost. Návštěvnost se určuje podle otevřených statistik (pokud jsou k dispozici), nebo jinými způsoby, např. podle počtu sledujících na sociálních sítích. Návštěvnost webových stránek je považována za dostatečnou, pokud mají 100 tisíc návštěv za měsíc. Přidání pravidla pro webové stránky, které nejsou tak populární, zvážíme, ale konečné rozhodnutí je na správci seznamu filtrů.
 
-## Ad filters
+## Filtry reklam
 
-This part describes the AdGuard Base filter, the Mobile Ads filter, and the following language-specific filters: Russian, German, Dutch, Spanish/Portuguese, Japanese, Turkish, Chinese, and French.
+Tato část popisuje základní filtr AdGuardu, filtr mobilních reklam a následující jazykově specifické filtry: Ruský, německý, nizozemský, španělský/portugalský, japonský, turecký, čínský a francouzský jazyk.
 
-**What shall these filters block?**
+**Co mají tyto filtry blokovat?**
 
-- These filters will block ads wherever possible.
-- Ads should be blocked regardless of their reasons and goals.
-- We will block ads caused by malicious apps or extensions that inject ads. Please note that we do it only on the condition that you specify how to install such an app or extension.
+- Tyto filtry blokují reklamy, kdekoli je to možné.
+- Reklamy by měly být blokovány bez ohledu na jejich důvody a cíle.
+- Zablokujeme reklamy zobrazené škodlivými aplikacemi nebo rozšířeními, které vkládají reklamy. Vezměte prosím na vědomí, že to děláme pouze pod podmínkou, že zadáte, jak takovou aplikaci nebo rozšíření nainstalovat.
 
-**Limitations and Exceptions**
+**Omezení a výjimky**
 
-If a rule is subject to the list of limitations described below, then it won’t be added to the main filters.
+Pokud se na pravidlo vztahuje seznam omezení popsaný níže, nebude přidáno do hlavních filtrů.
 
-- Websites’ own ads should not be removed on purpose. On the other hand, they should not be unblocked if it may cause third-party ads to reappear.
-- Website-specific rules will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
-- Anti-adblock scripts will be blocked only if they limit or affect the functionality of a website.
-- Anti-adblock scripts will not be blocked in cases when it is prohibited by law.
-- Rules that often cause problems with the work of some websites will be deleted.
+- Vlastní reklamy webových stránek by neměly být odstraňovány záměrně. Na druhou stranu by neměly být odblokovány, pokud by to mohlo způsobit, že se znovu objeví reklamy třetích stran.
+- Pravidla pro konkrétní webové stránky budou přidána pouze v případě, že má webová stránka dostatečnou návštěvnost. Návštěvnost se určuje podle otevřených statistik (pokud jsou k dispozici), nebo jinými způsoby, např. podle počtu sledujících na sociálních sítích. Návštěvnost webových stránek je považována za dostatečnou, pokud mají 100 tisíc návštěv za měsíc. Přidání pravidla pro webové stránky, které nejsou tak populární, zvážíme, ale konečné rozhodnutí je na správci seznamu filtrů.
+- Skripty proti blokování budou blokovány pouze v případě, že omezují nebo ovlivňují funkčnost webových stránek.
+- Skripty proti blokování nebudou blokovány v případech, kdy je to zakázáno zákonem.
+- Pravidla, která často způsobují problémy při práci s některými webovými stránkami, budou odstraněna.
 
-## Tracking Protection filter
+## Filtr ochrany sledování
 
-**What will be blocked with this filter?**
+**Co bude tímto filtrem blokováno?**
 
-- This filter will block all trackers that collect user personal data.
+- Tento filtr zablokuje všechny slídiče, které shromažďují osobní údaje uživatele.
 
-We define **tracking** as collecting data regarding an individual’s identity or activity across one or more websites. Even if such data is considered to be personally unidentifiable, it’s still tracking.
+**Sledování** definujeme jako shromažďování údajů o identitě nebo aktivitě jednotlivce na jedné nebo více webových stránkách. I když jsou tyto údaje považovány za neidentifikovatelné, stále se jedná o sledování.
 
-**Tracker** is an online script that has tracking as its only purpose, or as one of its purposes.
+**Slídič** je online skript, jehož jediným účelem nebo jedním z účelů je sledování.
 
-**Limitations and Exceptions**
+**Omezení a výjimky**
 
-If a rule is subject to the list of limitations described below, then it won’t be added to this filter.
+Pokud se na pravidlo vztahuje seznam omezení popsaný níže, nebude přidáno do tohoto filtru.
 
-- Rules that cause problems with website functionality will be removed.
-- Website-specific rules will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
+- Pravidla, která způsobují problémy s funkčností webových stránek, budou odstraněna.
+- Pravidla pro konkrétní webové stránky budou přidána pouze v případě, že má webová stránka dostatečnou návštěvnost. Návštěvnost se určuje podle otevřených statistik (pokud jsou k dispozici), nebo jinými způsoby, např. podle počtu sledujících na sociálních sítích. Návštěvnost webových stránek je považována za dostatečnou, pokud mají 100 tisíc návštěv za měsíc. Přidání pravidla pro webové stránky, které nejsou tak populární, zvážíme, ale konečné rozhodnutí je na správci seznamu filtrů.
 
-## AdGuard URL Tracking filter
+## AdGuard filtr sledování URL
 
-**What will be blocked with this filter?**
+**Co bude tímto filtrem blokováno?**
 
-- This filter will strip all tracking parameters from URLs.
+- Tento filtr odstraní z URL adres všechny sledovací parametry.
 
-We define **tracking** as collecting data regarding an individual’s identity or activity across one or more websites. Even if such data is considered to be personally unidentifiable, it’s still tracking.
+**Sledování** definujeme jako shromažďování údajů o identitě nebo aktivitě jednotlivce na jedné nebo více webových stránkách. I když jsou tyto údaje považovány za neidentifikovatelné, stále se jedná o sledování.
 
-**Limitations and Exceptions**
+**Omezení a výjimky**
 
-If a rule is subject to the list of limitations described below, then it won’t be added to this filter.
+Pokud se na pravidlo vztahuje seznam omezení popsaný níže, nebude přidáno do tohoto filtru.
 
-- Rules that would reduce user security levels will be removed.
-- Rules that cause problems with website functionality will be removed.
-- Website-specific rules will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
+- Pravidla, která by snižovala úroveň zabezpečení uživatelů, budou odstraněna.
+- Pravidla, která způsobují problémy s funkčností webových stránek, budou odstraněna.
+- Pravidla pro konkrétní webové stránky budou přidána pouze v případě, že má webová stránka dostatečnou návštěvnost. Návštěvnost se určuje podle otevřených statistik (pokud jsou k dispozici), nebo jinými způsoby, např. podle počtu sledujících na sociálních sítích. Návštěvnost webových stránek je považována za dostatečnou, pokud mají 100 tisíc návštěv za měsíc. Přidání pravidla pro webové stránky, které nejsou tak populární, zvážíme, ale konečné rozhodnutí je na správci seznamu filtrů.
 
-## Social Media filter
+## Filtr sociálních médií
 
-**What will be blocked with this filter?**
+**Co bude tímto filtrem blokováno?**
 
-- This filter will block social media widgets (on third-party websites) such as "Like" and "Share" buttons, recommendation widgets, and more.
+- Tento filtr zablokuje widgety sociálních médií (na webových stránkách třetích stran), jako jsou tlačítka "Like" a "Share", widgety doporučení a další.
 
-**Limitations and Exceptions**
+**Omezení a výjimky**
 
-If a rule is subject to the list of limitations described below, then it won’t be added to this filter.
+Pokud se na pravidlo vztahuje seznam omezení popsaný níže, nebude přidáno do tohoto filtru.
 
-- Rules that block widgets that are a part of a website’s functionality, such as "Comments," "Embedded Post," "Surveys," or widgets that require authorization via social networks.
-- Rules that block links to a website’s communities in social networks.
-- Rules that cause problems with website functionality will be removed.
-- Website-specific rules will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
+- Pravidla, která blokují widgety, které jsou součástí funkcí webových stránek, například "Komentáře", "Vložený příspěvek", "Průzkumy" nebo widgety, které vyžadují autorizaci prostřednictvím sociálních sítí.
+- Pravidla, která blokují odkazy na komunity webových stránek v sociálních sítích.
+- Pravidla, která způsobují problémy s funkčností webových stránek, budou odstraněna.
+- Pravidla pro konkrétní webové stránky budou přidána pouze v případě, že má webová stránka dostatečnou návštěvnost. Návštěvnost se určuje podle otevřených statistik (pokud jsou k dispozici), nebo jinými způsoby, např. podle počtu sledujících na sociálních sítích. Návštěvnost webových stránek je považována za dostatečnou, pokud mají 100 tisíc návštěv za měsíc. Přidání pravidla pro webové stránky, které nejsou tak populární, zvážíme, ale konečné rozhodnutí je na správci seznamu filtrů.
 
-## Annoyances filter
+## Filtr obtěžování
 
-**What will be blocked with this filter?**
+**Co bude tímto filtrem blokováno?**
 
-- This filter will block obstructions on the page. These elements are not ads, but they obstruct the view and make it difficult to see the actual content of the website. Such elements include cookie notices, third-party widgets, in-page pop-ups, email subscription forms, banners with special offers, and aggressively placed social media widgets.
+- Tento filtr blokuje překážky na stránce. Tyto prvky nejsou reklamou, ale brání ve výhledu a ztěžují zobrazení skutečného obsahu webové stránky. Mezi tyto prvky patří oznámení o souborech cookies, widgety třetích stran, vyskakovací okna na stránce, formuláře pro přihlášení k odběru e-mailů, bannery se speciálními nabídkami a agresivně umístěné widgety sociálních médií.
 
-**Limitations and Exceptions**
+**Omezení a výjimky**
 
-If a rule is subject to the list of limitations described below, then it won’t be added to this filter.
+Pokud se na pravidlo vztahuje seznam omezení popsaný níže, nebude přidáno do tohoto filtru.
 
-- Rules that block elements that are essential for the website functioning (e.g. authorization forms) will not be blocked even if they satisfy other requirements.
-- Rules that cause problems with website functionality will be removed.
-- Website-specific rules will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
+- Pravidla, která blokují prvky, jež jsou nezbytné pro fungování webových stránek (např. autorizační formuláře), nebudou blokována, i když splňují jiné požadavky.
+- Pravidla, která způsobují problémy s funkčností webových stránek, budou odstraněna.
+- Pravidla pro konkrétní webové stránky budou přidána pouze v případě, že má webová stránka dostatečnou návštěvnost. Návštěvnost se určuje podle otevřených statistik (pokud jsou k dispozici), nebo jinými způsoby, např. podle počtu sledujících na sociálních sítích. Návštěvnost webových stránek je považována za dostatečnou, pokud mají 100 tisíc návštěv za měsíc. Přidání pravidla pro webové stránky, které nejsou tak populární, zvážíme, ale konečné rozhodnutí je na správci seznamu filtrů.
 
-## Filter unblocking search ads and self-promotion
+## Filtr pro odblokování užitečných reklam
 
-Unlike other filters, this one **unblocks** certain ads. Read more about it in the [article on search ads and self-promotion](../search-ads).
+Na rozdíl od jiných filtrů tento filtr **odblokuje** určitou reklamu. Více se o tom dočtete v článku o [reklamách ve vyhledávání a vlastní propagaci](../search-ads).
 
-**What will be unblocked with this filter?**
+**Co bude tímto filtrem odblokováno?**
 
-- Search ads (ads that you see among the results when using an online search engine).
-- Website self-promotion (when an ad on a website is promoting this very website or other websites/social media/etc closely related to it).
+- Reklamy ve vyhledávání (reklamy, které se zobrazují mezi výsledky při použití vyhledávače).
+- Vlastní propagace webové stránky (když reklama na webové stránce propaguje právě tuto webovou stránku nebo jiné webové stránky/sociální média apod., které s ní úzce souvisejí).
 
-**Limitations and Exceptions**
+**Omezení a výjimky**
 
-- Rules that cause problems with website functionality will be removed.
-- Website-specific rules will be added only if the website has sufficient traffic. Traffic is determined by open statistics (if available) or by other means, such as social media following. A website’s traffic is considered sufficient when it has 30 thousand monthly visitors.
+- Pravidla, která způsobují problémy s funkčností webových stránek, budou odstraněna.
+- Pravidla pro konkrétní webové stránky budou přidána pouze v případě, že má webová stránka dostatečnou návštěvnost. Návštěvnost se určuje podle otevřených statistik (pokud jsou k dispozici), nebo jinými způsoby, např. podle počtu sledujících na sociálních sítích. Návštěvnost webových stránek je považována za dostatečnou, pokud mají 100 tisíc návštěv za měsíc. Přidání pravidla pro webové stránky, které nejsou tak populární, zvážíme, ale konečné rozhodnutí je na správci seznamu filtrů.
 
-## Quality requirements for filtering rules
+## Požadavky na kvalitu pravidel filtrování
 
-- The rules should be as efficient as possible in terms of performance.
-- Exception rules should be as specific as possible in order to avoid unnecessary unblocking.
-- CSS and JS injection rules should be used as rarely as possible and only when it is impossible to block ads without them.
+- Pravidla by měla být co nejefektivnější z hlediska výkonu.
+- Pravidla pro výjimky by měla být co nejkonkrétnější, aby se zabránilo zbytečnému odblokování.
+- Pravidla pro vkládání CSS a JS by se měla používat co nejméně a pouze v případech, kdy bez nich nelze reklamy blokovat.

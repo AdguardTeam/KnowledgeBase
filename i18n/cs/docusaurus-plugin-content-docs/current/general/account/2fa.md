@@ -1,32 +1,36 @@
 ---
-title: Two-factor authentication
+title: Dvou-faktorové ověření
 sidebar_position: 3
 ---
 
-Two-factor authentication (or 2FA) is an authentication method that requires an additional piece of evidence from the user to log in, on top of the usual login and password pair. For this purpose, websites usually use a code sent by SMS or via a special app.
+Dvou-faktorové ověřování (nebo 2FA) je metoda ověřování, která od uživatele vyžaduje další důkaz pro přihlášení, kromě obvyklé dvojice přihlašovacího jména a hesla. To se provádí z bezpečnostních důvodů. Webové stránky obvykle nabízejí takové metody 2FA, jako je kód zaslaný prostřednictvím SMS nebo speciální autentizační aplikace.
 
-We see adding a 2FA option as a benefit. We also understand that enforcing it may irritate some users. That's why we made it optional for your personal account on adguard.com – by default, 2FA is disabled when you register a new account. You can enable it manually in the settings. As for the currently available authentication methods, we use the tried and tested one: an authenticator app for Android or iOS. You can use almost any such app, and there are plenty of them.
+Přidání možnosti 2FA považujeme za přínos. Chápeme také, že jeho vynucování může některé uživatele dráždit. Proto jsme pro váš osobní účet na adguard.com vytvořili volitelnou funkci — ve výchozím nastavení je 2FA při registraci nového účtu vypnuto. Můžete to povolit ručně v nastavení. Pokud jde o aktuálně dostupné metody ověřování, používáme osvědčenou metodu: autentizační aplikaci pro Android nebo iOS. Můžete použít téměř jakoukoli takovou aplikaci, a je jich spousta.
 
-We recommend setting up two-factor authentication for your AdGuard account. It won't take you long, but it will help protect your license keys and, most importantly, any personal information associated with the account.
+Pro váš AdGuard účet doporučujeme nastavit dvoufaktorové ověřování. Nezabere vám to mnoho času, ale pomůže to ochránit vaše licenční klíče, předplatné a především všechny osobní údaje s účtem spojené.
 
 
-## How to set it up
+## Jak to nastavit
 
-1) Log into your [AdGuard account](https://auth.adguard.com/login.html), go to the Settings tab, and then scroll down to the Password and security section. 2) Click the "Change" button in the first line after the headline:
+1) Přihlaste se ke svému [AdGuard účtu](https://auth.adguard.com/login.html) a přejděte na kartu Nastavení:
 
-![The Change button](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa.png)
+![AdGuard Account settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/account_settings.png)
 
-3) Scan the verification code with the help of any authenticator app on your phone:
+2) Přejděte dolů do části *Heslo a 2FA* a klikněte na **Zapnout**:
 
-![The verification code *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/2Fa2en.png)
+![The Change button *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_new.png)
 
-*Important*
-* Save the second-factor backup code somewhere, it will be necessary to recover your account in case your mobile phone gets lost or stolen;
+3) Podle pokynů na obrazovce nainstalujte autentizační aplikaci a naskenujte QR kód:
 
-If everything is done right, you will see this when you log into your account the next time:
+![The verification code](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_enable.png)
 
-![The result *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/2Fa3en.png)
+***Důležité***
+* Uložte si někam záložní kód pro ověření, který bude potřebný pro obnovení účtu v případě ztráty nebo krádeže mobilního telefonu;
 
-Use your mobile authenticator app to read the code and enter it. You should be logged in now!
+Pokud je vše provedeno správně, zobrazí se tato informace při příštím přihlášení k účtu:
 
-***NOTE***: If you get an authentication error, check the clock on your phone. Adjust it if needed, as an unsynchronized clock may be the cause of the error.
+![The result *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_success.png)
+
+K přečtení kódu a jeho zadání použijte mobilní ověřovací aplikaci. Nyní byste měli být přihlášeni!
+
+***POZNÁMKA***: pokud se zobrazí chyba ověření, zkontrolujte hodiny na telefonu. V případě potřeby nastavte čas, protože příčinou chyby mohou být nesynchronizované hodiny.

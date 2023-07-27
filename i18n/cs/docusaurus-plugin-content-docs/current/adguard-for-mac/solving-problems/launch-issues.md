@@ -1,37 +1,43 @@
 ---
-title: Launch issues on macOS
+title: Problémy se spouštěním v macOS
 sidebar_position: 6
 ---
 
-Occasionally macOS may cause the corruption of AdGuard's Network Extension module, making it unable to use the app. In this case you should follow one of these instructions, based on your OS version.
+:::info
 
-## Launch issues on macOS 11 and higher
+Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
 
-If you have problems launching AdGuard for Mac on Big Sur and Monterey operating systems, please use this instruction:
+:::
 
-1. Reboot Mac and enter [recovery mode](https://support.apple.com/en-us/HT201255).
-2. Disable SIP (Launch **Terminal** from the **Utilities** menu and type `csrutil disable`).
-3. Reboot Mac.
-4. Close the AdGuard app, open **Terminal** and type `systemextensionsctl reset`.
-5. Reboot Mac and enter recovery mode.
-6. Enable SIP (Launch **Terminal** from the **Utilities** menu and type `csrutil enable`).
-7. Launch the AdGuard app and enable protection.
+Občas může systém macOS způsobit poškození modulu síťového rozšíření AdGuardu, což znemožní používání aplikace. V takovém případě byste měli postupovat podle jednoho z těchto pokynů v závislosti na verzi operačního systému.
 
-## Launch issues on macOS 10
+## Problémy se spouštěním v macOS 11 a vyšším
 
-If you have problems launching AdGuard for Mac on Sierra, Mojave and Catalina operating systems, please use this instruction:
+Pokud máte problémy se spouštěním AdGuardu for Mac v operačních systémech Big Sur a Monterey, použijte tento návod:
 
-1. Open **Terminal** and enter command `ls -@lOae /private/var/db/KernelExtensionManagement`.
-2. Check that the `restricted` flag is not present (like on the screenshot).
+1. Restartujte Mac a vstupte do režimu obnovení [](https://support.apple.com/en-us/HT201255).
+2. Vypněte SIP (spusťte **Terminal** z nabídky **Nástroje** a zadejte `csrutil disable`).
+3. Restartujte Mac.
+4. Zavřete aplikaci AdGuard, otevřete **Terminal** a zadejte `systemextensionsctl reset`.
+5. Restartujte Mac a přejděte do režimu obnovení.
+6. Zapněte SIP (spusťte **Terminal** z nabídky <strong x-iyd="1">Nástroje</strong> a zadejte `csrutil enable`).
+7. Spusťte aplikaci AdGuard a zapněte ochranu.
 
-![Command example *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/restricted-flag.jpg)
+## Problémy se spouštěním v macOS 10
 
-3. Reboot your Mac in recovery mode.
-4. Open **Utilities** → **Terminal**.
-5. Enter `csrutil disable`.
-6. Enter administrator password.
-7. Reboot your Mac.
-8. Open **Terminal** and enter the following command: `sudo chflags restricted /private/var/db/KernelExtensionManagement`.
-9. Reboot your Mac in recovery mode.
-10. Open **Utilities** → **Terminal** → Enter `csrutil enable` → Enter administrator password → Reboot your Mac.
-11. Enable AdGuard protection.
+Pokud máte problémy se spouštěním AdGuardu for Mac v operačních systémech Sierra, Mojave a Catalina, použijte tento návod:
+
+1. Otevřete **Terminal** a zadejte příkaz `ls -@lOae /private/var/db/KernelExtensionManagement`.
+2. Zkontrolujte, zda není zobrazen příznak `restricted` (jako na obrázku).
+
+![Příklad příkazu *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/restricted-flag.jpg)
+
+3. Restartujte Mac v režimu obnovení.
+4. Otevřete **Nástroje** → **Terminal**.
+5. Napište `csrutil disable`.
+6. Zadejte heslo správce.
+7. Restartujte Mac.
+8. Otevřete **Terminal** a zadejte následující příkaz: `sudo chflags restricted /private/var/db/KernelExtensionManagement`.
+9. Restartujte Mac v režimu obnovení.
+10. Otevřete **Nástroje** → **Terminal** → napište `csrutil enable` → zadejte heslo správce → restartujte Mac.
+11. Zapněte AdGuard ochranu.

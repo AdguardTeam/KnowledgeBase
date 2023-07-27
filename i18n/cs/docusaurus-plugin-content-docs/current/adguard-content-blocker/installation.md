@@ -3,13 +3,23 @@ title: Instalace
 sidebar_position: 2
 ---
 
+:::info
+
+Tento článek je o Blokátoru obsahu AdGuard, který chrání pouze váš internetový prohlížeč Samsung nebo prohlížeč Yandex. Chcete-li chránit celé zařízení, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
 Aplikace je k dispozici v pěti obchodech: [Google Play](https://play.google.com/store/apps/details?id=com.adguard.android.contentblocker), [Samsung Galaxy store](https://galaxystore.samsung.com/detail/com.adguard.android.contentblocker), [Huawei AppGallery](https://appgallery.huawei.com/#/app/C100440597), [Aptoide](https://adguard-content-blocker.en.aptoide.com/), a [F-Droid](https://f-droid.org/en/packages/com.adguard.android.contentblocker/).
 
 Chcete-li nainstalovat Blokátor obsahu AdGuard z Google Play, vyhledejte _Blokátor obsahu AdGuard_ a klepněte na _Instalovat_.
 
 ![Blokátor obsahu v Google Play *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_play_market.jpg)
 
-> Poznámka: Blokátor obsahu AdGuard funguje ve dvou prohlížečích.: [Yandex Browser](https://browser.yandex.com/) a [Samsung Internet Browser](https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser).
+:::note
+
+Blokátor obsahu AdGuard funguje ve dvou prohlížečích.: [Yandex Browser](https://browser.yandex.com/) a [Samsung Internet Browser](https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser).
+
+:::
 
 Po dokončení instalace klepněte na _Otevřít_ a aplikaci spusťte.
 

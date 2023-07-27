@@ -1,9 +1,9 @@
 ---
-title: How to install AdGuard
+title: AdGuardのインストール方法
 sidebar_position: 8
 ---
 
-Depending on which AdGuard app or browser extension you want to install, follow one of these links to find the relevant article:
+インストールしたいAdGuardアプリ・ブラウザ拡張機能に応じて、以下のリンクから関連記事をご覧ください。
 
 [AdGuard for Android](/adguard-for-android/installation)
 
@@ -13,8 +13,8 @@ Depending on which AdGuard app or browser extension you want to install, follow 
 
 [AdGuard for Mac](/adguard-for-mac/installation)
 
-[AdGuard ブラウザ拡張機能](/adguard-browser-extension/installation)
+[AdGuard Browser Extension](/adguard-browser-extension/installation)
 
 [AdGuard for Safari](/adguard-for-safari/installation)
 
-[AdGuardコンテンツブロッカー](/adguard-content-blocker/installation)
+[AdGuard コンテンツブロッカー](/adguard-content-blocker/installation)

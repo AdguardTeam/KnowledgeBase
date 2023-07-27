@@ -3,6 +3,12 @@ title: How to collect AdGuard installation logs
 sidebar_position: 4
 ---
 
+:::info
+
+This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 If any problems occur during the installation of AdGuard, the support team might ask you to collect and send them AdGuard installation logs. In this case you need to:
 
 1. Select *Run* command in Start menu or press *Win + R* on the keyboard.

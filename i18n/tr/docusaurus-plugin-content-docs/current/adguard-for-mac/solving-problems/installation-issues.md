@@ -3,6 +3,12 @@ title: Installation problems solving
 sidebar_position: 5
 ---
 
+:::info
+
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Mac için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+
+:::
+
 ## "Installation failed" error in macOS Catalina
 
 During the installation you can face an error like this:
@@ -11,6 +17,12 @@ During the installation you can face an error like this:
 
 Follow this instruction to solve the problem:
 
-1) Restart your Mac 2) As your Mac restarts, press and hold down the *Command(⌘) + R* keys immediately upon hearing the startup chime. Hold the keys until the Apple logo appears to get the computer into Recovery mode. 3) From the top bar select *Utilities* > *Terminal*, and execute this command: `csrutil disable` 4) Restart the Mac and log into Administrator's profile 5) Open the Finder window and select from the top bar *Go* > *Go to Folder* and type `~/private/` 6) Create a folder named *tmp* and type in your password 7) Launch AdGuard installation
+1. Mac'inizi yeniden başlatın
+2. As your Mac restarts, press and hold down the *Command(⌘) + R* keys immediately upon hearing the startup chime. Hold the keys until the Apple logo appears to get the computer into Recovery mode.
+3. From the top bar select *Utilities* → *Terminal*, and execute this command: `csrutil disable`
+4. Restart the Mac and log into Administrator's profile
+5. Open the Finder window and select from the top bar *Go* → *Go to Folder* and type `~/private/`
+6. *tmp* adında bir klasör oluşturun ve parolanızı yazın
+7. AdGuard kurulumunu başlatın
 
 As the installation is completed, restart your Mac in Recovery mode using the instruction above and execute `csrutil enable` command in Terminal to enable system protection.

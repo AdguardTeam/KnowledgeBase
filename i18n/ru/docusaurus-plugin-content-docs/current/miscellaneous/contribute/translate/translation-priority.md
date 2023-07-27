@@ -1,7 +1,7 @@
 ---
 title: 'AdGuard в Crowdin: что переводить в первую очередь'
 sidebar_position: 5
---- 
+---
 
 В Crowdin есть пять основных проектов AdGuard — [AdGuard Applications](https://crowdin.com/project/adguard-applications), [AdGuard Websites](https://crowdin.com/project/adguard-websites), [AdGuard Ad Blocker Knowledge Base](https://crowdin.com/project/adguard-knowledge-base), [AdGuard VPN Knowledge Base](https://crowdin.com/project/adguard-vpn-knowledge-base), и [AdGuard DNS Knowledge Base](https://crowdin.com/project/adguard-knowledge-bases).
 
@@ -30,6 +30,6 @@ sidebar_position: 5
 * `critical.resx`
 * `auth.resx`
 
-> Добавление новых строк, а также обновление существующих в этих файлах требует особого внимания со стороны переводчиков и пруфридеров проекта.
+Добавление новых строк, а также обновление существующих в этих файлах требует особого внимания со стороны переводчиков и пруфридеров проекта.
 
-Помимо веб-сайтов в проекте AdGuard Websites есть файл для перевода [транзакционных писем](https://crowdin.com/project/adguard-websites/de#/emails). Вновь добавленные строки в этом файле также имеют высокий приоритет.
+Помимо сайтов в проекте AdGuard Websites есть файл для перевода [транзакционных писем](https://crowdin.com/project/adguard-websites/de#/emails). Вновь добавленные строки в этом файле также имеют высокий приоритет.

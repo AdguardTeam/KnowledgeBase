@@ -1,42 +1,28 @@
 ---
-title: Jak shromažďovat kompletní záznamy
+title: How to collect debug logs
 sidebar_position: 2
 ---
 
-Někdy k pochopení problému a jeho odstranění potřebujeme shromáždit **soubory záznamů** nebo **záznamy**. Tyto soubory v podstatě obsahují informace o programu a jeho práci.
+:::info
+
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+
+:::
+
+In this article, we'll guide you through the process of collecting debug logs, an essential troubleshooting step for solving complex issues that may potentially arise. Debug logs provide detailed insight into the inner workings of AdGuard for Android. If the AdGuard support team askes you to provide debug logs, simply follow these instructions.
 
 ### Shromažďování záznamů ladění
 
 Chcete-li shromáždit záznam **ladění** a odeslat nám jej, musíte provést následující kroky:
 
-1. Otevřete AdGuard a přejděte do "Nastavení".
+1. Go to *Settings* → *General* → *Advanced*.
+2. Tap *Logging level* and set it to *Debug*.
+3. Reproduce the problem and try to remember the exact time it occurred.
+4. Wait a while, then return to *Settings* and choose the *Support* tab. Tap *Report a bug* and complete the required fields. Don't forget to check the *Send app logs and system info* checkbox. Finally tap *Send*.
 
-2. Vyberte "Pokročilé".
+If you're interested in following the resolution of your issue and engaging in a dialogue with the developers, we recommend that you take the following steps after completing the first three:
 
-3. Nastavte "Úroveň záznamu" na "Zaznamenat vše". Je žádoucí předem zavřít všechny aplikace na pozadí, které se problému netýkají.
+4. Wait a while, then return to the *Advanced* screen and export logs via *Export logs and system info*. Then report a bug on GitHub by following these [instructions](/guides/report-bugs.md).
+5. After creating an issue on GitHub, send the log file to devteam@adguard.com. Include the time of the bug and attach a link to your issue or its number (it appears as #number next to the title). Alternatively, you can upload the log file to Google Drive and send it to devteam@adguard.com. Add the file link to your GitHub issue
 
-4. Zopakujte problém a nastavte úroveň záznamu zpět na "Výchozí". Všimněte si přesného času, kdy se to stalo.
 
-5. Odešlete nám zprávu z programu výběrem "Podpora" > "Odeslat zpětnou vazbu" v menu. Nezapomeňte zaškrtnout políčko "Odeslat podrobné systémové informace" pod textovým polem a do zprávy vložit časové razítko z kroku 4.
-
-Alternativně můžete záznamy (spolu se souborem *state.txt*, který obsahuje systémové informace a informace o nastavení AdGuardu) exportovat přímo do místního souboru. Může se to hodit, například pokud vedete konverzaci s vývojářem na [GitHubu](https://github.com/AdguardTeam/AdguardForAndroid/issues), [fóru](https://forum.adguard.com/) nebo na jiné platformě.
-
-Chcete-li exportovat záznamy a systémové informace do souboru, přejděte do nabídky "Nastavení" - "Pokročilé" a klepněte na položku "Exportovat záznamy a systémové informace". Vyberte cílovou složku a klepněte na "Uložit".
-
-### Shromažďování záznamů webových požadavků
-
-Chcete-li shromáždit záznam **webových požadavků** a odeslat nám jej, musíte provést následující kroky:
-
-1. Otevřete AdGuard a přejděte do "Nastavení".
-
-2. Vyberte "Pokročilé".
-
-3. Nastavte "Úroveň záznamu" na "Zaznamenat webové požadavky". Je žádoucí předem zavřít všechny aplikace na pozadí, které se problému netýkají.
-
-4. Zopakujte problém a nastavte úroveň záznamu zpět na "Výchozí". Všimněte si přesného času, kdy se to stalo.
-
-5. Odešlete nám zprávu z programu výběrem "Podpora" > "Odeslat zpětnou vazbu" v menu. Nezapomeňte zaškrtnout políčko "Odeslat podrobné systémové informace" pod textovým polem a do zprávy vložit časové razítko z kroku 4.
-
-Alternativně můžete záznamy (spolu se souborem *state.txt*, který obsahuje systémové informace a informace o nastavení AdGuardu) exportovat přímo do místního souboru. Může se to hodit, například pokud vedete konverzaci s vývojářem na [GitHubu](https://github.com/AdguardTeam/AdguardForAndroid/issues), [fóru](https://forum.adguard.com/) nebo na jiné platformě.
-
-Chcete-li exportovat záznamy a systémové informace do souboru, přejděte do nabídky "Nastavení" - "Pokročilé" a klepněte na položku "Exportovat záznamy a systémové informace". Vyberte cílovou složku a klepněte na "Uložit".

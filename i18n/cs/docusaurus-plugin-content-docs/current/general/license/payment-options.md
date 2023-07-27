@@ -1,20 +1,22 @@
 ---
-title: How to purchase
+title: Jak zakoupit licenci/upgradovat
 sidebar_position: 2
 ---
 
-## How to purchase a license
+## Jak zakoupit licenci{#purchase}
 
-AdGuard license can be bought on [adguard.com](https://adguard.com/license.html). AdGuard Pro for iOS can be bought on the App Store. Ad Blocker licenses are also sold by various distributors.
+Licenci AdGuardu lze zakoupit na stránce [adguard.com](https://adguard.com/license.html). AdGuard Pro pro iOS lze zakoupit v App Store. Licence blokátoru reklam AdGuard prodávají také různí distributoři.
 
-> The availability of AdGuard products in app stores and by distributors depends on your country.
+Dostupnost AdGuard produktů v obchodech s aplikacemi a u distributorů závisí na vaší zemi.
 
-## How to get a refund
+## Jak upgradovat licenci{#upgrade}
 
-In accordance with our [Terms of Sale](https://adguard.com/terms-of-sale.html), you can get a 100% refund on the AdGuard license key you purchased at https://adguard.com. To get a refund, contact our support team at **support@adguard.com** and indicate the payment option you've used.
+Chcete-li více využívat produkty AdGuardu, můžete svou licenci upgradovat a získat následující výhody.
 
-A refund may be denied if you:
-* purchased the license more than 60 days ago,
-* purchaded the license by a distributor,
-* purchased the license on the App Store,
-* applied for a partial refund for license key upgrade or prolongation.
+1. Chcete-li rozšířit funkčnost svých produktů AdGuard, můžete **upgradovat svou bezplatnou nebo zkušební licenci na plnou verzi**.
+2. Chcete-li rozšířit počet zařízení, můžete **upgradovat Osobní licenci na licenci Rodinnou**.
+3. Můžete také **upgradovat své [předplatné](../what-is) na doživotní licenci**.
+
+Svou licenci můžete aktualizovat tak, že:
+  * zakoupíte další licenci na [oficiálních stránkách AdGuardu](https://adguard.com),
+  * kliknete na *Upgradovat na doživotní* a/nebo *Navýšit limit zařízení* ve svém AdGuard účtu: ![Upgrade *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)

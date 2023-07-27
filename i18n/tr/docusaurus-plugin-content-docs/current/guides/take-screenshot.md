@@ -1,5 +1,5 @@
 ---
-title: How to take a screesnhot
+title: How to take a screenshot
 sidebar_position: 5
 ---
 
@@ -18,7 +18,7 @@ Generally, you should use the following button combination for Android:
 
 Your Android device will capture the entire screen and save it as a photo. So, you can find the screenshot in a *Screenshots* folder in your Gallery.
 
-But, as it has been already said, there can be differences depending on a particular device. Let’s look at other possible combinations:
+But, as it has been already said, there can be differences depending on a particular device. Diğer olası kombinasyonlara bakalım:
 
 + **Hold down at once *Home* and *Power* for 1–2 seconds;**
 + **Hold down at once the *Back* and the *Home* buttons**

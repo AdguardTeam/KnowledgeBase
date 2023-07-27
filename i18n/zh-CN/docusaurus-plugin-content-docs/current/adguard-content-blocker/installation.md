@@ -3,15 +3,25 @@ title: 安装
 sidebar_position: 2
 ---
 
+:::info
+
+This article is about AdGuard Content Blocker, which only safeguards your Samsung Internet browser or Yandex Browser. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+
+:::
+
 该应用程序可在五个商店购买：[Google Play](https://play.google.com/store/apps/details?id=com.adguard.android.contentblocker)、[三星 Galaxy 商店](https://galaxystore.samsung.com/detail/com.adguard.android.contentblocker)、[华为商店](https://appgallery.huawei.com/#/app/C100440597)、[Aptoide](https://adguard-content-blocker.en.aptoide.com/) 和 [F-Droid](https://f-droid.org/en/packages/com.adguard.android.contentblocker/)。
 
 要从 Google Play 安装 AdGuard 内容拦截程序，请搜索 _AdGuard 内容拦截程序_并点击「_安装_」。
 
 ![Google Play 上的内容拦截器 *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_play_market.jpg)
 
-> 注意：AdGuard 内容拦截程序可在两种浏览器中使用： [Yandex 浏览器](https://browser.yandex.com/)和[三星浏览器](https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser)。
+:::note
 
-安装完成后，点击「_打开_」运行应用程序。
+AdGuard Content Blocker works in two browsers: [Yandex Browser](https://browser.yandex.com/) and [Samsung Internet Browser](https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser).
+
+:::
+
+After the installation is completed, tap _Open_ to run the app.
 
 ![安装内容拦截器 *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_play_market_installed.jpg)
 

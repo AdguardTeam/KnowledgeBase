@@ -1,20 +1,20 @@
 ---
-title: Contribute to AdGuard filters
+title: AdGuardフィルタに貢献する
 sidebar_position: 4
 ---
 
-### Filtering rules {#filtering-rules}
+### フィルタリングルール {#filtering-rules}
 
-As you probably know, AdGuard uses filtering rules to block ads, and these rules are combined into thematic [blocking filters](/general/ad-filtering/adguard-filters), like AdGuard Base filter, Mobile ads filter, etc. [Read more about how ad blocking works](/general/ad-filtering/how-ad-blocking-works).
+ご存知かと思いますが、AdGuard はフィルタリング・ルールというものを使用して広告をブロックします。これらのルールは、AdGuardベースフィルタ、モバイル広告フィルタなど、カテゴリ別の[ブロックフィルタ](/general/ad-filtering/adguard-filters)に分けられています。広告ブロックの仕組みについて[詳しくはこちらの記事](/general/ad-filtering/how-ad-blocking-works)をご覧ください。
 
-Websites constantly change the way they embed ads, and we add new rules to our filters to keep them effective. Filter engineers are working on creating new rules, but we always welcome the help and support of volunteers.
+ウェブサイトは常に広告の埋め込み方を変えており、変化に対応した新しいルールを常にフィルタに追加することで、広告ブロックの効果を維持しています。 フィルターエンジニアチームが新しいルールの作成に取り組んでいますが、有志の方々のご協力やご支援もいつでも大歓迎です。
 
-### How to start {#how-to-start}
+### 始め方 {#how-to-start}
 
-However, working with blocking filters requires specific skills. If you have them and know how to create rules, then head straight to our [AdGuard Filters repository](https://github.com/AdguardTeam/AdguardFilters) on GitHub. There you will find a lot of open issues, each one referencing a problem with some website problem — a missed ad, a false positive, etc. Choose any and suggest your own rules in comments. AdGuard filter engineers will review your suggestions, and if they find them appropriate, your rules will be added to AdGuard filters.
+ブロックフィルターを扱うには、ある程度のスキルと知識が必要です。 もし、スキルをお持ちで、ルールの作り方をご存知でしたら、[GitHubの「AdGuard Filters」リポジトリ](https://github.com/AdguardTeam/AdguardFilters) に直接アクセスしてください。 そこには、広告の見逃しや誤検出など、それぞれのウェブサイトでの問題に対する多くのopen issueがあります。 好きなissueを選んで、コメントで独自のルールを提案してください。 AdGuardフィルターエンジニアがご提案を確認し、適切と判断した場合、ご指摘のルールはAdGuardのフィルターに追加されます。
 
-If you are not yet familiar with our filtering rules syntax, or maybe need a refresher, you'll find the basics about the syntax [in our Knowledge base](/general/ad-filtering/create-own-filters). More advanced guides can be found on the internet, and if you have any questions about the syntax, visit our [forum](https://forum.adguard.com/).
+フィルタリングルールの構文にまだ慣れていない方、または復習が必要な方は、[こち](/general/ad-filtering/create-own-filters)で構文の基本をご確認いただけます。 より高度なガイドはインターネット上で見つけることができます。構文についてご質問がある場合は、[AdGuardフォーラム](https://forum.adguard.com/)を参照してください。
 
-### Rewards {#rewards}
+### 報酬 {#rewards}
 
-If you have suggested several filtering rules and some of them were approved, then it's time for you to get a reward. Send us a message at [st@adguard.com](mailto:st@adguard.com) with your GitHub account name, and you'll get a free AdGuard license key. As for the exact number of rules you need to get approved to become eligible, there are no hard rules. This task is not easy, so anything north of 5 should be enough.
+ご提案いただいたフィルタリングルールのうちのいくつかが承認された場合、AdGuardから報酬を受け取ることができます。 [st@adguard.com](mailto:st@adguard.com) にGitHubのアカウント名を添えてメールを送っていただければ、AdGuardのライセンスキーを無料で差し上げます。 報酬の対象となるためのルール数に関しては、固い条件はありません。 ルール作成作業は難しいので、通常、ご提案のルールが5件以上採用されれば報酬を受け取れます。

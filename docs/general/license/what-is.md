@@ -1,9 +1,9 @@
 ---
-title: What is AdGuard license
+title: What is an AdGuard license
 sidebar_position: 1
 ---
 
-## What is AdGuard license
+## What is an AdGuard license
 
 A license is permission to use the AdGuard product, provided in accordance with the End User License Agreement. AdGuard licenses exist in the form of license keys, activation codes, and product cards in the user's [AdGuard account](../../account/register).
 
@@ -14,7 +14,7 @@ Some licenses need to be purchased (e.g. AdGuard Ad Blocker Personal), some are 
     AdGuard for Mac — 14-day trial,
     AdGuard for Android — 7-day trial.
 2. **Free licenses** are not time-limited, but have limited functionality:
-    AdGuard Browser extension,
+    AdGuard Browser Extension,
     AdGuard Content Blocker,
     AdGuard for iOS.
 3. **Subscriptions** are paid licenses that are renewed automatically every month or every year. They can also be extended manually.
@@ -34,8 +34,8 @@ Different licenses can be used with a different number of devices:
 * Family: up to nine devices,
 * AdGuard Pro for iOS: one device.
 
-> To use your license on a device, log in to your [AdGuard account](../../account/features) on it.
-> To extend the device limit, you can [upgrade](../activation#how-to-upgrade-a-license) your license.
+To use your license on a device, log in to your [AdGuard account](../../account/features) on it.
+To extend the device limit, you can [upgrade](../activation#how-to-upgrade-a-license) your license.
 
 ## What is a license key{#license-key}
 
@@ -44,7 +44,7 @@ A license key is a unique sequence of characters that represents an AdGuard Ad B
 * [activate your license](../activation) in a product, if you don't have an AdGuard account,
 * bind your license to your AdGuard account and unbind it.
 
-> When unbinding a license, be sure you write the license key down beforehand or note in some other (safe) way. You'll need the key for re-binding your license or transferring it to another account.
+When unbinding a license, be sure you write the license key down beforehand or note in some other (safe) way. You'll need the key for re-binding your license or transferring it to another account.
 
 ## How to recover a license key
 

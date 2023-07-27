@@ -16,7 +16,11 @@ sidebar_position: 3
 
 ## 报告网站 {#report}
 
-> **注意**：当您通过应用或AdGuard 浏览器助手发送投诉时，所有信息都会自动填写。 除了屏幕截图，您还必须自己制作并附加它们。 如果您使用的是[此链接](https://reports.adguard.com/new_issue.html)，则需要手动输入数据。
+:::note
+
+When you send a complaint via the app or via AdGuard Browser Assistant, all information is pre-filled automatically. 除了屏幕截图，您还必须自己制作并附加它们。 如果您使用的是[此链接](https://reports.adguard.com/new_issue.html)，则需要手动输入数据。
+
+:::
 
 要报告广告已重新插入或网站显示不正确，您需要：
 
@@ -68,7 +72,11 @@ sidebar_position: 3
 
 ## 填写表格 {#form}
 
-> **注意**：当您通过应用或 AdGuard 助手发送投诉时，所有信息都会自动填写。 除了屏幕截图，您还必须自己制作并附加它们。 如果您使用的是[此链接](https://reports.adguard.com/en/new_issue.html)，则需要手动输入数据。
+:::note
+
+When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. 除了屏幕截图，您还必须自己制作并附加它们。 如果您使用的是[此链接](https://reports.adguard.com/new_issue.html)，则需要手动输入数据。
+
+:::
 
 1. 填写表格始于详细说明软件的类型和版本；
 
