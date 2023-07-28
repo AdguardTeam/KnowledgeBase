@@ -392,13 +392,13 @@ In this section, you can find information about your license and manage it:
 * Sign up to activate your 7-day trial period if you haven't used it yet
 * Refresh the license status if you have recently extended its validity
 * Open the AdGuard account to manage your license there
-* Log out of your AdGuard account (*Reset license*)
+* Reset your license – for example, if you've reached device limit for this license and want to apply another one
 
 ![License screen *mobile_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
 
 ## Support
 
-Use this section if you have any questions or suggestions regarding AdGuard for Android. We recomnend consulting *FAQ* or this knowledge base before contacting support.
+Use this section if you have any questions or suggestions regarding AdGuard for Android. We recommend consulting *FAQ* or this knowledge base before contacting support.
 
 ![Support *mobile_border](https://cdn.adtidy.org/blog/new/cz55usupport.png)
 
