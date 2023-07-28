@@ -99,7 +99,7 @@ DNS filtering allows you to customize your DNS traffic by enabling AdGuard DNS f
 
 How to access:
 
-*Protection* 🛡 icon (the second icon in the bottom menu bar) → *DNS protection* → *DNS filtering*
+*Protection* icon (the shield icon in the bottom menu bar) → *DNS protection* → *DNS filtering*
 
 ![DNS filtering screen *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_filtering_en.jpeg)
 
