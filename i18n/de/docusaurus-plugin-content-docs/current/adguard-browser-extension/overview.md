@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::Info
 
-This article is about the AdGuard Browser Extension, which safeguards only your browser. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+In diesem Artikel geht es um die AdGuard Browsereweiterung, die nur Ihren Browser schützt. Um Ihr gesamtes Gerät zu schützen, [laden Sie die App AdGuard herunter](https://adguard.com/download.html?auto=true)
 
 :::
 
@@ -29,7 +29,7 @@ We have a standalone extension for Safari. Since the release of [Safari 13](http
 
 ## Ad blocking {#adblocker}
 
-Blocking ads is clearly the key functionality of any ad blocker, and AdGuard is not an exception. The extension will successfully block ads on any page in your browser. Ad blocking is based on so-called filter lists, or simply [filters](/general/ad-filtering/how-ad-blocking-works). Filters can be enabled or disabled in your extension's settings. You can customize ad blocking by activating specific filters.
+Blocking ads is clearly the key functionality of any ad blocker, and AdGuard is not an exception. The extension will successfully block ads on any page in your browser. Das Blockieren von Werbung basiert auf so genannten Filterlisten oder einfach [Filtern](/general/ad-filtering/how-ad-blocking-works). Filters can be enabled or disabled in your extension's settings. You can customize ad blocking by activating specific filters.
 
 ### Filters {#filters}
 
@@ -85,7 +85,7 @@ You can also import and export existing allowlists. It is useful, for instance, 
 
 ![Stealth Mode *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_stealth_mode.png)
 
-In Stealth Mode, you can prevent a website from seeing the search queries from you used to find it on the Internet, automatically delete third-party and website’s own cookies, etc. A [separate article](/general/stealth-mode) is devoted to all these features.
+In Stealth Mode, you can prevent a website from seeing the search queries from you used to find it on the Internet, automatically delete third-party and website’s own cookies, etc. Ein [eigener Artikel](/general/stealth-mode) ist all diesen Funktionen gewidmet.
 
 :::note
 
@@ -99,11 +99,11 @@ Apart from the large key modules of AdGuard Browser Extension, there are several
 
 ### Allgemein {#general}
 
-In the *General* tab, you can allow search ads and the [self-promotion of websites](/general/ad-filtering/search-ads), enable the automatic activation of language-specific filters, indicate the filters update interval, etc.
+Im Tab *Allgemein* können Sie Werbung in Suchanfragen und [Eigenwerbung von Websites](/general/ad-filtering/search-ads) zulassen, die automatische Aktivierung von sprachspezifischen Filtern aktivieren, das Aktualisierungsintervall der Filter angeben usw.
 
 ![General *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_general.png)
 
-Besides, here you can enable [*Phishing and malware protection*](/general/browsing-security).
+Außerdem können Sie hier den [*Phishing- und Malware-Schutz*](/general/browsing-security) aktivieren.
 
 You can save your settings configuration by clicking the *Export settings* button. The settings will be saved as a .json file. To upload the previously saved settings configuration, use the *Import settings* function. You can even use it to quickly switch between different settings profiles or even to transfer settings configurations between different browsers.
 

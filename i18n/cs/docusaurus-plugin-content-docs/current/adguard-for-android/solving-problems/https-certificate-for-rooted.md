@@ -66,7 +66,7 @@ Modul vykonává svou práci během zavádění systému. Pokud se váš certifi
 
 :::note
 
-In order for the **Bromite** browser to work properly, in addition to the steps mentioned above, you need to set "Allow user certificates" in `chrome://flags` to "Enabled" state.
+Vezměte prosím na vědomí, že pro správnou funkci **Bromite** je kromě výše uvedených kroků nutné nastavit položku "Povolit uživatelské certifikáty" v `chrome://flags` do stavu "Povoleno".
 
 :::
 

@@ -7,7 +7,7 @@ toc_max_heading_level: 4
 
 :::info
 
-En este artículo, explicamos cómo escribir reglas de filtrado personalizadas para usar en los productos de AdGuard. To test your rules, you can [download the AdGuard app](https://adguard.com/download.html?auto=true)
+En este artículo, explicamos cómo escribir reglas de filtrado personalizadas para usar en los productos de AdGuard. Para probar tus reglas, puedes [descarga la aplicación AdGuard](https://adguard.com/download.html?auto=true)
 
 :::
 

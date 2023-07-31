@@ -139,7 +139,7 @@ Postup vytvoření souboru HAR v Safari:
 
 ## Android {#android}
 
-To create HAR files, follow these steps:
+Chcete-li vytvořit soubory HAR, postupujte takto:
 
 1. Otevřete AdGuard a přejděte do ***Nastavení***.
 

@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::Info
 
-This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://adguard.com/download.html?auto=true)
 
 :::
 
@@ -17,7 +17,7 @@ AdGuard for Android is not to be confused with AdGuard Content Blocker. AdGuard 
 
 ## Ad blocking
 
-Any ad blocker's main purpose is to block ads, and for the majority of AdGuard software ad-blocking algorithms are mostly the same. The mechanism of filtering ads is described [here](/general/ad-filtering/how-ad-blocking-works).
+Any ad blocker's main purpose is to block ads, and for the majority of AdGuard software ad-blocking algorithms are mostly the same. Der Mechanismus des Filterns von Werbung wird [hier](/general/ad-filtering/how-ad-blocking-works) beschrieben.
 
 ![Ad blocking](https://cdn.adtidy.org/public/Adguard/Blog/manifestv3/adblockingworks.png)
 
@@ -31,13 +31,13 @@ The program uses a lot of different filters, our own and third-party ones, sorte
 
 ![Filters *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filters1.png)
 
-Find out more about all the filters available for AdGuard products by reading their descriptions in the app or [this comprehensive article](/general/ad-filtering/adguard-filters).
+Weitere Informationen zu allen für AdGuard-Produkte verfügbaren Filtern finden Sie in den Beschreibungen in der App oder in [diesem umfassenden Artikel](/general/ad-filtering/adguard-filters).
 
 ## Custom filters
 
 ![Custom filters *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/custom-filters.png)
 
-AdGuard allows you to create your own custom filters, using the same type of rules that we have in our filters. If you want to try your hand at this, we would recommend studying [the article on creating your own ad filters](/general/ad-filtering/create-own-filters) which describes the AdGuard rules syntax in detail and provides plenty of examples.
+AdGuard allows you to create your own custom filters, using the same type of rules that we have in our filters. Wenn Sie sich selbst daran versuchen wollen, empfehlen wir Ihnen den Artikel [Eigene Werbefilter erstellen](/general/ad-filtering/create-own-filters), in dem die Regelsyntax von AdGuard ausführlich beschrieben und mit vielen Beispielen versehen ist.
 
 :::tip
 
@@ -47,7 +47,7 @@ Use the Import feature to transfer your rules to a different device.
 
 ## HTTPS-Filterung {#https-filtering}
 
-Nowadays almost all websites work via HTTPS, the web protocol where the last S letter stands for "secure". It happened so that most advertisers use this protocol as well, this is why [HTTPS filtering](/general/https-filtering/what-is-https-filtering) is really crucial for a modern ad blocker.
+Nowadays almost all websites work via HTTPS, the web protocol where the last S letter stands for "secure". So kam es, dass die meisten Werbetreibenden ebenfalls dieses Protokoll verwenden, weshalb die [HTTPS-Filterung](/general/https-filtering/what-is-https-filtering) für einen modernen Werbeblocker wirklich entscheidend ist.
 
 ![What is HTTPS](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https.png)
 
@@ -184,7 +184,7 @@ But DNS servers not only vary by function. Besides, they can also differ by supp
 
 DNS-over-QUIC (DoQ) is a rather new encryption protocol and AdGuard DNS is the first public resolver that supports it. Unlike DoH and DoT, it uses QUIC as a transport protocol and finally brings DNS back to its roots — working over UDP. It brings all the good things that QUIC has to offer — out-of-the-box encryption, reduced connection times, better performance when data packets are lost. Also, QUIC is supposed to be a transport-level protocol and there are no risks of metadata leaks that could happen with DoH.
 
-To learn more about DNS-over-QUIC, check out [this article](https://adguard.com/en/blog/dns-over-quic.html) dedicated entirely to it.
+Weitere Informationen über DNS-over-QUIC finden Sie in [diesem Artikel](https://adguard.com/en/blog/dns-over-quic.html), der sich ausschließlich mit diesem Thema beschäftigt.
 
 To enable DoQ in AdGuard for Android, perform the following steps:
 

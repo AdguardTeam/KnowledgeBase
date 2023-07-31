@@ -25,7 +25,7 @@ Rozšíření a aplikace fungovaly společně, ale někdy integrace selhala. Ně
 
 Při použití Asistenta prohlížeče všechny tyto problémy nevadí, protože v podstatě nemůže dojít k žádným konfliktům. Úloha Asistenta prohlížeče je dobře definovaná a nemůže bránit fungování hlavní aplikace, takže se nemusíte obávat.
 
-## Separate tab in Settings
+## Samostatná karta v nastavení
 
 Nový Asistent prohlížeče má v nastavení AdGuardu pro Windows vlastní záložku spolu s Režimem utajení, Bezpečným prohlížením, Ochranou rodiny a dalšími. Zde najdete odkaz ke stažení rozšíření pro váš výchozí prohlížeč. Kromě toho je zde zaškrtávací políčko pro povolení staršího asistenta.
 
@@ -39,4 +39,4 @@ Starý Asistent je předchozí verze Asistenta, která je pouhým uživatelským
 
 Chcete-li nainstalovat Asistenta prohlížeče pro svůj výchozí prohlížeč, můžete to provést přímo v nastavení aplikace, ale máte také možnost nainstalovat jej pro jiné prohlížeče.
 
-Asistent prohlížeče AdGuard je k dispozici pro všechny oblíbené prohlížeče: Chrome, Firefox Edge, Opera a Yandex. To install the one you need (or many, it is not prohibited but even encouraged), go to [our website](https://adguard.com/adguard-assistant/overview.html), click the browser icon and tap the *Install* button. To je vše!
+Asistent prohlížeče AdGuard je k dispozici pro všechny oblíbené prohlížeče: Chrome, Firefox Edge, Opera a Yandex. Chcete-li si nainstalovat ten, který potřebujete (nebo více, není to zakázáno, ale ani doporučeno), přejděte na [naše webové stránky](https://adguard.com/adguard-assistant/overview.html), klikněte na ikonu prohlížeče a poté na tlačítko *Nainstalovat*. To je vše!

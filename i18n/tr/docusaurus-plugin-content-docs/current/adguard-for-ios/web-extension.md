@@ -1,13 +1,13 @@
 ---
-title: Safari Web extension
+title: Safari Web uzantısı
 sidebar_position: 3
 ---
 
-Web extensions add custom functionality to Safari. You can find [more information about Web extensions here](https://developer.apple.com/documentation/safariservices/safari_web_extensions).
+Web uzantıları, Safari'ye özel işlevler ekler. You can find [more information about Web extensions here](https://developer.apple.com/documentation/safariservices/safari_web_extensions).
 
-![What the Web extension looks like in Safari *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/menu_en.png)
+![Web uzantısı Safari'de nasıl görünür *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/menu_en.png)
 
-AdGuard's Safari Web extension is a tool that takes advantage of the new features of iOS 15. It serves to enhance the capabilities of AdGuard for iOS. With it, AdGuard can apply advanced filtering rules and ultimately block more ads.
+AdGuard'ın Safari Web uzantısı, iOS 15'in yeni özelliklerinden yararlanan bir araçtır. iOS için AdGuard'ın yeteneklerini geliştirmeye hizmet eder. Bununla birlikte AdGuard, gelişmiş filtreleme kuralları uygulayabilir ve sonuçta daha fazla reklamı engelleyebilir.
 
 ## What it does
 
@@ -60,15 +60,15 @@ Alternitavely, you can also turn AdGuard extension on from the Safari browser. T
 
 ![In Safari tap aA icon *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari1_en.png)
 
-Then find the *Manage Extensions* option in the list and tap it. In the opened window turn on the switch next to **AdGuard**.
+Ardından listede *Uzantıları Yönet* seçeneğini bulun ve ona dokunun. Açılan pencerede **AdGuard** yanındaki düğmeyi açın.
 
-![Extensions *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari2_en.png)
+![Uzantılar *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari2_en.png)
 
-![Extensions *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari3_en.png)
+![Uzantılar *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari3_en.png)
 
-If you use this method, you may have to go to Safari settings to grant AdGuard extension the necessary permissions anyway.
+Bu yöntemi kullanırsanız, yine de AdGuard uzantısına gerekli izinleri vermek için Safari ayarlarına gitmeniz gerekebilir.
 
-You should now be able to see AdGuard among the available extensions. Tap it and then the yellow **i** icon. Enable **Advanced protection** by tapping the *Turn on* button and confirming the action.
+Artık mevcut uzantılar arasında AdGuard'ı görüyor olmanız gerekir. Tap it and then the yellow **i** icon. Enable **Advanced protection** by tapping the *Turn on* button and confirming the action.
 
 :::note
 

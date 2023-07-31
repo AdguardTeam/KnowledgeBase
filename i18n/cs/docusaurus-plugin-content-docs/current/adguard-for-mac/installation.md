@@ -21,7 +21,7 @@ Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, kter
 
 ## Instalace
 
-To install AdGuard for Mac on your computer, launch your browser, type _adguard.com_ in the address bar, and press **Download** [on the page that opens](https://adguard.com/download.html?auto=1).
+Chcete-li do počítače nainstalovat AdGuard pro macOS, spusťte prohlížeč, do adresního řádku zadejte _adguard.com_ a stiskněte **Stáhnout** [na otevřené stránce](https://adguard.com/download.html?auto=1).
 
 ![Download the app *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/1.jpg)
 
@@ -45,7 +45,7 @@ Počkejte, až instalační program stáhne požadované soubory.
 
 ![Wait until the necessary files are downloaded](https://cdn.adtidy.org/content/kb/ad_blocker/mac/6.jpg)
 
-Chcete-li aplikaci používat, potřebujete heslo správce k účtu macOS. Enter the password when prompted in the dialogue box and press **OK**.
+Chcete-li aplikaci používat, potřebujete heslo správce k účtu macOS. V dialogovém okně zadejte heslo správce a stiskněte **OK**.
 
 ![Enter the password](https://cdn.adtidy.org/content/kb/ad_blocker/mac/7.jpg)
 

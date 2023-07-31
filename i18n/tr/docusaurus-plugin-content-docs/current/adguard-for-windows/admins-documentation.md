@@ -7,7 +7,7 @@ This page describes the features and details of AdGuard’s central management o
 
 ## 1. MSI'ı indirin {#msi-download}
 
-[AdGuard MSI'yı](https://cdn.adtidy.org/distr/windows/AdGuard.msi) indirin.
+[AdGuard MSI'yı](https://static.adtidy.org/windows/setup.msi) indirin.
 
 ## 2. Ağınız için ayarları yapılandırın {#settings-configuring}
 

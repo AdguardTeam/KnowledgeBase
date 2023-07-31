@@ -91,11 +91,15 @@ V dolní části obrazovky je navíc možnost přidat vlastní DNS server. Podpo
 
 ![Obrazovka nastavení sítě *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/network_settings_en.jpeg)
 
-Uživatelé mohou na obrazovce Nastavení sítě také řešit zabezpečení DNS. *Filtrovat mobilní data* a *Filtrovat Wi-Fi* zapnout nebo vypnout ochranu DNS pro příslušné typy sítí. Further down, at *Wi-Fi exceptions*, you can exclude particular Wi-Fi networks from DNS protection (for example, you might want to exclude your home network if you use [AdGuard Home](https://adguard.com/adguard-home/overview.html)).
+Uživatelé mohou na obrazovce Nastavení sítě také řešit zabezpečení DNS. *Filtrovat mobilní data* a *Filtrovat Wi-Fi* zapnout nebo vypnout ochranu DNS pro příslušné typy sítí. Dále ve *výjimkách Wi-Fi* můžete vyloučit konkrétní sítě Wi-Fi z ochrany DNS (můžete například chtít vyloučit svou domácí síť, pokud používáte [AdGuard Home](https://adguard.com/adguard-home/overview.html)).
 
 ### DNS filtrování {#dns-filtering}
 
-Abyste získali přístup k tomuto nastavení, je třeba na obrazovce *Obecná nastavení* zapnout *Pokročilý režim*. Poté se na obrazovce DNS ochrany zobrazí nová část. Klepnutím na ni můžete přizpůsobit provoz DNS použitím vlastních pravidel.
+DNS filtrování umožňuje přizpůsobit provoz DNS povolením filtru AdGuard DNS, přidáním vlastních filtrů DNS a použitím seznamu zakázanách/povolených DNS.
+
+Jak získat přístup:
+
+*Ikona ochrany* (ikona štítu v dolní liště menu) → *DNS ochrana* → *DNS filtrování*
 
 ![Obrazovka DNS filtrování *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_filtering_en.jpeg)
 
@@ -149,9 +153,9 @@ Na zařízeních se systémem iOS 15 jsou funkce asistenta dostupné prostředni
 
 Toto je "informační centrum" sady DNS ochrany AdGuardu. Můžete na něj rychle přepnout klepnutím na třetí ikonu v řadě ve spodní části obrazovky. Pozn. tato obrazovka se zobrazí pouze v případě, že je zapnuta DNS ochrana.
 
-![Obrazovka aktivity *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/activity_en.jpeg)
+![Obrazovka aktivity *mobile_border](https://cdn.adtidy.org/content/github/ad_blocker/ios/activity.png)
 
-Zde AdGuard zobrazuje statistiky o požadavcích DNS zařízení, například celkový počet, počet šifrovaných požadavků a průměrnou dobu zpracování. AdGuard může zobrazit statistiky za den, týden, měsíc nebo celkově.
+Zde AdGuard zobrazuje statistiky o DNS požadavcích zařízení, například celkový počet, počet blokovaných požadavků a data ušetřená jejich blokováním. AdGuard může zobrazit statistiky za den, týden, měsíc nebo celkově.
 
 Níže je uvedena stránka *Nedávná aktivita*. AdGuard ukládá posledních 1500 DNS požadavků, které byly odeslány z vašeho zařízení a zobrazuje jejich atributy, například typ protokolu a cílovou doménu.
 
@@ -165,7 +169,7 @@ Klepnutím na libovolný požadavek zobrazíte další podrobnosti. K dispozici 
 
 ![Podrobnosti požadavků *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/request_info_en.jpeg)
 
-Nad stránkou aktivit jsou *Nejaktivnější společnosti*. Zde jsou uvedeny souhrnné údaje z posledních 1500 požadavků.
+Nad zdrojem aktivit jsou *Nejaktivnější* a *Nejvíce blokované* společnosti. Klepnutím na každou z nich zobrazíte údaje založené na posledních 1500 požadavcích.
 
 ### Statistiky {#statistics}
 
@@ -181,7 +185,7 @@ Nastavení v této části je většinou lepší ponechat beze změny: používe
 
 ### Blokování IPv6 {#blockipv6}
 
-Na každý dotaz DNS odeslaný za účelem získání adresy IPv6 vrátí naše aplikace prázdnou odpověď (jako by tato adresa IPv6 neexistovala). Nyní existuje možnost nevracet adresy IPv6. Na tomto místě se popis této funkce stává příliš technickým: konfigurace nebo zakázání protokolu IPv6 je výhradní doménou pokročilých uživatelů. Presumably, if you are one of them, it will be good to know that we now have this feature, if not — there is no need to dive into it.
+Na každý dotaz DNS odeslaný za účelem získání adresy IPv6 vrátí naše aplikace prázdnou odpověď (jako by tato adresa IPv6 neexistovala). Nyní existuje možnost nevracet adresy IPv6. Na tomto místě se popis této funkce stává příliš technickým: konfigurace nebo zakázání protokolu IPv6 je výhradní doménou pokročilých uživatelů. Pokud patříte mezi ně, bude dobré vědět, že tuto funkci nyní máme, pokud ne — není třeba se do ní nořit.
 
 ### Bootstrap a záložní servery {#bootstrap-fallback}
 
@@ -197,9 +201,9 @@ Blokování obsahu Safari a DNS ochrana jsou nesporně dva hlavní moduly AdGuar
 
 - **Tmavý motiv**
 
-![Světlý motiv *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/main_screen_en.jpeg)
+![Světlý motiv *mobile_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
 
-![Tmavý motiv *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/main_screen_dark_en.jpeg)
+![Tmavý motiv *mobile_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
 
 Toto nastavení, které se nachází přímo v horní části obrazovky **Nastavení** → **Obecné**, umožňuje přepínat mezi tmavým a světlým motivem.
 
@@ -219,7 +223,7 @@ Alternativní režim pro filtrování Safari, který odblokuje reklamy všude kr
 
 - **Pokročilý režim**
 
-Kromě odemknutí **DNS filtrování**, poskytuje přístup k **Pokročilým nastavením**. Nedoporučujeme s nimi manipulovat, pokud nevíte, co děláte, nebo pokud jste se nejprve neporadili s technickou podporou.
+**Pokročilý režim** odemkne **Pokročilá nastavení**. Nedoporučujeme s nimi manipulovat, pokud nevíte, co děláte, nebo pokud jste se nejprve neporadili s technickou podporou.
 
 - **Vynulování statistik**
 

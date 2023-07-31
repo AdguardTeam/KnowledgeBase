@@ -11,9 +11,9 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 Na zařízeních se systémem Android 6 a starším se v integrovaných statistikách často připisovalo vysoké využití dat a/nebo baterie AdGuardu. Bylo to proto, že AdGuard počítal veškerý provoz, který filtroval z různých aplikací. V důsledku toho byl podíl AdGuardu na celkovém využití dat a baterie nadhodnocen, zatímco podíl ostatních aplikací byl podhodnocen.
 
-With Android 7, however, this scenario has improved. Nyní se údaje uvedené ve vestavěných statistikách využití dat systému Android velmi blíží skutečnosti, i když v údajích o využití baterie jsou drobné nesrovnalosti.
+V Androidu 7 se však tento scénář zlepšil. Nyní se údaje uvedené ve vestavěných statistikách využití dat systému Android velmi blíží skutečnosti, i když v údajích o využití baterie jsou drobné nesrovnalosti.
 
-However, AdGuard users can always get a true picture of the situation on the *Battery usage* screen.
+Přesto si uživatelé AdGuardu mohou vždy udělat skutečný obrázek o situaci na obrazovce *Využití baterie*.
 
 ### Vlastní obrazovka statistik využití baterie
 
@@ -25,7 +25,7 @@ Uvnitř najdete graf, který zobrazuje spotřebu zdrojů baterie AdGuard za posl
 
 ### Kolik prostředků baterie AdGuard skutečně spotřebovává?
 
-First, let us lay down a bit of theory and links with necessary data.
+Nejprve si řekneme něco málo z teorie a uvedeme si souvislosti s potřebnými údaji.
 
 1. Android odvozuje spotřebu baterie podle takzvaného "Profilu napájení", který udává každý výrobce: <https://source.android.com/devices/tech/power/values.html>
 

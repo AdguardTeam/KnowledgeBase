@@ -5,9 +5,11 @@ sidebar_position: 2
 
 ## 如何购买许可证{#purchase}
 
-AdGuard 许可证可以在 [adguard.com](https://adguard.com/license.html) 上购买。 iOS 版 的 AdGuard Pro 可以在 App Store 上购买。 此外，用户也可以通过经销商购买广告拦截程序的许可证。
+AdGuard 许可证可以在 [adguard.com](https://adguard.com/license.html) 上购买。 We offer various payment options, including Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay, and UnionPay. We also accept the following cryptocurrencies: Bitcoin, Ethereum, Litecoin, and Tether.
 
-The availability of AdGuard products in app stores and by distributors depends on your country.
+iOS 版 的 AdGuard Pro 可以在 App Store 上购买。
+
+此外，用户也可以通过经销商购买广告拦截程序的许可证。 The availability of AdGuard products in app stores and by distributors depends on your country.
 
 ## 如何升级许可证{#upgrade}
 

@@ -7,7 +7,7 @@ toc_max_heading_level: 4
 
 :::info
 
-In this article, we explain how to write custom filtering rules for use in AdGuard products. To test your rules, you can [download the AdGuard app](https://adguard.com/download.html?auto=true)
+この記事では、AdGuard製品で使用できるカスタムフィルタリングルールの作成方法を紹介しています。 To test your rules, you can [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
 :::
 

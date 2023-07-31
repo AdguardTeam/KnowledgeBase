@@ -9,7 +9,7 @@ Tento článek je o AdGuardu pro Safari, který chrání pouze váš prohlíže�
 
 :::
 
-AdGuard for Safari was designed to conform to Apple's restrictions for ad blocking browser extensions and is the most popular ad blocker for Safari. Přestože se nedá srovnávat s našimi aplikacemi pro blokování reklam na počítači, je zdarma a dokáže vás ochránit před reklamami, slídiči, phishingem a škodlivými webovými stránkami.
+AdGuard pro Safari byl navržen tak, aby splňoval omezení společnosti Apple pro rozšíření prohlížeče pro blokování reklam a je nejpoužívanějším blokátorem reklam pro Safari. Přestože se nedá srovnávat s našimi aplikacemi pro blokování reklam na počítači, je zdarma a dokáže vás ochránit před reklamami, slídiči, phishingem a škodlivými webovými stránkami.
 
 ## Obecné {#general}
 

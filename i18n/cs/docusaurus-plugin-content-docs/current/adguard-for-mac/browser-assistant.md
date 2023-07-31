@@ -33,8 +33,8 @@ V ojedinělých případech se může stát, že prohlížeč nebude s Asistente
 
 :::
 
-## Separate tab in Settings
-The new Browser Assistant has its own tab in the AdGuard for Mac settings, together with Stealth Mode, Browsing Security, Parental Control and others. Nebojte se, pokud jste na začátku nestihli nainstalovat Asistenta prohlížeče, tuto možnost najdete v nastavení aplikace. Kromě toho je zde zaškrtávací políčko pro povolení staršího asistenta.
+## Samostatná karta v nastavení
+Nový Asistent prohlížeče má v nastavení AdGuardu pro Mac vlastní záložku spolu s Režimem utajení, Bezpečným prohlížením, Ochranou rodiny a dalšími. Nebojte se, pokud jste na začátku nestihli nainstalovat Asistenta prohlížeče, tuto možnost najdete v nastavení aplikace. Kromě toho je zde zaškrtávací políčko pro povolení staršího asistenta.
 
 ![Karta Asistenta prohlížeče](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant-separate-tab.png)
 
@@ -46,4 +46,4 @@ Technicky vzato to nemusíte dělat sami: aplikace AdGuard během zaváděcího 
 
 Asistent prohlížeče AdGuard je k dispozici pro všechny oblíbené prohlížeče: Chrome, Firefox, Safari, Edge, Opera a Yandex. Chcete-li nainstalovat Asistenta prohlížeče pro svůj výchozí prohlížeč, můžete to provést přímo v nastavení aplikace, ale máte také možnost nainstalovat jej pro jiné prohlížeče.
 
-To install the one you need (or many, it is not prohibited but even encouraged), go to [our website](https://adguard.com/adguard-assistant/overview.html), click the browser icon and then the *Install* button. To je vše!
+Chcete-li si nainstalovat ten, který potřebujete (nebo více, není to zakázáno, ale ani doporučeno), přejděte na [naše webové stránky](https://adguard.com/adguard-assistant/overview.html), klikněte na ikonu prohlížeče a poté na tlačítko *Nainstalovat*. To je vše!

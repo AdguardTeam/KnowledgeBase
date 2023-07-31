@@ -50,7 +50,7 @@ Jste připraveni zašpinit si ruce? Zde jsou uvedeny akce, kterým bude AdGuard 
 
 :::note
 
-The full list of supported provider names can be found inside AdGuard DNS settings under the "Custom DNS settings".
+Úplný seznam podporovaných názvů poskytovatelů naleznete v nastavení AdGuard DNS v části "Vlastní nastavení DNS".
 
 :::
 

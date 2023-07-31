@@ -41,7 +41,7 @@ Zobrazí se vyskakovací okno. Klepněte na *Nastavení*, přejděte na *Instala
 
 Tato příručka je pro systém Android 8+. Pokud máte starší verzi operačního systému, přejděte před stažením souboru APK do *Nastavení* a vyberte možnost *Další nastavení* v sekci *Systém a zařízení*. Povolte *Neznámé zdroje* a klepněte na *OK* v okně se systémovým varováním.
 
-3. **Nainstalujte aplikaci**. Once the browser has obtained the necessary permissions, the system will ask you if you want to install the AdGuard app. Klepněte na *Instalovat*.
+3. **Nainstalujte aplikaci**. Jakmile prohlížeč získá potřebná oprávnění, systém se vás zeptá, zda chcete aplikaci AdGuard nainstalovat. Klepněte na *Instalovat*.
 
 ![Instalace aplikací z neznámých zdrojů *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_4.png)
 

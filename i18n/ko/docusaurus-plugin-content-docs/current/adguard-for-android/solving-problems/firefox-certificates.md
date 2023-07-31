@@ -5,7 +5,7 @@ sidebar_position: 11
 
 :::info
 
-This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+이 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Android용 AdGuard에 대해 다룹니다. 어떻게 동작하는지 알고 싶으시다면 [AdGuard 앱을 다운로드](https://adguard.com/download.html?auto=true) 해 보세요.
 
 :::
 
@@ -48,7 +48,7 @@ Firefox Nightly가 AdGuard 인증서를 신뢰하도록 하려면 다음 단계�
     - Tap the **Build number** line 7 times. 그 후에 '**개발자 모드를 켰습니다'**라는 알림을 받게 됩니다. 필요한 경우 기기의 잠금 해제 코드를 입력하세요.
     - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
 3. [Firefox ](https://www.mozilla.org/en-US/firefox/releases/)브라우저(정식 버전)를 설치합니다.
-4. Open the **AdGuard settings** → **Network** → **HTTPS Filtering** → Install the certificate in **Firefox** → **INSTALL FOR OLD VERSIONS**;
+4. Open the **AdGuard settings** (gear icon in the bottom right corner) → **Filtering** → **Network** → **HTTPS filtering** → **Security certificate** → **Instructions for Firefox** → **Install for old versions**;
 5. `adb shell su` 및 `cd data/data/...`를 사용하여 `data/data/org.mozilla.firefox/files/mozilla` 폴더를 엽니다. `xxxxxxx.default`라는 폴더를 찾아 이름을 기억하세요.
 6. 지정된 폴더에는 두 개의 파일이 필요합니다.
     - `cert9.db`

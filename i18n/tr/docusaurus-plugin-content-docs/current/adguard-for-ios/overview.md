@@ -9,15 +9,15 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 :::
 
-If you look for AdGuard in the App Store, you'll find two apps — [AdGuard](https://itunes.apple.com/app/id1047223162) and [AdGuard Pro](https://itunes.apple.com/app/id1126386264). These apps are designed to block ads and trackers in Safari, other browsers, and apps, and to manage DNS protection. Don't be misled by their names, both apps block ads on smartphones and tablets by Apple. They used to differ in functionality due to the changing App Store review guidelines, but now these two apps are [basically the same](https://adguard.com/en/blog/updating-adguard-pro-for-ios.html). So if you have purchased AdGuard Pro, there is no need to download AdGuard and buy a license there, and vice versa.
+If you look for AdGuard in the App Store, you'll find two apps — [AdGuard](https://itunes.apple.com/app/id1047223162) and [AdGuard Pro](https://itunes.apple.com/app/id1126386264). These apps are designed to block ads and trackers in Safari, other browsers, and apps, and to manage DNS protection. Don't be misled by their names, both apps block ads on smartphones and tablets by Apple. They used to differ in functionality due to the changing App Store review guidelines, but now these two apps are [basically the same](https://adguard.com/en/blog/updating-adguard-pro-for-ios.html). Dolayısıyla, AdGuard Pro'yu satın aldıysanız, AdGuard'ı indirmenize ve oradan bir lisans satın almanıza gerek yoktur veya bunun tam tersi de geçerlidir.
 
 ## Features {#features}
 
-AdGuard and AdGuard Pro for iOS offer lots of features for blocking ads, trackers and creating user rules, both in Safari and on network level.
+AdGuard ve iOS için AdGuard Pro, hem Safari'de hem de ağ düzeyinde reklamları, izleyicileri engellemek ve kullanıcı kuralları oluşturmak için birçok özellik sunar.
 
 ### İçerik engelleyiciler {#content-blockers}
 
-Content blockers serve as 'containers' for filtering rules that do the actual job of blocking ads and tracking. AdGuard for iOS contains six content blockers: General, Privacy, Social, Security, Custom, and Other. Previously Apple only allowed each content blocker to contain a maximum of 50K filtering rules, but with iOS 15 release the upper limit has moved to 150K rules.
+Content blockers serve as 'containers' for filtering rules that do the actual job of blocking ads and tracking. iOS için AdGuard altı içerik engelleyici içerir: Genel, Gizlilik, Sosyal, Güvenlik, Özel ve Diğer. Previously Apple only allowed each content blocker to contain a maximum of 50K filtering rules, but with iOS 15 release the upper limit has moved to 150K rules.
 
 All content blockers, their statuses, which thematic filters they currently include, and a total number of used filtering rules can be found on the respective screen in *Advanced settings* (tap the gear icon at the bottom right → *General* → *Advanced settings* → *Content blockers*).
 
@@ -41,7 +41,7 @@ There are eight of them, each category unites several filters that serve and sha
 
 :::note
 
-More enabled filters does not guarantee that there will be less ads. Aynı anda etkinleştirilen çok sayıda çeşitli filtre, reklam engellemenin kalitesini düşürür.
+Daha fazla filtrenin etkin olması daha az reklam olacağını garanti etmez. Aynı anda etkinleştirilen çok sayıda çeşitli filtre, reklam engellemenin kalitesini düşürür.
 
 :::
 
@@ -49,23 +49,23 @@ More enabled filters does not guarantee that there will be less ads. Aynı anda 
 
 ### Kullanıcı kuralları {#user-rules}
 
-Here you can add new rules — either by entering them manually, or by using [the AdGuard manual blocking tool in Safari](#assistant). Use this tool to customize Safari filtering without adding an entire filter list.
+Burada, elle girerek veya [Safari'de AdGuard elle engelleme aracını](#assistant) kullanarak yeni kurallar ekleyebilirsiniz. Tüm filtre listesini eklemeden Safari filtrelemesini özelleştirmek için bu aracı kullanın.
 
-Learn [how to create your own ad filters](/general/ad-filtering/create-own-filters). But please note that many of them won't work in Safari on iOS.
+Learn [how to create your own ad filters](/general/ad-filtering/create-own-filters). Ancak bunların birçoğunun iOS'ta Safari'de çalışmayacağını lütfen unutmayın.
 
 ![Kullanıcı kuralları ekranı *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/user_rules_en.jpeg)
 
 ### Allowlist {#allowlist}
 
-The third section of the *Safari protection* screen. If you want to disable ad blocking on a certain website, Allowlist will be of help. İstisnalara alan adları ve alt alt alan adları eklemenize olanak tanır. AdGuard for iOS has an Import/Export feature, so the allowlist from one device can be easily transferred to another.
+*Safari koruması* ekranının üçüncü bölümü. Belirli bir sitede reklam engellemeyi devre dışı bırakmak istiyorsanız, İzin listesi size yardımcı olacaktır. İstisnalara alan adları ve alt alt alan adları eklemenize olanak tanır. iOS için AdGuard'ın bir İçe ve Dışa aktarma özelliği vardır, böylece bir cihazdaki izin listesi kolayca başka bir cihaza aktarılabilir.
 
 ### DNS protection {#dns-protection}
 
-[DNS koruma modülü](https://adguard-dns.io/kb/general/dns-filtering/), DNS trafiğinizi şifreleyerek gizliliğinizi artırır. Unlike with Safari content blocking, DNS protection works system-wide, i.e. beyond Safari, in apps and other browsers. Bu modülü kullanabilmeniz için önce etkinleştirmeniz gerekir. Bunu ana ekranda ekranın üst kısmındaki kalkan simgesine dokunarak veya *Koruma* → *DNS koruması* sekmesine giderek yapabilirsiniz.
+[DNS koruma modülü](https://adguard-dns.io/kb/general/dns-filtering/), DNS trafiğinizi şifreleyerek gizliliğinizi artırır. Safari içerik engellemenin aksine, DNS koruması sistem genelinde, yani Safari'nin ötesinde, uygulamalarda ve diğer tarayıcılarda çalışır. Bu modülü kullanabilmeniz için önce etkinleştirmeniz gerekir. Bunu ana ekranda ekranın üst kısmındaki kalkan simgesine dokunarak veya *Koruma* → *DNS koruması* sekmesine giderek yapabilirsiniz.
 
 :::note
 
-To be able to manage DNS settings, AdGuard apps require establishing a local VPN. It will not route your traffic through any remote servers. Nevertheless, the system will ask you to confirm access permission.
+DNS ayarlarını yönetebilmek için AdGuard uygulamaları yerel bir VPN kurulmasını gerektirir. Trafiğinizi herhangi bir uzak sunucu üzerinden yönlendirmez. Nevertheless, the system will ask you to confirm access permission.
 
 :::
 
@@ -95,13 +95,17 @@ Kullanıcılar, DNS güvenliklerini Ağ ayarları ekranından da yönetebilirler
 
 ### DNS filtering {#dns-filtering}
 
-To get access to this setting, *Advanced mode* has to be enabled from the *General settings* screen. Bundan sonra, DNS koruma ekranında yeni bir bölüm görünür. Tap it to customize your DNS traffic by applying own rules.
+DNS filtreleme, AdGuard DNS filtresini etkinleştirerek, özel DNS filtreleri ekleyerek ve DNS engel listesi ile izin listesini kullanarak DNS trafiğinizi özelleştirmenize olanak tanır.
 
-![DNS filtering screen *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_filtering_en.jpeg)
+Nasıl erişilir:
+
+*Koruma* simgesi (alt menü çubuğundaki kalkan simgesi) → *DNS koruması* → *DNS filtreleme*
+
+![DNS filtreleme ekranı *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_filtering_en.jpeg)
 
 #### DNS filters {#dns-filters}
 
-Similar to filters that work in Safari, DNS filters are sets of rules written according to special [syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/). AdGuard, DNS trafiğinizi izler ve bir veya daha fazla kuralla eşleşen istekleri engeller. You can use filters such as [AdGuard DNS filter](https://github.com/AdguardTeam/AdguardSDNSFilter) or add hosts files as filters. Aynı anda birden fazla filtre eklenebilir. To know how to do it, get acquainted with [this exhaustive manual](../solving-problems/system-wide-filtering).
+Similar to filters that work in Safari, DNS filters are sets of rules written according to special [syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/). AdGuard, DNS trafiğinizi izler ve bir veya daha fazla kuralla eşleşen istekleri engeller. [AdGuard DNS filtresi](https://github.com/AdguardTeam/AdguardSDNSFilter) gibi filtreler kullanabilir veya hosts dosyalarını filtre olarak ekleyebilirsiniz. Aynı anda birden fazla filtre eklenebilir. To know how to do it, get acquainted with [this exhaustive manual](../solving-problems/system-wide-filtering).
 
 #### İzin listesi ve Engelleme listesi {#allowlist-blocklist}
 
@@ -149,9 +153,9 @@ On iOS 15 devices, the Assistant features are available through [AdGuard Safari 
 
 This is the 'information hub' of AdGuard's DNS protection suite. You can quickswitch to it by tapping the third icon in the row at the screen bottom. N.b. this screen is only seen when DNS protection is enabled.
 
-![Activity screen *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/activity_en.jpeg)
+![Etkinlik ekranı *mobile_border](https://cdn.adtidy.org/content/github/ad_blocker/ios/activity.png)
 
-Here AdGuard displays stats about device's DNS requests, such as total number, number of encrypted requests and average processing time. AdGuard can display the stats for a day, a week, a month, or in total.
+This is where AdGuard displays statistics about the device's DNS requests, such as total number, number of blocked requests and data saved by blocking them. AdGuard can display the statistics for a day, a week, a month or in total.
 
 Below is the *Recent activity* feed. AdGuard stores the last 1500 DNS requests that have originated on your device and shows their attributes such as protocol type and target domain.
 
@@ -165,7 +169,7 @@ Tap any request to view more details. There will also be buttons to add the requ
 
 ![Request details *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/request_info_en.jpeg)
 
-Above the activity feed, there are *Most active companies*. Aggregated data on the last 1500 requests are shown here.
+Above the activity feed, there are *Most active* and *Most blocked* companies. Tap each to see data based on the last 1500 requests.
 
 ### Statistics {#statistics}
 
@@ -197,9 +201,9 @@ While Safari content blocking and DNS protection are indisputably two major modu
 
 - **Dark theme**
 
-![Light theme *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/main_screen_en.jpeg)
+![Light theme *mobile_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
 
-![Dark theme *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/main_screen_dark_en.jpeg)
+![Dark theme *mobile_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
 
 Residing right at the top of **Settings** → **General** screen, this setting allows you to switch between dark and light themes.
 
@@ -215,11 +219,11 @@ If this setting is enabled, AdGuard will use only Wi-Fi for background filter up
 
 - **İzin listesini ters çevir**
 
-An alternative mode for Safari filtering, it unblocks ads everywhere except for the specified websites from the list. Varsayılan olarak devre dışı.
+An alternative mode for Safari filtering, it unblocks ads everywhere except for the specified websites from the list. Disabled by default.
 
 - **Advanced mode**
 
-Aside from unlocking **DNS filtering**, it grants access to **Advanced settings**. We don't recommend messing with those, unless you know what you're doing or you have consulted with technical support first.
+**Advanced mode** unlocks **Advanced settings**. We don't recommend messing with those, unless you know what you're doing or you have consulted with technical support first.
 
 - **Reset statistics**
 

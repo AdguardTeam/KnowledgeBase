@@ -25,12 +25,12 @@ We recommend setting up two-factor authentication for your AdGuard account. Bu i
 ![The verification code](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_enable.png)
 
 ***Important***
-* Save the second-factor backup code somewhere, it will be necessary to recover your account in case your mobile phone gets lost or stolen;
+* İkinci faktör yedekleme kodunu bir yere kaydedin, cep telefonunuzun kaybolması veya çalınması durumunda hesabınızı kurtarmanız gerekecektir;
 
-If everything is done right, you will see this when you log into your account the next time:
+Her şey doğru yapıldıysa, bir sonraki sefer hesabınıza giriş yaptığınızda bunu göreceksiniz:
 
-![The result *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_success.png)
+![Sonuç *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_success.png)
 
 Use your mobile authenticator app to read the code and enter it. You should be logged in now!
 
-***NOTE***: If you get an authentication error, check the clock on your phone. Adjust it if needed, as an unsynchronized clock may be the cause of the error.
+***NOT***: Kimlik doğrulama hatası alırsanız, telefonunuzdaki saati kontrol edin. Hatanın nedeni senkronize olmayan bir saat olabileceğinden, gerekiyorsa saati düzeltin.

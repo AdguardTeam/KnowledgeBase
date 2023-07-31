@@ -163,7 +163,7 @@ Filtrování rozsahů IPv6 uvedených v této části bude vypnuto.
 
 #### Zachování záznamů TCP pro odchozí sokety
 
-If enabled, AdGuard sends a keepalive probe after the specified time period to ensure that the TCP connection is alive. Zde můžete zadat dobu nečinnosti protokolu udržení TCP před zahájením sond udržení a dobu mezi sondami udržení pro neodpovídajícího partnera.
+Pokud je tato funkce povolena, AdGuard po uplynutí zadané doby odešle udržovací sondu, aby se ujistil, zda je připojení TCP funkční. Zde můžete zadat dobu nečinnosti protokolu udržení TCP před zahájením sond udržení a dobu mezi sondami udržení pro neodpovídajícího partnera.
 
 Po systémem definovaném počtu neúspěšných pokusů o získání odpovědi ze serveru systém automaticky ukončí připojení TCP.
 

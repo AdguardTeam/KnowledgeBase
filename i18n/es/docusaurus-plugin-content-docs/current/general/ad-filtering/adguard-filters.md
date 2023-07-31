@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-Este artículo trata sobre los filtros que desarrollamos y que vienen preinstalados en AdGuard. To check them out, you can [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Este artículo trata sobre los filtros que desarrollamos y que vienen preinstalados en AdGuard. Para conocerlos, puedes [descargar la aplicación AdGuard](https://adguard.com/download.html?auto=true)
 
 :::
 

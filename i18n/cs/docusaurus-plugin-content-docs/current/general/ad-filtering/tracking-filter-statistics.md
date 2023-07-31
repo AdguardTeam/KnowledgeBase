@@ -5,7 +5,7 @@ sidebar_position: 4
 
 :::note
 
-The *Send statistics for ad filters usage* option is disabled by default. Nothing will be sent unless a user manually enables it to help us improve our blocking filters.
+Možnost *Odesílat statistiky o použití filtrů reklam* je ve výchozím nastavení vypnutá. Nic nebude odesláno, pokud to uživatel ručně nepovolí.
 
 :::
 
@@ -36,7 +36,7 @@ Pokud povolíte možnost *Odesílat statistiky o použití filtrů reklam*, budo
 
 Shromážděné statistiky budou pravidelně odesílány na náš server k analýze a optimalizaci filtrů.
 
-Je důležité si uvědomit, že všechny získané statistiky jsou zprůměrované a anonymizované. Tyto statistiky nepoužíváme k jiným účelům než k optimalizaci filtrů a tyto údaje neprodáváme třetím stranám. You can read about our Privacy Policy [here](https://adguard.com/privacy.html).
+Je důležité si uvědomit, že všechny získané statistiky jsou zprůměrované a anonymizované. Tyto statistiky nepoužíváme k jiným účelům než k optimalizaci filtrů a tyto údaje neprodáváme třetím stranám. O našich Zásadách ochrany osobních údajů si můžete přečíst [zde](https://adguard.com/privacy.html).
 
 ### Čím jsou statistika pravidel filtrů sledování zatížena?
 

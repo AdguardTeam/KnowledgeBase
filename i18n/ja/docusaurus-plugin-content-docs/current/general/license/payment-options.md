@@ -5,9 +5,11 @@ sidebar_position: 2
 
 ## ライセンスを購入する方法{#purchase}
 
-AdGuardライセンスは [adguard.com](https://adguard.com/license.html)にてご購入いただけます: 1.  「購入する」を押してご購入ページへ移動 2.  お好みのライセンス種類を選択（1年版／永久版、パーソナル／ファミリー） 3.  メールアドレスを入力 ※このメールアドレスにはライセンスキーとAdGuardアカウント認証用リンクが送信されますので、ご入力の際には間違いのないよう十分ご注意ください。 4.  お支払い方法を選択 iOS用「AdGuard Pro」は、App Storeで購入することができます。 また、AdGuard広告ブロッカーライセンスは、様々な販売代理店からも販売されています。
+AdGuardライセンスは [adguard.com](https://adguard.com/license.html)にてご購入いただけます: 1.  「購入する」を押してご購入ページへ移動 2.  お好みのライセンス種類を選択（1年版／永久版、パーソナル／ファミリー） 3.  メールアドレスを入力 ※このメールアドレスにはライセンスキーとAdGuardアカウント認証用リンクが送信されますので、ご入力の際には間違いのないよう十分ご注意ください。 4.  お支払い方法を選択 We offer various payment options, including Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay, and UnionPay. We also accept the following cryptocurrencies: Bitcoin, Ethereum, Litecoin, and Tether.
 
-The availability of AdGuard products in app stores and by distributors depends on your country.
+iOS用「AdGuard Pro」は、App Storeで購入することができます。
+
+また、AdGuard広告ブロッカーライセンスは、様々な販売代理店からも販売されています。 The availability of AdGuard products in app stores and by distributors depends on your country.
 
 ## ライセンスをアップグレードする方法{#upgrade}
 
