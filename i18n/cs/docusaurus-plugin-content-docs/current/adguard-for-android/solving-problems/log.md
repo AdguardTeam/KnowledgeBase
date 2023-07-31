@@ -1,5 +1,5 @@
 ---
-title: How to collect debug logs
+title: Jak shromažďovat záznamy ladění
 sidebar_position: 2
 ---
 
@@ -9,20 +9,20 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 :::
 
-In this article, we'll guide you through the process of collecting debug logs, an essential troubleshooting step for solving complex issues that may potentially arise. Debug logs provide detailed insight into the inner workings of AdGuard for Android. If the AdGuard support team askes you to provide debug logs, simply follow these instructions.
+V tomto článku vás provedeme procesem shromažďování záznamů ladění, což je zásadní krok při řešení složitých problémů, které mohou nastat. Záznamy ladění poskytují podrobný náhled do vnitřního fungování AdGuardu pro Android. Pokud vás tým podpory AdGuardu požádá o poskytnutí záznamů ladění, postupujte podle těchto pokynů.
 
 ### Shromažďování záznamů ladění
 
 Chcete-li shromáždit záznam **ladění** a odeslat nám jej, musíte provést následující kroky:
 
-1. Go to *Settings* → *General* → *Advanced*.
-2. Tap *Logging level* and set it to *Debug*.
-3. Reproduce the problem and try to remember the exact time it occurred.
-4. Wait a while, then return to *Settings* and choose the *Support* tab. Tap *Report a bug* and complete the required fields. Don't forget to check the *Send app logs and system info* checkbox. Finally tap *Send*.
+1. Jděte do *Nastavení* → *Obecné* → *Pokročilé*.
+2. Klepněte na *Úroveň záznamů* a nastavte ji na *Ladění*.
+3. Reprodukujte problém a pokuste se zapamatovat si přesný čas, kdy k němu došlo.
+4. Chvíli počkejte, poté se vraťte do *Nastavení* a vyberte kartu *Podpora*. Klepněte na *Nahlásit chybu* a vyplňte požadovaná pole. Nezapomeňte zaškrtnout políčko *Odeslat záznamy aplikací a systémové informace*. Nakonec klepněte na *Odeslat*.
 
-If you're interested in following the resolution of your issue and engaging in a dialogue with the developers, we recommend that you take the following steps after completing the first three:
+Pokud máte zájem sledovat řešení svého problému a navázat dialog s vývojáři, doporučujeme vám po dokončení prvních tří kroků provést následující:
 
-4. Wait a while, then return to the *Advanced* screen and export logs via *Export logs and system info*. Then report a bug on GitHub by following these [instructions](/guides/report-bugs.md).
-5. After creating an issue on GitHub, send the log file to devteam@adguard.com. Include the time of the bug and attach a link to your issue or its number (it appears as #number next to the title). Alternatively, you can upload the log file to Google Drive and send it to devteam@adguard.com. Add the file link to your GitHub issue
+4. Chvíli počkejte, poté se vraťte na obrazovku *Pokročilé* a exportujte záznamy pomocí *Exportovat záznamy a systémové informace*. Poté nahlaste chybu na GitHub podle těchto [pokynů](/guides/report-bugs.md).
+5. Po vytvoření problému na GitHubu odešlete soubor se záznamem na adresu devteam@adguard.com. Uveďte čas chyby a připojte odkaz na problém nebo jeho číslo (zobrazuje se jako #číslo vedle názvu). Soubor se záznamem můžete také nahrát na Disk Google a odeslat jej na adresu devteam@adguard.com. Přidejte odkaz na soubor do svého problému na GitHubu
 
 

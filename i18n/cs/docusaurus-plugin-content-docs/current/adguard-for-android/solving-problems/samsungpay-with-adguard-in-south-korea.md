@@ -9,21 +9,21 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 :::
 
-A number of users have encountered an issue where Samsung Pay does not work while AdGuard is running. This issue occurs almost exclusively on devices registered in South Korea.
+Řada uživatelů se setkala s problémem, kdy Samsung Pay nefunguje, když je spuštěn AdGuard. Tento problém se vyskytuje téměř výhradně u zařízení registrovaných v Jižní Korei.
 
-What is causing this issue? Sometimes Samsung Pay does not work on devices with VPN services running, and AdGuard is one of these apps. Ve výchozím nastavení používá AdGuard k filtrování provozu lokální VPN. As a consequence, users had to disable AdGuard when making payments with Samsung Pay. This can now be avoided with the new **Detect Samsung Pay** feature. When this option is enabled, the AdGuard app is paused whenever the user opens the Samsung Pay app and resumes when the app is closed.
+Co je příčinou tohoto problému? Někdy Samsung Pay nefunguje na zařízeních se spuštěnými službami VPN a AdGuard je jednou z těchto aplikací. Ve výchozím nastavení používá AdGuard k filtrování provozu lokální VPN. V důsledku toho museli uživatelé při platbách pomocí Samsung Pay vypnout AdGuard. Tomu se nyní lze vyhnout pomocí nové funkce **Detekce Samsung Pay**. Když je tato možnost povolena, aplikace AdGuard se pozastaví, kdykoli uživatel otevře aplikaci Samsung Pay a obnoví se po jejím zavření.
 
-To enable **Detect Samsung Pay**, follow these steps:
+Chcete-li povolit **DetekciSamsung Pay**, postupujte takto:
 
-1. Go to **Settings** → **General** → **Advanced**→ **Low-level settings**
+1. Přejděte na **Nastavení** → **Obecné** → **Pokročilé** → **Nízkoúrovňová nastavení**
 
-2. Scroll to **Detect Samsung Pay** and move the slider to the right
+2. Přejděte na **Detekci Samsung Pay** a posuňte posuvník doprava
 
-3. Tap **Allow permissions** and give AdGuard permission to collect your data
+3. Klepněte na **Udělit oprávnění** a udělte AdGuard oprávnění shromažďovat vaše data
 
-> We don't collect any personal data, we just need statistics about how Samsung Pay is working to make the **Detect Samsung Pay** feature work.
+> Neshromažďujeme žádné osobní údaje, potřebujeme pouze statistiky o tom, jak Samsung Pay funguje, aby mohla fungovat funkce **Detekce Samsung Pay**.
 
-Once you enable this feature, AdGuard will send you notifications as shown in the screenshot.
+Jakmile tuto funkci povolíte, bude vám AdGuard posílat oznámení, jak je znázorněno na obrázku.
 
 ![samsungpay *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/samsungpay-with-adguard-in-south-korea/en.gif)
 

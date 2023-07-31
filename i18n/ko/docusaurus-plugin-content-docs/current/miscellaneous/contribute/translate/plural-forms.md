@@ -6,7 +6,7 @@ sidebar_position: 4
 
 There are a lot of differences between the world’s languages. One of these differences is the use of plural forms that can cause huge difficulties when it comes to localization issue.
 
-We strongly recommend you to properly read this article to learn more about plural forms and how they are being used in AdGuard translations.
+복수형에 대한 자세한 내용과 AdGuard 번역에서 복수형이 어떻게 사용되는지 알아보려면 이 글을 읽어보세요.
 
 ## What do plural forms mean? {#plurals}
 

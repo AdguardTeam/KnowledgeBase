@@ -21,7 +21,7 @@ Chcete-li získat hlášení o chybě přímo ze zařízení, postupujte takto:
 
 ![Hlášení o chybě *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
 
-3. Select the type of bug report you want and tap **Report**.
+3. Vyberte požadovaný typ hlášení o chybě a klepněte na **Nahlásit**.
 
 :::note
 
@@ -57,7 +57,7 @@ Postupujte podle těchto pokynů:
 
 3. Zapněte **USB ladění**.
 
-4. Increase **Logger buffer** sizes to 4 MB per log buffer.
+4. Navyšte **velikost vyrovnávací paměti** na 4 MB.
 
 4 MB by mělo stačit na uložení záznamů, které potřebujeme, dokud nebudete schopni provést druhou část (získání záznamů ze zařízení);
 

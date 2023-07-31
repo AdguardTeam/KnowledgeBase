@@ -7,7 +7,7 @@ toc_max_heading_level: 4
 
 :::info
 
-In this article, we explain how to write custom filtering rules for use in AdGuard products. To test your rules, you can [download the AdGuard app](https://adguard.com/download.html?auto=true)
+在本文中，我们解释如何编写用于 AdGuard 产品的自定义过滤规则。 To test your rules, you can [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
 :::
 
@@ -19,7 +19,7 @@ To describe the syntax of our filtering rules, we use [Augmented BNF for Syntax 
 
 :::info
 
-Originally, the AdGuard's syntax was based on the syntax of Adblock Plus rules. Later, we extended it with new types of rules for better ad filtering. Some parts of this article about the rules common both to AdGuard and ABP were taken from [this article](https://adblockplus.org/en/filters).
+Originally, the AdGuard's syntax was based on the syntax of Adblock Plus rules. Later, we extended it with new types of rules for better ad filtering. 本文中有关 AdGuard 和 ABP 共同规则的部分内容摘自[这篇文章](https://adblockplus.org/en/filters)。
 
 :::
 

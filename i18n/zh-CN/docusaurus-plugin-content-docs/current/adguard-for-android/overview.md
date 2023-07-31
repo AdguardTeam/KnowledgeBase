@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+本文适用于安卓版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 要了解工作原理， 请[下载 AdGuard 应用程序](https://adguard.com/download.html?auto=true)
 
 :::
 
@@ -31,7 +31,7 @@ The program uses a lot of different filters, our own and third-party ones, sorte
 
 ![Filters *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/features/filters1.png)
 
-Find out more about all the filters available for AdGuard products by reading their descriptions in the app or [this comprehensive article](/general/ad-filtering/adguard-filters).
+阅读应用程序中的说明或[这篇文章](/general/ad-filtering/adguard-filters)，了解有关 AdGuard 产品所有可用过滤器的更多信息。
 
 ## Custom filters
 
@@ -184,7 +184,7 @@ But DNS servers not only vary by function. Besides, they can also differ by supp
 
 DNS-over-QUIC (DoQ) is a rather new encryption protocol and AdGuard DNS is the first public resolver that supports it. Unlike DoH and DoT, it uses QUIC as a transport protocol and finally brings DNS back to its roots — working over UDP. It brings all the good things that QUIC has to offer — out-of-the-box encryption, reduced connection times, better performance when data packets are lost. Also, QUIC is supposed to be a transport-level protocol and there are no risks of metadata leaks that could happen with DoH.
 
-To learn more about DNS-over-QUIC, check out [this article](https://adguard.com/en/blog/dns-over-quic.html) dedicated entirely to it.
+要了解更多关于 DNS-over-QUIC，请查看[这篇文章](https://adguard.com/en/blog/dns-over-quic.html)。
 
 To enable DoQ in AdGuard for Android, perform the following steps:
 

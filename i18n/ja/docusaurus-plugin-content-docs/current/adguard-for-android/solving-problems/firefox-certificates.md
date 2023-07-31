@@ -5,7 +5,7 @@ sidebar_position: 11
 
 :::info
 
-This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Android」について書いています。 実際に使ってみるには、[AdGuardアプリをダウンロード](https://adguard.com/download.html?auto=true)してください。
 
 :::
 
@@ -48,7 +48,7 @@ Firefox (およびそれをベースにしたブラウザ) がAdGuard証明書�
     - Tap the **Build number** line 7 times. その後、「**開発者になりました！**」のような通知が表示されます（必要に応じて、デバイスのロック解除コードを入力してください）。
     - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
 3. [Firefox](https://www.mozilla.org/en-US/firefox/releases/)ブラウザ（リリース版）をインストールします
-4. Open the **AdGuard settings** → **Network** → **HTTPS Filtering** → Install the certificate in **Firefox** → **INSTALL FOR OLD VERSIONS**;
+4. Open the **AdGuard settings** (gear icon in the bottom right corner) → **Filtering** → **Network** → **HTTPS filtering** → **Security certificate** → **Instructions for Firefox** → **Install for old versions**;
 5. `adb shell su` と `cd data/data/...` を使って `data/data/org.mozilla.firefox/files/mozilla` フォルダを開き、`xxxxxxx.default` という名前のフォルダを参照して名前を覚えておいてください。
 6. 例のフォルダの中には、2つのファイルが必要になります:
     - `cert9.db`

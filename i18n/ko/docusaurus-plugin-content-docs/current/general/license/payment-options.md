@@ -5,9 +5,11 @@ sidebar_position: 2
 
 ## 라이선스를 구매하는 방법{#purchase}
 
-AdGuard 라이선스는 [adguard.com](https://adguard.com/license.html)에서 구매할 수 있으며, iOS용 AdGuard Pro는 App Store에서 구입할 수 있습니다. 광고 차단기 라이선스는 다양한 유통업체에서도 판매됩니다.
+AdGuard 라이선스는 [adguard.com](https://adguard.com/license.html)에서 구매할 수 있으며, We offer various payment options, including Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay, and UnionPay. We also accept the following cryptocurrencies: Bitcoin, Ethereum, Litecoin, and Tether.
 
-The availability of AdGuard products in app stores and by distributors depends on your country.
+iOS용 AdGuard Pro는 App Store에서 구입할 수 있습니다.
+
+광고 차단기 라이선스는 다양한 유통업체에서도 판매됩니다. The availability of AdGuard products in app stores and by distributors depends on your country.
 
 ## 라이선스를 업그레이드하는 방법{#upgrade}
 

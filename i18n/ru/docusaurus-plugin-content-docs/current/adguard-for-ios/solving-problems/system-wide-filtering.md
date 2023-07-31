@@ -1,55 +1,53 @@
 ---
-title: Как настроить системную фильтрацию в AdGuard для iOS
+title: How to enable system-wide filtering in AdGuard for iOS
 sidebar_position: 2
 ---
 
 :::info
 
-В этой статье рассказывается об AdGuard для iOS — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://adguard.com/download.html?auto=true)
+В этой статье рассказывается об AdGuard для iOS — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. To see how it works firsthand, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
 :::
 
 ## Фильтрация на системном уровне
 
-Фильтрация на системном уровне — это блокировка рекламы и трекеров за пределами Safari, то есть в других браузерах и приложениях. В этой статье мы расскажем, как настроить её на вашем устройстве iOS.
+Фильтрация на системном уровне — это блокировка рекламы и трекеров за пределами Safari, то есть в других браузерах и приложениях. This article will tell you how to enable it on your iOS device.
 
-На iOS единственный способ заблокировать рекламу и трекинг на системном уровне — это [DNS-фильтрация](https://adguard-dns.io/kb/general/dns-filtering/). Для начала вам понадобится включить DNS-защиту. Сделать это можно, открыв раздел *настройки AdGuard для iOS* → *DNS-защита*. Передвиньте ползунок переключателя в положение «вкл».
+On iOS, the only way to block ads and trackers system-wide is to use [DNS filtering](https://adguard-dns.io/kb/general/dns-filtering/).
+
+First, you have to enable DNS protection. Для этого:
+
+1. Open *AdGuard for iOS*.
+2. Tap *Protection* icon (the second icon in the bottom menu bar).
+3. Turn *DNS protection* switch on.
 
 ![Экран DNS-защиты *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_dns_protection.PNG)
 
-Если ваша цель — заблокировать рекламу и трекеры везде, у вас есть два варианта:
+Now, if your purpose is to block ads and trackers system-wide, you have three options:
 
-1. Включить сервер AdGuard DNS (*Настройки* → *DNS-защита* → *DNS-сервер* → *AdGuard DNS*).
-2. Добавить DNS-фильтр или hosts-файл, который будет блокировать рекламные и трекинговые домены, например, фильтр AdGuard DNS.
+ 1. Use AdGuard DNS filter (*Protection* (the shield icon in the bottom menu) → *DNS protection* → *DNS filtering* → *DNS filters* → *AdGuard DNS filter*).
+ 2. Use AdGuard DNS server (*Protection* (the shield icon in the bottom menu) → *DNS protection* → *DNS server* → *AdGuard DNS*) or another blocking DNS server to your liking.
+ 3. Add a custom DNS filter/hosts file to your liking.
 
-Настройка второго варианта займёт немного больше времени, зато он обладает несколькими преимуществами:
+The first and third option have several advantages:
 
-* Можно использовать любой DNS-сервер по своему предпочтению, а не только конкретный блокирующий сервер.
-* Можно добавлять сразу несколько DNS-фильтров и/или hosts-файлов, но не использовать несколько DNS-серверов одновременно.
+* You can use any DNS server at your discretion and you are not tied up to a specific blocking server, because the filter does the blocking.
+* You can add multiple DNS filters and/or hosts files (although using too many might slow down AdGuard).
 
 ![Как работает DNS-фильтрация](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_en.png)
 
-## Как добавить DNS-фильтр/файл hosts
+## How to add custom DNS filter/hosts file
 
-Вы можете добавить любой DNS-фильтр или файл hosts, инструкция будет одинаковой. Например, добавим [DNS-фильтр AdGuard](https://github.com/AdguardTeam/AdguardSDNSFilter). Фильтр, составленный из нескольких фильтров (Базовый фильтр AdGuard, Фильтр социальных сетей, Фильтр счётчиков и систем аналитики, Фильтр мобильной рекламы, EasyList, EasyPrivacy и т. д.) и специально упрощённый, чтобы быть более совместимым с блокировкой рекламы на уровне DNS.
+You can add any DNS filter or hosts file you like.
 
-1. Откройте *настройки AdGuard для iOS* → *Общие*.
-2. Включите *Расширенный режим*. Появится вкладка *Расширенные настройки*. Откройте её.
+For the sake of the example, let's add [OISD Blocklist Big](https://oisd.nl/).
 
-![Откройте настройки AdGuard и включите Расширенный режим *mobile_border](https://cdn.adtidy.org/public/Adguard/Release_notes/iOS/v4.0/advanced_mode_en.jpg)
+1. Copy this link: `https://big.oisd.nl` (it's a link for OISD Blocklist Big filter)
+2. Open *Protection* (the shield icon in the bottom menu) → *DNS protection* → *DNS filtering* → *DNS filters*.
+3. Tap *Add a filter*.
+4. Paste the link into the filter URL field.
+5. Tap *Next* → *Add*.
 
-![Экран расширенных настроек *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_advanced_settings.PNG)
+![Экран добавления DNS-фильтра *mobile_border](https://cdn.adtidy.org/blog/new/ot4okIMGD236EB8905471.jpeg)
 
-:::note
-
-Мы не рекомендуем менять другие *Расширенные настройки*, особенно *Низкоуровневые настройки*. Изменение некоторых из них может привести к проблемам с интернетом или скомпрометировать вашу онлайн-конфиденциальность. Не меняйте их, если не знаете, что делаете. Далее описаны точные шаги, необходимые для добавления фильтра AdGuard DNS.
-
-:::
-
-3. Скопируйте эту ссылку: `https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt` (это ссылка на фильтр AdGuard DNS)
-4. Откройте *настройки AdGuard для iOS* → *DNS-защита* → *DNS-фильтрация* (доступна, когда *Расширенный режим* включен) → *DNS-фильтры*.
-5. Нажмите *Добавить фильтр*, вставьте ссылку в поле URL фильтра и нажмите кнопку «Далее».
-
-![Экран добавления DNS-фильтра *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_adding_a_filter.PNG)
-
-Вы можете добавлять любое количество других фильтров аналогичным образом, подставляя их URL на шаге 3. Огромный выбор различных фильтров и ссылки на них доступны [здесь](https://filterlists.com).
+Add any number of other DNS filters the same way by pasting a different URL at step 4. Огромный выбор различных фильтров и ссылки на них доступны [здесь](https://filterlists.com).

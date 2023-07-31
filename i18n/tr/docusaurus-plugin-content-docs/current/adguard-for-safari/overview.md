@@ -21,7 +21,7 @@ The first tab is the General screen where you can set up basic things like notif
 
 ![Filters tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/Filters.png)
 
-A filter is a list of rules written in a special syntax. Following these rules, content blockers can filter web traffic: block ads or requests to malicious websites.
+Filtre, özel bir söz dizimiyle yazılmış bir kurallar listesidir. Following these rules, content blockers can filter web traffic: block ads or requests to malicious websites.
 
 Filters are combined into eight thematic categories: *Ad Blocking, Privacy, Social widgets, Annoyances, Security, Language-specific filters, Custom, and Other filters*.
 
@@ -47,13 +47,13 @@ In the Content blockers tab, you can see which content blockers are enabled, how
 
 :::tip
 
-You can manage enabled filters in the Filters tab. In the Content blockers section, you can only see the list of already enabled filters.
+Etkin filtreleri Filtreler sekmesinde yönetebilirsiniz. In the Content blockers section, you can only see the list of already enabled filters.
 
 :::
 
 ### AdGuard General {#adguard_general}
 
-*AdGuard General* is a content blocker that combines the most essential filters for blocking ads. We recommend keeping the AdGuard Base Filter always enabled.
+*AdGuard Genel* reklamları engellemek için en temel filtreleri birleştiren bir içerik engelleyicidir. AdGuard Temel Filtresini her zaman etkin tutmanızı tavsiye ederiz.
 
 ### AdGuard Privacy {#adguard_privacy}
 
@@ -95,6 +95,6 @@ In the About tab, you can see info about the current version of your product and
 
 :::note Reminder
 
-AdGuard for Safari can be downloaded for free [from the App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259). A detailed setup instruction is available in the [Knowledge base](../installation).
+Safari için AdGuard, [App Store'dan](https://apps.apple.com/app/adguard-for-safari/id1440147259) ücretsiz olarak indirilebilir. A detailed setup instruction is available in the [Knowledge base](../installation).
 
 :::

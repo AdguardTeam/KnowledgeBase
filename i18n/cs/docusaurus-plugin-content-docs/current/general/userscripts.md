@@ -117,7 +117,7 @@ AdGuard podporuje jak staré funkce GM\_, tak nové rozhraní GM4 API, které po
 
 :::note
 
-All listed old Greasemonkey functions are deprecated but still supported.
+Všechny uvedené staré funkce Greasemonkey jsou zastaralé, ale stále podporované.
 
 :::
 

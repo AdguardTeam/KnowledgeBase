@@ -101,7 +101,7 @@ From this tab you can easily proceed to install AdGuard Browser Assistant, which
 
 AdGuard can significantly broaden website functionality working as a [user script manager](/general/userscripts). AdGuard Users can add their own scripts, as well as manage existing ones.
 
-![Extensions *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
+![Uzantılar *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
 
 **Automatically detect userscripts**
 
