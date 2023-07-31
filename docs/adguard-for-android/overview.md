@@ -193,7 +193,7 @@ Browsing Security is safe: AdGuard does not know what websites you visit. It use
 
 AdGuard for Android creates a local VPN to filter traffic. Thus, other VPN apps cannot be used while AdGuard for Android is running. However, both AdGuard and AdGuard VPN apps have Integrated modes that let you use them together.
 
-In this mode, AdGuard VPN acts as an outbound proxy server through which AdGuard routes its traffic. This allows AdGuard to create a VPN interface and block ads and trackers, while all traffic is routed through AdGuard VPN's tunnel.
+In this mode, AdGuard VPN acts as an outbound proxy server through which AdGuard routes its traffic. This allows AdGuard to create a VPN interface and block ads and trackers locally, while AdGuard VPN routes all traffic through a remote server.
 
 If you disable AdGuard VPN, AdGuard will stop using it as an outbound proxy. If you disable AdGuard, AdGuard VPN will route traffic through its own VPN interface.
 
@@ -398,7 +398,7 @@ In this section, you can find information about your license and manage it:
 
 ## Support
 
-Use this section if you have any questions or suggestions regarding AdGuard for Android. We recommend consulting *FAQ* or this knowledge base before contacting support.
+Use this section if you have any questions or suggestions regarding AdGuard for Android. We recommend consulting *[FAQ](https://adguard.com/support/adguard_for_android.html)* or this knowledge base before contacting support.
 
 ![Support *mobile_border](https://cdn.adtidy.org/blog/new/cz55usupport.png)
 
