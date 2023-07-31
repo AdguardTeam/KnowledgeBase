@@ -138,7 +138,8 @@ To create a HAR file in Safari:
 
 7. Reproduce the steps that create the issue.
 
-8. Save session as a .har file by clicking the ***Export*** icon next to the ***delete Trash*** icon.
+8. Save session as a .har file by clicking the ***Export*** icon next to the ***Delete Trash*** icon.
+9. ```
 
 9. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, too.
 
