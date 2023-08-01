@@ -608,7 +608,7 @@ The rule corresponds to the main frame document requests, i.e. HTML documents th
 
 By default, AdGuard does not block the requests that are loaded in the browser tab (e.g. "main frame bypass"). The idea is not to prevent pages from loading as the user clearly indicated that they want this page to be loaded. However, if the `$document` modifier is specified explicitly, AdGuard does not use that logic and prevents the page load. Instead, it responds with a "blocking page".
 
-If this modifier is used with an exclusion rule (`@@`), it completely disables blocking on corresponding pages. It is equivalent to using `$elemhide`, `$content`, `$urlblock`, `$jsinject`, `$extension` modifiers simultaneously.
+If this modifier is used with an exclusion rule (`@@`), it completely disables blocking on corresponding pages. It is equivalent to using `$elemhide`, `$content`, `$urlblock`, `$jsinject`, `$extension` modifiers simultaneously but only if this modifier is written in the rule and not added hidden, for example in rule `@@example.com$removeheader` which implicitly adds `$document`.
 
 **Examples**
 
@@ -2072,7 +2072,9 @@ All allowed content types:
 * [`$xmlhttprequest`](#xmlhttprequest-modifier);
 
 This also includes rules that implicitly add the modifier `$document`:
-* [`$popup`](#popup-modifier);
+* [`$popup`](#popup-modifier),
+* [`$removeparam`](#removeparam-modifier),
+* [`$removeheader`](#removeheader-modifier);
 
 Or special exceptions that implicitly add `$document,subdocument`:
 * [`$content`](#content-modifier),
@@ -2134,7 +2136,7 @@ Each of which adds `10^4` to the priority.
 As well as exception with [`$document modifier`](#document-modifier): because it's an alias for `$elemhide,content,jsinject,urlblock,extension`.
 It will add `10^4` for each modifier from [the top list](#priority-category-4), `10^4 * 5` in total.
 
-In addition, each of these exceptions implicitly adds the two allowed content-type modifiers `$document,subdocument`.
+In addition, each of these exceptions implicitly adds the two allowed content-type modifiers `$document,subdocument`, but not when these exceptions are obtained by using the `$document` alias. For this case `$subdocument` should be provided explicitly: `@@||example.com$document,subdocument`.
 
 #### Allowlist rules {#priority-category-5}
 
@@ -2174,19 +2176,19 @@ Weight of the rule: base weight + weight of the modifier from [category 1](#prio
 
 `||example.org^$removeparam=p`
 
-Weight of the rule: base weight + 0, since $removeparam [is not involved](#priority-category-extra) in the priority calculation:
-`1 + 0 = 1`.
+Weight of the rule: base weight + 0, since $removeparam [is not involved](#priority-category-extra) in the priority calculation + implicitly added allowed content type `document`, [category 2](#priority-category-2):
+`1 + 0 + (50 + 50 / 1) = 101`.
 
 **Example 4**
 
 `||example.org^$document,redirect=nooptext`
 
 Rule weight: base weight + allowed content type, [category 3](#priority-category-3) + $redirect from [category 6](#priority-category-6):
-`1 + (100 + 100 / 1) + 1000 = 1201`.
+`1 + (50 + 50 / 1) + 1000 = 1101`.
 
 **Example 5**
 
-`@@||example.org^$removeparam=p,document`
+`@@||example.org^$removeparam=p,subdocument`
 
 Rule weight: base weight + allowlist rule, [category 5](#priority-category-5) + 0 because $removeparam [is not involved](#priority-category-extra) in the priority calculation + allowed content type, [category 2](#priority-category-2):
 `1 + 10000 + 0 + (50 + 50 / 1) = 10101`.
@@ -2195,30 +2197,30 @@ Rule weight: base weight + allowlist rule, [category 5](#priority-category-5) + 
 
 `@@||example.com/ad/*$domain=example.org|example.net,important`
 
-Rule weight: base weight + allowlist rule, [category 5](#priority-category-5) + important rule, [category 7](#priority-category-7) + allowed domains, [category 3](#priority-category-3):
-`1 + 10000 + 1000000 + (100 + 100 / 2) = 1010152`.
+Rule weight: base weight + allowlist rule, [category 5](#priority-category-5) + allowed domains, [category 3](#priority-category-3) + important rule, [category 7](#priority-category-7):
+`1 + 100000 + 1000000 + (100 + 100 / 2) = 1100151`.
 
 **Example 7**
 
-`@@||example.org^$document` without additional modifiers is an alias for
+`@@||example.org^$document` is an alias for
 `@@||example.com^$elemhide,content,jsinject,urlblock,extension`
 
-Rule weight: base weight + specific exceptions, [category 4](#priority-category-4) + two allowed content types (document and subdocument), [category 2](#priority-category-2):
-`1 + 10000 * 4 + (50 + 50 / 2) = 40076`.
+Rule weight: base weight + allowlist rule, [category 5](#priority-category-5) + five specific exceptions, [category 4](#priority-category-4) + two allowed content types (document and subdocument), [category 2](#priority-category-2):
+`1 + 100000 + 10000 * 5 + (50 + 50 / 2) = 50076`.
 
 **Example 8**
 
 `*$script,domain=a.com,denyallow=x.com|y.com`
 
 Rule weight: base weight + allowed content type, [category 2](#priority-category-2) + allowed domain, [category 3](#priority-category-3) + denyallow, [category 1](#priority-category-1):
-`1 + (50 + 50/1) + (100 + 100 / 1) + 1 = 303`.
+`1 + (50 + 50 / 1) + (100 + 100 / 1) + 1 = 302`.
 
 **Example 9**
 
 `||example.com^$all` (alias to `||example.com^$document,subdocument,image,script,media,etc. + $popup`)
 
 Rule weight: base weight + allowed content types, [category 2](#priority-category-2):
-`1 + (50 + 50/12) = 55`.
+`1 + (50 + 50/12) = 55.17 = 56` because rounding up is applied.
 
 # Non-basic rules
 
