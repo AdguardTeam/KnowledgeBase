@@ -128,8 +128,7 @@ To create a HAR file in Safari:
 
 4. Check ***Preserve Log*** checkbox on left side of the Network tabs, within the ***Other filter options...*** menu.
 
-![safari](https://github.com/AdguardTeam/KnowledgeBase/assets/95468948/6363e881-98f8-4fb7-9c6a-2eb93ce25a5e)
-
+![safari](https://cdn.adtidy.org/content/kb/ad_blocker/safari/preserve-log.png)
 
 5. Clear current Network items by clicking the ***delete Trash*** icon at the far right of Network tabs.
 - Keyboard: ***⌘+K***
@@ -139,7 +138,6 @@ To create a HAR file in Safari:
 7. Reproduce the steps that create the issue.
 
 8. Save session as a .har file by clicking the ***Export*** icon next to the ***Delete Trash*** icon.
-9. ```
 
 9. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, too.
 
@@ -169,6 +167,6 @@ To create HAR files, follow these steps:
 
 3. Reproduce the problem.
 
-4. Go to ***General settings*** → Click on ***Export logs*** → ***Save***.
+4. Go to ***General settings*** → Click ***Export logs*** → ***Save***.
 
 5. Disable HAR writing by unchecking the corresponding box.
