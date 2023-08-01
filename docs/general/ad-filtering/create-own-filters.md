@@ -3365,7 +3365,7 @@ Rules with `$path` modifier are supported by AdGuard for Windows, Mac, and Andro
 
 :::
 
-#### **`url`** {#non-basic-url-modifier}
+#### **`$url`** {#non-basic-url-modifier}
 
 `$url` modifier limits the rule application area to URLs matching the specified mask.
 
@@ -3386,7 +3386,7 @@ The [special characters](#basic-rules-special-characters) and [regular expressio
 
 :::info Compatibility
 
-Rules with the `$url` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**.
+Rules with the `$url` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**, and AdGuard Browser Extension, **running TSUrlFilter vX.X.X or later**.
 
 :::
 
