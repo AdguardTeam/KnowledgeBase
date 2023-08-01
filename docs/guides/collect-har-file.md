@@ -116,8 +116,9 @@ To create a HAR file in Internet Explorer 11:
 
 To create a HAR file in Safari:
 
-1. Check the Safari menu bar at the top of the screen for a ***Develop*** menu. Check the checkbox at the bottom next to ***Show Develop menu in menu bar***.
-- If not visible, turn it on by going to ***Safari→Preferences→Advanced***.
+1. Check the Safari menu bar at the top of the screen for a ***Develop*** menu.
+- If not visible, turn it on by going to ***Safari→Settings→Advanced***.
+- Check the checkbox at the bottom next to ***Show Develop menu in menu bar***.
 
 2. Go to the URL where the issue occurs. Do not reproduce the issue yet.
 
@@ -125,15 +126,20 @@ To create a HAR file in Safari:
 - From menu: ***Develop→Show Web Inspector→Network***.
 - Keyboard: ***⌥+⌘+I→Network***
 
-4. Check ***Preserve Log*** checkbox on right side of the Network tabs.
+4. Check ***Preserve Log*** checkbox on left side of the Network tabs, within the ***Other filter options...*** menu.
+
+![safari](https://github.com/AdguardTeam/KnowledgeBase/assets/95468948/6363e881-98f8-4fb7-9c6a-2eb93ce25a5e)
+
 
 5. Clear current Network items by clicking the ***delete Trash*** icon at the far right of Network tabs.
+- Keyboard: ***⌘+K***
 
-6. Check the ***Disable cache*** check box.
+6. Check the ***Disable caches*** check box.
 
 7. Reproduce the steps that create the issue.
 
-8. Save session as a .har file by clicking the ***Export*** icon next to ***Preserve Log***.
+8. Save session as a .har file by clicking the ***Export*** icon next to the ***Delete Trash*** icon.
+9. ```
 
 9. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, too.
 
