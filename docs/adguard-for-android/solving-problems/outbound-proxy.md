@@ -127,7 +127,7 @@ You should remove Shadowsocks application from filtering before setting up the p
 
 1. Open Clash and go to **Settings** → **Network** → **Route System Traffic** and disable it. This will put Clash into proxy mode.
 2. Open Adguard and go to **Settings** → **Filtering** → **Apps** → **App management**. Choose **Clash For Android** and disable **Route traffic through Adguard**. In this way you will eliminate traffic looping.
-3. Then go to **Settings** → **Network** → **Proxy** → **Proxy server** 
+3. Then go to **Settings** → **Network** → **Proxy** → **Proxy server**. 
 4. Tap **Add proxy server** and fill the fields:
 
     Field      |  Value
