@@ -2136,7 +2136,7 @@ Each of which adds `10^4` to the priority.
 As well as exception with [`$document modifier`](#document-modifier): because it's an alias for `$elemhide,content,jsinject,urlblock,extension`.
 It will add `10^4` for each modifier from [the top list](#priority-category-4), `10^4 * 5` in total.
 
-In addition, each of these exceptions implicitly adds the two allowed content-type modifiers `$document,subdocument`, but not when these exceptions are obtained by using the `$document` alias. For this case `$subdocument` should be provided explicitly: `@@||example.com$document,subdocument`.
+In addition, each of these exceptions implicitly adds the two allowed content-type modifiers `$document,subdocument`, but not when these exceptions are obtained using the `$document` alias. In this case, `$subdocument` should be specified explicitly: `@@||example.com$document,subdocument`.
 
 #### Allowlist rules {#priority-category-5}
 
