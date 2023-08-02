@@ -2220,7 +2220,7 @@ Rule weight: base weight + allowed content type, [category 2](#priority-category
 `||example.com^$all` (alias to `||example.com^$document,subdocument,image,script,media,etc. + $popup`)
 
 Rule weight: base weight + allowed content types, [category 2](#priority-category-2):
-`1 + (50 + 50/12) = 55.17 = 56` because rounding up is applied.
+`1 + (50 + 50/12) = 55.17 = 56` due to rounding.
 
 # Non-basic rules
 
