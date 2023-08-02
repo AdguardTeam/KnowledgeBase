@@ -3386,7 +3386,8 @@ The [special characters](#basic-rules-special-characters) and [regular expressio
 
 :::info Compatibility
 
-Rules with the `$url` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**, and AdGuard Browser Extension, **running TSUrlFilter vX.X.X or later**.
+* Rules with the `$url` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**, and AdGuard Browser Extension, **running TSUrlFilter vX.X.X or later**.
+* `url` modifiers is not compatible with `$domain` and `$path` modifiers and domain-specific rules. For example, the rule `[$url=/category/*]example.com###textad` will be rejected.
 
 :::
 
