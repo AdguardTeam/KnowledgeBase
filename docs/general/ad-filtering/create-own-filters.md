@@ -1481,6 +1481,8 @@ This is basically a Firewall-like rule allowing to fully block or unblock access
 
 We recommend to get acquainted with this [article](#regexp-support) for better understanding of regular expressions.
 
+`$network` modifier can only be included in rules alongside with `$app` and `$important` modifiers and no other ones.
+
 **Examples**
 
 * `174.129.166.49:3478^$network` blocks access to `174.129.166.49:3478` (but not to `174.129.166.49:34788`).
