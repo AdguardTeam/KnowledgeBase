@@ -36,6 +36,34 @@ To fill in the "Hashes of the server's certificate" field, you can use the follo
 echo | openssl s_client -connect <IP_ADDRESS>:<PORT> -servername <SERVER_NAME> 2>/dev/null | openssl x509 -pubkey -noout | openssl pkey -pubin -outform der | openssl dgst -sha256
 ```
 
+**NOTE**: Keep in mind that the result of the hash calculation command can change over time as the server's certificate may be updated. Therefore, if your DNS stamp suddenly stops working, you may need to recalculate the hash of the certificate and generate a new stamp. Regularly updating your DNS stamp will help ensure the continued secure operation of your Secure DNS service.
+
 ## Using the DNS Stamp
 
 You now have your own DNS stamp, which you can use to set up Secure DNS in your internet connection. This stamp can be entered into AdGuard and AdGuard VPN for enhanced internet privacy and security.
+
+## Example of Creating a DNS Stamp
+
+Let's walk through an example of creating a stamp for AdGuard DNS using DoT:
+
+1. Open the DNSCrypt stamp generator web page at https://dnscrypt.info/stamps/.
+
+2. Select the "DNS-over-TLS (DoT)" protocol.
+
+3. Fill in the following fields:
+
+    - **Resolver address**: Enter the DNS server's IP address and port. In this case, it's `94.140.14.14:853`.
+    
+    - **Resolver name**: Enter the host name of the DNS server. In this case, it's `dns.adguard-dns.com`.
+    
+    - **Hashes**: 
+    Execute the command 
+    ```bash
+    echo | openssl s_client -connect 94.140.14.14:853 -servername dns.adguard-dns.com 2>/dev/null | openssl x509 -pubkey -noout | openssl pkey -pubin -outform der | openssl dgst -sha256
+    ```
+    The result is `a54670fda8ed13bded0a9515f35d0a2bed937e100aa6282703cb3b87282055ec`
+    Paste this SHA256 hash of the server's certificate into the field.
+
+4. Leave the Properties section blank.
+
+5. Click on the "Generate stamp" button. Your stamp will be displayed in the "Your stamp" field and is now ready to use.
