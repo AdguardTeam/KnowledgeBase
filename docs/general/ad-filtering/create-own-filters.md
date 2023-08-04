@@ -2206,7 +2206,7 @@ Rule weight: base weight + allowlist rule, [category 5](#priority-category-5) + 
 `@@||example.com^$elemhide,content,jsinject,urlblock,extension`
 
 Rule weight: base weight + allowlist rule, [category 5](#priority-category-5) + five specific exceptions, [category 4](#priority-category-4) + two allowed content types (document and subdocument), [category 2](#priority-category-2):
-`1 + 100000 + 10000 * 5 + (50 + 50 / 2) = 50076`.
+`1 + 100000 + 10000 * 5 + (50 + 50 / 2) = 150076`.
 
 **Example 8**
 
