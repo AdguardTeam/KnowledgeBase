@@ -3155,6 +3155,12 @@ or
 
 :::
 
+:::info Compatibility
+
+The `:contains()` pseudo-class is supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.13 or later**.
+
+:::
+
 Requires that the element's inner HTML contains the specified text or matches the specified regular expression.
 
 As with the `tag-content` and `wildcard` attributes, specifying a `:contains()` pseudo-class on a non-leaf selector is not supported.
