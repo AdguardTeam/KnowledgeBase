@@ -3072,7 +3072,7 @@ In addition to usual attributes, which value is every element checked for, there
 
 :::caution Deprecation notice
 
-The use of this special tag is deprecated in favor of the `:contains()` pseudo-class.
+The use of this special attribute is deprecated in favor of the `:contains()` pseudo-class.
 
 :::
 
@@ -3097,7 +3097,7 @@ $$script[tag-content="banner"]
 
 :::caution Deprecation notice
 
-The use of this special tag is deprecated in favor of the `:contains()` pseudo-class.
+The use of this special attribute is deprecated in favor of the `:contains()` pseudo-class.
 
 :::
 
