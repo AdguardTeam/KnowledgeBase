@@ -1481,7 +1481,11 @@ This is basically a Firewall-like rule allowing to fully block or unblock access
 
 We recommend to get acquainted with this [article](#regexp-support) for better understanding of regular expressions.
 
-`$network` modifier can only be included in rules alongside with `$app` and `$important` modifiers and no other ones.
+:::caution Restrictions
+
+The `$network` modifier can only be used in rules together with the `$app` and `$important` modifiers, and not with any other modifiers.
+
+:::
 
 **Examples**
 
