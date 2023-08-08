@@ -153,17 +153,17 @@ In this section, you can control Internet access for specific apps — block the
 
 1. Open *Custom firewall rules*. Under *Apps with custom rules*, tap *Add app*.
 
-![Custom firewall rules *mobile_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
+    ![Custom firewall rules *mobile_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
 
-2. Select the app for which you want to set individual rules.
+1. Select the app for which you want to set individual rules.
 
-![Adding an app to Custom firewall rules *mobile_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
+    ![Adding an app to Custom firewall rules *mobile_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
 
-3. In *Available custom rules*, select the ones you want to configure and tap the "+" icon. The rules will now appear in *Applied custom rules*.
+1. In *Available custom rules*, select the ones you want to configure and tap the "+" icon. The rules will now appear in *Applied custom rules*.
 
-![Added rule *mobile_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
+    ![Added rule *mobile_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
 
-4. If you need to block a specific type of connection, toggle the switch to the left. If you want to allow it, leave the switch enabled. Custom rules override global ones: any changes you make in *Global firewall rules* will not affect this app.
+1. If you need to block a specific type of connection, toggle the switch to the left. If you want to allow it, leave the switch enabled. Custom rules override global ones: any changes you make in *Global firewall rules* will not affect this app.
 
 To delete a rule or app from *Custom rules*, swipe it to the left.
 
@@ -270,9 +270,9 @@ This section shows data about the requests handled by *DNS protection*. You can 
 
 This section displays statistics on the device resources used by AdGuard during the last 24 hours. The data may differ from your device settings. This happens because the system attributes the traffic of filtered apps to AdGuard. Thus, the device shows that AdGuard consumes more resources than it actually does. [Read more about battery and traffic consumption issues](/adguard-for-android/solving-problems/battery/)
 
-## Settings
+# Settings
 
-### General
+## General
 
 This section helps you manage the appearance and behavior of the app: you can set the color theme and language, manage notifications, and more. If you want to help the AdGuard team detect app crashes and research usability, you can enable *Auto-report crashes* and *Send technical and interaction data*.
 
@@ -282,7 +282,7 @@ Under *App and filter updates*, you can configure automatic filter updates and s
 
 ![Updates *mobile_border](https://cdn.adtidy.org/blog/new/hqm8kupdates.png)
 
-#### Advanced settings
+### Advanced settings
 
 *Automation* allows you to manage AdGuard via tasker apps.
 
@@ -296,19 +296,19 @@ The *Low-level settings* section is for expert users. [Read more about low-level
 
 ![Low-level settings *mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
 
-### Filtering
+## Filtering
 
 This section allows you to manage HTTPS filtering settings, filters, and userscripts, and set up a proxy server.
 
 ![Filtering *mobile_border](https://cdn.adtidy.org/blog/new/7v5c6filtering.png)
 
-#### Network
+### Network
 
-##### HTTPS filtering
+#### HTTPS filtering
 
 To block ads and trackers on most websites and in most apps, AdGuard needs to filter their HTTPS traffic. [Read more about HTTPS filtering](/general/https-filtering/what-is-https-filtering)
 
-###### Security certificates
+##### Security certificates
 
 To manage encrypted traffic, AdGuard installs its CA certificate on your device. It's safe: the traffic is filtered locally and AdGuard verifies the security of the connection.
 
@@ -316,11 +316,11 @@ On older versions of Android, the certificate is installed automatically. On And
 
 The CA certificate in the user store is enough to filter HTTPS traffic in browsers and some apps. However, there are apps that only trust certificates from the system store. To filter HTTPS traffic there, you need to install AdGuard's CA certificate into the system store. [Instructions](/adguard-for-android/solving-problems/https-certificate-for-rooted/)
 
-###### HTTPS-filtered apps
+##### HTTPS-filtered apps
 
 This section contains the list of apps for which AdGuard filters HTTPS traffic. Please note that the setting can be applied for all apps only if you have CA certificates both in the user store and in the system store.
 
-###### HTTPS-filtered websites
+##### HTTPS-filtered websites
 
 This setting allows you to manage websites for which AdGuard should filter HTTPS traffic.
 
@@ -333,7 +333,7 @@ You can also add websites that you consider necessary to exclusions by selecting
 
 By default, we also do not filter websites with Extended Validation (EV) certificates, such as financial websites. If needed, you can enable the *Filter websites with EV certificates* option.
 
-##### Proxy
+#### Proxy
 
 You can set up AdGuard to route all your device's traffic through your proxy server. [How to set up an outbound proxy](/adguard-for-android/solving-problems/outbound-proxy)
 
@@ -341,7 +341,7 @@ In this section, you can also set up a third-party VPN to work with AdGuard, if 
 
 Under *Apps operating through proxy*, you can select apps that will route their traffic through your specified proxy. If you have *Integration with AdGuard VPN* enabled, this setting plays the role of AdGuard VPN's app exclusions: it allows you to specify apps to be routed through the AdGuard VPN tunnel.
 
-##### Routing mode
+#### Routing mode
 
 This section allows you to select the traffic filtering method.
 
@@ -357,7 +357,7 @@ The *Local VPN* mode doesn't allow AdGuard to be used simultaneously with other 
 
 - *Manual proxy* involves setting up a proxy server on a specific port, which can then be configured in Wi-Fi settings. This mode requires root access for Android 10 and above.
 
-#### Filters
+### Filters
 
 AdGuard blocks ads, trackers, and annoyances by applying rules from its filters. Most features from the *Protection* section are powered by [AdGuard filters](/general/ad-filtering/adguard-filters/#adguard-filters). If you enable *Basic protection*, it will automatically turn on the AdGuard Base filter and AdGuard Mobile Ads filter. And vice versa: if you turn off both filters, *Basic protection* will also be disabled.
 
