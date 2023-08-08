@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-이 글에서는 AdGuard에서 개발하여 AdGuard 앱에 사전 설치된 필터에 대해 설명합니다. To check them out, you can [download the AdGuard app](https://adguard.com/download.html?auto=true)
+이 글에서는 AdGuard에서 개발하여 AdGuard 앱에 사전 설치된 필터에 대해 설명합니다. 필터를 확인하려면 [AdGuard 앱을 다운로드](https://adguard.com/download.html?auto=true)하세요.
 
 :::
 

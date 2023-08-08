@@ -23,7 +23,7 @@ sidebar_position: 2
 
 如您想要在 Microsoft Windows 操作系统的电脑或笔记本上使用 AdGuard ，您要下载安装包并启用安装程序。 请执行以下步骤：
 
-1. Go to the [AdGuard website](http://adguard.com) in the address bar and click *Download* [on the opened page](https://adguard.com/download.html?auto=1).
+1. 在地址栏输入 [AdGuard 官网](http://adguard.com)，在[打开的页面](https://adguard.com/download.html?auto=1)中点击「*下载*」。
 
    ![Download AdGuard](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/download-from-website.png)
 

@@ -109,7 +109,7 @@ You should remove Shadowsocks application from filtering before setting up the p
 
 1. Open AdGuard and go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server**.
 
-2. Нажмите на **Добавить прокси** и добавьте следующие значения:
+2. Tap the **Add proxy server** and fill in the fields:
 
     | Поле        | Значение    |
     | ----------- | ----------- |
@@ -121,6 +121,21 @@ You should remove Shadowsocks application from filtering before setting up the p
 
 4. Enable the main Proxy switch and AdGuard protection to route your device's traffic through the proxy.
 
+### How to use AdGuard with Clash
+
+*Here we presume that you are already a Clash client and have it installed on your device.*
+
+1. Open Clash and go to **Settings** → **Network** → **Route System Traffic** and toggle the switch. This will set Clash to proxy mode.
+2. Open Adguard and go to **App management**. Choose **Clash For Android** and disable **Route traffic through AdGuard**. This will eliminate traffic looping.
+3. Then go to **Settings** → **Network** → **Proxy** → **Proxy server**.
+4. Tap **Add proxy server** and fill in the fields:
+
+    | Поле        | Значение    |
+    | ----------- | ----------- |
+    | Тип прокси  | *SOCKS5*    |
+    | Прокси-хост | *127.0.0.1* |
+    | Порт прокси | *7891*      |
+
 ## Ограничения
 
-Есть фактор, который может помешать определённому трафику проходить через исходящий прокси. AdGuard будет направлять через прокси только тот трафик, который проходит через сам AdGuard. По сути, это означает приложения, у которых выставлена галочка напротив пункта **Блокировка рекламы** на вкладке **Настройки приложений**.
+Есть фактор, который может помешать определённому трафику проходить через исходящий прокси. AdGuard будет направлять через прокси только тот трафик, который проходит через сам AdGuard. По сути, это означает приложения, у которых выставлена галочка напротив пункта **Блокировка рекламы** во вкладке **Настройки приложений**.

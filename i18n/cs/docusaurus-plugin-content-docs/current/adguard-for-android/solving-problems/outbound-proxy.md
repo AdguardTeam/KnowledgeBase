@@ -121,6 +121,21 @@ Před nastavením procesu byste měli odstranit aplikaci Shadowsocks z filtrová
 
 4. Zapněte hlavní přepínač Proxy a AdGuard ochranu, aby byl provoz zařízení směrován přes proxy server.
 
+### Jak používat AdGuard s Clash
+
+*Předpokládáme, že jste již klientem Clash a máte jej nainstalovaný ve svém zařízení.*
+
+1. Otevřete nastavení Clash a přejděte do **Nastavení** → **Síť** → **Směrovat systémový provoz** a přepněte přepínač. Tímto nastavíte Clash do režimu proxy.
+2. Otevřete Adguard a přejděte na **Správa aplikací**. Vyberte **Clash pro Android** a zakažte **Směrovat provoz skrze AdGuard**. Tímto se odstraní zacyklení provozu.
+3. Poté otevřete **Nastavení** → **Síť** → **Proxy** → **Proxy server**.
+4. Klepněte na tlačítko **Přidat proxy** a vyplňte pole:
+
+    | Pole           | Hodnota     |
+    | -------------- | ----------- |
+    | Typ proxy      | *SOCKS5*    |
+    | Hostitel proxy | *127.0.0.1* |
+    | Port proxy     | *7891*      |
+
 ## Omezení
 
 Existuje faktor, který může zabránit směrování určitých přenosů přes odchozí proxy. AdGuard přesměruje pouze provoz, který přes něj prochází. V podstatě se jedná o aplikace, které mají na kartě **Správa aplikací** povolen příznak **Blokování reklam**.

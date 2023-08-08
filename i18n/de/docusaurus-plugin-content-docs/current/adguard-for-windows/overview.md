@@ -97,7 +97,7 @@ In the Parental Control module you can enable the *Safe search* and manage the *
 
 From this tab you can easily proceed to install AdGuard Browser Assistant, which primary function is to manage filtering directly from the browser. We explained more about how to work with it and what to do if there is no Browser Assistant for your browser in the [separate article](../browser-assistant).
 
-## Extensions
+## Erweiterungen
 
 AdGuard can significantly broaden website functionality working as a [user script manager](/general/userscripts). AdGuard Users can add their own scripts, as well as manage existing ones.
 

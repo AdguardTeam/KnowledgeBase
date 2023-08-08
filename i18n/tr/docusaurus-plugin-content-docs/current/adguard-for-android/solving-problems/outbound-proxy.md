@@ -27,10 +27,10 @@ Bu makalede, AdGuard ile çalışmak için en popüler proxy'lerden bazıların�
 
 5. All the required fields will be pre-filled:
 
-    | Field                  | Value                |
+    | Field                  | Değer                |
     | ---------------------- | -------------------- |
     | Proxy türü             | *SOCKS4* or *SOCKS5* |
-    | Proxy host             | *127.0.0.1*          |
+    | Proxy ana makine       | *127.0.0.1*          |
     | Proxy bağlantı noktası | *9050*               |
 
 Veya **Proxy sunucusu** → **Proxy sunucusu ekle** öğesine dokunabilir, bu değerleri elle girebilir ve Orbot'u varsayılan proxy olarak ayarlayabilirsiniz.
@@ -47,10 +47,10 @@ Now AdGuard will forward all traffic through Orbot. If you disable Orbot, Intern
 
 2. Tap the **Add proxy server** button and enter the following data:
 
-    | Field                  | Value                                |
+    | Field                  | Değer                                |
     | ---------------------- | ------------------------------------ |
     | Proxy türü             | *SOCKS5*                             |
-    | Proxy host             | *proxy-nl.privateinternetaccess.com* |
+    | Proxy ana makine       | *proxy-nl.privateinternetaccess.com* |
     | Proxy bağlantı noktası | *1080*                               |
 
 3. You also need to fill out the **Username/Password** fields. To do so, log in to the [Client Control Panel](https://www.privateinternetaccess.com/pages/client-sign-in) on the PIA website. Click the **Generate Password** button under the **Generate PPTP/L2TP/SOCKS Password** section. A username starting with "x" and a random password will be shown. AdGuard'da **Proxy kullanıcı adı** ve **Proxy parolası** alanlarını doldurmak için bunları kullanın.
@@ -67,10 +67,10 @@ Now AdGuard will forward all traffic through Orbot. If you disable Orbot, Intern
 
 2. Tap the **Add proxy server** button and enter the following data:
 
-    | Field                  | Value                                       |
+    | Field                  | Değer                                       |
     | ---------------------- | ------------------------------------------- |
     | Proxy türü             | *SOCKS5*                                    |
-    | Proxy host             | *proxy.torguard.org* or *proxy.torguard.io* |
+    | Proxy ana makine       | *proxy.torguard.org* or *proxy.torguard.io* |
     | Proxy bağlantı noktası | *1080* or *1085* or *1090*                  |
 
 3. For **Username** and **Password** fields, enter your proxy username and proxy password you have chosen at TorGuard signup.
@@ -85,10 +85,10 @@ Now AdGuard will forward all traffic through Orbot. If you disable Orbot, Intern
 
 2. Tap the **Add proxy server** button and enter the following data:
 
-    | Field                  | Value                                                                          |
+    | Field                  | Değer                                                                          |
     | ---------------------- | ------------------------------------------------------------------------------ |
     | Proxy türü             | *SOCKS5*                                                                       |
-    | Proxy host             | *any server from [this list](https://support.nordvpn.com/Connectivity/Proxy/)* |
+    | Proxy ana makine       | *any server from [this list](https://support.nordvpn.com/Connectivity/Proxy/)* |
     | Proxy bağlantı noktası | *1080*                                                                         |
 
 3. For **Username** and **Password** fields, enter your NordVPN Username and Password.
@@ -109,17 +109,32 @@ You should remove Shadowsocks application from filtering before setting up the p
 
 1. AdGuard'ı açın ve **Ayarlar** → **Filtreleme** → **Ağ** → **Proxy** → **Proxy sunucusu** öğesine gidin.
 
-2. Tap the **Add proxy server** and fill the fields:
+2. **Proxy sunucusu ekle** öğesine dokunun ve alanları doldurun:
 
-    | Field                  | Value       |
+    | Field                  | Değer       |
     | ---------------------- | ----------- |
     | Proxy türü             | *SOCKS5*    |
-    | Proxy host             | *127.0.0.1* |
+    | Proxy ana makine       | *127.0.0.1* |
     | Proxy bağlantı noktası | *1080*      |
 
 3. **Kaydet ve seç** öğesine dokunun.
 
 4. Cihazınızın trafiğini proxy üzerinden yönlendirmek için ana Proxy düğmesini ve AdGuard korumasını etkinleştirin.
+
+### AdGuard Clash ile nasıl kullanılır
+
+*Burada zaten bir Clash istemcisi olduğunuzu ve onu cihazınıza yüklediğinizi varsayıyoruz.*
+
+1. Clash'i açın ve **Ayarlar** → **Ağ** → **Sistem Trafiğini Yönet** öğesine gidin ve düğmeyi değiştirin. Bu, Clash'i proxy moduna ayarlar.
+2. Adguard'ı açın ve **Uygulama yönetimi** öğesine gidin. **Clash For Android** öğesini seçin ve **Trafiği AdGuard üzerinden yönlendir** öğesini devre dışı bırakın. Bu, trafik döngüsünü ortadan kaldırır.
+3. Ardından **Ayarlar** → **Ağ** → **Proxy** → **Proxy sunucusu** öğesine gidin.
+4. **Proxy sunucusu ekle** öğesine dokunun ve alanları doldurun:
+
+    | Alan                   | Değer       |
+    | ---------------------- | ----------- |
+    | Proxy türü             | *SOCKS5*    |
+    | Proxy ana makine       | *127.0.0.1* |
+    | Proxy bağlantı noktası | *7891*      |
 
 ## Limitations
 

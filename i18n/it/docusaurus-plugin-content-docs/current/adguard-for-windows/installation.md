@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Questo articolo riguarda AdGuard per Windows, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app AdGuard](https://adguard.com/download.html?auto=true)
 
 :::
 
@@ -23,7 +23,7 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 To use AdGuard on a PC or tablet under Microsoft Windows, you should download the installation package and launch the installation program. Perform the following actions:
 
-1. Go to the [AdGuard website](http://adguard.com) in the address bar and click *Download* [on the opened page](https://adguard.com/download.html?auto=1).
+1. Vai al [sito web di AdGuard](http://adguard.com) nella barra degli indirizzi e clicca su *Download* [nella pagina aperta](https://adguard.com/download.html?auto=1).
 
    ![Download AdGuard](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/download-from-website.png)
 

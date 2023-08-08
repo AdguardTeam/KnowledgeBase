@@ -21,9 +21,9 @@ Některé možnosti nemusí být v závislosti na konkrétním produktu dostupn�
 
 Když jste přesměrováni na webovou stránku z vyhledávače Google, Yahoo nebo jiného vyhledávače, tato možnost skryje vyhledávací dotaz, který jste použili k nalezení dané webové stránky.
 
-### Odeslat žádost Do-Not-Track {#donottrack}
+### Ask websites not to track you {#donottrack}
 
-Odesílá žádost Do-Not-Track (DNT) HTTP dotazovaným webům, což vyžaduje, aby webové aplikace zakázaly sledování vaší aktivity.
+Sends the [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) requests to the websites you visit.
 
 ### Odebrat sledovací parametry z URL
 
