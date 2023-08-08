@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-본 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Windows용 AdGuard에 대해 다룹니다. 어떻게 동작하는지 알고 싶으시다면 [AdGuard 앱을 다운로드](https://adguard.com/download.html?auto=true) 해 보세요.
+본 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Windows용 AdGuard에 대해 다룹니다. 어떻게 동작하는지 알고 싶으시다면 [AdGuard 앱을 다운로드](https://adguard.com/download.html?auto=true)해 보세요.
 
 :::
 
@@ -23,7 +23,7 @@ sidebar_position: 2
 
 Microsoft Windows의 PC 또는 태블릿에서 AdGuard를 사용하려면 설치 패키지를 다운로드하고 설치하면 됩니다. 다음 단계를 따라와 보세요.
 
-1. Go to the [AdGuard website](http://adguard.com) in the address bar and click *Download* [on the opened page](https://adguard.com/download.html?auto=1).
+1. [AdGuard 웹사이트](http://adguard.com)로 이동하여 [열린 페이지](https://adguard.com/download.html?auto=1)에서 *다운로드*를 클릭합니다.
 
    ![Download AdGuard](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/download-from-website.png)
 

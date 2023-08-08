@@ -95,7 +95,7 @@ DNS-сервер — это вторая опция, которую вы уви�
 
 ### DNS-фильтрация {#dns-filtering}
 
-DNS filtering allows you to customize your DNS traffic by enabling AdGuard DNS filter, adding custom DNS filters, and using the DNS blocklist/allowlist.
+DNS-фильтрация позволяет настроить DNS-трафик: можно включить DNS-фильтр AdGuard, добавить собственные DNS-фильтры и использовать чёрный или белый список DNS.
 
 How to access:
 
@@ -109,7 +109,7 @@ Similar to filters that work in Safari, DNS filters are sets of rules written ac
 
 #### Белый и чёрный список {#allowlist-blocklist}
 
-On top of DNS filters, you can have targeted impact on DNS filtering by adding single domains to Blocklist or to Allowlist. Blocklist even supports the same DNS syntax, and both of them can be imported and exported, just like Allowlist in Safari content blocking.
+Вы можете точечно влиять на DNS-фильтрацию не только с помощью DNS-фильтров, но и добавляя отдельные домены в списки. Чёрный список даже поддерживает тот же синтаксис для DNS-фильтрации, и оба списка можно импортировать и экспортировать, как и Белый список в блокировке контента Safari.
 
 ### Расширенная защита {#advanced-protection}
 
@@ -219,7 +219,7 @@ If this setting is enabled, AdGuard will use only Wi-Fi for background filter up
 
 - **Инвертировать белый список**
 
-An alternative mode for Safari filtering, it unblocks ads everywhere except for the specified websites from the list. Disabled by default.
+An alternative mode for Safari filtering, it unblocks ads everywhere except for the specified websites from the list. По умолчанию отключён.
 
 - **Расширенный режим**
 

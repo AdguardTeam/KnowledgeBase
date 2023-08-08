@@ -5,11 +5,11 @@ sidebar_position: 2
 
 :::info
 
-This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Questo articolo riguarda AdGuard per Android, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app AdGuard](https://adguard.com/download.html?auto=true)
 
 :::
 
-In this article, we'll guide you through the process of collecting debug logs, an essential troubleshooting step for solving complex issues that may potentially arise. Debug logs provide detailed insight into the inner workings of AdGuard for Android. If the AdGuard support team askes you to provide debug logs, simply follow these instructions.
+In questo articolo, ti guideremo attraverso il processo di raccolta dei registri di debug, un passaggio essenziale per la risoluzione dei problemi complessi che potrebbero potenzialmente sorgere. Debug logs provide detailed insight into the inner workings of AdGuard for Android. If the AdGuard support team askes you to provide debug logs, simply follow these instructions.
 
 ### Collecting debug log
 

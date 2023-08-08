@@ -49,6 +49,8 @@ Pokud to nepomůže, postupujte podle pokynů pro ruční přidání AdGuard cer
 
 9) Zaškrtněte políčko *Důvěřovat tomuto certifikátu k identifikaci webových stránek* a poté klikněte na *OK*.
 
+![Certificate settings — checkbox](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/cert_checkbox.jpg)
+
 Úspěšně jste nainstalovali AdGuard certifikát. Restartujte prohlížeč a chyba by měla zmizet.
 
 ## Upozornění na certifikát Yandex.Browser

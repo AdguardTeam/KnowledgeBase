@@ -5,7 +5,7 @@ sidebar_position: 8
 
 :::info
 
-This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Cet article parle de AdGuard pour Android, un bloqueur de contenus multifonctionnel qui protège votre appareil au niveau du système. Pour voir comment cela fonctionne, [téléchargez l'application AdGuard](https://adguard.com/download.html?auto=true)
 
 :::
 
@@ -109,7 +109,7 @@ You should remove Shadowsocks application from filtering before setting up the p
 
 1. Open AdGuard and go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server**.
 
-2. Tap the **Add proxy server** and fill the fields:
+2. Tap the **Add proxy server** and fill in the fields:
 
     | Field      | Value       |
     | ---------- | ----------- |
@@ -120,6 +120,21 @@ You should remove Shadowsocks application from filtering before setting up the p
 3. Tap **Save and select**.
 
 4. Enable the main Proxy switch and AdGuard protection to route your device's traffic through the proxy.
+
+### How to use AdGuard with Clash
+
+*Here we presume that you are already a Clash client and have it installed on your device.*
+
+1. Open Clash and go to **Settings** → **Network** → **Route System Traffic** and toggle the switch. This will set Clash to proxy mode.
+2. Open Adguard and go to **App management**. Choose **Clash For Android** and disable **Route traffic through AdGuard**. This will eliminate traffic looping.
+3. Then go to **Settings** → **Network** → **Proxy** → **Proxy server**.
+4. Tap **Add proxy server** and fill in the fields:
+
+    | Field      | Value       |
+    | ---------- | ----------- |
+    | Proxy type | *SOCKS5*    |
+    | Proxy host | *127.0.0.1* |
+    | Proxy port | *7891*      |
 
 ## Limitations
 

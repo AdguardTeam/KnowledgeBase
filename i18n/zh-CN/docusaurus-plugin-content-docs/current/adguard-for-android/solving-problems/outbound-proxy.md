@@ -109,7 +109,7 @@ You should remove Shadowsocks application from filtering before setting up the p
 
 1. Open AdGuard and go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server**.
 
-2. 点击**「添加代理」**按钮并输入以下数据：
+2. Tap the **Add proxy server** and fill in the fields:
 
     | 字符串  | 数值          |
     | ---- | ----------- |
@@ -120,6 +120,21 @@ You should remove Shadowsocks application from filtering before setting up the p
 3. Tap **Save and select**.
 
 4. Enable the main Proxy switch and AdGuard protection to route your device's traffic through the proxy.
+
+### How to use AdGuard with Clash
+
+*Here we presume that you are already a Clash client and have it installed on your device.*
+
+1. Open Clash and go to **Settings** → **Network** → **Route System Traffic** and toggle the switch. This will set Clash to proxy mode.
+2. Open Adguard and go to **App management**. Choose **Clash For Android** and disable **Route traffic through AdGuard**. This will eliminate traffic looping.
+3. Then go to **Settings** → **Network** → **Proxy** → **Proxy server**.
+4. Tap **Add proxy server** and fill in the fields:
+
+    | 字符串  | 数值          |
+    | ---- | ----------- |
+    | 代理分类 | *SOCKS5*    |
+    | 代理主机 | *127.0.0.1* |
+    | 代理端口 | *7891*      |
 
 ## 限制
 

@@ -1459,6 +1459,12 @@ Jedná se v podstatě o pravidla typu brány Firewall, která umožňují plně 
 
 Pro lepší pochopení regulárních výrazů doporučujeme seznámit se s tímto [článkem](#regexp-support).
 
+:::caution Omezení
+
+The `$network` modifier can only be used in rules together with the `$app` and `$important` modifiers, and not with any other modifiers.
+
+:::
+
 **Příklady**
 
 * `174.129.166.49:3478^$network` blokuje přístup k `174.129.166.49:3478` (ale ne k `174.129.166.49:34788`).

@@ -106,7 +106,7 @@ Bei der Erstinstallation von AdGuard (während des Einführungsprozesses) werden
 
 ## Erweiterungen
 
-![Extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Extensions.jpg)
+![Erweiterungen](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Extensions.jpg)
 
 Erweiterungen sind kleine Programme, die genau das tun, was ihr Name andeutet – sie erweitern die Funktionalität. Und AdGuard verwendet mehrere eigene Erweiterungen, auch Userscripts genannt, um seinen Funktionsumfang zu erweitern:
 

@@ -25,25 +25,25 @@ Nejprve musíte zapnout DNS ochranu. K tomu je třeba:
 
 Pokud je vaším cílem blokovat reklamy a slídiče v celém systému, máte tři možnosti:
 
- 1. Use AdGuard DNS filter (*Protection* (the shield icon in the bottom menu) → *DNS protection* → *DNS filtering* → *DNS filters* → *AdGuard DNS filter*).
- 2. Use AdGuard DNS server (*Protection* (the shield icon in the bottom menu) → *DNS protection* → *DNS server* → *AdGuard DNS*) or another blocking DNS server to your liking.
- 3. Add a custom DNS filter/hosts file to your liking.
+ 1. Použijte filtr AdGuard DNS (*Ochrana* (ikona štítu ve spodním menu) → *DNS ochrana* → *DNS filtrování* → *DNS filtry* → *Filtr AdGuard DNS*).
+ 2. Použijte server AdGuard DNS (*Ochrana* (ikona štítu v dolním menu) → *DNS ochrana* → *DNS server* → *AdGuard DNS*) nebo jiný DNS server podle vašich představ.
+ 3. Přidejte vlastní soubor DNS filtrování/hosts podle svých představ.
 
-The first and third option have several advantages:
+První a třetí možnost mají několik výhod:
 
-* You can use any DNS server at your discretion and you are not tied up to a specific blocking server, because the filter does the blocking.
-* You can add multiple DNS filters and/or hosts files (although using too many might slow down AdGuard).
+* Můžete používat libovolný DNS server podle vlastního uvážení a nejste vázáni na konkrétní server pro blokování, protože blokování provádí filtr.
+* Můžete přidat více DNS filtrů a/nebo souborů hosts (i když použití příliš velkého počtu může AdGuard zpomalit).
 
 ![Jak funguje DNS filtrování](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_en.png)
 
-## How to add custom DNS filter/hosts file
+## Jak přidat vlastní soubor DNS filtrování/hosts
 
-You can add any DNS filter or hosts file you like.
+Můžete přidat libovolný DNS filtr nebo soubor hosts.
 
-For the sake of the example, let's add [OISD Blocklist Big](https://oisd.nl/).
+Pro účely příkladu přidejme [OISD Blocklist Big](https://oisd.nl/).
 
-1. Copy this link: `https://big.oisd.nl` (it's a link for OISD Blocklist Big filter)
-2. Open *Protection* (the shield icon in the bottom menu) → *DNS protection* → *DNS filtering* → *DNS filters*.
+1. Zkopírujte tento odkaz: `https://big.oisd.nl` (je to odkaz na filtr OISD Blocklist Big)
+2. Otevřete *Ochranu* (ikona štítu ve spodním menu) → *DNS ochrana* → *DNS filtrování* → *DNS filtry*.
 3. Klepněte na *Přidat filtr*.
 4. Vložte URL odkaz do pole filtru.
 5. Klepněte na *Další* → *Přidat*.
