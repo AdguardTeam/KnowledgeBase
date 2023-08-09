@@ -103,7 +103,7 @@ Now AdGuard will forward all traffic through Orbot. If you disable Orbot, Intern
 
 :::note
 
-You should remove Shadowsocks application from filtering before setting up the process (**Settings** → **Filtering** → **Apps** → **App management** → **Shadowsocks** → **Route traffic through AdGuard**) to avoid infinite loops and drops.
+You should remove Shadowsocks app from filtering before setting up the process (**App management** → **Shadowsocks** → **Route traffic through AdGuard**) to avoid infinite loops and drops.
 
 :::
 
@@ -127,7 +127,7 @@ You should remove Shadowsocks application from filtering before setting up the p
 
 1. Clash'i açın ve **Ayarlar** → **Ağ** → **Sistem Trafiğini Yönet** öğesine gidin ve düğmeyi değiştirin. Bu, Clash'i proxy moduna ayarlar.
 2. Adguard'ı açın ve **Uygulama yönetimi** öğesine gidin. **Clash For Android** öğesini seçin ve **Trafiği AdGuard üzerinden yönlendir** öğesini devre dışı bırakın. Bu, trafik döngüsünü ortadan kaldırır.
-3. Ardından **Ayarlar** → **Ağ** → **Proxy** → **Proxy sunucusu** öğesine gidin.
+3. Then go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server**.
 4. **Proxy sunucusu ekle** öğesine dokunun ve alanları doldurun:
 
     | Alan                   | Değer       |

@@ -103,7 +103,7 @@ Nyní bude AdGuard přeposílat veškerý provoz přes Orbot. Pokud zakážete O
 
 :::note
 
-Před nastavením procesu byste měli odstranit aplikaci Shadowsocks z filtrování (**Nastavení** → **Filtrování** → **Aplikace** → **Správa aplikací** → **Shadowsocks** → **Směrovat provoz skrze AdGuard**), abyste se vyhnuli nekonečným smyčkám a pádům.
+You should remove Shadowsocks app from filtering before setting up the process (**App management** → **Shadowsocks** → **Route traffic through AdGuard**) to avoid infinite loops and drops.
 
 :::
 
@@ -127,7 +127,7 @@ Před nastavením procesu byste měli odstranit aplikaci Shadowsocks z filtrová
 
 1. Otevřete nastavení Clash a přejděte do **Nastavení** → **Síť** → **Směrovat systémový provoz** a přepněte přepínač. Tímto nastavíte Clash do režimu proxy.
 2. Otevřete Adguard a přejděte na **Správa aplikací**. Vyberte **Clash pro Android** a zakažte **Směrovat provoz skrze AdGuard**. Tímto se odstraní zacyklení provozu.
-3. Poté otevřete **Nastavení** → **Síť** → **Proxy** → **Proxy server**.
+3. Then go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server**.
 4. Klepněte na tlačítko **Přidat proxy** a vyplňte pole:
 
     | Pole           | Hodnota     |
