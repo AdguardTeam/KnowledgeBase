@@ -126,7 +126,7 @@ You should remove Shadowsocks app from filtering before setting up the process (
 *Burada zaten bir Clash istemcisi olduğunuzu ve onu cihazınıza yüklediğinizi varsayıyoruz.*
 
 1. Clash'i açın ve **Ayarlar** → **Ağ** → **Sistem Trafiğini Yönet** öğesine gidin ve düğmeyi değiştirin. Bu, Clash'i proxy moduna ayarlar.
-2. Adguard'ı açın ve **Uygulama yönetimi** öğesine gidin. **Clash For Android** öğesini seçin ve **Trafiği AdGuard üzerinden yönlendir** öğesini devre dışı bırakın. Bu, trafik döngüsünü ortadan kaldırır.
+2. Open AdGuard and go to **App management**. **Clash For Android** öğesini seçin ve **Trafiği AdGuard üzerinden yönlendir** öğesini devre dışı bırakın. Bu, trafik döngüsünü ortadan kaldırır.
 3. Then go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server**.
 4. **Proxy sunucusu ekle** öğesine dokunun ve alanları doldurun:
 
