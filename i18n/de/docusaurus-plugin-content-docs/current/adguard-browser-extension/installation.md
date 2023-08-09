@@ -3,7 +3,7 @@ title: AdGuard installieren
 sidebar_position: 2
 ---
 
-:::Info
+:::info
 
 In diesem Artikel geht es um die AdGuard Browsereweiterung, die nur Ihren Browser schützt. Um Ihr gesamtes Gerät zu schützen, [laden Sie die App AdGuard herunter](https://adguard.com/download.html?auto=true)
 
