@@ -129,7 +129,7 @@ The *Advanced protection* only works on iOS 15 and later versions. If you are us
 
 ### Совместимость с AdGuard VPN {#compatibility}
 
-In most cases, the ad blocker and the VPN application cannot work together, simply because there are certain system limitations. Nevertheless we've managed to find a solution to befriend [AdGuard VPN](https://adguard-vpn.com/) and AdGuard Ad Blocker. For your convenience we've added the *AdGuard VPN* block to the *Protection* section, so you can easily switch between two apps.
+In most cases, the ad blocker and the VPN application cannot work together, simply because there are certain system limitations. Несмотря на это, нам удалось найти решение, как «подружить» [AdGuard VPN](https://adguard-vpn.com/) и Блокировщик AdGuard. For your convenience we've added the *AdGuard VPN* block to the *Protection* section, so you can easily switch between two apps.
 
 ### Помощник {#assistant}
 
