@@ -3,7 +3,7 @@ title: Funktionsübersicht
 sidebar_position: 1
 ---
 
-:::Info
+:::info
 
 Dieser Artikel behandelt AdGuard für Mac, einen multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://adguard.com/download.html?auto=true)
 

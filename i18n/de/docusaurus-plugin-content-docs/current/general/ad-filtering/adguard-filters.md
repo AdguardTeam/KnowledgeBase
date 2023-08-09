@@ -3,7 +3,7 @@ title: AdGuard-Filter
 sidebar_position: 2
 ---
 
-:::Info
+:::info
 
 In diesem Artikel geht es um die Filter, die wir entwickeln und die in AdGuard vorinstalliert sind. To check them out, you can [download the AdGuard app](https://adguard.com/download.html?auto=true)
 

@@ -3,7 +3,7 @@ title: Сertificate installation issues on devices with Android 11+
 sidebar_position: 12
 ---
 
-:::Info
+:::info
 
 Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://adguard.com/download.html?auto=true)
 
