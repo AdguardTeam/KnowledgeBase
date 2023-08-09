@@ -126,7 +126,7 @@ You should remove Shadowsocks app from filtering before setting up the process (
 *Předpokládáme, že jste již klientem Clash a máte jej nainstalovaný ve svém zařízení.*
 
 1. Otevřete nastavení Clash a přejděte do **Nastavení** → **Síť** → **Směrovat systémový provoz** a přepněte přepínač. Tímto nastavíte Clash do režimu proxy.
-2. Otevřete Adguard a přejděte na **Správa aplikací**. Vyberte **Clash pro Android** a zakažte **Směrovat provoz skrze AdGuard**. Tímto se odstraní zacyklení provozu.
+2. Open AdGuard and go to **App management**. Vyberte **Clash pro Android** a zakažte **Směrovat provoz skrze AdGuard**. Tímto se odstraní zacyklení provozu.
 3. Then go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server**.
 4. Klepněte na tlačítko **Přidat proxy** a vyplňte pole:
 
