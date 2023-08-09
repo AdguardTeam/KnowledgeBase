@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Questo articolo tratta AdGuard per iOS, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app AdGuard](https://adguard.com/download.html?auto=true)
 
 :::
 
@@ -33,7 +33,7 @@ Type _adguard_ in the search bar and tap the string _adGuard_ which will be amon
 
 ![Type "AdGuard" in the search bar *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/2.png)
 
-[On the opened page of the App Store](https://adguard.com/download.html?auto=1) tap _GET_ under the string _AdGuard - adblock&privacy_ and then tap _INSTALL_. You may be requested to enter your Apple ID login and password. Type it in and wait for the installation to complete.
+[Nella pagina aperta dell'App Store](https://adguard.com/download.html?auto=1) Clicca _OTTIENI_ sotto la stringa _AdGuard - adblock&privacy_ e quindi toccare _INSTALLA_. You may be requested to enter your Apple ID login and password. Type it in and wait for the installation to complete.
 
 ![Tap GET below the AdGuard app *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/3.png)
 

@@ -5,11 +5,11 @@ sidebar_position: 2
 
 :::info
 
-This article is about the filters that we develop and that come pre-installed in AdGuard. To check them out, you can [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Questo articolo riguarda i filtri che sviluppiamo e che sono preinstallati in AdGuard. Per controllarli, puoi [scaricare l'app AdGuard](https://adguard.com/download.html?auto=true)
 
 :::
 
-This article is about the filters we create to use in AdGuard and other ad-blocking software (e.g., uBlock Origin). Filters are sets of rules in text format used by AdGuard apps and programs to filter out advertising and privacy-threatening content such as banners, pop-ups, or trackers. Filters contain lists of rules based on their purpose. Language filters include rules for corresponding language segments of the Internet (e.g., German filter). Task-based filters group rules that fulfil a specific task, such as Social media filter or Tracking Protection filter. Enabling or disabling a filter makes it easier to work with the entire list of rules at once.
+Questo articolo riguarda i filtri che creiamo per l'utilizzo in AdGuard e altri software di blocco degli annunci (es., uBlock Origin). Filters are sets of rules in text format used by AdGuard apps and programs to filter out advertising and privacy-threatening content such as banners, pop-ups, or trackers. Filters contain lists of rules based on their purpose. Language filters include rules for corresponding language segments of the Internet (e.g., German filter). Task-based filters group rules that fulfil a specific task, such as Social media filter or Tracking Protection filter. Enabling or disabling a filter makes it easier to work with the entire list of rules at once.
 
 ## AdGuard filters
 

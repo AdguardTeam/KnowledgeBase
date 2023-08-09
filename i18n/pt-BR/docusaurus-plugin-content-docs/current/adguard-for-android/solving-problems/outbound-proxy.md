@@ -103,13 +103,13 @@ Now AdGuard will forward all traffic through Orbot. If you disable Orbot, Intern
 
 :::note
 
-You should remove Shadowsocks application from filtering before setting up the process (**Settings** → **Filtering** → **Apps** → **App management** → **Shadowsocks** → **Route traffic through AdGuard**) to avoid infinite loops and drops.
+You should remove Shadowsocks app from filtering before setting up the process (**App management** → **Shadowsocks** → **Route traffic through AdGuard**) to avoid infinite loops and drops.
 
 :::
 
 1. Open AdGuard and go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server**.
 
-2. Tap the **Add proxy server** and fill the fields:
+2. Tap the **Add proxy server** and fill in the fields:
 
     | Field      | Value       |
     | ---------- | ----------- |
@@ -120,6 +120,21 @@ You should remove Shadowsocks application from filtering before setting up the p
 3. Tap **Save and select**.
 
 4. Enable the main Proxy switch and AdGuard protection to route your device's traffic through the proxy.
+
+### How to use AdGuard with Clash
+
+*Here we presume that you are already a Clash client and have it installed on your device.*
+
+1. Open Clash and go to **Settings** → **Network** → **Route System Traffic** and toggle the switch. This will set Clash to proxy mode.
+2. Open Adguard and go to **App management**. Choose **Clash For Android** and disable **Route traffic through AdGuard**. This will eliminate traffic looping.
+3. Then go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server**.
+4. Tap **Add proxy server** and fill in the fields:
+
+    | Field      | Value       |
+    | ---------- | ----------- |
+    | Proxy type | *SOCKS5*    |
+    | Proxy host | *127.0.0.1* |
+    | Proxy port | *7891*      |
 
 ## Limitations
 

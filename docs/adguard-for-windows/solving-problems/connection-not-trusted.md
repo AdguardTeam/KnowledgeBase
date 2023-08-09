@@ -51,6 +51,8 @@ If that doesn't help, follow the instructions for manually adding the AdGuard ce
 
 9) Check the *Trust this CA to identify websites* box and then lick *OK*.
 
+![Certificate settings — checkbox](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/cert_checkbox.jpg)
+
 You've successfully installed AdGuard certificate. Restart the browser and the error should go away.
 
 ## Yandex.Browser certificate warning

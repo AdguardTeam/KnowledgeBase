@@ -7,7 +7,7 @@ toc_max_heading_level: 4
 
 :::info
 
-이 글에서는 AdGuard 제품에서 사용자 정의 필터링 규칙을 작성하는 방법을 알려드립니다. To test your rules, you can [download the AdGuard app](https://adguard.com/download.html?auto=true)
+이 글에서는 AdGuard 제품에서 사용자 정의 필터링 규칙을 작성하는 방법을 알려드립니다. 규칙을 테스트하려면 [AdGuard 앱을 다운로드](https://adguard.com/download.html?auto=true)하세요.
 
 :::
 
@@ -1458,6 +1458,12 @@ This is basically a Firewall-like rule allowing to fully block or unblock access
 4. If the IP part starts and ends with `/` character, it is treated as a regular expression.
 
 We recommend to get acquainted with this [article](#regexp-support) for better understanding of regular expressions.
+
+:::caution Restrictions
+
+The `$network` modifier can only be used in rules together with the `$app` and `$important` modifiers, and not with any other modifiers.
+
+:::
 
 **Examples**
 
