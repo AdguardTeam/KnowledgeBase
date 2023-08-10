@@ -3,7 +3,7 @@ title: How to use Samsung Pay with AdGuard in South Korea
 sidebar_position: 17
 ---
 
-:::Info
+:::info
 
 Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://adguard.com/download.html?auto=true)
 

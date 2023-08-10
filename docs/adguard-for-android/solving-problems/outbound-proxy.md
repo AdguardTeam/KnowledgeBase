@@ -103,7 +103,7 @@ In this article we give examples of how to set up some of the most popular proxi
 
 :::note
 
-You should remove Shadowsocks application from filtering before setting up the process (**Settings** → **Filtering** → **Apps** → **App management** → **Shadowsocks** → **Route traffic through AdGuard**) to avoid infinite loops and drops.
+You should remove Shadowsocks app from filtering before setting up the process (**App management** → **Shadowsocks** → **Route traffic through AdGuard**) to avoid infinite loops and drops.
 
 :::
 
@@ -127,9 +127,9 @@ You should remove Shadowsocks application from filtering before setting up the p
 
 1. Open Clash and go to **Settings** → **Network** → **Route System Traffic** and toggle the switch. This will set Clash to proxy mode.
 
-1. Open Adguard and go to **App management**. Choose **Clash For Android** and disable **Route traffic through AdGuard**. This will eliminate traffic looping.
+1. Open AdGuard and go to **App management**. Choose **Clash For Android** and disable **Route traffic through AdGuard**. This will eliminate traffic looping.
 
-1. Then go to **Settings** → **Network** → **Proxy** → **Proxy server**.
+1. Then go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server**.
 
 1. Tap **Add proxy server** and fill in the fields:
 

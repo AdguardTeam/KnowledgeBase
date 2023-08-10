@@ -3,7 +3,7 @@ title: How to create a dump file
 sidebar_position: 8
 ---
 
-:::Info
+:::info
 
 Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://adguard.com/download.html?auto=true)
 
