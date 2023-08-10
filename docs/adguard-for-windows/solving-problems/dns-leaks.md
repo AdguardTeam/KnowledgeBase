@@ -20,10 +20,10 @@ In the case of IP addresses there are no difficulties: AdGuard forwards the DNS 
 
 **To eliminate this leak:**
 
-* go to the *Advanced settings*
-* scroll down to the *List of custom bootstrap addresses* section
-* enter the custom bootstrap address in IP address format (you may use [the list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/))
-* click *Save*
+- go to the *Advanced settings*
+- scroll down to the *List of custom bootstrap addresses* section
+- enter the custom bootstrap address in IP address format (you may use [the list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/))
+- click *Save*
 
 ## Fallback DNS server
 
@@ -31,19 +31,19 @@ It could happen that AdGuard cannot reach the specified server because of a weak
 
 **To eliminate this leak:**
 
-* go to the *Advanced settings*
-* scroll down to the *Fallback servers* section
-* check the *Use custom servers* option
-* then find the *List of custom fallback servers* section and enter custom fallback servers one per line
+- go to the *Advanced settings*
+- scroll down to the *Fallback servers* section
+- check the *Use custom servers* option
+- then find the *List of custom fallback servers* section and enter custom fallback servers one per line
 
 or
 
-* go to the *Advanced settings*
-* scroll down to the *Fallback servers* section
-* check the *Don’t use fallback servers* option
+- go to the *Advanced settings*
+- scroll down to the *Fallback servers* section
+- check the *Don’t use fallback servers* option
 
 or
 
-* go to the *Advanced settings*
-* scroll down to the *DNS server timeout period* section
-* enter an arbitrary large number
+- go to the *Advanced settings*
+- scroll down to the *DNS server timeout period* section
+- enter an arbitrary large number

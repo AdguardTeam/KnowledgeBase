@@ -51,26 +51,25 @@ These problems aren't fixed by Apple yet, or fixed only partially.
 
 AdGuard will not work together with Cisco AnyConnect while in the *Network Extension* mode. You have to switch AdGuard to *Automatic Proxy* mode. To do so, follow [this instruction](#automatic-proxy).
 
-
 #### Compatibility with Flutter
 
 This problem is solved in Flutter 2.2, released in June 2021. But to fix it for applications developed in Flutter, you need to wait for updates.
 
 If you use Flutter alongside AdGuard in "Network Extension" mode (or any other "Transparent Proxy"-type app) in Monterey or Big Sur, you will run into problems: projects won't open and Flutter will be effectively broken. We have already reported this bug to Apple. Meanwhile, you can use these temporary solutions:
 
-1) Use AdGuard in [Automatic Proxy](#automatic-proxy) mode.
+1. Use AdGuard in [Automatic Proxy](#automatic-proxy) mode.
 
-2) Disable SIP and switch AdGuard to Kernel Extension mode as explained [here](#kernel-extension).
+1. Disable SIP and switch AdGuard to Kernel Extension mode as explained [here](#kernel-extension).
 
 #### VPN apps with legacy API
 
 Despite AdGuard is displayed as a VPN in system settings, it shouldn't cause any conflicts when working alongside other VPN-based apps. However, if you're using a VPN-based app that was downloaded from outside App Store, there's a chance it uses the old VPN API and you have to exclude it from filtering:
 
-1) Open AdGuard's menu.
-2) Select *Preferences...*.
-3) Switch to the *Network* tab.
-4) Click the *Applications...* button.
-5) Find the app you want to exclude and uncheck the checkbox next to it.
+1. Open AdGuard's menu.
+1. Select *Preferences...*.
+1. Switch to the *Network* tab.
+1. Click the *Applications...* button.
+1. Find the app you want to exclude and uncheck the checkbox next to it.
 
 ![Filtered applications](https://cdn.adtidy.org/content/kb/ad_blocker/mac/legacy.jpg)
 
@@ -96,13 +95,13 @@ To configure an upstream proxy in AdGuard for Mac in Big Sur, open AdGuard's set
 
 Enter a string that looks like `scheme://user:password@host:port`, where
 
-* `scheme` is either `http`, `https`, `socks4` or `socks5`, depending on your proxy type,
+- `scheme` is either `http`, `https`, `socks4` or `socks5`, depending on your proxy type,
 
 If you use `socks5` proxy type, set the value of the `upstream.proxy.socks5udp` setting to `true` to make AdGuard route UDP traffic to the proxy server.
 
-* `user` and `password` are corresponding username and password of your proxy (if needed). Ignore either or both when not applicable,
-* `host` is the IP address of your proxy server,
-* `port` is the desired port number to be used by the proxy server.
+- `user` and `password` are corresponding username and password of your proxy (if needed). Ignore either or both when not applicable,
+- `host` is the IP address of your proxy server,
+- `port` is the desired port number to be used by the proxy server.
 
 :::note Example
 
@@ -120,7 +119,7 @@ Here's an example of how to configure an upstream proxy for [Shadowsocks](https:
 
 First of all, you need a working server side for your proxy. Most likely, to set it up, you would use a JSON file like this (`server` and `password` values were chosen randomly here):
 
-```
+```json
 {
    "server":"111.222.333.444",
    "server_port":8388,
@@ -163,11 +162,11 @@ It's impossible to foresee each and every possible problem that can pop up in Bi
 
 If you face problems in Big Sur or Monterey which can't be resolved by any of the methods above, you can try switching AdGuard to *Automatic proxy* mode.
 
-1) Open AdGuard's menu.
-2) Select *Preferences...*.
-3) Switch to the *Network* tab.
-4) Click the *Select Mode...* button.
-5) Select *Automatic Proxy*.
+1. Open AdGuard's menu.
+1. Select *Preferences...*.
+1. Switch to the *Network* tab.
+1. Click the *Select Mode...* button.
+1. Select *Automatic Proxy*.
 
 ![Switch AdGuard to Automatic proxy mode](https://cdn.adtidy.org/content/kb/ad_blocker/mac/automatic-proxy_en.jpg)
 
@@ -183,26 +182,26 @@ Some apps may ignore this system setting and their traffic will not be filtered.
 
 By default AdGuard uses Network Extension framework in Big Sur and Monterey as the old Kernel Extension framework is disabled there. This can cause some compatibility problems, but to enable Kernel Extension back, you need to disable System Integrity Protection (SIP) first. To disable SIP, follow this instruction:
 
-1) Click the *Apple symbol* in the Menu bar.
-2) Click *Restart…*
-3) Hold down *Command-R* to reboot into Recovery Mode.
-4) Click *Utilities*.
-5) Select *Terminal*.
-6) Type `csrutil disable`.
-7) Press *Return* or *Enter* on your keyboard.
-8) Click the *Apple symbol* in the Menu bar.
-9) Click *Restart…*
+1. Click the *Apple symbol* in the Menu bar.
+1. Click *Restart…*
+1. Hold down *Command-R* to reboot into Recovery Mode.
+1. Click *Utilities*.
+1. Select *Terminal*.
+1. Type `csrutil disable`.
+1. Press *Return* or *Enter* on your keyboard.
+1. Click the *Apple symbol* in the Menu bar.
+1. Click *Restart…*
 
 Now that SIP is disabled, this is how you enable Kernel Extension:
 
 ![Enable Kernel Extension](https://cdn.adtidy.org/content/kb/ad_blocker/mac/kernel_en.jpg)
 
-1) Open AdGuard's menu.
-2) Select *Preferences...*.
-3) Switch to the *Network* tab.
-4) Click the *Select Mode...* button.
-5) Select *Kernel Extension*.
-6) Confirm that you want to switch to Kernel Extension.
+1. Open AdGuard's menu.
+1. Select *Preferences...*.
+1. Switch to the *Network* tab.
+1. Click the *Select Mode...* button.
+1. Select *Kernel Extension*.
+1. Confirm that you want to switch to Kernel Extension.
 
 :::caution
 
