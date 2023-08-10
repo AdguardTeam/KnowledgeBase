@@ -3,7 +3,7 @@ title: How to enable system-wide filtering in AdGuard for iOS
 sidebar_position: 2
 ---
 
-:::Info
+:::info
 
 Dieser Artikel behandelt AdGuard für iOS, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. To see how it works firsthand, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
