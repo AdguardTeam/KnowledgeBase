@@ -27,6 +27,7 @@ On Big Sur, AdGuard developed "split-tunnel" rules to avoid creating the "defaul
 On Monterey, iCloud Private Relay got introduced. Privacy features of the Mail app also use Private Relay servers.
 
 As a result, AdGuard can't work together with iCloud Private Relay and the Mail app privacy features:
+
 1. iCloud Private Relay is applied to connections at the library level — before they reach the socket level, where AdGuard operates.
 2. iCloud Private Relay uses QUIC, which AdGuard can't filter in filtered apps because HTTP/3 filtering is not yet available.
 3. As AdGuard blocks QUIC, including iCloud Private Relay traffic — otherwise, ad blocking is impossible.
