@@ -1,0 +1,16 @@
+{
+    "ul-indent": { "indent": 4 },
+    "ul-style": { "style": "dash" },
+    "emphasis-style": { "style": "asterisk" },
+    "no-duplicate-header": { "siblings_only": true },
+    "no-inline-html": {
+        "allowed_elements": [
+            "br",
+            "details",
+            "summary"
+    ]},
+    "line-length": false,
+    "no-bare-urls": false,
+    "no-emphasis-as-heading": false,
+    "link-fragments": false
+}
