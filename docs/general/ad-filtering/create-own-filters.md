@@ -1527,7 +1527,7 @@ The list of the available directives is available [here](https://developer.mozil
 
 **Examples**
 
-* `||example.org^$permissions=autoplay=()` disallows  autoplay media requested through the `HTMLMediaElement` interface across `example.org`.
+* `||example.org^$permissions=autoplay=()` disallows autoplay media requested through the `HTMLMediaElement` interface across `example.org`.
 * `@@||example.org/page/*$permissions=autoplay=()` disables all rules with the `$permissions` modifier exactly matching `autoplay=()` on all the pages matching the rule pattern. For instance, the rule above.
 * `@@||example.org/page/*$permissions` disables all the `$permissions` rules on all the pages matching the rule pattern.
 * `$domain=example.org|example.com,permissions=storage-access=()\, сamera=()` disallows using the Storage Access API to request access to unpartitioned cookies and using video input devices across `example.org` and `example.com`.
