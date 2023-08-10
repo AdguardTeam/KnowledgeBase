@@ -1939,8 +1939,8 @@ With these rules, specified UTM parameters will be removed from any request save
 
 :::caution Restrictions
 
-* Rules with `$removeparam` modifier can be used [**only in trusted filters**](#trusted-filters).
-* `$removeparam` rules are compatible with [basic modifiers](#basic-rules-basic-modifiers),
+- Rules with `$removeparam` modifier can be used [**only in trusted filters**](#trusted-filters).
+- `$removeparam` rules are compatible with [basic modifiers](#basic-rules-basic-modifiers),
 [content-type modifiers](#content-type-modifiers), and with `$important` and `$app` modifiers.
 The rules which have any other modifiers are considered invalid and will be discarded.
 
@@ -3462,7 +3462,7 @@ this: `\]`.
 
 :::
 
-#### **`$app`** {#non-basic-app-modifier}
+### **`$app`** {#non-basic-app-modifier}
 
 `$app` modifier lets you narrow the rule coverage down to a specific application or a list of applications.
 The modifier's behavior and syntax perfectly match the corresponding [basic rules `$app` modifier](#app-modifier).
