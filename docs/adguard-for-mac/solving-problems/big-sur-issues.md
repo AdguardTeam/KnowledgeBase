@@ -92,12 +92,13 @@ Now AdGuard can filter local proxies (mostly) without any problems. If you encou
 :::
 
 To configure an upstream proxy in AdGuard for Mac in Big Sur:
+
 1. Open AdGuard's settings  *Preferences → Network → Outbound proxy*.
 2. Choose HTTP, HTTPS, SOCKS4 or SOCKS5, depending on your proxy type.
 3. Fill in the fields:
-    * `host` is the IP address of your proxy server,
-    * `port` is the desired port number to be used by the proxy server,
-    * `user` and `password` are corresponding username and password of your proxy (if needed). Ignore either or both when not applicable.
+    - `host` is the IP address of your proxy server,
+    - `port` is the desired port number to be used by the proxy server,
+    - `user` and `password` are corresponding username and password of your proxy (if needed). Ignore either or both when not applicable.
 
 If you run into any problems, please contact our tech support at support@adguard.com.
 
@@ -140,11 +141,12 @@ In Big Sur v11.1+, there are no known conflicts between AdGuard and Surge proxy.
 
 Now go to *Preferences → Network → Outbound proxy* and fill in the fields.
 For SOCKS5 proxy type:
-   * `host`: localhost
-   * `port`: 6153
+
+- `host`: localhost
+- `port`: 6153
 For HTTP proxy type:
-   * `host`: localhost
-   * `port`: 6152
+- `host`: localhost
+- `port`: 6152
 
 ## Alternatives to using a Network Extension
 
