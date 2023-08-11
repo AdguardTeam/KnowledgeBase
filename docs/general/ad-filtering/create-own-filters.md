@@ -627,7 +627,7 @@ the type will be determined using the `Content-Type` header at the beginning of 
 | [$ping](#ping-modifier) | ✅ * | ✅ | ✅ | ❌ | ❌ | ✅ | ✅ |
 | [$script](#script-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$stylesheet](#stylesheet-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| [$subdocument](#subdocument-modifier) | ? | ✅ | ✅ | ? | ? | ✅ | ? |
+| [$subdocument](#subdocument-modifier) | ? | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [$websocket](#websocket-modifier) | ? | ✅ | ✅ | ✅ * | ✅ * | ✅ | ✅ |
 | [$xmlhttprequest](#xmlhttprequest-modifier) | ✅ * | ✅ | ✅ | ? | ? | ✅ | ? |
 | [$webrtc 🚫](#webrtc-modifier "removed") | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
@@ -689,7 +689,7 @@ The rule corresponds to requests caused by either `navigator.sendBeacon()` or th
 AdGuard for Windows, Mac, and Android often cannot accurately detect `navigator.sendBeacon()`.
 Using `$ping` is not recommended in the filter lists that are supposed to be used by CoreLibs-based AdGuard products.
 
-Rules with `$ping` modifier are **not supported** by AdGuard for Safari and iOS.
+Rules with `$ping` modifier are not supported by AdGuard for Safari and iOS.
 
 :::
 
@@ -709,6 +709,12 @@ The rule corresponds to requests for built-in pages — HTML tags `frame` and `i
 
 - `||example.com^$subdocument` blocks built-in page requests (`frame` and `iframe`) to `example.com` and all its subdomains anywhere.
 - `||example.com^$subdocument,domain=domain.com` blocks built-in page requests (`frame` и `iframe`) to `example.com` (and its subdomains) from `domain.com` and all its subdomains.
+
+:::info Compatibility
+
+Rules with `$subdocument` modifier are not supported by AdGuard Content Blocker.
+
+:::
 
 #### **`$websocket`** {#websocket-modifier}
 
@@ -968,7 +974,7 @@ All cosmetic rules — not just specific ones — can be disabled by [`$elemhide
 
 :::info Compatibility
 
-Rules with `$specifichide` modifier are **not supported** by AdGuard for iOS and Safari.
+Rules with `$specifichide` modifier are not supported by AdGuard for iOS and Safari.
 
 :::
 
