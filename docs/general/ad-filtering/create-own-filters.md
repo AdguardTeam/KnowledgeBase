@@ -780,7 +780,7 @@ We recommend to get acquainted with [this article](https://adblockplus.org/filte
 | [$stealth](#stealth-modifier) | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ |
 | [$urlblock](#urlblock-modifier) | ✅ | ? | ? | ? | ? | ? | ? |
 | [$genericblock](#genericblock-modifier) | ✅ | ✅ | ✅ | ? | ? | ✅ | ? |
-| [$generichide](#generichide-modifier) | ✅ | ✅ | ✅ | ? | ? | ✅ | ? |
+| [$generichide](#generichide-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ? |
 | [$specifichide](#specifichide-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
 
 :::note
@@ -957,6 +957,12 @@ Disables all generic [cosmetic rules](#cosmetic-rules) on pages that correspond 
 **Examples**
 
 - `@@||example.com^$generichide` disables generic cosmetic rules on any pages at `example.com` and its subdomains.
+
+:::info Compatibility
+
+Rules with `$generichide` modifier are not supported by AdGuard Content Blocker.
+
+:::
 
 #### **`specifichide`** {#specifichide-modifier}
 
