@@ -271,10 +271,10 @@ Basically, they just limit the scope of rule application.
 :::note
 
 - ✅ — fully supported
-- ⚠️ — supported but may be unreliable or some limitations may occur, check a modifier description for more details
-- 🧩 — may be already implemented in nightly or beta but not supported in release versions yet
-- ❌ — no support
-- ? — FIXME: need to check
+- ⚠️ — supported, but reliability may vary or limitations may occur; check the modifier description for more details
+- 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions
+- ❌ — not supported
+- ? — FIXME: needs to be checked
 
 :::
 
@@ -635,10 +635,10 @@ the type will be determined using the `Content-Type` header at the beginning of 
 :::note
 
 - ✅ — fully supported
-- ⚠️ — supported but may be unreliable or some limitations may occur, check a modifier description for more details
-- ❌ — no support
+- ⚠️ — supported, but reliability may vary or limitations may occur; check the modifier description for more details
+- ❌ — not supported
 - 🚫 — removed and no longer supported
-- ? — FIXME: need to check
+- ? — FIXME: needs to be checked
 
 :::
 
@@ -776,8 +776,8 @@ We recommend to get acquainted with [this article](https://adblockplus.org/filte
 :::note
 
 - ✅ — fully supported
-- ❌ — no support
-- ? — FIXME: need to check
+- ❌ — not supported
+- ? — FIXME: needs to be checked
 
 :::
 
@@ -999,12 +999,12 @@ These modifiers are able to completely change the behaviour of basic rules.
 :::note
 
 - ✅ — fully supported
-- ⚠️ — supported but may be unreliable or some limitations may occur, check a modifier description for more details
+- ⚠️ — supported, but reliability may vary or limitations may occur; check the modifier description for more details
 <!-- following emoji shall be needed for $referrerpolicy after 1.12 is used in some apps -->
-<!-- - 🧩 — may be already implemented in nightly or beta but not supported in release versions yet -->
-- ❌ — no support
-- 👎 — deprecated, still supported but will be removed in the future
-- ? — FIXME: need to check
+<!-- - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions -->
+- ❌ — not supported
+- 👎 — deprecated; still supported but will be removed in the future
+- ? — FIXME: needs to be checked
 
 :::
 
@@ -2331,7 +2331,7 @@ The rules described in this section are created specifically for this purpose.
 :::note
 
 - ✅ — fully supported
-- ❌ — no support
+- ❌ — not supported
 
 :::
 
@@ -3458,7 +3458,7 @@ this: `\]`.
 :::note
 
 - ✅ — fully supported
-- ❌ — no support
+- ❌ — not supported
 
 :::
 
@@ -3958,12 +3958,12 @@ If you need an advice on how to create your own filters properly, our forum has 
 :::note
 
 - ✅ — fully supported
-- ⚠️ — supported but may be unreliable or some limitations may occur, check a modifier description for more details
-- 🧩 — may be already implemented in nightly or beta but not supported in release versions yet
-- ❌ — no support
-- 👎 — deprecated, still supported but will be removed in the future
+- ⚠️ — supported, but reliability may vary or limitations may occur; check the modifier description for more details
+- 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions
+- ❌ — not supported
+- 👎 — deprecated; still supported but will be removed in the future
 - 🚫 — removed and no longer supported
-- ? — FIXME: need to check
+- ? — FIXME: needs to be checked
 
 :::
 
