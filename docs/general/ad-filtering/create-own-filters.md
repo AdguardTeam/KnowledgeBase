@@ -629,7 +629,7 @@ the type will be determined using the `Content-Type` header at the beginning of 
 | [$stylesheet](#stylesheet-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$subdocument](#subdocument-modifier) | ? | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [$websocket](#websocket-modifier) | ? | ✅ | ✅ | ✅ * | ✅ * | ✅ | ✅ |
-| [$xmlhttprequest](#xmlhttprequest-modifier) | ✅ * | ✅ | ✅ | ? | ? | ✅ | ? |
+| [$xmlhttprequest](#xmlhttprequest-modifier) | ✅ * | ✅ | ✅ | ✅ | ✅ | ✅ | ? |
 | [$webrtc 🚫](#webrtc-modifier "removed") | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$object-subrequest 🚫](#object-subrequest-modifier "removed") | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 
