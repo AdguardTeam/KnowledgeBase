@@ -263,7 +263,7 @@ Basically, they just limit the scope of rule application.
 | [$header](#header-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$important](#important-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$match-case](#match-case-modifier) | ? | ✅ | ✅ | ? | ? | ? | ? |
-| [$method](#method-modifier) | ❌ | 🧩 | 🧩 | ❌ | ❌ | ❌ | ❌ |
+| [$method](#method-modifier) | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
 | [$popup](#popup-modifier) | ⚠️ | ✅ | ✅ | ⚠️ | ⚠️ | ✅ | ? |
 | [$third-party](#third-party-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$to](#to-modifier) | ❌ | 🧩 | 🧩 | ❌ | ❌ | ❌ | ❌ |
