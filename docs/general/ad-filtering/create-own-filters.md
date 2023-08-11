@@ -624,7 +624,7 @@ the type will be determined using the `Content-Type` header at the beginning of 
 | [$media](#media-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$object](#object-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$other](#other-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
-| [$ping](#ping-modifier) | ✅ * | ✅ | ✅ | ? | ? | ✅ | ? |
+| [$ping](#ping-modifier) | ✅ * | ✅ | ✅ | ❌ | ❌ | ✅ | ✅ |
 | [$script](#script-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$stylesheet](#stylesheet-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$subdocument](#subdocument-modifier) | ? | ✅ | ✅ | ? | ? | ✅ | ? |
@@ -686,7 +686,10 @@ The rule corresponds to requests caused by either `navigator.sendBeacon()` or th
 
 :::info Compatibility
 
-AdGuard for Windows, Mac, and Android often cannot accurately detect `navigator.sendBeacon()`. Using `$ping` is not recommended in the filter lists that are supposed to be used by CoreLibs-based AdGuard products.
+AdGuard for Windows, Mac, and Android often cannot accurately detect `navigator.sendBeacon()`.
+Using `$ping` is not recommended in the filter lists that are supposed to be used by CoreLibs-based AdGuard products.
+
+Rules with `$ping` modifier are **not supported** by AdGuard for Safari and iOS.
 
 :::
 
