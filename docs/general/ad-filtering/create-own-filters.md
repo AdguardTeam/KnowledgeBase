@@ -263,10 +263,10 @@ Basically, they just limit the scope of rule application.
 | [$header](#header-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$important](#important-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$match-case](#match-case-modifier) | ? | ✅ | ✅ | ? | ? | ? | ? |
-| [$method](#method-modifier) | ? | 🧩 | 🧩 | ❌ | ❌ | ❌ | ❌ |
+| [$method](#method-modifier) | ❌ | 🧩 | 🧩 | ❌ | ❌ | ❌ | ❌ |
 | [$popup](#popup-modifier) | ⚠️ | ✅ | ✅ | ⚠️ | ⚠️ | ✅ | ? |
 | [$third-party](#third-party-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| [$to](#to-modifier) | ? | 🧩 | 🧩 | ❌ | ❌ | ❌ | ❌ |
+| [$to](#to-modifier) | ❌ | 🧩 | 🧩 | ❌ | ❌ | ❌ | ❌ |
 
 :::note
 
@@ -981,14 +981,14 @@ These modifiers are able to completely change the behaviour of basic rules.
 | [$cookie](#cookie-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
 | [$csp](#csp-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
 | [$hls](#hls-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| [$inline-font](#inline-font-modifier) | ✅ | ✅ | ✅ | ? | ? | ❌ | ❌ |
-| [$inline-script](#inline-script-modifier) | ✅ | ✅ | ✅ | ? | ? | ❌ | ❌ |
+| [$inline-font](#inline-font-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
+| [$inline-script](#inline-script-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
 | [$jsonprune](#jsonprune-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$network](#network-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$permissions](#permissions-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$redirect](#redirect-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
 | [$redirect-rule](#redirect-rule-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
-| [$referrerpolicy](#referrerpolicy-modifier) | ? | ? | ? | ? | ? | ❌ | ❌ |
+| [$referrerpolicy](#referrerpolicy-modifier) | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$removeheader](#removeheader-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
 | [$removeparam](#removeparam-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
 | [$replace](#replace-modifier) | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ |
