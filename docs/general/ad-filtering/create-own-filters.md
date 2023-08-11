@@ -774,13 +774,13 @@ We recommend to get acquainted with [this article](https://adblockplus.org/filte
 | Modifier \ Products | [CL apps][cl-apps] | [ExtChr][ext-chr] | [ExtFf][ext-ff] | [iOS app][ios-app] | [Safari][ext-saf] | [ExtEdg][ext-edg] | [CB][and-cb] |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | [$content](#content-modifier) | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ |
-| [$elemhide](#elemhide-modifier) | ✅ | ✅ | ✅ | ? | ? | ✅ | ? |
+| [$elemhide](#elemhide-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$extension](#extension-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| [$jsinject](#jsinject-modifier) | ✅ | ✅ | ✅ | ? | ? | ✅ | ❌ |
+| [$jsinject](#jsinject-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [$stealth](#stealth-modifier) | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ |
-| [$urlblock](#urlblock-modifier) | ✅ | ? | ? | ? | ? | ? | ? |
-| [$genericblock](#genericblock-modifier) | ✅ | ✅ | ✅ | ? | ? | ✅ | ? |
-| [$generichide](#generichide-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ? |
+| [$urlblock](#urlblock-modifier) | ✅ | ✅ | ✅ | ? | ? | ? | ❌ |
+| [$genericblock](#genericblock-modifier) | ✅ | ✅ | ✅ | ? | ? | ✅ | ❌ |
+| [$generichide](#generichide-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$specifichide](#specifichide-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
 
 :::note
@@ -918,6 +918,12 @@ Disables blocking of all requests sent from the pages matching the rule and disa
 
 - `@@||example.com^$urlblock` — any requests sent from the pages at `example.com` and all subdomains are not going to be blocked.
 
+:::info Compatibility
+
+Rules with `$urlblock` modifier are not supported by AdGuard Content Blocker.
+
+:::
+
 #### Generic rules {#exception-modifiers-generic-rules}
 
 Before we can proceed to the next modifiers, we have to make a definition of *generic rules*. The rule is generic if it is not limited to specific domains.
@@ -950,6 +956,12 @@ Disables generic basic rules on pages that correspond to exception rule.
 
 - `@@||example.com^$genericblock` disables generic basic rules on any pages at `example.com` and all subdomains.
 
+:::info Compatibility
+
+Rules with `$genericblock` modifier are not supported by AdGuard Content Blocker.
+
+:::
+
 #### **`$generichide`** {#generichide-modifier}
 
 Disables all generic [cosmetic rules](#cosmetic-rules) on pages that correspond to the exception rule.
@@ -957,12 +969,6 @@ Disables all generic [cosmetic rules](#cosmetic-rules) on pages that correspond 
 **Examples**
 
 - `@@||example.com^$generichide` disables generic cosmetic rules on any pages at `example.com` and its subdomains.
-
-:::info Compatibility
-
-Rules with `$generichide` modifier are not supported by AdGuard Content Blocker.
-
-:::
 
 #### **`specifichide`** {#specifichide-modifier}
 
