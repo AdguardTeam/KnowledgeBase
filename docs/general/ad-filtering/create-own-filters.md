@@ -255,18 +255,18 @@ Basically, they just limit the scope of rule application.
 
 <!-- Please keep them sorted -->
 
-| Modifier \ Products | [CL apps][cl-apps] | [ExtChr][ext-chr] | [ExtFf][ext-ff] | [iOS app][ios-app] | [Safari][ext-saf] | [ExtEdg][ext-edg] | [CB][and-cb] |
-| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| [$app](#app-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| [$denyallow](#denyallow-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
-| [$domain](#domain-modifier) | ✅ | ✅ | ✅ | ✅ [*](#domain-modifier-limitations) | ✅ [*](#domain-modifier-limitations) | ✅ | ✅ |
-| [$header](#header-modifier) | ✅ | ⏳ | ⏳ | ❌ | ❌ | ❌ | ❌ |
-| [$important](#important-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
-| [$match-case](#match-case-modifier) | ✅ | ✅ | ✅ | ? | ? | ? | ✅ |
-| [$method](#method-modifier) | ⏳ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
-| [$popup](#popup-modifier) | ✅ * | ✅ | ✅ | ✅ * | ✅ * | ✅ | ? |
-| [$third-party](#third-party-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| [$to](#to-modifier) | ⏳ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
+| Modifier \ Products | [CL apps][cl-apps] | [ExtChr][ext-chr] | [ExtFf][ext-ff] | [iOS app][ios-app] | [Safari][ext-saf] | [CB][and-cb] |
+| --- | :---: | :---: | :---: | :---: | :---: | :---: |
+| [$app](#app-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [$denyallow](#denyallow-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| [$domain](#domain-modifier) | ✅ | ✅ | ✅ | ✅ [*](#domain-modifier-limitations) | ✅ [*](#domain-modifier-limitations) | ✅ |
+| [$header](#header-modifier) | ✅ | ⏳ | ⏳ | ❌ | ❌ | ❌ |
+| [$important](#important-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| [$match-case](#match-case-modifier) | ✅ | ✅ | ✅ | ? | ? | ✅ |
+| [$method](#method-modifier) | ⏳ | ✅ | ✅ | ❌ | ❌ | ❌ |
+| [$popup](#popup-modifier) | ✅ * | ✅ | ✅ | ✅ * | ✅ * | ? |
+| [$third-party](#third-party-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| [$to](#to-modifier) | ⏳ | ✅ | ✅ | ❌ | ❌ | ❌ |
 
 :::note
 
@@ -616,22 +616,22 @@ the type will be determined using the `Content-Type` header at the beginning of 
 
 <!-- Please keep them sorted -->
 
-| Modifier \ Products | [CL apps][cl-apps] | [ExtChr][ext-chr] | [ExtFf][ext-ff] | [iOS app][ios-app] | [Safari][ext-saf] | [ExtEdg][ext-edg] | [CB][and-cb] |
-| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| [$document](#document-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
-| [$font](#font-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| [$image](#image-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| [$media](#media-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| [$object](#object-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| [$other](#other-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
-| [$ping](#ping-modifier) | ✅ * | ✅ | ✅ | ❌ | ❌ | ✅ | ✅ |
-| [$script](#script-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| [$stylesheet](#stylesheet-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| [$subdocument](#subdocument-modifier) | ? | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
-| [$websocket](#websocket-modifier) | ? | ✅ | ✅ | ✅ * | ✅ * | ✅ | ✅ |
-| [$xmlhttprequest](#xmlhttprequest-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ? |
-| [$webrtc 🚫](#webrtc-modifier "removed") | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| [$object-subrequest 🚫](#object-subrequest-modifier "removed") | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Modifier \ Products | [CL apps][cl-apps] | [ExtChr][ext-chr] | [ExtFf][ext-ff] | [iOS app][ios-app] | [Safari][ext-saf] | [CB][and-cb] |
+| --- | :---: | :---: | :---: | :---: | :---: | :---: |
+| [$document](#document-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| [$font](#font-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| [$image](#image-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| [$media](#media-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| [$object](#object-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| [$other](#other-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| [$ping](#ping-modifier) | ✅ * | ✅ | ✅ | ❌ | ❌ | ✅ |
+| [$script](#script-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| [$stylesheet](#stylesheet-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| [$subdocument](#subdocument-modifier) | ? | ✅ | ✅ | ✅ | ✅ | ❌ |
+| [$websocket](#websocket-modifier) | ? | ✅ | ✅ | ✅ * | ✅ * | ✅ |
+| [$xmlhttprequest](#xmlhttprequest-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ? |
+| [$webrtc 🚫](#webrtc-modifier "removed") | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [$object-subrequest 🚫](#object-subrequest-modifier "removed") | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 
 :::note
 
@@ -771,17 +771,17 @@ We recommend to get acquainted with [this article](https://adblockplus.org/filte
 
 <!-- Please keep them sorted -->
 
-| Modifier \ Products | [CL apps][cl-apps] | [ExtChr][ext-chr] | [ExtFf][ext-ff] | [iOS app][ios-app] | [Safari][ext-saf] | [ExtEdg][ext-edg] | [CB][and-cb] |
-| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| [$content](#content-modifier) | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ |
-| [$elemhide](#elemhide-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| [$extension](#extension-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| [$jsinject](#jsinject-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
-| [$stealth](#stealth-modifier) | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ |
-| [$urlblock](#urlblock-modifier) | ✅ | ✅ | ✅ | ? | ? | ? | ❌ |
-| [$genericblock](#genericblock-modifier) | ✅ | ✅ | ✅ | ? | ? | ✅ | ❌ |
-| [$generichide](#generichide-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| [$specifichide](#specifichide-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
+| Modifier \ Products | [CL apps][cl-apps] | [ExtChr][ext-chr] | [ExtFf][ext-ff] | [iOS app][ios-app] | [Safari][ext-saf] | [CB][and-cb] |
+| --- | :---: | :---: | :---: | :---: | :---: | :---: |
+| [$content](#content-modifier) | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ |
+| [$elemhide](#elemhide-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| [$extension](#extension-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [$jsinject](#jsinject-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| [$stealth](#stealth-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
+| [$urlblock](#urlblock-modifier) | ✅ | ✅ | ✅ | ? | ? | ❌ |
+| [$genericblock](#genericblock-modifier) | ✅ | ✅ | ✅ | ? | ? | ❌ |
+| [$generichide](#generichide-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| [$specifichide](#specifichide-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
 
 :::note
 
@@ -996,27 +996,27 @@ These modifiers are able to completely change the behaviour of basic rules.
 
 <!-- Please keep them sorted -->
 
-| Modifier \ Products | [CL apps][cl-apps] | [ExtChr][ext-chr] | [ExtFf][ext-ff] | [iOS app][ios-app] | [Safari][ext-saf] | [ExtEdg][ext-edg] | [CB][and-cb] |
-| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| [$all](#all-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| [$badfilter](#badfilter-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
-| [$cookie](#cookie-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| [$csp](#csp-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
-| [$hls](#hls-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| [$inline-font](#inline-font-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
-| [$inline-script](#inline-script-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
-| [$jsonprune](#jsonprune-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| [$network](#network-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| [$permissions](#permissions-modifier) | ✅ | ⏳ | ⏳ | ❌ | ❌ | ❌ | ❌ |
-| [$redirect](#redirect-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
-| [$redirect-rule](#redirect-rule-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
-| [$referrerpolicy](#referrerpolicy-modifier) | ⏳ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| [$removeheader](#removeheader-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
-| [$removeparam](#removeparam-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
-| [$replace](#replace-modifier) | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ |
-| [noop](#noop-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
-| [$empty 👎](#empty-modifier "deprecated") | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
-| [$mp4 👎](#mp4-modifier "deprecated") | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
+| Modifier \ Products | [CL apps][cl-apps] | [ExtChr][ext-chr] | [ExtFf][ext-ff] | [iOS app][ios-app] | [Safari][ext-saf] | [CB][and-cb] |
+| --- | :---: | :---: | :---: | :---: | :---: | :---: |
+| [$all](#all-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
+| [$badfilter](#badfilter-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| [$cookie](#cookie-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
+| [$csp](#csp-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
+| [$hls](#hls-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [$inline-font](#inline-font-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
+| [$inline-script](#inline-script-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
+| [$jsonprune](#jsonprune-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [$network](#network-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [$permissions](#permissions-modifier) | ✅ | ⏳ | ⏳ | ❌ | ❌ | ❌ |
+| [$redirect](#redirect-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
+| [$redirect-rule](#redirect-rule-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
+| [$referrerpolicy](#referrerpolicy-modifier) | ⏳ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [$removeheader](#removeheader-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
+| [$removeparam](#removeparam-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
+| [$replace](#replace-modifier) | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ |
+| [noop](#noop-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| [$empty 👎](#empty-modifier "deprecated") | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
+| [$mp4 👎](#mp4-modifier "deprecated") | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
 
 :::note
 
@@ -2342,14 +2342,14 @@ However, the capabilities of the basic rules may not be sufficient to block ads.
 Sometimes you need to hide an element or change part of the HTML code of a web page without breaking anything.
 The rules described in this section are created specifically for this purpose.
 
-| Categories \ Products | [CL apps][cl-apps] | [ExtChr][ext-chr] | [ExtFf][ext-ff] | [iOS app][ios-app] | [Safari][ext-saf] | [ExtEdg][ext-edg] | [CB][and-cb] |
-| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| [Element hiding](#cosmetic-elemhide-rules) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| [CSS rules](#cosmetic-css-rules) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
-| [Extended CSS](#extended-css-selectors) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
-| [HTML filtering](#html-filtering-rules) | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ |
-| [JavaScript](#javascript-rules) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
-| [Scriptlets](#scriptlets) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
+| Categories \ Products | [CL apps][cl-apps] | [ExtChr][ext-chr] | [ExtFf][ext-ff] | [iOS app][ios-app] | [Safari][ext-saf] | [CB][and-cb] |
+| --- | :---: | :---: | :---: | :---: | :---: | :---: |
+| [Element hiding](#cosmetic-elemhide-rules) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| [CSS rules](#cosmetic-css-rules) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| [Extended CSS](#extended-css-selectors) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| [HTML filtering](#html-filtering-rules) | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ |
+| [JavaScript](#javascript-rules) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| [Scriptlets](#scriptlets) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 
 :::note
 
@@ -3471,12 +3471,12 @@ In the modifiers values of the following characters must be escaped: `[`, `]`, `
 it is used for the escaping). Use `\` to escape them. For example, an escaped bracket looks like
 this: `\]`.
 
-| Modifier \ Products | [CL apps][cl-apps] | [ExtChr][ext-chr] | [ExtFf][ext-ff] | [iOS app][ios-app] | [Safari][ext-saf] | [ExtEdg][ext-edg] | [CB][and-cb] |
-| --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| [$app](#non-basic-app-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| [$domain](#non-basic-domain-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
-| [$path](#non-basic-path-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
-| [$url](#non-basic-url-modifier) | ✅ | ⏳ | ⏳ | ❌ | ❌ | ❌ | ❌ |
+| Modifier \ Products | [CL apps][cl-apps] | [ExtChr][ext-chr] | [ExtFf][ext-ff] | [iOS app][ios-app] | [Safari][ext-saf] | [CB][and-cb] |
+| --- | :---: | :---: | :---: | :---: | :---: | :---: |
+| [$app](#non-basic-app-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [$domain](#non-basic-domain-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| [$path](#non-basic-path-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| [$url](#non-basic-url-modifier) | ✅ | ⏳ | ⏳ | ❌ | ❌ | ❌ |
 
 :::note
 
@@ -3997,5 +3997,4 @@ If you need an advice on how to create your own filters properly, our forum has 
 [ext-ff]: #what-product "AdGuard Browser Extension for Firefox"
 [ios-app]: #what-product "AdGuard for iOS"
 [ext-saf]: #what-product "AdGuard for Safari"
-[ext-edg]: #what-product "AdGuard Browser Extension for Edge Legacy"
 [and-cb]: #what-product "AdGuard Content Blocker"
