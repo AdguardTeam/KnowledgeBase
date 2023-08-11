@@ -3047,8 +3047,9 @@ pseudoClasses = pseudoClass *pseudoClass
 * **`tagName`** — name of the element in lower case, for example, `div` or `script`.
 * **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules syntax](#elemhide-syntax).
 * **`attributes`** — a list of attributes, that limit the elements selection. `name` — attribute name, `value` — substring, that is contained in attribute value.
-* **`pseudoName`**` — the name of a pseudo-class.
-* **`pseudoArgs`**` — the arguments of a function-style pseudo-class.
+* **`pseudoName`** — the name of a pseudo-class.
+* **`pseudoArgs`** — the arguments of a function-style pseudo-class.
+* **`combinator`** — an operator that works similarly to the [CSS child combinator](insert link to MDN): that is, the `selector` on the right of the `combinator` will only match an element whose direct parent matches the `selector` on the left of the `combinator`.
 
 ### Examples
 
@@ -3093,6 +3094,12 @@ Following rule will delete all `script` elements with a `banner` substring in th
 $$script[tag-content="banner"]
 ```
 
+:::caution Limitations
+
+The `tag-content` special attribute may not appear in a selector to the left of a `>` combinator.
+
+:::
+
 #### `wildcard`
 
 :::caution Deprecation notice
@@ -3111,7 +3118,19 @@ For example:
 
 It will check, if the code of element contains two consecutive substrings `banner` and `text`.
 
+:::caution Limitations
+
+The `wildcard` special attribute may not appear in a selector to the left of a `>` combinator.
+
+:::
+
 #### `max-length`
+
+:::caution Deprecation notice
+
+This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class with a regular expression where it is available.
+
+:::
 
 Specifies the maximum length for content of HTML element. If this parameter is set and the content length exceeds the value, a rule does not apply to the element.
 
@@ -3125,7 +3144,19 @@ $$div[tag-content="banner"][max-length="400"]
 ```
 This rule will remove all the `div` elements, whose code contains the substring `banner` and the length of which does not exceed `400` characters.
 
+:::caution Limitations
+
+The `max-length` special attribute may not appear in a selector to the left of a `>` combinator.
+
+:::
+
 #### `min-length`
+
+:::caution Deprecation notice
+
+This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class with a regular expression where it is available.
+
+:::
 
 Specifies the minimum length for content of HTML element. If this parameter is set and the content length is less than preset value, a rule does not apply to the element.
 
@@ -3135,6 +3166,12 @@ $$div[tag-content="banner"][min-length="400"]
 ```
 
 This rule will remove all the `div` elements, whose code contains the substring `banner` and the length of which exceeds `400` characters.
+
+:::caution Limitations
+
+The `min-length` special attribute may not appear in a selector to the left of a `>` combinator.
+
+:::
 
 ### Pseudo-classes
 
@@ -3161,9 +3198,13 @@ The `:contains()` pseudo-class is supported by AdGuard for Windows, Mac, and And
 
 :::
 
-Requires that the element's inner HTML contains the specified text or matches the specified regular expression.
+Requires that the inner HTML of the element contains the specified text or matches the specified regular expression.
 
-As with the `tag-content` and `wildcard` attributes, specifying a `:contains()` pseudo-class on a non-leaf selector is not supported.
+:::caution Limitations
+
+A `:contains()` pseudo-class may not appear in a selector to the left of a `>` combinator.
+
+:::
 
 ### Exceptions
 
