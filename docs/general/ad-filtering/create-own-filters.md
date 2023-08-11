@@ -3096,7 +3096,7 @@ $$script[tag-content="banner"]
 
 :::caution Limitations
 
-The `tag-content` special attribute may not appear in a selector to the left of a `>` combinator.
+The `tag-content` special attribute must not appear in a selector to the left of a `>` combinator.
 
 :::
 
@@ -3120,7 +3120,7 @@ It will check, if the code of element contains two consecutive substrings `banne
 
 :::caution Limitations
 
-The `wildcard` special attribute may not appear in a selector to the left of a `>` combinator.
+The `wildcard` special attribute must not appear in a selector to the left of a `>` combinator.
 
 :::
 
@@ -3146,7 +3146,7 @@ This rule will remove all the `div` elements, whose code contains the substring 
 
 :::caution Limitations
 
-The `max-length` special attribute may not appear in a selector to the left of a `>` combinator.
+The `max-length` special attribute must not appear in a selector to the left of a `>` combinator.
 
 :::
 
@@ -3169,7 +3169,7 @@ This rule will remove all the `div` elements, whose code contains the substring 
 
 :::caution Limitations
 
-The `min-length` special attribute may not appear in a selector to the left of a `>` combinator.
+The `min-length` special attribute must not appear in a selector to the left of a `>` combinator.
 
 :::
 
@@ -3202,7 +3202,7 @@ Requires that the inner HTML of the element contains the specified text or match
 
 :::caution Limitations
 
-A `:contains()` pseudo-class may not appear in a selector to the left of a `>` combinator.
+A `:contains()` pseudo-class must not appear in a selector to the left of a `>` combinator.
 
 :::
 
