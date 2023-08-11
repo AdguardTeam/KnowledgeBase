@@ -986,7 +986,7 @@ All cosmetic rules — not just specific ones — can be disabled by [`$elemhide
 
 :::info Compatibility
 
-Rules with `$specifichide` modifier are not supported by AdGuard for iOS and Safari.
+Rules with `$specifichide` modifier are not supported by AdGuard for iOS and Safari, and AdGuard Content Blocker.
 
 :::
 
