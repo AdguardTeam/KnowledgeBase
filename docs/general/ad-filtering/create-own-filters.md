@@ -1002,7 +1002,7 @@ These modifiers are able to completely change the behaviour of basic rules.
 | [$removeheader](#removeheader-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
 | [$removeparam](#removeparam-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
 | [$replace](#replace-modifier) | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ |
-| [noop](#noop-modifier) | ✅ | ✅ | ✅ | ✅ | ? | ✅ | ❌ |
+| [noop](#noop-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [$empty 👎](#empty-modifier "deprecated") | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
 | [$mp4 👎](#mp4-modifier "deprecated") | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
 
