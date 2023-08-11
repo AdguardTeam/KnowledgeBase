@@ -3464,11 +3464,12 @@ this: `\]`.
 | [$app](#non-basic-app-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$domain](#non-basic-domain-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
 | [$path](#non-basic-path-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
-| [$url](#non-basic-url-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [$url](#non-basic-url-modifier) | ✅ | ⏳ | ⏳ | ❌ | ❌ | ❌ | ❌ |
 
 :::note
 
 - ✅ — fully supported
+- ⏳ — feature that have been implemented or is planned to be implemented but are not yet available in any product
 - ❌ — not supported
 
 :::
