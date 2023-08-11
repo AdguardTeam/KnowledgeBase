@@ -34,15 +34,15 @@ More on each extension below.
 
 ## Content-blocking extensions
 
-*AdGuard General* applies rules from filters that you may find in *Filters* → *Ad blocking* and *Filters* → *Language-specific*. This extension focuses on comprehensive ad blocking and includes filters for ads in specific languages.
+*AdGuard General* applies rules from filters that you can find in *Filters* → *Ad blocking* and *Filters* → *Language-specific*. This extension focuses on comprehensive ad blocking and includes filters for ads in specific languages.
 
-*AdGuard Privacy* applies rules from filters that you may find in *Filters* → *Privacy*. It blocks tracking mechanisms and ensures that your browsing activity remains private.
+*AdGuard Privacy* applies rules from filters located in *Filters* → *Privacy*. It blocks tracking mechanisms and ensures that your browsing activity remains private.
 
-*AdGuard Social* applies rules from filters that you may find in *Filters* → *Social Widgets* and *Filters* → *Annoyances*. It blocks popups, social media buttons, online assistant windows, and other elements on web pages that you might find annoying.
+*AdGuard Social* applies rules from filters that can be found in *Filters* → *Social Widgets* and *Filters* → *Annoyances*. It blocks popups, social media buttons, online assistant windows, and other elements on web pages that you might find annoying.
 
-*AdGuard Security* applies rules from filters that you may find in *Filters* → *Security*. This extension identifies and blocks potentially harmful elements, safeguarding users from malicious content.
+*AdGuard Security* applies rules from filters under *Filters* → *Security*. This extension identifies and blocks potentially harmful elements, safeguarding users from malicious content.
 
-*AdGuard Other* applies rules from filters that that don't fall under the above-mentioned categories and that you may find in *Filters* → *Other*: *Filter unblocking search ads and self-promotion*, *AdGuard DNS filter*, and *AdGuard Experimental filter*.
+*AdGuard Other* applies rules from filters that that don't fall under the above-mentioned categories and that are located in *Filters* → *Other*: *Filter unblocking search ads and self-promotion*, *AdGuard DNS filter*, and *AdGuard Experimental filter*.
 
 *AdGuard Custom* applies rules from filters that you add on your own to *Custom filters*.
 
@@ -52,7 +52,7 @@ User rules and allowlist rules are included into every extension.
 
 *AdGuard Safari Icon* enables the AdGuard Mini icon next to the search bar. It's useful if you want to quickly set up protection on a particular website or block ads manually.
 
-*AdGuard Advanced blocking* contains advanced rules that aren't converted into the format supported by Safari. This includes CSS rules, CSS selectors, and scriptlets that allow AdGuard to block complex ads — for example, on youtube.com.
+*AdGuard Advanced blocking* contains advanced rules that aren't converted into the format supported by Safari. This includes CSS rules, CSS selectors, and scriptlets that allow AdGuard to block complex ads — for example, on YouTube.
 
 ## Why some extensions require permissions
 
