@@ -258,21 +258,22 @@ Basically, they just limit the scope of rule application.
 | Modifier \ Products | [CL apps][cl-apps] | [ExtChr][ext-chr] | [ExtFf][ext-ff] | [iOS app][ios-app] | [Safari][ext-saf] | [ExtEdg][ext-edg] | [CB][and-cb] |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | [$app](#app-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| [$denyallow](#denyallow-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ |
-| [$domain](#domain-modifier) | ✅ | ✅ | ✅ | [⚠️](#domain-modifier-limitations) | [⚠️](#domain-modifier-limitations) | ✅ | ✅ |
-| [$header](#header-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| [$important](#important-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| [$match-case](#match-case-modifier) | ? | ✅ | ✅ | ? | ? | ? | ? |
-| [$method](#method-modifier) | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
-| [$popup](#popup-modifier) | ⚠️ | ✅ | ✅ | ⚠️ | ⚠️ | ✅ | ? |
+| [$denyallow](#denyallow-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ |
+| [$domain](#domain-modifier) | ✅ | ✅ | ✅ | ✅ [*](#domain-modifier-limitations) | ✅ [*](#domain-modifier-limitations) | ✅ | ✅ |
+| [$header](#header-modifier) | ✅ | ⏳ | ⏳ | ❌ | ❌ | ❌ | ❌ |
+| [$important](#important-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| [$match-case](#match-case-modifier) | ✅ | ✅ | ✅ | ? | ? | ? | ✅ |
+| [$method](#method-modifier) | ⏳ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
+| [$popup](#popup-modifier) | ✅ * | ✅ | ✅ | ✅ * | ✅ * | ✅ | ? |
 | [$third-party](#third-party-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| [$to](#to-modifier) | ❌ | 🧩 | 🧩 | ❌ | ❌ | ❌ | ❌ |
+| [$to](#to-modifier) | ⏳ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
 
 :::note
 
 - ✅ — fully supported
-- ⚠️ — supported, but reliability may vary or limitations may occur; check the modifier description for more details
-- 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions
+- ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
+<!-- - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions -->
+- ⏳ — feature that have been implemented or is planned to be implemented but are not yet available in any product
 - ❌ — not supported
 - ? — FIXME: needs to be checked
 
@@ -623,19 +624,19 @@ the type will be determined using the `Content-Type` header at the beginning of 
 | [$media](#media-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$object](#object-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$other](#other-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
-| [$ping](#ping-modifier) | ⚠️ | ✅ | ✅ | ? | ? | ✅ | ? |
+| [$ping](#ping-modifier) | ✅ * | ✅ | ✅ | ? | ? | ✅ | ? |
 | [$script](#script-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$stylesheet](#stylesheet-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$subdocument](#subdocument-modifier) | ? | ✅ | ✅ | ? | ? | ✅ | ? |
-| [$websocket](#websocket-modifier) | ? | ✅ | ✅ | ⚠️ | ⚠️ | ✅ | ✅ |
-| [$xmlhttprequest](#xmlhttprequest-modifier) | ⚠️ | ✅ | ✅ | ? | ? | ✅ | ? |
+| [$websocket](#websocket-modifier) | ? | ✅ | ✅ | ✅ * | ✅ * | ✅ | ✅ |
+| [$xmlhttprequest](#xmlhttprequest-modifier) | ✅ * | ✅ | ✅ | ? | ? | ✅ | ? |
 | [$webrtc 🚫](#webrtc-modifier "removed") | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$object-subrequest 🚫](#object-subrequest-modifier "removed") | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 
 :::note
 
 - ✅ — fully supported
-- ⚠️ — supported, but reliability may vary or limitations may occur; check the modifier description for more details
+- ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
 - ❌ — not supported
 - 🚫 — removed and no longer supported
 - ? — FIXME: needs to be checked
@@ -985,10 +986,10 @@ These modifiers are able to completely change the behaviour of basic rules.
 | [$inline-script](#inline-script-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
 | [$jsonprune](#jsonprune-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$network](#network-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| [$permissions](#permissions-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [$permissions](#permissions-modifier) | ✅ | ⏳ | ⏳ | ❌ | ❌ | ❌ | ❌ |
 | [$redirect](#redirect-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
 | [$redirect-rule](#redirect-rule-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
-| [$referrerpolicy](#referrerpolicy-modifier) | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [$referrerpolicy](#referrerpolicy-modifier) | ⏳ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$removeheader](#removeheader-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
 | [$removeparam](#removeparam-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
 | [$replace](#replace-modifier) | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ | ❌ |
@@ -999,9 +1000,10 @@ These modifiers are able to completely change the behaviour of basic rules.
 :::note
 
 - ✅ — fully supported
-- ⚠️ — supported, but reliability may vary or limitations may occur; check the modifier description for more details
+- ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
 <!-- following emoji shall be needed for $referrerpolicy after 1.12 is used in some apps -->
 <!-- - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions -->
+- ⏳ — feature that have been implemented or is planned to be implemented but are not yet available in any product
 - ❌ — not supported
 - 👎 — deprecated; still supported but will be removed in the future
 - ? — FIXME: needs to be checked
@@ -3958,8 +3960,9 @@ If you need an advice on how to create your own filters properly, our forum has 
 :::note
 
 - ✅ — fully supported
-- ⚠️ — supported, but reliability may vary or limitations may occur; check the modifier description for more details
+- ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
 - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions
+- ⏳ — feature that have been implemented or is planned to be implemented but are not yet available in any product
 - ❌ — not supported
 - 👎 — deprecated; still supported but will be removed in the future
 - 🚫 — removed and no longer supported
