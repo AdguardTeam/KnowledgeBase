@@ -601,8 +601,8 @@ There is a set of modifiers, which can be used to limit the rule's application a
 
 There is a big difference in how AdGuard determines the content type on different platforms.
 For AdGuard Browser Extension, content type for every request is provided by the browser.
-AdGuard for Windows, Mac, Android use following method:
-first we try to determine the type of the request by the `Sec-Fetch-Dest` request header or by the filename extension.
+AdGuard for Windows, Mac, and Android use the following method:
+first, the apps try to determine the type of the request by the `Sec-Fetch-Dest` request header or by the filename extension.
 If the request is not blocked at this stage,
 the type will be determined using the `Content-Type` header at the beginning of the server response.
 
@@ -628,7 +628,7 @@ the type will be determined using the `Content-Type` header at the beginning of 
 | [$script](#script-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$stylesheet](#stylesheet-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$subdocument](#subdocument-modifier) | ✅ * | ✅ | ✅ | ✅ | ✅ | ❌ |
-| [$websocket](#websocket-modifier) | ? | ✅ | ✅ | ✅ * | ✅ * | ✅ |
+| [$websocket](#websocket-modifier) | ✅ | ✅ | ✅ | ✅ * | ✅ * | ✅ |
 | [$xmlhttprequest](#xmlhttprequest-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ? |
 | [$webrtc 🚫](#webrtc-modifier "removed") | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$object-subrequest 🚫](#object-subrequest-modifier "removed") | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
@@ -997,13 +997,13 @@ All cosmetic rules — not just specific ones — can be disabled by [`$elemhide
 
 :::info Compatibility
 
-Rules with `$specifichide` modifier are not supported by AdGuard for iOS and Safari, and AdGuard Content Blocker.
+Rules with `$specifichide` modifier are not supported by AdGuard for iOS and Safari and AdGuard Content Blocker.
 
 :::
 
 ### Advanced capabilities {#advanced-modifiers}
 
-These modifiers are able to completely change the behaviour of basic rules.
+These modifiers are able to completely change the behavior of basic rules.
 
 <!-- Please keep them sorted -->
 
@@ -1976,7 +1976,7 @@ With these rules, specified UTM parameters will be removed from any request save
 - Rules with `$removeparam` modifier can be used [**only in trusted filters**](#trusted-filters).
 - `$removeparam` rules are compatible with [basic modifiers](#basic-rules-basic-modifiers),
 [content-type modifiers](#content-type-modifiers), and with `$important` and `$app` modifiers.
-The rules which have any other modifiers are considered invalid and will be discarded.
+Rules with any other modifiers are considered invalid and will be discarded.
 
 :::
 
