@@ -60,13 +60,13 @@ User rules and allowlist rules are included into every extension.
 
 1. Open Safari and click *Safari* in the upper left corner of the screen to expand the menu.
 
-![Safari settings *mobile](https://cdn.adtidy.org/blog/new/sxaqgfsafari_settings.png)
+    ![Safari settings *mobile](https://cdn.adtidy.org/blog/new/sxaqgfsafari_settings.png)
 
-2. Click *Preferences...* .
+1. Click *Preferences...*
 
-3. Select *Extensions*.
+1. Select *Extensions*.
 
-![Extensions tab](https://cdn.adtidy.org/blog/new/ocofdextensions_tab.png)
+    ![Extensions tab](https://cdn.adtidy.org/blog/new/ocofdextensions_tab.png)
 
 
 ## Why some extensions require permissions
