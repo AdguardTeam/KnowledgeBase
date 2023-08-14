@@ -273,7 +273,7 @@ Basically, they just limit the scope of rule application.
 - ✅ — fully supported
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
 <!-- - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions -->
-- ⏳ — feature that have been implemented or is planned to be implemented but are not yet available in any product
+- ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product
 - ❌ — not supported
 - ? — FIXME: needs to be checked
 
@@ -794,7 +794,6 @@ We recommend to get acquainted with [this article](https://adblockplus.org/filte
 - ✅ — fully supported
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
 - ❌ — not supported
-- ? — FIXME: needs to be checked
 
 :::
 
@@ -1037,10 +1036,9 @@ These modifiers are able to completely change the behavior of basic rules.
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
 <!-- following emoji shall be needed for $referrerpolicy after 1.12 is used in some apps -->
 <!-- - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions -->
-- ⏳ — feature that have been implemented or is planned to be implemented but are not yet available in any product
+- ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product
 - ❌ — not supported
 - 👎 — deprecated; still supported but will be removed in the future
-- ? — FIXME: needs to be checked
 
 :::
 
@@ -3494,7 +3492,7 @@ this: `\]`.
 :::note
 
 - ✅ — fully supported
-- ⏳ — feature that have been implemented or is planned to be implemented but are not yet available in any product
+- ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product
 - ❌ — not supported
 
 :::
@@ -3996,7 +3994,7 @@ If you need an advice on how to create your own filters properly, our forum has 
 - ✅ — fully supported
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
 - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions
-- ⏳ — feature that have been implemented or is planned to be implemented but are not yet available in any product
+- ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product
 - ❌ — not supported
 - 👎 — deprecated; still supported but will be removed in the future
 - 🚫 — removed and no longer supported
