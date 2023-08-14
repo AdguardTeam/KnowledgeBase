@@ -1003,7 +1003,7 @@ Rules with `$specifichide` modifier are not supported by AdGuard for iOS and Saf
 
 ### Advanced capabilities {#advanced-modifiers}
 
-These modifiers are able to completely change the behaviour of basic rules.
+These modifiers are able to completely change the behavior of basic rules.
 
 <!-- Please keep them sorted -->
 
