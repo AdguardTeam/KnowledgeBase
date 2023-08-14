@@ -30,6 +30,8 @@ There are also two extensions responsible for other features:
 – *AdGuard Safari Icon* enables AdGuard's icon next to the search bar in Safari
 – *AdGuard Advanced Blocking* allows using advanced rules to block complex ads
 
+![Safari extensions](https://uploads.adguard.org/safari_extensions.png)
+
 More on each extension below.
 
 ## Content-blocking extensions
@@ -53,6 +55,19 @@ User rules and allowlist rules are included into every extension.
 *AdGuard Safari Icon* enables the AdGuard Mini icon next to the search bar. It's useful if you want to quickly set up protection on a particular website or block ads manually.
 
 *AdGuard Advanced blocking* contains advanced rules that aren't converted into the format supported by Safari. This includes CSS rules, CSS selectors, and scriptlets that allow AdGuard to block complex ads — for example, on YouTube.
+
+## How to manage Safari extensions
+
+1. Open Safari and click *Safari* in the upper left corner of the screen to expand the menu.
+
+![Safari settings *mobile](https://cdn.adtidy.org/blog/new/sxaqgfsafari_settings.png)
+
+2. Click *Preferences...* .
+
+3. Select *Extensions*.
+
+![Extensions tab](https://cdn.adtidy.org/blog/new/ocofdextensions_tab.png)
+
 
 ## Why some extensions require permissions
 
