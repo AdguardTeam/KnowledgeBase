@@ -601,7 +601,7 @@ There is a set of modifiers, which can be used to limit the rule's application a
 
 There is a big difference in how AdGuard determines the content type on different platforms.
 For AdGuard Browser Extension, content type for every request is provided by the browser.
-AdGuard for Windows, Mac, Android use following method:
+AdGuard for Windows, Mac, and Android use the following method:
 first we try to determine the type of the request by the `Sec-Fetch-Dest` request header or by the filename extension.
 If the request is not blocked at this stage,
 the type will be determined using the `Content-Type` header at the beginning of the server response.
