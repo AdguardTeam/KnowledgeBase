@@ -627,7 +627,7 @@ the type will be determined using the `Content-Type` header at the beginning of 
 | [$ping](#ping-modifier) | ✅ * | ✅ | ✅ | ❌ | ❌ | ✅ |
 | [$script](#script-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$stylesheet](#stylesheet-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| [$subdocument](#subdocument-modifier) | ? | ✅ | ✅ | ✅ | ✅ | ❌ |
+| [$subdocument](#subdocument-modifier) | ✅ * | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [$websocket](#websocket-modifier) | ? | ✅ | ✅ | ✅ * | ✅ * | ✅ |
 | [$xmlhttprequest](#xmlhttprequest-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ? |
 | [$webrtc 🚫](#webrtc-modifier "removed") | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
@@ -711,6 +711,10 @@ The rule corresponds to requests for built-in pages — HTML tags `frame` and `i
 - `||example.com^$subdocument,domain=domain.com` blocks built-in page requests (`frame` и `iframe`) to `example.com` (and its subdomains) from `domain.com` and all its subdomains.
 
 :::info Compatibility
+
+In AdGuard for Windows, Mac, and Android subdocuments are being detected
+by the [Sec-Fetch-Dest header][sec-fetch-dest-header] if it is present.
+Otherwise, some main pages may be treated as subdocuments.
 
 Rules with `$subdocument` modifier are not supported by AdGuard Content Blocker.
 
@@ -4005,3 +4009,5 @@ If you need an advice on how to create your own filters properly, our forum has 
 [ios-app]: #what-product "AdGuard for iOS"
 [ext-saf]: #what-product "AdGuard for Safari"
 [and-cb]: #what-product "AdGuard Content Blocker"
+
+[sec-fetch-dest-header]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest
