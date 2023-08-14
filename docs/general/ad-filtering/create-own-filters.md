@@ -778,14 +778,15 @@ We recommend to get acquainted with [this article](https://adblockplus.org/filte
 | [$extension](#extension-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$jsinject](#jsinject-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [$stealth](#stealth-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
-| [$urlblock](#urlblock-modifier) | ✅ | ✅ | ✅ | ? | ? | ❌ |
-| [$genericblock](#genericblock-modifier) | ✅ | ✅ | ✅ | ? | ? | ❌ |
+| [$urlblock](#urlblock-modifier) | ✅ | ✅ | ✅ | ✅ * | ✅ * | ❌ |
+| [$genericblock](#genericblock-modifier) | ✅ | ✅ | ✅ | ✅ * | ✅ * | ❌ |
 | [$generichide](#generichide-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$specifichide](#specifichide-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
 
 :::note
 
 - ✅ — fully supported
+- ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
 - ❌ — not supported
 - ? — FIXME: needs to be checked
 
@@ -920,6 +921,9 @@ Disables blocking of all requests sent from the pages matching the rule and disa
 
 :::info Compatibility
 
+In AdGuard for iOS and Safari rules with `$urlblock` work
+as [$document exclusion](#document-modifier) — unblock everything.
+
 Rules with `$urlblock` modifier are not supported by AdGuard Content Blocker.
 
 :::
@@ -957,6 +961,9 @@ Disables generic basic rules on pages that correspond to exception rule.
 - `@@||example.com^$genericblock` disables generic basic rules on any pages at `example.com` and all subdomains.
 
 :::info Compatibility
+
+In AdGuard for iOS and Safari rules with `$genericblock` work
+as [$document exclusion](#document-modifier) — unblock everything.
 
 Rules with `$genericblock` modifier are not supported by AdGuard Content Blocker.
 
