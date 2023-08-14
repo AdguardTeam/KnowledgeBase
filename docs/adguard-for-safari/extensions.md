@@ -52,7 +52,7 @@ User rules and allowlist rules are included into every extension.
 
 ## Other extensions
 
-*AdGuard Safari Icon* enables the AdGuard Mini icon next to the search bar. It's useful if you want to quickly set up protection on a particular website or block ads manually.
+*AdGuard Safari Icon* enables the AdGuard icon next to the search bar. It's useful if you want to quickly set up protection on a particular website or block ads manually.
 
 *AdGuard Advanced blocking* contains advanced rules that aren't converted into the format supported by Safari. This includes CSS rules, CSS selectors, and scriptlets that allow AdGuard to block complex ads — for example, on YouTube.
 
