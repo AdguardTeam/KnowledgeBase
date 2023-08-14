@@ -264,7 +264,7 @@ Basically, they just limit the scope of rule application.
 | [$important](#important-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [$match-case](#match-case-modifier) | ✅ | ✅ | ✅ | ? | ? | ✅ |
 | [$method](#method-modifier) | ⏳ | ✅ | ✅ | ❌ | ❌ | ❌ |
-| [$popup](#popup-modifier) | ✅ * | ✅ | ✅ | ✅ * | ✅ * | ? |
+| [$popup](#popup-modifier) | ✅ * | ✅ | ✅ | ✅ * | ✅ * | ❌ |
 | [$third-party](#third-party-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$to](#to-modifier) | ⏳ | ✅ | ✅ | ❌ | ❌ | ❌ |
 
@@ -542,6 +542,7 @@ AdGuard will try to close the browser tab with any address that matches a blocki
 - `$popup` modifier works best in AdGuard Browser Extension.
 - In AdGuard for Safari and iOS, `$popup` rules simply block the page right away.
 - In AdGuard for Windows, Mac, and Android, `$popup` modifier may not detect a popup in some cases and it won't be blocked. `$popup` modifier applies the `document` content type with a special flag which is passed to a blocking page. Blocking page itself can do some checks and close the window if it is really a popup. Otherwise, page should be loaded. It can be combined with other request type modifiers, such as `$third-party` and `$important`.
+- Rules with `$popup` modifier are not supported by AdGuard Content Blocker.
 
 :::
 
