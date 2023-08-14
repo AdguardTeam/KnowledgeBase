@@ -1976,7 +1976,7 @@ With these rules, specified UTM parameters will be removed from any request save
 - Rules with `$removeparam` modifier can be used [**only in trusted filters**](#trusted-filters).
 - `$removeparam` rules are compatible with [basic modifiers](#basic-rules-basic-modifiers),
 [content-type modifiers](#content-type-modifiers), and with `$important` and `$app` modifiers.
-The rules which have any other modifiers are considered invalid and will be discarded.
+Rules with any other modifiers are considered invalid and will be discarded.
 
 :::
 
