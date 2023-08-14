@@ -3571,7 +3571,7 @@ If `pattern` is not set for `$path`, rule will apply only on the main page of we
 
 :::info Compatibility
 
-Rules with `$path` modifier are not supported by AdGuard Browser Extension for Edge Legacy and AdGuard Content Blocker.
+Rules with `$path` modifier are not supported by AdGuard Content Blocker.
 
 :::
 
@@ -3985,7 +3985,6 @@ If you need an advice on how to create your own filters properly, our forum has 
 1. `ExtFf` — AdGuard Browser extension for Firefox
 1. `iOS app` — AdGuard for iOS (for mobile Safari browser)
 1. `Safari` — AdGuard for Safari (for desktop Safari browser)
-1. `ExtEdg` — AdGuard Browser extension for Edge Legacy (non-based on Chromium)
 1. `CB` — AdGuard Content Blocker (for mobile Samsung and Yandex browsers)
 
 ### Compatibility shortcuts {#what-compat}
