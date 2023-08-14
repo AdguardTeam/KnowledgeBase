@@ -2351,7 +2351,7 @@ Rule weight: base weight + allowed content types, [category 2](#priority-categor
 
 ## Non-basic rules {#non-basic-rules}
 
-However, the capabilities of the basic rules may not be sufficient to block ads.
+However, basic rules may not be enough to block ads.
 Sometimes you need to hide an element or change part of the HTML code of a web page without breaking anything.
 The rules described in this section are created specifically for this purpose.
 
