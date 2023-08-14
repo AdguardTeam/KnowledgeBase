@@ -524,7 +524,8 @@ Rules with mixed value restriction are considered invalid. So, for example, the 
 
 :::info Compatibility
 
-Rules with the `$method` are supported by AdGuard for Windows, Mac, Android, **running CoreLibs v1.12 or later**, and AdGuard Browser extension for Chrome, Firefox, Edge, **running TSUrlFilter v2.1.1 or later**.
+Rules with the `$method` are supported by AdGuard for Windows, Mac, Android, **running CoreLibs v1.12 or later**,
+and AdGuard Browser Extension for Chrome, Firefox, Edge, **running TSUrlFilter v2.1.1 or later**.
 
 :::
 
@@ -3981,8 +3982,8 @@ If you need an advice on how to create your own filters properly, our forum has 
 ### Product shortcuts {#what-product}
 
 1. `CL apps` — AdGuard for Windows, Mac, Android — CoreLibs-based apps
-1. `ExtChr` — AdGuard Browser extension for Chrome and other Chromium-based browsers, e.g. new Microsoft Edge, Opera
-1. `ExtFf` — AdGuard Browser extension for Firefox
+1. `ExtChr` — AdGuard Browser Extension for Chrome and other Chromium-based browsers, e.g. new Microsoft Edge, Opera
+1. `ExtFf` — AdGuard Browser Extension for Firefox
 1. `iOS app` — AdGuard for iOS (for mobile Safari browser)
 1. `Safari` — AdGuard for Safari (for desktop Safari browser)
 1. `CB` — AdGuard Content Blocker (for mobile Samsung and Yandex browsers)
