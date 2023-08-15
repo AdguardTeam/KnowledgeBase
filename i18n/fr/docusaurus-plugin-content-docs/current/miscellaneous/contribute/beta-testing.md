@@ -17,15 +17,15 @@ Si vous souhaitez ignorer la partie description et passer directement à l'actio
 
 Si vous avez repéré un bug ou si vous souhaitez simplement partager votre suggestion, faites-le nous savoir de l'une des manières possibles :
 
-* Rendez-vous sur le [forum.adguard.com](https://forum.adguard.com/index.php) et postez-y un nouveau fil de discussion (ou trouvez-en un déjà existant) dans la [catégorie](https://forum.adguard.com/index.php?categories/48/) du forum bêta. Assurez-vous de lire les [règles du forum](https://forum.adguard.com/index.php?threads/14859/) ;
+- Rendez-vous sur le [forum.adguard.com](https://forum.adguard.com/index.php) et postez-y un nouveau fil de discussion (ou trouvez-en un déjà existant) dans la [catégorie](https://forum.adguard.com/index.php?categories/48/) du forum bêta. Assurez-vous de lire les [règles du forum](https://forum.adguard.com/index.php?threads/14859/) ;
 
-* Accédez à [GitHub](https://github.com/AdguardTeam/) et trouvez un référentiel approprié. Créez-y un nouveau problème et décrivez le bogue ou la demande de fonctionnalité en détail.
+- Accédez à [GitHub](https://github.com/AdguardTeam/) et trouvez un référentiel approprié. Créez-y un nouveau problème et décrivez le bogue ou la demande de fonctionnalité en détail.
 
 Les deux méthodes ci-dessus sont les plus privilégiées, mais vous pouvez en utiliser d'autres si nécessaire :
 
-* Retrouvez-nous sur des plateformes de médias sociaux diverses, comme [Facebook](https://www.facebook.com/AdguardFr/), [Reddit](https://www.reddit.com/r/Adguard/), etc. Toutefois, ce n'est pas le moyen le plus pratique de discuter de questions techniques.
+- Retrouvez-nous sur des plateformes de médias sociaux diverses, comme [Facebook](https://www.facebook.com/AdguardFr/), [Reddit](https://www.reddit.com/r/Adguard/), etc. Toutefois, ce n'est pas le moyen le plus pratique de discuter de questions techniques.
 
-* Envoyez un e-mail à notre équipe d'assistance depuis l'onglet Assistance dans l'application ou écrivez directement à [support@adguard.com](mailto:support@adguard.com).
+- Envoyez un e-mail à notre équipe d'assistance depuis l'onglet Assistance dans l'application ou écrivez directement à [support@adguard.com](mailto:support@adguard.com).
 
 ## Comment activer la clef bêta dans l'application iOS {#ios}
 

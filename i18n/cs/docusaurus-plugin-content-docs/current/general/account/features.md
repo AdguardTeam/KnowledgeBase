@@ -10,20 +10,22 @@ Ve svém účtu můžete spravovat své licence, k nim vázaná zařízení, oso
 V části *Nastavení* svého AdGuard účtu můžete aktualizovat nebo resetovat své heslo, změnit svou e-mailovou adresu, povolit [dvoufaktorové ověření](../2fa), zobrazit data, která o vás AdGuard ukládá, a zvolit jazyk svého osobního účtu a oznámení.
 
 V této části můžete také spravovat e-mailové preference:
-* přijímat transakční e-maily,
-* dostávat měsíční zpravodaje AdGuardu,
-* zasílání e-mailů o speciálních nabídkách a propagačních akcích AdGuardu,
-* odesílání potvrzení o přečtení do AdGuardu při otevření e-mailů.
+
+- přijímat transakční e-maily,
+- dostávat měsíční zpravodaje AdGuardu,
+- zasílání e-mailů o speciálních nabídkách a propagačních akcích AdGuardu,
+- odesílání potvrzení o přečtení do AdGuardu při otevření e-mailů.
 
 ## Správa licencí
 
 V sekci *Licence* můžete spravovat své licence a zařízení s nimi spojená.
 
 [Licence AdGuardu](../../license/what-is) mohou být:
-* svázaná a nesvázaná,
-* rozšířená,
-* upgradovaná,
-* zrušená. Můžete zde také aktualizovat své platební údaje.
+
+- svázaná a nesvázaná,
+- rozšířená,
+- upgradovaná,
+- zrušená. Můžete zde také aktualizovat své platební údaje.
 
 Zařízení svázaná s licencemi blokátoru reklam AdGuard lze zrušit nebo přejmenovat. Nepoužívaná zařízení můžete odpojit kliknutím na ikonu křížku vedle nich.
 

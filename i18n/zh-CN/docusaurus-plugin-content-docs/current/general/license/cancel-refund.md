@@ -20,7 +20,8 @@ Subscriptions purchased on the App Store can be managed in the App Store account
 In accordance with our [Terms of Sale](https://adguard.com/terms-of-sale.html), you can get a 100% refund on the AdGuard license key you purchased at https://adguard.com. To get a refund, contact our support team at **support@adguard.com** and specify the payment option you've used.
 
 A refund may be declined if:
-* 许可证是在60多天前购买的
-* 许可证是通过经销商购买的
-* 许可证是从 App Store 购买的
-* 用户为许可证密钥的升级或续订申请了部分退款
+
+- 许可证是在60多天前购买的
+- 许可证是通过经销商购买的
+- 许可证是从 App Store 购买的
+- 用户为许可证密钥的升级或续订申请了部分退款

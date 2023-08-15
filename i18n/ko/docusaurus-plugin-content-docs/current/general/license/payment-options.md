@@ -20,5 +20,6 @@ To make more use of your AdGuard products, you can upgrade your license for the 
 3. [구독](../what-is)을 **평생 라이선스로 업그레이드**할 수도 있습니다.
 
 You can upgrade your license by:
-  * [AdGuard 공식 웹사이트](https://adguard.com)에서 다른 라이선스를 구매합니다.
-  * AdGuard 계정에서 *평생 라이선스로 업그레이드* 및/또는 *기기 한도 늘리기*를 누릅니다. ![업그레이드 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)
+
+- [AdGuard 공식 웹사이트](https://adguard.com)에서 다른 라이선스를 구매합니다.
+- AdGuard 계정에서 *평생 라이선스로 업그레이드* 및/또는 *기기 한도 늘리기*를 누릅니다. ![업그레이드 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)

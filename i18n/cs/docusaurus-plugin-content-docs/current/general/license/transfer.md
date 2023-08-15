@@ -11,24 +11,45 @@ Licenční klíč lze aktivovat na [omezený počet zařízení](../what-is#devi
 
 Existují tři způsoby, jak to udělat:
 
-  * kliknutím na tlačítko *Resetovat licenci* (platí pouze pro desktopové aplikace)
-  * odhlášením z účtu v produktu AdGuard
-  * odebráním zařízení ve vašem AdGuard účtu:
-     1. Klikněte na **Blokátor reklam AdGuard** ve svém [AdGuard účtu](https://my.adguard.com/) ![Account Ad Blocker tab *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
-     2. Na kartě licencí klikněte na zařízení, které chcete odpojit ![Select device *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-1.png)
-     3. Klikněte na **Odstranit** ![Click Remove *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2.png)
+- kliknutím na tlačítko *Resetovat licenci* (platí pouze pro desktopové aplikace)
+- odhlášením z účtu v produktu AdGuard
+- odebráním zařízení ve vašem AdGuard účtu:
+    1. Klikněte na **Blokátor reklam AdGuard** ve svém [AdGuard účtu](https://my.adguard.com/)
+
+        ![Account Ad Blocker tab *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
+
+    1. Na kartě licencí klikněte na zařízení, které chcete odpojit
+
+        ![Select device *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-1.png)
+
+    1. Klikněte na **Odstranit**
+
+        ![Click Remove *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2.png)
 
 Poté, co zrušíte připojení na potřebný počet zařízení, můžete se přihlásit k AdGuard účtu na nových zařízeních. Licence na ně bude navázána.
 
 ## Jak přenést licenci do jiného AdGuard účtu{#transferaccount}
 
- 1. Přejděte na AdGuard účet, který obsahuje licenci, kterou chcete převést
- 2. Přejděte na kartu **Licence**
- 3. Vyhledejte licenci, kterou chcete převést, a klikněte na **Odpojit od účtu** ![Click Unbind from account *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account.png)
- 4. Klikněte na **Odpojit** (**Důležité**: nezapomeňte si poznamenat/zapamatovat licenční klíč) ![Remeber license key *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account-1.png)
- 4. Přejděte AdGuard do účetu, kde chcete převést licenci
- 5. Přejděte na kartu **Licence**
- 6. Klikněte na **Připojit licenci** v pravém horním rohu ![Bind license *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account-2.png)
- 7. Zadejte svůj licenční klíč (od kroku 3)
+1. Přejděte na AdGuard účet, který obsahuje licenci, kterou chcete převést
+
+1. Přejděte na kartu **Licence**
+
+1. Vyhledejte licenci, kterou chcete převést, a klikněte na **Odpojit od účtu**
+
+    ![Click Unbind from account *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account.png)
+
+1. Klikněte na **Odpojit** (**Důležité**: nezapomeňte si poznamenat/zapamatovat licenční klíč)
+
+    ![Remeber license key *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account-1.png)
+
+1. Přejděte na účet AdGuard, na který chcete licenci převést
+
+1. Přejděte na kartu **Licence**
+
+1. Klikněte na **Připojit licenci** v pravém horním rohu
+
+    ![Bind license *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account-2.png)
+
+1. Zadejte svůj licenční klíč (od kroku 3).
 
 V případě, že nemáte přístup ke svému původnímu účtu, kontaktujte náš tým podpory na support@adguard.com.

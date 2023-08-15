@@ -18,18 +18,20 @@ Some licenses need to be purchased (e.g. AdGuard Ad Blocker Personal), some are 
 ## How many devices can be added{#devices}
 
 Farklı sayıda cihazla farklı lisanslar kullanılabilir:
-* Kişisel: üç cihaza kadar,
-* Aile: dokuz cihaza kadar,
-* iOS için AdGuard Pro: bir cihaz.
+
+- Kişisel: üç cihaza kadar,
+- Aile: dokuz cihaza kadar,
+- iOS için AdGuard Pro: bir cihaz.
 
 To use your license on a device, log in to your [AdGuard account](../../account/features) on it. To extend the device limit, you can [upgrade](../activation#how-to-upgrade-a-license) your license.
 
 ## What is a license key{#license-key}
 
 A license key is a unique sequence of characters that represents an AdGuard Ad Blocker license. It is automatically registered for the email you used for license purchase. Lisans anahtarıyla şunları yapabilirsiniz:
-* log in to your AdGuard account in some products (e.g. AdGuard for Windows),
-* [activate your license](../activation) in a product, if you don't have an AdGuard account,
-* bind your license to your AdGuard account and unbind it.
+
+- log in to your AdGuard account in some products (e.g. AdGuard for Windows),
+- [activate your license](../activation) in a product, if you don't have an AdGuard account,
+- bind your license to your AdGuard account and unbind it.
 
 When unbinding a license, be sure you write the license key down beforehand or note in some other (safe) way. You'll need the key for re-binding your license or transferring it to another account.
 

@@ -17,15 +17,15 @@ Se desideri saltare la parte descrittiva e passare direttamente all'azione, puoi
 
 Se hai individuato un bug o desideri semplicemente condividere il tuo suggerimento, faccelo sapere in uno qualsiasi dei modi possibili:
 
-* Vai su [forum.adguard.com](https://forum.adguard.com/index.php) e pubblica una nuova discussione (o trovane una esistente) nella [categoria](https://forum.adguard.com/index.php?categories/48/) del forum beta. Assicurati di leggere le [regole del forum](https://forum.adguard.com/index.php?threads/14859/);
+- Vai su [forum.adguard.com](https://forum.adguard.com/index.php) e pubblica una nuova discussione (o trovane una esistente) nella [categoria](https://forum.adguard.com/index.php?categories/48/) del forum beta. Assicurati di leggere le [regole del forum](https://forum.adguard.com/index.php?threads/14859/);
 
-* Vai su [GitHub](https://github.com/AdguardTeam/) e trova una repository adatta. Crea un nuovo problema e descrivi il bug/la richiesta di funzionalità nel dettaglio.
+- Vai su [GitHub](https://github.com/AdguardTeam/) e trova una repository adatta. Crea un nuovo problema e descrivi il bug/la richiesta di funzionalità nel dettaglio.
 
 I due metodi sopra descritti sono i preferiti, ma puoi utilizzarne altri se necessario:
 
-* Trovaci sulle varie piattaforme social, come [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/), etc. Tuttavia, questo non è il metodo più comodo per discutere le questioni tecniche.
+- Trovaci sulle varie piattaforme social, come [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/), etc. Tuttavia, questo non è il metodo più comodo per discutere le questioni tecniche.
 
-* Invia un'email al nostro team di supporto dalla scheda Supporto nell'app o scrivi direttamente a [support@adguard.com](mailto:support@adguard.com).
+- Invia un'email al nostro team di supporto dalla scheda Supporto nell'app o scrivi direttamente a [support@adguard.com](mailto:support@adguard.com).
 
 ## Come attivare la chiave beta nell'applicazione iOS {#ios}
 

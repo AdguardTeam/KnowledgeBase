@@ -21,11 +21,11 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 ## Installation
 
-To install AdGuard for Mac on your computer, launch your browser, type _adguard.com_ in the address bar, and press **Download** [on the page that opens](https://adguard.com/download.html?auto=1).
+To install AdGuard for Mac on your computer, launch your browser, type *adguard.com* in the address bar, and press **Download** [on the page that opens](https://adguard.com/download.html?auto=1).
 
 ![Download the app *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/1.jpg)
 
-Wait for _AdguardInstaller.dmg_ to download and double-click its icon in the list of downloaded files on the Dock panel.
+Wait for *AdguardInstaller.dmg* to download and double-click its icon in the list of downloaded files on the Dock panel.
 
 ![Dosyayı açmak için çift tıklayın](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation_open_the_file.jpg)
 
@@ -58,6 +58,7 @@ Now, you'll see a quick installation wizard where you'll be offered to configure
 ## Uninstall
 
 ### Regular
+
 Her şeyden önce, ilgili simgeye tıklayarak Finder uygulamasını açın:
 
 ![Open Finder](https://cdn.adtidy.org/public/Adguard/En/Articles/howtodelete/finder.png)

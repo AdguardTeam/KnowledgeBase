@@ -73,6 +73,6 @@ Pokud má vaše zařízení přístup root, můžete certifikát AdGuardu přesu
 
 Existuje několik specializovaných webových stránek, kde si můžete ověřit kvalitu připojení HTTPS. Tyto webové stránky kontrolují, zda je váš prohlížeč (nebo v našem případě prohlížeč plus AdGuard) náchylný k běžným zranitelnostem. Pokud plánujete používat jakýkoli program, který filtruje HTTPS, nikoli nutně AdGuard (např. antivir), doporučujeme zkontrolovat kvalitu připojení na těchto webových stránkách.
 
-* [https://www.ssllabs.com/ssltest/viewMyClient.html](https://www.ssllabs.com/ssltest/viewMyClient.html)
-* [https://www.howsmyssl.com/](https://www.howsmyssl.com/)
-* [https://badssl.com/](https://badssl.com/)
+- [https://www.ssllabs.com/ssltest/viewMyClient.html](https://www.ssllabs.com/ssltest/viewMyClient.html)
+- [https://www.howsmyssl.com/](https://www.howsmyssl.com/)
+- [https://badssl.com/](https://badssl.com/)

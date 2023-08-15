@@ -26,6 +26,7 @@ Rozhraní API síťových rozšíření má konfiguraci podobnou VPN se seznamem
 V systému Monterey byl představen iCloud Private Relay. Funkce ochrany osobních údajů aplikace Mail také využívají servery iCloud Private Relay.
 
 AdGuard proto nemůže spolupracovat s funkcemi soukromí aplikace iCloud Private Relay a aplikací Mail:
+
 1. iCloud Private Relay se použije pro připojení na úrovni knihovny — předtím, než se dostanou na úroveň, kde funguje AdGuard.
 2. iCloud Private Relay používá QUIC, který AdGuard nemůže ve filtrovaných aplikacích filtrovat, protože filtrování HTTP/3 ještě není k dispozici.
 3. Protože AdGuard blokuje QUIC, včetně provozu iCloud Private Relay — jinak je blokování reklam nemožné.
@@ -42,6 +43,6 @@ Doporučujeme používat AdGuard společně s tradičnější službou VPN, nap�
 
 Můžete zabránit tomu, aby AdGuard používal "výchozí směrování" tím, že jej deaktivujete".  Lze to provést přes Pokročilá nastavení → `network.extension.monterey.force.split.tunnel`.
 
-![Zakázat výchozí směrování v pokročilých nastavení *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/mac_adguard_advanced_settings.jpg)
+![Disable default route in advanced settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/mac_adguard_advanced_settings.jpg)
 
 Mějte na paměti, že v tomto případě budete čelit výše popsaným problémům.

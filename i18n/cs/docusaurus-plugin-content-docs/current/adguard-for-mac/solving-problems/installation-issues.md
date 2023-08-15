@@ -13,7 +13,7 @@ Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, kter
 
 Během instalace se můžete setkat s touto chybou:
 
-![Obrazovka s chybou instalace](https://cdn.adtidy.org/content/kb/ad_blocker/mac/macerrorscreenEN.jpg)
+![Installation error screen](https://cdn.adtidy.org/content/kb/ad_blocker/mac/macerrorscreenEN.jpg)
 
 Pro vyřešení problému postupujte podle těchto pokynů:
 

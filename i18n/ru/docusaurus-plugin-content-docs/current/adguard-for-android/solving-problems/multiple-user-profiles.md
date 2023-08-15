@@ -37,29 +37,36 @@ sidebar_position: 10
 
 :::
 
-1. Активируйте режим разработчика **** и включите отладку по USB ****:
-- Откройте приложение **Настройки** на своём телефоне;
-- Перейдите в раздел **О системе** (последний пункт в меню настроек). В этом разделе найдите подпункт **О телефоне**;
-- Нажмите на строку **Номер сборки** 7 раз. После этого вы получите уведомление, что **Теперь вы разработчик** (При необходимости введите код разблокировки устройства);
-- Откройте **Настройки системы** → **Для разработчиков** → Прокрутите вниз и включите **отладку по USB** → Подтвердите включение отладки в окне **Разрешить отладку по USB**, внимательно прочитав предупреждение.
+1. Activate the **developer mode** and enable **USB debugging**:
 
-:::note
+    - Откройте приложение **Настройки** на своём телефоне;
+    - Go to **System** section (last item in the settings menu). In this section, find the sub-item **About phone**;
+    - Tap the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
+    - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
 
-Если у вас возникнут трудности или дополнительные вопросы, полные инструкции можно найти [здесь](https://developer.android.com/studio/debug/dev-options).
+    :::note
+
+    Если у вас возникнут трудности или дополнительные вопросы, полные инструкции можно найти [здесь](https://developer.android.com/studio/debug/dev-options).
+
 
 :::
 
-2. [Установите и настройте](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; На платформе Windows владельцам **Samsung** может потребоваться установить [эту утилиту](https://developer.samsung.com/mobile/android-usb-driver.html).
-3. Подключите устройство с помощью кабеля USB **** к компьютеру или ноутбуку, на котором вы установили **ADB**;
-4. Откройте **командную строку** на вашем ПК:
-- **Cmd.exe** если вы используете **Windows**;
-- **Terminal**, если вы используете **macOS**;
-5. Введите команду `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` и нажмите **Enter**.
+1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+
+1. Подключите устройство с помощью кабеля USB **** к компьютеру или ноутбуку, на котором вы установили **ADB**;
+
+1. Откройте **командную строку** на вашем ПК:
+
+    - **Cmd.exe** если вы используете **Windows**;
+    - **Terminal**, если вы используете **macOS**;
+
+1. Введите команду `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` и нажмите **Enter**.
 
 ### Вариант 2: Удалить *учётную запись с ограниченным доступом*
 
 [Узнайте](https://support.google.com/a/answer/6223444?hl=en), как управлять учётными записями пользователей с устройства Android.
-> :::note
+
+:::note
 
 В некоторых случаях аккаунты с ограниченным доступом создаются неявно и не могут быть удалены. Например, когда вы используете функции Dual Messenger или Dual App на **устройствах Samsung** или **LG**. Читайте ниже, как исправить проблему в этих случаях.
 
@@ -89,5 +96,3 @@ sidebar_position: 10
 - Прокрутите вниз и нажмите **Dual App**;
 - Удалите все приложения из списка;
 - Перезагрузите устройство.
-
-

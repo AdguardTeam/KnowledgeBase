@@ -15,35 +15,35 @@ AdGuard for Android is not to be confused with AdGuard Content Blocker. AdGuard 
 
 :::
 
-# Koruma
+## Protection
 
 Bu ekran, AdGuard korumasının tüm özelliklerini bir araya getirir:
 
-  * Reklam engelleme
-  * İzleme koruması
-  * Can sıkıcı öğe engelleme
-  * DNS protection
-  * Güvenlik duvarı
-  * Browsing Security
-  * AdGuard VPN ile entegrasyon
+- Reklam engelleme
+- İzleme koruması
+- Can sıkıcı öğe engelleme
+- DNS protection
+- Güvenlik duvarı
+- Browsing Security
+- AdGuard VPN ile entegrasyon
 
 Her bir özellikle ilgili daha fazla bilgi aşağıdadır.
 
-## Reklam engelleme
+### Reklam engelleme
 
 Bu özellik, reklam engelleme ve dile özgü filtreler uygulayarak reklamları engeller. Reklam engelleme mekanizması hakkında bilgi edinmek için [özel makalesini](/general/ad-filtering/how-ad-blocking-works) okuyabilirsiniz.
 
 Temel koruma, çoğu sitedeki reklamları etkili bir şekilde engeller. Daha özelleştirilmiş reklam engelleme için şunları yapabilirsiniz:
 
-  * Dile özgü uygun filtreleri etkinleştirin — belirli dillerdeki sitelerinde reklamları engellemek için filtreleme kuralları içerirler
+- Dile özgü uygun filtreleri etkinleştirin — belirli dillerdeki sitelerinde reklamları engellemek için filtreleme kuralları içerirler
 
-  * Siteleri izin listesine ekleyin — bu siteleri AdGuard tarafından filtrelenmeyecek
+- Siteleri izin listesine ekleyin — bu siteleri AdGuard tarafından filtrelenmeyecek
 
-  * Kullanıcı kuralları oluşturun — AdGuard bunları belirtilen sitelere uygular. [Kendi kullanıcı kurallarınızı nasıl oluşturacağınızı öğrenin](/general/ad-filtering/create-own-filters)
+- Kullanıcı kuralları oluşturun — AdGuard bunları belirtilen sitelere uygular. [Kendi kullanıcı kurallarınızı nasıl oluşturacağınızı öğrenin](/general/ad-filtering/create-own-filters)
 
 ![Reklam engelleme *mobile_border](https://cdn.adtidy.org/blog/new/o44x5ad_blocking.png)
 
-## İzleme koruması
+### İzleme koruması
 
 *İzleme koruması* (eski adıyla *Gizlilik Modu*), sitelerin IP adresleriniz, tarayıcınız ve işletim sisteminiz hakkındaki bilgiler, ekran çözünürlüğü ve geldiğiniz veya yönlendirildiğiniz sayfa gibi hakkınızda bilgi toplamasını engeller. Ayrıca, sitelerin tarayıcıyı işaretlemek ve kişisel ayarlarınızı, kullanıcı tercihlerinizi kaydetmek veya bir sonraki ziyaretinizde sizi tanımak için kullandığı çerezleri de engelleyebilir.
 
@@ -99,47 +99,47 @@ Temel koruma, çoğu sitedeki reklamları etkili bir şekilde engeller. Daha öz
 
 You can fine-tune Tracking protection by selecting the *Custom* protection level. [Learn more about other Tracking protection settings](/general/stealth-mode)
 
-## Can sıkıcı öğe engelleme
+### Can sıkıcı öğe engelleme
 
 This feature is based on AdGuard's annoyance filters and allows you to block popups, online assistant windows, cookie notifications, prompts to download mobile apps, and similar annoyances. [Learn more about annoyance filters](/general/ad-filtering/adguard-filters/#adguard-filters)
 
 ![Annoyance blocking *mobile_border](https://cdn.adtidy.org/blog/new/lwujvannoyance.png)
 
-## DNS protection
+### DNS protection
 
 *DNS protection* allows you to filter DNS requests with the help of a selected DNS server, DNS filters, and user rules:
 
-  * Some DNS servers have blocklists that help block DNS requests to potentially harmful domains
+- Some DNS servers have blocklists that help block DNS requests to potentially harmful domains
 
-  * In addition to DNS servers, AdGuard can filter DNS requests on its own using a special DNS filter. It contains a large list of ad and tracking domains — requests to them are rerouted to a blackhole server
+- In addition to DNS servers, AdGuard can filter DNS requests on its own using a special DNS filter. It contains a large list of ad and tracking domains — requests to them are rerouted to a blackhole server
 
-  * You can also block and unblock domains by creating user rules. You might need to consult our article about [DNS filtering rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/)
+- You can also block and unblock domains by creating user rules. You might need to consult our article about [DNS filtering rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/)
 
 ![DNS protection *mobile_border](https://cdn.adtidy.org/blog/new/u8qtxdns_protection.png)
 
-### DNS server
+#### DNS server
 
 In this section, you can select a DNS server to resolve DNS requests, block ads and trackers, and encrypt DNS traffic. Tap a server to read its full description and select a protocol. If you didn't find the desired server, you can add it manually:
 
-  * Click *Add DNS server* and enter the server address (or addresses)
+- Click *Add DNS server* and enter the server address (or addresses)
 
-  * Alternatively, you can select a DNS server from the [list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/) and click *Add to AdGuard* next to it
+- Alternatively, you can select a DNS server from the [list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/) and click *Add to AdGuard* next to it
 
-  * If you're using a private AdGuard DNS server, you can add it to AdGuard from the [dashboard](https://adguard-dns.io/dashboard/)
+- If you're using a private AdGuard DNS server, you can add it to AdGuard from the [dashboard](https://adguard-dns.io/dashboard/)
 
  By default, *Automatic DNS* is selected. It sets a DNS server based on your AdGuard and device settings. If you have integration with AdGuard VPN or another SOCKS5 proxy enabled, it connects to *AdGuard DNS Non-filtering* or any other server you specify. In all other cases, it connects to the DNS server selected in your device settings.
 
-### DNS filters
+#### DNS filters
 
 This section allows you to add custom DNS filters and DNS filtering rules. You can find more filters at [filterlists.com](https://filterlists.com/).
 
-## Güvenlik duvarı
+### Güvenlik duvarı
 
 This feature helps manage Internet access for specific apps installed on your device and for the device in general.
 
 ![Firewall *mobile_border](https://cdn.adtidy.org/blog/new/gdn94firewall.png)
 
-### Global firewall rules
+#### Global firewall rules
 
 This section allows you to control Internet access for the entire device.
 
@@ -147,78 +147,78 @@ This section allows you to control Internet access for the entire device.
 
 These rules apply to all apps on your device unless you've set custom rules for them.
 
-### Custom firewall rules
+#### Custom firewall rules
 
 Bu bölümde, belirli uygulamalar için internet erişimini kontrol edebilirsiniz — güvenilir bulmadıklarınızı engelleyebilir veya tam tersine, genel güvenlik duvarı kurallarına rağmen kullanmak istediklerinizin engelini kaldırabilirsiniz.
 
-1. *Özel güvenlik duvarı kuralları* öğesini açın. *Özel kurallara sahip uygulamalar* altında, *Uygulama ekle* öğesine dokunun.
+1. Open *Custom firewall rules*. Under *Apps with custom rules*, tap *Add app*.
 
-![Özel güvenlik duvarı kuralları *mobile_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
+    ![Custom firewall rules *mobile_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
 
-2. Select the app for which you want to set individual rules.
+1. Select the app for which you want to set individual rules.
 
-![Özel güvenlik duvarı kurallarına bir uygulama ekleme *mobile_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
+    ![Adding an app to Custom firewall rules *mobile_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
 
-3. *Kullanılabilir özel kurallar* içinde, yapılandırmak istediklerinizi seçin ve "+" simgesine dokunun. Kurallar şimdi *Uygulanan özel kurallar* içinde görünür.
+1. In *Available custom rules*, select the ones you want to configure and tap the "+" icon. The rules will now appear in *Applied custom rules*.
 
-![Eklenen kural *mobile_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
+    ![Added rule *mobile_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
 
-4. Belirli bir bağlantı türünü engellemeniz gerekiyorsa, düğmeyi sola kaydırın. Buna izin vermek istiyorsanız, düğmeyi etkin bırakın. Özel kurallar genel kuralları geçersiz kılar: *Genel güvenlik duvarı kurallar* içinde yaptığınız herhangi bir değişiklik bu uygulamayı etkilemez.
+1. If you need to block a specific type of connection, toggle the switch to the left. If you want to allow it, leave the switch enabled. Custom rules override global ones: any changes you make in *Global firewall rules* will not affect this app.
 
-*Özel kurallar* öğesinden bir kuralı veya uygulamayı silmek için sola kaydırın.
+To delete a rule or app from *Custom rules*, swipe it to the left.
 
-### Hızlı eylemler
+### Quick actions
 
-*Hızlı eylemler*, *Son etkinlik* (*İstatistikler* içinde bulunabilir) öğesinden gelen isteklere dayalıdır. Bu bölüm, son zamanlarda hangi uygulamaların internete bağlandığını gösterir.
+*Quick actions* are based on the requests from *Recent activity* (which can be found in *Statistics*). This section shows which apps have recently connected to the Internet.
 
-![Hızlı eylemler *mobile_border](https://cdn.adtidy.org/blog/new/yigrfquick_actions.png)
+![Quick actions *mobile_border](https://cdn.adtidy.org/blog/new/yigrfquick_actions.png)
 
-İnterneti hiç kullanmaması gereken bir uygulama veya son zamanlarda kullanmadığınız bir uygulama görürseniz, erişimini anında engelleyebilirsiniz.
+If you see an app that shouldn't be using the Internet at all or an app that you haven't used recently, you can block its access on the fly.
 
-## Browsing Security
+### Browsing Security
 
-Gezinti Koruması, sizi kimlik avı ve kötü amaçlı siteleri ziyaret etmekten korur. Ayrıca sizi olası kötü amaçlı yazılımlara karşı uyarır.
+Browsing Security protects you from visiting phishing and malicious websites. It also warns you about potential malware.
 
-![Gezinti Koruması *mobile_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
+![Browsing Security *mobile_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
 
-Tehlikeli bir siteyi ziyaret etmek üzereyseniz, Gezinti Koruması size aşağıdaki uyarıyı gösterir:
+If you're about to visit a dangerous website, Browsing Security will show you the following warning:
 
-![Gezinti Koruması uyarısı *mobile_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
+![Browsing Security warning *mobile_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
 
 > Android için AdGuard'ın bir antivirüs programı olmadığını lütfen unutmayın. Ne virüslerin indirilmesini durdurur ne de önceden indirilmiş olanları siler. Cihazınızı tam olarak korumak için AdGuard'ı bir antivirüs aracıyla birlikte kullanmanızı tavsiye ederiz.
 
-Gezinti Koruması güvenlidir: AdGuard hangi siteleri ziyaret ettiğinizi bilmez. Site güvenliğini kontrol etmek için URL'ler yerine karma önekleri kullanır.
+Browsing Security is safe: AdGuard does not know what websites you visit. It uses hash prefixes instead of URLs to check website security.
 
-## AdGuard VPN ile entegrasyon
+### AdGuard VPN ile entegrasyon
 
-Android için AdGuard, trafiği filtrelemek için yerel bir VPN oluşturur. Bu nedenle, Android için AdGuard çalışırken diğer VPN uygulamaları kullanılamaz. Ancak, hem AdGuard hem de AdGuard VPN uygulamalarında, bunları birlikte kullanmanıza izin veren Entegre modlar bulunur.
+AdGuard for Android creates a local VPN to filter traffic. Thus, other VPN apps cannot be used while AdGuard for Android is running. However, both AdGuard and AdGuard VPN apps have Integrated modes that let you use them together.
 
-Bu modda, AdGuard VPN, AdGuard'ın trafiğini yönlendirdiği bir giden proxy sunucusu gibi davranır. Bu, AdGuard'ın bir VPN arayüzü oluşturmasına, reklamları ve izleyicileri yerel olarak engellemesine olanak tanırken, AdGuard VPN tüm trafiği uzak bir sunucu üzerinden yönlendirir.
+In this mode, AdGuard VPN acts as an outbound proxy server through which AdGuard routes its traffic. This allows AdGuard to create a VPN interface and block ads and trackers locally, while AdGuard VPN routes all traffic through a remote server.
 
-AdGuard VPN'i devre dışı bırakırsanız, AdGuard onu giden proxy olarak kullanmayı bırakır. AdGuard'ı devre dışı bırakırsanız, AdGuard VPN trafiği kendi VPN arayüzü üzerinden yönlendirir.
+If you disable AdGuard VPN, AdGuard will stop using it as an outbound proxy. If you disable AdGuard, AdGuard VPN will route traffic through its own VPN interface.
 
-AdGuard Reklam Engelleyiciye sahipseniz ve AdGuard VPN'i yüklerseniz, Reklam Engelleyici uygulaması bunu tespit eder ve otomatik olarak *AdGuard VPN ile entegrasyon* öğesini etkinleştirir. Aynı şey tam tersi için de geçerlidir. Entegrasyonu etkinleştirdiyseniz, uygulama istisnaları yönetemeyeceğinizi ve AdGuard VPN uygulamasından DNS sunucularına bağlanamayacağınızı unutmayın. VPN tüneliniz üzerinden yönlendirilecek uygulamaları *Ayarlar* → *Filtreleme* → *Ağ* → *Proxy* → *Proxy aracılığıyla çalışan uygulamalar* üzerinden belirleyebilirsiniz. DNS sunucusu seçmek için AdGuard → *DNS koruması* → *DNS sunucusu* öğesini açın.
+If you have AdGuard Ad Blocker and install AdGuard VPN, the Ad Blocker app will detect it and enable *Integration with AdGuard VPN* automatically. The same happens in reverse. Note that if you've enabled integration, you won't be able to manage app exclusions and connect to DNS servers from the AdGuard VPN app. You can specify apps to be routed through your VPN tunnel via *Settings* → *Filtering* → *Network* → *Proxy* → *Apps operating through proxy*. To select a DNS server, open AdGuard → *DNS protection* → *DNS server*.
 
-# Uygulama yönetimi
+## App management
 
-Bu bölüm, cihazınızda yüklü olan tüm uygulamalar için izinleri ve filtreleme ayarlarını yönetmenize olanak tanır.
+This section allows you to manage permissions and filtering settings for all apps installed on your device.
 
-![Uygulama yönetimi *mobile_border](https://cdn.adtidy.org/blog/new/9sakapp_management.png)
+![App management *mobile_border](https://cdn.adtidy.org/blog/new/9sakapp_management.png)
 
-Bir uygulamaya tıklayarak ayarlarını yönetebilirsiniz:
+By clicking an app you can manage its settings:
 
-* Route its traffic through AdGuard
-* Bu uygulamada reklamları ve izleyicileri engelleyin (*Uygulama içeriğini filtrele*)
-* Filter its HTTPS traffic (for non-browser apps, it requires [installing AdGuard's CA certificate into the system store](/adguard-for-android/solving-problems/https-certificate-for-rooted/), available on rooted devices)
-* Route it through your specified proxy server or AdGuard VPN in the Integration mode
+- Route its traffic through AdGuard
+- Bu uygulamada reklamları ve izleyicileri engelleyin (*Uygulama içeriğini filtrele*)
+- Filter its HTTPS traffic (for non-browser apps, it requires [installing AdGuard's CA certificate into the system store](/adguard-for-android/solving-problems/https-certificate-for-rooted/), available on rooted devices)
+- Route it through your specified proxy server or AdGuard VPN in the Integration mode
 
-![Uygulama yönetimi: Chrome *mobile_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
+![App management: Chrome *mobile_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
 
 From the context menu, you can also access the app's stats.
 
 ![App management: Chrome. Context menu *mobile_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
 
-## Problem-free and problematic apps
+### Problem-free and problematic apps
 
 By default, only problem-free apps are routed through AdGuard and filtered. These are the apps that still work properly when filtering is enabled.
 
@@ -228,7 +228,7 @@ Problematic apps, such as Download Manager, radio, system apps with UID 1000 and
 
 To ensure proper operation of all apps installed on your device, we strongly recommend that you route only problem-free apps through AdGuard. You can see the full list of apps not recommended for filtering in *Settings* → *General* → *Advanced* → *Low-level settings* → *Protection* → *Excluded apps*.
 
-# Statistics
+## Statistics
 
 This feature gives you a complete picture of what is happening with the traffic on your device: how many requests are being sent and to which companies, how much data is being uploaded and downloaded, what requests are being blocked, and more.
 
@@ -236,7 +236,7 @@ This feature gives you a complete picture of what is happening with the traffic 
 
 The stats are categorized into different sections.
 
-## Requests
+### Requests
 
 This section shows the number of blocked ads, trackers, and the total number of requests for the selected time period: 24 hours, 7 days, 30 days, or all time. You can also filter requests by data type: mobile data, Wi-Fi, or all data combined.
 
@@ -244,11 +244,11 @@ This section shows the number of blocked ads, trackers, and the total number of 
 
 You can tap a request to view its details and add a blocking or unblocking rule.
 
-## Data usage
+### Data usage
 
 This section shows the amount of downloaded, uploaded, and saved traffic for the selected time period and data type. Tap *saved*, *uploaded*, or *downloaded* to view the graph of data usage over time.
 
-## Apps
+### Apps
 
 This section displays stats for all apps installed on your device. You can sort apps by the number of blocked ads or trackers or by the number of sent requests.
 
@@ -258,57 +258,57 @@ Tap *View all apps* to expand the list of your apps, sorted by the number of ads
 
 If you tap an app, you can see its full stats: the requests it sends and the domains and companies it reaches out to.
 
-## Companies
+### Companies
 
 This section displays companies that your device reaches out to. What does it mean? AdGuard detects the domains your device sends requests to and determines which companies they belong to. A database of companies can be found on [GitHub](https://github.com/AdguardTeam/companiesdb).
 
-## DNS statistics
+### DNS statistics
 
 This section shows data about the requests handled by *DNS protection*. You can see the total number of requests sent and how many were blocked by AdGuard in figures and graphs. You'll also find statistics on the amount of traffic saved, downloaded, and uploaded.
 
-## Battery usage
+### Battery usage
 
-This section displays statistics on the device resources used by AdGuard during the last 24 hours. The data may differ from your device settings. This happens because the system attributes the traffic of filtered apps to AdGuard. Thus, the device shows that AdGuard consumes more reccources than it actually does. [Read more about battery and traffic consumption issues](/adguard-for-android/solving-problems/battery/)
+This section displays statistics on the device resources used by AdGuard during the last 24 hours. The data may differ from your device settings. This happens because the system attributes the traffic of filtered apps to AdGuard. Thus, the device shows that AdGuard consumes more resources than it actually does. [Read more about battery and traffic consumption issues](/adguard-for-android/solving-problems/battery/)
 
-# Settings
+## Settings
 
-## General
+### General
 
 This section helps you manage the appearance and behavior of the app: you can set the color theme and language, manage notifications, and more. If you want to help the AdGuard team detect app crashes and research usability, you can enable *Auto-report crashes* and *Send technical and interaction data*.
 
-![Genel *mobile_border](https://cdn.adtidy.org/blog/new/my5quggeneral.png)
+![General *mobile_border](https://cdn.adtidy.org/blog/new/my5quggeneral.png)
 
-*Uygulama ve filtre güncellemeleri* altında, otomatik filtre güncellemelerini yapılandırabilir ve bir uygulama güncelleme kanalı seçebilirsiniz. Daha fazla kararlılık için *Sürüm* ve yeni özelliklere erken erişim için *Beta* veya *Nightly* seçeneklerini seçin.
+Under *App and filter updates*, you can configure automatic filter updates and select an app update channel. Choose *Release* for more stability and *Beta* or *Nightly* for early access to new features.
 
-![Güncellemeler *mobile_border](https://cdn.adtidy.org/blog/new/hqm8kupdates.png)
+![Updates *mobile_border](https://cdn.adtidy.org/blog/new/hqm8kupdates.png)
 
-### Advanced settings
+#### Advanced settings
 
 *Automation* allows you to manage AdGuard via tasker apps.
 
-*Watchdog*, AdGuard'ın sistem tarafından devre dışı bırakılmasına karşı korunmasına yardımcı olur ([Android'in pil tasarrufu modu hakkında daha fazlasını okuyun](/adguard-for-android/solving-problems/background-work/)). Girdiğiniz değer, watchdog denetimleri arasındaki saniye cinsinden aralık olacaktır.
+*Watchdog* helps protect AdGuard from being disabled by the system ([read more about Android's battery save mode](/adguard-for-android/solving-problems/background-work/)). The value you enter will be the interval in seconds between watchdog checks.
 
-*Günlük kayıt düzeyi*, uygulamanın çalışmasıyla ilgili hangi verilerin günlüğe kaydedileceğini tanımlar. Varsayılan olarak, uygulama etkinlikleriyle ilgili verileri toplar. *Hata ayıklama* düzeyi daha fazla etkinlik kaydeder — sorunu daha iyi anlamalarına yardımcı olmak için AdGuard ekibi tarafından istenirse etkinleştirin. [Günlükleri toplama ve gönderme hakkında daha fazlasını okuyun](/adguard-for-android/solving-problems/logcat/)
+*Logging level* defines what data about the app's operation should be logged. By default, the app collects the data about its events. The *Debug* level logs more events — enable it if asked by the AdGuard team to help them get a better understanding of the problem. [Read more about collecting and sending logs](/adguard-for-android/solving-problems/logcat/)
 
-![Gelişmiş *mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
+![Advanced *mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
 The *Low-level settings* section is for expert users. [Read more about low-level settings](/adguard-for-android/solving-problems/low-level-settings/)
 
 ![Low-level settings *mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
 
-## Filtreleme
+### Filtreleme
 
 This section allows you to manage HTTPS filtering settings, filters, and userscripts, and set up a proxy server.
 
 ![Filtering *mobile_border](https://cdn.adtidy.org/blog/new/7v5c6filtering.png)
 
-### Network
+#### Network
 
-#### HTTPS filtering
+##### HTTPS filtering
 
 To block ads and trackers on most websites and in most apps, AdGuard needs to filter their HTTPS traffic. [Read more about HTTPS filtering](/general/https-filtering/what-is-https-filtering)
 
-##### Security certificates
+###### Security certificates
 
 To manage encrypted traffic, AdGuard installs its CA certificate on your device. It's safe: the traffic is filtered locally and AdGuard verifies the security of the connection.
 
@@ -316,24 +316,24 @@ On older versions of Android, the certificate is installed automatically. On And
 
 The CA certificate in the user store is enough to filter HTTPS traffic in browsers and some apps. However, there are apps that only trust certificates from the system store. To filter HTTPS traffic there, you need to install AdGuard's CA certificate into the system store. [Instructions](/adguard-for-android/solving-problems/https-certificate-for-rooted/)
 
-##### HTTPS-filtered apps
+###### HTTPS-filtered apps
 
 This section contains the list of apps for which AdGuard filters HTTPS traffic. Please note that the setting can be applied for all apps only if you have CA certificates both in the user store and in the system store.
 
-##### HTTPS-filtered websites
+###### HTTPS-filtered websites
 
 This setting allows you to manage websites for which AdGuard should filter HTTPS traffic.
 
-HTTPS filtering allows us to see the content of requests and responses, but we never collect or store this data. However, to increase security, we [exclude websites that contain potentially sensitive information from HTTPS filtering](/general/https-filtering/what-is-https-filtering/#financial-websites-and-websites-with-sensitive-personal-data).
+HTTPS filtering allows AdGuard to filter the content of requests and responses, but we never collect or store this data. However, to increase security, we [exclude websites that contain potentially sensitive information from HTTPS filtering](/general/https-filtering/what-is-https-filtering/#financial-websites-and-websites-with-sensitive-personal-data).
 
 You can also add websites that you consider necessary to exclusions by selecting one of the modes:
 
-* Exclude specific websites from HTTPS filtering
-* Filter HTTPS traffic only on the websites added to exclusions
+- Exclude specific websites from HTTPS filtering
+- Filter HTTPS traffic only on the websites added to exclusions
 
 By default, we also do not filter websites with Extended Validation (EV) certificates, such as financial websites. If needed, you can enable the *Filter websites with EV certificates* option.
 
-#### Proxy
+##### Proxy
 
 You can set up AdGuard to route all your device's traffic through your proxy server. [How to set up an outbound proxy](/adguard-for-android/solving-problems/outbound-proxy)
 
@@ -341,11 +341,11 @@ In this section, you can also set up a third-party VPN to work with AdGuard, if 
 
 Under *Apps operating through proxy*, you can select apps that will route their traffic through your specified proxy. If you have *Integration with AdGuard VPN* enabled, this setting plays the role of AdGuard VPN's app exclusions: it allows you to specify apps to be routed through the AdGuard VPN tunnel.
 
-#### Routing mode
+##### Routing mode
 
 This section allows you to select the traffic filtering method.
 
-* *Local VPN* filters traffic through a locally created VPN. This is the most reliable mode. Due to Android restrictions, it is also the only system-wide traffic filtering method available on non-rooted devices.
+- *Local VPN* filters traffic through a locally created VPN. This is the most reliable mode. Due to Android restrictions, it is also the only system-wide traffic filtering method available on non-rooted devices.
 
 :::note
 
@@ -353,11 +353,11 @@ The *Local VPN* mode doesn't allow AdGuard to be used simultaneously with other 
 
 :::
 
-* *Automatic proxy* is an alternative traffic routing method that does not require the use of a VPN. One significant advantage is that it can be run in parallel with a VPN. This mode requires root access.
+- *Automatic proxy* is an alternative traffic routing method that does not require the use of a VPN. One significant advantage is that it can be run in parallel with a VPN. This mode requires root access.
 
-* *Manual proxy* involves setting up a proxy server on a specific port, which can then be configured in Wi-Fi settings. This mode requires root access for Android 10 and above.
+- *Manual proxy* involves setting up a proxy server on a specific port, which can then be configured in Wi-Fi settings. This mode requires root access for Android 10 and above.
 
-### Filters
+#### Filters
 
 AdGuard blocks ads, trackers, and annoyances by applying rules from its filters. Most features from the *Protection* section are powered by [AdGuard filters](/general/ad-filtering/adguard-filters/#adguard-filters). If you enable *Basic protection*, it will automatically turn on the AdGuard Base filter and AdGuard Mobile Ads filter. And vice versa: if you turn off both filters, *Basic protection* will also be disabled.
 
@@ -373,30 +373,30 @@ If you activate too many filters, some websites may work incorrectly.
 
 [Read more about filters](https://adguard.com/en/blog/what-are-filters.html)
 
-### Userscripts
+#### Userscripts
 
 Userscripts are mini-programs written in JavaScript that extend the functionality of one or more websites. To install a userscripts, you need a special userscript manager. AdGuard has such a functionality and allows you to add userscripts by URL or from file.
 
 ![Userscripts *mobile_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
 
-#### AdGuard Extra
+##### AdGuard Extra
 
 AdGuard Extra is a custom userscript that prevents websites from bypassing ad blockers and re-inserting blocked ads.
 
-## Lisans
+### Lisans
 
 In this section, you can find information about your license and manage it:
 
-* Buy an AdGuard license to activate [the full version's features](#free-vs-full-version)
-* Log in to your AdGuard account or enter the license key to activate your license
-* Sign up to activate your 7-day trial period if you haven't used it yet
-* Refresh the license status if you have recently extended its validity
-* Open the AdGuard account to manage your license there
-* Reset your license – for example, if you've reached device limit for this license and want to apply another one
+- Buy an AdGuard license to activate [the full version's features](#free-vs-full-version)
+- Log in to your AdGuard account or enter the license key to activate your license
+- Sign up to activate your 7-day trial period if you haven't used it yet
+- Refresh the license status if you have recently extended its validity
+- Open the AdGuard account to manage your license there
+- Reset your license – for example, if you've reached device limit for this license and want to apply another one
 
 ![License screen *mobile_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
 
-## Destek
+### Destek
 
 Use this section if you have any questions or suggestions regarding AdGuard for Android. We recommend consulting *[FAQ](https://adguard.com/support/adguard_for_android.html)* or this knowledge base before contacting support.
 
@@ -414,11 +414,11 @@ GitHub is an alternative way to report bugs and suggest new features. [Instructi
 
 :::
 
-# Free vs full version
+### Free vs full version
 
 AdGuard for Android has a free and a paid version. Paid features extend AdGuard's capabilities:
 
-* *Ad blocking in apps* allows you to block ads in non-browser apps. You can specify apps for filtering in [*App management*](#app-management)
+- *Ad blocking in apps* allows you to block ads in non-browser apps. You can specify apps for filtering in [*App management*](#app-management)
 
 :::note
 
@@ -426,20 +426,20 @@ AdGuard uses its own ad-free media player to block ads in YouTube videos. To ope
 
 :::
 
-* *Tracking protection* increases your privacy by blocking tracking requests, online counters, UTM tags, analytics systems, and more. [Back to Tracking protection](#tracking-protection)
+- *Tracking protection* increases your privacy by blocking tracking requests, online counters, UTM tags, analytics systems, and more. [Back to Tracking protection](#tracking-protection)
 
-* *Browsing Security* warns you if you're about to visit a potentially dangerous website. [Back to Browsing Security](#browsing-security)
+- *Browsing Security* warns you if you're about to visit a potentially dangerous website. [Back to Browsing Security](#browsing-security)
 
-* *Custom filters and user rules* allow you to add your own filtering rules and third-party filters to fine-tune ad blocking. [Back to filters](#filters)
+- *Custom filters and user rules* allow you to add your own filtering rules and third-party filters to fine-tune ad blocking. [Back to filters](#filters)
 
-* *Userscripts* allow you to use AdGuard Extra to bypass ad blocker bans and install other userscripts to extend your browser's functionality. [Back to userscripts](#userscripts)
+- *Userscripts* allow you to use AdGuard Extra to bypass ad blocker bans and install other userscripts to extend your browser's functionality. [Back to userscripts](#userscripts)
 
 You can get access to these features by [purchasing a license](https://adguard.com/license.html). [How to activate the license](/general/license/activation/#activating-adguard-for-android)
 
-# Rooted vs non-rooted devices
+### Rooted vs non-rooted devices
 
 Due to additional security measures of Android apps, some AdGuard features are only available on rooted devices. Here's the list of them:
 
-* **HTTPS filtering in most apps** requires [installing a CA certificate into the system store](#security-certificates), as most apps do not trust certificates in the user store. Installing a certificate into the system store is only possible on rooted devices
-* The [**Automatic proxy** routing mode](#routing-mode) requires root access due to Android's limitations on system-wide traffic filtering
-* The **Manual proxy** routing mode requires root access on Android 10 and above as it's no longer possible to determine the name of the app associated with a connection filtered by AdGuard
+- **HTTPS filtering in most apps** requires [installing a CA certificate into the system store](#security-certificates), as most apps do not trust certificates in the user store. Installing a certificate into the system store is only possible on rooted devices
+- The [**Automatic proxy** routing mode](#routing-mode) requires root access due to Android's limitations on system-wide traffic filtering
+- The **Manual proxy** routing mode requires root access on Android 10 and above as it's no longer possible to determine the name of the app associated with a connection filtered by AdGuard
