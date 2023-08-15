@@ -204,6 +204,59 @@ AdGuard Safari and AdGuard for iOS do not fully support regular expressions beca
 
 :::
 
+### Ignoring rules {#rules-ignore}
+
+Rules that match an arbitrarily large number of URLs are considered incorrect and will be ignored. This can happen when the rule doesn't contain a mask, or when the mask matches any URL with a certain protocol.  
+
+This rule will be ignored:
+
+```text
+|http://$replace=/a/b/
+```
+
+This limitation can be circumvented by using a `/.*/` regular expression inside the mask.
+
+This rule will not be ignored:
+
+```text
+(/.*/$replace=/a/b/)
+```
+
+**Exceptions**
+
+This rule validation is not applied in following cases:
+
+- The rule contains [`$domain`](#domain-modifier) modifier that points to a specific domain list.
+
+These rules will not be ignored:
+
+```text
+$domain=example.com,script
+$domain=example.*,script
+```
+
+This rule will be ignored:
+
+```text
+$domain=~example.com,script
+```
+
+- The rule contains [`$app`](#app-modifier) modifier that points to a specific app list.
+
+These rule will not be ignored:
+
+```text
+$app=curl,document
+```
+
+This rule will be ignored:
+
+```text
+$domain=~curl,document
+```
+
+- The rule contains one or more modificators from among [`$cookie`](#cookie-modifier), [`$removeparam`](#removeparam-modifier), [`$removeheader`](#removeheader-modifier), [`$stealth`](#stealth-modifier).
+
 ### Wildcard support for TLD (top-level domains) {#wildcard-for-tld}
 
 Wildcard characters are supported for TLDs of the domains in patterns of [cosmetic](#cosmetic-rules), [HTML filtering](#html-filtering-rules) and [JavaScript](#javascript-rules) rules.
