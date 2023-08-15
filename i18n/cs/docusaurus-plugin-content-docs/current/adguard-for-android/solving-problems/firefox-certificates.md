@@ -5,7 +5,7 @@ sidebar_position: 11
 
 :::info
 
-Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true).
 
 :::
 
@@ -48,7 +48,7 @@ Tato metoda bude fungovat pouze na zařízeních s **root přístupem**.
     - Sedmkrát klepněte na řádek **Číslo sestavení**. Poté se zobrazí oznámení **Nyní jste vývojářem** (v případě potřeby zadejte kód pro odemčení zařízení);
     - Otevřete **Nastavení systému** → **Možnosti pro vývojáře** → přejeďte dolů a zapněte **USB ladění** → po pečlivém přečtení varování potvrďte, že je ladění povoleno v okně **Povolit ladění USB**.
 3. Nainstalujte prohlížeč [Firefox](https://www.mozilla.org/en-US/firefox/releases/) (hlavní verze);
-4. Otevřete **nastavení AdGuardu** → **Síť** → **HTTPS filtrování** → Instalovat certifikát do prohlížeče **Firefox** → **INSTALOVAT PRO STARŠÍ VERZE**;
+4. Otevřete **nastavení AdGuardu** (ikona ozubeného kola v pravém dolním rohu) → **Filtrování** → **Síť** → **HTTPS filtrování** → **Bezpečnostní certifikát** → **Pokyny pro Firefox** → **Instalace pro starší verze**;
 5. Otevřete složku `data/data/org.mozilla.firefox/files/mozilla` pomocí příkazu `adb shell su` a `cd data/data/...`, poté přejděte do složky s názvem `xxxxxxx.default` a zapamatujte si její název;
 6. V uvedené složce nás zajímají dva soubory:
     - `cert9.db`

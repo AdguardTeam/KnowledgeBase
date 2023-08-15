@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-This article is about the filters that we develop and that come pre-installed in AdGuard. To check them out, you can [download the AdGuard app](https://adguard.com/download.html?auto=true)
+本文介绍我们在 AdGuard 中开发并预装的过滤器。 要查看过滤器运行情况，请[下载 AdGuard 应用程序](https://adguard.com/download.html?auto=true)
 
 :::
 

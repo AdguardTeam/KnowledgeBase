@@ -19,7 +19,7 @@ Vyberte některou z dostupných složek produktu a vyberte soubor — nyní mů�
 
 :::note
 
-You can also change the Crowdin interface language by clicking the *Settings* icon in the top right corner of the page. V otevřeném okně přejděte na kartu *UI language*. Otevřete jej, vyberte jazyk a klikněte na **Change**.
+Jazyk rozhraní Crowdin můžete změnit také kliknutím na ikonu *Nastavení* v pravém horním rohu stránky. V otevřeném okně přejděte na kartu *UI language*. Otevřete jej, vyberte jazyk a klikněte na **Change**.
 
 :::
 
@@ -51,7 +51,7 @@ Můžete navrhnout svůj překlad termínů v projektu [AdGuard Glossary](https:
 
 :::tip
 
-You can request context by clicking the "REQUEST" button.
+Kontext si můžete vyžádat kliknutím na tlačítko "REQUEST".
 
 :::
 

@@ -5,9 +5,11 @@ sidebar_position: 2
 
 ## How to purchase a license{#purchase}
 
-La licence AdGuard peut être achetée sur [adguard.com](https://adguard.com/license.html). AdGuard Pro pour iOS peut être acheté sur l'App Store. Des licences du Bloqueur sont également vendues par des distributeurs.
+La licence AdGuard peut être achetée sur [adguard.com](https://adguard.com/license.html). We offer various payment options, including Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay, and UnionPay. We also accept the following cryptocurrencies: Bitcoin, Ethereum, Litecoin, and Tether.
 
-The availability of AdGuard products in app stores and by distributors depends on your country.
+AdGuard Pro pour iOS peut être acheté sur l'App Store.
+
+Des licences du Bloqueur sont également vendues par des distributeurs. The availability of AdGuard products in app stores and by distributors depends on your country.
 
 ## How to upgrade a license{#upgrade}
 

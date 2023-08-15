@@ -1,9 +1,9 @@
 ---
-title: What is an AdGuard license
+title: Co je licence AdGuardu
 sidebar_position: 1
 ---
 
-## What is an AdGuard license
+## Co je licence AdGuardu
 
 Licence je povolení používat produkt AdGuard v souladu s licenční smlouvou s koncovým uživatelem. Licence AdGuardu existují ve formě licenčních klíčů, aktivačních kódů a produktových karet v uživatelském [AdGuard](../../account/register) účtu.
 

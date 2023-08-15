@@ -1,5 +1,5 @@
 ---
-title: Jak shromažďovat a záznamy AdGuardu
+title: Jak shromažďovat záznamy AdGuardu
 sidebar_position: 3
 ---
 

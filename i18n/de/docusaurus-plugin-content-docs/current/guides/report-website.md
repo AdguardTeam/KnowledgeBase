@@ -137,7 +137,7 @@ For example, you are faced with a situation that your favorite website won’t o
 3. If you have managed to to detect which setting "breaks" a page, you should inform the developers when filling out the form (see above). In this case, it is desirable to return to the initial settings;
 4. In case of failure (issue not solved), turn to section **Extensions**.
 
-### **Extensions**
+### **Erweiterungen**
 
 1. Disable **Extensions**;
 2. If this solved the problem, turn on the module and turn off **Extensions** settings one by one. This is done to find out which setting "breaks" the page;

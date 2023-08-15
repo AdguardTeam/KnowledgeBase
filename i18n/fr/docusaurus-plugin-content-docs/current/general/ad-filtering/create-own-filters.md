@@ -7,7 +7,7 @@ toc_max_heading_level: 4
 
 :::info
 
-In this article, we explain how to write custom filtering rules for use in AdGuard products. To test your rules, you can [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Dans cet article, nous expliquons comment écrire des règles de filtrage personnalisées à utiliser dans les produits AdGuard. Pour tester vos règles, vous pouvez [télécharger l'application AdGuard](https://adguard.com/download.html?auto=true)
 
 :::
 
@@ -19,7 +19,7 @@ To describe the syntax of our filtering rules, we use [Augmented BNF for Syntax 
 
 :::info
 
-Originally, the AdGuard's syntax was based on the syntax of Adblock Plus rules. Later, we extended it with new types of rules for better ad filtering. Some parts of this article about the rules common both to AdGuard and ABP were taken from [this article](https://adblockplus.org/en/filters).
+Originally, the AdGuard's syntax was based on the syntax of Adblock Plus rules. Later, we extended it with new types of rules for better ad filtering. Certaines parties de cet article sur les règles communes à AdGuard et ABP ont été extraites de [cet article](https://adblockplus.org/en/filters).
 
 :::
 
@@ -1458,6 +1458,12 @@ This is basically a Firewall-like rule allowing to fully block or unblock access
 4. If the IP part starts and ends with `/` character, it is treated as a regular expression.
 
 We recommend to get acquainted with this [article](#regexp-support) for better understanding of regular expressions.
+
+:::caution Restrictions
+
+The `$network` modifier can only be used in rules together with the `$app` and `$important` modifiers, and not with any other modifiers.
+
+:::
 
 **Examples**
 

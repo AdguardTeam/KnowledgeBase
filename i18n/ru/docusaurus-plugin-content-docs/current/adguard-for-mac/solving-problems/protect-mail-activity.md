@@ -1,5 +1,5 @@
 ---
-title: Защитой конфиденциальности в Почте и AdGuard
+title: Защита конфиденциальности в Почте и AdGuard
 sidebar_position: 8
 ---
 

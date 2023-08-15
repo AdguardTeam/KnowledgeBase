@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifuncional que protege o seu dispositivo ao nível do sistema. Para ver como funciona, [descarregue a aplicação AdGuard](https://adguard.com/download.html?auto=true)
 
 :::
 
@@ -48,6 +48,8 @@ If that doesn't help, follow the instructions for manually adding the AdGuard ce
 8) Browse the downloaded **cert.cer** file and click *Open*.
 
 9) Check the *Trust this CA to identify websites* box and then lick *OK*.
+
+![Certificate settings — checkbox](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/cert_checkbox.jpg)
 
 You've successfully installed AdGuard certificate. Restart the browser and the error should go away.
 

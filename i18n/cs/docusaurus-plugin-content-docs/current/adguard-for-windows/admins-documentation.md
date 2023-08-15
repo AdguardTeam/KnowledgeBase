@@ -7,7 +7,7 @@ Tato stránka popisuje funkce a podrobnosti centrální správy zásad a předvo
 
 ## 1. Stažení MSI {#msi-download}
 
-Stáhněte si [AdGuard MSI](https://cdn.adtidy.org/distr/windows/AdGuard.msi).
+Stáhněte si [AdGuard MSI](https://static.adtidy.org/windows/setup.msi).
 
 ## 2. Konfigurace nastavení pro vaši síť {#settings-configuring}
 
@@ -29,7 +29,7 @@ Pokud potřebujete spustit aktualizaci, použijte tento příkaz: `Msiexec /q /i
 
 :::note
 
-You must run these commands with admin privileges.
+Tyto příkazy musíte spouštět s právy administrátora.
 
 :::
 

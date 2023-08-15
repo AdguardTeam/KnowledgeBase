@@ -3,9 +3,9 @@ title: Funktionsübersicht
 sidebar_position: 1
 ---
 
-:::Info
+:::info
 
-This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Dieser Artikel behandelt AdGuard für Mac, einen multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://adguard.com/download.html?auto=true)
 
 :::
 
@@ -106,7 +106,7 @@ Bei der Erstinstallation von AdGuard (während des Einführungsprozesses) werden
 
 ## Erweiterungen
 
-![Extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Extensions.jpg)
+![Erweiterungen](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Extensions.jpg)
 
 Erweiterungen sind kleine Programme, die genau das tun, was ihr Name andeutet – sie erweitern die Funktionalität. Und AdGuard verwendet mehrere eigene Erweiterungen, auch Userscripts genannt, um seinen Funktionsumfang zu erweitern:
 

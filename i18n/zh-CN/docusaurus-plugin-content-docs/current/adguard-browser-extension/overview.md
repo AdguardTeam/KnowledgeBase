@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-This article is about the AdGuard Browser Extension, which safeguards only your browser. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+这篇文章是关于 AdGuard 浏览器扩展，它只能保护用户的浏览器。 要保护整个设备， [请下载 AdGuard 应用程序](https://adguard.com/download.html?auto=true)
 
 :::
 

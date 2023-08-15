@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+이 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 iOS용 AdGuard에 대해 다룹니다. 어떻게 동작하는지 알고 싶으시다면 [AdGuard 앱을 다운로드](https://adguard.com/download.html?auto=true)해 보세요.
 
 :::
 
@@ -33,7 +33,7 @@ iOS용 AdGuard는 App Store에서 다운로드할 수 있는 무료 앱입니다
 
 ![검색창에 "AdGuard" 입력 *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/2.png)
 
-[On the opened page of the App Store](https://adguard.com/download.html?auto=1) tap _GET_ under the string _AdGuard - adblock&privacy_ and then tap _INSTALL_. 설치를 완료하려면 Apple ID 로그인 및 암호를 입력하고 설치가 완료될 때까지 기다리십시오.
+[App Store의 열린 페이지](https://adguard.com/download.html?auto=1)에서 _AdGuard - 광고 차단&개인정보 보호_ 문자열 아래에서 _다운로드_를 탭한 다음 _설치_를 탭합니다. 설치를 완료하려면 Apple ID 로그인 및 암호를 입력하고 설치가 완료될 때까지 기다리십시오.
 
 ![AdGuard 앱 아래에서 받기를 누르기 *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/3.png)
 

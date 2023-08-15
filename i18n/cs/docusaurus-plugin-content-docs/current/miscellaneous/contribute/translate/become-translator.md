@@ -35,7 +35,7 @@ Kromě toho je zde možnost otevřít překlady v režimu hlasování, pokud chc
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/mode.png)
 
-Několik užitečných tipů pro překlad AdGuardu naleznete v [tomto článku](../guidelines). Please take a look at it.
+Několik užitečných tipů pro překlad AdGuardu naleznete v [tomto článku](../guidelines). Podívejte se na něj.
 
 ### Jak se stát korektorem {#proofreaders}
 
@@ -51,4 +51,4 @@ Za co jsou tedy korektoři zodpovědní?
 
 - Odpovídají na komentáře související s překlady v jejich jazyce.
 
-Every year, the best proofreaders receive gifts from AdGuard. Ani aktivní překladatelé nezůstanou bez odměny. Více informací o našem [systému odměn](../rewards).
+Každý rok dostávají nejlepší korektoři od AdGuardu dárky. Ani aktivní překladatelé nezůstanou bez odměny. Více informací o našem [systému odměn](../rewards).

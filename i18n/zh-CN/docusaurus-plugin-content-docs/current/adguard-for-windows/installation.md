@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+本文适用于 Windows 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 要了解工作原理， 请[下载 AdGuard 应用程序](https://adguard.com/download.html?auto=true)
 
 :::
 
@@ -23,7 +23,7 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 如您想要在 Microsoft Windows 操作系统的电脑或笔记本上使用 AdGuard ，您要下载安装包并启用安装程序。 请执行以下步骤：
 
-1. Go to the [AdGuard website](http://adguard.com) in the address bar and click *Download* [on the opened page](https://adguard.com/download.html?auto=1).
+1. 在地址栏输入 [AdGuard 官网](http://adguard.com)，在[打开的页面](https://adguard.com/download.html?auto=1)中点击「*下载*」。
 
    ![Download AdGuard](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/download-from-website.png)
 

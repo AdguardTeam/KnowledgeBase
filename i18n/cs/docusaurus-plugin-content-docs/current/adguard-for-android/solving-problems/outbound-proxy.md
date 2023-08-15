@@ -9,29 +9,33 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 :::
 
-Tento článek vysvětluje, jak nastavit některé z nejoblíbenějších proxy serverů tak, aby spolupracovaly s AdGuardem.
+AdGuard umožňuje směrovat provoz vašeho zařízení přes server proxy. Chcete-li získat přístup k nastavení proxy, otevřete **Nastavení** a přejděte na **Filtrování** → **Síť** → **Proxy**.
+
+## Příklady konfigurace proxy
+
+V tomto článku uvádíme příklady nastavení některých nejoblíbenějších proxy serverů pro spolupráci s AdGuardem.
 
 ### Jak používat AdGuard s Tor
 
-1. Otevřete nastavení AdGuardu a přejděte do **Nastavení** → **Síť** → **Nastavení proxy**. Sráhněte "Orbot: Proxy with Tor" klepnutím na **Integovat s Tor** nebo přímo z [Google Play](https://play.google.com/store/apps/details?id=org.torproject.android&noprocess).
+1. Otevřete AdGuard a jděte do **Nastavení** → **Filtrování** → **Síť** → **Proxy**. Stáhněte si "Orbot: Proxy with Tor" přímo z [Obchodu Play](https://play.google.com/store/apps/details?id=org.torproject.android&noprocess) nebo klepnutím na **Integrovat s Tor** a poté **Instalovat**.
 
 2. Otevřete Orbot a stiskněte tlačítko **Spustit** na hlavní obrazovce aplikace.
 
-2. Vraťte se na obrazovku **Nastavení proxy** v AdGuardu.
+3. Vraťte se na obrazovku **Proxy** v AdGuardu.
 
-3. Klepněte na tlačítko **Integrovat s Tor**.
+4. Klepněte na tlačítko **Integrovat s Tor**.
 
-4. Všechna povinná pole budou předvyplněna:
+5. Všechna povinná pole budou předvyplněna:
 
-| Pole           | Hodnota                |
-| -------------- | ---------------------- |
-| Typ proxy      | *SOCKS4* nebo *SOCKS5* |
-| Hostitel proxy | *127.0.0.1*            |
-| Port proxy     | *9050*                 |
+    | Pole           | Hodnota                |
+    | -------------- | ---------------------- |
+    | Typ proxy      | *SOCKS4* nebo *SOCKS5* |
+    | Hostitel proxy | *127.0.0.1*            |
+    | Port proxy     | *9050*                 |
 
-Nebo můžete klepnout na **Přidat proxy**, zadat tyto hodnoty ručně a nastavit Orbot jako výchozí proxy.
+Nebo můžete klepnout na **Proxy server** → **Přidat proxy server**, zadat tyto hodnoty ručně a nastavit Orbot jako výchozí proxy.
 
-5. Zapnout AdGuard ochranu.
+6. Zapněte hlavní přepínač Proxy a AdGuard ochranu, aby byl provoz zařízení směrován přes proxy server.
 
 Nyní bude AdGuard přeposílat veškerý provoz přes Orbot. Pokud zakážete Orbot, připojení k Internetu bude nedostupné, dokud nezakážete nastavení odchozího proxy v AdGuardu.
 
@@ -39,59 +43,59 @@ Nyní bude AdGuard přeposílat veškerý provoz přes Orbot. Pokud zakážete O
 
 *Předpokládáme, že jste již klientem PIA VPN a máte ji nainstalovanou ve svém zařízení.*
 
-1. Otevřete nastavení AdGuardu a přejděte do **Nastavení** → **Síť** → **Nastavení proxy**.
+1. Otevřete AdGuard a jděte do **Nastavení** → **Filtrování** → **Síť** → **Proxy** → **Proxy server**.
 
 2. Klepněte na tlačítko **Přidat proxy** a zadejte následující údaje:
 
-| Pole           | Hodnota                              |
-| -------------- | ------------------------------------ |
-| Typ proxy      | *SOCKS5*                             |
-| Hostitel proxy | *proxy-nl.privateinternetaccess.com* |
-| Port proxy     | *1080*                               |
+    | Pole           | Hodnota                              |
+    | -------------- | ------------------------------------ |
+    | Typ proxy      | *SOCKS5*                             |
+    | Hostitel proxy | *proxy-nl.privateinternetaccess.com* |
+    | Port proxy     | *1080*                               |
 
-3. Musíte také vyplnit pole **Uživatelské jméno/heslo**. Za tímto účelem se přihlaste do [Klientského ovládacího panelu](https://www.privateinternetaccess.com/pages/client-sign-in) na webu PIA. Klikněte na tlačítko **Generovat heslo** v části **Generovat heslo PPTP/L2TP/SOCKS**. Zobrazí se uživatelské jméno začínající na "x" a náhodné heslo. Použijte je k vyplnění polí **Uživatelské jméno** a **Heslo** v AdGuardu.
+3. Musíte také vyplnit pole **Uživatelské jméno/heslo**. Za tímto účelem se přihlaste do [Klientského ovládacího panelu](https://www.privateinternetaccess.com/pages/client-sign-in) na webu PIA. Klikněte na tlačítko **Generovat heslo** v části **Generovat heslo PPTP/L2TP/SOCKS**. Zobrazí se uživatelské jméno začínající na "x" a náhodné heslo. Použijte je k vyplnění polí **Uživatelské jméno proxy** a **Heslo proxy** v AdGuardu.
 
-4. Přepnutím přepínače nastavte tento proxy jako výchozí a poté klepněte na **Uložit**.
+4. Klepněte na **Uložit a vybrat**.
 
-5. Zapněte AdGuard ochranu.
+5. Zapněte hlavní přepínač Proxy a AdGuard ochranu, aby byl provoz zařízení směrován přes proxy server.
 
 ### Jak používat AdGuard s TorGuard
 
 *Předpokládáme, že jste již klientem TorGuard a máte jej nainstalovaný ve svém zařízení.*
 
-1. Otevřete nastavení AdGuardu a přejděte do **Nastavení** → **Síť** → **Nastavení proxy**.
+1. Otevřete AdGuard a jděte do **Nastavení** → **Filtrování** → **Síť** → **Proxy** → **Proxy server**.
 
 2. Klepněte na tlačítko **Přidat proxy** a zadejte následující údaje:
 
-| Pole           | Hodnota                                       |
-| -------------- | --------------------------------------------- |
-| Typ proxy      | *SOCKS5*                                      |
-| Hostitel proxy | *proxy.torguard.org* nebo *proxy.torguard.io* |
-| Port proxy     | *1080* nebo *1085* nebo *1090*                |
+    | Pole           | Hodnota                                       |
+    | -------------- | --------------------------------------------- |
+    | Typ proxy      | *SOCKS5*                                      |
+    | Hostitel proxy | *proxy.torguard.org* nebo *proxy.torguard.io* |
+    | Port proxy     | *1080* nebo *1085* nebo *1090*                |
 
 3. Do polí **Uživatelské jméno** a **Heslo** zadejte své uživatelské jméno proxy a heslo proxy, které jste si zvolili při registraci do TorGuardu.
 
-4. Přepnutím přepínače nastavte tento proxy jako výchozí a poté klepněte na **Uložit**.
+4. Klepněte na **Uložit a vybrat**.
 
-5. Zapněte AdGuard ochranu.
+5. Zapněte hlavní přepínač Proxy a AdGuard ochranu, aby byl provoz zařízení směrován přes proxy server.
 
 ### Jak používat AdGuard s NordVPN
 
-1. Otevřete nastavení AdGuardu a přejděte do **Nastavení** → **Síť** → **Nastavení proxy**.
+1. Otevřete AdGuard a jděte do **Nastavení** → **Filtrování** → **Síť** → **Proxy** → **Proxy server**.
 
 2. Klepněte na tlačítko **Přidat proxy** a zadejte následující údaje:
 
-| Pole           | Hodnota                                                                                    |
-| -------------- | ------------------------------------------------------------------------------------------ |
-| Typ proxy      | *SOCKS5*                                                                                   |
-| Hostitel proxy | *uložte jakýkoli server pro "Obfuscated" z [tohoto seznamu](https://nordvpn.com/servers/)* |
-| Port proxy     | *1080*                                                                                     |
+    | Pole           | Hodnota                                                                               |
+    | -------------- | ------------------------------------------------------------------------------------- |
+    | Typ proxy      | *SOCKS5*                                                                              |
+    | Hostitel proxy | *jakýkoli server z [tohoto seznamu](https://support.nordvpn.com/Connectivity/Proxy/)* |
+    | Port proxy     | *1080*                                                                                |
 
 3. Do polí **Uživatelské jméno** a **Heslo** zadejte své uživatelské jméno a heslo NordVPN.
 
-4. Přepnutím přepínače nastavte tento proxy jako výchozí a poté klepněte na **Uložit**.
+4. Klepněte na **Uložit a vybrat**.
 
-5. Zapněte AdGuard ochranu.
+5. Zapněte hlavní přepínač Proxy a AdGuard ochranu, aby byl provoz zařízení směrován přes proxy server.
 
 ### Jak používat AdGuard se Shadowsocks
 
@@ -99,22 +103,39 @@ Nyní bude AdGuard přeposílat veškerý provoz přes Orbot. Pokud zakážete O
 
 :::note
 
-You should remove Shadowsocks application from filtering before setting up the process (AdGuard → Apps management → Shadowsocks → Disable AdGuard protection) to avoid infinite loops and drops.
+You should remove Shadowsocks app from filtering before setting up the process (**App management** → **Shadowsocks** → **Route traffic through AdGuard**) to avoid infinite loops and drops.
 
 :::
 
-1. Otevřete nastavení AdGuardu a přejděte do **Nastavení** → **Síť** → **Nastavení proxy**.
+1. Otevřete AdGuard a jděte do **Nastavení** → **Filtrování** → **Síť** → **Proxy** → **Proxy server**.
 
 2. Klepněte na tlačítko **Přidat proxy** a vyplňte pole:
 
-| Pole           | Hodnota     |
-| -------------- | ----------- |
-| Typ proxy      | *SOCKS5*    |
-| Hostitel proxy | *127.0.0.1* |
-| Port proxy     | *1080*      |
+    | Pole           | Hodnota     |
+    | -------------- | ----------- |
+    | Typ proxy      | *SOCKS5*    |
+    | Hostitel proxy | *127.0.0.1* |
+    | Port proxy     | *1080*      |
 
-3. Klepněte na **Uložit a vybrat**
+3. Klepněte na **Uložit a vybrat**.
 
-### Omezení
+4. Zapněte hlavní přepínač Proxy a AdGuard ochranu, aby byl provoz zařízení směrován přes proxy server.
+
+### Jak používat AdGuard s Clash
+
+*Předpokládáme, že jste již klientem Clash a máte jej nainstalovaný ve svém zařízení.*
+
+1. Otevřete nastavení Clash a přejděte do **Nastavení** → **Síť** → **Směrovat systémový provoz** a přepněte přepínač. Tímto nastavíte Clash do režimu proxy.
+2. Open AdGuard and go to **App management**. Vyberte **Clash pro Android** a zakažte **Směrovat provoz skrze AdGuard**. Tímto se odstraní zacyklení provozu.
+3. Then go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server**.
+4. Klepněte na tlačítko **Přidat proxy** a vyplňte pole:
+
+    | Pole           | Hodnota     |
+    | -------------- | ----------- |
+    | Typ proxy      | *SOCKS5*    |
+    | Hostitel proxy | *127.0.0.1* |
+    | Port proxy     | *7891*      |
+
+## Omezení
 
 Existuje faktor, který může zabránit směrování určitých přenosů přes odchozí proxy. AdGuard přesměruje pouze provoz, který přes něj prochází. V podstatě se jedná o aplikace, které mají na kartě **Správa aplikací** povolen příznak **Blokování reklam**.

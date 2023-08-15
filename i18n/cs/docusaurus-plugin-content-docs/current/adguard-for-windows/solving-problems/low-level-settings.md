@@ -77,7 +77,7 @@ Od verze 7.12 služba AdGuard ve výchozím nastavení nefiltruje provoz po spu�
 
 :::note
 
-Before v7.12, the AdGuard service started in filtering mode by default (even if the *Launch AdGuard at system start-up* was disabled). If you were satisfied with the old behavior, enable this option.
+Před verzí 7.12 se služba AdGuard ve výchozím nastavení spouštěla v režimu filtrování (i když byla zakázána volba *Spustit AdGuard při startu systému*). Pokud vám vyhovovalo staré chování, tuto možnost povolte.
 
 :::
 
@@ -135,7 +135,7 @@ Zde můžete zadat dobu nečinnosti v sekundách před odesláním udržovací s
 
 :::note
 
-This setting only works when the *Enable TCP keepalive* option is enabled.
+Toto nastavení funguje pouze v případě, že je povolena možnost *Povolit udržování TCP*.
 
 :::
 
@@ -145,7 +145,7 @@ Zde můžete zadat dobu v sekundách před odesláním další udržovací sondy
 
 :::note
 
-This setting only works when the *Enable TCP keepalive* option is enabled.
+Toto nastavení funguje pouze v případě, že je povolena možnost *Povolit udržování TCP*.
 
 :::
 
