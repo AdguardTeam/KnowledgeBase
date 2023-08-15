@@ -229,15 +229,15 @@ For early Samsung devices, there is no huge need for setting up the background o
 
 - Tap the **Recent tasks** button, tap the **Additional settings** icon. It should look like this:
 
-    ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/samsungoptions.png)
+ ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_1.png)
 
 - Tap **Lock Apps**:
 
-    ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/samsunglockapps.png)
+ ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_2.png)
 
 - Tap on the lock icon
 
-    ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/samsunglock.png)
+ ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_3.png)
 
 ## Huawei
 
