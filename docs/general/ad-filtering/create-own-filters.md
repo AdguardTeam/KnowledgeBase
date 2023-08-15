@@ -71,7 +71,7 @@ Filtering rules support numerous modifiers that allow you to fine-tune the rule 
 
 **This rule blocks:**
 
-- `http://example.org/script.js` if this script is loaded from `example.org`.
+- `http://example.org/script.js` if this script is loaded from `example.com`.
 
 **This rule does not block:**
 
