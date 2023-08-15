@@ -219,7 +219,7 @@ This limitation can be circumvented by using a `/.*/` regular expression inside 
 This rule will not be ignored:
 
 ```text
-(/.*/$replace=/a/b/)
+/.*/$replace=/a/b/
 ```
 
 **Exceptions**
