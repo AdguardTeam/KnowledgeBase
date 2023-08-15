@@ -20,5 +20,6 @@ AdGuard Pro для iOS можно купить в App Store.
 3. Также вы можете **улучшить свою [подписку](../what-is) до Вечной лицензии**.
 
 Вы можете улучшить свою лицензию следующим образом:
-  * купив другую лицензию на [официальном сайте AdGuard](https://adguard.com),
-  * нажав *Улучшить до Вечной* и/или *Увеличить лимит устройств* в вашем аккаунте AdGuard: ![Улучшить *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)
+
+- купив другую лицензию на [официальном сайте AdGuard](https://adguard.com),
+- нажав *Улучшить до Вечной* и/или *Увеличить лимит устройств* в вашем аккаунте AdGuard: ![Улучшить *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)

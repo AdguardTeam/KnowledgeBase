@@ -107,17 +107,17 @@ Burada, ana DNS sunucusu yerine yedek DNS sunucusunun kullanılacağı alan adla
 
 Here you can specify the type of DNS server response to blocked requests, corresponding to ad-blocker-style rules.
 
-* 0 — REFUSED ile yanıt verin
-* 1 — NXDOMAIN ile yanıt verin
-* 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
+- 0 — REFUSED ile yanıt verin
+- 1 — NXDOMAIN ile yanıt verin
+- 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
 
 `dns.proxy.hostrules.blocking.mode`
 
 Here you can specify the type of DNS server response to blocked requests, corresponding to hosts rules:
 
-* 0 — REFUSED ile yanıt verin
-* 1 — NXDOMAIN ile yanıt verin
-* 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
+- 0 — REFUSED ile yanıt verin
+- 1 — NXDOMAIN ile yanıt verin
+- 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
 
 `dns.proxy.blocking.response.IPv4.address`
 

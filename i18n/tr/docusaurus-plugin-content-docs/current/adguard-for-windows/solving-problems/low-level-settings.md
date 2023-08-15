@@ -181,17 +181,17 @@ AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to
 
 Here you can select the way AdGuard will respond to domains blocked by DNS rules based on [hosts rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
 
-* Reply with “Refused” error
-* Reply with “NxDomain” error
-* Reply with a custom IP address
+- Reply with “Refused” error
+- Reply with “NxDomain” error
+- Reply with a custom IP address
 
 ### Blocking mode for adblock-style rules
 
 Here you can select the way AdGuard will respond to domains blocked by DNS rules based on [adblock-style syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax).
 
-* Reply with “Refused” error
-* Reply with “NxDomain” error
-* Reply with a custom IP address
+- Reply with “Refused” error
+- Reply with “NxDomain” error
+- Reply with a custom IP address
 
 ### Özel IPv4 adresi
 
@@ -205,9 +205,9 @@ hosts kuralları için Engelleme modunda veya reklam engelleme stili kuralları 
 
 Here you can specify an alternate DNS server to which a DNS request will be rerouted if the main server fails to respond within the timeout period specified in the next section. There are three options to choose from:
 
-* Yedek sunucuları kullanmayın;
-* Use system default servers;
-* Use custom servers.
+- Yedek sunucuları kullanmayın;
+- Use system default servers;
+- Use custom servers.
 
 ### Block ECH
 

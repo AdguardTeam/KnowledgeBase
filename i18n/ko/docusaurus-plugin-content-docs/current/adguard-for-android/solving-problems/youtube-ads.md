@@ -17,15 +17,15 @@ sidebar_position: 7
 
 1. Open the YouTube app and start the video you want to watch.
 
-2. Tap the *Share* button.
+1. Tap the *Share* button.
 
-![Share to YouTube step 1 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step1.png)
+    ![Share to YouTube step 1 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step1.png)
 
-3. Select *AdGuard* from the list of apps.
+1. Select *AdGuard* from the list of apps.
 
-![Share to YouTube step 2 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step2.png)
+    ![Share to YouTube step 2 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step2.png)
 
-끝! 광고 없이 동영상을 볼 수 있는 새 창이 열립니다.
+That's it! A new window with the video will open where you'll be able to watch it without being interrupted by ads.
 
 ## Watch YouTube in a browser
 

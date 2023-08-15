@@ -9,9 +9,9 @@ sidebar_position: 6
 
 翻訳の進捗状況を確認するには、作業したプロジェクトを開き、 *Reports* タブをクリックし、 *My Contribution*を選択します。 異なるプロジェクトで翻訳した語数を合計して、ライセンスを取得することができます。
 
-**報奨制度の仕組みは以下の通りです。**
+## Here’s how our reward system works
 
-```
+```text
 AdGuardの最初の1年ライセンスを受け取るには、500語を翻訳する必要があります。
 2つ目のライセンスでは追加で1,000語、つまり合計1,500語の翻訳が必要です。
 それ以降のライセンスは、1ライセンスにつき1,500語の翻訳が必要です。
@@ -20,8 +20,9 @@ AdGuard VPNサブスクリプションの最初の1年ライセンスを受け�
 それ以降のサブスクリプションは、1サブスクリプションにつき2,500語の翻訳が必要です。
 
 ```
-[translate@adguard.com](mailto:translate@adguard.com) にリクエストを送信するだけで、翻訳語数の条件を満たしていれば感謝の印としてライセンスを差し上げます。
 
-さらに、最も積極的な翻訳者は、将来的に校正者の地位を得る可能性があり、そのような意思を表明すれば、さらに良いものを用意しております。
+Just send us a request to [translate@adguard.com](mailto:translate@adguard.com) and you’ll get the license as a token of our gratitude.
 
-毎年、活躍した校正者にはAdGuardのロゴ入りプレゼントを贈っています。 もしあなたもそのうちの一人になりたいのなら、 [translate@adguard.com](mailto:translate@adguard.com)までご連絡ください。
+Besides, the most active translators may receive proofreader status in the future, should they express such an intention, and that promises even more good stuff.
+
+Every year we present gifts with the AdGuard logo to our active proofreaders. If you want to become one of them, please write to [translate@adguard.com](mailto:translate@adguard.com).

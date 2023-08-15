@@ -73,6 +73,6 @@ Finally, if your device is rooted, you can move the AdGuard certificate to the s
 
 There are several dedicated websites where you can check the quality of your HTTPS connection. These websites check if your browser (or, in our case, your browser plus AdGuard) is susceptible to common vulnerabilities. If you plan to use any program that filters HTTPS, not necessarily AdGuard (e.g., an antivirus), we advise that you check the connection quality on these websites.
 
-* [https://www.ssllabs.com/ssltest/viewMyClient.html](https://www.ssllabs.com/ssltest/viewMyClient.html)
-* [https://www.howsmyssl.com/](https://www.howsmyssl.com/)
-* [https://badssl.com/](https://badssl.com/)
+- [https://www.ssllabs.com/ssltest/viewMyClient.html](https://www.ssllabs.com/ssltest/viewMyClient.html)
+- [https://www.howsmyssl.com/](https://www.howsmyssl.com/)
+- [https://badssl.com/](https://badssl.com/)

@@ -21,9 +21,9 @@ Některé možnosti nemusí být v závislosti na konkrétním produktu dostupn�
 
 Když jste přesměrováni na webovou stránku z vyhledávače Google, Yahoo nebo jiného vyhledávače, tato možnost skryje vyhledávací dotaz, který jste použili k nalezení dané webové stránky.
 
-### Ask websites not to track you {#donottrack}
+### Požádat webové stránky, aby vás nesledovaly {#donottrack}
 
-Sends the [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) requests to the websites you visit.
+Odešle webovým stránkám, které jste navštívili požadavky [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) a [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track).
 
 ### Odebrat sledovací parametry z URL
 

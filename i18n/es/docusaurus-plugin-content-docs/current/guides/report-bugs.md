@@ -19,12 +19,12 @@ Verifica si el error no se ha informado antes. Aconsejamos prestar atención tan
 
 Intenta proporcionar tantos detalles como sea posible; eso nos facilitará la reproducción del error y descubriremos cómo solucionarlo. Esto es lo que esperamos ver en un informe de errores:
 
-* La versión de tu aplicación
-* La versión de tu sistema operativo
-* Cuando notaste el problema
-* Lo que estaba haciendo o lo que le sucedió a la aplicación antes de notar el problema. Pasos para reproducirlo
-* Si se repitió y con qué frecuencia
-* Si tienes una VPN o un software antivirus
+- La versión de tu aplicación
+- La versión de tu sistema operativo
+- Cuando notaste el problema
+- Lo que estaba haciendo o lo que le sucedió a la aplicación antes de notar el problema. Pasos para reproducirlo
+- Si se repitió y con qué frecuencia
+- Si tienes una VPN o un software antivirus
 
 ### Cómo recopilar registros
 
@@ -39,7 +39,6 @@ Si deseas apoyar la implementación de una nueva función o corrección de error
 ![Propuesta de GitHub sin reacciones](https://cdn.adtidy.org/content/kb/ad_blocker/general/github_reaction2.png)
 
 Puedes encontrar reacciones en la esquina superior derecha o en la parte inferior de un problema.
-
 
 ## Instrucciones para todas las plataformas
 

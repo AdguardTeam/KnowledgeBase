@@ -21,7 +21,7 @@ Nejprve musíte zapnout DNS ochranu. K tomu je třeba:
 2. Klepněte na ikonu *Ochrana* (druhá ikona v dolní liště nabídky).
 3. Zapněte *DNS ochranu*.
 
-![Obrazovka DNS ochrany *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_dns_protection.PNG)
+![DNS protection screen *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_dns_protection.PNG)
 
 Pokud je vaším cílem blokovat reklamy a slídiče v celém systému, máte tři možnosti:
 
@@ -31,10 +31,10 @@ Pokud je vaším cílem blokovat reklamy a slídiče v celém systému, máte t�
 
 První a třetí možnost mají několik výhod:
 
-* Můžete používat libovolný DNS server podle vlastního uvážení a nejste vázáni na konkrétní server pro blokování, protože blokování provádí filtr.
-* Můžete přidat více DNS filtrů a/nebo souborů hosts (i když použití příliš velkého počtu může AdGuard zpomalit).
+- Můžete používat libovolný DNS server podle vlastního uvážení a nejste vázáni na konkrétní server pro blokování, protože blokování provádí filtr.
+- Můžete přidat více DNS filtrů a/nebo souborů hosts (i když použití příliš velkého počtu může AdGuard zpomalit).
 
-![Jak funguje DNS filtrování](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_en.png)
+![How DNS filtering works](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_en.png)
 
 ## Jak přidat vlastní soubor DNS filtrování/hosts
 
@@ -48,6 +48,6 @@ Pro účely příkladu přidejme [OISD Blocklist Big](https://oisd.nl/).
 4. Vložte URL odkaz do pole filtru.
 5. Klepněte na *Další* → *Přidat*.
 
-![Obrazovka přidání DNS filtru *mobile_border](https://cdn.adtidy.org/blog/new/ot4okIMGD236EB8905471.jpeg)
+![Adding a DNS filter screen *mobile_border](https://cdn.adtidy.org/blog/new/ot4okIMGD236EB8905471.jpeg)
 
 Stejným způsobem můžete přidat libovolný počet dalších DNS filtrů vložením jiné adresy URL v kroku 4. Různé filtry a odkazy na ně najdete [zde](https://filterlists.com).

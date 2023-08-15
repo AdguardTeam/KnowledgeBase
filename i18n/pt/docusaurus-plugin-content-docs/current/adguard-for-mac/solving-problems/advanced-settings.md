@@ -107,17 +107,17 @@ Here you can list domains for which the fallback DNS server will be used instead
 
 Here you can specify the type of DNS server response to blocked requests, corresponding to ad-blocker-style rules.
 
-* 0 — respond with REFUSED
-* 1 — respond with NXDOMAIN
-* 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
+- 0 — respond with REFUSED
+- 1 — respond with NXDOMAIN
+- 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
 
 `dns.proxy.hostrules.blocking.mode`
 
 Here you can specify the type of DNS server response to blocked requests, corresponding to hosts rules:
 
-* 0 — respond with REFUSED
-* 1 — respond with NXDOMAIN
-* 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
+- 0 — respond with REFUSED
+- 1 — respond with NXDOMAIN
+- 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
 
 `dns.proxy.blocking.response.IPv4.address`
 

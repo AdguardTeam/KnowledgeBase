@@ -25,42 +25,42 @@ AdGuard is not an antivirus program. 멀웨어 또는 피싱 웹사이트를 방
 
 AdwareCleaner를 예로 들어 보겠습니다. 애플리케이션을 다운로드하고 성공적으로 설치한 후 다음 단계를 수행합니다:
 
-1) 애플리케이션을 시작하고 **지금 스캔**을 클릭합니다.
+1. Start the application and click **Scan now**.
 
-![애드웨어1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware1.png)
+![adware1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware1.png)
 
-2) 검사가 완료되면 의심스러운 개체를 **검역소**로 보내야 합니다.
+1. Once the scan has been completed, you will need to send suspicious objects to **Quarantine**.
 
-![애드웨어2 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware2.png)
+![adware2 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware2.png)
 
-3) 품목을 **검역소**로 옮기면 **불필요한 밸러스트의 시스템 지우기**가 가능합니다.
+1. When the items are moved to **Quarantine**, you will be able to **Clear the system** of unnecessary ballast.
 
-4) 경우에 따라 **청소가 완료된 후 시스템을** 재부팅해야 할 수 있습니다.
+1. In some cases, you may need to **Reboot the system** after cleaning is complete.
 
-![애드웨어3 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware3.png)
+![adware3 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware3.png)
 
-5) 시스템이 재부팅되면 청소가 완료됩니다. 필요한 경우 언제든지 **보고서**를 읽어보실 수 있습니다.
+1. Once the system has been rebooted, cleaning will be completed. If necessary, you can always read the **Report** on the work done.
 
-![애드웨어4 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware4.png)
+![adware4 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware4.png)
 
-그래도 도움이 되지 않으면 [이 지침에 따라 브라우저에서 모든 확장 프로그램 및 기타 설정을 일시적으로 비활성화하세요](#instructions).
+If it didn’t help, temporary disable all extensions and some other settings in the browser according to [these instructions](#instructions).
 
-설정 및 확장 기능을 비활성화해도 도움이 되지 않으면 [에서 브라우저의 바로 가기를 다시 생성하세요](#shortcuts).
+If disabling of settings and extensions does not help, try to [recreate shortcuts of your browsers](#shortcuts).
 
-이 페이지의 뒷부분에서는 가장 자주 접하는 광고 확장 프로그램을 제거하는 방법에 대한 지침을 설명합니다.
+Further on this page we describe the instructions on how to remove some of the most commonly encountered ad extensions.
 
 ## 브라우저에서 설정 및 확장 기능을 비활성화하는 방법 {#instructions}
 
-다음은 가장 많이 사용되는 브라우저의 설정 및 확장 기능을 비활성화하는 방법에 대한 지침입니다:
+Below are the instructions on how to disable settings and extensions for the most popular browsers:
 
-* [구글 크롬](https://support.google.com/chrome/answer/187443?hl=en)
+- [구글 크롬](https://support.google.com/chrome/answer/187443?hl=en)
 
-* [모질라 파이어폭스](https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons)
+- [모질라 파이어폭스](https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons)
 
-* [오페라](https://help.opera.com/en/latest/customization/#extensions)
+- [오페라](https://help.opera.com/en/latest/customization/#extensions)
 
 ## 브라우저 바로가기를 다시 만드는 방법 {#shortcuts}
 
-멀웨어 및 애드웨어 프로그램은 브라우저의 바탕화면 바로 가기, 작업 표시줄 및 *시작* 메뉴 항목을 대체하는 매우 간단한 방법으로 홈페이지를 설치하는 경우가 많습니다.
+Very often, malware and adware programs install their homepage in a very simple way — they substitute your browser's desktop shortcut, taskbar and *Start* menu items.
 
-이 경우 가장 간단한 해결책은 모든 바로가기를 수동으로 삭제하고 직접 다시 만드는 것입니다.
+The simplest solution in this case is to manually delete all the shortcuts and recreate them by yourself.

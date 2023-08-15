@@ -25,42 +25,42 @@ Na Internet, você pode encontrar muitos aplicativos destinados a combater esse 
 
 Vamos usar o AdwareCleaner como exemplo. Depois que o aplicativo for baixado e instalado com sucesso, execute as seguintes etapas:
 
-1) Inicie o aplicativo e clique em **Digitalizar agora**.
+1. Start the application and click **Scan now**.
 
 ![adware1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware1.png)
 
-2) Assim que a varredura for concluída, você precisará enviar objetos suspeitos para a **Quarentena**.
+1. Once the scan has been completed, you will need to send suspicious objects to **Quarantine**.
 
 ![adware2 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware2.png)
 
-3) Quando os itens forem movidos para a **Quarentena**, você poderá **Limpar o sistema** de ítens desnecessários.
+1. When the items are moved to **Quarantine**, you will be able to **Clear the system** of unnecessary ballast.
 
-4) Em alguns casos, pode ser necessário **Reinicializar o sistema** após a conclusão da limpeza.
+1. In some cases, you may need to **Reboot the system** after cleaning is complete.
 
 ![adware3 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware3.png)
 
-5) Após a reinicialização do sistema, a limpeza será concluída. Se necessário, pode sempre ler o **Relatório** sobre o trabalho realizado.
+1. Once the system has been rebooted, cleaning will be completed. If necessary, you can always read the **Report** on the work done.
 
 ![adware4 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware4.png)
 
-Se não ajudar, desative temporariamente todas as extensões e algumas outras configurações no navegador de acordo com [estas instruções](#instructions).
+If it didn’t help, temporary disable all extensions and some other settings in the browser according to [these instructions](#instructions).
 
-Se desabilitar configurações e extensões não ajudar, tente [recriar atalhos de seus navegadores](#shortcuts).
+If disabling of settings and extensions does not help, try to [recreate shortcuts of your browsers](#shortcuts).
 
-Mais adiante nesta página, descrevemos as instruções sobre como remover algumas das extensões de anúncio mais comumente encontradas.
+Further on this page we describe the instructions on how to remove some of the most commonly encountered ad extensions.
 
 ## Como desativar configurações e extensões no navegador {#instructions}
 
-Abaixo estão as instruções sobre como desabilitar configurações e extensões para os navegadores mais populares:
+Below are the instructions on how to disable settings and extensions for the most popular browsers:
 
-* [para Google Chrome](https://support.google.com/chrome/answer/187443?hl=en)
+- [para Google Chrome](https://support.google.com/chrome/answer/187443?hl=en)
 
-* [para Mozilla Firefox](https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons)
+- [para Mozilla Firefox](https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons)
 
-* [para o Opera](https://help.opera.com/en/latest/customization/#extensions)
+- [para o Opera](https://help.opera.com/en/latest/customization/#extensions)
 
 ## Como recriar atalhos para seus navegadores {#shortcuts}
 
-Muitas vezes, os programas de malware e adware instalam sua página inicial de uma maneira muito simples: eles substituem o atalho da área de trabalho do navegador, a barra de tarefas e os itens de menu *Iniciar*.
+Very often, malware and adware programs install their homepage in a very simple way — they substitute your browser's desktop shortcut, taskbar and *Start* menu items.
 
-A solução mais simples neste caso é excluir manualmente todos os atalhos e recriá-los você mesmo.
+The simplest solution in this case is to manually delete all the shortcuts and recreate them by yourself.

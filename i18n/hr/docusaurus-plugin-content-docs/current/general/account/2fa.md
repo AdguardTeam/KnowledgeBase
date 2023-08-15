@@ -9,23 +9,23 @@ We see adding a 2FA option as a benefit. We also understand that enforcing it ma
 
 We recommend setting up two-factor authentication for your AdGuard account. It won't take you long, but it will help protect your license keys, subscriptions, and, most importantly, any personal information associated with the account.
 
-
 ## How to set it up
 
-1) Log into your [AdGuard account](https://auth.adguard.com/login.html) and go to the Settings tab:
+1. Log into your [AdGuard account](https://auth.adguard.com/login.html) and go to the Settings tab:
 
 ![AdGuard Account settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/account_settings.png)
 
-2) Scroll down to *Password and 2FA* section and click **Enable**:
+1. Scroll down to *Password and 2FA* section and click **Enable**:
 
 ![The Change button *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_new.png)
 
-3) Follow the on-screen instructions to install an authenticator app and scan the QR code:
+1. Follow the on-screen instructions to install an authenticator app and scan the QR code:
 
 ![The verification code](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_enable.png)
 
 ***Important***
-* Save the second-factor backup code somewhere, it will be necessary to recover your account in case your mobile phone gets lost or stolen;
+
+- Save the second-factor backup code somewhere, it will be necessary to recover your account in case your mobile phone gets lost or stolen;
 
 If everything is done right, you will see this when you log into your account the next time:
 

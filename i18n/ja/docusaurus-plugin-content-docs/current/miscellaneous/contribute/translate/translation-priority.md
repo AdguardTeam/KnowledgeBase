@@ -9,26 +9,26 @@ Crowdinには、[AdGuard Applications](https://crowdin.com/project/adguard-appli
 
 ただ、いくつか触れておきたいことがあります:
 
-* Crowdinで翻訳が完了した言語のみが、AdGuardアプリのUIで表示されます。
-* 製品自体の翻訳がなければ説明文等は不要になるので、アプリストアの説明文などの翻訳は後回しにしたほうがお勧めです。
+- Crowdinで翻訳が完了した言語のみが、AdGuardアプリのUIで表示されます。
+- 製品自体の翻訳がなければ説明文等は不要になるので、アプリストアの説明文などの翻訳は後回しにしたほうがお勧めです。
 
 ただし、*AdGuard Websites*プロジェクトの場合は異なります。 翻訳が100％完了していなくても、言語をサイトに追加することは可能です。 これはどのファイルがすでに翻訳されているかによります。 そのため、最も重要なファイルから順に翻訳されることをお勧めします（以下に記載）:
 
 [AdGuard Ad Blocker website](https://crowdin.com/project/adguard-websites/en#/adguard.com)
 
-* `critical.resx`
-* `auth.resx`
-* `welcome.resx`
+- `critical.resx`
+- `auth.resx`
+- `welcome.resx`
 
 [AdGuard VPN website](https://crowdin.com/project/adguard-websites/en#/adguard-vpn.com)
 
-* `critical.resx`
-* `auth.resx`
+- `critical.resx`
+- `auth.resx`
 
 [AdGuard DNS website](https://crowdin.com/project/adguard-websites/en#/adguard-dns.com)
 
-* `critical.resx`
-* `auth.resx`
+- `critical.resx`
+- `auth.resx`
 
 Adding new strings as well as updating existing ones in these files requires special attention from the project translators and proofreaders.
 

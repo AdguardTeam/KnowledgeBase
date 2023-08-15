@@ -181,17 +181,17 @@ AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to
 
 Aqui você pode selecionar a maneira como o AdGuard responderá aos domínios bloqueados por regras de DNS com base na [sintaxe da regra de hosts](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
 
-* Resposta com o erro “Recusado”
-* Resposta com o erro “NxDomain”
-* Resposta com um endereço IP personalizado
+- Resposta com o erro “Recusado”
+- Resposta com o erro “NxDomain”
+- Resposta com um endereço IP personalizado
 
 ### Modo de bloqueio para regras de estilo adblock
 
 Aqui você pode selecionar a maneira como o AdGuard responderá aos domínios bloqueados pelas regras de DNS com base na [ sintaxe estilo adblock](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax).
 
-* Resposta com o erro “Recusado”
-* Resposta com o erro “NxDomain”
-* Resposta com um endereço IP personalizado
+- Resposta com o erro “Recusado”
+- Resposta com o erro “NxDomain”
+- Resposta com um endereço IP personalizado
 
 ### Endereço IPv4 personalizado
 
@@ -205,9 +205,9 @@ Se o endereço IP personalizado for selecionado no modo de bloqueio para regras 
 
 Aqui você pode especificar um servidor DNS alternativo para o qual uma solicitação DNS será reencaminhada se o servidor principal não responder dentro do período de tempo limite especificado na próxima seção. Você pode escolher entre três opções:
 
-* Não usar servidores fallback;
-* Usar servidores padrões do sistema;
-* Usar servidores personalizados.
+- Não usar servidores fallback;
+- Usar servidores padrões do sistema;
+- Usar servidores personalizados.
 
 ### Bloquear ECH
 

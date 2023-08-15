@@ -23,7 +23,6 @@ K této chybě dochází, pokud je něco v nepořádku s oprávněními. Může 
 
 ### Chyba 112: Disk je plný, Chyba 1632: Dočasná složka je plná nebo nedostupná {#error-112}
 
-
 Jedná se o dvě různé chyby s velmi podobným řešením. Jak napovídá jejich název, instalační program AdGuardu nenašel dostatek místa na disku pro dokončení instalace. Problém můžete vyřešit několika způsoby:
 
 - Odinstalujte některé programy nebo odstraňte nepotřebné soubory z jednotky, na kterou jste chtěli nainstalovat AdGuard.

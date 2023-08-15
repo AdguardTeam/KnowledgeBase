@@ -107,17 +107,17 @@ sidebar_position: 9
 
 Здесь вы можете указать тип ответа DNS-сервера на заблокированные запросы, соответствующие правилам в стиле блокировщика рекламы.
 
-* 0 — отвечать REFUSED
-* 1 — отвечать NXDOMAIN
-* 2 — отвечать 0.0.0.0 или адресами, указанными в `dns.proxy.blocking.response.IPv4.address` и/или `dns.proxy.blocking.response.IPv6.address`
+- 0 — отвечать REFUSED
+- 1 — отвечать NXDOMAIN
+- 2 — отвечать 0.0.0.0 или адресами, указанными в `dns.proxy.blocking.response.IPv4.address` и/или `dns.proxy.blocking.response.IPv6.address`
 
 `dns.proxy.hostrules.blocking.mode`
 
 Здесь вы можете указать тип ответа DNS-сервера на заблокированные запросы, соответствующие правилам hosts:
 
-* 0 — отвечать REFUSED
-* 1 — отвечать NXDOMAIN
-* 2 — отвечать 0.0.0.0 или адресами, указанными в `dns.proxy.blocking.response.IPv4.address` и/или `dns.proxy.blocking.response.IPv6.address`
+- 0 — отвечать REFUSED
+- 1 — отвечать NXDOMAIN
+- 2 — отвечать 0.0.0.0 или адресами, указанными в `dns.proxy.blocking.response.IPv4.address` и/или `dns.proxy.blocking.response.IPv6.address`
 
 `dns.proxy.blocking.response.IPv4.address`
 

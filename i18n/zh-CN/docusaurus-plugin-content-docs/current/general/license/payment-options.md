@@ -20,5 +20,6 @@ To make more use of your AdGuard products, you can upgrade your license for the 
 3. 用户也可以**将[许可证](../what-is)升级为终生许可**。
 
 You can upgrade your license by:
-  * 在 [AdGuard 官网](https://adguard.com)上购买另一个许可证
-  * 点击 AdGuard 账号上的「*升级到终生许可*」和/或「*增加设备数量*」： ![升级 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)
+
+- 在 [AdGuard 官网](https://adguard.com)上购买另一个许可证
+- 点击 AdGuard 账号上的「*升级到终生许可*」和/或「*增加设备数量*」： ![升级 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)
