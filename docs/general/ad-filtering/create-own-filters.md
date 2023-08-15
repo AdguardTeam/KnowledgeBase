@@ -960,7 +960,7 @@ Disables all generic [cosmetic rules](#cosmetic-rules) on pages that correspond 
 
 - `@@||example.com^$generichide` disables generic cosmetic rules on any pages at `example.com` and its subdomains.
 
-#### **`specifichide`** {#specifichide-modifier}
+#### **`$specifichide`** {#specifichide-modifier}
 
 Disables all specific element hiding and CSS rules, but not general ones. Has an opposite effect to [`$generichide`](#generichide-modifier).
 
