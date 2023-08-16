@@ -636,7 +636,7 @@ the type will be determined using the `Content-Type` header at the beginning of 
 | [$stylesheet](#stylesheet-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$subdocument](#subdocument-modifier) | ✅ * | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [$websocket](#websocket-modifier) | ✅ | ✅ | ✅ | ✅ * | ✅ * | ✅ |
-| [$xmlhttprequest](#xmlhttprequest-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ? |
+| [$xmlhttprequest](#xmlhttprequest-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$webrtc 🚫](#webrtc-modifier "removed") | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$object-subrequest 🚫](#object-subrequest-modifier "removed") | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 
@@ -646,7 +646,6 @@ the type will be determined using the `Content-Type` header at the beginning of 
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
 - ❌ — not supported
 - 🚫 — removed and no longer supported
-- ? — FIXME: needs to be checked
 
 :::
 
@@ -4003,7 +4002,6 @@ If you need an advice on how to create your own filters properly, our forum has 
 - ❌ — not supported
 - 👎 — deprecated; still supported but will be removed in the future
 - 🚫 — removed and no longer supported
-- ? — FIXME: needs to be checked
 
 :::
 
