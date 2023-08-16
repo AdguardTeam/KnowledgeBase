@@ -204,9 +204,9 @@ AdGuard Safari and AdGuard for iOS do not fully support regular expressions beca
 
 :::
 
-### Ignoring rules {#rules-ignore}
+### Restrictions on rules application {#rules-restrictions}
 
-Rules that match an arbitrarily large number of URLs are considered incorrect and will be ignored. This can happen when the rule doesn't contain a mask, or when the mask matches any URL with a certain protocol.  
+Rules that match an arbitrarily large number of URLs are considered incorrect and will be ignored. This can happen if the rule doesn't contain a mask, or if the mask matches any URL with a certain protocol.  
 
 This rule will be ignored:
 
@@ -224,38 +224,38 @@ This rule will not be ignored:
 
 **Exceptions**
 
-This rule validation is not applied in following cases:
+This rule validation is not applied in the following cases:
 
-- The rule contains [`$domain`](#domain-modifier) modifier that points to a specific domain list.
+1. The rule contains [`$domain`](#domain-modifier) modifier that points to a specific domain list.
 
-These rules will not be ignored:
+   These rules will not be ignored:
 
-```text
-$domain=example.com,script
-$domain=example.*,script
-```
+   ```text
+   $domain=example.com,script
+   $domain=example.*,script
+   ```
 
-This rule will be ignored:
+   This rule will be ignored:
 
-```text
-$domain=~example.com,script
-```
+   ```text
+   $domain=~example.com,script
+   ```
 
-- The rule contains [`$app`](#app-modifier) modifier that points to a specific app list.
+2. The rule contains [`$app`](#app-modifier) modifier that points to a specific app list.
 
-These rule will not be ignored:
+   These rule will not be ignored:
 
-```text
-$app=curl,document
-```
+   ```text
+   $app=curl,document
+   ```
 
-This rule will be ignored:
+   This rule will be ignored:
 
-```text
-$domain=~curl,document
-```
+   ```text
+   $domain=~curl,document
+   ```
 
-- The rule contains one or more modificators from among [`$cookie`](#cookie-modifier), [`$removeparam`](#removeparam-modifier), [`$removeheader`](#removeheader-modifier), [`$stealth`](#stealth-modifier).
+3. The rule contains one or more modificators from among [`$cookie`](#cookie-modifier), [`$removeparam`](#removeparam-modifier), [`$removeheader`](#removeheader-modifier), [`$stealth`](#stealth-modifier).
 
 ### Wildcard support for TLD (top-level domains) {#wildcard-for-tld}
 
