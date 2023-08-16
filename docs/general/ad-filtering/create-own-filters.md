@@ -262,7 +262,7 @@ Basically, they just limit the scope of rule application.
 | [$domain](#domain-modifier) | ✅ | ✅ | ✅ | ✅ [*](#domain-modifier-limitations) | ✅ [*](#domain-modifier-limitations) | ✅ |
 | [$header](#header-modifier) | ✅ | ⏳ | ⏳ | ❌ | ❌ | ❌ |
 | [$important](#important-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
-| [$match-case](#match-case-modifier) | ✅ | ✅ | ✅ | ? | ? | ✅ |
+| [$match-case](#match-case-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ |
 | [$method](#method-modifier) | ⏳ | ✅ | ✅ | ❌ | ❌ | ❌ |
 | [$popup](#popup-modifier) | ✅ * | ✅ | ✅ | ✅ * | ✅ * | ❌ |
 | [$third-party](#third-party-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -275,7 +275,6 @@ Basically, they just limit the scope of rule application.
 <!-- - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions -->
 - ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product
 - ❌ — not supported
-- ? — FIXME: needs to be checked
 
 :::
 
@@ -503,6 +502,12 @@ This modifier defines a rule which applies only to addresses that match the case
 **Examples**
 
 - `*/BannerAd.gif$match-case` — this rule will block `http://example.com/BannerAd.gif`, but not `http://example.com/bannerad.gif`.
+
+:::info Compatibility
+
+Rules with `$match-case` modifier currently are not supported by [AdGuard for iOS and Safari](https://github.com/AdguardTeam/SafariConverterLib/issues/55).
+
+:::
 
 #### **`$method`** {#method-modifier}
 
