@@ -255,7 +255,7 @@ Basically, they just limit the scope of rule application.
 
 <!-- Please keep them sorted -->
 
-| Modifier \ Products | [CL apps][cl-apps] | [ExtChr][ext-chr] | [ExtFf][ext-ff] | [iOS app][ios-app] | [Safari][ext-saf] | [CB][and-cb] |
+| Modifier \ Products | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Firefox][ext-ff] | [AdGuard for iOS][ios-app] | [AdGuard for Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
 | [$app](#app-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$denyallow](#denyallow-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
@@ -618,7 +618,7 @@ the type will be determined using the `Content-Type` header at the beginning of 
 
 <!-- Please keep them sorted -->
 
-| Modifier \ Products | [CL apps][cl-apps] | [ExtChr][ext-chr] | [ExtFf][ext-ff] | [iOS app][ios-app] | [Safari][ext-saf] | [CB][and-cb] |
+| Modifier \ Products | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Firefox][ext-ff] | [AdGuard for iOS][ios-app] | [AdGuard for Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
 | [$document](#document-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [$font](#font-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -777,7 +777,7 @@ We recommend to get acquainted with [this article](https://adblockplus.org/filte
 
 <!-- Please keep them sorted -->
 
-| Modifier \ Products | [CL apps][cl-apps] | [ExtChr][ext-chr] | [ExtFf][ext-ff] | [iOS app][ios-app] | [Safari][ext-saf] | [CB][and-cb] |
+| Modifier \ Products | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Firefox][ext-ff] | [AdGuard for iOS][ios-app] | [AdGuard for Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
 | [$content](#content-modifier) | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ |
 | [$elemhide](#elemhide-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -1008,7 +1008,7 @@ These modifiers are able to completely change the behavior of basic rules.
 
 <!-- Please keep them sorted -->
 
-| Modifier \ Products | [CL apps][cl-apps] | [ExtChr][ext-chr] | [ExtFf][ext-ff] | [iOS app][ios-app] | [Safari][ext-saf] | [CB][and-cb] |
+| Modifier \ Products | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Firefox][ext-ff] | [AdGuard for iOS][ios-app] | [AdGuard for Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
 | [$all](#all-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
 | [$badfilter](#badfilter-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
@@ -2353,7 +2353,7 @@ However, basic rules may not be enough to block ads.
 Sometimes you need to hide an element or change part of the HTML code of a web page without breaking anything.
 The rules described in this section are created specifically for this purpose.
 
-| Categories \ Products | [CL apps][cl-apps] | [ExtChr][ext-chr] | [ExtFf][ext-ff] | [iOS app][ios-app] | [Safari][ext-saf] | [CB][and-cb] |
+| Categories \ Products | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Firefox][ext-ff] | [AdGuard for iOS][ios-app] | [AdGuard for Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
 | [Element hiding](#cosmetic-elemhide-rules) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [CSS rules](#cosmetic-css-rules) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
@@ -3482,7 +3482,7 @@ In the modifiers values of the following characters must be escaped: `[`, `]`, `
 it is used for the escaping). Use `\` to escape them. For example, an escaped bracket looks like
 this: `\]`.
 
-| Modifier \ Products | [CL apps][cl-apps] | [ExtChr][ext-chr] | [ExtFf][ext-ff] | [iOS app][ios-app] | [Safari][ext-saf] | [CB][and-cb] |
+| Modifier \ Products | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Firefox][ext-ff] | [AdGuard for iOS][ios-app] | [AdGuard for Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
 | [$app](#non-basic-app-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$domain](#non-basic-domain-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
@@ -3980,14 +3980,14 @@ If you need an advice on how to create your own filters properly, our forum has 
 
 ### Product shortcuts {#what-product}
 
-1. `CL apps` — AdGuard for Windows, Mac, Android — CoreLibs-based apps
-1. `ExtChr` — AdGuard Browser Extension for Chrome and other Chromium-based browsers, e.g. new Microsoft Edge, Opera
-1. `ExtFf` — AdGuard Browser Extension for Firefox
-1. `iOS app` — AdGuard for iOS (for mobile Safari browser)
-1. `Safari` — AdGuard for Safari (for desktop Safari browser)
-1. `CB` — AdGuard Content Blocker (for mobile Samsung and Yandex browsers)
+1. `CoreLibs apps` — AdGuard for Windows, Mac, Android
+1. `AdGuard for Chromium` — AdGuard Browser Extension for Chrome and other Chromium-based browsers, e.g. new Microsoft Edge, Opera
+1. `AdGuard for Firefox` — AdGuard Browser Extension for Firefox
+1. `AdGuard for iOS` — AdGuard for iOS and AdGuard for iOS Pro (for mobile Safari browser)
+1. `AdGuard for Safari` — AdGuard for Safari (for desktop Safari browser)
+1. `AdGuard Content Blocker` — Content Blocker for Android mobile browsers: Samsung Internet and Yandex.Browser
 
-### Compatibility shortcuts {#what-compat}
+### Compatibility shortcuts {#what-compatibility}
 
 :::note
 
@@ -4003,10 +4003,10 @@ If you need an advice on how to create your own filters properly, our forum has 
 :::
 
 [cl-apps]: #what-product "AdGuard for Windows, Mac, Android"
-[ext-chr]: #what-product "AdGuard Browser Extension for Chromium-based browsers"
+[ext-chr]: #what-product "AdGuard Browser Extension for Chrome and other Chromium-based browsers"
 [ext-ff]: #what-product "AdGuard Browser Extension for Firefox"
-[ios-app]: #what-product "AdGuard for iOS"
+[ios-app]: #what-product "AdGuard for iOS and AdGuard for iOS Pro"
 [ext-saf]: #what-product "AdGuard for Safari"
-[and-cb]: #what-product "AdGuard Content Blocker"
+[and-cb]: #what-product "AdGuard Content Blocker for Samsung Internet and Yandex.Browser on Android"
 
 [sec-fetch-dest-header]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest
