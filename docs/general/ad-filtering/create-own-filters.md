@@ -530,6 +530,12 @@ AdGuard will try to close the browser tab with any address that matches a blocki
 
 #### **`$third-party`** {#third-party-modifier}
 
+:::note
+
+The `$3p` alias is also used.
+
+:::
+
 A restriction of third-party and own requests. A third-party request is a request from a different domain. For example, a request to `example.org` from `domain.com` is a third-party request.
 
 :::note
@@ -612,6 +618,12 @@ There is a big difference in how AdGuard determines the content type on differen
 
 #### **`$document`** {#document-modifier}
 
+:::note
+
+The `$doc` alias is also used.
+
+:::
+
 The rule corresponds to the main frame document requests, i.e. HTML documents that are loaded in the browser tab. It does not match iframes, there is a [`$subdocument` modifier](#subdocument-modifier) for these.
 
 By default, AdGuard does not block the requests that are loaded in the browser tab (e.g. "main frame bypass"). The idea is not to prevent pages from loading as the user clearly indicated that they want this page to be loaded. However, if the `$document` modifier is specified explicitly, AdGuard does not use that logic and prevents the page load. Instead, it responds with a "blocking page".
@@ -663,9 +675,21 @@ The rule corresponds to script requests, e.g. javascript, vbscript.
 
 #### **`$stylesheet`** {#stylesheet-modifier}
 
+:::note
+
+The `$css` alias is also used.
+
+:::
+
 The rule corresponds to CSS files requests.
 
 #### **`$subdocument`** {#subdocument-modifier}
+
+:::note
+
+The `$frame` alias is also used.
+
+:::
 
 The rule corresponds to requests for built-in pages — HTML tags `frame` and `iframe`.
 
@@ -685,6 +709,12 @@ The rule applies only to WebSocket connections.
 :::
 
 #### **`$xmlhttprequest`** {#xmlhttprequest-modifier}
+
+:::note
+
+The `$xhr` alias is also used.
+
+:::
 
 The rule applies only to ajax requests (requests sent via javascript object `XMLHttpRequest`).
 
@@ -749,6 +779,12 @@ Disables [HTML filtering](#html-filtering-rules), [`$hls`](#hls-modifier), [`$re
 - `@@||example.com^$content` disables all content modifying rules on pages at `example.com` and all its subdomains.
 
 #### **`$elemhide`** {#elemhide-modifier}
+
+:::note
+
+The `$ehide` alias is also used.
+
+:::
 
 Disables any [cosmetic rules](#cosmetic-rules) on the pages matching the rule.
 
@@ -901,6 +937,12 @@ Disables generic basic rules on pages that correspond to exception rule.
 
 #### **`$generichide`** {#generichide-modifier}
 
+:::note
+
+The `$ghide` alias is also used.
+
+:::
+
 Disables all generic [cosmetic rules](#cosmetic-rules) on pages that correspond to the exception rule.
 
 **Examples**
@@ -908,6 +950,12 @@ Disables all generic [cosmetic rules](#cosmetic-rules) on pages that correspond 
 - `@@||example.com^$generichide` disables generic cosmetic rules on any pages at `example.com` and its subdomains.
 
 #### **`specifichide`** {#specifichide-modifier}
+
+:::note
+
+The `$shide` alias is also used.
+
+:::
 
 Disables all specific element hiding and CSS rules, but not general ones. Has an opposite effect to [`$generichide`](#generichide-modifier).
 
