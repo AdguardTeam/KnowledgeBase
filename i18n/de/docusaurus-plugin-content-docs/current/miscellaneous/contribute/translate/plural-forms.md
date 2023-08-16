@@ -145,12 +145,12 @@ Während die ersten drei Arten solcher Strings mehr oder weniger leicht durchzuf
 
 Und noch einmal: Wenn Sie auf einen Originalsatz mit zwei wichtigen Elementen stoßen: **das vertikale Balkenzeichen** und **%count%**-Platzhalter, gehen Sie bitte wie folgt vor:
 
-+ Beziehen Sie sich auf die Pluralregel einer Sprache, in die Sie übersetzen;
+- Beziehen Sie sich auf die Pluralregel einer Sprache, in die Sie übersetzen;
 
 The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms — two templates in translations; five plural forms — five templates, etc.
 
-+ Vergessen Sie nicht, ein vertikales Balkenzeichen zwischen Vorlagen zu verwenden, wie es in Originalphrasen dargestellt wird;
+- Vergessen Sie nicht, ein vertikales Balkenzeichen zwischen Vorlagen zu verwenden, wie es in Originalphrasen dargestellt wird;
 
-+ Die **%count%**-Platzhalter dürfen nicht übersetzt, ausgefüllt oder gelöscht werden.
+- Die **%count%**-Platzhalter dürfen nicht übersetzt, ausgefüllt oder gelöscht werden.
 
 By following these simple rules you will help AdGuard developers avoid a lot of unnecessary complications during the localization process.

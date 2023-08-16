@@ -11,11 +11,11 @@ sidebar_position: 2
 
 ## Как установить расширение AdGuard для браузеров Google Chrome или Chromium
 
-Откройте страницу расширения в [интернет-магазине Chrome](https://agrd.io/extension_chrome) и нажмите _Добавить в Chrome_.
+Open the extension's page in [Chrome Web Store](https://agrd.io/extension_chrome) and click *Add to Chrome*.
 
 ![Браузерное расширение AdGuard в интернет-магазине Chrome *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_chrome.png)
 
-В открывшемся диалоговом окне нажмите _Добавить расширение_.
+In the opened dialog box, click *Add extension*.
 
 ![Диалоговое окно в интернет-магазине Chrome *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_chrome1.png)
 
@@ -25,7 +25,7 @@ sidebar_position: 2
 
 ![Браузерное расширение AdGuard в дополнениях Opera *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_opera.png)
 
-Нажмите _Добавить в Opera_.
+Click *Add to Opera*.
 
 ## Как установить Браузерное расширение AdGuard VPN для Firefox
 
@@ -33,23 +33,23 @@ sidebar_position: 2
 
 ![Браузерное расширение AdGuard в дополнениях Firefox *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_firefox.png)
 
-Нажмите _Добавить в Firefox_.
+Click *Add to Firefox*.
 
 ## Как установить Браузерное расширение AdGuard VPN для Яндекс Браузера
 
-Нажмите кнопку настроек браузера в правом верхнем углу браузера, затем в выпадающем меню выберите _Дополнения_.
+Click the browser settings button in the upper right corner of the browser, then choose *Add-ons* in the drop-down menu.
 
-Прокрутите вниз, чтобы найти AdGuard, затем нажмите _Установить_.
+Scroll down to find AdGuard, then click *Install*.
 
 ![Браузерное расширение AdGuard в дополнениях Yandex *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_yandex.png)
 
 ## Как установить Браузерное расширение AdGuard VPN для Microsoft Edge
 
-Найдите Браузерное расширение AdGuard [в магазине надстроек Edge](https://agrd.io/extension_edge) и нажмите _Получить_.
+Find AdGuard Browser Extension in the [Edge Add-ons store](https://agrd.io/extension_edge) and click *Get*.
 
 ![Браузерное расширение AdGuard в дополнениях Edge *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_edge.png)
 
-В открывшемся диалоговом окне нажмите _Добавить расширение_.
+In the opened dialog window, press *Add extension*.
 
 ![Диалоговое окно Edge *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_edge1.png)
 
@@ -68,7 +68,6 @@ sidebar_position: 2
 В открывшемся диалоговом окне нажмите *Добавить расширение*, чтобы установить браузерное расширение AdGuard.
 
 ![Кнопка «Добавить в Edge»](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/add_to_edge.jpg)
-
 
 ## Как установить Браузерное расширение AdGuard VPN для Safari
 

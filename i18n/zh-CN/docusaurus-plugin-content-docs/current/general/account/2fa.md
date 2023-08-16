@@ -9,28 +9,28 @@ sidebar_position: 3
 
 我们推荐用户在 AdGuard 账号设置两步验证。 该操作不需要消耗多少时间，但可以增强用户的许可密钥和订阅保护，更重要的是，账号里个人信息的保护。
 
-
 ## 如何设置 2FA
 
-1) 登录 [AdGuard 账号](https://auth.adguard.com/login.html)并转到「设置」选项卡：
+1. Log into your [AdGuard account](https://auth.adguard.com/login.html) and go to the Settings tab:
 
-![AdGuard 账号设置 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/account_settings_cn.png)
+![AdGuard Account settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/account_settings.png)
 
-2) 向下滚动到「*密码和两步验证*」并单击「**启用**」：
+1. Scroll down to *Password and 2FA* section and click **Enable**:
 
-![更改按钮 *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_new_cn.png)
+![The Change button *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_new.png)
 
-3) 按照屏幕上的指示，安装一个认证器应用程序，并扫描QR码：
+1. Follow the on-screen instructions to install an authenticator app and scan the QR code:
 
-![验证码](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_enable_cn.png)
+![The verification code](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_enable.png)
 
-***重要信息***
-* 请您保存第二个备用密码。该密码是在您的手机丢失或被偷窃的情况下用于恢复您的帐号的必要信息。
+***Important***
 
-如果每个步骤都完成，下次登录个人帐号时，您将看到：
+- 请您保存第二个备用密码。该密码是在您的手机丢失或被偷窃的情况下用于恢复您的帐号的必要信息。
 
-![结果 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_success_cn.png)
+If everything is done right, you will see this when you log into your account the next time:
 
-使用手机的认证软件扫码并输入验证码。 登录成功了！
+![The result *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_success.png)
 
-***请注意***：如您看到验证错误通知，请您查看手机上的时间设置。 如需要的话，请您更改时间设置。错误的时钟会成为验证错误的原因。
+Use your mobile authenticator app to read the code and enter it. You should be logged in now!
+
+***NOTE***: If you get an authentication error, check the clock on your phone. Adjust it if needed, as an unsynchronized clock may be the cause of the error.

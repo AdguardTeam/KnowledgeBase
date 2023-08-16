@@ -25,42 +25,42 @@ Im Internet finden Sie viele Anwendungen, die auf dieses Problem abzielen. Sie k
 
 Nehmen wir als Beispiel AdwareCleaner. Nachdem die Anwendung heruntergeladen und erfolgreich installiert wurde, führen Sie die folgenden Schritte aus:
 
-1) Starten Sie die Anwendung und klicken Sie auf **Scan now**.
+1. Start the application and click **Scan now**.
 
 ![adware1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware1.png)
 
-2) Sobald der Scan abgeschlossen ist, müssen Sie verdächtige Objekte an **Quarantine** senden.
+1. Once the scan has been completed, you will need to send suspicious objects to **Quarantine**.
 
 ![adware2 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware2.png)
 
-3) Wenn die Elemente in **Quarantine** verschoben wurden, können Sie das System von unnötigem Ballast befreien, indem Sie **Clear the system** wählen.
+1. When the items are moved to **Quarantine**, you will be able to **Clear the system** of unnecessary ballast.
 
-4) In einigen Fällen müssen Sie möglicherweise das System neu starten (**Reboot system**), nachdem die Reinigung abgeschlossen ist.
+1. In some cases, you may need to **Reboot the system** after cleaning is complete.
 
 ![adware3 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware3.png)
 
-5) Nach dem Neustart des Systems ist die Reinigung abgeschlossen. Bei Bedarf können Sie jederzeit den **Report** über die geleistete Arbeit lesen.
+1. Once the system has been rebooted, cleaning will be completed. If necessary, you can always read the **Report** on the work done.
 
 ![adware4 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware4.png)
 
-Wenn das nicht geholfen hat, deaktivieren Sie vorübergehend alle Erweiterungen und einige andere Einstellungen im Browser gemäß [diese Anweisungen](#instructions).
+If it didn’t help, temporary disable all extensions and some other settings in the browser according to [these instructions](#instructions).
 
-Wenn das Deaktivieren von Einstellungen und Erweiterungen nicht hilft, versuchen Sie, [Verknüpfungen Ihres Browsers neu zu erstellen](#shortcuts).
+If disabling of settings and extensions does not help, try to [recreate shortcuts of your browsers](#shortcuts).
 
-Weiter unten auf dieser Seite beschreiben wir die Anweisungen zum Entfernen einiger der am häufigsten vorkommenden Anzeigenerweiterungen.
+Further on this page we describe the instructions on how to remove some of the most commonly encountered ad extensions.
 
 ## Wie man Einstellungen und Erweiterungen im Browser deaktiviert {#instructions}
 
-Nachfolgend finden Sie Anweisungen zum Deaktivieren von Einstellungen und Erweiterungen für die gängigsten Browser:
+Below are the instructions on how to disable settings and extensions for the most popular browsers:
 
-* [für Google Chrome](https://support.google.com/chrome/answer/187443?hl=en)
+- [für Google Chrome](https://support.google.com/chrome/answer/187443?hl=en)
 
-* [für Mozilla Firefox](https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons)
+- [für Mozilla Firefox](https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons)
 
-* [für Opera](https://help.opera.com/en/latest/customization/#extensions)
+- [für Opera](https://help.opera.com/en/latest/customization/#extensions)
 
 ## Wie man Verknüpfungen für Ihre Browser neu erstellt {#shortcuts}
 
-Sehr oft installieren Malware- und Adware-Programme ihre Homepage auf sehr einfache Weise — sie ersetzen die Desktop-Verknüpfung Ihres Browsers, die Taskleiste und die *Start*-Menüpunkte.
+Very often, malware and adware programs install their homepage in a very simple way — they substitute your browser's desktop shortcut, taskbar and *Start* menu items.
 
-Die einfachste Lösung in diesem Fall ist, alle Verknüpfungen manuell zu löschen und selbst neu zu erstellen.
+The simplest solution in this case is to manually delete all the shortcuts and recreate them by yourself.

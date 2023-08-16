@@ -15,63 +15,62 @@ sidebar_position: 14
 
 Но на рутированных устройствах можно установить сертификат в **системное хранилище** и разрешить HTTPS-фильтрацию трафика других приложений.
 
-
 Вот как это сделать.
 
 ## Как установить сертификат AdGuard в системное хранилище на рутированном устройстве
 
-1. Включите HTTPS-фильтрацию в AdGuard для Android и сохраните сертификат AdGuard в пользовательское хранилище (при необходимости используйте [эту инструкцию](../../overview#https-filtering))
+1. Enable HTTPS filtering in AdGuard for Android and save AdGuard's certificate to the User store (use [this instruction](../../overview#https-filtering) if needed)
 
-> Начиная AdGuard для Android версии 4.1, пользователи могут установить два сертификата, которые помогут фильтровать сайты в браузере Chrome.
+     From AdGuard for Android v4.1 and after users can install two certificates to the User store, which will help to filter websites in Chrome browser.
 
-2. Перейдите в **Приложение AdGuard** → **Меню** (≡) → **Настройки** → **Сеть** → **HTTPS-фильтрация** → **Сертификат безопасности** → нажмите «**Скопировать в системный магазин**»
+1. Go to **AdGuard app** → **Menu** (≡) → **Settings** → **Network** → **HTTPS filtering** → **Security certificate** → tap “**Copy to the system store**”
 
-Этого достаточно для старых версий Magisk.
+    That is enough for older versions of Magisk.
 
-Но если у вас более новая версия, вы получите следующее сообщение:
+    However, if you have a newer version, you will get this message:
 
-> Не удалось скопировать сертификат в системное хранилище. Попробуйте использовать модуль «Сертификат AdGuard».
+    > Unable to copy the certificate to the system store. Try using “AdGuard Certificate” module.
 
-В этом случае перейдите к шагам ниже:
+    In that case, proceed to steps below:
 
-3. Перейдите в **Magisk** → **Настройки**
+1. Go to **Magisk** → **Settings**
 
-![Откройте настройки Magisk *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-1.png)
+    ![Open Magisk settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-1.png)
 
-4. Включите **Zygisk**
+1. Enable **Zygisk**
 
-![Включите Zygisk *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-2.png)
+    ![Enable Zygisk *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-2.png)
 
-![Вернитесь на главный экран Magisk *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-3.png)
+    ![Go back to Magisk main screen *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-3.png)
 
-5. Скачайте `.zip` файл (модуля «Сертификат AdGuard») из [последней версии на GitHub](https://github.com/AdguardTeam/adguardcert/releases/latest/)
+1. Download the `.zip` file (of “AdGuard Certificate” module) from the [latest release on GitHub](https://github.com/AdguardTeam/adguardcert/releases/latest/)
 
-6. Перейдите в **Magisk** → **Модули** → **Установить из хранилища** и выберите загруженный файл `.zip`
+1. Go to **Magisk** → **Modules** → **Install from storage** and select the downloaded `.zip` file
 
-![Откройте модули Magisk *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-4.png)
+    ![Open Magisk modules *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-4.png)
 
-![Установка из хранилища *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-5.png)
+    ![Install from storage *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-5.png)
 
-![Выберите модуль сертификата AdGuard *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-6.png)
+    ![Select AdGuard certificate module *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-6.png)
 
-7. Перезагрузка
+1. Reboot
 
-![Перезагрузка устройства *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-7.png)
+    ![Reboot the device *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-7.png)
 
-Если вышла новая версия модуля «Сертификат AdGuard», повторите шаги 3–7, чтобы обновить модуль.
+If a new version of "AdGuard certificate" module comes out, repeat steps 3-7 to update the module.
 
-Модуль выполняет свою работу во время загрузки системы. Если ваш сертификат AdGuard изменится, вам придётся перезагрузить устройство, чтобы новый сертификат был скопирован в системное хранилище.
+The module does its work during the system boot. If your AdGuard certificate changes, you'll have to reboot the device for the new certificate to be copied to the system store.
 
 ### Браузер Bromite
 
 :::note
 
-Для правильной работы браузера **Bromite**, в дополнение к шагам выше, вам необходимо включить опцию «Разрешить пользовательские сертификаты» в `chrome://flags`.
+In order for the **Bromite** browser to work properly, in addition to the steps mentioned above, you need to set "Allow user certificates" in `chrome://flags` to "Enabled" state.
 
 :::
 
 ### Chrome и браузеры на базе Chromium
 
-У вас не будет проблем с HTTPS-фильтрацией в Chrome и браузерах на базе Chromium на рутированных устройствах, если вы используете модуль «Сертификат AdGuard».
+Long story short, you will have no problems with HTTPS filtering in Chrome and Chromium-based browsers on rooted devices, if you use "AdGuard Certificate" module.
 
-Вот более подробное объяснение: Chrome (а впоследствии и многие другие браузеры на основе Chromium) недавно начал требовать журналы прозрачности (Certificate Transparency logs) для сертификатов ЦС, найденных в **системном хранилище**. Модуль «Сертификат AdGuard» копирует ЦС-сертификат AdGuard из **пользовательского хранилища** в **системное хранилище**. Он также содержит модуль Zygisk, который отменяет любые изменения, сделанные Magisk для [определённых браузеров](https://github.com/AdguardTeam/adguardcert/blob/master/zygisk_module/jni/browsers.inc). Таким образом, браузеры находят только сертификат AdGuard в пользовательском хранилище и не жалуются на отсутствие журнала прозрачности, в то время как другие приложения продолжают использовать тот же сертификат из системного хранилища.
+Here is a bit more detailed explanation: Chrome (and subsequently many other Chromium-based browsers) has recently started requiring CT logs for CA certs found in the **System store**. "AdGuard Certificate" module copies AdGuard's CA certificate from the **User store** to the **System store**. It also contains a Zygisk module that reverts any modifications done by Magisk for [certain browsers](https://github.com/AdguardTeam/adguardcert/blob/master/zygisk_module/jni/browsers.inc). This way the browsers only find AdGuard’s certificate in the User store and don’t complain about the missing CT log, while other apps continue to use the same certificate from the System store.

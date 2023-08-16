@@ -107,17 +107,17 @@ Zde můžete uvést seznam domén, pro které bude použit záložní DNS server
 
 Zde můžete zadat typ odezvy DNS serveru na blokované požadavky odpovídající pravidlům typu ad-blocker.
 
-* 0 — odezva s REFUSED
-* 1 — odezva s NXDOMAIN
-* 2 — odezva s 0.0.0.0 nebo adresou uvedenou v `dns.proxy.blocking.response.IPv4.address` a/nebo `dns.proxy.blocking.response.IPv6.address`
+- 0 — odezva s REFUSED
+- 1 — odezva s NXDOMAIN
+- 2 — odezva s 0.0.0.0 nebo adresou uvedenou v `dns.proxy.blocking.response.IPv4.address` a/nebo `dns.proxy.blocking.response.IPv6.address`
 
 `dns.proxy.hostrules.blocking.mode`
 
 Zde můžete zadat typ odezvy DNS serveru na blokované požadavky odpovídající pravidlům typu hosts:
 
-* 0 — odezva s REFUSED
-* 1 — odezva s NXDOMAIN
-* 2 — odezva s 0.0.0.0 nebo adresou uvedenou v `dns.proxy.blocking.response.IPv4.address` a/nebo `dns.proxy.blocking.response.IPv6.address`
+- 0 — odezva s REFUSED
+- 1 — odezva s NXDOMAIN
+- 2 — odezva s 0.0.0.0 nebo adresou uvedenou v `dns.proxy.blocking.response.IPv4.address` a/nebo `dns.proxy.blocking.response.IPv6.address`
 
 `dns.proxy.blocking.response.IPv4.address`
 

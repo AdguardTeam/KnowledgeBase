@@ -27,60 +27,61 @@ You can also change the Crowdin interface language by clicking the *Settings* ic
 
 **Le seguenti linee guida ti aiuteranno durante il processo di traduzione.**
 
-1. Puoi filtrare le traduzioni cliccando questo pulsante e selezionando una qualsiasi delle opzioni offerte.
+1. You can filter translations by clicking this button and selecting any offered option.
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/filter.png)
+    ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/filter.png)
 
-2. Spostati facilmente tra i file del progetto.
+1. Easily move between the files of the project.
 
-![crowdin *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/filter_files.png)
+    ![crowdin *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/filter_files.png)
 
-3. Fa attenzione ai termini del glossario, evidenziati con una linea tratteggiata, nella frase di partenza. Solitamente, sono parole speciali (come i nomi di marchi), che non dovrebbero esser tradotte.
+1. Pay attention to the glossary terms highlighted with a dotted line in a source phrase. Usually, they are special words (like brand names) that should not be translated.
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/terms.png)
+    ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/terms.png)
 
-Puoi suggerire la tua traduzione per i termini traducibili nel progetto [AdGuard Glossary](https://crowdin.com/project/adguard-glossary).
+    You can suggest your translation for translatable terms in the [AdGuard Glossary](https://crowdin.com/project/adguard-glossary) project.
 
-4. Su Crowdin, le stringhe possono contenere note che facilitano la comprensione e traduzione delle frasi. Cercale nel campo "Contesto" della stringa di partenza.
+1. In Crowdin, strings can have notes that make it easier to understand and translate phrases. Look for them in the "Context" field of the source string.
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/context-note.png)
+    ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/context-note.png)
 
-5. Fa attenzione agli screenshot, spesso allegati alle frasi di partenza, anch'essi nel campo "Contesto". Aiutano a comprendere il contesto e a trasmettere il significato esatto.
+1. Pay attention to screenshots that often go alongside source phrases in the "Context" field as well. They help to understand the context and convey the exact meaning.
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/screenshot.png)
+    ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/screenshot.png)
 
-:::tip
+    :::tip
 
-You can request context by clicking the "REQUEST" button.
+    You can request context by clicking the "REQUEST" button.
+
 
 :::
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/request.png)
+    ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/request.png)
 
-6. Oltre a suggerire nuove traduzioni, puoi anche commentare le stringhe. Utilizza i commenti per informarci sugli errori nelle traduzioni esistenti, prendere appunti o fare domande. Se vedi un commento lasciato sulla tua traduzione, prova a rispondere.
+1. In addition to suggesting new translations, you can also leave comments on strings. Use comments to let us know about mistakes in the existing translations, make notes, or ask questions. If you see a comment left on your translation — try to respond to it.
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/comments.png)
+    ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/comments.png)
 
-Inoltre, esiste una scheda **Discussioni** sulla pagina principale del progetto, che ti consente di visualizzare comodamente tutti i commenti per la lingua specifica in questo progetto.
+    There's also a **Discussions** tab on the main project page that conveniently allows you to see all the comments for the specific language in this project.
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/discussions.png)
+    ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/discussions.png)
 
-7. Crowdin fornisce uno strumento molto utile e conveniente, chiamato _Memoria di Traduzione_. Con il suo aiuto, puoi trovare le traduzioni effettuate precedentemente delle stesse parole e frasi, e riutilizzarle nelle tue traduzioni.
+1. Crowdin provides a very useful and convenient tool called *Translation Memory*. With its help, you can find the previously made translations of the same words and phrases and reuse them in your translations.
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/tm.png)
+    ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/tm.png)
 
-8. Una volta aderito al progetto, cliccando il pulsante "Unisciti", vedrai la scheda **Attività** sulla pagina del progetto, dove sono create le attività per i file specifici del progetto. _Sei pregato di prestare loro attenzione: hanno solitamente una priorità maggiore._
+1. Once you join a project by clicking the "Join" button, you will see the **Tasks** tab on the project page, where the tasks for specific project files get created. *Please pay attention to them: they usually have a higher priority.*
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/tasks.png)
+    ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/tasks.png)
 
-9. Talvolta, puoi trovare delle frasi contenenti forme plurali. Sei pregato di prestare particolare attenzione, traducendo tali frasi. Puoi leggere come tradurle, [qui](../plural-forms).
+1. Sometimes you can find phrases with plural forms. Please be especially attentive when translating such phrases. You can read how to translate plural forms [here](../plural-forms).
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/plurals.png)
+    ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/plurals.png)
 
-Utilizzare le forme plurali corrette è estremamente importante: sei pregato di chiederci nei commenti se qualsiasi cosa non è chiara.
+    Using proper plural forms is extremely important:  please ask us in the comments if anything is unclear.
 
-10. **Sei pregato di non scrivere direttamente ai manager e revisori del progetto elencati nelle informazioni del Progetto.**
+1. **Please do not write directly to the project managers and proofreaders listed in the Project info.**
 
-Se hai domande sulle traduzioni, puoi sempre chiederle ai nostri revisori o admin, tramite i commenti.
+    If you have questions about translations, you can always ask our proofreaders or admins through comments.
 
-Inoltre, puoi inviare un'email a [translate@adguard.com](mailto:translate@adguard.com) o fare una domanda sulla [chat di Telegram](https://t.me/joinchat/UVYTLcHbr8JmOGIy). Gli Admin ti risponderanno il prima possibile.
+    Also, you can send an email to [translate@adguard.com](mailto:translate@adguard.com) or ask a question in the [Telegram chat](https://t.me/joinchat/UVYTLcHbr8JmOGIy). The Admins will answer you as soon as possible.

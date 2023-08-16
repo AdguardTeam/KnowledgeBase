@@ -37,29 +37,36 @@ This approach is available starting from **AdGuard v3.5 nightly 6**. 古いバ�
 
 :::
 
-1. **開発者モード**をアクティブにし、**USBデバッグ**を有効にします（※端末によって下記メニュー項目の名称が多少違ったりする場合がございます）:
-- Open the **Settings** app phone;
-- **システム**セクションに移動し（設定メニューの最後の項目）、 In this section, find the sub-item **About phone**;
-- Tap the **Build number** line 7 times. その後、「**開発者になりました！**」のような通知が表示されます（必要に応じて、デバイスのロック解除コードを入力してください）。
-- Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
+1. Activate the **developer mode** and enable **USB debugging**:
 
-:::note
+    - Open the **Settings** app phone;
+    - Go to **System** section (last item in the settings menu). In this section, find the sub-item **About phone**;
+    - Tap the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
+    - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
 
-上記に関してまだご不明やお困りな点ございましたら、[こちら](https://developer.android.com/studio/debug/dev-options)でさらに詳しい手順をご確認ください。
+    :::note
+
+    上記に関してまだご不明やお困りな点ございましたら、[こちら](https://developer.android.com/studio/debug/dev-options)でさらに詳しい手順をご確認ください。
+
 
 :::
 
-2. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
-3. **USBケーブル**を使用して**ADB**をインストールしたコンピューターまたはラップトップにAndroidデバイスを接続します。
-4. PCで**コマンドライン**を開きます。
-- **Windows**を使用している場合は**Cmd.exe**
-- **macOS**を使用している場合は**ターミナル**
-5. `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` というコマンドを入力して**Enter**を押します。これで完了です。
+1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+
+1. **USBケーブル**を使用して**ADB**をインストールしたコンピューターまたはラップトップにAndroidデバイスを接続します。
+
+1. PCで**コマンドライン**を開きます。
+
+    - **Windows**を使用している場合は**Cmd.exe**
+    - **macOS**を使用している場合は**ターミナル**
+
+1. `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` というコマンドを入力して**Enter**を押します。これで完了です。
 
 ### 【方法②】*制限付きアカウント*を削除する
 
 多くの端末の場合、 [端末設定→詳細設定→複数ユーザー→制限付きプロファイルを削除する]という手順になります。 ユーザーアカウント管理については[こちら](https://support.google.com/a/answer/6223444?hl=en)にてご確認いただけます。
-> :::note
+
+:::note
 
 In some cases restricted user accounts are created implicitly and cannot be removed. たとえば、**Samsung**または**LG**デバイスでデュアルメッセンジャーまたはデュアルアプリ機能を使用する場合です。 これらのケースで問題を解決する方法を以下に記載いたしました。
 
@@ -89,5 +96,3 @@ To enable this mode, open **AdGuard Settings** → **Network** → **Filtering m
 - 下にスクロールして、「**デュアルアプリ**」をタップ
 - アプリに対するスイッチをすべてオフにする
 - 端末を再起動する
-
-

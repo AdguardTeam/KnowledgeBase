@@ -9,26 +9,26 @@ Non abbiamo delle linee guida chiare su con quali file o prodotti del progetto *
 
 Ci sono soltanto un paio di cose che vogliamo menzionare:
 
-* Puoi visualizzare l'app soltanto nelle lingue per cui tutte le traduzioni sono state completate su Crowdin;
-* Consigliamo di tradurre le descrizioni per i negozi di app in un secondo momento, poiché, senza la traduzione dei prodotti stessi, le descrizioni non saranno necessarie.
+- Puoi visualizzare l'app soltanto nelle lingue per cui tutte le traduzioni sono state completate su Crowdin;
+- Consigliamo di tradurre le descrizioni per i negozi di app in un secondo momento, poiché, senza la traduzione dei prodotti stessi, le descrizioni non saranno necessarie.
 
 La situazione è differente nel progetto *AdGuard Websites*. Le lingue possono essere aggiunte al sito anche se non è disponibile una serie completa di traduzioni. Tuttavia, ciò dipende da quali file sono già stati tradotti. Ecco perché ti consigliamo di iniziare con i file più importanti, elencati di seguito:
 
 [Sito Web di Blocco-annunci AdGuard](https://crowdin.com/project/adguard-websites/en#/adguard.com)
 
-* `critical.resx`
-* `auth.resx`
-* `welcome.resx`
+- `critical.resx`
+- `auth.resx`
+- `welcome.resx`
 
 [Sito Web di AdGuard VPN](https://crowdin.com/project/adguard-websites/en#/adguard-vpn.com)
 
-* `critical.resx`
-* `auth.resx`
+- `critical.resx`
+- `auth.resx`
 
 [Sito Web di AdGuard DNS](https://crowdin.com/project/adguard-websites/en#/adguard-dns.com)
 
-* `critical.resx`
-* `auth.resx`
+- `critical.resx`
+- `auth.resx`
 
 Adding new strings as well as updating existing ones in these files requires special attention from the project translators and proofreaders.
 

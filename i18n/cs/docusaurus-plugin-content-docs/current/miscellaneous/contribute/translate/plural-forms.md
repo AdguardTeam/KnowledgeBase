@@ -145,12 +145,12 @@ Zatímco první tři typy těchto řetězců jsou víceméně snadno provediteln
 
 A ještě jednou: pokud narazíte na originální frázi se dvěma důležitými prvky: **svislá čára** a **%count%** zástupné znaky, udělejte prosím následující:
 
-+ Řiďte se pravidlem množného čísla jazyka, do kterého překládáte;
+- Řiďte se pravidlem množného čísla jazyka, do kterého překládáte;
 
 Počet vašich šablon by měl odpovídat počtu tvarů množného čísla, které váš jazyk obsahuje, a to i v případech, kdy některá slova mají sama o sobě méně tvarů. Dva tvary množného čísla — dvě šablony v překladu; pět tvarů množného čísla — pět šablon atd.
 
-+ Nezapomeňte mezi šablonami použít svislou čáru, jak je znázorněno v původních řetězcích;
+- Nezapomeňte mezi šablonami použít svislou čáru, jak je znázorněno v původních řetězcích;
 
-+ Nepřekládejte, nevyplňujte ani nemažte zástupné znaky **%count%**.
+- Nepřekládejte, nevyplňujte ani nemažte zástupné znaky **%count%**.
 
 Dodržováním těchto jednoduchých pravidel pomůžete vývojářům AdGuardu vyhnout se mnoha zbytečným komplikacím během procesu překládání.

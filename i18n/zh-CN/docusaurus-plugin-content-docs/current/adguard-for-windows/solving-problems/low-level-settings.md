@@ -181,17 +181,17 @@ AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to
 
 用户可以选择 AdGuard 将根据 [hosts 规则的语法](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax)对被 DNS 规则阻止的域名作出反应的方式。
 
-* 将「REFUSED」的错误作出回应
-* 将「NxDomain」的错误作出回应
-* 使用自定义 IP 地址作出回应
+- 将「REFUSED」的错误作出回应
+- 将「NxDomain」的错误作出回应
+- 使用自定义 IP 地址作出回应
 
 ### adblock 规则的拦截模式
 
 用户可以选择 AdGuard 将根据 [ adblock 规则的语法](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax)对被 DNS 规则阻止的域名作出反应的方式。
 
-* 将「REFUSED」的错误作出回应
-* 将「NxDomain」的错误作出回应
-* 使用自定义 IP 地址作出回应
+- 将「REFUSED」的错误作出回应
+- 将「NxDomain」的错误作出回应
+- 使用自定义 IP 地址作出回应
 
 ### 自定义 IPv4 地址
 
@@ -205,9 +205,9 @@ AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to
 
 用户可以指定一个后备 DNS 服务器，如果主服务器未能在下一节指定的超时期限内做出响应，DNS 请求将被重新路由到后备服务器。 有三个选项可供选择：
 
-* 不要使用后备服务器；
-* 使用系统默认的服务器；
-* 使用自定义服务器。
+- 不要使用后备服务器；
+- 使用系统默认的服务器；
+- 使用自定义服务器。
 
 ### 拦截 ECH
 

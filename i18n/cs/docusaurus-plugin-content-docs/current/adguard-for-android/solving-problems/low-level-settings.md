@@ -45,17 +45,17 @@ Bootstrap DNS pro servery DoH, DoT a DoQ. *Automatický DNS* — systémový DNS
 
 Zde můžete zadat typ odpovědi pro domény blokované DNS pravidly na základě syntaxe pravidla adblock (například `||example.org^`).
 
-*  Odezva s REFUSED (výchozí)
-*  Odezva s NXDOMAIN
-*  Odezva pomocí vlastní IP adresy (zde lze zadat adresy IPv4 a IPv6)
+- Odezva s REFUSED (výchozí)
+- Odezva s NXDOMAIN
+- Odezva pomocí vlastní IP adresy (zde lze zadat adresy IPv4 a IPv6)
 
 #### Režim blokování pro pravidla hosts
 
 Zde můžete zadat typ odpovědi pro domény blokované DNS pravidly na základě syntaxe pravidla hosts (například `<ip> <domain> 0.0.0.0 example.com`).
 
-*  Odezva s REFUSED
-*  Odezva s NXDOMAIN
-*  Odezva pomocí vlastní IP adresy (zde lze zadat adresy IPv4 a IPv6) – výchozí
+- Odezva s REFUSED
+- Odezva s NXDOMAIN
+- Odezva pomocí vlastní IP adresy (zde lze zadat adresy IPv4 a IPv6) – výchozí
 
 #### Časový limit DNS požadavku
 

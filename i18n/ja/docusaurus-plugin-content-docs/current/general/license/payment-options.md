@@ -20,5 +20,6 @@ To make more use of your AdGuard products, you can upgrade your license for the 
 3. お使いの[サブスクリプション](../what-is)を**無期限で使える永久版ライセンス**にアップグレードすることも可能です。
 
 You can upgrade your license by:
-  * [AdGuard公式サイト](https://adguard.com)で、もう一つのライセンスを購入する
-  * AdGuardマイ・アカウントの「ライセンス」画面で、 「*永久版にアップグレードする*」や「*利用可能端末台数を増やす*」をクリックする ![アップグレード *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)
+
+- [AdGuard公式サイト](https://adguard.com)で、もう一つのライセンスを購入する
+- AdGuardマイ・アカウントの「ライセンス」画面で、 「*永久版にアップグレードする*」や「*利用可能端末台数を増やす*」をクリックする ![アップグレード *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)

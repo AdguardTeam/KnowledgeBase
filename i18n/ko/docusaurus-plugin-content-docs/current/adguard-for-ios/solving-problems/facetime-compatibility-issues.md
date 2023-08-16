@@ -20,6 +20,7 @@ iOS용 AdGuard의 풀 터널 (VPN 아이콘이 표시되지 않음) 모드를 �
 ![터널 모드 화면 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ru/iOS/tunnel-mode.PNG?!)
 
 분할 터널 모드를 활성화하는 방법은 다음과 같습니다.
+
 1. Go to AdGuard for iOS *Settings* → *General settings*.
 2. *고급 모드* 활성화 후 *고급 설정*으로 이동
 3. *터널 모드*> *분할 터널* 모드 선택

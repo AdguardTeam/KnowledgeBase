@@ -73,6 +73,6 @@ AdGuard는 연구원의 결과에 전적으로 동의합니다. 또한 현재 �
 
 특정 웹 사이트에서 HTTPS 연결 품질을 확인할 수 있습니다. 이러한 웹 사이트는 브라우저(또는 AdGuard를 사용 경우, 브라우저 + AdGuard)가 일반적인 취약점에 노출되는지 확인합니다. HTTPS를 필터링하는 프로그램을 사용하려는 경우, 다음과 같은 웹 사이트에서 연결 품질을 확인하는 것이 좋습니다.
 
-* [https://www.ssllabs.com/ssltest/viewMyClient.html](https://www.ssllabs.com/ssltest/viewMyClient.html)
-* [https://www.howsmyssl.com/](https://www.howsmyssl.com/)
-* [https://badssl.com/](https://badssl.com/)
+- [https://www.ssllabs.com/ssltest/viewMyClient.html](https://www.ssllabs.com/ssltest/viewMyClient.html)
+- [https://www.howsmyssl.com/](https://www.howsmyssl.com/)
+- [https://badssl.com/](https://badssl.com/)

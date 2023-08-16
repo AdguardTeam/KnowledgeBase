@@ -20,5 +20,6 @@ AdGuard ürünlerinizden daha fazla yararlanmak için lisansınızı aşağıdak
 3. Ayrıca **[aboneliğinizi](../what-is) Ömür Boyu lisansa yükseltebilirsiniz**.
 
 Lisansınızı şu şekilde yükseltebilirsiniz:
-  * purchasing another license on the [official AdGuard website](https://adguard.com),
-  * clicking the *Upgrade to Lifetime* and/or *Increase device limit* in your AdGuard account: ![Upgrade *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)
+
+- purchasing another license on the [official AdGuard website](https://adguard.com),
+- clicking the *Upgrade to Lifetime* and/or *Increase device limit* in your AdGuard account: ![Upgrade *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)

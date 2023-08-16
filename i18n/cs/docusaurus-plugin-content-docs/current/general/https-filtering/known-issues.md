@@ -13,8 +13,8 @@ Nejprve se podívejte na tento jednoduchý diagram, který ukazuje obecnou struk
 
 AdGuard zkopíruje vlastnosti připojení TLS, které používá váš prohlížeč:
 
-* AdGuard používá stejnou verzi TLS
-* AdGuard používá stejné šifrovací metody (šifry) jako váš prohlížeč
+- AdGuard používá stejnou verzi TLS
+- AdGuard používá stejné šifrovací metody (šifry) jako váš prohlížeč
 
 V podstatě to znamená, že pokud používáte moderní a bezpečný prohlížeč, bude brát v úvahu všechny známé problémy TLS a nebude se pokoušet používat nebezpečné šifry.
 
