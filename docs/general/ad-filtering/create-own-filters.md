@@ -285,6 +285,13 @@ If you want the rule not to be applied to certain apps, start the app name with 
 - `||baddomain.com^$app=~org.example.app` — a rule to block requests that match the specified mask and are sent from any app save for the `org.example.app`.
 - `||baddomain.com^$app=~org.example.app1|~org.example.app2` — same as above, but now two apps are excluded: `org.example.app1` and `org.example.app2`.
 
+:::caution Restrictions
+
+Apps in the modifier value cannot have a wildcard, e.g. `$app=com.*.music`.
+Rules with such modifier are considered invalid.
+
+:::
+
 :::info Compatibility
 
 - Only AdGuard for Windows, Mac, Android are technically capable of using rules with `$app` modifier.
