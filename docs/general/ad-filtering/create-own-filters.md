@@ -675,12 +675,11 @@ The rule corresponds to script requests, e.g. javascript, vbscript.
 
 #### **`$stylesheet`** {#stylesheet-modifier}
 
-
 The rule corresponds to CSS files requests.
 
 :::note
 
-You may use a shorter name (alias) instead of using the full modifier name: `css`.
+You may use a shorter name (alias) instead of using the full modifier name: `$css`.
 
 :::
 
@@ -695,7 +694,7 @@ The rule corresponds to requests for built-in pages — HTML tags `frame` and `i
 
 :::note
 
-You may use a shorter name (alias) instead of using the full modifier name:`$frame`.
+You may use a shorter name (alias) instead of using the full modifier name: `$frame`.
 
 :::
 
