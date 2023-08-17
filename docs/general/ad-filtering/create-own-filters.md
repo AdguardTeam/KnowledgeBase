@@ -3988,7 +3988,7 @@ If you need an advice on how to create your own filters properly, our forum has 
 1. `AdGuard for Chromium` — AdGuard Browser Extension for Chrome and other Chromium-based browsers, e.g. new Microsoft Edge, Opera
 1. `AdGuard for Firefox` — AdGuard Browser Extension for Firefox
 1. `AdGuard for iOS` — AdGuard for iOS and AdGuard for iOS Pro (for mobile Safari browser)
-1. `AdGuard for Safari` — AdGuard for Safari (for desktop Safari browser)
+1. `AdGuard for Safari` — AdGuard for desktop Safari browser
 1. `AdGuard Content Blocker` — Content Blocker for Android mobile browsers: Samsung Internet and Yandex.Browser
 
 ### Compatibility shortcuts {#what-compatibility}
