@@ -530,12 +530,6 @@ AdGuard will try to close the browser tab with any address that matches a blocki
 
 #### **`$third-party`** {#third-party-modifier}
 
-:::note
-
-The `$3p` alias is also used.
-
-:::
-
 A restriction of third-party and own requests. A third-party request is a request from a different domain. For example, a request to `example.org` from `domain.com` is a third-party request.
 
 :::note
@@ -559,6 +553,12 @@ If there is a `$~third-party` modifier, the rule is only applied to the requests
 **`$~third-party`:**
 
 - `||domain.com$~third-party` — this rule is applied to `domain.com`, but not to the other domains. Example of a request that is not a third-party request: `http://domain.com/icon.ico`.
+
+:::note
+
+You may use a shorter name (alias) instead of using the full modifier name: `$3p`.
+
+:::
 
 #### **`$to`** {#to-modifier}
 
@@ -618,12 +618,6 @@ There is a big difference in how AdGuard determines the content type on differen
 
 #### **`$document`** {#document-modifier}
 
-:::note
-
-The `$doc` alias is also used.
-
-:::
-
 The rule corresponds to the main frame document requests, i.e. HTML documents that are loaded in the browser tab. It does not match iframes, there is a [`$subdocument` modifier](#subdocument-modifier) for these.
 
 By default, AdGuard does not block the requests that are loaded in the browser tab (e.g. "main frame bypass"). The idea is not to prevent pages from loading as the user clearly indicated that they want this page to be loaded. However, if the `$document` modifier is specified explicitly, AdGuard does not use that logic and prevents the page load. Instead, it responds with a "blocking page".
@@ -638,6 +632,12 @@ If this modifier is used with an exclusion rule (`@@`), it completely disables b
 - `||example.com^$document,redirect=noopframe` redirects HTML document request to `example.com` to an empty html document.
 - `||example.com^$document,removeparam=test` removes `test` query parameter from HTML document request to  `example.com`.
 - `||example.com^$document,replace=/test1/test2/` replaces `test1` with `test2` in  HTML document request to `example.com`.
+
+:::note
+
+You may use a shorter name (alias) instead of using the full modifier name: `$doc`.
+
+:::
 
 #### **`$font`** {#font-modifier}
 
@@ -675,21 +675,16 @@ The rule corresponds to script requests, e.g. javascript, vbscript.
 
 #### **`$stylesheet`** {#stylesheet-modifier}
 
-:::note
-
-The `$css` alias is also used.
-
-:::
 
 The rule corresponds to CSS files requests.
 
-#### **`$subdocument`** {#subdocument-modifier}
-
 :::note
 
-The `$frame` alias is also used.
+You may use a shorter name (alias) instead of using the full modifier name: `css`.
 
 :::
+
+#### **`$subdocument`** {#subdocument-modifier}
 
 The rule corresponds to requests for built-in pages — HTML tags `frame` and `iframe`.
 
@@ -697,6 +692,12 @@ The rule corresponds to requests for built-in pages — HTML tags `frame` and `i
 
 - `||example.com^$subdocument` blocks built-in page requests (`frame` and `iframe`) to `example.com` and all its subdomains anywhere.
 - `||example.com^$subdocument,domain=domain.com` blocks built-in page requests (`frame` и `iframe`) to `example.com` (and its subdomains) from `domain.com` and all its subdomains.
+
+:::note
+
+You may use a shorter name (alias) instead of using the full modifier name:`$frame`.
+
+:::
 
 #### **`$websocket`** {#websocket-modifier}
 
@@ -710,13 +711,13 @@ The rule applies only to WebSocket connections.
 
 #### **`$xmlhttprequest`** {#xmlhttprequest-modifier}
 
+The rule applies only to ajax requests (requests sent via javascript object `XMLHttpRequest`).
+
 :::note
 
-The `$xhr` alias is also used.
+You may use a shorter name (alias) instead of using the full modifier name: `$xhr`.
 
 :::
-
-The rule applies only to ajax requests (requests sent via javascript object `XMLHttpRequest`).
 
 :::info Compatibility
 
@@ -780,17 +781,17 @@ Disables [HTML filtering](#html-filtering-rules), [`$hls`](#hls-modifier), [`$re
 
 #### **`$elemhide`** {#elemhide-modifier}
 
-:::note
-
-The `$ehide` alias is also used.
-
-:::
-
 Disables any [cosmetic rules](#cosmetic-rules) on the pages matching the rule.
 
 **Examples**
 
 - `@@||example.com^$elemhide` disables all cosmetic rules on pages at `example.com` and all subdomains.
+
+:::note
+
+You may use a shorter name (alias) instead of using the full modifier name: `$ehide`.
+
+:::
 
 #### **`$extension`** {#extension-modifier}
 
@@ -937,31 +938,31 @@ Disables generic basic rules on pages that correspond to exception rule.
 
 #### **`$generichide`** {#generichide-modifier}
 
-:::note
-
-The `$ghide` alias is also used.
-
-:::
-
 Disables all generic [cosmetic rules](#cosmetic-rules) on pages that correspond to the exception rule.
 
 **Examples**
 
 - `@@||example.com^$generichide` disables generic cosmetic rules on any pages at `example.com` and its subdomains.
 
-#### **`specifichide`** {#specifichide-modifier}
-
 :::note
 
-The `$shide` alias is also used.
+You may use a shorter name (alias) instead of using the full modifier name: `$ghide`.
 
 :::
+
+#### **`specifichide`** {#specifichide-modifier}
 
 Disables all specific element hiding and CSS rules, but not general ones. Has an opposite effect to [`$generichide`](#generichide-modifier).
 
 **Examples**
 
 - `@@||example.org^$specifichide` disables `example.org##.banner` but not `##.banner`.
+
+:::note
+
+You may use a shorter name (alias) instead of using the full modifier name: `$shide`.
+
+:::
 
 :::note
 
