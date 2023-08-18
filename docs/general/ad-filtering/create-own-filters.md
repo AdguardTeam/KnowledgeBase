@@ -1227,13 +1227,6 @@ Basic URL exceptions shall not disable rules with `$hls` modifier. They can be d
 
 :::
 
-**Restrictions**
-
-- `$hls` rules are only allowed in trusted filters
-- `$hls` rules are only compatible with the modifiers `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`
-- `$hls` rules only apply to HLS playlists, which are UTF-8 encoded text starting with the line `#EXTM3U`. Any other response will not be modified by these rules
-- `$hls` rules do not apply if the size of the original response is more than 3 MB
-
 :::note
 
 When multiple `$hls` rules match the same request, their effect is cumulative.
@@ -1392,11 +1385,6 @@ Basic URL exceptions shall not disable rules with `$jsonprune` modifier. They ca
 - `@@||example.org^$jsonprune=text` disable all `$jsonprune` rules with the value of the `$jsonprune` modifier equal to `text` for responses from URLs matching `||example.org^`.
 
 `$jsonprune` rules can also be disabled by `$document`, `$content` and `$urlblock` exception rules.
-
-**Restrictions**
-
-- `$jsonprune` rules are only compatible with `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest` modifiers.
-- `$jsonprune` rules do not apply if the size of the original response is more than 3 MB.
 
 :::note
 
