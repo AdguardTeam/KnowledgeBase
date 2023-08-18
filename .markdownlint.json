@@ -9,6 +9,7 @@
             "details",
             "summary"
     ]},
+    "no-trailing-spaces": { "br_spaces": 0 },
     "line-length": false,
     "no-bare-urls": false,
     "no-emphasis-as-heading": false,
