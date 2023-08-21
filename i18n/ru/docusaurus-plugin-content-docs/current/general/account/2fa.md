@@ -9,28 +9,28 @@ sidebar_position: 3
 
 Мы рекомендуем настроить двухфакторную аутентификацию для вашего личного кабинета AdGuard. Это не займёт у вас много времени, но поможет защитить ваши лицензионные ключи, подписки и, самое главное, любую личную информацию, связанную с учётной записью.
 
-
 ## Как настроить
 
-1) Войдите в свой [аккаунт AdGuard](https://auth.adguard.com/login.html) и перейдите на вкладку Настройки:
+1. Log into your [AdGuard account](https://auth.adguard.com/login.html) and go to the Settings tab:
 
-![Настройки аккаунта AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/account_settings.png)
+![AdGuard Account settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/account_settings.png)
 
-2) Прокрутите вниз до раздела *Пароль и 2FA* и нажмите **Включить**:
+1. Scroll down to *Password and 2FA* section and click **Enable**:
 
-![Кнопка «Изменить» *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_new.png)
+![The Change button *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_new.png)
 
-3) Следуйте инструкциям на экране, чтобы установить приложение для аутентификации и отсканировать QR-код:
+1. Follow the on-screen instructions to install an authenticator app and scan the QR code:
 
-![Проверочный код](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_enable.png)
+![The verification code](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_enable.png)
 
-***Важно***
-* Сохраните где-нибудь резервный код второго фактора, он понадобится для восстановления вашей учётной записи в случае потери или кражи мобильного телефона;
+***Important***
 
-Если всё сделано правильно, то при следующем входе в аккаунт вы увидите это:
+- Сохраните где-нибудь резервный код второго фактора, он понадобится для восстановления вашей учётной записи в случае потери или кражи мобильного телефона;
 
-![Результат *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_success.png)
+If everything is done right, you will see this when you log into your account the next time:
 
-Используйте мобильное приложение-аутентификатор, чтобы считать код и ввести его. Теперь у вас должно получиться войти в аккаунт!
+![The result *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_success.png)
 
-***ПРИМЕЧАНИЕ***: Если произошла ошибка аутентификации, проверьте часы на своём телефоне. При необходимости отрегулируйте их, поскольку причиной ошибки может быть отсутствие синхронизации часов.
+Use your mobile authenticator app to read the code and enter it. You should be logged in now!
+
+***NOTE***: If you get an authentication error, check the clock on your phone. Adjust it if needed, as an unsynchronized clock may be the cause of the error.

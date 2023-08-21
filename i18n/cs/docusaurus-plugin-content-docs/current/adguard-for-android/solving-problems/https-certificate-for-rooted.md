@@ -15,48 +15,47 @@ V zařízeních bez přístupu root lze certifikáty CA nainstalovat do **Uživa
 
 Na zařízeních s root přístupem však můžete nainstalovat certifikát do **Systémového úložiště** a povolit HTTPS filtrování provozu jiných aplikací.
 
-
 Zde je návod, jak to udělat:
 
 ## Jak nainstalovat certifikát AdGuardu do systémového úložiště (na zařízení s root přístupem)
 
 1. Povolte filtrování HTTPS v AdGuardu pro Android a uložte certifikát AdGuardu do uživatelského úložiště (v případě potřeby použijte [tento pokyn](../../overview#https-filtering))
 
-> Od verze 4.1 AdGuard pro Android si uživatelé mohou do uživatelského úložiště nainstalovat dva certifikáty, které jim pomohou filtrovat webové stránky v prohlížeči Chrome.
+     Od verze 4.1 AdGuard pro Android si uživatelé mohou do uživatelského úložiště nainstalovat dva certifikáty, které jim pomohou filtrovat webové stránky v prohlížeči Chrome.
 
-2. Jděte do **aplikace AdGuard** → **Menu** (≡) → **Nastavení** → **Síť** → **HTTPS filtrování** → **Bezpečnostní certifikát** → klepněte na "**Kopírovat do systémového úložiště**"
+1. Jděte do **aplikace AdGuard** → **Menu** (≡) → **Nastavení** → **Síť** → **HTTPS filtrování** → **Bezpečnostní certifikát** → klepněte na "**Kopírovat do systémového úložiště**"
 
-To stačí pro starší verze Magisk.
+    To stačí pro starší verze Magisk.
 
-Pokud však máte novější verzi, zobrazí se tato zpráva:
+    Pokud však máte novější verzi, zobrazí se tato zpráva:
 
-> Nelze zkopírovat certifikát do systémového úložiště. Zkuste použít modul "AdGuard Certificate".
+    > Nelze zkopírovat certifikát do systémového úložiště. Zkuste použít modul "AdGuard Certificate".
 
-V takovém případě přejděte k následujícím krokům:
+    V takovém případě přejděte k následujícím krokům:
 
-3. Přejděte do **Magisk** → **Nastavení**
+1. Přejděte do **Magisk** → **Nastavení**
 
-![Otevřít nastavení Magisk *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-1.png)
+    ![Open Magisk settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-1.png)
 
-4. Zapněte **Zygisk**
+1. Zapněte **Zygisk**
 
-![Zapnout Zygisk *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-2.png)
+    ![Enable Zygisk *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-2.png)
 
-![Návrat na hlavní obrazovku Magisk *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-3.png)
+    ![Go back to Magisk main screen *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-3.png)
 
-5. Stáhněte soubor `.zip` (modulu "AdGuard Certificate") z nejnovější vydání na [na GitHubu](https://github.com/AdguardTeam/adguardcert/releases/latest/)
+1. Stáhněte soubor `.zip` (modulu "AdGuard Certificate") z nejnovější vydání na [na GitHubu](https://github.com/AdguardTeam/adguardcert/releases/latest/)
 
-6. Přejděte do **Magisk** → **Moduly** → **Instalovat z úložiště** a vyberte stažený soubor `.zip`
+1. Přejděte do **Magisk** → **Moduly** → **Instalovat z úložiště** a vyberte stažený soubor `.zip`
 
-![Otevřít moduly Magisk *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-4.png)
+    ![Open Magisk modules *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-4.png)
 
-![Instalovat z úložiště *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-5.png)
+    ![Install from storage *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-5.png)
 
-![Vybrat modul AdGuard Certificate *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-6.png)
+    ![Select AdGuard certificate module *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-6.png)
 
-7. Restartujte
+1. Restartujte
 
-![Restartovat zařízení *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-7.png)
+    ![Reboot the device *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-7.png)
 
 Pokud vyjde nová verze modulu "AdGuard Certificate", zopakujte kroky 3-7 a modul aktualizujte.
 

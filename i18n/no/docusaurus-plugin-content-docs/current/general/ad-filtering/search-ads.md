@@ -33,13 +33,13 @@ By enabling 'Search ads and self-promotion', AdGuard users can unblock some of t
 
 When you enable 'Search ads and self-promotion', search ads from the following search engines are shown:
 
-* Google
-* Yahoo
-* Bing
-* Ask
-* Yandex
-* DuckDuckGo
-* StartPage
+- Google
+- Yahoo
+- Bing
+- Ask
+- Yandex
+- DuckDuckGo
+- StartPage
 
 As well as all self-promotional ads that satisfy our filter policy.
 

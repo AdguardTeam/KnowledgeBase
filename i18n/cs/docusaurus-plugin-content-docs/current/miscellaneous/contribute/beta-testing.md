@@ -17,15 +17,15 @@ Pokud chcete přeskočit část s popisem a přejít rovnou k akci, můžete se 
 
 Pokud jste si všimli chyby nebo se jen chcete podělit o svůj návrh, dejte nám vědět některým z možných způsobů:
 
-* Přejděte na [forum.adguard.com](https://forum.adguard.com/index.php) a založte tam nové vlákno (nebo najděte stávající) v [kategorii 'Beta testování'](https://forum.adguard.com/index.php?categories/48/). Přečtěte si [pravidla fóra](https://forum.adguard.com/index.php?threads/14859/);
+- Přejděte na [forum.adguard.com](https://forum.adguard.com/index.php) a založte tam nové vlákno (nebo najděte stávající) v [kategorii 'Beta testování'](https://forum.adguard.com/index.php?categories/48/). Přečtěte si [pravidla fóra](https://forum.adguard.com/index.php?threads/14859/);
 
-* Přejděte na [GitHub](https://github.com/AdguardTeam/) a najděte vhodný repozitář. Vytvořte tam nový problém a podrobně popište chybu nebo požadavek na funkci.
+- Přejděte na [GitHub](https://github.com/AdguardTeam/) a najděte vhodný repozitář. Vytvořte tam nový problém a podrobně popište chybu nebo požadavek na funkci.
 
 Dvě výše uvedené metody jsou nejvhodnější, ale v případě potřeby můžete použít i jiné:
 
-* Najdete nás na různých platformách sociálních médií, např. [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/) atd. To však není nejefektivnější způsob, jak diskutovat o technických záležitostech.
+- Najdete nás na různých platformách sociálních médií, např. [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/) atd. To však není nejefektivnější způsob, jak diskutovat o technických záležitostech.
 
-* Pošlete e-mail našemu týmu podpory z karty Podpora v aplikaci nebo napište přímo na adresu [support@adguard.com](mailto:support@adguard.com).
+- Pošlete e-mail našemu týmu podpory z karty Podpora v aplikaci nebo napište přímo na adresu [support@adguard.com](mailto:support@adguard.com).
 
 ## Jak aktivovat klíč pro beta verzi v aplikaci pro iOS {#ios}
 

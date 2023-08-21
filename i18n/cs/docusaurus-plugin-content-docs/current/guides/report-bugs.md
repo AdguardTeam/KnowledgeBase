@@ -19,12 +19,12 @@ Zkontrolujte, zda nebyla chyba nahlášena již dříve. Doporučujeme věnovat 
 
 Pokuste se uvést co nejvíce podrobností — usnadníte nám tak reprodukci chyby a zjistíme, jak ji opravit. V hlášení o chybě očekáváme následující informace:
 
-* Verzi aplikace
-* Verzi OS
-* Kdy jste si problému všimli
-* Co jste dělali nebo co se stalo s aplikací, než jste si problému všimli. Kroky k reprodukci problému
-* Zda se problém opakuje a s jakou frekvencí
-* Jestli používáte VPN nebo antivirový software
+- Verzi aplikace
+- Verzi OS
+- Kdy jste si problému všimli
+- Co jste dělali nebo co se stalo s aplikací, než jste si problému všimli. Kroky k reprodukci problému
+- Zda se problém opakuje a s jakou frekvencí
+- Jestli používáte VPN nebo antivirový software
 
 ### Jak shromažďovat a záznamy
 
@@ -39,7 +39,6 @@ Pokud chcete podpořit zavedení nové funkce nebo opravu chyby, můžete pro ni
 ![GitHub issue without reactions](https://cdn.adtidy.org/content/kb/ad_blocker/general/github_reaction2.png)
 
 Reakce najdete v pravém horním rohu nebo na konci hlášení.
-
 
 ## Pokyny pro všechny platformy
 

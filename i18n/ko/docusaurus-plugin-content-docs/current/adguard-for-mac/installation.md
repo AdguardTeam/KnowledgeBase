@@ -21,11 +21,11 @@ sidebar_position: 2
 
 ## 설치 방법
 
-컴퓨터에 Mac용 AdGuard를 설치하려면 브라우저를 실행하고 주소창에 _adguard.com_을 입력한 다음, [열리는 페이지](https://adguard.com/download.html?auto=1)에서 **다운로드**를 누릅니다.
+To install AdGuard for Mac on your computer, launch your browser, type *adguard.com* in the address bar, and press **Download** [on the page that opens](https://adguard.com/download.html?auto=1).
 
 ![앱 다운로드 *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/1.jpg)
 
-_AdguardInstaller.dmg_가 다운로드될 때까지 기다렸다가 Dock 패널에 다운로드된 파일 목록에서 해당 아이콘을 두 번 클릭합니다.
+Wait for *AdguardInstaller.dmg* to download and double-click its icon in the list of downloaded files on the Dock panel.
 
 ![Double-click to open the file](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation_open_the_file.jpg)
 
@@ -58,6 +58,7 @@ AdGuard가 처음 시작되면 운영 체제에서 이 프로그램이 인터넷
 ## 제거 방법
 
 ### 일반 제거 방법
+
 Finder 앱을 엽니다.
 
 ![폴더 열기](https://cdn.adtidy.org/public/Adguard/En/Articles/howtodelete/finder.png)

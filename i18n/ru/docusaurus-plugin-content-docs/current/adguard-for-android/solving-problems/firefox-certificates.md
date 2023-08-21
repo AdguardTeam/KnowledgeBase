@@ -21,52 +21,66 @@ sidebar_position: 11
 
 Чтобы Firefox доверял сертификату AdGuard, выполните следующие шаги:
 
-1. Запустите браузер.
-2. Перейдите на страницу **Настройки** → **О Firefox**.
+1. Run the browser.
 
-![О Firefox *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
+1. Go to **Settings** → **About Firefox**.
 
-3. Коснитесь логотипа Firefox пять раз.
-4. Перейдите в раздел **Настройки** → **Тайные настройки**.
+    ![About Firefox *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
 
-![Секретные настройки *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
+1. Tap the Firefox logo five times.
 
-5. Включите настройку **Использовать сторонние сертификаты CA**.
+1. Navigate to **Settings** → **Secret Settings**.
+
+    ![Secret Settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
+
+1. Toggle **Use third party CA certificates**.
 
 ### Метод 2
 
 :::note
 
-Этот метод работает только на **рутированных** устройствах.
+This method will only work on **rooted** devices.
 
 :::
 
-1. [Установите и настройте](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; На платформе Windows владельцам **Samsung** может потребоваться установить [эту утилиту](https://developer.samsung.com/mobile/android-usb-driver.html).
-2. Активируйте режим разработчика **** и включите отладку по USB ****:
-    - Откройте приложение **Настройки** на своём телефоне;
-    - Перейдите в раздел **О системе** (последний пункт в меню настроек). В этом разделе найдите подпункт **О телефоне**;
-    - Нажмите на строку **Номер сборки** 7 раз. После этого вы получите уведомление, что **Теперь вы разработчик** (При необходимости введите код разблокировки устройства);
-    - Откройте **Настройки системы** → **Для разработчиков** → Прокрутите вниз и включите **отладку по USB** → Подтвердите включение отладки в окне **Разрешить отладку по USB**, внимательно прочитав предупреждение.
-3. Установите браузер [Firefox](https://www.mozilla.org/en-US/firefox/releases/) (релизную версию);
-4. Open the **AdGuard settings** (gear icon in the bottom right corner) → **Filtering** → **Network** → **HTTPS filtering** → **Security certificate** → **Instructions for Firefox** → **Install for old versions**;
-5. Откройте папку `data/data/org.mozilla.firefox/files/mozilla`, используя `adb shell su` и `cd data/data/...`, перейдите в папку `xxxxxxx.default` и запомните её название;
-6. В указанной папке нас интересуют два файла:
+1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+
+1. Activate the **developer mode** and enable **USB debugging**:
+
+    - Open the **Settings** app on your phone;
+    - Go to **System** section (last item in the settings menu). In this section, find the sub-item **About phone**;
+    - Tap the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
+    - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
+
+1. Install the [Firefox](https://www.mozilla.org/en-US/firefox/releases/) browser (release version);
+
+1. Open the **AdGuard settings** (gear icon in the bottom right corner) → **Filtering** → **Network** → **HTTPS filtering** → **Security certificate** → **Instructions for Firefox** → **Install for old versions**;
+
+1. Open the folder `data/data/org.mozilla.firefox/files/mozilla` using `adb shell su` and `cd data/data/...`, then browse to the folder named `xxxxxxx.default` and memorize its name;
+
+1. In the specified folder we are interested in two files:
+
     - `cert9.db`
     - `key4.db`
-7. Нужно переместить эти файлы в папку браузера, где возникла проблема с сертификатом безопасности:
-- `data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyy.default`.
-8. Полная команда будет выглядеть так:
+
+1. We need to move these files to a folder of the browser where the security certificate issue occurred:
+
+    - `data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyy.default`.
+
+1. The full command will look like this:
+
     - `adb shell su`
     - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxxx.default/cert9.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
     - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxxx.default/key4.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
 
-В том случае, если вы получили системное уведомление **permission denied**, вам необходимо сначала перенести указанные файлы в свободную от разрешений директорию. А уже после перенести их в нужную папку в браузере Firefox.
+    In case you received the system notification **permission denied**, you should first move the specified files to the permission-free directory. And after that you should move them to the necessary folder in your Firefox browser.
 
-Полная команда должна выглядеть примерно так:
-- `adb shell su`
-- `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxx.default/cert9.db sdcard/Download`
-- `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxx.default/key4.db sdcard/Download`
-- `cp -R sdcard/Download/cert9.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
-- `cp -R sdcard/Download/key4.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
+    The full command should look something like this:
 
-Если `adb shell su` не срабатывает, попробуйте сначала применить `adb shell`, а уже после `su`.
+    - `adb shell su`
+    - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxx.default/cert9.db sdcard/Download`
+    - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxx.default/key4.db sdcard/Download`
+    - `cp -R sdcard/Download/cert9.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
+    - `cp -R sdcard/Download/key4.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
+
+    If `adb shell su` does not work, you should try `adb shell` initially, and then `su`.

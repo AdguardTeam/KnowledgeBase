@@ -9,26 +9,26 @@ Não temos uma sugestão clara sobre com quais arquivos ou produtos do projeto *
 
 Há apenas algumas coisas que queremos mencionar:
 
-* Você pode ver o aplicativo apenas nos idiomas para os quais todas as traduções forem completadas no Crowdin;
-* Recomendamos traduzir as descrições para lojas de aplicativos em segundo lugar, porque sem a tradução dos próprios produtos, estas descrições não serão necessárias.
+- Você pode ver o aplicativo apenas nos idiomas para os quais todas as traduções forem completadas no Crowdin;
+- Recomendamos traduzir as descrições para lojas de aplicativos em segundo lugar, porque sem a tradução dos próprios produtos, estas descrições não serão necessárias.
 
 A situação é diferente no projeto *AdGuard Websites*. Os idiomas podem ser adicionados ao site mesmo que um conjunto completo de traduções não esteja disponível. No entanto, isso depende de quais arquivos já foram traduzidos. É por isso que recomendamos que você comece com os arquivos mais importantes, listados abaixo:
 
 [Site do Bloqueador de Anúncios AdGuard](https://crowdin.com/project/adguard-websites/en#/adguard.com)
 
-* `crítico.resx`
-* `auth.resx`
-* `bem-vindo.resx`
+- `crítico.resx`
+- `auth.resx`
+- `bem-vindo.resx`
 
 [Site do AdGuard VPN](https://crowdin.com/project/adguard-websites/en#/adguard-vpn.com)
 
-* `crítico.resx`
-* `auth.resx`
+- `crítico.resx`
+- `auth.resx`
 
 [Site do AdGuard DNS](https://crowdin.com/project/adguard-websites/en#/adguard-dns.com)
 
-* `crítico.resx`
-* `auth.resx`
+- `crítico.resx`
+- `auth.resx`
 
 Adding new strings as well as updating existing ones in these files requires special attention from the project translators and proofreaders.
 

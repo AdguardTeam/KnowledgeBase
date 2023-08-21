@@ -23,7 +23,6 @@ This error occurs when there's something wrong with permissions. There may be se
 
 ### Error 112: Disk is full, Error 1632: Temporary folder full or inaccessible {#error-112}
 
-
 These are two different errors with very similar solutions. As their names suggest, AdGuard installer didn't find enough disk space to complete the installation. There are several things you can attempt to fix the problem:
 
 - Uninstall some programs or delete unnecessary files from the drive you were trying to install AdGuard to.

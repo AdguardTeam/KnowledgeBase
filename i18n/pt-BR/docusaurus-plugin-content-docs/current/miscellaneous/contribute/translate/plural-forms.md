@@ -145,12 +145,12 @@ Enquanto os três primeiros tipos de strings são mais ou menos fáceis de fazer
 
 E novamente: se você encontrar uma frase original com dois elementos importantes: **o sinal de barra vertical** e placeholders **%count%**, faça o seguinte:
 
-+ Consulte a regra do plural do idioma para o qual você traduz;
+- Consulte a regra do plural do idioma para o qual você traduz;
 
 The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms — two templates in translations; five plural forms — five templates, etc.
 
-+ Não se esqueça de usar um sinal de barra vertical entre os modelos da forma que é representado nas strings originais;
+- Não se esqueça de usar um sinal de barra vertical entre os modelos da forma que é representado nas strings originais;
 
-+ Não traduza, preencha ou exclua os placeholders **%count%**.
+- Não traduza, preencha ou exclua os placeholders **%count%**.
 
 By following these simple rules you will help AdGuard developers avoid a lot of unnecessary complications during the localization process.

@@ -45,17 +45,17 @@ Bootstrap DNS for DoH, DoT, and DoQ servers. The *Automatic DNS* - the system DN
 
 Here you can specify the response type for domains blocked by DNS rules based on adblock rule syntax (for instance, `||example.org^`).
 
-*  Respond with REFUSED (default)
-*  Respond with NXDOMAIN
-*  Respond with Custom IP address (IPv4 and IPv6 addresses can be specified here)
+- Respond with REFUSED (default)
+- Respond with NXDOMAIN
+- Respond with Custom IP address (IPv4 and IPv6 addresses can be specified here)
 
 #### Blocking mode for hosts rules
 
 Here you can specify the response type for domains blocked by DNS rules based on hosts rule syntax (for instance, `<ip> <domain> 0.0.0.0 example.com`).
 
-*  Respond with REFUSED
-*  Respond with NXDOMAIN
-*  Respond with Custom IP address (IPv4 and IPv6 addresses can be specified here) – default
+- Respond with REFUSED
+- Respond with NXDOMAIN
+- Respond with Custom IP address (IPv4 and IPv6 addresses can be specified here) – default
 
 #### DNS request timeout
 

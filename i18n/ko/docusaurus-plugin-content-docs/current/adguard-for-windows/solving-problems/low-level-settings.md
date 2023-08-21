@@ -181,17 +181,17 @@ AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to
 
 [호스트 규칙 구문](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax)을 기반으로 DNS 규칙에 의해 차단된 도메인에 대해 AdGuard가 응답하는 방식을 선택할 수 있습니다.
 
-* 'Refused' 오류로 회신
-* 'NxDomain' 오류로 회신
-* 사용자 정의 IP 주소로 회신
+- 'Refused' 오류로 회신
+- 'NxDomain' 오류로 회신
+- 사용자 정의 IP 주소로 회신
 
 ### adblock-style 규칙을 위한 차단 모드
 
 여기에서 [adblock-style 구문](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax)을 기반으로 DNS 규칙에 의해 차단된 도메인에 AdGuard가 응답하는 방식을 선택할 수 있습니다.
 
-* 'Refused' 오류로 회신
-* 'NxDomain' 오류로 회신
-* 사용자 정의 IP 주소로 회신
+- 'Refused' 오류로 회신
+- 'NxDomain' 오류로 회신
+- 사용자 정의 IP 주소로 회신
 
 ### 사용자 정의 IPv4
 
@@ -205,9 +205,9 @@ AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to
 
 여기에서 주 서버가 다음 섹션에서 지정한 시간 제한 기간 내에 응답하지 않을 경우, DNS 요청을 다시 라우팅할 대체 DNS 서버를 지정할 수 있습니다. 세 가지 옵션 중에서 선택할 수 있습니다.
 
-* 폴백 서버를 사용하지 않음
-* 시스템 기본 서버 사용
-* 사용자 정의 서버 사용
+- 폴백 서버를 사용하지 않음
+- 시스템 기본 서버 사용
+- 사용자 정의 서버 사용
 
 ### ECH 차단
 

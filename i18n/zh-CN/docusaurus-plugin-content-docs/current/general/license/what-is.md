@@ -18,18 +18,20 @@ sidebar_position: 1
 ## 用户可以连接多少设备 {#devices}
 
 不同许可证可用于不同数量的设备：
-* 个人版：最多支持 3 台设备；
-* 家庭版：最多支持 9 台设备；
-* iOS版 AdGuard Pro：支持 1 台设备。
+
+- 个人版：最多支持 3 台设备；
+- 家庭版：最多支持 9 台设备；
+- iOS版 AdGuard Pro：支持 1 台设备。
 
 To use your license on a device, log in to your [AdGuard account](../../account/features) on it. To extend the device limit, you can [upgrade](../activation#how-to-upgrade-a-license) your license.
 
 ## 什么是许可证密钥{#license-key}
 
 A license key is a unique sequence of characters that represents an AdGuard Ad Blocker license. It is automatically registered for the email you used for license purchase. With a license key, you can:
-* 在一些软件里登录 AdGuard 账号（例如 AdGuard Windows版）；
-* 如果没有 AdGuard 账号，您可以[在软件里激活许可证](../activation) ；
-* 将您的许可证绑定到 AdGuard 帐账号并解除绑定。
+
+- 在一些软件里登录 AdGuard 账号（例如 AdGuard Windows版）；
+- 如果没有 AdGuard 账号，您可以[在软件里激活许可证](../activation) ；
+- 将您的许可证绑定到 AdGuard 帐账号并解除绑定。
 
 When unbinding a license, be sure you write the license key down beforehand or note in some other (safe) way. You'll need the key for re-binding your license or transferring it to another account.
 

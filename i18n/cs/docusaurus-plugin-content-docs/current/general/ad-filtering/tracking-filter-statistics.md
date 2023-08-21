@@ -25,14 +25,14 @@ Pokud je váš počítač dostatečně výkonný, nijak vás to neovlivní. Rozd
 
 Pokud povolíte možnost *Odesílat statistiky o použití filtrů reklam*, budou se pravidelně odesílat následující informace:
 
-* Verze rozšíření
-* Typ prohlížeče (Chrome/Firefox/Opera/Yandex.Browser/Safari).
-* Seznam povolených filtrů reklam.
-* Seznam, který se skládá z následujících prvků:
-  * *Název domény webové stránky*
-  * *Počet posledních zobrazení stránek*
-  * *Seznam pravidel filtrování a ID filtrů, které byyl aktivovány na této webové stránce*
-  * *Název domény blokovaných požadavků je odesílán pro pravidla URL.* Seznam je vytvořen na základě statistik návštěvnosti webových stránek od posledního odeslání statistických údajů.
+- Verze rozšíření
+- Typ prohlížeče (Chrome/Firefox/Opera/Yandex.Browser/Safari).
+- Seznam povolených filtrů reklam.
+- Seznam, který se skládá z následujících prvků:
+    - *Název domény webové stránky*
+    - *Počet posledních zobrazení stránek*
+    - *Seznam pravidel filtrování a ID filtrů, které byyl aktivovány na této webové stránce*
+    - *Název domény blokovaných požadavků je odesílán pro pravidla URL.* Seznam je vytvořen na základě statistik návštěvnosti webových stránek od posledního odeslání statistických údajů.
 
 Shromážděné statistiky budou pravidelně odesílány na náš server k analýze a optimalizaci filtrů.
 

@@ -15,7 +15,7 @@ Mnoho lidí si vybírá systém Android, protože si rádi přizpůsobují nasta
 
 Existuje mnoho aplikací Tasker, např. [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&noprocess), [AutomateIt](https://play.google.com/store/apps/details?id=AutomateIt.mainPackage&noprocess) atd. AdGuard poskytuje rozhraní, které těmto aplikacím umožňuje nastavit různá automatizační pravidla.
 
-![Automatizace *mobile_border](https://cdn.adtidy.org/blog/new/mmwmfautomation.jpg)
+![Automation *mobile_border](https://cdn.adtidy.org/blog/new/mmwmfautomation.jpg)
 
 Díky tomuto rozhraní může každá aplikace odeslat speciální zprávu (tzv. "záměr"), která obsahuje název akce a případně další údaje. AdGuard se na tento záměr podívá a provede požadované akce.
 
@@ -26,7 +26,6 @@ Nebylo by trochu nebezpečné, ptáte se — nechat náhodné aplikace spravovat
 ### Dostupné akce
 
 Jste připraveni zašpinit si ruce? Zde jsou uvedeny akce, kterým bude AdGuard rozumět, pokud budou zahrnuty do záměru:
-
 
 `start` spouští ochranu, nejsou potřeba žádné další údaje;
 
@@ -64,14 +63,11 @@ Jste připraveni zašpinit si ruce? Zde jsou uvedeny akce, kterým bude AdGuard 
 
  -----
 
-
-
 `proxy_state` zapíná/vypíná odchozí proxy.  Vyžaduje příznak navíc:
 
 `enable:true` nebo `enable:false` aktivuje nebo deaktivuje odchozí proxy.
 
 -----
-
 
 `proxy_default` nastaví proxy ze seznamu dříve přidaných jako výchozí nebo vytvoří nový, pokud server nebyl přidán dříve.
 
@@ -91,9 +87,10 @@ Nebo můžete parametry odebrání nakonfigurovat ručně:
 
 `server:[type=…&host=…&port=…&username=…&password=…&udp=…&trust=…]`.
 
-* **Povinné parametry**:
+- **Povinné parametry**:
 
 `[type]` — typ proxy:
+
 - HTTP;
 - SOCKS4;
 - SOCKS5;
@@ -103,7 +100,7 @@ Nebo můžete parametry odebrání nakonfigurovat ručně:
 
 `[port]` — odchozí port proxy (celé číslo od 1 do 65535);
 
-* **Volitelné parametry**:
+- **Volitelné parametry**:
 
  `[přihlášení a heslo]` — pouze v případě, že to vyžaduje proxy. Tyto údaje jsou při nastavování **SOCKS4** ignorovány;
 
@@ -142,4 +139,4 @@ Chcete-li provést úkol bez zobrazení informační zprávy, přidejte další 
 
 ### Příklad
 
-![Automatizace *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/tasker/automation2.png)
+![Automation *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/tasker/automation2.png)

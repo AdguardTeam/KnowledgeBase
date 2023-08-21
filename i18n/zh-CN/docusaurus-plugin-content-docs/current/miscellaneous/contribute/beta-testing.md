@@ -17,15 +17,15 @@ sidebar_position: 1
 
 如果您发现了一个程序错误或想分享您的反馈意见，请通过以下几种方式让我们知道：
 
-* 转到 [forum.adguard.com](https://forum.adguard.com/index.php) 并在论坛的[「Beta Testing」](https://forum.adguard.com/index.php?categories/48/)中发布一个新主题（或查找现有的主题）。 请阅读[论坛规则](https://forum.adguard.com/index.php?threads/14859/)；
+- 转到 [forum.adguard.com](https://forum.adguard.com/index.php) 并在论坛的[「Beta Testing」](https://forum.adguard.com/index.php?categories/48/)中发布一个新主题（或查找现有的主题）。 请阅读[论坛规则](https://forum.adguard.com/index.php?threads/14859/)；
 
-* 转到 [GitHub](https://github.com/AdguardTeam/) ，找到相应的存储库。 在那里创建一个新问题，并详细描述该错误/功能请求。
+- 转到 [GitHub](https://github.com/AdguardTeam/) ，找到相应的存储库。 在那里创建一个新问题，并详细描述该错误/功能请求。
 
 上述两个方法是最优选的，但如果需要，您可以使用其他方法：
 
-* 在各种社交媒体平台上找到我们，例如 [Facebook](https://www.facebook.com/AdguardEn/)、[Reddit](https://www.reddit.com/r/Adguard/) 等等。 然而，这并不是讨论技术问题的最有效方式。
+- 在各种社交媒体平台上找到我们，例如 [Facebook](https://www.facebook.com/AdguardEn/)、[Reddit](https://www.reddit.com/r/Adguard/) 等等。 然而，这并不是讨论技术问题的最有效方式。
 
-* 从应用程序中的「支持」选项以向我们的支持团队发送电子邮件，或通过 [support@adguard.com](mailto:support@adguard.com) 电子邮件联系我们。
+- 从应用程序中的「支持」选项以向我们的支持团队发送电子邮件，或通过 [support@adguard.com](mailto:support@adguard.com) 电子邮件联系我们。
 
 ## 如何在 iOS 版的应用程序上激活 Beta 测试版密钥 {#ios}
 

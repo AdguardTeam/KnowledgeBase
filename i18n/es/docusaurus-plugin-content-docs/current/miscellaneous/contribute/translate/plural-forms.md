@@ -145,12 +145,12 @@ Mientras que los tres primeros tipos de strings de este tipo son más o menos f�
 
 Y de nuevo: si encuentras una frase original con dos elementos importantes: **, el signo de barra vertical** y **%count%** marcadores de posición, haz lo siguiente:
 
-+ Consulta la regla del plural de la lengua a la que traduces;
+- Consulta la regla del plural de la lengua a la que traduces;
 
 The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms — two templates in translations; five plural forms — five templates, etc.
 
-+ No olvides usar un signo de barra vertical entre las plantillas tal como se representa en los strings originales;
+- No olvides usar un signo de barra vertical entre las plantillas tal como se representa en los strings originales;
 
-+ No traduzcas, rellenes ni elimines los placeholders **%count%** .
+- No traduzcas, rellenes ni elimines los placeholders **%count%** .
 
 By following these simple rules you will help AdGuard developers avoid a lot of unnecessary complications during the localization process.

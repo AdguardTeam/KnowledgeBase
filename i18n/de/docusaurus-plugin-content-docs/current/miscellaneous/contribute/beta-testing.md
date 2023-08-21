@@ -17,15 +17,15 @@ Wenn Sie den Beschreibungsteil überspringen und direkt zur Aktion übergehen m�
 
 Wenn Sie einen Fehler entdeckt haben oder einfach nur Ihren Vorschlag teilen möchten, teilen Sie uns dies auf eine der möglichen Arten mit:
 
-* Gehen Sie auf [forum.adguard.com](https://forum.adguard.com/index.php) und posten Sie dort einen neuen Thread (oder suchen Sie einen bestehenden) im Beta-Forum [Kategorie](https://forum.adguard.com/index.php?categories/48/). Lesen Sie unbedingt [Forenregeln](https://forum.adguard.com/index.php?threads/14859/);
+- Gehen Sie auf [forum.adguard.com](https://forum.adguard.com/index.php) und posten Sie dort einen neuen Thread (oder suchen Sie einen bestehenden) im Beta-Forum [Kategorie](https://forum.adguard.com/index.php?categories/48/). Lesen Sie unbedingt [Forenregeln](https://forum.adguard.com/index.php?threads/14859/);
 
-* Gehen Sie auf [GitHub](https://github.com/AdguardTeam/) und suchen Sie ein passendes Repository. Erstellen Sie dort ein neues Thema (issue) und beschreiben Sie den Fehler bzw. den Wunsch nach einem neuen Feature im Detail.
+- Gehen Sie auf [GitHub](https://github.com/AdguardTeam/) und suchen Sie ein passendes Repository. Erstellen Sie dort ein neues Thema (issue) und beschreiben Sie den Fehler bzw. den Wunsch nach einem neuen Feature im Detail.
 
 Die beiden oben genannten Methoden sind die am meisten bevorzugten, aber Sie können bei Bedarf auch andere verwenden:
 
-* Finden Sie uns auf verschiedenen Social-Media-Plattformen wie [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/), usw. Dies ist jedoch nicht der bequemste Weg, um technische Fragen zu diskutieren.
+- Finden Sie uns auf verschiedenen Social-Media-Plattformen wie [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/), usw. Dies ist jedoch nicht der bequemste Weg, um technische Fragen zu diskutieren.
 
-* Senden Sie eine E-Mail an unser Support-Team über die Registerkarte „Support“ in der App oder schreiben Sie direkt an [support@adguard.com](mailto:support@adguard.com).
+- Senden Sie eine E-Mail an unser Support-Team über die Registerkarte „Support“ in der App oder schreiben Sie direkt an [support@adguard.com](mailto:support@adguard.com).
 
 ## Beta-Schlüssel in der iOS-App aktivieren {#ios}
 

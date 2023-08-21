@@ -19,12 +19,12 @@ Prüfen Sie, ob Sie die aktuellste Version haben, und wenn nicht, aktualisieren 
 
 Versuchen Sie, so viele Details wie möglich anzugeben — das macht es für uns einfacher, den Fehler zu reproduzieren und herauszufinden, wie er behoben werden kann. Das erwarten wir von einem Fehlerbericht:
 
-* Ihre App-Version
-* Ihre OS-Version
-* Wann Sie das Problem bemerkt haben
-* Was Sie getan haben oder was mit der Anwendung passiert ist, bevor Sie das Problem bemerkt haben. Schritte zur Reproduktion des Problems
-* Ob es wieder auftritt und mit welcher Häufigkeit
-* Ob Sie ein VPN oder eine Antiviren-Software haben
+- Ihre App-Version
+- Ihre OS-Version
+- Wann Sie das Problem bemerkt haben
+- Was Sie getan haben oder was mit der Anwendung passiert ist, bevor Sie das Problem bemerkt haben. Schritte zur Reproduktion des Problems
+- Ob es wieder auftritt und mit welcher Häufigkeit
+- Ob Sie ein VPN oder eine Antiviren-Software haben
 
 ### Wie man Protokolle sammelt
 
@@ -39,7 +39,6 @@ Wenn Sie die Implementierung einer neuen Funktion oder eines Bugfixes unterstüt
 ![GitHub-Problem ohne Reaktionen](https://cdn.adtidy.org/content/kb/ad_blocker/general/github_reaction2.png)
 
 Sie finden die Reaktionen in der oberen rechten Ecke oder am Ende einer Ausgabe.
-
 
 ## Anweisungen für alle Plattformen
 

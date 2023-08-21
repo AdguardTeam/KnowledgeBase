@@ -46,11 +46,12 @@ Filter sind die wichtigste treibende Kraft hinter dem Werbeblocker-Modul. Um zu 
 Einige Filterlisten (AdGuards Basisfilter, Belästigungsfilter, EasyList usw.) sind vorinstalliert, während andere spezifische, an Ihre Vorlieben angepasste, zusätzlich heruntergeladen und Ihrem Programm hinzugefügt werden können.
 
 Neben den allgemeineren und universell einsetzbaren Filtern (wie Basisfilter) bietet AdGuard eine umfangreiche Menge an Filtern für jeden Anlass:
-* Filter zur Verhinderung von Tracking (Tracking-Schutzfilter),
-* sprachspezifische Werbefilter, die Inhalte in einer ausgewählten Sprache blockieren,
-* Social-Media-Filter, der die Schaltflächen „Gefällt mir“ und „Teilen“ entfernt,
-* Belästigungsfilter für Cookie-Warnungen, In-Page-Pop-ups und andere der gleichen Art,
-* und sogar ein Filter, der einige Anzeigen entsperrt, anstatt sie zu blockieren – Filter für Suchanzeigen und Eigenwerbung.
+
+- Filter zur Verhinderung von Tracking (Tracking-Schutzfilter),
+- sprachspezifische Werbefilter, die Inhalte in einer ausgewählten Sprache blockieren,
+- Social-Media-Filter, der die Schaltflächen „Gefällt mir“ und „Teilen“ entfernt,
+- Belästigungsfilter für Cookie-Warnungen, In-Page-Pop-ups und andere der gleichen Art,
+- und sogar ein Filter, der einige Anzeigen entsperrt, anstatt sie zu blockieren – Filter für Suchanzeigen und Eigenwerbung.
 
 AdGuard-Filter werden automatisch aktualisiert. Unsere Entwickler erstellen sie alle basierend auf dem erhaltenen Benutzerfeedback. Sie können anderen AdGuard-Benutzern (und perspektivisch sich selbst) jederzeit helfen, indem Sie uns Berichte direkt aus dem Assistenten der App oder von der [-Website](https://agrd.io/report) senden. Wenn Sie mehr über AdGuard-Filter wissen möchten, finden Sie hier [einige Informationen](/general/ad-filtering/adguard-filters).
 
