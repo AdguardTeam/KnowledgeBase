@@ -527,10 +527,10 @@ This modifier limits the rule scope to requests that use the specified set of HT
 - `@@||evil.com$method=get` unblocks only GET requests to `evil.com`.
 - `@@||evil.com$method=~post` unblocks any requests to `evil.com` except POST.
 
-:::note
+:::caution Restrictions
 
-Rules with mixed value restriction are considered invalid. So, for example, the rule
-`||evil.com^$method=get|~head` will be rejected.
+Rules with mixed negated and not negated values are considered invalid.
+So, for example, the rule `||evil.com^$method=get|~head` will be rejected.
 
 :::
 
