@@ -518,19 +518,25 @@ Rules with `$match-case` modifier currently are not supported by [AdGuard for iO
 
 #### **`$method`** {#method-modifier}
 
-This modifier limits the rule scope to requests that use the specified set of HTTP methods. Negated methods are allowed. The methods must be specified in all lowercase characters, but are matched case-insensitively. To add multiple methods to one rule, use the vertical bar `|` as a separator.
+This modifier limits the rule scope to requests that use the specified set of [HTTP methods][http-methods].
+Negated methods are allowed.
+The methods must be specified in all lowercase characters, but are matched case-insensitively.
+To add multiple domains to one rule, use the `|` character as a separator.
 
 **Examples**
 
-- `||evil.com^$method=get|head` blocks only GET and HEAD requests to `evil.com`.
-- `||evil.com^$method=~post|~put` blocks any requests to `evil.com` except POST or PUT.
-- `@@||evil.com$method=get` unblocks only GET requests to `evil.com`.
-- `@@||evil.com$method=~post` unblocks any requests to `evil.com` except POST.
+- `||example.org^$method=get|head` blocks only GET and HEAD requests to `example.org`.
+- `||example.org^$method=~post|~put` blocks any requests to `example.org` except POST or PUT.
+- `@@||example.org$method=get` unblocks only GET requests to `example.org`.
+- `@@||example.org$method=~post` unblocks any requests to `example.org` except POST.
 
 :::caution Restrictions
 
-Rules with mixed negated and not negated values are considered invalid.
-So, for example, the rule `||evil.com^$method=get|~head` will be rejected.
+1. The methods must be specified in all lowercase characters.
+   So, for example, the rule `||example.org^$method=GET` will be rejected.
+
+1. Rules with mixed negated and not negated values are considered invalid.
+   So, for example, the rule `||example.org^$method=get|~head` will be rejected.
 
 :::
 
@@ -4058,3 +4064,4 @@ If you need an advice on how to create your own filters properly, our forum has 
 [and-cb]: #what-product "AdGuard Content Blocker for Samsung Internet and Yandex Browser on Android"
 
 [sec-fetch-dest-header]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest
+[http-methods]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
