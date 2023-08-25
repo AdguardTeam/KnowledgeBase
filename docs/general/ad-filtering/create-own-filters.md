@@ -433,7 +433,7 @@ despite the pattern `||*page` may match specific domains.
 - `/banner\d+/$domain=targetdomain.com` will not be matched as it contains a regular expression.
 - `page$domain=targetdomain.com|~example.org` will not be matched because the referrer domain is explicitly excluded.
 
-#### `domain` modifier limitations {#domain-modifier-limitations}
+##### `$domain` modifier limitations {#domain-modifier-limitations}
 
 :::caution Limitations
 
