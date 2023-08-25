@@ -960,6 +960,13 @@ Blocking cookies and removing tracking parameters is achieved by using rules wit
 
 :::
 
+:::caution Restrictions
+
+- Modifier options should be lowercase, i.e. `$stealth=DPI` will be rejected.
+- Modifier options cannot be negated, i.e. `$stealth=~3p-cookie` will be rejected.
+
+:::
+
 :::info Compatibility
 
 - Stealth Mode is available in AdGuard for Windows, Mac, and Android, and AdGuard Browser Extension. All other products will ignore the rules with `$stealth` modifier.
