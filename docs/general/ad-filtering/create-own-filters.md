@@ -880,7 +880,11 @@ You can also exclude a userscript by adding a `~` character before it. In this c
 $extension=~"userscript name"
 ```
 
-**NOTE**: When excluding a userscript, you must place `~` outside the quotes.
+:::note
+
+When excluding a userscript, you must place `~` outside the quotes.
+
+:::
 
 If a userscript's name includes quotes (`"`), commas (`,`), or pipes (`|`), they must be escaped with a backslash (`\`).
 
