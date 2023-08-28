@@ -3266,19 +3266,26 @@ HTML filtering rules are supported by AdGuard for Windows, Mac, Android, and AdG
 
 :::
 
-**Syntax**
+### Syntax
 
 ```text
-      rule = [domains] "$$" tagName [attributes]
-   domains = [domain0, domain1[, ...[, domainN]]]
-attributes = "[" name0 = value0 "]" "[" name1 = value2 "]" ... "[" nameN = valueN "]"
+     selector = [tagName] [attributes] [pseudoClasses]
+   combinator = ">"
+         rule = [domains] "$$" selector *(combinator selector)
+      domains = [domain0, domain1[, ...[, domainN]]]
+   attributes = "[" name0 = value0 "]" "[" name1 = value2 "]" ... "[" nameN = valueN "]"
+pseudoClasses = pseudoClass *pseudoClass
+  pseudoClass = ":" pseudoName [ "(" pseudoArgs ")" ]
 ```
 
-- **`tagName`** — name of the element in lower case, for example, `div` or `script`.
-- **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules syntax](#elemhide-syntax).
-- **`attributes`** — a list of attributes, that limit the elements selection. `name` — attribute name, `value` — substring, that is contained in attribute value.
+* **`tagName`** — name of the element in lower case, for example, `div` or `script`.
+* **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules syntax](#elemhide-syntax).
+* **`attributes`** — a list of attributes, that limit the elements selection. `name` — attribute name, `value` — substring, that is contained in attribute value.
+* **`pseudoName`** — the name of a pseudo-class.
+* **`pseudoArgs`** — the arguments of a function-style pseudo-class.
+* **`combinator`** — an operator that works similarly to the [CSS child combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator): that is, the `selector` on the right of the `combinator` will only match an element whose direct parent matches the `selector` on the left of the `combinator`.
 
-**Examples**
+### Examples
 
 **HTML code:**
 
@@ -3294,11 +3301,17 @@ example.org$$script[data-src="banner"]
 
 This rule removes all `script` elements with the attribute `data-src` containing the substring `banner`. The rule applies only to `example.org` and all its subdomains.
 
-**Special attributes**
+### Special attributes
 
 In addition to usual attributes, which value is every element checked for, there is a set of special attributes that change the way a rule works. Below there is a list of these attributes:
 
-- **`tag-content`**
+#### `tag-content`
+
+:::caution Deprecation notice
+
+This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class where it is available.
+
+:::
 
 This is the most frequently used special attribute. It limits selection with those elements whose innerHTML code contains the specified substring.
 
@@ -3319,11 +3332,19 @@ Following rule will delete all `script` elements with a `banner` substring in th
 $$script[tag-content="banner"]
 ```
 
-**Nested elements**
+:::caution Limitations
 
-If we are dealing with multiple nested elements and they all fall within the same HTML filtering rule, they all are going to be deleted.
+The `tag-content` special attribute must not appear in a selector to the left of a `>` combinator.
 
-- **`wildcard`**
+:::
+
+#### `wildcard`
+
+:::caution Deprecation notice
+
+This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class where it is available.
+
+:::
 
 This special attribute works almost like `tag-content` and allows you to check the innerHTML code of the document. Rule will check if HTML code of the element fits to the [search pattern](https://en.wikipedia.org/wiki/Glob_(programming)).
 
@@ -3335,7 +3356,19 @@ For example:
 
 It will check, if the code of element contains two consecutive substrings `banner` and `text`.
 
-- **`max-length`**
+:::caution Limitations
+
+The `wildcard` special attribute must not appear in a selector to the left of a `>` combinator.
+
+:::
+
+#### `max-length`
+
+:::caution Deprecation notice
+
+This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class with a regular expression where it is available.
+
+:::
 
 Specifies the maximum length for content of HTML element. If this parameter is set and the content length exceeds the value, a rule does not apply to the element.
 
@@ -3351,7 +3384,19 @@ $$div[tag-content="banner"][max-length="400"]
 
 This rule will remove all the `div` elements, whose code contains the substring `banner` and the length of which does not exceed `400` characters.
 
-- **`min-length`**
+:::caution Limitations
+
+The `max-length` special attribute must not appear in a selector to the left of a `>` combinator.
+
+:::
+
+#### `min-length`
+
+:::caution Deprecation notice
+
+This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class with a regular expression where it is available.
+
+:::
 
 Specifies the minimum length for content of HTML element. If this parameter is set and the content length is less than preset value, a rule does not apply to the element.
 
@@ -3363,7 +3408,46 @@ $$div[tag-content="banner"][min-length="400"]
 
 This rule will remove all the `div` elements, whose code contains the substring `banner` and the length of which exceeds `400` characters.
 
-**Exceptions**
+:::caution Limitations
+
+The `min-length` special attribute must not appear in a selector to the left of a `>` combinator.
+
+:::
+
+### Pseudo-classes
+
+#### `:contains()`
+
+##### Syntax
+```
+:contains(unquoted text)
+```
+or
+```
+:contains(/reg(ular )?ex(pression)?/)
+```
+
+:::note Compatibility
+
+`:-abp-contains()` and `:has-text()` are synonyms for `:contains()`.
+
+:::
+
+:::info Compatibility
+
+The `:contains()` pseudo-class is supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.13 or later**.
+
+:::
+
+Requires that the inner HTML of the element contains the specified text or matches the specified regular expression.
+
+:::caution Limitations
+
+A `:contains()` pseudo-class must not appear in a selector to the left of a `>` combinator.
+
+:::
+
+### Exceptions
 
 Similar to hiding rules, there is a special type of rules that disable the selected HTML filtering rule for particular domains.
 The syntax is the same, you just have to change `$$` to `$@$`.
