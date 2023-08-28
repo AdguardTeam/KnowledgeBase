@@ -21,11 +21,11 @@ sidebar_position: 2
 
 ## Установка
 
-Чтобы установить AdGuard для Mac на компьютер, откройте браузер, наберите в адресной строке _adguard.com_ и [на открывшейся странице](https://adguard.com/download.html?auto=1) нажмите кнопку **Скачать**.
+To install AdGuard for Mac on your computer, launch your browser, type *adguard.com* in the address bar, and press **Download** [on the page that opens](https://adguard.com/download.html?auto=1).
 
 ![Скачайте приложение *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/1.jpg)
 
-Дождитесь окончания загрузки файла _AdguardInstaller.dmg_ и щёлкните мышью по его значку в списке загруженных объектов на Dock-панели.
+Wait for *AdguardInstaller.dmg* to download and double-click its icon in the list of downloaded files on the Dock panel.
 
 ![Дважды щёлкните, чтобы открыть файл](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation_open_the_file.jpg)
 
@@ -58,6 +58,7 @@ sidebar_position: 2
 ## Удаление
 
 ### Стандартное
+
 Откройте приложение «Finder», кликнув по соответствующей иконке:
 
 ![Откройте Finder](https://cdn.adtidy.org/public/Adguard/En/Articles/howtodelete/finder.png)

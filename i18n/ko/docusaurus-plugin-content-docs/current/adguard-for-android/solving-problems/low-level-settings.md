@@ -5,7 +5,7 @@ sidebar_position: 6
 
 :::info
 
-이 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Android용 AdGuard에 대해 다룹니다. 어떻게 동작하는지 알고 싶으시다면 [AdGuard 앱을 다운로드](https://adguard.com/download.html?auto=true) 해 보세요.
+이 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Android용 AdGuard에 대해 다룹니다. 어떻게 동작하는지 알고 싶으시다면 [AdGuard 앱을 다운로드](https://adguard.com/download.html?auto=true)해 보세요.
 
 :::
 
@@ -45,17 +45,17 @@ Bootstrap DNS for DoH, DoT, and DoQ servers. The *Automatic DNS* - the system DN
 
 Here you can specify the response type for domains blocked by DNS rules based on adblock rule syntax (for instance, `||example.org^`).
 
-*  Respond with REFUSED (default)
-*  Respond with NXDOMAIN
-*  Respond with Custom IP address (IPv4 and IPv6 addresses can be specified here)
+- Respond with REFUSED (default)
+- Respond with NXDOMAIN
+- Respond with Custom IP address (IPv4 and IPv6 addresses can be specified here)
 
 #### 호스트 규칙에 대한 차단 모드
 
 Here you can specify the response type for domains blocked by DNS rules based on hosts rule syntax (for instance, `<ip> <domain> 0.0.0.0 example.com`).
 
-*  Respond with REFUSED
-*  Respond with NXDOMAIN
-*  Respond with Custom IP address (IPv4 and IPv6 addresses can be specified here) – default
+- Respond with REFUSED
+- Respond with NXDOMAIN
+- Respond with Custom IP address (IPv4 and IPv6 addresses can be specified here) – default
 
 #### DNS request timeout
 

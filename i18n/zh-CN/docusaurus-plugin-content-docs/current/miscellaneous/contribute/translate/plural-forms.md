@@ -145,12 +145,12 @@ and **template 2** is Standard license for *%count%* computers
 
 重申一次：如果您遇到包含两个重要元素的原始词组：**竖线符号**和 **％count％** 占位符，请执行以下操作：
 
-+ 指翻译成一种语言的复数规则；
+- 指翻译成一种语言的复数规则；
 
 The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms — two templates in translations; five plural forms — five templates, etc.
 
-+ 不要忘记在模板之间使用竖线符号；
+- 不要忘记在模板之间使用竖线符号；
 
-+ 请勿翻译，填写或删除 **％count％** 占位符。
+- 请勿翻译，填写或删除 **％count％** 占位符。
 
 By following these simple rules you will help AdGuard developers avoid a lot of unnecessary complications during the localization process.

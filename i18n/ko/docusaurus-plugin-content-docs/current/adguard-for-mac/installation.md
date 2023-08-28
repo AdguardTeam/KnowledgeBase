@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-이 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Mac용 AdGuard에 대해 다룹니다. 어떻게 동작하는지 알고 싶으시다면 [AdGuard 앱을 다운로드](https://adguard.com/download.html?auto=true) 해 보세요.
+이 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Mac용 AdGuard에 대해 다룹니다. 어떻게 동작하는지 알고 싶으시다면 [AdGuard 앱을 다운로드](https://adguard.com/download.html?auto=true)해 보세요.
 
 :::
 
@@ -21,11 +21,11 @@ sidebar_position: 2
 
 ## 설치 방법
 
-To install AdGuard for Mac on your computer, launch your browser, type _adguard.com_ in the address bar, and press **Download** [on the page that opens](https://adguard.com/download.html?auto=1).
+To install AdGuard for Mac on your computer, launch your browser, type *adguard.com* in the address bar, and press **Download** [on the page that opens](https://adguard.com/download.html?auto=1).
 
 ![앱 다운로드 *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/1.jpg)
 
-_AdguardInstaller.dmg_가 다운로드될 때까지 기다렸다가 Dock 패널에 다운로드된 파일 목록에서 해당 아이콘을 두 번 클릭합니다.
+Wait for *AdguardInstaller.dmg* to download and double-click its icon in the list of downloaded files on the Dock panel.
 
 ![Double-click to open the file](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation_open_the_file.jpg)
 
@@ -58,6 +58,7 @@ AdGuard가 처음 시작되면 운영 체제에서 이 프로그램이 인터넷
 ## 제거 방법
 
 ### 일반 제거 방법
+
 Finder 앱을 엽니다.
 
 ![폴더 열기](https://cdn.adtidy.org/public/Adguard/En/Articles/howtodelete/finder.png)

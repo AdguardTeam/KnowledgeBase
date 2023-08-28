@@ -5,7 +5,7 @@ sidebar_position: 6
 
 :::info
 
-본 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Windows용 AdGuard에 대해 다룹니다. 어떻게 동작하는지 알고 싶으시다면 [AdGuard 앱을 다운로드](https://adguard.com/download.html?auto=true) 해 보세요.
+본 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Windows용 AdGuard에 대해 다룹니다. 어떻게 동작하는지 알고 싶으시다면 [AdGuard 앱을 다운로드](https://adguard.com/download.html?auto=true)해 보세요.
 
 :::
 
@@ -22,7 +22,6 @@ This error occurs when there's something wrong with permissions. There may be se
 - Reboot your computer. Sometimes the permission issues are temporary and can be solved by restarting the PC.
 
 ### Error 112: Disk is full, Error 1632: Temporary folder full or inaccessible {#error-112}
-
 
 These are two different errors with very similar solutions. As their names suggest, AdGuard installer didn't find enough disk space to complete the installation. There are several things you can attempt to fix the problem:
 

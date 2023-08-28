@@ -18,18 +18,20 @@ sidebar_position: 1
 ## 追加可能なデバイス数{#devices}
 
 ライセンスの種類によって、使用できるデバイスの数は異なります:
-* パーソナル（デバイス3台まで）
-* ファミリー（デバイス9台まで）
-* iOS用「AdGuard Pro」アプリ（デバイス1台）
+
+- パーソナル（デバイス3台まで）
+- ファミリー（デバイス9台まで）
+- iOS用「AdGuard Pro」アプリ（デバイス1台）
 
 To use your license on a device, log in to your [AdGuard account](../../account/features) on it. To extend the device limit, you can [upgrade](../activation#how-to-upgrade-a-license) your license.
 
 ## AdGuardライセンスキーとは？{#license-key}
 
 A license key is a unique sequence of characters that represents an AdGuard Ad Blocker license. It is automatically registered for the email you used for license purchase. With a license key, you can:
-* 一部の製品（AdGuard for Windowsなど）で、AdGuardアカウントにログインできます。
-* AdGuardアカウントがまだなくても、AdGuard製品内で[ライセンスを有効にする](../activation)ことができます。
-* ライセンスをAdGuardアカウントに紐付け・紐付け解除をすることができます。
+
+- 一部の製品（AdGuard for Windowsなど）で、AdGuardアカウントにログインできます。
+- AdGuardアカウントがまだなくても、AdGuard製品内で[ライセンスを有効にする](../activation)ことができます。
+- ライセンスをAdGuardアカウントに紐付け・紐付け解除をすることができます。
 
 When unbinding a license, be sure you write the license key down beforehand or note in some other (safe) way. You'll need the key for re-binding your license or transferring it to another account.
 

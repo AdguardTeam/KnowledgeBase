@@ -95,49 +95,49 @@ DNS-сервер — это вторая опция, которую вы уви�
 
 ### DNS-фильтрация {#dns-filtering}
 
-DNS filtering allows you to customize your DNS traffic by enabling AdGuard DNS filter, adding custom DNS filters, and using the DNS blocklist/allowlist.
+DNS-фильтрация позволяет настроить DNS-трафик: можно включить DNS-фильтр AdGuard, добавить собственные DNS-фильтры и использовать чёрный или белый список DNS.
 
 How to access:
 
-*Protection* icon (the shield icon in the bottom menu bar) → *DNS protection* → *DNS filtering*
+*Защита* (значок щита в нижней строке меню) → *DNS-защита* → *DNS-фильтрация*
 
-![DNS filtering screen *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_filtering_en.jpeg)
+![Экран DNS-фильтрации *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_filtering_en.jpeg)
 
 #### DNS-фильтры {#dns-filters}
 
-Similar to filters that work in Safari, DNS filters are sets of rules written according to special [syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/). AdGuard will monitor your DNS traffic and block requests that match one or more rules. You can use filters such as [AdGuard DNS filter](https://github.com/AdguardTeam/AdguardSDNSFilter) or add hosts files as filters. Multiple filters can be added simultaneously. To know how to do it, get acquainted with [this exhaustive manual](../solving-problems/system-wide-filtering).
+Подобно фильтрам, которые работают в Safari, DNS-фильтры представляют собой наборы правил, написанных в соответствии со специальным [синтаксисом](https://adguard-dns.io/kb/general/dns-filtering-syntax/). AdGuard будет отслеживать ваш DNS-трафик и блокировать запросы, подходящие под одно или несколько правил. Вы можете использовать такие фильтры, как [AdGuard DNS](https://github.com/AdguardTeam/AdguardSDNSFilter), или добавлять файлы hosts в качестве фильтров. Также вы можете добавить несколько фильтров одновременно. Чтобы узнать, как это сделать, ознакомьтесь с [исчерпывающим руководством](../solving-problems/system-wide-filtering).
 
 #### Белый и чёрный список {#allowlist-blocklist}
 
-On top of DNS filters, you can have targeted impact on DNS filtering by adding single domains to Blocklist or to Allowlist. Blocklist even supports the same DNS syntax, and both of them can be imported and exported, just like Allowlist in Safari content blocking.
+Вы можете точечно влиять на DNS-фильтрацию не только с помощью DNS-фильтров, но и добавляя отдельные домены в списки. Чёрный список даже поддерживает тот же синтаксис для DNS-фильтрации, и оба списка можно импортировать и экспортировать, как и Белый список в блокировке контента Safari.
 
 ### Расширенная защита {#advanced-protection}
 
-In iOS 15 Apple has added the support for Safari Web Extensions, and we in turn added a new *Advanced protection* module to AdGuard for iOS. It allows AdGuard to apply advanced filtering rules, such as CSS rules, CSS selectors, and scriptlets, and therefore to deal even with the complex ads, such as YouTube ads.
+В iOS 15 Apple добавил поддержку веб-расширений для Safari, а мы, в свою очередь, добавили в AdGuard для iOS новый модуль *Расширенная защита*. Благодаря ему AdGuard может применять расширенные правила фильтрации, такие как CSS-правила, CSS-селекторы и скриптлеты, и тем самым способен бороться со сложной рекламой, такой как реклама на YouTube.
 
-![Advanced protection screen *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_15_en.jpeg)
+![Экран расширенной защиты *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_15_en.jpeg)
 
-To enable *Advanced protection*, open the *Protection* tab by tapping the second left icon at the bottom of the screen, select the *Advanced protection* module, activate the feature by toggling the switch slider, and follow the instructions below.
+Чтобы включить *Расширенную защиту*, откройте вкладку *Защита*, нажав на вторую слева иконку внизу экрана, выберите модуль *Расширенная защита*, активируйте его и следуйте инструкции ниже.
 
 :::note
 
-The *Advanced protection* only works on iOS 15 and later versions. If you are using earlier versions of iOS, you will see the *YouTube ad blocking* module in the app instead of the *Advanced protection*.
+*Расширенная защита* работает только на iOS 15 и более поздних версиях. Если вы используете более ранние версии iOS, в приложении вместо модуля *Расширенная защита* вы увидите модуль *Блокировка рекламы на YouTube*.
 
 :::
 
-![Protection screen on iOS 14 and earlier *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_14_en.jpeg)
+![Экран «Защита» на iOS 14 и более ранних версиях *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_14_en.jpeg)
 
 ### Совместимость с AdGuard VPN {#compatibility}
 
-In most cases, the ad blocker and the VPN application cannot work together, simply because there are certain system limitations. Nevertheless we've managed to find a solution to befriend [AdGuard VPN](https://adguard-vpn.com/) and AdGuard Ad Blocker. For your convenience we've added the *AdGuard VPN* block to the *Protection* section, so you can easily switch between two apps.
+В большинстве случаев блокировщик рекламы и VPN-приложение не могут работать вместе, просто потому что существуют определённые системные ограничения. Несмотря на это, нам удалось найти решение, как «подружить» [AdGuard VPN](https://adguard-vpn.com/) и Блокировщик AdGuard. For your convenience we've added the *AdGuard VPN* block to the *Protection* section, so you can easily switch between two apps.
 
 ### Помощник {#assistant}
 
-![Safari Assistant *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/assistant_en.jpeg)
+![Помощник Сафари *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/assistant_en.jpeg)
 
-Assistant is a tool that helps you manage filtering in Safari right from the browser without switching back to the app.
+Помощник — это инструмент, который помогает вам управлять фильтрацией прямо из Safari, не возвращаясь в приложение.
 
-To see it, do the following: open Safari and tap the arrow-in-a-box symbol. Then scroll down to AdGuard/AdGuard Pro (depending on the app you use) and tap it to fetch a window with several options:
+Чтобы увидеть его, откройте Safari и нажмите на иконку коробки со стрелкой вверх. Проскролльте до AdGuard/AdGuard Pro (в зависимости от того, что у вас установлено) и нажмите на него — откроется окно с несколькими опциями:
 
 1. **Включить на этом сайте.** Выключите, чтобы добавить текущий домен в Белый список.
 2. **Заблокировать элемент на этой странице.** Нажмите, чтобы перейти в режим «Блокировка элемента»: выберите любой элемент на странице, отрегулируйте размер, нажимая «+» или «-», воспользуйтесь предварительным просмотром, если необходимо, и нажмите на галочку, чтобы подтвердить. Выбранный элемент будет скрыт со страницы, а соответствующее правило — добавлено в Пользовательские правила. Уберите или отключите его, чтобы вернуть блокировку.
@@ -145,7 +145,7 @@ To see it, do the following: open Safari and tap the arrow-in-a-box symbol. Then
 
 :::tip
 
-On iOS 15 devices, the Assistant features are available through [AdGuard Safari Web Extension](../web-extension), which enhances the capabilities of AdGuard for iOS and allows you to take advantage of iOS 15. With this web extension, AdGuard can apply advanced filter rules and, as a result, block more ads.
+На устройствах с iOS 15 функции Помощника доступны через [веб-расширение AdGuard для Safari](../web-extension), которое увеличивает возможности приложения AdGuard для iOS и позволяет использовать преимущества iOS 15. With this web extension, AdGuard can apply advanced filter rules and, as a result, block more ads.
 
 :::
 
@@ -192,6 +192,7 @@ For any DNS query sent to get an IPv6 address, our app returns an empty response
 Fallback is a backup DNS server. If you chose a DNS server and something happened to it, a fallback is needed to set the backup DNS server until the main server responds.
 
 With Bootstrap, it’s a little more complicated. For AdGuard for iOS to use a custom secure DNS server, our app needs to get its IP address first. For this purpose, the system DNS is used by default, but sometimes this is not possible for various reasons. In such cases, Bootstrap could be used to get the IP address of the selected secure DNS server. Here are two examples to illustrate when a custom Bootstrap server might help:
+
 1. Когда системный DNS-сервер, выбранный по умолчанию, не возвращает IP-адрес защищённого DNS-сервера и последний невозможно использовать.
 2. Когда наше приложение и сторонний VPN используются одновременно и невозможно использовать системный DNS в качестве Bootstrap.
 
@@ -219,7 +220,7 @@ If this setting is enabled, AdGuard will use only Wi-Fi for background filter up
 
 - **Инвертировать белый список**
 
-An alternative mode for Safari filtering, it unblocks ads everywhere except for the specified websites from the list. Disabled by default.
+An alternative mode for Safari filtering, it unblocks ads everywhere except for the specified websites from the list. По умолчанию отключён.
 
 - **Расширенный режим**
 

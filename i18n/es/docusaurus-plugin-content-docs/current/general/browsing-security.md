@@ -21,7 +21,7 @@ The figure below provides a general understanding of how the Browsing Security m
 
 ### Extensión de navegador AdGuard
 
-Browser extensions work differently, using the so-called [_Lookup API_](https://github.com/AdguardTeam/AdguardForAndroid/issues/162#issue-115487668) to check the pages you visit. Every time you visit any website, your local client exchanges information with our backend server in the form of hashes and hash prefixes. For those interested in the process at a deeper level, the link above will be helpful. As a result of that exchange, the local client determines if the website belongs to the database of potentially dangerous websites or not.
+Browser extensions work differently, using the so-called [*Lookup API*](https://github.com/AdguardTeam/AdguardForAndroid/issues/162#issue-115487668) to check the pages you visit. Every time you visit any website, your local client exchanges information with our backend server in the form of hashes and hash prefixes. For those interested in the process at a deeper level, the link above will be helpful. As a result of that exchange, the local client determines if the website belongs to the database of potentially dangerous websites or not.
 
 We bring to your attention that we never get any information that could allow us to determine which websites you visit and use that data in any way.
 
@@ -35,7 +35,7 @@ We currently maintain two AdGuard filters. One protects against phishing and fra
 
 ### Phishing sites filter
 
-_Phishing_ is a type of online fraud aimed at gaining access to confidential data of users — username and password. If you are interested in this topic, we suggest that you read [this article at Wikipedia](http://en.wikipedia.org/wiki/Phishing).
+*Phishing* is a type of online fraud aimed at gaining access to confidential data of users — username and password. If you are interested in this topic, we suggest that you read [this article at Wikipedia](http://en.wikipedia.org/wiki/Phishing).
 
 Apart from phishing sites, this filter also covers different fraudulent sites, including all kinds of scams, sales of nonexistent content, and such.
 
@@ -49,7 +49,7 @@ Our filters are constantly filled with new addresses. Since most of the work is 
 
 ### AdGuard Browsing Security Community
 
-An important tool for maintaining the highest level of filtering is _AdGuard Browsing Security Community_. Any user of our products — be it AdGuard for Windows or our browser extension — can become a member of the community and help us in the making of AdGuard filters.
+An important tool for maintaining the highest level of filtering is *AdGuard Browsing Security Community*. Any user of our products — be it AdGuard for Windows or our browser extension — can become a member of the community and help us in the making of AdGuard filters.
 
 In the picture below we described an algorithm of Browsing Security Community work:
 

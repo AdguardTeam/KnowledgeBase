@@ -25,21 +25,21 @@ On the Internet, you can find a lot of applications that are aimed at fighting t
 
 Let's take AdwareCleaner as an example. After the application has been downloaded and successfully installed, take the following steps:
 
-1) Start the application and click **Scan now**.
+1. Start the application and click **Scan now**.
 
 ![adware1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware1.png)
 
-2) Once the scan has been completed, you will need to send suspicious objects to **Quarantine**.
+1. Once the scan has been completed, you will need to send suspicious objects to **Quarantine**.
 
 ![adware2 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware2.png)
 
-3) When the items are moved to **Quarantine**, you will be able to **Clear the system** of unnecessary ballast.
+1. When the items are moved to **Quarantine**, you will be able to **Clear the system** of unnecessary ballast.
 
-4) In some cases, you may need to **Reboot the system** after cleaning is complete.
+1. In some cases, you may need to **Reboot the system** after cleaning is complete.
 
 ![adware3 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware3.png)
 
-5) Once the system has been rebooted, cleaning will be completed. If necessary, you can always read the **Report** on the work done.
+1. Once the system has been rebooted, cleaning will be completed. If necessary, you can always read the **Report** on the work done.
 
 ![adware4 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware4.png)
 
@@ -53,11 +53,11 @@ Further on this page we describe the instructions on how to remove some of the m
 
 Below are the instructions on how to disable settings and extensions for the most popular browsers:
 
-* [for Google Chrome](https://support.google.com/chrome/answer/187443?hl=en)
+- [for Google Chrome](https://support.google.com/chrome/answer/187443?hl=en)
 
-* [for Mozilla Firefox](https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons)
+- [for Mozilla Firefox](https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons)
 
-* [for Opera](https://help.opera.com/en/latest/customization/#extensions)
+- [for Opera](https://help.opera.com/en/latest/customization/#extensions)
 
 ## How to recreate shortcuts for your browsers {#shortcuts}
 

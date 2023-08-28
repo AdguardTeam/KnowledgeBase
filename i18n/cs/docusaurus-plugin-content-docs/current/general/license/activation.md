@@ -21,84 +21,88 @@ Případně můžete k aktivaci použít [licenční klíč](../what-is#license-
 
 1. Otevřete AdGuard
 
-Chcete-li to provést, dvakrát klikněte na ikonu AdGuardu na ploše:
+    Chcete-li to provést, dvakrát klikněte na ikonu AdGuardu na ploše:
 
-![AdGuard icon on the desktop](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowsEn.png)
+    ![AdGuard icon on the desktop](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowsEn.png)
 
-nebo dvakrát klikněte na ikonu AdGuardu na hlavním panelu:
+    nebo dvakrát klikněte na ikonu AdGuardu na hlavním panelu:
 
-![AdGuard icon in the system tray](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windows2En.png)
+    ![AdGuard icon in the system tray](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windows2En.png)
 
-2. Přejděte na kartu **Licence** v nabídce a klikněte na **Aktivovat licenci**
+1. Přejděte na kartu **Licence** v nabídce a klikněte na **Aktivovat licenci**
 
-![Click Activate license](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowslicense1en.png)
+    ![Click Activate license](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowslicense1en.png)
 
-3. Zobrazí se dvě možnosti aktivace:
+1. Zobrazí se dvě možnosti aktivace:
 
-- Zadáním **e-mailu** a **hesla** z vašeho **AdGuard účtu** (nebo z vašeho účtu Facebook, Google nebo Apple)
+    - Zadáním **e-mailu** a **hesla** z vašeho **AdGuard účtu** (nebo z vašeho účtu Facebook, Google nebo Apple)
 
-![Log in to your AdGuard account](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowslicense2en.png)
+        ![Log in to your AdGuard account](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowslicense2en.png)
 
-- Zadáním **licenčního klíče**
+    - Zadáním **licenčního klíče**
 
-![Enter license key](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowslicense3en.png)
+        ![Enter license key](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowslicense3en.png)
 
 ### Aktivace AdGuardu pro Mac
 
 1. Otevřete AdGuard (klikněte na ikonu AdGuardu na liště nabídek)
 
-![AdGuard icon in the menu bar](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/mac1.png)
+    ![AdGuard icon in the menu bar](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/mac1.png)
 
-2. Klikněte na **ikonu ozubeného kola** v pravém horním rohu
-3. Klikněte na položku **Licence**
+1. Klikněte na **ikonu ozubeného kola** v pravém horním rohu
 
-![Go to Settings and License *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/macEn.png)
+1. Klikněte na položku **Licence**
 
-4. V otevřeném okně stiskněte tlačítko **Aktivovat**
+    ![Go to Settings and License *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/macEn.png)
 
-![Press Activate](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/maclicenseen1.png)
+1. V otevřeném okně stiskněte tlačítko **Aktivovat**
 
-5. Zobrazí se dvě možnosti aktivace:
-- Zadáním **e-mailu** a **hesla** z vašeho **AdGuard účtu** (nebo z vašeho účtu Facebook, Google nebo Apple)
+    ![Press Activate](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/maclicenseen1.png)
 
-![Log in to your AdGuard account to activate](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/maclicenseen2.png)
+1. Zobrazí se dvě možnosti aktivace:
 
-- Zadáním **licenčního klíče**
+    - Zadáním **e-mailu** a **hesla** z vašeho **AdGuard účtu** (nebo z vašeho účtu Facebook, Google nebo Apple)
 
-![Enter your license key to activate](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/maclicenseen3.png)
+        ![Log in to your AdGuard account to activate](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/maclicenseen2.png)
+
+    - Zadáním **licenčního klíče**
+
+        ![Enter your license key to activate](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/maclicenseen3.png)
 
 ### Aktivace AdGuardu pro Android
 
 1. Otevřete AdGuard
-2. Klepněte na ikonu **(☰)** v levém horním rohu obrazovky
-3. Klepněte na **Získat Premium** (nebo klepněte na **Stav licence**)
 
-![Tap Get Premium or License Status *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/androidlicense1en.png)
+1. Klepněte na ikonu **(☰)** v levém horním rohu obrazovky
 
-4. Klepněte na ikonu **(⋮)** v pravém horním rohu obrazovky
+1. Klepněte na **Získat Premium** (nebo klepněte na **Stav licence**)
 
-![Tap three-dot menu *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/android2En.png)
+    ![Tap Get Premium or License Status *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/androidlicense1en.png)
 
-5. Stiskněte **Aktivovat Premium**, zobrazí se vám dvě možnosti aktivace:
+1. Klepněte na ikonu **(⋮)** v pravém horním rohu obrazovky
 
-- Zadáním **e-mailu** a **hesla** z vašeho **AdGuard účtu** (nebo z vašeho účtu Facebook nebo Google)
+    ![Tap three-dot menu *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/android2En.png)
 
-![Log in to activate *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/androidlicense2en.png)
+1. Stiskněte **Aktivovat Premium**, zobrazí se vám dvě možnosti aktivace:
 
-- Zadáním **licenčního klíče**
+    - Zadáním **e-mailu** a **hesla** z vašeho **AdGuard účtu** (nebo z vašeho účtu Facebook nebo Google)
 
-![Enter your license key to activate *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/androidlicense3en.png)
+        ![Log in to activate *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/androidlicense2en.png)
+
+    - Zadáním **licenčního klíče**
+
+        ![Enter your license key to activate *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/androidlicense3en.png)
 
 ### Aktivace AdGuardu pro iOS
 
 1. Otevřete aplikaci AdGuard a klepněte na ikonu **ozubeného kola** v pravém dolním rohu obrazovky
 
-2. Klepněte na položku **Licence**
+1. Klepněte na položku **Licence**
 
-3. Klepněte na položku **Přihlásit se** v pravém horním rohu obrazovky
+1. Klepněte na položku **Přihlásit se** v pravém horním rohu obrazovky
 
-![Tap Log in in the top right corner of the Premium screen *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense1en.png)
+    ![Tap Log in in the top right corner of the Premium screen *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense1en.png)
 
-4. Zadejte **e-mail** a **heslo** z vašeho **AdGuard účtu**
+1. Zadejte **e-mail** a **heslo** z vašeho **AdGuard účtu**
 
-![Log in *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense2en.png)
+    ![Log in *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense2en.png)

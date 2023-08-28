@@ -5,7 +5,7 @@ sidebar_position: 9
 
 :::info
 
-본 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Windows용 AdGuard에 대해 다룹니다. 어떻게 동작하는지 알고 싶으시다면 [AdGuard 앱을 다운로드](https://adguard.com/download.html?auto=true) 해 보세요.
+본 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Windows용 AdGuard에 대해 다룹니다. 어떻게 동작하는지 알고 싶으시다면 [AdGuard 앱을 다운로드](https://adguard.com/download.html?auto=true)해 보세요.
 
 :::
 
@@ -19,10 +19,10 @@ The DNS server addresses could be written as IPs or as domain names. In the case
 
 **To eliminate this leak:**
 
-* go to the *Advanced settings*
-* scroll down to the *List of custom bootstrap addresses* section
-* enter the custom bootstrap address in IP address format (you may use [the list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/))
-* click *Save*
+- go to the *Advanced settings*
+- scroll down to the *List of custom bootstrap addresses* section
+- enter the custom bootstrap address in IP address format (you may use [the list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/))
+- click *Save*
 
 ## Fallback DNS server
 
@@ -30,19 +30,19 @@ It could happen that AdGuard cannot reach the specified server because of a weak
 
 **To eliminate this leak:**
 
-* go to the *Advanced settings*
-* scroll down to the *Fallback servers* section
-* check the *Use custom servers* option
-* then find the *List of custom fallback servers* section and enter custom fallback servers one per line
+- go to the *Advanced settings*
+- scroll down to the *Fallback servers* section
+- check the *Use custom servers* option
+- then find the *List of custom fallback servers* section and enter custom fallback servers one per line
 
 or
 
-* go to the *Advanced settings*
-* scroll down to the *Fallback servers* section
-* check the *Don’t use fallback servers* option
+- go to the *Advanced settings*
+- scroll down to the *Fallback servers* section
+- check the *Don’t use fallback servers* option
 
 or
 
-* go to the *Advanced settings*
-* scroll down to the *DNS server timeout period* section
-* enter an arbitrary large number
+- go to the *Advanced settings*
+- scroll down to the *DNS server timeout period* section
+- enter an arbitrary large number

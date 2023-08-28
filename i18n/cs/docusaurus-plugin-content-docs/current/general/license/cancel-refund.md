@@ -20,7 +20,8 @@ Předplatné zakoupené v App Store lze spravovat v účtu App Store nebo v nast
 V souladu s našimi [Podmínkami prodeje](https://adguard.com/terms-of-sale.html) můžete získat 100% náhradu za licenční klíč AdGuardu, který jste zakoupili na https://adguard.com. Chcete-li získat peníze zpět, kontaktujte náš tým podpory na adrese **support@adguard.com** a uveďte způsob platby, který jste použili.
 
 Refundace může být zamítnuta, pokud:
-* byla licence zakoupena před více než 60 dny,
-* byla licence zakoupena od distributora,
-* byla licence zakoupena v App Store,
-* jste požádali o částečné vrácení peněz za upgrade nebo obnovení licenčního klíče.
+
+- byla licence zakoupena před více než 60 dny,
+- byla licence zakoupena od distributora,
+- byla licence zakoupena v App Store,
+- jste požádali o částečné vrácení peněz za upgrade nebo obnovení licenčního klíče.

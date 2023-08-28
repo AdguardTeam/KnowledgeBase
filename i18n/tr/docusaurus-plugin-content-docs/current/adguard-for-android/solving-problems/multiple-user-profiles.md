@@ -37,29 +37,36 @@ This approach is available starting from **AdGuard v3.5 nightly 6**. If you're u
 
 :::
 
-1. **Geliştirici modunu** etkinleştirin ve **USB hata ayıklamayı** etkinleştirin:
-- Open the **Settings** app phone;
-- **Sistem** bölümüne gidin (ayarlar menüsündeki son öğe). Bu bölümde **Telefon hakkında** alt öğesini bulun;
-- **Yapı numarası** satırına 7 kez dokunun. Bundan sonra, artık **Bir geliştirici olduğunuza dair** bir bildirim alırsınız (Gerekirse, cihaz için bir kilit açma kodu girin);
-- **Sistem Ayarları** → **Geliştirici Seçenekleri** öğesini açın → Aşağı kaydırın ve **USB hata ayıklaması** öğesini etkinleştirin → Uyarıyı dikkatlice okuduktan sonra **USB hata ayıklamasına izin ver** penceresinde hata ayıklamanın etkinleştirildiğini onaylayın.
+1. Activate the **developer mode** and enable **USB debugging**:
 
-:::note
+    - Open the **Settings** app phone;
+    - Go to **System** section (last item in the settings menu). In this section, find the sub-item **About phone**;
+    - Tap the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
+    - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
 
-If you have any difficulties or additional questions, full instructions can be found [here](https://developer.android.com/studio/debug/dev-options).
+    :::note
+
+    If you have any difficulties or additional questions, full instructions can be found [here](https://developer.android.com/studio/debug/dev-options).
+
 
 :::
 
-2. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
-3. Connect your device using a **USB cable** to the computer or laptop on which you installed **ADB**;
-4. Open **the command line** on your PC:
-- **Cmd.exe** if you are using **Windows**;
-- **Terminal** if you are using **macOS**;
-5. Enter the command `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` and press **Enter**.
+1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+
+1. Connect your device using a **USB cable** to the computer or laptop on which you installed **ADB**;
+
+1. Open **the command line** on your PC:
+
+    - **Cmd.exe** if you are using **Windows**;
+    - **Terminal** if you are using **macOS**;
+
+1. Enter the command `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` and press **Enter**.
 
 ### Option 2: Remove *restricted user account*
 
 About how to manage user accounts from an Android device you can [find here](https://support.google.com/a/answer/6223444?hl=en).
-> :::note
+
+:::note
 
 In some cases restricted user accounts are created implicitly and cannot be removed. For instance, when you use Dual messenger or Dual app features on **Samsung** or **LG** devices. You can read below how to fix the issue in these cases.
 
@@ -89,5 +96,3 @@ Owners of **LG** or **Samsung** phones may also encounter a similar issue. It ca
 - Scroll down and press **Dual app**;
 - Tüm uygulamaları listeden kaldırın;
 - Reboot your device.
-
-

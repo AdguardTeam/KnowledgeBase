@@ -25,42 +25,42 @@ AdGuard не антивирус. Он может предупредить вас
 
 Возьмём AdwareCleaner в качестве примера. После загрузки и успешной установки приложения выполните следующие действия:
 
-1) Запустите приложение и нажмите **Сканировать сейчас**.
+1. Start the application and click **Scan now**.
 
 ![adware1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware1.png)
 
-2) После завершения сканирования вам необходимо отправить подозрительные объекты в **Карантин**.
+1. Once the scan has been completed, you will need to send suspicious objects to **Quarantine**.
 
 ![adware2 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware2.png)
 
-3) Когда они будут перемещены в **Карантин**, вы сможете **Очистить систему** от ненужного мусора.
+1. When the items are moved to **Quarantine**, you will be able to **Clear the system** of unnecessary ballast.
 
-4) В некоторых случаях после завершения очистки может потребоваться **Перезагрузка системы** .
+1. In some cases, you may need to **Reboot the system** after cleaning is complete.
 
 ![adware3 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware3.png)
 
-5) После перезагрузки системы очистка будет завершена. При необходимости вы всегда можете ознакомиться с отчётом **** о проделанной работе.
+1. Once the system has been rebooted, cleaning will be completed. If necessary, you can always read the **Report** on the work done.
 
 ![adware4 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware4.png)
 
-Если это не помогло, временно отключите все расширения и некоторые другие настройки в браузере согласно [этим инструкциям](#instructions).
+If it didn’t help, temporary disable all extensions and some other settings in the browser according to [these instructions](#instructions).
 
-Если отключение настроек и расширений не помогает, попробуйте [воссоздать ярлыки ваших браузеров](#shortcuts).
+If disabling of settings and extensions does not help, try to [recreate shortcuts of your browsers](#shortcuts).
 
-Далее на этой странице мы опишем инструкции по удалению некоторых наиболее часто встречающихся рекламных расширений.
+Further on this page we describe the instructions on how to remove some of the most commonly encountered ad extensions.
 
 ## Как отключить настройки и расширения в браузере {#instructions}
 
-Ниже приведены инструкции по отключению настроек и расширений для наиболее популярных браузеров:
+Below are the instructions on how to disable settings and extensions for the most popular browsers:
 
-* [для Google Chrome](https://support.google.com/chrome/answer/187443?hl=ru)
+- [для Google Chrome](https://support.google.com/chrome/answer/187443?hl=ru)
 
-* [для Mozilla Firefox](https://support.mozilla.org/ru/kb/disable-or-remove-add-ons)
+- [для Mozilla Firefox](https://support.mozilla.org/ru/kb/disable-or-remove-add-ons)
 
-* [для Opera](https://help.opera.com/ru/latest/customization/#extensions)
+- [для Opera](https://help.opera.com/ru/latest/customization/#extensions)
 
 ## Как воссоздать ярлыки для браузеров {#shortcuts}
 
-Очень часто вредоносные и рекламные программы устанавливают свою домашнюю страницу очень простым способом — они подменяют ярлык браузера на рабочем столе, панель задач и пункты меню *Start* .
+Very often, malware and adware programs install their homepage in a very simple way — they substitute your browser's desktop shortcut, taskbar and *Start* menu items.
 
-Самое простое решение в этом случае — вручную удалить все ярлыки и создать их заново самостоятельно.
+The simplest solution in this case is to manually delete all the shortcuts and recreate them by yourself.

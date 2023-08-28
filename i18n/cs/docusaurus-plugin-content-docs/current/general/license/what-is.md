@@ -18,18 +18,20 @@ Některé licence je třeba zakoupit (např. Blokátor reklam AdGuard), někter�
 ## Kolik zařízení je možné přidat{#devices}
 
 Různé licence lze používat s různým počtem zařízení:
-* Osobní: až pro 3 zařízení,
-* Rodinná: až pro 9 zařízení,
-* AdGuard Pro pro iOS: jedno zařízení.
+
+- Osobní: až pro 3 zařízení,
+- Rodinná: až pro 9 zařízení,
+- AdGuard Pro pro iOS: jedno zařízení.
 
 Chcete-li použít svou licenci na zařízení, přihlaste se na něm ke svému [AdGuard účtu](../../account/features). Chcete-li rozšířit limit zařízení, můžete provést [upgrade](../activation#how-to-upgrade-a-license) licence.
 
 ## Co je licenční klíč{#license-key}
 
 Licenční klíč je jedinečná sekvence znaků, která představuje licenci Blokátoru reklam AdGuard. Automaticky se zaregistruje na e-mail, který jste použili při nákupu licence. Pomocí licenčního klíče můžete:
-* přihlásit se ke svému AdGuard účtu v některých produktech (např. AdGuard pro Windows),
-* [aktivovat si licenci](../activation) v produktu, pokud nemáte AdGuard účet,
-* připojit licenci na AdGuard účet a zrušit její vazbu.
+
+- přihlásit se ke svému AdGuard účtu v některých produktech (např. AdGuard pro Windows),
+- [aktivovat si licenci](../activation) v produktu, pokud nemáte AdGuard účet,
+- připojit licenci na AdGuard účet a zrušit její vazbu.
 
 Při odpojení licence si předem zapište licenční klíč nebo si jej poznamenejte jiným (bezpečným) způsobem. Klíč budete potřebovat k opětovnému připojení licence nebo k jejímu přenosu na jiný účet.
 

@@ -21,9 +21,9 @@ sidebar_position: 4
 
 При переходах из результатов поиска Google, Yandex и других поисковых систем эта опция скрывает от сайта поисковый запрос, по которому вы нашли его.
 
-### Отправлять заголовок Do-Not-Track {#donottrack}
+### Ask websites not to track you {#donottrack}
 
-Отправляет в запросах к сайтам HTTP-заголовок Do-Not-Track (DNT), требующий от веб-приложений отключить отслеживание ваших действий.
+Sends the [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) requests to the websites you visit.
 
 ### Очистить URL от параметров отслеживания
 

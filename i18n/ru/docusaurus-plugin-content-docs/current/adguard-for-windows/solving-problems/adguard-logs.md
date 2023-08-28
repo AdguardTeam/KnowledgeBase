@@ -9,48 +9,48 @@ sidebar_position: 3
 
 :::
 
-Для анализа и диагностики различных проблем службе поддержки могут понадобиться файлы журнала AdGuard. Эти файлы содержат записи обо всех ошибках, которые произошли с программой за последнее время. Ниже представлена краткая инструкция, описывающая как получить и отправить в службу поддержки файлы журнала.
+To analyze and diagnose different problems that may potentially arise, the AdGuard support service might need AdGuard log files. Эти файлы содержат записи обо всех ошибках, которые произошли с программой за последнее время. Ниже представлена краткая инструкция, описывающая как получить и отправить в службу поддержки файлы журнала.
 
-1. Откройте настройки AdGuard. Перейдите в раздел *Общие настройки*, прокрутите вниз до конца экрана и выберите *Уровень логирования* *Подробный*.
+1. Open the AdGuard settings. Go to the *General Settings* section, scroll down to the end of the screen and switch the *Logging Level* to *Debug*.
 
-![Подробный уровень логирования *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
+    ![Debug logging level *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
 
-2. Воспроизведите проблему.
+1. Reproduce the issue.
 
-Мы настоятельно рекомендуем записывать точное время, когда вы воспроизвели проблему: это поможет нашей команде поддержки найти соответствующие логи и решить проблему быстрее.
+    We strongly advise to take note of the exact time when you reproduced the issue: it will help our support team to find relevant log entries and solve the problem faster.
 
-3. Экспортируйте полученные логи при помощи кнопки *Экспортировать логи*.
+1. Export the recorded logs using the *Export Logs* button.
 
-![Экспорт логов *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
+    ![Export logs *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
-Сохраните архив в любую папку.
+    Save the archive to any folder.
 
-4. **Важно**: не забудьте вернуть *Стандартный* уровень логирования. *Подробный* уровень логирования может значительно замедлить работу приложения.
+1. **Important**: after exporting the logs, set the logging level back to *Standard*. *Debug* logging level will slow down the application.
 
-5. Отправьте сохранённый архив в службу поддержки AdGuard по адресу **support@adguard.com**, опишите проблему и не забудьте указать время, когда вы воспроизвели проблему.
+1. Send the archive to the AdGuard support service at **support@adguard.com**, describe the problem and don't forget to mention the time when you reproduced the issue.
 
 ### Трейсовые логи {#trace-logs}
 
-Иногда в поддержке вас могут попросить прислать *трейсовые* логи. Тогда вам нужно будет сделать следующее:
+Sometimes support team members may ask you to send *trace* logs. Then you will need to do the following:
 
-1. Остановите AdGuard, щёлкнув правой кнопкой мыши по значку AdGuard в меню трея и выбрав *Закрыть AdGuard*:
+1. Stop AdGuard by right-clicking the AdGuard icon in the tray menu and choosing *Exit AdGuard*:
 
-![Выйти из AdGuard *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-3.png)
+    ![Exit AdGuard *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-3.png)
 
-Пожалуйста, не оставляйте приложение запущенным:
+    Please don't leave the service running:
 
-![Остановить AdGuard *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_logs_4.png)
+    ![Stop AdGuard Service *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_logs_4.png)
 
-2. Откройте консоль (наберите `cmd` в стартовой панели).
+1. Open the console (type `cmd` in the start panel).
 
-3. Запустите приложение командой  `C:\"Program Files (x86)"\Adguard\Adguard.exe /trace` (если вы используете 64-битный Windows) или `C:\"Program Files"\Adguard\Adguard.exe /trace` (если вы используете 32-битный).
+1. Run the app with the command `C:\"Program Files (x86)"\Adguard\Adguard.exe /trace` if you are using 64-bit Windows, and `C:\"Program Files"\Adguard\Adguard.exe /trace` in case if you use 32-bit one.
 
-4. Воспроизведите проблему.
+1. Reproduce the issue.
 
-Мы настоятельно рекомендуем записывать точное время, когда вы воспроизвели проблему: это поможет нашей команде поддержки найти соответствующие логи и решить проблему быстрее.
+    We strongly advise to take note of the exact time when you reproduced the issue: it will help our support team to find relevant log entries and solve the problem faster.
 
-5. Экспортируйте полученные логи при помощи кнопки *Экспортировать логи*.
+1. Export the recorded logs using the *Export Logs* button.
 
-![Экспортировать логи *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
+    ![Export logs *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
-Не пугайтесь, если файл с логами будет большим. Нам необходимо узнать как можно больше подробностей, чтобы исправить вашу проблему.
+    Don't worry if the log file is large. We need to know as much detail as possible to fix your problem.

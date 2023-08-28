@@ -17,15 +17,15 @@ AdGuardアプリは、すべての主要プラットフォーム（iOS/Android/W
 
 バグを発見した場合、または単に提案を共有したい場合、以下のいずれの方法でお知らせてください:
 
-* [forum.adguard.com](https://forum.adguard.com/index.php) にアクセスし、[フォーラムの「Beta Testing」カテゴリ](https://forum.adguard.com/index.php?categories/48/)に新しいスレッドを投稿してください（または同じ問題に関する既存のスレッドを見つけてください）。 ※事前に[フォーラムルール](https://forum.adguard.com/index.php?threads/14859/)をおご確認ください。
+- [forum.adguard.com](https://forum.adguard.com/index.php) にアクセスし、[フォーラムの「Beta Testing」カテゴリ](https://forum.adguard.com/index.php?categories/48/)に新しいスレッドを投稿してください（または同じ問題に関する既存のスレッドを見つけてください）。 ※事前に[フォーラムルール](https://forum.adguard.com/index.php?threads/14859/)をおご確認ください。
 
-* [AdGuardのGitHub](https://github.com/AdguardTeam/)にアクセスし、適当なレポジトリを見つけます。 新issueを作成してバグや機能リクエストを詳細にご説明ください。
+- [AdGuardのGitHub](https://github.com/AdguardTeam/)にアクセスし、適当なレポジトリを見つけます。 新issueを作成してバグや機能リクエストを詳細にご説明ください。
 
 上記の2つの方法が最も望ましいですが、必要に応じて以下の方法を用いることもできます:
 
-* [Facebook](https://www.facebook.com/AdguardEn/)、[Reddit](https://www.reddit.com/r/Adguard/)など、様々なSNSプラットフォームで私たちを見つけてご連絡ください。 ※技術的なことを話し合うのに一番効率的な方法とは言えません。
+- [Facebook](https://www.facebook.com/AdguardEn/)、[Reddit](https://www.reddit.com/r/Adguard/)など、様々なSNSプラットフォームで私たちを見つけてご連絡ください。 ※技術的なことを話し合うのに一番効率的な方法とは言えません。
 
-* AdGuardアプリ内の「サポート」セクションからサポートチームにメッセージを送るか、[support@adguard.com](mailto:support@adguard.com)（日本語対応）までご連絡ください。
+- AdGuardアプリ内の「サポート」セクションからサポートチームにメッセージを送るか、[support@adguard.com](mailto:support@adguard.com)（日本語対応）までご連絡ください。
 
 ## iOS版AdGuardアプリでベータテスト用キーを有効にする方法 {#ios}
 

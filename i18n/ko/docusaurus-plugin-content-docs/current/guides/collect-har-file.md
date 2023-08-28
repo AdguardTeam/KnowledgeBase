@@ -11,158 +11,170 @@ Chrome에서 HAR 파일을 만들려면 다음을 수행합니다.
 
 1. 문제가 발생한 URL로 이동합니다. 아직 문제를 재현하지 마세요.
 
-2. ***개발자 도구***를 엽니다:
+1. Open **Developer Tools**:
 
-- 메뉴에서: ***메뉴 → 추가 도구 → 개발자 도구***.
-- 키보드: ***Ctrl+Shift+C*** 또는 ***Ctrl+Alt+I***, Mac을 사용하는 경우 ***⌥+⌘+I***
+    - From menu: **Menu → More Tools → Developer Tools**.
+    - Keyboard: **Ctrl+Shift+C**, or **Ctrl+Alt+I**, or **⌥+⌘+I for Mac**.
 
-3. ***네트워크 탭***을 클릭합니다.
+1. Click on the **Network tab**.
 
-4. 네트워크 탭의 왼쪽 상단에 있는 동그란 버튼을 찾아 빨간색 녹화 모드로 설정되어 있는지 확인합니다. 회색인 경우 클릭하여 빨간색으로 바꾸면 녹화가 시작됩니다.
+1. 네트워크 탭의 왼쪽 상단에 있는 동그란 버튼을 찾아 빨간색 녹화 모드로 설정되어 있는지 확인합니다. 회색인 경우 클릭하여 빨간색으로 바꾸면 녹화가 시작됩니다.
 
-5. ***지우기*** 버튼(기록 버튼 옆에 선이 그어진 원 버튼)을 사용하여 이전 활동을 모두 지웁니다.
+1. Use the **Clear** button (the circle button with a line through it next to the record button) to clear all previous activity.
 
-6. 네트워크 탭에서 ***로그 보존*** 확인란을 선택합니다.
+1. Select the **Preserve log** check box on the Network tab.
 
-7. ***캐시 사용 안 함*** 확인란을 선택합니다.
+1. Check the **Disable cache** check box.
 
-![Chrome](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/chrome.png)
+    ![Chrome](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/chrome.png)
 
-8. 문제를 만드는 단계를 재현합니다.
+1. Reproduce the steps that create the issue.
 
-9. 그리드를 마우스 오른쪽 버튼으로 클릭하고 ***콘텐츠가 포함된 HAR로 저장***을 선택하여 세션을 .har 파일로 저장합니다.
+1. Save session as a .har file by right-clicking the grid and selecting **Save as HAR with content**.
 
-10. 문제에 대한 자세한 설명과 함께 AdGuard 지원팀(support@adguard.com)으로 전달하세요. 스크린샷을 첨부하는 것도 도움이 될 수 있습니다.
+1. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
 
 ## Edge {#edge}
 
 1. 문제가 발생한 URL로 이동합니다. 아직 문제를 재현하지 마세요.
 
-2. ***개발자 도구***를 엽니다:
+1. Open **Developer Tools**:
 
-- 메뉴에서: ***메뉴 → 추가 도구 → 개발자 도구***.
-- 키보드: ***Ctrl+Shift+C*** 또는 ***Ctrl+Alt+I***, Mac을 사용하는 경우 ***⌥+⌘+I***
+    - From menu: **Menu → More Tools → Developer Tools**.
+    - Keyboard: **Ctrl+Shift+C**, or **Ctrl+Alt+I**, or **⌥+⌘+I for Mac**.
 
-3. ***네트워크 탭***을 클릭합니다.
+1. Click on the **Network tab**.
 
-4. 네트워크 탭의 왼쪽 상단에 있는 동그란 버튼을 찾아 빨간색 녹화 모드로 설정되어 있는지 확인합니다. 회색인 경우 클릭하여 빨간색으로 바꾸면 녹화가 시작됩니다.
+1. 네트워크 탭의 왼쪽 상단에 있는 동그란 버튼을 찾아 빨간색 녹화 모드로 설정되어 있는지 확인합니다. 회색인 경우 클릭하여 빨간색으로 바꾸면 녹화가 시작됩니다.
 
-5. ***지우기*** 버튼(기록 버튼 옆에 선이 그어진 원 버튼)을 사용하여 이전 활동을 모두 지웁니다.
+1. Use the **Clear** button (the circle button with a line through it next to the record button) to clear all previous activity.
 
-6. 네트워크 탭에서 ***로그 보존*** 확인란을 선택합니다.
+1. Select the **Preserve log** check box on the Network tab.
 
-7. ***캐시 사용 안 함*** 확인란을 선택합니다.
+1. Check the **Disable cache** check box.
 
-![edge](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/edge.png)
+    ![edge](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/edge.png)
 
-8. 문제를 만드는 단계를 재현합니다.
+1. Reproduce the steps that create the issue.
 
-9. 그리드를 마우스 오른쪽 버튼으로 클릭하고 ***콘텐츠가 포함된 HAR로 저장***을 선택하여 세션을 .har 파일로 저장합니다.
+1. Save session as a .har file by right-clicking the grid and selecting **Save as HAR with content**.
 
-10. 문제에 대한 자세한 설명과 함께 AdGuard 지원팀(support@adguard.com)으로 전달하세요. 스크린샷을 첨부하는 것도 도움이 될 수 있습니다.
+1. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
 
 ## Firefox {#firefox}
 
-Firefox에서 HAR 파일을 만들려면 다음을 수행합니다.
+To create a HAR file in Firefox:
 
 1. 문제가 발생한 URL로 이동합니다. 아직 문제를 재현하지 마세요.
 
-2. ***네트워크*** 모드에서 개발자 도구를 엽니다:
-- 메뉴에서: ***메뉴→웹 개발자→네트워크***.
-- 키보드: ***Ctrl+Shift+C*** 또는 Mac을 사용하는 경우 **⌥+⌘+E**를 누릅니다.
+1. Open Developer Tools in **Network** mode:
 
-3. 네트워크 탭의 왼쪽 상단에 있는 ***재생/일시 정지*** 버튼에 주목하세요.
-- 버튼이 재생 모드에 있어야 합니다.
+    - From menu: **Menu → Web Developer → Network**.
+    - Keyboard: **Ctrl+Shift+C**, or **⌥+⌘+E (Mac)**.
 
-4. 현재 그리드에 정보가 표시되어 있는 경우 재생/일시 정지 버튼 옆에 있는 ***휴지통 삭제*** 버튼을 클릭하여 지웁니다.
+1. Note the **Play/Pause** button at the top left of the Network tab.
 
-5. 네트워크 탭에서 ***로그 유지*** 확인란을 선택합니다.
+    - 버튼이 재생 모드에 있어야 합니다.
 
-6. ***캐시 사용 안 함*** 확인란을 선택합니다.
+1. If any information is currently displayed in the grid, clear by clicking the **Delete trash can** button next to the play/pause button.
 
-![파이어폭스](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/firefox.png)
+1. Select the **Persist Logs** check box on the Network tab.
 
-7. 문제를 만드는 단계를 재현합니다.
+1. Check the **Disable cache** check box.
 
-8. 그리드를 마우스 오른쪽 버튼으로 클릭하고 ***모두 HAR로 저장***을 선택하여 세션을 .har 파일로 저장합니다.
+    ![firefox](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/firefox.png)
 
-9. 문제에 대한 자세한 설명과 함께 AdGuard 지원팀(support@adguard.com)으로 전달하세요. 스크린샷을 첨부하는 것도 도움이 될 수 있습니다.
+1. Reproduce the steps that create the issue.
+
+1. Save session as a .har file by right-clicking the grid and selecting **Save all as HAR**.
+
+1. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
 
 ## Internet Explorer 11 {#ie11}
 
-Internet Explorer 11에서 HAR 파일을 만들려면 다음을 수행합니다.
+To create a HAR file in Internet Explorer 11:
 
 1. 문제가 발생한 URL로 이동합니다. 아직 문제를 재현하지 마세요.
 
-2. ***네트워크*** 모드에서 개발자 도구를 엽니다:
-- 도구 톱니바퀴 메뉴에서: ***개발자 도구*** → ***네트워크 탭***.
-- 키보드: ***F12→네트워크*** 탭.
+1. Open Developer Tools in **Network** mode:
 
-3. 프로파일링 세션 시작 ***재생*** 버튼과 프로파일링 중지 ***중지*** 버튼이 네트워크 탭 왼쪽 상단에 있습니다.
-- 녹화 중 재생 버튼은 회색으로 표시되고 중지 버튼은 빨간색으로 표시됩니다. ***에 들어가*** 모드를 재생합니다.
+    - From Tools cog wheel menu: **Developer Tools** → **Network tab**.
+    - Keyboard: **F12 → Network** tab.
 
-4. 네트워크 탭의 ***세션 지우기*** 버튼을 사용하여 아래쪽 그리드에 표시되는 세션 정보를 모두 지웁니다. 아이콘 위로 마우스를 가져가면 이름을 볼 수 있습니다.
-- ***세션 지우기*** 버튼은 세 줄 아이콘에 X가 표시되어 있습니다.
+1. Note the start profiling session **Play** button and stop profiling **Stop** button at top left of Network tab.
 
-5. ***캐시 사용 안 함*** 확인란을 선택합니다.
+    - 녹화 중 재생 버튼은 회색으로 표시되고 중지 버튼은 빨간색으로 표시됩니다. Put in **Play** mode.
 
-6. 문제를 만드는 단계를 재현합니다.
+1. Clear any session info appearing in the lower grid using the **Clear session** button on Network tab. Hover over icons to see names.
 
-7. 네트워크 탭에서 ***디스크 저장*** 버튼(HAR로 내보내기)을 클릭하여 세션을 .har 파일로 저장합니다.
+    - **Clear session** button is a three line icon with an x on it.
 
-8. 문제에 대한 자세한 설명과 함께 AdGuard 지원팀(support@adguard.com)으로 전달하세요. 스크린샷을 첨부하는 것도 도움이 될 수 있습니다.
+1. Check the **Disable cache** check box.
+
+1. Reproduce the steps that create the issue.
+
+1. Save session as a .har file by clicking on the **Save disk** button (Export as HAR) on Network tab.
+
+1. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
 
 ## Safari {#safari}
 
-Safari에서 HAR 파일을 만들려면 다음을 수행합니다.
+To create a HAR file in Safari:
 
-1. 화면 상단의 Safari 메뉴 표시줄에서 ***개발*** 메뉴를 확인합니다. ***메뉴 표시줄에 개발 메뉴 표시***옆의 하단에 있는 확인란을 선택합니다.
-- 표시되지 않으면 ***Safari→환경설정→고급***으로 이동하여 켜십시오.
+1. Check the Safari menu bar at the top of the screen for a **Develop** menu.
 
-2. 문제가 발생한 URL로 이동합니다. 아직 문제를 재현하지 마세요.
+    - If not visible, turn it on by going to **Safari → Settings → Advanced**.
+    - Check the checkbox at the bottom next to **Show Develop menu in menu bar**.
 
-3. 웹 인스펙터에서 ***네트워크*** 탭을 엽니다:
-- 메뉴에서: ***개발→웹 검사기 표시→네트워크***.
-- 키보드: ***⌥+⌘+I→네트워크***
+1. 문제가 발생한 URL로 이동합니다. 아직 문제를 재현하지 마세요.
 
-4. 네트워크 탭의 오른쪽에 있는 ***로그 보존*** 확인란을 선택합니다.
+1. Open **Network** tab in Web Inspector:
 
-5. 네트워크 탭의 맨 오른쪽에 있는 ***휴지통 삭제*** 아이콘을 클릭하여 현재 네트워크 항목을 지웁니다.
+    - From menu: **Develop → Show Web Inspector → Network**.
+    - Keyboard: **⌥+⌘+I→Network**
 
-6. ***캐시 사용 안 함*** 확인란을 선택합니다.
+1. Check **Preserve Log** checkbox on left side of the Network tabs, within the **Other filter options...** menu.
 
-7. 문제를 만드는 단계를 재현합니다.
+    ![safari](https://cdn.adtidy.org/content/kb/ad_blocker/safari/preserve-log.png)
 
-8. ***내보내기*** 아이콘 옆의 ***로그 보존***을 클릭하여 세션을 .har 파일로 저장합니다.
+1. Clear current Network items by clicking the **Delete Trash** icon at the far right of Network tabs.
 
-9. 문제에 대한 자세한 설명과 함께 AdGuard 지원팀(support@adguard.com)으로 전달하세요. 스크린샷을 첨부하는 것도 도움이 될 수 있습니다.
+    - Keyboard: **⌘+K**
+
+1. Check the **Disable caches** check box.
+
+1. Reproduce the steps that create the issue.
+
+1. Save session as a .har file by clicking the **Export** icon next to the **Delete Trash** icon.
+
+1. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, too.
 
 ## Android {#android}
 
 To create HAR files, follow these steps:
 
-1. AdGard를 열고 ***설정***으로 이동합니다.
+1. Open AdGuard and go to **Settings**.
 
-2. 메뉴에서 ***고급*** 을 선택합니다.
+1. Choose **Advanced** in the menu.
 
-3. ***낮은 레벨 설정***을 선택합니다.
+1. Choose **Low Level Settings**
 
-4. `pref.har.capture`를 활성화합니다(보호 기능을 다시 시작해야 합니다).
+1. Activate `pref.har.capture` (you will have to restart the protection).
 
-5. 이제 문제를 재현하여 앱을 열고 광고가 표시되도록 필요한 작업을 수행합니다.
+1. Now reproduce the problem — open the app, perform the necessary actions to make the ad appear.
 
-6. 이제 `pref.har.capture`을 다시 끕니다.
+1. Now turn `pref.har.capture` off again.
 
-7. 돌아가서 ***로그 및 시스템 정보 내보내기*** → ***저장***을 탭합니다.
+1. Go back and tap **Export logs and system info** → **Save**.
 
 ## Windows {#windows}
 
-1. ***설정*** → ***일반 설정*** → ***고급 설정** 을 열고 아래로 스크롤합니다.
+1. Open **Settings*** → **General settings** → **Advanced settings** and scroll down.
 
-2. ***HAR 쓰기 활성화*** 확인란을 선택합니다.
+1. Check the **Enable HAR writing** box.
 
-3. 문제를 재현합니다.
+1. Reproduce the problem.
 
-4. ***일반 설정*** → ***로그 내보내기*** → ***저장***으로 이동합니다.
+1. Go to **General settings** → Click **Export logs** → **Save**.
 
-5. 해당 확인란을 선택 취소하여 HAR 쓰기를 비활성화합니다.
+1. Disable HAR writing by unchecking the corresponding box.

@@ -46,11 +46,12 @@ Filters are the main driving force behind the Ad blocker module. To understand h
 Some filter lists (AdGuard’s Base filter, Annoyances filter, EasyList, etc.) are pre-installed, while other specific ones, adapted to your preferences, can be downloaded additionally and added to your program.
 
 Aside from the more general and universally applicable filters (like Base filter), AdGuard provides an extensive quantity of filters for every occasion:
-* filters aimed at tracking prevention (like Tracking Protection filter),
-* language-specific ad filters that block content in a selected language,
-* Social media filter that removes "Like" and "Share" buttons,
-* Annoyances filter for cookie warnings, in-page pop-ups and others of the same ilk,
-* and even a filter that unblocks some ads instead of blocking them — Filter for search ads and self-promotions.
+
+- filters aimed at tracking prevention (like Tracking Protection filter),
+- language-specific ad filters that block content in a selected language,
+- Social media filter that removes "Like" and "Share" buttons,
+- Annoyances filter for cookie warnings, in-page pop-ups and others of the same ilk,
+- and even a filter that unblocks some ads instead of blocking them — Filter for search ads and self-promotions.
 
 AdGuard filtreleri otomatik olarak güncellenir. Our developers create them all based on user feedback received. You can always help other AdGuard users (and yourself, in perspective) by sending us reports right from the app's Assistant (it's really handy, we'll tell you more about the Assistant further on), or from the [website](https://agrd.io/report). If you wish to know more about AdGuard filters, here is [some info](/general/ad-filtering/adguard-filters).
 
@@ -104,9 +105,9 @@ AdGuard Browser Assistant’s primary function is to manage filtering directly f
 
 You will be prompted to install the Browser Assistant for your default browser when you first install AdGuard (during the onboarding process). If you missed it, you can [download it for any browser](https://adguard.com/adguard-assistant/overview.html) at any time.
 
-## Uzantılar
+## Extensions
 
-![Uzantılar](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Extensions.jpg)
+![Extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Extensions.jpg)
 
 Extensions are small programs that do exactly what their name implies — they extend functionality. And AdGuard uses several extensions of its own, also called userscripts, to broaden its functions range:
 
