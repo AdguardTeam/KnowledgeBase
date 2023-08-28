@@ -145,12 +145,12 @@ AdGuardのプロジェクトを翻訳する際には、複数形の使用を必�
 
 もう一度繰り返しますが、**縦棒記号**と**%count%**プレースホルダーの2つの重要な要素を持つフレーズに出会ったら、以下のことを行ってください:
 
-+ 翻訳する言語の複数形ルールを参照してください。
+- 翻訳する言語の複数形ルールを参照してください。
 
 The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms — two templates in translations; five plural forms — five templates, etc.
 
-+ テンプレートとテンプレートの間は、元の文字列と同じように縦棒記号を使用することを忘れないでください。
+- テンプレートとテンプレートの間は、元の文字列と同じように縦棒記号を使用することを忘れないでください。
 
-+ **%count%**プレースホルダーを翻訳したり、変更したり、削除したりしないでください。
+- **%count%**プレースホルダーを翻訳したり、変更したり、削除したりしないでください。
 
 By following these simple rules you will help AdGuard developers avoid a lot of unnecessary complications during the localization process.

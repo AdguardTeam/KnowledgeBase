@@ -17,15 +17,15 @@ Si deseas omitir la parte de descripción y pasar directamente a la acción, pue
 
 Si detectaste un error o simplemente quieres compartir tu sugerencia, háznoslo saber de cualquiera de las formas posibles:
 
-* Vete a [forum.adguard.com](https://forum.adguard.com/index.php) y publicar allí un nuevo hilo (o encontrar uno existente) en la categoría [foro beta](https://forum.adguard.com/index.php?categories/48/). Asegúrate de leer las [normas del foro](https://forum.adguard.com/index.php?threads/14859/);
+- Vete a [forum.adguard.com](https://forum.adguard.com/index.php) y publicar allí un nuevo hilo (o encontrar uno existente) en la categoría [foro beta](https://forum.adguard.com/index.php?categories/48/). Asegúrate de leer las [normas del foro](https://forum.adguard.com/index.php?threads/14859/);
 
-* Vete a [GitHub](https://github.com/AdguardTeam/) y encontra un repositorio adecuado. Cree un nuevo problema allí y describa la solicitud de error / característica en detalle.
+- Vete a [GitHub](https://github.com/AdguardTeam/) y encontra un repositorio adecuado. Cree un nuevo problema allí y describa la solicitud de error / característica en detalle.
 
 Los dos métodos anteriores son los más preferidos, pero puede usar otros si es necesario:
 
-* Encuéntrenos en las diferentes redes sociales, como [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/), etc. Sin embargo, esta no es la forma más conveniente de discutir asuntos técnicos.
+- Encuéntrenos en las diferentes redes sociales, como [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/), etc. Sin embargo, esta no es la forma más conveniente de discutir asuntos técnicos.
 
-* Envía un correo electrónico a nuestro equipo de asistencia desde la pestaña de asistencia de la aplicación o escríbenos directamente a [support@adguard.com](mailto:support@adguard.com).
+- Envía un correo electrónico a nuestro equipo de asistencia desde la pestaña de asistencia de la aplicación o escríbenos directamente a [support@adguard.com](mailto:support@adguard.com).
 
 ## Cómo activar la clave beta en la aplicación iOS {#ios}
 

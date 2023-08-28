@@ -21,9 +21,9 @@ Some options may not be available depending on the particular product due to OS 
 
 When you get directed to a website from Google, Yahoo, or any other search engine, this option hides the search query that you used to find that website.
 
-### Send Do-Not-Track header {#donottrack}
+### Ask websites not to track you {#donottrack}
 
-It sends a Do-Not-Track (DNT) HTTP header to queried websites, thus requiring web apps to disable tracking of your activity.
+Sends the [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) requests to the websites you visit.
 
 ### Strip tracking parameters from URLs
 

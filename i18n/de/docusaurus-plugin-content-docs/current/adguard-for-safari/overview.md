@@ -3,7 +3,7 @@ title: Features overview
 sidebar_position: 1
 ---
 
-:::Info
+:::info
 
 In diesem Artikel geht es um AdGuard für Safari, der nur Ihren Safari-Browser schützt. Um Ihr gesamtes Gerät zu schützen, [laden Sie die App AdGuard herunter](https://adguard.com/download.html?auto=true)
 
@@ -71,7 +71,7 @@ This content blocker unites several security-related filters. *Malware Domains B
 
 *AdGuard Other* contains filters with various functions. For example, it has a filter that unblocks search ads and self-promo ads. In some cases, it helps find exactly what you are looking for, because these kinds of ads are more relevant and less intrusive than others.
 
-:::note Disclaimer
+:::note Haftungsausschluss
 
 We don’t have any ‘acceptable ads’ paid by advertisers. Instead, we provide users with an option to see [search ads and websites' self-promotion](/general/ad-filtering/search-ads).
 
@@ -93,7 +93,7 @@ User rules can be used to customize ad blocking. They can be added manually, imp
 
 In the About tab, you can see info about the current version of your product and links to legal documents. There is also a link to our repository on GitHub. You can monitor the product development, create feature requests and report bugs there.
 
-:::note Reminder
+:::note Erinnerung
 
 AdGuard for Safari can be downloaded for free [from the App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259). A detailed setup instruction is available in the [Knowledge base](../installation).
 

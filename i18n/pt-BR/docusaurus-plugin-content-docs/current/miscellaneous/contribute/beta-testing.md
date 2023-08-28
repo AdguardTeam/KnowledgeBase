@@ -17,15 +17,15 @@ Se quiser pular a parte da descrição e ir direto para a ação, você pode se 
 
 Se você detectou um bug ou apenas deseja compartilhar sua sugestão, informe-nos de uma das maneiras possíveis:
 
-* Vá para [forum.adguard.com](https://forum.adguard.com/index.php) e poste lá um novo tópico (ou encontre um existente) na categoria [fórum beta](https://forum.adguard.com/index.php?categories/48/). Certifique-se de ler as [regras do fórum](https://forum.adguard.com/index.php?threads/14859/);
+- Vá para [forum.adguard.com](https://forum.adguard.com/index.php) e poste lá um novo tópico (ou encontre um existente) na categoria [fórum beta](https://forum.adguard.com/index.php?categories/48/). Certifique-se de ler as [regras do fórum](https://forum.adguard.com/index.php?threads/14859/);
 
-* Vá para [GitHub](https://github.com/AdguardTeam/) e encontre um repositório adequado. Crie um novo problema lá e descreva a solicitação de bug/recurso em detalhes.
+- Vá para [GitHub](https://github.com/AdguardTeam/) e encontre um repositório adequado. Crie um novo problema lá e descreva a solicitação de bug/recurso em detalhes.
 
 Os dois métodos acima são os mais preferidos, mas você pode usar outros, se necessário:
 
-* Encontre-nos em várias plataformas de mídia social, como [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/), etc. No entanto, esta não é a maneira mais conveniente de discutir questões técnicas.
+- Encontre-nos em várias plataformas de mídia social, como [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/), etc. No entanto, esta não é a maneira mais conveniente de discutir questões técnicas.
 
-* Envie um e-mail para nossa equipe de suporte na guia Suporte no aplicativo ou escreva diretamente para [support@adguard.com](mailto:support@adguard.com).
+- Envie um e-mail para nossa equipe de suporte na guia Suporte no aplicativo ou escreva diretamente para [support@adguard.com](mailto:support@adguard.com).
 
 ## Como ativar a chave beta no aplicativo iOS {#ios}
 

@@ -3,7 +3,7 @@ title: Low Level Settings guide
 sidebar_position: 6
 ---
 
-:::Info
+:::info
 
 Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://adguard.com/download.html?auto=true)
 
@@ -11,7 +11,7 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 ## How to reach the Low-level settings
 
-:::Zur Beachtung
+:::caution
 
 Das Ändern von *Low-Level-Einstellungen* kann Probleme mit der Leistung von AdGuard verursachen, die Internetverbindung unterbrechen oder Ihre Sicherheit und Privatsphäre gefährden. You should only open this section if you are sure of what you are doing or our support-team has asked you about it.
 
@@ -45,17 +45,17 @@ Bootstrap DNS for DoH, DoT, and DoQ servers. The *Automatic DNS* - the system DN
 
 Here you can specify the response type for domains blocked by DNS rules based on adblock rule syntax (for instance, `||example.org^`).
 
-*  Respond with REFUSED (default)
-*  Respond with NXDOMAIN
-*  Respond with Custom IP address (IPv4 and IPv6 addresses can be specified here)
+- Respond with REFUSED (default)
+- Respond with NXDOMAIN
+- Respond with Custom IP address (IPv4 and IPv6 addresses can be specified here)
 
 #### Sperrmodus für Hosts-Regeln
 
 Here you can specify the response type for domains blocked by DNS rules based on hosts rule syntax (for instance, `<ip> <domain> 0.0.0.0 example.com`).
 
-*  Respond with REFUSED
-*  Respond with NXDOMAIN
-*  Respond with Custom IP address (IPv4 and IPv6 addresses can be specified here) – default
+- Respond with REFUSED
+- Respond with NXDOMAIN
+- Respond with Custom IP address (IPv4 and IPv6 addresses can be specified here) – default
 
 #### DNS request timeout
 

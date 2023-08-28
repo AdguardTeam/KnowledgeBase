@@ -3,7 +3,7 @@ title: Erweiterte Einstellungen
 sidebar_position: 9
 ---
 
-:::Info
+:::info
 
 Dieser Artikel behandelt AdGuard für Mac, einen multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://adguard.com/download.html?auto=true)
 
@@ -11,7 +11,7 @@ Dieser Artikel behandelt AdGuard für Mac, einen multifunktionalen Werbeblocker,
 
 ## Wo findet man die Eweiterten Einstellungen
 
-:::Zur Beachtung
+:::caution
 
 Das Ändern von *Low-Level-Einstellungen* kann Probleme mit der Leistung von AdGuard verursachen, die Internetverbindung unterbrechen oder Ihre Sicherheit und Privatsphäre gefährden. Sie sollten diesen Abschnitt nur öffnen, wenn Sie sicher sind, was Sie tun, oder wenn unser Support-Team Sie darum gebeten hat.
 
@@ -107,17 +107,17 @@ Hier können Sie Domains auflisten, für die der Fallback-DNS-Server anstelle de
 
 Hier können Sie die Art der Antwort des DNS-Servers auf blockierte Anfragen festlegen, die den Regeln im Stil von Werbeblockern entsprechen.
 
-* 0 — respond with REFUSED
-* 1 — respond with NXDOMAIN
-* 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
+- 0 — respond with REFUSED
+- 1 — respond with NXDOMAIN
+- 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
 
 `dns.proxy.hostrules.blocking.mode`
 
 Hier können Sie die Art der Antwort des DNS-Servers auf blockierte Anfragen entsprechend den Hosts-Regeln festlegen:
 
-* 0 — respond with REFUSED
-* 1 — respond with NXDOMAIN
-* 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
+- 0 — respond with REFUSED
+- 1 — respond with NXDOMAIN
+- 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
 
 `dns.proxy.blocking.response.IPv4.address`
 

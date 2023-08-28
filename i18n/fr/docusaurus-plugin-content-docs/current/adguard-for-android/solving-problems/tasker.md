@@ -5,7 +5,7 @@ sidebar_position: 3
 
 :::info
 
-This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Cet article parle de AdGuard pour Android, un bloqueur de contenus multifonctionnel qui protège votre appareil au niveau du système. Pour voir comment cela fonctionne, [téléchargez l'application AdGuard](https://adguard.com/download.html?auto=true)
 
 :::
 
@@ -26,7 +26,6 @@ Wouldn't it be a bit dangerous, you might ask — to let some random apps manage
 ### Available actions
 
 So, ready to get your hands dirty? Here are actions that, when included in the intent, will be understood by AdGuard:
-
 
 `start` starts the protection, no extra data is needed;
 
@@ -64,14 +63,11 @@ The full list of supported provider names can be found inside AdGuard DNS settin
 
  -----
 
-
-
 `proxy_state` enables/disables the outbound proxy.  Requires an extra flag:
 
 `enable:true` or `enable:false` activates or deactivates the outbound proxy, accordingly.
 
 -----
-
 
 `proxy_default` sets the proxy from the list of previously added ones as default or creates a new one if server has not been added before.
 
@@ -91,9 +87,10 @@ Or you  can configure remove parameters manually:
 
 `server:[type=…&host=…&port=…&username=…&password=…&udp=…&trust=…]`.
 
-* **Compulsory parameters**:
+- **Compulsory parameters**:
 
 `[type]` — proxy server type:
+
 - HTTP;
 - SOCKS4;
 - SOCKS5;
@@ -103,7 +100,7 @@ Or you  can configure remove parameters manually:
 
 `[port]` — outbound proxy port (integer number from 1 to 65535);
 
-* **Optional parameters**:
+- **Optional parameters**:
 
  `[login and password]` — only if proxy requires it. This data is ignored when setting up **SOCKS4**;
 

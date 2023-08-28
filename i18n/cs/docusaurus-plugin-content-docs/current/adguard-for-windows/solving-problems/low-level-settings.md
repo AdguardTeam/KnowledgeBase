@@ -181,17 +181,17 @@ Kromě běžných DNS požadavků bude AdGuard přesměrovávat zabezpečené DN
 
 Zde můžete vybrat způsob, jakým bude AdGuard reagovat na domény blokované pravidly DNS na základě [syntaxe pravidla hosts](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
 
-* Odpověď s chybou "Refused"
-* Odpověď s chybou "NxDomain"
-* Odpověď s vlastní IP adresou
+- Odpověď s chybou "Refused"
+- Odpověď s chybou "NxDomain"
+- Odpověď s vlastní IP adresou
 
 ### Režim blokování pro pravidla stylu adblock
 
 Zde můžete vybrat způsob, jakým bude AdGuard reagovat na domény blokované pravidly DNS na základě [syntaxe stylu ad-block](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax).
 
-* Odpověď s chybou "Refused"
-* Odpověď s chybou "NxDomain"
-* Odpověď s vlastní IP adresou
+- Odpověď s chybou "Refused"
+- Odpověď s chybou "NxDomain"
+- Odpověď s vlastní IP adresou
 
 ### Vlastní IPv4 adresa
 
@@ -205,9 +205,9 @@ Pokud je v režimu blokování pro pravidla pro hostitele, nebo v režimu blokov
 
 Zde můžete zadat alternativní DNS server, na který bude požadavek DNS přesměrován, pokud hlavní server neodpoví v časovém limitu uvedeném v následující části. Na výběr jsou tři možnosti:
 
-* Nepoužívat záložní servery;
-* Použít výchozí systémové servery;
-* Použít vlastní servery.
+- Nepoužívat záložní servery;
+- Použít výchozí systémové servery;
+- Použít vlastní servery.
 
 ### Blokovat ECH
 

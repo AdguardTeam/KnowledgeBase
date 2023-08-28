@@ -18,18 +18,20 @@ Algunas licencias deben comprarse (p. ej., Bloqueador de anuncios AdGuard Person
 ## Cuantos dispositivos se pueden agregar{#devices}
 
 Se pueden usar diferentes licencias con un número diferente de dispositivos:
-* Personal: hasta tres dispositivos,
-* Familiar: hasta 9 dispositivos,
-* AdGuard Pro para iOS: un dispositivo.
+
+- Personal: hasta tres dispositivos,
+- Familiar: hasta 9 dispositivos,
+- AdGuard Pro para iOS: un dispositivo.
 
 To use your license on a device, log in to your [AdGuard account](../../account/features) on it. To extend the device limit, you can [upgrade](../activation#how-to-upgrade-a-license) your license.
 
 ## Qué es una clave de licencia{#license-key}
 
 A license key is a unique sequence of characters that represents an AdGuard Ad Blocker license. It is automatically registered for the email you used for license purchase. With a license key, you can:
-* inicia sesión en tu cuenta de AdGuard en algunos productos (por ejemplo, AdGuard para Windows),
-* [activa tu licencia](../activation) en un producto, si no tienes cuenta de AdGuard,
-* vincula tu licencia a tu cuenta de AdGuard y desvincúlala.
+
+- inicia sesión en tu cuenta de AdGuard en algunos productos (por ejemplo, AdGuard para Windows),
+- [activa tu licencia](../activation) en un producto, si no tienes cuenta de AdGuard,
+- vincula tu licencia a tu cuenta de AdGuard y desvincúlala.
 
 When unbinding a license, be sure you write the license key down beforehand or note in some other (safe) way. You'll need the key for re-binding your license or transferring it to another account.
 

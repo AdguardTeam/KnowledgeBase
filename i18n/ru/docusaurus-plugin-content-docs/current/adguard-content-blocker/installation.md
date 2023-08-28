@@ -11,7 +11,7 @@ sidebar_position: 2
 
 Приложение доступно в пяти магазинах: [Google Play](https://play.google.com/store/apps/details?id=com.adguard.android.contentblocker), [Samsung Galaxy store](https://galaxystore.samsung.com/detail/com.adguard.android.contentblocker), [Huawei AppGallery](https://appgallery.huawei.com/#/app/C100440597), [Aptoide](https://adguard-content-blocker.en.aptoide.com/) и [F-Droid](https://f-droid.org/en/packages/com.adguard.android.contentblocker/).
 
-Чтобы установить Блокировщик контента AdGuard из Google Play, введите в поиске _AdGuard Content Blocker_ и нажмите _Установить_.
+To install AdGuard Content Blocker from Google Play, search *AdGuard Content Blocker* and tap *Install*.
 
 ![Content Blocker в Google Play *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_play_market.jpg)
 
@@ -21,7 +21,7 @@ AdGuard Content Blocker работает в двух браузерах: [Янд
 
 :::
 
-Когда Блокировщик установится, нажмите _Открыть_, чтобы запустить приложение.
+After the installation is completed, tap *Open* to run the app.
 
 ![Установленный Content Blocker *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_play_market_installed.jpg)
 

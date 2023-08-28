@@ -17,10 +17,10 @@ Ama neler oluyor ve bu neden yapılıyor? Lütfen aşağıdaki teknik açıklama
 
 **Bunun için neden gerçek bir IP adresi kullanmamız gerekiyor?**
 
-* Tarayıcılar kabul etmeyeceği için `127.0.0.1` adresini kullanamayız.
-* Using some IP address from the private subnets is possible, but this solution has two downsides.
-    * First, there is a slight chance of intersecting with an existing intranet service and breaking access to it.
-    * Second, some DNS servers may consider this a DNS rebinding attack and refuse to respond to `local.adguard.org`.
+- Tarayıcılar kabul etmeyeceği için `127.0.0.1` adresini kullanamayız.
+- Using some IP address from the private subnets is possible, but this solution has two downsides.
+    - First, there is a slight chance of intersecting with an existing intranet service and breaking access to it.
+    - Second, some DNS servers may consider this a DNS rebinding attack and refuse to respond to `local.adguard.org`.
 
 ### Verification
 

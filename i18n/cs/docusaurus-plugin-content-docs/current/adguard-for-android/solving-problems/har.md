@@ -10,10 +10,13 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 :::
 
 ## Co jsou soubory HAR?
+
 Formát HAR (HTTP ARchive) je archivní soubor ve formátu JSON pro zaznamenávání interakce webového prohlížeče s webem. Specifikace formátu HAR definuje archivační data pro transakce HTTP, která prohlížeč používá k exportu podrobných informací o načítaných webových stránkách. Podrobnější popis formátu HAR a jeho specifikace naleznete na webové stránce [ softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/).
 
 ## Jak získat soubory HAR
+
 Někdy musíme analyzovat, abychom zablokovali konkrétní reklamy, které je z nějakého důvodu obtížné reprodukovat. Chcete-li získat soubory HAR, postupujte takto:
+
 1. Otevřete AdGuard a přejděte do **Nastavení** (ikona ⚙ v pravém dolním rohu).
 2. Klepněte na **Obecné** →**Pokročilé** → **Nízkoúrovňová nastavení**.
 3. Přejděte dolů a aktivujte **Zachytit HAR** v části Filtrování.
@@ -31,6 +34,8 @@ Náš tým podpory zpracuje vaši žádost mnohem rychleji, pokud ve zprávě uv
 :::
 
 ## Jak analyzovat soubory HAR
+
 Zde je několik zdrojů, které můžeme doporučit k analýze souborů HAR:
-* [HTTP Archive Viewer master](https://gitgrimbo.github.io/harviewer/master/) je nástroj pro analýzu HAR, který vizualizuje soubory protokolu HTTP Archive (HAR) vytvořené nástroji pro sledování HTTP.
-* [Fiddler](https://www.telerik.com/fiddler) je proxy server pro ladění webu, který umožňuje zachytávat, kontrolovat a monitorovat veškerý provoz HTTP(S) mezi počítačem a Internetem, falšovat požadavky a diagnostikovat síťové problémy.
+
+- [HTTP Archive Viewer master](https://gitgrimbo.github.io/harviewer/master/) je nástroj pro analýzu HAR, který vizualizuje soubory protokolu HTTP Archive (HAR) vytvořené nástroji pro sledování HTTP.
+- [Fiddler](https://www.telerik.com/fiddler) je proxy server pro ladění webu, který umožňuje zachytávat, kontrolovat a monitorovat veškerý provoz HTTP(S) mezi počítačem a Internetem, falšovat požadavky a diagnostikovat síťové problémy.

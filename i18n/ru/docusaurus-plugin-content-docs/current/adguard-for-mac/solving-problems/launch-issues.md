@@ -16,28 +16,25 @@ sidebar_position: 6
 Если у вас возникли проблемы при запуске AdGuard для Mac на операционных системах Big Sur и Monterey, воспользуйтесь этой инструкцией:
 
 1. Перезагрузите Mac и войдите в [режим восстановления](https://support.apple.com/ru-ru/HT201255).
-2. Отключите SIP (запустите **Терминал** из меню **Утилиты** и введите `csrutil disable`).
-3. Перезагрузите Mac.
-4. Закройте приложение AdGuard, откройте **Терминал** и введите `systemextensionsctl reset`.
-5. Перезагрузите Mac и войдите в режим восстановления.
-6. Включите SIP (запустите **Терминал** из меню **Утилиты** и введите `csrutil enable`).
-7. Запустите приложение AdGuard и включите защиту.
+1. Отключите SIP (запустите **Терминал** из меню **Утилиты** и введите `csrutil disable`).
+1. Перезагрузите Mac.
+1. Закройте приложение AdGuard, откройте **Терминал** и введите `systemextensionsctl reset`.
+1. Перезагрузите Mac и войдите в режим восстановления.
+1. Включите SIP (запустите **Терминал** из меню **Утилиты** и введите `csrutil enable`).
+1. Запустите приложение AdGuard и включите защиту.
 
 ## Проблемы с запуском на операционных системах macOS 10
 
 Если у вас возникли проблемы при запуске AdGuard для Mac на операционных системах Sierra, Mojave и Catalina, воспользуйтесь этой инструкцией:
 
 1. Откройте **Терминал** и введите команду `ls -@lOae /private/var/db/KernelExtensionManagement`.
-2. Убедитесь, что флаг `restricted` отсутствует (как на скриншоте).
-
-![Пример команды *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/restricted-flag.jpg)
-
-3. Перезагрузите ваш Mac в режиме восстановления.
-4. Откройте **Утилиты** → **Терминал**.
-5. Введите `csrutil disable`.
-6. Введите пароль администратора.
-7. Перезагрузите Mac.
-8. Откройте **Терминал** и введите команду `sudo chflags restricted /private/var/db/KernelExtensionManagement`.
-9. Перезагрузите ваш Mac в режиме восстановления.
-10. Откройте **Утилиты** → **Терминал** → Введите `csrutil enable` → Введите пароль администратора → Перезагрузите Mac.
-11. Включите защиту AdGuard.
+1. Убедитесь, что флаг `restricted` отсутствует (как на скриншоте). ![Пример команды *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/restricted-flag.jpg)
+1. Reboot your Mac in recovery mode.
+1. Open **Utilities** → **Terminal**.
+1. Enter `csrutil disable`.
+1. Enter administrator password.
+1. Reboot your Mac.
+1. Open **Terminal** and enter the following command: `sudo chflags restricted /private/var/db/KernelExtensionManagement`.
+1. Reboot your Mac in recovery mode.
+1. Open **Utilities** → **Terminal** → Enter `csrutil enable` → Enter administrator password → Reboot your Mac.
+1. Enable AdGuard protection.

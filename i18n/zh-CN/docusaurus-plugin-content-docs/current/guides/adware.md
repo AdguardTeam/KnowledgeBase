@@ -25,42 +25,42 @@ AdGuard is not an antivirus program. 当用户要访问一个恶意软件或钓�
 
 让我们以 AdwareCleaner 为例。 结束下载应用程序并成功安装后，请执行以下步骤：
 
-1) 启动应用程序。单击**立即扫描**。
+1. Start the application and click **Scan now**.
 
 ![adware1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware1.png)
 
-2) 扫描完成之后，您需要将可疑对象发送到**隔离区**。
+1. Once the scan has been completed, you will need to send suspicious objects to **Quarantine**.
 
 ![adware2 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware2.png)
 
-3) 将选项被移至**隔离区**后，您将能够**清除系统**中不必要的选项。
+1. When the items are moved to **Quarantine**, you will be able to **Clear the system** of unnecessary ballast.
 
-4) 在某些情况下，清洁完成后，您可能需要**重新启动系统**。
+1. In some cases, you may need to **Reboot the system** after cleaning is complete.
 
 ![adware3 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware3.png)
 
-5) 重新启动系统后，清洁就完成了。 如有必要，您可以阅读该软件的**运行报告**。
+1. Once the system has been rebooted, cleaning will be completed. If necessary, you can always read the **Report** on the work done.
 
 ![adware4 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware4.png)
 
-如果没有效果，请根据[此说明](#instructions)暂时禁用浏览器中的所有扩展程序，以及其他一些设置。
+If it didn’t help, temporary disable all extensions and some other settings in the browser according to [these instructions](#instructions).
 
-如果禁用设置和扩展也无济于事，请您尝试[重新创建浏览器的快捷键](#shortcuts)。
+If disabling of settings and extensions does not help, try to [recreate shortcuts of your browsers](#shortcuts).
 
-在此页接下来的内容中，我们会介绍如何删除一些最常见的广告附加信息。
+Further on this page we describe the instructions on how to remove some of the most commonly encountered ad extensions.
 
 ## 如何在浏览器中禁用设置和扩展 {#instructions}
 
-以下是有关如何针对最流行的浏览器禁用设置和扩展的说明：
+Below are the instructions on how to disable settings and extensions for the most popular browsers:
 
-* [Google Chrome 浏览器](https://support.google.com/chrome/answer/187443?hl=en)
+- [Google Chrome 浏览器](https://support.google.com/chrome/answer/187443?hl=en)
 
-* [火狐浏览器](https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons)
+- [火狐浏览器](https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons)
 
-* [Opera 浏览器](https://help.opera.com/en/latest/customization/#extensions)
+- [Opera 浏览器](https://help.opera.com/en/latest/customization/#extensions)
 
 ## 如何为浏览器重新创建快捷键 {#shortcuts}
 
-恶意软件和广告软件程序通常以非常简单的方式安装其首页。它们替代浏览器的桌面快捷键，任务栏和*开始*菜单项。
+Very often, malware and adware programs install their homepage in a very simple way — they substitute your browser's desktop shortcut, taskbar and *Start* menu items.
 
-在这种情况下，最简单的解决方式是手动删除所有快捷键，然后自己重新创建它们。
+The simplest solution in this case is to manually delete all the shortcuts and recreate them by yourself.

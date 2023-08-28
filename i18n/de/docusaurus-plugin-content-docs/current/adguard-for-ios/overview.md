@@ -3,7 +3,7 @@ title: Features overview
 sidebar_position: 1
 ---
 
-:::Info
+:::info
 
 Dieser Artikel behandelt AdGuard für iOS, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://adguard.com/download.html?auto=true)
 
@@ -192,6 +192,7 @@ For any DNS query sent to get an IPv6 address, our app returns an empty response
 Fallback is a backup DNS server. If you chose a DNS server and something happened to it, a fallback is needed to set the backup DNS server until the main server responds.
 
 With Bootstrap, it’s a little more complicated. For AdGuard for iOS to use a custom secure DNS server, our app needs to get its IP address first. For this purpose, the system DNS is used by default, but sometimes this is not possible for various reasons. In such cases, Bootstrap could be used to get the IP address of the selected secure DNS server. Here are two examples to illustrate when a custom Bootstrap server might help:
+
 1. When a system default DNS server does not return the IP address of a secure DNS server and it is not possible to use a secure one.
 2. When our app and third-party VPN are used simultaneously and it is not possible to use System DNS as a Bootstrap.
 
