@@ -3420,13 +3420,13 @@ The `min-length` special attribute must not appear in a selector to the left of 
 
 ##### Syntax
 
-```
+```text
 :contains(unquoted text)
 ```
 
 or
 
-```
+```text
 :contains(/reg(ular )?ex(pression)?/)
 ```
 
