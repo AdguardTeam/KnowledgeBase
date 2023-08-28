@@ -435,7 +435,7 @@ despite the pattern `||*page` may match specific domains.
 
 #### `domain` modifier limitations {#domain-modifier-limitations}
 
-:::caution Limitations
+:::caution Restrictions
 
 Safari does not support the simultaneous use of allowed and disallowed domains, so rules like `||baddomain.com^$domain=example.org|~foo.example.org` will not work in AdGuard for iOS and AdGuard for Safari.
 
@@ -600,7 +600,7 @@ You may use a shorter name (alias) instead of using the full modifier name: `$3p
 - `/ads$to=~not.evil.com|evil.com` blocks any request to `evil.com` and its subdomains, with a path matching `/ads`, except requests to `not.evil.com` and its subdomains.
 - `/ads$to=~good.com|~good.org` blocks any request with a path matching `/ads`, except requests to `good.com` or `good.org` and their subdomains.
 
-:::caution Limitations
+:::caution Restrictions
 
 [`$denyallow`](#denyallow-modifier) can not be used together with `$to`. It can be expressed with inverted `$to`:
 `$denyallow=a.com|b.com` is equivalent to `$to=~a.com|~b.com`.
@@ -1194,7 +1194,7 @@ Here's how it works:
 - `@@||example.org^$cookie=concept` unblocks a single cookie named `concept`
 - `@@||example.org^$cookie=/^_ga_/` unblocks every cookie that matches the regular expression
 
-:::caution Limitations
+:::caution Restrictions
 
 `$cookie` rules support a limited list of modifiers: `$domain`, `$~domain`, `$important`, `$third-party`, and `$~third-party`.
 
@@ -1236,7 +1236,7 @@ In case if multiple `$csp` rules match a single request, we will apply each of t
 - `||example.org^$csp=script-src 'self' 'unsafe-eval' http: https:` disables inline scripts on all the pages matching the rule pattern.
 - `@@||example.org^$document` or `@@||example.org^$urlblock` disables all the `$csp` rules on all the pages matching the rule pattern.
 
-:::caution Limitations
+:::caution Restrictions
 
 - There are a few characters forbidden in the `$csp` value: `,`, `$`.
 - `$csp` rules support limited list of modifiers: `$domain`, `$important`, `$subdocument`.
@@ -1694,7 +1694,7 @@ The list of the available directives is available [here](https://developer.mozil
 - `$domain=example.org|example.com,permissions=storage-access=()\, camera=()` disallows using the Storage Access API to request access to unpartitioned cookies and using video input devices across `example.org` and `example.com`.
 - `@@||example.org^$document` or `@@||example.org^$urlblock` disables all the `$permission` rules on all the pages matching the rule pattern.
 
-:::caution Limitations
+:::caution Restrictions
 
 1. Characters forbidden in the `$permissions` value: `$`;
 2. `$permissions` is compatible with the limited list of modifiers: `$domain`, `$important`, and `$subdocument`.
@@ -2098,7 +2098,7 @@ http://regexr.com/3cesk
 - `@@||example.org^$replace` will disable all `$replace` rules matching `||example.org^`.
 - `@@||example.org^$document` or `@@||example.org^$content` will disable all `$replace` rules **originated from** pages of `example.org` **including the page itself**.
 
-:::caution Limitations
+:::caution Restrictions
 
 Rules with `$replace` modifier can be used [**only in trusted filters**](#trusted-filters).
 
