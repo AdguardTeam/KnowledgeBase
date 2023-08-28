@@ -433,7 +433,7 @@ despite the pattern `||*page` may match specific domains.
 - `/banner\d+/$domain=targetdomain.com` will not be matched as it contains a regular expression.
 - `page$domain=targetdomain.com|~example.org` will not be matched because the referrer domain is explicitly excluded.
 
-#### `domain` modifier limitations {#domain-modifier-limitations}
+##### `$domain` modifier limitations {#domain-modifier-limitations}
 
 :::caution Restrictions
 
@@ -880,7 +880,11 @@ You can also exclude a userscript by adding a `~` character before it. In this c
 $extension=~"userscript name"
 ```
 
-**NOTE**: When excluding a userscript, you must place `~` outside the quotes.
+:::note
+
+When excluding a userscript, you must place `~` outside the quotes.
+
+:::
 
 If a userscript's name includes quotes (`"`), commas (`,`), or pipes (`|`), they must be escaped with a backslash (`\`).
 
@@ -953,6 +957,13 @@ The list of the available modifier options:
 :::note
 
 Blocking cookies and removing tracking parameters is achieved by using rules with [`$cookie`](#cookie-modifier) and [`$removeparam`](#removeparam-modifier) modifiers. Exception rules with only `$stealth` modifier will not do those things. If you want to completely disable all Stealth Mode features for a given domain, you need to include all three modifiers: `@@||example.org^$stealth,removeparam,cookie`
+
+:::
+
+:::caution Restrictions
+
+- Modifier options should be lowercase, i.e. `$stealth=DPI` will be rejected.
+- Modifier options cannot be negated, i.e. `$stealth=~3p-cookie` will be rejected.
 
 :::
 
@@ -3280,7 +3291,7 @@ pseudoClasses = pseudoClass *pseudoClass
 
 - **`tagName`** — name of the element in lower case, for example, `div` or `script`.
 - **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules syntax](#elemhide-syntax).
-- **`attributes`** — a list of attributes, that limit the elements selection. `name` — attribute name, `value` — substring, that is contained in attribute value.
+- **`attributes`** — a list of attributes that limit the selection of elements. `name` — attribute name, `value` — substring, that is contained in attribute value.
 - **`pseudoName`** — the name of a pseudo-class.
 - **`pseudoArgs`** — the arguments of a function-style pseudo-class.
 - **`combinator`** — an operator that works similarly to the [CSS child combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator): that is, the `selector` on the right of the `combinator` will only match an element whose direct parent matches the `selector` on the left of the `combinator`.
