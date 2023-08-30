@@ -9,7 +9,7 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 :::
 
-## System  requirements
+## Sistem gereksinimleri
 
 **İşletim sistemi sürümü:** macOS 10.13 (64 bit) veya üstü
 
@@ -19,7 +19,7 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 **Boş disk alanı:** 120 MB
 
-## Installation
+## Kurulum
 
 To install AdGuard for Mac on your computer, launch your browser, type *adguard.com* in the address bar, and press **Download** [on the page that opens](https://adguard.com/download.html?auto=1).
 

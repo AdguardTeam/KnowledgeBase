@@ -47,7 +47,7 @@ So, ready to get your hands dirty? Here are actions that, when included in the i
 
  `server:adguard dns` switches to AdGuard DNS server;
 
-:::note
+:::not
 
 The full list of supported provider names can be found inside AdGuard DNS settings under the "Custom DNS settings".
 
@@ -127,7 +127,7 @@ Package name: `com.adguard.android`
 
 Class: `com.adguard.android.receiver.AutomationReceiver`
 
-:::note
+:::not
 
 Before v4.0 the class was called `com.adguard.android.receivers.AutomationReceiver` but then we changed its name to `com.adguard.android.receiver.AutomationReceiver`. If you used this feature, please pay attention and use the new name.
 

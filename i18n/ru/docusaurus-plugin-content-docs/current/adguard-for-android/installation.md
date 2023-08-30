@@ -27,9 +27,9 @@ AdGuard для Android не представлен на Google Play: Google за
 
     - перейдите на [наш сайт](https://adguard.com/adguard-android/overview.html) и нажмите кнопку *Скачать*
     - запустите браузер и введите: [https://adguard.com/apk](https://adguard.com/apk)
-    - или отсканируйте этот QR-код
+    - or scan this QR code:
 
-    ![QR-код *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_qr.png)
+    ![QR-код *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/qr/inst-qr-en.png)
 
 1. **Allow installing apps from unknown sources**. Once the file download is complete, tap *Open* in the notification.
 

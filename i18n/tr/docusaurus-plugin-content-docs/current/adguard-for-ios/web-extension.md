@@ -48,7 +48,7 @@ Tap it, then turn on the switch. On the same screen make sure that the AdGuard e
 
 ![settings extensions](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings4_en.png)
 
-:::note
+:::not
 
 AdGuard's Safari Web extension requires access to the web pages' content to operate, but doesn't use it for any purpose other than blocking ads.
 
@@ -70,7 +70,7 @@ Bu yöntemi kullanırsanız, yine de AdGuard uzantısına gerekli izinleri verme
 
 Artık mevcut uzantılar arasında AdGuard'ı görüyor olmanız gerekir. Tap it and then the yellow **i** icon. Enable **Advanced protection** by tapping the *Turn on* button and confirming the action.
 
-:::note
+:::not
 
 If you use AdGuard for iOS without Premium subscription, you won't be able to enable **Advanced protection**.
 

@@ -179,7 +179,7 @@ If you see an app that shouldn't be using the Internet at all or an app that you
 
 Browsing Security protects you from visiting phishing and malicious websites. It also warns you about potential malware.
 
-![Browsing Security *mobile_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
+![Gezinti Koruması *mobile_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
 
 If you're about to visit a dangerous website, Browsing Security will show you the following warning:
 
@@ -270,9 +270,9 @@ This section shows data about the requests handled by *DNS protection*. You can 
 
 This section displays statistics on the device resources used by AdGuard during the last 24 hours. The data may differ from your device settings. This happens because the system attributes the traffic of filtered apps to AdGuard. Thus, the device shows that AdGuard consumes more resources than it actually does. [Read more about battery and traffic consumption issues](/adguard-for-android/solving-problems/battery/)
 
-## Settings
+## Ayarlar
 
-### General
+### Genel
 
 This section helps you manage the appearance and behavior of the app: you can set the color theme and language, manage notifications, and more. If you want to help the AdGuard team detect app crashes and research usability, you can enable *Auto-report crashes* and *Send technical and interaction data*.
 
@@ -324,7 +324,7 @@ This section contains the list of apps for which AdGuard filters HTTPS traffic. 
 
 This setting allows you to manage websites for which AdGuard should filter HTTPS traffic.
 
-HTTPS filtering allows AdGuard to filter the content of requests and responses, but we never collect or store this data. However, to increase security, we [exclude websites that contain potentially sensitive information from HTTPS filtering](/general/https-filtering/what-is-https-filtering/#financial-websites-and-websites-with-sensitive-personal-data).
+HTTPS filtreleme, AdGuard'ın isteklerin ve yanıtların içeriğini filtrelemesini sağlar, ancak bu verileri asla toplamaz veya saklamayız. However, to increase security, we [exclude websites that contain potentially sensitive information from HTTPS filtering](/general/https-filtering/what-is-https-filtering/#financial-websites-and-websites-with-sensitive-personal-data).
 
 You can also add websites that you consider necessary to exclusions by selecting one of the modes:
 
@@ -347,7 +347,7 @@ This section allows you to select the traffic filtering method.
 
 - *Local VPN* filters traffic through a locally created VPN. This is the most reliable mode. Due to Android restrictions, it is also the only system-wide traffic filtering method available on non-rooted devices.
 
-:::note
+:::not
 
 The *Local VPN* mode doesn't allow AdGuard to be used simultaneously with other VPNs. To use another VPN with AdGuard, you need to reconfigure it to work in proxy mode and set up an outbound proxy in AdGuard. For AdGuard VPN, this is done automatically with the help of the [*Integrated mode*](#integration-with-adguard-vpn).
 
@@ -357,7 +357,7 @@ The *Local VPN* mode doesn't allow AdGuard to be used simultaneously with other 
 
 - *Manual proxy* involves setting up a proxy server on a specific port, which can then be configured in Wi-Fi settings. This mode requires root access for Android 10 and above.
 
-#### Filters
+#### Filtreler
 
 AdGuard blocks ads, trackers, and annoyances by applying rules from its filters. Most features from the *Protection* section are powered by [AdGuard filters](/general/ad-filtering/adguard-filters/#adguard-filters). If you enable *Basic protection*, it will automatically turn on the AdGuard Base filter and AdGuard Mobile Ads filter. And vice versa: if you turn off both filters, *Basic protection* will also be disabled.
 
@@ -365,7 +365,7 @@ AdGuard blocks ads, trackers, and annoyances by applying rules from its filters.
 
 Filters enabled by default are enough for normal AdGuard operation. However, if you want to customize ad blocking, you can use other AdGuard or third-party filters. To do this, select a category and enable the filters you'd like. To add a custom filter, tap *Custom filters* → *Add custom filter* and enter its URL or file path.
 
-:::note
+:::not
 
 If you activate too many filters, some websites may work incorrectly.
 
@@ -373,7 +373,7 @@ If you activate too many filters, some websites may work incorrectly.
 
 [Read more about filters](https://adguard.com/en/blog/what-are-filters.html)
 
-#### Userscripts
+#### Kullanıcı Betikleri
 
 Userscripts are mini-programs written in JavaScript that extend the functionality of one or more websites. To install a userscripts, you need a special userscript manager. AdGuard has such a functionality and allows you to add userscripts by URL or from file.
 
@@ -400,7 +400,7 @@ In this section, you can find information about your license and manage it:
 
 Use this section if you have any questions or suggestions regarding AdGuard for Android. We recommend consulting *[FAQ](https://adguard.com/support/adguard_for_android.html)* or this knowledge base before contacting support.
 
-![Support *mobile_border](https://cdn.adtidy.org/blog/new/cz55usupport.png)
+![Destek *mobile_border](https://cdn.adtidy.org/blog/new/cz55usupport.png)
 
 If you notice a missed ad, please report it via *Report incorrect blocking*.
 
@@ -408,7 +408,7 @@ For unusual app behavior, select *Report a bug*. If possible, describe your prob
 
 For your suggestions, use *Request a feature*.
 
-:::note
+:::not
 
 GitHub is an alternative way to report bugs and suggest new features. [Instructions and repository links](/guides/report-bugs/#adguard-for-android)
 
@@ -420,7 +420,7 @@ AdGuard for Android has a free and a paid version. Paid features extend AdGuard'
 
 - *Ad blocking in apps* allows you to block ads in non-browser apps. You can specify apps for filtering in [*App management*](#app-management)
 
-:::note
+:::not
 
 AdGuard uses its own ad-free media player to block ads in YouTube videos. To open the media player, open the YouTube app and share a video with AdGuard. This feature is free.
 

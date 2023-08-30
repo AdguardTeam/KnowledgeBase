@@ -25,7 +25,7 @@ AdGuard for Safari is a free app presented on the App Store. To install it on yo
 
 :::note
 
-Not all extensions are required for AdGuard for Safari to function correctly. For instance, checking the *Icon* extension enables the icon in the tray menu. However, we recommend enabling all of them.
+Not all extensions are required for AdGuard for Safari to function correctly. For instance, checking the *Icon* extension enables the icon next to the search bar. However, we recommend enabling all of them.
 
 :::
 

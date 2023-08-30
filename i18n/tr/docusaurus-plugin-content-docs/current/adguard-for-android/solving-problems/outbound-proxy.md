@@ -101,7 +101,7 @@ Bu makalede, AdGuard ile çalışmak için en popüler proxy'lerden bazıların�
 
 *Here we presume that you have already configured a Shadowsocks server and a client on your device.*
 
-:::note
+:::not
 
 You should remove Shadowsocks app from filtering before setting up the process (**App management** → **Shadowsocks** → **Route traffic through AdGuard**) to avoid infinite loops and drops.
 

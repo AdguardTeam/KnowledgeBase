@@ -150,7 +150,7 @@ How does AdGuard VPN work? Without going into technical details, we can say that
 **What AdGuard VPN does:**
 
 - hides your real whereabouts and helps you stay anonymous
-- сhanges your IP address to protect your data from tracking
+- changes your IP address to protect your data from tracking
 - encrypts your traffic to make it unreachable to scammers
 - lets you configure where to use VPN and where not to (exclusions feature)
 
