@@ -54,7 +54,7 @@ Let's take a closer look at them.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/dual_it.png)
 
-Most of them are represented in the `AdGuard for Windows` project and consist of only one or two words:
+Bunların çoğu `Windows için AdGuard` projesinde temsil edilir ve yalnızca bir veya iki kelimeden oluşur:
 
 - `days;`
 - `extensions;`

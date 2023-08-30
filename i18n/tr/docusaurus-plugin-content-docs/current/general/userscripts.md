@@ -1,5 +1,5 @@
 ---
-title: Userscripts
+title: Kullanıcı Betikleri
 sidebar_position: 5
 ---
 
@@ -19,7 +19,7 @@ These userscripts come directly from the AdGuard developers, and we can guarante
 
 - **AdGuard Assistant** (legacy version). This custom extension is designed to control filtering directly from the browser page (manual blocking, exclusion of the site, etc.).
 
-:::note
+:::not
 
 This version of Assistant is legacy and there is no point in using it on new systems, since it has been replaced with the full-fledged [Browser Assistant](https://adguard.com/adguard-assistant/overview.html). But legacy Assistant might be of help if there is no Browser Assistant extension for your browser.
 
@@ -115,7 +115,7 @@ AdGuard supports both old GM\_ functions and new GM4 API that use GM object.
 
 ##### Values
 
-:::note
+:::not
 
 All listed old Greasemonkey functions are deprecated but still supported.
 

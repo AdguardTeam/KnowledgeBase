@@ -27,7 +27,7 @@ Bu özelliği etkinleştirdikten sonra, AdGuard size ekran görüntüsünde gös
 
 ![samsungpay *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/samsungpay-with-adguard-in-south-korea/en.gif)
 
-:::note
+:::not
 
 This feature will work only if the Local VPN filtering mode is chosen in AdGuard settings. If another mode is being used, Samsung Pay will function without any interruptions.
 

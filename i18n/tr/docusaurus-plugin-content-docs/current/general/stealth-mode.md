@@ -9,13 +9,13 @@ You can flexibly adjust the work of Stealth Mode: for instance, you can prohibit
 
 Below we will list and describe the main features and options that you can control in the **Stealth Mode** settings. They are split into four groups: **General**, **Tracking methods**, **Browser API**, and **Miscellaneous**.
 
-:::note
+:::not
 
 Some options may not be available depending on the particular product due to OS or other limitations.
 
 :::
 
-## General {#general}
+## Genel {#general}
 
 ### Hide your search queries {#searchqueries}
 

@@ -5,31 +5,31 @@ sidebar_position: 3
 
 ## Lisans nasıl etkinleştirilir
 
-To activate your license, go to the *License* section of your AdGuard product and find the *Log in* field or *Activate* button. Use the email and password of your AdGuard account to log in. If you don't have an account yet, you will be offered to create one.
+Lisansınızı etkinleştirmek için AdGuard ürününüzün *Lisans* bölümüne gidin ve *Giriş yap* alanını veya *Etkinleştir* düğmesini bulun. Giriş yapmak için AdGuard hesabınızın e-posta adresini ve parolasını kullanın. Henüz bir hesabınız yoksa, bir tane oluşturmanız teklif edilecektir.
 
-:::note
+:::not
 
-AdGuard hesabı aracılığıyla bir lisansı etkinleştirmek için en az bir boş alana sahip geçerli bir lisans gereklidir. If your license is already used on a maximum number of devices, you can [upgrade it](../payment-options#upgrade) or [transfer it from one device to another](../transfer).
+AdGuard hesabı aracılığıyla bir lisansı etkinleştirmek için en az bir boş alana sahip geçerli bir lisans gereklidir. Lisansınız zaten maksimum sayıda cihazda kullanılıyorsa, [lisansınızı yükseltebilir](../payment-options#upgrade) veya [bir cihazdan diğerine aktarabilirsiniz](../transfer).
 
 :::
 
-Alternatively, you can use a [license key](../what-is#license-key) to activate the license.
+Alternatif olarak lisansı etkinleştirmek için [lisans anahtarı](../what-is#license-key) kullanabilirsiniz.
 
-**Below you can check step-by-step activation instructions for each platform.**
+**Aşağıda her platform için adım adım etkinleştirme talimatlarını kontrol edebilirsiniz.**
 
 ### Windows için AdGuard'ı etkinleştirme
 
-1. Open the AdGuard app
+1. AdGuard uygulamasını açın
 
-    To do it, double-click the AdGuard icon on the desktop:
+    Bunu yapmak için masaüstündeki AdGuard simgesine çift tıklayın:
 
-    ![AdGuard icon on the desktop](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowsEn.png)
+    ![Masaüstündeki AdGuard simgesi](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowsEn.png)
 
-    or double-click the AdGuard icon in the system tray:
+    veya sistem tepsisindeki AdGuard simgesine çift tıklayın:
 
-    ![AdGuard icon in the system tray](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windows2En.png)
+    ![Sistem tepsisindeki AdGuard simgesi](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windows2En.png)
 
-1. Go to **License** tab in the app menu and click **Activate license**
+1. Uygulama menüsünde **Lisans** sekmesine gidin ve **Lisansı etkinleştir** öğesine tıklayın
 
     ![Click Activate license](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowslicense1en.png)
 
@@ -71,7 +71,7 @@ Alternatively, you can use a [license key](../what-is#license-key) to activate t
 
 ### Android için AdGuard'ı etkinleştirme
 
-1. Open the AdGuard app
+1. AdGuard uygulamasını açın
 
 1. Tap **menu icon (☰)** in the top left corner of the screen
 

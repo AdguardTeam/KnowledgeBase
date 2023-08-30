@@ -1,11 +1,11 @@
 ---
-title: Browser Assistant
+title: Tarayıcı Asistanı
 sidebar_position: 3
 ---
 
 AdGuard Asistanı'nın birincil işlevi filtrelemeyi doğrudan tarayıcıdan yönetmektir. It has existed for quite a long time, and its form and content have changed. More precisely, it used to be a mere userscript incorporated into the AdGuard for Mac app and became a full-fledged browser extension. Now it definitely yields more benefits.
 
-![Browser Assistant](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistantmac.jpg)
+![Tarayıcı Asistanı](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistantmac.jpg)
 
 ## Benefits
 
@@ -31,7 +31,7 @@ When AdGuard for Mac is installed for the first time, the thing a user encounter
 
 ![Yeni bir tarayıcı asistanı yükleme](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_onboarding_safari.jpg)
 
-:::note
+:::not
 
 Nadir durumlarda, bir tarayıcı Tarayıcı Asistanı ile uyumsuz olabilir ve kullanıcıya bunun yerine eski sürümü yüklemesi önerilecektir.
 

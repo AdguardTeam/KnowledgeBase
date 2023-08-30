@@ -9,14 +9,14 @@ Geliştirme ekibimiz, bu üçüncü taraf yazılımın geliştiricilerine, beta 
 
 Bu, AdGuard yazılım geliştirme sürecinde bize gerçekten yardımcı olan kütüphanelerin ve diğer kaynakların listesidir.
 
-## AdGuard for Windows {#win}
+## Windows için AdGuard {#win}
 
-- SQLLite database engine: [https://sqlite.org](https://sqlite.org)
-- ADO.NET provider for SQLite: [https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki](https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki)
+- SQLLite veri tabanı motoru: [https://sqlite.org](https://sqlite.org)
+- SQLite için ADO.NET sağlayıcısı: [https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki](https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki)
 - Json.NET — high-performance JSON framework for .NET: [https://www.newtonsoft.com/json](https://www.newtonsoft.com/json)
 - AvalonEdit — WPF-based text editor component: [https://avalonedit.net](https://avalonedit.net)
 
-## AdGuard for Mac {#mac}
+## Mac için AdGuard {#mac}
 
 - Red Sweater Software, LLC for RSVerticallyCenteredTextFieldCell component: [http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes](http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes)
 - Ilija Tovilo for ITProgressIndicator component: [https://github.com/iluuu1994/ITProgressIndicator](https://github.com/iluuu1994/ITProgressIndicator)
@@ -28,7 +28,7 @@ Bu, AdGuard yazılım geliştirme sürecinde bize gerçekten yardımcı olan kü
 - Bartosz Janda for Acextract component: [https://github.com/bartoszj/acextract](https://github.com/bartoszj/acextract)
 - FLOPageViewController: [https://github.com/floschliep/FLOPageViewController](https://github.com/floschliep/FLOPageViewController)
 
-## AdGuard for Android {#android}
+## Android için AdGuard {#android}
 
 - Logback-android by Tony19: [https://tony19.github.io/logback-android](https://tony19.github.io/logback-android)
 - Otto by Square: [http://square.github.io/otto](http://square.github.io/otto)
@@ -36,7 +36,7 @@ Bu, AdGuard yazılım geliştirme sürecinde bize gerçekten yardımcı olan kü
 - MaterialDateRangePicker by Supratim Chakraborty: [https://github.com/borax12/MaterialDateRangePicker](https://github.com/borax12/MaterialDateRangePicker)
 - HelloCharts by Leszek Wach: [https://github.com/lecho/hellocharts-android](https://github.com/lecho/hellocharts-android)
 
-## AdGuard for iOS {#ios}
+## iOS için AdGuard {#ios}
 
 - Reachability component by Tony Million: [https://github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
 - Fmdb component by August «Gus» Mueller: [https://github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
@@ -55,7 +55,7 @@ Bu, AdGuard yazılım geliştirme sürecinde bize gerçekten yardımcı olan kü
 - crypto-js: [https://github.com/brix/crypto-js](https://github.com/brix/crypto-js)
 - ace: [https://github.com/ajaxorg/ace](https://github.com/ajaxorg/ace)
 
-## AdGuard for Safari {#safari}
+## Safari için AdGuard {#safari}
 
 - ace: [https://github.com/ajaxorg/ace](https://github.com/ajaxorg/ace)
 - adm-zip: [https://github.com/cthackers/adm-zip](https://github.com/cthackers/adm-zip)
@@ -129,7 +129,7 @@ Also a huge thanks and gratitude to all beta testers and other engaged users, wh
 - Aikatsui — AdGuard Home'a aktif olarak katkıda bulunan
 - Andy Kleinert (AndyKl) — translator and proofreader to German in Crowdin
 - BigDargon — contributed the hostsVN project as a source to the list of AdGuard DNS
-- Blaz — started as a filter contributor and now working at AdGuard
+- Blaz — filtreye katkıda bulunan olarak başladı ve şimdi AdGuard'da çalışıyor
 - Boo Berry - forum ve Telegram grubu moderatörü
 - buuuuuuu190 — beta test kullanıcısı, aktif AdGuard Forum üyesi
 - clarke — beta test kullanıcısı, aktif AdGuard Forum üyesi
@@ -139,7 +139,7 @@ Also a huge thanks and gratitude to all beta testers and other engaged users, wh
 - fabjazz — beta test kullanıcısı, aktif AdGuard Forum üyesi
 - Görkem Emrah Güler (gork7777) — translator and proofreader to Turkish in Crowdin
 - hanschke — beta test kullanıcısı, aktif AdGuard Forum üyesi
-- iDjay — outstanding beta tester of AdGuard for iOS
+- iDjay — iOS için AdGuard'ın olağan üstü beta test kullanıcısı
 - Imre Kristoffer Eilertsen (DandelionSprout) — maintainer of "Dandelion Sprout’s Nordic Filters" that are included in all AdGuard tools
 - IONIL — translator and proofreader to Hebrew in Crowdin
 - itabmedia — beta test kullanıcısı, aktif AdGuard Forum üyesi

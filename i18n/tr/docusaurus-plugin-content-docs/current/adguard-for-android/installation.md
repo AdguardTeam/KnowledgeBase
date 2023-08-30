@@ -1,5 +1,5 @@
 ---
-title: Installation
+title: Kurulum
 sidebar_position: 2
 ---
 
@@ -9,7 +9,7 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 :::
 
-## System  requirements
+## Sistem gereksinimleri
 
 **OS version:** Android 7.0 or higher
 
@@ -17,7 +17,7 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 **Free disk space:** 500 MB
 
-## Installation
+## Kurulum
 
 Most Android-based apps are distributed via Google Play; however, AdGuard is not presented there, because Google prohibits distribution of network-level ad blockers via Google Play, i.e. apps that block commercials in other apps. You will find more information about Google restrictive policy [in our blog](https://blog.adguard.com/en/google-removes-adguard-android-app-google-play/).
 
@@ -27,9 +27,9 @@ That’s why you can only install AdGuard for Android manually. To use the app o
 
     - head over to [our website](https://adguard.com/adguard-android/overview.html) and tap the *Download* button
     - start the browser and type in the following URL: [https://adguard.com/apk](https://adguard.com/apk)
-    - or scan this QR code
+    - veya bu QR kodu tarayın:
 
-    ![QR code *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_qr.png)
+    ![QR code *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/qr/inst-qr-en.png)
 
 1. **Allow installing apps from unknown sources**. Once the file download is complete, tap *Open* in the notification.
 
