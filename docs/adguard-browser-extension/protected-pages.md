@@ -1,5 +1,5 @@
 ---
-title: Integration mode (legacy)
+title:  Browser-protected pages
 sidebar_position: 4
 ---
 
@@ -14,7 +14,8 @@ This article is about AdGuard Browser Extension, which safeguards only your brow
 When using a web extension like AdGuard Browser Extension, there are certain restricted domains that prohibit access or permissions. As a result, ad blocking extensions are not allowed to interact with or modify the content of these pages. In other words, they are not allowed to block ads and other annoying elements on these web pages.
 
 ### Chromium browser restrictions
-Chromium-based browsers, such as Google Chrome, maintain a list of restricted domains that extensions are not allowed to access. These domains include: 
+
+Chromium-based browsers, such as Google Chrome, maintain a list of restricted domains that extensions are not allowed to access. These domains include:
 
 * clients.google.com
 * clients[0-9]+.google.com
@@ -27,6 +28,7 @@ Chromium-based browsers, such as Google Chrome, maintain a list of restricted do
 * URLs starting with `view-source:` or `data:`
 
 ### Firefox browser restrictions
+
 Similarly, the Firefox browser has its own set of restricted domains where extensions are not permitted to operate. These restricted domains include:
 
 * accounts-static.cdn.mozilla.net
@@ -50,11 +52,11 @@ Changing advanced settings can affect the stability and security of Firefox. Thi
 2. Click the extension you want to enable on sites with restrictions (In this case, AdGuard).
 3. Select **Allow** in the section **Run on sites with restrictions**.
 
-Alternatively, you can: 
+Alternatively, you can:
 
 1. Open a new tab and type **about:config** in the address bar.
-2.  Press **Return**. You may encounter a warning. In this case, click **Accept the Risk and Continue**.
-3 Search for `extensions.webextensions.restrictedDomains`. If you can’t find this preference, you can create it. Simply select the **Boolean** type and click **+** to add it.
+2. Press **Return**. You may encounter a warning. In this case, click **Accept the Risk and Continue**.
+3. Search for `extensions.webextensions.restrictedDomains`. If you can’t find this preference, you can create it. Simply select the **Boolean** type and click **+** to add it.
 4. Click the toggle button next to this preference and change its value to `false`.
 5. Restart Firefox.
 
