@@ -1940,7 +1940,11 @@ Rules with `$removeparam` modifier are intended to strip query parameters from r
 
 - `$removeparam=param` removes query parameter with the name `param` from URLs of any request, e.g. a request to `http://example.com/page?param=1&another=2` will be transformed into `http://example.com/page?another=2`.
 
-`$removeparam` basic syntax is supported starting with v1.7 of [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) and v3.6 of AdGuard Browser Extension.
+:::note Compatibility
+
+`$removeparam` syntax is supported starting with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.7 and AdGuard Browser Extension v3.6.
+
+:::
 
 **Regular expressions**
 
@@ -3867,7 +3871,11 @@ Here is the composition of each content blocker:
 
 User rules and allowlist are added to every content blocker.
 
-The main issue with using multiple content blockers is that the rules within these content blockers cannot influence each other. This may lead to different unexpected issues. So filter maintainers may use `!#safari_cb_affinity` to define Safari content blocker affinity for the rules inside of the directive block.
+:::caution
+
+The main disadvantage of using multiple content blockers is that rules from different blockers are applied independently. Blocking rules are not affected by this, but unblocking rules (fixing websites, bypassing anti-adblocks) can cause problems. If a blocking rule is in one content blocker and an exception is in another, the exception will not work. Filter maintainers use `!#safari_cb_affinity` to define Safari content blocker affinity for the rules inside of the directive block.
+
+:::
 
 **Syntax**
 
