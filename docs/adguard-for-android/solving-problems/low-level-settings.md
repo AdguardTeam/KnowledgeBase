@@ -35,7 +35,7 @@ Here you can list domains that will be forwarded directly to fallback upstreams 
 
 #### Detect search domains
 
-If this option is enabled, AdGuard will detect search domains and automatically forward them to fallback upstreams.
+This option makes AdGuard detect search domains and automatically forward them to fallback upstreams.
 
 #### Bootstrap upstreams
 
@@ -47,7 +47,7 @@ Here you can specify the response type for domains blocked by DNS rules based on
 
 - Respond with REFUSED (default)
 - Respond with NXDOMAIN
-- Respond with Custom IP address (IPv4 and IPv6 addresses can be specified here)
+- Respond with a custom IP address (IPv4 and IPv6 addresses can be specified here)
 
 #### Blocking mode for hosts rules
 
@@ -56,7 +56,7 @@ Here you can specify the response type for domains blocked by DNS rules based on
 
 - Respond with REFUSED
 - Respond with NXDOMAIN
-- Respond with Custom IP address (IPv4 and IPv6 addresses can be specified here) – default
+- Respond with a custom IP address (IPv4 and IPv6 addresses can be specified here) – default
 
 #### DNS request timeout
 
@@ -72,33 +72,33 @@ Here you can specify the maximum number of cached responses. Default value is 10
 
 #### ECH blocking
 
-If enabled, AdGuard strips Encrypted Client Hello parameters from DNS responses.
+This option makes AdGuard strip Encrypted Client Hello parameters from DNS responses.
 
 #### Ignore unavailable outbound proxy
 
-Enable this feature to make AdGuard send DNS requests directly if the outbound proxy is unavailable.
+This option makes AdGuard send DNS requests directly if the outbound proxy is unavailable.
 
 #### Try HTTP/3 for DNS-over-HTTPS upstreams
 
-By default, all DNS requests for DNS-over-HTTPS are sent via HTTP/2 protocol. If enabled, AdGuard uses HTTP/3 to speed up DNS query resolution for DoH upstreams.
+By default, all DNS requests for DNS-over-HTTPS are sent via HTTP/2 protocol. This option makes AdGuard use HTTP/3 to speed up DNS query resolution for DoH upstreams.
 
 #### SERVFAIL failure response
 
-Once enabled, AdGuard sends a SERVFAIL response to the client if all upstreams, including fallback ones, fail to reply. When this setting is disabled, no response is sent to the client.
+This option makes AdGuard send a SERVFAIL response to the client if all upstreams, including fallback ones, fail to reply. When this setting is disabled, no response is sent to the client.
 
 #### Use fallback for non-fallback domains
 
-Enable this feature if you want AdGuard to use fallback upstream for all domains. Otherwise, fallback upstream will only be used for fallback domains and search domains if the corresponding option is enabled.
+This option makes AdGuard use fallback upstream for all domains. Otherwise, fallback upstream will only be used for fallback domains and search domains if the corresponding option is enabled.
 
 #### Validate DNS upstreams
 
-Enable to make AdGuard test DNS upstreams before adding or updating custom DNS servers.
+This option makes AdGuard test DNS upstreams before adding or updating custom DNS servers.
 
 ### Filtering
 
 #### Capture HAR
 
-Here you can enable HAR file capture. Use it only for debugging purposes! If the setting is enabled, AdGuard will create a directory named "har" inside the app cache directory. It contains information about all filtered HTTP requests in HAR 1.2 format and can be analyzed with the Fiddler program.
+Here you can enable HAR file capture. Use it only for debugging purposes! This option makes AdGuard create a directory named "har" inside the app cache directory that contains information about all filtered HTTP requests in HAR 1.2 format and can be analyzed with the Fiddler program.
 
 ### HTTPS filtering
 
@@ -108,25 +108,25 @@ Every encrypted Internet connection has an unencrypted part. This is the very fi
 
 #### OCSP checking
 
-Once enabled, this option runs asynchronous OCSP checks to check whether the website’s SSL certificate is revoked.
+This option runs asynchronous OCSP checks to check whether the website’s SSL certificate is revoked.
 
-If the OCSP check is completed within the minimum timeout, AdGuard will immediately block the connection if the certificate is revoked or establish the connection if the certificate is valid.
+If the OCSP check is completed within the minimum timeout, AdGuard immediately blocks the connection if the certificate is revoked or establishes the connection if the certificate is valid.
 
-If the verification takes too long, AdGuard will establish a connection and continue checking the certificate in the background. If it is revoked, current and future connections to the domain will be blocked.
+If the verification takes too long, AdGuard establishes a connection and continues checking the certificate in the background. If it is revoked, current and future connections to the domain are blocked.
 
 #### Redirect DNS-over-HTTPS requests
 
-IF enabled, DNS-over-HTTPS requests will be redirected to the DNS Protection module. We recommend disabling fallback upstreams and use only encrypted DNS servers to maintain privacy.
+This option makes AdGuard redirect DNS-over-HTTPS requests to the local DNS proxy in addition to plain DNS requests. We recommend disabling fallback upstreams and using only encrypted DNS servers to maintain privacy.
 
 #### Filter HTTP/3
 
-If you enable this setting, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
+This option makes AdGuard filter requests sent over HTTP/3 in addition to other request types.
 
 ### Outbound proxy
 
 #### Show the Filter DNS requests setting
 
-When this feature is enabled, the string *Filter DNS requests* appears in the *Settings ➝ Filtering ➝ Network ➝ Proxy ➝ Proxy server ➝ Add proxy server* section with the switch next to it. By toggling the switch, you can enable filtering of DNS requests passing through the proxy.
+This option displays the *Filter DNS requests* switch in the *Add proxy server* dialog. By toggling the switch, you can enable filtering of DNS requests that pass through the specified proxy.
 
 ### Protection
 
@@ -140,11 +140,11 @@ If enabled, AdGuard records blocked HTML elements in *Recent activity*.
 
 #### Scriplet debugging
 
-If you need to activate debugging of scriptlets, enable this feature. Then there will be messages in the browser log that some scriplet rules have been applied.
+This options displays information about applied scriptlet rules to the browser log.
 
 #### Excluded apps
 
-Here you can list package names and UIDs that you want to exclude from AdGuard protection.
+Here you can list package names and UIDs that you want to exclude from AdGuard's protection.
 
 #### QUIC bypass packages
 
@@ -152,23 +152,23 @@ Here you can specify package names for which AdGuard should bypass QUIC traffic.
 
 #### Reconfigure Automatic proxy when network changes
 
-Enable this setting if you want the protection to restart to reconfigure the automatic proxy settings when the device connects to another network. The state of this setting affects operation only if the current routing mode is Automatic proxy.
+This option restarts protection to reconfigure the automatic proxy settings when the device connects to another network. It is only applied if *Automatic proxy* is selected in *Routing mode*.
 
 #### IPv6 filtering
 
-If enabled, AdGuard filters IPv6 networks if an IPv6 network interface is available.
+This option makes AdGuard filter IPv6 networks if an IPv6 network interface is available.
 
 #### IPv4 ranges excluded from filtering
 
-Filtering for IPv4 ranges, listed in this section, will be disabled.
+Filtering for IPv4 ranges listed in this section is disabled.
 
 #### IPv6 ranges excluded from filtering
 
-Filtering for IPv6 ranges, listed in this section, will be disabled.
+Filtering for IPv6 ranges listed in this section is disabled.
 
 #### TCP keepalive for outgoing sockets
 
-If enabled, AdGuard sends a keepalive probe after the specified time period to ensure that the TCP connection is alive. Here you can specify the TCP keepalive idle time before starting keepalive probes and time between keepalive probes for an unresponsive peer.
+This option makes AdGuard send a keepalive probe after the specified time period to ensure that the TCP connection is alive. Here you can specify the idle time before starting keepalive probes and time between keepalive probes for an unresponsive peer.
 
 After a system-defined number of unsuccessful attempts to get a response from the server, the system automatically closes the TCP connection.
 
@@ -188,15 +188,15 @@ Here you can set the maximum transmission unit (MTU) of the VPN interface. The r
 
 #### Restore VPN automatically
 
-If enabled, this feature automatically re-enables AdGuard’s local VPN after it has been turned off due to network absence, tethering, or low-power mode.
+This option automatically re-enables AdGuard’s local VPN after it has been turned off due to network absence, tethering, or low-power mode.
 
 #### Packet capture (PCAP)
 
-If enabled, AdGuard will create the special file name `timestamp.pcap` (for instance, 1682599851461.pcap). It contains all network packets transferred through the VPN. This file is located in the app cache directory and can be analyzed with the Wireshark program.
+This option makes AdGuard create a file `timestamp.pcap` (for instance, 1682599851461.pcap) that lists all network packets transferred through the VPN and is located in the app cache directory. This file can be analyzed with the Wireshark program.
 
 #### Include Wi-Fi gateway in VPN routes
 
-If you want the gateway IP addresses to be added to VPN routes when on Wi-Fi, enable this feature.
+This option adds the gateway IP addresses to VPN routes when on Wi-Fi.
 
 #### IPv4 address
 
@@ -204,11 +204,11 @@ Here you can enter the IP address that will be used to create a TUN interface. B
 
 #### Forcibly route LAN IPv4
 
-When enabled, AdGuard filters all LAN connections, including local IPv4 network traffic, even if the *Route all LAN IPv4 connections* option is enabled.
+This option makes AdGuard filter all LAN connections, including local IPv4 network traffic, even if the *Route all LAN IPv4 connections* option is enabled.
 
 #### Route all LAN IPv4 connections
 
-Once enabled, AdGuard excludes LAN connections from filtering for simple networks. May not work for complex networks. Works only with the *Forcibly route LAN IPv4* option disabled.
+This option makes AdGuard exclude LAN connections from filtering for simple networks. May not work for complex networks. Works only with the *Forcibly route LAN IPv4* option disabled.
 
 #### IPv6 address
 
@@ -218,4 +218,4 @@ Here you can enter the IP address that will be used to create a TUN interface. B
 
 #### Detect Samsung Pay
 
-Korean users may encounter issues with Samsung Pay when AdGuard is enabled. Activate this feature to pause AdGuard's protection and use the Samsung Pay app seamlessly.
+Korean users may encounter issues with Samsung Pay when AdGuard is enabled. This option pauses AdGuard's protection while Samsung Pay is used.
