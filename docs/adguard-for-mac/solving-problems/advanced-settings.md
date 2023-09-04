@@ -9,15 +9,15 @@ This article covers AdGuard for Mac, a multifunctional ad blocker that protects 
 
 :::
 
-## How to reach the Advanced Settings
+## How to reach *Advanced Settings*
 
 :::caution
 
-Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only open this section if you are sure of what you are doing or our support team has asked you to do it.
+Changing *Advanced Settings* may cause problems with AdGuard's performance, break the Internet connection, or compromise your security and privacy. Make changes to this section only if you are sure of what you are doing or our support team has asked you to do it.
 
 :::
 
-To go to *Advanced settings*, click the AdGuard icon in the tray menu → click the gear icon → select *Advanced* → *Advanced settings*.
+To find *Advanced Settings*, open AdGuard, click the gear icon, select *Advanced*, then select *Advanced Settings*.
 
 ## Advanced Settings
 
