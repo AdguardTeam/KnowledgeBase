@@ -1,5 +1,5 @@
 ---
-title: Low Level Settings guide
+title: Low-level settings guide
 sidebar_position: 6
 ---
 
