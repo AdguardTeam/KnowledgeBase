@@ -9,7 +9,7 @@ This article covers AdGuard for Mac, a multifunctional ad blocker that protects 
 
 :::
 
-## How to reach *Advanced Settings*
+## How to reach Advanced Settings
 
 :::caution
 
