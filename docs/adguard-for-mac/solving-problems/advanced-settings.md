@@ -9,7 +9,7 @@ This article covers AdGuard for Mac, a multifunctional ad blocker that protects 
 
 :::
 
-## How to reach the Advanced settings
+## How to reach the Advanced Settings
 
 :::caution
 
@@ -17,9 +17,9 @@ Changing *Low-level settings* can cause problems with the performance of AdGuard
 
 :::
 
-To go to *Advanced settings*, follow this route: the AdGuard icon at the tray menu → the gear icon → Advanced → Advanced settings.
+To go to *Advanced settings*, click the AdGuard icon in the tray menu → click the gear icon → select *Advanced* → *Advanced settings*.
 
-## Advanced settings
+## Advanced Settings
 
 `network.extension.exclude.domains`
 
@@ -74,6 +74,10 @@ Uses a local DNS proxy to look for configs in the ECH Config Lists. If found, en
 `network.https.enforce.certificate.transparency`
 
 Verifies the authenticity of all certificates for the domain based on Chrome Certificate Transparency Policy.
+
+`network.https.filter.http3.enabled`
+
+By setting `true`, you allow AdGuard to filter traffic sent over HTTP/3, the latest version of the HTTP protocol based on QUIC.
 
 `network.filtering.localnetwork`
 
