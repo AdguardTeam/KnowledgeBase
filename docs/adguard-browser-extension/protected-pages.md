@@ -1,5 +1,5 @@
 ---
-title:  Browser-protected pages
+title: Browser-protected pages
 sidebar_position: 4
 ---
 
@@ -17,32 +17,32 @@ When using a web extension like AdGuard Browser Extension, there are certain res
 
 Chromium-based browsers, such as Google Chrome, maintain a list of restricted domains that extensions are not allowed to access. These domains include:
 
-* clients.google.com
-* clients[0-9]+.google.com
-* sb-ssl.google.com
-* URLs starting with `chrome://`, `chrome-extension://`, or `https://chrome.google.com/webstore/`
-* PDF files
-* Pages where Javascript is disabled
-* Security warning pages
-* Error pages such as 404 errors and network errors
-* URLs starting with `view-source:` or `data:`
+- clients.google.com
+- clients[0-9]+.google.com
+- sb-ssl.google.com
+- URLs starting with `chrome://`, `chrome-extension://`, or `https://chrome.google.com/webstore/`
+- PDF files
+- Pages where Javascript is disabled
+- Security warning pages
+- Error pages such as 404 errors and network errors
+- URLs starting with `view-source:` or `data:`
 
 ### Firefox browser restrictions
 
 Similarly, the Firefox browser has its own set of restricted domains where extensions are not permitted to operate. These restricted domains include:
 
-* accounts-static.cdn.mozilla.net
-* accounts.firefox.com
-* addons.cdn.mozilla.net
-* addons.mozilla.org
-* api.accounts.firefox.com
-* content.cdn.mozilla.net
-* discovery.addons.mozilla.org
-* install.mozilla.org
-* oauth.accounts.firefox.com
-* profile.accounts.firefox.com
-* support.mozilla.org
-* sync.services.mozilla.com
+- accounts-static.cdn.mozilla.net
+- accounts.firefox.com
+- addons.cdn.mozilla.net --
+- addons.mozilla.org
+- api.accounts.firefox.com
+- content.cdn.mozilla.net
+- discovery.addons.mozilla.org
+- install.mozilla.org
+- oauth.accounts.firefox.com
+- profile.accounts.firefox.com
+- support.mozilla.org
+- sync.services.mozilla.com
 
 ### Modifying restrictions in Firefox
 
