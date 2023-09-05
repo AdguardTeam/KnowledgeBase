@@ -61,6 +61,10 @@ Enable this feature to see AdGuard pop-up notifications. They do not appear too 
 
 Enable this feature if you want AdGuard to automatically intercept filter subscription URLs (i.e. `abp:subscribe` and alike) and to open a custom filter installation dialog.
 
+### Filter HTTP/3
+
+If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
+
 ### Use redirect driver mode
 
 If this option is enabled, AdGuard intercepts all the traffic and redirects it to the local proxy server for further filtering.
