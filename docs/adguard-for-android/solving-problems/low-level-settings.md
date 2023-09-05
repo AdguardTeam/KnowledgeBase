@@ -118,6 +118,10 @@ If the verification takes too long, AdGuard will establish a connection and cont
 
 IF enabled, DNS-over-HTTPS requests will be redirected to the DNS Protection module. We recommend disabling fallback upstreams and use only encrypted DNS servers to maintain privacy.
 
+#### Filter HTTP/3
+
+If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
+
 ### Outbound Proxy
 
 #### Show the Filter DNS requests setting
