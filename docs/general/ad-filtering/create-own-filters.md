@@ -1095,7 +1095,7 @@ These modifiers are able to completely change the behavior of basic rules.
 | [$permissions](#permissions-modifier) | ✅ | ⏳ | ⏳ | ❌ | ❌ | ❌ |
 | [$redirect](#redirect-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
 | [$redirect-rule](#redirect-rule-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
-| [$referrerpolicy](#referrerpolicy-modifier) | ⏳ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [$referrerpolicy](#referrerpolicy-modifier) | 🧩 | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$removeheader](#removeheader-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
 | [$removeparam](#removeparam-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
 | [$replace](#replace-modifier) | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ |
@@ -1107,9 +1107,7 @@ These modifiers are able to completely change the behavior of basic rules.
 
 - ✅ — fully supported
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
-<!-- following emoji shall be needed for $referrerpolicy after 1.12 is used in some apps -->
-<!-- - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions -->
-- ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product
+- 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions
 - ❌ — not supported
 - 👎 — deprecated; still supported but will be removed in the future
 
