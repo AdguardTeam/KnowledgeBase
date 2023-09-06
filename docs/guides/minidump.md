@@ -22,24 +22,26 @@ Even if you don’t experience any BSoD crash errors,  you can still set this op
 
  1. Type *sysdm.cpl* in the Windows search bar and click **Open**. The **System Properties Control Panel Menu** window will appear on the screen.
 
- :::tip Alternatively, click **Settings** →  **System** →  **About** →  **Advanced system settings**.
+    :::tip
 
- :::
+    Alternatively, click **Settings** →  **System** →  **About** →  **Advanced system settings**.
 
- ![System Properties *mobile_border](https://cdn.adtidy.org/blog/new/c2huSystem_Properties.jpeg)
+    :::
+
+    ![System Properties *mobile_border](https://cdn.adtidy.org/blog/new/c2huSystem_Properties.jpeg)
 
  1. Go to the **Advanced** tab.
  1. In the **Startup and Recovery** section, click **Settings**.
 
- ![Startup and Recovery *mobile_border](https://cdn.adtidy.org/blog/new/1dmybiStartup_and_Recovery.png)
+    ![Startup and Recovery *mobile_border](https://cdn.adtidy.org/blog/new/1dmybiStartup_and_Recovery.png)
 
  1. Enable the following three options:
 
- - Write an event to the system log
- - Automatically restart
- - Writing debugging information → Small memory dump (256 kb)
+    - Write an event to the system log
+    - Automatically restart
+    - Writing debugging information → Small memory dump (256 kb)
 
- ![Three options *mobile_border](https://cdn.adtidy.org/blog/new/nmr4eThree_options.png)
+    ![Three options *mobile_border](https://cdn.adtidy.org/blog/new/nmr4eThree_options.png)
 
  1. Click **OK** to apply the settings.
  1. Restart the computer.
@@ -47,6 +49,7 @@ Even if you don’t experience any BSoD crash errors,  you can still set this op
 You've successfully enabled the minidump file. Now it will be created automatically when the system crashes.
 
 :::note
+
 By default the minidump file is stored in the **%SystemRoot%\Minidump** folder. You can change the directory location to whatever you like, but please remember that a lot of programs are set to look for this location by default, so we recommend that you do not change the location.
 
 :::
