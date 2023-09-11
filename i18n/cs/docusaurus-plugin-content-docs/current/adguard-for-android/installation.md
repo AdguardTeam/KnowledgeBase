@@ -27,9 +27,9 @@ Proto můžete AdGuard pro Android nainstalovat pouze ručně. Chcete-li aplikac
 
     - přejděte na [náš web](https://adguard.com/adguard-android/overview.html) a klepněte na tlačítko *Stáhnout*
     - spusťte prohlížeč a zadejte následující URL: [https://adguard.com/apk](https://adguard.com/apk)
-    - nebo naskenujte tento QR kód
+    - nebo naskenujte tento QR kód:
 
-    ![QR code *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_qr.png)
+    ![QR code *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/qr/inst-qr-en.png)
 
 1. **Povolte instalaci aplikací z neznámých zdrojů**. Po dokončení stahování souboru klepněte na *Otevřít* v oznámení.
 

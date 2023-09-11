@@ -25,7 +25,7 @@ AdGuard для Safari — это бесплатная программа. Она
 
 :::note
 
-Not all extensions are required for AdGuard for Safari to function correctly. For instance, checking the *Icon* extension enables the icon in the tray menu. However, we recommend enabling all of them.
+Not all extensions are required for AdGuard for Safari to function correctly. For instance, checking the *Icon* extension enables the icon next to the search bar. However, we recommend enabling all of them.
 
 :::
 

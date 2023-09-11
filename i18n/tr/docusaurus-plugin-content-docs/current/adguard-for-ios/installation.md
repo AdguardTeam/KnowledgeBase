@@ -1,5 +1,5 @@
 ---
-title: Installation
+title: Kurulum
 sidebar_position: 2
 ---
 

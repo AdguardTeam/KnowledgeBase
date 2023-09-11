@@ -7,7 +7,7 @@ toc_max_heading_level: 4
 
 :::info
 
-In this article, we explain how to write custom filtering rules for use in AdGuard products. To test your rules, you can [download the AdGuard app](https://adguard.com/download.html?auto=true)
+In this article, we explain how to write custom filtering rules for use in AdGuard products. To test your rules, you can [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -169,8 +169,8 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 
 ### Special characters {#basic-rules-special-characters}
 
-- **`*`** — a wildcard character. It is used to represent "any set of characters". This can also be an empty string or a string of any length.
-- **`||`** — matching the beginning of an address. With this character you do not have to specify a particular protocol and subdomain in address mask. It means, `||` stands for `http://*.`, `https://*.`, `ws://*.`, `wss://*.` at once.
+- **`*`** — a wildcard character. It is used to represent any set of characters. This can also be an empty string or a string of any length.
+- **`||`** — an indication to apply the rule to the specified domain and its subdomains. With this character, you do not have to specify a particular protocol and subdomain in address mask. It means that `||` stands for `http://*.`, `https://*.`, `ws://*.`, `wss://*.` at once.
 - **`^`** — a separator character mark. Separator character is any character, but a letter, a digit, or one of the following: `_` `-` `.` `%`. In this example separator characters are shown in bold: `http:`**`//`**`example.com`**`/?`**`t=1`**`&`**`t2=t3`. The end of the address is also accepted as separator.
 - **`|`** — a pointer to the beginning or the end of address. The value depends on the character placement in the mask. For example, a rule `swf|` corresponds to `http://example.com/annoyingflash.swf` , but not to `http://example.com/swf/index.html`. `|http://example.org` corresponds to `http://example.org`, but not to `http://domain.com?url=http://example.org`.
 
@@ -332,7 +332,7 @@ Basically, they just limit the scope of rule application.
 | [$domain](#domain-modifier) | ✅ | ✅ | ✅ | ✅ [*](#domain-modifier-limitations) | ✅ [*](#domain-modifier-limitations) | ✅ |
 | [$header](#header-modifier) | ✅ | ⏳ | ⏳ | ❌ | ❌ | ❌ |
 | [$important](#important-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
-| [$match-case](#match-case-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ |
+| [$match-case](#match-case-modifier) | ✅ | ✅ | ✅ | ⏳ | ⏳ | ✅ |
 | [$method](#method-modifier) | ⏳ | ✅ | ✅ | ❌ | ❌ | ❌ |
 | [$popup](#popup-modifier) | ✅ * | ✅ | ✅ | ✅ * | ✅ * | ❌ |
 | [$third-party](#third-party-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -367,6 +367,13 @@ If you want the rule not to be applied to certain apps, start the app name with 
 
 - `||baddomain.com^$app=~org.example.app` — a rule to block requests that match the specified mask and are sent from any app save for the `org.example.app`.
 - `||baddomain.com^$app=~org.example.app1|~org.example.app2` — same as above, but now two apps are excluded: `org.example.app1` and `org.example.app2`.
+
+:::caution Restrictions
+
+Apps in the modifier value cannot have a wildcard, e.g. `$app=com.*.music`.
+Rules with such modifier are considered invalid.
+
+:::
 
 :::info Compatibility
 
@@ -496,9 +503,9 @@ despite the pattern `||*page` may match specific domains.
 - `/banner\d+/$domain=targetdomain.com` will not be matched as it contains a regular expression.
 - `page$domain=targetdomain.com|~example.org` will not be matched because the referrer domain is explicitly excluded.
 
-#### `domain` modifier limitations {#domain-modifier-limitations}
+##### `$domain` modifier limitations {#domain-modifier-limitations}
 
-:::caution Limitations
+:::caution Restrictions
 
 Safari does not support the simultaneous use of allowed and disallowed domains, so rules like `||baddomain.com^$domain=example.org|~foo.example.org` will not work in AdGuard for iOS and AdGuard for Safari.
 
@@ -575,13 +582,16 @@ This modifier defines a rule which applies only to addresses that match the case
 
 :::info Compatibility
 
-Rules with `$match-case` modifier currently are not supported by [AdGuard for iOS and Safari](https://github.com/AdguardTeam/SafariConverterLib/issues/55).
+Rules with the `$match-case` are supported by AdGuard for iOS and Safari,
+**running SafariConverterLib v2.0.41 or later**.
+
+All other products already support this modifier.
 
 :::
 
 #### **`$method`** {#method-modifier}
 
-This modifier limits the rule scope to requests that use the specified set of HTTP methods. Negated methods are allowed. The methods must be specified in all lowercase characters, but are matched case-insensitively. To add multiple domains to one rule, use the `|` character as a separator.
+This modifier limits the rule scope to requests that use the specified set of HTTP methods. Negated methods are allowed. The methods must be specified in all lowercase characters, but are matched case-insensitively. To add multiple methods to one rule, use the vertical bar `|` as a separator.
 
 **Examples**
 
@@ -590,10 +600,10 @@ This modifier limits the rule scope to requests that use the specified set of HT
 - `@@||evil.com$method=get` unblocks only GET requests to `evil.com`.
 - `@@||evil.com$method=~post` unblocks any requests to `evil.com` except POST.
 
-:::note
+:::caution Restrictions
 
-Rules with mixed value restriction are considered invalid. So, for example, the rule
-`||evil.com^$method=get|~head` will be rejected.
+Rules with mixed negated and not negated values are considered invalid.
+So, for example, the rule `||evil.com^$method=get|~head` will be rejected.
 
 :::
 
@@ -647,6 +657,12 @@ If there is a `$~third-party` modifier, the rule is only applied to the requests
 
 - `||domain.com$~third-party` — this rule is applied to `domain.com`, but not to the other domains. Example of a request that is not a third-party request: `http://domain.com/icon.ico`.
 
+:::note
+
+You may use a shorter name (alias) instead of using the full modifier name: `$3p`.
+
+:::
+
 #### **`$to`** {#to-modifier}
 
 `$to` limits the rule scope to requests made **to** the specified domains and their subdomains. To add multiple domains to one rule, use the `|`  character as a separator.
@@ -657,7 +673,7 @@ If there is a `$~third-party` modifier, the rule is only applied to the requests
 - `/ads$to=~not.evil.com|evil.com` blocks any request to `evil.com` and its subdomains, with a path matching `/ads`, except requests to `not.evil.com` and its subdomains.
 - `/ads$to=~good.com|~good.org` blocks any request with a path matching `/ads`, except requests to `good.com` or `good.org` and their subdomains.
 
-:::caution Limitations
+:::caution Restrictions
 
 [`$denyallow`](#denyallow-modifier) can not be used together with `$to`. It can be expressed with inverted `$to`:
 `$denyallow=a.com|b.com` is equivalent to `$to=~a.com|~b.com`.
@@ -736,6 +752,12 @@ If this modifier is used with an exclusion rule (`@@`), it completely disables b
 - `||example.com^$document,removeparam=test` removes `test` query parameter from HTML document request to  `example.com`.
 - `||example.com^$document,replace=/test1/test2/` replaces `test1` with `test2` in  HTML document request to `example.com`.
 
+:::note
+
+You may use a shorter name (alias) instead of using the full modifier name: `$doc`.
+
+:::
+
 #### **`$font`** {#font-modifier}
 
 The rule corresponds to requests for fonts, e.g. `.woff` filename extension.
@@ -777,6 +799,12 @@ The rule corresponds to script requests, e.g. javascript, vbscript.
 
 The rule corresponds to CSS files requests.
 
+:::note
+
+You may use a shorter name (alias) instead of using the full modifier name: `$css`.
+
+:::
+
 #### **`$subdocument`** {#subdocument-modifier}
 
 The rule corresponds to requests for built-in pages — HTML tags `frame` and `iframe`.
@@ -785,6 +813,12 @@ The rule corresponds to requests for built-in pages — HTML tags `frame` and `i
 
 - `||example.com^$subdocument` blocks built-in page requests (`frame` and `iframe`) to `example.com` and all its subdomains anywhere.
 - `||example.com^$subdocument,domain=domain.com` blocks built-in page requests (`frame` и `iframe`) to `example.com` (and its subdomains) from `domain.com` and all its subdomains.
+
+:::note
+
+You may use a shorter name (alias) instead of using the full modifier name: `$frame`.
+
+:::
 
 :::info Compatibility
 
@@ -809,6 +843,12 @@ The rule applies only to WebSocket connections.
 #### **`$xmlhttprequest`** {#xmlhttprequest-modifier}
 
 The rule applies only to ajax requests (requests sent via javascript object `XMLHttpRequest`).
+
+:::note
+
+You may use a shorter name (alias) instead of using the full modifier name: `$xhr`.
+
+:::
 
 :::info Compatibility
 
@@ -887,6 +927,12 @@ Disables any [cosmetic rules](#cosmetic-rules) on the pages matching the rule.
 
 - `@@||example.com^$elemhide` disables all cosmetic rules on pages at `example.com` and all subdomains.
 
+:::note
+
+You may use a shorter name (alias) instead of using the full modifier name: `$ehide`.
+
+:::
+
 #### **`$extension`** {#extension-modifier}
 
 Disables specific userscripts or all userscripts for a given domain.
@@ -907,7 +953,11 @@ You can also exclude a userscript by adding a `~` character before it. In this c
 $extension=~"userscript name"
 ```
 
-**NOTE**: When excluding a userscript, you must place `~` outside the quotes.
+:::note
+
+When excluding a userscript, you must place `~` outside the quotes.
+
+:::
 
 If a userscript's name includes quotes (`"`), commas (`,`), or pipes (`|`), they must be escaped with a backslash (`\`).
 
@@ -980,6 +1030,13 @@ The list of the available modifier options:
 :::note
 
 Blocking cookies and removing tracking parameters is achieved by using rules with [`$cookie`](#cookie-modifier) and [`$removeparam`](#removeparam-modifier) modifiers. Exception rules with only `$stealth` modifier will not do those things. If you want to completely disable all Stealth Mode features for a given domain, you need to include all three modifiers: `@@||example.org^$stealth,removeparam,cookie`
+
+:::
+
+:::caution Restrictions
+
+- Modifier options should be lowercase, i.e. `$stealth=DPI` will be rejected.
+- Modifier options cannot be negated, i.e. `$stealth=~3p-cookie` will be rejected.
 
 :::
 
@@ -1056,13 +1113,25 @@ Disables all generic [cosmetic rules](#cosmetic-rules) on pages that correspond 
 
 - `@@||example.com^$generichide` disables generic cosmetic rules on any pages at `example.com` and its subdomains.
 
-#### **`$specifichide`** {#specifichide-modifier}
+:::note
+
+You may use a shorter name (alias) instead of using the full modifier name: `$ghide`.
+
+:::
+
+#### **`specifichide`** {#specifichide-modifier}
 
 Disables all specific element hiding and CSS rules, but not general ones. Has an opposite effect to [`$generichide`](#generichide-modifier).
 
 **Examples**
 
 - `@@||example.org^$specifichide` disables `example.org##.banner` but not `##.banner`.
+
+:::note
+
+You may use a shorter name (alias) instead of using the full modifier name: `$shide`.
+
+:::
 
 :::note
 
@@ -1096,7 +1165,7 @@ These modifiers are able to completely change the behavior of basic rules.
 | [$permissions](#permissions-modifier) | ✅ | ⏳ | ⏳ | ❌ | ❌ | ❌ |
 | [$redirect](#redirect-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
 | [$redirect-rule](#redirect-rule-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
-| [$referrerpolicy](#referrerpolicy-modifier) | ⏳ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [$referrerpolicy](#referrerpolicy-modifier) | 🧩 | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$removeheader](#removeheader-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
 | [$removeparam](#removeparam-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
 | [$replace](#replace-modifier) | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ |
@@ -1108,9 +1177,7 @@ These modifiers are able to completely change the behavior of basic rules.
 
 - ✅ — fully supported
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
-<!-- following emoji shall be needed for $referrerpolicy after 1.12 is used in some apps -->
-<!-- - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions -->
-- ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product
+- 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions
 - ❌ — not supported
 - 👎 — deprecated; still supported but will be removed in the future
 
@@ -1209,7 +1276,7 @@ Here's how it works:
 - `@@||example.org^$cookie=concept` unblocks a single cookie named `concept`
 - `@@||example.org^$cookie=/^_ga_/` unblocks every cookie that matches the regular expression
 
-:::caution Limitations
+:::caution Restrictions
 
 `$cookie` rules support a limited list of modifiers: `$domain`, `$~domain`, `$important`, `$third-party`, and `$~third-party`.
 
@@ -1251,7 +1318,7 @@ In case if multiple `$csp` rules match a single request, we will apply each of t
 - `||example.org^$csp=script-src 'self' 'unsafe-eval' http: https:` disables inline scripts on all the pages matching the rule pattern.
 - `@@||example.org^$document` or `@@||example.org^$urlblock` disables all the `$csp` rules on all the pages matching the rule pattern.
 
-:::caution Limitations
+:::caution Restrictions
 
 - There are a few characters forbidden in the `$csp` value: `,`, `$`.
 - `$csp` rules support limited list of modifiers: `$domain`, `$important`, `$subdocument`.
@@ -1709,7 +1776,7 @@ The list of the available directives is available [here](https://developer.mozil
 - `$domain=example.org|example.com,permissions=storage-access=()\, camera=()` disallows using the Storage Access API to request access to unpartitioned cookies and using video input devices across `example.org` and `example.com`.
 - `@@||example.org^$document` or `@@||example.org^$urlblock` disables all the `$permission` rules on all the pages matching the rule pattern.
 
-:::caution Limitations
+:::caution Restrictions
 
 1. Characters forbidden in the `$permissions` value: `$`;
 2. `$permissions` is compatible with the limited list of modifiers: `$domain`, `$important`, and `$subdocument`.
@@ -1944,7 +2011,11 @@ Rules with `$removeparam` modifier are intended to strip query parameters from r
 
 - `$removeparam=param` removes query parameter with the name `param` from URLs of any request, e.g. a request to `http://example.com/page?param=1&another=2` will be transformed into `http://example.com/page?another=2`.
 
-`$removeparam` basic syntax is supported starting with v1.7 of [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) and v3.6 of AdGuard Browser Extension.
+:::note Compatibility
+
+`$removeparam` syntax is supported starting with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.7 and AdGuard Browser Extension v3.6.
+
+:::
 
 **Regular expressions**
 
@@ -2113,7 +2184,7 @@ http://regexr.com/3cesk
 - `@@||example.org^$replace` will disable all `$replace` rules matching `||example.org^`.
 - `@@||example.org^$document` or `@@||example.org^$content` will disable all `$replace` rules **originated from** pages of `example.org` **including the page itself**.
 
-:::caution Limitations
+:::caution Restrictions
 
 Rules with `$replace` modifier can be used [**only in trusted filters**](#trusted-filters).
 
@@ -3281,19 +3352,26 @@ HTML filtering rules are supported by AdGuard for Windows, Mac, Android, and AdG
 
 :::
 
-**Syntax**
+### Syntax
 
 ```text
-      rule = [domains] "$$" tagName [attributes]
-   domains = [domain0, domain1[, ...[, domainN]]]
-attributes = "[" name0 = value0 "]" "[" name1 = value2 "]" ... "[" nameN = valueN "]"
+     selector = [tagName] [attributes] [pseudoClasses]
+   combinator = ">"
+         rule = [domains] "$$" selector *(combinator selector)
+      domains = [domain0, domain1[, ...[, domainN]]]
+   attributes = "[" name0 = value0 "]" "[" name1 = value2 "]" ... "[" nameN = valueN "]"
+pseudoClasses = pseudoClass *pseudoClass
+  pseudoClass = ":" pseudoName [ "(" pseudoArgs ")" ]
 ```
 
 - **`tagName`** — name of the element in lower case, for example, `div` or `script`.
 - **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules syntax](#elemhide-syntax).
-- **`attributes`** — a list of attributes, that limit the elements selection. `name` — attribute name, `value` — substring, that is contained in attribute value.
+- **`attributes`** — a list of attributes that limit the selection of elements. `name` — attribute name, `value` — substring, that is contained in attribute value.
+- **`pseudoName`** — the name of a pseudo-class.
+- **`pseudoArgs`** — the arguments of a function-style pseudo-class.
+- **`combinator`** — an operator that works similarly to the [CSS child combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator): that is, the `selector` on the right of the `combinator` will only match an element whose direct parent matches the `selector` on the left of the `combinator`.
 
-**Examples**
+### Examples
 
 **HTML code:**
 
@@ -3309,11 +3387,17 @@ example.org$$script[data-src="banner"]
 
 This rule removes all `script` elements with the attribute `data-src` containing the substring `banner`. The rule applies only to `example.org` and all its subdomains.
 
-**Special attributes**
+### Special attributes
 
 In addition to usual attributes, which value is every element checked for, there is a set of special attributes that change the way a rule works. Below there is a list of these attributes:
 
-- **`tag-content`**
+#### `tag-content`
+
+:::caution Deprecation notice
+
+This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class where it is available.
+
+:::
 
 This is the most frequently used special attribute. It limits selection with those elements whose innerHTML code contains the specified substring.
 
@@ -3334,11 +3418,19 @@ Following rule will delete all `script` elements with a `banner` substring in th
 $$script[tag-content="banner"]
 ```
 
-**Nested elements**
+:::caution Limitations
 
-If we are dealing with multiple nested elements and they all fall within the same HTML filtering rule, they all are going to be deleted.
+The `tag-content` special attribute must not appear in a selector to the left of a `>` combinator.
 
-- **`wildcard`**
+:::
+
+#### `wildcard`
+
+:::caution Deprecation notice
+
+This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class where it is available.
+
+:::
 
 This special attribute works almost like `tag-content` and allows you to check the innerHTML code of the document. Rule will check if HTML code of the element fits to the [search pattern](https://en.wikipedia.org/wiki/Glob_(programming)).
 
@@ -3350,7 +3442,19 @@ For example:
 
 It will check, if the code of element contains two consecutive substrings `banner` and `text`.
 
-- **`max-length`**
+:::caution Limitations
+
+The `wildcard` special attribute must not appear in a selector to the left of a `>` combinator.
+
+:::
+
+#### `max-length`
+
+:::caution Deprecation notice
+
+This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class with a regular expression where it is available.
+
+:::
 
 Specifies the maximum length for content of HTML element. If this parameter is set and the content length exceeds the value, a rule does not apply to the element.
 
@@ -3366,7 +3470,19 @@ $$div[tag-content="banner"][max-length="400"]
 
 This rule will remove all the `div` elements, whose code contains the substring `banner` and the length of which does not exceed `400` characters.
 
-- **`min-length`**
+:::caution Limitations
+
+The `max-length` special attribute must not appear in a selector to the left of a `>` combinator.
+
+:::
+
+#### `min-length`
+
+:::caution Deprecation notice
+
+This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class with a regular expression where it is available.
+
+:::
 
 Specifies the minimum length for content of HTML element. If this parameter is set and the content length is less than preset value, a rule does not apply to the element.
 
@@ -3378,7 +3494,49 @@ $$div[tag-content="banner"][min-length="400"]
 
 This rule will remove all the `div` elements, whose code contains the substring `banner` and the length of which exceeds `400` characters.
 
-**Exceptions**
+:::caution Limitations
+
+The `min-length` special attribute must not appear in a selector to the left of a `>` combinator.
+
+:::
+
+### Pseudo-classes
+
+#### `:contains()`
+
+##### Syntax
+
+```text
+:contains(unquoted text)
+```
+
+or
+
+```text
+:contains(/reg(ular )?ex(pression)?/)
+```
+
+:::note Compatibility
+
+`:-abp-contains()` and `:has-text()` are synonyms for `:contains()`.
+
+:::
+
+:::info Compatibility
+
+The `:contains()` pseudo-class is supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.13 or later**.
+
+:::
+
+Requires that the inner HTML of the element contains the specified text or matches the specified regular expression.
+
+:::caution Limitations
+
+A `:contains()` pseudo-class must not appear in a selector to the left of a `>` combinator.
+
+:::
+
+### Exceptions
 
 Similar to hiding rules, there is a special type of rules that disable the selected HTML filtering rule for particular domains.
 The syntax is the same, you just have to change `$$` to `$@$`.
@@ -3771,7 +3929,9 @@ domain.com##div.ad
 
 #### Safari affinity {#safari-affinity-directive}
 
-Safari is notoriously known for its harsh 150k max limit for filtering rules in content blockers. But in AdGuard for Safari and AdGuard for iOS max rule count is raised to 300k by splitting them into several content blockers. Generally, several filters categories are more or less independent, so there is such content blockers with such categories included:
+Safari's limit for each content blocker is 150,000 active rules. But in AdGuard for Safari and AdGuard for iOS, we've split the rules into 6 content blockers, thus increasing the rule limit to 900,000.
+
+Here is the composition of each content blocker:
 
 - AdGuard General — Ad Blocking, Language-specific
 - AdGuard Privacy — Privacy
@@ -3780,9 +3940,13 @@ Safari is notoriously known for its harsh 150k max limit for filtering rules in 
 - AdGuard Other — Other
 - AdGuard Custom — Custom
 
-`User rules` and `Allowlist` are added to every content blocker.
+User rules and allowlist are added to every content blocker.
 
-The main issue with using multiple content blockers is that rules inside these content blockers cannot influence each other. This may lead to different unexpected issues. So filters maintainers may use `!#safari_cb_affinity` to define Safari content blockers affinity for the rules inside of the directive block.
+:::caution
+
+The main disadvantage of using multiple content blockers is that rules from different blockers are applied independently. Blocking rules are not affected by this, but unblocking rules may cause problems. If a blocking rule is in one content blocker and an exception is in another, the exception will not work. Filter maintainers use `!#safari_cb_affinity` to define Safari content blocker affinity for the rules inside of the directive block.
+
+:::
 
 **Syntax**
 

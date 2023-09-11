@@ -5,7 +5,7 @@ sidebar_position: 2
 
 Masaüstü AdGuard uygulamaları (Windows için AdGuard ve Mac için AdGuard) proxy olarak kullanılabilir. Bu, diğer cihazların trafiğini (tamamen veya belirli uygulamaların/tarayıcıların trafiğini) AdGuard üzerinden yönlendirebileceğiniz anlamına gelir.
 
-:::note
+:::not
 
 Bu cihazlar, AdGuard'ın kurulu olduğu PC veya Mac ile aynı ağda olmalıdır.
 

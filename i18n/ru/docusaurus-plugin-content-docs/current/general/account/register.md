@@ -20,3 +20,7 @@ sidebar_position: 1
 Личный кабинет также можно создать прямо в приложении AdGuard. Нажмите кнопку *Войти* или *Активировать* (её можно найти в разделе *Лицензия* или на отдельном экране), введите адрес электронной почты и придумайте пароль.
 
 После создания аккаунта активируйте его, перейдя по ссылке в письме активации.
+
+## How to create an account via a social network
+
+To create an account via a social network, simply follow the [link](https://auth.adguard.info/login.html) and log in to your account. Once you’ve signed up, check your inbox — there’ll be a confirmation email. Set a password and that’s it! Now you can use all the [features of the AdGuard account](https://adguard.app/kb/general/account/features/).

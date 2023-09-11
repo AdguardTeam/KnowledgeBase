@@ -16,7 +16,7 @@ You can help us by filling in an application form with examples of ads you faced
 
 ## Report a website {#report}
 
-:::note
+:::not
 
 When you send a complaint via the app or via AdGuard Browser Assistant, all information is pre-filled automatically. Except for the screenshots, you'll have to make and attach them yourself. If you're using a [direct link](https://reports.adguard.com/new_issue.html), you’ll need to enter data manually.
 
@@ -72,7 +72,7 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 
 ## Formu doldurma {#form}
 
-:::note
+:::not
 
 When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. Except for the screenshots, you'll have to make and attach them yourself. If you're using a [direct link](https://reports.adguard.com/new_issue.html), you’ll need to enter data manually.
 
@@ -123,7 +123,7 @@ This option is suitable for those who aren’t afraid of difficulties and don’
 
 For example, you are faced with a situation that your favorite website won’t open, authorization has broken, or some page elements are displayed incorrectly. The cause may be using a specific filter/extension/Stealth Mode setting. To diagnose these problems, you need to do the following:
 
-### **Filters**
+### **Filtreler**
 
 1. Disable **Ad Blocker**;
 2. If it solved the problem, re-enable the module and disable filters one by one. This is done to identify filters that "break" the page;

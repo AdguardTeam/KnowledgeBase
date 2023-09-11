@@ -3,46 +3,46 @@ title: Olası DNS sızıntıları
 sidebar_position: 9
 ---
 
-:::info
+:::bilgi
 
 Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Windows için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
 
 :::
 
-AdGuard for Windows allows users to specify a DNS server address to resolve queries instead of system DNS server, which is provided by your ISP if not overridden in the system settings. Using a non-default DNS server can safeguard your DNS traffic from the ISP’s interception. Moreover, by choosing an encrypted and/or filtering DNS server, you get another layer of protection against bad actors and annoying ads.
+Windows için AdGuard, kullanıcıların, sorguları çözümlemek için, sistem ayarlarında geçersiz kılınmadığı sürece İSS'niz tarafından sağlanan sistem DNS sunucusu yerine bir DNS sunucu adresi belirtmesine olanak tanır. Using a non-default DNS server can safeguard your DNS traffic from the ISP’s interception. Ayrıca, şifrelenmiş ve/veya filtrelenmiş bir DNS sunucusu seçerek, kötü aktörlere ve rahatsız edici reklamlara karşı başka bir koruma katmanı elde edersiniz.
 
-Many AdGuard for Windows users appreciate the DNS protection feature. But some of them encounter the following issue: a check on a website like https://ipleak.net/ shows that requests are handled by default DNS server instead of the selected one. In this article we will tell you why this happens and how to avoid it.
+Windows için AdGuard kullanıcılarının çoğu, DNS koruma özelliğini takdir ediyor. Ancak bazıları şu sorunla karşılaşıyor: https://ipleak.net/ gibi bir sitede yapılan kontrol, isteklerin seçilen sunucu yerine varsayılan DNS sunucusu tarafından işlendiğini gösteriyor. Bu yazıda size bunun neden olduğunu ve bundan nasıl kaçınılacağını anlatacağız.
 
 ## Önyükleme DNS adresi
 
-The DNS server addresses could be written as IPs or as domain names. In the case of IP addresses there are no difficulties: AdGuard forwards the DNS request directly to the server specified in the DNS protection module. However, encrypted DNS server addresses, like DoT or DoH, are most often written as domain names. In this case, to first resolve the encrypted DNS server address, AdGuard sends a DNS query to the bootstrap address, which is by default a system DNS server. This connection is what check services perceive as a leak.
+DNS sunucu adresleri IP veya alan adı olarak yazılabilir. IP adresleri söz konusu olduğunda hiçbir zorluk yaşanmaz: AdGuard, DNS isteğini doğrudan DNS koruma modülünde belirtilen sunucuya iletir. Ancak DoT veya DoH gibi şifrelenmiş DNS sunucu adresleri çoğunlukla alan adı olarak yazılır. Bu durumda, öncelikle şifrelenmiş DNS sunucu adresini çözümlemek için AdGuard, varsayılan olarak bir sistem DNS sunucusu olan önyükleme adresine bir DNS sorgusu gönderir. Bu bağlantı, kontrol hizmetlerinin sızıntı olarak algıladığı şeydir.
 
-**To eliminate this leak:**
+**Bu sızıntıyı ortadan kaldırmak için:**
 
 - *Gelişmiş ayarlar* öğesine gidin
-- scroll down to the *List of custom bootstrap addresses* section
-- enter the custom bootstrap address in IP address format (you may use [the list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/))
+- *Özel önyükleme adresleri listesi* bölümüne aşağı kaydırın
+- özel önyükleme adresini IP adresi biçiminde girin ([bilinen DNS sağlayıcıları listesini](https://adguard-dns.io/kb/general/dns-providers/) kullanabilirsiniz)
 - *kaydet* öğesine tıklayın
 
-## Fallback DNS server
+## Yedek DNS sunucusu
 
-It could happen that AdGuard cannot reach the specified server because of a weak internet connection, an expiration of timeout set by default or some server related issues. In this case, it will connect to the fallback server, which is by default a system DNS server. This connection will also be considered by the check service as a leak.
+It could happen that AdGuard cannot reach the specified server because of a weak internet connection, an expiration of timeout set by default or some server related issues. Bu durumda, varsayılan olarak bir sistem DNS sunucusu olan yedek sunucuya bağlanır. Bu bağlantı aynı zamanda kontrol servisi tarafından sızıntı olarak değerlendirilir.
 
-**To eliminate this leak:**
+**Bu sızıntıyı ortadan kaldırmak için:**
 
 - *Gelişmiş ayarlar* öğesine gidin
-- scroll down to the *Fallback servers* section
-- check the *Use custom servers* option
-- then find the *List of custom fallback servers* section and enter custom fallback servers one per line
+- *Yedek sunucular* bölümüne aşağı kaydırın
+- *Özel sunucuları kullan* seçeneğini işaretleyin
+- daha sonra *Özel yedek sunucuların listesi* bölümünü bulun ve her satıra bir tane olmak üzere özel yedek sunucular girin
 
 veya
 
 - *Gelişmiş ayarlar* öğesine gidin
-- scroll down to the *Fallback servers* section
-- check the *Don’t use fallback servers* option
+- *Yedek sunucular* bölümüne aşağı kaydırın
+- *Yedek sunucuları kullanma* seçeneğini işaretleyin
 
 veya
 
 - *Gelişmiş ayarlar* öğesine gidin
-- scroll down to the *DNS server timeout period* section
-- enter an arbitrary large number
+- *DNS sunucusu zaman aşımı süresi* bölümüne aşağı kaydırın
+- isteğe bağlı olarak büyük bir sayı girin
