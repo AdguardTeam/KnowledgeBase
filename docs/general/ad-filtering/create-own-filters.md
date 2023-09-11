@@ -228,51 +228,51 @@ This rule validation is not applied in the following cases:
 
 1. The rule contains [`$domain`](#domain-modifier) modifier that points to a specific domain list.
 
-   These rules will not be ignored:
+    These rules will not be ignored:
 
-   ```text
-   $domain=example.com,script
-   $domain=example.*,script
-   ```
+    ```text
+    $domain=example.com,script
+    $domain=example.*,script
+    ```
 
-   This rule will be ignored because of domain negation, which causes too wide of a rule application scope:
+    This rule will be ignored because of domain negation, which causes too wide of a rule application scope:
 
-   ```text
-   $domain=~example.com,script
-   ```
+    ```text
+    $domain=~example.com,script
+    ```
 
 1. The rule contains [`$app`](#app-modifier) modifier that points to a specific app list.
 
-   This rule will not be ignored:
+    This rule will not be ignored:
 
-   ```text
-   $app=curl,document
-   ```
+    ```text
+    $app=curl,document
+    ```
 
-   This rule will be ignored because of app negation, which causes too wide of a rule application scope:
+    This rule will be ignored because of app negation, which causes too wide of a rule application scope:
 
-   ```text
-   $app=~curl,document
-   ```
+    ```text
+    $app=~curl,document
+    ```
 
 1. The rule contains [`$denyallow](#denyallow-modifier) that points to a specific domain(s).
 
-   This rule will not be ignore:
+    This rule will not be ignore:
 
-   ```text
-   $script,third-party,denyallow=example.com
-   ```
+    ```text
+    $script,third-party,denyallow=example.com
+    ```
 
 1. The rule contains one or more modificators from among [`$cookie`](#cookie-modifier), [`$removeparam`](#removeparam-modifier), [`$removeheader`](#removeheader-modifier), [`$stealth`](#stealth-modifier).
 
-   These rules will not be ignored:
+    These rules will not be ignored:
 
-   ```text
-     $removeparam=cx_recsWidget
-     $cookie=ibbid
-     $removeheader=location
-     $stealth
-   ```
+    ```text
+    $removeparam=cx_recsWidget
+    $cookie=ibbid
+    $removeheader=location
+    $stealth
+    ```
 
 ### Wildcard support for TLD (top-level domains) {#wildcard-for-tld}
 
