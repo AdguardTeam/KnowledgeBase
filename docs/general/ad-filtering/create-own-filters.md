@@ -206,7 +206,7 @@ AdGuard Safari and AdGuard for iOS do not fully support regular expressions beca
 
 ### Restrictions on rules application {#rules-restrictions}
 
-Rules that match an arbitrarily large number of URLs are considered incorrect and will be ignored. This can happen if the rule doesn't contain a mask, or if the mask matches any URL with a certain protocol.  
+Rules that match an arbitrarily large number of URLs are considered incorrect and will be ignored. This can happen if the rule doesn't contain a mask, or if the mask matches any URL with a certain protocol.
 
 This rule will be ignored:
 
@@ -235,27 +235,36 @@ This rule validation is not applied in the following cases:
    $domain=example.*,script
    ```
 
-   This rule will be ignored:
+   This rule will be ignored because of domain negation, which causes too wide of a rule application scope:
 
    ```text
    $domain=~example.com,script
    ```
 
-2. The rule contains [`$app`](#app-modifier) modifier that points to a specific app list.
+1. The rule contains [`$app`](#app-modifier) modifier that points to a specific app list.
 
-   These rule will not be ignored:
+   This rule will not be ignored:
 
    ```text
    $app=curl,document
    ```
 
-   This rule will be ignored:
+   This rule will be ignored because of app negation, which causes too wide of a rule application scope:
 
    ```text
-   $domain=~curl,document
+   $app=~curl,document
    ```
 
-3. The rule contains one or more modificators from among [`$cookie`](#cookie-modifier), [`$removeparam`](#removeparam-modifier), [`$removeheader`](#removeheader-modifier), [`$stealth`](#stealth-modifier).
+1. The rule contains one or more modificators from among [`$cookie`](#cookie-modifier), [`$removeparam`](#removeparam-modifier), [`$removeheader`](#removeheader-modifier), [`$stealth`](#stealth-modifier).
+
+   These rules will not be ignored:
+
+   ```text
+     $removeparam=cx_recsWidget
+     $cookie=ibbid
+     $removeheader=location
+     $stealth
+   ```
 
 ### Wildcard support for TLD (top-level domains) {#wildcard-for-tld}
 
