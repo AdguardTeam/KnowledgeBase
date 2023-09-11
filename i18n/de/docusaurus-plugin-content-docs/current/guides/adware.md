@@ -49,7 +49,7 @@ If disabling of settings and extensions does not help, try to [recreate shortcut
 
 Further on this page we describe the instructions on how to remove some of the most commonly encountered ad extensions.
 
-## Wie man Einstellungen und Erweiterungen im Browser deaktiviert {#instructions}
+## So deaktivieren Sie Einstellungen und Erweiterungen im Browser {#instructions}
 
 Below are the instructions on how to disable settings and extensions for the most popular browsers:
 
@@ -59,7 +59,7 @@ Below are the instructions on how to disable settings and extensions for the mos
 
 - [für Opera](https://help.opera.com/en/latest/customization/#extensions)
 
-## Wie man Verknüpfungen für Ihre Browser neu erstellt {#shortcuts}
+## So erstellen Sie neue Verknüpfungen für Ihre Browser {#shortcuts}
 
 Very often, malware and adware programs install their homepage in a very simple way — they substitute your browser's desktop shortcut, taskbar and *Start* menu items.
 

@@ -15,23 +15,23 @@ You'll also be able to switch between languages even after opening certain produ
 
 Choose any of available product folders and select a file — now you can start translating.
 
-![Files *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/files.png)
+![Dosyalar *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/files.png)
 
-:::note
+:::not
 
-You can also change the Crowdin interface language by clicking the *Settings* icon in the top right corner of the page. In the opened window scroll down to the *UI language* tab. Open it, choose a language and click **Change**.
+Ayrıca sayfanın sağ üst köşesinde bulunan *Ayarlar* simgesine tıklayarak Crowdin arayüz dilini değiştirebilirsiniz. Açılan pencerede *Kullanıcı arayüz dili* sekmesine gidin. Açın, bir dil seçin ve **Değiştir** öğesine tıklayın.
 
 :::
 
 ![Language1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/settings_en.png)
 
-**The following guidelines will help you through the process.**
+**Aşağıdaki yönergeler süreç boyunca size yardımcı olur.**
 
-1. You can filter translations by clicking this button and selecting any offered option.
+1. Bu düğmeye tıklayarak ve sunulan herhangi bir seçeneği seçerek çevirileri filtreleyebilirsiniz.
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/filter.png)
 
-1. Easily move between the files of the project.
+1. Proje dosyaları arasında kolayca hareket edin.
 
     ![crowdin *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/filter_files.png)
 

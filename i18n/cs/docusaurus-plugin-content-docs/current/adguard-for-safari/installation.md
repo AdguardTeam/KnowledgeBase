@@ -25,7 +25,7 @@ AdGuard pro Safari je bezplatná aplikace uvedená v App Store. Chcete-li ji nai
 
 :::note
 
-Pro správnou funkci AdGuardu pro Safari nejsou nutná všechna rozšíření. Například zaškrtnutím rozšíření *Icon* zapnete ikonu v nabídce. Doporučujeme však povolit všechny.
+Pro správnou funkci AdGuardu pro Safari nejsou nutná všechna rozšíření. Například zaškrtnutím rozšíření *Ikona* se aktivuje ikona vedle vyhledávacího řádku. Doporučujeme však povolit všechny.
 
 :::
 

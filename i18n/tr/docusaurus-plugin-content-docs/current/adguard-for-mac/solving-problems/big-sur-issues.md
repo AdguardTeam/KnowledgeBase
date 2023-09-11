@@ -85,7 +85,7 @@ It needs to be said that this problem can't be solved by disabling connections m
 
 ### Compatibility with local proxies
 
-:::note
+:::not
 
 Now AdGuard can filter local proxies (mostly) without any problems. If you encounter any issues in OS versions 11.1+, or if you're using Big Sur 11.0, remove the local proxy from System settings and configure an upstream proxy in AdGuard by following the instruction below.
 
@@ -164,7 +164,7 @@ If you face problems in Big Sur or Monterey which can't be resolved by any of th
 
 Now AdGuard has automatically added a **.pac** file to your Mac's network settings, so that the system will consider AdGuard a proxy and try to send all traffic through AdGuard.
 
-:::note
+:::not
 
 Some apps may ignore this system setting and their traffic will not be filtered.
 

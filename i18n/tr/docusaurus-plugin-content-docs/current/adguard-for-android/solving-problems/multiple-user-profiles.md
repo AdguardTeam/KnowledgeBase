@@ -13,9 +13,9 @@ Bu makalede, Android cihazlarınızda *birden fazla hesap* veya *Kısıtlı Prof
 
 ## Birden çok kullanıcı profilinden kaynaklanan sorunlar
 
-On Android 9 and later, if AdGuard is installed for more than one user profile on your device, you may encounter problems when uninstalling the app. AdGuard'ı bir kullanıcı profilinden kaldırdığınızda, uygulama, uygulama listesinde görünmeye devam eder, ancak onu kaldıramaz veya yeniden yükleyemezsiniz. Bunun nedeni, AdGuard'ın cihaza farklı bir kullanıcı profili için yüklenmiş olmasıdır.
+Android 9 ve üzeri sürümlerde, cihazınızda birden fazla kullanıcı profili için AdGuard yüklüyse uygulamayı kaldırırken sorunlarla karşılaşabilirsiniz. AdGuard'ı bir kullanıcı profilinden kaldırdığınızda, uygulama, uygulama listesinde görünmeye devam eder, ancak onu kaldıramaz veya yeniden yükleyemezsiniz. Bunun nedeni, AdGuard'ın cihaza farklı bir kullanıcı profili için yüklenmiş olmasıdır.
 
-If you try to reinstall AdGuard after an unsuccessful removal attempt, you will see the error message "You can't install the app on your device".
+Başarısız bir kaldırma girişiminden sonra AdGuard'ı yeniden yüklemeye çalışırsanız, "Uygulamayı cihazınıza yükleyemezsiniz" hata mesajını görürsünüz.
 
 Bu sorunu çözmek için uygulamayı tüm kullanıcılardan kaldırmanız gerekir: Ayarlar → Tüm uygulamalar → AdGuard'a gidin. Sağ üst köşedeki üç noktalı menüye dokunun ve *Tüm kullanıcılar için kaldır* öğesini seçin.
 
@@ -31,20 +31,20 @@ Sorunu çözmek için üç yolunuz var:
 
 ### Option 1: Grant permissions to AdGuard using ADB
 
-:::note
+:::not
 
 This approach is available starting from **AdGuard v3.5 nightly 6**. If you're using an older version, you can get the latest update [here](https://adguard.com/adguard-android/overview.html).
 
 :::
 
-1. Activate the **developer mode** and enable **USB debugging**:
+1. **Geliştirici modunu** etkinleştirin ve **USB hata ayıklama** öğesini etkinleştirin:
 
     - Open the **Settings** app phone;
-    - Go to **System** section (last item in the settings menu). In this section, find the sub-item **About phone**;
-    - Tap the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
-    - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
+    - **Sistem** bölümüne gidin (ayarlar menüsündeki son öğe). Bu bölümde **Telefon hakkında** alt öğesini bulun;
+    - **Yapı numarası** satırına 7 kez dokunun. Bundan sonra, artık **Bir geliştirici olduğunuza dair** bir bildirim alırsınız (Gerekirse, cihaz için bir kilit açma kodu girin);
+    - **Sistem Ayarları** → **Geliştirici Seçenekleri** öğesini açın → Aşağı kaydırın ve **USB hata ayıklama** öğesini etkinleştirin → Uyarıyı dikkatlice okuduktan sonra **USB hata ayıklamasına izin ver** penceresinde hata ayıklamanın etkinleştirildiğini onaylayın.
 
-    :::note
+    :::not
 
     If you have any difficulties or additional questions, full instructions can be found [here](https://developer.android.com/studio/debug/dev-options).
 
@@ -66,7 +66,7 @@ This approach is available starting from **AdGuard v3.5 nightly 6**. If you're u
 
 About how to manage user accounts from an Android device you can [find here](https://support.google.com/a/answer/6223444?hl=en).
 
-:::note
+:::not
 
 In some cases restricted user accounts are created implicitly and cannot be removed. For instance, when you use Dual messenger or Dual app features on **Samsung** or **LG** devices. You can read below how to fix the issue in these cases.
 

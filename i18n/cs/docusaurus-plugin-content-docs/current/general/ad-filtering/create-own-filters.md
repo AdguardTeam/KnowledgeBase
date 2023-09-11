@@ -107,7 +107,7 @@ AdGuard [rozšiřuje CSS](#extended-css-selectors) a umožňuje tak vývojářů
 
 **Oblíbené selektory CSS**
 
-| Název                        | Selektor CSS                     | Popis                                                                                                                                                                                                                 |
+| Name                         | CSS selector                     | Description                                                                                                                                                                                                           |
 | ---------------------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ID selector                  | `#banners`                       | Matches all elements with `id` attribute equal to `banners`.<br/>![ID selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_id_selector.png)                                                   |
 | Class selector               | `.banners`                       | Matches all elements with `class` attribute containing `banners`.<br/>![Class selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_selector.png)                                        |
@@ -166,8 +166,8 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 
 ### Speciální znaky {#basic-rules-special-characters}
 
-- **`*`** — zástupný znak. Používá se k reprezentaci "libovolné sady znaků". Může to být také prázdný řetězec nebo řetězec libovolné délky.
-- **`||`** — odpovídá začátku adresy. S tímto znakem nemusíte v masce adresy zadávat konkrétní protokol a subdoménu. Tj., že `||` znamená `http://*.`, `https://*.`, `ws://*.`, `wss://*.` najednou.
+- **`*`** — zástupný znak. It is used to represent any set of characters. Může to být také prázdný řetězec nebo řetězec libovolné délky.
+- **`||`** — an indication to apply the rule to the specified domain and its subdomains. With this character, you do not have to specify a particular protocol and subdomain in address mask. It means that `||` stands for `http://*.`, `https://*.`, `ws://*.`, `wss://*.` at once.
 - **`^`** — oddělovací znak. Oddělovací znak je libovolný znak, mimo písmeno, číslice nebo jeden z následujících znaků: `_` `-` `.` `%`. V tomto příkladu jsou oddělovací znaky zobrazeny tučně: `http:`**`//`**`example.com`**`/?`**`t=1`**`&`**`t2=t3`. Konec adresy je také akceptován jako oddělovací znak.
 - **`|`** — ukazatel na začátku nebo konci adresy. Hodnota závisí na umístění znaku v masce. Např. pravidlo `swf|` odpovídá `http://example.com/annoyingflash.swf`, ale neodpovídá `http://example.com/swf/index.html`. `|http://example.org` odpovídá `http://example.org`, ale ne `http://domain.com?url=http://example.org`.
 
@@ -247,20 +247,32 @@ Příklad:
 
 ### Základní modifikátory {#basic-rules-basic-modifiers}
 
+Následující modifikátory jsou nejjednodušší a nejčastěji používané. V podstatě jen omezují rozsah použití pravidel.
+
 <!-- Please keep them sorted -->
 
-- [`$app`](#app-modifier)
-- [`$denyallow`](#denyallow-modifier)
-- [`$domain`](#domain-modifier)
-- [`$header`](#header-modifier)
-- [`$important`](#important-modifier)
-- [`$match-case`](#match-case-modifier)
-- [`$method`](#method-modifier)
-- [`$popup`](#popup-modifier)
-- [`$third-party`](#third-party-modifier)
-- [`$to`](#to-modifier)
+| Modifier \ Products                  | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Firefox][ext-ff] |     [AdGuard pro iOS][ios-app]      |    [AdGuard pro Safari][ext-saf]    | [Blokátor obsahu AdGuard][and-cb] |
+| ------------------------------------- |:------------------------:|:-------------------------------:|:-----------------------------:|:-----------------------------------:|:-----------------------------------:|:---------------------------------:|
+| [$app](#app-modifier)                 |            ✅             |                ❌                |               ❌               |                  ❌                  |                  ❌                  |                 ❌                 |
+| [$denyallow](#denyallow-modifier)     |            ✅             |                ✅                |               ✅               |                  ✅                  |                  ✅                  |                 ❌                 |
+| [$domain](#domain-modifier)           |            ✅             |                ✅                |               ✅               | ✅ [*](#domain-modifier-limitations) | ✅ [*](#domain-modifier-limitations) |                 ✅                 |
+| [$header](#header-modifier)           |            ✅             |                ⏳                |               ⏳               |                  ❌                  |                  ❌                  |                 ❌                 |
+| [$important](#important-modifier)     |            ✅             |                ✅                |               ✅               |                  ✅                  |                  ✅                  |                 ❌                 |
+| [$match-case](#match-case-modifier)   |            ✅             |                ✅                |               ✅               |                  ❌                  |                  ❌                  |                 ✅                 |
+| [$method](#method-modifier)           |            ⏳             |                ✅                |               ✅               |                  ❌                  |                  ❌                  |                 ❌                 |
+| [$popup](#popup-modifier)             |           ✅ *            |                ✅                |               ✅               |                 ✅ *                 |                 ✅ *                 |                 ❌                 |
+| [$third-party](#third-party-modifier) |            ✅             |                ✅                |               ✅               |                  ✅                  |                  ✅                  |                 ✅                 |
+| [$to](#to-modifier)                   |            ⏳             |                ✅                |               ✅               |                  ❌                  |                  ❌                  |                 ❌                 |
 
-Následující modifikátory jsou nejjednodušší a nejčastěji používané. V podstatě jen omezují rozsah použití pravidel.
+:::note
+
+- ✅ — fully supported
+- ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
+<!-- - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions -->
+- ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product
+- ❌ — not supported
+
+:::
 
 #### **`$app`** {#app-modifier}
 
@@ -281,6 +293,12 @@ Pokud chcete, aby se pravidlo nevztahovalo na určité aplikace, začněte náze
 
 - `||baddomain.com^$app=~org.example.app` — pravidlo pro blokování požadavků, které odpovídají zadané masce a jsou odeslány z jakékoli aplikace kromě `org.example.app`.
 - `||baddomain.com^$app=~org.example.app1|~org.example.app2` — stejně jako výše, ale nyní jsou vyloučeny dvě aplikace: `org.example.app1` a `org.example.app2`.
+
+:::caution Omezení
+
+Apps in the modifier value cannot have a wildcard, e.g. `$app=com.*.music`. Rules with such modifier are considered invalid.
+
+:::
 
 :::info Kompatibilita
 
@@ -408,6 +426,8 @@ V následujících příkladech se předpokládá, že požadavky jsou odesílá
 - `/banner\d+/$domain=targetdomain.com` nebude přiřazena, protože obsahuje regulární výraz.
 - `page$domain=targetdomain.com|~example.org` nebude přiřazena, protože doména odkazu je výslovně vyloučena.
 
+##### `$domain` modifier limitations {#domain-modifier-limitations}
+
 :::caution Omezení
 
 Safari nepodporuje současné použití povolených a zakázaných domén, takže pravidla jako `||baddomain.com^$domain=example.org|~foo.example.org` nebudou v AdGuardu pro iOS a AdGuardu pro Safari fungovat.
@@ -483,9 +503,15 @@ Tento modifikátor definuje pravidlo, které se vztahuje pouze na adresy odpoví
 
 - `*/BannerAd.gif$match-case` — toto pravidlo zablokuje `http://example.com/BannerAd.gif`, ale ne `http://example.com/bannerad.gif`.
 
+:::info Kompatibilita
+
+Rules with `$match-case` modifier currently are not supported by [AdGuard for iOS and Safari](https://github.com/AdguardTeam/SafariConverterLib/issues/55).
+
+:::
+
 #### **`$method`** {#method-modifier}
 
-Tento modifikátor omezuje rozsah pravidla na požadavky, které používají zadanou sadu metod HTTP. Negované metody jsou povoleny. Metody musí být zadány malými písmeny, ale při porovnávání se nerozlišují velká a malá písmena. Chcete-li do jednoho pravidla přidat více domén, použijte jako oddělovací znak `|`.
+Tento modifikátor omezuje rozsah pravidla na požadavky, které používají zadanou sadu metod HTTP. Negované metody jsou povoleny. Metody musí být zadány malými písmeny, ale při porovnávání se nerozlišují velká a malá písmena. To add multiple methods to one rule, use the vertical bar `|` as a separator.
 
 **Příklady**
 
@@ -494,15 +520,15 @@ Tento modifikátor omezuje rozsah pravidla na požadavky, které používají za
 - `@@||evil.com$method=get` odblokuje pouze požadavky GET na doméně `evil.com`.
 - `@@||evil.com$method=~post` odblokuje jakékoliv požadavky na doméně `evil.com` kromě POST.
 
-:::note
+:::caution Omezení
 
-Pravidla s omezením smíšených hodnot jsou považována za neplatná. Takže např. pravidlo `||evil.com^$method=get|~head` bude zamítnuto.
+Rules with mixed negated and not negated values are considered invalid. So, for example, the rule `||evil.com^$method=get|~head` will be rejected.
 
 :::
 
 :::info Kompatibilita
 
-Pravidla s `$method` jsou podporována AdGuardem pro Windows, Mac, Android, **s CoreLibs v1.12 nebo novějším** a rozšířením prohlížeče AdGuard pro Chrome, Firefox, Edge s **TSUrlFilter v2.1.1 nebo novějším**.
+Rules with the `$method` are supported by AdGuard for Windows, Mac, Android, **running CoreLibs v1.12 or later**, and AdGuard Browser Extension for Chrome, Firefox, Edge, **running TSUrlFilter v2.1.1 or later**.
 
 :::
 
@@ -519,6 +545,7 @@ AdGuard se pokusí zavřít kartu prohlížeče s jakoukoli adresou, která odpo
 - Modifikátor `$popup` funguje nejlépe v Rozšíření prohlížeče AdGuard.
 - V AdGuardu pro Safari a iOS, pravidla `$popup` stránku jednoduše a okamžitě zablokují.
 - V AdGuardu pro Windows, Mac a Android nemusí modifikátor `$popup` v některých případech detekovat vyskakovací okno a nebude zablokováno. Modifikátor `$popup` použije typ obsahu `document` se speciálním příznakem, který je předán blokovací stránce. Samotná blokovací stránka může provést některé kontroly a zavřít okno, pokud se skutečně jedná o vyskakovací okno. V opačném případě by se stránka měla načíst. Lze to kombinovat s dalšími modifikátory typu požadavku, jako je `$third-party` a `$important`.
+- Rules with `$popup` modifier are not supported by AdGuard Content Blocker.
 
 :::
 
@@ -547,6 +574,12 @@ Pokud existuje modifikátor `$third-party`, pravidlo se použije pouze na požad
 
 - `||domain.com$~third-party` — toto pravidlo se použije pro `domain.com`, ale ne pro ostatní domény. Příklad požadavku, který není požadavkem třetí strany: `http://domain.com/icon.ico`.
 
+:::note
+
+You may use a shorter name (alias) instead of using the full modifier name: `$3p`.
+
+:::
+
 #### **`$to`** {#to-modifier}
 
 `$to` omezuje rozsah pravidla na požadavky **na** zadané domény a jejich subdomény. Chcete-li do jednoho pravidla přidat více domén, použijte jako oddělovací znak `|`.
@@ -571,28 +604,11 @@ Pravidla s modifikátorem `$to` jsou podporována AdGuardem pro Windows, Mac, An
 
 ### Modifikátory typu obsahu {#content-type-modifiers}
 
-<!-- Please keep them sorted -->
-
-- [`$document`](#document-modifier)
-- [`$font`](#font-modifier)
-- [`$image`](#image-modifier)
-- [`$media`](#media-modifier)
-- [`$object`](#object-modifier)
-- [`$other`](#other-modifier)
-- [`$ping`](#ping-modifier)
-- [`$script`](#script-modifier)
-- [`$stylesheet`](#stylesheet-modifier)
-- [`$subdocument`](#subdocument-modifier)
-- [`$websocket`](#websocket-modifier)
-- [`$xmlhttprequest`](#xmlhttprequest-modifier)
-- [`$object-subrequest` (odstraněno)](#object-subrequest-modifier)
-- [`$webrtc` (odstraněno)](#webrtc-modifier)
-
 Existuje sada modifikátorů, které lze použít k omezení oblasti použití pravidla na určitý typ obsahu. Tyto modifikátory lze také kombinovat, aby zahrnovaly například obrázky i skripty.
 
 :::info Kompatibilita
 
-V tom, jak AdGuard určuje typ obsahu na různých platformách, je velký rozdíl. U Rozšíření prohlížeče AdGuard je typ obsahu pro každý požadavek poskytován prohlížečem. AdGuard pro Windows, Mac a Android používají následující metodu: nejprve se pokusíme určit typ požadavku podle záhlaví požadavku `Sec-Fetch-Dest` nebo podle přípony názvu souboru. Pokud není požadavek v této fázi zablokován, určí se typ pomocí záhlaví `Content-Type` na začátku odpovědi serveru.
+V tom, jak AdGuard určuje typ obsahu na různých platformách, je velký rozdíl. U Rozšíření prohlížeče AdGuard je typ obsahu pro každý požadavek poskytován prohlížečem. AdGuard for Windows, Mac, and Android use the following method: first, the apps try to determine the type of the request by the `Sec-Fetch-Dest` request header or by the filename extension. If the request is not blocked at this stage, the type will be determined using the `Content-Type` header at the beginning of the server response.
 
 :::
 
@@ -601,6 +617,34 @@ V tom, jak AdGuard určuje typ obsahu na různých platformách, je velký rozd�
 - `||example.org^$image` — odpovídá všem obrázkům z `example.org`.
 - `||example.org^$script,stylesheet` — odpovídá všem skriptům a stylům z `example.org`.
 - `||example.org^$~image,~script,~stylesheet` — odpovídá všem požadavkům na `example.org` kromě obrázků, skriptů a stylů.
+
+<!-- Please keep them sorted -->
+
+| Modifier \ Products                                          | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Firefox][ext-ff] | [AdGuard pro iOS][ios-app] | [AdGuard pro Safari][ext-saf] | [Blokátor obsahu AdGuard][and-cb] |
+| ------------------------------------------------------------- |:------------------------:|:-------------------------------:|:-----------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
+| [$document](#document-modifier)                               |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
+| [$font](#font-modifier)                                       |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ✅                 |
+| [$image](#image-modifier)                                     |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ✅                 |
+| [$media](#media-modifier)                                     |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ✅                 |
+| [$object](#object-modifier)                                   |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ✅                 |
+| [$other](#other-modifier)                                     |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
+| [$ping](#ping-modifier)                                       |           ✅ *            |                ✅                |               ✅               |             ❌              |               ❌               |                 ✅                 |
+| [$script](#script-modifier)                                   |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ✅                 |
+| [$stylesheet](#stylesheet-modifier)                           |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ✅                 |
+| [$subdocument](#subdocument-modifier)                         |           ✅ *            |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
+| [$websocket](#websocket-modifier)                             |            ✅             |                ✅                |               ✅               |            ✅ *             |              ✅ *              |                 ✅                 |
+| [$xmlhttprequest](#xmlhttprequest-modifier)                   |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ✅                 |
+| [$webrtc 🚫](#webrtc-modifier "removed")                       |            ❌             |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
+| [$object-subrequest 🚫](#object-subrequest-modifier "removed") |            ❌             |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
+
+:::note
+
+- ✅ — fully supported
+- ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
+- ❌ — not supported
+- 🚫 — removed and no longer supported
+
+:::
 
 #### **`$document`** {#document-modifier}
 
@@ -618,6 +662,12 @@ Pokud je tento modifikátor použit s pravidlem výjimky (`@@`), zcela zakáže 
 - `||example.com^$document,redirect=noopframe` přesměruje požadavek na HTML dokument na `example.com` na prázdný HTML dokument.
 - `||example.com^$document,removeparam=test` odebere parametr dotazu `test` z požadavku dokumentu HTML na `example.com`.
 - `||example.com^$document,replace=/test1/test2/` nahradí `test1` za `test2` v požadavku na dokument HTML na `example.com`.
+
+:::note
+
+You may use a shorter name (alias) instead of using the full modifier name: `$doc`.
+
+:::
 
 #### **`$font`** {#font-modifier}
 
@@ -647,6 +697,8 @@ Pravidlo odpovídá požadavkům vyvolaným buď `navigator.sendBeacon()`, nebo 
 
 AdGuard pro Windows, Mac a Android často nedokáží přesně detekovat `navigator.sendBeacon()`. V seznamech filtrů, které mají používat AdGuard produkty založené na knihovně CoreLibs, se nedoporučuje používat `$ping`.
 
+Rules with `$ping` modifier are not supported by AdGuard for Safari and iOS.
+
 :::
 
 #### **`$script`** {#script-modifier}
@@ -657,6 +709,12 @@ Pravidlo odpovídá požadavkům na skripty, např. javascript, vbscript.
 
 Pravidlo odpovídá požadavkům na soubory CSS.
 
+:::note
+
+You may use a shorter name (alias) instead of using the full modifier name: `$css`.
+
+:::
+
 #### **`$subdocument`** {#subdocument-modifier}
 
 Pravidlo odpovídá požadavkům na vestavěné stránky — značky HTML `frame` a `iframe`.
@@ -665,6 +723,20 @@ Pravidlo odpovídá požadavkům na vestavěné stránky — značky HTML `frame
 
 - `||example.com^$subdocument` blokuje integrované požadavky (`frame` a `iframe`) na `example.com` a všechny její subdomény kdekoli.
 - `||example.com^$subdocument,domain=domain.com` blokuje integrované požadavky (`frame` и `iframe`) na `example.com` (a její subdomény) z `domain.com` a všech jejích subdomén.
+
+:::note
+
+You may use a shorter name (alias) instead of using the full modifier name: `$frame`.
+
+:::
+
+:::info Kompatibilita
+
+In AdGuard for Windows, Mac, and Android subdocuments are being detected by the [Sec-Fetch-Dest header][sec-fetch-dest-header] if it is present. Otherwise, some main pages may be treated as subdocuments.
+
+Rules with `$subdocument` modifier are not supported by AdGuard Content Blocker.
+
+:::
 
 #### **`$websocket`** {#websocket-modifier}
 
@@ -680,13 +752,19 @@ Modifikátor `$websocket` je podporován ve všech produktech AdGuardu kromě Bl
 
 Pravidlo se vztahuje pouze na požadavky ajax (požadavky odeslané prostřednictvím objektu javascript `XMLHttpRequest`).
 
+:::note
+
+You may use a shorter name (alias) instead of using the full modifier name: `$xhr`.
+
+:::
+
 :::info Kompatibilita
 
 AdGuard pro Windows, Mac a Android při filtrování starších prohlížečů nedokáže přesně detekovat tento typ a někdy jej detekuje jako [`$other`](#other-modifier) nebo [`$script`](#script-modifier). Tento typ obsahu mohou spolehlivě detekovat pouze při filtrování moderních prohlížečů, které podporují [Záhlaví požadavku na načtení metadat](https://developer.mozilla.org/en-US/docs/Glossary/Fetch_metadata_request_header).
 
 :::
 
-#### **`$object-subrequest` (odstraněno)** {#object-subrequest-modifier}
+#### **`$object-subrequest` (removed)** {#object-subrequest-modifier}
 
 :::danger Upozornění na odstranění
 
@@ -694,7 +772,7 @@ Modifikátor `$object-subrequest` je odstraněn a již není podporován. Pravid
 
 :::
 
-#### **`$webrtc` (odstraněno)** {#webrtc-modifier}
+#### **`$webrtc` (removed)** {#webrtc-modifier}
 
 :::danger Upozornění na odstranění
 
@@ -711,24 +789,33 @@ Pravidlo se vztahuje pouze na připojení WebRTC.
 
 ### Modifikátory pravidel pro výjimky {#exception-modifiers}
 
-<!-- Please keep them sorted -->
-
-- [`$content`](#content-modifier)
-- [`$elemhide`](#elemhide-modifier)
-- [`$extension`](#extension-modifier)
-- [`$jsinject`](#jsinject-modifier)
-- [`$stealth`](#stealth-modifier)
-- [`$urlblock`](#urlblock-modifier)
-- [Generická pravidla](#exception-modifiers-generic-rules)
-    - [`$genericblock`](#genericblock-modifier)
-    - [`$generichide`](#generichide-modifier)
-    - [`$specifichide`](#specifichide-modifier)
-
 Pravidla výjimek deaktivují ostatní základní pravidla pro adresy, kterým odpovídají. Začínají značkou `@@`. Lze na ně aplikovat všechny výše uvedené základní modifikátory a mají také několik speciálních modifikátorů.
 
 :::note Vizuální znázornění
 
 Doporučujeme také seznámit se s [tímto článkem](https://adblockplus.org/filter-cheatsheet#blocking), abyste lépe pochopili, jak taková pravidla vytvářet.
+
+:::
+
+<!-- Please keep them sorted -->
+
+| Modifier \ Products                    | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Firefox][ext-ff] | [AdGuard pro iOS][ios-app] | [AdGuard pro Safari][ext-saf] | [Blokátor obsahu AdGuard][and-cb] |
+| --------------------------------------- |:------------------------:|:-------------------------------:|:-----------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
+| [$content](#content-modifier)           |            ✅             |                ❌                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| [$elemhide](#elemhide-modifier)         |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ✅                 |
+| [$extension](#extension-modifier)       |            ✅             |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
+| [$jsinject](#jsinject-modifier)         |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
+| [$stealth](#stealth-modifier)           |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| [$urlblock](#urlblock-modifier)         |            ✅             |                ✅                |               ✅               |            ✅ *             |              ✅ *              |                 ❌                 |
+| [$genericblock](#genericblock-modifier) |            ✅             |                ✅                |               ✅               |            ✅ *             |              ✅ *              |                 ❌                 |
+| [$generichide](#generichide-modifier)   |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ✅                 |
+| [$specifichide](#specifichide-modifier) |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+
+:::note
+
+- ✅ — fully supported
+- ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
+- ❌ — not supported
 
 :::
 
@@ -747,6 +834,12 @@ Zakáže jakákoliv [kosmetická pravidla](#cosmetic-rules) na stránkách odpov
 **Příklady**
 
 - `@@||example.com^$elemhide` zakáže všechna kosmetická pravidla na `example.com` a všech subdoménách.
+
+:::note
+
+You may use a shorter name (alias) instead of using the full modifier name: `$ehide`.
+
+:::
 
 #### **`$extension`** {#extension-modifier}
 
@@ -768,7 +861,11 @@ Uživatelské skripty můžete také vyloučit přidáním znaku `~` před hodno
 $extension=~"userscript name"
 ```
 
-**POZNÁMKA:** když vyloučíte uživatelský skript, musíte umístit znak `~` mimo uvozovky.
+:::note
+
+When excluding a userscript, you must place `~` outside the quotes.
+
+:::
 
 Pokud název uživatelského skriptu obsahuje uvozovky (`"`), čárky (`,`) nebo svislé čáry (`|`), musí být uvozen zpětným lomítkem (`\`).
 
@@ -844,6 +941,13 @@ Blokování cookies a odstranění sledovacích parametrů se provádí pomocí 
 
 :::
 
+:::caution Omezení
+
+- Modifier options should be lowercase, i.e. `$stealth=DPI` will be rejected.
+- Modifier options cannot be negated, i.e. `$stealth=~3p-cookie` will be rejected.
+
+:::
+
 :::info Kompatibilita
 
 - Režim utajení je k dispozici v AdGuardu pro Windows, Mac, Android a Rozšíření prohlížeče AdGuard. Všechny ostatní produkty budou ignorovat pravidla s modifikátorem `$stealth`.
@@ -858,6 +962,14 @@ Zakáže blokování všech požadavků odeslaných ze stránek, které odpovíd
 **Příklady**
 
 - `@@||example.com^$urlblock` — nebudou blokovány žádné požadavky odeslané z `example.com` a ze všech subdomén.
+
+:::info Kompatibilita
+
+In AdGuard for iOS and Safari rules with `$urlblock` work as [$document exclusion](#document-modifier) — unblock everything.
+
+Rules with `$urlblock` modifier are not supported by AdGuard Content Blocker.
+
+:::
 
 #### Generická pravidla {#exception-modifiers-generic-rules}
 
@@ -890,6 +1002,14 @@ Zakáže generická základní pravidla na stránkách, které odpovídají prav
 
 - `@@||example.com^$genericblock` zakáže generická základní pravidla na `example.com` a všech subdoménách.
 
+:::info Kompatibilita
+
+In AdGuard for iOS and Safari rules with `$genericblock` work as [$document exclusion](#document-modifier) — unblock everything.
+
+Rules with `$genericblock` modifier are not supported by AdGuard Content Blocker.
+
+:::
+
 #### **`$generichide`** {#generichide-modifier}
 
 Zakáže všechna generická [kosmetická pravidla](#cosmetic-rules) na stránkách, které odpovídají pravidlu výjimky.
@@ -897,6 +1017,12 @@ Zakáže všechna generická [kosmetická pravidla](#cosmetic-rules) na stránk�
 **Příklady**
 
 - `@@||example.com^$generichide` zakáže všechna kosmetická pravidla na `example.com` a jejích subdoménách.
+
+:::note
+
+You may use a shorter name (alias) instead of using the full modifier name: `$ghide`.
+
+:::
 
 #### **`specifichide`** {#specifichide-modifier}
 
@@ -908,41 +1034,61 @@ Zakáže všechna specifická pravidla pro skrývání prvků a CSS, ale ne obec
 
 :::note
 
+You may use a shorter name (alias) instead of using the full modifier name: `$shide`.
+
+:::
+
+:::note
+
 Všechna kosmetická pravidla — nejen ta specifická — lze zakázat pomocí modifikátoru [`$elemhide`](#elemhide-modifier).
 
 :::
 
 :::info Kompatibilita
 
-Pravidla s modifikátorem `$specifichide` **nejsou podporována** AdGuardem pro iOS a Safari.
+Rules with `$specifichide` modifier are not supported by AdGuard for iOS and Safari and AdGuard Content Blocker.
 
 :::
 
-### Pokročilé schopnosti
+### Pokročilé schopnosti {#advanced-modifiers}
+
+These modifiers are able to completely change the behavior of basic rules.
 
 <!-- Please keep them sorted -->
 
-- [`$all`](#all-modifier)
-- [`$badfilter`](#badfilter-modifier)
-- [`$cookie`](#cookie-modifier)
-- [`$csp`](#csp-modifier)
-- [`$hls`](#hls-modifier)
-- [`$inline-font`](#inline-font-modifier)
-- [`$inline-script`](#inline-script-modifier)
-- [`$jsonprune`](#jsonprune-modifier)
-- [`$network`](#network-modifier)
-- [`$permissions`](#permissions-modifier)
-- [`$redirect`](#redirect-modifier)
-- [`$redirect-rule`](#redirect-rule-modifier)
-- [`$referrerpolicy`](#referrerpolicy-modifier)
-- [`$removeheader`](#removeheader-modifier)
-- [`$removeparam`](#removeparam-modifier)
-- [`$replace`](#replace-modifier)
-- [`noop`](#noop-modifier)
-- [`$empty` (zastaralé)](#empty-modifier)
-- [`$mp4` (zastaralé)](#mp4-modifier)
+| Modifier \ Products                        | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Firefox][ext-ff] | [AdGuard pro iOS][ios-app] | [AdGuard pro Safari][ext-saf] | [Blokátor obsahu AdGuard][and-cb] |
+| ------------------------------------------- |:------------------------:|:-------------------------------:|:-----------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
+| [$all](#all-modifier)                       |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| [$badfilter](#badfilter-modifier)           |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
+| [$cookie](#cookie-modifier)                 |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| [$csp](#csp-modifier)                       |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| [$hls](#hls-modifier)                       |            ✅             |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
+| [$inline-font](#inline-font-modifier)       |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| [$inline-script](#inline-script-modifier)   |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| [$jsonprune](#jsonprune-modifier)           |            ✅             |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
+| [$network](#network-modifier)               |            ✅             |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
+| [$permissions](#permissions-modifier)       |            ✅             |                ⏳                |               ⏳               |             ❌              |               ❌               |                 ❌                 |
+| [$redirect](#redirect-modifier)             |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| [$redirect-rule](#redirect-rule-modifier)   |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| [$referrerpolicy](#referrerpolicy-modifier) |            ⏳             |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
+| [$removeheader](#removeheader-modifier)     |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| [$removeparam](#removeparam-modifier)       |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| [$replace](#replace-modifier)               |            ✅             |                ❌                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| [noop](#noop-modifier)                      |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
+| [$empty 👎](#empty-modifier "deprecated")    |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| [$mp4 👎](#mp4-modifier "deprecated")        |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
 
-Tyto modifikátory mohou zcela změnit chování základních pravidel.
+:::note
+
+- ✅ — fully supported
+- ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
+<!-- following emoji shall be needed for $referrerpolicy after 1.12 is used in some apps -->
+<!-- - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions -->
+- ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product
+- ❌ — not supported
+- 👎 — deprecated; still supported but will be removed in the future
+
+:::
 
 #### **`$all`** {#all-modifier}
 
@@ -1124,13 +1270,6 @@ Pravidla `$hls` lze také zakázat pravidly výjimek `$document`, `$content` a `
 
 :::
 
-**Omezení**
-
-- Pravidla `$hls` jsou povolena pouze v důvěryhodných filtrech
-- Pravidla `$hls` jsou kompatibilní s modifikátory `$domain`, `$third- party`, `$app`, `$important`, `$match- case` a `$xmlhttprequest`
-- `$hls` pravidla platí pouze pro seznamy stop HLS, což je text kódovaný v UTF-8 začínající řádkem `#EXTM3U`. Jakákoli jiná odpověď nebude těmito pravidly upravena
-- Pravidla `$hls` neplatí, pokud je velikost původní odpovědi větší než 3 MB
-
 :::note
 
 Když vícenásobná pravidla `$hls` odpovídají stejnému požadavku, jejich účinek je kumulativní.
@@ -1285,11 +1424,6 @@ Základní výjimky URL nesmí zakázat pravidla s modifikátorem `$jsonprune`. 
 - `@@||example.org^$jsonprune=text` zakáže všechna pravidla `$jsonprune` s hodnotou modifikátoru `$jsonprune` shodným s `text` pro odpovědi z URL odpovídajících `||example.org^`.
 
 Pravidla `$jsonprune` lze také zakázat pravidly výjimek `$document`, `$content` a `$urlblock`.
-
-**Omezení**
-
-- Pravidla `$jsonprune` jsou kompatibilní s `$domain`, `$third- party`, `$app`, `$important`, `$match- case` a modifikátory `$xmlhttprequest`.
-- Pravidla `$jsonprune` neplatí, pokud je velikost původní odpovědi větší než 3 MB.
 
 :::note
 
@@ -1540,7 +1674,7 @@ Hodnota `$permissions` může být v případě pravidel pro výjimky prázdná 
 - `||example.org^$permissions=autoplay=()` disallows autoplay media requested through the `HTMLMediaElement` interface across `example.org`.
 - `@@||example.org/page/*$permissions=autoplay=()` disables all rules with the `$permissions` modifier exactly matching `autoplay=()` on all the pages matching the rule pattern. Např. výše uvedené pravidlo.
 - `@@||example.org/page/*$permissions` zakáže všechna pravidla `$permissions` na všech stránkách odpovídajících vzoru pravidla.
-- `$domain=example.org|example.com,permissions=storage-access=()\, сamera=()` disallows using the Storage Access API to request access to unpartitioned cookies and using video input devices across `example.org` and `example.com`.
+- `$domain=example.org|example.com,permissions=storage-access=()\, camera=()` zakáže použití API pro přístup k úložišti pro vyžádání přístupu k nerozděleným souborům cookies a používání vstupních zařízení videa napříč `example.org` a `example.com`.
 - `@@||example.org^$document` nebo `@@||example.org^$urlblock` zakáží všechna pravidla `$permission` na všech stránkách odpovídajících vzoru pravidla.
 
 :::caution Omezení
@@ -1861,7 +1995,7 @@ Pravidla `$removeparam` lze také zakázat pravidly výjimek `$document` a `$url
 :::caution Omezení
 
 - Pravidla s modifikátorem `$removeparam` lze použít [**pouze v důvěryhodných filtrech**](#trusted-filters).
-- Pravidla `$removeparam` jsou kompatibilní se [základními modifikátory](#basic-rules-common-modifiers), [modifikátory typu obsahu](#content-type-modifiers) a s modifikátory `$important` a `$app`. Pravidla s jinými modifikátory jsou považována za neplatná a budou vyřazena.
+- `$removeparam` rules are compatible with [basic modifiers](#basic-rules-basic-modifiers), [content-type modifiers](#content-type-modifiers), and with `$important` and `$app` modifiers. Rules with any other modifiers are considered invalid and will be discarded.
 
 :::
 
@@ -2208,10 +2342,25 @@ Rule weight: base weight + allowed content type, [category 2](#priority-category
 
 Váha pravidla: základní + povolený typ obsahu, [kategorie 2](#priority-category-2): `1 + (50 + 50/12) = 55`.
 
-<!-- markdownlint-disable-next-line -->
-# Ostatní pravidla
+## Ostatní pravidla {#non-basic-rules}
 
-Možnosti základních pravidel však nemusí být pro blokování reklam dostatečné. Někdy potřebujete skrýt prvek nebo změnit část kódu HTML webové stránky, aniž byste cokoli porušili. Pravidla popsaná v této části jsou vytvořena speciálně pro tento účel.
+However, basic rules may not be enough to block ads. Někdy potřebujete skrýt prvek nebo změnit část kódu HTML webové stránky, aniž byste cokoli porušili. Pravidla popsaná v této části jsou vytvořena speciálně pro tento účel.
+
+| Categories \ Products                     | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Firefox][ext-ff] | [AdGuard pro iOS][ios-app] | [AdGuard pro Safari][ext-saf] | [Blokátor obsahu AdGuard][and-cb] |
+| ------------------------------------------ |:------------------------:|:-------------------------------:|:-----------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
+| [Element hiding](#cosmetic-elemhide-rules) |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ✅                 |
+| [Pravidla CSS](#cosmetic-css-rules)        |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
+| [Extended CSS](#extended-css-selectors)    |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
+| [HTML filtering](#html-filtering-rules)    |            ✅             |                ❌                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| [JavaScript](#javascript-rules)            |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
+| [Scriptlets](#scriptlets)                  |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
+
+:::note
+
+- ✅ — fully supported
+- ❌ — not supported
+
+:::
 
 ## Kosmetická pravidla {#cosmetic-rules}
 
@@ -2828,7 +2977,7 @@ subject:nth-ancestor(n)
 subject:nth-ancestor(n)
 ```
 
-- `subjectr` — povinný, standardní nebo rozšířený selektor CSS
+- `subject` — required, standard or extended CSS selector
 - `n` — povinné, číslo >= 1 a < 256, vzdálenost k potřebnému předkovi od prvku vybraného pomocí `subject`
 
 ##### `:nth-ancestor()` limitations {#extended-css-nth-ancestor-limitations}
@@ -2866,7 +3015,7 @@ Pseudo-třída `:upward()` umožňuje vyhledat předka vzhledem k dříve vybran
 subject:upward(ancestor)
 ```
 
-- `subjectr` — povinný, standardní nebo rozšířený selektor CSS
+- `subject` — required, standard or extended CSS selector
 - `ancestor` — povinný, specifikace pro předka prvku vybraného pomocí `subject`, lze nastavit jako:
     - *číslo* >= 1 a < 256 pro vzdálenost k požadovanému předkovi, stejně jako u položky [`:nth-ancestor()`](#extended-css-nth-ancestor)
     - *standardní selektor CSS* pro shodu nejbližšího předka
@@ -3050,19 +3199,26 @@ Pravidla filtrování HTML podporuje AdGuard pro Windows, Mac, Android a Rozší
 
 :::
 
-**Syntaxe**
+### Syntaxe
 
 ```text
-      rule = [domains] "$$" tagName [attributes]
-   domains = [domain0, domain1[, ...[, domainN]]]
-attributes = "[" name0 = value0 "]" "[" name1 = value2 "]" ... "[" nameN = valueN "]"
+     selector = [tagName] [attributes] [pseudoClasses]
+   combinator = ">"
+         rule = [domains] "$$" selector *(combinator selector)
+      domains = [domain0, domain1[, ...[, domainN]]]
+   attributes = "[" name0 = value0 "]" "[" name1 = value2 "]" ... "[" nameN = valueN "]"
+pseudoClasses = pseudoClass *pseudoClass
+  pseudoClass = ":" pseudoName [ "(" pseudoArgs ")" ]
 ```
 
 - **`tagName`** — název prvku s malými písmeny, např. `div` nebo `script`.
 - **`domains`** — omezení domény pro dané pravidlo. Stejné zásady jako v [syntaxi pravidel pro skrývání prvků](#elemhide-syntax).
-- **`atributy`** — seznam atributů, které limitují výběr prvků. `name` — název atributu, `value` — podřetězec, který je obsažen v hodnotě atributu.
+- **`attributes`** — a list of attributes that limit the selection of elements. `name` — název atributu, `value` — podřetězec, který je obsažen v hodnotě atributu.
+- **`pseudoName`** — the name of a pseudo-class.
+- **`pseudoArgs`** — the arguments of a function-style pseudo-class.
+- **`combinator`** — an operator that works similarly to the [CSS child combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator): that is, the `selector` on the right of the `combinator` will only match an element whose direct parent matches the `selector` on the left of the `combinator`.
 
-**Příklady**
+### Příklady
 
 **Kód HTML:**
 
@@ -3078,11 +3234,17 @@ example.org$$script[data-src="banner"]
 
 Toto pravidlo odstraní všechny prvky `script` s atributem `data-src` obsahujícím podřetězec `banner`. Pravidlo platí pouze pro `example.org` a všechny její subdomény.
 
-**Speciální atributy**
+### Speciální atributy
 
 Kromě obvyklých atributů, jejichž hodnotu kontroluje každý prvek, existuje sada speciálních atributů, které mění způsob fungování pravidla. Níže je uveden seznam těchto atributů:
 
-- **`tag-content`**
+#### `tag-content`
+
+:::caution Upozornění na vyřazení
+
+This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class where it is available.
+
+:::
 
 Jedná se o nejčastěji používaný speciální atribut. Omezí výběr na ty prvky, jejichž kód innerHTML obsahuje zadaný podřetězec.
 
@@ -3102,11 +3264,19 @@ Následující pravidlo smaže všechny prvky `script` s podřetězcem `banner` 
 $$script[tag-content="banner"]
 ```
 
-**Vnořené prvky**
+:::caution Omezení
 
-Pokud se jedná o více vnořených prvků a všechny spadají do stejného pravidla filtrování HTML, budou všechny odstraněny.
+The `tag-content` special attribute must not appear in a selector to the left of a `>` combinator.
 
-- **`wildcard`**
+:::
+
+#### `wildcard`
+
+:::caution Upozornění na vyřazení
+
+This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class where it is available.
+
+:::
 
 Tento speciální atribut funguje téměř jako `tag-content` a umožňuje kontrolovat kód dokumentu innerHTML. Pravidlo zkontroluje, zda kód HTML prvku odpovídá [vyhledávacímu vzoru](https://en.wikipedia.org/wiki/Glob_(programming)).
 
@@ -3116,7 +3286,19 @@ Např.: `$$script[wildcard="*banner*text*"]`
 
 Zkontroluje, zda kód prvku obsahuje dva po sobě jdoucí podřetězce `banner` a `text`.
 
-- **`max-length`**
+:::caution Omezení
+
+The `wildcard` special attribute must not appear in a selector to the left of a `>` combinator.
+
+:::
+
+#### `max-length`
+
+:::caution Upozornění na vyřazení
+
+This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class with a regular expression where it is available.
+
+:::
 
 Určuje maximální délku obsahu prvku HTML. Pokud je tento parametr nastaven a délka obsahu přesahuje tuto hodnotu, pravidlo se na prvek nevztahuje.
 
@@ -3132,7 +3314,19 @@ $$div[tag-content="banner"][max-length="400"]
 
 Toto pravidlo odstraní všechny prvky `div`, jejichž kód obsahuje podřetězec `banner` a jejichž délka nepřesahuje `400` znaků.
 
-- **`min-length`**
+:::caution Omezení
+
+The `max-length` special attribute must not appear in a selector to the left of a `>` combinator.
+
+:::
+
+#### `min-length`
+
+:::caution Upozornění na vyřazení
+
+This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class with a regular expression where it is available.
+
+:::
 
 Určuje minimální délku obsahu prvku HTML. Pokud je tento parametr nastaven a délka obsahu je menší než nastavená hodnota, pravidlo se na prvek nevztahuje.
 
@@ -3144,7 +3338,49 @@ $$div[tag-content="banner"][min-length="400"]
 
 Toto pravidlo odstraní všechny prvky `div`, jejichž kód obsahuje podřetězec `banner` a jejichž délka přesahuje `400` znaků.
 
-**Výjimky**
+:::caution Omezení
+
+The `min-length` special attribute must not appear in a selector to the left of a `>` combinator.
+
+:::
+
+### Pseudo-classes
+
+#### `:contains()`
+
+##### Syntaxe
+
+```text
+:contains(unquoted text)
+```
+
+nebo
+
+```text
+:contains(/reg(ular )?ex(pression)?/)
+```
+
+:::note Compatibility
+
+`:-abp-contains()` and `:has-text()` are synonyms for `:contains()`.
+
+:::
+
+:::info Kompatibilita
+
+The `:contains()` pseudo-class is supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.13 or later**.
+
+:::
+
+Requires that the inner HTML of the element contains the specified text or matches the specified regular expression.
+
+:::caution Omezení
+
+A `:contains()` pseudo-class must not appear in a selector to the left of a `>` combinator.
+
+:::
+
+### Výjimky
 
 Podobně jako u pravidel skrývání existuje speciální typ pravidel, který zakáže vybrané pravidlo filtrování HTML pro určité domény. Syntaxe je stejná, jen je třeba změnit `$$` na `$@$`.
 
@@ -3286,14 +3522,7 @@ Přečtěte si další informace o [ladění skripletů](#debug-scriptlets).
 
 Další informace o důvěryhodných skriptletech najdete na [GitHubu](https://github.com/AdguardTeam/Scriptlets#trusted-scriptlets).
 
-## Modifikátory pro ostatní typ pravidel
-
-<!-- Please keep them sorted -->
-
-- [`$app`](#non-basic-app-modifier)
-- [`$domain`](#non-basic-domain-modifier)
-- [`$path`](#non-basic-path-modifier)
-- [`$url`](#non-basic-url-modifier)
+## Modifikátory pro ostatní typ pravidel {#non-basic-rules-modifiers}
 
 Každé pravidlo lze upravit pomocí modifikátorů popsaných v následujících odstavcích.
 
@@ -3310,6 +3539,21 @@ modifiers = modifier0[, modifier1[, ...[, modifierN]]]
 Např.: `[$domain=example.com,app=test_app]##selector`.
 
 V modifikátorech musí být uvozeny hodnoty následujících znaků: `[`, `]`, `,`a `\` (pokud se pro uvození nepoužívá). K uvození použijte `\`. Např. uvozená závorka vypadá takto: `\]`.
+
+| Modifier \ Products                  | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Firefox][ext-ff] | [AdGuard pro iOS][ios-app] | [AdGuard pro Safari][ext-saf] | [Blokátor obsahu AdGuard][and-cb] |
+| ------------------------------------- |:------------------------:|:-------------------------------:|:-----------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
+| [$app](#non-basic-app-modifier)       |            ✅             |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
+| [$domain](#non-basic-domain-modifier) |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
+| [$path](#non-basic-path-modifier)     |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
+| [$url](#non-basic-url-modifier)       |            ✅             |                ⏳                |               ⏳               |             ❌              |               ❌               |                 ❌                 |
+
+:::note
+
+- ✅ — fully supported
+- ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product
+- ❌ — not supported
+
+:::
 
 ### **`$app`** {#non-basic-app-modifier}
 
@@ -3382,11 +3626,11 @@ Modifikátor `$path` podporuje regulární výrazy [stejným způsobem](#regexp-
 
 :::info Kompatibilita
 
-Pravidla s modifikátorem `$path` podporuje AdGuard pro Windows, Mac, Android a Rozšíření prohlížeče AdGuard pro Chrome, Firefox a Edge.
+Rules with `$path` modifier are not supported by AdGuard Content Blocker.
 
 :::
 
-### **`url`** {#non-basic-url-modifier}
+### **`$url`** {#non-basic-url-modifier}
 
 Modifikátor `$url` omezuje oblast použití pravidla na adresy URL odpovídající zadané masce.
 
@@ -3519,7 +3763,9 @@ domain.com##div.ad
 
 #### Afinita Safari {#safari-affinity-directive}
 
-Safari je prohlížeč notoricky známý svým přísným maximálním limitem 150 tisíc pro pravidla filtrování v blokátorech obsahu. V aplikacích AdGuard pro Safari a AdGuard pro iOS je však maximální počet pravidel zvýšen na 300 tisíc rozdělením do několika blokátorů obsahu. Obecně platí, že několik kategorií filtrů je víceméně nezávislých, takže existují takové blokátory obsahu, které tyto kategorie obsahují:
+Safari's limit for each content blocker is 150,000 active rules. But in AdGuard for Safari and AdGuard for iOS, we've split the rules into 6 content blockers, thus increasing the rule limit to 900,000.
+
+Here is the composition of each content blocker:
 
 - AdGuard General — Blokování reklam, jazykově specifické filtry
 - AdGuard Privacy — Soukromí
@@ -3528,9 +3774,9 @@ Safari je prohlížeč notoricky známý svým přísným maximálním limitem 1
 - AdGuard Other — Jiné
 - AdGuard Custom — Vlastní
 
-`Uživatelská pravidla` a `Seznam povolených` jsou přidány do každého blokátoru obsahu.
+User rules and allowlist are added to every content blocker.
 
-Hlavním problémem při použití více blokátorů obsahu je, že pravidla uvnitř těchto blokátorů obsahu se nemohou navzájem ovlivňovat. To může vést k různým neočekávaným problémům. Správci filtrů tedy mohou použít `!#safari_cb_affinity` k definování afinity blokátorů obsahu Safari pro pravidla uvnitř blokování direktiv.
+The main issue with using multiple content blockers is that the rules within these content blockers cannot influence each other. This may lead to different unexpected issues. So filter maintainers may use `!#safari_cb_affinity` to define Safari content blocker affinity for the rules inside of the directive block.
 
 **Syntaxe**
 
@@ -3572,7 +3818,7 @@ example.org#@#.adBanner
 
 ### Nápovědy
 
-"Nápověda" je speciální komentář, instrukce pro kompilátor filtrů používaný na straně serveru (viz [FiltersRegistry](https://github.com/AdguardTeam/FiltersRegistry)).
+"Hint" is a special comment, instruction to the filters compiler used on the server side (see [FiltersRegistry](https://github.com/AdguardTeam/FiltersRegistry)).
 
 **Syntaxe**
 
@@ -3580,13 +3826,13 @@ example.org#@#.adBanner
 !+ HINT_NAME1(PARAMS) HINT_NAME2(PARAMS)
 ```
 
-Lze použít více nápověd.
+Multiple hints can be applied.
 
 #### Nápověda `NOT_OPTIMIZED`
 
-Pro každý filtr sestavuje AdGuard dvě verze: plnou a optimalizovanou. Optimalizovaná verze je mnohem jednodušší a neobsahuje pravidla, která se nepoužívají vůbec nebo jen zřídka.
+For each filter, AdGuard compiles two versions: full and optimized. Optimized version is much more lightweight and does not contain rules which are not used at all or used rarely.
 
-Frekvence používání pravidel vychází ze shromážděných statistik [pravidel filtrování](../tracking-filter-statistics). Optimalizace filtrů je však založena na více než na tom — některé filtry mají specifickou konfiguraci. Takto to vypadá pro Základní filtr:
+Rules usage frequency comes from the collected [filter rules statistics](../tracking-filter-statistics). But filters optimization is based on more than that — some filters have specific configuration. This is how it looks like for Base filter:
 
 ```text
 "filter": AdGuard Base filter,
@@ -3604,21 +3850,21 @@ kde:
 - **maxPercent** — horní mez hodnoty `percent` value
 - **strict** — pokud je `percent < minPercent` NEBO `percent > maxPercent` a je zapnutý přísný režim, pak by kompilace filtru měla selhat, jinak je nutné použít původní pravidla
 
-Jinými slovy, `percent` je "úroveň komprese". Například pro Základní filtr je nastavena na 40 %. To znamená, že optimalizační algoritmus by měl odstranit 60 % pravidel.
+In other words, `percent` is the "compression level". For instance, for the Base filter it is configured to 40%. It means that optimization algorithm should strip 60% of rules.
 
-Nakonec zde jsou dvě verze základního filtru pro Rozšíření prohlížeče AdGuard:
+Eventually, here are the two versions of the Base filter for AdGuard Browser Extension:
 
 - úplná: https://filters.adtidy.org/extension/chromium/filters/2.txt
 - optimalizovaná: https://filters.adtidy.org/extension/chromium/filters/2_optimized.txt
 
-**Pokud chcete přidat pravidlo, které by nemělo být při optimalizaci odstraněno, použijte nápovědu `NOT_OPTIMIZED`:**
+**If you want to add a rule which should not be removed at optimization use the `NOT_OPTIMIZED` hint:**
 
 ```adblock
 !+ NOT_OPTIMIZED
 ||example.org^
 ```
 
-**Toto pravidlo nebude optimalizováno pouze pro AdGuard pro Android:**
+**And this rule will not be optimized only for AdGuard for Android:**
 
 ```adblock
 !+ NOT_OPTIMIZED PLATFORM(android)
@@ -3627,7 +3873,7 @@ Nakonec zde jsou dvě verze základního filtru pro Rozšíření prohlížeče 
 
 #### Nápověda `PLATFORM` a `NOT_PLATFORM`
 
-Slouží k zadání platforem pro použití pravidel. Seznam existujících platforem a odkazy např. na Základní filtr:
+Used to specify the platforms to apply the rules. List of existing platforms and links to Base filter, for example, for each of them:
 
 - `windows` — AdGuard pro Windows — [https://filters.adtidy.org/windows/filters/2.txt](https://filters.adtidy.org/windows/filters/2.txt)
 
@@ -3653,14 +3899,14 @@ Slouží k zadání platforem pro použití pravidel. Seznam existujících plat
 
 **Příklady**
 
-Toto pravidlo bude dostupné pouze v AdGuardu pro Windows, Mac a Android:
+This rule will be available only in AdGuard for Windows, Mac, Android:
 
 ```adblock
 !+ PLATFORM(windows,mac,android)
 ||example.org^
 ```
 
-Toto pravidlo bude k dispozici pro všechny platformy kromě AdGuardu pro Safari, Blokátoru obsahu AdGuard a AdGuardu pro iOS:
+This rule will be available for every platform except AdGuard for Safari, AdGuard Content Blocker, and AdGuard for iOS:
 
 ```adblock
 !+ NOT_PLATFORM(ext_safari, ext_android_cb, ios)
@@ -3669,13 +3915,13 @@ Toto pravidlo bude k dispozici pro všechny platformy kromě AdGuardu pro Safari
 
 ## Jak ladit pravidla filtrování
 
-Jednoduchá pravidla filtrování je možné vytvořit "v hlavě", ale pro cokoli alespoň trochu složitějšího budete potřebovat další nástroje pro jejich ladění a iteraci. Existují nástroje, které vám s tím pomohou. V prohlížeči Chrome a jeho analogiích v ostatních prohlížečích můžete použít nástroj DevTools, ale většina produktů AdGuardu nabízí ještě jeden — Záznam filtrování.
+It may be possible to create simple filtering rules "in your head" but for anything even slightly more complicated you will need additional tools to debug and iterate them. There are tools to assist you with that. You can use DevTools in Chrome and its analogs in other browsers but most AdGuard products provide another one — Filtering log.
 
 ### Záznam filtrování
 
-Záznam filtrování je pokročilý nástroj, který bude užitečný především pro vývojáře filtrů. Obsahuje seznam všech webových požadavků, které procházejí skrze AdGuard, poskytuje vyčerpávající informace o každém z nich, nabízí několik možností třídění a další užitečné funkce.
+Filtering log is an advanced tool that will be helpful mostly to filter developers. It lists all web requests that pass through AdGuard, gives you exhaustive information on each of them, offers multiple sorting options, and has other useful features.
 
-V závislosti na tom, který AdGuard produkt používáte, se protokol filtrování může nacházet na různých místech.
+Depending on which AdGuard product you are using, Filtering log can be located in different places.
 
 - V **AdGuardu pro Windows** jej najdete na kartě *Blokátor reklam* nebo prostřednictvím nabídky na hlavním panelu;
 - V **AdGuardu pro Mac** je pod *Nastavení → Pokročilé → Záznam filtrování*;
@@ -3684,17 +3930,17 @@ V závislosti na tom, který AdGuard produkt používáte, se protokol filtrová
 
 :::note
 
-V **AdGuardu pro iOS** a v **AdGuardu pro Safari** Záznam filtrování neexistuje kvůli způsobu, jakým jsou v Safari implementovány blokátory obsahu. AdGuard tyto webové požadavky nevidí, a proto je nemůže zobrazit.
+In **AdGuard for iOS** and in **AdGuard for Safari** Filtering log does not exist because of the way content blockers are implemented in Safari. AdGuard does not see the web requests and therefore cannot display them.
 
 :::
 
 ### Režim ladění selektorů {#selectors-debug-mode}
 
-Někdy můžete potřebovat zkontrolovat výkonnost daného selektoru nebo souboru stylů. Abyste to mohli provést bez přímé interakce s JavaScript, můžete použít speciální vlastnost stylu `debug`. Když `ExtendedCss` splňuje tuto vlastnost, povolí režim ladění buď pro jeden selektor, nebo pro všechny selektory v závislosti na hodnotě `debug`.
+Sometimes, you might need to check the performance of a given selector or a stylesheet. In order to do it without interacting with JavaScript directly, you can use a special `debug` style property. When `ExtendedCss` meets this property, it enables the debugging mode either for a single selector or for all selectors, depending on the `debug` value.
 
-Otevřete konzolu prohlížeče na webové stránce a zobrazte statistiky časování pro selektor(y), které zde byly použity. Režim ladění zobrazí následující statistiky jako objekt, kde každý z laděných selektorů je klíč a hodnota je objekt s těmito vlastnostmi:
+Open the browser console while on a web page to see the timing statistics for selector(s) that were applied there. Debugging mode displays the following stats as object where each of the debugged selectors are keys, and value is an object with such properties:
 
-**Vždy vytištěno:**
+**Always printed:**
 
 - `selectorParsed` — text případně parsovaného selektoru
 - `timings` — seznam uzlů DOM odpovídajících selektoru
@@ -3704,44 +3950,44 @@ Otevřete konzolu prohlížeče na webové stránce a zobrazte statistiky časov
     - `standardDeviation` — standardní odchylka
     - `timingsSum` — celkový čas potřebný k použití selektoru na stránce ve všech instancích
 
-**Vytištěno pouze pro odstranění pseudonymů:**
+**Printed only for remove pseudos:**
 
 - `removed` — příznak, který signalizuje, zda jsme odstranili prvky
 
-**Vytištěno, pokud prvky nejsou odstraněny:**
+**Printed if elements are not removed:**
 
 - `matchedElements` — seznam uzlů DOM odpovídajících selektoru
 - `styleApplied` — parsovaná deklarace stylu pravidla související se selektorem
 
 **Příklady**
 
-**Ladění jednoho selektoru:**
+**Debugging a single selector:**
 
-Pokud je hodnota vlastnosti `debug` `true`, zobrazí se v konzole prohlížeče pouze informace o tomto selektoru.
+When the value of the `debug` property is `true`, only information about this selector will be shown in the browser console.
 
 ```adblock
 #$?#.banner { display: none; debug: true; }
 ```
 
-**Povolení globálního ladění:**
+**Enabling global debug:**
 
-Pokud je hodnota vlastnosti `debug` `global`, konzola zobrazí informace o všech rozšířených selektorech CSS, které mají na aktuální stránce shodu pro všechna pravidla z libovolného povoleného filtru.
+When the value of the `debug` property is `global`, the console will display information about all extended CSS selectors that have matches on the current page, for all the rules from any of the enabled filters.
 
 ```adblock
 #$?#.banner { display: none; debug: global; }
 ```
 
-**Testování rozšířených selektorů bez AdGuardu**
+**Testing extended selectors without AdGuard**
 
-ExtendedCss lze spustit na libovolné stránce bez použití AdGuard produktu. Za tímto účelem byste měli zkopírovat a spustit následující kód v konzoli prohlížeče:
+ExtendedCss can be executed on any page without using any AdGuard product. In order to do that you should copy and execute the following code in a browser console:
 
 ```js
 !function(e,t,d){C=e.createElement(t),C.src=d,C.onload=function(){alert("ExtendedCss loaded successfully")},s=e.getElementsByTagName(t)[0],s?s.parentNode.insertBefore(C,s):(h=e.getElementsByTagName("head")[0],h.appendChild(C))}(document,"script","https://AdguardTeam.github.io/ExtendedCss/extended-css.min.js");
 ```
 
-Případně nainstalujte uživatelský skript [ExtendedCssDebugger](https://github.com/AdguardTeam/Userscripts/blob/master/extendedCssDebugger/extended-css.debugger.user.js).
+Alternatively, install the [ExtendedCssDebugger userscript](https://github.com/AdguardTeam/Userscripts/blob/master/extendedCssDebugger/extended-css.debugger.user.js).
 
-Nyní můžete použít `ExtendedCss` z globálního rozsahu a spustit jeho metodu [`query()`](https://github.com/AdguardTeam/ExtendedCss#extended-css-query) jako `Document.querySelectorAll()`.
+Now you can now use the `ExtendedCss` from global scope, and run its method [`query()`](https://github.com/AdguardTeam/ExtendedCss#extended-css-query) as `Document.querySelectorAll()`.
 
 **Příklady**
 
@@ -3754,9 +4000,9 @@ ExtendedCss.query(selector);
 
 ### Ladění skriptletů {#debug-scriptlets}
 
-Pokud používáte Rozšíření prohlížeče AdGuard a chcete vyladit pravidlo [skriptlet](#scriptlets) nebo [důvěryhodný skriptlet](#trusted-scriptlets), můžete získat další informace otevřením protokolu filtrování. V takovém případě se skriptlety přepnou do režimu ladění a v konzoli prohlížeče se zobrazí více informací.
+If you are using AdGuard Browser Extension and want to debug a [scriptlet](#scriptlets) or a [trusted scriptlet](#trusted-scriptlets) rule, you can get additional information by opening the Filtering log. In that case, scriptlets will switch to debug mode and there will be more information in the browser console.
 
-Následující skriptlety jsou speciálně vyvinuty zejména pro účely ladění:
+The following scriptlets are especially developed for debug purposes:
 
 - [`debug-current-inline-script`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#debug-current-inline-script)
 - [`debug-on-property-read`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#debug-on-property-read)
@@ -3766,7 +4012,7 @@ Následující skriptlety jsou speciálně vyvinuty zejména pro účely laděn�
 - [`log-eval`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#log-eval)
 - [`log`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#log)
 
-Následující skriptlety lze také použít pro účely ladění:
+The following scriptlets also may be used for debug purposes:
 
 - [`json-prune`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#json-prune)
 - [`prevent-fetch`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-fetch)
@@ -3780,6 +4026,42 @@ Následující skriptlety lze také použít pro účely ladění:
 
 ## Hodně štěstí při vytváření filtrů
 
-Přejeme vám hodně štěstí při vytváření vlastních filtrů reklam.
+We wish you luck with creating you own ad filters.
 
-Pokud potřebujete poradit, jak správně vytvořit vlastní filtry, naše fórum má [sekci](https://forum.adguard.com/index.php?forums/69/) věnovanou psaní vlastních pravidel filtrování.
+If you need an advice on how to create your own filters properly, our forum has a [special section](https://forum.adguard.com/index.php?forums/69/) dedicated to writing your own filtering rules.
+
+* * *
+
+## Compatibility tables legend {#compatibility-tables-legend}
+
+### Product shortcuts {#what-product}
+
+1. `CoreLibs apps` — AdGuard for Windows, Mac, Android
+1. `AdGuard for Chromium` — AdGuard Browser Extension for Chrome and other Chromium-based browsers, e.g. new Microsoft Edge, Opera
+1. `AdGuard for Firefox` — AdGuard Browser Extension for Firefox
+1. `AdGuard for iOS` — AdGuard for iOS and AdGuard for iOS Pro (for mobile Safari browser)
+1. `AdGuard for Safari` — AdGuard for desktop Safari browser
+1. `AdGuard Content Blocker` — Content Blocker for Android mobile browsers: Samsung Internet and Yandex Browser
+
+### Compatibility shortcuts {#what-compatibility}
+
+:::note
+
+- ✅ — fully supported
+- ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
+- 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions
+- ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product
+- ❌ — not supported
+- 👎 — deprecated; still supported but will be removed in the future
+- 🚫 — removed and no longer supported
+
+:::
+
+[cl-apps]: #what-product "AdGuard for Windows, Mac, Android"
+[ext-chr]: #what-product "AdGuard Browser Extension for Chrome and other Chromium-based browsers"
+[ext-ff]: #what-product "AdGuard Browser Extension for Firefox"
+[ios-app]: #what-product "AdGuard for iOS and AdGuard for iOS Pro"
+[ext-saf]: #what-product "AdGuard pro Safari"
+[and-cb]: #what-product "AdGuard Content Blocker for Samsung Internet and Yandex Browser on Android"
+
+[sec-fetch-dest-header]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest

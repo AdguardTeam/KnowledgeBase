@@ -101,27 +101,27 @@ Ochranu před sledování můžete jemně doladit výběrem úrovně ochrany *Vl
 
 ### Blokování obtěžování
 
-This feature is based on AdGuard's annoyance filters and allows you to block popups, online assistant windows, cookie notifications, prompts to download mobile apps, and similar annoyances. [Learn more about annoyance filters](/general/ad-filtering/adguard-filters/#adguard-filters)
+Tato funkce je založena na AdGuard filtrech obtěžování a umožňuje blokovat vyskakovací okna, okna online asistentů, oznámení o souborech cookies, výzvy ke stažení mobilních aplikací a podobné obtěžující prvky. [Více informací o filtrech obtěžování](/general/ad-filtering/adguard-filters/#adguard-filters)
 
 ![Annoyance blocking *mobile_border](https://cdn.adtidy.org/blog/new/lwujvannoyance.png)
 
 ### DNS ochrana
 
-*DNS protection* allows you to filter DNS requests with the help of a selected DNS server, DNS filters, and user rules:
+*DNS ochrana* umožňuje filtrovat DNS požadavky pomocí vybraného DNS serveru, DNS filtrů a uživatelských pravidel:
 
-- Some DNS servers have blocklists that help block DNS requests to potentially harmful domains
+- Některé DNS servery mají seznamy blokování, které pomáhají blokovat DNS požadavky na potenciálně škodlivé domény
 
-- In addition to DNS servers, AdGuard can filter DNS requests on its own using a special DNS filter. It contains a large list of ad and tracking domains — requests to them are rerouted to a blackhole server
+- Kromě DNS serverů může AdGuard filtrovat DNS požadavky sám pomocí speciálního DNS filtru. Obsahuje velký seznam reklamních a sledovacích domén — požadavky na ně jsou přesměrovány do "černé díry" serveru
 
-- You can also block and unblock domains by creating user rules. You might need to consult our article about [DNS filtering rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/)
+- Domény můžete také blokovat a odblokovat vytvořením uživatelských pravidel. Možná si budete muset přečíst náš článek o [syntaxi pravidel DNS filtrování](https://adguard-dns.io/kb/general/dns-filtering-syntax/)
 
 ![DNS protection *mobile_border](https://cdn.adtidy.org/blog/new/u8qtxdns_protection.png)
 
 #### DNS server
 
-In this section, you can select a DNS server to resolve DNS requests, block ads and trackers, and encrypt DNS traffic. Tap a server to read its full description and select a protocol. If you didn't find the desired server, you can add it manually:
+V této části můžete vybrat DNS server pro řešení DNS požadavků, blokování reklam a slídičů a šifrování DNS přenosů. Klepnutím na server si přečtěte jeho celý popis a vyberte protokol. Pokud jste požadovaný server nenašli, můžete jej přidat ručně:
 
-- Click *Add DNS server* and enter the server address (or addresses)
+- Klikněte na *Přidat DNS server* a zadejte adresu serveru (nebo adresy)
 
 - Alternatively, you can select a DNS server from the [list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/) and click *Add to AdGuard* next to it
 
@@ -139,7 +139,7 @@ This feature helps manage Internet access for specific apps installed on your de
 
 ![Firewall *mobile_border](https://cdn.adtidy.org/blog/new/gdn94firewall.png)
 
-#### Global firewall rules
+#### Globální pravidla brány firewall
 
 This section allows you to control Internet access for the entire device.
 
@@ -147,7 +147,7 @@ This section allows you to control Internet access for the entire device.
 
 These rules apply to all apps on your device unless you've set custom rules for them.
 
-#### Custom firewall rules
+#### Vlastní pravidla brány firewall
 
 In this section, you can control Internet access for specific apps — block the ones you don’t find trustworthy, or, on the contrary, unblock the ones you want to use despite global firewall rules.
 
@@ -167,7 +167,7 @@ In this section, you can control Internet access for specific apps — block the
 
 To delete a rule or app from *Custom rules*, swipe it to the left.
 
-### Quick actions
+### Rychlé akce
 
 *Quick actions* are based on the requests from *Recent activity* (which can be found in *Statistics*). This section shows which apps have recently connected to the Internet.
 
@@ -199,7 +199,7 @@ If you disable AdGuard VPN, AdGuard will stop using it as an outbound proxy. If 
 
 If you have AdGuard Ad Blocker and install AdGuard VPN, the Ad Blocker app will detect it and enable *Integration with AdGuard VPN* automatically. The same happens in reverse. Note that if you've enabled integration, you won't be able to manage app exclusions and connect to DNS servers from the AdGuard VPN app. You can specify apps to be routed through your VPN tunnel via *Settings* → *Filtering* → *Network* → *Proxy* → *Apps operating through proxy*. To select a DNS server, open AdGuard → *DNS protection* → *DNS server*.
 
-## App management
+## Správa aplikací
 
 This section allows you to manage permissions and filtering settings for all apps installed on your device.
 
@@ -236,7 +236,7 @@ This feature gives you a complete picture of what is happening with the traffic 
 
 The stats are categorized into different sections.
 
-### Requests
+### Požadavky
 
 This section shows the number of blocked ads, trackers, and the total number of requests for the selected time period: 24 hours, 7 days, 30 days, or all time. You can also filter requests by data type: mobile data, Wi-Fi, or all data combined.
 
@@ -244,11 +244,11 @@ This section shows the number of blocked ads, trackers, and the total number of 
 
 You can tap a request to view its details and add a blocking or unblocking rule.
 
-### Data usage
+### Využití dat
 
 This section shows the amount of downloaded, uploaded, and saved traffic for the selected time period and data type. Tap *saved*, *uploaded*, or *downloaded* to view the graph of data usage over time.
 
-### Apps
+### Aplikace
 
 This section displays stats for all apps installed on your device. You can sort apps by the number of blocked ads or trackers or by the number of sent requests.
 
@@ -258,15 +258,15 @@ Tap *View all apps* to expand the list of your apps, sorted by the number of ads
 
 If you tap an app, you can see its full stats: the requests it sends and the domains and companies it reaches out to.
 
-### Companies
+### Společnosti
 
 This section displays companies that your device reaches out to. What does it mean? AdGuard detects the domains your device sends requests to and determines which companies they belong to. A database of companies can be found on [GitHub](https://github.com/AdguardTeam/companiesdb).
 
-### DNS statistics
+### Statistiky DNS
 
 This section shows data about the requests handled by *DNS protection*. You can see the total number of requests sent and how many were blocked by AdGuard in figures and graphs. You'll also find statistics on the amount of traffic saved, downloaded, and uploaded.
 
-### Battery usage
+### Využití baterie
 
 This section displays statistics on the device resources used by AdGuard during the last 24 hours. The data may differ from your device settings. This happens because the system attributes the traffic of filtered apps to AdGuard. Thus, the device shows that AdGuard consumes more resources than it actually does. [Read more about battery and traffic consumption issues](/adguard-for-android/solving-problems/battery/)
 

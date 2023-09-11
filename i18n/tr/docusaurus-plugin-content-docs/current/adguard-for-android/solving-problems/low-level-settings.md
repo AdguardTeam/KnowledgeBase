@@ -41,7 +41,7 @@ Bu seçenek etkinleştirilirse, AdGuard Arama alan adlarını algılar ve bunlar
 
 Bootstrap DNS for DoH, DoT, and DoQ servers. The *Automatic DNS* - the system DNS or AdGuard DNS - is used by default. By selecting *Custom DNS*, you can list IPv4 and IPv6 server addresses to use as bootstrap upstreams.
 
-#### Blocking mode for adblock-style rules
+#### Reklam engelleme stili kuralları için engelleme modu
 
 Here you can specify the response type for domains blocked by DNS rules based on adblock rule syntax (for instance, `||example.org^`).
 
@@ -49,7 +49,7 @@ Here you can specify the response type for domains blocked by DNS rules based on
 - Respond with NXDOMAIN
 - Respond with Custom IP address (IPv4 and IPv6 addresses can be specified here)
 
-#### Blocking mode for hosts rules
+#### hosts kuralları için engelleme modu
 
 Here you can specify the response type for domains blocked by DNS rules based on hosts rule syntax (for instance, `<ip> <domain> 0.0.0.0 example.com`).
 
@@ -103,7 +103,7 @@ Here you can enable HAR file capture. Use it only for debugging purposes! If the
 
 #### Encrypted Client Hello
 
-Every encrypted Internet connection has an unencrypted part. This is the very first packet which contains the name of the server you are connecting to. Encrypted Client Hello technology is supposed to solve this issue and encrypt that last bit of unencrypted information. To benefit from it, enable the *Encrypted Client Hello* option. Alan adı için ECH yapılandırmasını aramak için yerel bir DNS proxy'si kullanır. If it is found, ClientHello packet will be encrypted.
+Every encrypted Internet connection has an unencrypted part. This is the very first packet which contains the name of the server you are connecting to. Encrypted Client Hello teknolojisinin bu sorunu çözmesi ve şifrelenmemiş bilgilerin son kısmını şifrelemesi gerekiyor. To benefit from it, enable the *Encrypted Client Hello* option. Alan adı için ECH yapılandırmasını aramak için yerel bir DNS proxy'si kullanır. If it is found, ClientHello packet will be encrypted.
 
 #### OCSP checking
 
