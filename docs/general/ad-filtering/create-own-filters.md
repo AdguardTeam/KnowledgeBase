@@ -263,7 +263,7 @@ This rule validation is not applied in the following cases:
     $script,third-party,denyallow=example.com
     ```
 
-1. The rule contains one or more modificators from among [`$cookie`](#cookie-modifier), [`$removeparam`](#removeparam-modifier), [`$removeheader`](#removeheader-modifier), [`$stealth`](#stealth-modifier).
+1. The rule contains one or more modifiers from among [`$cookie`](#cookie-modifier), [`$removeparam`](#removeparam-modifier), [`$removeheader`](#removeheader-modifier), [`$stealth`](#stealth-modifier).
 
     These rules will not be ignored:
 
