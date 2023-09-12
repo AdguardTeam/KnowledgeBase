@@ -5,7 +5,7 @@ sidebar_position: 9
 
 :::info
 
-Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -13,11 +13,11 @@ Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, kter
 
 :::caution
 
-Změna *Nízkoúrovňových nastavení* může způsobit problémy s výkonem AdGuardu, může přerušit internetové připojení nebo ohrozit vaši bezpečnost a soukromí. Tuto část byste měli otevřít pouze v případě, že jste si jisti tím, co děláte, nebo pokud se vás na to zeptal náš tým podpory.
+Změna *Pokročilých nastavení* může způsobit problémy s výkonem AdGuardu, přerušit internetové připojení nebo ohrozit vaši bezpečnost a soukromí. Změny v této části provádějte pouze v případě, že jste si jisti, co děláte, nebo vás o to požádal náš tým podpory.
 
 :::
 
-Chcete-li přejít na *Pokročilá nastavení*, postupujte takto: ikona AdGuardu v menu → ikona ozubeného kola → Pokročilé → Pokročilá nastavení.
+Chcete-li najít *Pokročilá nastavení*, otevřete AdGuard, klikněte na ikonu ozubeného kola, vyberte *Pokročilé* a poté vyberte *Pokročilá nastavení*.
 
 ## Pokročilá nastavení
 
@@ -74,6 +74,10 @@ Používá místní DNS proxy k vyhledání konfigurací v seznamech konfigurac�
 `network.https.enforce.certificate.transparency`
 
 Ověřuje pravost všech certifikátů pro doménu na základě zásad transparentnosti certifikátů Chrome.
+
+`network.https.filter.http3.enabled`
+
+Nastavením `true` umožníte AdGuardu filtrovat provoz odeslaný skrze HTTP/3, nejnovější verzi protokolu HTTP založeného na QUIC.
 
 `network.filtering.localnetwork`
 

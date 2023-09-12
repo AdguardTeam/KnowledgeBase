@@ -1,26 +1,26 @@
 ---
-title: How to register
+title: 注册方式
 sidebar_position: 1
 ---
 
-## What an AdGuard account is
+## 什么是 AdGuard 账号
 
-[AdGuard account](https://my.adguard.com/) is a user account that stores information about your AdGuard licenses and subscriptions, active devices, your purchase history, preferred language, and other preferences. Many AdGuard products offer an option to activate them by entering the credentials for your AdGuard account, provided it contains a valid license.
+[AdGuard 账号](https://my.adguard.com/)是一种可存储您的 AdGuard 许可证/订阅，活动的设备，购买历史，首选语言及其它首选项的用户账号。 许多 AdGuard 产品具有通过输入 AdGuard 账号凭证激活软件的选项，但前提是其须包含有效许可证。
 
-## How to create an account
+## 账号创建方式
 
-To create an account, go to [AdGuard's official website](https://adguard.com/welcome.html) and press the *My Account* button on the top right corner of the screen. Enter your email address and create a password — your account will be registered.
+要创建账号，请转到 [AdGuard 官方网站](https://adguard.com/welcome.html)并点击屏幕右上角的「*我的账号*」按钮。 输入您的电子邮件地址和所需密码，这将自动注册您的账号。
 
 :::tip
 
-If you enter your email address while purchasing a license or receive a license accociated with your email address as a gift, an account will be created automatically. To set a password, you can follow a link from a transactional or gift letter. You can also register with the above method.
+如您在购买许可证时输入了电子邮件地址或作为礼物接收了与您电子邮件地址关联的许可证，则账号是自动创建的。 要设置密码，用户可打开交易或礼物邮件内的链接。 您也可按上述方式注册。
 
 :::
 
-An account can also be created directly in an AdGuard app. Press the *Log in* or *Activate* button (it can be found in the *License* section or on a separate screen), enter your email and create a password.
+账号也可在 AdGuard 应用内直接创建。 点击「*登录*」或「*激活*」按钮（可在「*许可证*」部分或单独的界面上找到）并输入您的电子邮件地址和所需密码。
 
-After the account is created, activate it by following the link in the activation email.
+账号创建后，点击激活电子邮件内的链接以激活它。
 
-## How to create an account via a social network
+## 通过社交网络创建账号
 
-To create an account via a social network, simply follow the [link](https://auth.adguard.info/login.html) and log in to your account. Once you’ve signed up, check your inbox — there’ll be a confirmation email. Set a password and that’s it! Now you can use all the [features of the AdGuard account](https://adguard.app/kb/general/account/features/).
+要通过社交网络创建账号，请点击[链接](https://auth.adguard.com/login.html)并登录账号即可。 注册后，请查看收件箱，您将会收到一封确认电子邮件。 设置密码即可！ 现在您可以使用 [AdGuard 账号的所有功能](https://adguard.com/kb/general/account/features/)。

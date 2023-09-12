@@ -23,4 +23,4 @@ Po vytvoření účtu jej aktivujte pomocí odkazu v aktivačním e-mailu.
 
 ## Jak vytvořit účet prostřednictvím sociálních sítí
 
-Chcete-li si vytvořit účet prostřednictvím sociálních sítí, jednoduše jděte na tento [odkaz](https://auth.adguard.info/login.html) a přihlaste se ke svému účtu. Po registraci zkontrolujte svou e-mailovou schránku — přijde vám potvrzovací e-mail. Nastavte heslo a je to! Nyní můžete využívat všechny [funkce účtu AdGuard](https://adguard.app/kb/general/account/features/).
+Chcete-li si vytvořit účet prostřednictvím sociálních sítí, jednoduše jděte na tento [odkaz](https://auth.adguard.com/login.html) a přihlaste se ke svému účtu. Po registraci zkontrolujte svou e-mailovou schránku — přijde vám potvrzovací e-mail. Nastavte heslo a je to! Nyní můžete využívat všechny [funkce účtu AdGuard](https://adguard.com/kb/general/account/features/).

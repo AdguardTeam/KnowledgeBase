@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-Эта статья об AdGuard для Safari, которое защищает только этот браузер. Чтобы защитить всё устройство, [скачайте приложение AdGuard](https://adguard.com/download.html?auto=true)
+Эта статья об AdGuard для Safari, которое защищает только этот браузер. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 

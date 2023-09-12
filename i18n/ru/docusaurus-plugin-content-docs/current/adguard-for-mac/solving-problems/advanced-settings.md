@@ -5,19 +5,19 @@ sidebar_position: 9
 
 :::info
 
-В этой статье рассказывается об AdGuard для Mac — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://adguard.com/download.html?auto=true)
+В этой статье рассказывается об AdGuard для Mac — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## Как перейти к расширенным настройкам
+## Как перейти к Расширенным настройкам
 
 :::caution
 
-Изменение *Низкоуровневых настроек* может вызвать проблемы с производительностью AdGuard, нарушить подключение к интернету или поставить под угрозу вашу безопасность и конфиденциальность. Заходите в этот раздел, только если вы уверены в своих действиях или наша служба поддержки попросила вас об этом.
+Changing *Advanced Settings* may cause problems with AdGuard's performance, break the Internet connection, or compromise your security and privacy. Make changes to this section only if you are sure of what you are doing or our support team has asked you to do it.
 
 :::
 
-Чтобы перейти на страницу *Расширенные настройки*, нажмите на иконку AdGuard в трей-меню → на иконку шестерёнки → Дополнительно → Расширенные настройки.
+To find *Advanced Settings*, open AdGuard, click the gear icon, select *Advanced*, then select *Advanced Settings*.
 
 ## Расширенные настройки
 
@@ -74,6 +74,10 @@ sidebar_position: 9
 `network.https.enforce.certificate.transparency`
 
 Проверяет подлинность всех сертификатов для домена на основе политики прозрачности сертификатов Chrome.
+
+`network.https.filter.http3.enabled`
+
+By setting `true`, you allow AdGuard to filter traffic sent over HTTP/3, the latest version of the HTTP protocol based on QUIC.
 
 `network.filtering.localnetwork`
 

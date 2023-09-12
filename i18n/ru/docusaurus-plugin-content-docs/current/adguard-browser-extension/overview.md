@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-Эта статья о Браузерном расширении AdGuard, которое защищает только ваш браузер. Чтобы защитить всё устройство, [скачайте приложение AdGuard](https://adguard.com/download.html?auto=true)
+Эта статья о Браузерном расширении AdGuard, которое защищает только ваш браузер. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 

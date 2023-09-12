@@ -18,7 +18,7 @@ sidebar_position: 4
 
         ![AdGuard広告ブロッカータブ *mobile](https://cdn.adtidy.org/blog/new/ynkyjltansfer-ja-1.png)
 
-    1. In the license card, click the device you want to unbind
+    1. ライセンスカードで、バインド(紐付け)を解除したいデバイスを押す
 
         ![デバイスを選択 *mobile](https://cdn.adtidy.org/blog/new/2noyttransfer-ja-2.png)
 
@@ -30,9 +30,9 @@ sidebar_position: 4
 
 ## ライセンスを他のAdGuardアカウントに移行する方法{#transferaccount}
 
-1. Go to the AdGuard account that contains the license you would like to transfer
+1. 移行したいライセンスがあるAdGuardアカウントにアクセス
 
-1. Go to the **Licenses** tab
+1. 「**ライセンス**」タブを開く
 
 1. 移行したいライセンスの「**アカウントから紐付け解除する**」を押す
 
@@ -42,14 +42,14 @@ sidebar_position: 4
 
     ![ライセンスキーを覚えてください *mobile](https://cdn.adtidy.org/blog/new/lz7i5transfer-ja-5.png)
 
-1. Go to the AdGuard account that you would like to transfer the license to
+1. ライセンスの移行先AdGuardアカウントにアクセスする
 
-1. Go to the **Licenses** tab
+1. 「**ライセンス**」タブを開く
 
 1. 右上の「**ライセンスを紐付けする**」を押す
 
     ![ライセンスを紐付けする *mobile](https://cdn.adtidy.org/blog/new/pnamstransfer-ja-6a.png)
 
-1. Enter your license key (from step 3).
+1. このアカウントへ移行したいライセンスキーを入力する（ステップ４のもの）
 
 万が一、移行元アカウントにアクセスできない場合は、AdGuardサポートチーム support@adguard.com （日本語対応）までご連絡ください。

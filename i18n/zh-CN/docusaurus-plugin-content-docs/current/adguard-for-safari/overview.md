@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-这篇文章是关于 Safari 版的 AdGuard，它只能保护用户的 Safari 浏览器。 要保护整个设备， [请下载 AdGuard 应用程序](https://adguard.com/download.html?auto=true)
+这篇文章是关于 Safari 版的 AdGuard，它只能保护用户的 Safari 浏览器。 To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 

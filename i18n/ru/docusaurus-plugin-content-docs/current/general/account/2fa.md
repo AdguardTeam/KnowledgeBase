@@ -13,24 +13,24 @@ sidebar_position: 3
 
 1. Log into your [AdGuard account](https://auth.adguard.com/login.html) and go to the Settings tab:
 
-![AdGuard Account settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/account_settings.png)
+![Настройки аккаунта AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/account_settings.png)
 
-1. Scroll down to *Password and 2FA* section and click **Enable**:
+1. Прокрутите вниз до раздела *Пароль и 2FA* и нажмите **Включить**:
 
-![The Change button *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_new.png)
+![Кнопка «Изменить» *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_new.png)
 
-1. Follow the on-screen instructions to install an authenticator app and scan the QR code:
+1. Следуйте инструкциям на экране, чтобы установить приложение для аутентификации и отсканировать QR-код:
 
-![The verification code](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_enable.png)
+![Проверочный код](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_enable.png)
 
-***Important***
+***Важно***
 
 - Сохраните где-нибудь резервный код второго фактора, он понадобится для восстановления вашей учётной записи в случае потери или кражи мобильного телефона;
 
-If everything is done right, you will see this when you log into your account the next time:
+Если всё сделано правильно, то при следующем входе в аккаунт вы увидите это:
 
-![The result *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_success.png)
+![Результат *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_success.png)
 
-Use your mobile authenticator app to read the code and enter it. You should be logged in now!
+Используйте мобильное приложение-аутентификатор, чтобы считать код и ввести его. Теперь у вас должно получиться войти в аккаунт!
 
-***NOTE***: If you get an authentication error, check the clock on your phone. Adjust it if needed, as an unsynchronized clock may be the cause of the error.
+***Примечание***: Если произошла ошибка аутентификации, проверьте часы на своём телефоне. При необходимости отрегулируйте их, поскольку причиной ошибки может быть отсутствие синхронизации часов.

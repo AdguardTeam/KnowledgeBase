@@ -1,55 +1,55 @@
 ---
-title: How to transfer
+title: Como transferir
 sidebar_position: 4
 ---
 
-## How to transfer a license to another device{#transfer}
+## Como transferir uma licença para outro dispositivo{#transfer}
 
-The license key can be activated on a [limited number of devices](../what-is#devices). If the key has already been used on the maximum allowed number of devices, you need to unbind a device from your account.
+A chave de licença pode ser ativada em um número limitado de [dispositivos](../what-is#devices). Se a chave já tiver sido usada no número máximo permitido de dispositivos, você precisará desvincular um dispositivo de sua conta.
 
-### How to unbind a device
+### Como desvincular um dispositivo
 
-There are three ways to do it:
+Existem três maneiras de fazer isso:
 
-- by clicking the *Reset license* button (can be done only in AdGuard desktop apps)
-- by logging out of your account in an AdGuard product
-- by removing the device in your AdGuard account:
-    1. Click **AdGuard Ad Blocker** in your [AdGuard account](https://my.adguard.com/)
+- clicando no botão *Redefinir licença* (pode ser feito apenas em aplicativos de desktop AdGuard)
+- ao deslogar de sua conta em um produto AdGuard
+- removendo o dispositivo da sua conta AdGuard:
+    1. Clique em **bloqueador de anúncios AdGuard** em sua [conta AdGuard](https://my.adguard.com/)
 
-        ![Account Ad Blocker tab *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
+        ![Aba conta do bloqueador de anúncios *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
 
-    1. In the license card, click the device you want to unbind
+    1. No cartão de licença, clique no dispositivo que deseja desvincular
 
-        ![Select device *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-1.png)
+        ![Selecione o dispositivo *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-1.png)
 
-    1. Click **Remove**
+    1. Clique em **Remover**
 
-        ![Click Remove *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2.png)
+        ![Clique em Remover *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2.png)
 
-After you have unbound the number of devices you need, you can log in to your AdGuard account on new devices. The license will be bound to them.
+Depois de habilitar o número de dispositivos necessários, você pode fazer login na sua conta do AdGuard em novos dispositivos. A licença estará vinculada a eles.
 
-## How to transfer a license to another AdGuard account{#transferaccount}
+## Como transferir uma licença para outra conta AdGuard{#transferaccount}
 
-1. Go to the AdGuard account that contains the license you would like to transfer
+1. Acesse a conta do AdGuard que contém a licença que você deseja transferir
 
-1. Go to the **Licenses** tab
+1. Vá para a guia **Licenças**
 
-1. Find the license you want to transfer and click **Unbind from account**
+1. Encontre a licença que deseja transferir e clique em **Desvincular da conta**
 
-    ![Click Unbind from account *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account.png)
+    ![Clique em Desvincular da conta *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account.png)
 
-1. Click **Unbind** (**Important**: be sure to note/remember the license key)
+1. Clique em **Desvincular** (**Importante**: certifique-se de anotar/lembrar a chave de licença)
 
-    ![Remeber license key *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account-1.png)
+    ![Lembrar da chave de licença *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account-1.png)
 
-1. Go to the AdGuard account that you would like to transfer the license to
+1. Acesse a conta do AdGuard para a qual você deseja transferir a licença
 
-1. Go to the **Licenses** tab
+1. Vá para a guia **Licenças**
 
-1. Click **Bind license** in the upper right corner
+1. Clique em **Vincular licença** no canto superior direito
 
-    ![Bind license *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account-2.png)
+    ![Vincular licença *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account-2.png)
 
-1. Enter your license key (from step 3).
+1. Insira sua chave de licença (da etapa 3).
 
-In case you can't access your initial account, please contact our support team at support@adguard.com.
+Caso você não consiga acessar sua conta inicial, entre em contato com nossa equipe de suporte em support@adguard.com.

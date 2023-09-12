@@ -13,13 +13,13 @@ sidebar_position: 5
 
  被取消的订阅将在其到期日之前有效。
 
-Subscriptions purchased on the App Store can be managed in the App Store account or in the device's settings.
+通过应用商店购买的订阅可在应用商店账号或设备设置内管理。
 
 ## 如何退款
 
-In accordance with our [Terms of Sale](https://adguard.com/terms-of-sale.html), you can get a 100% refund on the AdGuard license key you purchased at https://adguard.com. To get a refund, contact our support team at **support@adguard.com** and specify the payment option you've used.
+依据我们的[销售条款](https://adguard.com/terms-of-sale.html)，您在 https://adguard.com 购买的 AdGuard 许可证密钥后可 100% 退款。 要申请退款，请联系我们的支持团队 **support@adguard.com** 并说明您购买时所用的付款方式。
 
-A refund may be declined if:
+在以下情况下，退款可能会受到拒绝：
 
 - 许可证是在60多天前购买的
 - 许可证是通过经销商购买的

@@ -23,7 +23,7 @@ Farklı sayıda cihazla farklı lisanslar kullanılabilir:
 - Aile: dokuz cihaza kadar,
 - iOS için AdGuard Pro: bir cihaz.
 
-Lisansınızı bir cihazda kullanmak için cihazda [AdGuard hesabınızda](../../account/features) giriş yapın. To extend the device limit, you can [upgrade](../activation#how-to-upgrade-a-license) your license.
+Lisansınızı bir cihazda kullanmak için cihazda [AdGuard hesabınızda](../../account/features) giriş yapın. To extend the device limit, you can [upgrade](../payment-options/#upgrade) your license.
 
 ## Lisans anahtarı nedir{#license-key}
 

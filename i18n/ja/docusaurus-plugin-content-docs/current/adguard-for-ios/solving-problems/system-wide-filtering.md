@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for iOS」について書いています。 To see how it works firsthand, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for iOS」について書いています。 To see how it works firsthand, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 

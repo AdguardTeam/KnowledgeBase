@@ -7,7 +7,7 @@ toc_max_heading_level: 4
 
 :::info
 
-Neste artigo, explicamos como escrever regras de filtragem personalizadas para utilização nos produtos AdGuard. Para testar suas regras, você pode [o aplicativo AdGuard](https://adguard.com/download.html?auto=true)
+Neste artigo, explicamos como escrever regras de filtragem personalizadas para utilização nos produtos AdGuard. To test your rules, you can [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -71,7 +71,7 @@ Filtering rules support numerous modifiers that allow you to fine-tune the rule 
 
 **This rule blocks:**
 
-- `http://example.org/script.js` if this script is loaded from `example.org`.
+- `http://example.org/script.js` if this script is loaded from `example.com`.
 
 **This rule does not block:**
 
@@ -201,6 +201,68 @@ AdGuard Safari and AdGuard for iOS do not fully support regular expressions beca
 
 :::
 
+### Restrictions on rules application {#rules-restrictions}
+
+Rules that match an arbitrarily large number of URLs are considered incorrect and will be ignored. This can happen if the rule doesn't contain a mask, or if the mask matches any URL with a certain protocol.
+
+This rule will be ignored:
+
+```text
+|http://$replace=/a/b/
+```
+
+This limitation can be circumvented by using a `/.*/` regular expression inside the mask.
+
+This rule will not be ignored:
+
+```text
+/.*/$replace=/a/b/
+```
+
+**Exceptions**
+
+This rule validation is not applied in the following cases:
+
+1. The rule contains [`$domain`](#domain-modifier) modifier that points to a specific domain list.
+
+    These rules will not be ignored:
+
+    ```text
+    $domain=example.com,script
+    $domain=example.*,script
+    ```
+
+    This rule will be ignored because of domain negation, which causes too wide of a rule application scope:
+
+    ```text
+    $domain=~example.com,script
+    ```
+
+1. The rule contains [`$app`](#app-modifier) modifier that points to a specific app list.
+
+    This rule will not be ignored:
+
+    ```text
+    $app=curl,document
+    ```
+
+    This rule will be ignored because of app negation, which causes too wide of a rule application scope:
+
+    ```text
+    $app=~curl,document
+    ```
+
+1. The rule contains one or more modifiers from among [`$cookie`](#cookie-modifier), [`$removeparam`](#removeparam-modifier), [`$removeheader`](#removeheader-modifier), [`$stealth`](#stealth-modifier).
+
+    These rules will not be ignored:
+
+    ```text
+    $removeparam=cx_recsWidget
+    $cookie=ibbid
+    $removeheader=location
+    $stealth
+    ```
+
 ### Wildcard support for TLD (top-level domains) {#wildcard-for-tld}
 
 Wildcard characters are supported for TLDs of the domains in patterns of [cosmetic](#cosmetic-rules), [HTML filtering](#html-filtering-rules) and [JavaScript](#javascript-rules) rules.
@@ -258,7 +320,7 @@ The following modifiers are the most simple and frequently used. Basically, they
 | [$domain](#domain-modifier)           |            ✅             |                ✅                |               ✅               | ✅ [*](#domain-modifier-limitations) | ✅ [*](#domain-modifier-limitations) |                 ✅                 |
 | [$header](#header-modifier)           |            ✅             |                ⏳                |               ⏳               |                  ❌                  |                  ❌                  |                 ❌                 |
 | [$important](#important-modifier)     |            ✅             |                ✅                |               ✅               |                  ✅                  |                  ✅                  |                 ❌                 |
-| [$match-case](#match-case-modifier)   |            ✅             |                ✅                |               ✅               |                  ❌                  |                  ❌                  |                 ✅                 |
+| [$match-case](#match-case-modifier)   |            ✅             |                ✅                |               ✅               |                  ⏳                  |                  ⏳                  |                 ✅                 |
 | [$method](#method-modifier)           |            ⏳             |                ✅                |               ✅               |                  ❌                  |                  ❌                  |                 ❌                 |
 | [$popup](#popup-modifier)             |           ✅ *            |                ✅                |               ✅               |                 ✅ *                 |                 ✅ *                 |                 ❌                 |
 | [$third-party](#third-party-modifier) |            ✅             |                ✅                |               ✅               |                  ✅                  |                  ✅                  |                 ✅                 |
@@ -505,7 +567,9 @@ This modifier defines a rule which applies only to addresses that match the case
 
 :::info Compatibility
 
-Rules with `$match-case` modifier currently are not supported by [AdGuard for iOS and Safari](https://github.com/AdguardTeam/SafariConverterLib/issues/55).
+Rules with the `$match-case` are supported by AdGuard for iOS and Safari, **running SafariConverterLib v2.0.41 or later**.
+
+All other products already support this modifier.
 
 :::
 
@@ -1070,7 +1134,7 @@ These modifiers are able to completely change the behavior of basic rules.
 | [$permissions](#permissions-modifier)       |            ✅             |                ⏳                |               ⏳               |             ❌              |               ❌               |                 ❌                 |
 | [$redirect](#redirect-modifier)             |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
 | [$redirect-rule](#redirect-rule-modifier)   |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
-| [$referrerpolicy](#referrerpolicy-modifier) |            ⏳             |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
+| [$referrerpolicy](#referrerpolicy-modifier) |            🧩             |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
 | [$removeheader](#removeheader-modifier)     |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
 | [$removeparam](#removeparam-modifier)       |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
 | [$replace](#replace-modifier)               |            ✅             |                ❌                |               ✅               |             ❌              |               ❌               |                 ❌                 |
@@ -1082,9 +1146,7 @@ These modifiers are able to completely change the behavior of basic rules.
 
 - ✅ — fully supported
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
-<!-- following emoji shall be needed for $referrerpolicy after 1.12 is used in some apps -->
-<!-- - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions -->
-- ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product
+- 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions
 - ❌ — not supported
 - 👎 — deprecated; still supported but will be removed in the future
 
@@ -1903,7 +1965,11 @@ Rules with `$removeparam` modifier are intended to strip query parameters from r
 
 - `$removeparam=param` removes query parameter with the name `param` from URLs of any request, e.g. a request to `http://example.com/page?param=1&another=2` will be transformed into `http://example.com/page?another=2`.
 
-`$removeparam` basic syntax is supported starting with v1.7 of [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) and v3.6 of AdGuard Browser Extension.
+:::note Compatibility
+
+`$removeparam` syntax is supported starting with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.7 and AdGuard Browser Extension v3.6.
+
+:::
 
 **Regular expressions**
 
@@ -3776,7 +3842,11 @@ Here is the composition of each content blocker:
 
 User rules and allowlist are added to every content blocker.
 
-The main issue with using multiple content blockers is that the rules within these content blockers cannot influence each other. This may lead to different unexpected issues. So filter maintainers may use `!#safari_cb_affinity` to define Safari content blocker affinity for the rules inside of the directive block.
+:::caution
+
+The main disadvantage of using multiple content blockers is that rules from different blockers are applied independently. Blocking rules are not affected by this, but unblocking rules may cause problems. If a blocking rule is in one content blocker and an exception is in another, the exception will not work. Filter maintainers use `!#safari_cb_affinity` to define Safari content blocker affinity for the rules inside of the directive block.
+
+:::
 
 **Syntax**
 

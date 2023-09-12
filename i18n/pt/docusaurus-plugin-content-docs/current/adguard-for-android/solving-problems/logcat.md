@@ -5,7 +5,7 @@ sidebar_position: 4
 
 :::info
 
-Este artigo aborda o AdGuard para Android, um bloqueador de anúncios multifuncional que protege o seu dispositivo ao nível do sistema. Para ver como funciona, em primeira mão [baixe o aplicativo AdGuard](https://adguard.com/download.html?auto=true)
+Este artigo aborda o AdGuard para Android, um bloqueador de anúncios multifuncional que protege o seu dispositivo ao nível do sistema. To see how it works, firsthand [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 

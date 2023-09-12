@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-Cet article concerne les filtres que nous développons et qui sont préinstallés dans AdGuard. Pour les consulter, vous pouvez [télécharger l'application AdGuard](https://adguard.com/download.html?auto=true)
+Cet article concerne les filtres que nous développons et qui sont préinstallés dans AdGuard. To check them out, you can [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 

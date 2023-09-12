@@ -5,7 +5,7 @@ sidebar_position: 7
 
 :::bilgi
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Windows için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Windows için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -21,7 +21,7 @@ Daha önce düşük düzey ayarlar olarak bilinen Gelişmiş Ayarlar çoğunlukl
 
 *Gelişmiş ayarlar* öğesine gitmek için, ana pencerelerde *Ayarlar → Genel Ayarlar* öğesine tıklayın ve *Gelişmiş Ayarlar* öğesine ilerleyin. Alternatif olarak, tepsi menüsünde *Gelişmiş → Gelişmiş ayarlar...* öğesini seçin.
 
-## Advanced Settings
+## Gelişmiş Ayarlar
 
 Gelişmiş Ayarlar öğesini açtığınızda size aşağıdaki seçenekler sunulacaktır:
 
@@ -60,6 +60,10 @@ AdGuard açılır bildirimlerini görmek için bu özelliği etkinleştirin. Ço
 ### Filtre aboneliği URL bağlantılarını otomatik yakala
 
 AdGuard'ın filtre aboneliği URL'lerini (ör. `abp:subscribe` ve benzeri) otomatik olarak engellemesini ve özel bir filtre yükleme uyarı kutusu açmasını istiyorsanız bu özelliği etkinleştirin.
+
+### HTTP/3'ü filtrele
+
+Bu ayar etkinleştirilirse, AdGuard diğer istek türlerinin yanı sıra HTTP/3 üzerinden gönderilen istekleri de filtreler.
 
 ### Yönlendirme sürücü modunu kullan
 

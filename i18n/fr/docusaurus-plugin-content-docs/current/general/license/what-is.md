@@ -23,7 +23,7 @@ Les licences différentes peuvent être utilisées avec un nombre différent d'a
 - Familiale : jusqu’à neuf appareils,
 - AdGuard Pro pour iOS : un seul appareil.
 
-To use your license on a device, log in to your [AdGuard account](../../account/features) on it. To extend the device limit, you can [upgrade](../activation#how-to-upgrade-a-license) your license.
+To use your license on a device, log in to your [AdGuard account](../../account/features) on it. To extend the device limit, you can [upgrade](../payment-options/#upgrade) your license.
 
 ## Qu'est-ce qu'une clef de licence{#license-key}
 

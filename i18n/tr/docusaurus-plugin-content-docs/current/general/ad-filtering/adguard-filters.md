@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-Bu makale, geliştirdiğimiz ve AdGuard'a önceden yüklenmiş olarak gelen filtrelerle ilgilidir. Bunları kontrol etmek için [AdGuard uygulamasını indirebilirsiniz](https://adguard.com/download.html?auto=true)
+Bu makale, geliştirdiğimiz ve AdGuard'a önceden yüklenmiş olarak gelen filtrelerle ilgilidir. Bunları kontrol etmek için [AdGuard uygulamasını indirebilirsiniz](https://agrd.io/download-kb-adblock)
 
 :::
 

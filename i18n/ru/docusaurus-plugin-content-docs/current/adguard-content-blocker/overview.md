@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-Эта статья посвящена AdGuard Content Blocker, который защищает только браузеры Samsung и Яндекс Браузер. Чтобы защитить всё устройство, [скачайте приложение AdGuard](https://adguard.com/download.html?auto=true)
+Эта статья посвящена AdGuard Content Blocker, который защищает только браузеры Samsung и Яндекс Браузер. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 

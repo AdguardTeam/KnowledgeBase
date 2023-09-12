@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://adguard.com/download.html?auto=true)
+В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -25,7 +25,7 @@ This screen combines all features of AdGuard’s protection:
 - DNS-защита
 - Firewall
 - Антифишинг
-- Integration with AdGuard VPN
+- Интеграция с AdGuard VPN
 
 More on each feature below.
 
@@ -117,7 +117,7 @@ This feature is based on AdGuard's annoyance filters and allows you to block pop
 
 ![DNS protection *mobile_border](https://cdn.adtidy.org/blog/new/u8qtxdns_protection.png)
 
-#### DNS server
+#### DNS-сервер
 
 In this section, you can select a DNS server to resolve DNS requests, block ads and trackers, and encrypt DNS traffic. Tap a server to read its full description and select a protocol. If you didn't find the desired server, you can add it manually:
 
@@ -189,7 +189,7 @@ If you're about to visit a dangerous website, Browsing Security will show you th
 
 Browsing Security is safe: AdGuard does not know what websites you visit. It uses hash prefixes instead of URLs to check website security.
 
-### Integration with AdGuard VPN
+### Интеграция с AdGuard VPN
 
 AdGuard for Android creates a local VPN to filter traffic. Thus, other VPN apps cannot be used while AdGuard for Android is running. However, both AdGuard and AdGuard VPN apps have Integrated modes that let you use them together.
 
@@ -294,7 +294,7 @@ Under *App and filter updates*, you can configure automatic filter updates and s
 
 The *Low-level settings* section is for expert users. [Read more about low-level settings](/adguard-for-android/solving-problems/low-level-settings/)
 
-![Low-level settings *mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
+![Низкоуровневые настройки *mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
 
 ### Фильтрация
 

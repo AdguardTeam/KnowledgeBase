@@ -5,7 +5,7 @@ sidebar_position: 6
 
 :::info
 
-Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -116,6 +116,10 @@ Pokud ověření trvá příliš dlouho, AdGuard naváže spojení a pokračuje 
 #### Přesměrovat požadavky DNS skrze HTTPS
 
 POKUD je povoleno, budou požadavky DNS-over-HTTPS přesměrovány na modul DNS ochrany. Doporučujeme vypnout záložní odchozí připojení a používat pouze šifrované DNS servery, aby bylo zachováno soukromí.
+
+#### Filtrování HTTP/3
+
+Pokud je tato možnost povolena, bude AdGuard filtrovat kromě jiných typů požadavků také požadavky odeslané skrze HTTP/3.
 
 ### Odchozí proxy
 
