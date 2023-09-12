@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::bilgi
 
-Bu makale, yalnızca Samsung Internet Browser'ı veya Yandex Browser'ı koruyan AdGuard İçerik Engelleyici hakkındadır. Tüm cihazınızı korumak için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+Bu makale, yalnızca Samsung Internet Browser'ı veya Yandex Browser'ı koruyan AdGuard İçerik Engelleyici hakkındadır. Tüm cihazınızı korumak için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 

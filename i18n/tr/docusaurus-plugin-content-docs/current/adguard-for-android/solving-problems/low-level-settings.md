@@ -5,7 +5,7 @@ sidebar_position: 6
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Android için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Android için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -116,6 +116,10 @@ If the verification takes too long, AdGuard will establish a connection and cont
 #### Redirect DNS-over-HTTPS requests
 
 IF enabled, DNS-over-HTTPS requests will be redirected to the DNS Protection module. We recommend disabling fallback upstreams and use only encrypted DNS servers to maintain privacy.
+
+#### HTTP/3'ü filtrele
+
+Bu ayar etkinleştirilirse, AdGuard diğer istek türlerinin yanı sıra HTTP/3 üzerinden gönderilen istekleri de filtreler.
 
 ### Outbound Proxy
 

@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-Questo articolo riguarda il Blocco annunci AdGuard, che protegge solo Samsung Internet Browser o il browser Yandex. Per proteggere il tuo dispositivo intero, [scarica l'app AdGuard](https://adguard.com/download.html?auto=true)
+Questo articolo riguarda il Blocco annunci AdGuard, che protegge solo Samsung Internet Browser o il browser Yandex. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 

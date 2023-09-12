@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-Tento článek je o Blokátoru obsahu AdGuard, který chrání pouze váš internetový prohlížeč Samsung nebo prohlížeč Yandex. Chcete-li chránit celé zařízení, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+Tento článek je o Blokátoru obsahu AdGuard, který chrání pouze váš internetový prohlížeč Samsung nebo prohlížeč Yandex. Chcete-li chránit celé zařízení, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 

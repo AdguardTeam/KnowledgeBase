@@ -5,7 +5,7 @@ sidebar_position: 6
 
 :::info
 
-В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://adguard.com/download.html?auto=true)
+В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -116,6 +116,10 @@ sidebar_position: 6
 #### Перенаправлять запросы DNS-over-HTTPS
 
 Если эта опция включена, то запросы DNS-over-HTTPS будут перенаправляться на модуль DNS-защиты. Для сохранения конфиденциальности мы рекомендуем отключить резервные upstream-серверы и использовать только зашифрованные DNS-серверы.
+
+#### Filter HTTP/3
+
+If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
 
 ### Исходящий прокси
 

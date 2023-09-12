@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -123,118 +123,118 @@ V této části můžete vybrat DNS server pro řešení DNS požadavků, blokov
 
 - Klikněte na *Přidat DNS server* a zadejte adresu serveru (nebo adresy)
 
-- Alternatively, you can select a DNS server from the [list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/) and click *Add to AdGuard* next to it
+- Případně můžete vybrat DNS server ze seznamu [známých poskytovatelů DNS](https://adguard-dns.io/kb/general/dns-providers/) a kliknout na *Přidat do AdGuardu* vedle něj
 
-- If you're using a private AdGuard DNS server, you can add it to AdGuard from the [dashboard](https://adguard-dns.io/dashboard/)
+- Pokud používáte soukromý server AdGuard DNS, můžete jej přidat do AdGuardu z [ovládacího panelu](https://adguard-dns.io/dashboard/)
 
- By default, *Automatic DNS* is selected. It sets a DNS server based on your AdGuard and device settings. If you have integration with AdGuard VPN or another SOCKS5 proxy enabled, it connects to *AdGuard DNS Non-filtering* or any other server you specify. In all other cases, it connects to the DNS server selected in your device settings.
+ Ve výchozím nastavení je vybrán *Automatický DNS*. Nastaví DNS server na základě AdGuardu a nastavení zařízení. Pokud máte povolenou integraci s AdGuard VPN nebo jiným proxy serverem SOCKS5, připojí se k *AdGuard DNS bez filtrování* nebo k jinému serveru, který zadáte. Ve všech ostatních případech se připojuje k DNS serveru vybranému v nastavení zařízení.
 
 #### DNS filtry
 
-This section allows you to add custom DNS filters and DNS filtering rules. You can find more filters at [filterlists.com](https://filterlists.com/).
+Tato část umožňuje přidávat vlastní DNS filtry a pravidla DNS filtrování. Další filtry najdete na [filterlists.com](https://filterlists.com/).
 
 ### Firewall
 
-This feature helps manage Internet access for specific apps installed on your device and for the device in general.
+Tato funkce pomáhá spravovat přístup k internetu pro konkrétní aplikace nainstalované v zařízení a pro zařízení obecně.
 
 ![Firewall *mobile_border](https://cdn.adtidy.org/blog/new/gdn94firewall.png)
 
 #### Globální pravidla brány firewall
 
-This section allows you to control Internet access for the entire device.
+Tato část umožňuje řídit přístup k internetu pro celé zařízení.
 
 ![Global firewall rules *mobile_border](https://cdn.adtidy.org/blog/new/4zx2nhglobal_rules.png)
 
-These rules apply to all apps on your device unless you've set custom rules for them.
+Tato pravidla platí pro všechny aplikace v zařízení, pokud jste pro ně nenastavili vlastní pravidla.
 
 #### Vlastní pravidla brány firewall
 
-In this section, you can control Internet access for specific apps — block the ones you don’t find trustworthy, or, on the contrary, unblock the ones you want to use despite global firewall rules.
+V této části můžete řídit přístup k internetu pro konkrétní aplikace — blokovat ty, které nepovažujete za důvěryhodné, nebo naopak odblokovat ty, které chcete používat navzdory globálním pravidlům brány firewall.
 
-1. Open *Custom firewall rules*. Under *Apps with custom rules*, tap *Add app*.
+1. Otevřete *Vlastní pravidla brány firewall*. V části *Aplikace s vlastními pravidly* klepněte na *Přidat aplikaci*.
 
     ![Custom firewall rules *mobile_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
 
-1. Select the app for which you want to set individual rules.
+1. Vyberte aplikaci, pro kterou chcete nastavit jednotlivá pravidla.
 
     ![Adding an app to Custom firewall rules *mobile_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
 
-1. In *Available custom rules*, select the ones you want to configure and tap the "+" icon. The rules will now appear in *Applied custom rules*.
+1. V části *Dostupná vlastní pravidla* vyberte ta, která chcete nakonfigurovat a klepněte na ikonu "+". Pravidla se nyní objeví části *Použitá vlastní pravidla*.
 
     ![Added rule *mobile_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
 
-1. If you need to block a specific type of connection, toggle the switch to the left. If you want to allow it, leave the switch enabled. Custom rules override global ones: any changes you make in *Global firewall rules* will not affect this app.
+1. Pokud potřebujete zablokovat určitý typ připojení, přepněte přepínač doleva. Pokud to chcete povolit, ponechte přepínač zapnutý. Vlastní pravidla jsou nadřazena globálním pravidlům: jakékoli změny provedené v části *Globální pravidla brány firewall* nebudou mít na tuto aplikaci vliv.
 
-To delete a rule or app from *Custom rules*, swipe it to the left.
+Chcete-li odstranit pravidlo nebo aplikaci v části *Vlastní pravidla*, přejeďte prstem doleva.
 
 ### Rychlé akce
 
-*Quick actions* are based on the requests from *Recent activity* (which can be found in *Statistics*). This section shows which apps have recently connected to the Internet.
+*Rychlé akce* jsou založeny na požadavcích z *Nedávné aktivity* (které lze nalézt v části *Statistiky*). Tato část zobrazuje, které aplikace se nedávno připojily k internetu.
 
 ![Quick actions *mobile_border](https://cdn.adtidy.org/blog/new/yigrfquick_actions.png)
 
-If you see an app that shouldn't be using the Internet at all or an app that you haven't used recently, you can block its access on the fly.
+Pokud uvidíte aplikaci, která by vůbec neměla používat internet, nebo aplikaci, kterou jste v poslední době nepoužívali, můžete její přístup zablokovat.
 
 ### Bezpečné prohlížení
 
-Browsing Security protects you from visiting phishing and malicious websites. It also warns you about potential malware.
+Bezpečné prohlížení AdGuard vás chrání před návštěvou těchto nebezpečných stránek. Také vás upozorní na potenciální škodlivý software.
 
 ![Browsing Security *mobile_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
 
-If you're about to visit a dangerous website, Browsing Security will show you the following warning:
+Pokud se chystáte navštívit nebezpečnou webovou stránku, Bezpečné prohlížení zobrazí následující varování:
 
 ![Browsing Security warning *mobile_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
 
-> Please note that AdGuard for Android is not an antivirus program. It neither stops viruses from downloading nor deletes already downloaded ones. To fully protect your device, we recommend using AdGuard in conjunction with an antivirus tool.
+> Upozorňujeme, že AdGuard pro Android není antivirový program. Nezabrání stahování virů ani neodstraní již stažené viry. Chcete-li své zařízení plně ochránit, doporučujeme používat AdGuard ve spojení s antivirovým programem.
 
-Browsing Security is safe: AdGuard does not know what websites you visit. It uses hash prefixes instead of URLs to check website security.
+Bezpečné prohlížení je bezpečné: AdGuard neví, jaké webové stránky navštěvujete. Ke kontrole zabezpečení webových stránek používá místo adres URL předpony hash.
 
 ### Integrace s AdGuard VPN
 
-AdGuard for Android creates a local VPN to filter traffic. Thus, other VPN apps cannot be used while AdGuard for Android is running. However, both AdGuard and AdGuard VPN apps have Integrated modes that let you use them together.
+AdGuard pro Android vytváří lokální VPN pro filtrování provozu. Při spuštěné aplikaci AdGuard pro Android tedy nelze používat jiné aplikace VPN. Aplikace AdGuard i AdGuard VPN však mají režimy integrace, které umožňují jejich společné používání.
 
-In this mode, AdGuard VPN acts as an outbound proxy server through which AdGuard routes its traffic. This allows AdGuard to create a VPN interface and block ads and trackers locally, while AdGuard VPN routes all traffic through a remote server.
+V tomto režimu funguje AdGuard VPN jako odchozí proxy, přes který AdGuard směruje svůj provoz. To umožňuje AdGuardu vytvořit rozhraní VPN a blokovat reklamy a slídiče lokálně, zatímco AdGuard VPN směruje veškerý provoz přes vzdálený server.
 
-If you disable AdGuard VPN, AdGuard will stop using it as an outbound proxy. If you disable AdGuard, AdGuard VPN will route traffic through its own VPN interface.
+Pokud AdGuard VPN ukončíte, přestane ji AdGuard používat jako odchozí proxy server. Pokud AdGuard zakážete, bude AdGuard VPN směrovat provoz přes vlastní rozhraní VPN.
 
-If you have AdGuard Ad Blocker and install AdGuard VPN, the Ad Blocker app will detect it and enable *Integration with AdGuard VPN* automatically. The same happens in reverse. Note that if you've enabled integration, you won't be able to manage app exclusions and connect to DNS servers from the AdGuard VPN app. You can specify apps to be routed through your VPN tunnel via *Settings* → *Filtering* → *Network* → *Proxy* → *Apps operating through proxy*. To select a DNS server, open AdGuard → *DNS protection* → *DNS server*.
+Pokud máte Blokátor reklam AdGuard a nainstalujete AdGuard VPN, blokátor reklam to detekuje a automaticky povolí *Integraci s AdGuard VPN*. Totéž se děje i obráceně. Všimněte si, že pokud jste povolili integraci, nebudete moci spravovat výjimky aplikací a připojovat se k DNS serverům z aplikace AdGuard VPN. Aplikace, které mají být směrovány přes tunel VPN, můžete určit prostřednictvím *Nastavení* → *Filtrování* → *Síť* → *Proxy* → *Aplikace provozované skrze proxy*. Chcete-li vybrat DNS server, otevřete AdGuard → *DNS ochrana* → *DNS server*.
 
 ## Správa aplikací
 
-This section allows you to manage permissions and filtering settings for all apps installed on your device.
+V této části můžete spravovat nastavení oprávnění a filtrování pro všechny aplikace nainstalované v zařízení.
 
 ![App management *mobile_border](https://cdn.adtidy.org/blog/new/9sakapp_management.png)
 
-By clicking an app you can manage its settings:
+Kliknutím na aplikaci můžete spravovat její nastavení:
 
-- Route its traffic through AdGuard
-- Block ads and trackers in this app (*Filter app content*)
-- Filter its HTTPS traffic (for non-browser apps, it requires [installing AdGuard's CA certificate into the system store](/adguard-for-android/solving-problems/https-certificate-for-rooted/), available on rooted devices)
-- Route it through your specified proxy server or AdGuard VPN in the Integration mode
+- Filtrovat její data pomocí AdGuardu
+- Blokovat reklamy a slídiče v této aplikaci (*Filtrovat obsah aplikace*)
+- Filtrovat její HTTPS provoz (pro aplikace, které nejsou v prohlížeči, to vyžaduje [instalaci certifikátu AdGuard CA do systémového úložiště](/adguard-for-android/solving-problems/https-certificate-for-rooted/), který je k dispozici na zařízeních s přístupem root)
+- Směrovat skrze zadaný proxy server nebo AdGuard VPN v režimu integrace
 
 ![App management: Chrome *mobile_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
 
-From the context menu, you can also access the app's stats.
+Z kontextového menu můžete také přistupovat ke statistikám aplikace.
 
 ![App management: Chrome. Context menu *mobile_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
 
-### Problem-free and problematic apps
+### Kompatibilní a nekompatibilní aplikace
 
-By default, only problem-free apps are routed through AdGuard and filtered. These are the apps that still work properly when filtering is enabled.
+Ve výchozím nastavení jsou skrze AdGuard směrovány a filtrovány pouze kompatibilní aplikace. Tyto aplikace fungují správně i po zapnutí filtrování.
 
-Problematic apps, such as Download Manager, radio, system apps with UID 1000 and 1001 (for example, Google Play services) may work incorrectly when routed through AdGuard. That's why you may see the following warning when trying to route or filter all apps:
+Nekompatibilní aplikace, jako je Správce stahování, rádio, systémové aplikace s UID 1000 a 1001 (například služby Google Play), mohou při směrování skrze AdGuard fungovat nesprávně. Proto se při pokusu o směrování nebo filtrování všech aplikací může zobrazit následující upozornění:
 
 ![Route all apps dialog *mobile_border](https://cdn.adtidy.org/blog/new/6du8jiroute_all.png)
 
-To ensure proper operation of all apps installed on your device, we strongly recommend that you route only problem-free apps through AdGuard. You can see the full list of apps not recommended for filtering in *Settings* → *General* → *Advanced* → *Low-level settings* → *Protection* → *Excluded apps*.
+Pro zajištění správného fungování všech aplikací nainstalovaných v zařízení důrazně doporučujeme, abyste skrze AdGuard směrovali pouze kompatibilní aplikace. Úplný seznam aplikací, které se nedoporučují filtrovat, najdete v části *Nastavení* → *Obecné* → *Pokročilé* → *Nízkoúrovňová nastavení* → *Ochrana* → *Aplikace ve výjimkách*.
 
 ## Statistiky
 
-This feature gives you a complete picture of what is happening with the traffic on your device: how many requests are being sent and to which companies, how much data is being uploaded and downloaded, what requests are being blocked, and more.
+Tato funkce vám poskytne kompletní přehled o provozu ve vašem zařízení: kolik požadavků je odesláno a kterým společnostem, kolik dat je odesláno a staženo, jaké požadavky jsou blokovány atd.
 
 ![Statistics *mobile_border](https://cdn.adtidy.org/blog/new/czy5rStatistics.jpeg?mw=1360)
 
-The stats are categorized into different sections.
+Statistiky jsou rozděleny do různých sekcí.
 
 ### Požadavky
 

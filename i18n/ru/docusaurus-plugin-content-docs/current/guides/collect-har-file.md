@@ -11,26 +11,26 @@ sidebar_position: 1
 
 1. Перейдите по URL-адресу, по которому возникает ошибка. Пока не воспроизводите её.
 
-1. Open **Developer Tools**:
+1. Откройте **Инструменты разработчика**:
 
-    - From menu: **Menu → More Tools → Developer Tools**.
-    - Keyboard: **Ctrl+Shift+C**, or **Ctrl+Alt+I**, or **⌥+⌘+I for Mac**.
+    - Из меню: **Меню → Дополнительные инструменты → Инструменты разработчика**.
+    - Клавиатура: **Ctrl+Shift+C**, или **Ctrl+Alt+I**, или **⌥+⌘+I для Mac**.
 
-1. Click on the **Network tab**.
+1. Перейдите во вкладку **Сеть**.
 
 1. Найдите круглую кнопку в левом верхнем углу вкладки и убедитесь, что она находится в режиме записи. Если кнопка серая, кликните на неё — она станет красной, и начнётся запись.
 
-1. Use the **Clear** button (the circle button with a line through it next to the record button) to clear all previous activity.
+1. Нажмите кнопку **Очистить** (значок в виде перечёркнутого круга рядом с кнопкой записи), чтобы удалить все предыдущие действия.
 
-1. Select the **Preserve log** check box on the Network tab.
+1. Установите флажок **Сохранить журнал** во вкладке Сеть.
 
-1. Check the **Disable cache** check box.
+1. Установите флажок **Отключить кеш**.
 
     ![Chrome](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/chrome.png)
 
-1. Reproduce the steps that create the issue.
+1. Воспроизведите действия, создающие проблему.
 
-1. Save session as a .har file by right-clicking the grid and selecting **Save as HAR with content**.
+1. Сохраните сессию как файл .har, щёлкнув правой кнопкой мыши на сетку и выбрав **Сохранить как HAR-файл с данными**.
 
 1. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
 
@@ -38,26 +38,26 @@ sidebar_position: 1
 
 1. Перейдите по URL-адресу, по которому возникает ошибка. Пока не воспроизводите её.
 
-1. Open **Developer Tools**:
+1. Откройте **Инструменты разработчика**:
 
-    - From menu: **Menu → More Tools → Developer Tools**.
-    - Keyboard: **Ctrl+Shift+C**, or **Ctrl+Alt+I**, or **⌥+⌘+I for Mac**.
+    - Из меню: **Меню → Дополнительные инструменты → Инструменты разработчика**.
+    - Клавиатура: **Ctrl+Shift+C**, или **Ctrl+Alt+I**, или **⌥+⌘+I для Mac**.
 
-1. Click on the **Network tab**.
+1. Перейдите во вкладку **Сеть**.
 
 1. Найдите круглую кнопку в левом верхнем углу вкладки и убедитесь, что она находится в режиме записи. Если кнопка серая, кликните на неё — она станет красной, и начнётся запись.
 
-1. Use the **Clear** button (the circle button with a line through it next to the record button) to clear all previous activity.
+1. Нажмите кнопку **Очистить** (значок в виде перечёркнутого круга рядом с кнопкой записи), чтобы удалить все предыдущие действия.
 
-1. Select the **Preserve log** check box on the Network tab.
+1. Установите флажок **Сохранить журнал** во вкладке Сеть.
 
-1. Check the **Disable cache** check box.
+1. Установите флажок **Отключить кеш**.
 
     ![edge](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/edge.png)
 
-1. Reproduce the steps that create the issue.
+1. Воспроизведите действия, создающие проблему.
 
-1. Save session as a .har file by right-clicking the grid and selecting **Save as HAR with content**.
+1. Сохраните сессию как файл .har, щёлкнув правой кнопкой мыши на сетку и выбрав **Сохранить как HAR-файл с данными**.
 
 1. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
 
@@ -80,11 +80,11 @@ To create a HAR file in Firefox:
 
 1. Select the **Persist Logs** check box on the Network tab.
 
-1. Check the **Disable cache** check box.
+1. Установите флажок **Отключить кеш**.
 
     ![firefox](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/firefox.png)
 
-1. Reproduce the steps that create the issue.
+1. Воспроизведите действия, создающие проблему.
 
 1. Save session as a .har file by right-clicking the grid and selecting **Save all as HAR**.
 
@@ -109,9 +109,9 @@ To create a HAR file in Internet Explorer 11:
 
     - **Clear session** button is a three line icon with an x on it.
 
-1. Check the **Disable cache** check box.
+1. Установите флажок **Отключить кеш**.
 
-1. Reproduce the steps that create the issue.
+1. Воспроизведите действия, создающие проблему.
 
 1. Save session as a .har file by clicking on the **Save disk** button (Export as HAR) on Network tab.
 
@@ -139,15 +139,15 @@ To create a HAR file in Safari:
 
 1. Clear current Network items by clicking the **Delete Trash** icon at the far right of Network tabs.
 
-    - Keyboard: **⌘+K**
+    - Клавиатура: **⌘+K**
 
-1. Check the **Disable caches** check box.
+1. Установите флажок **Отключить кеши**.
 
-1. Reproduce the steps that create the issue.
+1. Воспроизведите действия, создающие проблему.
 
 1. Save session as a .har file by clicking the **Export** icon next to the **Delete Trash** icon.
 
-1. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, too.
+1. Направьте документ поддержке AdGuard (support@adguard.com) с подробным объяснением ошибки. Supporting screenshots can be helpful, too.
 
 ## Android {#android}
 
@@ -155,15 +155,15 @@ To create HAR files, follow these steps:
 
 1. Open AdGuard and go to **Settings**.
 
-1. Choose **Advanced** in the menu.
+1. Выберите в меню **Расширенные**.
 
-1. Choose **Low Level Settings**
+1. Выберите **Низкоуровневые настройки**.
 
-1. Activate `pref.har.capture` (you will have to restart the protection).
+1. Активируйте `pref.har.capture` (вам придётся перезапустить защиту).
 
-1. Now reproduce the problem — open the app, perform the necessary actions to make the ad appear.
+1. Теперь воспроизведите проблему — откройте приложение, выполните необходимые действия, чтобы реклама появилась.
 
-1. Now turn `pref.har.capture` off again.
+1. Теперь снова выключите `pref.har.capture`.
 
 1. Go back and tap **Export logs and system info** → **Save**.
 

@@ -5,7 +5,7 @@ sidebar_position: 7
 
 :::info
 
-本文适用于 Windows 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 要了解工作原理， 请[下载 AdGuard 应用程序](https://adguard.com/download.html?auto=true)
+本文适用于 Windows 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -60,6 +60,10 @@ sidebar_position: 7
 ### 自动截取过滤器订阅 URL
 
 如果用户想让 AdGuard 自动拦截过滤器订阅 URL（如 `abp:subscribe` 等）并打开自定义过滤器安装对话框，请启用此功能。
+
+### Filter HTTP/3
+
+If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
 
 ### 使用重定向驱动模式
 

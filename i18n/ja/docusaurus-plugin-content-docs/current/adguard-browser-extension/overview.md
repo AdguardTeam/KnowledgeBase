@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-この記事は、お使いのブラウザのみを保護する「AdGuard ブラウザ拡張機能」に関するものです。 デバイス全体を保護するには、[AdGuardアプリをダウンロード](https://adguard.com/download.html?auto=true)してください。
+この記事は、お使いのブラウザのみを保護する「AdGuard ブラウザ拡張機能」に関するものです。 To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 

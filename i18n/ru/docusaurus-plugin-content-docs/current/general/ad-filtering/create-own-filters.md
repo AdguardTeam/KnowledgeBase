@@ -7,7 +7,7 @@ toc_max_heading_level: 4
 
 :::info
 
-В этой статье мы рассказываем, как писать пользовательские правила фильтрации для использования в продуктах AdGuard. Чтобы проверить правила, [скачайте приложение AdGuard](https://adguard.com/download.html?auto=true)
+В этой статье мы рассказываем, как писать пользовательские правила фильтрации для использования в продуктах AdGuard. To test your rules, you can [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -71,7 +71,7 @@ toc_max_heading_level: 4
 
 **Это правило блокирует:**
 
-- `http://example.org/script.js` если этот скрипт загружен с `example.org`.
+- `http://example.org/script.js` if this script is loaded from `example.com`.
 
 **Это правило не блокирует:**
 
@@ -201,6 +201,68 @@ AdGuard для Safari и AdGuard для iOS не полностью поддер
 
 :::
 
+### Restrictions on rules application {#rules-restrictions}
+
+Rules that match an arbitrarily large number of URLs are considered incorrect and will be ignored. This can happen if the rule doesn't contain a mask, or if the mask matches any URL with a certain protocol.
+
+This rule will be ignored:
+
+```text
+|http://$replace=/a/b/
+```
+
+This limitation can be circumvented by using a `/.*/` regular expression inside the mask.
+
+This rule will not be ignored:
+
+```text
+/.*/$replace=/a/b/
+```
+
+**Исключения**
+
+This rule validation is not applied in the following cases:
+
+1. The rule contains [`$domain`](#domain-modifier) modifier that points to a specific domain list.
+
+    These rules will not be ignored:
+
+    ```text
+    $domain=example.com,script
+    $domain=example.*,script
+    ```
+
+    This rule will be ignored because of domain negation, which causes too wide of a rule application scope:
+
+    ```text
+    $domain=~example.com,script
+    ```
+
+1. The rule contains [`$app`](#app-modifier) modifier that points to a specific app list.
+
+    This rule will not be ignored:
+
+    ```text
+    $app=curl,document
+    ```
+
+    This rule will be ignored because of app negation, which causes too wide of a rule application scope:
+
+    ```text
+    $app=~curl,document
+    ```
+
+1. The rule contains one or more modifiers from among [`$cookie`](#cookie-modifier), [`$removeparam`](#removeparam-modifier), [`$removeheader`](#removeheader-modifier), [`$stealth`](#stealth-modifier).
+
+    These rules will not be ignored:
+
+    ```text
+    $removeparam=cx_recsWidget
+    $cookie=ibbid
+    $removeheader=location
+    $stealth
+    ```
+
 ### Поддержка wildcard для доменов верхнего уровня (TLD) {#wildcard-for-tld}
 
 Wildcard-символы поддерживаются для TLD-доменов в шаблонах [косметических правил](#cosmetic-rules), правил [HTML-фильтрации](#html-filtering-rules) и [JavaScript](#javascript-rules).
@@ -258,7 +320,7 @@ Wildcard-символы поддерживаются для TLD-доменов �
 | [$domain](#domain-modifier)           |            ✅             |                ✅                |               ✅               | ✅ [*](#domain-modifier-limitations) | ✅ [*](#domain-modifier-limitations) |                 ✅                 |
 | [$header](#header-modifier)           |            ✅             |                ⏳                |               ⏳               |                  ❌                  |                  ❌                  |                 ❌                 |
 | [$important](#important-modifier)     |            ✅             |                ✅                |               ✅               |                  ✅                  |                  ✅                  |                 ❌                 |
-| [$match-case](#match-case-modifier)   |            ✅             |                ✅                |               ✅               |                  ❌                  |                  ❌                  |                 ✅                 |
+| [$match-case](#match-case-modifier)   |            ✅             |                ✅                |               ✅               |                  ⏳                  |                  ⏳                  |                 ✅                 |
 | [$method](#method-modifier)           |            ⏳             |                ✅                |               ✅               |                  ❌                  |                  ❌                  |                 ❌                 |
 | [$popup](#popup-modifier)             |           ✅ *            |                ✅                |               ✅               |                 ✅ *                 |                 ✅ *                 |                 ❌                 |
 | [$third-party](#third-party-modifier) |            ✅             |                ✅                |               ✅               |                  ✅                  |                  ✅                  |                 ✅                 |
@@ -505,7 +567,9 @@ h_value = string / regexp
 
 :::info Совместимость
 
-Rules with `$match-case` modifier currently are not supported by [AdGuard for iOS and Safari](https://github.com/AdguardTeam/SafariConverterLib/issues/55).
+Rules with the `$match-case` are supported by AdGuard for iOS and Safari, **running SafariConverterLib v2.0.41 or later**.
+
+All other products already support this modifier.
 
 :::
 
@@ -517,8 +581,8 @@ Rules with `$match-case` modifier currently are not supported by [AdGuard for iO
 
 - `||evil.com^$method=get|head` блокирует только запросы GET и HEAD к `evil.com`.
 - `||evil.com^$method=~post|~put` блокирует любые запросы к `evil.com`, кроме POST или PUT.
-- `@@|||evil.com$method=get` разблокирует только GET-запросы к `evil.com`.
-- `@@|||evil.com$method=~post` разблокирует любые запросы к `evil.com`, кроме POST.
+- `@@||evil.com$method=get` разблокирует только GET-запросы к `evil.com`.
+- `@@||evil.com$method=~post` разблокирует любые запросы к `evil.com`, кроме POST.
 
 :::caution Ограничения
 
@@ -825,7 +889,7 @@ AdGuard для Windows, Mac и Android часто не может точно о�
 
 **Примеры**
 
-- `@@|||example.com^$content` отключает все правила модификации контента на страницах `example.com` и всех его поддоменах.
+- `@@||example.com^$content` отключает все правила модификации контента на страницах `example.com` и всех его поддоменах.
 
 #### **`$elemhide`** {#elemhide-modifier}
 
@@ -875,13 +939,13 @@ $extension="userscript name\, with \"quote\""
 
 **Примеры**
 
-- `@@|||example.com^$extension="AdGuard Assistant"` отключает пользовательский скрипт `AdGuard Assistant` на сайте `example.com`.
-- `@@|||example.com^$extension=MyUserscript` отключает пользовательский скрипт `MyUserscript` на сайте `example.com`.
-- `@@|||example.com^$extension='AdGuard Assistant'|'Popup Blocker'` отключает оба пользовательских скрипта `AdGuard Assistant` и `Popup Blocker` на сайте `example.com`.
-- `@@|||example.com^$extension=~"AdGuard Assistant"` отключает все пользовательские скрипты на сайте `example.com`, кроме `AdGuard Assistant`.
-- `@@|||example.com^$extension=~"AdGuard Assistant"|~"Popup Blocker"` отключает все пользовательские скрипты на сайте `example.com`, кроме `AdGuard Assistant` и `Popup Blocker`.
+- `@@||example.com^$extension="AdGuard Assistant"` отключает пользовательский скрипт `AdGuard Assistant` на сайте `example.com`.
+- `@@||example.com^$extension=MyUserscript` отключает пользовательский скрипт `MyUserscript` на сайте `example.com`.
+- `@@||example.com^$extension='AdGuard Assistant'|'Popup Blocker'` отключает оба пользовательских скрипта `AdGuard Assistant` и `Popup Blocker` на сайте `example.com`.
+- `@@||example.com^$extension=~"AdGuard Assistant"` отключает все пользовательские скрипты на сайте `example.com`, кроме `AdGuard Assistant`.
+- `@@||example.com^$extension=~"AdGuard Assistant"|~"Popup Blocker"` отключает все пользовательские скрипты на сайте `example.com`, кроме `AdGuard Assistant` и `Popup Blocker`.
 - `@@||example.com^$extension` — пользовательские скрипты не будут работать на страницах сайта `example.com`.
-- `@@|||example.com^$extension="AdGuard \"Assistant\""` отключает пользовательский скрипт `AdGuard "Assistant"` на сайте `example.com`.
+- `@@||example.com^$extension="AdGuard \"Assistant\""` отключает пользовательский скрипт `AdGuard "Assistant"` на сайте `example.com`.
 
 :::info Совместимость
 
@@ -1070,7 +1134,7 @@ These modifiers are able to completely change the behavior of basic rules.
 | [$permissions](#permissions-modifier)       |            ✅             |                ⏳                |               ⏳               |             ❌              |               ❌               |                 ❌                 |
 | [$redirect](#redirect-modifier)             |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
 | [$redirect-rule](#redirect-rule-modifier)   |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
-| [$referrerpolicy](#referrerpolicy-modifier) |            ⏳             |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
+| [$referrerpolicy](#referrerpolicy-modifier) |            🧩             |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
 | [$removeheader](#removeheader-modifier)     |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
 | [$removeparam](#removeparam-modifier)       |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
 | [$replace](#replace-modifier)               |            ✅             |                ❌                |               ✅               |             ❌              |               ❌               |                 ❌                 |
@@ -1082,9 +1146,7 @@ These modifiers are able to completely change the behavior of basic rules.
 
 - ✅ — fully supported
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
-<!-- following emoji shall be needed for $referrerpolicy after 1.12 is used in some apps -->
-<!-- - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions -->
-- ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product
+- 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions
 - ❌ — not supported
 - 👎 — deprecated; still supported but will be removed in the future
 
@@ -1761,9 +1823,9 @@ AdGuard использует тот же синтаксис правил фил�
 
 **Примеры**
 
-- `|||example.com^$referrerpolicy=unsafe-url` переопределяет политику referrer для `example.com` с `unsafe-url`.
+- `||example.com^$referrerpolicy=unsafe-url` переопределяет политику referrer для `example.com` с `unsafe-url`.
 - `@@||example.com^$referrerpolicy=unsafe-url` отключает предыдущее правило.
-- `@@|||example.com/abcd.html^$referrerpolicy` отключает все правила `$referrerpolicy` на `example.com/abcd.html`.
+- `@@||example.com/abcd.html^$referrerpolicy` отключает все правила `$referrerpolicy` на `example.com/abcd.html`.
 
 :::caution Ограничения
 
@@ -1903,7 +1965,11 @@ AdGuard использует тот же синтаксис правил фил�
 
 - `$removeparam=param` убирает параметр запроса с именем `param` из URL любого запроса. Например, запрос к `http://example.com/page?param=1&&another=2` будет преобразован в `http://example.com/page?another=2`.
 
-Базовый синтаксис `$removeparam` поддерживается начиная с версии 1.7 [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) и версии 3.6 Браузерного расширения AdGuard.
+:::note Совместимость
+
+`$removeparam` syntax is supported starting with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.7 and AdGuard Browser Extension v3.6.
+
+:::
 
 **Регулярные выражения**
 
@@ -2326,7 +2392,7 @@ All allowed content types:
 
 **Пример 7**
 
-`@@|||example.org^$document` без дополнительных модификаторов — это псевдоним для `@@|||example.com^$elemhide,content,jsinject,urlblock,extension`
+`@@||example.org^$document` без дополнительных модификаторов — это псевдоним для `@@|||example.com^$elemhide,content,jsinject,urlblock,extension`
 
 Вес правила: базовый вес + специфические исключения, [категория 4](#priority-category-4) + два разрешённых типа контента (document и subdocument), [категория 2](#priority-category-2): `1 + 10000 * 4 + (50 + 50 / 2) = 40076`.
 
@@ -3360,7 +3426,7 @@ The `min-length` special attribute must not appear in a selector to the left of 
 :contains(/reg(ular )?ex(pression)?/)
 ```
 
-:::note Compatibility
+:::note Совместимость
 
 `:-abp-contains()` and `:has-text()` are synonyms for `:contains()`.
 
@@ -3776,7 +3842,11 @@ Here is the composition of each content blocker:
 
 User rules and allowlist are added to every content blocker.
 
-The main issue with using multiple content blockers is that the rules within these content blockers cannot influence each other. This may lead to different unexpected issues. So filter maintainers may use `!#safari_cb_affinity` to define Safari content blocker affinity for the rules inside of the directive block.
+:::caution
+
+The main disadvantage of using multiple content blockers is that rules from different blockers are applied independently. Blocking rules are not affected by this, but unblocking rules may cause problems. If a blocking rule is in one content blocker and an exception is in another, the exception will not work. Filter maintainers use `!#safari_cb_affinity` to define Safari content blocker affinity for the rules inside of the directive block.
+
+:::
 
 **Синтаксис**
 

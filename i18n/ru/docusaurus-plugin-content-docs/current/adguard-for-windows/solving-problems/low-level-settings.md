@@ -5,7 +5,7 @@ sidebar_position: 7
 
 :::info
 
-В этой статье рассказывается об AdGuard для Windows — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://adguard.com/download.html?auto=true)
+В этой статье рассказывается об AdGuard для Windows — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -60,6 +60,10 @@ sidebar_position: 7
 ### Автоматически перехватывать URL-адрес фильтра
 
 Включите эту функцию, если вы хотите, чтобы AdGuard автоматически перехватывал URL фильтра (например, `abp:subscribe` и т.п.) и открывал диалог установки пользовательского фильтра.
+
+### Filter HTTP/3
+
+If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
 
 ### Использовать драйвер в режиме перенаправления
 

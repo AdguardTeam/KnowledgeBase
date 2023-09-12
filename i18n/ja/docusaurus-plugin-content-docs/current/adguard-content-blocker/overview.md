@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-この記事は、SamsungインターネットブラウザおよびYandexブラウザのみを保護する「AdGuard コンテンツブロッカー」に関するものです。 デバイス全体を保護するには、[AdGuardアプリをダウンロード](https://adguard.com/download.html?auto=true)してください。
+この記事は、SamsungインターネットブラウザおよびYandexブラウザのみを保護する「AdGuard コンテンツブロッカー」に関するものです。 To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 

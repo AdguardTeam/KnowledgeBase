@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-この記事では、AdGuard製品にプリインストールされているAdGuard開発のフィルタについて説明しています。 フィルタを実際に使ってみるには、[AdGuardアプリをダウンロード](https://adguard.com/download.html?auto=true)してください。
+この記事では、AdGuard製品にプリインストールされているAdGuard開発のフィルタについて説明しています。 To check them out, you can [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 

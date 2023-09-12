@@ -5,7 +5,7 @@ sidebar_position: 7
 
 :::info
 
-본 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Windows용 AdGuard에 대해 다룹니다. 어떻게 작동하는지 확인하려면, [AdGuard 앱을 다운로드](https://adguard.com/download.html?auto=true)하세요.
+본 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Windows용 AdGuard에 대해 다룹니다. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -60,6 +60,10 @@ Chrome 인증서 투명성 정책에 따라 도메인의 모든 인증서를 확
 ### 필터 구독 URL 자동 차단
 
 AdGuard가 필터 구독 URL(예: `abp:subscribe` 등)을 자동으로 가로채고 사용자 정의 필터 설치 대화 상자를 열도록 하려면 이 기능을 활성화합니다.
+
+### Filter HTTP/3
+
+If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
 
 ### 리디렉션 드라이버 모드 사용
 

@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-Este artigo é sobre a extensão de navegador AdGuard, que protege apenas o seu navegador. Para proteger todo o seu dispositivo, [baixe o aplicativo AdGuard](https://adguard.com/download.html?auto=true)
+Este artigo é sobre a extensão de navegador AdGuard, que protege apenas o seu navegador. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 

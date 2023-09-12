@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://adguard.com/download.html?auto=true)
+В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -31,7 +31,7 @@ sidebar_position: 1
 
 1. Main part of Power Profile is a set of values in mAh which define battery consumption for every component of the device: <https://source.android.com/devices/tech/power/values.html>
 
-    For example, from the table above:
+    Например, из таблицы выше:
 
     *wifi.active=* 31mA additional consumption in mAh caused by WiFi data exchange.
 
@@ -51,10 +51,10 @@ sidebar_position: 1
 
     A coefficient *cpu.active* for 2GHz will be roughly equal to 225mAh
 
-    Final result:
+    Финальный результат:
 
     > 506000 *225 / (60* 60 * 1000) = 31,625mAh
 
 ### Итог
 
-Real consumption is **several times less** than it is shown in Android statistics. Instead of 220mAh it should be somewhere around 31-40mAh. On the other hand, browser's consumption should be not 66mAh, but ~200mAh.
+Реальное потребление в **разы ниже** показанного в статистике Android. Instead of 220mAh it should be somewhere around 31-40mAh. С другой стороны, потребление браузера должно быть не 66 мАч, а около 200 мАч.

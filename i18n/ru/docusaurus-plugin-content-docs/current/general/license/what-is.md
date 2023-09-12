@@ -23,7 +23,7 @@ sidebar_position: 1
 - Семейная: до 9 устройств,
 - AdGuard Pro для iOS: одно устройство.
 
-Чтобы использовать лицензию на устройстве, войдите на нём в свой [аккаунт AdGuard](../../account/features). Чтобы увеличить лимит устройств, вы можете [улучшить](../activation#how-to-upgrade-a-license) лицензию.
+Чтобы использовать лицензию на устройстве, войдите на нём в свой [аккаунт AdGuard](../../account/features). To extend the device limit, you can [upgrade](../payment-options/#upgrade) your license.
 
 ## Что такое лицензионный ключ{#license-key}
 

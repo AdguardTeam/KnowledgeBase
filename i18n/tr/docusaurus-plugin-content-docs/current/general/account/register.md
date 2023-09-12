@@ -23,4 +23,4 @@ After the account is created, activate it by following the link in the activatio
 
 ## How to create an account via a social network
 
-To create an account via a social network, simply follow the [link](https://auth.adguard.info/login.html) and log in to your account. Once you’ve signed up, check your inbox — there’ll be a confirmation email. Set a password and that’s it! Now you can use all the [features of the AdGuard account](https://adguard.app/kb/general/account/features/).
+Sosyal ağ üzerinden hesap oluşturmak için [bağlantıyı](https://auth.adguard.com/login.html) takip etmeniz ve hesabınıza giriş yapmanız yeterlidir. Once you’ve signed up, check your inbox — there’ll be a confirmation email. Set a password and that’s it! Artık [AdGuard hesabının tüm özelliklerini](https://adguard.com/kb/general/account/features/) kullanabilirsiniz.
