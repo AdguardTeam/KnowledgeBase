@@ -16,6 +16,7 @@ This article covers AdGuard for iOS, a multifunctional ad blocker that protects 
 1. Open the YouTube app.
 1. Choose a video and tap *Share*.
 1. Tap *More*, then select *Block YouTube Ads (by AdGuard)*.
+
 AdGuard will open its ad-free video player.
 
 ## How to block ads on YouTube in Safari
@@ -29,4 +30,5 @@ Make sure you've given AdGuard access to all websites. You can check it in Safar
 1. Open youtube.com in Safari.
 1. Choose a video and tap *Share*.
 1. Tap *Block YouTube Ads (by AdGuard)*.
+
 AdGuard will open its ad-free video player.
