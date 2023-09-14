@@ -46,14 +46,20 @@ This is the list of libraries and other resources that really helped us with AdG
 
 ## AdGuard Browser Extension {#extension}
 
-- moment: [https://github.com/moment/moment](https://github.com/moment/moment)
-- simply-deferred: [https://github.com/sudhirj/simply-deferred](https://github.com/moment/moment)
 - SHA256: [https://github.com/AndersLindman/SHA256](https://github.com/AndersLindman/SHA256)
 - D3: [https://github.com/d3/d3](https://github.com/d3/d3)
 - c3: [https://github.com/c3js/c3](https://github.com/c3js/c3)
 - nanobar: [https://github.com/jacoborus/nanobar](https://github.com/jacoborus/nanobar)
 - crypto-js: [https://github.com/brix/crypto-js](https://github.com/brix/crypto-js)
 - ace: [https://github.com/ajaxorg/ace](https://github.com/ajaxorg/ace)
+- lodash: [https://github.com/lodash/lodash](https://github.com/lodash/lodash)
+- mobx: [https://github.com/mobxjs/mobx](https://github.com/mobxjs/mobx)
+- xstate: [https://github.com/statelyai/xstate](https://github.com/statelyai/xstate)
+- punycode: [https://github.com/mathiasbynens/punycode.js](https://github.com/mathiasbynens/punycode.js)
+- js-lru: [https://github.com/rsms/js-lru](https://github.com/rsms/js-lru)
+- tldts: [https://github.com/remusao/tldts](https://github.com/remusao/tldts)
+- zod: [https://github.com/colinhacks/zod](https://github.com/colinhacks/zod)
+- swc: [https://github.com/swc-project/swc](https://github.com/swc-project/swc)
 
 ## AdGuard for Safari {#safari}
 
