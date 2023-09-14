@@ -25,7 +25,7 @@ AdGuard не антивирус. Он может предупредить вас
 
 Возьмём AdwareCleaner в качестве примера. После загрузки и успешной установки приложения выполните следующие действия:
 
-1. Start the application and click **Scan now**.
+1. Запустите приложение и нажмите **Сканировать сейчас**.
 
 ![adware1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware1.png)
 

@@ -15,18 +15,18 @@ sidebar_position: 7
 
 ![Инструкция *mobile](https://cdn.adtidy.org/public/Adguard/Blog/Android/3-6/share.gif)
 
-1. Open the YouTube app and start the video you want to watch.
+1. Откройте приложение YouTube и включите видео, которое хотите посмотреть.
 
-1. Tap the *Share* button.
+1. Нажмите кнопку *Поделиться*.
 
     ![Share to YouTube step 1 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step1.png)
 
-1. Select *AdGuard* from the list of apps.
+1. Выберите *AdGuard* из списка приложений.
 
     ![Share to YouTube step 2 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step2.png)
 
-That's it! A new window with the video will open where you'll be able to watch it without being interrupted by ads.
+That's it! Откроется новое окно с видео, где вы сможете смотреть YouTube, не прерываясь на рекламу.
 
 ## Смотрите YouTube в браузере
 
-Alternatively, you can also watch YouTube in a browser and there will be no ads if you have AdGuard installed and enabled.
+Также вы можете смотреть YouTube в браузере: там не будет рекламы, если у вас установлен и включён AdGuard.

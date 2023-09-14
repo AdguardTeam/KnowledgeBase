@@ -9,7 +9,9 @@ sidebar_position: 1
 
 В этой статье мы не касаемся DNS-фильтрации. Это альтернативный способ блокировки рекламы со своими преимуществами и недостатками. Переходите по этой ссылке, чтобы [узнать больше о DNS-фильтрации](https://adguard-dns.io/kb/general/dns-filtering#how-does-dns-filtering-work).
 
-:::
+:::  
+
+<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/Xq_CUdh0T_w" title="Видеоплеер YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Общие принципы
 

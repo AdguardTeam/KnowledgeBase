@@ -137,6 +137,8 @@ Uzantının ana menüsünün sağ üst köşesindeki simgelere tıklayarak uzant
 
 ## AdGuard Tarayıcı Uzantısı ile bağımsız uygulamalar {#comparison}
 
+<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/ZGwceZP-0mM" title="YouTube video oynatıcı" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 AdGuard bağımsız programlarının tarayıcı uzantılarına göre en büyük avantajı, programların her tarayıcıda ve neredeyse tüm uygulamalarda reklamları engelleyebilmesidir. Aynı anda farklı tarayıcılar kullanabilirsiniz, uygulama hepsinde reklamları ve çevrimiçi tehditleri eşit derecede iyi filtreler.
 
 İkinci fark, uzantı tabanlı reklam engelleyicilerin olanaklarının tarayıcı yönergeleri tarafından sıkı bir şekilde sınırlandırılmış olmasıdır. Tarayıcı uzantıları, reklam engellemenin kısıtlanabileceği tarayıcıların politikalarına uygun olmalıdır. Bu nedenle, bazı filtreleme kuralları uzantılar tarafından desteklenmez. Masaüstü uygulamalarının işlevselliği sınırlı değildir, bu nedenle daha iyi bir filtreleme kalitesine sahiptirler.

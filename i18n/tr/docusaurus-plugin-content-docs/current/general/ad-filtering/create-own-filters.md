@@ -203,9 +203,9 @@ AdGuard Safari and AdGuard for iOS do not fully support regular expressions beca
 
 ### Restrictions on rules application {#rules-restrictions}
 
-Rules that match an arbitrarily large number of URLs are considered incorrect and will be ignored. This can happen if the rule doesn't contain a mask, or if the mask matches any URL with a certain protocol.
+İsteğe bağlı olarak çok sayıda URL ile eşleşen kurallar hatalı kabul edilir ve dikkate alınmaz. Kural bir maske içermiyorsa veya maske belirli bir protokole sahip herhangi bir URL ile eşleşiyorsa bu durum meydana gelebilir.
 
-This rule will be ignored:
+Bu kural göz ardı edilecektir:
 
 ```text
 |http://$replace=/a/b/
@@ -213,7 +213,7 @@ This rule will be ignored:
 
 This limitation can be circumvented by using a `/.*/` regular expression inside the mask.
 
-This rule will not be ignored:
+Bu kural göz ardı edilmeyecektir:
 
 ```text
 /.*/$replace=/a/b/
@@ -221,11 +221,11 @@ This rule will not be ignored:
 
 **Exceptions**
 
-This rule validation is not applied in the following cases:
+Bu kural doğrulaması aşağıdaki durumlarda uygulanmaz:
 
 1. The rule contains [`$domain`](#domain-modifier) modifier that points to a specific domain list.
 
-    These rules will not be ignored:
+    Bu kurallar göz ardı edilmeyecektir:
 
     ```text
     $domain=example.com,script
@@ -240,7 +240,7 @@ This rule validation is not applied in the following cases:
 
 1. The rule contains [`$app`](#app-modifier) modifier that points to a specific app list.
 
-    This rule will not be ignored:
+    Bu kural göz ardı edilmeyecektir:
 
     ```text
     $app=curl,document
@@ -254,7 +254,7 @@ This rule validation is not applied in the following cases:
 
 1. The rule contains one or more modifiers from among [`$cookie`](#cookie-modifier), [`$removeparam`](#removeparam-modifier), [`$removeheader`](#removeheader-modifier), [`$stealth`](#stealth-modifier).
 
-    These rules will not be ignored:
+    Bu kurallar göz ardı edilmeyecektir:
 
     ```text
     $removeparam=cx_recsWidget
@@ -608,8 +608,8 @@ AdGuard will try to close the browser tab with any address that matches a blocki
 
 - `$popup` modifier works best in AdGuard Browser Extension.
 - In AdGuard for Safari and iOS, `$popup` rules simply block the page right away.
-- In AdGuard for Windows, Mac, and Android, `$popup` modifier may not detect a popup in some cases and it won't be blocked. `$popup` modifier applies the `document` content type with a special flag which is passed to a blocking page. Blocking page itself can do some checks and close the window if it is really a popup. Otherwise, page should be loaded. It can be combined with other request type modifiers, such as `$third-party` and `$important`.
-- Rules with `$popup` modifier are not supported by AdGuard Content Blocker.
+- Windows, Mac ve Android için AdGuard'da, `$popup` değiştiricisi bazı durumlarda açılır pencereyi algılamayabilir ve engellenmeyecektir. `$popup` modifier applies the `document` content type with a special flag which is passed to a blocking page. Sayfanın kendisinin engellenmesi bazı kontroller yapabilir ve eğer gerçekten bir açılır pencere ise pencereyi kapatabilir. Aksi takdirde, sayfa yüklenmelidir. `$third-party` ve `$important` gibi diğer istek türü değiştiricileriyle birleştirilebilir.
+- `$popup` değiştiricisine sahip kurallar AdGuard İçerik Engelleyici tarafından desteklenmez.
 
 :::
 
@@ -3489,7 +3489,7 @@ rule = [domains]  "#%#" script
 
 - `example.org#%#window.__gaq = undefined;` executes the code `window.__gaq = undefined;` on all pages at `example.org` and all subdomains.
 
-**Exceptions**
+**İstisnalar**
 
 Similar to hiding rules, there is a special type of rules that disable the selected javascript rule for particular domains. The syntax is the same, you just have to change `#%#` to `#@%#`.
 

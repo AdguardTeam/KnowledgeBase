@@ -23,4 +23,4 @@ sidebar_position: 1
 
 ## Как создать личный кабинет через социальную сеть
 
-Чтобы создать личный кабинет через социальную сеть, достаточно перейти по ссылке [](https://auth.adguard.com/login.html) и войти в свой аккаунт. Once you’ve signed up, check your inbox — there’ll be a confirmation email. Set a password and that’s it! Теперь вы можете использовать все возможности [личного кабинета AdGuard](https://adguard.com/kb/general/account/features/).
+Чтобы создать личный кабинет через социальную сеть, достаточно перейти по ссылке [](https://auth.adguard.com/login.html) и войти в свой аккаунт. После регистрации проверьте почту— там будет письмо с подтверждением. Установите пароль, и готово! Теперь вы можете использовать все возможности [личного кабинета AdGuard](https://adguard.com/kb/general/account/features/).

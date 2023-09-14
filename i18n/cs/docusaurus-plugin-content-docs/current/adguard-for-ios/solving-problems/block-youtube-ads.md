@@ -1,5 +1,5 @@
 ---
-title: Jak blokovat reklamy YouTube v Safari
+title: How to block YouTube ads
 sidebar_position: 4
 ---
 
@@ -7,24 +7,28 @@ sidebar_position: 4
 
 Tento článek popisuje AdGuard pro iOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
-:::
+:::  
+
+<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/YW9Ojcm1Gkg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Jak blokovat reklamy v YouTube
+
+1. Open the YouTube app.
+1. Choose a video and tap *Share*.
+1. Tap *More*, then select *Block YouTube Ads (by AdGuard)*.
+
+AdGuard will open its ad-free video player.
 
 ## Jak blokovat reklamy YouTube v Safari
 
-Blokování reklam v aplikaci YouTube je bohužel technicky nemožné, ale pokud sledujete YouTube v Safari, existuje způsob. Vyvinuli jsme akční rozšíření (k dispozici od verze AdGuard v4.2 pro iOS) určené speciálně k blokování reklam. Po aktualizaci aplikace na verzi 4.2 se toto rozšíření nainstaluje automaticky a nemusíte se řídit žádnými složitými pokyny. Kromě reklam, rozšíření odstraňuje zástupný symbol, který zůstává po zablokování na iPadech. Videa YouTube se navíc znovu přehrávají automaticky a nemusíte na ně klepat.
-
-![How to block YouTube ads in Safari *mobile](https://cdn.adtidy.org/public/Adguard/Blog/ios_safari_extension.png)
-
-Chcete-li aktivovat rozšíření a blokovat reklamy YouTube, postupujte takto:
-
-1. Otevřete stránku youtube.com v Safari.
-2. Klepněte na tlačítko Sdílet.
-3. Klepněte na "Blokovat reklamy v YouTube (pomocí AdGuardu)".
-
-YouTube je nyní bez reklam! Upozorňujeme, že pokud znovu stránku obnovíte, musíte toto rozšíření spustit znovu.
-
 :::tip
 
-V některých případech se rozšíření AdGuardu nemusí zobrazit. Pokud se nezobrazí, zkuste znovu postupovat podle pokynů nebo restartujte zařízení.
+Make sure you've given AdGuard access to all websites. You can check it in Safari → Extensions → AdGuard. Then open AdGuard and enable *Advanced protection*.
 
 :::
+
+1. Otevřete stránku youtube.com v Safari.
+1. Choose a video and tap *Share*.
+1. Tap *Block YouTube Ads (by AdGuard)*.
+
+AdGuard will open its ad-free video player.

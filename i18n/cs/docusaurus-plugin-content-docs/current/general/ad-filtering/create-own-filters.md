@@ -608,7 +608,7 @@ AdGuard se pokusí zavřít kartu prohlížeče s jakoukoli adresou, která odpo
 
 - Modifikátor `$popup` funguje nejlépe v Rozšíření prohlížeče AdGuard.
 - V AdGuardu pro Safari a iOS, pravidla `$popup` stránku jednoduše a okamžitě zablokují.
-- V AdGuardu pro Windows, Mac a Android nemusí modifikátor `$popup` v některých případech detekovat vyskakovací okno a nebude zablokováno. Modifikátor `$popup` použije typ obsahu `document` se speciálním příznakem, který je předán blokovací stránce. Samotná blokovací stránka může provést některé kontroly a zavřít okno, pokud se skutečně jedná o vyskakovací okno. V opačném případě by se stránka měla načíst. Lze to kombinovat s dalšími modifikátory typu požadavku, jako je `$third-party` a `$important`.
+- In AdGuard for Windows, Mac, and Android, `$popup` modifier may not detect a popup in some cases and it will not be blocked. `$popup` modifier applies the `document` content type with a special flag which is passed to a blocking page. Blocking page itself can do some checks and close the window if it is really a popup. Otherwise, page should be loaded. It can be combined with other request type modifiers, such as `$third-party` and `$important`.
 - Rules with `$popup` modifier are not supported by AdGuard Content Blocker.
 
 :::

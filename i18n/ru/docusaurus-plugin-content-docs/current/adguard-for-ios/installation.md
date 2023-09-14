@@ -25,7 +25,7 @@ iOS 11.2 и выше.
 
 ## Установка AdGuard для iOS
 
-Приложение AdGuard для iOS доступно в App Store. To install it on your device, open the App Store and tap the *Search* icon on the bottom of the screen.
+Приложение AdGuard для iOS доступно в App Store. Чтобы установить его на своё устройство, откройте App Store и нажмите на значок *Поиск* в нижней части экрана.
 
 ![На главном экране App Store нажмите «Поиск» *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/1.png)
 
@@ -39,7 +39,7 @@ Type *adguard* in the search bar and tap the string *adGuard* which will be amon
 
 ## Установка AdGuard Pro для iOS
 
-Приложение AdGuard Pro — это платная версия блокировщика рекламы AdGuard для iOS с расширенным набором функций (аналогично приложению AdGuard с премиум-аккаунтом). To install it on your device run the App Store application and tap the *Search* icon on the bottom of the screen.
+Приложение AdGuard Pro — это платная версия блокировщика рекламы AdGuard для iOS с расширенным набором функций (аналогично приложению AdGuard с премиум-аккаунтом). Чтобы установить его на своё устройство, откройте приложение App Store и нажмите на значок *Поиск* в нижней части экрана.
 
 ![На главном экране App Store нажмите «Поиск» *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/1.png)
 

@@ -137,6 +137,8 @@ Kliknutím na ikony v pravém horním rohu hlavní nabídky rozšíření může
 
 ## Rozšíření prohlížeče AdGuard vs. Plnohodnotná aplikace {#comparison}
 
+<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/ZGwceZP-0mM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Hlavní výhodou plnohodnotných programů AdGuard oproti rozšířením prohlížeče je, že tyto programy mohou blokovat reklamy v každém prohlížeči a téměř ve všech aplikacích. Můžete používat různé prohlížeče současně, aplikace bude stejně dobře filtrovat reklamy a online hrozby ve všech z nich.
 
 Druhý rozdíl spočívá v tom, že možnosti blokátorů reklam založených na rozšířeních jsou přísně omezeny pokyny prohlížeče. Rozšíření prohlížeče musí být v souladu se zásadami prohlížečů, kde může být blokování reklam omezeno. Některé typy pravidel filtrování tedy rozšíření nepodporují. Funkce desktopových aplikací nejsou omezené, takže mají lepší kvalitu filtrování.

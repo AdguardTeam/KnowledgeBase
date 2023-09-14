@@ -5,7 +5,7 @@ sidebar_position: 2
 
 ## Как купить лицензию{#purchase}
 
-Лицензию AdGuard можно купить на сайте [adguard.com](https://adguard.com/license.html). We offer various payment options, including Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay, and UnionPay. We also accept the following cryptocurrencies: Bitcoin, Ethereum, Litecoin, and Tether.
+Лицензию AdGuard можно купить на сайте [adguard.com](https://adguard.com/license.html). Мы предлагаем различные способы оплаты, включая Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay и UnionPay. Мы также принимаем следующие криптовалюты: Bitcoin, Ethereum, Litecoin и Tether.
 
 AdGuard Pro для iOS можно купить в App Store.
 

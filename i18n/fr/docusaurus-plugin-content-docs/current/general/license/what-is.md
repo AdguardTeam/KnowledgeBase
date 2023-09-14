@@ -1,9 +1,9 @@
 ---
-title: What is an AdGuard license
+title: Qu'est-ce qu'une licence AdGuard
 sidebar_position: 1
 ---
 
-## What is an AdGuard license
+## Qu'est-ce qu'une licence AdGuard
 
 Une licence est l'autorisation d'utiliser le logiciel AdGuard, fournie conformément au contrat de licence utilisateur final. Les licences AdGuard existent sous forme de clefs de licence, de codes d'activation et de cartes de produit dans le [ compte d'utilisateur AdGuard](../../account/register).
 
@@ -27,7 +27,7 @@ To use your license on a device, log in to your [AdGuard account](../../account/
 
 ## Qu'est-ce qu'une clef de licence{#license-key}
 
-A license key is a unique sequence of characters that represents an AdGuard Ad Blocker license. It is automatically registered for the email you used for license purchase. With a license key, you can:
+Une clef de licence est une séquence unique de caractères qui représente une licence du Bloqueur AdGuard. It is automatically registered for the email you used for license purchase. With a license key, you can:
 
 - vous connecter à votre compte AdGuard dans certains produits (par exemple, AdGuard pour Windows),
 - [activer votre licence](../activation) dans un produit, si vous n'avez pas de compte AdGuard,

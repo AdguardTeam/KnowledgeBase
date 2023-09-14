@@ -15,13 +15,13 @@ To analyze and diagnose different problems that may potentially arise, the AdGua
 
     ![Debug logging level *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
 
-1. Reproduce the issue.
+1. Воспроизведите ошибку.
 
     We strongly advise to take note of the exact time when you reproduced the issue: it will help our support team to find relevant log entries and solve the problem faster.
 
-1. Export the recorded logs using the *Export Logs* button.
+1. Экспортируйте полученные логи при помощи кнопки *Экспортировать логи*.
 
-    ![Export logs *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
+    ![Экспортировать логи *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
     Save the archive to any folder.
 
@@ -45,12 +45,12 @@ Sometimes support team members may ask you to send *trace* logs. Then you will n
 
 1. Run the app with the command `C:\"Program Files (x86)"\Adguard\Adguard.exe /trace` if you are using 64-bit Windows, and `C:\"Program Files"\Adguard\Adguard.exe /trace` in case if you use 32-bit one.
 
-1. Reproduce the issue.
+1. Воспроизведите ошибку.
 
     We strongly advise to take note of the exact time when you reproduced the issue: it will help our support team to find relevant log entries and solve the problem faster.
 
-1. Export the recorded logs using the *Export Logs* button.
+1. Экспортируйте полученные логи при помощи кнопки *Экспортировать логи*.
 
-    ![Export logs *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
+    ![Экспортировать логи *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
     Don't worry if the log file is large. We need to know as much detail as possible to fix your problem.

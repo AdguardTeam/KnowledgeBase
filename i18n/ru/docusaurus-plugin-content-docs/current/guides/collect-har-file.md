@@ -63,16 +63,16 @@ sidebar_position: 1
 
 ## Firefox {#firefox}
 
-To create a HAR file in Firefox:
+Чтобы создать файл HAR в Firefox:
 
 1. Перейдите по URL-адресу, по которому возникает ошибка. Пока не воспроизводите её.
 
-1. Open Developer Tools in **Network** mode:
+1. Запустите Инструменты разработчика в режиме **Сеть**:
 
-    - From menu: **Menu → Web Developer → Network**.
-    - Keyboard: **Ctrl+Shift+C**, or **⌥+⌘+E (Mac)**.
+    - Из меню: **Меню → Веб-разработчик → Сеть**.
+    - Клавиатура: **Ctrl+Shift+C**, или **⌥+⌘+E (Mac)**.
 
-1. Note the **Play/Pause** button at the top left of the Network tab.
+1. Нажмите на кнопку **Приостановить/возобновить запись сетевого журнала** в верхнем левом углу вкладки Сеть.
 
     - Кнопка должна находиться в режиме воспроизведения.
 
@@ -96,7 +96,7 @@ To create a HAR file in Internet Explorer 11:
 
 1. Перейдите по URL-адресу, по которому возникает ошибка. Пока не воспроизводите её.
 
-1. Open Developer Tools in **Network** mode:
+1. Запустите Инструменты разработчика в режиме **Сеть**:
 
     - From Tools cog wheel menu: **Developer Tools** → **Network tab**.
     - Keyboard: **F12 → Network** tab.
@@ -115,23 +115,23 @@ To create a HAR file in Internet Explorer 11:
 
 1. Save session as a .har file by clicking on the **Save disk** button (Export as HAR) on Network tab.
 
-1. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+1. Направьте документ поддержке AdGuard (support@adguard.com) с подробным объяснением ошибки. Supporting screenshots can be helpful, as well.
 
 ## Safari {#safari}
 
-To create a HAR file in Safari:
+Чтобы создать файл HAR в Safari:
 
-1. Check the Safari menu bar at the top of the screen for a **Develop** menu.
+1. Найдите в строке меню Safari раздел **Разработка**.
 
-    - If not visible, turn it on by going to **Safari → Settings → Advanced**.
-    - Check the checkbox at the bottom next to **Show Develop menu in menu bar**.
+    - Если его не видно, включите его: **Safari → Настройки → Дополнения**.
+    - Проверьте флажок внизу рядом с **Показывать меню «Разработка» в строке меню**.
 
 1. Перейдите по URL-адресу, по которому возникает ошибка. Пока не воспроизводите её.
 
-1. Open **Network** tab in Web Inspector:
+1. Откройте вкладку **Сеть** в веб-инспекторе:
 
-    - From menu: **Develop → Show Web Inspector → Network**.
-    - Keyboard: **⌥+⌘+I→Network**
+    - Из меню: **Разработка → Показывать веб-инспектор → Сеть**.
+    - Клавиатура: **⌥+⌘+I → Сеть**
 
 1. Check **Preserve Log** checkbox on left side of the Network tabs, within the **Other filter options...** menu.
 
@@ -153,7 +153,7 @@ To create a HAR file in Safari:
 
 To create HAR files, follow these steps:
 
-1. Open AdGuard and go to **Settings**.
+1. Откройте AdGuard и перейдите в **Настройки**.
 
 1. Выберите в меню **Расширенные**.
 
@@ -165,15 +165,15 @@ To create HAR files, follow these steps:
 
 1. Теперь снова выключите `pref.har.capture`.
 
-1. Go back and tap **Export logs and system info** → **Save**.
+1. Вернитесь назад и нажмите **Экспортировать логи и информацию о системе** → **Сохранить**.
 
 ## Windows {#windows}
 
 1. Open **Settings*** → **General settings** → **Advanced settings** and scroll down.
 
-1. Check the **Enable HAR writing** box.
+1. Установите флажок **Включить запись HAR**.
 
-1. Reproduce the problem.
+1. Воспроизведите проблему.
 
 1. Go to **General settings** → Click **Export logs** → **Save**.
 

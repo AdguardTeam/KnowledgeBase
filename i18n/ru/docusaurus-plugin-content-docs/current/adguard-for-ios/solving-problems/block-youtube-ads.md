@@ -1,5 +1,5 @@
 ---
-title: Как заблокировать рекламу на YouTube в Safari
+title: How to block YouTube ads
 sidebar_position: 4
 ---
 
@@ -7,24 +7,28 @@ sidebar_position: 4
 
 В этой статье рассказывается об AdGuard для iOS — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
-:::
+:::  
+
+<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/YW9Ojcm1Gkg" title="Видеоплеер YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Как заблокировать рекламу в приложении YouTube
+
+1. Open the YouTube app.
+1. Choose a video and tap *Share*.
+1. Tap *More*, then select *Block YouTube Ads (by AdGuard)*.
+
+AdGuard will open its ad-free video player.
 
 ## Как заблокировать рекламу на YouTube в Safari
 
-К сожалению, блокировка рекламы в приложении YouTube технически невозможна, но если вы смотрите YouTube в Safari, возможность её обойти всё-таки есть. Мы разработали расширение (доступно с версии AdGuard v4.2 для iOS), предназначенное специально для блокировки рекламы на YouTube. После того, как вы обновите свое приложение до версии 4.2, это расширение будет установлено автоматически — вам не нужно следовать каким-либо сложным инструкциям. Помимо рекламы, расширение удаляет заполнители, которые остаются после блокировки рекламы на iPad. Кроме того, видео на YouTube снова воспроизводятся автоматически, дополнительные нажатия не нужны.
-
-![Как блокировать рекламу на YouTube в Safari *mobile](https://cdn.adtidy.org/public/Adguard/Blog/ios_safari_extension.png)
-
-Чтобы активировать расширение и заблокировать рекламу на YouTube, сделайте следующее:
-
-1. Откройте youtube.com в Safari.
-2. Нажмите кнопку «Поделиться».
-3. А затем «Блокировать рекламу на YouTube (от AdGuard)».
-
-Теперь YouTube без рекламы! Обратите внимание, что вам нужно будет заново включить расширение, если вы перезагрузите страницу.
-
 :::tip
 
-В некоторых случаях расширение AdGuard может не отображаться. Если вы его не видите, попробуйте повторить шаги из инструкции или перезагрузите устройство.
+Make sure you've given AdGuard access to all websites. You can check it in Safari → Extensions → AdGuard. Then open AdGuard and enable *Advanced protection*.
 
 :::
+
+1. Откройте youtube.com в Safari.
+1. Choose a video and tap *Share*.
+1. Tap *Block YouTube Ads (by AdGuard)*.
+
+AdGuard will open its ad-free video player.

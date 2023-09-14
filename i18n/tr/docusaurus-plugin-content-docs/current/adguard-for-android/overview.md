@@ -416,6 +416,8 @@ GitHub is an alternative way to report bugs and suggest new features. [Instructi
 
 ### Free vs full version
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xNOeHpZgjFo" title="YouTube video oynatıcı" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 AdGuard for Android has a free and a paid version. Paid features extend AdGuard's capabilities:
 
 - *Ad blocking in apps* allows you to block ads in non-browser apps. You can specify apps for filtering in [*App management*](#app-management)
