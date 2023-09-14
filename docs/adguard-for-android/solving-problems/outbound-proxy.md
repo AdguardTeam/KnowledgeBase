@@ -13,7 +13,7 @@ Below you can find a list of the most famous applications that you can configure
 
 :::note
 
-If your app is not listed below, please check on its proxy configurations in the settings or contact their support team.
+If your app is not listed below, please check on its proxy configurations in the settings or contact its support team.
 
 :::
 
