@@ -50,7 +50,7 @@ Requires root access.
 
 AdGuard cannot filter its traffic when operating in *Manual proxy mode* because this browser ignores system proxy settings.
 
-- Use the Local VPN filtering mode to solve this problem
+- Use the *Local VPN filtering mode* to solve this problem
 
 ### Opera mini: Opera mini, Opera mini with Yandex
 
