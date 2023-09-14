@@ -51,9 +51,9 @@ sidebar_position: 4
 
 Следуйте этой инструкции:
 
-**Part #1: prepare the device**
+**Часть 1: подготовьте устройство**
 
-1. Переключите устройство в режим разработчика. To do this: go to **Settings** → **About** → tap **Build Number** 7 times.
+1. Переключите устройство в режим разработчика. Для этого: перейдите в **Настройки** → **Об устройстве** → нажмите на **Номер сборки** 7 раз.
 
 1. Перейдите в **Параметры разработчика**.
 
@@ -63,7 +63,7 @@ sidebar_position: 4
 
 4 MB should be enough for storing the logs we need until you're able to do the second part (getting the log from the device);
 
-**Part #2: reproduce the problem**
+**Часть 2: воспроизведите проблему**
 
 Важно воспроизвести сбой после того, как вы закончите с первой частью.
 
@@ -71,7 +71,7 @@ sidebar_position: 4
 
 1. Запомните/запишите дату и время воспроизведения и укажите их в письме в поддержку.
 
-**Part #3: get the log**
+**Часть 3: получите лог**
 
 1. Подключите устройство к компьютеру с помощью USB-кабеля.
 
@@ -89,17 +89,17 @@ sidebar_position: 4
 
     `adb logcat -v threadtime -d > C:\Program Files\platform-tools\logs.txt`
 
-    Email the created `txt` file as well as the time the problem was reproduced (from part #2) to our support team at support@adguard.com.
+    Отправьте созданный файл `txt` и время воспроизведения проблемы (из части 2) нашей команде поддержки по адресу support@adguard.com.
 
-### Alternative way for ROOT users
+### Альтернативный способ для пользователей с ROOT
 
-1. Download and run [Logcat](https://play.google.com/store/apps/details?id=com.pluscubed.matlog).
+1. Скачайте и запустите приложение [Logcat](https://play.google.com/store/apps/details?id=com.pluscubed.matlog).
 
-1. Choose **Record** in the menu. Choose a name for a log file or just press **OK**. Now you can press **Home** button, CatLog will continue recording the log in background.
+1. Выберите в меню **Запись**. Выберите имя для файла лога или просто нажмите **OK**. Теперь вы можете нажать на кнопку **Домой**, CatLog продолжит записывать лог в фоновом режиме.
 
-1. Reproduce the issue.
+1. Воспроизведите ошибку.
 
-1. Open CatLog and press **Stop record** in the menu.
+1. Откройте CatLog и нажмите **Прекратить запись** в меню.
 
 1. Отправьте этот лог нашей команде поддержки.
 

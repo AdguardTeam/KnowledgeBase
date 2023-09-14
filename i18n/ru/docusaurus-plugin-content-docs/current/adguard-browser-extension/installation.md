@@ -5,17 +5,17 @@ sidebar_position: 2
 
 :::info
 
-Эта статья о Браузерном расширении AdGuard, которое защищает только ваш браузер. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Эта статья о Браузерном расширении AdGuard, которое защищает только ваш браузер. Чтобы защитить всё устройство, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 ## Как установить расширение AdGuard для браузеров Google Chrome или Chromium
 
-Open the extension's page in [Chrome Web Store](https://agrd.io/extension_chrome) and click *Add to Chrome*.
+Откройте страницу расширения в [интернет-магазине Chrome](https://agrd.io/extension_chrome) и нажмите *Добавить в Chrome*.
 
 ![Браузерное расширение AdGuard в интернет-магазине Chrome *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_chrome.png)
 
-In the opened dialog box, click *Add extension*.
+В открывшемся диалоговом окне нажмите *Добавить расширение*.
 
 ![Диалоговое окно в интернет-магазине Chrome *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_chrome1.png)
 
@@ -25,7 +25,7 @@ In the opened dialog box, click *Add extension*.
 
 ![Браузерное расширение AdGuard в дополнениях Opera *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_opera.png)
 
-Click *Add to Opera*.
+Нажмите *Добавить в Opera*.
 
 ## Как установить Браузерное расширение AdGuard VPN для Firefox
 
@@ -33,7 +33,7 @@ Click *Add to Opera*.
 
 ![Браузерное расширение AdGuard в дополнениях Firefox *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_firefox.png)
 
-Click *Add to Firefox*.
+Нажмите *Добавить в Firefox*.
 
 ## Как установить Браузерное расширение AdGuard VPN для Яндекс Браузера
 

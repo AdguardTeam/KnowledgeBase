@@ -41,11 +41,11 @@ sidebar_position: 1
 
 1. AdGuard by itself almost doesn't consume any traffic, so for the sake of evaluating battery resource consumption let's get rid of 'Mobile/WiFi packets' and stcik to 'CPU'.
 
-    Formula to calculate the consumption:
+    Формула для вычисления потребления:
 
     > "CPU TIME (ms)" X "cpu.active" / (60 *60* 1000) = "POWER USE mAh"
 
-    Let's put real numbers into this formula.
+    Подставим в эту формулу реальные значения.
 
     Let's take *CPU total* from the second screenshot and convert into milliseconds: 506000
 

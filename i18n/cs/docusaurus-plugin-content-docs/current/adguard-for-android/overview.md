@@ -238,25 +238,25 @@ Statistiky jsou rozděleny do různých sekcí.
 
 ### Požadavky
 
-This section shows the number of blocked ads, trackers, and the total number of requests for the selected time period: 24 hours, 7 days, 30 days, or all time. You can also filter requests by data type: mobile data, Wi-Fi, or all data combined.
+Tato sekce zobrazuje počet zablokovaných reklam, slídičů a celkový počet požadavků za vybrané časové období: 24 hodin, 7 dní, 30 dní nebo po celou dobu. Požadavky můžete filtrovat také podle typu dat: mobilní data, Wi-Fi nebo všechna data dohromady.
 
-*Recent activity*, formerly known as *Filtering log*, shows the last 10,000 requests processed by AdGuard. Tap *Customize* to filter requests by status (*regular*, *blocked*, *modified*, or *allowlisted*) or origin (*first-party* or *third-party*).
+*Nedávná aktivita*, dříve známá jako *Záznam filtrování* zobrazuje posledních 10000 požadavků zpracovaných AdGuardem. Klepnutím na *Přizpůsobit* filtrujte požadavky podle stavu (*obvyklé*, *blokované*, *modifikované* nebo *na seznamu povolených*) nebo původní (*vlastní* nebo *třetích stran*).
 
-You can tap a request to view its details and add a blocking or unblocking rule.
+Klepnutím na požadavek můžete zobrazit jeho podrobnosti a přidat pravidlo blokování nebo odblokování.
 
 ### Využití dat
 
-This section shows the amount of downloaded, uploaded, and saved traffic for the selected time period and data type. Tap *saved*, *uploaded*, or *downloaded* to view the graph of data usage over time.
+Tato sekce zobrazuje množství staženého, nahraného a ušetřeného datového provozu za vybrané časové období a typ dat. Klepnutím na *uložené*, *nahrané* nebo *stažené* zobrazíte graf využití dat v průběhu času.
 
 ### Aplikace
 
-This section displays stats for all apps installed on your device. You can sort apps by the number of blocked ads or trackers or by the number of sent requests.
+Tato sekce zobrazuje statistiky všech aplikací nainstalovaných ve vašem zařízení. Aplikace můžete třídit podle počtu blokovaných reklam, slídičů nebo podle počtu odeslaných požadavků.
 
-Tap *View all apps* to expand the list of your apps, sorted by the number of ads, trackers, or requests.
+Klepnutím na *Zobrazit všechny aplikace* rozbalíte seznam svých aplikací seřazený podle počtu reklam, slídičů nebo požadavků.
 
 ![List of apps *mobile_border](https://cdn.adtidy.org/blog/new/toq0mkScreenshot_20230627-235219_AdGuard.jpg)
 
-If you tap an app, you can see its full stats: the requests it sends and the domains and companies it reaches out to.
+Pokud klepnete na aplikaci, zobrazí se její úplné statistiky: požadavky, které odesílá, domény a společnosti, na které obrací.
 
 ### Společnosti
 
@@ -415,6 +415,8 @@ GitHub is an alternative way to report bugs and suggest new features. [Instructi
 :::
 
 ### Free vs full version
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xNOeHpZgjFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 AdGuard for Android has a free and a paid version. Paid features extend AdGuard's capabilities:
 

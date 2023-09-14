@@ -107,9 +107,9 @@ AdGuard [расширяет возможности CSS](#extended-css-selectors)
 
 **Популярные CSS-селекторы**
 
-| Name                         | CSS selector                     | Description                                                                                                                                                                                                           |
+| Name                         | CSS-селектор                     | Описание                                                                                                                                                                                                              |
 | ---------------------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ID selector                  | `#banners`                       | Matches all elements with `id` attribute equal to `banners`.<br/>![ID selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_id_selector.png)                                                   |
+| ID selector                  | `#banners`                       | Соответствует всем элементам с атрибутом `id`, равным `banners`.<br/>![ID selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_id_selector.png)                                               |
 | Class selector               | `.banners`                       | Matches all elements with `class` attribute containing `banners`.<br/>![Class selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_selector.png)                                        |
 | Attribute selector           | `div[class="banners"]`           | Matches all `div` elements with `class` attribute **exactly equal** to `banners`.<br/>![Attribute selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_attr.png)                        |
 | Attribute substring selector | `div[class^="advert1"]`          | Matches all `div` elements which `class` attribute **starts with** the `advert1` string.<br/>![Attribute substring selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_attr_start.png) |
@@ -166,8 +166,8 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 
 ### Специальные символы {#basic-rules-special-characters}
 
-- **`*`** — wildcard-символ. It is used to represent any set of characters. Это может быть как пустая строка, так и строка любой длины.
-- **`||`** — an indication to apply the rule to the specified domain and its subdomains. With this character, you do not have to specify a particular protocol and subdomain in address mask. It means that `||` stands for `http://*.`, `https://*.`, `ws://*.`, `wss://*.` at once.
+- **`*`** — wildcard-символ. Используется, чтобы обозначить любой набор символов. Это может быть как пустая строка, так и строка любой длины.
+- **`||`** — an indication to apply the rule to the specified domain and its subdomains. Этот специальный символ позволяет не указывать конкретный протокол и поддомен в маске адреса. То есть, `||` соответствует сразу `http://*.`, `https://*.`, `ws://*.`, `wss://*.`.
 - **`^`** — указатель для разделительного символа. Разделителем может быть любой символ кроме буквы, цифры и следующих символов: `_` `-` `.` `%`. Например, в адресе `http:`**`//`**`example.com`**`/?`**`t=1`**`&`**`t2=t3` жирным выделены разделительные символы. Конец адреса также принимается в качестве разделителя.
 - **`|`** — указатель на начало или конец адреса. Значение зависит от расположения символов в маске. Например, правило `swf|` соответствует `http://example.com/annoyingflash.swf`, но не `http://example.com/swf/index.html`. `|http://example.org` соответствует `http://example.org`, но не `http://domain.com?url=http://example.org`.
 
@@ -332,7 +332,7 @@ Wildcard-символы поддерживаются для TLD-доменов �
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
 <!-- - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions -->
 - ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product
-- ❌ — not supported
+- ❌ — не поддерживается
 
 :::
 
@@ -705,7 +705,7 @@ You may use a shorter name (alias) instead of using the full modifier name: `$3p
 
 - ✅ — fully supported
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
-- ❌ — not supported
+- ❌ — не поддерживается
 - 🚫 — removed and no longer supported
 
 :::
@@ -761,7 +761,7 @@ You may use a shorter name (alias) instead of using the full modifier name: `$do
 
 AdGuard для Windows, Mac и Android часто не может точно определить `navigator.sendBeacon()`. Не рекомендуется использовать `$ping` в фильтрах, которые должны использоваться продуктами AdGuard на базе CoreLibs.
 
-Rules with `$ping` modifier are not supported by AdGuard for Safari and iOS.
+Правила с модификатором `$ping` не поддерживаются в AdGuard для Safari и iOS.
 
 :::
 
@@ -836,7 +836,7 @@ AdGuard для Windows, Mac и Android часто не может точно о�
 
 :::
 
-#### **`$webrtc` (removed)** {#webrtc-modifier}
+#### **`$webrtc` (удалён)** {#webrtc-modifier}
 
 :::danger Уведомление об удалении
 
@@ -879,7 +879,7 @@ AdGuard для Windows, Mac и Android часто не может точно о�
 
 - ✅ — fully supported
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
-- ❌ — not supported
+- ❌ — не поддерживается
 
 :::
 
@@ -927,7 +927,7 @@ $extension=~"userscript name"
 
 :::note
 
-When excluding a userscript, you must place `~` outside the quotes.
+Исключая пользовательский скрипт из фильтрации, обязательно выносите символ `~` за кавычки.
 
 :::
 
@@ -1116,7 +1116,7 @@ Rules with `$specifichide` modifier are not supported by AdGuard for iOS and Saf
 
 ### Расширенные возможности {#advanced-modifiers}
 
-These modifiers are able to completely change the behavior of basic rules.
+Модификаторы, описанные в этом разделе, полностью меняют поведение базовых правил.
 
 <!-- Please keep them sorted -->
 
@@ -1147,7 +1147,7 @@ These modifiers are able to completely change the behavior of basic rules.
 - ✅ — fully supported
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
 - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions
-- ❌ — not supported
+- ❌ — не поддерживается
 - 👎 — deprecated; still supported but will be removed in the future
 
 :::
@@ -2424,7 +2424,7 @@ However, basic rules may not be enough to block ads. Иногда для это�
 :::note
 
 - ✅ — fully supported
-- ❌ — not supported
+- ❌ — не поддерживается
 
 :::
 
@@ -3617,7 +3617,7 @@ modifiers = modifier0[, modifier1[, ...[, modifierN]]]
 
 - ✅ — fully supported
 - ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product
-- ❌ — not supported
+- ❌ — не поддерживается
 
 :::
 
@@ -4031,33 +4031,33 @@ Open the browser console while on a web page to see the timing statistics for se
 
 **Примеры**
 
-**Debugging a single selector:**
+**Отладка конкретного селектора:**
 
-When the value of the `debug` property is `true`, only information about this selector will be shown in the browser console.
+Когда значение свойства `debug` равно `true`, информация только по этому селектору будет отображена в консоли браузера.
 
 ```adblock
 #$?#.banner { display: none; debug: true; }
 ```
 
-**Enabling global debug:**
+**Включение глобальной отладки:**
 
-When the value of the `debug` property is `global`, the console will display information about all extended CSS selectors that have matches on the current page, for all the rules from any of the enabled filters.
+Когда значение свойства `debug` равно `global`, в консоли будет отображаться информация по всем CSS-селекторам, которые были применены на данной странице, для всех правил из любого из включённых фильтров.
 
 ```adblock
 #$?#.banner { display: none; debug: global; }
 ```
 
-**Testing extended selectors without AdGuard**
+**Тестирование расширенных селекторов без AdGuard**
 
-ExtendedCss can be executed on any page without using any AdGuard product. In order to do that you should copy and execute the following code in a browser console:
+ExtendedCss может быть выполнен на любой странице без использования какого-либо продукта AdGuard. In order to do that you should copy and execute the following code in a browser console:
 
 ```js
 !function(e,t,d){C=e.createElement(t),C.src=d,C.onload=function(){alert("ExtendedCss loaded successfully")},s=e.getElementsByTagName(t)[0],s?s.parentNode.insertBefore(C,s):(h=e.getElementsByTagName("head")[0],h.appendChild(C))}(document,"script","https://AdguardTeam.github.io/ExtendedCss/extended-css.min.js");
 ```
 
-Alternatively, install the [ExtendedCssDebugger userscript](https://github.com/AdguardTeam/Userscripts/blob/master/extendedCssDebugger/extended-css.debugger.user.js).
+В качестве альтернативы установите [пользовательский скрипт ExtendedCssDebugger](https://github.com/AdguardTeam/Userscripts/blob/master/extendedCssDebugger/extended-css.debugger.user.js).
 
-Now you can now use the `ExtendedCss` from global scope, and run its method [`query()`](https://github.com/AdguardTeam/ExtendedCss#extended-css-query) as `Document.querySelectorAll()`.
+Теперь вы можете использовать `ExtendedCss` глобально и запустить его метод [`query()`](https://github.com/AdguardTeam/ExtendedCss#extended-css-query) как `Document.querySelectorAll()`.
 
 **Примеры**
 
@@ -4070,9 +4070,9 @@ ExtendedCss.query(selector);
 
 ### Отладка скриптлетов {#debug-scriptlets}
 
-If you are using AdGuard Browser Extension and want to debug a [scriptlet](#scriptlets) or a [trusted scriptlet](#trusted-scriptlets) rule, you can get additional information by opening the Filtering log. In that case, scriptlets will switch to debug mode and there will be more information in the browser console.
+Если вы используете браузерное расширение AdGuard и хотите отладить правило [скриптлета](#scriptlets) или [доверенного скриптлета](#trusted-scriptlets), то можете получить дополнительную информацию, открыв журнал фильтрации. В этом случае скриптлеты перейдут в режим отладки и будут записывать больше информации в браузерную консоль.
 
-The following scriptlets are especially developed for debug purposes:
+Следующие скриптлеты разработаны специально для отладки:
 
 - [`debug-current-inline-script`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#debug-current-inline-script)
 - [`debug-on-property-read`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#debug-on-property-read)
@@ -4082,7 +4082,7 @@ The following scriptlets are especially developed for debug purposes:
 - [`log-eval`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#log-eval)
 - [`log`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#log)
 
-The following scriptlets also may be used for debug purposes:
+Следующие скриптлеты тоже могут быть использованы для отладки:
 
 - [`json-prune`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#json-prune)
 - [`prevent-fetch`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-scriptlets.md#prevent-fetch)
@@ -4096,9 +4096,9 @@ The following scriptlets also may be used for debug purposes:
 
 ## Good luck with creating filters
 
-We wish you luck with creating you own ad filters.
+Желаем вам удачи в создании собственных рекламных фильтров.
 
-If you need an advice on how to create your own filters properly, our forum has a [special section](https://forum.adguard.com/index.php?forums/69/) dedicated to writing your own filtering rules.
+Если вы хотите узнать, как правильно создавать собственные фильтры, ознакомьтесь с разделом на нашем форуме [](https://forum.adguard.com/index.php?forums/69/), посвящённом написанию правил фильтрации.
 
 * * *
 
@@ -4121,7 +4121,7 @@ If you need an advice on how to create your own filters properly, our forum has 
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
 - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions
 - ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product
-- ❌ — not supported
+- ❌ — не поддерживается
 - 👎 — deprecated; still supported but will be removed in the future
 - 🚫 — removed and no longer supported
 

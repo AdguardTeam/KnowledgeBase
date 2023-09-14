@@ -48,7 +48,7 @@ After you have unbound the number of devices you need, you can log in to your Ad
 
 1. Click **Bind license** in the upper right corner
 
-    ![Bind license *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account-2.png)
+    ![Liez la licence *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account-2.png)
 
 1. Enter your license key (from step 3).
 

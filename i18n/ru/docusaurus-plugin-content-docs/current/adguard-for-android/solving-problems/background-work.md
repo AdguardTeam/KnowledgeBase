@@ -5,7 +5,7 @@ sidebar_position: 9
 
 :::info
 
-В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -377,11 +377,11 @@ On these devices there is a task killer called **DuraSpeed** that terminates all
 
 1. [Install ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer;
 
-1. Connect your phone with a data cable;
+1. Подключите телефон с помощью кабеля передачи данных;
 
-1. Enable [Developer options](https://developer.android.com/studio/debug/dev-options.html);
+1. Включите [Параметры разработчика](https://developer.android.com/studio/debug/dev-options.html);
 
-1. Enable **USB debugging** within Developer options on your phone;
+1. Включите **отладку через USB** в Параметрах разработчика на телефоне;
 
 1. Grant MacroDroid (or your choice of automation app) the ability to write to the global settings store by entering this command:
 
@@ -477,13 +477,13 @@ An alternative, more permanent solution for more tech-savvy users:
 
 ### Автозапуск приложения
 
-Автозапуск приложений (на некоторых телефонах OnePlus), в сущности, предотвращает работу приложений в фоновом режиме. Пожалуйста, отключите их для AdGuard.
+Автозапуск приложений (на некоторых телефонах OnePlus), в сущности, предотвращает работу приложений в фоновом режиме. Пожалуйста, отключите его для AdGuard.
 
 ### Улучшенная / Расширенная оптимизация
 
 Для OnePlus 6 и выше:
 
-- Open **System settings** → **Battery** → **Battery optimization** → (⁝) three-dot menu → **Advanced optimization**
+- Откройте **Настройки** → **Батарея** → **Оптимизация батареи** → (⁝) трёхточечное меню → **Дополнительная оптимизация**
 - Отключите **Глубокую оптимизацию** / **Адаптивную батарею**
 - Отключите **Оптимизацию режима ожидания**. OnePlus пытается понять, когда вы обычно спите, и в это время отключает сетевые подключения телефона. Эта настройка предотвращает доставку push-уведомлений.
 
@@ -499,15 +499,15 @@ An alternative, more permanent solution for more tech-savvy users:
 
 ## Sony
 
-Sony was the first mobile OS developer to introduce non-standard background process optimization. Она называется **Stamina mode** и мгновенно прерывает все фоновые процессы, если включена. Чтобы решить эту проблему:
+Компания Sony первой из разработчиков мобильных OS внедрила нестандартную систему оптимизации фоновых процессов. Она называется **Stamina mode** и мгновенно прерывает все фоновые процессы, если включена. Чтобы решить эту проблему:
 
-Go to **Settings** → **Battery** → Disable **STAMINA mode**
+Перейдите в **Настройки** → **Батарея** → отключите **режим STAMINA**
 
 ![Sony Stamina mode *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/sony_stamina.png)
 
-On Android 11+, on the same screen with STAMINA mode, there is a setting called **Adaptive battery**, you should disable it too.
+На Android 11+ на том же экране с режимом STAMINA есть настройка **Адаптивная батарея**, её тоже следует отключить.
 
-You also need to be set AdGuard as Excepted from Power-saving feature:
+Вам также необходимо обозначить AdGuard как Исключенный из функции Энергосбережения:
 
 **Системные настройки** → **Приложения и уведомления** → **Расширенные** → **Доступ к специальным приложениям** → **Энергосбережение** → переключите бегунок напротив AdGuard на **Исключено**
 
@@ -517,11 +517,11 @@ You also need to be set AdGuard as Excepted from Power-saving feature:
 
 - Перейдите в **Ассистент** → **Батарея** → выключите **Режим энергосбережения**
 - Вернитесь в предыдущее меню и перейдите в **Ручной режим**
-- Tap on the **Gear** icon on top right → **Background apps whitelist** → Select **AdGuard**
+- Нажмите на значок **шестерёнки** в правом верхнем углу → **Белый список фоновых приложений** → выберите **AdGuard**
 
 ## Стандартные устройства Pixel/Nexus/Essential на базе Android
 
-Android stock OS normally does not conflict with apps working in the background, but if you are facing any issues you will need to switch on the **Always-on VPN** mode.
+Android на заводской прошивке, как правило, не конфликтует с фоновыми процессами, но если вы всё же столкнулись с проблемой фоновой работы, включите режим **Always-on VPN**.
 
 - Перейдите в раздел **Настройки** → **Сеть и Интернет**
 
@@ -531,6 +531,6 @@ Android stock OS normally does not conflict with apps working in the background,
 
     ![Stockvpn *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/stockvpn.png)
 
-- Set up **Always-on VPN** mode
+- Выберите пункт **Always-on VPN**
 
     ![Stockadguard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/stockadguard.png)

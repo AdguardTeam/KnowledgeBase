@@ -199,7 +199,7 @@ If you disable AdGuard VPN, AdGuard will stop using it as an outbound proxy. If 
 
 If you have AdGuard Ad Blocker and install AdGuard VPN, the Ad Blocker app will detect it and enable *Integration with AdGuard VPN* automatically. The same happens in reverse. Note that if you've enabled integration, you won't be able to manage app exclusions and connect to DNS servers from the AdGuard VPN app. You can specify apps to be routed through your VPN tunnel via *Settings* → *Filtering* → *Network* → *Proxy* → *Apps operating through proxy*. To select a DNS server, open AdGuard → *DNS protection* → *DNS server*.
 
-## App management
+## Управление приложениями
 
 This section allows you to manage permissions and filtering settings for all apps installed on your device.
 
@@ -236,7 +236,7 @@ This feature gives you a complete picture of what is happening with the traffic 
 
 The stats are categorized into different sections.
 
-### Requests
+### Запросы
 
 This section shows the number of blocked ads, trackers, and the total number of requests for the selected time period: 24 hours, 7 days, 30 days, or all time. You can also filter requests by data type: mobile data, Wi-Fi, or all data combined.
 
@@ -248,7 +248,7 @@ You can tap a request to view its details and add a blocking or unblocking rule.
 
 This section shows the amount of downloaded, uploaded, and saved traffic for the selected time period and data type. Tap *saved*, *uploaded*, or *downloaded* to view the graph of data usage over time.
 
-### Apps
+### Приложения
 
 This section displays stats for all apps installed on your device. You can sort apps by the number of blocked ads or trackers or by the number of sent requests.
 
@@ -258,11 +258,11 @@ Tap *View all apps* to expand the list of your apps, sorted by the number of ads
 
 If you tap an app, you can see its full stats: the requests it sends and the domains and companies it reaches out to.
 
-### Companies
+### Компании
 
 This section displays companies that your device reaches out to. What does it mean? AdGuard detects the domains your device sends requests to and determines which companies they belong to. A database of companies can be found on [GitHub](https://github.com/AdguardTeam/companiesdb).
 
-### DNS statistics
+### DNS-статистика
 
 This section shows data about the requests handled by *DNS protection*. You can see the total number of requests sent and how many were blocked by AdGuard in figures and graphs. You'll also find statistics on the amount of traffic saved, downloaded, and uploaded.
 
@@ -320,7 +320,7 @@ The CA certificate in the user store is enough to filter HTTPS traffic in browse
 
 This section contains the list of apps for which AdGuard filters HTTPS traffic. Please note that the setting can be applied for all apps only if you have CA certificates both in the user store and in the system store.
 
-###### HTTPS-filtered websites
+###### Сайты с HTTPS-фильтрацией
 
 This setting allows you to manage websites for which AdGuard should filter HTTPS traffic.
 
@@ -415,6 +415,8 @@ GitHub is an alternative way to report bugs and suggest new features. [Instructi
 :::
 
 ### Free vs full version
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xNOeHpZgjFo" title="Видеоплеер YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 AdGuard for Android has a free and a paid version. Paid features extend AdGuard's capabilities:
 

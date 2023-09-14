@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-Эта статья о Браузерном расширении AdGuard, которое защищает только ваш браузер. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Эта статья о Браузерном расширении AdGuard, которое защищает только ваш браузер. Чтобы защитить всё устройство, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -136,6 +136,8 @@ sidebar_position: 1
 Значки в правом верхнем углу главного меню отвечают за настройки расширения и приостановку защиты.
 
 ## Браузерное расширение и приложения AdGuard: что лучше? {#comparison}
+
+<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/ZGwceZP-0mM" title="Видеоплеер YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Главное преимущество отдельных приложений AdGuard — они могут блокировать рекламу во всех браузерах и почти во всех приложениях. Вы можете использовать разные браузеры одновременно — приложение будет одинаково хорошо фильтровать рекламу и защищать от онлайн-угроз в каждом из них.
 
