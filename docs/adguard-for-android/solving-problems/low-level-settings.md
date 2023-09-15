@@ -9,7 +9,7 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 :::
 
-## How to reach the Low-level settings
+## How to reach Low-level settings
 
 :::caution
 
@@ -84,7 +84,7 @@ If this setting is enabled, AdGuard will use HTTP/3 to speed up DNS query resolu
 
 #### SERVFAIL failure response
 
-If this setting is enabled, AdGuard will send a SERVFAIL response to the client if all upstreams, including fallback ones, fail to reply. When this setting is disabled, no response is sent to the client.
+If this setting is enabled, AdGuard will send a SERVFAIL response to the client if all upstreams, including fallback ones, fail to reply. Otherwise, no response is sent to the client.
 
 #### Use fallback for non-fallback domains
 
@@ -112,9 +112,9 @@ Every encrypted Internet connection has an unencrypted part. This is the very fi
 
 If this setting is enabled, AdGuard will perform asynchronous OCSP checks to get the revocation status of a website's SSL certificate.
 
-If an OCSP check is completed within the required timeout, AdGuard immediately blocks the connection if the certificate is revoked or establishes the connection if the certificate is valid.
+If an OCSP check is completed within the required timeout, AdGuard will immediately block the connection if the certificate is revoked or establish the connection if the certificate is valid.
 
-If the verification takes too long, AdGuard allows the connection while continuing to check the certificate status in the background. If the certificate is revoked, current and future connections to the domain are blocked.
+If the verification takes too long, AdGuard will allow the connection while continuing to check the certificate status in the background. If the certificate is revoked, current and future connections to the domain will be blocked.
 
 #### Redirect DNS-over-HTTPS requests
 
@@ -154,11 +154,11 @@ Here you can specify package names for which AdGuard should bypass QUIC traffic.
 
 #### Reconfigure Automatic proxy when network changes
 
-If this setting is enabled, the AdGuard protection will restart to reconfigure the automatic proxy settings when your device connects to another network. This setting only applies when *Routing mode* is set to *Automatic proxy*.
+If this setting is enabled, the AdGuard protection will restart to reconfigure the automatic proxy settings when your device connects to another network. This setting only applies if *Routing mode* is set to *Automatic proxy*.
 
 #### IPv6 filtering
 
-If this is enabled, AdGuard will filter IPv6 networks if an IPv6 network interface is available.
+If this setting is enabled, AdGuard will filter IPv6 networks if an IPv6 network interface is available.
 
 #### IPv4 ranges excluded from filtering
 
@@ -220,4 +220,4 @@ Here you can enter the IP address that will be used to create a TUN interface. B
 
 #### Detect Samsung Pay
 
-If this is enabled, AdGuard protection will be paused while Samsung Pay is in use. Korean users require this feature as they experience [issues with Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea) when AdGuard is enabled.
+If this setting is enabled, AdGuard protection will be paused while Samsung Pay is in use. Korean users require this feature as they experience [issues with Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea) when AdGuard is enabled.
