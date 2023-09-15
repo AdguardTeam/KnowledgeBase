@@ -19,7 +19,7 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 ## Installation
 
-Most Android-based apps are distributed via Google Play; however, AdGuard is not presented there, because Google prohibits distribution of network-level ad blockers via Google Play, i.e. apps that block commercials in other apps. You will find more information about Google restrictive policy [in our blog](https://blog.adguard.com/en/google-removes-adguard-android-app-google-play/).
+Most Android-based apps are distributed via Google Play; however, AdGuard is not presented there, because Google prohibits distribution of network-level ad blockers via Google Play, i.e. apps that block commercials in other apps. You will find more information about Google restrictive policy [in our blog](https://adguard.com/en/blog/adguard-google-play-removal.html).
 
 That’s why you can only install AdGuard for Android manually. To use the app on your mobile device, you will need to do the following.
 
@@ -29,7 +29,7 @@ That’s why you can only install AdGuard for Android manually. To use the app o
     - start the browser and type in the following URL: [https://adguard.com/apk](https://adguard.com/apk)
     - or scan this QR code:
 
-    ![QR code *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/qr/inst-qr-en.png)
+    ![QR code *border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/qr/inst-qr-en.png)
 
 1. **Allow installing apps from unknown sources**. Once the file download is complete, tap *Open* in the notification.
 
@@ -55,7 +55,7 @@ That’s why you can only install AdGuard for Android manually. To use the app o
 
 1. **Enable HTTPS filtering**. It is not a mandatory option, however, we advice to turn it on for the best ad-blocking quality.
 
-    If your device is running Android 7–9, you'll be prompted to install a root certificate and configure HTTPS filtering after the local VPN setup.
+    If your device is running Android 7–9, you'll be prompted to [install a root certificate]() and configure HTTPS filtering after the local VPN setup.
 
     ![Enable HTTPS filtering on Android 7-9 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/cert_1.jpg)
 
@@ -69,8 +69,4 @@ That’s why you can only install AdGuard for Android manually. To use the app o
 
 ## Uninstalling/Reinstalling AdGuard
 
-If you need to reinstall AdGuard on your mobile device, first delete it by opening **Settings** and choosing **Apps** (Android 7) or **Apps & notifications** (Android 8+). Find **AdGuard** in the list of installed apps and press **Uninstall**.
-
-![Reinstall AdGuard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_4.png)
-
-To reinstall the app, repeat the actions described in the Installation section.
+There is no need to uninstall the app before reinstalling AdGuard. Simply re-download the apk file and reproduce the steps described above.
