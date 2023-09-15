@@ -13,7 +13,7 @@ A number of users have encountered an issue where Samsung Pay does not work whil
 
 What is causing this issue? Sometimes Samsung Pay does not work on devices with VPN services running, and AdGuard is one of these apps. By default, AdGuard uses a local VPN to filter traffic, which can cause problems when using Samsung Pay.
 
-As a consequence, users had to disable AdGuard when making payments with Samsung Pay. This can be avoided with the *Detect Samsung Pay* feature. When this option is enabled, the AdGuard app is paused whenever the user opens the Samsung Pay app and resumes when the app is closed. 
+As a consequence, users had to disable AdGuard when making payments with Samsung Pay. This can be avoided with the *Detect Samsung Pay* feature. When this option is enabled, the AdGuard app is paused whenever the user opens the Samsung Pay app and resumes when the app is closed.
 
 :::note
 
@@ -35,6 +35,4 @@ After enabling this feature, when you switch from Samsung Pay to AdGuard, the fo
 
 ![samsungpay *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/samsungpay-with-adguard-in-south-korea/samsung_pay.png)
 
-Alternatively, you can disable filtering for Samsung Pay. Simply go to to *Settings** → *Filtering* → *Apps* → *App management* → *Samsung Pay* and turn off the switch at *Route traffic through AdGuard*.
-
-
+Alternatively, you can disable filtering for Samsung Pay in *App management*. Simply go to the *Application management* screen (third tab from the bottom), find Samsung Pay in the list and turn off the switch at *Route traffic through AdGuard*.
