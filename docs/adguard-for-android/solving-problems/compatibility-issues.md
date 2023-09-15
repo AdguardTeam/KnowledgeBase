@@ -48,7 +48,7 @@ Requires root access.
 
 ### Dolphin Browser: Dolphin Browser, Dolphin Browser Express
 
-AdGuard cannot filter its traffic when operating in *Manual proxy mode* because this browser ignores system proxy settings.
+AdGuard cannot filter its traffic when operating in the *Manual proxy mode* because this browser ignores system proxy settings.
 
 - Use the *Local VPN* filtering mode to solve this problem
 
