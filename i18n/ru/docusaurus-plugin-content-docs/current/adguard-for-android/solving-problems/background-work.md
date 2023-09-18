@@ -51,11 +51,11 @@ sidebar_position: 9
 
 ![Настройки Miui *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_2.png)
 
-Tap **Lock apps**.
+Нажмите на **Закрепить приложения**.
 
 ![Настройки Miui *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_3.jpeg)
 
-In the **Lock apps** screen, set the toggle switch for the AdGuard app to On.
+На экране **Закрепить приложения** включите AdGuard.
 
 ![Настройки Miui *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_4.jpeg)
 
@@ -77,7 +77,7 @@ In the **Lock apps** screen, set the toggle switch for the AdGuard app to On.
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi6.jpeg)
 
-Нажмите на него и удерживайте, пока не появится специальное меню. Select a lock icon.
+Нажмите на него и удерживайте, пока не появится специальное меню. Нажмите на значок замка.
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi7en.jpeg)
 
@@ -129,7 +129,7 @@ In the **Lock apps** screen, set the toggle switch for the AdGuard app to On.
 
     ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomirecent.png)
 
-- Tap on the **lock** icon. Это не даст Xiaomi автоматически закрывать AdGuard. Это должно выглядеть так:
+- Нажмите на иконку **замка**. Это не даст Xiaomi автоматически закрывать AdGuard. Это должно выглядеть так:
 
     ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomilocked.png)
 
@@ -181,15 +181,15 @@ In the **Lock apps** screen, set the toggle switch for the AdGuard app to On.
 
 1. Отключите автоматическую оптимизацию. Для этого:
 
-    Open **Battery** → (⁝) menu → Choose **Automation** → Toggle off all of the settings there
+    Откройте **Батарея** → (⁝) трёхточечное меню → выберите **Автоматизация** → отключите там все настройки
 
-    Again, the exact path may differ, for example on some devices you should go to:
+    Опять же, точный путь может отличаться, например, на некоторых устройствах вам потребуется открыть:
 
-    Phone **Settings** → **Device care** → Tap the (⁝) 3-dot menu → **Advanced** → Disable **Auto optimization** and **Optimize settings**
+    **Настройки** телефона → **Обслуживание устройства** → нажмите на (⁝) трёхточечное меню → **Дополнительно** → отключите функции **Автоматическая оптимицазия** и **Оптимизировать настройки**
 
 1. Отключите функцию «Адаптивный режим аккумулятора», если она есть на вашем телефоне:
 
-    Open phone **Settings** → **Battery** → **More battery settings** → Toggle off **Adaptive battery**
+    Зайдите в **Настройки** → **Батарея** → **Другие настройки аккумулятора** → отключите **Адаптивный режим аккумулятора**
 
 1. Отключите перевод приложений в режим сна (точное название этого параметра и путь к нему могут различаться в зависимости от устройства):
 
@@ -336,7 +336,7 @@ It is called **PowerGenie** and it kills all apps that are not on its whitelist.
 
 - Tap on the lock icon:
 
-    ![Huawei lock *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweilock.jpeg)
+    ![Закрепить Huawei *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweilock.jpeg)
 
 Кроме того, чтобы более эффективно настроить фоновую работу AdGuard, вам следует открыть настройки устройства и сделать следующее:
 
@@ -359,23 +359,23 @@ It is called **PowerGenie** and it kills all apps that are not on its whitelist.
 
 ### Nokia 1 (Android Go)
 
-1. [Install ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer;
+1. [Установите ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) на ваш компьютер;
 
-1. Connect your phone with a data cable;
+1. Подключите телефон с помощью кабеля передачи данных;
 
-1. Enable [Developer options](https://developer.android.com/studio/debug/dev-options.html);
+1. Включите [Параметры разработчика](https://developer.android.com/studio/debug/dev-options.html);
 
-1. Enable **USB debugging** within Developer options on your phone;
+1. Включите **отладку через USB** в Параметрах разработчика на телефоне;
 
-1. Uninstall the **com.evenwell.emm** package via the following adb commands:
+1. Удалите файл **com.evenwell.emm** с помощью следующих команд adb:
 
     `adb shell` `pm uninstall --user 0 com.evenwell.emm`
 
 ### Nokia 3.1 и 5.1
 
-On these devices there is a task killer called **DuraSpeed** that terminates all background apps. It can't be uninstalled or disabled by regular means. These actions require ADB, and even then, when disabled, DuraSpeed will re-enable itself on reboot. You need a tasker app like [MacroDroid](https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid) for automatic DuraSpeed's disabling.
+На этих устройствах есть «убийца» задач — система **DuraSpeed**, которая завершает работу всех фоновых приложений. Её нельзя удалить или отключить обычными средствами. Для этого требуется ADB, и даже после отключения DuraSpeed снова включится при перезагрузке. Вам нужно приложение-планировщик задач, как [MacroDroid](https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid), для автоматического отключения DuraSpeed.
 
-1. [Install ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer;
+1. [Установите ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) на ваш компьютер;
 
 1. Подключите телефон с помощью кабеля передачи данных;
 
@@ -489,7 +489,7 @@ An alternative, more permanent solution for more tech-savvy users:
 
 Для OnePlus ниже 6:
 
-- Turn off **System settings** → **Battery** → **Battery optimization** → (⁝) three-dot menu → **Enhanced optimization**.
+- Отключите **Настройки** → **Батарея** → **Оптимизация батареи** → (⁝) трёхточечное меню → **Улучшенная оптимизация**.
 
 ### Поведение при очистке последних приложений
 
@@ -503,7 +503,7 @@ An alternative, more permanent solution for more tech-savvy users:
 
 Перейдите в **Настройки** → **Батарея** → отключите **режим STAMINA**
 
-![Sony Stamina mode *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/sony_stamina.png)
+![Режим Sony Stamina *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/sony_stamina.png)
 
 На Android 11+ на том же экране с режимом STAMINA есть настройка **Адаптивная батарея**, её тоже следует отключить.
 

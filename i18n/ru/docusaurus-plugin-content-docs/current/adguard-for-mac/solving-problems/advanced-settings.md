@@ -13,11 +13,11 @@ sidebar_position: 9
 
 :::caution
 
-Changing *Advanced Settings* may cause problems with AdGuard's performance, break the Internet connection, or compromise your security and privacy. Make changes to this section only if you are sure of what you are doing or our support team has asked you to do it.
+Изменение *Расширенных настроек* может вызвать проблемы с производительностью AdGuard, нарушить подключение к интернету или поставить под угрозу вашу безопасность и конфиденциальность. Вносите изменения в этот раздел, только если вы уверены в своих действиях или наша команда поддержки попросила вас об этом.
 
 :::
 
-To find *Advanced Settings*, open AdGuard, click the gear icon, select *Advanced*, then select *Advanced Settings*.
+Чтобы найти *Расширенные настройки*, откройте AdGuard, щёлкните значок шестерёнки, выберите *Дополнительно*, затем выберите *Расширенные настройки*.
 
 ## Расширенные настройки
 
@@ -77,7 +77,7 @@ To find *Advanced Settings*, open AdGuard, click the gear icon, select *Advanced
 
 `network.https.filter.http3.enabled`
 
-By setting `true`, you allow AdGuard to filter traffic sent over HTTP/3, the latest version of the HTTP protocol based on QUIC.
+Установив значение `true`, вы разрешаете AdGuard фильтровать трафик, передаваемый по протоколу HTTP/3 — последней версии протокола HTTP на базе QUIC.
 
 `network.filtering.localnetwork`
 

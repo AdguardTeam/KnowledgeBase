@@ -45,7 +45,7 @@ sidebar_position: 3
 ### Android {#android}
 
 - Откройте настройки AdGuard;
-- Choose **Support**, then **Send Feedback** → **Missed ad**/**Incorrect blocking**:
+- Выберите **Поддержка**, затем **Сообщение в поддержку** → **Пропущенная реклама**/**Некорректная блокировка**:
 
 ![android *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/android.png)
 
@@ -78,22 +78,22 @@ sidebar_position: 3
 
 :::
 
-1. Filling in the form starts with detailing the type and version of a product;
+1. Заполнение формы начинается с указания типа и версии продукта;
 
     ![forma1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma1en.png)
 
-2. Specify the type of problem and additional information on using third-party software (antivirus, VPN);
+2. Укажите тип проблемы и дополнительную информацию об использовании стороннего ПО (антивирус, VPN);
 
     ![forma2 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma2en.png)
 
-3. Enter the address of the page and the browser (or the download link in case of an app) where you've encountered a problem;
+3. Введите адрес страницы и браузер (или ссылку для скачивания в случае приложения), в котором вы столкнулись с проблемой;
 
     ![forma3 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma3en.png)
 
-4. Application configuration must be specified:
+4. Необходимо указать конфигурацию приложения:
 
     - Используемые вами фильтры;
-    - Stealth mode settings, if this function is enabled.
+    - Настройки Антитрекинга, если эта функция включена.
 
     ![forma4 *border](https://cdn.adtidy.org/content/kb/ad_blocker/guides/forma4en.png)
 
@@ -103,39 +103,39 @@ sidebar_position: 3
 
     ![forma5 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma5en.png)
 
-6. Provide additional information that will help filter developers understand the situation;
+6. Предоставьте дополнительную информацию, которая поможет разработчикам фильтров понять ситуацию;
 
-    Also enter your account on **GitHub**, if available (it's necessary for developers to be able to reach you in case they need some additional details);
+    Также укажите свой аккаунт на **GitHub**, если он есть (это необходимо для того, чтобы разработчики могли связаться с вами в случае, если им понадобятся дополнительные данные);
 
     ![forma6 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma6en.png)
 
-7. Check each step before sending the form;
+7. Проверьте каждый шаг перед отправкой формы;
 
     ![forma7 *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma7en.png)
 
-8. You'll be provided with a link to track progress on your task.
+8. Вы увидите ссылку для отслеживания решения по вашей задаче.
 
     ![forma8 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma8en.png)
 
 ## Диагностика проблемы {#issue}
 
-This option is suitable for those who aren’t afraid of difficulties and don’t mind trying to find the problem on their own. This does not require any special skills or in-depth knowledge of HTML and CSS.
+Этот вариант подходит для тех, кто не боится трудностей и не против попытаться найти проблему самостоятельно. Это не требует специальных навыков или глубоких знаний HTML и CSS.
 
-For example, you are faced with a situation that your favorite website won’t open, authorization has broken, or some page elements are displayed incorrectly. The cause may be using a specific filter/extension/Stealth Mode setting. To diagnose these problems, you need to do the following:
+Например, вы столкнулись с ситуацией, что ваш любимый сайт не открывается, нарушена авторизация или некоторые элементы страницы отображаются некорректно. Причиной может быть использование определенного фильтра/расширения/настройки скрытого режима. Чтобы диагностировать эти проблемы, необходимо сделать следующее:
 
 ### **Фильтры**
 
-1. Disable **Ad Blocker**;
-2. If it solved the problem, re-enable the module and disable filters one by one. This is done to identify filters that "break" the page;
-3. If you have managed to find out which filter "breaks" a page, you should inform the developers when filling out the form (see above). In this case, it is desirable to return to the initial settings;
+1. Отключите **Блокировщик**;
+2. Если это решило проблему, снова включите модуль и отключите фильтры один за другим. This is done to identify filters that "break" the page;
+3. Если вы выяснили, какой фильтр приводит к некорректной блокировке, сообщите об этом разработчикам при заполнении формы (см. выше). Также желательно восстановить настройки по умолчанию;
 4. If turning off all the filters hasn't produced any results, apply rule **@@||example.com^$document,extension**; where **example.com** is an example site name that needs to be replaced by your own option;
-5. In case of failure (issue not solved), turn to section **Stealth Mode**.
+5. Если проблема не решилась, перейдите к разделу **Антитрекинг**.
 
 ### **Антитрекинг**
 
-1. Disable **Stealth Mode**;
-2. If this solved the problem, turn the module on and turn off the **Stealth Mode** options one by one. This is done to detect which filters are "breaking" the page;
-3. If you have managed to to detect which setting "breaks" a page, you should inform the developers when filling out the form (see above). In this case, it is desirable to return to the initial settings;
+1. Отключите **Антитрекинг**;
+2. Если это решило проблему, включите модуль и поочерёдно отключите опции **Антитрекинга** c проверкой результата. Это необходимо для того, чтобы определить, какие именно настройки приводят к некорректной блокировке;
+3. If you have managed to to detect which setting "breaks" a page, you should inform the developers when filling out the form (see above). Также желательно восстановить настройки по умолчанию;
 4. In case of failure (issue not solved), turn to section **Extensions**.
 
 ### **Расширения**

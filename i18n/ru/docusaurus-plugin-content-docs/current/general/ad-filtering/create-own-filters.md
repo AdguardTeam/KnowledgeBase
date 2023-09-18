@@ -110,9 +110,9 @@ AdGuard [расширяет возможности CSS](#extended-css-selectors)
 | Name                         | CSS-селектор                     | Описание                                                                                                                                                                                                              |
 | ---------------------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ID selector                  | `#banners`                       | Соответствует всем элементам с атрибутом `id`, равным `banners`.<br/>![ID selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_id_selector.png)                                               |
-| Class selector               | `.banners`                       | Matches all elements with `class` attribute containing `banners`.<br/>![Class selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_selector.png)                                        |
+| Class selector               | `.banners`                       | Соответствует всем элементам типа `class`, содержащих `banners`.<br/>![Class selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_selector.png)                                         |
 | Attribute selector           | `div[class="banners"]`           | Matches all `div` elements with `class` attribute **exactly equal** to `banners`.<br/>![Attribute selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_attr.png)                        |
-| Attribute substring selector | `div[class^="advert1"]`          | Matches all `div` elements which `class` attribute **starts with** the `advert1` string.<br/>![Attribute substring selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_attr_start.png) |
+| Attribute substring selector | `div[class^="advert1"]`          | Соответствует всем `div` элементам, атрибут `class` которых **начинается** с `advert1`.<br/>![Attribute substring selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_attr_start.png)  |
 | Attribute substring selector | `div[class$="banners_ads"]`      | Matches all `div` elements which `class` attribute **ends with** the `banners_ads` string.<br/>![Attribute substring selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_attr_end.png) |
 | Attribute substring selector | `a[href^="http://example.com/"]` | Matches all links that are loaded from `http://example.com/` domain.<br/>![Attribute substring selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_attr_start.png)                           |
 | Attribute selector           | `a[href="http://example.com/"]`  | Matches all links to **exactly** the `http://example.com/` address.<br/>![Attribute selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_attr_equal.png)                                      |
@@ -592,7 +592,7 @@ Rules with mixed negated and not negated values are considered invalid. So, for 
 
 :::info Совместимость
 
-Rules with the `$method` are supported by AdGuard for Windows, Mac, Android, **running CoreLibs v1.12 or later**, and AdGuard Browser Extension for Chrome, Firefox, Edge, **running TSUrlFilter v2.1.1 or later**.
+Правила с `$method` поддерживаются AdGuard для Windows, Mac, Android, **с CoreLibs 1.12 или более поздней версии**, а также Браузерным расширением AdGuard для Chrome, Firefox, Edge, **с TSUrlFilter 2.1.1 или более поздней версии**.
 
 :::
 
@@ -672,7 +672,7 @@ You may use a shorter name (alias) instead of using the full modifier name: `$3p
 
 :::info Совместимость
 
-Существует большая разница в том, как AdGuard определяет тип контента на разных платформах. В случае Браузерного расширения AdGuard, тип контента для каждого запроса предоставляется самим браузером. AdGuard for Windows, Mac, and Android use the following method: first, the apps try to determine the type of the request by the `Sec-Fetch-Dest` request header or by the filename extension. If the request is not blocked at this stage, the type will be determined using the `Content-Type` header at the beginning of the server response.
+Существует большая разница в том, как AdGuard определяет тип контента на разных платформах. В случае Браузерного расширения AdGuard, тип контента для каждого запроса предоставляется самим браузером. В случае AdGuard для Windows, Mac и Android для определения используется следующая методика: сначала мы пытаемся определить тип запроса по заголовку запроса `Sec-Fetch-Dest` или по расширению имени файла. Если запрос не заблокирован на этом этапе, то тип запроса уточняется с использованием заголовка `Content-Type` в начале ответа, полученного от сервера.
 
 :::
 
@@ -684,7 +684,7 @@ You may use a shorter name (alias) instead of using the full modifier name: `$3p
 
 <!-- Please keep them sorted -->
 
-| Modifier \ Products                                          | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Firefox][ext-ff] | [AdGuard для iOS][ios-app] | [AdGuard для Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
+| Modifier \ Products                                          | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard для Firefox][ext-ff] | [AdGuard для iOS][ios-app] | [AdGuard для Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
 | ------------------------------------------------------------- |:------------------------:|:-------------------------------:|:-----------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
 | [$document](#document-modifier)                               |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
 | [$font](#font-modifier)                                       |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ✅                 |
@@ -3606,7 +3606,7 @@ modifiers = modifier0[, modifier1[, ...[, modifierN]]]
 
 В значениях модификаторов следующие символы должны быть экранированы: `[`, `]`, `,` и `\` (если он не используется для экранирования). Используйте `\`, чтобы экранировать их. Например, экранированная скобка выглядит так: `\]`.
 
-| Modifier \ Products                  | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Firefox][ext-ff] | [AdGuard для iOS][ios-app] | [AdGuard для Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
+| Modifier \ Products                  | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard для Firefox][ext-ff] | [AdGuard для iOS][ios-app] | [AdGuard для Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
 | ------------------------------------- |:------------------------:|:-------------------------------:|:-----------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
 | [$app](#non-basic-app-modifier)       |            ✅             |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
 | [$domain](#non-basic-domain-modifier) |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
@@ -3900,9 +3900,9 @@ Multiple hints can be applied.
 
 #### `NOT_OPTIMIZED` hint
 
-For each filter, AdGuard compiles two versions: full and optimized. Optimized version is much more lightweight and does not contain rules which are not used at all or used rarely.
+Для каждого фильтра AdGuard существуют две версии: полная и оптимизированная. Оптимизированная версия намного легче и не содержит правил, которые не используются вообще или используются редко.
 
-Rules usage frequency comes from the collected [filter rules statistics](../tracking-filter-statistics). But filters optimization is based on more than that — some filters have specific configuration. This is how it looks like for Base filter:
+Частота использования правил определяется собранной [статистикой по рекламным фильтрам](../tracking-filter-statistics). Но оптимизация основана также на исходной конфигурации для каждого фильтра. Например, вот так это выглядит для Базового фильтра:
 
 ```text
 "filter": Базовый фильтр AdGuard,
@@ -3920,21 +3920,21 @@ Rules usage frequency comes from the collected [filter rules statistics](../trac
 - **maxPercent** — верхняя граница значения `percent`
 - **Strict** — если `percent < minPercent` или `percent > maxPercent` и включён режим Strict, то компиляция фильтра должна завершиться неудачно, в противном случае должны использоваться оригинальные правила
 
-In other words, `percent` is the "compression level". For instance, for the Base filter it is configured to 40%. It means that optimization algorithm should strip 60% of rules.
+Другими словами, `percent` — это «уровень сжатия». Например, для Базового фильтра он настроен на 40%. Это означает, что алгоритм оптимизации должен убрать 60% правил.
 
-Eventually, here are the two versions of the Base filter for AdGuard Browser Extension:
+В итоге, вот так выглядят версии Базового фильтра для Браузерного расширения AdGuard для Chrome:
 
 - полная: https://filters.adtidy.org/extension/chromium/filters/2.txt
 - оптимизированная: https://filters.adtidy.org/extension/chromium/filters/2_optimized.txt
 
-**If you want to add a rule which should not be removed at optimization use the `NOT_OPTIMIZED` hint:**
+**Если вы хотите добавить правило, которое не должно удаляться при оптимизации, используйте подсказку `NOT_OPTIMIZED`:**
 
 ```adblock
 !+ NOT_OPTIMIZED
 ||example.org^
 ```
 
-**And this rule will not be optimized only for AdGuard for Android:**
+**А такое правило не будет оптимизировано только для AdGuard для Android:**
 
 ```adblock
 !+ NOT_OPTIMIZED PLATFORM(android)
@@ -3943,7 +3943,7 @@ Eventually, here are the two versions of the Base filter for AdGuard Browser Ext
 
 #### Подсказки `PLATFORM` и `NOT_PLATFORM`
 
-Used to specify the platforms to apply the rules. List of existing platforms and links to Base filter, for example, for each of them:
+Записи этого типа позволяют указывать платформу, для которой применяется правило. Ниже представлен список используемых платформ и ссылки на Базовый фильтр для каждой из них:
 
 - `windows` — AdGuard для Windows — [https://filters.adtidy.org/windows/filters/2.txt](https://filters.adtidy.org/windows/filters/2.txt)
 
@@ -3969,7 +3969,7 @@ Used to specify the platforms to apply the rules. List of existing platforms and
 
 **Примеры**
 
-This rule will be available only in AdGuard for Windows, Mac, Android:
+Это правило будет действовать только в AdGuard для Windows, Mac, Android:
 
 ```adblock
 !+ PLATFORM(windows,mac,android)
@@ -3985,11 +3985,11 @@ This rule will be available for every platform except AdGuard for Safari, AdGuar
 
 ## Отладка правил фильтрации
 
-It may be possible to create simple filtering rules "in your head" but for anything even slightly more complicated you will need additional tools to debug and iterate them. There are tools to assist you with that. You can use DevTools in Chrome and its analogs in other browsers but most AdGuard products provide another one — Filtering log.
+Хоть самые простые правила фильтрации и возможно придумать «в голове», для чего-то чуть более сложного вам потребуются дополнительная помощь в их отладке и повторении. Есть инструменты, которые помогут вам в этом. Вы можете использовать «Инструменты разработчика» в Chrome и их аналоги в других браузерах, но большинство продуктов AdGuard предоставляют и другой инструмент — Журнал фильтрации.
 
 ### Журнал фильтрации
 
-Filtering log is an advanced tool that will be helpful mostly to filter developers. It lists all web requests that pass through AdGuard, gives you exhaustive information on each of them, offers multiple sorting options, and has other useful features.
+Журнал фильтрации — продвинутый инструмент, который полезен в основном разработчикам фильтров. В нём отображаются все веб-запросы, проходящие через AdGuard, даётся исчерпывающая информация по каждому из них, предлагаются различные опции сортировки и другие полезные возможности.
 
 Depending on which AdGuard product you are using, Filtering log can be located in different places.
 
@@ -4000,17 +4000,17 @@ Depending on which AdGuard product you are using, Filtering log can be located i
 
 :::note
 
-In **AdGuard for iOS** and in **AdGuard for Safari** Filtering log does not exist because of the way content blockers are implemented in Safari. AdGuard does not see the web requests and therefore cannot display them.
+В **AdGuard для iOS** и в **AdGuard для Safari** Журнал фильтрации отсутствует из-за особенностей реализации блокировщиков контента в Safari. AdGuard сам не видит веб-запросы и поэтому не может отображать их.
 
 :::
 
 ### Режим отладки селекторов {#selectors-debug-mode}
 
-Sometimes, you might need to check the performance of a given selector or a stylesheet. In order to do it without interacting with JavaScript directly, you can use a special `debug` style property. When `ExtendedCss` meets this property, it enables the debugging mode either for a single selector or for all selectors, depending on the `debug` value.
+Sometimes, you might need to check the performance of a given selector or a stylesheet. Чтобы сделать это без непосредственного взаимодействия с JavaScript, вы можете использовать свойство стиля `debug`. Когда `ExtendedCss` встречает это свойство, он включает режим отладки для конкретного селектора или для всех селекторов, в зависимости от значения `debug`.
 
-Open the browser console while on a web page to see the timing statistics for selector(s) that were applied there. Debugging mode displays the following stats as object where each of the debugged selectors are keys, and value is an object with such properties:
+Откройте консоль браузера, находясь на веб-странице, чтобы посмотреть статистику по времени, затраченному на применение селектора(-ов). В режиме отладки следующая статистика отображается в виде объекта, где каждый из отлаживаемых селекторов является ключом, а значение — объектом с такими свойствами:
 
-**Always printed:**
+**Всегда выводится:**
 
 - `selectorParsed` — окончательный текст селектора после парсинга
 - `timings` — список узлов DOM, соответствующих селектору
@@ -4020,11 +4020,11 @@ Open the browser console while on a web page to see the timing statistics for se
     - `standardDeviation` — стандартное отклонение
     - `timingsSum` — общее время, ушедшее на все применения селектора на текущей странице
 
-**Printed only for remove pseudos:**
+**Выводится только для удалённых псевдоэлементов:**
 
 - `removed` — флаг, сигнализирующий об удалении элементов
 
-**Printed if elements are not removed:**
+**Выводится, если элементы не удалены:**
 
 - `matchedElements` — список узлов DOM, соответствующих селектору
 - `styleApplied` — объявление обработанного стиля правила, связанного с селектором
@@ -4130,7 +4130,8 @@ ExtendedCss.query(selector);
 [cl-apps]: #what-product "AdGuard for Windows, Mac, Android"
 [ext-chr]: #what-product "AdGuard Browser Extension for Chrome and other Chromium-based browsers"
 [ext-ff]: #what-product "AdGuard Browser Extension for Firefox"
-[ios-app]: #what-product "AdGuard for iOS and AdGuard for iOS Pro"
+[ext-ff]: #what-product "AdGuard Browser Extension for Firefox"
+[ios-app]: #what-product "AdGuard для iOS и AdGuard для iOS Pro"
 [ext-saf]: #what-product "AdGuard для Safari"
 [and-cb]: #what-product "AdGuard Content Blocker for Samsung Internet and Yandex Browser on Android"
 

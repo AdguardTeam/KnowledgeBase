@@ -9,7 +9,7 @@ sidebar_position: 6
 
 Чтобы узнать, сколько вы перевели, откройте проект, над которым работали, перейдите на вкладку *Reports* и выберите *My Contribution*. Для получения лицензии можно суммировать количество слов, переведённых в разных проектах.
 
-## Here’s how our reward system works
+## Вот как работает наша система вознаграждений
 
 ```text
 Для первой годовой лицензии AdGuard вам необходимо перевести 500 слов.
@@ -21,8 +21,8 @@ sidebar_position: 6
 
 ```
 
-Just send us a request to [translate@adguard.com](mailto:translate@adguard.com) and you’ll get the license as a token of our gratitude.
+Просто отправьте запрос на [translate@adguard.com](mailto:translate@adguard.com), и вы получите лицензию в знак нашей благодарности.
 
-Besides, the most active translators may receive proofreader status in the future, should they express such an intention, and that promises even more good stuff.
+Кроме того, наиболее активные переводчики при желании в будущем могут получить статус пруфридера. А это сулит ещё больше приятных вознаграждений.
 
-Every year we present gifts with the AdGuard logo to our active proofreaders. If you want to become one of them, please write to [translate@adguard.com](mailto:translate@adguard.com).
+Каждый год мы дарим подарки с логотипом AdGuard нашим активным пруфридерам. Если вы хотите стать одним из них, пишите на [translate@adguard.com](mailto:translate@adguard.com).

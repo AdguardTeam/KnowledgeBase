@@ -24,49 +24,49 @@ sidebar_position: 2
 Если это не помогло, следуйте инструкциям по ручному добавлению сертификата AdGuard в хранилище FireFox.
 > Эта инструкция предназначена для браузера Firefox. Названия кнопок и пунктов меню могут отличаться в других браузерах на основе Firefox.
 
-1. Run AdGuard.
+1. Запустите AdGuard.
 
-1. Go to [http://local.adguard.org/cert](http://local.adguard.org/cert) and click the *Download* button. The browser should start downloading **cert.cer** file.
+1. Перейдите на страницу [http://local.adguard.org/cert](http://local.adguard.org/cert) и нажмите кнопку *Скачать*. Браузер начнёт загрузку файла **cert.cer**.
 > Вы также можете открыть страницу загрузки, нажав на ссылку через приложение AdGuard: *Настройки → Сеть → HTTPS-фильтрация*.
 
-![Certificate settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/link.jpeg)
+![Настройки сертификата](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/link.jpeg)
 
-1. Open your browser and then open *Settings*.
+1. Откройте браузер, а затем откройте *Настройки*.
 
 1. Go to *Privacy & Security* tab.
 
-1. Scroll down to *Certificates* and click the *View Certificates* button.
+1. Прокрутите вниз до раздела *Сертификаты* и нажмите кнопку *Просмотр сертификатов*.
 
-![View certificates window](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import1.jpeg)
+![Окно просмотра сертификатов](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import1.jpeg)
 
-1. Select *Authorities* tab.
+1. Выберите вкладку *Центры сертификации*.
 
 1. Click *Import...*.
 
 ![Certificate settings — import](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import2.jpeg)
 
-1. Browse the downloaded **cert.cer** file and click *Open*.
+1. Найдите загруженный файл **cert.cer** и нажмите *Открыть*.
 
-1. Check the *Trust this CA to identify websites* box and then lick *OK*.
+1. Установите флажок *Доверять этому ЦС для идентификации веб-сайтов* и нажмите *ОК*.
 
 ![Certificate settings — checkbox](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/cert_checkbox.jpg)
 
-You've successfully installed AdGuard certificate. Restart the browser and the error should go away.
+Вы успешно установили сертификат AdGuard. Перезапустите браузер, ошибка должна исчезнуть.
 
 ## Предупреждение сертификата Яндекс.Браузера
 
-If you are a user of both AdGuard for Windows and Yandex.Browser you may have come across this warning:
+Если вы пользуетесь AdGuard для Windows и Яндекс.Браузером, вы могли столкнуться с этим предупреждением:
 
-![Yandex certificate warning](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/yandex-cert.png)
+![Предупреждение сертификата Яндекс.Браузера](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/yandex-cert.png)
 
 ### Почему это происходит
 
-Both AdGuard and Yandex take users' security on the Internet very seriously. Current Yandex policy is to warn their users about any certificate that is not recognized by the browser. This is not unsubstantiated, because sometimes malicious apps can inject their own certificates and use this to harm the system and steal private data.
+И AdGuard, и Яндекс очень серьёзно относятся к безопасности пользователей в интернете. Текущая политика Яндекса заключается в том, чтобы предупреждать своих пользователей о любом сертификате, который не распознаётся браузером. Это небезосновательно, потому что иногда вредоносные приложения могут внедрять свои собственные сертификаты и использовать их для нанесения вреда системе и кражи личных данных.
 
-However, AdGuard also adds its certificate to the trusted ones. This leads to the warning message you have encountered.
+Однако AdGuard также добавляет свой сертификат в список доверенных. Это и приводит к появлению предупреждения.
 
 ### Как решить проблему
 
-The easiest way is to click the **Go to site** button. This will tell Yandex.Browser to remember AdGuard certificate as a trusted one, at least for a while. Normally, you won't have to see this message anymore, but it is not beyond the realm of possibility for it to appear occasionally, for whatever reasons. In such cases, simply press the same button again *(make sure it is AdGuard's certificate!)*.
+Самый простой способ — нажать на кнопку **Перейти на сайт**. Это заставит Яндекс.Браузер запомнить сертификат AdGuard как доверенный хотя бы на время. Скорее всего вам больше не придётся видеть это сообщение, но вполне возможно, оно будет время от времени появляться по каким-то другим причинам. В таких случаях просто нажмите ту же кнопку ещё раз *(убедитесь, что это сертификат AdGuard!)*.
 
-Disabling the HTTPS filtering in AdGuard will also prevent Yandex.Browser from showing this message again, but it comes with a big price: all ads that are loaded by HTTPS (including **Yandex's own ads**) will show up — on such websites as YouTube, Facebook, Instagram, and many more. We strongly advise against it if you want to keep the quality of ad blocking high.
+Отключение HTTPS-фильтрации в AdGuard также предотвратит повторное отображение этого сообщения в Яндекс.Браузере. Однако это приведёт к тому, что вы будете видеть рекламу, загружаемую по HTTPS (в том числе **собственную рекламу Яндекса**) на таких сайтах, как YouTube, Facebook, Instagram и многие другие. Мы настоятельно не рекомендуем делать это, если вы хотите сохранить высокое качество блокировки рекламы.
