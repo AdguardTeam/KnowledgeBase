@@ -15,12 +15,12 @@ If you are using AdGuard in the *Local VPN* filtering mode, you cannot run other
 
 - Use [AdGuard VPN](https://adguard-vpn.com/welcome.html) — its *Integrated mode* allows two apps to operate simultaneously
 - Configure your VPN app to act as an [outbound proxy](../solving-problems/outbound-proxy.md) and set up a local outbound proxy using the parameters from the third-party app
-- Switch to the *Automatic proxy mode*. When you do that, AdGuard will no longer use local VPN and will reconfigure iptables instead
-- Switch to the *Manual proxy mode*. To do this, go to *Settings* →  *Filtering* → *Network* → *Routing mode*
+- Switch to the *Automatic proxy* mode. When you do that, AdGuard will no longer use local VPN and will reconfigure iptables instead
+- Switch to the *Manual proxy* mode. To do this, go to *Settings* →  *Filtering* → *Network* → *Routing mode*
 
 :::note Compatibility
 
-The *Automatic proxy mode* is only accessible on rooted devices. For *Manual proxy*, rooting is required on devices running on Android 10 or later.
+The *Automatic proxy* mode is only accessible on rooted devices. For *Manual proxy*, rooting is required on devices running on Android 10 or later.
 
 :::
 
@@ -48,7 +48,7 @@ Requires root access.
 
 ### Dolphin Browser: Dolphin Browser, Dolphin Browser Express
 
-AdGuard cannot filter its traffic when operating in the *Manual proxy mode* because this browser ignores system proxy settings.
+AdGuard cannot filter its traffic when operating in the *Manual proxy* mode because this browser ignores system proxy settings.
 
 - Use the *Local VPN* filtering mode to solve this problem
 
