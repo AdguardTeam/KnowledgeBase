@@ -69,4 +69,8 @@ That’s why you can only install AdGuard for Android manually. To use the app o
 
 ## Uninstalling/Reinstalling AdGuard
 
-There is no need to uninstall the app before reinstalling AdGuard. Simply re-download the apk file and reproduce the steps described above.
+If you need to uninstall AdGuard on your mobile device, open *Settings* and choose *Apps* (Android 7) or *Apps & notifications* (Android 8+). Find AdGuard in the list of installed apps and press *Uninstall*.
+
+![Reinstall AdGuard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_4.png)
+
+To reinstall AdGuard, just download the apk file again and follow the steps outlined in the Installation section. Uninstallation is not required beforehand.
