@@ -11,18 +11,18 @@ sidebar_position: 16
 
 ## VPN-приложения
 
-Другие VPN-приложения несовместимы с AdGuard, работающим в режиме фильтрации «Локальный VPN», поскольку у вас не может быть двух активных VPN одновременно. Для решения этой проблемы мы предлагаем:
+If you are using AdGuard in the *Local VPN* filtering mode, you cannot run other VPN apps at the same time. To solve this problem, we suggest that you:
 
-- использовать [AdGuard VPN](https://adguard-vpn.com/welcome.html) — в нём есть Интегрированный режим, который позволяет двум приложениям работать без проблем
-- использовать AdGuard в режиме локального HTTP-прокси
+- Use [AdGuard VPN](https://adguard-vpn.com/welcome.html) — its *Integrated mode* allows two apps to operate simultaneously
+- Configure your VPN app to act as an [outbound proxy](../solving-problems/outbound-proxy.md) and set up a local outbound proxy using the parameters from the third-party app
+- Switch to the *Automatic proxy* mode. When you do that, AdGuard will no longer use local VPN and will reconfigure iptables instead
+- Switch to the *Manual proxy* mode. To do this, go to *Settings* →  *Filtering* → *Network* → *Routing mode*
 
-:::caution
+:::note Совместимость
 
-В Android 10 и более поздних версиях «ручной» режим HTTP-прокси больше не поддерживается.
+The *Automatic proxy* mode is only accessible on rooted devices. For *Manual proxy*, rooting is required on devices running on Android 10 or later.
 
 :::
-
-- настройте своё VPN-приложение на работу в качестве исходящего прокси и настройте локальный исходящий прокси, используя параметры стороннего приложения. Для этого стороннее VPN-приложение должно поддерживать режим SOCKS4/SOCKS5. Например, AdGuard можно автоматически настроить с помощью «Orbot: Прокси с Tor».
 
 ## Приватный DNS
 
@@ -38,9 +38,9 @@ sidebar_position: 16
 
 Чтобы фильтровать HTTPS-трафик, AdGuard потребует у пользователя добавить сертификат в доверенные. К сожалению, браузеры семейства UC не доверяют пользовательским сертификатам, поэтому AdGuard не может выполнять в них HTTPS-фильтрацию.
 
-- Чтобы решить эту проблему, переместите сертификат в системное хранилище сертификатов
+- To solve this problem, move the [certificate to the system certificate store](../solving-problems/https-certificate-for-rooted.md/)
 
-:::caution
+:::note Совместимость
 
 Требуется root-доступ.
 
@@ -48,9 +48,9 @@ sidebar_position: 16
 
 ### Браузер Dolphin: Браузер Dolphin, Экспресс-браузер Dolphin
 
-AdGuard не может фильтровать трафик при работе в режиме **Ручной прокси**, потому что этот браузер игнорирует системные настройки прокси.
+AdGuard cannot filter its traffic when operating in the *Manual proxy* mode because this browser ignores system proxy settings.
 
-- Используйте режим фильтрации **Локальный VPN** для решения этой проблемы
+- Use the *Local VPN* filtering mode to solve this problem
 
 ### Opera mini: Opera mini, Opera mini с Яндексом
 

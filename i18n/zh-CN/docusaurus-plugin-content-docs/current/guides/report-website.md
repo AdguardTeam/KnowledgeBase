@@ -10,7 +10,7 @@ sidebar_position: 3
 - 修改添加广告的算法；
 - 添加了来自第三方开发人员的过滤器/扩展程序；
 - 创建规则时，其中一个过滤器的作者犯了一个错误；
-- 重新插入广告。 在[我们的博客](https://adguard.com/blog/ad-reinsertion.html)中找到有关此方法的更多信息。
+- 重新插入广告。 Find more about this method in our [blog](https://adguard.com/en/blog/ad-reinsertion.html).
 
 您可以通过填写申请表中的广告示例来帮助我们。 为此，请按照您的操作系统使用说明。
 

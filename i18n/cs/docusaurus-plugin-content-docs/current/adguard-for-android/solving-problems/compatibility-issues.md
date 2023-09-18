@@ -11,18 +11,18 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 ## Aplikace VPN
 
-Ostatní aplikace VPN nejsou kompatibilní se službou AdGuard spuštěnou v režimu filtrování místní sítě VPN, protože nelze mít současně aktivní dvě sítě VPN. K vyřešení tohoto problému vám doporučujeme:
+If you are using AdGuard in the *Local VPN* filtering mode, you cannot run other VPN apps at the same time. To solve this problem, we suggest that you:
 
-- použít [AdGuard VPN](https://adguard-vpn.com/welcome.html) — má integrovaný režim, který umožňuje bezproblémové fungování dvou aplikací
-- použít AdGuard v režimu místního HTTP proxy
+- Use [AdGuard VPN](https://adguard-vpn.com/welcome.html) — its *Integrated mode* allows two apps to operate simultaneously
+- Configure your VPN app to act as an [outbound proxy](../solving-problems/outbound-proxy.md) and set up a local outbound proxy using the parameters from the third-party app
+- Switch to the *Automatic proxy* mode. When you do that, AdGuard will no longer use local VPN and will reconfigure iptables instead
+- Switch to the *Manual proxy* mode. To do this, go to *Settings* →  *Filtering* → *Network* → *Routing mode*
 
-:::caution
+:::note Compatibility
 
-V Androidu 10 a novějším již není podporován "ruční" režim HTTP proxy.
+The *Automatic proxy* mode is only accessible on rooted devices. For *Manual proxy*, rooting is required on devices running on Android 10 or later.
 
 :::
-
-- nakonfigurujte aplikaci VPN tak, aby fungovala jako odchozí proxy, a nastavte místní odchozí proxy pomocí parametrů z aplikace třetí strany. K tomu musí aplikace VPN třetí strany podporovat režim SOCKS4/SOCKS5. AdGuard lze například automaticky nakonfigurovat pomocí nástroje 'Orbot: Proxy with Tor'.
 
 ## Soukromý DNS
 
@@ -38,9 +38,9 @@ Někteří výrobci zařízení nechávají nastavení Soukromých DNS skryté a
 
 Aby mohl AdGuard filtrovat přenosy HTTPS, musí uživatel přidat certifikát do důvěryhodných uživatelských certifikátů zařízení. Prohlížeče z rodiny UC bohužel nedůvěřují uživatelským certifikátům, takže v nich AdGuard nemůže provádět filtrování HTTPS.
 
-- Chcete-li tento problém vyřešit, přesuňte certifikát do systémového úložiště certifikátů
+- To solve this problem, move the [certificate to the system certificate store](../solving-problems/https-certificate-for-rooted.md/)
 
-:::caution
+:::note Compatibility
 
 Vyžaduje root přístup.
 
@@ -48,9 +48,9 @@ Vyžaduje root přístup.
 
 ### Prohlížeče Dolphin: Dolphin Browser, Dolphin Browser Express
 
-AdGuard nemůže filtrovat provoz v režimu **Manuální proxy**, protože tento prohlížeč ignoruje systémové nastavení proxy.
+AdGuard cannot filter its traffic when operating in the *Manual proxy* mode because this browser ignores system proxy settings.
 
-- K vyřešení tohoto problému použijte režim filtrování **Lokální VPN**
+- Use the *Local VPN* filtering mode to solve this problem
 
 ### Opera mini: Opera mini, Opera mini with Yandex
 

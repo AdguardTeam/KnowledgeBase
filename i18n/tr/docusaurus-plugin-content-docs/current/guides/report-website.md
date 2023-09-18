@@ -10,7 +10,7 @@ When using ad blockers, you may face incorrect work of certain websites or broke
 - Modified algorithms of adding ads;
 - Added filters/extensions from third-party developers;
 - The authors of one of the filters made a mistake when creating the rule;
-- Advertising reinsertion. Find more about this method in our [blog](https://adguard.com/blog/ad-reinsertion.html).
+- Advertising reinsertion. Bu yöntem hakkında daha fazla bilgiyi [blogumuzda](https://adguard.com/en/blog/ad-reinsertion.html) bulabilirsiniz.
 
 You can help us by filling in an application form with examples of ads you faced with. To do it, please, use instructions for your OS.
 

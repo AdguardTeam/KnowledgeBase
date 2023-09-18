@@ -1,5 +1,5 @@
 ---
-title: Низкоуровневые настройки
+title: Low-level settings guide
 sidebar_position: 6
 ---
 
@@ -9,7 +9,7 @@ sidebar_position: 6
 
 :::
 
-## Как получить доступ к Низкоуровневым настройкам
+## How to reach Low-level settings
 
 :::caution
 
@@ -35,7 +35,7 @@ sidebar_position: 6
 
 #### Обнаруживать search-домены
 
-Если эта опция включена, AdGuard будет определять поисковые домены и автоматически перенаправлять их на резервные upstream-серверы.
+If this setting is enabled, AdGuard will detect search domains and automatically forward them to fallback upstreams.
 
 #### Bootstrap DNS-серверы
 
@@ -45,7 +45,7 @@ sidebar_position: 6
 
 Здесь можно указать тип ответа для доменов, блокируемых правилами DNS на основе синтаксиса правил adblock (например, `||example.org^`).
 
-- Отвечать кодом REFUSED (по умолчанию)
+- Отвечать кодом REFUSED
 - Отвечать кодом NXDOMAIN
 - Отвечать пользовательским IP-адресом (здесь можно указать адреса IPv4 и IPv6)
 
@@ -55,7 +55,7 @@ sidebar_position: 6
 
 - Отвечать кодом REFUSED
 - Отвечать кодом NXDOMAIN
-- Отвечать пользовательским IP-адресом (здесь можно указать адреса IPv4 и IPv6) — по умолчанию
+- Отвечать пользовательским IP-адресом (здесь можно указать адреса IPv4 и IPv6)
 
 #### Время ожидания DNS-запроса
 
@@ -75,29 +75,31 @@ sidebar_position: 6
 
 #### Игнорировать недоступный исходящий прокси-сервер
 
-Включите эту функцию, чтобы AdGuard отправлял DNS-запросы напрямую, если исходящий прокси недоступен.
+If this setting is enabled, AdGuard will send DNS requests directly when the outbound proxy is unavailable.
 
 #### Пробовать HTTP/3 для upstream-серверов DNS-over-HTTPS
 
-По умолчанию все DNS-запросы для DNS-over-HTTPS отправляются по протоколу HTTP/2. Если эта опция включена, AdGuard использует HTTP/3 для ускорения разрешения DNS-запросов для upstream-серверов DoH.
+If this setting is enabled, AdGuard will use HTTP/3 to speed up DNS query resolution for DoH upstreams. Otherwise, AdGuard will revert to its default behavior and use HTTP/2 to send all DNS requests for DNS-over-HTTPS.
 
 #### Отвечать на ошибку кодом SERVFAIL
 
-После включения этой функции AdGuard отправляет клиенту ответ SERVFAIL, если все upstream-серверы, включая резервные, не отвечают. Если эта настройка отключена, ответ клиенту не отправляется.
+If this setting is enabled and all upstreams, including fallback ones, fail to respond, AdGuard will send a SERVFAIL response to the client.
 
 #### Использовать резервный сервер для нерезервных доменов
 
-Включите эту функцию, если хотите, чтобы AdGuard использовал резервный upstream-сервер для всех доменов. В противном случае резервный сервер будет использоваться только для резервных и поисковых доменов, если соответствующий параметр включён.
+If this setting is enabled, AdGuard will use fallback upstreams for all domains. Otherwise, fallback upstreams will only be used for fallback domains and search domains if the corresponding option is enabled.
 
 #### Проверять upstream-серверы DNS
 
-Включите, чтобы AdGuard мог проверять upstream-серверы DNS перед добавлением или обновлением пользовательских DNS-серверов.
+If this setting is enabled, AdGuard will test DNS upstreams before adding or updating custom DNS servers.
 
 ### Фильтрация
 
 #### Записывать HAR
 
-Здесь вы можете включить захват файла HAR. Используйте его только для целей отладки! Если настройка включена, AdGuard создаст папку har в кеш-директории приложения. Она будет содержать информацию обо всех отфильтрованных HTTP-запросах в формате HAR 1.2, и её можно будет проанализировать с помощью программы Fiddler.
+If this setting is enabled, AdGuard will capture HAR files. It will create a directory named "har" inside the app cache directory and add there information about all filtered HTTP requests in HAR 1.2 format that can be analyzed with the Fiddler program.
+
+Use it only for debugging purposes!
 
 ### HTTPS-фильтрация
 
@@ -107,25 +109,25 @@ sidebar_position: 6
 
 #### Проверка OCSP
 
-Если эта опция включена, она запускает асинхронные проверки OCSP, чтобы проверить, не отозван ли SSL/TLS-сертификат сайта.
+If this setting is enabled, AdGuard will perform asynchronous OCSP checks to get the revocation status of a website's SSL certificate.
 
-Если проверка OCSP завершается в течение минимального тайм-аута, AdGuard немедленно заблокирует соединение, если сертификат отозван, или установит соединение, если сертификат действителен.
+If an OCSP check is completed within the required timeout, AdGuard will immediately block the connection if the certificate is revoked or establish the connection if the certificate is valid.
 
-Если проверка занимает слишком много времени, AdGuard установит соединение и продолжит проверку в фоновом режиме. Если сертификат отозван, текущие и будущие подключения к домену будут заблокированы.
+If the verification takes too long, AdGuard will allow the connection while continuing to check the certificate status in the background. Если сертификат отозван, текущие и будущие подключения к домену будут заблокированы.
 
 #### Перенаправлять запросы DNS-over-HTTPS
 
-Если эта опция включена, то запросы DNS-over-HTTPS будут перенаправляться на модуль DNS-защиты. Для сохранения конфиденциальности мы рекомендуем отключить резервные upstream-серверы и использовать только зашифрованные DNS-серверы.
+If this setting is enabled, AdGuard will redirect DNS-over-HTTPS requests to the local DNS proxy in addition to plain DNS requests. We recommend disabling fallback upstreams and using only encrypted DNS servers to maintain privacy.
 
 #### Filter HTTP/3
 
-If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
+If this setting is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
 
-### Исходящий прокси
+### Outbound proxy
 
 #### Показывать настройку «Фильтровать DNS-запросы»
 
-Когда эта функция включена, в разделе *Настройки ➝ Фильтрация ➝ Сеть ➝ Прокси ➝ Прокси-сервер ➝ Добавить прокси-сервер* появляется опция *Фильтровать DNS-запросы*. Включив её, можно фильтровать DNS-запросы, проходящие через прокси-сервер.
+If this is enabled, the *Filter DNS requests* switch will be displayed in the *Add proxy server* dialog. Use it to enable filtering of DNS requests passing through the specified proxy.
 
 ### Защита
 
@@ -135,11 +137,11 @@ If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addi
 
 #### Фиксировать удаление HTML-элементов
 
-Если этот параметр включён, AdGuard записывает заблокированные HTML-элементы в журнал фильтрации.
+If this setting is enabled, AdGuard will record blocked HTML elements in *Recent activity*.
 
 #### Отладка скриптлетов
 
-Если вам нужно активировать отладку скриптлетов, включите эту функцию. Тогда в журнале браузера будут сообщения о том, что были применены правила скриптлетов.
+If this setting is enabled, debugging in scriptlets will be activated, and the browser log will record when scriptlet rules are applied.
 
 #### Исключённые приложения
 
@@ -151,23 +153,23 @@ If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addi
 
 #### Перенастраивать Автоматический прокси при изменении сети
 
-Включите этот параметр, если вы хотите, чтобы при подключении устройства к другой сети защита перезапускалась для перенастройки автоматического прокси. Этот параметр влияет на работу приложения только в том случае, если текущий режим маршрутизации — Автоматический прокси.
+If this setting is enabled, the AdGuard protection will restart to reconfigure the automatic proxy settings when your device connects to another network. This setting only applies if *Routing mode* is set to *Automatic proxy*.
 
 #### Фильтрация IPv6
 
-Фильтрует сети IPv6 при наличии IPv6-интерфейсов.
+If this setting is enabled, AdGuard will filter IPv6 networks if an IPv6 network interface is available.
 
 #### Диапазоны IPv4-адресов, исключённые из фильтрации
 
-Фильтрация для диапазонов IPv4, перечисленных в данном разделе, будет отключена.
+Filtering for the IPv4 ranges listed in this section is disabled.
 
 #### Диапазоны IPv6-адресов, исключённые из фильтрации
 
-Фильтрация для диапазонов IPv6, перечисленных в этом разделе, будет отключена.
+Filtering for the IPv6 ranges listed in this section is disabled.
 
 #### TCP keepalive для исходящих сокетов
 
-Если эта опция включена, AdGuard отправляет проверку активности через указанный период времени, чтобы убедиться, что TCP-соединение активно. Здесь вы можете указать время простоя проверки активности TCP перед запуском проверок активности и время между проверками активности для неотвечающего узла.
+If this setting is enabled, AdGuard will send a keepalive probe after the specified time period to ensure that the TCP connection is alive. Here, you can specify the idle time before starting keepalive probes and the time between keepalive probes for an unresponsive peer.
 
 После заданного системой количества неудачных попыток получить ответ от сервера система автоматически закрывает TCP-соединение.
 
@@ -175,11 +177,11 @@ If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addi
 
 #### Время ожидания для остановленного VPN
 
-Здесь вы можете установить время задержки в миллисекундах, прежде чем AdGuard попытается восстановить VPN-защиту после её отзыва сторонним VPN-приложением или удалением VPN-профиля. Значение по умолчанию — 5000 мс.
+Здесь вы можете установить время задержки в миллисекундах, прежде чем AdGuard попытается восстановить VPN-защиту после её отзыва сторонним VPN-приложением или удалением VPN-профиля. The default value is 5000 ms.
 
 #### Задержка для восстановления отключённого VPN
 
-Здесь вы можете установить время задержки в миллисекундах, прежде чем AdGuard перенесёт восстановление VPN-защиты после того, как она была отозвана сторонним VPN-приложением или путём удаления VPN-профиля. Значение по умолчанию — 5000 мс.
+Здесь вы можете установить время задержки в миллисекундах, прежде чем AdGuard перенесёт восстановление VPN-защиты после того, как она была отозвана сторонним VPN-приложением или путём удаления VPN-профиля. The default value is 5000 ms.
 
 #### MTU
 
@@ -187,15 +189,15 @@ If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addi
 
 #### Автоматически возобновлять работу VPN
 
-Если эта функция включена, она автоматически повторно включает локальный VPN AdGuard после того, как он был отключён из-за отсутствия сети, модема или режима низкого энергопотребления.
+If this setting is enabled, AdGuard’s local VPN will be automatically re-enabled after being turned off due to network absence, tethering, or low-power mode.
 
 #### Захват пакетов (PCAP)
 
-Если эта опция включена, то AdGuard создаст специальный файл с именем `timestamp.pcap` (например, 1682599851461.pcap). Он содержит все сетевые пакеты, передаваемые через VPN. Этот файл находится в папке кэша приложения и может быть проанализирован с помощью программы Wireshark.
+If this setting is enabled, AdGuard will create a file `timestamp.pcap` (for instance, 1682599851461.pcap) in the app cache directory. This file lists all network packets transferred through the VPN and can be analyzed with the Wireshark program.
 
 #### Включить шлюз Wi-Fi в маршруты VPN
 
-Если вы хотите, чтобы IP-адреса шлюза добавлялись к VPN-маршрутам при подключении к сети Wi-Fi, включите эту функцию.
+If this setting is enabled, the gateway IP addresses will be added to to VPN routes when on Wi-Fi.
 
 #### IPv4-адрес
 
@@ -203,11 +205,11 @@ If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addi
 
 #### Принудительно маршрутизировать LAN IPv4
 
-Если эта опция включена, AdGuard фильтрует все LAN-соединения, включая трафик локальной сети IPv4, даже если включена опция *Маршрутизировать все IPv4-подключения в локальной сети*.
+If this setting is enabled, AdGuard will filter all LAN connections, including local IPv4 network traffic, even if the *Route all LAN IPv4 connections* option is enabled.
 
 #### Маршрутизировать все IPv4-подключения в локальной сети
 
-После включения этой опции AdGuard исключает из фильтрации LAN-соединения для простых сетей. Может не работать для сложных сетей. Работает только при отключённой опции *Принудительно маршрутизировать LAN IPv4*.
+If this setting is enabled, AdGuard will exclude LAN connections from filtering for simple networks. This may not work for complex networks. This setting only applies if *Forcibly route LAN IPv4* is disabled.
 
 #### IPv6-адрес
 
@@ -217,4 +219,4 @@ If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addi
 
 #### Обнаруживать Samsung Pay
 
-Корейские пользователи могут столкнуться с проблемами с Samsung Pay при включённом AdGuard. Активируйте эту функцию, чтобы приостановить защиту AdGuard и беспрепятственно пользоваться приложением Samsung Pay.
+If this setting is enabled, AdGuard protection will be paused while Samsung Pay is in use. Korean users require this feature as they experience [issues with Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea) when AdGuard is enabled.

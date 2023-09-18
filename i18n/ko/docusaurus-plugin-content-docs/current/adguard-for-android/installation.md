@@ -19,7 +19,7 @@ sidebar_position: 2
 
 ## 설치 방법
 
-대부분의 Android 기반 앱은 Google Play에서 다운로드할 수 있지만 Google은 Google Play를 통한 네트워크 수준 광고 차단기(다른 앱의 광고를 차단하는 앱)를 배포하는 것을 금지하기 때문에 Google Play에서 AdGuard 광고 차단 앱이 없습니다. [AdGuard 블로그](https://blog.adguard.com/en/google-removes-adguard-android-app-google-play/)에서 Google 제한 정책에 대한 자세한 내용을 확인하실 수 있습니다.
+대부분의 Android 기반 앱은 Google Play에서 다운로드할 수 있지만 Google은 Google Play를 통한 네트워크 수준 광고 차단기(다른 앱의 광고를 차단하는 앱)를 배포하는 것을 금지하기 때문에 Google Play에서 AdGuard 광고 차단 앱이 없습니다. You will find more information about Google restrictive policy [in our blog](https://adguard.com/en/blog/adguard-google-play-removal.html).
 
 그래서 Android용 AdGuard는 수동으로만 설치할 수 있습니다. 휴대폰에서 앱을 사용하려면 다음 단계를 수행하세요.
 
