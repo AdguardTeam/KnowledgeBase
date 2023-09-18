@@ -84,7 +84,7 @@ If this setting is enabled, AdGuard will use HTTP/3 to speed up DNS query resolu
 
 #### SERVFAIL failure response
 
-If this setting is enabled, AdGuard will send a SERVFAIL response to the client if all upstreams, including fallback ones, fail to reply. Otherwise, no response is sent to the client.
+If this setting is enabled and all upstreams, including fallback ones, fail to respond, AdGuard will send a SERVFAIL response to the client.
 
 #### Use fallback for non-fallback domains
 
