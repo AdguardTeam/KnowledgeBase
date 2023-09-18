@@ -10,7 +10,7 @@ Ao usar bloqueadores de anúncios, você pode enfrentar o trabalho incorreto de 
 - Algoritmos modificados para adicionar anúncios;
 - Filtros/extensões de desenvolvedores terceirizados adicionados;
 - Os autores de um dos filtros cometeram um erro ao criar a regra;
-- Reinserção publicitária. Descubra mais sobre este método em nosso [blog](https://adguard.com/blog/ad-reinsertion.html).
+- Reinserção publicitária. Find more about this method in our [blog](https://adguard.com/en/blog/ad-reinsertion.html).
 
 Você pode nos ajudar preenchendo um formulário de inscrição com exemplos de anúncios que você encontrou. Para fazer isso, por favor, siga as instruções para o seu sistema operacional.
 

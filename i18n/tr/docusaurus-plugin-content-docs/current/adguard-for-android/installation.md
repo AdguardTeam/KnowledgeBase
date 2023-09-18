@@ -19,7 +19,7 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 ## Kurulum
 
-Most Android-based apps are distributed via Google Play; however, AdGuard is not presented there, because Google prohibits distribution of network-level ad blockers via Google Play, i.e. apps that block commercials in other apps. You will find more information about Google restrictive policy [in our blog](https://blog.adguard.com/en/google-removes-adguard-android-app-google-play/).
+Most Android-based apps are distributed via Google Play; however, AdGuard is not presented there, because Google prohibits distribution of network-level ad blockers via Google Play, i.e. apps that block commercials in other apps. Google'ın kısıtlayıcı politikası hakkında daha fazla bilgiyi [blogumuzda](https://adguard.com/en/blog/adguard-google-play-removal.html) bulabilirsiniz.
 
 That’s why you can only install AdGuard for Android manually. To use the app on your mobile device, you will need to do the following.
 
