@@ -2112,6 +2112,7 @@ Rules with any other modifiers are considered invalid and will be discarded.
 :::info Compatibility
 
 - Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac, and Android and AdGuard Browser Extension for Chrome, Firefox, and Edge.
+- Rules with `$removeparam` modifier are supported by AdGuard Browser Extension, **running TSUrlFilter vX.X.X or later**.
 - `$removeparam` syntax for regular expressions is supported by AdGuard Browser Extension v4.0 and AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.8 or later**.
 - `POST` request types are supported only by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.10 or later**.
 
