@@ -19,7 +19,7 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 ## Instalace
 
-Většina aplikací pro Android je distribuována prostřednictvím služby Google Play. AdGuard zde však není prezentován, protože společnost Google zakazuje distribuci blokátorů reklam na úrovni sítě prostřednictvím služby Google Play, tj. aplikace, které blokují reklamy v jiných aplikacích. Další informace o restriktivní politice Google najdete v [našem blogu](https://blog.adguard.com/en/google-removes-adguard-android-app-google-play/).
+Většina aplikací pro Android je distribuována prostřednictvím služby Google Play. AdGuard zde však není prezentován, protože společnost Google zakazuje distribuci blokátorů reklam na úrovni sítě prostřednictvím služby Google Play, tj. aplikace, které blokují reklamy v jiných aplikacích. You will find more information about Google restrictive policy [in our blog](https://adguard.com/en/blog/adguard-google-play-removal.html).
 
 Proto můžete AdGuard pro Android nainstalovat pouze ručně. Chcete-li aplikaci používat v mobilním zařízení, musíte provést následující kroky.
 

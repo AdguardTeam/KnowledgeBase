@@ -10,7 +10,7 @@ sidebar_position: 3
 - 광고 추가 알고리즘을 수정했습니다.
 - 타사 개발자의 필터/확장 기능을 추가했습니다.
 - 필터 중 하나의 작성자가 규칙을 만들 때 실수를 했습니다.
-- 광고 재삽입. 이 방법에 대한 자세한 내용은 [블로그](https://adguard.com/blog/ad-reinsertion.html)에서 확인할 수 있습니다.
+- 광고 재삽입. Find more about this method in our [blog](https://adguard.com/en/blog/ad-reinsertion.html).
 
 직접 겪은 광고의 사례를 신청서에 작성하여 도움을 요청할 수 있습니다. 이 작업을 수행하려면 사용 중인 OS의 지침을 따르세요.
 

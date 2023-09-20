@@ -17,11 +17,11 @@ To analyze and diagnose different problems that may potentially arise, the AdGua
 
     ![Run window *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_1.png)
 
-1. Event Viewer window appears as shown in the picture.
+1. Окно программы «Просмотр событий» выглядит, как показано ниже.
 
     ![Event viewer *border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_2.png)
 
-    To save files that we need, do the following:
+    Чтобы сохранить нужные нам файлы, сделайте следующее:
 
     - Откройте *Приложение*: *Просмотр событий (локальный)* → *Логи Windows* → *Приложение*.
 
@@ -35,4 +35,4 @@ To analyze and diagnose different problems that may potentially arise, the AdGua
 
     - Выберите папку назначения, введите имя и нажмите *Сохранить*. Выберите *Отображать сведения для следующих языков*. Поставьте галочку напротив пункта *Английский язык*. Нажмите *OK*.
 
-Please send the two files that you've recently saved to **support@adguard.com**.
+Полученные два файла отправьте в службу поддержки AdGuard: **support@adguard.com**.

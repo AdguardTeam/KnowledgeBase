@@ -27,7 +27,7 @@ sidebar_position: 3
 
 **Следующие рекомендации помогут вам в этом процессе.**
 
-1. You can filter translations by clicking this button and selecting any offered option.
+1. Вы можете отфильтровать переводы, нажав на эту кнопку и выбрав любой из предложенных вариантов.
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/filter.png)
 
@@ -35,7 +35,7 @@ sidebar_position: 3
 
     ![crowdin *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/filter_files.png)
 
-1. Pay attention to the glossary terms highlighted with a dotted line in a source phrase. Обычно это специальные слова (например, названия торговых марок), которые не следует переводить.
+1. Обращайте внимание на термины глоссария, выделенные пунктиром в исходной фразе. Обычно это специальные слова (например, названия торговых марок), которые не следует переводить.
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/terms.png)
 

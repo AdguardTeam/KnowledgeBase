@@ -1,11 +1,19 @@
 ---
-title: How to setup outbound proxy
+title: How to set up outbound proxy
 sidebar_position: 8
 ---
 
 :::info
 
 Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+
+:::
+
+Below you can find a list of the most famous applications that you can configure to work as proxies in AdGuard.
+
+:::note
+
+If your app is not listed below, please check on its proxy configurations in the settings or contact its support team.
 
 :::
 
@@ -141,4 +149,4 @@ You should remove Shadowsocks app from filtering before setting up the process (
 
 ## Limitations
 
-There is a factor that can prevent certain traffic from being routed through the outgoing proxy. AdGuard will only re-route traffic that goes through it. Basically, it means apps that have **Ad blocking** flag enabled in the **Apps Management** tab.
+There is a factor that can prevent certain traffic from being routed through the outgoing proxy even after you configure AdGuard proxy settings. It can happen if you don't set up the app itself to send the traffic through AdGuard. To do it, you need to proceed to **App management**, choose the app, and turn on **Route traffic through AdGuard**.

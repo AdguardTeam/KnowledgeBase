@@ -21,9 +21,9 @@ sidebar_position: 4
 
 При переходах из результатов поиска Google, Yandex и других поисковых систем эта опция скрывает от сайта поисковый запрос, по которому вы нашли его.
 
-### Ask websites not to track you {#donottrack}
+### Просить сайты не отслеживать вас {#donottrack}
 
-Sends the [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) requests to the websites you visit.
+Отправляет запросы [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) и [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) на сайты, которые вы посещаете.
 
 ### Очистить URL от параметров отслеживания
 

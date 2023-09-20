@@ -19,7 +19,7 @@ AdGuard for Android is not to be confused with AdGuard Content Blocker. AdGuard 
 
 This screen combines all features of AdGuard’s protection:
 
-- Ad blocking
+- Bloqueio de anúncios
 - Tracking protection
 - Annoyance blocking
 - DNS protection
@@ -29,7 +29,7 @@ This screen combines all features of AdGuard’s protection:
 
 More on each feature below.
 
-### Ad blocking
+### Bloqueio de anúncios
 
 The feature blocks ads by applying ad-blocking and language-specific filters. To learn about the mechanism of ad blocking, you can read a [dedicated article](/general/ad-filtering/how-ad-blocking-works).
 

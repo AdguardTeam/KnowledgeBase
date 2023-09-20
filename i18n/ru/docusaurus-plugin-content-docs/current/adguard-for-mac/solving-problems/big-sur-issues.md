@@ -5,7 +5,7 @@ sidebar_position: 4
 
 :::info
 
-В этой статье рассказывается об AdGuard для Mac — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+В этой статье рассказывается об AdGuard для Mac — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -59,7 +59,7 @@ AdGuard не будет работать вместе с Cisco AnyConnect, ес�
 
 1. Используйте AdGuard в режиме [Автоматический прокси](#automatic-proxy).
 
-1. Disable SIP and switch AdGuard to Kernel Extension mode as explained [here](#kernel-extension).
+1. Отключите SIP и переключите AdGuard в режим Расширение Kernel [по инструкции](#kernel-extension).
 
 #### VPN-приложения со старым API
 
@@ -79,34 +79,34 @@ AdGuard не будет работать вместе с Cisco AnyConnect, ес�
 
 ### Совместимость с Little Snitch 5
 
-At this moment, Network Extension mode in AdGuard isn't compatible with [Little Snitch 5](https://obdev.at/products/littlesnitch/index.html). When both are running, there's a chance to encounter issues with various apps' behavior, even if they aren't filtered by AdGuard. Эта проблема вызвана багом в Big Sur, о котором мы уже проинформировали Apple. Это позволяет надеяться, что в ближайших обновлениях он будет исправлен.
+На момент написания статьи режим фильтрации «Сетевое расширение» в AdGuard не совместим с [Little Snitch 5](https://obdev.at/products/littlesnitch/index.html). Когда они оба запущены, существует вероятность столкнуться с проблемами в поведении различных приложений, даже если они исключены из фильтрации в AdGuard. Эта проблема вызвана багом в Big Sur, о котором мы уже проинформировали Apple. Это позволяет надеяться, что в ближайших обновлениях он будет исправлен.
 
-It needs to be said that this problem can't be solved by disabling connections monitoring in Little Snitch, because this action doesn't unload Little Snitch's extension from the system. We recommend to switch to [**Automatic Proxy**](#automatic-proxy) filtering mode when running AdGuard alongside with Little Snitch on Big Sur, at least until Apple fixes the bug.
+Проблему нельзя решить отключением мониторинга соединений в Little Snitch, поскольку это не выгружает его расширение из системы. Мы рекомендуем использовать режим фильтрации [**Автоматический прокси**](#automatic-proxy), если вы запускаете AdGuard на одном устройстве с Little Snitch под Big Sur, во всяком случае до тех пор, пока Apple не исправит данную проблему совместимости.
 
 ### Совместимость с локальными прокси
 
 :::note
 
-Now AdGuard can filter local proxies (mostly) without any problems. If you encounter any issues in OS versions 11.1+, or if you're using Big Sur 11.0, remove the local proxy from System settings and configure an upstream proxy in AdGuard by following the instruction below.
+Теперь AdGuard может фильтровать локальные прокси без проблем (в большинстве случаев). Если вы всё же столкнулись с какими-либо трудностями на OS 11.1 и выше или если вы используете Big Sur 11.0, уберите локальный прокси из системных настроек и настройте вышестоящий прокси в AdGuard, следуя инструкции ниже.
 
 :::
 
-To configure an upstream proxy in AdGuard for Mac in Big Sur:
+Чтобы настроить восходящий прокси-сервер в AdGuard for Mac в Big Sur:
 
-1. Open AdGuard's settings  *Preferences → Network → Outbound proxy*.
-2. Choose HTTP, HTTPS, SOCKS4 or SOCKS5, depending on your proxy type.
-3. Fill in the fields:
-    - `host` is the IP address of your proxy server,
-    - `port` is the desired port number to be used by the proxy server,
-    - `user` and `password` are corresponding username and password of your proxy (if needed). Ignore either or both when not applicable.
+1. Откройте настройки AdGuard *Настройки → Сеть → Исходящий прокси*.
+2. Выберите HTTP, HTTPS, SOCKS4 или SOCKS5 в зависимости от типа прокси-сервера.
+3. Заполните поля:
+    - `host` — IP-адрес вашего прокси-сервера,
+    - `port` — желаемый номер порта, который будет использоваться прокси-сервером,
+    - `user` и `password` — имя пользователя и пароль от вашего прокси-сервера соответственно (если требуются). Игнорируйте эти параметры, если один или оба не применимы к данному прокси.
 
-If you run into any problems, please contact our tech support at support@adguard.com.
+Если у вас возникли трудности, напишите в поддержку: support@adguard.com.
 
 #### Пример 1: Настройка вышестоящего прокси Shadowsocks
 
-Here's an example of how to configure an upstream proxy for [Shadowsocks](https://shadowsocks.org).
+Здесь на примере [Shadowsocks](https://shadowsocks.org) проиллюстрирована настройка upstream-прокси в AdGuard.
 
-First of all, you need a working server side for your proxy. Most likely, to set it up, you would use a JSON file like this (`server` and `password` values were chosen randomly here):
+First of all, you need a working server side for your proxy. Вероятнее всего, для этого вы будете использовать JSON-файл наподобие этого (значения полей `server` и `password` здесь выбраны случайным образом):
 
 ```json
 {
@@ -121,28 +121,28 @@ First of all, you need a working server side for your proxy. Most likely, to set
 
 :::tip
 
-You can find more information about how to get started on [Shadowsocks website](https://shadowsocks.org/guide/what-is-shadowsocks.html).
+Подробнее почитать о том, как начать работать с Shadowsocks, можно [на их сайте](https://shadowsocks.org/guide/what-is-shadowsocks.html).
 
 :::
 
-Then you'd have to install Shadowsocks client on your Mac. Make sure that you select 'Manual Mode' or 'Auto Mode' in its settings! The configuration won't work if you select 'Global Mode' (or 'Auto Mode' in Big Sur versions prior to 11.1).
+Затем надо установить клиент Shadowsocks на Mac. Убедитесь, что вы выбрали Ручной или Автоматический режим в настройках. Конфигурация с Global Mode работать не будет. В версиях Big Sur ниже 11.1 также не будет работать Автоматический режим.
 
-![Select Manual Mode or Auto Mode in settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/shadowsocks.jpg)
+![Выберите Ручной или Автоматический режим в настройках *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/shadowsocks.jpg)
 
-Now go to *AdGuard menu → Advanced → Advanced Settings...* and set the *Value* area of the `upstream.proxy` setting to `socks5://localhost:1080`. Notice that you need to use "local_port" value from the JSON file here.
+Перейдите в *Меню AdGuard → Дополнительно → Расширенные настройки...* и впишите в поле *Значение* настройки `upstream.proxy` строку `socks5://localhost:1080`. Обратите внимание, что здесь необходимо использовать значение "local_port" из JSON-файла, упомянутого выше.
 
-Because Shadowsocks uses SOCKS5, you also need to set the value of the `upstream.proxy.socks5udp` setting in AdGuard Advanced Settings to `true` to make AdGuard route UDP traffic to the proxy server.
+Поскольку Shadowsocks использует SOCKS5, вам также понадобится изменить значение настройки `upstream.proxy.socks5udp` в Расширенных настройках AdGuard на `true`, чтобы AdGuard направлял UDP-трафик через прокси-сервер.
 
 #### Пример 2: Настройка вышестоящего прокси Surge
 
-В версиях Big Sur 11.1 и выше не существует известных конфликтов между AdGuard и Surge. If you are using an older version of Big Sur (prior to 11.1), check that **System Proxy** in the bottom right corner is disabled. В противном случае Surge не будет работать вместе с AdGuard. On the other hand, **Enhanced Mode** can be enabled without causing a conflict in any Big Sur version.
+В версиях Big Sur 11.1 и выше не существует известных конфликтов между AdGuard и Surge. Если вы используете более старую версию Big Sur, убедитесь, что в правом нижнем углу отключён **системный прокси**. В противном случае Surge не будет работать вместе с AdGuard. On the other hand, **Enhanced Mode** can be enabled without causing a conflict in any Big Sur version.
 
-![Configuring an upstream Surge proxy *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/outbound-proxy.png)
+![Настройка upsteam-прокси Surge *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/outbound-proxy.png)
 
-Now go to *Preferences → Network → Outbound proxy* and fill in the fields. For SOCKS5 proxy type:
+Теперь перейдите в *Настройки → Сеть → Исходящий прокси* и заполните поля. Для типа прокси SOCKS5:
 
 - `host`: localhost
-- `port`: 6153 For HTTP proxy type:
+- `port`: 6153 Для типа прокси HTTP:
 - `host`: localhost
 - `port`: 6152
 
@@ -157,10 +157,10 @@ Now go to *Preferences → Network → Outbound proxy* and fill in the fields. F
 1. Откройте меню AdGuard.
 1. Выберите *Настройки...*.
 1. Переключитесь на вкладку *Сеть*.
-1. Click the *Select Mode...* button.
-1. Select *Automatic Proxy*.
+1. Кликните по кнопке *Выбрать режим...*.
+1. Выберите *Автоматический прокси*.
 
-![Switch AdGuard to Automatic proxy mode](https://cdn.adtidy.org/content/kb/ad_blocker/mac/automatic-proxy_en.jpg)
+![Переключите AdGuard в режим «Автоматический прокси»](https://cdn.adtidy.org/content/kb/ad_blocker/mac/automatic-proxy_en.jpg)
 
 AdGuard автоматически добавил **.pac-файл** в сетевые настройки вашего Mac, и теперь система будет распознавать AdGuard как прокси и попытается направлять через него весь трафик.
 
@@ -172,17 +172,17 @@ AdGuard автоматически добавил **.pac-файл** в сете�
 
 ### Переключение на Kernel Extension в Big Sur и Monterey {#kernel-extension}
 
-By default AdGuard uses Network Extension framework in Big Sur and Monterey as the old Kernel Extension framework is disabled there. This can cause some compatibility problems, but to enable Kernel Extension back, you need to disable System Integrity Protection (SIP) first. To disable SIP, follow this instruction:
+По умолчанию на Big Sur и Monterey AdGuard использует фреймворк Network Extension, так как старый фреймворк Kernel Extension там отключён. Это может вызывать проблемы совместимости, но чтобы включить Kernel Extension обратно, вам сначала потребуется отключить системную настройку безопасности (System Integrity Protection, или SIP). Чтобы отключить SIP, следуйте этой инструкции:
 
-1. Click the *Apple symbol* in the Menu bar.
-1. Click *Restart…*
-1. Hold down *Command-R* to reboot into Recovery Mode.
-1. Click *Utilities*.
-1. Select *Terminal*.
-1. Type `csrutil disable`.
-1. Press *Return* or *Enter* on your keyboard.
-1. Click the *Apple symbol* in the Menu bar.
-1. Click *Restart…*
+1. Кликните по *символу Apple* в строке меню.
+1. Кликните *Перезагрузить…*
+1. Зажмите *Command-R*, чтобы запустить систему в режиме восстановления.
+1. Кликните по кнопке *Утилиты*.
+1. Выберите *Терминал*.
+1. Вбейте в появившемся окне `csrutil disable`.
+1. Нажмите на клавиатуре клавишу *Return* или *Enter*.
+1. Кликните по *символу Apple* в строке меню.
+1. Кликните *Перезагрузить…*
 
 Теперь, когда SIP отключён, выполните следующие шаги для включения Kernel Extension:
 
@@ -191,9 +191,9 @@ By default AdGuard uses Network Extension framework in Big Sur and Monterey as t
 1. Откройте меню AdGuard.
 1. Выберите *Настройки...*.
 1. Переключитесь на вкладку *Сеть*.
-1. Click the *Select Mode...* button.
-1. Select *Kernel Extension*.
-1. Confirm that you want to switch to Kernel Extension.
+1. Кликните по кнопке *Выбрать режим...*.
+1. Выберите *Расширение Kernel*.
+1. Подтвердите, что хотите переключиться на него.
 
 :::caution
 

@@ -19,7 +19,7 @@ sidebar_position: 2
 
 ## AdGuard for Android のインストール方法
 
-【AdGuardがGoogle Playにない理由】これは、Googleがネットワークレベルの広告ブロッカー（つまり、他のアプリの広告をブロックするアプリ）のGoogle Playでの配布を禁止しているためです。 Googleの制限的なポリシーについては、[私たちのブログ記事](https://blog.adguard.com/en/google-removes-adguard-android-app-google-play/)でご確認いただけます。
+【AdGuardがGoogle Playにない理由】これは、Googleがネットワークレベルの広告ブロッカー（つまり、他のアプリの広告をブロックするアプリ）のGoogle Playでの配布を禁止しているためです。 You will find more information about Google restrictive policy [in our blog](https://adguard.com/en/blog/adguard-google-play-removal.html).
 
 この理由で、AdGuard for Androidは直接AdGuardウェブサイトから手動でインストールする必要があります。 方法は以下の通りです。
 

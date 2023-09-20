@@ -21,11 +21,11 @@ sidebar_position: 3
 
 ### Вопросы безопасности
 
-Может ли быть опасным позволять каким-то случайным приложениям управлять тем, что делает AdGuard? Именно для этого вместе с интентом отправляется пароль. Этот пароль генерируется автоматически, но вы можете поменять его самостоятельно в расширенных настройках AdGuard.
+Isn't it dangerous to let some random apps manage what AdGuard does? It is, and that's why a password is sent along with the intent. Этот пароль генерируется автоматически, но вы можете поменять его самостоятельно в расширенных настройках AdGuard.
 
 ### Доступные действия
 
-Вот список действий, которые, будучи включёнными в интент, будут понятны AdGuard:
+будучи включёнными в интент, будут понятны AdGuard:
 
 `start` запускает защиту, дополнительные данные не нужны;
 
@@ -49,7 +49,7 @@ sidebar_position: 3
 
 :::note
 
-Полный список поддерживаемых имён провайдеров можно найти в настройках AdGuard DNS в разделе «Пользовательские настройки DNS».
+The full list of supported provider names can be found in our [known DNS providers list](https://adguard-dns.io/kb/general/dns-providers/).
 
 :::
 
@@ -91,10 +91,10 @@ sidebar_position: 3
 
 `[type]` — тип прокси-сервера:
 
-- HTTP;
-- SOCKS4;
-- SOCKS5;
-- HTTPS_CONNECT.
+- HTTP
+- SOCKS4
+- SOCKS5
+- HTTPS_CONNECT
 
 `[host]` — исходящий прокси-домен или IP-адрес;
 
