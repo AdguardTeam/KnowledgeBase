@@ -109,19 +109,19 @@ Every encrypted Internet connection has an unencrypted part. This is the very fi
 
 #### OCSP checking
 
-If this setting is enabled, AdGuard will perform asynchronous OCSP checks to get the revocation status of a website's SSL certificate.
+Bu ayar etkinleştirilirse, AdGuard bir sitenin SSL sertifikasının iptal durumunu almak için zaman uyumsuz OCSP denetimleri gerçekleştirir.
 
 If an OCSP check is completed within the required timeout, AdGuard will immediately block the connection if the certificate is revoked or establish the connection if the certificate is valid.
 
-If the verification takes too long, AdGuard will allow the connection while continuing to check the certificate status in the background. Sertifika iptal edilirse alan adına yapılan mevcut ve gelecekteki bağlantılar engellenecektir.
+Doğrulama çok uzun sürerse, AdGuard arka planda sertifika durumunu kontrol etmeye devam ederken bağlantıya izin verir. Sertifika iptal edilirse alan adına yapılan mevcut ve gelecekteki bağlantılar engellenecektir.
 
 #### Redirect DNS-over-HTTPS requests
 
-If this setting is enabled, AdGuard will redirect DNS-over-HTTPS requests to the local DNS proxy in addition to plain DNS requests. We recommend disabling fallback upstreams and using only encrypted DNS servers to maintain privacy.
+Bu ayar etkinleştirilirse, AdGuard düz DNS isteklerine ek olarak DNS-over-HTTPS isteklerini yerel DNS proxy'sine yönlendirir. Gizliliği korumak için yedek üst kaynakları devre dışı bırakmanızı ve yalnızca şifrelenmiş DNS sunucularını kullanmanızı tavsiye ederiz.
 
 #### HTTP/3'ü filtrele
 
-If this setting is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
+Bu ayar etkinleştirilirse, AdGuard diğer istek türlerine ek olarak HTTP/3 üzerinden gönderilen istekleri de filtreler.
 
 ### Giden proxy
 
@@ -153,19 +153,19 @@ Here you can specify package names for which AdGuard should bypass QUIC traffic.
 
 #### Reconfigure Automatic proxy when network changes
 
-If this setting is enabled, the AdGuard protection will restart to reconfigure the automatic proxy settings when your device connects to another network. This setting only applies if *Routing mode* is set to *Automatic proxy*.
+Bu ayar etkinleştirilirse, cihazınız başka bir ağa bağlandığında otomatik proxy ayarlarını yeniden yapılandırmak için AdGuard koruması yeniden başlatılır. Bu ayar yalnızca *Yönlendirme modu* *Otomatik proxy* olarak ayarlanmışsa geçerlidir.
 
 #### IPv6 filtering
 
-If this setting is enabled, AdGuard will filter IPv6 networks if an IPv6 network interface is available.
+Bu ayar etkinleştirilirse, AdGuard bir IPv6 ağ arayüzü varsa IPv6 ağlarını filtreler.
 
 #### IPv4 ranges excluded from filtering
 
-Filtering for the IPv4 ranges listed in this section is disabled.
+Bu bölümde listelenen IPv4 aralıkları için filtreleme devre dışıdır.
 
 #### IPv6 ranges excluded from filtering
 
-Filtering for the IPv6 ranges listed in this section is disabled.
+Bu bölümde listelenen IPv6 aralıkları için filtreleme devre dışıdır.
 
 #### TCP keepalive for outgoing sockets
 
@@ -177,11 +177,11 @@ After a system-defined number of unsuccessful attempts to get a response from th
 
 #### Recovery delay for revoked VPN
 
-Here you can set the time of a delay in milliseconds before AdGuard tries to restore VPN protection after it has been revoked by a third-party VPN app or by deleting the VPN profile. The default value is 5000 ms.
+Here you can set the time of a delay in milliseconds before AdGuard tries to restore VPN protection after it has been revoked by a third-party VPN app or by deleting the VPN profile. Varsayılan değer 5000 ms'dir.
 
 #### Reschedule delay for revoked VPN recovery
 
-Here you can set the time of a delay in milliseconds before AdGuard reschedules the restoration of VPN protection after it has been revoked by a third-party VPN app or by deleting the VPN profile. The default value is 5000 ms.
+Here you can set the time of a delay in milliseconds before AdGuard reschedules the restoration of VPN protection after it has been revoked by a third-party VPN app or by deleting the VPN profile. Varsayılan değer 5000 ms'dir.
 
 #### MTU
 
@@ -189,15 +189,15 @@ Here you can set the maximum transmission unit (MTU) of the VPN interface. The r
 
 #### Restore VPN automatically
 
-If this setting is enabled, AdGuard’s local VPN will be automatically re-enabled after being turned off due to network absence, tethering, or low-power mode.
+Bu ayar etkinleştirilirse, AdGuard'ın yerel VPN'i ağ yokluğu, tethering veya düşük güç modu nedeniyle kapatıldıktan sonra otomatik olarak yeniden etkinleştirilir.
 
 #### Packet capture (PCAP)
 
-If this setting is enabled, AdGuard will create a file `timestamp.pcap` (for instance, 1682599851461.pcap) in the app cache directory. This file lists all network packets transferred through the VPN and can be analyzed with the Wireshark program.
+Bu ayar etkinleştirilirse, AdGuard uygulama önbellek dizininde bir `timestamp.pcap` dosyası (örneğin, 1682599851461.pcap) oluşturur. Bu dosya VPN üzerinden aktarılan tüm ağ paketlerini listeler ve Wireshark programıyla analiz edilebilir.
 
 #### Include Wi-Fi gateway in VPN routes
 
-If this setting is enabled, the gateway IP addresses will be added to to VPN routes when on Wi-Fi.
+Bu ayar etkinleştirilirse, ağ geçidi IP adresleri Wi-Fi'deyken VPN rotalarına eklenecektir.
 
 #### IPv4 address
 
@@ -205,11 +205,11 @@ Here you can enter the IP address that will be used to create a TUN interface. B
 
 #### Forcibly route LAN IPv4
 
-If this setting is enabled, AdGuard will filter all LAN connections, including local IPv4 network traffic, even if the *Route all LAN IPv4 connections* option is enabled.
+Bu ayar etkinleştirilirse, *Tüm LAN IPv4 bağlantılarını yönlendir* seçeneği etkinleştirilmiş olsa bile, AdGuard yerel IPv4 ağ trafiği de dahil olmak üzere tüm LAN bağlantılarını filtreler.
 
 #### Route all LAN IPv4 connections
 
-If this setting is enabled, AdGuard will exclude LAN connections from filtering for simple networks. This may not work for complex networks. This setting only applies if *Forcibly route LAN IPv4* is disabled.
+Bu ayar etkinleştirilirse, AdGuard LAN bağlantılarını basit ağlar için filtrelemeden hariç tutacaktır. Bu, karmaşık ağlar için işe yaramayabilir. Bu ayar yalnızca *LAN IPv4'ü zorla yönlendir* devre dışı bırakıldığında geçerlidir.
 
 #### IPv6 address
 
@@ -219,4 +219,4 @@ Here you can enter the IP address that will be used to create a TUN interface. B
 
 #### Detect Samsung Pay
 
-If this setting is enabled, AdGuard protection will be paused while Samsung Pay is in use. Korean users require this feature as they experience [issues with Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea) when AdGuard is enabled.
+Bu ayar etkinleştirilirse, Samsung Pay kullanımdayken AdGuard koruması duraklatılacaktır. Koreli kullanıcılar, AdGuard etkinleştirildiğinde [Samsung Pay ile ilgili sorunlar](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea) yaşadıkları için bu özelliğe ihtiyaç duymaktadır.

@@ -11,26 +11,26 @@ sidebar_position: 2
 
 ## AdGuard для Windows {#win}
 
-- SQLLite database engine: [sqlite.org](https://sqlite.org)
-- ADO.NET provider for SQLite: [system.data.sqlite.org/index.html/doc/trunk/www/index.wiki](https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki)
-- Json.NET — high-performance JSON framework for .NET: [www.newtonsoft.com/json](https://www.newtonsoft.com/json)
-- AvalonEdit — WPF-based text editor component: [avalonedit.net](https://avalonedit.net)
+- Движок базы данных SQLLite: [sqlite.org](https://sqlite.org)
+- Провайдер ADO.NET для SQLite: [system.data.sqlite.org/index.html/doc/trunk/www/index.wiki](https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki)
+- Json.NET — высокопроизводительный фреймворк JSON для .NET: [www.newtonsoft.com/json](https://www.newtonsoft.com/json)
+- AvalonEdit — компонент текстового редактора на основе WPF: [avalonedit.net](https://avalonedit.net)
 
 ## AdGuard для Mac {#mac}
 
 - Red Sweater Software, LLC для компонента RSVerticallyCenteredTextFieldCell: [http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes](http://www.red-sweater.com/blog/148/what-a-difference-a-cell-makes)
-- Ilija Tovilo for ITProgressIndicator component: [github.com/iluuu1994/ITProgressIndicator](https://github.com/iluuu1994/ITProgressIndicator)
+- Ilija Tovilo для ITProgressIndicator component: [github.com/iluuu1994/ITProgressIndicator](https://github.com/iluuu1994/ITProgressIndicator)
 - Sparkle Project для компонента Sparkle.framework: [http://sparkle-project.org](http://sparkle-project.org)
-- Robbie Hanson for GCDAsyncSocket component: [github.com/robbiehanson/CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket)
-- Tony Million for Reachability component: [github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
-- August «Gus» Mueller for Fmdb component: [github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
-- Stephen F. Booth for SFBCrashReporter project: [github.com/sbooth/SFBCrashReporter](https://github.com/sbooth/SFBCrashReporter)
-- Bartosz Janda for Acextract component: [github.com/bartoszj/acextract](https://github.com/bartoszj/acextract)
+- Robbie Hanson для компонента GCDAsyncSocket: [github.com/robbiehanson/CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket)
+- Tony Million для компонента Reachability: [github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
+- August «Gus» Mueller для компонента Fmdb: [github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)
+- Stephen F. Booth для проекта SFBCrashReporter: [github.com/sbooth/SFBCrashReporter](https://github.com/sbooth/SFBCrashReporter)
+- Bartosz Janda для компонента Acextract: [github.com/bartoszj/acextract](https://github.com/bartoszj/acextract)
 - FLOPageViewController: [github.com/floschliep/FLOPageViewController](https://github.com/floschliep/FLOPageViewController)
 
 ## AdGuard для Android {#android}
 
-- Logback-android by Tony19: [tony19.github.io/logback-android](https://tony19.github.io/logback-android)
+- Logback-android от Tony19: [tony19.github.io/logback-android](https://tony19.github.io/logback-android)
 - Otto от Square: [http://square.github.io/otto](http://square.github.io/otto)
 - RootTools Library by Stericson: [github.com/Stericson/RootTools](https://github.com/Stericson/RootTools)
 - MaterialDateRangePicker by Supratim Chakraborty: [github.com/borax12/MaterialDateRangePicker](https://github.com/borax12/MaterialDateRangePicker)

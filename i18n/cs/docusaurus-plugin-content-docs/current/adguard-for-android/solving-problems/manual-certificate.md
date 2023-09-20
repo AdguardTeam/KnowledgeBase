@@ -1,5 +1,5 @@
 ---
-title: Problémy s instalací certifikátu na zařízeních se systémem Android 11+
+title: Certificate installation on devices with Android 11+
 sidebar_position: 12
 ---
 
@@ -9,9 +9,30 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 :::
 
-Aby bylo možné filtrovat provoz HTTPS (což je velmi důležité, protože většina reklam používá HTTPS), musí AdGuard nainstalovat certifikát do uživatelského úložiště vašeho zařízení. Ve starších verzích operačního systému Android se to provádělo automaticky, ale v Androidu 11 a novějších verzích jej uživatelé musí [nainstalovat ručně](../../overview#https-filtering).
+To be able to [filter HTTPS traffic](/general/https-filtering/what-is-https-filtering.md) (which is extremely important as most ads use HTTPS), AdGuard needs to install a certificate into your device's user storage. On older versions of Android OS this was done automatically, but on Android 11 and later users have to install it manually.
 
-![Certificate *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/video.gif)
+![Certificate *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/g.gif)
+
+Follow these steps to install AdGuard certificate:
+
+1. When you see the *HTTPS filtering is off* notification, tap *Enable*.
+
+1. Then you'll be presented with three screens that explain:
+    - Why filter HTTPS traffic
+    - The safety of this filtering process
+    - The necessity of AdGuard certificate
+
+    Consecutively tap *Next* → *Next* → *Save certificate* on these screens.
+
+1. Tap *Save* at the bottom of the opened *Download* folder.
+
+1. After saving, tap *Open Settings*, navigate to *Encryption & credentials*, and then choose *Install a certificate*.
+
+1. You might see a warning, if so, tap *Install anyway*. From the list, select the file with AdGuard certificate.
+
+You're all set! Once the certificate is installed successfully, you've enabled HTTPS filtering.
+
+Please note: The steps provided are based on the Google Pixel 4 smartphone. If you're using a different Android device, the exact menu names or options might vary. For easier navigation consider searching for a certificate by accessing your device's settings and entering "certificate" or "credentials" in the search bar.
 
 Pokud se během ruční instalace certifikátu vyskytnou problémy (například jste certifikát nainstalovali, ale aplikace jej stále ignoruje), níže naleznete možná řešení.
 
