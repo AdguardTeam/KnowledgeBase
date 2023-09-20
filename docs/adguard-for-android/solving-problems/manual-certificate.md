@@ -21,7 +21,7 @@ Follow these steps to install AdGuard certificate:
         b. The safety of this filtering process
         c. The necessity of AdGuard certificate
 Consecutively tap *Next* → *Next* → *Save certificate* on these screens.
-3. Tap *Save* at the bottom of the opened *Download* folder. 
+3. Tap *Save* at the bottom of the opened *Download* folder.
 4. After saving, tap *Open Settings*, navigate to *Encryption & credentials*, and then choose *Install a certificate*.
 5. You might see a warning, if so, tap *Install anyway*. From the list, select the file with AdGuard certificate.
 
