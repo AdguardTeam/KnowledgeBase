@@ -16,14 +16,19 @@ To be able to [filter HTTPS traffic](/general/https-filtering/what-is-https-filt
 Follow these steps to install AdGuard certificate:
 
 1. When you see the *HTTPS filtering is off* notification, tap *Enable*.
-2. Then you'll be presented with three screens that explain:
-        a. Why filter HTTPS traffic
-        b. The safety of this filtering process
-        c. The necessity of AdGuard certificate
-Consecutively tap *Next* → *Next* → *Save certificate* on these screens.
-3. Tap *Save* at the bottom of the opened *Download* folder.
-4. After saving, tap *Open Settings*, navigate to *Encryption & credentials*, and then choose *Install a certificate*.
-5. You might see a warning, if so, tap *Install anyway*. From the list, select the file with AdGuard certificate.
+
+1. Then you'll be presented with three screens that explain:
+    - Why filter HTTPS traffic
+    - The safety of this filtering process
+    - The necessity of AdGuard certificate
+
+    Consecutively tap *Next* → *Next* → *Save certificate* on these screens.
+
+1. Tap *Save* at the bottom of the opened *Download* folder.
+
+1. After saving, tap *Open Settings*, navigate to *Encryption & credentials*, and then choose *Install a certificate*.
+
+1. You might see a warning, if so, tap *Install anyway*. From the list, select the file with AdGuard certificate.
 
 You're all set! Once the certificate is installed successfully, you've enabled HTTPS filtering.
 
