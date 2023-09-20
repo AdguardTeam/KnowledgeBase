@@ -1,5 +1,5 @@
 ---
-title: Low-level settings guide
+title: Průvodce nízkoúrovňových nastavení
 sidebar_position: 6
 ---
 
@@ -9,7 +9,7 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 :::
 
-## How to reach Low-level settings
+## Jak dosáhnout nízkoúrovňových nastavení
 
 :::caution
 
@@ -35,7 +35,7 @@ Zde můžete uvést domény, které budou přesměrovány přímo na záložní 
 
 #### Detekce vyhledávacích domén
 
-If this setting is enabled, AdGuard will detect search domains and automatically forward them to fallback upstreams.
+Pokud je tato možnost povolena, AdGuard zjistí vyhledávací domény a automaticky je přepošle záložním upstreamům.
 
 #### Odchozí bootstrap připojení
 
@@ -75,23 +75,23 @@ Pokud je tato možnost povolena, AdGuard odstraní z DNS dotazů parametry Encry
 
 #### Ignorovat nedostupný odchozí proxy
 
-If this setting is enabled, AdGuard will send DNS requests directly when the outbound proxy is unavailable.
+Pokud je toto nastavení povoleno, bude AdGuard v případě nedostupnosti odchozího proxy serveru odesílat DNS požadavky napřímo.
 
 #### Vyzkoušet HTTP/3 pro odchozí připojení DNS-over-HTTPS
 
-If this setting is enabled, AdGuard will use HTTP/3 to speed up DNS query resolution for DoH upstreams. Otherwise, AdGuard will revert to its default behavior and use HTTP/2 to send all DNS requests for DNS-over-HTTPS.
+Pokud je toto nastavení povoleno, bude AdGuard používat protokol HTTP/3 ke zrychlení řešení dotazů DNS pro odchozí připojení DoH. V opačném případě se AdGuard vrátí ke svému výchozímu chování a použije protokol HTTP/2 k odesílání všech DN požadavkůS pro DNS-over-HTTPS.
 
 #### Reakce na selhání SERVFAIL
 
-If this setting is enabled and all upstreams, including fallback ones, fail to respond, AdGuard will send a SERVFAIL response to the client.
+Pokud je toto nastavení povoleno a všechna odchozí připojení, včetně záložních, neodpovídají, odešle AdGuard klientovi odpověď SERVFAIL.
 
 #### Použít záložní řešení pro domény, které nejsou záložní
 
-If this setting is enabled, AdGuard will use fallback upstreams for all domains. Otherwise, fallback upstreams will only be used for fallback domains and search domains if the corresponding option is enabled.
+Pokud je toto nastavení povoleno, AdGuard použije záložní odchozí připojení pro všechny domény. V opačném případě se záložní odchozí připojení použije pouze pro záložní domény a vyhledávací domény, pokud je příslušná možnost povolena.
 
 #### Ověřit odchozí připojení DNS
 
-If this setting is enabled, AdGuard will test DNS upstreams before adding or updating custom DNS servers.
+Pokud je toto nastavení povoleno, bude AdGuard před přidáním nebo aktualizací vlastních DNS serverů testovat odchozí připojení DNS.
 
 ### Filtrování
 
