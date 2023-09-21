@@ -71,6 +71,12 @@ There are three pre-configured protection levels. Here’s what features they ha
 
     e. *Self-destruction of third-party cookies*. This setting limits the time to live of third-party cookies to 180 min
 
+    :::caution
+
+    This setting deletes all third-party cookies, including the information of your logins through social networks or other third-party services. You may have to periodically re-log in to some websites and face other cookie-related issues. To block only tracking cookies, use the *Standard* protection level.
+
+    :::
+
     f. *Remove X-Client-Data header*
 
  3. **Ultimate**
