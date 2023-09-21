@@ -15,8 +15,8 @@ Ad Blocker licenses are also sold by various distributors. The availability of A
 
 To make more use of your AdGuard products, you can upgrade your license for the following benefits.
 
-* To extend the number of devices, you can **upgrade your Personal license to Family**
-* You can also **upgrade your 1-year subscription to a lifetime license**
+- To extend the number of devices, you can **upgrade your Personal license to Family**
+- You can also **upgrade your 1-year subscription to a lifetime license**
 
 You can upgrade your license in your AdGuard account. To do so, click *Upgrade to Lifetime* or *Increase device limit*.
 

@@ -11,23 +11,23 @@ A license is permission to use the AdGuard product, provided in accordance with 
 
 On the [purchase page](https://adguard.com/license.html), you can see the following types of licenses:
 
-* **1-year subscriptions** — these licenses are renewed automatically every year or can be extended manually
-    * Personal — up to 3 devices
-    * Family — up to 9 devices
-* **Lifetime** — these licenses are not time-limited
-    * Personal — up to 3 devices
-    * Family — up to 9 devices
+- **1-year subscriptions** — these licenses are renewed automatically every year or can be extended manually
+    - Personal — up to 3 devices
+    - Family — up to 9 devices
+- **Lifetime** — these licenses are not time-limited
+    - Personal — up to 3 devices
+    - Family — up to 9 devices
 
 There are also licenses that the user can purchase from other sources or get for free:
 
-* **Trial licenses** are free time-limited licenses that allow you to test the full functionality of the product
-    * AdGuard for Windows — 14-day trial
-    * AdGuard for Mac — 14-day trial
-    * AdGuard for Android — 7-day trial
-* **Distributor licenses** and **gifted licenses** can be both time-limited and non-time limited. Licenses with an expiration date can only be renewed manually
-    * Personal — up to 3 devices
-    * Family — up to 9 devices
-* **The AdGuard Pro for iOS license** is purchased and managed through the App Store and can only be used on iOS and iPadOS devices with the same Apple ID
+- **Trial licenses** are free time-limited licenses that allow you to test the full functionality of the product
+    - AdGuard for Windows — 14-day trial
+    - AdGuard for Mac — 14-day trial
+    - AdGuard for Android — 7-day trial
+- **Distributor licenses** and **gifted licenses** can be both time-limited and non-time limited. Licenses with an expiration date can only be renewed manually
+    - Personal — up to 3 devices
+    - Family — up to 9 devices
+- **The AdGuard Pro for iOS license** is purchased and managed through the App Store and can only be used on iOS and iPadOS devices with the same Apple ID
 
 :::tip
 
@@ -45,8 +45,8 @@ Alternatively, you can enter your [license key](#license-key) in your AdGuard ap
 
 A license key is a unique string of characters that represents an AdGuard Ad Blocker license. It is automatically registered to the email you used to purchase the license, or is provided to you when you purchase an AdGuard license from a distributor. With a license key, you can:
 
-* [Activate your license](../activation) in a product, if you don't have an AdGuard account
-* Bind your license to your AdGuard account and unbind it
+- [Activate your license](../activation) in a product, if you don't have an AdGuard account
+- Bind your license to your AdGuard account and unbind it
 
 When you unbind a license, be sure to save the license key first. You'll need the key to rebind your license or transfer it to another account.
 
