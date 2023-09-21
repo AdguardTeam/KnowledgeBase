@@ -1011,7 +1011,7 @@ The list of the available modifier options:
 - `location` disables [**Block Location API**](../../stealth-mode#location) option
 - `flash` disables [**Block Flash**](../../stealth-mode#flash) option
 - `java` disables [**Block Java**](../../stealth-mode#java) option
-- `referrer` disables [**Hide Referrer from third parties**](../../stealth-mode#miscellaneous) option
+- `referrer` disables [**Hide Referer from third parties**](../../stealth-mode#miscellaneous) option
 - `useragent` disables [**Hide your User-Agent**](../../stealth-mode#useragent) option
 - `ip` disables [**Hide your IP address**](../../stealth-mode#ip) option
 - `xclientdata` disables [**Remove X-Client-Data header from HTTP requests**](../../stealth-mode#xclientdata) option
