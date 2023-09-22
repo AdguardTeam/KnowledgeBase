@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## What is an AdGuard license
 
-A license is permission to use the AdGuard product, provided in accordance with the [End User License Agreement](https://adguard.com/eula.html). If bound to an email address, AdGuard licenses can be found in the user's [AdGuard account](https://my.adguard.com/).
+A license is a permission to use the AdGuard product, provided in accordance with the [End User License Agreement](https://adguard.com/eula.html). If bound to an email address, AdGuard licenses can be found in the user's [AdGuard account](https://my.adguard.com/).
 
 ## What types of AdGuard licenses exist
 
@@ -37,7 +37,7 @@ To extend the device limit, you can [upgrade](../payment-options/#upgrade) your 
 
 ## How to use the AdGuard license
 
-To use your license on a device, log in to your AdGuard app using the email address associated with the license. If the license wasn't bound to your email address yet, you can do it in your [AdGuard account](https://my.adguard.com/). To do so, open the *Licenses* tab and click *Bind license*.
+To use your license on a device, log in to your AdGuard app using the email address associated with the license. If the license hasn't been bound to your email address yet, you can do it in your [AdGuard account](https://my.adguard.com/). To do so, open the *Licenses* tab and click *Bind license*.
 
 Alternatively, you can enter your [license key](#license-key) in your AdGuard app.
 
