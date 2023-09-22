@@ -11,18 +11,18 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 ## VPN apps
 
-Other VPN apps are incompatible with AdGuard running in the Local VPN filtering mode since you cannot have two active VPNs at the same time. To solve this problem we suggest you:
+AdGuard'ı *Yerel VPN* filtreleme modunda kullanıyorsanız, diğer VPN uygulamalarını aynı anda çalıştıramazsınız. Bu sorunu çözmek için şunları yapmanızı tavsiye ederiz:
 
-- [AdGuard VPN](https://adguard-vpn.com/welcome.html) kullanın — iki uygulamanın sorunsuz şekilde çalışmasına izin veren Entegre moda sahiptir
-- AdGuard'ı Yerel HTTP Proxy modunda kullanın
+- [AdGuard VPN](https://adguard-vpn.com/welcome.html) kullanın — iki uygulamanın sorunsuz şekilde çalışmasına izin veren *Entegre moda* sahiptir
+- Configure your VPN app to act as an [outbound proxy](../solving-problems/outbound-proxy.md) and set up a local outbound proxy using the parameters from the third-party app
+- Switch to the *Automatic proxy* mode. When you do that, AdGuard will no longer use local VPN and will reconfigure iptables instead
+- Switch to the *Manual proxy* mode. To do this, go to *Settings* →  *Filtering* → *Network* → *Routing mode*
 
-:::caution
+:::note Compatibility
 
-On Android 10 and later, the 'manual' HTTP proxy mode is no longer supported.
+The *Automatic proxy* mode is only accessible on rooted devices. For *Manual proxy*, rooting is required on devices running on Android 10 or later.
 
 :::
-
-- VPN uygulamanızı giden bir proxy olarak çalışacak şekilde yapılandırın ve üçüncü taraf uygulamasındaki parametreleri kullanarak yerel bir giden proxy ayarlayın. Bunu yapmak için üçüncü taraf bir VPN uygulamasının SOCKS4/SOCKS5 modunu desteklemesi gerekir. Örneğin, AdGuard otomatik olarak 'Orbot: Tor ile Proxy' ile yapılandırılabilir.
 
 ## Private DNS
 
@@ -38,9 +38,9 @@ Some device manufacturers keep Private DNS settings hidden and set 'Automatic' m
 
 To be able to filter HTTPS traffic, AdGuard requires the user to add a certificate to the device's trusted user certificates. Unfortunately, UC-family browsers don't trust user certificates, so AdGuard cannot perform HTTPS filtering there.
 
-- Bu sorunu çözmek için sertifikayı sistem sertifika deposuna taşıyın
+- To solve this problem, move the [certificate to the system certificate store](../solving-problems/https-certificate-for-rooted.md/)
 
-:::caution
+:::note Compatibility
 
 Requires root access.
 
@@ -48,9 +48,9 @@ Requires root access.
 
 ### Dolphin Browser: Dolphin Browser, Dolphin Browser Express
 
-AdGuard cannot filter its traffic when operating in **Manual proxy mode** because this browser ignores system proxy settings.
+AdGuard cannot filter its traffic when operating in the *Manual proxy* mode because this browser ignores system proxy settings.
 
-- Bu sorunu çözmek için **Yerel VPN** filtreleme modunu kullanın
+- Use the *Local VPN* filtering mode to solve this problem
 
 ### Opera mini: Opera mini, Opera mini with Yandex
 

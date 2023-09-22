@@ -19,17 +19,17 @@ sidebar_position: 14
 
 ## Как установить сертификат AdGuard в системное хранилище на рутированном устройстве
 
-1. Enable HTTPS filtering in AdGuard for Android and save AdGuard's certificate to the User store (use [this instruction](../../overview#https-filtering) if needed)
+1. Включите HTTPS-фильтрацию в AdGuard для Android и сохраните сертификат AdGuard в пользовательское хранилище (при необходимости используйте [эту инструкцию](../../overview#https-filtering))
 
-     From AdGuard for Android v4.1 and after users can install two certificates to the User store, which will help to filter websites in Chrome browser.
+     Начиная AdGuard для Android версии 4.1, пользователи могут установить два сертификата, которые помогут фильтровать сайты в браузере Chrome.
 
-1. Go to **AdGuard app** → **Menu** (≡) → **Settings** → **Network** → **HTTPS filtering** → **Security certificate** → tap “**Copy to the system store**”
+1. Перейдите в **Приложение AdGuard** → **Меню** (≡) → **Настройки** → **Сеть** → **HTTPS-фильтрация** → **Сертификат безопасности** → нажмите «**Скопировать в системный магазин**»
 
-    That is enough for older versions of Magisk.
+    Этого достаточно для старых версий Magisk.
 
-    However, if you have a newer version, you will get this message:
+    Но если у вас более новая версия, вы получите следующее сообщение:
 
-    > Unable to copy the certificate to the system store. Try using “AdGuard Certificate” module.
+    > Не удалось скопировать сертификат в системное хранилище. Попробуйте использовать модуль «Сертификат AdGuard».
 
     In that case, proceed to steps below:
 

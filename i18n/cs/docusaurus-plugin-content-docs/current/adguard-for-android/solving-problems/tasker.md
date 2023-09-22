@@ -21,11 +21,11 @@ Díky tomuto rozhraní může každá aplikace odeslat speciální zprávu (tzv.
 
 ### Obavy o bezpečnost
 
-Nebylo by trochu nebezpečné, ptáte se — nechat náhodné aplikace spravovat to, co dělá AdGuard? To ano, a proto se spolu se záměrem odesílá i heslo. Toto heslo vygeneruje AdGuard automaticky, ale můžete ho samozřejmě kdykoli změnit.
+Isn't it dangerous to let some random apps manage what AdGuard does? It is, and that's why a password is sent along with the intent. Toto heslo vygeneruje AdGuard automaticky, ale můžete ho samozřejmě kdykoli změnit.
 
 ### Dostupné akce
 
-Jste připraveni zašpinit si ruce? Zde jsou uvedeny akce, kterým bude AdGuard rozumět, pokud budou zahrnuty do záměru:
+Zde jsou uvedeny akce, kterým bude AdGuard rozumět, pokud budou zahrnuty do záměru:
 
 `start` spouští ochranu, nejsou potřeba žádné další údaje;
 
@@ -49,7 +49,7 @@ Jste připraveni zašpinit si ruce? Zde jsou uvedeny akce, kterým bude AdGuard 
 
 :::note
 
-Úplný seznam podporovaných názvů poskytovatelů naleznete v nastavení AdGuard DNS v části "Vlastní nastavení DNS".
+The full list of supported provider names can be found in our [known DNS providers list](https://adguard-dns.io/kb/general/dns-providers/).
 
 :::
 
@@ -91,10 +91,10 @@ Nebo můžete parametry odebrání nakonfigurovat ručně:
 
 `[type]` — typ proxy:
 
-- HTTP;
-- SOCKS4;
-- SOCKS5;
-- HTTPS_CONNECT.
+- HTTP
+- SOCKS4
+- SOCKS5
+- HTTPS_CONNECT
 
 `[host]` — doména nebo IP adresa odchozího proxy;
 

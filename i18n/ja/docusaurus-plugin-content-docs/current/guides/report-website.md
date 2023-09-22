@@ -10,7 +10,7 @@ sidebar_position: 3
 - 広告を追加するアルゴリズムの変更
 - サードパーティーデベロッパーからのフィルター/拡張機能が追加されている
 - 特定フィルタの作者が、ルールを作成する際にミスをした
-- 広告の再挿入 （この手段について[詳しくはこちらのブログ記事](https://adguard.com/blog/ad-reinsertion.html)にて）
+- 広告の再挿入 Find more about this method in our [blog](https://adguard.com/en/blog/ad-reinsertion.html).
 
 ユーザー様が、直面された広告の事例を含めて問題報告用フォームを記入してご報告いただければ大変助かります。 報告方法に関しては、以下のお使いのOSに応じた手順をご利用ください。
 

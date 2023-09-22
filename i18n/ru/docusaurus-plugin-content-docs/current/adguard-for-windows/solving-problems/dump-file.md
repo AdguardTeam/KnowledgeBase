@@ -13,15 +13,15 @@ sidebar_position: 8
 
 1. Press **Ctrl + Shift + Esc** and click **Task Manager**
 
-1. In the upper menu bar select **Details**
+1. В верхней строке меню выберите **Подробности**
 
-    ![Task Manager details](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/details_en.png)
+    ![Сведения о диспетчере задач](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/details_en.png)
 
-1. Right-click the process that you want to create the dump file for (for example, the support team may ask you to create a dump for `Adguard.exe`)
+1. Щёлкните правой кнопкой мыши на процесс, для которого вы хотите создать файл дампа (например, служба поддержки может попросить вас создать дамп для `Adguard.exe`)
 
-1. In the drop-down menu click **Create dump file**
+1. В раскрывающемся меню нажмите **Создать файл дампа**
 
-1. The file was created successfully!
+1. Файл успешно создан!
 
     ![Create dump file](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/create_dump_file_en.png)
 

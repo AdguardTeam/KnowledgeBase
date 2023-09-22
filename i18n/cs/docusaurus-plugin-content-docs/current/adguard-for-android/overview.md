@@ -260,25 +260,25 @@ Pokud klepnete na aplikaci, zobrazí se její úplné statistiky: požadavky, kt
 
 ### Společnosti
 
-This section displays companies that your device reaches out to. What does it mean? AdGuard detects the domains your device sends requests to and determines which companies they belong to. A database of companies can be found on [GitHub](https://github.com/AdguardTeam/companiesdb).
+Tato sekce zobrazuje společnosti, na které se vaše zařízení obrací. Co to znamená? AdGuard detekuje domény, do kterých vaše zařízení odesílá požadavky a určuje, kterým společnostem patří. Databázi společností najdete na [GitHubu](https://github.com/AdguardTeam/companiesdb).
 
 ### Statistiky DNS
 
-This section shows data about the requests handled by *DNS protection*. You can see the total number of requests sent and how many were blocked by AdGuard in figures and graphs. You'll also find statistics on the amount of traffic saved, downloaded, and uploaded.
+Tato sekce zobrazuje údaje o požadavcích zpracovávaných *DNS ochranou*. Celkový počet odeslaných požadavků a počet požadavků zablokovaných AdGuardem si můžete prohlédnout v číslech a grafech. Najdete zde také statistiky o množství ušetřených, stažených a nahraných dat.
 
 ### Využití baterie
 
-This section displays statistics on the device resources used by AdGuard during the last 24 hours. The data may differ from your device settings. This happens because the system attributes the traffic of filtered apps to AdGuard. Thus, the device shows that AdGuard consumes more resources than it actually does. [Read more about battery and traffic consumption issues](/adguard-for-android/solving-problems/battery/)
+Tato sekce zobrazuje statistiky o prostředcích zařízení použitých AdGuardem za posledních 24 hodin. Údaje se mohou lišit od nastavení vašeho zařízení. K tomu dochází proto, že systém připisuje provoz filtrovaných aplikací AdGuardu. Zařízení tedy zobrazuje, že AdGuard spotřebovává více prostředků, než ve skutečnosti spotřebovává. [Přečtěte si více o problémech s baterií a spotřebou](/adguard-for-android/solving-problems/battery/)
 
 ## Nastavení
 
 ### Obecné
 
-This section helps you manage the appearance and behavior of the app: you can set the color theme and language, manage notifications, and more. If you want to help the AdGuard team detect app crashes and research usability, you can enable *Auto-report crashes* and *Send technical and interaction data*.
+Tato sekce vám pomůže spravovat vzhled a chování aplikace: můžete nastavit barevný motiv a jazyk, spravovat oznámení a další. Pokud chcete týmu AdGuard pomoci detekovat pády aplikace a zkoumat použitelnost, můžete povolit *Automatické hlášení pádů* a *Odesílání technických a interakčních dat*.
 
 ![General *mobile_border](https://cdn.adtidy.org/blog/new/my5quggeneral.png)
 
-Under *App and filter updates*, you can configure automatic filter updates and select an app update channel. Choose *Release* for more stability and *Beta* or *Nightly* for early access to new features.
+V sekci *Aktualizace aplikace a filtrů* můžete nakonfigurovat automatické aktualizace filtrů a vybrat kanál aktualizace aplikace. Vyberte *Hlavní* pro větší stabilitu a *Beta* nebo *Nightly* pro včasný přístup k novým funkcím.
 
 ![Updates *mobile_border](https://cdn.adtidy.org/blog/new/hqm8kupdates.png)
 

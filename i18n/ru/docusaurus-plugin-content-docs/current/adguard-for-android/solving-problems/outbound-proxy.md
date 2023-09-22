@@ -1,11 +1,19 @@
 ---
-title: Как настроить вышестоящий прокси-сервер
+title: How to set up outbound proxy
 sidebar_position: 8
 ---
 
 :::info
 
 В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+
+:::
+
+Below you can find a list of the most famous applications that you can configure to work as proxies in AdGuard.
+
+:::note
+
+If your app is not listed below, please check on its proxy configurations in the settings or contact its support team.
 
 :::
 
@@ -25,7 +33,7 @@ In this article we give examples of how to set up some of the most popular proxi
 
 1. Тапните по кнопке **Настроить интеграцию с Tor®r**.
 
-1. All the required fields will be pre-filled:
+1. Все обязательные поля будут предварительно заполнены:
 
     | Поле        | Значение              |
     | ----------- | --------------------- |
@@ -33,15 +41,15 @@ In this article we give examples of how to set up some of the most popular proxi
     | Прокси-хост | *127.0.0.1*           |
     | Порт прокси | *9050*                |
 
-    Or you can tap **Proxy server** → **Add proxy server**, enter these values manually, and set Orbot as a default proxy.
+    Или же вы можете нажать на **Прокси** → **Добавить прокси-сервер**, ввести эти значения вручную и установить Orbot в качестве прокси-сервера по умолчанию.
 
-1. Enable the main Proxy switch and AdGuard protection to route your device's traffic through the proxy.
+1. Включите основной переключатель Прокси и защиту AdGuard, чтобы направить трафик вашего устройства через прокси.
 
-    Now AdGuard will forward all traffic through Orbot. If you disable Orbot, Internet connection will be unavailable until you disable outbound proxy settings in AdGuard.
+    Теперь AdGuard будет перенаправлять весь трафик через Orbot. Если вы отключите Orbot, подключение к интернету будет недоступно до тех пор, пока вы не отключите настройки исходящего прокси в AdGuard.
 
 ### Как использовать AdGuard с PIA (Private Internet Access)
 
-*Here we presume that you are already a PIA VPN client and have it installed on your device.*
+*Здесь мы предполагаем, что вы уже клиент PIA VPN и он установлен на вашем устройстве.*
 
 1. Open AdGuard and go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server**.
 
@@ -53,11 +61,11 @@ In this article we give examples of how to set up some of the most popular proxi
     | Прокси-хост | *proxy-nl.privateinternetaccess.com* |
     | Порт прокси | *1080*                               |
 
-1. You also need to fill out the **Username/Password** fields. To do so, log in to the [Client Control Panel](https://www.privateinternetaccess.com/pages/client-sign-in) on the PIA website. Click the **Generate Password** button under the **Generate PPTP/L2TP/SOCKS Password** section. A username starting with "x" and a random password will be shown. Use them to fill out the **Proxy username** and **Proxy password** fields in AdGuard.
+1. Вам также понадобится заполнить поля **Имя пользователя/Пароль**. Для этого залогиньтесь в [Панели Клиентского Контроля](https://www.privateinternetaccess.com/pages/client-sign-in) на сайте PIA. Кликните по кнопке **Сгенерировать пароль** в секции **Сгенерировать пароль PPTP/L2TP/SOCKS**. A username starting with "x" and a random password will be shown. Используйте их, чтобы заполнить поля **Имя пользователя** и **Пароль** в AdGuard.
 
 1. Tap **Save and select**.
 
-1. Enable the main Proxy switch and AdGuard protection to route your device's traffic through the proxy.
+1. Включите основной переключатель Прокси и защиту AdGuard, чтобы направить трафик вашего устройства через прокси.
 
 ### Как использовать AdGuard с TorGuard
 
@@ -77,7 +85,7 @@ In this article we give examples of how to set up some of the most popular proxi
 
 1. Tap **Save and select**.
 
-1. Enable the main Proxy switch and AdGuard protection to route your device's traffic through the proxy.
+1. Включите основной переключатель Прокси и защиту AdGuard, чтобы направить трафик вашего устройства через прокси.
 
 ### Как использовать AdGuard с NordVPN
 
@@ -95,7 +103,7 @@ In this article we give examples of how to set up some of the most popular proxi
 
 1. Tap **Save and select**.
 
-1. Enable the main Proxy switch and AdGuard protection to route your device's traffic through the proxy.
+1. Включите основной переключатель Прокси и защиту AdGuard, чтобы направить трафик вашего устройства через прокси.
 
 ### Как использовать AdGuard вместе с Shadowsocks
 
@@ -119,7 +127,7 @@ You should remove Shadowsocks app from filtering before setting up the process (
 
 1. Tap **Save and select**.
 
-1. Enable the main Proxy switch and AdGuard protection to route your device's traffic through the proxy.
+1. Включите основной переключатель Прокси и защиту AdGuard, чтобы направить трафик вашего устройства через прокси.
 
 ### How to use AdGuard with Clash
 
@@ -127,11 +135,11 @@ You should remove Shadowsocks app from filtering before setting up the process (
 
 1. Open Clash and go to **Settings** → **Network** → **Route System Traffic** and toggle the switch. This will set Clash to proxy mode.
 
-1. Open AdGuard and go to **App management**. Choose **Clash For Android** and disable **Route traffic through AdGuard**. This will eliminate traffic looping.
+1. Open AdGuard and go to **App management**. Choose **Clash For Android** and disable **Route traffic through AdGuard**. Это предотвратит зацикливание трафика.
 
 1. Then go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server**.
 
-1. Tap **Add proxy server** and fill in the fields:
+1. Нажмите **Добавить прокси-сервер** и заполните поля:
 
     | Поле        | Значение    |
     | ----------- | ----------- |
@@ -141,4 +149,4 @@ You should remove Shadowsocks app from filtering before setting up the process (
 
 ## Ограничения
 
-There is a factor that can prevent certain traffic from being routed through the outgoing proxy. AdGuard will only re-route traffic that goes through it. Basically, it means apps that have **Ad blocking** flag enabled in the **Apps Management** tab.
+There is a factor that can prevent certain traffic from being routed through the outgoing proxy even after you configure AdGuard proxy settings. It can happen if you don't set up the app itself to send the traffic through AdGuard. To do it, you need to proceed to **App management**, choose the app, and turn on **Route traffic through AdGuard**.

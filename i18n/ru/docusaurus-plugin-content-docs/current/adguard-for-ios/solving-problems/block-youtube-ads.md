@@ -1,11 +1,11 @@
 ---
-title: How to block YouTube ads
+title: Как заблокировать рекламу на YouTube
 sidebar_position: 4
 ---
 
 :::info
 
-В этой статье рассказывается об AdGuard для iOS — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+В этой статье рассказывается об AdGuard для iOS — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::  
 
@@ -13,22 +13,22 @@ sidebar_position: 4
 
 ## Как заблокировать рекламу в приложении YouTube
 
-1. Open the YouTube app.
-1. Choose a video and tap *Share*.
-1. Tap *More*, then select *Block YouTube Ads (by AdGuard)*.
+1. Откройте приложение YouTube.
+1. Выберите видеоролик и нажмите *Поделиться*.
+1. Нажмите *Подробнее*, затем выберите *Блокировать рекламу на YouTube (с помощью AdGuard)*.
 
-AdGuard will open its ad-free video player.
+AdGuard откроет свой видеоплеер без рекламы.
 
 ## Как заблокировать рекламу на YouTube в Safari
 
 :::tip
 
-Make sure you've given AdGuard access to all websites. You can check it in Safari → Extensions → AdGuard. Then open AdGuard and enable *Advanced protection*.
+Убедитесь, что вы предоставили AdGuard доступ ко всем сайтам. Проверить это можно в Safari → Расширения → AdGuard. Затем откройте AdGuard и включите *Расширенную защиту*.
 
 :::
 
 1. Откройте youtube.com в Safari.
-1. Choose a video and tap *Share*.
-1. Tap *Block YouTube Ads (by AdGuard)*.
+1. Выберите видеоролик и нажмите *Поделиться*.
+1. Нажмите *Блокировать рекламу на YouTube (от AdGuard)*.
 
-AdGuard will open its ad-free video player.
+AdGuard откроет свой видеоплеер без рекламы.

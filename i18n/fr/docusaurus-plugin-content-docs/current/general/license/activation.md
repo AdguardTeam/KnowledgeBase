@@ -99,9 +99,9 @@ Alternativement, vous pouvez utiliser une [clef de licence](../what-is#license-k
 
 1. Tap **License**
 
-1. Tap **Log in** in the top right corner of the screen
+1. Appuyez sur **Connexion** dans le coin supérieur droit de l'écran
 
-    ![Tap Log in in the top right corner of the Premium screen *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense1en.png)
+    ![Appuyez sur Connexion dans le coin supérieur droit de l'écran Premium *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense1en.png)
 
 1. Enter **email** and **password** from your **AdGuard account**
 
