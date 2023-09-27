@@ -5,7 +5,7 @@ sidebar_position: 3
 
 :::info
 
-Este artículo trata sobre AdGuard para Safari, que protege solo tu navegador Safari. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artículo trata sobre AdGuard para Safari, que protege solo tu navegador Safari. Para proteger todo tu dispositivo, [descarga la aplicación AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -63,4 +63,4 @@ When enabling some Safari extensions, you might notice that they ask for **acces
 
 – Access to web page content is required for manual ad blocking and advanced blocking rules to work correctly – Access to browsing history is required to check the protection status on websites and determine which advanced rules should be applied
 
-We do not use this data for any other person or share it with anyone. For more info, you can consult our [Privacy policy](https://adguard.com/privacy.html).
+We do not use this data for any other purpose or share it with anyone. For more info, you can consult our [Privacy policy](https://adguard.com/privacy.html).

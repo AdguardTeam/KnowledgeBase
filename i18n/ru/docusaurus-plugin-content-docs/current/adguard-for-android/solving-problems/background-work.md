@@ -289,13 +289,13 @@ It is called **PowerGenie** and it kills all apps that are not on its whitelist.
 
 Это не подтверждено, но возможно просто отключить PowerGenie, перейдя в **Настройки телефона** → **Приложения**. Если эта настройка есть на вашем устройстве, можете пропустить следующие шаги. However, it would need to be re-applied every time you reboot your device. Если такой настройки нет, следуйте этой инструкции:
 
-1. [Install ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer;
+1. [Установите ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) на ваш компьютер;
 
-1. Connect your phone with a data cable;
+1. Подключите телефон с помощью кабеля передачи данных;
 
-1. Enable [Developer options](https://developer.android.com/studio/debug/dev-options.html);
+1. Включите [Параметры разработчика](https://developer.android.com/studio/debug/dev-options.html);
 
-1. Enable **USB debugging** within Developer options on your phone;
+1. Включите **отладку через USB** в Параметрах разработчика на телефоне;
 
 1. Run the following commands on your computer:
 
@@ -387,9 +387,9 @@ It is called **PowerGenie** and it kills all apps that are not on its whitelist.
 
     `adb shell pm grant com.arlosoft.macrodroid android.permission.WRITE_SECURE_SETTINGS`
 
-1. Create a task triggered at **Device Boot** that performs the following:
+1. Создайте задачу, запускаемую при **Загрузке устройства**, которая выполняет следующее:
 
-    - System Setting: type **Global**, name `setting.duraspeed.enabled`, value **-1**
+    - Системная настройка: type **Global**, name `setting.duraspeed.enabled`, value **-1**
     - Системная настройка: type **System**, name `setting.duraspeed.enabled`, value **-1**
     - Системная настройка: type **Global**, name `setting.duraspeed.enabled`, value **0**
     - Системная настройка: type **System**, name `setting.duraspeed.enabled`, value **0**
@@ -415,15 +415,15 @@ It is called **PowerGenie** and it kills all apps that are not on its whitelist.
 
 An alternative, more permanent solution for more tech-savvy users:
 
-1. [Install ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer;
+1. [Установите ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) на ваш компьютер;
 
-1. Connect your phone with a data cable;
+1. Подключите телефон с помощью кабеля передачи данных;
 
-1. Enable [Developer options](https://developer.android.com/studio/debug/dev-options.html);
+1. Включите [Параметры разработчика](https://developer.android.com/studio/debug/dev-options.html);
 
-1. Enable **USB debugging** within Developer options on your phone;
+1. Включите **отладку через USB** в Параметрах разработчика на телефоне;
 
-1. Uninstall the **com.evenwell.powersaving.g3** package via the following adb commands:
+1. Удалите файл **com.evenwell.powersaving.g3** с помощью следующих команд adb:
 
     `adb shell` `pm uninstall --user 0 com.evenwell.powersaving.g3`
 
@@ -436,8 +436,8 @@ An alternative, more permanent solution for more tech-savvy users:
 Другие решения:
 
 - Закрепите AdGuard в меню последних действий
-- Enable AdGuard in the app list inside the security app’s "startup manager" and "floating app list" (com.coloros.safecenter / com.coloros.safecenter.permission.Permission)
-- Turn off battery optimizations
+- Добавьте AdGuard в список приложений в «менеджере запуска» и «плавающем списке приложений» (com.coloros.safecenter / com.coloros.safecenter.permission.Permission)
+- Отключите оптимизацию батареи
 
 ## OnePlus
 

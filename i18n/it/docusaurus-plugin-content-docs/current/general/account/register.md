@@ -1,26 +1,26 @@
 ---
-title: How to register
+title: Come registrarsi
 sidebar_position: 1
 ---
 
-## What an AdGuard account is
+## Cos'è un profilo di AdGuard
 
-[AdGuard account](https://my.adguard.com/) is a user account that stores information about your AdGuard licenses and subscriptions, active devices, your purchase history, preferred language, and other preferences. Many AdGuard products offer an option to activate them by entering the credentials for your AdGuard account, provided it contains a valid license.
+Il [profilo di AdGuard](https://my.adguard.com/) è un profilo utente che memorizza le informazioni sui tuoi abbonamenti e licenze di AdGuard, dispositivi attivi, lo storico dei tuoi acquisti, la lingua preferita e altre preferenze. Molti prodotti di AdGuard offrono un'opzione per attivarli inserendo le credenziali per il tuo profilo di AdGuard, ammesso che contenga una licenza valida.
 
-## How to create an account
+## Come creare un profilo
 
-To create an account, go to [AdGuard's official website](https://adguard.com/welcome.html) and press the *My Account* button on the top right corner of the screen. Enter your email address and create a password — your account will be registered.
+Per creare un profilo, vai al [sito web ufficiale di AdGuard](https://adguard.com/welcome.html) e premi il pulsante *Il Mio Profilo* nell'angolo superiore destro della schermata. Inserisci il tuo indirizzo email e creare una password: il tuo profilo sarà registrato.
 
 :::tip
 
-If you enter your email address while purchasing a license or receive a license accociated with your email address as a gift, an account will be created automatically. To set a password, you can follow a link from a transactional or gift letter. You can also register with the above method.
+Se inserisci il tuo indirizzo email acquistando una licenza o ricevi una licenza associata al tuo indirizzo email come regalo, sarà creato automaticamente un profilo. Per impostare una password, puoi seguire un link da una lettera transazionale o di regalo. Inoltre, puoi registrarti con il suddetto metodo.
 
 :::
 
-An account can also be created directly in an AdGuard app. Press the *Log in* or *Activate* button (it can be found in the *License* section or on a separate screen), enter your email and create a password.
+Puoi anche creare un profilo direttamente in un'app di AdGuard. Premi il pulsante *Accedi* o *Attiva* (nella sezione *Licenza* o su una schermata separata), inserisci la tua email e crea una password.
 
-After the account is created, activate it by following the link in the activation email.
+Dopo la creazione del profilo, attivalo seguendo il link nell'email d'attivazione.
 
-## How to create an account via a social network
+## Come creare un account tramite un social network
 
-To create an account via a social network, simply follow the [link](https://auth.adguard.com/login.html) and log in to your account. Once you’ve signed up, check your inbox — there’ll be a confirmation email. Set a password and that’s it! Now you can use all the [features of the AdGuard account](https://adguard.com/kb/general/account/features/).
+Per creare un account tramite un social network, segui semplicemente il collegamento [](https://auth.adguard.com/login.html) e accedi al tuo account. Una volta registrato, controlla la tua casella di posta: riceverai un'e-mail di conferma. Imposta una password e tutto è fatto! Ora puoi utilizzare tutte le [funzionalità dell'account AdGuard](https://adguard.com/kb/general/account/features/).

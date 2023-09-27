@@ -5,40 +5,53 @@ sidebar_position: 1
 
 ## AdGuard lisansı nedir
 
-Lisans, Son Kullanıcı Lisans Sözleşmesine uygun olarak sağlanan AdGuard ürününü kullanma iznidir. AdGuard lisansları, kullanıcının [AdGuard hesabında](../../account/register) lisans anahtarları, etkinleştirme kodları ve ürün kartları biçiminde bulunur.
+A license is a permission to use the AdGuard product, provided in accordance with the [End User License Agreement](https://adguard.com/eula.html). Bir e-posta adresine bağlıysa, AdGuard lisansları kullanıcının [AdGuard hesabında](https://my.adguard.com/) bulunabilir.
 
-Bazı lisansların satın alınması gerekir (örn. AdGuard Reklam Engelleyici Kişisel), bazıları ücretsizdir ve süresi sınırlıdır (örn. AdGuard uygulamalarının deneme lisansları) veya sınırlı işlevselliğe sahiptir (örn. iOS için AdGuard veya AdGuard Tarayıcı uzantısı). İşte tüm AdGuard Reklam Engelleyici lisans türlerinin listesi.
+## Ne tür AdGuard lisansları vardır
 
-1. **Deneme lisansları** tam işlevselliğe sahip ücretsiz, süresi sınırlı lisanslardır: Windows için AdGuard — 14 günlük deneme, Mac için AdGuard — 14 günlük deneme, Android için AdGuard — 7 günlük deneme.
-2. **Ücretsiz lisanslar** süre sınırlı değildir ancak işlevsellikleri sınırlıdır: AdGuard Tarayıcı Uzantısı, AdGuard İçerik Engelleyici, iOS için AdGuard.
-3. **Abonelikler** her ay veya her yıl otomatik olarak yenilenen ücretli lisanslardır. Bunlar elle de uzatılabilirler. AdGuard Reklam Engelleyici Aylık abonelik, AdGuard Reklam Engelleyici 1 yıllık abonelik.
-4. **Licenses purchased from distributors** and **gifted licenses** are time-limited and cannot be renewed automatically. Ancak elle uzatılabilirler: AdGuard Reklam Engelleyicir Aylık lisans, AdGuard Reklam Engelleyici 1 yıllık lisans.
-5. **Ömür boyu lisanslar** süre sınırlı değildir ve tam işlevselliğe sahiptir: AdGuard Reklam Engelleyici Ömür boyu, iOS için AdGuard Pro.
+On the [purchase page](https://adguard.com/license.html), you can see the following types of licenses:
 
-## How many devices can be added{#devices}
+- **1-year subscriptions** — these licenses are renewed automatically every year or can be extended manually
+    - Personal — up to 3 devices
+    - Family — up to 9 devices
+- **Lifetime** — these licenses are not time-limited
+    - Personal — up to 3 devices
+    - Family — up to 9 devices
 
-Farklı sayıda cihazla farklı lisanslar kullanılabilir:
+There are also licenses that the user can purchase from other sources or get for free:
 
-- Kişisel: üç cihaza kadar,
-- Aile: dokuz cihaza kadar,
-- iOS için AdGuard Pro: bir cihaz.
+- **Trial licenses** are free time-limited licenses that allow you to test the full functionality of the product
+    - AdGuard for Windows — 14-day trial
+    - AdGuard for Mac — 14-day trial
+    - AdGuard for Android — 7-day trial
+- **Distributor licenses** and **gifted licenses** can be both time-limited and non-time limited. Licenses with an expiration date can only be renewed manually
+    - Personal — up to 3 devices
+    - Family — up to 9 devices
+- **The AdGuard Pro for iOS license** is purchased and managed through the App Store and can only be used on iOS and iPadOS devices with the same Apple ID
 
-Lisansınızı bir cihazda kullanmak için cihazda [AdGuard hesabınızda](../../account/features) giriş yapın. To extend the device limit, you can [upgrade](../payment-options/#upgrade) your license.
+:::tip
 
-## Lisans anahtarı nedir{#license-key}
+To extend the device limit, you can [upgrade](../payment-options/#upgrade) your license.
 
-Lisans anahtarı, AdGuard Reklam Engelleyici lisansını temsil eden benzersiz bir karakter dizisidir. Lisans satın almak için kullandığınız e-posta için otomatik olarak kaydedilir. Lisans anahtarıyla şunları yapabilirsiniz:
+:::
 
-- log in to your AdGuard account in some products (e.g. AdGuard for Windows),
-- AdGuard hesabınız yoksa bir üründe [lisansınızı etkinleştirin](../activation),
-- lisansınızı AdGuard hesabınıza bağlayın ve kaldırın.
+## How to use the AdGuard license
 
-Bir lisansı kaldırırken, lisans anahtarını önceden yazdığınızdan veya başka (güvenli) bir şekilde not ettiğinizden emin olun. You'll need the key for re-binding your license or transferring it to another account.
+To use your license on a device, log in to your AdGuard app using the email address associated with the license. If the license hasn't been bound to your email address yet, you can do it in your [AdGuard account](https://my.adguard.com/). To do so, open the *Licenses* tab and click *Bind license*.
 
-## How to recover a license key
+Alternatively, you can enter your [license key](#license-key) in your AdGuard app.
 
-You can easily check which license keys belong to you in your [AdGuard Account](../../account/register).
+## License key
 
-The license key is bound to your account via the email address you used to purchase AdGuard.
+A license key is a unique string of characters that represents an AdGuard Ad Blocker license. It is automatically registered to the email you used to purchase the license, or is provided to you when you purchase an AdGuard license from a distributor. Lisans anahtarıyla şunları yapabilirsiniz:
 
-**Please note** that it is often not enough to just find out what your license key is. If it was already used on another computer, it’s necessary to unbind it from that computer through the AdGuard Account before using it again.
+- [Activate your license](../activation) in a product, if you don't have an AdGuard account
+- Bind your license to your AdGuard account and unbind it
+
+When you unbind a license, be sure to save the license key first. You'll need the key to rebind your license or transfer it to another account.
+
+### How to recover a license key
+
+If you don't remember the license key, check out your AdGuard account: all licenses bound to your email address are displayed there.
+
+If you've lost the license key purchased from a distributor, please reach out to us at support@adguard.com. Be ready to provide a receipt or other proof of purchase.

@@ -1,35 +1,35 @@
 ---
-title: Browser-protected pages
+title: Páginas protegidas por el navegador
 sidebar_position: 4
 ---
 
 :::info
 
-Este artículo trata sobre la extensión de navegador AdGuard, que protege solo tu navegador. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Este artículo trata sobre la extensión de navegador AdGuard, que protege solo tu navegador. Para proteger todo tu dispositivo, [descarga la aplicación AdGuard](https://adguard.com/download.html?auto=true)
 
 :::
 
-## Browser-protected pages
+## Páginas protegidas por el navegador
 
-When using a web extension like AdGuard Browser Extension, there are certain restricted domains that prohibit access or permissions. As a result, ad blocking extensions are not allowed to interact with or modify the content of these pages. In other words, they are not allowed to block ads and other annoying elements on these web pages.
+Cuando se utiliza una extensión web como la extensión de navegador AdGuard, existen ciertos dominios restringidos que prohíben el acceso o los permisos. Como resultado, las extensiones de bloqueo de anuncios no pueden interactuar ni modificar el contenido de estas páginas. Es decir, no se les permite bloquear anuncios y otros elementos molestos en estas páginas web.
 
-### Chromium browser restrictions
+### Restricciones de navegador Chromium
 
-Chromium-based browsers, such as Google Chrome, maintain a list of restricted domains that extensions are not allowed to access. These domains include:
+Los navegadores basados en Chromium, como Google Chrome, mantienen una lista de dominios restringidos a los que las extensiones no pueden acceder. Estos dominios incluyen:
 
 - clients.google.com
 - clients[0-9]+.google.com
 - sb-ssl.google.com
-- URLs starting with `chrome://`, `chrome-extension://`, or `https://chrome.google.com/webstore/`
-- PDF files
-- Pages where Javascript is disabled
-- Security warning pages
-- Error pages such as 404 errors and network errors
-- URLs starting with `view-source:` or `data:`
+- URL que comienzan con `chrome://`, `chrome-extension://`o `https://chrome.google.com/webstore/`
+- Archivos PDF
+- Páginas donde Javascript está deshabilitado
+- Páginas de advertencia de seguridad
+- Páginas de error como errores 404 y errores de red
+- URLs que comienzan con `view-source:` o `data:`
 
-### Firefox browser restrictions
+### Restricciones del navegador Firefox
 
-Similarly, the Firefox browser has its own set of restricted domains where extensions are not permitted to operate. These restricted domains include:
+De manera similar, el navegador Firefox tiene su propio conjunto de dominios restringidos donde no se permite el funcionamiento de extensiones. Estos dominios restringidos incluyen:
 
 - accounts-static.cdn.mozilla.net
 - accounts.firefox.com
@@ -44,20 +44,20 @@ Similarly, the Firefox browser has its own set of restricted domains where exten
 - support.mozilla.org
 - sync.services.mozilla.com
 
-### Modifying restrictions in Firefox
+### Modificar las restricciones en Firefox
 
-Changing advanced settings can affect the stability and security of Firefox. This is recommended for advanced users only. If you are aware of the associated risk and still wish to enable add-ons disallowed on a protected page, follow the steps below:
+Cambiar la configuración avanzada puede afectar la estabilidad y seguridad de Firefox. Esto se recomienda sólo para usuarios avanzados. Si conoces el riesgo asociado y aún deseas habilitar complementos no permitidos en una página protegida, sigue los pasos a continuación:
 
-1. Click the menu button → **Add-ons and themes** → **Extensions**.
-2. Click the extension you want to enable on sites with restrictions (In this case, AdGuard).
-3. Select **Allow** in the section **Run on sites with restrictions**.
+1. Haz clic en el botón de menú → **Complementos y temas** → **Extensiones**.
+2. Haz clic en la extensión que deseas habilitar en sitios con restricciones (en este caso, AdGuard).
+3. Selecciona **Permitir** en la sección **Ejecutar en sitios con restricciones**.
 
-Alternatively, you can:
+Alternativamente, puedes:
 
-1. Open a new tab and type **about:config** in the address bar.
-2. Press **Return**. You may encounter a warning. In this case, click **Accept the Risk and Continue**.
-3. Search for `extensions.webextensions.restrictedDomains`. If you can’t find this preference, you can create it. Simply select the **Boolean** type and click **+** to add it.
-4. Click the toggle button next to this preference and change its value to `false`.
-5. Restart Firefox.
+1. Abre una nueva pestaña y escribe **about:config** en la barra de direcciones.
+2. Presiona **Regresar**. Es posible que encuentres una advertencia. En este caso, haz clic en **Aceptar el riesgo y continuar**.
+3. Busca `extensiones.webextensions.restrictedDomains`. Si no puedes encontrar esta preferencia, puedes crearla. Simplemente selecciona el tipo **Boolean** y haz clic en **+** para agregarla.
+4. Haz clic en el botón de alternancia junto a esta preferencia y cambia su valor a `falso`.
+5. Reinicia Firefox.
 
-For further information on this subject, read [the article on Mozilla’s support website](https://mzl.la/3POXoWi).
+Para obtener más información sobre este tema, lee [el artículo en el sitio web de soporte de Mozilla](https://mzl.la/3POXoWi).

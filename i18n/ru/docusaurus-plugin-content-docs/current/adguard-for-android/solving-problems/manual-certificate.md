@@ -5,38 +5,38 @@ sidebar_position: 12
 
 :::info
 
-В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-To be able to [filter HTTPS traffic](/general/https-filtering/what-is-https-filtering.md) (which is extremely important as most ads use HTTPS), AdGuard needs to install a certificate into your device's user storage. On older versions of Android OS this was done automatically, but on Android 11 and later users have to install it manually.
+Чтобы [фильтровать HTTPS-трафик](/general/https-filtering/what-is-https-filtering.md) (что крайне важно, поскольку большая часть рекламы передаётся по протоколу HTTPS), AdGuard необходимо установить сертификат в пользовательское хранилище устройства. На старых версиях Android это происходило автоматически, но на Android 11 и выше приходится устанавливать его вручную.
 
 ![Сертификат *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/g.gif)
 
-Follow these steps to install AdGuard certificate:
+Как установить сертификат AdGuard:
 
-1. When you see the *HTTPS filtering is off* notification, tap *Enable*.
+1. В уведомлении *«HTTPS-фильтрация отключена»* нажмите *Включить*.
 
-1. Then you'll be presented with three screens that explain:
-    - Why filter HTTPS traffic
-    - The safety of this filtering process
-    - The necessity of AdGuard certificate
+1. Появятся три экрана с объяснениями:
+    - Зачем фильтровать HTTPS-трафик
+    - Почему эта фильтрация безопасна
+    - Почему сертификат AdGuard необходим
 
-    Consecutively tap *Next* → *Next* → *Save certificate* on these screens.
+    На этих экранах последовательно нажмите *Далее* → *Далее* → *Сохранить сертификат*.
 
-1. Tap *Save* at the bottom of the opened *Download* folder.
+1. Нажмите *Сохранить* в нижней части открывшейся папки *Загрузки*.
 
-1. After saving, tap *Open Settings*, navigate to *Encryption & credentials*, and then choose *Install a certificate*.
+1. После сохранения нажмите *Открыть настройки*, перейдите в раздел *Шифрование и учетные данные*, затем выберите *Установить сертификат*.
 
-1. You might see a warning, if so, tap *Install anyway*. From the list, select the file with AdGuard certificate.
+1. Вы можете увидеть предупреждение. В этом случае нажмите *Все равно установить*. Из списка выберите файл с сертификатом AdGuard.
 
-You're all set! Once the certificate is installed successfully, you've enabled HTTPS filtering.
+Всё готово! Когда сертификат будет установлен, HTTPS-фильтрация включится автоматически.
 
-Please note: The steps provided are based on the Google Pixel 4 smartphone. If you're using a different Android device, the exact menu names or options might vary. For easier navigation consider searching for a certificate by accessing your device's settings and entering "certificate" or "credentials" in the search bar.
+Эти шаги основываются на смартфоне Google Pixel 4. В других устройствах Android названия настроек могут отличаться. Возможно, вам поможет ввести слово «сертификат» в строке поиска по настройкам.
 
 Если у вас возникли проблемы при ручной установке сертификата (например, вы установили сертификат, но приложение продолжает его игнорировать), вы можете воспользоваться одним из решений ниже.
 
-1. Перезапустить AdGuard.
+1. Перезапустите AdGuard.
 2. Попробуйте ещё раз установить правильный сертификат (AdGuard Personal CA).
 
 Если вы по-прежнему сталкиваетесь с проблемой и не можете установить сертификат, напишите нашей команде поддержки по адресу support@adguard.com.

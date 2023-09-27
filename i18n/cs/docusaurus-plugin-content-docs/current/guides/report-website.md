@@ -10,7 +10,7 @@ Při používání blokátorů reklam se můžete setkat s nesprávnou prací n�
 - Modifikované algoritmy přidávání reklam;
 - Přidané filtry/rozšíření od vývojářů třetích stran;
 - Autoři jednoho z filtrů udělali při vytváření pravidla chybu;
-- Opakované vložení reklamy. Find more about this method in our [blog](https://adguard.com/en/blog/ad-reinsertion.html).
+- Opakované vložení reklamy. Více informací o této metodě najdete na našem [blogu](https://adguard.com/en/blog/ad-reinsertion.html).
 
 Můžete nám pomoci vyplněním formuláře s příklady reklam, se kterými jste se setkali. K tomu použijte pokyny pro váš operační systém.
 
