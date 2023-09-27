@@ -1,5 +1,5 @@
 ---
-title: Certificate installation on devices with Android 11+
+title: Instalace certifikátu na zařízeních se systémem Android 11+
 sidebar_position: 12
 ---
 
@@ -9,30 +9,30 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 :::
 
-To be able to [filter HTTPS traffic](/general/https-filtering/what-is-https-filtering.md) (which is extremely important as most ads use HTTPS), AdGuard needs to install a certificate into your device's user storage. On older versions of Android OS this was done automatically, but on Android 11 and later users have to install it manually.
+Aby bylo možné [filtrovat provoz HTTPS](/general/https-filtering/what-is-https-filtering.md) (což je velmi důležité, protože většina reklam používá HTTPS), musí AdGuard nainstalovat certifikát do uživatelského úložiště vašeho zařízení. Ve starších verzích operačního systému Android se to provádělo automaticky, ale v Androidu 11 a novějších verzích jej uživatelé musí nainstalovat ručně.
 
 ![Certificate *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/g.gif)
 
-Follow these steps to install AdGuard certificate:
+Certifikát AdGuardu nainstalujete podle následujících kroků:
 
-1. When you see the *HTTPS filtering is off* notification, tap *Enable*.
+1. Když uvidíte oznámení *HTTPS filtrování je vypnuto*, klepněte na *Zapnout*.
 
-1. Then you'll be presented with three screens that explain:
-    - Why filter HTTPS traffic
-    - The safety of this filtering process
-    - The necessity of AdGuard certificate
+1. Poté se zobrazí tři obrazovky s vysvětlením:
+    - Proč filtrovat HTTPS provoz
+    - Bezpečnost tohoto procesu filtrování
+    - Nezbytnost AdGuard certifikátu
 
-    Consecutively tap *Next* → *Next* → *Save certificate* on these screens.
+    Postupně klepněte na těchto obrazovkách na *Další* → *Další* → *Uložit certifikát*.
 
-1. Tap *Save* at the bottom of the opened *Download* folder.
+1. Klepněte na *Uložit* v dolní části otevřené složky *Stáhnout*.
 
-1. After saving, tap *Open Settings*, navigate to *Encryption & credentials*, and then choose *Install a certificate*.
+1. Po uložení klepněte na *Otevřít nastavení*, přejděte na *Šifrování a ověření* a poté vyberte *Nainstalovat certifikát*.
 
-1. You might see a warning, if so, tap *Install anyway*. From the list, select the file with AdGuard certificate.
+1. Může se zobrazit varování. Pokud ano, klepněte na *Přesto nainstalovat*. Ze seznamu vyberte soubor s AdGuard certifikátem.
 
-You're all set! Once the certificate is installed successfully, you've enabled HTTPS filtering.
+Vše je nastaveno! Jakmile je certifikát úspěšně nainstalován, zapnuli jste HTTPS filtrování.
 
-Please note: The steps provided are based on the Google Pixel 4 smartphone. If you're using a different Android device, the exact menu names or options might vary. For easier navigation consider searching for a certificate by accessing your device's settings and entering "certificate" or "credentials" in the search bar.
+Upozorňujeme, že uvedené kroky jsou provedeny na smartphonu Google Pixel 4. Pokud používáte jiné zařízení se systémem Android, mohou se přesné názvy nabídek nebo možností lišit. Pro snadnější navigaci zvažte vyhledání certifikátu přístupem do nastavení zařízení a zadáním "certificate" nebo "credentials" do vyhledávacího řádku.
 
 Pokud se během ruční instalace certifikátu vyskytnou problémy (například jste certifikát nainstalovali, ale aplikace jej stále ignoruje), níže naleznete možná řešení.
 

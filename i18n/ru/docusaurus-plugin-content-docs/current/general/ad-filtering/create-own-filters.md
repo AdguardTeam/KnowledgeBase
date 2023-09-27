@@ -112,9 +112,9 @@ AdGuard [расширяет возможности CSS](#extended-css-selectors)
 | ID selector                  | `#banners`                       | Соответствует всем элементам с атрибутом `id`, равным `banners`.<br/>![ID selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_id_selector.png)                                               |
 | Class selector               | `.banners`                       | Соответствует всем элементам типа `class`, содержащих `banners`.<br/>![Class selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_selector.png)                                         |
 | Attribute selector           | `div[class="banners"]`           | Matches all `div` elements with `class` attribute **exactly equal** to `banners`.<br/>![Attribute selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_attr.png)                        |
-| Attribute substring selector | `div[class^="advert1"]`          | Соответствует всем `div` элементам, атрибут `class` которых **начинается** с `advert1`.<br/>![Attribute substring selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_attr_start.png)  |
-| Attribute substring selector | `div[class$="banners_ads"]`      | Matches all `div` elements which `class` attribute **ends with** the `banners_ads` string.<br/>![Attribute substring selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_attr_end.png) |
-| Attribute substring selector | `a[href^="http://example.com/"]` | Matches all links that are loaded from `http://example.com/` domain.<br/>![Attribute substring selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_attr_start.png)                           |
+| Attribute substring-селектор | `div[class^="advert1"]`          | Соответствует всем `div` элементам, атрибут `class` которых **начинается** с `advert1`.<br/>![Attribute substring-селектор](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_attr_start.png)  |
+| Attribute substring-селектор | `div[class$="banners_ads"]`      | Matches all `div` elements which `class` attribute **ends with** the `banners_ads` string.<br/>![Attribute substring-селектор](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_attr_end.png) |
+| Attribute substring-селектор | `a[href^="http://example.com/"]` | Matches all links that are loaded from `http://example.com/` domain.<br/>![Attribute substring-селектор](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_attr_start.png)                           |
 | Attribute selector           | `a[href="http://example.com/"]`  | Matches all links to **exactly** the `http://example.com/` address.<br/>![Attribute selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_attr_equal.png)                                      |
 
 ## Ограничения и запреты
@@ -987,7 +987,7 @@ $stealth [= opt1 [| opt2 [| opt3 [...]]]]
 - `location` отключает опцию [**Блокировать Location API**](../../stealth-mode#location)
 - `flash` отключает опцию [**Блокировать Flash**](../../stealth-mode#flash)
 - `java` отключает опцию [**Блокировать Java**](../../stealth-mode#java)
-- `Referrer` отключает опцию[**Скрыть Referrer от третьих лиц**](../../stealth-mode#miscellaneous)
+- `referrer` disables [**Hide Referer from third parties**](../../stealth-mode#miscellaneous) option
 - `useragent` отключает опцию [**Скрыть User-Agent**](../../stealth-mode#useragent)
 - `ip` отключает опцию [**Скрыть IP-адрес**](../../stealth-mode#ip)
 - `xclientdata` отключает опцию [**Убрать заголовок X-Client-Data из HTTP-запросов**](../../stealth-mode#xclientdata)

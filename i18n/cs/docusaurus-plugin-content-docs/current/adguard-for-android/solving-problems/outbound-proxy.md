@@ -1,5 +1,5 @@
 ---
-title: How to set up outbound proxy
+title: Jak nastavit odchozí proxy
 sidebar_position: 8
 ---
 
@@ -9,11 +9,11 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 :::
 
-Below you can find a list of the most famous applications that you can configure to work as proxies in AdGuard.
+Níže naleznete seznam nejznámějších aplikací, které můžete nakonfigurovat tak, aby v AdGuardu fungovaly jako proxy servery.
 
 :::note
 
-If your app is not listed below, please check on its proxy configurations in the settings or contact its support team.
+Pokud vaše aplikace není uvedena v seznamu níže, zkontrolujte konfiguraci proxy serveru v nastavení nebo kontaktujte tým podpory.
 
 :::
 
@@ -149,4 +149,4 @@ Před nastavením procesu byste měli odstranit aplikaci Shadowsocks z filtrová
 
 ## Omezení
 
-There is a factor that can prevent certain traffic from being routed through the outgoing proxy even after you configure AdGuard proxy settings. It can happen if you don't set up the app itself to send the traffic through AdGuard. To do it, you need to proceed to **App management**, choose the app, and turn on **Route traffic through AdGuard**.
+Existuje faktor, který může zabránit přesměrování určitého provozu přes odchozí proxy server i po konfiguraci nastavení proxy serveru AdGuard. To se může stát, pokud aplikaci nenastavíte tak, aby odesílala provoz skrze AdGuard. Chcete-li to provést, musíte přejít na **Správa aplikací**, vybrat aplikaci a zapnout **Směrovat provoz skrze AdGuard**.

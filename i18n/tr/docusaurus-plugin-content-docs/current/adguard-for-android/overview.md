@@ -71,6 +71,13 @@ Temel koruma, çoğu sitedeki reklamları etkili bir şekilde engeller. Daha öz
 
     e. *Kendini yok eden üçüncü taraf çerezler*. Bu ayar, üçüncü taraf çerezlerinin kullanım süresini 180 dk ile sınırlar
 
+    :::dikkat
+
+    Bu ayar, sosyal ağlar veya diğer üçüncü taraf hizmetleri aracılığıyla yaptığınız giriş yapma bilgileri de dahil olmak üzere tüm üçüncü taraf çerezlerini siler. Bazı sitelerde periyodik olarak yeniden giriş yapmanız gerekebilir ve çerezlerle ilgili başka sorunlarla karşılaşabilirsiniz. Yalnızca izleme çerezlerini engellemek için *Standart* koruma düzeyini kullanın.
+
+
+:::
+
     f. *X-Client-Data başlığını kaldırın*
 
  3. **En yüksek**

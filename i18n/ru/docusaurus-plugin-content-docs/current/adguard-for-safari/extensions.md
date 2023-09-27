@@ -9,21 +9,21 @@ sidebar_position: 3
 
 :::
 
-## What Safari extensions are
+## Что такое расширения Safari
 
-Safari extensions are small software programs that add functionality to the Safari web browser. They allow users to customize and enhance their browsing experience by adding features that are not natively built into the browser. AdGuard for Safari uses extensions primarily to apply filtering rules on websites opened in Safari.
+Расширения Safari — это небольшие программы, которые помогают увеличить функциональность браузера Safari. С их помощью пользователи могут улучшить работу в интернете, добавляя функции, которые не встроены в браузер. В первую очередь AdGuard для Safari использует расширения для того, чтобы применять правила фильтрации на сайтах, открытых в Safari.
 
-## How it works
+## Как это работает
 
-To block ads, trackers, and annoyances on websites, AdGuard uses filtering rules. The rules from AdGuard's and your custom filters are converted into ones comprehensible by Safari and are integrated into 6 Safari extensions:
+Чтобы блокировать рекламу, трекеры и раздражители на сайтах, AdGuard использует правила фильтрации. Правила AdGuard и пользовательские фильтры преобразуются в правила, понятные Safari, и интегрируются в шесть расширений Safari:
 
-– AdGuard General – AdGuard Privacy – AdGuard Social – AdGuard Security – AdGuard Other
+– AdGuard Основные – AdGuard Конфиденциальность – AdGuard Виджеты соцсетей – AdGuard Безопасность – AdGuard Другие
 
-Each content-blocking extension can include up to 150,000 active filtering rules. The number of rules within most filter groups does not surpass 150,000. However, if you activate too many language-specific or custom filters, you might exceed the limit. In such cases, random rules that are over the limit will be automatically disabled, which may lead to incorrect blocking. **We strongly recommend activating only the filters you need**.
+Каждое расширение блокировки контента может включать до 150 000 активных правил фильтрации. Количество правил в большинстве групп фильтров не превышает 150 000. Однако если вы активируете слишком много языковых или пользовательских фильтров, вы можете превысить лимит. В таких случаях случайные правила, превышающие лимит, будут автоматически отключаться, что может привести к некорректной блокировке. **Мы настоятельно рекомендуем активировать только те фильтры, которые вам нужны**.
 
-There are also two extensions responsible for other features:
+Также есть два расширения, отвечающие за другие функции:
 
-– *AdGuard Safari Icon* enables AdGuard's icon next to the search bar in Safari – *AdGuard Advanced Blocking* allows using advanced rules to block complex ads
+— *Иконка AdGuard Safari* включает иконку AdGuard рядом со строкой поиска в Safari — *AdGuard Расширенная блокировка* позволяет использовать расширенные правила фильтрации для блокировки сложных видов рекламы
 
 ![Расширения Safari](https://uploads.adguard.org/safari_extensions.png)
 
@@ -33,34 +33,34 @@ There are also two extensions responsible for other features:
 
 *AdGuard Основные* применяет правила из раздела *Фильтры*, которые вы можете найти в подразделах *Блокировка рекламы* и *Языковые*. Это расширение ориентировано на комплексную блокировку рекламы и включает фильтры для рекламы на определённых языках.
 
-*AdGuard Privacy* applies rules from filters located in *Filters* → *Privacy*. It blocks tracking mechanisms and ensures that your browsing activity remains private.
+*AdGuard Privacy* applies rules from filters located in *Filters* → *Privacy*. Это расширение блокирует механизмы отслеживания и гарантирует, что ваши действия в интернете останутся конфиденциальными.
 
-*AdGuard Social* applies rules from filters that can be found in *Filters* → *Social Widgets* and *Filters* → *Annoyances*. It blocks popups, social media buttons, online assistant windows, and other elements on web pages that you might find annoying.
+*AdGuard Виджеты социальных сетей* применяет правила из раздела *Фильтры* → *Виджеты социальных сетей* и *Фильтры* → *Раздражители*. Расширение блокирует всплывающие окна, кнопки соцсетей, окна онлайн-помощников и другие элементы на страницах, которые могут вас раздражать.
 
-*AdGuard Security* applies rules from filters under *Filters* → *Security*. This extension identifies and blocks potentially harmful elements, safeguarding users from malicious content.
+*AdGuard Безопасность* применяет правила из раздела *Фильтры* → *Безопасность*. Это расширение выявляет и блокирует потенциально опасные элементы, защищая пользователей от вредоносного контента.
 
-*AdGuard Other* applies rules from filters that that don't fall under the above-mentioned categories and that are located in *Filters* → *Other*: *Filter unblocking search ads and self-promotion*, *AdGuard DNS filter*, and *AdGuard Experimental filter*.
+Расширение *AdGuard Другие* применяет правила фильтров из раздела *Фильтры* → *Другие*. Эти фильтры не относятся к предыдущим категориям: *Фильтр полезной рекламы*, *DNS-фильтр* и *Экспериментальный фильтр*.
 
-*AdGuard Custom* applies rules from filters that you add on your own to *Custom filters*.
+*AdGuard Пользовательские* применяет правила фильтров, которые вы добавляете самостоятельно в *Собственные фильтры*.
 
-User rules and allowlist rules are included into every extension.
+Пользовательские правила и правила белого списка включаются в каждое расширение.
 
-## Other extensions
+## Другие расширения
 
-*AdGuard Safari Icon* enables the AdGuard icon next to the search bar. It's useful if you want to quickly set up protection on a particular website or block ads manually.
+*Иконка AdGuard Safari* включает иконку AdGuard рядом со строкой поиска. Это полезно, если вы хотите быстро настроить защиту на конкретном сайте или заблокировать рекламу вручную.
 
-*AdGuard Advanced blocking* contains advanced rules that aren't converted into the format supported by Safari. This includes CSS rules, CSS selectors, and scriptlets that allow AdGuard to block complex ads — for example, on YouTube.
+*AdGuard Расширенная блокировка* содержит расширенные правила, которые не преобразуются в формат, поддерживаемый Safari. Сюда входят правила CSS, CSS-селекторы и скриптлеты, позволяющие AdGuard блокировать сложную рекламу — например, на YouTube.
 
-## How to manage Safari extensions
+## Как управлять расширениями Safari
 
-1. Open Safari and click *Safari* in the upper left corner of the screen to expand the menu. ![Настройки Safari *mobile](https://cdn.adtidy.org/blog/new/sxaqgfsafari_settings.png)
-1. Click *Preferences...*
+1. Откройте Safari и нажмите *Safari* в левом верхнем углу экрана, чтобы развернуть меню. ![Настройки Safari *mobile](https://cdn.adtidy.org/blog/new/sxaqgfsafari_settings.png)
+1. Нажмите *Настройки*.
 1. Выберите *Расширения*. ![Вкладка Расширения](https://cdn.adtidy.org/blog/new/ocofdextensions_tab.png)
 
-## Why some extensions require permissions
+## Почему некоторые расширения требуют разрешений
 
-When enabling some Safari extensions, you might notice that they ask for **access to web page content** and **access to browsing history**. Here's why AdGuard for Safari needs them:
+При включении некоторых расширений Safari вы можете заметить, что они запрашивают **доступ к содержимому веб-страницы** и **доступ к истории просмотров**. Объясняем, для чего нужны эти разрешения:
 
-– Access to web page content is required for manual ad blocking and advanced blocking rules to work correctly – Access to browsing history is required to check the protection status on websites and determine which advanced rules should be applied
+– Доступ к содержимому веб-страницы позволяет блокировать рекламу вручную и применять правила расширенной блокировки – Доступ к истории просмотров нужен, чтобы проверять статус защиты AdGuard на сайтах и определять, какие расширенные правила нужно применить
 
-We do not use this data for any other person or share it with anyone. For more info, you can consult our [Privacy policy](https://adguard.com/privacy.html).
+We do not use this data for any other purpose or share it with anyone. Больше вы можете почитать в нашей [Политике конфиденциальности](https://adguard.com/privacy.html).

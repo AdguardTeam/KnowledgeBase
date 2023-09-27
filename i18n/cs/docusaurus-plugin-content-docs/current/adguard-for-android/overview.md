@@ -71,6 +71,13 @@ K dispozici jsou tři předkonfigurované úrovně ochrany. Zde jsou uvedeny fun
 
     e. *Automatické odstranění cookies třetích stran*. Toto nastavení omezuje životnost TTL cookie třetích stran na 180 minut
 
+    :::caution
+
+    Toto nastavení odstraní všechny soubory cookies třetích stran, včetně informací o vašich přihlášeních prostřednictvím sociálních sítí nebo jiných služeb třetích stran. Možná se budete muset pravidelně znovu přihlašovat na některé webové stránky a čelit dalším problémům souvisejícím se soubory cookies. Chcete-li blokovat pouze sledovací soubory cookies, použijte úroveň ochrany *Standardní*.
+
+
+:::
+
     f. *Odstranit X-Client-Data hlavičku*
 
  3. **Maximální**
@@ -284,21 +291,21 @@ V sekci *Aktualizace aplikace a filtrů* můžete nakonfigurovat automatické ak
 
 #### Pokročilá nastavení
 
-*Automation* allows you to manage AdGuard via tasker apps.
+*Automatizace* vám umožňuje spravovat AdGuard prostřednictvím aplikací Tasker.
 
-*Watchdog* helps protect AdGuard from being disabled by the system ([read more about Android's battery save mode](/adguard-for-android/solving-problems/background-work/)). The value you enter will be the interval in seconds between watchdog checks.
+*Watchdog* pomáhá chránit AdGuard před ukončením systémem ([další informace o režimu úspory baterie v Androidu](/adguard-for-android/solving-problems/background-work/)). Zadaná hodnota bude interval v sekundách mezi kontrolami watchdog.
 
-*Logging level* defines what data about the app's operation should be logged. By default, the app collects the data about its events. The *Debug* level logs more events — enable it if asked by the AdGuard team to help them get a better understanding of the problem. [Read more about collecting and sending logs](/adguard-for-android/solving-problems/logcat/)
+*Úroveň záznamu* definuje, jaká data o provozu aplikace by měla být zaznamenána. Ve výchozím nastavení aplikace shromažďuje údaje o vlastních událostech. Úroveň *Ladění* zaznamenává více událostí – povolte ji, pokud o to tým AdGuardu požádá, abyste mu pomohli lépe porozumět problému. [Více informací o shromažďování a odesílání záznamů](/adguard-for-android/solving-problems/logcat/)
 
 ![Advanced *mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
-The *Low-level settings* section is for expert users. [Read more about low-level settings](/adguard-for-android/solving-problems/low-level-settings/)
+Sekce *Nízkoúrovňová nastavení* je určena pro zkušené uživatele. [Více informací o nízkoúrovňových nastavení](/adguard-for-android/solving-problems/low-level-settings/)
 
 ![Low-level settings *mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
 
 ### Filtrování
 
-This section allows you to manage HTTPS filtering settings, filters, and userscripts, and set up a proxy server.
+Tato sekce umožňuje spravovat nastavení HTTPS filtrování, filtry a uživatelské skripty a nastavit proxy server.
 
 ![Filtering *mobile_border](https://cdn.adtidy.org/blog/new/7v5c6filtering.png)
 
@@ -306,142 +313,142 @@ This section allows you to manage HTTPS filtering settings, filters, and userscr
 
 ##### HTTPS filtrování
 
-To block ads and trackers on most websites and in most apps, AdGuard needs to filter their HTTPS traffic. [Read more about HTTPS filtering](/general/https-filtering/what-is-https-filtering)
+K blokování reklam a slídičů na většině webových stránek a ve většině aplikací potřebuje AdGuard filtrovat jejich provoz HTTPS. [Více informací o HTTPS filtrování](/general/https-filtering/what-is-https-filtering)
 
-###### Security certificates
+###### Bezpečnostní certifikáty
 
-To manage encrypted traffic, AdGuard installs its CA certificate on your device. It's safe: the traffic is filtered locally and AdGuard verifies the security of the connection.
+Za účelem správy šifrovaného provozu nainstaluje AdGuard do vašeho zařízení certifikát CA. Je to bezpečné: provoz je filtrován lokálně a AdGuard ověřuje bezpečnost připojení.
 
-On older versions of Android, the certificate is installed automatically. On Android 11 and later, you need to install it manually. [Installation instructions](/adguard-for-android/solving-problems/manual-certificate/)
+Ve starších verzích Androidu se certifikát nainstaluje automaticky. V systému Android 11 a novějších verzích je třeba certifikát nainstalovat ručně. [Pokyny k instalaci](/adguard-for-android/solving-problems/manual-certificate/)
 
-The CA certificate in the user store is enough to filter HTTPS traffic in browsers and some apps. However, there are apps that only trust certificates from the system store. To filter HTTPS traffic there, you need to install AdGuard's CA certificate into the system store. [Instructions](/adguard-for-android/solving-problems/https-certificate-for-rooted/)
+Certifikát CA v uživatelském úložišti stačí k filtrování provozu HTTPS v prohlížečích a některých aplikacích. Existují však aplikace, které důvěřují pouze certifikátům ze systémového úložiště. Chcete-li tam filtrovat provoz HTTPS, musíte do systémového úložiště nainstalovat CA certifikát AdGuardu. [Pokyny](/adguard-for-android/solving-problems/https-certificate-for-rooted/)
 
-###### HTTPS-filtered apps
+###### Filtrované aplikace HTTPS
 
-This section contains the list of apps for which AdGuard filters HTTPS traffic. Please note that the setting can be applied for all apps only if you have CA certificates both in the user store and in the system store.
+Tato sekce obsahuje seznam aplikací, pro které AdGuard filtruje provoz HTTPS. Upozorňujeme, že nastavení lze použít pro všechny aplikace pouze v případě, že máte certifikáty CA v uživatelském úložišti i v systémovém úložišti.
 
-###### HTTPS-filtered websites
+###### Weby s HTTPS filtrováním
 
-This setting allows you to manage websites for which AdGuard should filter HTTPS traffic.
+Toto nastavení umožňuje spravovat weby, pro které má AdGuard filtrovat provoz HTTPS.
 
-HTTPS filtering allows AdGuard to filter the content of requests and responses, but we never collect or store this data. However, to increase security, we [exclude websites that contain potentially sensitive information from HTTPS filtering](/general/https-filtering/what-is-https-filtering/#financial-websites-and-websites-with-sensitive-personal-data).
+Filtrování HTTPS umožňuje AdGuardu filtrovat obsah požadavků a odezev, tato data však nikdy neshromažďujeme ani neukládáme. Pro zvýšení bezpečnosti však z HTTPS filtrování vyřazujeme weby, [které obsahují potenciálně citlivé informace](/general/https-filtering/what-is-https-filtering/#financial-websites-and-websites-with-sensitive-personal-data).
 
-You can also add websites that you consider necessary to exclusions by selecting one of the modes:
+Výběrem jednoho z režimů můžete do výjimek přidat také weby, které považujete za nezbytné:
 
-- Exclude specific websites from HTTPS filtering
-- Filter HTTPS traffic only on the websites added to exclusions
+- Vyloučení konkrétních webových stránek z HTTPS filtrování
+- Filtrování provozu HTTPS pouze na webech přidaných do výjimek
 
-By default, we also do not filter websites with Extended Validation (EV) certificates, such as financial websites. If needed, you can enable the *Filter websites with EV certificates* option.
+Ve výchozím nastavení také nefiltrujeme weby s certifikáty s rozšířeným ověřením (EV), jako jsou například finanční webové stránky. Pokud potřebujete, můžete také povolit možnost *Filtrovat weby s certifikáty EV*.
 
 ##### Proxy
 
-You can set up AdGuard to route all your device's traffic through your proxy server. [How to set up an outbound proxy](/adguard-for-android/solving-problems/outbound-proxy)
+AdGuard můžete nastavit tak, aby veškerý provoz vašeho zařízení směroval přes server proxy. [Jak nastavit odchozí proxy](/adguard-for-android/solving-problems/outbound-proxy)
 
-In this section, you can also set up a third-party VPN to work with AdGuard, if your VPN provider allows it.
+V této sekci můžete také nastavit VPN třetí strany pro spolupráci s AdGuardem, pokud to váš poskytovatel VPN umožňuje.
 
-Under *Apps operating through proxy*, you can select apps that will route their traffic through your specified proxy. If you have *Integration with AdGuard VPN* enabled, this setting plays the role of AdGuard VPN's app exclusions: it allows you to specify apps to be routed through the AdGuard VPN tunnel.
+V sekci *Aplikace pracující skrze proxy server* můžete vybrat aplikace, které budou směrovat svůj provoz přes zadaný proxy. Pokud máte povolenou *Integraci s AdGuard VPN*, plní toto nastavení roli vyloučení aplikací AdGuard VPN: umožňuje určit aplikace, které mají být směrovány skrze tunel AdGuard VPN.
 
-##### Routing mode
+##### Režim směrování
 
-This section allows you to select the traffic filtering method.
+V této sekci můžete vybrat metodu filtrování provozu.
 
-- *Local VPN* filters traffic through a locally created VPN. This is the most reliable mode. Due to Android restrictions, it is also the only system-wide traffic filtering method available on non-rooted devices.
+- *Lokální VPN* filtruje provoz skrze lokálně vytvořenou VPN. Jedná se o nejspolehlivější režim. Vzhledem k omezením systému Android je to také jediná celosystémová metoda filtrování provozu dostupná na zařízeních bez přístupu root.
 
 :::note
 
-The *Local VPN* mode doesn't allow AdGuard to be used simultaneously with other VPNs. To use another VPN with AdGuard, you need to reconfigure it to work in proxy mode and set up an outbound proxy in AdGuard. For AdGuard VPN, this is done automatically with the help of the [*Integrated mode*](#integration-with-adguard-vpn).
+Režim *Lokální VPN* neumožňuje používat AdGuard současně s jinými VPN. Chcete-li s AdGuardem používat jinou VPN, musíte ji překonfigurovat, aby fungovala v režimu proxy, a nastavit odchozí proxy v AdGuardu. U AdGuard VPN se to děje automaticky pomocí [*režimu integrace*](#integration-with-adguard-vpn).
 
 :::
 
-- *Automatic proxy* is an alternative traffic routing method that does not require the use of a VPN. One significant advantage is that it can be run in parallel with a VPN. This mode requires root access.
+- *Automatický proxy* je alternativní metoda směrování provozu, která nevyžaduje použití VPN. Významnou výhodou je, že jej lze provozovat souběžně s VPN. Tento režim vyžaduje přístup root.
 
-- *Manual proxy* involves setting up a proxy server on a specific port, which can then be configured in Wi-Fi settings. This mode requires root access for Android 10 and above.
+- *Manuální proxy* zahrnuje nastavení proxy na konkrétním portu, který lze poté nakonfigurovat v nastavení Wi-Fi. Tento režim vyžaduje přístup root pro Android 10 a vyšší.
 
 #### Filtry
 
-AdGuard blocks ads, trackers, and annoyances by applying rules from its filters. Most features from the *Protection* section are powered by [AdGuard filters](/general/ad-filtering/adguard-filters/#adguard-filters). If you enable *Basic protection*, it will automatically turn on the AdGuard Base filter and AdGuard Mobile Ads filter. And vice versa: if you turn off both filters, *Basic protection* will also be disabled.
+AdGuard blokuje reklamy, slídiče a obtěžující prvky pomocí pravidel ze svých filtrů. Většina funkcí ze sekce *Ochrana* je založena na [AdGuard filtrech](/general/ad-filtering/adguard-filters/#adguard-filters). Pokud povolíte *Základní ochranu*, automaticky se zapne filtr AdGuard Base a AdGuard Filtr mobilních reklam. A naopak: pokud oba filtry vypnete, bude vypnuta i *Základní ochrana*.
 
 ![Filters *mobile_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
 
-Filters enabled by default are enough for normal AdGuard operation. However, if you want to customize ad blocking, you can use other AdGuard or third-party filters. To do this, select a category and enable the filters you'd like. To add a custom filter, tap *Custom filters* → *Add custom filter* and enter its URL or file path.
+Filtry povolené ve výchozím nastavení jsou dostatečné pro běžný provoz AdGuardu. Pokud si však chcete blokování reklam přizpůsobit, můžete použít jiné AdGuard filtry nebo filtry třetích stran. Za tímto účelem vyberte kategorii a povolte požadované filtry. Chcete-li přidat vlastní filtr, klepněte na *Vlastní filtry* → *Přidat vlastní filtr* a zadejte jeho URL nebo cestu k souboru.
 
 :::note
 
-If you activate too many filters, some websites may work incorrectly.
+Pokud aktivujete příliš mnoho filtrů, mohou některé webové stránky fungovat nesprávně.
 
 :::
 
-[Read more about filters](https://adguard.com/en/blog/what-are-filters.html)
+[Další informace o filtrech](https://adguard.com/en/blog/what-are-filters.html)
 
 #### Uživatelské skripty
 
-Userscripts are mini-programs written in JavaScript that extend the functionality of one or more websites. To install a userscripts, you need a special userscript manager. AdGuard has such a functionality and allows you to add userscripts by URL or from file.
+Uživatelské skripty jsou miniprogramy napsané v jazyce JavaScript, které rozšiřují funkčnost jedné nebo více webových stránek. K instalaci uživatelských skriptů potřebujete speciální správce uživatelských skriptů. AdGuard takovou funkci má a umožňuje přidávat uživatelské skripty pomocí URL nebo ze souboru.
 
 ![Userscripts *mobile_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
 
 ##### AdGuard Extra
 
-AdGuard Extra is a custom userscript that prevents websites from bypassing ad blockers and re-inserting blocked ads.
+AdGuard Extra je vlastní uživatelský skript, který zabraňuje webovým stránkám obcházet blokátory reklam a znovu vkládat blokované reklamy.
 
 ### Licence
 
-In this section, you can find information about your license and manage it:
+V této sekci najdete informace o své licenci a můžete provádět následující:
 
-- Buy an AdGuard license to activate [the full version's features](#free-vs-full-version)
-- Log in to your AdGuard account or enter the license key to activate your license
-- Sign up to activate your 7-day trial period if you haven't used it yet
-- Refresh the license status if you have recently extended its validity
-- Open the AdGuard account to manage your license there
-- Reset your license – for example, if you've reached device limit for this license and want to apply another one
+- Zakoupit AdGuard licence a aktivovat [funkce plné verze](#free-vs-full-version)
+- Přihlásit se ke svému AdGuard účtu nebo zadat licenční klíč pro aktivaci licence
+- Zaregistrovat se a aktivovat si 7denní zkušební dobu, pokud jste ji ještě nevyužili
+- Obnovit stav licence, pokud jste nedávno prodloužili její platnost
+- Otevřít AdGuard účet a spravovat v něm své licence
+- Resetovat licenci – například pokud jste dosáhli limitu zařízení pro tuto licenci a chcete použít jinou
 
 ![License screen *mobile_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
 
 ### Podpora
 
-Use this section if you have any questions or suggestions regarding AdGuard for Android. We recommend consulting *[FAQ](https://adguard.com/support/adguard_for_android.html)* or this knowledge base before contacting support.
+Tuto sekci použijte, pokud máte nějaké dotazy nebo návrhy týkající se AdGuardu pro Android. Před kontaktováním podpory doporučujeme prostudovat *[FAQ](https://adguard.com/support/adguard_for_android.html)* nebo tuto databázi znalostí.
 
 ![Support *mobile_border](https://cdn.adtidy.org/blog/new/cz55usupport.png)
 
-If you notice a missed ad, please report it via *Report incorrect blocking*.
+Pokud si všimnete nezablokované reklamy, nahlaste ji prosím skrze menu *Nahlásit nesprávné blokování*.
 
-For unusual app behavior, select *Report a bug*. If possible, describe your problem in detail and add app logs. [How to describe an issue](/guides/report-bugs/#how-to-describe-a-problem)
+Pro neobvyklé chování aplikace vyberte *Nahlásit chybu*. Pokud je to možné, popište podrobně svůj problém a přidejte záznamy aplikace. [Jak popsat problém](/guides/report-bugs/#how-to-describe-a-problem)
 
-For your suggestions, use *Request a feature*.
+Pro vaše návrhy použijte *Požádat o funkci*.
 
 :::note
 
-GitHub is an alternative way to report bugs and suggest new features. [Instructions and repository links](/guides/report-bugs/#adguard-for-android)
+GitHub je alternativní způsob, jak hlásit chyby a navrhovat nové funkce. [Pokyny a odkazy na repozitář](/guides/report-bugs/#adguard-for-android)
 
 :::
 
-### Free vs full version
+### Bezplatná vs plná verze
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xNOeHpZgjFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-AdGuard for Android has a free and a paid version. Paid features extend AdGuard's capabilities:
+AdGuard pro Android má bezplatnou a placenou verzi. Placené funkce rozšiřují možnosti AdGuardu:
 
-- *Ad blocking in apps* allows you to block ads in non-browser apps. You can specify apps for filtering in [*App management*](#app-management)
+- *Blokování reklam v aplikacích* umožňuje blokovat reklamy v aplikacích, které nevyužívají prohlížeč. Aplikace pro filtrování můžete přidat ve [*Správě aplikací*](#app-management)
 
 :::note
 
-AdGuard uses its own ad-free media player to block ads in YouTube videos. To open the media player, open the YouTube app and share a video with AdGuard. This feature is free.
+AdGuard používá k blokování reklam ve videích YouTube vlastní přehrávač médií bez reklam. Chcete-li otevřít přehrávač médií, otevřete aplikaci YouTube a sdílejte video pomocí AdGuardu. Tato funkce je zdarma.
 
 :::
 
-- *Tracking protection* increases your privacy by blocking tracking requests, online counters, UTM tags, analytics systems, and more. [Back to Tracking protection](#tracking-protection)
+- *Ochrana před sledováním* zvyšuje vaše soukromí tím, že blokuje požadavky na sledování, online čítače, značky UTM, analytické systémy a další. [Zpět k ochraně sledování](#tracking-protection)
 
-- *Browsing Security* warns you if you're about to visit a potentially dangerous website. [Back to Browsing Security](#browsing-security)
+- *Bezpečné prohlížení* vás upozorní, pokud se chystáte navštívit potenciálně nebezpečnou webovou stránku. [Zpět k Bezpečnému prohlížení](#browsing-security)
 
-- *Custom filters and user rules* allow you to add your own filtering rules and third-party filters to fine-tune ad blocking. [Back to filters](#filters)
+- *Vlastní filtry a uživatelská pravidla* vám umožňují přidávat vlastní pravidla filtrování a filtry třetích stran pro vylepšení blokování reklam. [Zpět k filtrům](#filters)
 
-- *Userscripts* allow you to use AdGuard Extra to bypass ad blocker bans and install other userscripts to extend your browser's functionality. [Back to userscripts](#userscripts)
+- *Uživatelské skripty* vám umožňují používat AdGuard Extra k obcházení zákazů blokování reklam a instalaci dalších uživatelských skriptů pro rozšíření funkčnosti prohlížeče. [Zpět k uživatelským skriptům](#userscripts)
 
-You can get access to these features by [purchasing a license](https://adguard.com/license.html). [How to activate the license](/general/license/activation/#activating-adguard-for-android)
+K těmto funkcím získáte přístup [zakoupením licence](https://adguard.com/license.html). [Jak aktivovat licenci](/general/license/activation/#activating-adguard-for-android)
 
-### Rooted vs non-rooted devices
+### Zařízení s přístupem root vs bez přístupu root
 
-Due to additional security measures of Android apps, some AdGuard features are only available on rooted devices. Here's the list of them:
+Vzhledem k dalším bezpečnostním opatřením systému Android jsou některé funkce AdGuardu dostupné pouze na zařízeních s přístupem root. Zde je jejich seznam:
 
-- **HTTPS filtering in most apps** requires [installing a CA certificate into the system store](#security-certificates), as most apps do not trust certificates in the user store. Installing a certificate into the system store is only possible on rooted devices
-- The [**Automatic proxy** routing mode](#routing-mode) requires root access due to Android's limitations on system-wide traffic filtering
-- The **Manual proxy** routing mode requires root access on Android 10 and above as it's no longer possible to determine the name of the app associated with a connection filtered by AdGuard
+- **HTTPS filtrování ve většině aplikací** vyžaduje [instalaci certifikátu CA do systémového úložiště](#security-certificates), protože většina aplikací nedůvěřuje certifikátům v uživatelském úložišti. Instalace certifikátu do systémového úložiště je možná pouze na zařízeních s přístupem root
+- Režim směrování [**Automatický proxy**](#routing-mode) vyžaduje přístup root kvůli omezením systému Android ohledně filtrování provozu v celém systému
+- Režim směrování **Manuální proxy** vyžaduje přístup root v systému Android 10 a vyšším, protože již není možné určit název aplikace spojené s připojením, které AdGuard filtruje

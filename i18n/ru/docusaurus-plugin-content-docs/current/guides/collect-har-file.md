@@ -32,7 +32,7 @@ sidebar_position: 1
 
 1. Сохраните сессию как файл .har, щёлкнув правой кнопкой мыши на сетку и выбрав **Сохранить как HAR-файл с данными**.
 
-1. Направьте документ поддержке AdGuard (support@adguard.com) с подробным объяснением ошибки. Supporting screenshots can be helpful, as well.
+1. Направьте документ поддержке AdGuard (support@adguard.com) с подробным объяснением ошибки. Дополнительные скриншоты также могут помочь.
 
 ## Edge {#edge}
 
@@ -59,7 +59,7 @@ sidebar_position: 1
 
 1. Сохраните сессию как файл .har, щёлкнув правой кнопкой мыши на сетку и выбрав **Сохранить как HAR-файл с данными**.
 
-1. Направьте документ поддержке AdGuard (support@adguard.com) с подробным объяснением ошибки. Supporting screenshots can be helpful, as well.
+1. Направьте документ поддержке AdGuard (support@adguard.com) с подробным объяснением ошибки. Дополнительные скриншоты также могут помочь.
 
 ## Firefox {#firefox}
 
@@ -88,7 +88,7 @@ sidebar_position: 1
 
 1. Сохраните сессию как файл .har, щёлкнув правой кнопкой мыши на сетку и выбрав **Сохранить всё как HAR-файл**.
 
-1. Направьте документ поддержке AdGuard (support@adguard.com) с подробным объяснением ошибки. Supporting screenshots can be helpful, as well.
+1. Направьте документ поддержке AdGuard (support@adguard.com) с подробным объяснением ошибки. Дополнительные скриншоты также могут помочь.
 
 ## Internet Explorer 11 {#ie11}
 
@@ -115,7 +115,7 @@ sidebar_position: 1
 
 1. Save session as a .har file by clicking on the **Save disk** button (Export as HAR) on Network tab.
 
-1. Направьте документ поддержке AdGuard (support@adguard.com) с подробным объяснением ошибки. Supporting screenshots can be helpful, as well.
+1. Направьте документ поддержке AdGuard (support@adguard.com) с подробным объяснением ошибки. Дополнительные скриншоты также могут помочь.
 
 ## Safari {#safari}
 

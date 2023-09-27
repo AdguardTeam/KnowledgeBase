@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -23,7 +23,7 @@ This screen combines all features of AdGuard’s protection:
 - Tracking protection
 - Annoyance blocking
 - DNS-защита
-- Firewall
+- Фаервол
 - Антифишинг
 - Интеграция с AdGuard VPN
 
@@ -69,7 +69,14 @@ There are three pre-configured protection levels. Here’s what features they ha
 
     d. *Ask websites not to track you*
 
-    e. *Self-destruction of third-party cookies*. This setting limits the time to live of third-party cookies to 180 min
+    е. *Self-destruction of third-party cookies*. This setting limits the time to live of third-party cookies to 180 min
+
+    :::caution
+
+    Эта настройка удаляет все сторонние куки, включая информацию о входе через соцсети или другие сторонние сервисы. You may have to periodically re-log in to some websites and face other cookie-related issues. To block only tracking cookies, use the *Standard* protection level.
+
+
+:::
 
     f. *Remove X-Client-Data header*
 
@@ -83,7 +90,7 @@ There are three pre-configured protection levels. Here’s what features they ha
 
     d. *Ask websites not to track you*
 
-    e. *Self-destruction of third-party cookies*
+    е. *Self-destruction of third-party cookies*
 
     f. *Block WebRTC*. This setting blocks WebRTC, a technology that allows direct streaming of data between browsers and apps and can let others know your true IP address, even if you use a proxy or VPN
 
@@ -133,7 +140,7 @@ In this section, you can select a DNS server to resolve DNS requests, block ads 
 
 This section allows you to add custom DNS filters and DNS filtering rules. You can find more filters at [filterlists.com](https://filterlists.com/).
 
-### Firewall
+### Фаервол
 
 This feature helps manage Internet access for specific apps installed on your device and for the device in general.
 
@@ -167,7 +174,7 @@ In this section, you can control Internet access for specific apps — block the
 
 To delete a rule or app from *Custom rules*, swipe it to the left.
 
-### Quick actions
+### Быстрые действия
 
 *Quick actions* are based on the requests from *Recent activity* (which can be found in *Statistics*). This section shows which apps have recently connected to the Internet.
 

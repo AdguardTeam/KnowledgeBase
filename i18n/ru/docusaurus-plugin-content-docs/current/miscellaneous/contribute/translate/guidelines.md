@@ -31,7 +31,7 @@ sidebar_position: 3
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/filter.png)
 
-1. Easily move between the files of the project.
+1. Легко перемещайтесь между файлами проекта. Для этого нужно просто нажать на текущий файл вверху страницы.
 
     ![crowdin *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/filter_files.png)
 

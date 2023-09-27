@@ -7,7 +7,7 @@ toc_max_heading_level: 4
 
 :::info
 
-V tomto článku vysvětlíme, jak napsat vlastní pravidla filtrování pro použití v produktech AdGuardu. To test your rules, you can [download the AdGuard app](https://agrd.io/download-kb-adblock)
+V tomto článku vysvětlíme, jak napsat vlastní pravidla filtrování pro použití v produktech AdGuardu. Chcete-li otestovat svá pravidla, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -71,7 +71,7 @@ Pravidla filtrování podporují řadu modifikátorů, které umožňují doladi
 
 **Toto pravidlo blokuje:**
 
-- `http://example.org/script.js` if this script is loaded from `example.com`.
+- `http://example.org/script.js`, pokud je tento skript načten z `example.com`.
 
 **Toto pravidlo neblokuje:**
 
@@ -107,7 +107,7 @@ AdGuard [rozšiřuje CSS](#extended-css-selectors) a umožňuje tak vývojářů
 
 **Oblíbené selektory CSS**
 
-| Name                         | CSS selector                     | Description                                                                                                                                                                                                           |
+| Název                        | Selektor CSS                     | Popis                                                                                                                                                                                                                 |
 | ---------------------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ID selector                  | `#banners`                       | Matches all elements with `id` attribute equal to `banners`.<br/>![ID selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_id_selector.png)                                                   |
 | Class selector               | `.banners`                       | Matches all elements with `class` attribute containing `banners`.<br/>![Class selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_selector.png)                                        |
@@ -987,7 +987,7 @@ Seznam dostupných možností modifikátoru:
 - `location` zakáže možnost [**Blokovat lokalizační API**](../../stealth-mode#location)
 - `flash` zakáže možnost [**Blokovat Flash**](../../stealth-mode#flash)
 - `java` zakáže možnost [**Blokovat Java**](../../stealth-mode#java)
-- `referrer` zakáže možnost [**Skrýt třetím stranám referenční ID**](../../stealth-mode#miscellaneous)
+- `referrer` disables [**Hide Referer from third parties**](../../stealth-mode#miscellaneous) option
 - `useragent` zakáže možnost [**Skrýt agenta (identifikaci) Vašeho prohlížeče**](../../stealth-mode#useragent)
 - `ip` zakáže možnost [**Skrýt IP adresu**](../../stealth-mode#ip)
 - `xclientdata` zakáže možnost [**Odstranit X-Client-Data hlavičku z požadavků HTTP**](../../stealth-mode#xclientdata)
