@@ -4089,14 +4089,14 @@ Filtering log is an advanced tool that will be helpful mostly to filter develope
 
 Depending on which AdGuard product you are using, Filtering log can be located in different places.
 
-- In **AdGuard for Windows** you will find it inside *Ad Blocker* tab or via the tray menu;
-- In **AdGuard for Mac** it is under *Settings → Advanced → Filtering log*;
-- In **AdGuard for Android** it is a separate item in the side menu, also filtering log for a specific app or website is accessible from the Assistant.
-- In **AdGuard Browser Extension** it is accessible from the *Miscellaneous* settings tab or by right-clicking the extension icon. Only Chromium- and Firefox-based browsers show applied **element hiding rules** (including CSS, ExtCSS) and **JS rules and scriptlets** in their Filtering logs.
+- In **AdGuard for Windows**, you can find it inside *Ad Blocker* tab or via the tray menu
+- In **AdGuard for Mac**, it is located under *Settings → Advanced → Filtering log*
+- In **AdGuard for Android**, you can find it under *Statistics → Recent activity*. *Recent activity* can also be accessed from the *Assistant*
+- In **AdGuard Browser Extension**, it is accessible from the *Miscellaneous* settings tab or by right-clicking the extension icon. Only Chromium- and Firefox-based browsers show applied **element hiding rules** (including CSS, ExtCSS) and **JS rules and scriptlets** in their Filtering logs
 
 :::note
 
-In **AdGuard for iOS** and in **AdGuard for Safari** Filtering log does not exist because of the way content blockers are implemented in Safari. AdGuard does not see the web requests and therefore cannot display them.
+In **AdGuard for iOS** and **AdGuard for Safari**, Filtering log does not exist because of the way content blockers are implemented in Safari. AdGuard does not see the web requests and therefore cannot display them.
 
 :::
 
