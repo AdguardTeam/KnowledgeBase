@@ -27,9 +27,9 @@ sidebar_position: 1
 
 Для начала приведём немного теории и ссылок с необходимыми данными.
 
-1. Android derives traffic consumption judging on so-called Power Profile, which is given by every manufacturer: <https://source.android.com/devices/tech/power/values.html>
+1. Android считает потребление трафика исходя из так называемого Power Profile, который предоставляется каждым производителем: <https://source.android.com/devices/tech/power/values.html>
 
-1. Main part of Power Profile is a set of values in mAh which define battery consumption for every component of the device: <https://source.android.com/devices/tech/power/values.html>
+1. Главная часть Power Profile — это набор значений, выраженных в миллиамперах, которые определяют потребление батареи каждым компонентом устройства: <https://source.android.com/devices/tech/power/values.html>
 
     Например, из таблицы выше:
 
@@ -39,7 +39,7 @@ sidebar_position: 1
 
     *cpu.active=* 100-200mA additional consumption in mAh caused by CPU work.
 
-1. AdGuard by itself almost doesn't consume any traffic, so for the sake of evaluating battery resource consumption let's get rid of 'Mobile/WiFi packets' and stcik to 'CPU'.
+1. AdGuard самостоятельно почти не потребляет трафика, так что для оценки потребления батареи отбросим значения Mobile/Wi-Fi packets и остановимся на подсчёте CPU.
 
     Формула для вычисления потребления:
 
@@ -47,7 +47,7 @@ sidebar_position: 1
 
     Подставим в эту формулу реальные значения.
 
-    Let's take *CPU total* from the second screenshot and convert into milliseconds: 506000
+    Возьмём *CPU total* из второго скриншота и переведём в миллисекунды: 506000
 
     A coefficient *cpu.active* for 2GHz will be roughly equal to 225mAh
 

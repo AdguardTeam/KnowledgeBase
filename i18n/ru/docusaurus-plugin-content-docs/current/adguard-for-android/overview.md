@@ -17,438 +17,438 @@ AdGuard для Android не следует путать с Блокировщи�
 
 ## Защита
 
-This screen combines all features of AdGuard’s protection:
+На этом экране собраны все функции защиты AdGuard:
 
 - Блокировка рекламы
-- Tracking protection
-- Annoyance blocking
+- Защита от трекинга
+- Блокировка раздражителей
 - DNS-защита
 - Фаервол
 - Антифишинг
 - Интеграция с AdGuard VPN
 
-More on each feature below.
+Подробнее о каждой функции ниже.
 
 ### Блокировка рекламы
 
-The feature blocks ads by applying ad-blocking and language-specific filters. To learn about the mechanism of ad blocking, you can read a [dedicated article](/general/ad-filtering/how-ad-blocking-works).
+Эта функция блокирует рекламу, применяя фильтры для блокировки рекламы и языковые фильтры. О механизме блокировки рекламы можно узнать [из посвящённой ему статьи](/general/ad-filtering/how-ad-blocking-works).
 
-Basic protection effectively blocks ads on most websites. For more customized ad blocking, you can:
+Базовая защита эффективно блокирует рекламу на большинстве сайтов. Чтобы настроить блокировку рекламы, вы можете:
 
-- Enable appropriate language-specific filters — they contain filtering rules for blocking ads on websites in specific languages
+- Включить соответствующие языковые фильтры — они содержат правила фильтрации для блокировки рекламы на сайтах на определённых языках
 
-- Add websites to allowlist — these websites won't be filtered by AdGuard
+- Добавить сайты в белый список — они не будут фильтроваться AdGuard
 
-- Create user rules — AdGuard will apply them on specified websites. [Learn how to create your own user rules](/general/ad-filtering/create-own-filters)
+- Создавать пользовательские правила — AdGuard будет применять их на указанных сайтах [Узнайте, как создавать свои фильтры](/general/ad-filtering/create-own-filters)
 
-![Ad blocking *mobile_border](https://cdn.adtidy.org/blog/new/o44x5ad_blocking.png)
+![Блокировка рекламы *mobile_border](https://cdn.adtidy.org/blog/new/o44x5ad_blocking.png)
 
-### Tracking protection
+### Защита от трекинга
 
-*Tracking protection* (formerly *Stealth Mode*) prevents websites from gathering information about you, such as your IP addresses, information about your browser and operating system, screen resolution, and the page you came or were redirected from. It can also block cookies that websites use to mark the browser and save your personal settings, user preferences, or recognize you upon your next visit.
+*Защита от трекинга* (ранее *Антитрекинг*) не позволяет веб-сайтам собирать информацию о вас, такую как ваш IP-адрес, информацию о вашем браузере, операционной системе, разрешении экрана и странице, с которой вы пришли или были перенаправлены. Также эта функция может блокировать куки-файлы, которые сайты используют для маркировки браузера, сохранения ваших личных настроек и пользовательских предпочтений, или для того, чтобы узнать вас при следующем посещении.
 
-![Tracking protection *mobile_border](https://cdn.adtidy.org/blog/new/y5fuztracking_protection.png)
+![Защита от трекинга *mobile_border](https://cdn.adtidy.org/blog/new/y5fuztracking_protection.png)
 
-There are three pre-configured protection levels. Here’s what features they have enabled:
+Есть три предварительно настроенных уровня защиты. Они включают следующие функции:
 
- 1. **Standard**
+ 1. **Стандартный**
 
-    a. *Block trackers*. This setting protects against online counters and web analytics tools using AdGuard’s Tracking Protection filter
+    a. *Блокировка трекеров*. Этот параметр защищает от онлайн-счётчиков и инструментов веб-аналитики с помощью Фильтра счётчиков и систем аналитики AdGuard
 
-    b. *Ask websites not to track you*. This setting sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) requests to the websites you visit, asking web apps to disable tracking of your activity
+    b. *Запрос на прекращение отслеживания*. Эта настройка отправляет запросы [Global Privacy Control](https://globalprivacycontrol.org/) и [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) на сайты, которые вы посещаете
 
-    c. *Remove X-Client-Data header*. This setting prevents Google Chrome from sending its version and modification info to Google domains (including Double Click and Google Analytics)
+    c. *Удаление заголовка X-Client-Data*. Даннная настройка предотвращает отправку информации о версии и модификации Google Chrome на домены Google (включая DoubleClick и Google Analytics)
 
- 2. **High**
+ 2. **Высокий**
 
-    a. *Block trackers*
+    a. *Блокировка трекеров*
 
-    b. *Remove tracking parameters from URLs*. This setting strips tracking parameters like `utm_*` and `fb_ref` from page URLs using the AdGuard URL Tracking filter
+    b. *Удаление параметров отслеживания из URL-адресов*. Этот параметр удаляет параметры отслеживания, такие как `utm_*` и `fb_ref`, из URL-адресов страниц с помощью Фильтра отслеживания по URL
 
-    c. *Hide your search queries*
+    c. *Скрытие поисковых запросов*
 
-    d. *Ask websites not to track you*
+    d. *Запрос на прекращение отслеживания*
 
-    е. *Self-destruction of third-party cookies*. This setting limits the time to live of third-party cookies to 180 min
+    е. *Самоуничтожение сторонних куки-файлов*. Этот параметр ограничивает время жизни сторонних куки-файлов до 180 минут
 
     :::caution
 
-    Эта настройка удаляет все сторонние куки, включая информацию о входе через соцсети или другие сторонние сервисы. You may have to periodically re-log in to some websites and face other cookie-related issues. To block only tracking cookies, use the *Standard* protection level.
+    Эта настройка удаляет все сторонние куки-файлы, включая информацию о ваших логинах в социальных сетях или других сторонних сервисах. Возможно, вам придётся периодически повторно вводить логин и пароль на некоторых сайтах и сталкиваться с другими проблемами, связанными с куки. Чтобы блокировать только отслеживающие куки-файлы, используйте *Стандартный* уровень защиты.
 
 
 :::
 
-    f. *Remove X-Client-Data header*
+    f. *Удаление заголовка X-Client-Data*
 
- 3. **Ultimate**
+ 3. **Максимальный**
 
-    a. *Block trackers*
+    a. *Блокировка трекеров*
 
-    b. *Remove tracking parameters from URLs*
+    b. *Удаление параметров отслеживания из URL-адресов*
 
-    c. *Hide your search queries*
+    c. *Скрытие поисковых запросов*
 
-    d. *Ask websites not to track you*
+    d. *Запрос на прекращение отслеживания*
 
-    е. *Self-destruction of third-party cookies*
+    е. *Самоуничтожение сторонних куки-файлов*
 
-    f. *Block WebRTC*. This setting blocks WebRTC, a technology that allows direct streaming of data between browsers and apps and can let others know your true IP address, even if you use a proxy or VPN
+    f. *Блокировка WebRTC*. This setting blocks WebRTC, a technology that allows direct streaming of data between browsers and apps and can let others know your true IP address, even if you use a proxy or VPN
 
-    g. *Block Push API*. This setting prevents websites from sending you notifications, regardless of the activity status of your browser
+    g. *Блокировка Push API*. Этот параметр запрещает сайтам отправлять вам уведомления независимо от статуса активности вашего браузера
 
-    h. *Block Location API*. This setting prevents browsers from detecting your GPS data
+    h. *Блокировка Location API*. Эта настройка не позволяет браузерам обнаруживать ваши GPS-данные
 
-    i. *Hide Referer from third parties*. This setting hides the HTTP header that contains the URL of the initial page and changes it into the default or the specified one. You can set your custom referer in the respective field
+    i. *Скрытие Referrer от сторонних ресурсов*. Этот параметр скрывает HTTP-заголовок, содержащий URL-адрес начальной страницы, и заменяет его на значение по умолчанию или указанное. Вы можете настроить свой собственный реферер в соответствующем поле
 
-    j. *Hide your User-Agent*. This setting removes identifying information from the User-Agent header that usually includes the name and version of the browser, the operating system, and language settings
+    j. *Скрытие User-Agent*. Эта настройка удаляет из заголовка User-Agent идентифицирующую информацию, которая обычно включает имя и версию браузера, операционную систему и языковые настройки
 
-    k. *Remove X-Client-Data header*
+    k. *Удаление заголовка X-Client-Data*
 
-You can fine-tune Tracking protection by selecting the *Custom* protection level. [Learn more about other Tracking protection settings](/general/stealth-mode)
+Вы можете настроить защиту от отслеживания, выбрав *Пользовательский* уровень защиты. [Learn more about other Tracking protection settings](/general/stealth-mode)
 
-### Annoyance blocking
+### Блокировка раздражителей
 
-This feature is based on AdGuard's annoyance filters and allows you to block popups, online assistant windows, cookie notifications, prompts to download mobile apps, and similar annoyances. [Learn more about annoyance filters](/general/ad-filtering/adguard-filters/#adguard-filters)
+В основе этой функции лежит Фильтр раздражителей AdGuard, который позволяет блокировать попапы, окна онлайн-ассистентов, куки-уведомления, запросы на загрузку мобильных приложений и прочие раздражители. [Узнайте больше о фильтрах раздражителей](/general/ad-filtering/adguard-filters/#adguard-filters)
 
-![Annoyance blocking *mobile_border](https://cdn.adtidy.org/blog/new/lwujvannoyance.png)
+![Блокировка раздражителей *mobile_border](https://cdn.adtidy.org/blog/new/lwujvannoyance.png)
 
 ### DNS-защита
 
-*DNS protection* allows you to filter DNS requests with the help of a selected DNS server, DNS filters, and user rules:
+*DNS-защита* позволяет фильтровать DNS-запросы с помощью выбранного DNS-сервера, DNS-фильтров и пользовательских правил:
 
-- Some DNS servers have blocklists that help block DNS requests to potentially harmful domains
+- Некоторые DNS-серверы располагают чёрными списками, которые помогают блокировать DNS-запросы к потенциально опасным доменам
 
-- In addition to DNS servers, AdGuard can filter DNS requests on its own using a special DNS filter. It contains a large list of ad and tracking domains — requests to them are rerouted to a blackhole server
+- В дополнение к DNS-серверам, AdGuard может самостоятельно фильтровать DNS-запросы с помощью специального DNS-фильтра. Он содержит большой список рекламных и трекинговых доменов — запросы к ним перенаправляются на сервер blackhole
 
-- You can also block and unblock domains by creating user rules. You might need to consult our article about [DNS filtering rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/)
+- Вы также можете блокировать и разблокировать домены, создавая пользовательские правила. Возможно, вам потребуется ознакомиться с нашей статьёй о [синтаксисе правил DNS-фильтрации](https://adguard-dns.io/kb/general/dns-filtering-syntax/)
 
-![DNS protection *mobile_border](https://cdn.adtidy.org/blog/new/u8qtxdns_protection.png)
+![DNS-защита *mobile_border](https://cdn.adtidy.org/blog/new/u8qtxdns_protection.png)
 
 #### DNS-сервер
 
-In this section, you can select a DNS server to resolve DNS requests, block ads and trackers, and encrypt DNS traffic. Tap a server to read its full description and select a protocol. If you didn't find the desired server, you can add it manually:
+В этом разделе вы можете выбрать DNS-сервер для разрешения DNS-запросов, блокировки рекламы и трекеров, а также шифрования DNS-трафика. Нажмите на сервер, чтобы увидеть его полное описание и выбрать протокол. Если вы не нашли нужный сервер, его можно добавить вручную:
 
-- Click *Add DNS server* and enter the server address (or addresses)
+- Нажмите *Добавить DNS-сервер* и введите адрес (или адреса) сервера
 
-- Alternatively, you can select a DNS server from the [list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/) and click *Add to AdGuard* next to it
+- Также можно выбрать DNS-сервер из [списка известных DNS-провайдеров](https://adguard-dns.io/kb/general/dns-providers/) и нажать кнопку *Добавить в AdGuard* рядом с ним
 
-- If you're using a private AdGuard DNS server, you can add it to AdGuard from the [dashboard](https://adguard-dns.io/dashboard/)
+- Если вы используете приватный сервер AdGuard DNS, вы можете добавить его в AdGuard с [панели управления](https://adguard-dns.io/dashboard/)
 
- By default, *Automatic DNS* is selected. It sets a DNS server based on your AdGuard and device settings. If you have integration with AdGuard VPN or another SOCKS5 proxy enabled, it connects to *AdGuard DNS Non-filtering* or any other server you specify. In all other cases, it connects to the DNS server selected in your device settings.
+ По умолчанию выбран *Автоматический DNS*. Он устанавливает DNS-сервер на основе настроек AdGuard и вашего устройства. If you have integration with AdGuard VPN or another SOCKS5 proxy enabled, it connects to *AdGuard DNS Non-filtering* or any other server you specify. Во всех остальных случаях он подключается к DNS-серверу, выбранному в настройках вашего устройства.
 
 #### DNS-фильтры
 
-This section allows you to add custom DNS filters and DNS filtering rules. You can find more filters at [filterlists.com](https://filterlists.com/).
+В этом разделе вы можете добавлять собственные DNS-фильтры и правила DNS-фильтрации. Фильтры можно найти на сайте [filterlists.com](https://filterlists.com/).
 
 ### Фаервол
 
-This feature helps manage Internet access for specific apps installed on your device and for the device in general.
+Эта функция помогает управлять доступом в интернет для определённых приложений, установленных на вашем устройстве, и для устройства в целом.
 
-![Firewall *mobile_border](https://cdn.adtidy.org/blog/new/gdn94firewall.png)
+![Фаервол *mobile_border](https://cdn.adtidy.org/blog/new/gdn94firewall.png)
 
-#### Global firewall rules
+#### Глобальные правила Фаервола
 
-This section allows you to control Internet access for the entire device.
+Этот раздел позволяет контролировать доступ в интернет для всего устройства.
 
-![Global firewall rules *mobile_border](https://cdn.adtidy.org/blog/new/4zx2nhglobal_rules.png)
+![Глобальные правила Фаервола *mobile_border](https://cdn.adtidy.org/blog/new/4zx2nhglobal_rules.png)
 
-These rules apply to all apps on your device unless you've set custom rules for them.
+Эти правила применяются ко всем приложениям на устройстве, если для них не установлены собственные правила.
 
-#### Custom firewall rules
+#### Пользовательские правила Фаервола
 
-In this section, you can control Internet access for specific apps — block the ones you don’t find trustworthy, or, on the contrary, unblock the ones you want to use despite global firewall rules.
+В этом разделе вы можете контролировать доступ в интернет для конкретных приложений — блокировать те, которые вы не считаете надёжными, или, наоборот, разблокировать те, которые хотите использовать, несмотря на глобальные правила Фаервола.
 
-1. Open *Custom firewall rules*. Under *Apps with custom rules*, tap *Add app*.
+1. Open *Custom firewall rules*. В разделе *Приложения с пользовательскими правилами* нажмите *Добавить приложение*.
 
-    ![Custom firewall rules *mobile_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
+    ![Пользовательские правила Фаервола *mobile_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
 
-1. Select the app for which you want to set individual rules.
+1. Выберите приложение, для которого вы хотите установить индивидуальные правила.
 
-    ![Adding an app to Custom firewall rules *mobile_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
+    ![Добавление приложения в пользовательские правила Фаервола *mobile_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
 
-1. In *Available custom rules*, select the ones you want to configure and tap the "+" icon. The rules will now appear in *Applied custom rules*.
+1. В *Доступных пользовательских правилах* выберите те, которые вы хотите настроить, и нажмите «+». Теперь правила будут отображаться в разделе *Применяемые пользовательские правила*.
 
-    ![Added rule *mobile_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
+    ![Добавленное правило *mobile_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
 
-1. If you need to block a specific type of connection, toggle the switch to the left. If you want to allow it, leave the switch enabled. Custom rules override global ones: any changes you make in *Global firewall rules* will not affect this app.
+1. Если вам нужно заблокировать определённый тип соединения, переведите переключатель влево. Если вы хотите разрешить его, оставьте переключатель включённым. Пользовательские правила отменяют глобальные: любые изменения, внесённые в *глобальные правила фаервола*, не повлияют на данное приложение.
 
-To delete a rule or app from *Custom rules*, swipe it to the left.
+Чтобы удалить правило или приложение из *Пользовательских правил*, проведите по нему влево.
 
 ### Быстрые действия
 
-*Quick actions* are based on the requests from *Recent activity* (which can be found in *Statistics*). This section shows which apps have recently connected to the Internet.
+*Быстрые действия* основаны на запросах из *Недавней активности* (которую можно найти в *Статистике*). В этом разделе показано, какие приложения недавно подключались к интернету.
 
-![Quick actions *mobile_border](https://cdn.adtidy.org/blog/new/yigrfquick_actions.png)
+![Быстрые действия *mobile_border](https://cdn.adtidy.org/blog/new/yigrfquick_actions.png)
 
 If you see an app that shouldn't be using the Internet at all or an app that you haven't used recently, you can block its access on the fly.
 
-### Антифишинг
+### Защита от фишинга
 
-Browsing Security protects you from visiting phishing and malicious websites. It also warns you about potential malware.
+Browsing Security protects you from visiting phishing and malicious websites. Она также предупреждает о потенциально вредоносном ПО.
 
 ![Антифишинг *mobile_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
 
-If you're about to visit a dangerous website, Browsing Security will show you the following warning:
+Если вы попытаетесь посетить опасный сайт, Защита от фишинга покажет вам такое предупреждение:
 
-![Browsing Security warning *mobile_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
+![Предупреждение Антифишинга *mobile_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
 
-> Please note that AdGuard for Android is not an antivirus program. It neither stops viruses from downloading nor deletes already downloaded ones. To fully protect your device, we recommend using AdGuard in conjunction with an antivirus tool.
+> Обратите внимание, что AdGuard 	— не антивирусная программа. Он не останавливает загрузку вирусов и не удаляет уже загруженные. Чтобы полностью защитить ваше устройство, мы рекомендуем использовать AdGuard в сочетании с антивирусом.
 
-Browsing Security is safe: AdGuard does not know what websites you visit. It uses hash prefixes instead of URLs to check website security.
+Защите от фишинга можно доверять: AdGuard не знает, какие сайты вы посещаете. Он использует хэш-префиксы вместо URL-адресов для проверки безопасности сайта.
 
 ### Интеграция с AdGuard VPN
 
-AdGuard for Android creates a local VPN to filter traffic. Thus, other VPN apps cannot be used while AdGuard for Android is running. However, both AdGuard and AdGuard VPN apps have Integrated modes that let you use them together.
+AdGuard для Android создает локальный VPN для фильтрации трафика. Получается, другие VPN-приложения нельзя использовать, пока работает AdGuard для Android. Но у приложений AdGuard и AdGuard VPN есть Режим интеграции, который позволяет использовать их вместе.
 
-In this mode, AdGuard VPN acts as an outbound proxy server through which AdGuard routes its traffic. This allows AdGuard to create a VPN interface and block ads and trackers locally, while AdGuard VPN routes all traffic through a remote server.
+В этом режиме AdGuard VPN выступает в роли исходящего прокси-сервера, через который AdGuard направляет свой трафик. Это позволяет AdGuard создавать VPN-интерфейс и блокировать рекламу и трекеры локально, а AdGuard VPN направляет весь трафик через удалённый сервер.
 
-If you disable AdGuard VPN, AdGuard will stop using it as an outbound proxy. If you disable AdGuard, AdGuard VPN will route traffic through its own VPN interface.
+Если вы отключите AdGuard VPN, AdGuard перестанет использовать его в качестве исходящего прокси. Если вы отключите AdGuard, AdGuard VPN будет маршрутизировать трафик через собственный VPN-интерфейс.
 
-If you have AdGuard Ad Blocker and install AdGuard VPN, the Ad Blocker app will detect it and enable *Integration with AdGuard VPN* automatically. The same happens in reverse. Note that if you've enabled integration, you won't be able to manage app exclusions and connect to DNS servers from the AdGuard VPN app. You can specify apps to be routed through your VPN tunnel via *Settings* → *Filtering* → *Network* → *Proxy* → *Apps operating through proxy*. To select a DNS server, open AdGuard → *DNS protection* → *DNS server*.
+Если на устройство с Блокировщиком рекламы AdGuard вы установили AdGuard VPN, Блокировщик обнаружит VPN-приложение и автоматически включит *Интеграцию с AdGuard VPN*. Это работает и наоборот. Обратите внимание, что при включенной интеграции вы не сможете управлять исключениями приложений и подключаться к DNS-серверам из приложения AdGuard VPN. You can specify apps to be routed through your VPN tunnel via *Settings* → *Filtering* → *Network* → *Proxy* → *Apps operating through proxy*. Чтобы выбрать DNS-сервер, откройте AdGuard → *DNS-защита* → *DNS-сервер*.
 
 ## Управление приложениями
 
-This section allows you to manage permissions and filtering settings for all apps installed on your device.
+В этом разделе вы можете управлять разрешениями и настройками фильтрации для всех приложений, установленных на вашем устройстве.
 
-![App management *mobile_border](https://cdn.adtidy.org/blog/new/9sakapp_management.png)
+![Управление приложениями *mobile_border](https://cdn.adtidy.org/blog/new/9sakapp_management.png)
 
-By clicking an app you can manage its settings:
+Нажав на приложение, вы можете управлять его настройками:
 
-- Route its traffic through AdGuard
-- Block ads and trackers in this app (*Filter app content*)
-- Filter its HTTPS traffic (for non-browser apps, it requires [installing AdGuard's CA certificate into the system store](/adguard-for-android/solving-problems/https-certificate-for-rooted/), available on rooted devices)
-- Route it through your specified proxy server or AdGuard VPN in the Integration mode
+- Направлять трафик через AdGuard
+- Блокировать рекламу и трекеры в этом приложении (*Фильтровать контент*)
+- Фильтровать его HTTPS-трафик (для небраузерных приложений требуется [установка сертификата CA AdGuard в системное хранилище](/adguard-for-android/solving-problems/https-certificate-for-rooted/), доступное на рутованных устройствах)
+- Направлять его трафик через указанный прокси-сервер или AdGuard VPN в Режиме интеграции
 
-![App management: Chrome *mobile_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
+![Управление приложениями: Chrome *mobile_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
 
-From the context menu, you can also access the app's stats.
+Из контекстного меню вы также можете попасть в статистику приложения.
 
-![App management: Chrome. Context menu *mobile_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
+![Управление приложениями: Chrome. Контекстное меню *mobile_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
 
 ### Problem-free and problematic apps
 
-By default, only problem-free apps are routed through AdGuard and filtered. These are the apps that still work properly when filtering is enabled.
+By default, only problem-free apps are routed through AdGuard and filtered. Это приложения, которые продолжают корректно работать при включённой фильтрации.
 
-Problematic apps, such as Download Manager, radio, system apps with UID 1000 and 1001 (for example, Google Play services) may work incorrectly when routed through AdGuard. That's why you may see the following warning when trying to route or filter all apps:
+Problematic apps, such as Download Manager, radio, system apps with UID 1000 and 1001 (for example, Google Play services) may work incorrectly when routed through AdGuard. Поэтому вы можете увидеть следующее предупреждение при попытке перенаправить или отфильтровать все приложения:
 
-![Route all apps dialog *mobile_border](https://cdn.adtidy.org/blog/new/6du8jiroute_all.png)
+![Маршрутизировать все приложения *mobile_border](https://cdn.adtidy.org/blog/new/6du8jiroute_all.png)
 
-To ensure proper operation of all apps installed on your device, we strongly recommend that you route only problem-free apps through AdGuard. You can see the full list of apps not recommended for filtering in *Settings* → *General* → *Advanced* → *Low-level settings* → *Protection* → *Excluded apps*.
+To ensure proper operation of all apps installed on your device, we strongly recommend that you route only problem-free apps through AdGuard. Полный список приложений, которые не рекомендуется фильтровать, можно посмотреть в разделе *Настройки* → *Основные* → *Расширенные* → *Низкоуровневые настройки* → *Защита* → *Исключённые приложения*.
 
 ## Статистика
 
 This feature gives you a complete picture of what is happening with the traffic on your device: how many requests are being sent and to which companies, how much data is being uploaded and downloaded, what requests are being blocked, and more.
 
-![Statistics *mobile_border](https://cdn.adtidy.org/blog/new/czy5rStatistics.jpeg?mw=1360)
+![Статистика *mobile_border](https://cdn.adtidy.org/blog/new/czy5rStatistics.jpeg?mw=1360)
 
-The stats are categorized into different sections.
+Статистика разбита на несколько разделов.
 
 ### Запросы
 
-This section shows the number of blocked ads, trackers, and the total number of requests for the selected time period: 24 hours, 7 days, 30 days, or all time. You can also filter requests by data type: mobile data, Wi-Fi, or all data combined.
+В этом разделе отображается количество заблокированной рекламы, трекеров и общее количество запросов за выбранный период времени: 24 часа, 7 дней, 30 дней или за всё время. Также можно отфильтровать запросы по типу данных: мобильные данные, Wi-Fi или все данные вместе.
 
 *Recent activity*, formerly known as *Filtering log*, shows the last 10,000 requests processed by AdGuard. Tap *Customize* to filter requests by status (*regular*, *blocked*, *modified*, or *allowlisted*) or origin (*first-party* or *third-party*).
 
-You can tap a request to view its details and add a blocking or unblocking rule.
+Нажмите на запрос, чтобы просмотреть сведения о нём и добавить правило блокировки или разблокировки.
 
-### Data usage
+### Использование данных
 
-This section shows the amount of downloaded, uploaded, and saved traffic for the selected time period and data type. Tap *saved*, *uploaded*, or *downloaded* to view the graph of data usage over time.
+В этом разделе отображается объём скачанного, загруженного и сохранённого трафика за выбранный период времени, а также тип данных. Нажмите *сэкономлено*, *отправлено* или *скачано*, чтобы просмотреть график использования данных с течением времени.
 
 ### Приложения
 
-This section displays stats for all apps installed on your device. You can sort apps by the number of blocked ads or trackers or by the number of sent requests.
+Здесь отображается статистика по всем приложениям, установленным на вашем устройстве. Вы можете сортировать приложения по количеству заблокированной рекламы или трекеров или по количеству отправленных запросов.
 
-Tap *View all apps* to expand the list of your apps, sorted by the number of ads, trackers, or requests.
+Нажмите *Показать все*, чтобы развернуть список ваших приложений, ранжированный по количеству рекламы, трекеров или запросов.
 
-![List of apps *mobile_border](https://cdn.adtidy.org/blog/new/toq0mkScreenshot_20230627-235219_AdGuard.jpg)
+![Список приложений *mobile_border](https://cdn.adtidy.org/blog/new/toq0mkScreenshot_20230627-235219_AdGuard.jpg)
 
-If you tap an app, you can see its full stats: the requests it sends and the domains and companies it reaches out to.
+При нажатии на приложение можно увидеть его полную статистику: количество отправленных запросов, домены и компании, к которым оно обращается.
 
 ### Компании
 
-This section displays companies that your device reaches out to. What does it mean? AdGuard detects the domains your device sends requests to and determines which companies they belong to. A database of companies can be found on [GitHub](https://github.com/AdguardTeam/companiesdb).
+В этом разделе отображаются компании, с которыми связывается ваше устройство. Что это значит? AdGuard обнаруживает домены, на которые ваше устройство отправляет запросы, и определяет, каким компаниям они принадлежат. Базу данных компаний можно найти на [GitHub](https://github.com/AdguardTeam/companiesdb).
 
 ### DNS-статистика
 
-This section shows data about the requests handled by *DNS protection*. You can see the total number of requests sent and how many were blocked by AdGuard in figures and graphs. You'll also find statistics on the amount of traffic saved, downloaded, and uploaded.
+В этом разделе показаны данные о запросах, обработанных *DNS-защитой*. Общее количество отправленных и заблокированных AdGuard запросов вы можете увидеть в цифрах и графиках. Здесь вы также найдете статистику по объёму сохранённого, скачанного и загруженного трафика.
 
-### Battery usage
+### Использование батареи
 
-This section displays statistics on the device resources used by AdGuard during the last 24 hours. The data may differ from your device settings. This happens because the system attributes the traffic of filtered apps to AdGuard. Thus, the device shows that AdGuard consumes more resources than it actually does. [Read more about battery and traffic consumption issues](/adguard-for-android/solving-problems/battery/)
+В этом разделе представлена статистика использования ресурсов устройства AdGuard за последние 24 часа. Данные могут отличаться от представленных в настройках вашего устройства. Это происходит потому, что система приписывает трафик отфильтрованных приложений AdGuard. Thus, the device shows that AdGuard consumes more resources than it actually does. [Подробнее о проблемах, связанных с потреблением заряда батареи и трафика](/adguard-for-android/solving-problems/battery/)
 
 ## Настройки
 
 ### Основное
 
-This section helps you manage the appearance and behavior of the app: you can set the color theme and language, manage notifications, and more. If you want to help the AdGuard team detect app crashes and research usability, you can enable *Auto-report crashes* and *Send technical and interaction data*.
+Этот раздел помогает управлять внешним видом и поведением приложения: вы можете установить цветовую тему и язык, управлять уведомлениями и многое другое. Если вы хотите помочь команде AdGuard развивать приложение, можете включить опцию *Отправлять отчёты о сбоях* и *Отправлять данные об использовании приложения*.
 
-![General *mobile_border](https://cdn.adtidy.org/blog/new/my5quggeneral.png)
+![Основные *mobile_border](https://cdn.adtidy.org/blog/new/my5quggeneral.png)
 
-Under *App and filter updates*, you can configure automatic filter updates and select an app update channel. Choose *Release* for more stability and *Beta* or *Nightly* for early access to new features.
+В разделе *Обновления приложения и фильтров* вы можете настроить автоматическое обновление фильтров и выбрать канал обновления приложения. Выберите *Релиз* для большей стабильности и *Бета* или *Nightly* для раннего доступа к новым функциям.
 
-![Updates *mobile_border](https://cdn.adtidy.org/blog/new/hqm8kupdates.png)
+![Обновления *mobile_border](https://cdn.adtidy.org/blog/new/hqm8kupdates.png)
 
 #### Расширенные настройки
 
-*Automation* allows you to manage AdGuard via tasker apps.
+*Автоматизация* позволяет управлять AdGuard через приложения-таскеры.
 
 *Watchdog* helps protect AdGuard from being disabled by the system ([read more about Android's battery save mode](/adguard-for-android/solving-problems/background-work/)). The value you enter will be the interval in seconds between watchdog checks.
 
-*Logging level* defines what data about the app's operation should be logged. By default, the app collects the data about its events. The *Debug* level logs more events — enable it if asked by the AdGuard team to help them get a better understanding of the problem. [Read more about collecting and sending logs](/adguard-for-android/solving-problems/logcat/)
+*Уровень логирования* определяет, какие данные о работе приложения должны записываться. По умолчанию приложение собирает данные о своих событиях. *Подробный* уровень фиксирует больше событий. Включайте его только по запросу команды AdGuard, чтобы обеспечить им детальное понимание проблемы. [Подробнее о сборе и отправке логов](/adguard-for-android/solving-problems/logcat/)
 
-![Advanced *mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
+![Расширенные *mobile_border](https://cdn.adtidy.org/blog/new/vshfnadvanced.png)
 
-The *Low-level settings* section is for expert users. [Read more about low-level settings](/adguard-for-android/solving-problems/low-level-settings/)
+Раздел *Низкоуровневых настроек* предназначен для продвинутых пользователей. [Подробнее о низкоуровневых настройках](/adguard-for-android/solving-problems/low-level-settings/)
 
 ![Низкоуровневые настройки *mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
 
 ### Фильтрация
 
-This section allows you to manage HTTPS filtering settings, filters, and userscripts, and set up a proxy server.
+В этом разделе можно управлять настройками HTTPS-фильтрации, фильтрами и пользовательскими скриптами, а также настраивать прокси-сервер.
 
-![Filtering *mobile_border](https://cdn.adtidy.org/blog/new/7v5c6filtering.png)
+![Фильтрация *mobile_border](https://cdn.adtidy.org/blog/new/7v5c6filtering.png)
 
 #### Сеть
 
 ##### HTTPS-фильтрация
 
-To block ads and trackers on most websites and in most apps, AdGuard needs to filter their HTTPS traffic. [Read more about HTTPS filtering](/general/https-filtering/what-is-https-filtering)
+Чтобы заблокировать рекламу и трекеры на большинстве веб-сайтов и в большинстве приложений, AdGuard необходимо фильтровать HTTPS-трафик. [Read more about HTTPS filtering](/general/https-filtering/what-is-https-filtering)
 
-###### Security certificates
+###### Сертификат безопасности
 
-To manage encrypted traffic, AdGuard installs its CA certificate on your device. It's safe: the traffic is filtered locally and AdGuard verifies the security of the connection.
+To manage encrypted traffic, AdGuard installs its CA certificate on your device. Это безопасно: трафик фильтруется локально, а AdGuard проверяет безопасность соединения.
 
-On older versions of Android, the certificate is installed automatically. On Android 11 and later, you need to install it manually. [Installation instructions](/adguard-for-android/solving-problems/manual-certificate/)
+В старых версиях Android сертификат устанавливается автоматически. On Android 11 and later, you need to install it manually. [Инструкция по установке](/adguard-for-android/solving-problems/manual-certificate/)
 
-The CA certificate in the user store is enough to filter HTTPS traffic in browsers and some apps. However, there are apps that only trust certificates from the system store. To filter HTTPS traffic there, you need to install AdGuard's CA certificate into the system store. [Instructions](/adguard-for-android/solving-problems/https-certificate-for-rooted/)
+The CA certificate in the user store is enough to filter HTTPS traffic in browsers and some apps. Однако есть приложения, которые доверяют только сертификатам из системного хранилища. To filter HTTPS traffic there, you need to install AdGuard's CA certificate into the system store. [Инструкция](/adguard-for-android/solving-problems/https-certificate-for-rooted/)
 
-###### HTTPS-filtered apps
+###### Приложения с HTTPS-фильтрацией
 
-This section contains the list of apps for which AdGuard filters HTTPS traffic. Please note that the setting can be applied for all apps only if you have CA certificates both in the user store and in the system store.
+В этом разделе содержится список приложений, для которых AdGuard фильтрует HTTPS-трафик. Please note that the setting can be applied for all apps only if you have CA certificates both in the user store and in the system store.
 
 ###### Сайты с HTTPS-фильтрацией
 
-This setting allows you to manage websites for which AdGuard should filter HTTPS traffic.
+Эта настройка позволяет вам управлять сайтами, для которых AdGuard должен фильтровать HTTPS-трафик.
 
-HTTPS filtering allows AdGuard to filter the content of requests and responses, but we never collect or store this data. However, to increase security, we [exclude websites that contain potentially sensitive information from HTTPS filtering](/general/https-filtering/what-is-https-filtering/#financial-websites-and-websites-with-sensitive-personal-data).
+HTTPS-фильтрация позволяет AdGuard фильтровать содержимое запросов и ответов, но мы никогда не собираем и не храним эти данные. However, to increase security, we [exclude websites that contain potentially sensitive information from HTTPS filtering](/general/https-filtering/what-is-https-filtering/#financial-websites-and-websites-with-sensitive-personal-data).
 
-You can also add websites that you consider necessary to exclusions by selecting one of the modes:
+Вы также можете добавить в исключения сайты, которые считаете необходимыми, выбрав один из режимов:
 
-- Exclude specific websites from HTTPS filtering
-- Filter HTTPS traffic only on the websites added to exclusions
+- Исключить определённые сайты из HTTPS-фильтрации
+- Фильтровать HTTPS-трафик только на сайтах, добавленных в исключения
 
-By default, we also do not filter websites with Extended Validation (EV) certificates, such as financial websites. If needed, you can enable the *Filter websites with EV certificates* option.
+By default, we also do not filter websites with Extended Validation (EV) certificates, such as financial websites. При необходимости вы можете включить опцию *Фильтровать сайты с EV-сертификатами*.
 
-##### Proxy
+##### Прокси
 
-You can set up AdGuard to route all your device's traffic through your proxy server. [How to set up an outbound proxy](/adguard-for-android/solving-problems/outbound-proxy)
+Вы можете настроить AdGuard так, чтобы он пропускал весь трафик вашего устройства через прокси-сервер. [Как настроить исходящий прокси](/adguard-for-android/solving-problems/outbound-proxy)
 
-In this section, you can also set up a third-party VPN to work with AdGuard, if your VPN provider allows it.
+В этом разделе вы также можете настроить сторонний VPN для работы с AdGuard, если это разрешено вашим VPN-провайдером.
 
-Under *Apps operating through proxy*, you can select apps that will route their traffic through your specified proxy. If you have *Integration with AdGuard VPN* enabled, this setting plays the role of AdGuard VPN's app exclusions: it allows you to specify apps to be routed through the AdGuard VPN tunnel.
+Во вкладке *Приложения, работающие через прокси* можно выбрать приложения, которые будут направлять свой трафик через указанный вами прокси-сервер. Если у вас включена *Интеграция с AdGuard VPN*, этот параметр играет роль исключений приложений AdGuard VPN: он позволяет вам указать приложения, которые будут направляться через туннель AdGuard VPN.
 
-##### Routing mode
+##### Режим маршрутизации
 
-This section allows you to select the traffic filtering method.
+Здесь вы можете выбрать метод фильтрации трафика.
 
-- *Local VPN* filters traffic through a locally created VPN. This is the most reliable mode. Due to Android restrictions, it is also the only system-wide traffic filtering method available on non-rooted devices.
+- *Локальный VPN* фильтрует трафик через локально созданный VPN. Это самый надёжный режим. Due to Android restrictions, it is also the only system-wide traffic filtering method available on non-rooted devices.
 
 :::note
 
-The *Local VPN* mode doesn't allow AdGuard to be used simultaneously with other VPNs. To use another VPN with AdGuard, you need to reconfigure it to work in proxy mode and set up an outbound proxy in AdGuard. For AdGuard VPN, this is done automatically with the help of the [*Integrated mode*](#integration-with-adguard-vpn).
+Режим *Локальный VPN* не позволяет использовать AdGuard одновременно с другими VPN. Чтобы использовать другой VPN с AdGuard, вам необходимо перенастроить его для работы в режиме прокси и настроить исходящий прокси в AdGuard. Для AdGuard VPN это делается автоматически с помощью [*Режима интеграции*](#integration-with-adguard-vpn).
 
 :::
 
-- *Automatic proxy* is an alternative traffic routing method that does not require the use of a VPN. One significant advantage is that it can be run in parallel with a VPN. This mode requires root access.
+- *Автоматический прокси* — альтернативный метод маршрутизации трафика, не требующий использования VPN. Одним из его существенных преимуществ является то, что его можно запускать параллельно с VPN. This mode requires root access.
 
 - *Manual proxy* involves setting up a proxy server on a specific port, which can then be configured in Wi-Fi settings. This mode requires root access for Android 10 and above.
 
 #### Фильтры
 
-AdGuard blocks ads, trackers, and annoyances by applying rules from its filters. Most features from the *Protection* section are powered by [AdGuard filters](/general/ad-filtering/adguard-filters/#adguard-filters). If you enable *Basic protection*, it will automatically turn on the AdGuard Base filter and AdGuard Mobile Ads filter. And vice versa: if you turn off both filters, *Basic protection* will also be disabled.
+AdGuard блокирует рекламу, трекеры и раздражающие факторы, применяя правила из своих фильтров. Большинство функций из раздела *Защита* поддерживаются [фильтрами AdGuard](/general/ad-filtering/adguard-filters/#adguard-filters). Если вы включите *Базовую защиту*, автоматически включится Базовый фильтр AdGuard и Фильтр мобильной рекламы AdGuard. И наоборот: если отключить оба фильтра, *Базовая защита* тоже будет отключена.
 
-![Filters *mobile_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
+![Фильтры *mobile_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
 
-Filters enabled by default are enough for normal AdGuard operation. However, if you want to customize ad blocking, you can use other AdGuard or third-party filters. To do this, select a category and enable the filters you'd like. To add a custom filter, tap *Custom filters* → *Add custom filter* and enter its URL or file path.
+Для нормальной работы AdGuard достаточно фильтров, включённых по умолчанию. However, if you want to customize ad blocking, you can use other AdGuard or third-party filters. Для этого выберите категорию и включите нужные фильтры. To add a custom filter, tap *Custom filters* → *Add custom filter* and enter its URL or file path.
 
 :::note
 
-If you activate too many filters, some websites may work incorrectly.
+Если вы активируете слишком много фильтров, некоторые сайты могут работать некорректно.
 
 :::
 
-[Read more about filters](https://adguard.com/en/blog/what-are-filters.html)
+[Подробнее о фильтрах](https://adguard.com/en/blog/what-are-filters.html)
 
 #### Пользовательские скрипты
 
-Userscripts are mini-programs written in JavaScript that extend the functionality of one or more websites. To install a userscripts, you need a special userscript manager. AdGuard has such a functionality and allows you to add userscripts by URL or from file.
+Пользовательские скрипты — это мини-программы, написанные на JavaScript и меняющие поведение одного или нескольких сайтов. Для установки пользовательских скриптов вам понадобится специальный менеджер пользовательских скриптов. У AdGuard есть такая функция, которая позволяет добавлять пользовательские скрипты по URL или из файла.
 
-![Userscripts *mobile_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
+![Пользовательские скрипты *mobile_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
 
 ##### AdGuard Extra
 
-AdGuard Extra is a custom userscript that prevents websites from bypassing ad blockers and re-inserting blocked ads.
+AdGuard Extra — это специальный пользовательский скрипт, который не позволяет сайтам обходить блокировщики рекламы и повторно вставлять заблокированную рекламу.
 
 ### Лицензия
 
-In this section, you can find information about your license and manage it:
+В этом разделе вы можете найти информацию о вашей лицензии и управлять ей:
 
-- Buy an AdGuard license to activate [the full version's features](#free-vs-full-version)
-- Log in to your AdGuard account or enter the license key to activate your license
-- Sign up to activate your 7-day trial period if you haven't used it yet
-- Refresh the license status if you have recently extended its validity
-- Open the AdGuard account to manage your license there
-- Reset your license – for example, if you've reached device limit for this license and want to apply another one
+- Купить лицензию AdGuard, чтобы активировать [возможности полной версии](#free-vs-full-version)
+- Войти в свою учётную запись AdGuard или ввести лицензионный ключ для активации лицензии
+- Зарегистрироваться для активации 7-дневного пробного периода, если вы ещё не воспользовались им
+- Обновить статус лицензии, если вы недавно продлили её срок действия
+- Открыть учётную запись AdGuard, чтобы управлять своей лицензией там
+- Сбросить лицензию, например, если вы достигли лимита устройств для этой лицензии и хотите применить другую
 
-![License screen *mobile_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
+![Экран лицензии *mobile_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
 
 ### Поддержка
 
-Use this section if you have any questions or suggestions regarding AdGuard for Android. We recommend consulting *[FAQ](https://adguard.com/support/adguard_for_android.html)* or this knowledge base before contacting support.
+Воспользуйтесь этим разделом, если у вас возникли вопросы или есть предложения касательно AdGuard для Android. Мы рекомендуем ознакомиться с *[FAQ](https://adguard.com/support/adguard_for_android.html)* или этой базой знаний, прежде чем обращаться в службу поддержки.
 
 ![Поддержка *mobile_border](https://cdn.adtidy.org/blog/new/cz55usupport.png)
 
-If you notice a missed ad, please report it via *Report incorrect blocking*.
+Если вы заметили пропущенную рекламу, сообщите об этом через *Сообщить о некорректной блокировке*.
 
-For unusual app behavior, select *Report a bug*. If possible, describe your problem in detail and add app logs. [How to describe an issue](/guides/report-bugs/#how-to-describe-a-problem)
+При необычном поведении приложения выберите *Сообщить об ошибке*. Если возможно, подробно опишите вашу проблему и добавьте логи приложения. [Как описать проблему](/guides/report-bugs/#how-to-describe-a-problem)
 
-For your suggestions, use *Request a feature*.
+Для своих предложений используйте *Запросить функцию*.
 
 :::note
 
-GitHub is an alternative way to report bugs and suggest new features. [Instructions and repository links](/guides/report-bugs/#adguard-for-android)
+GitHub — альтернативный способ сообщать об ошибках и предлагать новые функции. [Инструкции и ссылки на репозитории](/guides/report-bugs/#adguard-for-android)
 
 :::
 
-### Free vs full version
+### Бесплатная версия или полная
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xNOeHpZgjFo" title="Видеоплеер YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-AdGuard for Android has a free and a paid version. Paid features extend AdGuard's capabilities:
+Есть бесплатная и платная версии AdGuard для Android. Платные функции расширяют возможности AdGuard:
 
-- *Ad blocking in apps* allows you to block ads in non-browser apps. You can specify apps for filtering in [*App management*](#app-management)
+- *Блокировка рекламы в приложениях* позволяет блокировать рекламу в небраузерных приложениях. Вы можете перечислить приложения для фильтрации в разделе [*Управление приложениями*](#app-management)
 
 :::note
 
-AdGuard uses its own ad-free media player to block ads in YouTube videos. To open the media player, open the YouTube app and share a video with AdGuard. This feature is free.
+AdGuard блокирует рекламу на YouTube помощью собственного медиаплеера. Чтобы воспользоваться им, откройте приложение YouTube и поделитесь видео с AdGuard. Эта функция бесплатна.
 
 :::
 
 - *Tracking protection* increases your privacy by blocking tracking requests, online counters, UTM tags, analytics systems, and more. [Back to Tracking protection](#tracking-protection)
 
-- *Browsing Security* warns you if you're about to visit a potentially dangerous website. [Back to Browsing Security](#browsing-security)
+- *Защита от фишинга* предупреждает вас, если вы собираетесь посетить потенциально опасный сайт. [Back to Browsing Security](#browsing-security)
 
-- *Custom filters and user rules* allow you to add your own filtering rules and third-party filters to fine-tune ad blocking. [Back to filters](#filters)
+- *Собственные фильтры и правила* позволяют добавлять свои правила фильтрации и сторонние фильтры для более точной настройки блокировки рекламы. [Вернуться к фильтрам](#filters)
 
-- *Userscripts* allow you to use AdGuard Extra to bypass ad blocker bans and install other userscripts to extend your browser's functionality. [Back to userscripts](#userscripts)
+- *Пользовательские скрипты* позволяют использовать AdGuard Extra для обхода блокировок блокировщиков рекламы и устанавливать другие скрипты для расширения функциональности браузера. [Назад к пользовательским скриптам](#userscripts)
 
-You can get access to these features by [purchasing a license](https://adguard.com/license.html). [How to activate the license](/general/license/activation/#activating-adguard-for-android)
+Вы можете получить доступ к этим функциям, [купив лицензию](https://adguard.com/license.html). [Как активировать лицензию](/general/license/activation/#activating-adguard-for-android)
 
-### Rooted vs non-rooted devices
+### Рутованные и нерутованные устройства
 
-Due to additional security measures of Android apps, some AdGuard features are only available on rooted devices. Here's the list of them:
+Due to additional security measures of Android apps, some AdGuard features are only available on rooted devices. Вот их список:
 
-- **HTTPS filtering in most apps** requires [installing a CA certificate into the system store](#security-certificates), as most apps do not trust certificates in the user store. Installing a certificate into the system store is only possible on rooted devices
-- The [**Automatic proxy** routing mode](#routing-mode) requires root access due to Android's limitations on system-wide traffic filtering
+- **HTTPS filtering in most apps** requires [installing a CA certificate into the system store](#security-certificates), as most apps do not trust certificates in the user store. Установка сертификата в системное хранилище возможна только на рутованных устройствах
+- [**Автоматический прокси** в режиме маршрутизации](#routing-mode) требует root-доступа из-за ограничений Android на общесистемную фильтрацию трафика
 - The **Manual proxy** routing mode requires root access on Android 10 and above as it's no longer possible to determine the name of the app associated with a connection filtered by AdGuard

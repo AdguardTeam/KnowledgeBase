@@ -43,7 +43,7 @@ This method will only work on **rooted** devices.
 
 :::
 
-1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+1. [Установите и настройте](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; На платформе Windows владельцам **Samsung** может потребоваться установить [эту утилиту](https://developer.samsung.com/mobile/android-usb-driver.html).
 
 1. Активируйте **режим разработчика** и включите **отладку по USB**:
 

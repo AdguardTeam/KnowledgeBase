@@ -1,31 +1,31 @@
 ---
-title: How to cancel or refund
+title: Come annullare o richiedere un rimborso
 sidebar_position: 5
 ---
 
 ## Come annullare un abbonamento
 
-L'abbonamento può essere annullato sul tuo profilo di AdGuard. To cancel your subscription:
+L'abbonamento può essere annullato sul tuo profilo di AdGuard. Per annullare il tuo abbonamento:
 
- 1. Go to your [AdGuard account](https://my.adguard.com/).
- 1. Select *Licenses*.
- 1. Click *Cancel subscription* below the subscription you no longer need. ![Annulla](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-cancel-sub.png)
+ 1. Vai nel tuo [account AdGuard](https://my.adguard.com/).
+ 1. Selezioni *Licenze*.
+ 1. Fai clic su *Annulla abbonamento* sotto l'abbonamento che non ti serve più. ![Annulla](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-cancel-sub.png)
 
  L'abbonamento annullato sarà valido fino alla sua data di scadenza.
 
 :::note
 
-Subscriptions purchased on the App Store can be managed in the App Store account or in the device's settings.
+Gli abbonamenti acquistati su App Store possono essere gestiti nell'account App Store o nelle impostazioni del dispositivo.
 
 :::
 
 ## Come ottenere un rimborso
 
-In accordance with our [Terms of Sale](https://adguard.com/terms-of-sale.html), you can get a 100% refund on the AdGuard license key you purchased at https://adguard.com. To get a refund, contact our support team at *support@adguard.com* and specify the payment option you've used.
+In conformità con le nostre [Condizioni di vendita](https://adguard.com/terms-of-sale.html), puoi ottenere un rimborso del 100% sulla chiave di licenza AdGuard che hai acquistato su https://adguard.com. Per ottenere un rimborso, si prega di contattare il nostro team di supporto all'indirizzo *support@adguard.com* e specificare l'opzione di pagamento che hai utilizzato.
 
-A refund may be declined if:
+Un rimborso potrebbe essere rifiutato se:
 
-- A license was purchased more than 60 days ago
-- A license was purchased from a distributor
-- A license was purchased from the App Store
-- You applied for a partial refund for a license key upgrade or renewal
+- La licenza è stata acquistata più di 60 giorni fa
+- La licenza è stata acquistata da un distributore
+- La licenza è stata acquistata dall'App Store
+- Hai richiesto un rimborso parziale per l'aggiornamento o per il rinnovo della chiave di licenza
