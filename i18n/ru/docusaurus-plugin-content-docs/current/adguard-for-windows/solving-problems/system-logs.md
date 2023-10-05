@@ -9,17 +9,17 @@ sidebar_position: 5
 
 :::
 
-To analyze and diagnose different problems that may potentially arise, the AdGuard support service might need Windows system log files. Журналы Windows содержат записи о системных событиях и ошибках за последнее время. Ниже представлена инструкция для получения и отправки этих файлов.
+Для анализа и диагностики сложных проблем, связанных с работой AdGuard, службе поддержки могут понадобиться файлы журнала Windows. Журналы Windows содержат записи о системных событиях и ошибках за последнее время. Ниже представлена инструкция для получения и отправки этих файлов.
 
-1. Press *Win + R*
+1. Нажмите *Win + R*
 
-1. In the window that appears type in `eventvwr` and click *OK*:
+1. В появившемся окне введите `eventvwr` и нажмите *OK*:
 
-    ![Run window *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_1.png)
+    ![Окно запуска *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_1.png)
 
 1. Окно программы «Просмотр событий» выглядит, как показано ниже.
 
-    ![Event viewer *border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_2.png)
+    ![Просмотр событий *border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_event_logs_2.png)
 
     Чтобы сохранить нужные нам файлы, сделайте следующее:
 

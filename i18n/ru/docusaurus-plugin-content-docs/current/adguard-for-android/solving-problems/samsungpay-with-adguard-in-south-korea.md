@@ -21,11 +21,11 @@ As a consequence, users had to disable AdGuard when making payments with Samsung
 
 :::
 
-To enable *Detect Samsung Pay*, follow these steps:
+Чтобы включить *Обнаруживать Samsung Pay*, выполните следующие действия:
 
 1. Go to *Settings* → *General* → *Advanced*→ *Low-level settings*.
 
-1. Scroll to *Detect Samsung Pay* and move the slider to the right.
+1. Прокрутите до *Обнаруживать Samsung Pay* и переместите ползунок вправо.
 
 1. Tap *Allow permissions* and give AdGuard access to information about the use of other apps.
 

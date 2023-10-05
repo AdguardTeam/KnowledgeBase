@@ -63,4 +63,4 @@ Bazı Safari uzantılarını etkinleştirirken, **web sayfası içeriğine eriş
 
 – Elle reklam engelleme ve gelişmiş engelleme kurallarının doğru çalışması için web sayfası içeriğine erişim gereklidir – Sitelerdeki koruma durumunu kontrol etmek ve hangi gelişmiş kuralların uygulanması gerektiğini belirlemek için tarama geçmişine erişim gereklidir
 
-We do not use this data for any other purpose or share it with anyone. Daha fazla bilgi için [Gizlilik politikamıza](https://adguard.com/privacy.html) bakabilirsiniz.
+Bu verileri başka hiçbir amaçla kullanmıyoruz veya kimseyle paylaşmıyoruz. Daha fazla bilgi için [Gizlilik politikamıza](https://adguard.com/privacy.html) bakabilirsiniz.
