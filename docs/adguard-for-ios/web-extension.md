@@ -47,7 +47,7 @@ Find **ALLOW THESE EXTENSIONS** section and then find **AdGuard** among the avai
 
 Tap it, then turn on the switch. On the same screen make sure that the AdGuard extension has required permissions: **All Websites** should have the *Allow* status.
 
-![settings extensions](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings4_en.png)
+![settings extensions *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings4_en.png)
 
 :::note
 
