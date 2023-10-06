@@ -575,7 +575,7 @@ This modifier defines a rule which applies only to addresses that match the case
 :::info Compatibility
 
 Rules with the `$match-case` are supported by AdGuard for iOS and Safari,
-**running SafariConverterLib v2.0.41 or later**.
+**running SafariConverterLib v2.0.43 or later**.
 
 All other products already support this modifier.
 
