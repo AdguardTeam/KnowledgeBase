@@ -3872,17 +3872,39 @@ Filter URL: `https://example.org/path/filter.txt`
 
 #### Conditions {#conditions-directive}
 
-Filters maintainers can use conditions to supply different rules depending on the ad blocker type. When an adblocker encounters an `!#if` directive, followed eventually by an `!#endif` directive, it will compile the code inside of the directives block only if the specified condition is true. Condition supports all the basic logical operators.
+Filters maintainers can use conditions to supply different rules depending on the ad blocker type.
+A conditional directive beginning with a `!#if` directive must explicitly be terminated with an `!#endif` directive.
+Conditions support all basic logical operators.
 
-A conditional directive beginning with an `!#if` directive must explicitly be terminated with an `!#endif` directive.
+There are two possible scenarios:
+
+1. When an ad blocker encounters a `!#if` directive and no `!#else` directive,
+   it will compile the code between `!#if` and `!#endif` directives only if the specified condition is true.
+
+1. If there is an `!#else` directive, the code between `!#if` and `!#else` will be compiled if the condition is true;
+   otherwise, the code between `!#else` and `!#endif` will be compiled.
+
+:::note
 
 Whitespaces matter. `!#if` is a valid directive, while `!# if` is not.
+
+:::
 
 **Syntax**
 
 ```adblock
 !#if (conditions)
 rules_list
+!#endif
+```
+
+or
+
+```adblock
+!#if (conditions)
+true_conditions_rules_list
+!#else
+false_conditions_rules_list
 !#endif
 ```
 
@@ -3903,7 +3925,7 @@ where:
         - `adguard_ext_opera` — AdGuard Browser Extension for Opera
         - `adguard_ext_android_cb` — AdGuard Content Blocker for mobile Samsung and Yandex browsers
         - `ext_ublock` — special case; this one is declared when a uBlock version of a filter is compiled by the [FiltersRegistry](https://github.com/AdguardTeam/FiltersRegistry)
-- `rules_list` — list of rules
+- `rules_list`, `true_conditions_rules_list`, `false_conditions_rules_list` — lists of rules
 - `!#endif` — end of the block
 
 **Examples**
@@ -3922,6 +3944,23 @@ domain.com##div.ad
 !#include /androidspecific.txt
 !#endif
 ```
+
+```adblock
+!#if (adguard && !adguard_ext_safari)
+! for all AdGuard products except AdGuard for Safari
+||example.org^$third-party
+domain.com##div.ad
+!#else
+! for AdGuard for Safari only
+||subdomain.example.org^$third-party
+!#endif
+```
+
+:::info Compatibility
+
+The `!#else` directive is supported by the [FiltersDownloader][gh-filters-downloader] v1.1.16 or later.
+
+:::
 
 #### Safari affinity {#safari-affinity-directive}
 
@@ -4231,3 +4270,4 @@ If you need an advice on how to create your own filters properly, our forum has 
 [and-cb]: #what-product "AdGuard Content Blocker for Samsung Internet and Yandex Browser on Android"
 
 [sec-fetch-dest-header]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest
+[gh-filters-downloader]: https://github.com/AdguardTeam/FiltersDownloader/
