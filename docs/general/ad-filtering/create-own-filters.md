@@ -3958,7 +3958,7 @@ domain.com##div.ad
 
 :::info Compatibility
 
-The `!#else` directive is supported by the [FiltersDownloader][gh-filters-downloader] v1.1.16 or later.
+The `!#else` directive is supported by the [FiltersDownloader][gh-filters-downloader] v1.1.20 or later.
 
 :::
 
