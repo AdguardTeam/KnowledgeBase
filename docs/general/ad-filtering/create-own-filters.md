@@ -3964,9 +3964,9 @@ domain.com##div.ad
 
 The `!#else` directive is supported by the [FiltersDownloader][gh-filters-downloader] v1.1.20 or later.
 
-It is already supported for filter lists which are compiled by the [FiltersRegistry],
-but may not be supported by AdGuard products yet during adding a filter list with `!#else` as a custom one.
-Following products will support it in the mentioned versions or later:
+It is already supported for filter lists compiled by the [FiltersRegistry],
+but it still may not be supported by AdGuard products when adding a filter list with `!#else` as a custom one.
+The following products will support it in the mentioned versions or later:
 
 - AdGuard for Windows, Mac, and Android, running CoreLibs v1.13;
 - AdGuard Browser Extension v4.3;
