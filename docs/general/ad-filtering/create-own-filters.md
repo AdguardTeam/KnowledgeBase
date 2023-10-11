@@ -3911,7 +3911,10 @@ false_conditions_rules_list
 where:
 
 - `!#if (conditions)` — start of the block
-- `conditions` — just like in some popular programming languages, preprocessor conditions are based on constants declared by ad blockers. Ad blocker authors define on their own what exact constants do they declare. Possible values:
+- `conditions` — just like in some popular programming languages,
+  preprocessor conditions are based on constants declared by ad blockers.
+  Ad blocker authors define on their own what exact constants do they declare.
+  Possible values:
     - `adguard` always declared; shows maintainers that this is one of AdGuard products; should be enough in 95% of cases
     - product-specific constants for cases when you need a rule to work (or not work — then `!` should be used before constant) in a specific product only:
         - `adguard_app_windows` — AdGuard for Windows
@@ -3924,7 +3927,7 @@ where:
         - `adguard_ext_edge` — AdGuard Browser Extension for Edge Legacy
         - `adguard_ext_opera` — AdGuard Browser Extension for Opera
         - `adguard_ext_android_cb` — AdGuard Content Blocker for mobile Samsung and Yandex browsers
-        - `ext_ublock` — special case; this one is declared when a uBlock version of a filter is compiled by the [FiltersRegistry](https://github.com/AdguardTeam/FiltersRegistry)
+        - `ext_ublock` — special case; this one is declared when a uBlock version of a filter is compiled by the [FiltersRegistry]
 - `rules_list`, `true_conditions_rules_list`, `false_conditions_rules_list` — lists of rules
 - `!#endif` — end of the block
 
@@ -3959,6 +3962,14 @@ domain.com##div.ad
 :::info Compatibility
 
 The `!#else` directive is supported by the [FiltersDownloader][gh-filters-downloader] v1.1.20 or later.
+
+It is already supported for filter lists which are compiled by the [FiltersRegistry],
+but may not be supported by AdGuard products yet during adding a filter list with `!#else` as a custom one.
+Following products will support it in the mentioned versions or later:
+
+- AdGuard for Windows, Mac, and Android, running CoreLibs v1.13;
+- AdGuard Browser Extension v4.3;
+- AdGuard for Safari v1.11.16.
 
 :::
 
@@ -4023,7 +4034,7 @@ example.org#@#.adBanner
 
 ### Hints
 
-"Hint" is a special comment, instruction to the filters compiler used on the server side (see [FiltersRegistry](https://github.com/AdguardTeam/FiltersRegistry)).
+"Hint" is a special comment, instruction to the filters compiler used on the server side (see [FiltersRegistry]).
 
 **Syntax**
 
@@ -4270,4 +4281,5 @@ If you need an advice on how to create your own filters properly, our forum has 
 [and-cb]: #what-product "AdGuard Content Blocker for Samsung Internet and Yandex Browser on Android"
 
 [sec-fetch-dest-header]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest
-[gh-filters-downloader]: https://github.com/AdguardTeam/FiltersDownloader/
+[gh-filters-downloader]: https://github.com/AdguardTeam/FiltersDownloader
+[FiltersRegistry]: https://github.com/AdguardTeam/FiltersRegistry
