@@ -3883,6 +3883,8 @@ Whitespaces matter. `!#if` is a valid directive, while `!# if` is not.
 ```adblock
 !#if (conditions)
 rules_list
+!#else
+rules_list
 !#endif
 ```
 
@@ -3904,7 +3906,14 @@ where:
         - `adguard_ext_android_cb` — AdGuard Content Blocker for mobile Samsung and Yandex browsers
         - `ext_ublock` — special case; this one is declared when a uBlock version of a filter is compiled by the [FiltersRegistry](https://github.com/AdguardTeam/FiltersRegistry)
 - `rules_list` — list of rules
+- `!#else` - start of block added when conditions are false
 - `!#endif` — end of the block
+
+:::note Compatibility
+
+`#!else` syntax is supported starting with CoreLibs v1.13.
+
+:::
 
 **Examples**
 
