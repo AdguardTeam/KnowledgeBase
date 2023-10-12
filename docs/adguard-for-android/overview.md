@@ -55,7 +55,7 @@ There are three pre-configured protection levels. Here’s what features they ha
 
     a. *Block trackers*. This setting protects against online counters and web analytics tools using AdGuard’s Tracking Protection filter
 
-    b. *Ask websites not to track you*. This setting sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) requests to the websites you visit, asking web apps to disable tracking of your activity
+    b. *Ask websites not to track you*. This setting sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
 
     c. *Remove X-Client-Data header*. This setting prevents Google Chrome from sending its version and modification info to Google domains (including Double Click and Google Analytics)
 
