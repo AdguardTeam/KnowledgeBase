@@ -454,7 +454,7 @@ Due to additional security measures of Android apps, some AdGuard features are o
 
 ## Assistant
 
-Assistant is a handy tool to quickly change app/website settings (such as app exclusion or adding to allowlist) and view statistics.
+Assistant is a handy tool to quickly change app or website settings and view statistics without launching the AdGuard app.
 
 ### How to access Assistant
 
@@ -469,17 +469,15 @@ Assistant is a handy tool to quickly change app/website settings (such as app ex
 
 ### How to use Assistant
 
-When you open the Assistant, you will see two tabs: **Apps** and **Websites**. Each of them contains a list of the recently used apps and websites respectively.
+When you open Assistant, you will see two tabs: **Apps** and **Websites**. Each of them contains a list of the recently used apps and websites respectively.
 
-![Assistant main *mobile_border](https://cdn.adtidy.org/blog/new/i5mljAssistant-main.jpg)
-
-So, Assistant is a quick way to do any customization or action for an app or website you're interacting with. Let's see what you can do.
+![Assistant main *mobile](https://cdn.adtidy.org/blog/new/i5mljAssistant-main.jpg)
 
 ### Apps tab
 
-After you select an app (let's take Chrome as an example), you'll get a few options of what you can do.
+After you select an app (**let's take Chrome as an example**), you'll get a few options of what you can do.
 
-![Assistant Chrome menu *mobile_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
+![Assistant Chrome menu *mobile](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
 
 #### Recent activity
 
@@ -490,6 +488,7 @@ You'll be taken to the AdGuard app, where you'll see detailed info on the last 1
 #### App statistics
 
 You'll be taken to the AdGuard app, where you'll see detailed statistics about Chrome:
+
 - Number of ads and trackers blocked in Chrome
 - Data saved by blocking Chrome's ad or tracking requests
 - Companies that Chrome sends requests to
@@ -498,27 +497,17 @@ You'll be taken to the AdGuard app, where you'll see detailed statistics about C
 
 You'll be taken to the AdGuard app screen where you can disable AdGuard protection for the app.
 
-**When could this be useful?**
-
-- When you don't want to block ads in a particular app (for example, when you want to get rewards for watching ads in a game)
-- When an app doesn't work properly because of AdGuard protection (for example, in some apps their core functionality doesn't work when tracking is blocked)
-
 #### Firewall settings
 
 You'll be taken to the AdGuard screen where you can change Firewall settings for the app, meaning you can manage the app's Internet access.
 
-**When could this be useful?**
-
-- When you don't want an app to use certain type(-s) of Internet connection (mobile, Wi-Fi, roaming)
-- When you have global firewall rules enabled (for example, you’ve restricted access to roaming data for all apps) but want to make an exception for a specific app
-
 ### Websites tab
 
-![Assistant websites tab *mobile_border](https://cdn.adtidy.org/blog/new/74y9rAssistant-websites.jpg)
+![Assistant websites tab *mobile](https://cdn.adtidy.org/blog/new/74y9rAssistant-websites.jpg)
 
-Select a website (let's take google.com as an example) and you'll see few options of what you can do.
+Select a website (**let's take google.com as an example**) and you'll see few options of what you can do.
 
-![Assistant google.com info *mobile_border](https://cdn.adtidy.org/blog/new/tht0tgoogle-com-assistant.jpg)
+![Assistant google.com info *mobile](https://cdn.adtidy.org/blog/new/tht0tgoogle-com-assistant.jpg)
 
 #### Add to allowlist
 
@@ -533,7 +522,8 @@ You'll be taken to the AdGuard app, where you'll see detailed info on the last 1
 #### Website statistics
 
 You'll be taken to the AdGuard app, where you'll see detailed statistics about google.com:
-- Number of blocked ad/tracking requests to google.com
-- Data saved by blocking ad/tracking requests to google.com
+
+- Number of blocked ad and tracking requests to google.com
+- Data saved by blocking ad and tracking requests to google.com
 - Apps that send requests to google.com
 - Information about google.com's subdomains
