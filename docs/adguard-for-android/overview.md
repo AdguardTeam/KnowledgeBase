@@ -465,7 +465,7 @@ Assistant is a handy tool to quickly change app or website settings and view sta
 
  3. Tap *Assistant*.
 
-    ![Tap Assistant](https://cdn.adtidy.org/blog/new/1qvlhassistant-tap-assistant.jpg)
+    ![Tap Assistant *mobile](https://cdn.adtidy.org/blog/new/1qvlhassistant-tap-assistant.jpg)
 
 ### How to use Assistant
 
