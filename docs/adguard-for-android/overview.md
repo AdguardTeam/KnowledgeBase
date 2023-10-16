@@ -461,7 +461,7 @@ Assistant is a handy tool to quickly change app or website settings and view sta
  1. On your Android device, swipe down from the top of the screen to open the notification shade.
  2. Find and **expand** the AdGuard notification.
 
-    ![Expand AdGuard notification in the notification shade *mobile_border](https://cdn.adtidy.org/blog/new/jkksbhassistant-shade.png)
+    ![Expand AdGuard notification in the notification shade *mobile](https://cdn.adtidy.org/blog/new/jkksbhassistant-shade.png)
 
  3. Tap *Assistant*.
 
@@ -477,7 +477,7 @@ When you open Assistant, you will see two tabs: **Apps** and **Websites**. Each 
 
 After you select an app (**let's take Chrome as an example**), you'll get a few options of what you can do.
 
-![Assistant Chrome menu *mobile](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
+![Assistant Chrome menu *mobile_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
 
 #### Recent activity
 
