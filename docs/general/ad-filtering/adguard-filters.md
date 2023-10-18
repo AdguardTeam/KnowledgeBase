@@ -1,5 +1,5 @@
 ---
-title: AdGuard filters
+title: Adil Ishaq
 sidebar_position: 2
 ---
 
