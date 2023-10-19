@@ -637,7 +637,6 @@ To be considered as such, a third-party request should meet one of the following
 
 1. Its referrer is not a subdomain of the target domain or vice versa. For example, a request to `subdomain.example.org` from `example.org` is not a third-party request
 1. Its `Sec-Fetch-Site` header is set to `cross-site`
-1. If there is a `$third-party` modifier, the rule is only applied to third-party requests
 
 :::
 
