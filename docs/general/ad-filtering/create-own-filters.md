@@ -19,7 +19,7 @@ To describe the syntax of our filtering rules, we use [Augmented BNF for Syntax 
 
 :::info
 
-Originally, the AdGuard's syntax was based on the syntax of Adblock Plus rules. Later, we extended it with new types of rules for better ad filtering. Some parts of this article about the rules common both to AdGuard and ABP were taken from [this article](https://adblockplus.org/en/filters).
+Originally, the AdGuard's syntax was based on the syntax of Adblock Plus rules. Later, we extended it with new types of rules for better ad filtering. Some parts of this article about the rules common both to AdGuard and ABP were taken from [the Adblock Plus guide on how to write filters](https://adblockplus.org/en/filters).
 
 :::
 
@@ -156,7 +156,7 @@ Browser detects a blocked request as completed with an error.
 
 :::
 
-### Basic rules syntax {#basic-rules-syntax}
+### Basic rule syntax {#basic-rules-syntax}
 
 ```text
       rule = ["@@"] pattern [ "$" modifiers ]
@@ -176,7 +176,7 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 
 :::note Visual representation
 
-We also recommend to get acquainted with [this article](https://adblockplus.org/filter-cheatsheet#blocking), for better understanding of how such rules should be made.
+We also recommend to get acquainted with [the Adblock Plus filter cheatsheet](https://adblockplus.org/filter-cheatsheet#blocking), for better understanding of how such rules should be made.
 
 :::
 
@@ -226,7 +226,7 @@ This rule will not be ignored:
 
 This rule validation is not applied in the following cases:
 
-1. The rule contains [`$domain`](#domain-modifier) modifier that points to a specific domain list.
+1. The rule contains [`$domain`](#domain-modifier) modifier that points to a specific domain list
 
     These rules will not be ignored:
 
@@ -241,7 +241,7 @@ This rule validation is not applied in the following cases:
     $domain=~example.com,script
     ```
 
-1. The rule contains [`$app`](#app-modifier) modifier that points to a specific app list.
+1. The rule contains [`$app`](#app-modifier) modifier that points to a specific app list
 
     This rule will not be ignored:
 
@@ -255,7 +255,7 @@ This rule validation is not applied in the following cases:
     $app=~curl,document
     ```
 
-1. The rule contains one or more modifiers from among [`$cookie`](#cookie-modifier), [`$removeparam`](#removeparam-modifier), [`$removeheader`](#removeheader-modifier), [`$stealth`](#stealth-modifier).
+1. The rule contains one or more modifiers from among [`$cookie`](#cookie-modifier), [`$removeparam`](#removeparam-modifier), [`$removeheader`](#removeheader-modifier), [`$stealth`](#stealth-modifier)
 
     These rules will not be ignored:
 
@@ -282,7 +282,7 @@ In AdGuard for Windows, Mac, Android, and AdGuard Browser Extension rules with w
 
 Rules with wildcard for TLD are not supported by AdGuard Content Blocker.
 
-### Basic rules examples
+### Basic rule examples
 
 - `||example.com/ads/*` — a simple rule, which corresponds to addresses like `http://example.com/ads/banner.jpg` and even `http://subdomain.example.com/ads/otherbanner.jpg`.
 
@@ -290,7 +290,7 @@ Rules with wildcard for TLD are not supported by AdGuard Content Blocker.
 
 - `@@||example.com$document` — general exception rule. It completely disables filtering for `example.com` and all subdomains. There is a number of modifiers which can be used in exception rules. For more details, please follow the link [below](#exception-modifiers).
 
-### Basic rules modifiers
+### Basic rule modifiers
 
 - [Basic modifiers](#basic-rules-basic-modifiers)
 - [Content-type modifiers](#content-type-modifiers)
@@ -462,10 +462,10 @@ If you want the rule not to be applied to certain domains, start a domain name w
 
 In some cases the `$domain` modifier can match not only the referrer domain, but also the target domain. This happens when all of the following is true:
 
-1. The request has `document` content type.
-1. The rule pattern does not match any particular domains.
-1. The rule pattern does not contain regular expressions.
-1. The `$domain` modifier contains only excluded domains, e.g. `$domain=~example.org|~example.com`.
+1. The request has `document` content type
+1. The rule pattern does not match any particular domains
+1. The rule pattern does not contain regular expressions
+1. The `$domain` modifier contains only excluded domains, e.g. `$domain=~example.org|~example.com`
 
 The following predicate should be satisfied to perform a target domain matching:
 
@@ -574,7 +574,7 @@ This modifier defines a rule which applies only to addresses that match the case
 
 :::info Compatibility
 
-Rules with the `$match-case` are supported by AdGuard for iOS and Safari,
+Rules with the `$match-case` are supported by AdGuard for iOS and AdGuard for Safari,
 **running SafariConverterLib v2.0.43 or later**.
 
 All other products already support this modifier.
@@ -635,9 +635,9 @@ A restriction of third-party and own requests. A third-party request is a reques
 
 To be considered as such, a third-party request should meet one of the following conditions:
 
-1. Its referrer is not a subdomain of the target domain or vice versa. For example, a request to `subdomain.example.org` from `example.org` is not a third-party request.
-2. Its `Sec-Fetch-Site` header is set to `cross-site`.
-If there is a `$third-party` modifier, the rule is only applied to third-party requests.
+1. Its referrer is not a subdomain of the target domain or vice versa. For example, a request to `subdomain.example.org` from `example.org` is not a third-party request
+1. Its `Sec-Fetch-Site` header is set to `cross-site`
+1. If there is a `$third-party` modifier, the rule is only applied to third-party requests
 
 :::
 
@@ -881,7 +881,7 @@ Exception rules disable the other basic rules for the addresses to which they co
 
 :::note Visual representation
 
-We recommend to get acquainted with [this article](https://adblockplus.org/filter-cheatsheet#blocking), for better understanding of how exception rules should be made.
+We recommend to get acquainted with [the Adblock Plus filter cheatsheet](https://adblockplus.org/filter-cheatsheet#blocking), for better understanding of how exception rules should be made.
 
 :::
 
@@ -1053,7 +1053,7 @@ Disables blocking of all requests sent from the pages matching the rule and disa
 
 :::info Compatibility
 
-In AdGuard for iOS and Safari rules with `$urlblock` work
+In AdGuard for iOS and AdGuard for Safari, rules with `$urlblock` work
 as [$document exclusion](#document-modifier) — unblock everything.
 
 Rules with `$urlblock` modifier are not supported by AdGuard Content Blocker.
@@ -1094,7 +1094,7 @@ Disables generic basic rules on pages that correspond to exception rule.
 
 :::info Compatibility
 
-In AdGuard for iOS and Safari rules with `$genericblock` work
+In AdGuard for iOS and AdGuard for Safari, rules with `$genericblock` work
 as [$document exclusion](#document-modifier) — unblock everything.
 
 Rules with `$genericblock` modifier are not supported by AdGuard Content Blocker.
@@ -1137,7 +1137,7 @@ All cosmetic rules — not just specific ones — can be disabled by [`$elemhide
 
 :::info Compatibility
 
-Rules with `$specifichide` modifier are not supported by AdGuard for iOS and Safari and AdGuard Content Blocker.
+Rules with `$specifichide` modifier are not supported by AdGuard for iOS, AdGuard for Safari, and AdGuard Content Blocker.
 
 :::
 
@@ -1202,8 +1202,8 @@ The rules with the `$badfilter` modifier disable other basic rules to which they
 
 Rules with `$badfilter` modifier can disable other basic rules for specific domains if they fulfill the following conditions:
 
-1. The rule has a `$domain` modifier.
-1. The rule does not have a negated domain `~` in `$domain` modifier value.
+1. The rule has a `$domain` modifier
+1. The rule does not have a negated domain `~` in `$domain` modifier value
 
 In that case, the `$badfilter` rule will disable the corresponding rule for domains specified in both the `$badfilter` and basic rules. Please note that [wildcard-TLD logic](#wildcard-for-tld) works here as well.
 
@@ -1280,7 +1280,7 @@ Here's how it works:
 
 :::info Compatibility
 
-Rules with `$cookie` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
+Rules with `$cookie` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS, and AdGuard for Safari.
 
 :::
 
@@ -1324,7 +1324,7 @@ In case if multiple `$csp` rules match a single request, we will apply each of t
 
 :::info Compatibility
 
-Rules with `$csp` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
+Rules with `$csp` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and AdGuard for Safari.
 
 :::
 
@@ -1376,17 +1376,17 @@ When multiple `$hls` rules match the same request, their effect is cumulative.
 
 A quick summary of the [specification](https://datatracker.ietf.org/doc/html/rfc8216):
 
-1. An HLS playlist is a collection of text lines.
-1. A line may be empty, a comment (starts with `#`), a tag (also starts with `#`, can only be recognized by name) or a URL.
-1. A URL line is called a "segment".
-1. Tags may apply to a single segment, i.e. the first URL line after the tag, to all segments following the tag and until the tag with the same name, or to the whole playlist.
+1. An HLS playlist is a collection of text lines
+1. A line may be empty, a comment (starts with `#`), a tag (also starts with `#`, can only be recognized by name) or a URL
+1. A URL line is called a "segment"
+1. Tags may apply to a single segment, i.e. the first URL line after the tag, to all segments following the tag and until the tag with the same name, or to the whole playlist
 
 Some points specific to the operation of `$hls` rules:
 
-1. When a segment is removed, all of the tags that apply only to that segment are also removed.
-1. When there is a tag that applies to multiple segments, and all of those segments are removed, the tag is also removed.
-1. Since there is no way to recognize different kinds of tags by syntax, we recognize all of the tags specified by the RFC, plus some non-standard tags that we have seen in the field. Any lines starting with `#` and not recognized as a tag are passed through without modification, and are not matched against the rules.
-1. We do not match tags that apply to the whole playlist, and `$hls` rules can not be used to remove them, since `$hls` rules are intended for removing segments. If you know what you are doing, you can use `$replace` rules to remove or rewrite just a single tag from the playlist.
+1. When a segment is removed, all of the tags that apply only to that segment are also removed
+1. When there is a tag that applies to multiple segments, and all of those segments are removed, the tag is also removed
+1. Since there is no way to recognize different kinds of tags by syntax, we recognize all of the tags specified by the RFC, plus some non-standard tags that we have seen in the field. Any lines starting with `#` and not recognized as a tag are passed through without modification, and are not matched against the rules
+1. We do not match tags that apply to the whole playlist, and `$hls` rules can not be used to remove them, since `$hls` rules are intended for removing segments. If you know what you are doing, you can use `$replace` rules to remove or rewrite just a single tag from the playlist
 
 **An example of a transformation done by the rules:**
 
@@ -1492,15 +1492,15 @@ Due to the way rule parsing works, the characters `$` and `,` must be escaped wi
 
 The modified JSONPath syntax has the following differences from the original:
 
-1. Script expressions are not supported.
+1. Script expressions are not supported
 1. The supported filter expressions are:
-    - `?(has <key>)` — true if the current object has the specified key.
-    - `?(key-eq <key> <value>)` — true if the current object has the specified key, and its value is equal to the specified value.
-    - `?(key-substr <key> <value>)` — true if the specified value is a substring of the value of the specified key of the current object.
-1. Whitespace outside of double- or single-quoted strings has no meaning.
-1. Both double- and single-quoted strings can be used.
-1. Expressions ending with `..` are not supported.
-1. Multiple array slices can be specified in square brackets.
+    - `?(has <key>)` — true if the current object has the specified key
+    - `?(key-eq <key> <value>)` — true if the current object has the specified key, and its value is equal to the specified value
+    - `?(key-substr <key> <value>)` — true if the specified value is a substring of the value of the specified key of the current object
+1. Whitespace outside of double- or single-quoted strings has no meaning
+1. Both double- and single-quoted strings can be used
+1. Expressions ending with `..` are not supported
+1. Multiple array slices can be specified in square brackets
 
 There are various online tools that make working with JSONPath expressions more convenient:
 
@@ -1774,8 +1774,8 @@ The list of the available directives is available [here](https://developer.mozil
 
 :::caution Restrictions
 
-1. Characters forbidden in the `$permissions` value: `$`;
-2. `$permissions` is compatible with the limited list of modifiers: `$domain`, `$important`, and `$subdocument`.
+1. Characters forbidden in the `$permissions` value: `$`
+1. `$permissions` is compatible with the limited list of modifiers: `$domain`, `$important`, and `$subdocument`
 
 :::
 
@@ -1791,7 +1791,7 @@ AdGuard is able to redirect web requests to a local "resource".
 
 **Syntax**
 
-AdGuard uses the same filtering rules syntax as uBlock Origin. Also, it is compatible with ABP `$rewrite=abp-resource` modifier.
+AdGuard uses the same filtering rule syntax as uBlock Origin. Also, it is compatible with ABP `$rewrite=abp-resource` modifier.
 
 `$redirect` is a modifier for the [basic filtering rules](#basic-rules) so rules with this modifier support all other basic modifiers like `$domain`, `$third-party`, `$script`, etc.
 
@@ -1822,7 +1822,7 @@ Go to [rules priorities](#rule-priorities) for more details.
 
 :::info Compatibility
 
-- Rules with `$redirect` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
+- Rules with `$redirect` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and AdGuard for Safari.
 - `$redirect` in uBlock Origin supports specifying priority, e.g. `$redirect=noopjs:42`. AdGuard does not support it and instead just discards the priority postfix.
 
 :::
@@ -1846,7 +1846,7 @@ In this case, only requests to `example.org/script.js` will be "redirected" to `
 
 :::info Compatibility
 
-Rules with `$redirect-rule` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
+Rules with `$redirect-rule` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS, and AdGuard for Safari.
 
 :::
 
@@ -1927,7 +1927,7 @@ In case of multiple `$removeheader` rules matching a single request, we will app
 
 :::caution Restrictions
 
-1. This type of rules can be used [**only in trusted filters**](#trusted-filters).
+This type of rules can be used [**only in trusted filters**](#trusted-filters).
 
 1. In order to avoid compromising the security `$removeheader` cannot remove headers from the list below:
     - `access-control-allow-origin`
@@ -2031,9 +2031,9 @@ Regexp-type rules target both name and value of the parameter. To minimize mista
 
 We will try to detect and ignore unescaped `$` automatically using a simple rule of thumb — it is not an options delimiter if all three are true:
 
-1. It looks like `$/`;
-1. There is another slash character `/` to the left of it;
-1. There is another unescaped dollar sign `$` to the left of that slash character.
+1. It looks like `$/`
+1. There is another slash character `/` to the left of it
+1. There is another unescaped dollar sign `$` to the left of that slash character
 
 **Remove all query parameters**
 
@@ -2227,7 +2227,7 @@ Usually, blocked requests look like a server error to browser. If you use `$empt
 
 :::info Compatibility
 
-Rules with `$empty` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
+Rules with `$empty` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS, and AdGuard for Safari.
 
 :::
 
@@ -2249,7 +2249,7 @@ As a response to blocked request AdGuard returns a short video placeholder.
 
 :::info Compatibility
 
-Rules with `$mp4` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
+Rules with `$mp4` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS, and AdGuard for Safari.
 
 :::
 
@@ -2603,7 +2603,7 @@ This rule will apply a style `background-color: #333!important;` to the `body` e
 **Exceptions**
 
 Just like with element hiding, there is a type of rules that disable the selected CSS style rule for particular domains.
-Exception rules syntax is almost the same, you just have to change `#$#` to `#@$#`.
+Exception rule syntax is almost the same, you just have to change `#$#` to `#@$#`.
 
 For example, there is a rule in filter:
 
@@ -3054,8 +3054,8 @@ div:matches-property(memoizedProps._owner.src=/ad/)
 
 To check properties of a specific element, do the following:
 
-1. Inspect the page element or select it in `Elements` tab of browser DevTools.
-1. Run `console.dir($0)` in `Console` tab.
+1. Inspect the page element or select it in `Elements` tab of browser DevTools
+1. Run `console.dir($0)` in `Console` tab
 
 :::
 
@@ -3231,7 +3231,7 @@ div[class]:has(> a > img) { remove: true; }
 
 :::note
 
-Rules with the `remove` pseudo-property should use `#$?#` marker: `$` for CSS style rules syntax, `?` for ExtendedCss syntax.
+Rules with the `remove` pseudo-property should use `#$?#` marker: `$` for CSS-style rule syntax, `?` for ExtendedCss syntax.
 
 :::
 
@@ -3361,7 +3361,7 @@ pseudoClasses = pseudoClass *pseudoClass
 ```
 
 - **`tagName`** — name of the element in lower case, for example, `div` or `script`.
-- **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules syntax](#elemhide-syntax).
+- **`domains`** — domain restriction for the rule. Same principles as in [element hiding rule syntax](#elemhide-syntax).
 - **`attributes`** — a list of attributes that limit the selection of elements. `name` — attribute name, `value` — substring, that is contained in attribute value.
 - **`pseudoName`** — the name of a pseudo-class.
 - **`pseudoArgs`** — the arguments of a function-style pseudo-class.
@@ -4190,24 +4190,16 @@ The following scriptlets also may be used for debug purposes:
 - [`trusted-replace-fetch-response`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-trusted-scriptlets.md#trusted-replace-fetch-response)
 - [`trusted-replace-xhr-response`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-trusted-scriptlets.md#trusted-replace-xhr-response)
 
-## Good luck with creating filters
-
-We wish you luck with creating you own ad filters.
-
-If you need an advice on how to create your own filters properly, our forum has a [special section](https://forum.adguard.com/index.php?forums/69/) dedicated to writing your own filtering rules.
-
-* * *
-
 ## Compatibility tables legend {#compatibility-tables-legend}
 
 ### Product shortcuts {#what-product}
 
-1. `CoreLibs apps` — AdGuard for Windows, Mac, Android
-1. `AdGuard for Chromium` — AdGuard Browser Extension for Chrome and other Chromium-based browsers, e.g. new Microsoft Edge, Opera
+1. `CoreLibs apps` — AdGuard for Windows, AdGuard for Mac, and AdGuard for Android
+1. `AdGuard for Chromium` — AdGuard Browser Extension for Chrome and other Chromium-based browsers such as Microsoft Edge, Opera
 1. `AdGuard for Firefox` — AdGuard Browser Extension for Firefox
-1. `AdGuard for iOS` — AdGuard for iOS and AdGuard for iOS Pro (for mobile Safari browser)
+1. `AdGuard for iOS` — AdGuard for iOS and AdGuard Pro for iOS (for mobile Safari browser)
 1. `AdGuard for Safari` — AdGuard for desktop Safari browser
-1. `AdGuard Content Blocker` — Content Blocker for Android mobile browsers: Samsung Internet and Yandex Browser
+`AdGuard Content Blocker` — Content Blocker for Android mobile browsers: Samsung Internet and Yandex Browser
 
 ### Compatibility shortcuts {#what-compatibility}
 
@@ -4226,7 +4218,7 @@ If you need an advice on how to create your own filters properly, our forum has 
 [cl-apps]: #what-product "AdGuard for Windows, Mac, Android"
 [ext-chr]: #what-product "AdGuard Browser Extension for Chrome and other Chromium-based browsers"
 [ext-ff]: #what-product "AdGuard Browser Extension for Firefox"
-[ios-app]: #what-product "AdGuard for iOS and AdGuard for iOS Pro"
+[ios-app]: #what-product "AdGuard for iOS and AdGuard Pro for iOS"
 [ext-saf]: #what-product "AdGuard for Safari"
 [and-cb]: #what-product "AdGuard Content Blocker for Samsung Internet and Yandex Browser on Android"
 
