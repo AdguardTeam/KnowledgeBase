@@ -636,8 +636,8 @@ A restriction of third-party and own requests. A third-party request is a reques
 To be considered as such, a third-party request should meet one of the following conditions:
 
 1. Its referrer is not a subdomain of the target domain or vice versa. For example, a request to `subdomain.example.org` from `example.org` is not a third-party request
-Its `Sec-Fetch-Site` header is set to `cross-site`.
-If there is a `$third-party` modifier, the rule is only applied to third-party requests
+1. Its `Sec-Fetch-Site` header is set to `cross-site`
+1. If there is a `$third-party` modifier, the rule is only applied to third-party requests
 
 :::
 
@@ -1774,8 +1774,8 @@ The list of the available directives is available [here](https://developer.mozil
 
 :::caution Restrictions
 
-Characters forbidden in the `$permissions` value: `$`;
-2. `$permissions` is compatible with the limited list of modifiers: `$domain`, `$important`, and `$subdocument`.
+1. Characters forbidden in the `$permissions` value: `$`
+1. `$permissions` is compatible with the limited list of modifiers: `$domain`, `$important`, and `$subdocument`
 
 :::
 
@@ -2031,7 +2031,7 @@ Regexp-type rules target both name and value of the parameter. To minimize mista
 
 We will try to detect and ignore unescaped `$` automatically using a simple rule of thumb — it is not an options delimiter if all three are true:
 
-1. It looks like `$/`;
+1. It looks like `$/`
 1. There is another slash character `/` to the left of it
 1. There is another unescaped dollar sign `$` to the left of that slash character
 
