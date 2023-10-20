@@ -7,7 +7,7 @@ There is an AdGuard app for virtually every major platform out there, and we reg
 
 ## How to become a beta tester {#intro}
 
-Our requirements are easy: use AdGuard, upgrade to the beta version when it becomes available, and report any bugs you notice. However, you will need either a [GitHub](https://github.com/) account to become our beta tester, so you may want to get that out of the way first.
+Our requirements are easy: use AdGuard, upgrade to the beta version when it becomes available, and report any bugs you notice. However, you will need a [GitHub](https://github.com/) account to become our beta tester, so you may want to get that out of the way first.
 
 In any case, every single thing you need to know is gathered on a [dedicated page](https://adguard.com/beta.html).
 
