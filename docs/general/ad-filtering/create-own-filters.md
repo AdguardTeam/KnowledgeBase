@@ -3968,7 +3968,7 @@ but it still may not be supported by AdGuard products when adding a filter list 
 The following products will support it in the mentioned versions or later:
 
 - AdGuard for Windows, Mac, and Android, running CoreLibs v1.13;
-- AdGuard Browser Extension v4.3;
+- AdGuard Browser Extension v4.2.208;
 - AdGuard for Safari v1.11.16.
 
 :::
