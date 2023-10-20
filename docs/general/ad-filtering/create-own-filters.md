@@ -3878,7 +3878,7 @@ Conditions support all basic logical operators.
 
 There are two possible scenarios:
 
-1. When an ad blocker encounters a `!#if` directive and no `!#else` directive,
+1. When an ad blocker encounters an `!#if` directive and no `!#else` directive,
    it will compile the code between `!#if` and `!#endif` directives only if the specified condition is true.
 
 1. If there is an `!#else` directive, the code between `!#if` and `!#else` will be compiled if the condition is true;
