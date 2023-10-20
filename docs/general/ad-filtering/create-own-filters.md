@@ -3913,7 +3913,7 @@ where:
 - `!#if (conditions)` — start of the block when conditions are true
 - `conditions` — just like in some popular programming languages,
   preprocessor conditions are based on constants declared by ad blockers.
-  Ad blocker authors define on their own what exact constants do they declare.
+  Authors of ad blockers define on their own what exact constants they declare.
   Possible values:
     - `adguard` always declared; shows maintainers that this is one of AdGuard products; should be enough in 95% of cases
     - product-specific constants for cases when you need a rule to work (or not work — then `!` should be used before constant) in a specific product only:
