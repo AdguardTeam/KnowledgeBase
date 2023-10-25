@@ -1040,7 +1040,7 @@ Blocking cookies and removing tracking parameters is achieved by using rules wit
 
 - Stealth Mode is available in AdGuard for Windows, Mac, and Android, and AdGuard Browser Extension. All other products will ignore the rules with `$stealth` modifier.
 - `$stealth` modifier with specific options is supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.10 or later**, and AdGuard Browser Extension, **running TSUrlFilter vX.X.X or later**.
-- AdGuard Browser extension only supports `searchqueries`, `donottrack`, `referrer` and  `xclientdata` options.
+- AdGuard Browser extension supports `searchqueries`, `donottrack`, `referrer`, `xclientdata`, `1p-cookie` and `3p-cookie` options.
 
 :::
 
