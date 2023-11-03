@@ -1462,7 +1462,7 @@ Rules with the `$hls` modifier are supported by AdGuard for Windows, Mac, and An
 
 #### **`$inline-script`** {#inline-script-modifier}
 
-`$inline-script` modifier is a sort of a shortcut for [`$csp`](#csp-modifier) modifier with specific value. E.g. the rule `||example.org^$inline-script` is converting into such a rule:
+The `$inline-script` modifier is designed to block inline JavaScript within a page's HTML. It bolsters security and privacy by halting the execution of potentially malicious scripts without user consent. E.g. the rule `||example.org^$inline-script` is converting into such a rule:
 
 ```adblock
 ||example.org^$csp=script-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
@@ -1470,7 +1470,7 @@ Rules with the `$hls` modifier are supported by AdGuard for Windows, Mac, and An
 
 #### **`$inline-font`** {#inline-font-modifier}
 
-`$inline-font` modifier is a sort of a shortcut for [`$csp`](#csp-modifier) modifier with specific value. E.g. the rule `||example.org^$inline-font` is converting into such a rule:
+The `$inline-font` modifier is designed to block websites' attempts to embed fonts directly into the main page through Content Security Policy (CSP). It aids in enhancing user security and privacy by preventing the downloading of fonts that could be exploited for data harvesting. E.g. the rule `||example.org^$inline-font` is converting into such a rule:
 
 ```adblock
 ||example.org^$csp=font-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
