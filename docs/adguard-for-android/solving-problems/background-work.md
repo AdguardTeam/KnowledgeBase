@@ -1,4 +1,4 @@
----
+users: amatainw.ho@outlook.com
 title: How to protect AdGuard from being disabled by the system
 sidebar_position: 9
 ---
