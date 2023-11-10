@@ -27,7 +27,6 @@ Wouldn't it be a bit dangerous, you might ask — to let some random apps manage
 
 So, ready to get your hands dirty? Here are actions that, when included in the intent, will be understood by AdGuard:
 
-
 `start` starts the protection, no extra data is needed;
 
 `stop` stops the protection, no extra data required;
@@ -64,14 +63,11 @@ The full list of supported provider names can be found inside AdGuard DNS settin
 
  -----
 
-
-
 `proxy_state` enables/disables the outbound proxy.  Requires an extra flag:
 
 `enable:true` or `enable:false` activates or deactivates the outbound proxy, accordingly.
 
 -----
-
 
 `proxy_default` sets the proxy from the list of previously added ones as default or creates a new one if server has not been added before.
 
@@ -94,10 +90,11 @@ Or you  can configure remove parameters manually:
 * **Compulsory parameters**:
 
 `[type]` — proxy server type:
-- HTTP;
-- SOCKS4;
-- SOCKS5;
-- HTTPS_CONNECT.
+
+* HTTP;
+* SOCKS4;
+* SOCKS5;
+* HTTPS_CONNECT.
 
 `[host]` — outbound proxy domain or IP address;
 
@@ -115,13 +112,11 @@ Or you  can configure remove parameters manually:
 
 `setting by name`: server:MyServer
 
- `manually settings`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
+`manually settings`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
 
- :::
+:::
 
------
-
-**Don't forget to include the password as an extra and mention package name and class! You need to do so for every intent!**
+**Don't forget to include the password as an extra and mention package name and class. You need to do so for every intent.**
 
 Extra: `password:*******`
 
