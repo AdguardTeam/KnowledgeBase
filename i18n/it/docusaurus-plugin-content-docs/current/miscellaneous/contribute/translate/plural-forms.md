@@ -145,12 +145,12 @@ Sebbene i primi tre tipi di tali stringhe siano più o meno facili da tradurre, 
 
 E ancora: se ti imbatti in una frase originale con due elementi importanti: **il simbolo della barra verticale** e i segnaposto **%count%**, sei pregato di procedere come segue:
 
-+ Fai riferimento alla regola del plurale della lingua verso cui traduci;
+- Fai riferimento alla regola del plurale della lingua verso cui traduci;
 
 The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms — two templates in translations; five plural forms — five templates, etc.
 
-+ Non dimenticarti di utilizzare un simbolo barra verticale tra i modelli, come rappresentato nelle stringhe originali;
+- Non dimenticarti di utilizzare un simbolo barra verticale tra i modelli, come rappresentato nelle stringhe originali;
 
-+ Non tradurre, riempire o eliminare i segnaposto **%count%**.
+- Non tradurre, riempire o eliminare i segnaposto **%count%**.
 
 By following these simple rules you will help AdGuard developers avoid a lot of unnecessary complications during the localization process.

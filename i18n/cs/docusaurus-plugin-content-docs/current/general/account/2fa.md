@@ -9,23 +9,23 @@ Přidání možnosti 2FA považujeme za přínos. Chápeme také, že jeho vynuc
 
 Pro váš AdGuard účet doporučujeme nastavit dvoufaktorové ověřování. Nezabere vám to mnoho času, ale pomůže to ochránit vaše licenční klíče, předplatné a především všechny osobní údaje s účtem spojené.
 
-
 ## Jak to nastavit
 
-1) Přihlaste se ke svému [AdGuard účtu](https://auth.adguard.com/login.html) a přejděte na kartu Nastavení:
+1. Přihlaste se ke svému [AdGuard účtu](https://auth.adguard.com/login.html) a přejděte na kartu Nastavení:
 
 ![AdGuard Account settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/account_settings.png)
 
-2) Přejděte dolů do části *Heslo a 2FA* a klikněte na **Zapnout**:
+1. Přejděte dolů do části *Heslo a 2FA* a klikněte na **Zapnout**:
 
 ![The Change button *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_new.png)
 
-3) Podle pokynů na obrazovce nainstalujte autentizační aplikaci a naskenujte QR kód:
+1. Podle pokynů na obrazovce nainstalujte autentizační aplikaci a naskenujte QR kód:
 
 ![The verification code](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_enable.png)
 
 ***Důležité***
-* Uložte si někam záložní kód pro ověření, který bude potřebný pro obnovení účtu v případě ztráty nebo krádeže mobilního telefonu;
+
+- Uložte si někam záložní kód pro ověření, který bude potřebný pro obnovení účtu v případě ztráty nebo krádeže mobilního telefonu;
 
 Pokud je vše provedeno správně, zobrazí se tato informace při příštím přihlášení k účtu:
 

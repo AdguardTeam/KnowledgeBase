@@ -20,3 +20,7 @@ If you enter your email address while purchasing a license or receive a license 
 An account can also be created directly in an AdGuard app. Press the *Log in* or *Activate* button (it can be found in the *License* section or on a separate screen), enter your email and create a password.
 
 After the account is created, activate it by following the link in the activation email.
+
+## How to create an account via a social network
+
+Sosyal ağ üzerinden hesap oluşturmak için [bağlantıyı](https://auth.adguard.com/login.html) takip etmeniz ve hesabınıza giriş yapmanız yeterlidir. Once you’ve signed up, check your inbox — there’ll be a confirmation email. Set a password and that’s it! Artık [AdGuard hesabının tüm özelliklerini](https://adguard.com/kb/general/account/features/) kullanabilirsiniz.

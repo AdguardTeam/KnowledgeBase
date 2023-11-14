@@ -1,18 +1,18 @@
 ---
-title: Integration mode (legacy)
+title: Modo de integração (legacy)
 sidebar_position: 3
 ---
 
-## What is the integration mode?
+## O que é o modo de integração?
 
-In older versions of AdGuard Browser Extension, if you had it installed along with one of the AdGuard desktop apps (AdGuard for Windows or AdGuard for Mac), the extension took upon itself the functions of AdGuard Assistant — a tool that helped manage the filtering right from the web page. At the same time, the ad blocking itself was completely under of the desktop app's control, the extension and its settings played no role in that.
+Nas versões mais antigas da extensão de navegador AdGuard, se você o tivesse instalado junto com um dos aplicativos de desktop AdGuard (AdGuard para Windows ou AdGuard para Mac), a extensão assumia as funções do AdGuard Assistant, uma ferramenta que ajudava a gerenciar a filtragem da página da web corretamente. Ao mesmo tempo, o bloqueio de anúncios em si estava completamente sob o controle do aplicativo de desktop, a extensão e suas configurações não desempenhavam nenhum papel nisso.
 
-The problem was, in some cases the app and the extension would hamper each other’s work. Some websites would stop being protected by the desktop program and were backed up only by the extension which has less possibilities. Thus, starting with AdGuard Browser Extension v3.5, the integration mode was removed. Instead, the new AdGuard Browser Assistant was implemented.
+O problema era que, em alguns casos, o aplicativo e a extensão dificultavam o trabalho um do outro. Alguns sites deixariam de ser protegidos pelo programa desktop e seriam protegido apenas pela extensão, que tem menos possibilidades. Assim, a partir da extensão de navegador AdGuard v3.5, o modo de integração foi removido. Em vez disso, o novo Assistente de Navegador AdGuard foi implementado.
 
-## AdGuard Browser Assistant
+## Assistente de navegador AdGuard
 
-![AdGuard Browser Assistant *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/ad_blocker_browser_extension_assistant.png)
+![Assistente de navegador AdGuard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/ad_blocker_browser_extension_assistant.png)
 
-AdGuard Browser Assistant is a new browser extension that works and feels just like the integration mode but much lighter, without redundant functions, and doesn't interfere with the desktop apps. You can [read more about Browser Assistant for Windows](/adguard-for-windows/browser-assistant) or [Mac](/adguard-for-mac/browser-assistant), or [download it from our website](https://adguard.com/adguard-assistant/overview.html).
+AdGuard Browser Assistant é uma nova extensão de navegador que funciona e funciona exatamente como o modo de integração, mas muito mais leve, sem funções redundantes e não interfere nos aplicativos de desktop. Você pode [ler mais sobre o Assistente de Navegador para Windows](/adguard-for-windows/browser-assistant) ou [Mac](/adguard-for-mac/browser-assistant) ou [baixá-lo em nosso site](https://adguard.com/adguard-assistant/overview.html).
 
-AdGuard Browser Assistant is available in all major browsers.
+O Assistente de Navegador AdGuard está disponível em todos os principais navegadores.

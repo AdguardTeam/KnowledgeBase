@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Mac」について書いています。 実際に使ってみるには、[AdGuardアプリをダウンロード](https://adguard.com/download.html?auto=true)してください。
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Mac」について書いています。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -46,11 +46,12 @@ Filters are the main driving force behind the Ad blocker module. To understand h
 Some filter lists (AdGuard’s Base filter, Annoyances filter, EasyList, etc.) are pre-installed, while other specific ones, adapted to your preferences, can be downloaded additionally and added to your program.
 
 Aside from the more general and universally applicable filters (like Base filter), AdGuard provides an extensive quantity of filters for every occasion:
-* filters aimed at tracking prevention (like Tracking Protection filter),
-* language-specific ad filters that block content in a selected language,
-* Social media filter that removes "Like" and "Share" buttons,
-* Annoyances filter for cookie warnings, in-page pop-ups and others of the same ilk,
-* and even a filter that unblocks some ads instead of blocking them — Filter for search ads and self-promotions.
+
+- filters aimed at tracking prevention (like Tracking Protection filter),
+- language-specific ad filters that block content in a selected language,
+- Social media filter that removes "Like" and "Share" buttons,
+- Annoyances filter for cookie warnings, in-page pop-ups and others of the same ilk,
+- and even a filter that unblocks some ads instead of blocking them — Filter for search ads and self-promotions.
 
 AdGuard filters are automatically updated. Our developers create them all based on user feedback received. You can always help other AdGuard users (and yourself, in perspective) by sending us reports right from the app's Assistant (it's really handy, we'll tell you more about the Assistant further on), or from the [website](https://agrd.io/report). If you wish to know more about AdGuard filters, here is [some info](/general/ad-filtering/adguard-filters).
 

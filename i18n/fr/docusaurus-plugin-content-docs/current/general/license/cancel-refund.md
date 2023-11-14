@@ -1,26 +1,31 @@
 ---
-title: How to cancel/refund
+title: Comment annuler ou rembourser
 sidebar_position: 5
 ---
 
 ## Comment annuler un abonnement
 
-L'abonnement peut être annulé dans votre compte AdGuard. To cancel your subscription:
+L'abonnement peut être annulé dans votre compte AdGuard. Pour annuler votre abonnement :
 
- 1. Go to your [AdGuard account](https://my.adguard.com/)
- 2. Go to **Licenses** tab
- 3. Click **Cancel subscription** below the subscription you no longer need ![Cancel *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-cancel-sub.png)
+ 1. Accédez à votre [compte AdGuard](https://my.adguard.com/).
+ 1. Sélectionnez *Licences*.
+ 1. Cliquez sur *Annuler l'abonnement* sous l'abonnement dont vous n'avez plus besoin. ![Annuler](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-cancel-sub.png)
 
  L'abonnement annulé sera valable jusqu'à sa date d'expiration.
 
-Subscriptions purchased on the App Store can be managed in the App Store account or in the device's settings.
+:::note
+
+Les abonnements achetés sur l'App Store peuvent être gérés dans le compte App Store ou dans les paramètres de l'appareil.
+
+:::
 
 ## Comment obtenir un remboursement
 
-In accordance with our [Terms of Sale](https://adguard.com/terms-of-sale.html), you can get a 100% refund on the AdGuard license key you purchased at https://adguard.com. To get a refund, contact our support team at **support@adguard.com** and specify the payment option you've used.
+Conformément à nos [conditions de vente ](https://adguard.com/terms-of-sale.html), vous pouvez obtenir un remboursement de 100% pour la clef de licence AdGuard que vous avez achetée sur https://adguard.com. Pour obtenir un remboursement, contactez notre équipe d'assistance sur *support@adguard.com* et indiquez l'option de paiement que vous avez utilisée.
 
-A refund may be declined if:
-* a license was purchased more than 60 days ago,
-* a license was purchased from a distributor,
-* a license was purchased from the App Store,
-* you applied for a partial refund for a license key upgrade or renewal.
+Un remboursement peut être refusé si :
+
+- Une licence a été achetée il y a plus de 60 jours
+- Une licence a été achetée auprès d'un distributeur
+- Une licence a été achetée sur l'App Store
+- Vous avez demandé un remboursement partiel pour le surclassement ou une prolongation de la clef de licence

@@ -3,9 +3,9 @@ title: How to enable system-wide filtering in AdGuard for iOS
 sidebar_position: 2
 ---
 
-:::Info
+:::info
 
-Dieser Artikel behandelt AdGuard für iOS, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. To see how it works firsthand, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Dieser Artikel behandelt AdGuard für iOS, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. To see how it works firsthand, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -31,8 +31,8 @@ Now, if your purpose is to block ads and trackers system-wide, you have three op
 
 The first and third option have several advantages:
 
-* You can use any DNS server at your discretion and you are not tied up to a specific blocking server, because the filter does the blocking.
-* You can add multiple DNS filters and/or hosts files (although using too many might slow down AdGuard).
+- You can use any DNS server at your discretion and you are not tied up to a specific blocking server, because the filter does the blocking.
+- You can add multiple DNS filters and/or hosts files (although using too many might slow down AdGuard).
 
 ![How DNS filtering works](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_en.png)
 

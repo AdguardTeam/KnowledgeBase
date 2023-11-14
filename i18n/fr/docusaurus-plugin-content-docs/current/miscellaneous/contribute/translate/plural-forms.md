@@ -145,12 +145,12 @@ Alors que les trois premiers types de chaînes sont plus ou moins faciles à ré
 
 Encore une fois : si vous rencontrez une phrase originale comportant deux éléments importants : **le signe de la barre verticale** et **%count%** les espaces réservés, veuillez faire ce qui suit :
 
-+ Référez-vous à la règle du pluriel d’une langue dans laquelle vous traduisez ;
+- Référez-vous à la règle du pluriel d’une langue dans laquelle vous traduisez ;
 
 The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms — two templates in translations; five plural forms — five templates, etc.
 
-+ N'oubliez pas d'utiliser le signe de la barre verticale entre les modèles, comme il est représenté dans les chaînes originales ;
+- N'oubliez pas d'utiliser le signe de la barre verticale entre les modèles, comme il est représenté dans les chaînes originales ;
 
-+ Ne traduisez pas, ne remplissez pas et ne supprimez pas les espaces réservés **%count%**.
+- Ne traduisez pas, ne remplissez pas et ne supprimez pas les espaces réservés **%count%**.
 
 By following these simple rules you will help AdGuard developers avoid a lot of unnecessary complications during the localization process.

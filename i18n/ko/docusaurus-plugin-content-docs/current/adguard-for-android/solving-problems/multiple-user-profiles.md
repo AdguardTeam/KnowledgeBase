@@ -5,7 +5,7 @@ sidebar_position: 10
 
 :::info
 
-이 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Android용 AdGuard에 대해 다룹니다. 어떻게 동작하는지 알고 싶으시다면 [AdGuard 앱을 다운로드](https://adguard.com/download.html?auto=true) 해 보세요.
+이 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Android용 AdGuard에 대해 다룹니다. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -37,29 +37,36 @@ This approach is available starting from **AdGuard v3.5 nightly 6**. 이전 버�
 
 :::
 
-1. **개발자 모드** 및 **USB 디버깅**을 활성화합니다.
-- Open the **Settings** app phone;
-- **시스템** 섹션(설정 메뉴의 마지막 항목)으로 이동합니다. In this section, find the sub-item **About phone**;
-- Tap the **Build number** line 7 times. 그 후에 '**개발자 모드를 켰습니다'**라는 알림을 받게 됩니다. 필요한 경우 기기의 잠금 해제 코드를 입력하세요.
-- Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
+1. Activate the **developer mode** and enable **USB debugging**:
 
-:::note
+    - Open the **Settings** app phone;
+    - Go to **System** section (last item in the settings menu). In this section, find the sub-item **About phone**;
+    - Tap the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
+    - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
 
-어려움이나 추가 질문이있는 경우 [여기](https://developer.android.com/studio/debug/dev-options)에서 자세한 지침을 확인할 수 있습니다.
+    :::note
+
+    어려움이나 추가 질문이있는 경우 [여기](https://developer.android.com/studio/debug/dev-options)에서 자세한 지침을 확인할 수 있습니다.
+
 
 :::
 
-2. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
-3. **USB 케이블**을 사용하여 **ADB**를 설치한 컴퓨터 또는 노트북에 기기를 연결합니다.
-4. PC에서 **명령줄**을 엽니다.
-- **Windows**를 사용하는 경우 **cmd.exe**
-- **macOS**를 사용하는 경우 **터미널**
-5. `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` 명령을 입력하고 **엔터**를 누릅니다.
+1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+
+1. **USB 케이블**을 사용하여 **ADB**를 설치한 컴퓨터 또는 노트북에 기기를 연결합니다.
+
+1. PC에서 **명령줄**을 엽니다.
+
+    - **Windows**를 사용하는 경우 **cmd.exe**
+    - **macOS**를 사용하는 경우 **터미널**
+
+1. `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` 명령을 입력하고 **엔터**를 누릅니다.
 
 ### 옵션 2: 제한된 사용자 계정 삭제
 
 Android 기기에서 사용자 계정을 관리하는 방법은 [여기](https://support.google.com/a/answer/6223444?hl=en)에서 확인할 수 있습니다.
-> :::note
+
+:::note
 
 In some cases restricted user accounts are created implicitly and cannot be removed. 제한된 사용자 계정이 암묵적으로 생성되어 삭제할 수 없습니다. 이러한 경우 문제를 해결하는 방법은 아래에서 확인할 수 있습니다.
 
@@ -89,5 +96,3 @@ To enable this mode, open **AdGuard Settings** → **Network** → **Filtering m
 - 아래로 스크롤한 다음 **듀얼 앱**를 누릅니다.
 - 목록에서 모든 응용 프로그램을 제거합니다.
 - 기기를 재부팅합니다.
-
-

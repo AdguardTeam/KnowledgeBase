@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-本文适用于安卓版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 要了解工作原理， 请[下载 AdGuard 应用程序](https://adguard.com/download.html?auto=true)
+本文适用于安卓版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -27,32 +27,34 @@ Inside you will find a chart that shows the AdGuard battery resource consumption
 
 First, let us lay down a bit of theory and links with necessary data.
 
-1. 安卓使用自带的 Power Profile 来计算流量使用量：<https://source.android.com/devices/tech/power/values.html>
+1. Android derives traffic consumption judging on so-called Power Profile, which is given by every manufacturer: <https://source.android.com/devices/tech/power/values.html>
 
-2. Power Profile 的主要部分是一组以mAh为单位的值，这些值定义设备每个组件的电池消耗：<https://source.android.com/devices/tech/power/values.html>
+1. Main part of Power Profile is a set of values in mAh which define battery consumption for every component of the device: <https://source.android.com/devices/tech/power/values.html>
 
-比如说，从链接的表格中我们可以看到：
+    For example, from the table above:
 
-_wifi.active=_ 31m 是指 WiFi 数据交换导致的额外消耗（使用的单位：毫安）
+    *wifi.active=* 31mA additional consumption in mAh caused by WiFi data exchange.
 
-_radio.active=_ 100-300mA 是指经过移动交换数据导致的额外消耗 （使用的单位：毫安）
+    *radio.active=* 100-300mA additional consumption in mAh caused by data exchange over Mobile network.
 
-_cpu.active=_ 100-200mA 是指中央处理器（CPU） 运行导致的额外消耗 （使用的单位：毫安）
+    *cpu.active=* 100-200mA additional consumption in mAh caused by CPU work.
 
-3. AdGuard 几乎没有消耗任何流量，因此，我们来去除“移动/WiFi 包”以评价电池消耗，而把重心放在 “CPU”（中央处理器）上。
+1. AdGuard by itself almost doesn't consume any traffic, so for the sake of evaluating battery resource consumption let's get rid of 'Mobile/WiFi packets' and stcik to 'CPU'.
 
-以下是计算消耗量的公式：
-> "CPU TIME (ms)" X "cpu.active" / (60 * 60 * 1000) = "POWER USE mAh"
+    Formula to calculate the consumption:
 
-我们将实数写入公式中。
+    > "CPU TIME (ms)" X "cpu.active" / (60 *60* 1000) = "POWER USE mAh"
 
-来将第二张截图上的 _CPU total_ 转换为毫秒：506000
+    Let's put real numbers into this formula.
 
-2GHz 的 _cpu.active_ 系数大约等于 225mAh
+    Let's take *CPU total* from the second screenshot and convert into milliseconds: 506000
 
-最后结果
-> 506000 * 225 / (60 * 60 * 1000) = 31,625mAh
+    A coefficient *cpu.active* for 2GHz will be roughly equal to 225mAh
+
+    Final result:
+
+    > 506000 *225 / (60* 60 * 1000) = 31,625mAh
 
 ### 结论
 
-事实上的消耗量比安卓统计上的消耗量**小很多倍**。 消耗量为 31-40mAh，而非 220mAh。 从另一方面来看的话，浏览器流量使用量为 ~200mAh，而不是 66mAh。
+Real consumption is **several times less** than it is shown in Android statistics. Instead of 220mAh it should be somewhere around 31-40mAh. On the other hand, browser's consumption should be not 66mAh, but ~200mAh.

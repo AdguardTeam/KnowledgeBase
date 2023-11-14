@@ -19,12 +19,12 @@ Verificar se o bug não foi reportado antes. Aconselhamos prestar atenção a qu
 
 Tente fornecer o máximo de detalhes possível, isso facilitará a reprodução do bug e a descoberta de como corrigi-lo. Aqui está o que esperamos ver em um relatório de bug:
 
-* A versão do seu aplicativo
-* A sua versão do SO
-* Quando você percebeu o problema
-* O que você estava fazendo ou o que aconteceu com o aplicativo antes de perceber o problema. Passos para reproduzi-lo
-* Se se repetiu e com que frequência
-* Se você tem uma VPN ou um software antivírus
+- A versão do seu aplicativo
+- A sua versão do SO
+- Quando você percebeu o problema
+- O que você estava fazendo ou o que aconteceu com o aplicativo antes de perceber o problema. Passos para reproduzi-lo
+- Se se repetiu e com que frequência
+- Se você tem uma VPN ou um software antivírus
 
 ### Como coletar registros
 
@@ -39,7 +39,6 @@ Se você deseja oferecer suporte à implementação de um novo recurso ou corre�
 ![Problema do GitHub sem reações](https://cdn.adtidy.org/content/kb/ad_blocker/general/github_reaction2.png)
 
 Você pode encontrar as reações no canto superior direito ou na parte inferior de um problema.
-
 
 ## Instruções para todas as plataformas
 

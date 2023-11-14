@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-В этой статье рассказывается об AdGuard для Mac — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://adguard.com/download.html?auto=true)
+В этой статье рассказывается об AdGuard для Mac — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -21,7 +21,7 @@ AdGuard для Mac должен установить корневой серти
 
   4. Перейдите во вкладку «Центры сертификации» и кликните по кнопке «Импортировать...»
 
-  5. Выберите файл `/Library/Application Support/com.adguard.mac.adguard/AdguardCore/Adguard Personal CA.cer` или скачайте его через любой браузер на основе Chromium (например, Google Chrome или Edge) с запущенной HTTPS-фильтрацией в AdGuard
+  5. Выберите файл `/Library/Application Support/com.adguard.mac.adguard/AdguardCore/Adguard Personal CA.cer` или скачайте его c http://local.adguard.org/cert через любой браузер на основе Chromium (например, Google Chrome или Edge) с запущенной HTTPS-фильтрацией в AdGuard
 
 Точные действия могут различаться для разных браузеров, но общая последовательность и путь к файлу `AdGuard Personal CA.cer` остаются теми же.
 

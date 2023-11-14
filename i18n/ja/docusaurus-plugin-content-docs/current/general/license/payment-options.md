@@ -1,24 +1,23 @@
 ---
-title: 購入・アップグレードする方法
+title: How to purchase or upgrade
 sidebar_position: 2
 ---
 
 ## ライセンスを購入する方法{#purchase}
 
-AdGuardライセンスは [adguard.com](https://adguard.com/license.html)にてご購入いただけます: 1.  「購入する」を押してご購入ページへ移動 2.  お好みのライセンス種類を選択（1年版／永久版、パーソナル／ファミリー） 3.  メールアドレスを入力 ※このメールアドレスにはライセンスキーとAdGuardアカウント認証用リンクが送信されますので、ご入力の際には間違いのないよう十分ご注意ください。 4.  お支払い方法を選択 We offer various payment options, including Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay, and UnionPay. We also accept the following cryptocurrencies: Bitcoin, Ethereum, Litecoin, and Tether.
+AdGuard licenses can be bought on [adguard.com](https://adguard.com/license.html). You can pay with Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay and UnionPay. 次の仮想通貨もご利用いただけます：Bitcoin, Ethereum, Litecoin, Tether
 
 iOS用「AdGuard Pro」は、App Storeで購入することができます。
 
-また、AdGuard広告ブロッカーライセンスは、様々な販売代理店からも販売されています。 The availability of AdGuard products in app stores and by distributors depends on your country.
+また、AdGuard広告ブロッカーライセンスは、様々な販売代理店からも販売されています。 ※AdGuard製品が各アプリストアや販売代理店で入手可能かどうかは、お住まいの国によって異なります。
 
 ## ライセンスをアップグレードする方法{#upgrade}
 
-To make more use of your AdGuard products, you can upgrade your license for the following benefits.
+ライセンスをアップグレードすることで、以下のように AdGuard 製品をより活用できます:
 
-1. お使いのAdGuard製品の機能を拡張するために、 **無料版・試用版ライセンスを有料版にアップグレードすることができます**。
-2. 利用可能端末台数を増やすには、 **AdGuardパーソナルライセンス（3台用）をファミリーライセンス（9台用）にアップグレード**できます。
-3. お使いの[サブスクリプション](../what-is)を**無期限で使える永久版ライセンス**にアップグレードすることも可能です。
+- To extend the number of devices, you can **upgrade your Personal license to Family**
+- You can also **upgrade your 1-year subscription to a lifetime license**
 
-You can upgrade your license by:
-  * [AdGuard公式サイト](https://adguard.com)で、もう一つのライセンスを購入する
-  * AdGuardマイ・アカウントの「ライセンス」画面で、 「*永久版にアップグレードする*」や「*利用可能端末台数を増やす*」をクリックする ![アップグレード *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)
+You can upgrade your license in your AdGuard account. To do so, click *Upgrade to Lifetime* or *Increase device limit*.
+
+![アップグレード](https://cdn.adtidy.org/blog/new/7mtemnewaccount-kb-upgrade-ja.png)

@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works firsthand, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works firsthand, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -31,8 +31,8 @@ Now, if your purpose is to block ads and trackers system-wide, you have three op
 
 The first and third option have several advantages:
 
-* You can use any DNS server at your discretion and you are not tied up to a specific blocking server, because the filter does the blocking.
-* You can add multiple DNS filters and/or hosts files (although using too many might slow down AdGuard).
+- You can use any DNS server at your discretion and you are not tied up to a specific blocking server, because the filter does the blocking.
+- You can add multiple DNS filters and/or hosts files (although using too many might slow down AdGuard).
 
 ![How DNS filtering works](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_en.png)
 

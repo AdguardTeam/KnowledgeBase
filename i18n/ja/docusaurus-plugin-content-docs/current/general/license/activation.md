@@ -9,7 +9,7 @@ sidebar_position: 3
 
 :::note
 
-To activate a license via the AdGuard account, a valid license with at least one free slot is required. ライセンスがすでに最大数の端末で使用されている場合、[ライセンスをアップグレードする](../payment-options#upgrade)か、[一つの端末から別の端末にライセンスを移行する](../transfer)ことができます。
+※ AdGuardアカウントを使ってライセンスを有効化するには、端末1台分以上の空きスロットがあるライセンスが必要です。 ライセンスがすでに最大数の端末で使用されている場合、[ライセンスをアップグレードする](../payment-options#upgrade)か、[一つの端末から別の端末にライセンスを移行する](../transfer)ことができます。
 
 :::
 
@@ -21,84 +21,88 @@ To activate a license via the AdGuard account, a valid license with at least one
 
 1. AdGuardアプリを開く
 
-デスクトップ上のAdGuardアイコンをダブルクリックします。
+    デスクトップ上のAdGuardアイコンをダブルクリックします。
 
-![デスクトップ上のAdGuardアイコン](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowsEn.png)
+    ![デスクトップ上のAdGuardアイコン](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowsEn.png)
 
-もしくは、システムトレイでAdGuardアイコンをダブルクリックします。
+    もしくは、システムトレイでAdGuardアイコンをダブルクリックします。
 
-![システムトレイでのAdGuardアイコン](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windows2En.png)
+    ![システムトレイでのAdGuardアイコン](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windows2En.png)
 
-2. メインメニューで「**ライセンス**」→「**ライセンスを認証する**」をクリック
+1. メインメニューで「**ライセンス**」→「**ライセンスを認証する**」をクリック
 
-![「ライセンスを認証する」をクリック *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/windows_about.png)
+    ![「ライセンスを認証する」をクリック *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/windows_about.png)
 
-3. 認証（有効化）方法が2つ表示されます。
+1. 認証（有効化）方法が2つ表示されます。
 
-- お持ちの**AdGuardアカウント**（または Facebook、Google、Apple のアカウント）の**メールアドレス**と**パスワード**を入力して認証する
+    - お持ちの**AdGuardアカウント**（または Facebook、Google、Apple アカウント）の**メールアドレス**と**パスワード**を入力して認証する
 
-![AdGuardアカウントにログイン *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/windows_account.png)
+        ![AdGuardアカウントにログイン *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/windows_account.png)
 
-- もしくは、**ライセンスキー**を入力して認証する
+    - **ライセンスキー**を入力して認証する
 
-![ライセンスキーを入力 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/windows_license.png)
+        ![ライセンスキーを入力 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/windows_license.png)
 
 ### AdGuard for Mac を有効にする方法
 
 1. AdGuardアプリを開く（メニューバーでAdGuardアイコンをクリック  ）
 
-![メニューバーでのAdGuardアイコン *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/mac1.png)
+    ![メニューバーでのAdGuardアイコン *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/mac1.png)
 
-2. 右上の**⚙アイコン**を押す
-3. 「**ライセンス…**」をクリックする
+1. 右上の**⚙アイコン**を押す
 
-![「設定」→「ライセンス」に移動 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/mac2.png)
+1. 「**ライセンス…**」をクリックする
 
-4. 開いたウィンドウで、「**ライセンスキーを認証する**」をクリック
+    ![「設定」→「ライセンス」に移動 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/mac2.png)
 
-![「ライセンスを認証する」をクリック *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/mac3.png)
+1. 開いたウィンドウで、「**ライセンスキーを認証する**」をクリック
 
-5. 認証（有効化）方法が2つ表示されます。
-- お持ちの**AdGuardアカウント**（または Facebook/Google/Apple アカウント）の**メールアドレス**と**パスワード**を入力して認証する
+    ![「ライセンスを認証する」をクリック *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/mac3.png)
 
-![AdGuardアカウントにログインして認証 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/mac4.png)
+1. 認証（有効化）方法が2つ表示されます。
 
-- もしくは、**ライセンスキー**を入力して認証する
+    - お持ちの**AdGuardアカウント**（または Facebook、Google、Apple アカウント）の**メールアドレス**と**パスワード**を入力して認証する
 
-![ライセンスキーを入力して認証 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/mac5.png)
+        ![AdGuardアカウントにログインして認証 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/mac4.png)
+
+    - **ライセンスキー**を入力して認証する
+
+        ![ライセンスキーを入力して認証 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/mac5.png)
 
 ### AdGuard for Android を有効にする方法
 
 1. AdGuardアプリを開く
-2. 画面左上の**メニューアイコン（☰）**をタップ
-3. 一番上の「**プレミアム版を入手**」バー（もしくはちょっと下の「**ライセンス状態**」）をタップ
 
-![「プレミアム版を入手」もしくは「ライセンス状態」をタップ *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/android-act-1.png)
+1. 画面左上の**メニューアイコン（☰）**をタップ
 
-4. 画面右上の「**⋮**」をタップ
+1. 一番上の「**プレミアム版を入手**」バー（もしくはちょっと下の「**ライセンス状態**」）をタップ
 
-![3点メニューをタップ *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/android-act-2.png)
+    ![「プレミアム版を入手」もしくは「ライセンス状態」をタップ *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/android-act-1.png)
 
-5. 「**プレミアム版をアクティベート**」を押します。2つの方法いずれかで認証できます。
+1. 画面右上の「**⋮**」をタップ
 
-- お持ちの**AdGuardアカウント**（または Facebook/Google のアカウント）の**メールアドレス**と**パスワード**を入力して認証する
+    ![3点メニューをタップ *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/android-act-2.png)
 
-![ログインして有効化 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/android-act-3.png)
+1. 「**プレミアム版をアクティベート**」を押します。2つの方法いずれかで認証できます。
 
-- もしくは、**ライセンスキー**を入力して認証する
+    - お持ちの**AdGuardアカウント**（または Facebook/Google のアカウント）の**メールアドレス**と**パスワード**を入力して認証する
 
-![ライセンスキーを入力して有効化 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/android-act-4.png)
+        ![ログインして有効化 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/android-act-3.png)
+
+    - **ライセンスキー**を入力して認証する
+
+        ![ライセンスキーを入力して有効化 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/android-act-4.png)
 
 ### AdGuard for iOS を有効にする方法
 
 1. お使いの端末でAdGuardアプリを開き、「**詳細はこちら**」をタップ
 
-2. （もしくは、メイン画面右下の⚙アイコン→「**ライセンス**」をタップ）
+1. （もしくは、メイン画面右下の⚙アイコン→「**ライセンス**」をタップ）
 
-3. 画面右上の「**ログイン**」をタップ
+1. 画面右上の「**ログイン**」をタップ
 
-![Tap Log in in the top right corner of the Premium screen *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/ios1.jpeg)
+    ![「詳細はこちら」をタップ *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/ios1.jpeg)
 
-4. お持ちの**AdGuardアカウント**の**メールアドレス**と**パスワード**を入力してログインする
+1. お持ちの**AdGuardアカウント**の**メールアドレス**と**パスワード**を入力してログインする
 
-![ログイン *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/ios2.jpeg)
+    ![画面右上の「ログイン」をタップ *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/ios2.jpeg)

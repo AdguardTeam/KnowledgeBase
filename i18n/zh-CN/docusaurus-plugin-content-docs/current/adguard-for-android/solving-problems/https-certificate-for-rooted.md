@@ -5,7 +5,7 @@ sidebar_position: 14
 
 :::info
 
-本文适用于安卓版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 要了解工作原理， 请[下载 AdGuard 应用程序](https://adguard.com/download.html?auto=true)
+本文适用于安卓版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -15,48 +15,47 @@ On non-rooted devices CA certificates can be installed to the **User store**. On
 
 However, on rooted devices, you can install the certificate to the **System store** and allow HTTPS filtering of other apps' traffic too.
 
-
 Here's how to do that.
 
 ## How to install AdGuard's Certificate to System store (on a rooted device)
 
 1. Enable HTTPS filtering in AdGuard for Android and save AdGuard's certificate to the User store (use [this instruction](../../overview#https-filtering) if needed)
 
-> From AdGuard for Android v4.1 and after users can install two certificates to the User store, which will help to filter websites in Chrome browser.
+     From AdGuard for Android v4.1 and after users can install two certificates to the User store, which will help to filter websites in Chrome browser.
 
-2. Go to **AdGuard app** → **Menu** (≡) → **Settings** → **Network** → **HTTPS filtering** → **Security certificate** → tap “**Copy to the system store**”
+1. Go to **AdGuard app** → **Menu** (≡) → **Settings** → **Network** → **HTTPS filtering** → **Security certificate** → tap “**Copy to the system store**”
 
-That is enough for older versions of Magisk.
+    That is enough for older versions of Magisk.
 
-However, if you have a newer version, you will get this message:
+    However, if you have a newer version, you will get this message:
 
-> Unable to copy the certificate to the system store. Try using “AdGuard Certificate” module.
+    > Unable to copy the certificate to the system store. Try using “AdGuard Certificate” module.
 
-In that case, proceed to steps below:
+    In that case, proceed to steps below:
 
-3. Go to **Magisk** → **Settings**
+1. Go to **Magisk** → **Settings**
 
-![Open Magisk settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-1.png)
+    ![Open Magisk settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-1.png)
 
-4. Enable **Zygisk**
+1. Enable **Zygisk**
 
-![Enable Zygisk *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-2.png)
+    ![Enable Zygisk *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-2.png)
 
-![Go back to Magisk main screen *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-3.png)
+    ![Go back to Magisk main screen *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-3.png)
 
-5. Download the `.zip` file (of “AdGuard Certificate” module) from the [latest release on GitHub](https://github.com/AdguardTeam/adguardcert/releases/latest/)
+1. Download the `.zip` file (of “AdGuard Certificate” module) from the [latest release on GitHub](https://github.com/AdguardTeam/adguardcert/releases/latest/)
 
-6. Go to **Magisk** → **Modules** → **Install from storage** and select the downloaded `.zip` file
+1. Go to **Magisk** → **Modules** → **Install from storage** and select the downloaded `.zip` file
 
-![Open Magisk modules *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-4.png)
+    ![Open Magisk modules *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-4.png)
 
-![Install from storage *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-5.png)
+    ![Install from storage *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-5.png)
 
-![Select AdGuard certificate module *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-6.png)
+    ![Select AdGuard certificate module *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-6.png)
 
-7. Reboot
+1. Reboot
 
-![Reboot the device *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-7.png)
+    ![Reboot the device *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-7.png)
 
 If a new version of "AdGuard certificate" module comes out, repeat steps 3-7 to update the module.
 

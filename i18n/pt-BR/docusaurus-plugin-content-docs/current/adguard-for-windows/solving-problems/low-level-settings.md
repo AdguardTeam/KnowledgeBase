@@ -5,7 +5,7 @@ sidebar_position: 7
 
 :::info
 
-Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifuncional que protege seu dispositivo a nível de sistema. Para ver como funciona, [baixe o aplicativo AdGuard](https://adguard.com/download.html?auto=true)
+Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifuncional que protege seu dispositivo a nível de sistema. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -60,6 +60,10 @@ Ative este recurso para ver as pop-ups de notificações do AdGuard. Elas não a
 ### Interceptar automaticamente URLs de inscrição de filtros
 
 Ative este recurso se você quiser que o AdGuard intercepte automaticamente URLs de inscrição de filtro (ou seja, `abp:subscribe` e similares) e abra uma caixa de diálogo de instalação de filtro personalizado.
+
+### Filter HTTP/3
+
+If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
 
 ### Usar modo de redirecionamento de driver
 
@@ -181,17 +185,17 @@ AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to
 
 Aqui você pode selecionar a maneira como o AdGuard responderá aos domínios bloqueados por regras de DNS com base na [sintaxe da regra de hosts](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
 
-* Resposta com o erro “Recusado”
-* Resposta com o erro “NxDomain”
-* Resposta com um endereço IP personalizado
+- Resposta com o erro “Recusado”
+- Resposta com o erro “NxDomain”
+- Resposta com um endereço IP personalizado
 
 ### Modo de bloqueio para regras de estilo adblock
 
 Aqui você pode selecionar a maneira como o AdGuard responderá aos domínios bloqueados pelas regras de DNS com base na [ sintaxe estilo adblock](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax).
 
-* Resposta com o erro “Recusado”
-* Resposta com o erro “NxDomain”
-* Resposta com um endereço IP personalizado
+- Resposta com o erro “Recusado”
+- Resposta com o erro “NxDomain”
+- Resposta com um endereço IP personalizado
 
 ### Endereço IPv4 personalizado
 
@@ -205,9 +209,9 @@ Se o endereço IP personalizado for selecionado no modo de bloqueio para regras 
 
 Aqui você pode especificar um servidor DNS alternativo para o qual uma solicitação DNS será reencaminhada se o servidor principal não responder dentro do período de tempo limite especificado na próxima seção. Você pode escolher entre três opções:
 
-* Não usar servidores fallback;
-* Usar servidores padrões do sistema;
-* Usar servidores personalizados.
+- Não usar servidores fallback;
+- Usar servidores padrões do sistema;
+- Usar servidores personalizados.
 
 ### Bloquear ECH
 

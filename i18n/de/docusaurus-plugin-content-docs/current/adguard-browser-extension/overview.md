@@ -3,9 +3,9 @@ title: Funktionsübersicht
 sidebar_position: 1
 ---
 
-:::Info
+:::info
 
-In diesem Artikel geht es um die AdGuard Browsereweiterung, die nur Ihren Browser schützt. Um Ihr gesamtes Gerät zu schützen, [laden Sie die App AdGuard herunter](https://adguard.com/download.html?auto=true)
+In diesem Artikel geht es um die AdGuard Browsereweiterung, die nur Ihren Browser schützt. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -136,6 +136,8 @@ All web requests made by the browser are displayed in the *Filtering log*, along
 By clicking the icons in the top right corner of the extension's main menu, you can open the extension settings or pause the protection.
 
 ## AdGuard Browser Extension vs. standalone apps {#comparison}
+
+<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/ZGwceZP-0mM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 The main advantage of AdGuard standalone programs over browser extensions is that the programs can block ads in every browser and in almost all apps. You may use different browsers at the same time, the app will filter ads and online threats in all of them equally well.
 

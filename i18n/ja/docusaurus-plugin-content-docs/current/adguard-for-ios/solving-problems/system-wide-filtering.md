@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for iOS」について書いています。 To see how it works firsthand, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for iOS」について書いています。 To see how it works firsthand, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -31,8 +31,8 @@ Now, if your purpose is to block ads and trackers system-wide, you have three op
 
 The first and third option have several advantages:
 
-* You can use any DNS server at your discretion and you are not tied up to a specific blocking server, because the filter does the blocking.
-* You can add multiple DNS filters and/or hosts files (although using too many might slow down AdGuard).
+- You can use any DNS server at your discretion and you are not tied up to a specific blocking server, because the filter does the blocking.
+- You can add multiple DNS filters and/or hosts files (although using too many might slow down AdGuard).
 
 ![DNSフィルタリングの仕組み](https://cdn.adguard.com/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_ja.png)
 

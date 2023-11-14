@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Mac」について書いています。 実際に使ってみるには、[AdGuardアプリをダウンロード](https://adguard.com/download.html?auto=true)してください。
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Mac」について書いています。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -21,11 +21,11 @@ sidebar_position: 2
 
 ## インストール方法
 
-To install AdGuard for Mac on your computer, launch your browser, type _adguard.com_ in the address bar, and press **Download** [on the page that opens](https://adguard.com/download.html?auto=1).
+To install AdGuard for Mac on your computer, launch your browser, type *adguard.com* in the address bar, and press **Download** [on the page that opens](https://adguard.com/download.html?auto=1).
 
 ![アプリをダウンロード *border](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ja/mac-1.png)
 
-「_AdguardInstaller.dmg_」がダウンロード完了したら、クリックします。（Finderから開くこともできます。）
+Wait for *AdguardInstaller.dmg* to download and double-click its icon in the list of downloaded files on the Dock panel.
 
 ![Double-click to open the file](https://cdn.adguard.com/public/Adguard/kb/installation/Mac/ja/mac-2.png)
 
@@ -58,6 +58,7 @@ AdGuardアプリを使用するにはmacOS管理者アカウントのパスワ�
 ## アンインストール
 
 ### レギュラー
+
 まず、Finderを開いてください。
 
 ![Finderを開く](https://cdn.adtidy.org/public/Adguard/En/Articles/howtodelete/finder.png)

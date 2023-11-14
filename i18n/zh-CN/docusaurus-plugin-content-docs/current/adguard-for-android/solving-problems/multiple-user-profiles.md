@@ -5,7 +5,7 @@ sidebar_position: 10
 
 :::info
 
-本文适用于安卓版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 要了解工作原理， 请[下载 AdGuard 应用程序](https://adguard.com/download.html?auto=true)
+本文适用于安卓版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -37,29 +37,36 @@ This approach is available starting from **AdGuard v3.5 nightly 6**. 如您仍�
 
 :::
 
-1. 启用**「开发者模式」**以及开启**「USB 调试」**：
-- Open the **Settings** app phone;
-- 前往**系统**部分（设置中最后一项选项）。 In this section, find the sub-item **About phone**;
-- Tap the **Build number** line 7 times. 之后您将会收到通知说明现在**您是开发人员**（如需要的话，输入解锁密码）；
-- Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
+1. Activate the **developer mode** and enable **USB debugging**:
 
-:::note
+    - Open the **Settings** app phone;
+    - Go to **System** section (last item in the settings menu). In this section, find the sub-item **About phone**;
+    - Tap the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
+    - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
 
-如您遇到任何困难或其他问题，[在此处](https://developer.android.com/studio/debug/dev-options)可查看完整说明。
+    :::note
+
+    如您遇到任何困难或其他问题，[在此处](https://developer.android.com/studio/debug/dev-options)可查看完整说明。
+
 
 :::
 
-2. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
-3. 使用 **USB 电缆**将您的设备连接至您已安装 **ADB** 的电脑或笔记本等设备上;
-4. 在您的 PC 上打开**命令行**：
-- 如您使用的是 **Windows**，打开 **Cmd.exe**；
-- 如您使用的是 **macOS**，打开 ** Terminal **；
-5. 输入 `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` 的命令并点击**回车键**。
+1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+
+1. 使用 **USB 电缆**将您的设备连接至您已安装 **ADB** 的电脑或笔记本等设备上;
+
+1. 在您的 PC 上打开**命令行**：
+
+    - 如您使用的是 **Windows**，打开 **Cmd.exe**；
+    - 如您使用的是 **macOS**，打开 ** Terminal **；
+
+1. 输入 `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` 的命令并点击**回车键**。
 
 ### 方案 2：移除**受限用户帐户**
 
 [在此](https://support.google.com/a/answer/6223444?hl=en)可以查看如何在安卓设备上管理用户帐户的相关信息。
-> :::note
+
+:::note
 
 In some cases restricted user accounts are created implicitly and cannot be removed. 例如，您在**安卓**或 **LG** 设备上使用应用分身或双开应用功能时，将会自动创建受限用户帐户。 您可以阅读以下内容以查看，在上面描述的情况下该如何解决问题。
 
@@ -89,5 +96,3 @@ To enable this mode, open **AdGuard Settings** → **Network** → **Filtering m
 - 向下移动，点击**双开应用**；
 - 移除应用分身列表中所有的应用；
 - 重启您的设备。
-
-

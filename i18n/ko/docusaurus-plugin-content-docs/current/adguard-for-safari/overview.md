@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-Safari 브라우저만 보호하는 Safari용 AdGuard에 관한 문서입니다. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Safari 브라우저만 보호하는 Safari용 AdGuard에 관한 문서입니다. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 

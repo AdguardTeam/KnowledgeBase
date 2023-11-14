@@ -5,7 +5,7 @@ sidebar_position: 3
 
 :::info
 
-이 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 iOS용 AdGuard에 대해 다룹니다. 어떻게 동작하는지 알고 싶으시다면 [AdGuard 앱을 다운로드](https://adguard.com/download.html?auto=true) 해 보세요.
+이 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 iOS용 AdGuard에 대해 다룹니다. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -20,6 +20,7 @@ iOS용 AdGuard의 풀 터널 (VPN 아이콘이 표시되지 않음) 모드를 �
 ![터널 모드 화면 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ru/iOS/tunnel-mode.PNG?!)
 
 분할 터널 모드를 활성화하는 방법은 다음과 같습니다.
+
 1. Go to AdGuard for iOS *Settings* → *General settings*.
 2. *고급 모드* 활성화 후 *고급 설정*으로 이동
 3. *터널 모드*> *분할 터널* 모드 선택

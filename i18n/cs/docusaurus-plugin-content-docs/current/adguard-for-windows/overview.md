@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -38,13 +38,14 @@ Jedná se o hlavní modul AdGuardu pro Windows, který odstraňuje reklamy z nav
 ![Ad Blocker *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/ad-blocker.png)
 
 V modulu Blokátor reklam můžete:
-* povolit automatickou aktivaci jazykově specifických filtrů,
-* zakázat [reklamy ve vyhledávání a blokování vlastní propagace](/general/ad-filtering/search-ads),
-* aktivovat předinstalované filtry, jako je *AdGuard Base filtr*,
-* instalovat filtry ze seznamu nebo přidat vlastní filtr kliknutím na tlačítko *Přidat filtr*,
-* provádět změny ve stávajících skupinách pravidel pomocí tlačítka *Editor filtrů*,
-* zobrazit všechny požadavky odeslané prohlížeči a aplikacemi nainstalovanými v počítači kliknutím na tlačítko *Záznam filtrování*. Zde můžete také zablokovat nebo odblokovat jakýkoli požadavek vytvořením vlastního pravidla,
-* vytvořit filtr z vlastních pravidel napsaných ručně, importovaných nebo vytvořených pomocí rozšíření AdGuard Assistant.
+
+- povolit automatickou aktivaci jazykově specifických filtrů,
+- zakázat [reklamy ve vyhledávání a blokování vlastní propagace](/general/ad-filtering/search-ads),
+- aktivovat předinstalované filtry, jako je *AdGuard Base filtr*,
+- instalovat filtry ze seznamu nebo přidat vlastní filtr kliknutím na tlačítko *Přidat filtr*,
+- provádět změny ve stávajících skupinách pravidel pomocí tlačítka *Editor filtrů*,
+- zobrazit všechny požadavky odeslané prohlížeči a aplikacemi nainstalovanými v počítači kliknutím na tlačítko *Záznam filtrování*. Zde můžete také zablokovat nebo odblokovat jakýkoli požadavek vytvořením vlastního pravidla,
+- vytvořit filtr z vlastních pravidel napsaných ručně, importovaných nebo vytvořených pomocí rozšíření AdGuard Assistant.
 
 Než začnete ručně psát svá vlastní pravidla, přečtěte si našeho podrobného [průvodce syntaxí](/general/ad-filtering/create-own-filters).
 
@@ -63,9 +64,10 @@ Chcete-li se dozvědět vše o Režimu utajení a jeho mnoha možnostech, [pře�
 Bezpečné prohlížení poskytuje silnou ochranu před škodlivými stránkami a krádeží identtity. Ne, AdGuard pro Windows není antivir. Nezastaví stahování viru, pokud již bylo zahájeno, ani neodstraní již existující viry. Upozorní vás však, pokud se chystáte přejít na webovou stránku, jejíž doména byla přidána do naší databáze "nedůvěryhodných stránek", nebo stáhnout soubor z takové webové stránky. Více informací o fungování tohoto modulu najdete ve [vyhrazeném článku](/general/browsing-security).
 
 V tomto modulu můžete
-* povolit oznámení pro blokování požadavků na nebezpečné stránky,
-* aktivovat zvukové oznámení,
-* souhlasit s odesláním anonymních informací na server AdGuardu souvisejících se zabezpečením, které nám pomohou udržovat databázi nebezpečných webů aktuální.
+
+- povolit oznámení pro blokování požadavků na nebezpečné stránky,
+- aktivovat zvukové oznámení,
+- souhlasit s odesláním anonymních informací na server AdGuardu souvisejících se zabezpečením, které nám pomohou udržovat databázi nebezpečných webů aktuální.
 
 ![Browsing Security *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/browsing-security.png)
 
@@ -91,7 +93,7 @@ V modulu Rodičovská ochrana můžete povolit *Bezpečné vyhledávání*, spra
 
 ![Parental Control *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
 
-### Asistent prohlížeče
+### Browser Assistant
 
 ![Browser Assistant *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 
@@ -147,10 +149,10 @@ Jak funguje AdGuard VPN? Aniž bychom zacházeli do technických podrobností, m
 
 **Co může AdGuard VPN dělat:**
 
-* skrývá vaše skutečné místo pobytu a pomáhá vám zůstat v anonymitě
-* změní vaši IP adresu a ochrání vaše data před sledováním
-* zašifruje váš provoz, aby byl pro podvodníky nedostupný
-* umožňuje nastavit, kde se má VPN používat a kde ne (funkce výjimek)
+- skrývá vaše skutečné místo pobytu a pomáhá vám zůstat v anonymitě
+- změní vaši IP adresu a ochrání vaše data před sledováním
+- zašifruje váš provoz, aby byl pro podvodníky nedostupný
+- umožňuje nastavit, kde se má VPN používat a kde ne (funkce výjimek)
 
 Chcete-li získat více informací o AdGuard VPN, ponořte se do [databáze znalostí AdGuard VPN](https://adguard-vpn.com/kb/).
 
@@ -169,8 +171,9 @@ Kliknutím na kartu Podpora otevřete dialogové okno, ve kterém můžete nahl�
 ![License *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
 
 Tato karta obsahuje informace o vaší licenci. Zde můžete:
-* zjistit typ licence (nightly, beta nebo stabilní), počet zařízení dostupných pro současné připojení k AdGuardu, datum vypršení platnosti licence;
-* kliknutím na tlačítko můžete přejít na stránku nákupu licence, aktivaci, reset nebo obnovení licence.
+
+- zjistit typ licence (nightly, beta nebo stabilní), počet zařízení dostupných pro současné připojení k AdGuardu, datum vypršení platnosti licence;
+- kliknutím na tlačítko můžete přejít na stránku nákupu licence, aktivaci, reset nebo obnovení licence.
 
 ### Informace
 
@@ -188,13 +191,13 @@ Chcete-li zkontrolovat aktualizace filtrů a uživatelských skriptů, klikněte
 
 Abyste ušetřili čas při navigaci v nabídkách AdGuardu, je mnoho často používaných možností a nastavení k dispozici v nabídce přihrádky. Chcete-li vyvolat tuto nabídku, klepněte pravým tlačítkem myši na ikonu AdGuardu na hlavním panelu. Nabídne vám následující možnosti:
 
-* zapnout ochranu
-* vypnout ochranu: zcela nebo na 30 sekund
-* přejít do *Nastavení*
-* otevřít menu *Nástroje* a *Pokročilé*
-* zkontrolovat aktualizace filtrů
-* zkontrolovat aktualizace aplikace
-* vyvolatí poslední vyskakovací zprávy
-* dosáhnout na *Podporu* a *Informace*
-* zavřít AdGuard, ale pokračovat ve filtrování
-* ukončit AdGuard
+- zapnout ochranu
+- vypnout ochranu: zcela nebo na 30 sekund
+- přejít do *Nastavení*
+- otevřít menu *Nástroje* a *Pokročilé*
+- zkontrolovat aktualizace filtrů
+- zkontrolovat aktualizace aplikace
+- vyvolatí poslední vyskakovací zprávy
+- dosáhnout na *Podporu* a *Informace*
+- zavřít AdGuard, ale pokračovat ve filtrování
+- ukončit AdGuard

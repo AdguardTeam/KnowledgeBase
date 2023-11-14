@@ -3,15 +3,15 @@ title: Leitfaden für erweiterte (low-level) Einstellungen
 sidebar_position: 7
 ---
 
-:::Info
+:::info
 
-Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://adguard.com/download.html?auto=true)
+Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
 Die früher als Low-Level-Einstellungen bezeichneten erweiterten Einstellungen enthalten meist Optionen, die über die Fähigkeiten des durchschnittlichen Benutzers hinausgehen und im Alltag nicht verwendet werden. AdGuard für Windows ist so konzipiert, dass es ohne Änderungen funktioniert, aber in bestimmten Fällen oder bei der Lösung eines ungewöhnlichen Problems werden zusätzliche Funktionen bereitgestellt.
 
-:::Zur Beachtung
+:::caution
 
 Das unbedachte Ändern von *Erweiterten Einstellungen* kann möglicherweise Probleme mit der Leistung von AdGuard verursachen, die Internetverbindung unterbrechen oder Ihre Sicherheit und Privatsphäre gefährden. Sie sollten diese Einstellungen nur dann ändern, wenn Sie sich sicher sind, was Sie tun, oder wenn unser Support-Team Sie dazu aufgefordert hat.
 
@@ -60,6 +60,10 @@ Aktivieren Sie diese Funktion, um Popup-Benachrichtigungen von AdGuard anzuzeige
 ### Filter-Abonnement URLs automatisch filtern
 
 Aktivieren Sie diese Funktion, wenn Sie möchten, dass AdGuard automatisch Filter-URLs (z.B. `abp:subscribe` und ähnliche) abfängt und einen benutzerdefinierten Filter-Installationsdialog öffnet.
+
+### Filter HTTP/3
+
+If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
 
 ### Umleitungstreiber-Modus verwenden
 
@@ -181,17 +185,17 @@ AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to
 
 Hier können Sie festlegen, wie AdGuard auf Domains reagieren soll, die durch DNS-Regeln basierend auf der [Hosts-Regelsyntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax) gesperrt werden.
 
-* Mit Fehler „Abgelehnt“ antworten
-* Mit Fehler „NxDomain“ antworten
-* Mit benutzerdefinierter IP-Adresse antworten
+- Mit Fehler „Abgelehnt“ antworten
+- Mit Fehler „NxDomain“ antworten
+- Mit benutzerdefinierter IP-Adresse antworten
 
 ### Sperrmodus für Regeln im Adblock-Stil
 
 Hier können Sie festlegen, wie AdGuard auf Domains reagieren soll, die durch DNS-Regeln auf Basis der [Adblock-Syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax) gesperrt werden.
 
-* Mit Fehler „Abgelehnt“ antworten
-* Mit Fehler „NxDomain“ antworten
-* Mit benutzerdefinierter IP-Adresse antworten
+- Mit Fehler „Abgelehnt“ antworten
+- Mit Fehler „NxDomain“ antworten
+- Mit benutzerdefinierter IP-Adresse antworten
 
 ### Benutzerdefinierte IPv4-Adresse
 
@@ -205,9 +209,9 @@ Wenn die benutzerdefinierte IP-Adresse im Sperrmodus für Hosts-Regeln oder im S
 
 Hier können Sie einen alternativen DNS-Server angeben, an den eine DNS-Anfrage umgeleitet wird, wenn der Hauptserver nicht innerhalb der im nächsten Abschnitt angegebenen Zeitspanne antwortet. Es stehen drei Optionen zur Auswahl:
 
-* Keine Ausweichserver verwenden;
-* Standardserver des Systems verwenden;
-* Benutzerdefinierte Server verwenden.
+- Keine Ausweichserver verwenden;
+- Standardserver des Systems verwenden;
+- Benutzerdefinierte Server verwenden.
 
 ### ECH blockieren
 

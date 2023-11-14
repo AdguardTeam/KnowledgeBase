@@ -3,9 +3,9 @@ title: Certificate-related issues
 sidebar_position: 2
 ---
 
-:::Info
+:::info
 
-Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://adguard.com/download.html?auto=true)
+Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -24,30 +24,32 @@ Old FireFox versions, as well as browsers based on them, do not trust certificat
 If that doesn't help, follow the instructions for manually adding the AdGuard certificate to the FireFox storage.
 > This instruction is for Firefox browser. Names of buttons and menu items may differ in other Firefox-based browsers.
 
-1) Run AdGuard.
+1. Run AdGuard.
 
-2) Go to [http://local.adguard.org/cert](http://local.adguard.org/cert) and click the *Download* button. The browser should start downloading **cert.cer** file.
+1. Go to [http://local.adguard.org/cert](http://local.adguard.org/cert) and click the *Download* button. The browser should start downloading **cert.cer** file.
 > You can also open the download page by clicking on the link via the AdGuard app at *Settings → Network → HTTPS filtering*.
 
 ![Certificate settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/link.jpeg)
 
-3) Open your browser and then open *Settings*.
+1. Open your browser and then open *Settings*.
 
-4) Go to *Privacy & Security* tab.
+1. Go to *Privacy & Security* tab.
 
-5) Scroll down to *Certificates* and click the *View Certificates* button.
+1. Scroll down to *Certificates* and click the *View Certificates* button.
 
 ![View certificates window](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import1.jpeg)
 
-6) Select *Authorities* tab.
+1. Select *Authorities* tab.
 
-7) Click *Import...*.
+1. Click *Import...*.
 
 ![Certificate settings — import](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import2.jpeg)
 
-8) Browse the downloaded **cert.cer** file and click *Open*.
+1. Browse the downloaded **cert.cer** file and click *Open*.
 
-9) Check the *Trust this CA to identify websites* box and then lick *OK*.
+1. Check the *Trust this CA to identify websites* box and then lick *OK*.
+
+![Certificate settings — checkbox](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/cert_checkbox.jpg)
 
 You've successfully installed AdGuard certificate. Restart the browser and the error should go away.
 

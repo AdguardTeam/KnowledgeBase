@@ -63,7 +63,7 @@ Většina problémů zjištěných ve výše uvedené studii souvisí s mechanis
 
 #### Problémy s filtrováním HTTPS v Androidu 7+
 
-[Počínaje systémem Android 7](https://blog.adguard.com/en/android-nougat-release-and-what-does-it-mean-for-adguard-users/) musí vývojáři výslovně uvést, že jejich aplikace důvěřují certifikátům nainstalovaným uživatelem. Ne každý to chce nebo se tím obtěžuje. Co to pro AdGuard znamená? AdGuard instaluje uživatelský certifikát, aby mohl filtrovat přenosy HTTPS. Pokud aplikace tomuto certifikátu nedůvěřuje, její přenosy HTTPS nebudou filtrovány. Co dělat?
+[Počínaje systémem Android 7](https://adguard.com/en/blog/android-nougat-release-and-what-does-it-mean-for-adguard-users.html) musí vývojáři výslovně uvést, že jejich aplikace důvěřují certifikátům nainstalovaným uživatelem. Ne každý to chce nebo se tím obtěžuje. Co to pro AdGuard znamená? AdGuard instaluje uživatelský certifikát, aby mohl filtrovat přenosy HTTPS. Pokud aplikace tomuto certifikátu nedůvěřuje, její přenosy HTTPS nebudou filtrovány. Co dělat?
 
 V první řadě stojí za zmínku, že mnoho aplikací (i těch moderních) stále důvěřuje uživatelským certifikátům. V tomto ohledu se nic nezměnilo. Téměř všechny prohlížeče těmto certifikátům také důvěřují. Možná existují neobvyklé prohlížeče, které to nedělají, ale ty jsou vzácnou výjimkou z běžné praxe.
 
@@ -73,6 +73,6 @@ Pokud má vaše zařízení přístup root, můžete certifikát AdGuardu přesu
 
 Existuje několik specializovaných webových stránek, kde si můžete ověřit kvalitu připojení HTTPS. Tyto webové stránky kontrolují, zda je váš prohlížeč (nebo v našem případě prohlížeč plus AdGuard) náchylný k běžným zranitelnostem. Pokud plánujete používat jakýkoli program, který filtruje HTTPS, nikoli nutně AdGuard (např. antivir), doporučujeme zkontrolovat kvalitu připojení na těchto webových stránkách.
 
-* [https://www.ssllabs.com/ssltest/viewMyClient.html](https://www.ssllabs.com/ssltest/viewMyClient.html)
-* [https://www.howsmyssl.com/](https://www.howsmyssl.com/)
-* [https://badssl.com/](https://badssl.com/)
+- [https://www.ssllabs.com/ssltest/viewMyClient.html](https://www.ssllabs.com/ssltest/viewMyClient.html)
+- [https://www.howsmyssl.com/](https://www.howsmyssl.com/)
+- [https://badssl.com/](https://badssl.com/)

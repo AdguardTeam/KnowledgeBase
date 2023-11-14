@@ -13,8 +13,8 @@ First, look at this simple diagram that shows the general structure of the HTTPS
 
 AdGuard copies properties of the TLS connection that your browser uses:
 
-* AdGuard uses the same TLS version
-* AdGuard uses the same encrypting methods (ciphers) as your browser
+- AdGuard uses the same TLS version
+- AdGuard uses the same encrypting methods (ciphers) as your browser
 
 Effectively, it means that if you use a modern, safe browser, it will take all known TLS problems into account and won’t attempt to use unsafe ciphers.
 

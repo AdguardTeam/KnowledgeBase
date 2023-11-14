@@ -54,7 +54,7 @@ Let's take a closer look at them.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/dual_it.png)
 
-Most of them are represented in the `AdGuard for Windows` project and consist of only one or two words:
+Bunların çoğu `Windows için AdGuard` projesinde temsil edilir ve yalnızca bir veya iki kelimeden oluşur:
 
 - `days;`
 - `extensions;`
@@ -145,12 +145,12 @@ While first three types of such strings are more or less easy to perform, the fo
 
 And again: if you come across an original phrase with two important elements: **the vertical bar sign** and **%count%** placeholders, please do the following:
 
-+ Refer to the plural rule of a language you translate into;
+- Refer to the plural rule of a language you translate into;
 
 The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms — two templates in translations; five plural forms — five templates, etc.
 
-+ Do not forget to use a vertical bar sign between templates as it is represented in original strings;
+- Do not forget to use a vertical bar sign between templates as it is represented in original strings;
 
-+ Do not translate, fill in or delete **%count%** placeholders.
+- Do not translate, fill in or delete **%count%** placeholders.
 
 By following these simple rules you will help AdGuard developers avoid a lot of unnecessary complications during the localization process.

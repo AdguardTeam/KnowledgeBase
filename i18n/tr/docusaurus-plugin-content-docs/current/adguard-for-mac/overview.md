@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Mac için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Mac için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -23,7 +23,7 @@ To start configuring AdGuard for Mac, you need to click the gear in the upper ri
 
 ## Genel Tercihler
 
-![General](https://cdn.adtidy.org/content/kb/ad_blocker/mac/General.jpg)
+![Genel](https://cdn.adtidy.org/content/kb/ad_blocker/mac/General.jpg)
 
 Descriptions under option titles seem self-explanatory, but still:
 
@@ -37,20 +37,21 @@ Descriptions under option titles seem self-explanatory, but still:
 
 From this same window you can access the above-mentioned Allowlist, to which you can add websites you do not wish AdGuard to filter. Just click the corresponding button located at the bottom of the window.
 
-## Filters
+## Filtreler
 
-![Filters](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Filters.jpg)
+![Filtreler](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Filters.jpg)
 
 Filters are the main driving force behind the Ad blocker module. To understand how filtering works, get acquainted with our [comprehensive article](https://adguard.com/en/blog/how-ad-blocking-is-done.html). But in essence, filter lists are sets of rules written in a special language, and your ad blocker is an interpreter of these rules who then implements them. As a result, you stop seeing ads on your web pages and life gets lots better.
 
 Some filter lists (AdGuard’s Base filter, Annoyances filter, EasyList, etc.) are pre-installed, while other specific ones, adapted to your preferences, can be downloaded additionally and added to your program.
 
 Aside from the more general and universally applicable filters (like Base filter), AdGuard provides an extensive quantity of filters for every occasion:
-* filters aimed at tracking prevention (like Tracking Protection filter),
-* language-specific ad filters that block content in a selected language,
-* Social media filter that removes "Like" and "Share" buttons,
-* Annoyances filter for cookie warnings, in-page pop-ups and others of the same ilk,
-* and even a filter that unblocks some ads instead of blocking them — Filter for search ads and self-promotions.
+
+- filters aimed at tracking prevention (like Tracking Protection filter),
+- language-specific ad filters that block content in a selected language,
+- Social media filter that removes "Like" and "Share" buttons,
+- Annoyances filter for cookie warnings, in-page pop-ups and others of the same ilk,
+- and even a filter that unblocks some ads instead of blocking them — Filter for search ads and self-promotions.
 
 AdGuard filtreleri otomatik olarak güncellenir. Our developers create them all based on user feedback received. You can always help other AdGuard users (and yourself, in perspective) by sending us reports right from the app's Assistant (it's really handy, we'll tell you more about the Assistant further on), or from the [website](https://agrd.io/report). If you wish to know more about AdGuard filters, here is [some info](/general/ad-filtering/adguard-filters).
 
@@ -82,7 +83,7 @@ Stealth Mode contains a wide range of options, which ensure its flexible configu
 
 Next we have the Security panel, where a module also known as Browsing Security is located. What it does is protection from malicious and phishing websites.
 
-:::note
+:::not
 
 AdGuard is not an antivirus, but an entirely different program. It will show you a warning if you are about to go onto an infected domain, but it cannot stop you from downloading anything suspicious or help you deal with already existing viruses. Phishing is a very common web fraud aimed at stealing personal data (passwords, bank account details, etc.). It is carried out using fake web pages mimicking popular websites or real services, such as web stores or social networks. Many phishing websites have URLs that only differ from the real ones in just a few symbols to put you off your guard. If a user enters their details on such a website, they’ll definitely end up in the wrong hands.
 
@@ -94,7 +95,7 @@ Some web pages are not malicious themselves, but they may contain elements built
 
 If you wish to help us in perfecting this module, you can check the lower box on the panel near the "Help us with Browsing Security filters development" phrase. This will enable your computer to send us pertinent info on fraudulent websites you might stumble upon while surfing the web — and our developers will make sure they end up locked at the bottom of your ban list.
 
-## Browser Assistant
+## Tarayıcı Asistanı
 
 ![Assistant](https://cdn.adtidy.org/content/kb/ad_blocker/mac/BrowserAssistant.jpg)
 
@@ -104,15 +105,15 @@ AdGuard Browser Assistant’s primary function is to manage filtering directly f
 
 You will be prompted to install the Browser Assistant for your default browser when you first install AdGuard (during the onboarding process). If you missed it, you can [download it for any browser](https://adguard.com/adguard-assistant/overview.html) at any time.
 
-## Uzantılar
+## Extensions
 
-![Uzantılar](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Extensions.jpg)
+![Extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Extensions.jpg)
 
 Extensions are small programs that do exactly what their name implies — they extend functionality. And AdGuard uses several extensions of its own, also called userscripts, to broaden its functions range:
 
 **1. AdGuard Assistant** (legacy version) This extension assists the user in changing basic AdGuard settings within the browser, without the need to open the app itself. Like Browser Assistant, legacy Assistant works with all macOS compatible browsers. Thanks to this little tool you can do several things without having to leave the browser: add a certain webpage to the "do not block" list, choose and block an especially annoying element on the page, report the website if it still manages to get ads through to you.
 
-:::note
+:::not
 
 This version of Assistant is legacy and there is no point in using it on new systems, since it has been replaced with the full-fledged Browser Assistant. But legacy Assistant might be of help if there is no Browser Assistant extension for your browser.
 

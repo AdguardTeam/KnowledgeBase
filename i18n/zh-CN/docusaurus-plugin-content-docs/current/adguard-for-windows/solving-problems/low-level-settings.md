@@ -5,7 +5,7 @@ sidebar_position: 7
 
 :::info
 
-本文适用于 Windows 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 要了解工作原理， 请[下载 AdGuard 应用程序](https://adguard.com/download.html?auto=true)
+本文适用于 Windows 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -60,6 +60,10 @@ sidebar_position: 7
 ### 自动截取过滤器订阅 URL
 
 如果用户想让 AdGuard 自动拦截过滤器订阅 URL（如 `abp:subscribe` 等）并打开自定义过滤器安装对话框，请启用此功能。
+
+### Filter HTTP/3
+
+If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
 
 ### 使用重定向驱动模式
 
@@ -181,17 +185,17 @@ AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to
 
 用户可以选择 AdGuard 将根据 [hosts 规则的语法](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax)对被 DNS 规则阻止的域名作出反应的方式。
 
-* 将「REFUSED」的错误作出回应
-* 将「NxDomain」的错误作出回应
-* 使用自定义 IP 地址作出回应
+- 将「REFUSED」的错误作出回应
+- 将「NxDomain」的错误作出回应
+- 使用自定义 IP 地址作出回应
 
 ### adblock 规则的拦截模式
 
 用户可以选择 AdGuard 将根据 [ adblock 规则的语法](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax)对被 DNS 规则阻止的域名作出反应的方式。
 
-* 将「REFUSED」的错误作出回应
-* 将「NxDomain」的错误作出回应
-* 使用自定义 IP 地址作出回应
+- 将「REFUSED」的错误作出回应
+- 将「NxDomain」的错误作出回应
+- 使用自定义 IP 地址作出回应
 
 ### 自定义 IPv4 地址
 
@@ -205,9 +209,9 @@ AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to
 
 用户可以指定一个后备 DNS 服务器，如果主服务器未能在下一节指定的超时期限内做出响应，DNS 请求将被重新路由到后备服务器。 有三个选项可供选择：
 
-* 不要使用后备服务器；
-* 使用系统默认的服务器；
-* 使用自定义服务器。
+- 不要使用后备服务器；
+- 使用系统默认的服务器；
+- 使用自定义服务器。
 
 ### 拦截 ECH
 

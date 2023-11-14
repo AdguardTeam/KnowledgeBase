@@ -5,7 +5,7 @@ sidebar_position: 6
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 実際に使ってみるには、[AdGuardアプリをダウンロード](https://adguard.com/download.html?auto=true)してください。
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -22,7 +22,6 @@ This error occurs when there's something wrong with permissions. There may be se
 - Reboot your computer. Sometimes the permission issues are temporary and can be solved by restarting the PC.
 
 ### Error 112: Disk is full, Error 1632: Temporary folder full or inaccessible {#error-112}
-
 
 These are two different errors with very similar solutions. As their names suggest, AdGuard installer didn't find enough disk space to complete the installation. There are several things you can attempt to fix the problem:
 

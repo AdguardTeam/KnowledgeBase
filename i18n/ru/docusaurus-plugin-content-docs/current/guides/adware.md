@@ -25,21 +25,21 @@ AdGuard не антивирус. Он может предупредить вас
 
 Возьмём AdwareCleaner в качестве примера. После загрузки и успешной установки приложения выполните следующие действия:
 
-1) Запустите приложение и нажмите **Сканировать сейчас**.
+1. Запустите приложение и нажмите **Сканировать сейчас**.
 
 ![adware1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware1.png)
 
-2) После завершения сканирования вам необходимо отправить подозрительные объекты в **Карантин**.
+1. После завершения сканирования вам необходимо отправить подозрительные объекты в **Карантин**.
 
 ![adware2 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware2.png)
 
-3) Когда они будут перемещены в **Карантин**, вы сможете **Очистить систему** от ненужного мусора.
+1. Когда они будут перемещены в **Карантин**, вы сможете **Очистить систему** от ненужного мусора.
 
-4) В некоторых случаях после завершения очистки может потребоваться **Перезагрузка системы** .
+1. В некоторых случаях после завершения очистки может потребоваться **Перезагрузка системы**.
 
 ![adware3 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware3.png)
 
-5) После перезагрузки системы очистка будет завершена. При необходимости вы всегда можете ознакомиться с отчётом **** о проделанной работе.
+1. После перезагрузки системы очистка будет завершена. При необходимости вы всегда можете ознакомиться с **отчётом** о проделанной работе.
 
 ![adware4 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware4.png)
 
@@ -53,14 +53,14 @@ AdGuard не антивирус. Он может предупредить вас
 
 Ниже приведены инструкции по отключению настроек и расширений для наиболее популярных браузеров:
 
-* [для Google Chrome](https://support.google.com/chrome/answer/187443?hl=ru)
+- [для Google Chrome](https://support.google.com/chrome/answer/187443?hl=ru)
 
-* [для Mozilla Firefox](https://support.mozilla.org/ru/kb/disable-or-remove-add-ons)
+- [для Mozilla Firefox](https://support.mozilla.org/ru/kb/disable-or-remove-add-ons)
 
-* [для Opera](https://help.opera.com/ru/latest/customization/#extensions)
+- [для Opera](https://help.opera.com/ru/latest/customization/#extensions)
 
 ## Как воссоздать ярлыки для браузеров {#shortcuts}
 
-Очень часто вредоносные и рекламные программы устанавливают свою домашнюю страницу очень простым способом — они подменяют ярлык браузера на рабочем столе, панель задач и пункты меню *Start* .
+Very often, malware and adware programs install their homepage in a very simple way — they substitute your browser's desktop shortcut, taskbar and *Start* menu items.
 
 Самое простое решение в этом случае — вручную удалить все ярлыки и создать их заново самостоятельно.

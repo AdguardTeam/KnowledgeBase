@@ -5,7 +5,7 @@ sidebar_position: 10
 
 :::info
 
-Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -19,7 +19,7 @@ Pokud se po neúspěšném pokusu o odstranění pokusíte aplikaci AdGuard znov
 
 Chcete-li tento problém vyřešit, musíte aplikaci odinstalovat pro všechny uživatele: přejděte do Nastavení → Všechny aplikace → AdGuard. Klepněte na tři tečky v pravém horním rohu a vyberte *Odinstalovat pro všechny uživatele*.
 
-![Odinstalovat *mobile_border](https://cdn.adtidy.org/blog/new/tu49hmultiple_users.png)
+![Uninstall *mobile_border](https://cdn.adtidy.org/blog/new/tu49hmultiple_users.png)
 
 ## Problémy způsobené používáním profilu s omezeným režimem
 
@@ -38,28 +38,35 @@ Tento přístup je k dispozici od verze **AdGuardu v3.5 nightly 6**. Pokud použ
 :::
 
 1. Aktivace **Režimu pro vývojáře** a povolení **USB ladění**:
-- V telefonu otevřete **Nastavení**;
-- Přejděte do sekce **Systém** (poslední položka v nabídce). V této sekci vyhledejte podpoložku **Informace o telefonu**;
-- Sedmkrát klepněte na řádek **Číslo sestavení**. Poté se zobrazí oznámení **Nyní jste vývojářem** (v případě potřeby zadejte kód pro odemčení zařízení);
-- Otevřete **Nastavení systému** → **Možnosti pro vývojáře** → přejeďte dolů a zapněte **USB ladění** → po pečlivém přečtení varování potvrďte, že je ladění povoleno v okně **Povolit ladění USB**.
 
-:::note
+    - V telefonu otevřete **Nastavení**;
+    - Přejděte do sekce **Systém** (poslední položka v nabídce). V této sekci vyhledejte podpoložku **Informace o telefonu**;
+    - Sedmkrát klepněte na řádek **Číslo sestavení**. Poté se zobrazí oznámení **Nyní jste vývojářem** (v případě potřeby zadejte kód pro odemčení zařízení);
+    - Otevřete **Nastavení systému** → **Možnosti pro vývojáře** → přejeďte dolů a zapněte **USB ladění** → po pečlivém přečtení varování potvrďte, že je ladění povoleno v okně **Povolit ladění USB**.
 
-Pokud máte nějaké potíže nebo otázky, úplné pokyny naleznete [zde](https://developer.android.com/studio/debug/dev-options).
+    :::note
+
+    Pokud máte nějaké potíže nebo otázky, úplné pokyny naleznete [zde](https://developer.android.com/studio/debug/dev-options).
+
 
 :::
 
-2. [Instalace a konfigurace](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; Na platformě Windows mohou majitelé zařízení **Samsung** potřebovat nainstalovat [tento nástroj](https://developer.samsung.com/mobile/android-usb-driver.html).
-3. Připojte zařízení pomocí **USB kabelu** k počítači nebo notebooku, na který jste nainstalovali **ADB**;
-4. Otevřete **příkazový řádek** v počítači:
-- **Cmd.exe**, pokud používáte **Windows**;
-- **Terminal**, pokud používáte **macOS**;
-5. Zadejet příkaz `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` a stiskněte **Enter**.
+1. [Instalace a konfigurace](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; Na platformě Windows mohou majitelé zařízení **Samsung** potřebovat nainstalovat [tento nástroj](https://developer.samsung.com/mobile/android-usb-driver.html).
+
+1. Připojte zařízení pomocí **USB kabelu** k počítači nebo notebooku, na který jste nainstalovali **ADB**;
+
+1. Otevřete **příkazový řádek** v počítači:
+
+    - **Cmd.exe**, pokud používáte **Windows**;
+    - **Terminal**, pokud používáte **macOS**;
+
+1. Zadejet příkaz `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` a stiskněte **Enter**.
 
 ### Možnost 2: Odebrání *Uživatelského účtu s omezeným přístupem*
 
 Informace o tom, jak spravovat uživatelské účty ze zařízení s Androidem, [naleznete zde](https://support.google.com/a/answer/6223444?hl=en).
-> :::note
+
+:::note
 
 V některých případech jsou uživatelské účty s omezeným přístupem vytvořeny implicitně a nelze je odstranit. Například při používání funkcí Duální Messenger nebo Duální aplikace na zařízeních **Samsung** nebo **LG**. Níže si přečtěte, jak v těchto případech problém vyřešit.
 
@@ -89,5 +96,3 @@ S podobným problémem se mohou setkat také majitelé telefonů **LG** nebo **S
 - Přejeďte dolů a stiskněte **Duální aplikace**;
 - Odeberte všechny aplikace ze seznamu;
 - Restartujte zařízení.
-
-

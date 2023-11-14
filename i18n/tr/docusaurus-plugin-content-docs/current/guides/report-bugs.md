@@ -19,12 +19,12 @@ Check if the bug hasn’t been reported before. We advise paying attention to bo
 
 Try to provide as many details as possible — that'll make it easier for us to reproduce the bug and figure out how to fix it. Here’s what we’re expecting to see in a bug report:
 
-* Your app version
-* Your OS version
-* When you noticed the problem
-* What you were doing or what happened to the app before you noticed the problem. Steps to reproduce it
-* Whether it recurred and with what frequency
-* Whether you have a VPN or an antivirus software
+- Your app version
+- Your OS version
+- When you noticed the problem
+- What you were doing or what happened to the app before you noticed the problem. Steps to reproduce it
+- Whether it recurred and with what frequency
+- Whether you have a VPN or an antivirus software
 
 ### How to collect logs
 
@@ -40,10 +40,9 @@ If you want to support the implementation of a new feature or bugfix, you can vo
 
 You can find reactions in the upper right corner or at the bottom of an issue.
 
-
 ## Instructions for all platforms
 
-### AdGuard for Windows
+### Windows için AdGuard
 
 1. Check out the [Windows repo](https://github.com/AdguardTeam/AdGuardforWindows/issues) to make sure the issue hasn’t been reported yet.
 
@@ -53,7 +52,7 @@ You can find reactions in the upper right corner or at the bottom of an issue.
 
 ![Reporting a bug via GitHub *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows_gh.png)
 
-### AdGuard for Mac
+### Mac için AdGuard
 
 1. Check out the [Mac repo](https://github.com/AdguardTeam/AdGuardforMac/issues) to make sure the issue hasn’t been reported yet.
 
@@ -61,7 +60,7 @@ You can find reactions in the upper right corner or at the bottom of an issue.
 
 3. Fill out the form. If possible, attach screenshots or a screen recording.
 
-### AdGuard for Android
+### Android için AdGuard
 
 1. Check out the [Android repo](https://github.com/AdguardTeam/AdGuardforAndroid/issues) to make sure the issue hasn’t been reported yet.
 
@@ -69,7 +68,7 @@ You can find reactions in the upper right corner or at the bottom of an issue.
 
 3. Fill out the form. If possible, attach screenshots or a screen recording.
 
-### AdGuard for iOS
+### iOS için AdGuard
 
 1. Check out the [iOS repo](https://github.com/AdguardTeam/AdGuardforiOS/issues) to make sure the issue hasn’t been reported yet.
 
@@ -85,7 +84,7 @@ You can find reactions in the upper right corner or at the bottom of an issue.
 
 3. Fill out the form. If possible, attach screenshots or a screen recording.
 
-### AdGuard for Safari
+### Safari için AdGuard
 
 1. Check out the [Safari repo](https://github.com/AdguardTeam/AdGuardForSafari/issues) to make sure the issue hasn’t been reported yet.
 

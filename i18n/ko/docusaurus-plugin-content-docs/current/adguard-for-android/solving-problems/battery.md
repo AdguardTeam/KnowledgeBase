@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-이 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Android용 AdGuard에 대해 다룹니다. 어떻게 동작하는지 알고 싶으시다면 [AdGuard 앱을 다운로드](https://adguard.com/download.html?auto=true) 해 보세요.
+이 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Android용 AdGuard에 대해 다룹니다. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -27,32 +27,34 @@ Inside you will find a chart that shows the AdGuard battery resource consumption
 
 First, let us lay down a bit of theory and links with necessary data.
 
-1. Android는 모든 제조업체에서 제공하는 소위 ‘전력 프로필’을 기준으로 트래픽 소비를 유도합니다: <https://source.android.com/devices/tech/power/values.html>
+1. Android derives traffic consumption judging on so-called Power Profile, which is given by every manufacturer: <https://source.android.com/devices/tech/power/values.html>
 
-2. 전원 프로필의 주 사항은 기기의 모든 구성 요소에 대한 배터리 소모량을 정의하는 mAh 값들입니다: <https://source.android.com/devices/tech/power/values.html>
+1. Main part of Power Profile is a set of values in mAh which define battery consumption for every component of the device: <https://source.android.com/devices/tech/power/values.html>
 
-예를 들어, 위 표에서
+    For example, from the table above:
 
-_wifi.active=_ WiFi 데이터 교환으로 인한 mAh 단위의 추가 소비량은 31mA입니다.
+    *wifi.active=* 31mA additional consumption in mAh caused by WiFi data exchange.
 
-_radio.active=_ 모바일 네트워크를 통한 데이터 교환으로 인한 100~300mA 추가 소비량
+    *radio.active=* 100-300mA additional consumption in mAh caused by data exchange over Mobile network.
 
-_cpu.active=_ CPU 사용으로 인한 100~200mA 추가 소비량 (mAh)
+    *cpu.active=* 100-200mA additional consumption in mAh caused by CPU work.
 
-3. AdGuard는 트래픽을 거의 소비하지 않으므로 배터리 리소스 소비를 평가하기 위해 '모바일/WiFi 패킷'을 제거하고 'CPU'에 집중합시다.
+1. AdGuard by itself almost doesn't consume any traffic, so for the sake of evaluating battery resource consumption let's get rid of 'Mobile/WiFi packets' and stcik to 'CPU'.
 
-소비량 계산 공식
-> "CPU TIME (ms)" X "cpu.active" / (60 60 1000) = "POWER USE mAh"
+    Formula to calculate the consumption:
 
-이 공식에 숫자를 대입합니다.
+    > "CPU TIME (ms)" X "cpu.active" / (60 *60* 1000) = "POWER USE mAh"
 
-두 번째 스크린샷에서 총 CPU를 밀리초(506000)로 변환해 보겠습니다.
+    Let's put real numbers into this formula.
 
-2GHz에 대한 _cpu.active_ 계수는 대략 225mAh와 같습니다.
+    Let's take *CPU total* from the second screenshot and convert into milliseconds: 506000
 
-결과
-> 506000 225 / (60 60 * 1000) = 31,625mAh
+    A coefficient *cpu.active* for 2GHz will be roughly equal to 225mAh
+
+    Final result:
+
+    > 506000 *225 / (60* 60 * 1000) = 31,625mAh
 
 ### 결론
 
-실제 소비는 Android 통계에 표시된 것보다 **몇 배나 적습니다**. 220mAh 대신 31~40mAh 정도입니다. 반면 브라우저의 소비량은 66mAh가 아니라 ~ 200mAh 입니다.
+Real consumption is **several times less** than it is shown in Android statistics. Instead of 220mAh it should be somewhere around 31-40mAh. On the other hand, browser's consumption should be not 66mAh, but ~200mAh.

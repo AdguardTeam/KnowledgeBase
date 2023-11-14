@@ -5,7 +5,7 @@ sidebar_position: 7
 
 :::info
 
-本文适用于安卓版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 要了解工作原理， 请[下载 AdGuard 应用程序](https://adguard.com/download.html?auto=true)
+本文适用于安卓版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -17,15 +17,15 @@ sidebar_position: 7
 
 1. Open the YouTube app and start the video you want to watch.
 
-2. Tap the *Share* button.
+1. Tap the *Share* button.
 
-![Share to YouTube step 1 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step1.png)
+    ![Share to YouTube step 1 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step1.png)
 
-3. Select *AdGuard* from the list of apps.
+1. Select *AdGuard* from the list of apps.
 
-![Share to YouTube step 2 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step2.png)
+    ![Share to YouTube step 2 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step2.png)
 
-完成！ 在新视窗里您就可以观看无广告的视频。
+That's it! A new window with the video will open where you'll be able to watch it without being interrupted by ads.
 
 ## Watch YouTube in a browser
 

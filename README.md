@@ -27,11 +27,25 @@ Then you should open Terminal on your computer, navigate to the directory where 
 
 - `yarn install`
 
+### Lint markdown
+
+This command lints the markdown and outputs any errors to the console:
+
+- `yarn lint:md`
+
+Some of errors can be fixed automatically:
+
+- `yarn lint:md --fix`
+
+VSCode users can install the [markdownlint extension][vscode-markdownlint] to see the errors in the editor.
+
 ### Run it locally
 
 - `yarn start`
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+This command [lints markdown syntax](#lint-markdown),
+and if there is no markdownlint errors starts a local development server and opens up a browser window.
+Most changes are reflected live without having to restart the server.
 
 ## How to build
 
@@ -47,3 +61,5 @@ Here's how you can debug translations locally.
 
 1. Download translations: `CROWDIN_PERSONAL_TOKEN="YOURTOKEN" yarn run crowdin download`
 2. Run Docusaurus with the language of your choice: `yarn run start -- --locale de`
+
+[vscode-markdownlint]: https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint

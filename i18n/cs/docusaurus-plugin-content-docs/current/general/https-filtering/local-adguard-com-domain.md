@@ -17,10 +17,10 @@ Co se ale děje a proč? Níže si přečtěte technické vysvětlení.
 
 **Proč k tomu potřebujeme skutečnou IP adresu?**
 
-* Nemůžeme použít adresu `127.0.0.1`, protože ji prohlížeče neakceptují.
-* Použití některé IP adresy z privátních podsítí je možné, ale toto řešení má dvě nevýhody.
-    * Zaprvé, existuje malá pravděpodobnost, že dojde ke křížení se stávající intranetovou službou a narušení přístupu k ní.
-    * Za druhé, některé DNS servery to mohou považovat za útok na opětovné svázání DNS a odmítnout odpovědět na `local.adguard.org`.
+- Nemůžeme použít adresu `127.0.0.1`, protože ji prohlížeče neakceptují.
+- Použití některé IP adresy z privátních podsítí je možné, ale toto řešení má dvě nevýhody.
+    - Zaprvé, existuje malá pravděpodobnost, že dojde ke křížení se stávající intranetovou službou a narušení přístupu k ní.
+    - Za druhé, některé DNS servery to mohou považovat za útok na opětovné svázání DNS a odmítnout odpovědět na `local.adguard.org`.
 
 ### Ověření
 

@@ -1,72 +1,86 @@
 ---
-title: Manual installation of the security certificate into the Firefox browser
+title: Güvenlik sertifikasının Firefox tarayıcısına elle yükleme
 sidebar_position: 11
 ---
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Android için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true).
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Android için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock).
 
 :::
 
-For AdGuard to successfully filter HTTPS traffic in Firefox, the browser needs to trust AdGuard's certificate. It can be achieved differently for different versions of the Firefox.
+AdGuard'ın Firefox'ta HTTPS trafiğini başarılı bir şekilde filtrelemesi için tarayıcının AdGuard sertifikasına güvenmesi gerekir. Firefox'un farklı sürümleri için farklı şekilde elde edilebilir.
 
 ### Method 1
 
-:::note
+:::not
 
-This method works in Firefox for Android version 90.0 and later.
+Bu yöntem, Android için Firefox'un 90.0 ve üzeri sürümlerinde çalışır.
 
 :::
 
-To make Firefox trust the AdGuard certificate, do the following:
+Firefox'un AdGuard sertifikasına güvenmesini sağlamak için aşağıdakileri yapın:
 
 1. Tarayıcıyı çalıştırın.
-2. Go to **Settings** → **About Firefox**.
 
-![Firefox hakkında *mobil](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
+1. **Ayarlar** → **Firefox Hakkında** öğesine gidin.
 
-3. Firefox logosuna beş kez dokunun.
-4. Navigate to **Settings** → **Secret Settings**.
+    ![Firefox hakkında *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
 
-![Secret Settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
+1. Firefox logosuna beş kez dokunun.
 
-5. Toggle **Use third party CA certificates**.
+1. **Ayarlar** → **Gizli Ayarlar** öğesine gidin.
+
+    ![Gizli Ayarlar *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
+
+1. Toggle **Use third party CA certificates**.
 
 ### Method 2
 
-:::note
+:::not
 
 Bu yöntem yalnızca **rootlu** cihazlarda çalışır.
 
 :::
 
 1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
-2. **Geliştirici modunu** etkinleştirin ve **USB hata ayıklamayı** etkinleştirin:
+
+1. **Geliştirici modunu** etkinleştirin ve **USB hata ayıklama** öğesini etkinleştirin:
+
     - Telefonunuzda **Ayarlar** uygulamasını açın;
     - **Sistem** bölümüne gidin (ayarlar menüsündeki son öğe). Bu bölümde **Telefon hakkında** alt öğesini bulun;
     - **Yapı numarası** satırına 7 kez dokunun. Bundan sonra, artık **Bir geliştirici olduğunuza dair** bir bildirim alırsınız (Gerekirse, cihaz için bir kilit açma kodu girin);
-    - **Sistem Ayarları** → **Geliştirici Seçenekleri** öğesini açın → Aşağı kaydırın ve **USB hata ayıklaması** öğesini etkinleştirin → Uyarıyı dikkatlice okuduktan sonra **USB hata ayıklamasına izin ver** penceresinde hata ayıklamanın etkinleştirildiğini onaylayın.
-3. Install the [Firefox](https://www.mozilla.org/en-US/firefox/releases/) browser (release version);
-4. Open the **AdGuard settings** (gear icon in the bottom right corner) → **Filtering** → **Network** → **HTTPS filtering** → **Security certificate** → **Instructions for Firefox** → **Install for old versions**;
-5. Open the folder `data/data/org.mozilla.firefox/files/mozilla` using `adb shell su` and `cd data/data/...`, then browse to the folder named `xxxxxxx.default` and memorize its name;
-6. Belirtilen klasörde iki dosya ile ilgileniyoruz:
+    - **Sistem Ayarları** → **Geliştirici Seçenekleri** öğesini açın → Aşağı kaydırın ve **USB hata ayıklama** öğesini etkinleştirin → Uyarıyı dikkatlice okuduktan sonra **USB hata ayıklamasına izin ver** penceresinde hata ayıklamanın etkinleştirildiğini onaylayın.
+
+1. Install the [Firefox](https://www.mozilla.org/en-US/firefox/releases/) browser (release version);
+
+1. Open the **AdGuard settings** (gear icon in the bottom right corner) → **Filtering** → **Network** → **HTTPS filtering** → **Security certificate** → **Instructions for Firefox** → **Install for old versions**;
+
+1. Open the folder `data/data/org.mozilla.firefox/files/mozilla` using `adb shell su` and `cd data/data/...`, then browse to the folder named `xxxxxxx.default` and memorize its name;
+
+1. Belirtilen klasörde iki dosya ile ilgileniyoruz:
+
     - `cert9.db`
     - `key4.db`
-7. We need to move these files to a folder of the browser where the security certificate issue occurred:
-- `data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyy.default`.
-8. Tam komut şöyle görünür:
+
+1. We need to move these files to a folder of the browser where the security certificate issue occurred:
+
+    - `data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyy.default`.
+
+1. Tam komut şöyle görünür:
+
     - `adb shell su`
     - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxxx.default/cert9.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
     - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxxx.default/key4.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
 
-In case you received the system notification **permission denied**, you should first move the specified files to the permission-free directory. And after that you should move them to the necessary folder in your Firefox browser.
+    In case you received the system notification **permission denied**, you should first move the specified files to the permission-free directory. Bundan sonra bunları Firefox tarayıcınızda gerekli klasöre taşımalısınız.
 
-The full command should look something like this:
-- `adb shell su`
-- `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxx.default/cert9.db sdcard/Download`
-- `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxx.default/key4.db sdcard/Download`
-- `cp -R sdcard/Download/cert9.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
-- `cp -R sdcard/Download/key4.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
+    Tam komut şöyle görünmelidir:
 
-If `adb shell su` does not work, you should try `adb shell` initially, and then `su`.
+    - `adb shell su`
+    - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxx.default/cert9.db sdcard/Download`
+    - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxx.default/key4.db sdcard/Download`
+    - `cp -R sdcard/Download/cert9.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
+    - `cp -R sdcard/Download/key4.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
+
+    `adb shell su` çalışmazsa, önce `adb shell` ve ardından `su` denemelisiniz.

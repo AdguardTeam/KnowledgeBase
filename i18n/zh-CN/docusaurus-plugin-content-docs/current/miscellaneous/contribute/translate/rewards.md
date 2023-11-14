@@ -9,9 +9,9 @@ sidebar_position: 6
 
 如您想查看自己翻译进度，请打开您所翻译的项目，点击*「报告」*（Reports）标签，选择*「我的贡献」*（My Contribution）。 您可以把不同项目中的翻译字数加起来，即可申请一个许可证。
 
-**以下是我们的奖励系统的详情：**
+## Here’s how our reward system works
 
-```
+```text
 翻译 500 个字后，可以获取 AdGuard 一年许可证；
 翻译 1,000 字（总共 1,500 字）后，可以获取第二个许可证；
 往后，每个许可证都对应1500 字的翻译。
@@ -20,8 +20,9 @@ sidebar_position: 6
 所有后续的订阅或续订也都为 2500 字。
 
 ```
-请通过邮件 [translate@adguard.com](mailto:translate@adguard.com) 告诉我们你的努力成果，即可收到我们表示感谢的许可证。
 
-除此之外，几位最辛勤的译员有可能在未来获得审核员身份。更高的身份代表着更多责任，但也代表会有更多表示感谢的礼品。
+Just send us a request to [translate@adguard.com](mailto:translate@adguard.com) and you’ll get the license as a token of our gratitude.
 
-每年我们都会向我们活跃的审核员赠送带有 AdGuard 标志的礼物。 如果你想，请发邮件 [translate@adguard.com](mailto:translate@adguard.com) 让我们知道。
+Besides, the most active translators may receive proofreader status in the future, should they express such an intention, and that promises even more good stuff.
+
+Every year we present gifts with the AdGuard logo to our active proofreaders. If you want to become one of them, please write to [translate@adguard.com](mailto:translate@adguard.com).

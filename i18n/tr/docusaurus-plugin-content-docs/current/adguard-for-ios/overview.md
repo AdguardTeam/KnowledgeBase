@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan iOS için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan iOS için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -29,7 +29,7 @@ Keep all content blockers enabled for the best filtering quality.
 
 :::
 
-### Filters {#filters}
+### Filtreler {#filters}
 
 Content blockers' work is based on filters, also sometimes referred to as filter lists. Each filter is a list of filtering rules. If you have an enabled ad blocker when browsing, it constantly checks the visited pages and elements on them against these filtering rules, and blocks anything that matches. Reklamları, izleyicileri ve daha fazlasını engellemek için kurallar geliştirilmiştir.
 
@@ -39,7 +39,7 @@ Tüm filtreler içerikli kategoriler hâlinde gruplandırılmıştır. To see th
 
 There are eight of them, each category unites several filters that serve and share a common purpose, i.e. blocking ads, social media widgets, cookie notices, protecting the user from online scams. To decide which filters suit your needs, read their descriptions and navigate by the labels (`ads`, `privacy`, `recommended`, etc.).
 
-:::note
+:::not
 
 Daha fazla filtrenin etkin olması daha az reklam olacağını garanti etmez. Aynı anda etkinleştirilen çok sayıda çeşitli filtre, reklam engellemenin kalitesini düşürür.
 
@@ -55,7 +55,7 @@ Learn [how to create your own ad filters](/general/ad-filtering/create-own-filte
 
 ![Kullanıcı kuralları ekranı *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/user_rules_en.jpeg)
 
-### Allowlist {#allowlist}
+### İzin listesi {#allowlist}
 
 *Safari koruması* ekranının üçüncü bölümü. Belirli bir sitede reklam engellemeyi devre dışı bırakmak istiyorsanız, İzin listesi size yardımcı olacaktır. İstisnalara alan adları ve alt alt alan adları eklemenize olanak tanır. iOS için AdGuard'ın bir İçe ve Dışa aktarma özelliği vardır, böylece bir cihazdaki izin listesi kolayca başka bir cihaza aktarılabilir.
 
@@ -63,7 +63,7 @@ Learn [how to create your own ad filters](/general/ad-filtering/create-own-filte
 
 [DNS koruma modülü](https://adguard-dns.io/kb/general/dns-filtering/), DNS trafiğinizi şifreleyerek gizliliğinizi artırır. Safari içerik engellemenin aksine, DNS koruması sistem genelinde, yani Safari'nin ötesinde, uygulamalarda ve diğer tarayıcılarda çalışır. Bu modülü kullanabilmeniz için önce etkinleştirmeniz gerekir. Bunu ana ekranda ekranın üst kısmındaki kalkan simgesine dokunarak veya *Koruma* → *DNS koruması* sekmesine giderek yapabilirsiniz.
 
-:::note
+:::not
 
 DNS ayarlarını yönetebilmek için AdGuard uygulamaları yerel bir VPN kurulmasını gerektirir. Trafiğinizi herhangi bir uzak sunucu üzerinden yönlendirmez. Nevertheless, the system will ask you to confirm access permission.
 
@@ -119,7 +119,7 @@ In iOS 15 Apple has added the support for Safari Web Extensions, and we in turn 
 
 To enable *Advanced protection*, open the *Protection* tab by tapping the second left icon at the bottom of the screen, select the *Advanced protection* module, activate the feature by toggling the switch slider, and follow the instructions below.
 
-:::note
+:::not
 
 The *Advanced protection* only works on iOS 15 and later versions. If you are using earlier versions of iOS, you will see the *YouTube ad blocking* module in the app instead of the *Advanced protection*.
 
@@ -159,7 +159,7 @@ This is where AdGuard displays statistics about the device's DNS requests, such 
 
 Below is the *Recent activity* feed. AdGuard stores the last 1500 DNS requests that have originated on your device and shows their attributes such as protocol type and target domain.
 
-:::note
+:::not
 
 AdGuard does not send this information anywhere. It is 100% local and does not leave your device.
 
@@ -192,6 +192,7 @@ For any DNS query sent to get an IPv6 address, our app returns an empty response
 Fallback is a backup DNS server. If you chose a DNS server and something happened to it, a fallback is needed to set the backup DNS server until the main server responds.
 
 With Bootstrap, it’s a little more complicated. For AdGuard for iOS to use a custom secure DNS server, our app needs to get its IP address first. For this purpose, the system DNS is used by default, but sometimes this is not possible for various reasons. In such cases, Bootstrap could be used to get the IP address of the selected secure DNS server. Here are two examples to illustrate when a custom Bootstrap server might help:
+
 1. When a system default DNS server does not return the IP address of a secure DNS server and it is not possible to use a secure one.
 2. When our app and third-party VPN are used simultaneously and it is not possible to use System DNS as a Bootstrap.
 
@@ -237,6 +238,6 @@ This option will reset all your settings.
 
 Use this option to contact support, report a missed ad (although we advise to use the Assistant or AdGuard's Safari Web extension for your own convenience), export logs or to make a feature request.
 
-- **About**
+- **Hakkında**
 
 Contains the current version of the app and an assortment of rarely needed options and links.
