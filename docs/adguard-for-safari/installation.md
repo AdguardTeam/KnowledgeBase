@@ -31,7 +31,7 @@ AdGuard for Safari is a free app presented on the App Store. To install it on yo
 
     ![Extensions checked](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-extensions-checked.png)
 
-1. To make Adguard take effects on websites, *content blocker* setting must be enabled. you can either enable for all website or select those ones you want.
+1. To make AdGuard take effects on websites, the *Content Blockers* setting must be enabled. You can either enable for all websites or select the ones you want.
 
     :::note
 
