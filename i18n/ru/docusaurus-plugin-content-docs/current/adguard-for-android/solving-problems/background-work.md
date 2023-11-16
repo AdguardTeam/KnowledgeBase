@@ -125,7 +125,7 @@ sidebar_position: 9
 
 Чтобы настроить фоновую работу AdGuard для устройств Xiaomi, обратите внимание на пункты Батарея и Разрешения.
 
-- Tap the **Recent tasks** button and swipe AdGuard down to make options *visible* (as shown on the screenshot):
+- Нажмите на кнопку **Недавние задачи** и смахните AdGuard вниз, чтобы сделать опции *видимыми* (как показано на скриншоте):
 
     ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomirecent.png)
 
@@ -197,25 +197,25 @@ sidebar_position: 9
 
 ### Android 9 и 10
 
-- Go to **Phone settings** → **Device care** → Tap on the **Battery** item → (⁝) **3-dot menu** → **Settings** and uncheck **Put unused apps to sleep** and **Auto-disable unused apps**.
+- Откройте **Настройки телефона** → **Обслуживание устройства** → нажмите на виджет **Батарея** → **трёхточечное меню** (⁝) → **Настройки** и отключите функции **Перевод в режим сна** и **Автооключение приложений**.
 
-- Check that **Phone settings** → **Apps** → **Sleep as Android** → **Battery** → **Background restriction** is set to **App can use battery in background** for AdGuard.
+- Предоставьте AdGuard право расходовать заряд батареи в фоновом режиме. Откройте **Настройки телефона** → **Приложения** → **AdGuard** → **Батарея** → активируйте **Разрешение фоновой деятельности**.
 
-- Remove AdGuard from Sleeping apps. Для этого:
+- Удалите AdGuard из спящих приложений. Для этого:
 
     1. Перейдите в **Настройки телефона** → **Обслуживание устройства**
 
         ![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung1en.png)
 
-    1. Tap **Battery**
+    1. Нажмите **Батарея**
 
         ![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung2en.png)
 
-    1. Tap the **3-dot menu** → **Settings**
+    1. Нажмите на **иконку меню в виде трёх точек** → ** Настройки**
 
         ![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung3en.png)
 
-    1. Tap **Sleeping apps**
+    1. Нажмите на **Приложения в спящем режиме**
 
         ![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung45en.png)
 
@@ -235,7 +235,7 @@ sidebar_position: 9
 
  ![Настройки Samsung *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_2.png)
 
-- Tap on the lock icon
+- Нажмите на значок замка
 
  ![Настройки Samsung *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_3.png)
 
@@ -247,7 +247,7 @@ Huawei и их кастомизация Android **EMUI** относятся к �
 
 На некоторых устройствах эта функция может быть недоступна или названа по-другому.
 
-1. Go to phone **Settings** → **Battery** → **App launch**
+1. Перейдите в **Настройки телефона** → **Батарея** → **Запуск приложений**
 
     ![Huawei *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/huawei1en.png)
 
@@ -255,7 +255,7 @@ Huawei и их кастомизация Android **EMUI** относятся к �
 
     ![Huawei *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/huawei2en.png)
 
-1. Set AdGuard to **Manage manually** and enable all toggles.
+1. Установите для AdGuard значение **Управлять вручную** и включите все опции.
 
     ![Huawei *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/huawei3en.png)
 
@@ -275,27 +275,27 @@ Huawei и их кастомизация Android **EMUI** относятся к �
 
 Huawei чрезвычайно изобретательны в оптимизации работы приложений на своих устройствах. В дополнение ко всем нестандартным мерам управления питанием, описанным ниже, они представили приложение-менеджер процессов, встроенное прямо в EMUI 9 на Android Pie.
 
-It is called **PowerGenie** and it kills all apps that are not on its whitelist. You cannot add custom apps on their pre-defined whitelist. Это означает, что удаление Power Genie — единственный способ наладить нормальное функционирование приложений на Huawei.
+Оно называется **PowerGenie** и «убивает» все приложения не из его белого списка. Вы не можете добавлять собственные приложения в предварительно составленный белый список. Это означает, что удаление Power Genie — единственный способ наладить нормальное функционирование приложений на Huawei.
 
 К сожалению, это системное приложение, которое можно полностью удалить только с помощью ADB (Android Debug Bridge).
 
 :::note Источник
 
-[XDA forum](https://forum.xda-developers.com/mate-20-pro/themes/remove-powergenie-to-allow-background-t3890409).
+[Форум XDA](https://forum.xda-developers.com/mate-20-pro/themes/remove-powergenie-to-allow-background-t3890409).
 
 :::
 
-**You need to**:
+**Вам нужно**:
 
-Это не подтверждено, но возможно просто отключить PowerGenie, перейдя в **Настройки телефона** → **Приложения**. Если эта настройка есть на вашем устройстве, можете пропустить следующие шаги. However, it would need to be re-applied every time you reboot your device. Если такой настройки нет, следуйте этой инструкции:
+Это не подтверждено, но возможно просто отключить PowerGenie, перейдя в **Настройки телефона** → **Приложения**. Если эта настройка есть на вашем устройстве, можете пропустить следующие шаги. Но её необходимо будет повторно применять каждый раз при перезагрузке устройства. Если такой настройки нет, следуйте этой инструкции:
 
-1. [Install ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer;
+1. [Установите ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) на ваш компьютер;
 
-1. Connect your phone with a data cable;
+1. Подключите телефон с помощью кабеля передачи данных;
 
-1. Enable [Developer options](https://developer.android.com/studio/debug/dev-options.html);
+1. Включите [Параметры разработчика](https://developer.android.com/studio/debug/dev-options.html);
 
-1. Enable **USB debugging** within Developer options on your phone;
+1. Включите **отладку через USB** в Параметрах разработчика на телефоне;
 
 1. Run the following commands on your computer:
 
@@ -309,10 +309,10 @@ It is called **PowerGenie** and it kills all apps that are not on its whitelist.
 
 ### Устройства с EMUI 6+ (и некоторые устройства с EMUI 5)
 
-- **Phone settings** → **Advanced Settings** → **Battery manager** → **Power plan** set to **Performance**;
-- **Phone Settings** → **Advanced Settings** → **Battery Manager** → **Protected apps** — set AdGuard as **Protected**;
-- **Phone Settings** → **Apps** → **Your app** → **Battery** → **Power-intensive prompt** `[uncheck]` and **Keep running after screen off** `[check]`;
-- **Phone settings** → **Apps** → **Advanced (At the bottom)** → **Ignore optimizations** → Press Allowed → **All apps** → Find AdGuard on the list and set to **Allow**.
+- **Настройки устройства** → **Расширенные настройки** → **Диспетчер батареи** → **План электропитания** установлен на **Производительность**;
+- **Настройки устройства** → **Расширенные настройки** **Диспетчер батареи** → **Защищённые приложения** — добавьте AdGuard в **Защищённые**;
+- **Настройки устройства** → **Приложения** → **Ваше приложение** → **Батарея** → **Энергосберегающая подсказка** `[убрать галочку]` и ** Продолжить работу после выключения экрана** `[поставить галочку]`;
+- **Настройки устройства** → **Приложения** → **Расширенные (внизу)** → **Игнорировать оптимизацию батареи** → Нажмите «Разрешено» → **Все приложения** → Найдите AdGuard в списке и выберите **Разрешить**.
 
 #### Huawei P9 Plus
 
@@ -334,16 +334,16 @@ It is called **PowerGenie** and it kills all apps that are not on its whitelist.
 
     ![Недавние приложения Huawei *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweirecentapps.jpeg)
 
-- Tap on the lock icon:
+- Нажмите на значок замка:
 
     ![Закрепить Huawei *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweilock.jpeg)
 
 Кроме того, чтобы более эффективно настроить фоновую работу AdGuard, вам следует открыть настройки устройства и сделать следующее:
 
-- Go to **Settings** → open **Battery Manager** → set **Power plan** to **Performance**;
-- Then choose **Protected apps** in the **Battery Manager** and check if AdGuard is Protected;
-- Go to **Apps** in the main settings and click AdGuard there → choose **Battery** → enable **Power-intensive prompt** and **Keep running after screen is off**;
-- Then in the **Apps** section open **Settings** (at the bottom) → **Special access** → choose **Ignore battery optimization** → press **Allowed** → **All apps** → find AdGuard on the list and set it to **Deny**.
+- Откройте **Настройки** → затем **Менеджер батареи** → в **Управлении питанием** выберите **Производительность**;
+- Затем выберите **Защищённые приложения** в разделе **Менеджер батареи** и проверьте, есть ли среди них AdGuard;
+- Откройте раздел **Приложения** в основных настройках и выберите AdGuard → затем **Батарея** → активируйте опции **Сообщать об энергоёмкости** и **Работа при выключенном экране**;
+- Затем в разделе **Приложения** откройте **Настройки** (внизу экрана) → **Специальный доступ** → выберите **Игнорировать оптимизацию батареи** → нажмите **Разрешить** → **Все приложения** → найдите AdGuard в списке и выберите **Запретить**.
 
 ## Meizu
 
@@ -383,13 +383,13 @@ It is called **PowerGenie** and it kills all apps that are not on its whitelist.
 
 1. Включите **отладку через USB** в Параметрах разработчика на телефоне;
 
-1. Grant MacroDroid (or your choice of automation app) the ability to write to the global settings store by entering this command:
+1. Предоставьте MacroDroid (или выбранному вами приложению автоматизации) возможность делать записи в хранилище глобальных настроек, введя эту команду:
 
     `adb shell pm grant com.arlosoft.macrodroid android.permission.WRITE_SECURE_SETTINGS`
 
-1. Create a task triggered at **Device Boot** that performs the following:
+1. Создайте задачу, запускаемую при **Загрузке устройства**, которая выполняет следующее:
 
-    - System Setting: type **Global**, name `setting.duraspeed.enabled`, value **-1**
+    - Системная настройка: type **Global**, name `setting.duraspeed.enabled`, value **-1**
     - Системная настройка: type **System**, name `setting.duraspeed.enabled`, value **-1**
     - Системная настройка: type **Global**, name `setting.duraspeed.enabled`, value **0**
     - Системная настройка: type **System**, name `setting.duraspeed.enabled`, value **0**
@@ -415,15 +415,15 @@ It is called **PowerGenie** and it kills all apps that are not on its whitelist.
 
 An alternative, more permanent solution for more tech-savvy users:
 
-1. [Install ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer;
+1. [Установите ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) на ваш компьютер;
 
-1. Connect your phone with a data cable;
+1. Подключите телефон с помощью кабеля передачи данных;
 
-1. Enable [Developer options](https://developer.android.com/studio/debug/dev-options.html);
+1. Включите [Параметры разработчика](https://developer.android.com/studio/debug/dev-options.html);
 
-1. Enable **USB debugging** within Developer options on your phone;
+1. Включите **отладку через USB** в Параметрах разработчика на телефоне;
 
-1. Uninstall the **com.evenwell.powersaving.g3** package via the following adb commands:
+1. Удалите файл **com.evenwell.powersaving.g3** с помощью следующих команд adb:
 
     `adb shell` `pm uninstall --user 0 com.evenwell.powersaving.g3`
 
@@ -436,8 +436,8 @@ An alternative, more permanent solution for more tech-savvy users:
 Другие решения:
 
 - Закрепите AdGuard в меню последних действий
-- Enable AdGuard in the app list inside the security app’s "startup manager" and "floating app list" (com.coloros.safecenter / com.coloros.safecenter.permission.Permission)
-- Turn off battery optimizations
+- Добавьте AdGuard в список приложений в «менеджере запуска» и «плавающем списке приложений» (com.coloros.safecenter / com.coloros.safecenter.permission.Permission)
+- Отключите оптимизацию батареи
 
 ## OnePlus
 
@@ -459,7 +459,7 @@ An alternative, more permanent solution for more tech-savvy users:
 
     ![Onepluslock *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/android/onepluslock.png)
 
-- Lock AdGuard app:
+- Закрепить приложение AdGuard:
 
     ![Oneplusdots *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/android/oneplusdots.png)
 
@@ -473,7 +473,7 @@ An alternative, more permanent solution for more tech-savvy users:
 
 - Откройте настройки устройства → **Батарея** → **Оптимизация батареи** → откройте список **Все приложения** (верхнее меню) → выберите AdGuard → активируйте функцию **Не оптимизировать**
 
-- Open device settings → **Battery** → **Battery Optimization** → (⁝) three-dot menu → **Advanced Optimization** → Disable Deep Optimization
+- Откройте настройки устройства → **Батарея** → **Оптимизация батареи** → (⁝) трёхточечное меню → **Дополнительная оптимизация** → Отключите Глубокую Оптимизацию
 
 ### Автозапуск приложения
 

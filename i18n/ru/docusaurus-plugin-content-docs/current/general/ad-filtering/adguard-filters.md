@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-Эта статья о фильтрах, которые мы разрабатываем и которые предустановлены в AdGuard. To check them out, you can [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Эта статья о фильтрах, которые мы разрабатываем и которые предустановлены в AdGuard. Чтобы проверить их, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 

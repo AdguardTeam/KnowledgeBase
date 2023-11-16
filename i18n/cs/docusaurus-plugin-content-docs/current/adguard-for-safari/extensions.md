@@ -63,4 +63,4 @@ Když povolíte některá rozšíření Safari, můžete si všimnout, že poža
 
 – Pro správnou funkci ručního blokování reklam a pokročilých pravidel blokování je nutný přístup k obsahu webové stránky. – Přístup k historii prohlížení je nutný pro kontrolu stavu ochrany na webových stránkách a určení, která pokročilá pravidla by měla být použita
 
-Tyto údaje nepoužíváme pro žádnou jinou osobu ani je s nikým nesdílíme. Pro více informací se můžete podívat na naše [Zásady ochrany osobních údajů](https://adguard.com/privacy.html).
+Tyto údaje nepoužíváme pro žádné jiné účely a ani je s nikým nesdílíme. Pro více informací se můžete podívat na naše [Zásady ochrany osobních údajů](https://adguard.com/privacy.html).

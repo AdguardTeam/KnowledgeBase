@@ -21,7 +21,7 @@ Díky tomuto rozhraní může každá aplikace odeslat speciální zprávu (tzv.
 
 ### Obavy o bezpečnost
 
-Isn't it dangerous to let some random apps manage what AdGuard does? It is, and that's why a password is sent along with the intent. Toto heslo vygeneruje AdGuard automaticky, ale můžete ho samozřejmě kdykoli změnit.
+Není nebezpečné nechat náhodné aplikace spravovat to, co dělá AdGuard? Je to tak, a proto je spolu se záměrem odesláno i heslo. Toto heslo vygeneruje AdGuard automaticky, ale můžete ho samozřejmě kdykoli změnit.
 
 ### Dostupné akce
 
@@ -49,7 +49,7 @@ Zde jsou uvedeny akce, kterým bude AdGuard rozumět, pokud budou zahrnuty do z�
 
 :::note
 
-The full list of supported provider names can be found in our [known DNS providers list](https://adguard-dns.io/kb/general/dns-providers/).
+Úplný seznam názvů podporovaných poskytovatelů naleznete v našem seznamu [známých poskytovatelů DNS](https://adguard-dns.io/kb/general/dns-providers/).
 
 :::
 

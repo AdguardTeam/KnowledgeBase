@@ -1,5 +1,5 @@
 ---
-title: Low-level settings guide
+title: Průvodce nízkoúrovňových nastavení
 sidebar_position: 6
 ---
 
@@ -9,7 +9,7 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 :::
 
-## How to reach Low-level settings
+## Jak dosáhnout nízkoúrovňových nastavení
 
 :::caution
 
@@ -35,7 +35,7 @@ Zde můžete uvést domény, které budou přesměrovány přímo na záložní 
 
 #### Detekce vyhledávacích domén
 
-If this setting is enabled, AdGuard will detect search domains and automatically forward them to fallback upstreams.
+Pokud je tato možnost povolena, AdGuard zjistí vyhledávací domény a automaticky je přepošle záložním upstreamům.
 
 #### Odchozí bootstrap připojení
 
@@ -75,31 +75,31 @@ Pokud je tato možnost povolena, AdGuard odstraní z DNS dotazů parametry Encry
 
 #### Ignorovat nedostupný odchozí proxy
 
-If this setting is enabled, AdGuard will send DNS requests directly when the outbound proxy is unavailable.
+Pokud je toto nastavení povoleno, bude AdGuard v případě nedostupnosti odchozího proxy serveru odesílat DNS požadavky napřímo.
 
 #### Vyzkoušet HTTP/3 pro odchozí připojení DNS-over-HTTPS
 
-If this setting is enabled, AdGuard will use HTTP/3 to speed up DNS query resolution for DoH upstreams. Otherwise, AdGuard will revert to its default behavior and use HTTP/2 to send all DNS requests for DNS-over-HTTPS.
+Pokud je toto nastavení povoleno, bude AdGuard používat protokol HTTP/3 ke zrychlení řešení dotazů DNS pro odchozí připojení DoH. V opačném případě se AdGuard vrátí ke svému výchozímu chování a použije protokol HTTP/2 k odesílání všech DN požadavkůS pro DNS-over-HTTPS.
 
 #### Reakce na selhání SERVFAIL
 
-If this setting is enabled and all upstreams, including fallback ones, fail to respond, AdGuard will send a SERVFAIL response to the client.
+Pokud je toto nastavení povoleno a všechna odchozí připojení, včetně záložních, neodpovídají, odešle AdGuard klientovi odpověď SERVFAIL.
 
 #### Použít záložní řešení pro domény, které nejsou záložní
 
-If this setting is enabled, AdGuard will use fallback upstreams for all domains. Otherwise, fallback upstreams will only be used for fallback domains and search domains if the corresponding option is enabled.
+Pokud je toto nastavení povoleno, AdGuard použije záložní odchozí připojení pro všechny domény. V opačném případě se záložní odchozí připojení použije pouze pro záložní domény a vyhledávací domény, pokud je příslušná možnost povolena.
 
 #### Ověřit odchozí připojení DNS
 
-If this setting is enabled, AdGuard will test DNS upstreams before adding or updating custom DNS servers.
+Pokud je toto nastavení povoleno, bude AdGuard před přidáním nebo aktualizací vlastních DNS serverů testovat odchozí připojení DNS.
 
 ### Filtrování
 
 #### Zachytit HAR
 
-If this setting is enabled, AdGuard will capture HAR files. It will create a directory named "har" inside the app cache directory and add there information about all filtered HTTP requests in HAR 1.2 format that can be analyzed with the Fiddler program.
+Pokud je toto nastavení povoleno, bude AdGuard zachycovat soubory HAR. Vytvoří adresář s názvem "har" uvnitř adresáře mezipaměti aplikace a přidá do něj informace o všech filtrovaných požadavcích HTTP ve formátu HAR 1.2, které lze analyzovat pomocí programu Fiddler.
 
-Use it only for debugging purposes!
+Používejte to pouze pro účely ladění!
 
 ### HTTPS filtrování
 
@@ -109,25 +109,25 @@ Každé šifrované internetové připojení má i nešifrovanou část. Jedná 
 
 #### Kontrola OCSP
 
-If this setting is enabled, AdGuard will perform asynchronous OCSP checks to get the revocation status of a website's SSL certificate.
+Pokud je toto nastavení povoleno, bude AdGuard provádět asynchronní kontroly OCSP, aby zjistil stav odvolání certifikátu SSL webové stránky.
 
-If an OCSP check is completed within the required timeout, AdGuard will immediately block the connection if the certificate is revoked or establish the connection if the certificate is valid.
+Pokud se kontrola OCSP dokončí během požadovaného časového limitu, AdGuard okamžitě zablokuje připojení, pokud je certifikát odvolán nebo naváže připojení, pokud je certifikát platný.
 
-If the verification takes too long, AdGuard will allow the connection while continuing to check the certificate status in the background. Pokud je certifikát odvolán, budou současná i budoucí připojení k doméně zablokována.
+Pokud ověření trvá příliš dlouho, AdGuard připojení povolí a zároveň pokračuje v kontrole stavu certifikátu na pozadí. Pokud je certifikát odvolán, budou současná i budoucí připojení k doméně zablokována.
 
 #### Přesměrovat požadavky DNS skrze HTTPS
 
-If this setting is enabled, AdGuard will redirect DNS-over-HTTPS requests to the local DNS proxy in addition to plain DNS requests. We recommend disabling fallback upstreams and using only encrypted DNS servers to maintain privacy.
+Pokud je toto nastavení povoleno, bude AdGuard kromě běžných DNS požadavků přesměrovávat požadavky DNS-over-HTTPS na místní proxy server DNS. Doporučujeme vypnout záložní odchozí připojení a používat pouze šifrované DNS servery, aby bylo zachováno soukromí.
 
 #### Filtrování HTTP/3
 
-If this setting is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
+Pokud je toto nastavení povoleno, bude AdGuard filtrovat kromě jiných typů požadavků také požadavky odeslané skrze HTTP/3.
 
-### Outbound proxy
+### Odchozí proxy
 
 #### Zobrazit nastavení "Filtrovat požadavky DNS"
 
-If this is enabled, the *Filter DNS requests* switch will be displayed in the *Add proxy server* dialog. Use it to enable filtering of DNS requests passing through the specified proxy.
+Pokud je toto povoleno, v dialogovém okně *Přidat proxy server* se zobrazí přepínač *Filtrovat DNS požadavky*. Slouží k povolení filtrování DNS požadavků procházejících přes zadaný proxy.
 
 ### Ochrana
 
@@ -137,11 +137,11 @@ Zde můžete zadat rozsahy portů, které mají být filtrovány.
 
 #### Zaznamenat odstraněné HTML události
 
-If this setting is enabled, AdGuard will record blocked HTML elements in *Recent activity*.
+Pokud je toto nastavení povoleno, AdGuard zaznamená blokované prvky HTML v sekci *Nedávná aktivita*.
 
 #### Ladění skripletů
 
-If this setting is enabled, debugging in scriptlets will be activated, and the browser log will record when scriptlet rules are applied.
+Pokud je toto nastavení povoleno, bude aktivováno ladění skriptletů a protokol prohlížeče bude zaznamenávat použití pravidel skriptletů.
 
 #### Vyloučené aplikace
 
@@ -153,23 +153,23 @@ Zde můžete zadat názvy balíčků, pro které má AdGuard obejít provoz QUIC
 
 #### Překonfigurovat automatický proxy při změně sítě
 
-If this setting is enabled, the AdGuard protection will restart to reconfigure the automatic proxy settings when your device connects to another network. This setting only applies if *Routing mode* is set to *Automatic proxy*.
+Pokud je toto nastavení povoleno, ochrana AdGuardem se po připojení zařízení k jiné síti znovu spustí a znovu nakonfiguruje automatické nastavení proxy. Toto nastavení platí pouze v případě, že je *Režim směrování* nastaven na *Automatický proxy*.
 
 #### Filtrování IPv6
 
-If this setting is enabled, AdGuard will filter IPv6 networks if an IPv6 network interface is available.
+Pokud je toto nastavení povoleno, bude AdGuard filtrovat sítě IPv6, pokud je k dispozici síťové rozhraní IPv6.
 
 #### Rozsahy IPv4 vyloučené z filtrování
 
-Filtering for the IPv4 ranges listed in this section is disabled.
+Filtrování rozsahů IPv4 uvedených v této části je vypnuto.
 
 #### Rozsahy IPv6 vyloučené z filtrování
 
-Filtering for the IPv6 ranges listed in this section is disabled.
+Filtrování rozsahů IPv6 uvedených v této části je vypnuto.
 
 #### Zachování záznamů TCP pro odchozí sokety
 
-If this setting is enabled, AdGuard will send a keepalive probe after the specified time period to ensure that the TCP connection is alive. Here, you can specify the idle time before starting keepalive probes and the time between keepalive probes for an unresponsive peer.
+Pokud je toto nastavení povoleno, AdGuard po uplynutí zadané doby odešle udržovací sondu, aby se ujistil, zda je připojení TCP funkční. Zde můžete zadat dobu nečinnosti před spuštěním sond udržení a dobu mezi sondami udržení pro neodpovídajícího partnera.
 
 Po systémem definovaném počtu neúspěšných pokusů o získání odpovědi ze serveru systém automaticky ukončí připojení TCP.
 
@@ -177,11 +177,11 @@ Po systémem definovaném počtu neúspěšných pokusů o získání odpovědi 
 
 #### Zpoždění obnovy u odvolané VPN
 
-Zde můžete nastavit dobu prodlevy v milisekundách, než se AdGuard pokusí obnovit ochranu VPN poté, co byla zrušena aplikací VPN třetí strany nebo odstraněním profilu VPN. The default value is 5000 ms.
+Zde můžete nastavit dobu prodlevy v milisekundách, než se AdGuard pokusí obnovit ochranu VPN poté, co byla zrušena aplikací VPN třetí strany nebo odstraněním profilu VPN. Výchozí hodnota je 5000 ms.
 
 #### Zpoždění při změně plánu pro obnovení odvolané VPN
 
-Zde můžete nastavit dobu prodlevy v milisekundách, než AdGuard znovu naplánuje obnovení ochrany VPN poté, co byla zrušena aplikací VPN třetí strany nebo odstraněním profilu VPN. The default value is 5000 ms.
+Zde můžete nastavit dobu prodlevy v milisekundách, než AdGuard znovu naplánuje obnovení ochrany VPN poté, co byla zrušena aplikací VPN třetí strany nebo odstraněním profilu VPN. Výchozí hodnota je 5000 ms.
 
 #### MTU
 
@@ -189,15 +189,15 @@ Zde můžete nastavit maximální přenosovou jednotku (MTU) rozhraní VPN. Dopo
 
 #### Automatické obnovení VPN
 
-If this setting is enabled, AdGuard’s local VPN will be automatically re-enabled after being turned off due to network absence, tethering, or low-power mode.
+Pokud je toto nastavení povoleno, lokální VPN AdGuardu se po vypnutí z důvodu nepřítomnosti sítě, tetheringu nebo režimu s nízkou spotřebou energie automaticky znovu zapne.
 
 #### Zachycování paketů (PCAP)
 
-If this setting is enabled, AdGuard will create a file `timestamp.pcap` (for instance, 1682599851461.pcap) in the app cache directory. This file lists all network packets transferred through the VPN and can be analyzed with the Wireshark program.
+Pokud je toto nastavení povoleno, AdGuard vytvoří soubor `timestamp.pcap` (např. 1682599851461.pcap) v adresáři mezipaměti aplikace. Tento soubor obsahuje seznam všech síťových paketů přenesených skrze VPN a lze jej analyzovat pomocí programu Wireshark.
 
 #### Zahrnout bránu Wi-Fi v trasách VPN
 
-If this setting is enabled, the gateway IP addresses will be added to to VPN routes when on Wi-Fi.
+Pokud je toto nastavení povoleno, budou IP adresy brány přidány do tras VPN při připojení k Wi-Fi.
 
 #### Adresa IPv4
 
@@ -205,11 +205,11 @@ Zde můžete zadat IP adresu, která bude použita pro vytvoření rozhraní TUN
 
 #### Vynucené směrování LAN IPv4
 
-If this setting is enabled, AdGuard will filter all LAN connections, including local IPv4 network traffic, even if the *Route all LAN IPv4 connections* option is enabled.
+Pokud je toto nastavení povoleno, AdGuard bude filtrovat všechna připojení LAN, včetně místního síťového provozu IPv4, i když je povolena možnost *Směrovat všechna připojení IPv4 LAN*.
 
 #### Nucené směrování všech LAN IPv4
 
-If this setting is enabled, AdGuard will exclude LAN connections from filtering for simple networks. This may not work for complex networks. This setting only applies if *Forcibly route LAN IPv4* is disabled.
+Pokud je toto nastavení povoleno, AdGuard vyloučí připojení LAN z filtrování pro jednoduché sítě. To nemusí fungovat pro složité sítě. Toto nastavení platí pouze v případě, že je zakázána možnost *Vynutit směrování LAN IPv4*.
 
 #### Adresa IPv6
 
@@ -219,4 +219,4 @@ Zde můžete zadat IP adresu, která bude použita pro vytvoření rozhraní TUN
 
 #### Detekce Samsung Pay
 
-If this setting is enabled, AdGuard protection will be paused while Samsung Pay is in use. Korean users require this feature as they experience [issues with Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea) when AdGuard is enabled.
+Pokud je toto nastavení povoleno, ochrana AdGuardem bude během používání Samsung Pay pozastavena. Korejští uživatelé tuto funkci vyžadují, protože při zapnutém AdGuardu mají problémy se [Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea).

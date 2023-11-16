@@ -7,7 +7,7 @@ toc_max_heading_level: 4
 
 :::info
 
-V tomto článku vysvětlíme, jak napsat vlastní pravidla filtrování pro použití v produktech AdGuardu. To test your rules, you can [download the AdGuard app](https://agrd.io/download-kb-adblock)
+V tomto článku vysvětlíme, jak napsat vlastní pravidla filtrování pro použití v produktech AdGuardu. Chcete-li otestovat svá pravidla, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -71,7 +71,7 @@ Pravidla filtrování podporují řadu modifikátorů, které umožňují doladi
 
 **Toto pravidlo blokuje:**
 
-- `http://example.org/script.js` if this script is loaded from `example.com`.
+- `http://example.org/script.js`, pokud je tento skript načten z `example.com`.
 
 **Toto pravidlo neblokuje:**
 
@@ -107,7 +107,7 @@ AdGuard [rozšiřuje CSS](#extended-css-selectors) a umožňuje tak vývojářů
 
 **Oblíbené selektory CSS**
 
-| Name                         | CSS selector                     | Description                                                                                                                                                                                                           |
+| Název                        | Selektor CSS                     | Popis                                                                                                                                                                                                                 |
 | ---------------------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ID selector                  | `#banners`                       | Matches all elements with `id` attribute equal to `banners`.<br/>![ID selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_id_selector.png)                                                   |
 | Class selector               | `.banners`                       | Matches all elements with `class` attribute containing `banners`.<br/>![Class selector](https://cdn.adtidy.org/public/Adguard/kb/en/rules_syntax/css_class_selector.png)                                        |
@@ -166,8 +166,8 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 
 ### Speciální znaky {#basic-rules-special-characters}
 
-- **`*`** — zástupný znak. It is used to represent any set of characters. Může to být také prázdný řetězec nebo řetězec libovolné délky.
-- **`||`** — an indication to apply the rule to the specified domain and its subdomains. With this character, you do not have to specify a particular protocol and subdomain in address mask. It means that `||` stands for `http://*.`, `https://*.`, `ws://*.`, `wss://*.` at once.
+- **`*`** — zástupný znak. Používá se k reprezentaci libovolné sady znaků. Může to být také prázdný řetězec nebo řetězec libovolné délky.
+- **`||`** — indikace o použití pravidla na zadanou doménu a její subdomény. S tímto znakem nemusíte v masce adresy zadávat konkrétní protokol a subdoménu. Tj., že `||` znamená `http://*.`, `https://*.`, `ws://*.`, `wss://*.` najednou.
 - **`^`** — oddělovací znak. Oddělovací znak je libovolný znak, mimo písmeno, číslice nebo jeden z následujících znaků: `_` `-` `.` `%`. V tomto příkladu jsou oddělovací znaky zobrazeny tučně: `http:`**`//`**`example.com`**`/?`**`t=1`**`&`**`t2=t3`. Konec adresy je také akceptován jako oddělovací znak.
 - **`|`** — ukazatel na začátku nebo konci adresy. Hodnota závisí na umístění znaku v masce. Např. pravidlo `swf|` odpovídá `http://example.com/annoyingflash.swf`, ale neodpovídá `http://example.com/swf/index.html`. `|http://example.org` odpovídá `http://example.org`, ale ne `http://domain.com?url=http://example.org`.
 
@@ -205,7 +205,7 @@ AdGuard pro Safari a AdGuard pro iOS plně nepodporují regulární výrazy kvů
 
 Rules that match an arbitrarily large number of URLs are considered incorrect and will be ignored. This can happen if the rule doesn't contain a mask, or if the mask matches any URL with a certain protocol.
 
-This rule will be ignored:
+Toto pravidlo bude ignorováno:
 
 ```text
 |http://$replace=/a/b/
@@ -213,7 +213,7 @@ This rule will be ignored:
 
 This limitation can be circumvented by using a `/.*/` regular expression inside the mask.
 
-This rule will not be ignored:
+Toto pravidlo nebude ignorováno:
 
 ```text
 /.*/$replace=/a/b/
@@ -225,7 +225,7 @@ This rule validation is not applied in the following cases:
 
 1. The rule contains [`$domain`](#domain-modifier) modifier that points to a specific domain list.
 
-    These rules will not be ignored:
+    Tato pravidla nebudou ignorována:
 
     ```text
     $domain=example.com,script
@@ -240,7 +240,7 @@ This rule validation is not applied in the following cases:
 
 1. The rule contains [`$app`](#app-modifier) modifier that points to a specific app list.
 
-    This rule will not be ignored:
+    Toto pravidlo nebude ignorováno:
 
     ```text
     $app=curl,document
@@ -254,7 +254,7 @@ This rule validation is not applied in the following cases:
 
 1. The rule contains one or more modifiers from among [`$cookie`](#cookie-modifier), [`$removeparam`](#removeparam-modifier), [`$removeheader`](#removeheader-modifier), [`$stealth`](#stealth-modifier).
 
-    These rules will not be ignored:
+    Tato pravidla nebudou ignorována:
 
     ```text
     $removeparam=cx_recsWidget
@@ -313,26 +313,26 @@ Následující modifikátory jsou nejjednodušší a nejčastěji používané. 
 
 <!-- Please keep them sorted -->
 
-| Modifier \ Products                  | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Firefox][ext-ff] |     [AdGuard pro iOS][ios-app]      |    [AdGuard pro Safari][ext-saf]    | [Blokátor obsahu AdGuard][and-cb] |
-| ------------------------------------- |:------------------------:|:-------------------------------:|:-----------------------------:|:-----------------------------------:|:-----------------------------------:|:---------------------------------:|
-| [$app](#app-modifier)                 |            ✅             |                ❌                |               ❌               |                  ❌                  |                  ❌                  |                 ❌                 |
-| [$denyallow](#denyallow-modifier)     |            ✅             |                ✅                |               ✅               |                  ✅                  |                  ✅                  |                 ❌                 |
-| [$domain](#domain-modifier)           |            ✅             |                ✅                |               ✅               | ✅ [*](#domain-modifier-limitations) | ✅ [*](#domain-modifier-limitations) |                 ✅                 |
-| [$header](#header-modifier)           |            ✅             |                ⏳                |               ⏳               |                  ❌                  |                  ❌                  |                 ❌                 |
-| [$important](#important-modifier)     |            ✅             |                ✅                |               ✅               |                  ✅                  |                  ✅                  |                 ❌                 |
-| [$match-case](#match-case-modifier)   |            ✅             |                ✅                |               ✅               |                  ⏳                  |                  ⏳                  |                 ✅                 |
-| [$method](#method-modifier)           |            ⏳             |                ✅                |               ✅               |                  ❌                  |                  ❌                  |                 ❌                 |
-| [$popup](#popup-modifier)             |           ✅ *            |                ✅                |               ✅               |                 ✅ *                 |                 ✅ *                 |                 ❌                 |
-| [$third-party](#third-party-modifier) |            ✅             |                ✅                |               ✅               |                  ✅                  |                  ✅                  |                 ✅                 |
-| [$to](#to-modifier)                   |            ⏳             |                ✅                |               ✅               |                  ❌                  |                  ❌                  |                 ❌                 |
+| Modifikátor \ Produkty               | [Aplikace CoreLibs][cl-apps] | [AdGuard pro Chromium][ext-chr] | [AdGuard pro Firefox][ext-ff] |     [AdGuard pro iOS][ios-app]      |    [AdGuard pro Safari][ext-saf]    | [Blokátor obsahu AdGuard][and-cb] |
+| ------------------------------------- |:----------------------------:|:-------------------------------:|:-----------------------------:|:-----------------------------------:|:-----------------------------------:|:---------------------------------:|
+| [$app](#app-modifier)                 |              ✅               |                ❌                |               ❌               |                  ❌                  |                  ❌                  |                 ❌                 |
+| [$denyallow](#denyallow-modifier)     |              ✅               |                ✅                |               ✅               |                  ✅                  |                  ✅                  |                 ❌                 |
+| [$domain](#domain-modifier)           |              ✅               |                ✅                |               ✅               | ✅ [*](#domain-modifier-limitations) | ✅ [*](#domain-modifier-limitations) |                 ✅                 |
+| [$header](#header-modifier)           |              ✅               |                ⏳                |               ⏳               |                  ❌                  |                  ❌                  |                 ❌                 |
+| [$important](#important-modifier)     |              ✅               |                ✅                |               ✅               |                  ✅                  |                  ✅                  |                 ❌                 |
+| [$match-case](#match-case-modifier)   |              ✅               |                ✅                |               ✅               |                  ⏳                  |                  ⏳                  |                 ✅                 |
+| [$method](#method-modifier)           |              ⏳               |                ✅                |               ✅               |                  ❌                  |                  ❌                  |                 ❌                 |
+| [$popup](#popup-modifier)             |             ✅ *              |                ✅                |               ✅               |                 ✅ *                 |                 ✅ *                 |                 ❌                 |
+| [$third-party](#third-party-modifier) |              ✅               |                ✅                |               ✅               |                  ✅                  |                  ✅                  |                 ✅                 |
+| [$to](#to-modifier)                   |              ⏳               |                ✅                |               ✅               |                  ❌                  |                  ❌                  |                 ❌                 |
 
 :::note
 
-- ✅ — fully supported
-- ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
+- ✅ — plně podporováno
+- ✅ * — podporováno, ale spolehlivost se může lišit nebo se mohou vyskytnout omezení; více informací naleznete v popisu modifikátoru
 <!-- - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions -->
-- ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product
-- ❌ — not supported
+- ⏳ — funkce, která byla implementována nebo jejíž implementace se plánuje, ale zatím není k dispozici v žádném produktu
+- ❌ — nepodporováno
 
 :::
 
@@ -684,29 +684,29 @@ V tom, jak AdGuard určuje typ obsahu na různých platformách, je velký rozd�
 
 <!-- Please keep them sorted -->
 
-| Modifier \ Products                                          | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Firefox][ext-ff] | [AdGuard pro iOS][ios-app] | [AdGuard pro Safari][ext-saf] | [Blokátor obsahu AdGuard][and-cb] |
-| ------------------------------------------------------------- |:------------------------:|:-------------------------------:|:-----------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
-| [$document](#document-modifier)                               |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
-| [$font](#font-modifier)                                       |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ✅                 |
-| [$image](#image-modifier)                                     |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ✅                 |
-| [$media](#media-modifier)                                     |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ✅                 |
-| [$object](#object-modifier)                                   |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ✅                 |
-| [$other](#other-modifier)                                     |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
-| [$ping](#ping-modifier)                                       |           ✅ *            |                ✅                |               ✅               |             ❌              |               ❌               |                 ✅                 |
-| [$script](#script-modifier)                                   |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ✅                 |
-| [$stylesheet](#stylesheet-modifier)                           |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ✅                 |
-| [$subdocument](#subdocument-modifier)                         |           ✅ *            |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
-| [$websocket](#websocket-modifier)                             |            ✅             |                ✅                |               ✅               |            ✅ *             |              ✅ *              |                 ✅                 |
-| [$xmlhttprequest](#xmlhttprequest-modifier)                   |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ✅                 |
-| [$webrtc 🚫](#webrtc-modifier "removed")                       |            ❌             |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
-| [$object-subrequest 🚫](#object-subrequest-modifier "removed") |            ❌             |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
+| Modifikátor \ Produkty                                       | [Aplikace CoreLibs][cl-apps] | [AdGuard pro Chromium][ext-chr] | [AdGuard pro Firefox][ext-ff] | [AdGuard pro iOS][ios-app] | [AdGuard pro Safari][ext-saf] | [Blokátor obsahu AdGuard][and-cb] |
+| ------------------------------------------------------------- |:----------------------------:|:-------------------------------:|:-----------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
+| [$document](#document-modifier)                               |              ✅               |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
+| [$font](#font-modifier)                                       |              ✅               |                ✅                |               ✅               |             ✅              |               ✅               |                 ✅                 |
+| [$image](#image-modifier)                                     |              ✅               |                ✅                |               ✅               |             ✅              |               ✅               |                 ✅                 |
+| [$media](#media-modifier)                                     |              ✅               |                ✅                |               ✅               |             ✅              |               ✅               |                 ✅                 |
+| [$object](#object-modifier)                                   |              ✅               |                ✅                |               ✅               |             ✅              |               ✅               |                 ✅                 |
+| [$other](#other-modifier)                                     |              ✅               |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
+| [$ping](#ping-modifier)                                       |             ✅ *              |                ✅                |               ✅               |             ❌              |               ❌               |                 ✅                 |
+| [$script](#script-modifier)                                   |              ✅               |                ✅                |               ✅               |             ✅              |               ✅               |                 ✅                 |
+| [$stylesheet](#stylesheet-modifier)                           |              ✅               |                ✅                |               ✅               |             ✅              |               ✅               |                 ✅                 |
+| [$subdocument](#subdocument-modifier)                         |             ✅ *              |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
+| [$websocket](#websocket-modifier)                             |              ✅               |                ✅                |               ✅               |            ✅ *             |              ✅ *              |                 ✅                 |
+| [$xmlhttprequest](#xmlhttprequest-modifier)                   |              ✅               |                ✅                |               ✅               |             ✅              |               ✅               |                 ✅                 |
+| [$webrtc 🚫](#webrtc-modifier "removed")                       |              ❌               |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
+| [$object-subrequest 🚫](#object-subrequest-modifier "removed") |              ❌               |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
 
 :::note
 
-- ✅ — fully supported
-- ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
-- ❌ — not supported
-- 🚫 — removed and no longer supported
+- ✅ — plně podporováno
+- ✅ * — podporováno, ale spolehlivost se může lišit nebo se mohou vyskytnout omezení; více informací naleznete v popisu modifikátoru
+- ❌ — nepodporováno
+- 🚫 — odstraněno a již nepodporováno
 
 :::
 
@@ -863,23 +863,23 @@ Doporučujeme také seznámit se s [tímto článkem](https://adblockplus.org/fi
 
 <!-- Please keep them sorted -->
 
-| Modifier \ Products                    | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Firefox][ext-ff] | [AdGuard pro iOS][ios-app] | [AdGuard pro Safari][ext-saf] | [Blokátor obsahu AdGuard][and-cb] |
-| --------------------------------------- |:------------------------:|:-------------------------------:|:-----------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
-| [$content](#content-modifier)           |            ✅             |                ❌                |               ✅               |             ❌              |               ❌               |                 ❌                 |
-| [$elemhide](#elemhide-modifier)         |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ✅                 |
-| [$extension](#extension-modifier)       |            ✅             |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
-| [$jsinject](#jsinject-modifier)         |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
-| [$stealth](#stealth-modifier)           |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
-| [$urlblock](#urlblock-modifier)         |            ✅             |                ✅                |               ✅               |            ✅ *             |              ✅ *              |                 ❌                 |
-| [$genericblock](#genericblock-modifier) |            ✅             |                ✅                |               ✅               |            ✅ *             |              ✅ *              |                 ❌                 |
-| [$generichide](#generichide-modifier)   |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ✅                 |
-| [$specifichide](#specifichide-modifier) |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| Modifikátor \ Produkty                 | [Aplikace CoreLibs][cl-apps] | [AdGuard pro Chromium][ext-chr] | [AdGuard pro Firefox][ext-ff] | [AdGuard pro iOS][ios-app] | [AdGuard pro Safari][ext-saf] | [Blokátor obsahu AdGuard][and-cb] |
+| --------------------------------------- |:----------------------------:|:-------------------------------:|:-----------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
+| [$content](#content-modifier)           |              ✅               |                ❌                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| [$elemhide](#elemhide-modifier)         |              ✅               |                ✅                |               ✅               |             ✅              |               ✅               |                 ✅                 |
+| [$extension](#extension-modifier)       |              ✅               |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
+| [$jsinject](#jsinject-modifier)         |              ✅               |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
+| [$stealth](#stealth-modifier)           |              ✅               |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| [$urlblock](#urlblock-modifier)         |              ✅               |                ✅                |               ✅               |            ✅ *             |              ✅ *              |                 ❌                 |
+| [$genericblock](#genericblock-modifier) |              ✅               |                ✅                |               ✅               |            ✅ *             |              ✅ *              |                 ❌                 |
+| [$generichide](#generichide-modifier)   |              ✅               |                ✅                |               ✅               |             ✅              |               ✅               |                 ✅                 |
+| [$specifichide](#specifichide-modifier) |              ✅               |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
 
 :::note
 
-- ✅ — fully supported
-- ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
-- ❌ — not supported
+- ✅ — plně podporováno
+- ✅ * — podporováno, ale spolehlivost se může lišit nebo se mohou vyskytnout omezení; více informací naleznete v popisu modifikátoru
+- ❌ — nepodporováno
 
 :::
 
@@ -987,7 +987,7 @@ Seznam dostupných možností modifikátoru:
 - `location` zakáže možnost [**Blokovat lokalizační API**](../../stealth-mode#location)
 - `flash` zakáže možnost [**Blokovat Flash**](../../stealth-mode#flash)
 - `java` zakáže možnost [**Blokovat Java**](../../stealth-mode#java)
-- `referrer` zakáže možnost [**Skrýt třetím stranám referenční ID**](../../stealth-mode#miscellaneous)
+- `referrer` disables [**Hide Referer from third parties**](../../stealth-mode#miscellaneous) option
 - `useragent` zakáže možnost [**Skrýt agenta (identifikaci) Vašeho prohlížeče**](../../stealth-mode#useragent)
 - `ip` zakáže možnost [**Skrýt IP adresu**](../../stealth-mode#ip)
 - `xclientdata` zakáže možnost [**Odstranit X-Client-Data hlavičku z požadavků HTTP**](../../stealth-mode#xclientdata)
@@ -1120,35 +1120,35 @@ These modifiers are able to completely change the behavior of basic rules.
 
 <!-- Please keep them sorted -->
 
-| Modifier \ Products                        | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Firefox][ext-ff] | [AdGuard pro iOS][ios-app] | [AdGuard pro Safari][ext-saf] | [Blokátor obsahu AdGuard][and-cb] |
-| ------------------------------------------- |:------------------------:|:-------------------------------:|:-----------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
-| [$all](#all-modifier)                       |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
-| [$badfilter](#badfilter-modifier)           |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
-| [$cookie](#cookie-modifier)                 |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
-| [$csp](#csp-modifier)                       |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
-| [$hls](#hls-modifier)                       |            ✅             |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
-| [$inline-font](#inline-font-modifier)       |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
-| [$inline-script](#inline-script-modifier)   |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
-| [$jsonprune](#jsonprune-modifier)           |            ✅             |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
-| [$network](#network-modifier)               |            ✅             |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
-| [$permissions](#permissions-modifier)       |            ✅             |                ⏳                |               ⏳               |             ❌              |               ❌               |                 ❌                 |
-| [$redirect](#redirect-modifier)             |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
-| [$redirect-rule](#redirect-rule-modifier)   |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
-| [$referrerpolicy](#referrerpolicy-modifier) |            🧩             |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
-| [$removeheader](#removeheader-modifier)     |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
-| [$removeparam](#removeparam-modifier)       |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
-| [$replace](#replace-modifier)               |            ✅             |                ❌                |               ✅               |             ❌              |               ❌               |                 ❌                 |
-| [noop](#noop-modifier)                      |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
-| [$empty 👎](#empty-modifier "deprecated")    |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
-| [$mp4 👎](#mp4-modifier "deprecated")        |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| Modifikátor \ Produkty                     | [Aplikace CoreLibs][cl-apps] | [AdGuard pro Chromium][ext-chr] | [AdGuard pro Firefox][ext-ff] | [AdGuard pro iOS][ios-app] | [AdGuard pro Safari][ext-saf] | [Blokátor obsahu AdGuard][and-cb] |
+| ------------------------------------------- |:----------------------------:|:-------------------------------:|:-----------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
+| [$all](#all-modifier)                       |              ✅               |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| [$badfilter](#badfilter-modifier)           |              ✅               |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
+| [$cookie](#cookie-modifier)                 |              ✅               |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| [$csp](#csp-modifier)                       |              ✅               |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| [$hls](#hls-modifier)                       |              ✅               |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
+| [$inline-font](#inline-font-modifier)       |              ✅               |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| [$inline-script](#inline-script-modifier)   |              ✅               |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| [$jsonprune](#jsonprune-modifier)           |              ✅               |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
+| [$network](#network-modifier)               |              ✅               |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
+| [$permissions](#permissions-modifier)       |              ✅               |                ⏳                |               ⏳               |             ❌              |               ❌               |                 ❌                 |
+| [$redirect](#redirect-modifier)             |              ✅               |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| [$redirect-rule](#redirect-rule-modifier)   |              ✅               |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| [$referrerpolicy](#referrerpolicy-modifier) |              🧩               |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
+| [$removeheader](#removeheader-modifier)     |              ✅               |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| [$removeparam](#removeparam-modifier)       |              ✅               |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| [$replace](#replace-modifier)               |              ✅               |                ❌                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| [noop](#noop-modifier)                      |              ✅               |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
+| [$empty 👎](#empty-modifier "deprecated")    |              ✅               |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| [$mp4 👎](#mp4-modifier "deprecated")        |              ✅               |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
 
 :::note
 
-- ✅ — fully supported
-- ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
-- 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions
-- ❌ — not supported
-- 👎 — deprecated; still supported but will be removed in the future
+- ✅ — plně podporováno
+- ✅ * — podporováno, ale spolehlivost se může lišit nebo se mohou vyskytnout omezení; více informací naleznete v popisu modifikátoru
+- 🧩 — může být již implementováno ve verzích nightly nebo beta, ale není ještě podporováno ve verzích pro vydání
+- ❌ — nepodporováno
+- 👎 — zastaralé; stále podporovano, ale v budoucnu bude odstraněno
 
 :::
 
@@ -1965,7 +1965,7 @@ Pravidla `$removeparam`, která neobsahují žádné modifikátory typu obsahu [
 
 - `$removeparam=param` odstraní parametr dotazu s názvem `param` z URL libovolného požadavku, např. požadavek na `http://example.com/page?param=1&another=2` bude transformován na `http://example.com/page?another=2`.
 
-:::note Compatibility
+:::note Kompatibilita
 
 `$removeparam` syntax is supported starting with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.7 and AdGuard Browser Extension v3.6.
 
@@ -2115,7 +2115,7 @@ V hodnotě `$replace` musí být dva znaky uvozeny: čárka `,` a znak dolaru `$
 
 Toto pravidlo má tři části:
 
-- `regexp` - `(<VAST(.|\s)*?>)(.|\s)*<\/VAST>`;
+- `regexp` — `(<VAST(.|\s)*?>)(.|\s)*<\/VAST>`;
 - `replacement` — `\$1<\/VAST>` kde `$` je uvozeno;
 - `modifikátory` — `i` pro necitlivé vyhledávání.
 
@@ -2302,7 +2302,7 @@ If there is a `$header` modifier in the rule it adds `50`.
 
 #### `$domain` or `$app` with allowed domains or applications {#priority-category-3}
 
-Specified domains through `$domain` or specified applications through `$app` add `100 + 100 / N`, where `N` is the number of modifier values for example: `||example.com^$domain=example.com|example.org|example.net` will add `100 + 100 / 3 = 134.3 = 135` or `||example.com^$app=org.example.app1|org.example.app2` will add `100 + 100 / 2 = 151` or `||example.com^$domain=example.com,app=org.example.app1|org.example.app2` will add `100 + 100/1` ($domain part) and `100 + 100/2` ($app part) - will add `350` in total.
+Specified domains through `$domain` or specified applications through `$app` add `100 + 100 / N`, where `N` is the number of modifier values for example: `||example.com^$domain=example.com|example.org|example.net` will add `100 + 100 / 3 = 134.3 = 135` or `||example.com^$app=org.example.app1|org.example.app2` will add `100 + 100 / 2 = 151` or `||example.com^$domain=example.com,app=org.example.app1|org.example.app2` will add `100 + 100/1` ($domain part) and `100 + 100/2` ($app part), totaling `350`.
 
 Modifier values that are regexps or tld will be interpreted as normal entries of the form `example.com` and counted one by one, for example: `||example.com^$domain=example.*` will add `100 + 100 / 1 = 200` or `||example.com^$domain=example.*|adguard.*` will add `100 + 100 / 2 = 150`.
 
@@ -2412,19 +2412,19 @@ Váha pravidla: základní + povolený typ obsahu, [kategorie 2](#priority-categ
 
 However, basic rules may not be enough to block ads. Někdy potřebujete skrýt prvek nebo změnit část kódu HTML webové stránky, aniž byste cokoli porušili. Pravidla popsaná v této části jsou vytvořena speciálně pro tento účel.
 
-| Categories \ Products                     | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Firefox][ext-ff] | [AdGuard pro iOS][ios-app] | [AdGuard pro Safari][ext-saf] | [Blokátor obsahu AdGuard][and-cb] |
-| ------------------------------------------ |:------------------------:|:-------------------------------:|:-----------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
-| [Element hiding](#cosmetic-elemhide-rules) |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ✅                 |
-| [Pravidla CSS](#cosmetic-css-rules)        |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
-| [Extended CSS](#extended-css-selectors)    |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
-| [HTML filtering](#html-filtering-rules)    |            ✅             |                ❌                |               ✅               |             ❌              |               ❌               |                 ❌                 |
-| [JavaScript](#javascript-rules)            |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
-| [Scriptlets](#scriptlets)                  |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
+| Kategorie \ Produkty                    | [Aplikace CoreLibs][cl-apps] | [AdGuard pro Chromium][ext-chr] | [AdGuard pro Firefox][ext-ff] | [AdGuard pro iOS][ios-app] | [AdGuard pro Safari][ext-saf] | [Blokátor obsahu AdGuard][and-cb] |
+| ---------------------------------------- |:----------------------------:|:-------------------------------:|:-----------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
+| [Skrytí prvků](#cosmetic-elemhide-rules) |              ✅               |                ✅                |               ✅               |             ✅              |               ✅               |                 ✅                 |
+| [Pravidla CSS](#cosmetic-css-rules)      |              ✅               |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
+| [Extended CSS](#extended-css-selectors)  |              ✅               |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
+| [HTML filtering](#html-filtering-rules)  |              ✅               |                ❌                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| [JavaScript](#javascript-rules)          |              ✅               |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
+| [Scriptlety](#scriptlets)                |              ✅               |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
 
 :::note
 
-- ✅ — fully supported
-- ❌ — not supported
+- ✅ — plně podporováno
+- ❌ — nepodporováno
 
 :::
 
@@ -3426,7 +3426,7 @@ nebo
 :contains(/reg(ular )?ex(pression)?/)
 ```
 
-:::note Compatibility
+:::note Kompatibilita
 
 `:-abp-contains()` and `:has-text()` are synonyms for `:contains()`.
 
@@ -3606,18 +3606,18 @@ Např.: `[$domain=example.com,app=test_app]##selector`.
 
 V modifikátorech musí být uvozeny hodnoty následujících znaků: `[`, `]`, `,`a `\` (pokud se pro uvození nepoužívá). K uvození použijte `\`. Např. uvozená závorka vypadá takto: `\]`.
 
-| Modifier \ Products                  | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Firefox][ext-ff] | [AdGuard pro iOS][ios-app] | [AdGuard pro Safari][ext-saf] | [Blokátor obsahu AdGuard][and-cb] |
-| ------------------------------------- |:------------------------:|:-------------------------------:|:-----------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
-| [$app](#non-basic-app-modifier)       |            ✅             |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
-| [$domain](#non-basic-domain-modifier) |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
-| [$path](#non-basic-path-modifier)     |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
-| [$url](#non-basic-url-modifier)       |            ✅             |                ⏳                |               ⏳               |             ❌              |               ❌               |                 ❌                 |
+| Modifikátor \ Produkty               | [Aplikace CoreLibs][cl-apps] | [AdGuard pro Chromium][ext-chr] | [AdGuard pro Firefox][ext-ff] | [AdGuard pro iOS][ios-app] | [AdGuard pro Safari][ext-saf] | [Blokátor obsahu AdGuard][and-cb] |
+| ------------------------------------- |:----------------------------:|:-------------------------------:|:-----------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
+| [$app](#non-basic-app-modifier)       |              ✅               |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
+| [$domain](#non-basic-domain-modifier) |              ✅               |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
+| [$path](#non-basic-path-modifier)     |              ✅               |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
+| [$url](#non-basic-url-modifier)       |              ✅               |                ⏳                |               ⏳               |             ❌              |               ❌               |                 ❌                 |
 
 :::note
 
-- ✅ — fully supported
-- ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product
-- ❌ — not supported
+- ✅ — plně podporováno
+- ⏳ — funkce, která byla implementována nebo jejíž implementace se plánuje, ale zatím není k dispozici v žádném produktu
+- ❌ — nepodporováno
 
 :::
 
@@ -3993,14 +3993,14 @@ Filtering log is an advanced tool that will be helpful mostly to filter develope
 
 Depending on which AdGuard product you are using, Filtering log can be located in different places.
 
-- V **AdGuardu pro Windows** jej najdete na kartě *Blokátor reklam* nebo prostřednictvím nabídky na hlavním panelu;
-- V **AdGuardu pro Mac** je pod *Nastavení → Pokročilé → Záznam filtrování*;
-- V **AdGuardu pro Android** je to samostatná položka v postranním menu. Z Asistenta je také přístupný záznam filtrování pro konkrétní aplikaci nebo web.
-- V **Rozšíření prohlížeče AdGuard** je přístupný z karty *Různé* nebo kliknutím pravým tlačítkem myši na ikonu rozšíření. Pouze prohlížeče založené na platformě Chromium a Firefox zobrazují použití **pravidel skrývání prvků** (včetně CSS, ExtCSS) a **pravidel JS a skripletů** v jejich záznamech filtrování.
+- In **AdGuard for Windows**, you can find it in the *Ad Blocker* tab or via the tray menu
+- In **AdGuard for Mac**, it is located in *Settings → Advanced → Filtering log*
+- In **AdGuard for Android**, you can find it under *Statistics → Recent activity*. *Recent activity* can also be accessed from the *Assistant*
+- In **AdGuard Browser Extension**, it is accessible from the *Miscellaneous* settings tab or by right-clicking the extension icon. Only Chromium- and Firefox-based browsers show applied **element hiding rules** (including CSS, ExtCSS) and **JS rules and scriptlets** in their Filtering logs
 
 :::note
 
-In **AdGuard for iOS** and in **AdGuard for Safari** Filtering log does not exist because of the way content blockers are implemented in Safari. AdGuard does not see the web requests and therefore cannot display them.
+In **AdGuard for iOS** and **AdGuard for Safari**, Filtering log does not exist because of the way content blockers are implemented in Safari. AdGuard does not see the web requests and therefore cannot display them.
 
 :::
 
@@ -4117,13 +4117,13 @@ If you need an advice on how to create your own filters properly, our forum has 
 
 :::note
 
-- ✅ — fully supported
-- ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
-- 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions
-- ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product
-- ❌ — not supported
-- 👎 — deprecated; still supported but will be removed in the future
-- 🚫 — removed and no longer supported
+- ✅ — plně podporováno
+- ✅ * — podporováno, ale spolehlivost se může lišit nebo se mohou vyskytnout omezení; více informací naleznete v popisu modifikátoru
+- 🧩 — může být již implementováno ve verzích nightly nebo beta, ale není ještě podporováno ve verzích pro vydání
+- ⏳ — funkce, která byla implementována nebo jejíž implementace se plánuje, ale zatím není k dispozici v žádném produktu
+- ❌ — nepodporováno
+- 👎 — zastaralé; stále podporovano, ale v budoucnu bude odstraněno
+- 🚫 — odstraněno a již nepodporováno
 
 :::
 

@@ -55,7 +55,7 @@ There are three pre-configured protection levels. Here’s what features they ha
 
     a. *Block trackers*. This setting protects against online counters and web analytics tools using AdGuard’s Tracking Protection filter
 
-    b. *Ask websites not to track you*. This setting sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) requests to the websites you visit, asking web apps to disable tracking of your activity
+    b. *Ask websites not to track you*. This setting sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
 
     c. *Remove X-Client-Data header*. This setting prevents Google Chrome from sending its version and modification info to Google domains (including Double Click and Google Analytics)
 
@@ -70,6 +70,12 @@ There are three pre-configured protection levels. Here’s what features they ha
     d. *Ask websites not to track you*
 
     e. *Self-destruction of third-party cookies*. This setting limits the time to live of third-party cookies to 180 min
+
+    :::caution
+
+    This setting deletes all third-party cookies, including the information of your logins through social networks or other third-party services. You may have to periodically re-log in to some websites and face other cookie-related issues. To block only tracking cookies, use the *Standard* protection level.
+
+    :::
 
     f. *Remove X-Client-Data header*
 
@@ -445,3 +451,79 @@ Due to additional security measures of Android apps, some AdGuard features are o
 - **HTTPS filtering in most apps** requires [installing a CA certificate into the system store](#security-certificates), as most apps do not trust certificates in the user store. Installing a certificate into the system store is only possible on rooted devices
 - The [**Automatic proxy** routing mode](#routing-mode) requires root access due to Android's limitations on system-wide traffic filtering
 - The **Manual proxy** routing mode requires root access on Android 10 and above as it's no longer possible to determine the name of the app associated with a connection filtered by AdGuard
+
+## Assistant
+
+Assistant is a handy tool to quickly change app or website settings and view statistics without launching the AdGuard app.
+
+### How to access Assistant
+
+ 1. On your Android device, swipe down from the top of the screen to open the notification shade.
+ 2. Find and **expand** the AdGuard notification.
+
+    ![Expand AdGuard notification in the notification shade *mobile](https://cdn.adtidy.org/blog/new/jkksbhassistant-shade.png)
+
+ 3. Tap *Assistant*.
+
+    ![Tap Assistant *mobile](https://cdn.adtidy.org/blog/new/1qvlhassistant-tap-assistant.jpg)
+
+### How to use Assistant
+
+When you open Assistant, you will see two tabs: **Apps** and **Websites**. Each of them contains a list of the recently used apps and websites respectively.
+
+![Assistant main *mobile](https://cdn.adtidy.org/blog/new/i5mljAssistant-main.jpg)
+
+### Apps tab
+
+After you select an app (**let's take Chrome as an example**), you'll get a few options of what you can do.
+
+![Assistant Chrome menu *mobile_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
+
+#### Recent activity
+
+You'll be taken to the AdGuard app, where you'll see detailed info on the last 10K requests made by Chrome.
+
+![App recent activity *mobile_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
+
+#### App statistics
+
+You'll be taken to the AdGuard app, where you'll see detailed statistics about Chrome:
+
+- Number of ads and trackers blocked in Chrome
+- Data saved by blocking Chrome's ad or tracking requests
+- Companies that Chrome sends requests to
+
+#### App management
+
+You'll be taken to the AdGuard app screen where you can disable AdGuard protection for the app.
+
+#### Firewall settings
+
+You'll be taken to the AdGuard screen where you can change Firewall settings for the app, meaning you can manage the app's Internet access.
+
+### Websites tab
+
+![Assistant websites tab *mobile](https://cdn.adtidy.org/blog/new/74y9rAssistant-websites.jpg)
+
+Select a website (**let's take google.com as an example**) and you'll see few options of what you can do.
+
+![Assistant google.com info *mobile](https://cdn.adtidy.org/blog/new/tht0tgoogle-com-assistant.jpg)
+
+#### Add to allowlist
+
+Tapping this option will instantly add google.com to allowlist, and AdGuard will no longer filter it (meaning ads and trackers won't be blocked for the website).
+
+#### Recent activity
+
+You'll be taken to the AdGuard app, where you'll see detailed info on the last 10K requests to google.com.
+
+![website recent activity *mobile_border](https://cdn.adtidy.org/blog/new/xq7f3assistant-website-recent-activity.png)
+
+#### Website statistics
+
+You'll be taken to the AdGuard app, where you'll see detailed statistics about google.com:
+
+- Number of blocked ad and tracking requests to google.com
+- Data saved by blocking ad and tracking requests to google.com
+- Apps that send requests to google.com
+- Information about google.com's subdomains

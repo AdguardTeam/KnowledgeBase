@@ -19,7 +19,7 @@ AdGuard for Android is not to be confused with AdGuard Content Blocker. AdGuard 
 
 This screen combines all features of AdGuard’s protection:
 
-- Ad blocking
+- Bloqueo de anuncios
 - Tracking protection
 - Annoyance blocking
 - DNS protection
@@ -29,7 +29,7 @@ This screen combines all features of AdGuard’s protection:
 
 More on each feature below.
 
-### Ad blocking
+### Bloqueo de anuncios
 
 The feature blocks ads by applying ad-blocking and language-specific filters. To learn about the mechanism of ad blocking, you can read a [dedicated article](/general/ad-filtering/how-ad-blocking-works).
 
@@ -70,6 +70,13 @@ There are three pre-configured protection levels. Here’s what features they ha
     d. *Ask websites not to track you*
 
     e. *Self-destruction of third-party cookies*. This setting limits the time to live of third-party cookies to 180 min
+
+    :::caution
+
+    This setting deletes all third-party cookies, including the information of your logins through social networks or other third-party services. You may have to periodically re-log in to some websites and face other cookie-related issues. To block only tracking cookies, use the *Standard* protection level.
+
+
+:::
 
     f. *Remove X-Client-Data header*
 

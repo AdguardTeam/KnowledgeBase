@@ -987,7 +987,7 @@ The list of the available modifier options:
 - `location` disables [**Block Location API**](../../stealth-mode#location) option
 - `flash` disables [**Block Flash**](../../stealth-mode#flash) option
 - `java` disables [**Block Java**](../../stealth-mode#java) option
-- `referrer` disables [**Hide Referrer from third parties**](../../stealth-mode#miscellaneous) option
+- `referrer` disables [**Hide Referer from third parties**](../../stealth-mode#miscellaneous) option
 - `useragent` disables [**Hide your User-Agent**](../../stealth-mode#useragent) option
 - `ip` disables [**Hide your IP address**](../../stealth-mode#ip) option
 - `xclientdata` disables [**Remove X-Client-Data header from HTTP requests**](../../stealth-mode#xclientdata) option
@@ -2115,7 +2115,7 @@ In the `$replace` value, two characters must be escaped: comma `,` and dollar si
 
 There are three parts in this rule:
 
-- `regexp` - `(<VAST(.|\s)*?>)(.|\s)*<\/VAST>`;
+- `regexp` — `(<VAST(.|\s)*?>)(.|\s)*<\/VAST>`;
 - `replacement` — `\$1<\/VAST>` where `$` is escaped;
 - `modifiers` — `i` for insensitive search.
 
@@ -2302,7 +2302,7 @@ If there is a `$header` modifier in the rule it adds `50`.
 
 #### `$domain` or `$app` with allowed domains or applications {#priority-category-3}
 
-Specified domains through `$domain` or specified applications through `$app` add `100 + 100 / N`, where `N` is the number of modifier values for example: `||example.com^$domain=example.com|example.org|example.net` will add `100 + 100 / 3 = 134.3 = 135` or `||example.com^$app=org.example.app1|org.example.app2` will add `100 + 100 / 2 = 151` or `||example.com^$domain=example.com,app=org.example.app1|org.example.app2` will add `100 + 100/1` ($domain part) and `100 + 100/2` ($app part) - will add `350` in total.
+Specified domains through `$domain` or specified applications through `$app` add `100 + 100 / N`, where `N` is the number of modifier values for example: `||example.com^$domain=example.com|example.org|example.net` will add `100 + 100 / 3 = 134.3 = 135` or `||example.com^$app=org.example.app1|org.example.app2` will add `100 + 100 / 2 = 151` or `||example.com^$domain=example.com,app=org.example.app1|org.example.app2` will add `100 + 100/1` ($domain part) and `100 + 100/2` ($app part), totaling `350`.
 
 Modifier values that are regexps or tld will be interpreted as normal entries of the form `example.com` and counted one by one, for example: `||example.com^$domain=example.*` will add `100 + 100 / 1 = 200` or `||example.com^$domain=example.*|adguard.*` will add `100 + 100 / 2 = 150`.
 
@@ -3993,14 +3993,14 @@ Filtreleme günlüğü, çoğunlukla geliştiricileri filtrelemek için yardımc
 
 Hangi AdGuard ürününü kullandığınıza bağlı olarak, Filtreleme günlüğü farklı yerlerde olabilir.
 
-- In **AdGuard for Windows** you will find it inside *Ad Blocker* tab or via the tray menu;
-- In **AdGuard for Mac** it is under *Settings → Advanced → Filtering log*;
-- In **AdGuard for Android** it is a separate item in the side menu, also filtering log for a specific app or website is accessible from the Assistant.
-- In **AdGuard Browser Extension** it is accessible from the *Miscellaneous* settings tab or by right-clicking the extension icon. Only Chromium- and Firefox-based browsers show applied **element hiding rules** (including CSS, ExtCSS) and **JS rules and scriptlets** in their Filtering logs.
+- In **AdGuard for Windows**, you can find it in the *Ad Blocker* tab or via the tray menu
+- In **AdGuard for Mac**, it is located in *Settings → Advanced → Filtering log*
+- In **AdGuard for Android**, you can find it under *Statistics → Recent activity*. *Recent activity* can also be accessed from the *Assistant*
+- In **AdGuard Browser Extension**, it is accessible from the *Miscellaneous* settings tab or by right-clicking the extension icon. Only Chromium- and Firefox-based browsers show applied **element hiding rules** (including CSS, ExtCSS) and **JS rules and scriptlets** in their Filtering logs
 
 :::not
 
-**iOS için AdGuard** ve **Safari için AdGuard** İçerik engelleyicilerin Safari'de uygulanma şekli nedeniyle Filtreleme günlüğü mevcut değil. AdGuard web isteklerini görmez ve bu nedenle görüntüleyemez.
+In **AdGuard for iOS** and **AdGuard for Safari**, Filtering log does not exist because of the way content blockers are implemented in Safari. AdGuard web isteklerini görmez ve bu nedenle görüntüleyemez.
 
 :::
 
