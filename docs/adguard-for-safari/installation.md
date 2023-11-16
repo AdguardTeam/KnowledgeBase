@@ -45,7 +45,7 @@ On macOS, click *Preference* → *Websites* → *Content Blockers*. If you want 
 
     <!-- adguard-for-safari-content-blocker-setting-macos.png -->
 
-    As for iOS (take ipad pro for example), go *Settings* → *Safari* → *Content Blockers*, turn option to *yes*.
+On iOS, go *Settings* → *Safari* → *Content Blockers*, and set the option to *Yes*.
 
     ![iOS Safari Content Blocker Setting](https://i0.imgs.ovh/2023/10/26/FmgM0.jpeg)
 
