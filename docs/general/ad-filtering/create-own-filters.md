@@ -601,7 +601,7 @@ So, for example, the rule `||evil.com^$method=get|~head` will be rejected.
 
 :::info Compatibility
 
-Rules with `$method` modifier are supported by AdGuard for Windows, Mac, Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.12 or later, and AdGuard Browser Extension for Chrome, Firefox, Edge with TSUrlFilter v2.1.1 or later.
+Rules with `$method` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.12 or later and AdGuard Browser Extension for Chrome, Firefox, and Edge with TSUrlFilter v2.1.1 or later.
 
 :::
 
