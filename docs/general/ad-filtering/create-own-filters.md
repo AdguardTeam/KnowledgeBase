@@ -357,7 +357,7 @@ For Mac, you can find out the bundle ID or the process name of the app by viewin
 
 If you want the rule not to be applied to certain apps, start the app name with the `~` sign.
 
-- `||baddomain.com^$app=~org.example.app` — a rule to block requests that match the specified mask and are sent from any app save for the `org.example.app`.
+- `||baddomain.com^$app=~org.example.app` — a rule to block requests that match the specified mask and are sent from any app except for the `org.example.app`.
 - `||baddomain.com^$app=~org.example.app1|~org.example.app2` — same as above, but now two apps are excluded: `org.example.app1` and `org.example.app2`.
 
 :::caution Restrictions
@@ -540,7 +540,7 @@ The modifier `":" h_value` part may be omitted. In that case, the modifier match
 
 :::info Compatibility
 
-Rules with the `$header` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**.
+Rules with the `$header` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.11 or later.
 
 :::
 
@@ -601,8 +601,7 @@ So, for example, the rule `||evil.com^$method=get|~head` will be rejected.
 
 :::info Compatibility
 
-Rules with the `$method` are supported by AdGuard for Windows, Mac, Android, **running CoreLibs v1.12 or later**,
-and AdGuard Browser Extension for Chrome, Firefox, Edge, **running TSUrlFilter v2.1.1 or later**.
+Rules with `$method` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.12 or later and AdGuard Browser Extension for Chrome, Firefox, and Edge with TSUrlFilter v2.1.1 or later.
 
 :::
 
@@ -677,7 +676,7 @@ You may use a shorter name (alias) instead of using the full modifier name: `$3p
 
 :::info Compatibility
 
-Rules with the `$to` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs v1.12 or later**, and AdGuard Browser Extension, **running TSUrlFilter v2.1.3 or later**.
+Rules with the `$to` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.12 or later and AdGuard Browser Extension with TSUrlFilter v2.1.3 or later.
 
 :::
 
@@ -975,6 +974,8 @@ $extension="userscript name\, with \"quote\""
 - Only AdGuard for Windows, Mac, Android are technically capable of using rules with `$extension` modifier.
 - `$extension` modifier with specific userscript name is supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.13 or later**.
 
+Rules with `$extension` modifier with specific userscript name are supported by AdGuard for Windows, Mac and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.13 or later.
+
 :::
 
 #### **`$jsinject`** {#jsinject-modifier}
@@ -1038,7 +1039,7 @@ Blocking cookies and removing tracking parameters is achieved by using rules wit
 :::info Compatibility
 
 - Stealth Mode is available in AdGuard for Windows, Mac, and Android, and AdGuard Browser Extension. All other products will ignore the rules with `$stealth` modifier.
-- `$stealth` modifier with specific options is supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.10 or later**.
+- Rules with `$stealth` modifier with specific options are supported by AdGuard for Windows, Mac, and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.10 or later.
 
 :::
 
@@ -1462,7 +1463,7 @@ Rules with the `$hls` modifier are supported by AdGuard for Windows, Mac, and An
 
 #### **`$inline-script`** {#inline-script-modifier}
 
-`$inline-script` modifier is a sort of a shortcut for [`$csp`](#csp-modifier) modifier with specific value. E.g. the rule `||example.org^$inline-script` is converting into such a rule:
+The `$inline-script` modifier is designed to block inline JavaScript embedded into the web page, using Content Security Policy (CSP). It improves security and privacy by preventing application of inline ads or potentially malicious scripts. The rule `||example.org^$inline-script` is converting into the CSP-syntax rule:
 
 ```adblock
 ||example.org^$csp=script-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
@@ -1470,7 +1471,7 @@ Rules with the `$hls` modifier are supported by AdGuard for Windows, Mac, and An
 
 #### **`$inline-font`** {#inline-font-modifier}
 
-`$inline-font` modifier is a sort of a shortcut for [`$csp`](#csp-modifier) modifier with specific value. E.g. the rule `||example.org^$inline-font` is converting into such a rule:
+The `$inline-font` modifier is designed to block inline fonts embedded into the web page, using Content Security Policy (CSP). It improves security and privacy by preventing application of inline fonts that could be used for data collection and fingerprinting. The rule `||example.org^$inline-font` is converting into the CSP-syntax rule:
 
 ```adblock
 ||example.org^$csp=font-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
@@ -2008,7 +2009,7 @@ Rules with `$removeparam` modifier are intended to strip query parameters from r
 
 :::note Compatibility
 
-`$removeparam` syntax is supported starting with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.7 and AdGuard Browser Extension v3.6.
+Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac and, Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.7 or later and AdGuard Browser Extension v3.6 or later.
 
 :::
 
@@ -2112,7 +2113,7 @@ Rules with any other modifiers are considered invalid and will be discarded.
 
 - Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac, and Android and AdGuard Browser Extension for Chrome, Firefox, and Edge.
 - `$removeparam` syntax for regular expressions is supported by AdGuard Browser Extension v4.0 and AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.8 or later**.
-- `POST` request types are supported only by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.10 or later**.
+- `POST` request types are supported only by AdGuard for Windows, Mac, and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.10 or later.
 
 :::
 
