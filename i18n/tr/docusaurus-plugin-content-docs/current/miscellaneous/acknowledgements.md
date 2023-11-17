@@ -11,8 +11,8 @@ Bu, AdGuard yazılım geliştirme sürecinde bize gerçekten yardımcı olan kü
 
 ## Windows için AdGuard {#win}
 
-- SQLLite database engine: [sqlite.org](https://sqlite.org)
-- ADO.NET provider for SQLite: [system.data.sqlite.org/index.html/doc/trunk/www/index.wiki](https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki)
+- SQLLite veri tabanı motoru: [sqlite.org](https://sqlite.org)
+- SQLite için ADO.NET sağlayıcısı: [system.data.sqlite.org/index.html/doc/trunk/www/index.wiki](https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki)
 - Json.NET — high-performance JSON framework for .NET: [www.newtonsoft.com/json](https://www.newtonsoft.com/json)
 - AvalonEdit — WPF-based text editor component: [avalonedit.net](https://avalonedit.net)
 
@@ -136,42 +136,42 @@ Also a huge thanks and gratitude to all beta testers and other engaged users, wh
 - Andy Kleinert (AndyKl) — translator and proofreader to German in Crowdin
 - BigDargon — contributed the hostsVN project as a source to the list of AdGuard DNS
 - Blaz — filtreye katkıda bulunan olarak başladı ve şimdi AdGuard'da çalışıyor
-- Boo Berry - forum ve Telegram grubu moderatörü
-- buuuuuuu190 — beta test kullanıcısı, aktif AdGuard Forum üyesi
-- clarke — beta test kullanıcısı, aktif AdGuard Forum üyesi
-- [dartrax](https://github.com/dartrax) — beta test kullanıcısı, aktif AdGuard Forum üyesi
-- dja2k — beta test kullanıcısı, aktif AdGuard Forum üyesi
+- Boo Berry - Telegram grubu moderatörü
+- buuuuuuu190 — beta test kullanıcısı
+- clarke — beta test kullanıcısı
+- [dartrax](https://github.com/dartrax) — beta test kullanıcısı
+- dja2k — — beta test kullanıcısı
 - Eduardo Addad de Oliveira (eduardoaddad) — translator and proofreader to Portuguese and Portuguese, Brazilian in Crowdin
-- fabjazz — beta test kullanıcısı, aktif AdGuard Forum üyesi
+- fabjazz — beta test kullanıcısı
 - Görkem Emrah Güler (gork7777) — translator and proofreader to Turkish in Crowdin
-- hanschke — beta test kullanıcısı, aktif AdGuard Forum üyesi
+- hanschke — beta test kullanıcısı
 - iDjay — iOS için AdGuard'ın olağan üstü beta test kullanıcısı
 - Imre Kristoffer Eilertsen (DandelionSprout) — maintainer of "Dandelion Sprout’s Nordic Filters" that are included in all AdGuard tools
 - IONIL — translator and proofreader to Hebrew in Crowdin
-- itabmedia — beta test kullanıcısı, aktif AdGuard Forum üyesi
-- kirasam — beta test kullanıcısı, aktif AdGuard Forum üyesi
+- itabmedia — beta test kullanıcısı
+- kirasam — beta test kullanıcısı
 - krystian3w — çok aktif filtre katkıda bulunan
 - lancelot.moon — translator and proofreader to Chinese Traditional in Crowdin, beta tester
-- Lord Ami — beta test kullanıcısı, aktif AdGuard Forum üyesi
+- Lord Ami — beta test kullanıcısı
 - Lukas Novotny (novas78) — Crowdin'de Çekçe çevirmen ve düzeltmen
-- malware1 — beta test kullanıcısı, aktif AdGuard Forum üyesi
-- milder — beta test kullanıcısı, aktif AdGuard Forum üyesi
-- Nicos18 — beta test kullanıcısı, aktif AdGuard Forum üyesi
+- malware1 — beta test kullanıcısı
+- milder — beta test kullanıcısı
+- Nicos18 — beta test kullanıcısı
 - Oizaro — translator and proofreader to Italian in Crowdin
 - Oleg Chashko — Safari için AdGuard'ın çok aktif beta test kullanıcısı
 - Oskari Lavinto (olavinto) — translator and proofreader to Finnish in Crowdin
-- ouzbed — beta test kullanıcısı, aktif AdGuard Forum üyesi
+- ouzbed — beta test kullanıcısı
 - PentagramTr — filtre katkıda bulunan, yani Türkçe filtreye birçok yeni şey getirdi
 - Peter Hubinsky (hubak) — translator and proofreader to Slovak in Crowdin
 - PiQuark6046 — filtre katkıda bulunan
-- rickyoh — beta test kullanıcısı, aktif AdGuard Forum üyesi
-- Ronin427 — beta test kullanıcısı, aktif AdGuard Forum üyesi
-- Sanjay Nand — beta test kullanıcısı, aktif AdGuard Forum üyesi
-- saturnotaku — beta test kullanıcısı, aktif AdGuard Forum üyesi
-- steve1209 — beta test kullanıcısı, aktif AdGuard Forum üyesi
-- streetwolf — beta test kullanıcısı, aktif AdGuard Forum üyesi
+- rickyoh — beta test kullanıcısı
+- Ronin427 — beta test kullanıcısı
+- Sanjay Nand — beta test kullanıcısı
+- saturnotaku — beta test kullanıcısı
+- steve1209 — beta test kullanıcısı
+- streetwolf — beta test kullanıcısı
 - superlex — helps us with scriptlets, filters, and AdGuard for Safari
-- TayTayTheKiller — beta test kullanıcısı, aktif AdGuard Forum üyesi
+- TayTayTheKiller — beta test kullanıcısı
 - [TPS](https://github.com/TPS) — hata bulucu, filtre katkıda bulunan
 - Yuki2718 - AdGuard filtrelerine aktif olarak katkıda bulunur
 - zznosar - iOS için AdGuard'a odaklanan aktif beta test kullanıcısı
@@ -181,4 +181,4 @@ Also a huge thanks and gratitude to all beta testers and other engaged users, wh
 
 We also want to thank the [xda-developers users](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/). Thank you for your helpful feedback!
 
-Kullanıcılarımızdan gelen yorumları, özellikle yapıcı olanları her zaman takdir ediyoruz. AdGuard hakkındaki düşüncelerinizi paylaşmak, yeni özellikler talep etmek ve hata göndermek için bizimle her zaman iletişime geçebilirsiniz. Join the [AdGuard Forum](http://forum.adguard.com/forumdisplay.php?25-English-Forums), [Subreddit](https://reddit.com/r/adguard), [Xda-developers Forum](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/) or visit our page on [GitHub](https://github.com/AdguardTeam).
+Kullanıcılarımızdan gelen yorumları, özellikle yapıcı olanları her zaman takdir ediyoruz. AdGuard hakkındaki düşüncelerinizi paylaşmak, yeni özellikler talep etmek ve hata göndermek için bizimle her zaman iletişime geçebilirsiniz. [AdGuard Subreddit](https://reddit.com/r/adguard), [Xda-developers Forum](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/) adreslerine katılın veya [GitHub](https://github.com/AdguardTeam) sayfamızı ziyaret edin.

@@ -79,7 +79,7 @@ DNS koruma ayarlarını keşfetmek istemenizin üç önemli nedeni vardır. İlk
 
 ![DNS Koruması *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/dns-settings.png)
 
-In the DNS protection module of AdGuard for Windows you can select the DNS servers from known DNS providers, including [AdGuard DNS](https://adguard-dns.io/kb/) that blocks ads and trackers, AdGuard DNS Family Protection that in addition blocks adult content, or AdGuard DNS Non-filtering that provides a secure and reliable connection, but doesn't filter anything. Özel DNS sunucuları bile ekleyebilirsiniz. Ayrıca, [DNS kuralları söz dizimini](https://adguard-dns.io/kb/general/dns-filtering-syntax/) kullanarak özel kurallar ekleme seçeneği de vardır. Ve gerekirse, [istediğiniz DNS filtrelerini](https://filterlists.com) ekleyebilirsiniz.
+In the DNS protection module of AdGuard for Windows you can select the DNS servers from known DNS providers, including [AdGuard DNS](https://adguard-dns.io/kb/) that blocks ads and trackers, AdGuard DNS Family Protection that in addition blocks adult content, or AdGuard DNS Non-filtering that provides a secure and reliable connection, but doesn't filter anything. Özel DNS sunucuları bile ekleyebilirsiniz. Ayrıca, [DNS kural söz dizimini](https://adguard-dns.io/kb/general/dns-filtering-syntax/) kullanarak özel kurallar ekleme seçeneği de vardır. Ve gerekirse, [istediğiniz DNS filtrelerini](https://filterlists.com) ekleyebilirsiniz.
 
 ### Ebeveyn Denetimi
 

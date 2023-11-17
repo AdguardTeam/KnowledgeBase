@@ -112,14 +112,11 @@ Or you  can configure remove parameters manually:
 
 `setting by name`: server:MyServer
 
- `manually settings`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
-
+`manually settings`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
 
 :::
 
------
-
-**Don't forget to include the password as an extra and mention package name and class! You need to do so for every intent!**
+**Don't forget to include the password as an extra and mention package name and class. You need to do so for every intent.**
 
 Extra: `password:*******`
 

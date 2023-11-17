@@ -29,7 +29,7 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 - Open the browser extension settings by clicking on the corresponding icon;
 - Click on **Report an issue**:
 
-![extension *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/extension_issue.png)
+![extension_issue *mobile_border](https://cdn.adtidy.org/blog/new/5si74extension.png)
 
 - After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
 
@@ -45,9 +45,9 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 ### Android {#android}
 
 - AdGuard ayarlarını açın;
-- Choose **Support**, then **Send Feedback** → **Missed ad**/**Incorrect blocking**:
+- Choose **Support**, then **Report incorrect blocking**:
 
-![android *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/android.png)
+![android *mobile_border](https://cdn.adtidy.org/blog/new/apicfkandroid-new.jpg)
 
 - After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
 
@@ -65,7 +65,7 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 - AdGuard ayarlarını açın;
 - Choose **Support**, then **Report incorrect blocking**:
 
-![ios *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/ios_issue.png)
+![ios *mobile_border](https://cdn.adtidy.org/blog/new/fnl9aios.jpeg)
 
 - Fill in the form for reporting a complaint;
 - After you've done it, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.

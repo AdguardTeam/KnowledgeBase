@@ -13,11 +13,7 @@ Pokud máte podezření, že je váš počítač napaden malwarem nebo viry, mů
 
 ## Bezplatné antivirové nástroje {#free-antivirus}
 
-Existuje jich celá řada a můžete použít libovolný z nich, např.:
-
-[Dr.Web CureIt!](http://www.freedrweb.com/cureit/?lng=en)
-
-Pokud tato kontrola antivirovými nástroji nic neodhalila, ale počítač se stále chová podezřele, zkuste jej otestovat na adware, který může implementovat svou reklamu na všechny otevřené stránky.
+Existuje jich celá řada a můžete použít libovolný z nich. Pokud tato kontrola antivirovými nástroji nic neodhalila, ale počítač se stále chová podezřele, zkuste jej otestovat na adware, který může implementovat svou reklamu na všechny otevřené stránky.
 
 ## Jak vyčistit systém od adware {#adware}
 

@@ -23,7 +23,7 @@ Když jste přesměrováni na webovou stránku z vyhledávače Google, Yahoo neb
 
 ### Požádat webové stránky, aby vás nesledovaly {#donottrack}
 
-Odešle webovým stránkám, které jste navštívili požadavky [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) a [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track).
+Odesílá webovým stránkám, které jste navštívili signály [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) a [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track).
 
 ### Odebrat sledovací parametry z URL
 

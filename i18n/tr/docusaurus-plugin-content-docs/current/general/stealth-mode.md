@@ -23,7 +23,7 @@ When you get directed to a website from Google, Yahoo, or any other search engin
 
 ### Sitelerden sizi izlememelerini iste {#donottrack}
 
-Ziyaret ettiğiniz sitelere [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) ve [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) sinyalleri gönderir.
+Sends the [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit.
 
 ### Strip tracking parameters from URLs
 

@@ -13,11 +13,7 @@ AdGuard is not an antivirus program. 当用户要访问一个恶意软件或钓�
 
 ## 免费的防病毒软件 {#free-antivirus}
 
-实用程序不可枚举，您可以使用任何自己喜欢的，比如：
-
-[Dr.Web CureIt!](http://www.freedrweb.com/cureit/?lng=en)
-
-如果防病毒实用程序的检查没有发现任何问题，但计算机仍然运行可疑。请您尝试对设备进行广告软件检测，查看计算机上是否有恶意广告软件。
+There are many of them and you can use any one you prefer. 如果防病毒实用程序的检查没有发现任何问题，但计算机仍然运行可疑。请您尝试对设备进行广告软件检测，查看计算机上是否有恶意广告软件。
 
 ## 如何清除在系统上的恶意广告软件 {#adware}
 

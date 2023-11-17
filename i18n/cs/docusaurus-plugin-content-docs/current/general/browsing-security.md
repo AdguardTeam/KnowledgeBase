@@ -57,8 +57,8 @@ Na obrázku níže jsme popsali algoritmus práce komunity pro Bezpečné prohl�
 
 ### Chcete nám pomoci?
 
-Rádi přijmeme jakoukoli pomoc! Pokud nám chcete zaslat stížnost na phishingové nebo malwarové stránky, můžete tak učinit prostřednictvím technické podpory skrze **support@adguard.com** nebo [na našem fóru](http://forum.adguard.com/).
+Rádi přijmeme jakoukoli pomoc! Pokud nám chcete zaslat stížnost na phishingové nebo malwarové stránky, můžete tak učinit prostřednictvím technické podpory skrze **support@adguard.com**.
 
 ### Falešně pozitivní odezvy
 
-Občas se do AdGuard filtrů přidají i jiné než škodlivé webové stránky. Snažíme se procento falešných pozitivních výsledků snížit, ale stále se vyskytují. Pokud se s tímto chováním AdGuardu setkáte, pošlete nám stížnost na falešně pozitivní výsledek. Takové stížnosti můžete podat prostřednictvím naší technické podpory skrze **support@adguard.com** nebo na [našem fóru](http://forum.adguard.com/).
+Občas se do AdGuard filtrů přidají i jiné než škodlivé webové stránky. Snažíme se procento falešných pozitivních výsledků snížit, ale stále se vyskytují. Pokud se s tímto chováním AdGuardu setkáte, pošlete nám stížnost na falešně pozitivní výsledek. Takové stížnosti můžete podat prostřednictvím naší technické podpory skrze **support@adguard.com**.

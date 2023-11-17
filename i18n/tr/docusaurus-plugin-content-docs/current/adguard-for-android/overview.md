@@ -55,7 +55,7 @@ Temel koruma, çoğu sitedeki reklamları etkili bir şekilde engeller. Daha öz
 
     a. *İzleyicileri engelleyin*. Bu ayar, AdGuard'ın İzleme Koruması filtresini kullanan çevrimiçi sayaçlara ve web analizi araçlarına karşı koruma sağlar
 
-    b. *Sitelerden sizi izlememelerini isteyin*. Bu ayar, ziyaret ettiğiniz sitelere [Global Privacy Control](https://globalprivacycontrol.org/) ve [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) isteklerini göndererek web uygulamalarından etkinliğinizin izlenmesini devre dışı bırakmasını ister
+    b. *Sitelerden sizi izlememelerini isteyin*. Bu ayar, ziyaret ettiğiniz sitelere [Global Privacy Control](https://globalprivacycontrol.org/) ve [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) sinyallerini göndererek web uygulamalarından etkinliğinizin izlenmesini devre dışı bırakmasını ister
 
     c. *X-Client-Data başlığını kaldırın*. Bu ayar, Google Chrome'un sürüm ve değişiklik bilgilerini Google alan adlarına (Double Click ve Google Analytics dahil) göndermesini engeller
 
@@ -452,3 +452,79 @@ Due to additional security measures of Android apps, some AdGuard features are o
 - **HTTPS filtering in most apps** requires [installing a CA certificate into the system store](#security-certificates), as most apps do not trust certificates in the user store. Installing a certificate into the system store is only possible on rooted devices
 - The [**Automatic proxy** routing mode](#routing-mode) requires root access due to Android's limitations on system-wide traffic filtering
 - The **Manual proxy** routing mode requires root access on Android 10 and above as it's no longer possible to determine the name of the app associated with a connection filtered by AdGuard
+
+## Asistan
+
+Asistan, AdGuard uygulamasını başlatmadan uygulama veya site ayarlarını hızlı bir şekilde değiştirmek ve istatistikleri görüntülemek için kullanışlı bir araçtır.
+
+### Asistana nasıl erişilir
+
+ 1. Android cihazınızda, bildirim gölgesini açmak için ekranın üst kısmından aşağı doğru kaydırın.
+ 2. AdGuard bildirimini bulun ve **genişletin**.
+
+    ![Bildirim gölgesinde AdGuard bildirimini genişletin *mobile](https://cdn.adtidy.org/blog/new/jkksbhassistant-shade.png)
+
+ 3. *Asistan* öğesine dokunun.
+
+    ![Tap Assistant *mobile](https://cdn.adtidy.org/blog/new/1qvlhassistant-tap-assistant.jpg)
+
+### Asistan nasıl kullanılır
+
+Asistanı açtığınızda iki sekme göreceksiniz: **Uygulamalar** ve **Siteler**. Her biri sırasıyla son kullanılan uygulamaların ve sitelerin bir listesini içerir.
+
+![Asistan ana *mobile](https://cdn.adtidy.org/blog/new/i5mljAssistant-main.jpg)
+
+### Uygulamalar sekmesi
+
+Bir uygulama seçtikten sonra (**örnek olarak Chrome'u ele alalım**), yapabileceklerinizle ilgili birkaç seçenek göreceksiniz.
+
+![Asistan Chrome menüsü *mobile_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
+
+#### Son etkinlikler
+
+You'll be taken to the AdGuard app, where you'll see detailed info on the last 10K requests made by Chrome.
+
+![App recent activity *mobile_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
+
+#### Uygulama istatistikleri
+
+You'll be taken to the AdGuard app, where you'll see detailed statistics about Chrome:
+
+- Chrome'da engellenen reklam ve izleyici sayısı
+- Chrome'un reklam veya izleme isteklerinin engellenmesiyle kaydedilen veriler
+- Chrome'un istek gönderdiği şirketler
+
+#### Uygulama yönetimi
+
+You'll be taken to the AdGuard app screen where you can disable AdGuard protection for the app.
+
+#### Güvenlik Duvarı ayarları
+
+You'll be taken to the AdGuard screen where you can change Firewall settings for the app, meaning you can manage the app's Internet access.
+
+### Siteler sekmesi
+
+![Asistan siteler sekmesi *mobile](https://cdn.adtidy.org/blog/new/74y9rAssistant-websites.jpg)
+
+Bir site seçin (**örnek olarak google.com'u ele alalım**) ve yapabileceklerinize ilişkin birkaç seçenek göreceksiniz.
+
+![Asistan google.com bilgileri *mobile](https://cdn.adtidy.org/blog/new/tht0tgoogle-com-assistant.jpg)
+
+#### İzin listesine ekle
+
+Bu seçeneğe dokunulduğunda google.com anında izin listesine eklenir ve AdGuard artık onu filtrelemez (yani reklamlar ve izleyiciler site için engellenmeyecektir).
+
+#### Son etkinlikler
+
+You'll be taken to the AdGuard app, where you'll see detailed info on the last 10K requests to google.com.
+
+![website recent activity *mobile_border](https://cdn.adtidy.org/blog/new/xq7f3assistant-website-recent-activity.png)
+
+#### Site istatistikleri
+
+You'll be taken to the AdGuard app, where you'll see detailed statistics about google.com:
+
+- Number of blocked ad and tracking requests to google.com
+- Data saved by blocking ad and tracking requests to google.com
+- google.com'a istek gönderen uygulamalar
+- Information about google.com's subdomains

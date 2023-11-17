@@ -13,11 +13,7 @@ Si sospechas que tu computadora está infectada por malware o virus, antes que n
 
 ## Antivirus gratuitos {#free-antivirus}
 
-Hay muchos de ellos y puedes usar cualquiera que prefieras, por ejemplo:
-
-[Dr.Web CureIt!](http://www.freedrweb.com/cureit/?lng=en)
-
-Si esta verificación con las utilidades antivirus no reveló nada, pero la computadora aún se comporta de manera sospechosa, intenta probarla en busca de adware, que puede implementar su publicidad en cualquier página que abra.
+There are many of them and you can use any one you prefer. Si esta verificación con las utilidades antivirus no reveló nada, pero la computadora aún se comporta de manera sospechosa, intenta probarla en busca de adware, que puede implementar su publicidad en cualquier página que abra.
 
 ## Cómo limpiar tu sistema de Adware {#adware}
 

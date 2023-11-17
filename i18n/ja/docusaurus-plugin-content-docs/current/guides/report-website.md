@@ -29,7 +29,7 @@ When you send a complaint via the app or via AdGuard Browser Assistant, all info
 - ブラウザで🛡アイコンをクリックして、AdGuardブラウザ拡張機能を開く
 - 「**問題・不具合を報告する**」をクリック
 
-![ブラウザ拡張機能 *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/report-website-ja-1.png)
+![extension_issue *mobile_border](https://cdn.adtidy.org/blog/new/5si74extension.png)
 
 - フォームを入力した後、 [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues)において問題に対する「issue」が自動的に作成されます。 そのissueのリンクも表示されますので、ご報告いただいた問題への対応の進捗状況をリンク先issueにて監視することができます。
 
@@ -45,9 +45,9 @@ When you send a complaint via the app or via AdGuard Browser Assistant, all info
 ### AdGuard for Android の場合 {#android}
 
 - AdGuardアプリ内で設定を開く
-- Choose **Support**, then **Send Feedback** → **Missed ad**/**Incorrect blocking**:
+- 「**お客様サポート**」→「**不適切なブロックを報告する**」を選択
 
-![android *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/android.png)
+![android *mobile_border](https://cdn.adtidy.org/blog/new/apicfkandroid-new.jpg)
 
 - フォームを入力した後、 [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues)において問題に対する「issue」が自動的に作成されます。 そのissueのリンクも表示されますので、ご報告いただいた問題への対応の進捗状況をリンク先issueにて監視することができます。
 
@@ -65,7 +65,7 @@ When you send a complaint via the app or via AdGuard Browser Assistant, all info
 - AdGuardアプリ内で設定（左下の⚙）を開く
 - 「**お客様サポート**」→「**不適切なブロックを報告する**」を選択
 
-![ios *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/report-website-ja-4.png)
+![ios *mobile_border](https://cdn.adtidy.org/blog/new/fnl9aios.jpeg)
 
 - 問題報告用フォームに残りの必要事項を記入してください（ほとんどの情報は自動入力されます）
 - フォームを入力した後、 [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues)において問題に対する「issue」が自動的に作成されます。 そのissueのリンクも表示されますので、ご報告いただいた問題への対応の進捗状況をリンク先issueにて監視することができます。

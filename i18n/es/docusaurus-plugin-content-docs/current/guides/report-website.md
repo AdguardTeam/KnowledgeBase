@@ -29,7 +29,7 @@ Para informar sobre la reinserción de un anuncio o la visualización incorrecta
 - Abre la configuración de la extensión del navegador haciendo clic en el icono correspondiente;
 - Haz clic en **Reportar un problema**:
 
-![extensión *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/extension_issue.png)
+![extension_issue *mobile_border](https://cdn.adtidy.org/blog/new/5si74extension.png)
 
 - Una vez que hayas completado el formulario, se creará automáticamente una propuesta en [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues). También habrá un enlace para monitorear el progreso hacia la solución de tu problema.
 
@@ -45,9 +45,9 @@ Para informar sobre la reinserción de un anuncio o la visualización incorrecta
 ### Android {#android}
 
 - Abre la configuración de AdGuard;
-- Choose **Support**, then **Send Feedback** → **Missed ad**/**Incorrect blocking**:
+- Elige **Soporte**, luego **Informe de bloqueo incorrecto**:
 
-![android *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/android.png)
+![android *mobile_border](https://cdn.adtidy.org/blog/new/apicfkandroid-new.jpg)
 
 - Una vez que hayas completado el formulario, se creará automáticamente una propuesta en [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues). También habrá un enlace para monitorear el progreso hacia la solución de tu problema.
 
@@ -65,7 +65,7 @@ Para informar sobre la reinserción de un anuncio o la visualización incorrecta
 - Abre la configuración de AdGuard;
 - Elige **Soporte**, luego **Informe de bloqueo incorrecto**:
 
-![ios *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/ios_issue.png)
+![ios *mobile_border](https://cdn.adtidy.org/blog/new/fnl9aios.jpeg)
 
 - Completa el formulario para reportar una queja;
 - Una vez hecho esto, se creará automáticamente una propuesta en [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues). También habrá un enlace para monitorear el progreso hacia la solución de tu problema.

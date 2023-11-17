@@ -29,7 +29,7 @@ Chcete-li nahlásit opakované vložení reklamy nebo nesprávné zobrazení web
 - Otevřete nastavení rozšíření prohlížeče kliknutím na příslušnou ikonu;
 - Klikněte na **Nahlásit problém**:
 
-![extension *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/extension_issue.png)
+![extension_issue *mobile_border](https://cdn.adtidy.org/blog/new/5si74extension.png)
 
 - Po vyplnění formuláře se automaticky vytvoří problém na [GitHubu](https://github.com/AdguardTeam/AdguardFilters/issues). K dispozici bude také odkaz pro sledování postupu řešení vašeho problému.
 
@@ -45,9 +45,9 @@ Chcete-li nahlásit opakované vložení reklamy nebo nesprávné zobrazení web
 ### Android {#android}
 
 - Otevřete nastavení AdGuardu;
-- Vyberte **Podpora**, poté **Odeslat zpětnou vazbu** → **Nezablokovaná reklama**/**Nesprávné blokování**:
+- Vyberte **Podpora**, poté **Nahlásit nesprávné blokování**:
 
-![android *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/android.png)
+![android *mobile_border](https://cdn.adtidy.org/blog/new/apicfkandroid-new.jpg)
 
 - Po vyplnění formuláře se automaticky vytvoří problém na [GitHubu](https://github.com/AdguardTeam/AdguardFilters/issues). K dispozici bude také odkaz pro sledování postupu řešení vašeho problému.
 
@@ -65,7 +65,7 @@ Chcete-li nahlásit opakované vložení reklamy nebo nesprávné zobrazení web
 - Otevřete nastavení AdGuardu;
 - Vyberte **Podpora**, poté **Nahlásit nesprávné blokování**:
 
-![ios *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/ios_issue.png)
+![ios *mobile_border](https://cdn.adtidy.org/blog/new/fnl9aios.jpeg)
 
 - Vyplňte formulář pro nahlášení problému;
 - Po vyplnění formuláře se automaticky vytvoří problém na [GitHubu](https://github.com/AdguardTeam/AdguardFilters/issues). K dispozici bude také odkaz pro sledování postupu řešení vašeho problému.

@@ -19,7 +19,7 @@ To describe the syntax of our filtering rules, we use [Augmented BNF for Syntax 
 
 :::info
 
-Originally, the AdGuard's syntax was based on the syntax of Adblock Plus rules. Later, we extended it with new types of rules for better ad filtering. Einige Teile dieses Artikels über die Regeln, die sowohl für AdGuard als auch für ABP gelten, wurden aus [diesem Artikel](https://adblockplus.org/en/filters) übernommen.
+Originally, the AdGuard's syntax was based on the syntax of Adblock Plus rules. Later, we extended it with new types of rules for better ad filtering. Some parts of this article about the rules common both to AdGuard and ABP were taken from [the Adblock Plus guide on how to write filters](https://adblockplus.org/en/filters).
 
 :::
 
@@ -153,7 +153,7 @@ Browser detects a blocked request as completed with an error.
 
 :::
 
-### Basic rules syntax {#basic-rules-syntax}
+### Basic rule syntax {#basic-rules-syntax}
 
 ```text
       rule = ["@@"] pattern [ "$" modifiers ]
@@ -173,7 +173,7 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 
 :::note Visuelle Darstellung
 
-We also recommend to get acquainted with [this article](https://adblockplus.org/filter-cheatsheet#blocking), for better understanding of how such rules should be made.
+We also recommend to get acquainted with [the Adblock Plus filter cheatsheet](https://adblockplus.org/filter-cheatsheet#blocking), for better understanding of how such rules should be made.
 
 :::
 
@@ -223,7 +223,7 @@ This rule will not be ignored:
 
 This rule validation is not applied in the following cases:
 
-1. The rule contains [`$domain`](#domain-modifier) modifier that points to a specific domain list.
+1. The rule contains [`$domain`](#domain-modifier) modifier that points to a specific domain list
 
     These rules will not be ignored:
 
@@ -238,7 +238,7 @@ This rule validation is not applied in the following cases:
     $domain=~example.com,script
     ```
 
-1. The rule contains [`$app`](#app-modifier) modifier that points to a specific app list.
+1. The rule contains [`$app`](#app-modifier) modifier that points to a specific app list
 
     This rule will not be ignored:
 
@@ -252,7 +252,7 @@ This rule validation is not applied in the following cases:
     $app=~curl,document
     ```
 
-1. The rule contains one or more modifiers from among [`$cookie`](#cookie-modifier), [`$removeparam`](#removeparam-modifier), [`$removeheader`](#removeheader-modifier), [`$stealth`](#stealth-modifier).
+1. The rule contains one or more modifiers from among [`$cookie`](#cookie-modifier), [`$removeparam`](#removeparam-modifier), [`$removeheader`](#removeheader-modifier), [`$stealth`](#stealth-modifier)
 
     These rules will not be ignored:
 
@@ -279,7 +279,7 @@ In AdGuard for Windows, Mac, Android, and AdGuard Browser Extension rules with w
 
 Rules with wildcard for TLD are not supported by AdGuard Content Blocker.
 
-### Basic rules examples
+### Basic rule examples
 
 - `||example.com/ads/*` — a simple rule, which corresponds to addresses like `http://example.com/ads/banner.jpg` and even `http://subdomain.example.com/ads/otherbanner.jpg`.
 
@@ -287,7 +287,7 @@ Rules with wildcard for TLD are not supported by AdGuard Content Blocker.
 
 - `@@||example.com$document` — general exception rule. It completely disables filtering for `example.com` and all subdomains. There is a number of modifiers which can be used in exception rules. For more details, please follow the link [below](#exception-modifiers).
 
-### Basic rules modifiers
+### Basic rule modifiers
 
 - [Basic modifiers](#basic-rules-basic-modifiers)
 - [Content-type modifiers](#content-type-modifiers)
@@ -353,7 +353,7 @@ For Mac, you can find out the bundle ID or the process name of the app by viewin
 
 If you want the rule not to be applied to certain apps, start the app name with the `~` sign.
 
-- `||baddomain.com^$app=~org.example.app` — a rule to block requests that match the specified mask and are sent from any app save for the `org.example.app`.
+- `||baddomain.com^$app=~org.example.app` — a rule to block requests that match the specified mask and are sent from any app except for the `org.example.app`.
 - `||baddomain.com^$app=~org.example.app1|~org.example.app2` — same as above, but now two apps are excluded: `org.example.app1` and `org.example.app2`.
 
 :::caution Beschränkungen
@@ -457,10 +457,10 @@ If you want the rule not to be applied to certain domains, start a domain name w
 
 In some cases the `$domain` modifier can match not only the referrer domain, but also the target domain. This happens when all of the following is true:
 
-1. The request has `document` content type.
-1. The rule pattern does not match any particular domains.
-1. The rule pattern does not contain regular expressions.
-1. The `$domain` modifier contains only excluded domains, e.g. `$domain=~example.org|~example.com`.
+1. The request has `document` content type
+1. The rule pattern does not match any particular domains
+1. The rule pattern does not contain regular expressions
+1. The `$domain` modifier contains only excluded domains, e.g. `$domain=~example.org|~example.com`
 
 The following predicate should be satisfied to perform a target domain matching:
 
@@ -533,7 +533,7 @@ The modifier `":" h_value` part may be omitted. In that case, the modifier match
 
 :::info Kompatibilität
 
-Rules with the `$header` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**.
+Rules with the `$header` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.11 or later.
 
 :::
 
@@ -567,7 +567,7 @@ This modifier defines a rule which applies only to addresses that match the case
 
 :::info Kompatibilität
 
-Rules with the `$match-case` are supported by AdGuard for iOS and Safari, **running SafariConverterLib v2.0.41 or later**.
+Rules with the `$match-case` are supported by AdGuard for iOS and AdGuard for Safari, **running SafariConverterLib v2.0.43 or later**.
 
 All other products already support this modifier.
 
@@ -592,7 +592,7 @@ Rules with mixed negated and not negated values are considered invalid. So, for 
 
 :::info Kompatibilität
 
-Rules with the `$method` are supported by AdGuard for Windows, Mac, Android, **running CoreLibs v1.12 or later**, and AdGuard Browser Extension for Chrome, Firefox, Edge, **running TSUrlFilter v2.1.1 or later**.
+Rules with `$method` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.12 or later and AdGuard Browser Extension for Chrome, Firefox, and Edge with TSUrlFilter v2.1.1 or later.
 
 :::
 
@@ -621,8 +621,8 @@ A restriction of third-party and own requests. A third-party request is a reques
 
 To be considered as such, a third-party request should meet one of the following conditions:
 
-1. Its referrer is not a subdomain of the target domain or vice versa. For example, a request to `subdomain.example.org` from `example.org` is not a third-party request.
-2. Its `Sec-Fetch-Site` header is set to `cross-site`. If there is a `$third-party` modifier, the rule is only applied to third-party requests.
+1. Its referrer is not a subdomain of the target domain or vice versa. For example, a request to `subdomain.example.org` from `example.org` is not a third-party request
+1. Its `Sec-Fetch-Site` header is set to `cross-site`
 
 :::
 
@@ -662,7 +662,7 @@ You may use a shorter name (alias) instead of using the full modifier name: `$3p
 
 :::info Kompatibilität
 
-Rules with the `$to` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs v1.12 or later**, and AdGuard Browser Extension, **running TSUrlFilter v2.1.3 or later**.
+Rules with the `$to` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.12 or later and AdGuard Browser Extension with TSUrlFilter v2.1.3 or later.
 
 :::
 
@@ -857,7 +857,7 @@ Exception rules disable the other basic rules for the addresses to which they co
 
 :::note Visuelle Darstellung
 
-We recommend to get acquainted with [this article](https://adblockplus.org/filter-cheatsheet#blocking), for better understanding of how exception rules should be made.
+We recommend to get acquainted with [the Adblock Plus filter cheatsheet](https://adblockplus.org/filter-cheatsheet#blocking), for better understanding of how exception rules should be made.
 
 :::
 
@@ -952,6 +952,8 @@ $extension="userscript name\, with \"quote\""
 - Only AdGuard for Windows, Mac, Android are technically capable of using rules with `$extension` modifier.
 - `$extension` modifier with specific userscript name is supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.13 or later**.
 
+Rules with `$extension` modifier with specific userscript name are supported by AdGuard for Windows, Mac and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.13 or later.
+
 :::
 
 #### **`$jsinject`** {#jsinject-modifier}
@@ -977,7 +979,7 @@ $stealth [= opt1 [| opt2 [| opt3 [...]]]]
 The list of the available modifier options:
 
 - `searchqueries` disables [**Hide your search queries**](../../stealth-mode#searchqueries) option
-- `donottrack` disables [**Send Do-Not-Track header**](../../stealth-mode#donottrack) option
+- `donottrack` disables [**Ask websites not to track you**](../../stealth-mode#donottrack) option
 - `3p-cookie` disables [**Self-destructing third-party cookies**](../../stealth-mode#3p-cookie) option
 - `1p-cookie` disables [**Self-destructing first-party cookies**](../../stealth-mode#1p-cookie) option
 - `3p-cache` disables [**Disable cache for third-party requests**](../../stealth-mode#3p-cache) option
@@ -1015,7 +1017,7 @@ Blocking cookies and removing tracking parameters is achieved by using rules wit
 :::info Kompatibilität
 
 - Stealth Mode is available in AdGuard for Windows, Mac, and Android, and AdGuard Browser Extension. All other products will ignore the rules with `$stealth` modifier.
-- `$stealth` modifier with specific options is supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.10 or later**.
+- Rules with `$stealth` modifier with specific options are supported by AdGuard for Windows, Mac, and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.10 or later.
 
 :::
 
@@ -1029,7 +1031,7 @@ Disables blocking of all requests sent from the pages matching the rule and disa
 
 :::info Kompatibilität
 
-In AdGuard for iOS and Safari rules with `$urlblock` work as [$document exclusion](#document-modifier) — unblock everything.
+In AdGuard for iOS and AdGuard for Safari, rules with `$urlblock` work as [$document exclusion](#document-modifier) — unblock everything.
 
 Rules with `$urlblock` modifier are not supported by AdGuard Content Blocker.
 
@@ -1068,7 +1070,7 @@ Disables generic basic rules on pages that correspond to exception rule.
 
 :::info Kompatibilität
 
-In AdGuard for iOS and Safari rules with `$genericblock` work as [$document exclusion](#document-modifier) — unblock everything.
+In AdGuard for iOS and AdGuard for Safari, rules with `$genericblock` work as [$document exclusion](#document-modifier) — unblock everything.
 
 Rules with `$genericblock` modifier are not supported by AdGuard Content Blocker.
 
@@ -1110,7 +1112,7 @@ All cosmetic rules — not just specific ones — can be disabled by [`$elemhide
 
 :::info Kompatibilität
 
-Rules with `$specifichide` modifier are not supported by AdGuard for iOS and Safari and AdGuard Content Blocker.
+Rules with `$specifichide` modifier are not supported by AdGuard for iOS, AdGuard for Safari, and AdGuard Content Blocker.
 
 :::
 
@@ -1175,8 +1177,8 @@ The rules with the `$badfilter` modifier disable other basic rules to which they
 
 Rules with `$badfilter` modifier can disable other basic rules for specific domains if they fulfill the following conditions:
 
-1. The rule has a `$domain` modifier.
-1. The rule does not have a negated domain `~` in `$domain` modifier value.
+1. The rule has a `$domain` modifier
+1. The rule does not have a negated domain `~` in `$domain` modifier value
 
 In that case, the `$badfilter` rule will disable the corresponding rule for domains specified in both the `$badfilter` and basic rules. Please note that [wildcard-TLD logic](#wildcard-for-tld) works here as well.
 
@@ -1252,7 +1254,7 @@ There are two methods to deactivate `$cookie` rules: the primary method involves
 
 :::info Kompatibilität
 
-Rules with `$cookie` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
+Rules with `$cookie` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS, and AdGuard for Safari.
 
 :::
 
@@ -1296,7 +1298,7 @@ In case if multiple `$csp` rules match a single request, we will apply each of t
 
 :::info Kompatibilität
 
-Rules with `$csp` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
+Rules with `$csp` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and AdGuard for Safari.
 
 :::
 
@@ -1348,17 +1350,17 @@ When multiple `$hls` rules match the same request, their effect is cumulative.
 
 A quick summary of the [specification](https://datatracker.ietf.org/doc/html/rfc8216):
 
-1. An HLS playlist is a collection of text lines.
-1. A line may be empty, a comment (starts with `#`), a tag (also starts with `#`, can only be recognized by name) or a URL.
-1. A URL line is called a "segment".
-1. Tags may apply to a single segment, i.e. the first URL line after the tag, to all segments following the tag and until the tag with the same name, or to the whole playlist.
+1. An HLS playlist is a collection of text lines
+1. A line may be empty, a comment (starts with `#`), a tag (also starts with `#`, can only be recognized by name) or a URL
+1. A URL line is called a "segment"
+1. Tags may apply to a single segment, i.e. the first URL line after the tag, to all segments following the tag and until the tag with the same name, or to the whole playlist
 
 Some points specific to the operation of `$hls` rules:
 
-1. When a segment is removed, all of the tags that apply only to that segment are also removed.
-1. When there is a tag that applies to multiple segments, and all of those segments are removed, the tag is also removed.
-1. Since there is no way to recognize different kinds of tags by syntax, we recognize all of the tags specified by the RFC, plus some non-standard tags that we have seen in the field. Any lines starting with `#` and not recognized as a tag are passed through without modification, and are not matched against the rules.
-1. We do not match tags that apply to the whole playlist, and `$hls` rules can not be used to remove them, since `$hls` rules are intended for removing segments. If you know what you are doing, you can use `$replace` rules to remove or rewrite just a single tag from the playlist.
+1. When a segment is removed, all of the tags that apply only to that segment are also removed
+1. When there is a tag that applies to multiple segments, and all of those segments are removed, the tag is also removed
+1. Since there is no way to recognize different kinds of tags by syntax, we recognize all of the tags specified by the RFC, plus some non-standard tags that we have seen in the field. Any lines starting with `#` and not recognized as a tag are passed through without modification, and are not matched against the rules
+1. We do not match tags that apply to the whole playlist, and `$hls` rules can not be used to remove them, since `$hls` rules are intended for removing segments. If you know what you are doing, you can use `$replace` rules to remove or rewrite just a single tag from the playlist
 
 **An example of a transformation done by the rules:**
 
@@ -1434,7 +1436,7 @@ Rules with the `$hls` modifier are supported by AdGuard for Windows, Mac, and An
 
 #### **`$inline-script`** {#inline-script-modifier}
 
-`$inline-script` modifier is a sort of a shortcut for [`$csp`](#csp-modifier) modifier with specific value. E.g. the rule `||example.org^$inline-script` is converting into such a rule:
+The `$inline-script` modifier is designed to block inline JavaScript embedded into the web page, using Content Security Policy (CSP). It improves security and privacy by preventing application of inline ads or potentially malicious scripts. The rule `||example.org^$inline-script` is converting into the CSP-syntax rule:
 
 ```adblock
 ||example.org^$csp=script-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
@@ -1442,7 +1444,7 @@ Rules with the `$hls` modifier are supported by AdGuard for Windows, Mac, and An
 
 #### **`$inline-font`** {#inline-font-modifier}
 
-`$inline-font` modifier is a sort of a shortcut for [`$csp`](#csp-modifier) modifier with specific value. E.g. the rule `||example.org^$inline-font` is converting into such a rule:
+The `$inline-font` modifier is designed to block inline fonts embedded into the web page, using Content Security Policy (CSP). It improves security and privacy by preventing application of inline fonts that could be used for data collection and fingerprinting. The rule `||example.org^$inline-font` is converting into the CSP-syntax rule:
 
 ```adblock
 ||example.org^$csp=font-src 'self' 'unsafe-eval' http: https: data: blob: mediastream: filesystem:
@@ -1462,15 +1464,15 @@ Due to the way rule parsing works, the characters `$` and `,` must be escaped wi
 
 The modified JSONPath syntax has the following differences from the original:
 
-1. Script expressions are not supported.
+1. Script expressions are not supported
 1. The supported filter expressions are:
-    - `?(has <key>)` — true if the current object has the specified key.
-    - `?(key-eq <key> <value>)` — true if the current object has the specified key, and its value is equal to the specified value.
-    - `?(key-substr <key> <value>)` — true if the specified value is a substring of the value of the specified key of the current object.
-1. Whitespace outside of double- or single-quoted strings has no meaning.
-1. Both double- and single-quoted strings can be used.
-1. Expressions ending with `..` are not supported.
-1. Multiple array slices can be specified in square brackets.
+    - `?(has <key>)` — true if the current object has the specified key
+    - `?(key-eq <key> <value>)` — true if the current object has the specified key, and its value is equal to the specified value
+    - `?(key-substr <key> <value>)` — true if the specified value is a substring of the value of the specified key of the current object
+1. Whitespace outside of double- or single-quoted strings has no meaning
+1. Both double- and single-quoted strings can be used
+1. Expressions ending with `..` are not supported
+1. Multiple array slices can be specified in square brackets
 
 There are various online tools that make working with JSONPath expressions more convenient:
 
@@ -1741,8 +1743,8 @@ In case if multiple `$permissions` rules match a single request, AdGuard will ap
 
 :::caution Beschränkungen
 
-1. Characters forbidden in the `$permissions` value: `$`;
-2. `$permissions` is compatible with the limited list of modifiers: `$domain`, `$important`, and `$subdocument`.
+1. Characters forbidden in the `$permissions` value: `$`
+1. `$permissions` is compatible with the limited list of modifiers: `$domain`, `$important`, and `$subdocument`
 
 :::
 
@@ -1758,7 +1760,7 @@ AdGuard is able to redirect web requests to a local "resource".
 
 **Syntax**
 
-AdGuard uses the same filtering rules syntax as uBlock Origin. Also, it is compatible with ABP `$rewrite=abp-resource` modifier.
+AdGuard uses the same filtering rule syntax as uBlock Origin. Also, it is compatible with ABP `$rewrite=abp-resource` modifier.
 
 `$redirect` is a modifier for the [basic filtering rules](#basic-rules) so rules with this modifier support all other basic modifiers like `$domain`, `$third-party`, `$script`, etc.
 
@@ -1785,7 +1787,7 @@ Go to [rules priorities](#rule-priorities) for more details.
 
 :::info Kompatibilität
 
-- Rules with `$redirect` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
+- Rules with `$redirect` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and AdGuard for Safari.
 - `$redirect` in uBlock Origin supports specifying priority, e.g. `$redirect=noopjs:42`. AdGuard does not support it and instead just discards the priority postfix.
 
 :::
@@ -1809,7 +1811,7 @@ In this case, only requests to `example.org/script.js` will be "redirected" to `
 
 :::info Kompatibilität
 
-Rules with `$redirect-rule` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
+Rules with `$redirect-rule` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS, and AdGuard for Safari.
 
 :::
 
@@ -1885,7 +1887,7 @@ In case of multiple `$removeheader` rules matching a single request, we will app
 
 :::caution Beschränkungen
 
-1. This type of rules can be used [**only in trusted filters**](#trusted-filters).
+This type of rules can be used [**only in trusted filters**](#trusted-filters).
 
 1. In order to avoid compromising the security `$removeheader` cannot remove headers from the list below:
     - `access-control-allow-origin`
@@ -1967,7 +1969,7 @@ Rules with `$removeparam` modifier are intended to strip query parameters from r
 
 :::note Compatibility
 
-`$removeparam` syntax is supported starting with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.7 and AdGuard Browser Extension v3.6.
+Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac and, Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.7 or later and AdGuard Browser Extension v3.6 or later.
 
 :::
 
@@ -1989,9 +1991,9 @@ Regexp-type rules target both name and value of the parameter. To minimize mista
 
 We will try to detect and ignore unescaped `$` automatically using a simple rule of thumb — it is not an options delimiter if all three are true:
 
-1. It looks like `$/`;
-1. There is another slash character `/` to the left of it;
-1. There is another unescaped dollar sign `$` to the left of that slash character.
+1. It looks like `$/`
+1. There is another slash character `/` to the left of it
+1. There is another unescaped dollar sign `$` to the left of that slash character
 
 **Remove all query parameters**
 
@@ -2069,7 +2071,7 @@ With these rules, specified UTM parameters will be removed from any request save
 
 - Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac, and Android and AdGuard Browser Extension for Chrome, Firefox, and Edge.
 - `$removeparam` syntax for regular expressions is supported by AdGuard Browser Extension v4.0 and AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.8 or later**.
-- `POST` request types are supported only by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.10 or later**.
+- `POST` request types are supported only by AdGuard for Windows, Mac, and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.10 or later.
 
 :::
 
@@ -2166,7 +2168,7 @@ Rules with `noop` modifier are not supported by AdGuard Content Blocker.
 
 #### **`$empty` (deprecated)** {#empty-modifier}
 
-:::caution Hinweis zur Abkündigung
+:::caution Deprecation notice
 
 This modifier is deprecated in favor of the [`$redirect` modifier](#redirect-modifier). Rules with `$empty` are still supported and being converted into `$redirect=nooptext` now but the support shall be removed in the future.
 
@@ -2180,13 +2182,13 @@ Usually, blocked requests look like a server error to browser. If you use `$empt
 
 :::info Kompatibilität
 
-Rules with `$empty` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
+Rules with `$empty` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS, and AdGuard for Safari.
 
 :::
 
 #### **`$mp4` (deprecated)** {#mp4-modifier}
 
-:::caution Hinweis zur Abkündigung
+:::caution Deprecation notice
 
 This modifier is deprecated in favor of the [`$redirect` modifier](#redirect-modifier). Rules with `$mp4` are still supported and being converted into `$redirect=noopmp4-1s,media` now but the support shall be removed in the future.
 
@@ -2200,7 +2202,7 @@ As a response to blocked request AdGuard returns a short video placeholder.
 
 :::info Kompatibilität
 
-Rules with `$mp4` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS and Safari.
+Rules with `$mp4` modifier are not supported by AdGuard Content Blocker, AdGuard for iOS, and AdGuard for Safari.
 
 :::
 
@@ -2208,7 +2210,7 @@ Rules with `$mp4` modifier are not supported by AdGuard Content Blocker, AdGuard
 
 Each rule has its own priority, which is necessary when several rules match the request and the filtering engine needs to select one of them. Priority is measured by a positive integer.
 
-:::note Kollisionen
+:::note Collisions
 
 When two rules with the same priority match the same request, it depends on the filtering engine implementation which one will be selected.
 
@@ -2531,7 +2533,7 @@ This rule will apply a style `background-color: #333!important;` to the `body` e
 
 **Exceptions**
 
-Just like with element hiding, there is a type of rules that disable the selected CSS style rule for particular domains. Exception rules syntax is almost the same, you just have to change `#$#` to `#@$#`.
+Just like with element hiding, there is a type of rules that disable the selected CSS style rule for particular domains. Exception rule syntax is almost the same, you just have to change `#$#` to `#@$#`.
 
 For example, there is a rule in filter:
 
@@ -2724,7 +2726,7 @@ Native implementation does not allow any usage of `:scope` inside `:has()` argum
 </div>
 ```
 
-:::danger Veraltete Syntax
+:::danger Old syntax
 
 [Backward compatible syntax for `:has()`](https://github.com/AdguardTeam/ExtendedCss#old-syntax-has) is supported but **not recommended**.
 
@@ -2783,7 +2785,7 @@ Only the `div` with `id=match` is selected because the next element does not con
 
 :::
 
-:::danger Veraltete Syntax
+:::danger Old syntax
 
 [Backward compatible syntax for `:contains()`](https://github.com/AdguardTeam/ExtendedCss#old-syntax-contains) is supported but **not recommended**.
 
@@ -2850,7 +2852,7 @@ Obsolete pseudo-classes `:matches-css-before()` and `:matches-css-after()` are n
 
 :::
 
-:::danger Veraltete Syntax
+:::danger Old syntax
 
 [Backward compatible syntax for `:matches-css()`](https://github.com/AdguardTeam/ExtendedCss#old-syntax-matches-css) is supported but **not recommended**.
 
@@ -2972,12 +2974,12 @@ div:matches-property(memoizedProps.key="null")
 div:matches-property(memoizedProps._owner.src=/ad/)
 ```
 
-:::tip Für Filterbetreuer
+:::tip For filters maintainers
 
 To check properties of a specific element, do the following:
 
-1. Inspect the page element or select it in `Elements` tab of browser DevTools.
-1. Run `console.dir($0)` in `Console` tab.
+1. Inspect the page element or select it in `Elements` tab of browser DevTools
+1. Run `console.dir($0)` in `Console` tab
 
 :::
 
@@ -3149,7 +3151,7 @@ div[class]:has(> a > img) { remove: true; }
 
 :::note
 
-Rules with the `remove` pseudo-property should use `#$?#` marker: `$` for CSS style rules syntax, `?` for ExtendedCss syntax.
+Rules with the `remove` pseudo-property should use `#$?#` marker: `$` for CSS-style rule syntax, `?` for ExtendedCss syntax.
 
 :::
 
@@ -3278,7 +3280,7 @@ pseudoClasses = pseudoClass *pseudoClass
 ```
 
 - **`tagName`** — name of the element in lower case, for example, `div` or `script`.
-- **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules syntax](#elemhide-syntax).
+- **`domains`** — domain restriction for the rule. Same principles as in [element hiding rule syntax](#elemhide-syntax).
 - **`attributes`** — a list of attributes that limit the selection of elements. `name` — attribute name, `value` — substring, that is contained in attribute value.
 - **`pseudoName`** — the name of a pseudo-class.
 - **`pseudoArgs`** — the arguments of a function-style pseudo-class.
@@ -3306,7 +3308,7 @@ In addition to usual attributes, which value is every element checked for, there
 
 #### `tag-content`
 
-:::caution Hinweis zur Abkündigung
+:::caution Deprecation notice
 
 This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class where it is available.
 
@@ -3330,7 +3332,7 @@ Following rule will delete all `script` elements with a `banner` substring in th
 $$script[tag-content="banner"]
 ```
 
-:::caution Beschränkungen
+:::caution Limitations
 
 The `tag-content` special attribute must not appear in a selector to the left of a `>` combinator.
 
@@ -3338,7 +3340,7 @@ The `tag-content` special attribute must not appear in a selector to the left of
 
 #### `wildcard`
 
-:::caution Hinweis zur Abkündigung
+:::caution Deprecation notice
 
 This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class where it is available.
 
@@ -3352,7 +3354,7 @@ For example: `$$script[wildcard="*banner*text*"]`
 
 It will check, if the code of element contains two consecutive substrings `banner` and `text`.
 
-:::caution Beschränkungen
+:::caution Limitations
 
 The `wildcard` special attribute must not appear in a selector to the left of a `>` combinator.
 
@@ -3360,7 +3362,7 @@ The `wildcard` special attribute must not appear in a selector to the left of a 
 
 #### `max-length`
 
-:::caution Hinweis zur Abkündigung
+:::caution Deprecation notice
 
 This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class with a regular expression where it is available.
 
@@ -3380,7 +3382,7 @@ $$div[tag-content="banner"][max-length="400"]
 
 This rule will remove all the `div` elements, whose code contains the substring `banner` and the length of which does not exceed `400` characters.
 
-:::caution Beschränkungen
+:::caution Limitations
 
 The `max-length` special attribute must not appear in a selector to the left of a `>` combinator.
 
@@ -3388,7 +3390,7 @@ The `max-length` special attribute must not appear in a selector to the left of 
 
 #### `min-length`
 
-:::caution Hinweis zur Abkündigung
+:::caution Deprecation notice
 
 This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class with a regular expression where it is available.
 
@@ -3404,7 +3406,7 @@ $$div[tag-content="banner"][min-length="400"]
 
 This rule will remove all the `div` elements, whose code contains the substring `banner` and the length of which exceeds `400` characters.
 
-:::caution Beschränkungen
+:::caution Limitations
 
 The `min-length` special attribute must not appear in a selector to the left of a `>` combinator.
 
@@ -3440,7 +3442,7 @@ The `:contains()` pseudo-class is supported by AdGuard for Windows, Mac, and And
 
 Requires that the inner HTML of the element contains the specified text or matches the specified regular expression.
 
-:::caution Beschränkungen
+:::caution Limitations
 
 A `:contains()` pseudo-class must not appear in a selector to the left of a `>` combinator.
 
@@ -3776,11 +3778,19 @@ Filter URL: `https://example.org/path/filter.txt`
 
 #### Conditions {#conditions-directive}
 
-Filters maintainers can use conditions to supply different rules depending on the ad blocker type. When an adblocker encounters an `!#if` directive, followed eventually by an `!#endif` directive, it will compile the code inside of the directives block only if the specified condition is true. Condition supports all the basic logical operators.
+Filters maintainers can use conditions to supply different rules depending on the ad blocker type. A conditional directive beginning with a `!#if` directive must explicitly be terminated with an `!#endif` directive. Conditions support all basic logical operators.
 
-A conditional directive beginning with an `!#if` directive must explicitly be terminated with an `!#endif` directive.
+There are two possible scenarios:
+
+1. When an ad blocker encounters an `!#if` directive and no `!#else` directive, it will compile the code between `!#if` and `!#endif` directives only if the specified condition is true.
+
+1. If there is an `!#else` directive, the code between `!#if` and `!#else` will be compiled if the condition is true; otherwise, the code between `!#else` and `!#endif` will be compiled.
+
+:::note
 
 Whitespaces matter. `!#if` is a valid directive, while `!# if` is not.
+
+:::
 
 **Syntax**
 
@@ -3790,10 +3800,20 @@ rules_list
 !#endif
 ```
 
+or
+
+```adblock
+!#if (conditions)
+true_conditions_rules_list
+!#else
+false_conditions_rules_list
+!#endif
+```
+
 where:
 
-- `!#if (conditions)` — start of the block
-- `conditions` — just like in some popular programming languages, preprocessor conditions are based on constants declared by ad blockers. Ad blocker authors define on their own what exact constants do they declare. Possible values:
+- `!#if (conditions)` — start of the block when conditions are true
+- `conditions` — just like in some popular programming languages, preprocessor conditions are based on constants declared by ad blockers. Authors of ad blockers define on their own what exact constants they declare. Possible values:
     - `adguard` always declared; shows maintainers that this is one of AdGuard products; should be enough in 95% of cases
     - product-specific constants for cases when you need a rule to work (or not work — then `!` should be used before constant) in a specific product only:
         - `adguard_app_windows` — AdGuard for Windows
@@ -3806,8 +3826,9 @@ where:
         - `adguard_ext_edge` — AdGuard Browser Extension for Edge Legacy
         - `adguard_ext_opera` — AdGuard Browser Extension for Opera
         - `adguard_ext_android_cb` — AdGuard Content Blocker for mobile Samsung and Yandex browsers
-        - `ext_ublock` — special case; this one is declared when a uBlock version of a filter is compiled by the [FiltersRegistry](https://github.com/AdguardTeam/FiltersRegistry)
-- `rules_list` — list of rules
+        - `ext_ublock` — special case; this one is declared when a uBlock version of a filter is compiled by the [FiltersRegistry][]
+- `!#else` — start of the block when conditions are false
+- `rules_list`, `true_conditions_rules_list`, `false_conditions_rules_list` — lists of rules
 - `!#endif` — end of the block
 
 **Examples**
@@ -3826,6 +3847,29 @@ domain.com##div.ad
 !#include /androidspecific.txt
 !#endif
 ```
+
+```adblock
+!#if (adguard && !adguard_ext_safari)
+! for all AdGuard products except AdGuard for Safari
+||example.org^$third-party
+domain.com##div.ad
+!#else
+! for AdGuard for Safari only
+||subdomain.example.org^$third-party
+!#endif
+```
+
+:::info Kompatibilität
+
+The `!#else` directive is supported by the [FiltersDownloader][gh-filters-downloader] v1.1.20 or later.
+
+It is already supported for filter lists compiled by the [FiltersRegistry][], but it still may not be supported by AdGuard products when adding a filter list with `!#else` as a custom one. The following products will support it in the mentioned versions or later:
+
+- AdGuard for Windows, Mac, and Android, running CoreLibs v1.13;
+- AdGuard Browser Extension v4.2.208;
+- AdGuard for Safari v1.11.16.
+
+:::
 
 #### Safari affinity {#safari-affinity-directive}
 
@@ -3888,7 +3932,7 @@ example.org#@#.adBanner
 
 ### Hints
 
-"Hint" is a special comment, instruction to the filters compiler used on the server side (see [FiltersRegistry](https://github.com/AdguardTeam/FiltersRegistry)).
+"Hint" is a special comment, instruction to the filters compiler used on the server side (see [FiltersRegistry][]).
 
 **Syntax**
 
@@ -4094,24 +4138,15 @@ The following scriptlets also may be used for debug purposes:
 - [`trusted-replace-fetch-response`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-trusted-scriptlets.md#trusted-replace-fetch-response)
 - [`trusted-replace-xhr-response`](https://github.com/AdguardTeam/Scriptlets/blob/master/wiki/about-trusted-scriptlets.md#trusted-replace-xhr-response)
 
-## Good luck with creating filters
-
-We wish you luck with creating you own ad filters.
-
-If you need an advice on how to create your own filters properly, our forum has a [special section](https://forum.adguard.com/index.php?forums/69/) dedicated to writing your own filtering rules.
-
-* * *
-
 ## Compatibility tables legend {#compatibility-tables-legend}
 
 ### Product shortcuts {#what-product}
 
-1. `CoreLibs apps` — AdGuard for Windows, Mac, Android
-1. `AdGuard for Chromium` — AdGuard Browser Extension for Chrome and other Chromium-based browsers, e.g. new Microsoft Edge, Opera
+1. `CoreLibs apps` — AdGuard for Windows, AdGuard for Mac, and AdGuard for Android
+1. `AdGuard for Chromium` — AdGuard Browser Extension for Chrome and other Chromium-based browsers such as Microsoft Edge, Opera
 1. `AdGuard for Firefox` — AdGuard Browser Extension for Firefox
-1. `AdGuard for iOS` — AdGuard for iOS and AdGuard for iOS Pro (for mobile Safari browser)
-1. `AdGuard for Safari` — AdGuard for desktop Safari browser
-1. `AdGuard Content Blocker` — Content Blocker for Android mobile browsers: Samsung Internet and Yandex Browser
+1. `AdGuard for iOS` — AdGuard for iOS and AdGuard Pro for iOS (for mobile Safari browser)
+1. `AdGuard for Safari` — AdGuard for desktop Safari browser `AdGuard Content Blocker` — Content Blocker for Android mobile browsers: Samsung Internet and Yandex Browser
 
 ### Compatibility shortcuts {#what-compatibility}
 
@@ -4130,8 +4165,10 @@ If you need an advice on how to create your own filters properly, our forum has 
 [cl-apps]: #what-product "AdGuard for Windows, Mac, Android"
 [ext-chr]: #what-product "AdGuard Browser Extension for Chrome and other Chromium-based browsers"
 [ext-ff]: #what-product "AdGuard Browser Extension for Firefox"
-[ios-app]: #what-product "AdGuard for iOS and AdGuard for iOS Pro"
+[ios-app]: #what-product "AdGuard for iOS and AdGuard Pro for iOS"
 [ext-saf]: #what-product "AdGuard für Safari"
 [and-cb]: #what-product "AdGuard Content Blocker for Samsung Internet and Yandex Browser on Android"
 
 [sec-fetch-dest-header]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest
+[gh-filters-downloader]: https://github.com/AdguardTeam/FiltersDownloader
+[FiltersRegistry]: https://github.com/AdguardTeam/FiltersRegistry

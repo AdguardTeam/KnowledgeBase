@@ -136,42 +136,42 @@ Obrovský dík a vděčnost patří také všem beta testerům a dalším zapoje
 - Andy Kleinert (AndyKl) — překladatel a korektor němčiny
 - BigDargon — přispěl projektem hostsVN jako zdroj do seznamu AdGuard DNS
 - Blaz — začínal jako přispěvatel do filtrů a nyní pracuje ve společnosti AdGuard
-- Boo Berry — moderátor fóra a skupiny na Telegramu
-- buuuuuuu190 — beta tester, aktivní člen fóra AdGuard
-- clarke — beta tester, aktivní člen fóra AdGuard
-- [dartrax](https://github.com/dartrax) — beta tester, aktivní člen fóra AdGuard
-- dja2k — beta tester, aktivní člen fóra AdGuard
+- Boo Berry — moderátor skupiny na Telegramu
+- buuuuuuu190 — beta tester
+- clarke — beta tester
+- [dartrax](https://github.com/dartrax) — beta tester
+- dja2k — beta tester
 - Eduardo Addad de Oliveira (eduardoaddad) — překladatel a korektor portugalštiny a brazilštiny
-- fabjazz — beta tester, aktivní člen fóra AdGuard
+- fabjazz — beta tester
 - Görkem Emrah Güler (gork7777) — překladatel a korektor turečtiny
-- hanschke — beta tester, aktivní člen fóra AdGuard
+- hanschke — beta tester
 - iDjay — vynikající beta tester AdGuardu pro iOS
 - Imre Kristoffer Eilertsen (DandelionSprout) — správce "Dandelion Sprout’s Nordic Filters", které jsou součástí všech nástrojů AdGuard
 - IONIL — překladatel a korektor hebrejštiny
-- itabmedia — beta tester, aktivní člen fóra AdGuard
-- kirasam — beta tester, aktivní člen fóra AdGuard
+- itabmedia — beta tester
+- kirasam — beta tester
 - krystian3w — velmi aktivní přispěvatel filtrů
 - lancelot.moon — překladatel a korektor tradiční čínštiny, beta tester
-- Lord Ami — beta tester, aktivní člen fóra AdGuard
+- Lord Ami — beta tester
 - Lukas Novotny (novas78) — překladatel a korektor češtiny
-- malware1 — beta tester, aktivní člen fóra AdGuard
-- milder — beta tester, aktivní člen fóra AdGuard
-- Nicos18 — beta tester, aktivní člen fóra AdGuard
+- malware1 — beta tester
+- milder — beta tester
+- Nicos18 — beta tester
 - Oizaro — překladatel a korektor italštiny
 - Oleg Chashko — velmi aktivní beta tester AdGuardu pro Safari
 - Oskari Lavinto (olavinto) — překladatel a korektor finštiny
-- ouzbed — beta tester, aktivní člen fóra AdGuard
+- ouzbed — beta tester
 - PentagramTr — přispěvatel filtrů, konkrétně přinesl do tureckého filtru spoustu nových věcí
 - Peter Hubinský (hubák) — překladatel a korektor slovenštiny
 - PiQuark6046 — přispěvatel filtrů
-- rickyoh — beta tester, aktivní člen fóra AdGuard
-- Ronin427 — beta tester, aktivní člen fóra AdGuard
-- Sanjay Nand — beta tester, aktivní člen fóra AdGuard
-- saturnotaku — beta tester, aktivní člen fóra AdGuard
-- steve1209 — beta tester, aktivní člen fóra AdGuard
-- streetwolf — beta tester, aktivní člen fóra AdGuard
+- rickyoh — beta tester
+- Ronin427 — beta tester
+- Sanjay Nand — beta tester
+- saturnotaku — beta tester
+- steve1209 — beta tester
+- streetwolf — beta tester
 - superlex — pomáhá nám se skripty, filtry a AdGuardem pro Safari
-- TayTayTheKiller — beta tester, aktivní člen fóra AdGuard
+- TayTayTheKiller — beta tester
 - [TPS](https://github.com/TPS) — vyhledávač chyb, přispěvatel filtrů
 - Yuki2718 — aktivně přispívá k filtrům AdGuardu
 - zznosar — aktivní beta tester zaměřený na AdGuard pro iOS
@@ -181,4 +181,4 @@ Obrovský dík a vděčnost patří také všem beta testerům a dalším zapoje
 
 Chceme také poděkovat uživatelům [xda-developers](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/). Děkujeme Vám za zpětnou vazbu!
 
-Vždy si vážíme připomínek našich uživatelů, zejména těch konstruktivních. Vždy nás můžete kontaktovat a podělit se s námi o své názory na AdGuard, požádat o nové funkce a nahlásit chyby. Připojte se k [AdGuard fóru](http://forum.adguard.com/forumdisplay.php?25-English-Forums), [Subredditu](https://reddit.com/r/adguard), [Xda-developers fóru](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/) nebo navštivte náš [GitHub](https://github.com/AdguardTeam).
+Vždy si vážíme připomínek našich uživatelů, zejména těch konstruktivních. Vždy nás můžete kontaktovat a podělit se s námi o své názory na AdGuard, požádat o nové funkce a nahlásit chyby. Připojte se k [Subredditu](https://reddit.com/r/adguard), [Xda-developers fóru](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/) nebo navštivte náš [GitHub](https://github.com/AdguardTeam).

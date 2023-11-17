@@ -13,11 +13,7 @@ If you suspect your computer is infected by malware or viruses, first of all you
 
 ## Free antivirus utilities {#free-antivirus}
 
-There are many of them and you can use any one you prefer, for example:
-
-[Dr.Web CureIt!](http://www.freedrweb.com/cureit/?lng=en)
-
-If this check with antivirus utilities revealed nothing, but the computer still behaves suspiciously, try to test it for adware, which can implement its advertising on any pages that you open.
+There are many of them and you can use any one you prefer. If this check with antivirus utilities revealed nothing, but the computer still behaves suspiciously, try to test it for adware, which can implement its advertising on any pages that you open.
 
 ## How to clean your system from Adware {#adware}
 
