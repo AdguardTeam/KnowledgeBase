@@ -131,7 +131,7 @@ The *Advanced protection* only works on iOS 15 and later versions. If you are us
 
 In most cases, the ad blocker and the VPN application cannot work together, simply because there are certain system limitations. Nevertheless we've managed to find a solution to befriend [AdGuard VPN](https://adguard-vpn.com/) and AdGuard Ad Blocker. For your convenience we've added the *AdGuard VPN* block to the *Protection* section, so you can easily switch between two apps.
 
-### Assistant {#assistant}
+### Asistan {#assistant}
 
 ![Safari Assistant *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/assistant_en.jpeg)
 

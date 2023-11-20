@@ -13,11 +13,7 @@ AdGuard is not an antivirus program. 멀웨어 또는 피싱 웹사이트를 방
 
 ## 무료 바이러스 백신 유틸리티 {#free-antivirus}
 
-여러 가지가 있으며 원하는 것을 사용할 수 있습니다:
-
-[Dr.Web CureIt!](http://www.freedrweb.com/cureit/?lng=en)
-
-바이러스 백신 유틸리티로 검사해도 아무것도 발견되지 않지만 컴퓨터가 여전히 의심스럽게 작동하는 경우, 여는 모든 페이지에 광고를 구현할 수 있는 애드웨어가 있는지 테스트해 보세요.
+There are many of them and you can use any one you prefer. 바이러스 백신 유틸리티로 검사해도 아무것도 발견되지 않지만 컴퓨터가 여전히 의심스럽게 작동하는 경우, 여는 모든 페이지에 광고를 구현할 수 있는 애드웨어가 있는지 테스트해 보세요.
 
 ## 시스템에서 애드웨어를 삭제하는 방법 {#adware}
 

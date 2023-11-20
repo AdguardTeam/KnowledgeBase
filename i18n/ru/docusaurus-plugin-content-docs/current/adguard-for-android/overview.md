@@ -55,7 +55,7 @@ AdGuard для Android не следует путать с Блокировщи�
 
     a. *Блокировка трекеров*. Этот параметр защищает от онлайн-счётчиков и инструментов веб-аналитики с помощью Фильтра счётчиков и систем аналитики AdGuard
 
-    b. *Запрос на прекращение отслеживания*. Эта настройка отправляет запросы [Global Privacy Control](https://globalprivacycontrol.org/) и [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) на сайты, которые вы посещаете
+    b. *Запрос на прекращение отслеживания*. This setting sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
 
     c. *Удаление заголовка X-Client-Data*. Даннная настройка предотвращает отправку информации о версии и модификации Google Chrome на домены Google (включая DoubleClick и Google Analytics)
 
@@ -452,3 +452,79 @@ Due to additional security measures of Android apps, some AdGuard features are o
 - **HTTPS filtering in most apps** requires [installing a CA certificate into the system store](#security-certificates), as most apps do not trust certificates in the user store. Установка сертификата в системное хранилище возможна только на рутованных устройствах
 - [**Автоматический прокси** в режиме маршрутизации](#routing-mode) требует root-доступа из-за ограничений Android на общесистемную фильтрацию трафика
 - The **Manual proxy** routing mode requires root access on Android 10 and above as it's no longer possible to determine the name of the app associated with a connection filtered by AdGuard
+
+## Помощник
+
+Assistant is a handy tool to quickly change app or website settings and view statistics without launching the AdGuard app.
+
+### How to access Assistant
+
+ 1. On your Android device, swipe down from the top of the screen to open the notification shade.
+ 2. Find and **expand** the AdGuard notification.
+
+    ![Expand AdGuard notification in the notification shade *mobile](https://cdn.adtidy.org/blog/new/jkksbhassistant-shade.png)
+
+ 3. Tap *Assistant*.
+
+    ![Tap Assistant *mobile](https://cdn.adtidy.org/blog/new/1qvlhassistant-tap-assistant.jpg)
+
+### How to use Assistant
+
+When you open Assistant, you will see two tabs: **Apps** and **Websites**. Each of them contains a list of the recently used apps and websites respectively.
+
+![Assistant main *mobile](https://cdn.adtidy.org/blog/new/i5mljAssistant-main.jpg)
+
+### Apps tab
+
+After you select an app (**let's take Chrome as an example**), you'll get a few options of what you can do.
+
+![Assistant Chrome menu *mobile_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
+
+#### Recent activity
+
+You'll be taken to the AdGuard app, where you'll see detailed info on the last 10K requests made by Chrome.
+
+![App recent activity *mobile_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
+
+#### App statistics
+
+You'll be taken to the AdGuard app, where you'll see detailed statistics about Chrome:
+
+- Number of ads and trackers blocked in Chrome
+- Data saved by blocking Chrome's ad or tracking requests
+- Companies that Chrome sends requests to
+
+#### Управление приложениями
+
+You'll be taken to the AdGuard app screen where you can disable AdGuard protection for the app.
+
+#### Firewall settings
+
+You'll be taken to the AdGuard screen where you can change Firewall settings for the app, meaning you can manage the app's Internet access.
+
+### Websites tab
+
+![Assistant websites tab *mobile](https://cdn.adtidy.org/blog/new/74y9rAssistant-websites.jpg)
+
+Select a website (**let's take google.com as an example**) and you'll see few options of what you can do.
+
+![Assistant google.com info *mobile](https://cdn.adtidy.org/blog/new/tht0tgoogle-com-assistant.jpg)
+
+#### Add to allowlist
+
+Tapping this option will instantly add google.com to allowlist, and AdGuard will no longer filter it (meaning ads and trackers won't be blocked for the website).
+
+#### Recent activity
+
+You'll be taken to the AdGuard app, where you'll see detailed info on the last 10K requests to google.com.
+
+![website recent activity *mobile_border](https://cdn.adtidy.org/blog/new/xq7f3assistant-website-recent-activity.png)
+
+#### Website statistics
+
+You'll be taken to the AdGuard app, where you'll see detailed statistics about google.com:
+
+- Number of blocked ad and tracking requests to google.com
+- Data saved by blocking ad and tracking requests to google.com
+- Apps that send requests to google.com
+- Information about google.com's subdomains

@@ -13,11 +13,7 @@ Se você suspeitar que seu computador está infectado por malware ou vírus, pri
 
 ## Funcionalidades de antivírus gratuitos {#free-antivirus}
 
-Existem muitos deles e você pode usar o que preferir, por exemplo:
-
-[Dr.Web CureIt!](http://www.freedrweb.com/cureit/?lng=en)
-
-Se esta checagem com o antivírus não revelar nada, mas o computador ainda se comportar de maneira suspeita, tente testá-lo para adware, que pode implementar sua publicidade em qualquer página que você abrir.
+There are many of them and you can use any one you prefer. Se esta checagem com o antivírus não revelar nada, mas o computador ainda se comportar de maneira suspeita, tente testá-lo para adware, que pode implementar sua publicidade em qualquer página que você abrir.
 
 ## Como limpar seu sistema de Adware {#adware}
 

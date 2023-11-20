@@ -112,14 +112,11 @@ Nebo můžete parametry odebrání nakonfigurovat ručně:
 
 `nastavení podle názvu`: server:MůjServer
 
- `ruční nastavení`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
-
+`ruční nastavení`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
 
 :::
 
------
-
-**Nezapomeňte uvést heslo jako dodatek a zmínit název balíčku a třídy! Musíte tak učinit pro každý záměr!**
+**Nezapomeňte uvést heslo jako dodatek a zmínit název balíčku a třídy. Musíte tak učinit pro každý záměr.**
 
 Dodatek: `password:*******`
 

@@ -7,21 +7,17 @@ sidebar_position: 1
 
 ## Как стать бета-тестировщиком {#intro}
 
-Наши требования просты: используйте AdGuard, переходите на бета-версию, когда она станет доступной, и сообщайте о замеченных ошибках. Чтобы стать нашим бета-тестером, вам понадобится либо [forum-аккаунт](https://forum.adguard.com/index.php), либо аккаунт [GitHub](https://github.com/) (или и то, и другое). В любом случае лучше сразу разобраться с этим.
+Наши требования просты: используйте AdGuard, переходите на бета-версию, когда она станет доступной, и сообщайте о замеченных ошибках. However, you will need a [GitHub](https://github.com/) account to become our beta tester, so you may want to get that out of the way first.
 
-Всё, что вам нужно знать, собрано на [специальной странице](https://adguard.com/en/beta.html).
+In any case, every single thing you need to know is gathered on a [dedicated page](https://adguard.com/beta.html).
 
 Если вы хотите пропустить описание и сразу перейти к делу, то вам [сюда](https://surveys.adguard.com/beta_testing_program/form.html). Ваша заявка будет рассмотрена в течение 1-3 рабочих дней. Вы получите ответ по электронной почте.
 
 ## Как сообщить об ошибке {#report-a-bug}
 
-Если вы заметили ошибку или просто хотите поделиться своим предложением, сообщите нам любым из возможных способов:
+If you spotted a bug or just want to share your suggestion, let us know: go to [GitHub](https://github.com/AdguardTeam/), find a suitable repository, create a new issue there, and describe the bug/feature request in detail.
 
-- Зайдите на [forum.adguard.com](https://forum.adguard.com/index.php) и опубликуйте там новую тему (или найдите уже существующую) в [категории «Бета-тестирование» форума](https://forum.adguard.com/index.php?categories/48/). Обязательно сначала прочтите [правила форума](https://forum.adguard.com/index.php?threads/14859/);
-
-- Перейдите на [GitHub](https://github.com/AdguardTeam/) и найдите нужный репозиторий. Создайте новую задачу и детально опишите обнаруженный баг или ваш вопрос/предложение.
-
-Эти два метода являются наиболее предпочтительными, но если нет возможности использовать их, можете использовать другие:
+The above method is the most preferred, but you can use others if necessary:
 
 - Найдите наш аккаунт в любой из удобных для вас социальных сетей, таких как [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/) и др., и напишите нам. Однако это не самый эффективный способ обсуждения технических вопросов.
 
@@ -33,6 +29,6 @@ sidebar_position: 1
 
 ### Что ещё?
 
-Нам осталось не так много добавить. Вам не нужно старательно искать ошибки. Вы можете продолжать использовать AdGuard как обычно. Однако, если вы столкнётесь с ошибкой, пожалуйста, сообщите о ней. Конечно, мы ценим любые дополнительные усилия и/или дополнительную активность на форуме и т. д.
+Нам осталось не так много добавить. Вам не нужно старательно искать ошибки. Вы можете продолжать использовать AdGuard как обычно. Однако, если вы столкнётесь с ошибкой, пожалуйста, сообщите о ней. Of course, we appreciate any additional effort.
 
 Время от времени вы будете получать письма, информирующие вас о последних изменениях в бета-версии (на случай, если вы их пропустили) и других важных новостях. Вы можете отписаться в любой момент.

@@ -13,11 +13,7 @@ Wenn Sie vermuten, dass Ihr Computer mit Malware oder Viren infiziert ist, könn
 
 ## Kostenlose Antivirenprogramme {#free-antivirus}
 
-Es gibt viele davon und Sie können jeden verwenden, den Sie bevorzugen, zum Beispiel:
-
-[Dr.Web CureIt!](http://www.freedrweb.com/cureit/?lng=en)
-
-Wenn diese Überprüfung mit Antivirenprogrammen nichts ergeben hat, der Computer sich aber immer noch verdächtig verhält, versuchen Sie, ihn auf Adware zu testen, die ihre Werbung auf allen von Ihnen geöffneten Seiten platzieren kann.
+There are many of them and you can use any one you prefer. Wenn diese Überprüfung mit Antivirenprogrammen nichts ergeben hat, der Computer sich aber immer noch verdächtig verhält, versuchen Sie, ihn auf Adware zu testen, die ihre Werbung auf allen von Ihnen geöffneten Seiten platzieren kann.
 
 ## Wie man das System von Adware befreit {#adware}
 

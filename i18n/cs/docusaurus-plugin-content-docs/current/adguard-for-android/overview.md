@@ -55,7 +55,7 @@ K dispozici jsou tři předkonfigurované úrovně ochrany. Zde jsou uvedeny fun
 
     a. *Blokování slídičů*. Toto nastavení chrání před online čítači a nástroji webové analýzy pomocí AdGuard filtru ochrany sledování
 
-    b. *Požádat webové stránky, aby vás nesledovaly*. Toto nastavení odesílá požadavky [Global Privacy Control](https://globalprivacycontrol.org/) a [Do-Not-Track](https://en.wikipedia.org/wiki/Do_Not_Track) na navštívené webové stránky a žádá webové aplikace, aby zakázaly sledování vaší aktivity
+    b. *Požádat webové stránky, aby vás nesledovaly*. Toto nastavení odesílá signály [Global Privacy Control](https://globalprivacycontrol.org/) a [Do-Not-Track](https://en.wikipedia.org/wiki/Do_Not_Track) na navštívené webové stránky a žádá webové aplikace, aby zakázaly sledování vaší aktivity
 
     c. *Odstranit X-Client-Data hlavičku*. Toto nastavení brání prohlížeči Google Chrome odesílat informace o verzi a úpravách do domén Google (včetně DoubleClick a Google Analytics)
 
@@ -452,3 +452,79 @@ Vzhledem k dalším bezpečnostním opatřením systému Android jsou některé 
 - **HTTPS filtrování ve většině aplikací** vyžaduje [instalaci certifikátu CA do systémového úložiště](#security-certificates), protože většina aplikací nedůvěřuje certifikátům v uživatelském úložišti. Instalace certifikátu do systémového úložiště je možná pouze na zařízeních s přístupem root
 - Režim směrování [**Automatický proxy**](#routing-mode) vyžaduje přístup root kvůli omezením systému Android ohledně filtrování provozu v celém systému
 - Režim směrování **Manuální proxy** vyžaduje přístup root v systému Android 10 a vyšším, protože již není možné určit název aplikace spojené s připojením, které AdGuard filtruje
+
+## Asistent
+
+Asistent je praktický nástroj pro rychlou změnu nastavení aplikace nebo webových stránek a zobrazení statistik bez nutnosti spouštět aplikaci AdGuard.
+
+### Jak přistupovat k Asistentovi
+
+ 1. V zařízení se systémem Android otevřete oznámení přejetím prstu od horního okraje obrazovky směrem dolů.
+ 2. Vyhledejte a **rozbalte** oznámení AdGuardu.
+
+    ![Expand AdGuard notification in the notification shade *mobile](https://cdn.adtidy.org/blog/new/jkksbhassistant-shade.png)
+
+ 3. Klepněte na *Asistent*.
+
+    ![Tap Assistant *mobile](https://cdn.adtidy.org/blog/new/1qvlhassistant-tap-assistant.jpg)
+
+### Jak používat Asistenta
+
+Když otevřete Asistenta, uvidíte dvě karty: **Aplikace** a **webové stránky**. Každá z nich obsahuje seznam naposledy použitých aplikací a webových stránek.
+
+![Assistant main *mobile](https://cdn.adtidy.org/blog/new/i5mljAssistant-main.jpg)
+
+### Karta Aplikace
+
+Po výběru aplikace (**např. Chrome**), získáte několik možností, co můžete dělat.
+
+![Assistant Chrome menu *mobile_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
+
+#### Nedávná aktivita
+
+Budete přesměrováni do aplikace AdGuard, kde se zobrazí podrobné informace o posledních 10000 požadavcích provedených prohlížečem Chrome.
+
+![App recent activity *mobile_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
+
+#### Statistiky aplikace
+
+Budete přesměrováni do aplikace AdGuard, kde se zobrazí podrobné statistiky o prohlížeči Chrome:
+
+- Počet reklam a slídičů zablokovaných v Chrome
+- Data ušetřená blokováním reklamních nebo sledovacích požadavků prohlížeče Chrome
+- Společnosti, kterým Chrome zasílá požadavky
+
+#### Správa aplikací
+
+Zobrazí se obrazovka aplikace AdGuard, kde můžete ochranu AdGuardem pro aplikaci zakázat.
+
+#### Nastavení firewallu
+
+Zobrazí se obrazovka AdGuardu, kde můžete změnit nastavení brány firewall pro aplikaci, což znamená, že můžete spravovat přístup aplikace k internetu.
+
+### Karta Webové stránky
+
+![Assistant websites tab *mobile](https://cdn.adtidy.org/blog/new/74y9rAssistant-websites.jpg)
+
+Vyberte webovou stránku (**např. google.com**) a zobrazí se několik možností, co můžete udělat.
+
+![Assistant google.com info *mobile](https://cdn.adtidy.org/blog/new/tht0tgoogle-com-assistant.jpg)
+
+#### Přidat na seznam povolených
+
+Klepnutím na tuto možnost se stránka google.com okamžitě přidá do seznamu povolených a AdGuard ji již nebude filtrovat (což znamená, že reklamy a slídiče nebudou pro tuto webovou stránku blokovány).
+
+#### Nedávná aktivita
+
+Budete přesměrováni do aplikace AdGuard, kde se zobrazí podrobné informace o posledních 10000 požadavcích na stránku google.com.
+
+![website recent activity *mobile_border](https://cdn.adtidy.org/blog/new/xq7f3assistant-website-recent-activity.png)
+
+#### Statistiky webových stránek
+
+Budete přesměrováni do aplikace AdGuard, kde se zobrazí podrobné statistiky o google.com:
+
+- Počet zablokovaných reklam a požadavků sledování na google.com
+- Data ušetřená blokováním reklam a požadavků sledování na google.com
+- Aplikace odesílající požadavky na google.com
+- Informace o subdoménách google.com

@@ -112,14 +112,11 @@ The full list of supported provider names can be found in our [known DNS provide
 
 `настройка по имени сервера`: server:MyServer
 
- `настройка вручную`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
-
+`настройка вручную`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
 
 :::
 
------
-
-**Не забывайте добавить пароль, имя пакета и класс. Это нужно делать для каждого интента.**
+**Don't forget to include the password as an extra and mention package name and class. You need to do so for every intent.**
 
 Extra: `password:*******`
 

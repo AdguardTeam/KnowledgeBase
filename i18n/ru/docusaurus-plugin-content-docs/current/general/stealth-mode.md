@@ -23,7 +23,7 @@ sidebar_position: 4
 
 ### Просить сайты не отслеживать вас {#donottrack}
 
-Отправляет запросы [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) и [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) на сайты, которые вы посещаете.
+Sends the [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit.
 
 ### Очистить URL от параметров отслеживания
 

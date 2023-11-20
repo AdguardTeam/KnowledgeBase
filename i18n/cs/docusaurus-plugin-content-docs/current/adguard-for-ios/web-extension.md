@@ -46,7 +46,7 @@ Vyhledejte sekci **POVOLIT TATO ROZŠÍŘENÍ** a poté mezi dostupnými rozší
 
 Klepněte na něj a zapněte přepínač. Na stejné obrazovce se ujistěte, že rozšíření AdGuardu má požadovaná oprávnění: **Všechny webové stránky** by měly mít stav *Povolit*.
 
-![settings extensions](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings4_en.png)
+![settings extensions *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings4_en.png)
 
 :::note
 

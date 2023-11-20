@@ -67,7 +67,7 @@ Ein weiterer wichtiger Bestandteil des Werbeblocker-Moduls sind seine Benutzerre
 
 Die DNS-Filterung ist eine der nützlichsten Funktionen, dank derer Ihr gesamter DNS-Verkehr verschlüsselt wird. Wenn Sie den Standard-DNS-Server Ihres Internetanbieters verwenden, ist Ihr DNS-Datenverkehr wahrscheinlich nicht verschlüsselt und anfällig für Snooping und Hijacking.
 
-Im DNS-Panel können Sie die DNS-Server von bekannten DNS-Anbietern auswählen oder sogar benutzerdefinierte DNS-Server hinzufügen. Sie können auch Domains zur DNS-Sperrliste oder -Zulassungsliste hinzufügen und komplizierte Regeln mithilfe der DNS-Regelsyntax hinzufügen. Schließlich können Sie [DNS-Filter Ihrer Wahl hinzufügen](https://filterlists.com).
+Im DNS-Panel können Sie die DNS-Server von bekannten DNS-Anbietern auswählen oder sogar benutzerdefinierte DNS-Server hinzufügen. Also you can add domains to DNS blocklist or allowlist and add complicated rules using DNS rule syntax. Schließlich können Sie [DNS-Filter Ihrer Wahl hinzufügen](https://filterlists.com).
 
 ## Privatsphäre
 

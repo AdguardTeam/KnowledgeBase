@@ -29,7 +29,7 @@ sidebar_position: 3
 - Откройте настройки расширения браузера, нажав на соответствующий значок;
 - Нажмите на **Сообщить о проблеме**:
 
-![расширение *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/extension_issue.png)
+![extension_issue *mobile_border](https://cdn.adtidy.org/blog/new/5si74extension.png)
 
 - После заполнения формы автоматически будет создана проблема на [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) . Там же будет ссылка для отслеживания прогресса в решении вашей проблемы.
 
@@ -45,9 +45,9 @@ sidebar_position: 3
 ### Android {#android}
 
 - Откройте настройки AdGuard;
-- Выберите **Поддержка**, затем **Сообщение в поддержку** → **Пропущенная реклама**/**Некорректная блокировка**:
+- Выберите **Поддержка**, затем **Сообщить о некорректной блокировке**:
 
-![android *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/android.png)
+![android *mobile_border](https://cdn.adtidy.org/blog/new/apicfkandroid-new.jpg)
 
 - После заполнения формы автоматически будет создана проблема на [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) . Там же будет ссылка для отслеживания прогресса в решении вашей проблемы.
 
@@ -65,7 +65,7 @@ sidebar_position: 3
 - Откройте настройки AdGuard;
 - Выберите **Поддержка**, затем **Сообщить о некорректной блокировке**:
 
-![ios *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/ios_issue.png)
+![ios *mobile_border](https://cdn.adtidy.org/blog/new/fnl9aios.jpeg)
 
 - Заполните форму для подачи жалобы;
 - После заполнения формы автоматически будет создана проблема на [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) . Там же будет ссылка для отслеживания прогресса в решении вашей проблемы.

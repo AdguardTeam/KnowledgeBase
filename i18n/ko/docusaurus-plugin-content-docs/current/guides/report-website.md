@@ -29,7 +29,7 @@ When you send a complaint via the app or via AdGuard Browser Assistant, all info
 - 해당 아이콘을 클릭하여 브라우저 확장 설정을 엽니다.
 - **문제 신고하기**를 클릭합니다.
 
-![확장 프로그램 *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/extension_issue.png)
+![extension_issue *mobile_border](https://cdn.adtidy.org/blog/new/5si74extension.png)
 
 - 양식을 작성하면 [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues)에 이슈가 자동으로 생성됩니다. 문제 해결을 위한 진행 상황을 모니터링할 수 있는 링크도 제공됩니다.
 
@@ -45,9 +45,9 @@ When you send a complaint via the app or via AdGuard Browser Assistant, all info
 ### Android {#android}
 
 - AdGuard 설정을 엽니다.
-- Choose **Support**, then **Send Feedback** → **Missed ad**/**Incorrect blocking**:
+- **지원**을 선택한 다음 **잘못된 차단 신고**를 선택합니다:
 
-![android *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/android.png)
+![android *mobile_border](https://cdn.adtidy.org/blog/new/apicfkandroid-new.jpg)
 
 - 양식을 작성하면 [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues)에 이슈가 자동으로 생성됩니다. 문제 해결을 위한 진행 상황을 모니터링할 수 있는 링크도 제공됩니다.
 
@@ -65,7 +65,7 @@ When you send a complaint via the app or via AdGuard Browser Assistant, all info
 - AdGuard 설정을 엽니다.
 - **지원**을 선택한 다음 **잘못된 차단 신고**를 선택합니다:
 
-![ios *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/ios_issue.png)
+![ios *mobile_border](https://cdn.adtidy.org/blog/new/fnl9aios.jpeg)
 
 - 불만 신고 양식을 작성합니다.
 - 양식을 작성하면 [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues)에 이슈가 자동으로 생성됩니다. 문제 해결을 위한 진행 상황을 모니터링할 수 있는 링크도 제공됩니다.

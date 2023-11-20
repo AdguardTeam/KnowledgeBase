@@ -67,7 +67,7 @@ Another vital part of the Ad Blocker module are its User rules. If you have some
 
 DNS filtering is one of the most useful features, thanks to which all your DNS traffic is encrypted. But if you're using the default DNS server provided by your ISP, your DNS traffic is likely not encrypted and vulnerable to snooping and hijacking.
 
-In the DNS panel you can select the DNS servers from known DNS providers or even add custom DNS servers. Also you can add domains to DNS blocklist or allowlist and add complicated rules using DNS rules syntax. Finally, you can [add DNS filters of your choice](https://filterlists.com).
+In the DNS panel you can select the DNS servers from known DNS providers or even add custom DNS servers. Also you can add domains to DNS blocklist or allowlist and add complicated rules using DNS rule syntax. Finally, you can [add DNS filters of your choice](https://filterlists.com).
 
 ## Modo invisível
 
