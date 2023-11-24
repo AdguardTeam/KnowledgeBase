@@ -37,7 +37,7 @@ There is also an additional mode called *Full-Tunnel (without VPN icon)*. This i
 
 In this module you can select the way AdGuard will respond to DNS queries that should be blocked:
 
-- Default — respond with zero IP address when blocked by AdBlock-style rules; respond with the IP address specified in the rule when blocked by /etc/ hosts-style rule;  
+- Default — respond with zero IP address when blocked by AdBlock-style rules; respond with the IP address specified in the rule when blocked by /etc/ hosts-style rule;
 - REFUSED — respond with REFUSED code;
 - NXDOMAIN — respond with NXDOMAIN code;
 - Unspecified IP — respond with zero IP address;
@@ -45,7 +45,7 @@ In this module you can select the way AdGuard will respond to DNS queries that s
 
 ### Block IPv6
 
-By moving the toggle to the right, you activate IPv6 query blocking (AAAA requests). AAAA-type DNS requests will not be resolved, hence only IPv6 queries can be processed. 
+By moving the toggle to the right, you activate IPv6 query blocking (AAAA requests). AAAA-type DNS requests will not be resolved, hence only IPv6 queries can be processed.
 
 ### Blocked response TTL
 
