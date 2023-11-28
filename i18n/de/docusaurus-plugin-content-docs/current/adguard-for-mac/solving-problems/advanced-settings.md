@@ -167,6 +167,10 @@ This option specifies the size of TCP packet fragmentation, which helps avoid de
 
 Adds extra space between the HTTP method and the URL and removes space after the "Host:" field.
 
+`stealth.antidpi.split.delay.millisecond`
+
+Here you can specify the delay, in milliseconds, after sending the first fragment, if fragmentation is performed.
+
 `subscription.link.interception.userscript`
 
 Aktivieren Sie diese Funktion, wenn Sie möchten, dass AdGuard die URLs von Benutzerskripten automatisch abfängt und das Installationsfenster öffnet.

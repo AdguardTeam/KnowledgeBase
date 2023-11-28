@@ -167,6 +167,10 @@ sidebar_position: 9
 
 Добавляет дополнительный пробел между методом HTTP и URL и удаляет пробел после поля “Host:”.
 
+`stealth.antidpi.split.delay.millisecond`
+
+Here you can specify the delay, in milliseconds, after sending the first fragment, if fragmentation is performed.
+
 `subscription.link.interception.userscript`
 
 Активируйте эту функцию, если хотите, чтобы AdGuard автоматически перехватывал URL-адреса пользовательских скриптов и открывал диалоговое окно установки.

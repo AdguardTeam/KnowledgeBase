@@ -231,7 +231,7 @@ sidebar_position: 9
 
  ![Настройки Samsung *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_1.png)
 
-- Tap **Lock Apps**:
+- Нажмите **Закрепить приложения**:
 
  ![Настройки Samsung *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_2.png)
 
@@ -297,7 +297,7 @@ Huawei чрезвычайно изобретательны в оптимизац
 
 1. Включите **отладку через USB** в Параметрах разработчика на телефоне;
 
-1. Run the following commands on your computer:
+1. Выполнить на компьютере следующие команды:
 
 `adb shell pm uninstall --user 0 com.huawei.powergenie`
 
@@ -409,11 +409,11 @@ Huawei чрезвычайно изобретательны в оптимизац
 
 - Откройте меню в правом верхнем углу → **Показать системные**.
 
-Найдите приложение **Энергосбережение** в списке, выберите его и нажмите **Принудительная остановка**. It will remain stopped for a while but will restart at some point.
+Найдите приложение **Энергосбережение** в списке, выберите его и нажмите **Принудительная остановка**. Некоторое время оно не будет работать, но в конечном итоге перезапустится.
 
 С этого момента AdGuard должен работать нормально и использовать стандартную оптимизацию батареи Android до перезапуска приложения Энергосбережения.
 
-An alternative, more permanent solution for more tech-savvy users:
+Альтернативное, более постоянное решение для более технически подкованных пользователей:
 
 1. [Установите ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) на ваш компьютер;
 

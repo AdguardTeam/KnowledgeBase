@@ -19,13 +19,13 @@ sidebar_position: 7
 
 1. Нажмите кнопку *Поделиться*.
 
-    ![Share to YouTube step 1 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step1.png)
+    ![Шаг 1 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step1.png)
 
 1. Выберите *AdGuard* из списка приложений.
 
-    ![Share to YouTube step 2 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step2.png)
+    ![Шаг 2 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step2.png)
 
-That's it! Откроется новое окно с видео, где вы сможете смотреть YouTube, не прерываясь на рекламу.
+Готово! Откроется новое окно с видео, где вы сможете смотреть YouTube, не прерываясь на рекламу.
 
 ## Смотрите YouTube в браузере
 

@@ -1,5 +1,5 @@
 ---
-title: Moving the CA certificate to the system store on rooted devices
+title: Перемещение сертификата ЦС в системное хранилище на рутованных устройствах
 sidebar_position: 14
 ---
 
@@ -9,44 +9,44 @@ sidebar_position: 14
 
 :::
 
-AdGuard for Android can [filter encrypted HTTPS traffic](/general/https-filtering/what-is-https-filtering), thus blocking most ads and trackers on websites. On rooted devices, AdGuard also allows you to filter HTTPS traffic in apps. HTTPS filtering requires adding AdGuard's CA certificate to the list of trusted certificates.
+AdGuard для Android может [фильтровать зашифрованный HTTPS-трафик](/general/https-filtering/what-is-https-filtering), блокируя большую часть рекламы и трекеров на сайтах. На рутованных устройствах AdGuard также может фильтровать HTTPS-трафик в приложениях. Чтобы HTTPS-фильтрация работала, нужно добавить ЦС-сертификат AdGuard в список доверенных сертификатов.
 
-On non-rooted devices, CA certificates can be installed to the **user store**. Only a limited subset of apps (mostly browsers) trust CA certificates installed to the user store, meaning HTTPS filtering will work only for such apps.
+На нерутованных устройствах сертификаты устанавливаются **в пользовательское хранилище**. Только некоторые приложения (в основном браузеры) доверяют таким сертификатам. HTTPS-фильтрация ограничивается этими приложениями.
 
-On rooted devices, you can install a certificate to the **system store**. That will allow AdGuard to filer HTTPS traffic in other apps as well.
+На рутованных устройствах сертификат можно установить **в системное хранилище**. Это позволит AdGuard фильтровать HTTPS-трафик и в других приложениях.
 
 Вот как это сделать.
 
-## How to install AdGuard's certificate to the system store
+## Как установить сертификат AdGuard в системное хранилище
 
-1. Open *AdGuard → Settings → Filtering → Network → HTTPS filtering → Security certificates*.
+1. Откройте *AdGuard → Настройки → Фильтрация → Сеть → HTTPS-фильтрация → Сертификаты безопасности*.
 
-1. If you don't have any certificate yet, **install the AdGuard Personal CA into the user store**. This will allow AdGuard to filter HTTPS traffic in browsers.
+1. Если у вас ещё нет сертификата, **установите AdGuard Personal CA в пользовательское хранилище**. Так AdGuard сможет фильтровать HTTPS-трафик в браузерах.
 
-1. **Install the AdGuard Intermediate CA into the user store**. You'll need it to run the adguardcert Magisk module that allows you to move certificates to the system store.
+1. **Установите AdGuard Intermediate CA в пользовательское хранилище**. Он понадобится для запуска модуля adguardcert в Magisk. Благодаря этому модулю можно будет переместить сертификаты в системное хранилище.
 
-    ![Install the certificate *mobile_border](https://cdn.adtidy.org/blog/new/asx1xksecurity_certificates.png)
+    ![Установите сертификат *mobile_border](https://cdn.adtidy.org/blog/new/asx1xksecurity_certificates.png)
 
-1. Install the [latest release of the **adguardcert** Magisk module](https://github.com/AdguardTeam/adguardcert/releases/latest/).
+1. Установите [последнюю версию **модуля adguardcert**](https://github.com/AdguardTeam/adguardcert/releases/latest/).
 
-1. Open *Magisk → Modules → Install from storage* and select the downloaded **adguardcert** file. This will move the AdGuard Personal CA from the user store to the system store.
+1. Откройте *Magisk → Модули → Установить из хранилища* и выберите загруженный файл **adguardcert**. AdGuard Personal CA будет перемещён из пользовательского хранилища в системное.
 
-    ![Open Magisk modules *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-4.png)
+    ![Откройте модули Magisk *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-4.png)
 
-    ![Install from storage *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-5.png)
+    ![Установите модуль из хранилища *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-5.png)
 
-    ![Select adguardcert *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-6.png)
+    ![Выберите adguardcert *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-6.png)
 
-1. Tap **Reboot**.
+1. Нажмите **Перезагрузить**.
 
-    ![Reboot the device *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-7.png)
+    ![Перезагрузите устройство *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-7.png)
 
-After the transfer, the **AdGuard Personal CA** in the system store will allow you to filter HTTPS traffic in apps, while the **AdGuard Intermediate CA** in the user store will allow you to filter HTTPS traffic in Chromium-based browsers (see below why).
+Когда **AdGuard Personal CA** будет перемещён в системное хранилище, AdGuard сможет фильтровать HTTPS-трафик в приложениях. **AdGuard Intermediate CA** в пользовательском хранилище позволит фильтровать HTTPS в браузерах на основе Chromium (ниже мы объясним, почему).
 
-## Known issues with Chrome and Chromium-based browsers
+## Известные проблемы с Chrome и браузерами на основе Chromium
 
-Chrome and other Chromium-based browsers require Certificate Transparency (CT) logs for certificates located in the system store. CT logs don't contain information about certificates issued by HTTPS-filtering apps. Therefore, AdGuard requires an additional certificate in the user store to filter HTTPS traffic in these browsers.
+Chrome и другие браузеры на базе Chromium требуют логов Certificate Transparency (CT) для сертификатов, находящихся в системном хранилище. Эти логи не содержат сведений о сертификатах, выданных приложениями с HTTPS-фильтрацией. Поэтому для фильтрации HTTPS-трафика в этих браузерах приложению AdGuard нужен дополнительный сертификат в пользовательском хранилище.
 
 ### Браузер Bromite
 
-In addition to the above issue, Bromite doesn't trust certificates in the user store by default. To filter HTTPS traffic there, open Bromite, go to `chrome://flags`, and set *Allow user certificates* to *Enabled*. **This applies to both rooted and non-rooted devices**.
+Помимо проблемы браузеров на основе Chromium, Bromite по умолчанию не доверяет сертификатам в пользовательском хранилище. Чтобы фильтровать HTTPS-трафик в Bromite, в поисковой строке браузера введите `chrome://flags` и *включите* опцию *Разрешить пользовательские сертификаты*. **Это относится как к рутованным, так и к нерутованным устройствам**.

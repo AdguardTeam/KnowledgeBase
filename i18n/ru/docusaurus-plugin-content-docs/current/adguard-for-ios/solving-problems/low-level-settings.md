@@ -35,15 +35,21 @@ sidebar_position: 5
 
 ### Режим блокировки
 
-В этом модуле вы можете выбрать способ, которым AdGuard будет отвечать на DNS-запросы, которые должны быть заблокированы: REFUSED — отвечать с кодом REFUSED NXDOMAIN — отвечать с кодом NXDOMAIN Неопределенный IP — отвечать с нулевым IP-адресом Пользовательский IP — отвечать с заданным вручную IP-адресом
+In this module you can select the way AdGuard will respond to DNS queries that should be blocked:
+
+- Default — respond with zero IP address when blocked by adblock-style rules; respond with the IP address specified in the rule when blocked by /etc/hosts-style rules
+- REFUSED — respond with REFUSED code
+- NXDOMAIN — respond with NXDOMAIN code
+- Unspecified IP — respond with zero IP address
+- Custom IP — respond with a manually set IP address
 
 ### Блокировать IPv6
 
-Перемещая переключатель вправо, вы активируете блокировку запросов IPv6 (запросы AAAA).
+By moving the toggle to the right, you activate the blocking of IPv6 queries (AAAA requests). AAAA-type DNS requests will not be resolved, hence only IPv4 queries can be processed.
 
 ### Заблокированный ответ TTL
 
-Здесь вы можете указать значение TTL (time to live), которое будет возвращаться в ответ на заблокированный запрос.
+Here you can set the period for a device to cache the response to a DNS request. During the specified time to live (in seconds) the request can be read from the cache without re-requesting the DNS server.
 
 ### Bootstrap-серверы
 

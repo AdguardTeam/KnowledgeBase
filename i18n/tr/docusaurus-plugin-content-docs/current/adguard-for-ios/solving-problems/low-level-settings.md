@@ -35,15 +35,21 @@ There is also an additional mode called *Full-Tunnel (without VPN icon)*. This i
 
 ### Engelleme modu
 
-In this module you can select the way AdGuard will respond to DNS queries that should be blocked: REFUSED — respond with REFUSED code NXDOMAIN — respond with NXDOMAIN code Unspecified IP — respond with zero IP address Custom IP — respond with a manually set IP address
+Bu modülde AdGuard'ın engellenmesi gereken DNS sorgularına nasıl yanıt vereceğini seçebilirsiniz:
+
+- Varsayılan — reklam engelleme tarzı kurallar tarafından engellendiğinde sıfır IP adresiyle yanıt verin; /etc/hosts tarzı kurallar tarafından engellendiğinde, kuralda belirtilen IP adresiyle yanıt verin
+- REFUSED — REFUSED koduyla yanıt verin
+- NXDOMAIN — NXDOMAIN koduyla yanıt verin
+- Belirtilmemiş IP — sıfır IP adresiyle yanıt verin
+- Özel IP — El ile ayarlanmış bir IP adresiyle yanıt verin
 
 ### Block IPv6
 
-By moving the toggle to the right, you activate IPv6 query blocking (AAAA requests).
+Düğmeyi sağa hareket ettirerek IPv6 sorgularının (AAAA istekleri) engellenmesini etkinleştirirsiniz. AAAA türü DNS istekleri çözümlenmeyecektir, bu nedenle yalnızca IPv4 sorguları işlenebilir.
 
 ### Blocked response TTL
 
-Burada, engellenen bir isteğe yanıt olarak döndürülecek TTL (kullanım süresi) değerini belirtebilirsiniz.
+Burada bir cihazın bir DNS isteğine verdiği yanıtı önbelleğe alma süresini ayarlayabilirsiniz. Belirtilen kullanım süresi boyunca (saniye cinsinden) istek, DNS sunucusuna yeniden istekte bulunmadan önbellekten okunabilir.
 
 ### Bootstrap servers
 

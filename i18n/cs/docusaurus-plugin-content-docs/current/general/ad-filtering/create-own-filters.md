@@ -353,7 +353,7 @@ V případě počítače Mac můžete ID svazku nebo název procesu aplikace zji
 
 Pokud chcete, aby se pravidlo nevztahovalo na určité aplikace, začněte název aplikace znakem `~`.
 
-- `||baddomain.com^$app=~org.example.app` — a rule to block requests that match the specified mask and are sent from any app except for the `org.example.app`.
+- `||baddomain.com^$app=~org.example.app` — pravidlo pro blokování požadavků, které odpovídají zadané masce a jsou odeslány z jakékoli aplikace kromě `org.example.app`.
 - `||baddomain.com^$app=~org.example.app1|~org.example.app2` — stejně jako výše, ale nyní jsou vyloučeny dvě aplikace: `org.example.app1` a `org.example.app2`.
 
 :::caution Omezení
@@ -533,7 +533,7 @@ kde:
 
 :::info Kompatibilita
 
-Rules with the `$header` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.11 or later.
+Pravidla s modifikátorem `$header` jsou podporována AdGuardem pro Windows, Mac a Android s [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.11 nebo novější.
 
 :::
 
@@ -592,7 +592,7 @@ Pravidla se smíšenými negovanými a negovanými hodnotami jsou považována z
 
 :::info Kompatibilita
 
-Rules with `$method` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.12 or later and AdGuard Browser Extension for Chrome, Firefox, and Edge with TSUrlFilter v2.1.1 or later.
+Pravidla s modifikátorem `$method` jsou podporována AdGuardem pro Windows, Mac a Android s [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.12 nebo novější a Rozšířením prohlížeče AdGuard pro Chrome, Firefox a Edge s filtrem TSUrlFilter v2.1.1 nebo novějším.
 
 :::
 
@@ -662,7 +662,7 @@ Místo plného názvu modifikátoru můžete použít kratší název (alias): `
 
 :::info Kompatibilita
 
-Rules with the `$to` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.12 or later and AdGuard Browser Extension with TSUrlFilter v2.1.3 or later.
+Pravidla s modifikátorem `$to` jsou podporována AdGuardem pro Windows, Mac a Android s [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.12 nebo novější a Rozšířením prohlížeče AdGuard s filtrem TSUrlFilter v2.1.3 nebo novějším.
 
 :::
 
@@ -952,7 +952,7 @@ $extension="userscript name\, with \"quote\""
 - Pouze AdGuard pro Windows, Mac a Android jsou technicky schopné používat pravidla s modifikátorem `$extension`.
 - Modifikátor se specifickým názvem uživatelského skriptu `$extension` je podporován AdGuardem pro Windows, Mac a Android, **s knihovnou CoreLibs verze 1.13 nebo novější**.
 
-Rules with `$extension` modifier with specific userscript name are supported by AdGuard for Windows, Mac and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.13 or later.
+Pravidla s modifikátorem `$extension` jsou podporována AdGuardem pro Windows, Mac a Android s [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.13 nebo novější.
 
 :::
 
@@ -1017,7 +1017,7 @@ Blokování cookies a odstranění sledovacích parametrů se provádí pomocí 
 :::info Kompatibilita
 
 - Režim utajení je k dispozici v AdGuardu pro Windows, Mac, Android a Rozšíření prohlížeče AdGuard. Všechny ostatní produkty budou ignorovat pravidla s modifikátorem `$stealth`.
-- Rules with `$stealth` modifier with specific options are supported by AdGuard for Windows, Mac, and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.10 or later.
+- Pravidla s modifikátorem `$stealth` jsou podporována AdGuardem pro Windows, Mac a Android s [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.10 nebo novější.
 
 :::
 
@@ -1124,7 +1124,7 @@ Tyto modifikátory mohou zcela změnit chování základních pravidel.
 
 | Modifikátor \ Produkty                     | [Aplikace CoreLibs][cl-apps] | [AdGuard pro Chromium][ext-chr] | [AdGuard pro Firefox][ext-ff] | [AdGuard pro iOS][ios-app] | [AdGuard pro Safari][ext-saf] | [Blokátor obsahu AdGuard][and-cb] |
 | ------------------------------------------- |:----------------------------:|:-------------------------------:|:-----------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
-| [$all](#all-modifier)                       |              ✅               |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| [$all](#all-modifier)                       |              ✅               |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
 | [$badfilter](#badfilter-modifier)           |              ✅               |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
 | [$cookie](#cookie-modifier)                 |              ✅               |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
 | [$csp](#csp-modifier)                       |              ✅               |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
@@ -1163,6 +1163,12 @@ Tyto modifikátory mohou zcela změnit chování základních pravidel.
 ```
 
 Tento modifikátor nelze použít jako výjimku se znakem `@@`.
+
+:::info Kompatibilita
+
+Pravidla s modifikátorem `$all` nejsou Blokátorem obsahu AdGuard podporována.
+
+:::
 
 #### **`$badfilter`** {#badfilter-modifier}
 
@@ -1969,7 +1975,7 @@ Pravidla `$removeparam`, která neobsahují žádné modifikátory typu obsahu [
 
 :::note Kompatibilita
 
-Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac and, Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.7 or later and AdGuard Browser Extension v3.6 or later.
+Pravidla s modifikátorem `$removeparam` jsou podporována AdGuardem pro Windows, Mac a Android s [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.7 nebo novější a Rozšířením prohlížeče AdGuard v3.6 nebo novějším.
 
 :::
 
@@ -2071,7 +2077,7 @@ Pravidla `$removeparam` lze také zakázat pravidly výjimek `$document` a `$url
 
 - Pravidla s modifikátorem `$removeparam` podporuje AdGuard pro Windows, Mac, Android a Rozšíření prohlížeče AdGuard pro Chrome, Firefox a Edge.
 - Syntaxe `$removeparam` pro regulární výrazy je podporována Rozšířením prohlížeče AdGuard v4.0 a AdGuardem pro Windows, Mac a Android **s CoreLibs verze 1.8 nebo novější**.
-- `POST` request types are supported only by AdGuard for Windows, Mac, and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.10 or later.
+- Typy požadavků `POST` podporuje pouze AdGuard pro Windows, Mac a Android s [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.10 nebo novější.
 
 :::
 
