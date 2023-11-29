@@ -11,36 +11,36 @@ sidebar_position: 16
 
 ## VPN-приложения
 
-If you are using AdGuard in the *Local VPN* filtering mode, you cannot run other VPN apps at the same time. To solve this problem, we suggest that you:
+Если вы используете AdGuard в режиме маршрутизиции *Локальный VPN*, вы не можете одновременно запускать другие VPN-приложения. Чтобы решить проблему, предлагаем:
 
-- Use [AdGuard VPN](https://adguard-vpn.com/welcome.html) — its *Integrated mode* allows two apps to operate simultaneously
-- Configure your VPN app to act as an [outbound proxy](../solving-problems/outbound-proxy.md) and set up a local outbound proxy using the parameters from the third-party app
-- Switch to the *Automatic proxy* mode. When you do that, AdGuard will no longer use local VPN and will reconfigure iptables instead
-- Switch to the *Manual proxy* mode. To do this, go to *Settings* →  *Filtering* → *Network* → *Routing mode*
+- Использовать [AdGuard VPN](https://adguard-vpn.com/welcome.html): в *Режиме интеграции* два приложения могут работать одновременно
+- Использовать ваш VPN в качестве [исходящего прокси-сервера](../solving-problems/outbound-proxy.md) и прописать его параметры в AdGuard
+- Выбрать режим *Автоматический прокси*. AdGuard больше не будет использовать локальный VPN и вместо этого перенастроит iptables
+- Выбрать режим *Ручной прокси*. Для этого перейдите в *Настройки* →  *Фильтрация* → *Сеть* → *Режим маршрутизации*
 
-:::note Compatibility
+:::note Совместимость
 
-The *Automatic proxy* mode is only accessible on rooted devices. For *Manual proxy*, rooting is required on devices running on Android 10 or later.
+*Автоматический прокси* доступен только на рутованных устройствах. Для *Ручного прокси* root-доступ требуется на устройствах с Android 10 или выше.
 
 :::
 
-## Приватный DNS
+## Частный DNS
 
-Функция приватного DNS была представлена в Android Pie. До версии Q приватный DNS не нарушал логику фильтрации AdGuard DNS, и переадресация DNS через AdGuard работала нормально. Но, начиная с версии Q, наличие Private DNS вынуждает приложения перенаправлять трафик через системный резолвер вместо AdGuard. Более подробную информацию можно найти [в блоге разработчиков Android](https://android-developers.googleblog.com/2018/04/dns-over-tls-support-in-android-p.html).
+Функция Частного DNS была представлена в Android Pie. До версии Q Частный DNS не нарушал логику фильтрации AdGuard DNS, и переадресация DNS через AdGuard работала нормально. Начиная с версии Q наличие Частного DNS вынуждает приложения перенаправлять трафик через системный резолвер вместо AdGuard. Более подробную информацию можно найти [в блоге разработчиков Android](https://android-developers.googleblog.com/2018/04/dns-over-tls-support-in-android-p.html).
 
 - Чтобы решить проблему с Частным DNS, используйте правило `$network`
 
-Некоторые производители устройств скрывают настройки приватного DNS и устанавливают автоматический режим по умолчанию. Таким образом, отключить приватный DNS невозможно, но можно заставить систему думать, что upstream недействителен, заблокировав его с помощью правила `$network`. Например, если система использует Google DNS по умолчанию, мы можем добавить правила `|8.8.4.4^$network` и `|8.8.8.8^$network`, чтобы заблокировать Google DNS.
+Некоторые производители устройств скрывают настройки Частного DNS и по умолчанию устанавливают Автоматический режим. Таким образом, отключить Частный DNS невозможно, но можно заставить систему думать, что сервер недействителен. Его можно заблокировать с помощью правила `$network`. Например, если система по умолчанию использует DNS-сервер от Google, можно добавить правила `|8.8.4.4^$network` и `|8.8.8.8^$network`, чтобы его заблокировать.
 
 ## Неподдерживаемые браузеры
 
 ### UC браузеры: UC Browser, UC Browser для x86, UC Mini, UC Browser HD
 
-Чтобы фильтровать HTTPS-трафик, AdGuard потребует у пользователя добавить сертификат в доверенные. К сожалению, браузеры семейства UC не доверяют пользовательским сертификатам, поэтому AdGuard не может выполнять в них HTTPS-фильтрацию.
+Чтобы фильтровать HTTPS-трафик, AdGuard добавляет свой сертификат в пользовательское хранилище. К сожалению, браузеры UC не доверяют пользовательским сертификатам, поэтому AdGuard не может фильтровать их HTTPS-трафик.
 
-- To solve this problem, move the [certificate to the system certificate store](../solving-problems/https-certificate-for-rooted.md/)
+- Чтобы решить эту проблему, переместите сертификат [в системное хранилище сертификатов](../solving-problems/https-certificate-for-rooted.md/)
 
-:::note Compatibility
+:::note Совместимость
 
 Требуется root-доступ.
 
@@ -48,18 +48,18 @@ The *Automatic proxy* mode is only accessible on rooted devices. For *Manual pro
 
 ### Браузер Dolphin: Браузер Dolphin, Экспресс-браузер Dolphin
 
-AdGuard cannot filter its traffic when operating in the *Manual proxy* mode because this browser ignores system proxy settings.
+AdGuard не может фильтровать его трафик при работе в режиме *Ручной прокси*, потому что этот браузер игнорирует системные настройки прокси.
 
-- Use the *Local VPN* filtering mode to solve this problem
+- Используйте режим *Локальный VPN* для решения этой проблемы
 
 ### Opera mini: Opera mini, Opera mini с Яндексом
 
-Opera mini по умолчанию пропускает трафик через прокси-сервер сжатия, а AdGuard не может распаковывать и фильтровать его одновременно.
+Opera mini по умолчанию пропускает трафик через сжимающий прокси-сервер, а AdGuard не может распаковывать и фильтровать трафик одновременно.
 
 - На данный момент решения нет
 
 ### Браузер Puffin: Браузер Puffin, Браузер Puffin Pro
 
-Браузер Puffin по умолчанию пропускает трафик через прокси-сервер сжатия, а AdGuard не может распаковывать и фильтровать его одновременно.
+Браузер Puffin по умолчанию пропускает трафик через сжимающий прокси-сервер, а AdGuard не может распаковывать и фильтровать трафик одновременно.
 
 - На данный момент решения нет

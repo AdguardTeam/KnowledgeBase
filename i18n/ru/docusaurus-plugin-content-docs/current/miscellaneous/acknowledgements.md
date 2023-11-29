@@ -136,42 +136,42 @@ sidebar_position: 2
 - Andy Kleinert (AndyKl) — переводчик и редактор немецкого языка в Crowdin
 - BigDargon — добавил проект hostsVN в качестве источника в список AdGuard DNS
 - Blaz — начинал как контрибьютор, пополняя наши фильтры, а теперь работает в AdGuard
-- Boo Berry — Telegram group moderator
-- buuuuuuu190 — beta tester
-- clarke — beta tester
-- [dartrax](https://github.com/dartrax) — beta tester
-- dja2k — beta tester
+- Boo Berry — модератор группы Telegram
+- buuuuuuu190 — бета-тестировщик
+- clarke — бета-тестировщик
+- [dartrax](https://github.com/dartrax) — бета-тестировщик
+- dja2k — бета-тестировщик
 - Eduardo Addad de Oliveira (eduardoaddad) — переводчик и редактор португальского и португальского бразильского языков в Crowdin
-- fabjazz — beta tester
+- fabjazz — бета-тестировщик
 - Görkem Emrah Güler (gork7777) — переводчик и редактор турецкого языка в Crowdin
-- hanschke — beta tester
+- hanschke — бета-тестировщик
 - iDjay — выдающийся бета-тестировщик AdGuard для iOS
 - Imre Kristoffer Eilertsen (DandelionSprout) — разработчик Nordic Filters Dandelion Sprout, которые включены во все инструменты AdGuard
 - IONIL — переводчик и редактор иврита в Crowdin
-- itabmedia — beta tester
-- kirasam — beta tester
+- itabmedia — бета-тестировщик
+- kirasam — бета-тестировщик
 - krystian3w – очень активный разработчик фильтров
 - lancelot.moon — переводчик и редактор традиционного китайского языка в Crowdin, бета-тестировщик
-- Lord Ami — beta tester
+- Lord Ami — бета-тестировщик
 - Lukas Novotny (novas78) —переводчик и редактор чешского языка в Crowdin
-- malware1 — beta tester
-- milder — beta tester
-- Nicos18 — beta tester
+- malware1 — бета-тестировщик
+- milder — бета-тестировщик
+- Nicos18 — бета-тестировщик
 - Oizaro — переводчик и редактор итальянского языка в Crowdin
 - Олег Чашко — очень активный бета-тестировщик AdGuard для Safari
 - Oskari Lavinto (olavinto) — переводчик и редактор финского языка в Crowdin
-- ouzbed — beta tester
+- ouzbed — бета-тестировщик
 - PentagramTr — разработчик фильтров, очень многое добавил в турецкий рекламный фильтр
 - Peter Hubinsky (hubak) — переводчик и редактор словацкого языка в Crowdin
 - PiQuark6046 — разработчик фильтров
-- rickyoh — beta tester
-- Ronin427 — beta tester
-- Sanjay Nand — beta tester
-- saturnotaku — beta tester
-- steve1209 — beta tester
-- streetwolf — beta tester
+- rickyoh — бета-тестировщик
+- Ronin427 — бета-тестировщик
+- Sanjay Nand — бета-тестировщик
+- saturnotaku — бета-тестировщик
+- steve1209 — бета-тестировщик
+- streetwolf — бета-тестировщик
 - superlex — помогает со скриптлетами, фильтрами и AdGuard для Safari
-- TayTayTheKiller — beta tester
+- TayTayTheKiller — бета-тестировщик
 - [TPS](https://github.com/TPS) — бета-тестировщик, разработчик фильтров
 - Yuki2718 — активный контрибьютор, помогает с фильтрами AdGuard
 - zznosar — активный бета-тестировщик, особенно помогает с AdGuard для iOS

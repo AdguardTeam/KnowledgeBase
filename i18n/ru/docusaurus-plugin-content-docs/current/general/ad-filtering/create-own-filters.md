@@ -279,7 +279,7 @@ Wildcard-символы поддерживаются для TLD-доменов �
 
 Правила с wildcard для доменов верхнего уровня не поддерживаются в AdGuard Content Blocker.
 
-### Basic rule examples
+### Примеры базовых правил
 
 - `||example.com/ads/*` — простое правило, которое соответствует адресам типа `http://example.com/ads/banner.jpg` и даже `http://subdomain.example.com/ads/otherbanner.jpg`.
 
@@ -458,7 +458,7 @@ entry_i = ( regular_domain / any_tld_domain / regexp )
 В некоторых случаях модификатор `$domain` может соответствовать не только домену-рефереру, но и целевому домену. Это происходит в случае, когда всё из перечисленного верно:
 
 1. The request has `document` content type
-1. The rule pattern does not match any particular domains
+1. Шаблон правила не соответствует ни одному конкретному домену
 1. The rule pattern does not contain regular expressions
 1. The `$domain` modifier contains only excluded domains, e.g. `$domain=~example.org|~example.com`
 
@@ -1124,7 +1124,7 @@ Rules with `$specifichide` modifier are not supported by AdGuard for iOS, AdGuar
 
 | Модификатор \ Продукты                     | [Приложения CoreLibs][cl-apps] | [AdGuard для Chromium][ext-chr] | [AdGuard для Firefox][ext-ff] | [AdGuard для iOS][ios-app] | [AdGuard для Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
 | ------------------------------------------- |:------------------------------:|:-------------------------------:|:-----------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
-| [$all](#all-modifier)                       |               ✅                |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| [$all](#all-modifier)                       |               ✅                |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
 | [$badfilter](#badfilter-modifier)           |               ✅                |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
 | [$cookie](#cookie-modifier)                 |               ✅                |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
 | [$csp](#csp-modifier)                       |               ✅                |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
@@ -1163,6 +1163,12 @@ Rules with `$specifichide` modifier are not supported by AdGuard for iOS, AdGuar
 ```
 
 Этот модификатор нельзя использовать как исключение с маркером `@@`.
+
+:::info Совместимость
+
+Rules with `$all` modifier are not supported by AdGuard Content Blocker.
+
+:::
 
 #### **`$badfilter`** {#badfilter-modifier}
 
@@ -1963,17 +1969,17 @@ Rules with `$removeparam` modifier are intended to strip query parameters from r
 
 **Синтаксис**
 
-**Basic syntax**
+**Базовый синтаксис**
 
 - `$removeparam=param` убирает параметр запроса с именем `param` из URL любого запроса. Например, запрос к `http://example.com/page?param=1&&another=2` будет преобразован в `http://example.com/page?another=2`.
 
-:::note Compatibility
+:::note Совместимость
 
 Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac and, Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.7 or later and AdGuard Browser Extension v3.6 or later.
 
 :::
 
-**Regular expressions**
+**Регулярные выражения**
 
 You can also use regular expressions to match query parameters and/or their values:
 
@@ -2001,7 +2007,7 @@ Specify naked `$removeparam` to remove all query parameters:
 
 - `||example.org^$removeparam` убирает все параметры запроса из URL, соответствующего `||example.org^`.
 
-**Inversion**
+**Инверсия**
 
 Use `~` to apply inversion:
 
@@ -2168,9 +2174,9 @@ Rules with `noop` modifier are not supported by AdGuard Content Blocker.
 
 #### **`$empty` (устаревший)** {#empty-modifier}
 
-:::caution Deprecation notice
+:::caution Скоро устареет
 
-This modifier is deprecated in favor of the [`$redirect` modifier](#redirect-modifier). Rules with `$empty` are still supported and being converted into `$redirect=nooptext` now but the support shall be removed in the future.
+Этот модификатор считается устаревшим. Вместо него теперь используется [модификатор `$redirect`](#redirect-modifier). Rules with `$empty` are still supported and being converted into `$redirect=nooptext` now but the support shall be removed in the future.
 
 :::
 
@@ -2188,9 +2194,9 @@ Rules with `$empty` modifier are not supported by AdGuard Content Blocker, AdGua
 
 #### **`$mp4` (устаревший)** {#mp4-modifier}
 
-:::caution Deprecation notice
+:::caution Скоро устареет
 
-This modifier is deprecated in favor of the [`$redirect` modifier](#redirect-modifier). Rules with `$mp4` are still supported and being converted into `$redirect=noopmp4-1s,media` now but the support shall be removed in the future.
+Этот модификатор считается устаревшим. Вместо него теперь используется [модификатор `$redirect`](#redirect-modifier). Rules with `$mp4` are still supported and being converted into `$redirect=noopmp4-1s,media` now but the support shall be removed in the future.
 
 :::
 
@@ -2224,11 +2230,11 @@ The concept of rule priorities becomes increasingly important in light of Manife
 
 #### Расчёт приоритетов
 
-To calculate priority, we've categorized modifiers into different groups. These groups are ranked based on their priority, from lowest to highest. A modifier that significantly narrows the scope of a rule adds more weight to its total priority. Conversely, if a rule applies to a broader range of requests, its priority decreases.
+To calculate priority, we've categorized modifiers into different groups. Эти группы ранжируются по степени приоритетности, от низшей к высшей. Модификатор, существенно сужающий область действия правила, увеличивает вес его общего приоритета. И наоборот, если правило применяется к более широкому кругу запросов, то его приоритет снижается.
 
-It's worth noting that there are cases where a single-parameter modifier has a higher priority than multi-parameter ones. For instance, in the case of `$domain=example.com|example.org`, a rule that includes two domains has a slightly broader effective area than a rule with one specified domain, therefore its priority is lower.
+Следует отметить, что существуют случаи, когда модификатор с одним параметром имеет более высокий приоритет, чем тот, у которого много параметров. Например, в случае `$domain=example.com|example.org`правило, включающее два домена, имеет несколько более широкую область действия, чем правило с одним указанным доменом, поэтому его приоритет ниже.
 
-The base priority of any rule is 1. If the calculated priority is a floating-point number, it will be **rounded up** to the smallest integer greater than or equal to the calculated priority.
+Базовый приоритет любого правила равен 1. Если вычисленный приоритет — число с плавающей точкой, то оно будет **округлено в большую сторону** до наименьшего целого числа, большего или равного вычисленному приоритету.
 
 :::info Совместимость
 
@@ -2239,7 +2245,7 @@ The base priority of any rule is 1. If the calculated priority is a floating-poi
 
 :::note
 
-Modifier aliases (`1p`, `3p`, etc.) are not included in these categories, however, they are utilized within the engine to compute the rule priority.
+Псевдонимы-модификаторы (`1p`, `3p` и т. д.) не входят в эти категории, однако, они используются в движке для вычисления приоритета правила.
 
 :::
 
@@ -2257,7 +2263,7 @@ Modifier aliases (`1p`, `3p`, etc.) are not included in these categories, howeve
 - [`$to`](#to-modifier)
 - ограниченные модификаторы [сontent-type](#content-type-modifiers) с `~`
 
-When dealing with a negated domain, app, method, or content-type, we add **1 point** for the existence of the modifier itself, regardless of the quantity of negated domains or content-types. This is because the rule's scope is already infinitely broad. Put simply, by prohibiting multiple domains, content-types, methods or apps, the scope of the rule becomes only minimally smaller.
+При работе с исключаемым доменом, приложением, методом или типом содержимого мы добавляем **1 балл** за существование самого модификатора, независимо от количества исключаемых доменов или типов содержимого. This is because the rule's scope is already infinitely broad. Проще говоря, запрещая несколько доменов, модификаторов content-type, методов или приложений, мы лишь немного сужаем область действия правила.
 
 #### Определённые модификаторы content-type, методы, заголовки, $popup, специальные исключения {#priority-category-2}
 
@@ -2277,11 +2283,11 @@ All allowed content types:
 - [`$websocket`](#websocket-modifier)
 - [`$xmlhttprequest`](#xmlhttprequest-modifier)
 
-This also includes rules that implicitly add the modifier `$document`:
+Это также включает правила, которые неявно добавляют модификатор `$document`:
 
 - [`$popup`](#popup-modifier)
 
-Or special exceptions that implicitly add `$document,subdocument`:
+Или специальные исключения, которые неявно добавляют `$document,subdocument`:
 
 - [`$content`](#content-modifier)
 - [`$elemhide`](#elemhide-modifier)
@@ -2292,19 +2298,19 @@ Or special exceptions that implicitly add `$document,subdocument`:
 - [`$specifichide`](#specifichide-modifier)
 - [`$urlblock`](#urlblock-modifier)
 
-Or allowed methods via [`$method`](#method-modifier).
+Или методы, разрешённые модификатором [`$method`](#method-modifier).
 
-Or rules with [`$header`](#header-modifier).
+Или правила с [`$header`](#header-modifier).
 
-The presence of any content-type modifiers adds `(50 + 50 / N)`, where `N` is the number of modifiers present, for example: `||example.com^$image,script` will add `50 + 50 / 2 = 50 + 25 = 75` to the total weight of the rule. The `$popup` also belongs to this category, because it implicitly adds the modifier `$document`. Similarly, specific exceptions add `$document,subdocument`.
+Наличие любых модификаторов content-type добавляет `(50 + 50 / N)`, где `N` — количество модификаторов, например: `||example.com^$image,script` добавит `50 + 50 / 2 = 50 + 25 = 75` к общему весу правила. К этой категории относится и `$popup`, так как в нём неявно добавляется модификатор `$document`. Similarly, specific exceptions add `$document,subdocument`.
 
-If there is a `$method` modifier in the rule with allowed methods it adds `(50 + 50 / N)`, where `N` is the number of methods allowed, for example: `||example.com^$method=GET|POST|PUT` will add `50 + 50 / 3 = 50 + 16.6 = 67` to the total weight of the rule.
+Если в правиле есть модификатор `$method` с разрешёнными методами, то он добавляет `(50 + 50 / N)`, где `N` — количество разрешённых методов, например: `||example.com^$method=GET|POST|PUT` добавит `50 + 50 / 3 = 50 + 16,6 = 67` к общему весу правила.
 
-If there is a `$header` modifier in the rule it adds `50`.
+Если в правиле есть модификатор `$header`, то он добавляет `50`.
 
 #### `$domain` или `$app` с разрешёнными доменами или приложениями {#priority-category-3}
 
-Specified domains through `$domain` or specified applications through `$app` add `100 + 100 / N`, where `N` is the number of modifier values for example: `||example.com^$domain=example.com|example.org|example.net` will add `100 + 100 / 3 = 134.3 = 135` or `||example.com^$app=org.example.app1|org.example.app2` will add `100 + 100 / 2 = 151` or `||example.com^$domain=example.com,app=org.example.app1|org.example.app2` will add `100 + 100/1` ($domain part) and `100 + 100/2` ($app part), totaling `350`.
+Домены или приложения, указанные с помощью `$domain` и `$app` соответственно, добавят `100 + 100 / N`, где `N` — количество значений модификатора, например: `||example.com^$domain=example.com|example.org|example.net` добавит `100 + 100 / 3 = 135` или `||example.com^$app=org.example.app1|org.example.app2` добавит `100 + 100 / 2 = 100 + 51 = 151` или `||example.com^$domain=example.com,app=org.example.app1|org.example.app2` добавит `100 + 100/1` (часть $domain) и `100 + 100/2` (часть $app) — в сумме `350`.
 
 Modifier values that are regexps or tld will be interpreted as normal entries of the form `example.com` and counted one by one, for example: `||example.com^$domain=example.*` will add `100 + 100 / 1 = 200` or `||example.com^$domain=example.*|adguard.*` will add `100 + 100 / 2 = 150`.
 
@@ -2315,7 +2321,7 @@ Modifier values that are regexps or tld will be interpreted as normal entries of
 - [`$redirect`](#redirect-modifier),
 - [`$redirect-rule`](#redirect-rule-modifier).
 
-Each of which adds `10^3` to rule priority.
+Каждое из них добавляет `10^3` к приоритету правила.
 
 #### Особые исключения {#priority-category-4}
 
@@ -2330,7 +2336,7 @@ Each of which adds `10^3` to rule priority.
 - [`$specifichide`](#specifichide-modifier)
 - [`$urlblock`](#urlblock-modifier)
 
-Each of which adds `10^4` to the priority.
+Каждое из них добавляет `10^4` к приоритету.
 
 As well as exception with [`$document modifier`](#document-modifier): because it's an alias for `$elemhide,content,jsinject,urlblock,extension`. It will add `10^4` for each modifier from [the top list](#priority-category-4), `10^4 * 5` in total.
 
@@ -2356,19 +2362,19 @@ The [`$replace`](#replace-modifier) modifier takes precedence over all blocking 
 
 #### Примеры
 
-**Example 1**
+**Пример 1**
 
 `||example.com^`
 
-Weight of the rule without modifiers: `1`.
+Вес правила без модификаторов: `1`.
 
-**Example 2**
+**Пример 2**
 
 `||example.com^$match-case`
 
-Weight of the rule: base weight + weight of the modifier from [category 1](#priority-category-1): `1 + 1 = 2`.
+Вес правила: базовый вес + вес модификатора из [категории 1](#priority-category-1): `1 + 1 = 2`.
 
-**Example 3**
+**Пример 3**
 
 `||example.org^$removeparam=p`
 
@@ -2380,31 +2386,31 @@ Weight of the rule: base weight + 0, since $removeparam [is not involved](#prior
 
 Rule weight: base weight + allowed content type, [category 3](#priority-category-3) + $redirect from [category 6](#priority-category-6): `1 + (100 + 100 / 1) + 1000 = 1201`.
 
-**Example 5**
+**Пример 5**
 
 `@@||example.org^$removeparam=p,document`
 
 Rule weight: base weight + allowlist rule, [category 5](#priority-category-5) + 0 because $removeparam [is not involved](#priority-category-extra) in the priority calculation + allowed content type, [category 2](#priority-category-2): `1 + 10000 + 0 + (50 + 50 / 1) = 10101`.
 
-**Example 6**
+**Пример 6**
 
 `@@||example.com/ad/*$domain=example.org|example.net,important`
 
 Rule weight: base weight + allowlist rule, [category 5](#priority-category-5) + important rule, [category 7](#priority-category-7) + allowed domains, [category 3](#priority-category-3): `1 + 10000 + 1000000 + (100 + 100 / 2) = 1010152`.
 
-**Example 7**
+**Пример 7**
 
-`@@||example.org^$document` without additional modifiers is an alias for `@@||example.com^$elemhide,content,jsinject,urlblock,extension`
+`@@||example.org^$document` без дополнительных модификаторов — это псевдоним для `@@|||example.com^$elemhide,content,jsinject,urlblock,extension`
 
 Rule weight: base weight + specific exceptions, [category 4](#priority-category-4) + two allowed content types (document and subdocument), [category 2](#priority-category-2): `1 + 10000 * 4 + (50 + 50 / 2) = 40076`.
 
-**Example 8**
+**Пример 8**
 
 `*$script,domain=a.com,denyallow=x.com|y.com`
 
 Rule weight: base weight + allowed content type, [category 2](#priority-category-2) + allowed domain, [category 3](#priority-category-3) + denyallow, [category 1](#priority-category-1): `1 + (50 + 50/1) + (100 + 100 / 1) + 1 = 303`.
 
-**Example 9**
+**Пример 9**
 
 `||example.com^$all` (alias to `||example.com^$document,subdocument,image,script,media,etc. + $popup`)
 
@@ -2440,9 +2446,9 @@ Work with non-basic rules requires the basic knowledge of HTML and CSS. So, if y
 
 ### Правила скрытия элементов {#cosmetic-elemhide-rules}
 
-Element hiding rules are used to hide the elements of web pages. It is similar to applying `{ display: none; }` style to selected element.
+Правила скрытия элементов предназначены, как это следует из их названия, для скрытия элементов веб-страниц. It is similar to applying `{ display: none; }` style to selected element.
 
-Element hiding rules may operate differently [depending on the platform](#cosmetic-rules-priority).
+Правила скрытия элементов работают по-разному, и их приоритет меняется [в зависимости от платформы](#cosmetic-rules-priority).
 
 #### Синтаксис {#non-basic-rules-modifiers-syntax}
 
@@ -2454,17 +2460,17 @@ domains = [domain0, domain1[, ...[, domainN]]]
 - **`selector`** — [CSS-селектор](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors), задающий элементы, которые должны быть скрыты.
 - **`domains`** — ограничение на домены, на страницах которых будет применено правило.
 
-If you want to limit the rule application area to certain domains, just enter them separated with commas. For example: `example.org,example.com##selector`.
+Если вы хотите ограничить область действия одним или более доменами, просто перечислите их через запятую. Например: `example.org,example.com##selector`.
 
-This rule will be also applied to all subdomains of `example.org` and `example.com`.
+Это правило будет работать также на всех поддоменах `example.org` и `example.com`.
 
-Если вы хотите, чтобы правило не применялось к определённым доменам, начните доменное имя со знака `~`. For example: `~example.org##selector`.
+Если вы хотите, чтобы правило не применялось к определённым доменам, начните доменное имя со знака `~`. Например: `~example.org##selector`.
 
-You can use both approaches in a single rule. For example, `example.org,~subdomain.example.org##domain` will work for `example.org` and all subdomains, **except `subdomain.example.org`**.
+Вы можете использовать оба подхода в одном правиле. Например, правило `example.org,~subdomain.example.org##domain` будет работать для домена `example.org` и всех его поддоменов, **кроме `subdomain.example.org`**.
 
 :::note
 
-Element hiding rules are not dependent on each other. If there is a rule `example.org##selector` in the filter and you add `~example.org##selector` both rules will be applied independently.
+Правила скрытия не зависят друг от друга. Если в фильтре есть правило `example.org##selector` и вы добавляете правило `~example.org##selector`, то оба этих правила будут применены независимо друг от друга.
 
 :::
 
@@ -2476,13 +2482,13 @@ Element hiding rules are not dependent on each other. If there is a rule `exampl
 
 **Ограничения**
 
-Safari does not support both permitted and restricted domains. So the rules like `example.org,~foo.example.org##.textad` are invalid in AdGuard for Safari.
+Safari не поддерживает одновременно разрешённые и запрещённые домены, поэтому правила вида `example.org,~foo.example.org##.textad` не работают в AdGuard для Safari.
 
 **Исключения**
 
-Exceptions can disable some rules on particular domains. They are very similar to usual exception rules, but instead of `##` you have to use `#@#`.
+Исключения могут отключать некоторые правила на определённых доменах. Они очень похожи на обычные правила-исключения, только вместо `##` нужно использовать `#@#`.
 
-For example, there is a rule in filter:
+Например, в фильтре есть правило:
 
 ```adblock
 ##.textad
@@ -2494,23 +2500,23 @@ If you want to disable it for `example.com`, you can create an exception rule:
 example.com#@#.textad
 ```
 
-Sometimes, it may be necessary to disable all restriction rules. For example, to conduct tests. To do this, use the exclusion rule without specifying a domain. It will completely disable matching CSS elemhide rule on ALL domains:
+В некоторых случаях может потребоваться отключение всех запрещающих правил. Например, на время тестирования. Для этого воспользуйтесь правилом исключения без указания домена. Это полностью отключит соответствующее правило CSS elemhide для ВСЕХ доменов:
 
 ```adblock
 #@#.textad
 ```
 
-The same can be achieved by adding this rule:
+Правило такого вида даст аналогичный результат:
 
 ```adblock
 *#@#.textad
 ```
 
-We recommend to use this kind of exceptions only if it is not possible to change the hiding rule itself. In other cases it is better to change the original rule, using domain restrictions.
+Применять такие исключения рекомендуется только в случае, когда изменить само правило скрытия невозможно. Во всех остальных случаях лучше изменить исходное правило, используя ограничение на домены.
 
 ### CSS-правила {#cosmetic-css-rules}
 
-Sometimes, simple hiding of an element is not enough to deal with advertising. For example, blocking an advertising element can just break the page layout. In this case AdGuard can use rules that are much more flexible than hiding rules. With this rules you can basically add any CSS styles to the page.
+Иногда недостаточно просто скрыть какой-либо элемент, чтобы заблокировать рекламу. Например, блокировка рекламного элемента может просто сломать вёрстку сайта. Для таких случаев AdGuard позволяет использовать гораздо более гибкие правила, чем обычные правила скрытия. With this rules you can basically add any CSS styles to the page.
 
 **Синтаксис**
 
@@ -2529,13 +2535,13 @@ domains = [domain0, domain1[, ...[, domainN]]]
 example.com#$#body { background-color: #333!important; }
 ```
 
-This rule will apply a style `background-color: #333!important;` to the `body` element at `example.com` and all subdomains.
+Это правило применит стиль `background-color: #333!important;` к элементу `body` для домена `example.com` и всех его поддоменов.
 
 **Исключения**
 
-Just like with element hiding, there is a type of rules that disable the selected CSS style rule for particular domains. Exception rule syntax is almost the same, you just have to change `#$#` to `#@$#`.
+Just like with element hiding, there is a type of rules that disable the selected CSS style rule for particular domains. Синтаксис правил-исключений практически такой же, только маркер `#$#` заменяется на `#@$#`.
 
-For example, there is a rule in filter:
+Например, в фильтре есть правило:
 
 ```adblock
 #$#.textad { visibility: hidden; }
@@ -2547,11 +2553,11 @@ If you want to disable it for `example.com`, you can create an exception rule:
 example.com#@$#.textad { visibility: hidden; }
 ```
 
-We recommend to use this kind of exceptions only if it is not possible to change the CSS rule itself. In other cases it is better to change the original rule, using domain restrictions.
+We recommend to use this kind of exceptions only if it is not possible to change the CSS rule itself. Во всех остальных случаях лучше изменить исходное правило, используя ограничение на домены.
 
 :::caution Ограничения
 
-Styles that lead to loading any resource are forbidden. Basically, it means that you cannot use any `<url>` type of value in the style.
+Styles that lead to loading any resource are forbidden. Это означает, что нельзя использовать атрибуты типа `<url>`.
 
 :::
 
@@ -2559,7 +2565,7 @@ Styles that lead to loading any resource are forbidden. Basically, it means that
 
 CSS rules are not supported by AdGuard Content Blocker.
 
-CSS rules may operate differently [depending on the platform](#cosmetic-rules-priority).
+CSS-правила работают по-разному, и их приоритет меняется [в зависимости от платформы](#cosmetic-rules-priority).
 
 :::
 
@@ -2579,13 +2585,13 @@ CSS rules may operate differently [depending on the platform](#cosmetic-rules-pr
 - [Псевдокласс `:not()`](#extended-css-not)
 - [Псевдокласс `:if-not()` (удалён)](#extended-css-if-not)
 
-CSS 3.0 is not always enough to block ads. To solve this problem AdGuard extends CSS capabilities by adding support for the new pseudo-elements. We have developed a separate [open-source library](https://github.com/AdguardTeam/ExtendedCss) for non-standard element selecting and applying CSS styles with extended properties.
+Возможностей CSS 3.0 не всегда хватает для блокировки рекламы. Чтобы решить эту проблему, AdGuard расширяет возможности CSS, добавляя поддержку новых псевдоэлементов. Мы разработали отдельную [библиотеку с открытым исходным кодом](https://github.com/AdguardTeam/ExtendedCss) для выбора нестандартных элементов и применения CSS-стилей с расширенными свойствами.
 
-The idea of extended capabilities is an opportunity to match DOM elements with selectors based on their own representation (style, text content, etc.) or relations with other elements. There is also an opportunity to apply styles with non-standard CSS properties.
+Идея расширенных возможностей заключается в возможности сопоставлять элементы DOM с селекторами на основе их собственного представления (стиль, текстовое содержимое и т. д.) или отношений с другими элементами. Также есть возможность применять стили с нестандартными свойствами CSS.
 
-**Application area**
+**Область применения**
 
-Extended selectors can be used in any cosmetic rule, whether they are [element hiding rules](#cosmetic-elemhide-rules) or [CSS rules](#cosmetic-css-rules).
+Расширенные селекторы можно применять в любом косметическом правиле, будь то [правила скрытия](#cosmetic-elemhide-rules) или [CSS-правила](#cosmetic-css-rules).
 
 :::info Совместимость
 
@@ -2595,9 +2601,9 @@ Rules with extended CSS selectors are not supported by AdGuard Content Blocker.
 
 **Синтаксис**
 
-Regardless of the CSS pseudo-classes you are using in the rule, you can use special markers to force applying these rules by ExtendedCss. It is recommended to use these markers for all extended CSS cosmetic rules so that it was easier to find them.
+Независимо от того, какие CSS-псевдоклассы вы используете в правилах, вы можете использовать специальные маркеры для принудительного применения этих правил с помощью ExtendedCss. Рекомендуется использовать эти маркеры для всех косметических расширенных CSS-правил, чтобы их было легче отличить.
 
-The syntax for extended CSS rules:
+Синтаксис расширенных CSS-правил:
 
 - `#?# ` — для скрытия элементов, `#@?#` — для исключений
 - `#$?#` — для CSS-стилей, `#@$?#` — для исключений
@@ -2639,13 +2645,13 @@ Rules with the `:has()` pseudo-class should use the [native implementation of `:
 
 :::
 
-**Compatibility with other pseudo-classes**
+**Совместимость с другими псевдоклассами**
 
-Synonyms `:-abp-has()` is supported by ExtendedCss for better compatibility.
+Синонимы `:-abp-has()` поддерживаются ExtendedCss для лучшей совместимости.
 
 :::danger Уведомление об удалении
 
-`:if()` is no longer supported as a synonym for `:has()`.
+`:if()` больше не поддерживается как синоним для `:has()`.
 
 :::
 
@@ -2658,18 +2664,18 @@ Synonyms `:-abp-has()` is supported by ExtendedCss for better compatibility.
 - `target` — необязательный, стандартный или расширенный CSS-селектор, может быть пропущен для проверки *любых* элементов
 - `selector` — необходимый, стандартный или расширенный CSS-селектор
 
-The pseudo-class `:has()` selects the `target` elements that fit to the `selector`. Also the `selector` can start with a combinator.
+Псевдокласс `:has()` выбирает `target`-элементы, которые подходят под `selector`. Также `селектор` может начинаться с комбинатора.
 
-A selector list can be set in `selector` as well. In this case **all** selectors in the list are being matched for now. In the future it will be fixed for [`<forgiving-relative-selector-list>`](https://www.w3.org/TR/selectors-4/#typedef-forgiving-relative-selector-list) as argument.
+A selector list can be set in `selector` as well. В этом случае **все** селекторы в списке будут сопоставляться. In the future it will be fixed for [`<forgiving-relative-selector-list>`](https://www.w3.org/TR/selectors-4/#typedef-forgiving-relative-selector-list) as argument.
 
 ##### Ограничения `:has()` {#extended-css-has-limitations}
 
-Usage of the `:has()` pseudo-class is [restricted for some cases (2, 3)](https://bugs.chromium.org/p/chromium/issues/detail?id=669058#c54):
+Использование псевдокласса `:has()` [ограничено для некоторых случаев (2, 3)](https://bugs.chromium.org/p/chromium/issues/detail?id=669058#c54):
 
 - запретить `:has()` внутри псевдоселекторов, принимающих только составные селекторы;
 - запретить `:has()` после обычных псевдоэлементов.
 
-Native `:has()` pseudo-class does not allow `:has()`, `:is()`, `:where()` inside `:has()` argument to avoid increasing the `:has()` invalidation complexity ([case 1](https://bugs.chromium.org/p/chromium/issues/detail?id=669058#c54)). But ExtendedCss did not have such limitation earlier and filter lists already contain such rules, so we have not added this limitation to ExtendedCss and allow to use `:has()` inside `:has()` as it was possible before. To use it, just force ExtendedCss usage by setting `#?#`/`#$?#` rule marker.
+Native `:has()` pseudo-class does not allow `:has()`, `:is()`, `:where()` inside `:has()` argument to avoid increasing the `:has()` invalidation complexity ([case 1](https://bugs.chromium.org/p/chromium/issues/detail?id=669058#c54)). Но ранее ExtendedCss не имел такого ограничения, а списки фильтров уже содержат такие правила, поэтому мы не стали добавлять это ограничение в ExtendedCss и разрешили использовать `:has()` внутри `:has()`, как это было возможно ранее. Чтобы использовать его, просто принудительно используйте ExtendedCss, установив `#?#`/`#$?#` маркер правила.
 
 Native implementation does not allow any usage of `:scope` inside `:has()` argument ([[1]](https://github.com/w3c/csswg-drafts/issues/7211), [[2]](https://github.com/w3c/csswg-drafts/issues/6399)). Still, there are some such rules in filter lists: `div:has(:scope a)` which we continue to support by simply converting them to `div:has(> a)`, as it used to be done previously.
 
@@ -2734,17 +2740,17 @@ Native implementation does not allow any usage of `:scope` inside `:has()` argum
 
 #### Псевдокласс `:contains()` {#extended-css-contains}
 
-The `:contains()` pseudo-class principle is very simple: it allows to select the elements that contain specified text or which content matches a specified regular expression. Regexp flags are supported.
+The `:contains()` pseudo-class principle is very simple: it allows to select the elements that contain specified text or which content matches a specified regular expression. Поддерживаются флаги регулярных выражений.
 
 :::note
 
-The `:contains()` pseudo-class uses the `textContent` element property for matching, not the `innerHTML`.
+Псевдокласс `:contains()` использует для сопоставления свойство элемента `textContent`, а не `innerHTML`.
 
 :::
 
-**Compatibility with other pseudo-classes**
+**Совместимость с другими псевдоклассами**
 
-Synonyms `:-abp-contains()` and `:has-text()` are supported for better compatibility.
+Синонимы `:-abp-contains()` и `:has-text()` поддерживаются для лучшей совместимости.
 
 **Синтаксис**
 
@@ -2757,7 +2763,7 @@ Synonyms `:-abp-contains()` and `:has-text()` are supported for better compatibi
 
 **Примеры**
 
-For such DOM:
+Для таких DOM:
 
 ```html
 <!-- HTML code -->
@@ -2785,7 +2791,7 @@ Only the `div` with `id=match` is selected because the next element does not con
 
 :::
 
-:::danger Old syntax
+:::danger Старый синтаксис
 
 [Backward compatible syntax for `:contains()`](https://github.com/AdguardTeam/ExtendedCss#old-syntax-contains) is supported but **not recommended**.
 
@@ -2793,7 +2799,7 @@ Only the `div` with `id=match` is selected because the next element does not con
 
 #### Псевдокласс `:matches-css()` {#extended-css-matches-css}
 
-The `:matches-css()` pseudo-class allows to match the element by its current style properties. The work of the pseudo-class is based on using the [`Window.getComputedStyle()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle) method.
+Псевдокласс `:matches-css()` позволяет сопоставить элемент по свойствам его текущего стиля. Работа псевдокласса основана на использовании метода [`Window.getComputedStyle()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle).
 
 **Синтаксис**
 
@@ -2806,15 +2812,15 @@ The `:matches-css()` pseudo-class allows to match the element by its current sty
 - `property` — требуется, название CSS-свойства, которое будет проверено у элемента
 - `pattern` — требуется, паттерн значений, который использует то же простое сопоставление с wildcard-знаками, что и в основных правилах фильтрации URL-адресов, ИЛИ регулярное выражение. Для этого типа соответствия AdGuard не обращает внимание на регистр. В случае с регулярными выражениями паттерн будет выглядеть так: `/regexp/`.
 
-**Special characters escaping and unescaping**
+**Экранирование и снятие специальных символов**
 
-For **non-regexp** patterns `(`,`)`,`[`,`]` must be **unescaped**, e.g. `:matches-css(background-image:url(data:*))`.
+Для **нерегулярных выражений** паттерны `(`,`)`,`[`,`]` должны быть **без экранирования**, например, `:matches-css(background-image:url(data:*))`.
 
-For **regexp** patterns `\` should be **escaped**, e.g. `:matches-css(background-image: /^url\\("data:image\\/gif;base64.+/)`.
+Для **регулярных выражений** паттерны `\` должны быть **экранированы**, например, `:matches-css(background-image: /^url\\("data:image\\/gif;base64.+/)`.
 
 **Примеры**
 
-For such DOM:
+Для таких DOM:
 
 ```html
 <!-- HTML code -->
@@ -2827,7 +2833,7 @@ For such DOM:
 <div id="not-matched"></div>
 ```
 
-the `div` elements with pseudo-element `::before` and with specified `content` property can be selected by any of these extended selectors:
+`div`-элементы с псевдоэлементом `::before` и с указанным свойством `content` могут быть выбраны любым из этих расширенных селекторов:
 
 ```adblock
 ! паттерн строки
@@ -2842,17 +2848,17 @@ div:matches-css(before, content: /block me/)
 
 :::caution Ограничения
 
-Regexp patterns **do not support** flags.
+Паттерны регулярных выражений **не поддерживают** флаги.
 
 :::
 
 :::info Совместимость
 
-Obsolete pseudo-classes `:matches-css-before()` and `:matches-css-after()` are no longer recommended but still are supported for better compatibility.
+Устаревшие псевдоклассы `:matches-css-before()` и `:matches-css-after()` больше не рекомендуются, но по-прежнему поддерживаются для лучшей совместимости.
 
 :::
 
-:::danger Old syntax
+:::danger Старый синтаксис
 
 [Backward compatible syntax for `:matches-css()`](https://github.com/AdguardTeam/ExtendedCss#old-syntax-matches-css) is supported but **not recommended**.
 
@@ -2878,28 +2884,28 @@ For **regexp** patterns `"` and `\` should be **escaped**, e.g. `div:matches-att
 
 **Примеры**
 
-`div:matches-attr("ad-link")` selects the element `div#target1`:
+`div:matches-attr("ad-link")` выбирает элемент `div#target1`:
 
 ```html
 <!-- HTML code -->
 <div id="target1" ad-link="1random23-banner_240x400"></div>
 ```
 
-`div:matches-attr("data-*"="adBanner")` selects the element `div#target2`:
+`div:matches-attr("data-*"="adBanner")` выбирает элемент `div#target2`:
 
 ```html
 <!-- HTML code -->
 <div id="target2" data-1random23="adBanner"></div>
 ```
 
-`div:matches-attr(*unit*=/^click$/)` selects the element `div#target3`:
+`div:matches-attr(*unit*=/^click$/)` выбирает элемент `div#target3`:
 
 ```html
 <!-- HTML code -->
 <div id="target3" random123-unit094="click"></div>
 ```
 
-`*:matches-attr("/.{5,}delay$/"="/^[0-9]*$/")` selects the element `#target4`:
+`*:matches-attr("/.{5,}delay$/"="/^[0-9]*$/")` выбирает элемент `#target4`:
 
 ```html
 <!-- HTML code -->
@@ -2910,7 +2916,7 @@ For **regexp** patterns `"` and `\` should be **escaped**, e.g. `div:matches-att
 
 :::caution Ограничения
 
-Regexp patterns **do not support** flags.
+Паттерны регулярных выражений **не поддерживают** флаги.
 
 :::
 
@@ -2974,7 +2980,7 @@ div:matches-property(memoizedProps.key="null")
 div:matches-property(memoizedProps._owner.src=/ad/)
 ```
 
-:::tip For filters maintainers
+:::tip Для разработчиков фильтров
 
 To check properties of a specific element, do the following:
 
@@ -2985,7 +2991,7 @@ To check properties of a specific element, do the following:
 
 :::caution Ограничения
 
-Regexp patterns **do not support** flags.
+Паттерны регулярных выражений **не поддерживают** флаги.
 
 :::
 
@@ -3004,22 +3010,22 @@ The `:xpath()` pseudo-class allows to select an element by evaluating an XPath e
 
 ##### Ограничения `:xpath()` {#extended-css-xpath-limitations}
 
-`target` can be omitted so it is optional. For any other pseudo-class that would mean "apply to *all* DOM nodes", but in case of `:xpath()` it just means "apply to the *whole* document", and such applying slows elements selecting significantly. That's why rules like `#?#:xpath(expression)` are limited to looking inside the `body` tag. For example, rule `#?#:xpath(//div[@data-st-area=\'Advert\'])` is parsed as `#?#body:xpath(//div[@data-st-area=\'Advert\'])`.
+`target` can be omitted so it is optional. Для любого другого псевдокласса это будет означать «применить ко *всем* узлам DOM», но в случае `:xpath()` это просто означает «применить к *целым* документам», и такое применение значительно замедляет выбор элементов. Вот почему такие правила, как `#?#:xpath(expression)`, ограничены поиском внутри тега `body`. Например, правило `#?#:xpath(//div[@data-st-area=\'Advert\'])` парсится как `#?#body:xpath(//div[@data-st- area=\'Advert\'])`.
 
 Extended selectors with defined `target` as *any* selector — `*:xpath(expression)` — can still be used but it is not recommended, so `target` should be specified instead.
 
-Works properly only at the end of selector, except for [pseudo-class :remove()](#remove-pseudos).
+Корректно работает только в конце селектора, за исключением псевдокласса [:remove()](#remove-pseudos).
 
 **Примеры**
 
-`:xpath(//*[@class="banner"])` selects the element `div#target1`:
+`:xpath(//*[@class="banner"])` выбирает элемент `div#target1`:
 
 ```html
 <!-- HTML code -->
 <div id="target1" class="banner"></div>
 ```
 
-`:xpath(//*[@class="inner"]/..)` selects the element `div#target2`:
+`:xpath(//*[@class="inner"]/..)` выбирает элемент `div#target2`:
 
 ```html
 <!-- HTML code -->
@@ -3054,7 +3060,7 @@ The `:nth-ancestor()` pseudo-class is not supported inside the argument of the [
 
 **Примеры**
 
-For such DOM:
+Для таких DOM:
 
 ```html
 <!-- HTML code -->
@@ -3090,11 +3096,11 @@ subject:upward(ancestor)
 
 ##### Ограничения `:upward()` {#extended-css-upward-limitations}
 
-The `:upward()` pseudo-class is not supported inside the argument of the [`:not()` pseudo-class](#extended-css-not).
+Псевдокласс `:upward()` не поддерживается внутри аргумента псевдокласса [`:not()`](#extended-css-not).
 
 **Примеры**
 
-For such DOM:
+Для таких DOM:
 
 ```html
 <!-- HTML code -->
@@ -3111,13 +3117,13 @@ For such DOM:
 </div>
 ```
 
-`.inner:upward(div[data])` selects the element `div#target1`, `.inner:upward(div[id])` selects the element `div#target2`, `.child:upward(1)` selects the element `div#target1`, `.inner:upward(3)` selects the element `div#target2`.
+`.inner:upward(div[data])` выбирает элемент `div#target1`, `.inner:upward(div[id])` выбирает элемент `div#target2`, `.child:upward(1)` выбирает элемент `div#target1`, `.inner:upward(3)` выбирает элемент `div#target2`.
 
 #### Псевдокласс `:remove()` и псевдосвойство `remove` {#remove-pseudos}
 
-Sometimes, it is necessary to remove a matching element instead of hiding it or applying custom styles. In order to do it, you can use the `:remove()` pseudo-class as well as the `remove` pseudo-property.
+Иногда необходимо удалить определённый элемент, а не просто скрыть его или применить какие-либо правила стиля. Для этого можно использовать псевдокласс `:remove()`, а также псевдосвойство `remove`.
 
-**Pseudo-class `:remove()` can be placed only at the end of a selector.**
+**Псевдокласс `:remove()` может быть только в конце селектора.**
 
 **Синтаксис**
 
@@ -3133,11 +3139,11 @@ selector { remove: true; }
 
 ##### Ограничения `:remove()` и `remove` {#extended-css-remove-limitations}
 
-The `:remove()` pseudo-class is limited to work properly only at the end of selector.
+Псевдокласс `:remove()` может корректно работать только в конце селектора.
 
 For applying the `:remove()` pseudo-class to any element, a [universal selector](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*` should be used. Otherwise such extended selector may be considered as invalid, e.g. `.banner > :remove()` is not valid for removing any child element of `banner` class element, so it should look like `.banner > *:remove()`.
 
-If the `:remove()` pseudo-class or the `remove` pseudo-property is used, all style properties are ignored except for the [`debug` pseudo-property](#selectors-debug-mode).
+Если используется псевдокласс `:remove()` или псевдосвойство `remove`, все свойства стиля игнорируются, кроме псевдосвойства [`debug`](#selectors-debug-mode).
 
 **Примеры**
 
@@ -3157,7 +3163,7 @@ Rules with the `remove` pseudo-property should use `#$?#` marker: `$` for CSS-st
 
 #### Псевдокласс `:is()` {#extended-css-is}
 
-The `:is()` pseudo-class allows to match any element that can be selected by any of selectors passed to it. Invalid selectors are skipped and the pseudo-class deals with valid ones with no error thrown. Our implementation of the [native `:is()` pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/:is).
+Псевдокласс `:is()` позволяет сопоставить любой элемент, который может быть выбран любым из переданных ему селекторов. Некорректные селекторы пропускаются, и псевдокласс работает с допустимыми селекторами без каких-либо ошибок. Our implementation of the [native `:is()` pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/:is).
 
 **Синтаксис**
 
@@ -3172,13 +3178,13 @@ The `:is()` pseudo-class allows to match any element that can be selected by any
 
 Rules with the `:is()` pseudo-class should use the [native implementation of `:is()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:is) if rules use `##` marker and it is possible, i.e. with no other extended selectors inside. To force applying ExtendedCss rules with `:is()`, use `#?#`/`#$?#` marker explicitly.
 
-If the `:is()` pseudo-class argument `selectors` is an extended selector, due to the way how the `:is()` pseudo-class is implemented in ExtendedCss v2.0, it is impossible to apply it to the top DOM node which is `html`, i.e. `#?#html:is(<extended-selectors>)` does not work. So if `target` is not defined or defined as a [universal selector](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*`, the extended pseudo-class applying is limited to **`html`'s children**, e.g. rules `#?#:is(...)` and `#?#*:is(...)` are parsed as `#?#html *:is(...)`. Please note that there is no such limitation for a standard selector argument, i.e. `#?#html:is(.locked)` works fine.
+If the `:is()` pseudo-class argument `selectors` is an extended selector, due to the way how the `:is()` pseudo-class is implemented in ExtendedCss v2.0, it is impossible to apply it to the top DOM node which is `html`, i.e. `#?#html:is(<extended-selectors>)` does not work. So if `target` is not defined or defined as a [universal selector](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*`, the extended pseudo-class applying is limited to **`html`'s children**, e.g. rules `#?#:is(...)` and `#?#*:is(...)` are parsed as `#?#html *:is(...)`. Обратите внимание, что для стандартного аргумента селектора такого ограничения нет, т.е. `#?#html:is(.locked)` работает нормально.
 
-[Complex selectors](https://www.w3.org/TR/selectors-4/#complex) with extended pseudo-classes are not supported as `selectors` argument for `:is()` pseudo-class, only [compound ones](https://www.w3.org/TR/selectors-4/#compound) are allowed. Check examples below for more details.
+[Сложные селекторы](https://www.w3.org/TR/selectors-4/#complex) с расширенными псевдоклассами не поддерживаются в качестве аргумента `selectors` для псевдокласса `:is()` — разрешены только [составные](https://www.w3.org/TR/selectors-4/#compound). Ознакомьтесь с примерами, чтобы разобраться в деталях.
 
 **Примеры**
 
-`#container *:is(.inner, .footer)` selects only the element `div#target1`:
+`#container *:is(.inner, .footer)` выбирает только элемент `div#target1`:
 
 ```html
 <!-- HTML code -->
@@ -3191,7 +3197,7 @@ If the `:is()` pseudo-class argument `selectors` is an extended selector, due to
 </div>
 ```
 
-Due to limitations `:is(*:not([class]) > .banner)'` does not work but `:is(*:not([class]):has(> .banner))` can be used instead of it to select the element `div#target2`:
+Из-за ограничений `:is(*:not([class]) > .banner)'` не работает, но `:is(*:not([class]):has(> .banner))` можно использовать вместо него для выбора элемента `div#target2`:
 
 ```html
 <!-- HTML code -->
@@ -3203,7 +3209,7 @@ Due to limitations `:is(*:not([class]) > .banner)'` does not work but `:is(*:not
 
 #### Псевдокласс `:not()` {#extended-css-not}
 
-The `:not()` pseudo-class allows to select elements which are *not matched* by selectors passed as argument. Invalid argument selectors are not allowed and error is to be thrown. Our implementation of the [`:not()` pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/:not).
+Псевдокласс `:not()` позволяет выбрать элементы, которые *не соответствуют* селекторам, переданным в качестве аргумента. Неправильные селекторы аргументов не допускаются, и будет выдана ошибка. Наша реализация псевдокласса [`:not()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:not).
 
 **Синтаксис**
 
@@ -3216,17 +3222,17 @@ The `:not()` pseudo-class allows to select elements which are *not matched* by s
 
 ##### Ограничения `:not()` {#extended-css-not-limitations}
 
-Rules with the `:not()` pseudo-class should use the [native implementation of `:not()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:not) if rules use `##` marker and it is possible, i.e. with no other extended selectors inside. To force applying ExtendedCss rules with `:not()`, use `#?#`/`#$?#` marker explicitly.
+Rules with the `:not()` pseudo-class should use the [native implementation of `:not()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:not) if rules use `##` marker and it is possible, i.e. with no other extended selectors inside. Чтобы принудительно применить правила ExtendedCss с `:not()`, используйте маркер `#?#`/`#$?#` явно.
 
-If the `:not()` pseudo-class argument `selectors` is an extended selector, due to the way how the `:not()` pseudo-class is implemented in ExtendedCss v2.0, it is impossible to apply it to the top DOM node which is `html`, i.e. `#?#html:not(<extended-selectors>)` does not work. So if `target` is not defined or defined as a [universal selector](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*`, the extended pseudo-class applying is limited to **`html`'s children**, e.g. rules `#?#:not(...)` and `#?#*:not(...)` are parsed as `#?#html *:not(...)`. Please note that there is no such limitation for a standard selector argument, i.e. `#?#html:not(.locked)` works fine.
+If the `:not()` pseudo-class argument `selectors` is an extended selector, due to the way how the `:not()` pseudo-class is implemented in ExtendedCss v2.0, it is impossible to apply it to the top DOM node which is `html`, i.e. `#?#html:not(<extended-selectors>)` does not work. So if `target` is not defined or defined as a [universal selector](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*`, the extended pseudo-class applying is limited to **`html`'s children**, e.g. rules `#?#:not(...)` and `#?#*:not(...)` are parsed as `#?#html *:not(...)`. Обратите внимание, что для стандартного аргумента селектора такого ограничения нет, т.е. `#?#html:not(.locked)` работает нормально.
 
-The `:not()` is considered as a standard CSS pseudo-class inside the argument of the [`:upward()` pseudo-class](#extended-css-upward) because `:upward()` supports only standard selectors.
+Псевдокласс `:not()` рассматривается как стандартный псевдокласс CSS внутри аргумента псевдокласса [`:upward()`](#extended-css-upward), поскольку `:upward()` поддерживает только стандартные селекторы.
 
 "Up-looking" pseudo-classes which are [`:nth-ancestor()`](#extended-css-nth-ancestor) and [`:upward()`](#extended-css-upward) are not supported inside `selectors` argument for `:not()` pseudo-class.
 
 **Примеры**
 
-`#container > *:not(h2, .text)` selects only the element `div#target1`:
+`#container > *:not(h2, .text)` выбирает только элемент `div#target1`:
 
 ```html
 <!-- HTML code -->
@@ -3241,29 +3247,29 @@ The `:not()` is considered as a standard CSS pseudo-class inside the argument of
 
 :::danger Уведомление об удалении
 
-The `:if-not()` pseudo-class is removed and is no longer supported. Правила с ним не работают.
+Псевдокласс `:if-not()` удалён и больше не поддерживается. Правила с ним не работают.
 
 :::
 
-This pseudo-class was basically a shortcut for `:not(:has())`. It was supported by ExtendedCss for better compatibility with some filters subscriptions.
+Этот псевдокласс изначально был сокращением для `:not(:has())`. Он поддерживался ExtendedCss для лучшей совместимости с подписками на некоторые фильтры.
 
 ### Приоритет косметических правил {#cosmetic-rules-priority}
 
-The way **element hiding** and **CSS rules** are applied is platform-specific.
+То, как применяются правила **скрытия элементов** и **CSS-правила**, зависит от платформы.
 
-**In AdGuard for Windows, Mac, and Android**, we use a stylesheet injected into the page. The priority of cosmetic rules is the same as any other websites' CSS stylesheet. But there is a limitation: [element hiding](#elemhide-syntax) and [CSS rules](#cosmetic-css-rules) cannot override inline styles. In such cases, it is recommended to use extended selectors or HTML filtering.
+**В AdGuard для Windows, Mac и Android** мы используем таблицу стилей, встроенную в страницу. Приоритет у косметических правил такой же, как и у любых других таблиц стилей CSS на сайтах. Но есть ограничение: [правила скрытия элементов](#elemhide-syntax) и [CSS-правила](#cosmetic-css-rules) не могут обходить встроенные стили. В таких случаях рекомендуется использовать расширенные селекторы или HTML-фильтрацию.
 
-**In AdGuard Browser Extension**, the so called "user stylesheets" are used. They have higher priority than even the inline styles.
+**В Браузерном расширении AdGuard** используются так называемые «пользовательские таблицы стилей». They have higher priority than even the inline styles.
 
-**Extended CSS selectors** use JavaScript to work and basically add an inline style themselves, therefore they can override any style.
+**Расширенные CSS-селекторы** используют для работы JavaScript и добавляют встроенные стили сами, поэтому могут игнорировать любой стиль.
 
 ## Правила фильтрации HTML {#html-filtering-rules}
 
-In most cases, the basis and cosmetic rules are enough to filter ads. But sometimes it is necessary to change the HTML-code of the page itself before it is loaded. This is when you need filtering rules for HTML content. They allow to indicate the HTML elements to be cut out before the browser loads the page.
+В большинстве случаев для фильтрации рекламы достаточно базовых и косметических правил. Но иногда необходимо изменить HTML-код самой страницы перед её загрузкой. Для этого применяются правила фильтрации HTML-контента. Они позволяют указать, какие HTML-элементы необходимо вырезать из страницы перед тем, как страница попадёт в браузер.
 
 :::info Совместимость
 
-HTML filtering rules are supported by AdGuard for Windows, Mac, Android, and AdGuard Browser Extension for Firefox. Such rules do not work in extensions for other browsers because they are unable to modify content on network level.
+Правила HTML-фильтрации поддерживаются в AdGuard для Windows, Mac, Android и Браузерном расширении AdGuard для Firefox. Такие правила не работают в расширениях для других браузеров, потому что они не могут модифицировать содержимое страниц на сетевом уровне.
 
 :::
 
@@ -3280,7 +3286,7 @@ pseudoClasses = pseudoClass *pseudoClass
 ```
 
 - **`tagName`** — имя элемента в нижнем регистре, например, `div` или `script`.
-- **`domains`** — ограничение на домены, на страницах которых будет применено правило. Same principles as in [element hiding rule syntax](#elemhide-syntax).
+- **`domains`** — ограничение на домены, на страницах которых будет применено правило. Те же принципы, что и в [синтаксисе правил скрытия элементов](#elemhide-syntax).
 - **`attributes`** — список атрибутов, ограничивающих выбор элементов. `name` — имя атрибута, `value` — подстрока, которая содержится в значении атрибута.
 - **`pseudoName`** — имя псевдокласса.
 - **`pseudoArgs`** — аргументы псевдокласса, записанного в виде функции.
@@ -3288,33 +3294,33 @@ pseudoClasses = pseudoClass *pseudoClass
 
 ### Примеры
 
-**HTML code:**
+**HTML-код:**
 
 ```html
 <script data-src="/banner.js"></script>
 ```
 
-**Rule:**
+**Правило:**
 
 ```adblock
 example.org$$script[data-src="banner"]
 ```
 
-This rule removes all `script` elements with the attribute `data-src` containing the substring `banner`. The rule applies only to `example.org` and all its subdomains.
+Это правило удалит из кода страниц все элементы `script` со значением `data-src`, содержащим подстроку `banner`. При этом правило будет работать только для домена `example.org` и всех его поддоменов.
 
 ### Специальные атрибуты
 
-In addition to usual attributes, which value is every element checked for, there is a set of special attributes that change the way a rule works. Below there is a list of these attributes:
+Помимо обычных атрибутов, значение которых проверяется у каждого элемента, существует набор специальных атрибутов правила, которые изменяют способ работы правила. Ниже мы перечислим все эти атрибуты:
 
 #### `tag-content`
 
-:::caution Deprecation notice
+:::caution Скоро устареет
 
-This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class where it is available.
+This special attribute may become unsupported in the future. Предпочтительнее использовать псевдокласс `:contains()` там, где это возможно.
 
 :::
 
-This is the most frequently used special attribute. It limits selection with those elements whose innerHTML code contains the specified substring.
+Пожалуй, наиболее часто используемый специальный атрибут. It limits selection with those elements whose innerHTML code contains the specified substring.
 
 You should use `""` to escape `"`, for instance: `$$script[tag-content="alert(""this is ad"")"]`
 
@@ -3332,21 +3338,21 @@ Following rule will delete all `script` elements with a `banner` substring in th
 $$script[tag-content="banner"]
 ```
 
-:::caution Limitations
+:::caution Ограничения
 
-The `tag-content` special attribute must not appear in a selector to the left of a `>` combinator.
+Специальный атрибут `tag-content` не должен появляться в селекторе слева от комбинатора `>`.
 
 :::
 
 #### `wildcard`
 
-:::caution Deprecation notice
+:::caution Скоро устареет
 
-This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class where it is available.
+This special attribute may become unsupported in the future. Предпочтительнее использовать псевдокласс `:contains()` там, где это возможно.
 
 :::
 
-This special attribute works almost like `tag-content` and allows you to check the innerHTML code of the document. Rule will check if HTML code of the element fits to the [search pattern](https://en.wikipedia.org/wiki/Glob_(programming)).
+Этот специальный атрибут работает почти как `tag-content` и позволяет проверить внутренний HTML-код элемента. Rule will check if HTML code of the element fits to the [search pattern](https://en.wikipedia.org/wiki/Glob_(programming)).
 
 You should use `""` to escape `"`, for instance: `$$script[wildcard=""banner""]`
 
@@ -3354,7 +3360,7 @@ For example: `$$script[wildcard="*banner*text*"]`
 
 It will check, if the code of element contains two consecutive substrings `banner` and `text`.
 
-:::caution Limitations
+:::caution Ограничения
 
 The `wildcard` special attribute must not appear in a selector to the left of a `>` combinator.
 
@@ -3362,7 +3368,7 @@ The `wildcard` special attribute must not appear in a selector to the left of a 
 
 #### `max-length`
 
-:::caution Deprecation notice
+:::caution Скоро устареет
 
 This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class with a regular expression where it is available.
 
@@ -3382,7 +3388,7 @@ $$div[tag-content="banner"][max-length="400"]
 
 This rule will remove all the `div` elements, whose code contains the substring `banner` and the length of which does not exceed `400` characters.
 
-:::caution Limitations
+:::caution Ограничения
 
 The `max-length` special attribute must not appear in a selector to the left of a `>` combinator.
 
@@ -3390,13 +3396,13 @@ The `max-length` special attribute must not appear in a selector to the left of 
 
 #### `min-length`
 
-:::caution Deprecation notice
+:::caution Скоро устареет
 
-This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class with a regular expression where it is available.
+This special attribute may become unsupported in the future. Предпочтительнее использовать псевдокласс `:contains()` там, где это возможно.
 
 :::
 
-Specifies the minimum length for content of HTML element. If this parameter is set and the content length is less than preset value, a rule does not apply to the element.
+Задаёт минимальную длину содержимого HTML-элемента. If this parameter is set and the content length is less than preset value, a rule does not apply to the element.
 
 Например:
 
@@ -3404,9 +3410,9 @@ Specifies the minimum length for content of HTML element. If this parameter is s
 $$div[tag-content="banner"][min-length="400"]
 ```
 
-This rule will remove all the `div` elements, whose code contains the substring `banner` and the length of which exceeds `400` characters.
+Это правило удалит все элементы `div`, код которых содержит подстроку `banner` и длина которых превышает `400` символов.
 
-:::caution Limitations
+:::caution Ограничения
 
 The `min-length` special attribute must not appear in a selector to the left of a `>` combinator.
 
@@ -3428,7 +3434,7 @@ The `min-length` special attribute must not appear in a selector to the left of 
 :contains(/reg(ular)?ex(pression)?/)
 ```
 
-:::note Compatibility
+:::note Совместимость
 
 `:-abp-contains()` and `:has-text()` are synonyms for `:contains()`.
 
@@ -3442,7 +3448,7 @@ The `:contains()` pseudo-class is supported by AdGuard for Windows, Mac, and And
 
 Requires that the inner HTML of the element contains the specified text or matches the specified regular expression.
 
-:::caution Limitations
+:::caution Ограничения
 
 A `:contains()` pseudo-class must not appear in a selector to the left of a `>` combinator.
 
@@ -3452,7 +3458,7 @@ A `:contains()` pseudo-class must not appear in a selector to the left of a `>` 
 
 Similar to hiding rules, there is a special type of rules that disable the selected HTML filtering rule for particular domains. The syntax is the same, you just have to change `$$` to `$@$`.
 
-For example, there is a rule in filter:
+Например, в фильтре есть правило:
 
 ```adblock
 $$script[tag-content="banner"]
@@ -3464,13 +3470,13 @@ If you want to disable it for `example.com`, you can create an exception rule:
 example.com$@$script[tag-content="banner"]
 ```
 
-Sometimes, it may be necessary to disable all restriction rules. For example, to conduct tests. To do this, use the exclusion rule without specifying a domain.
+В некоторых случаях может потребоваться отключение всех запрещающих правил. Например, на время тестирования. Для этого воспользуйтесь правилом исключения без указания домена.
 
 ```adblock
 $@$script[tag-content="banner"]
 ```
 
-We recommend to use this kind of exceptions only if it is not possible to change the hiding rule itself. In other cases it is better to change the original rule, using domain restrictions.
+Применять такие исключения рекомендуется только в случае, когда изменить само правило скрытия невозможно. Во всех остальных случаях лучше изменить исходное правило, используя ограничение на домены.
 
 ## Правила JavaScript {#javascript-rules}
 
@@ -3495,7 +3501,7 @@ rule = [domains]  "#%#" script
 
 Similar to hiding rules, there is a special type of rules that disable the selected javascript rule for particular domains. The syntax is the same, you just have to change `#%#` to `#@%#`.
 
-For example, there is a rule in filter:
+Например, в фильтре есть правило:
 
 ```adblock
 #%#window.__gaq = undefined;
@@ -3507,13 +3513,13 @@ If you want to disable it for `example.com`, you can create an exception rule:
 example.com#@%#window.__gaq = undefined;
 ```
 
-Sometimes, it may be necessary to disable all restriction rules. For example, to conduct tests. To do this, use the exclusion rule without specifying a domain.
+В некоторых случаях может потребоваться отключение всех запрещающих правил. Например, на время тестирования. Для этого воспользуйтесь правилом исключения без указания домена.
 
 ```adblock
 #@%#window.__gaq = undefined;
 ```
 
-We recommend to use this kind of exceptions only if it is not possible to change the hiding rule itself. In other cases it is better to change the original rule, using domain restrictions.
+Применять такие исключения рекомендуется только в случае, когда изменить само правило скрытия невозможно. Во всех остальных случаях лучше изменить исходное правило, используя ограничение на домены.
 
 :::caution Ограничения
 
@@ -3675,11 +3681,11 @@ $path ["=" pattern]
 
 `pattern` — optional, a path mask to which the rule is restricted. Its syntax and behavior are pretty much the same as with the [pattern for basic rules](#basic-rules-syntax). You can also use [special characters](#basic-rules-special-characters), except for `||`, which does not make any sense in this case (see examples below).
 
-If `pattern` is not set for `$path`, rule will apply only on the main page of website.
+Если для `$path` не задан `pattern`, правило будет применяться только на главной странице сайта.
 
-`$path` modifier matches the query string as well.
+Модификатор `$path` также соответствует строке запроса.
 
-`$path` modifier supports regular expressions in [the same way](#regexp-support) basic rules do.
+Модификатор `$path` поддерживает регулярные выражения [так же, как и базовые правила](#regexp-support).
 
 **Примеры**
 
@@ -3700,7 +3706,7 @@ Rules with `$path` modifier are not supported by AdGuard Content Blocker.
 
 ### **`$url`** {#non-basic-url-modifier}
 
-`$url` modifier limits the rule application area to URLs matching the specified mask.
+Модификатор `$url` ограничивает действие правила запросами, URL которых соответствует указанной маске.
 
 **Синтаксис**
 
@@ -3708,7 +3714,7 @@ Rules with `$path` modifier are not supported by AdGuard Content Blocker.
 url = pattern
 ```
 
-where `pattern` is pretty much the same as [`pattern` of the basic rules](#basic-rules-syntax) assuming that [some characters](#non-basic-rules-modifiers-syntax) must be escaped. The [special characters](#basic-rules-special-characters) and [regular expressions](#regexp-support) are supported as well.
+where `pattern` is pretty much the same as [`pattern` of the basic rules](#basic-rules-syntax) assuming that [some characters](#non-basic-rules-modifiers-syntax) must be escaped. [Специальные символы](#basic-rules-special-characters) и [регулярные выражения](#regexp-support) также поддерживаются.
 
 **Примеры**
 
@@ -3718,13 +3724,13 @@ where `pattern` is pretty much the same as [`pattern` of the basic rules](#basic
 
 :::info Совместимость
 
-Rules with the `$url` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**.
+Правила с модификатором `$url` поддерживаются в AdGuard для Windows, Mac и Android с **CoreLibs версии 1.11 или выше**.
 
 :::
 
 ## Информация для разработчиков фильтров
 
-If you maintain a third-party filter that is known to AdGuard, you might be interested in the information presented in this section. Please note that hints will be applied to registered filters only. The filter is considered to be registered and known by AdGuard, if it is present in the [known filters index](https://filters.adtidy.org/extension/chromium/filters.json). If you want your filter to be registered, please file an issue to [AdguardFilters repo](https://github.com/AdguardTeam/AdguardFilters).
+Если вы разрабатываете сторонний фильтр, известный AdGuard, вам может быть интересна информация, представленная в этом разделе. Имейте в виду, что подсказки будут применяться только к зарегистрированным фильтрам. Фильтр считается зарегистрированным и известным AdGuard, если он присутствует в [перечне известных фильтров](https://filters.adtidy.org/extension/chromium/filters.json). Если вы хотите зарегистрировать свой фильтр, направьте запрос в [репозиторий AdGuardFilters](https://github.com/AdguardTeam/AdguardFilters).
 
 ### Директивы препроцессора
 
@@ -3736,15 +3742,15 @@ We provide preprocessor directives that can be used by filters maintainers to im
 
 :::note
 
-Any mistake in a preprocessor directive will lead to AdGuard failing the filter update in the same way as if the filter URL was unavailable.
+Любая ошибка в директиве препроцессора приведёт к невозможности обновить фильтр, как если бы URL фильтра был недоступен.
 
-Preprocessor directives can be used in the user rules or in the custom filters.
+Препроцессорные директивы можно использовать в пользовательских правилах или фильтрах.
 
 :::
 
 #### Включение файла {#include-directive}
 
-The `!#include` directive allows to include contents of a specified file into the filter. It supports only files from the same origin to make sure that the filter maintainer is in control of the specified file. The included file can also contain pre- directives (even other `!#include` directives). Ad blockers should consider the case of recursive `!#include` and implement a protection mechanism.
+Директива `!#include` позволяет включать в фильтр содержимое заданного файла. Она поддерживает только файлы из того же источника, чтобы удостовериться, что разработчик фильтров является владельцем указанного файла. Включённый файл также может содержать директивы препроцессора (даже другие`!#include`-директивы). Ad blockers should consider the case of recursive `!#include` and implement a protection mechanism.
 
 **Синтаксис**
 
@@ -3756,13 +3762,13 @@ where `file_path` is a same origin absolute or relative file path to be included
 
 The files must originate from the same domain but may be located in a different folder.
 
-If included file is not found or unavailable, the whole filter update should fail.
+Если включённый файл не найден или недоступен, не будут работать обновления всего фильтра.
 
-Same-origin limitation should be disabled for local custom filters.
+Для локальных собственных фильтров ограничение на тот же источник не распространяется.
 
 **Примеры**
 
-Filter URL: `https://example.org/path/filter.txt`
+URL фильтра: `https://example.org/path/filter.txt`
 
 ```adblock
 ! Корректный (тот же источник):
@@ -3778,7 +3784,7 @@ Filter URL: `https://example.org/path/filter.txt`
 
 #### Условия {#conditions-directive}
 
-Filters maintainers can use conditions to supply different rules depending on the ad blocker type. A conditional directive beginning with a `!#if` directive must explicitly be terminated with an `!#endif` directive. Conditions support all basic logical operators.
+Разработчики фильтров могут использовать условия, чтобы подставлять нужные правила, в зависимости от типа блокировщика. A conditional directive beginning with a `!#if` directive must explicitly be terminated with an `!#endif` directive. Conditions support all basic logical operators.
 
 There are two possible scenarios:
 
@@ -3971,14 +3977,14 @@ Eventually, here are the two versions of the Base filter for AdGuard Browser Ext
 - полная: https://filters.adtidy.org/extension/chromium/filters/2.txt
 - оптимизированная: https://filters.adtidy.org/extension/chromium/filters/2_optimized.txt
 
-**If you want to add a rule which should not be removed at optimization use the `NOT_OPTIMIZED` hint:**
+**Если вы хотите добавить правило, которое не должно удаляться при оптимизации, используйте подсказку `NOT_OPTIMIZED`:**
 
 ```adblock
 !+ NOT_OPTIMIZED
 ||example.org^
 ```
 
-**And this rule will not be optimized only for AdGuard for Android:**
+**А такое правило не будет оптимизировано только для AdGuard для Android:**
 
 ```adblock
 !+ NOT_OPTIMIZED PLATFORM(android)
@@ -3987,7 +3993,7 @@ Eventually, here are the two versions of the Base filter for AdGuard Browser Ext
 
 #### Подсказки `PLATFORM` и `NOT_PLATFORM`
 
-Used to specify the platforms to apply the rules. List of existing platforms and links to Base filter, for example, for each of them:
+Записи этого типа позволяют указывать платформу, для которой применяется правило. Ниже представлен список используемых платформ и ссылки на Базовый фильтр для каждой из них:
 
 - `windows` — AdGuard для Windows — [https://filters.adtidy.org/windows/filters/2.txt](https://filters.adtidy.org/windows/filters/2.txt)
 
@@ -4013,7 +4019,7 @@ Used to specify the platforms to apply the rules. List of existing platforms and
 
 **Примеры**
 
-This rule will be available only in AdGuard for Windows, Mac, Android:
+Это правило будет действовать только в AdGuard для Windows, Mac и Android:
 
 ```adblock
 !+ PLATFORM(windows,mac,android)
@@ -4029,13 +4035,13 @@ This rule will be available for every platform except AdGuard for Safari, AdGuar
 
 ## Отладка правил фильтрации
 
-It may be possible to create simple filtering rules "in your head" but for anything even slightly more complicated you will need additional tools to debug and iterate them. There are tools to assist you with that. You can use DevTools in Chrome and its analogs in other browsers but most AdGuard products provide another one — Filtering log.
+Хоть самые простые правила фильтрации и возможно придумать «в голове», для чего-то чуть более сложного вам потребуются дополнительная помощь в их отладке и повторении. Есть инструменты, которые помогут вам в этом. Вы можете использовать «Инструменты разработчика» в Chrome и их аналоги в других браузерах, но большинство продуктов AdGuard предоставляют и другой инструмент — Журнал фильтрации.
 
 ### Журнал фильтрации
 
-Filtering log is an advanced tool that will be helpful mostly to filter developers. It lists all web requests that pass through AdGuard, gives you exhaustive information on each of them, offers multiple sorting options, and has other useful features.
+Журнал фильтрации — продвинутый инструмент, который полезен в основном разработчикам фильтров. В нём отображаются все веб-запросы, проходящие через AdGuard, даётся исчерпывающая информация по каждому из них, предлагаются различные опции сортировки и другие полезные возможности.
 
-Depending on which AdGuard product you are using, Filtering log can be located in different places.
+В зависимости от того, какой продукт AdGuard вы используете, журнал фильтрации может находиться в разных местах.
 
 - In **AdGuard for Windows**, you can find it in the *Ad Blocker* tab or via the tray menu
 - In **AdGuard for Mac**, it is located in *Settings → Advanced → Filtering log*
@@ -4054,7 +4060,7 @@ Sometimes, you might need to check the performance of a given selector or a styl
 
 Open the browser console while on a web page to see the timing statistics for selector(s) that were applied there. Debugging mode displays the following stats as object where each of the debugged selectors are keys, and value is an object with such properties:
 
-**Always printed:**
+**Всегда выводится:**
 
 - `selectorParsed` — окончательный текст селектора после парсинга
 - `timings` — список узлов DOM, соответствующих селектору
@@ -4064,26 +4070,26 @@ Open the browser console while on a web page to see the timing statistics for se
     - `standardDeviation` — стандартное отклонение
     - `timingsSum` — общее время, ушедшее на все применения селектора на текущей странице
 
-**Printed only for remove pseudos:**
+**Выводится только для удалённых псевдоэлементов:**
 
 - `removed` — флаг, сигнализирующий об удалении элементов
 
-**Printed if elements are not removed:**
+**Выводится, если элементы не удалены:**
 
 - `matchedElements` — список узлов DOM, соответствующих селектору
 - `styleApplied` — объявление обработанного стиля правила, связанного с селектором
 
 **Примеры**
 
-**Debugging a single selector:**
+**Отладка конкретного селектора:**
 
-When the value of the `debug` property is `true`, only information about this selector will be shown in the browser console.
+Когда значение свойства `debug` равно `true`, информация только по этому селектору будет отображена в консоли браузера.
 
 ```adblock
 #$?#.banner { display: none; debug: true; }
 ```
 
-**Enabling global debug:**
+**Включение глобальной отладки:**
 
 When the value of the `debug` property is `global`, the console will display information about all extended CSS selectors that have matches on the current page, for all the rules from any of the enabled filters.
 
@@ -4091,7 +4097,7 @@ When the value of the `debug` property is `global`, the console will display inf
 #$?#.banner { display: none; debug: global; }
 ```
 
-**Testing extended selectors without AdGuard**
+**Тестирование расширенных селекторов без AdGuard**
 
 ExtendedCss can be executed on any page without using any AdGuard product. In order to do that you should copy and execute the following code in a browser console:
 
@@ -4165,7 +4171,7 @@ The following scriptlets also may be used for debug purposes:
 [cl-apps]: #what-product "AdGuard для Windows, Mac и Android"
 [ext-chr]: #what-product "Браузерное расширение AdGuard для Chrome и других браузеров на основе Chromium"
 [ext-ff]: #what-product "Браузерное расширение AdGuard для Firefox"
-[ios-app]: #what-product "AdGuard for iOS and AdGuard Pro for iOS"
+[ios-app]: #what-product "AdGuard для iOS и AdGuard Pro для iOS"
 [ext-saf]: #what-product "AdGuard для Safari"
 [and-cb]: #what-product "AdGuard Content Blocker для браузеров Samsung Internet and Яндекс на Android"
 

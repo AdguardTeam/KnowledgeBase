@@ -1124,7 +1124,7 @@ These modifiers are able to completely change the behavior of basic rules.
 
 | Modifier \ Products                        | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Firefox][ext-ff] | [AdGuard for iOS][ios-app] | [AdGuard for Safari][ext-saf] | [AdGuardコンテンツブロッカー][and-cb] |
 | ------------------------------------------- |:------------------------:|:-------------------------------:|:-----------------------------:|:--------------------------:|:-----------------------------:|:---------------------------:|
-| [$all](#all-modifier)                       |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |              ❌              |
+| [$all](#all-modifier)                       |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |              ❌              |
 | [$badfilter](#badfilter-modifier)           |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |              ❌              |
 | [$cookie](#cookie-modifier)                 |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |              ❌              |
 | [$csp](#csp-modifier)                       |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |              ❌              |
@@ -1163,6 +1163,12 @@ These modifiers are able to completely change the behavior of basic rules.
 ```
 
 This modifier cannot be used as an exception with the `@@` mark.
+
+:::info Compatibility
+
+Rules with `$all` modifier are not supported by AdGuard Content Blocker.
+
+:::
 
 #### **`$badfilter`** {#badfilter-modifier}
 

@@ -167,6 +167,10 @@ Tato možnost určuje velikost fragmentace TCP paketů, což pomáhá vyhnout se
 
 Přidá dodatečnou mezeru mezi metodu HTTP a URL adresu a odstraní mezeru za polem "Host:"
 
+`stealth.antidpi.split.delay.millisecond`
+
+Zde můžete zadat prodlevu v milisekundách po odeslání prvního fragmentu, pokud je provedena fragmentace.
+
 `subscription.link.interception.userscript`
 
 Tuto funkci aktivujte, pokud chcete, aby AdGuard automaticky zachycoval adresy URL uživatelských skriptů a otevíral instalační okno.

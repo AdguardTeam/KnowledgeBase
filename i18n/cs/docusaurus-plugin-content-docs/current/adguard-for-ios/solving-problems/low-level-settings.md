@@ -35,15 +35,21 @@ K dispozici je také další režim nazvaný *Úplný tunel (bez ikony VPN)*. Te
 
 ### Režim blokování
 
-V tomto modulu můžete vybrat způsob, jakým bude AdGuard reagovat na dotazy DNS, které mají být blokovány: REFUSED — odezva s kódem REFUSED NXDOMAIN — odezva s kódem NXDOMAIN Unspecified IP — odezva s nulovou IP adresou Custom IP — odezva s ručně nastavenou IP adresou
+V tomto modulu můžete vybrat způsob, jakým bude AdGuard reagovat na dotazy DNS, které mají být blokovány:
+
+- Výchozí: — odezva s nulovou IP, pokud je blokováno pravidly ve stylu Adblock; odezva pomocí IP adresy uvedené v pravidle, pokud je blokováno pravidly /etc/hosts-style
+- REFUSED: — odezva pomocí kódu REFUSED
+- NXDOMAIN: — odezva pomocí kódu NXDOMAIN
+- Nespecifikovaná IP — odezva s nulovou IP adresou
+- Vlastní IP — odezva s ručně nastavenou IP adresou
 
 ### Blokování IPv6
 
-Posunutím přepínače doprava zapnete blokování dotazů IPv6 (požadavky AAAA).
+Posunutím přepínače doprava zapnete blokování dotazů IPv6 (požadavky AAAA). DNS požadavky typu AAAA nebudou vyřešeny, lze tedy zpracovávat pouze dotazy IPv4.
 
 ### Blokovaná odezva TTL
 
-Zde můžete zadat hodnotu TTL (time to live), která bude vrácena jako odpověď na zablokovaný požadavek.
+Zde můžete nastavit dobu, po kterou má zařízení ukládat odezvu na požadavek DNS do mezipaměti. Během zadané doby time-to-live (v sekundách) může být požadavek načten z mezipaměti bez opětovného dotazování serveru DNS.
 
 ### Bootstrap servery
 

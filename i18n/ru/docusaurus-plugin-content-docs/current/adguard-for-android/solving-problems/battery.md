@@ -33,28 +33,28 @@ sidebar_position: 1
 
     Например, из таблицы выше:
 
-    *wifi.active=* 31mA additional consumption in mAh caused by WiFi data exchange.
+    *wifi.active=* 31мА дополнительное потребление в мАч, вызванное передачей данных по Wi-Fi.
 
-    *radio.active=* 100-300mA additional consumption in mAh caused by data exchange over Mobile network.
+    *radio.active=* 100–300мА дополнительное потребление в мАч, вызванное передачей данных по мобильной сети.
 
-    *cpu.active=* 100-200mA additional consumption in mAh caused by CPU work.
+    *cpu.active=* 100–200мА дополнительное потребление в мАч, вызванное работой процессора.
 
 1. AdGuard самостоятельно почти не потребляет трафика, так что для оценки потребления батареи отбросим значения Mobile/Wi-Fi packets и остановимся на подсчёте CPU.
 
     Формула для вычисления потребления:
 
-    > "CPU TIME (ms)" X "cpu.active" / (60 *60* 1000) = "POWER USE mAh"
+    > "CPU TIME (мс)" x "cpu.active" / (60 *60* 1000) = "POWER USE мАч"
 
     Подставим в эту формулу реальные значения.
 
     Возьмём *CPU total* из второго скриншота и переведём в миллисекунды: 506000
 
-    A coefficient *cpu.active* for 2GHz will be roughly equal to 225mAh
+    Коэффициент *cpu.active* для 2 ГГц будет равен примерно 225 мАч
 
     Финальный результат:
 
-    > 506000 *225 / (60* 60 * 1000) = 31,625mAh
+    > 506000 *225 / (60* 60 * 1000) = 31,625мАч
 
 ### Итог
 
-Реальное потребление в **разы ниже** показанного в статистике Android. Instead of 220mAh it should be somewhere around 31-40mAh. С другой стороны, потребление браузера должно быть не 66 мАч, а около 200 мАч.
+Реальное потребление в **разы ниже** показанного в статистике Android. Вместо 220 мАч оно должно быть в районе 31–40 мАч. С другой стороны, потребление браузера должно быть не 66 мАч, а около 200 мАч.

@@ -167,6 +167,10 @@ This option specifies the size of TCP packet fragmentation, which helps avoid de
 
 HTTP yöntemi ile URL arasına fazladan boşluk ekler ve "Host:" alanından sonraki boşluğu kaldırır.
 
+`stealth.antidpi.split.delay.millisecond`
+
+Burada, parçalama gerçekleştirilirse ilk parçanın gönderilmesinden sonraki gecikmeyi milisaniye cinsinden belirtebilirsiniz.
+
 `subscription.link.interception.userscript`
 
 Activate this feature if you want AdGuard to automatically intercept the URLs of userscripts and open the installation window.
