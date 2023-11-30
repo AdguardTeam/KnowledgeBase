@@ -25,9 +25,7 @@ To block ads, trackers, and annoyances on websites, AdGuard uses filtering rules
 
 Each content-blocking extension can include up to 150,000 active filtering rules. The number of rules within most filter groups does not surpass 150,000. However, if you activate too many language-specific or custom filters, you might exceed the limit. In such cases, random rules that are over the limit will be automatically disabled, which may lead to incorrect blocking. **We strongly recommend activating only the filters you need**.
 
-There is also one more extension responsible for other features:
-
-- *AdGuard for Safari* enables AdGuard's icon next to the search bar in Safari and allows using advanced rules to block complex ads
+There is also one more extension responsible for other features: *AdGuard for Safari*, which enables AdGuard's icon next to the search bar in Safari and allows using advanced rules to block complex ads.
 
 ![Safari extensions](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-icon1.png)
 
@@ -49,11 +47,9 @@ More on each extension below.
 
 User rules and allowlist rules are included into every extension.
 
-## Other extensions
+## AdGuard for Safari
 
-*AdGuard Safari Icon* enables the AdGuard icon next to the search bar. It's useful if you want to quickly set up protection on a particular website or block ads manually.
-
-*AdGuard Advanced blocking* contains advanced rules that aren't converted into the format supported by Safari. This includes CSS rules, CSS selectors, and scriptlets that allow AdGuard to block complex ads — for example, on YouTube.
+*AdGuard for Safari* enables the AdGuard icon next to the search bar. It's useful if you want to quickly set up protection on a particular website or block ads manually. It also contains advanced rules that aren't converted into the format supported by Safari. This includes CSS rules, CSS selectors, and scriptlets that allow AdGuard to block complex ads — for example, on YouTube.
 
 ## How to manage Safari extensions
 
@@ -63,9 +59,9 @@ User rules and allowlist rules are included into every extension.
 1. Select *Extensions*.
     ![Extensions tab](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-extensions1.png)
 
-## Why some extensions require permissions
+## Why AdGuard for Safari requires permission
 
-When enabling some Safari extensions, you might notice that they ask for **access to web page content** and **access to browsing history**. Here's why AdGuard for Safari needs them:
+When enabling the extension *AdGuard for Safari*, you might notice that it requires **access to web page content** and **access to browsing history**. Here's why it needs these permissions:
 
 - Access to web page content is required for manual ad blocking and advanced blocking rules to work correctly
 - Access to browsing history is required to check the protection status on websites and determine which advanced rules should be applied
