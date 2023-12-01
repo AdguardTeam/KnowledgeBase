@@ -2303,7 +2303,6 @@ Modifier aliases (`1p`, `3p`, etc.) are not included in these categories, howeve
 
 - [`$app`](#app-modifier) with negated applications using `~`,
 - [`$denyallow`](#denyallow-modifier),
-- [`$dnsrewrite`](#dnsrewrite-modifier),
 - [`$domain`](#domain-modifier) with negated domains using `~`,
 - [`$match-case`](#match-case-modifier),
 - [`$method`](#method-modifier) with negated methods using `~`,
