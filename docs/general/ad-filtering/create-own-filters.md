@@ -1865,19 +1865,13 @@ If the response carries an HTML document with a `<meta name="referrer"...` tag, 
 An exception rule with a modifier value disables the blocking rule with the same modifier value.
 An exception rule without a modifier value disables all matched referrer-policy rules.
 
-If a request matches multiple `$referrerpolicy` rules not disabled by exceptions, only one of them (it is not specified which one) is applied.
+If a request matches multiple `$referrerpolicy` rules not disabled by exceptions, only one of them (it is not specified which one) is applied. `$referrerpolicy` rules without specified [content-type modifiers](#content-type-modifiers) apply to `$document` and `$subdocument` content types.
 
 **Examples**
 
 - `||example.com^$referrerpolicy=unsafe-url` overrides the referrer policy for `example.com` with `unsafe-url`.
 - `@@||example.com^$referrerpolicy=unsafe-url` disables the previous rule.
 - `@@||example.com/abcd.html^$referrerpolicy` disables all `$referrerpolicy` rules on `example.com/abcd.html`.
-
-:::caution Restrictions
-
-`$referrerpolicy` rules without specified [content-type modifiers](#content-type-modifiers) apply to `$document` and `$subdocument` content types.
-
-:::
 
 :::info Compatibility
 
