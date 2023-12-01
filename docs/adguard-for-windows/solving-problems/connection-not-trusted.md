@@ -29,7 +29,11 @@ If that doesn't help, follow the instructions for manually adding the AdGuard ce
 
 1. Go to [http://local.adguard.org/cert](http://local.adguard.org/cert) and click the *Download* button. The browser should start downloading **cert.cer** file.
 
->You can also open the download page by clicking on the link via the AdGuard app at *Settings → Network → HTTPS filtering*.
+:::note
+
+You can also open the download page by clicking the link via the AdGuard app at *Settings → Network → HTTPS filtering*.
+
+:::
 
 ![Certificate settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/link.jpeg)
 

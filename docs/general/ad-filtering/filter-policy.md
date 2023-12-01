@@ -24,7 +24,7 @@ These equally apply to rules in all filters.
 
 ## Ad filters
 
-This part describes the AdGuard Base filter, the Mobile Ads filter, and the following language-specific filters: Russian, German, Dutch, Spanish/Portuguese, Japanese, Turkish, Chinese, and French.
+This part describes the AdGuard Base filter, the Mobile Ads filter, and the following language-specific filters: Chinese, Dutch, French, German, Japanese, Russian, Spanish/Portuguese, and Turkish.
 
 **What shall these filters block?**
 

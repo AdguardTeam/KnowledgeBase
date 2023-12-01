@@ -17,7 +17,7 @@ To manually install the certificate into Firefox-like browser:
 
   2. Go to "Privacy & Security" — "Certificates"
 
-  3. Click on "View Certificates"
+  3. Click "View Certificates"
 
   4. Navigate to the "Authorities" tab and click the "Import..." button
 

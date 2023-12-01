@@ -26,8 +26,8 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 
 ### Browser extension {#extension}
 
-- Open the browser extension settings by clicking on the corresponding icon;
-- Click on **Report an issue**:
+- Open the browser extension settings by clicking the corresponding icon;
+- Click **Report an issue**:
 
 ![extension_issue *mobile_border](https://cdn.adtidy.org/blog/new/5si74extension.png)
 

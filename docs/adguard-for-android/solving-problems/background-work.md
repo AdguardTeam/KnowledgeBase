@@ -77,7 +77,7 @@ Now launch the active apps manager by swiping up from the bottom of the screen a
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi6.jpeg)
 
-Tap and hold it until a special menu pops up. Select a lock icon.
+Tap and hold it until a menu pops up. Select a lock icon.
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi7en.jpeg)
 
@@ -355,7 +355,7 @@ Meizu has almost the same approach to the background process limitations as Huaw
 
 ## Nokia
 
-Nokia devices running Android 9+ have **The Evenwell Power saver** disabled, which was the main culprit for killing bacground processes. If AdGuard still gets killed on your Nokia phone, check out the [legacy instruction](https://dontkillmyapp.com/hmd-global).
+Nokia devices running Android 9+ have **The Evenwell Power saver** disabled, which was the main culprit for killing background processes. If AdGuard still gets killed on your Nokia phone, check out the [legacy instruction](https://dontkillmyapp.com/hmd-global).
 
 ### Nokia 1 (Android Go)
 
@@ -367,7 +367,7 @@ Nokia devices running Android 9+ have **The Evenwell Power saver** disabled, whi
 
 1. Enable **USB debugging** within Developer options on your phone;
 
-1. Uninstall the **com.evenwell.emm** package via the following adb commands:
+1. Uninstall the **com.evenwell.emm** package via the following ADB commands:
 
     `adb shell`
     `pm uninstall --user 0 com.evenwell.emm`
@@ -423,7 +423,7 @@ An alternative, more permanent solution for more tech-savvy users:
 
 1. Enable **USB debugging** within Developer options on your phone;
 
-1. Uninstall the **com.evenwell.powersaving.g3** package via the following adb commands:
+1. Uninstall the **com.evenwell.powersaving.g3** package via the following ADB commands:
 
     `adb shell`
     `pm uninstall --user 0 com.evenwell.powersaving.g3`
