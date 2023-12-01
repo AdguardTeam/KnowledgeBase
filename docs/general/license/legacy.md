@@ -11,7 +11,7 @@ Initially licenses of the following types were available to activate AdGuard pro
 
 **Standard** — for desktop applications AdGuard for Windows/AdGuard for Mac
 
-**Mobile** — for mobile applications AdGuard for Android/AdGuard for iOS
+**Mobile** — for mobile apps AdGuard for Android/AdGuard for iOS
 
 **Premium** — a license that combines desktop + mobile application
 
@@ -27,7 +27,7 @@ For all types (Standard, Mobile, Premium) there were options for a Yearly and Li
 
 In October 2019 AdGuard switched to the new licensing system: from then on, licenses can still be purchased for 1 year or Lifetime, but their types have become **Personal** (for up to 3 devices) or **Family** (for up to 9 devices).
 
-One more change: **license keys of the new type can now be used on any device, in any combination. For example, a Personal License can be installed on Android, Mac and iOS, just like on two Windows computers and an Apple tablet, etc.**
+One more change: **license keys of the new type can now be used on any device, in any combination. For example, a Personal License can be used on Android, Mac and iOS, just like on two Windows computers and an Apple tablet, etc.**
 
 ## What happened to the outdated licenses?
 

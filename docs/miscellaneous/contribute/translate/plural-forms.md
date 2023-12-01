@@ -30,7 +30,7 @@ Let’s draw a small parallel between English and Polish for better understandin
 
 Now it is clear that the Polish *'godzinę'* (hour) has three different forms, whereas the English word changes its form with given numbers only twice.
 
-Except for Polish, there are a lot of other languages that have three plural forms and more, such as Russian, Serbian, Slovak, Czech etc. But not all of them obey the same rule. That's why it is so important to know how many plural forms your language contains and how you can apply them.
+Except for Polish, there are a lot of other languages that have three plural forms and more, such as Russian, Serbian, Slovak, Czech etc. But not all of them obey the same rule. That's why it's so important to know how many plurals your language has, as well as their correct usage.
 
 ## Where can you learn about the number of plural forms? {#where-to-learn}
 
@@ -92,7 +92,7 @@ Please be attentive when translating these strings and approving them. If you ha
 
 ### 4. Strings with templates separated by the vertical bar sign {#4type}
 
-This is the most complicated type of AdGuard strings which is mostly used in `AdGuard Websites` project.
+This is the most complicated type of AdGuard strings which is mostly used in the `AdGuard Websites` project.
 
 Pay close attention to a vertical bar sign between the sentences and **%count%** placeholders in original phrases — this will help you identify phrases where translations require the use of plural forms.
 

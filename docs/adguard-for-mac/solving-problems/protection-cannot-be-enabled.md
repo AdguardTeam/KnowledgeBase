@@ -19,4 +19,4 @@ If AdGuard Protection cannot be enabled for some reason, perform the following s
 
 4. Open the Terminal again, type `ls -al /Library/StagedExtensions/Library/Application\ Support/com.adguard.adguard/` and execute. You should receive the following: `No such file or directory`.
 
-5. Start AdGuard, type in login and password when prompted.
+5. Start AdGuard and enter your login information when prompted.
