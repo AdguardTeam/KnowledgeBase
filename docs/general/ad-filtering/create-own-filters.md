@@ -1875,8 +1875,7 @@ If a request matches multiple `$referrerpolicy` rules not disabled by exceptions
 
 :::caution Restrictions
 
-`$referrerpolicy` rules are compatible only with
-`$document` and `$subdocument` [content-type modifiers](#content-type-modifiers).
+`$referrerpolicy` rules without specified [content-type modifiers](#content-type-modifiers) apply to `$document` and `$subdocument` content types.
 
 :::
 
