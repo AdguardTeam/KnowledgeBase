@@ -61,7 +61,7 @@ User rules and allowlist rules are included into every extension.
 
 ## Why AdGuard for Safari requires permission
 
-When enabling the extension *AdGuard for Safari*, you might notice that it requires **access to web page content** and **access to browsing history**. Here's why it needs these permissions:
+When enabling the *AdGuard for Safari* extension, you might notice that it requires **access to web page content** and **access to browsing history**. Here's why it needs these permissions:
 
 - Access to web page content is required for manual ad blocking and advanced blocking rules to work correctly
 - Access to browsing history is required to check the protection status on websites and determine which advanced rules should be applied
