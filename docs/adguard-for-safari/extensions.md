@@ -25,7 +25,7 @@ To block ads, trackers, and annoyances on websites, AdGuard uses filtering rules
 
 Each content-blocking extension can include up to 150,000 active filtering rules. The number of rules within most filter groups does not surpass 150,000. However, if you activate too many language-specific or custom filters, you might exceed the limit. In such cases, random rules that are over the limit will be automatically disabled, which may lead to incorrect blocking. **We strongly recommend activating only the filters you need**.
 
-There is also one more extension responsible for other features: *AdGuard for Safari*, which enables AdGuard's icon next to the search bar in Safari and allows using advanced rules to block complex ads.
+There is also one more extension responsible for other features: *AdGuard for Safari*, which adds the AdGuard icon next to the search bar in Safari and allows using advanced rules to block complex ads.
 
 ![Safari extensions](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-icon1.png)
 
