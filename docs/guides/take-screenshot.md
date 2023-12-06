@@ -11,7 +11,7 @@ Sometimes a screenshot (or screenshots) are requested by the support team for a 
 
 Taking a screenshot on an Android device can be done in various ways — depending on the device model and its manufacturer.
 
-Generally, you should use the following button combination for Android:
+Generally, you must use the following button combination for Android:
 
 - **Hold down at once the *Volume Down* and the *Power* buttons for 1–2 seconds**
 
@@ -56,7 +56,7 @@ To take a screenshot of an active window, use the following combination:
 
 - **Hold down *Alt* and press *PrtScn* (or *Fn + Alt + PrtScn* on some laptops)**
 
-To take a screenshot of a specific area, you should use the following combination:
+To take a screenshot of a specific area, you must use the following combination:
 
 - **Hold down *Win* (the Windows button) and *Shift* and press *S***
 
@@ -80,7 +80,7 @@ To take a screenshot of an active window, use the following combination:
 
 - **Press and hold together *⌘ Cmd + Shift + 4 + Space bar*.  The pointer will change to a camera icon. Click the window to capture it. Press the Esc button to cancel taking a screenshot**
 
-To take a screenshot of a specific area, you should use the following combination:
+To take a screenshot of a specific area, you must use the following combination:
 
 - **Press and hold together *⌘ Cmd + Shift + 4***. Drag the crosshair to select the needed area. Release your mouse or trackpad to take a screenshot, press the Esc button to cancel it.
 
