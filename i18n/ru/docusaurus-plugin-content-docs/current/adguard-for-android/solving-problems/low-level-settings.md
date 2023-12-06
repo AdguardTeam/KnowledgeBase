@@ -97,7 +97,7 @@ sidebar_position: 6
 
 #### Записывать HAR
 
-Если эта настройка включена, AdGuard будет перехватывать HAR-файлы. It will create a directory named "har" inside the app cache directory and add there information about all filtered HTTP requests in HAR 1.2 format that can be analyzed with the Fiddler program.
+Если эта настройка включена, AdGuard будет перехватывать HAR-файлы. Он создаст директорию «har» в кеш-директории программы. Она будет содержать все отфильтрованные запросы в формате HAR 1.2, который может быть проанализирован программой Fiddler.
 
 Используйте его только для целей отладки!
 
@@ -141,7 +141,7 @@ sidebar_position: 6
 
 #### Отладка скриптлетов
 
-If this setting is enabled, debugging in scriptlets will be activated, and the browser log will record when scriptlet rules are applied.
+При включении этого параметра активируется отладка в скриптлетах, а в логах браузера фиксируется применение правил скриптлетов.
 
 #### Исключённые приложения
 

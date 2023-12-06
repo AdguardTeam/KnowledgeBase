@@ -17,15 +17,17 @@ sidebar_position: 3
 
 Чтобы блокировать рекламу, трекеры и раздражители на сайтах, AdGuard использует правила фильтрации. Правила AdGuard и пользовательские фильтры преобразуются в правила, понятные Safari, и интегрируются в шесть расширений Safari:
 
-– AdGuard Основные – AdGuard Конфиденциальность – AdGuard Виджеты соцсетей – AdGuard Безопасность – AdGuard Другие
+- AdGuard Основные
+- AdGuard Конфиденциальность
+- AdGuard Виджеты соцсетей
+- AdGuard Безопасность
+- AdGuard Другие
 
 Каждое расширение блокировки контента может включать до 150 000 активных правил фильтрации. Количество правил в большинстве групп фильтров не превышает 150 000. Однако если вы активируете слишком много языковых или пользовательских фильтров, вы можете превысить лимит. В таких случаях случайные правила, превышающие лимит, будут автоматически отключаться, что может привести к некорректной блокировке. **Мы настоятельно рекомендуем активировать только те фильтры, которые вам нужны**.
 
-Также есть два расширения, отвечающие за другие функции:
+There is also one more extension responsible for other features: *AdGuard for Safari*, which adds the AdGuard icon next to the search bar in Safari and allows using advanced rules to block complex ads.
 
-— *Иконка AdGuard Safari* включает иконку AdGuard рядом со строкой поиска в Safari — *AdGuard Расширенная блокировка* позволяет использовать расширенные правила фильтрации для блокировки сложных видов рекламы
-
-![Расширения Safari](https://uploads.adguard.org/safari_extensions.png)
+![Расширения Safari](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-icon1.png)
 
 Подробнее о каждом расширении ниже.
 
@@ -45,22 +47,21 @@ sidebar_position: 3
 
 Пользовательские правила и правила белого списка включаются в каждое расширение.
 
-## Другие расширения
+## AdGuard для Safari
 
-*Иконка AdGuard Safari* включает иконку AdGuard рядом со строкой поиска. Это полезно, если вы хотите быстро настроить защиту на конкретном сайте или заблокировать рекламу вручную.
-
-*AdGuard Расширенная блокировка* содержит расширенные правила, которые не преобразуются в формат, поддерживаемый Safari. Сюда входят правила CSS, CSS-селекторы и скриптлеты, позволяющие AdGuard блокировать сложную рекламу — например, на YouTube.
+*AdGuard for Safari* enables the AdGuard icon next to the search bar. Это полезно, если вы хотите быстро настроить защиту на конкретном сайте или заблокировать рекламу вручную. It also contains advanced rules that aren't converted into the format supported by Safari. Сюда входят правила CSS, CSS-селекторы и скриптлеты, позволяющие AdGuard блокировать сложную рекламу — например, на YouTube.
 
 ## Как управлять расширениями Safari
 
-1. Откройте Safari и нажмите *Safari* в левом верхнем углу экрана, чтобы развернуть меню. ![Настройки Safari *mobile](https://cdn.adtidy.org/blog/new/sxaqgfsafari_settings.png)
-1. Нажмите *Настройки*.
-1. Выберите *Расширения*. ![Вкладка Расширения](https://cdn.adtidy.org/blog/new/ocofdextensions_tab.png)
+1. Откройте Safari и нажмите *Safari* в левом верхнем углу экрана, чтобы развернуть меню. ![Настройки Safari *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-settings1.png)
+1. Click *Settings...*
+1. Выберите *Расширения*. ![Вкладка Расширения](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-extensions1.png)
 
-## Почему некоторые расширения требуют разрешений
+## Why AdGuard for Safari requires permission
 
-При включении некоторых расширений Safari вы можете заметить, что они запрашивают **доступ к содержимому веб-страницы** и **доступ к истории просмотров**. Объясняем, для чего нужны эти разрешения:
+When enabling the *AdGuard for Safari* extension, you might notice that it requires **access to web page content** and **access to browsing history**. Here's why it needs these permissions:
 
-– Доступ к содержимому веб-страницы позволяет блокировать рекламу вручную и применять правила расширенной блокировки – Доступ к истории просмотров нужен, чтобы проверять статус защиты AdGuard на сайтах и определять, какие расширенные правила нужно применить
+- Access to web page content is required for manual ad blocking and advanced blocking rules to work correctly
+- Access to browsing history is required to check the protection status on websites and determine which advanced rules should be applied
 
 Мы не используем эти данные в других целях и никому их не передаём. Больше вы можете почитать в нашей [Политике конфиденциальности](https://adguard.com/privacy.html).
