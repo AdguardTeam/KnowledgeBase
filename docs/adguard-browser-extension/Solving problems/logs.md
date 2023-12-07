@@ -7,7 +7,7 @@ sidebar_position: 1
 
 ### Chrome
 
-1. Open the AdGuard Browser extension and, if possible, repeat the actions that led to the error. Note the exact time when this error occurred.
+1. Open AdGuard Browser Extension and, if possible, repeat the actions that led to the error. Note the exact time when the error occurred
 1. Navigate to `chrome://extensions`
 1. Enable *Developer mode*
 
@@ -27,7 +27,7 @@ sidebar_position: 1
 
 ### Firefox
 
-1. Open the AdGuard Browser extension and, if possible, repeat the actions that led to the error. Note the exact time when this error occurred.
+1. Open AdGuard Browser Extension and, if possible, repeat the actions that led to the error. Note the exact time when the error occurred.
 1. Navigate to `about:addons`
 1. Click *Debug Add-ons*
 
@@ -49,5 +49,5 @@ sidebar_position: 1
 
 Now that you have collected the logs, please follow these steps to submit them to our development team:
 
-1. Report the bug on GitHub.
-1. Send an archive with logs and playback time to `devteam@adguard.com` and attach a link to your GitHub issue. You can also add an archive with logs and playback time to Google Drive and share it via `devteam@adguard.com`, attaching the Google Drive link to your email.
+1. Report the bug on [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose).
+1. Send your archive with logs and playback time to `devteam@adguard.com` and add a link to your GitHub issue. You can also upload the archive to Google Drive and add the link to it instead of attaching the file.
