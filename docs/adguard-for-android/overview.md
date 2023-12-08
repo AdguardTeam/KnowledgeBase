@@ -387,7 +387,7 @@ Userscripts are mini-programs written in JavaScript that extend the functionalit
 
 ##### AdGuard Extra
 
-AdGuard Extra is a custom userscript that prevents websites from bypassing ad blockers and re-inserting blocked ads.
+AdGuard Extra is a custom userscript that blocks complex ads and mechanisms that reinject ads to websites.
 
 ### License
 
@@ -440,9 +440,7 @@ AdGuard uses its own ad-free media player to block ads in YouTube videos. To ope
 
 - *Custom filters and user rules* allow you to add your own filtering rules and third-party filters to fine-tune ad blocking. [Back to filters](#filters)
 
-- *Userscripts* allow you to install mini-programs that extend the functionality of the browser. [Back to userscripts](#userscripts)
-
-- *AdGuard Extra* allows you to block complex ads and mechanisms that reinject ads to websites. [Back to AdGuard Extra](#adguard-extra)
+- *Userscripts* allow you to extend the functionality of the browser and use [AdGuard Extra](#adguard-extra) that prevents ad reinjection. [Back to userscripts](#userscripts)
 
 You can get access to these features by [purchasing a license](https://adguard.com/license.html). [How to activate the license](/general/license/activation/#activating-adguard-for-android)
 
