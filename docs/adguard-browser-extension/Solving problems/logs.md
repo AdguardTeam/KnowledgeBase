@@ -7,41 +7,41 @@ sidebar_position: 1
 
 ### Chrome
 
-1. Open AdGuard Browser Extension and, if possible, repeat the actions that led to the error. Note the exact time when the error occurred
-1. Navigate to `chrome://extensions`
-1. Enable *Developer mode*
+1. Open AdGuard Browser Extension and, if possible, repeat the actions that led to the error. Note the exact time when the error occurred.
+1. Navigate to `chrome://extensions`.
+1. Enable *Developer mode*.
 
     ![Developer mode *border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/developer_mode1.png)
 
-1. Click `background.html`
+1. Click `background.html`.
 
     ![Background *border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/background1.png)
 
-1. Open the tab *Console*
+1. Open the tab *Console*.
 
     ![The Console tab *border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/console.png)
 
-1. Open the context menu and select *Save as…*
+1. Open the context menu and select *Save as…*.
 
     ![Save as *border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save.png)
 
 ### Firefox
 
 1. Open AdGuard Browser Extension and, if possible, repeat the actions that led to the error. Note the exact time when the error occurred.
-1. Navigate to `about:addons`
-1. Click *Debug Add-ons*
+1. Navigate to `about:addons`.
+1. Click *Debug Add-ons*.
 
     ![Debug Add-ons *border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/add-ons.png)
 
-1. Click *Inspect*
+1. Click *Inspect*.
 
     ![Inspect *border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/inspect.png)
 
-1. Go to the tab *Console*
+1. Go to the tab *Console*.
 
     ![Console *border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/ff_console.png)
 
-1. Click *Save all Messages to File*
+1. Click *Save all Messages to File*.
 
     ![Save *border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save-to-file.png)
 
