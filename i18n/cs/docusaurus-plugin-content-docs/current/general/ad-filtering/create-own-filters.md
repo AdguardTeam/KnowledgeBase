@@ -1136,7 +1136,7 @@ Tyto modifikátory mohou zcela změnit chování základních pravidel.
 | [$permissions](#permissions-modifier)       |              ✅               |                ⏳                |               ⏳               |             ❌              |               ❌               |                 ❌                 |
 | [$redirect](#redirect-modifier)             |              ✅               |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
 | [$redirect-rule](#redirect-rule-modifier)   |              ✅               |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
-| [$referrerpolicy](#referrerpolicy-modifier) |              🧩               |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
+| [$referrerpolicy](#referrerpolicy-modifier) |              ✅               |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
 | [$removeheader](#removeheader-modifier)     |              ✅               |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
 | [$removeparam](#removeparam-modifier)       |              ✅               |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
 | [$replace](#replace-modifier)               |              ✅               |                ❌                |               ✅               |             ❌              |               ❌               |                 ❌                 |
@@ -1148,7 +1148,7 @@ Tyto modifikátory mohou zcela změnit chování základních pravidel.
 
 - ✅ — plně podporováno
 - ✅ * — podporováno, ale spolehlivost se může lišit nebo se mohou vyskytnout omezení; více informací naleznete v popisu modifikátoru
-- 🧩 — může být již implementováno ve verzích nightly nebo beta, ale není ještě podporováno ve verzích pro vydání
+<!-- - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions -->
 - ❌ — nepodporováno
 - 👎 — zastaralé; stále podporovano, ale v budoucnu bude odstraněno
 
@@ -1430,7 +1430,7 @@ preroll.ts
 - Pravidla `$hls` lze použít [**pouze v důvěryhodných filtrech**](#trusted-filters).
 - Pravidla `$hls` jsou kompatibilní pouze s modifikátory `$domain`, `$third- party`, `$app`, `$important`, `$match- case` a `$xmlhttprequest`.
 - `$hls` pravidla platí pouze pro seznamy stop HLS, což je text kódovaný v UTF-8 začínající řádkem `#EXTM3U`. Jakákoli jiná odpověď nebude těmito pravidly upravena.
-- Pravidla `$hls` neplatí, pokud je velikost původní odpovědi větší než 3 MB.
+- `$hls` rules do not apply if the size of the original response is more than 10 MB.
 
 :::
 
@@ -1675,7 +1675,7 @@ V AdGuardu pro Windows, Mac a Android, **s knihovnou CoreLibs v1.11 nebo nověj�
 :::caution Omezení
 
 - Pravidla `$jsonprune` jsou kompatibilní s těmito specifickými modifikátory `$domain`, `$third-party`, `$app`, `$important`, `$match-case` a `$xmlhttprequest`.
-- Pravidla `$jsonprune` neplatí, pokud je velikost původní odpovědi větší než 3 MB.
+- `$jsonprune` rules do not apply if the size of the original response is more than 10 MB.
 
 :::
 
@@ -1827,19 +1827,13 @@ Tato pravidla umožňují přepsat [zásadu odkazování stránky](https://devel
 
 Pravidlo výjimky s hodnotou modifikátoru zakáže pravidlo blokování se stejnou hodnotou modifikátoru. Pravidlo výjimky bez hodnoty modifikátoru zakáže všechna odpovídající pravidla zásad odkazování.
 
-Pokud požadavek odpovídá více pravidlům `$referrerpolicy`, která nejsou zakázána výjimkami, použije se pouze jedno z nich (není uvedeno, které).
+If a request matches multiple `$referrerpolicy` rules not disabled by exceptions, only one of them (it is not specified which one) is applied. `$referrerpolicy` rules without specified [content-type modifiers](#content-type-modifiers) apply to `$document` and `$subdocument` content types.
 
 **Příklady**
 
 - `||example.com^$referrerpolicy=unsafe-url` přepíše zásady odkazování pro `example.com` pomocí `unsafe-url`.
 - `@@||example.com^$referrerpolicy=unsafe-url` zakáže předchozí pravidlo.
 - `@@||example.com/abcd.html^$referrerpolicy` zakáže všechna pravidla `$referrerpolicy` na `example.com/abcd.html`.
-
-:::caution Omezení
-
-Pravidla `$referrerpolicy` jsou kompatibilní pouze s modifikátory typu obsahu `$document` a `$subdocument` [](#content-type-modifiers).
-
-:::
 
 :::info Kompatibilita
 
@@ -2090,7 +2084,7 @@ K použití modifikátoru `$replace` budete potřebovat určité znalosti regul�
 **Funkce**
 
 - Pravidla `$replace` platí pro jakoukoli textovou odpověď, ale neplatí pro binární (`media`, `image`, `object` atd.).
-- Pravidla `$replace` neplatí, pokud je velikost původní odpovědi větší než 3 MB.
+- `$replace` rules do not apply if the size of the original response is more than 10 MB.
 - Pravidla `$replace` mají vyšší prioritu než ostatní základní pravidla (**včetně** pravidel výjimek). Pokud tedy požadavek odpovídá dvěma různým pravidlům, z nichž jedno má modifikátor `$replace`, použije se toto pravidlo.
 - Pravidla výjimek na úrovni dokumentu s modifikátory `$content` nebo `$document` zakáží pravidla `$replace` pro požadavky, které jim odpovídají.
 - Ostatní pravidla výjimek na úrovni dokumentu (`$generichide`, `$elemhide` nebo modifikátory `$jsinject`) se uplatňují vedle pravidel `$replace`. To znamená, že můžete upravit obsah stránky pomocí pravidla `$replace` a zároveň zde zakázat kosmetická pravidla.
@@ -2255,7 +2249,6 @@ Aliasy modifikátorů (`1p`, `3p` atd.) nejsou do těchto kategorií zahrnuty, n
 
 - [`$app`](#app-modifier) s negovanými aplikacemi pomocí `~`,
 - [`$denyallow`](#denyallow-modifier),
-- [`$dnsrewrite`](#dnsrewrite-modifier),
 - [`$domain`](#domain-modifier) s negovanými doménami pomocí `~`,
 - [`$match-case`](#match-case-modifier),
 - [`$method`](#method-modifier) s negovanými metodami pomocí `~`,

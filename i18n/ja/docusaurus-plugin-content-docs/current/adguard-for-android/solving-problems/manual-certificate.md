@@ -1,42 +1,42 @@
 ---
-title: Certificate installation on devices with Android 11+
+title: Android 11以上での証明書インストール方法
 sidebar_position: 12
 ---
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Android」について書いています。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Android」について書いています。 実際に使ってみるには、[AdGuardアプリをダウンロード](https://agrd.io/download-kb-adblock)してください。
 
 :::
 
-To be able to [filter HTTPS traffic](/general/https-filtering/what-is-https-filtering.md) (which is extremely important as most ads use HTTPS), AdGuard needs to install a certificate into your device's user storage. On older versions of Android OS this was done automatically, but on Android 11 and later users have to install it manually.
+[HTTPSトラフィック（通信）をフィルタリング](/general/https-filtering/what-is-https-filtering.md)できるようになるには、AdGuardはデバイスのユーザーストレージに証明書をインストールする必要があります。（※ほとんどの広告がHTTPSを使用しているため、HTTPSフィルタリングは広告ブロック性能にとって非常に重要です。） より古いバージョンのアンドロイドOSでは、証明書は自動的にインストールされたていましたが、Android 11以降ではユーザーが手動でインストールしなければならなくなりました。
 
-![Certificate *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/g.gif)
+![証明書 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/g.gif)
 
-Follow these steps to install AdGuard certificate:
+AdGuard証明書をインストールする方法は以下の通りです:
 
-1. When you see the *HTTPS filtering is off* notification, tap *Enable*.
+1. 「*HTTPS フィルタリングがオフになっています*」という通知が表示されたら、「*有効にする*」をタップします。
 
-1. Then you'll be presented with three screens that explain:
-    - Why filter HTTPS traffic
-    - The safety of this filtering process
-    - The necessity of AdGuard certificate
+1. すると、3つの説明画面が順番に表示されます:
+    - HTTPSトラフィックをフィルタリングする理由
+    - AdGuardによるHTTPSフィルタリングが安全である理由
+    - AdGuard証明書の必要性
 
-    Consecutively tap *Next* → *Next* → *Save certificate* on these screens.
+    「*次へ*」→「*次へ*」→「*証明書を保存する*」をタップします。
 
-1. Tap *Save* at the bottom of the opened *Download* folder.
+1. 開いた*ダウンロード*フォルダで右下の「*保存*」をタップします。
 
-1. After saving, tap *Open Settings*, navigate to *Encryption & credentials*, and then choose *Install a certificate*.
+1. 保存後、「*設定を開く*」をタップし、（場合によっては「セキュリティの詳細設定」を押してから）「*暗号化と認証情報*」をタップし、「*証明書のインストール*」をタップします（次に選択画面がある場合は「CA証明書」を選びます）。
 
-1. You might see a warning, if so, tap *Install anyway*. From the list, select the file with AdGuard certificate.
+1. 警告が表示された場合、そのまま「*インストールする*」をタップしてください（場合によっては、その後PINコードを入力してください）。 リストからAdGuardの証明書ファイル（adguard_xx_xx.crtみたいな形式のもの）を選択します。
 
-You're all set! Once the certificate is installed successfully, you've enabled HTTPS filtering.
+これで完了です。 証明書が正常にインストールされると、HTTPSフィルタリングが有効になります。
 
-Please note that the steps provided are based on the Google Pixel 4 smartphone. If you're using a different Android device, the exact menu names or options might vary. For easier navigation consider searching for a certificate by accessing your device's settings and entering "certificate" or "credentials" in the search bar.
+※この手順は、Google Pixel 7 に基づいていることにご注意ください。 別のAndroidデバイスをお使いの場合、正確なメニュー名やオプションは多少異なる場合があります。 方法として、デバイスの設定にアクセスし、検索バーに「証明書」または「認証情報」と入力して証明書を検索することができます。
 
-If you experience issues during the manual certificate installation (for example, you installed the certificate, but the application keeps ignoring it), you can follow one of the solutions below.
+証明書の手動インストール中に問題が発生した場合（たとえば、証明書をインストールしたにもかかわらず、AdGuardアプリが証明書を無視し続けるなど）、以下のいずれかの解決策をお試しください。
 
-1. Restart AdGuard.
-2. Try to install the correct certificate (AdGuard Personal CA) one more time.
+1. AdGuardを再起動してみる
+2. 正しい証明書（AdGuard Personal CA）をもう一度インストールしてみてください。
 
-If you still encounter a problem and can't install the certificate, please contact our support team at support@adguard.com.
+それでも問題が発生し、証明書をインストールできない場合は、サポートチームの support@adguard.com （日本語対応）までご連絡ください。

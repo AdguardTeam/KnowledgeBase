@@ -1,5 +1,5 @@
 ---
-title: Certificate installation on devices with Android 11+
+title: Установка сертификата на устройствах с Android 11+
 sidebar_position: 12
 ---
 

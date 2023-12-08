@@ -181,4 +181,4 @@ sidebar_position: 2
 
 Мы также хотим поблагодарить [пользователей xda-developers](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/). Спасибо за ваши полезные отзывы!
 
-Мы всегда рады комментариям пользователей, особенно конструктивным. Вы можете поделиться мнением по поводу наших продуктов, предложить новые функции и написать о возникших проблемах. Join the [AdGuard Subreddit](https://reddit.com/r/adguard), [Xda-developers Forum](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/) or visit our page on [GitHub](https://github.com/AdguardTeam).
+Мы всегда рады комментариям пользователей, особенно конструктивным. Вы можете поделиться мнением по поводу наших продуктов, предложить новые функции и написать о возникших проблемах. Присоединяйтесь к [AdGuard Subreddit](https://reddit.com/r/adguard) и [форуму Xda-developers](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/) и заходите [на нашу страницу на GitHub](https://github.com/AdguardTeam).

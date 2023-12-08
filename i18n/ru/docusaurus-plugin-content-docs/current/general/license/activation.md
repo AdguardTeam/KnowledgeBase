@@ -23,13 +23,13 @@ sidebar_position: 3
 
     ![Экран с просроченной лицензией *border](https://cdn.adtidy.org/blog/new/eapwtexp.png)
 
-    Alternatively, select *License* in the upper right corner of the main screen and click *Activate*.
+    Либо перейдите во вкладку *Лицензия* в правом верхнем углу главного экрана и нажмите *Активировать*.
 
     ![Главный экран *border](https://cdn.adtidy.org/blog/new/ca313hmain-screen.png)
 
     ![Экран лицензии *border](https://cdn.adtidy.org/blog/new/n7nkclicense-screen.png)
 
-1. Активируйте лицензию удобным для вас способом. Если лицензия привязана к вашему адресу электронной почты, нажмите *Личный кабинет AdGuard* или выберите социальную сеть, связанную с этим адресом. Или введите лицензионный ключ.
+1. Активируйте лицензию удобным для вас способом. Если лицензия привязана к вашей почте, нажмите *Аккаунт AdGuard* или выберите социальную сеть, связанную с этой почтой. Активировать лицензию можно и с помощью ключа.
 
     ![Активация лицензии *border](https://cdn.adtidy.org/blog/new/lnzz5activate-license.png)
 
@@ -37,9 +37,9 @@ sidebar_position: 3
 
 1. На экране истёкшей лицензии нажмите *Активировать*.
 
-    ![Expired license screen *mobile_border](https://cdn.adtidy.org/blog/new/o9bhtexpired-screen.png)
+    ![Экран с просроченной лицензией *mobile_border](https://cdn.adtidy.org/blog/new/o9bhtexpired-screen.png)
 
-    Alternatively, click the gear icon in the AdGuard menu, then click *License*.
+    Либо нажмите на значок шестерёнки в меню AdGuard, а затем нажмите *Лицензия*.
 
     ![Настройки *border](https://cdn.adtidy.org/blog/new/xuyqmpreferences.png)
 
@@ -47,7 +47,7 @@ sidebar_position: 3
 
     ![Экран лицензии *border](https://cdn.adtidy.org/blog/new/8rbc8license-screen.png)
 
-1. Активируйте лицензию удобным для вас способом. Если лицензия привязана к вашему адресу электронной почты, нажмите *Личный кабинет AdGuard* или выберите социальную сеть, связанную с этим адресом. Или введите лицензионный ключ.
+1. Активируйте лицензию удобным для вас способом. Если лицензия привязана к вашей почте, нажмите *Аккаунт AdGuard* или выберите социальную сеть, связанную с этой почтой. Активировать лицензию можно и с помощью ключа.
 
     ![Активация лицензии *border](https://cdn.adtidy.org/blog/new/tws3jkactivate-license.png)
 
@@ -61,11 +61,11 @@ sidebar_position: 3
 
     ![Экран лицензии *mobile_border](https://cdn.adtidy.org/blog/new/04fs1license-screen.png)
 
-1. Активируйте лицензию удобным для вас способом. If the license is bound to your email address, tap *Continue with email* or select a social network associated with this email address. Или введите лицензионный ключ.
+1. Активируйте лицензию удобным для вас способом. Если лицензия привязана к вашей почте, нажмите *Войти с помощью почты* или выберите социальную сеть, связанную с ней. Активировать лицензию можно и с помощью ключа.
 
-    ![Activating a license *mobile_border](https://cdn.adtidy.org/blog/new/sbxttactivate-license.png)
+    ![Активация лицензии *mobile_border](https://cdn.adtidy.org/blog/new/sbxttactivate-license.png)
 
-    Alternatively, you can tap *I have a license* on the following screen and activate your license with one of the above-mentioned methods.
+    Вы также можете нажать *У меня есть лицензия* на следующем экране — откроется то же самое окно активации.
 
     ![У меня есть лицензия *mobile](https://cdn.adtidy.org/blog/new/fq28vi-have-a-license.png)
 
@@ -79,6 +79,6 @@ sidebar_position: 3
 
     ![Экран покупки *mobile_border](https://cdn.adtidy.org/blog/new/10j5bhpurchase-page.png)
 
-1. Use your email address or social media account to activate your license.
+1. Войдите через почту или аккаунт в соцсетях, чтобы активировать лицензию.
 
     ![Экран входа *mobile_border](https://cdn.adtidy.org/blog/new/prnjdlogin-page.png)

@@ -15,10 +15,10 @@ sidebar_position: 4
 
 1. Введите *%tmp%* и нажмите *OK*.
 
-    ![Open temp folder *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/install-logs-1.png)
+    ![Откройте временную папку *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/install-logs-1.png)
 
 1. В открывшейся папке выберите все файлы, начинающиеся с `AdGuard`, и добавьте их в архив (используя WinRAR или любую другую программу архивации).
 
-    ![AdGuard installation log files *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/install-logs-2.png)
+    ![Лог-файлы установки AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/install-logs-2.png)
 
 1. Отправьте этот архив в техподдержку AdGuard по адресу **support@adguard.com**.
