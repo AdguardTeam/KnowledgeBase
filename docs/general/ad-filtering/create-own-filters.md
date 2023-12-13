@@ -3926,7 +3926,7 @@ where:
         - `adguard_ext_opera` — AdGuard Browser Extension for Opera
         - `adguard_ext_android_cb` — AdGuard Content Blocker for mobile Samsung and Yandex browsers
         - `ext_ublock` — special case; this one is declared when a uBlock version of a filter is compiled by the [FiltersRegistry]
-        - `cap_html_filtering` - products that have HTML filtering capability - AdGuard for Windows, Mac and Android
+        - `cap_html_filtering` — products that support HTML filtering rules: AdGuard for Windows, AdGuard for Mac, and AdGuard for Android
 - `!#else` — start of the block when conditions are false
 - `rules_list`, `true_conditions_rules_list`, `false_conditions_rules_list` — lists of rules
 - `!#endif` — end of the block
