@@ -153,6 +153,12 @@ Browser detects a blocked request as completed with an error.
 
 :::
 
+:::note Rule length
+
+Rules shorter than 4 characters are considered incorrect and will be ignored.
+
+:::
+
 ### Basic rule syntax {#basic-rules-syntax}
 
 ```text
@@ -200,68 +206,6 @@ For example, `/banner\d+/$third-party` this rule will apply the regular expressi
 AdGuard Safari and AdGuard for iOS do not fully support regular expressions because of [Content Blocking API restrictions](https://webkit.org/blog/3476/content-blockers-first-look/) (look for "The Regular expression format" section).
 
 :::
-
-### Restrictions on rules application {#rules-restrictions}
-
-Rules that match an arbitrarily large number of URLs are considered incorrect and will be ignored. This can happen if the rule doesn't contain a mask, or if the mask matches any URL with a certain protocol.
-
-This rule will be ignored:
-
-```text
-|http://$replace=/a/b/
-```
-
-This limitation can be circumvented by using a `/.*/` regular expression inside the mask.
-
-This rule will not be ignored:
-
-```text
-/.*/$replace=/a/b/
-```
-
-**Exceptions**
-
-This rule validation is not applied in the following cases:
-
-1. The rule contains [`$domain`](#domain-modifier) modifier that points to a specific domain list
-
-    These rules will not be ignored:
-
-    ```text
-    $domain=example.com,script
-    $domain=example.*,script
-    ```
-
-    This rule will be ignored because of domain negation, which causes too wide of a rule application scope:
-
-    ```text
-    $domain=~example.com,script
-    ```
-
-1. The rule contains [`$app`](#app-modifier) modifier that points to a specific app list
-
-    This rule will not be ignored:
-
-    ```text
-    $app=curl,document
-    ```
-
-    This rule will be ignored because of app negation, which causes too wide of a rule application scope:
-
-    ```text
-    $app=~curl,document
-    ```
-
-1. The rule contains one or more modifiers from among [`$cookie`](#cookie-modifier), [`$removeparam`](#removeparam-modifier), [`$removeheader`](#removeheader-modifier), [`$stealth`](#stealth-modifier)
-
-    These rules will not be ignored:
-
-    ```text
-    $removeparam=cx_recsWidget
-    $cookie=ibbid
-    $removeheader=location
-    $stealth
-    ```
 
 ### Wildcard support for TLD (top-level domains) {#wildcard-for-tld}
 
@@ -2443,7 +2387,7 @@ Element hiding rules are used to hide the elements of web pages. It is similar t
 
 Element hiding rules may operate differently [depending on the platform](#cosmetic-rules-priority).
 
-#### Syntax {#non-basic-rules-modifiers-syntax}
+#### Syntax
 
 ```text
    rule = [domains] "##" selector
@@ -2519,7 +2463,7 @@ domains = [domain0, domain1[, ...[, domainN]]]
 ```
 
 - **`selector`** — [CSS selector](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors), that defines the elements we want to apply the style to.
-- **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules](#elemhide-syntax).
+- **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules](#cosmetic-elemhide-rules).
 - **`style`** — CSS style, that we want to apply to selected elements.
 
 **Examples**
@@ -3250,7 +3194,7 @@ This pseudo-class was basically a shortcut for `:not(:has())`. It was supported 
 
 The way **element hiding** and **CSS rules** are applied is platform-specific.
 
-**In AdGuard for Windows, Mac, and Android**, we use a stylesheet injected into the page. The priority of cosmetic rules is the same as any other websites' CSS stylesheet. But there is a limitation: [element hiding](#elemhide-syntax) and [CSS rules](#cosmetic-css-rules) cannot override inline styles. In such cases, it is recommended to use extended selectors or HTML filtering.
+**In AdGuard for Windows, Mac, and Android**, we use a stylesheet injected into the page. The priority of cosmetic rules is the same as any other websites' CSS stylesheet. But there is a limitation: [element hiding](#cosmetic-elemhide-rules) and [CSS rules](#cosmetic-css-rules) cannot override inline styles. In such cases, it is recommended to use extended selectors or HTML filtering.
 
 **In AdGuard Browser Extension**, the so called "user stylesheets" are used. They have higher priority than even the inline styles.
 
@@ -3279,7 +3223,7 @@ pseudoClasses = pseudoClass *pseudoClass
 ```
 
 - **`tagName`** — name of the element in lower case, for example, `div` or `script`.
-- **`domains`** — domain restriction for the rule. Same principles as in [element hiding rule syntax](#elemhide-syntax).
+- **`domains`** — domain restriction for the rule. Same principles as in [element hiding rule syntax](#cosmetic-elemhide-rules).
 - **`attributes`** — a list of attributes that limit the selection of elements. `name` — attribute name, `value` — substring, that is contained in attribute value.
 - **`pseudoName`** — the name of a pseudo-class.
 - **`pseudoArgs`** — the arguments of a function-style pseudo-class.
@@ -3483,7 +3427,7 @@ We **strongly recommend** using [scriptlets](#scriptlets) instead of JavaScript 
 rule = [domains]  "#%#" script
 ```
 
-- **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules](#elemhide-syntax).
+- **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules](#cosmetic-elemhide-rules).
 - **`script`** — arbitrary javascript code **in one string**.
 
 **Examples**
@@ -3593,7 +3537,7 @@ More information about trusted scriptlets can be found [on GitHub](https://githu
 
 Each rule can be modified using the modifiers described in the following paragraphs.
 
-**Syntax**
+**Syntax** {#non-basic-rules-modifiers-syntax}
 
 ```text
 rule = "[$" modifiers "]" [rule text]
@@ -3826,6 +3770,7 @@ where:
         - `adguard_ext_opera` — AdGuard Browser Extension for Opera
         - `adguard_ext_android_cb` — AdGuard Content Blocker for mobile Samsung and Yandex browsers
         - `ext_ublock` — special case; this one is declared when a uBlock version of a filter is compiled by the [FiltersRegistry][]
+        - `cap_html_filtering` — products that support HTML filtering rules: AdGuard for Windows, AdGuard for Mac, and AdGuard for Android
 - `!#else` — start of the block when conditions are false
 - `rules_list`, `true_conditions_rules_list`, `false_conditions_rules_list` — lists of rules
 - `!#endif` — end of the block

@@ -65,10 +65,6 @@ También puedes utilizar una clave [](../what-is#license-key) para activar la li
 
     ![Activating a license *mobile_border](https://cdn.adtidy.org/blog/new/sbxttactivate-license.png)
 
-    Alternatively, you can tap *I have a license* on the following screen and activate your license with one of the above-mentioned methods.
-
-    ![I have a license *mobile](https://cdn.adtidy.org/blog/new/fq28vi-have-a-license.png)
-
 ### Activando AdGuard para iOS
 
 1. Tap *Settings*, then select *License*.
