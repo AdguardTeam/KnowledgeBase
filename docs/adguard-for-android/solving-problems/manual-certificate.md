@@ -30,9 +30,9 @@ Follow these steps to install AdGuard certificate:
 
 1. Tap *More security settings* → *Encryption & credentials* → *Install a certificate* → *CA certificate*.
 
-1. You might see a warning, if so, tap *Install anyway* and enter your PIN if necessary.
+1. You might see a warning. If so, tap *Install anyway* and enter your PIN if necessary.
 
-1. Select the AdGuard certificate file. Its format should look like *adguard_1342_020322.crt*.
+1. Select the AdGuard certificate file. Its name should look like *adguard_1342_020322.crt*.
 
 You're all set! Once the certificate is installed successfully, you've enabled HTTPS filtering.
 
