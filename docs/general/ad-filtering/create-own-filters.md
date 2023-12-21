@@ -135,7 +135,7 @@ It is not to be confused with the fully functional AdGuard for Android that can 
 are limited by what the browsers allow and they only support an old Adblock Plus filters syntax:
 
 - Basic blocking rules with the following modifiers: `$domain`, `$third-party`, [content-type modifiers](#content-type-modifiers).
-- Basic exception rules with the following modifiers: `$document`, `$elemhide`.
+- Basic exception rules with the following modifiers: `$document`, [`$elemhide`].
 - Basic [element hiding rules](#cosmetic-elemhide-rules) with no extended CSS support.
 
 Because of the limitations above AdGuard Content Blocker will not be mentioned in the compatibility notes.
@@ -679,7 +679,8 @@ The rule corresponds to the main frame document requests, i.e. HTML documents th
 
 By default, AdGuard does not block the requests that are loaded in the browser tab (e.g. "main frame bypass"). The idea is not to prevent pages from loading as the user clearly indicated that they want this page to be loaded. However, if the `$document` modifier is specified explicitly, AdGuard does not use that logic and prevents the page load. Instead, it responds with a "blocking page".
 
-If this modifier is used with an exclusion rule (`@@`), it completely disables blocking on corresponding pages. It is equivalent to using `$elemhide`, `$content`, `$urlblock`, `$jsinject`, `$extension` modifiers simultaneously.
+If this modifier is used with an exclusion rule (`@@`), it completely disables blocking on corresponding pages.
+It is equivalent to using [`$elemhide`], [`$content`], [`$urlblock`], [`$jsinject`], [`$extension`] modifiers simultaneously.
 
 **Examples**
 
@@ -831,15 +832,15 @@ We recommend to get acquainted with [the Adblock Plus filter cheatsheet](https:/
 
 | Modifier \ Products | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Firefox][ext-ff] | [AdGuard for iOS][ios-app] | [AdGuard for Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
-| [$content](#content-modifier) | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ |
-| [$elemhide](#elemhide-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| [$extension](#extension-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| [$jsinject](#jsinject-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
-| [$stealth](#stealth-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
-| [$urlblock](#urlblock-modifier) | ✅ | ✅ | ✅ | ✅ * | ✅ * | ❌ |
-| [$genericblock](#genericblock-modifier) | ✅ | ✅ | ✅ | ✅ * | ✅ * | ❌ |
-| [$generichide](#generichide-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| [$specifichide](#specifichide-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
+| [`$content`] | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ |
+| [`$elemhide`] | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| [`$extension`] | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [`$jsinject`] | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| [`$stealth`] | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
+| [`$urlblock`] | ✅ | ✅ | ✅ | ✅ * | ✅ * | ❌ |
+| [`$genericblock`] | ✅ | ✅ | ✅ | ✅ * | ✅ * | ❌ |
+| [`$generichide`] | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| [`$specifichide`] | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
 
 :::note
 
@@ -1061,7 +1062,7 @@ You may use a shorter name (alias) instead of using the full modifier name: `$gh
 
 #### **`specifichide`** {#specifichide-modifier}
 
-Disables all specific element hiding and CSS rules, but not general ones. Has an opposite effect to [`$generichide`](#generichide-modifier).
+Disables all specific element hiding and CSS rules, but not general ones. Has an opposite effect to [`$generichide`].
 
 **Examples**
 
@@ -1075,7 +1076,7 @@ You may use a shorter name (alias) instead of using the full modifier name: `$sh
 
 :::note
 
-All cosmetic rules — not just specific ones — can be disabled by [`$elemhide` modifier](#elemhide-modifier).
+All cosmetic rules — not just specific ones — can be disabled by [`$elemhide`] modifier.
 
 :::
 
@@ -1214,7 +1215,10 @@ If regular expression `name` is used for matching, two characters must be escape
 - `$cookie=/__utm[a-z]/` blocks Google Analytics cookies everywhere
 - `||facebook.com^$third-party,cookie=c_user` prevents Facebook from tracking you even if you are logged in
 
-There are two methods to deactivate `$cookie` rules: the primary method involves using an exception marked with `@@` — `@@||example.org^$cookie`. The alternative method employs a `$urlblock` exception (also included under the `$document` exception alias — `$elemhide,jsinject,content,urlblock,extension`).
+There are two methods to deactivate `$cookie` rules:
+the primary method involves using an exception marked with `@@` — `@@||example.org^$cookie`.
+The alternative method employs a [`$urlblock`] exception (also included under the `$document` exception alias —
+`$elemhide,jsinject,content,urlblock,extension`).
 Here's how it works:
 
 - `@@||example.org^$cookie` unblocks all cookies set by `example.org`
@@ -1306,7 +1310,7 @@ Basic URL exceptions shall not disable rules with `$hls` modifier. They can be d
 
 :::tip
 
-`$hls` rules can also be disabled by `$document`, `$content` and `$urlblock` exception rules.
+`$hls` rules can also be disabled by `$document`, [`$content`] and [`$urlblock`] exception rules.
 
 :::
 
@@ -1467,7 +1471,7 @@ Basic URL exceptions shall not disable rules with `$jsonprune` modifier. They ca
 - `@@||example.org^$jsonprune` disables all `$jsonprune` rules for responses from URLs matching `||example.org^`.
 - `@@||example.org^$jsonprune=text` disable all `$jsonprune` rules with the value of the `$jsonprune` modifier equal to `text` for responses from URLs matching `||example.org^`.
 
-`$jsonprune` rules can also be disabled by `$document`, `$content` and `$urlblock` exception rules.
+`$jsonprune` rules can also be disabled by `$document`, [`$content`] and [`$urlblock`] exception rules.
 
 :::note
 
@@ -1848,7 +1852,10 @@ Use `@@` to negate `$removeheader`:
 - `@@||example.org^$removeheader` negates **all** `$removeheader` rules for URLs that match `||example.org^`.
 - `@@||example.org^$removeheader=header` negates the rule with `$removeheader=header` for any request matching `||example.org^`.
 
-`$removeheader` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers will not do that. For example, `@@||example.com^` will not disable `$removeheader=p` for requests to `example.com`, but `@@||example.com^$urlblock` will.
+`$removeheader` rules can also be disabled by `$document` and [`$urlblock`] exception rules.
+But basic exception rules without modifiers will not do that.
+For example, `@@||example.com^` will not disable `$removeheader=p` for requests to `example.com`,
+but `@@||example.com^$urlblock` will.
 
 :::note
 
@@ -2041,7 +2048,10 @@ $removeparam=/^(utm_content|utm_campaign|utm_referrer)=/
 
 With these rules, specified UTM parameters will be removed from any request save for requests to `example.org`.
 
-`$removeparam` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers do not do that. For example, `@@||example.com^` will not disable `$removeparam=p` for requests to **example.com**, but `@@||example.com^$urlblock` will.
+`$removeparam` rules can also be disabled by `$document` and [`$urlblock`] exception rules.
+But basic exception rules without modifiers do not do that.
+For example, `@@||example.com^` will not disable `$removeparam=p` for requests to **example.com**,
+but `@@||example.com^$urlblock` will.
 
 :::caution Restrictions
 
@@ -2071,8 +2081,8 @@ You will need some knowledge of regular expressions to use `$replace` modifier.
 - `$replace` rules apply to any text response, but will not apply to binary (`media`, `image`, `object`, etc.).
 - `$replace` rules do not apply if the size of the original response is more than 10 MB.
 - `$replace` rules have a higher priority than other basic rules (**including** exception rules). So if a request corresponds to two different rules one of which has the `$replace` modifier, this rule will be applied.
-- Document-level exception rules with `$content` or `$document` modifiers do disable `$replace` rules for requests matching them.
-- Other document-level exception rules (`$generichide`, `$elemhide` or `$jsinject` modifiers) are applied alongside `$replace` rules. It means that you can modify the page content with a `$replace` rule and disable cosmetic rules there at the same time.
+- Document-level exception rules with [`$content`] or `$document` modifiers do disable `$replace` rules for requests matching them.
+- Other document-level exception rules ([`$generichide`], [`$elemhide`] or [`$jsinject`] modifiers) are applied alongside `$replace` rules. It means that you can modify the page content with a `$replace` rule and disable cosmetic rules there at the same time.
 
 `$replace` value can be empty in the case of exception rules. See examples section for further information.
 
@@ -2273,14 +2283,14 @@ This also includes rules that implicitly add the modifier `$document`:
 
 Or special exceptions that implicitly add `$document,subdocument`:
 
-- [`$content`](#content-modifier),
-- [`$elemhide`](#elemhide-modifier),
-- [`$extension`](#extension-modifier),
-- [`$genericblock`](#genericblock-modifier),
-- [`$generichide`](#generichide-modifier),
-- [`$jsinject`](#jsinject-modifier),
-- [`$specifichide`](#specifichide-modifier),
-- [`$urlblock`](#urlblock-modifier);
+- [`$content`],
+- [`$elemhide`],
+- [`$extension`],
+- [`$genericblock`],
+- [`$generichide`],
+- [`$jsinject`],
+- [`$specifichide`],
+- [`$urlblock`];
 
 Or allowed methods via [`$method`](#method-modifier).
 
@@ -2318,14 +2328,14 @@ Each of which adds `10^3` to rule priority.
 
 <!-- Please keep them sorted -->
 
-- [`$content`](#content-modifier),
-- [`$elemhide`](#elemhide-modifier),
-- [`$extension`](#extension-modifier),
-- [`$genericblock`](#genericblock-modifier),
-- [`$generichide`](#generichide-modifier),
-- [`$jsinject`](#jsinject-modifier),
-- [`$specifichide`](#specifichide-modifier),
-- [`$urlblock`](#urlblock-modifier);
+- [`$content`],
+- [`$elemhide`],
+- [`$extension`],
+- [`$genericblock`],
+- [`$generichide`],
+- [`$jsinject`],
+- [`$specifichide`],
+- [`$urlblock`];
 
 Each of which adds `10^4` to the priority.
 
@@ -2349,7 +2359,7 @@ do not add anything to the rules priority.
 
 :::note
 
-The [`$replace`](#replace-modifier) modifier takes precedence over all blocking rules of categories 1-3, as well as exception rules from categories 3-5, **except** [`$content`](#content-modifier), because an exception with the `$content` modifier overrides all `$replace` rules.
+The [`$replace`](#replace-modifier) modifier takes precedence over all blocking rules of categories 1-3, as well as exception rules from categories 3-5, **except** [`$content`], because an exception with the `$content` modifier overrides all `$replace` rules.
 
 :::
 
@@ -4219,3 +4229,13 @@ The following scriptlets also may be used for debug purposes:
 [sec-fetch-dest-header]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest
 [gh-filters-downloader]: https://github.com/AdguardTeam/FiltersDownloader
 [FiltersRegistry]: https://github.com/AdguardTeam/FiltersRegistry
+
+[`$content`]: #content-modifier
+[`$elemhide`]: #elemhide-modifier
+[`$extension`]: #extension-modifier
+[`$genericblock`]: #genericblock-modifier
+[`$generichide`]: #generichide-modifier
+[`$jsinject`]: #jsinject-modifier
+[`$specifichide`]: #specifichide-modifier
+[`$stealth`]: #stealth-modifier
+[`$urlblock`]: #urlblock-modifier
