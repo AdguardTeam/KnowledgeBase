@@ -153,6 +153,12 @@ Tarayıcı, engellenen bir isteğin hatayla tamamlandığını algılıyor.
 
 :::
 
+:::note Kural uzunluğu
+
+4 karakterden kısa kurallar hatalı kabul edilecek ve dikkate alınmayacaktır.
+
+:::
+
 ### Temel kural söz dizimi {#basic-rules-syntax}
 
 ```text
@@ -200,68 +206,6 @@ For example, `/banner\d+/$third-party` this rule will apply the regular expressi
 AdGuard Safari and AdGuard for iOS do not fully support regular expressions because of [Content Blocking API restrictions](https://webkit.org/blog/3476/content-blockers-first-look/) (look for "The Regular expression format" section).
 
 :::
-
-### Restrictions on rules application {#rules-restrictions}
-
-İsteğe bağlı olarak çok sayıda URL ile eşleşen kurallar hatalı kabul edilir ve dikkate alınmaz. Kural bir maske içermiyorsa veya maske belirli bir protokole sahip herhangi bir URL ile eşleşiyorsa bu durum meydana gelebilir.
-
-Bu kural göz ardı edilecektir:
-
-```text
-|http://$replace=/a/b/
-```
-
-This limitation can be circumvented by using a `/.*/` regular expression inside the mask.
-
-Bu kural göz ardı edilmeyecektir:
-
-```text
-/.*/$replace=/a/b/
-```
-
-**Exceptions**
-
-Bu kural doğrulaması aşağıdaki durumlarda uygulanmaz:
-
-1. The rule contains [`$domain`](#domain-modifier) modifier that points to a specific domain list
-
-    Bu kurallar göz ardı edilmeyecektir:
-
-    ```text
-    $domain=example.com,script
-    $domain=example.*,script
-    ```
-
-    This rule will be ignored because of domain negation, which causes too wide of a rule application scope:
-
-    ```text
-    $domain=~example.com,script
-    ```
-
-1. The rule contains [`$app`](#app-modifier) modifier that points to a specific app list
-
-    Bu kural göz ardı edilmeyecektir:
-
-    ```text
-    $app=curl,document
-    ```
-
-    This rule will be ignored because of app negation, which causes too wide of a rule application scope:
-
-    ```text
-    $app=~curl,document
-    ```
-
-1. The rule contains one or more modifiers from among [`$cookie`](#cookie-modifier), [`$removeparam`](#removeparam-modifier), [`$removeheader`](#removeheader-modifier), [`$stealth`](#stealth-modifier)
-
-    Bu kurallar göz ardı edilmeyecektir:
-
-    ```text
-    $removeparam=cx_recsWidget
-    $cookie=ibbid
-    $removeheader=location
-    $stealth
-    ```
 
 ### Wildcard support for TLD (top-level domains) {#wildcard-for-tld}
 
@@ -356,7 +300,7 @@ If you want the rule not to be applied to certain apps, start the app name with 
 - `||baddomain.com^$app=~org.example.app` — a rule to block requests that match the specified mask and are sent from any app except for the `org.example.app`.
 - `||baddomain.com^$app=~org.example.app1|~org.example.app2` — same as above, but now two apps are excluded: `org.example.app1` and `org.example.app2`.
 
-:::caution Restrictions
+:::dikkat Kısıtlamalar
 
 Değiştirici değerindeki uygulamaların joker karakteri olamaz, örneğin `$app=com.*.music`. Bu tür değiştiriciye sahip kurallar geçersiz kabul edilir.
 
@@ -397,7 +341,7 @@ veya bu üçünün birleşimine:
 @@||y.com$script,domain=a.com|b.com
 ```
 
-:::caution Restrictions
+:::dikkat Kısıtlamalar
 
 - The rule's matching pattern cannot target any specific domains, e.g. it cannot start with `||`.
 - Domains in the modifier value cannot be negated, e.g. `$denyallow=~x.com`, or have a wildcard TLD, e.g. `$denyallow=x.*`.
@@ -490,7 +434,7 @@ In the following examples it is implied that requests are sent from `http://exam
 
 ##### `$domain` modifier limitations {#domain-modifier-limitations}
 
-:::caution Restrictions
+:::dikkat Kısıtlamalar
 
 Safari does not support the simultaneous use of allowed and disallowed domains, so rules like `||baddomain.com^$domain=example.org|~foo.example.org` will not work in AdGuard for iOS and AdGuard for Safari.
 
@@ -584,7 +528,7 @@ This modifier limits the rule scope to requests that use the specified set of HT
 - `@@||evil.com$method=get` unblocks only GET requests to `evil.com`.
 - `@@||evil.com$method=~post` unblocks any requests to `evil.com` except POST.
 
-:::caution Restrictions
+:::dikkat Kısıtlamalar
 
 Rules with mixed negated and not negated values are considered invalid. So, for example, the rule `||evil.com^$method=get|~head` will be rejected.
 
@@ -654,7 +598,7 @@ Tam değiştirici adını kullanmak yerine daha kısa bir ad (takma ad) kullanab
 - `/ads$to=~not.evil.com|evil.com` blocks any request to `evil.com` and its subdomains, with a path matching `/ads`, except requests to `not.evil.com` and its subdomains.
 - `/ads$to=~good.com|~good.org` blocks any request with a path matching `/ads`, except requests to `good.com` or `good.org` and their subdomains.
 
-:::caution Restrictions
+:::dikkat Kısıtlamalar
 
 [`$denyallow`](#denyallow-modifier) can not be used together with `$to`. It can be expressed with inverted `$to`: `$denyallow=a.com|b.com` is equivalent to `$to=~a.com|~b.com`.
 
@@ -1007,7 +951,7 @@ Blocking cookies and removing tracking parameters is achieved by using rules wit
 
 :::
 
-:::caution Restrictions
+:::dikkat Kısıtlamalar
 
 - Modifier options should be lowercase, i.e. `$stealth=DPI` will be rejected.
 - Modifier options cannot be negated, i.e. `$stealth=~3p-cookie` will be rejected.
@@ -1252,7 +1196,7 @@ There are two methods to deactivate `$cookie` rules: the primary method involves
 - `@@||example.org^$cookie=concept` unblocks a single cookie named `concept`
 - `@@||example.org^$cookie=/^_ga_/` unblocks every cookie that matches the regular expression
 
-:::caution Restrictions
+:::dikkat Kısıtlamalar
 
 `$cookie` rules support a limited list of modifiers: `$domain`, `$~domain`, `$important`, `$third-party`, and `$~third-party`.
 
@@ -1294,7 +1238,7 @@ In case if multiple `$csp` rules match a single request, we will apply each of t
 - `||example.org^$csp=script-src 'self' 'unsafe-eval' http: https:` disables inline scripts on all the pages matching the rule pattern.
 - `@@||example.org^$document` or `@@||example.org^$urlblock` disables all the `$csp` rules on all the pages matching the rule pattern.
 
-:::caution Restrictions
+:::dikkat Kısıtlamalar
 
 - There are a few characters forbidden in the `$csp` value: `,`, `$`.
 - `$csp` rules support limited list of modifiers: `$domain`, `$important`, `$subdocument`.
@@ -1425,7 +1369,7 @@ preroll.ts
 
 </details>
 
-:::caution Restrictions
+:::dikkat Kısıtlamalar
 
 - `$hls` rules are only allowed [**in trusted filters**](#trusted-filters).
 - `$hls` rules are compatible with the modifiers `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest` only.
@@ -1672,7 +1616,7 @@ CoreLibs v1.11 veya sonraki sürümlerini çalıştıran Windows, Mac ve Android
 
 </details>
 
-:::caution Restrictions
+:::dikkat Kısıtlamalar
 
 - `$jsonprune` rules are only compatible with these specific modifiers: `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
 - `$jsonprune` rules do not apply if the size of the original response is more than 10 MB.
@@ -1696,7 +1640,7 @@ This is basically a Firewall-like rule allowing to fully block or unblock access
 
 We recommend to get acquainted with this [article](#regexp-support) for better understanding of regular expressions.
 
-:::caution Restrictions
+:::dikkat Kısıtlamalar
 
 `$network` değiştiricisi, yalnızca `$app` ve `$important` değiştiricileriyle birlikte kurallarda kullanılabilir, diğer değiştiricilerle birlikte kullanılamaz.
 
@@ -1747,7 +1691,7 @@ In case if multiple `$permissions` rules match a single request, AdGuard will ap
 - `$domain=example.org|example.com,permissions=storage-access=()\, camera=()` disallows using the Storage Access API to request access to unpartitioned cookies and using video input devices across `example.org` and `example.com`.
 - `@@||example.org^$document` or `@@||example.org^$urlblock` disables all the `$permission` rules on all the pages matching the rule pattern.
 
-:::caution Restrictions
+:::dikkat Kısıtlamalar
 
 1. Characters forbidden in the `$permissions` value: `$`
 1. `$permissions` is compatible with the limited list of modifiers: `$domain`, `$important`, and `$subdocument`
@@ -1885,7 +1829,7 @@ In case of multiple `$removeheader` rules matching a single request, we will app
     @@||example.org/path/$removeheader
     ```
 
-:::caution Restrictions
+:::dikkat Kısıtlamalar
 
 This type of rules can be used [**only in trusted filters**](#trusted-filters).
 
@@ -2060,7 +2004,7 @@ With these rules, specified UTM parameters will be removed from any request save
 
 `$removeparam` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers do not do that. For example, `@@||example.com^` will not disable `$removeparam=p` for requests to **example.com**, but `@@||example.com^$urlblock` will.
 
-:::caution Restrictions
+:::dikkat Kısıtlamalar
 
 - Rules with `$removeparam` modifier can be used [**only in trusted filters**](#trusted-filters).
 - `$removeparam` rules are compatible with [basic modifiers](#basic-rules-basic-modifiers), [content-type modifiers](#content-type-modifiers), and with `$important` and `$app` modifiers. Rules with any other modifiers are considered invalid and will be discarded.
@@ -2137,7 +2081,7 @@ You can see how this rule works here: http://regexr.com/3cesk
 - `@@||example.org^$replace` will disable all `$replace` rules matching `||example.org^`.
 - `@@||example.org^$document` or `@@||example.org^$content` will disable all `$replace` rules **originated from** pages of `example.org` **including the page itself**.
 
-:::caution Restrictions
+:::dikkat Kısıtlamalar
 
 Rules with `$replace` modifier can be used [**only in trusted filters**](#trusted-filters).
 
@@ -2443,7 +2387,7 @@ Element hiding rules are used to hide the elements of web pages. It is similar t
 
 Element hiding rules may operate differently [depending on the platform](#cosmetic-rules-priority).
 
-#### Söz dizimi {#non-basic-rules-modifiers-syntax}
+#### Söz dizimi
 
 ```text
    rule = [domains] "##" selector
@@ -2519,7 +2463,7 @@ domains = [domain0, domain1[, ...[, domainN]]]
 ```
 
 - **`selector`** — [CSS selector](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors), that defines the elements we want to apply the style to.
-- **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules](#elemhide-syntax).
+- **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules](#cosmetic-elemhide-rules).
 - **`style`** — CSS style, that we want to apply to selected elements.
 
 **Örnekler**
@@ -2548,7 +2492,7 @@ example.com#@$#.textad { visibility: hidden; }
 
 We recommend to use this kind of exceptions only if it is not possible to change the CSS rule itself. In other cases it is better to change the original rule, using domain restrictions.
 
-:::caution Restrictions
+:::dikkat Kısıtlamalar
 
 Styles that lead to loading any resource are forbidden. Basically, it means that you cannot use any `<url>` type of value in the style.
 
@@ -2839,7 +2783,7 @@ div:matches-css(before, content: block*)
 div:matches-css(before, content: /block me/)
 ```
 
-:::caution Restrictions
+:::dikkat Kısıtlamalar
 
 Regexp patterns **do not support** flags.
 
@@ -2907,7 +2851,7 @@ For **regexp** patterns `"` and `\` should be **escaped**, e.g. `div:matches-att
 </div>
 ```
 
-:::caution Restrictions
+:::dikkat Kısıtlamalar
 
 Regexp patterns **do not support** flags.
 
@@ -2982,7 +2926,7 @@ To check properties of a specific element, do the following:
 
 :::
 
-:::caution Restrictions
+:::dikkat Kısıtlamalar
 
 Regexp patterns **do not support** flags.
 
@@ -3250,7 +3194,7 @@ This pseudo-class was basically a shortcut for `:not(:has())`. It was supported 
 
 The way **element hiding** and **CSS rules** are applied is platform-specific.
 
-**In AdGuard for Windows, Mac, and Android**, we use a stylesheet injected into the page. The priority of cosmetic rules is the same as any other websites' CSS stylesheet. But there is a limitation: [element hiding](#elemhide-syntax) and [CSS rules](#cosmetic-css-rules) cannot override inline styles. In such cases, it is recommended to use extended selectors or HTML filtering.
+**In AdGuard for Windows, Mac, and Android**, we use a stylesheet injected into the page. The priority of cosmetic rules is the same as any other websites' CSS stylesheet. But there is a limitation: [element hiding](#cosmetic-elemhide-rules) and [CSS rules](#cosmetic-css-rules) cannot override inline styles. In such cases, it is recommended to use extended selectors or HTML filtering.
 
 **In AdGuard Browser Extension**, the so called "user stylesheets" are used. They have higher priority than even the inline styles.
 
@@ -3279,7 +3223,7 @@ pseudoClasses = pseudoClass *pseudoClass
 ```
 
 - **`tagName`** — name of the element in lower case, for example, `div` or `script`.
-- **`domains`** — domain restriction for the rule. Same principles as in [element hiding rule syntax](#elemhide-syntax).
+- **`domains`** — domain restriction for the rule. Same principles as in [element hiding rule syntax](#cosmetic-elemhide-rules).
 - **`attributes`** — a list of attributes that limit the selection of elements. `name` — attribute name, `value` — substring, that is contained in attribute value.
 - **`pseudoName`** — the name of a pseudo-class.
 - **`pseudoArgs`** — the arguments of a function-style pseudo-class.
@@ -3483,7 +3427,7 @@ We **strongly recommend** using [scriptlets](#scriptlets) instead of JavaScript 
 rule = [domains]  "#%#" script
 ```
 
-- **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules](#elemhide-syntax).
+- **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules](#cosmetic-elemhide-rules).
 - **`script`** — arbitrary javascript code **in one string**.
 
 **Örnekler**
@@ -3514,7 +3458,7 @@ Sometimes, it may be necessary to disable all restriction rules. For example, to
 
 We recommend to use this kind of exceptions only if it is not possible to change the hiding rule itself. In other cases it is better to change the original rule, using domain restrictions.
 
-:::caution Restrictions
+:::dikkat Kısıtlamalar
 
 JavaScript rules can be used [**only in trusted filters**](#trusted-filters).
 
@@ -3573,7 +3517,7 @@ Trusted scriptlets are not compatible with other ad blockers except AdGuard.
 
 :::
 
-:::caution Restrictions
+:::dikkat Kısıtlamalar
 
 Trusted scriptlets rules can be used [**only in trusted filters**](#trusted-filters).
 
@@ -3593,7 +3537,7 @@ More information about trusted scriptlets can be found [on GitHub](https://githu
 
 Each rule can be modified using the modifiers described in the following paragraphs.
 
-**Söz dizimi**
+**Syntax** {#non-basic-rules-modifiers-syntax}
 
 ```text
 rule = "[$" modifiers "]" [rule text]
@@ -3826,6 +3770,7 @@ where:
         - `adguard_ext_opera` — AdGuard Browser Extension for Opera
         - `adguard_ext_android_cb` — AdGuard Content Blocker for mobile Samsung and Yandex browsers
         - `ext_ublock` — özel durumdur; bu, bir filtrenin uBlock sürümü [FiltersRegistry][] tarafından derlendiğinde bildirilir
+        - `cap_html_filtering` — HTML filtreleme kurallarını destekleyen ürünler: Windows için AdGuard, Mac için AdGuard ve Android için AdGuard
 - `!#else` — koşullar yanlış olduğunda bloğun başlangıcı
 - `rules_list`, `true_conditions_rules_list`, `false_conditions_rules_list` — kural listeleri
 - `!#endif` — end of the block

@@ -65,10 +65,6 @@ Případně můžete k aktivaci použít [licenční klíč](../what-is#license-
 
     ![Activating a license *mobile_border](https://cdn.adtidy.org/blog/new/sbxttactivate-license.png)
 
-    Případně můžete klepnout na *Mám licenci* na následující obrazovce a aktivovat licenci jedním z výše uvedených způsobů.
-
-    ![I have a license *mobile](https://cdn.adtidy.org/blog/new/fq28vi-have-a-license.png)
-
 ### Aktivace AdGuardu pro iOS
 
 1. Klepněte na *Nastavení* a poté vyberte *Licence*.
