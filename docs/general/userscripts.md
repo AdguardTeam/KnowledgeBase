@@ -43,7 +43,7 @@ A script that is only pre-installed in AdGuard for Android. It disables AMP (Acc
 
 #### microShield
 
-A regional userscript for people who visit Korean websites. The microShield userscript blocks Ad-Shield advertisement and anti-adblock. Its original source code is available at [https://github.com/seia-soto/userscripts](https://github.com/seia-soto/userscripts) and [AdShield Defuser](https://github.com/seia-soto/adshield-defuser). This userscript can be installed in AdGuard CoreLibs-based appd, Violentmonkey, Tampermonkey, and [quoid/userscripts](https://github.com/quoid/userscripts). Learn more about microShield and how to install it on [GitHub](https://github.com/List-KR/microShield).
+A userscript for people who visit Korean websites and some international websites. The microShield userscript blocks Ad-Shield advertisement and anti-adblock. Its original source code is available at [asdefuser](https://github.com/seia-soto/userscripts/tree/master/sources/asdefuser) and [AdShield Defuser](https://github.com/seia-soto/adshield-defuser). This userscript can be installed in AdGuard CoreLibs-based apps, Violentmonkey, Tampermonkey, and [quoid/userscripts](https://github.com/quoid/userscripts). Learn more about microShield and how to install it on [GitHub](https://github.com/List-KR/microShield).
 
 ## Where can you get more userscripts?{#more-userscripts}
 
