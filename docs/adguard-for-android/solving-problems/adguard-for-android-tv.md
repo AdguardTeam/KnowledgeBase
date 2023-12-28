@@ -58,4 +58,3 @@ Done, AdGuard for Android TV is installed.
 
     - In the terminal, enter the command `adb install Downloads/adguard_tv.apk`. If necessary, replace `Downloads/adguard_tv.apk` with your path.
     - Wait for a message in the terminal indicating the successful installation of the app.
-
