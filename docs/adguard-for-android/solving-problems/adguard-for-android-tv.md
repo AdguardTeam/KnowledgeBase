@@ -13,7 +13,7 @@ In most cases, stock browsers cannot install a file on your TV, but you can down
 
 ## Installing AdGuard for Android TV via browser
 
-1. Install the [TV Bro browser](https://play.google.com/store/apps/details?id=com.phlox.tvwebbrowser) on your Android TV.  
+1. Install the [TV Bro browser](https://play.google.com/store/apps/details?id=com.phlox.tvwebbrowser) on your Android TV.
 
 1. Download and install AdGuard for Android TV:
 
