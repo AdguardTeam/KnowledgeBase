@@ -81,7 +81,8 @@ Go to the Applications section. Find AdGuard there, right-click it and choose **
     - /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log (file)
 
     To do so, open the Terminal app, then enter and execute the following commands:
-    ```sh
+
+    ```bash
     sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"
     rm -R "$HOME/Library/Application Support/com.adguard.mac.adguard"
     rm $HOME/Library/Preferences/com.adguard.mac.adguard.plist
