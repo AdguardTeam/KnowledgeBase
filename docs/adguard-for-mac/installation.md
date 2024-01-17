@@ -11,7 +11,7 @@ This article covers AdGuard for Mac, a multifunctional ad blocker that protects 
 
 ## System  requirements
 
-**Operating system version:** macOS 10.13 (64 bit) or higher
+**Operating system version:** macOS 10.15 (64 bit) or higher
 
 **RAM:** at least 2 GB
 
