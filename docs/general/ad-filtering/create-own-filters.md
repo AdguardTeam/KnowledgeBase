@@ -1725,13 +1725,14 @@ The list of the available directives is available [here](https://developer.mozil
 :::caution Restrictions
 
 1. Characters forbidden in the `$permissions` value: `$`
-1. `$permissions` is compatible with the limited list of modifiers: `$domain`, `$important`, and `$subdocument`
+2. `$permissions` is compatible with the limited list of modifiers: `$domain`, `$important`, and `$subdocument`
+3. Pipe separator `|` instead of escaped comma is supported by AdGuard Browser Extension.
 
 :::
 
 :::info Compatibility
 
-Rules with the `$permissions` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**.
+Rules with the `$permissions` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs  v1.11 or later**, and AdGuard Browser Extension, **running TSUrlFilter vX.X.X or later**.
 
 :::
 
