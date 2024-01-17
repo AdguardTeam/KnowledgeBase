@@ -1726,6 +1726,7 @@ The list of the available directives is available [here](https://developer.mozil
 
 1. Characters forbidden in the `$permissions` value: `$`
 2. `$permissions` is compatible with the limited list of modifiers: `$domain`, `$important`, and `$subdocument`
+3. Pipe separator `|` instead of escaped comma is supported by AdGuard Browser Extension.
 
 :::
 
