@@ -33,7 +33,10 @@ The new Browser Assistant has its own tab in AdGuard for Windows settings, along
 
 ## Legacy Assistant
 
-Legacy Assistant is the previous version of Assistant, which is a mere userscript, not a browser extension. Basically, there are two cases when you might want to pick it instead of the new Browser Assistant: 1) the new Assistant is not available for your browser; 2) you are used to the green shield icon and want to leave things as they were.
+Legacy Assistant is the previous version of Assistant, which is a mere userscript, not a browser extension. Basically, there are two cases when you might want to pick it instead of the new Browser Assistant:
+
+1. The new Assistant is not available for your browser.
+1. You are used to the green shield icon and want to leave things as they were.
 
 ## How to install AdGuard Browser Assistant
 

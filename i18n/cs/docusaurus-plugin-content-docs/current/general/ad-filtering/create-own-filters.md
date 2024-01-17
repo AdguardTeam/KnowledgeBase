@@ -63,7 +63,7 @@ Např:
 
 - `https://example.org/banner/img`
 
-### Modifikátory základních pravidel
+### Modifikátory základních pravidel {#basic-rule-modifiers}
 
 Pravidla filtrování podporují řadu modifikátorů, které umožňují doladit chování pravidla. Zde je příklad pravidla s několika jednoduchými modifikátory.
 

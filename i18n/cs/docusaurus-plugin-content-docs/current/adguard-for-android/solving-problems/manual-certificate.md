@@ -22,17 +22,21 @@ Certifikát AdGuardu nainstalujete podle následujících kroků:
     - Bezpečnost tohoto procesu filtrování
     - Nezbytnost AdGuard certifikátu
 
-    Postupně klepněte na těchto obrazovkách na *Další* → *Další* → *Uložit certifikát*.
+    Postupně klepněte na *Další* → *Další* → *Uložit certifikát*.
 
 1. Klepněte na *Uložit* v dolní části otevřené složky *Stáhnout*.
 
-1. Po uložení klepněte na *Otevřít nastavení*, přejděte na *Šifrování a ověření* a poté vyberte *Nainstalovat certifikát*.
+1. Po uložení klepněte na *Otevřít nastavení*.
 
-1. Může se zobrazit varování. Pokud ano, klepněte na *Přesto nainstalovat*. Ze seznamu vyberte soubor s AdGuard certifikátem.
+1. Klepněte na *Další nastavení zabezpečení* → *Šifrování a pověření* → *Nainstalovat certifikát* → *Certifikát CA*.
+
+1. Může se zobrazit varování. Pokud ano, klepněte na *Přesto nainstalovat* a v případě potřeby zadejte kód PIN.
+
+1. Vyberte soubor AdGuard certifikátu. Jeho název by měl vypadat takto: *adguard_1342_020322.crt*.
 
 Vše je nastaveno! Jakmile je certifikát úspěšně nainstalován, zapnuli jste HTTPS filtrování.
 
-Upozorňujeme, že uvedené kroky jsou provedeny na smartphonu Google Pixel 4. Pokud používáte jiné zařízení se systémem Android, mohou se přesné názvy nabídek nebo možností lišit. Pro snadnější navigaci zvažte vyhledání certifikátu přístupem do nastavení zařízení a zadáním "certificate" nebo "credentials" do vyhledávacího řádku.
+Upozorňujeme, že uvedené kroky jsou provedeny na smartphonu Google Pixel 7. Pokud používáte jiné zařízení se systémem Android, mohou se přesné názvy nabídek nebo možností lišit. Pro snadnější navigaci zvažte vyhledání certifikátu zadáním "certificate" nebo "credentials" do vyhledávacího řádku v nastavení.
 
 Pokud se během ruční instalace certifikátu vyskytnou problémy (například jste certifikát nainstalovali, ale aplikace jej stále ignoruje), níže naleznete možná řešení.
 

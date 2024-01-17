@@ -25,7 +25,7 @@ sidebar_position: 3
 
 Каждое расширение блокировки контента может включать до 150 000 активных правил фильтрации. Количество правил в большинстве групп фильтров не превышает 150 000. Однако если вы активируете слишком много языковых или пользовательских фильтров, вы можете превысить лимит. В таких случаях случайные правила, превышающие лимит, будут автоматически отключаться, что может привести к некорректной блокировке. **Мы настоятельно рекомендуем активировать только те фильтры, которые вам нужны**.
 
-There is also one more extension responsible for other features: *AdGuard for Safari*, which adds the AdGuard icon next to the search bar in Safari and allows using advanced rules to block complex ads.
+Есть ещё одно расширение, отвечающее за другие функции: *AdGuard для Safari* добавляет иконку AdGuard рядом со строкой поиска в Safari и позволяет использовать расширенные правила для блокировки сложной рекламы.
 
 ![Расширения Safari](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-icon1.png)
 
@@ -49,19 +49,19 @@ There is also one more extension responsible for other features: *AdGuard for Sa
 
 ## AdGuard для Safari
 
-*AdGuard for Safari* enables the AdGuard icon next to the search bar. Это полезно, если вы хотите быстро настроить защиту на конкретном сайте или заблокировать рекламу вручную. It also contains advanced rules that aren't converted into the format supported by Safari. Сюда входят правила CSS, CSS-селекторы и скриптлеты, позволяющие AdGuard блокировать сложную рекламу — например, на YouTube.
+*AdGuard для Safari* добавляет иконку AdGuard рядом со строкой поиска. Это полезно, если вы хотите быстро настроить защиту на конкретном сайте или заблокировать рекламу вручную. Оно также содержит расширенные правила, которые не преобразуются в формат, поддерживаемый Safari. Сюда входят правила CSS, CSS-селекторы и скриптлеты, позволяющие AdGuard блокировать сложную рекламу — например, на YouTube.
 
 ## Как управлять расширениями Safari
 
 1. Откройте Safari и нажмите *Safari* в левом верхнем углу экрана, чтобы развернуть меню. ![Настройки Safari *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-settings1.png)
-1. Click *Settings...*
+1. Нажмите *Настройки...*
 1. Выберите *Расширения*. ![Вкладка Расширения](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-extensions1.png)
 
-## Why AdGuard for Safari requires permission
+## Почему AdGuard для Safari нужны разрешения
 
-When enabling the *AdGuard for Safari* extension, you might notice that it requires **access to web page content** and **access to browsing history**. Here's why it needs these permissions:
+При включении расширения *AdGuard для Safari* вы можете заметить, что оно запрашивает **доступ к содержимому страницы** и **доступ к истории поиска**. Вот зачем ему нужны эти разрешения:
 
-- Access to web page content is required for manual ad blocking and advanced blocking rules to work correctly
-- Access to browsing history is required to check the protection status on websites and determine which advanced rules should be applied
+- Доступ к содержимому веб-страницы необходим для правильной работы правил ручной блокировки рекламы и расширенной блокировки
+- Доступ к истории просмотров нужен для проверки статуса защиты на сайтах и определения того, какие расширенные правила следует применять
 
 Мы не используем эти данные в других целях и никому их не передаём. Больше вы можете почитать в нашей [Политике конфиденциальности](https://adguard.com/privacy.html).

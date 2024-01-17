@@ -45,7 +45,10 @@ Yeni Tarayıcı Asistanı, Mac için AdGuard ayarlarında Gizlilik Modu, Gezinti
 
 ## Legacy Assistant
 
-Eski Asistan, bir tarayıcı uzantısı değil, yalnızca bir kullanıcı betiği olan Asistan'ın önceki sürümüdür. Temel olarak, yeni Tarayıcı Asistanı yerine onu seçmek isteyebileceğiniz iki durum vardır: 1) yeni Asistan tarayıcınız için mevcut değildir; 2) yeşil kalkan simgesine alışkınsanız ve her şeyi olduğu gibi bırakmak istiyorsanız.  Kendinizi bu senaryolardan herhangi birinde tanıyorsanız, eski sürüm size uygun olur.
+Eski Asistan, bir tarayıcı uzantısı değil, yalnızca bir kullanıcı betiği olan Asistan'ın önceki sürümüdür. Temel olarak, yeni Tarayıcı Asistanı yerine bunu seçmek isteyebileceğiniz iki durum vardır:
+
+1. Yeni Asistan tarayıcınızda kullanılamıyor.
+1. Yeşil kalkan simgesine alışkınsınız ve her şeyi olduğu gibi bırakmak istiyorsunuz.
 
 ## AdGuard Tarayıcı Asistanı nasıl yüklenir
 

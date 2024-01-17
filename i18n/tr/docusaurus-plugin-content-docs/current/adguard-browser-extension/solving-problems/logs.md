@@ -33,9 +33,9 @@ sidebar_position: 1
 
 2. `about:addons` adresine gidin.
 
-3. Click _Debug Add-ons_.
+3. _Eklentilerde hata ayıkla_ öğesine tıklayın.
 
-   ![Debug Add-ons \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/add-ons.png)
+   ![Eklentilerde hata ayıkla \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/add-ons.png)
 
 4. _İncele_ öğesine tıklayın.
 

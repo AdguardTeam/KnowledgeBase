@@ -1,11 +1,11 @@
 ---
-title: How to purchase or upgrade
+title: 購入・アップグレードする方法
 sidebar_position: 2
 ---
 
 ## ライセンスを購入する方法{#purchase}
 
-AdGuard licenses can be bought on [adguard.com](https://adguard.com/license.html). You can pay with Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay and UnionPay. 次の仮想通貨もご利用いただけます：Bitcoin, Ethereum, Litecoin, Tether
+AdGuardライセンスは [adguard.com にてご購入](https://adguard.com/license.html)いただけます。 （Visa、Mastercard、Apple Pay、Google Pay、PayPal、Alipay、銀聯など、さまざまなお支払い方法をご利用いただけます。） 次の仮想通貨もご利用いただけます：Bitcoin, Ethereum, Litecoin, Tether
 
 iOS用「AdGuard Pro」は、App Storeで購入することができます。
 
@@ -15,9 +15,9 @@ iOS用「AdGuard Pro」は、App Storeで購入することができます。
 
 ライセンスをアップグレードすることで、以下のように AdGuard 製品をより活用できます:
 
-- To extend the number of devices, you can **upgrade your Personal license to Family**
-- You can also **upgrade your 1-year subscription to a lifetime license**
+- 利用可能端末台数を増やすには、 **AdGuardパーソナルライセンス（3台用）をファミリーライセンス（9台用）にアップグレード**します。
+- また、サブスクリプションを**期限なく使える永久版ライセンスにアップグレードする**ことも可能です。
 
-You can upgrade your license in your AdGuard account. To do so, click *Upgrade to Lifetime* or *Increase device limit*.
+お持ちのライセンスはAdGuardアカウントにてアップグレードいただけます。 そうするには、AdGuardアカウントで、「*永久版にアップグレードする*」または「*利用可能端末台数を増やす*」をクリックしてください。
 
 ![アップグレード](https://cdn.adtidy.org/blog/new/7mtemnewaccount-kb-upgrade-ja.png)

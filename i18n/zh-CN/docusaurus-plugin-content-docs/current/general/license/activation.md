@@ -19,62 +19,62 @@ sidebar_position: 3
 
 ### 在 Windows 版的 AdGuard 激活许可证
 
-1. On the expired license screen, click *Activate*.
+1. 在过期许可证页面上，单击「*激活*」。
 
-    ![Expired license screen *border](https://cdn.adtidy.org/blog/new/eapwtexp.png)
+    ![到期许可证屏幕 *border](https://cdn.adtidy.org/blog/new/eapwtexp.png)
 
-    Alternatively, select *License* in the upper right corner of the main screen and click *Activate*.
+    或者，在主屏幕右上角选择「*许可证*」，然后单击「*激活*」。
 
-    ![Main screen *border](https://cdn.adtidy.org/blog/new/ca313hmain-screen.png)
+    ![主屏幕 *border](https://cdn.adtidy.org/blog/new/ca313hmain-screen.png)
 
-    ![License screen *border](https://cdn.adtidy.org/blog/new/n7nkclicense-screen.png)
+    ![许可证屏幕 *border](https://cdn.adtidy.org/blog/new/n7nkclicense-screen.png)
 
-1. Activate your license using your preferred method. If the license is bound to your email address, click *AdGuard Account* or select a social network associated with this email address. Alternatively, enter your license key.
+1. 以便捷的方式激活许可证。 如果许可证与电子邮件地址绑定，请单击「*AdGuard 账号*」或选择与此电子邮件地址关联的社交网络。 或者，请输入您的许可证密钥。
 
-    ![Activating a license *border](https://cdn.adtidy.org/blog/new/lnzz5activate-license.png)
+    ![激活许可证 *border](https://cdn.adtidy.org/blog/new/lnzz5activate-license.png)
 
 ### 在 Mac 版的 AdGuard 激活许可证
 
-1. On the expired license screen, click *Activate*.
+1. 在过期许可证页面上，单击「*激活*」。
 
-    ![Expired license screen *mobile_border](https://cdn.adtidy.org/blog/new/o9bhtexpired-screen.png)
+    ![到期许可证屏幕 *mobile_border](https://cdn.adtidy.org/blog/new/o9bhtexpired-screen.png)
 
-    Alternatively, click the gear icon in the AdGuard menu, then click *License*.
+    或者，单击 AdGuard 菜单中的齿轮图标，然后单击「*许可证*」。
 
-    ![Preferences *border](https://cdn.adtidy.org/blog/new/xuyqmpreferences.png)
+    ![首选项 *border](https://cdn.adtidy.org/blog/new/xuyqmpreferences.png)
 
-1. In the opened window, click *Activate*.
+1. 在打开的窗口中，点击「*激活*」。
 
-    ![License screen *border](https://cdn.adtidy.org/blog/new/8rbc8license-screen.png)
+    ![许可证屏幕 *border](https://cdn.adtidy.org/blog/new/8rbc8license-screen.png)
 
-1. Activate your license using your preferred method. If the license is bound to your email address, click *AdGuard Account* or select a social network associated with this email address. Alternatively, enter your license key.
+1. 以便捷的方式激活许可证。 如果许可证与电子邮件地址绑定，请单击「*AdGuard 账号*」或选择与此电子邮件地址关联的社交网络。 或者，请输入您的许可证密钥。
 
-    ![Activating a license *border](https://cdn.adtidy.org/blog/new/tws3jkactivate-license.png)
+    ![激活许可证 *border](https://cdn.adtidy.org/blog/new/8rbc8license-screen.png)
 
 ### 在 Android 版的 AdGuard 激活许可证
 
-1. Tap *Settings*, then select *License*.
+1. 点击「*设置*」，然后点选「*许可证*」。
 
-    ![Settings screen *mobile_border](https://cdn.adtidy.org/blog/new/sbdcysettings.png)
+    ![设置屏幕 *mobile_border](https://cdn.adtidy.org/blog/new/sbdcysettings.png)
 
-1. Tap *Activate license*.
+1. 点击「*激活许可证*」。
 
-    ![License screen *mobile_border](https://cdn.adtidy.org/blog/new/04fs1license-screen.png)
+    ![许可证屏幕 *mobile_border](https://cdn.adtidy.org/blog/new/04fs1license-screen.png)
 
-1. Activate your license using your preferred method. If the license is bound to your email address, tap *Continue with email* or select a social network associated with this email address. Alternatively, enter your license key.
+1. 以便捷的方式激活许可证。 如果许可证与电子邮件地址绑定，请点击「*用电子邮件继续*」或选择与此电子邮件地址相关联的社交网络。 或者，请输入您的许可证密钥。
 
-    ![Activating a license *mobile_border](https://cdn.adtidy.org/blog/new/sbxttactivate-license.png)
+    ![激活许可证 *mobile_border](https://cdn.adtidy.org/blog/new/sbxttactivate-license.png)
 
 ### 在 iOS 版的 AdGuard 激活许可证
 
-1. Tap *Settings*, then select *License*.
+1. 点击「*设置*」，然后点选「*许可证*」。
 
-    ![Settings screen *mobile_border](https://cdn.adtidy.org/blog/new/uf8f1fsettings.png)
+    ![设置屏幕 *mobile_border](https://cdn.adtidy.org/blog/new/uf8f1fsettings.png)
 
-1. Tap **Log in** in the upper right corner of the screen
+1. 然后点击屏幕右上角的「**登录**」
 
-    ![Purchase screen *mobile_border](https://cdn.adtidy.org/blog/new/10j5bhpurchase-page.png)
+    ![支付屏幕 *mobile_border](https://cdn.adtidy.org/blog/new/10j5bhpurchase-page.png)
 
-1. Use your email address or social media account to activate your license.
+1. 使用电子邮件地址或社交媒体账户激活许可证。
 
-    ![Login screen *mobile_border](https://cdn.adtidy.org/blog/new/prnjdlogin-page.png)
+    ![登录屏幕 *mobile_border](https://cdn.adtidy.org/blog/new/prnjdlogin-page.png)
