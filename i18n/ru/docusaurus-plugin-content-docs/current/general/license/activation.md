@@ -9,96 +9,72 @@ sidebar_position: 3
 
 :::note
 
-To activate a license via the AdGuard account, a valid license with at least one free slot is required. Если ваша лицензия уже используется на максимальном количестве устройств, вы можете [улучшить её](../payment-options#upgrade) или [перенести её с одного устройства на другое](../transfer).
+Чтобы активировать лицензию через аккаунт AdGuard, нужна действующая лицензия с хотя бы одним свободным слотом. Если ваша лицензия уже используется на максимальном количестве устройств, вы можете [улучшить её](../payment-options#upgrade) или [перенести её с одного устройства на другое](../transfer).
 
 :::
 
-Кроме того, для активации лицензии можно использовать лицензионный ключ [](../what-is#license-key).
+Кроме того, для активации лицензии можно использовать [лицензионный ключ](../what-is#license-key).
 
 **Ниже вы можете ознакомиться с пошаговыми инструкциями по активации для каждой платформы.**
 
 ### Активация AdGuard для Windows
 
-1. Откройте приложение AdGuard
+1. На экране истёкшей лицензии нажмите *Активировать*.
 
-Дважды щёлкните по иконке AdGuard на рабочем столе:
+    ![Экран с просроченной лицензией *border](https://cdn.adtidy.org/blog/new/eapwtexp.png)
 
-![Иконка AdGuard на рабочем столе](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowsEn.png)
+    Либо перейдите во вкладку *Лицензия* в правом верхнем углу главного экрана и нажмите *Активировать*.
 
-либо дважды щёлкните по иконке AdGuard в области уведомлений на панели задач:
+    ![Главный экран *border](https://cdn.adtidy.org/blog/new/ca313hmain-screen.png)
 
-![Иконка AdGuard в системном трей-меню](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windows2En.png)
+    ![Экран лицензии *border](https://cdn.adtidy.org/blog/new/n7nkclicense-screen.png)
 
-2. Перейдите на вкладку **Лицензия** в меню приложения и нажмите **Активировать лицензию**
+1. Активируйте лицензию удобным для вас способом. Если лицензия привязана к вашей почте, нажмите *Аккаунт AdGuard* или выберите социальную сеть, связанную с этой почтой. Активировать лицензию можно и с помощью ключа.
 
-![Нажмите «Активировать лицензию»](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowslicense1en.png)
-
-3. Вам будет предложено два варианта активации:
-
-- Ввести **электронную почту** и **пароль** от **аккаунта AdGuard** (или Facebook, Google или Apple)
-
-![Войдите в аккаунт AdGuard](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowslicense2en.png)
-
-- Ввести **лицензионный ключ**
-
-![Введите лицензионный ключ](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowslicense3en.png)
+    ![Активация лицензии *border](https://cdn.adtidy.org/blog/new/lnzz5activate-license.png)
 
 ### Активация AdGuard для Mac
 
-1. Откройте приложение AdGuard (нажмите на иконку AdGuard в строке меню)
+1. На экране истёкшей лицензии нажмите *Активировать*.
 
-![Иконка AdGuard в строке меню](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/mac1.png)
+    ![Экран с просроченной лицензией *mobile_border](https://cdn.adtidy.org/blog/new/o9bhtexpired-screen.png)
 
-2. Нажмите на иконку **шестерёнки** в правом верхнем углу
-3. Нажмите **Лицензия**
+    Либо нажмите на значок шестерёнки в меню AdGuard, а затем нажмите *Лицензия*.
 
-![Перейдите в раздел «Настройки и Лицензия» *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/macEn.png)
+    ![Настройки *border](https://cdn.adtidy.org/blog/new/xuyqmpreferences.png)
 
-4. В открывшемся окне нажмите кнопку **Активировать**
+1. В открывшемся окне нажмите *Активировать*.
 
-![Нажмите «Активировать»](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/maclicenseen1.png)
+    ![Экран лицензии *border](https://cdn.adtidy.org/blog/new/8rbc8license-screen.png)
 
-5. Вам будет предложено два варианта активации:
-- Ввести **электронную почту** и **пароль** от **аккаунта AdGuard** (или Facebook, Google или Apple)
+1. Активируйте лицензию удобным для вас способом. Если лицензия привязана к вашей почте, нажмите *Аккаунт AdGuard* или выберите социальную сеть, связанную с этой почтой. Активировать лицензию можно и с помощью ключа.
 
-![Войдите в аккаунт, чтобы активировать лицензию](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/maclicenseen2.png)
-
-- Ввести **лицензионный ключ**
-
-![Введите лицензионный ключ для активации](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/maclicenseen3.png)
+    ![Активация лицензии *border](https://cdn.adtidy.org/blog/new/tws3jkactivate-license.png)
 
 ### Активация AdGuard для Android
 
-1. Откройте приложение AdGuard
-2. Нажмите на иконку меню **(☰)** в левом верхнем углу экрана
-3. Нажмите **Получить премиум** (или **Статус лицензии**)
+1. Нажмите *Настройки*, затем выберите *Лицензия*.
 
-![Нажмите «Получить премиум» или «Статус лицензии» *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/androidlicense1en.png)
+    ![Экран настроек *mobile_border](https://cdn.adtidy.org/blog/new/sbdcysettings.png)
 
-4. Нажмите на иконку меню **(⋮)** в левом верхнем углу экрана
+1. Нажмите *Активировать лицензию*.
 
-![Нажмите кнопку меню из трёх точек *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/android2En.png)
+    ![Экран лицензии *mobile_border](https://cdn.adtidy.org/blog/new/04fs1license-screen.png)
 
-5. Нажмите **Активировать Премиум**, и вам будет предложено два варианта активации:
+1. Активируйте лицензию удобным для вас способом. Если лицензия привязана к вашей почте, нажмите *Войти с помощью почты* или выберите социальную сеть, связанную с ней. Активировать лицензию можно и с помощью ключа.
 
-- Ввести **электронную почту** и **пароль** от **аккаунта AdGuard** (Facebook или Google)
-
-![Войдите, чтобы активировать *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/androidlicense2en.png)
-
-- Ввести **лицензионный ключ**
-
-![Введите лицензионный ключ для активации *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/androidlicense3en.png)
+    ![Активация лицензии *mobile_border](https://cdn.adtidy.org/blog/new/sbxttactivate-license.png)
 
 ### Активация AdGuard для iOS
 
-1. Откройте приложение AdGuard и нажмите на иконку шестерёнки **** в правом нижнем углу экрана
+1. Нажмите *Настройки*, затем выберите *Лицензия*.
 
-2. Нажмите **Лицензия**
+    ![Экран настроек *mobile_border](https://cdn.adtidy.org/blog/new/uf8f1fsettings.png)
 
-3. Нажмите **Войти** в правом верхнем углу экрана
+1. Нажмите **Войти** в правом верхнем углу экрана
 
-![Нажмите «Войти» в правом верхнем углу экрана «Премиум» *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense1en.png)
+    ![Экран покупки *mobile_border](https://cdn.adtidy.org/blog/new/10j5bhpurchase-page.png)
 
-4. Введите **email** и **пароль** от **аккаунта AdGuard**
+1. Войдите через почту или аккаунт в соцсетях, чтобы активировать лицензию.
 
-![Войти *мобильный](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense2en.png)
+    ![Экран входа *mobile_border](https://cdn.adtidy.org/blog/new/prnjdlogin-page.png)

@@ -1,22 +1,23 @@
 ---
-title: How to purchase/upgrade
+title: Lizenz erwerben oder erweitern
 sidebar_position: 2
 ---
 
-## How to purchase a license{#purchase}
+## So erwerben Sie eine Lizenz{#purchase}
 
-Sie können eine AdGuard-Lizenz auf [adguard.com](https://adguard.com/license.html) erwerben. AdGuard Pro für iOS kann im App Store gekauft werden. Werbeblocker-Lizenzen werden auch von verschiedenen Distributoren verkauft.
+AdGuard-Lizenzen können auf [adguard.com](https://adguard.com/license.html) erworben werden. Sie können mit Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay und UnionPay bezahlen. Wir akzeptieren zudem die folgenden Kryptowährungen: Bitcoin, Ethereum, Litecoin und Tether.
 
-The availability of AdGuard products in app stores and by distributors depends on your country.
+AdGuard Pro für iOS kann im App Store gekauft werden.
 
-## How to upgrade a license{#upgrade}
+Werbeblocker-Lizenzen werden auch von verschiedenen Distributoren verkauft. Die Verfügbarkeit von AdGuard-Produkten in App Stores und bei Händlern hängt von Ihrem Land ab.
 
-To make more use of your AdGuard products, you can upgrade your license for the following benefits.
+## So erweitern Sie eine Lizenz{#upgrade}
 
-1. Um den Funktionsumfang Ihrer AdGuard-Produkte zu erweitern, können Sie **Ihre kostenlose oder Testlizenz auf die Vollversion** erweitern.
-2. To extend the number of devices, you can **upgrade your Personal license to a Family one**.
-3. You can also **upgrade your [subscription](../what-is) to a Lifetime license**.
+Um das Beste aus den AdGuard-Produkten herauszuholen, können Sie Ihre Lizenz erweitern.
 
-You can upgrade your license by:
-  * purchasing another license on the [official AdGuard website](https://adguard.com),
-  * clicking the *Upgrade to Lifetime* and/or *Increase device limit* in your AdGuard account: ![Upgrade *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)
+- Um die Anzahl der Geräte zu erweitern, können Sie **Ihre Einzellizenz auf eine Familienlizenz** erweitern
+- Sie können auch von Ihrem**1-Jahres-Abonnement auf eine lebenslange Lizenz umsteigen**
+
+Sie können Ihre Lizenz in Ihrem AdGuard-Konto erweitern. Klicken Sie dazu auf *Auf Lebenslange Lizenz umsteigen* oder *Gerätelimit erhöhen*.
+
+![Erweitern](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)

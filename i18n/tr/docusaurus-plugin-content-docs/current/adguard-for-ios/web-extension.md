@@ -1,13 +1,13 @@
 ---
-title: Safari Web extension
+title: Safari Web uzantısı
 sidebar_position: 3
 ---
 
-Web extensions add custom functionality to Safari. You can find [more information about Web extensions here](https://developer.apple.com/documentation/safariservices/safari_web_extensions).
+Web uzantıları, Safari'ye özel işlevler ekler. You can find [more information about Web extensions here](https://developer.apple.com/documentation/safariservices/safari_web_extensions).
 
-![What the Web extension looks like in Safari *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/menu_en.png)
+![Web uzantısı Safari'de nasıl görünür *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/menu_en.png)
 
-AdGuard's Safari Web extension is a tool that takes advantage of the new features of iOS 15. It serves to enhance the capabilities of AdGuard for iOS. With it, AdGuard can apply advanced filtering rules and ultimately block more ads.
+AdGuard'ın Safari Web uzantısı, iOS 15'in yeni özelliklerinden yararlanan bir araçtır. iOS için AdGuard'ın yeteneklerini geliştirmeye hizmet eder. Bununla birlikte AdGuard, gelişmiş filtreleme kuralları uygulayabilir ve sonuçta daha fazla reklamı engelleyebilir.
 
 ## What it does
 
@@ -22,17 +22,17 @@ Besides that, AdGuard's Safari Web extension can be used to quickly manage AdGua
 
 You will see the following list of options:
 
-* **Enabling/disabling protection on the website**. Turning the switch off will disable AdGuard completely for the current website and add a respective exclusion rule. Turning the switch back on will resume protection for the website and delete the rule. Any such change will require some time to take effect.
+- **Enabling/disabling protection on the website**. Turning the switch off will disable AdGuard completely for the current website and add a respective exclusion rule. Turning the switch back on will resume protection for the website and delete the rule. Any such change will require some time to take effect.
 
-* **Blocking elements on the page manually**. Tap the *Block elements on this page* button to prompt a pop-up for element blocking. Select any element on the page you want to hide, adjust the selection zone, then preview changes and confirm the removal. A corresponding filtering rule will be added to AdGuard (that you can later disable or delete to revert the change).
+- **Blocking elements on the page manually**. Tap the *Block elements on this page* button to prompt a pop-up for element blocking. Select any element on the page you want to hide, adjust the selection zone, then preview changes and confirm the removal. A corresponding filtering rule will be added to AdGuard (that you can later disable or delete to revert the change).
 
-* **Report an issue**. Swipe up to bring out the *Report an issue* button. Use it to report a missed ad or any other problem that you encountered on the current page.
+- **Report an issue**. Swipe up to bring out the *Report an issue* button. Use it to report a missed ad or any other problem that you encountered on the current page.
 
 ## How to enable AdGuard's Safari Web extension
 
 ### In the iOS settings
 
-Web extension is not a standalone tool and requires AdGuard for iOS. If you don't have AdGuard for iOS installed on your device, please [install it first](../installation) and complete the onboarding process to prepare it for work.
+Web uzantısı bağımsız bir araç değildir ve iOS için AdGuard gerektirir. If you don't have AdGuard for iOS installed on your device, please [install it first](../installation) and complete the onboarding process to prepare it for work.
 
 Once done, open *Settings → Safari → Extensions*.
 
@@ -46,9 +46,9 @@ Find **ALLOW THESE EXTENSIONS** section and then find **AdGuard** among the avai
 
 Tap it, then turn on the switch. On the same screen make sure that the AdGuard extension has required permissions: **All Websites** should have the *Allow* status.
 
-![](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings4_en.png)
+![ayarlar uzantıları *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings4_en.png)
 
-:::note
+:::not
 
 AdGuard's Safari Web extension requires access to the web pages' content to operate, but doesn't use it for any purpose other than blocking ads.
 
@@ -60,17 +60,17 @@ Alternitavely, you can also turn AdGuard extension on from the Safari browser. T
 
 ![In Safari tap aA icon *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari1_en.png)
 
-Then find the *Manage Extensions* option in the list and tap it. In the opened window turn on the switch next to **AdGuard**.
+Ardından listede *Uzantıları Yönet* seçeneğini bulun ve ona dokunun. Açılan pencerede **AdGuard** yanındaki düğmeyi açın.
 
-![Extensions *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari2_en.png)
+![Uzantılar *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari2_en.png)
 
-![Extensions *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari3_en.png)
+![Uzantılar *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari3_en.png)
 
-If you use this method, you may have to go to Safari settings to grant AdGuard extension the necessary permissions anyway.
+Bu yöntemi kullanırsanız, yine de AdGuard uzantısına gerekli izinleri vermek için Safari ayarlarına gitmeniz gerekebilir.
 
-You should now be able to see AdGuard among the available extensions. Tap it and then the yellow **i** icon. Enable **Advanced protection** by tapping the *Turn on* button and confirming the action.
+Artık mevcut uzantılar arasında AdGuard'ı görüyor olmanız gerekir. Tap it and then the yellow **i** icon. Enable **Advanced protection** by tapping the *Turn on* button and confirming the action.
 
-:::note
+:::not
 
 If you use AdGuard for iOS without Premium subscription, you won't be able to enable **Advanced protection**.
 

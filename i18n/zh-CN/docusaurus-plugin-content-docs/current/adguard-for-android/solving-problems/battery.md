@@ -5,68 +5,56 @@ sidebar_position: 1
 
 :::info
 
-This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+本文适用于安卓版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
-有时用户会注意到，根据安卓内置统计，AdGuard 会消耗不少流量和/或电量。
+On Android devices running OS 6 and earlier, built-in statistics often attributed high data and/or battery usage to AdGuard. This was because AdGuard counted all the traffic it filtered from various apps. As a result, AdGuard's share of total data and battery usage was overstated, while other apps were understated.
 
-这两种问题反映的是一枚硬币的正反两面。 在过滤过程中，所有流量都会经过 AdGuard，因此安卓会误认为 AdGuard 正在使用流量。 当然，事实上这并不是这样的。
+With Android 7, however, this scenario has improved. Now the data reflected in Android's built-in data usage statistics is very close to reality, although there are minor discrepancies in the battery usage data.
 
-设备上的流量和电池使用量的统计显示的**不是实际情况**。 其他应用程序所使用的 WiFi 和移动流量，安卓将其都归于 AdGuard。 因此，从总消耗来看， AdGuard 电池和流量的使用量增高，相反，其他应用程序的使用量却降低。
+However, AdGuard users can always get a true picture of the situation on the *Battery usage* screen.
 
 ### 电池使用情况
 
-以减轻大家对该问题的误解，我们设计了新屏幕称为“电池使用率”。 您可以在主屏幕的右上角上点击「电池」图标以查看。
+You can access it by navigating to *Statistics* → *Battery usage*.
 
-![电池统计 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/battery/batterystats.png)
+![电池统计 *mobile_border](https://cdn.adtidy.org/content/articles/battery/1.png)
 
-这里可以查看最近24小时内 AdGuard 电池的使用量。点击图标上的绿线可以按每一个小时查看关于流量使用的更详细信息。 除此之外，还有相关数据的信息以及简短技术说明。
-
-### 举个例子
-
-在以下的截图上您可以看到夜间和早间电池使用量的统计：
-
-![电池1 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_1.png) ![电池2 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_2.png) ![电池3 *mobile](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/battery_3.png)
-
-在以上的截图中可以发现:
-
-1. AdGuard 不出乎意料地出现在图标的顶部。 这对于手机来说是很正常的（而与不支持 4G 的平板电脑不同，因为使用 WiFi 对电池的消耗要小得多）。
-
-2. 请注意截图二，发送移动和 WiFi 包的数量，都归于 AdGuard 使用的流量（“Mobile data sent” 和 “Wi-Fi packets sent”）。
-
-3. 截图三是真实消耗流量的软件，Yandex.Browser。 它几乎没有被分类到任何流量中，而实际上它消耗了总流量的 70％。
+Inside you will find a chart that shows the AdGuard battery resource consumption within the last 24 hours, with an option to get more detailed hour-to-hour data by tapping on the chart. 除此之外，还有相关数据的信息以及简短技术说明。
 
 ### AdGuard 真实电池消耗是多少？
 
-首先，我们从理论角度看该问题并附上必要数据的链接。
+First, let us lay down a bit of theory and links with necessary data.
 
-1. 安卓使用自带的 Power Profile 来计算流量使用量：<https://source.android.com/devices/tech/power/values.html>
+1. Android derives traffic consumption judging on so-called Power Profile, which is given by every manufacturer: <https://source.android.com/devices/tech/power/values.html>
 
-2. Power Profile 的主要部分是一组以mAh为单位的值，这些值定义设备每个组件的电池消耗：<https://source.android.com/devices/tech/power/values.html>
+1. Main part of Power Profile is a set of values in mAh which define battery consumption for every component of the device: <https://source.android.com/devices/tech/power/values.html>
 
-比如说，从链接的表格中我们可以看到：
+    For example, from the table above:
 
-_wifi.active=_ 31m 是指 WiFi 数据交换导致的额外消耗（使用的单位：毫安）
+    *wifi.active=* 31mA additional consumption in mAh caused by WiFi data exchange.
 
-_radio.active=_ 100-300mA 是指经过移动交换数据导致的额外消耗 （使用的单位：毫安）
+    *radio.active=* 100-300mA additional consumption in mAh caused by data exchange over Mobile network.
 
-_cpu.active=_ 100-200mA 是指中央处理器（CPU） 运行导致的额外消耗 （使用的单位：毫安）
+    *cpu.active=* 100-200mA additional consumption in mAh caused by CPU work.
 
-3. AdGuard 几乎没有消耗任何流量，因此，我们来去除“移动/WiFi 包”以评价电池消耗，而把重心放在 “CPU”（中央处理器）上。
+1. AdGuard by itself almost doesn't consume any traffic, so for the sake of evaluating battery resource consumption let's get rid of 'Mobile/WiFi packets' and stcik to 'CPU'.
 
-以下是计算消耗量的公式：
-> "CPU TIME (ms)" X "cpu.active" / (60 * 60 * 1000) = "POWER USE mAh"
+    Formula to calculate the consumption:
 
-我们将实数写入公式中。
+    > "CPU TIME (ms)" X "cpu.active" / (60 *60* 1000) = "POWER USE mAh"
 
-来将第二张截图上的 _CPU total_ 转换为毫秒：506000
+    Let's put real numbers into this formula.
 
-2GHz 的 _cpu.active_ 系数大约等于 225mAh
+    Let's take *CPU total* from the second screenshot and convert into milliseconds: 506000
 
-最后结果
-> 506000 * 225 / (60 * 60 * 1000) = 31,625mAh
+    A coefficient *cpu.active* for 2GHz will be roughly equal to 225mAh
+
+    Final result:
+
+    > 506000 *225 / (60* 60 * 1000) = 31,625mAh
 
 ### 结论
 
-事实上的消耗量比安卓统计上的消耗量**小很多倍**。 消耗量为 31-40mAh，而非 220mAh。 从另一方面来看的话，浏览器流量使用量为 ~200mAh，而不是 66mAh。
+Real consumption is **several times less** than it is shown in Android statistics. Instead of 220mAh it should be somewhere around 31-40mAh. On the other hand, browser's consumption should be not 66mAh, but ~200mAh.

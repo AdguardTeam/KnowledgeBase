@@ -5,29 +5,29 @@ sidebar_position: 9
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Mac için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Mac için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
-## Gelişmiş ayarlara nasıl ulaşılır
+## Gelişmiş Ayarlara nasıl ulaşılır
 
 :::caution
 
-Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only open this section if you are sure of what you are doing or our support team has asked you to do it.
+*Gelişmiş Ayarlar* öğesinin değiştirilmesi AdGuard'ın performansında sorunlara neden olabilir, internet bağlantısını kesebilir veya güvenliğinizi ve gizliliğinizi tehlikeye atabilir. Bu bölümde yalnızca ne yaptığınızdan eminseniz veya destek ekibimiz sizden bunu yapmanızı istediyse değişiklik yapın.
 
 :::
 
-To go to *Advanced settings*, follow this route: the AdGuard icon at the tray menu → the gear icon → Advanced → Advanced settings.
+*Gelişmiş Ayarlar* öğesini bulmak için AdGuard'ı açın, dişli çark simgesine tıklayın, *Gelişmiş* öğesini ve ardından *Gelişmiş Ayarlar* öğesini seçin.
 
-## Advanced settings
+## Gelişmiş Ayarlar
 
 `network.extension.exclude.domains`
 
-The listed domains will be excluded from filtering in the *Network Extension* mode. Use a comma or line break to separate values.
+The listed domains will be excluded from filtering in the *Network Extension* mode. Değerleri ayırmak için virgül veya satır sonu kullanın.
 
 `network.extension.exclude.ports`
 
-The listed ports will be excluded from filtering in the *Network Extension* mode. Use a comma or line break to separate values.
+The listed ports will be excluded from filtering in the *Network Extension* mode. Değerleri ayırmak için virgül veya satır sonu kullanın.
 
 `network.extension.route.exclude`
 
@@ -75,6 +75,10 @@ Uses a local DNS proxy to look for configs in the ECH Config Lists. Bulunursa, C
 
 Verifies the authenticity of all certificates for the domain based on Chrome Certificate Transparency Policy.
 
+`network.https.filter.http3.enabled`
+
+By setting `true`, you allow AdGuard to filter traffic sent over HTTP/3, the latest version of the HTTP protocol based on QUIC.
+
 `network.filtering.localnetwork`
 
 By setting `true`, you enable local network filtering.
@@ -107,17 +111,17 @@ Burada, ana DNS sunucusu yerine yedek DNS sunucusunun kullanılacağı alan adla
 
 Here you can specify the type of DNS server response to blocked requests, corresponding to ad-blocker-style rules.
 
-* 0 — REFUSED ile yanıt verin
-* 1 — NXDOMAIN ile yanıt verin
-* 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
+- 0 — REFUSED ile yanıt verin
+- 1 — NXDOMAIN ile yanıt verin
+- 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
 
 `dns.proxy.hostrules.blocking.mode`
 
 Here you can specify the type of DNS server response to blocked requests, corresponding to hosts rules:
 
-* 0 — REFUSED ile yanıt verin
-* 1 — NXDOMAIN ile yanıt verin
-* 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
+- 0 — REFUSED ile yanıt verin
+- 1 — NXDOMAIN ile yanıt verin
+- 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
 
 `dns.proxy.blocking.response.IPv4.address`
 
@@ -137,7 +141,7 @@ Burada, engellenen bir isteğe yanıt olarak döndürülecek TTL (kullanım sür
 
 `dns.proxy.parallel.upstream.queries.enabled`
 
-All upstreams are queried simultaneously. İlk yanıt döndürülür.
+Tüm üst kaynaklar aynı anda sorgulanır. İlk yanıt döndürülür.
 
 `dns.proxy.servfail.on.upstreams.failure.enabled`
 
@@ -162,6 +166,10 @@ This option specifies the size of TCP packet fragmentation, which helps avoid de
 `stealth.antidpi.http.space.juggling`
 
 HTTP yöntemi ile URL arasına fazladan boşluk ekler ve "Host:" alanından sonraki boşluğu kaldırır.
+
+`stealth.antidpi.split.delay.millisecond`
+
+Burada, parçalama gerçekleştirilirse ilk parçanın gönderilmesinden sonraki gecikmeyi milisaniye cinsinden belirtebilirsiniz.
 
 `subscription.link.interception.userscript`
 

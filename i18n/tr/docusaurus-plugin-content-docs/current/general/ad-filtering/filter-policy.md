@@ -3,28 +3,28 @@ title: AdGuard filter policy
 sidebar_position: 6
 ---
 
-When discussing AdGuard ad filters, one topic often comes up – whether AdGuard should block this or that ad. By setting the rules, we stick to specific criteria that are very similar to [EasyList Policy](https://easylist.to/pages/policy.html), which we find correct and appropriate. However, we have made some changes to it.
+AdGuard reklam filtrelerini tartışırken, AdGuard'ın bunu mu yoksa bu reklamı mı engellemesi gerektiği gibi sık sık bir konu ortaya çıkar. Kuralları belirlerken, doğru ve uygun bulduğumuz [EasyList Politikası](https://easylist.to/pages/policy.html) ile çok benzer olan belirli kriterlere bağlı kalıyoruz. However, we have made some changes to it.
 
 ![To filter or not to filter](https://cdn.adtidy.org/public/Adguard/Common/page_filtering.png)
 
 ## Terminology
 
-Throughout this text, we use the terms **first party** and **third party**.
+Bu metin boyunca **birinci taraf** ve **üçüncü taraf**terimlerini kullanıyoruz.
 
-A "first party" is a website that a user visits intentionally and knowingly, plus a set of resources on the web operated by the same organization. In practice, we consider resources to belong to the same party if they are part of the same registrable domain: a public suffix plus one additional label. Example: `site.example`, `www.site.example`, and `s.u.b.site.example` belong to the same party because `site.example` is their common registrable domain.
+"Birinci taraf", bir kullanıcının bilerek ve isteyerek ziyaret ettiği bir sitesiyle aynı kuruluş tarafından işletilen web üzerindeki bir dizi kaynaktır. Uygulamada, kaynakların aynı kaydedilebilir alanın parçası olması durumunda aynı tarafa ait olduğunu kabul ederiz: genel bir son ek artı bir ek etiket. Örnek: `site.example`, `www.site.example` ve `s.u.b.site.example` aynı tarafa aittir çünkü `site.example ` ortak kaydedilebilir alan adıdır.
 
-A "third party" is any party that does not fall within the definition of the first party above. Interactions with other parties are considered third-party, even if the user is transiently informed in context (for example, in the form of a redirect). Merely hovering over, muting, pausing, or closing a given piece of content does not constitute an intention to interact.
+"Üçüncü taraf", yukarıdaki birinci taraf tanımına girmeyen herhangi bir taraftır. Kullanıcı içeriğinde geçici olarak bilgilendirilse bile (örneğin, bir yönlendirme şeklinde) diğer taraflarla etkileşimler üçüncü taraf olarak kabul edilir. Belirli bir içeriğin üzerinde gezinmek, sessize almak, duraklatmak veya kapatmak etkileşim kurma niyetini teşkil etmez.
 
-## Common criteria
+## Ortak kriterler
 
-These equally apply to rules in all filters.
+Bunlar, tüm filtrelerdeki kurallar için eşit derecede geçerlidir.
 
 - Bazı sitelerin çalışmasında sıklıkla sorunlara neden olan kurallar silinecektir.
 - Siteye özgü kurallar, yalnızca bir site yeterli trafiğe sahipse eklenecektir. Trafik, açık istatistiklerle (varsa) veya sosyal medyadaki takipçiler gibi başka yollarla belirlenir. Ayda 100 bin ziyareti olan bir site trafiği yeterli kabul edilir. Çok popüler olmayan bir site için bir kural eklemeyi düşüneceğiz, ancak son karar filtre listesi yöneticisine aittir.
 
 ## Tüm filtreler
 
-This part describes the AdGuard Base filter, the Mobile Ads filter, and the following language-specific filters: Russian, German, Dutch, Spanish/Portuguese, Japanese, Turkish, Chinese, and French.
+Bu bölümde AdGuard Temel filtresi, Mobil Reklam filtresi ve şu dile özgü filtreler açıklanmaktadır: Rusça, Almanca, Felemenkçe, İspanyolca/Portekizce, Japonca, Türkçe, Çince ve Fransızca.
 
 **Bu filtreler neyi engelleyecek?**
 
@@ -32,14 +32,14 @@ This part describes the AdGuard Base filter, the Mobile Ads filter, and the foll
 - Nedenleri ve amaçları ne olursa olsun reklamlar engellenmelidir.
 - Kötü amaçlı uygulamaların veya reklam ekleyen uzantıların neden olduğu reklamları engelleriz. Please note that we do it only on the condition that you specify how to install such an app or extension.
 
-**Limitations and Exceptions**
+**Kısıtlamalar ve İstisnalar**
 
-If a rule is subject to the list of limitations described below, then it won’t be added to the main filters.
+Bir kural aşağıda açıklanan kısıtlamalar listesine dahilse, bu ana filtrelere eklenmeyecektir.
 
-- Websites’ own ads should not be removed on purpose. On the other hand, they should not be unblocked if it may cause third-party ads to reappear.
+- Websites’ own ads should not be removed on purpose. Öte yandan, üçüncü taraf reklamlarının yeniden görünmesine neden olabilecekse engelin kaldırılmaması gerekir.
 - Siteye özgü kurallar, yalnızca bir site yeterli trafiğe sahipse eklenecektir. Trafik, açık istatistiklerle (varsa) veya sosyal medyadaki takipçiler gibi başka yollarla belirlenir. Ayda 100 bin ziyareti olan bir site trafiği yeterli kabul edilir. Çok popüler olmayan bir site için bir kural eklemeyi düşüneceğiz, ancak son karar filtre listesi yöneticisine aittir.
-- Anti-adblock scripts will be blocked only if they limit or affect the functionality of a website.
-- Anti-adblock scripts will not be blocked in cases when it is prohibited by law.
+- Anti-adblock betikleri yalnızca bir sitenin işlevselliğini sınırlıyor veya etkiliyorsa engellenecektir.
+- Anti-adblock betikleri, yasalarca yasaklandığı durumlarda engellenmeyecektir.
 - Bazı sitelerin çalışmasında sıklıkla sorunlara neden olan kurallar silinecektir.
 
 ## Tracking Protection filter
@@ -52,7 +52,7 @@ We define **tracking** as collecting data regarding an individual’s identity o
 
 **İzleyici**, tek amacı veya amaçlarından biri olan izlemeyi içeren çevrimiçi bir betiktir.
 
-**Limitations and Exceptions**
+**Kısıtlamalar ve İstisnalar**
 
 Bir kural aşağıda açıklanan kısıtlamalar listesine dahilse, bu filtreye eklenmeyecektir.
 
@@ -67,7 +67,7 @@ Bir kural aşağıda açıklanan kısıtlamalar listesine dahilse, bu filtreye e
 
 We define **tracking** as collecting data regarding an individual’s identity or activity across one or more websites. Bu tür veriler kişisel olarak tanımlanamaz olarak kabul edilse bile, yine de izlenmektedir.
 
-**Limitations and Exceptions**
+**Kısıtlamalar ve İstisnalar**
 
 Bir kural aşağıda açıklanan kısıtlamalar listesine dahilse, bu filtreye eklenmeyecektir.
 
@@ -81,11 +81,11 @@ Bir kural aşağıda açıklanan kısıtlamalar listesine dahilse, bu filtreye e
 
 - Bu filtre, "Beğen" ve "Paylaş" düğmeleri, öneri araçları ve daha fazlası gibi sosyal medya pencere öğelerini (üçüncü taraf sitelerde) engeller.
 
-**Limitations and Exceptions**
+**Kısıtlamalar ve İstisnalar**
 
 Bir kural aşağıda açıklanan kısıtlamalar listesine dahilse, bu filtreye eklenmeyecektir.
 
-- Rules that block widgets that are a part of a website’s functionality, such as "Comments," "Embedded Post," "Surveys," or widgets that require authorization via social networks.
+- "Yorumlar", "Gömülü Gönderi", "Anketler" gibi bir sitenin işlevselliğinin bir parçası olan araçları veya sosyal ağlar aracılığıyla yetkilendirme gerektiren araçları engelleyen kurallar.
 - Bir sitenin sosyal ağlardaki topluluklarına bağlantıları engelleyen kurallar.
 - Site işlevselliğiyle ilgili sorunlara neden olan kurallar kaldırılacaktır.
 - Siteye özgü kurallar, yalnızca bir site yeterli trafiğe sahipse eklenecektir. Trafik, açık istatistiklerle (varsa) veya sosyal medyadaki takipçiler gibi başka yollarla belirlenir. Ayda 100 bin ziyareti olan bir site trafiği yeterli kabul edilir. Çok popüler olmayan bir site için bir kural eklemeyi düşüneceğiz, ancak son karar filtre listesi yöneticisine aittir.
@@ -94,26 +94,26 @@ Bir kural aşağıda açıklanan kısıtlamalar listesine dahilse, bu filtreye e
 
 **What will be blocked with this filter?**
 
-- This filter will block obstructions on the page. Bu öğeler reklam değildir, ancak sitenin gerçek içeriğinin görülmesini zorlaştırır ve görmeyi engeller. Such elements include cookie notices, third-party widgets, in-page pop-ups, email subscription forms, banners with special offers, and aggressively placed social media widgets.
+- Bu filtre sayfanın önünü kapatan nesneleri engeller. Bu öğeler reklam değildir, ancak sitenin gerçek içeriğinin görülmesini zorlaştırır ve görmeyi engeller. Bu tür unsurlar arasında çerez bildirimleri, üçüncü taraf araçları, sayfa içi açılır pencereleri, e-posta abonelik formları, özel teklifler içeren afişleri ve agresif bir şekilde yerleştirilmiş sosyal medya araçları yer alır.
 
-**Limitations and Exceptions**
+**Kısıtlamalar ve İstisnalar**
 
 Bir kural aşağıda açıklanan kısıtlamalar listesine dahilse, bu filtreye eklenmeyecektir.
 
-- Rules that block elements that are essential for the website functioning (e.g. authorization forms) will not be blocked even if they satisfy other requirements.
+- Sitenin işleyişi için gerekli olan öğeleri (örn. yetkilendirme formları) engelleyen kurallar, diğer gereksinimleri karşılasalar bile engellenmeyecektir.
 - Site işlevselliğiyle ilgili sorunlara neden olan kurallar kaldırılacaktır.
 - Siteye özgü kurallar, yalnızca bir site yeterli trafiğe sahipse eklenecektir. Trafik, açık istatistiklerle (varsa) veya sosyal medyadaki takipçiler gibi başka yollarla belirlenir. Ayda 100 bin ziyareti olan bir site trafiği yeterli kabul edilir. Çok popüler olmayan bir site için bir kural eklemeyi düşüneceğiz, ancak son karar filtre listesi yöneticisine aittir.
 
-## Filter unblocking search ads and self-promotion
+## Arama motoru reklamları ve öz tanıtımına izin veren filtre
 
-Unlike other filters, this one **unblocks** certain ads. Read more about it in the [article on search ads and self-promotion](../search-ads).
+Diğer filtrelerin aksine, bu filtre belirli reklamların **engelini kaldırır**. [Arama motoru reklamları ve öz tanıtımlar hakkındaki makalede](../search-ads) bu konuda daha fazla bilgi edinin.
 
 **Bu filtre ile nelerin engeli kaldırılacaktır?**
 
-- Search ads (ads that you see among the results when using an online search engine).
-- Website self-promotion (when an ad on a website is promoting this very website or other websites/social media/etc closely related to it).
+- Arama motoru reklamları (çevrimiçi bir arama motorunu kullanırken sonuçlar arasında gördüğünüz reklamlar).
+- Sitenin öz tanıtımları (bir sitesdeki bir reklam, bu siteyi veya onunla yakından ilişkili diğer siteleri/sosyal medyayı, vb. tanıtıyorsa).
 
-**Limitations and Exceptions**
+**Kısıtlamalar ve İstisnalar**
 
 - Site işlevselliğiyle ilgili sorunlara neden olan kurallar kaldırılacaktır.
 - Siteye özgü kurallar, yalnızca bir site yeterli trafiğe sahipse eklenecektir. Trafik, açık istatistiklerle (varsa) veya sosyal medyadaki takipçiler gibi başka yollarla belirlenir. Ayda 100 bin ziyareti olan bir site trafiği yeterli kabul edilir. Çok popüler olmayan bir site için bir kural eklemeyi düşüneceğiz, ancak son karar filtre listesi yöneticisine aittir.
@@ -121,5 +121,5 @@ Unlike other filters, this one **unblocks** certain ads. Read more about it in t
 ## Filtreleme kuralları için kalite gereksinimleri
 
 - Kurallar performans açısından mümkün olduğunca verimli olmalıdır.
-- Exception rules should be as specific as possible in order to avoid unnecessary unblocking.
+- Gereksiz engelin kaldırılmasını önlemek için istisna kuralları mümkün olduğunca spesifik olmalıdır.
 - CSS ve JS enjeksiyon kuralları, mümkün olduğunca nadiren ve yalnızca bunlar olmadan reklamları engellemenin imkansız olduğu durumlarda kullanılmalıdır.

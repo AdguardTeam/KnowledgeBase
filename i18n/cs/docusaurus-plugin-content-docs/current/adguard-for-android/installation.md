@@ -5,72 +5,70 @@ sidebar_position: 2
 
 :::info
 
-Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 ## Požadavky na systém
 
-**OS version:** Android 7.0 or higher
+**Verze OS:** Android 7.0 nebo vyšší
 
 **RAM:** alespoň 2 GB
 
-**Free disk space:** 500 MB
+**Volné místo na disku:** 500 MB
 
 ## Instalace
 
-Většina aplikací pro Android je distribuována prostřednictvím služby Google Play. AdGuard zde však není prezentován, protože společnost Google zakazuje distribuci blokátorů reklam na úrovni sítě prostřednictvím služby Google Play, tj. aplikace, které blokují reklamy v jiných aplikacích. Další informace o restriktivní politice Google najdete v [našem blogu](https://blog.adguard.com/en/google-removes-adguard-android-app-google-play/).
+Většina aplikací pro Android je distribuována prostřednictvím služby Google Play. AdGuard zde však není prezentován, protože společnost Google zakazuje distribuci blokátorů reklam na úrovni sítě prostřednictvím služby Google Play, tj. aplikace, které blokují reklamy v jiných aplikacích. Další informace o restriktivní politice Google najdete v [našem blogu](https://adguard.com/blog/adguard-google-play-removal.html).
 
 Proto můžete AdGuard pro Android nainstalovat pouze ručně. Chcete-li aplikaci používat v mobilním zařízení, musíte provést následující kroky.
 
-1. **Download the app on your device**. Here are a few ways you can do this:
+1. **Stáhněte si aplikaci do zařízení**. Zde je několik způsobů, jak to můžete udělat:
 
-    * head over to [our website](https://adguard.com/adguard-android/overview.html) and tap the *Download* button
-    * start the browser and type in the following URL: [https://adguard.com/apk](https://adguard.com/apk)
-    * or scan this QR code
+    - přejděte na [náš web](https://adguard.com/adguard-android/overview.html) a klepněte na tlačítko *Stáhnout*
+    - spusťte prohlížeč a zadejte následující URL: [https://adguard.com/apk](https://adguard.com/apk)
+    - nebo naskenujte tento QR kód:
 
-    ![QR code *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_qr.png)
+    ![QR code *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst-qr-en-1.png)
 
-2. **Allow installing apps from unknown sources**. Once the file download is complete, tap *Open* in the notification.
+1. **Povolte instalaci aplikací z neznámých zdrojů**. Po dokončení stahování souboru klepněte na *Otevřít* v oznámení.
 
-![Installing apps from unknown sources *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_1.png)
+    ![Installing apps from unknown sources *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_1.png)
 
-A popup will appear. Tap *Settings*, navigate to *Install unknown apps*, and grant permission for the browser you've used to download the file.
+    Zobrazí se vyskakovací okno. Klepněte na *Nastavení*, přejděte na *Instalace neznámých aplikací* a udělte oprávnění pro prohlížeč, který jste použili ke stažení souboru.
 
-![Installing apps from unknown sources *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_3.png)
+    ![Installing apps from unknown sources *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_3.png)
 
-This guide is for Android 8+. If you have an older OS version, before downloading the apk file, go to *Settings* and select *Additional settings* in *System & Device*. Enable *Unknown sources* and tap *OK* in the system warning window.
+1. **Nainstalujte aplikaci**. Jakmile prohlížeč získá potřebná oprávnění, systém se vás zeptá, zda chcete aplikaci AdGuard nainstalovat. Klepněte na *Instalovat*.
 
-3. **Install the app**. Once the browser has obtained the necessary permissions, the system will ask you if you want to install the AdGuard application. Tap *Install*.
+    ![Installing apps from unknown sources *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_4.png)
 
-![Installing apps from unknown sources *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_4.png)
+    Poté budete požádáni o přečtení *licenční smlouvy AdGuard* a *Zásad ochrany osobních údajů*. Můžete se také podílet na vývoji produktů. Za tímto účelem můžete zaškrtnout políčka *Odesílat automatická hlášení o pádech* a *Odesílat technická a interakční data*. Klepněte na *Pokračovat*.
 
-You will then be asked to read AdGuard's *License Agreement* and *Privacy Policy*. Můžete se také podílet na vývoji produktů. To do this, check the boxes for *Send crash reports automatically* and *Send technical and interaction data*. Then tap *Continue*.
+    ![Privacy Policy *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_3.png)
 
-![Zásady ochrany osobních údajů *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_3.png)
+1. **Vytvořte lokální VPN**. Aby bylo možné filtrovat veškerý provoz přímo v zařízení a nesměrovat jej přes vzdálený server, musí AdGuard navázat spojení VPN.
 
-4. **Create a local VPN**. In order to filter all traffic directly on your device and not route it through a remote server, AdGuard needs to establish a VPN connection.
+    ![Create a local VPN *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_2.png)
 
-![Create a local VPN *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_2.png)
+1. **Povolte HTTPS filtrování**. Není to povinná volba, ale doporučujeme ji zapnout, abyste dosáhli nejlepší kvality blokování reklam.
 
-5. **Enable HTTPS filtering**. It is not a mandatory option, however, we advice to turn it on for the best ad-blocking quality.
+    Pokud vaše zařízení používá systém Android 7-9, budete po nastavení lokální VPN vyzváni k instalaci kořenového certifikátu a konfiguraci HTTPS filtrování.
 
-If your device is running Android 7–9, you'll be prompted to install a root certificate and configure HTTPS filtering after the local VPN setup.
+    ![Enable HTTPS filtering on Android 7-9 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/cert_1.jpg)
 
-![Enable HTTPS filtering on Android 7-9 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/cert_1.jpg)
+    Po klepnutí na *Instalovat nyní* se zobrazí výzva k ověření instalace certifikátu pomocí hesla nebo otisku prstu.
 
-After you tap *Install now*, a prompt will appear asking you to authenticate the certificate installation with a password or fingerprint.
+    ![Enable HTTPS filtering on Android 7-9. Step 2 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/cert_2.jpg)
 
-![Enable HTTPS filtering on Android 7-9. Step 2 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/cert_2.jpg)
+    Pokud máte na svém zařízení Android 10+, po vytvoření lokální VPN se vám zobrazí hlavní obrazovka aplikace s panelem nabídek ve spodní části s návrhem na povolení HTTPS filtrování: klepněte na *Povolit* a postupujte podle pokynů na další obrazovce nebo si přečtěte [článek o instalaci certifikátu](solving-problems/manual-certificate.md), kde najdete další informace.
 
-If you have Android 10+ on your device, then after creating a local VPN, you will see the main app screen with a snack bar at the bottom: tap *Enable* and follow the instructions on the next screen.
-
-![Enable HTTPS filtering *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_5.png)
+    ![Enable HTTPS filtering *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_5.png)
 
 ## Odinstalování/přeinstalování AdGuardu
 
-If you need to reinstall AdGuard on your mobile device, first delete it by opening **Settings** and choosing **Apps** (Android 7) or **Apps & notifications** (Android 8+). Vyhledejte **AdGuard** v seznamu nainstalovaných aplikací a stiskněte **Odinstalovat**.
+Pokud potřebujete odinstalovat AdGuard na svém mobilním zařízení, otevřete *Nastavení* a vyberte *Aplikace* (Android 7) nebo *Aplikace a oznámení* (Android 8+). Vyhledejte AdGuard v seznamu nainstalovaných aplikací a stiskněte *Odinstalovat*.
 
-![Přeinstalace AdGuardu *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_4.png)
+![Reinstall AdGuard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_4.png)
 
-Chcete-li aplikaci znovu nainstalovat, zopakujte úkony popsané v části Instalace.
+Chcete-li AdGuard znovu nainstalovat, stačí znovu stáhnout soubor APK a postupovat podle pokynů uvedených v části Instalace. Odinstalace není předem nutná.

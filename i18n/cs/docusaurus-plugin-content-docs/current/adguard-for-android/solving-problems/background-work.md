@@ -5,7 +5,7 @@ sidebar_position: 9
 
 :::info
 
-Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -17,9 +17,9 @@ Informace o zařízeních Asus ještě zdaleka nejsou vyčerpávající, takže 
 
 Hlavní zdroj potenciálních problémů s prací na pozadí v zařízeních Asus je spojen s optimalizační aplikací Power Master. Je předinstalovaná a má poměrně agresivní výchozí nastavení, např. blokování spouštění aplikací a ukončování úloh na pozadí při vypnutí obrazovky. Chcete-li se ujistit, že práce aplikací na pozadí funguje, nastavte následující:
 
-1) Přejděte na **Správce telefonu** → **PowerMaster** → **Nastavení** (nebo **Možnosti spořiče baterie**) → Zrušte zaškrtnutí **Vyčistit v režimu pozastavení**
+1. Přejděte na **Správce telefonu** → **PowerMaster** → **Nastavení** (nebo **Možnosti spořiče baterie**) → Zrušte zaškrtnutí **Vyčistit v režimu pozastavení**
 
-2) Přejděte na **Správce telefonu** → **PowerMaster** → **Nastavení** (nebo **Možnosti spořiče baterie**) → Zrušte zaškrtnutí **Automaticky odmítnout spuštění aplikací**
+1. Přejděte na **Správce telefonu** → **PowerMaster** → **Nastavení** (nebo **Možnosti spořiče baterie**) → Zrušte zaškrtnutí **Automaticky odmítnout spuštění aplikací**
 
 Případně můžete místo úplného zrušení zaškrtnutí pole **Automaticky odmítnout spuštění aplikací** přejít na **Nastavení** → **Možnosti spořiče baterie** → **Správce automatického spuštění** → **AdGuard** a zrušit zaškrtnutí.
 
@@ -31,7 +31,7 @@ Xiaomi (a zejména MIUI) patří mezi nejproblematičtější, pokud jde o prác
 
 Chcete-li aplikaci AdGuard úspěšně spustit na pozadí, proveďte následující kroky:
 
-V **Nastavení** → **Aplikace** → **Správce aplikací** → přejděte dolů a vyhledejte **AdGuard**, nastavte **Automatiské spuštění** na "Zapnuto".
+V **Nastavení** → **Aplikace** → **Správce aplikací** → přejděte dolů a vyhledejte **AdGuard**, nastavte **Automatické spuštění** na "Zapnuto".
 
 ![Nastavení Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
 
@@ -110,12 +110,12 @@ Následující kroky by měly být provedeny na jakémkoli zařízení Xiaomi, k
 Povolte následující:
 
 - **Nastavení** → **Pokročilá nastavení** → **Správce baterie** → nastavte **Plán napájení** na **Výkon**
-- **Nastavení zařízení** → **Pokročilá nastavení** → **Správce baterie** → **Chráněné aplikace** – AdGuard musí mít příznak **Chráněno**
+- **Nastavení zařízení** → **Pokročilá nastavení** → **Správce baterie** → **Chráněné aplikace** — AdGuard musí mít příznak **Chráněno**
 - **Nastavení zařízení** → **Aplikace** → **AdGuard** → **Baterie** → **Energeticky náročné výzvy** a **Po vypnutí obrazovky nechat spuštěno**
 - **Nastavení** → **Další nastavení** → **Baterie a výkon** → **Správa využití baterie aplikacemi** a zde:
 
 1. Přepněte režimy úspory baterie do polohy "Vypnuto"
-2. Vyberte následující možnosti: **Úspora baterie na pozadí** → **Vybrat aplikaci** → **AdGuard** → **Nastavení na pozadí** → **Bez omezení**
+1. Vyberte následující možnosti: **Úspora baterie na pozadí** → **Vybrat aplikaci** → **AdGuard** → **Nastavení na pozadí** → **Bez omezení**
 
 #### Spořič baterie
 
@@ -127,11 +127,11 @@ Chcete-li nastavit práci AdGuardu na pozadí pro zařízení Xiaomi, měli byst
 
 - Klepněte na **Nedávné úkoly** a přejeďte prstem dolů, aby byly *viditelné* možnosti (jak je znázorněno na snímku obrazovky):
 
-![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomirecent.png)
+    ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomirecent.png)
 
 - Klepněte na ikonu **zámku**. Tím zabráníte tomu, aby zařízení Xiaomi automaticky ukončilo AdGuard. Mělo by to vypadat takto:
 
-![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomilocked.png)
+    ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomilocked.png)
 
 - Přejděte na **Baterie**
 
@@ -141,7 +141,7 @@ Chcete-li nastavit práci AdGuardu na pozadí pro zařízení Xiaomi, měli byst
 
 - Nastavte následující **Nastavení na pozadí**:
 
-![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomirest.png)
+    ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomirest.png)
 
 - Přejděte na **Oprávnění**
 
@@ -149,7 +149,7 @@ Chcete-li nastavit práci AdGuardu na pozadí pro zařízení Xiaomi, měli byst
 
 - Ujistěte se, že je pro AdGuard zapnuta funkce automatického spuštění:
 
-![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomiautostart.png)
+    ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomiautostart.png)
 
 ## Samsung
 
@@ -161,39 +161,39 @@ V systému Android 11, Samsung ve výchozím nastavení zabraňuje aplikacím (v
 
 1. Uzamkněte AdGuard v Nedávných aplikacích
 
-- Otevřete **Nedávné aplikace**.
-- Vyhledejte AdGuard.
-- Dlouze stiskněte ikonu AdGuardu.
+    - Otevřete **Nedávné aplikace**.
+    - Vyhledejte AdGuard.
+    - Dlouze stiskněte ikonu AdGuardu.
 
-2. Aby AdGuard správně fungoval:
+1. Aby AdGuard správně fungoval:
 
-Přejděte do **Nastavení** → **Aplikace** → **AdGuard** → **Baterie** → **Optimalizace využití baterie**
+    Přejděte do **Nastavení** → **Aplikace** → **AdGuard** → **Baterie** → **Optimalizace využití baterie**
 
-![Samsung](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/samsung-a11-optimize.png)
+    ![Samsung](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/samsung-a11-optimize.png)
 
-V rozevírací nabídce vyberte **Vše**. Poté v seznamu vyhledejte AdGuard a nastavte jeho stav na **Neoptimalizovat** (u některých modelů může existovat přepínač, který budete muset vypnout).
+    V rozevírací nabídce vyberte **Vše**. Poté v seznamu vyhledejte AdGuard a nastavte jeho stav na **Neoptimalizovat** (u některých modelů může existovat přepínač, který budete muset vypnout).
 
-![Samsung](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/samsung-a11-optimize-2.png)
+    ![Samsung](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/samsung-a11-optimize-2.png)
 
-V některých zařízeních může být příslušné nastavení pojmenováno jinak a umístěno na jiných místech. Jednou z možných cest je:
+    V některých zařízeních může být příslušné nastavení pojmenováno jinak a umístěno na jiných místech. Jednou z možných cest je:
 
-**Nastavení** → **Aplikace** → nabídka (⁝) → **Speciální přístup** → **Optimalizace využití baterie** → Vyhledejte v seznamu AdGuard a zrušte jeho zaškrtnutí
+    **Nastavení** → **Aplikace** → nabídka (⁝) → **Speciální přístup** → **Optimalizace využití baterie** → Vyhledejte v seznamu AdGuard a zrušte jeho zaškrtnutí
 
-3. Vypněte automatickou optimalizaci. K tomu je třeba:
+1. Vypněte automatickou optimalizaci. K tomu je třeba:
 
-Otevřete nabídku **Baterie** → nabídka (⁝) → Vyberte **Automatizace** → Zde vypněte všechna nastavení
+    Otevřete nabídku **Baterie** → nabídka (⁝) → Vyberte **Automatizace** → Zde vypněte všechna nastavení
 
-Přesná cesta se opět může lišit, například na některých zařízeních byste měli přejít na:
+    Přesná cesta se opět může lišit, například na některých zařízeních byste měli přejít na:
 
-**Nastavení** telefonu → **Péče o zařízení** → Klepněte na nabídku se 3 tečkami (⁝) → **Pokročilé** → Vypnout **Automatickou optimalizaci** a **Nastavení optimalizace**
+    **Nastavení** telefonu → **Péče o zařízení** → Klepněte na nabídku se 3 tečkami (⁝) → **Pokročilé** → Vypnout **Automatickou optimalizaci** a **Nastavení optimalizace**
 
-4. Pokud je v telefonu přítomna, vypněte funkci Adaptivní baterie:
+1. Pokud je v telefonu přítomna, vypněte funkci Adaptivní baterie:
 
-Otevřete **Nastavení** telefonu → **Baterie** → **Další nastavení baterie** → vypněte **Adaptivní baterii**
+    Otevřete **Nastavení** telefonu → **Baterie** → **Další nastavení baterie** → vypněte **Adaptivní baterii**
 
-5. Zakažte aplikace v režimu spánku (přesný název tohoto nastavení a cesta k němu se mohou lišit v závislosti na zařízení):
+1. Zakažte aplikace v režimu spánku (přesný název tohoto nastavení a cesta k němu se mohou lišit v závislosti na zařízení):
 
-Otevřete **Nastavení** telefonu → **Baterie** → **Omezení používání na pozadí** → vypněte **Uspávání nepoužívaných aplikací**
+    Otevřete **Nastavení** telefonu → **Baterie** → **Omezení používání na pozadí** → vypněte **Uspávání nepoužívaných aplikací**
 
 ### Android 9 a 10
 
@@ -203,41 +203,41 @@ Otevřete **Nastavení** telefonu → **Baterie** → **Omezení používání n
 
 - Odeberte AdGuard z aplikací v režimu spánku. K tomu je potřeba:
 
-1. Přejděte do **Nastavení telefonu** → **Péče o zařízení**
+    1. Přejděte do **Nastavení telefonu** → **Péče o zařízení**
 
-![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung1en.png)
+        ![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung1en.png)
 
-2. Klepněte na ikonu **Baterie**
+    1. Klepněte na ikonu **Baterie**
 
-![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung2en.png)
+        ![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung2en.png)
 
-3. Klepněte na **nabídku se třemi tečkami** → **Nastavení**
+    1. Klepněte na **nabídku se třemi tečkami** → **Nastavení**
 
-![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung3en.png)
+        ![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung3en.png)
 
-4. Klepněte na **Aplikace v režimu spánku**
+    1. Klepněte na **Aplikace v režimu spánku**
 
-![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung45en.png)
+        ![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung45en.png)
 
-5. **Probuďte** AdGuard za použití ikony koše
+    1. **Probuďte** AdGuard za použití ikony koše
 
-![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung6en.png)
+        ![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung6en.png)
 
 ### Starší zařízení Samsung
 
 U prvních zařízení Samsung není potřeba nastavovat operaci na pozadí. Pokud se ve vašem případě aplikace AdGuard po chvíli zavírá nebo mizí z nedávných úloh, proveďte následující kroky:
 
- - Klepněte na tlačítko **Nedávné úlohy**, klepněte na ikonu **Další nastavení**. Mělo by to vypadat takto:
+- Klepněte na tlačítko **Nedávné úlohy**, klepněte na ikonu **Další nastavení**. Mělo by to vypadat takto:
 
- ![Nastavení Samsung *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/samsungoptions.png)
+ ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_1.png)
 
- - Klepněte na **Uzamknout aplikace**:
+- Klepněte na **Uzamknout aplikace**:
 
- ![Nastavení Samsung *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/samsunglockapps.png)
+ ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_2.png)
 
-  - Klepněte na ikonu zámku
+- Klepněte na ikonu zámku
 
- ![Nastavení Samsung *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/samsunglock.png)
+ ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_3.png)
 
 ## Huawei
 
@@ -249,21 +249,21 @@ Tato funkce může, ale nemusí být dostupná pro všechna zařízení nebo mů
 
 1. Přejděte do **Nastavení** telefonu → **Baterie** → **Spouštění aplikací**
 
-![Huawei *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/huawei1en.png)
+    ![Huawei *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/huawei1en.png)
 
-2. Vypněte **Spravovat vše automaticky**
+1. Vypněte **Spravovat vše automaticky**
 
-![Huawei *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/huawei2en.png)
+    ![Huawei *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/huawei2en.png)
 
-3. Nastavte AdGuard na **Spravovat ručně** a zapněte všechny přepínače.
+1. Nastavte AdGuard na **Spravovat ručně** a zapněte všechny přepínače.
 
-![Huawei *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/huawei3en.png)
+    ![Huawei *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/huawei3en.png)
 
-4. Zakažte **Správce spouštění**, který zabraňuje automatickému spouštění aplikací po zapnutí telefonu.
+1. Zakažte **Správce spouštění**, který zabraňuje automatickému spouštění aplikací po zapnutí telefonu.
 
-Přejděte do **Nastavení** → **Vše** → **Správce spoštění** → přepněte AdGuard do polohy **Vypnuto**
+    Přejděte do **Nastavení** → **Vše** → **Správce spoštění** → přepněte AdGuard do polohy Vypnuto
 
-Pro spolehlivé procesy na pozadí může být také nutné odinstalovat **PowerGenie**, jak je popsáno níže.
+    Pro spolehlivé procesy na pozadí může být také nutné odinstalovat **PowerGenie**, jak je popsáno níže.
 
 ### Zařízení s EMUI 9+ a PowerGenie
 
@@ -275,7 +275,7 @@ V telefonech s EMUI 9+ (Android P+) je k dispozici aplikace PowerGenie, která n
 
 Společnost Huawei je při ukončování aplikací ve svých zařízeních velmi vynalézavá. Kromě všech níže popsaných nestandardních opatření pro správu napájení představili v systému Android Pie aplikaci pro ukončování úloh integrovanou přímo do rozhraní EMUI 9.
 
-Jmenuje se **PowerGenie** a ukončuje všechny aplikace, které nejsou na seznamu povolených. Na jejich předdefinovaný seznam povolených nelze přidávat vlastní aplikace. To znamená, že neexistuje jiný způsob, jak opravit správnou funkčnost aplikací Huawei, než odinstalovat PowerGenie.
+Jmenuje se **PowerGenie** a ukončuje všechny aplikace, které nejsou na seznamu povolených. Na jejich předdefinovaný seznam povolených nelze přidávat vlastní aplikace. To znamená, že neexistuje jiný způsob, jak opravit správnou funkčnost aplikací v Huawei, než odinstalovat PowerGenie.
 
 Bohužel se jedná o systémovou aplikaci, kterou lze plně odinstalovat pouze pomocí ADB (Android Debug Bridge).
 
@@ -289,40 +289,40 @@ Bohužel se jedná o systémovou aplikaci, kterou lze plně odinstalovat pouze p
 
 Není to potvrzeno, ale je možné, že PowerGenie stačí zakázat v **Nastavení telefonu** → **Aplikace**. Pokud je toto nastavení v nastavení vašeho zařízení přítomno, můžete následující kroky přeskočit. Bude však nutné to znovu použít při každém restartu zařízení. Pokud takové nastavení není k dispozici, postupujte podle těchto pokynů:
 
-1) [Nainstalujte ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) do vašeho PC;
+1. [Nainstalujte ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) do vašeho PC;
 
-2) Připojte telefon pomocí datového kabelu;
+1. Připojte telefon pomocí datového kabelu;
 
-3) Povolte [Možnosti pro vývojáře](https://developer.android.com/studio/debug/dev-options.html);
+1. Povolte [Možnosti pro vývojáře](https://developer.android.com/studio/debug/dev-options.html);
 
-4) Povoltee **USB ladění** v možnostech pro vývojáře v telefonu;
+1. Povoltee **USB ladění** v možnostech pro vývojáře v telefonu;
 
-5) V počítači spusťte následující příkazy:
+1. V počítači spusťte následující příkazy:
 
 `adb shell pm uninstall --user 0 com.huawei.powergenie`
 
 `adb shell pm uninstall -k --user 0 com.huawei.android.hwaps`
 
-Pokud se AdGuard stále ukončuje, zkuste také spustit
+If AdGuard keeps getting killed, also try running
 
 `adb shell pm stopservice hwPfwService`
 
-### Zařízení s EMUI 6+ (a některá zařízení s EMUI 5):
+### Zařízení s EMUI 6+ (a některá zařízení s EMUI 5)
 
 - **Nastavení telefonu** → **Pokročilá nastavení** → **Správce baterie** → nastavte **Plán napájení** na **Výkon**;
-- **Nastavení telefonu** → **Pokročilá nastavení** → **Správce baterie** → **Chráněné aplikace** – AdGuard musí mít příznak **Chráněno**;
+- **Nastavení telefonu** → **Pokročilá nastavení** → **Správce baterie** → **Chráněné aplikace** — AdGuard musí mít příznak **Chráněno**;
 - **Nastavení telefonu** → **Aplikace** → **Vaše aplikace** → **Baterie** → **Energeticky náročné výzvy** `[uncheck]` a **Po vypnutí obrazovky neuspávat** `[check]`;
 - **Nastavení telefonu** → **Aplikace** → **Pokročilé (dole)** → **Ignorovat optimalizaci** → Klikněte na Povoleno → **Všechny aplikace** → Vyhledejte AdGuard ze seznamu a nastavte na **Povolit**.
 
-#### Huawei P9 Plus:
+#### Huawei P9 Plus
 
 Otevřete nastavení zařízení → **Aplikace** → **Nastavení** → **Speciální přístup** → vyberte **Ignorovat optimalizace baterie** → a pro AdGuard vyberte **Povolit**.
 
-### Huawei P20, Huawei Honor 9 Lite a Huawei Mate 9 Pro:
+### Huawei P20, Huawei Honor 9 Lite a Huawei Mate 9 Pro
 
 Otevřete nastavení zařízení → **Baterie** → **Spouštění aplikací ** nastavte AdGuard na **Spravovat ručně** a zkontrolujte, zda je vše zapnuto.
 
-### Huawei P20, Huawei P20 Lite, Huawei Mate 10:
+### Huawei P20, Huawei P20 Lite, Huawei Mate 10
 
 **Nastavení zařízení** → **Baterie** → **Spouštění aplikací** → nastavte AdGuard na **Spravovat ručně** a zkontrolujte, zda je vše zapnuto. Pro spolehlivé procesy na pozadí může být také nutné odinstalovat PowerGenie, jak je popsáno výše.
 
@@ -330,13 +330,13 @@ Otevřete nastavení zařízení → **Baterie** → **Spouštění aplikací **
 
 Stará zařízení Huawei se nastavují nejsnadněji, stačí provést dva jednoduché kroky k uzamčení AdGuardu na pozadí, aby nebyl ukončen spořičem baterie nebo procesem ukončování na pozadí.
 
-  - Klepněte na tlačítko **Nedávné úlohy**:
+- Klepněte na tlačítko **Nedávné úlohy**:
 
-  ![Nedávné aplikace Huawei *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweirecentapps.jpeg)
+    ![Huawei recent apps *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweirecentapps.jpeg)
 
-  - Klepněte na ikonu zámku:
+- Klepněte na ikonu zámku:
 
- ![Zámek Huawei *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweilock.jpeg)
+    ![Huawei lock *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweilock.jpeg)
 
 Kromě toho byste pro efektivnější nastavení práce AdGuardu na pozadí měli otevřít nastavení zařízení a provést následující kroky:
 
@@ -359,46 +359,47 @@ Zařízení Nokia se systémem Android 9+ mají **vypnutý spořič energie Even
 
 ### Nokia 1 (Android Go)
 
-1) [Nainstalujte ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) do vašeho PC;
+1. [Nainstalujte ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) do vašeho PC;
 
-2) Připojte telefon pomocí datového kabelu;
+1. Připojte telefon pomocí datového kabelu;
 
-3) Povolte [Možnosti pro vývojáře](https://developer.android.com/studio/debug/dev-options.html);
+1. Povolte [Možnosti pro vývojáře](https://developer.android.com/studio/debug/dev-options.html);
 
-4) Povoltee **USB ladění** v možnostech pro vývojáře v telefonu;
+1. Povoltee **USB ladění** v možnostech pro vývojáře v telefonu;
 
-5) Odinstalujte balíček **com.evenwell.emm** pomocí následujících příkazů adb:
+1. Odinstalujte balíček **com.evenwell.emm** pomocí následujících příkazů adb:
 
-`adb shell` `pm uninstall --user 0 com.evenwell.emm`
+    `adb shell` `pm uninstall --user 0 com.evenwell.emm`
 
 ### Nokia 3.1 a 5.1
 
 V těchto zařízeních je k dispozici nástroj **DuraSpeed**, který ukončuje všechny aplikace na pozadí. Nelze ho odinstalovat ani zakázat běžnými prostředky. Tyto akce vyžadují ADB, a i když to zakážete, DuraSpeed se při restartu znovu aktivuje. K automatickému vypnutí DuraSpeed potřebujete aplikaci Tasker, například [MacroDroid](https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid).
 
-1) [Nainstalujte ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) do vašeho PC;
+1. [Nainstalujte ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) do vašeho PC;
 
-2) Připojte telefon pomocí datového kabelu;
+1. Připojte telefon pomocí datového kabelu;
 
-3) Povolte [Možnosti pro vývojáře](https://developer.android.com/studio/debug/dev-options.html);
+1. Povolte [Možnosti pro vývojáře](https://developer.android.com/studio/debug/dev-options.html);
 
-4) Povoltee **USB ladění** v možnostech pro vývojáře v telefonu;
+1. Povoltee **USB ladění** v možnostech pro vývojáře v telefonu;
 
-5) Zadáním tohoto příkazu umožněte aplikaci MacroDroid (nebo jiné aplikaci pro automatizaci) zapisovat do globálního úložiště nastavení:
+1. Zadáním tohoto příkazu umožněte aplikaci MacroDroid (nebo jiné aplikaci pro automatizaci) zapisovat do globálního úložiště nastavení:
 
-`adb shell pm grant com.arlosoft.macrodroid android.permission.WRITE_SECURE_SETTINGS`
+    `adb shell pm grant com.arlosoft.macrodroid android.permission.WRITE_SECURE_SETTINGS`
 
-6) Vytvořte úlohu spouštěnou při **Startu zařízení**, která provede následující:
+1. Vytvořte úlohu spouštěnou při **Startu zařízení**, která provede následující:
 
-- Nastavení systému: typ **Obecné**, název `setting.duraspeed.enabled`, hodnota **-1**
-- Nastavení systému: typ **Systém**, název `setting.duraspeed.enabled`, hodnota **-1**
-- Nastavení systému: typ **Obecné**, název `setting.duraspeed.enabled`, hodnota **0**
-- Nastavení systému: typ **Systém**, název `setting.duraspeed.enabled`, hodnota **0**
+    - Nastavení systému: typ **Obecné**, název `setting.duraspeed.enabled`, hodnota **-1**
+    - Nastavení systému: typ **Systém**, název `setting.duraspeed.enabled`, hodnota **-1**
+    - Nastavení systému: typ **Obecné**, název `setting.duraspeed.enabled`, hodnota **0**
+    - Nastavení systému: typ **Systém**, název `setting.duraspeed.enabled`, hodnota **0**
 
-![Nokia tasker *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/nokia_tasker.png)
+    ![Nokia tasker *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/nokia_tasker.png)
 
-:::note
+    :::note
 
-Potřebujete nastavit typ **Obecný** i **Systém**. Na snímku obrazovky je jako příklad zobrazen pouze obecný.
+    Potřebujete nastavit typ **Obecný** i **Systém**. Na snímku obrazovky je jako příklad zobrazen pouze obecný.
+
 
 :::
 
@@ -414,17 +415,17 @@ Od této chvíle by měl AdGuard fungovat normálně a používat standardní op
 
 Alternativní, trvalejší řešení pro technicky zdatnější uživatele:
 
-1) [Nainstalujte ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) do vašeho PC;
+1. [Nainstalujte ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) do vašeho PC;
 
-2) Připojte telefon pomocí datového kabelu;
+1. Připojte telefon pomocí datového kabelu;
 
-3) Povolte [Možnosti pro vývojáře](https://developer.android.com/studio/debug/dev-options.html);
+1. Povolte [Možnosti pro vývojáře](https://developer.android.com/studio/debug/dev-options.html);
 
-4) Povoltee **USB ladění** v možnostech pro vývojáře v telefonu;
+1. Povolte **USB ladění** v možnostech pro vývojáře v telefonu;
 
-5) Odinstalujte balíček **com.evenwell.powersaving.g3** pomocí následujících příkazů adb:
+1. Odinstalujte balíček **com.evenwell.powersaving.g3** pomocí následujících příkazů adb:
 
-`adb shell` `pm uninstall --user 0 com.evenwell.powersaving.g3`
+    `adb shell` `pm uninstall --user 0 com.evenwell.powersaving.g3`
 
 ## Oppo
 
@@ -444,23 +445,23 @@ Nejproblematičtější jsou zařízení s operačním systémem OxygenOS, kter�
 
 ### Uzamčení aplikace
 
- - Přejděte na **Nastavení**
+- Přejděte na **Nastavení**
 
- - **Baterie** → **Optimalizace baterie**
+- **Baterie** → **Optimalizace baterie**
 
- - Vyhledejte AdGuard
+- Vyhledejte AdGuard
 
- - Klepněte na něj a vyberte možnost **Neoptimalizovat**
+- Klepněte na něj a vyberte možnost **Neoptimalizovat**
 
- - Klepněte na **Hotovo** pro uložení
+- Klepněte na **Hotovo** pro uložení
 
- - Otevřete nabídku nedávných aplikací (jak je znázorněno na tomto snímku obrazovky):
+- Otevřete nabídku nedávných aplikací (jak je znázorněno na tomto snímku obrazovky):
 
- ![Onepluslock *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/android/onepluslock.png)
+    ![Onepluslock *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/android/onepluslock.png)
 
 - Uzamkněte aplikaci AdGuard:
 
-![Oneplusdots *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/android/oneplusdots.png)
+    ![Oneplusdots *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/android/oneplusdots.png)
 
 :::caution
 
@@ -470,9 +471,9 @@ Na některých telefonech OnePlus existuje také funkce nazvaná Automatické sp
 
 ### Optimalizace baterie
 
- - Otevřete nastavení zařízení → **Baterie** → **Optimalizace baterie** → přepněte na **Všechny aplikace** seznam (menu nahoře) → vyberte AdGuard → a aktivujte **Neoptimalizovat**
+- Otevřete nastavení zařízení → **Baterie** → **Optimalizace baterie** → přepněte na **Všechny aplikace** seznam (menu nahoře) → vyberte AdGuard → a aktivujte **Neoptimalizovat**
 
- - Otevřete nastavení zařízení → **Baterie** → **Optimalizace baterie** → (⁝) nabídka se třemi tečkami → **Pokročilá optimalizace** → Zakázat hloubkovou optimalizaci
+- Otevřete nastavení zařízení → **Baterie** → **Optimalizace baterie** → (⁝) nabídka se třemi tečkami → **Pokročilá optimalizace** → Zakázat hloubkovou optimalizaci
 
 ### Automatické spouštění aplikací
 
@@ -482,7 +483,7 @@ Funkce automatického spouštění aplikací (v některých OnePlus telefonech) 
 
 Pro OnePlus 6 a novější:
 
-- Otevřete **Nastavení systému** → **Baterie** → **Optomalizace baterie** → (⁝) nabídka se třemi tečkami → **Pokročilá optimalizace**i
+- Otevřete **Nastavení systému** → **Baterie** → **Optimalizace baterie** → (⁝) nabídka se třemi tečkami → **Pokročilá optimalizace**
 - Vypněte **Hloubkovou optimalizaci** / **Adaptivní baterii**
 - Vypněte **Optimalizaci v režimu spánku**. OnePlus se snaží zjistit, kdy obvykle spíte a v těchto chvílích vypne síťová připojení telefonu. Toto nastavení zabrání doručování okamžitých oznámení.
 
@@ -502,7 +503,7 @@ Společnost Sony byla prvním vývojářem mobilního operačního systému, kte
 
 Přejděte do **Nastavení** → **Baterie** → vypněte **režim STAMINA**
 
-![Režim Sony Stamina *mobil](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/sony_stamina.png)
+![Sony Stamina mode *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/sony_stamina.png)
 
 V systému Android 11+ je na stejné obrazovce s režimem STAMINA nastavení s názvem **Adaptivní baterie**, to byste měli také vypnout.
 
@@ -522,14 +523,14 @@ Zařízení Wiko jsou problematická z hlediska nestandardních optimalizací pr
 
 Čistý operační systém Android obvykle není v konfliktu s aplikacemi pracujícími na pozadí, ale pokud se potýkáte s nějakými problémy, musíte zapnout režim **Trvalá síť VPN**.
 
- - Přejděte do **Nastavení** → **Síť a Internet**
+- Přejděte do **Nastavení** → **Síť a Internet**
 
- ![Stocknetwork *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/stocknetwork.png)
+    ![Stocknetwork *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/stocknetwork.png)
 
- - Klepněte na **VPN** a vyberte **AdGuard**
+- Klepněte na **VPN** a vyberte **AdGuard**
 
- ![Stockvpn *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/stockvpn.png)
+    ![Stockvpn *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/stockvpn.png)
 
- - Nastavte režim **Trvalá síť VPN**
+- Nastavte režim **Trvalá síť VPN**
 
- ![Stockadguard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/stockadguard.png)
+    ![Stockadguard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/stockadguard.png)

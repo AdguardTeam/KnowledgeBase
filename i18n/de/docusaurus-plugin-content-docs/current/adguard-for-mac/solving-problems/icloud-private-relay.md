@@ -5,7 +5,7 @@ sidebar_position: 7
 
 :::info
 
-This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Dieser Artikel behandelt AdGuard für Mac, einen multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -26,6 +26,7 @@ Die Netzwerkerweiterungs-API hat eine VPN-ähnliche Konfiguration mit einer List
 Auf Monterey wurde iCloud Private Relay eingeführt. Datenschutzfunktionen der Mail-App verwenden auch private Relay-Server.
 
 Infolgedessen kann AdGuard nicht mit iCloud Private Relay und den Datenschutzfunktionen der Mail-App zusammenarbeiten:
+
 1. iCloud Private Relay wird auf Verbindungen auf Bibliotheksebene angewendet – bevor sie die Socket-Ebene erreichen, auf der AdGuard arbeitet.
 2. iCloud Private Relay verwendet QUIC, das AdGuard in gefilterten Apps nicht filtern kann, da die HTTP/3-Filterung noch nicht verfügbar ist.
 3. Da AdGuard QUIC blockiert, einschließlich iCloud Private Relay-Datenverkehr, ist eine Anzeigenblockierung ansonsten nicht möglich.

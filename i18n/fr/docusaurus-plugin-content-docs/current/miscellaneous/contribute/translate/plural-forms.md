@@ -12,11 +12,11 @@ Nous vous recommandons vivement de lire attentivement cet article pour en savoir
 
 Les substantifs dans les langues différentes peuvent avoir plusieurs formes de mots au pluriel. Leur utilisation dépend du nombre de choses dont vous parlez.
 
-Par exemple, les mots anglais ont deux formes de mots lorsqu'ils parlent de quelque chose au singulier, comme *'one star'*, et au pluriel – *'two stars'*. Peu importe que vous disiez cinq, vingt-six ou même cinq cent trente-deux 'stars' (étoiles), la terminaison « s » restera la même. Mais certaines langues ne peuvent contenir qu'une ou plusieurs formes plurielles.
+For instance, English words have two word forms when speaking about something in the singular, like *'one star'*, and in the plural — *'two stars'*. It doesn’t matter if you say five, twenty six or even five hundred thirty two stars — the ending 's' will remain the same. Mais certaines langues ne peuvent contenir qu'une ou plusieurs formes plurielles.
 
-Contrairement à l'anglais, la langue polonaise a trois formes plurielles de noms. L'une d'entre elles est utilisée pour parler de quelque chose au singulier, une autre forme est utilisée au pluriel, mais avec des nombres se terminant par 2-4, à l'exclusion de 12-14, et la troisième forme - pour les mots avec d'autres nombres devant eux.
+Contrairement à l'anglais, la langue polonaise a trois formes plurielles de noms. One of them is used when speaking about something in the singular, another form is used in the plural but with numbers ending in 2-4, excluding 12-14, and the third form — for words with other numbers in front of them.
 
-Jetons un coup d'œil à cette image. Vous pouvez voir ici les groupes de chiffres qui déterminent la forme d'un mot lorsqu'on se trouve en face de lui.
+Let’s take a look at this picture. Vous pouvez voir ici les groupes de chiffres qui déterminent la forme d'un mot lorsqu'on se trouve en face de lui.
 
 ![Polonais](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
@@ -94,7 +94,7 @@ Soyez attentifs pendant la traduction de ces chaînes et quand vous les approuve
 
 Il s'agit du type de chaînes AdGuard le plus compliqué qui est principalement utilisé dans le projet `AdGuard Websites`.
 
-Soyez attentif à la présence d'une barre verticale entre les phrases et des espaces réservés **%count%** dans les phrases originales - cela vous aidera à identifier les phrases pour lesquelles les traductions ont besoin de l'utilisation du pluriel.
+Pay close attention to a vertical bar sign between the sentences and **%count%** placeholders in original phrases — this will help you identify phrases where translations require the use of plural forms.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/plurals_site.png)
 
@@ -108,9 +108,9 @@ Pour en revenir à l'exemple, comme la langue anglaise ne comprend que deux form
 
 `Standard license for *%count%* computer | Standard license for *%count%* computers`
 
-où **modèle 1** – Standard license for *%count%* computer,
+where **template 1** is Standard license for *%count%* computer,
 
-et **modèle 2** – Standard license for *%count%* computers
+and **template 2** is Standard license for *%count%* computers
 
 Une autre chose importante à laquelle vous devriez prêter attention c'est les espaces réservés **%count%** qui, comme d'habitude, se placent avant les mots qu'ils définissent. De différents nombres apparaîtront ici au lieu de **%count%**, en fonction des modèles choisis.
 
@@ -145,12 +145,12 @@ Alors que les trois premiers types de chaînes sont plus ou moins faciles à ré
 
 Encore une fois : si vous rencontrez une phrase originale comportant deux éléments importants : **le signe de la barre verticale** et **%count%** les espaces réservés, veuillez faire ce qui suit :
 
-+ Référez-vous à la règle du pluriel d’une langue dans laquelle vous traduisez ;
+- Référez-vous à la règle du pluriel d’une langue dans laquelle vous traduisez ;
 
-The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms – two templates in translations; five plural forms – five templates, etc.
+The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms — two templates in translations; five plural forms — five templates, etc.
 
-+ N'oubliez pas d'utiliser le signe de la barre verticale entre les modèles, comme il est représenté dans les chaînes originales ;
+- N'oubliez pas d'utiliser le signe de la barre verticale entre les modèles, comme il est représenté dans les chaînes originales ;
 
-+ Ne traduisez pas, ne remplissez pas et ne supprimez pas les espaces réservés **%count%**.
+- Ne traduisez pas, ne remplissez pas et ne supprimez pas les espaces réservés **%count%**.
 
 By following these simple rules you will help AdGuard developers avoid a lot of unnecessary complications during the localization process.

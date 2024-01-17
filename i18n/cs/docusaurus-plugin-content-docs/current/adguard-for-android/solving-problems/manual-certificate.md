@@ -1,31 +1,42 @@
 ---
-title: Problémy s instalací certifikátu na zařízeních se systémem Android 11+
+title: Instalace certifikátu na zařízeních se systémem Android 11+
 sidebar_position: 12
 ---
 
 :::info
 
-Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-Aby bylo možné filtrovat provoz HTTPS (což je velmi důležité, protože většina reklam používá HTTPS), musí AdGuard nainstalovat certifikát do uživatelského úložiště vašeho zařízení. Ve starších verzích operačního systému Android se to provádělo automaticky, ale v Androidu 11 a novějších verzích jej uživatelé musí [nainstalovat ručně](../../overview#https-filtering).
+Aby bylo možné [filtrovat provoz HTTPS](/general/https-filtering/what-is-https-filtering.md) (což je velmi důležité, protože většina reklam používá HTTPS), musí AdGuard nainstalovat certifikát do uživatelského úložiště vašeho zařízení. Ve starších verzích operačního systému Android se to provádělo automaticky, ale v Androidu 11 a novějších verzích jej uživatelé musí nainstalovat ručně.
 
-![Certifikát *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/Android/3-5/cert-en.gif)
+![Certificate *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/g.gif)
+
+Certifikát AdGuardu nainstalujete podle následujících kroků:
+
+1. Když uvidíte oznámení *HTTPS filtrování je vypnuto*, klepněte na *Zapnout*.
+
+1. Poté se zobrazí tři obrazovky s vysvětlením:
+    - Proč filtrovat HTTPS provoz
+    - Bezpečnost tohoto procesu filtrování
+    - Nezbytnost AdGuard certifikátu
+
+    Postupně klepněte na těchto obrazovkách na *Další* → *Další* → *Uložit certifikát*.
+
+1. Klepněte na *Uložit* v dolní části otevřené složky *Stáhnout*.
+
+1. Po uložení klepněte na *Otevřít nastavení*, přejděte na *Šifrování a ověření* a poté vyberte *Nainstalovat certifikát*.
+
+1. Může se zobrazit varování. Pokud ano, klepněte na *Přesto nainstalovat*. Ze seznamu vyberte soubor s AdGuard certifikátem.
+
+Vše je nastaveno! Jakmile je certifikát úspěšně nainstalován, zapnuli jste HTTPS filtrování.
+
+Upozorňujeme, že uvedené kroky jsou provedeny na smartphonu Google Pixel 4. Pokud používáte jiné zařízení se systémem Android, mohou se přesné názvy nabídek nebo možností lišit. Pro snadnější navigaci zvažte vyhledání certifikátu přístupem do nastavení zařízení a zadáním "certificate" nebo "credentials" do vyhledávacího řádku.
 
 Pokud se během ruční instalace certifikátu vyskytnou problémy (například jste certifikát nainstalovali, ale aplikace jej stále ignoruje), níže naleznete možná řešení.
 
-## Instalace certifikátu do *Zabezpečené složky*
+1. Restartujte AdGuard.
+2. Zkuste nainstalovat správný certifikát (AdGuard Personal CA) ještě jednou.
 
-Pokud používáte [ *Zabezpečenou složku* ve vašem zařízení Android](https://www.samsung.com/uk/support/mobile-devices/what-is-the-secure-folder-and-how-do-i-use-it/) (to platí hlavně pro zařízení Samsung), můžete při instalaci certifikátu HTTPS narazit na určité potíže. Jde o to, že *Zabezpečená složka* má vlastní úložiště, kde jsou uloženy certifikáty. Pokud vše provedete podle pokynů [popsaných zde](../../overview#https-filtering), certifikát se nainstaluje do hlavního úložiště a nehraje pro váš blokátor reklam v zabezpečené složce *žádnou roli*. Chcete-li tedy tento problém vyřešit a nainstalovat certifikát pro AdGuard pro Android do úložiště *Zabezpečené složky*, postupujte podle tohoto návodu:
-
-
-1. Po instalaci aplikace a připojení k síti VPN klepněte na *Zapnout* vedle zprávy *Filtrování HTTPS je vypnuto*.
-2. Klepněte na *Další* → *Další* → *Uložit nyní* → *Povolit*.
-3. Certifikát uložte (v této fázi jej můžete přejmenovat, abyste jej snáze našli).
-4. Po zobrazení obrazovky *Jak nainstalovat certifikát?* NEKLEPEJTE na položku *Otevřít nastavení*.
-5. Minimalizujte aplikaci a přejděte do zabezpečené složky.
-6. Klepněte na menu se třemi tečkami a přejděte na další nastavení zabezpečení.
-7. Klepněte na *Nainstalovat z úložiště* → *CA Certifikát* → *Přesto nainstalovat* → zadejte gesto/heslo/otisk prstu → vyhledejte uložený certifikát a vyberte jej.
-8. Vraťte se do aplikace AdGuard a zavřete obrazovku "Jak nainstalovat certifikát?" klepnutím na tlačítko s křížkem.
-9. Hotovo! Certifikát byl nainstalován.
+Pokud přesto narazíte na problém a certifikát se vám nepodaří nainstalovat, kontaktujte náš tým podpory na adrese support@adguard.com.

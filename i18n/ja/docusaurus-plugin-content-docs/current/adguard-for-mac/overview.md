@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Mac」について書いています。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -46,11 +46,12 @@ Filters are the main driving force behind the Ad blocker module. To understand h
 Some filter lists (AdGuard’s Base filter, Annoyances filter, EasyList, etc.) are pre-installed, while other specific ones, adapted to your preferences, can be downloaded additionally and added to your program.
 
 Aside from the more general and universally applicable filters (like Base filter), AdGuard provides an extensive quantity of filters for every occasion:
-* filters aimed at tracking prevention (like Tracking Protection filter),
-* language-specific ad filters that block content in a selected language,
-* Social media filter that removes "Like" and "Share" buttons,
-* Annoyances filter for cookie warnings, in-page pop-ups and others of the same ilk,
-* and even a filter that unblocks some ads instead of blocking them — Filter for search ads and self-promotions.
+
+- filters aimed at tracking prevention (like Tracking Protection filter),
+- language-specific ad filters that block content in a selected language,
+- Social media filter that removes "Like" and "Share" buttons,
+- Annoyances filter for cookie warnings, in-page pop-ups and others of the same ilk,
+- and even a filter that unblocks some ads instead of blocking them — Filter for search ads and self-promotions.
 
 AdGuard filters are automatically updated. Our developers create them all based on user feedback received. You can always help other AdGuard users (and yourself, in perspective) by sending us reports right from the app's Assistant (it's really handy, we'll tell you more about the Assistant further on), or from the [website](https://agrd.io/report). If you wish to know more about AdGuard filters, here is [some info](/general/ad-filtering/adguard-filters).
 
@@ -66,7 +67,7 @@ Another vital part of the Ad Blocker module are its User rules. If you have some
 
 DNS filtering is one of the most useful features, thanks to which all your DNS traffic is encrypted. But if you're using the default DNS server provided by your ISP, your DNS traffic is likely not encrypted and vulnerable to snooping and hijacking.
 
-In the DNS panel you can select the DNS servers from known DNS providers or even add custom DNS servers. Also you can add domains to DNS blocklist or allowlist and add complicated rules using DNS rules syntax. Finally, you can [add DNS filters of your choice](https://filterlists.com).
+In the DNS panel you can select the DNS servers from known DNS providers or even add custom DNS servers. Also you can add domains to DNS blocklist or allowlist and add complicated rules using DNS rule syntax. Finally, you can [add DNS filters of your choice](https://filterlists.com).
 
 ## ステルスモード
 
@@ -102,7 +103,7 @@ AdGuard Browser Assistant’s primary function is to manage filtering directly f
 
 ![Assistant popup menu *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/safari_assistant_pop-up_menu.jpg)
 
-You will be prompted to install the Browser Assistant for your default browser when you first install AdGuard (during the onboarding process). If you missed it, you can [download it for any browser](https://adguard.com/en/adguard-assistant/overview.html) at any time.
+You will be prompted to install the Browser Assistant for your default browser when you first install AdGuard (during the onboarding process). If you missed it, you can [download it for any browser](https://adguard.com/adguard-assistant/overview.html) at any time.
 
 ## Extensions
 

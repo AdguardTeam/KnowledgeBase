@@ -1,13 +1,13 @@
 ---
-title: Documentation for admins
+title: Yöneticiler için belgeler
 sidebar_position: 5
 ---
 
-This page describes the features and details of AdGuard’s central management of policies and preferences.
+Bu sayfada AdGuard'ın politika ve tercihlere ilişkin merkezi yönetiminin özellikleri ve ayrıntıları açıklanmaktadır.
 
 ## 1. MSI'ı indirin {#msi-download}
 
-[AdGuard MSI'yı](https://cdn.adtidy.org/distr/windows/AdGuard.msi) indirin.
+[AdGuard MSI'yı](https://static.adtidy.org/windows/setup.msi) indirin.
 
 ## 2. Ağınız için ayarları yapılandırın {#settings-configuring}
 
@@ -27,16 +27,20 @@ Otherwise, you can run the MSI on the target machine directly (and silently) wit
 
 If you need to roll out an update, use this command: `Msiexec /q /i AdGuard.msi REINSTALL=ALL REINSTALLMODE=vomus`
 
-**Please note, that you must run these commands with admin privileges.**
+:::not
 
-If you want to install AdGuard on a Windows 7 computer, make sure that it has .NET 4 Client Profile installed: https://www.microsoft.com/en-us/download/details.aspx?id=24872
+You must run these commands with admin privileges.
 
-:::info
+:::
 
-Automatic updates are disabled when you install AdGuard for Windows from MSI. If you want to allow updates for a user (which is not recommended because centralized updates will become impossible), set the value of the `AllowCheckUpdates` parameter for the `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` key to `YES` (case insensitive). In this case automatic updates will be allowed, any other value or no value for this parameter disables automatic updates.
+AdGuard'ı Windows 7 yüklü bir bilgisayara kurmak istiyorsanız, .NET 4 İstemci Profilinin kurulu olduğundan emin olun: https://www.microsoft.com/en-us/download/details.aspx?id=24872
 
-:::note
+:::bilgi
+
+MSI'dan Windows için AdGuard'ı yüklediğinizde otomatik güncellemeler devre dışı bırakılır. If you want to allow updates for a user (which is not recommended because centralized updates will become impossible), set the value of the `AllowCheckUpdates` parameter for the `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` key to `YES` (case insensitive). In this case automatic updates will be allowed, any other value or no value for this parameter disables automatic updates.
+
+:::not
 
 ## 5. Test your installation {#installation-test}
 
-On a target machine, launch AdGuard. Open the license screen to check that it uses the one you've set. You might need to click "Refresh status" to make AdGuard validate the license key.
+Hedef makinede AdGuard'ı başlatın. Ayarladığınız lisansı kullanıp kullanmadığını kontrol etmek için lisans ekranını açın. AdGuard'ın lisans anahtarını doğrulamasını sağlamak için "Durumu yenile" öğesine tıklamanız gerekebilir.

@@ -5,9 +5,9 @@ sidebar_position: 2
 
 Masaüstü AdGuard uygulamaları (Windows için AdGuard ve Mac için AdGuard) proxy olarak kullanılabilir. Bu, diğer cihazların trafiğini (tamamen veya belirli uygulamaların/tarayıcıların trafiğini) AdGuard üzerinden yönlendirebileceğiniz anlamına gelir.
 
-:::note
+:::not
 
-These devices must be in the same network as the PC or Mac on which AdGuard is installed.
+Bu cihazlar, AdGuard'ın kurulu olduğu PC veya Mac ile aynı ağda olmalıdır.
 
 :::
 
@@ -21,25 +21,25 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 1. AdGuard'ın kurulu olduğu masaüstü bilgisayarınızın IP adresini not edin.
 
-2. AdGuard'ın korumasının etkinleştirildiğinden emin olun. Then check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings.
+2. AdGuard'ın korumasının etkinleştirildiğinden emin olun. Ardından, ayarlarının **Ağ** sekmesinde **AdGuard'ı HTTP proxy olarak kullan** kutusunu işaretleyin.
 
 3. AdGuard ile aynı cihazda herhangi bir tarayıcı kullanarak şu bağlantıyı takip edin: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
 4. **İndir** düğmesine tıklayın.
 
-5. Transfer the downloaded **cert.cer** file to the device which traffic you want to route through AdGuard.
+5. İndirdiğiniz **cert.cer** dosyasını AdGuard üzerinden trafiği yönlendirmek istediğiniz cihaza aktarın.
 
-6. On that device, press the **Win** button, type `Manage computer certificates` and press **Enter**.
+6. Bu cihazda **Win** düğmesine basın, `Bilgisayar sertifikalarını yönetin` yazın ve **Enter** düğmesine basın.
 
 7. On the *Certificates - Local Computer* page, find the *Trusted Root Certification* → *Certificates* folder.
 
-8. Right-click the *Certificates* folder and click **All Tasks** → **Import**.
+8. *Sertifikalar* klasörüne sağ tıklayın ve **Tüm Görevler** → **Al** öğesine tıklayın.
 
-9. On the *Certificate Import Wizard* page, click **Next**.
+9. *Sertifika Alma Sihirbazı* sayfasında, **Sonraki** öğesine tıklayın.
 
 10. Sertifikayı içe aktarmak için **Gözat** öğesine tıklayın.
 
-11. Navigate to the **cert.cer** certificate file, select it, then click **Open**.
+11. **cert.cer** sertifika dosyasına gidin, dosyayı seçin ve ardından **Aç** öğesine tıklayın.
 
 12. **Sonraki** öğesine tıklayın.
 
@@ -49,7 +49,7 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 15. **Bitir** öğesine tıklayın.
 
-16. Press the **Win** key, then open **Settings**.
+16. **Win** tuşuna basın, ardından **Ayarlar** öğesini açın.
 
 17. Select **Network & Internet** → **Proxy**.
 
@@ -71,7 +71,7 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 4. **İndir** düğmesine tıklayın.
 
-5. Transfer the downloaded **cert.cer** file to the device which traffic you want to route through AdGuard.
+5. İndirdiğiniz **cert.cer** dosyasını AdGuard üzerinden trafiği yönlendirmek istediğiniz cihaza aktarın.
 
 6. İndirilen sertifika dosyasına çift tıklayın.
 
@@ -97,13 +97,13 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 1. AdGuard'ın kurulu olduğu masaüstü bilgisayarınızın IP adresini not edin.
 
-2. AdGuard'ın korumasının etkinleştirildiğinden emin olun. Then check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings.
+2. AdGuard'ın korumasının etkinleştirildiğinden emin olun. Ardından, ayarlarının **Ağ** sekmesinde **AdGuard'ı HTTP proxy olarak kullan** kutusunu işaretleyin.
 
 3. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
 4. **İndir** düğmesine tıklayın.
 
-5. Transfer the downloaded **cert.cer** file to the device which traffic you want to route through AdGuard.
+5. İndirdiğiniz **cert.cer** dosyasını AdGuard üzerinden trafiği yönlendirmek istediğiniz cihaza aktarın.
 
 6. Locate and tap the previously downloaded **cert.cer** certificate to open the file.
 
@@ -117,13 +117,13 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 1. AdGuard'ın kurulu olduğu masaüstü bilgisayarınızın IP adresini not edin.
 
-2. AdGuard'ın korumasının etkinleştirildiğinden emin olun. Then check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings.
+2. AdGuard'ın korumasının etkinleştirildiğinden emin olun. Ardından, ayarlarının **Ağ** sekmesinde **AdGuard'ı HTTP proxy olarak kullan** kutusunu işaretleyin.
 
 3. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
 4. **İndir** düğmesine tıklayın.
 
-5. Transfer the downloaded **cert.cer** file to the device which traffic you want to route through AdGuard.
+5. İndirdiğiniz **cert.cer** dosyasını AdGuard üzerinden trafiği yönlendirmek istediğiniz cihaza aktarın.
 
 6. Open **Settings** → **Security** → **Encryption & Credentials** → **Install a certificate**. Android devices do not trust certificates by default so there will be a warning when you choose **CA certificate**. **Yine de yükle** öğesine dokunun.
 

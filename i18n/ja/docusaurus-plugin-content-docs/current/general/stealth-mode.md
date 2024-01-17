@@ -21,9 +21,9 @@ Some options may not be available depending on the particular product due to OS 
 
 When you get directed to a website from Google, Yahoo, or any other search engine, this option hides the search query that you used to find that website.
 
-### Send Do-Not-Track header {#donottrack}
+### Ask websites not to track you {#donottrack}
 
-It sends a Do-Not-Track (DNT) HTTP header to queried websites, thus requiring web apps to disable tracking of your activity.
+Sends the [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit.
 
 ### Strip tracking parameters from URLs
 
@@ -31,7 +31,7 @@ If you enable this option, AdGuard will strip tracking parameters like `utm_*` a
 
 ### Tracking methods {#tracking-methods}
 
-### Self-destructing third-party cookies {#3p-cookie}
+### Self-destruction of third-party cookies {#3p-cookie}
 
 Websites use cookies to store your information and preferences, such as the language you selected, your location, or the list of items in your shopping cart. When you return to a website, your browser sends back the cookies belonging to that website, which allows it to "remember" your data.
 
@@ -39,9 +39,21 @@ Third-party cookies are those implemented by a website that is different from th
 
 Set a time period (in minutes) at the end of which all third-party cookies will be destroyed. Set the timer to 0 to block them completely.
 
-### Self-destructing first-party cookies {#1p-cookie}
+:::caution
 
-We do not recommend enabling this option as it may severely interfere with the work of certain sites. Set a time period (in minutes) at the end of which all cookies will be destroyed. Set the timer to 0 to block them completely.
+This setting deletes all third-party cookies, including the information of your logins through social networks or other third-party services. You may have to periodically re-log in to some websites and face other cookie-related issues. To block only tracking cookies, use [*AdGuard Tracking Protection filter*](/general/ad-filtering/filter-policy/#tracking-protection-filter).
+
+:::
+
+### Self-destruction of first-party cookies {#1p-cookie}
+
+Set a time period (in minutes) at the end of which all cookies will be destroyed. Set the timer to 0 to block them completely.
+
+:::caution
+
+We do not recommend enabling this option as it may severely interfere with the work of certain websites.
+
+:::
 
 ### Disable cache for third-party requests {#3p-cache}
 
@@ -75,15 +87,15 @@ Some websites and web services still use the old technology to support Java plug
 
 ## その他 {#miscellaneous}
 
-### Hide Referrer from third parties {#referrer}
+### Hide Referer from third parties {#referer}
 
-Referrer is an HTTP header used in browser-to-server requests. It contains the URL of the request source. When you navigate from one page to another, Referrer saves the URL of the initial page. The server that hosts the destination web page often has software that parses Referrer and extracts various pieces of information from it. Enabling the *Hide Referrer from third-parties* option hides the current website from third-party sites by altering the HTTP header.
+Referer is an HTTP header used in browser-to-server requests. It contains the URL of the request source. When you navigate from one page to another, Referer saves the URL of the initial page. The server that hosts the destination web page often has software that parses Referer and extracts various pieces of information from it. Enabling the *Hide Referer from third-parties* option hides the current website from third-party sites by altering the HTTP header.
 
-You can also set an arbitrary value for Referrer by entering it into the *Custom Referrer* field. To use default Referrer, leave the field blank.
+You can also set an arbitrary value for Referer by entering it into the *Custom Referer* field. To use default Referer, leave the field blank.
 
-Note that to be able to filter traffic, AdGuard applications 'intercept' browser-to-server requests. Requests to ad, tracking, and phishing servers may be altered before sending them to the server or blocked completely. Same goes for the *Hide Referrer from third parties* option: AdGuard intercepts HTTP(S) requests, in particular to remove or change the Referrer header if this option is enabled. However, it happens only after these requests “leave” the browser. This means that if you monitor Referrer inside the browser (for example, with the help of Chrome's Developer Tools), you will see the original Referrer because the request hasn't reached AdGuard yet. You can use software like [Fiddler](https://www.telerik.com/fiddler) to make sure that Referrer gets altered correctly.
+Note that to be able to filter traffic, AdGuard applications 'intercept' browser-to-server requests. Requests to ad, tracking, and phishing servers may be altered before sending them to the server or blocked completely. Same goes for the *Hide Referer from third parties* option: AdGuard intercepts HTTP(S) requests, in particular to remove or change the Referer header if this option is enabled. However, it happens only after these requests “leave” the browser. This means that if you monitor Referer inside the browser (for example, with the help of Chrome's Developer Tools), you will see the original Referer because the request hasn't reached AdGuard yet. You can use software like [Fiddler](https://www.telerik.com/fiddler) to make sure that Referer gets altered correctly.
 
-On the opposite, due to the nature of all browser extensions, AdGuard Browser Extension works 'inside' the browser. It will alter the Referrer right then and there, so Developer Tools will show the desired Referrer for your requests.
+On the opposite, due to the nature of all browser extensions, AdGuard Browser Extension works 'inside' the browser. It will alter the Referer right then and there, so Developer Tools will show the desired Referer for your requests.
 
 ### Hide your User-Agent {#useragent}
 

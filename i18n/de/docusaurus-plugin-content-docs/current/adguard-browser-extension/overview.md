@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-This article is about the AdGuard Browser Extension, which safeguards only your browser. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+In diesem Artikel geht es um die AdGuard Browsereweiterung, die nur Ihren Browser schützt. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -15,7 +15,7 @@ AdGuard provides a range of software products that block ads and trackers on dif
 
 ## Availability {#br-extension}
 
-[AdGuard Browser Extension](https://adguard.com/en/adguard-browser-extension/overview.html) is available for most major browsers. You can easily find it in your browser’s online store or on our official website.
+[AdGuard Browser Extension](https://adguard.com/adguard-browser-extension/overview.html) is available for most major browsers. You can easily find it in your browser’s online store or on our official website.
 
 ![Available for most popular browsers *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
 
@@ -29,7 +29,7 @@ We have a standalone extension for Safari. Since the release of [Safari 13](http
 
 ## Ad blocking {#adblocker}
 
-Blocking ads is clearly the key functionality of any ad blocker, and AdGuard is not an exception. The extension will successfully block ads on any page in your browser. Ad blocking is based on so-called filter lists, or simply [filters](/general/ad-filtering/how-ad-blocking-works). Filters can be enabled or disabled in your extension's settings. You can customize ad blocking by activating specific filters.
+Blocking ads is clearly the key functionality of any ad blocker, and AdGuard is not an exception. The extension will successfully block ads on any page in your browser. Das Blockieren von Werbung basiert auf so genannten Filterlisten oder einfach [Filtern](/general/ad-filtering/how-ad-blocking-works). Filters can be enabled or disabled in your extension's settings. You can customize ad blocking by activating specific filters.
 
 ### Filters {#filters}
 
@@ -85,7 +85,7 @@ You can also import and export existing allowlists. It is useful, for instance, 
 
 ![Stealth Mode *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_stealth_mode.png)
 
-In Stealth Mode, you can prevent a website from seeing the search queries from you used to find it on the Internet, automatically delete third-party and website’s own cookies, etc. A [separate article](/general/stealth-mode) is devoted to all these features.
+In Stealth Mode, you can prevent a website from seeing the search queries from you used to find it on the Internet, automatically delete third-party and website’s own cookies, etc. Ein [eigener Artikel](/general/stealth-mode) ist all diesen Funktionen gewidmet.
 
 :::note
 
@@ -99,11 +99,11 @@ Apart from the large key modules of AdGuard Browser Extension, there are several
 
 ### Allgemein {#general}
 
-In the *General* tab, you can allow search ads and the [self-promotion of websites](/general/ad-filtering/search-ads), enable the automatic activation of language-specific filters, indicate the filters update interval, etc.
+Im Tab *Allgemein* können Sie Werbung in Suchanfragen und [Eigenwerbung von Websites](/general/ad-filtering/search-ads) zulassen, die automatische Aktivierung von sprachspezifischen Filtern aktivieren, das Aktualisierungsintervall der Filter angeben usw.
 
 ![General *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_general.png)
 
-Besides, here you can enable [*Phishing and malware protection*](/general/browsing-security).
+Außerdem können Sie hier den [*Phishing- und Malware-Schutz*](/general/browsing-security) aktivieren.
 
 You can save your settings configuration by clicking the *Export settings* button. The settings will be saved as a .json file. To upload the previously saved settings configuration, use the *Import settings* function. You can even use it to quickly switch between different settings profiles or even to transfer settings configurations between different browsers.
 
@@ -136,6 +136,8 @@ All web requests made by the browser are displayed in the *Filtering log*, along
 By clicking the icons in the top right corner of the extension's main menu, you can open the extension settings or pause the protection.
 
 ## AdGuard Browser Extension vs. standalone apps {#comparison}
+
+<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/ZGwceZP-0mM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 The main advantage of AdGuard standalone programs over browser extensions is that the programs can block ads in every browser and in almost all apps. You may use different browsers at the same time, the app will filter ads and online threats in all of them equally well.
 

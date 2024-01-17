@@ -5,7 +5,7 @@ sidebar_position: 10
 
 :::info
 
-This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+В этой статье рассказывается об AdGuard для Mac — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -27,4 +27,4 @@ Public Key Pinning — это мера безопасности, которая 
 
 Чтобы применить изменения, перезапустите Tor.
 
-If you manually change these settings, Tor filtering will be stopped.
+Если вы измените эти настройки вручную, Tor не будет фильтроваться.

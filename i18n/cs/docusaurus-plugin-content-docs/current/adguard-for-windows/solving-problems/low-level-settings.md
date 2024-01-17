@@ -5,7 +5,7 @@ sidebar_position: 7
 
 :::info
 
-Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -61,6 +61,10 @@ Povolením této funkce zobrazíte vyskakovací oznámení AdGuardu. Nezobrazuj�
 
 Tuto funkci povolte, pokud chcete, aby AdGuard automaticky zachycoval adresy URL pro přihlášení k odběru filtrů (tj. `abp:subscribe` a podobné) a otevíral dialogové okno pro instalaci vlastního filtru.
 
+### Filtrování HTTP/3
+
+Pokud je tato možnost povolena, bude AdGuard filtrovat kromě jiných typů požadavků také požadavky odeslané skrze HTTP/3.
+
 ### Použít režim přesměrování ovladače
 
 Pokud je tato možnost povolena, AdGuard zachytí veškerý provoz a přesměruje jej na místní proxy pro další filtrování.
@@ -75,7 +79,11 @@ Tuto možnost povolte, aby se po načtení systému otevřelo hlavní okno AdGua
 
 Od verze 7.12 služba AdGuard ve výchozím nastavení nefiltruje provoz po spuštění operačního systému, pokud je zakázána možnost Spustit AdGuard při startu systému. Jinými slovy, služba AdGuard je spuštěna v režimu „nečinnosti“. Tuto možnost povolte, aby AdGuard filtroval provoz i v případě, že aplikace není spuštěna.
 
-*Všimněte si, že před verzí 7.12 se služba AdGuard ve výchozím nastavení spouštěla v režimu filtrování (i když byla zakázána volba *Spustit AdGuard při startu systému"*). Pokud vám vyhovovalo staré chování, tuto možnost povolte.*
+:::note
+
+Před verzí 7.12 se služba AdGuard ve výchozím nastavení spouštěla v režimu filtrování (i když byla zakázána volba *Spustit AdGuard při startu systému*). Pokud vám vyhovovalo staré chování, tuto možnost povolte.
+
+:::
 
 ### Filtrovat localhost
 
@@ -129,13 +137,21 @@ Pravidelné odesílání paketů TCP přes neaktivní připojení, aby se zajist
 
 Zde můžete zadat dobu nečinnosti v sekundách před odesláním udržovací sondy. Pokud je zadána 0, použije se hodnota vybraná systémem.
 
-Všimněte si, že toto nastavení funguje pouze v případě, že je povolena možnost *Povolit udržování TCP*.
+:::note
+
+Toto nastavení funguje pouze v případě, že je povolena možnost *Povolit udržování TCP*.
+
+:::
 
 ### Časový limit udržování TCP
 
 Zde můžete zadat dobu v sekundách před odesláním další udržovací sondy neodpovídajícímu partnerovi. Pokud je zadána 0, použije se hodnota vybraná systémem.
 
-Všimněte si, že toto nastavení funguje pouze v případě, že je povolena možnost *Povolit udržování TCP*.
+:::note
+
+Toto nastavení funguje pouze v případě, že je povolena možnost *Povolit udržování TCP*.
+
+:::
 
 ### Blokovat Java
 
@@ -169,17 +185,17 @@ Kromě běžných DNS požadavků bude AdGuard přesměrovávat zabezpečené DN
 
 Zde můžete vybrat způsob, jakým bude AdGuard reagovat na domény blokované pravidly DNS na základě [syntaxe pravidla hosts](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
 
-* Odpověď s chybou "Refused"
-* Odpověď s chybou "NxDomain"
-* Odpověď s vlastní IP adresou
+- Odpověď s chybou "Refused"
+- Odpověď s chybou "NxDomain"
+- Odpověď s vlastní IP adresou
 
 ### Režim blokování pro pravidla stylu adblock
 
 Zde můžete vybrat způsob, jakým bude AdGuard reagovat na domény blokované pravidly DNS na základě [syntaxe stylu ad-block](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax).
 
-* Odpověď s chybou "Refused"
-* Odpověď s chybou "NxDomain"
-* Odpověď s vlastní IP adresou
+- Odpověď s chybou "Refused"
+- Odpověď s chybou "NxDomain"
+- Odpověď s vlastní IP adresou
 
 ### Vlastní IPv4 adresa
 
@@ -193,9 +209,9 @@ Pokud je v režimu blokování pro pravidla pro hostitele, nebo v režimu blokov
 
 Zde můžete zadat alternativní DNS server, na který bude požadavek DNS přesměrován, pokud hlavní server neodpoví v časovém limitu uvedeném v následující části. Na výběr jsou tři možnosti:
 
-* Nepoužívat záložní servery;
-* Použít výchozí systémové servery;
-* Použít vlastní servery.
+- Nepoužívat záložní servery;
+- Použít výchozí systémové servery;
+- Použít vlastní servery.
 
 ### Blokovat ECH
 

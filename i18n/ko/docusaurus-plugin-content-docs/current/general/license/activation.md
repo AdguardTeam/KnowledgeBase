@@ -19,86 +19,62 @@ To activate a license via the AdGuard account, a valid license with at least one
 
 ### Windows용 AdGuard 활성화 방법
 
-1. AdGuard 앱을 엽니다.
+1. On the expired license screen, click *Activate*.
 
-AdGuard 앱을 열려면 바탕 화면에서 AdGuard 아이콘을 두 번 클릭합니다.
+    ![Expired license screen *border](https://cdn.adtidy.org/blog/new/eapwtexp.png)
 
-![바탕 화면의 AdGuard 아이콘](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowsEn.png)
+    Alternatively, select *License* in the upper right corner of the main screen and click *Activate*.
 
-또는 시스템 트레이에서 AdGuard 아이콘을 두 번 클릭합니다.
+    ![Main screen *border](https://cdn.adtidy.org/blog/new/ca313hmain-screen.png)
 
-![시스템 트레이의 AdGuard 아이콘](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windows2En.png)
+    ![License screen *border](https://cdn.adtidy.org/blog/new/n7nkclicense-screen.png)
 
-2. 앱 메뉴의 **라이선스** 탭으로 이동하여 **라이선스 활성화**를 클릭합니다.
+1. Activate your license using your preferred method. If the license is bound to your email address, click *AdGuard Account* or select a social network associated with this email address. Alternatively, enter your license key.
 
-![라이선스 활성화를 클릭합니다](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowslicense1en.png)
-
-3. 두 가지 활성화 옵션이 화면에 표시됩니다.
-
-- **AdGuard 계정**(또는 Facebook, Google 또는 Apple 계정)의 **이메일**과 **비밀번호** 입력
-
-![AdGuard 계정에 로그인합니다](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowslicense2en.png)
-
-- **라이선스 키 입력**
-
-![라이선스 키를 입력하세요](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowslicense3en.png)
+    ![Activating a license *border](https://cdn.adtidy.org/blog/new/lnzz5activate-license.png)
 
 ### Mac용 AdGuard 활성화 방법
 
-1. AdGuard 앱을 엽니다(메뉴 표시줄에서 AdGuard 아이콘 클릭).
+1. On the expired license screen, click *Activate*.
 
-![메뉴 표시줄의 AdGuard 아이콘](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/mac1.png)
+    ![Expired license screen *mobile_border](https://cdn.adtidy.org/blog/new/o9bhtexpired-screen.png)
 
-2. 오른쪽 상단 모서리에 있는 **톱니바퀴 아이콘**을 클릭합니다.
-3. **라이선스**를 누릅니다.
+    Alternatively, click the gear icon in the AdGuard menu, then click *License*.
 
-![설정 및 라이선스로 이동 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/macEn.png)
+    ![Preferences *border](https://cdn.adtidy.org/blog/new/xuyqmpreferences.png)
 
-4. 열린 창에서 **활성화** 버튼을 누릅니다.
+1. In the opened window, click *Activate*.
 
-![활성화 누르기](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/maclicenseen1.png)
+    ![License screen *border](https://cdn.adtidy.org/blog/new/8rbc8license-screen.png)
 
-5. 두 가지 활성화 옵션이 화면에 표시됩니다.
-- **AdGuard 계정**(또는 Facebook, Google 또는 Apple 계정)의 **이메일**과 **비밀번호** 입력
+1. Activate your license using your preferred method. If the license is bound to your email address, click *AdGuard Account* or select a social network associated with this email address. Alternatively, enter your license key.
 
-![AdGuard 계정에 로그인합니다](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/maclicenseen2.png)
-
-- **라이선스 키 입력**
-
-![활성화하려면 라이선스 키를 입력하세요](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/maclicenseen3.png)
+    ![Activating a license *border](https://cdn.adtidy.org/blog/new/tws3jkactivate-license.png)
 
 ### Android용 AdGuard 활성화 방법
 
-1. AdGuard 앱을 엽니다.
-2. 화면 왼쪽 상단의 **메뉴 아이콘(☰)**을 탭합니다.
-3. **프리미엄 구매**(또는 **라이선스 상태**)를 누릅니다.
+1. Tap *Settings*, then select *License*.
 
-![프리미엄 구매 또는 라이선스 상태를 누릅니다 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/androidlicense1en.png)
+    ![Settings screen *mobile_border](https://cdn.adtidy.org/blog/new/sbdcysettings.png)
 
-4. 화면 왼쪽 상단의 **메뉴 아이콘(⋮)**을 클릭합니다.
+1. Tap *Activate license*.
 
-![점 3개로 된 메뉴 탭하기 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/android2En.png)
+    ![License screen *mobile_border](https://cdn.adtidy.org/blog/new/04fs1license-screen.png)
 
-5. **프리미엄 활성화**를 누르면 두 가지 활성화 옵션이 표시됩니다.
+1. Activate your license using your preferred method. If the license is bound to your email address, tap *Continue with email* or select a social network associated with this email address. Alternatively, enter your license key.
 
-- **AdGuard 계정**(또는 Facebook, Google 계정)의 **이메일**과 **비밀번호** 입력
-
-![활성화하려면 로그인하세요 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/androidlicense2en.png)
-
-- **라이선스 키 입력**
-
-![활성화하려면 라이선스 키를 입력하세요 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/androidlicense3en.png)
+    ![Activating a license *mobile_border](https://cdn.adtidy.org/blog/new/sbxttactivate-license.png)
 
 ### iOS용 AdGuard 활성화 방법
 
-1. AdGuard 앱을 열고 화면 오른쪽 하단에 있는 **톱니바퀴 아이콘**을 누릅니다.
+1. Tap *Settings*, then select *License*.
 
-2. **라이선스**를 누릅니다.
+    ![Settings screen *mobile_border](https://cdn.adtidy.org/blog/new/uf8f1fsettings.png)
 
-3. 화면 오른쪽 상단에 있는 **로그인**을 누릅니다.
+1. Tap **Log in** in the upper right corner of the screen
 
-![프리미엄 화면의 오른쪽 상단에 있는 로그인을 누르세요 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense1en.png)
+    ![Purchase screen *mobile_border](https://cdn.adtidy.org/blog/new/10j5bhpurchase-page.png)
 
-4. **AdGuard 계정**의 **이메일**과 **비밀번호**를 입력합니다.
+1. Use your email address or social media account to activate your license.
 
-![로그인 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense2en.png)
+    ![Login screen *mobile_border](https://cdn.adtidy.org/blog/new/prnjdlogin-page.png)

@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+В этой статье рассказывается об AdGuard для Mac — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -21,11 +21,11 @@ This article covers AdGuard for Mac, a multifunctional ad blocker that protects 
 
 ## Установка
 
-Чтобы установить AdGuard для Mac на компьютер, откройте браузер, наберите в адресной строке _adguard.com_ и [на открывшейся странице](https://adguard.com/download.html?auto=1) нажмите кнопку **Скачать**.
+Чтобы установить AdGuard для Mac на компьютер, откройте браузер, наберите в адресной строке *adguard.com* и нажмите **кнопку Скачать** [на открывшейся странице](https://adguard.com/download.html?auto=1).
 
 ![Скачайте приложение *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/1.jpg)
 
-Дождитесь окончания загрузки файла _AdguardInstaller.dmg_ и щёлкните мышью по его значку в списке загруженных объектов на Dock-панели.
+Дождитесь окончания загрузки файла *AdguardInstaller.dmg* и щёлкните мышью по его значку в списке загруженных объектов на Dock-панели.
 
 ![Дважды щёлкните, чтобы открыть файл](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation_open_the_file.jpg)
 
@@ -58,6 +58,7 @@ This article covers AdGuard for Mac, a multifunctional ad blocker that protects 
 ## Удаление
 
 ### Стандартное
+
 Откройте приложение «Finder», кликнув по соответствующей иконке:
 
 ![Откройте Finder](https://cdn.adtidy.org/public/Adguard/En/Articles/howtodelete/finder.png)

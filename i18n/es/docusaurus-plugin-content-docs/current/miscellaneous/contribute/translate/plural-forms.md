@@ -12,11 +12,11 @@ Te recomendamos encarecidamente que leas correctamente este artículo para obten
 
 Los sustantivos en diferentes idiomas pueden tener varias formas de palabras en plural. Su uso depende del número de cosas de las que se hable.
 
-Por ejemplo, las palabras en inglés tienen dos formas de palabras cuando se habla de algo en singular, como *"one star"*, y en plural: *"two stars"*. No importa si dices cinco, veintiséis o incluso quinientas treinta y dos estrellas, la terminación ''s'' seguirá siendo la misma. Pero algunos idiomas pueden contener solo una o varias formas plurales.
+For instance, English words have two word forms when speaking about something in the singular, like *'one star'*, and in the plural — *'two stars'*. It doesn’t matter if you say five, twenty six or even five hundred thirty two stars — the ending 's' will remain the same. Pero algunos idiomas pueden contener solo una o varias formas plurales.
 
-A diferencia del inglés, el idioma polaco tiene tres formas plurales de sustantivos. Uno de ellos se usa cuando se habla de algo en singular, otra forma se usa en plural pero con números que terminan en 2-4, excluyendo 12-14, y la tercera forma, para palabras con otros números delante de ellos.
+A diferencia del inglés, el idioma polaco tiene tres formas plurales de sustantivos. One of them is used when speaking about something in the singular, another form is used in the plural but with numbers ending in 2-4, excluding 12-14, and the third form — for words with other numbers in front of them.
 
-Veamos esta imagen. Aquí puedes ver los grupos de números que determinan la forma de una palabra cuando se encuentran frente a ella.
+Let’s take a look at this picture. Aquí puedes ver los grupos de números que determinan la forma de una palabra cuando se encuentran frente a ella.
 
 ![Polaco](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
@@ -94,7 +94,7 @@ Está atento al traducir estas strings y aprobarlas. Si no tienes idea de lo que
 
 Este es el tipo más complicado de strings de AdGuard que se usa principalmente en el proyecto `AdGuard Websites`.
 
-Presta mucha atención a un signo de barra vertical entre las oraciones y los placeholders **%count%** en las frases originales; esto te ayudará a identificar frases donde las traducciones requieren el uso de formas plurales.
+Pay close attention to a vertical bar sign between the sentences and **%count%** placeholders in original phrases — this will help you identify phrases where translations require the use of plural forms.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/plurals_site.png)
 
@@ -108,9 +108,9 @@ Volviendo al ejemplo, como el idioma inglés incluye solo dos formas, debería h
 
 `Licencia estándar para *%count%* computadora | Licencia estándar para *%count%* computadoras`
 
-donde **plantilla 1** – Licencia estándar para *%count%* computadora,
+where **template 1** is Standard license for *%count%* computer,
 
-y **plantilla 2** – Licencia estándar para *%count%* computadoras
+and **template 2** is Standard license for *%count%* computers
 
 Otra cosa importante a la que debes prestar atención son los placeholders **%count%** que, como de costumbre, se colocan antes de las palabras que definen. En lugar de **%count%** aquí aparecerán diferentes números dependiendo de las plantillas que se elijan.
 
@@ -145,12 +145,12 @@ Mientras que los tres primeros tipos de strings de este tipo son más o menos f�
 
 Y de nuevo: si encuentras una frase original con dos elementos importantes: **, el signo de barra vertical** y **%count%** marcadores de posición, haz lo siguiente:
 
-+ Consulta la regla del plural de la lengua a la que traduces;
+- Consulta la regla del plural de la lengua a la que traduces;
 
-The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms – two templates in translations; five plural forms – five templates, etc.
+The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms — two templates in translations; five plural forms — five templates, etc.
 
-+ No olvides usar un signo de barra vertical entre las plantillas tal como se representa en los strings originales;
+- No olvides usar un signo de barra vertical entre las plantillas tal como se representa en los strings originales;
 
-+ No traduzcas, rellenes ni elimines los placeholders **%count%** .
+- No traduzcas, rellenes ni elimines los placeholders **%count%** .
 
 By following these simple rules you will help AdGuard developers avoid a lot of unnecessary complications during the localization process.

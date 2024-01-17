@@ -7,25 +7,21 @@ Esiste un'app di AdGuard praticamente per ogni piattaforma principale disponibil
 
 ## Come diventare un beta tester {#intro}
 
-I nostri requisiti sono semplici: utilizzare AdGuard, passare alla versione beta quando è disponibile e segnalare qualsiasi bug noti. Tuttavia, avrai bisogno di un profilo del [forum](https://forum.adguard.com/index.php) o di [GitHub](https://github.com/) (o entrambi) per diventare un nostro beta tester, quindi potresti iniziare creandone uno.
+I nostri requisiti sono semplici: utilizzare AdGuard, passare alla versione beta quando è disponibile e segnalare qualsiasi bug noti. However, you will need a [GitHub](https://github.com/) account to become our beta tester, so you may want to get that out of the way first.
 
-In ogni caso, ogni singola cosa che devi sapere è raccolta su una [pagina dedicata](https://adguard.com/en/beta.html).
+In any case, every single thing you need to know is gathered on a [dedicated page](https://adguard.com/beta.html).
 
 Se desideri saltare la parte descrittiva e passare direttamente all'azione, puoi candidarti [qui](https://surveys.adguard.com/beta_testing_program/form.html). La tua candidatura sarà revisionata entro 1-3 giorni lavorativi e riceverai una risposta via email.
 
 ## Come segnalare un bug {#report-a-bug}
 
-Se hai individuato un bug o desideri semplicemente condividere il tuo suggerimento, faccelo sapere in uno qualsiasi dei modi possibili:
+If you spotted a bug or just want to share your suggestion, let us know: go to [GitHub](https://github.com/AdguardTeam/), find a suitable repository, create a new issue there, and describe the bug/feature request in detail.
 
-* Vai su [forum.adguard.com](https://forum.adguard.com/index.php) e pubblica una nuova discussione (o trovane una esistente) nella [categoria](https://forum.adguard.com/index.php?categories/48/) del forum beta. Assicurati di leggere le [regole del forum](https://forum.adguard.com/index.php?threads/14859/);
+The above method is the most preferred, but you can use others if necessary:
 
-* Vai su [GitHub](https://github.com/AdguardTeam/) e trova una repository adatta. Crea un nuovo problema e descrivi il bug/la richiesta di funzionalità nel dettaglio.
+- Trovaci sulle varie piattaforme social, come [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/), etc. Tuttavia, questo non è il metodo più comodo per discutere le questioni tecniche.
 
-I due metodi sopra descritti sono i preferiti, ma puoi utilizzarne altri se necessario:
-
-* Trovaci sulle varie piattaforme social, come [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/), etc. Tuttavia, questo non è il metodo più comodo per discutere le questioni tecniche.
-
-* Invia un'email al nostro team di supporto dalla scheda Supporto nell'app o scrivi direttamente a [support@adguard.com](mailto:support@adguard.com).
+- Invia un'email al nostro team di supporto dalla scheda Supporto nell'app o scrivi direttamente a [support@adguard.com](mailto:support@adguard.com).
 
 ## Come attivare la chiave beta nell'applicazione iOS {#ios}
 
@@ -33,6 +29,6 @@ Se hai già ricevuto una chiave beta ed è elencata nel tuo profilo di `adguard.
 
 ### Che altro?
 
-Non c'è molto altro da aggiungere. Non devi fare di tutto per trovare i bug. Puoi continuare a utilizzare AdGuard come al solito. Tuttavia, se riscontri un bug, sei pregato di segnalarlo. Ovviamente, apprezziamo qualsiasi sforzo aggiuntivo e/o attività aggiuntiva sul forum, etc.
+Non c'è molto altro da aggiungere. Non devi fare di tutto per trovare i bug. Puoi continuare a utilizzare AdGuard come al solito. Tuttavia, se riscontri un bug, sei pregato di segnalarlo. Of course, we appreciate any additional effort.
 
 Occasionalmente, riceverai le nostre newsletter, che ti terranno informato sugli ultimi cambiamenti nella beta (nel caso te li sia persi) e su altre notizie importanti. Puoi disiscriverti in qualsiasi momento.

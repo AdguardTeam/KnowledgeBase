@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-Tento článek je o Rozšíření prohlížeče AdGuard, které chrání pouze váš prohlížeč. Chcete-li chránit celé zařízení, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+Tento článek je o Rozšíření prohlížeče AdGuard, které chrání pouze váš prohlížeč. Chcete-li chránit celé zařízení, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -15,9 +15,9 @@ AdGuard nabízí řadu softwarových produktů, které blokují reklamy a slídi
 
 ## Dostupnost {#br-extension}
 
-[Rozšíření prohlížeče AdGuard](https://adguard.com/en/adguard-browser-extension/overview.html) je k dispozici pro většinu známých prohlížečů. Snadno jej najdete v internetovém obchodě svého prohlížeče nebo na našich oficiálních stránkách.
+[Rozšíření prohlížeče AdGuard](https://adguard.com/adguard-browser-extension/overview.html) je k dispozici pro většinu známých prohlížečů. Snadno jej najdete v internetovém obchodě svého prohlížeče nebo na našich oficiálních stránkách.
 
-![Dostupné pro většinu oblíbených prohlížečů *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
+![Available for most popular browsers *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
 
 :::note
 
@@ -35,29 +35,29 @@ Blokování reklam je jednoznačně klíčovou funkcí každého blokátoru rekl
 
 Seznamy filtrů jsou v podstatě soubory pravidel zapsané ve speciálním jazyce. Váš blokátor reklam interpretuje pravidla a uplatňuje je. V důsledku toho se na vašich webových stránkách přestanou zobrazovat reklamy.
 
-![Filtry *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters.png)
+![Filters *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters.png)
 
 Všechny filtry jsou seskupeny podle své role. Existují například kategorie filtrů pro blokování reklam, filtry pro ochranu soukromí, filtry související se sociálními médii atd. Můžete povolit jednotlivé filtry nebo celou skupinu najednou.
 
-![Filtry pro blokování reklam *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters1.png)
+![Ad blocking filters *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters1.png)
 
 #### Vlastní filtry {#custom}
 
 Zatímco vlastnosti ostatních skupin filtrů jsou víceméně předvídatelné, existuje skupina s názvem *Vlastní*, která může vyvolat další otázky.
 
-![Vlastní filtry *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters.png)
+![Custom filters *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters.png)
 
 Na této kartě můžete přidat filtry, které ve výchozím nastavení rozšíření neobsahuje. Na internetu je k dispozici spousta [veřejně dostupných filtrů](https://filterlists.com). Navíc můžete vytvářet a přidávat vlastní filtry. Ve skutečnosti si můžete vytvořit libovolnou sadu filtrů a přizpůsobit blokování reklam podle svých představ.
 
 Chcete-li přidat filtr, stačí kliknout na *Přidat vlastní filtr*, zadat adresu URL nebo cestu k souboru filtru, který chcete přidat a kliknout na *Další*.
 
-![Přidat vlastní filtr *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
+![Add a custom filter *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
 
 ### Uživatelská pravidla {#user-rules}
 
 *Uživatelská pravidla* jsou další nástroj, který vám pomůže přizpůsobit blokování reklam.
 
-![Uživatelská pravidla *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_user_rules.png)
+![User rules *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_user_rules.png)
 
 Nová pravidla lze přidávat několika způsoby. Nejjednodušší je prostě zadat pravidlo, to ale vyžaduje určitou znalost [syntaxe pravidel](/general/ad-filtering/create-own-filters).
 
@@ -71,11 +71,11 @@ Když přidáte webovou stránku na Seznam povolených (více o tom [níže](#al
 
 *Seznam povolených* se používá k vyloučení určitých webových stránek z filtrování. Pravidla blokování se na webové stránky ze seznamu nevztahují.
 
-![Seznam povolených *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist.png)
+![Allowlist *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist.png)
 
 *Seznam povolených* lze také obrátit: reklamy můžete odblokovat všude kromě webových stránek přidaných do tohoto seznamu. Chcete-li to provést, povolte možnost *Invertovat seznam povolených*.
 
-![Invertovat seznam povolených *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist1.png)
+![Invert allowlist *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist1.png)
 
 Můžete také importovat a exportovat stávající seznamy povolených. To je užitečné například v případě, že chcete v každém prohlížeči použít stejná pravidla pro povolení.
 
@@ -83,7 +83,7 @@ Můžete také importovat a exportovat stávající seznamy povolených. To je u
 
 *Režim utajení* má zajistit ochranu citlivých osobních údajů před online slídiči a podvodníky.
 
-![Režim utajení *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_stealth_mode.png)
+![Stealth Mode *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_stealth_mode.png)
 
 V Režimu utajení můžete zabránit tomu, aby webová stránka viděla vyhledávací dotazy, které jste použili k jejímu nalezení na internetu, automaticky odstranit soubory cookies třetích stran a vlastní soubory cookies webové stránky atd. Všem těmto funkcím je věnován [zvláštní článek](/general/stealth-mode).
 
@@ -101,7 +101,7 @@ Kromě velkých klíčových modulů rozšíření prohlížeče AdGuard existuj
 
 Na kartě *Obecné* můžete povolit reklamy ve vyhledávání a vlastní propagaci webových stránek [](/general/ad-filtering/search-ads), povolit automatickou aktivaci filtrů pro jednotlivé jazyky, určit interval aktualizace filtrů atd.
 
-![Obecné *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_general.png)
+![General *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_general.png)
 
 Kromě toho zde můžete zapnout [*ochranu proti krádeži identity a malwaru*](/general/browsing-security).
 
@@ -111,7 +111,7 @@ Konfiguraci nastavení můžete uložit kliknutím na tlačítko *Exportovat nas
 
 Sekce *Další nastavení* obsahuje řadu různých nastavení, která souvisejí s procesem blokování reklam a použitelností aplikace.
 
-![Další nastavení *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_additional_settings.png)
+![Additional settings *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_additional_settings.png)
 
 Na této kartě můžete aktivovat optimalizované filtry, zapnout oznámení o aktualizacích rozšíření, otevřít *Záznam filtrování* nebo vymazat statistiky blokovaných reklam a slídičů.
 
@@ -121,13 +121,13 @@ Kromě toho nám můžete pomoci s vývojem filtrů zasíláním statistik o pou
 
 V sekci *Informace* najdete informace o aktuální verzi, odkazy na smlouvu EULA a zásady ochrany osobních údajů a na úložiště rozšíření prohlížeče na GitHubu.
 
-![Informace *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)
+![About *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)
 
 ## Hlavní nabídka rozšíření {#main-menu}
 
 Hlavní stránka rozšíření je přístupná po kliknutí na ikonu rozšíření na panelu nástrojů prohlížeče.
 
-![Hlavní nabídka *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
+![Main menu *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
 
 Na hlavní stránce můžete ručně skrýt libovolný prvek na libovolné stránce (příslušné pravidlo bude přidáno do *Uživatelských pravidel*), otevřít *Záznam filtrování* a zobrazit kompletní informace o provozu prohlížeče a blokovat požadavky za chodu nebo se podívat na zprávu o zabezpečení webové stránky. Kromě toho můžete podat stížnost na jakoukoli webovou stránku (například pokud jsou na stránce zobrazené reklamy, naši technici filtrů zprávu přezkoumají a problém vyřeší) a zobrazit statistiky použitých pravidel blokování.
 
@@ -137,13 +137,15 @@ Kliknutím na ikony v pravém horním rohu hlavní nabídky rozšíření může
 
 ## Rozšíření prohlížeče AdGuard vs. Plnohodnotná aplikace {#comparison}
 
+<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/ZGwceZP-0mM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Hlavní výhodou plnohodnotných programů AdGuard oproti rozšířením prohlížeče je, že tyto programy mohou blokovat reklamy v každém prohlížeči a téměř ve všech aplikacích. Můžete používat různé prohlížeče současně, aplikace bude stejně dobře filtrovat reklamy a online hrozby ve všech z nich.
 
 Druhý rozdíl spočívá v tom, že možnosti blokátorů reklam založených na rozšířeních jsou přísně omezeny pokyny prohlížeče. Rozšíření prohlížeče musí být v souladu se zásadami prohlížečů, kde může být blokování reklam omezeno. Některé typy pravidel filtrování tedy rozšíření nepodporují. Funkce desktopových aplikací nejsou omezené, takže mají lepší kvalitu filtrování.
 
 Zatímco Rozšíření prohlížeče AdGuard je zdarma, snadno se instaluje a obsahuje filtry pro blokování reklam a boj proti online hrozbám, plnohodnotné aplikace jsou výkonnější a mají seznam pokročilých funkcí. Všechny rozdíly najdete ve srovnávací tabulce níže.
 
-![Rozšíření vs. aplikace *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_comparison.png)
+![Extension vs. App *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_comparison.png)
 
 `1` – v rámci omezení prohlížeče a pouze v prohlížeči, ve kterém je nainstalováno;
 

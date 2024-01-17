@@ -1,22 +1,23 @@
 ---
-title: How to purchase/upgrade
+title: Comment acheter ou surclasser
 sidebar_position: 2
 ---
 
-## How to purchase a license{#purchase}
+## Comment acheter une licence{#purchase}
 
-La licence AdGuard peut être achetée sur [adguard.com](https://adguard.com/license.html). AdGuard Pro pour iOS peut être acheté sur l'App Store. Des licences du Bloqueur sont également vendues par des distributeurs.
+Les licences AdGuard peuvent être achetées sur [adguard.com](https://adguard.com/license.html). Vous pouvez payer avec Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay et UnionPay. Nous acceptons également les crypto-monnaies suivantes : Bitcoin, Ethereum, Litecoin et Tether.
 
-The availability of AdGuard products in app stores and by distributors depends on your country.
+AdGuard Pro pour iOS peut être acheté sur l'App Store.
 
-## How to upgrade a license{#upgrade}
+Des licences du Bloqueur sont également vendues par des distributeurs. La disponibilité des produits AdGuard dans les magasins d'applications et chez les distributeurs dépend de votre pays.
 
-To make more use of your AdGuard products, you can upgrade your license for the following benefits.
+## Comment surclasser une licence{#upgrade}
 
-1. Pour augmenter la fonctionnalité de vos produits AdGuard, vous pouvez **surclasser votre licence gratuite ou d'essai vers la version complète**.
-2. To extend the number of devices, you can **upgrade your Personal license to a Family one**.
-3. You can also **upgrade your [subscription](../what-is) to a Lifetime license**.
+Pour mieux utiliser vos produits AdGuard, vous pouvez surclasser votre licence pour bénéficier des avantages suivants.
 
-You can upgrade your license by:
-  * purchasing another license on the [official AdGuard website](https://adguard.com),
-  * clicking the *Upgrade to Lifetime* and/or *Increase device limit* in your AdGuard account: ![Upgrade *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)
+- Pour augmenter le nombre d'appareils, vous pouvez **surclasser votre licence Personnelle vers la licence Familiale**
+- Vous pouvez également **surclasser votre abonnement annuel vers une licence à vie**
+
+Vous pouvez mettre votre licence à niveau dans votre compte AdGuard. Pour cela, cliquez sur *Surclasser vers à vie* ou *Augmenter la limite d'appareils*.
+
+![Surclasser](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)

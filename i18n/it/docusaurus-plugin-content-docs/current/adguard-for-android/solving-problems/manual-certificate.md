@@ -1,31 +1,42 @@
 ---
-title: Сertificate installation issues on devices with Android 11+
+title: Certificate installation on devices with Android 11+
 sidebar_position: 12
 ---
 
 :::info
 
-This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Questo articolo riguarda AdGuard per Android, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
-To be able to filter HTTPS traffic (which is extremely important as most ads use HTTPS), AdGuard needs to install a certificate into your device's user storage. On older versions of Android OS this was done automatically, but on Android 11 and later users have to [install it manually](../../overview#https-filtering).
+To be able to [filter HTTPS traffic](/general/https-filtering/what-is-https-filtering.md) (which is extremely important as most ads use HTTPS), AdGuard needs to install a certificate into your device's user storage. On older versions of Android OS this was done automatically, but on Android 11 and later users have to install it manually.
 
-![Certificate *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/Android/3-5/cert-en.gif)
+![Certificate *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/g.gif)
 
-If you experience issues during the manual certificate installation (for example, you installed the certificate, but the application keeps ignoring it), you can find possible solutions below.
+Follow these steps to install AdGuard certificate:
 
-## Certificate installation in a *Secure folder*
+1. When you see the *HTTPS filtering is off* notification, tap *Enable*.
 
-If you use [the *Secure folder* on your Android](https://www.samsung.com/uk/support/mobile-devices/what-is-the-secure-folder-and-how-do-i-use-it/) (this applies mainly to Samsung devices), you may face some difficulties when installing the HTTPS certificate. The thing is that the *Secure folder* has its own storage where the certificates are stored. However, in case you do everything according to the instructions [described here](../../overview#https-filtering), the certificate is installed into the main storage and plays no role for your ad blocker in the *Secure folder*. So, in order to resolve this issue and install the certificate for your AdGuard for Android into the *Secure folder's* storage, follow this instruction:
+1. Then you'll be presented with three screens that explain:
+    - Why filter HTTPS traffic
+    - The safety of this filtering process
+    - The necessity of AdGuard certificate
 
+    Consecutively tap *Next* → *Next* → *Save certificate* on these screens.
 
-1. After installing the application and connecting to VPN tap *Turn on* next to the *HTTPS filtering is off* message.
-2. Tap *Next* → *Next* → *Save it now* → *Allow*.
-3. Save the certificate (at this stage, you can rename it to make it easier to find).
-4. After the *How to install a certificate?* screen appears, DO NOT tap *Open Settings*.
-5. Minimize the application and go to the secure folder.
-6. Tap the three-dot menu and go to additional security settings.
-7. Tap *Install from memory* → *CA certificate* → *Install anyway* → Enter a graphic key/password/fingerprint → Find the saved certificate and select it.
-8. Return to the AdGuard application and close the screen "How to install a certificate?" by tapping the cross button.
-9. Done! The certificate has been installed.
+1. Tap *Save* at the bottom of the opened *Download* folder.
+
+1. After saving, tap *Open Settings*, navigate to *Encryption & credentials*, and then choose *Install a certificate*.
+
+1. You might see a warning, if so, tap *Install anyway*. From the list, select the file with AdGuard certificate.
+
+You're all set! Once the certificate is installed successfully, you've enabled HTTPS filtering.
+
+Please note that the steps provided are based on the Google Pixel 4 smartphone. If you're using a different Android device, the exact menu names or options might vary. For easier navigation consider searching for a certificate by accessing your device's settings and entering "certificate" or "credentials" in the search bar.
+
+If you experience issues during the manual certificate installation (for example, you installed the certificate, but the application keeps ignoring it), you can follow one of the solutions below.
+
+1. Restart AdGuard.
+2. Try to install the correct certificate (AdGuard Personal CA) one more time.
+
+If you still encounter a problem and can't install the certificate, please contact our support team at support@adguard.com.

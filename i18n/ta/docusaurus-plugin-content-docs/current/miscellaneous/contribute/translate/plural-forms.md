@@ -12,11 +12,11 @@ We strongly recommend you to properly read this article to learn more about plur
 
 Nouns in different languages can have several plural word forms. Their usage depends on the number of things you are talking about.
 
-For instance, English words have two word forms when speaking about something in the singular, like *'one star'*, and in the plural – *'two stars'*. It doesn’t matter if you say five, twenty six or even five hundred thirty two stars – the ending 's' will remain the same. But some languages can contain only one or many plural forms.
+For instance, English words have two word forms when speaking about something in the singular, like *'one star'*, and in the plural — *'two stars'*. It doesn’t matter if you say five, twenty six or even five hundred thirty two stars — the ending 's' will remain the same. But some languages can contain only one or many plural forms.
 
-In contrast to English, the Polish language has three plural forms of nouns. One of them is used when speaking about something in the singular, another form is used in the plural but with numbers ending in 2-4, excluding 12-14, and the third form – for words with other numbers in front of them.
+In contrast to English, the Polish language has three plural forms of nouns. One of them is used when speaking about something in the singular, another form is used in the plural but with numbers ending in 2-4, excluding 12-14, and the third form — for words with other numbers in front of them.
 
-Let’s have a look at this picture. Here you can see the groups of numerals which determine a word form when standing in front of it.
+Let’s take a look at this picture. Here you can see the groups of numerals which determine a word form when standing in front of it.
 
 ![Polish](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
@@ -94,7 +94,7 @@ Please be attentive when translating these strings and approving them. If you ha
 
 This is the most complicated type of AdGuard strings which is mostly used in `AdGuard Websites` project.
 
-Pay close attention to a vertical bar sign between the sentences and **%count%** placeholders in original phrases – this will help you identify phrases where translations require the use of plural forms.
+Pay close attention to a vertical bar sign between the sentences and **%count%** placeholders in original phrases — this will help you identify phrases where translations require the use of plural forms.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/plurals_site.png)
 
@@ -108,9 +108,9 @@ Coming back to the example, as the English language includes only two forms, the
 
 `Standard license for *%count%* computer | Standard license for *%count%* computers`
 
-where **template 1** – Standard license for *%count%* computer,
+where **template 1** is Standard license for *%count%* computer,
 
-and **template 2** – Standard license for *%count%* computers
+and **template 2** is Standard license for *%count%* computers
 
 Another important thing you should pay your attention to is **%count%** placeholders that, as usual, take place before the words they define. Instead of **%count%** here will appear different numbers depending on which templates are being chosen.
 
@@ -145,12 +145,12 @@ While first three types of such strings are more or less easy to perform, the fo
 
 And again: if you come across an original phrase with two important elements: **the vertical bar sign** and **%count%** placeholders, please do the following:
 
-+ Refer to the plural rule of a language you translate into;
+- Refer to the plural rule of a language you translate into;
 
-The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms – two templates in translations; five plural forms – five templates, etc.
+The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms — two templates in translations; five plural forms — five templates, etc.
 
-+ Do not forget to use a vertical bar sign between templates as it is represented in original strings;
+- Do not forget to use a vertical bar sign between templates as it is represented in original strings;
 
-+ Do not translate, fill in or delete **%count%** placeholders.
+- Do not translate, fill in or delete **%count%** placeholders.
 
 By following these simple rules you will help AdGuard developers avoid a lot of unnecessary complications during the localization process.

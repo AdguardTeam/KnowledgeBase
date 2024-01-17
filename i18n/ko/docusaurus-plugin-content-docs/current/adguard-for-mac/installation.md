@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+이 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Mac용 AdGuard에 대해 다룹니다. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -21,11 +21,11 @@ This article covers AdGuard for Mac, a multifunctional ad blocker that protects 
 
 ## 설치 방법
 
-To install AdGuard for macOS on your computer, launch your browser, type _adguard.com_ in the address bar, and press **Download** [on the page that opens](https://adguard.com/download.html?auto=1).
+To install AdGuard for Mac on your computer, launch your browser, type *adguard.com* in the address bar, and press **Download** [on the page that opens](https://adguard.com/download.html?auto=1).
 
 ![앱 다운로드 *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/1.jpg)
 
-_AdguardInstaller.dmg_가 다운로드될 때까지 기다렸다가 Dock 패널에 다운로드된 파일 목록에서 해당 아이콘을 두 번 클릭합니다.
+Wait for *AdguardInstaller.dmg* to download and double-click its icon in the list of downloaded files on the Dock panel.
 
 ![Double-click to open the file](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation_open_the_file.jpg)
 
@@ -45,7 +45,7 @@ AdGuard가 처음 시작되면 운영 체제에서 이 프로그램이 인터넷
 
 ![필요한 파일이 다운로드될 때까지 기다리세요](https://cdn.adtidy.org/content/kb/ad_blocker/mac/6.jpg)
 
-프로그램을 사용하시려면 macOS 계정의 관리자 암호가 필요합니다. 대화 상자에 암호를 입력하고 **확인**을 누릅니다.
+프로그램을 사용하시려면 macOS 계정의 관리자 암호가 필요합니다. Enter the password when prompted in the dialogue box and press **OK**.
 
 ![비밀번호 입력](https://cdn.adtidy.org/content/kb/ad_blocker/mac/7.jpg)
 
@@ -58,6 +58,7 @@ AdGuard가 처음 시작되면 운영 체제에서 이 프로그램이 인터넷
 ## 제거 방법
 
 ### 일반 제거 방법
+
 Finder 앱을 엽니다.
 
 ![폴더 열기](https://cdn.adtidy.org/public/Adguard/En/Articles/howtodelete/finder.png)

@@ -1,152 +1,154 @@
 ---
-title: Features overview
+title: Resumen de funciones
 sidebar_position: 1
 ---
 
 :::info
 
-This article is about the AdGuard Browser Extension, which safeguards only your browser. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Este artículo trata sobre la extensión del navegador de AdGuard, que protege solo tu navegador. Para proteger todo tu dispositivo, [descarga la aplicación AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-AdGuard provides a range of software products that block ads and trackers on different platforms. One of the most popular AdGuard products is a free extension that works in five popular browsers: Chrome, Firefox, Edge, Opera, and Yandex Browser. Browser extensions include basic ad-blocking features but cannot be compared with full-featured desktop programs, such as [AdGuard for Windows](/adguard-for-windows/overview) and [AdGuard for Mac](/adguard-for-mac/overview).
+AdGuard ofrece una gama de productos de software que bloquean anuncios y rastreadores en diferentes plataformas. Uno de los productos AdGuard más populares es una extensión gratuita que funciona en cinco navegadores populares: Chrome, Firefox, Edge, Opera y Yandex Browser. Las extensiones de navegador incluyen funciones básicas de bloqueo de anuncios, pero no se pueden comparar con programas de escritorio con todas las funciones, como [AdGuard para Windows](/adguard-for-windows/overview) y [AdGuard para Mac](/adguard-for-mac/overview).
 
-![AdGuard Browser Extension for Chrome *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
+![Extensión de navegador AdGuard para Chrome *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
 
-## Availability {#br-extension}
+## Disponibilidad {#br-extension}
 
-[AdGuard Browser Extension](https://adguard.com/en/adguard-browser-extension/overview.html) is available for most major browsers. You can easily find it in your browser’s online store or on our official website.
+La [extensión de navegador AdGuard](https://adguard.com/adguard-browser-extension/overview.html) está disponible para la mayoría de los principales navegadores. Puedes encontrarla fácilmente en la tienda en línea de tu navegador o en nuestro sitio web oficial.
 
-![Available for most popular browsers *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
+![Disponible para los navegadores más populares *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
 
 :::note
 
-We have a standalone extension for Safari. Since the release of [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html), most of the ad-blocking extensions have experienced huge issues and many of them stopped functioning. We had to develop a [separate extension for Safari](/adguard-for-safari/overview) that has some differences in comparison with the extension described in this article.
+Tenemos una extensión independiente para Safari. Desde el lanzamiento de [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html), la mayoría de las extensiones de bloqueo de anuncios han experimentado grandes problemas y muchas de ellas dejaron de funcionar. Tuvimos que desarrollar una extensión [para Safari](/adguard-for-safari/overview) que tiene algunas diferencias en comparación con la extensión descrita en este artículo.
 
 :::
 
-**Do not forget that the functionality of each extension is strictly limited by the browser’s capabilities.** So if you want to get full-fledged protection, consider installing a standalone program for your computer. There's [a reason why](#comparison).
+**No olvides que la funcionalidad de cada extensión está estrictamente limitada por las capacidades del navegador.** Entonces, si deseas obtener una protección completa, considera instalar un programa independiente para tu computadora. Hay [una razón para ello](#comparison).
 
-## Ad blocking {#adblocker}
+## Bloqueo de anuncios {#adblocker}
 
-Blocking ads is clearly the key functionality of any ad blocker, and AdGuard is not an exception. The extension will successfully block ads on any page in your browser. Ad blocking is based on so-called filter lists, or simply [filters](/general/ad-filtering/how-ad-blocking-works). Filters can be enabled or disabled in your extension's settings. You can customize ad blocking by activating specific filters.
+El bloqueo de anuncios es claramente la funcionalidad clave de cualquier bloqueador de anuncios y AdGuard no es una excepción. La extensión bloqueará con éxito los anuncios en cualquier página de tu navegador. El bloqueo de anuncios se basa en las listas de filtros, o simplemente [filtros](/general/ad-filtering/how-ad-blocking-works). Los filtros se pueden habilitar o deshabilitar en la configuración de tu extensión. Puedes personalizar el bloqueo de anuncios activando filtros específicos.
 
-### Filters {#filters}
+### Filtros {#filters}
 
-In essence, filter lists are sets of rules written in a special language. Your ad blocker interpretes the rules and implements them. As a result, you stop seeing ads on your webpages.
+En esencia, las listas de filtros son conjuntos de reglas escritas en un lenguaje especial. Tu bloqueador de anuncios interpreta las reglas y las implementa. Como resultado, dejarás de ver anuncios en tus páginas web.
 
-![Filters *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters.png)
+![Filtros *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters.png)
 
-All filters are grouped according to their role. For example, there are categories for ad-blocking filters, privacy protection filters, social media-related filters, etc. You can enable either individual filters or the entire group at once.
+Todos los filtros se agrupan según tu función. Por ejemplo, existen categorías para filtros de bloqueo de publicidad, filtros de protección de la privacidad, filtros relacionados con las redes sociales, etc. Puedes habilitar filtros individuales o todo el grupo a la vez.
 
-![Ad blocking filters *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters1.png)
+![Filtros de bloqueo de anuncios *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters1.png)
 
-#### Custom filters {#custom}
+#### Filtros personalizados {#custom}
 
-While the features of other filter groups are more or less predictable, there is a group called *Custom* that may raise additional questions.
+Si bien las características de otros grupos de filtros son más o menos predecibles, hay un grupo llamado *Personalizado* que puede generar dudas adicionales.
 
-![Custom filters *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters.png)
+![Filtros personalizados *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters.png)
 
-In this tab, you can add filters that are not present in the extension by default. There are plenty of [publicly available filters on the Internet](https://filterlists.com). Moreover, you can create and add your own filters. In fact, you can build any set of filters and customize ad blocking the way you like.
+En esta pestaña, puedes agregar filtros que no están presentes en la extensión de forma predeterminada. Hay muchos [filtros disponibles públicamente en Internet](https://filterlists.com). Además, puedes crear y agregar tus propios filtros. De hecho, puedes crear cualquier conjunto de filtros y personalizar el bloqueo de anuncios a tu gusto.
 
-To add a filter, just click *Add custom filter*, enter the URL or the file path of the filter you want to be added and click *Next*.
+Para agregar un filtro, simplemente haz clic en *Agregar filtro personalizado*, ingresa la URL o la ruta del archivo del filtro que deseas agregar y haz clic en *Siguiente*.
 
-![Add a custom filter *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
+![Añadir un filtro personalizado *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
 
-### User rules {#user-rules}
+### Reglas de usuario {#user-rules}
 
-*User rules* is another tool that helps you customize the blocking of ads.
+*Reglas de usuario* es otra herramienta que te ayuda a personalizar el bloqueo de anuncios.
 
-![User rules *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_user_rules.png)
+![Reglas de usuario *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_user_rules.png)
 
-There are several ways to add new rules. The most straightforward is to just type a rule in, but it requires some knowledge of the [rule syntax](/general/ad-filtering/create-own-filters).
+Hay varias formas de añadir nuevas normas. La más sencilla es simplemente escribir una regla, pero requiere cierto conocimiento de la [sintaxis de reglas](/general/ad-filtering/create-own-filters).
 
-You can import a ready-to-use filter list from a text file as well. **Make sure that different rules are separated by line breaks.** Note that importing a ready-to-use filter list is better done in the [Custom filters](#custom) tab.
+También puedes importar una lista de filtros lista para usar desde un archivo de texto. **Asegúrate de que las diferentes reglas estén separadas por saltos de línea.** Ten en cuenta que es mejor importar una lista de filtros lista para usar en la pestaña [Filtros personalizados](#custom).
 
-Besides, you can export your own filtering rules. This option is good for transferring your list of rules between browsers or devices.
+Además, puedes exportar tus propias reglas de filtrado. Esta opción es buena para transferir tu lista de reglas entre navegadores o dispositivos.
 
-When you add a website to the Allowlist (more on that [below](#allowlist)) or use the Assistant tool for hiding an element on the page, a corresponding rule is also saved in *User rules*.
+Cuando agregas un sitio web a la Lista de permitidos (más sobre esto [aqui](#allowlist)) o usa la herramienta Asistente para ocultar un elemento en la página, también se guarda una regla correspondiente en *Reglas de usuario*.
 
-### Allowlist {#allowlist}
+### Lista de permitido {#allowlist}
 
-The *allowlist* is used to exclude certain websites from filtering. Blocking rules are not applied to the websites on the list.
+La *lista de permitidos* se utiliza para excluir ciertos sitios web del filtrado. Las reglas de bloqueo no se aplican a los sitios web de la lista.
 
-![Allowlist *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist.png)
+![Lista de permitidos *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist.png)
 
-The *allowlist* can be inverted, too: you can unblock ads everywhere except on the websites added to this list. To do that, activate the *Invert allowlist* option.
+La *lista de permitidos* también se puede invertir: puedes desbloquear anuncios en todas partes excepto en los sitios web agregados a esta lista. Para ello, activa la opción *Invertir lista de permitidos* .
 
-![Invert allowlist *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist1.png)
+![Invertir lista de permitidos *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist1.png)
 
-You can also import and export existing allowlists. It is useful, for instance, if you want to apply the same allowing rules in each of your browsers.
+También puedes importar y exportar listas de permitidos existentes. Es útil, por ejemplo, si deseas aplicar las mismas reglas de permitidos en cada uno de tus navegadores.
 
-## Stealth Mode {#stealth-mode}
+## Modo sigiloso {#stealth-mode}
 
-*Stealth Mode* aims to ensure the protection of sensitive personal data from online trackers and fraudsters.
+El *Modo Sigiloso* tiene como objetivo garantizar la protección de datos personales confidenciales contra rastreadores y estafadores en línea.
 
-![Stealth Mode *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_stealth_mode.png)
+![Modo Sigiloso *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_stealth_mode.png)
 
-In Stealth Mode, you can prevent a website from seeing the search queries from you used to find it on the Internet, automatically delete third-party and website’s own cookies, etc. A [separate article](/general/stealth-mode) is devoted to all these features.
+En el modo sigiloso, puedes evitar que un sitio web vea las consultas de búsqueda que utilizaste para encontrarlo en Internet, eliminar automáticamente las cookies de terceros y del propio sitio web, etc. Un [artículo](/general/stealth-mode) fue dedicado a todas estas funciones.
 
 :::note
 
-Some of the *Stealth Mode* options available in full-fledged apps are not present in the browser extensions due to technical restrictions.
+Algunas de las opciones del *Modo Sigiloso* disponibles en aplicaciones completas no están presentes en las extensiones del navegador debido a restricciones técnicas.
 
 :::
 
-## Other features and options {#other}
+## Otras funciones y opciones {#other}
 
-Apart from the large key modules of AdGuard Browser Extension, there are several more specific features that can be configured in the *General* and *Additional settings* tabs of the extension settings.
+Además de los grandes módulos clave de la extensión de navegador AdGuard, hay varias funciones más específicas que se pueden configurar en las pestañas *General* y *Configuración adicional* de la extensión.
 
 ### General {#general}
 
-In the *General* tab, you can allow search ads and the [self-promotion of websites](/general/ad-filtering/search-ads), enable the automatic activation of language-specific filters, indicate the filters update interval, etc.
+En la pestaña *General*, puedes permitir los anuncios de búsqueda y la [autopromoción de sitios web](/general/ad-filtering/search-ads), habilitar la activación automática de filtros específicos de idioma, indicar el intervalo de actualización de los filtros, etc.
 
 ![General *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_general.png)
 
-Besides, here you can enable [*Phishing and malware protection*](/general/browsing-security).
+Además, aquí puedes habilitar la [*Protección contra phishing y malware*](/general/browsing-security).
 
-You can save your settings configuration by clicking the *Export settings* button. The settings will be saved as a .json file. To upload the previously saved settings configuration, use the *Import settings* function. You can even use it to quickly switch between different settings profiles or even to transfer settings configurations between different browsers.
+Puedes guardar tu configuración haciendo clic en el botón *Exportar configuración*. La configuración se guardará como un archivo .json. Para subir la configuración previamente guardada, utiliza la función *Importar configuración*. Incluso puedes usarlo para cambiar rápidamente entre diferentes perfiles de configuración o incluso para transferir configuraciones entre diferentes navegadores.
 
-### Additional settings {#misc}
+### Configuración adicional {#misc}
 
-The *Additional settings* section contains a range of various settings that are related to the ad blocking process and application usability.
+La sección *Configuraciones adicionales* contiene una variedad de configuraciones relacionadas con el proceso de bloqueo de anuncios y la usabilidad de la aplicación.
 
-![Additional settings *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_additional_settings.png)
+![Configuraciones adicionales *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_additional_settings.png)
 
-From this tab, you can activate optimized filters, enable notifications about extension updates, open the *Filtering log*, or clear the statistics of blocked ads and trackers.
+Desde esta pestaña, puedes activar filtros optimizados, habilitar notificaciones sobre actualizaciones de extensiones, abrir el *Registro de filtrado*o borrar las estadísticas de anuncios y rastreadores bloqueados.
 
-Besides, you can opt to help us with the development of filters by sending the statistics on applied rules: which ones are triggered, on which websites, and how often. This option is disabled by default as we do not collect user data without consent. Yet, if you enable it, all data will be strictly anonymized.
+Además, puedes optar por ayudarnos con el desarrollo de filtros enviándonos estadísticas sobre las reglas aplicadas: cuáles se activan, en qué sitios web y con qué frecuencia. Esta opción está deshabilitada de forma predeterminada ya que no recopilamos datos del usuario sin su consentimiento. Sin embargo, si lo habilitas, todos los datos serán estrictamente anónimos.
 
 ### Acerca de {#about}
 
-In the *About* section, you can find infos about the current version, links to the EULA and Privacy policy, and to the repository of the Browser extension on GitHub.
+En la sección *Acerca de*, puede encontrar información sobre la versión actual, enlaces al EULA y la política de privacidad, y al repositorio de la extensión del navegador en GitHub.
 
-![About *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)
+![Acerca de *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)
 
-## Extension’s main menu {#main-menu}
+## Menú principal de la extensión {#main-menu}
 
-The extension's main page can be accessed by clicking on the extension's icon on the toolbar of your browser.
+Puedes acceder a la página principal de la extensión haciendo clic en el icono de la extensión en la barra de herramientas de tu navegador.
 
-![Main menu *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
+![Menú principal *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
 
-On the main page, you can hide any element on any page manually (a corresponding rule will be added to the *User rules*), open the *Filtering log* to view the complete information about your browser's traffic and block requests on the go, or look at a website’s security report. Besides, you can submit a complaint about any website (for example, if there are missed ads on the page, our filter engineers will review the report and fix the problem) and see the statistics on applied blocking rules.
+En la página principal, puedes ocultar cualquier elemento en cualquier página manualmente (se agregará una regla correspondiente a las *Reglas de usuario*), abrir el *Registro de filtrado* para ver la información completa sobre el tráfico de tu navegador y bloquear solicitudes sobre el tráfego de tu navegador o consultar el informe de seguridad de un sitio web. Además, puedes enviar una queja sobre cualquier sitio web (por ejemplo, si quedan anuncios en la página, nuestros ingenieros de filtrado revisarán el informe y solucionarán el problema) y ver las estadísticas sobre las reglas de bloqueo aplicadas.
 
-All web requests made by the browser are displayed in the *Filtering log*, along with detailed information about each request. The *Filtering log* makes it easy, for example, to monitor requests blocked by AdGuard Browser Extension. Besides, it allows you to block any request or add a previously blocked request to Allowlist in two clicks. The *Filtering log* also offers you a wide variety of options for sorting web requests, which can be helpful when creating your own filtering rules. You can open the *Filtering log* by selecting the corresponding item in the main menu, or from the settings page (in the "Additional settings" tab).
+Todas las solicitudes web realizadas por el navegador se muestran en el *Registro de filtrado*, junto con información detallada sobre cada solicitud. El *registro de filtrado* facilita, por ejemplo, el seguimiento de las solicitudes bloqueadas por la extensión de navegador AdGuard. Además, te permite bloquear cualquier solicitud o agregar una solicitud previamente bloqueada a la Lista de permitidos con dos clics. El *registro de filtrado* también te ofrece una amplia variedad de opciones para ordenar solicitudes web, lo que puede resultar útil a la hora de crear tus propias reglas de filtrado. Puedes abrir el *registro de filtrado* seleccionando el elemento correspondiente en el menú principal o desde la página de configuración (en la pestaña "Configuración adicional").
 
-By clicking the icons in the top right corner of the extension's main menu, you can open the extension settings or pause the protection.
+Al hacer clic en los íconos en la esquina superior derecha del menú principal de la extensión, puedes abrir la configuración de la extensión o pausar la protección.
 
-## AdGuard Browser Extension vs. standalone apps {#comparison}
+## Extensión de navegador AdGuard vs. aplicaciones independientes {#comparison}
 
-The main advantage of AdGuard standalone programs over browser extensions is that the programs can block ads in every browser and in almost all apps. You may use different browsers at the same time, the app will filter ads and online threats in all of them equally well.
+<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/ZGwceZP-0mM" title="Reproductor de vídeo de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-The second difference is that the possibilities of extension-based ad blockers are strictly limited by browser guidelines. The browser extensions have to conform to the policies of the browsers, where ad blocking might be restricted. Thus, some types of filtering rules are not supported by the extensions. The functionality of the desktop apps is not limited, so they have a better filtering quality.
+La principal ventaja de los programas independientes AdGuard sobre las extensiones de navegador es que los programas pueden bloquear anuncios en todos los navegadores y en casi todas las aplicaciones. Puedes utilizar diferentes navegadores al mismo tiempo, la aplicación filtrará anuncios y amenazas online en todos ellos igualmente bien.
 
-Whereas AdGuard Browser Extension is free and easy to install, and has filters to block ads and fight online threats, the full-fledged apps are more powerful and have a list of advanced features. See all the differences in the comparative table below.
+La segunda diferencia es que las posibilidades de los bloqueadores de anuncios basados en extensiones están estrictamente limitadas por las directrices del navegador. Las extensiones del navegador deben ajustarse a las políticas de los navegadores, donde el bloqueo de anuncios puede estar restringido. Por lo tanto, las extensiones no admiten algunos tipos de reglas de filtrado. La funcionalidad de las aplicaciones de escritorio no está limitada, por lo que tienen una mejor calidad de filtrado.
 
-![Extension vs. App *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_comparison.png)
+Mientras que la extensión de navegador AdGuard es gratuito y fácil de instalar, y tiene filtros para bloquear anuncios y combatir amenazas en línea, las aplicaciones completas son más potentes y tienen una lista de funciones avanzadas. Consulta todas las diferencias en el cuadro comparativo que figura a continuación.
 
-`1` – within browser restrictions and only in the browser where it is installed;
+![Extensión vs. App *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_comparison.png)
 
-`2` – the extension is unable to detect requests from other extensions. If a malicious or tracking extension sends a request to its server to show you ads or track your activity, AdGuard Browser Extension will not be able to block that request;
+`1` – dentro de las restricciones del navegador y sólo en el navegador donde está instalado;
 
-`3` – not all types of ads and threats can be blocked by browser extensions due to certain browser limitations. Some elements may get to the page and slow down the loading process. Besides, unlike browser-based ad blockers, the AdGuard app blocks ads before they are loaded to the browser. This saves traffic and speeds up page loading.
+`2`: la extensión no puede detectar solicitudes de otras extensiones. Si una extensión maliciosa o de seguimiento envía una solicitud a tu servidor para mostrarte anuncios o realizar un seguimiento de tu actividad, la extensión de navegador AdGuard no podrá bloquear esa solicitud;
+
+`3`: las extensiones de navegador no pueden bloquear todos los tipos de anuncios y amenazas debido a ciertas limitaciones del navegador. Algunos elementos pueden llegar a la página y ralentizar el proceso de carga. Además, a diferencia de los bloqueadores de anuncios para navegador, la aplicación AdGuard bloquea los anuncios antes de que se carguen en el navegador. Esto ahorra tráfico y acelera la carga de la página.

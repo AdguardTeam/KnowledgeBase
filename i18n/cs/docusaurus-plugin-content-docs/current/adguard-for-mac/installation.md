@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -21,11 +21,11 @@ Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, kter
 
 ## Instalace
 
-Chcete-li do počítače nainstalovat AdGuard pro macOS, spusťte prohlížeč, do adresního řádku zadejte _adguard.com_ a stiskněte **Stáhnout** [na otevřené stránce](https://adguard.com/download.html?auto=1).
+Chcete-li do počítače nainstalovat AdGuard pro macOS, spusťte prohlížeč, do adresního řádku zadejte *adguard.com* a stiskněte **Stáhnout** [na otevřené stránce](https://adguard.com/download.html?auto=1).
 
 ![Download the app *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/1.jpg)
 
-Počkejte, až se stáhne soubor _AdguardInstaller.dmg_ a dvakrát klikněte na jeho ikonu v seznamu stažených souborů na panelu Doku.
+Počkejte, až se stáhne soubor *AdguardInstaller.dmg* a dvakrát klikněte na jeho ikonu v seznamu stažených souborů na panelu Doku.
 
 ![Double-click to open the file](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation_open_the_file.jpg)
 
@@ -58,6 +58,7 @@ A je to tady, AdGuard je na vašem Macu nainstalován!
 ## Odinstalace
 
 ### Obvyklá
+
 Nejprve otevřete aplikaci Finder kliknutím na příslušnou ikonu:
 
 ![Open Finder](https://cdn.adtidy.org/public/Adguard/En/Articles/howtodelete/finder.png)

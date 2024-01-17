@@ -7,7 +7,7 @@ Tato stránka popisuje funkce a podrobnosti centrální správy zásad a předvo
 
 ## 1. Stažení MSI {#msi-download}
 
-Stáhněte si [AdGuard MSI](https://cdn.adtidy.org/distr/windows/AdGuard.msi).
+Stáhněte si [AdGuard MSI](https://static.adtidy.org/windows/setup.msi).
 
 ## 2. Konfigurace nastavení pro vaši síť {#settings-configuring}
 
@@ -27,7 +27,11 @@ Jinak můžete MSI spustit na cílovém počítači přímo (a nezjištně) pomo
 
 Pokud potřebujete spustit aktualizaci, použijte tento příkaz: `Msiexec /q /i AdGuard.msi REINSTALL=ALL REINSTALLMODE=vomus`
 
-**Upozorňujeme, že tyto příkazy musíte spouštět s právy administrátora.**
+:::note
+
+Tyto příkazy musíte spouštět s právy administrátora.
+
+:::
 
 Pokud chcete nainstalovat AdGuard do počítače se systémem Windows 7 ujistěte se, že je v něm nainstalován profil Client .NET 4: https://www.microsoft.com/en-us/download/details.aspx?id=24872
 

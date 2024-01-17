@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+이 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 iOS용 AdGuard에 대해 다룹니다. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 

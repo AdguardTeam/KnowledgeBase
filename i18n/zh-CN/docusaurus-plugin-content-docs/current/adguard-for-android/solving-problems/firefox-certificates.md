@@ -5,7 +5,7 @@ sidebar_position: 11
 
 :::info
 
-This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+本文适用于安卓版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock).
 
 :::
 
@@ -21,52 +21,66 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 为了让 AdGuard 证书在火狐浏览器中受信任，请执行以下操作：
 
-1. 打开浏览器
-2. Go to **Settings** → **About Firefox**.
+1. Run the browser.
 
-![关于 Firefox *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
+1. Go to **Settings** → **About Firefox**.
 
-3. 点击 Firefox 徽标五次
-4. Navigate to **Settings** → **Secret Settings**.
+    ![About Firefox *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
 
-![秘密设置 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
+1. Tap the Firefox logo five times.
 
-5. 开启**使用第三方 CA 证书**（Use third party CA certificates）
+1. Navigate to **Settings** → **Secret Settings**.
+
+    ![Secret Settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
+
+1. Toggle **Use third party CA certificates**.
 
 ### Method 2
 
 :::note
 
-此方法仅在有 **Root 权限**的设备上有效。
+This method will only work on **rooted** devices.
 
 :::
 
 1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
-2. 启用**「开发者模式」**以及开启**「USB 调试」**：
+
+1. Activate the **developer mode** and enable **USB debugging**:
+
     - Open the **Settings** app on your phone;
-    - 前往**系统**部分（设置中最后一项选项）。 In this section, find the sub-item **About phone**;
-    - Tap the **Build number** line 7 times. 之后您将会收到通知说明现在**您是开发人员**（如需要的话，输入解锁密码）；
+    - Go to **System** section (last item in the settings menu). In this section, find the sub-item **About phone**;
+    - Tap the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
     - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
-3. 安装[火狐浏览器](https://www.mozilla.org/en-US/firefox/releases/)（发布版本）；
-4. Open the **AdGuard settings** → **Network** → **HTTPS Filtering** → Install the certificate in **Firefox** → **INSTALL FOR OLD VERSIONS**;
-5. 使用 `adb shell su` 和 `cd data/data/...` 打开 `data/data/org.mozilla.firefox/files/mozilla` 文件夹，找 `xxxxxxx.default` 文件并记住其名称；
-6. 在指定文件夹里我们需要两个文件：
+
+1. Install the [Firefox](https://www.mozilla.org/en-US/firefox/releases/) browser (release version);
+
+1. Open the **AdGuard settings** (gear icon in the bottom right corner) → **Filtering** → **Network** → **HTTPS filtering** → **Security certificate** → **Instructions for Firefox** → **Install for old versions**;
+
+1. Open the folder `data/data/org.mozilla.firefox/files/mozilla` using `adb shell su` and `cd data/data/...`, then browse to the folder named `xxxxxxx.default` and memorize its name;
+
+1. In the specified folder we are interested in two files:
+
     - `cert9.db`
     - `key4.db`
-7. 我们需要将这些文件移到发生安全证书问题的浏览器的一个文件夹中：
-- `data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyy.default`。
-8. 完整命令如下所示：
+
+1. We need to move these files to a folder of the browser where the security certificate issue occurred:
+
+    - `data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyy.default`.
+
+1. The full command will look like this:
+
     - `adb shell su`
     - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxxx.default/cert9.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
     - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxxx.default/key4.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
 
-如您收到**权限不足**的系统提示，请您先将指定文件移动至无权限目录。 然后再将它们移动至火狐浏览器中特定的文件夹里。
+    In case you received the system notification **permission denied**, you should first move the specified files to the permission-free directory. And after that you should move them to the necessary folder in your Firefox browser.
 
-完整命令的样式大体如下：
-- `adb shell su`
-- `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxx.default/cert9.db sdcard/Download`
-- `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxx.default/key4.db sdcard/Download`
-- `cp -R sdcard/Download/cert9.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
-- `cp -R sdcard/Download/key4.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
+    The full command should look something like this:
 
-如果 `adb shell su` 不起作用，请先尝试使用 `adb shell`，然后再使用 `su`。
+    - `adb shell su`
+    - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxx.default/cert9.db sdcard/Download`
+    - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxx.default/key4.db sdcard/Download`
+    - `cp -R sdcard/Download/cert9.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
+    - `cp -R sdcard/Download/key4.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
+
+    If `adb shell su` does not work, you should try `adb shell` initially, and then `su`.

@@ -1,36 +1,36 @@
 ---
-title: Two-factor authentication
+title: 二要素認証
 sidebar_position: 3
 ---
 
-Two-factor authentication (or 2FA) is an authentication method that requires an additional piece of evidence from the user to log in, on top of the usual login and password pair. This is done for security purposes. Websites usually offer such 2FA methods as a code sent by SMS or a special authenticator app.
+二要素認証（2FA、Two-Factor Authentication）は、ログインするために、通常のログインとパスワードに加え、ユーザーからの追加の証拠を要求する認証方法です。 これはアカウントのセキュリティを向上するためです。 ウェブサイトの多くは通常、SMSで送信されるコードや特別な認証アプリなどという2FA方法を提供しています。
 
-We see adding a 2FA option as a benefit. We also understand that enforcing it may irritate some users. That's why we made it optional for your personal account on adguard.com — by default, 2FA is disabled when you register a new account. You can enable it manually in the settings. As for the currently available authentication methods, we use the tried and tested one: an authenticator app for Android or iOS. You can use almost any such app, and there are plenty of them.
+私たちも、2FAオプションを追加することはメリットだと考えています。 それと同時に、2FAを強制するのは一部のユーザーを苛立たせる可能性があることも理解しております。 そのため、adguard.com のマイ・アカウントでは2FAを任意オプションにしています。デフォルトでは、新規アカウント登録後に2FAは無効になっています。 アカウント設定から手動で有効にできます。 現在利用可能な認証方法としては、私たちは試行錯誤を重ねたものである、AndroidまたはiOS用の認証アプリという方法を使っています。 このような認証アプリはたくさんあり、いずれも使って構いません。
 
-We recommend setting up two-factor authentication for your AdGuard account. It won't take you long, but it will help protect your license keys, subscriptions, and, most importantly, any personal information associated with the account.
+AdGuardアカウントに二要素認証を設定することをお勧めします。 時間はあまりかからなく、ライセンスキー、サブスクリプション、アカウントに関連する個人情報を保護するのに役立ちます。
 
+## 設定方法
 
-## How to set it up
+1. [AdGuardアカウント](https://auth.adguard.com/login.html) にログインし、「設定」タブに移動します:
 
-1) Log into your [AdGuard account](https://auth.adguard.com/login.html) and go to the Settings tab:
+![AdGuard アカウント設定  *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/account_settings.png)
 
-![AdGuard Account settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/account_settings.png)
+1. 「*パスワードと2FA（二要素認証）*」セクションまでスクロールダウンし、「**有効にする**」をクリックします:
 
-2) Scroll down to *Password and 2FA* section and click **Enable**:
+![「有効にする」ボタン *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_new.png)
 
-![The Change button *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_new.png)
+1. 画面の手順をもとに認証アプリをインストールして、認証アプリでQRコードをスキャンします:
 
-3) Follow the on-screen instructions to install an authenticator app and scan the QR code:
+![認証コード](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_enable.png)
 
-![The verification code](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_enable.png)
+***【重要】***
 
-***Important***
-* Save the second-factor backup code somewhere, it will be necessary to recover your account in case your mobile phone gets lost or stolen;
+- 二要素認証のバックアップコードをメモ・保存しておいてください。このコードは端末を紛失したり盗まれたりした場合にアカウントを復帰するために必要です。
 
-If everything is done right, you will see this when you log into your account the next time:
+設定が正しく完了していれば、次回アカウントにログインしたときにこのように、二要素認証の画面が表示されます:
 
-![The result *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_success.png)
+![完了 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_success.png)
 
-Use your mobile authenticator app to read the code and enter it. You should be logged in now!
+モバイル認証アプリを使ってコードを読み取り、入力します。 これでログイン完了です。
 
-***NOTE***: If you get an authentication error, check the clock on your phone. Adjust it if needed, as an unsynchronized clock may be the cause of the error.
+***※***認証エラーが発生した場合は、端末の時計を確認してください。 時計が同期していないことがエラーの原因である可能性があるため、必要に応じて調整してください。

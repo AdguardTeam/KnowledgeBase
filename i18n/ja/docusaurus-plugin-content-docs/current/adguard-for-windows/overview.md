@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -38,13 +38,14 @@ This is the main module of AdGuard for Windows that removes ads from the website
 ![Ad Blocker *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/ad-blocker.png)
 
 In the Ad Blocker module you can:
-* enable automatic activation of language-specific filters,
-* disable [search ads and self-promotion](/general/ad-filtering/search-ads) blocking,
-* activate pre-installed filters such as *AdGuard Base filter*,
-* install filters from the list or add a custom filter by clicking the *Add a filter* button,
-* make changes to existing rule groups using the *Filter editor* button,
-* see all the requests sent by browsers and apps installed on your computer by clicking the *Filtering log* button. From there you can also block or unblock any request by creating a custom rule,
-* compose a filter from your own rules written manually, imported or created with the AdGuard Assistant extension.
+
+- enable automatic activation of language-specific filters,
+- disable [search ads and self-promotion](/general/ad-filtering/search-ads) blocking,
+- activate pre-installed filters such as *AdGuard Base filter*,
+- install filters from the list or add a custom filter by clicking the *Add a filter* button,
+- make changes to existing rule groups using the *Filter editor* button,
+- see all the requests sent by browsers and apps installed on your computer by clicking the *Filtering log* button. From there you can also block or unblock any request by creating a custom rule,
+- compose a filter from your own rules written manually, imported or created with the AdGuard Assistant extension.
 
 Before you start manually writing your own rules read our detailed [syntax guide](/general/ad-filtering/create-own-filters).
 
@@ -63,9 +64,10 @@ To learn everything about Stealth Mode and its many options, [read this article]
 Browsing Security gives strong protection against malicious and fishing websites. No, AdGuard for Windows is not an antivirus. It will neither stop the download of a virus when it's already started, nor delete the already existing ones. But it will warn you if you're about to proceed to a website whose domain has been added to our "untrusted sites" database, or to download a file from such website. You can find more information about how this module works in the [dedicated article](/general/browsing-security).
 
 In this module you can
-* enable notifications to block requests to malicious and phishing sites,
-* activate sound notifications,
-* agree to submit anonymous security-related info to the AdGuard server to help us keep the malicious and fishing websites database up to date.
+
+- enable notifications to block requests to malicious and phishing sites,
+- activate sound notifications,
+- agree to submit anonymous security-related info to the AdGuard server to help us keep the malicious and fishing websites database up to date.
 
 ![Browsing Security *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/browsing-security.png)
 
@@ -77,7 +79,7 @@ There are three significant reasons why you might want to explore the DNS protec
 
 ![DNS Protection *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/dns-settings.png)
 
-In the DNS protection module of AdGuard for Windows you can select the DNS servers from known DNS providers, including [AdGuard DNS](https://adguard-dns.io/kb/) that blocks ads and trackers, AdGuard DNS Family Protection that in addition blocks adult content, or AdGuard DNS Non-filtering that provides a secure and reliable connection, but doesn't filter anything. You can even add custom DNS servers. Also there is an option to add custom rules using [DNS rules syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/). And if necessary, you can add [DNS filters of your choice](https://filterlists.com).
+In the DNS protection module of AdGuard for Windows you can select the DNS servers from known DNS providers, including [AdGuard DNS](https://adguard-dns.io/kb/) that blocks ads and trackers, AdGuard DNS Family Protection that in addition blocks adult content, or AdGuard DNS Non-filtering that provides a secure and reliable connection, but doesn't filter anything. You can even add custom DNS servers. Also there is an option to add custom rules using [DNS rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/). And if necessary, you can add [DNS filters of your choice](https://filterlists.com).
 
 ### Parental Control
 
@@ -123,7 +125,7 @@ AdGuard Extra is essentially a mini-program that changes the way pages work,and 
 
 **AdGuard Popup Blocker**
 
-This extension prevents popup windows from opening when you view web pages. Some pop-ups are considered useful – they may contain settings for site administering or additional reference information demonstrated upon clicking a link. That is why you can turn off the Blocker if needed. This extension doesn’t work on websites added to the AdGuard exceptions list either. It is turned off by default, but you can turn it on in the application settings. You will find more detailed information about this extension in our Knowledge base.
+This extension prevents popup windows from opening when you view web pages. Some pop-ups are considered useful — they may contain settings for site administering or additional reference information demonstrated upon clicking a link. That is why you can turn off the Blocker if needed. This extension doesn’t work on websites added to the AdGuard exceptions list either. It is turned off by default, but you can turn it on in the application settings. You will find more detailed information about this extension in our Knowledge base.
 
 **Web of Trust**
 
@@ -147,10 +149,10 @@ How does AdGuard VPN work? Without going into technical details, we can say that
 
 **What AdGuard VPN does:**
 
-* hides your real whereabouts and helps you stay anonymous
-* сhanges your IP address to protect your data from tracking
-* encrypts your traffic to make it unreachable to scammers
-* lets you configure where to use VPN and where not to (exclusions feature)
+- hides your real whereabouts and helps you stay anonymous
+- changes your IP address to protect your data from tracking
+- encrypts your traffic to make it unreachable to scammers
+- lets you configure where to use VPN and where not to (exclusions feature)
 
 To get more information about AdGuard VPN dive into the [AdGuard VPN Knowledge Base](https://adguard-vpn.com/kb/).
 
@@ -169,8 +171,9 @@ By clicking the Support tab you will open a dialog box through which you can rep
 ![License *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
 
 This tab contains information about your license. Here you can:
-* find out the license type (nightly build, beta or release), the number of devices available for simultaneous connection to AdGuard, the license expiration date;
-* click the button to go to the license purchase page, and activate, reset or recover a license.
+
+- find out the license type (nightly build, beta or release), the number of devices available for simultaneous connection to AdGuard, the license expiration date;
+- click the button to go to the license purchase page, and activate, reset or recover a license.
 
 ### AdGuardについて
 
@@ -188,13 +191,13 @@ To check for filters and userscripts updates, click the rotating arrows icon in 
 
 To save you time navigating around AdGuard menus, many of the frequently used options and settings are available from the tray menu. To call the menu, right-click the AdGuard icon in the tray. It will offer you the following options:
 
-* enable protection
-* disable protection: completely or for 30 seconds
-* go to *Settings*
-* open the *Tools* and *Advanced* menus
-* check for filter updates
-* check for app updates
-* to recall the last pop-up message
-* reach the *Support* and *About* sections
-* close AdGuard, but continue filtering
-* exit AdGuard
+- enable protection
+- disable protection: completely or for 30 seconds
+- go to *Settings*
+- open the *Tools* and *Advanced* menus
+- check for filter updates
+- check for app updates
+- to recall the last pop-up message
+- reach the *Support* and *About* sections
+- close AdGuard, but continue filtering
+- exit AdGuard

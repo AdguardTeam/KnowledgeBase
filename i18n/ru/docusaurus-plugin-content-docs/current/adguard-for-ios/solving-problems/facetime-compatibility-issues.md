@@ -5,7 +5,7 @@ sidebar_position: 3
 
 :::info
 
-This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+В этой статье рассказывается об AdGuard для iOS — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -20,6 +20,7 @@ This article covers AdGuard for iOS, a multifunctional ad blocker that protects 
 ![Экран туннельного режима *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ru/iOS/tunnel-mode.PNG?!)
 
 Чтобы включить его, следуйте инструкции:
+
 1. Откройте AdGuard для iOS и перейдите в *Настройки* → *Общие настройки*.
 2. Включите *Расширенный режим* и перейдите к разделу *Расширенные настройки* , который появится сразу после этого.
 3. Откройте *Туннельный режим* и выберите *Split-Tunnel*.

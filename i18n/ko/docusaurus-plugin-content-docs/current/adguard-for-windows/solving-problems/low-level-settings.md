@@ -5,7 +5,7 @@ sidebar_position: 7
 
 :::info
 
-This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+본 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Windows용 AdGuard에 대해 다룹니다. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -61,6 +61,10 @@ Chrome 인증서 투명성 정책에 따라 도메인의 모든 인증서를 확
 
 AdGuard가 필터 구독 URL(예: `abp:subscribe` 등)을 자동으로 가로채고 사용자 정의 필터 설치 대화 상자를 열도록 하려면 이 기능을 활성화합니다.
 
+### Filter HTTP/3
+
+If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
+
 ### 리디렉션 드라이버 모드 사용
 
 이 옵션을 활성화하면 AdGuard가 모든 트래픽을 가로채서 추가 필터링을 위해 로컬 프록시 서버로 리디렉션합니다.
@@ -75,7 +79,11 @@ AdGuard가 필터 구독 URL(예: `abp:subscribe` 등)을 자동으로 가로채
 
 7.12 버전부터 시스템 시작 시 AdGard 실행 옵션이 비활성화되어 있는 경우, 기본적으로 AdGard 서비스는 OS 시작 후 트래픽을 필터링하지 않습니다. 즉, AdGuard의 서비스는 '유휴' 모드에서 시작됩니다. 이 옵션을 활성화하면 앱이 실행되지 않은 상태에서도 AdGuard가 트래픽을 필터링하도록 설정할 수 있습니다.
 
-*Note that before v7.12 the AdGuard's service started in filtering mode by default (even if the *Launch AdGuard at system start-up* was disabled). If you were satisfied with the old behavior, enable this option.*
+:::note
+
+Before v7.12, the AdGuard service started in filtering mode by default (even if the *Launch AdGuard at system start-up* was disabled). If you were satisfied with the old behavior, enable this option.
+
+:::
 
 ### 로컬 호스트 필터링
 
@@ -129,13 +137,21 @@ Valid values: 1–1500. 잘못된 크기를 지정하면 시스템에서 선택�
 
 킵얼라이브 프로브를 보내기 전에 유휴 기간을 초 단위로 지정할 수 있습니다. If 0 is specified, the value selected by the system will be used.
 
-이 설정은 *TCP 연결 유지 사용* 옵션이 활성화된 경우에만 작동합니다.
+:::note
+
+This setting only works when the *Enable TCP keepalive* option is enabled.
+
+:::
 
 ### TCP 연결 유지 시간 초과
 
 Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. 0을 지정하면 시스템에서 선택한 값이 사용됩니다.
 
-이 설정은 *TCP 연결 유지 사용* 옵션이 활성화된 경우에만 작동합니다.
+:::note
+
+This setting only works when the *Enable TCP keepalive* option is enabled.
+
+:::
 
 ### Java 차단
 
@@ -169,17 +185,17 @@ AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to
 
 [호스트 규칙 구문](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax)을 기반으로 DNS 규칙에 의해 차단된 도메인에 대해 AdGuard가 응답하는 방식을 선택할 수 있습니다.
 
-* 'Refused' 오류로 회신
-* 'NxDomain' 오류로 회신
-* 사용자 정의 IP 주소로 회신
+- 'Refused' 오류로 회신
+- 'NxDomain' 오류로 회신
+- 사용자 정의 IP 주소로 회신
 
 ### adblock-style 규칙을 위한 차단 모드
 
 여기에서 [adblock-style 구문](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax)을 기반으로 DNS 규칙에 의해 차단된 도메인에 AdGuard가 응답하는 방식을 선택할 수 있습니다.
 
-* 'Refused' 오류로 회신
-* 'NxDomain' 오류로 회신
-* 사용자 정의 IP 주소로 회신
+- 'Refused' 오류로 회신
+- 'NxDomain' 오류로 회신
+- 사용자 정의 IP 주소로 회신
 
 ### 사용자 정의 IPv4
 
@@ -193,9 +209,9 @@ AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to
 
 여기에서 주 서버가 다음 섹션에서 지정한 시간 제한 기간 내에 응답하지 않을 경우, DNS 요청을 다시 라우팅할 대체 DNS 서버를 지정할 수 있습니다. 세 가지 옵션 중에서 선택할 수 있습니다.
 
-* 폴백 서버를 사용하지 않음
-* 시스템 기본 서버 사용
-* 사용자 정의 서버 사용
+- 폴백 서버를 사용하지 않음
+- 시스템 기본 서버 사용
+- 사용자 정의 서버 사용
 
 ### ECH 차단
 

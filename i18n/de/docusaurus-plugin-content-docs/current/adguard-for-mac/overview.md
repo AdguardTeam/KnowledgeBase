@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Dieser Artikel behandelt AdGuard für Mac, einen multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -46,11 +46,12 @@ Filter sind die wichtigste treibende Kraft hinter dem Werbeblocker-Modul. Um zu 
 Einige Filterlisten (AdGuards Basisfilter, Belästigungsfilter, EasyList usw.) sind vorinstalliert, während andere spezifische, an Ihre Vorlieben angepasste, zusätzlich heruntergeladen und Ihrem Programm hinzugefügt werden können.
 
 Neben den allgemeineren und universell einsetzbaren Filtern (wie Basisfilter) bietet AdGuard eine umfangreiche Menge an Filtern für jeden Anlass:
-* Filter zur Verhinderung von Tracking (Tracking-Schutzfilter),
-* sprachspezifische Werbefilter, die Inhalte in einer ausgewählten Sprache blockieren,
-* Social-Media-Filter, der die Schaltflächen „Gefällt mir“ und „Teilen“ entfernt,
-* Belästigungsfilter für Cookie-Warnungen, In-Page-Pop-ups und andere der gleichen Art,
-* und sogar ein Filter, der einige Anzeigen entsperrt, anstatt sie zu blockieren – Filter für Suchanzeigen und Eigenwerbung.
+
+- Filter zur Verhinderung von Tracking (Tracking-Schutzfilter),
+- sprachspezifische Werbefilter, die Inhalte in einer ausgewählten Sprache blockieren,
+- Social-Media-Filter, der die Schaltflächen „Gefällt mir“ und „Teilen“ entfernt,
+- Belästigungsfilter für Cookie-Warnungen, In-Page-Pop-ups und andere der gleichen Art,
+- und sogar ein Filter, der einige Anzeigen entsperrt, anstatt sie zu blockieren – Filter für Suchanzeigen und Eigenwerbung.
 
 AdGuard-Filter werden automatisch aktualisiert. Unsere Entwickler erstellen sie alle basierend auf dem erhaltenen Benutzerfeedback. Sie können anderen AdGuard-Benutzern (und perspektivisch sich selbst) jederzeit helfen, indem Sie uns Berichte direkt aus dem Assistenten der App oder von der [-Website](https://agrd.io/report) senden. Wenn Sie mehr über AdGuard-Filter wissen möchten, finden Sie hier [einige Informationen](/general/ad-filtering/adguard-filters).
 
@@ -66,7 +67,7 @@ Ein weiterer wichtiger Bestandteil des Werbeblocker-Moduls sind seine Benutzerre
 
 Die DNS-Filterung ist eine der nützlichsten Funktionen, dank derer Ihr gesamter DNS-Verkehr verschlüsselt wird. Wenn Sie den Standard-DNS-Server Ihres Internetanbieters verwenden, ist Ihr DNS-Datenverkehr wahrscheinlich nicht verschlüsselt und anfällig für Snooping und Hijacking.
 
-Im DNS-Panel können Sie die DNS-Server von bekannten DNS-Anbietern auswählen oder sogar benutzerdefinierte DNS-Server hinzufügen. Sie können auch Domains zur DNS-Sperrliste oder -Zulassungsliste hinzufügen und komplizierte Regeln mithilfe der DNS-Regelsyntax hinzufügen. Schließlich können Sie [DNS-Filter Ihrer Wahl hinzufügen](https://filterlists.com).
+Im DNS-Panel können Sie die DNS-Server von bekannten DNS-Anbietern auswählen oder sogar benutzerdefinierte DNS-Server hinzufügen. Also you can add domains to DNS blocklist or allowlist and add complicated rules using DNS rule syntax. Schließlich können Sie [DNS-Filter Ihrer Wahl hinzufügen](https://filterlists.com).
 
 ## Privatsphäre
 
@@ -102,11 +103,11 @@ Die Hauptfunktion des AdGuard Browser-Assistenten besteht darin, die Filterung d
 
 ![Pop-up-Menü des Assistenten *mobil](https://cdn.adtidy.org/content/kb/ad_blocker/mac/safari_assistant_pop-up_menu.jpg)
 
-Bei der Erstinstallation von AdGuard (während des Einführungsprozesses) werden Sie aufgefordert, den Browser-Assistenten für Ihren Standardbrowser zu installieren. Falls Sie es verpasst haben, können Sie es [jederzeit für jeden Browser](https://adguard.com/en/adguard-assistant/overview.html) herunterladen.
+Bei der Erstinstallation von AdGuard (während des Einführungsprozesses) werden Sie aufgefordert, den Browser-Assistenten für Ihren Standardbrowser zu installieren. If you missed it, you can [download it for any browser](https://adguard.com/adguard-assistant/overview.html) at any time.
 
 ## Erweiterungen
 
-![Extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Extensions.jpg)
+![Erweiterungen](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Extensions.jpg)
 
 Erweiterungen sind kleine Programme, die genau das tun, was ihr Name andeutet – sie erweitern die Funktionalität. Und AdGuard verwendet mehrere eigene Erweiterungen, auch Userscripts genannt, um seinen Funktionsumfang zu erweitern:
 

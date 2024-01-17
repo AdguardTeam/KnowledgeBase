@@ -9,7 +9,9 @@ AdGuard nabízí mnoho produktů pro blokování reklam pro různé platformy a 
 
 Zde se nezabýváme DNS filtrováním. Jedná se o jiný způsob blokování reklam, který má své výhody i nevýhody. Kliknutím na tento odkaz získáte [další informace o DNS filtrování](https://adguard-dns.io/kb/general/dns-filtering#how-does-dns-filtering-work).
 
-:::
+:::  
+
+<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/Xq_CUdh0T_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Obecný princip
 
@@ -21,7 +23,7 @@ Základem každého blokátoru reklam jsou seznamy filtrů, kterým se také ř�
 
 Pro lepší pochopení blokování reklam je důležité znát základní principy fungování filtrů.
 
-Pravidla filtrování, ze kterých se filtry skládají, se nevytvářejí automaticky. Vyvíjejí je správci filtrů, včetně profesionálů a dobrovolníků, kteří pomocí vývojářských konzolí prohlížeče a dalších nástrojů (např. protokolu filtrování AdGuard) určují, která pravidla budou blokovat konkrétní reklamu nebo slídič. Tento popis procesu je velmi zjednodušený – některé reklamy je obzvláště obtížné zablokovat a vyžadují více pravidel, více iterací a použití složité syntaxe.
+Pravidla filtrování, ze kterých se filtry skládají, se nevytvářejí automaticky. Vyvíjejí je správci filtrů, včetně profesionálů a dobrovolníků, kteří pomocí vývojářských konzolí prohlížeče a dalších nástrojů (např. protokolu filtrování AdGuard) určují, která pravidla budou blokovat konkrétní reklamu nebo slídič. Tento popis procesu je velmi zjednodušený — některé reklamy je obzvláště obtížné zablokovat a vyžadují více pravidel, více iterací a použití složité syntaxe.
 
 A i když je pravidlo nakonec přidáno do filtru, neznamená to, že tam zůstane navždy. Mění se reklamy, mění se způsoby zobrazování stejných reklam na stejných webových stránkách a musí se měnit i pravidla filtrování. Někdy pravidla zastarají, objeví se nová reklama nebo je potřeba nové pravidlo filtrování pro blokování stejné reklamy. Filtry často spravuje jeden člověk, ale ani tým správců nemůže neustále sledovat celý web. Proto má mnoho blokátorů reklam nástroje, které uživatelům pomáhají snadno nahlásit problémy související s filtrem.
 

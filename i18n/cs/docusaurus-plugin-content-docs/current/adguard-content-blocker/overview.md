@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-Tento článek je o Blokátoru obsahu AdGuard, který chrání pouze váš internetový prohlížeč Samsung nebo prohlížeč Yandex. Chcete-li chránit celé zařízení, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+Tento článek je o Blokátoru obsahu AdGuard, který chrání pouze váš internetový prohlížeč Samsung nebo prohlížeč Yandex. Chcete-li chránit celé zařízení, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -15,7 +15,7 @@ Plnohodnotné blokátory reklam nelze v Google Play zveřejnit kvůli zásadám 
 
 Jako alternativu nabízí Google vývojářům rozhraní API pro blokování obsahu. Rozhraní API má přísná omezení a v současné době je podporováno dvěma prohlížeči: Yandex Browser a Samsung Internet browser. Mnoho složitých pravidel filtrování podporovaných v jiných produktech AdGuardu s tímto rozhraním API nefunguje.
 
-![Dostupné prohlížeče *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker.png)
+![Available browsers *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker.png)
 
 Blokátor obsahu AdGuard byl navržen tak, aby odpovídal zásadám Google Play. V porovnání s ostatními produkty AdGuardu má Blokátor obsahu AdGuard méně možností pro blokování reklam:
 

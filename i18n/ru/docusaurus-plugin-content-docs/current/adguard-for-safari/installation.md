@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-This article is about AdGuard for Safari, which safeguards only your Safari browser. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Эта статья об AdGuard для Safari, которое защищает только этот браузер. Чтобы защитить всё устройство, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -15,39 +15,64 @@ AdGuard для Safari — это бесплатная программа. Она
 
 1. Откройте App Store и найдите там нужное расширение.
 
-![AdGuard для Safari в App Store](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-app-store.png)
+    ![AdGuard для Safari в App Store](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-app-store.png)
 
-2. Нажмите *Загрузить* → *Установить* → *Открыть*.
+1. Нажмите *Загрузить* → *Установить* → *Открыть*.
 
-3. Чтобы настроить AdGuard для Safari, включите расширения AdGuard в настройках Safari. В уведомлении нажмите *Исправить*. В открывшемся окне поставьте галочки напротив расширений AdGuard.
+1. Чтобы настроить AdGuard для Safari, включите расширения AdGuard в настройках Safari. В уведомлении нажмите *Исправить*. В открывшемся окне поставьте галочки напротив расширений AdGuard.
 
-![Уведомление: некоторые расширения отключены](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-notification.png)
+    ![Уведомление: некоторые расширения отключены](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-notification.png)
 
-:::note
+    :::note
 
-Не все расширения обязательны для корректной работы AdGuard для Safari. Например, если вы отметите *Иконку AdGuard Safari*, на панели задач появится значок AdGuard. Тем не менее, мы рекомендуем включить их все.
+    Не все расширения необходимы для корректной работы AdGuard для Safari. Например, если вы отметите галочкой г*Иконку*, рядом с панелью поиска появится значок AdGuard. Тем не менее, мы рекомендуем включить их все.
+
 
 :::
 
-![Отмеченные расширения](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-extensions-checked.png)
+    ![Отмеченные расширения](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-extensions-checked.png)
 
-После того как вы выполните шаги 1-3, AdGuard для Safari начнёт работать. Теперь вы можете настроить его параметры.
+1. Чтобы AdGuard работал на сайтах, включите настройку *Блокировщики контента*. Вы можете либо включить её для всех сайтов, либо выбрать те, которые вам нужны.
 
+    :::note
+
+    Этот шаг необходим для iOS 9.0 и более поздних версий, macOS 10.11 с Safari 10 и macOS 10.12 и более поздних версий.
+
+
+:::
+
+В macOS нажмите *Настройки* → *Сайты* → *Блокировщики контента*. Если вы хотите, чтобы AdGuard работал на всех сайтах, включите опцию *При посещении других сайтов*.
+
+    ![Mac Safari Content Blocker Setting](https://i0.imgs.ovh/2023/10/26/Fmc9U.png)
+
+    <!-- adguard-for-safari-content-blocker-setting-macos.png -->
+
+On iOS, go *Settings* → *Safari* → *Content Blockers*, and set the option to *Yes*.
+
+    ![iOS Safari Content Blocker Setting](https://i0.imgs.ovh/2023/10/26/FmgM0.jpeg)
+
+    <!-- adguard-for-safari-content-blocker-setting-ios.jpg -->
+
+After you complete steps 1-4, AdGuard for Safari will start functioning. Теперь вы можете настроить его параметры.
 
 ## Как удалить AdGuard для Safari {#uninstall}
+
 Чтобы удалить AdGuard для Safari, сделайте следующее:
 
 1. Закройте приложение.
-2. Откройте настройки Safari.
-3. Выберите вкладку «Расширения». Вы увидите список расширений. У AdGuard их восемь.
-4. Снимите все флажки и нажмите *Удалить* под любым из них.
 
-![Отмеченные расширения](https://cdn.adtidy.org/public/Adguard/kb/installation/Safari/extensionschecked.png)
+1. Откройте настройки Safari.
 
-Вы увидите уведомление:
+1. Выберите вкладку «Расширения». Вы увидите список расширений. У AdGuard их восемь.
 
-![Уведомление: удалить AdGuard для Safari](https://cdn.adtidy.org/public/Adguard/kb/installation/Safari/showinfinder.png)
+1. Снимите все флажки и нажмите *Удалить* под любым из них.
 
-5. Нажмите *Показать в Finder* и переместите приложение в корзину.
+    ![Отмеченные расширения](https://cdn.adtidy.org/public/Adguard/kb/installation/Safari/extensionschecked.png)
 
-AdGuard для Safari будет удалён.
+    Вы увидите уведомление:
+
+    ![Уведомление: удалить AdGuard для Safari](https://cdn.adtidy.org/public/Adguard/kb/installation/Safari/showinfinder.png)
+
+1. Нажмите *Показать в Finder* и переместите приложение в корзину.
+
+    AdGuard для Safari будет удалён.

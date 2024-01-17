@@ -13,11 +13,11 @@ AdGuard může výrazně rozšířit funkčnost webových stránek tím, že fun
 
 Tyto uživatelské skripty pocházejí přímo od vývojářů AdGuardu a můžeme zaručit, že jsou účinné a bezpečné. Nezapomeňte, že kdykoli stahujete uživatelský skript z neznámého zdroje, vystavujete se riziku, protože některé skripty mohou být pro váš počítač škodlivé. Nové skripty získávejte pouze ze zdrojů, kterým stoprocentně důvěřujete. Dále zde uvádíme [příklady](#more-userscripts) oblíbených webů se skripty.
 
-* **AdGuard Extra**. Rozšíření, které blokuje reklamu v obtížných případech, kdy běžný přístup založený na filtru nestačí.
+- **AdGuard Extra**. Rozšíření, které blokuje reklamu v obtížných případech, kdy běžný přístup založený na filtru nestačí.
 
-* **Blokátor vyskakovacích oken**. Název mluví sám za sebe: blokuje vyskakovací okna — jeden z nejotravnějších typů reklam na webových stránkách.
+- **Blokátor vyskakovacích oken**. Název mluví sám za sebe: blokuje vyskakovací okna — jeden z nejotravnějších typů reklam na webových stránkách.
 
-* **AdGuard asistent** (starší verze). Toto vlastní rozšíření je určeno k ovládání filtrování přímo ze stránky prohlížeče (ruční blokování, vyloučení webu atd.).
+- **AdGuard asistent** (starší verze). Toto vlastní rozšíření je určeno k ovládání filtrování přímo ze stránky prohlížeče (ruční blokování, vyloučení webu atd.).
 
 :::note
 
@@ -25,7 +25,7 @@ Tato verze Asistenta je starší a nemá smysl ji používat v nových systémec
 
 :::
 
-* **Zákázat AMP**. Skript předinstalovaný pouze v AdGuardu pro Android, který na stránce s výsledky vyhledávání Google zakáže AMP (Accelerated Mobile Pages).
+- **Zákázat AMP**. Skript předinstalovaný pouze v AdGuardu pro Android, který na stránce s výsledky vyhledávání Google zakáže AMP (Accelerated Mobile Pages).
 
 ## Kde můžete získat další uživatelské skripty?{#more-userscripts}
 
@@ -73,7 +73,7 @@ Zde je [odkaz](mailto:devteam@adguard.com?Subject=Userscript%20author%20license%
 
 ##### Podporované vlastnosti
 
-```
+```text
 @name
 @namespace
 @description
@@ -105,7 +105,7 @@ Zde je [odkaz](mailto:devteam@adguard.com?Subject=Userscript%20author%20license%
 
 Tyto vlastnosti bude Adguard jednoduše ignorovat.
 
-```
+```text
 @unwrap
 ```
 
@@ -115,9 +115,13 @@ AdGuard podporuje jak staré funkce GM\_, tak nové rozhraní GM4 API, které po
 
 ##### Hodnoty
 
-Všimněte si, že všechny uvedené staré funkce Greasemonkey jsou zastaralé, ale stále podporované.
+:::note
 
-```
+Všechny uvedené staré funkce Greasemonkey jsou zastaralé, ale stále podporované.
+
+:::
+
+```text
 GM.info / GM_info
 GM.setValue / GM_setValue
 GM.getValue / GM_getValue

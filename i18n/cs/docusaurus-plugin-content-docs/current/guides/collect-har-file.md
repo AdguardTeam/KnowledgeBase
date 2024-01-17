@@ -11,55 +11,55 @@ Postup vytvoření souboru HAR v Chrome:
 
 1. Přejděte na URL, kde se problém vyskytuje. Problém zatím nereproduktujte.
 
-2. Otevřete ***Nástroje pro vývojáře***:
+1. Otevřete **Nástroje pro vývojáře**:
 
-- Z menu: ***Menu → Další nástroje → Nástroje pro vývojáře***.
-- Na klávesnici: ***Ctrl+Shift+C***, nebo ***Ctrl+Alt+I***, nebo ***⌥+⌘+I pro Mac***.
+    - Z menu: **Menu → Další nástroje → Nástroje pro vývojáře**.
+    - Na klávesnici: **Ctrl+Shift+C**, nebo **Ctrl+Alt+I**, nebo **⌥+⌘+I pro Mac**.
 
-3. Klikněte na ***Záložku Network***.
+1. Klikněte na **Záložku Network**.
 
-4. Najděte kulaté tlačítko v levém horním rohu záložky Network a zkontrolujte, zda je v červeném režimu nahrávání. Pokud je šedá, kliknutím na ni zčervená a nahrávání se spustí.
+1. Najděte kulaté tlačítko v levém horním rohu záložky Network a zkontrolujte, zda je v červeném režimu nahrávání. Pokud je šedá, kliknutím na ni zčervená a nahrávání se spustí.
 
-5. Pomocí tlačítka ***clear*** (kroužkové tlačítko s procházející čárou vedle tlačítka záznamu) vymažete veškerou předchozí aktivitu.
+1. Pomocí tlačítka **Clear** (kroužkové tlačítko s procházející čárou vedle tlačítka záznamu) vymažete veškerou předchozí aktivitu.
 
-6. Zaškrtněte políčko ***Preserve log*** na záložce Network.
+1. Zaškrtněte políčko **Preserve log** na záložce Network.
 
-7. Zaškrtněte políčko ***Disable cache***.
+1. Zaškrtněte políčko **Disable cache**.
 
-![chrome](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/chrome.png)
+    ![Chrome](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/chrome.png)
 
-8. Reprodukujte kroky, které způsobují problém.
+1. Reprodukujte kroky, které způsobují problém.
 
-9. Uložte relaci jako soubor .har kliknutím pravým tlačítkem na mřížku a výběrem ***Save as HAR with content***.
+1. Uložte relaci jako soubor .har kliknutím pravým tlačítkem na mřížku a výběrem **Save as HAR with content**.
 
-10. Přepošlete na podporu AdGuardu (support@adguard.com) s podrobným vysvětlením problému. Užitečné mohou být i podpůrné snímky obrazovky.
+1. Přepošlete na podporu AdGuardu (support@adguard.com) s podrobným vysvětlením problému. Užitečné mohou být i podpůrné snímky obrazovky.
 
 ## Edge {#edge}
 
 1. Přejděte na URL, kde se problém vyskytuje. Problém zatím nereproduktujte.
 
-2. Otevřete ***Nástroje pro vývojáře***:
+1. Otevřete **Nástroje pro vývojáře**:
 
-- Z menu: ***Menu → Další nástroje → Nástroje pro vývojáře***.
-- Na klávesnici: ***Ctrl+Shift+C***, nebo ***Ctrl+Alt+I***, nebo ***⌥+⌘+I pro Mac***.
+    - Z menu: **Menu → Další nástroje → Nástroje pro vývojáře**.
+    - Na klávesnici: **Ctrl+Shift+C**, nebo **Ctrl+Alt+I**, nebo **⌥+⌘+I pro Mac**.
 
-3. Klikněte na ***Záložku Network***.
+1. Klikněte na **Záložku Network**.
 
-4. Najděte kulaté tlačítko v levém horním rohu záložky Network a zkontrolujte, zda je v červeném režimu nahrávání. Pokud je šedá, kliknutím na ni zčervená a nahrávání se spustí.
+1. Najděte kulaté tlačítko v levém horním rohu záložky Network a zkontrolujte, zda je v červeném režimu nahrávání. Pokud je šedá, kliknutím na ni zčervená a nahrávání se spustí.
 
-5. Pomocí tlačítka ***clear*** (kroužkové tlačítko s procházející čárou vedle tlačítka záznamu) vymažete veškerou předchozí aktivitu.
+1. Pomocí tlačítka **Clear** (kroužkové tlačítko s procházející čárou vedle tlačítka záznamu) vymažete veškerou předchozí aktivitu.
 
-6. Zaškrtněte políčko ***Preserve log*** na záložce Network.
+1. Zaškrtněte políčko **Preserve log** na záložce Network.
 
-7. Zaškrtněte políčko ***Disable cache***.
+1. Zaškrtněte políčko **Disable cache**.
 
-![edge](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/edge.png)
+    ![edge](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/edge.png)
 
-8. Reprodukujte kroky, které způsobují problém.
+1. Reprodukujte kroky, které způsobují problém.
 
-9. Uložte relaci jako soubor .har kliknutím pravým tlačítkem na mřížku a výběrem ***Save as HAR with content***.
+1. Uložte relaci jako soubor .har kliknutím pravým tlačítkem na mřížku a výběrem **Save as HAR with content**.
 
-10. Přepošlete na podporu AdGuardu (support@adguard.com) s podrobným vysvětlením problému. Užitečné mohou být i podpůrné snímky obrazovky.
+1. Přepošlete na podporu AdGuardu (support@adguard.com) s podrobným vysvětlením problému. Užitečné mohou být i podpůrné snímky obrazovky.
 
 ## Firefox {#firefox}
 
@@ -67,26 +67,28 @@ Postup vytvoření souboru HAR ve Firefoxu:
 
 1. Přejděte na URL, kde se problém vyskytuje. Problém zatím nereproduktujte.
 
-2. Otevřete Nástroje pro vývojáře v režimu ***Network***:
-- Z menu: ***Menu → Web Developer → Network***.
-- Na klávesnici: ***Ctrl+Shift+C***, nebo **⌥+⌘+E (Mac)**.
+1. Otevřete Nástroje pro vývojáře v režimu **Network**:
 
-3. Všimněte si tlačítka ***play/pause*** v levé horní části karty Network.
-- Tlačítko by mělo být v režimu Play.
+    - Z menu: **Menu → Web Developer → Network**.
+    - Na klávesnici: **Ctrl+Shift+C**, nebo **⌥+⌘+E (Mac)**.
 
-4. Pokud jsou v mřížce aktuálně zobrazeny nějaké informace, vymažte je kliknutím na tlačítko ***delete trash can*** vedle tlačítka play/pause.
+1. Všimněte si tlačítka **play/pause** v levé horní části karty Network.
 
-5. Zaškrtněte políčko ***Persist Logs*** na záložce Network.
+    - Tlačítko by mělo být v režimu Play.
 
-6. Zaškrtněte políčko ***Disable cache***.
+1. Pokud jsou v mřížce aktuálně zobrazeny nějaké informace, vymažte je kliknutím na tlačítko **delete trash can** vedle tlačítka play/pause.
 
-![firefox](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/firefox.png)
+1. Zaškrtněte políčko **Persist Logs** na záložce Network.
 
-7. Reprodukujte kroky, které způsobují problém.
+1. Zaškrtněte políčko **Disable cache**.
 
-8. Uložte relaci jako soubor .har kliknutím pravým tlačítkem na mřížku a výběrem ***Save all as HAR***.
+    ![firefox](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/firefox.png)
 
-9. Přepošlete na podporu AdGuardu (support@adguard.com) s podrobným vysvětlením problému. Užitečné mohou být i podpůrné snímky obrazovky.
+1. Reprodukujte kroky, které způsobují problém.
+
+1. Uložte relaci jako soubor .har kliknutím pravým tlačítkem na mřížku a výběrem **Save all as HAR**.
+
+1. Přepošlete na podporu AdGuardu (support@adguard.com) s podrobným vysvětlením problému. Užitečné mohou být i podpůrné snímky obrazovky.
 
 ## Internet Explorer 11 {#ie11}
 
@@ -94,75 +96,85 @@ Postup vytvoření souboru HAR v IE 11:
 
 1. Přejděte na URL, kde se problém vyskytuje. Problém zatím nereproduktujte.
 
-2. Otevřete Nástroje pro vývojáře v režimu ***Network***:
-- Z nabídky Nástroje (ozubené kolo): ***Nástroje pro vývojáře*** → ***Záložka Síť***.
-- Na klávesnici: ***F12 → Záložka Síť***.
+1. Otevřete Nástroje pro vývojáře v režimu **Network**:
 
-3. Všimněte si tlačítka spuštění profilování ***Play*** a zastavení profilování ***Stop*** v levé horní části záložky Síť.
-- Tlačítko Play bude při nahrávání šedé a tlačítko Stop červené. Přejděte do režimu ***Play***.
+    - Z nabídky Nástroje (ozubené kolo): **Nástroje pro vývojáře** → **Záložka Síť**.
+    - Na klávesnici: **F12 → Záložka Síť**.
 
-4. Pomocí tlačítka ***Clear session*** na záložce Síť vymažte veškeré informace o relaci zobrazené ve spodní mřížce. Názvy zobrazíte najetím na ikony.
-- Tlačítko ***Clear session*** je třířádková ikona s x.
+1. Všimněte si tlačítka spuštění profilování **Play** a zastavení profilování **Stop** v levé horní části záložky Síť.
 
-5. Zaškrtněte políčko ***Disable cache***.
+    - Tlačítko Play bude při nahrávání šedé a tlačítko Stop červené. Přejděte do režimu **Play**.
 
-6. Reprodukujte kroky, které způsobují problém.
+1. Pomocí tlačítka **Clear session** na záložce Síť vymažte veškeré informace o relaci zobrazené ve spodní mřížce. Názvy zobrazíte najetím na ikony.
 
-7. Uložte relaci jako soubor .har kliknutím na tlačítko ***Save disk (Export as HAR) *** na kartě Síť.
+    - Tlačítko **Clear session** je třířádková ikona s x.
 
-8. Přepošlete na podporu AdGuardu (support@adguard.com) s podrobným vysvětlením problému. Užitečné mohou být i podpůrné snímky obrazovky.
+1. Zaškrtněte políčko **Disable cache**.
+
+1. Reprodukujte kroky, které způsobují problém.
+
+1. Uložte relaci jako soubor .har kliknutím na tlačítko **Save disk** (Export as HAR) na kartě Síť.
+
+1. Přepošlete na podporu AdGuardu (support@adguard.com) s podrobným vysvětlením problému. Užitečné mohou být i podpůrné snímky obrazovky.
 
 ## Safari {#safari}
 
 Postup vytvoření souboru HAR v Safari:
 
-1. Na liště nabídek Safari v horní části obrazovky najdete nabídku ***Develop***. Zaškrtněte políčko ve spodní části vedle ***Show Develop menu in menu bar***.
-- Pokud není vidět, zapněte ji přechodem na ***Safari → Preferences → Advanced***.
+1. Na liště nabídek Safari v horní části obrazovky najdete nabídku **Develop**.
 
-2. Přejděte na URL, kde se problém vyskytuje. Problém zatím nereproduktujte.
+    - Pokud není vidět, zapněte ji přechodem na **Safari → Preferences → Advanced**.
+    - Zaškrtněte políčko ve spodní části vedle **Show Develop menu in menu bar**.
 
-3. Otevřete záložku ***Network*** ve Web Inspector:
-- Z menu: ***Develop → Show Web Inspector → Network***.
-- Na klávesnici: ***⌥+⌘+I → Network***
+1. Přejděte na URL, kde se problém vyskytuje. Problém zatím nereproduktujte.
 
-4. Zaškrtněte políčko ***Preserve Log*** na pravé straně záložky Network.
+1. Otevřete záložku **Network** ve Web Inspector:
 
-5. Vymažte aktuální položky sítě kliknutím na ikonu ***delete Trash*** zcela vpravo na záložce Network.
+    - Z menu: **Develop → Show Web Inspector → Network**.
+    - Na klávesnici: **⌥+⌘+I→Network**
 
-6. Zaškrtněte políčko ***Disable cache***.
+1. Zaškrtněte políčko **Preserve log** na levé straně karet Síť v nabídce **Other filter options...**.
 
-7. Reprodukujte kroky, které způsobují problém.
+    ![safari](https://cdn.adtidy.org/content/kb/ad_blocker/safari/preserve-log.png)
 
-8. Uložte relaci jako soubor .har kliknutím na ikonu ***Export*** vedle ***Preserve Log***.
+1. Vymažte aktuální položky sítě kliknutím na ikonu **delete Trash** zcela vpravo na záložce Network.
 
-9. Přepošlete na podporu AdGuardu (support@adguard.com) s podrobným vysvětlením problému. Užitečné mohou být i podpůrné snímky obrazovky.
+    - Na klávesnici: **⌘+K**
+
+1. Zaškrtněte políčko **Disable caches**.
+
+1. Reprodukujte kroky, které způsobují problém.
+
+1. Uložte relaci jako soubor .har kliknutím na ikonu **Export** vedle ikony **Delete trash**.
+
+1. Přepošlete na podporu AdGuardu (support@adguard.com) s podrobným vysvětlením problému. Užitečné mohou být i podpůrné snímky obrazovky.
 
 ## Android {#android}
 
-Chcete-li získat soubory HAR, postupujte takto:
+Chcete-li vytvořit soubory HAR, postupujte takto:
 
-1. Otevřete AdGuard a přejděte do ***Nastavení***.
+1. Otevřete AdGuard a přejděte do **Nastavení**.
 
-2. V menu zvolte ***Pokročilé***.
+1. V menu vyberte **Pokročilé**.
 
-3. Vyberte ***Nízkoúrovňová nastavení***
+1. Vyberte **Nízkoúrovňová nastavení**
 
-4. Aktivujte `pref.har.capture` (budete muset restartovat ochranu).
+1. Aktivujte `pref.har.capture` (budete muset restartovat ochranu).
 
-5. Nyní problém reprodukujte — otevřete aplikaci a proveďte potřebné akce, aby se reklama zobrazila.
+1. Nyní problém reprodukujte — otevřete aplikaci a proveďte potřebné akce, aby se reklama zobrazila.
 
-6. Nyní `pref.har.capture` opět vypněte.
+1. Nyní `pref.har.capture` opět vypněte.
 
-7. Vraťte se zpět a klepněte na ***Exportovat protokoly a systémové informace*** → ***Uložit***.
+1. Vraťte se zpět a klepněte na **Exportovat protokoly a systémové informace** → **Uložit**.
 
 ## Windows {#windows}
 
-1. Otevřete ***Nastavení*** → ***Obecná nastavení*** → ***Pokročilá nastavení** a posuňte se dolů.
+1. Otevřete **Nastavení*** → **Obecná nastavení** → **Pokročilá nastavení** a přejděte dolů.
 
-2. Zaškrtněte políčko ***Enable HAR writting***.
+1. Zaškrtněte políčko **Enable HAR writting**.
 
-3. Reprodukujte problém.
+1. Reprodukujte problém.
 
-4. Přejděte na ***Obecná nastavení*** → klikněte na ***Exportovat protokoly*** → ***Uložit***.
+1. Přejděte na **Obecná nastavení** → Klikněte na **Exportovat protokoly** → **Uložit**.
 
-5. Deaktivujte zápis HAR zrušením zaškrtnutí odpovídajícího políčka.
+1. Deaktivujte zápis HAR zrušením zaškrtnutí odpovídajícího políčka.

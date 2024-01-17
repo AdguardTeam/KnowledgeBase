@@ -5,7 +5,7 @@ sidebar_position: 7
 
 :::info
 
-This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+本文适用于 Windows 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -61,6 +61,10 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 如果用户想让 AdGuard 自动拦截过滤器订阅 URL（如 `abp:subscribe` 等）并打开自定义过滤器安装对话框，请启用此功能。
 
+### Filter HTTP/3
+
+If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
+
 ### 使用重定向驱动模式
 
 如果启用该选项，AdGuard 将拦截所有流量，并将其重定向到本地代理服务器进行进一步过滤。
@@ -75,7 +79,11 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 从 v7.12 版本开始，默认情况下，如果「AdGuard 随系统启动」选项被禁用，AdGuard 服务不会在操作系统启动后开始过滤流量。 这意味着，AdGuard 服务是以“待机”模式启动的。 启用此选项，使 AdGuard 过滤流量，即使应用程序没有启动。
 
-*Note that before v7.12 the AdGuard's service started in filtering mode by default (even if the *Launch AdGuard at system start-up* was disabled). If you were satisfied with the old behavior, enable this option.*
+:::note
+
+Before v7.12, the AdGuard service started in filtering mode by default (even if the *Launch AdGuard at system start-up* was disabled). If you were satisfied with the old behavior, enable this option.
+
+:::
 
 ### 过滤 localhost 连接
 
@@ -129,13 +137,21 @@ Valid values: 1–1500. 如果指定无效大小，将使用系统选择的数�
 
 用户可以指定在发送 keepalive 探测之前的空闲时间段（以秒为单位）。 If 0 is specified, the value selected by the system will be used.
 
-请注意，此设置仅在启用*「启用 TCP 保活」*选项时有效。
+:::note
+
+This setting only works when the *Enable TCP keepalive* option is enabled.
+
+:::
 
 ### TCP 保活超时
 
 Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. 如果指定 0，使用系统选择的数值。
 
-请注意，此设置仅在启用*「启用 TCP 保活」*选项时有效。
+:::note
+
+This setting only works when the *Enable TCP keepalive* option is enabled.
+
+:::
 
 ### 拦截 Java
 
@@ -169,17 +185,17 @@ AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to
 
 用户可以选择 AdGuard 将根据 [hosts 规则的语法](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax)对被 DNS 规则阻止的域名作出反应的方式。
 
-* 将「REFUSED」的错误作出回应
-* 将「NxDomain」的错误作出回应
-* 使用自定义 IP 地址作出回应
+- 将「REFUSED」的错误作出回应
+- 将「NxDomain」的错误作出回应
+- 使用自定义 IP 地址作出回应
 
 ### adblock 规则的拦截模式
 
 用户可以选择 AdGuard 将根据 [ adblock 规则的语法](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax)对被 DNS 规则阻止的域名作出反应的方式。
 
-* 将「REFUSED」的错误作出回应
-* 将「NxDomain」的错误作出回应
-* 使用自定义 IP 地址作出回应
+- 将「REFUSED」的错误作出回应
+- 将「NxDomain」的错误作出回应
+- 使用自定义 IP 地址作出回应
 
 ### 自定义 IPv4 地址
 
@@ -193,9 +209,9 @@ AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to
 
 用户可以指定一个后备 DNS 服务器，如果主服务器未能在下一节指定的超时期限内做出响应，DNS 请求将被重新路由到后备服务器。 有三个选项可供选择：
 
-* 不要使用后备服务器；
-* 使用系统默认的服务器；
-* 使用自定义服务器。
+- 不要使用后备服务器；
+- 使用系统默认的服务器；
+- 使用自定义服务器。
 
 ### 拦截 ECH
 

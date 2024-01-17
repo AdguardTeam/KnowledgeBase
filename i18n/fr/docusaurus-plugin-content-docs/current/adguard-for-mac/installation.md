@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Cet article parle de AdGuard pour Mac, un bloqueur de contenus multifonctionnel qui protège votre appareil au niveau du système. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -21,11 +21,11 @@ This article covers AdGuard for Mac, a multifunctional ad blocker that protects 
 
 ## Installation
 
-To install AdGuard for macOS on your computer, launch your browser, type _adguard.com_ in the address bar, and press **Download** [on the page that opens](https://adguard.com/download.html?auto=1).
+To install AdGuard for Mac on your computer, launch your browser, type *adguard.com* in the address bar, and press **Download** [on the page that opens](https://adguard.com/download.html?auto=1).
 
 ![Download the app *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/1.jpg)
 
-Wait for _AdguardInstaller.dmg_ to download and double-click its icon in the list of downloaded files on the Dock panel.
+Wait for *AdguardInstaller.dmg* to download and double-click its icon in the list of downloaded files on the Dock panel.
 
 ![Double-click to open the file](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation_open_the_file.jpg)
 
@@ -45,7 +45,7 @@ Wait for the installer to download the required files.
 
 ![Wait until the necessary files are downloaded](https://cdn.adtidy.org/content/kb/ad_blocker/mac/6.jpg)
 
-To use the application, you will need the administrator password for your macOS account. Enter the password when propped in the dialogue box and press **OK**.
+To use the application, you will need the administrator password for your macOS account. Enter the password when prompted in the dialogue box and press **OK**.
 
 ![Enter the password](https://cdn.adtidy.org/content/kb/ad_blocker/mac/7.jpg)
 
@@ -58,6 +58,7 @@ Here we are, AdGuard is installed on your Mac!
 ## Uninstall
 
 ### Regular
+
 First of all, open the Finder app by clicking the respective icon:
 
 ![Open Finder](https://cdn.adtidy.org/public/Adguard/En/Articles/howtodelete/finder.png)

@@ -5,7 +5,7 @@ sidebar_position: 5
 
 :::info
 
-This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for iOS」について書いています。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -35,15 +35,21 @@ There is also an additional mode called *Full-Tunnel (without VPN icon)*. This i
 
 ### Blocking mode
 
-In this module you can select the way AdGuard will respond to DNS queries that should be blocked: REFUSED — respond with REFUSED code NXDOMAIN — respond with NXDOMAIN code Unspecified IP — respond with zero IP address Custom IP — respond with a manually set IP address
+In this module you can select the way AdGuard will respond to DNS queries that should be blocked:
+
+- Default — respond with zero IP address when blocked by adblock-style rules; respond with the IP address specified in the rule when blocked by /etc/hosts-style rules
+- REFUSED — respond with REFUSED code
+- NXDOMAIN — respond with NXDOMAIN code
+- Unspecified IP — respond with zero IP address
+- Custom IP — respond with a manually set IP address
 
 ### Block IPv6
 
-By moving the toggle to the right, you activate IPv6 query blocking (AAAA requests).
+By moving the toggle to the right, you activate the blocking of IPv6 queries (AAAA requests). AAAA-type DNS requests will not be resolved, hence only IPv4 queries can be processed.
 
 ### Blocked response TTL
 
-Here you can specify the TTL (time to live) value that will be returned in response to a blocked request.
+Here you can set the period for a device to cache the response to a DNS request. During the specified time to live (in seconds) the request can be read from the cache without re-requesting the DNS server.
 
 ### Bootstrap servers
 
