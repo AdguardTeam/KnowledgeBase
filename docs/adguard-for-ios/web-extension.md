@@ -45,7 +45,7 @@ Find **ALLOW THESE EXTENSIONS** section and then find **AdGuard** among the avai
 
 ![Select "AdGuard" in ALLOW THESE EXTENSIONS section *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings3_en.png)
 
-Tap it, then turn on the switch. On the same screen make sure that the AdGuard extension has required permissions: **All Websites** should have the *Allow* status.
+Tap it, then turn on the switch. On the same screen make sure that the AdGuard extension has required permissions: **All Websites** should have the *Allow* status. You can also set the *Ask* status. In this case, you will be able to grant AdGuard permission to access the content of each specific website, and the *Limited permissions* string will appear in the extension popup.
 
 ![settings extensions *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings4_en.png)
 
