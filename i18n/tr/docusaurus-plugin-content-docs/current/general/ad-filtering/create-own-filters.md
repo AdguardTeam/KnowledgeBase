@@ -63,7 +63,7 @@ Başlangıçta AdGuard'ın söz dizimi Adblock Plus kurallarının söz dizimine
 
 - `https://example.org/banner/img`
 
-### Temel kural değiştiriciler
+### Temel kural değiştiriciler {#basic-rule-modifiers}
 
 Filtreleme kuralları, kural davranışında ince ayar yapmanıza izin veren çok sayıda değiştiriciyi destekler. İşte bazı basit değiştiriciler içeren bir kural örneği.
 

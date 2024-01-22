@@ -19,62 +19,62 @@ Alternativement, vous pouvez utiliser une [clef de licence](../what-is#license-k
 
 ### Activez AdGuard pour Windows
 
-1. On the expired license screen, click *Activate*.
+1. Sur l'écran de licence expirée, cliquez sur *Activer*.
 
-    ![Expired license screen *border](https://cdn.adtidy.org/blog/new/eapwtexp.png)
+    ![Écran de licence expirée *border](https://cdn.adtidy.org/blog/new/eapwtexp.png)
 
-    Alternatively, select *License* in the upper right corner of the main screen and click *Activate*.
+    Vous pouvez également sélectionner *Licence* dans le coin supérieur droit de l'écran principal et cliquer sur *Activer*.
 
-    ![Main screen *border](https://cdn.adtidy.org/blog/new/ca313hmain-screen.png)
+    ![Écran principal *border](https://cdn.adtidy.org/blog/new/ca313hmain-screen.png)
 
-    ![License screen *border](https://cdn.adtidy.org/blog/new/n7nkclicense-screen.png)
+    ![Écran de licence *border](https://cdn.adtidy.org/blog/new/n7nkclicense-screen.png)
 
-1. Activate your license using your preferred method. If the license is bound to your email address, click *AdGuard Account* or select a social network associated with this email address. Alternatively, enter your license key.
+1. Activez votre licence en utilisant la méthode de votre choix. Si la licence est liée à votre adresse e-mail, cliquez sur *Compte AdGuard* ou sélectionnez un réseau social associé à cette adresse e-mail. Ou bien vous pouvez saisir votre clef de licence.
 
-    ![Activating a license *border](https://cdn.adtidy.org/blog/new/lnzz5activate-license.png)
+    ![Activation d'une licence *border](https://cdn.adtidy.org/blog/new/lnzz5activate-license.png)
 
 ### L'activation de AdGuard pour Mac
 
-1. On the expired license screen, click *Activate*.
+1. Sur l'écran de licence expirée, cliquez sur *Activer*.
 
-    ![Expired license screen *mobile_border](https://cdn.adtidy.org/blog/new/o9bhtexpired-screen.png)
+    ![Écran de licence expirée *mobile_border](https://cdn.adtidy.org/blog/new/o9bhtexpired-screen.png)
 
-    Alternatively, click the gear icon in the AdGuard menu, then click *License*.
+    Soit, vous pouvez cliquer sur l'icône de l'engrenage dans le menu AdGuard, puis sur *Licence*.
 
-    ![Preferences *border](https://cdn.adtidy.org/blog/new/xuyqmpreferences.png)
+    ![Préférences *border](https://cdn.adtidy.org/blog/new/xuyqmpreferences.png)
 
-1. In the opened window, click *Activate*.
+1. Dans la fenêtre qui s’ouvre, cliquez sur *Activer*.
 
-    ![License screen *border](https://cdn.adtidy.org/blog/new/8rbc8license-screen.png)
+    ![Écran de licence *border](https://cdn.adtidy.org/blog/new/8rbc8license-screen.png)
 
-1. Activate your license using your preferred method. If the license is bound to your email address, click *AdGuard Account* or select a social network associated with this email address. Alternatively, enter your license key.
+1. Activez votre licence en utilisant la méthode de votre choix. Si la licence est liée à votre adresse e-mail, cliquez sur *Compte AdGuard* ou sélectionnez un réseau social associé à cette adresse e-mail. Ou bien vous pouvez saisir votre clef de licence.
 
-    ![Activating a license *border](https://cdn.adtidy.org/blog/new/tws3jkactivate-license.png)
+    ![Activation d'une licence *border](https://cdn.adtidy.org/blog/new/tws3jkactivate-license.png)
 
 ### L'activation de AdGuard pour Android
 
-1. Tap *Settings*, then select *License*.
+1. Tapez *Paramètres*, puis sélectionnez *Licence*.
 
-    ![Settings screen *mobile_border](https://cdn.adtidy.org/blog/new/sbdcysettings.png)
+    ![Écran des paramètres *mobile_border](https://cdn.adtidy.org/blog/new/sbdcysettings.png)
 
-1. Tap *Activate license*.
+1. Tapez sur *Activer la licence*.
 
-    ![License screen *mobile_border](https://cdn.adtidy.org/blog/new/04fs1license-screen.png)
+    ![Écran de licence *mobile_border](https://cdn.adtidy.org/blog/new/04fs1license-screen.png)
 
-1. Activate your license using your preferred method. If the license is bound to your email address, tap *Continue with email* or select a social network associated with this email address. Alternatively, enter your license key.
+1. Activez votre licence en utilisant la méthode de votre choix. Si la licence est liée à votre adresse e-mail, appuyez sur *Continuer avec l'e-mail* ou sélectionnez un réseau social associé à cette adresse e-mail. Ou bien vous pouvez saisir votre clef de licence.
 
-    ![Activating a license *mobile_border](https://cdn.adtidy.org/blog/new/sbxttactivate-license.png)
+    ![Activation d'une licence *mobile_border](https://cdn.adtidy.org/blog/new/sbxttactivate-license.png)
 
 ### L'activation de AdGuard pour iOS
 
-1. Tap *Settings*, then select *License*.
+1. Tapez *Paramètres*, puis sélectionnez *Licence*.
 
-    ![Settings screen *mobile_border](https://cdn.adtidy.org/blog/new/uf8f1fsettings.png)
+    ![Écran des paramètres *mobile_border](https://cdn.adtidy.org/blog/new/uf8f1fsettings.png)
 
-1. Tap **Log in** in the upper right corner of the screen
+1. Tapez **Connexion** dans le coin supérieur droit de l'écran
 
-    ![Purchase screen *mobile_border](https://cdn.adtidy.org/blog/new/10j5bhpurchase-page.png)
+    ![Écran d'achat *mobile_border](https://cdn.adtidy.org/blog/new/10j5bhpurchase-page.png)
 
-1. Use your email address or social media account to activate your license.
+1. Utilisez votre adresse e-mail ou votre compte de réseau social pour activer votre licence.
 
-    ![Login screen *mobile_border](https://cdn.adtidy.org/blog/new/prnjdlogin-page.png)
+    ![Écran de connexion *mobile_border](https://cdn.adtidy.org/blog/new/prnjdlogin-page.png)

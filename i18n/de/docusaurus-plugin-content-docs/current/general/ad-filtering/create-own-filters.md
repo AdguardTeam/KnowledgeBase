@@ -63,7 +63,7 @@ Zum Beispiel:
 
 - `https://example.org/banner/img`
 
-### Basic rule modifiers
+### Basic rule modifiers {#basic-rule-modifiers}
 
 Filtering rules support numerous modifiers that allow you to fine-tune the rule behavior. Here is an example of a rule with some simple modifiers.
 

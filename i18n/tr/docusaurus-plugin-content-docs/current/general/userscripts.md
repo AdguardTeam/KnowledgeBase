@@ -1,31 +1,52 @@
 ---
 title: Kullanıcı Betikleri
 sidebar_position: 5
+toc_max_heading_level: 4
 ---
 
 Userscripts (we also call them "extensions") are, de-facto, mini-programs written in JavaScript. They modify or extend the functionality of one or more websites. Many AdGuard users may be already familiar with such userscripts as AdGuard Assistant, Popup Blocker, and AdGuard Extra.
 
-### Supported apps
+:::note Desteklenen uygulamalar
 
-AdGuard can significantly broaden website functionality by acting as a userscript manager. You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](/adguard-for-windows/overview), [AdGuard for Android](/adguard-for-android/overview) and [AdGuard for Mac](/adguard-for-mac/overview).
-
-### Recommended AdGuard scripts
-
-These userscripts come directly from the AdGuard developers, and we can guarantee that they are effective and safe. Remember: whenever you download a userscript from an unknown source, you expose yourself to risk, as some scripts may be harmful to your computer. Get new scripts only from the sources you trust 100%. Furthermore, here are [some examples](#more-userscripts) of popular sites with scripts.
-
-- **AdGuard Extra**. An extension that blocks advertising in difficult cases when the usual filter-based approach is not enough.
-
-- **AdGuard Popup Blocker**. The name speaks for itself: it blocks pop-ups — one of the most annoying types of ads on web pages.
-
-- **AdGuard Assistant** (legacy version). This custom extension is designed to control filtering directly from the browser page (manual blocking, exclusion of the site, etc.).
-
-:::not
-
-This version of Assistant is legacy and there is no point in using it on new systems, since it has been replaced with the full-fledged [Browser Assistant](https://adguard.com/adguard-assistant/overview.html). But legacy Assistant might be of help if there is no Browser Assistant extension for your browser.
+AdGuard can significantly broaden website functionality by acting as a userscript manager. You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](/adguard-for-windows/overview), [AdGuard for Android](/adguard-for-android/overview), and [AdGuard for Mac](/adguard-for-mac/overview).
 
 :::
 
-- **Disable AMP**. A script, pre-installed only in AdGuard for Android, that disables AMP (Accelerated Mobile Pages) on the Google search results page.
+## Recommended AdGuard scripts
+
+These userscripts come directly from the AdGuard developers, and we can guarantee that they are effective and safe. Remember: whenever you download a userscript from an unknown source, you expose yourself to risk, as some scripts may be harmful to your computer. Get new scripts only from the sources you trust 100%. Furthermore, here are [some examples](#more-userscripts) of popular sites with scripts.
+
+### AdGuard Extra
+
+Normal filtre tabanlı yaklaşımın yeterli olmadığı zor durumlarda reklamları engelleyen bir uzantı. AdGuard Extra, tüm premium AdGuard sürümleriyle önceden yüklenmiş olarak gelir, dolayısıyla etkinleştirmek için herhangi bir şey yapmanıza gerek yoktur. However, if you want to use it alongside AdGuard Browser Extension or any other ad blocker, you'll need to use an additional extension. Learn more about this userscript and how to install it on [GitHub](https://github.com/AdguardTeam/AdGuardExtra).
+
+![AdGuard Extra](https://cdn.adtidy.org/content/kb/ad_blocker/general/adguard-extra.png)
+
+### AdGuard Açılır Pencere Engelleyici
+
+The name speaks for itself: it blocks pop-ups — one of the most annoying types of ads on web pages. Learn more about this userscript, its key features, and how to install it on [GitHub](https://github.com/AdguardTeam/PopupBlocker).
+
+![AdGuard Açılır Pencere Engelleyici](https://cdn.adtidy.org/content/kb/ad_blocker/general/popup-blocker-installation.png)
+
+### AdGuard Assistant (legacy version)
+
+This custom extension is designed to control filtering directly from the browser page (manual blocking, exclusion of the site, etc.).
+
+:::not
+
+This version of Assistant is legacy and there is no point in using it on new systems, since it has been replaced with the full-fledged [Browser Assistant](https://adguard.com/adguard-assistant/overview.html). But the legacy Assistant might be of help if there is no Browser Assistant for your browser. Durumunuz buysa, AdGuard Asistanı [GitHub'da ](https://github.com/AdguardTeam/AdguardAssistant) nasıl yükleyeceğinizi öğrenebilirsiniz.
+
+:::
+
+### AMP'yi devre dışı bırak
+
+Yalnızca Android için AdGuard'da önceden yüklenmiş olan bir betik. Google arama sonuçları sayfasında AMP'yi (Hızlandırılmış Mobil Sayfalar) devre dışı bırakır. Bu kullanıcı betiği ve [GitHub'da](https://github.com/AdguardTeam/DisableAMP) nasıl yükleneceği hakkında daha fazla bilgi edinin.
+
+![AMP'yi devre dışı bırak](https://cdn.adtidy.org/content/kb/ad_blocker/general/disable-amp-installation.png)
+
+### microShield
+
+A userscript for people who visit Korean websites and some international websites. The microShield userscript blocks Ad-Shield advertisement and anti-adblock. Its original source code is available at [asdefuser](https://github.com/seia-soto/userscripts/tree/master/sources/asdefuser) and [AdShield Defuser](https://github.com/seia-soto/adshield-defuser). This userscript can be installed in AdGuard CoreLibs-based apps, Violentmonkey, Tampermonkey, and [quoid/userscripts](https://github.com/quoid/userscripts). Learn more about microShield and how to install it on [GitHub](https://github.com/List-KR/microShield).
 
 ## Where can you get more userscripts?{#more-userscripts}
 
@@ -55,9 +76,9 @@ If you like the idea of personifying your browser with the help of userscripts, 
 
 ## Development
 
-### Request License
+### Lisans talep et
 
-If you are developing your own custom script and want to test how it works with AdGuard, request a beta-license key for the app.
+Kendi özel betiğinizi geliştiriyor ve AdGuard ile nasıl çalıştığını test etmek istiyorsanız, uygulama için bir beta lisans anahtarı talep edin.
 
 To get it, please send an email to devteam@adguard.com with the following information:
 
