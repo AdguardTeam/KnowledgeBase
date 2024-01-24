@@ -31,6 +31,12 @@ You will see the following list of options:
 
 ## How to enable AdGuard's Safari Web extension
 
+:::note
+
+AdGuard's Safari Web extension requires access to the web pages' content to operate, but doesn't use it for any purpose other than blocking ads.
+
+:::
+
 ### In the iOS settings
 
 The Web extension is not a standalone tool and requires AdGuard for iOS. If you don't have AdGuard for iOS installed on your device, please [install it first](../installation) and complete the onboarding process to prepare it for work.
@@ -45,15 +51,9 @@ Find **ALLOW THESE EXTENSIONS** section and then find **AdGuard** among the avai
 
 ![Select "AdGuard" in ALLOW THESE EXTENSIONS section *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings3_en.png)
 
-Tap it, then turn on the switch. On the same screen make sure that the AdGuard extension has required permissions: **All Websites** should have the *Allow* status. You can also set the *Ask* status. In this case, you will be able to grant AdGuard permission to access the content of each specific website, and the *Limited permissions* string will appear in the extension popup.
+Tap it, then turn on the switch. On the same screen, set the *All Websites* permission for AdGuard to either *Allow* or *Ask*. Choosing *Allow* means you won't need to grant permission each time you visit a new website. If uncertain, opt for *Ask* to grant permissions case by case.
 
-![settings extensions *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings4_en.png)
-
-:::note
-
-AdGuard's Safari Web extension requires access to the web pages' content to operate, but doesn't use it for any purpose other than blocking ads.
-
-:::
+![Settings extensions *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings4_en.png)
 
 ### In Safari
 
