@@ -180,6 +180,12 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 - **`^`** — a separator character mark. Separator character is any character, but a letter, a digit, or one of the following: `_` `-` `.` `%`. In this example separator characters are shown in bold: `http:`**`//`**`example.com`**`/?`**`t=1`**`&`**`t2=t3`. The end of the address is also accepted as separator.
 - **`|`** — a pointer to the beginning or the end of address. The value depends on the character placement in the mask. For example, a rule `swf|` corresponds to `http://example.com/annoyingflash.swf` , but not to `http://example.com/swf/index.html`. `|http://example.org` corresponds to `http://example.org`, but not to `http://domain.com?url=http://example.org`.
 
+:::note
+
+`|`, `||`, `^` can only be used with rules that have a URL pattern. For example, `||||example.com##.advert` is incorrect and will be ignored by the blocker.
+
+:::
+
 :::note Visual representation
 
 We also recommend to get acquainted with [the Adblock Plus filter cheatsheet](https://adblockplus.org/filter-cheatsheet#blocking), for better understanding of how such rules should be made.
