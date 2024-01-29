@@ -182,7 +182,7 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 
 :::note
 
-`|`, `||`, `^` can only be used with rules that have a URL pattern. For example, `||||example.com##.advert` is incorrect and will be ignored by the blocker.
+`|`, `||`, `^` can only be used with rules that have a URL pattern. For example, `||example.com##.advert` is incorrect and will be ignored by the blocker.
 
 :::
 
