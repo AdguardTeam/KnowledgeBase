@@ -1715,8 +1715,11 @@ In case if multiple `$permissions` rules match a single request, AdGuard will ap
 
 **Syntax**
 
-`$permissions` value syntax is similar to the `Permissions-Policy` header [syntax](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy) with one exception: comma that separates several features **MUST** be escaped — see examples below.
-The list of the available directives is available [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives).
+`$permissions` value syntax is identical to that of the `Permissions-Policy` header [syntax](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy) with the following exceptions:
+1. A comma that separates multiple features **MUST** be escaped — see examples below.
+2. A pipe character (`|`) can be used to separate features instead of a comma.
+
+The list of available directives is available [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives).
 
 `$permissions` value can be empty in the case of exception rules — see examples below.
 
@@ -1726,6 +1729,7 @@ The list of the available directives is available [here](https://developer.mozil
 - `@@||example.org/page/*$permissions=autoplay=()` disables all rules with the `$permissions` modifier exactly matching `autoplay=()` on all the pages matching the rule pattern. For instance, the rule above.
 - `@@||example.org/page/*$permissions` disables all the `$permissions` rules on all the pages matching the rule pattern.
 - `$domain=example.org|example.com,permissions=storage-access=()\, camera=()` disallows using the Storage Access API to request access to unpartitioned cookies and using video input devices across `example.org` and `example.com`.
+- `$domain=example.org|example.com,permissions=storage-access=()|camera=()` does the same -- a `|` can be used to separate the features instead of an escaped comma.
 - `@@||example.org^$document` or `@@||example.org^$urlblock` disables all the `$permission` rules on all the pages matching the rule pattern.
 
 :::caution Restrictions
