@@ -1,5 +1,5 @@
 ---
-title: Filtering doesn't work and ads are not blocked
+title: Filtering doesn’t work and ads aren’t blocked
 sidebar_position: 2
 ---
 
@@ -9,7 +9,7 @@ This article is about AdGuard for Safari, which safeguards only your Safari brow
 
 :::
 
-Sometimes, filtering may not work and ads will still show despite AdGuard for Safari and proper filters being enabled. This usually happens when something goes wrong with filter updates due to Safari bugs.
+In some cases, filtering may not work and ads may still be displayed even though AdGuard for Safari and the proper filters are enabled. This usually happens when something goes wrong filter updates due to Safari bugs.
 
 ### How to fix
 
@@ -19,12 +19,12 @@ Sometimes, filtering may not work and ads will still show despite AdGuard for Sa
  4. Clear the checkboxes for AdGuard’s 6 content blocking extensions: *Custom*, *General*, *Other*, *Privacy*, *Security*, and *Social*.
     ![Unchecked content blockers](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-unchecked-cbs.png)
  5. Restart Safari.
- 6. Check checkboxes for all 6 AdGuard content blockers again.
- 7. Open AdGuard for Safari settings by clicking its icon beside the Safari's search bar.
+ 6. Return to *Settings...* → *Extensions* and re-enable the content blocking extensions.
+ 7. Click the AdGuard for Safari icon next to the search bar and open its settings.
  8. Go to *Filters* tab.
  9. Click *Check for updates*.
  10. Do not close AdGuard for Safari window until filter update is finished.
 
-If that didn't help and ads are still not blocked, please contact our support at support@adguard.com.
+If this doesn’t help and ads are still not being blocked, please contact our support at support@adguard.com.
 
-If you have issues only on a particular page or website, you can report it right from the browser: click AdGuard for Safari icon beside the Safari's search bar and then click *Report an issue*.
+If you only have problems with a specific page or website, you can report it directly from the browser: click the AdGuard for Safari icon next to the Safari search bar, and then click *Report an issue*.

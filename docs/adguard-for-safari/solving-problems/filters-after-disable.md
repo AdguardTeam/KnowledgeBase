@@ -1,5 +1,5 @@
 ---
-title: Filtering doesn't stop with AdGuard disabled
+title: Filtering doesn‘t stop when AdGuard for Safari is disabled
 sidebar_position: 3
 ---
 
@@ -18,9 +18,9 @@ This is usually caused by the issue when content blockers update takes too long.
  1. Open Safari.
  2. Click *Safari* in the left upper corner menu.
  3. Click *Settings…* → *Extensions* tab
- 4. Uncheck checkboxes for all 6 AdGuard content blockers, this is how it should look like:
+ 4. Clear the checkboxes for AdGuard’s 6 content blocking extensions: *Custom*, *General*, *Other*, *Privacy*, *Security*, and *Social*.
     ![Unchecked content blockers](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-unchecked-cbs.png)
  5. Restart Safari.
  6. Check checkboxes for all 6 AdGuard content blockers again.
 
-Now, the everything should work as intended: filtering is on when AdGuard for Safari is enabled and filtering is off when disabled.
+Now everything should work as intended: filtering is on when AdGuard for Safari is enabled, and filtering is off when it is disabled.

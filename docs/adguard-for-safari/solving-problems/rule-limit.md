@@ -11,7 +11,7 @@ This article is about AdGuard for Safari, which safeguards only your Safari brow
 
 ## Safari content blocker rule limit
 
-Safari Content Blocker functionality is an indispensable tool for ad-blocking in Safari: it gives a way to apply filtering rules to pages accessed in Safari. Currently, as stated in the Safari Content Blocking API documentation, up to 150k rules is allowed in one content blocker.
+AdGuard for Safari uses the Content Blocking API to apply filtering rules to pages in the Safari browser. Currently, a maximum of 150,000 rules are allowed for each content blocking extension.
 
 AdGuard for Safari has 6 content blockers:
 
@@ -22,15 +22,15 @@ AdGuard for Safari has 6 content blockers:
 - AdGuard Other
 - AdGuard Custom
 
-That means user can use up to 900k filtering rules total.
+This makes a total of 900,000 filtering rules.
 
-However, **you can only have up to 150k in one content blocker**. If you exceed that limit, part of the rules will not be applied and that could lead to some things not being blocked.
+However, **an extension can contain up to 150,000 rules**. If you exceed this limit, some of the rules will not be applied. This may lead to incorrect blocking.
 
-## How to check that if you are exceeding rule limit
+## How to check if you are exceeding the rule limit
 
  1. Open AdGuard for Safari settings by clicking its icon beside the Safari's search bar.
  2. Scroll down and click *Content blockers*.
- 3. Under each content blocker, you can see the number of enabled rules and enabled filters.
+ 3. Below each content blocker, you can see the enabled filters and the number of active rules.
     ![Content blockers](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-cb.png)
 
  If a content blocker has more than 150,000 rules, go to *Filters* tab, select a filter category and disable filters or user rules you don't need.
