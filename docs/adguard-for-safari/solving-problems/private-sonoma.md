@@ -9,9 +9,7 @@ This article is about AdGuard for Safari, which safeguards only your Safari brow
 
 :::
 
-## AdGuard for Safari doesn't work in private tabs on macOS Sonoma
-
-### How to fix
+## How to fix
 
  1. Open Safari.
  2. Click *Safari* in the left upper corner menu.
