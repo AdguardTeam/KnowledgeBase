@@ -19,6 +19,6 @@ This is usually caused by the issue when content blockers update takes too long.
  4. Clear the checkboxes for AdGuard’s 6 content blocking extensions: *Custom*, *General*, *Other*, *Privacy*, *Security*, and *Social*.
     ![Unchecked content blockers](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-unchecked-cbs.png)
  5. Restart Safari.
- 6. Check checkboxes for all 6 AdGuard content blockers again.
+ 6. Return to *Settings...* → *Extensions* and re-enable the content blocking extensions.
 
 Now everything should work as intended: filtering is on when AdGuard for Safari is enabled, and filtering is off when it is disabled.
