@@ -15,7 +15,7 @@ To analyze and diagnose various problems that may occur with AdGuard for Safari,
 
  1. Open AdGuard for Safari settings by clicking its icon beside the Safari's search bar.
  2. Scroll down and click *Export logs*.
-3. Choose a location to save the .zip file and click *Save*.
+ 3. Choose a location to save the .zip file and click *Save*.
 
 Now you can send this file to support@adguard.com or attach it to your bug report on GitHub:
 
