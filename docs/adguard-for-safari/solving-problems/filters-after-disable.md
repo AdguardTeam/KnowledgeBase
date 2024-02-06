@@ -9,11 +9,9 @@ This article is about AdGuard for Safari, which safeguards only your Safari brow
 
 :::
 
-## Filtering doesn't stop even after AdGuard for Safari is disabled
-
 This is usually caused by the issue when content blockers update takes too long.
 
-### How to fix
+## How to fix
 
  1. Open Safari.
  2. Click *Safari* in the left upper corner menu.

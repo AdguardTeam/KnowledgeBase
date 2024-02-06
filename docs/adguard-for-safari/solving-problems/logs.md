@@ -13,7 +13,7 @@ This article is about AdGuard for Safari, which safeguards only your Safari brow
 
 To analyze and diagnose various problems that may occur with AdGuard for Safari, the AdGuard support service may need its log files. These files contain records of errors and other software events. Below are brief instructions on how to collect logs and send them to support if necessary.
 
- 1. Open AdGuard for Safari settings by clicking its icon beside the Safari's search bar.
+ 1. Open AdGuard for Safari app.
  2. Scroll down and click *Export logs*.
  3. Choose a location to save the .zip file and click *Save*.
 
