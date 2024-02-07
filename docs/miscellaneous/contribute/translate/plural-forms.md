@@ -24,13 +24,13 @@ Let’s draw a small parallel between English and Polish for better understandin
 
       The English version:                                                 The Polish equivalents:
 
-      1. form - It takes one hour.                                     1. form - Zajmuje to godzinę.
-      2. form - It takes two hours.                                    2. form - Zajmuje to dwie godziny.
-      3. form - It takes five hours.                                   3. form - Zajmuje to pięć godzin.
+      1. form — It takes one hour.                                     1. form — Zajmuje to godzinę.
+      2. form — It takes two hours.                                    2. form — Zajmuje to dwie godziny.
+      3. form — It takes five hours.                                   3. form — Zajmuje to pięć godzin.
 
 Now it is clear that the Polish *'godzinę'* (hour) has three different forms, whereas the English word changes its form with given numbers only twice.
 
-Except for Polish, there are a lot of other languages that have three plural forms and more, such as Russian, Serbian, Slovak, Czech etc. But not all of them obey the same rule. That's why it's so important to know how many plurals your language has, as well as their correct usage.
+Except for Polish, there are a lot of other languages that have three plural forms and more, such as Russian, Serbian, Slovak, Czech etc. But not all of them obey the same rule. That's why it's so important to know how many plurals your language has, and how to use them correctly.
 
 ## Where can you learn about the number of plural forms? {#where-to-learn}
 

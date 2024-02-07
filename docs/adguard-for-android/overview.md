@@ -224,7 +224,7 @@ From the context menu, you can also access the app's stats.
 
 ![App management: Chrome. Context menu *mobile_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
 
-### Compatible and incompatible apps
+### Problem-free and incompatible apps
 
 By default, only compatible apps are routed through AdGuard and filtered. These are the apps that still work properly when filtering is enabled.
 
@@ -252,7 +252,7 @@ You can tap a request to view its details and add a blocking or unblocking rule.
 
 ### Data usage
 
-This section shows the amount of downloaded and uploaded data, and saved traffic for the selected time period and data type. Tap *saved*, *uploaded*, or *downloaded* to view the graph of data usage over time.
+This section shows the amount of downloaded and uploaded data and saved traffic for the selected time period and data type. Tap *saved*, *uploaded*, or *downloaded* to view the graph of data usage over time.
 
 ### Apps
 
@@ -446,7 +446,7 @@ You can get access to these features by [purchasing a license](https://adguard.c
 
 ### Rooted vs non-rooted devices
 
-Due to additional security measures of Android OS, some AdGuard features are only available on rooted devices. Here's the list of them:
+Due to additional security measures of the Android OS, some AdGuard features are only available on rooted devices. Here's the list of them:
 
 - **HTTPS filtering in most apps** requires [installing a CA certificate into the system store](#security-certificates), as most apps do not trust certificates in the user store. Installing a certificate into the system store is only possible on rooted devices
 - The [**Automatic proxy** routing mode](#routing-mode) requires root access due to Android's restrictions on system-wide traffic filtering

@@ -19,7 +19,7 @@ AdGuard for Safari is a free app presented on the App Store. To install it on yo
 
 1. Press *Get* → *Install* → *Open*.
 
-1. To set up AdGuard for Safari, enable the AdGuard extensions in the Safari settings. When a notification appears, click *Fix it*. In an opened window, check the boxes next to AdGuard extensions.
+1. To set up AdGuard for Safari, enable the AdGuard extensions in the Safari settings.
 
 ![Notification: Some extensions are disabled](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-notification.png)
 

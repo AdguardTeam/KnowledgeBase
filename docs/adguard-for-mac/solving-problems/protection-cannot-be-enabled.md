@@ -11,7 +11,7 @@ This article covers AdGuard for Mac, a multifunctional ad blocker that protects 
 
 If AdGuard Protection cannot be enabled for some reason, perform the following steps:
 
-1. Click the AdGuard icon at the Menu Bar → go to Advanced → Reset settings... → Quit AdGuard...
+1. Click the AdGuard icon at the menu bar and go to *Advanced* → *Reset settings...* → *Quit AdGuard...*
 
 2. In the Spotlight Search, type Terminal, enter `sudo rm -R /Library/Application\ Support/com.adguard.adguard` and execute.
 

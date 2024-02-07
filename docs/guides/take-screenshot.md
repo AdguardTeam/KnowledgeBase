@@ -11,13 +11,13 @@ Sometimes a screenshot (or screenshots) are requested by the support team for a 
 
 Taking a screenshot on an Android device can be done in various ways — depending on the device model and its manufacturer.
 
-Generally, you must use the following button combination for Android:
+Generally, the following button combination is used for Android:
 
 - **Hold down at once the *Volume Down* and the *Power* buttons for 1–2 seconds**
 
 Your Android device will capture the entire screen and save it as a photo. So, you can find the screenshot in a *Screenshots* folder in your Gallery.
 
-But, as it has been already said, there can be differences depending on a particular device. Let’s look at other possible combinations:
+But there can be differences depending on a particular device. Let’s look at other possible combinations:
 
 - **Hold down at once *Home* and *Power* for 1–2 seconds;**
 - **Hold down at once the *Back* and the *Home* buttons**

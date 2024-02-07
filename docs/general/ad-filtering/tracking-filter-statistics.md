@@ -37,7 +37,7 @@ The list is created based on the website's visit statistics since the last time 
 
 The collected statistics will be sent periodically to our server for analysis and filter optimization.
 
-It's important to note that all the statistics we get are averaged and anonymized. We don't use these statistics for any purpose other than optimizing the filters, and we do not sell this data to third parties. You can read about it in our [Privacy Policy](https://adguard.com/privacy.html).
+It's important to note that all the statistics we get are averaged and anonymized. We don't use these statistics for any purpose other than optimizing the filters, and we do not sell this data to third parties. You can read about it in our [Privacy policy](https://adguard.com/privacy.html).
 
 ### What does tracking filter rules statistics fraught with?
 

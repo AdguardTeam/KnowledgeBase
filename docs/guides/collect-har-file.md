@@ -32,7 +32,7 @@ To create a HAR file in Chrome, follow these steps:
 
 1. Save session as a .har file by right-clicking the grid and selecting **Save as HAR with content**.
 
-1. Send to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+1. Send it to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
 
 ## Edge {#edge}
 
@@ -59,7 +59,7 @@ To create a HAR file in Chrome, follow these steps:
 
 1. Save session as a .har file by right-clicking the grid and selecting **Save as HAR with content**.
 
-1. Send to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+1. Send it to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
 
 ## Firefox {#firefox}
 
@@ -88,7 +88,7 @@ To create a HAR file in Firefox, follow these steps:
 
 1. Save session as a .har file by right-clicking the grid and selecting **Save all as HAR**.
 
-1. Send to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+1. Send it to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
 
 ## Internet Explorer 11 {#ie11}
 
@@ -115,7 +115,7 @@ To create a HAR file in Internet Explorer 11, follow these steps:
 
 1. Save session as a .har file by clicking the **Save to disk** button (Export as HAR) on Network tab.
 
-1. Send to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+1. Send it to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
 
 ## Safari {#safari}
 
@@ -147,7 +147,7 @@ To create a HAR file in Safari, follow these steps:
 
 1. Save session as a .har file by clicking the **Export** icon next to the **Delete Trash** icon.
 
-1. Send to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, too.
+1. Send it to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, too.
 
 ## Android {#android}
 

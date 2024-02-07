@@ -30,7 +30,7 @@ On Monterey, iCloud Private Relay got introduced. Privacy features of Mail.app a
 
 As a consequence, AdGuard can't work together with iCloud Private Relay and Mail app privacy features:
 
-1. iCloud Private Relay is applied to connections at the library level - before they reach the socket level, where AdGuard operates.
+1. iCloud Private Relay is applied to connections at the library level — before they reach the socket level, where AdGuard operates.
 2. iCloud Private Relay uses QUIC, which AdGuard can't filter because HTTP/3 filtering is not yet available.
 3. Consequently, AdGuard blocks QUIC, including iCloud Private Relay traffic – otherwise, ad blocking is impossible.
 4. When you use iCloud Private Relay and switch AdGuard into the "split-tunnel" mode, you can't open websites in Safari.
@@ -42,4 +42,4 @@ We keep searching for a solution to this issue. One of the options is implementi
 
 ## Recommended solution
 
-Using a more traditional VPN service, such as [AdGuard VPN](https://adguard-vpn.com/), instead of the newer Apple privacy features is currently recommended.
+At this point, we recommend using a more traditional VPN service, such as [AdGuard VPN](https://adguard-vpn.com/), instead of the newer Apple privacy features.
