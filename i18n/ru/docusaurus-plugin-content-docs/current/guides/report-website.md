@@ -29,7 +29,7 @@ sidebar_position: 3
 - Откройте настройки расширения браузера, нажав на соответствующий значок;
 - Нажмите на **Сообщить о проблеме**:
 
-![extension_issue *mobile_border](https://cdn.adtidy.org/blog/new/5si74extension.png)
+![проблема с расширением *mobile_border](https://cdn.adtidy.org/blog/new/5si74extension.png)
 
 - После заполнения формы автоматически будет создана проблема на [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) . Там же будет ссылка для отслеживания прогресса в решении вашей проблемы.
 
@@ -97,7 +97,7 @@ sidebar_position: 3
 
     ![forma4 *border](https://cdn.adtidy.org/content/kb/ad_blocker/guides/forma4en.png)
 
-5. [Provide a screenshot](../take-screenshot) that captures the essence of a problem;
+5. [Добавьте скриншот](../take-screenshot), на котором отражена суть проблемы;
 
     - **Важно**: Скройте личную информацию (адрес почты, номер телефона и т.п.), потому что добавленные скриншоты будут видны всем.
 

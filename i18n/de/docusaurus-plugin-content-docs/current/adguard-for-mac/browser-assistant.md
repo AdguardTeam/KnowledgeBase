@@ -45,7 +45,10 @@ The new Browser Assistant has its own tab in the AdGuard for Mac settings, toget
 
 ## Assistent für ältere Browser
 
-Legacy-Assistent ist die vorherige Version von Assistent, die lediglich ein Benutzerskript und keine Browsererweiterung ist. Grundsätzlich gibt es zwei Fälle, in denen Sie ihn anstelle des neuen Browser-Assistenten auswählen möchten: 1) Der neue Assistent ist für Ihren Browser nicht verfügbar; 2) Sie sind an das grüne Schild-Symbol gewöhnt und möchten alles so lassen, wie es war.  Wenn Sie sich in einem dieser Szenarien wiedererkennen, ist die Legacy-Version genau das Richtige für Sie.
+Legacy-Assistent ist die vorherige Version von Assistent, die lediglich ein Benutzerskript und keine Browsererweiterung ist. Basically, there are two cases when you might want to pick it instead of the new Browser Assistant:
+
+1. The new Assistant is not available for your browser.
+1. You are used to the green shield icon and want to leave things as they were.
 
 ## Wie man AdGuard Browser-Assistenten installiert
 

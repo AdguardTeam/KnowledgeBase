@@ -1,56 +1,56 @@
 ---
-title: How to create a minidump file to fix the BSoD error
+title: Как создать файл minidump для исправления ошибки BSoD
 sidebar_position: 8
 ---
 
-Almost all Windows users are familiar with the [Blue Screen of Death (BSoD)](https://en.wikipedia.org/wiki/Blue_screen_of_death) error unfortunately. BSoD occurs when the Windows system encounters problems that can affect safe system operation, such as problems with third-party driver code, hardware, or Microsoft code. To solve the blue screen error, users can use a minidump file.
+К сожалению, почти все пользователи Windows знакомы с ошибкой [Синий экран смерти (Blue Screen of Death, BSoD)](https://en.wikipedia.org/wiki/Blue_screen_of_death). Эта ошибка возникает, когда системе Windows сталкивается с проблемами, которые могут повлиять на безопасную работу системы, например, проблемы со сторонним кодом драйвера, аппаратным обеспечением или кодом Microsoft. Чтобы устранить ошибку синего экрана, пользователи могут использовать файл minidump.
 
-## What is Minidump file
+## Что такое файл minidump
 
-A minidump file is a file that contains the information about the nature of the system crash. It is created just before the blue screen appears and it has the minimum amount of useful information that can be used to solve the problem. The minidump file usually has a *.dmp* extension.
+Файл minidump — это файл с информацией о характере сбоя системы. Он создаётся непосредственно перед появлением синего экрана и содержит минимальное количество полезной информации, которую можно использовать для решения проблемы. Обычно расширение файла minidump — *.dmp*.
 
 :::note
-On Windows 10, the blue screen shows a stop code and a QR code. The user can use this information and search the Web for the specific problem.
+В Windows 10 на синем экране отображается код остановки и QR-код. Пользователь может использовать эти данные, чтобы найти в интернете информацию о конкретной проблеме.
 
 :::
 
-The option to create the minidump file is disabled by default, so before we go into more detail on how to use the file, let’s take a closer look at how to enable it.
+По умолчанию возможность создания файла minidump отключена. Поэтому сначала нужно разобраться в том, как её включить, а потом уже углубляться в детали использования этого файла.
 
-## Set up Windows to create the Minidump file
+## Как разрешить создание файла minidump
 
-Even if you don’t experience any BSoD crash errors,  you can still set this option — this is a general recommendation, not necessarily related to AdGuard products. Please follow the instructions below to automatically create the minidump file.
+Даже если вы не сталкивались с ошибками BSoD, лучше настроить эту опцию — это общая рекомендация, не обязательно связанная с продуктами AdGuard. Следуйте этой инструкции, чтобы автоматически создать minidump-файл.
 
- 1. Type *sysdm.cpl* in the Windows search bar and click **Open**. The **System Properties Control Panel Menu** window will appear on the screen.
+ 1. Наберите *sysdm.cpl* в строке поиска Windows и нажмите **Открыть**. На экране появится окно **Свойства системы**.
 
     :::tip
 
-    Alternatively, click **Settings** →  **System** →  **About** →  **Advanced system settings**.
+    Вы также можете нажать **Настройки** → **Система** → **О системе** → **Дополнительные параметры системы**.
 
 
 :::
 
-    ![System Properties *mobile_border](https://cdn.adtidy.org/blog/new/c2huSystem_Properties.jpeg)
+    ![Свойства системы *mobile_border](https://cdn.adtidy.org/blog/new/c2huSystem_Properties.jpeg)
 
- 1. Go to the **Advanced** tab.
- 1. In the **Startup and Recovery** section, click **Settings**.
+ 1. Перейдите во вкладку **Дополнительно**.
+ 1. В разделе **Загрузка и восстановление** нажмите **Параметры**.
 
-    ![Startup and Recovery *mobile_border](https://cdn.adtidy.org/blog/new/1dmybiStartup_and_Recovery.png)
+    ![Загрузка и восстановление *mobile_border](https://cdn.adtidy.org/blog/new/1dmybiStartup_and_Recovery.png)
 
- 1. Enable the following three options:
+ 1. Активируйте эти три опции:
 
-    - Write an event to the system log
-    - Automatically restart
-    - Writing debugging information → Small memory dump (256 kb)
+    - Записать событие в системный журнал
+    - Выполнить автоматическую перезагрузку
+    - Запись отладочной информации → Малый дамп памяти (256 КБ)
 
-    ![Three options *mobile_border](https://cdn.adtidy.org/blog/new/nmr4eThree_options.png)
+    ![Три опции *mobile_border](https://cdn.adtidy.org/blog/new/nmr4eThree_options.png)
 
- 1. Click **OK** to apply the settings.
- 1. Restart the computer.
+ 1. Нажмите **OK**, чтобы применить настройки.
+ 1. Перезагрузите компьютер.
 
-You've successfully enabled the minidump file. Now it will be created automatically when the system crashes.
+Вы разрешили создание файла minidump. Теперь он будет создаваться автоматически при сбое системы.
 
 :::note
 
-By default the minidump file is stored in the **%SystemRoot%\Minidump** folder. You can change the directory location to whatever you like, but please remember that a lot of programs are set to look for this location by default, so we recommend that you do not change the location.
+По умолчанию minidump-файл хранится в папке **%SystemRoot%\Minidump**. Вы можете выбрать любую другую папку, но помните, что многие программы по умолчанию ищут именно это место, поэтому мы не рекомендуем менять расположение.
 
 :::

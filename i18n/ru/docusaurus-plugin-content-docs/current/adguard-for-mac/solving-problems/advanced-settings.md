@@ -169,7 +169,7 @@ sidebar_position: 9
 
 `stealth.antidpi.split.delay.millisecond`
 
-Here you can specify the delay, in milliseconds, after sending the first fragment, if fragmentation is performed.
+Здесь можно указать задержку (в миллисекундах) после отправки первого фрагмента, если выполняется фрагментация.
 
 `subscription.link.interception.userscript`
 

@@ -21,7 +21,7 @@ sidebar_position: 3
 
 ### Вопросы безопасности
 
-Isn't it dangerous to let some random apps manage what AdGuard does? It is, and that's why a password is sent along with the intent. Этот пароль генерируется автоматически, но вы можете поменять его самостоятельно в расширенных настройках AdGuard.
+Не опасно ли позволять каким-то случайным приложениям управлять работой AdGuard? Опасно, именно поэтому вместе с интентом отправляется пароль. Этот пароль генерируется автоматически, но вы можете поменять его самостоятельно в расширенных настройках AdGuard.
 
 ### Доступные действия
 
@@ -49,7 +49,7 @@ Isn't it dangerous to let some random apps manage what AdGuard does? It is, and 
 
 :::note
 
-The full list of supported provider names can be found in our [known DNS providers list](https://adguard-dns.io/kb/general/dns-providers/).
+Полный список поддерживаемых провайдеров можно найти в нашем списке [известных DNS-провайдеров](https://adguard-dns.io/kb/general/dns-providers/).
 
 :::
 
@@ -116,7 +116,7 @@ The full list of supported provider names can be found in our [known DNS provide
 
 :::
 
-**Don't forget to include the password as an extra and mention package name and class. You need to do so for every intent.**
+**Don't forget to include the password as an extra and mention package name and class. Это нужно делать для каждого интента.**
 
 Extra: `password:*******`
 

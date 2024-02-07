@@ -63,7 +63,7 @@ For example:
 
 - `https://example.org/banner/img`
 
-### Basic rule modifiers
+### Basic rule modifiers {#basic-rule-modifiers}
 
 Filtering rules support numerous modifiers that allow you to fine-tune the rule behavior. Here is an example of a rule with some simple modifiers.
 
@@ -153,6 +153,12 @@ Browser detects a blocked request as completed with an error.
 
 :::
 
+:::note Rule length
+
+Rules shorter than 4 characters are considered incorrect and will be ignored.
+
+:::
+
 ### Basic rule syntax {#basic-rules-syntax}
 
 ```text
@@ -200,68 +206,6 @@ For example, `/banner\d+/$third-party` this rule will apply the regular expressi
 AdGuard Safari and AdGuard for iOS do not fully support regular expressions because of [Content Blocking API restrictions](https://webkit.org/blog/3476/content-blockers-first-look/) (look for "The Regular expression format" section).
 
 :::
-
-### Restrictions on rules application {#rules-restrictions}
-
-Rules that match an arbitrarily large number of URLs are considered incorrect and will be ignored. This can happen if the rule doesn't contain a mask, or if the mask matches any URL with a certain protocol.
-
-This rule will be ignored:
-
-```text
-|http://$replace=/a/b/
-```
-
-This limitation can be circumvented by using a `/.*/` regular expression inside the mask.
-
-This rule will not be ignored:
-
-```text
-/.*/$replace=/a/b/
-```
-
-**Exceptions**
-
-This rule validation is not applied in the following cases:
-
-1. The rule contains [`$domain`](#domain-modifier) modifier that points to a specific domain list
-
-    These rules will not be ignored:
-
-    ```text
-    $domain=example.com,script
-    $domain=example.*,script
-    ```
-
-    This rule will be ignored because of domain negation, which causes too wide of a rule application scope:
-
-    ```text
-    $domain=~example.com,script
-    ```
-
-1. The rule contains [`$app`](#app-modifier) modifier that points to a specific app list
-
-    This rule will not be ignored:
-
-    ```text
-    $app=curl,document
-    ```
-
-    This rule will be ignored because of app negation, which causes too wide of a rule application scope:
-
-    ```text
-    $app=~curl,document
-    ```
-
-1. The rule contains one or more modifiers from among [`$cookie`](#cookie-modifier), [`$removeparam`](#removeparam-modifier), [`$removeheader`](#removeheader-modifier), [`$stealth`](#stealth-modifier)
-
-    These rules will not be ignored:
-
-    ```text
-    $removeparam=cx_recsWidget
-    $cookie=ibbid
-    $removeheader=location
-    $stealth
-    ```
 
 ### Wildcard support for TLD (top-level domains) {#wildcard-for-tld}
 
@@ -1136,7 +1080,7 @@ These modifiers are able to completely change the behavior of basic rules.
 | [$permissions](#permissions-modifier)       |            ✅             |                ⏳                |               ⏳               |             ❌              |               ❌               |              ❌              |
 | [$redirect](#redirect-modifier)             |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |              ❌              |
 | [$redirect-rule](#redirect-rule-modifier)   |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |              ❌              |
-| [$referrerpolicy](#referrerpolicy-modifier) |            🧩             |                ❌                |               ❌               |             ❌              |               ❌               |              ❌              |
+| [$referrerpolicy](#referrerpolicy-modifier) |            ✅             |                ❌                |               ❌               |             ❌              |               ❌               |              ❌              |
 | [$removeheader](#removeheader-modifier)     |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |              ❌              |
 | [$removeparam](#removeparam-modifier)       |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |              ❌              |
 | [$replace](#replace-modifier)               |            ✅             |                ❌                |               ✅               |             ❌              |               ❌               |              ❌              |
@@ -1148,7 +1092,7 @@ These modifiers are able to completely change the behavior of basic rules.
 
 - ✅ — fully supported
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
-- 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions
+<!-- - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions -->
 - ❌ — not supported
 - 👎 — deprecated; still supported but will be removed in the future
 
@@ -1430,7 +1374,7 @@ preroll.ts
 - `$hls` rules are only allowed [**in trusted filters**](#trusted-filters).
 - `$hls` rules are compatible with the modifiers `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest` only.
 - `$hls` rules only apply to HLS playlists, which are UTF-8 encoded text starting with the line `#EXTM3U`. Any other response will not be modified by these rules.
-- `$hls` rules do not apply if the size of the original response is more than 3 MB.
+- `$hls` rules do not apply if the size of the original response is more than 10 MB.
 
 :::
 
@@ -1675,7 +1619,7 @@ In AdGuard for Windows, Mac and Android **running CoreLibs v1.11 or later**, JSO
 :::caution Restrictions
 
 - `$jsonprune` rules are only compatible with these specific modifiers: `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
-- `$jsonprune` rules do not apply if the size of the original response is more than 3 MB.
+- `$jsonprune` rules do not apply if the size of the original response is more than 10 MB.
 
 :::
 
@@ -1827,19 +1771,13 @@ These rules allow overriding of a page's [referrer policy](https://developer.moz
 
 An exception rule with a modifier value disables the blocking rule with the same modifier value. An exception rule without a modifier value disables all matched referrer-policy rules.
 
-If a request matches multiple `$referrerpolicy` rules not disabled by exceptions, only one of them (it is not specified which one) is applied.
+If a request matches multiple `$referrerpolicy` rules not disabled by exceptions, only one of them (it is not specified which one) is applied. `$referrerpolicy` rules without specified [content-type modifiers](#content-type-modifiers) apply to `$document` and `$subdocument` content types.
 
 **Examples**
 
 - `||example.com^$referrerpolicy=unsafe-url` overrides the referrer policy for `example.com` with `unsafe-url`.
 - `@@||example.com^$referrerpolicy=unsafe-url` disables the previous rule.
 - `@@||example.com/abcd.html^$referrerpolicy` disables all `$referrerpolicy` rules on `example.com/abcd.html`.
-
-:::caution Restrictions
-
-`$referrerpolicy` rules are compatible only with `$document` and `$subdocument` [content-type modifiers](#content-type-modifiers).
-
-:::
 
 :::info Compatibility
 
@@ -2090,7 +2028,7 @@ You will need some knowledge of regular expressions to use `$replace` modifier.
 **Features**
 
 - `$replace` rules apply to any text response, but will not apply to binary (`media`, `image`, `object`, etc.).
-- `$replace` rules do not apply if the size of the original response is more than 3MB.
+- `$replace` rules do not apply if the size of the original response is more than 10 MB.
 - `$replace` rules have a higher priority than other basic rules (**including** exception rules). So if a request corresponds to two different rules one of which has the `$replace` modifier, this rule will be applied.
 - Document-level exception rules with `$content` or `$document` modifiers do disable `$replace` rules for requests matching them.
 - Other document-level exception rules (`$generichide`, `$elemhide` or `$jsinject` modifiers) are applied alongside `$replace` rules. It means that you can modify the page content with a `$replace` rule and disable cosmetic rules there at the same time.
@@ -2255,7 +2193,6 @@ Modifier aliases (`1p`, `3p`, etc.) are not included in these categories, howeve
 
 - [`$app`](#app-modifier) with negated applications using `~`,
 - [`$denyallow`](#denyallow-modifier),
-- [`$dnsrewrite`](#dnsrewrite-modifier),
 - [`$domain`](#domain-modifier) with negated domains using `~`,
 - [`$match-case`](#match-case-modifier),
 - [`$method`](#method-modifier) with negated methods using `~`,
@@ -2450,7 +2387,7 @@ Element hiding rules are used to hide the elements of web pages. It is similar t
 
 Element hiding rules may operate differently [depending on the platform](#cosmetic-rules-priority).
 
-#### Syntax {#non-basic-rules-modifiers-syntax}
+#### Syntax
 
 ```text
    rule = [domains] "##" selector
@@ -2526,7 +2463,7 @@ domains = [domain0, domain1[, ...[, domainN]]]
 ```
 
 - **`selector`** — [CSS selector](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors), that defines the elements we want to apply the style to.
-- **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules](#elemhide-syntax).
+- **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules](#cosmetic-elemhide-rules).
 - **`style`** — CSS style, that we want to apply to selected elements.
 
 **Examples**
@@ -3257,7 +3194,7 @@ This pseudo-class was basically a shortcut for `:not(:has())`. It was supported 
 
 The way **element hiding** and **CSS rules** are applied is platform-specific.
 
-**In AdGuard for Windows, Mac, and Android**, we use a stylesheet injected into the page. The priority of cosmetic rules is the same as any other websites' CSS stylesheet. But there is a limitation: [element hiding](#elemhide-syntax) and [CSS rules](#cosmetic-css-rules) cannot override inline styles. In such cases, it is recommended to use extended selectors or HTML filtering.
+**In AdGuard for Windows, Mac, and Android**, we use a stylesheet injected into the page. The priority of cosmetic rules is the same as any other websites' CSS stylesheet. But there is a limitation: [element hiding](#cosmetic-elemhide-rules) and [CSS rules](#cosmetic-css-rules) cannot override inline styles. In such cases, it is recommended to use extended selectors or HTML filtering.
 
 **In AdGuard Browser Extension**, the so called "user stylesheets" are used. They have higher priority than even the inline styles.
 
@@ -3286,7 +3223,7 @@ pseudoClasses = pseudoClass *pseudoClass
 ```
 
 - **`tagName`** — name of the element in lower case, for example, `div` or `script`.
-- **`domains`** — domain restriction for the rule. Same principles as in [element hiding rule syntax](#elemhide-syntax).
+- **`domains`** — domain restriction for the rule. Same principles as in [element hiding rule syntax](#cosmetic-elemhide-rules).
 - **`attributes`** — a list of attributes that limit the selection of elements. `name` — attribute name, `value` — substring, that is contained in attribute value.
 - **`pseudoName`** — the name of a pseudo-class.
 - **`pseudoArgs`** — the arguments of a function-style pseudo-class.
@@ -3490,7 +3427,7 @@ We **strongly recommend** using [scriptlets](#scriptlets) instead of JavaScript 
 rule = [domains]  "#%#" script
 ```
 
-- **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules](#elemhide-syntax).
+- **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules](#cosmetic-elemhide-rules).
 - **`script`** — arbitrary javascript code **in one string**.
 
 **Examples**
@@ -3600,7 +3537,7 @@ More information about trusted scriptlets can be found [on GitHub](https://githu
 
 Each rule can be modified using the modifiers described in the following paragraphs.
 
-**Syntax**
+**Syntax** {#non-basic-rules-modifiers-syntax}
 
 ```text
 rule = "[$" modifiers "]" [rule text]
@@ -3833,6 +3770,7 @@ where:
         - `adguard_ext_opera` — AdGuard Browser Extension for Opera
         - `adguard_ext_android_cb` — AdGuard Content Blocker for mobile Samsung and Yandex browsers
         - `ext_ublock` — special case; this one is declared when a uBlock version of a filter is compiled by the [FiltersRegistry][]
+        - `cap_html_filtering` — products that support HTML filtering rules: AdGuard for Windows, AdGuard for Mac, and AdGuard for Android
 - `!#else` — start of the block when conditions are false
 - `rules_list`, `true_conditions_rules_list`, `false_conditions_rules_list` — lists of rules
 - `!#endif` — end of the block

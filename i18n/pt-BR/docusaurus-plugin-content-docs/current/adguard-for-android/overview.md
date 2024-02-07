@@ -388,7 +388,7 @@ Userscripts are mini-programs written in JavaScript that extend the functionalit
 
 ##### AdGuard Extra
 
-AdGuard Extra is a custom userscript that prevents websites from bypassing ad blockers and re-inserting blocked ads.
+AdGuard Extra is a custom userscript that blocks complex ads and mechanisms that reinject ads to websites.
 
 ### Licença
 
@@ -421,7 +421,7 @@ GitHub is an alternative way to report bugs and suggest new features. [Instructi
 
 :::
 
-### Free vs full version
+## Free vs full version
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xNOeHpZgjFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -441,13 +441,13 @@ AdGuard uses its own ad-free media player to block ads in YouTube videos. To ope
 
 - *Custom filters and user rules* allow you to add your own filtering rules and third-party filters to fine-tune ad blocking. [Back to filters](#filters)
 
-- *Userscripts* allow you to use AdGuard Extra to bypass ad blocker bans and install other userscripts to extend your browser's functionality. [Back to userscripts](#userscripts)
+- *Userscripts* allow you to extend the functionality of the browser and use [AdGuard Extra](#adguard-extra) that prevents ad reinjection. [Back to userscripts](#userscripts)
 
 You can get access to these features by [purchasing a license](https://adguard.com/license.html). [How to activate the license](/general/license/activation/#activating-adguard-for-android)
 
-### Rooted vs non-rooted devices
+## Rooted vs non-rooted devices
 
-Due to additional security measures of Android apps, some AdGuard features are only available on rooted devices. Here's the list of them:
+Due to security measures of the Android OS, some AdGuard features are only available on rooted devices. Here's the list of them:
 
 - **HTTPS filtering in most apps** requires [installing a CA certificate into the system store](#security-certificates), as most apps do not trust certificates in the user store. Installing a certificate into the system store is only possible on rooted devices
 - The [**Automatic proxy** routing mode](#routing-mode) requires root access due to Android's limitations on system-wide traffic filtering

@@ -19,7 +19,7 @@ sidebar_position: 2
 
 ## Установка
 
-AdGuard для Android не представлен на Google Play: Google запрещает распространять через этот магазин блокировщики сетевого уровня — то есть те, которые блокируют рекламу в других приложениях. You will find more information about Google restrictive policy [in our blog](https://adguard.com/blog/adguard-google-play-removal.html).
+AdGuard для Android не представлен на Google Play: Google запрещает распространять через этот магазин блокировщики сетевого уровня — то есть те, которые блокируют рекламу в других приложениях. Дополнительную информацию об ограничительной политике Google можно найти [в нашем блоге](https://adguard.com/blog/adguard-google-play-removal.html).
 
 Поэтому установить AdGuard для Android можно только вручную. Ниже — инструкции, как это сделать.
 
@@ -61,14 +61,14 @@ AdGuard для Android не представлен на Google Play: Google за
 
     ![Включение HTTPS-фильтрации на Android 7–9. Шаг 2 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/cert_2.jpg)
 
-    If you have Android 10+ on your device, then after creating a local VPN, you will see the main app screen with a snack bar at the bottom with a suggestion to enable HTTPS filtering: tap *Enable* and follow the instructions on the next screen or check [the article about certificate installation](solving-problems/manual-certificate.md) for more information.
+    Если у вас ОС Android 10 и выше, то после создания локального VPN вы на главном экране увидите снэк-бар с предложением включить HTTPS-фильтрацию. Нажмите *Включить* и следуйте инструкции. Больше информации можно найти [в статье об установке сертификата](solving-problems/manual-certificate.md).
 
     ![Включение HTTPS-фильтрации *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_5.png)
 
 ## Удаление/переустановка AdGuard
 
-If you need to uninstall AdGuard on your mobile device, open *Settings* and choose *Apps* (Android 7) or *Apps & notifications* (Android 8+). Find AdGuard in the list of installed apps and press *Uninstall*.
+Если вам нужно удалить AdGuard, откройте *Настройки* и выберите *Приложения* (Android 7) или *Приложения и уведомления* (Android 8+). Найдите AdGuard в списке установленных приложений и нажмите *Удалить*.
 
-![Reinstall AdGuard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_4.png)
+![Переустановка AdGuard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_4.png)
 
-To reinstall AdGuard, just download the apk file again and follow the steps outlined in the Installation section. Uninstallation is not required beforehand.
+Чтобы переустановить AdGuard, просто загрузите apk-файл ещё раз и выполните действия, описанные в разделе «Установка». Предварительно удалять приложение не обязательно.

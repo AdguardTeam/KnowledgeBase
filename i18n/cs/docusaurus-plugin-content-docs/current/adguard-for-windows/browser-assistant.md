@@ -33,7 +33,10 @@ Nový Asistent prohlížeče má v nastavení AdGuardu pro Windows vlastní zál
 
 ## Starý Asistent
 
-Starý Asistent je předchozí verze Asistenta, která je pouhým uživatelským skriptem, nikoli rozšířením prohlížeče. V zásadě existují dva případy, kdy jej budete chtít zvolit namísto nového Asistenta prohlížeče: 1) nový Asistent není pro váš prohlížeč k dispozici; 2) jste zvyklí na ikonu zeleného štítu a chcete ponechat vše při starém.
+Starý Asistent je předchozí verze Asistenta, která je pouhým uživatelským skriptem, nikoli rozšířením prohlížeče. V zásadě existují dva případy, kdy byste ho mohli zvolit místo nového Asistenta prohlížeče:
+
+1. Nový Asistent není pro váš prohlížeč k dispozici.
+1. Jste zvyklí na ikonu zeleného štítu a chcete ponechat vše při starém.
 
 ## Jak nainstalovat Asistenta prohlížeče AdGuard
 

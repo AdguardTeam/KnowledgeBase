@@ -388,7 +388,7 @@ Uživatelské skripty jsou miniprogramy napsané v jazyce JavaScript, které roz
 
 ##### AdGuard Extra
 
-AdGuard Extra je vlastní uživatelský skript, který zabraňuje webovým stránkám obcházet blokátory reklam a znovu vkládat blokované reklamy.
+AdGuard Extra je vlastní uživatelský skript, který blokuje složité reklamy a mechanismy, které znovu vkládají reklamy na webové stránky.
 
 ### Licence
 
@@ -421,7 +421,7 @@ GitHub je alternativní způsob, jak hlásit chyby a navrhovat nové funkce. [Po
 
 :::
 
-### Bezplatná vs plná verze
+## Bezplatná vs plná verze
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xNOeHpZgjFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -441,13 +441,13 @@ AdGuard používá k blokování reklam ve videích YouTube vlastní přehráva�
 
 - *Vlastní filtry a uživatelská pravidla* vám umožňují přidávat vlastní pravidla filtrování a filtry třetích stran pro vylepšení blokování reklam. [Zpět k filtrům](#filters)
 
-- *Uživatelské skripty* vám umožňují používat AdGuard Extra k obcházení zákazů blokování reklam a instalaci dalších uživatelských skriptů pro rozšíření funkčnosti prohlížeče. [Zpět k uživatelským skriptům](#userscripts)
+- *Uživatelské skripty* umožňují rozšířit funkčnost prohlížeče a používat [AdGuard Extra](#adguard-extra), který zabraňuje opětovnému vkládání reklam. [Zpět k uživatelským skriptům](#userscripts)
 
 K těmto funkcím získáte přístup [zakoupením licence](https://adguard.com/license.html). [Jak aktivovat licenci](/general/license/activation/#activating-adguard-for-android)
 
-### Zařízení s přístupem root vs bez přístupu root
+## Zařízení s přístupem root vs bez přístupu root
 
-Vzhledem k dalším bezpečnostním opatřením systému Android jsou některé funkce AdGuardu dostupné pouze na zařízeních s přístupem root. Zde je jejich seznam:
+Vzhledem k bezpečnostním opatřením OS Android jsou některé funkce AdGuardu dostupné pouze na zařízeních s přístupem root. Zde je jejich seznam:
 
 - **HTTPS filtrování ve většině aplikací** vyžaduje [instalaci certifikátu CA do systémového úložiště](#security-certificates), protože většina aplikací nedůvěřuje certifikátům v uživatelském úložišti. Instalace certifikátu do systémového úložiště je možná pouze na zařízeních s přístupem root
 - Režim směrování [**Automatický proxy**](#routing-mode) vyžaduje přístup root kvůli omezením systému Android ohledně filtrování provozu v celém systému
