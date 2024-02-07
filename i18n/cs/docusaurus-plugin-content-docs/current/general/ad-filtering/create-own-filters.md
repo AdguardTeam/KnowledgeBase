@@ -63,7 +63,7 @@ Např:
 
 - `https://example.org/banner/img`
 
-### Modifikátory základních pravidel
+### Modifikátory základních pravidel {#basic-rule-modifiers}
 
 Pravidla filtrování podporují řadu modifikátorů, které umožňují doladit chování pravidla. Zde je příklad pravidla s několika jednoduchými modifikátory.
 
@@ -153,6 +153,12 @@ Prohlížeč rozpozná zablokovaný požadavek jako dokončený s chybou.
 
 :::
 
+:::note Délka pravidla
+
+Pravidla kratší než 4 znaky jsou považována za nesprávná a budou ignorována.
+
+:::
+
 ### Syntaxe základních pravidel {#basic-rules-syntax}
 
 ```text
@@ -200,68 +206,6 @@ Např. pravidlo `/banner\d+/$third-party` použije regulární výraz `banner\d+
 AdGuard pro Safari a AdGuard pro iOS plně nepodporují regulární výrazy kvůli [omezení API pro blokování obsahu](https://webkit.org/blog/3476/content-blockers-first-look/) (hledejte sekci "Formát regulárního výrazu").
 
 :::
-
-### Omezení uplatňování pravidel {#rules-restrictions}
-
-Pravidla, která odpovídají libovolně velkému počtu adres URL, jsou považována za nesprávná a budou ignorována. K tomu může dojít, pokud pravidlo neobsahuje masku nebo pokud maska odpovídá jakékoli URL s určitým protokolem.
-
-Toto pravidlo bude ignorováno:
-
-```text
-|http://$replace=/a/b/
-```
-
-Toto omezení lze obejít použitím regulárního výrazu `/.*/` uvnitř masky.
-
-Toto pravidlo nebude ignorováno:
-
-```text
-/.*/$replace=/a/b/
-```
-
-**Výjimky**
-
-Tato validace pravidel se nepoužije v následujících případech:
-
-1. Pravidlo obsahuje modifikátor [`$domain`](#domain-modifier), který ukazuje na konkrétní seznam domén
-
-    Tato pravidla nebudou ignorována:
-
-    ```text
-    $domain=example.com,script
-    $domain=example.*,script
-    ```
-
-    Toto pravidlo bude ignorováno z důvodu doménové negace, která způsobuje příliš široký rozsah použití pravidla:
-
-    ```text
-    $domain=~example.com,script
-    ```
-
-1. Pravidlo obsahuje modifikátor [`$app`](#app-modifier), který ukazuje na konkrétní seznam aplikací
-
-    Toto pravidlo nebude ignorováno:
-
-    ```text
-    $app=curl,document
-    ```
-
-    Toto pravidlo bude ignorováno z důvodu negace aplikace, která způsobuje příliš široký rozsah použití pravidla:
-
-    ```text
-    $app=~curl,document
-    ```
-
-1. Pravidlo obsahuje jeden nebo více modifikátorů z [`$cookie`](#cookie-modifier), [`$removeparam`](#removeparam-modifier), [`$removeheader`](#removeheader-modifier), [`$stealth`](#stealth-modifier)
-
-    Tato pravidla nebudou ignorována:
-
-    ```text
-    $removeparam=cx_recsWidget
-    $cookie=ibbid
-    $removeheader=location
-    $stealth
-    ```
 
 ### Podpora zástupných znaků pro TLD (domény nejvyšší úrovně) {#wildcard-for-tld}
 
@@ -1136,7 +1080,7 @@ Tyto modifikátory mohou zcela změnit chování základních pravidel.
 | [$permissions](#permissions-modifier)       |              ✅               |                ⏳                |               ⏳               |             ❌              |               ❌               |                 ❌                 |
 | [$redirect](#redirect-modifier)             |              ✅               |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
 | [$redirect-rule](#redirect-rule-modifier)   |              ✅               |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
-| [$referrerpolicy](#referrerpolicy-modifier) |              🧩               |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
+| [$referrerpolicy](#referrerpolicy-modifier) |              ✅               |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
 | [$removeheader](#removeheader-modifier)     |              ✅               |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
 | [$removeparam](#removeparam-modifier)       |              ✅               |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
 | [$replace](#replace-modifier)               |              ✅               |                ❌                |               ✅               |             ❌              |               ❌               |                 ❌                 |
@@ -1148,7 +1092,7 @@ Tyto modifikátory mohou zcela změnit chování základních pravidel.
 
 - ✅ — plně podporováno
 - ✅ * — podporováno, ale spolehlivost se může lišit nebo se mohou vyskytnout omezení; více informací naleznete v popisu modifikátoru
-- 🧩 — může být již implementováno ve verzích nightly nebo beta, ale není ještě podporováno ve verzích pro vydání
+<!-- - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions -->
 - ❌ — nepodporováno
 - 👎 — zastaralé; stále podporovano, ale v budoucnu bude odstraněno
 
@@ -1430,7 +1374,7 @@ preroll.ts
 - Pravidla `$hls` lze použít [**pouze v důvěryhodných filtrech**](#trusted-filters).
 - Pravidla `$hls` jsou kompatibilní pouze s modifikátory `$domain`, `$third- party`, `$app`, `$important`, `$match- case` a `$xmlhttprequest`.
 - `$hls` pravidla platí pouze pro seznamy stop HLS, což je text kódovaný v UTF-8 začínající řádkem `#EXTM3U`. Jakákoli jiná odpověď nebude těmito pravidly upravena.
-- Pravidla `$hls` neplatí, pokud je velikost původní odpovědi větší než 3 MB.
+- Pravidla `$hls` neplatí, pokud je velikost původní odpovědi větší než 10 MB.
 
 :::
 
@@ -1675,7 +1619,7 @@ V AdGuardu pro Windows, Mac a Android, **s knihovnou CoreLibs v1.11 nebo nověj�
 :::caution Omezení
 
 - Pravidla `$jsonprune` jsou kompatibilní s těmito specifickými modifikátory `$domain`, `$third-party`, `$app`, `$important`, `$match-case` a `$xmlhttprequest`.
-- Pravidla `$jsonprune` neplatí, pokud je velikost původní odpovědi větší než 3 MB.
+- Pravidla `$jsonprune` neplatí, pokud je velikost původní odpovědi větší než 10 MB.
 
 :::
 
@@ -1827,19 +1771,13 @@ Tato pravidla umožňují přepsat [zásadu odkazování stránky](https://devel
 
 Pravidlo výjimky s hodnotou modifikátoru zakáže pravidlo blokování se stejnou hodnotou modifikátoru. Pravidlo výjimky bez hodnoty modifikátoru zakáže všechna odpovídající pravidla zásad odkazování.
 
-Pokud požadavek odpovídá více pravidlům `$referrerpolicy`, která nejsou zakázána výjimkami, použije se pouze jedno z nich (není uvedeno, které).
+Pokud požadavek odpovídá více pravidlům `$referrerpolicy`, která nejsou zakázána výjimkami, použije se pouze jedno z nich (není uvedeno, které). `$referrerpolicy` pravidla bez specifikovaných [modifikátorů typu obsahu](#content-type-modifiers) platí pro `$document` a `$subdocument` typy obsahu.
 
 **Příklady**
 
 - `||example.com^$referrerpolicy=unsafe-url` přepíše zásady odkazování pro `example.com` pomocí `unsafe-url`.
 - `@@||example.com^$referrerpolicy=unsafe-url` zakáže předchozí pravidlo.
 - `@@||example.com/abcd.html^$referrerpolicy` zakáže všechna pravidla `$referrerpolicy` na `example.com/abcd.html`.
-
-:::caution Omezení
-
-Pravidla `$referrerpolicy` jsou kompatibilní pouze s modifikátory typu obsahu `$document` a `$subdocument` [](#content-type-modifiers).
-
-:::
 
 :::info Kompatibilita
 
@@ -2090,7 +2028,7 @@ K použití modifikátoru `$replace` budete potřebovat určité znalosti regul�
 **Funkce**
 
 - Pravidla `$replace` platí pro jakoukoli textovou odpověď, ale neplatí pro binární (`media`, `image`, `object` atd.).
-- Pravidla `$replace` neplatí, pokud je velikost původní odpovědi větší než 3 MB.
+- Pravidla `$replace` neplatí, pokud je velikost původní odpovědi větší než 10 MB.
 - Pravidla `$replace` mají vyšší prioritu než ostatní základní pravidla (**včetně** pravidel výjimek). Pokud tedy požadavek odpovídá dvěma různým pravidlům, z nichž jedno má modifikátor `$replace`, použije se toto pravidlo.
 - Pravidla výjimek na úrovni dokumentu s modifikátory `$content` nebo `$document` zakáží pravidla `$replace` pro požadavky, které jim odpovídají.
 - Ostatní pravidla výjimek na úrovni dokumentu (`$generichide`, `$elemhide` nebo modifikátory `$jsinject`) se uplatňují vedle pravidel `$replace`. To znamená, že můžete upravit obsah stránky pomocí pravidla `$replace` a zároveň zde zakázat kosmetická pravidla.
@@ -2255,7 +2193,6 @@ Aliasy modifikátorů (`1p`, `3p` atd.) nejsou do těchto kategorií zahrnuty, n
 
 - [`$app`](#app-modifier) s negovanými aplikacemi pomocí `~`,
 - [`$denyallow`](#denyallow-modifier),
-- [`$dnsrewrite`](#dnsrewrite-modifier),
 - [`$domain`](#domain-modifier) s negovanými doménami pomocí `~`,
 - [`$match-case`](#match-case-modifier),
 - [`$method`](#method-modifier) s negovanými metodami pomocí `~`,
@@ -2450,7 +2387,7 @@ Pravidla pro skrytí prvků slouží ke skrývání prvků webových stránek. J
 
 Pravidla pro skrytí prvků mohou fungovat odlišně [v závislosti na platformě](#cosmetic-rules-priority).
 
-#### Syntaxe {#non-basic-rules-modifiers-syntax}
+#### Syntaxe
 
 ```text
    rule = [domains] "##" selector
@@ -2526,7 +2463,7 @@ domains = [domain0, domain1[, ...[, domainN]]]
 ```
 
 - **`selector`** — [selektor CSS](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors), který definuje prvky, na které chceme styl použít.
-- **`domains`** — omezení domény pro dané pravidlo. Stejné zásady jako v [pravidlech pro skrývání prvků](#elemhide-syntax).
+- **`domains`** — omezení domény pro dané pravidlo. Stejné zásady jako v [pravidlech pro skrývání prvků](#cosmetic-elemhide-rules).
 - **`style`** — styl CSS, který chceme použít na vybrané prvky.
 
 **Příklady**
@@ -3257,7 +3194,7 @@ Tato pseudo-třída byla v podstatě zkratkou pro `:not(:has())`. Byla podporov�
 
 Způsob, jakým jsou aplikována pravidla **pro skrývání prvků** a **CSS**, je specifický pro danou platformu.
 
-**V AdGuardu pro Windows, Mac a Android** používáme šablonu stylů vloženou do stránky. Priorita kosmetických pravidel je stejná jako u jakéhokoli jiného souboru stylů CSS na webových stránkách. Existují však omezení: [skrytí prvku](#elemhide-syntax) a [pravidla CSS](#cosmetic-css-rules) nemohou přepsat vložené styly. V takových případech se doporučuje použít rozšířené selektory nebo filtrování HTML.
+**V AdGuardu pro Windows, Mac a Android** používáme šablonu stylů vloženou do stránky. Priorita kosmetických pravidel je stejná jako u jakéhokoli jiného souboru stylů CSS na webových stránkách. Existují však omezení: [skrytí prvku](#cosmetic-elemhide-rules) a [pravidla CSS](#cosmetic-css-rules) nemohou přepsat vložené styly. V takových případech se doporučuje použít rozšířené selektory nebo filtrování HTML.
 
 **V Rozšíření prohlížeče AdGuard** se používají tzv. "soubory uživatelských stylů". Mají vyšší prioritu než řádkové styly.
 
@@ -3286,7 +3223,7 @@ pseudoClasses = pseudoClass *pseudoClass
 ```
 
 - **`tagName`** — název prvku s malými písmeny, např. `div` nebo `script`.
-- **`domains`** — omezení domény pro dané pravidlo. Stejné zásady jako v [syntaxi pravidel pro skrývání prvků](#elemhide-syntax).
+- **`domains`** — omezení domény pro dané pravidlo. Stejné zásady jako v [syntaxi pravidel pro skrývání prvků](#cosmetic-elemhide-rules).
 - **`attributes`** — seznam atributů, které limitují výběr prvků. `name` — název atributu, `value` — podřetězec, který je obsažen v hodnotě atributu.
 - **`pseudoName`** — název pseudotřídy.
 - **`pseudoArgs`** — argumenty pseudotřídy typu funkce.
@@ -3490,7 +3427,7 @@ AdGuard podporuje speciální typ pravidel, která umožňují vložit na webov�
 rule = [domains]  "#%#" script
 ```
 
-- **`domains`** — omezení domény pro dané pravidlo. Stejné zásady jako v [pravidlech pro skrývání prvků](#elemhide-syntax).
+- **`domains`** — omezení domény pro dané pravidlo. Stejné zásady jako v [pravidlech pro skrývání prvků](#cosmetic-elemhide-rules).
 - **`skript`** — libovolný kód JavaScript **v jednom řetězci**.
 
 **Příklady**
@@ -3600,7 +3537,7 @@ Další informace o důvěryhodných skriptletech najdete na [GitHubu](https://g
 
 Každé pravidlo lze upravit pomocí modifikátorů popsaných v následujících odstavcích.
 
-**Syntaxe**
+**Syntaxe** {#non-basic-rules-modifiers-syntax}
 
 ```text
 rule = "[$" modifiers "]" [rule text]
@@ -3833,6 +3770,7 @@ kde:
         - `adguard_ext_opera` — Rozšíření prohlížeče AdGuard pro Operu
         - `adguard_ext_android_cb` — Blokátor obsahu AdGuard pro mobilní prohlížeče Samsung a Yandex
         - `ext_ublock` — speciální případ; ten je deklarován, když je verze filtru uBlock kompilována pomocí [FiltersRegistry][]
+        - `cap_html_filtering` — produkty, které podporují pravidla filtrování HTML: AdGuard pro Windows, AdGuard pro macOS a AdGuard pro Android
 - `!#else` — začátek bloku při nesplnění podmínek
 - `rules_list`, `true_conditions_rules_list`, `false_conditions_rules_list` — seznamy pravidel
 - `!#endif` — konec blokování

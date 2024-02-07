@@ -123,7 +123,7 @@ This is a custom extension designed to fight the technique of re-inserting block
 
 AdGuard Extra is essentially a mini-program that changes the way pages work,and it does so in such a way that it becomes much more difficult for sites to use the above-mentioned functions to bypass blockers.
 
-**AdGuard Popup Blocker**
+**AdGuard Açılır Pencere Engelleyici**
 
 Bu uzantı, web sayfalarını görüntülediğinizde açılır pencerelerin açılmasını engeller. Bazı açılır pencereler yararlı kabul edilir — site yönetimi için ayarlar veya bir bağlantıya tıklandığında gösterilen ek referans bilgileri içerebilirler. Bu nedenle gerekirse Engelleyiciyi kapatabilirsiniz. This extension doesn’t work on websites added to the AdGuard exceptions list either. Varsayılan olarak kapalıdır, ancak uygulama ayarlarından açabilirsiniz. Bu uzantı hakkında daha ayrıntılı bilgiyi Bilgi tabanımızda bulabilirsiniz.
 

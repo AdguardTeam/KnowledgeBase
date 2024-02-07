@@ -46,7 +46,7 @@ sidebar_position: 3
 
 Коснитесь его, затем включите переключатель. На том же экране убедитесь, что расширение AdGuard имеет необходимые разрешения: опция **Все сайты** должна иметь статус *Разрешить*.
 
-![settings extensions *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings4_en.png)
+![Настройки расширений *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings4_en.png)
 
 :::note
 

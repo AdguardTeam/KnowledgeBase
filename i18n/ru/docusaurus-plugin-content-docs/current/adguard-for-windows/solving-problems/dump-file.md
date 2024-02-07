@@ -23,9 +23,9 @@ sidebar_position: 8
 
 1. Файл успешно создан!
 
-    ![Create dump file](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/create_dump_file_en.png)
+    ![Создать файл дампа](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/create_dump_file_en.png)
 
-After you’ve created the dump file, please navigate to the file location. Вам будет предложено открыть папку, содержащую файл дампа, сразу после его создания. В противном случае вы сможете найти его в папке **%tmp%**. Созданный файл дампа (`.DMP`) имеет то же название, что и процесс, который вы выбрали в предыдущих пунктах. Файл довольно большой, поэтому перед отправкой в поддержку сожмите его в архив.
+После создания файла дампа перейдите к его расположению. Вам будет предложено открыть папку, содержащую файл дампа, сразу после его создания. В противном случае вы сможете найти его в папке **%tmp%**. Созданный файл дампа (`.DMP`) имеет то же название, что и процесс, который вы выбрали в предыдущих пунктах. Файл довольно большой, поэтому перед отправкой в поддержку сожмите его в архив.
 
 :::note
 
@@ -35,4 +35,4 @@ AdGuard для Windows имеет два запущенных процесса (
 
 ![Процессы AdGuard](https://cdn.adtidy.org/public/Adguard/kb/Windows_dump/processes_en.png)
 
-When you send the dump files to the support team, please also attach the AdGuard application logs so we have a better chance at solving the problem. [Здесь](../adguard-logs) вы можете ознакомиться с инструкцией по сбору логов AdGuard.
+Когда вы отправляете файлы дампа команде поддержки, пожалуйста, отправьте их вместе с логами, чтобы мы могли решить проблему как можно быстрее. [Здесь](../adguard-logs) вы можете ознакомиться с инструкцией по сбору логов AdGuard.

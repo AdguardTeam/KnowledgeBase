@@ -51,23 +51,23 @@ Etkin filtreleri Filtreler sekmesinde yönetebilirsiniz. In the Content blockers
 
 :::
 
-### AdGuard General {#adguard_general}
+### AdGuard Genel {#adguard_general}
 
 *AdGuard Genel* reklamları engellemek için en temel filtreleri birleştiren bir içerik engelleyicidir. AdGuard Temel Filtresini her zaman etkin tutmanızı tavsiye ederiz.
 
-### AdGuard Privacy {#adguard_privacy}
+### AdGuard Gizlilik {#adguard_privacy}
 
 This content blocker is the main tool against counters and other web analytics tools. The *AdGuard Tracking Protection filter* is enabled by default.
 
-### AdGuard Social {#adguard_social}
+### AdGuard Sosyal {#adguard_social}
 
 *AdGuard Social* contains filters against social media buttons, widgets, scripts, and icons. Other annoyance filters can also be found in this section: filters against pop-ups, mobile app banners, cookie notices, and more. To enable them, find *Social Widgets* in the Filters tab.
 
-### AdGuard Security {#adguard_security}
+### AdGuard Güvenlik {#adguard_security}
 
 This content blocker unites several security-related filters. *Malware Domains Blocklist* blocks domains that are notorious for spreading malware and spyware. *Spam404* protects you from Internet fraudsters. *NoCoin Filter List* disrupts browser-based cryptominers, such as Coinhive.
 
-### AdGuard Other {#adguard_other}
+### AdGuard Diğerleri {#adguard_other}
 
 *AdGuard Other* contains filters with various functions. For example, it has a filter that unblocks search ads and self-promo ads. In some cases, it helps find exactly what you are looking for, because these kinds of ads are more relevant and less intrusive than others.
 

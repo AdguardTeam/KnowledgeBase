@@ -1,23 +1,23 @@
 ---
-title: How to purchase or upgrade
+title: Lizenz erwerben oder erweitern
 sidebar_position: 2
 ---
 
-## How to purchase a license{#purchase}
+## So erwerben Sie eine Lizenz{#purchase}
 
-AdGuard licenses can be bought on [adguard.com](https://adguard.com/license.html). You can pay with Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay and UnionPay. We also accept the following cryptocurrencies: Bitcoin, Ethereum, Litecoin, and Tether.
+AdGuard-Lizenzen können auf [adguard.com](https://adguard.com/license.html) erworben werden. Sie können mit Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay und UnionPay bezahlen. Wir akzeptieren zudem die folgenden Kryptowährungen: Bitcoin, Ethereum, Litecoin und Tether.
 
 AdGuard Pro für iOS kann im App Store gekauft werden.
 
-Werbeblocker-Lizenzen werden auch von verschiedenen Distributoren verkauft. The availability of AdGuard products in app stores and by distributors depends on your country.
+Werbeblocker-Lizenzen werden auch von verschiedenen Distributoren verkauft. Die Verfügbarkeit von AdGuard-Produkten in App Stores und bei Händlern hängt von Ihrem Land ab.
 
-## How to upgrade a license{#upgrade}
+## So erweitern Sie eine Lizenz{#upgrade}
 
-To make more use of your AdGuard products, you can upgrade your license for the following benefits.
+Um das Beste aus den AdGuard-Produkten herauszuholen, können Sie Ihre Lizenz erweitern.
 
-- To extend the number of devices, you can **upgrade your Personal license to Family**
-- You can also **upgrade your 1-year subscription to a lifetime license**
+- Um die Anzahl der Geräte zu erweitern, können Sie **Ihre Einzellizenz auf eine Familienlizenz** erweitern
+- Sie können auch von Ihrem**1-Jahres-Abonnement auf eine lebenslange Lizenz umsteigen**
 
-You can upgrade your license in your AdGuard account. To do so, click *Upgrade to Lifetime* or *Increase device limit*.
+Sie können Ihre Lizenz in Ihrem AdGuard-Konto erweitern. Klicken Sie dazu auf *Auf Lebenslange Lizenz umsteigen* oder *Gerätelimit erhöhen*.
 
 ![Erweitern](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)

@@ -17,15 +17,17 @@ Safari extensions are small software programs that add functionality to the Safa
 
 To block ads, trackers, and annoyances on websites, AdGuard uses filtering rules. The rules from AdGuard's and your custom filters are converted into ones comprehensible by Safari and are integrated into 6 Safari extensions:
 
-– AdGuard General – AdGuard Privacy – AdGuard Social – AdGuard Security – AdGuard Other
+- AdGuard General
+- AdGuard Privacy
+- AdGuard Social
+- AdGuard Security
+- AdGuard Other
 
 Each content-blocking extension can include up to 150,000 active filtering rules. The number of rules within most filter groups does not surpass 150,000. However, if you activate too many language-specific or custom filters, you might exceed the limit. In such cases, random rules that are over the limit will be automatically disabled, which may lead to incorrect blocking. **We strongly recommend activating only the filters you need**.
 
-There are also two extensions responsible for other features:
+There is also one more extension responsible for other features: *AdGuard for Safari*, which adds the AdGuard icon next to the search bar in Safari and allows using advanced rules to block complex ads.
 
-– *AdGuard Safari Icon* enables AdGuard's icon next to the search bar in Safari – *AdGuard Advanced Blocking* allows using advanced rules to block complex ads
-
-![Safari extensions](https://uploads.adguard.org/safari_extensions.png)
+![Safari extensions](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-icon1.png)
 
 More on each extension below.
 
@@ -45,22 +47,21 @@ More on each extension below.
 
 User rules and allowlist rules are included into every extension.
 
-## Other extensions
+## AdGuard pour Safari
 
-*AdGuard Safari Icon* enables the AdGuard icon next to the search bar. It's useful if you want to quickly set up protection on a particular website or block ads manually.
-
-*AdGuard Advanced blocking* contains advanced rules that aren't converted into the format supported by Safari. This includes CSS rules, CSS selectors, and scriptlets that allow AdGuard to block complex ads — for example, on YouTube.
+*AdGuard for Safari* enables the AdGuard icon next to the search bar. It's useful if you want to quickly set up protection on a particular website or block ads manually. It also contains advanced rules that aren't converted into the format supported by Safari. This includes CSS rules, CSS selectors, and scriptlets that allow AdGuard to block complex ads — for example, on YouTube.
 
 ## How to manage Safari extensions
 
-1. Open Safari and click *Safari* in the upper left corner of the screen to expand the menu. ![Safari settings *mobile](https://cdn.adtidy.org/blog/new/sxaqgfsafari_settings.png)
-1. Click *Preferences...*
-1. Select *Extensions*. ![Extensions tab](https://cdn.adtidy.org/blog/new/ocofdextensions_tab.png)
+1. Open Safari and click *Safari* in the upper left corner of the screen to expand the menu. ![Safari settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-settings1.png)
+1. Click *Settings...*
+1. Select *Extensions*. ![Extensions tab](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-extensions1.png)
 
-## Why some extensions require permissions
+## Why AdGuard for Safari requires permission
 
-When enabling some Safari extensions, you might notice that they ask for **access to web page content** and **access to browsing history**. Here's why AdGuard for Safari needs them:
+When enabling the *AdGuard for Safari* extension, you might notice that it requires **access to web page content** and **access to browsing history**. Here's why it needs these permissions:
 
-– Access to web page content is required for manual ad blocking and advanced blocking rules to work correctly – Access to browsing history is required to check the protection status on websites and determine which advanced rules should be applied
+- Access to web page content is required for manual ad blocking and advanced blocking rules to work correctly
+- Access to browsing history is required to check the protection status on websites and determine which advanced rules should be applied
 
 We do not use this data for any other purpose or share it with anyone. For more info, you can consult our [Privacy policy](https://adguard.com/privacy.html).

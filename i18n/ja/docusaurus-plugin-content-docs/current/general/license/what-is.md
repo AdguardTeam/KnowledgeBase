@@ -5,29 +5,29 @@ sidebar_position: 1
 
 ## AdGuard ライセンスとは
 
-A license is a permission to use the AdGuard product, provided in accordance with the [End User License Agreement](https://adguard.com/eula.html). If bound to an email address, AdGuard licenses can be found in the user's [AdGuard account](https://my.adguard.com/).
+ライセンスとは、[利用許諾契約（EULA）](https://adguard.com/eula.html)に基づいて提供されるAdGuard製品の使用許可です。 AdGuardライセンスがメールアドレスにバインド（紐付け）されている場合、[AdGuard アカウント](https://my.adguard.com/)でお持ちのライセンスを確認できます。
 
-## What types of AdGuard licenses exist
+## AdGuard ライセンスの種類
 
-On the [purchase page](https://adguard.com/license.html), you can see the following types of licenses:
+[ご購入ページ](https://adguard.com/license.html)では、以下のライセンスの種類があります:
 
-- **1-year subscriptions** — these licenses are renewed automatically every year or can be extended manually
-    - Personal — up to 3 devices
-    - Family — up to 9 devices
-- **Lifetime** — these licenses are not time-limited
-    - Personal — up to 3 devices
-    - Family — up to 9 devices
+- **1年サブスクリプション** - これらのライセンスは毎年自動的に更新されますが、手動で延長することもできます。
+    - パーソナル（デバイス3台用）
+    - ファミリー（デバイス9台用）
+- **永久** - これらのライセンスには有効期限はなく、ずっとご利用いただけます。
+    - パーソナル（デバイス3台用）
+    - ファミリー（デバイス9台用）
 
-There are also licenses that the user can purchase from other sources or get for free:
+また、他のソースから購入したり、無料で入手できるライセンスもあります:
 
-- **Trial licenses** are free time-limited licenses that allow you to test the full functionality of the product
-    - AdGuard for Windows — 14-day trial
-    - AdGuard for Mac — 14-day trial
-    - AdGuard for Android — 7-day trial
-- **Distributor licenses** and **gifted licenses** can be both time-limited and non-time limited. Licenses with an expiration date can only be renewed manually
-    - Personal — up to 3 devices
-    - Family — up to 9 devices
-- **The AdGuard Pro for iOS license** is purchased and managed through the App Store and can only be used on iOS and iPadOS devices with the same Apple ID
+- **試用ライセンス**は、製品のフル機能を無料でお試しいただける期間限定の無料ライセンスです。
+    - AdGuard for Windows - 14日間無料
+    - AdGuard for Mac - 14日間無料
+    - AdGuard for Android - 7日間無料
+- **販売代理店ライセンス** および**付与ライセンス**は、期間限定と非期間限定の両方があります。 有効期限のあるライセンスは、手動でのみ更新できます。
+    - パーソナル（デバイス3台用）
+    - ファミリー（デバイス9台用）
+- **iOS用「AdGuard Pro」アプリのライセンス** は、App Storeを通じて購入および管理され、同じApple IDを持つiOSおよびiPadOSデバイスでのみ使用できます。
 
 :::tip
 
@@ -35,23 +35,23 @@ There are also licenses that the user can purchase from other sources or get for
 
 :::
 
-## How to use the AdGuard license
+## AdGuard ライセンスの使用方法
 
-To use your license on a device, log in to your AdGuard app using the email address associated with the license. If the license hasn't been bound to your email address yet, you can do it in your [AdGuard account](https://my.adguard.com/). To do so, open the *Licenses* tab and click *Bind license*.
+ライセンスをデバイスで使用するには、ライセンスに関連付けられているメールアドレスを使用して AdGuard アプリにログインします。 ライセンスがまだメールアドレスにバインド（紐付け）されていない場合は、[AdGuardアカウント](https://my.adguard.com/)でバインドできます。 これを行うには、AdGuardアカウントで「*ライセンス*」画面を開き、「*ライセンスを紐付けする*」をクリックします。
 
-Alternatively, you can enter your [license key](#license-key) in your AdGuard app.
+または、AdGuard アプリに[ライセンスキー](#license-key)を直接入力するというライセンス使用方法もあります。
 
-## License key
+## ライセンスキー
 
-A license key is a unique string of characters that represents an AdGuard Ad Blocker license. It is automatically registered to the email you used to purchase the license, or is provided to you when you purchase an AdGuard license from a distributor. ライセンスキーで以下のことが可能です:
+ライセンスキーとは、AdGuard 広告ブロッカーのライセンスを表す一意の文字列です。 お客様がライセンスを購入する際に使用したメールアドレスに自動的に登録されるか、または販売代理店から AdGuard ライセンスを購入する際に提供されます。 ライセンスキーで以下のことが可能です:
 
-- [Activate your license](../activation) in a product, if you don't have an AdGuard account
-- Bind your license to your AdGuard account and unbind it
+- AdGuardアカウントがなくても、AdGuard製品内で[ライセンスを有効にする](../activation)ことができます。
+- ライセンスをお持ちのAdGuardアカウントに紐付け・紐付け解除をすることができます。
 
-When you unbind a license, be sure to save the license key first. You'll need the key to rebind your license or transfer it to another account.
+※ライセンスの紐付けを解除するときは、必ず最初にライセンスキーを保存・メモしてください。 ライセンスキーは、ライセンスの再紐付けや他アカウントへの移行の際に必要になります。
 
 ### ライセンスキーを復元する方法
 
-If you don't remember the license key, check out your AdGuard account: all licenses bound to your email address are displayed there.
+ライセンスキーを覚えていない場合は、お持ちの AdGuard アカウントを確認してください。メールアドレスに紐付けされているライセンスがすべてそこに表示されます。
 
-If you've lost the license key purchased from a distributor, please reach out to us at support@adguard.com. Be ready to provide a receipt or other proof of purchase.
+代理店から購入されたライセンスキーを紛失された場合は、support@adguard.com までご連絡ください。 その際、領収書・レシートなど、ご購入を証明できるものをご用意ください。
