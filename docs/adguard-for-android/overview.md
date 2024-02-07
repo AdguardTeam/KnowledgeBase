@@ -224,15 +224,15 @@ From the context menu, you can also access the app's stats.
 
 ![App management: Chrome. Context menu *mobile_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
 
-### Problem-free and incompatible apps
+### Problem-free and problematic apps
 
-By default, only compatible apps are routed through AdGuard and filtered. These are the apps that still work properly when filtering is enabled.
+By default, only problem-free apps are routed through AdGuard and filtered. These are the apps that still work properly when filtering is enabled.
 
-Incompatible apps, such as Download Manager, radio, system apps with UID 1000 and 1001 (for example, Google Play services) may work incorrectly when routed through AdGuard. That's why you may see the following warning when trying to route or filter all apps:
+Problematic apps, such as Download Manager, radio, system apps with UID 1000 and 1001 (for example, Google Play services) may work incorrectly when routed through AdGuard. That's why you may see the following warning when trying to route or filter all apps:
 
 ![Route all apps dialog *mobile_border](https://cdn.adtidy.org/blog/new/6du8jiroute_all.png)
 
-To ensure proper operation of all apps installed on your device, we strongly recommend that you route only compatible apps through AdGuard. You can see the full list of apps not recommended for filtering in *Settings* → *General* → *Advanced* → *Low-level settings* → *Protection* → *Excluded apps*.
+To ensure proper operation of all apps installed on your device, we strongly recommend that you route only problem-free apps through AdGuard. You can see the full list of apps not recommended for filtering in *Settings* → *General* → *Advanced* → *Low-level settings* → *Protection* → *Excluded apps*.
 
 ## Statistics
 
