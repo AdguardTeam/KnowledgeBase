@@ -50,7 +50,7 @@ This approach is available starting from **AdGuard v3.5 nightly 6**. If you're u
 
     :::
 
-1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb;
+1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB;
 On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
 
 1. Connect your device using a **USB cable** to the computer or laptop on which you installed **ADB**;
@@ -86,7 +86,7 @@ To solve this issue, you need to disable this feature.
 - Open **Settings**;
 - Press **Advanced**;
 - Scroll down and press **Dual messenger**;
-- Disable the **Dual messenger** for all applications;
+- Disable the **Dual messenger** for all apps;
 - Lock the device for 5 minutes;
 - Unlock the screen and try again to create the VPN profile.
 
@@ -95,5 +95,5 @@ To solve this issue, you need to disable this feature.
 - Open **Settings**;
 - Choose **General** tab;
 - Scroll down and press **Dual app**;
-- Remove all applications from the list;
+- Remove all apps from the list;
 - Reboot your device.

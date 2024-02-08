@@ -26,8 +26,8 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 
 ### Browser extension {#extension}
 
-- Open the browser extension settings by clicking on the corresponding icon;
-- Click on **Report an issue**:
+- Open the browser extension settings by clicking the corresponding icon;
+- Click **Report an issue**:
 
 ![extension_issue *mobile_border](https://cdn.adtidy.org/blog/new/5si74extension.png)
 
@@ -137,7 +137,7 @@ where **example.com** is an example site name that needs to be replaced by your 
 
 1. Disable **Stealth Mode**;
 2. If this solved the problem, turn the module on and turn off the **Stealth Mode** options one by one. This is done to detect which filters are "breaking" the page;
-3. If you have managed to to detect which setting "breaks" a page, you should inform the developers when filling out the form (see above). In this case, it is desirable to return to the initial settings;
+3. If you have managed to detect which setting "breaks" a page, you should inform the developers when filling out the form (see above). In this case, it is desirable to return to the initial settings;
 4. In case of failure (issue not solved), turn to section **Extensions**.
 
 ### **Extensions**
