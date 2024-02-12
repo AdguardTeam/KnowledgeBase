@@ -9,7 +9,7 @@ This article is about AdGuard for Safari, which safeguards only your Safari brow
 
 :::
 
-This is usually caused by the issue when content blockers update takes too long.
+When filtering doesn’t stop with AdGuard for Safari disabled, this is usually caused by the issue of content blockers update taking too long.
 
 ## How to fix
 
