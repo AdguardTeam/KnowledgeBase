@@ -11,7 +11,7 @@ This article is about AdGuard for Safari, which safeguards only your Safari brow
 
 ## Safari content blocker rule limit
 
-AdGuard for Safari uses the Content Blocking API to apply filtering rules to pages in the Safari browser. Currently, a maximum of 150,000 rules are allowed for each content blocking extension.
+AdGuard for Safari uses the Content Blocking API to apply filtering rules to pages in the Safari browser. Currently, a maximum of 150,000 rules are allowed for each content-blocking extension.
 
 AdGuard for Safari has 6 content blockers:
 
