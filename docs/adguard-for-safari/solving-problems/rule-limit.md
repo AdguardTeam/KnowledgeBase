@@ -33,4 +33,4 @@ However, **an extension can contain up to 150,000 rules**. If you exceed this li
  3. Below each content blocker, you can see the enabled filters and the number of active rules.
     ![Content blockers](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-cb.png)
 
- If a content blocker has more than 150,000 rules, go to *Filters* tab, select a filter category and disable filters or user rules you don't need.
+If more than 150,000 rules are enabled in a content blocker, you may need to disable some filters or user rules from it. Go to *Filters*, select the problematic category, and disable the filters or user rules you don’t need.
