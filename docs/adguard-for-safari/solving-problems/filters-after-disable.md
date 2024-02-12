@@ -1,5 +1,5 @@
 ---
-title: Filtering doesn‘t stop when AdGuard for Safari is disabled
+title: Filtering doesn't stop when AdGuard for Safari is disabled
 sidebar_position: 3
 ---
 
