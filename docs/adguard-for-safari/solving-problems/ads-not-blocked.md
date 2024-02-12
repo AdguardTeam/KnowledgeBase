@@ -23,7 +23,7 @@ In some cases, filtering may not work and ads may still be displayed even though
  7. Open AdGuard for Safari app.
  8. Go to *Filters*.
  9. Click *Check for updates*.
- 10. Do not close AdGuard for Safari window until filter update is finished.
+ 10. Do not close the AdGuard for Safari window until the filters are updated.
 
 If this doesn’t help and ads are still not being blocked, please contact our support at support@adguard.com.
 
