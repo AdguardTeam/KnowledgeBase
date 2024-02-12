@@ -21,7 +21,7 @@ In some cases, filtering may not work and ads may still be displayed even though
  5. Restart Safari.
  6. Return to *Settings...* → *Extensions* and re-enable the content blocking extensions.
  7. Open AdGuard for Safari app.
- 8. Go to *Filters* tab.
+ 8. Go to *Filters*.
  9. Click *Check for updates*.
  10. Do not close AdGuard for Safari window until filter update is finished.
 
