@@ -53,7 +53,7 @@ If that doesn't help, follow the instructions for manually adding the AdGuard ce
 
 1. Browse the downloaded **cert.cer** file and click *Open*.
 
-1. Check the *Trust this CA to identify websites* box and then lick *OK*.
+1. Check the *Trust this CA to identify websites* box and then click *OK*.
 
     ![Certificate settings — checkbox](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/cert_checkbox.jpg)
 
