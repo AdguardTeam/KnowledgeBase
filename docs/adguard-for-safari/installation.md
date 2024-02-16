@@ -47,7 +47,7 @@ On macOS, click *Preference* → *Websites* → *Content Blockers*. If you want 
 On iOS, go to *Settings* → *Safari* → *Content Blockers*, and set the option to *Yes*.
 
 ![iOS Safari Content Blocker Setting](https://i0.imgs.ovh/2023/10/26/FmgM0.jpeg)
-    <!-- adguard-for-safari-content-blocker-setting-ios.jpg -->
+<!-- adguard-for-safari-content-blocker-setting-ios.jpg -->
 
 After you complete steps 1-4, AdGuard for Safari will start functioning. You can now configure its settings.
 
