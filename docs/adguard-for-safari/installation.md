@@ -41,7 +41,6 @@ AdGuard for Safari is a free app presented on the App Store. To install it on yo
 
 On macOS, click *Preference* → *Websites* → *Content Blockers*. If you want to enable AdGuard on every website, turn *When visiting other websites* to *On*.
 
-    
 ![Mac Safari Content Blocker Setting](https://i0.imgs.ovh/2023/10/26/Fmc9U.png)
     <!-- adguard-for-safari-content-blocker-setting-macos.png -->
 
