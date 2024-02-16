@@ -12,7 +12,7 @@ When using ad blockers, you may face incorrect work of certain websites or broke
 - The authors of one of the filters made a mistake when creating the rule;
 - Advertising reinsertion. Find more about this method in our [blog](https://adguard.com/en/blog/ad-reinsertion.html).
 
-You can help us by filling in an application form with examples of ads you faced with. To do it, please, use instructions for your OS.
+You can help us by filling in a form with examples of ads you have encountered. To do it, please, use instructions for your OS.
 
 ## Report a website {#report}
 
@@ -149,5 +149,5 @@ where **example.com** is an example site name that needs to be replaced by your 
 ### **Third-party blockers**
 
 Some browsers and antivirus programs (such as Yandex Browser, Kaspersky, etc.) have built-in ad blockers. They may affect and cause problems in the operation of sites.
-If you use such programs, make sure that the problem is on the side of **AdGuard**: disable **AdGuard** filtering and try to repeat the problem. If it remains, it means that the problem is caused by another application or browser.
+If you are using such programs, first make sure that the problem is caused by **AdGuard**: disable **AdGuard** filtering and try to reproduce the problem. If it remains, it means that the problem is caused by another application or browser.
 If the problem is caused by **AdGuard**, follow the steps described in the previous paragraphs.
