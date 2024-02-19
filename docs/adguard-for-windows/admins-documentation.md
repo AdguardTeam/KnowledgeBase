@@ -41,7 +41,7 @@ If you want to install AdGuard on a Windows 7 computer, make sure that it has .N
 
 Starting with AdGuard v7.17 for Windows, automatic updates are enabled by default when you install the application from MSI. We recommend that you disable updates for a user so that AdGuard for Windows is updated centrally. To do this, add the ForbidCheckUpdates=Yes key, which is located at the following path: HKEY_LOCAL_MACHINE\SOFTWARE\Adguard.
 
-In older versions of AdGuard for Windows an automatic updates are disabled by default. To allow updates for a user, set the value of the `AllowCheckUpdates` parameter for the `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` key to `YES` (case insensitive). 
+In older versions of AdGuard for Windows an automatic updates are disabled by default. To allow updates for a user, set the value of the `AllowCheckUpdates` parameter for the `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` key to `YES` (case insensitive).
 
 :::note
 
