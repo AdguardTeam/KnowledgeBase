@@ -58,7 +58,7 @@ To take a screenshot of an active window, use the following combination:
 
 To take a screenshot of a specific area, you must use the following combination:
 
-- **Hold down *Win* (the Windows key) and *Shift* and press *S***
+- **Press the *Win + Shift + S* shortcut**
 
 After you take a screenshot, it will be saved in the clipboard. In most cases, you will be able to paste it into a document that you are currently editing by using the *Ctrl + V* shortcut. Alternatively, if you need to save the screenshot into a file, you should open the standard **Paint** program (or any other app that can work with images). Paste your screenshot there using the same key combination or by clicking the Paste button (usually in the top left corner of the screen) and then save it.
 
@@ -82,7 +82,7 @@ To take a screenshot of an active window, use the following key combination:
 
 To take a screenshot of a specific area, you must use the following combination:
 
-- **Press and hold together *⌘ Cmd + Shift + 4***. Drag the crosshair to select the needed area. Release your mouse or trackpad to take a screenshot, press Esc to cancel it.
+- **Press the *⌘ Cmd + Shift + 5* shortcut**. Drag the crosshair to select the needed area. Release your mouse or trackpad to take a screenshot, press Esc to cancel it.
 
 To take a screenshot of the *Touch Bar* (MacBook Pro) use the following combination:
 
