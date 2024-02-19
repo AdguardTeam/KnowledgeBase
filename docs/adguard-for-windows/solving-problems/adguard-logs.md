@@ -43,7 +43,9 @@ Sometimes support team members may ask you to send *trace* logs. Then you will n
 
 1. Open the console (type `cmd` in the start panel).
 
-1. Run the app with the command `C:\"Program Files (x86)"\Adguard\Adguard.exe /trace` if you are using 64-bit Windows, and `C:\"Program Files"\Adguard\Adguard.exe /trace` in case if you use 32-bit one.
+1. Run the app with the command `C:\"Program Files"\Adguard\Adguard.exe /trace` regardless of Windows bitness if you have AdGuard v7.16 for Windows or later installed.
+
+In case you have an older AdGuard for Windows version, run the app with the command `C:\"Program Files (x86)"\Adguard\Adguard.exe /trace` if you are using 64-bit Windows, and `C:\"Program Files"\Adguard\Adguard.exe /trace` in case if you use 32-bit one.
 
 1. Reproduce the issue.
 
