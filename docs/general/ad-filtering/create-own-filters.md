@@ -490,7 +490,8 @@ The modifier part, `":" h_value`, may be omitted. In that case, the modifier mat
 
 :::info Compatibility
 
-Rules with the `$header` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.11 or later.
+Rules with the `$header` modifier are supported by AdGuard for Windows, Mac, and Android
+with [CoreLibs][blog-corelibs] v1.11 or later.
 
 :::
 
@@ -551,7 +552,10 @@ So, for example, the rule `||evil.com^$method=get|~head` will be rejected.
 
 :::info Compatibility
 
-Rules with `$method` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.12 or later and AdGuard Browser Extension for Chrome, Firefox, and Edge with TSUrlFilter v2.1.1 or later.
+Rules with `$method` modifier are supported by AdGuard for Windows, Mac, and Android
+with [CoreLibs][blog-corelibs] v1.12 or later
+and AdGuard Browser Extension for Chrome, Firefox, and Edge
+with [TSUrlFilter][gh-tsurlfilter-changelog] v2.1.1 or later.
 
 :::
 
@@ -626,7 +630,9 @@ You may use a shorter name (alias) instead of using the full modifier name: `$3p
 
 :::info Compatibility
 
-Rules with the `$to` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.12 or later and AdGuard Browser Extension with TSUrlFilter v2.1.3 or later.
+Rules with the `$to` modifier are supported by AdGuard for Windows, Mac, and Android
+with [CoreLibs][blog-corelibs] v1.12 or later
+and AdGuard Browser Extension with [TSUrlFilter][gh-tsurlfilter-changelog] v2.1.3 or later.
 
 :::
 
@@ -924,7 +930,8 @@ $extension="userscript name\, with \"quote\""
 - Only AdGuard for Windows, Mac, Android are technically capable of using rules with `$extension` modifier.
 - `$extension` modifier with specific userscript name is supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.13 or later**.
 
-Rules with `$extension` modifier with specific userscript name are supported by AdGuard for Windows, Mac and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.13 or later.
+Rules with `$extension` modifier with specific userscript name are supported by AdGuard for Windows, Mac and Android
+with [CoreLibs][blog-corelibs] v1.13 or later.
 
 :::
 
@@ -988,8 +995,10 @@ Blocking cookies and removing tracking parameters is achieved by using rules wit
 
 :::info Compatibility
 
-- Stealth Mode is available in AdGuard for Windows, Mac, and Android, and AdGuard Browser Extension. All other products will ignore the rules with `$stealth` modifier.
-- Rules with `$stealth` modifier with specific options are supported by AdGuard for Windows, Mac, and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.10 or later.
+- Stealth Mode is available in AdGuard for Windows, Mac, and Android, and AdGuard Browser Extension.
+  All other products will ignore the rules with `$stealth` modifier.
+- Rules with `$stealth` modifier with specific options are supported by AdGuard for Windows, Mac, and Android
+  with [CoreLibs][blog-corelibs] v1.10 or later.
 
 :::
 
@@ -1958,7 +1967,8 @@ Rules with `$removeparam` modifier are intended to strip query parameters from r
 
 :::note Compatibility
 
-Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac and, Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.7 or later and AdGuard Browser Extension v3.6 or later.
+Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac and, Android
+with [CoreLibs][blog-corelibs] v1.7 or later and AdGuard Browser Extension v3.6 or later.
 
 :::
 
@@ -2062,7 +2072,8 @@ Rules with any other modifiers are considered invalid and will be discarded.
 
 - Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac, and Android and AdGuard Browser Extension for Chrome, Firefox, and Edge.
 - `$removeparam` syntax for regular expressions is supported by AdGuard Browser Extension v4.0 and AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.8 or later**.
-- `POST` request types are supported only by AdGuard for Windows, Mac, and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.10 or later.
+- `POST` request types are supported only by AdGuard for Windows, Mac, and Android
+  with [CoreLibs][blog-corelibs] v1.10 or later.
 
 :::
 
@@ -2229,8 +2240,11 @@ The base priority of any rule is 1. If the calculated priority is a floating-poi
 
 :::info Compatibility
 
-- The concept of priority has been introduced in tsurlfilter v2.1.0 and CoreLibs v1.13. Before that AdGuard didn't have any special priority computation algorithm and collisions handling could be different depending on AdGuard product and version.
-- AdGuard for iOS, Safari, and AdGuard Content Blocker rely on the browsers implementation and they cannot follow the rules specified here.
+- The concept of priority has been introduced in [TSUrlFilter][gh-tsurlfilter-changelog] v2.1.0
+  and [CoreLibs][blog-corelibs] v1.13. Before that AdGuard didn't have any special priority computation algorithm
+  and collisions handling could be different depending on AdGuard product and version.
+- AdGuard for iOS, Safari, and AdGuard Content Blocker rely on the browsers implementation
+  and they cannot follow the rules specified here.
 
 :::
 
@@ -3569,26 +3583,66 @@ These functions can be used in a declarative manner in AdGuard filtering rules.
 
 :::note
 
-AdGuard supports a lot of different scriptlets. In order to achieve cross-blocker compatibility, we also support syntax of uBO and ABP.
+AdGuard supports a lot of different scriptlets.
+In order to achieve cross-blocker compatibility, we also support syntax of uBO and ABP.
 
 :::
 
-**Syntax**
+**Blocking rules syntax**
 
 ```text
-rule = [domains]  "#%#//scriptlet(" scriptletName arguments ")"
+[domains]#%#//scriptlet(name[, arguments])
 ```
 
-- **`scriptletName`** — required, a name of the scriptlet from AdGuard's Scriptlets library
-- **`arguments`** — optional, a list of `string` arguments (no other types of arguments are supported)
+- `domains` — optional, a list of domains where the rule should be applied
+- `name` — required, a name of the scriptlet from AdGuard's scriptlets library
+- `arguments` — optional, a list of `String` arguments (no other types of arguments are supported)
+
+**Exception rules syntax**
+
+```text
+[domains]#@%#//scriptlet([name])
+```
+
+- `domains` — optional, a list of domains where the rule should be applied
+- `name` — optional, a name of the scriptlet to except from the applying;
+  if not set, all scriptlets will not be applied
 
 **Examples**
 
-```adblock
-example.org#%#//scriptlet("abort-on-property-read", "alert")
-```
+1. Apply the `abort-on-property-read` scriptlet on all pages of `example.org` and its subdomains,
+   and passes one argument to it (`alert`):
 
-This rule will be applied to `example.org` and subdomains pages and will execute the `abort-on-property-read` scriptlet with the `alert` parameter.
+    ```adblock
+    example.org#%#//scriptlet('abort-on-property-read', 'alert')
+    ```
+
+1. Remove the `branding` class from all `div[class^="inner"]` elements
+   on all pages of `example.org` and its subdomains:
+
+    ```adblock
+    example.org#%#//scriptlet('remove-class', 'branding', 'div[class^="inner"]')
+    ```
+
+1. Apply `set-constant` and `set-cookie` on any webpage,
+   but because of specific scriptlet exception rule
+   only `set-constant` scriptlet will be applied on `example.org` and its subdomains:
+
+    ```adblock
+    #%#//scriptlet('set-constant', 'adList', 'emptyArr')
+    #%#//scriptlet('set-cookie', 'accepted', 'true')
+    example.org#@%#//scriptlet('set-cookie')
+    ```
+
+1. Apply `adjust-setInterval` on any webpage,
+   and `set-local-storage-item` on all pages of `example.com` and its subdomains,
+   but there is also multiple scriptlet exception rule,
+   so no scriptlet rules will be applied on `example.com` and its subdomains:
+
+    ```adblock
+    #%#//scriptlet('adjust-setInterval', 'count', '*', '0.001')
+    example.com#%#//scriptlet('set-local-storage-item', 'ALLOW_COOKIES', 'false')
+    example.com#@%#//scriptlet()
 
 Learn more about [how to debug scriptlets](#debug-scriptlets).
 
@@ -3597,6 +3651,10 @@ More information about scriptlets can be found [on GitHub](https://github.com/Ad
 :::info Compatibility
 
 Scriptlet rules are not supported by AdGuard Content Blocker.
+
+Exception syntax for all scriptlets or some specific one are supported
+<!-- FIXME: add actual TSUrlFilter version: AG-27279 -->
+by AdGuard Browser Extension with [TSUrlFilter][gh-tsurlfilter-changelog] v2.x.x or later.
 
 :::
 
@@ -4225,3 +4283,5 @@ The following scriptlets also may be used for debug purposes:
 [sec-fetch-dest-header]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest
 [gh-filters-downloader]: https://github.com/AdguardTeam/FiltersDownloader
 [FiltersRegistry]: https://github.com/AdguardTeam/FiltersRegistry
+[blog-corelibs]: https://adguard.com/en/blog/introducing-corelibs.html
+[gh-tsurlfilter-changelog]: https://github.com/AdguardTeam/tsurlfilter/blob/master/packages/tsurlfilter/CHANGELOG.md
