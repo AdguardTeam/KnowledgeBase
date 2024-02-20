@@ -228,7 +228,7 @@ This filter may contain rules that are not suitable for all users. In such cases
 
 ### Filters
 
-AdGuard ad-blocking filters include:
+AdGuard Seocial Media filters include:
 
 - AdGuard Social Media filter
 
