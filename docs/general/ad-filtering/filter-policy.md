@@ -24,7 +24,6 @@ Quality requirements for filtering rules:
 
 **Ad blocker** is a software or hardware tool designed to filter, hide, or block advertisements and other elements on web pages. Ad blockers are created to improve user experience, reduce page load times, decrease internet traffic consumption, block ads, enhance privacy while browsing websites and using applications, and block annoying elements.
 
-
 A **filter** (or a **filter list**) is a set of filtering rules designed to filter content and block various types of advertisements and other types of content using ad blockers. These filters usually operate at the level of the web browser, programs, or DNS server.
 
 
@@ -73,7 +72,7 @@ The goal of ad-blocking filters is to block all types of advertising on websites
 
 - The site’s own advertising should not be deliberately blocked. However, it should not be unblocked if the blocking is caused by general filtering rules
 - Content access measures like paywalls are not blocked
-- Anti-adblock walls will be blocked in the following cases: 
+- Anti-adblock walls will be blocked in the following cases:
     - They aggressively insist on disabling or removing the ad blocker or effectively prevent using the website
     - They feature incorrect and misleading descriptions of possible consequences of ad blockers’ use
     - They put visitors at risk of malvertising — when unblocked advertisements come from dubious sources
@@ -153,7 +152,7 @@ For better customization, annoyance filters are divided by their purpose:
 
 ### What will be blocked with these filters
 
-#### AdGuard Cookie Notices filter 
+#### AdGuard Cookie Notices filter
 
 This filter is designed to block both cookie notices and requests from cookie management platforms (CMPs). Various methods may be applied to cookie notices and CMPs. In most cases, simply hiding or blocking the corresponding scripts is sufficient. However, when the site’s functionality and display of third-party content require cookie consent, the following methods are applied:
 
