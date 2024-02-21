@@ -42,7 +42,7 @@ AdGuard ad-blocking filters include:
 - AdGuard Mobile Ads filter
 - Regional filters divided by language principle — Chinese, Dutch, French, German, Japanese, Russian, Spanish/Portuguese, Turkish, and Ukrainian
 
-### What these filters do
+### The purpose of these filters
 
 - **Base filter** is designed to block ads on English-language websites and those for which there is no separate filter. It also contains general filtering rules that apply to all sites regardless of language.
 - **Mobile Ads filter** blocks advertisements on mobile versions of websites and within mobile applications. There is no segmentation based on language.
@@ -101,7 +101,7 @@ AdGuard tracking protection filters include:
 - AdGuard Tracking Protection filter
 - AdGuard URL Tracking filter
 
-### What these filters do
+### The purpose of these filters
 
 **Tracking Protection filter** is designed to block trackers that collect users’ personal data and to improve users’ privacy.
 
@@ -149,7 +149,7 @@ For better customization, annoyance filters are divided by their purpose:
 - AdGuard Other Annoyances filter
 - AdGuard Annoyances filter — a combined filter that includes all 5 specialized annoyance filters
 
-### What will be blocked with these filters
+### The purpose of these filters
 
 #### AdGuard Cookie Notices filter
 
@@ -230,7 +230,7 @@ AdGuard Seocial Media filters include:
 
 - AdGuard Social Media filter
 
-### What these filters do
+### The purpose of these filters
 
 This filter will block social media widgets on third-party websites, such as “Like” and “Share” buttons, group widgets, recommendations, and similar widgets.
 
@@ -258,7 +258,7 @@ For more details on these types of advertising, refer to the [article on Search 
 - AdGuard DNS filter
 - AdGuard Experimental filter
 
-### What these filters do
+### The purpose of these filters
 
 #### Filter unblocking search ads and self-promotion
 
