@@ -151,7 +151,7 @@ For better customization, annoyance filters are divided by their purpose:
 - AdGuard Other Annoyances filter
 - AdGuard Annoyances filter — a combined filter that includes all 5 specialized annoyance filters
 
-### What will be blocked with these filters?
+### What will be blocked with these filters
 
 #### AdGuard Cookie Notices filter 
 
@@ -260,7 +260,7 @@ For more details on these types of advertising, refer to the [article on Search 
 - AdGuard DNS filter
 - AdGuard Experimental filter
 
-### What these filters do:
+### What these filters do
 
 #### Filter unblocking search ads and self-promotion
 
