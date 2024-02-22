@@ -45,65 +45,71 @@ Basic protection effectively blocks ads on most websites. For more customized ad
 
 ### Tracking protection
 
-*Tracking protection* (formerly *Stealth Mode*) prevents websites from gathering information about you, such as your IP addresses, information about your browser and operating system, screen resolution, and the page you came or were redirected from. It can also block cookies that websites use to mark the browser and save your personal settings, user preferences, or recognize you upon your next visit.
+*Tracking protection* (formerly known as *Stealth Mode*) prevents websites from collecting information about you, such as your IP addresses, information about your browser and operating system, screen resolution, and the page you came or were redirected from. It can also block cookies that websites use to mark your browser, save your personal settings and user preferences, or recognize you on your next visit.
 
 ![Tracking protection *mobile_border](https://cdn.adtidy.org/blog/new/y5fuztracking_protection.png)
 
-There are three pre-configured protection levels. Here’s what features they have enabled:
+*Tracking protection* has three pre-configured levels of privacy protection (*Standard*, *High*, and *Extreme*) and one user-defined level (*Custom*). *Custom* allows you to set your own tracking protection parameters. [Learn more about other Tracking protection settings](/general/stealth-mode)
+
+Here are the active features of the pre-configured levels:
 
  1. **Standard**
 
-    a. *Block trackers*. This setting protects against online counters and web analytics tools using AdGuard’s Tracking Protection filter
+    a. *Block trackers*. This feature uses *AdGuard Tracking Protection filter* to protect you from online counters and web analytics tools
+    
+    b. *Ask websites not to track you*. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
 
-    b. *Ask websites not to track you*. This setting sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
+    c. *Remove X-Client-Data header*. This feature prevents Google Chrome from sending its version and modifications information to Google domains (including DoubleClick and Google Analytics)
 
-    c. *Remove X-Client-Data header*. This setting prevents Google Chrome from sending its version and modification info to Google domains (including Double Click and Google Analytics)
+ 3. **High**
 
- 2. **High**
+    a. *Block trackers*. This feature uses *AdGuard Tracking Protection filter* to protect you from online counters and web analytics tools
 
-    a. *Block trackers*
+    b. *Remove tracking parameters from URLs*. This feature uses *AdGuard URL Tracking filter* to remove tracking parameters, such as `utm_*` and `fb_ref`, from page URLs
 
-    b. *Remove tracking parameters from URLs*. This setting strips tracking parameters like `utm_*` and `fb_ref` from page URLs using the AdGuard URL Tracking filter
+    c. *Hide your search queries*. This feature hides queries for websites visited from a search engine
+    
+    d. *Ask websites not to track you*. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
 
-    c. *Hide your search queries*
-
-    d. *Ask websites not to track you*
-
-    e. *Self-destruction of third-party cookies*. This setting limits the time to live of third-party cookies to 180 min
+    e. *Self-destruction of third-party cookies*. This feature limits the lifetime of third-party cookies to 180 minutes
 
     :::caution
 
-    This setting deletes all third-party cookies, including the information of your logins through social networks or other third-party services. You may have to periodically re-log in to some websites and face other cookie-related issues. To block only tracking cookies, use the *Standard* protection level.
+    This feature deletes all third-party cookies after their forced expiration. This includes your logins through social networks or other third-party services. You may need to re-log in to some websites preiodically or experience other cookie-related issues To block only tracking cookies, use the *Standard* protection level.
 
     :::
 
-    f. *Remove X-Client-Data header*
+    f. *Remove X-Client-Data header*  This feature prevents Google Chrome from sending its version and modifications information to Google domains (including DoubleClick and Google Analytics)
 
- 3. **Ultimate**
+ 5. **Extreme** (formerly known as *Ultimate*)
 
-    a. *Block trackers*
+    a. *Block trackers*. This feature uses *AdGuard Tracking Protection filter* to protect you from online counters and web analytics tools
 
-    b. *Remove tracking parameters from URLs*
+    b. *Remove tracking parameters from URLs*. This feature uses *AdGuard URL Tracking filter* to remove tracking parameters, such as `utm_*` and `fb_ref`, from page URLs
 
-    c. *Hide your search queries*
+    c. *Hide your search queries*. This feature hides queries for websites visited from a search engine
 
-    d. *Ask websites not to track you*
+    d. *Ask websites not to track you*. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
 
-    e. *Self-destruction of third-party cookies*
+    e. *Self-destruction of third-party cookies*. This feature limits the lifetime of third-party cookies to 180 minutes
 
-    f. *Block WebRTC*. This setting blocks WebRTC, a technology that allows direct streaming of data between browsers and apps and can let others know your true IP address, even if you use a proxy or VPN
+    :::caution
 
-    g. *Block Push API*. This setting prevents websites from sending you notifications, regardless of the activity status of your browser
+    This feature deletes all third-party cookies after their forced expiration. This includes your logins through social networks or other third-party services. You may need to re-log in to some websites preiodically or experience other cookie-related issues To block only tracking cookies, use the *Standard* protection level.
 
-    h. *Block Location API*. This setting prevents browsers from detecting your GPS data
+    :::
 
-    i. *Hide Referer from third parties*. This setting hides the HTTP header that contains the URL of the initial page and changes it into the default or the specified one. You can set your custom referer in the respective field
+    f. *Block WebRTC*. This feature blocks WebRTC, a known vulnerability that can leak your real IP address even if you use a proxy or VPN
 
-    j. *Hide your User-Agent*. This setting removes identifying information from the User-Agent header that usually includes the name and version of the browser, the operating system, and language settings
+    g. *Block Push API*. This feature prevents your browsers from receiving notifications from servers, regardless of the status of your browser activity
+
+    h. *Block Location API*. This feature prevents browsers from accessing your GPS data and determining your location
+
+    i. *Hide Referer from third parties*. This feature prevents third parties from knowing which websites you visit. It hides the HTTP header that contains the URL of the initial page and replaces it with a default or custom one that you can set
+
+    j. *Hide your User-Agent*. This feature removes identifying information from the User-Agent header, which typically includes the name and version of the browser, the operating system, and language settings
 
     k. *Remove X-Client-Data header*
-
-You can fine-tune Tracking protection by selecting the *Custom* protection level. [Learn more about other Tracking protection settings](/general/stealth-mode)
 
 ### Annoyance blocking
 
