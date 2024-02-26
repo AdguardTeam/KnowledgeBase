@@ -75,7 +75,7 @@ Here are the active features of the pre-configured levels:
 
     :::caution
 
-    This feature deletes all third-party cookies after their forced expiration. This includes your logins through social networks or other third-party services. You may need to re-log in to some websites preiodically or experience other cookie-related issues To block only tracking cookies, use the *Standard* protection level.
+    This feature deletes all third-party cookies after their forced expiration. This includes your logins through social networks or other third-party services. You may need to re-log in to some websites periodically or experience other cookie-related issues. To block only tracking cookies, use the *Standard* protection level.
 
     :::
 
