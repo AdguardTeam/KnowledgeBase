@@ -79,7 +79,7 @@ In Native implementation, the DNS is handled by the system and not the app. This
 
 ### DNS servers {#dns-servers}
 
-The first section you'll see on the DNS Protection screen is DNS server. It shows the currently selected DNS server and encryption type. To change either, tap the button to enter the DNS server screen.
+The next section you'll see on the DNS Protection screen is DNS server. It shows the currently selected DNS server and encryption type. To change either, tap the button to enter the DNS server screen.
 
 ![DNS servers *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_server_en.jpeg)
 
@@ -99,7 +99,7 @@ DNS filtering allows you to customize your DNS traffic by enabling AdGuard DNS f
 
 How to access:
 
-*Protection* icon (the shield icon in the bottom menu bar) → *DNS protection* → *DNS filtering*
+*Protection* (the shield icon in the bottom menu bar) → *DNS protection* → *DNS filtering*
 
 ![DNS filtering screen *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_filtering_en.jpeg)
 
