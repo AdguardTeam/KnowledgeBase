@@ -1735,8 +1735,8 @@ The list of available directives is available [here](https://developer.mozilla.o
 :::caution Restrictions
 
 1. Characters forbidden in the `$permissions` value: `$`.
-2. `$permissions` is compatible with a limited set of modifiers: `$domain`, `$important`, `$subdocument`, and the [content type modifiers](#content-type-modifiers).
-3. `$permissions` rules that do not have any [content type modifiers](#content-type-modifiers) will match only requests where content type is `document`.
+2. `$permissions` is compatible with a limited set of modifiers: `$domain`, `$important`, `$subdocument`, and [content-type modifiers](#content-type-modifiers).
+3. `$permissions` rules that do not have any [content-type modifiers](#content-type-modifiers) will match only requests where content type is `document`.
 
 :::
 
