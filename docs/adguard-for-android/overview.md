@@ -59,9 +59,9 @@ Here are the active features of the pre-configured levels:
     
     b. *Ask websites not to track you*. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
 
-    c. *Remove X-Client-Data header*. This feature prevents Google Chrome from sending its version and modifications information to Google domains (including DoubleClick and Google Analytics)
+    c. *Remove X-Client-Data header*. This feature prevents Google Chrome from sending information about its version and modifications to Google domains (including DoubleClick and Google Analytics)
 
- 3. **High**
+ 2. **High**
 
     a. *Block trackers*. This feature uses *AdGuard Tracking Protection filter* to protect you from online counters and web analytics tools
 
@@ -79,9 +79,9 @@ Here are the active features of the pre-configured levels:
 
     :::
 
-    f. *Remove X-Client-Data header*  This feature prevents Google Chrome from sending its version and modifications information to Google domains (including DoubleClick and Google Analytics)
+    f. *Remove X-Client-Data header*. This feature prevents Google Chrome from sending its version and modifications information to Google domains (including DoubleClick and Google Analytics)
 
- 5. **Extreme** (formerly known as *Ultimate*)
+ 3. **Extreme** (formerly known as *Ultimate*)
 
     a. *Block trackers*. This feature uses *AdGuard Tracking Protection filter* to protect you from online counters and web analytics tools
 
@@ -101,7 +101,7 @@ Here are the active features of the pre-configured levels:
 
     f. *Block WebRTC*. This feature blocks WebRTC, a known vulnerability that can leak your real IP address even if you use a proxy or VPN
 
-    g. *Block Push API*. This feature prevents your browsers from receiving notifications from servers, regardless of the status of your browser activity
+    g. *Block Push API*. This feature prevents your browsers from receiving push messages from servers
 
     h. *Block Location API*. This feature prevents browsers from accessing your GPS data and determining your location
 
@@ -109,7 +109,7 @@ Here are the active features of the pre-configured levels:
 
     j. *Hide your User-Agent*. This feature removes identifying information from the User-Agent header, which typically includes the name and version of the browser, the operating system, and language settings
 
-    k. *Remove X-Client-Data header*
+    k. *Remove X-Client-Data header*. This feature prevents Google Chrome from sending its version and modifications information to Google domains (including DoubleClick and Google Analytics)
 
 ### Annoyance blocking
 
