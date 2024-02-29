@@ -96,7 +96,7 @@ In this article we give examples of how to set up some of the most popular proxi
     Field      |  Value
     -------    | ---------
     Proxy type | *SOCKS5*
-    Proxy host | *any server from [this list](https://support.nordvpn.com/Connectivity/Proxy/)*
+    Proxy host | *any server from [this list](https://support.nordvpn.com/hc/en-us/articles/20195967385745-NordVPN-proxy-setup-for-qBittorrent)*
     Proxy port | *1080*
 
 1. For **Username** and **Password** fields, enter your NordVPN Username and Password.
