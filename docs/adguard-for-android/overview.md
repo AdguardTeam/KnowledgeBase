@@ -53,22 +53,22 @@ Basic protection effectively blocks ads on most websites. For more customized ad
 
 Here are the active features of the pre-configured levels:
 
- 1. **Standard**
+1. **Standard**
 
     a. *Block trackers*. This feature uses *AdGuard Tracking Protection filter* to protect you from online counters and web analytics tools
-    
+
     b. *Ask websites not to track you*. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
 
     c. *Remove X-Client-Data header*. This feature prevents Google Chrome from sending information about its version and modifications to Google domains (including DoubleClick and Google Analytics)
 
- 2. **High**
+2. **High**
 
     a. *Block trackers*. This feature uses *AdGuard Tracking Protection filter* to protect you from online counters and web analytics tools
 
     b. *Remove tracking parameters from URLs*. This feature uses *AdGuard URL Tracking filter* to remove tracking parameters, such as `utm_*` and `fb_ref`, from page URLs
 
     c. *Hide your search queries*. This feature hides queries for websites visited from a search engine
-    
+
     d. *Ask websites not to track you*. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
 
     e. *Self-destruction of third-party cookies*. This feature limits the lifetime of third-party cookies to 180 minutes
@@ -81,7 +81,7 @@ Here are the active features of the pre-configured levels:
 
     f. *Remove X-Client-Data header*. This feature prevents Google Chrome from sending its version and modifications information to Google domains (including DoubleClick and Google Analytics)
 
- 3. **Extreme** (formerly known as *Ultimate*)
+3. **Extreme** (formerly known as *Ultimate*)
 
     a. *Block trackers*. This feature uses *AdGuard Tracking Protection filter* to protect you from online counters and web analytics tools
 
