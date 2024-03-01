@@ -5,7 +5,7 @@ sidebar_position: 5
 
 Screenshot is a capture of your computer’s or mobile device’s screen, which can be obtained by using standard tools or a special program/app.
 
-Sometimes  screenshots are requested by the support team for a better understanding. Here you will find all the necessary hotkeys you should know in order to take screenshots on your computer or mobile device.
+Sometimes screenshots are requested by the support team for a better understanding. Here you will find all the necessary hotkeys you should know in order to take screenshots on your computer or mobile device.
 
 ### Android {#android}
 
@@ -17,14 +17,14 @@ Generally, the following button combination is used for Android:
 
 Your Android device will capture the entire screen and save it as a photo. So, you can find the screenshot in a *Screenshots* folder in your Gallery.
 
-But there can be differences depending on a particular device. Let’s look at other possible combinations:
+For older devices, you may use following combinations:
 
 - **Press *Home* and *Power* at the same time**
 - **Press *Back* and *Home* at the same time**
 
-On Android 8 and later you can also take a screenshot with other manipulations, for example by placing your hand vertically along the left or right edge of your phone and swiping in from that edge with your hand touching the screen (Samsung devices), or you can do it with three fingers swiping down (OnePlus devices), etc.
+On Android 8 and later you can also take a screenshot with other manipulations, for example swiping your hand over the screen at a 90-degree angle to trigger a screenshot (Samsung devices), or you can do it with three fingers swiping down (OnePlus devices), etc.
 
-Find out about other options to take a screenshot in the settings of your device.
+The options for taking a screenshot vary by brand and model. Check your device’s settings to find the method that works best for you.
 
 Besides, you can always use any special apps for taking screenshots on your devices, for example — *Screenshot Easy*, *Screenshot Ultimate*, *Screenshot Snap*, etc.
 
