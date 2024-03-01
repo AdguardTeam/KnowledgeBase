@@ -22,7 +22,7 @@ For older devices, you may use following combinations:
 - **Press *Home* and *Power* at the same time**
 - **Press *Back* and *Home* at the same time**
 
-On Android 8 and later you can also take a screenshot with other manipulations, for example swiping your hand over the screen at a 90-degree angle to trigger a screenshot (Samsung devices), or you can do it with three fingers swiping down (OnePlus devices), etc.
+On Android 8 and later you can also take a screenshot with other manipulations, for example, with swiping your hand over the screen at a 90-degree angle to trigger a screenshot (Samsung devices), or with swiping down three fingers (OnePlus devices), etc.
 
 The options for taking a screenshot vary by brand and model. Check your device’s settings to find the method that works best for you.
 
