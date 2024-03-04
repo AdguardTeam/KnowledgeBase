@@ -27,11 +27,11 @@ These devices must be in the same network as the PC or Mac on which AdGuard is i
 
 4. 单击**下载**按钮。
 
-5. 将下载的 **cert.cer** 文件传输到您想通过 AdGuard 路由流量的设备
+5. Transfer the downloaded **cert.cer** file to the device whose traffic you want to route through AdGuard.
 
 6. 在该设备上，按 **Win** 按钮，输入 `管理计算机证书` ，按 **Enter**。
 
-7. 在*「证书」-「本地计算机」*页面，找到*「受信任根证书」*→「*证书*」文件夹。
+7. On the *Certificates - Local Computer* page, find the *Trusted Root Certification Authorities* → *Certificates* folder.
 
 8. 右键单击「*证书*」文件夹，并单击「**所有任务**」→「**导入**」。
 
@@ -71,7 +71,7 @@ These devices must be in the same network as the PC or Mac on which AdGuard is i
 
 4. 单击**下载**按钮。
 
-5. 将下载的 **cert.cer** 文件传输到您想通过 AdGuard 路由流量的设备
+5. Transfer the downloaded **cert.cer** file to the device whose traffic you want to route through AdGuard.
 
 6. 双击下载的证书文件。
 
@@ -91,7 +91,7 @@ These devices must be in the same network as the PC or Mac on which AdGuard is i
 
 14. 点击「**更多信息...** ，并转到「**代理**」。
 
-15. 勾选两个复选框。「*网络代理（HTTP）*」和「*安全网络代理（HTTPS）*」。 在「**代理**」，请输入在第一步记下的您的计算机的 IP 地址。 在「**端口**」，输入在桌面 AdGuard 应用程序的网络设置中选择的端口。
+15. Check two checkboxes: *Web proxy (HTTP)* and *Secure web proxy (HTTPS)*. 在「**代理**」，请输入在第一步记下的您的计算机的 IP 地址。 在「**端口**」，输入在桌面 AdGuard 应用程序的网络设置中选择的端口。
 
 ### 安卓系统 {#android}
 
@@ -103,7 +103,7 @@ These devices must be in the same network as the PC or Mac on which AdGuard is i
 
 4. 单击**下载**按钮。
 
-5. 将下载的 **cert.cer** 文件传输到您想通过 AdGuard 路由流量的设备
+5. Transfer the downloaded **cert.cer** file to the device whose traffic you want to route through AdGuard.
 
 6. 找到并点击先前下载的 **cert.cer** 证书以打开文件。
 
@@ -123,11 +123,11 @@ These devices must be in the same network as the PC or Mac on which AdGuard is i
 
 4. 单击**下载**按钮。
 
-5. 将下载的 **cert.cer** 文件传输到您想通过 AdGuard 路由流量的设备
+5. Transfer the downloaded **cert.cer** file to the device whose traffic you want to route through AdGuard.
 
 6. 打开「**设置**」→「**安全**」→「**加密&凭证**」→「**安装证书**」。 安卓设备默认不信任证书，所以当您选择「**CA证书**」，您会收到警告。 点击「**继续安装**」。
 
-7. 打开「**设置**」→「**配置文件下载**」，然后点击右上角的「**安装**」。 输入密码并确认安装。 点击**完成**。
+7. Open **Settings** → **Profile Downloaded** and tap **Install** in the top right corner. 输入密码并确认安装。 点击**完成**。
 
 8. 转到「**设置**」→ 「**常规**」→ 「**关于**」→ 「**证书信任设置**」。 启用「*Adguard Personal CA*」旁边的开关。 证书安装成功。
 

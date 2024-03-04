@@ -93,11 +93,11 @@ In this article we give examples of how to set up some of the most popular proxi
 
 1. **프록시 서버 추가** 버튼을 누르고 다음 데이터를 입력합니다.
 
-    | 필드      | 값                                                                              |
-    | ------- | ------------------------------------------------------------------------------ |
-    | 프록시 유형  | *SOCKS5*                                                                       |
-    | 프록시 호스트 | *any server from [this list](https://support.nordvpn.com/Connectivity/Proxy/)* |
-    | 프록시 포트  | *1080*                                                                         |
+    | 필드      | 값                                                                                                                               |
+    | ------- | ------------------------------------------------------------------------------------------------------------------------------- |
+    | 프록시 유형  | *SOCKS5*                                                                                                                        |
+    | 프록시 호스트 | *any server from [this list](https://support.nordvpn.com/hc/en-us/articles/20195967385745-NordVPN-proxy-setup-for-qBittorrent)* |
+    | 프록시 포트  | *1080*                                                                                                                          |
 
 1. For **Username** and **Password** fields, enter your NordVPN Username and Password.
 

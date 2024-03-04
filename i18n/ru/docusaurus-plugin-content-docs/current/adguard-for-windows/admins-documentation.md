@@ -37,7 +37,9 @@ AdGuard подключается к двум хостам: `api.adguard.org` и 
 
 :::info
 
-При установке AdGuard для Windows из MSI автоматические обновления AdGuard не происходят. Если вы всё-таки хотите разрешить обновления пользователю (что не рекомендуется, т. к. в таком случае станет невозможным централизованное обновление), то в в реестре у ключа `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` параметру `AllowCheckUpdates` нужно присвоить значение `YES` (нечувствителен к регистру). В таком случае обновления будут разрешены, любое другое значение или отсутствие значения у данного параметра в реестре запрещает автоматические обновления.
+Starting with AdGuard v7.17 for Windows, automatic updates are enabled by default when you install the application from MSI. We recommend that you disable updates for a user so that AdGuard for Windows is updated centrally. To do this, add the ForbidCheckUpdates=Yes key, which is located at the following path: HKEY_LOCAL_MACHINE\SOFTWARE\Adguard.
+
+In older versions of AdGuard for Windows automatic updates are disabled by default. To allow updates for a user, set the value of the `AllowCheckUpdates` parameter for the `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` key to `YES` (case insensitive).
 
 :::note
 

@@ -11,7 +11,7 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 :::note Disclaimer
 
-AdGuard for Android is not to be confused with AdGuard Content Blocker. AdGuard Content Blocker is an app available in Google Play that has truncated functionality to meet restrictions imposed by the store. AdGuard for Android, on the contrary, is a powerful application to block ads, manage applications, and perform other roles that will be described in this article. The only place it can be downloaded from is [the AdGuard website](https://adguard.com/adguard-android/overview.html).
+AdGuard for Android is not to be confused with AdGuard Content Blocker. AdGuard Content Blocker is an app available in Google Play that has truncated functionality to meet restrictions imposed by the store. AdGuard for Android, on the contrary, is a powerful app to block ads, manage applications, and perform other roles that will be described in this article. The only place it can be downloaded from is [the AdGuard website](https://adguard.com/adguard-android/overview.html).
 
 :::
 
@@ -22,7 +22,7 @@ Bu ekran, AdGuard korumasının tüm özelliklerini bir araya getirir:
 - Reklam engelleme
 - İzleme koruması
 - Can sıkıcı öğe engelleme
-- DNS protection
+- DNS koruması
 - Güvenlik duvarı
 - Browsing Security
 - AdGuard VPN ile entegrasyon
@@ -45,66 +45,73 @@ Temel koruma, çoğu sitedeki reklamları etkili bir şekilde engeller. Daha öz
 
 ### İzleme koruması
 
-*İzleme koruması* (eski adıyla *Gizlilik Modu*), sitelerin IP adresleriniz, tarayıcınız ve işletim sisteminiz hakkındaki bilgiler, ekran çözünürlüğü ve geldiğiniz veya yönlendirildiğiniz sayfa gibi hakkınızda bilgi toplamasını engeller. Ayrıca, sitelerin tarayıcıyı işaretlemek ve kişisel ayarlarınızı, kullanıcı tercihlerinizi kaydetmek veya bir sonraki ziyaretinizde sizi tanımak için kullandığı çerezleri de engelleyebilir.
+*Tracking protection* (formerly known as *Stealth Mode*) prevents websites from collecting information about you, such as your IP addresses, information about your browser and operating system, screen resolution, and the page you came or were redirected from. It can also block cookies that websites use to mark your browser, save your personal settings and user preferences, or recognize you on your next visit.
 
 ![İzleme koruması *mobile_border](https://cdn.adtidy.org/blog/new/y5fuztracking_protection.png)
 
-Önceden yapılandırılmış üç koruma seviyesi vardır. İşte etkinleştirdikleri özellikler:
+*Tracking protection* has three pre-configured levels of privacy protection (*Standard*, *High*, and *Extreme*) and one user-defined level (*Custom*). *Custom* allows you to set your own tracking protection parameters. [Learn more about other Tracking protection settings](/general/stealth-mode)
 
- 1. **Standart**
+Here are the active features of the pre-configured levels:
 
-    a. *İzleyicileri engelleyin*. Bu ayar, AdGuard'ın İzleme Koruması filtresini kullanan çevrimiçi sayaçlara ve web analizi araçlarına karşı koruma sağlar
+1. **Standart**
 
-    b. *Sitelerden sizi izlememelerini isteyin*. Bu ayar, ziyaret ettiğiniz sitelere [Global Privacy Control](https://globalprivacycontrol.org/) ve [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) sinyallerini göndererek web uygulamalarından etkinliğinizin izlenmesini devre dışı bırakmasını ister
+    a. *İzleyicileri engelleyin*. This feature uses *AdGuard Tracking Protection filter* to protect you from online counters and web analytics tools
 
-    c. *X-Client-Data başlığını kaldırın*. Bu ayar, Google Chrome'un sürüm ve değişiklik bilgilerini Google alan adlarına (Double Click ve Google Analytics dahil) göndermesini engeller
+    b. *Sitelerden sizi izlememelerini isteyin*. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
 
- 2. **Yüksek**
+    c. *X-Client-Data başlığını kaldırın*. This feature prevents Google Chrome from sending information about its version and modifications to Google domains (including DoubleClick and Google Analytics)
 
-    a. *İzleyicileri engelleyin*
+2. **Yüksek**
 
-    b. *İzleme parametrelerini URL'lerden kaldırın*. Bu ayar, AdGuard URL İzleme filtresini kullanarak sayfa URL'lerinden `utm_*` ve `fb_ref` gibi izleme parametrelerini arındırır
+    a. *İzleyicileri engelleyin*. This feature uses *AdGuard Tracking Protection filter* to protect you from online counters and web analytics tools
 
-    c. *Arama sorgularınızı gizleyin*
+    b. *İzleme parametrelerini URL'lerden kaldırın*. This feature uses *AdGuard URL Tracking filter* to remove tracking parameters, such as `utm_*` and `fb_ref`, from page URLs
 
-    d. *Sitelerden sizi izlememelerini isteyin*
+    c. *Hide your search queries*. This feature hides queries for websites visited from a search engine
 
-    e. *Kendini yok eden üçüncü taraf çerezler*. Bu ayar, üçüncü taraf çerezlerinin kullanım süresini 180 dk ile sınırlar
+    d. *Sitelerden sizi izlememelerini isteyin*. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
+
+    e. *Kendini yok eden üçüncü taraf çerezler*. This feature limits the lifetime of third-party cookies to 180 minutes
 
     :::dikkat
 
-    Bu ayar, sosyal ağlar veya diğer üçüncü taraf hizmetleri aracılığıyla yaptığınız giriş yapma bilgileri de dahil olmak üzere tüm üçüncü taraf çerezlerini siler. Bazı sitelerde periyodik olarak yeniden giriş yapmanız gerekebilir ve çerezlerle ilgili başka sorunlarla karşılaşabilirsiniz. Yalnızca izleme çerezlerini engellemek için *Standart* koruma düzeyini kullanın.
+    This feature deletes all third-party cookies after their forced expiration. This includes your logins through social networks or other third-party services. You may need to re-log in to some websites periodically or experience other cookie-related issues. Yalnızca izleme çerezlerini engellemek için *Standart* koruma düzeyini kullanın.
 
 
 :::
 
-    f. *X-Client-Data başlığını kaldırın*
+    f. *X-Client-Data başlığını kaldırın*. This feature prevents Google Chrome from sending its version and modifications information to Google domains (including DoubleClick and Google Analytics)
 
- 3. **En yüksek**
+3. **Extreme** (formerly known as *Ultimate*)
 
-    a. *İzleyicileri engelleyin*
+    a. *İzleyicileri engelleyin*. This feature uses *AdGuard Tracking Protection filter* to protect you from online counters and web analytics tools
 
-    b. *Remove tracking parameters from URLs*
+    b. *İzleme parametrelerini URL'lerden kaldırın*. This feature uses *AdGuard URL Tracking filter* to remove tracking parameters, such as `utm_*` and `fb_ref`, from page URLs
 
-    c. *Arama sorgularınızı gizleyin*
+    c. *Hide your search queries*. This feature hides queries for websites visited from a search engine
 
-    d. *Sitelerden sizi izlememelerini isteyin*
+    d. *Sitelerden sizi izlememelerini isteyin*. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
 
-    e. *Self-destruction of third-party cookies*
+    e. *Kendini yok eden üçüncü taraf çerezler*. This feature limits the lifetime of third-party cookies to 180 minutes
 
-    f. *Block WebRTC*. This setting blocks WebRTC, a technology that allows direct streaming of data between browsers and apps and can let others know your true IP address, even if you use a proxy or VPN
+    :::caution
 
-    g. *Block Push API*. This setting prevents websites from sending you notifications, regardless of the activity status of your browser
+    This feature deletes all third-party cookies after their forced expiration. This includes your logins through social networks or other third-party services. You may need to re-log in to some websites periodically or experience other cookie-related issues. Yalnızca izleme çerezlerini engellemek için *Standart* koruma düzeyini kullanın.
 
-    h. *Block Location API*. This setting prevents browsers from detecting your GPS data
 
-    i. *Hide Referer from third parties*. This setting hides the HTTP header that contains the URL of the initial page and changes it into the default or the specified one. You can set your custom referer in the respective field
+:::
 
-    j. *Hide your User-Agent*. This setting removes identifying information from the User-Agent header that usually includes the name and version of the browser, the operating system, and language settings
+    f. *Block WebRTC*. This feature blocks WebRTC, a known vulnerability that can leak your real IP address even if you use a proxy or VPN
 
-    k. *X-Client-Data başlığını kaldırın*
+    g. *Block Push API*. This feature prevents your browsers from receiving push messages from servers
 
-You can fine-tune Tracking protection by selecting the *Custom* protection level. [Learn more about other Tracking protection settings](/general/stealth-mode)
+    h. *Block Location API*. This feature prevents browsers from accessing your GPS data and determining your location
+
+    i. *Hide Referer from third parties*. This feature prevents third parties from knowing which websites you visit. It hides the HTTP header that contains the URL of the initial page and replaces it with a default or custom one that you can set
+
+    j. *Hide your User-Agent*. This feature removes identifying information from the User-Agent header, which typically includes the name and version of the browser, the operating system, and language settings
+
+    k. *X-Client-Data başlığını kaldırın*. This feature prevents Google Chrome from sending its version and modifications information to Google domains (including DoubleClick and Google Analytics)
 
 ### Can sıkıcı öğe engelleme
 
@@ -112,7 +119,7 @@ This feature is based on AdGuard's annoyance filters and allows you to block pop
 
 ![Annoyance blocking *mobile_border](https://cdn.adtidy.org/blog/new/lwujvannoyance.png)
 
-### DNS protection
+### DNS koruması
 
 *DNS protection* allows you to filter DNS requests with the help of a selected DNS server, DNS filters, and user rules:
 
@@ -136,7 +143,7 @@ In this section, you can select a DNS server to resolve DNS requests, block ads 
 
  By default, *Automatic DNS* is selected. It sets a DNS server based on your AdGuard and device settings. If you have integration with AdGuard VPN or another SOCKS5 proxy enabled, it connects to *AdGuard DNS Non-filtering* or any other server you specify. In all other cases, it connects to the DNS server selected in your device settings.
 
-#### DNS filters
+#### DNS filtreleri
 
 This section allows you to add custom DNS filters and DNS filtering rules. You can find more filters at [filterlists.com](https://filterlists.com/).
 
@@ -192,7 +199,7 @@ If you're about to visit a dangerous website, Browsing Security will show you th
 
 ![Browsing Security warning *mobile_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
 
-> Android için AdGuard'ın bir antivirüs programı olmadığını lütfen unutmayın. Ne virüslerin indirilmesini durdurur ne de önceden indirilmiş olanları siler. Cihazınızı tam olarak korumak için AdGuard'ı bir antivirüs aracıyla birlikte kullanmanızı tavsiye ederiz.
+> Android için AdGuard'ın bir antivirüs programı olmadığını lütfen unutmayın. Ne virüslerin indirilmesini durdurur ne de önceden indirilmiş olanları siler. To fully protect your device, we recommend using AdGuard in conjunction with an antivirus.
 
 Browsing Security is safe: AdGuard does not know what websites you visit. It uses hash prefixes instead of URLs to check website security.
 
@@ -253,7 +260,7 @@ You can tap a request to view its details and add a blocking or unblocking rule.
 
 ### Data usage
 
-This section shows the amount of downloaded, uploaded, and saved traffic for the selected time period and data type. Tap *saved*, *uploaded*, or *downloaded* to view the graph of data usage over time.
+This section shows the amount of downloaded and uploaded data and saved traffic for the selected time period and data type. Tap *saved*, *uploaded*, or *downloaded* to view the graph of data usage over time.
 
 ### Apps
 
@@ -271,7 +278,7 @@ This section displays companies that your device reaches out to. What does it me
 
 ### DNS statistics
 
-This section shows data about the requests handled by *DNS protection*. You can see the total number of requests sent and how many were blocked by AdGuard in figures and graphs. You'll also find statistics on the amount of traffic saved, downloaded, and uploaded.
+This section shows data about the requests handled by *DNS protection*. You can see the total number of requests sent and how many were blocked by AdGuard in figures and graphs. You'll also find statistics on the amount of traffic saved and data downloaded and uploaded.
 
 ### Battery usage
 
@@ -450,7 +457,7 @@ You can get access to these features by [purchasing a license](https://adguard.c
 Android işletim sisteminin güvenlik önlemleri nedeniyle bazı AdGuard özellikleri yalnızca root erişimli cihazlarda kullanılabilir. Here's the list of them:
 
 - **HTTPS filtering in most apps** requires [installing a CA certificate into the system store](#security-certificates), as most apps do not trust certificates in the user store. Installing a certificate into the system store is only possible on rooted devices
-- The [**Automatic proxy** routing mode](#routing-mode) requires root access due to Android's limitations on system-wide traffic filtering
+- The [**Automatic proxy** routing mode](#routing-mode) requires root access due to Android's restrictions on system-wide traffic filtering
 - The **Manual proxy** routing mode requires root access on Android 10 and above as it's no longer possible to determine the name of the app associated with a connection filtered by AdGuard
 
 ## Asistan

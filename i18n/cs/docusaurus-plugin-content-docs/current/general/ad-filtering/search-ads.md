@@ -3,7 +3,7 @@ title: Reklamy ve vyhledávání a vlastní propagace
 sidebar_position: 3
 ---
 
-**Zpřístupnění.** AdGuard sice poskytuje možnost zobrazovat některé reklamy, ale nemáme žádný program 'přijatelných reklam', jako je Adblock Plus a některé další blokátory reklam, které si za ponechání určitých reklam bez blokování berou peníze. To není náš případ. Za zobrazení žádné z reklam nedostáváme zaplaceno a termín 'přijatelný' nepoužíváme z jednoho důvodu: reklamy, které můžeme zobrazit, mohou být ve skutečnosti užitečné a ne jen 'přijatelné'. To vše platí pouze pro reklamy ve vyhledávání a vlastní propagaci.
+**Zpřístupnění.** AdGuard sice poskytuje možnost zobrazovat některé reklamy, ale nemáme žádný program 'přijatelných reklam', jako je Adblock Plus a některé další blokátory reklam, které si za ponechání určitých reklam bez blokování berou peníze. Tohle není náš způsob podnikání. Za zobrazení žádné z reklam nedostáváme zaplaceno a termín 'přijatelný' nepoužíváme z jednoho důvodu: reklamy, které můžeme zobrazit, mohou být ve skutečnosti užitečné a ne jen 'přijatelné'. To vše platí pouze pro reklamy ve vyhledávání a vlastní propagaci.
 
 Zobrazování těchto reklam můžete kdykoli vypnout. Dále vysvětlíme, které reklamy splňují podmínky této definice.
 

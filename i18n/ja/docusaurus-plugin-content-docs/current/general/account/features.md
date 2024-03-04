@@ -31,7 +31,7 @@ AdGuard 広告ブロッカーライセンスにバインド（紐付け）され
 
 ## ご購入履歴
 
-「ご購入履歴」セクションには、AdGuard アカウントの登録時メールアドレスを使用して購入したすべてのライセンスが表示されます。 また、購入日、オーダーID、支払い方法、購入金額に関する情報も掲載されています。
+「ご購入履歴」セクションには、AdGuard アカウントの登録時メールアドレスを使用して購入したすべてのライセンスが表示されます。 You will also find there information about the date of purchase, order ID, payment method, and cost of the purchase.
 
 ## サポート・お問い合わせ
 

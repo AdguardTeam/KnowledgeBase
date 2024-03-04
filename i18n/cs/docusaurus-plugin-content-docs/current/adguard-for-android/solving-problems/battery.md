@@ -37,9 +37,9 @@ Nejprve si řekneme něco málo z teorie a uvedeme si souvislosti s potřebnými
 
     *radio.active=* 100-300mA dodatečná spotřeba v mAh způsobená výměnou dat přes mobilní síť.
 
-    *cpu.active=* 100-200mA dodatečná spotřeba v mAh způsobená prací procesoru.
+    *cpu.active=* 100-200mA dodatečná spotřeba v mAh způsobená vytížením procesoru.
 
-1. AdGuard sám o sobě nespotřebovává téměř žádné prostředky, takže pro účely vyhodnocení spotřeby baterie se zbavme 'paketů Mobile/WiFi' a 'CPU'.
+1. AdGuard sám o sobě nespotřebovává téměř žádné prostředky, takže pro účely vyhodnocení spotřeby energie se zbavme 'paketů Mobile/WiFi' a 'CPU'.
 
     Vzorec pro výpočet spotřeby:
 

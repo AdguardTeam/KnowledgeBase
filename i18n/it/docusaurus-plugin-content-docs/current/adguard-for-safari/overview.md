@@ -1,100 +1,100 @@
 ---
-title: Features overview
+title: Panoramica delle funzionalità
 sidebar_position: 1
 ---
 
 :::info
 
-Questo articolo riguarda AdGuard per Safari, che protegge solo il tuo browser Safari. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Questo articolo riguarda AdGuard per Safari, che protegge solo il tuo browser Safari. Per proteggere il tuo intero dispositivo, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-AdGuard for Safari was designed to conform to Apple's restrictions for ad blocking browser extensions and is the most popular ad blocker for Safari. Although it can’t be compared to our desktop ad blocking apps, it's free and can protect you from ads, trackers, phishing, and malicious websites.
+AdGuard per Safari è stato progettato per conformarsi alle restrizioni di Apple per le estensioni del browser di blocco degli annunci ed è il blocco degli annunci più popolare per Safari. Sebbene non possa esser paragonata alle nostre app di blocco degli annunci per desktop, è gratuita e può proteggerti da annunci, tracciatori e siti web dannosi e quelli di phishing.
 
 ## Generali {#general}
 
-![General tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/General.png)
+![Scheda Generale](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/General.png)
 
-The first tab is the General screen where you can set up basic things like notifications, update intervals, and launching AdGuard at system startup. You can also choose to display the AdGuard icon in the menu bar. There you can also turn on [content blockers](#contentblockers) to block ads, trackers, annoyances, etc.
+La prima scheda è la schermata Generale, dove puoi configurare cose fondamentali quali notifiche, intervalli di aggiornamento e avviare AdGuard all'avvio di sistema. Inoltre, puoi scegliere di mostrare l'icona di AdGuard nella barra dei menu. Qui, puoi inoltre attivare il [blocco dei contenuti](#contentblockers) per bloccare annunci, tracciatori, disturbi, etc.
 
-## Filters {#filters}
+## Filtri {#filters}
 
-![Filters tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/Filters.png)
+![Scheda Filtri](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/Filters.png)
 
-A filter is a list of rules written in a special syntax. Following these rules, content blockers can filter web traffic: block ads or requests to malicious websites.
+Un filtro è un elenco di regole scritte in una sintassi speciale. Seguendo tali regole, il blocco dei contenuti può filtrare il traffico web: bloccare gli annunci o le richieste ai siti web dannosi.
 
-Filters are combined into eight thematic categories: *Ad Blocking, Privacy, Social widgets, Annoyances, Security, Language-specific filters, Custom, and Other filters*.
+I filtri sono combinati in otto categorie tematiche: *Blocco Annunci, Privacy, Widget Social, Disturbi, Sicurezza, Filtri specifici per lingua, Personalizzati e Altri filtri*.
 
-Read more about [AdGuard filters](/general/ad-filtering/adguard-filters) or [ad filtering in general](/general/ad-filtering/how-ad-blocking-works).
+Ulteriori informazioni su [filtri AdGuard](/general/ad-filtering/adguard-filters) o [filtraggio degli annunci in generale](/general/ad-filtering/how-ad-blocking-works).
 
-In the Filters tab, you can enable the whole category or separate filters. Changes in the Filters tab are reflected in the Content Blockers section (located in the General tab).
+Nella scheda Filtri, puoi abilitare l'intera categoria o filtri separati. Le modifiche nella scheda Filtri si riflettono nella sezione Blocco dei contenuti (che si trova nella scheda Generale).
 
-## Content blockers {#contentblockers}
+## Blocco dei contenuti {#contentblockers}
 
-![Content blockers tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/Contentblockers.png)
+![Scheda Blocco dei contenuti](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/Contentblockers.png)
 
-A content blocker is a thematic cluster of filters. Privacy-related filters are included in the content blocker with the corresponding name — *AdGuard Privacy*.
+Un blocco dei contenuti è un gruppo tematico di filtri. I filtri relativi alla privacy sono inclusi nel blocco dei contenuti con il nome corrispondente — *AdGuard Privacy*.
 
-Content Blockers were designed for two reasons: to structure filters and to conform to Apple’s restrictions.
+Il Blocco dei contenuti è stato progettato per due motivi: strutturare i filtri e conformarsi alle limitazioni di Apple.
 
-[In 2019](https://adguard.com/en/blog/adguard-safari-1-5.html), Apple put limitations on ad blockers for Safari, allowing them to use only 50,000 filtering rules simultaneously. As this number was not enough for an ad blocker to provide a good filtering quality (AdGuard Base Filter alone has 30,000 filtering rules), we divided AdGuard for Safari into six content blockers each containing up to 50,000 rules.
+[Nel 2019](https://adguard.com/en/blog/adguard-safari-1-5.html) Apple ha imposto dei limiti agli ad blocker per Safari, consentendo loro di utilizzare solo 50.000 regole di filtraggio contemporaneamente. Poiché questo numero non era sufficiente affinché un ad blocker fornisse una buona qualità di filtraggio (Filtro di Base AdGuard da solo ha 30.000 regole di filtraggio), abbiamo suddiviso AdGuard per Safari in 6 blocchi dei contenuti ciascuno contenente fino a 50.000 regole.
 
-[In 2022](https://adguard.com/en/blog/adguard-for-safari-1-11.html), Apple increased the filtering rule limit for each content blocker to 150,000 rules applied simultaneously. Regarding AdGuard for Safari, up to 900,000 rules can be enabled for all six content blockers.
+[Nel 2022](https://adguard.com/en/blog/adguard-for-safari-1-11.html) Apple ha aumentato il limite delle regole di filtraggio per ciascun blocco dei contenuti a 150.000 regole applicate contemporaneamente. Per quanto riguarda AdGuard per Safari, è possibile abilitare fino a 900.000 regole per tutti e sei i blocchi dei contenuti.
 
-Whereas the limit has been increased, the structure of content blockers has remained the same.
+Mentre il limite è stato aumentato, la struttura dei blocchi dei contenuti è rimasta la stessa.
 
-In the Content blockers tab, you can see which content blockers are enabled, how many rules each of them is using, and which filters are functioning.
+Nella scheda Blocco dei Contenuti, puoi visualizzare quali sono abilitati, quante regole ognuno di essi sta utilizzando e quali filtri stanno funzionando.
 
 :::tip
 
-You can manage enabled filters in the Filters tab. In the Content blockers section, you can only see the list of already enabled filters.
+Puoi gestire i filtri abilitati nella scheda dei Filtri. Nella sezione di Blocco dei Contenuti, puoi visualizzare soltanto l'elenco dei filtri già abilitati.
 
 :::
 
-### AdGuard General {#adguard_general}
+### AdGuard Generale {#adguard_general}
 
-*AdGuard General* is a content blocker that combines the most essential filters for blocking ads. We recommend keeping the AdGuard Base Filter always enabled.
+*AdGuard Generale* è un blocco dei contenuti che combina i filtri più essenziali per bloccare gli annunci. Consigliamo di mantenere sempre abilitato il Filtro di Base di AdGuard.
 
 ### AdGuard Privacy {#adguard_privacy}
 
-This content blocker is the main tool against counters and other web analytics tools. The *AdGuard Tracking Protection filter* is enabled by default.
+Questo blocco dei contenuti è lo strumento principale contro contatori e altri strumenti analitici web. Il *filtro di Protezione dal Tracciamento di AdGuard* è abilitato di default.
 
 ### AdGuard Social {#adguard_social}
 
-*AdGuard Social* contains filters against social media buttons, widgets, scripts, and icons. Other annoyance filters can also be found in this section: filters against pop-ups, mobile app banners, cookie notices, and more. To enable them, find *Social Widgets* in the Filters tab.
+*AdGuard Social* contiene i filtri contro pulsanti, widget, script e icone dei social media. In questa sezione si possono trovare altri filtri dei fastidi: filtri contro popup, banner di app mobili, avvisi sui cookie e altri. Per abilitarli, trova *Widget Social* nella scheda dei Filtri.
 
-### AdGuard Security {#adguard_security}
+### AdGuard Sicurezza {#adguard_security}
 
-This content blocker unites several security-related filters. *Malware Domains Blocklist* blocks domains that are notorious for spreading malware and spyware. *Spam404* protects you from Internet fraudsters. *NoCoin Filter List* disrupts browser-based cryptominers, such as Coinhive.
+Questo blocco dei contenuti unisce diversi filtri correlati alla sicurezza. La *Blocklist dei Domini Malware* blocca i domini noti per diffondere malware e spyware. *Spam404* ti protegge dai truffatori in Internet. L'*Elenco di Filtri di NoCoin* interrompe i cripto-miner basati sul browser, come Coinhive.
 
-### AdGuard Other {#adguard_other}
+### AdGuard Altri {#adguard_other}
 
-*AdGuard Other* contains filters with various functions. For example, it has a filter that unblocks search ads and self-promo ads. In some cases, it helps find exactly what you are looking for, because these kinds of ads are more relevant and less intrusive than others.
+*AdGuard Altri* contiene filtri con varie funzionalità. Ad esempio, contiene un filtro che sblocca gli annunci di ricerca e gli annunci di auto-promozione. In alcuni casi, aiuta a trovare esattamente ciò che stai cercando, poiché questo tipo di annunci sono più rilevanti e meno intrusivi di altri.
 
-:::note Disclaimer
+:::nota Dichiarazione di non responsabilità
 
-We don’t have any ‘acceptable ads’ paid by advertisers. Instead, we provide users with an option to see [search ads and websites' self-promotion](/general/ad-filtering/search-ads).
+Non abbiamo "annunci accettabili" pagati dagli inserzionisti. Invece, forniamo agli utenti un'opzione per visualizzare gli [annunci di ricerca e l'auto-promozione dei siti web](/general/ad-filtering/search-ads).
 
 :::
 
-### AdGuard Custom {#adguard_custom}
+### AdGuard Personalizzati {#adguard_custom}
 
-![Custom tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/AGCustom.png)
+![Scheda Personalizzati](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/AGCustom.png)
 
-If you need more filters, you can add them to *AdGuard Custom*. To add a custom filter, enter a URL or a local file path in the relevant field. You can find new filters at [filterlists.com](https://filterlists.com/).
+Se necessiti di altri filtri, puoi aggiungerli in *AdGuard Personalizzati*. Per aggiungere un filtro personalizzato, inserisci un URL o un percorso locale di file nel campo rilevante. Puoi trovare nuovi filtri su [filterlists.com](https://filterlists.com/).
 
-## User rules {#userrules}
+## Regole dell'utente {#userrules}
 
-User rules can be used to customize ad blocking. They can be added manually, imported, or created automatically when you block an element on the page. To add your own filering rules, use a [special syntax](/general/ad-filtering/create-own-filters).
+Le regole dell'utente sono utilizzabili per personalizzare il blocco degli annunci. Possono essere aggiunte manualmente, importate o create automaticamente al blocco di un elemento su una pagina. Per aggiungere le tue regole di filtraggio, utilizza una [sintassi speciale](/general/ad-filtering/create-own-filters).
 
 ## Info {#about}
 
-![About tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/About.png)
+![Scheda Informazioni](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/About.png)
 
-In the About tab, you can see info about the current version of your product and links to legal documents. There is also a link to our repository on GitHub. You can monitor the product development, create feature requests and report bugs there.
+Nella scheda Informazioni, puoi visualizzare le informazioni sulla versione corrente del tuo prodotto e i collegamenti ai documenti legali. È inoltre presente un collegamento alla nostra repository su GitHub. Lì, puoi monitorare lo sviluppo del prodotto, creare richieste di funzionalità e segnalazioni di bug.
 
-:::note Reminder
+:::nota Promemoria
 
-AdGuard for Safari can be downloaded for free [from the App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259). A detailed setup instruction is available in the [Knowledge base](../installation).
+AdGuard per Safari può essere scaricato gratuitamente [dall'App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259). Le istruzioni dettagliate di configurazione sono disponibili nella [Base di conoscenza](../installation).
 
 :::

@@ -15,7 +15,7 @@ AdGuard is one of the leaders on the market of ad-blocking software with 10+ yea
 
 But we also develop and maintain free browser extensions for all popular browsers:
 
-- [AdGuard Browser Extension](/adguard-browser-extension/overview)
+- [Estensione del Browser di AdGuard](/adguard-browser-extension/overview)
 - [AdGuard per Safari](/adguard-for-safari/overview)
 
 ## Not just ad blocking

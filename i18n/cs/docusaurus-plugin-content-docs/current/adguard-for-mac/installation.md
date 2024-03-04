@@ -11,7 +11,7 @@ Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, kter
 
 ## Požadavky na systém
 
-**Operating system version:** macOS 10.15 (64 bit) or higher
+**Verze operačního systému:** macOS 10.15 (64 bitů) nebo vyšší
 
 **RAM:** alespoň 2 GB
 
@@ -99,7 +99,7 @@ Přejděte do sekce Aplikace. Vyhledejte tam AdGuard, klikněte na něj pravým 
 
     ![Run Activity Monitor](https://cdn.adtidy.org/content/kb/ad_blocker/mac/22.jpg)
 
-1. Ukončete proces, který je spuštěn pod uživatelem (ne ten, který je spuštěn pod root). Chcete-li tak učinit, klikněte na proces a poté klikněte na tlačítko X v levém horním rohu. Potvrďte to v dialogovém okně.
+1. Ukončete proces, který je spuštěn pod uživatelem (ne ten, který je spuštěn pod root). Chcete-li tak učinit, klikněte na proces a poté klikněte na tlačítko X v levém horním rohu. Potvrďte akci v dialogovém okně.
 
     ![Confirm](https://cdn.adtidy.org/content/kb/ad_blocker/mac/33.jpg)
 

@@ -37,7 +37,9 @@ Pokud chcete nainstalovat AdGuard do počítače se systémem Windows 7 ujistět
 
 :::info
 
-Při instalaci AdGuardu pro Windows z MSI jsou automatické aktualizace zakázány. Pokud chcete povolit aktualizace pro uživatele (což se nedoporučuje, protože centralizované aktualizace nebudou možné), nastavte hodnotu parametru `AllowCheckUpdates` pro klíč `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` na `ANO` (nerozlišuje se velikost písmen). V tomto případě budou automatické aktualizace povoleny. Jakákoli jiná hodnota nebo žádná hodnota tohoto parametru automatické aktualizace zakáže.
+Počínaje verzí AdGuard v7.17 pro Windows jsou při instalaci aplikace z MSI ve výchozím nastavení povoleny automatické aktualizace. Doporučujeme zakázat aktualizace pro uživatele, aby byl AdGuard pro Windows aktualizován centrálně. Za tímto účelem přidejte klíč ForbidCheckUpdates=Yes, který se nachází zde: HKEY_LOCAL_MACHINE\SOFTWARE\Adguard.
+
+Ve starších verzích AdGuard pro Windows jsou automatické aktualizace ve výchozím nastavení zakázány. Pokud chcete povolit aktualizace pro uživatele, nastavte hodnotu parametru `AllowCheckUpdates` pro klíč `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` na `ANO` (nerozlišuje se velikost písmen).
 
 :::note
 

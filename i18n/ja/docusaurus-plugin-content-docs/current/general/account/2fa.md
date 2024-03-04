@@ -3,7 +3,7 @@ title: 二要素認証
 sidebar_position: 3
 ---
 
-二要素認証（2FA、Two-Factor Authentication）は、ログインするために、通常のログインとパスワードに加え、ユーザーからの追加の証拠を要求する認証方法です。 これはアカウントのセキュリティを向上するためです。 ウェブサイトの多くは通常、SMSで送信されるコードや特別な認証アプリなどという2FA方法を提供しています。
+Two-factor authentication (or 2FA) is an authentication method that requires an additional piece of evidence from the user to log in, on top of the usual username and password pair. これはアカウントのセキュリティを向上するためです。 ウェブサイトの多くは通常、SMSで送信されるコードや特別な認証アプリなどという2FA方法を提供しています。
 
 私たちも、2FAオプションを追加することはメリットだと考えています。 それと同時に、2FAを強制するのは一部のユーザーを苛立たせる可能性があることも理解しております。 そのため、adguard.com のマイ・アカウントでは2FAを任意オプションにしています。デフォルトでは、新規アカウント登録後に2FAは無効になっています。 アカウント設定から手動で有効にできます。 現在利用可能な認証方法としては、私たちは試行錯誤を重ねたものである、AndroidまたはiOS用の認証アプリという方法を使っています。 このような認証アプリはたくさんあり、いずれも使って構いません。
 

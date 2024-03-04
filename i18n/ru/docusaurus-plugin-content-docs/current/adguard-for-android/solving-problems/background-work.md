@@ -77,7 +77,7 @@ sidebar_position: 9
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi6.jpeg)
 
-Нажмите на него и удерживайте, пока не появится специальное меню. Нажмите на значок замка.
+Tap and hold it until a menu pops up. Нажмите на значок замка.
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi7en.jpeg)
 
@@ -355,7 +355,7 @@ Huawei чрезвычайно изобретательны в оптимизац
 
 ## Nokia
 
-На устройствах Nokia с Android 9+ отключена функция **The Evenwell Power saver**, которая была основной причиной остановки фоновых процессов. Если AdGuard по-прежнему не работает на вашем телефоне Nokia, ознакомьтесь с [инструкцией для устаревших моделей](https://dontkillmyapp.com/hmd-global).
+Nokia devices running Android 9+ have **The Evenwell Power saver** disabled, which was the main culprit for killing background processes. Если AdGuard по-прежнему не работает на вашем телефоне Nokia, ознакомьтесь с [инструкцией для устаревших моделей](https://dontkillmyapp.com/hmd-global).
 
 ### Nokia 1 (Android Go)
 
@@ -367,7 +367,7 @@ Huawei чрезвычайно изобретательны в оптимизац
 
 1. Включите **отладку через USB** в Параметрах разработчика на телефоне;
 
-1. Удалите файл **com.evenwell.emm** с помощью следующих команд adb:
+1. Uninstall the **com.evenwell.emm** package via the following ADB commands:
 
     `adb shell` `pm uninstall --user 0 com.evenwell.emm`
 
@@ -423,7 +423,7 @@ Huawei чрезвычайно изобретательны в оптимизац
 
 1. Включите **отладку через USB** в Параметрах разработчика на телефоне;
 
-1. Удалите файл **com.evenwell.powersaving.g3** с помощью следующих команд adb:
+1. Uninstall the **com.evenwell.powersaving.g3** package via the following ADB commands:
 
     `adb shell` `pm uninstall --user 0 com.evenwell.powersaving.g3`
 

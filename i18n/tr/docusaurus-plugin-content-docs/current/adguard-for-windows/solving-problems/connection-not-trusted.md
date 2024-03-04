@@ -22,34 +22,41 @@ Old FireFox versions, as well as browsers based on them, do not trust certificat
 ![Sertifikayı yeniden yükle](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/reinstall.jpg)
 
 If that doesn't help, follow the instructions for manually adding the AdGuard certificate to the FireFox storage.
+
 > This instruction is for Firefox browser. Names of buttons and menu items may differ in other Firefox-based browsers.
 
-1. Run AdGuard.
+1. AdGuard'ı çalıştırın.
 
-1. Go to [http://local.adguard.org/cert](http://local.adguard.org/cert) and click the *Download* button. The browser should start downloading **cert.cer** file.
-> You can also open the download page by clicking on the link via the AdGuard app at *Settings → Network → HTTPS filtering*.
+1. [http://local.adguard.org/cert](http://local.adguard.org/cert) adresine gidin ve *İndir* düğmesine tıklayın. Tarayıcı **cert.cer** dosyasını indirmeye başlamalıdır.
 
-![Certificate settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/link.jpeg)
+    :::not
 
-1. Open your browser and then open *Settings*.
+    İndirme sayfasını AdGuard uygulaması üzerinden *Ayarlar → Ağ → HTTPS filtreleme* öğesindeki bağlantıya tıklayarak da açabilirsiniz.
 
-1. Go to *Privacy & Security* tab.
 
-1. *Sertifikalar* öğesine ilerleyin ve *Sertifikaları Görüntüle* düğmesine tıklayın.
+:::
 
-![Sertifikaları görüntüle penceresi](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import1.jpeg)
+    ![Sertifika ayarları](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/link.jpeg)
 
-1. Select *Authorities* tab.
+1. Tarayıcınızı açın ve ardından *Ayarlar* öğesini açın.
 
-1. Click *Import...*.
+1. *Gizlilik ve Güvenlik* sekmesine gidin.
 
-![Certificate settings — import](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import2.jpeg)
+1. *Sertifikalar* öğesine ilerleyin ve *Sertifikaları göster* düğmesine tıklayın.
 
-1. Browse the downloaded **cert.cer** file and click *Open*.
+    ![Sertifikaları göster penceresi](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import1.jpeg)
 
-1. Check the *Trust this CA to identify websites* box and then lick *OK*.
+1. *Makamlar* sekmesini seçin.
 
-![Sertifika ayarları — onay kutusu](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/cert_checkbox.jpg)
+1. *İçe aktar...* öğesine tıklayın.
+
+    ![Sertifika ayarları — içe aktarma](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import2.jpeg)
+
+1. İndirilen **cert.cer** dosyasına göz atın ve *Aç* öğesine tıklayın.
+
+1. *Web sitelerini tanımlamak için bu CA'ya güven* kutusunu işaretleyin ve ardından *Tamam* öğesini tıklatın.
+
+    ![Sertifika ayarları — onay kutusu](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/cert_checkbox.jpg)
 
 AdGuard sertifikasını başarıyla yüklediniz. Tarayıcıyı yeniden başlatın; hata ortadan kalkmalıdır.
 
@@ -67,6 +74,6 @@ Ancak AdGuard, sertifikasını da güvenilir olanların arasına ekler. Bu karş
 
 ### Sorun nasıl çözülür
 
-En kolay yol, **Siteye git** düğmesine tıklamaktır. Bu, Yandex.Browser'a AdGuard sertifikasını en azından bir süreliğine güvenilir sertifika olarak hatırlamasını söyler. Normally, you won't have to see this message anymore, but it is not beyond the realm of possibility for it to appear occasionally, for whatever reasons. Bu gibi durumlarda aynı düğmeye tekrar basmanız yeterlidir *(AdGuard sertifikası olduğundan emin olun!)*.
+En kolay yol, **Siteye git** düğmesine tıklamaktır. Bu, Yandex.Browser'a AdGuard sertifikasını en azından bir süreliğine güvenilir sertifika olarak hatırlamasını söyler. Normalde bu mesajı artık görmeniz gerekmez, ancak herhangi bir nedenle ara sıra görünmesi olasılık dışı değildir. Bu gibi durumlarda aynı düğmeye tekrar basmanız yeterlidir *(AdGuard sertifikası olduğundan emin olun!)*.
 
-AdGuard'da HTTPS filtrelemesini devre dışı bırakmak Yandex.Browser'ın bu mesajı tekrar göstermesini de engelleyecektir, ancak bunun büyük bir bedeli vardır: HTTPS ile yüklenen tüm reklamlar ( **Yandex'in kendi reklamları** dahil) YouTube, Facebook, Instagram ve daha birçok sitede görünür. Reklam engelleme kalitesini yüksek tutmak istiyorsanız kesinlikle bunu yapmamanızı tavsiye ederiz.
+AdGuard'da HTTPS filtrelemesini devre dışı bırakmak Yandex.Browser'ın bu mesajı tekrar göstermesini de engeller, ancak bunun büyük bir bedeli vardır: HTTPS ile yüklenen tüm reklamlar (**Yandex'in kendi reklamları** dahil) YouTube, Facebook, Instagram ve daha birçok sitede görünür. Reklam engelleme kalitesini yüksek tutmak istiyorsanız kesinlikle bunu yapmamanızı öneririz.

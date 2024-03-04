@@ -31,7 +31,7 @@ I dispositivi collegati alle tue licenze di AdGuard Ad Blocker sono collegabili 
 
 ## Visualizza gli acquisti
 
-La sezione dello Storico degli acquisti mostra tutte le licenze mai acquistate utilizzando il profilo email registrato con il tuo profilo di AdGuard. Inoltre, troverai anche le informazioni sulla data d'acquisto, numero dell'ordine, metodo di pagamento e costo dell'acquisto.
+La sezione dello Storico degli acquisti mostra tutte le licenze mai acquistate utilizzando il profilo email registrato con il tuo profilo di AdGuard. You will also find there information about the date of purchase, order ID, payment method, and cost of the purchase.
 
 ## Contattare il supporto
 

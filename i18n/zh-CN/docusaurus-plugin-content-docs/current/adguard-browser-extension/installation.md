@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-这篇文章是关于 AdGuard 浏览器扩展，它只能保护用户的浏览器。 To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+这篇文章是关于 AdGuard 浏览器扩展，它只能保护用户的浏览器。 如果需要保护整个设备，请前往[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)
 
 :::
 

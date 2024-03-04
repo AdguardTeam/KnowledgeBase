@@ -61,13 +61,13 @@ Gizlilik Modu ve birçok seçeneği hakkında her şeyi öğrenmek için [bu mak
 
 ### Gezinti Koruması
 
-Gezinti Koruması, kötü amaçlı ve kimlik avı sitelerine karşı güçlü koruma sağlar. Hayır, Windows için AdGuard bir antivirüs değildir. Ne bir virüs indirilmeye başlandığında bunu durdurur ne de var olanları siler. Ancak, alan adı "güvenilmeyen siteler" veri tabanımıza eklenmiş bir sitesine gitmek veya böyle bir siteden bir dosya indirmek üzereyseniz sizi uyarır. You can find more information about how this module works in the [dedicated article](/general/browsing-security).
+Browsing Security gives strong protection against malicious and phishing websites. Hayır, Windows için AdGuard bir antivirüs değildir. Ne bir virüs indirilmeye başlandığında bunu durdurur ne de var olanları siler. Ancak, alan adı "güvenilmeyen siteler" veri tabanımıza eklenmiş bir sitesine gitmek veya böyle bir siteden bir dosya indirmek üzereyseniz sizi uyarır. You can find more information about how this module works in the [dedicated article](/general/browsing-security).
 
 Bu modülde şunları yapabilirsiniz
 
 - kötü amaçlı ve kimlik avı sitelerine yönelik istekleri engellemek için bildirimleri etkinleştirin,
 - sesli bildirimleri etkinleştirin,
-- kötü amaçlı ve kimlik avı siteleri veri tabanını güncel tutmamıza yardımcı olması için AdGuard sunucusuna anonim güvenlikle ilgili bilgiler göndermeyi kabul edin.
+- agree to submit anonymous security-related info to the AdGuard server to help us keep the malicious and phishing websites database up to date.
 
 ![Gezinti Koruması *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/browsing-security.png)
 
@@ -83,7 +83,7 @@ In the DNS protection module of AdGuard for Windows you can select the DNS serve
 
 ### Ebeveyn Denetimi
 
-There are numerous websites access to which should be restricted if the PC is used by children. Bu görev Ebeveyn Denetimi tarafından gerçekleştirilir.
+There are several websites to which access should be restricted from a PC used by children. Bu görev Ebeveyn Denetimi tarafından gerçekleştirilir.
 
 ![Ebeveyn Denetimi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
 
@@ -121,7 +121,7 @@ AdGuard Asistanı, tarayıcınız için [yeni Asistan](../browser-assistant) yok
 
 This is a custom extension designed to fight the technique of re-inserting blocked ads — the so-called ad blocker circumvention/ad reinjection. Both are advanced anti-ad blocker methods that continue to rise in popularity among advertisers.
 
-AdGuard Extra is essentially a mini-program that changes the way pages work,and it does so in such a way that it becomes much more difficult for sites to use the above-mentioned functions to bypass blockers.
+AdGuard Extra is essentially a mini-program that changes the way pages work in such a way that it becomes much more difficult for sites to use the above-mentioned methods to bypass blockers.
 
 **AdGuard Açılır Pencere Engelleyici**
 
@@ -151,7 +151,7 @@ How does AdGuard VPN work? Without going into technical details, we can say that
 
 - gerçek yerinizi gizler ve anonim kalmanıza yardımcı olur
 - verilerinizi izlemekten korumak için IP adresinizi değiştirir
-- trafiğinizi dolandırıcıların erişemeyeceği şekilde şifreler
+- encrypts your traffic to make it unreadable to third parties
 - VPN'nin nerede kullanılacağını ve nerede kullanılmayacağını yapılandırmanıza olanak tanır (istisnalar özelliği)
 
 AdGuard VPN hakkında daha fazla bilgi edinmek için [AdGuard VPN Bilgi Tabanın](https://adguard-vpn.com/kb/) içinde dalın.
@@ -179,7 +179,7 @@ Bu sekme lisansınızla ilgili bilgileri içerir. Burada şunları yapabilirsini
 
 ![Hakkında *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
 
-Bu sekme, programın geçerli sürümü hakkındaki bilgilere ek olarak Lisans Sözleşmesi, Gizlilik Politikası, Katkıda Bulunanlar, Tartışmalar ve Sürüm geçmişi sayfalarına bazı yararlı bağlantılar sağlar.
+In addition to information about the current version of the program, this tab provides some useful links to Licese agreement, Privacy policy, Acknowledgements, Discussions, and Version history pages.
 
 ### Check for updates
 

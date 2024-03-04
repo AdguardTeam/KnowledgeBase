@@ -44,7 +44,7 @@ This is the list of libraries and other resources that really helped us with AdG
 - Minizip-ng library by Nathan Moinvaziri: [github.com/zlib-ng/minizip-ng](https://github.com/zlib-ng/minizip-ng)
 - Lottie for iOS library by Brandon Withrow: [github.com/airbnb/lottie-ios](https://github.com/airbnb/lottie-ios)
 
-## AdGuard Browser Extension {#extension}
+## Extension de navigateur AdGuard {#extension}
 
 - SHA256: [github.com/AndersLindman/SHA256](https://github.com/AndersLindman/SHA256)
 - D3: [github.com/d3/d3](https://github.com/d3/d3)
@@ -86,7 +86,7 @@ This is the list of libraries and other resources that really helped us with AdG
 - request: [github.com/request/request](https://github.com/request/request)
 - require-dir: [github.com/aseemk/requireDir](https://github.com/aseemk/requireDir)
 
-## AdGuard Browser Assistant {#assistant}
+## Assistant de navigateur AdGuard {#assistant}
 
 - React: [github.com/facebook/react](https://github.com/facebook/react)
 - webextension-polyfill: [github.com/mozilla/webextension-polyfill](https://github.com/mozilla/webextension-polyfill)

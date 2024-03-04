@@ -26,9 +26,15 @@ You will see the following list of options:
 
 - **Blocking elements on the page manually**. Tap the *Block elements on this page* button to prompt a pop-up for element blocking. Select any element on the page you want to hide, adjust the selection zone, then preview changes and confirm the removal. A corresponding filtering rule will be added to AdGuard (that you can later disable or delete to revert the change).
 
-- **Report an issue**. Swipe up to bring out the *Report an issue* button. Use it to report a missed ad or any other problem that you encountered on the current page.
+- **Report an issue**. Tippen Sie auf den kleinen Pfeil am unteren Ende des Fensters und dann auf „AdGuard“, um die Schaltfläche *Problem melden* aufzurufen. Use it to report a missed ad or any other problem that you encountered on the current page.
 
 ## How to enable AdGuard's Safari Web extension
+
+:::note
+
+AdGuard's Safari Web extension requires access to the web pages' content to operate, but doesn't use it for any purpose other than blocking ads.
+
+:::
 
 ### In the iOS settings
 
@@ -44,15 +50,9 @@ Find **ALLOW THESE EXTENSIONS** section and then find **AdGuard** among the avai
 
 ![Select "AdGuard" in ALLOW THESE EXTENSIONS section *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings3_en.png)
 
-Tap it, then turn on the switch. On the same screen make sure that the AdGuard extension has required permissions: **All Websites** should have the *Allow* status.
+Tap it, then toggle the switch. On the same screen, set the *All Websites* permission for AdGuard to either *Allow* or *Ask*. If you choose *Allow*, you won't have to give permission every time you visit a new website. If you are unsure, choose *Ask* to grant permissions on a per-site basis.
 
-![settings extensions *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings4_en.png)
-
-:::note
-
-AdGuard's Safari Web extension requires access to the web pages' content to operate, but doesn't use it for any purpose other than blocking ads.
-
-:::
+![Extension settings *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings4_en.png)
 
 ### In Safari
 
@@ -62,9 +62,9 @@ Alternitavely, you can also turn AdGuard extension on from the Safari browser. T
 
 Then find the *Manage Extensions* option in the list and tap it. In the opened window turn on the switch next to **AdGuard**.
 
-![Extensions *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari2_en.png)
+![Erweiterungen *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari2_en.png)
 
-![Extensions *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari3_en.png)
+![Erweiterungen *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/safari3_en.png)
 
 If you use this method, you may have to go to Safari settings to grant AdGuard extension the necessary permissions anyway.
 

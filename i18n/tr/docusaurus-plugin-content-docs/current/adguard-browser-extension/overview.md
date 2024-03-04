@@ -145,7 +145,7 @@ AdGuard bağımsız programlarının tarayıcı uzantılarına göre en büyük 
 
 AdGuard Tarayıcı Uzantısı ücretsiz ve yüklemesi kolay olmasına, reklamları engellemek ve çevrimiçi tehditlerle mücadele etmek için filtrelere sahip olmasına karşın, tam teşekküllü uygulamalar daha güçlüdür ve gelişmiş özelliklerin bir listesine sahiptir. Aşağıdaki karşılaştırmalı tablodaki tüm farklılıklara bakın.
 
-![Extension vs. App *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_comparison.png)
+![Uzantı ile Uygulama *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_comparison.png)
 
 `1` – tarayıcı kısıtlamaları dahilinde ve yalnızca yüklü olduğu tarayıcıda;
 

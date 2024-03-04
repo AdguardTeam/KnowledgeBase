@@ -51,7 +51,7 @@ sidebar_position: 10
 
 :::
 
-1. [Установите и настройте](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; На Windows владельцам **Samsung** может потребоваться установить [эту утилиту](https://developer.samsung.com/mobile/android-usb-driver.html).
+1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
 
 1. Подключите устройство с помощью кабеля USB **** к компьютеру или ноутбуку, на котором вы установили **ADB**;
 
@@ -85,7 +85,7 @@ sidebar_position: 10
 - Откройте **Настройки**;
 - Нажмите **Расширенные**;
 - Прокрутите вниз и нажмите **Dual Messenger**;
-- Отключите **Dual Messenger** для всех приложений;
+- Disable the **Dual messenger** for all apps;
 - Заблокируйте устройство на 5 минут;
 - Разблокируйте экран и повторите попытку создания VPN-профиля.
 
@@ -94,5 +94,5 @@ sidebar_position: 10
 - Откройте **Настройки**;
 - Выберите вкладку **Основные**;
 - Прокрутите вниз и нажмите **Dual App**;
-- Удалите все приложения из списка;
+- Remove all apps from the list;
 - Перезагрузите устройство.

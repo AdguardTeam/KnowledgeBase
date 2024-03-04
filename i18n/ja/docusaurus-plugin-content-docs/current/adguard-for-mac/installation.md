@@ -99,7 +99,7 @@ AdGuardアプリを使用するにはmacOS管理者アカウントのパスワ�
 
     ![アクティビティモニタを実行する](https://cdn.adtidy.org/content/kb/ad_blocker/mac/22.jpg)
 
-1. ユーザーで実行されているプロセス（ルートで実行されているものではないほう）を停止します。 そうするにはプロセスをクリックして、左上の「X」をクリックしてください。 表示されたダイアログで確認してください。
+1. ユーザーで実行されているプロセス（ルートで実行されているものではないほう）を停止します。 そうするにはプロセスをクリックして、左上の「X」をクリックしてください。 Confirm the action in the dialogue window.
 
     ![確認](https://cdn.adtidy.org/content/kb/ad_blocker/mac/33.jpg)
 

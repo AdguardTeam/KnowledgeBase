@@ -157,11 +157,11 @@ Odstraní z dotazů parametry Encrypted Client Hello.
 
 `stealth.antidpi.http.split.fragment.size`
 
-Upraví velikost fragmentace požadavků HTTP. Povolené hodnoty: 1–1500. Pokud je zadána neplatná velikost, systém použije výchozí hodnotu.
+Upraví velikost fragmentace požadavků HTTP. Platné hodnoty: 1–1500. Pokud je zadána neplatná velikost, systém použije výchozí hodnotu.
 
 `stealth.antidpi.clienthello.split.fragment.size`
 
-Tato možnost určuje velikost fragmentace TCP paketů, což pomáhá vyhnout se hluboké kontrole paketů. Povolené hodnoty: 1–1500. Pokud je zadána neplatná velikost, systém použije výchozí hodnotu.
+Tato možnost určuje velikost fragmentace TCP paketů, což pomáhá vyhnout se hluboké kontrole paketů. Platné hodnoty: 1–1500. Pokud je zadána neplatná velikost, systém použije výchozí hodnotu.
 
 `stealth.antidpi.http.space.juggling`
 

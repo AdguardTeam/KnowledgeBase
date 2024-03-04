@@ -32,4 +32,4 @@ V projektu *AdGuard Websites* je situace jiná. Jazyky lze na web přidat, i kdy
 
 Přidávání nových i aktualizace stávajících řetězců v těchto souborech vyžaduje zvláštní pozornost překladatelů a korektorů projektu.
 
-Kromě webových stránek je v projektu AdGuard Websites k dispozici soubor pro překlad [transakčních e-mailů](https://crowdin.com/project/adguard-websites/de#/emails). Nově přidané řetězce v tomto souboru mají také vysokou prioritu překladu.
+Kromě webových stránek je v projektu AdGuard Websites k dispozici soubor pro překlad [transakčních e-mailů](https://crowdin.com/project/adguard-websites/en#/emails). Nově přidané řetězce v tomto souboru mají také vysokou prioritu překladu.

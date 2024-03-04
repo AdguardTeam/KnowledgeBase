@@ -37,9 +37,9 @@ AdGuard for Android アプリ →「*統計*」（画面下左から3番目の�
 
     *radio.active* = モバイルデータ通信によって追加の100-300mAが消費（mAh）される。
 
-    *cpu.active* = CPU作動によって追加の100-200mAが消費（mAh）される。
+    *cpu.active=* 100-200mA additional consumption in mAh caused by CPU load.
 
-1. AdGuard単体ではほとんど通信量を消費しないので、バッテリー消費を評価するために、「モバイル/WiFiパケット」を取り除き、「CPU」に基づいて見てみましょう。
+1. AdGuard by itself almost doesn't consume any traffic, so for the sake of evaluating power consumption let's get rid of 'Mobile/Wi-Fi packets' and stick to 'CPU'.
 
     消費量の計算式:
 

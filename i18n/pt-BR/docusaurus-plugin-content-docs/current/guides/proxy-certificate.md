@@ -7,7 +7,7 @@ Os aplicativos AdGuard para desktop (AdGuard para Windows e AdGuard para Mac) po
 
 :::note
 
-These devices must be in the same network as the PC or Mac on which AdGuard is installed.
+Esses dispositivos devem estar na mesma rede do PC ou Mac no qual o AdGuard está instalado.
 
 :::
 
@@ -21,17 +21,17 @@ Dependendo do sistema operacional do seu dispositivo (Windows/Mac/Android/iOS), 
 
 1. Anote o endereço IP do seu computador desktop com o AdGuard instalado.
 
-2. Make sure the AdGuard protection is enabled. Em seguida, marque a caixa **Use AdGuard como um proxy HTTP** na aba **Rede** de suas configurações.
+2. Verifique se a proteção do AdGuard está ativada. Em seguida, marque a caixa **Use AdGuard como um proxy HTTP** na aba **Rede** de suas configurações.
 
 3. No mesmo dispositivo com o AdGuard, siga este link usando qualquer navegador: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
 4. Clique no botão **Baixar**.
 
-5. Transfira o arquivo **cert.cer** baixado para o dispositivo cujo tráfego você deseja rotear através do AdGuard.
+5. Transfira o arquivo baixado **cert.cer** para o dispositivo cujo tráfego você deseja rotear por meio do AdGuard.
 
 6. Nesse dispositivo, pressione o botão **Win**, digite `Gerenciar certificados de computador` e pressione **Enter**.
 
-7. Na página *Certificados - Computador Local*, encontrar a pasta *Certificação de Raiz Fidedigna* → *Certificados*.
+7. Na página *Certificados - Computador Local*, encontrar a pasta *Autoridades de certificação root confiáveis* → *Certificados*.
 
 8. Clique com o botão direito do mouse na pasta *Certificados* e clique em **Todas as tarefas** → **Importar**.
 
@@ -65,13 +65,13 @@ Dependendo do sistema operacional do seu dispositivo (Windows/Mac/Android/iOS), 
 
 1. Anote o endereço IP do seu computador desktop com o AdGuard instalado.
 
-2. Make sure the AdGuard protection is enabled. Em seguida, vá para **Configurações** → **Rede** → **Proxy HTTP** e marque a caixa **Usar AdGuard como proxy HTTP**.
+2. Verifique se a proteção do AdGuard está ativada. Em seguida, vá para **Configurações** → **Rede** → **Proxy HTTP** e marque a caixa **Usar AdGuard como proxy HTTP**.
 
-3. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+3. No computador com AdGuard, siga este link usando um navegador: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
 4. Clique no botão **Baixar**.
 
-5. Transfira o arquivo **cert.cer** baixado para o dispositivo cujo tráfego você deseja rotear através do AdGuard.
+5. Transfira o arquivo baixado **cert.cer** para o dispositivo cujo tráfego você deseja rotear por meio do AdGuard.
 
 6. Clique duas vezes no arquivo de certificado baixado.
 
@@ -97,13 +97,13 @@ Dependendo do sistema operacional do seu dispositivo (Windows/Mac/Android/iOS), 
 
 1. Anote o endereço IP do seu computador desktop com o AdGuard instalado.
 
-2. Make sure the AdGuard protection is enabled. Em seguida, marque a caixa **Use AdGuard como um proxy HTTP** na aba **Rede** de suas configurações.
+2. Verifique se a proteção do AdGuard está ativada. Em seguida, marque a caixa **Use AdGuard como um proxy HTTP** na aba **Rede** de suas configurações.
 
-3. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+3. No computador com AdGuard, siga este link usando um navegador: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
 4. Clique no botão **Baixar**.
 
-5. Transfira o arquivo **cert.cer** baixado para o dispositivo cujo tráfego você deseja rotear através do AdGuard.
+5. Transfira o arquivo baixado **cert.cer** para o dispositivo cujo tráfego você deseja rotear por meio do AdGuard.
 
 6. Localize e toque no certificado **cert.cer** baixado anteriormente para abrir o arquivo.
 
@@ -117,13 +117,13 @@ Dependendo do sistema operacional do seu dispositivo (Windows/Mac/Android/iOS), 
 
 1. Anote o endereço IP do seu computador desktop com o AdGuard instalado.
 
-2. Make sure the AdGuard protection is enabled. Em seguida, marque a caixa **Use AdGuard como um proxy HTTP** na aba **Rede** de suas configurações.
+2. Verifique se a proteção do AdGuard está ativada. Em seguida, marque a caixa **Use AdGuard como um proxy HTTP** na aba **Rede** de suas configurações.
 
-3. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+3. No computador com AdGuard, siga este link usando um navegador: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
 4. Clique no botão **Baixar**.
 
-5. Transfira o arquivo **cert.cer** baixado para o dispositivo cujo tráfego você deseja rotear através do AdGuard.
+5. Transfira o arquivo baixado **cert.cer** para o dispositivo cujo tráfego você deseja rotear por meio do AdGuard.
 
 6. Abra **Definições** → **Segurança** → **Criptografia & Credenciais** → **Instalar um certificado**. Dispositivos Android não confiam em certificados por padrão, então haverá um aviso quando você escolher o **certificado CA**. Toque em **Instalar mesmo assim**.
 

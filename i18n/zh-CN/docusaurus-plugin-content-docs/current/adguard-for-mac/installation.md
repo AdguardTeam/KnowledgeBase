@@ -99,7 +99,7 @@ AdGuard 图标将出现在您的桌面上。 单击它打开安装应用程序�
 
     ![开启活动监视器](https://cdn.adtidy.org/content/kb/ad_blocker/mac/22.jpg)
 
-1. 退出在用户态下运行的进程（不是在 root 权限运行的）。 为了退出，请点击进程，然后在左上角点击 X。 在对话窗确认要退出。
+1. 退出在用户态下运行的进程（不是在 root 权限运行的）。 为了退出，请点击进程，然后在左上角点击 X。 Confirm the action in the dialogue window.
 
     ![确认](https://cdn.adtidy.org/content/kb/ad_blocker/mac/33.jpg)
 

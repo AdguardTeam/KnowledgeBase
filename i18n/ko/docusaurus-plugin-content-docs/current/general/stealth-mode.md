@@ -1,5 +1,5 @@
 ---
-title: Stealth Mode
+title: 스텔스 모드
 sidebar_position: 4
 ---
 

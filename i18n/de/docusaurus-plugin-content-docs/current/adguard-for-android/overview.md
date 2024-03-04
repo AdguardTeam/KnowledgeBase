@@ -1,17 +1,17 @@
 ---
-title: Features overview
+title: Funktionsübersicht
 sidebar_position: 1
 ---
 
 :::info
 
-Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
 
 :::
 
 :::note Haftungsausschluss
 
-AdGuard for Android is not to be confused with AdGuard Content Blocker. AdGuard Content Blocker is an app available in Google Play that has truncated functionality to meet restrictions imposed by the store. AdGuard for Android, on the contrary, is a powerful application to block ads, manage applications, and perform other roles that will be described in this article. The only place it can be downloaded from is [the AdGuard website](https://adguard.com/adguard-android/overview.html).
+AdGuard for Android is not to be confused with AdGuard Content Blocker. AdGuard Content Blocker is an app available in Google Play that has truncated functionality to meet restrictions imposed by the store. AdGuard for Android, on the contrary, is a powerful app to block ads, manage applications, and perform other roles that will be described in this article. The only place it can be downloaded from is [the AdGuard website](https://adguard.com/adguard-android/overview.html).
 
 :::
 
@@ -19,17 +19,17 @@ AdGuard for Android is not to be confused with AdGuard Content Blocker. AdGuard 
 
 This screen combines all features of AdGuard’s protection:
 
-- Ad blocking
+- Werbeblockierung
 - Tracking protection
 - Annoyance blocking
-- DNS protection
+- DNS-Schutz
 - Firewall
 - Browsing Security
 - Integration with AdGuard VPN
 
 More on each feature below.
 
-### Ad blocking
+### Werbeblockierung
 
 The feature blocks ads by applying ad-blocking and language-specific filters. To learn about the mechanism of ad blocking, you can read a [dedicated article](/general/ad-filtering/how-ad-blocking-works).
 
@@ -45,66 +45,73 @@ Basic protection effectively blocks ads on most websites. For more customized ad
 
 ### Tracking protection
 
-*Tracking protection* (formerly *Stealth Mode*) prevents websites from gathering information about you, such as your IP addresses, information about your browser and operating system, screen resolution, and the page you came or were redirected from. It can also block cookies that websites use to mark the browser and save your personal settings, user preferences, or recognize you upon your next visit.
+*Tracking protection* (formerly known as *Stealth Mode*) prevents websites from collecting information about you, such as your IP addresses, information about your browser and operating system, screen resolution, and the page you came or were redirected from. It can also block cookies that websites use to mark your browser, save your personal settings and user preferences, or recognize you on your next visit.
 
 ![Tracking protection *mobile_border](https://cdn.adtidy.org/blog/new/y5fuztracking_protection.png)
 
-There are three pre-configured protection levels. Here’s what features they have enabled:
+*Tracking protection* has three pre-configured levels of privacy protection (*Standard*, *High*, and *Extreme*) and one user-defined level (*Custom*). *Custom* allows you to set your own tracking protection parameters. [Learn more about other Tracking protection settings](/general/stealth-mode)
 
- 1. **Standard**
+Here are the active features of the pre-configured levels:
 
-    a. *Block trackers*. This setting protects against online counters and web analytics tools using AdGuard’s Tracking Protection filter
+1. **Standard**
 
-    b. *Ask websites not to track you*. This setting sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
+    a. *Block trackers*. This feature uses *AdGuard Tracking Protection filter* to protect you from online counters and web analytics tools
 
-    c. *Remove X-Client-Data header*. This setting prevents Google Chrome from sending its version and modification info to Google domains (including Double Click and Google Analytics)
+    b. *Ask websites not to track you*. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
 
- 2. **High**
+    c. *Remove X-Client-Data header*. This feature prevents Google Chrome from sending information about its version and modifications to Google domains (including DoubleClick and Google Analytics)
 
-    a. *Block trackers*
+2. **High**
 
-    b. *Remove tracking parameters from URLs*. This setting strips tracking parameters like `utm_*` and `fb_ref` from page URLs using the AdGuard URL Tracking filter
+    a. *Block trackers*. This feature uses *AdGuard Tracking Protection filter* to protect you from online counters and web analytics tools
 
-    c. *Hide your search queries*
+    b. *Remove tracking parameters from URLs*. This feature uses *AdGuard URL Tracking filter* to remove tracking parameters, such as `utm_*` and `fb_ref`, from page URLs
 
-    d. *Ask websites not to track you*
+    c. *Hide your search queries*. This feature hides queries for websites visited from a search engine
 
-    e. *Self-destruction of third-party cookies*. This setting limits the time to live of third-party cookies to 180 min
+    d. *Ask websites not to track you*. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
+
+    e. *Self-destruction of third-party cookies*. This feature limits the lifetime of third-party cookies to 180 minutes
 
     :::caution
 
-    This setting deletes all third-party cookies, including the information of your logins through social networks or other third-party services. You may have to periodically re-log in to some websites and face other cookie-related issues. To block only tracking cookies, use the *Standard* protection level.
+    This feature deletes all third-party cookies after their forced expiration. This includes your logins through social networks or other third-party services. You may need to re-log in to some websites periodically or experience other cookie-related issues. To block only tracking cookies, use the *Standard* protection level.
 
 
 :::
 
-    f. *Remove X-Client-Data header*
+    f. *Remove X-Client-Data header*. This feature prevents Google Chrome from sending its version and modifications information to Google domains (including DoubleClick and Google Analytics)
 
- 3. **Ultimate**
+3. **Extreme** (formerly known as *Ultimate*)
 
-    a. *Block trackers*
+    a. *Block trackers*. This feature uses *AdGuard Tracking Protection filter* to protect you from online counters and web analytics tools
 
-    b. *Remove tracking parameters from URLs*
+    b. *Remove tracking parameters from URLs*. This feature uses *AdGuard URL Tracking filter* to remove tracking parameters, such as `utm_*` and `fb_ref`, from page URLs
 
-    c. *Hide your search queries*
+    c. *Hide your search queries*. This feature hides queries for websites visited from a search engine
 
-    d. *Ask websites not to track you*
+    d. *Ask websites not to track you*. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
 
-    e. *Self-destruction of third-party cookies*
+    e. *Self-destruction of third-party cookies*. This feature limits the lifetime of third-party cookies to 180 minutes
 
-    f. *Block WebRTC*. This setting blocks WebRTC, a technology that allows direct streaming of data between browsers and apps and can let others know your true IP address, even if you use a proxy or VPN
+    :::caution
 
-    g. *Block Push API*. This setting prevents websites from sending you notifications, regardless of the activity status of your browser
+    This feature deletes all third-party cookies after their forced expiration. This includes your logins through social networks or other third-party services. You may need to re-log in to some websites periodically or experience other cookie-related issues. To block only tracking cookies, use the *Standard* protection level.
 
-    h. *Block Location API*. This setting prevents browsers from detecting your GPS data
 
-    i. *Hide Referer from third parties*. This setting hides the HTTP header that contains the URL of the initial page and changes it into the default or the specified one. You can set your custom referer in the respective field
+:::
 
-    j. *Hide your User-Agent*. This setting removes identifying information from the User-Agent header that usually includes the name and version of the browser, the operating system, and language settings
+    f. *Block WebRTC*. This feature blocks WebRTC, a known vulnerability that can leak your real IP address even if you use a proxy or VPN
 
-    k. *Remove X-Client-Data header*
+    g. *Block Push API*. This feature prevents your browsers from receiving push messages from servers
 
-You can fine-tune Tracking protection by selecting the *Custom* protection level. [Learn more about other Tracking protection settings](/general/stealth-mode)
+    h. *Block Location API*. This feature prevents browsers from accessing your GPS data and determining your location
+
+    i. *Hide Referer from third parties*. This feature prevents third parties from knowing which websites you visit. It hides the HTTP header that contains the URL of the initial page and replaces it with a default or custom one that you can set
+
+    j. *Hide your User-Agent*. This feature removes identifying information from the User-Agent header, which typically includes the name and version of the browser, the operating system, and language settings
+
+    k. *Remove X-Client-Data header*. This feature prevents Google Chrome from sending its version and modifications information to Google domains (including DoubleClick and Google Analytics)
 
 ### Annoyance blocking
 
@@ -112,7 +119,7 @@ This feature is based on AdGuard's annoyance filters and allows you to block pop
 
 ![Annoyance blocking *mobile_border](https://cdn.adtidy.org/blog/new/lwujvannoyance.png)
 
-### DNS protection
+### DNS-Schutz
 
 *DNS protection* allows you to filter DNS requests with the help of a selected DNS server, DNS filters, and user rules:
 
@@ -136,7 +143,7 @@ In this section, you can select a DNS server to resolve DNS requests, block ads 
 
  By default, *Automatic DNS* is selected. It sets a DNS server based on your AdGuard and device settings. If you have integration with AdGuard VPN or another SOCKS5 proxy enabled, it connects to *AdGuard DNS Non-filtering* or any other server you specify. In all other cases, it connects to the DNS server selected in your device settings.
 
-#### DNS filters
+#### DNS-Filter
 
 This section allows you to add custom DNS filters and DNS filtering rules. You can find more filters at [filterlists.com](https://filterlists.com/).
 
@@ -186,13 +193,13 @@ If you see an app that shouldn't be using the Internet at all or an app that you
 
 Browsing Security protects you from visiting phishing and malicious websites. It also warns you about potential malware.
 
-![Browsing Security *mobile_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
+![Internetsicherheit *mobile_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
 
 If you're about to visit a dangerous website, Browsing Security will show you the following warning:
 
 ![Browsing Security warning *mobile_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
 
-> Please note that AdGuard for Android is not an antivirus program. It neither stops viruses from downloading nor deletes already downloaded ones. To fully protect your device, we recommend using AdGuard in conjunction with an antivirus tool.
+> Please note that AdGuard for Android is not an antivirus program. It neither stops viruses from downloading nor deletes already downloaded ones. To fully protect your device, we recommend using AdGuard in conjunction with an antivirus.
 
 Browsing Security is safe: AdGuard does not know what websites you visit. It uses hash prefixes instead of URLs to check website security.
 
@@ -235,7 +242,7 @@ Problematic apps, such as Download Manager, radio, system apps with UID 1000 and
 
 To ensure proper operation of all apps installed on your device, we strongly recommend that you route only problem-free apps through AdGuard. You can see the full list of apps not recommended for filtering in *Settings* → *General* → *Advanced* → *Low-level settings* → *Protection* → *Excluded apps*.
 
-## Statistics
+## Statistiken
 
 This feature gives you a complete picture of what is happening with the traffic on your device: how many requests are being sent and to which companies, how much data is being uploaded and downloaded, what requests are being blocked, and more.
 
@@ -253,7 +260,7 @@ You can tap a request to view its details and add a blocking or unblocking rule.
 
 ### Data usage
 
-This section shows the amount of downloaded, uploaded, and saved traffic for the selected time period and data type. Tap *saved*, *uploaded*, or *downloaded* to view the graph of data usage over time.
+This section shows the amount of downloaded and uploaded data and saved traffic for the selected time period and data type. Tap *saved*, *uploaded*, or *downloaded* to view the graph of data usage over time.
 
 ### Apps
 
@@ -271,13 +278,13 @@ This section displays companies that your device reaches out to. What does it me
 
 ### DNS statistics
 
-This section shows data about the requests handled by *DNS protection*. You can see the total number of requests sent and how many were blocked by AdGuard in figures and graphs. You'll also find statistics on the amount of traffic saved, downloaded, and uploaded.
+This section shows data about the requests handled by *DNS protection*. You can see the total number of requests sent and how many were blocked by AdGuard in figures and graphs. You'll also find statistics on the amount of traffic saved and data downloaded and uploaded.
 
 ### Battery usage
 
 This section displays statistics on the device resources used by AdGuard during the last 24 hours. The data may differ from your device settings. This happens because the system attributes the traffic of filtered apps to AdGuard. Thus, the device shows that AdGuard consumes more resources than it actually does. [Read more about battery and traffic consumption issues](/adguard-for-android/solving-problems/battery/)
 
-## Settings
+## Einstellungen
 
 ### Allgemein
 
@@ -301,7 +308,7 @@ Under *App and filter updates*, you can configure automatic filter updates and s
 
 The *Low-level settings* section is for expert users. [Read more about low-level settings](/adguard-for-android/solving-problems/low-level-settings/)
 
-![Low-level settings *mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
+![Low-Level-Einstellungen *mobile_border](https://cdn.adtidy.org/blog/new/n9ztplow_level.png)
 
 ### Filtering
 
@@ -364,7 +371,7 @@ The *Local VPN* mode doesn't allow AdGuard to be used simultaneously with other 
 
 - *Manual proxy* involves setting up a proxy server on a specific port, which can then be configured in Wi-Fi settings. This mode requires root access for Android 10 and above.
 
-#### Filters
+#### Filter
 
 AdGuard blocks ads, trackers, and annoyances by applying rules from its filters. Most features from the *Protection* section are powered by [AdGuard filters](/general/ad-filtering/adguard-filters/#adguard-filters). If you enable *Basic protection*, it will automatically turn on the AdGuard Base filter and AdGuard Mobile Ads filter. And vice versa: if you turn off both filters, *Basic protection* will also be disabled.
 
@@ -423,7 +430,7 @@ GitHub is an alternative way to report bugs and suggest new features. [Instructi
 
 ## Free vs full version
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xNOeHpZgjFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xNOeHpZgjFo" title="YouTube-Videoplayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 AdGuard for Android has a free and a paid version. Paid features extend AdGuard's capabilities:
 
@@ -450,10 +457,10 @@ You can get access to these features by [purchasing a license](https://adguard.c
 Due to security measures of the Android OS, some AdGuard features are only available on rooted devices. Here's the list of them:
 
 - **HTTPS filtering in most apps** requires [installing a CA certificate into the system store](#security-certificates), as most apps do not trust certificates in the user store. Installing a certificate into the system store is only possible on rooted devices
-- The [**Automatic proxy** routing mode](#routing-mode) requires root access due to Android's limitations on system-wide traffic filtering
+- The [**Automatic proxy** routing mode](#routing-mode) requires root access due to Android's restrictions on system-wide traffic filtering
 - The **Manual proxy** routing mode requires root access on Android 10 and above as it's no longer possible to determine the name of the app associated with a connection filtered by AdGuard
 
-## Assistant
+## Assistent
 
 Assistant is a handy tool to quickly change app or website settings and view statistics without launching the AdGuard app.
 

@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-Dieser Artikel behandelt AdGuard für Mac, einen multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Dieser Artikel behandelt AdGuard für Mac, einen multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie die App funktioniert, [laden Sie AdGuard für Mac herunter](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -67,7 +67,7 @@ Ein weiterer wichtiger Bestandteil des Werbeblocker-Moduls sind seine Benutzerre
 
 Die DNS-Filterung ist eine der nützlichsten Funktionen, dank derer Ihr gesamter DNS-Verkehr verschlüsselt wird. Wenn Sie den Standard-DNS-Server Ihres Internetanbieters verwenden, ist Ihr DNS-Datenverkehr wahrscheinlich nicht verschlüsselt und anfällig für Snooping und Hijacking.
 
-Im DNS-Panel können Sie die DNS-Server von bekannten DNS-Anbietern auswählen oder sogar benutzerdefinierte DNS-Server hinzufügen. Also you can add domains to DNS blocklist or allowlist and add complicated rules using DNS rule syntax. Schließlich können Sie [DNS-Filter Ihrer Wahl hinzufügen](https://filterlists.com).
+Im DNS-Panel können Sie die DNS-Server von bekannten DNS-Anbietern auswählen oder sogar benutzerdefinierte DNS-Server hinzufügen. Sie können auch Domains zur DNS-Blockliste oder -Freigabeliste hinzufügen und komplizierte Regeln mithilfe der DNS-Regelsyntax hinzufügen. Schließlich können Sie [DNS-Filter Ihrer Wahl hinzufügen](https://filterlists.com).
 
 ## Privatsphäre
 
@@ -85,7 +85,7 @@ Als nächstes haben wir das Sicherheitsfenster, in dem sich ein Modul befindet, 
 
 :::note
 
-AdGuard is not an antivirus, but an entirely different program. Es zeigt Ihnen eine Warnung, wenn Sie im Begriff sind, auf eine infizierte Domain zu gehen, aber es kann Sie nicht daran hindern, etwas Verdächtiges herunterzuladen oder Ihnen helfen, mit bereits vorhandenen Viren fertig zu werden. Phishing ist ein weit verbreiteter Internetbetrug, der darauf abzielt, persönliche Daten (Passwörter, Bankkontodaten usw.) zu stehlen. Es wird mithilfe gefälschter Websites durchgeführt, die beliebte Websites oder echte Dienste wie Webshops oder soziale Netzwerke nachahmen. Viele Phishing-Websites haben URLs, die sich nur in wenigen Symbolen von den echten unterscheiden, um Sie abzuschrecken. Wenn ein Benutzer seine Daten auf einer solchen Website eingibt, landen sie definitiv in den falschen Händen.
+AdGuard ist keine Antiviren-Software, sondern ein völlig anderes Programm. Es zeigt Ihnen eine Warnung, wenn Sie im Begriff sind, auf eine infizierte Domain zu gehen, aber es kann Sie nicht daran hindern, etwas Verdächtiges herunterzuladen oder Ihnen helfen, mit bereits vorhandenen Viren fertig zu werden. Phishing ist ein weit verbreiteter Internetbetrug, der darauf abzielt, persönliche Daten (Passwörter, Bankkontodaten usw.) zu stehlen. Es wird mithilfe gefälschter Websites durchgeführt, die beliebte Websites oder echte Dienste wie Webshops oder soziale Netzwerke nachahmen. Viele Phishing-Websites haben URLs, die sich nur in wenigen Symbolen von den echten unterscheiden, um Sie abzuschrecken. Wenn ein Benutzer seine Daten auf einer solchen Website eingibt, landen sie definitiv in den falschen Händen.
 
 :::
 
@@ -103,7 +103,7 @@ Die Hauptfunktion des AdGuard Browser-Assistenten besteht darin, die Filterung d
 
 ![Pop-up-Menü des Assistenten *mobil](https://cdn.adtidy.org/content/kb/ad_blocker/mac/safari_assistant_pop-up_menu.jpg)
 
-Bei der Erstinstallation von AdGuard (während des Einführungsprozesses) werden Sie aufgefordert, den Browser-Assistenten für Ihren Standardbrowser zu installieren. If you missed it, you can [download it for any browser](https://adguard.com/adguard-assistant/overview.html) at any time.
+Bei der Erstinstallation von AdGuard (während des Einführungsprozesses) werden Sie aufgefordert, den Browser-Assistenten für Ihren Standardbrowser zu installieren. Falls Sie es verpasst haben, können Sie es [jederzeit für jeden Browser](https://adguard.com/adguard-assistant/overview.html) herunterladen.
 
 ## Erweiterungen
 
@@ -115,7 +115,7 @@ Erweiterungen sind kleine Programme, die genau das tun, was ihr Name andeutet �
 
 :::note
 
-This version of Assistant is legacy and there is no point in using it on new systems, since it has been replaced with the full-fledged Browser Assistant. Der ältere Assistent kann jedoch hilfreich sein, wenn es keine Browser-Assistent-Erweiterung für Ihren Browser gibt.
+Diese Version des Assistenten ist veraltet und es macht keinen Sinn, sie auf einem neuen System zu verwenden, da sie durch den vollwertigen Browser-Assistenten ersetzt worden ist. Der ältere Assistent kann jedoch hilfreich sein, wenn es keine Browser-Assistent-Erweiterung für Ihren Browser gibt.
 
 :::
 

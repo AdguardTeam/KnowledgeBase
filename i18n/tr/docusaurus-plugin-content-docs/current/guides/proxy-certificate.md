@@ -27,11 +27,11 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 4. **İndir** düğmesine tıklayın.
 
-5. İndirdiğiniz **cert.cer** dosyasını AdGuard üzerinden trafiği yönlendirmek istediğiniz cihaza aktarın.
+5. Transfer the downloaded **cert.cer** file to the device whose traffic you want to route through AdGuard.
 
 6. Bu cihazda **Win** düğmesine basın, `Bilgisayar sertifikalarını yönetin` yazın ve **Enter** düğmesine basın.
 
-7. On the *Certificates - Local Computer* page, find the *Trusted Root Certification* → *Certificates* folder.
+7. On the *Certificates - Local Computer* page, find the *Trusted Root Certification Authorities* → *Certificates* folder.
 
 8. *Sertifikalar* klasörüne sağ tıklayın ve **Tüm Görevler** → **Al** öğesine tıklayın.
 
@@ -57,7 +57,7 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 19. Click **Set up** in the *Use a proxy server* tab.
 
-20. Turn the toggle on. For **Proxy IP address**, enter the noted IP address of your desktop computer (step 1). For **Port**, enter the port chosen in the network settings of the desktop AdGuard app.
+20. Turn the toggle on. For **Proxy IP address**, enter the noted IP address of your desktop computer (step 1). **Bağlantı noktası** için, masaüstü AdGuard uygulamasının ağ ayarlarında seçilen bağlantı noktasını girin.
 
 21. **Kaydet** öğesine tıklayın.
 
@@ -71,7 +71,7 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 4. **İndir** düğmesine tıklayın.
 
-5. İndirdiğiniz **cert.cer** dosyasını AdGuard üzerinden trafiği yönlendirmek istediğiniz cihaza aktarın.
+5. Transfer the downloaded **cert.cer** file to the device whose traffic you want to route through AdGuard.
 
 6. İndirilen sertifika dosyasına çift tıklayın.
 
@@ -91,7 +91,7 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 14. Click **Details...** and navigate to the **Proxies** tab.
 
-15. Tick two checkboxes: *Web proxy (HTTP)* and *Secure web proxy (HTTPS)*. In the **Server** field, enter the noted IP address of your computer (step 1). In the **Port** field, enter the port chosen in the network settings of the AdGuard desktop app.
+15. Check two checkboxes: *Web proxy (HTTP)* and *Secure web proxy (HTTPS)*. In the **Server** field, enter the noted IP address of your computer (step 1). In the **Port** field, enter the port chosen in the network settings of the AdGuard desktop app.
 
 ### Android {#android}
 
@@ -103,9 +103,9 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 4. **İndir** düğmesine tıklayın.
 
-5. İndirdiğiniz **cert.cer** dosyasını AdGuard üzerinden trafiği yönlendirmek istediğiniz cihaza aktarın.
+5. Transfer the downloaded **cert.cer** file to the device whose traffic you want to route through AdGuard.
 
-6. Locate and tap the previously downloaded **cert.cer** certificate to open the file.
+6. Dosyayı açmak için önceden indirilmiş **cert.cer** sertifikasını bulun ve dokunun.
 
 7. Bazı telefonlarda, cihaz parolanızı girmeniz istenebilir. Bunu yapın, ardından **Tamam ** öğesine basın. Sertifika şimdi yüklenmiştir.
 
@@ -123,11 +123,11 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 4. **İndir** düğmesine tıklayın.
 
-5. İndirdiğiniz **cert.cer** dosyasını AdGuard üzerinden trafiği yönlendirmek istediğiniz cihaza aktarın.
+5. Transfer the downloaded **cert.cer** file to the device whose traffic you want to route through AdGuard.
 
 6. Open **Settings** → **Security** → **Encryption & Credentials** → **Install a certificate**. Android devices do not trust certificates by default so there will be a warning when you choose **CA certificate**. **Yine de yükle** öğesine dokunun.
 
-7. Open **Settings** → **Profile Donwloaded** and tap **Install** in the top right corner. Şifrenizi girin ve yüklemeyi onaylayın. Tap **Done**.
+7. Open **Settings** → **Profile Downloaded** and tap **Install** in the top right corner. Şifrenizi girin ve yüklemeyi onaylayın. Tap **Done**.
 
 8. Go to **Settings** → **General** → **About** → **Certificate Trust Settings**. Enable the switch beside *Adguard Personal CA*. Sertifika şimdi yüklenmiştir.
 

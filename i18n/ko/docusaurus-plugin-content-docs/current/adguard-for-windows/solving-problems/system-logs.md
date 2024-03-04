@@ -27,7 +27,7 @@ To analyze and diagnose different problems that may potentially arise, the AdGua
 
     - Right-click *Application* and in the drop-down menu select *Save All Events As...*
 
-    - 이름과 저장할 위치를 선택하고 *저장*을 클릭합니다. 그다음에는 *언어 설정에 대한 정보 표시*를 선택합니다. *한국어* 옆의 확인란을 선택하고 *확인*을 클릭합니다.
+    - 이름과 저장할 위치를 선택하고 *저장*을 클릭합니다. 그다음에는 *언어 설정에 대한 정보 표시*를 선택합니다. You need to check the checkbox next to *English*. *확인*을 클릭합니다.
 
     - Open *System*: *Event Viewer (Local)* → *Windows Logs* → *System*.
 

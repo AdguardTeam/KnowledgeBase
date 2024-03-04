@@ -21,7 +21,7 @@ sidebar_position: 3
 
 ### Браузерное расширение AdGuard
 
-Браузерные расширения работают иначе, используя так называемый [*Lookup API*](https://github.com/AdguardTeam/AdguardForAndroid/issues/162#issue-115487668) для проверки адресов страниц, которые вы посещаете. Каждый раз, когда вы посещаете какой-либо сайт, ваш локальный клиент обменивается информацией с нашим внутренним сервером в виде хешей и хеш-префиксов. Тем, кому этот процесс интересен на более глубоком уровне, будет полезна ссылка выше. В результате этого обмена локальный клиент определяет, входит ли сайт в базу потенциально опасных сайтов.
+Браузерные расширения работают иначе, используя так называемый [*Lookup API*](https://github.com/AdguardTeam/AdguardForAndroid/issues/162#issue-115487668) для проверки адресов страниц, которые вы посещаете. Каждый раз, когда вы посещаете какой-либо сайт, ваш локальный клиент обменивается информацией с нашим внутренним сервером в виде хешей и хеш-префиксов. Based on this exchange, the local client determines whether or not the site is listed in the potentially dangerous sites database. Тем, кому этот процесс интересен на более глубоком уровне, будет полезна ссылка выше.
 
 Обращаем ваше внимание на то, что мы никогда не получаем никакой информации, которая позволила бы нам определить, какие сайты вы посещаете, и каким-либо образом использовать эти данные.
 
@@ -41,17 +41,17 @@ sidebar_position: 3
 
 ### Фильтр вредоносных сайтов
 
-Фильтр содержит ссылки на страницы, которые приводят к исполнению вредоносного кода. Исполнение может инициировать утечку или потерю данных, а также причинить вред устройству пользователя. Этот процесс может быть санкционированным (например, при скачивании и запуске исполняемого файла) или несанкционированным (например, при атаке шпионским программным обеспечением).
+This filter contains links to pages that could execute malicious code, leading to potential leaks, data loss, or damage to a user’s device. Code execution can be authorized (for example, when downloading and running the executable file) or unauthorized (for example, when being attacked with spyware).
 
-## Как мы пополняем фильтры
+## How do we add new addresses to our filters?
 
-Наши фильтры постоянно пополняются новыми адресами. Так как большая часть работы автоматизирована, вы можете быть уверены, что новые фишинговые и вредоносные адреса попадут в нашу базу максимально быстро.
+Most of the work is automated, so you can be sure that new malware and phishing addresses are added to our database as quickly as possible.
 
 ### Сообщество Защиты от фишинга AdGuard
 
-Важный инструмент для поддержания фильтрации на высоком уровне — *сообщество Защиты от фишинга*. Любой пользователь наших продуктов, будь то AdGuard для Windows или браузерное расширение, может стать участником сообщества и помогать нам в составлении фильтров AdGuard.
+An important tool for maintaining the highest level of filtering is the *AdGuard Browsing Security Community*. Любой пользователь наших продуктов, будь то AdGuard для Windows или браузерное расширение, может стать участником сообщества и помогать нам в составлении фильтров AdGuard.
 
-На рисунке мы изобразили алгоритм работы сообщества:
+In the image below, you can see an algorithm of how Browsing Security Community works:
 
 ![Как работает сообщество Защиты от фишинга](https://cdn.adtidy.org/public/Adguard/En/Articles/browsing_security_community.png)
 

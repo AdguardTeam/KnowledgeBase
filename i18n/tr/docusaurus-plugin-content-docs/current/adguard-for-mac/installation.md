@@ -11,7 +11,7 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 ## Sistem gereksinimleri
 
-**Operating system version:** macOS 10.15 (64 bit) or higher
+**İşletim sistemi sürümü:** macOS 10.15 (64 bit) veya üstü
 
 **RAM:** en az 2 GB
 
@@ -99,7 +99,7 @@ Uygulamalar bölümüne gidin. Find AdGuard there, right-click it and choose **M
 
     ![Run Activity Monitor](https://cdn.adtidy.org/content/kb/ad_blocker/mac/22.jpg)
 
-1. Stop the process which is being run under the user (not the one run under root). To do so, click the process and then click X on the upper left. Confirm it in the dialogue window.
+1. Stop the process which is being run under the user (not the one run under root). To do so, click the process and then click X on the upper left. Confirm the action in the dialogue window.
 
     ![Confirm](https://cdn.adtidy.org/content/kb/ad_blocker/mac/33.jpg)
 

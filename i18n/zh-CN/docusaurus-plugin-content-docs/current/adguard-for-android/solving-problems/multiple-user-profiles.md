@@ -51,7 +51,7 @@ This approach is available starting from **AdGuard v3.5 nightly 6**. 如您仍�
 
 :::
 
-1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
 
 1. 使用 **USB 电缆**将您的设备连接至您已安装 **ADB** 的电脑或笔记本等设备上;
 
@@ -85,7 +85,7 @@ To enable this mode, open **AdGuard Settings** → **Network** → **Filtering m
 - 前往**设置**；
 - 点击**高级**功能；
 - 向下移动，点击**双 Messenger 账户**；
-- 禁用所有应用使用**应用分身**；
+- Disable the **Dual messenger** for all apps;
 - 锁定您的设备5分钟；
 - 解锁屏幕并重新试图创建 VPN 账号。
 
@@ -94,5 +94,5 @@ To enable this mode, open **AdGuard Settings** → **Network** → **Filtering m
 - 前往**设置**；
 - 选择**常规**标签钮；
 - 向下移动，点击**双开应用**；
-- 移除应用分身列表中所有的应用；
+- Remove all apps from the list;
 - 重启您的设备。

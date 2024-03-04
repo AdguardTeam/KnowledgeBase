@@ -125,7 +125,7 @@ sidebar_position: 1
 
 ## Главное меню расширения {#main-menu}
 
-На главную страницу расширения можно попасть, нажав на значок расширения на панели инструментов браузера.
+The extension's main page can be accessed by clicking the extension's icon on the toolbar of your browser.
 
 ![Главное меню *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
 

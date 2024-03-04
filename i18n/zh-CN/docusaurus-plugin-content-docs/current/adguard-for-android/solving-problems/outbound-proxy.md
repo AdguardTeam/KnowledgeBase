@@ -93,11 +93,11 @@ In this article we give examples of how to set up some of the most popular proxi
 
 1. 点击**「添加代理」**按钮并输入以下的数据：
 
-    | 字符串  | 数值                                                                             |
-    | ---- | ------------------------------------------------------------------------------ |
-    | 代理分类 | *SOCKS5*                                                                       |
-    | 代理主机 | *any server from [this list](https://support.nordvpn.com/Connectivity/Proxy/)* |
-    | 代理端口 | *1080*                                                                         |
+    | 字符串  | 数值                                                                                                                              |
+    | ---- | ------------------------------------------------------------------------------------------------------------------------------- |
+    | 代理分类 | *SOCKS5*                                                                                                                        |
+    | 代理主机 | *any server from [this list](https://support.nordvpn.com/hc/en-us/articles/20195967385745-NordVPN-proxy-setup-for-qBittorrent)* |
+    | 代理端口 | *1080*                                                                                                                          |
 
 1. For **Username** and **Password** fields, enter your NordVPN Username and Password.
 

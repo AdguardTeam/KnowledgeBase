@@ -37,7 +37,9 @@ AdGuard'ı Windows 7 yüklü bir bilgisayara kurmak istiyorsanız, .NET 4 İstem
 
 :::bilgi
 
-MSI'dan Windows için AdGuard'ı yüklediğinizde otomatik güncellemeler devre dışı bırakılır. If you want to allow updates for a user (which is not recommended because centralized updates will become impossible), set the value of the `AllowCheckUpdates` parameter for the `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` key to `YES` (case insensitive). In this case automatic updates will be allowed, any other value or no value for this parameter disables automatic updates.
+Windows için AdGuard v7.17 ile başlayarak, uygulamayı MSI'dan kurduğunuzda otomatik güncellemeler varsayılan olarak etkinleştirilir. Windows için AdGuard'ın merkezi olarak güncellenmesi için bir kullanıcı için güncellemeleri devre dışı bırakmanızı öneririz. Bunu yapmak için, aşağıdaki yolda bulunan ForbidCheckUpdates=Yes anahtarını ekleyin: HKEY_LOCAL_MACHINE\SOFTWARE\Adguard.
+
+Windows için AdGuard'ın eski sürümlerinde otomatik güncellemeler varsayılan olarak devre dışıdır. Bir kullanıcı için güncellemelere izin vermek için, `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` anahtarı için `AllowCheckUpdates` parametresinin değerini `YES` (büyük/küçük harfe duyarlı değil) olarak ayarlayın.
 
 :::not
 

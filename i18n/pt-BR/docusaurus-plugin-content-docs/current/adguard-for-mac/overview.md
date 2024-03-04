@@ -1,5 +1,5 @@
 ---
-title: Features overview
+title: Visão geral dos recursos
 sidebar_position: 1
 ---
 

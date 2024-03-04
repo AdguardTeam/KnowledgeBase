@@ -32,4 +32,4 @@ La situation est différente dans le projet *AdGuard Websites*. Des langues peuv
 
 Adding new strings as well as updating existing ones in these files requires special attention from the project translators and proofreaders.
 
-In addition to websites, there is a file for translating [transactional emails](https://crowdin.com/project/adguard-websites/de#/emails) in the AdGuard Websites project. Newly added strings in this file also have a high translation priority.
+In addition to websites, there is a file for translating [transactional emails](https://crowdin.com/project/adguard-websites/en#/emails) in the AdGuard Websites project. Newly added strings in this file also have a high translation priority.

@@ -1,29 +1,29 @@
 ---
-title: Features overview
+title: 기능 개요
 sidebar_position: 1
 ---
 
 :::info
 
-삼성 인터넷 브라우저 혹은 Yandex 브라우저만 안전하게 보호할 수 있는 AdGuard 콘텐츠 차단기에 대해 다룹니다. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+이 글은 삼성 인터넷 브라우저와 Yandex 브라우저만 보호하는 AdGuard 콘텐츠 차단기에 관한 글입니다. 기기 전체를 보호하려면 [AdGuard 앱을 다운로드하세요](https://agrd.io/download-kb-adblock).
 
 :::
 
-AdGuard has two Android apps: [AdGuard for Android](https://adguard.com/adguard-android/overview.html) and [AdGuard Content Blocker](https://adguard.com/adguard-content-blocker/overview.html). AdGuard for Android has a much wider range of functionality: it blocks ads, trackers, and annoyances in browsers and apps, uses filters as well as domain-level ad blocking, and supports user rules. AdGuard Content Blocker has a limited functionality.
+AdGuard에는 두 가지 안드로이드 앱이 있습니다: [Android용 AdGuard](https://adguard.com/adguard-android/overview.html) 및 [AdGuard 콘텐츠 차단기](https://adguard.com/adguard-content-blocker/overview.html). Android용 AdGuard는 브라우저 및 앱에서 광고, 추적기 및 방해 요소를 차단하고, 필터와 도메인 수준 광고 차단을 사용하고, 사용자 규칙을 지원하는 등 훨씬 더 광범위한 기능을 제공합니다. AdGuard 콘텐츠 차단기는 한정적인 기능만 제공합니다.
 
-Full-fledged ad blockers can’t be introduced to Google Play due to the policy of the store. Google Play [has banned](https://adguard.com/en/blog/google-removes-adguard-android-app-google-play.html) "apps that block or interfere with another app displaying ads". Thus, AdGuard for Android can be downloaded on AdGuard's official website only.
+Google 정책으로 인해 모든 기능을 지원하는 광고 차단기를 Google Play에 등록할 수 없습니다. Google Play는 "다른 앱의 광고 표시를 차단하거나 방해하는 앱"을 [금지](https://adguard.com/en/blog/google-removes-adguard-android-app-google-play.html) 했습니다. 따라서 Android용 AdGuard는 AdGuard의 공식 웹사이트에서만 다운로드할 수 있습니다.
 
-As an alternative, Google offers to developers the Content blocking API. The API has strict limitations and is currently supported by two browsers: Yandex Browser and Samsung Internet browser. Many complex filtering rules supported in other AdGuard products don't work with this API.
+이에 대한 대안으로 Google은 개발자에게 콘텐츠 차단 API를 제공합니다. 이 API는 엄격한 제한되어 있으며 현재 두 가지 브라우저에서 지원됩니다: Yandex 브라우저와 삼성 인터넷입니다. 다른 AdGuard 제품에서 지원되는 많은 복잡한 필터링 규칙은 이 API에서 작동하지 않습니다.
 
-![Available browsers *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker.png)
+![사용 가능한 브라우저 *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker.png)
 
-AdGuard Content Blocker was designed to fit the Google Play policy framework. Compared to other AdGuard products, AdGuard Content Blocker has less ad blocking capabilities:
+AdGuard 콘텐츠 차단기는 Google Play 정책에 맞게 설계되었습니다. 다른 AdGuard 제품에 비해 AdGuard 콘텐츠 차단기는 광고 차단 기능이 적습니다:
 
-1. AdGuard Content Blocker works only in browsers that support the content blocking technology. Currently, there are two: Yandex Browser and Samsung Internet browser.
-2. Within the existing technology, the functionality of AdGuard Content Blocker is limited: for example it cannot block ads and trackers in apps or other browsers, has no filtering log and doesn't support filtering at the domain level.
+1. AdGuard 콘텐츠 차단기는 콘텐츠 차단 기술을 지원하는 브라우저에서만 작동합니다. 현재 Yandex 브라우저와 삼성 인터넷 등 두 가지 브라우저가 있습니다.
+2. 기존 기술 내에서 AdGuard 콘텐츠 차단기의 기능은 제한적입니다. 예를 들어 앱이나 기타 브라우저에서 광고 및 추적기를 차단할 수 없고, 필터링 로그가 없으며 도메인 수준에서의 필터링을 지원하지 않습니다.
 
-However, AdGuard Content Blocker has 35 filters that allow you to block ads, trackers, and annoyances in two supported browsers. You can also customize ad blocking by selecting appropriate language-specific filters or adding user rules.
+하지만 AdGuard 콘텐츠 차단기는 지원되는 두 가지 브라우저에서 광고, 추적기 및 방해 요소를 차단할 수 있는 35개의 필터를 제공합니다. 적절한 언어별 필터를 선택하거나 사용자 정의 규칙을 추가하여 광고 차단을 맞춤 설정할 수도 있습니다.
 
-AdGuard Content Blocker is a free open-source software. Its source code is available [on GitHub](https://github.com/AdguardTeam/ContentBlocker).
+AdGuard 콘텐츠 차단기는 무료 오픈 소스 소프트웨어입니다. 소스 코드는 [Github](https://github.com/AdguardTeam/ContentBlocker)에서 확인할 수 있습니다.
 
-For a better and more customizable ad blocking experience, try using the full-fledged Android app. AdGuard for Android can be downloaded [from our website](https://adguard.com/adguard-android/overview.html).
+더 우수하고 맞춤설정 가능한 광고 차단 환경을 위해 완전한 기능을 갖춘 Android 앱을 사용해 보세요. Android용 AdGuard는 [당사 웹사이트](https://adguard.com/adguard-android/overview.html)에서 다운로드할 수 있습니다.

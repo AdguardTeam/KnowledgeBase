@@ -166,7 +166,7 @@ Pravidla kratší než 4 znaky jsou považována za nesprávná a budou ignorov�
 modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 ```
 
-- **`pattern`** — maska adresy. Každá adresa URL požadavku je přiřazena k této masce. V šabloně můžete použít i speciální znaky, jejichž popis je uveden [pod tímto odkazem](#basic-rules-special-characters). Vezměte na vědomí, že AdGuard zkracuje adresy URL na délku 4096 znaků, aby urychlil porovnávání a předešel problémům s nesmyslně dlouhými adresami URL.
+- **`pattern`** — maska adresy. Každá adresa URL požadavku je přiřazena k této masce. V šabloně můžete také použít speciální znaky popsané [níže](#basic-rules-special-characters). Vezměte na vědomí, že AdGuard zkracuje adresy URL na délku 4096 znaků, aby urychlil porovnávání a předešel problémům s nesmyslně dlouhými adresami URL.
 - **`@@`** — znak, který se používá v pravidlech výjimek. Chcete-li filtrování požadavku vypnout, začněte pravidlo touto značkou.
 - **`modifiers`** — parametry, které "objasňují" základní pravidlo. Některé z nich omezují rozsah pravidel a některé mohou zcela změnit jejich fungování.
 
@@ -176,6 +176,12 @@ modifiers = [modifier0, modifier1[, ...[, modifierN]]]
 - **`||`** — indikace o použití pravidla na zadanou doménu a její subdomény. S tímto znakem nemusíte v masce adresy zadávat konkrétní protokol a subdoménu. Tj., že `||` znamená `http://*.`, `https://*.`, `ws://*.`, `wss://*.` najednou.
 - **`^`** — oddělovací znak. Oddělovací znak je libovolný znak, mimo písmeno, číslice nebo jeden z následujících znaků: `_` `-` `.` `%`. V tomto příkladu jsou oddělovací znaky zobrazeny tučně: `http:`**`//`**`example.com`**`/?`**`t=1`**`&`**`t2=t3`. Konec adresy je také akceptován jako oddělovací znak.
 - **`|`** — ukazatel na začátku nebo konci adresy. Hodnota závisí na umístění znaku v masce. Např. pravidlo `swf|` odpovídá `http://example.com/annoyingflash.swf`, ale neodpovídá `http://example.com/swf/index.html`. `|http://example.org` odpovídá `http://example.org`, ale ne `http://domain.com?url=http://example.org`.
+
+:::note
+
+`|`, `||`, `^` lze použít pouze u pravidel se vzorem URL. Např. `||example.com##.advert` je nesprávný a bude blokátorem ignorován.
+
+:::
 
 :::note Vizuální znázornění
 
@@ -399,7 +405,7 @@ Pokud chcete, aby se pravidlo nevztahovalo na určité domény, začněte název
 
 **`$domain` modifikátor odpovídající cílové doméně:**
 
-V některých případech může modifikátor `$domain` odpovídat nejen doméně odkazovače, ale také cílové doméně. K tomu dojde, pokud platí všechny následující podmínky:
+V některých případech může modifikátor `$domain` odpovídat nejen doméně odkazovače, ale také cílové doméně. K tomu dojde, pokud jsou splněny všechny následující podmínky:
 
 1. Požadavek má typ obsahu `document`
 1. Vzor pravidla neodpovídá žádné konkrétní doméně
@@ -483,7 +489,7 @@ Pravidla s modifikátorem `$header` jsou podporována AdGuardem pro Windows, Mac
 
 #### **`$important`** {#important-modifier}
 
-Modifikátor `$important` použitý na pravidlo zvyšuje jeho prioritu před jakýmkoli jiným pravidlem bez modifikátoru `$important`. Dokonce i přes základní pravidla výjimek.
+Modifikátor `$important` použitý na pravidlo zvyšuje jeho prioritu oproti pravidlům bez stejného modifikátoru. Dokonce i přes základní pravidla výjimek.
 
 Další podrobnosti najdete v [prioritách pravidel](#rule-priorities).
 
@@ -580,7 +586,7 @@ Pokud existuje modifikátor `$third-party`, pravidlo se použije pouze na požad
 
 **`$~third-party`:**
 
-- `||domain.com$~third-party` — toto pravidlo se použije pro `domain.com`, ale ne pro ostatní domény. Příklad požadavku, který není požadavkem třetí strany: `http://domain.com/icon.ico`.
+- `||domain.com$~third-party` — toto pravidlo se vztahuje výhradně na `domain.com`. Příklad požadavku která není podán třetí stranou: `http://domain.com/icon.ico`.
 
 :::note
 
@@ -792,7 +798,7 @@ Pravidlo se vztahuje pouze na připojení WebRTC.
 
 **Příklady**
 
-- `||example.com^$webrtc,domain=example.org` blokuje připojení webRTC na `example.com` pro `example.org`.
+- `||example.com^$webrtc,domain=example.org` blokuje připojení webRTC na `example.com` z `example.org`.
 - `@@*$webrtc,domain=example.org` zakáže RTC wrapper pro `example.org`.
 
 ### Modifikátory pravidel pro výjimky {#exception-modifiers}
@@ -859,7 +865,7 @@ Zakáže konkrétní uživatelské skripty nebo všechny uživatelské skripty p
 $extension[="userscript_name1"[|"userscript_name2"[|"userscript_name3"[...]]]]
 ```
 
-`userscript_name(i)` označuje konkrétní název uživatelského skriptu, který má být modifikátorem zakázán. Modifikátor může obsahovat libovolný počet názvů uživatelských skriptů nebo je nemusí obsahovat vůbec. V druhém případě modifikátor zakáže všechny uživatelské skripty.
+`userscript_name(i)` označuje konkrétní název uživatelského skriptu, který má být modifikátorem zakázán. Modifikátor může obsahovat libovolný počet názvů uživatelských skriptů nebo žádný. V druhém případě modifikátor zakáže všechny uživatelské skripty.
 
 Názvy uživatelských skriptů obvykle obsahují mezery nebo jiné speciální znaky, proto byste měli název uzavřít do uvozovek. Podporovány jsou jednoduché (`'`) i dvojité (`"`) uvozovky ASCII. Více názvů uživatelských skriptů by mělo být odděleno svislou čarou (`|`). Pokud je však název uživatelského skriptu tvořen jedním slovem bez speciálních znaků, lze jej použít bez uvozovek.
 
@@ -918,7 +924,7 @@ Zakáže modul Režim utajení pro všechny odpovídající stránky a požadavk
 $stealth [= opt1 [| opt2 [| opt3 [...]]]]
 ```
 
-`opt(i)` znamená určité možnosti Režimu utajení deaktivované modifikátorem. Modifikátor může obsahovat libovolný počet možností (viz níže) nebo je nemusí obsahovat vůbec. V druhém případě modifikátor vypne všechny funkce Režimu utajení.
+`opt(i)` znamená určité možnosti Režimu utajení deaktivované modifikátorem. Modifikátor může obsahovat libovolný počet možností (viz níže) nebo žádnou. V druhém případě modifikátor vypne všechny funkce Režimu utajení.
 
 Seznam dostupných možností modifikátoru:
 
@@ -953,7 +959,7 @@ Blokování cookies a odstranění sledovacích parametrů se provádí pomocí 
 
 :::caution Omezení
 
-- Možnosti modifikátoru by měly být psány malými písmeny, tj. `$stealth=DPI` budou zamítnuty.
+- Možnosti modifikátoru musí být psány malými písmeny, tj. `$stealth=DPI` budou zamítnuty.
 - Možnosti modifikátoru nelze negovat, tj. `$stealth=~3p-cookie` bude zamítnuto.
 
 :::
@@ -1198,7 +1204,7 @@ Existují dva způsoby, jak deaktivovat pravidla `$cookie`: primární metoda za
 
 :::caution Omezení
 
-Pravidla `$cookie` podporují omezený seznam modifikátorů: `$domain`, `$~domain`, `$important`, `$third-party` a `$~third-party`.
+Pravidla `$cookie` podporují tři typy modifikátorů: `$domain`, `$~domain`, `$important`, `$third-party` a `$~third-party`.
 
 :::
 
@@ -1218,7 +1224,7 @@ Pro použití tohoto typu pravidel je nutné mít základní znalosti o vrstvě 
 
 :::
 
-U požadavků, které odpovídají pravidlu `$csp`, posílíme zásady zabezpečení odezvy posílením zásad zabezpečení obsahu, podobně jako u zásad zabezpečení obsahu modifikátoru obsahu `$csp`. Pravidla `$csp` jsou aplikována nezávisle na jakémkoli jiném typu pravidla. Ostatní základní pravidla na to nemají žádný vliv, **kromě výjimek na úrovni dokumentu** (viz část s příklady níže).
+U požadavků, které odpovídají pravidlu `$csp`, posílíme zásady zabezpečení odezvy posílením zásad zabezpečení obsahu, podobně jako u zásad zabezpečení obsahu modifikátoru obsahu `$csp`. Pravidla `$csp` jsou aplikována nezávisle na jakémkoli jiném typu pravidla. Mohou je ovlivnit **pouze výjimky na úrovni dokumentu** (viz část s příklady), ale žádná jiná základní pravidla.
 
 **Vícenásobná pravidla odpovídajících jednomu požadavku**
 
@@ -1310,7 +1316,7 @@ Některé specifické body týkající se fungování pravidel `$hls`:
 1. Při odstranění segmentu se odstraní také všechny znaky, které se vztahují pouze k tomuto segmentu
 1. Pokud se znak vztahuje na více segmentů a všechny tyto segmenty jsou odstraněny, je odstraněna i znak
 1. Protože neexistuje způsob, jak rozpoznat různé druhy znaků podle syntaxe, rozpoznáváme všechny znaky uvedené v RFC a některé nestandardní znaky, se kterými jsme se setkali v praxi. Všechny řádky začínající na `#`. Ty, které nejsou rozpoznány jako znak, jsou předány bez úprav a nejsou porovnávány s pravidly
-1. Nepřiřazujeme znaky, které se vztahují na celý seznam videí a pravidla `$hls` nelze použít k jejich odstranění, protože pravidla `$hls` jsou určena k odstranění segmentů. Pokud víte, co děláte, můžete pomocí pravidel `$replace` odstranit nebo přepsat pouze jeden znak ze seznamu skladeb
+1. Značky nebudou přiřazeny, pokud se vztahují na celý seznam stop a k jejich odstranění nelze použít pravidla `$hls`, protože tyto typy pravidel jsou určeny pro odstraňování segmentů. Pokud víte, co děláte, můžete pomocí pravidel `$replace` odstranit nebo přepsat pouze jeden znak ze seznamu skladeb
 
 **Příklad transformace provedené podle pravidel:**
 
@@ -1635,7 +1641,7 @@ Jedná se v podstatě o pravidla typu brány Firewall, která umožňují plně 
 
 1. Pravidla `$network` odpovídají **pouze IP adresám**! Nelze je použít k zablokování nebo odblokování přístupu k doméně.
 2. Chcete-li se shodovat s adresou IPv6, musíte použít sbalenou syntaxi, např. `[2001:4860:4860::8888]$network` namísto `[2001:4860:4860:0:0:0:0:8888]$network`.
-3. Pravidlo seznamu povolených `$network` způsobí, že AdGuard bude obcházet data odpovídajícího koncového bodu, např. nebude provádět žádné další filtrování.
+3. Pravidlo seznamu povolených `$network` způsobí, že AdGuard bude obcházet data odpovídajícího koncového bodu, proto nebude provádět žádné další filtrování.
 4. Pokud část IP začíná a končí znakem `/`, je považována za regulární výraz.
 
 Pro lepší pochopení regulárních výrazů doporučujeme seznámit se s tímto [článkem](#regexp-support).
@@ -1671,7 +1677,7 @@ Pro použití tohoto typu pravidel je nutné mít základní znalosti o vrstvě 
 
 :::
 
-U požadavků, které odpovídají pravidlu `$permissions`, AdGuard posiluje zásady funkcí odpovědi přidáním dalších zásad oprávnění, které se rovnají obsahu modifikátoru `$permissions`. Pravidla `$permissions` jsou aplikována nezávisle na jakémkoli jiném typu pravidla. Ostatní základní pravidla na to nemají žádný vliv, **kromě výjimek na úrovni dokumentu** (viz část s příklady).
+U požadavků, které odpovídají pravidlu `$permissions`, AdGuard posiluje zásady funkcí odpovědi přidáním dalších zásad oprávnění, které se rovnají obsahu modifikátoru `$permissions`. Pravidla `$permissions` jsou aplikována nezávisle na jakémkoli jiném typu pravidla. Mohou je ovlivnit **pouze výjimky na úrovni dokumentu** (viz část s příklady), ale žádná jiná základní pravidla.
 
 **Vícenásobná pravidla odpovídajících jednomu požadavku.**
 
@@ -1694,7 +1700,7 @@ Hodnota `$permissions` může být v případě pravidel pro výjimky prázdná 
 :::caution Omezení
 
 1. Zakázané znaky v `$permissions` hodnotě: `$`
-1. `$permissions` je kompatibilní s omezeným seznamem modifikátorů: `$domain`, `$important`, a `$subdocument`
+1. `$permissions` je kompatibilní se třemi typy modifikátorů: `$domain`, `$important` a `$subdocument`
 
 :::
 
@@ -2578,7 +2584,7 @@ Návrh specifikace CSS 4.0 popisuje [`:has()` pseudo-třídu](https://www.w3.org
 
 :::note
 
-Pravidla s pseudo-třídou `:has()` by měla používat nativní implementaci [ `:has()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:has), pokud používají znak `##` a pokud je to možné, tj. bez dalších rozšířených selektorů uvnitř. Chcete-li vynutit použití pravidel ExtendedCss s `:has()`, použijte explicitně znak `#?#`/`#$?#`.
+Pravidla s pseudo-třídou `:has()` musí používat nativní implementaci [ `:has()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:has), pokud používají znak `##` a pokud je to možné, tj. bez dalších rozšířených selektorů uvnitř. Chcete-li vynutit použití pravidel ExtendedCss s `:has()`, použijte explicitně znak `#?#`/`#$?#`.
 
 :::
 
@@ -2598,7 +2604,7 @@ Synonyma `:-abp-has()` podporují ExtendedCss pro lepší kompatibilitu.
 [target]:has(selector)
 ```
 
-- `target` — nepovinný, standardní nebo rozšířený selektor CSS může být vynechán pro kontrolu *libovolného* prvku
+- `target` — nepovinný, standardní nebo rozšířený selektor CSS může být přeskočen pro kontrolu *libovolného* prvku
 - `selector` — povinný, standardní nebo rozšířený selektor CSS
 
 Pseudo-třída `:has()` vybere prvky `target`, které se hodí do `selector`. Také `selector` může začínat kombinátorem.
@@ -2695,7 +2701,7 @@ Pro lepší kompatibilitu jsou podporována synonyma `:-abp-contains()` a `:has-
 [target]:contains(match)
 ```
 
-- `target` — nepovinný, standardní nebo rozšířený selektor CSS může být vynechán pro kontrolu *libovolného* prvku
+- `target` — nepovinný, standardní nebo rozšířený selektor CSS může být přeskočen pro kontrolu *libovolného* prvku
 - `shoda` — povinný, řetězec nebo regulární výraz pro shodu prvku `textContent`. Příznaky regulárních výrazů jsou podporovány.
 
 **Příklady**
@@ -2744,7 +2750,7 @@ Pseudo-třída `:matches-css()` umožňuje porovnat prvek podle jeho aktuálníc
 [target]:matches-css([pseudo-element, ] property: pattern)
 ```
 
-- `target` — nepovinný, standardní nebo rozšířený selektor CSS může být vynechán pro kontrolu *libovolného* prvku
+- `target` — nepovinný, standardní nebo rozšířený selektor CSS může být přeskočen pro kontrolu *libovolného* prvku
 - `pseudo-element` — volitelný, platný standardní pseudoprvek, např. `before`, `after`, `first-line` atd.
 - `property` — povinný, název vlastnosti CSS, pro kterou se má prvek zkontrolovat
 - `pattern` — povinný, vzor hodnoty, který používá stejnou jednoduchou shodu se zástupnými znaky jako v základních pravidlech filtrování adres URL NEBO regulární výraz. Při tomto typu porovnávání, AdGuard vždy porovnává bez ohledu na velikost písmen. V případě regulárního výrazu vypadá vzor takto: `/regexp/`.
@@ -2811,7 +2817,7 @@ Pseudo-třída `:matches-attr()` umožňuje vybrat prvek podle jeho atributů, z
 [target]:matches-attr("name"[="value"])
 ```
 
-- `target` — nepovinný, standardní nebo rozšířený selektor CSS může být vynechán pro kontrolu *libovolného* prvku
+- `target` — nepovinný, standardní nebo rozšířený selektor CSS může být přeskočen pro kontrolu *libovolného* prvku
 - `name` — povinný, jednoduchý řetězec *nebo* řetězec se zástupným znakem *nebo* regulární výraz pro shodu názvu atributu
 - `value` — volitelný, jednoduchý řetězec *nebo* řetězec se zástupným znakem *nebo* regulární výraz pro shodu hodnoty atributu
 
@@ -2867,13 +2873,13 @@ Pseudo-třída `:matches-property()` umožňuje vybrat prvek podle jeho vlastnos
 [target]:matches-property("name"[="value"])
 ```
 
-- `target` — nepovinný, standardní nebo rozšířený selektor CSS může být vynechán pro kontrolu *libovolného* prvku
+- `target` — nepovinný, standardní nebo rozšířený selektor CSS může být přeskočen pro kontrolu *libovolného* prvku
 - `name` — povinný, jednoduchý řetězec *nebo* řetězec se zástupným znakem *nebo* regulární výraz pro porovnávání názvů vlastností prvků
 - `value` — volitelný, jednoduchý řetězec *nebo* řetězec se zástupným znakem *nebo* regulární výraz pro porovnávání názvů vlastností prvků
 
 **Uvození speciálních znaků**
 
-Pro vzory **regexp** `"` a `\` by mělo být uvozeno, např. `div:matches-property(prop=/[\\w]{4}/)`.
+Pro vzory **regexp** `"` a `\` musí být uvozeno, např. `div:matches-property(prop=/[\\w]{4}/)`.
 
 :::note
 
@@ -3094,7 +3100,7 @@ div[class]:has(> a > img) { remove: true; }
 
 :::note
 
-Pravidla s pseudovlastností `remove` by měla používat znak `#$?#`: `$` pro syntaxi pravidel stylu CSS, `?` pro syntaxi ExtendedCss.
+Pravidla s pseudovlastností `remove` musí používat znak `#$?#`: `$` pro syntaxi pravidel stylu CSS, `?` pro syntaxi ExtendedCss.
 
 :::
 
@@ -3108,12 +3114,12 @@ Pseudo-třída `:is()` umožňuje porovnat jakýkoli prvek, který lze vybrat kt
 [target]:is(selectors)
 ```
 
-- `target` — nepovinný, standardní nebo rozšířený selektor CSS může být vynechán pro kontrolu *libovolného* prvku
+- `target` — nepovinný, standardní nebo rozšířený selektor CSS může být přeskočen pro kontrolu *libovolného* prvku
 - `selectors` — [*odpouštějící seznam selektorů*](https://drafts.csswg.org/selectors-4/#typedef-forgiving-selector-list) standardních nebo rozšířených selektorů. U rozšířených selektorů jsou podporovány pouze složené selektory, nikoli komplexní.
 
 ##### `:is()` limitations {#extended-css-is-limitations}
 
-Pravidla s pseudo-třídou `:is()` by měla používat nativní implementaci [ `:has()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:is), pokud pravidla používají znak `##` a pokud je to možné, tj. bez dalších rozšířených selektorů uvnitř. Chcete-li vynutit použití pravidel ExtendedCss s `:is()`, použijte explicitně znak `#?#`/`#$?#`.
+Pravidla s pseudo-třídou `:is()` musí používat nativní implementaci [ `:has()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:is), pokud pravidla používají znak `##` a pokud je to možné, tj. bez dalších rozšířených selektorů uvnitř. Chcete-li vynutit použití pravidel ExtendedCss s `:is()`, použijte explicitně znak `#?#`/`#$?#`.
 
 Pokud je argument `:is()` pseudo-třídy `selector` rozšířeným selektorem, vzhledem ke způsobu, jakým je v ExtendedCss v2.0 implementována pseudo-třída `:is()`, není možné ji použít na horní uzel DOM, kterým je `html`, tj. `#?#html:is(<extended-selectors>)` nefunguje. Pokud tedy `target` není definován nebo je definován jako [univerzální selektor](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*`, je rozšířené použití pseudo-třídy omezeno na **`html`potomky**, např. pravidla `#?#:is(...)` a `#?#*:is(...)` jsou analyzována jako `#?#html *:is(...)`. Upozorňujeme, že pro standardní argument selektoru takové omezení neexistuje, tj. `#?#html:is(.locked)` funguje bez problémů.
 
@@ -3154,12 +3160,12 @@ Pseudo-třída `:not()` umožňuje vybrat prvky, které se *neshodují* se selek
 [target]:not(selectors)
 ```
 
-- `target` — nepovinný, standardní nebo rozšířený selektor CSS může být vynechán pro kontrolu *libovolného* prvku
+- `target` — nepovinný, standardní nebo rozšířený selektor CSS může být přeskočen pro kontrolu *libovolného* prvku
 - `selectors` — seznam standardních nebo rozšířených selektorů
 
 ##### `:not()` limitations {#extended-css-not-limitations}
 
-Pravidla s pseudo-třídou `:not()` by měla používat nativní implementaci [ `:not()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:not), pokud pravidla používají znak `##` a pokud je to možné, tj. bez dalších rozšířených selektorů uvnitř. Chcete-li vynutit použití pravidel ExtendedCss s `:not()`, použijte explicitně znak `#?#`/`#$?#`.
+Pravidla s pseudo-třídou `:not()` musí používat nativní implementaci [ `:not()`](https://developer.mozilla.org/en-US/docs/Web/CSS/:not), pokud pravidla používají znak `##` a pokud je to možné, tj. bez dalších rozšířených selektorů uvnitř. Chcete-li vynutit použití pravidel ExtendedCss s `:not()`, použijte explicitně znak `#?#`/`#$?#`.
 
 Pokud je argument `:not()` pseudo-třídy `selector` rozšířeným selektorem, vzhledem ke způsobu, jakým je v ExtendedCss v2.0 implementována pseudo-třída `:not()`, není možné ji použít na horní uzel DOM, kterým je `html`, tj. `#?#html:not(<extended-selectors>)` nefunguje. Pokud tedy `target` není definován nebo je definován jako [univerzální selektor](https://www.w3.org/TR/selectors-4/#the-universal-selector) `*`, je rozšířené použití pseudo-třídy omezeno na **`html`potomky**, např. pravidla `#?#:not(...)` a `#?#*:not(...)` jsou analyzována jako `#?#html *:not(...)`. Upozorňujeme, že pro standardní argument selektoru takové omezení neexistuje, tj. `#?#html:not(.locked)` funguje bez problémů.
 
@@ -3259,7 +3265,7 @@ Tento speciální atribut může být v budoucnu nepodporován. Raději použijt
 
 Jedná se o nejčastěji používaný speciální atribut. Omezí výběr na ty prvky, jejichž kód innerHTML obsahuje zadaný podřetězec.
 
-Měli byste použít `""` k uvození `"`>, např.: `$$script[tag-content="alert(""this is ad"")"]`
+Musíte použít `""` k uvození `"`>, např.: `$$script[tag-content="alert(""this is ad"")"]`
 
 Podívejte se například na tento HTML kód:
 
@@ -3291,11 +3297,11 @@ Tento speciální atribut může být v budoucnu nepodporován. Raději použijt
 
 Tento speciální atribut funguje téměř jako `tag-content` a umožňuje kontrolovat kód dokumentu innerHTML. Pravidlo zkontroluje, zda kód HTML prvku odpovídá [vyhledávacímu vzoru](https://en.wikipedia.org/wiki/Glob_(programming)).
 
-Měli byste použít `""` k uvození `"`, např.: `$$script[wildcard=""banner""]`
+Musíte použít `""` k uvození `"`>, např.: `$$script[wildcard=""banner""]`
 
 Např.: `$$script[wildcard="*banner*text*"]`
 
-Zkontroluje, zda kód prvku obsahuje dva po sobě jdoucí podřetězce `banner` a `text`.
+Kontroluje, zda prvek code obsahuje dva po sobě jdoucí podřetězce `banner` a `text`.
 
 :::caution Omezení
 
@@ -3811,7 +3817,7 @@ Je již podporována pro seznamy filtrů sestavené pomocí [FiltersRegistry][],
 
 - AdGuard pro Windows, macOS a Android s knihovnou CoreLibs v1.13;
 - Rozšíření prohlížeče AdGuard v4.2.208;
-- AdGuard pro Safari v1.11.16.
+- AdGuard v1.11.16 pro Safari.
 
 :::
 
@@ -3868,7 +3874,7 @@ example.org#@#.adBanner
 ```
 
 ```adblock
-! to allowlist basic rule from AdGuard Tracking Protection filter filter:
+! to allowlist basic rule from AdGuard Tracking Protection filter:
 !#safari_cb_affinity(privacy)
 @@||example.org^
 !#safari_cb_affinity
@@ -3964,7 +3970,7 @@ Toto pravidlo bude dostupné pouze v AdGuardu pro Windows, Mac a Android:
 ||example.org^
 ```
 
-Toto pravidlo bude k dispozici pro všechny platformy kromě AdGuardu pro Safari, Blokátoru obsahu AdGuard a AdGuardu pro iOS:
+S výjimkou AdGuardu pro Safari, Blokátoru obsahu AdGuard a AdGuardu pro iOS je toto pravidlo k dispozici na všech platformách:
 
 ```adblock
 !+ NOT_PLATFORM(ext_safari, ext_android_cb, ios)
@@ -4010,7 +4016,7 @@ Otevřete konzolu prohlížeče na webové stránce a zobrazte statistiky časov
 
 **Vytištěno pouze pro odstranění pseudonymů:**
 
-- `removed` — příznak, který signalizuje, zda jsme odstranili prvky
+- `removed` — příznak signalizující, zda byly prvky odstraněny
 
 **Vytištěno, pokud prvky nejsou odstraněny:**
 
