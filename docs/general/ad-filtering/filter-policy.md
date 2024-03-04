@@ -222,7 +222,7 @@ This filter is designed to block annoying elements that are not included in othe
 
 This filter may contain rules that are not suitable for all users. In such cases, it is recommended to disable this filter. The decisions to add rules to this filter are made by filter developers on a rule-by-rule basis.
 
-## Social Media filters
+## Social media filters
 
 ### Filters
 
