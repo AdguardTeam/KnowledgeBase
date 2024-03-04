@@ -18,7 +18,7 @@ Quality requirements for filtering rules:
 - Unblocking rules must be as specific as possible to avoid unblocking anything unnecessary
 - JavaScript rules should be used as sparingly as possible and only if blocking ads is impossible without them
 
-## Ad Blocking Filters
+## Ad blocking filters
 
 ### Terminology
 
@@ -82,7 +82,7 @@ The goal of ad-blocking filters is to block all types of advertising on websites
     - Some legacy rules may continue to block messages that satisfy one or more of these criteria. If identified, such rules will be handled according to this policy
 - Mining pools are not blocked if they are public and not used solely for malicious purposes
 
-## Tracking Protection Filters
+## Tracking protection filters
 
 ### Terminology
 
@@ -161,7 +161,7 @@ This filter is designed to block both cookie notices and requests from cookie ma
     - Reject (except for functional cookies — depending on the CMP system) — the preferred option, as there is less chance of loading additional analytics tools
     - Accept — this option is used as the last resort if other methods fail. In this case, the site is additionally checked for the use of analytics tools, which are then blocked by the **AdGuard Tracking Protection filter**
 
-**Limitations and Exceptions**
+**Limitations and exceptions**
 
 In some cases, the decision to add rules is made independently by filter developers; mostly, when the choice made when simulating actions would affect the site’s functionality (for example, history may not work, or user settings may not be saved on such a site).
 
@@ -174,7 +174,7 @@ This is a filter that blocks various popups on web pages that are not necessary 
 - Popups that encourage users to disable ad blocker and violate user’s privacy (at the discretion of the filter developers)
 - Other types of popups that may annoy users (at the discretion of filter developers)
 
-**Limitations and Exceptions**
+**Limitations and exceptions**
 
 - Push notifications are only blocked on sites where they are not used for practical purposes. For example, in email web clients or tools used for work purposes, such notifications will not be blocked
 - Some popups that do not fall into the categories described above but still interfere with the user’s experience may be also blocked. For example, registration prompts on a site or popups that introduce the site’s features. The decision is made by filter developers
@@ -184,7 +184,7 @@ This is a filter that blocks various popups on web pages that are not necessary 
 
 This is a filter that blocks banners and popups that encourage visitors to install mobile applications.
 
-**Limitations and Exceptions**
+**Limitations and exceptions**
 
 Banners located in the headers or in the menus of websites are not blocked if they are not animated and do not occupy a significant portion of usable space. If a banner is located in the footer, the decision is made by filter developers case-by-case. Usually, banners in the footer do not stand out against other elements and are not distracting.
 
@@ -200,7 +200,7 @@ This is a filter that blocks various widgets that are not essential for the func
     - Call-back forms
 - Other widgets that do not have a separate category but may visually clutter the page. For example, weather widgets, currency exchange rates, job listings, and donations
 
-**Limitations and Exceptions**
+**Limitations and exceptions**
 
 This filter doesn’t block:
 
@@ -218,7 +218,7 @@ This filter is designed to block annoying elements that are not included in othe
 - Speed up countdown timers when loading files from websites, if the check is not controlled by the server or is not hindered
 - Apply various rules that may be useful for filter developers. For example, blocking web debugger detection
 
-**Limitations and Exceptions**
+**Limitations and exceptions**
 
 This filter may contain rules that are not suitable for all users. In such cases, it is recommended to disable this filter. The decisions to add rules to this filter are made by filter developers on a rule-by-rule basis.
 
@@ -267,7 +267,7 @@ This filter unblocks:
 - Contextual advertising in search results when using search engines (such as Google, Bing, Yandex, DuckDuckGo)
 - Self-promotion of websites
 
-**Limitations and Exceptions**
+**Limitations and exceptions**
 
 - Search advertising is unblocked only if it corresponds to the user’s search query, as it is contextual. Otherwise, the advertising remains blocked
 - Self-promotion is unblocked only if it complies with the filter policy. A request for unblocking may be rejected by filter developers
@@ -277,7 +277,7 @@ This filter unblocks:
 
 This filter is used in AdGuard DNS. It is not a replacement for ad-blocking filters.
 
-**Limitations and Exceptions**
+**Limitations and exceptions**
 
 Same as for ad-blocking filters.
 
@@ -285,7 +285,7 @@ Same as for ad-blocking filters.
 
 This filter is intended for testing and debugging rules that potentially may break websites’ functionality. Rules are added by filter developers when there’s a need to test a particular solution. As the filter is designed for debugging purposes, its limitations are minimal.
 
-**Limitations and Exceptions**
+**Limitations and exceptions**
 
 - Rules should not explicitly break websites’ functionality
 - Rules should not unblock advertisements or otherwise violate the Policy
