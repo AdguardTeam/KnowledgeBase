@@ -1,11 +1,11 @@
 ---
-title: Features overview
+title: 功能概览
 sidebar_position: 1
 ---
 
 :::info
 
-这篇文章是关于 AdGuard 浏览器扩展，它只能保护用户的浏览器。 To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+这篇文章是关于 AdGuard 浏览器扩展，它只能保护用户的浏览器。 如果需要保护整个设备，请前往[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -31,7 +31,7 @@ We have a standalone extension for Safari. Since the release of [Safari 13](http
 
 Blocking ads is clearly the key functionality of any ad blocker, and AdGuard is not an exception. The extension will successfully block ads on any page in your browser. Ad blocking is based on so-called filter lists, or simply [filters](/general/ad-filtering/how-ad-blocking-works). Filters can be enabled or disabled in your extension's settings. You can customize ad blocking by activating specific filters.
 
-### Filters {#filters}
+### 过滤器 {#filters}
 
 In essence, filter lists are sets of rules written in a special language. Your ad blocker interpretes the rules and implements them. As a result, you stop seeing ads on your webpages.
 
@@ -53,7 +53,7 @@ To add a filter, just click *Add custom filter*, enter the URL or the file path 
 
 ![Add a custom filter *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
 
-### User rules {#user-rules}
+### 用户规则 {#user-rules}
 
 *User rules* is another tool that helps you customize the blocking of ads.
 
@@ -125,7 +125,7 @@ In the *About* section, you can find infos about the current version, links to t
 
 ## Extension’s main menu {#main-menu}
 
-The extension's main page can be accessed by clicking on the extension's icon on the toolbar of your browser.
+The extension's main page can be accessed by clicking the extension's icon on the toolbar of your browser.
 
 ![Main menu *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
 

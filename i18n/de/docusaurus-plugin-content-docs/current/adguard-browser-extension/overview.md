@@ -5,39 +5,39 @@ sidebar_position: 1
 
 :::info
 
-In diesem Artikel geht es um die AdGuard Browsereweiterung, die nur Ihren Browser schützt. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+In diesem Artikel geht es um die AdGuard Browsereweiterung, die nur Ihren Browser schützt. Um Ihr gesamtes Gerät zu schützen, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
 
 :::
 
-AdGuard provides a range of software products that block ads and trackers on different platforms. One of the most popular AdGuard products is a free extension that works in five popular browsers: Chrome, Firefox, Edge, Opera, and Yandex Browser. Browser extensions include basic ad-blocking features but cannot be compared with full-featured desktop programs, such as [AdGuard for Windows](/adguard-for-windows/overview) and [AdGuard for Mac](/adguard-for-mac/overview).
+AdGuard stellt eine Reihe von Softwareprodukten zur Verfügung, die Werbung und Tracker auf verschiedenen Plattformen blockieren. Eines der beliebtesten AdGuard-Produkte ist eine kostenlose Erweiterung, die in fünf gängigen Browsern funktioniert: Chrome, Firefox, Edge, Opera und Yandex Browser. Browsererweiterungen bieten grundlegende Werbeblocker-Funktionen, sind aber nicht mit vollwertigen Desktop-Apps wie [AdGuard für Windows](/adguard-for-windows/overview) und [AdGuard für Mac](/adguard-for-mac/overview) zu vergleichen.
 
 ![AdGuard Browser Extension for Chrome *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
 
-## Availability {#br-extension}
+## Verfügbarkeit {#br-extension}
 
-[AdGuard Browser Extension](https://adguard.com/adguard-browser-extension/overview.html) is available for most major browsers. You can easily find it in your browser’s online store or on our official website.
+[AdGuard Browsererweiterung](https://adguard.com/adguard-browser-extension/overview.html) ist für die meisten gängigen Browser verfügbar. Sie finden sie ganz einfach im Online-Store Ihres Browsers oder auf unserer offiziellen Website.
 
 ![Available for most popular browsers *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
 
 :::note
 
-We have a standalone extension for Safari. Since the release of [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html), most of the ad-blocking extensions have experienced huge issues and many of them stopped functioning. We had to develop a [separate extension for Safari](/adguard-for-safari/overview) that has some differences in comparison with the extension described in this article.
+Wir haben eine eigenständige Erweiterung für Safari. Seit der Veröffentlichung von [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html) haben die meisten der Werbeblocker-Erweiterungen große Probleme und viele von ihnen funktionieren nicht mehr. Wir mussten eine [separate Erweiterung für Safari](/adguard-for-safari/overview) entwickeln, die einige Unterschiede zu der in diesem Artikel beschriebenen Erweiterung aufweist.
 
 :::
 
-**Do not forget that the functionality of each extension is strictly limited by the browser’s capabilities.** So if you want to get full-fledged protection, consider installing a standalone program for your computer. There's [a reason why](#comparison).
+**Vergessen Sie nicht, dass die Funktionalität jeder Erweiterung durch die Möglichkeiten des Browsers stark eingeschränkt ist.** Wenn Sie also einen umfassenden Schutz wünschen, sollten Sie die Installation einer eigenständigen App für Ihren Computer in Betracht ziehen. There's [a reason why](#comparison).
 
-## Ad blocking {#adblocker}
+## Werbeblockierung {#adblocker}
 
-Blocking ads is clearly the key functionality of any ad blocker, and AdGuard is not an exception. The extension will successfully block ads on any page in your browser. Das Blockieren von Werbung basiert auf so genannten Filterlisten oder einfach [Filtern](/general/ad-filtering/how-ad-blocking-works). Filters can be enabled or disabled in your extension's settings. You can customize ad blocking by activating specific filters.
+Das Blockieren von Werbung ist eindeutig die Schlüsselfunktion eines jeden Werbeblockers, und AdGuard bildet hier keine Ausnahme. The extension will successfully block ads on any page in your browser. Das Blockieren von Werbung basiert auf so genannten Filterlisten oder einfach [Filtern](/general/ad-filtering/how-ad-blocking-works). Filter können in den Einstellungen Ihrer Erweiterung aktiviert oder deaktiviert werden. You can customize ad blocking by activating specific filters.
 
-### Filters {#filters}
+### Filter {#filters}
 
-In essence, filter lists are sets of rules written in a special language. Your ad blocker interpretes the rules and implements them. As a result, you stop seeing ads on your webpages.
+Im Wesentlichen handelt es sich bei Filterlisten um Regelwerke, die in einer speziellen Sprache geschrieben sind. Ihr Werbeblocker interpretiert die Regeln und setzt diese um. As a result, you stop seeing ads on your webpages.
 
 ![Filters *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters.png)
 
-All filters are grouped according to their role. For example, there are categories for ad-blocking filters, privacy protection filters, social media-related filters, etc. You can enable either individual filters or the entire group at once.
+Alle Filter sind nach ihrer Funktion gruppiert. So gibt es beispielsweise Kategorien für Werbeblocker, Filter zum Schutz der Privatsphäre, Filter für soziale Medien usw. Sie können entweder einzelne Filter oder die gesamte Gruppe auf einmal aktivieren.
 
 ![Ad blocking filters *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters1.png)
 
@@ -53,7 +53,7 @@ To add a filter, just click *Add custom filter*, enter the URL or the file path 
 
 ![Add a custom filter *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
 
-### User rules {#user-rules}
+### Benutzerregeln {#user-rules}
 
 *User rules* is another tool that helps you customize the blocking of ads.
 
@@ -67,7 +67,7 @@ Besides, you can export your own filtering rules. This option is good for transf
 
 When you add a website to the Allowlist (more on that [below](#allowlist)) or use the Assistant tool for hiding an element on the page, a corresponding rule is also saved in *User rules*.
 
-### Allowlist {#allowlist}
+### Positivliste {#allowlist}
 
 The *allowlist* is used to exclude certain websites from filtering. Blocking rules are not applied to the websites on the list.
 
@@ -125,7 +125,7 @@ In the *About* section, you can find infos about the current version, links to t
 
 ## Extension’s main menu {#main-menu}
 
-The extension's main page can be accessed by clicking on the extension's icon on the toolbar of your browser.
+The extension's main page can be accessed by clicking the extension's icon on the toolbar of your browser.
 
 ![Main menu *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
 
@@ -137,7 +137,7 @@ By clicking the icons in the top right corner of the extension's main menu, you 
 
 ## AdGuard Browser Extension vs. standalone apps {#comparison}
 
-<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/ZGwceZP-0mM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/ZGwceZP-0mM" title="YouTube-Videoplayer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 The main advantage of AdGuard standalone programs over browser extensions is that the programs can block ads in every browser and in almost all apps. You may use different browsers at the same time, the app will filter ads and online threats in all of them equally well.
 

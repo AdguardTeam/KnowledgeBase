@@ -43,7 +43,9 @@ Sometimes support team members may ask you to send *trace* logs. Daha sonra aşa
 
 1. Konsolu açın (başlat paneline `cmd` yazın).
 
-1. Uygulamayı, 64 bit Windows kullanıyorsanız `C:\"Program Files (x86)"\Adguard\Adguard.exe /trace` ve 32 bit Windows kullanıyorsanız `C:\"Program Files"\Adguard\Adguard.exe /trace` komutuyla çalıştırın.
+1. Windows için AdGuard v7.16 veya sonraki bir sürümünü kurduysanız, uygulamayı `C:\"Program Files"\Adguard\Adguard.exe /trace` komutuyla Windows bitliğine bakmaksızın çalıştırın.
+
+Windows için AdGuard'ın eski bir sürümüne sahipseniz, 64 bit Windows kullanıyorsanız uygulamayı C:\"Program Files (x86)"\Adguard\Adguard.exe /trace ve 32 bit kullanıyorsanız C:\"Program Files"\Adguard\Adguard.exe /trace komutuyla çalıştırın.
 
 1. Sorunu yeniden oluşturun.
 

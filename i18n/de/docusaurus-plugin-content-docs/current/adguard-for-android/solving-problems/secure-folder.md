@@ -5,7 +5,7 @@ sidebar_position: 13
 
 :::info
 
-Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -21,4 +21,4 @@ If you install AdGuard to [the *Secure folder* on your Android](https://www.sams
 1. Confirm installation with your graphic key/password/fingerprint.
 1. Find and select the previously saved certificate, then tap **Done**.
 1. Return to the AdGuard app and navigate back to the main screen. You may have to swipe and restart the app to get rid of the *HTTPS filtering is off* message.
-1. Done! The certificate has been installed.
+1. Fertig! The certificate has been installed.

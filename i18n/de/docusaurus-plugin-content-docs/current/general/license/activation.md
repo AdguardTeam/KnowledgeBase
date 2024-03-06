@@ -17,7 +17,7 @@ Alternativ können Sie auch einen [Lizenzschlüssel](../what-is#license-key) ver
 
 **Nachstehend finden Sie eine schrittweise Anleitung zur Aktivierung für jede Plattform.**
 
-### Aktivieren von AdGuard für Windows
+### AdGuard für Windows aktivieren
 
 1. Klicken Sie im Bildschirm mit der abgelaufenen Lizenz auf *Aktivieren*.
 
@@ -33,7 +33,7 @@ Alternativ können Sie auch einen [Lizenzschlüssel](../what-is#license-key) ver
 
     ![Aktivieren einer Lizenz *border](https://cdn.adtidy.org/blog/new/lnzz5activate-license.png)
 
-### Aktivieren von AdGuard für Mac
+### AdGuard für Mac aktivieren
 
 1. Klicken Sie im Bildschirm mit der abgelaufenen Lizenz auf *Aktivieren*.
 
@@ -51,7 +51,7 @@ Alternativ können Sie auch einen [Lizenzschlüssel](../what-is#license-key) ver
 
     ![Aktivieren einer Lizenz *border](https://cdn.adtidy.org/blog/new/tws3jkactivate-license.png)
 
-### Aktivieren von AdGuard für Android
+### AdGuard für Android aktivieren
 
 1. Tippen Sie auf *Einstellungen* und wählen Sie dann *Lizenz*.
 
@@ -65,7 +65,7 @@ Alternativ können Sie auch einen [Lizenzschlüssel](../what-is#license-key) ver
 
     ![Aktivieren einer Lizenz *mobile_border](https://cdn.adtidy.org/blog/new/sbxttactivate-license.png)
 
-### Aktivieren von AdGuard für iOS
+### AdGuard für iOS aktivieren
 
 1. Tippen Sie auf *Einstellungen* und wählen Sie dann *Lizenz*.
 

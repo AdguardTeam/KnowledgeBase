@@ -9,7 +9,7 @@ sidebar_position: 12
 
 :::
 
-[HTTPSトラフィック（通信）をフィルタリング](/general/https-filtering/what-is-https-filtering.md)できるようになるには、AdGuardはデバイスのユーザーストレージに証明書をインストールする必要があります。（※ほとんどの広告がHTTPSを使用しているため、HTTPSフィルタリングは広告ブロック性能にとって非常に重要です。） より古いバージョンのアンドロイドOSでは、証明書は自動的にインストールされたていましたが、Android 11以降ではユーザーが手動でインストールしなければならなくなりました。
+[HTTPSトラフィック（通信）をフィルタリング](/general/https-filtering/what-is-https-filtering.md)できるようになるには、AdGuardはデバイスのユーザーストレージに証明書をインストールする必要があります。（※ほとんどの広告がHTTPSを使用しているため、HTTPSフィルタリングは広告ブロック性能にとって非常に重要です。） On older versions of the Android OS this was done automatically, but on Android 11 and later users have to install it manually.
 
 ![証明書 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/g.gif)
 

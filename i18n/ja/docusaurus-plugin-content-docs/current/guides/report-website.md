@@ -12,7 +12,7 @@ sidebar_position: 3
 - 特定フィルタの作者が、ルールを作成する際にミスをした
 - 広告の再挿入 Find more about this method in our [blog](https://adguard.com/en/blog/ad-reinsertion.html).
 
-ユーザー様が、直面された広告の事例を含めて問題報告用フォームを記入してご報告いただければ大変助かります。 報告方法に関しては、以下のお使いのOSに応じた手順をご利用ください。
+You can help us by filling in a form with examples of ads you have encountered. 報告方法に関しては、以下のお使いのOSに応じた手順をご利用ください。
 
 ## ウェブサイトを報告する方法 {#report}
 
@@ -26,8 +26,8 @@ When you send a complaint via the app or via AdGuard Browser Assistant, all info
 
 ### AdGuardブラウザ拡張機能の場合 {#extension}
 
-- ブラウザで🛡アイコンをクリックして、AdGuardブラウザ拡張機能を開く
-- 「**問題・不具合を報告する**」をクリック
+- Open the browser extension settings by clicking the corresponding icon;
+- Click **Report an issue**:
 
 ![extension_issue *mobile_border](https://cdn.adtidy.org/blog/new/5si74extension.png)
 
@@ -135,7 +135,7 @@ For example, you are faced with a situation that your favorite website won’t o
 
 1. Disable **Stealth Mode**;
 2. If this solved the problem, turn the module on and turn off the **Stealth Mode** options one by one. This is done to detect which filters are "breaking" the page;
-3. If you have managed to to detect which setting "breaks" a page, you should inform the developers when filling out the form (see above). In this case, it is desirable to return to the initial settings;
+3. If you have managed to detect which setting "breaks" a page, you should inform the developers when filling out the form (see above). In this case, it is desirable to return to the initial settings;
 4. In case of failure (issue not solved), turn to section **Extensions**.
 
 ### **拡張機能**
@@ -146,4 +146,4 @@ For example, you are faced with a situation that your favorite website won’t o
 
 ### **サードパーティブロッカー**
 
-Some browsers and antivirus programs (such as Yandex Browser, Kaspersky, etc.) have built-in ad blockers. They may affect and cause problems in the operation of sites. If you use such programs, make sure that the problem is on the side of **AdGuard**: disable **AdGuard** filtering and try to repeat the problem. If it remains, it means that the problem is caused by another application or browser. If the problem is caused by **AdGuard**, follow the steps described in the previous paragraphs.
+Some browsers and antivirus programs (such as Yandex Browser, Kaspersky, etc.) have built-in ad blockers. They may affect and cause problems in the operation of sites. If you are using such programs, first make sure that the problem is caused by **AdGuard**: disable **AdGuard** filtering and try to reproduce the problem. If it remains, it means that the problem is caused by another application or browser. If the problem is caused by **AdGuard**, follow the steps described in the previous paragraphs.

@@ -51,7 +51,7 @@ Tento přístup je k dispozici od verze **AdGuardu v3.5 nightly 6**. Pokud použ
 
 :::
 
-1. [Instalace a konfigurace](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; Na platformě Windows mohou majitelé zařízení **Samsung** potřebovat nainstalovat [tento nástroj](https://developer.samsung.com/mobile/android-usb-driver.html).
+1. [Nainstalujte a nakonfigurujte](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; Ve Windows mohou majitelé zařízení **Samsung** potřebovat nainstalovat [tento nástroj](https://developer.samsung.com/mobile/android-usb-driver.html).
 
 1. Připojte zařízení pomocí **USB kabelu** k počítači nebo notebooku, na který jste nainstalovali **ADB**;
 
@@ -85,7 +85,7 @@ S podobným problémem se mohou setkat také majitelé telefonů **LG** nebo **S
 - Otevřete **Nastavení**;
 - Stiskněte **Pokročilé**;
 - Přejeďte dolů a stiskněte **Duální Messenger**;
-- Zakažte **Duální Messenger** pro všechny aplikace;
+- Zakažte **Duální messenger** pro všechny aplikace;
 - Uzamkněte zařízení na 5 minut;
 - Odemkněte obrazovku a zkuste profil VPN vytvořit znovu.
 

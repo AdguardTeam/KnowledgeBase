@@ -1,100 +1,100 @@
 ---
-title: Features overview
+title: 機能概要
 sidebar_position: 1
 ---
 
 :::info
 
-この記事は、お使いのSafariブラウザのみを保護する「AdGuard  for Safari」に関するものです。 To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+この記事は、お使いのSafariブラウザのみを保護する「AdGuard  for Safari」に関するものです。 デバイス全体を保護するには、[AdGuardアプリをダウンロード](https://agrd.io/download-kb-adblock)してください。
 
 :::
 
-AdGuard for Safari was designed to conform to Apple's restrictions for ad blocking browser extensions and is the most popular ad blocker for Safari. Although it can’t be compared to our desktop ad blocking apps, it's free and can protect you from ads, trackers, phishing, and malicious websites.
+AdGuard for Safari は、広告をブロックするブラウザ拡張機能に対するApple制約に適合するように設計されており、Safari用の最も人気のある広告ブロッカーです。 機能面ではデスクトップ版広告ブロッカーアプリとは比較になりませんが、無料で広告、トラッカー、フィッシング、悪質なウェブサイトからあなたを守ることができます。
 
 ## 一般 {#general}
 
-![General tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/General.png)
+![一般設定タブ](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/General.png)
 
-The first tab is the General screen where you can set up basic things like notifications, update intervals, and launching AdGuard at system startup. You can also choose to display the AdGuard icon in the menu bar. There you can also turn on [content blockers](#contentblockers) to block ads, trackers, annoyances, etc.
+最初のタブである「一般設定」画面においては、通知、更新頻度、システム起動時の AdGuard 起動など、基本的なことを設定できます。 メニューバーに AdGuard アイコンを表示するかどうかを設定することもできます。 また、「[コンテンツブロッカー](#contentblockers)」をオンにして、広告、トラッカー、迷惑要素などをブロックすることもできます。
 
-## Filters {#filters}
+## フィルタ {#filters}
 
-![Filters tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/Filters.png)
+![フィルタタブ](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/Filters.png)
 
-A filter is a list of rules written in a special syntax. Following these rules, content blockers can filter web traffic: block ads or requests to malicious websites.
+フィルタとは、特別な構文で書かれたルールのリストです。 これらのルールに従って、コンテンツブロッカーはウェブトラフィックをフィルタリングし、広告や悪質なウェブサイトへのリクエストをブロックすることができるようになります。
 
-Filters are combined into eight thematic categories: *Ad Blocking, Privacy, Social widgets, Annoyances, Security, Language-specific filters, Custom, and Other filters*.
+すべてのフィルターは 8 つのカテゴリに結合されています: *広告ブロック、プライバシー、SNSウィジェット、迷惑要素、セキュリティ、言語特化フィルタ、カスタム、その他*
 
-Read more about [AdGuard filters](/general/ad-filtering/adguard-filters) or [ad filtering in general](/general/ad-filtering/how-ad-blocking-works).
+【もっと読む】[AdGuardフィルタについてはこちら](/general/ad-filtering/adguard-filters)、[広告フィルタリングに関する全体的な説明はこちら](/general/ad-filtering/how-ad-blocking-works)
 
-In the Filters tab, you can enable the whole category or separate filters. Changes in the Filters tab are reflected in the Content Blockers section (located in the General tab).
+「フィルタ」タブでは、カテゴリー全体または個別のフィルタを有効・無効にすることができます。 「フィルタ」タブでの変更は、（「一般設定」タブにある）「コンテンツブロッカー」セクションにも反映されます。
 
-## Content blockers {#contentblockers}
+## コンテンツブロッカー {#contentblockers}
 
-![Content blockers tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/Contentblockers.png)
+![コンテンツブロッカータブ](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/Contentblockers.png)
 
-A content blocker is a thematic cluster of filters. Privacy-related filters are included in the content blocker with the corresponding name — *AdGuard Privacy*.
+コンテンツブロッカーとは、テーマ別のフィルタ群です。 プライバシー関連のフィルターは、コンテンツブロッカーの「*AdGuardプライバシー*」というグループに含まれています。
 
-Content Blockers were designed for two reasons: to structure filters and to conform to Apple’s restrictions.
+コンテンツブロッカーが設計された理由は2つあります：フィルタを構成するためと、Appleの制約に適合させるためです。
 
-[In 2019](https://adguard.com/en/blog/adguard-safari-1-5.html), Apple put limitations on ad blockers for Safari, allowing them to use only 50,000 filtering rules simultaneously. As this number was not enough for an ad blocker to provide a good filtering quality (AdGuard Base Filter alone has 30,000 filtering rules), we divided AdGuard for Safari into six content blockers each containing up to 50,000 rules.
+[2019年](https://adguard.com/en/blog/adguard-safari-1-5.html)、AppleはSafari用の広告ブロッカーに制約を設け、同時に使用できるフィルタリングルールは5万件までと制限しました。 広告ブロッカーとして十分なフィルタリングクオリティを提供するにはこの数では不十分であったため（AdGuard ベースフィルタだけでも30,000のフィルタリングルールがある）、AdGuard for Safari を6つのコンテンツブロッカーに分割し、それぞれに最大50,000のルールを含ませることにしました。
 
-[In 2022](https://adguard.com/en/blog/adguard-for-safari-1-11.html), Apple increased the filtering rule limit for each content blocker to 150,000 rules applied simultaneously. Regarding AdGuard for Safari, up to 900,000 rules can be enabled for all six content blockers.
+[2022年](https://adguard.com/en/blog/adguard-for-safari-1-11.html)、アップルは各コンテンツブロッカーの、同時に適用できるフィルタリングルール上限を15万ルールに引き上げました。 そのため、AdGuard for Safari では、6つのコンテンツブロッカーすべてを使って、最大90万のルールを有効にすることができます。
 
-Whereas the limit has been increased, the structure of content blockers has remained the same.
+上限が引き上げられたとはいえ、コンテンツブロッカーの構造は変わっていません。
 
-In the Content blockers tab, you can see which content blockers are enabled, how many rules each of them is using, and which filters are functioning.
+「コンテンツブロッカー」画面では、どのコンテンツブロッカーが有効になっているか、それぞれのコンテンツブロッカが使用しているルールの数、どのフィルタが機能しているかを確認できます。
 
 :::tip
 
-You can manage enabled filters in the Filters tab. In the Content blockers section, you can only see the list of already enabled filters.
+有効になっているフィルタは「フィルタ」タブで管理できます。 「コンテンツブロッカー」画面では、すでに有効になっているフィルターのリストのみが表示されます。
 
 :::
 
-### AdGuard General {#adguard_general}
+### AdGuard 一般 {#adguard_general}
 
-*AdGuard General* is a content blocker that combines the most essential filters for blocking ads. We recommend keeping the AdGuard Base Filter always enabled.
+「*AdGuard 一般*」は、広告をブロックするために最も重要なフィルターを組み合わせたコンテンツブロッカーです。 特に、「AdGuard ベースフィルタ」は常に有効にしておくことをお勧めします。
 
-### AdGuard Privacy {#adguard_privacy}
+### AdGuard プライバシー {#adguard_privacy}
 
-This content blocker is the main tool against counters and other web analytics tools. The *AdGuard Tracking Protection filter* is enabled by default.
+このコンテンツブロッカーは、カウンターやその他のウェブ解析・追跡ツールに対抗する主要なツールです。 「*AdGuard 追跡防止フィルタ*」はデフォルトで有効になっています。
 
-### AdGuard Social {#adguard_social}
+### AdGuard ソーシャル {#adguard_social}
 
-*AdGuard Social* contains filters against social media buttons, widgets, scripts, and icons. Other annoyance filters can also be found in this section: filters against pop-ups, mobile app banners, cookie notices, and more. To enable them, find *Social Widgets* in the Filters tab.
+*AdGuard ソーシャル*には、ソーシャルメディアボタン、ウィジェット、スクリプト、アイコンに対するフィルタが含まれています。 ポップアップ、モバイルアプリのバナー、クッキー同意通知など、その他の迷惑要素フィルターもこのセクションに含まれます。 これらを有効にするには、「フィルタ」タブで「*SNSウィジェット*」を見つけてください。
 
-### AdGuard Security {#adguard_security}
+### AdGuard セキュリティ {#adguard_security}
 
-This content blocker unites several security-related filters. *Malware Domains Blocklist* blocks domains that are notorious for spreading malware and spyware. *Spam404* protects you from Internet fraudsters. *NoCoin Filter List* disrupts browser-based cryptominers, such as Coinhive.
+このコンテンツブロッカーは、いくつかのセキュリティ関連フィルタを統合しています。 *Malware Domains Blocklist* は、マルウェアやスパイウェアの拡散で悪名高いドメインをブロックします。 *Spam404* は、インターネット詐欺師からあなたを守ります。 *NoCoin Filter List* は、Coinhiveのようなブラウザベースのクリプトマイナーの動作を防止します。
 
-### AdGuard Other {#adguard_other}
+### AdGuard その他 {#adguard_other}
 
-*AdGuard Other* contains filters with various functions. For example, it has a filter that unblocks search ads and self-promo ads. In some cases, it helps find exactly what you are looking for, because these kinds of ads are more relevant and less intrusive than others.
+*AdGuard その他* には、さまざまな機能を持つフィルタが含まれています。 例えば、検索広告や自己宣伝広告のブロックを解除するフィルターがあります。 場合によっては、この種の広告は他の広告よりも関連性が高く、邪魔にならないため、探しているものを正確に見つけるのに役立つので、有効にすることが便利だったりします。
 
 :::note Disclaimer
 
-We don’t have any ‘acceptable ads’ paid by advertisers. Instead, we provide users with an option to see [search ads and websites' self-promotion](/general/ad-filtering/search-ads).
+AdGuardは、広告主からの報酬を受けて広告をブロックしない（「控えめな広告」等）ことは一切ありません。 代わりに、ユーザーご自身が、 [検索広告とウェブサイトの自己宣伝](/general/ad-filtering/search-ads)広告のブロックを解除できるオプションを提供しています。
 
 :::
 
-### AdGuard Custom {#adguard_custom}
+### AdGuard カスタム {#adguard_custom}
 
-![Custom tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/AGCustom.png)
+![カスタムタブ](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/AGCustom.png)
 
-If you need more filters, you can add them to *AdGuard Custom*. To add a custom filter, enter a URL or a local file path in the relevant field. You can find new filters at [filterlists.com](https://filterlists.com/).
+さらにフィルタを必要とする場合は、 *AdGuard カスタム*にそれらをユーザーから追加できます。 カスタムフィルタを追加するには、該当するフィールドにフィルタのURLまたはローカルファイルのパスを入力します。 [filterlists.com](https://filterlists.com/) で様々なフィルタを見つけることができます。
 
-## User rules {#userrules}
+## ユーザールール {#userrules}
 
-User rules can be used to customize ad blocking. They can be added manually, imported, or created automatically when you block an element on the page. To add your own filering rules, use a [special syntax](/general/ad-filtering/create-own-filters).
+ユーザールールは、広告ブロックの効果をカスタマイズするために使用することができます。 ユーザールールは、手動で追加することも、インポートすることも、ページ上の要素をブロックしたときに自動的に作成することもできます。 独自のフィルタリングルールを追加するには、 [特別な構文](/general/ad-filtering/create-own-filters)を使用する必要があります。
 
 ## AdGuardについて {#about}
 
-![About tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/About.png)
+![このアプリについて](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/About.png)
 
-In the About tab, you can see info about the current version of your product and links to legal documents. There is also a link to our repository on GitHub. You can monitor the product development, create feature requests and report bugs there.
+「このアプリについて」タブでは、AdGuard for Safari の現在のバージョンに関する情報や法的文書へのリンクをご確認いただけます。 GitHubリポジトリへのリンクもあります。 GitHubでは、製品開発のプロセスを確認し、機能要求を作成したり、バグを報告したりすることができます。
 
 :::note Reminder
 
-AdGuard for Safari can be downloaded for free [from the App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259). A detailed setup instruction is available in the [Knowledge base](../installation).
+AdGuard for Safari は[App Storeから](https://apps.apple.com/app/adguard-for-safari/id1440147259)無料でダウンロードできます。 詳細なセットアップ方法は、 [こちらのナレッジベース記事](../installation)に掲載されています。
 
 :::

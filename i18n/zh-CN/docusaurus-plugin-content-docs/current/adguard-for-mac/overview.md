@@ -1,5 +1,5 @@
 ---
-title: Features overview
+title: 功能概览
 sidebar_position: 1
 ---
 
@@ -37,9 +37,9 @@ Descriptions under option titles seem self-explanatory, but still:
 
 From this same window you can access the above-mentioned Allowlist, to which you can add websites you do not wish AdGuard to filter. Just click the corresponding button located at the bottom of the window.
 
-## Filters
+## 过滤器
 
-![Filters](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Filters.jpg)
+![过滤器](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Filters.jpg)
 
 Filters are the main driving force behind the Ad blocker module. To understand how filtering works, get acquainted with our [comprehensive article](https://adguard.com/en/blog/how-ad-blocking-is-done.html). But in essence, filter lists are sets of rules written in a special language, and your ad blocker is an interpreter of these rules who then implements them. As a result, you stop seeing ads on your web pages and life gets lots better.
 
@@ -55,9 +55,9 @@ Aside from the more general and universally applicable filters (like Base filter
 
 AdGuard filters are automatically updated. Our developers create them all based on user feedback received. You can always help other AdGuard users (and yourself, in perspective) by sending us reports right from the app's Assistant (it's really handy, we'll tell you more about the Assistant further on), or from the [website](https://agrd.io/report). If you wish to know more about AdGuard filters, here is [some info](/general/ad-filtering/adguard-filters).
 
-## User rules
+## 用户规则
 
-![User rules](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Filters.jpg)
+![用户规则](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Filters.jpg)
 
 Another vital part of the Ad Blocker module are its User rules. If you have some coding experience and would like to create your own rules that would be a better custom fit than the standard filters already available, then you can try your hand at this. The syntax AdGuard uses for its filtering rules is based on that of any other ad blocking extension, but with considerable additions, extending its possibilities. The whole process of rule-writing in all its nuances is described in these comprehensive instructions, so if you want to write some custom rules and check how much of a coder you are, just follow the steps we described [in this article](/general/ad-filtering/create-own-filters).
 

@@ -1,67 +1,67 @@
 ---
-title: Safari extensions
+title: Safari 扩展
 sidebar_position: 3
 ---
 
 :::info
 
-这篇文章是关于 Safari 版的 AdGuard，它只能保护用户的 Safari 浏览器。 To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+这篇文章是关于 Safari 版的 AdGuard，用于保护用户的 Safari 浏览器。 如果需要保护整个设备，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)
 
 :::
 
-## What Safari extensions are
+## 什么是 Safari 扩展
 
-Safari extensions are small software programs that add functionality to the Safari web browser. They allow users to customize and enhance their browsing experience by adding features that are not natively built into the browser. AdGuard for Safari uses extensions primarily to apply filtering rules on websites opened in Safari.
+Safari 扩展是为 Safari 浏览器添加功能的小型软件程序。 它们允许用户添加浏览器未内置的功能以定制和增强浏览体验。 Safari 版 AdGuard 主要使用扩展功能对通过 Safari 打开的网站应用过滤规则。
 
-## How it works
+## 工作原理
 
-To block ads, trackers, and annoyances on websites, AdGuard uses filtering rules. The rules from AdGuard's and your custom filters are converted into ones comprehensible by Safari and are integrated into 6 Safari extensions:
+AdGuard 使用过滤规则阻止网站上的广告、跟踪器和其他骚扰。 AdGuard 的规则和用户的自定义过滤器会转换为 Safari 可以“理解”的规则，并集成到六个 Safari 扩展中：
 
-- AdGuard General
-- AdGuard Privacy
-- AdGuard Social
-- AdGuard Security
-- AdGuard Other
+- AdGuard 常用
+- AdGuard 隐私
+- AdGuard 社交
+- AdGuard 安全
+- AdGuard 其它
 
-Each content-blocking extension can include up to 150,000 active filtering rules. The number of rules within most filter groups does not surpass 150,000. However, if you activate too many language-specific or custom filters, you might exceed the limit. In such cases, random rules that are over the limit will be automatically disabled, which may lead to incorrect blocking. **We strongly recommend activating only the filters you need**.
+每个内容拦截扩展最多可包含 150,000 个启动的过滤规则。 大多数过滤组内的规则数量不超过 15 万个。 不过，如果启动太多特定语言或自定义过滤器，可能会超出限制。 在这种情况下，超过限制的随机规则将被自动禁用，这可能会导致拦截错误。 **我们强烈建议只启动所需要的过滤器**。
 
-There is also one more extension responsible for other features: *AdGuard for Safari*, which adds the AdGuard icon next to the search bar in Safari and allows using advanced rules to block complex ads.
+还有一个扩展：*AdGuard Safari 版*，它将 AdGuard 图标添加到 Safari 中的搜索栏旁边，并允许用户使用高级规则来拦截复杂的广告。
 
-![Safari extensions](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-icon1.png)
+![Safari 扩展](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-icon1.png)
 
-More on each extension below.
+下面我们详细介绍每个扩展。
 
-## Content-blocking extensions
+## 内容拦截扩展
 
-*AdGuard General* applies rules from filters that you can find in *Filters* → *Ad blocking* and *Filters* → *Language-specific*. This extension focuses on comprehensive ad blocking and includes filters for ads in specific languages.
+「*AdGuard 常用*」应用过滤器中的规则，要启动这些规则请前往「*过滤器*」→「*广告拦截*」和「*过滤器*」→「*特定语言*」。 该扩展专注于全面广告拦截，包括特定语言的广告过滤器。
 
-*AdGuard Privacy* applies rules from filters located in *Filters* → *Privacy*. It blocks tracking mechanisms and ensures that your browsing activity remains private.
+用户可以在「*过滤器*」→「*隐私*」中启用「*AdGuard 隐私*」的过滤器规则。 它可以阻止跟踪机制，确保用户的浏览活动保持私密。
 
-*AdGuard Social* applies rules from filters that can be found in *Filters* → *Social Widgets* and *Filters* → *Annoyances*. It blocks popups, social media buttons, online assistant windows, and other elements on web pages that you might find annoying.
+用户可在「*过滤器*」→「*社交工具*」和「*过滤器*」→「*烦人元素*中启动「*AdGuard 社交* 」过滤器规则。 它能拦截弹出窗口、社交媒体按钮、在线助手窗口以及网页上其他用户可能会觉得烦人的元素。
 
-*AdGuard Security* applies rules from filters under *Filters* → *Security*. This extension identifies and blocks potentially harmful elements, safeguarding users from malicious content.
+用户可以在「*过滤器*」→「*安全*」中启用「*AdGuard 安全*」的过滤器规则。 该扩展可识别并阻止潜在的有害元素，保护用户免受恶意内容的侵害。
 
-*AdGuard Other* applies rules from filters that that don't fall under the above-mentioned categories and that are located in *Filters* → *Other*: *Filter unblocking search ads and self-promotion*, *AdGuard DNS filter*, and *AdGuard Experimental filter*.
+「*AdGuard 其他*」应用不属于上述类别的过滤器规则。要启动「AdGuard 其他」 前往「*过滤器*」→「*其他*」：「*解除搜索广告和自我推销过滤器*」、「*AdGuard DNS 过滤器*」，以及「*AdGuard 实验性过滤器*」。
 
-*AdGuard Custom* applies rules from filters that you add on your own to *Custom filters*.
+*AdGuard 自定义* 应用用户自己添加到「*自定义过滤器*」的规则。
 
-User rules and allowlist rules are included into every extension.
+每个扩展都包含用户规则和白名单规则。
 
 ## AdGuard Safari版
 
-*AdGuard for Safari* enables the AdGuard icon next to the search bar. It's useful if you want to quickly set up protection on a particular website or block ads manually. It also contains advanced rules that aren't converted into the format supported by Safari. This includes CSS rules, CSS selectors, and scriptlets that allow AdGuard to block complex ads — for example, on YouTube.
+「*AdGuard Safari 版*」可启用搜索栏旁边的 AdGuard 图标。 如果用户想在特定网站上快速设置保护或手动屏蔽广告，AdGuard Safari 版就非常有用。 它还包含未转换为 Safari 支持格式的高级规则， 包括 CSS 规则、CSS 选择器以及允许 AdGuard 阻止复杂广告（例如 YouTube 上的广告）的脚本程序。
 
-## How to manage Safari extensions
+## 如何管理 Safari 扩展程序
 
-1. Open Safari and click *Safari* in the upper left corner of the screen to expand the menu. ![Safari settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-settings1.png)
-1. Click *Settings...*
-1. Select *Extensions*. ![Extensions tab](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-extensions1.png)
+1. 打开 Safari，单击屏幕左上角的「*Safari*」展开菜单。 ![Safari 设置 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-settings1.png)
+1. 单击「*设置...*」
+1. 选择「*扩展*」 ![扩展标签](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-extensions1.png)
 
-## Why AdGuard for Safari requires permission
+## 为什么 Safari 版 AdGuard 需要权限
 
-When enabling the *AdGuard for Safari* extension, you might notice that it requires **access to web page content** and **access to browsing history**. Here's why it needs these permissions:
+启用「*AdGuard Safari 版*」扩展时，用户可能会注意到它需要「**访问网页内容**」和「**访问浏览历史**」的权限。 下面是需要这些权限的原因：
 
-- Access to web page content is required for manual ad blocking and advanced blocking rules to work correctly
-- Access to browsing history is required to check the protection status on websites and determine which advanced rules should be applied
+- 访问网页内容，允许手动广告拦截和高级拦截规则正常工作。
+- 访问浏览历史记录，允许扩展检查网站的保护状态，并确定应应用哪些高级规则。
 
-We do not use this data for any other purpose or share it with anyone. For more info, you can consult our [Privacy policy](https://adguard.com/privacy.html).
+我们不会将这些数据用于任何其他目的或与任何人共享。 如需了解更多信息，请查看我们的[隐私政策](https://adguard.com/privacy.html)。

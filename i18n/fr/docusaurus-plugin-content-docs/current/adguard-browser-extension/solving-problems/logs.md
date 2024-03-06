@@ -1,57 +1,57 @@
 ---
-title: How to export logs from the background page
+title: Comment exporter les journaux depuis la page d'arrière-plan
 sidebar_position: 1
 ---
 
-## Exporting logs from the background page in the extension
+## Exportation des journaux depuis la page d'arrière-plan dans l'extension
 
 ### Chrome
 
-1. Open AdGuard Browser Extension and, if possible, repeat the actions that led to the error. Note the exact time when the error occurred.
+1. Ouvrez l'extension de navigateur AdGuard et, si possible, répétez les actions qui ont conduit à l'erreur. Notez le moment exacte auquel cette erreur s'est produite.
 
-2. Navigate to `chrome://extensions`.
+2. Naviguez vers `chrome://extensions`.
 
-3. Enable _Developer mode_.
+3. Activez le _Mode développeur_.
 
    ![Developer mode \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/developer_mode1.png)
 
-4. Click `background.html`.
+4. Cliquez sur `background.html`.
 
    ![Background \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/background1.png)
 
-5. Open the tab _Console_.
+5. Ouvrez l'onglet _Console_.
 
-   ![The Console tab \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/console.png)
+   ![L'onglet Console \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/console.png)
 
-6. Open the context menu and select _Save as…_.
+6. Ouvrez le menu contextuel et sélectionnez _Enregistrer sous…_.
 
-   ![Save as \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save.png)
+   ![Enregistrer sous \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save.png)
 
 ### Firefox
 
-1. Open AdGuard Browser Extension and, if possible, repeat the actions that led to the error. Note the exact time when the error occurred.
+1. Ouvrez l'extension de navigateur AdGuard et, si possible, répétez les actions qui ont conduit à l'erreur. Notez le moment exacte auquel cette erreur s'est produite.
 
-2. Navigate to `about:addons`.
+2. Accédez à `about:addons`.
 
-3. Click _Debug Add-ons_.
+3. Cliquez sur _Déboguer modules additionnels_.
 
-   ![Debug Add-ons \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/add-ons.png)
+   ![Déboguer modules additionnels \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/add-ons.png)
 
-4. Click _Inspect_.
+4. Cliquez sur _Inspecter_.
 
-   ![Inspect \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/inspect.png)
+   ![Inspecter \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/inspect.png)
 
-5. Go to the tab _Console_.
+5. Allez dans l'onglet _Console_.
 
    ![Console \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/ff_console.png)
 
-6. Click _Save all Messages to File_.
+6. Cliquez sur _Enregistrer tous les messages dans un fichier_.
 
-   ![Save \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save-to-file.png)
+   ![Enregistrer \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save-to-file.png)
 
-## Sending logs
+## Envoi des journaux
 
-Now that you have collected the logs, please follow these steps to submit them to our development team:
+Maintenant que vous avez collecté les journaux, veuillez suivre ces étapes pour les soumettre à notre équipe de développement :
 
-1. Report the bug on [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose).
-2. Send your archive with logs and playback time to `devteam@adguard.com` and add a link to your GitHub issue. You can also upload the archive to Google Drive and add the link to it instead of attaching the file.
+1. Signalez le bug sur [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose).
+2. Envoyez votre archive avec les journaux et la durée de lecture à `devteam@adguard.com` et ajoutez un lien vers votre problème GitHub. Vous pouvez également télécharger l'archive sur Google Drive et y ajouter le lien au lieu de joindre le fichier.

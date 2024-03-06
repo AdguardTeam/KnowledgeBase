@@ -67,7 +67,7 @@ Follow this instruction:
 
 It is important to reproduce the problem after you're done with the first part.
 
-1. Reproduce the problem.
+1. Reproduzieren Sie das Problem.
 
 1. Remember/write down the date and time of reproduction and include it in the email to our support later.
 
@@ -97,7 +97,7 @@ It is important to reproduce the problem after you're done with the first part.
 
 1. Choose **Record** in the menu. Choose a name for a log file or just press **OK**. Now you can press **Home** button, CatLog will continue recording the log in background.
 
-1. Reproduce the issue.
+1. Reproduzieren Sie das Problem.
 
 1. Open CatLog and press **Stop record** in the menu.
 

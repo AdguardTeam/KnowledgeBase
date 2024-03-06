@@ -37,7 +37,7 @@ Type *adguard* in the search bar and tap the string *adGuard* which will be amon
 
 ![Tap GET below the AdGuard app *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/3.png)
 
-## AdGuard Pro for iOS installation
+## iOS için AdGuard Pro yüklemesi
 
 AdGuard Pro is a paid version of AdGuard for iOS, offering an expanded set of functions (same as "AdGuard" app with premium enabled). To install it on your device run the App Store application and tap the *Search* icon on the bottom of the screen.
 

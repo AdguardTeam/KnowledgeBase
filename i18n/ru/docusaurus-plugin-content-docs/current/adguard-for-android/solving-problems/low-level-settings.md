@@ -13,7 +13,7 @@ sidebar_position: 6
 
 :::caution
 
-Изменение *Низкоуровневых настроек* может вызвать проблемы с производительностью AdGuard, нарушить подключение к интернету или поставить под угрозу вашу безопасность и конфиденциальность. Заходите в этот раздел, только если вы уверены в своих действиях или наша служба поддержки попросила вас об этом.
+Изменение *Низкоуровневых настроек* может вызвать проблемы с производительностью AdGuard, нарушить подключение к интернету или поставить под угрозу вашу безопасность и конфиденциальность. This section should only be opened if you know what you are doing, or you were asked to do so by our support team.
 
 :::
 
@@ -39,7 +39,7 @@ sidebar_position: 6
 
 #### Bootstrap DNS-серверы
 
-Загрузочный DNS для серверов DoH, DoT и DoQ. По умолчанию используется *Автоматический DNS* — системный DNS-сервер или AdGuard DNS. Выбирая *Пользовательский DNS*, вы можете использовать IPv4- и IPv6-адреса в качестве upstream-серверов.
+Загрузочный DNS для серверов DoH, DoT и DoQ. The *Automatic DNS* — the system DNS or AdGuard DNS — is used by default. Выбирая *Пользовательский DNS*, вы можете использовать IPv4- и IPv6-адреса в качестве upstream-серверов.
 
 #### Режим блокировки для правил adblock
 
@@ -197,7 +197,7 @@ sidebar_position: 6
 
 #### Включить шлюз Wi-Fi в маршруты VPN
 
-Если этот параметр включён, IP-адреса шлюзов будут добавляться в VPN-марштуры при работе с Wi-Fi.
+If this setting is enabled, the gateway IP addresses will be added to VPN routes when on Wi-Fi.
 
 #### IPv4-адрес
 

@@ -37,7 +37,7 @@ sidebar_position: 1
 
    ![Debug Add-ons \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/add-ons.png)
 
-4. Click _Inspect_.
+4. Нажмите _Проверить_.
 
    ![Inspect \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/inspect.png)
 

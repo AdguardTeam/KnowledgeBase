@@ -37,9 +37,9 @@ Descriptions under option titles seem self-explanatory, but still:
 
 From this same window you can access the above-mentioned Allowlist, to which you can add websites you do not wish AdGuard to filter. Just click the corresponding button located at the bottom of the window.
 
-## Filters
+## Filtri
 
-![Filters](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Filters.jpg)
+![Filtri](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Filters.jpg)
 
 Filters are the main driving force behind the Ad blocker module. To understand how filtering works, get acquainted with our [comprehensive article](https://adguard.com/en/blog/how-ad-blocking-is-done.html). But in essence, filter lists are sets of rules written in a special language, and your ad blocker is an interpreter of these rules who then implements them. As a result, you stop seeing ads on your web pages and life gets lots better.
 
@@ -69,9 +69,9 @@ DNS filtering is one of the most useful features, thanks to which all your DNS t
 
 In the DNS panel you can select the DNS servers from known DNS providers or even add custom DNS servers. Also you can add domains to DNS blocklist or allowlist and add complicated rules using DNS rule syntax. Finally, you can [add DNS filters of your choice](https://filterlists.com).
 
-## Stealth Mode
+## Modalità Invisibilità
 
-![Stealth Mode](https://cdn.adtidy.org/content/kb/ad_blocker/mac/StealthMode.jpg)
+![Modalità Invisibilità](https://cdn.adtidy.org/content/kb/ad_blocker/mac/StealthMode.jpg)
 
 This module is a very useful tool that will help you maintain your privacy from websites that try to retain such info about you as your IP address, computer parameters, browser settings and even the initial page from which you were redirected, not to mention cart contents if we speak of web stores. If this list of info potentially to be shared with shady third parties doesn't make you think twice, then might we add that in most cases they will also get such personal data as your age, yearly income, medical history, physical address and your kids' names. Eliminating such things as unwanted cookies or clandestine insertion of tracking parameters into your browser is what Stealth Mode does best.
 
@@ -105,9 +105,9 @@ AdGuard Browser Assistant’s primary function is to manage filtering directly f
 
 You will be prompted to install the Browser Assistant for your default browser when you first install AdGuard (during the onboarding process). If you missed it, you can [download it for any browser](https://adguard.com/adguard-assistant/overview.html) at any time.
 
-## Extensions
+## Estensioni
 
-![Extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Extensions.jpg)
+![Estensioni](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Extensions.jpg)
 
 Extensions are small programs that do exactly what their name implies — they extend functionality. And AdGuard uses several extensions of its own, also called userscripts, to broaden its functions range:
 

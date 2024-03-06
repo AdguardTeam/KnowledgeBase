@@ -1,9 +1,9 @@
 ---
-title: Что такое лицензия AdGuard
+title: What is an AdGuard license?
 sidebar_position: 1
 ---
 
-## Что такое лицензия AdGuard
+## What is an AdGuard license?
 
 Лицензия — это разрешение на использование продукта AdGuard, предоставляемое в соответствии [с Лицензионным соглашением](https://adguard.com/eula.html). Если лицензия AdGuard привязана к электронной почте, её можно найти [в личном кабинете AdGuard](https://my.adguard.com/).
 

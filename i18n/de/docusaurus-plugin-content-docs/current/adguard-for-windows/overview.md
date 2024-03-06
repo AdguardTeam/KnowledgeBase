@@ -1,203 +1,203 @@
 ---
-title: Features overview
+title: Funktionsübersicht
 sidebar_position: 1
 ---
 
 :::info
 
-Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
 
 :::
 
-AdGuard for Windows is an easy-to-use tool that blocks annoying banners, popups, video ads, and trackers. But that's not all: it helps you save traffic, load web pages faster, and protect your computer from undesirable and potentially malicious websites. AdGuard also protects you from phishing websites and keeps your kids away from inappropriate content.
+AdGuard für Windows ist ein einfach zu bedienendes Tool, das lästige Banner, Pop-ups, Videoanzeigen und Tracker blockiert. Aber das ist noch nicht alles: Es hilft Ihnen, Datenverkehr zu sparen, Webseiten schneller zu laden und Ihren Computer vor unerwünschten und potenziell bösartigen Websites zu schützen. AdGuard schützt Sie auch vor Phishing-Websites und sorgt dafür, dass Ihre Kinder keinen Zugang zu ungeeigneten Inhalten haben.
 
-## Home screen
+## Startseite
 
-![Main screen *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/home-screen.png)
+![Hauptbildschirm *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/home-screen.png)
 
-Once you start AdGuard for Windows, you will see the main screen of the app. Its most noticeable detail is the *enable/disable protection* button. Also, on this screen you can monitor blocked ads, trackers and threats statistics, find out the current version of the app or update it. Furthermore, there are four tabs in the upper right corner: *Settings*, *Support*, *License*, and *About*. Each of these is worth talking about separately.
+Sobald Sie AdGuard für Windows starten, wird der Hauptbildschirm der App angezeigt. Das auffälligste Detail ist die Schaltfläche *Schutz deaktiviert/Schutz ist aktiviert*. Auf dieser Seite können Sie auch Statistiken über blockierte Werbung, Tracker und Bedrohungen einsehen, die aktuelle Version der App abrufen oder die App aktualisieren. Außerdem gibt es vier Tabs in der oberen rechten Ecke: *Einstellungen*, *Support*, *Lizenz* und *Über*. Jeder dieser Punkte ist es wert, gesondert behandelt zu werden.
 
-## Settings
+## Einstellungen
 
-![Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings.png)
+![Einstellungen *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/settings.png)
 
-*Settings* is the section that requires the most attention. This is where you can configure the app so that it fully meets your requirements: blocks only what bothers you, uses the DNS server of the trusted provider, removes third-party cookies, and so on.
+*Einstellungen* ist der Bereich, der die meiste Aufmerksamkeit erfordert. Hier können Sie die App so konfigurieren, dass sie genau Ihren Bedürfnissen entspricht: Sie blockiert nur das, was Sie stört, verwendet den DNS-Server des vertrauenswürdigen Anbieters, entfernt Cookies von Drittanbietern und so weiter.
 
-### General settings
+### Allgemeine Einstellungen
 
-Here you can set the language and theme (Dark or Light), enable AdGuard launching at system start-up and silent automatic updates, choose the update channel and filter update check interval. Also Settings is the place to go if AdGuard for Windows is not working properly and the support team asked you to [collect *Debug logs*](../solving-problems/adguard-logs).
+Hier können Sie die Sprache und das Design (dunkel oder hell) festlegen, den Start von AdGuard beim Systemstart und automatische Aktualisierungen im Hintergrund aktivieren, den Aktualisierungskanal auswählen und die Häufigkeit der Filteraktualisierungen festlegen. Die Einstellungen sind auch der richtige Ort, wenn AdGuard für Windows nicht richtig funktioniert und das Support-Team Sie gebeten hat, [*Protokolle* zu exportieren](../solving-problems/adguard-logs).
 
-![Advanced Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/advanced-settings.png)
+![Erweiterte Einstellungen *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/advanced-settings.png)
 
-At the very bottom of the screen you will find *Advanced Settings*. Changing some of them mindlessly may potentially cause problems with AdGuard's performance, break the Internet connection or compromise your security and privacy. That's why we suggest you open this section only if you are sure of what you are doing or our support team has asked you about it. If you want to know what can be set up in *Advanced Setting* read the [dedicated article](../solving-problems/low-level-settings).
+Ganz unten auf dem Bildschirm finden Sie *Erweiterte Einstellungen*. Wenn Sie einige von ihnen unbedacht ändern, kann dies zu Problemen mit der Leistung führen, die Internetverbindung unterbrechen oder Ihre Sicherheit und Privatsphäre gefährden. Deshalb empfehlen wir Ihnen, diesen Bereich nur zu öffnen, wenn Sie sicher sind, was Sie tun, oder wenn unser Support-Team Sie danach gefragt hat. Wenn Sie wissen möchten, was unter *Erweiterte Einstellungen* eingestellt werden kann, lesen Sie den [bezogenen Artikel](../solving-problems/low-level-settings).
 
-### Ad Blocker
+### Werbeblocker
 
-This is the main module of AdGuard for Windows that removes ads from the websites you visit and from the apps installed on your device. To filter out advertising and privacy-threatening content such as banners, pop-ups, or trackers AdGuard uses different filters: groups of rules with a similar purpose written with a [special syntax](/general/ad-filtering/create-own-filters). To understand what filters are and how they work read [this article](/general/ad-filtering/how-ad-blocking-works).
+Dies ist das Hauptmodul von AdGuard für Windows, das Werbung von den von Ihnen besuchten Websites und von den auf Ihrem Gerät installierten Apps entfernt. Um Werbung und datenschutzgefährdende Inhalte wie Banner, Pop-ups oder Tracker herauszufiltern, verwendet AdGuard verschiedene Filter: Gruppen von Regeln mit einem ähnlichen Zweck, die in einer [speziellen Syntax](/general/ad-filtering/create-own-filters) geschrieben werden. Um zu verstehen, was Filter sind und wie sie funktionieren, lesen Sie [diesen Artikel](/general/ad-filtering/how-ad-blocking-works).
 
-![Ad Blocker *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/ad-blocker.png)
+![Werbeblocker *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/ad-blocker.png)
 
-In the Ad Blocker module you can:
+Im Werbeblocker-Modul können Sie:
 
-- enable automatic activation of language-specific filters,
-- disable [search ads and self-promotion](/general/ad-filtering/search-ads) blocking,
-- activate pre-installed filters such as *AdGuard Base filter*,
-- install filters from the list or add a custom filter by clicking the *Add a filter* button,
-- make changes to existing rule groups using the *Filter editor* button,
-- see all the requests sent by browsers and apps installed on your computer by clicking the *Filtering log* button. From there you can also block or unblock any request by creating a custom rule,
-- compose a filter from your own rules written manually, imported or created with the AdGuard Assistant extension.
+- die automatische Aktivierung von sprachspezifischen Filtern ermöglichen,
+- das Sperren von [Werbung in Suchmaschinen und Eigenwerbung zulassen](/general/ad-filtering/search-ads) deaktivieren,
+- vorinstallierte Filter wie den *AdGuard Basisfilter* aktivieren,
+- Filter aus der Liste installieren oder einen eigenen Filter hinzufügen, indem Sie auf die Schaltfläche *Filter hinzufügen* klicken,
+- Änderungen an bestehenden Regelgruppen über die Schaltfläche *Filter bearbeiten* vornehmen,
+- alle von den auf Ihrem Computer installierten Browsern und Apps gesendeten Anfragen sehen, indem Sie auf die Schaltfläche *Filter-Protokoll* klicken. Von dort aus können Sie auch jede Anfrage sperren oder freigeben, indem Sie eine benutzerdefinierte Regel erstellen,
+- einen Filter aus Ihren eigenen, manuell erstellten, importierten oder mit der Erweiterung Browser-Assistent erstellten Regeln zusammenstellen.
 
-Before you start manually writing your own rules read our detailed [syntax guide](/general/ad-filtering/create-own-filters).
+Bevor Sie mit der manuellen Erstellung Ihrer eigenen Regeln beginnen, lesen Sie unsere ausführliche [Syntax-Anleitung](/general/ad-filtering/create-own-filters).
 
-### Stealth Mode
+### Privatsphäre
 
-Many websites gather information about their visitors, such as their IP addresses, information about the browser and operating system installed, screen resolution, and even what page the user came or was redirected from. Some web pages use cookies to mark the browser and save your personal settings, user preferences, or "recognize" you upon your next visit. Stealth Mode safeguards your personal information from such data and statistics gathering systems.
+Viele Websites sammeln Informationen über Personen, die sie besuchen, z. B. ihre IP-Adressen, Informationen über den Browser und das installierte Betriebssystem, die Bildschirmauflösung und sogar darüber, von welcher Seite die Benutzer:innen kamen oder weitergeleitet wurden. Einige Webseiten verwenden Cookies, um den Browser zu kennzeichnen und Ihre persönlichen Einstellungen und Vorlieben zu speichern oder Sie bei Ihrem nächsten Besuch wiederzuerkennen. Das Privatsphäre-Modul schützt Ihre persönlichen Informationen vor solchen Daten- und Statistiksammelsystemen.
 
-![Stealth Mode *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/stealth-mode.png)
+![Privatsphäre *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/stealth-mode.png)
 
-You can flexibly adjust the work of Stealth Mode: for instance, you can prohibit the website to receive the search request you used to find it on the Internet, automatically delete both third-party and website’s own cookies, and disable location sharing in your browser that can be used to track your whereabouts.
+Sie können die Funktionsweise dieses Moduls flexibel anpassen: Sie können z. B. verhindern, dass die Website die Suchanfrage erhält, mit der Sie sie im Internet gefunden haben, Sie können Cookies von Drittanbietern und der Website selbst automatisch löschen und Sie können die Standortfreigabe in Ihrem Browser deaktivieren, die dazu verwendet werden kann, Ihren Aufenthaltsort zu verfolgen.
 
-To learn everything about Stealth Mode and its many options, [read this article](/general/stealth-mode).
+Um alles über das Privatsphäre-Modul und seine vielen Optionen zu erfahren, [lesen Sie diesen Artikel](/general/stealth-mode).
 
-### Browsing Security
+### Internetsicherheit
 
-Browsing Security gives strong protection against malicious and fishing websites. No, AdGuard for Windows is not an antivirus. It will neither stop the download of a virus when it's already started, nor delete the already existing ones. But it will warn you if you're about to proceed to a website whose domain has been added to our "untrusted sites" database, or to download a file from such website. You can find more information about how this module works in the [dedicated article](/general/browsing-security).
+Internetsicherheit bietet starken Schutz vor bösartigen und Phishing-Websites. AdGuard für Windows ist natürlich kein Antivirenprogramm. Die App kann weder das Herunterladen eines Virus stoppen, wenn es bereits begonnen hat, noch bereits vorhandene Viren löschen. Sie werden jedoch gewarnt, wenn Sie eine Website aufrufen oder eine Datei von einer Website herunterladen, deren Domain in unserer Datenbank „Nicht vertrauenswürdige Websites“ aufgeführt ist. Weitere Informationen über die Funktionsweise dieses Moduls finden Sie in dem [speziellen Artikel](/general/browsing-security).
 
-In this module you can
+In diesem Modul können Sie:
 
-- enable notifications to block requests to malicious and phishing sites,
-- activate sound notifications,
-- agree to submit anonymous security-related info to the AdGuard server to help us keep the malicious and fishing websites database up to date.
+- Benachrichtigungen aktivieren, um Anfragen an bösartige und Phishing-Seiten zu sperren,
+- akustische Benachrichtigungen aktivieren,
+- sich bereit erklären, anonyme sicherheitsrelevante Informationen an den AdGuard-Server zu übermitteln, damit wir die Datenbank mit bösartigen und Phishing-Websites auf dem neuesten Stand halten können.
 
-![Browsing Security *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/browsing-security.png)
+![Internetsicherheit *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/browsing-security.png)
 
-In case you want to learn more about Browsing Security, read [this article](/general/browsing-security).
+Wenn Sie mehr über Internetsicherheit erfahren möchten, lesen Sie [diesen Artikel](/general/browsing-security).
 
-### DNS Protection
+### DNS-Schutz
 
-There are three significant reasons why you might want to explore the DNS protection settings. First, to avoid being tracked by your ISP. Every time you open a website, for example `google.com`, your browser sends a request to a DNS server to get the IP address of the website in return. Usually, the DNS server belongs to your ISP, which allows them to track your online activity. Second, to encrypt you DNS traffic. And the third one is to [block content on DNS level](https://adguard-dns.io/kb/general/dns-filtering/).
+Es gibt drei wichtige Gründe, warum Sie die DNS-Schutzeinstellungen untersuchen sollten. Erstens, um zu vermeiden, dass Ihr ISP (Internetdiensteanbieter) Sie verfolgt. Every time you open a website, for example `google.com`, your browser sends a request to a DNS server to get the IP address of the website in return. In der Regel gehört der DNS-Server zu Ihrem Internetanbieter, der damit Ihre Online-Aktivitäten verfolgen kann. Zweitens, um Ihren DNS-Verkehr zu verschlüsseln. Und der dritte Grund ist, dass [man Inhalte auf DNS-Ebene blockieren kann](https://adguard-dns.io/kb/general/dns-filtering/).
 
-![DNS Protection *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/dns-settings.png)
+![DNS-Schutz *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/dns-settings.png)
 
-In the DNS protection module of AdGuard for Windows you can select the DNS servers from known DNS providers, including [AdGuard DNS](https://adguard-dns.io/kb/) that blocks ads and trackers, AdGuard DNS Family Protection that in addition blocks adult content, or AdGuard DNS Non-filtering that provides a secure and reliable connection, but doesn't filter anything. You can even add custom DNS servers. Also there is an option to add custom rules using [DNS rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/). And if necessary, you can add [DNS filters of your choice](https://filterlists.com).
+Im DNS-Schutzmodul können Sie die DNS-Server von bekannten DNS-Anbietern auswählen, darunter [AdGuard DNS](https://adguard-dns.io/kb/), der Werbung und Tracker blockiert, AdGuard DNS Familienschutz, der zusätzlich Inhalte für Erwachsene sperrt, oder AdGuard DNS Ohne Filterung, der eine sichere und zuverlässige Verbindung bietet, aber nichts filtert. Sie können sogar eigene DNS-Server hinzufügen. Außerdem gibt es die Möglichkeit, benutzerdefinierte Regeln mit der [DNS-Regelsyntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/) hinzuzufügen. Und wenn nötig, können Sie [DNS-Filter Ihrer Wahl](https://filterlists.com) hinzufügen.
 
-### Parental Control
+### Kindersicherung
 
-There are numerous websites access to which should be restricted if the PC is used by children. This task is accomplished by Parental Control.
+Es gibt eine Reihe von Websites, auf die der Zugriff von einem von Kindern benutzten PC aus beschränkt werden sollte. Diese Aufgabe wird von der Kindersicherung wahrgenommen.
 
-![Parental Control *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
+![Kindersicherung *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
 
-The module checks the contents of web pages opened in the browser and filters those with content undesirable for children: images and texts for adults, crude language, violence, drug propaganda, etc. Parental Control settings are password-protected so that the child is not able to go round the restrictions. This module not only blocks directions to undesirable sites but can also delete the links that are inappropriate for children from the search results.
+Das Modul prüft den Inhalt der im Browser geöffneten Webseiten und filtert diejenigen mit für Kinder unerwünschten Inhalten: Bilder und Texte für Erwachsene, Schimpfwörter, Gewalt, Drogenpropaganda usw. Die Einstellungen der Kindersicherung sind passwortgeschützt, so dass das Kind die Einschränkungen nicht umgehen kann. Dieses Modul blockiert nicht nur die Weiterleitung auf unerwünschte Seiten, sondern kann auch die für Kinder ungeeigneten Links aus den Suchergebnissen entfernen.
 
-In the Parental Control module you can enable the *Safe search* and manage the *blocklist* and the *allowlist* to customize how this option works. You can also check the *Block executable files download* box to prevent your child from downloading and installing software on the computer. There are two more options in the *Parental Control* module: you can select a specific Windows user to be protected by *Parental Control* and set a password to protect AdGuard settings from change.
+Im Modul Kindersicherung können Sie die *Sichere Suche* aktivieren und die *Sperrliste* und die *Positivliste* verwalten, um die Funktionsweise dieser Option anzupassen. Sie können auch das Kästchen *Herunterladen von ausführbaren Dateien sperren* aktivieren, um zu verhindern, dass Ihr Kind Software auf den Computer herunterlädt und installiert. Im Modul *Kindersicherung* gibt es zwei weitere Optionen: Sie können einen bestimmten Windows-Benutzer auswählen, der durch die *Kindersicherung* geschützt werden soll, und ein Kennwort festlegen, um die AdGuard-Einstellungen vor Änderungen zu schützen.
 
-![Parental Control *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
+![Kindersicherung *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
 
 ### Browser-Assistent
 
-![Browser Assistant *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
+![Browser-Assistent *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 
-From this tab you can easily proceed to install AdGuard Browser Assistant, which primary function is to manage filtering directly from the browser. We explained more about how to work with it and what to do if there is no Browser Assistant for your browser in the [separate article](../browser-assistant).
+Von diesem Tab aus können Sie ganz einfach den AdGuard Browser-Assistenten installieren, dessen Hauptfunktion darin besteht, das Filtern direkt über den Browser zu verwalten. Wie Sie damit arbeiten und was Sie tun können, wenn es für Ihren Browser keinen Browser-Assistenten gibt, haben wir im [anderen Artikel](../browser-assistant) erklärt.
 
 ## Erweiterungen
 
-AdGuard can significantly broaden website functionality working as a [user script manager](/general/userscripts). AdGuard Users can add their own scripts, as well as manage existing ones.
+AdGuard kann als [Benutzerskriptverwaltung](/general/userscripts) die Funktionalität einer Website erheblich erweitern. Sie können ihre eigenen Skripte hinzufügen und bestehende Skripte verwalten.
 
-![Extensions *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
+![Erweiterungen *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/userscripts.png)
 
-**Automatically detect userscripts**
+**Benutzerskripte automatisch erkennen**
 
-With this option enabled, AdGuard will automatically define browser queries to userscripts and suggest their installation. Otherwise, extensions can be downloaded and installed manually.
+Wenn diese Option aktiviert ist, definiert AdGuard automatisch Browser-Anfragen an Benutzerskripte und schlägt deren Installation vor. Andernfalls können die Erweiterungen (Benutzerskripte) heruntergeladen und manuell installiert werden.
 
-The following extensions are installed with AdGuard:
+Die folgenden Erweiterungen werden mit AdGuard installiert:
 
-![Preinstalled userscripts *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
+![Vorinstallierte Benutzerskripte *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/preinstalled-userscripts.png)
 
-**AdGuard Assistant**
+**AdGuard-Assistent**
 
-AdGuard Assistant is Legacy Assistant that you may use if the [new Assistant](../browser-assistant) is not available for your browser. The name of this extension is quite deliberate: it actually assists the user in changing basic AdGuard settings right in the browser, without the need to open the app itself. AdGuard Assistant works with all Microsoft Windows compatible browsers. In addition, the AdGuard Assistant icon will not be displayed on websites listed as exceptions by the user and on certain web pages where there is a risk of incorrect content display.
+Assistent ist ein älterer Assistent, den Sie verwenden können, wenn der [neue Assistent](../browser-assistant) für Ihren Browser nicht verfügbar ist. Der Name dieser Erweiterung ist durchaus beabsichtigt: Sie unterstützt den Benutzer:innen bei der Änderung grundlegender AdGuard-Einstellungen direkt im Browser, ohne dass er die App selbst öffnen muss. Assistent funktioniert mit allen mit Microsoft Windows kompatiblen Browsern. Außerdem wird das AdGuard Assistent-Symbol nicht auf Websites angezeigt, die als Ausschlüsse aufgeführt sind, sowie auf bestimmten Seiten, bei denen die Gefahr besteht, dass falsche Inhalte angezeigt werden.
 
 **AdGuard Extra**
 
-This is a custom extension designed to fight the technique of re-inserting blocked ads — the so-called ad blocker circumvention/ad reinjection. Both are advanced anti-ad blocker methods that continue to rise in popularity among advertisers.
+Dies ist eine benutzerdefinierte Erweiterung, die entwickelt wurde, um die Technik der Wiedereinführung blockierter Werbung zu bekämpfen — die so genannte Umgehung von Werbeblockern/Ad Reinjection. Beides sind fortschrittliche Anti-Werbeblocker-Methoden, die sich bei den Werbetreibenden immer größerer Beliebtheit erfreuen.
 
-AdGuard Extra is essentially a mini-program that changes the way pages work,and it does so in such a way that it becomes much more difficult for sites to use the above-mentioned functions to bypass blockers.
+AdGuard Extra ist im Wesentlichen ein Miniprogramm, das die Funktionsweise von Seiten so verändert, dass es für Websites sehr viel schwieriger wird, die oben genannten Methoden zur Umgehung von Blockern zu verwenden.
 
-**AdGuard Popup Blocker**
+**AdGuard Pop-up-Blocker**
 
-This extension prevents popup windows from opening when you view web pages. Some pop-ups are considered useful — they may contain settings for site administering or additional reference information demonstrated upon clicking a link. That is why you can turn off the Blocker if needed. This extension doesn’t work on websites added to the AdGuard exceptions list either. It is turned off by default, but you can turn it on in the application settings. You will find more detailed information about this extension in our Knowledge base.
+Diese Erweiterung verhindert das Öffnen von Pop-up-Fenstern, wenn Sie Webseiten aufrufen. Einige Pop-ups werden als nützlich erachtet — sie können Einstellungen für die Verwaltung der Website oder zusätzliche Referenzinformationen enthalten, die beim Anklicken eines Links angezeigt werden. Aus diesem Grund können Sie den Blocker bei Bedarf ausschalten. This extension doesn’t work on websites added to the AdGuard exceptions list either. Sie ist standardmäßig ausgeschaltet, kann aber in den Einstellungen aktiviert werden. Ausführlichere Informationen über diese Erweiterung finden Sie in unserer Wissensdatenbank.
 
 **Web of Trust**
 
-Web of Trust lets you see the reputation of each website based on its users’ opinions. The site is rated by a number of specific criteria: trust, security, etc. This extension is turned off by default, but you can turn it on in the application settings. Please, note that AdGuard is not the developer of this extension.
+Mit Web of Trust können Sie den Ruf jeder Website auf der Grundlage von Nutzermeinungen einsehen. Die Website wird nach einer Reihe spezifischer Kriterien bewertet: Vertrauen, Sicherheit usw. Diese Erweiterung ist standardmäßig deaktiviert, kann aber in den Einstellungen aktiviert werden. Bitte beachten Sie, dass diese Erweiterung nicht von AdGuard entwickelt wurde.
 
 ### Netzwerk
 
-The penultimate module is dedicated to network filtering, and here you will find additional network-related options. Two of them are enabled by default: *Enable traffic filtering* and *Filter HTTPS protocol*. These are important extra precautions to better filter your web space. Most websites are now using HTTPS, and the same applies to advertising. From many sites, like youtube.com, facebook.com and twitter.com, it is impossible to remove ads without HTTPS filtering. So keep the *Filter HTTPS protocol* feature enabled unless you have a strong reason not to.
+Das vorletzte Modul ist der Netzwerkfilterung gewidmet, und hier finden Sie weitere netzwerkbezogene Optionen. Zwei davon sind standardmäßig aktiviert: *Verkehrsfilterung aktivieren* und *HTTPS-Protokoll filtern*. Dies sind wichtige zusätzliche Vorsichtsmaßnahmen, um Ihren Webspace besser zu filtern. Die meisten Websites verwenden jetzt HTTPS, und das Gleiche gilt für die Werbung. Von vielen Websites, wie youtube.com, facebook.com und twitter.com, ist es unmöglich, Werbung ohne HTTPS-Filterung zu entfernen. Lassen Sie also die Funktion *HTTPS-Protokoll filtern* aktiviert, es sei denn, Sie haben einen triftigen Grund, dies nicht zu tun.
 
-![Network Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/network-settings.png)
+![Netzwerkeinstellungen *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/network-settings.png)
 
-In this module you can check the checkbox "Use AdGuard as an HTTP proxy" to use AdGuard as a regular HTTP proxy which will filter all traffic passing through it. You can also enable the *Filter websites with EV certificates* feature. Extended Validation (EV) SSL-Zertifikate bieten eine stärkere Sicherheitsgarantie; die Inhaber solcher Websites müssen ein gründliches und weltweit standardisiertes Identitätsprüfungsverfahren durchlaufen, das durch EV-Richtlinien definiert ist. Aus diesem Grund vertrauen einige Benutzer Websites mit solchen Zertifikaten und ziehen es vor, sie nicht zu filtern.
+In diesem Modul können Sie das Kontrollkästchen „AdGuard als HTTP-Proxy verwenden“ aktivieren, um AdGuard als regulären HTTP-Proxy zu verwenden, der den gesamten Datenverkehr filtert. Sie können auch die Funktion *Websites mit EV-Zertifikaten filtern* aktivieren. Extended Validation (EV) SSL-Zertifikate bieten eine stärkere Sicherheitsgarantie; die Inhaber solcher Websites müssen ein gründliches und weltweit standardisiertes Identitätsprüfungsverfahren durchlaufen, das durch EV-Richtlinien definiert ist. Aus diesem Grund vertrauen einige Benutzer Websites mit solchen Zertifikaten und ziehen es vor, sie nicht zu filtern.
 
-At last, there is a section with proxy settings. There you can specify which proxy server AdGuard should use to update filters, get new versions and so on.
+Schließlich gibt es noch einen Abschnitt mit Proxy-Einstellungen. Dort können Sie angeben, welchen Proxyserver AdGuard verwenden soll, um Filter zu aktualisieren, neue Versionen zu erhalten usw.
 
 ### AdGuard VPN
 
-The last section is dedicated to AdGuard VPN — an ideal tool that provides security and anonymity each time you browse the Internet. You can download it by clicking the *Download* button or go to the AdGuard VPN website by clicking the *Homepage* button.
+Der letzte Abschnitt ist AdGuard VPN gewidmet, einem nützlichen Tool, das Sicherheit und Anonymität beim Surfen im Internet bietet. Sie können es herunterladen, indem Sie auf die entsprechende Schaltfläche klicken. Oder besuchen Sie die AdGuard VPN Website, indem Sie auf die Schaltfläche *Startseite* klicken.
 
-How does AdGuard VPN work? Without going into technical details, we can say that VPN creates a secure encrypted tunnel between the user's computer or mobile device and a remote VPN server. In this way, data confidentiality is preserved, as well as the anonymity of the user, because a third-party observer sees the IP address of the VPN server and not the actual user's IP.
+Wie funktioniert AdGuard VPN? Ohne auf technische Details einzugehen, können wir sagen, dass VPN einen sicheren verschlüsselten Tunnel zwischen dem Computer oder Mobilgerät und einem entfernten VPN-Server herstellt. Auf diese Weise bleibt die Vertraulichkeit der Daten und Ihre Anonymität gewahrt, da ein Dritter nur die IP-Adresse des VPN-Servers und nicht Ihre tatsächliche IP-Adresse sieht.
 
-**What AdGuard VPN does:**
+**Was AdGuard VPN leistet:**
 
-- hides your real whereabouts and helps you stay anonymous
-- changes your IP address to protect your data from tracking
-- encrypts your traffic to make it unreachable to scammers
-- lets you configure where to use VPN and where not to (exclusions feature)
+- verbirgt Ihren tatsächlichen Aufenthaltsort und hilft Ihnen, anonym zu bleiben
+- ändert Ihre IP-Adresse, um Ihre Daten vor Verfolgung zu schützen
+- verschlüsselt Ihren Datenverkehr, um ihn für Dritte unlesbar zu machen
+- lässt Sie konfigurieren, wo VPN verwendet werden soll und wo nicht (Ausschlussfunktion)
 
-To get more information about AdGuard VPN dive into the [AdGuard VPN Knowledge Base](https://adguard-vpn.com/kb/).
+Weitere Informationen über AdGuard VPN finden Sie in der [AdGuard VPN Wissensdatenbank](https://adguard-vpn.com/kb/).
 
 ## Andere Optionen
 
-Es gibt andere nützliche AdGuard-Optionen, die in diesem Artikel nicht unbemerkt bleiben sollten, da sie viel zur Benutzererfahrung beitragen.
+AdGuard verfügt über weitere nützliche Funktionen, die erwähnenswert sind, da sie die Nutzung der App erheblich vereinfachen.
 
 ### Support
 
 ![Support *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/support.png)
 
-By clicking the Support tab you will open a dialog box through which you can report a bug, submit a feature request, or simply share your opinion of the product.
+Wenn Sie auf den Tab „Support“ klicken, öffnet sich ein Dialogfeld, in dem Sie einen Fehler melden, eine Funktionsanfrage stellen oder einfach Ihre Meinung über das Produkt mitteilen können.
 
 ### Lizenz
 
-![License *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
+![Lizenz *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
 
-This tab contains information about your license. Here you can:
+Auf diesem Tab finden Sie Informationen zu Ihrer Lizenz. Hier können Sie:
 
-- find out the license type (nightly build, beta or release), the number of devices available for simultaneous connection to AdGuard, the license expiration date;
-- click the button to go to the license purchase page, and activate, reset or recover a license.
+- den Lizenztyp (Nightly-Build, Beta oder Release), die Anzahl der Geräte, die gleichzeitig mit AdGuard verbunden werden können, und das Ablaufdatum der Lizenz herausfinden;
+- zur Seite für den Lizenzerwerb zu gelangen und eine Lizenz zu aktivieren, zurückzusetzen oder wiederherzustellen.
 
 ### Über uns
 
-![About *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
+![Über *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
 
-In addition to information about the current version of the program, this tab provides some useful links to Licese Agreement, Privacy Policy, Acknowledgements, Discussions, and Version history pages.
+Zusätzlich zu den Informationen über die aktuelle Version des Programms bietet dieser Tab einige nützliche Links zu den Seiten Lizenzvereinbarung, Datenschutzerklärung, Danksagungen, Diskussionen und Versionsverlauf.
 
-### Check for updates
+### Auf Aktualisierungen prüfen
 
-![Check for updates *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/check-updates.png)
+![Auf Aktualisierungen prüfen *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/check-updates.png)
 
-To check for filters and userscripts updates, click the rotating arrows icon in the upper right corner of the app's main screen.
+Um zu prüfen, ob Filter und Benutzerskripte aktualisiert wurden, klicken Sie auf das Symbol mit den rotierenden Pfeilen in der oberen rechten Ecke des Hauptbildschirms der App.
 
-### Tray menu
+### Infobereich der Taskleiste
 
-To save you time navigating around AdGuard menus, many of the frequently used options and settings are available from the tray menu. To call the menu, right-click the AdGuard icon in the tray. It will offer you the following options:
+Um Ihnen die Navigation durch die Menüs des AdGuard zu ersparen, sind viele der häufig verwendeten Optionen und Einstellungen über den Infobereich der Taskleiste verfügbar. Um das Menü aufzurufen, klicken Sie mit der rechten Maustaste auf das AdGuard-Symbol in der Taskleiste. Es bietet Ihnen die folgenden Optionen:
 
-- enable protection
-- disable protection: completely or for 30 seconds
-- go to *Settings*
-- open the *Tools* and *Advanced* menus
-- check for filter updates
-- check for app updates
-- to recall the last pop-up message
-- reach the *Support* and *About* sections
-- close AdGuard, but continue filtering
-- exit AdGuard
+- Schutz aktivieren
+- Schutz deaktivieren: vollständig oder für 30 Sekunden
+- *Einstellungen* aufrufen
+- die Menüs *Extras* und *Erweitert* öffnen
+- auf Filteraktualisierungen prüfen
+- nach App-Aktualisierungen suchen
+- die letzte Pop-up-Meldung aufrufen
+- zu den Abschnitten *Support* und *Über* gelangen
+- AdGuard schließen, aber weiterhin filtern
+- AdGuard beenden

@@ -9,7 +9,7 @@ sidebar_position: 12
 
 :::
 
-Чтобы [фильтровать HTTPS-трафик](/general/https-filtering/what-is-https-filtering.md) (что крайне важно, поскольку большая часть рекламы передаётся по протоколу HTTPS), AdGuard необходимо установить сертификат в пользовательское хранилище устройства. На старых версиях Android это происходило автоматически, но на Android 11 и выше приходится устанавливать его вручную.
+Чтобы [фильтровать HTTPS-трафик](/general/https-filtering/what-is-https-filtering.md) (что крайне важно, поскольку большая часть рекламы передаётся по протоколу HTTPS), AdGuard необходимо установить сертификат в пользовательское хранилище устройства. On older versions of the Android OS this was done automatically, but on Android 11 and later users have to install it manually.
 
 ![Сертификат *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/g.gif)
 

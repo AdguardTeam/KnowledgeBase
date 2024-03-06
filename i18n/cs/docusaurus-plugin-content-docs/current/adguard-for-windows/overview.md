@@ -83,7 +83,7 @@ V modulu DNS ochrany AdGuardu pro Windows můžete vybrat DNS servery od známý
 
 ### Rodičovská ochrana
 
-Existuje řada webových stránek, k nimž by měl být omezen přístup, pokud počítač používají děti. Tento úkol zajišťuje Rodičovská ochrana.
+Existuje několik webových stránek, ke kterým by měl být omezen přístup z PC používaného dětmi. Tento úkol zajišťuje Rodičovská ochrana.
 
 ![Parental Control *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
 
@@ -121,7 +121,7 @@ AdGuard asistent je starší asistent, kterého můžete použít, pokud není p
 
 Jedná se o vlastní rozšíření určené k boji proti technice opětovného vkládání blokovaných reklam — tzv. obcházení blokátorů reklam/opětovnému vkládání reklam. V obou případech se jedná o pokročilé metody proti blokování reklam, jejichž obliba mezi inzerenty stále roste.
 
-AdGuard Extra je v podstatě miniprogram, který mění způsob, jakým stránky fungují a to takovým způsobem, že je pro weby mnohem obtížnější používat výše uvedené funkce k obcházení blokátorů.
+AdGuard Extra je v podstatě miniprogram, který změní fungování stránek tak, aby bylo pro weby mnohem obtížnější používat výše uvedené metody k obcházení blokátorů.
 
 **AdGuard blokátor vyskakovacích oken**
 
@@ -151,7 +151,7 @@ Jak funguje AdGuard VPN? Aniž bychom zacházeli do technických podrobností, m
 
 - skrývá vaše skutečné místo pobytu a pomáhá vám zůstat v anonymitě
 - změní vaši IP adresu a ochrání vaše data před sledováním
-- zašifruje váš provoz, aby byl pro podvodníky nedostupný
+- šifruje váš provoz, aby byl nečitelný pro třetí strany
 - umožňuje nastavit, kde se má VPN používat a kde ne (funkce výjimek)
 
 Chcete-li získat více informací o AdGuard VPN, ponořte se do [databáze znalostí AdGuard VPN](https://adguard-vpn.com/kb/).

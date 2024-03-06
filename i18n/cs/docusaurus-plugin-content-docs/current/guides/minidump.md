@@ -5,7 +5,7 @@ sidebar_position: 8
 
 Téměř všichni uživatelé systému Windows bohužel znají chybu [Modrá obrazovka smrti (BSoD)](https://en.wikipedia.org/wiki/Blue_screen_of_death). K BSoD dochází, když systém Windows narazí na problémy, které mohou ovlivnit bezpečný provoz systému, např. problémy s kódem ovladače třetí strany, hardwarem nebo kódem společnosti Microsoft. K vyřešení chyby modré obrazovky mohou uživatelé použít soubor minidump.
 
-## Co je soubor minidump
+## Co je soubor minidump?
 
 Soubor minidump je soubor, který obsahuje informace o povaze pádu systému. Vytvoří se těsně před zobrazením modré obrazovky a obsahuje minimum užitečných informací, které lze použít k řešení problému. Soubor minidump má obvykle příponu *.dmp*.
 

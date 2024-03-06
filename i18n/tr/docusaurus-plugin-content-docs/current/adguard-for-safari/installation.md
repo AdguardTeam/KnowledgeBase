@@ -19,7 +19,7 @@ Safari için AdGuard, App Store'da sunulan ücretsiz bir uygulamadır. Cihazın�
 
 1. Press *Get* → *Install* → *Open*.
 
-1. Safari için AdGuard'ı ayarlamak üzere Safari ayarlarında AdGuard uzantılarını etkinleştirin. Bir bildirimde *Düzelt* öğesine tıklayın. Açılan bir pencerede, AdGuard uzantılarının yanındaki kutuları işaretleyin.
+1. To set up AdGuard for Safari, enable the AdGuard extensions in the Safari settings.
 
     ![Bildirim: Bazı uzantılar devre dışı bırakıldı](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-notification.png)
 
@@ -43,15 +43,13 @@ Safari için AdGuard, App Store'da sunulan ücretsiz bir uygulamadır. Cihazın�
 
 On macOS, click *Preference* → *Websites* → *Content Blockers*. If you want to enable AdGuard on every website, turn *When visiting other websites* to *On*.
 
-    ![Mac Safari Content Blocker Setting](https://i0.imgs.ovh/2023/10/26/Fmc9U.png)
+![Mac Safari İçerik Engelleyici Ayarı](https://i0.imgs.ovh/2023/10/26/Fmc9U.png)
+<!-- adguard-for-safari-content-blocker-setting-macos.png -->
 
-    <!-- adguard-for-safari-content-blocker-setting-macos.png -->
+iOS'ta, *Ayarlar* → *Safari* → *İçerik Engelleyiciler* öğesine gidin ve seçeneği *Evet* olarak ayarlayın.
 
-On iOS, go *Settings* → *Safari* → *Content Blockers*, and set the option to *Yes*.
-
-    ![iOS Safari Content Blocker Setting](https://i0.imgs.ovh/2023/10/26/FmgM0.jpeg)
-
-    <!-- adguard-for-safari-content-blocker-setting-ios.jpg -->
+![iOS Safari İçerik Engelleyici Ayarı](https://i0.imgs.ovh/2023/10/26/FmgM0.jpeg)
+<!-- adguard-for-safari-content-blocker-setting-ios.jpg -->
 
 After you complete steps 1-4, AdGuard for Safari will start functioning. You can now configure its settings.
 

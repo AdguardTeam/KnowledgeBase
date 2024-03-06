@@ -77,7 +77,7 @@ Nyní spusťte správce aktivních aplikací přejetím prstu nahoru ze spodní 
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi6.jpeg)
 
-Klepněte na ni a podržte ji, dokud se neobjeví speciální nabídka. Vyberte ikonu zámku.
+Klepněte na ni a podržte ji, dokud se neobjeví nabídka. Vyberte ikonu zámku.
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi7en.jpeg)
 
@@ -367,7 +367,7 @@ Zařízení Nokia se systémem Android 9+ mají **vypnutý spořič energie Even
 
 1. Povoltee **USB ladění** v možnostech pro vývojáře v telefonu;
 
-1. Odinstalujte balíček **com.evenwell.emm** pomocí následujících příkazů adb:
+1. Odinstalujte balíček **com.evenwell.emm** pomocí následujících příkazů ADB:
 
     `adb shell` `pm uninstall --user 0 com.evenwell.emm`
 
@@ -423,7 +423,7 @@ Alternativní, trvalejší řešení pro technicky zdatnější uživatele:
 
 1. Povolte **USB ladění** v možnostech pro vývojáře v telefonu;
 
-1. Odinstalujte balíček **com.evenwell.powersaving.g3** pomocí následujících příkazů adb:
+1. Odinstalujte balíček **com.evenwell.powersaving.g3** pomocí následujících příkazů ADB:
 
     `adb shell` `pm uninstall --user 0 com.evenwell.powersaving.g3`
 

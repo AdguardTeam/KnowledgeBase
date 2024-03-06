@@ -4,20 +4,20 @@ sidebar_position: 1
 slug: /
 ---
 
-## What is AdGuard Ad Blocker?
+## Was ist AdGuard Werbeblocker?
 
-AdGuard is one of the leaders on the market of ad-blocking software with 10+ years of experience, almost a dozen products for various platforms, and over 30 million user installs. Unlike other ad-blocking solutions, most of which are browser-based, we offer standalone apps for all major platforms, both desktop and mobile. AdGuard apps are more powerful than browser extensions, can block more and do it more efficiently:
+AdGuard ist einer der Marktführer im Bereich der Werbeblocker mit mehr als 10 Jahren Erfahrung, fast einem Dutzend Produkten für verschiedene Plattformen und über 30 Millionen Benutzerinstallationen. Im Gegensatz zu anderen Werbeblocker-Lösungen, die meist browserbasiert sind, bieten wir eigenständige Apps für alle gängigen Plattformen an, sowohl für Desktop als auch für mobile Geräte. AdGuard-Apps sind leistungsfähiger als Browsererweiterungen und können mehr und effizienter blockieren:
 
 - [AdGuard für Windows](/adguard-for-windows/overview)
 - [AdGuard für Mac](/adguard-for-mac/overview)
 - [AdGuard für Android](/adguard-for-android/overview)
 - [AdGuard für iOS](/adguard-for-ios/overview)
 
-But we also develop and maintain free browser extensions for all popular browsers:
+Wir entwickeln und pflegen aber auch kostenlose Browsererweiterungen für alle gängigen Browser:
 
-- [AdGuard-Browsererweiterung](/adguard-browser-extension/overview)
+- [AdGuard Browsererweiterung](/adguard-browser-extension/overview)
 - [AdGuard für Safari](/adguard-for-safari/overview)
 
-## Not just ad blocking
+## Nicht nur Werbeblocker
 
-AdGuard Ad Blocker does more than just block ads. It will protect you from online tracking and enhance your privacy in many ways. Depending on the specific product, AdGuard can also offer such perks as DNS filtering for more rounded-up protection, Parental Control to shield your kids from inappropriate content, Filtering log to have better control over your internet traffic, and more. This Knowledge base contains detailed information about any and all of them — feel free to jump to any article that interests you.
+AdGuard Werbeblocker kann mehr als nur Werbung blockieren. Er schützt Sie vor Online-Tracking und verbessert Ihre Privatsphäre in vielerlei Hinsicht. Je nach Produkt bietet AdGuard auch Vorteile wie DNS-Filterung für einen umfassenderen Schutz, Kindersicherung, um Ihre Kinder vor ungeeigneten Inhalten zu schützen, Filterungsprotokolle für eine bessere Kontrolle Ihres Internetverkehrs und vieles mehr. Diese Wissensdatenbank enthält detaillierte Informationen zu all diesen Themen — Sie können direkt auf die Artikel zugreifen, die Sie interessieren.

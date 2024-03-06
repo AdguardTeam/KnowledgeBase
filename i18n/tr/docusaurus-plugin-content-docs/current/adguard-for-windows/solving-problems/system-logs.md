@@ -27,7 +27,7 @@ Ortaya çıkabilecek farklı sorunları analiz etmek ve teşhis etmek için AdGu
 
     - Right-click *Application* and in the drop-down menu select *Save All Events As...*
 
-    - Select a name and where to save, click *Save*. Select *Display information for the following languages*. You need to tick the box next to *English*. *Tamam* öğesine tıklayın.
+    - Select a name and where to save, click *Save*. Select *Display information for the following languages*. You need to check the checkbox next to *English*. *Tamam* öğesine tıklayın.
 
     - Open *System*: *Event Viewer (Local)* → *Windows Logs* → *System*.
 

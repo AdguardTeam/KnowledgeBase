@@ -13,7 +13,7 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 :::caution
 
-Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only open this section if you are sure of what you are doing or our support-team has asked you about it.
+Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. This section should only be opened if you know what you are doing, or you were asked to do so by our support team.
 
 :::
 
@@ -23,7 +23,7 @@ To go to *Low-level settings*, open the AdGuard app and tap the gear icon in the
 
 For AdGuard v4.0 for Android we've completely redesigned the low-level settings: divided them into thematic blocks, made them clearer, added validation of entered values and other safety valves, got rid of some settings, and added others.
 
-### DNS protection
+### DNS koruması
 
 #### Yedek üst kaynaklar
 
@@ -39,7 +39,7 @@ Bu ayar etkinleştirilirse, AdGuard arama alan adlarını algılar ve bunları o
 
 #### Önyükleme üst kaynakları
 
-Bootstrap DNS for DoH, DoT, and DoQ servers. The *Automatic DNS* - the system DNS or AdGuard DNS - is used by default. By selecting *Custom DNS*, you can list IPv4 and IPv6 server addresses to use as bootstrap upstreams.
+Bootstrap DNS for DoH, DoT, and DoQ servers. The *Automatic DNS* — the system DNS or AdGuard DNS — is used by default. By selecting *Custom DNS*, you can list IPv4 and IPv6 server addresses to use as bootstrap upstreams.
 
 #### Reklam engelleme stili kuralları için engelleme modu
 
@@ -197,7 +197,7 @@ Bu ayar etkinleştirilirse, AdGuard uygulama önbellek dizininde bir `timestamp.
 
 #### Include Wi-Fi gateway in VPN routes
 
-Bu ayar etkinleştirilirse, ağ geçidi IP adresleri Wi-Fi'deyken VPN rotalarına eklenecektir.
+If this setting is enabled, the gateway IP addresses will be added to VPN routes when on Wi-Fi.
 
 #### IPv4 address
 

@@ -7,7 +7,7 @@ sidebar_position: 1
 
 ## Chrome {#chrome}
 
-Чтобы создать файл HAR в Chrome:
+To create a HAR file in Chrome, follow these steps:
 
 1. Перейдите по URL-адресу, по которому возникает ошибка. Пока не воспроизводите её.
 
@@ -16,7 +16,7 @@ sidebar_position: 1
     - Из меню: **Меню → Дополнительные инструменты → Инструменты разработчика**.
     - Клавиатура: **Ctrl+Shift+C**, или **Ctrl+Alt+I**, или **⌥+⌘+I для Mac**.
 
-1. Перейдите во вкладку **Сеть**.
+1. Click the **Network tab**.
 
 1. Найдите круглую кнопку в левом верхнем углу вкладки и убедитесь, что она находится в режиме записи. Если кнопка серая, кликните на неё — она станет красной, и начнётся запись.
 
@@ -32,7 +32,7 @@ sidebar_position: 1
 
 1. Сохраните сессию как файл .har, щёлкнув правой кнопкой мыши на сетку и выбрав **Сохранить как HAR-файл с данными**.
 
-1. Направьте документ поддержке AdGuard (support@adguard.com) с подробным объяснением ошибки. Дополнительные скриншоты также могут помочь.
+1. Send it to AdGuard support (support@adguard.com) with detailed explanation of issue. Дополнительные скриншоты также могут помочь.
 
 ## Edge {#edge}
 
@@ -43,7 +43,7 @@ sidebar_position: 1
     - Из меню: **Меню → Дополнительные инструменты → Инструменты разработчика**.
     - Клавиатура: **Ctrl+Shift+C**, или **Ctrl+Alt+I**, или **⌥+⌘+I для Mac**.
 
-1. Перейдите во вкладку **Сеть**.
+1. Click the **Network tab**.
 
 1. Найдите круглую кнопку в левом верхнем углу вкладки и убедитесь, что она находится в режиме записи. Если кнопка серая, кликните на неё — она станет красной, и начнётся запись.
 
@@ -59,11 +59,11 @@ sidebar_position: 1
 
 1. Сохраните сессию как файл .har, щёлкнув правой кнопкой мыши на сетку и выбрав **Сохранить как HAR-файл с данными**.
 
-1. Направьте документ поддержке AdGuard (support@adguard.com) с подробным объяснением ошибки. Дополнительные скриншоты также могут помочь.
+1. Send it to AdGuard support (support@adguard.com) with detailed explanation of issue. Дополнительные скриншоты также могут помочь.
 
 ## Firefox {#firefox}
 
-Чтобы создать файл HAR в Firefox:
+To create a HAR file in Firefox, follow these steps:
 
 1. Перейдите по URL-адресу, по которому возникает ошибка. Пока не воспроизводите её.
 
@@ -76,7 +76,7 @@ sidebar_position: 1
 
     - Кнопка должна находиться в режиме воспроизведения.
 
-1. Если какая-либо информация отображается на сетке, удалите её, щёлкнув правой кнопкой мыши **Очистить корзину**.
+1. If any information is currently displayed in the grid, clear by clicking the **Empty trash can** button next to the play/pause button.
 
 1. Установите флажок **Сохранить журнал** во вкладке Сеть.
 
@@ -88,11 +88,11 @@ sidebar_position: 1
 
 1. Сохраните сессию как файл .har, щёлкнув правой кнопкой мыши на сетку и выбрав **Сохранить всё как HAR-файл**.
 
-1. Направьте документ поддержке AdGuard (support@adguard.com) с подробным объяснением ошибки. Дополнительные скриншоты также могут помочь.
+1. Send it to AdGuard support (support@adguard.com) with detailed explanation of issue. Дополнительные скриншоты также могут помочь.
 
 ## Internet Explorer 11 {#ie11}
 
-Чтобы создать файл HAR в Internet Explorer 11:
+To create a HAR file in Internet Explorer 11, follow these steps:
 
 1. Перейдите по URL-адресу, по которому возникает ошибка. Пока не воспроизводите её.
 
@@ -113,13 +113,13 @@ sidebar_position: 1
 
 1. Воспроизведите действия, создающие проблему.
 
-1. Save session as a .har file by clicking on the **Save disk** button (Export as HAR) on Network tab.
+1. Save session as a .har file by clicking the **Save to disk** button (Export as HAR) on Network tab.
 
-1. Направьте документ поддержке AdGuard (support@adguard.com) с подробным объяснением ошибки. Дополнительные скриншоты также могут помочь.
+1. Send it to AdGuard support (support@adguard.com) with detailed explanation of issue. Дополнительные скриншоты также могут помочь.
 
 ## Safari {#safari}
 
-Чтобы создать файл HAR в Safari:
+To create a HAR file in Safari, follow these steps:
 
 1. Найдите в строке меню Safari раздел **Разработка**.
 
@@ -131,7 +131,7 @@ sidebar_position: 1
 1. Откройте вкладку **Сеть** в веб-инспекторе:
 
     - Из меню: **Разработка → Показывать веб-инспектор → Сеть**.
-    - Клавиатура: **⌥+⌘+I → Сеть**
+    - Keyboard: **⌥+⌘+I → Network**
 
 1. Установите флажок **Сохранить журнал** в левой части вкладок Сеть в меню **Другие параметры фильтра...**.
 
@@ -147,7 +147,7 @@ sidebar_position: 1
 
 1. Сохраните сессию в виде файла .har, щёлкнув значок **Экспортировать** рядом со значком **Очистить сетевые объекты**.
 
-1. Направьте документ поддержке AdGuard (support@adguard.com) с подробным объяснением ошибки. Дополнительные скриншоты также могут помочь.
+1. Send it to AdGuard support (support@adguard.com) with detailed explanation of issue. Дополнительные скриншоты также могут помочь.
 
 ## Android {#android}
 

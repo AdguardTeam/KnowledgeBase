@@ -9,11 +9,11 @@ We have written this article to avoid confusion and explain in detail how you ca
 
 Initially licenses of the following types were available to activate AdGuard products:
 
-**Standard** — for desktop applications AdGuard for Windows/AdGuard for Mac
+**Standard** was for desktop applications, AdGuard for Windows and AdGuard for Mac
 
-**Mobile** — for mobile applications AdGuard for Android/AdGuard for iOS
+**Mobile** was for mobile apps, AdGuard for Android and AdGuard for iOS
 
-**Premium** — a license that combines desktop + mobile application
+**Premium** was a license that combined desktop and mobile applications
 
 Standard and Mobile licenses could be purchased for 1 to 9 devices.
 
@@ -27,7 +27,7 @@ Tüm türler için (Standart, Mobil, Premium) Yıllık ve Ömür boyu lisans se�
 
 Ekim 2019'da AdGuard yeni lisanslama sistemine geçti: o andan itibaren, lisanslar hala 1 yıl veya Ömür boyu için satın alınabilir, ancak türleri **Kişisel** (3 cihaza kadar) veya **Aile** (9 cihaza kadar) hâline geldi.
 
-Bir değişiklik daha: Yeni türden **lisans anahtarı artık herhangi bir cihazda, herhangi bir kombinasyonda kullanılabilir. For example, a Personal License can be installed on Android, Mac and iOS, just like on two Windows computers and an Apple tablet, etc.**
+Bir değişiklik daha: Yeni türden **lisans anahtarı artık herhangi bir cihazda, herhangi bir kombinasyonda kullanılabilir. For example, a Personal license can be used on Android, Mac and iOS, just like on two Windows computers and an Apple tablet.**
 
 ## Eski lisanslara ne oldu?
 

@@ -9,11 +9,11 @@ AdGuard 이전 라이선스 키를 업그레이드·갱신하는 방법을 살�
 
 이전에 아래와 같은 AdGuard 라이선스가 있었습니다.
 
-**일반 라이선스**: Windows/Mac용 컴퓨터에서 사용할 수 있는 라이선스
+**Standard** was for desktop applications, AdGuard for Windows and AdGuard for Mac
 
-**모바일 라이선스**: Android/iOS용 휴대폰/태블릿에서 사용할 수 있는 라이선스
+**Mobile** was for mobile apps, AdGuard for Android and AdGuard for iOS
 
-**프리미엄 라이선스**: 컴퓨터 및 휴대폰/태블릿에서 사용할 수 있는 라이선스
+**Premium** was a license that combined desktop and mobile applications
 
 일반 라이선스와 모바일 라이선스는 1~9개의 기기에서 사용할 수 있었습니다.
 
@@ -27,7 +27,7 @@ AdGuard 이전 라이선스 키를 업그레이드·갱신하는 방법을 살�
 
 그러나 2019년 10월부터 새로운 라이선스 시스템이 도입되었습니다. 이제는 3개의 기기에서 사용할 수 있는 **개인용 라이선스**와 9개의 기기에서 사용할 수 있는 **가족용 라이선스**가 존재합니다. 예전처럼 개인용/가족용 라이선스는 연간와 평생 라이선스로 구분되었습니다.
 
-제일 중요한 변경 사항은 **새로운 라이선스를 모든 기기에서 사용할 수 있는 것입니다. 예를 들어, 개인용 라이선스를 Windows용 2대의 컴퓨터와 iOS용 1대의 휴대폰에서 사용할 수 있거나 Mac용 1대의 컴퓨터와 iOS용 1대의 휴대폰, Android용 1대의 휴대폰에서 사용할 수 있습니다.**
+제일 중요한 변경 사항은 **새로운 라이선스를 모든 기기에서 사용할 수 있는 것입니다. For example, a Personal license can be used on Android, Mac and iOS, just like on two Windows computers and an Apple tablet.**
 
 ## 이전 라이선스 키는 어떻게 되었나요?
 

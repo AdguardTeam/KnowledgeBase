@@ -13,7 +13,7 @@ Este artigo aborda o AdGuard para Android, um bloqueador de anúncios multifunci
 
 :::caution
 
-Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only open this section if you are sure of what you are doing or our support-team has asked you about it.
+Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. This section should only be opened if you know what you are doing, or you were asked to do so by our support team.
 
 :::
 
@@ -39,7 +39,7 @@ If this setting is enabled, AdGuard will detect search domains and automatically
 
 #### Bootstrap upstreams
 
-Bootstrap DNS for DoH, DoT, and DoQ servers. The *Automatic DNS* - the system DNS or AdGuard DNS - is used by default. By selecting *Custom DNS*, you can list IPv4 and IPv6 server addresses to use as bootstrap upstreams.
+Bootstrap DNS for DoH, DoT, and DoQ servers. The *Automatic DNS* — the system DNS or AdGuard DNS — is used by default. By selecting *Custom DNS*, you can list IPv4 and IPv6 server addresses to use as bootstrap upstreams.
 
 #### Modo de bloqueio para regras de estilo adblock
 
@@ -197,7 +197,7 @@ If this setting is enabled, AdGuard will create a file `timestamp.pcap` (for ins
 
 #### Include Wi-Fi gateway in VPN routes
 
-If this setting is enabled, the gateway IP addresses will be added to to VPN routes when on Wi-Fi.
+If this setting is enabled, the gateway IP addresses will be added to VPN routes when on Wi-Fi.
 
 #### IPv4 address
 

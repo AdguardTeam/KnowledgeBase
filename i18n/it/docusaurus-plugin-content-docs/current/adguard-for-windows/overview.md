@@ -49,7 +49,7 @@ In the Ad Blocker module you can:
 
 Before you start manually writing your own rules read our detailed [syntax guide](/general/ad-filtering/create-own-filters).
 
-### Stealth Mode
+### Modalità Invisibilità
 
 Many websites gather information about their visitors, such as their IP addresses, information about the browser and operating system installed, screen resolution, and even what page the user came or was redirected from. Some web pages use cookies to mark the browser and save your personal settings, user preferences, or "recognize" you upon your next visit. Stealth Mode safeguards your personal information from such data and statistics gathering systems.
 
@@ -61,13 +61,13 @@ To learn everything about Stealth Mode and its many options, [read this article]
 
 ### Browsing Security
 
-Browsing Security gives strong protection against malicious and fishing websites. No, AdGuard for Windows is not an antivirus. It will neither stop the download of a virus when it's already started, nor delete the already existing ones. But it will warn you if you're about to proceed to a website whose domain has been added to our "untrusted sites" database, or to download a file from such website. You can find more information about how this module works in the [dedicated article](/general/browsing-security).
+Browsing Security gives strong protection against malicious and phishing websites. No, AdGuard for Windows is not an antivirus. It will neither stop the download of a virus when it's already started, nor delete the already existing ones. But it will warn you if you're about to proceed to a website whose domain has been added to our "untrusted sites" database, or to download a file from such website. You can find more information about how this module works in the [dedicated article](/general/browsing-security).
 
 In this module you can
 
 - enable notifications to block requests to malicious and phishing sites,
 - activate sound notifications,
-- agree to submit anonymous security-related info to the AdGuard server to help us keep the malicious and fishing websites database up to date.
+- agree to submit anonymous security-related info to the AdGuard server to help us keep the malicious and phishing websites database up to date.
 
 ![Browsing Security *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/browsing-security.png)
 
@@ -83,7 +83,7 @@ In the DNS protection module of AdGuard for Windows you can select the DNS serve
 
 ### Parental Control
 
-There are numerous websites access to which should be restricted if the PC is used by children. This task is accomplished by Parental Control.
+There are several websites to which access should be restricted from a PC used by children. This task is accomplished by Parental Control.
 
 ![Parental Control *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
 
@@ -99,7 +99,7 @@ In the Parental Control module you can enable the *Safe search* and manage the *
 
 From this tab you can easily proceed to install AdGuard Browser Assistant, which primary function is to manage filtering directly from the browser. We explained more about how to work with it and what to do if there is no Browser Assistant for your browser in the [separate article](../browser-assistant).
 
-## Extensions
+## Estensioni
 
 AdGuard can significantly broaden website functionality working as a [user script manager](/general/userscripts). AdGuard Users can add their own scripts, as well as manage existing ones.
 
@@ -121,7 +121,7 @@ AdGuard Assistant is Legacy Assistant that you may use if the [new Assistant](..
 
 This is a custom extension designed to fight the technique of re-inserting blocked ads — the so-called ad blocker circumvention/ad reinjection. Both are advanced anti-ad blocker methods that continue to rise in popularity among advertisers.
 
-AdGuard Extra is essentially a mini-program that changes the way pages work,and it does so in such a way that it becomes much more difficult for sites to use the above-mentioned functions to bypass blockers.
+AdGuard Extra is essentially a mini-program that changes the way pages work in such a way that it becomes much more difficult for sites to use the above-mentioned methods to bypass blockers.
 
 **AdGuard Popup Blocker**
 
@@ -151,7 +151,7 @@ How does AdGuard VPN work? Without going into technical details, we can say that
 
 - hides your real whereabouts and helps you stay anonymous
 - changes your IP address to protect your data from tracking
-- encrypts your traffic to make it unreachable to scammers
+- encrypts your traffic to make it unreadable to third parties
 - lets you configure where to use VPN and where not to (exclusions feature)
 
 To get more information about AdGuard VPN dive into the [AdGuard VPN Knowledge Base](https://adguard-vpn.com/kb/).
@@ -179,7 +179,7 @@ This tab contains information about your license. Here you can:
 
 ![About *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
 
-In addition to information about the current version of the program, this tab provides some useful links to Licese Agreement, Privacy Policy, Acknowledgements, Discussions, and Version history pages.
+In addition to information about the current version of the program, this tab provides some useful links to Licese agreement, Privacy policy, Acknowledgements, Discussions, and Version history pages.
 
 ### Check for updates
 

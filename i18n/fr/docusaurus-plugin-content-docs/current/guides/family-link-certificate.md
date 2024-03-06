@@ -1,21 +1,21 @@
 ---
-title: How to enable HTTPS filtering for Google Family Link
+title: Comment activer le filtrage HTTPS pour Google Family Link
 sidebar_position: 6
 ---
 
-To enable HTTPS filtering on a device that uses Google Family Link, install the AdGuard certificate by following these instructions:
+Pour activer le filtrage HTTPS sur un appareil qui utilise Google Family Link, installez le certificat AdGuard en suivant ces instructions :
 
-1. Make a backup, just in case
-1. Remove the child’s account from your device:
+1. Faites une sauvegarde, juste au cas où
+1. Supprimez le compte de l'enfant de votre appareil :
 
-    - On the child’s device, go to Settings → Accounts → Google
-    - Tap your child’s account and see if you have an option to remove it. If you don’t have such an option, proceed to the next step
-    - Tap the three dots on the upper right corner of the screen and see if you have an option to remove the account
-    - Follow the instructions  removing the child’s account from the device
+    - Sur l'appareil de l'enfant, accédez à Paramètres → Comptes → Google
+    - Appuyez sur le compte de votre enfant et voyez si vous avez la possibilité de le supprimer. Si vous ne disposez pas d'une telle option, passez à l'étape suivante
+    - Appuyez sur les trois points dans le coin supérieur droit de l'écran et voyez si vous avez la possibilité de supprimer le compte
+    - Suivez les instructions pour supprimer le compte de l'enfant de l'appareil
 
-1. Launch AdGuard and install the CA file
-1. Restore the child’s account on the device:
+1. Lancez AdGuard et installez le fichier CA
+1. Restaurez le compte de l'enfant sur l'appareil :
 
-    - On the child’s device, go to Settings → Accounts → Google → Add Account
-    - Sign in to your child’s account
-    - Follow the instructions on the screen to set up your child’s account
+    - Sur l'appareil de l'enfant, accédez à Paramètres → Comptes → Google → Ajouter un compte
+    - Connectez-vous au compte de votre enfant
+    - Suivez les instructions à l'écran pour configurer le compte de votre enfant

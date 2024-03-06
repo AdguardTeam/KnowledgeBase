@@ -27,11 +27,11 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 4. Click the **Download** button.
 
-5. Transfer the downloaded **cert.cer** file to the device which traffic you want to route through AdGuard.
+5. Transfer the downloaded **cert.cer** file to the device whose traffic you want to route through AdGuard.
 
 6. On that device, press the **Win** button, type `Manage computer certificates` and press **Enter**.
 
-7. On the *Certificates - Local Computer* page, find the *Trusted Root Certification* → *Certificates* folder.
+7. On the *Certificates - Local Computer* page, find the *Trusted Root Certification Authorities* → *Certificates* folder.
 
 8. Right-click the *Certificates* folder and click **All Tasks** → **Import**.
 
@@ -71,7 +71,7 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 4. Click the **Download** button.
 
-5. Transfer the downloaded **cert.cer** file to the device which traffic you want to route through AdGuard.
+5. Transfer the downloaded **cert.cer** file to the device whose traffic you want to route through AdGuard.
 
 6. Double-click the downloaded certificate file.
 
@@ -91,7 +91,7 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 14. Click **Details...** and navigate to the **Proxies** tab.
 
-15. Tick two checkboxes: *Web proxy (HTTP)* and *Secure web proxy (HTTPS)*. In the **Server** field, enter the noted IP address of your computer (step 1). In the **Port** field, enter the port chosen in the network settings of the AdGuard desktop app.
+15. Check two checkboxes: *Web proxy (HTTP)* and *Secure web proxy (HTTPS)*. In the **Server** field, enter the noted IP address of your computer (step 1). In the **Port** field, enter the port chosen in the network settings of the AdGuard desktop app.
 
 ### Android {#android}
 
@@ -103,7 +103,7 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 4. Click the **Download** button.
 
-5. Transfer the downloaded **cert.cer** file to the device which traffic you want to route through AdGuard.
+5. Transfer the downloaded **cert.cer** file to the device whose traffic you want to route through AdGuard.
 
 6. Locate and tap the previously downloaded **cert.cer** certificate to open the file.
 
@@ -123,11 +123,11 @@ Depending on the operation system of your device (Windows/Mac/Android/iOS), foll
 
 4. Click the **Download** button.
 
-5. Transfer the downloaded **cert.cer** file to the device which traffic you want to route through AdGuard.
+5. Transfer the downloaded **cert.cer** file to the device whose traffic you want to route through AdGuard.
 
 6. Open **Settings** → **Security** → **Encryption & Credentials** → **Install a certificate**. Android devices do not trust certificates by default so there will be a warning when you choose **CA certificate**. Tap **Install anyway**.
 
-7. Open **Settings** → **Profile Donwloaded** and tap **Install** in the top right corner. Enter your password and confirm the installation. Tap **Done**.
+7. Open **Settings** → **Profile Downloaded** and tap **Install** in the top right corner. Enter your password and confirm the installation. Tap **Done**.
 
 8. Go to **Settings** → **General** → **About** → **Certificate Trust Settings**. Enable the switch beside *Adguard Personal CA*. The certificate is now installed.
 

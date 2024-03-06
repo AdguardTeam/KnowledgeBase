@@ -61,7 +61,7 @@ This is the list of libraries and other resources that really helped us with AdG
 - zod: [github.com/colinhacks/zod](https://github.com/colinhacks/zod)
 - swc: [github.com/swc-project/swc](https://github.com/swc-project/swc)
 
-## AdGuard for Safari {#safari}
+## Safari용 AdGuard {#safari}
 
 - ace: [github.com/ajaxorg/ace](https://github.com/ajaxorg/ace)
 - adm-zip: [github.com/cthackers/adm-zip](https://github.com/cthackers/adm-zip)
@@ -86,7 +86,7 @@ This is the list of libraries and other resources that really helped us with AdG
 - request: [github.com/request/request](https://github.com/request/request)
 - require-dir: [github.com/aseemk/requireDir](https://github.com/aseemk/requireDir)
 
-## AdGuard Browser Assistant {#assistant}
+## AdGuard 브라우저 어시스턴트 {#assistant}
 
 - React: [github.com/facebook/react](https://github.com/facebook/react)
 - webextension-polyfill: [github.com/mozilla/webextension-polyfill](https://github.com/mozilla/webextension-polyfill)

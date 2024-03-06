@@ -9,11 +9,11 @@ sidebar_position: 6
 
 当初、AdGuard製品のアクティベーションのために、以下の種類のライセンスが用意されていました:
 
-**スタンダート**　AdGuard for Windows・AdGuard for Mac用ライセンス
+**Standard** was for desktop applications, AdGuard for Windows and AdGuard for Mac
 
-**モバイル**　AdGuard for Android・AdGuard for iOS用ライセンス
+**Mobile** was for mobile apps, AdGuard for Android and AdGuard for iOS
 
-**プレミアム**　モバイル＋スタンダート、つまりPCでもモバイルでも使えるライセンス
+**Premium** was a license that combined desktop and mobile applications
 
 スタンダードライセンスおよびモバイルライセンスは、1台〜9台版を購入することが可能でした。
 
@@ -27,7 +27,7 @@ sidebar_position: 6
 
 2019年10月、AdGuardは新しいライセンス形態に切り替わりました。それ以降、ライセンスは引き続き1年版または永久版を購入できますが、台数によるタイプは**パーソナル** （デバイス3台版）または**ファミリー**（デバイス9台版）となっています。
 
-もう一つの変更点は、**新タイプのライセンスキーは、PC・モバイルに関係なく、どのデバイスでも、どのような組み合わせでも使用できるようになったことです。 例えば、パーソナルライセンスは、Windows/Android/Mac/iOSのうちのどの3台にも使用することが可能です（例：Windowsパソコン2台とiPhone 1台）**。
+もう一つの変更点は、**新タイプのライセンスキーは、PC・モバイルに関係なく、どのデバイスでも、どのような組み合わせでも使用できるようになったことです。 For example, a Personal license can be used on Android, Mac and iOS, just like on two Windows computers and an Apple tablet.**
 
 ## 旧ライセンスは現在どのような扱いか？
 

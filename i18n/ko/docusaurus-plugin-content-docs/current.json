@@ -48,7 +48,7 @@
     "description": "The label for category AdGuard Browser extension in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.AdGuard for Safari": {
-    "message": "AdGuard for Safari",
+    "message": "Safari용 AdGuard",
     "description": "The label for category AdGuard for Safari in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.AdGuard Content Blocker": {

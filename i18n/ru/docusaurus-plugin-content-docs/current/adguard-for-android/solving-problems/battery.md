@@ -37,9 +37,9 @@ sidebar_position: 1
 
     *radio.active=* 100–300мА дополнительное потребление в мАч, вызванное передачей данных по мобильной сети.
 
-    *cpu.active=* 100–200мА дополнительное потребление в мАч, вызванное работой процессора.
+    *cpu.active=* 100-200mA additional consumption in mAh caused by CPU load.
 
-1. AdGuard самостоятельно почти не потребляет трафика, так что для оценки потребления батареи отбросим значения Mobile/Wi-Fi packets и остановимся на подсчёте CPU.
+1. AdGuard by itself almost doesn't consume any traffic, so for the sake of evaluating power consumption let's get rid of 'Mobile/Wi-Fi packets' and stick to 'CPU'.
 
     Формула для вычисления потребления:
 

@@ -93,11 +93,11 @@ V tomto článku uvádíme příklady nastavení některých nejoblíbenějšíc
 
 1. Klepněte na tlačítko **Přidat proxy** a zadejte následující údaje:
 
-    | Pole           | Hodnota                                                                               |
-    | -------------- | ------------------------------------------------------------------------------------- |
-    | Typ proxy      | *SOCKS5*                                                                              |
-    | Hostitel proxy | *jakýkoli server z [tohoto seznamu](https://support.nordvpn.com/Connectivity/Proxy/)* |
-    | Port proxy     | *1080*                                                                                |
+    | Pole           | Hodnota                                                                                                                                |
+    | -------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+    | Typ proxy      | *SOCKS5*                                                                                                                               |
+    | Hostitel proxy | *jakýkoli server z [tohoto seznamu](https://support.nordvpn.com/hc/en-us/articles/20195967385745-NordVPN-proxy-setup-for-qBittorrent)* |
+    | Port proxy     | *1080*                                                                                                                                 |
 
 1. Do polí **Uživatelské jméno** a **Heslo** zadejte své uživatelské jméno a heslo NordVPN.
 

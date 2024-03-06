@@ -125,7 +125,7 @@ In the *About* section, you can find infos about the current version, links to t
 
 ## Extension’s main menu {#main-menu}
 
-The extension's main page can be accessed by clicking on the extension's icon on the toolbar of your browser.
+The extension's main page can be accessed by clicking the extension's icon on the toolbar of your browser.
 
 ![Main menu *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
 

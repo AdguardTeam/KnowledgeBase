@@ -51,7 +51,7 @@ This approach is available starting from **AdGuard v3.5 nightly 6**. 古いバ�
 
 :::
 
-1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
 
 1. **USBケーブル**を使用して**ADB**をインストールしたコンピューターまたはラップトップにAndroidデバイスを接続します。
 
@@ -85,7 +85,7 @@ To enable this mode, open **AdGuard Settings** → **Network** → **Filtering m
 - 端末**設定**を開く
 - **高度な設定**をタップ
 - 下にスクロールして**デュアルメッセンジャー**をタップ
-- チェックついているアプリをすべて**オフ**にする
+- Disable the **Dual messenger** for all apps;
 - 端末画面オフにして5～10分程度放置する
 - 画面のロックを解除し、再度VPNプロファイルの作成を試みてください。
 
@@ -94,5 +94,5 @@ To enable this mode, open **AdGuard Settings** → **Network** → **Filtering m
 - 端末**設定**を開く
 - 「**便利な機能**」を開く（端末によっては「一般」や他のメニュー名称の場合もあります）
 - 下にスクロールして、「**デュアルアプリ**」をタップ
-- アプリに対するスイッチをすべてオフにする
+- Remove all apps from the list;
 - 端末を再起動する

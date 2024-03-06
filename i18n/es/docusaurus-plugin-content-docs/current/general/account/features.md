@@ -31,7 +31,7 @@ Los dispositivos vinculados a tus licencias del bloqueador de anuncios AdGuard s
 
 ## Ver compras
 
-La sección Historial de compras muestra todas las licencias que hayas comprado utilizando la cuenta de correo electrónico con la que registraste tu cuenta AdGuard. Allí también encontrarás información sobre la fecha de compra, número de pedido, forma de pago y coste de la compra.
+La sección Historial de compras muestra todas las licencias que hayas comprado utilizando la cuenta de correo electrónico con la que registraste tu cuenta AdGuard. You will also find there information about the date of purchase, order ID, payment method, and cost of the purchase.
 
 ## Contactar la asistencia técnica
 

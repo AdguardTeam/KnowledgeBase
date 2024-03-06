@@ -30,6 +30,12 @@ Zobrazí se vám následující seznam možností:
 
 ## Jak zapnout webové rozšíření pro Safari od AdGuardu
 
+:::note
+
+Webové rozšíření pro Safari od AdGuardu vyžaduje ke své činnosti přístup k obsahu webových stránek, ale nepoužívá jej k jiným účelům než k blokování reklam.
+
+:::
+
 ### V nastavení iOS
 
 Webové rozšíření není samostatný nástroj a vyžaduje AdGuard pro iOS. Pokud na svém zařízení nemáte nainstalovaný AdGuard pro iOS, [nejprve](../installation) jej nainstalujte a dokončete proces registrace, abyste jej připravili k práci.
@@ -44,15 +50,9 @@ Vyhledejte sekci **POVOLIT TATO ROZŠÍŘENÍ** a poté mezi dostupnými rozší
 
 ![Select "AdGuard" in ALLOW THESE EXTENSIONS section *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings3_en.png)
 
-Klepněte na něj a zapněte přepínač. Na stejné obrazovce se ujistěte, že rozšíření AdGuardu má požadovaná oprávnění: **Všechny webové stránky** by měly mít stav *Povolit*.
+Klepněte na něj a zapněte přepínač. Na stejné obrazovce nastavte oprávnění *Všechny webové stránky* pro AdGuard na *Povolit* nebo *Zeptat se*. Pokud zvolíte *Povolit*, nebudete muset udělovat oprávnění při každé návštěvě nové webové stránky. Pokud si nejste jisti, zvolte *Zeptat se* k udělení oprávnění pro jednotlivé stránky.
 
-![settings extensions *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings4_en.png)
-
-:::note
-
-Webové rozšíření pro Safari od AdGuardu vyžaduje ke své činnosti přístup k obsahu webových stránek, ale nepoužívá jej k jiným účelům než k blokování reklam.
-
-:::
+![Extension settings *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings4_en.png)
 
 ### V Safari
 

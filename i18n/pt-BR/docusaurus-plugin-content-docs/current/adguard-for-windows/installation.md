@@ -1,5 +1,5 @@
 ---
-title: Installation
+title: Instalação
 sidebar_position: 2
 ---
 
