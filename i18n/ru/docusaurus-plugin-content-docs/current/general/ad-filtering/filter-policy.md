@@ -38,8 +38,8 @@ A **filter** (or a **filter list**) is a set of filtering rules designed to filt
 
 AdGuard ad-blocking filters include:
 
-- AdGuard Base filter
-- AdGuard Mobile Ads filter
+- Базовый фильтр AdGuard
+- Фильтр мобильной рекламы AdGuard
 - Regional filters divided by language principle — Chinese, Dutch, French, German, Japanese, Russian, Spanish/Portuguese, Turkish, and Ukrainian
 
 ### The purpose of these filters
