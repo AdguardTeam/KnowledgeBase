@@ -5,28 +5,28 @@ sidebar_position: 5
 
 Snímek obrazovky je zachycení obrazovky počítače nebo mobilního zařízení, které lze získat pomocí standardních nástrojů nebo speciálního programu/aplikace.
 
-Sometimes screenshots are requested by the support team for a better understanding. Zde najdete všechny potřebné klávesové zkratky, které byste měli znát, abyste mohli pořizovat snímky obrazovky na počítači nebo mobilním zařízení.
+Někdy si tým podpory vyžádá snímky obrazovky pro lepší pochopení. Zde najdete všechny potřebné klávesové zkratky, které byste měli znát, abyste mohli pořizovat snímky obrazovky na počítači nebo mobilním zařízení.
 
 ### Android {#android}
 
-Taking a screenshot on an Android device can be done in various ways, depending on the device model and its manufacturer.
+Pořízení snímku obrazovky na zařízení se systémem Android lze provést různými způsoby v závislosti na modelu zařízení a jeho výrobci.
 
 Obecně lze pro Android použít následující kombinaci tlačítek:
 
-- **Press the *Volume Down* and the *Power* buttons at the same time**
+- **Stiskněte současně tlačítka *Hlasitost dolů* a *Napájení***
 
 Zařízení se systémem Android zachytí celou obrazovku a uloží ji jako fotografii. Snímek obrazovky tak najdete ve složce *Snímky obrazovky* v Galerii.
 
-For older devices, you may use following combinations:
+U starších zařízení můžete použít následující kombinace:
 
-- **Press *Home* and *Power* at the same time**
-- **Press *Back* and *Home* at the same time**
+- **Stiskněte současně tlačítka *Domů* a *Napájení***
+- **Stiskněte současně tlačítka *Zpět* a *Domů***
 
-On Android 8 and later you can also take a screenshot with other manipulations, for example, with swiping your hand over the screen at a 90-degree angle to trigger a screenshot (Samsung devices), or with swiping down three fingers (OnePlus devices), etc.
+V systému Android 8 a novějších verzích můžete snímek obrazovky pořídit i jinými způsoby, například přejetím ruky po obrazovce pod úhlem 90 stupňů (zařízení Samsung) nebo přejetím tří prstů dolů (zařízení OnePlus) apod.
 
-The options for taking a screenshot vary by brand and model. Check your device’s settings to find the method that works best for you.
+Možnosti pořízení snímku obrazovky se liší podle značky a modelu. Zkontrolujte nastavení svého zařízení a najděte metodu, která vám nejlépe vyhovuje.
 
-Besides, you can always use any special apps for taking screenshots on your devices, for example — *Screenshot Easy*, *Screenshot Ultimate*, *Screenshot Snap*, etc.
+Kromě toho můžete vždy použít některou ze speciálních aplikací pro pořizování snímků obrazovky na svých zařízeních, např. — *Screenshot Easy*, *Screenshot Ultimate*, *Screenshot Snap* atd.
 
 ### iOS {#ios}
 
@@ -48,21 +48,21 @@ Zařízení se systémem iOS zachytí celou obrazovku a uloží ji jako fotograf
 
 Na některých noteboocích musíte podržet *Fn* a pak místo toho stisknout *PrtScn*.
 
-*Please note: The PrtScn (Print Screen) key may be abbreviated differently on different keyboards — PrntScrn, PrtScn, PrtScr, or PrtSc.*
+*Poznámka: Klávesa PrtScn (Print Screen) může být na různých klávesnicích označována různými zkratkami — PrntScrn, PrtScn, PrtScr nebo PrtSc.*
 
 Windows zachytí celou obrazovku a zkopíruje ji do schránky.
 
-To take a screenshot of an active window, use the following shortcut:
+Chcete-li pořídit snímek obrazovky aktivního okna, použijte následující klávesovou zkratku:
 
 - **Podržte stisknutý *Alt* a stiskněte *PrtScn* (nebo na některých noteboocích *Fn + Alt + PrtScn*)**
 
-To take a screenshot of a specific area, use the following shortcut:
+Chcete-li pořídit snímek obrazovky určité oblasti, použijte následující klávesovou zkratku:
 
-- ***Press ***Win + Shift + S******
+- ***Stiskněte ***Win + Shift + S******
 
-Po pořízení snímku obrazovky se snímek uloží do schránky. Ve většině případů jej budete moci vložit do dokumentu, který právě upravujete, pomocí zkratky *Ctrl + V*. Pokud potřebujete snímek obrazovky uložit do souboru, otevřete standardní program **Malování** (nebo jinou aplikaci, která umí pracovat s obrázky). Paste your screenshot there using the same shortcut or by clicking the Paste button (usually in the top left corner of the screen) and then save it.
+Po pořízení snímku obrazovky se snímek uloží do schránky. Ve většině případů jej budete moci vložit do dokumentu, který právě upravujete, pomocí zkratky *Ctrl + V*. Pokud potřebujete snímek obrazovky uložit do souboru, otevřete standardní program **Malování** (nebo jinou aplikaci, která umí pracovat s obrázky). Vložte tam snímek obrazovky pomocí stejné klávesové zkratky nebo kliknutím na tlačítko Vložit (obvykle v levém horním rohu obrazovky) a poté jej uložte.
 
-Windows 8 and 10 let you take a screenshot very quickly with the *Win + PrtScn* shortcut. Jakmile stisknete tyto klávesy, snímek obrazovky se automaticky uloží jako soubor do složky *Obrázky* → *Snímky obrazovky*.
+Windows 8 a 10 umožňují pořídit snímek obrazovky velmi rychle pomocí klávesové zkratky *Win + PrtScn*. Jakmile stisknete tyto klávesy, snímek obrazovky se automaticky uloží jako soubor do složky *Obrázky* → *Snímky obrazovky*.
 
 K pořizování snímků obrazovky existuje také specializovaný program *Výstřižky*, který najdete v nabídce Start mezi standardními programy počítače. Výstřižky vám umožní zachytit jakoukoli oblast vaší pracovní plochy nebo celou obrazovku. Po pořízení snímku obrazovky pomocí tohoto programu můžete obrázek upravit a uložit do libovolné složky v počítači.
 
@@ -72,24 +72,24 @@ Kromě toho můžete zkusit používat různé aplikace pro pořizování snímk
 
 Chcete-li pořídit snímek obrazovky v zařízení se systémem macOS, použijte následující zkratku:
 
-- ***Press and hold ***⌘ Cmd + Shift + 3******
+- ***Stiskněte a podržte ***⌘ Cmd + Shift + 3******
 
 Váš Mac zachytí celou obrazovku a uloží ji jako soubor na plochu.
 
-To take a screenshot of an active window, use the following shortcut:
+Chcete-li pořídit snímek obrazovky aktivního okna, použijte následující klávesovou zkratku:
 
-- **Press and hold *⌘ Cmd + Shift + 4 + Space bar*. Ukazatel se změní na ikonu fotoaparátu. Klikněte na okno a zachyťte snímek. Stisknutím Esc zrušíte pořizování snímku obrazovky**
+- **Stiskněte a podržte *⌘ Cmd + Shift + 4 + mezerník*. Ukazatel se změní na ikonu fotoaparátu. Klikněte na okno a zachyťte snímek. Stisknutím Esc zrušíte pořizování snímku obrazovky**
 
-To take a screenshot of a specific area, use the following shortcut:
+Chcete-li pořídit snímek obrazovky určité oblasti, použijte následující klávesovou zkratku:
 
-- ***Press ***⌘ Cmd + Shift + 5******. Přetažením křížku vyberte potřebnou oblast. Pro pořízení snímku obrazovky, uvolněte myš nebo trackpad, pro zrušení stiskněte Esc.
+- ***Stiskněte ***⌘ Cmd + Shift + 5******. Přetažením křížku vyberte potřebnou oblast. Pro pořízení snímku obrazovky, uvolněte myš nebo trackpad, pro zrušení stiskněte Esc.
 
-To take a screenshot of the *Touch Bar* (MacBook Pro), use the following shortcut:
+Chcete-li pořídit snímek obrazovky pomocí *Touch Bar* (MacBook Pro), použijte následující klávesové zkratky:
 
-- ***Press ***⌘ Cmd + Shift + 6******
+- ***Stiskněte ***⌘ Cmd + Shift + 6******
 
 Mac zachytí celý *Touch Bar* a uloží jej jako soubor na plochu.
 
-To copy a screenshot to the clipboard instead of saving it, hold down *Ctrl* together with any of the shortcuts above. Then you can paste the screenshot (from the clipboard) into a document or an image you are currently editing by using *Cmd + V* shortcut.
+Chcete-li snímek obrazovky zkopírovat do schránky namísto uložení, podržte *Ctrl* spolu s některou z výše uvedených klávesových zkratek. Poté můžete snímek obrazovky (ze schránky) vložit do dokumentu nebo obrázku, který právě upravujete pomocí klávesových zkratek *Cmd + V*.
 
 Snímky obrazovky můžete pořizovat také pomocí **Náhled** a výběrem **Pořídit snímek obrazovky** (vybrané oblasti, okna nebo celé obrazovky). Pomocí **Náhledu** můžete ukládat snímky obrazovky ve formátech JPG, TIFF, PDF a dalších.

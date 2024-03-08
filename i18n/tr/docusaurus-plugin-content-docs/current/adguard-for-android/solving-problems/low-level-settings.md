@@ -59,7 +59,7 @@ Here you can specify the response type for domains blocked by DNS rules based on
 
 #### DNS isteği zaman aşımı
 
-Here you can specify the time in milliseconds that AdGuard will wait for the response from the selected DNS server before resorting to fallback. If you don’t fill in this field or enter an invalid value, the value of 5000 will be used.
+Here you can specify the time in milliseconds that AdGuard will wait for the response from the selected DNS server before resorting to fallback. Bu alanı doldurmazsanız veya geçersiz bir değer girerseniz, 5000 değeri kullanılacaktır.
 
 #### Engellenen yanıt kullanım süresi
 
@@ -101,11 +101,11 @@ Bu ayar etkinleştirilirse, AdGuard HAR dosyalarını yakalar. Uygulama önbelle
 
 Yalnızca hata ayıklama amacıyla kullanın!
 
-### HTTPS filtering
+### HTTPS filtreleme
 
 #### Encrypted Client Hello
 
-Every encrypted Internet connection has an unencrypted part. This is the very first packet which contains the name of the server you are connecting to. Encrypted Client Hello teknolojisinin bu sorunu çözmesi ve şifrelenmemiş bilgilerin son kısmını şifrelemesi gerekiyor. To benefit from it, enable the *Encrypted Client Hello* option. Alan adı için ECH yapılandırmasını aramak için yerel bir DNS proxy'si kullanır. If it is found, ClientHello packet will be encrypted.
+Her şifrelenmiş internet bağlantısının bir de şifrelenmemiş kısmı vardır. Bu, bağlandığınız sunucunun adını içeren ilk pakettir. Encrypted Client Hello teknolojisinin bu sorunu çözmesi ve şifrelenmemiş bilgilerin son kısmını şifrelemesi gerekiyor. To benefit from it, enable the *Encrypted Client Hello* option. Alan adı için ECH yapılandırmasını aramak için yerel bir DNS proxy'si kullanır. Eğer bulunursa, ClientHello paketi şifrelenecektir.
 
 #### OCSP checking
 
@@ -215,7 +215,7 @@ Bu ayar etkinleştirilirse, AdGuard LAN bağlantılarını basit ağlar için fi
 
 Here you can enter the IP address that will be used to create a TUN interface. By default, it is `2001:db8:ad:0:ff::`.
 
-### Miscellaneous
+### Diğer
 
 #### Detect Samsung Pay
 

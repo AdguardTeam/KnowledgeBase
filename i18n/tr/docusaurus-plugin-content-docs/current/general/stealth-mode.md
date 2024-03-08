@@ -85,7 +85,7 @@ The Flash Player plugin has become increasingly vulnerable to such online threat
 
 Some websites and web services still use the old technology to support Java plugins. The Java plugin API, which is the basis of Java plugins, has serious security flaws. For security purposes, you can disable such plugins. Nevertheless, even if you decide to use the "Block Java" option, JavaScript will still be enabled.
 
-## Miscellaneous {#miscellaneous}
+## Diğer {#miscellaneous}
 
 ### Hide Referer from third parties {#referer}
 

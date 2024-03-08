@@ -44,9 +44,9 @@ AdGuard-Filter zum Blockieren von Werbung umfassen:
 
 ### Der Zweck dieser Filter
 
-- **Der Basisfilter** blockiert Werbung auf englischsprachigen Websites und solchen, für die es keinen eigenen Filter gibt. Er enthält auch allgemeine Filterregeln, die für alle Websites unabhängig von der Sprache gelten.
-- **Filter gegen mobile Werbung** blockiert Werbung auf mobilen Versionen von Websites und in mobilen Apps. Es gibt keine Unterteilung nach Sprachen.
-- **Sprachspezifische Filter** folgen der gleichen Politik wie der **Basisfilter**, sind aber auf Websites in bestimmten Sprachen beschränkt.
+- **Der Basisfilter** blockiert Werbung auf englischsprachigen Websites und solchen, für die es keinen eigenen Filter gibt. It also contains general filtering rules that apply to all sites regardless of language
+- **Filter gegen mobile Werbung** blockiert Werbung auf mobilen Versionen von Websites und in mobilen Apps. There is no segmentation based on language
+- **Regional filters** follow the same policy as the **Base filter**, but limited to websites in certain languages
 
 Das Ziel von Werbeblockern ist es, alle Arten von Werbung auf Websites, in Apps und auf bestimmten Geräten, die Werbung aus dem Internet laden können, zu blockieren:
 
@@ -86,13 +86,13 @@ Das Ziel von Werbeblockern ist es, alle Arten von Werbung auf Websites, in Apps 
 
 ### Begriffe
 
-**Tracking** — der Prozess der Überwachung und Sammlung von Daten über Nutzer:innen und ihre Interaktionen mit Websites und Apps zu Marketingzwecken sowie zur Sammlung von Telemetriedaten über das Funktionieren von Websites oder Apps zum Zwecke der Analyse ihrer Funktionsweise. Dieser Prozess umfasst die Nachverfolgung der besuchten Seiten, der Verweildauer, der Interaktion mit Website-Elementen (z. B. Klicks, Eingaben in Formulare) und anderer Metriken. Tracking (Nachverfolgung) ermöglicht es den Betreibern von Websites und Apps, das Nutzerverhalten besser zu verstehen, die Funktionalität zu optimieren und Marketingstrategien anzupassen. Die Nachverfolgung dient auch dazu, die Leistung und die Nutzungsmuster zu überwachen und Probleme zu erkennen, damit die Entwickler die notwendigen Daten erhalten, um die Stabilität und Qualität der Website oder App zu verbessern. Even if the data obtained cannot identify a person’s identity, such actions are still considered tracking
+**Tracking** — der Prozess der Überwachung und Sammlung von Daten über Nutzer:innen und ihre Interaktionen mit Websites und Apps zu Marketingzwecken sowie zur Sammlung von Telemetriedaten über das Funktionieren von Websites oder Apps zum Zwecke der Analyse ihrer Funktionsweise. Dieser Prozess umfasst die Nachverfolgung der besuchten Seiten, der Verweildauer, der Interaktion mit Website-Elementen (z. B. Klicks, Eingaben in Formulare) und anderer Metriken. Tracking (Nachverfolgung) ermöglicht es den Betreibern von Websites und Apps, das Nutzerverhalten besser zu verstehen, die Funktionalität zu optimieren und Marketingstrategien anzupassen. Die Nachverfolgung dient auch dazu, die Leistung und die Nutzungsmuster zu überwachen und Probleme zu erkennen, damit die Entwickler die notwendigen Daten erhalten, um die Stabilität und Qualität der Website oder App zu verbessern. Even if the data obtained cannot reveal a person’s identity, such actions are still considered tracking.
 
-**Tracker** — Software, die auf einer Website oder in einer App eingesetzt wird und dazu dient, Informationen über deren Funktion und die Aktionen der Besucher:innen zu sammeln. Sie verfolgt die Interaktion der Benutzer:innen mit der Website oder App und zeichnet Daten über Seitenaufrufe, Verweildauer, Klicks, Formularübertragungen und andere Ereignisse auf. Tracker dienen somit Website- und App-Betreibern als Tool zur Analyse des Nutzerverhaltens, zur Verbesserung der Nutzererfahrung und zur Optimierung von Inhalten und Werbung
+**Tracker** — Software, die auf einer Website oder in einer App eingesetzt wird und dazu dient, Informationen über deren Funktion und die Aktionen der Besucher:innen zu sammeln. Sie verfolgt die Interaktion der Benutzer:innen mit der Website oder App und zeichnet Daten über Seitenaufrufe, Verweildauer, Klicks, Formularübertragungen und andere Ereignisse auf. Its purpose is to provide website and application owners with a tool for analyzing user behavior, improving the user experience, and optimizing content and advertising.
 
-**URL-Tracking-Parameter** — ein Teil der Adresse, der von Analysesystemen zu Links hinzugefügt wird oder in einigen Links auf Webseiten enthalten ist. Wenn eine Anfrage gestellt wird, kann dieser URL-Tracking-Parameter vom Backend eines Analysesystems oder einer Website verarbeitet werden, das daraus Informationen extrahiert. So können beispielsweise URL-Tracking-Parameter Informationen über Klicks oder Werbekampagnen übermitteln. URL-Tracking-Parameter können auch von Betrugsschutz- oder Bot-Erkennungssystemen verwendet werden
+**URL-Tracking-Parameter** — ein Teil der Adresse, der von Analysesystemen zu Links hinzugefügt wird oder in einigen Links auf Webseiten enthalten ist. Wenn eine Anfrage gestellt wird, kann dieser URL-Tracking-Parameter vom Backend eines Analysesystems oder einer Website verarbeitet werden, das daraus Informationen extrahiert. So können beispielsweise URL-Tracking-Parameter Informationen über Klicks oder Werbekampagnen übermitteln. URL tracking parameters can also be used by fraud protection or bot detection systems.
 
-**Cookies** — Dateien, die von Websites an Geräte gesendet und dort gespeichert werden. Diese Dateien enthalten verschiedene Informationen, die sowohl für das Funktionieren der Website auf dem Gerät erforderlich sind als auch für Analysezwecke verwendet werden — eindeutige Kennungen, die zur Verfolgung der Besucheraktivitäten auf der Website, der Werbeparameter usw. dienen
+**Cookies** — Dateien, die von Websites an Geräte gesendet und dort gespeichert werden. These files contain various information — both necessary for the functioning of the site on the device and used for analytics purposes — unique identifiers used to track visitor activity on the website, advertising parameters, and more.
 
 ### Filter
 
@@ -121,7 +121,7 @@ Der **URL-Tracking-Filter** wurde entwickelt, um Tracking-Parameter aus Webadres
 
 Tracking-Schutzfilter sollten einen Tracker nicht blockieren, wenn dadurch das ordnungsgemäße Funktionieren der Website beeinträchtigt würde:
 
-- Anti-Bots und Schutz vor Betrug, wenn dies die Nutzung der Website beeinträchtigt. For example, with PerimeterX or hCaptcha blocking causes problems when the site attempts to verify its visitor witch a captcha
+- Anti-Bots und Schutz vor Betrug, wenn dies die Nutzung der Website beeinträchtigt. For example, with PerimeterX or hCaptcha blocking causes problems when the site attempts to verify its visitor with a captcha
 - Fehlerverfolgungssysteme wie Sentry oder Bugsnag werden nicht blockiert
 
 ## Belästigungsfilter
@@ -158,7 +158,7 @@ Dieser Filter wurde entwickelt, um sowohl Cookie-Hinweise als auch Anfragen von 
 - Scriptlets werden verwendet, um die Zustimmungsanfrage zu umgehen (praktisch nicht anwendbar auf Websites mit Beschränkungen für das Laden von Inhalten Dritter, bis eine Entscheidung getroffen wurde)
 - Setzen eines Cookies oder Schlüssels im lokalen Speicher der Website, so dass das Skript davon ausgeht, dass eine Wahl getroffen ist
 - Simulation von Benutzeraktionen mit einer Regel, die eine bestimmte Schaltfläche anklickt und deren Ausführung 10 Sekunden nach dem Laden unterbricht. Es bestehen zwei Möglichkeiten:
-    - Reject (except for functional cookies — depending on the CMP system) — the preferred option, as there is less chance of loading additional analytics tools
+    - Reject (except for functional cookies — depending on the CMP system) — the preferred option, as there is less risk of loading additional analytics tools
     - Akzeptieren — diese Option wird als letztes Mittel verwendet, wenn andere Methoden fehlschlagen. In diesem Fall wird die Seite zusätzlich auf die Verwendung von Analysetools überprüft, die dann durch den **AdGuard Tracking-Schutzfilter** gesperrt werden
 
 **Beschränkungen und Ausnahmen**
@@ -220,13 +220,13 @@ Dieser Filter wurde entwickelt, um störende Elemente zu blockieren, die in ande
 
 **Beschränkungen und Ausnahmen**
 
-Dieser Filter kann Regeln enthalten, die nicht für alle Benutzer:innen geeignet sind. In such cases, it is recommended to disable this filter. Die Entscheidung, diesem Filter Regeln hinzuzufügen, wird von den Filterentwickler:innen für jede einzelne Regel getroffen.
+Dieser Filter kann Regeln enthalten, die nicht für alle Benutzer:innen geeignet sind. Sometimes it is recommended to disable this filter. Die Entscheidung, diesem Filter Regeln hinzuzufügen, wird von den Filterentwickler:innen für jede einzelne Regel getroffen.
 
 ## Social media filters
 
 ### Filter
 
-AdGuard Seocial Media filters include:
+AdGuard Social Media filters include:
 
 - AdGuard Social-Media-Filter
 

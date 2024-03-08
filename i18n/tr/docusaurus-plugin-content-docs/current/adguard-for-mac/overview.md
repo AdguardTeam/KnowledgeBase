@@ -125,9 +125,9 @@ This version of Assistant is legacy and there is no point in using it on new sys
 
 One of the important features of AdGuard for Mac is that the application can work as a cross-browser userscript manager. You can easily add any scripts you like and manage existing ones without having to switch browsers every time.
 
-## Network
+## Ağ
 
-![Network](https://cdn.adtidy.org/content/kb/ad_blocker/mac/NetworkFiltering.jpg)
+![Ağ](https://cdn.adtidy.org/content/kb/ad_blocker/mac/NetworkFiltering.jpg)
 
 This last panel is dedicated to Network filtering, and you will find extra functionalities here. We do recommend to enable the first two ones: "Automatically filter applications" and "Filter HTTPS protocol". Those are an important added precaution to better filter your web space. HTTP is the primary protocol for transmitting information over the Internet. Most data including ads is transferred via it, but it has one disadvantage — the connection is unencrypted. Thanks to the HTTPS filtering feature AdGuard has, not only HTTP traffic is filtered, but also HTTPS traffic (S stands for ‘secure’).
 
@@ -135,7 +135,7 @@ There are also the options of "Do not filter websites with EV certificates" and 
 
 As for the second option — well, yes, in fact you can use AdGuard as a regular HTTP proxy server. All traffic coming through it will be filtered. This proxy will also be available on your local network, so you may use it for traffic filtering on other devices that are able to reach the proxy directly. To filter traffic on another device connected to proxy you will need to install an AdGuard root certificate there. After you configure proxy, open your browser and go to [this page](http://local.adguard.org/cert).
 
-## Others
+## Diğerleri
 
 There are other useful AdGuard options that shouldn't go unnoticed in this article, since they add much to user experience.
 

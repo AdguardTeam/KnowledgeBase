@@ -12,11 +12,11 @@
     "description": "The label for category Ad filtering in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.HTTPS filtering": {
-    "message": "HTTPS filtering",
+    "message": "HTTPS filtreleme",
     "description": "The label for category HTTPS filtering in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.AdGuard account": {
-    "message": "AdGuard account",
+    "message": "AdGuard hesabı",
     "description": "The label for category AdGuard account in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.License": {
@@ -56,7 +56,7 @@
     "description": "The label for category AdGuard Content Blocker in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Miscellaneous": {
-    "message": "Miscellaneous",
+    "message": "Diğer",
     "description": "The label for category Miscellaneous in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Contribute to AdGuard": {
