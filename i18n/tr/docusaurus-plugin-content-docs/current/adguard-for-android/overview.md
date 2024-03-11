@@ -316,9 +316,9 @@ This section allows you to manage HTTPS filtering settings, filters, and userscr
 
 ![Filtering *mobile_border](https://cdn.adtidy.org/blog/new/7v5c6filtering.png)
 
-#### Network
+#### Ağ
 
-##### HTTPS filtering
+##### HTTPS filtreleme
 
 To block ads and trackers on most websites and in most apps, AdGuard needs to filter their HTTPS traffic. [Read more about HTTPS filtering](/general/https-filtering/what-is-https-filtering)
 

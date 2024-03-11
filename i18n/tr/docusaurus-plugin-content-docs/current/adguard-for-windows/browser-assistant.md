@@ -31,7 +31,7 @@ Yeni Tarayıcı Asistanı, Windows için AdGuard ayarlarında Gizlilik Modu, Gez
 
 ![Ayarlar *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 
-## Legacy Assistant
+## Eski Asistan
 
 Eski Asistan, bir tarayıcı uzantısı değil, yalnızca bir kullanıcı betiği olan Asistan'ın önceki sürümüdür. Temel olarak, yeni Tarayıcı Asistanı yerine bunu seçmek isteyebileceğiniz iki durum vardır:
 

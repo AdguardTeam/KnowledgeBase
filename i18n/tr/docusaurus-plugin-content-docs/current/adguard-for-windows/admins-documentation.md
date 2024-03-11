@@ -13,11 +13,11 @@ Bu sayfada AdGuard'ın politika ve tercihlere ilişkin merkezi yönetiminin öze
 
 On machines that are joined to an Active Directory domain, policy settings may also be stored in the registry under `HKEY_LOCAL_MACHINE` in the following path: `Software\Policies\AdGuard\`.
 
-The only supported policy is `LicenseKey`. If this policy is set, AdGuard will prefer it over what user can enter in the interface. This license key will be used for checking license status.
+The only supported policy is `LicenseKey`. If this policy is set, AdGuard will prefer it over what user can enter in the interface. Bu lisans anahtarı lisans durumunu kontrol etmek için kullanılacaktır.
 
-## 3. Make sure that AdGuard servers are available {#servers-available}
+## 3. AdGuard sunucularının kullanılabilir olduğundan emin olun {#servers-available}
 
-AdGuard connects to two hosts: `api.adguard.org` and `filters.adtidy.org`. Make sure that both servers are available.
+AdGuard connects to two hosts: `api.adguard.org` and `filters.adtidy.org`. Her iki sunucunun da kullanılabilir olduğundan emin olun.
 
 ## 4. Push the MSI out to your network {#msi-push}
 

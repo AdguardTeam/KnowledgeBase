@@ -51,23 +51,23 @@ Kendi kurallarınızı elle yazmaya başlamadan önce ayrıntılı [söz dizimi 
 
 ### Gizlilik Modu
 
-Many websites gather information about their visitors, such as their IP addresses, information about the browser and operating system installed, screen resolution, and even what page the user came or was redirected from. Some web pages use cookies to mark the browser and save your personal settings, user preferences, or "recognize" you upon your next visit. Stealth Mode safeguards your personal information from such data and statistics gathering systems.
+Many websites gather information about their visitors, such as their IP addresses, information about the browser and operating system installed, screen resolution, and even what page the user came or was redirected from. Some web pages use cookies to mark the browser and save your personal settings, user preferences, or "recognize" you upon your next visit. Gizlilik Modu, kişisel bilgilerinizi bu tür veri ve istatistik toplama sistemlerinden korur.
 
-![Stealth Mode *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/stealth-mode.png)
+![Gizlilik Modu *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/stealth-mode.png)
 
-You can flexibly adjust the work of Stealth Mode: for instance, you can prohibit the website to receive the search request you used to find it on the Internet, automatically delete both third-party and website’s own cookies, and disable location sharing in your browser that can be used to track your whereabouts.
+Gizlilik Modun çalışmasını esnek bir şekilde ayarlayabilirsiniz: örneğin, sitenin internette bulmak için kullandığınız arama isteğini almasını yasaklayabilir, hem üçüncü taraf hem de sitenin kendi çerezlerini otomatik olarak silebilir ve tarayıcınızda nerede olduğunuzu izlemek için kullanılabilecek konum paylaşımını devre dışı bırakabilirsiniz.
 
 Gizlilik Modu ve birçok seçeneği hakkında her şeyi öğrenmek için [bu makaleyi okuyun](/general/stealth-mode).
 
 ### Gezinti Koruması
 
-Browsing Security gives strong protection against malicious and phishing websites. Hayır, Windows için AdGuard bir antivirüs değildir. Ne bir virüs indirilmeye başlandığında bunu durdurur ne de var olanları siler. Ancak, alan adı "güvenilmeyen siteler" veri tabanımıza eklenmiş bir sitesine gitmek veya böyle bir siteden bir dosya indirmek üzereyseniz sizi uyarır. You can find more information about how this module works in the [dedicated article](/general/browsing-security).
+Gezinti Koruması, kötü amaçlı ve kimlik avı sitelerine karşı güçlü koruma sağlar. Hayır, Windows için AdGuard bir antivirüs değildir. Ne bir virüs indirilmeye başlandığında bunu durdurur ne de var olanları siler. Ancak, alan adı "güvenilmeyen siteler" veri tabanımıza eklenmiş bir sitesine gitmek veya böyle bir siteden bir dosya indirmek üzereyseniz sizi uyarır. You can find more information about how this module works in the [dedicated article](/general/browsing-security).
 
 Bu modülde şunları yapabilirsiniz
 
 - kötü amaçlı ve kimlik avı sitelerine yönelik istekleri engellemek için bildirimleri etkinleştirin,
 - sesli bildirimleri etkinleştirin,
-- agree to submit anonymous security-related info to the AdGuard server to help us keep the malicious and phishing websites database up to date.
+- kötü amaçlı ve kimlik avı siteleri veri tabanını güncel tutmamıza yardımcı olması için AdGuard sunucusuna anonim güvenlikle ilgili bilgiler göndermeyi kabul edin.
 
 ![Gezinti Koruması *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/browsing-security.png)
 
@@ -83,11 +83,11 @@ In the DNS protection module of AdGuard for Windows you can select the DNS serve
 
 ### Ebeveyn Denetimi
 
-There are several websites to which access should be restricted from a PC used by children. Bu görev Ebeveyn Denetimi tarafından gerçekleştirilir.
+Çocuklar tarafından kullanılan bir bilgisayardan erişimin kısıtlanması gereken birkaç site vardır. Bu görev Ebeveyn Denetimi tarafından gerçekleştirilir.
 
 ![Ebeveyn Denetimi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
 
-The module checks the contents of web pages opened in the browser and filters those with content undesirable for children: images and texts for adults, crude language, violence, drug propaganda, etc. Ebeveyn Denetimi ayarları parola korumalıdır, böylece çocuk kısıtlamaların ötesine geçemez. This module not only blocks directions to undesirable sites but can also delete the links that are inappropriate for children from the search results.
+Modül, tarayıcıda açılan web sayfalarının içeriğini kontrol eder ve çocuklar için istenmeyen içeriğe sahip olanları filtreler: yetişkinler için resimler ve metinler, kaba dil, şiddet, uyuşturucu kullanımı, vb. Ebeveyn Denetimi ayarları parola korumalıdır, böylece çocuk kısıtlamaların ötesine geçemez. Bu modül sadece istenmeyen sitelere yönlendirmeleri engellemekle kalmaz, aynı zamanda çocuklar için uygun olmayan bağlantıları da arama sonuçlarından silebilir.
 
 Ebeveyn Denetimi modülünde, bu seçeneğin nasıl çalıştığını özelleştirmek için *Güvenli arama* öğesini etkinleştirebilir, *engel listesi* ve *izin listesi* öğelerini yönetebilirsiniz. Çocuğunuzun bilgisayara yazılım indirip yüklemesini engellemek için *Yürütülebilen dosyaların indirilmesini engelle* kutusunu da işaretleyebilirsiniz. *Ebeveyn Denetimi* modülünde iki seçenek daha vardır: *Ebeveyn Denetimi* tarafından korunacak belirli bir Windows kullanıcısını seçebilir ve AdGuard ayarlarının değişmesini önlemek için bir parola belirleyebilirsiniz.
 
@@ -121,17 +121,17 @@ AdGuard Asistanı, tarayıcınız için [yeni Asistan](../browser-assistant) yok
 
 This is a custom extension designed to fight the technique of re-inserting blocked ads — the so-called ad blocker circumvention/ad reinjection. Both are advanced anti-ad blocker methods that continue to rise in popularity among advertisers.
 
-AdGuard Extra is essentially a mini-program that changes the way pages work in such a way that it becomes much more difficult for sites to use the above-mentioned methods to bypass blockers.
+AdGuard Extra, aslında sayfaların çalışma şeklini, sitelerin engelleyicileri atlamak için yukarıda belirtilen yöntemleri kullanmasını çok daha zor hâle getirecek şekilde değiştiren bir mini programdır.
 
 **AdGuard Açılır Pencere Engelleyici**
 
-Bu uzantı, web sayfalarını görüntülediğinizde açılır pencerelerin açılmasını engeller. Bazı açılır pencereler yararlı kabul edilir — site yönetimi için ayarlar veya bir bağlantıya tıklandığında gösterilen ek referans bilgileri içerebilirler. Bu nedenle gerekirse Engelleyiciyi kapatabilirsiniz. This extension doesn’t work on websites added to the AdGuard exceptions list either. Varsayılan olarak kapalıdır, ancak uygulama ayarlarından açabilirsiniz. Bu uzantı hakkında daha ayrıntılı bilgiyi Bilgi tabanımızda bulabilirsiniz.
+Bu uzantı, web sayfalarını görüntülediğinizde açılır pencerelerin açılmasını engeller. Bazı açılır pencereler yararlı kabul edilir — site yönetimi için ayarlar veya bir bağlantıya tıklandığında gösterilen ek referans bilgileri içerebilirler. Bu nedenle gerekirse Engelleyiciyi kapatabilirsiniz. Bu uzantı, AdGuard istisnalar listesine eklenen sitelerde de çalışmaz. Varsayılan olarak kapalıdır, ancak uygulama ayarlarından açabilirsiniz. Bu uzantı hakkında daha ayrıntılı bilgiyi Bilgi tabanımızda bulabilirsiniz.
 
 **Web of Trust**
 
-Web of Trust lets you see the reputation of each website based on its users’ opinions. Site bir dizi özel kritere göre derecelendirilir: güven, güvenlik, vb. Bu uzantı varsayılan olarak kapalıdır, ancak uygulama ayarlarından açabilirsiniz. Lütfen AdGuard'ın bu uzantının geliştiricisi olmadığını unutmayın.
+Web of Trust, kullanıcılarının görüşlerine dayanarak her sitenin itibarını görmenizi sağlar. Site bir dizi özel kritere göre derecelendirilir: güven, güvenlik, vb. Bu uzantı varsayılan olarak kapalıdır, ancak uygulama ayarlarından açabilirsiniz. Lütfen AdGuard'ın bu uzantının geliştiricisi olmadığını unutmayın.
 
-### Network
+### Ağ
 
 Sondan bir önceki modül ağ filtrelemeye ayrılmıştır ve burada ağla ilgili ek seçenekler bulacaksınız. Bunlardan ikisi varsayılan olarak etkindir: *Trafik filtrelemeyi etkinleştir* ve *HTTPS protokolünü filtrele*. Bunlar, web alanınızı daha iyi filtrelemek için önemli olağanüstü önlemlerdir. Çoğu site artık HTTPS kullanıyor ve aynı durum reklamcılık için de geçerli. Youtube.com, facebook.com ve twitter.com gibi birçok siteden HTTPS filtreleme olmadan reklamları kaldırmak imkansızdır. Bu nedenle, güçlü bir nedeniniz olmadığı sürece *HTTPS protokolünü filtrele* özelliğini etkin tutun.
 
@@ -145,9 +145,9 @@ Son olarak, proxy ayarlarının bulunduğu bir bölüm vardır. Burada, filtrele
 
 Son bölüm, internette her gezindiğinizde güvenlik ve anonimlik sağlayan ideal bir araç olan AdGuard VPN'e ayrılmıştır. *İndir* düğmesine tıklayarak indirebilir veya *Ana Sayfa* düğmesine tıklayarak AdGuard VPN sitesine gidebilirsiniz.
 
-How does AdGuard VPN work? Without going into technical details, we can say that VPN creates a secure encrypted tunnel between the user's computer or mobile device and a remote VPN server. Bu şekilde, üçüncü taraf bir gözlemci gerçek kullanıcının IP'sini değil VPN sunucusunun IP adresini gördüğünden, kullanıcının anonimliğinin yanı sıra veri gizliliği de korunur.
+AdGuard VPN nasıl çalışır? NTeknik detaylara girmeden VPN'in kullanıcının bilgisayarı veya mobil cihazı ile uzak bir VPN sunucusu arasında güvenli bir şifreli tünel oluşturduğunu söyleyebiliriz. Bu şekilde, üçüncü taraf bir gözlemci gerçek kullanıcının IP'sini değil VPN sunucusunun IP adresini gördüğünden, kullanıcının anonimliğinin yanı sıra veri gizliliği de korunur.
 
-**What AdGuard VPN does:**
+**AdGuard VPN ne yapar:**
 
 - gerçek yerinizi gizler ve anonim kalmanıza yardımcı olur
 - verilerinizi izlemekten korumak için IP adresinizi değiştirir
@@ -156,7 +156,7 @@ How does AdGuard VPN work? Without going into technical details, we can say that
 
 AdGuard VPN hakkında daha fazla bilgi edinmek için [AdGuard VPN Bilgi Tabanın](https://adguard-vpn.com/kb/) içinde dalın.
 
-## Others
+## Diğerleri
 
 Kullanıcı deneyimine çok şey kattığı için bu makalede gözden kaçırılmaması gereken başka yararlı AdGuard seçenekleri de var.
 
@@ -181,7 +181,7 @@ Bu sekme lisansınızla ilgili bilgileri içerir. Burada şunları yapabilirsini
 
 In addition to information about the current version of the program, this tab provides some useful links to Licese agreement, Privacy policy, Acknowledgements, Discussions, and Version history pages.
 
-### Check for updates
+### Güncellemeleri denetleyin
 
 ![Güncellemeleri denetle *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/check-updates.png)
 
@@ -191,12 +191,12 @@ Filtre ve kullanıcı betikleri güncellemelerini denetlemek için uygulamanın 
 
 AdGuard menülerinde gezinirken size zaman kazandırmak için sık kullanılan seçeneklerin ve ayarların çoğuna tepsi menüsünden ulaşılabilir. Menüyü açmak için tepsideki AdGuard simgesine sağ tıklayın. Size aşağıdaki seçenekleri sunar:
 
-- enable protection
+- korumayı etkinleştirin
 - korumayı devre dışı bırakın: tamamen veya 30 saniyeliğine
 - *Ayarlar* öğesine gidin
 - *Araçlar* ve *Gelişmiş* menülerini açın
-- check for filter updates
-- check for app updates
+- filtre güncellemelerini denetleyin
+- uygulama güncellemelerini denetleyin
 - son açılır mesajı tekrar görüntülemek için
 - *Destek* ve *Hakkında* bölümlerine ulaşın
 - AdGuard'ı kapatın ama filtrelemeye devam edin

@@ -23,7 +23,7 @@ Old FireFox versions, as well as browsers based on them, do not trust certificat
 
 If that doesn't help, follow the instructions for manually adding the AdGuard certificate to the FireFox storage.
 
-> This instruction is for Firefox browser. Names of buttons and menu items may differ in other Firefox-based browsers.
+> Bu talimat Firefox tarayıcısı içindir. Names of buttons and menu items may differ in other Firefox-based browsers.
 
 1. AdGuard'ı çalıştırın.
 
