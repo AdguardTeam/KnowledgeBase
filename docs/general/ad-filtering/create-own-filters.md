@@ -1469,10 +1469,10 @@ Keep in mind, though, that all JSONPath implementations have unique features/qui
 
 **Exceptions**
 
-Basic URL exceptions shall not disable rules with `$jsonprune` modifier. They can be disabled as described below:
+Basic URL exceptions shall not disable rules with the `$jsonprune` modifier. They can be disabled as described below:
 
 - `@@||example.org^$jsonprune` disables all `$jsonprune` rules for responses from URLs matching `||example.org^`.
-- `@@||example.org^$jsonprune=text` disable all `$jsonprune` rules with the value of the `$jsonprune` modifier equal to `text` for responses from URLs matching `||example.org^`.
+- `@@||example.org^$jsonprune=text` disables all `$jsonprune` rules with the value of the `$jsonprune` modifier equal to `text` for responses from URLs matching `||example.org^`.
 
 `$jsonprune` rules can also be disabled by `$document`, `$content` and `$urlblock` exception rules.
 
@@ -1680,29 +1680,16 @@ Due to the way rule parsing works, the characters `$` and `,` must be escaped wi
 
 **Exceptions**
 
-Basic URL exceptions shall not disable rules with `$xmlprune` modifier. They can be disabled as described below:
+Basic URL exceptions shall not disable rules with the `$xmlprune` modifier. They can be disabled as described below:
 
 - `@@||example.org^$xmlprune` disables all `$xmlprune` rules for responses from URLs matching `||example.org^`.
-- `@@||example.org^$xmlprune=text` disable all `$xmlprune` rules with the value of the `$xmlprune` modifier equal to `text` for responses from URLs matching `||example.org^`.
+- `@@||example.org^$xmlprune=text` disables all `$xmlprune` rules with the value of the `$xmlprune` modifier equal to `text` for responses from URLs matching `||example.org^`.
 
 `$xmlprune` rules can also be disabled by `$document`, `$content` and `$urlblock` exception rules.
 
 :::note
 
 When multiple `$xmlprune` rules match the same request, they are applied in lexicographical order.
-
-:::
-
-:::caution Restrictions
-
-- `$xmlprune` rules are only compatible with these modifiers: `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
-- `$xmlprune` rules do not apply if the size of the original response is greater than 10 MB.
-
-:::
-
-:::info Compatibility
-
-Rules with the `$xmlprune` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.15 or later**.
 
 :::
 
@@ -1863,6 +1850,19 @@ Rules with the `$xmlprune` modifier are supported by AdGuard for Windows, Mac, a
 ```
 
 </details>
+
+:::caution Restrictions
+
+- `$xmlprune` rules are only compatible with these modifiers: `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
+- `$xmlprune` rules do not apply if the size of the original response is greater than 10 MB.
+
+:::
+
+:::info Compatibility
+
+Rules with the `$xmlprune` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.15 or later**.
+
+:::
 
 
 #### **`$network`** {#network-modifier}
