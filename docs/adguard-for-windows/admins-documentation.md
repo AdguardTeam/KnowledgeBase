@@ -40,8 +40,15 @@ If you want to install AdGuard on a Windows 7 computer, make sure that it has .N
 
 :::info
 
-When installing AdGuard for Windows from MSI, AdGuard is not automatically updated. If you want to allow updates for the user (which is not recommended, because it prevents centralized updates), you must either delete the `ForbidCheckUpdates` parameter or set its value to `NO` (not case-sensitive) in the registry under `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard`. Doing so will permit updates.
+When installing AdGuard for Windows from MSI, AdGuard is not automatically updated. If you want to allow updates for the user (which is not recommended, because it prevents centralized updates), you must either delete the `ForbidCheckUpdates` parameter or set its value to `NO` (not case-sensitive) in the registry under `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard`. Doing so will permit updates.
+
+:::
+
 :::note
+
+In v7.16 and earlier versions of AdGuard for Windows, to allow updates for the user, the `AllowCheckUpdates` parameter for the `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` key must be set to `YES` (case insensitive). In this case automatic updates will be allowed, any other value or no value for this parameter disables automatic updates.
+
+:::
 
 ## 5. Test your installation {#installation-test}
 
