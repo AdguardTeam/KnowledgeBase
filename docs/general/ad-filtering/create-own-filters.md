@@ -1946,7 +1946,7 @@ Rules with `$removeheader` modifier are supported by AdGuard for Windows, Mac, a
 **Features**
 
 - `$urltransform` rules apply to any request url text.
-- `$urltransform` rules can also modify the query part of the url.
+- `$urltransform` rules can also **modify the query part** of the url.
 - `$urltransform` will not be applied if original url get blocked by other rules.
 - `$urltransform` will be applied before `$removeparam` rule
 
