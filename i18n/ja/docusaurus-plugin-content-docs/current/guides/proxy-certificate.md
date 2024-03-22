@@ -1,136 +1,136 @@
 ---
-title: How to install a proxy certificate
+title: プロキシ証明書のインストール方法
 sidebar_position: 2
 ---
 
-Desktop AdGuard apps (AdGuard for Windows and AdGuard for Mac) can be used as a proxy. This means that you can route other devices' traffic through AdGuard (entirely, or traffic of specific apps/browsers).
+デスクトップ版AdGuardアプリ（AdGuard for Windows と AdGuard for Mac）はプロキシとして使用できます。 つまり、他のデバイスのトラフィック（通信）をAdGuardにルーティングすることができるのです（そのデバイス全体のトラフィック、または特定のアプリ/ブラウザだけのトラフィック）。
 
 :::note
 
-These devices must be in the same network as the PC or Mac on which AdGuard is installed.
+※ルーティング対象のデバイスは、AdGuard がインストールされている PC または Mac と同じネットワーク内にあるデバイスである必要があります。
 
 :::
 
-HTTP traffic will be filtered in any case, but for AdGuard to be able to filter HTTPS traffic you need to manually install AdGuard certificate on the connected device.
+HTTPトラフィックはどのような場合でもフィルタリングされます。一方、HTTPSトラフィックをAdGuardがフィルタリングできるようにするには、接続デバイス（ルーティングしたいデバイス）にAdGuard証明書を手動でインストールする必要があります。
 
-## How to download and install the certificate
+## 証明書のダウンロードとインストール方法
 
-Depending on the operation system of your device (Windows/Mac/Android/iOS), follow one of these instructions:
+お使いのデバイスのオペレーションシステム（Windows/Mac/Android/iOS）に応じて、以下のいずれかの手順を使ってください:
 
-### Windows {#windows}
+### Windows の場合 {#windows}
 
-1. Note the IP address of your desktop computer with installed AdGuard.
+1. AdGuardがインストール済みコンピュータのIPアドレスをメモしてください。
 
-2. Make sure the AdGuard protection is enabled. Then check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings.
+2. AdGuard による保護がオンになっていることを確認してください。 次に、設定の「**ネットワーク**」タブにある「**AdGuardをHTTPプロキシとして使用する**」チェックボックスにチェックを入れます。
 
-3. On the same device with AdGuard follow this link using any browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+3. AdGuardがインストール済みのデバイスで、ブラウザを使用してこちらのリンクをたどってください： [ http://local.adguard.org/cert](http://local.adguard.org/cert)
 
-4. Click the **Download** button.
+4. **ダウンロード**ボタンをクリックしてください。
 
-5. Transfer the downloaded **cert.cer** file to the device whose traffic you want to route through AdGuard.
+5. ダウンロードした**cert.cer**ファイルを、トラフィックをAdGuard経由でルーティングさせたいデバイスに転送します。
 
-6. On that device, press the **Win** button, type `Manage computer certificates` and press **Enter**.
+6. そのデバイスで、「**Win**」ボタンを押し、「`コンピューター証明書の管理`」と入力して、**Enter**キーを押します。
 
-7. On the *Certificates - Local Computer* page, find the *Trusted Root Certification Authorities* → *Certificates* folder.
+7. *証明書 - ローカル コンピュータ*ページで、「*信頼されたルート証明機関*」→「*証明書*」フォルダを見つけます。
 
-8. Right-click the *Certificates* folder and click **All Tasks** → **Import**.
+8. 「*証明書*」フォルダを右クリックし、「**すべてのタスク**」→「**インポート**」をクリックします。
 
-9. On the *Certificate Import Wizard* page, click **Next**.
+9. 「*証明書のインポート ウィザード*」ページで、 「**次へ**」をクリックします。
 
-10. Click **Browse** to import the certificate.
+10. 「**参照**」をクリックします。
 
-11. Navigate to the **cert.cer** certificate file, select it, then click **Open**.
+11. **cert.cer**証明書ファイルに移動して選択し、「**開く**」をクリックします。
 
-12. Click **Next**.
+12. 「**次へ**」をクリックします。
 
-13. Select the **Place all certificates in the following store** checkbox.
+13. 「**すべての証明書を次のストアに配置**」チェックボックスにチェックを入れます。
 
-14. Ensure that the *Certificate store* field displays *Trusted Root Certification Authorities* and click **Next**.
+14. *証明書ストア*フィールドが*信頼されたルート証明機関*を表示していることを確認し、「**次へ**」をクリックします。
 
-15. Click **Finish**.
+15. 「**完了**」をクリックします。
 
-16. Press the **Win** key, then open **Settings**.
+16. **Win**キーを押し、「**設定**」を開きます。
 
-17. Select **Network & Internet** → **Proxy**.
+17. 「**ネットワーク & インターネット**」→「**プロキシ**」を選びます。
 
-18. Toggle *Automatically detect settings* off.
+18. 「*設定の自動検出*」をオフに切り替えます。
 
-19. Click **Set up** in the *Use a proxy server* tab.
+19. 「*プロキシサーバーの使用*」タブの「**設定**」をクリックします。
 
-20. Turn the toggle on. For **Proxy IP address**, enter the noted IP address of your desktop computer (step 1). For **Port**, enter the port chosen in the network settings of the desktop AdGuard app.
+20. トグルをオンにします。 「**プロキシIPアドレス**」には、コンピュータのIPアドレス（ステップ1からのもの）を入力します。 「**ポート**」には、デスクトップ版AdGuardアプリのネットワーク設定で選択したポートを入力します。
 
-21. Click **Save**.
+21. 「**保存**」をクリックします。
 
-### AdGuard for Mac の場合 {#mac}
+### Mac の場合 {#mac}
 
-1. Note the IP address of your desktop computer with installed AdGuard.
+1. AdGuardがインストール済みコンピュータのIPアドレスをメモしてください。
 
-2. Make sure the AdGuard protection is enabled. Then go to **Settings** → **Network** → **HTTP proxy** and check the box **Use AdGuard as an HTTP proxy**.
+2. AdGuard による保護がオンになっていることを確認してください。 次に、⚙「**設定**」→「**ネットワーク**」→「**HTTP プロキシ**」に移動し、「**AdGuard をHTTPプロキシとして使用する**」チェックボックスにチャックを入れます。
 
-3. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+3. AdGuardがインストール済みのデバイスで、ブラウザを使用してこちらのリンクをたどってください： [ http://local.adguard.org/cert](http://local.adguard.org/cert)
 
-4. Click the **Download** button.
+4. **ダウンロード**ボタンをクリックしてください。
 
-5. Transfer the downloaded **cert.cer** file to the device whose traffic you want to route through AdGuard.
+5. ダウンロードした**cert.cer**ファイルを、トラフィックをAdGuard経由でルーティングさせたいデバイスに転送します。
 
-6. Double-click the downloaded certificate file.
+6. ダウンロードした証明書ファイルをダブルクリックします。
 
-7. Enter the administrator password and then click **Modify Keychain**.
+7. 管理者パスワードを入力し、「**キーチェーンの変更**」をクリックします。
 
-8. Go to **Spotlight** (the search icon in the top right corner), type in "Keychain Access", and then select **Keychain Access** from the search results.
+8. **Spotlight**（右上の検索🔍アイコン）にアクセスし、「キーチェーンアクセス」と入力し、検索結果から「**キーチェーンアクセス**」を選択します。
 
-9. Under *System*, highlight the certificate that you added.
+9. 「*システム*」で、追加した証明書をハイライトします。
 
-10. Right-click it and choose **Get Info** from the context menu.
+10. それを右クリックし、コンテキストメニューから「**情報を見る**」を選択します。
 
-11. Expand *Trust* to display the trust policies for the certificate.
+11. 「*信頼情報*」を展開して、証明書の信頼ポリシーを表示します。
 
-12. Under *Secure Sockets Layers (SSL)*, select **Always Trust**.
+12. *Secure Sockets Layer (SSL)*で、「**常に信頼する**」を選択します。
 
-13. Open **System Preferences** → **Network** and choose the upper active connection.
+13. 「**システム環境設定**」→「**ネットワーク**」を開き、上のほうのアクティブな接続を選択します。
 
-14. Click **Details...** and navigate to the **Proxies** tab.
+14. 「**詳細...**」をクリックし、「**プロキシ**」タブに移動します。
 
-15. Check two checkboxes: *Web proxy (HTTP)* and *Secure web proxy (HTTPS)*. In the **Server** field, enter the noted IP address of your computer (step 1). In the **Port** field, enter the port chosen in the network settings of the AdGuard desktop app.
+15. 2つのチェックボックスにチェックを入れます：「*Webプロキシ(HTTP)*」と「*セキュアWebプロキシ(HTTPS)*」。 「**サーバー**」フィールドに、この手順のステップ１にメモしておいたコンピュータの IP アドレスを入力します。 「**ポート**」には、デスクトップ版AdGuardアプリのネットワーク設定で選択したポートを入力します。
 
-### Android {#android}
+### Android の場合 {#android}
 
-1. Note the IP address of your desktop computer with installed AdGuard.
+1. AdGuardがインストール済みコンピュータのIPアドレスをメモしてください。
 
-2. Make sure the AdGuard protection is enabled. Then check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings.
+2. AdGuard による保護がオンになっていることを確認してください。 次に、設定の「**ネットワーク**」タブにある「**AdGuardをHTTPプロキシとして使用する**」チェックボックスにチェックを入れます。
 
-3. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+3. AdGuardがインストール済みのデバイスで、ブラウザを使用してこちらのリンクをたどってください： [ http://local.adguard.org/cert](http://local.adguard.org/cert)
 
-4. Click the **Download** button.
+4. 「**ダウンロード**」ボタンをタップしてください。
 
-5. Transfer the downloaded **cert.cer** file to the device whose traffic you want to route through AdGuard.
+5. ダウンロードした**cert.cer**ファイルを、トラフィックをAdGuard経由でルーティングさせたいデバイスに転送します。
 
-6. Locate and tap the previously downloaded **cert.cer** certificate to open the file.
+6. 転送した**cert.cer**証明書を見つけてタップし、ファイルを開きます。
 
-7. On some phones, you might be asked to enter your device password. Do that, then press **OK**. The certificate is now installed.
+7. 端末によっては、端末のパスワードの入力を求められる場合があります。 入力してから「**OK**」を押します。 証明書のインストール完了です。
 
-8. Open advanced settings of the active Wi-Fi network.
+8. アクティブなWi-Fiネットワークの詳細設定を開きます。
 
-9. Switch the **Proxy type** to **Manual**. For **Proxy hostname**, enter the noted IP address of your desktop computer (step 1). For **Proxy port**, enter the port chosen in the network settings of the AdGuard desktop app.
+9. 「**プロキシタイプ**」を「**手動**」に切り替えます。 「**プロキシホスト名**」には、コンピュータのIPアドレス（ステップ1からのもの）を入力します。 「**プロキシポート**」には、デスクトップ版AdGuardアプリのネットワーク設定で選択したポートを入力します。
 
-### iOS {#ios}
+### iOS （iPhone/iPad）の場合 {#ios}
 
-1. Note the IP address of your desktop computer with installed AdGuard.
+1. AdGuardがインストール済みコンピュータのIPアドレスをメモしてください。
 
-2. Make sure the AdGuard protection is enabled. Then check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings.
+2. AdGuard による保護がオンになっていることを確認してください。 次に、設定の「**ネットワーク**」タブにある「**AdGuardをHTTPプロキシとして使用する**」チェックボックスにチェックを入れます。
 
-3. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+3. AdGuardがインストール済みのデバイスで、ブラウザを使用してこちらのリンクをたどってください： [ http://local.adguard.org/cert](http://local.adguard.org/cert)
 
-4. Click the **Download** button.
+4. 「**ダウンロード**」ボタンをタップします。
 
-5. Transfer the downloaded **cert.cer** file to the device whose traffic you want to route through AdGuard.
+5. ダウンロードした**cert.cer**ファイルを、トラフィックをAdGuard経由でルーティングさせたいデバイスに転送します。
 
-6. Open **Settings** → **Security** → **Encryption & Credentials** → **Install a certificate**. Android devices do not trust certificates by default so there will be a warning when you choose **CA certificate**. Tap **Install anyway**.
+6. 「**設定**」→「**プライバシーとセキュリティ**」→「**暗号化と認証情報**」→「**証明書をインストール**」。 iOSデバイスはデフォルトでは証明書を信頼しないため、**CA 証明書**を選択すると警告が表示されます。 「**とにかくインストール**」をタップします。
 
-7. Open **Settings** → **Profile Downloaded** and tap **Install** in the top right corner. Enter your password and confirm the installation. Tap **Done**.
+7. 「**設定**」→「**プロファイルがダウンロードされました**」を開き、右上隅にある「**インストール**」をタップします。 パスワードを入力してインストールを確認します。 「**完了**」をタップします。
 
-8. Go to **Settings** → **General** → **About** → **Certificate Trust Settings**. Enable the switch beside *Adguard Personal CA*. The certificate is now installed.
+8. **設定**→**一般**→**バージョン情報**→**証明書の信頼設定**。 「*Adguard Personal CA*」の横のスイッチを有効にします。 証明書のインストール完了です。
 
-9. On that device, open advanced settings of the active Wi-Fi network.
+9. 接続しているWi-Fi ネットワークを選んで、「プロキシを設定」を開きます。
 
-10. Switch the **Proxy type** to **Manual**. For **Proxy hostname**, enter the noted IP address of your computer (step 1). For **Proxy port**, enter the port chosen in the network settings of the AdGuard desktop app.
+10. 「**プロキシタイプ**」を「**手動**」に切り替えます。 「**プロキシホスト名**」には、コンピュータのIPアドレス（ステップ1からのもの）を入力します。 「**プロキシポート**」には、デスクトップ版AdGuardアプリのネットワーク設定で選択したポートを入力します。

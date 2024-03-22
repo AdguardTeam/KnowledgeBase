@@ -7,7 +7,7 @@ HAR files help our technical support teams troubleshoot complex issues. Bu dosya
 
 ## Chrome {#chrome}
 
-To create a HAR file in Chrome, follow these steps:
+Chrome'da bir HAR dosyası oluşturmak için şu adımları izleyin:
 
 1. Sorunun oluştuğu URL'ye gidin. Sorunu henüz yeniden oluşturmayın.
 
@@ -16,9 +16,9 @@ To create a HAR file in Chrome, follow these steps:
     - From menu: **Menu → More Tools → Developer Tools**.
     - Keyboard: **Ctrl+Shift+C**, or **Ctrl+Alt+I**, or **⌥+⌘+I for Mac**.
 
-1. Click the **Network tab**.
+1. **Ağ sekmesi** öğesine tıklayın.
 
-1. Locate the round button at the top left of the Network tab and confirm it is in red recording mode. If it's grey, click to turn red to start recording.
+1. Ağ sekmesinin sol üst köşesindeki yuvarlak düğmeyi bulun ve kırmızı kayıt modunda olduğunu onaylayın. If it's grey, click to turn red to start recording.
 
 1. Use the **Clear** button (the circle button with a line through it next to the record button) to clear all previous activity.
 
@@ -43,9 +43,9 @@ To create a HAR file in Chrome, follow these steps:
     - From menu: **Menu → More Tools → Developer Tools**.
     - Keyboard: **Ctrl+Shift+C**, or **Ctrl+Alt+I**, or **⌥+⌘+I for Mac**.
 
-1. Click the **Network tab**.
+1. **Ağ sekmesi** öğesine tıklayın.
 
-1. Locate the round button at the top left of the Network tab and confirm it is in red recording mode. If it's grey, click to turn red to start recording.
+1. Ağ sekmesinin sol üst köşesindeki yuvarlak düğmeyi bulun ve kırmızı kayıt modunda olduğunu onaylayın. If it's grey, click to turn red to start recording.
 
 1. Use the **Clear** button (the circle button with a line through it next to the record button) to clear all previous activity.
 
@@ -55,7 +55,7 @@ To create a HAR file in Chrome, follow these steps:
 
     ![edge](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/edge.png)
 
-1. Reproduce the steps that create the issue.
+1. Sorunu oluşturan adımları yeniden oluşturun.
 
 1. Save session as a .har file by right-clicking the grid and selecting **Save as HAR with content**.
 

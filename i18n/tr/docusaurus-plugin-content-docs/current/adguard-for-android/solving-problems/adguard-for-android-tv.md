@@ -41,18 +41,18 @@ Done, AdGuard for Android TV is installed.
 
 3. In your TV settings, go to _System_ → _About_ and press the build number seven times to unlock developer options. Enable _USB debugging_.
 
-4. Write down the IP address of your Android TV:
+4. Android TV'nizin IP adresini yazın:
 
    - On your Android TV, navigate to Settings.
    - Select _System_ → _About_.
    - Find _Network_ and select _Wi-Fi_ or _Ethernet_, depending on your connection type.
-   - Go to the network section and find _IP address_. Note down this IP address.
+   - Go to the network section and find _IP address_. Bu IP adresini not edin.
 
 5. Connect to Android TV via ADB:
 
    - Open the terminal or command prompt on your computer.
    - Enter the command `adb connect` and paste the IP address of your TV.
-   - The connection will be established.
+   - Bağlantı kurulacaktır.
 
 6. Install AdGuard for Android TV via ADB:
 

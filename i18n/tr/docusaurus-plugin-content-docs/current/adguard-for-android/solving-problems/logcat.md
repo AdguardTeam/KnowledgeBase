@@ -9,7 +9,7 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 :::
 
-Sometimes a regular log may not be sufficient to identify the origin of the problem. In such cases a system log is needed. Below are instructions on how to collect and get it: via Developer options and Logcat.
+Bazen normal bir günlük, sorunun kaynağını belirlemek için yeterli olmayabilir. In such cases a system log is needed. Below are instructions on how to collect and get it: via Developer options and Logcat.
 
 ## Capture a bug report from a device
 
@@ -19,7 +19,7 @@ To get a bug report directly from your device, do the following:
 
 1. In **Developer options**, tap **Take bug report**.
 
-    ![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
+    ![Hata raporu *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
 
 1. Select the type of bug report you want and tap **Report**.
 
@@ -30,7 +30,7 @@ To get a bug report directly from your device, do the following:
 
 :::
 
-    ![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
+    ![Hata raporu *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
 
 1. To share the bug report, tap the notification.
 
@@ -49,11 +49,11 @@ To get a bug report directly from your device, do the following:
 
 On devices with Android 7 and below, it is not possible to send a bug report automatically. Then you can capture it manually via Logcat — a standard Android command-line tool that dumps a log of system messages.
 
-Follow this instruction:
+Bu talimatı izleyin:
 
 **Part #1: prepare the device**
 
-1. Switch device to the developer mode. To do this: go to **Settings** → **About** → tap **Build Number** 7 times.
+1. Cihazı geliştirici moduna geçirin. To do this: go to **Settings** → **About** → tap **Build Number** 7 times.
 
 1. Go to **Developer Options**.
 
@@ -67,7 +67,7 @@ Follow this instruction:
 
 It is important to reproduce the problem after you're done with the first part.
 
-1. Reproduce the problem.
+1. Sorunu yeniden oluşturun.
 
 1. Remember/write down the date and time of reproduction and include it in the email to our support later.
 
@@ -83,7 +83,7 @@ It is important to reproduce the problem after you're done with the first part.
 
     An example of a successful result:
 
-    ![Step 3](https://cdn.adtidy.org/content/kb/ad_blocker/android/logcat/logcat_step-3.png)
+    ![3. Adım](https://cdn.adtidy.org/content/kb/ad_blocker/android/logcat/logcat_step-3.png)
 
 1. Then run the following command (insert the relevant path):
 

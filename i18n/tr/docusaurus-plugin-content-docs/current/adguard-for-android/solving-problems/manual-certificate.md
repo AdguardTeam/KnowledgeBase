@@ -19,28 +19,28 @@ Follow these steps to install AdGuard certificate:
 
 1. Then you'll be presented with three screens that explain:
     - Why filter HTTPS traffic
-    - The safety of this filtering process
+    - Bu filtreleme işleminin güvenliği
     - The necessity of AdGuard certificate
 
     Consecutively tap *Next* → *Next* → *Save certificate*.
 
 1. Tap *Save* at the bottom of the opened *Download* folder.
 
-1. After saving, tap *Open Settings*.
+1. Kaydettikten sonra *Ayarları aç* öğesine dokunun.
 
 1. Tap *More security settings* → *Encryption & credentials* → *Install a certificate* → *CA certificate*.
 
-1. You might see a warning. If so, tap *Install anyway* and enter your PIN if necessary.
+1. Bir uyarı görebilirsiniz. Öyleyse, *Yine de yükle* öğesine dokunun ve gerekirse PIN kodunuzu girin.
 
-1. Select the AdGuard certificate file. Its name should look like *adguard_1342_020322.crt*.
+1. AdGuard sertifika dosyasını seçin. Adı *adguard_1342_020322.crt* gibi görünmelidir.
 
-You're all set! Once the certificate is installed successfully, you've enabled HTTPS filtering.
+Hepsi hazır! Once the certificate is installed successfully, you've enabled HTTPS filtering.
 
-Please note that the steps provided are based on the Google Pixel 7 smartphone. If you're using a different Android device, the exact menu names or options might vary. For easier navigation consider searching for a certificate by entering "certificate" or "credentials" in the settings search bar.
+Lütfen sağlanan adımların Google Pixel 7 akıllı telefonunu temel aldığını unutmayın. If you're using a different Android device, the exact menu names or options might vary. Daha kolay gezinmek için, ayarlar arama çubuğuna "sertifika" veya "kimlik bilgileri" yazarak sertifika aramayı düşünün.
 
 If you experience issues during the manual certificate installation (for example, you installed the certificate, but the application keeps ignoring it), you can follow one of the solutions below.
 
 1. AdGuard'ı yeniden başlatın.
 2. Doğru sertifikayı (AdGuard Personal CA) bir kez daha yüklemeyi deneyin.
 
-If you still encounter a problem and can't install the certificate, please contact our support team at support@adguard.com.
+Hâlâ bir sorunla karşılaşıyorsanız ve sertifikayı yükleyemiyorsanız, lütfen support@adguard.com adresinden destek ekibimizle iletişime geçin.

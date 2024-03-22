@@ -107,7 +107,7 @@ Yalnızca hata ayıklama amacıyla kullanın!
 
 Her şifrelenmiş internet bağlantısının bir de şifrelenmemiş kısmı vardır. Bu, bağlandığınız sunucunun adını içeren ilk pakettir. Encrypted Client Hello teknolojisinin bu sorunu çözmesi ve şifrelenmemiş bilgilerin son kısmını şifrelemesi gerekiyor. To benefit from it, enable the *Encrypted Client Hello* option. Alan adı için ECH yapılandırmasını aramak için yerel bir DNS proxy'si kullanır. Eğer bulunursa, ClientHello paketi şifrelenecektir.
 
-#### OCSP checking
+#### OCSP denetimi
 
 Bu ayar etkinleştirilirse, AdGuard bir sitenin SSL sertifikasının iptal durumunu almak için zaman uyumsuz OCSP denetimleri gerçekleştirir.
 
@@ -115,7 +115,7 @@ If an OCSP check is completed within the required timeout, AdGuard will immediat
 
 Doğrulama çok uzun sürerse, AdGuard arka planda sertifika durumunu kontrol etmeye devam ederken bağlantıya izin verir. Sertifika iptal edilirse alan adına yapılan mevcut ve gelecekteki bağlantılar engellenecektir.
 
-#### Redirect DNS-over-HTTPS requests
+#### DNS-over-HTTPS isteklerini yönlendir
 
 Bu ayar etkinleştirilirse, AdGuard düz DNS isteklerine ek olarak DNS-over-HTTPS isteklerini yerel DNS proxy'sine yönlendirir. Gizliliği korumak için yedek üst kaynakları devre dışı bırakmanızı ve yalnızca şifrelenmiş DNS sunucularını kullanmanızı tavsiye ederiz.
 
@@ -125,17 +125,17 @@ Bu ayar etkinleştirilirse, AdGuard diğer istek türlerine ek olarak HTTP/3 üz
 
 ### Giden proxy
 
-#### Show the Filter DNS requests setting
+#### DNS isteklerini filtreleme ayarını göster
 
 Bu etkinleştirilirse, *Proxy sunucusu ekle* uyarısında *DNS isteklerini filtrele* düğmesi görüntülenecektir. Belirtilen proxy üzerinden geçen DNS isteklerinin filtrelenmesini etkinleştirmek için bunu kullanın.
 
-### Protection
+### Koruma
 
-#### Port ranges
+#### Bağlantı noktası aralıkları
 
-Here you can specify port ranges that should be filtered.
+Burada filtrelenmesi gereken bağlantı noktası aralıklarını belirtebilirsiniz.
 
-#### Log removed HTML events
+#### Kaldırılan HTML olaylarını günlüğe kaydet
 
 Bu ayar etkinleştirilirse, AdGuard engellenen HTML öğelerini *Son etkinlik* öğesinde kaydeder.
 
@@ -143,27 +143,27 @@ Bu ayar etkinleştirilirse, AdGuard engellenen HTML öğelerini *Son etkinlik* �
 
 If this setting is enabled, debugging in scriptlets will be activated, and the browser log will record when scriptlet rules are applied.
 
-#### Excluded apps
+#### Hariç tutulan uygulamalar
 
-Here you can list package names and UIDs that you want to exclude from AdGuard protection.
+Burada AdGuard korumasından hariç tutmak istediğiniz paket adlarını ve UID'leri listeleyebilirsiniz.
 
-#### QUIC bypass packages
+#### QUIC atlama paketleri
 
-Here you can specify package names for which AdGuard should bypass QUIC traffic.
+Burada AdGuard'ın QUIC trafiğini atlaması gereken paket adlarını belirtebilirsiniz.
 
-#### Reconfigure Automatic proxy when network changes
+#### Ağ değişikliklerinde proxy'yi otomatik yeniden yapılandır
 
 Bu ayar etkinleştirilirse, cihazınız başka bir ağa bağlandığında otomatik proxy ayarlarını yeniden yapılandırmak için AdGuard koruması yeniden başlatılır. Bu ayar yalnızca *Yönlendirme modu* *Otomatik proxy* olarak ayarlanmışsa geçerlidir.
 
-#### IPv6 filtering
+#### IPv6 filtreleme
 
 Bu ayar etkinleştirilirse, AdGuard bir IPv6 ağ arayüzü varsa IPv6 ağlarını filtreler.
 
-#### IPv4 ranges excluded from filtering
+#### Filtrelemeden hariç tutulan IPv4 aralıkları
 
 Bu bölümde listelenen IPv4 aralıkları için filtreleme devre dışıdır.
 
-#### IPv6 ranges excluded from filtering
+#### Filtrelemeden hariç tutulan IPv6 aralıkları
 
 Bu bölümde listelenen IPv6 aralıkları için filtreleme devre dışıdır.
 
@@ -191,7 +191,7 @@ Here you can set the maximum transmission unit (MTU) of the VPN interface. The r
 
 Bu ayar etkinleştirilirse, AdGuard'ın yerel VPN'i ağ yokluğu, tethering veya düşük güç modu nedeniyle kapatıldıktan sonra otomatik olarak yeniden etkinleştirilir.
 
-#### Packet capture (PCAP)
+#### Paket yakalama (PCAP)
 
 Bu ayar etkinleştirilirse, AdGuard uygulama önbellek dizininde bir `timestamp.pcap` dosyası (örneğin, 1682599851461.pcap) oluşturur. Bu dosya VPN üzerinden aktarılan tüm ağ paketlerini listeler ve Wireshark programıyla analiz edilebilir.
 
@@ -199,24 +199,24 @@ Bu ayar etkinleştirilirse, AdGuard uygulama önbellek dizininde bir `timestamp.
 
 If this setting is enabled, the gateway IP addresses will be added to VPN routes when on Wi-Fi.
 
-#### IPv4 address
+#### IPv4 adresi
 
-Here you can enter the IP address that will be used to create a TUN interface. By default, it is `172.18.11.218`.
+Burada TUN arayüzü oluşturmak için kullanılacak IP adresini girebilirsiniz. Varsayılan olarak `172.18.11.218` şeklindedir.
 
-#### Forcibly route LAN IPv4
+#### LAN IPv4'ü zorla yönlendir
 
 Bu ayar etkinleştirilirse, *Tüm LAN IPv4 bağlantılarını yönlendir* seçeneği etkinleştirilmiş olsa bile, AdGuard yerel IPv4 ağ trafiği de dahil olmak üzere tüm LAN bağlantılarını filtreler.
 
-#### Route all LAN IPv4 connections
+#### Tüm LAN IPv4 bağlantılarını yönlendir
 
 Bu ayar etkinleştirilirse, AdGuard LAN bağlantılarını basit ağlar için filtrelemeden hariç tutacaktır. Bu, karmaşık ağlar için işe yaramayabilir. Bu ayar yalnızca *LAN IPv4'ü zorla yönlendir* devre dışı bırakıldığında geçerlidir.
 
-#### IPv6 address
+#### IPv6 adresi
 
-Here you can enter the IP address that will be used to create a TUN interface. By default, it is `2001:db8:ad:0:ff::`.
+Burada TUN arayüzü oluşturmak için kullanılacak IP adresini girebilirsiniz. Varsayılan olarak `2001:db8:ad:0:ff::` şeklindedir.
 
 ### Diğer
 
-#### Detect Samsung Pay
+#### Samsung Pay'i tespit et
 
 Bu ayar etkinleştirilirse, Samsung Pay kullanımdayken AdGuard koruması duraklatılacaktır. Koreli kullanıcılar, AdGuard etkinleştirildiğinde [Samsung Pay ile ilgili sorunlar](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea) yaşadıkları için bu özelliğe ihtiyaç duymaktadır.
