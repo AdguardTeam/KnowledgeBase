@@ -2023,7 +2023,7 @@ Rules with `$urltransform` modifier can be used [**only in trusted filters**](#t
 
 :::info Compatibility
 
-**TODO**
+Rules with the `$urltransform` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.15 or later**.
 
 :::
 
