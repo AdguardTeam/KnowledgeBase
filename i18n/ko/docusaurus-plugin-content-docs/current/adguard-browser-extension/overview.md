@@ -9,7 +9,7 @@ sidebar_position: 1
 
 :::
 
-AdGuard는 다양한 플랫폼에서 광고와 추적기를 차단하는 다양한 프로그램를 제공합니다. 가장 인기 있는 AdGuard 제품 중 하나는 5개의 주요 브라우저인 Chrome, Firefox, Edge, Opera, Yandex 브라우저에서 작동하는 무료 확장 프로그램입니다. 브라우저 확장 프로그램에는 기본 광고 차단 기능이 포함되어 있지만, 전체 기능을 갖춘 데스크톱 프로그램 (예: [Windows용 AdGuard](/adguard-for-windows/overview) 및 [Mac용 AdGuard](/adguard-for-mac/overview))과 비교할 수는 없습니다.
+AdGuard는 다양한 플랫폼에서 광고와 추적기를 차단하는 다양한 프로그램를 제공합니다. 가장 인기 있는 AdGuard 제품 중 하나는 5개의 주요 브라우저인 Chrome, Firefox, Edge, Opera, Yandex 브라우저에서 작동하는 무료 확장 프로그램입니다. Browser extensions include basic ad-blocking features but cannot be compared with full-featured desktop programs, such as [AdGuard for Windows](/adguard-for-windows/features/home-screen) and [AdGuard for Mac](/adguard-for-mac/overview).
 
 ![Chrome용 AdGuard 브라우저 확장 프로그램 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
 

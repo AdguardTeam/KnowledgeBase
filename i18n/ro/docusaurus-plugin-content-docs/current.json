@@ -78,5 +78,9 @@
   "sidebar.tutorialSidebar.category.AdGuard Browser Extension": {
     "message": "AdGuard Browser Extension",
     "description": "The label for category AdGuard Browser Extension in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Features overview": {
+    "message": "Features overview",
+    "description": "The label for category Features overview in sidebar tutorialSidebar"
   }
 }

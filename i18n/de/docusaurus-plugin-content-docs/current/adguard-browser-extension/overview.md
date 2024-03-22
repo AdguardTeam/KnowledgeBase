@@ -9,7 +9,7 @@ In diesem Artikel geht es um die AdGuard Browsereweiterung, die nur Ihren Browse
 
 :::
 
-AdGuard stellt eine Reihe von Softwareprodukten zur Verfügung, die Werbung und Tracker auf verschiedenen Plattformen blockieren. Eines der beliebtesten AdGuard-Produkte ist eine kostenlose Erweiterung, die in fünf gängigen Browsern funktioniert: Chrome, Firefox, Edge, Opera und Yandex Browser. Browsererweiterungen bieten grundlegende Werbeblocker-Funktionen, sind aber nicht mit vollwertigen Desktop-Apps wie [AdGuard für Windows](/adguard-for-windows/overview) und [AdGuard für Mac](/adguard-for-mac/overview) zu vergleichen.
+AdGuard stellt eine Reihe von Softwareprodukten zur Verfügung, die Werbung und Tracker auf verschiedenen Plattformen blockieren. Eines der beliebtesten AdGuard-Produkte ist eine kostenlose Erweiterung, die in fünf gängigen Browsern funktioniert: Chrome, Firefox, Edge, Opera und Yandex Browser. Browser extensions include basic ad-blocking features but cannot be compared with full-featured desktop programs, such as [AdGuard for Windows](/adguard-for-windows/features/home-screen) and [AdGuard for Mac](/adguard-for-mac/overview).
 
 ![AdGuard Browser Extension for Chrome *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
 

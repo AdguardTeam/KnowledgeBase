@@ -67,7 +67,7 @@ Follow this instruction:
 
 It is important to reproduce the problem after you're done with the first part.
 
-1. Reproduce the problem.
+1. 問題を再現します。
 
 1. Remember/write down the date and time of reproduction and include it in the email to our support later.
 

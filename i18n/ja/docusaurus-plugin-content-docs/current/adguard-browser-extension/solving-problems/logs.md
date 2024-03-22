@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## Exporting logs from the background page in the extension
 
-### Chrome
+### Google Chrome の場合
 
 1. Open AdGuard Browser Extension and, if possible, repeat the actions that led to the error. Note the exact time when the error occurred.
 
@@ -27,7 +27,7 @@ sidebar_position: 1
 
    ![Save as \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save.png)
 
-### Firefox
+### Mozilla Firefox の場合
 
 1. Open AdGuard Browser Extension and, if possible, repeat the actions that led to the error. Note the exact time when the error occurred.
 

@@ -15,7 +15,7 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 **RAM:** en az 2 GB
 
-**Free disk space:** 500 MB
+**Boş disk alanı:** 500 MB
 
 ## Kurulum
 
@@ -23,39 +23,39 @@ Most Android-based apps are distributed via Google Play; however, AdGuard is not
 
 That’s why you can only install AdGuard for Android manually. To use the app on your mobile device, you will need to do the following.
 
-1. **Download the app on your device**. Here are a few ways you can do this:
+1. **Uygulamayı cihazınıza indirin**. İşte bunu yapmanın birkaç yolu:
 
     - head over to [our website](https://adguard.com/adguard-android/overview.html) and tap the *Download* button
     - start the browser and type in the following URL: [https://adguard.com/apk](https://adguard.com/apk)
     - veya bu QR kodu tarayın:
 
-    ![QR code *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst-qr-en-1.png)
+    ![QR kodu *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst-qr-en-1.png)
 
 1. **Allow installing apps from unknown sources**. Once the file download is complete, tap *Open* in the notification.
 
     ![Installing apps from unknown sources *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_1.png)
 
-    A popup will appear. Tap *Settings*, navigate to *Install unknown apps*, and grant permission for the browser you've used to download the file.
+    Bir açılır pencere görünür. Tap *Settings*, navigate to *Install unknown apps*, and grant permission for the browser you've used to download the file.
 
     ![Installing apps from unknown sources *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_3.png)
 
-1. **Install the app**. Once the browser has obtained the necessary permissions, the system will ask you if you want to install the AdGuard app. Tap *Install*.
+1. **Uygulamayı yükleyin**. Tarayıcı gerekli izinleri aldıktan sonra, sistem size AdGuard uygulamasını yüklemek isteyip istemediğinizi sorar. *Yükle* öğesine dokunun.
 
     ![Installing apps from unknown sources *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_4.png)
 
-    You will then be asked to read AdGuard's *License agreement* and *Privacy policy*. You can also participate in product development. To do this, check the boxes for *Send crash reports automatically* and *Send technical and interaction data*. Then tap *Continue*.
+    You will then be asked to read AdGuard's *License agreement* and *Privacy policy*. You can also participate in product development. To do this, check the boxes for *Send crash reports automatically* and *Send technical and interaction data*. Ardından *Devam* öğesine dokunun.
 
-    ![Privacy policy *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_3.png)
+    ![Gizlilik politikası *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_3.png)
 
-1. **Create a local VPN**. In order to filter all traffic directly on your device and not route it through a remote server, AdGuard needs to establish a VPN connection.
+1. **Yerel bir VPN oluşturun**. In order to filter all traffic directly on your device and not route it through a remote server, AdGuard needs to establish a VPN connection.
 
-    ![Create a local VPN *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_2.png)
+    ![Yerel bir VPN oluşturun *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_2.png)
 
-1. **Enable HTTPS filtering**. It is not a mandatory option, however, we advice to turn it on for the best ad-blocking quality.
+1. **HTTPS filtrelemeyi etkinleştirin**. It is not a mandatory option, however, we advice to turn it on for the best ad-blocking quality.
 
     If your device is running Android 7–9, you'll be prompted to install a root certificate and configure HTTPS filtering after the local VPN setup.
 
-    ![Enable HTTPS filtering on Android 7-9 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/cert_1.jpg)
+    ![Android 7-9'da HTTPS filtrelemeyi etkinleştirin *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/cert_1.jpg)
 
     After you tap *Install now*, a prompt will appear asking you to authenticate the certificate installation with a password or fingerprint.
 
