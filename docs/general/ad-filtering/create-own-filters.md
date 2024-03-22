@@ -2015,6 +2015,8 @@ the request to `https://example.com/fisrtpath` will be transformed to `https://e
 - `@@||example.org^$urltransform` will disable all `$urltransform` rules matching `||example.org^`.
 - `@@||example.org^$urltransform=/Z/Y/` will disable the rule with `$urltransform=/Z/Y/` for any request matching `||example.org^`.
 
+`$urltransform` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers do not do that. For example, `@@||example.com^` will not disable `$urltransform=/X/Y/` for requests to **example.com**, but `@@||example.com^$urlblock` will.
+
 :::caution Restrictions
 
 Rules with `$urltransform` modifier can be used [**only in trusted filters**](#trusted-filters).
