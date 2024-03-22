@@ -1,5 +1,5 @@
 ---
-title: Others
+title: Other features
 sidebar_position: 4
 ---
 
