@@ -1906,7 +1906,6 @@ Rules with the `$xmlprune` modifier are supported by AdGuard for Windows, Mac, a
 
 :::
 
-
 #### **`$network`** {#network-modifier}
 
 This is basically a Firewall-like rule allowing to fully block or unblock access to a specified remote address.
