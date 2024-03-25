@@ -21,7 +21,7 @@ AdGuard propose une gamme de produits logiciels qui bloquent les publicités et 
 
 :::note
 
-Nous avons une extension autonome pour Safari. Depuis la sortie de [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html), la plupart des extensions de blocage de publicités ont rencontré d'importants problèmes, et beaucoup d'entre elles ont cessé de fonctionner. Nous avons dû développer une [extension distincte pour Safari](/adguard-for-safari/overview) qui présente certaines différences par rapport à l'extension décrite dans cet article.
+Nous avons une extension autonome pour Safari. Depuis la sortie de [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html), la plupart des extensions de blocage de publicités ont rencontré d'importants problèmes, et beaucoup d'entre elles ont cessé de fonctionner. We had to develop a [separate extension for Safari](/adguard-for-safari/features/general) that has some differences in comparison with the extension described in this article.
 
 :::
 

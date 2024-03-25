@@ -5,7 +5,7 @@ sidebar_position: 4
 
 :::info
 
-Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li se podívat, jak to funguje, [stáhněte si AdGuard pro Android](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -44,11 +44,11 @@ Abyste ušetřili čas při navigaci v nabídkách AdGuardu, je mnoho často pou
 
 - zapnout ochranu
 - vypnout ochranu: zcela nebo na 30 sekund
-- go to _Settings_
-- open the _Tools_ and _Advanced_ menus
+- přejít do _Nastavení_
+- otevřít nabídky _Nástroje_ a _Pokročilé_
 - zkontrolovat aktualizace filtrů
 - zkontrolovat aktualizace aplikace
 - vyvolatí poslední vyskakovací zprávy
-- reach the _Support_ and _About_ sections
+- dosáhnout na _Podporu_ a _Informace_
 - zavřít AdGuard, ale pokračovat ve filtrování
 - ukončit AdGuard

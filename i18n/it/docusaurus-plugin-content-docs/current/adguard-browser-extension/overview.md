@@ -21,7 +21,7 @@ AdGuard fornisce numerosi prodotti software che bloccano annunci e tracciatori, 
 
 :::note
 
-Per Safari, abbiamo un'estensione indipendente. Dal rilascio di [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html), la maggiorità delle estensioni di blocco degli annunci hanno sperimentato grossi problemi e, molte di esse, hanno smesso di funzionare. Abbiamo dovuto sviluppare un'[estensione separata per Safari](/adguard-for-safari/overview), che differisce un po' dall'estensione descritta su questo articolo.
+Per Safari, abbiamo un'estensione indipendente. Dal rilascio di [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html), la maggiorità delle estensioni di blocco degli annunci hanno sperimentato grossi problemi e, molte di esse, hanno smesso di funzionare. We had to develop a [separate extension for Safari](/adguard-for-safari/features/general) that has some differences in comparison with the extension described in this article.
 
 :::
 

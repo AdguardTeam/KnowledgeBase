@@ -1,5 +1,5 @@
 ---
-title: Other features
+title: Diğer özellikler
 sidebar_position: 4
 ---
 

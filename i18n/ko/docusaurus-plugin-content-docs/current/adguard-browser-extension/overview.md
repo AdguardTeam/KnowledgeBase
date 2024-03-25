@@ -21,7 +21,7 @@ AdGuard는 다양한 플랫폼에서 광고와 추적기를 차단하는 다양�
 
 :::note
 
-Safari용 독립 실행형 확장 프로그램이 있습니다. [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html) 출시 이후 대부분의 광고 차단 확장 프로그램에서 큰 문제가 발생했으며, 해당 프로그램의 많은 기능이 작동을 멈췄습니다. 저희는 이 문서에서 설명한 확장 프로그램과 비교하여 몇 가지 차이점이 있는 [ Safari용 확장 프로그램](/adguard-for-safari/overview)을 별도로 개발해야 했습니다.
+Safari용 독립 실행형 확장 프로그램이 있습니다. [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html) 출시 이후 대부분의 광고 차단 확장 프로그램에서 큰 문제가 발생했으며, 해당 프로그램의 많은 기능이 작동을 멈췄습니다. We had to develop a [separate extension for Safari](/adguard-for-safari/features/general) that has some differences in comparison with the extension described in this article.
 
 :::
 
