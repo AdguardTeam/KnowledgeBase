@@ -26,6 +26,6 @@ To see it, do the following: open Safari and tap the arrow-in-a-box symbol. Then
 
 :::tip
 
-On iOS 15 devices, the Assistant features are available through [AdGuard Safari Web Extension](../adguard-for-ios/web-extension), which enhances the capabilities of AdGuard for iOS and allows you to take advantage of iOS 15. With this web extension, AdGuard can apply advanced filter rules and, as a result, block more ads.
+On iOS 15 devices, the Assistant features are available through [AdGuard Safari Web Extension](../../web-extension), which enhances the capabilities of AdGuard for iOS and allows you to take advantage of iOS 15. With this web extension, AdGuard can apply advanced filter rules and, as a result, block more ads.
 
 :::
