@@ -11,7 +11,7 @@ All filters are grouped according to their role. For example, there are categori
 
 ![Ad blocking filters *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters1.png)
 
-#### Custom filters {#custom}
+#### Custom filters
 
 While the features of other filter groups are more or less predictable, there is a group called *Custom* that may raise additional questions.
 
@@ -31,13 +31,13 @@ To add a filter, just click *Add custom filter*, enter the URL or the file path 
 
 There are several ways to add new rules. The most straightforward is to just type a rule in, but it requires some knowledge of the [rule syntax](/general/ad-filtering/create-own-filters).
 
-You can import a ready-to-use filter list from a text file as well. **Make sure that different rules are separated by line breaks.** Note that importing a ready-to-use filter list is better done in the [Custom filters](#custom) tab.
+You can import a ready-to-use filter list from a text file as well. **Make sure that different rules are separated by line breaks.** Note that importing a ready-to-use filter list is better done in the Custom filters tab.
 
 Besides, you can export your own filtering rules. This option is good for transferring your list of rules between browsers or devices.
 
-When you add a website to the Allowlist (more on that [below](#allowlist)) or use the Assistant tool for hiding an element on the page, a corresponding rule is also saved in *User rules*.
+When you add a website to the Allowlist (more on that below or use the Assistant tool for hiding an element on the page, a corresponding rule is also saved in *User rules*.
 
-### Allowlist {#allowlist}
+### Allowlist
 
 The *allowlist* is used to exclude certain websites from filtering. Blocking rules are not applied to the websites on the list.
 
