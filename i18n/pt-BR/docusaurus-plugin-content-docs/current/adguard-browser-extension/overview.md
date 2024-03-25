@@ -21,7 +21,7 @@ A [extensão de navegador AdGuard](https://adguard.com/adguard-browser-extension
 
 :::note
 
-Temos uma extensão independente para Safari. Desde o lançamento do [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html), a maioria das extensões de bloqueio de anúncios enfrentaram grandes problemas e muitas delas pararam de funcionar. Tivemos que desenvolver uma extensão [para o Safari](/adguard-for-safari/overview) que apresenta algumas diferenças em comparação com a extensão descrita neste artigo.
+Temos uma extensão independente para Safari. Desde o lançamento do [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html), a maioria das extensões de bloqueio de anúncios enfrentaram grandes problemas e muitas delas pararam de funcionar. We had to develop a [separate extension for Safari](/adguard-for-safari/features/general) that has some differences in comparison with the extension described in this article.
 
 :::
 

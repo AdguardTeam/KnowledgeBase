@@ -82,5 +82,13 @@
   "sidebar.tutorialSidebar.category.Features overview": {
     "message": "Features overview",
     "description": "The label for category Features overview in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Features": {
+    "message": "Features",
+    "description": "The label for category Features in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Content Blockers": {
+    "message": "Content Blockers",
+    "description": "The label for category Content Blockers in sidebar tutorialSidebar"
   }
 }

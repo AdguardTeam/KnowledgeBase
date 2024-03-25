@@ -9,7 +9,7 @@ Cet article concerne AdGuard pour Safari, qui protège uniquement votre navigate
 
 :::
 
-AdGuard pour Safari a été conçu pour se conformer aux restrictions d'Apple concernant les extensions de navigateur bloquant les publicités, c'est aussi le bloqueur de publicités le plus populaire pour Safari. Bien qu'elle ne soit pas comparable à nos applications de blocage des publicités sur ordinateur, elle est gratuite et peut vous protéger contre les publicités, les traqueurs, l'hameçonnage et les sites web malveillants.
+AdGuard pour Safari a été conçu pour se conformer aux restrictions d'Apple concernant les extensions de navigateur bloquant les publicités, c'est aussi le bloqueur de publicités le plus populaire pour Safari. Although it can't be compared to our desktop ad blocking apps, it's free and can protect you from ads, trackers, phishing, and malicious websites.
 
 ## Général {#general}
 
@@ -35,7 +35,7 @@ Dans l'onglet Filtres, vous pouvez activer la catégorie entière ou des filtres
 
 Un bloqueur de contenu est un groupe thématique de filtres. Les filtres liés à la confidentialité sont inclus dans le bloqueur de contenu avec le nom correspondant — *AdGuard Confidentialité*.
 
-Les bloqueurs de contenu ont été conçus pour deux raisons : structurer les filtres et se conformer aux restrictions d'Apple.
+Content Blockers were designed for two reasons: to structure filters and to conform to Apple's restrictions.
 
 [En 2019](https://adguard.com/en/blog/adguard-safari-1-5.html), Apple a imposé des limites aux bloqueurs de publicités pour Safari, leur permettant d'utiliser seulement 50 000 règles de filtrage simultanément. Comme ce nombre n'était pas suffisant pour qu'un bloqueur de publicités fournisse une bonne qualité de filtrage (le Filtre de Base AdGuard possède à lui seul 30 000 règles de filtrage), nous avons divisé AdGuard pour Safari en six bloqueurs de contenu contenant chacun jusqu'à 50 000 règles.
 
@@ -73,7 +73,7 @@ Ce bloqueur de contenu regroupe plusieurs filtres liés à la sécurité. La lis
 
 :::note Avis de non-responsabilité
 
-Nous n'avons pas d'« annonces acceptables » payées par les annonceurs. Au lieu de cela, nous offrons aux utilisateurs la possibilité de voir [les annonces de recherche et l'auto-promotion des sites web](/general/ad-filtering/search-ads).
+We don't have any 'acceptable ads' paid by advertisers. Au lieu de cela, nous offrons aux utilisateurs la possibilité de voir [les annonces de recherche et l'auto-promotion des sites web](/general/ad-filtering/search-ads).
 
 :::
 

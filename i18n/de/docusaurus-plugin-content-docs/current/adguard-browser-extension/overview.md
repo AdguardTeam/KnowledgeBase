@@ -21,7 +21,7 @@ AdGuard stellt eine Reihe von Softwareprodukten zur Verfügung, die Werbung und 
 
 :::note
 
-Wir haben eine eigenständige Erweiterung für Safari. Seit der Veröffentlichung von [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html) haben die meisten der Werbeblocker-Erweiterungen große Probleme und viele von ihnen funktionieren nicht mehr. Wir mussten eine [separate Erweiterung für Safari](/adguard-for-safari/overview) entwickeln, die einige Unterschiede zu der in diesem Artikel beschriebenen Erweiterung aufweist.
+Wir haben eine eigenständige Erweiterung für Safari. Seit der Veröffentlichung von [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html) haben die meisten der Werbeblocker-Erweiterungen große Probleme und viele von ihnen funktionieren nicht mehr. We had to develop a [separate extension for Safari](/adguard-for-safari/features/general) that has some differences in comparison with the extension described in this article.
 
 :::
 
