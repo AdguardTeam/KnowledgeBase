@@ -18,7 +18,6 @@ The *DNS* section contains one feature, *DNS protection*, with multiple settings
 
 ![DNS](https://cdn.adtidy.org/content/kb/ad_blocker/mac/dns.png)
 
-
 If you enable *DNS protection*, DNS traffic will be managed by AdGuard.
 
 ## Providers
