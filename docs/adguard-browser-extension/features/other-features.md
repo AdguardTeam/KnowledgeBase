@@ -3,6 +3,12 @@ title: Other features and options
 sidebar_position: 5
 ---
 
+:::info
+
+This article is about the AdGuard Browser Extension, which safeguards only your browser. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+
+:::
+
 Apart from the large key modules of AdGuard Browser Extension, there are several more specific features that can be configured in the *General* and *Additional settings* tabs of the extension settings.
 
 ### General {#general}
