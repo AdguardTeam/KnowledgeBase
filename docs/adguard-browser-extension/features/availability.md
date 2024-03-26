@@ -23,4 +23,4 @@ We have a standalone extension for Safari. Since the release of [Safari 13](http
 
 :::
 
-**Do not forget that the functionality of each extension is strictly limited by the browser’s capabilities.** So if you want to get full-fledged protection, consider installing a standalone program for your computer. There's [a reason why](../features/extension-apps).
+**Do not forget that the functionality of each extension is strictly limited by the browser’s capabilities.** So if you want to get full-fledged protection, consider installing a standalone program for your computer. There's [a reason why](adguard-browser-extension/features/extension-apps.md).
