@@ -1113,9 +1113,9 @@ These modifiers are able to completely change the behavior of basic rules.
 | [$redirect-rule](#redirect-rule-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
 | [$referrerpolicy](#referrerpolicy-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$removeheader](#removeheader-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
-| [$urltransform](#urltransform-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$removeparam](#removeparam-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
 | [$replace](#replace-modifier) | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ |
+| [$urltransform](#urltransform-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [noop](#noop-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [$empty 👎](#empty-modifier "deprecated") | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
 | [$mp4 👎](#mp4-modifier "deprecated") | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
@@ -1939,97 +1939,6 @@ Rules with `$removeheader` modifier are supported by AdGuard for Windows, Mac, a
 
 :::
 
-#### **`urltransform`** {#urltransform-modifier}
-
-`$urltransform` rules allow to modify the request url by replacing text matched by regular expression.
-
-**Features**
-
-- `$urltransform` rules apply to any request url text.
-- `$urltransform` rules can also **modify the query part** of the url.
-- `$urltransform` will not be applied if original url get blocked by other rules.
-- `$urltransform` will be applied before `$removeparam` rule
-
-`$urltransform` value can be empty in the case of exception rules.
-
-**Multiple rules matching a single request**
-
-In case if multiple `$urltransform` rules match a single request, we will apply each of them. **The order is defined alphabetically.**
-
-**Syntax**
-
-`$urltransform` syntax is similar to replacement with regular expressions [in Perl](http://perldoc.perl.org/perlrequick.html#Search-and-replace).
-
-```text
-urltransform = "/" regexp "/" replacement "/" modifiers
-```
-
-- **`regexp`** — a regular expression.
-- **`replacement`** — a string that will be used to replace the string corresponding to `regexp`.
-- **`modifiers`** — a regular expression flags. For example, `i` — insensitive search, or `s` — single-line mode.
-
-In the `$urltransform` value, two characters must be escaped: comma `,` and dollar sign `$`. Use backslash `\` for it. For example, an escaped comma looks like this: `\,`.
-
-**Examples**
-
-```adblock
-||example.org^$urltransform=/(pref\/).*\/(suf)/\$1\$2/i
-```
-
-There are three parts in this rule:
-
-- `regexp` — `(pref\/).*\/(suf)`;
-- `replacement` — `\$1\$2` where `$` is escaped;
-- `modifiers` — `i` for insensitive search.
-
-**Multiple `$urltransform` rules**
-
-1. `||example.org^$urltransform=/X/Y/`
-2. `||example.org^$urltransform=/Z/Y/`
-3. `@@||example.org/page/*$urltransform=/Z/Y/`
-
-- Both rule 1 and 2 will be applied to all requests sent to `example.org`.
-- Rule 2 is disabled for requests matching `||example.org/page/`, **but rule 1 still works!**
-
-**Re-matching rules after transforming url**
-
-If the `$urltransform` rule had beed applied to a request, it will be re-matched against the url filter again, because url text has been changed and we might want to block it.
-
-E.x. with the following rules:
-```adblock
-||example.com^$urltransform=/firstpath/secondpath/
-||example.com/secondpath^
-```
-the request to `https://example.com/firstpath` will be blocked before it is sent.
-
-Howether, `$urltransform` rules will **not be re-applied** in this case to avoid infinite recursion, e.x. with the following rules:
-```adblock
-||example.com/firstpath^$urltransform=/firstpath/secondpath/
-||example.com/secondpath^$urltransform=/secondpath/firstpath/
-```
-the request to `https://example.com/fisrtpath` will be transformed to `https://example.com/secondpath` and the second rule will not be applied.
-
-
-**Disabling `$urltransform` rules**
-
-- `@@||example.org^$urltransform` will disable all `$urltransform` rules matching `||example.org^`.
-- `@@||example.org^$urltransform=/Z/Y/` will disable the rule with `$urltransform=/Z/Y/` for any request matching `||example.org^`.
-
-`$urltransform` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers do not do that. For example, `@@||example.com^` will not disable `$urltransform=/X/Y/` for requests to **example.com**, but `@@||example.com^$urlblock` will.
-
-:::caution Restrictions
-
-Rules with `$urltransform` modifier can be used [**only in trusted filters**](#trusted-filters).
-
-:::
-
-:::info Compatibility
-
-Rules with the `$urltransform` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.15 or later**.
-
-:::
-
-
 #### **`$removeparam`** {#removeparam-modifier}
 
 :::note
@@ -2230,6 +2139,96 @@ Rules with `$replace` modifier can be used [**only in trusted filters**](#truste
 :::info Compatibility
 
 Rules with `$replace` modifier are supported by AdGuard for Windows, Mac, and Android and AdGuard Browser Extension for Firefox. Such rules do not work in extensions for other browsers because they are unable to modify content on the network level.
+
+:::
+
+#### **`urltransform`** {#urltransform-modifier}
+
+`$urltransform` rules allow to modify the request url by replacing text matched by regular expression.
+
+**Features**
+
+- `$urltransform` rules apply to any request url text.
+- `$urltransform` rules can also **modify the query part** of the url.
+- `$urltransform` will not be applied if original url get blocked by other rules.
+- `$urltransform` will be applied before `$removeparam` rule
+
+`$urltransform` value can be empty in the case of exception rules.
+
+**Multiple rules matching a single request**
+
+In case if multiple `$urltransform` rules match a single request, we will apply each of them. **The order is defined alphabetically.**
+
+**Syntax**
+
+`$urltransform` syntax is similar to replacement with regular expressions [in Perl](http://perldoc.perl.org/perlrequick.html#Search-and-replace).
+
+```text
+urltransform = "/" regexp "/" replacement "/" modifiers
+```
+
+- **`regexp`** — a regular expression.
+- **`replacement`** — a string that will be used to replace the string corresponding to `regexp`.
+- **`modifiers`** — a regular expression flags. For example, `i` — insensitive search, or `s` — single-line mode.
+
+In the `$urltransform` value, two characters must be escaped: comma `,` and dollar sign `$`. Use backslash `\` for it. For example, an escaped comma looks like this: `\,`.
+
+**Examples**
+
+```adblock
+||example.org^$urltransform=/(pref\/).*\/(suf)/\$1\$2/i
+```
+
+There are three parts in this rule:
+
+- `regexp` — `(pref\/).*\/(suf)`;
+- `replacement` — `\$1\$2` where `$` is escaped;
+- `modifiers` — `i` for insensitive search.
+
+**Multiple `$urltransform` rules**
+
+1. `||example.org^$urltransform=/X/Y/`
+2. `||example.org^$urltransform=/Z/Y/`
+3. `@@||example.org/page/*$urltransform=/Z/Y/`
+
+- Both rule 1 and 2 will be applied to all requests sent to `example.org`.
+- Rule 2 is disabled for requests matching `||example.org/page/`, **but rule 1 still works!**
+
+**Re-matching rules after transforming url**
+
+If the `$urltransform` rule had beed applied to a request, it will be re-matched against the url filter again, because url text has been changed and we might want to block it.
+
+E.x. with the following rules:
+```adblock
+||example.com^$urltransform=/firstpath/secondpath/
+||example.com/secondpath^
+```
+the request to `https://example.com/firstpath` will be blocked before it is sent.
+
+Howether, `$urltransform` rules will **not be re-applied** in this case to avoid infinite recursion, e.x. with the following rules:
+```adblock
+||example.com/firstpath^$urltransform=/firstpath/secondpath/
+||example.com/secondpath^$urltransform=/secondpath/firstpath/
+```
+the request to `https://example.com/fisrtpath` will be transformed to `https://example.com/secondpath` and the second rule will not be applied.
+
+
+**Disabling `$urltransform` rules**
+
+- `@@||example.org^$urltransform` will disable all `$urltransform` rules matching `||example.org^`.
+- `@@||example.org^$urltransform=/Z/Y/` will disable the rule with `$urltransform=/Z/Y/` for any request matching `||example.org^`.
+
+`$urltransform` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers do not do that. For example, `@@||example.com^` will not disable `$urltransform=/X/Y/` for requests to **example.com**, but `@@||example.com^$urlblock` will.
+
+:::caution Restrictions
+
+Rules with `$urltransform` modifier can be used [**only in trusted filters**](#trusted-filters).
+
+:::
+
+:::info Compatibility
+
+Rules with the `$urltransform` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.15 or later**.
 
 :::
 
