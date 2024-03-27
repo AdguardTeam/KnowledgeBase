@@ -7,8 +7,8 @@ sidebar_position: 5
 
 Na kartě O produktu se zobrazují informace o aktuální verzi produktu a odkazy na právní dokumenty. Je zde také odkaz na náš repozitář na GitHubu. Můžete zde sledovat vývoj produktu, vytvářet požadavky na funkce a hlásit chyby.
 
-:::note Reminder
+:::note Připomínka
 
-AdGuard for Safari can be downloaded for free [from the App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259). A detailed setup instruction is available in the [Knowledge base](/adguard-for-safari/installation/).
+AdGuard pro Safari si můžete stáhnout zdarma [z App Store](https://apps.apple.com/app/adguard-for-safari/id1440147259). Podrobný návod k nastavení je k dispozici v [databázi znalostí](/adguard-for-safari/installation/).
 
 :::

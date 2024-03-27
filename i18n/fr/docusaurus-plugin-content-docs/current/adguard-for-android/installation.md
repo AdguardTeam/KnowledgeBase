@@ -9,7 +9,7 @@ Cet article parle de AdGuard pour Android, un bloqueur de contenus multifonction
 
 :::
 
-## System  requirements
+## System requirements
 
 **OS version:** Android 7.0 or higher
 

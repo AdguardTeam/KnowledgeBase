@@ -59,12 +59,12 @@ L'objectif des filtres de blocage des publicités est de bloquer tous les types 
 - Les annonces déguisées en contenu de site, qui ouvrent des pages avec des produits promus ou un contenu sans rapport si on clique dessus
 - Annonces vidéo - vidéos publicitaires intégrées dans un contenu vidéo ou dans des éléments publicitaires séparés sur des sites web et des applications
 - Publicités interactives — publicités avec lesquelles les utilisateurs peuvent interagir (par exemple, jeux et sondages, à la fin desquels l'élément publicitaire s'ouvre)
-- Annonces interstitielles — annonces en plein écran sur les appareils mobiles qui couvrent l'interface de l'application ou du navigateur web
+- Annonces interstitielles — annonces en plein écran sur les appareils mobiles qui couvrent l'interface de l'app ou du navigateur web
 - Les restes d'annonces qui occupent de grands espaces ou se détachent de l'arrière-plan et attirent l'attention des visiteurs (à l'exception de celles qui sont à peine discernables ou qui passent inaperçues)
 - Publicité anti-adblock — annonce alternative affichée sur le site web après le blocage de l'annonce principale
 - La propre publicité du site, si elle a été bloquée par les règles générales de filtrage (voir *Limitations et exceptions*)
 - Scripts anti-adblock qui empêchent l'utilisation du site (voir *Limitations et exceptions*)
-- Publicité injectée par un logiciel malveillant, si des informations détaillées sur sa méthode de chargement ou les étapes de reproduction sont fournies
+- Advertising injected by malware, if detailed information about its loading method or steps for reproduction is provided
 - Minage indésirable — des scripts qui minent de la crypto-monnaie sans le consentement de l’utilisateur
 
 ### Limitations et exceptions
@@ -103,9 +103,9 @@ Les filtres de protection contre le suivi d'AdGuard comprennent :
 
 ### L'objectif de ces filtres
 
-**Filtre de protection contre le suivi** est conçu pour bloquer les traqueurs qui collectent les données personnelles des utilisateurs et pour améliorer la confidentialité des utilisateurs.
+Le **Filtre de protection contre le suivi** est conçu pour bloquer les traqueurs qui collectent les données personnelles des utilisateurs et pour améliorer la confidentialité des utilisateurs.
 
-Ce qui est bloqué :
+Qu'est-ce qu'il bloque :
 
 - Scripts des systèmes d'analyse
 - Scripts de suivi des sites web et des applications
@@ -134,7 +134,7 @@ Les filtres anti-nuisances sont conçus pour améliorer la convivialité des sit
 
 **CMP (Consent Management Platform)** — logiciel qui aide les sites web à se conformer aux règles d'utilisation des cookies. Les CMP limitent l'utilisation des cookies jusqu'à ce que le consentement de l'utilisateur soit obtenu, offrant ainsi aux utilisateurs la possibilité d'accepter certains cookies et de gérer les paramètres de confidentialité.
 
-**Widget**  — un élément d'interface utilisateur qui augmente les fonctionnalités d'un site web. Les widgets web sont intégrés dans les pages web et peuvent comporter des éléments interactifs tels que des boutons, des formulaires ou des bannières. Ils peuvent permettre aux utilisateurs d'accéder à des services ou à des contenus spécifiques sans nécessiter de navigation vers d'autres pages.
+**Widget** — un élément d'interface utilisateur qui augmente les fonctionnalités d'un site web. Les widgets web sont intégrés dans les pages web et peuvent comporter des éléments interactifs tels que des boutons, des formulaires ou des bannières. Ils peuvent permettre aux utilisateurs d'accéder à des services ou à des contenus spécifiques sans nécessiter de navigation vers d'autres pages.
 
 **Popup** — une fenêtre qui apparaît au-dessus de la page web actuelle. Cette fenêtre affiche des informations supplémentaires, des publicités, des notifications ou des formulaires de saisie de données. Les fenêtres contextuelles bloquent généralement la vue du contenu principal de la page et nécessitent une action de l'utilisateur pour se fermer, ce qui peut être agaçant.
 
@@ -182,7 +182,7 @@ Il s'agit d'un filtre qui bloque diverses fenêtres pop-up sur les pages web qui
 
 #### Filtre AdGuard Mobile App Banners
 
-Il s'agit d'un filtre qui bloque les bannières et les popups qui encouragent les visiteurs à installer des applications mobiles.
+This is a filter that blocks banners and popups that encourage visitors to install mobile apps.
 
 **Limitations et exceptions**
 
@@ -190,7 +190,7 @@ Les bannières situées dans les en-têtes ou dans les menus des sites Internet 
 
 #### Filtre AdGuard Widgets
 
-Il s'agit d'un filtre qui bloque les différents widgets qui ne sont pas essentiels au fonctionnement du site web ou à l'interaction avec celui-ci :
+Il s'agit d'un filtre qui bloque des widgets différents qui ne sont pas essentiels au fonctionnement des sites web ou à l'interaction avec ceux-ci :
 
 - Les widgets pour les recommandations de contenu – articles connexes, sites web similaires, recommandations personnalisées de toute sorte
 - Les widgets de chat qui ne sont pas intégrés au contenu et ne constituent pas le contenu principal de la page
@@ -287,5 +287,5 @@ Ce filtre est destiné à tester et à déboguer les règles susceptibles de per
 
 **Limitations et exceptions**
 
-- Les règles ne doivent pas explicitement enfreindre la fonctionnalité des sites web
+- Les règles ne doivent pas intentionnellement enfreindre la fonctionnalité des sites web
 - Les règles ne doivent pas débloquer les publicités ni enfreindre la Politique

@@ -9,7 +9,7 @@ sidebar_position: 2
 
 :::
 
-## 系统需求
+## 系统要求
 
 **OS version:** Android 7.0 or higher
 

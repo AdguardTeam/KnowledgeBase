@@ -83,7 +83,7 @@ Or you can configure server parameters manually:
 
 `server:[name]` where `[name]` is the name of the outbound proxy from the list.
 
-Or you  can configure remove parameters manually:
+Or you can configure remove parameters manually:
 
 `server:[type=…&host=…&port=…&username=…&password=…&udp=…&trust=…]`.
 

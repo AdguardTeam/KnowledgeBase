@@ -1,11 +1,11 @@
 ---
-title: What is a content blocker?
+title: İçerik engelleyici nedir?
 sidebar_position: 1
 ---
 
 ![Content blockers tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/Contentblockers.png)
 
-A content blocker is a thematic cluster of filters. Privacy-related filters are included in the content blocker with the corresponding name — _AdGuard Privacy_.
+İçerik engelleyici, tematik bir filtre kümesidir. Privacy-related filters are included in the content blocker with the corresponding name — _AdGuard Privacy_.
 
 Content Blockers were designed for two reasons: to structure filters and to conform to Apple’s restrictions.
 
