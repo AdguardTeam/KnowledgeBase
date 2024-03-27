@@ -2004,8 +2004,8 @@ the request to `https://example.com/firstpath` will be blocked before it is sent
 
 Howether, `$urltransform` rules will **not be re-applied** in this case to avoid infinite recursion, e.x. with the following rules:
 ```adblock
-||example.com^$urltransform=/firstpath/secondpath/
-||example.com^$urltransform=/secondpath/firstpath/
+||example.com/firstpath^$urltransform=/firstpath/secondpath/
+||example.com/secondpath^$urltransform=/secondpath/firstpath/
 ```
 the request to `https://example.com/fisrtpath` will be transformed to `https://example.com/secondpath` and the second rule will not be applied.
 
