@@ -27,7 +27,7 @@ Depending on the operating system of the device whose traffic you want to filter
 
 1. Click the **Download** button. If the download doesn’t start, try another browser, for example Firefox.
 
-1. Transfer the downloaded **cert.cer** file to the Windows device whose traffic you want to route through AdGuard.
+1. Transfer the downloaded **cert.cer** file to the Windows device whose traffic you want to route through AdGuard. You can use a USB cable, Bluetooth, or cloud services to do this.
 
 1. On that device, press **Win**, type `Manage computer certificates` and press **Enter**.
 
@@ -69,7 +69,7 @@ Depending on the operating system of the device whose traffic you want to filter
 
 1. Click the **Download** button. If the download doesn’t start, try another browser, for example Firefox.
 
-1. Transfer the downloaded **cert.cer** file to the Mac device whose traffic you want to route through AdGuard.
+1. Transfer the downloaded **cert.cer** file to the Mac device whose traffic you want to route through AdGuard. You can use a USB cable, Bluetooth, or cloud services to do this.
 
 1. Double-click the downloaded certificate file.
 
@@ -101,7 +101,7 @@ Depending on the operating system of the device whose traffic you want to filter
 
 1. Click the **Download** button. If the download doesn’t start, try another browser, for example Firefox.
 
-1. Transfer the downloaded **cert.cer** file to the Android device whose traffic you want to route through AdGuard.
+1. Transfer the downloaded **cert.cer** file to the Android device whose traffic you want to route through AdGuard. You can use a USB cable, Bluetooth, or cloud services to do this.
 
 1. Locate and tap the previously downloaded **cert.cer** certificate to open the file and follow the instructions to install the certificate.
 
@@ -121,7 +121,7 @@ Depending on the operating system of the device whose traffic you want to filter
 
 1. Click the **Download** button. If the download doesn’t start, try another browser, for example Firefox.
 
-1. Transfer the downloaded **cert.cer** file to the iOS device whose traffic you want to route through AdGuard.
+1. Transfer the downloaded **cert.cer** file to the iOS device whose traffic you want to route through AdGuard. You can use a USB cable, Bluetooth, or cloud services to do this.
 
 1. On your iOS device, open **Settings** → **Profile Downloaded** and tap **Install** in the top right corner. Enter your password and confirm the installation. Tap **Done**.
 
