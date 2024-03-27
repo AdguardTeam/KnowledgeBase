@@ -13,7 +13,7 @@ Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, kter
 
 Ve výchozím nastavení používá AdGuard "výchozí směrování", která vypíná iCloud Private Relay.
 
-V současné době nemohou AdGuard a iCloud Private Relay fungovat současně. AdGuard nemá možnost blokovat reklamy, protože iCloud Private Relay šifruje provoz předtím, než AdGuard může filtrovat síťová připojení.  Když je iCloud Private Relay aktivní, není možné žádné filtrování (včetně lokálního). AdGuard tedy nemůže v Safari filtrovat přenosy ani provádět DNS filtrování. Přesto AdGuard stále filtruje provoz v jiných prohlížečích. Chcete-li nadále používat iCloud Private Relay, zvažte instalaci [AdGuardu pro Safari](https://adguard.com/adguard-safari/overview.html).
+V současné době nemohou AdGuard a iCloud Private Relay fungovat současně. AdGuard nemá možnost blokovat reklamy, protože iCloud Private Relay šifruje provoz předtím, než AdGuard může filtrovat síťová připojení. Když je iCloud Private Relay aktivní, není možné žádné filtrování (včetně lokálního). AdGuard tedy nemůže v Safari filtrovat přenosy ani provádět DNS filtrování. Přesto AdGuard stále filtruje provoz v jiných prohlížečích. Chcete-li nadále používat iCloud Private Relay, zvažte instalaci [AdGuardu pro Safari](https://adguard.com/adguard-safari/overview.html).
 
 Totéž platí pro používání jakýchkoli aplikací VPN na Macu: musíte si vybrat, zda použijete iCloud Private Relay, nebo službu VPN.
 
@@ -41,7 +41,7 @@ Doporučujeme používat AdGuard společně s tradičnější službou VPN, nap�
 
 ## Alternativní řešení
 
-Můžete zabránit tomu, aby AdGuard používal "výchozí směrování" tím, že jej deaktivujete".  Lze to provést přes Pokročilá nastavení → `network.extension.monterey.force.split.tunnel`.
+Můžete zabránit tomu, aby AdGuard používal "výchozí směrování" tím, že jej deaktivujete". Lze to provést přes Pokročilá nastavení → `network.extension.monterey.force.split.tunnel`.
 
 ![Disable default route in advanced settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/mac_adguard_advanced_settings.jpg)
 

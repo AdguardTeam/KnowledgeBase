@@ -178,114 +178,114 @@ sidebar_position: 6
 
 - Пуш-уведомления блокируются только на сайтах, где они не используются в практических целях. Например, в веб-клиентах электронной почты или инструментах, используемых в рабочих целях, такие уведомления не будут блокироваться
 - Некоторые попапы, которые не попадают в описанные выше категории, но всё же мешают работе пользователя, также могут быть заблокированы. Например, предложения зарегистрироваться на сайте или попапы, знакомящие с функциями сайта. Решение принимают разработчики фильтра
-- Content access measures that ask the user to pay to access the content must not be circumvented
+- Нельзя обходить меры, которые требуют от пользователя платить за доступ к контенту
 
 #### Фильтр баннеров мобильных приложений
 
-This is a filter that blocks banners and popups that encourage visitors to install mobile applications.
+Это фильтр, блокирующий баннеры и попапы, побуждающие посетителей сайтов устанавливать мобильные приложения.
 
 **Ограничения и исключения**
 
-Баннеры, расположенные в шапках или меню сайтов, не блокируются, если они не анимированы и не занимают значительную часть используемого пространства. Если баннер расположен в футере, решение принимается разработчиками фильтра в каждом конкретном случае. Usually, banners in the footer do not stand out against other elements and are not distracting.
+Баннеры, расположенные в шапках или меню сайтов, не блокируются, если они не анимированы и не занимают значительную часть используемого пространства. Если баннер расположен в футере, решение принимается разработчиками фильтра в каждом конкретном случае. Обычно баннеры в футере не выделяются на фоне других элементов и не отвлекают внимание.
 
 #### Фильтр виджетов
 
-This is a filter that blocks various widgets that are not essential for the functioning of the website or for interaction with it:
+Это фильтр, блокирующий различные виджеты, не необходимые для работы сайтов или взаимодействия с ними:
 
-- Widgets for content recommendations — related articles, similar websites, various personalized recommendations
-- Chat widgets that are not integrated with the content and are not the main content of the page
-- Marketing widgets:
-    - Chats for communication with assistants or bots
-    - Widgets with product recommendations that are shown to the user
-    - Call-back forms
-- Other widgets that do not have a separate category but may visually clutter the page. For example, weather widgets, currency exchange rates, job listings, and donations
+- Виджеты для рекомендаций контента — статьи по теме, похожие сайты и различные персонализированные рекомендации
+- Виджеты чата, которые не интегрированы с основным контентом страницы
+- Маркетинговые виджеты:
+    - Чаты для общения с помощниками или ботами
+    - Виджеты с рекомендациями товаров, которые показываются пользователю
+    - Формы обратного звонка
+- Другие виджеты, которые не имеют отдельной категории, но могут визуально загромождать страницу. Например, виджеты погоды, курсы валют, списки вакансий и пожертвования
 
 **Ограничения и исключения**
 
-This filter doesn’t block:
+Этот фильтр не блокирует:
 
-- Widgets closely related to the content of the page, such as comments sections, live chat streams, with an exception of unmoderated chats on sites with unofficial streams, which are often filled with spam and similar content
-- Widgets for self-promotion and site-specific promotional activities
-- Donation widgets, except the cases where they occupy a significant portion of the page and stand out prominently against the content. The decision to block is made by filter developers
+- Виджеты, тесно связанные с контентом страницы: разделы комментариев, чаты прямых трансляций, за исключением немодерируемых чатов на сайтах с неофициальными трансляциями, которые часто наполнены спамом и подобным контентом
+- Виджеты для саморекламы и рекламных акций на сайтах
+- Виджеты пожертвований, за исключением случаев, когда они занимают значительную часть страницы и заметно выделяются на фоне контента. Решение о блокировке принимают разработчики фильтра
 
 #### Фильтр других раздражителей
 
-This filter is designed to block annoying elements that are not included in other filters, as well as to apply various tweaks. It’s purpose is to:
+Этот фильтр предназначен для блокировки раздражающих элементов, которые не включены в другие фильтры, а также для применения различных настроек. Его цель состоит в том, чтобы:
 
-- Block self-promotion of websites (any type of advertising promoting goods or services owned by the site owner, without receiving commercial compensation from a third party), if it is considered an annoying element
-- Block annoying elements that are not included in other categories
-- Unblock actions on the page, such as opening the context menu, selecting and copying text, if they are blocked
-- Speed up countdown timers when loading files from websites, if the check is not controlled by the server or is not hindered
-- Apply various rules that may be useful for filter developers. For example, blocking web debugger detection
+- Блокировать саморекламу сайтов (любой вид рекламы, рекламирующей товары или услуги, принадлежащие владельцу сайта, без получения коммерческого вознаграждения от третьего лица), если это считается раздражающим элементом
+- Блокировать раздражающие элементы, не вошедшие в другие категории
+- Разблокировать действия на странице, такие как открытие контекстного меню, выделение и копирование текста, если они заблокированы
+- Ускорить таймеры обратного отсчёта при загрузке файлов с сайтов, если проверка не контролируется сервером или не затруднена
+- Применять различные правила, которые могут быть полезны разработчикам фильтров. Например, блокировать обнаружение веб-отладчика
 
 **Ограничения и исключения**
 
-This filter may contain rules that are not suitable for all users. Sometimes it is recommended to disable this filter. The decisions to add rules to this filter are made by filter developers on a rule-by-rule basis.
+Этот фильтр может содержать правила, которые подходят не всем пользователям. Иногда рекомендуется отключить этот фильтр. Решения о добавлении правил в этот фильтр принимаются разработчиками фильтров индивидуально для каждого правила.
 
-## Social media filters
+## Фильтры виджетов социальных сетей
 
 ### Фильтры
 
-AdGuard Social Media filters include:
+Фильтры виджетов социальных сетей включают:
 
-- AdGuard Social Media filter
+- Фильтр виджетов социальных сетей
 
 ### Назначение этих фильтров
 
-This filter will block social media widgets on third-party websites, such as “Like” and “Share” buttons, group widgets, recommendations, and similar widgets.
+Этот фильтр блокирует виджеты социальных сетей на сторонних сайтах, такие как кнопки «Нравится» и «Поделиться», виджеты групп, рекомендаций и т. п.
 
 ### Ограничения и исключения
 
-Widgets that are part of the website’s functionality or content, such as comments, embedded posts, polls, as well as social media login widgets, are not blocked. Links to the website’s social media pages are also not blocked.
+Виджеты, являющиеся частью функциональности или контента сайта, такие как комментарии, встроенные сообщения, опросы, а также виджеты входа в социальные сети, не блокируются. Ссылки на страницы сайта в социальных сетях также не блокируются.
 
-## Other filters
+## Другие
 
-This group contains filters that are not essential for blocking advertisements.
+В этой группе собраны фильтры, не обязательные для блокировки рекламы.
 
 ### Терминология
 
-**Contextual advertising** is a type of internet advertising where the advertisement is displayed based on the content, selected audience, location, time, or other context of internet pages.
+**Контекстная реклама** — это вид интернет-рекламы, где реклама отображается на основе содержания, выбранной аудитории, местоположения, времени или другого контекста интернет-страниц.
 
-**Search advertising** is a subclass of contextual advertising where ads are displayed based on the visitor's search query.
+**Поисковая реклама** — подкласс контекстной рекламы, показывается на основе поискового запроса посетителя.
 
-**Self-promotion of websites** refers to the banners of a website promoting goods and services owned by the site owner, for which they do not receive compensation from third parties.
+**Самореклама сайтов** — это баннеры сайта, рекламирующие товары и услуги, принадлежащие его владельцу, за которые он не получает вознаграждения от третьих лиц.
 
-For more details on these types of advertising, refer to the [article on Search ads](https://adguard.com/kb/general/ad-filtering/search-ads/).
+Более подробно о поисковой рекламе можно почитать [в статье](https://adguard.com/kb/general/ad-filtering/search-ads/).
 
 ### Фильтры
 
 - Фильтр поисковой рекламы и саморекламы
-- AdGuard DNS filter
-- AdGuard Experimental filter
+- DNS-фильтр
+- Экспериментальный фильтр
 
 ### Назначение этих фильтров
 
 #### Фильтр поисковой рекламы и саморекламы
 
-This filter unblocks:
+Этот фильтр разблокирует:
 
-- Contextual advertising in search results when using search engines (such as Google, Bing, Yandex, DuckDuckGo)
-- Self-promotion of websites
-
-**Ограничения и исключения**
-
-- Search advertising is unblocked only if it corresponds to the user’s search query, as it is contextual. Otherwise, the advertising remains blocked
-- Self-promotion is unblocked only if it complies with the filter policy. A request for unblocking may be rejected by filter developers
-- Any other advertising will not be unblocked
-
-#### AdGuard DNS filter
-
-This filter is used in AdGuard DNS. It is not a replacement for ad-blocking filters.
+- Контекстную рекламу в результатах поиска при использовании поисковых систем (таких как Google, Bing, Yandex, DuckDuckGo)
+- Саморекламу сайтов
 
 **Ограничения и исключения**
 
-Same as for ad-blocking filters.
+- Поисковая реклама разблокируется только в том случае, если она соответствует поисковому запросу пользователя, так как является контекстной. В противном случае реклама останется заблокированной
+- Самореклама разблокируется только в том случае, если она соответствует политике фильтрации. Запрос на разблокировку может быть отклонён разработчиками фильтров
+- Любая другая реклама не будет разблокирована
 
-#### AdGuard Experimental filter
+#### DNS-фильтр
 
-This filter is intended for testing and debugging rules that potentially may break websites’ functionality. Rules are added by filter developers when there’s a need to test a particular solution. As the filter is designed for debugging purposes, its limitations are minimal.
+Этот фильтр используется в AdGuard DNS. Он не заменяет фильтры, блокирующие рекламу.
 
 **Ограничения и исключения**
 
-- Rules should not explicitly break websites’ functionality
-- Rules should not unblock advertisements or otherwise violate the Policy
+Те же, что и для фильтров блокировки рекламы.
+
+#### Экспериментальный фильтр
+
+Этот фильтр предназначен для тестирования и отладки правил, которые потенциально могут нарушить функциональность сайтов. Правила добавляют разработчики фильтров, когда нужно протестировать конкретное решение. Поскольку фильтр предназначен для отладки, его ограничения минимальны.
+
+**Ограничения и исключения**
+
+- Правила не должны явно нарушать функциональность сайтов
+- Правила не должны разблокировать рекламу или иным образом нарушать Политику

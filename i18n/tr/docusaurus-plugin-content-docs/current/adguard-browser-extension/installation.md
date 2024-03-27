@@ -71,4 +71,4 @@ Açılan uyarı penceresinde, AdGuard Tarayıcı Uzantısını yüklemek için *
 
 ## Safari için AdGuard Tarayıcı Uzantısı nasıl yüklenir
 
-Safari için AdGuard genel anlamda bir tarayıcı uzantısı değildir. You can read more about it in a [dedicated article](/adguard-for-safari/features/general). Ya da doğrudan bu sayfadan [yükleme dosyasını indirebilirsiniz](https://agrd.io/safari_release).
+Safari için AdGuard genel anlamda bir tarayıcı uzantısı değildir. Bu konuyla ilgili daha fazla bilgiye [bu makale](/adguard-for-safari/features/general)'den ulaşabilirsiniz. Ya da doğrudan bu sayfadan [yükleme dosyasını indirebilirsiniz](https://agrd.io/safari_release).

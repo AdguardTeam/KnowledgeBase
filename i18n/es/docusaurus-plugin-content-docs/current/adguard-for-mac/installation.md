@@ -9,7 +9,7 @@ Este artículo trata sobre AdGuard para Mac, un bloqueador de anuncios multifunc
 
 :::
 
-## System  requirements
+## System requirements
 
 **Operating system version:** macOS 10.15 (64 bit) or higher
 

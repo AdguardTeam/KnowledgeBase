@@ -9,7 +9,7 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 :::
 
-## Sistem gereksinimleri
+## System requirements
 
 **İşletim sistemi:** Microsoft Windows 11, 10, 8.1, 8, 7, Vista.
 

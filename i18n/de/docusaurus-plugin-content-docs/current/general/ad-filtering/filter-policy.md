@@ -250,7 +250,7 @@ Diese Gruppe enthält Filter, die zum Blockieren von Werbung nicht unbedingt erf
 
 **Eigenwerbung von Websites** bezieht sich auf die Banner einer Website, die für Waren und Dienstleistungen werben, die dem Eigentümer der Website gehören und für die er keine Vergütung von Dritten erhält.
 
-Weitere Einzelheiten über diese Arten von Werbung finden Sie im [Artikel über Suchanzeigen](https://adguard.com/kb/general/ad-filtering/search-ads/).
+Weitere Einzelheiten zu diesen Arten von Werbung finden Sie im [Artikel über Suchanzeigen](https://adguard.com/kb/general/ad-filtering/search-ads/).
 
 ### Filter
 
@@ -287,5 +287,5 @@ Dieser Filter ist für das Testen und Debuggen von Regeln gedacht, die mögliche
 
 **Beschränkungen und Ausnahmen**
 
-- Regeln sollten die Funktionalität von Websites nicht explizit beeinträchtigen
+- Regeln sollten nicht absichtlich die Funktionalität von Websites beeinträchtigen
 - Regeln sollten keine Werbung freigeben oder anderweitig gegen die Richtlinie verstoßen

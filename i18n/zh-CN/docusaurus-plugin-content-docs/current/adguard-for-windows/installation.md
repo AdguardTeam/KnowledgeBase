@@ -9,7 +9,7 @@ sidebar_position: 2
 
 :::
 
-## 系统需求
+## 系统要求
 
 **操作系统**： Microsoft Windows 11、10、8.1、8、7、Vista
 

@@ -9,7 +9,7 @@ sidebar_position: 2
 
 :::
 
-## 系统需求
+## 系统要求
 
 **Operating system version:** macOS 10.15 (64 bit) or higher
 

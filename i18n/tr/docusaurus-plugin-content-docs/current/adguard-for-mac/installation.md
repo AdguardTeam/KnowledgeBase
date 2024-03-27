@@ -9,7 +9,7 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 :::
 
-## Sistem gereksinimleri
+## System requirements
 
 **İşletim sistemi sürümü:** macOS 10.15 (64 bit) veya üstü
 
