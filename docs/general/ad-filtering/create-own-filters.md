@@ -1950,7 +1950,7 @@ Rules with `$removeheader` modifier are supported by AdGuard for Windows, Mac, a
 - `$urltransform` will not be applied if original url get blocked by other rules.
 - `$urltransform` will be applied before `$removeparam` rule
 
-`$urltransform` value can be empty in the case of exception rules. See examples section for further information.
+`$urltransform` value can be empty in the case of exception rules.
 
 **Multiple rules matching a single request**
 
