@@ -9,6 +9,8 @@ This article covers AdGuard for Mac, a multifunctional ad blocker that protects 
 
 :::
 
-*Advanced privacy protection* protects your privacy by deleting cookies, UTM tags, online counters, and analytics systems. It doesn’t let websites collect your IP address, device and browser parameters, search queries, and personal information. [Learn more about Stealth Mode settings](/general/stealth-mode)
+## Advanced privacy protection
 
 ![Stealth Mode](https://cdn.adtidy.org/content/kb/ad_blocker/mac/stealth.png)
+
+*Advanced privacy protection* protects your privacy by deleting cookies, UTM tags, online counters, and analytics systems. It doesn’t let websites collect your IP address, device and browser parameters, search queries, and personal information. [Learn more about Stealth Mode settings](/general/stealth-mode)

@@ -11,7 +11,7 @@ This article covers AdGuard for Mac, a multifunctional ad blocker that protects 
 
 AdGuard allows you to install extensions, or userscripts, to extend the functionality of the browser. AdGuard can work as a cross-browser userscript manager: you don’t have to install the same userscript for each browser.
 
-Some userscripts are pre-installed, others you can be installed manually.
+Some userscripts are pre-installed, others can be installed manually.
 
 ![Extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mac/extensions.png)
 
