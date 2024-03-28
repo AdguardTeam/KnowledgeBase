@@ -46,7 +46,7 @@ When installing AdGuard for Windows from MSI, AdGuard is not automatically updat
 
 :::note
 
-In v7.16 and earlier versions of AdGuard for Windows, to allow updates for the user, the `AllowCheckUpdates` parameter for the `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` key must be set to `YES` (case insensitive). In this case automatic updates will be allowed, any other value or no value for this parameter disables automatic updates.
+In v7.16 and earlier versions of AdGuard for Windows, to allow updates for the user, the `AllowCheckUpdates` parameter for the `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard` key key on x86 OS or `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` key on x64 OS must be set to `YES` (case insensitive). In this case automatic updates will be allowed, any other value or no value for this parameter disables automatic updates.
 
 :::
 
