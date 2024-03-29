@@ -21,7 +21,7 @@ AdGuard nabízí řadu softwarových produktů, které blokují reklamy a slídi
 
 :::note
 
-Máme samostatné rozšíření pro Safari. Od vydání [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html) se u většiny rozšíření pro blokování reklam objevily velké problémy, a mnoho z nich přestalo fungovat. We had to develop a [separate extension for Safari](/adguard-for-safari/features/general) that has some differences in comparison with the extension described in this article.
+Máme samostatné rozšíření pro Safari. Od vydání [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html) se u většiny rozšíření pro blokování reklam objevily velké problémy, a mnoho z nich přestalo fungovat. Museli jsme vyvinout [samostatné rozšíření pro Safari](/adguard-for-safari/features/general), které má oproti rozšíření popsanému v tomto článku některé odlišnosti.
 
 :::
 

@@ -7,8 +7,8 @@ sidebar_position: 2
 
 Filtr je seznam pravidel zapsaný ve speciální syntaxi. Podle těchto pravidel mohou blokátory obsahu filtrovat provoz webu: blokovat reklamy nebo požadavky na škodlivé webové stránky.
 
-Filters are combined into eight thematic categories: _Ad Blocking, Privacy, Social widgets, Annoyances, Security, Language-specific filters, Custom, and Other filters_.
+Filtry jsou sdruženy do osmi tematických kategorií: _Blokování reklam, Ochrana soukromí, Widgety sociálních sítí, Obtěžování, Zabezpečení, Jazykově specifické filtry, Vlastní a Ostatní filtry_.
 
-Read more about [AdGuard filters](/general/ad-filtering/adguard-filters) or [ad filtering in general](/general/ad-filtering/how-ad-blocking-works).
+Přečtěte si více o [AdGuard filtrech](/general/ad-filtering/adguard-filters) nebo [obecném filtrování reklam](/general/ad-filtering/how-ad-blocking-works).
 
 Na kartě Filtry můžete povolit celou kategorii nebo jednotlivé filtry. Změny na kartě Filtry se projeví v části Blokátory obsahu (na kartě Obecné).

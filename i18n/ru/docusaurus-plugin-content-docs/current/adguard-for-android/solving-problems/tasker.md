@@ -83,7 +83,7 @@ sidebar_position: 3
 
 `server:[name]`, где `[name]` — имя исходящего прокси из списка.
 
-Или вы можете настроить параметры сервера вручную:
+Or you can configure remove parameters manually:
 
 `server:[type=…&host=…&port=…&username=…&password=…&udp=…&trust=…]`.
 

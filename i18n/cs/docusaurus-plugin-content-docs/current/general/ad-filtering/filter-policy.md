@@ -134,7 +134,7 @@ Filtry obtěžování jsou navrženy tak, aby zlepšily použitelnost webových 
 
 **CMP (Consent Management Platform)** — software, který pomáhá webovým stránkám dodržovat pravidla používání souborů cookies. CMP omezují používání souborů cookies, dokud uživatel nezíská souhlas, a poskytují uživatelům možnost přijmout určité soubory cookies a spravovat nastavení ochrany osobních údajů.
 
-**Widget**  — prvek uživatelského rozhraní, který rozšiřuje funkčnost webové stránky. Webové widgety jsou integrovány do webových stránek a mohou obsahovat interaktivní prvky, jako jsou tlačítka, formuláře nebo bannery. Mohou uživatelům poskytnout přístup ke konkrétním službám nebo obsahu, aniž by uživatelé museli přecházet na jiné stránky.
+**Widget** — prvek uživatelského rozhraní, který rozšiřuje funkčnost webové stránky. Webové widgety jsou integrovány do webových stránek a mohou obsahovat interaktivní prvky, jako jsou tlačítka, formuláře nebo bannery. Mohou uživatelům poskytnout přístup ke konkrétním službám nebo obsahu, aniž by uživatelé museli přecházet na jiné stránky.
 
 **Vyskakovací okno** — okno, které se zobrazí nad aktuální webovou stránkou. Je určeno k zobrazení dalších informací, reklam, oznámení nebo formulářů pro zadávání dat. Vyskakovací okna obvykle blokují zobrazení hlavního obsahu stránky a pro zavření vyžadují akci uživatele, což může být nepříjemné.
 
@@ -190,7 +190,7 @@ Bannery umístěné v záhlaví nebo v menu webových stránek nejsou blokovány
 
 #### AdGuard Widgets filter
 
-Jedná se o filtr, který blokuje různé widgety, které nejsou nezbytné pro fungování webu nebo pro interakci s ním:
+Jedná se o filtr, který blokuje různé widgety, které nejsou nezbytné pro fungování webových stránek nebo pro interakci s nimi:
 
 - Widgety pro doporučení obsahu — související články, podobné webové stránky, různá personalizovaná doporučení
 - Widgety chatu, které nejsou integrovány do obsahu a nejsou hlavním obsahem stránky
@@ -287,5 +287,5 @@ Tento filtr je určen k testování a ladění pravidel, která mohou potenciál
 
 **Omezení a výjimky**
 
-- Pravidla by neměla výslovně porušovat funkčnost webových stránek
+- Pravidla by neměla záměrně narušovat funkčnost webových stránek
 - Pravidla by neměla odblokovávat reklamy nebo jinak porušovat zásady

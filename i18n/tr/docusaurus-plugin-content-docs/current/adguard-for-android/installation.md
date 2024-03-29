@@ -9,7 +9,7 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 :::
 
-## Sistem gereksinimleri
+## System requirements
 
 **OS version:** Android 7.0 or higher
 
