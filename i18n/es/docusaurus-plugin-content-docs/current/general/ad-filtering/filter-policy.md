@@ -62,7 +62,7 @@ El objetivo de los filtros de bloqueo de anuncios es bloquear todos los tipos de
 - Anuncios intersticiales: anuncios a pantalla completa en dispositivos móviles que cubren la interfaz de la aplicación o del navegador
 - Restos de anuncios que ocupan grandes espacios o se destacan en el fondo, atrayendo la atención de los visitantes (excepto los poco perceptibles o imperceptibles)
 - Publicidad anti-adblock: publicidad alternativa que se muestra en el sitio cuando los anuncios en el sitio principal están bloqueados
-- Publicidad del propio sitio, si ha sido bloqueada por las reglas generales de filtrado (ver *Limitaciones y Excepciones*)
+- Publicidad del propio sitio, si ha sido bloqueada por las reglas generales de filtrado (ver *Limitaciones y excepciones*)
 - Scripts anti-adblock que impiden el uso del sitio (ver *Limitaciones y excepciones*)
 - Publicidad inyectada por malware, siempre y cuando se proporcionen detalles sobre su método de carga o pasos de reproducción
 - Minería no deseada: scripts que explotan criptomonedas sin el consentimiento del usuario
@@ -250,7 +250,7 @@ Este grupo contiene filtros que esenciales para bloquear anuncios.
 
 **Autopromoción de sitios** se refiere a los banners que promueven bienes y servicios propiedad del propietario del sitio, por los cuales no reciben remuneración de terceros.
 
-Para obtener más detalles sobre estos tipos de publicidad, consulta el artículo [ sobre anuncios de Búsqueda](https://adguard.com/kb/general/ad-filtering/search-ads/).
+Para obtener más detalles sobre estos tipos de publicidad, consulta el artículo [ sobre anuncios de búsqueda](https://adguard.com/kb/general/ad-filtering/search-ads/).
 
 ### Filtros
 
@@ -287,5 +287,5 @@ Este filtro está destinado a probar y depurar reglas que pueden afectar la func
 
 **Limitaciones y Excepciones**
 
-- Las reglas no deben violar explícitamente la funcionalidad de los sitios web
+- Las reglas no deben violar intencionalmente la funcionalidad de los sitios web
 - Las reglas no deben desbloquear anuncios ni violar la política de ninguna otra forma

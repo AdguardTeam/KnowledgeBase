@@ -45,7 +45,7 @@ AdGuard 광고 차단 필터에는 다음이 포함됩니다.
 ### 이러한 필터의 목적
 
 - **베이스 필터**는 영어 웹사이트 및 별도의 필터가 없는 웹사이트의 광고를 차단하도록 설계되었습니다. 또한 언어에 관계없이 모든 사이트에 적용되는 일반 필터링 규칙이 포함되어 있습니다.
-- **모바일 광고 필터**는 웹사이트의 모바일 버전과 모바일 애플리케이션 내의 광고를 차단합니다. 언어에 따른 세분화가 없습니다.
+- **Mobile Ads filter** blocks advertisements on mobile versions of websites and within mobile apps. 언어에 따른 세분화가 없습니다.
 - **지역 필터**는 **베이스 필터**와 동일한 정책을 따르지만 특정 언어의 웹사이트로 제한됩니다.
 
 광고 차단 필터의 목표는 인터넷에서 광고를 로드할 수 있는 웹사이트, 애플리케이션 및 특정 디바이스에서 모든 유형의 광고를 차단하는 것입니다.
@@ -59,11 +59,11 @@ AdGuard 광고 차단 필터에는 다음이 포함됩니다.
 - 사이트 콘텐츠로 위장한 광고로, 클릭 시 프로모션 제품 또는 관련 없는 콘텐츠가 있는 페이지가 열립니다.
 - 동영상 광고는 동영상 콘텐츠 내에 삽입되거나 웹사이트 및 애플리케이션의 별도 광고 요소에 삽입되는 광고 동영상입니다.
 - 인터랙티브 광고는 사용자가 상호작용할 수 있는 광고(예: 게임 및 설문조사, 완료 시 광고 아이템이 열림)입니다.
-- 전면 광고는 애플리케이션 또는 웹 브라우저의 인터페이스를 덮는 모바일 기기의 전체 화면 광고입니다.
+- Interstitial ads — full-screen ads on mobile devices that cover the interface of the app or web browser
 - 넓은 공간을 차지하거나 배경과 대비되어 눈에 띄어 방문자의 관심을 끄는 광고(거의 식별할 수 없거나 눈에 띄지 않는 광고 제외)
 - 차단 방지 광고는 기본 광고가 차단되었을 때 사이트에 표시되는 대체 광고입니다.
-- 사이트 자체 광고(일반 필터링 규칙에 의해 차단된 경우), *제한 및 예외 참조*
-- 사이트 사용을 막는 차단 방지 스크립트, *제한 및 예외 참조*
+- Site’s own advertising, if it has been blocked by general filtering rules (see *Limitations and exceptions*)
+- Anti-adblock scripts that prevent site usage (see *Limitations and exceptions*)
 - 멀웨어에 의해 삽입된 광고(로딩 방법 또는 재생산 단계에 대한 자세한 정보가 제공된 경우)
 - 원치 않는 마이닝은 사용자 동의 없이 암호화폐를 마이닝하는 스크립트입니다.
 
@@ -105,7 +105,7 @@ AdGuard 추적 보호 필터에는 다음이 포함됩니다.
 
 **추적 방지 필터**는 사용자의 개인 데이터를 수집하는 추적기를 차단하고 사용자의 프라이버시를 개선하기 위해 설계되었습니다.
 
-차단 대상:
+What it blocks:
 
 - 분석 시스템의 스크립트
 - 웹사이트 및 애플리케이션의 자체 추적 스크립트
@@ -134,7 +134,7 @@ AdGuard 추적 보호 필터에는 다음이 포함됩니다.
 
 **CMP(Consent Management Platform)**는 웹사이트가 쿠키 사용 규칙을 준수할 수 있도록 지원하는 소프트웨어입니다. CMP는 사용자의 동의를 얻을 때까지 쿠키 사용을 제한하여 사용자에게 특정 쿠키를 허용하고 개인정보 설정을 관리할 수 있는 옵션을 제공합니다.
 
-**위젯**은 웹사이트의 기능을 확장하는 사용자 인터페이스 요소입니다. 웹 위젯은 웹 페이지에 통합되며 버튼, 양식 또는 배너와 같은 대화형 요소를 포함할 수 있습니다. 다른 페이지로 이동하지 않고도 특정 서비스나 콘텐츠에 액세스할 수 있도록 사용자에게 제공할 수 있습니다.
+**Widget** — a user interface element that extends the functionality of a website. 웹 위젯은 웹 페이지에 통합되며 버튼, 양식 또는 배너와 같은 대화형 요소를 포함할 수 있습니다. 다른 페이지로 이동하지 않고도 특정 서비스나 콘텐츠에 액세스할 수 있도록 사용자에게 제공할 수 있습니다.
 
 **팝업**은 현재 웹 페이지 위에 표시되는 창입니다. 추가 정보, 광고, 알림 또는 데이터 입력 양식을 표시하기 위한 것입니다. 팝업은 일반적으로 페이지의 주요 콘텐츠 보기를 차단하고 닫으려면 사용자의 조치가 필요하므로 짜증을 유발할 수 있습니다.
 
@@ -182,7 +182,7 @@ AdGuard 추적 보호 필터에는 다음이 포함됩니다.
 
 #### AdGuard 모바일 앱 배너 필터
 
-방문자가 모바일 애플리케이션 설치를 유도하는 배너 및 팝업을 차단하는 필터입니다.
+This is a filter that blocks banners and popups that encourage visitors to install mobile apps.
 
 **제한 및 예외**
 
@@ -190,7 +190,7 @@ AdGuard 추적 보호 필터에는 다음이 포함됩니다.
 
 #### AdGuard 위젯 필터
 
-웹사이트의 기능이나 상호 작용에 필수적이지 않은 다양한 위젯을 차단하는 필터입니다:
+This is a filter that blocks various widgets that are not essential for the functioning of websites or for interaction with them:
 
 - 콘텐츠 추천 위젯 - 관련 기사, 유사한 웹사이트, 다양한 맞춤형 추천
 - 콘텐츠와 통합되어 있지 않고 페이지의 주요 콘텐츠가 아닌 채팅 위젯
@@ -250,7 +250,7 @@ AdGuard 소셜 미디어 필터에는 다음이 포함됩니다.
 
 **웹사이트의 자체 홍보** 사이트 소유자가 소유한 상품 및 서비스를 홍보하는 웹사이트의 배너로, 제3자로부터 보상을 받지 않는 배너를 말합니다.
 
-이러한 유형의 광고에 대한 자세한 내용은 검색 광고에 대한 [문서](https://adguard.com/kb/general/ad-filtering/search-ads/)를 참조하세요.
+For more details on these types of advertising, refer to the [article on search ads](https://adguard.com/kb/general/ad-filtering/search-ads/).
 
 ### 필터
 
@@ -287,5 +287,5 @@ This filter is used in AdGuard DNS. 광고 차단 필터를 대체할 수 없습
 
 **제한 및 예외**
 
-- 규칙은 웹사이트의 기능을 명시적으로 중단해서는 안 됩니다.
+- Rules should not intentionally break websites’ functionality
 - 규칙은 광고 차단을 해제하거나 정책을 위반해서는 안 됩니다.

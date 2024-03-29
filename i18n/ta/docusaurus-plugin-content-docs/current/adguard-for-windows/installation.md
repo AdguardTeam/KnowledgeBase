@@ -9,7 +9,7 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 :::
 
-## System  requirements
+## System requirements
 
 **Operating system:** Microsoft Windows 11, 10, 8.1, 8, 7, Vista.
 

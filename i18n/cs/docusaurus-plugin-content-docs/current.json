@@ -88,7 +88,7 @@
     "description": "The label for category Features in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Content Blockers": {
-    "message": "Content Blockers",
+    "message": "Blokátory obsahu",
     "description": "The label for category Content Blockers in sidebar tutorialSidebar"
   }
 }
