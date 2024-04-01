@@ -38,15 +38,15 @@ You must run these commands with admin privileges.
 
 If you want to install AdGuard on a Windows 7 computer, make sure that it has .NET 4 Client Profile installed: https://www.microsoft.com/en-us/download/details.aspx?id=24872
 
-:::info
-
-When installing AdGuard for Windows from MSI, AdGuard is not automatically updated. If you want to allow updates for the user (which is not recommended, because it prevents centralized updates), you must either delete the `ForbidCheckUpdates` parameter or set its value to `NO` (case-insensitive) in the registry under `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard`. This will allow updates.
-
-:::
-
 :::note
 
-In v7.16 and earlier versions of AdGuard for Windows, to allow updates for the user, the `AllowCheckUpdates` parameter for the `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard` key key on x86 OS or `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` key on x64 OS must be set to `YES` (case-insensitive). Any other value or no value for this parameter will disable automatic updates.
+If you have installed AdGuard for Windows from an MSI file, AdGuard will not be updated automatically. To allow manual updates:
+
+* in versions released after v7.16, delete the `ForbidCheckUpdates` parameter or set its value to `NO` (case-insensitive) in the registry under `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard`.  
+
+* in v7.16 and earlier versions, set to `YES` (case-insensitive) the `AllowCheckUpdates` parameter for the `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard` key on x86 OS or `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` key on x64 OS. Any other value or no value for this parameter will disable automatic updates.
+
+Please note that such installation of the application and manual updates are not recommended and can cause technical problems.
 
 :::
 
