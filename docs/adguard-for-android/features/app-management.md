@@ -13,7 +13,7 @@ The *App management* module can be accessed by tapping the *App management* tab 
 
 ![App management *mobile_border](https://cdn.adtidy.org/blog/new/9sakapp_management.png)
 
-By tapping an app you can manage its settings:
+By tapping an app, you can manage its settings:
 
 - Route its traffic through AdGuard
 - Block ads and trackers in this app (*Filter app content*)
