@@ -1,5 +1,5 @@
 ---
-title: Browser Assistant
+title: Asistent prohlížeče
 sidebar_position: 8
 ---
 
@@ -9,55 +9,55 @@ Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, kter
 
 :::
 
-AdGuard Browser Assistant allows you to manage AdGuard protection directly from your browser.
+Asistent prohlížeče AdGuard vám umožňuje spravovat ochranu AdGuardem přímo ve vašem prohlížeči.
 
 ![The Assistant window \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_window.png)
 
 ## Jak to funguje
 
-AdGuard Browser Assistant is a browser extension. It allows you to quickly manage the AdGuard app:
+Asistent prohlížeče AdGuard je rozšíření prohlížeče. Umožňuje rychlou správu aplikace AdGuard:
 
-- Enable or disable protection for a specific website (a toggle under the website name)
-- Pause protection for 30 seconds
-- Disable protection (the pause icon in the upper right corner)
-- Manually block an ad
-- Open the filtering log
-- Report incorrect blocking
-- Open AdGuard settings
-- View website certificate and manage HTTPS filtering (the lock icon next to the website name)
+- Povolení nebo zakázání ochrany pro konkrétní webovou stránku (přepínač pod názvem webové stránky)
+- Pozastavení ochrany po dobu 30 sekund
+- Vypnutí ochrany (ikona pozastavení v pravém horním rohu)
+- Ruční blokování reklam
+- Otevření záznamu filtrování
+- Nahlášení nekorektního blokování
+- Otevření nastavení AdGuardu
+- Zobrazení certifikátu webu a správa filtrování HTTPS (ikona zámku vedle názvu webu)
 
 ## Jak nainstalovat
 
-When you install AdGuard for Mac, you will be prompted to install Browser Assistant for your default browser. If you skip this step, you can install it later.
+Při instalaci AdGuard pro macOS budete vyzváni k instalaci Asistenta prohlížeče pro váš výchozí prohlížeč. Pokud tento krok přeskočíte, můžete jej nainstalovat později.
 
-**From settings**:
+**Z nastavení**:
 
-1. Open the AdGuard menu.
-2. Click the gear icon and select _Preferences_.
-3. Switch to the _Assistant_ tab.
-4. Click _Get the Extension_ next to your default browser.
-5. Install Assistant from your browser’s extension store.
+1. Otevřete nabídku AdGuardu.
+2. Klikněte na ikonu ozubeného kola a vyberte _Předvolby_.
+3. Přepněte na kartu _Asistent_.
+4. Klikněte na _Získat rozšíření_ vedle výchozího prohlížeče.
+5. Nainstalujte Asistenta z obchodu s rozšířeními vašeho prohlížeče.
 
 ![The Assistant tab](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant.png)
 
-**From the website**:
+**Z webové stránky**:
 
-1. Open the [Assistant page](https://adguard.com/adguard-assistant/overview.html).
-2. Under your browser name, select _Install_.
-3. Install Assistant from your browser’s extension store.
+1. Otevřete [stránku Asistenta](https://adguard.com/adguard-assistant/overview.html).
+2. Pod názvem prohlížeče vyberte _Instalovat_.
+3. Nainstalujte Asistenta z obchodu s rozšířeními vašeho prohlížeče.
 
 :::note
 
-In rare cases, a browser may be incompatible with Assistant. To manage AdGuard from your browser, you can install the legacy Assistant instead.
+Ve výjimečných případech může být prohlížeč s Asistentem nekompatibilní. Chcete-li spravovat AdGuard z prohlížeče, můžete si nainstalovat staršího Asistenta.
 
 :::
 
 ## Starý Asistent
 
-The legacy Assistant is the previous version of AdGuard Browser Assistant. It’s a userscript that doesn’t require additional installation. While the legacy Assistant does its job well, it has several drawbacks:
+Starší Asistent je předchozí verze Asistenta prohlížeče AdGuard. Jedná se o uživatelský skript, který nevyžaduje další instalaci. Ačkoli starší Asistent plní svou funkci dobře, má několik nevýhod:
 
-- It has fewer features than the extension version.
-- You have to wait for the userscript to be inserted into a webpage — sometimes it doesn’t load immediately.
-- You can’t hide the Assistant icon on the page.
+- Má méně funkcí než verze rozšíření.
+- Na vložení uživatelského skriptu do webové stránky musíte počkat — někdy se nenačte okamžitě.
+- Ikonu Asistenta na stránce nelze skrýt.
 
-We recommend that you use the legacy Assistant only if the new Assistant is not available.
+Staršího Asistenta doporučujeme používat pouze v případě, že nový Asistent není k dispozici.

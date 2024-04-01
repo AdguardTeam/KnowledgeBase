@@ -1,5 +1,5 @@
 ---
-title: Main window
+title: Hlavní okno
 sidebar_position: 1
 ---
 
@@ -9,6 +9,6 @@ Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, kter
 
 :::
 
-The main window of AdGuard for Mac allows you to enable or disable the AdGuard protection. It also gives you a quick overview of the app’s stats: ads, trackers, and threats blocked since you’ve installed AdGuard or since your last stats reset. By clicking the gear icon, you can access settings, check for app and filter updates, contact support, and manage your license.
+Hlavní okno aplikace AdGuard pro macOS umožňuje povolit nebo zakázat ochranu AdGuardem. Nabízí také rychlý přehled statistik aplikace: reklamy, slídiče a hrozby zablokované od doby, kdy jste si AdGuard nainstalovali, nebo od posledního obnovení statistik. Kliknutím na ikonu ozubeného kola získáte přístup k nastavení, můžete kontrolovat aktualizace aplikací a filtrů, kontaktovat podporu a spravovat licenci.
 
 ![Main window \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/main.png)

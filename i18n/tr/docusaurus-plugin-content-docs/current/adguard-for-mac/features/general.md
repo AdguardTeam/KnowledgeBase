@@ -9,7 +9,7 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 :::
 
-## How to open app settings
+## Uygulama ayarları nasıl açılır
 
 To configure AdGuard for Mac, click the gear icon in the upper right corner of the main window and select _Preferences_.
 
@@ -27,11 +27,11 @@ This feature prevents AdGuard from blocking [search ads and self-promotions on w
 
 This feature detects the language of the website you’re visiting and automatically activates appropriate filters for more accurate ad blocking. This is especially helpful if you change languages frequently.
 
-### Launch AdGuard at login
+### Başlangıçta AdGuard'ı başlat
 
 This feature automatically launches AdGuard automatically after you restart your computer. This helps keep AdGuard protection active without having to manually open the app.
 
-### Hide menu bar icon
+### Menü çubuğu simgesini gizle
 
 This feature hides AdGuard’s icon from the menu bar but keeps AdGuard running in the background. If you want to disable AdGuard completely, click _Quit AdGuard_ in the main window menu.
 

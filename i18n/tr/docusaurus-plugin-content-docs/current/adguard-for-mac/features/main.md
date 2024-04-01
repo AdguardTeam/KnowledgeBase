@@ -1,5 +1,5 @@
 ---
-title: Main window
+title: Ana pencere
 sidebar_position: 1
 ---
 
