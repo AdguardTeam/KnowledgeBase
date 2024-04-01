@@ -135,7 +135,7 @@ In this section, you can find information about your license and manage it:
 - Sign up to activate your 7-day trial period if you haven't used it yet
 - Refresh the license status from the three-dots menu (:)
 - Open the AdGuard account to manage your license there
-- Reset your license – for example, if you've reached device limit for this license and want to apply another one
+- Reset your license — for example, if you've reached device limit for this license and want to apply another one
 
 ![License screen *mobile_border](https://cdn.adtidy.org/blog/new/3wyh5hlicense.png)
 
