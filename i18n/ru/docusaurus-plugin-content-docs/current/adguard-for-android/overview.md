@@ -1,11 +1,11 @@
 ---
 title: Обзор функций
-sidebar_position: 1
+sidebar_position: 1.5
 ---
 
 :::info
 
-В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -135,9 +135,9 @@ Here are the active features of the pre-configured levels:
 
 В этом разделе вы можете выбрать DNS-сервер для разрешения DNS-запросов, блокировки рекламы и трекеров, а также шифрования DNS-трафика. Нажмите на сервер, чтобы увидеть его полное описание и выбрать протокол. Если вы не нашли нужный сервер, его можно добавить вручную:
 
-- Нажмите *Добавить DNS-сервер* и введите адрес (или адреса) сервера
+- Tap *Add DNS server* and enter the server address (or addresses)
 
-- Также можно выбрать DNS-сервер из [списка известных DNS-провайдеров](https://adguard-dns.io/kb/general/dns-providers/) и нажать кнопку *Добавить в AdGuard* рядом с ним
+- Alternatively, you can select a DNS server from the [list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/) and tap *Add to AdGuard* next to it
 
 - Если вы используете приватный сервер AdGuard DNS, вы можете добавить его в AdGuard с [панели управления](https://adguard-dns.io/dashboard/)
 
@@ -219,7 +219,7 @@ AdGuard для Android создает локальный VPN для фильтр
 
 ![Управление приложениями *mobile_border](https://cdn.adtidy.org/blog/new/9sakapp_management.png)
 
-Нажав на приложение, вы можете управлять его настройками:
+By tapping an app you can manage its settings:
 
 - Направлять трафик через AdGuard
 - Блокировать рекламу и трекеры в этом приложении (*Фильтровать трафик*)

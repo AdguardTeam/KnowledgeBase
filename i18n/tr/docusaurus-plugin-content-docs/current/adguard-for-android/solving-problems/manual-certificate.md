@@ -5,7 +5,7 @@ sidebar_position: 12
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Android için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -36,7 +36,7 @@ Follow these steps to install AdGuard certificate:
 
 Hepsi hazır! Once the certificate is installed successfully, you've enabled HTTPS filtering.
 
-Lütfen sağlanan adımların Google Pixel 7 akıllı telefonunu temel aldığını unutmayın. If you're using a different Android device, the exact menu names or options might vary. Daha kolay gezinmek için, ayarlar arama çubuğuna "sertifika" veya "kimlik bilgileri" yazarak sertifika aramayı düşünün.
+Lütfen sağlanan adımların Google Pixel 7 akıllı telefonunu temel aldığını unutmayın. If you're using a different Android device, the exact menu names or options might vary. For easier navigation consider searching for a certificate by entering “certificate” or “credentials” in the settings search bar.
 
 If you experience issues during the manual certificate installation (for example, you installed the certificate, but the application keeps ignoring it), you can follow one of the solutions below.
 

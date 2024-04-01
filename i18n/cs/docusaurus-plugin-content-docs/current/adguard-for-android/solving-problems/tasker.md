@@ -5,7 +5,7 @@ sidebar_position: 3
 
 :::info
 
-Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -17,7 +17,7 @@ Existuje mnoho aplikací Tasker, např. [Tasker](https://play.google.com/store/a
 
 ![Automation *mobile_border](https://cdn.adtidy.org/blog/new/mmwmfautomation.jpg)
 
-Díky tomuto rozhraní může každá aplikace odeslat speciální zprávu (tzv. "záměr"), která obsahuje název akce a případně další údaje. AdGuard se na tento záměr podívá a provede požadované akce.
+Thanks to this interface, any app can send a special message (called “intent”) that contains the name of the action and some additional data, if needed. AdGuard se na tento záměr podívá a provede požadované akce.
 
 ### Obavy o bezpečnost
 

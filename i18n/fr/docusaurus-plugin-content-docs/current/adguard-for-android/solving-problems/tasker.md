@@ -5,7 +5,7 @@ sidebar_position: 3
 
 :::info
 
-Cet article parle de AdGuard pour Android, un bloqueur de contenus multifonctionnel qui protège votre appareil au niveau du système. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -17,7 +17,7 @@ There are a lot of tasker apps out there, for example [Tasker](https://play.goog
 
 ![Automation *mobile_border](https://cdn.adtidy.org/blog/new/mmwmfautomation.jpg)
 
-Thanks to this interface, any app can send a special message (called "intent") that contains the name of the action and some additional data, if needed. AdGuard will look at this intent and perform the required actions.
+Thanks to this interface, any app can send a special message (called “intent”) that contains the name of the action and some additional data, if needed. AdGuard will look at this intent and perform the required actions.
 
 ### Security concerns
 

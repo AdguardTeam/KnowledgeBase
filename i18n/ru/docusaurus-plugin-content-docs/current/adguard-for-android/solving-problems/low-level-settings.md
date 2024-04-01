@@ -5,7 +5,7 @@ sidebar_position: 6
 
 :::info
 
-В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -97,7 +97,7 @@ sidebar_position: 6
 
 #### Записывать HAR
 
-Если эта настройка включена, AdGuard будет перехватывать HAR-файлы. Он создаст директорию «har» в кеш-директории программы. Она будет содержать все отфильтрованные запросы в формате HAR 1.2, который может быть проанализирован программой Fiddler.
+Если эта настройка включена, AdGuard будет перехватывать HAR-файлы. It will create a directory named “har” inside the app cache directory and add there information about all filtered HTTP requests in HAR 1.2 format that can be analyzed with the Fiddler program.
 
 Используйте его только для целей отладки!
 

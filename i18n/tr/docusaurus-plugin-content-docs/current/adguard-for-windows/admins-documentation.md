@@ -7,7 +7,7 @@ Bu sayfada AdGuard'ın politika ve tercihlere ilişkin merkezi yönetiminin öze
 
 ## 1. MSI'ı indirin {#msi-download}
 
-Download the [AdGuard MSI x86](https://cdn.adtidy.org/distr/windows/AdGuard_x86.msi) Download the [AdGuard MSI x64](https://cdn.adtidy.org/distr/windows/AdGuard_x64.msi)
+[AdGuard MSI x86'yı indirin](https://cdn.adtidy.org/distr/windows/AdGuard_x86.msi) [AdGuard MSI x64'ü indirin](https://cdn.adtidy.org/distr/windows/AdGuard_x64.msi)
 
 ## 2. Ağınız için ayarları yapılandırın {#settings-configuring}
 
@@ -37,13 +37,13 @@ AdGuard'ı Windows 7 yüklü bir bilgisayara kurmak istiyorsanız, .NET 4 İstem
 
 :::not
 
-If you have installed AdGuard for Windows from an MSI file, AdGuard will not be updated automatically. To allow manual updates:
+Windows için AdGuard'ı bir MSI dosyasından kurduysanız, AdGuard otomatik olarak güncellenmeyecektir. Elle güncellemelere izin vermek için:
 
-- in versions released after v7.16, delete the `ForbidCheckUpdates` parameter or set its value to `NO` (case-insensitive) in the registry under `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard`.
+- v7.16'dan sonra yayınlanan sürümlerde, `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard` altındaki kayıt defterinde `ForbidCheckUpdates` parametresini silin veya değerini `NO` (büyük/küçük harfe duyarlı değil) olarak ayarlayın.
 
-- in v7.16 and earlier versions, set to `YES` (case-insensitive) the `AllowCheckUpdates` parameter for the `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard` key on x86 OS or `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` key on x64 OS. Any other value or no value for this parameter will disable automatic updates.
+- v7.16 ve önceki sürümlerde, x86 işletim sisteminde `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard` anahtarı veya `x64 işletim sisteminde HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` anahtarı için `AllowCheckUpdates` parametresini `YES` (büyük/küçük harf duyarsız) olarak ayarlayın. Bu parametre için başka herhangi bir değer veya hiçbir değer olmaması otomatik güncellemeleri devre dışı bırakır.
 
-Please note that such installation of the application and manual updates are not recommended and can cause technical problems.
+Uygulamanın bu şekilde kurulmasının ve elle güncellemelerin tavsiye edilmediğini ve teknik sorunlara neden olabileceğini lütfen unutmayın.
 
 :::
 
