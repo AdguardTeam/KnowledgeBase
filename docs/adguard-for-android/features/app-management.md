@@ -20,7 +20,7 @@ By tapping an app, you can manage its settings:
 - Filter its HTTPS traffic (for non-browser apps, it requires [installing AdGuard's CA certificate into the system store](/adguard-for-android/solving-problems/https-certificate-for-rooted/), available on rooted devices)
 - Route it through your specified proxy server or AdGuard VPN in the Integration mode
 
-![App management: Chrome *mobile_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
+![App management in Chrome *mobile_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
 
 From the context menu, you can also access the app's stats.
 
