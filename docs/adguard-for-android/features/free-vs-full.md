@@ -29,4 +29,4 @@ AdGuard uses its own ad-free media player to block ads in YouTube videos. To ope
 
 - *Userscripts* allow you to extend the functionality of the browser and use [AdGuard Extra](/adguard-for-android/features/settings#adguard-extra) that prevents ad reinjection. [More about userscripts](/adguard-for-android/features/settings#userscripts)
 
-You can get access to these features by [purchasing a license](https://adguard.com/license.html). [How to activate the license](/general/license/activation/#activating-adguard-for-android)
+You can get access to these features by [purchasing a license](https://adguard.com/license.html). [How to activate a license](/general/license/activation/#activating-adguard-for-android)
