@@ -9,25 +9,25 @@ Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, kter
 
 :::
 
-AdGuard allows you to install extensions, or userscripts, to extend the functionality of the browser. AdGuard can work as a cross-browser userscript manager: you don’t have to install the same userscript for each browser.
+AdGuard umožňuje instalovat rozšíření nebo uživatelské skripty, které rozšiřují funkce prohlížeče. AdGuard může fungovat jako správce uživatelských skriptů pro různé prohlížeče: nemusíte instalovat stejný uživatelský skript pro každý prohlížeč.
 
-Some userscripts are pre-installed, others can be installed manually.
+Některé uživatelské skripty jsou předinstalovány, jiné lze nainstalovat ručně.
 
 ![Extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mac/extensions.png)
 
-## AdGuard Assistant (legacy)
+## AdGuard asistent (starý)
 
-This userscript allows you to manage AdGuard protection directly from your browser. While the [new Assistant](/adguard-for-mac/features/browser-assistant) is a browser extension that can be installed from your browser’s store, the legacy Assistant is a userscript that doesn’t require additional installation. Some features are common to both assistants:
+Tento uživatelský skript vám umožňuje spravovat ochranu AdGuardem přímo ve vašem prohlížeči. Zatímco [nový Asistent](/adguard-for-mac/features/browser-assistant) je rozšíření prohlížeče, které lze nainstalovat z úložiště prohlížeče, starší Asistent je uživatelský skript, který nevyžaduje další instalaci. Některé funkce jsou společné pro oba Asistenty:
 
-- Enable or disable protection for a specific website
-- Pause protection for 30 seconds
-- Manually block an ad
-- Report incorrect blocking
+- Povolení nebo zakázání ochrany pro konkrétní webovou stránku
+- Pozastavení ochrany po dobu 30 sekund
+- Ruční blokování reklam
+- Nahlášení nekorektního blokování
 
-However, the new Assistant is more advanced. It also allows you to manage AdGuard protection for all websites, check the website’s certificate, manage HTTPS filtering, and open the filtering log or the app’s settings. We recommend that you use the legacy Assistant only if the new Assistant is not available.
+Nový Asistent je však pokročilejší. Umožňuje také spravovat ochranu AdGuardem pro všechny webové stránky, kontrolovat certifikát webové stránky, spravovat HTTPS filtrování a otevírat protokol filtrování nebo nastavení aplikace. Staršího Asistenta doporučujeme používat pouze v případě, že nový Asistent není k dispozici.
 
 ## AdGuard Extra
 
-This userscript solves the most complex ad blocking issues when regular rules aren’t enough. It also prevents websites from circumventing ad blockers and re-inserting blocked ads. We recommend that you keep it enabled at all times.
+Tento uživatelský skript řeší nejsložitější problémy s blokováním reklam, když běžná pravidla nestačí. Zabraňuje také webovým stránkám obcházet blokátory reklam a znovu vkládat zablokované reklamy. Doporučujeme, abyste tuto ochranu měli stále povolenou.
 
-To install a userscript, click `+`. You can find userscripts at [greasyfork.org](https://greasyfork.org/).
+Chcete-li nainstalovat uživatelský skript, klikněte na `+`. Uživatelské skripty najdete na [greasyfork.org](https://greasyfork.org/).

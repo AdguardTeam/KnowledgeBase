@@ -13,24 +13,24 @@ Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, kter
 
 ![Network](https://cdn.adtidy.org/content/kb/ad_blocker/mac/network.png)
 
-### Automatically filter applications
+### Automaticky filtrovat aplikace
 
-By default, AdGuard blocks ads and trackers in most browsers ([Tor Browser is an exception](/adguard-for-mac/solving-problems/tor-filtering)). This setting allows AdGuard to block ads in apps as well.
+Ve výchozím nastavení blokuje AdGuard reklamy a slídiče ve většině prohlížečů ([Tor Browser je výjimkou](/adguard-for-mac/solving-problems/tor-filtering)). Toto nastavení umožňuje AdGuardu blokovat také reklamy v aplikacích.
 
-To manage filtered apps, click _Applications_.
+Chcete-li spravovat filtrované aplikace, klikněte na _Aplikace_.
 
-### Filter HTTPS protocol
+### Filtrovat HTTPS protokol
 
-This setting allows AdGuard to filter the secure HTTPS protocol, which is currently used by most websites and apps. By default, websites with potentially sensitive information, such as banking services, are not filtered. To manage HTTPS exclusions, click _Exclusions_.
+Toto nastavení umožňuje AdGuardu filtrovat zabezpečený protokol HTTPS, který v současnosti používá většina webových stránek a aplikací. Ve výchozím nastavení nejsou filtrovány webové stránky s potenciálně citlivými informacemi, jako jsou bankovní služby. Chcete-li spravovat výjimky HTTPS, klikněte na _Výjimky_.
 
-By default, AdGuard doesn’t filter websites with Extended Validation (EV) certificates. If needed, you can enable the _Filter websites with EV certificates_ option.
+Ve výchozím nastavení nefiltruje AdGuard webové stránky s certifikáty EV (Extended Validation). Pokud potřebujete, můžete také povolit možnost _Filtrovat weby s certifikáty EV_.
 
 ## Odchozí proxy
 
-You can set up AdGuard to route all your device’s traffic through your proxy server.
+AdGuard můžete nastavit tak, aby veškerý provoz vašeho zařízení směroval přes server proxy.
 
 ## HTTP proxy
 
-You can use AdGuard as an HTTP proxy server. This will allow you to filter traffic on other devices connected to the proxy.
+AdGuard můžete použít jako HTTP proxy server. To vám umožní filtrovat provoz na jiných zařízeních připojených k proxy.
 
-Make sure your Mac and your other device are connected to the same network and enter the proxy port on the device you want to route through your proxy server (usually in the network settings). To filter HTTPS traffic as well, [transfer AdGuard’s proxy certificate](http://local.adguard.org/cert) to this device. [Learn more about installing a proxy certificate](/guides/proxy-certificate)
+Ujistěte se, že jsou Mac a druhé zařízení připojeny ke stejné síti, a zadejte port proxy serveru na zařízení, které chcete přesměrovat skrze proxy server (obvykle v nastavení sítě). Chcete-li filtrovat i provoz HTTPS, [převeďte proxy certifikát AdGuardu] (http\://local.adguard.org/cert) do tohoto zařízení. [Další informace o instalaci proxy certifikátu](/guides/proxy-certificate)

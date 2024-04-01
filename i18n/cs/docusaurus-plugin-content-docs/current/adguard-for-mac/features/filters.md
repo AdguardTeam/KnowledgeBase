@@ -13,21 +13,21 @@ Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, kter
 
 ![Filters](https://cdn.adtidy.org/content/kb/ad_blocker/mac/filters.png)
 
-Filter lists are sets of rules written using a [special syntax](/general/ad-filtering/create-own-filters). AdGuard interprets and implements these rules to block ads, trackers, and annoyances. Some filters (for example, AdGuard Base filter, Tracking Protection filter, or EasyList) are pre-installed, others can be installed additionally.
+Seznamy filtrů jsou sady pravidel zapsané pomocí [speciální syntaxe](/general/ad-filtering/create-own-filters). AdGuard tato pravidla interpretuje a implementuje, aby blokoval reklamy, slídiče a obtěžující prvky. Některé filtry (například AdGuard Base, Tracking Protection nebo EasyList) jsou předinstalovány, jiné lze nainstalovat dodatečně.
 
-We recommend enabling the following filters:
+Doporučujeme povolit následující filtry:
 
-- Základní filtr AdGuardu
-- AdGuard Tracking Protection filter and AdGuard URL Tracking filter
-- AdGuard Annoyances filter
-- Filters for your language
+- AdGuard Base filter
+- Filtry AdGuard Tracking Protection a AdGuard URL Tracking
+- Filtr AdGuard Annoyances
+- Filtry pro váš jazyk
 
-These filters are important for blocking most ads, trackers, and annoying elements. For more advanced ad blocking, you can use custom filters and user rules.
+Tyto filtry jsou důležité pro blokování většiny reklam, slídičů a obtěžujících prvků. Pro pokročilejší blokování reklam můžete použít vlastní filtry a uživatelská pravidla.
 
-To add a filter, click `+` in the lower left corner of the list. To enable a filter, select its checkbox.
+Chcete-li přidat filtr, klikněte na `+` v levém dolním rohu seznamu. Chcete-li filtr povolit, zaškrtněte jeho políčko.
 
 ## Uživatelská pravidla
 
-In AdGuard for Mac, user rules are located in _Filters_. To create a rule, click `+`. To enable a rule, select its checkbox. To export or import rules, open the context menu.
+V AdGuard pro macOS jsou uživatelská pravidla umístěna v sekci _Filtry_. Chcete-li vytvořit pravidlo, klikněte na `+`. Chcete-li pravidlo povolit, zaškrtněte jeho políčko. Chcete-li exportovat nebo importovat pravidla, otevřete kontextovou nabídku.
 
 ![User rules: context menu](https://cdn.adtidy.org/content/kb/ad_blocker/mac/rules.png)

@@ -9,9 +9,9 @@ Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, kter
 
 :::
 
-## How to open app settings
+## Jak otevřít nastavení aplikace
 
-To configure AdGuard for Mac, click the gear icon in the upper right corner of the main window and select _Preferences_.
+Chcete-li nakonfigurovat AdGuard pro macOS, klikněte na ikonu ozubeného kola v pravém horním rohu hlavního okna a vyberte _Předvolby_.
 
 ![Main window \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/main.png)
 
@@ -19,22 +19,22 @@ To configure AdGuard for Mac, click the gear icon in the upper right corner of t
 
 ![General](https://cdn.adtidy.org/content/kb/ad_blocker/mac/general.png)
 
-### Do not block search ads and website self-promoting ads
+### Neblokovat reklamy ve vyhledávání a méně rušivé reklamy na webových stránkách
 
-This feature prevents AdGuard from blocking [search ads and self-promotions on websites](/general/ad-filtering/search-ads). This can be useful, for example, when you’re shopping online and want to see discounts offered by some websites. Instead of adding these websites to the allowlist, you can exclude self-promotions and search ads from filtering.
+Tato funkce zabraňuje tomu, aby AdGuard blokoval [reklamy ve vyhledávání a vlastní propagaci na webových stránkách](/general/ad-filtering/search-ads). To může být užitečné, například když nakupujete online a chcete vidět slevy nabízené některými webovými stránkami. Místo přidání těchto webových stránek do seznamu povolených můžete z filtrování vyloučit vlastní propagaci a reklamy ve vyhledávání.
 
-### Activate language-specific filters automatically
+### Automaticky aktivovat jazykově specifické filtry
 
-This feature detects the language of the website you’re visiting and automatically activates appropriate filters for more accurate ad blocking. This is especially helpful if you change languages frequently.
+Tato funkce detekuje jazyk navštívené webové stránky a automaticky aktivuje příslušné filtry pro přesnější blokování reklam. To je užitečné zejména v případě, že často měníte jazyky.
 
-### Launch AdGuard at login
+### Spustit AdGuard při přihlášení
 
-This feature automatically launches AdGuard automatically after you restart your computer. This helps keep AdGuard protection active without having to manually open the app.
+Tato funkce automaticky spustí AdGuard po restartování počítače. To pomáhá udržovat ochranu AdGuardem aktivní, aniž byste museli aplikaci ručně otevírat.
 
-### Hide menu bar icon
+### Skrýt panel nabídky
 
-This feature hides AdGuard’s icon from the menu bar but keeps AdGuard running in the background. If you want to disable AdGuard completely, click _Quit AdGuard_ in the main window menu.
+Tato funkce skryje ikonu AdGuardu z panelu nabídek, ale AdGuard zůstane spuštěný na pozadí. Pokud chcete AdGuard zcela vypnout, klikněte na _Ukončit AdGuard_ v nabídce hlavního okna.
 
 ### Seznam povolených
 
-Websites added to this list aren’t filtered. You can also access allowlisted websites from _User rules_.
+Webové stránky přidané do tohoto seznamu nejsou filtrovány. K webovým stránkám uvedeným v seznamu povolených můžete přistupovat také z _Uživatelských pravidel_.
