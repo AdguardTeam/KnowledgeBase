@@ -26,7 +26,7 @@ From the context menu, you can also access the app's stats.
 
 ![App management in Chrome. Context menu *mobile_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
 
-### "Problem-free" and "problematic" apps
+### “Problem-free” and “problematic” apps
 
 Most apps work properly when filtering is enabled. For such apps, their traffic is routed through AdGuard and filtered by default.
 
