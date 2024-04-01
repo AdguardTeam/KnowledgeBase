@@ -98,7 +98,7 @@ If this setting is enabled, AdGuard will test DNS upstreams before adding or upd
 
 #### Capture HAR
 
-If this setting is enabled, AdGuard will capture HAR files. It will create a directory named "har" inside the app cache directory and add there information about all filtered HTTP requests in HAR 1.2 format that can be analyzed with the Fiddler program.
+If this setting is enabled, AdGuard will capture HAR files. It will create a directory named “har” inside the app cache directory and add there information about all filtered HTTP requests in HAR 1.2 format that can be analyzed with the Fiddler program.
 
 Use it only for debugging purposes!
 

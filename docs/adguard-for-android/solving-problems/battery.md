@@ -43,7 +43,7 @@ First, let us lay down a bit of theory and links with necessary data.
 
     Formula to calculate the consumption:
 
-    > "CPU TIME (ms)" X "cpu.active" / (60 *60* 1000) = "POWER USE mAh"
+    > “CPU TIME (ms)” X “cpu.active” / (60 *60* 1000) = “POWER USE mAh”
 
     Let's put real numbers into this formula.
 

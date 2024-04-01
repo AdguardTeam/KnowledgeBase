@@ -35,7 +35,7 @@ In this section, you can control Internet access for specific apps — restrict 
 
     ![Adding an app to Custom firewall rules *mobile_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
 
-1. In *Available custom rules*, select the ones you want to configure and tap the "+" icon. The rules will now appear in *Applied custom rules*.
+1. In *Available custom rules*, select the ones you want to configure and tap the “+” icon. The rules will now appear in *Applied custom rules*.
 
     ![Added rule *mobile_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
 

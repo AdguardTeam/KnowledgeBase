@@ -17,7 +17,7 @@ There are a lot of tasker apps out there, for example [Tasker](https://play.goog
 
 ![Automation *mobile_border](https://cdn.adtidy.org/blog/new/mmwmfautomation.jpg)
 
-Thanks to this interface, any app can send a special message (called "intent") that contains the name of the action and some additional data, if needed. AdGuard will look at this intent and perform the required actions.
+Thanks to this interface, any app can send a special message (called “intent”) that contains the name of the action and some additional data, if needed. AdGuard will look at this intent and perform the required actions.
 
 ### Security concerns
 
