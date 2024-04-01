@@ -24,7 +24,7 @@ By tapping an app, you can manage its settings:
 
 From the context menu, you can also access the app's stats.
 
-![App management: Chrome. Context menu *mobile_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
+![App management in Chrome. Context menu *mobile_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
 
 ### "Problem-free" and "problematic" apps
 
