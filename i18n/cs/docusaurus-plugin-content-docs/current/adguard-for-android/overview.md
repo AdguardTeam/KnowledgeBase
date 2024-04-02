@@ -1,11 +1,11 @@
 ---
 title: Přehled funkcí
-sidebar_position: 1
+sidebar_position: 1.5
 ---
 
 :::info
 
-Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -135,9 +135,9 @@ Tato funkce je založena na AdGuard filtrech obtěžování a umožňuje blokova
 
 V této části můžete vybrat DNS server pro řešení DNS požadavků, blokování reklam a slídičů a šifrování DNS přenosů. Klepnutím na server si přečtěte jeho celý popis a vyberte protokol. Pokud jste požadovaný server nenašli, můžete jej přidat ručně:
 
-- Klikněte na *Přidat DNS server* a zadejte adresu serveru (nebo adresy)
+- Tap *Add DNS server* and enter the server address (or addresses)
 
-- Případně můžete vybrat DNS server ze seznamu [známých poskytovatelů DNS](https://adguard-dns.io/kb/general/dns-providers/) a kliknout na *Přidat do AdGuardu* vedle něj
+- Alternatively, you can select a DNS server from the [list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/) and tap *Add to AdGuard* next to it
 
 - Pokud používáte soukromý server AdGuard DNS, můžete jej přidat do AdGuardu z [ovládacího panelu](https://adguard-dns.io/dashboard/)
 
@@ -219,7 +219,7 @@ V této části můžete spravovat nastavení oprávnění a filtrování pro v�
 
 ![App management *mobile_border](https://cdn.adtidy.org/blog/new/9sakapp_management.png)
 
-Kliknutím na aplikaci můžete spravovat její nastavení:
+By tapping an app you can manage its settings:
 
 - Filtrovat její data pomocí AdGuardu
 - Blokovat reklamy a slídiče v této aplikaci (*Filtrovat obsah aplikace*)

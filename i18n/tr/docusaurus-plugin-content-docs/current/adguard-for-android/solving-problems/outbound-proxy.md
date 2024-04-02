@@ -5,7 +5,7 @@ sidebar_position: 8
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Android için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -25,7 +25,7 @@ Bu makalede, AdGuard ile çalışmak için en popüler proxy'lerden bazıların�
 
 ### Tor ile AdGuard nasıl kullanılır
 
-1. AdGuard'ı açın ve **Ayarlar** → **Filtreleme** → **Ağ** → **Proxy** öğesine gidin. Download "Orbot: Proxy with Tor" directly from [Google Play](https://play.google.com/store/apps/details?id=org.torproject.android&noprocess) or by tapping **Integrate with Tor** and then **Install**.
+1. AdGuard'ı açın ve **Ayarlar** → **Filtreleme** → **Ağ** → **Proxy** öğesine gidin. Download “Orbot: Proxy with Tor” directly from [Google Play](https://play.google.com/store/apps/details?id=org.torproject.android&noprocess) or by tapping **Integrate with Tor** and then **Install**.
 
 1. Open Orbot and press the **Start** button on the application's main screen.
 
@@ -61,7 +61,7 @@ Bu makalede, AdGuard ile çalışmak için en popüler proxy'lerden bazıların�
     | Proxy ana makine       | *proxy-nl.privateinternetaccess.com* |
     | Proxy bağlantı noktası | *1080*                               |
 
-1. Ayrıca **Kullanıcı Adı/Parola** alanlarını da doldurmanız gerekmektedir. To do so, log in to the [Client Control Panel](https://www.privateinternetaccess.com/pages/client-sign-in) on the PIA website. Click the **Generate Password** button under the **Generate PPTP/L2TP/SOCKS Password** section. "x" ile başlayan bir kullanıcı adı ve rastgele bir parola gösterilecektir. AdGuard'da **Proxy kullanıcı adı** ve **Proxy parolası** alanlarını doldurmak için bunları kullanın.
+1. Ayrıca **Kullanıcı Adı/Parola** alanlarını da doldurmanız gerekmektedir. To do so, log in to the [Client Control Panel](https://www.privateinternetaccess.com/pages/client-sign-in) on the PIA website. Tap the **Generate Password** button under the **Generate PPTP/L2TP/SOCKS Password** section. A username starting with “x” and a random password will be shown. AdGuard'da **Proxy kullanıcı adı** ve **Proxy parolası** alanlarını doldurmak için bunları kullanın.
 
 1. **Kaydet ve seç** öğesine dokunun.
 

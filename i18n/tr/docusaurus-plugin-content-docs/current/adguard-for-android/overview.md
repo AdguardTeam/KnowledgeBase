@@ -1,11 +1,11 @@
 ---
 title: Özelliklere genel bakış
-sidebar_position: 1
+sidebar_position: 1.5
 ---
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Android için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -135,9 +135,9 @@ This feature is based on AdGuard's annoyance filters and allows you to block pop
 
 In this section, you can select a DNS server to resolve DNS requests, block ads and trackers, and encrypt DNS traffic. Tap a server to read its full description and select a protocol. If you didn't find the desired server, you can add it manually:
 
-- Click *Add DNS server* and enter the server address (or addresses)
+- Tap *Add DNS server* and enter the server address (or addresses)
 
-- Alternatively, you can select a DNS server from the [list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/) and click *Add to AdGuard* next to it
+- Alternatively, you can select a DNS server from the [list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/) and tap *Add to AdGuard* next to it
 
 - If you're using a private AdGuard DNS server, you can add it to AdGuard from the [dashboard](https://adguard-dns.io/dashboard/)
 
@@ -219,7 +219,7 @@ Bu bölüm, cihazınızda yüklü olan tüm uygulamalar için izinleri ve filtre
 
 ![Uygulama yönetimi *mobile_border](https://cdn.adtidy.org/blog/new/9sakapp_management.png)
 
-Bir uygulamaya tıklayarak ayarlarını yönetebilirsiniz:
+By tapping an app you can manage its settings:
 
 - Route its traffic through AdGuard
 - Bu uygulamada reklamları ve izleyicileri engelleyin (*Uygulama içeriğini filtrele*)

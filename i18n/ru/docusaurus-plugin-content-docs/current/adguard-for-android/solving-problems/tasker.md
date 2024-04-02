@@ -5,7 +5,7 @@ sidebar_position: 3
 
 :::info
 
-В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -17,7 +17,7 @@ sidebar_position: 3
 
 ![Автоматизация *mobile_border](https://cdn.adtidy.org/blog/new/mmwmfautomation.jpg)
 
-Благодаря этому интерфейсу любое приложение может послать специальное сообщение (intent), которое содержит имя действия и дополнительную информацию. AdGuard увидит этот интент и выполнит запрашиваемое действие.
+Thanks to this interface, any app can send a special message (called “intent”) that contains the name of the action and some additional data, if needed. AdGuard увидит этот интент и выполнит запрашиваемое действие.
 
 ### Вопросы безопасности
 

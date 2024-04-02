@@ -90,5 +90,13 @@
   "sidebar.tutorialSidebar.category.Content Blockers": {
     "message": "Content Blockers",
     "description": "The label for category Content Blockers in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Protection": {
+    "message": "Защита",
+    "description": "The label for category Protection in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Firewall": {
+    "message": "Фаервол",
+    "description": "The label for category Firewall in sidebar tutorialSidebar"
   }
 }

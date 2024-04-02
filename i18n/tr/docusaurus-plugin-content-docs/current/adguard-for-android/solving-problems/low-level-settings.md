@@ -5,7 +5,7 @@ sidebar_position: 6
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Android için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -97,7 +97,7 @@ Bu ayar etkinleştirilirse, AdGuard özel DNS sunucularını eklemeden veya gün
 
 #### HAR'ı yakala
 
-Bu ayar etkinleştirilirse, AdGuard HAR dosyalarını yakalar. Uygulama önbellek dizini içinde "har" adında bir dizin oluşturur ve buraya, Fiddler programıyla analiz edilebilecek HAR 1.2 formatındaki tüm filtrelenmiş HTTP istekleri hakkında bilgi ekleyecektir.
+Bu ayar etkinleştirilirse, AdGuard HAR dosyalarını yakalar. It will create a directory named “har” inside the app cache directory and add there information about all filtered HTTP requests in HAR 1.2 format that can be analyzed with the Fiddler program.
 
 Yalnızca hata ayıklama amacıyla kullanın!
 
