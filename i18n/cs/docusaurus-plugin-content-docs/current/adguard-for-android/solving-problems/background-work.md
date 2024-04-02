@@ -69,7 +69,7 @@ Přejděte na **Nastavení** → **Aplikace** → **Správce aplikací** → **A
 
 - Set Autostart to “On”
 - Set all possible permissions in Other Permissions to “On”
-- Nastavte spořiče baterie na **"Bez omezení"**
+- Nastavte spořiče baterie na **Bez omezení**
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi5en.jpeg)
 
