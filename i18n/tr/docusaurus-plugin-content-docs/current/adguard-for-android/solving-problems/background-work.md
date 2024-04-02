@@ -493,7 +493,7 @@ For OnePlus below 6:
 
 ### Recent apps clearing behaviour
 
-Normally when you swipe an app away, it won’t close. On OnePlus this may however work in a different way. Recent app clear behaviour manager might be set up in a way that swiping the app to close will kill it. To return it to the “normal” mode:
+Normally when you swipe an app away, it won’t close. On OnePlus this may however work in a different way. Recent app clear behaviour manager might be set up in a way that swiping the app to close will kill it. "Normal" moda geri döndürmek için:
 
 Go to **Settings** → **Advanced** → **Recent app management** → Switch to **Normal clear**
 
