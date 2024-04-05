@@ -44,9 +44,9 @@ Mezi AdGuard filtry blokující reklamy patří:
 
 ### Účel těchto filtrů
 
-- **Základní filtr** je určen k blokování reklam na anglicky psaných webových stránkách a na těch, pro které neexistuje samostatný filtr. It also contains general filtering rules that apply to all sites regardless of language
-- **Filtr mobilních reklam** blokuje reklamy na mobilních verzích webových stránek a v mobilních aplikacích. There is no segmentation based on language
-- **Regional filters** follow the same policy as the **Base filter**, but limited to websites in certain languages
+- **Základní filtr** je určen k blokování reklam na anglicky psaných webových stránkách a na těch, pro které neexistuje samostatný filtr. Obsahuje také obecná pravidla filtrování, která platí pro všechny weby bez ohledu na jazyk
+- **Filtr mobilních reklam** blokuje reklamy na mobilních verzích webových stránek a v mobilních aplikacích. Neexistuje žádná segmentace na základě jazyka
+- **Regionální filtry** se řídí stejnými zásadami jako **Základní filtr**, ale jsou omezeny na webové stránky v konkrétních jazycích
 
 Cílem filtrů pro blokování reklam je blokovat všechny typy reklam na webových stránkách, v aplikacích a v některých zařízeních, která mohou načítat reklamy z internetu:
 
@@ -86,13 +86,13 @@ Cílem filtrů pro blokování reklam je blokovat všechny typy reklam na webov�
 
 ### Terminologie
 
-**Sledování** — proces sledování a shromažďování údajů o uživatelích a jejich interakcích s webovými stránkami a aplikacemi pro marketingové účely, jakož i získávání telemetrie o fungování webových stránek nebo aplikací za účelem analýzy jejich fungování. Tento proces obsahuje sledování navštívených stránek, stráveného času, interakce s prvky webu (např. kliknutí, odeslání formuláře) a další metriky. Umožňuje provozovatelům webových stránek a aplikací lépe porozumět chování uživatelů, optimalizovat funkce a přizpůsobit marketingové strategie. Sledování se také používá ke sledování výkonu, vzorců používání a identifikaci problémů, což vývojářům poskytuje potřebné údaje ke zlepšení stability a kvality webových stránek nebo aplikací. Even if the data obtained cannot reveal a person’s identity, such actions are still considered tracking.
+**Sledování** — proces sledování a shromažďování údajů o uživatelích a jejich interakcích s webovými stránkami a aplikacemi pro marketingové účely, jakož i získávání telemetrie o fungování webových stránek nebo aplikací za účelem analýzy jejich fungování. Tento proces obsahuje sledování navštívených stránek, stráveného času, interakce s prvky webu (např. kliknutí, odeslání formuláře) a další metriky. Umožňuje provozovatelům webových stránek a aplikací lépe porozumět chování uživatelů, optimalizovat funkce a přizpůsobit marketingové strategie. Sledování se také používá ke sledování výkonu, vzorců používání a identifikaci problémů, což vývojářům poskytuje potřebné údaje ke zlepšení stability a kvality webových stránek nebo aplikací. I když získané údaje nemohou odhalit totožnost osoby, jsou tyto činnosti stále považovány za sledování.
 
-**Slídič** — software používaný na webových stránkách nebo v aplikacích a určený ke shromažďování informací o jejich provozu a činnostech návštěvníků. Sleduje interakci uživatele s webovou stránkou nebo aplikací a zaznamenává údaje o zobrazení stránek, stráveném čase, kliknutích, odeslání formuláře a dalších událostech. Its purpose is to provide website and application owners with a tool for analyzing user behavior, improving the user experience, and optimizing content and advertising.
+**Slídič** — software používaný na webových stránkách nebo v aplikacích a určený ke shromažďování informací o jejich provozu a činnostech návštěvníků. Sleduje interakci uživatele s webovou stránkou nebo aplikací a zaznamenává údaje o zobrazení stránek, stráveném čase, kliknutích, odeslání formuláře a dalších událostech. Jeho účelem je poskytnout provozovatelům webových stránek a aplikací nástroj pro analýzu chování uživatelů, zlepšení uživatelských zážitků a optimalizaci obsahu a reklamy.
 
-**Parametr sledování URL** — část adresy, kterou analytické systémy přidávají k odkazům nebo která se vyskytuje v některých odkazech na webových stránkách. Po odeslání požadavku může tento parametr sledování URL zpracovat pozadí analytického systému nebo webové stránky, který z něj získá informace. Například parametry sledování URL mohou přenášet informace o kliknutích nebo reklamních kampaních. URL tracking parameters can also be used by fraud protection or bot detection systems.
+**Parametr sledování URL** — část adresy, kterou analytické systémy přidávají k odkazům nebo která se vyskytuje v některých odkazech na webových stránkách. Po odeslání požadavku může tento parametr sledování URL zpracovat pozadí analytického systému nebo webové stránky, který z něj získá informace. Například parametry sledování URL mohou přenášet informace o kliknutích nebo reklamních kampaních. Parametry sledování URL mohou také používat systémy ochrany proti podvodům nebo detekce botů.
 
-**Cookies** — soubory, které webové stránky odesílají a ukládají do zařízení. These files contain various information — both necessary for the functioning of the site on the device and used for analytics purposes — unique identifiers used to track visitor activity on the website, advertising parameters, and more.
+**Cookies** — soubory, které webové stránky odesílají a ukládají do zařízení. Tyto soubory obsahují různé informace — jak nezbytné pro fungování webu v zařízení, tak používané pro analytické účely — jedinečné identifikátory používané ke sledování aktivity návštěvníků webu, parametry reklamy a další.
 
 ### Filtry
 
@@ -121,7 +121,7 @@ Co je blokováno:
 
 Filtry ochrany sledování by neměly blokovat slídiče, pokud by blokování narušilo správné fungování webu:
 
-- Ochrana Anti-bot a podvodům, pokud narušuje používání webu. For example, with PerimeterX or hCaptcha blocking causes problems when the site attempts to verify its visitor with a captcha
+- Ochrana Anti-bot a podvodům, pokud narušuje používání webu. Například s blokováním PerimeterX nebo hCaptcha způsobuje problémy, když se web pokouší ověřit návštěvníka pomocí captcha
 - Systémy pro sledování chyb, jako je Sentry nebo Bugsnag nejsou blokovány
 
 ## Filtry obtěžování
@@ -134,7 +134,7 @@ Filtry obtěžování jsou navrženy tak, aby zlepšily použitelnost webových 
 
 **CMP (Consent Management Platform)** — software, který pomáhá webovým stránkám dodržovat pravidla používání souborů cookies. CMP omezují používání souborů cookies, dokud uživatel nezíská souhlas, a poskytují uživatelům možnost přijmout určité soubory cookies a spravovat nastavení ochrany osobních údajů.
 
-**Widget**  — prvek uživatelského rozhraní, který rozšiřuje funkčnost webové stránky. Webové widgety jsou integrovány do webových stránek a mohou obsahovat interaktivní prvky, jako jsou tlačítka, formuláře nebo bannery. Mohou uživatelům poskytnout přístup ke konkrétním službám nebo obsahu, aniž by uživatelé museli přecházet na jiné stránky.
+**Widget** — prvek uživatelského rozhraní, který rozšiřuje funkčnost webové stránky. Webové widgety jsou integrovány do webových stránek a mohou obsahovat interaktivní prvky, jako jsou tlačítka, formuláře nebo bannery. Mohou uživatelům poskytnout přístup ke konkrétním službám nebo obsahu, aniž by uživatelé museli přecházet na jiné stránky.
 
 **Vyskakovací okno** — okno, které se zobrazí nad aktuální webovou stránkou. Je určeno k zobrazení dalších informací, reklam, oznámení nebo formulářů pro zadávání dat. Vyskakovací okna obvykle blokují zobrazení hlavního obsahu stránky a pro zavření vyžadují akci uživatele, což může být nepříjemné.
 
@@ -158,7 +158,7 @@ Tento filtr je navržen tak, aby blokoval oznámení o souborech cookies i poža
 - Skriptlety se používají k obejití žádosti o souhlas (prakticky nepoužitelné na webech s omezením načítání obsahu třetích stran, dokud není učiněno rozhodnutí)
 - Nastavení souboru cookies nebo klíče v místním úložišti webu takovým způsobem, aby skript považoval volbu uživatele za provedenou
 - Simulace akce uživatele pomocí pravidla, které klikne na zadané tlačítko a přeruší jeho provádění 10 sekund po načtení. Jsou možné dvě možnosti:
-    - Reject (except for functional cookies — depending on the CMP system) — the preferred option, as there is less risk of loading additional analytics tools
+    - Odmítnout (s výjimkou funkčních souborů cookies — v závislosti na systému CMP) — preferovaná možnost, protože je menší riziko na načtení dalších analytických nástrojů
     - Přijmout — tato možnost se používá jako poslední možnost, pokud jiné metody selžou. V tomto případě je web navíc kontrolován na použití analytických nástrojů, které jsou pak blokovány filtrem **AdGuard Tracking Protection**
 
 **Omezení a výjimky**
@@ -190,7 +190,7 @@ Bannery umístěné v záhlaví nebo v menu webových stránek nejsou blokovány
 
 #### AdGuard Widgets filter
 
-Jedná se o filtr, který blokuje různé widgety, které nejsou nezbytné pro fungování webu nebo pro interakci s ním:
+Jedná se o filtr, který blokuje různé widgety, které nejsou nezbytné pro fungování webových stránek nebo pro interakci s nimi:
 
 - Widgety pro doporučení obsahu — související články, podobné webové stránky, různá personalizovaná doporučení
 - Widgety chatu, které nejsou integrovány do obsahu a nejsou hlavním obsahem stránky
@@ -220,13 +220,13 @@ Tento filtr je určen k blokování nepříjemných prvků, které nejsou zahrnu
 
 **Omezení a výjimky**
 
-Tento filtr může obsahovat pravidla, která nejsou vhodná pro všechny uživatele. Sometimes it is recommended to disable this filter. O přidání pravidel do tohoto filtru rozhodují vývojáři filtru na základě jednotlivých pravidel.
+Tento filtr může obsahovat pravidla, která nejsou vhodná pro všechny uživatele. Někdy se doporučuje tento filtr vypnout. O přidání pravidel do tohoto filtru rozhodují vývojáři filtru na základě jednotlivých pravidel.
 
 ## Filtry sociálních médií
 
 ### Filtry
 
-AdGuard Social Media filters include:
+Filtr sociálních médií AdGuard obsahuje:
 
 - Filtr sociálních médií AdGuard
 
@@ -287,5 +287,5 @@ Tento filtr je určen k testování a ladění pravidel, která mohou potenciál
 
 **Omezení a výjimky**
 
-- Pravidla by neměla výslovně porušovat funkčnost webových stránek
+- Pravidla by neměla záměrně narušovat funkčnost webových stránek
 - Pravidla by neměla odblokovávat reklamy nebo jinak porušovat zásady

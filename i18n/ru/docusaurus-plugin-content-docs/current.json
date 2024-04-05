@@ -78,5 +78,25 @@
   "sidebar.tutorialSidebar.category.AdGuard Browser Extension": {
     "message": "Браузерное расширение AdGuard",
     "description": "The label for category AdGuard Browser Extension in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Features overview": {
+    "message": "Обзор функций",
+    "description": "The label for category Features overview in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Features": {
+    "message": "Функции",
+    "description": "The label for category Features in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Content Blockers": {
+    "message": "Content Blockers",
+    "description": "The label for category Content Blockers in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Protection": {
+    "message": "Защита",
+    "description": "The label for category Protection in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Firewall": {
+    "message": "Фаервол",
+    "description": "The label for category Firewall in sidebar tutorialSidebar"
   }
 }

@@ -5,11 +5,11 @@ sidebar_position: 9
 
 :::info
 
-Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
 
 :::
 
-In einigen Fällen bleiben Apps aufgrund der Optimierungsfunktion des Android-Betriebssystems oder des so genannten „Batteriesparmodus“ nicht im Hintergrund („aktiv“ oder im Ruhemodus) — diese Funktion kann Hintergrund-Apps abschalten. Es kann lästig sein, sie jedes Mal neu zu starten, wenn sie geschlossen wurden. Um das Beenden von Apps im Hintergrund zu vermeiden, müssen Sie die Schritte befolgen, die wir für jeden Hersteller (Version) von Android OS separat beschrieben haben. Beachten Sie, dass die Anleitungen der verschiedenen Hersteller meist sehr ähnlich sind.
+In some cases, apps won't stay in the background (“alive” or in a sleep mode) due to the Android OS optimization function, or the so-called “battery save mode” — this function can kill background apps. Es kann lästig sein, sie jedes Mal neu zu starten, wenn sie geschlossen wurden. Um das Beenden von Apps im Hintergrund zu vermeiden, müssen Sie die Schritte befolgen, die wir für jeden Hersteller (Version) von Android OS separat beschrieben haben. Beachten Sie, dass die Anleitungen der verschiedenen Hersteller meist sehr ähnlich sind.
 
 ## Asus
 
@@ -31,15 +31,15 @@ Xiaomi-Geräte (und insbesondere MIUI-Geräte) gehören zu den problematischsten
 
 Damit Ihre AdGuard-App erfolgreich im Hintergrund läuft, gehen Sie wie folgt vor:
 
-Unter **Einstellungen** → **Apps** → **Apps verwalten** → scrollen Sie nach unten und suchen Sie **AdGuard**, setzen Sie **Autostart** auf „Ein”.
+In **Settings** → **Apps** → **Manage apps** → scroll down to locate **AdGuard**, set **Autostart** to “On”.
 
 ![Xiaomi Einstellungen *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
 
-Scrollen Sie nach unten zu **Batteriesparer**, tippen Sie darauf und setzen Sie es auf „Keine Einschränkungen”.
+Scroll down to **Battery saver**, tap it, and set to “No restrictions”.
 
 ![Miui *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_0a.png)
 
-Setzen Sie unter **Andere Berechtigungen** alle möglichen Berechtigungen auf „Ein”
+In **Other Permissions**, set all possible permissions to “On”
 
 Starten Sie die App **Sicherheit**.
 
@@ -67,8 +67,8 @@ Fertig! Sie haben die AdGuard-App erfolgreich angeheftet.
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
 
-- Setzen Sie den Autostart auf„Ein”
-- Setzen Sie alle möglichen Berechtigungen unter „Andere Berechtigungen“ auf „Ein“
+- Set Autostart to “On”
+- Set all possible permissions in Other Permissions to “On”
 - Setzen Sie den Batterieschutz auf **Keine Einschränkungen**
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi5en.jpeg)
@@ -89,7 +89,7 @@ Das Schlosssymbol sollte über dem App-Fenster angezeigt werden.
 
 Um Ihre App erfolgreich im Hintergrund auszuführen, konfigurieren Sie ihre Einstellungen wie folgt:
 
-- Setzen Sie den Autostart auf„Ein”
+- Set Autostart to “On”
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/xiaomi1en.png)
 
@@ -114,7 +114,7 @@ Bitte aktivieren Sie:
 - **Device Settings** → **Apps** → **AdGuard** → **Battery** → **Power-intensive prompt** and **Keep running after screen off**
 - **Settings** → **Additional Settings** → **Battery & Performance** → **Manage apps’ battery usage** and here:
 
-1. Schalten Sie die Energiesparmodi auf „Aus”
+1. Switch Power Saving Modes to “Off”
 1. Choose the following options: **Saving Power in The Background** → **Choose apps** → **AdGuard** → **Background Settings** → **No restrictions**
 
 #### Energiesparmodus
@@ -342,7 +342,7 @@ Besides, to set up the background work of AdGuard more effectively, you should o
 
 - Go to **Settings** → open **Battery Manager** → set **Power plan** to **Performance**;
 - Then choose **Protected apps** in the **Battery Manager** and check if AdGuard is Protected;
-- Go to **Apps** in the main settings and click AdGuard there → choose **Battery** → enable **Power-intensive prompt** and **Keep running after screen is off**;
+- Go to **Apps** in the main settings and tap AdGuard there → choose **Battery** → enable **Power-intensive prompt** and **Keep running after screen is off**;
 - Then in the **Apps** section open **Settings** (at the bottom) → **Special access** → choose **Ignore battery optimization** → press **Allowed** → **All apps** → find AdGuard on the list and set it to **Deny**.
 
 ## Meizu
@@ -351,7 +351,7 @@ Meizu has almost the same approach to the background process limitations as Huaw
 
 - Go to **Advanced Settings** → open **Battery Manager** → set **Power plan** to **Performance**;
 - Then choose **Protected apps** in the **Battery Manager** and check if AdGuard is Protected;
-- Go to **Apps** section and click AdGuard there → choose **Battery** → enable **Power-intensive prompt** and **Keep running after screen is off**.
+- Go to **Apps** section and tap AdGuard there → choose **Battery** → enable **Power-intensive prompt** and **Keep running after screen is off**.
 
 ## Nokia
 
@@ -436,7 +436,7 @@ Go to **Security Centre** → tap **Privacy Permissions** → **Startup manager*
 Weitere Lösungen:
 
 - Pin AdGuard to the recent apps screen
-- Enable AdGuard in the app list inside the security app’s "startup manager" and "floating app list" (com.coloros.safecenter / com.coloros.safecenter.permission.Permission)
+- Enable AdGuard in the app list inside the security app’s “startup manager” and “floating app list” (com.coloros.safecenter / com.coloros.safecenter.permission.Permission)
 - Turn off battery optimizations
 
 ## OnePlus
@@ -493,7 +493,7 @@ Für OnePlus unter 6:
 
 ### Recent apps clearing behaviour
 
-Normally when you swipe an app away, it won’t close. On OnePlus this may however work in a different way. Recent app clear behaviour manager might be set up in a way that swiping the app to close will kill it. To return it to the "normal" mode:
+Normally when you swipe an app away, it won’t close. On OnePlus this may however work in a different way. Recent app clear behaviour manager might be set up in a way that swiping the app to close will kill it. To return it to the “normal” mode:
 
 Go to **Settings** → **Advanced** → **Recent app management** → Switch to **Normal clear**
 

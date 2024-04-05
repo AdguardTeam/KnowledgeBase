@@ -5,7 +5,7 @@ sidebar_position: 12
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Android」について書いています。 実際に使ってみるには、[AdGuardアプリをダウンロード](https://agrd.io/download-kb-adblock)してください。
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. 実際に使ってみるには、[AdGuardアプリをダウンロード](https://agrd.io/download-kb-adblock)してください。
 
 :::
 
@@ -36,7 +36,7 @@ AdGuard証明書をインストールする方法は以下の通りです:
 
 これで完了です。 証明書が正常にインストールされると、HTTPSフィルタリングが有効になります。
 
-Please note that the steps provided are based on the Google Pixel 7 smartphone. 別のAndroidデバイスをお使いの場合、正確なメニュー名やオプションは多少異なる場合があります。 For easier navigation consider searching for a certificate by entering "certificate" or "credentials" in the settings search bar.
+Please note that the steps provided are based on the Google Pixel 7 smartphone. 別のAndroidデバイスをお使いの場合、正確なメニュー名やオプションは多少異なる場合があります。 For easier navigation consider searching for a certificate by entering “certificate” or “credentials” in the settings search bar.
 
 証明書の手動インストール中に問題が発生した場合（たとえば、証明書をインストールしたにもかかわらず、AdGuardアプリが証明書を無視し続けるなど）、以下のいずれかの解決策をお試しください。
 

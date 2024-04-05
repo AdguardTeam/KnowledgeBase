@@ -1,291 +1,291 @@
 ---
-title: AdGuard filter policy
+title: AdGuard 过滤策略
 sidebar_position: 6
 ---
 
-At AdGuard, we’ve long followed certain principles in making our filters, which, along with filter descriptions, are outlined below as part of our filtering policy.
+在 AdGuard，我们长期以来一直遵循一些原则来创建我们的过滤器，这些原则和过滤器说明是我们过滤政策的一部分。
 
-## Common criteria
+## 通用标准
 
-These criteria are equally applied to the rules of all filters.
+这些标准适用于所有过滤器的规则。
 
-- Rules for a specific site will only be added if there is sufficient traffic. Traffic is determined by public statistics (if available) or indirect indicators, such as the number of subscribers on social networks. A site’s traffic is considered sufficient if it reaches 100,000 visits per month. We will consider adding a rule for a site that is not as popular, but the final decision rests with filter developers. Sites with low traffic should still be checked for third-party analytics and advertising networks
-- The decision about content farms (websites that produce large amounts of content primarily aimed at achieving high visibility in search results and generating advertising revenue) is made by filter developers depending on the quality of the content
+- 在有足够流量的情况下，我们才会添加用于相应网站的规则。 流量由公开统计数据（如有的话）或间接统计工具（如社交网络上的用户数量）判断。 在一个网站的流量达到每月 100,000 次访问时，流量算是充足的。 我们也会考虑为不太受欢迎的网站添加一条规则，但最终决定权在过滤器开发人员手中。 流量较低的网站仍应被检查第三方分析和广告网络的情况如何。
+- 对于“内容农场”（制作大量内容的网站，其主要目的是在搜索结果中获得较高的可见度并产生广告收入），过滤器开发人员会根据内容的质量做出决定。
 
-Quality requirements for filtering rules:
+过滤规则的质量要求：
 
-- Rules should not negatively impact the websites in terms of performance
-- Unblocking rules must be as specific as possible to avoid unblocking anything unnecessary
-- JavaScript rules should be used as sparingly as possible and only if blocking ads is impossible without them
+- 规则不应该对网站性能带来负面影响。
+- 解锁规则必须尽可能具体，以避免解锁不必要的内容。
+- JavaScript 规则应尽量少用，只有在不使用 JavaScript 规则就无法屏蔽广告的情况下才使用。
 
-## Ad blocking filters
+## 广告拦截过滤器
 
-### Terminology
+### 专用名词
 
-**Ad blocker** is a software or hardware tool designed to filter, hide, or block advertisements and other elements on web pages. Ad blockers are created to improve user experience, reduce page load times, decrease internet traffic consumption, block ads, enhance privacy while browsing websites and using applications, and block annoying elements.
+**广告拦截程序**（或者，广告拦截器）是一种软件或硬件工具，用于过滤、隐藏或拦截网页上的广告和其他元素。 创建广告拦截程序的目的是，改善用户体验、缩短页面加载时间、减少互联网流量消耗、屏蔽广告、提升浏览网站和使用应用程序时的隐私性，以及拦截恼人的元素。
 
-A **filter** (or a **filter list**) is a set of filtering rules designed to filter content and block various types of advertisements and other types of content using ad blockers. These filters usually operate at the level of the web browser, programs, or DNS server.
+**过滤器**（或者，**过滤器列表**）是一套过滤规则，旨在使用广告拦截程序过滤内容和拦截各种类型的广告和其他内容。 这些过滤器通常在浏览器、程序或 DNS 服务器级别上运行。
 
-**Anti-adblock** is a technology used by websites or applications intended to detect ad blocking and react to it in different ways: tracking, reinjecting ads, encouraging to disable ad blocker (so called “adblock walls”). Anti-adblocks may be of different types:
+**Anti-adblock**（中文：反广告拦截）是网站或应用程序使用的一种技术，旨在检测广告拦截并以不同方式对其做出反应：跟踪、重新注入广告、鼓励禁用广告拦截器（即所谓的“广告拦截墙”（英文：Adblock walls））。 反广告拦截有多种类型
 
-- Anti-adblock that blocks website content without offering an alternative: to continue using the site, the user must disable the ad blocker on the site
-- “Anti-adblock wall” with alternative options offered, such as purchasing a subscription to continue using the ad blocker
-- Informational messages that do not obligate action: users are asked to disable the ad blocker, but these messages can be closed, allowing users to continue using the site without restrictions
-- Implementing alternative advertising in response to ad blocker usage: sites introduce alternative advertising when ad blockers are detected
-- Paywall: a method of content monetization where content is partially or fully hidden from users, with a message prompting them to purchase a subscription for access
-
-### 过滤器
-
-AdGuard ad-blocking filters include:
-
-- AdGuard Base filter
-- AdGuard Mobile Ads filter
-- Regional filters divided by language principle — Chinese, Dutch, French, German, Japanese, Russian, Spanish/Portuguese, Turkish, and Ukrainian
-
-### The purpose of these filters
-
-- **Base filter** is designed to block ads on English-language websites and those for which there is no separate filter. It also contains general filtering rules that apply to all sites regardless of language
-- **Mobile Ads filter** blocks advertisements on mobile versions of websites and within mobile applications. There is no segmentation based on language
-- **Regional filters** follow the same policy as the **Base filter**, but limited to websites in certain languages
-
-The goal of ad-blocking filters is to block all types of advertising on websites, applications, and certain devices that can load ads from the Internet:
-
-- Banners — advertisements displayed as images in various parts of web pages
-- Teasers — text or graphical ads, often animated, designed to intrigue visitors (sensational headlines, attention-grabbing images) and prompt them to click on the banner (clickbait)
-- Text ads — advertising in the form of text, including links
-- Modal adverts — advertising that suddenly appears over the current content in the form of modal windows
-- Popunders — advertising that opens in a separate window under the current one, when clicked anywhere on the page
-- Redirect advertising — mechanisms which automatically redirect users to another site after clicking
-- Ads disguised as site content, which open pages with promoted products or unrelated content upon clicking
-- Video ads — advertisement videos embedded within video content or in separate ad elements on websites and applications
-- Interactive ads — ads with which users can interact (e.g., games and surveys, upon completion of which the advertised item opens)
-- Interstitial ads — full-screen ads on mobile devices that cover the interface of the application or web browser
-- Ads leftovers that occupy large spaces or stand out against the background and attract visitors' attention (except barely discernible or unnoticeable ones)
-- Anti-adblock advertising — alternative advertising displayed on the site when the main one is blocked
-- Site’s own advertising, if it has been blocked by general filtering rules (see *Limitations and Exceptions*)
-- Anti-adblock scripts that prevent site usage (see *Limitations and Exceptions*)
-- Advertising injected by malware, if detailed information about its loading method or steps for reproduction is provided
-- Unwanted mining — scripts that mine cryptocurrency without user consent
-
-### Limitations and exceptions
-
-- The site’s own advertising should not be deliberately blocked. However, it should not be unblocked if the blocking is caused by general filtering rules
-- Content access measures like paywalls are not blocked
-- Anti-adblock walls will be blocked in the following cases:
-    - They aggressively insist on disabling or removing the ad blocker or effectively prevent using the website
-    - They feature incorrect and misleading descriptions of possible consequences of ad blockers’ use
-    - They put visitors at risk of malvertising — when unblocked advertisements come from dubious sources
-- We do not block ad blocker detection messages that satisfy at least one of the following criteria:
-    - They allow the usage of the website and do not overlay the significant amount of content
-    - They provide an alternative to disabling an ad blocker given that this alternative does not put the users’ privacy or security at risk
-    - They allow the user to proceed to the website’s content or offer a feasible value exchange that does not put the user’s privacy or security at risk
-    - Some legacy rules may continue to block messages that satisfy one or more of these criteria. If identified, such rules will be handled according to this policy
-- Mining pools are not blocked if they are public and not used solely for malicious purposes
-
-## Tracking protection filters
-
-### Terminology
-
-**Tracking** — the process of monitoring and collecting data about users and their interactions with websites and applications for marketing purposes, as well as to obtain telemetry about the functioning of websites or applications for the purpose of analyzing their operation. This process includes tracking visited pages, time spent, interaction with website elements (e.g., clicks, form submissions), and other metrics. It allows website and application owners to better understand user behavior, optimize functionality, and adapt marketing strategies. Tracking is also used to monitor performance, usage patterns, and identify issues, providing developers with the necessary data to improve the stability and quality of the website or application. Even if the data obtained cannot reveal a person’s identity, such actions are still considered tracking.
-
-**Tracker** — software used on a website or in an application and designed to collect information about their operation and visitors’ actions. It tracks user interaction with the website or application, recording data about page views, time spent, clicks, form submissions, and other events. Its purpose is to provide website and application owners with a tool for analyzing user behavior, improving the user experience, and optimizing content and advertising.
-
-**URL tracking parameter** — a part of the address that is added to links by analytics systems or present in some links on web pages. When a request is made, this URL tracking parameter can be processed by the backend of an analytics system or website, which will extract information from it. For example, URL tracking parameters can transmit information about clicks or advertising campaigns. URL tracking parameters can also be used by fraud protection or bot detection systems.
-
-**Cookies** — files that websites send to and store on devices. These files contain various information — both necessary for the functioning of the site on the device and used for analytics purposes — unique identifiers used to track visitor activity on the website, advertising parameters, and more.
+- 不提供其他选择的 Anti-adblock：要继续使用网站，用户必须禁用网站上的广告拦截程序。
+- 提供替代选项的 “Anti-adblock wall”，例如购买订阅以继续使用广告拦截程序。
+- 非强制的信息提示：要求用户禁用广告拦截器，但这些信息可以直接关闭，然后继续允许用户不受限制地继续浏览网站。
+- 针对广告拦截器的使用实施替代广告：网站在检测到广告拦截器时引入替代广告。
+- 收费墙：一种内容货币化方法，对用户部分或完全隐藏内容，并通过信息提示用户购买订阅以获取访问权。
 
 ### 过滤器
 
-AdGuard tracking protection filters include:
+AdGuard 广告拦截的过滤器包含以下过滤器：
 
-- AdGuard Tracking Protection filter
-- AdGuard URL Tracking filter
+- AdGuard 基础过滤器
+- AdGuard 移动广告过滤器
+- 按语言原则划分的地区过滤器，包括中文、荷兰语、法语、德语、日语、俄语、西班牙语/葡萄牙语、土耳其语和乌克兰语
 
-### The purpose of these filters
+### 过滤器的用途
 
-**Tracking Protection filter** is designed to block trackers that collect users’ personal data and to improve users’ privacy.
+- **基础过滤器**旨在拦截英语网站和没有单独过滤器的网站上的广告。 它还包含适用于所有网站（无论网站的语言）的一般过滤规则。
+- **移动广告过滤器**拦截移动版网站和移动应用程序中的广告。 没有基于语言的细分。
+- **地区过滤器**遵循与**基础过滤器**相同的政策，但仅限于特定语言的网站。
 
-What is blocks:
+广告拦截过滤器的主要目标在于拦截网站、应用程序和某些可以从互联网上加载广告的设备上的所有类型广告。广告类型如下：
 
-- Analytics systems’ scripts
-- Websites’ and applications’ own tracking scripts
-- Masked CNAME trackers
-- Tracking cookies
-- Tracking pixels
-- Tracking APIs of browsers
-- Privacy Sandbox functionality in Google Chrome and its forks used for tracking (Google Topics API, the Protected Audience API)
+- 横幅。以图像形式显示在网页各部分的广告。
+- 前导广告。文字或图形广告，通常是动画广告，旨在引起访问者的兴趣（“标题党”、吸睛图片）以此增加点击率。
+- 文字广告。文字形式的广告，包括链接。
+- 模式广告。以模式窗口的形式突然出现在当前内容之上的广告。
+- 弹出式广告。点击页面上任何位置时，广告都会在当前窗口下的单独窗口中打开。
+- 重定向广告。用户点击后自动重定向到其他网站的机制。
+- 伪装成网站内容的广告，点击后会打开含有促销产品或无关内容的页面。
+- 视频广告。网站和应用程序的视频内容或独立广告元素中嵌入的广告视频。
+- 互动广告。用户可与之互动的广告（如游戏和调查，完成后会打开广告项目）。
+- 插播广告。移动设备上覆盖应用程序或网络浏览器界面的全屏广告。
+- 占据较大空间或在背景中格外显眼并吸引访问者注意力的残留广告（几乎无法辨别或难以察觉的广告除外）。
+- Anti-adblock 广告。当主要广告被屏蔽时，网站上显示的替代广告。
+- 网站自身的广告，如果它已被一般过滤规则屏蔽（请参阅*限制及例外*）。
+- 阻止网站使用的反屏蔽脚本（请参阅*限制及例外*）。
+- 恶意软件注入的广告，如果提供了有关其加载方法或复制步骤的详细信息。
+- 不必要的“挖矿”。未经用户同意挖掘加密货币的脚本
 
-The **URL Tracking filter** is designed to remove tracking parameters from web addresses
+### 限制及例外
 
-### Limitations and exceptions
+- 不应故意屏蔽网站自身的广告。 但是，如果屏蔽是由一般过滤规则造成的，则不应解除屏蔽。
+- 不屏蔽收费墙等内容访问措施。
+- 在以下情况下，Anti-adblock walls 将被屏蔽：
+    - 强烈要求禁用或删除广告拦截器，或有效阻止使用网站。
+    - 对使用广告拦截器可能造成的后果作出错误和误导性的描述。
+    - 使访问者面临恶意广告的风险，如果未阻止的广告来自可疑来源。
+- 如果广告拦截程序检测到的信息至少满足以下条件之一，我们将不予拦截：
+    - 监测到的信息允许不干扰网站使用体验，不会覆盖大量页面内容。
+    - 监测到的信息提供禁用广告拦截器的替代方案，但这种替代方案不会危及用户的隐私或安全。
+    - 监测到的信息允许用户继续浏览网站内容，或提供可行的价值交换，不会危及用户的隐私或安全。
+    - 某些传统规则可能会继续拦截符合上述一个或多个标准的信息。 如果发现此类规则，将依照政策进行处理。
+- 如果网络矿池是公开的，且不完全用于恶意目的，则不会被封锁。
 
-Tracking protection filters should not block a tracker if blocking would disrupt the correct functioning of the website:
+## 跟踪保护过滤器
 
-- Anti-bots and fraud protection if it interferes with using the site. For example, with PerimeterX or hCaptcha blocking causes problems when the site attempts to verify its visitor with a captcha
-- Error tracking systems like Sentry or Bugsnag are not blocked
+### 专用名词
 
-## Annoyance filters
+**跟踪**：出于营销目的，对用户及其与网站和应用程序的互动情况进行监控和收集数据的过程，以及为分析网站或应用程序的运行情况而获取遥测数据的过程。 这一过程包括跟踪访问的页面、花费的时间、与网站元素的互动（如点击、提交表单）以及其他指标。 网站和应用程序所有者可以通过它更好地了解用户行为、优化功能和调整营销策略。 跟踪还可用于监控性能、使用模式和发现问题，为开发人员提供必要的数据，以提高网站或应用程序的稳定性和质量。 即使获得的数据无法识别个人身份，此类行为仍被视为跟踪。
 
-Annoyance filters are designed to improve the usability of websites by blocking elements on pages that are not advertisements but distract from and interfere with site interaction or content consumption — such as various modal windows and interactive forms, cookie consent notifications and requests, mobile app banners, and various widgets.
+**跟踪器**：用于网站或应用程序的软件，旨在收集有关其运行和访客操作的信息。 它跟踪用户与网站或应用程序的互动，记录有关页面浏览、花费时间、点击、表单提交和其他事件的数据。 其目的是为网站和应用程序所有者提供分析用户行为、改善用户体验以及优化内容和广告的工具。
 
-### Terminology
+**URL 跟踪参数**：是地址的一部分，由分析系统添加到链接中，或存在于网页的某些链接中。 当发出请求时，分析系统或网站的后台会对 URL 跟踪参数进行处理，并从中提取信息。 例如，URL 跟踪参数可以传输有关点击或广告活动的信息。 诈骗保护或僵尸网络检测系统也可以使用 URL 跟踪参数。
 
-**Cookie notice** — a form that describes the types and use of cookies on a website. A cookie notice appears when a user visits the website, informing the user that the website uses cookies or other tracking technologies to collect and use personal information, and explaining why and with whom the information collected is shared.
-
-**CMP (Consent Management Platform)** — software that helps websites comply with cookie usage rules. CMPs limit cookies usage until user consent is obtained, providing users with the option to accept certain cookies and manage privacy settings.
-
-**Widget**  — a user interface element that extends the functionality of a website. Web widgets are integrated into web pages and can include interactive elements such as buttons, forms, or banners. They can provide users with access to specific services or content without requiring navigation to other pages.
-
-**Popup** — a window that appears above the current web page. It is intended to display additional information, advertisements, notifications, or data entry forms. Popups usually block the view of the main content of the page and require user action to close, which can be irritating.
-
-### 过滤器
-
-For better customization, annoyance filters are divided by their purpose:
-
-- AdGuard Cookie Notices filter
-- AdGuard Popups filter
-- AdGuard Mobile App Banners filter
-- AdGuard Widgets filter
-- AdGuard Other Annoyances filter
-- AdGuard Annoyances filter — a combined filter that includes all 5 specialized annoyance filters
-
-### The purpose of these filters
-
-#### AdGuard Cookie Notices filter
-
-This filter is designed to block both cookie notices and requests from cookie management platforms (CMPs). Various methods may be applied to cookie notices and CMPs. In most cases, simply hiding or blocking the corresponding scripts is sufficient. However, when the site’s functionality and display of third-party content require cookie consent, the following methods are applied:
-
-- Scriptlets are used to bypass the consent request (practically not applicable on sites with restrictions on loading third-party content until a decision is made)
-- Setting a cookie or key in the site’s local storage in such a way that the script considers the user to have made a choice
-- Simulating user action using a rule that clicks a specified button and interrupts its execution 10 seconds after loading. Two options are possible:
-    - Reject (except for functional cookies — depending on the CMP system) — the preferred option, as there is less risk of loading additional analytics tools
-    - Accept — this option is used as the last resort if other methods fail. In this case, the site is additionally checked for the use of analytics tools, which are then blocked by the **AdGuard Tracking Protection filter**
-
-**Limitations and exceptions**
-
-In some cases, the decision to add rules is made independently by filter developers; mostly, when the choice made when simulating actions would affect the site’s functionality (for example, history may not work, or user settings may not be saved on such a site).
-
-#### AdGuard Popups filter
-
-This is a filter that blocks various popups on web pages that are not necessary for normal site usage, including but not limited to:
-
-- Requests for permission to receive push notifications
-- Popups and forms for subscribing to news, promotions, and various events, including third-party channels for receiving them (such as Google News, Telegram)
-- Popups that encourage users to disable ad blocker and violate user’s privacy (at the discretion of the filter developers)
-- Other types of popups that may annoy users (at the discretion of filter developers)
-
-**Limitations and exceptions**
-
-- Push notifications are only blocked on sites where they are not used for practical purposes. For example, in email web clients or tools used for work purposes, such notifications will not be blocked
-- Some popups that do not fall into the categories described above but still interfere with the user’s experience may be also blocked. For example, registration prompts on a site or popups that introduce the site’s features. The decision is made by filter developers
-- Content access measures that ask the user to pay to access the content must not be circumvented
-
-#### AdGuard Mobile App Banners filter
-
-This is a filter that blocks banners and popups that encourage visitors to install mobile applications.
-
-**Limitations and exceptions**
-
-Banners located in the headers or in the menus of websites are not blocked if they are not animated and do not occupy a significant portion of usable space. If a banner is located in the footer, the decision is made by filter developers case-by-case. Usually, banners in the footer do not stand out against other elements and are not distracting.
-
-#### AdGuard Widgets filter
-
-This is a filter that blocks various widgets that are not essential for the functioning of the website or for interaction with it:
-
-- Widgets for content recommendations — related articles, similar websites, various personalized recommendations
-- Chat widgets that are not integrated with the content and are not the main content of the page
-- Marketing widgets:
-    - Chats for communication with assistants or bots
-    - Widgets with product recommendations that are shown to the user
-    - Call-back forms
-- Other widgets that do not have a separate category but may visually clutter the page. For example, weather widgets, currency exchange rates, job listings, and donations
-
-**Limitations and exceptions**
-
-This filter doesn’t block:
-
-- Widgets closely related to the content of the page, such as comments sections, live chat streams, with an exception of unmoderated chats on sites with unofficial streams, which are often filled with spam and similar content
-- Widgets for self-promotion and site-specific promotional activities
-- Donation widgets, except the cases where they occupy a significant portion of the page and stand out prominently against the content. The decision to block is made by filter developers
-
-#### AdGuard Other Annoyances filter
-
-This filter is designed to block annoying elements that are not included in other filters, as well as to apply various tweaks. It’s purpose is to:
-
-- Block self-promotion of websites (any type of advertising promoting goods or services owned by the site owner, without receiving commercial compensation from a third party), if it is considered an annoying element
-- Block annoying elements that are not included in other categories
-- Unblock actions on the page, such as opening the context menu, selecting and copying text, if they are blocked
-- Speed up countdown timers when loading files from websites, if the check is not controlled by the server or is not hindered
-- Apply various rules that may be useful for filter developers. For example, blocking web debugger detection
-
-**Limitations and exceptions**
-
-This filter may contain rules that are not suitable for all users. Sometimes it is recommended to disable this filter. The decisions to add rules to this filter are made by filter developers on a rule-by-rule basis.
-
-## Social media filters
+**Cookies**：是指网站发送并存储在设备上的文件。 这些文件包含各种信息，既是网站在设备上运行所必需的，也是用于分析目的的，用于跟踪网站访客活动的唯一标识符、广告参数等。
 
 ### 过滤器
 
-AdGuard Social Media filters include:
+AdGuard 跟踪保护过滤器包含以下过滤器：
 
-- AdGuard Social Media filter
+- AdGuard 防跟踪保护过滤器
+- AdGuard URL 跟踪过滤器
 
-### The purpose of these filters
+### 过滤器的用途
 
-This filter will block social media widgets on third-party websites, such as “Like” and “Share” buttons, group widgets, recommendations, and similar widgets.
+**AdGuard 防跟踪保护过滤器**用于屏蔽收集用户个人数据的跟踪器，并改善用户使用体验。
 
-### Limitations and exceptions
+屏蔽的内容：
 
-Widgets that are part of the website’s functionality or content, such as comments, embedded posts, polls, as well as social media login widgets, are not blocked. Links to the website’s social media pages are also not blocked.
+- 分析系统脚本
+- 网站和应用程序自身的跟踪脚本
+- 屏蔽的 CNAME 跟踪器
+- 跟踪 Cookie
+- 跟踪像素
+- 浏览器的跟踪 API
+- Google 浏览器的隐私沙盒功能及其用于跟踪的分叉（Google Topics API、受保护受众 API）
 
-## Other filters
+**URL 跟踪过滤器**旨在移除网址中的跟踪参数。
 
-This group contains filters that are not essential for blocking advertisements.
+### 限制及例外
 
-### Terminology
+如果跟踪保护过滤器的阻止会影响网站的正常运行，则不应阻止跟踪器：
 
-**Contextual advertising** is a type of internet advertising where the advertisement is displayed based on the content, selected audience, location, time, or other context of internet pages.
+- Anti-bot 机器人和欺诈保护（如果会影响网站使用）。 例如，使用 PerimeterX 或 hCaptcha 时，当网站试图通过验证码验证访客时，阻止会导致问题。
+- 不屏蔽 Sentry 或 Bugsnag 等错误跟踪系统。
 
-**Search advertising** is a subclass of contextual advertising where ads are displayed based on the visitor's search query.
+## 恼人元素过滤器
 
-**Self-promotion of websites** refers to the banners of a website promoting goods and services owned by the site owner, for which they do not receive compensation from third parties.
+恼人元素过滤器的设计目的是通过阻止页面上任何会分散和干扰用户在使用网站时注意力的元素（如各种模式窗口和交互式表单、Cookie 同意通知和请求、移动应用程序横幅以及各种小工具）来提高网站的可用性。
 
-For more details on these types of advertising, refer to the [article on Search ads](https://adguard.com/kb/general/ad-filtering/search-ads/).
+### 专用名词
+
+**Cookie 通知**是一种说明网站 Cookie 类型和使用情况的表格。 Cookie 通知会在用户访问网站时自动出现，告知用户网站使用 Cookie 或其他跟踪技术来收集和使用个人信息，并解释收集信息的原因和共享对象。
+
+**CMP（同意管理平台）**是帮助网站遵守 Cookie 使用规则的软件。 CMP 在获得用户同意之前限制 Cookie 的使用，为用户提供接受某些 Cookie 和管理隐私设置的选项。
+
+**小工具**是一种扩展网站功能的用户界面元素。 网页小工具集成在网页中，可包括按钮、表单或横幅等交互式元素。 它们可让用户访问特定服务或内容，而无需导航到其他页面。
+
+**弹出窗口**是指出现在当前网页上方的窗口。 其目的是显示附加信息、广告、通知或数据输入表单。 弹出窗口通常会阻挡页面主要内容的浏览，并要求用户采取行动才能关闭，这可能会令人恼火。
 
 ### 过滤器
 
-- Filter unblocking search ads and self-promotion
-- AdGuard DNS filter
-- AdGuard Experimental filter
+为了更好地定制，烦扰过滤器按其用途进行了划分：
 
-### The purpose of these filters
+- AdGuard Cookie 通知过滤器
+- AdGuard 弹窗过滤器
+- AdGuard 移动拦截程序横幅广告的过滤器
+- AdGuard 小工具过滤器
+- AdGuard 其他恼人广告过滤器
+- 广告过滤器包含 5 种专门烦扰过滤器的组合过滤器
 
-#### Filter unblocking search ads and self-promotion
+### 过滤器的用途
 
-This filter unblocks:
+#### AdGuard Cookie 通知过滤器
 
-- Contextual advertising in search results when using search engines (such as Google, Bing, Yandex, DuckDuckGo)
-- Self-promotion of websites
+该过滤器旨在阻止 Cookie 通知和来自 Cookie 管理平台（CMP）的请求。 可对 Cookie 通知和 CMP 采用多种方法。 在大多数情况下，只需隐藏或阻止相应的脚本即可。 不过，当网站的功能和第三方内容的显示需要 Cookie 同意时，就会使用以下方法：
 
-**Limitations and exceptions**
+- 使用 Scriptlets（小脚本）绕过同意请求（实际上不适用于在作出决定之前限制加载第三方内容的网站）。
+- 在网站本地存储中设置 Cookie 或密钥，使脚本认为用户已做出选择。
+- 使用点击指定按钮并在加载 10 秒后中断执行的规则模拟用户操作。 有两个选项可供选择：
+    - 拒绝（功能 Cookie 除外，取决于 CMP 系统）。首选项，因为加载附加分析工具的可能性较小。
+    - 接受：如果其他方法无效。 在这种情况下，会额外检查网站是否使用了分析工具，然后由 **AdGuard 跟踪保护过滤器**进行阻止。
 
-- Search advertising is unblocked only if it corresponds to the user’s search query, as it is contextual. Otherwise, the advertising remains blocked
-- Self-promotion is unblocked only if it complies with the filter policy. A request for unblocking may be rejected by filter developers
-- Any other advertising will not be unblocked
+**限制及例外**
 
-#### AdGuard DNS filter
+在某些情况下，添加规则的决定是由过滤器开发人员独立做出的。大多数情况下，在模拟操作时做出的选择会影响网站的功能（例如，历史记录可能不起作用，或者在这样的网站上用户设置可能不会被保存）。
 
-This filter is used in AdGuard DNS. It is not a replacement for ad-blocking filters.
+#### AdGuard 弹窗过滤器
 
-**Limitations and exceptions**
+该过滤器可阻止正常使用网站时不需要的各种网页弹出窗口，包括但不限于：
 
-Same as for ad-blocking filters.
+- 请求允许接收推送通知
+- 订阅新闻、促销和各种活动的弹出窗口和表格，包括接收这些信息的第三方渠道（如 Google 新闻、Telegram 等）
+- 鼓励用户禁用广告拦截器和侵犯用户隐私的弹出窗口（由过滤器开发人员决定）
+- 其他可能使用户厌烦的弹出窗口（由过滤器开发人员决定）
 
-#### AdGuard Experimental filter
+**限制及例外**
 
-This filter is intended for testing and debugging rules that potentially may break websites’ functionality. Rules are added by filter developers when there’s a need to test a particular solution. As the filter is designed for debugging purposes, its limitations are minimal.
+- 推送通知只会在不用于实际目的的网站上被阻止。 例如，在用于工作目的的电子邮件网络客户端或工具中，此类通知不会被阻止。
+- 一些不属于上述类别但仍会干扰用户体验的弹出窗口也会被阻止。 例如，网站上的注册提示或介绍网站功能的弹出窗口。 由过滤器开发人员决定。
+- 不得规避要求用户付费才能访问内容的内容访问措施。
 
-**Limitations and exceptions**
+#### AdGuard 移动拦截程序横幅广告的过滤器
 
-- Rules should not explicitly break websites’ functionality
-- Rules should not unblock advertisements or otherwise violate the Policy
+该过滤器可阻止鼓励访客安装移动应用程序的横幅广告和弹出窗口。
+
+**限制及例外**
+
+位于网站页眉或菜单中的横幅广告，如果没有动画效果，也没有占据很大的可用空间，则不会被屏蔽。 如果横幅位于页脚，则由过滤器开发人员根据具体情况决定。 通常情况下，页脚中的横幅不会在其他元素中脱颖而出，也不会分散注意力。
+
+#### AdGuard 小工具过滤器
+
+这是一个过滤器，可以屏蔽对网站运行或与网站互动不重要的各种小工具：
+
+- 内容推荐小工具：相关文章、类似网站、各种个性化推荐
+- 未与内容整合且不是页面主要内容的聊天小工具
+- 营销小工具
+    - 用于与助理或机器人交流的聊天工具
+    - 向用户推荐产品的小工具
+    - 回电表单
+- 其他没有单独类别但可能会在视觉上扰乱页面的小工具。 例如，天气小工具、货币汇率、职位列表和捐款等。
+
+**限制及例外**
+
+此过滤无法阻止：
+
+- 与页面内容密切相关的小工具，如评论区、即时聊天流，但非官方聊天流网站上的非主持聊天除外，因为这些聊天通常充斥着垃圾邮件和类似内容。
+- 用于自我宣传和网站特定宣传活动的小工具。
+- 捐款小工具，除非这些小工具占据了页面的很大一部分，并在内容中非常显眼。 是否屏蔽由过滤器开发人员决定。
+
+#### AdGuard 其他恼人广告过滤器
+
+该滤镜旨在屏蔽其他滤镜不包含的恼人元素，并进行各种调整。 其目的是：
+
+- 阻止网站的自我宣传（任何类型的广告，宣传网站所有者拥有的未从第三方获得商业补偿的商品或服务），如果被认为是一个恼人元素。
+- 屏蔽不属于其他类别的烦人元素。
+- 如果页面上的操作（如打开右键菜单、选择和复制文本）被阻止，则取消阻止这些操作。
+- 在从网站加载文件时，如果检查不受服务器控制或不受阻，则加快倒计时器的速度。
+- 应用对过滤器开发人员有用的各种规则。 例如，阻止网络调试器检测。
+
+**限制及例外**
+
+该过滤器可能包含不适合所有用户的规则。 在这种情况下，建议禁用此过滤器。 向该过滤器添加规则的决定由过滤器开发人员逐条做出。
+
+## 社交媒体过滤器
+
+### 过滤器
+
+AdGuard 社交媒体过滤器包含：
+
+- AdGuard 社交媒体过滤器
+
+### 过滤器的用途
+
+该过滤器将阻止第三方网站上的社交媒体小工具，如「赞」和「分享」按钮、群组小工具、推荐和类似小工具。
+
+### 限制及例外
+
+作为网站功能或内容一部分的小工具（如评论、嵌入式帖子、投票以及社交媒体登录小工具）不会被阻止。 指向网站社交媒体页面的链接也不会被阻止。
+
+## 其他过滤器
+
+该组包含的过滤器对屏蔽广告并不重要。
+
+### 专用名词
+
+**背景广告**是一种互联网广告，根据互联网页面的内容、所选受众、位置、时间或其他情境显示广告。
+
+**搜索广告**是上下文广告的一个子类，根据访问者的搜索查询显示广告。
+
+**网站自我宣传**是指网站横幅宣传网站所有者拥有的商品和服务，网站所有者不从第三方收取报酬。
+
+有关这些类型广告的更多详情，请参阅[搜索广告](https://adguard.com/kb/general/ad-filtering/search-ads/)。
+
+### 过滤器
+
+- 解除搜索广告和自我推销过滤器
+- AdGuard DNS 过滤器
+- AdGuard 实验性过滤器
+
+### 过滤器的用途
+
+#### 解除搜索广告和自我推销过滤器
+
+此过滤器可解除屏蔽：
+
+- 使用搜索引擎（例如 Google、Bing、Yandex、DuckDuckGo）时在搜索结果中显示内容相关广告
+- 网站的自我宣传
+
+**限制及例外**
+
+- 搜索广告只有在与用户的搜索查询相对应的情况下才会解除屏蔽，因为它与上下文相关。 否则，广告仍会被屏蔽。
+- 自我宣传只有在符合过滤策略的情况下才会被解封。 过滤器开发人员可能会拒绝解封请求。
+- 任何其他广告都不会被解封。
+
+#### AdGuard DNS 过滤器
+
+此过滤器用于 AdGuard DNS。 它不能替代广告拦截过滤器。
+
+**限制及例外**
+
+跟广告拦截过滤器一样。
+
+#### AdGuard 实验性过滤器
+
+该过滤器用于测试和调试可能会破坏网站功能的规则。 规则由过滤器开发人员在需要测试特定解决方案时添加。 由于该过滤器是为调试目的而设计的，因此其局限性很小。
+
+**限制及例外**
+
+- 规则不得破坏网站功能。
+- 则不得阻止广告或以其他方式违反政策。

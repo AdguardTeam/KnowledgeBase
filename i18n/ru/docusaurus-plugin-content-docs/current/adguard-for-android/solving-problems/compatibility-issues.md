@@ -5,7 +5,7 @@ sidebar_position: 16
 
 :::info
 
-В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -16,7 +16,7 @@ sidebar_position: 16
 - Использовать [AdGuard VPN](https://adguard-vpn.com/welcome.html): в *Режиме интеграции* два приложения могут работать одновременно
 - Использовать ваш VPN в качестве [исходящего прокси-сервера](../solving-problems/outbound-proxy.md) и прописать его параметры в AdGuard
 - Выбрать режим *Автоматический прокси*. AdGuard больше не будет использовать локальный VPN и вместо этого перенастроит iptables
-- Выбрать режим *Ручной прокси*. Для этого перейдите в *Настройки* →  *Фильтрация* → *Сеть* → *Режим маршрутизации*
+- Выбрать режим *Ручной прокси*. To do this, go to *Settings* → *Filtering* → *Network* → *Routing mode*
 
 :::note Совместимость
 

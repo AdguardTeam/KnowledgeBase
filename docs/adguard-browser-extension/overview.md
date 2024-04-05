@@ -1,6 +1,6 @@
 ---
-title: Overview
-sidebar_position: 5
+title: Features overview
+sidebar_position: 1
 ---
 
 :::info
@@ -13,7 +13,6 @@ AdGuard provides a range of software products that block ads and trackers on dif
 
 ![AdGuard Browser Extension for Chrome *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
 
-
 ## Availability {#br-extension}
 
 [AdGuard Browser Extension](https://adguard.com/adguard-browser-extension/overview.html) is available for most major browsers. You can easily find it in your browser’s online store or on our official website.
@@ -22,7 +21,7 @@ AdGuard provides a range of software products that block ads and trackers on dif
 
 :::note
 
-We have a standalone extension for Safari. Since the release of [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html), most of the ad-blocking extensions have experienced huge issues and many of them stopped functioning. We had to develop a [separate extension for Safari](/adguard-for-safari/overview) that has some differences in comparison with the extension described in this article.
+We have a standalone extension for Safari. Since the release of [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html), most of the ad-blocking extensions have experienced huge issues and many of them stopped functioning. We had to develop a [separate extension for Safari](/adguard-for-safari/features/general) that has some differences in comparison with the extension described in this article.
 
 :::
 
@@ -154,3 +153,4 @@ Whereas AdGuard Browser Extension is free and easy to install, and has filters t
 `2` – the extension is unable to detect requests from other extensions. If a malicious or tracking extension sends a request to its server to show you ads or track your activity, AdGuard Browser Extension will not be able to block that request;
 
 `3` – not all types of ads and threats can be blocked by browser extensions due to certain browser limitations. Some elements may get to the page and slow down the loading process. Besides, unlike browser-based ad blockers, the AdGuard app blocks ads before they are loaded to the browser. This saves traffic and speeds up page loading.
+>>>>>>> 762d973b24d1f10e4c8d92ca803539690032cc02
