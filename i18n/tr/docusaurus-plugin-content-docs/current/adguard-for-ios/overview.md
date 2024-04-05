@@ -196,7 +196,7 @@ With Bootstrap, it’s a little more complicated. For AdGuard for iOS to use a c
 1. When a system default DNS server does not return the IP address of a secure DNS server and it is not possible to use a secure one.
 2. When our app and third-party VPN are used simultaneously and it is not possible to use System DNS as a Bootstrap.
 
-## Other features {#other-features}
+## Diğer özellikler {#other-features}
 
 While Safari content blocking and DNS protection are indisputably two major modules of AdGuard/AdGuard Pro, there are some other minor features that don't fall into either of them directly but still can be useful and are worth knowing about.
 

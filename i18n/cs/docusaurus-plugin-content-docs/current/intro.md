@@ -10,13 +10,13 @@ AdGuard je jedním z lídrů na trhu softwaru pro blokování reklam s více ne�
 
 - [AdGuard pro Windows](/adguard-for-windows/features/home-screen)
 - [AdGuard pro macOS](/adguard-for-mac/overview)
-- [AdGuard pro Android](/adguard-for-android/overview)
+- [AdGuard pro Android](/adguard-for-android/features/protection/ad-blocking)
 - [AdGuard pro iOS](/adguard-for-ios/overview)
 
 Vyvíjíme a spravujeme také bezplatná rozšíření prohlížeče pro všechny oblíbené prohlížeče:
 
 - [Rozšíření prohlížeče AdGuard](/adguard-browser-extension/overview)
-- [AdGuard pro Safari](/adguard-for-safari/overview)
+- [AdGuard pro Safari](/adguard-for-safari/features/general)
 
 ## Nejen blokování reklam
 

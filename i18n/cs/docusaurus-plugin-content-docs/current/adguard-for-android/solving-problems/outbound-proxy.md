@@ -5,7 +5,7 @@ sidebar_position: 8
 
 :::info
 
-Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -25,7 +25,7 @@ V tomto článku uvádíme příklady nastavení některých nejoblíbenějšíc
 
 ### Jak používat AdGuard s Tor
 
-1. Otevřete AdGuard a jděte do **Nastavení** → **Filtrování** → **Síť** → **Proxy**. Stáhněte si "Orbot: Proxy with Tor" přímo z [Obchodu Play](https://play.google.com/store/apps/details?id=org.torproject.android&noprocess) nebo klepnutím na **Integrovat s Tor** a poté **Instalovat**.
+1. Otevřete AdGuard a jděte do **Nastavení** → **Filtrování** → **Síť** → **Proxy**. Download “Orbot: Proxy with Tor” directly from [Google Play](https://play.google.com/store/apps/details?id=org.torproject.android&noprocess) or by tapping **Integrate with Tor** and then **Install**.
 
 1. Otevřete Orbot a stiskněte tlačítko **Spustit** na hlavní obrazovce aplikace.
 
@@ -61,7 +61,7 @@ V tomto článku uvádíme příklady nastavení některých nejoblíbenějšíc
     | Hostitel proxy | *proxy-nl.privateinternetaccess.com* |
     | Port proxy     | *1080*                               |
 
-1. Musíte také vyplnit pole **Uživatelské jméno/heslo**. Za tímto účelem se přihlaste do [Klientského ovládacího panelu](https://www.privateinternetaccess.com/pages/client-sign-in) na webu PIA. Klikněte na tlačítko **Generovat heslo** v části **Generovat heslo PPTP/L2TP/SOCKS**. Zobrazí se uživatelské jméno začínající na "x" a náhodné heslo. Použijte je k vyplnění polí **Uživatelské jméno proxy** a **Heslo proxy** v AdGuardu.
+1. Musíte také vyplnit pole **Uživatelské jméno/heslo**. Za tímto účelem se přihlaste do [Klientského ovládacího panelu](https://www.privateinternetaccess.com/pages/client-sign-in) na webu PIA. Tap the **Generate Password** button under the **Generate PPTP/L2TP/SOCKS Password** section. A username starting with “x” and a random password will be shown. Použijte je k vyplnění polí **Uživatelské jméno proxy** a **Heslo proxy** v AdGuardu.
 
 1. Klepněte na **Uložit a vybrat**.
 

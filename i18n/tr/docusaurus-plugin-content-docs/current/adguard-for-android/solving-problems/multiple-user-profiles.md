@@ -5,7 +5,7 @@ sidebar_position: 10
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Android için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -15,7 +15,7 @@ Bu makalede, Android cihazlarınızda *birden fazla hesap* veya *Kısıtlı Prof
 
 Android 9 ve üzeri sürümlerde, cihazınızda birden fazla kullanıcı profili için AdGuard yüklüyse uygulamayı kaldırırken sorunlarla karşılaşabilirsiniz. AdGuard'ı bir kullanıcı profilinden kaldırdığınızda, uygulama, uygulama listesinde görünmeye devam eder, ancak onu kaldıramaz veya yeniden yükleyemezsiniz. Bunun nedeni, AdGuard'ın cihaza farklı bir kullanıcı profili için yüklenmiş olmasıdır.
 
-Başarısız bir kaldırma girişiminden sonra AdGuard'ı yeniden yüklemeye çalışırsanız, "Uygulamayı cihazınıza yükleyemezsiniz" hata mesajını görürsünüz.
+If you try to reinstall AdGuard after an unsuccessful removal attempt, you will see the error message “You can't install the app on your device”.
 
 Bu sorunu çözmek için uygulamayı tüm kullanıcılardan kaldırmanız gerekir: Ayarlar → Tüm uygulamalar → AdGuard'a gidin. Sağ üst köşedeki üç noktalı menüye dokunun ve *Tüm kullanıcılar için kaldır* öğesini seçin.
 

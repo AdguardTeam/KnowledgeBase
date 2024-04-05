@@ -9,7 +9,7 @@ sidebar_position: 1
 
 :::
 
-Safari 版 AdGuard 的设计符合 Apple 公司对广告拦截浏览器扩展的限制，是 Safari 上最受欢迎的广告拦截器。 虽然 Safari 版 AdGuard 无法与我们的桌面广告拦截应用程序相比，但扩展是免费的，可以保护用户免受广告、跟踪器、网络钓鱼和恶意网站的侵害。
+Safari 版 AdGuard 的设计符合 Apple 公司对广告拦截浏览器扩展的限制，是 Safari 上最受欢迎的广告拦截器。 Although it can't be compared to our desktop ad blocking apps, it's free and can protect you from ads, trackers, phishing, and malicious websites.
 
 ## 常规 {#general}
 
@@ -35,7 +35,7 @@ Safari 版 AdGuard 的设计符合 Apple 公司对广告拦截浏览器扩展的
 
 内容拦截器是一组过滤器。 与隐私相关的过滤器包含在内容拦截器中，其相应名称为「*AdGuard 隐私*」。
 
-设计内容拦截器有两个原因：结构过滤器和符合 Apple 公司的限制。
+Content Blockers were designed for two reasons: to structure filters and to conform to Apple's restrictions.
 
 [2019 年](https://adguard.com/en/blog/adguard-safari-1-5.html)，Apple 对 Safari 的广告拦截器设置限制，只允许它们同时使用 5 万个过滤规则。 由于这个数量不足以让一个广告拦截器提供良好的过滤质量（仅 AdGuard 基础过滤器就有 30,000 个过滤规则），我们将 AdGuard Safari 版分成六个内容拦截器，每个拦截器包含多达 50,000 个规则。
 
@@ -73,7 +73,7 @@ Safari 版 AdGuard 的设计符合 Apple 公司对广告拦截浏览器扩展的
 
 :::note 免责声明
 
-我们没有任何由广告商付费的“可接受广告”。 不过，我们为用户提供查看「[拦截搜索广告和网站的自我推销](/general/ad-filtering/search-ads)」的选项。
+We don't have any 'acceptable ads' paid by advertisers. 不过，我们为用户提供查看「[拦截搜索广告和网站的自我推销](/general/ad-filtering/search-ads)」的选项。
 
 :::
 

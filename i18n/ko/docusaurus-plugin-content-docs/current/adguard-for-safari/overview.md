@@ -9,7 +9,7 @@ Safari 브라우저만 보호하는 Safari용 AdGuard에 관한 문서입니다.
 
 :::
 
-Safari용 AdGuard는 광고 차단 확장 프로그램에 대한 Apple의 제한 사항을 준수하도록 설계되었으며 가장 널리 사용되는 Safari용 광고 차단기입니다. AdGuard 데스크톱 앱보다 덜 강력한 기능을 제공하지만 무료이며 광고, 추적기, 피싱 및 악성 사이트로부터 사용자를 보호할 수 있습니다.
+Safari용 AdGuard는 광고 차단 확장 프로그램에 대한 Apple의 제한 사항을 준수하도록 설계되었으며 가장 널리 사용되는 Safari용 광고 차단기입니다. Although it can't be compared to our desktop ad blocking apps, it's free and can protect you from ads, trackers, phishing, and malicious websites.
 
 ## 일반 {#general}
 
@@ -35,7 +35,7 @@ Safari용 AdGuard는 광고 차단 확장 프로그램에 대한 Apple의 제한
 
 콘텐츠 차단기는 주제별 필터 블록입니다. 개인정보 보호 관련 필터는 *AdGuard Privacy* 콘텐츠 차단기에 포함되어 있습니다.
 
-콘텐츠 차단기는 필터를 구조화하고 Apple의 제한 사항을 준수하기 위해 설계되었습니다.
+Content Blockers were designed for two reasons: to structure filters and to conform to Apple's restrictions.
 
 [2019년](https://adguard.com/en/blog/adguard-safari-1-5.html), Apple은 Safari용 광고 차단기에 제한을 두어 동시에 5만 개의 필터링 규칙만 사용할 수 있도록 했습니다. 5만 개의 필터링 규칙으로는 좋은 필터링 품질을 제공할 수 없었습니다. 예를 들어, AdGuard 베이스 필터에만 3만 개의 필터링 규칙이 있습니다. 그래서 Safari용 AdGuard를 각각 최대 5만 개의 규칙을 포함하는 6개의 콘텐츠 차단기로 나누었습니다.
 
@@ -73,7 +73,7 @@ Safari용 AdGuard는 광고 차단 확장 프로그램에 대한 Apple의 제한
 
 :::note 주의사항
 
-광고주가 지불하는 '허용 가능한 광고'는 없습니다. 대신 사용자에게 [검색 광고와 웹사이트의 자체 홍보 광고](/general/ad-filtering/search-ads)를 볼 수 있는 옵션을 제공합니다.
+We don't have any 'acceptable ads' paid by advertisers. 대신 사용자에게 [검색 광고와 웹사이트의 자체 홍보 광고](/general/ad-filtering/search-ads)를 볼 수 있는 옵션을 제공합니다.
 
 :::
 

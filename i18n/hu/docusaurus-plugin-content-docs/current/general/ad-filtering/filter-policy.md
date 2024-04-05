@@ -45,7 +45,7 @@ AdGuard ad-blocking filters include:
 ### The purpose of these filters
 
 - **Base filter** is designed to block ads on English-language websites and those for which there is no separate filter. It also contains general filtering rules that apply to all sites regardless of language
-- **Mobile Ads filter** blocks advertisements on mobile versions of websites and within mobile applications. There is no segmentation based on language
+- **Mobile Ads filter** blocks advertisements on mobile versions of websites and within mobile apps. There is no segmentation based on language
 - **Regional filters** follow the same policy as the **Base filter**, but limited to websites in certain languages
 
 The goal of ad-blocking filters is to block all types of advertising on websites, applications, and certain devices that can load ads from the Internet:
@@ -59,11 +59,11 @@ The goal of ad-blocking filters is to block all types of advertising on websites
 - Ads disguised as site content, which open pages with promoted products or unrelated content upon clicking
 - Video ads — advertisement videos embedded within video content or in separate ad elements on websites and applications
 - Interactive ads — ads with which users can interact (e.g., games and surveys, upon completion of which the advertised item opens)
-- Interstitial ads — full-screen ads on mobile devices that cover the interface of the application or web browser
+- Interstitial ads — full-screen ads on mobile devices that cover the interface of the app or web browser
 - Ads leftovers that occupy large spaces or stand out against the background and attract visitors' attention (except barely discernible or unnoticeable ones)
 - Anti-adblock advertising — alternative advertising displayed on the site when the main one is blocked
-- Site’s own advertising, if it has been blocked by general filtering rules (see *Limitations and Exceptions*)
-- Anti-adblock scripts that prevent site usage (see *Limitations and Exceptions*)
+- Site’s own advertising, if it has been blocked by general filtering rules (see *Limitations and exceptions*)
+- Anti-adblock scripts that prevent site usage (see *Limitations and exceptions*)
 - Advertising injected by malware, if detailed information about its loading method or steps for reproduction is provided
 - Unwanted mining — scripts that mine cryptocurrency without user consent
 
@@ -105,7 +105,7 @@ AdGuard tracking protection filters include:
 
 **Tracking Protection filter** is designed to block trackers that collect users’ personal data and to improve users’ privacy.
 
-What is blocks:
+What it blocks:
 
 - Analytics systems’ scripts
 - Websites’ and applications’ own tracking scripts
@@ -134,7 +134,7 @@ Annoyance filters are designed to improve the usability of websites by blocking 
 
 **CMP (Consent Management Platform)** — software that helps websites comply with cookie usage rules. CMPs limit cookies usage until user consent is obtained, providing users with the option to accept certain cookies and manage privacy settings.
 
-**Widget**  — a user interface element that extends the functionality of a website. Web widgets are integrated into web pages and can include interactive elements such as buttons, forms, or banners. They can provide users with access to specific services or content without requiring navigation to other pages.
+**Widget** — a user interface element that extends the functionality of a website. Web widgets are integrated into web pages and can include interactive elements such as buttons, forms, or banners. They can provide users with access to specific services or content without requiring navigation to other pages.
 
 **Popup** — a window that appears above the current web page. It is intended to display additional information, advertisements, notifications, or data entry forms. Popups usually block the view of the main content of the page and require user action to close, which can be irritating.
 
@@ -182,7 +182,7 @@ This is a filter that blocks various popups on web pages that are not necessary 
 
 #### AdGuard Mobile App Banners filter
 
-This is a filter that blocks banners and popups that encourage visitors to install mobile applications.
+This is a filter that blocks banners and popups that encourage visitors to install mobile apps.
 
 **Limitations and exceptions**
 
@@ -190,7 +190,7 @@ Banners located in the headers or in the menus of websites are not blocked if th
 
 #### AdGuard Widgets filter
 
-This is a filter that blocks various widgets that are not essential for the functioning of the website or for interaction with it:
+This is a filter that blocks various widgets that are not essential for the functioning of websites or for interaction with them:
 
 - Widgets for content recommendations — related articles, similar websites, various personalized recommendations
 - Chat widgets that are not integrated with the content and are not the main content of the page
@@ -250,7 +250,7 @@ This group contains filters that are not essential for blocking advertisements.
 
 **Self-promotion of websites** refers to the banners of a website promoting goods and services owned by the site owner, for which they do not receive compensation from third parties.
 
-For more details on these types of advertising, refer to the [article on Search ads](https://adguard.com/kb/general/ad-filtering/search-ads/).
+For more details on these types of advertising, refer to the [article on search ads](https://adguard.com/kb/general/ad-filtering/search-ads/).
 
 ### Filters
 
@@ -287,5 +287,5 @@ This filter is intended for testing and debugging rules that potentially may bre
 
 **Limitations and exceptions**
 
-- Rules should not explicitly break websites’ functionality
+- Rules should not intentionally break websites’ functionality
 - Rules should not unblock advertisements or otherwise violate the Policy

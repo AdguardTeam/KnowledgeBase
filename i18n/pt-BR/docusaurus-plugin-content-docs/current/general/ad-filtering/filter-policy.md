@@ -62,8 +62,8 @@ O objetivo dos filtros de bloqueio de anúncios é bloquear todos os tipos de pu
 - Anúncios intersticiais: anúncios em tela cheia em dispositivos móveis que cobrem a interface do aplicativo ou navegador
 - Sobras de anúncios que ocupam grandes espaços ou se destacam no plano de fundo, atraindo a atenção dos visitantes (exceto os pouco perceptíveis ou imperceptíveis)
 - Publicidade anti-adblock: publicidade alternativa exibida no site quando os anúncios no site principal está bloqueado
-- Publicidade do próprio site, se tiver sido bloqueada pelas regras gerais de filtragem (ver *Limitações e Exceções*)
-- Scripts anti-adblock que impedem o uso do site (ver *Limitações e Exceções*)
+- Publicidade do próprio site, se tiver sido bloqueada pelas regras gerais de filtragem (ver *Limitações e exceções*)
+- Scripts anti-adblock que impedem o uso do site (ver *Limitações e exceções*)
 - Publicidade injetada por malware, desde que sejam fornecidas informações detalhadas sobre seu método de carregamento ou etapas de reprodução
 - Mineração indesejada: scripts que exploram criptomoedas sem o consentimento do usuário
 
@@ -134,7 +134,7 @@ Os filtros de elementos irritantes são projetados para melhorar a usabilidade d
 
 **CMP (Consent Management Platform)**: software que ajuda os sites a cumprir as regras de uso de cookies. Os CMPs limitam o uso de cookies até que o consentimento do usuário seja obtido, proporcionando aos usuários a opção de aceitar determinados cookies e gerenciar configurações de privacidade.
 
-**Widget**:  um elemento da interface do usuário que amplia a funcionalidade de um site. Os widgets da Web são integrados às páginas da Web e podem incluir elementos interativos, como botões, formulários ou banners. Eles podem fornecer aos usuários acesso a serviços ou conteúdos específicos sem exigir navegação para outras páginas.
+**Widget**: um elemento da interface do usuário que amplia a funcionalidade de um site. Os widgets da Web são integrados às páginas da Web e podem incluir elementos interativos, como botões, formulários ou banners. Eles podem fornecer aos usuários acesso a serviços ou conteúdos específicos sem exigir navegação para outras páginas.
 
 **Popup**: uma janela que aparece acima da página em que você está. Destina-se a exibir informações adicionais, anúncios, notificações ou formulários de insersação de dados. As pop-ups geralmente bloqueiam a visualização do conteúdo principal da página e exigem uma ação do usuário para serem fechadas, o que pode ser irritante.
 
@@ -250,7 +250,7 @@ Este grupo contém filtros não essenciais para bloquear anúncios.
 
 **Autopromoção de sites** refere-se aos banners que promovem bens e serviços de propriedade do proprietário do site, pelos quais não recebem remuneração de terceiros.
 
-Para mais detalhes sobre esses tipos de publicidade, consulte o artigo [sobre anúncios de Pesquisa](https://adguard.com/kb/general/ad-filtering/search-ads/).
+Para mais detalhes sobre esses tipos de publicidade, consulte o artigo [sobre anúncios de pesquisa](https://adguard.com/kb/general/ad-filtering/search-ads/).
 
 ### Filtros
 
@@ -287,5 +287,5 @@ Este filtro destina-se a testar e depurar regras que podem prejudicar a funciona
 
 **Limitações e exceções**
 
-- As regras não devem quebrar explicitamente a funcionalidade dos sites
+- As regras não devem quebrar a funcionalidade dos sites de maneira intencional
 - As regras não devem desbloquear anúncios ou violar a Política de qualquer outra forma

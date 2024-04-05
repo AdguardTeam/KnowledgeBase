@@ -10,13 +10,13 @@ AdGuard is one of the leaders on the market of ad-blocking software with 10+ yea
 
 - [AdGuard for Windows](/adguard-for-windows/features/home-screen)
 - [AdGuard for Mac](/adguard-for-mac/overview)
-- [AdGuard for Android](/adguard-for-android/overview)
+- [AdGuard for Android](/adguard-for-android/features/protection/ad-blocking)
 - [AdGuard for iOS](/adguard-for-ios/overview/features/safari-protection)
 
 But we also develop and maintain free browser extensions for all popular browsers:
 
 - [AdGuard Browser Extension](/adguard-browser-extension/overview)
-- [AdGuard for Safari](/adguard-for-safari/overview)
+- [AdGuard for Safari](/adguard-for-safari/features/general)
 
 ## Not just ad blocking
 

@@ -5,7 +5,7 @@ sidebar_position: 16
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Android için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -16,7 +16,7 @@ AdGuard'ı *Yerel VPN* filtreleme modunda kullanıyorsanız, diğer VPN uygulama
 - [AdGuard VPN](https://adguard-vpn.com/welcome.html) kullanın — iki uygulamanın sorunsuz şekilde çalışmasına izin veren *Entegre moda* sahiptir
 - Configure your VPN app to act as an [outbound proxy](../solving-problems/outbound-proxy.md) and set up a local outbound proxy using the parameters from the third-party app
 - Switch to the *Automatic proxy* mode. When you do that, AdGuard will no longer use local VPN and will reconfigure iptables instead
-- Switch to the *Manual proxy* mode. To do this, go to *Settings* →  *Filtering* → *Network* → *Routing mode*
+- Switch to the *Manual proxy* mode. To do this, go to *Settings* → *Filtering* → *Network* → *Routing mode*
 
 :::note Compatibility
 

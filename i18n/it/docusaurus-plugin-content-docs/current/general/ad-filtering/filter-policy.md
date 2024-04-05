@@ -59,11 +59,11 @@ L'obiettivo dei filtri di blocco delle inserzioni è bloccare ogni tipo di inser
 - Inserzioni pubblicitari mascherate da contenuti del sito, che aprono pagine con i prodotti promossi, o contenuti non correlati, al click
 - Inserzioni video: video pubblicitari incorporati nel contenuto del video o in elementi pubblicitari separati, sui siti web e sulle applicazioni
 - Inserzioni interattive: annunci con cui gli utenti possono interagire (es., giochi e sondaggi, al completamento dei quali si apre l'elemento pubblicizzato)
-- Inserzioni interstiziali: annunci a schermo intero sui dispositivi mobili, che coprono l'interfaccia dell'applicazione o del browser web
+- Inserzioni interstiziali: annunci a schermo intero sui dispositivi mobili, che coprono l'interfaccia dell'app o del browser web
 - Residui di inserzioni pubblicitari che occupano grandi spazi o sono a contrasto con lo sfondo e attirano l'attenzione dei visitatori (tranne quelli a malapena distinguibili o invisibili)
 - Inserzioni anti-adblock: inserzioni alternative mostrate sul sito quando quelle principali sono bloccate
-- Propri inserzioni del sito, se bloccate dalle regole di filtraggio generali (consulta *Limitazioni ed Eccezioni*)
-- Script anti-adblock che impediscono l'utilizzo del sito (consulta *Limitazioni ed Eccezioni*)
+- Propri inserzioni del sito, se bloccate dalle regole di filtraggio generali (consulta *Limitazioni ed eccezioni*)
+- Script anti-adblock che impediscono l'utilizzo del sito (consulta *Limitazioni ed eccezioni*)
 - Inserzioni pubblicitari iniettate da malware, se sono fornite informazioni dettagliate sul metodo di caricamento o i passaggi per la riproduzione
 - Mining indesiderato: script che minano criptovalute senza il consenso dell'utente
 
@@ -134,7 +134,7 @@ I filtri anti-fastidi sono progettati per migliorare l'utilizzabilità dei siti 
 
 **CMP (Consent Management Platform)** — software che aiuta i siti web a rispettare le regole sull'utilizzo dei cookie. Le CMP limitano l'utilizzo dei cookie finché non viene ottenuto il consenso dell'utente, offrendo agli utenti la possibilità di accettare determinati cookie e gestire le impostazioni sulla privacy.
 
-**Widget**  — un elemento dell'interfaccia utente che estende le funzionalità di un sito web. I widget web sono integrati nelle pagine web e possono includere elementi interattivi come pulsanti, moduli o banner. Possono fornire agli utenti l'accesso a servizi o contenuti specifici senza richiedere la navigazione in altre pagine.
+**Widget** — un elemento dell'interfaccia utente che estende le funzionalità di un sito web. I widget web sono integrati nelle pagine web e possono includere elementi interattivi come pulsanti, moduli o banner. Possono fornire agli utenti l'accesso a servizi o contenuti specifici senza richiedere la navigazione in altre pagine.
 
 **Popup** — una finestra che appare sopra la pagina web corrente. Ha lo scopo di visualizzare informazioni aggiuntive, annunci pubblicitari, notifiche o moduli di immissione dati. I popup di solito bloccano la visualizzazione del contenuto principale della pagina e richiedono l'azione dell'utente per chiudersi, il che può essere irritante.
 
@@ -182,7 +182,7 @@ Si tratta di un filtro che blocca vari popup sulle pagine web che non sono neces
 
 #### Filtro per Banner App Mobili di AdGuard
 
-Si tratta di un filtro che blocca banner e popup che incoraggiano i visitatori a installare applicazioni mobili.
+Si tratta di un filtro che blocca banner e popup che incoraggiano i visitatori a installare app mobili.
 
 **Limitazioni ed eccezioni**
 
@@ -190,7 +190,7 @@ I banner posizionati nelle intestazioni o nei menu dei siti web non vengono bloc
 
 #### Filtro per Widget di AdGuard
 
-Si tratta di un filtro che blocca diversi widget non essenziali per il funzionamento del sito o per l'interazione con lo stesso:
+Si tratta di un filtro che blocca diversi widget non essenziali per il funzionamento dei siti web o per l'interazione con essi:
 
 - Widget per consigli sui contenuti: articoli correlati, siti web simili, vari consigli personalizzati
 - Widget di chat che non sono integrati con il contenuto e non costituiscono il contenuto principale della pagina
@@ -287,5 +287,5 @@ Questo filtro è destinato al test e al debug delle regole che potenzialmente po
 
 **Limitazioni ed eccezioni**
 
-- Le regole non dovrebbero corrompere esplicitamente la funzionalità dei siti web
+- Le regole non dovrebbero corrompere intenzionalmente la funzionalità dei siti web
 - Le regole non dovrebbero sbloccare le inserzioni o altrimenti violare la Politica

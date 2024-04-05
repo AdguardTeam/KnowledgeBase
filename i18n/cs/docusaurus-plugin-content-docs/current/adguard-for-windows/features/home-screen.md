@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li se podívat, jak to funguje, [stáhněte si AdGuard pro Android](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -13,4 +13,4 @@ AdGuard pro Windows je snadno použitelný nástroj, který blokuje otravné ban
 
 ![Main screen \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/home-screen.png)
 
-Po spuštění AdGuardu pro Windows se zobrazí domovská obrazovka aplikace. Its most noticeable detail is the _enable/disable protection_ button. Na této obrazovce můžete také sledovat statistiky blokovaných reklam, slídičů a hrozeb, zjistit aktuální verzi aplikace nebo ji aktualizovat. Furthermore, there are four tabs in the upper right corner: _Settings_, _Support_, _License_, and _About_. O každé z nich stojí za to mluvit zvlášť.
+Po spuštění AdGuardu pro Windows se zobrazí domovská obrazovka aplikace. Nejvýraznějším detailem je tlačítko _zapnutí/vypnutí ochrany_. Na této obrazovce můžete také sledovat statistiky blokovaných reklam, slídičů a hrozeb, zjistit aktuální verzi aplikace nebo ji aktualizovat. Dále jsou v pravém horním rohu čtyři karty: _Nastavení_, _Podpora_, _Licence_ a _O programu_. O každé z nich stojí za to mluvit zvlášť.

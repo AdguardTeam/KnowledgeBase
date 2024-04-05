@@ -10,13 +10,13 @@ AdGuard, 10 yılı aşkın deneyimi, çeşitli platformlar için neredeyse onlar
 
 - [Windows için AdGuard](/adguard-for-windows/features/home-screen)
 - [Mac için AdGuard](/adguard-for-mac/overview)
-- [Android için AdGuard](/adguard-for-android/overview)
+- [Android için AdGuard](/adguard-for-android/features/protection/ad-blocking)
 - [iOS için AdGuard](/adguard-for-ios/overview)
 
 Ancak tüm popüler tarayıcılar için ücretsiz tarayıcı uzantıları da geliştiriyor ve sürdürüyoruz:
 
 - [AdGuard Tarayıcı Uzantısı](/adguard-browser-extension/overview)
-- [Safari için AdGuard](/adguard-for-safari/overview)
+- [Safari için AdGuard](/adguard-for-safari/features/general)
 
 ## Sadece reklam engelleme değil
 

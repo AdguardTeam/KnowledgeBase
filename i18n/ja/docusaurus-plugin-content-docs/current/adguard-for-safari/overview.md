@@ -9,7 +9,7 @@ sidebar_position: 1
 
 :::
 
-AdGuard for Safari は、広告をブロックするブラウザ拡張機能に対するApple制約に適合するように設計されており、Safari用の最も人気のある広告ブロッカーです。 機能面ではデスクトップ版広告ブロッカーアプリとは比較になりませんが、無料で広告、トラッカー、フィッシング、悪質なウェブサイトからあなたを守ることができます。
+AdGuard for Safari は、広告をブロックするブラウザ拡張機能に対するApple制約に適合するように設計されており、Safari用の最も人気のある広告ブロッカーです。 Although it can't be compared to our desktop ad blocking apps, it's free and can protect you from ads, trackers, phishing, and malicious websites.
 
 ## 一般 {#general}
 
@@ -35,7 +35,7 @@ AdGuard for Safari は、広告をブロックするブラウザ拡張機能に�
 
 コンテンツブロッカーとは、テーマ別のフィルタ群です。 プライバシー関連のフィルターは、コンテンツブロッカーの「*AdGuardプライバシー*」というグループに含まれています。
 
-コンテンツブロッカーが設計された理由は2つあります：フィルタを構成するためと、Appleの制約に適合させるためです。
+Content Blockers were designed for two reasons: to structure filters and to conform to Apple's restrictions.
 
 [2019年](https://adguard.com/en/blog/adguard-safari-1-5.html)、AppleはSafari用の広告ブロッカーに制約を設け、同時に使用できるフィルタリングルールは5万件までと制限しました。 広告ブロッカーとして十分なフィルタリングクオリティを提供するにはこの数では不十分であったため（AdGuard ベースフィルタだけでも30,000のフィルタリングルールがある）、AdGuard for Safari を6つのコンテンツブロッカーに分割し、それぞれに最大50,000のルールを含ませることにしました。
 
@@ -73,7 +73,7 @@ AdGuard for Safari は、広告をブロックするブラウザ拡張機能に�
 
 :::note Disclaimer
 
-AdGuardは、広告主からの報酬を受けて広告をブロックしない（「控えめな広告」等）ことは一切ありません。 代わりに、ユーザーご自身が、 [検索広告とウェブサイトの自己宣伝](/general/ad-filtering/search-ads)広告のブロックを解除できるオプションを提供しています。
+We don't have any 'acceptable ads' paid by advertisers. 代わりに、ユーザーご自身が、 [検索広告とウェブサイトの自己宣伝](/general/ad-filtering/search-ads)広告のブロックを解除できるオプションを提供しています。
 
 :::
 

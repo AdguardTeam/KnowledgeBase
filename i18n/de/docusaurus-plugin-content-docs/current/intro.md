@@ -10,13 +10,13 @@ AdGuard ist einer der Marktführer im Bereich der Werbeblocker mit mehr als 10 J
 
 - [AdGuard für Windows](/adguard-for-windows/features/home-screen)
 - [AdGuard für Mac](/adguard-for-mac/overview)
-- [AdGuard für Android](/adguard-for-android/overview)
+- [AdGuard für Android](/adguard-for-android/features/protection/ad-blocking)
 - [AdGuard für iOS](/adguard-for-ios/overview)
 
 Wir entwickeln und pflegen aber auch kostenlose Browsererweiterungen für alle gängigen Browser:
 
 - [AdGuard Browsererweiterung](/adguard-browser-extension/overview)
-- [AdGuard für Safari](/adguard-for-safari/overview)
+- [AdGuard für Safari](/adguard-for-safari/features/general)
 
 ## Nicht nur Werbeblocker
 
