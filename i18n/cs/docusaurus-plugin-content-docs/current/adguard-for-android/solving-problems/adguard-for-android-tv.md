@@ -5,7 +5,7 @@ sidebar_position: 17
 
 :::info
 
-Tento článek popisuje AdGuard pro Android TV, blokátor reklam, který chrání vaši TV na úrovni systému. Chcete-li se podívat, jak to funguje, [stáhněte si AdGuard pro Android TV](https://agrd.io/tvapk)
+This article is about AdGuard for Android TV, an ad blocker that protects your TV at the system level. Chcete-li se podívat, jak to funguje, [stáhněte si AdGuard pro Android TV](https://agrd.io/tvapk)
 
 :::
 

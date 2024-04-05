@@ -13,7 +13,7 @@ Dieser Artikel behandelt AdGuard für Mac, einen multifunktionalen Werbeblocker,
 
 Standardmäßig verwendet AdGuard die „Standard-Route“, die iCloud Private Relay deaktiviert.
 
-Derzeit können AdGuard und iCloud Private Relay nicht gleichzeitig funktionieren. AdGuard kann keine Anzeigen blockieren, da iCloud Private Relay den Datenverkehr verschlüsselt, bevor AdGuard Netzwerkverbindungen filtern kann.  Wenn iCloud Private Relay aktiv ist, wird jegliche Filterung (einschließlich lokaler Filterung) unmöglich. Daher kann AdGuard in Safari keinen Datenverkehr filtern oder eine DNS-Filterung durchführen. Dennoch filtert AdGuard immer noch den Datenverkehr in anderen Browsern. Um iCloud Private Relay weiterhin zu verwenden, sollten Sie [AdGuard für Safari](https://adguard.com/adguard-safari/overview.html) installieren.
+Derzeit können AdGuard und iCloud Private Relay nicht gleichzeitig funktionieren. AdGuard kann keine Anzeigen blockieren, da iCloud Private Relay den Datenverkehr verschlüsselt, bevor AdGuard Netzwerkverbindungen filtern kann. Wenn iCloud Private Relay aktiv ist, wird jegliche Filterung (einschließlich lokaler Filterung) unmöglich. Daher kann AdGuard in Safari keinen Datenverkehr filtern oder eine DNS-Filterung durchführen. Dennoch filtert AdGuard immer noch den Datenverkehr in anderen Browsern. Um iCloud Private Relay weiterhin zu verwenden, sollten Sie [AdGuard für Safari](https://adguard.com/adguard-safari/overview.html) installieren.
 
 Das Gleiche gilt für die Verwendung von VPN-Apps auf dem Mac: Sie müssen sich entscheiden, ob Sie iCloud Private Relay oder einen VPN-Dienst verwenden.
 
@@ -41,7 +41,7 @@ Wir empfehlen die Verwendung von AdGuard zusammen mit einem traditionelleren VPN
 
 ## Alternative Lösung
 
-Sie können verhindern, dass AdGuard die „Standard-Route“ verwendet, indem Sie die „Standard-Route“ deaktivieren.  Dies kann über Erweiterte Einstellungen → `network.extension.monterey.force.split.tunnel` erfolgen.
+Sie können verhindern, dass AdGuard die „Standard-Route“ verwendet, indem Sie die „Standard-Route“ deaktivieren. Dies kann über Erweiterte Einstellungen → `network.extension.monterey.force.split.tunnel` erfolgen.
 
 ![Deaktivieren Sie die Standard-Route in den erweiterten Einstellungen *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/mac_adguard_advanced_settings.jpg)
 

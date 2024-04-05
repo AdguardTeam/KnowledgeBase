@@ -71,4 +71,4 @@ Nella finestra aperta, fai clic su *Aggiungi estensione* per installare l'estens
 
 ## Come installare l'estensione AdGuard per Safari
 
-AdGuard per Safari non è un'estensione del browser nel senso comune. Per saperne di più, consulta [l'articolo dedicato](/adguard-for-safari/overview). Oppure, puoi [scaricare il file d'installazione](https://agrd.io/safari_release) direttamente da questa pagina.
+AdGuard per Safari non è un'estensione del browser nel senso comune. You can read more about it in a [dedicated article](/adguard-for-safari/features/general). Oppure, puoi [scaricare il file d'installazione](https://agrd.io/safari_release) direttamente da questa pagina.

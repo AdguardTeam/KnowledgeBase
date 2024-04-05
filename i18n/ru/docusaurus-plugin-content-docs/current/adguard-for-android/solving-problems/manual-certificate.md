@@ -5,7 +5,7 @@ sidebar_position: 12
 
 :::info
 
-В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -36,7 +36,7 @@ sidebar_position: 12
 
 Всё готово! Когда сертификат будет установлен, HTTPS-фильтрация включится автоматически.
 
-Обратите внимание, что эти шаги описаны на основе навигации смартфона Google Pixel 7. В других устройствах Android названия настроек могут отличаться. Возможно, вам поможет ввести слово «сертификат» или «сертификат Ca» в строке поиска по настройкам.
+Обратите внимание, что эти шаги описаны на основе навигации смартфона Google Pixel 7. В других устройствах Android названия настроек могут отличаться. For easier navigation consider searching for a certificate by entering “certificate” or “credentials” in the settings search bar.
 
 Если у вас возникли проблемы при ручной установке сертификата (например, вы установили сертификат, но приложение продолжает его игнорировать), вы можете воспользоваться одним из решений ниже.
 

@@ -5,7 +5,7 @@ sidebar_position: 3
 
 :::info
 
-Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -17,7 +17,7 @@ There are a lot of tasker apps out there, for example [Tasker](https://play.goog
 
 ![Automation *mobile_border](https://cdn.adtidy.org/blog/new/mmwmfautomation.jpg)
 
-Thanks to this interface, any app can send a special message (called "intent") that contains the name of the action and some additional data, if needed. AdGuard will look at this intent and perform the required actions.
+Thanks to this interface, any app can send a special message (called “intent”) that contains the name of the action and some additional data, if needed. AdGuard will look at this intent and perform the required actions.
 
 ### Security concerns
 
@@ -83,7 +83,7 @@ Or you can configure server parameters manually:
 
 `server:[name]` where `[name]` is the name of the outbound proxy from the list.
 
-Or you  can configure remove parameters manually:
+Or you can configure remove parameters manually:
 
 `server:[type=…&host=…&port=…&username=…&password=…&udp=…&trust=…]`.
 

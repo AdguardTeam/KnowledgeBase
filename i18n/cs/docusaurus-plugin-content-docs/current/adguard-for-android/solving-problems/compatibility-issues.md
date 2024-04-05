@@ -5,7 +5,7 @@ sidebar_position: 16
 
 :::info
 
-Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -16,7 +16,7 @@ Pokud používáte AdGuard v režimu filtrování *Lokální VPN*, nemůžete so
 - Použít [AdGuard VPN](https://adguard-vpn.com/welcome.html) — má *integrovaný režim*, který umožňuje fungování dvou aplikací současně
 - Nakonfigurovat aplikaci VPN tak, aby fungovala jako [odchozí proxy](../solving-problems/outbound-proxy.md) a nastavit místní odchozí proxy server pomocí parametrů z aplikace třetí strany
 - Přepnout do režimu *Automatický proxy*. Když to uděláte, AdGuard již nebude používat lokální VPN a místo toho překonfiguruje iptables
-- Přepnout do režimu *Manuální proxy*. Chcete-li to provést, přejděte do *Nastavení* →  *Filtrování* → *Síť* → *Režim směrování*
+- Přepnout do režimu *Manuální proxy*. Za tímto účelem přejděte do *Nastavení* → *Filtrování* → *Síť* → *Režim směrování*
 
 :::note Kompatibilita
 

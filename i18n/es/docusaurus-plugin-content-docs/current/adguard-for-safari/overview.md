@@ -9,7 +9,7 @@ Este artículo trata sobre AdGuard para Safari, que protege solo tu navegador Sa
 
 :::
 
-AdGuard para Safari fue diseñado para cumplir con las restricciones de Apple para las extensiones de navegador que bloquean anuncios y es el bloqueador de anuncios más popular para Safari. Aunque no se puede comparar con nuestras apps de bloqueo de anuncios para desktop, es gratis y puede protegerte de anuncios, rastreadores, phishing y sitios web maliciosos.
+AdGuard para Safari fue diseñado para cumplir con las restricciones de Apple para las extensiones de navegador que bloquean anuncios y es el bloqueador de anuncios más popular para Safari. Although it can't be compared to our desktop ad blocking apps, it's free and can protect you from ads, trackers, phishing, and malicious websites.
 
 ## General {#general}
 
@@ -35,7 +35,7 @@ En la pestaña Filtros, puedes habilitar toda la categoría o filtros separados.
 
 Un bloqueador de contenido es un grupo temático de filtros. Los filtros relacionados con la privacidad se incluyen en el bloqueador de contenido con el nombre correspondiente: *AdGuard - Privacidad*.
 
-Los bloqueadores de contenido se crearon por dos razones: estructurar filtros y cumplir con las restricciones de Apple.
+Content Blockers were designed for two reasons: to structure filters and to conform to Apple's restrictions.
 
 [En 2019](https://adguard.com/en/blog/adguard-safari-1-5.html), Apple impuso limitaciones a los bloqueadores de anuncios para Safari, permitiéndoles usar solo 50.000 reglas de filtrado simultáneamente. Como este número no era suficiente para que un bloqueador de anuncios proporcionara una buena calidad de filtrado (el filtro base de AdGuard tiene 30.000 reglas de filtrado), dividimos AdGuard para Safari en seis bloqueadores de contenido, cada uno con hasta 50.000 reglas.
 
@@ -73,7 +73,7 @@ Este bloqueador de contenidos reúne varios filtros relacionados con la segurida
 
 :::note Descargo de responsabilidad
 
-No tenemos ningún 'anuncio aceptable' pagado por los anunciantes. En su lugar, ofrecemos a los usuarios la opción de ver [anuncios de búsqueda y autopromoción de sitios web](/general/ad-filtering/search-ads).
+We don't have any 'acceptable ads' paid by advertisers. En su lugar, ofrecemos a los usuarios la opción de ver [anuncios de búsqueda y autopromoción de sitios web](/general/ad-filtering/search-ads).
 
 :::
 

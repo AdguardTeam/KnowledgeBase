@@ -7,7 +7,7 @@ Bu sayfada AdGuard'ın politika ve tercihlere ilişkin merkezi yönetiminin öze
 
 ## 1. MSI'ı indirin {#msi-download}
 
-[AdGuard MSI'yı](https://static.adtidy.org/windows/setup.msi) indirin.
+[AdGuard MSI x86'yı indirin](https://cdn.adtidy.org/distr/windows/AdGuard_x86.msi) [AdGuard MSI x64'ü indirin](https://cdn.adtidy.org/distr/windows/AdGuard_x64.msi)
 
 ## 2. Ağınız için ayarları yapılandırın {#settings-configuring}
 
@@ -35,13 +35,17 @@ You must run these commands with admin privileges.
 
 AdGuard'ı Windows 7 yüklü bir bilgisayara kurmak istiyorsanız, .NET 4 İstemci Profilinin kurulu olduğundan emin olun: https://www.microsoft.com/en-us/download/details.aspx?id=24872
 
-:::bilgi
-
-Windows için AdGuard v7.17 ile başlayarak, uygulamayı MSI'dan kurduğunuzda otomatik güncellemeler varsayılan olarak etkinleştirilir. Windows için AdGuard'ın merkezi olarak güncellenmesi için bir kullanıcı için güncellemeleri devre dışı bırakmanızı öneririz. Bunu yapmak için, aşağıdaki yolda bulunan ForbidCheckUpdates=Yes anahtarını ekleyin: HKEY_LOCAL_MACHINE\SOFTWARE\Adguard.
-
-Windows için AdGuard'ın eski sürümlerinde otomatik güncellemeler varsayılan olarak devre dışıdır. Bir kullanıcı için güncellemelere izin vermek için, `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` anahtarı için `AllowCheckUpdates` parametresinin değerini `YES` (büyük/küçük harfe duyarlı değil) olarak ayarlayın.
-
 :::not
+
+Windows için AdGuard'ı bir MSI dosyasından kurduysanız, AdGuard otomatik olarak güncellenmeyecektir. Elle güncellemelere izin vermek için:
+
+- v7.16'dan sonra yayınlanan sürümlerde, `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard` altındaki kayıt defterinde `ForbidCheckUpdates` parametresini silin veya değerini `NO` (büyük/küçük harfe duyarlı değil) olarak ayarlayın.
+
+- v7.16 ve önceki sürümlerde, x86 işletim sisteminde `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard` anahtarı veya `x64 işletim sisteminde HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` anahtarı için `AllowCheckUpdates` parametresini `YES` (büyük/küçük harf duyarsız) olarak ayarlayın. Bu parametre için başka herhangi bir değer veya hiçbir değer olmaması otomatik güncellemeleri devre dışı bırakır.
+
+Uygulamanın bu şekilde kurulmasının ve elle güncellemelerin tavsiye edilmediğini ve teknik sorunlara neden olabileceğini lütfen unutmayın.
+
+:::
 
 ## 5. Test your installation {#installation-test}
 
