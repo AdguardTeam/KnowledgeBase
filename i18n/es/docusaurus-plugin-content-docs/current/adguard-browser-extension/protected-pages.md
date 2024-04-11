@@ -9,11 +9,9 @@ Este artículo trata sobre la extensión de navegador AdGuard, que protege solo 
 
 :::
 
-## Páginas protegidas por el navegador
-
 Cuando se utiliza una extensión web como la extensión de navegador AdGuard, existen ciertos dominios restringidos que prohíben el acceso o los permisos. Como resultado, las extensiones de bloqueo de anuncios no pueden interactuar ni modificar el contenido de estas páginas. Es decir, no se les permite bloquear anuncios y otros elementos molestos en estas páginas web.
 
-### Restricciones de navegador Chromium
+## Restricciones de navegador Chromium
 
 Los navegadores basados en Chromium, como Google Chrome, mantienen una lista de dominios restringidos a los que las extensiones no pueden acceder. Estos dominios incluyen:
 
@@ -27,7 +25,7 @@ Los navegadores basados en Chromium, como Google Chrome, mantienen una lista de 
 - Páginas de error como errores 404 y errores de red
 - URLs que comienzan con `view-source:` o `data:`
 
-### Restricciones del navegador Firefox
+## Restricciones del navegador Firefox
 
 De manera similar, el navegador Firefox tiene su propio conjunto de dominios restringidos donde no se permite el funcionamiento de extensiones. Estos dominios restringidos incluyen:
 
@@ -44,7 +42,7 @@ De manera similar, el navegador Firefox tiene su propio conjunto de dominios res
 - support.mozilla.org
 - sync.services.mozilla.com
 
-### Modificar las restricciones en Firefox
+## Modificar las restricciones en Firefox
 
 Cambiar la configuración avanzada puede afectar la estabilidad y seguridad de Firefox. Esto se recomienda sólo para usuarios avanzados. Si conoces el riesgo asociado y aún deseas habilitar complementos no permitidos en una página protegida, sigue los pasos a continuación:
 

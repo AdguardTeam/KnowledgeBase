@@ -1,5 +1,5 @@
 ---
-title: User rules
+title: Regole utente
 sidebar_position: 4
 ---
 

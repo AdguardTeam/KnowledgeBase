@@ -1,6 +1,6 @@
 ---
 title: Visão geral dos recursos
-sidebar_position: 1
+sidebar_position: 10
 ---
 
 :::info
@@ -9,7 +9,7 @@ Este artigo é sobre a extensão de navegador AdGuard, que protege apenas o seu 
 
 :::
 
-AdGuard oferece uma variedade de produtos de software que bloqueiam anúncios e rastreadores em diferentes plataformas. Um dos produtos AdGuard mais procurados é uma extensão gratuita que funciona em cinco navegadores populares: Chrome, Firefox, Edge, Opera e Yandex Browser. Browser extensions include basic ad-blocking features but cannot be compared with full-featured desktop programs, such as [AdGuard for Windows](/adguard-for-windows/features/home-screen) and [AdGuard for Mac](/adguard-for-mac/overview).
+AdGuard oferece uma variedade de produtos de software que bloqueiam anúncios e rastreadores em diferentes plataformas. Um dos produtos AdGuard mais procurados é uma extensão gratuita que funciona em cinco navegadores populares: Chrome, Firefox, Edge, Opera e Yandex Browser. Browser extensions include basic ad-blocking features but cannot be compared with full-featured desktop programs, such as [AdGuard for Windows](/adguard-for-windows/features/home-screen) and [AdGuard for Mac](/adguard-for-mac/features/main).
 
 ![Extensão de navegador AdGuard para Chrome *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
 

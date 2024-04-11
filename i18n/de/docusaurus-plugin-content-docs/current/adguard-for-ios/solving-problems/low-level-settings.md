@@ -43,7 +43,7 @@ In this module you can select the way AdGuard will respond to DNS queries that s
 - Unspecified IP — respond with zero IP address
 - Custom IP — respond with a manually set IP address
 
-### IPv6 sperren
+### Block IPv6
 
 By moving the toggle to the right, you activate the blocking of IPv6 queries (AAAA requests). AAAA-type DNS requests will not be resolved, hence only IPv4 queries can be processed.
 

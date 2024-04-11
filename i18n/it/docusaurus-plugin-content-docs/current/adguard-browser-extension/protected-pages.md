@@ -9,11 +9,9 @@ Questo articolo riguarda l'Estensione di browser AdGuard, che protegge solo il t
 
 :::
 
-## Pagine protette dal browser
-
 Utilizzando un'estensione web come l'Estenzione di browser AdGuard, esistono dei domini limitati che proibiscono l'accesso o le autorizzazioni. Di conseguenza, le estensioni di blocco degli annunci non possono interagire con o modificarre i contenuti di tali pagine. In altre parole, non sono autorizzati a bloccare gli annunci e altri elementi fastidiosi su tali pagine web.
 
-### Limitazioni del browser di Chromium
+## Limitazioni del browser di Chromium
 
 I browser basati su Chromium, come Google Chrome, mantengono un elenco di domini limitati a cui le estensioni non possono accedere. Questi domini includono:
 
@@ -27,7 +25,7 @@ I browser basati su Chromium, come Google Chrome, mantengono un elenco di domini
 - Pagine di errore come gli errori 404 e gli errori di rete
 - URL che iniziano per `view-source:` o `data:`
 
-### Limitazioni del browser Firefox
+## Limitazioni del browser Firefox
 
 Similmente, il browser di Firefox ha la propria serie di domini limitati, dove le estensioni non possono operare. Questi domini limitati includono:
 
@@ -44,7 +42,7 @@ Similmente, il browser di Firefox ha la propria serie di domini limitati, dove l
 - support.mozilla.org
 - sync.services.mozilla.com
 
-### Modificare le limitazioni su Firefox
+## Modificare le limitazioni su Firefox
 
 Modificare le impostazioni avanzate può influire sulla stabilità e la sicurezza di Firefox. Questo è consigliato solo agli utenti esperti. Se sei consapevole dei rischi associati e desideri comunque abilitare gli componenti aggiuntivi non consentiti su una pagina protetta, segui i seguenti passaggi:
 

@@ -1,15 +1,15 @@
 ---
-title: Filters
+title: 필터
 sidebar_position: 3
 ---
 
 :::info
 
-이 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Mac용 AdGuard에 대해 다룹니다. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
-## Filters
+## 필터
 
 ![Filters](https://cdn.adtidy.org/content/kb/ad_blocker/mac/filters.png)
 
@@ -26,7 +26,7 @@ These filters are important for blocking most ads, trackers, and annoying elemen
 
 To add a filter, click `+` in the lower left corner of the list. To enable a filter, select its checkbox.
 
-## User rules
+## 사용자 규칙
 
 In AdGuard for Mac, user rules are located in _Filters_. To create a rule, click `+`. To enable a rule, select its checkbox. To export or import rules, open the context menu.
 

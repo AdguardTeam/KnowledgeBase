@@ -1,6 +1,6 @@
 ---
 title: 功能概览
-sidebar_position: 1
+sidebar_position: 10
 ---
 
 :::info
@@ -9,7 +9,7 @@ sidebar_position: 1
 
 :::
 
-AdGuard provides a range of software products that block ads and trackers on different platforms. One of the most popular AdGuard products is a free extension that works in five popular browsers: Chrome, Firefox, Edge, Opera, and Yandex Browser. Browser extensions include basic ad-blocking features but cannot be compared with full-featured desktop programs, such as [AdGuard for Windows](/adguard-for-windows/features/home-screen) and [AdGuard for Mac](/adguard-for-mac/overview).
+AdGuard provides a range of software products that block ads and trackers on different platforms. One of the most popular AdGuard products is a free extension that works in five popular browsers: Chrome, Firefox, Edge, Opera, and Yandex Browser. Browser extensions include basic ad-blocking features but cannot be compared with full-featured desktop programs, such as [AdGuard for Windows](/adguard-for-windows/features/home-screen) and [AdGuard for Mac](/adguard-for-mac/features/main).
 
 ![AdGuard Browser Extension for Chrome *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
 
@@ -31,7 +31,7 @@ We have a standalone extension for Safari. Since the release of [Safari 13](http
 
 Blocking ads is clearly the key functionality of any ad blocker, and AdGuard is not an exception. The extension will successfully block ads on any page in your browser. Ad blocking is based on so-called filter lists, or simply [filters](/general/ad-filtering/how-ad-blocking-works). Filters can be enabled or disabled in your extension's settings. You can customize ad blocking by activating specific filters.
 
-### 过滤器 {#filters}
+### Filters {#filters}
 
 In essence, filter lists are sets of rules written in a special language. Your ad blocker interpretes the rules and implements them. As a result, you stop seeing ads on your webpages.
 
@@ -53,7 +53,7 @@ To add a filter, just click *Add custom filter*, enter the URL or the file path 
 
 ![Add a custom filter *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
 
-### 用户规则 {#user-rules}
+### User rules {#user-rules}
 
 *User rules* is another tool that helps you customize the blocking of ads.
 

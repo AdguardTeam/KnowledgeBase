@@ -3,6 +3,12 @@ title: Режим интеграции (старая версия)
 sidebar_position: 3
 ---
 
+:::info
+
+Эта статья о Браузерном расширении AdGuard, которое защищает только ваш браузер. Чтобы защитить всё устройство, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
+
+:::
+
 ## Что такое режим интеграции?
 
 В старых версиях Браузерного расширения AdGuard, если оно было установлено вместе с одним из десктопных приложений AdGuard (для Windows или для Mac), расширение брало на себя функции Помощника AdGuard — инструмента, который помогал управлять фильтрацией прямо с веб-страницы. При этом сама блокировка рекламы полностью находилась под контролем десктопного приложения, расширение и его настройки не играли в этом никакой роли.
@@ -13,6 +19,6 @@ sidebar_position: 3
 
 ![Браузерный помощник AdGuard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/ad_blocker_browser_extension_assistant.png)
 
-Браузерный помощник AdGuard — новое браузерное расширение, которое в своей работе ощущается и ведёт себя как режим интеграции, но намного легче, потому что не дублирует функции приложения AdGuard и не конфликтует с ним. Вы можете [прочитать больше о Браузерном помощнике для Windows](/adguard-for-windows/browser-assistant) и [Mac](/adguard-for-mac/browser-assistant) или [скачать его с нашего сайта](https://adguard.com/adguard-assistant/overview.html).
+Браузерный помощник AdGuard — новое браузерное расширение, которое в своей работе ощущается и ведёт себя как режим интеграции, но намного легче, потому что не дублирует функции приложения AdGuard и не конфликтует с ним. You can [read more about Browser Assistant for Windows](/adguard-for-windows/browser-assistant) or [Mac](/adguard-for-mac/features/browser-assistant), or [download it from our website](https://adguard.com/adguard-assistant/overview.html).
 
 Браузерный помощник AdGuard доступен во всех основных браузерах.

@@ -1,5 +1,5 @@
 ---
-title: Помощник
+title: Помощник *mobile
 sidebar_position: 5
 ---
 
