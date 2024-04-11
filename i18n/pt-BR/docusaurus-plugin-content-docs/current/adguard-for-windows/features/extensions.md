@@ -1,5 +1,5 @@
 ---
-title: Extensions
+title: Extensões
 sidebar_position: 3
 ---
 

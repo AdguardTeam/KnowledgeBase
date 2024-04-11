@@ -53,7 +53,7 @@ Para informar sobre la reinserción de un anuncio o la visualización incorrecta
 
 ### Mac {#mac}
 
-- Abre [AdGuard Browser Assistant](/adguard-for-mac/browser-assistant) y presiona **Reportar un problema**:
+- Open [AdGuard Browser Assistant](/adguard-for-mac/features/browser-assistant) and hit **Report an issue**:
 
 ![mac *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/guides/browser-assistant-mac.png)
 

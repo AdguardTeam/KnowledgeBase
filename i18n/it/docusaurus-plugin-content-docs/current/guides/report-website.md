@@ -53,7 +53,7 @@ Per segnalare il reinserimento di un annuncio o l'errata visualizzazione di un s
 
 ### Mac {#mac}
 
-- Apri [AdGuard Browser Assistant](/adguard-for-mac/browser-assistant) e clicca su **Segnala un problema**:
+- Open [AdGuard Browser Assistant](/adguard-for-mac/features/browser-assistant) and hit **Report an issue**:
 
 ![mac *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/guides/browser-assistant-mac.png)
 

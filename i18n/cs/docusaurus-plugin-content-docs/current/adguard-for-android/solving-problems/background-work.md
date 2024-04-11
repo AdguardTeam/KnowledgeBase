@@ -519,7 +519,7 @@ Zařízení Wiko jsou problematická z hlediska nestandardních optimalizací pr
 - Vraťte se zpět a přejděte do sekce **Ruční režim**
 - Klepněte na ikonu **Ozubeného kola** vpravo nahoře → **Seznam povolených aplikací na pozadí** → Vyberte **AdGuard**
 
-## Android stock devices Pixel/Nexus/Nubia/Essential
+## Zařízení Pixel/Nexus/Nubia/Essential
 
 Čistý operační systém Android obvykle není v konfliktu s aplikacemi pracujícími na pozadí, ale pokud se potýkáte s nějakými problémy, musíte zapnout režim **Trvalá síť VPN**.
 

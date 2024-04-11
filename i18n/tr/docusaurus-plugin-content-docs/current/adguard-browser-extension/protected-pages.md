@@ -9,11 +9,9 @@ Bu makale, yalnızca tarayıcınızı koruyan AdGuard Tarayıcı Uzantısı hakk
 
 :::
 
-## Tarayıcı korumalı sayfalar
-
 AdGuard Tarayıcı Uzantısı gibi bir web uzantısını kullanırken, erişimi veya izinleri yasaklayan belirli kısıtlı alanlar vardır. Sonuç olarak, reklam engelleme uzantılarının bu sayfaların içeriğiyle etkileşime girmesine veya bunları değiştirmesine izin verilmez. Başka bir deyişle, bu web sayfalarındaki reklamları ve diğer can sıkıcı öğeleri engellemelerine izin verilmez.
 
-### Chromium tarayıcı kısıtlamaları
+## Chromium tarayıcı kısıtlamaları
 
 Google Chrome gibi Chromium tabanlı tarayıcılar, uzantıların erişmesine izin verilmeyen kısıtlı alan adlarının bir listesini tutar. Bu alan adları şunları içerir:
 
@@ -27,7 +25,7 @@ Google Chrome gibi Chromium tabanlı tarayıcılar, uzantıların erişmesine iz
 - 404 hataları ve ağ hataları gibi hata sayfaları
 - `view-source:` veya `data:` ile başlayan URL'ler
 
-### Firefox tarayıcı kısıtlamaları
+## Firefox tarayıcı kısıtlamaları
 
 Benzer şekilde, Firefox tarayıcısı da uzantıların çalışmasına izin verilmeyen kendi kısıtlı alan adlarına sahiptir. Bu kısıtlı alan adları şunları içerir:
 
@@ -44,7 +42,7 @@ Benzer şekilde, Firefox tarayıcısı da uzantıların çalışmasına izin ver
 - support.mozilla.org
 - sync.services.mozilla.com
 
-### Firefox'ta kısıtlamaları değiştirme
+## Firefox'ta kısıtlamaları değiştirme
 
 Gelişmiş ayarların değiştirilmesi Firefox'un kararlılığını ve güvenliğini etkileyebilir. Bu yalnızca ileri düzey kullanıcılar için önerilir. İlgili riskin farkındaysanız ve yine de korumalı bir sayfada izin verilmeyen eklentileri etkinleştirmek istiyorsanız aşağıdaki adımları izleyin:
 

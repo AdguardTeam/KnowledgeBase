@@ -1,5 +1,5 @@
 ---
-title: Extensions
+title: 浏览器扩展
 sidebar_position: 3
 ---
 

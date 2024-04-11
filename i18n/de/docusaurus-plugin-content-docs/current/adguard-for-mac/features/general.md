@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-Dieser Artikel behandelt AdGuard für Mac, einen multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -35,6 +35,6 @@ This feature automatically launches AdGuard automatically after you restart your
 
 This feature hides AdGuard’s icon from the menu bar but keeps AdGuard running in the background. If you want to disable AdGuard completely, click _Quit AdGuard_ in the main window menu.
 
-### Positivliste
+### Allowlist
 
 Websites added to this list aren’t filtered. You can also access allowlisted websites from _User rules_.

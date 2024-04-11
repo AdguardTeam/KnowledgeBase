@@ -53,7 +53,7 @@ You can help us by filling in a form with examples of ads you have encountered. 
 
 ### Mac {#mac}
 
-- [AdGuard 브라우저 어시스턴트](/adguard-for-mac/browser-assistant)를 열고 **문제 신고하기**를 누릅니다.
+- Open [AdGuard Browser Assistant](/adguard-for-mac/features/browser-assistant) and hit **Report an issue**:
 
 ![mac *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/guides/browser-assistant-mac.png)
 

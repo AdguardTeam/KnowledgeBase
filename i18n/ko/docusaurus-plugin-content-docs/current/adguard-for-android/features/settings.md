@@ -41,7 +41,7 @@ This section allows you to manage HTTPS filtering settings, filters, and userscr
 
 ![Filtering \*mobile\_border](https://cdn.adtidy.org/blog/new/7v5c6filtering.png)
 
-### Filters
+### 필터
 
 AdGuard blocks ads, trackers, and annoyances by applying rules from its filters. Most features from the _Protection_ section are powered by [AdGuard filters](/general/ad-filtering/adguard-filters/#adguard-filters). If you enable _Basic protection_, it will automatically turn on the AdGuard Base filter and AdGuard Mobile Ads filter. And vice versa: if you turn off both filters, _Basic protection_ will also be disabled.
 

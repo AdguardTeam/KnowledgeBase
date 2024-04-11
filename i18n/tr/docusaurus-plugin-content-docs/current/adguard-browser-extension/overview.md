@@ -1,6 +1,6 @@
 ---
 title: Özelliklere genel bakış
-sidebar_position: 1
+sidebar_position: 10
 ---
 
 :::bilgi
@@ -9,7 +9,7 @@ Bu makale, yalnızca tarayıcınızı koruyan AdGuard Tarayıcı Uzantısı hakk
 
 :::
 
-AdGuard, farklı platformlarda reklamları ve izleyicileri engelleyen bir dizi yazılım ürünü sunar. En popüler AdGuard ürünlerinden biri, beş popüler tarayıcıda çalışan ücretsiz bir uzantıdır: Chrome, Firefox, Edge, Opera ve Yandex Browser. Tarayıcı uzantıları temel reklam engelleme özelliklerini içerir ancak [Windows için AdGuard](/adguard-for-windows/features/home-screen) ve [Mac için AdGuard](/adguard-for-mac/overview) gibi tam özellikli masaüstü programlarıyla karşılaştırılamaz.
+AdGuard, farklı platformlarda reklamları ve izleyicileri engelleyen bir dizi yazılım ürünü sunar. En popüler AdGuard ürünlerinden biri, beş popüler tarayıcıda çalışan ücretsiz bir uzantıdır: Chrome, Firefox, Edge, Opera ve Yandex Browser. Browser extensions include basic ad-blocking features but cannot be compared with full-featured desktop programs, such as [AdGuard for Windows](/adguard-for-windows/features/home-screen) and [AdGuard for Mac](/adguard-for-mac/features/main).
 
 ![Chrome için AdGuard Tarayıcı Uzantısı *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
 

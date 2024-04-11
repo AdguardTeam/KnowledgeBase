@@ -49,7 +49,7 @@ Before you start manually writing your own rules read our detailed [syntax guide
 
 To learn everything about Stealth Mode and its many options, [read this article](/general/stealth-mode).
 
-### Антифишинг
+### Защита от фишинга
 
 Browsing Security gives strong protection against malicious and phishing websites. Нет, AdGuard для Windows — это не антивирус. Он не остановит загрузку вируса, если она уже началась, и не удалит уже существующие вирусы. Но он предупредит вас, если вы собираетесь перейти на сайт, домен которого был добавлен в нашу базу «ненадёжных сайтов», или загрузить файл с такого сайта. You can find more information about how this module works in the [dedicated article](/general/browsing-security).
 

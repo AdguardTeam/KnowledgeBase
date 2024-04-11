@@ -53,7 +53,7 @@ sidebar_position: 3
 
 ### AdGuard for Mac の場合 {#mac}
 
-- [AdGuardブラウザアシスタント](/adguard-for-mac/browser-assistant)を開き、 「**不具合・問題を報告する**」を押す
+- Open [AdGuard Browser Assistant](/adguard-for-mac/features/browser-assistant) and hit **Report an issue**:
 
 ![mac *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/report-website-ja-2.png)
 

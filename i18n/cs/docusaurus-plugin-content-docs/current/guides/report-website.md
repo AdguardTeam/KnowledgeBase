@@ -53,7 +53,7 @@ Chcete-li nahlásit opakované vložení reklamy nebo nesprávné zobrazení web
 
 ### Mac {#mac}
 
-- Otevřete [AdGuard Asistenta prohlížeče](/adguard-for-mac/browser-assistant) a stiskněte **Nahlásit problém**:
+- Open [AdGuard Browser Assistant](/adguard-for-mac/features/browser-assistant) and hit **Report an issue**:
 
 ![mac *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/guides/browser-assistant-mac.png)
 

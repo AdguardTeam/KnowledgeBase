@@ -1,5 +1,5 @@
 ---
-title: Features overview
+title: 機能概要
 sidebar_position: 1
 ---
 
