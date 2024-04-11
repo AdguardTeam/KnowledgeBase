@@ -25,6 +25,6 @@ In some cases, filtering may not work and ads may still be displayed even though
 9. Click _Check for updates_.
 10. Do not close the AdGuard for Safari window until the filters are updated.
 
-If this doesn’t help and ads are still not being blocked, please contact our support at support\@adguard.com.
+If this doesn’t help and ads are still not being blocked, please contact our support at support@adguard.com.
 
 If you only have problems with a specific page or website, you can report it directly from the browser: click the AdGuard for Safari icon next to the Safari search bar, and then click _Report an issue_.

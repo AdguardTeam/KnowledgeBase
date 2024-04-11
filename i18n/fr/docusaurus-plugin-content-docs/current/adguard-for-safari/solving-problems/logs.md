@@ -17,8 +17,8 @@ Pour analyser et diagnostiquer les divers problèmes pouvant survenir avec AdGua
 2. Faites défiler vers le bas et cliquez sur _Exporter les journaux_.
 3. Choisissez un emplacement pour enregistrer le fichier .zip et cliquez sur _Enregistrer_.
 
-Vous pouvez maintenant envoyer ce fichier à support\@adguard.com ou le joindre à votre rapport de bug sur GitHub :
+Vous pouvez maintenant envoyer ce fichier à support@adguard.com ou le joindre à votre rapport de bug sur GitHub :
 
 1. Ouvrez le [dépôt GitHub AdGuard pour Safari](https://github.com/AdguardTeam/AdGuardForSafari/issues) et cliquez sur _Nouveau problème_.
-2. Envoyez le fichier journal à devteam\@adguard.com. Indiquez la date du bogue et joignez un lien vers votre problème ou son numéro (il apparaît sous la forme #number à côté du titre).
-   Vous pouvez également télécharger le fichier journal sur Google Drive et l'envoyer à devteam\@adguard.com. Ajoutez le lien du fichier à votre problème GitHub.
+2. Envoyez le fichier journal à devteam@adguard.com. Indiquez la date du bogue et joignez un lien vers votre problème ou son numéro (il apparaît sous la forme #number à côté du titre).
+   Vous pouvez également télécharger le fichier journal sur Google Drive et l'envoyer à devteam@adguard.com. Ajoutez le lien du fichier à votre problème GitHub.

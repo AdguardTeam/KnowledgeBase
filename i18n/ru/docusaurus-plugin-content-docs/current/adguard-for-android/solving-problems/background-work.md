@@ -519,7 +519,7 @@ Nokia devices running Android 9+ have **The Evenwell Power saver** disabled, whi
 - Вернитесь в предыдущее меню и перейдите в **Ручной режим**
 - Нажмите на значок **шестерёнки** в правом верхнем углу → **Белый список фоновых приложений** → выберите **AdGuard**
 
-## Стандартные устройства Pixel/Nexus/Essential на базе Android
+## Android stock devices Pixel/Nexus/Nubia/Essential
 
 Android на заводской прошивке, как правило, не конфликтует с фоновыми процессами, но если вы всё же столкнулись с проблемой фоновой работы, включите режим **Always-on VPN**.
 

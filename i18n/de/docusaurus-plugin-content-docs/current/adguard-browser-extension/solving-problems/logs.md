@@ -54,4 +54,4 @@ sidebar_position: 1
 Nachdem Sie die Protokolle zusammengestellt haben, folgen Sie bitte diesen Schritten, um diese an unser Entwicklungsteam zu übermitteln:
 
 1. Melden Sie den Fehler auf [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose).
-2. Senden Sie Ihr Archiv mit den Protokollen und der Aufzeichnungszeit an „devteam\@adguard.com“ und fügen Sie einen Link zu Ihrem GitHub-Problem hinzu. Sie können das Archiv auch in Google Drive hochladen und den Link hinzufügen, anstatt die Datei anzuhängen.
+2. Senden Sie Ihr Archiv mit den Protokollen und der Aufzeichnungszeit an „devteam@adguard.com“ und fügen Sie einen Link zu Ihrem GitHub-Problem hinzu. Sie können das Archiv auch in Google Drive hochladen und den Link hinzufügen, anstatt die Datei anzuhängen.

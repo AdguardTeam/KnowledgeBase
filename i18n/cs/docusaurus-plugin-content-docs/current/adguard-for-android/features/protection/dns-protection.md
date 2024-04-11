@@ -5,25 +5,25 @@ sidebar_position: 4
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Chcete-li se podívat, jak to funguje, [stáhněte si AdGuard pro Android](https://agrd.io/download-kb-adblock)
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li se podívat, jak to funguje, [stáhněte si AdGuard pro Android](https://agrd.io/download-kb-adblock)
 
 :::
 
-The DNS protection module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _DNS protection_.
+K modulu DNS ochrana se dostanete klepnutím na kartu _Ochrana_ (druhá ikona vlevo dole na obrazovce) a výběrem možnosti _DNS ochrana_.
 
 :::tip
 
-DNS protection works differently from regular ad and tracker blocking. You cam [learn more about it and how it works from a dedicated article](https://adguard-dns.io/kb/general/dns-filtering/#how-does-dns-filtering-work)
+DNS ochrana funguje jinak než běžné blokování reklam a slídičů. [Více informací o tom, jak to funguje, najdete ve vyhrazeném článku](https://adguard-dns.io/kb/general/dns-filtering/#how-does-dns-filtering-work)
 
 :::
 
-_DNS protection_ allows you to filter DNS requests with the help of a selected DNS server, DNS filters, and user rules:
+_DNS ochrana_ umožňuje filtrovat DNS požadavky pomocí vybraného DNS serveru, DNS filtrů a uživatelských pravidel:
 
 - Některé DNS servery mají seznamy blokování, které pomáhají blokovat DNS požadavky na potenciálně škodlivé domény
 
 - Kromě DNS serverů může AdGuard filtrovat DNS požadavky sám pomocí speciálního DNS filtru. Obsahuje velký seznam reklamních a sledovacích domén — požadavky na ně jsou přesměrovány do "černé díry" serveru
 
-- Domény můžete také blokovat a odblokovat vytvořením uživatelských pravidel. You might need to consult our article about [DNS filtering rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/)
+- Domény můžete také blokovat a odblokovat vytvořením uživatelských pravidel. Možná si budete muset přečíst náš článek o [syntaxi pravidel filtrování DNS] (https://adguard-dns.io/kb/general/dns-filtering-syntax/)
 
 ![DNS protection \*mobile\_border](https://cdn.adtidy.org/blog/new/u8qtxdns_protection.png)
 
@@ -31,14 +31,14 @@ _DNS protection_ allows you to filter DNS requests with the help of a selected D
 
 V této části můžete vybrat DNS server pro řešení DNS požadavků, blokování reklam a slídičů a šifrování DNS přenosů. Klepnutím na server si přečtěte jeho celý popis a vyberte protokol. Pokud jste požadovaný server nenašli, můžete jej přidat ručně:
 
-- Tap _Add DNS server_ and enter the server address (or addresses)
+- Klepněte na _Přidat DNS server_ a zadejte adresu serveru (nebo adresy)
 
-- Alternatively, you can select a DNS server from the [list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/) and tap _Add to AdGuard_ next to it
+- Případně můžete vybrat DNS server ze [seznamu známých poskytovatelů DNS](https://adguard-dns.io/kb/general/dns-providers/) a klepnout na _Přidat do AdGuardu_ vedle něj
 
-- If you're using a private AdGuard DNS server, you can add it to AdGuard from the [dashboard](https://adguard-dns.io/dashboard/)
+- Pokud používáte soukromý server AdGuard DNS, můžete jej přidat do AdGuardu z [přehledu](https://adguard-dns.io/dashboard/)
 
-By default, _Automatic DNS_ is selected. Nastaví DNS server na základě AdGuardu a nastavení zařízení. If you have [integration with AdGuard VPN](/adguard-for-android/features/integration-with-vpn) or another SOCKS5 proxy enabled, it connects to _AdGuard DNS Non-filtering_ or any other server you specify. Ve všech ostatních případech se připojuje k DNS serveru vybranému v nastavení zařízení.
+Ve výchozím nastavení je vybrán _Automatický DNS_. Nastaví DNS server na základě AdGuardu a nastavení zařízení. Pokud máte povolenou [integraci s AdGuard VPN](/adguard-for-android/features/integration-with-vpn) nebo jiný proxy server SOCKS5, připojí se k _AdGuard DNS Non-filtering_ nebo k jinému serveru, který zadáte. Ve všech ostatních případech se připojuje k DNS serveru vybranému v nastavení zařízení.
 
 #### DNS filtry
 
-Tato část umožňuje přidávat vlastní DNS filtry a pravidla DNS filtrování. You can find more filters at [filterlists.com](https://filterlists.com/).
+Tato část umožňuje přidávat vlastní DNS filtry a pravidla DNS filtrování. Další filtry najdete na [filterlists.com](https://filterlists.com/).

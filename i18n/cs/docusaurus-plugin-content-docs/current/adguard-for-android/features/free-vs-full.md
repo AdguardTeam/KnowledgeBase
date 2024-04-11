@@ -1,11 +1,11 @@
 ---
-title: Free vs. full version
+title: Bezplatná vs. plná verze
 sidebar_position: 6
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Chcete-li se podívat, jak to funguje, [stáhněte si AdGuard pro Android](https://agrd.io/download-kb-adblock)
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li se podívat, jak to funguje, [stáhněte si AdGuard pro Android](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -13,7 +13,7 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 AdGuard pro Android má bezplatnou a placenou verzi. Placené funkce rozšiřují možnosti AdGuardu:
 
-- _Ad blocking in apps_ allows you to block ads in non-browser apps. You can specify apps for filtering in [_App management_](/adguard-for-android/features/app-management)
+- _Blokování reklam v aplikacích_ umožňuje blokovat reklamy v aplikacích, které nevyužívají prohlížeč. Aplikace pro filtrování můžete zadat v nabídce [_Správa aplikací_](/adguard-for-android/features/app-management)
 
 :::note
 
@@ -21,12 +21,12 @@ AdGuard používá k blokování reklam ve videích YouTube vlastní přehráva�
 
 :::
 
-- _Tracking protection_ increases your privacy by blocking tracking requests, online counters, UTM tags, analytics systems, and more. [More about Tracking protection](/adguard-for-android/features/protection/tracking-protection)
+- _Ochrana před sledováním_ zvyšuje vaše soukromí tím, že blokuje požadavky na sledování, online čítače, značky UTM, analytické systémy a další. [Více o ochraně před sledováním](/adguard-for-android/features/protection/tracking-protection)
 
-- _Browsing Security_ warns you if you're about to visit a potentially dangerous website. [More about Browsing Security](/adguard-for-android/features/protection/browsing-security)
+- _Bezpečné prohlížení_ vás upozorní, pokud se chystáte navštívit potenciálně nebezpečnou webovou stránku. [Více o bezpečném prohlížení](/adguard-for-android/features/protection/browsing-security)
 
-- _Custom filters and user rules_ allow you to add your own filtering rules and third-party filters to fine-tune ad blocking. [More about filters](/adguard-for-android/features/settings#filters)
+- _Vlastní filtry a uživatelská pravidla_ vám umožňují přidávat vlastní pravidla filtrování a filtry třetích stran pro vylepšení blokování reklam. [Více o filtrech](/adguard-for-android/features/settings#filters)
 
-- _Userscripts_ allow you to extend the functionality of the browser and use [AdGuard Extra](/adguard-for-android/features/settings#adguard-extra) that prevents ad reinjection. [More about userscripts](/adguard-for-android/features/settings#userscripts)
+- _Uživatelské skripty_ umožňují rozšířit funkčnost prohlížeče a používat [AdGuard Extra](/adguard-for-android/features/settings#adguard-extra), který zabraňuje opětovnému vkládání reklamy. [Více o uživatelských skriptech](/adguard-for-android/features/settings#userscripts)
 
-You can get access to these features by [purchasing a license](https://adguard.com/license.html). [How to activate a license](/general/license/activation/#activating-adguard-for-android)
+Přístup k těmto funkcím získáte [zakoupením licence](https://adguard.com/license.html). [Jak aktivovat licenci](/general/license/activation/#activating-adguard-for-android)

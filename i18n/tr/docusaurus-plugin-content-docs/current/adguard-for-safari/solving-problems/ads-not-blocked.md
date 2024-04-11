@@ -25,6 +25,6 @@ In some cases, filtering may not work and ads may still be displayed even though
 9. Click _Check for updates_.
 10. Do not close the AdGuard for Safari window until the filters are updated.
 
-Bu işe yaramazsa ve reklamlar hala engellenmiyorsa, lütfen support\@adguard.com adresinden destek ekibimizle iletişime geçin.
+Bu işe yaramazsa ve reklamlar hala engellenmiyorsa, lütfen support@adguard.com adresinden destek ekibimizle iletişime geçin.
 
 Yalnızca belirli bir sayfa veya siteyle ilgili sorun yaşıyorsanız bunu doğrudan tarayıcıdan bildirebilirsiniz: Safari arama çubuğunun yanındaki Safari için AdGuard simgesine tıklayın ve ardından _Sorun bildir_ öğesine tıklayın.

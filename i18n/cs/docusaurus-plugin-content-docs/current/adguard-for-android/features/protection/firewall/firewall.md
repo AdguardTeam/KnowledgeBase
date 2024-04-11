@@ -5,11 +5,11 @@ sidebar_position: 1
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Chcete-li se podívat, jak to funguje, [stáhněte si AdGuard pro Android](https://agrd.io/download-kb-adblock)
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li se podívat, jak to funguje, [stáhněte si AdGuard pro Android](https://agrd.io/download-kb-adblock)
 
 :::
 
-The Firewall module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Firewall_.
+K modulu Firewall se dostanete klepnutím na kartu _Ochrana_ (druhá ikona vlevo dole na obrazovce) a výběrem možnosti _Firewall_.
 
 Tato funkce pomáhá spravovat přístup k internetu pro konkrétní aplikace nainstalované v zařízení a pro zařízení obecně.
 
@@ -25,9 +25,9 @@ Tato pravidla platí pro všechny aplikace v zařízení, pokud jste pro ně nen
 
 #### Vlastní pravidla brány firewall
 
-In this section, you can control Internet access for specific apps — restrict permissions for those that you don’t find trustworthy, or, on the contrary, unblock the ones you want to circumvent the global firewall rules.
+V této části můžete řídit přístup k internetu pro konkrétní aplikace — omezit oprávnění pro ty, které nepovažujete za důvěryhodné, nebo naopak odblokovat ty, u kterých chcete obejít globální pravidla brány firewall.
 
-1. Open _Custom firewall rules_. Under _Apps with custom rules_, tap _Add app_.
+1. Otevřete _Vlastní pravidla brány firewall_. V části _Aplikace s vlastními pravidly_ klepněte na _Přidat aplikaci_.
 
    ![Custom firewall rules \*mobile\_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
 
@@ -35,10 +35,10 @@ In this section, you can control Internet access for specific apps — restrict 
 
    ![Adding an app to Custom firewall rules \*mobile\_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
 
-3. In _Available custom rules_, select the ones you want to configure and tap the “+” icon. The rules will now appear in _Applied custom rules_.
+3. V části _Dostupná vlastní pravidla_ vyberte ta, která chcete nakonfigurovat a klepněte na ikonu “+”. Pravidla se nyní objeví části _Použitá vlastní pravidla_.
 
    ![Added rule \*mobile\_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
 
-4. Pokud potřebujete zablokovat určitý typ připojení, přepněte přepínač doleva. Pokud to chcete povolit, ponechte přepínač zapnutý. **Custom rules override global ones**: any changes you make in _Global firewall rules_ will not affect this app.
+4. Pokud potřebujete zablokovat určitý typ připojení, přepněte přepínač doleva. Pokud to chcete povolit, ponechte přepínač zapnutý. **Vlastní pravidla jsou nadřazena globálním pravidlům**: jakékoli změny provedené v části _Globální pravidla_ brány firewall nebudou mít na tuto aplikaci vliv.
 
-To delete a rule or app from _Custom rules_, swipe it to the left.
+Chcete-li odstranit pravidlo nebo aplikaci v části _Vlastní pravidla_, přejeďte prstem doleva.

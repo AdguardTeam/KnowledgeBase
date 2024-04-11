@@ -17,8 +17,8 @@ Para analizar y diagnosticar diversos problemas que pueden ocurrir con AdGuard p
 2. Desplázate hacia abajo y haz clic en _Exportar registros_.
 3. Elige una ubicación para guardar el archivo .zip y haz clic en _Guardar_.
 
-Ahora puedes enviar este archivo a support\@adguard.com o adjuntarlo a tu informe de error en GitHub:
+Ahora puedes enviar este archivo a support@adguard.com o adjuntarlo a tu informe de error en GitHub:
 
 1. Abre el [repositorio GitHub de AdGuard para Safari](https://github.com/AdguardTeam/AdGuardForSafari/issues) y haz clic en _New issue_.
-2. Envía el archivo de registro a devteam\@adguard.com. Incluye la hora del error y adjunta un enlace a tu issue o su número (aparece como #número junto al título).
-   Alternativamente, puedes transferir el archivo de registro en Google Drive y enviarlo a devteam\@adguard.com. Agrega el enlace del archivo a tu problema de GitHub.
+2. Envía el archivo de registro a devteam@adguard.com. Incluye la hora del error y adjunta un enlace a tu issue o su número (aparece como #número junto al título).
+   Alternativamente, puedes transferir el archivo de registro en Google Drive y enviarlo a devteam@adguard.com. Agrega el enlace del archivo a tu problema de GitHub.

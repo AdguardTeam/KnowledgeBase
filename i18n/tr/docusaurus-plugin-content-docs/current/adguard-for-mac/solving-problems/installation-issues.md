@@ -1,5 +1,5 @@
 ---
-title: Installation problems solving
+title: Kurulum sorunlarının çözümü
 sidebar_position: 5
 ---
 
