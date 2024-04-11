@@ -1,21 +1,21 @@
 ---
-title: Activity and statistics
+title: Etkinlik ve istatistikler
 sidebar_position: 4
 ---
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan iOS için AdGuard hakkındadır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
-_Activity_ screen is the 'information hub' of AdGuard's DNS protection suite. You can quickswitch to it by tapping the third icon in the bottom bar. N.b. this screen is only seen when DNS protection is enabled.
+_Etkinlik_ ekranı, AdGuard'ın DNS koruma paketinin 'bilgi merkezidir'. You can quickswitch to it by tapping the third icon in the bottom bar. Not: bu ekran yalnızca DNS koruması etkinleştirildiğinde görülür.
 
-![Activity screen \*mobile\_border](https://cdn.adtidy.org/content/github/ad_blocker/ios/activity.png)
+![Etkinlik ekranı \*mobile\_border](https://cdn.adtidy.org/content/github/ad_blocker/ios/activity.png)
 
-This is where AdGuard displays statistics about the device's DNS requests, such as total number, number of blocked requests and data saved by blocking them. AdGuard can display the statistics for a day, a week, a month or in total.
+This is where AdGuard displays statistics about the device's DNS requests, such as total number, number of blocked requests and data saved by blocking them. AdGuard istatistikleri bir gün, bir hafta, bir ay veya toplam olarak görüntüleyebilir.
 
-Below is the _Recent activity_ feed. AdGuard stores the last 1500 DNS requests that have originated on your device and shows their attributes such as protocol type and target domain.
+Aşağıda _Son etkinlik_ akışı yer almaktadır. AdGuard, cihazınızdan gelen son 1500 DNS isteğini saklar ve bunların protokol türü ve hedef alan adı gibi özelliklerini gösterir.
 
 :::note
 
@@ -23,12 +23,12 @@ AdGuard bu bilgileri hiçbir yere göndermez. It is 100% local and does not leav
 
 :::
 
-Tap any request to view more details. There will also be buttons to add the request to Blocklist/Allowlist in one tap.
+Daha fazla ayrıntı görüntülemek için herhangi bir isteğe dokunun. Ayrıca isteği tek dokunuşla Engel listesine veya İzin listesine eklemek için düğmeler de olacaktır.
 
 ![Request details \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/request_info_en.jpeg)
 
 Above the activity feed, there are _Most active_ and _Most blocked_ companies. Son 1500 isteğe dayalı verileri görmek için her birine dokunun.
 
-### Statistics {#statistics}
+### İstatistikler {#statistics}
 
-Aside from the _Activity_ screen, you can find global statistics on the home screen and in widgets.
+_Etkinlik_ ekranının yanı sıra, genel istatistikleri ana ekranda ve araçlarda bulabilirsiniz.
