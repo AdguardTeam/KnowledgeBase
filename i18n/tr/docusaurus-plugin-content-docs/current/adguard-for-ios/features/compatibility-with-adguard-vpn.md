@@ -5,25 +5,25 @@ sidebar_position: 8
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan iOS için AdGuard hakkındadır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
-In most cases, an ad blocker app and a VPN app cannot work together, due to certain system limitations.
+Çoğu durumda, bir reklam engelleyici uygulaması ve bir VPN uygulaması, belirli sistem sınırlamaları nedeniyle birlikte çalışamaz.
 
-Nevertheless, we've managed to find a solution to befriend [AdGuard VPN](https://adguard-vpn.com/) and AdGuard Ad Blocker.
+Yine de, [AdGuard VPN](https://adguard-vpn.com/) ve AdGuard Reklam Engelleyici ile arkadaş olmak için bir çözüm bulmayı başardık.
 
-On the _Protection_ section, you can easily switch between two apps.
+_Koruma_ bölümünde iki uygulama arasında kolayca geçiş yapabilirsiniz.
 
-### How to enable compatibility mode
+### Uyumluluk modu nasıl etkinleştirilir
 
 **If you already have AdGuard Ad Blocker when installing AdGuard VPN, integrated (compatibility) mode will turn on automatically, allowing you to use our apps at the same time.**
 
-If you have installed AdGuard VPN first and only then decided to try AdGuard Ad Blocker, follow these steps to use the two apps together:
+Önce AdGuard VPN'i yüklediyseniz ve daha sonra AdGuard Reklam Engelleyiciyi denemeye karar verdiyseniz, iki uygulamayı birlikte kullanmak için aşağıdaki adımları izleyin:
 
 1. Open AdGuard VPN for iOS app and select ⚙ _Settings_ in the lower right corner of the screen.
-2. Go to _App settings_ and select _Operating mode_.
-3. Switch the mode from VPN to Integrated.
+2. _Uygulama ayarları_ öğesine gidin ve _Çalışma modu_ öğesini seçin.
+3. Modu VPN'den Entegre'ye değiştirin.
 
 :::note
 
