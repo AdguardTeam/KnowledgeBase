@@ -25,6 +25,6 @@ In alcuni casi, il filtro potrebbe non funzionare e gli annunci potrebbero comun
 9. Fai clic su _Verifica aggiornamenti_.
 10. Non chiudere la finestra di AdGuard per Safari finché i filtri non vengono aggiornati.
 
-Se il problema persiste e gli annunci continuano a non essere bloccati, contatta il nostro supporto all'indirizzo support\@adguard.com.
+Se il problema persiste e gli annunci continuano a non essere bloccati, contatta il nostro supporto all'indirizzo support@adguard.com.
 
 Se riscontri problemi solo con una pagina o un sito web specifico, puoi segnalarlo direttamente dal browser: fai clic sull'icona AdGuard per Safari accanto alla barra di ricerca di Safari, quindi fai clic su _Segnala un problema_.

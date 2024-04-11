@@ -5,7 +5,7 @@ sidebar_position: 17
 
 :::info
 
-This article is about AdGuard for Android TV, an ad blocker that protects your TV at the system level. [Скачайте приложение AdGuard для Android TV] (https\://agrd.io/tvapk), чтобы увидеть, как оно работает
+This article is about AdGuard for Android TV, an ad blocker that protects your TV at the system level. [Скачайте приложение AdGuard для Android TV] (https://agrd.io/tvapk), чтобы увидеть, как оно работает
 
 :::
 

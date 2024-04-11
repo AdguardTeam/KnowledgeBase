@@ -25,6 +25,6 @@ Dans certains cas, le filtrage peut ne pas fonctionner et les publicités peuven
 9. Cliquez sur _Vérifier les mises à jour_.
 10. Ne fermez pas la fenêtre AdGuard pour Safari tant que les filtres ne sont pas mis à jour.
 
-Si cela ne résout pas le problème et les publicités ne sont toujours pas bloquées, veuillez contacter notre assistance à support\@adguard.com.
+Si cela ne résout pas le problème et les publicités ne sont toujours pas bloquées, veuillez contacter notre assistance à support@adguard.com.
 
 Si vous ne rencontrez des problèmes qu'avec une page ou un site web spécifique, vous pouvez le signaler directement à partir du navigateur : cliquez sur l'icône AdGuard pour Safari à côté de la barre de recherche Safari, puis cliquez sur _Signaler un problème_.

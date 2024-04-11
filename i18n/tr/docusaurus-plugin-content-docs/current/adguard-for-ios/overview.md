@@ -1,7 +1,8 @@
 ---
 title: Özelliklere genel bakış
-sidebar_position: 1
+sidebar_position: 6
 ---
+
 
 :::info
 

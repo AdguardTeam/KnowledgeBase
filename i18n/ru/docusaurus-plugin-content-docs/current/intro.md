@@ -11,7 +11,7 @@ AdGuard — один из лидеров на рынке программ для
 - [AdGuard для Windows](/adguard-for-windows/features/home-screen)
 - [AdGuard для Mac](/adguard-for-mac/overview)
 - [AdGuard для Android](/adguard-for-android/features/protection/ad-blocking)
-- [AdGuard для iOS](/adguard-for-ios/overview)
+- [AdGuard для iOS](/adguard-for-ios/features/safari-protection)
 
 Но мы также разрабатываем и поддерживаем бесплатные расширения для всех популярных браузеров:
 

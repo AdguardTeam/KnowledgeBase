@@ -5,13 +5,13 @@ sidebar_position: 1
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Chcete-li se podívat, jak to funguje, [stáhněte si AdGuard pro Android](https://agrd.io/download-kb-adblock)
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li se podívat, jak to funguje, [stáhněte si AdGuard pro Android](https://agrd.io/download-kb-adblock)
 
 :::
 
-The Ad blocking module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Ad blocking_.
+K modulu Blokování reklam se dostanete klepnutím na kartu _Ochrana_ (druhá ikona vlevo dole na obrazovce) a výběrem možnosti _Blokování reklam_.
 
-Funkce blokuje reklamy pomocí blokování reklam a jazykově specifických filtrů. To learn about the mechanism of ad blocking, you can read a [dedicated article](/general/ad-filtering/how-ad-blocking-works).
+Funkce blokuje reklamy pomocí blokování reklam a jazykově specifických filtrů. Chcete-li se dozvědět více o mechanismu blokování reklam, můžete si přečíst [vyhrazený článek](/general/ad-filtering/how-ad-blocking-works).
 
 Základní ochrana účinně blokuje reklamy na většině webových stránek. Chcete-li lépe přizpůsobit blokování reklam, můžete:
 
@@ -19,6 +19,6 @@ Základní ochrana účinně blokuje reklamy na většině webových stránek. C
 
 - Přidejte webové stránky na seznam povolených – tyto weby nebudou AdGuardem filtrovány
 
-- Vytvářet uživatelská pravidla – AdGuard je použije na konkrétních webových stránkách. [Learn how to create your own user rules](/general/ad-filtering/create-own-filters)
+- Vytvářet uživatelská pravidla – AdGuard je použije na konkrétních webových stránkách. [Naučte se vytvářet vlastní uživatelská pravidla](/general/ad-filtering/create-own-filters)
 
 ![Ad blocking \*mobile\_border](https://cdn.adtidy.org/blog/new/o44x5ad_blocking.png)

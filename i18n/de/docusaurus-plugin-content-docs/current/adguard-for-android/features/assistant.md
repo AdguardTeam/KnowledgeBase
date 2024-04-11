@@ -5,7 +5,7 @@ sidebar_position: 5
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -48,7 +48,7 @@ You'll be taken to the AdGuard app, where you'll see detailed statistics about C
 - Data saved by blocking Chrome's ad or tracking requests
 - Companies that Chrome sends requests to
 
-#### App management
+#### App-Verwaltung
 
 You'll be taken to the AdGuard app screen where you can disable AdGuard protection for the app.
 

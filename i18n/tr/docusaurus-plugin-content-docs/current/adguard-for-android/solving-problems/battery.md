@@ -31,9 +31,9 @@ First, let us lay down a bit of theory and links with necessary data.
 
 1. Main part of Power Profile is a set of values in mAh which define battery consumption for every component of the device: <https://source.android.com/devices/tech/power/values.html>
 
-    For example, from the table above:
+    Örneğin, yukarıdaki tablodan:
 
-    *wifi.active=* 31mA additional consumption in mAh caused by WiFi data exchange.
+    *wifi.active=* 31mA WiFi veri alışverişinden kaynaklanan mAh cinsinden ek tüketim.
 
     *radio.active=* 100-300mA additional consumption in mAh caused by data exchange over Mobile network.
 

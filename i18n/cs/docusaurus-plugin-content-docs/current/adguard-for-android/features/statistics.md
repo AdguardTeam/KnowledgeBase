@@ -5,11 +5,11 @@ sidebar_position: 3
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Chcete-li se podívat, jak to funguje, [stáhněte si AdGuard pro Android](https://agrd.io/download-kb-adblock)
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li se podívat, jak to funguje, [stáhněte si AdGuard pro Android](https://agrd.io/download-kb-adblock)
 
 :::
 
-The _Statistics_ module can be accessed by tapping the _Statistics_ tab (fourth icon from the left at the bottom of the screen). Tato funkce vám poskytne kompletní přehled o provozu ve vašem zařízení: kolik požadavků je odesláno a kterým společnostem, kolik dat je odesláno a staženo, jaké požadavky jsou blokovány atd. You can choose to display the statistics for the selected time period: 24 hours, 7 days, 30 days, or all time.
+Do modulu _Statistiky_ se dostanete klepnutím na kartu _Statistiky_ (čtvrtá ikona zleva v dolní části obrazovky). Tato funkce vám poskytne kompletní přehled o provozu ve vašem zařízení: kolik požadavků je odesláno a kterým společnostem, kolik dat je odesláno a staženo, jaké požadavky jsou blokovány atd. Můžete si vybrat, zda chcete zobrazit statistiky za vybrané časové období: 24 hodin, 7 dní, 30 dní nebo za celou dobu.
 
 ![Statistics \*mobile\_border](https://cdn.adtidy.org/blog/new/czy5rStatistics.jpeg?mw=1360)
 
@@ -17,21 +17,21 @@ Statistiky jsou rozděleny do různých sekcí.
 
 ### Požadavky
 
-This section shows the number of blocked ads, trackers, and the total number of requests. You can filter requests by data type: mobile data, Wi-Fi, or all data combined.
+V této části se zobrazuje počet blokovaných reklam, slídičů a celkový počet požadavků. Požadavky můžete filtrovat podle typu dat: mobilní data, Wi-Fi nebo všechna data dohromady.
 
-_Recent activity_, formerly known as _Filtering log_, shows the last 10,000 requests processed by AdGuard. Tap three-dots menu (⋮) and then _Customize_ to filter requests by status (_regular_, _blocked_, _modified_, or _allowlisted_) or origin (_first-party_ or _third-party_).
+_Nedávná aktivita_, dříve známá jako _Záznam filtrování_ zobrazuje posledních 10000 požadavků zpracovaných AdGuardem. Klepněte na nabídku se třemi tečkami (⋮) a poté na _Přizpůsobit_ pro filtrování požadavků podle stavu (_běžné_, _blokované_, _změněné_ nebo _povolené_), nebo původu (_vlastní_ nebo _třetí strana_).
 
-You can tap a request to view its details and add a blocking or unblocking rule in one tap.
+Klepnutím na požadavek můžete zobrazit jeho podrobnosti a přidat pravidlo blokování nebo odblokování.
 
 ### Využití dat
 
-This section shows the amount of downloaded and uploaded data and saved traffic for the selected data type (mobile data, Wi-Fi, or all). Tap _saved_, _uploaded_, or _downloaded_ to view the graph of data usage over time.
+Tato část zobrazuje množství stažených a odeslaných dat a ušetřeného datového provozu pro vybraný typ dat (mobilní data, Wi-Fi nebo všechna data). Klepnutím na _uložené_, _nahrané_ nebo _stažené_ zobrazíte graf využití dat v průběhu času.
 
 ### Aplikace
 
 Tato sekce zobrazuje statistiky všech aplikací nainstalovaných ve vašem zařízení. Aplikace můžete třídit podle počtu blokovaných reklam, slídičů nebo podle počtu odeslaných požadavků.
 
-Tap _View all apps_ to expand the list of your apps, sorted by the number of ads, trackers, or requests.
+Klepnutím na _Zobrazit všechny aplikace_ rozbalíte seznam svých aplikací seřazený podle počtu reklam, slídičů nebo požadavků.
 
 ![List of apps \*mobile\_border](https://cdn.adtidy.org/blog/new/toq0mkScreenshot_20230627-235219_AdGuard.jpg)
 
@@ -39,12 +39,12 @@ Pokud klepnete na aplikaci, zobrazí se její úplné statistiky: požadavky, kt
 
 ### Společnosti
 
-Tato sekce zobrazuje společnosti, na které se vaše zařízení obrací. Co to znamená? AdGuard detekuje domény, do kterých vaše zařízení odesílá požadavky a určuje, kterým společnostem patří. A database of companies can be found on [GitHub](https://github.com/AdguardTeam/companiesdb).
+Tato sekce zobrazuje společnosti, na které se vaše zařízení obrací. Co to znamená? AdGuard detekuje domény, do kterých vaše zařízení odesílá požadavky a určuje, kterým společnostem patří. Databázi společností najdete na [GitHubu](https://github.com/AdguardTeam/companiesdb).
 
 ### Statistiky DNS
 
-This section shows data about the requests handled by _DNS protection_. Celkový počet odeslaných požadavků a počet požadavků zablokovaných AdGuardem si můžete prohlédnout v číslech a grafech. Najdete zde také statistiky o množství ušetřených, stažených a nahraných dat.
+Tato sekce zobrazuje údaje o požadavcích zpracovávaných _DNS ochranou_. Celkový počet odeslaných požadavků a počet požadavků zablokovaných AdGuardem si můžete prohlédnout v číslech a grafech. Najdete zde také statistiky o množství ušetřených, stažených a nahraných dat.
 
 ### Využití baterie
 
-Tato sekce zobrazuje statistiky o prostředcích zařízení použitých AdGuardem za posledních 24 hodin. The data may differ from the stats displayed in your device settings. This happens because the system attributes the traffic of all filtered apps to AdGuard. Zařízení tedy zobrazuje, že AdGuard spotřebovává více prostředků, než ve skutečnosti spotřebovává. [Read more about battery and traffic consumption issues](/adguard-for-android/solving-problems/battery/).
+Tato sekce zobrazuje statistiky o prostředcích zařízení použitých AdGuardem za posledních 24 hodin. Údaje se mohou lišit od statistik zobrazených v nastavení zařízení. K tomu dochází proto, že systém připisuje provoz všech filtrovaných aplikací AdGuardu. Zařízení tedy zobrazuje, že AdGuard spotřebovává více prostředků, než ve skutečnosti spotřebovává. [Přečtěte si více o problémech s baterií a spotřebou datového provozu](/adguard-for-android/solving-problems/battery/).

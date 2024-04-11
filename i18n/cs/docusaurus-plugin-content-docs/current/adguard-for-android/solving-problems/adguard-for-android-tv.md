@@ -5,7 +5,7 @@ sidebar_position: 17
 
 :::info
 
-This article is about AdGuard for Android TV, an ad blocker that protects your TV at the system level. Chcete-li se podívat, jak to funguje, [stáhněte si AdGuard pro Android TV](https://agrd.io/tvapk)
+Tento článek popisuje AdGuard pro Android TV, blokátor reklam, který chrání vaši TV na úrovni systému. Chcete-li se podívat, jak to funguje, [stáhněte si AdGuard pro Android TV](https://agrd.io/tvapk)
 
 :::
 
@@ -37,7 +37,7 @@ Hotovo, AdGuard pro Android TV je nainstalován.
 
 1. Zkontrolujte, zda je v PC nainstalován Android Debug Bridge (ADB). Pokud ne, můžete postupovat podle pokynů na webu XDA Developers: [Průvodce instalací ADB](https://www.xda-developers.com/install-adb-windows-macos-linux).
 
-2. Stáhněte [AdGuard pro Android TV] (https\://agrd.io/tvapk).
+2. Stáhněte [AdGuard pro Android TV] (https://agrd.io/tvapk).
 
 3. V nastavení TV přejděte na _System_ → _Informace_ a 7krát stiskněte číslo sestavení, abyste odemkli možnosti pro vývojáře. Povolte _USB ladění_.
 

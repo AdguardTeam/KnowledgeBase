@@ -17,6 +17,6 @@ sidebar_position: 5
 4. 为所有 AdGuard 扩展勾选「_允许私人浏览_」。
    ![Checked private browsing](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-sonoma-private.png)
 
-如果上述方法无效，广告仍未被屏蔽，请发送电子邮件至 support\@adguard.com 联系我们的支持人员。
+如果上述方法无效，广告仍未被屏蔽，请发送电子邮件至 support@adguard.com 联系我们的支持人员。
 
 如果只有特定页面或网站出现问题，用户可以通过浏览器报告错误：单击 Safari 搜索栏旁边的 AdGuard Safari 版图标，然后单击「_报告此网站_」旁边的「_报告_」按钮。

@@ -1,17 +1,17 @@
 ---
-title: Browsing security
+title: Bezpečné prohlížení
 sidebar_position: 6
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Chcete-li se podívat, jak to funguje, [stáhněte si AdGuard pro Android](https://agrd.io/download-kb-adblock)
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li se podívat, jak to funguje, [stáhněte si AdGuard pro Android](https://agrd.io/download-kb-adblock)
 
 :::
 
-The Browsing security module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Browsing security_.
+K modulu Bezpečné prohlížení se dostanete klepnutím na kartu _Ochrana_ (druhá ikona vlevo dole na obrazovce) a výběrem možnosti _Bezpečné prohlížení_.
 
-Browsing security protects you from visiting phishing and malicious websites. Také vás upozorní na potenciální škodlivý software.
+Bezpečné prohlížení AdGuard vás chrání před návštěvou těchto nebezpečných stránek. Také vás upozorní na potenciální škodlivý software.
 
 ![Browsing Security \*mobile\_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
 
@@ -21,8 +21,8 @@ Pokud se chystáte navštívit nebezpečnou webovou stránku, Bezpečné prohlí
 
 :::warning
 
-Upozorňujeme, že AdGuard pro Android není antivirový program. Nezabrání stahování virů ani neodstraní již stažené viry. To fully protect your device, we recommend using AdGuard in conjunction with an antivirus
+Upozorňujeme, že AdGuard pro Android není antivirový program. Nezabrání stahování virů ani neodstraní již stažené viry. Chcete-li své zařízení plně ochránit, doporučujeme používat AdGuard ve spojení s antivirovým programem
 
 :::
 
-Bezpečné prohlížení je bezpečné: AdGuard neví, jaké webové stránky navštěvujete. Ke kontrole zabezpečení webových stránek používá místo adres URL předpony hash. [Learn more about how Browsing security works from this article](/general/browsing-security/).
+Bezpečné prohlížení je bezpečné: AdGuard neví, jaké webové stránky navštěvujete. Ke kontrole zabezpečení webových stránek používá místo adres URL předpony hash. [Další informace o tom, jak funguje Bezpečné prohlížení, naleznete v tomto článku](/general/browsing-security/).

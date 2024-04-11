@@ -51,6 +51,8 @@ For example:
 - `http://ads.example.org.us/ad1.gif`
 - `http://example.com/redirect/http://ads.example.org/`
 
+By default, such rules do not work for document requests. This means that the `||example.org^` rule will block a request made to `example.org` when you try to navigate to this domain from another website, but if you type `example.org` into the address bar and try to navigate to it, the website will open. To block the document request, you will need to use a rule with the [`$document` modifier](#document-modifier): `||example.org^$document`.
+
 ### Blocking exact address
 
 ![Blocking exact address](https://cdn.adtidy.org/content/kb/ad_blocker/general/1_exact_address.svg)

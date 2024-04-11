@@ -5,11 +5,11 @@ sidebar_position: 9
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-In some cases, apps won't stay in the background (“alive” or in a sleep mode) due to the Android OS optimization function, or the so-called “battery save mode” — this function can kill background apps. Může být nepohodlné je znovu spouštět pokaždé, když se zavřou. Chcete-li se vyhnout ukončení aplikace na pozadí, musíte postupovat podle kroků, které jsme popsali zvlášť pro každého výrobce (verzi) operačního systému Android. Všimněte si, že pokyny různých výrobců jsou většinou velmi podobné.
+V některých případech aplikace nezůstanou na pozadí (”naživu” nebo v režimu spánku) kvůli optimalizační funkci operačního systému Android nebo takzvanému ”režimu úspory baterie” — tato funkce může aplikace na pozadí ukončit. Může být nepohodlné je znovu spouštět pokaždé, když se zavřou. Chcete-li se vyhnout ukončení aplikace na pozadí, musíte postupovat podle kroků, které jsme popsali zvlášť pro každého výrobce (verzi) operačního systému Android. Všimněte si, že pokyny různých výrobců jsou většinou velmi podobné.
 
 ## Asus
 
@@ -31,15 +31,15 @@ Xiaomi (a zejména MIUI) patří mezi nejproblematičtější, pokud jde o prác
 
 Chcete-li aplikaci AdGuard úspěšně spustit na pozadí, proveďte následující kroky:
 
-In **Settings** → **Apps** → **Manage apps** → scroll down to locate **AdGuard**, set **Autostart** to “On”.
+V **Nastavení** → **Aplikace** → **Spravovat aplikace** → přejděte dolů k **AdGuard**, nastavte **Automatické spuštění** na “Zapnuto“.
 
 ![Nastavení Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
 
-Scroll down to **Battery saver**, tap it, and set to “No restrictions”.
+Přejděte dolů na **Spořič baterie**, klepněte na něj a nastavte možnost “Bez omezení“.
 
 ![Miui *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_0a.png)
 
-In **Other Permissions**, set all possible permissions to “On”
+V položce **Další oprávnění** nastavte všechna možná oprávnění na “Zapnuto“
 
 Spusťte aplikaci **Zabezpečení**.
 
@@ -67,8 +67,8 @@ Přejděte na **Nastavení** → **Aplikace** → **Správce aplikací** → **A
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
 
-- Set Autostart to “On”
-- Set all possible permissions in Other Permissions to “On”
+- Nastavte Automatické spuštění na “Zapnuto“
+- Nastavte všechna možná oprávnění v části Další oprávnění na “Zapnuto“
 - Nastavte spořiče baterie na **Bez omezení**
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi5en.jpeg)
@@ -89,7 +89,7 @@ Nad oknem aplikace by se měla objevit ikona zámku.
 
 Chcete-li, aby vaše aplikace úspěšně běžela na pozadí, nakonfigurujte její nastavení následovně:
 
-- Set Autostart to “On”
+- Nastavte Automatické spuštění na “Zapnuto“
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/xiaomi1en.png)
 
@@ -114,7 +114,7 @@ Povolte následující:
 - **Nastavení zařízení** → **Aplikace** → **AdGuard** → **Baterie** → **Energeticky náročné výzvy** a **Po vypnutí obrazovky nechat spuštěno**
 - **Nastavení** → **Další nastavení** → **Baterie a výkon** → **Správa využití baterie aplikacemi** a zde:
 
-1. Switch Power Saving Modes to “Off”
+1. Přepněte režimy úspory baterie do polohy “Vypnuto“
 1. Vyberte následující možnosti: **Úspora baterie na pozadí** → **Vybrat aplikaci** → **AdGuard** → **Nastavení na pozadí** → **Bez omezení**
 
 #### Spořič baterie
@@ -342,7 +342,7 @@ Kromě toho byste pro efektivnější nastavení práce AdGuardu na pozadí měl
 
 - Jděte na **Nastavení** → otevřete **Správce baterie** → nastavte **Plán napájení** na **Výkon**;
 - Poté zvolte **Chráněné aplikace** ve **Správci baterie** a zkontrolujte, zda je AdGuard chráněn;
-- Go to **Apps** in the main settings and tap AdGuard there → choose **Battery** → enable **Power-intensive prompt** and **Keep running after screen is off**;
+- Jděte na **Aplikace** v hlavním nastavení a klepněte na AdGuard → vyberte **Baterie** → zapněte **Energeticky náročné výzvy** a **Neuspávat po vypnutí obrazovky**;
 - Poté v sekci **Aplikace** otevřete **Nastavení** (dole) → **Speciální přístup** → vyberte **Ignorovat optimalizaci baterie** → stiskněte **Povoleno** → **Všechny aplikace** → v seznamu vyhledejte AdGuard a nastavte na **Odmítnout**.
 
 ## Meizu
@@ -351,7 +351,7 @@ Meizu má téměř stejný přístup k omezování procesů na pozadí jako Huaw
 
 - Jděte na **Pokročilá nastavení** → otevřete **Správce baterie** → nastavte **Plán napájení** na **Výkon**;
 - Poté zvolte **Chráněné aplikace** ve **Správci baterie** a zkontrolujte, zda je AdGuard chráněn;
-- Go to **Apps** section and tap AdGuard there → choose **Battery** → enable **Power-intensive prompt** and **Keep running after screen is off**.
+- Jděte na **Aplikace** v hlavním nastavení a klepněte na AdGuard → vyberte **Baterie** → zapněte **Energeticky náročné výzvy** a **Neuspávat po vypnutí obrazovky**.
 
 ## Nokia
 
@@ -436,7 +436,7 @@ Přejděte na **Centrum zabezpečení** → klepněte na **Oprávnění k ochran
 Další řešení:
 
 - Připněte AdGuard na obrazovce nedávných aplikací aplikací
-- Enable AdGuard in the app list inside the security app’s “startup manager” and “floating app list” (com.coloros.safecenter / com.coloros.safecenter.permission.Permission)
+- Povolte AdGuard v seznamu aplikací uvnitř “správce spouštění“ a “plovoucího seznamu aplikací“ bezpečnostní aplikaci (com.coloros.safecenter / com.coloros.safecenter.permission.Permission)
 - Vypněte optimalizaci baterie
 
 ## OnePlus
@@ -493,7 +493,7 @@ Pro OnePlus 6 a starší:
 
 ### Chování při vymazávání nedávných aplikací
 
-Za normálních okolností se aplikace po přejetí nezavře. U OnePlus to však může fungovat jinak. Vymazání nedávných aplikací může být nastaveno tak, že přejetím prstu nahoru po aplikaci ji zavřete. To return it to the “normal” mode:
+Za normálních okolností se aplikace po přejetí nezavře. U OnePlus to však může fungovat jinak. Vymazání nedávných aplikací může být nastaveno tak, že přejetím prstu nahoru po aplikaci ji zavřete. Návrat do “normálního“ režimu:
 
 Přejděte na **Nastavení** → **Pokročilé** → **Správa nedávných aplikací** → Přepněte na **Normální mazání**
 
@@ -519,7 +519,7 @@ Zařízení Wiko jsou problematická z hlediska nestandardních optimalizací pr
 - Vraťte se zpět a přejděte do sekce **Ruční režim**
 - Klepněte na ikonu **Ozubeného kola** vpravo nahoře → **Seznam povolených aplikací na pozadí** → Vyberte **AdGuard**
 
-## Zařízení Pixel/Nexus/Essential
+## Android stock devices Pixel/Nexus/Nubia/Essential
 
 Čistý operační systém Android obvykle není v konfliktu s aplikacemi pracujícími na pozadí, ale pokud se potýkáte s nějakými problémy, musíte zapnout režim **Trvalá síť VPN**.
 

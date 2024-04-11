@@ -35,7 +35,7 @@ sidebar_position: 1
 
 3. Clicca su _Debug componenti aggiuntivi_.
 
-   ! [Debug componenti aggiuntivi \*border] (https\://cdn.adguardvpn.com/content/kb/vpn/browser_extension/add-ons.png)
+   ! [Debug componenti aggiuntivi \*border] (https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/add-ons.png)
 
 4. Clicca su _Ispeziona_.
 
@@ -54,4 +54,4 @@ sidebar_position: 1
 Ora che hai raccolto i registri, ti preghiamo di seguire questi passaggi per inviarli al nostro team di sviluppo:
 
 1. Segnala il bug su [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose).
-2. Invia il tuo archivio con i registri e l'orario di riproduzione a 'devteam\@adguard.com' e aggiungi un collegamento al tuo ticket di GitHub. Puoi anche caricare l'archivio su Google Drive e aggiungere il collegamento a esso, invece di allegare il file.
+2. Invia il tuo archivio con i registri e l'orario di riproduzione a 'devteam@adguard.com' e aggiungi un collegamento al tuo ticket di GitHub. Puoi anche caricare l'archivio su Google Drive e aggiungere il collegamento a esso, invece di allegare il file.

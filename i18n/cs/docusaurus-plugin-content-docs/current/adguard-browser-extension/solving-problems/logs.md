@@ -53,5 +53,5 @@ sidebar_position: 1
 
 Po shromáždění záznamů postupujte podle následujících kroků a odešlete je našemu vývojovému týmu:
 
-1. Nahlaste chybu na [GitHub] (https\://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose).
+1. Nahlaste chybu na [GitHub] (https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose).
 2. Odešlete archiv se záznamy a časem na adresu `devteam@adguard.com` a připojte odkaz na svůj problém na GitHubu. Archiv můžete také nahrát na Disk Google a místo přiložení souboru k němu přidat odkaz.

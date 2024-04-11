@@ -30,7 +30,7 @@ Let’s draw a small parallel between English and Polish for better understandin
 
 Now it is clear that the Polish *'godzinę'* (hour) has three different forms, whereas the English word changes its form with given numbers only twice.
 
-Except for Polish, there are a lot of other languages that have three plural forms and more, such as Russian, Serbian, Slovak, Czech etc. But not all of them obey the same rule. That's why it's so important to know how many plurals your language has, and how to use them correctly.
+Except for Polish, there are a lot of other languages that have three plural forms and more, such as Russian, Serbian, Slovak, Czech etc. Ancak hepsi aynı kurala uymaz. That's why it's so important to know how many plurals your language has, and how to use them correctly.
 
 ## Where can you learn about the number of plural forms? {#where-to-learn}
 
@@ -48,7 +48,7 @@ First of all, we want to mention that not every AdGuard translation requires the
 
 Currently, we have 4 types of strings on Crowdin that involve the use of plurals.
 
-Let's take a closer look at them.
+Gelin onlara daha yakından bakalım.
 
 ### 1. Phrases with string keys ending in `.singular`, `.dual`, `.plural` {#1type}
 

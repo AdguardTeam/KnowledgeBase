@@ -25,6 +25,6 @@ V některých případech nemusí filtrování fungovat a reklamy se mohou zobra
 9. Klikněte na _Zkontrolovat aktualizace_.
 10. Nezavírejte okno AdGuard pro Safari, dokud nebudou filtry aktualizovány.
 
-Pokud to nepomůže a reklamy stále nejsou blokovány, kontaktujte naši podporu support\@adguard.com.
+Pokud to nepomůže a reklamy stále nejsou blokovány, kontaktujte naši podporu support@adguard.com.
 
 Pokud máte problémy pouze s konkrétní stránkou nebo webem, můžete je nahlásit přímo z prohlížeče: klikněte na ikonu AdGuard pro Safari vedle vyhledávacího řádku Safari a poté klikněte na _Nahlásit problém_.
