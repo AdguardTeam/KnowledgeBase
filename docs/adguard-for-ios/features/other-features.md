@@ -1,6 +1,6 @@
 ---
 title: Other features
-sidebar_position: 3
+sidebar_position: 7
 ---
 
 :::info

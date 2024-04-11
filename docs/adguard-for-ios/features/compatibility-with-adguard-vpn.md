@@ -1,6 +1,6 @@
 ---
 title: Compatibility with AdGuard VPN
-sidebar_position: 4
+sidebar_position: 8
 ---
 
 :::info

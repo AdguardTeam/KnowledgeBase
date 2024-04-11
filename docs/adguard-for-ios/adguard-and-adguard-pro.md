@@ -1,6 +1,6 @@
 ---
 title: AdGuard and AdGuard Pro
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 :::info

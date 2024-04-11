@@ -1,6 +1,6 @@
 ---
 title: Low-level settings
-sidebar_position: 2
+sidebar_position: 6
 ---
 
 :::info
