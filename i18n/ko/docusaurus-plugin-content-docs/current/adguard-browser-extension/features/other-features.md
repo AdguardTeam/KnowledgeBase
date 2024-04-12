@@ -1,6 +1,6 @@
 ---
 title: 기타 기능 및 설정
-sidebar_position: 4
+sidebar_position: 3
 ---
 
 :::info

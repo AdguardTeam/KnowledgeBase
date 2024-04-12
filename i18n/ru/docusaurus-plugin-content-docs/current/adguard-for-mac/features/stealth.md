@@ -1,5 +1,5 @@
 ---
-title: Антитрекинг
+title: Защита от трекинга
 sidebar_position: 5
 ---
 

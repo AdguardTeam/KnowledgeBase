@@ -1,11 +1,11 @@
 ---
 title: Modalità d'integrazione (legacy)
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 :::info
 
-Questo articolo riguarda l'Estensione di browser AdGuard, che protegge solo il tuo browser. Per proteggere il tuo intero dispositivo, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
+Questo articolo riguarda l'Estensione di browser AdGuard, che protegge solo il tuo browser. Per proteggere il tuo intero dispositivo, [scarica l'applicazione AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 

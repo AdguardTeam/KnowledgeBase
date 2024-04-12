@@ -1,5 +1,5 @@
 ---
-title: Gizlilik Modu
+title: Stealth Mode
 sidebar_position: 4
 ---
 

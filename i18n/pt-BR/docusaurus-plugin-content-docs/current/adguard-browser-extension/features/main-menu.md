@@ -1,6 +1,6 @@
 ---
 title: Menu principal da extensão
-sidebar_position: 5
+sidebar_position: 4
 ---
 
 :::info

@@ -1,5 +1,5 @@
 ---
-title: Filters
+title: フィルタ
 sidebar_position: 3
 ---
 
@@ -9,7 +9,7 @@ This article is about AdGuard for Mac, a multifunctional ad blocker that protect
 
 :::
 
-## Filters
+## フィルタ
 
 ![Filters](https://cdn.adtidy.org/content/kb/ad_blocker/mac/filters.png)
 
@@ -26,7 +26,7 @@ These filters are important for blocking most ads, trackers, and annoying elemen
 
 To add a filter, click `+` in the lower left corner of the list. To enable a filter, select its checkbox.
 
-## User rules
+## ユーザールール
 
 In AdGuard for Mac, user rules are located in _Filters_. To create a rule, click `+`. To enable a rule, select its checkbox. To export or import rules, open the context menu.
 

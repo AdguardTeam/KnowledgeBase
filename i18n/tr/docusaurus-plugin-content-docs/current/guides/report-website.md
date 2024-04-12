@@ -123,7 +123,7 @@ This option is suitable for those who aren’t afraid of difficulties and don’
 
 For example, you are faced with a situation that your favorite website won’t open, authorization has broken, or some page elements are displayed incorrectly. The cause may be using a specific filter/extension/Stealth Mode setting. To diagnose these problems, you need to do the following:
 
-### **Filtreler**
+### **Filters**
 
 1. Disable **Ad Blocker**;
 2. If it solved the problem, re-enable the module and disable filters one by one. This is done to identify filters that "break" the page;
@@ -131,7 +131,7 @@ For example, you are faced with a situation that your favorite website won’t o
 4. If turning off all the filters hasn't produced any results, apply rule **@@||example.com^$document,extension**; where **example.com** is an example site name that needs to be replaced by your own option;
 5. In case of failure (issue not solved), turn to section **Stealth Mode**.
 
-### **Gizlilik Modu**
+### **Stealth Mode**
 
 1. Disable **Stealth Mode**;
 2. If this solved the problem, turn the module on and turn off the **Stealth Mode** options one by one. This is done to detect which filters are "breaking" the page;

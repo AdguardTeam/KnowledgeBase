@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-Questo articolo riguarda AdGuard per Safari, che protegge solo il tuo browser Safari. Per proteggere il tuo intero dispositivo, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
+Questo articolo riguarda AdGuard per Safari, che protegge solo il tuo browser Safari. Per proteggere il tuo intero dispositivo, [scarica l'applicazione AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 

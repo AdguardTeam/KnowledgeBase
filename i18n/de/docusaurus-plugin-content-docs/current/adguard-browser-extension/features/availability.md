@@ -1,6 +1,6 @@
 ---
 title: Verfügbarkeit
-sidebar_position: 1
+sidebar_position: 10
 ---
 
 :::info

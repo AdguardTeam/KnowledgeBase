@@ -1,6 +1,6 @@
 ---
 title: 통합 모드 (이전 버전)
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 :::info

@@ -1,5 +1,5 @@
 ---
-title: AdGuard 常规
+title: AdGuard 常用
 sidebar_position: 2
 ---
 

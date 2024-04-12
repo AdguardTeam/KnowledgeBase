@@ -26,7 +26,7 @@ These filters are important for blocking most ads, trackers, and annoying elemen
 
 To add a filter, click `+` in the lower left corner of the list. To enable a filter, select its checkbox.
 
-## Regole utente
+## Regole dell'utente
 
 In AdGuard for Mac, user rules are located in _Filters_. To create a rule, click `+`. To enable a rule, select its checkbox. To export or import rules, open the context menu.
 
