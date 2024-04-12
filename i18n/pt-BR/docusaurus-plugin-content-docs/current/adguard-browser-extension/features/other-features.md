@@ -1,6 +1,6 @@
 ---
 title: Outros recursos e opções
-sidebar_position: 4
+sidebar_position: 3
 ---
 
 :::info

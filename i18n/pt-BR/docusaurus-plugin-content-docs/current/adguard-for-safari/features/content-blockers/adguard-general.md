@@ -1,5 +1,5 @@
 ---
-title: AdGuard General
+title: AdGuard Custom
 sidebar_position: 2
 ---
 

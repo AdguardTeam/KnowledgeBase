@@ -1,5 +1,5 @@
 ---
-title: Filters
+title: 过滤器
 sidebar_position: 3
 ---
 
@@ -9,7 +9,7 @@ This article is about AdGuard for Mac, a multifunctional ad blocker that protect
 
 :::
 
-## Filters
+## 过滤器
 
 ![Filters](https://cdn.adtidy.org/content/kb/ad_blocker/mac/filters.png)
 

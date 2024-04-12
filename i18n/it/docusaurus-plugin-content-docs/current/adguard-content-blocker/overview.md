@@ -1,11 +1,11 @@
 ---
-title: Panoramica delle funzionalità
+title: Features overview
 sidebar_position: 1
 ---
 
 :::info
 
-This article is about AdGuard Content Blocker, which only safeguards the Samsung Internet browser and Yandex Browser. Per proteggere il tuo intero dispositivo, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
+This article is about AdGuard Content Blocker, which only safeguards the Samsung Internet browser and Yandex Browser. Per proteggere il tuo intero dispositivo, [scarica l'applicazione AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 

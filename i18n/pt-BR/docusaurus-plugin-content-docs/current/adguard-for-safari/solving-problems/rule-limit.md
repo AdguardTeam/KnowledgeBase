@@ -15,7 +15,7 @@ O AdGuard para Safari usa a API de bloqueio de conteúdo para aplicar regras de 
 
 AdGuard para Safari possui 6 bloqueadores de conteúdo:
 
-- AdGuard General
+- AdGuard Custom
 - AdGuard Privacy
 - AdGuard Social
 - AdGuard Security

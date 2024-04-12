@@ -34,7 +34,7 @@ A **filter** (or a **filter list**) is a set of filtering rules designed to filt
 - Implementing alternative advertising in response to ad blocker usage: sites introduce alternative advertising when ad blockers are detected
 - Paywall: a method of content monetization where content is partially or fully hidden from users, with a message prompting them to purchase a subscription for access
 
-### Filtreler
+### Filters
 
 AdGuard ad-blocking filters include:
 
@@ -94,7 +94,7 @@ The goal of ad-blocking filters is to block all types of advertising on websites
 
 **Cookies** — files that websites send to and store on devices. These files contain various information — both necessary for the functioning of the site on the device and used for analytics purposes — unique identifiers used to track visitor activity on the website, advertising parameters, and more.
 
-### Filtreler
+### Filters
 
 AdGuard izleme korumasu filtreleri şunları içerir:
 
@@ -138,7 +138,7 @@ Annoyance filters are designed to improve the usability of websites by blocking 
 
 **Popup** — a window that appears above the current web page. It is intended to display additional information, advertisements, notifications, or data entry forms. Popups usually block the view of the main content of the page and require user action to close, which can be irritating.
 
-### Filtreler
+### Filters
 
 For better customization, annoyance filters are divided by their purpose:
 
@@ -224,7 +224,7 @@ This filter may contain rules that are not suitable for all users. Bazen bu filt
 
 ## Sosyal medya filtreleri
 
-### Filtreler
+### Filters
 
 AdGuard Sosyal Medya filtreleri şunları içerir:
 
@@ -252,7 +252,7 @@ This group contains filters that are not essential for blocking advertisements.
 
 For more details on these types of advertising, refer to the [article on search ads](https://adguard.com/kb/general/ad-filtering/search-ads/).
 
-### Filtreler
+### Filters
 
 - Arama motoru reklamları ve öz tanıtımına izin veren filtre
 - AdGuard DNS filter

@@ -1,6 +1,6 @@
 ---
-title: Антитрекинг
-sidebar_position: 3
+title: Защита от трекинга
+sidebar_position: 2
 ---
 
 :::info

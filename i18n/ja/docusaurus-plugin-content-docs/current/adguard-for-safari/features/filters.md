@@ -1,5 +1,5 @@
 ---
-title: Filters
+title: フィルタ
 sidebar_position: 2
 ---
 

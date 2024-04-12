@@ -1,11 +1,11 @@
 ---
-title: Gizlilik Modu
+title: Stealth Mode
 sidebar_position: 5
 ---
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Mac için AdGuard hakkındadır. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 

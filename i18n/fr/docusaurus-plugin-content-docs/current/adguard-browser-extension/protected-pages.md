@@ -1,6 +1,6 @@
 ---
 title: Pages protégées par le navigateur
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 :::info

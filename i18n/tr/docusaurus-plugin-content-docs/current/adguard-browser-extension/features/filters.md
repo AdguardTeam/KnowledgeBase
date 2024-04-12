@@ -1,6 +1,6 @@
 ---
-title: Filtreler
-sidebar_position: 2
+title: Filters
+sidebar_position: 1
 ---
 
 :::info

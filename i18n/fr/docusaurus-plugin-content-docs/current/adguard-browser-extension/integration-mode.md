@@ -1,11 +1,11 @@
 ---
 title: Mode d'intégration (ancien)
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 :::info
 
-Cet article concerne l'extension de navigateur AdGuard, qui protège uniquement votre navigateur. Pour protéger l'ensemble de votre appareil, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
+Cet article concerne l'extension de navigateur AdGuard, qui protège uniquement votre navigateur. Pour protéger l'ensemble de votre appareil, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock).
 
 :::
 

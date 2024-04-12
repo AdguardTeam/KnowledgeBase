@@ -1,6 +1,6 @@
 ---
 title: Tarayıcı korumalı sayfalar
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 :::bilgi

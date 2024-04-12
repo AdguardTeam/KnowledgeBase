@@ -1,6 +1,6 @@
 ---
 title: 브라우저에 의해 보호받는 페이지
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 :::info

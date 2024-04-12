@@ -1,6 +1,6 @@
 ---
 title: 설치 방법
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 :::info
