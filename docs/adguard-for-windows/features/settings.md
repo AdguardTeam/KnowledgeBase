@@ -49,9 +49,9 @@ You can flexibly adjust the work of Stealth Mode: for instance, you can prohibit
 
 To learn everything about Stealth Mode and its many options, [read this article](/general/stealth-mode).
 
-### Browsing Security
+### Browsing security
 
-Browsing Security gives strong protection against malicious and phishing websites. No, AdGuard for Windows is not an antivirus. It will neither stop the download of a virus when it's already started, nor delete the already existing ones. But it will warn you if you're about to proceed to a website whose domain has been added to our "untrusted sites" database, or to download a file from such website. You can find more information about how this module works in the [dedicated article](/general/browsing-security).
+Browsing security gives strong protection against malicious and phishing websites. No, AdGuard for Windows is not an antivirus. It will neither stop the download of a virus when it's already started, nor delete the already existing ones. But it will warn you if you're about to proceed to a website whose domain has been added to our "untrusted sites" database, or to download a file from such website. You can find more information about how this module works in the [dedicated article](/general/browsing-security).
 
 In this module you can
 
@@ -59,9 +59,9 @@ In this module you can
 - activate sound notifications,
 - agree to submit anonymous security-related info to the AdGuard server to help us keep the malicious and phishing websites database up to date.
 
-![Browsing Security *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/browsing-security.png)
+![Browsing security *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/browsing-security.png)
 
-In case you want to learn more about Browsing Security, read [this article](/general/browsing-security).
+In case you want to learn more about Browsing security, read [this article](/general/browsing-security).
 
 ### DNS Protection
 
