@@ -19,6 +19,6 @@ Problémem bylo, že v některých případech si aplikace a rozšíření vzáj
 
 ![AdGuard Browser Assistant *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/ad_blocker_browser_extension_assistant.png)
 
-AdGuard Asistent prohlížeče je nové rozšíření prohlížeče, které funguje a působí stejně jako režim integrace, ale je mnohem jednodušší, bez zbytečných funkcí a nezasahuje do desktopových aplikací. You can [read more about Browser Assistant for Windows](/adguard-for-windows/browser-assistant) or [Mac](/adguard-for-mac/features/browser-assistant), or [download it from our website](https://adguard.com/adguard-assistant/overview.html).
+AdGuard Asistent prohlížeče je nové rozšíření prohlížeče, které funguje a působí stejně jako režim integrace, ale je mnohem jednodušší, bez zbytečných funkcí a nezasahuje do desktopových aplikací. Můžete si [přečíst více o Asistentu prohlížeče pro Windows](/adguard-for-windows/browser-assistant) nebo [macOS](/adguard-for-mac/features/browser-assistant), nebo si jej [stáhnout z našich webových stránek](https://adguard.com/adguard-assistant/overview.html).
 
 AdGuard Asistent prohlížeče je k dispozici ve všech známých prohlížečích.

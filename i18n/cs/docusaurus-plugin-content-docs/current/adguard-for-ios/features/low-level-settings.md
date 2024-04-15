@@ -11,15 +11,15 @@ Tento článek popisuje AdGuard pro iOS, multifunkční blokátor reklam, který
 
 ![Low-level settings \*mobile\_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_lowlevel.PNG)
 
-To open the _Low-level settings_, go to _Settings_ → _General_ → (Enable _Advanced mode_ if it's off) → _Advanced settings_ → _Low-level settings_.
+Chcete-li otevřít _Nízkoúrovňová nastavení_, přejděte do _Nastavení_ → _Obecné_ → (Aktivujte _Pokročilý režim_, pokud je vypnutý) → _Pokročilá nastavení_ → _Nízkoúrovňová nastavení_.
 
 Nastavení v této části je většinou lepší ponechat beze změny: používejte je pouze v případě, že jste si jisti tím, co děláte, nebo pokud vás o to požádal tým podpory. Některá nastavení však lze změnit bez jakéhokoli rizika.
 
-### Block IPv6 {#blockipv6}
+### Blokování IPv6 {#blockipv6}
 
 Na každý dotaz DNS odeslaný za účelem získání adresy IPv6 vrátí naše aplikace prázdnou odpověď (jako by tato adresa IPv6 neexistovala). Nyní existuje možnost nevracet adresy IPv6. Na tomto místě se popis této funkce stává příliš technickým: konfigurace nebo zakázání protokolu IPv6 je výhradní doménou pokročilých uživatelů. Pokud patříte mezi ně, bude dobré vědět, že tuto funkci nyní máme, pokud ne — není třeba se do ní nořit.
 
-### Bootstrap and Fallback servers {#bootstrap-fallback}
+### Bootstrap a záložní servery {#bootstrap-fallback}
 
 Záložní server je záložní DNS server. Pokud jste vybrali DNS server a něco se s ním stalo, je třeba nastavit záložní server DNS, dokud hlavní server neodpoví.
 

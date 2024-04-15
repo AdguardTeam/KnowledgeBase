@@ -9,24 +9,24 @@ Tento článek popisuje AdGuard pro iOS, multifunkční blokátor reklam, který
 
 :::
 
-In most cases, an ad blocker app and a VPN app cannot work together, due to certain system limitations.
+Ve většině případů aplikace pro blokování reklam a aplikace VPN nemohou kvůli určitým systémovým omezením fungovat společně.
 
-Nevertheless, we've managed to find a solution to befriend [AdGuard VPN](https://adguard-vpn.com/) and AdGuard Ad Blocker.
+Přesto se nám podařilo najít řešení, jak spřátelit AdGuard VPN](https://adguard-vpn.com/) a blokátor reklam AdGuard.
 
-On the _Protection_ section, you can easily switch between two apps.
+V sekci _Ochrana_ můžete snadno přepínat mezi dvěma aplikacemi.
 
-### How to enable compatibility mode
+### Jak zapnout režim kompatibility
 
-**If you already have AdGuard Ad Blocker when installing AdGuard VPN, integrated (compatibility) mode will turn on automatically, allowing you to use our apps at the same time.**
+**Pokud již máte blokátor reklam AdGuard, při instalaci AdGuard VPN se automaticky zapne režim integrace (kompatibilita), který vám umožní používat naše aplikace současně.**
 
-If you have installed AdGuard VPN first and only then decided to try AdGuard Ad Blocker, follow these steps to use the two apps together:
+Pokud jste si nejprve nainstalovali AdGuard VPN a teprve poté jste se rozhodli vyzkoušet blokátor reklam AdGuard, postupujte podle následujících kroků, abyste mohli obě aplikace používat společně:
 
-1. Open AdGuard VPN for iOS app and select ⚙ _Settings_ in the lower right corner of the screen.
-2. Go to _App settings_ and select _Operating mode_.
-3. Switch the mode from VPN to Integrated.
+1. Otevřete AdGuard VPN pro iOS a vyberte ⚙ "Nastavení" v pravém dolním rohu obrazovky.
+2. Přejděte na _Nastavení aplikace_ a vyberte _Pracovní režim_.
+3. Přepněte režim z VPN na Integrovaný.
 
 :::note
 
-In _Integrated mode_, AdGuard VPN's _Exclusions_ and _DNS server_ features are not available.
+V _režimu integrace_ nejsou dostupné funkce _Výjimky_ a _DNS server_.
 
 :::

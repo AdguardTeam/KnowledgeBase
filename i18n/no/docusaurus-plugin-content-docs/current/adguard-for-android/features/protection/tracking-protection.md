@@ -1,5 +1,5 @@
 ---
-title: Tracking rotection
+title: Tracking protection
 sidebar_position: 2
 ---
 
