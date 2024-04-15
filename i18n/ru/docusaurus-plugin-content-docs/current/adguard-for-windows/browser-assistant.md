@@ -27,7 +27,7 @@ sidebar_position: 3
 
 ## Отдельная вкладка в Настройках
 
-У нового Браузерного помощника есть своя вкладка в настройках AdGuard для Windows, наряду с Антитрекингом, Антифишингом, Родительским контролем и другими. Там вы найдёте ссылку для загрузки расширения для вашего браузера по умолчанию. Кроме того, там можно установить флажок для включения прежней версии Помощника.
+The new Browser Assistant has its own tab in AdGuard for Windows settings, along with Stealth Mode, Browsing security, Parental Control and others. Там вы найдёте ссылку для загрузки расширения для вашего браузера по умолчанию. Кроме того, там можно установить флажок для включения прежней версии Помощника.
 
 ![Настройки *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 

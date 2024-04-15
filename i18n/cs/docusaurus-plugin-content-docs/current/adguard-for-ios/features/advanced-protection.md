@@ -9,17 +9,17 @@ Tento článek popisuje AdGuard pro iOS, multifunkční blokátor reklam, který
 
 :::
 
-In iOS 15 Apple has added the support for Safari Web Extensions, and we in turn added a new _Advanced protection_ module to AdGuard for iOS. Umožňuje AdGuardu aplikovat pokročilá pravidla filtrování, jako jsou pravidla CSS, selektory CSS a skriptlety, a poradit si tak i se složitými reklamami, jako jsou reklamy YouTube.
+V systému iOS 15 přidala společnost Apple podporu pro webová rozšíření Safari a my jsme zase přidali nový modul _Pokročilá ochrana_ do AdGuardu pro iOS. Umožňuje AdGuardu aplikovat pokročilá pravidla filtrování, jako jsou pravidla CSS, selektory CSS a skriptlety, a poradit si tak i se složitými reklamami, jako jsou reklamy YouTube.
 
 ![Advanced protection screen \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_15_en.jpeg)
 
-### How to enable
+### Jak zapnout
 
-To enable _Advanced protection_, open the _Protection_ tab by tapping the second left icon at the bottom of the screen, select the _Advanced protection_ module, activate the feature by toggling the switch slider, and follow the on-screen instructions.
+Chcete-li zapnout _Pokročilou ochranu_, otevřete kartu _Ochrana_ klepnutím na druhou ikonu vlevo dole na obrazovce, vyberte modul _Pokročilá ochrana_, aktivujte funkci přepnutím posuvníku a postupujte podle uvedených pokynů na obrazovce.
 
 :::note
 
-The _Advanced protection_ only works on iOS 15 and later versions. If you are using earlier versions of iOS, you will see the _YouTube ad blocking_ module in the app instead of the _Advanced protection_.
+_Pokročilá ochrana_ funguje pouze v systému iOS 15 a novějším. Pokud používáte starší verze systému iOS, uvidíte v aplikaci modul _blokování reklam YouTube_ namísto modulu _Pokročilá ochrana_.
 
 :::
 

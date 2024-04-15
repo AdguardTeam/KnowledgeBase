@@ -27,7 +27,7 @@ Bei der Verwendung des Browser-Assistenten spielen all diese Probleme keine Roll
 
 ## Separater Tab in den Einstellungen
 
-Der neue Browser-Assistent hat seinen eigenen Tab in den App-Einstellungen, zusammen mit Privatsphäre, Internetsicherheit, Kindersicherung und anderen. Dort finden Sie einen Link zum Herunterladen der Erweiterung für Ihren Standardbrowser. Außerdem gibt es ein Kontrollkästchen, um den alten Assistenten zu aktivieren.
+The new Browser Assistant has its own tab in AdGuard for Windows settings, along with Stealth Mode, Browsing security, Parental Control and others. Dort finden Sie einen Link zum Herunterladen der Erweiterung für Ihren Standardbrowser. Außerdem gibt es ein Kontrollkästchen, um den alten Assistenten zu aktivieren.
 
 ![Einstellungen *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 

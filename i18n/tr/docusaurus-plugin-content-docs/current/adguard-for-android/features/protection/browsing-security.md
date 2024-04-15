@@ -13,11 +13,11 @@ The Browsing security module can be accessed by tapping the _Protection_ tab (se
 
 Browsing security protects you from visiting phishing and malicious websites. Ayrıca sizi olası kötü amaçlı yazılımlara karşı uyarır.
 
-![Browsing Security \*mobile\_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
+![Browsing security \*mobile\_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
 
-Tehlikeli bir siteyi ziyaret etmek üzereyseniz, Gezinti Koruması size aşağıdaki uyarıyı gösterir:
+If you're about to visit a dangerous website, Browsing security will show you the following warning:
 
-![Browsing Security warning \*mobile\_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
+![Browsing security warning \*mobile\_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
 
 :::warning
 
@@ -25,4 +25,4 @@ Android için AdGuard'ın bir antivirüs programı olmadığını lütfen unutma
 
 :::
 
-Gezinti Koruması güvenlidir: AdGuard hangi siteleri ziyaret ettiğinizi bilmez. Site güvenliğini kontrol etmek için URL'ler yerine karma önekleri kullanır. [Learn more about how Browsing security works from this article](/general/browsing-security/).
+Browsing security is safe: AdGuard does not know what websites you visit. Site güvenliğini kontrol etmek için URL'ler yerine karma önekleri kullanır. [Learn more about how Browsing security works from this article](/general/browsing-security/).

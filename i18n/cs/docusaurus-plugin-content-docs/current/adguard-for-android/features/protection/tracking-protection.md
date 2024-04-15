@@ -1,5 +1,5 @@
 ---
-title: Ochrana před sledováním
+title: Tracking protection
 sidebar_position: 2
 ---
 

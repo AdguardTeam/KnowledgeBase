@@ -1,5 +1,5 @@
 ---
-title: Browsing Security
+title: Browsing security
 sidebar_position: 3
 ---
 
@@ -15,9 +15,9 @@ The scope and methods of checks depend on the product you use. In our browser ex
 
 We use the protocol [Safe Browsing API version 2.2](https://code.google.com/p/google-safe-browsing/wiki/Protocolv2Spec) for our work with filters. This protocol allows us to keep your personal data absolutely safe. Our server knows nothing about the websites that you visit. We use hash prefixes for checks, not the opened URLs.
 
-The figure below provides a general understanding of how the Browsing Security module works, using AdGuard for Windows as an example.
+The figure below provides a general understanding of how the Browsing security module works, using AdGuard for Windows as an example.
 
-![Functioning algorithm of Browsing Security module](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_adguard_for_windows.png)
+![Functioning algorithm of Browsing security module](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_adguard_for_windows.png)
 
 ### AdGuard Browser Extension
 
@@ -25,9 +25,9 @@ Browser extensions work differently, using the so-called [*Lookup API*](https://
 
 We bring to your attention that we never get any information that could allow us to determine which websites you visit and use that data in any way.
 
-An approximate algorithm of the functioning of the Browsing Security module is shown in the picture below.
+An approximate algorithm of the functioning of the Browsing security module is shown in the picture below.
 
-![Functioning algorithm of Browsing Security module in AdGuard browser extensions.](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_extension.png)
+![Functioning algorithm of Browsing security module in AdGuard browser extensions.](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_extension.png)
 
 ## AdGuard filters
 
@@ -47,13 +47,13 @@ This filter contains links to pages that could execute malicious code, leading t
 
 Most of the work is automated, so you can be sure that new malware and phishing addresses are added to our database as quickly as possible.
 
-### AdGuard Browsing Security Community
+### AdGuard Browsing security Community
 
-An important tool for maintaining the highest level of filtering is the *AdGuard Browsing Security Community*. Any user of our products — be it AdGuard for Windows or our browser extension — can become a member of the community and help us in the making of AdGuard filters.
+An important tool for maintaining the highest level of filtering is the *AdGuard Browsing security Community*. Any user of our products — be it AdGuard for Windows or our browser extension — can become a member of the community and help us in the making of AdGuard filters.
 
-In the image below, you can see an algorithm of how Browsing Security Community works:
+In the image below, you can see an algorithm of how Browsing security Community works:
 
-![The way AdGuard Browsing Security Community works](https://cdn.adtidy.org/public/Adguard/En/Articles/browsing_security_community.png)
+![The way AdGuard Browsing security Community works](https://cdn.adtidy.org/public/Adguard/En/Articles/browsing_security_community.png)
 
 ### Want to help?
 

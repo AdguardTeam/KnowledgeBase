@@ -23,4 +23,4 @@ Safari için bağımsız bir uzantımız var. Since the release of [Safari 13](h
 
 :::
 
-**Do not forget that the functionality of each extension is strictly limited by the browser’s capabilities.** So if you want to get full-fledged protection, consider installing a standalone program for your computer. There's [a reason why](adguard-browser-extension/comparison-standalone).
+**Her uzantının işlevselliğinin kesinlikle tarayıcının yetenekleri ile sınırlı olduğunu unutmayın.** Bu nedenle, tam teşekküllü koruma elde etmek istiyorsanız, bilgisayarınız için bağımsız bir program kurmayı düşünün. There's [a reason why](adguard-browser-extension/comparison-standalone).

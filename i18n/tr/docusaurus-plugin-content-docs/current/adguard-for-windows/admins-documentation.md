@@ -7,7 +7,9 @@ Bu sayfada AdGuard'ın politika ve tercihlere ilişkin merkezi yönetiminin öze
 
 ## 1. MSI'ı indirin {#msi-download}
 
-[AdGuard MSI x86'yı indirin](https://cdn.adtidy.org/distr/windows/AdGuard_x86.msi) [AdGuard MSI x64'ü indirin](https://cdn.adtidy.org/distr/windows/AdGuard_x64.msi)
+[AdGuard MSI x86'yı](https://cdn.adtidy.org/distr/windows/AdGuard_x86.msi) indirin
+
+[AdGuard MSI x64'ü](https://cdn.adtidy.org/distr/windows/AdGuard_x64.msi) indirin
 
 ## 2. Ağınız için ayarları yapılandırın {#settings-configuring}
 
