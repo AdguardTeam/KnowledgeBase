@@ -2251,7 +2251,6 @@ Modifier aliases (`1p`, `3p`, etc.) are not included in these categories, howeve
 - [`$domain`](#domain-modifier) with negated domains using `~`,
 - [`$match-case`](#match-case-modifier),
 - [`$method`](#method-modifier) with negated methods using `~`,
-- [`$popup`](#popup-modifier),
 - [`$third-party`](#third-party-modifier),
 - [`$to`](#to-modifier),
 - restricted [content-types](#content-type-modifiers) with `~`.
