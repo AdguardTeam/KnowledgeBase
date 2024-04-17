@@ -2261,6 +2261,7 @@ When dealing with a negated domain, app, method, or content-type, we add **1 poi
 #### Defined content-type modifiers, defined methods, defined headers, $all, special exceptions {#priority-category-2}
 
 All allowed content types:
+
 <!-- Please keep them sorted -->
 
 - [`$document`](#document-modifier),
@@ -2280,16 +2281,22 @@ This also includes rules that implicitly add all content types:
 
 - [`$all`](#all-modifier);
 
-Or special exceptions that implicitly add `$document,subdocument`:
+Or rules that implicitly add the modifier `$document`:
+
+- [`$popup`](#popup-modifier);
+
+Or some specific exceptions that implicitly add `$document,subdocument`:
+
+<!-- Please keep them sorted -->
 
 - [`$content`](#content-modifier),
 - [`$elemhide`](#elemhide-modifier),
 - [`$extension`](#extension-modifier),
-- [`$genericblock`](#genericblock-modifier),
-- [`$generichide`](#generichide-modifier),
 - [`$jsinject`](#jsinject-modifier),
-- [`$specifichide`](#specifichide-modifier),
+- [`$genericblock`](#genericblock-modifier),
 - [`$urlblock`](#urlblock-modifier);
+- [`$generichide`](#generichide-modifier),
+- [`$specifichide`](#specifichide-modifier),
 
 Or allowed methods via [`$method`](#method-modifier).
 
@@ -2297,8 +2304,12 @@ Or rules with [`$header`](#header-modifier).
 
 The presence of any content-type modifiers adds `(50 + 50 / N)`, where `N` is the number of modifiers present, for example:
 `||example.com^$image,script` will add `50 + 50 / 2 = 50 + 25 = 75` to the total weight of the rule.
+
 The `$all` also belongs to this category, because it implicitly adds all content type modifiers,
-e.g. `$document,subdocument,image,script,media,<etc>` + `$popup`
+e.g., `$document,subdocument,image,script,media,<etc>` + `$popup`.
+
+The `$popup` also belongs to this category, because it implicitly adds the modifier `$document`.
+Similarly, specific exceptions add `$document,subdocument`.
 
 If there is a `$method` modifier in the rule with allowed methods it adds `(50 + 50 / N)`, where `N` is the number of methods allowed, for example:
 `||example.com^$method=GET|POST|PUT` will add `50 + 50 / 3 = 50 + 16.6 = 67` to the total weight of the rule.
@@ -2371,11 +2382,6 @@ The [`$replace`](#replace-modifier) modifier takes precedence over all blocking 
     Weight of the rule without modifiers: `1`.
 
 1. `||example.com^$match-case`
-
-    Rule weight:
-    base weight + weight of the modifier from [category 1](#priority-category-1): `1 + 1 = 2`.
-
-1. `||example.com^$popup`
 
     Rule weight:
     base weight + weight of the modifier from [category 1](#priority-category-1): `1 + 1 = 2`.
