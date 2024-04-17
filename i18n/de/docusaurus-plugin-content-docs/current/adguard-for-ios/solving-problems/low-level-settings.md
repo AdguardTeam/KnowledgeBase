@@ -5,7 +5,7 @@ sidebar_position: 5
 
 :::info
 
-Dieser Artikel behandelt AdGuard für iOS, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Dieser Artikel behandelt AdGuard für iOS, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -13,13 +13,13 @@ Dieser Artikel behandelt AdGuard für iOS, einem multifunktionalen Werbeblocker,
 
 :::caution
 
-Das Ändern von *Low-Level-Einstellungen* kann Probleme mit der Leistung von AdGuard verursachen, die Internetverbindung unterbrechen oder Ihre Sicherheit und Privatsphäre gefährden. You should only open this section if you are sure of what you are doing or our support-team has asked you about it.
+Das Ändern von *Low-Level-Einstellungen* kann Probleme mit der Leistung von AdGuard verursachen, die Internetverbindung unterbrechen oder Ihre Sicherheit und Privatsphäre gefährden. This section should only be opened if you know what you are doing, or you were asked to do so by our support team.
 
 :::
 
 To go to *Low-level settings*, tap the gear icon at the bottom right of the screen to open *Settings*. Select the *General* section and then toggle on the *Advanced mode* switch, after that the *Advanced settings* section will appear below. Tap *Advanced settings* to reach the *Low-level settings* section.
 
-## Low-level settings
+## Low-Level-Einstellungen
 
 ### Tunnel mode
 

@@ -5,7 +5,7 @@ sidebar_position: 10
 
 :::info
 
-本文适用于安卓版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -15,7 +15,7 @@ In this article you will find the methods on how to solve problems with AdGuard 
 
 On Android 9 and later, if AdGuard is installed for more than one user profile on your device, you may encounter problems when uninstalling the app. When you uninstall AdGuard from one user profile, the app will still appear on the app list, but you won't be able to uninstall or reinstall it. This happens because AdGuard is installed for a different user profile on the device.
 
-If you try to reinstall AdGuard after an unsuccessful removal attempt, you will see the error message "You can't install the app on your device".
+If you try to reinstall AdGuard after an unsuccessful removal attempt, you will see the error message “You can't install the app on your device”.
 
 To solve this problem, you need to uninstall the application for all users: go to Settings → All apps → AdGuard. Tap the three-dot menu in the top right corner and select *Uninstall for all users*.
 
@@ -51,7 +51,7 @@ This approach is available starting from **AdGuard v3.5 nightly 6**. 如您仍�
 
 :::
 
-1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
 
 1. 使用 **USB 电缆**将您的设备连接至您已安装 **ADB** 的电脑或笔记本等设备上;
 
@@ -85,7 +85,7 @@ To enable this mode, open **AdGuard Settings** → **Network** → **Filtering m
 - 前往**设置**；
 - 点击**高级**功能；
 - 向下移动，点击**双 Messenger 账户**；
-- 禁用所有应用使用**应用分身**；
+- Disable the **Dual messenger** for all apps;
 - 锁定您的设备5分钟；
 - 解锁屏幕并重新试图创建 VPN 账号。
 
@@ -94,5 +94,5 @@ To enable this mode, open **AdGuard Settings** → **Network** → **Filtering m
 - 前往**设置**；
 - 选择**常规**标签钮；
 - 向下移动，点击**双开应用**；
-- 移除应用分身列表中所有的应用；
+- Remove all apps from the list;
 - 重启您的设备。

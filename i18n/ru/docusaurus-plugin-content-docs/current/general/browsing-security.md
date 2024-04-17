@@ -1,5 +1,5 @@
 ---
-title: Защита от фишинга
+title: Browsing security
 sidebar_position: 3
 ---
 
@@ -15,19 +15,19 @@ sidebar_position: 3
 
 Мы используем протокол [Safe Browsing API версии 2.2](https://code.google.com/p/google-safe-browsing/wiki/Protocolv2Spec) для работы с фильтрами. Этот протокол позволяет сохранить ваши личные данные в полной безопасности. Наш сервер ничего не знает о тех сайтах, которые вы посещаете. Для проверок используются не открытые адреса, а префиксы их хешей.
 
-Приблизительный алгоритм работы антифишингового модуля изображён на рисунке ниже на примере приложения AdGuard для Windows.
+The figure below provides a general understanding of how the Browsing security module works, using AdGuard for Windows as an example.
 
-![Алгоритм работы Защиты от фишинга](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_adguard_for_windows.png)
+![Functioning algorithm of Browsing security module](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_adguard_for_windows.png)
 
 ### Браузерное расширение AdGuard
 
-Браузерные расширения работают иначе, используя так называемый [*Lookup API*](https://github.com/AdguardTeam/AdguardForAndroid/issues/162#issue-115487668) для проверки адресов страниц, которые вы посещаете. Каждый раз, когда вы посещаете какой-либо сайт, ваш локальный клиент обменивается информацией с нашим внутренним сервером в виде хешей и хеш-префиксов. Тем, кому этот процесс интересен на более глубоком уровне, будет полезна ссылка выше. В результате этого обмена локальный клиент определяет, входит ли сайт в базу потенциально опасных сайтов.
+Браузерные расширения работают иначе, используя так называемый [*Lookup API*](https://github.com/AdguardTeam/AdguardForAndroid/issues/162#issue-115487668) для проверки адресов страниц, которые вы посещаете. Каждый раз, когда вы посещаете какой-либо сайт, ваш локальный клиент обменивается информацией с нашим внутренним сервером в виде хешей и хеш-префиксов. Based on this exchange, the local client determines whether or not the site is listed in the potentially dangerous sites database. Тем, кому этот процесс интересен на более глубоком уровне, будет полезна ссылка выше.
 
 Обращаем ваше внимание на то, что мы никогда не получаем никакой информации, которая позволила бы нам определить, какие сайты вы посещаете, и каким-либо образом использовать эти данные.
 
-Приблизительный алгоритм работы Защиты от фишинга изображён на рисунке ниже.
+An approximate algorithm of the functioning of the Browsing security module is shown in the picture below.
 
-![Алгоритм работы Защиты от фишинга в браузерных расширениях AdGuard](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_extension.png)
+![Functioning algorithm of Browsing security module in AdGuard browser extensions.](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_extension.png)
 
 ## Фильтры AdGuard
 
@@ -41,19 +41,19 @@ sidebar_position: 3
 
 ### Фильтр вредоносных сайтов
 
-Фильтр содержит ссылки на страницы, которые приводят к исполнению вредоносного кода. Исполнение может инициировать утечку или потерю данных, а также причинить вред устройству пользователя. Этот процесс может быть санкционированным (например, при скачивании и запуске исполняемого файла) или несанкционированным (например, при атаке шпионским программным обеспечением).
+This filter contains links to pages that could execute malicious code, leading to potential leaks, data loss, or damage to a user’s device. Code execution can be authorized (for example, when downloading and running the executable file) or unauthorized (for example, when being attacked with spyware).
 
-## Как мы пополняем фильтры
+## How do we add new addresses to our filters?
 
-Наши фильтры постоянно пополняются новыми адресами. Так как большая часть работы автоматизирована, вы можете быть уверены, что новые фишинговые и вредоносные адреса попадут в нашу базу максимально быстро.
+Most of the work is automated, so you can be sure that new malware and phishing addresses are added to our database as quickly as possible.
 
-### Сообщество Защиты от фишинга AdGuard
+### AdGuard Browsing security Community
 
-Важный инструмент для поддержания фильтрации на высоком уровне — *сообщество Защиты от фишинга*. Любой пользователь наших продуктов, будь то AdGuard для Windows или браузерное расширение, может стать участником сообщества и помогать нам в составлении фильтров AdGuard.
+An important tool for maintaining the highest level of filtering is the *AdGuard Browsing security Community*. Любой пользователь наших продуктов, будь то AdGuard для Windows или браузерное расширение, может стать участником сообщества и помогать нам в составлении фильтров AdGuard.
 
-На рисунке мы изобразили алгоритм работы сообщества:
+In the image below, you can see an algorithm of how Browsing security Community works:
 
-![Как работает сообщество Защиты от фишинга](https://cdn.adtidy.org/public/Adguard/En/Articles/browsing_security_community.png)
+![The way AdGuard Browsing security Community works](https://cdn.adtidy.org/public/Adguard/En/Articles/browsing_security_community.png)
 
 ### Как помочь
 

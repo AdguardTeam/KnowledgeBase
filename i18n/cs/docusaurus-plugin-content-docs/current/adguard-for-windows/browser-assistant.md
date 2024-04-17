@@ -27,13 +27,16 @@ Při použití Asistenta prohlížeče všechny tyto problémy nevadí, protože
 
 ## Samostatná karta v nastavení
 
-Nový Asistent prohlížeče má v nastavení AdGuardu pro Windows vlastní záložku spolu s Režimem utajení, Bezpečným prohlížením, Ochranou rodiny a dalšími. Zde najdete odkaz ke stažení rozšíření pro váš výchozí prohlížeč. Kromě toho je zde zaškrtávací políčko pro povolení staršího asistenta.
+The new Browser Assistant has its own tab in AdGuard for Windows settings, along with Stealth Mode, Browsing security, Parental Control and others. Zde najdete odkaz ke stažení rozšíření pro váš výchozí prohlížeč. Kromě toho je zde zaškrtávací políčko pro povolení staršího asistenta.
 
 ![Settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 
 ## Starý Asistent
 
-Starý Asistent je předchozí verze Asistenta, která je pouhým uživatelským skriptem, nikoli rozšířením prohlížeče. V zásadě existují dva případy, kdy jej budete chtít zvolit namísto nového Asistenta prohlížeče: 1) nový Asistent není pro váš prohlížeč k dispozici; 2) jste zvyklí na ikonu zeleného štítu a chcete ponechat vše při starém.
+Starý Asistent je předchozí verze Asistenta, která je pouhým uživatelským skriptem, nikoli rozšířením prohlížeče. V zásadě existují dva případy, kdy byste ho mohli zvolit místo nového Asistenta prohlížeče:
+
+1. Nový Asistent není pro váš prohlížeč k dispozici.
+1. Jste zvyklí na ikonu zeleného štítu a chcete ponechat vše při starém.
 
 ## Jak nainstalovat Asistenta prohlížeče AdGuard
 

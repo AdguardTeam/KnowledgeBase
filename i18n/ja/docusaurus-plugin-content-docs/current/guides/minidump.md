@@ -1,56 +1,56 @@
 ---
-title: How to create a minidump file to fix the BSoD error
+title: BSoDエラーを修正するためのminidumpファイルを作成する方法
 sidebar_position: 8
 ---
 
-Almost all Windows users are familiar with the [Blue Screen of Death (BSoD)](https://en.wikipedia.org/wiki/Blue_screen_of_death) error unfortunately. BSoD occurs when the Windows system encounters problems that can affect safe system operation, such as problems with third-party driver code, hardware, or Microsoft code. To solve the blue screen error, users can use a minidump file.
+ほとんどのWindowsユーザーは、残念ながら[ブルースクリーンオブデス（BSoD）](https://en.wikipedia.org/wiki/Blue_screen_of_death)エラーに直面したりすることがよくあります。 BSoDは、Windowsシステムが、サードパーティのドライバーコード、ハードウェア、マイクロソフトのコードの問題のような、安全なシステム操作に影響を与える問題に遭遇したときに発生します。 ブルースクリーンエラーを解決するには、ミニダンプ（minidump）ファイルを使用することができます。
 
-## What is Minidump file
+## ミニダンプ（minidump）ファイルとは何ですか?
 
-A minidump file is a file that contains the information about the nature of the system crash. It is created just before the blue screen appears and it has the minimum amount of useful information that can be used to solve the problem. The minidump file usually has a *.dmp* extension.
+ミニダンプファイルは、システムクラッシュの性質に関する情報を含むファイルです。 ブルースクリーンが表示される直前に作成され、問題解決に使える最低限の有益な情報が含まれています。 ミニダンプファイルの拡張子は通常*.dmp*です。
 
 :::note
-On Windows 10, the blue screen shows a stop code and a QR code. The user can use this information and search the Web for the specific problem.
+Windows 10では、ブルースクリーンにストップコードとQRコードが表示されます。 ユーザーはこの情報を使って、特定の問題をウェブで検索することができます。
 
 :::
 
-The option to create the minidump file is disabled by default, so before we go into more detail on how to use the file, let’s take a closer look at how to enable it.
+ミニダンプファイルを作成するオプションはデフォルトでは無効になっているので、ファイルの使い方を詳しく説明する前に、作成を有効にする方法を詳しく見てみましょう。
 
-## Set up Windows to create the Minidump file
+## minidumpファイルを作成するためにWindowsをセットアップする方法
 
-Even if you don’t experience any BSoD crash errors,  you can still set this option — this is a general recommendation, not necessarily related to AdGuard products. Please follow the instructions below to automatically create the minidump file.
+BSoDクラッシュエラーが発生しない場合でも、このオプションを設定することができます。これは一般的な推奨事項であり、AdGuard製品に関係なくでも有効にできます。 ミニダンプファイルを自動的に作成するには、以下の手順に従ってください:
 
- 1. Type *sysdm.cpl* in the Windows search bar and click **Open**. The **System Properties Control Panel Menu** window will appear on the screen.
+ 1. Windowsの検索バーに「*sysdm.cpl*」と入力し、「**開く**」をクリックします。 **システム・プロパティ・コントロールパネル・メニュー**ウィンドウが画面に表示されます。
 
     :::tip
 
-    Alternatively, click **Settings** →  **System** →  **About** →  **Advanced system settings**.
+    もしくは、**設定** →  **システム** →  **情報** →  **高度なシステム設定**
 
 
 :::
 
-    ![System Properties *mobile_border](https://cdn.adtidy.org/blog/new/c2huSystem_Properties.jpeg)
+    ![システムプロパティ *mobile_border](https://cdn.adtidy.org/blog/new/c2huSystem_Properties.jpeg)
 
- 1. Go to the **Advanced** tab.
- 1. In the **Startup and Recovery** section, click **Settings**.
+ 1. **詳細設定**タブに移動します。
+ 1. **スタートアップとリカバリ**セクションで、**設定**をクリックします。
 
-    ![Startup and Recovery *mobile_border](https://cdn.adtidy.org/blog/new/1dmybiStartup_and_Recovery.png)
+    ![スタートアップとリカバリ *mobile_border](https://cdn.adtidy.org/blog/new/1dmybiStartup_and_Recovery.png)
 
- 1. Enable the following three options:
+ 1. 以下の3つのオプションを有効にします:
 
-    - Write an event to the system log
-    - Automatically restart
-    - Writing debugging information → Small memory dump (256 kb)
+    - システムログにイベントを書き込む
+    - 自動的に再起動
+    - デバッグ情報の書き込み → 小型メモリーダンプ（256kb）
 
-    ![Three options *mobile_border](https://cdn.adtidy.org/blog/new/nmr4eThree_options.png)
+    ![3つのオプション *mobile_border](https://cdn.adtidy.org/blog/new/nmr4eThree_options.png)
 
- 1. Click **OK** to apply the settings.
- 1. Restart the computer.
+ 1. **OK**をクリックして設定を適用します。
+ 1. コンピュータを再起動します。
 
-You've successfully enabled the minidump file. Now it will be created automatically when the system crashes.
+これでミニダンプファイルが有効になりました。 これで、システムがクラッシュしたときに自動的に作成されます。
 
 :::note
 
-By default the minidump file is stored in the **%SystemRoot%\Minidump** folder. You can change the directory location to whatever you like, but please remember that a lot of programs are set to look for this location by default, so we recommend that you do not change the location.
+デフォルトでは、ミニダンプファイルは**%SystemRoot%\Minidump**フォルダに保存されます。 ディレクトリの場所は好きなように変更できますが、多くのプログラムはデフォルトでこの場所を探すように設定されていることにご注意ください。
 
 :::

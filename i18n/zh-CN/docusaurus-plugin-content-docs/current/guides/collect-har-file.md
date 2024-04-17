@@ -7,7 +7,7 @@ HAR 文件可帮助我们的技术支持团队解决复杂的问题。 为了创
 
 ## Chrome 浏览器 {#chrome}
 
-如要在 Chrome 中创建 HAR 文件请执行以下操作：
+To create a HAR file in Chrome, follow these steps:
 
 1. 前往出现问题的 URL。 暂时不要重复导致问题的操作。
 
@@ -16,7 +16,7 @@ HAR 文件可帮助我们的技术支持团队解决复杂的问题。 为了创
     - From menu: **Menu → More Tools → Developer Tools**.
     - Keyboard: **Ctrl+Shift+C**, or **Ctrl+Alt+I**, or **⌥+⌘+I for Mac**.
 
-1. Click on the **Network tab**.
+1. Click the **Network tab**.
 
 1. 找到 Network 标签中的左上角的圆形按钮，并确认它处于红色录音模式。 如果是灰色的，请您单击使其变为红色的，并开始录音。
 
@@ -32,7 +32,7 @@ HAR 文件可帮助我们的技术支持团队解决复杂的问题。 为了创
 
 1. Save session as a .har file by right-clicking the grid and selecting **Save as HAR with content**.
 
-1. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+1. Send it to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
 
 ## Edge 浏览器 {#edge}
 
@@ -43,7 +43,7 @@ HAR 文件可帮助我们的技术支持团队解决复杂的问题。 为了创
     - From menu: **Menu → More Tools → Developer Tools**.
     - Keyboard: **Ctrl+Shift+C**, or **Ctrl+Alt+I**, or **⌥+⌘+I for Mac**.
 
-1. Click on the **Network tab**.
+1. Click the **Network tab**.
 
 1. 找到 Network 标签中的左上角的圆形按钮，并确认它处于红色录音模式。 如果是灰色的，请您单击使其变为红色的，并开始录音。
 
@@ -59,11 +59,11 @@ HAR 文件可帮助我们的技术支持团队解决复杂的问题。 为了创
 
 1. Save session as a .har file by right-clicking the grid and selecting **Save as HAR with content**.
 
-1. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+1. Send it to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
 
 ## Firefox 浏览器 {#firefox}
 
-To create a HAR file in Firefox:
+To create a HAR file in Firefox, follow these steps:
 
 1. 前往出现问题的 URL。 暂时不要重复导致问题的操作。
 
@@ -76,7 +76,7 @@ To create a HAR file in Firefox:
 
     - 按钮应处于继续记录模式。
 
-1. If any information is currently displayed in the grid, clear by clicking the **Delete trash can** button next to the play/pause button.
+1. If any information is currently displayed in the grid, clear by clicking the **Empty trash can** button next to the play/pause button.
 
 1. Select the **Persist Logs** check box on the Network tab.
 
@@ -88,11 +88,11 @@ To create a HAR file in Firefox:
 
 1. Save session as a .har file by right-clicking the grid and selecting **Save all as HAR**.
 
-1. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+1. Send it to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
 
 ## Internet Explorer11 浏览器 {#ie11}
 
-To create a HAR file in Internet Explorer 11:
+To create a HAR file in Internet Explorer 11, follow these steps:
 
 1. 前往出现问题的 URL。 暂时不要重复导致问题的操作。
 
@@ -113,13 +113,13 @@ To create a HAR file in Internet Explorer 11:
 
 1. Reproduce the steps that create the issue.
 
-1. Save session as a .har file by clicking on the **Save disk** button (Export as HAR) on Network tab.
+1. Save session as a .har file by clicking the **Save to disk** button (Export as HAR) on Network tab.
 
-1. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+1. Send it to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
 
 ## Safari 浏览器 {#safari}
 
-To create a HAR file in Safari:
+To create a HAR file in Safari, follow these steps:
 
 1. Check the Safari menu bar at the top of the screen for a **Develop** menu.
 
@@ -131,7 +131,7 @@ To create a HAR file in Safari:
 1. Open **Network** tab in Web Inspector:
 
     - From menu: **Develop → Show Web Inspector → Network**.
-    - Keyboard: **⌥+⌘+I→Network**
+    - Keyboard: **⌥+⌘+I → Network**
 
 1. Check **Preserve Log** checkbox on left side of the Network tabs, within the **Other filter options...** menu.
 
@@ -147,7 +147,7 @@ To create a HAR file in Safari:
 
 1. Save session as a .har file by clicking the **Export** icon next to the **Delete Trash** icon.
 
-1. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, too.
+1. Send it to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, too.
 
 ## 安卓系统 {#android}
 

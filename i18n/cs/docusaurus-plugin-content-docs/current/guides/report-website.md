@@ -53,7 +53,7 @@ Chcete-li nahlásit opakované vložení reklamy nebo nesprávné zobrazení web
 
 ### Mac {#mac}
 
-- Otevřete [AdGuard Asistenta prohlížeče](/adguard-for-mac/browser-assistant) a stiskněte **Nahlásit problém**:
+- Otevřete [Asistent prohlížeče AdGuard](/adguard-for-mac/features/browser-assistant) a stiskněte **Nahlásit problém**:
 
 ![mac *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/guides/browser-assistant-mac.png)
 
@@ -146,4 +146,4 @@ Například se setkáte s tím, že se vaše oblíbená webová stránka neotev�
 
 ### **Blokátory třetích stran**
 
-Některé prohlížeče a antivirové programy (například Yandex Browser, Kaspersky atd.) mají zabudované blokátory reklam. Mohou ovlivnit a způsobit problémy při provozu stránek. Pokud takové programy používáte, ujistěte se, že problém je na straně **AdGuardu**: vypněte filtrování **AdGuardem** a zkuste problém zopakovat. Pokud problém přetrvává, znamená to, že problém je způsoben jinou aplikací nebo prohlížečem. Pokud je problém způsoben **AdGuardem**, postupujte podle kroků popsaných v předchozích odstavcích.
+Některé prohlížeče a antivirové programy (například Yandex Browser, Kaspersky atd.) mají zabudované blokátory reklam. Mohou ovlivnit a způsobit problémy při provozu stránek. Pokud takové programy používáte, nejprve se ujistěte, že problém způsobuje **AdGuard**: vypněte filtrování **AdGuardu** a zkuste problém reprodukovat. Pokud problém přetrvává, znamená to, že problém je způsoben jinou aplikací nebo prohlížečem. Pokud je problém způsoben **AdGuardem**, postupujte podle kroků popsaných v předchozích odstavcích.

@@ -5,7 +5,7 @@ sidebar_position: 8
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Mac için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Mac için AdGuard hakkındadır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -27,11 +27,11 @@ The network extensions API has a VPN-like configuration with a list of route-lik
 
 On Monterey, iCloud Private Relay got introduced. Privacy features of Mail.app also use Private Relay servers.
 
-As a result, AdGuard can't work together with iCloud Private Relay and Mail.app privacy features:
+As a consequence, AdGuard can't work together with iCloud Private Relay and Mail app privacy features:
 
-1. iCloud Private Relay is applied to connections at the library level - before they reach the socket level, where AdGuard operates.
+1. iCloud Private Relay is applied to connections at the library level — before they reach the socket level, where AdGuard operates.
 2. iCloud Private Relay uses QUIC, which AdGuard can't filter because HTTP/3 filtering is not yet available.
-3. As AdGuard blocks QUIC, including iCloud Private Relay traffic - otherwise, ad blocking is impossible.
+3. Consequently, AdGuard blocks QUIC, including iCloud Private Relay traffic – otherwise, ad blocking is impossible.
 4. When you use iCloud Private Relay and switch AdGuard into the "split-tunnel" mode, you can't open websites in Safari.
 5. To work around this issue for Monterey, we apply the "default route" rule. When Private Relay sees that rule, it disables itself automatically. So, AdGuard works seamlessly on Monterey, but iCloud Private Relay gets disabled.
 
@@ -39,4 +39,4 @@ As a result, AdGuard can't work together with iCloud Private Relay and Mail.app 
 
 ## Recommended solution
 
-At this point, we recommend using a more traditional VPN service, such as [AdGuard VPN](https://adguard-vpn.com/), instead of the new Apple's privacy features.
+At this point, we recommend using a more traditional VPN service, such as [AdGuard VPN](https://adguard-vpn.com/), instead of the newer Apple privacy features.

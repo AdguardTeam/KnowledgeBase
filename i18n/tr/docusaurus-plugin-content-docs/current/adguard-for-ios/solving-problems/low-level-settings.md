@@ -13,7 +13,7 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 :::caution
 
-Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only open this section if you are sure of what you are doing or our support-team has asked you about it.
+Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. This section should only be opened if you know what you are doing, or you were asked to do so by our support team.
 
 :::
 
@@ -23,13 +23,13 @@ To go to *Low-level settings*, tap the gear icon at the bottom right of the scre
 
 ### Tunnel mode
 
-There are two main tunnel modes: *Split* and *Full*. *Split-Tunnel* mode provides compatibility of AdGuard and so-called "Personal VPN" apps. In *Full-Tunnel* mode no other VPN can work simultaneously with AdGuard.
+İki ana tünel modu vardır: *Bölünmüş* ve *Tam*. *Split-Tunnel* modu, AdGuard ve sözde "Kişisel VPN" uygulamalarının uyumluluğunu sağlar. *Tam Tünel* modunda başka hiçbir VPN AdGuard ile aynı anda çalışamaz.
 
-There is a specific feature of *Split-Tunnel* mode: if DNS proxy does not perform well, for example, if the response from the AdGuard DNS server was not returned in time, iOS will "amerce" it and reroute traffic through DNS server, specified in iOS settings. No ads are blocked at this time and DNS traffic is not encrypted.
+There is a specific feature of *Split-Tunnel* mode: if DNS proxy does not perform well, for example, if the response from the AdGuard DNS server was not returned in time, iOS will "amerce" it and reroute traffic through DNS server, specified in iOS settings. Şu anda hiçbir reklam engellenmiyor ve DNS trafiği şifrelenmiyor.
 
-In *Full-Tunnel* mode only the DNS server specified in AdGuard settings is used. If it does not respond, the Internet will simply not work. Enabled *Full-Tunnel* mode may cause the incorrect performance of some programs (for instance, Facetime), and lead to problems with app updates.
+*Tam Tünel* modunda yalnızca AdGuard ayarlarında belirtilen DNS sunucusu kullanılır. Yanıt vermezse, internet basitçe çalışmaz. Enabled *Full-Tunnel* mode may cause the incorrect performance of some programs (for instance, Facetime), and lead to problems with app updates.
 
-By default, AdGuard uses *Split-Tunnel* mode as the most stable option.
+Varsayılan olarak, AdGuard en kararlı seçenek olarak *Bölünmüş Tünel* modunu kullanır.
 
 There is also an additional mode called *Full-Tunnel (without VPN icon)*. This is exactly the same as *Full-Tunnel* mode, but it is set up so that the VPN icon is not displayed in the system line.
 
@@ -59,6 +59,6 @@ For DNS-over-HTTPS, DNS-over-TLS, and DNS-over-QUIC a bootstrap server is requir
 
 Here you can specify an alternate server to which a request will be rerouted if the main server fails to respond. If not specified, the system DNS server will be used as the fallback. It is also possible to specify `none`, in this case, there will be no fallback server set and only the main DNS server will be used.
 
-### Background app refresh time
+### Arka planda uygulama yenileme süresi
 
 Here you can select the frequency at which the application will check for filter updates while in the background. Note that update checks will not be performed more often than the specified period, but the exact intervals may not be respected.

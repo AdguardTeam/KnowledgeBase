@@ -5,7 +5,7 @@ sidebar_position: 9
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Mac için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Mac için AdGuard hakkındadır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -45,7 +45,7 @@ You will find more information about the problem [in this article](../icloud-pri
 
 `network.extension.dns.redirect.exclude.bundleids`
 
-Here you can specify a list of applications that make DNS queries directly not via system DNS resolver (for example, some VPN clients or DNS filtering applications). DNS filtering will be disabled for them in the *Network Extension mode*. The bundle IDs should be separated by a comma or line break.
+Here you can specify a list of applications that make DNS queries directly not via system DNS resolver (for example, some VPN clients or DNS filtering applications). DNS filtering will be disabled for them in the *Network Extension mode*. Paket kimlikleri virgül veya satır sonu ile ayrılmalıdır.
 
 `network.dns.filter.secure.request`
 
@@ -53,11 +53,11 @@ Redirects secure DNS requests to a local DNS proxy, if there is one available.
 
 `network.https.ocsp.check`
 
-By setting `true`, you enable HTTPS certificate revocation checking.
+`true` ayarını yaparak HTTPS sertifika iptal kontrolünü etkinleştirirsiniz.
 
 `network.tcp.keepalive.enabled`
 
-Periodically sends TCP packets over an idle connection to ensure that it remains active and to renew NAT timeouts.
+Etkin kalmasını sağlamak ve NAT zaman aşımlarını yenilemek için boşta olan bir bağlantı üzerinden periyodik olarak TCP paketleri gönderir.
 
 `network.tcp.keepalive.interval.seconds`
 
@@ -157,11 +157,11 @@ Encrypted Client Hello parametrelerini yanıtlardan kaldırır.
 
 `stealth.antidpi.http.split.fragment.size`
 
-HTTP istek parçalanmasının boyutunu ayarlar. Kabul edilen değerler: 1–1500. Geçersiz bir boyut belirtilirse, sistem varsayılan değeri kullanır.
+HTTP istek parçalanmasının boyutunu ayarlar. Geçerli değerler: 1–1500. Geçersiz bir boyut belirtilirse, sistem varsayılan değeri kullanır.
 
 `stealth.antidpi.clienthello.split.fragment.size`
 
-This option specifies the size of TCP packet fragmentation, which helps avoid deep packet inspection. Kabul edilen değerler: 1–1500. Geçersiz bir boyut belirtilirse, sistem varsayılan değeri kullanır.
+This option specifies the size of TCP packet fragmentation, which helps avoid deep packet inspection. Geçerli değerler: 1–1500. Geçersiz bir boyut belirtilirse, sistem varsayılan değeri kullanır.
 
 `stealth.antidpi.http.space.juggling`
 

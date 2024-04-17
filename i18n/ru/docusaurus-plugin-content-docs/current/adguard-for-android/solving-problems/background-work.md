@@ -5,11 +5,11 @@ sidebar_position: 9
 
 :::info
 
-В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-В некоторых случаях приложения не остаются в фоновом режиме («активными» или в спящем режиме) из-за встроенной функции оптимизации ОС Android или так называемого «режима экономии батареи» — эта функция может закрывать фоновые приложения. Может быть неудобно перезапускать их каждый раз, когда они закрываются. Чтобы избежать завершения работы фонового приложения, необходимо выполнить шаги, указанные нами в инструкции отдельно для каждого производителя (версии) Android OS. Обратите внимание, что инструкции для разных производителей в основном очень похожи.
+In some cases, apps won't stay in the background (“alive” or in a sleep mode) due to the Android OS optimization function, or the so-called “battery save mode” — this function can kill background apps. Может быть неудобно перезапускать их каждый раз, когда они закрываются. Чтобы избежать завершения работы фонового приложения, необходимо выполнить шаги, указанные нами в инструкции отдельно для каждого производителя (версии) Android OS. Обратите внимание, что инструкции для разных производителей в основном очень похожи.
 
 ## Asus
 
@@ -31,15 +31,15 @@ sidebar_position: 9
 
 Чтобы приложение AdGuard успешно работало в фоновом режиме, сделайте следующее:
 
-Зайдите в **Настройки** → **Приложения** → **Управление приложениями** → прокрутите вниз до **AdGuard** и включите **Автозапуск**.
+In **Settings** → **Apps** → **Manage apps** → scroll down to locate **AdGuard**, set **Autostart** to “On”.
 
 ![Настройки Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
 
-На том же экране прокрутите вниз до настройки **Контроль активности**, перейдите в неё и выберите «Нет ограничений».
+Scroll down to **Battery saver**, tap it, and set to “No restrictions”.
 
 ![Miui *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_0a.png)
 
-В разделе **Другие разрешения** включите все возможные разрешения
+In **Other Permissions**, set all possible permissions to “On”
 
 Запустите приложение **Безопасность**.
 
@@ -67,8 +67,8 @@ sidebar_position: 9
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
 
-- Включите Автозапуск AdGuard
-- Включите все возможные разрешения в «Других разрешениях»
+- Set Autostart to “On”
+- Set all possible permissions in Other Permissions to “On”
 - В Разрешениях выберите **Нет ограничений** для Контроля фоновой активности
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi5en.jpeg)
@@ -77,7 +77,7 @@ sidebar_position: 9
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi6.jpeg)
 
-Нажмите на него и удерживайте, пока не появится специальное меню. Нажмите на значок замка.
+Tap and hold it until a menu pops up. Нажмите на значок замка.
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi7en.jpeg)
 
@@ -89,7 +89,7 @@ sidebar_position: 9
 
 Чтобы приложение успешно работало в фоновом режиме, настройте следующие параметры:
 
-- Включите Автозапуск AdGuard
+- Set Autostart to “On”
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/xiaomi1en.png)
 
@@ -114,7 +114,7 @@ sidebar_position: 9
 - **Настройки устройства** → **Приложения** → **AdGuard** → **Батарея** → **Энергосберегающая подсказка** и **Продолжить работу после выключения экрана**
 - **Настройки** → **Дополнительные настройки** → **Батарея и производительность** → **Управление использованием батареи приложениями**. И здесь:
 
-1. Отключите режимы энергосбережения
+1. Switch Power Saving Modes to “Off”
 1. Выберите следующие параметры: **Энергосбережение в фоновом режиме** → **Выбрать приложение** → **AdGuard** → **Фоновые настройки** → **Нет ограничений**
 
 #### Режим энергосбережения
@@ -342,7 +342,7 @@ Huawei чрезвычайно изобретательны в оптимизац
 
 - Откройте **Настройки** → затем **Менеджер батареи** → в **Управлении питанием** выберите **Производительность**;
 - Затем выберите **Защищённые приложения** в разделе **Менеджер батареи** и проверьте, есть ли среди них AdGuard;
-- Откройте раздел **Приложения** в основных настройках и выберите AdGuard → затем **Батарея** → активируйте опции **Сообщать об энергоёмкости** и **Работа при выключенном экране**;
+- Go to **Apps** in the main settings and tap AdGuard there → choose **Battery** → enable **Power-intensive prompt** and **Keep running after screen is off**;
 - Затем в разделе **Приложения** откройте **Настройки** (внизу экрана) → **Специальный доступ** → выберите **Игнорировать оптимизацию батареи** → нажмите **Разрешить** → **Все приложения** → найдите AdGuard в списке и выберите **Запретить**.
 
 ## Meizu
@@ -351,11 +351,11 @@ Huawei чрезвычайно изобретательны в оптимизац
 
 - Откройте **Расширенные настройки** → затем **Менеджер батареи** → в **Управлении питанием** выберите **Производительность**;
 - Затем выберите **Защищённые приложения** в разделе **Менеджер батареи** и проверьте, находится ли AdGuard среди них;
-- Откройте раздел **Приложения** и выберите AdGuard → **Батарея** → активируйте опции **Сообщать об энергоёмкости** и **Работа при выключенном экране**.
+- Go to **Apps** section and tap AdGuard there → choose **Battery** → enable **Power-intensive prompt** and **Keep running after screen is off**.
 
 ## Nokia
 
-На устройствах Nokia с Android 9+ отключена функция **The Evenwell Power saver**, которая была основной причиной остановки фоновых процессов. Если AdGuard по-прежнему не работает на вашем телефоне Nokia, ознакомьтесь с [инструкцией для устаревших моделей](https://dontkillmyapp.com/hmd-global).
+Nokia devices running Android 9+ have **The Evenwell Power saver** disabled, which was the main culprit for killing background processes. Если AdGuard по-прежнему не работает на вашем телефоне Nokia, ознакомьтесь с [инструкцией для устаревших моделей](https://dontkillmyapp.com/hmd-global).
 
 ### Nokia 1 (Android Go)
 
@@ -367,7 +367,7 @@ Huawei чрезвычайно изобретательны в оптимизац
 
 1. Включите **отладку через USB** в Параметрах разработчика на телефоне;
 
-1. Удалите файл **com.evenwell.emm** с помощью следующих команд adb:
+1. Uninstall the **com.evenwell.emm** package via the following ADB commands:
 
     `adb shell` `pm uninstall --user 0 com.evenwell.emm`
 
@@ -423,7 +423,7 @@ Huawei чрезвычайно изобретательны в оптимизац
 
 1. Включите **отладку через USB** в Параметрах разработчика на телефоне;
 
-1. Удалите файл **com.evenwell.powersaving.g3** с помощью следующих команд adb:
+1. Uninstall the **com.evenwell.powersaving.g3** package via the following ADB commands:
 
     `adb shell` `pm uninstall --user 0 com.evenwell.powersaving.g3`
 
@@ -436,7 +436,7 @@ Huawei чрезвычайно изобретательны в оптимизац
 Другие решения:
 
 - Закрепите AdGuard в меню последних действий
-- Добавьте AdGuard в список приложений в «менеджере запуска» и «плавающем списке приложений» (com.coloros.safecenter / com.coloros.safecenter.permission.Permission)
+- Enable AdGuard in the app list inside the security app’s “startup manager” and “floating app list” (com.coloros.safecenter / com.coloros.safecenter.permission.Permission)
 - Отключите оптимизацию батареи
 
 ## OnePlus
@@ -493,7 +493,7 @@ Huawei чрезвычайно изобретательны в оптимизац
 
 ### Поведение при очистке последних приложений
 
-Обычно, когда вы смахиваете приложение, оно не закрывается. Однако в OnePlus это может работать иначе. Менеджер очистки последних приложений может быть настроен таким образом, что смахнув приложение, чтобы закрыть его, вы его полностью остановите. Чтобы настроить «нормальное» поведение:
+Обычно, когда вы смахиваете приложение, оно не закрывается. Однако в OnePlus это может работать иначе. Менеджер очистки последних приложений может быть настроен таким образом, что смахнув приложение, чтобы закрыть его, вы его полностью остановите. To return it to the “normal” mode:
 
 Зайдите в **Настройки** → **Расширенные** → **Управление последними приложениями** → переключите на **Нормальную очистку**
 
@@ -519,7 +519,7 @@ Huawei чрезвычайно изобретательны в оптимизац
 - Вернитесь в предыдущее меню и перейдите в **Ручной режим**
 - Нажмите на значок **шестерёнки** в правом верхнем углу → **Белый список фоновых приложений** → выберите **AdGuard**
 
-## Стандартные устройства Pixel/Nexus/Essential на базе Android
+## Android stock devices Pixel/Nexus/Nubia/Essential
 
 Android на заводской прошивке, как правило, не конфликтует с фоновыми процессами, но если вы всё же столкнулись с проблемой фоновой работы, включите режим **Always-on VPN**.
 

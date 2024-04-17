@@ -5,11 +5,11 @@ sidebar_position: 12
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Android için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
-To be able to [filter HTTPS traffic](/general/https-filtering/what-is-https-filtering.md) (which is extremely important as most ads use HTTPS), AdGuard needs to install a certificate into your device's user storage. On older versions of Android OS this was done automatically, but on Android 11 and later users have to install it manually.
+To be able to [filter HTTPS traffic](/general/https-filtering/what-is-https-filtering.md) (which is extremely important as most ads use HTTPS), AdGuard needs to install a certificate into your device's user storage. On older versions of the Android OS this was done automatically, but on Android 11 and later users have to install it manually.
 
 ![Certificate *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/g.gif)
 
@@ -19,24 +19,28 @@ Follow these steps to install AdGuard certificate:
 
 1. Then you'll be presented with three screens that explain:
     - Why filter HTTPS traffic
-    - The safety of this filtering process
+    - Bu filtreleme işleminin güvenliği
     - The necessity of AdGuard certificate
 
-    Consecutively tap *Next* → *Next* → *Save certificate* on these screens.
+    Consecutively tap *Next* → *Next* → *Save certificate*.
 
 1. Tap *Save* at the bottom of the opened *Download* folder.
 
-1. After saving, tap *Open Settings*, navigate to *Encryption & credentials*, and then choose *Install a certificate*.
+1. Kaydettikten sonra *Ayarları aç* öğesine dokunun.
 
-1. You might see a warning, if so, tap *Install anyway*. From the list, select the file with AdGuard certificate.
+1. Tap *More security settings* → *Encryption & credentials* → *Install a certificate* → *CA certificate*.
 
-You're all set! Once the certificate is installed successfully, you've enabled HTTPS filtering.
+1. Bir uyarı görebilirsiniz. Öyleyse, *Yine de yükle* öğesine dokunun ve gerekirse PIN kodunuzu girin.
 
-Lütfen sağlanan adımların Google Pixel 4 akıllı telefonunu temel aldığını unutmayın. If you're using a different Android device, the exact menu names or options might vary. For easier navigation consider searching for a certificate by accessing your device's settings and entering "certificate" or "credentials" in the search bar.
+1. AdGuard sertifika dosyasını seçin. Adı *adguard_1342_020322.crt* gibi görünmelidir.
+
+Hepsi hazır! Once the certificate is installed successfully, you've enabled HTTPS filtering.
+
+Lütfen sağlanan adımların Google Pixel 7 akıllı telefonunu temel aldığını unutmayın. If you're using a different Android device, the exact menu names or options might vary. For easier navigation consider searching for a certificate by entering “certificate” or “credentials” in the settings search bar.
 
 If you experience issues during the manual certificate installation (for example, you installed the certificate, but the application keeps ignoring it), you can follow one of the solutions below.
 
 1. AdGuard'ı yeniden başlatın.
 2. Doğru sertifikayı (AdGuard Personal CA) bir kez daha yüklemeyi deneyin.
 
-If you still encounter a problem and can't install the certificate, please contact our support team at support@adguard.com.
+Hâlâ bir sorunla karşılaşıyorsanız ve sertifikayı yükleyemiyorsanız, lütfen support@adguard.com adresinden destek ekibimizle iletişime geçin.

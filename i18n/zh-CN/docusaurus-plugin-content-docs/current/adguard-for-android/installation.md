@@ -1,15 +1,15 @@
 ---
-title: Installation
+title: 安装
 sidebar_position: 2
 ---
 
 :::info
 
-本文适用于安卓版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
-## 系统需求
+## 系统要求
 
 **OS version:** Android 7.0 or higher
 
@@ -17,7 +17,7 @@ sidebar_position: 2
 
 **Free disk space:** 500 MB
 
-## Installation
+## 安装
 
 虽然大部分用于安卓系统的应用程序可以通过谷歌商店分发，但是 AdGuard 不在里面。谷歌禁止通过谷歌商店分发网络层的广告拦截程序，即，在其他应用程序里屏蔽商业广告的应用程序。 You will find more information about Google restrictive policy [in our blog](https://adguard.com/blog/adguard-google-play-removal.html).
 
@@ -43,9 +43,9 @@ sidebar_position: 2
 
     ![Installing apps from unknown sources *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/inst_4.png)
 
-    You will then be asked to read AdGuard's *License Agreement* and *Privacy Policy*. You can also participate in product development. To do this, check the boxes for *Send crash reports automatically* and *Send technical and interaction data*. Then tap *Continue*.
+    You will then be asked to read AdGuard's *License agreement* and *Privacy policy*. You can also participate in product development. To do this, check the boxes for *Send crash reports automatically* and *Send technical and interaction data*. Then tap *Continue*.
 
-    ![Privacy Policy *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_3.png)
+    ![Privacy policy *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_3.png)
 
 1. **Create a local VPN**. In order to filter all traffic directly on your device and not route it through a remote server, AdGuard needs to establish a VPN connection.
 

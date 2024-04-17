@@ -22,14 +22,21 @@ Starší verze Firefoxu a prohlížeče na něm založené nedůvěřují certif
 ![Reinstall Certificate](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/reinstall.jpg)
 
 Pokud to nepomůže, postupujte podle pokynů pro ruční přidání AdGuard certifikátu do úložiště Firefoxu.
+
 > Tento návod je určen pro prohlížeč Firefox. Názvy tlačítek a položek menu se mohou v různých prohlížečích Firefox lišit.
 
 1. Spusťte AdGuard.
 
 1. Přejděte na [http://local.adguard.org/cert](http://local.adguard.org/cert) a klikněte na tlačítko *Stáhnout*. Prohlížeč by měl začít stahovat soubor **cert.cer**.
-> Stránku pro stažení můžete otevřít také kliknutím na odkaz prostřednictvím aplikace AdGuard v *Nastavení → Síť → HTTPS filtrování*.
 
-![Certificate settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/link.jpeg)
+    :::note
+
+    Stránku pro stažení můžete otevřít také kliknutím na odkaz prostřednictvím aplikace AdGuard v *Nastavení → Síť → HTTPS filtrování*.
+
+
+:::
+
+    ![Certificate settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/link.jpeg)
 
 1. Otevřete prohlížeč a poté otevřete *Nastavení*.
 
@@ -37,19 +44,19 @@ Pokud to nepomůže, postupujte podle pokynů pro ruční přidání AdGuard cer
 
 1. Přejděte dolů na položku *Certifikáty* a klikněte na tlačítko *Zobrazit certifikáty*.
 
-![View certificates window](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import1.jpeg)
+    ![View certificates window](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import1.jpeg)
 
 1. Vyberte kartu *Autority*.
 
 1. Klikněte na *Importovat...*.
 
-![Certificate settings — import](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import2.jpeg)
+    ![Certificate settings — import](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import2.jpeg)
 
 1. Vyhledejte stažený soubor **cert.cer** a klikněte na *Otevřít*.
 
 1. Zaškrtněte políčko *Důvěřovat tomuto certifikátu k identifikaci webových stránek* a poté klikněte na *OK*.
 
-![Certificate settings — checkbox](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/cert_checkbox.jpg)
+    ![Certificate settings — checkbox](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/cert_checkbox.jpg)
 
 Úspěšně jste nainstalovali AdGuard certifikát. Restartujte prohlížeč a chyba by měla zmizet.
 

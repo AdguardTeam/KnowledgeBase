@@ -48,7 +48,7 @@
     "description": "The label for category AdGuard Browser extension in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.AdGuard for Safari": {
-    "message": "AdGuard for Safari",
+    "message": "Safari용 AdGuard",
     "description": "The label for category AdGuard for Safari in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.AdGuard Content Blocker": {
@@ -78,5 +78,25 @@
   "sidebar.tutorialSidebar.category.AdGuard Browser Extension": {
     "message": "AdGuard 확장 프로그램",
     "description": "The label for category AdGuard Browser Extension in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Features overview": {
+    "message": "기능 개요",
+    "description": "The label for category Features overview in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Features": {
+    "message": "Features",
+    "description": "The label for category Features in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Content Blockers": {
+    "message": "Content Blockers",
+    "description": "The label for category Content Blockers in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Protection": {
+    "message": "Protection",
+    "description": "The label for category Protection in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Firewall": {
+    "message": "Firewall",
+    "description": "The label for category Firewall in sidebar tutorialSidebar"
   }
 }

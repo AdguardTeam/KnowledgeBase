@@ -17,7 +17,7 @@ Existuje mnoho aplikací Tasker, např. [Tasker](https://play.google.com/store/a
 
 ![Automation *mobile_border](https://cdn.adtidy.org/blog/new/mmwmfautomation.jpg)
 
-Díky tomuto rozhraní může každá aplikace odeslat speciální zprávu (tzv. "záměr"), která obsahuje název akce a případně další údaje. AdGuard se na tento záměr podívá a provede požadované akce.
+Díky tomuto rozhraní může každá aplikace odeslat speciální zprávu (tzv. “záměr”), která obsahuje název akce a případně další údaje. AdGuard se na tento záměr podívá a provede požadované akce.
 
 ### Obavy o bezpečnost
 

@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-In diesem Artikel geht es um den AdGuard Content Blocker, der nur Ihren Samsung Internet Browser oder Yandex Browser schützt. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard Content Blocker, which only safeguards the Samsung Internet browser and the Yandex Browser. Um Ihr gesamtes Gerät zu schützen, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
 
 :::
 

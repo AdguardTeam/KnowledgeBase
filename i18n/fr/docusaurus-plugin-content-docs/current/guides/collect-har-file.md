@@ -1,180 +1,180 @@
 ---
-title: How to collect a HAR file
+title: Comment collecter un fichier HAR
 sidebar_position: 1
 ---
 
-HAR files help our technical support teams troubleshoot complex issues. To create these files, we recommend using Chrome or Firefox. However, IE 11, Edge, and Safari also provide `.har` file generation and export capability.
+Les fichiers HAR aident nos équipes d'assistance technique à résoudre des problèmes complexes. Pour créer ces fichiers, nous vous recommandons d'utiliser Chrome ou Firefox. Cependant, IE 11, Edge et Safari offrent également une capacité de génération et d'exportation de fichiers `.har` .
 
 ## Chrome {#chrome}
 
-To create a HAR file in Chrome:
+Pour créer un fichier HAR dans Chrome, procédez comme suit :
 
-1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
+1. Accédez à l'URL où le problème se produit. Ne reproduisez pas encore le problème.
 
-1. Open **Developer Tools**:
+1. Ouvrez les **Outils de développeur** :
 
-    - From menu: **Menu → More Tools → Developer Tools**.
-    - Keyboard: **Ctrl+Shift+C**, or **Ctrl+Alt+I**, or **⌥+⌘+I for Mac**.
+    - Depuis le menu : **Menu → Plus d'outils → Outils de développeur**.
+    - Clavier : **Ctrl+Shift+C**, ou **Ctrl+Alt+I**, ou **⌥+⌘+I pour Mac**.
 
-1. Click on the **Network tab**.
+1. Cliquez sur l'onglet **Réseau**.
 
-1. Locate the round button at the top left of the Network tab and confirm it is in red recording mode. If it's grey, click to turn red to start recording.
+1. Localisez le bouton rond en haut à gauche de l'onglet Réseau et confirmez qu'il est en mode d'enregistrement rouge. S'il est gris, cliquez-le pour qu'il devienne rouge pour démarrer l'enregistrement.
 
-1. Use the **Clear** button (the circle button with a line through it next to the record button) to clear all previous activity.
+1. Utilisez le bouton **Effacer** (le bouton circulaire barré d'une ligne à côté du bouton d'enregistrement) pour effacer toutes les activités précédentes.
 
-1. Select the **Preserve log** check box on the Network tab.
+1. Cochez la case **Conserver le journal** dans l'onglet Réseau.
 
-1. Check the **Disable cache** check box.
+1. Cochez la case **Désactiver le cache** .
 
     ![Chrome](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/chrome.png)
 
-1. Reproduce the steps that create the issue.
+1. Reproduisez les étapes qui créent le problème.
 
-1. Save session as a .har file by right-clicking the grid and selecting **Save as HAR with content**.
+1. Enregistrez la session comme un fichier .har avec un clic droit sur la grille et en sélectionnant **Enregistrer au format HAR avec le contenu**.
 
-1. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+1. Envoyez-le au service d'assistance AdGuard (support@adguard.com) avec une explication détaillée du problème. Les captures d’écran complémentaires peuvent également être utiles.
 
 ## Edge {#edge}
 
-1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
+1. Accédez à l'URL où le problème se produit. Ne reproduisez pas encore le problème.
 
-1. Open **Developer Tools**:
+1. Ouvrez les **Outils de développeur** :
 
-    - From menu: **Menu → More Tools → Developer Tools**.
-    - Keyboard: **Ctrl+Shift+C**, or **Ctrl+Alt+I**, or **⌥+⌘+I for Mac**.
+    - Depuis le menu : **Menu → Plus d'outils → Outils de développeur**.
+    - Clavier : **Ctrl+Shift+C**, ou **Ctrl+Alt+I**, ou **⌥+⌘+I pour Mac**.
 
-1. Click on the **Network tab**.
+1. Cliquez sur l'onglet **Réseau**.
 
-1. Locate the round button at the top left of the Network tab and confirm it is in red recording mode. If it's grey, click to turn red to start recording.
+1. Localisez le bouton rond en haut à gauche de l'onglet Réseau et confirmez qu'il est en mode d'enregistrement rouge. S'il est gris, cliquez-le pour qu'il devienne rouge pour démarrer l'enregistrement.
 
-1. Use the **Clear** button (the circle button with a line through it next to the record button) to clear all previous activity.
+1. Utilisez le bouton **Effacer** (le bouton circulaire barré d'une ligne à côté du bouton d'enregistrement) pour effacer toutes les activités précédentes.
 
-1. Select the **Preserve log** check box on the Network tab.
+1. Cochez la case **Conserver le journal** dans l'onglet Réseau.
 
-1. Check the **Disable cache** check box.
+1. Cochez la case **Désactiver le cache** .
 
     ![edge](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/edge.png)
 
-1. Reproduce the steps that create the issue.
+1. Reproduisez les étapes qui créent le problème.
 
-1. Save session as a .har file by right-clicking the grid and selecting **Save as HAR with content**.
+1. Enregistrez la session comme un fichier .har avec un clic droit sur la grille et en sélectionnant **Enregistrer au format HAR avec le contenu**.
 
-1. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+1. Envoyez-le au service d'assistance AdGuard (support@adguard.com) avec une explication détaillée du problème. Les captures d’écran complémentaires peuvent également être utiles.
 
 ## Firefox {#firefox}
 
-To create a HAR file in Firefox:
+Pour créer un fichier HAR dans Firefox, procédez comme suit :
 
-1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
+1. Accédez à l'URL où le problème se produit. Ne reproduisez pas encore le problème.
 
-1. Open Developer Tools in **Network** mode:
+1. Ouvrez les outils de développeur en mode **Réseau** :
 
-    - From menu: **Menu → Web Developer → Network**.
-    - Keyboard: **Ctrl+Shift+C**, or **⌥+⌘+E (Mac)**.
+    - Depuis le menu : **Menu → Développeur Web → Réseau**.
+    - Clavier : **Ctrl+Shift+C**, ou **⌥+⌘+E (Mac)**.
 
-1. Note the **Play/Pause** button at the top left of the Network tab.
+1. Notez le bouton **Lecture/Pause** en haut à gauche de l'onglet Réseau.
 
-    - Button should be in play mode.
+    - Le bouton doit être en mode lecture.
 
-1. If any information is currently displayed in the grid, clear by clicking the **Delete trash can** button next to the play/pause button.
+1. Si des informations sont actuellement affichées dans la grille, effacez-les en cliquant sur le bouton **Vider la corbeille** à côté du bouton lecture/pause.
 
-1. Select the **Persist Logs** check box on the Network tab.
+1. Cochez la case **Conserver les journaux** dans l'onglet Réseau.
 
-1. Check the **Disable cache** check box.
+1. Cochez la case **Désactiver le cache** .
 
     ![firefox](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/firefox.png)
 
-1. Reproduce the steps that create the issue.
+1. Reproduisez les étapes qui créent le problème.
 
-1. Save session as a .har file by right-clicking the grid and selecting **Save all as HAR**.
+1. Enregistrez la session comme un fichier .har avec un clic droit sur la grille et en sélectionnant **Enregistrer tout au format HAR**.
 
-1. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+1. Envoyez-le au service d'assistance AdGuard (support@adguard.com) avec une explication détaillée du problème. Les captures d’écran complémentaires peuvent également être utiles.
 
 ## Internet Explorer 11 {#ie11}
 
-To create a HAR file in Internet Explorer 11:
+Pour créer un fichier HAR dans Internet Explorer 11, procédez comme suit :
 
-1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
+1. Accédez à l'URL où le problème se produit. Ne reproduisez pas encore le problème.
 
-1. Open Developer Tools in **Network** mode:
+1. Ouvrez les outils de développeur en mode **Réseau** :
 
-    - From Tools cog wheel menu: **Developer Tools** → **Network tab**.
-    - Keyboard: **F12 → Network** tab.
+    - Du menu de la roue dentée Outils : **Outils de développement** → onglet **Réseau**.
+    - Clavier : **F12 → Onglet Réseau**.
 
-1. Note the start profiling session **Play** button and stop profiling **Stop** button at top left of Network tab.
+1. Notez le bouton de démarrage de la session de profilage **Play** et le bouton d'arrêt du profilage **Stop** en haut à gauche de l'onglet Réseau.
 
-    - Play button will be gray when recording and Stop button will be red. Put in **Play** mode.
+    - Le bouton de lecture sera gris lors de l'enregistrement et le bouton d'arrêt sera rouge. Mettez en mode **Lecture** .
 
-1. Clear any session info appearing in the lower grid using the **Clear session** button on Network tab. Hover over icons to see names.
+1. Effacez toutes les informations de session apparaissant dans la grille inférieure à l'aide du bouton **Effacer la session** de l'onglet Réseau. Passez la souris sur les icônes pour voir les noms.
 
-    - **Clear session** button is a three line icon with an x on it.
+    - **Le bouton Effacer la session** est une icône à trois lignes avec un x dessus.
 
-1. Check the **Disable cache** check box.
+1. Cochez la case **Désactiver le cache** .
 
-1. Reproduce the steps that create the issue.
+1. Reproduisez les étapes qui créent le problème.
 
-1. Save session as a .har file by clicking on the **Save disk** button (Export as HAR) on Network tab.
+1. Enregistrez la session en tant que fichier .har en cliquant sur le bouton **Enregistrer sur le disque** (Exporter en tant que HAR) dans l'onglet Réseau.
 
-1. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+1. Envoyez-le au service d'assistance AdGuard (support@adguard.com) avec une explication détaillée du problème. Les captures d’écran prises en charge peuvent également être utiles.
 
 ## Safari {#safari}
 
-To create a HAR file in Safari:
+Pour créer un fichier HAR dans Safari, procédez comme suit :
 
-1. Check the Safari menu bar at the top of the screen for a **Develop** menu.
+1. Vérifiez la barre de menus Safari en haut de l'écran pour un menu **Développeur** .
 
-    - If not visible, turn it on by going to **Safari → Settings → Advanced**.
-    - Check the checkbox at the bottom next to **Show Develop menu in menu bar**.
+    - S'il n'est pas visible, activez-le en allant dans **Safari → Paramètres → Avancé**.
+    - Cochez la case en bas à côté de **Afficher le menu Développement dans la barre de menu**.
 
-1. Go to the URL where the issue occurs. Do not reproduce the issue yet.
+1. Accédez à l'URL où le problème se produit. Ne reproduisez pas encore le problème.
 
-1. Open **Network** tab in Web Inspector:
+1. Ouvrez l'onglet **Réseau** dans Web Inspector :
 
-    - From menu: **Develop → Show Web Inspector → Network**.
-    - Keyboard: **⌥+⌘+I→Network**
+    - Depuis le menu : **Développer → Afficher Web Inspector → Réseau**.
+    - Clavier : **⌥+⌘+I → Réseau**
 
-1. Check **Preserve Log** checkbox on left side of the Network tabs, within the **Other filter options...** menu.
+1. Cochez la case **Conserver le journal** sur le côté gauche des onglets Réseau, dans le menu **Autres options de filtre...** .
 
     ![safari](https://cdn.adtidy.org/content/kb/ad_blocker/safari/preserve-log.png)
 
-1. Clear current Network items by clicking the **Delete Trash** icon at the far right of Network tabs.
+1. Effacez les éléments réseau actuels en cliquant sur l'icône **Vider la corbeille** à l'extrême droite des onglets Réseau.
 
-    - Keyboard: **⌘+K**
+    - Clavier : **⌘+K**
 
-1. Check the **Disable caches** check box.
+1. Cochez la case **Désactiver les caches** .
 
-1. Reproduce the steps that create the issue.
+1. Reproduisez les étapes qui créent le problème.
 
-1. Save session as a .har file by clicking the **Export** icon next to the **Delete Trash** icon.
+1. Enregistrez la session en tant que fichier .har en cliquant sur l'icône **Exporter** à côté de l'icône **Vider la corbeille** .
 
-1. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, too.
+1. Envoyez-le au service d'assistance AdGuard (support@adguard.com) avec une explication détaillée du problème. Les captures d’écran complémentaires peuvent également être utiles.
 
 ## Android {#android}
 
-To create HAR files, follow these steps:
+Pour créer des fichiers HAR, procédez comme suit :
 
-1. Open AdGuard and go to **Settings**.
+1. Ouvrez AdGuard et accédez à **Paramètres**.
 
-1. Choose **Advanced** in the menu.
+1. Choisissez **Avancé** dans le menu.
 
-1. Choose **Low Level Settings**
+1. Choisissez **Paramètres de bas niveau**
 
-1. Activate `pref.har.capture` (you will have to restart the protection).
+1. Activez `pref.har.capture` (il faudra relancer la protection).
 
-1. Now reproduce the problem — open the app, perform the necessary actions to make the ad appear.
+1. Reproduisez maintenant le problème : ouvrez l'application, effectuez les actions nécessaires pour faire apparaître l'annonce.
 
-1. Now turn `pref.har.capture` off again.
+1. Maintenant, désactivez à nouveau `pref.har.capture` .
 
-1. Go back and tap **Export logs and system info** → **Save**.
+1. Revenez en arrière et appuyez sur **Exporter les journaux et les informations système** → **Enregistrer**.
 
 ## Windows {#windows}
 
-1. Open **Settings*** → **General settings** → **Advanced settings** and scroll down.
+1. Ouvrez **Paramètres*** → **Paramètres généraux** → **Paramètres avancés** et faites défiler vers le bas.
 
-1. Check the **Enable HAR writing** box.
+1. Cochez la case **Activer l'écriture HAR** .
 
-1. Reproduce the problem.
+1. Reproduisez le problème.
 
-1. Go to **General settings** → Click **Export logs** → **Save**.
+1. Accédez à **Paramètres généraux** → Cliquez sur **Exporter les journaux** → **Enregistrer**.
 
-1. Disable HAR writing by unchecking the corresponding box.
+1. Désactivez l’écriture HAR en décochant la case correspondante.

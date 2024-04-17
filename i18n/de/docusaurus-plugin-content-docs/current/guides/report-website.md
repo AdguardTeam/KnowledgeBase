@@ -1,149 +1,149 @@
 ---
-title: How to report a website
+title: So melden Sie eine Website
 sidebar_position: 3
 ---
 
 
-When using ad blockers, you may face incorrect work of certain websites or broken page elements. These problems might arise due to a variety of factors:
+Bei der Verwendung von Werbeblockern kann es vorkommen, dass bestimmte Websites nicht richtig funktionieren oder Seitenelemente nicht mehr funktionieren. Diese Probleme können durch eine Vielzahl von Faktoren verursacht werden:
 
-- Incorrect user rules;
-- Modified algorithms of adding ads;
-- Added filters/extensions from third-party developers;
-- The authors of one of the filters made a mistake when creating the rule;
-- Advertising reinsertion. Find more about this method in our [blog](https://adguard.com/en/blog/ad-reinsertion.html).
+- Falsche Benutzerregeln;
+- Geänderte Algorithmen zum Hinzufügen von Werbung;
+- Hinzugefügte Filter/Erweiterungen von Drittanbietern;
+- Ein Fehler, der von Filterautoren bei der Erstellung der Regel gemacht wurde;
+- Wiedereinfügung von Werbung. Mehr über diese Methode erfahren Sie in unserem [Blog](https://adguard.com/en/blog/ad-reinsertion.html).
 
-You can help us by filling in an application form with examples of ads you faced with. To do it, please, use instructions for your OS.
+You can help us by filling in a form with examples of ads you have encountered. Verwenden Sie dazu bitte die Anweisungen für Ihr Betriebssystem.
 
-## Report a website {#report}
+## Website melden {#report}
 
 :::note
 
-When you send a complaint via the app or via AdGuard Browser Assistant, all information is pre-filled automatically. Except for the screenshots, you'll have to make and attach them yourself. If you're using a [direct link](https://reports.adguard.com/new_issue.html), you’ll need to enter data manually.
+Wenn Sie eine Beschwerde über die App oder den AdGuard Browser-Assistent senden, werden alle Informationen automatisch vorausgefüllt. Die Bildschirmfotos müssen Sie selbst erstellen und anhängen. Wenn Sie den [direkten Link](https://reports.adguard.com/new_issue.html) verwenden, müssen Sie die Daten manuell eingeben.
 
 :::
 
-To report a reinsertion of an ad or incorrect displaying of a website, you need to:
+Um die Wiedereinblendung einer Werbung oder die fehlerhafte Anzeige einer Website zu melden, müssen Sie Folgendes tun:
 
-### Browser extension {#extension}
+### Browsereweiterung {#extension}
 
-- Open the browser extension settings by clicking on the corresponding icon;
-- Click on **Report an issue**:
+- Öffnen Sie die Einstellungen der Browsererweiterung, indem Sie auf das entsprechende Symbol klicken
+- Klicken Sie auf **Problem melden**:
 
-![extension_issue *mobile_border](https://cdn.adtidy.org/blog/new/5si74extension.png)
+![erweiterung_problem *mobile_border](https://cdn.adtidy.org/blog/new/5si74extension.png)
 
-- After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
+- Nachdem Sie das Formular ausgefüllt haben, wird automatisch ein Problem auf [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) erstellt. Es wird auch einen Link angeboten, über den Sie die Fortschritte bei der Lösung Ihres Problems verfolgen können.
 
 ### Windows {#windows}
 
-- Open [AdGuard Browser Assistant](/adguard-for-windows/browser-assistant) and hit **Report an issue**:
+- Öffnen Sie den [AdGuard Browser-Assistenten](/adguard-for-windows/browser-assistant) und klicken Sie auf **Problem melden**:
 
 ![windows *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/browser-assistant.png)
 
-- Fill in the form for reporting a complaint;
-- After you've done it, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
+- Füllen Sie das Formular für die Meldung eines Problems aus;
+- Nachdem Sie dies getan haben, wird automatisch ein Problem auf [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) erstellt. Es wird auch einen Link angeboten, über den Sie die Fortschritte bei der Lösung Ihres Problems verfolgen können.
 
 ### Android {#android}
 
-- Open AdGuard settings;
-- Choose **Support**, then **Report incorrect blocking**:
+- Öffnen Sie die AdGuard-Einstellungen;
+- Wählen Sie **Support**, dann **Fehlerhaftes Sperren melden**:
 
 ![android *mobile_border](https://cdn.adtidy.org/blog/new/apicfkandroid-new.jpg)
 
-- After you've filled in the form, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
+- Nachdem Sie das Formular ausgefüllt haben, wird automatisch ein Problem auf [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) erstellt. Es wird auch einen Link angeboten, über den Sie die Fortschritte bei der Lösung Ihres Problems verfolgen können.
 
 ### Mac {#mac}
 
-- Open [AdGuard Browser Assistant](/adguard-for-mac/browser-assistant) and hit **Report an issue**:
+- Open [AdGuard Browser Assistant](/adguard-for-mac/features/browser-assistant) and hit **Report an issue**:
 
-![mac *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/guides/browser-assistant-mac.png)
+![Mac *Mobil](https://cdn.adtidy.org/content/kb/ad_blocker/guides/browser-assistant-mac.png)
 
-- Fill in the form for reporting a complaint;
-- After you've done it, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
+- Füllen Sie das Formular für die Meldung eines Problems aus;
+- Nachdem Sie dies getan haben, wird automatisch ein Problem auf [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) erstellt. Es wird auch einen Link angeboten, über den Sie die Fortschritte bei der Lösung Ihres Problems verfolgen können.
 
 ### iOS {#ios}
 
-- Open AdGuard settings;
-- Choose **Support**, then **Report incorrect blocking**:
+- Öffnen Sie die AdGuard-Einstellungen;
+- Wählen Sie **Support**, dann **Fehlerhaftes Sperren melden**:
 
 ![ios *mobile_border](https://cdn.adtidy.org/blog/new/fnl9aios.jpeg)
 
-- Fill in the form for reporting a complaint;
-- After you've done it, an issue on [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) will be created automatically. There will also be a link to monitor progress towards the solution of your problem.
+- Füllen Sie das Formular für die Meldung eines Problems aus;
+- Nachdem Sie dies getan haben, wird automatisch ein Problem auf [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues) erstellt. Es wird auch einen Link angeboten, über den Sie die Fortschritte bei der Lösung Ihres Problems verfolgen können.
 
-## Filling in the form {#form}
+## Formular ausfüllen {#form}
 
 :::note
 
-When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. Except for the screenshots, you'll have to make and attach them yourself. If you're using a [direct link](https://reports.adguard.com/new_issue.html), you’ll need to enter data manually.
+Wenn Sie eine Meldung über die App oder den AdGuard-Assistenten senden, werden alle Informationen automatisch vorausgefüllt. Die Bildschirmfotos müssen Sie selbst erstellen und anhängen. Wenn Sie den [direkten Link](https://reports.adguard.com/new_issue.html) verwenden, müssen Sie die Daten manuell eingeben.
 
 :::
 
-1. Filling in the form starts with detailing the type and version of a product;
+1. Das Ausfüllen des Formulars beginnt mit der Angabe von Typ und Version eines Produkts
 
     ![forma1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma1en.png)
 
-2. Specify the type of problem and additional information on using third-party software (antivirus, VPN);
+2. Geben Sie die Art des Problems und zusätzliche Informationen zur Verwendung von Drittanbietersoftware (Antivirus, VPN) an
 
     ![forma2 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma2en.png)
 
-3. Enter the address of the page and the browser (or the download link in case of an app) where you've encountered a problem;
+3. Geben Sie die Adresse der Seite und des Browsers (oder den Download-Link im Falle einer App) ein, auf der ein Problem aufgetreten ist
 
     ![forma3 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma3en.png)
 
-4. Application configuration must be specified:
+4. Die Anwendungskonfiguration muss angegeben werden:
 
-    - Filters you use;
-    - Stealth mode settings, if this function is enabled.
+    - Filter, die Sie verwenden
+    - Einstellungen für den Privatsphäre-Modus, wenn diese Funktion aktiviert ist
 
     ![forma4 *border](https://cdn.adtidy.org/content/kb/ad_blocker/guides/forma4en.png)
 
-5. [Provide a screenshot](../take-screenshot) that captures the essence of a problem;
+5. [Erstellen Sie ein Bildschirmfoto](../take-screenshot), das das Problem im Wesentlichen wiedergibt
 
-    - **Important**: Hide your personal information (email, phone number, etc.) because screenshots will become publicly available.
+    - **Wichtig**: Verbergen Sie Ihre persönlichen Daten (E-Mail-Adresse, Telefonnummer usw.), da die Bildschirmfotos öffentlich zugänglich sind.
 
     ![forma5 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma5en.png)
 
-6. Provide additional information that will help filter developers understand the situation;
+6. Geben Sie zusätzliche Informationen an, die den Filterentwicklern helfen, die Situation zu verstehen
 
-    Also enter your account on **GitHub**, if available (it's necessary for developers to be able to reach you in case they need some additional details);
+    Geben Sie auch Ihr Konto auf **GitHub** an, falls vorhanden (damit die Entwickler Sie erreichen können, falls diese zusätzliche Informationen benötigen)
 
     ![forma6 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma6en.png)
 
-7. Check each step before sending the form;
+7. Überprüfen Sie jeden Schritt, bevor Sie das Formular absenden
 
     ![forma7 *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma7en.png)
 
-8. You'll be provided with a link to track progress on your task.
+8. Sie erhalten daraufhin einen Link, über den Sie den Fortschritt Ihrer Anfrage verfolgen können
 
     ![forma8 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma8en.png)
 
-## Diagnosis of an issue {#issue}
+## Diagnose eines Problems {#issue}
 
-This option is suitable for those who aren’t afraid of difficulties and don’t mind trying to find the problem on their own. This does not require any special skills or in-depth knowledge of HTML and CSS.
+Diese Option ist für diejenigen geeignet, die keine Angst vor Schwierigkeiten haben und sich nicht scheuen, das Problem selbst zu finden. Dazu sind keine besonderen Fähigkeiten oder tiefgreifende Kenntnisse in HTML und CSS erforderlich.
 
-For example, you are faced with a situation that your favorite website won’t open, authorization has broken, or some page elements are displayed incorrectly. The cause may be using a specific filter/extension/Stealth Mode setting. To diagnose these problems, you need to do the following:
+Sie stehen zum Beispiel vor der Situation, dass sich Ihre bevorzugte Website nicht öffnen lässt, die Autorisierung unterbrochen wurde oder einige Seitenelemente nicht korrekt angezeigt werden. Die Ursache kann die Verwendung eines bestimmten Filters/einer bestimmten Erweiterung/einer bestimmten Einstellung des Privatsphäre-Modus sein. Um diese Probleme zu diagnostizieren, müssen Sie Folgendes tun:
 
 ### **Filters**
 
-1. Disable **Ad Blocker**;
-2. If it solved the problem, re-enable the module and disable filters one by one. This is done to identify filters that "break" the page;
-3. If you have managed to find out which filter "breaks" a page, you should inform the developers when filling out the form (see above). In this case, it is desirable to return to the initial settings;
-4. If turning off all the filters hasn't produced any results, apply rule **@@||example.com^$document,extension**; where **example.com** is an example site name that needs to be replaced by your own option;
-5. In case of failure (issue not solved), turn to section **Stealth Mode**.
+1. Deaktivieren Sie den **Werbeblocker**
+2. Wenn das Problem dadurch gelöst wurde, aktivieren Sie das Modul wieder und deaktivieren Sie die Filter nacheinander. Dies darum, um Filter zu identifizieren, die die Seite „stören”
+3. Wenn Sie herausgefunden haben, welcher Filter eine Seite „stört“, sollten Sie die Entwickler durch das Ausfüllen des Formulars informieren (siehe oben). In diesem Fall ist es wünschenswert, zu den Grundeinstellungen zurückzukehren.
+4. Wenn das Deaktivieren aller Filter zu keinem Ergebnis geführt hat, wenden Sie die Regel **@@||example.com^$document,extension**; an, wobei **example.com** ein Beispielname ist, der durch Ihre eigene Option ersetzt werden muss.
+5. Im Falle eines Fehlers (Problem nicht gelöst) öffnen Sie den Abschnitt **Privatsphäre**.
 
-### **Stealth Mode**
+### **Privatsphäre**
 
-1. Disable **Stealth Mode**;
-2. If this solved the problem, turn the module on and turn off the **Stealth Mode** options one by one. This is done to detect which filters are "breaking" the page;
-3. If you have managed to to detect which setting "breaks" a page, you should inform the developers when filling out the form (see above). In this case, it is desirable to return to the initial settings;
-4. In case of failure (issue not solved), turn to section **Extensions**.
+1. Deaktivieren Sie **Privatsphäre**;
+2. Wenn dies das Problem gelöst hat, schalten Sie das Modul ein und deaktivieren Sie die Optionen des **Privatsphäre-Modus** nacheinander. Dies geschieht, um zu erkennen, welche Filter die Seite „stören”
+3. Wenn Sie herausgefunden haben, welche Einstellung eine Seite „stört”, sollten Sie die Entwickler durch das Ausfüllen des Formulars informieren (siehe oben). In diesem Fall ist es ratsam, zu den ursprünglichen Einstellungen zurückzukehren
+4. Im Falle eines Fehlers (Problem nicht gelöst), öffnen Sie den Abschnitt **Erweiterungen**.
 
 ### **Erweiterungen**
 
-1. Disable **Extensions**;
-2. If this solved the problem, turn on the module and turn off **Extensions** settings one by one. This is done to find out which setting "breaks" the page;
-3. If you have managed to detect which setting "breaks" a page, inform the developers when filling out the form (see above). In this case, it is desirable to return to the initial settings.
+1. Deaktivieren Sie **Erweiterungen**;
+2. Wenn dies das Problem gelöst hat, schalten Sie das Modul ein und deaktivieren Sie nacheinander die **Erweiterungseinstellungen**. Damit soll festgestellt werden, welche Einstellung die Seite „stört”
+3. Wenn Sie herausgefunden haben, welche Einstellung eine Seite „stört”, informieren Sie die Entwickler durch das Ausfüllen des Formulars (siehe oben). In diesem Fall ist es ratsam, zu den ursprünglichen Einstellungen zurückzukehren
 
-### **Third-party blockers**
+### **Probleme durch Drittanbieter**
 
-Some browsers and antivirus programs (such as Yandex Browser, Kaspersky, etc.) have built-in ad blockers. They may affect and cause problems in the operation of sites. If you use such programs, make sure that the problem is on the side of **AdGuard**: disable **AdGuard** filtering and try to repeat the problem. If it remains, it means that the problem is caused by another application or browser. If the problem is caused by **AdGuard**, follow the steps described in the previous paragraphs.
+Einige Browser und Antivirenprogramme (wie Yandex Browser, Kaspersky usw.) verfügen über integrierte Werbeblocker. Diese können die Funktionsweise von Websites beeinträchtigen und Probleme verursachen. If you are using such programs, first make sure that the problem is caused by **AdGuard**: disable **AdGuard** filtering and try to reproduce the problem. Bleibt es bestehen, bedeutet dies, dass das Problem von einer anderen App oder einem anderen Browser verursacht wird. Wenn das Problem durch **AdGuard** verursacht wird, führen Sie die in den vorherigen Abschnitten beschriebenen Schritte aus.

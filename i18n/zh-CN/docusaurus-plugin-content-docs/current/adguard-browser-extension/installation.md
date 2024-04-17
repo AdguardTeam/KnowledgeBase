@@ -1,6 +1,6 @@
 ---
 title: 安装方式
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 :::info
@@ -71,4 +71,4 @@ In the opened dialog window, click *Add extension* to install AdGuard Browser Ex
 
 ## How to install AdGuard Browser Extension for Safari
 
-适用于 Safari 的 AdGuard 不是一般意义上的浏览器扩展。 You can read more about it in a [dedicated article](/adguard-for-safari/overview). 或者您可以直接从本网页[下载安装文件](https://agrd.io/safari_release)。
+适用于 Safari 的 AdGuard 不是一般意义上的浏览器扩展。 You can read more about it in a [dedicated article](/adguard-for-safari/features/general). 或者您可以直接从本网页[下载安装文件](https://agrd.io/safari_release)。

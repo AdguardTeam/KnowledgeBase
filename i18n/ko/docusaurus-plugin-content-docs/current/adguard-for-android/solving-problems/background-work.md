@@ -5,11 +5,11 @@ sidebar_position: 9
 
 :::info
 
-이 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Android용 AdGuard에 대해 다룹니다. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
-In some cases, apps won't stay in the background ("alive" or in a sleep mode) due to the Android OS optimization function, or the so-called "battery save mode" — this function can kill background apps. It may be inconvenient to relaunch them each time they are getting closed. To avoid the background app termination, you need to follow the steps we described separately for each manufacturer (version) of Android OS. Note that instructions for different manufacturers are mostly very similar.
+In some cases, apps won't stay in the background (“alive” or in a sleep mode) due to the Android OS optimization function, or the so-called “battery save mode” — this function can kill background apps. It may be inconvenient to relaunch them each time they are getting closed. To avoid the background app termination, you need to follow the steps we described separately for each manufacturer (version) of Android OS. Note that instructions for different manufacturers are mostly very similar.
 
 ## Asus
 
@@ -31,15 +31,15 @@ Xiaomi (and especially MIUI) devices are among the most troublesome ones when it
 
 To let your AdGuard app run successfully in the background, do the following:
 
-In **Settings** → **Apps** → **Manage apps** → scroll down to locate **AdGuard**, set **Autostart** to "On".
+In **Settings** → **Apps** → **Manage apps** → scroll down to locate **AdGuard**, set **Autostart** to “On”.
 
 ![Xiaomi Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
 
-Scroll down to **Battery saver**, tap it, and set to "No restrictions".
+Scroll down to **Battery saver**, tap it, and set to “No restrictions”.
 
 ![Miui *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_0a.png)
 
-In **Other Permissions**, set all possible permissions to "On"
+In **Other Permissions**, set all possible permissions to “On”
 
 Run the **Security** app.
 
@@ -67,8 +67,8 @@ Go to **Settings** → **Apps** → **Manage apps** → **AdGuard**.
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
 
-- Set Autostart to "On"
-- Set all possible permissions in Other Permissions to "On"
+- Set Autostart to “On”
+- Set all possible permissions in Other Permissions to “On”
 - Set Battery saver to **No restrictions**
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi5en.jpeg)
@@ -77,7 +77,7 @@ Now launch the active apps manager by swiping up from the bottom of the screen a
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi6.jpeg)
 
-Tap and hold it until a special menu pops up. Select a lock icon.
+Tap and hold it until a menu pops up. Select a lock icon.
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi7en.jpeg)
 
@@ -89,7 +89,7 @@ The lock icon should appear above the app window.
 
 To let your app run successfully in the background, configure its settings as follows:
 
-- Set Autostart to "On"
+- Set Autostart to “On”
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/xiaomi1en.png)
 
@@ -114,7 +114,7 @@ Please enable:
 - **Device Settings** → **Apps** → **AdGuard** → **Battery** → **Power-intensive prompt** and **Keep running after screen off**
 - **Settings** → **Additional Settings** → **Battery & Performance** → **Manage apps’ battery usage** and here:
 
-1. Switch Power Saving Modes to "Off"
+1. Switch Power Saving Modes to “Off”
 1. Choose the following options: **Saving Power in The Background** → **Choose apps** → **AdGuard** → **Background Settings** → **No restrictions**
 
 #### App battery saver
@@ -342,7 +342,7 @@ Besides, to set up the background work of AdGuard more effectively, you should o
 
 - Go to **Settings** → open **Battery Manager** → set **Power plan** to **Performance**;
 - Then choose **Protected apps** in the **Battery Manager** and check if AdGuard is Protected;
-- Go to **Apps** in the main settings and click AdGuard there → choose **Battery** → enable **Power-intensive prompt** and **Keep running after screen is off**;
+- Go to **Apps** in the main settings and tap AdGuard there → choose **Battery** → enable **Power-intensive prompt** and **Keep running after screen is off**;
 - Then in the **Apps** section open **Settings** (at the bottom) → **Special access** → choose **Ignore battery optimization** → press **Allowed** → **All apps** → find AdGuard on the list and set it to **Deny**.
 
 ## Meizu
@@ -351,11 +351,11 @@ Meizu has almost the same approach to the background process limitations as Huaw
 
 - Go to **Advanced Settings** → open **Battery Manager** → set **Power plan** to **Performance**;
 - Then choose **Protected apps** in the **Battery Manager** and check if AdGuard is Protected;
-- Go to **Apps** section and click AdGuard there → choose **Battery** → enable **Power-intensive prompt** and **Keep running after screen is off**.
+- Go to **Apps** section and tap AdGuard there → choose **Battery** → enable **Power-intensive prompt** and **Keep running after screen is off**.
 
 ## Nokia
 
-Nokia devices running Android 9+ have **The Evenwell Power saver** disabled, which was the main culprit for killing bacground processes. If AdGuard still gets killed on your Nokia phone, check out the [legacy instruction](https://dontkillmyapp.com/hmd-global).
+Nokia devices running Android 9+ have **The Evenwell Power saver** disabled, which was the main culprit for killing background processes. If AdGuard still gets killed on your Nokia phone, check out the [legacy instruction](https://dontkillmyapp.com/hmd-global).
 
 ### Nokia 1 (Android Go)
 
@@ -367,7 +367,7 @@ Nokia devices running Android 9+ have **The Evenwell Power saver** disabled, whi
 
 1. Enable **USB debugging** within Developer options on your phone;
 
-1. Uninstall the **com.evenwell.emm** package via the following adb commands:
+1. Uninstall the **com.evenwell.emm** package via the following ADB commands:
 
     `adb shell` `pm uninstall --user 0 com.evenwell.emm`
 
@@ -423,7 +423,7 @@ An alternative, more permanent solution for more tech-savvy users:
 
 1. Enable **USB debugging** within Developer options on your phone;
 
-1. Uninstall the **com.evenwell.powersaving.g3** package via the following adb commands:
+1. Uninstall the **com.evenwell.powersaving.g3** package via the following ADB commands:
 
     `adb shell` `pm uninstall --user 0 com.evenwell.powersaving.g3`
 
@@ -436,7 +436,7 @@ Go to **Security Centre** → tap **Privacy Permissions** → **Startup manager*
 Other solutions:
 
 - Pin AdGuard to the recent apps screen
-- Enable AdGuard in the app list inside the security app’s "startup manager" and "floating app list" (com.coloros.safecenter / com.coloros.safecenter.permission.Permission)
+- Enable AdGuard in the app list inside the security app’s “startup manager” and “floating app list” (com.coloros.safecenter / com.coloros.safecenter.permission.Permission)
 - Turn off battery optimizations
 
 ## OnePlus
@@ -493,7 +493,7 @@ For OnePlus below 6:
 
 ### Recent apps clearing behaviour
 
-Normally when you swipe an app away, it won’t close. On OnePlus this may however work in a different way. Recent app clear behaviour manager might be set up in a way that swiping the app to close will kill it. To return it to the "normal" mode:
+Normally when you swipe an app away, it won’t close. On OnePlus this may however work in a different way. Recent app clear behaviour manager might be set up in a way that swiping the app to close will kill it. To return it to the “normal” mode:
 
 Go to **Settings** → **Advanced** → **Recent app management** → Switch to **Normal clear**
 
@@ -519,7 +519,7 @@ Wiko devices are problematic in terms of non-standard background process optimiz
 - Go back and go to **Manual mode**
 - Tap on the **Gear** icon on top right → **Background apps whitelist** → Select **AdGuard**
 
-## Android stock devices Pixel/Nexus/Essential
+## Android stock devices Pixel/Nexus/Nubia/Essential
 
 Android stock OS normally does not conflict with apps working in the background, but if you are facing any issues you will need to switch on the **Always-on VPN** mode.
 

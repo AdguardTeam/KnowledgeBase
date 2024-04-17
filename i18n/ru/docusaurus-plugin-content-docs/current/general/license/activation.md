@@ -65,10 +65,6 @@ sidebar_position: 3
 
     ![Активация лицензии *mobile_border](https://cdn.adtidy.org/blog/new/sbxttactivate-license.png)
 
-    Вы также можете нажать *У меня есть лицензия* на следующем экране — откроется то же самое окно активации.
-
-    ![У меня есть лицензия *mobile](https://cdn.adtidy.org/blog/new/fq28vi-have-a-license.png)
-
 ### Активация AdGuard для iOS
 
 1. Нажмите *Настройки*, затем выберите *Лицензия*.

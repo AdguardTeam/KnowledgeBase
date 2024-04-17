@@ -13,7 +13,7 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 :::caution
 
-Změna *Nízkoúrovňových nastavení* může způsobit problémy s výkonem AdGuardu, může přerušit internetové připojení nebo ohrozit vaši bezpečnost a soukromí. Tuto část byste měli otevřít pouze v případě, že jste si jisti tím, co děláte, nebo pokud se vás na to zeptal náš tým podpory.
+Změna *Nízkoúrovňových nastavení* může způsobit problémy s výkonem AdGuardu, může přerušit internetové připojení nebo ohrozit vaši bezpečnost a soukromí. Tuto sekci byste měli otevřít pouze v případě, že víte, co děláte, nebo vás o to požádal náš tým podpory.
 
 :::
 
@@ -97,7 +97,7 @@ Pokud je toto nastavení povoleno, bude AdGuard před přidáním nebo aktualiza
 
 #### Zachytit HAR
 
-Pokud je toto nastavení povoleno, bude AdGuard zachycovat soubory HAR. Vytvoří adresář s názvem "har" uvnitř adresáře mezipaměti aplikace a přidá do něj informace o všech filtrovaných požadavcích HTTP ve formátu HAR 1.2, které lze analyzovat pomocí programu Fiddler.
+Pokud je toto nastavení povoleno, bude AdGuard zachycovat soubory HAR. Vytvoří adresář s názvem “har” uvnitř adresáře mezipaměti aplikace a přidá do něj informace o všech filtrovaných požadavcích HTTP ve formátu HAR 1.2, které lze analyzovat pomocí programu Fiddler.
 
 Používejte to pouze pro účely ladění!
 

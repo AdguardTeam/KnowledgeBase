@@ -5,11 +5,11 @@ sidebar_position: 12
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Android」について書いています。 実際に使ってみるには、[AdGuardアプリをダウンロード](https://agrd.io/download-kb-adblock)してください。
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. 実際に使ってみるには、[AdGuardアプリをダウンロード](https://agrd.io/download-kb-adblock)してください。
 
 :::
 
-[HTTPSトラフィック（通信）をフィルタリング](/general/https-filtering/what-is-https-filtering.md)できるようになるには、AdGuardはデバイスのユーザーストレージに証明書をインストールする必要があります。（※ほとんどの広告がHTTPSを使用しているため、HTTPSフィルタリングは広告ブロック性能にとって非常に重要です。） より古いバージョンのアンドロイドOSでは、証明書は自動的にインストールされたていましたが、Android 11以降ではユーザーが手動でインストールしなければならなくなりました。
+[HTTPSトラフィック（通信）をフィルタリング](/general/https-filtering/what-is-https-filtering.md)できるようになるには、AdGuardはデバイスのユーザーストレージに証明書をインストールする必要があります。（※ほとんどの広告がHTTPSを使用しているため、HTTPSフィルタリングは広告ブロック性能にとって非常に重要です。） On older versions of the Android OS this was done automatically, but on Android 11 and later users have to install it manually.
 
 ![証明書 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/manual-certificate/g.gif)
 
@@ -22,17 +22,21 @@ AdGuard証明書をインストールする方法は以下の通りです:
     - AdGuardによるHTTPSフィルタリングが安全である理由
     - AdGuard証明書の必要性
 
-    「*次へ*」→「*次へ*」→「*証明書を保存する*」をタップします。
+    Consecutively tap *Next* → *Next* → *Save certificate*.
 
 1. 開いた*ダウンロード*フォルダで右下の「*保存*」をタップします。
 
-1. 保存後、「*設定を開く*」をタップし、（場合によっては「セキュリティの詳細設定」を押してから）「*暗号化と認証情報*」をタップし、「*証明書のインストール*」をタップします（次に選択画面がある場合は「CA証明書」を選びます）。
+1. After saving, tap *Open Settings*.
 
-1. 警告が表示された場合、そのまま「*インストールする*」をタップしてください（場合によっては、その後PINコードを入力してください）。 リストからAdGuardの証明書ファイル（adguard_xx_xx.crtみたいな形式のもの）を選択します。
+1. Tap *More security settings* → *Encryption & credentials* → *Install a certificate* → *CA certificate*.
+
+1. You might see a warning. If so, tap *Install anyway* and enter your PIN if necessary.
+
+1. Select the AdGuard certificate file. Its name should look like *adguard_1342_020322.crt*.
 
 これで完了です。 証明書が正常にインストールされると、HTTPSフィルタリングが有効になります。
 
-※この手順は、Google Pixel 7 に基づいていることにご注意ください。 別のAndroidデバイスをお使いの場合、正確なメニュー名やオプションは多少異なる場合があります。 方法として、デバイスの設定にアクセスし、検索バーに「証明書」または「認証情報」と入力して証明書を検索することができます。
+Please note that the steps provided are based on the Google Pixel 7 smartphone. 別のAndroidデバイスをお使いの場合、正確なメニュー名やオプションは多少異なる場合があります。 For easier navigation consider searching for a certificate by entering “certificate” or “credentials” in the settings search bar.
 
 証明書の手動インストール中に問題が発生した場合（たとえば、証明書をインストールしたにもかかわらず、AdGuardアプリが証明書を無視し続けるなど）、以下のいずれかの解決策をお試しください。
 

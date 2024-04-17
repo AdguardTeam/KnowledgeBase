@@ -5,13 +5,13 @@ sidebar_position: 2
 
 :::info
 
-Dieser Artikel behandelt AdGuard für Mac, einen multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. Um zu sehen, wie die App funktioniert, [laden Sie AdGuard für Mac herunter](https://agrd.io/download-kb-adblock)
 
 :::
 
 Wenn der AdGuard-Schutz aus irgendeinem Grund nicht aktiviert werden kann, führen Sie die folgenden Schritte aus:
 
-1. Klicken Sie auf das AdGuard-Symbol in der Menüleiste → gehen Sie zu Erweitert → Einstellungen zurücksetzen… → AdGuard beenden…
+1. Click the AdGuard icon at the menu bar and go to *Advanced* → *Reset settings...* → *Quit AdGuard...*
 
 2. Geben Sie in der Spotlight-Suche Terminal ein, geben Sie `sudo rm -R /Library/Application\ Support/com.adguard.adguard` ein und führen Sie es aus.
 
@@ -19,4 +19,4 @@ Wenn der AdGuard-Schutz aus irgendeinem Grund nicht aktiviert werden kann, führ
 
 4. Öffnen Sie das Terminal erneut, geben Sie `ls -al /Library/StagedExtensions/Library/Application\ Support/com.adguard.adguard/` ein und führen Sie es aus. Sie sollten Folgendes erhalten: `No such file or directory`.
 
-5. Starten Sie AdGuard, geben Sie Login und Passwort ein, wenn Sie dazu aufgefordert werden.
+5. Start AdGuard and enter your login information when prompted.

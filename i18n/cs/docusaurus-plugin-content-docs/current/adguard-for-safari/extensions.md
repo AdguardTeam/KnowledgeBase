@@ -25,7 +25,7 @@ K blokování reklam, slídičů a obtěžujících prvků na webových stránk�
 
 Každé rozšíření pro blokování obsahu může obsahovat až 150 000 aktivních pravidel filtrování. Počet pravidel ve většině skupin filtrů nepřesahuje 150 000. Pokud však aktivujete příliš mnoho jazykově specifických nebo vlastních filtrů, můžete tento limit překročit. V takových případech budou náhodná pravidla, která překročí limit, automaticky zakázána, což může vést k nesprávnému blokování. **Důrazně doporučujeme aktivovat pouze ty filtry, které potřebujete**.
 
-There is also one more extension responsible for other features: *AdGuard for Safari*, which adds the AdGuard icon next to the search bar in Safari and allows using advanced rules to block complex ads.
+K dispozici je také další rozšíření, které je zodpovědné za další funkce: *AdGuard pro Safari*, které přidává ikonu AdGuard vedle vyhledávací lišty a umožňuje používání pokročilejších pravidel k blokování záludnějších reklam.
 
 ![Safari extensions](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-icon1.png)
 
@@ -49,19 +49,19 @@ Uživatelská pravidla a pravidla seznamu povolených jsou součástí každého
 
 ## AdGuard pro Safari
 
-*AdGuard for Safari* enables the AdGuard icon next to the search bar. Je to užitečné, pokud chcete rychle nastavit ochranu na konkrétním webu nebo ručně blokovat reklamy. It also contains advanced rules that aren't converted into the format supported by Safari. To zahrnuje pravidla CSS, selektory CSS a skriptlety, které umožňují AdGuardu blokovat složité reklamy — například na YouTube.
+*AdGuard pro Safari* aktivuje ikonu AdGuardu vedle vyhledávací lišty. Je to užitečné, pokud chcete rychle nastavit ochranu na konkrétním webu nebo ručně blokovat reklamy. Obsahuje také pokročilá pravidla, která nejsou převedena do formátu podporovaného prohlížečem Safari. To zahrnuje pravidla CSS, selektory CSS a skriptlety, které umožňují AdGuardu blokovat složité reklamy — například na YouTube.
 
 ## Jak spravovat rozšíření Safari
 
 1. Otevřete Safari a kliknutím na *Safari* v levém horním rohu obrazovky rozbalte nabídku. ![Safari settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-settings1.png)
-1. Click *Settings...*
+1. Klikněte na *Natavení...*
 1. Vyberte *Rozšíření*. ![Extensions tab](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-extensions1.png)
 
-## Why AdGuard for Safari requires permission
+## Proč vyžaduje AdGuard pro Safari oprávnění
 
-When enabling the *AdGuard for Safari* extension, you might notice that it requires **access to web page content** and **access to browsing history**. Here's why it needs these permissions:
+Při povolování rozšíření *AdGuard pro Safari* si můžete všimnout, že vyžaduje **přístup k obsahu webových stránek** a k **historii prohlížení**. Zde je důvod, proč potřebuje tato oprávnění:
 
-- Access to web page content is required for manual ad blocking and advanced blocking rules to work correctly
-- Access to browsing history is required to check the protection status on websites and determine which advanced rules should be applied
+- Pro správnou funkci ručního blokování reklam a pokročilých pravidel blokování je nutný přístup k obsahu webové stránky
+- Přístup k historii prohlížení je nutný pro kontrolu stavu ochrany na webových stránkách a určení, která pokročilá pravidla by měla být použita
 
 Tyto údaje nepoužíváme pro žádné jiné účely a ani je s nikým nesdílíme. Pro více informací se můžete podívat na naše [Zásady ochrany osobních údajů](https://adguard.com/privacy.html).

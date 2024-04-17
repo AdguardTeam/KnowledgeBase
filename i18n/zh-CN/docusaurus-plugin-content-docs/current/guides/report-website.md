@@ -12,7 +12,7 @@ sidebar_position: 3
 - 创建规则时，其中一个过滤器的作者犯了一个错误；
 - 重新插入广告。 在[我们的博客](https://adguard.com/en/blog/ad-reinsertion.html)中找到有关此方法的更多信息。
 
-您可以通过填写申请表中的广告示例来帮助我们。 为此，请按照您的操作系统使用说明。
+You can help us by filling in a form with examples of ads you have encountered. 为此，请按照您的操作系统使用说明。
 
 ## 报告网站 {#report}
 
@@ -26,8 +26,8 @@ sidebar_position: 3
 
 ### 浏览器扩展 {#extension}
 
-- 点击相应图标打开浏览器扩展设置；
-- 点击**报告问题**：
+- Open the browser extension settings by clicking the corresponding icon;
+- Click **Report an issue**:
 
 ![extension_issue *mobile_border](https://cdn.adtidy.org/blog/new/5si74extension.png)
 
@@ -53,7 +53,7 @@ sidebar_position: 3
 
 ### Mac 系统 {#mac}
 
-- 打开 [AdGuard 浏览器助手](/adguard-for-mac/browser-assistant)，点击「**报告问题**」：
+- Open [AdGuard Browser Assistant](/adguard-for-mac/features/browser-assistant) and hit **Report an issue**:
 
 ![mac *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/guides/browser-assistant-mac.png)
 
@@ -135,7 +135,7 @@ sidebar_position: 3
 
 1. 禁用**隐身模式**；
 2. 如果问题解决，请打开此模块并逐个关闭**隐身模式**内的各选项。 这样做是为了检测出“破坏”页面的过滤器；
-3. 如果您设法找出“破坏”页面的过滤器，则应在填写表单时通知开发人员（请参见上文）。 在此种情况下，最好返回到初始设置；
+3. If you have managed to detect which setting "breaks" a page, you should inform the developers when filling out the form (see above). 在此种情况下，最好返回到初始设置；
 4. 如果失败（问题未解决），请参阅**扩展**部分。
 
 ### **浏览器扩展**
@@ -146,4 +146,4 @@ sidebar_position: 3
 
 ### **第三方拦截器**
 
-某些浏览器和防病毒程序（例如 Yandex 浏览器，卡巴斯基等）具有内置的广告拦截器。 它们可能会影响并引起网站运行发生问题。 如果您使用此类程序，请确保问题是出现在 **AdGuard** 一侧：禁用 **AdGuard** 过滤，然后尝试重复问题。 如果问题仍存在，则表示问题是由其他应用程序或浏览器引起的。 如问题是由 **AdGuard** 引起的，则请按照前面段落中描述的步骤进行操作。
+某些浏览器和防病毒程序（例如 Yandex 浏览器，卡巴斯基等）具有内置的广告拦截器。 它们可能会影响并引起网站运行发生问题。 If you are using such programs, first make sure that the problem is caused by **AdGuard**: disable **AdGuard** filtering and try to reproduce the problem. 如果问题仍存在，则表示问题是由其他应用程序或浏览器引起的。 如问题是由 **AdGuard** 引起的，则请按照前面段落中描述的步骤进行操作。

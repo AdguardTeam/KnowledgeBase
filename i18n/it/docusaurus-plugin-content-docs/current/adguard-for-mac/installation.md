@@ -5,13 +5,13 @@ sidebar_position: 2
 
 :::info
 
-Questo articolo riguarda AdGuard per Mac, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
-## System  requirements
+## System requirements
 
-**Operating system version:** macOS 10.13 (64 bit) or higher
+**Operating system version:** macOS 10.15 (64 bit) or higher
 
 **RAM:** at least 2 GB
 
@@ -81,22 +81,25 @@ Go to the Applications section. Find AdGuard there, right-click it and choose **
     - /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log (file)
 
     To do so, open the Terminal app, then enter and execute the following commands:
-    - `sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"`
-    - `rm -R "$HOME/Library/Application Support/com.adguard.mac.adguard"`
-    - `rm $HOME/Library/Preferences/com.adguard.mac.adguard.plist`
-    - `rm -R "$HOME/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac"`
-    - `find "$HOME/Library/Application Support" -name "com.adguard.browser_extension_host.nm.json" -delete`
-    - `sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist`
-    - `sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist`
-    - `sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log`
-    - `sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log`
+
+    ```bash
+    sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"
+    rm -R "$HOME/Library/Application Support/com.adguard.mac.adguard"
+    rm $HOME/Library/Preferences/com.adguard.mac.adguard.plist
+    rm -R "$HOME/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac"
+    find "$HOME/Library/Application Support" -name "com.adguard.browser_extension_host.nm.json" -delete
+    sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist
+    sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist
+    sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log
+    sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log
+    ```
 
 1. Run the **Activity Monitor** app.
 1. Using search tool, find the process **cfprefsd**.
 
     ![Run Activity Monitor](https://cdn.adtidy.org/content/kb/ad_blocker/mac/22.jpg)
 
-1. Stop the process which is being run under the user (not the one run under root). To do so, click the process and then click X on the upper left. Confirm it in the dialogue window.
+1. Stop the process which is being run under the user (not the one run under root). To do so, click the process and then click X on the upper left. Confirm the action in the dialogue window.
 
     ![Confirm](https://cdn.adtidy.org/content/kb/ad_blocker/mac/33.jpg)
 

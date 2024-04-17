@@ -65,10 +65,6 @@ Alternatif olarak lisansı etkinleştirmek için [lisans anahtarı](../what-is#l
 
     ![Lisansı etkinleştirme *mobile_border](https://cdn.adtidy.org/blog/new/sbxttactivate-license.png)
 
-    Alternatif olarak, aşağıdaki ekranda *Lisansım var* öğesine dokunabilir ve lisansınızı yukarıda belirtilen yöntemlerden biriyle etkinleştirebilirsiniz.
-
-    ![Lisansım var *mobile](https://cdn.adtidy.org/blog/new/fq28vi-have-a-license.png)
-
 ### iOS için AdGuard'ı etkinleştirme
 
 1. *Ayarlar* öğesine dokunun, ardından *Lisans* öğesini seçin.

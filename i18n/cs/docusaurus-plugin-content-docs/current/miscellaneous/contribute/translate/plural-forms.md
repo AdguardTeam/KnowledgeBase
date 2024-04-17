@@ -14,7 +14,7 @@ Podstatná jména v různých jazycích mohou mít několik tvarů množného č
 
 Např. anglická slova mají dva slovní tvary, když se o něčem mluví v jednotném čísle, např. *'one star'* a v množném čísle — *'two stars'*. Je jedno, jestli řeknete pět, dvacet šest nebo třeba pět set třicet dva hvězdiček — koncové "s" zůstane stejné. Některé jazyky však mohou obsahovat pouze jeden nebo více tvarů množného čísla.
 
-Na rozdíl od angličtiny má polština tři tvary množného čísla podstatných jmen. Jeden z nich se používá, když se mluví o něčem v jednotném čísle, druhý tvar se používá v množném čísle, ale s číslovkami končícími na 2-4, s výjimkou 12-14, a třetí tvar — pro slova s jinými číslovkami před nimi.
+Na rozdíl od angličtiny má polština tři tvary množného čísla podstatných jmen. Jeden z nich se používá, když se mluví o něčem v jednotném čísle, druhý tvar se používá v množném čísle, ale s číslovkami končícími na 2–4, s výjimkou 12–14, a třetí tvar — pro slova s jinými číslovkami před nimi.
 
 Podívejte se na tento obrázek. Zde vidíte skupiny číslovek, které určují tvar slova, když před ním stojíte.
 
@@ -24,13 +24,13 @@ Pro lepší pochopení si udělejme malou paralelu mezi angličtinou a polštino
 
       Anglická verze:                                                 Polské ekvivalenty:
     
-      1. forma - It takes one hour.                                     1. forma - Zajmuje to godzinę.
-      2. forma - It takes two hours.                                    2. forma - Zajmuje to dwie godziny.
-      3. forma - It takes five hours.                                   3. forma - Zajmuje to pięć godzin.
+      1. form — It takes one hour.                                     1. form — Zajmuje to godzinę.
+      2. form — It takes two hours.                                    2. form — Zajmuje to dwie godziny.
+      3. form — It takes five hours.                                   3. form — Zajmuje to pięć godzin.
 
 Nyní je zřejmé, že polské slovo *"godzinę"* (hodina) má tři různé podoby, zatímco anglické slovo mění svůj tvar s danými číslovkami pouze dvakrát.
 
-Kromě polštiny existuje mnoho dalších jazyků, které mají tři a více tvarů množného čísla, například ruština, srbština, slovenština, čeština atd. Ne všechny se však řídí stejným pravidlem. Proto je důležité vědět, kolik tvarů množného čísla váš jazyk obsahuje a jak je můžete použít.
+Kromě polštiny existuje mnoho dalších jazyků, které mají tři a více tvarů množného čísla, například ruština, srbština, slovenština, čeština atd. Ne všechny se však řídí stejným pravidlem. Proto je důležité vědět, kolik má váš jazyk množných čísel a jak je správně používat.
 
 ## Kde se můžete dozvědět o počtu tvarů množného čísla? {#where-to-learn}
 

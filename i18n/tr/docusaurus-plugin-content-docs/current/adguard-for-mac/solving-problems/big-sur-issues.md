@@ -5,7 +5,7 @@ sidebar_position: 4
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Mac için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Mac için AdGuard hakkındadır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -41,7 +41,7 @@ For a deeper understanding of this problem, read [this article](../protect-mail-
 
 **Recommended solution**
 
-At this point, we recommend using a more traditional VPN service, such as AdGuard VPN, instead of the new Apple's privacy features.
+At this point, we recommend using a more traditional VPN service, such as [AdGuard VPN](https://adguard-vpn.com/), instead of the newer Apple privacy features.
 
 ### Monterey 12, Big Sur 11.6 and later: currently existing problems
 

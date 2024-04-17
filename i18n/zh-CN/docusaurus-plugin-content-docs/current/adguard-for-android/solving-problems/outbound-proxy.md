@@ -5,7 +5,7 @@ sidebar_position: 8
 
 :::info
 
-本文适用于安卓版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -25,7 +25,7 @@ In this article we give examples of how to set up some of the most popular proxi
 
 ### 如何同时使用 AdGuard 和 Tor
 
-1. Open AdGuard and go to **Settings** → **Filtering** → **Network** → **Proxy**. Download "Orbot: Proxy with Tor" directly from [Google Play](https://play.google.com/store/apps/details?id=org.torproject.android&noprocess) or by tapping **Integrate with Tor** and then **Install**.
+1. Open AdGuard and go to **Settings** → **Filtering** → **Network** → **Proxy**. Download “Orbot: Proxy with Tor” directly from [Google Play](https://play.google.com/store/apps/details?id=org.torproject.android&noprocess) or by tapping **Integrate with Tor** and then **Install**.
 
 1. 打开 Orbot 并在应用程序的首页点击**「开启」**按钮。
 
@@ -61,7 +61,7 @@ In this article we give examples of how to set up some of the most popular proxi
     | 代理主机 | *proxy-nl.privateinternetaccess.com* |
     | 代理端口 | *1080*                               |
 
-1. You also need to fill out the **Username/Password** fields. To do so, log in to the [Client Control Panel](https://www.privateinternetaccess.com/pages/client-sign-in) on the PIA website. Click the **Generate Password** button under the **Generate PPTP/L2TP/SOCKS Password** section. A username starting with "x" and a random password will be shown. Use them to fill out the **Proxy username** and **Proxy password** fields in AdGuard.
+1. You also need to fill out the **Username/Password** fields. To do so, log in to the [Client Control Panel](https://www.privateinternetaccess.com/pages/client-sign-in) on the PIA website. Tap the **Generate Password** button under the **Generate PPTP/L2TP/SOCKS Password** section. A username starting with “x” and a random password will be shown. Use them to fill out the **Proxy username** and **Proxy password** fields in AdGuard.
 
 1. Tap **Save and select**.
 
@@ -93,11 +93,11 @@ In this article we give examples of how to set up some of the most popular proxi
 
 1. 点击**「添加代理」**按钮并输入以下的数据：
 
-    | 字符串  | 数值                                                                             |
-    | ---- | ------------------------------------------------------------------------------ |
-    | 代理分类 | *SOCKS5*                                                                       |
-    | 代理主机 | *any server from [this list](https://support.nordvpn.com/Connectivity/Proxy/)* |
-    | 代理端口 | *1080*                                                                         |
+    | 字符串  | 数值                                                                                                                              |
+    | ---- | ------------------------------------------------------------------------------------------------------------------------------- |
+    | 代理分类 | *SOCKS5*                                                                                                                        |
+    | 代理主机 | *any server from [this list](https://support.nordvpn.com/hc/en-us/articles/20195967385745-NordVPN-proxy-setup-for-qBittorrent)* |
+    | 代理端口 | *1080*                                                                                                                          |
 
 1. For **Username** and **Password** fields, enter your NordVPN Username and Password.
 
