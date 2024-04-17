@@ -2257,7 +2257,7 @@ Modifier aliases (`1p`, `3p`, etc.) are not included in these categories, howeve
 
 When dealing with a negated domain, app, method, or content-type, we add **1 point** for the existence of the modifier itself, regardless of the quantity of negated domains or content-types. This is because the rule's scope is already infinitely broad. Put simply, by prohibiting multiple domains, content-types, methods or apps, the scope of the rule becomes only minimally smaller.
 
-#### Defined content-type modifiers, defined methods, defined headers, $all, special exceptions {#priority-category-2}
+#### Defined content-type modifiers, defined methods, defined headers, $all, $popup, special exceptions {#priority-category-2}
 
 All allowed content types:
 
