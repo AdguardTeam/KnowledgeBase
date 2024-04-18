@@ -3,8 +3,6 @@ title: Jak aktivovat
 sidebar_position: 3
 ---
 
-## Jak aktivovat licenci
-
 Chcete-li aktivovat licenci, přejděte do části *Licence* svého produktu AdGuard a vyhledejte pole *Přihlásit se* nebo tlačítko *Aktivovat*. K přihlášení použijte e-mail a heslo svého AdGuard účtu. Pokud ještě nemáte účet, bude vám nabídnuto jeho vytvoření.
 
 :::note

@@ -15,7 +15,7 @@ Rozsah a metody kontrol závisí na používaném produktu. V našich rozšíře
 
 Pro práci s filtry používáme protokol [Safe Browsing API verze 2.2](https://code.google.com/p/google-safe-browsing/wiki/Protocolv2Spec). Tento protokol nám umožňuje uchovávat vaše osobní údaje v naprostém bezpečí. Náš server neví nic o webových stránkách, které jste navštívili. Pro kontroly používáme prefixy hash, nikoli otevřené adresy URL.
 
-The figure below provides a general understanding of how the Browsing security module works, using AdGuard for Windows as an example.
+Následující obrázek poskytuje obecnou představu o tom, jak modul Bezpečné prohlížení funguje. Jako příklad uvádíme AdGuard pro Windows.
 
 ![Functioning algorithm of Browsing security module](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_adguard_for_windows.png)
 
@@ -25,7 +25,7 @@ Rozšíření prohlížeče pracují jinak a ke kontrole navštívených stráne
 
 Upozorňujeme vás, že nikdy nezískáváme žádné informace, které by nám umožnily zjistit, které webové stránky navštěvujete a tyto údaje jakkoli využít.
 
-An approximate algorithm of the functioning of the Browsing security module is shown in the picture below.
+Přibližný algoritmus fungování modulu Bezpečného prohlížení je znázorněn na obrázku níže.
 
 ![Functioning algorithm of Browsing security module in AdGuard browser extensions.](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_extension.png)
 
@@ -47,11 +47,11 @@ Tento filtr obsahuje odkazy na stránky, které mohou spustit škodlivý kód, c
 
 Většina práce je automatizovaná, takže si můžete být jisti, že nový malware a phishingové adresy jsou do naší databáze přidávány co nejrychleji.
 
-### AdGuard Browsing security Community
+### Bezpečné prohlížení Adguard — komunita
 
-An important tool for maintaining the highest level of filtering is the *AdGuard Browsing security Community*. Členem komunity se může stát každý uživatel našich produktů — ať už jde o AdGuard pro Windows nebo naše rozšíření pro prohlížeče — a pomoci nám tak při vytváření AdGuard filtrů.
+Důležitým nástrojem pro udržení nejvyšší úrovně filtrování je *komunita Bezpečného prohlížení AdGuardu*. Členem komunity se může stát každý uživatel našich produktů — ať už jde o AdGuard pro Windows nebo naše rozšíření pro prohlížeče — a pomoci nám tak při vytváření AdGuard filtrů.
 
-In the image below, you can see an algorithm of how Browsing security Community works:
+Na obrázku níže vidíte algoritmus práce komunity pro Bezpečné prohlížení:
 
 ![The way AdGuard Browsing security Community works](https://cdn.adtidy.org/public/Adguard/En/Articles/browsing_security_community.png)
 

@@ -1,5 +1,5 @@
 ---
-title: iCloud Private Relay and AdGuard
+title: iCloud Özel Geçişi ve AdGuard
 sidebar_position: 7
 ---
 
@@ -19,7 +19,7 @@ The same applies to using any VPN apps on Mac: you have to choose between using 
 
 ## In detail
 
-AdGuard for Mac now uses macOS built-in socket filtering based on the network extensions API. This new and rather buggy mechanism replaced good old Kernel extensions. Over the last 1.5 years, we've reported more than 20(!) bugs to Apple regarding their new filtering method.
+AdGuard for Mac now uses macOS built-in socket filtering based on the network extensions API. Bu yeni ve oldukça hatalı mekanizma eski güzel Kernel uzantılarının yerini aldı. Over the last 1.5 years, we've reported more than 20(!) bugs to Apple regarding their new filtering method.
 
 The network extensions API has a VPN-like configuration with a list of route-like entries. On Big Sur, AdGuard developed "split-tunnel" rules to avoid creating the "default route" rule because it causes problems on early Big Sur releases.
 
@@ -35,7 +35,7 @@ As a consequence, AdGuard can't work together with iCloud Private Relay and the 
 
 `network.extension.monterey.force.split.tunnel` restores the "Big Sur" behavior, but this option may break access to websites due to (3) and (4). We keep searching for a solution to this issue. One of the options is implementing HTTP/3 filtering.
 
-## Recommended solution
+## Önerilen çözüm
 
 We recommend using AdGuard together with a more traditional VPN service such as [AdGuard VPN](https://adguard-vpn.com/).
 

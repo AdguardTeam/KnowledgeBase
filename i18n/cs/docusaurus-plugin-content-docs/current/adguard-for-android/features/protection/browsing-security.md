@@ -15,7 +15,7 @@ Bezpečné prohlížení AdGuard vás chrání před návštěvou těchto nebezp
 
 ![Browsing security \*mobile\_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
 
-If you're about to visit a dangerous website, Browsing security will show you the following warning:
+Pokud se chystáte navštívit nebezpečnou webovou stránku, Bezpečné prohlížení zobrazí následující varování:
 
 ![Browsing security warning \*mobile\_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
 
@@ -25,4 +25,4 @@ Upozorňujeme, že AdGuard pro Android není antivirový program. Nezabrání st
 
 :::
 
-Browsing security is safe: AdGuard does not know what websites you visit. Ke kontrole zabezpečení webových stránek používá místo adres URL předpony hash. [Další informace o tom, jak funguje Bezpečné prohlížení, naleznete v tomto článku](/general/browsing-security/).
+Bezpečné prohlížení je bezpečné: AdGuard neví, jaké webové stránky navštěvujete. Ke kontrole zabezpečení webových stránek používá místo adres URL předpony hash. [Další informace o tom, jak funguje Bezpečné prohlížení, naleznete v tomto článku](/general/browsing-security/).

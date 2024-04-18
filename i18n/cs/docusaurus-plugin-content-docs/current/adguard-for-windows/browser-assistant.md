@@ -27,7 +27,7 @@ Při použití Asistenta prohlížeče všechny tyto problémy nevadí, protože
 
 ## Samostatná karta v nastavení
 
-The new Browser Assistant has its own tab in AdGuard for Windows settings, along with Stealth Mode, Browsing security, Parental Control and others. Zde najdete odkaz ke stažení rozšíření pro váš výchozí prohlížeč. Kromě toho je zde zaškrtávací políčko pro povolení staršího asistenta.
+Nový Asistent prohlížeče má v nastavení AdGuardu pro Windows vlastní záložku spolu s Režimem utajení, Bezpečným prohlížením, Ochranou rodiny a dalšími. Zde najdete odkaz ke stažení rozšíření pro váš výchozí prohlížeč. Kromě toho je zde zaškrtávací políčko pro povolení staršího asistenta.
 
 ![Settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 
