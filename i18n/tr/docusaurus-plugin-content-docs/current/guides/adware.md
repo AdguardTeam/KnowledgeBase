@@ -1,31 +1,31 @@
 ---
-title: Adware & viruses
+title: Reklam yazılımı ve virüsler
 sidebar_position: 6
 ---
 
 :::not
 
-AdGuard is not an antivirus program. It can warn you when you're going to visit a malware or phishing website, but **it does not remove viruses from your device.**
+AdGuard bir antivirüs programı değildir. Kötü amaçlı yazılım veya kimlik avı sitesini ziyaret edeceğinizde sizi uyarabilir, ancak **cihazınızdan virüsleri kaldırmaz.**
 
 :::
 
-If you suspect your computer is infected by malware or viruses, first of all you can inspect your computer with utilities from leading antiviruses.
+Bilgisayarınıza kötü amaçlı yazılım veya virüs bulaştığından şüpheleniyorsanız, öncelikle önde gelen antivirüslerin yardımcı programlarıyla bilgisayarınızı kontrol edebilirsiniz.
 
-## Free antivirus utilities {#free-antivirus}
+## Ücretsiz antivirüs yardımcı programları {#free-antivirus}
 
-Bunlardan birçoğu vardır ve tercih ettiğiniz herhangi birini kullanabilirsiniz. If this check with antivirus utilities revealed nothing, but the computer still behaves suspiciously, try to test it for adware, which can implement its advertising on any pages that you open.
+Bunlardan birçoğu vardır ve tercih ettiğiniz herhangi birini kullanabilirsiniz. Antivirüs programlarıyla yapılan bu kontrolde bir şey çıkmazsa, ancak bilgisayar hala şüpheli davranıyorsa, açtığınız tüm sayfalarda kendi reklamlarını gösterebilen reklam yazılımlarına karşı test etmeyi deneyin.
 
-## How to clean your system from Adware {#adware}
+## Sisteminizi Reklam Yazılımlarından nasıl temizlersiniz {#adware}
 
-On the Internet, you can find a lot of applications that are aimed at fighting this problem. You can use any utility you like. But we strongly recommend using **[AdwareCleaner](https://www.malwarebytes.com/adwcleaner)** by **Malwarebytes**, **[Avast One](https://www.avast.com/c-adware-removal-tool)** by **Avast**, or **[Adaware](https://www.adaware.com)**. These adware scanners are quite easy to use and you will be able to handle them by yourself.
+İnternette, bu sorunla mücadele etmeyi amaçlayan birçok uygulama bulabilirsiniz. İstediğiniz herhangi bir yardımcı programı kullanabilirsiniz. But we strongly recommend using **[AdwareCleaner](https://www.malwarebytes.com/adwcleaner)** by **Malwarebytes**, **[Avast One](https://www.avast.com/c-adware-removal-tool)** by **Avast**, or **[Adaware](https://www.adaware.com)**. These adware scanners are quite easy to use and you will be able to handle them by yourself.
 
-Let's take AdwareCleaner as an example. After the application has been downloaded and successfully installed, take the following steps:
+Let's take AdwareCleaner as an example. Uygulama indirildikten ve başarıyla kurduktan sonra aşağıdaki adımları izleyin:
 
-1. Start the application and click **Scan now**.
+1. Uygulamayı başlatın ve **Şimdi tara** öğesine tıklayın.
 
-![adware1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware1.png)
+![reklam yazılımı1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware1.png)
 
-1. Once the scan has been completed, you will need to send suspicious objects to **Quarantine**.
+1. Tarama tamamlandıktan sonra, şüpheli nesneleri **Karantinaya** göndermeniz gerekecektir.
 
 ![adware2 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware2.png)
 

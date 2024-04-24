@@ -153,11 +153,11 @@ Safari'de bir HAR dosyası oluşturmak için şu adımları izleyin:
 
 HAR dosyaları oluşturmak için şu adımları izleyin:
 
-1. Open AdGuard and go to **Settings**.
+1. Adguard'ı açın ve **Ayarlar** öğesine gidin.
 
-1. Choose **Advanced** in the menu.
+1. Menüden **Gelişmiş** öğesini seçin.
 
-1. Choose **Low Level Settings**
+1. **Alt Seviye Ayarlar** öğesini seçin
 
 1. Activate `pref.har.capture` (you will have to restart the protection).
 
@@ -177,4 +177,4 @@ HAR dosyaları oluşturmak için şu adımları izleyin:
 
 1. Go to **General settings** → Click **Export logs** → **Save**.
 
-1. Disable HAR writing by unchecking the corresponding box.
+1. İlgili kutunun işaretini kaldırarak HAR yazmayı devre dışı bırakın.

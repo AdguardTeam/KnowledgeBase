@@ -1,5 +1,5 @@
 ---
-title: Tracking protection
+title: İzleme koruması
 sidebar_position: 2
 ---
 

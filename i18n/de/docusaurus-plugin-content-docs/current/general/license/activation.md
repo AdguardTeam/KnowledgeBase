@@ -3,8 +3,6 @@ title: Lizenz aktivieren
 sidebar_position: 3
 ---
 
-## So aktivieren Sie eine Lizenz
-
 Um Ihre Lizenz zu aktivieren, gehen Sie zum Abschnitt *Lizenz* Ihres AdGuard-Produkts und suchen Sie das Feld *Anmelden* oder die Schaltfläche *Aktivieren* . Verwenden Sie die E-Mail und das Passwort Ihres AdGuard-Kontos, um sich anzumelden. Wenn Sie noch kein Konto haben, wird Ihnen angeboten, eines zu erstellen.
 
 :::note
