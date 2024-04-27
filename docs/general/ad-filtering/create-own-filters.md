@@ -2257,9 +2257,10 @@ Modifier aliases (`1p`, `3p`, etc.) are not included in these categories, howeve
 
 When dealing with a negated domain, app, method, or content-type, we add **1 point** for the existence of the modifier itself, regardless of the quantity of negated domains or content-types. This is because the rule's scope is already infinitely broad. Put simply, by prohibiting multiple domains, content-types, methods or apps, the scope of the rule becomes only minimally smaller.
 
-#### Defined content-type modifiers, defined methods, defined headers, $popup, special exceptions {#priority-category-2}
+#### Defined content-type modifiers, defined methods, defined headers, $all, $popup, specific exceptions {#priority-category-2}
 
 All allowed content types:
+
 <!-- Please keep them sorted -->
 
 - [`$document`](#document-modifier),
@@ -2275,11 +2276,17 @@ All allowed content types:
 - [`$websocket`](#websocket-modifier),
 - [`$xmlhttprequest`](#xmlhttprequest-modifier);
 
-This also includes rules that implicitly add the modifier `$document`:
+This also includes rules that implicitly add all content types:
+
+- [`$all`](#all-modifier);
+
+Or rules that implicitly add the modifier `$document`:
 
 - [`$popup`](#popup-modifier);
 
-Or special exceptions that implicitly add `$document,subdocument`:
+Or some specific exceptions that implicitly add `$document,subdocument`:
+
+<!-- Please keep them sorted -->
 
 - [`$content`](#content-modifier),
 - [`$elemhide`](#elemhide-modifier),
@@ -2295,7 +2302,13 @@ Or allowed methods via [`$method`](#method-modifier).
 Or rules with [`$header`](#header-modifier).
 
 The presence of any content-type modifiers adds `(50 + 50 / N)`, where `N` is the number of modifiers present, for example:
-`||example.com^$image,script` will add `50 + 50 / 2 = 50 + 25 = 75` to the total weight of the rule. The `$popup` also belongs to this category, because it implicitly adds the modifier `$document`. Similarly, specific exceptions add `$document,subdocument`.
+`||example.com^$image,script` will add `50 + 50 / 2 = 50 + 25 = 75` to the total weight of the rule.
+
+The `$all` also belongs to this category, because it implicitly adds all content type modifiers,
+e.g., `$document,subdocument,image,script,media,<etc>` + `$popup`.
+
+The `$popup` also belongs to this category, because it implicitly adds the modifier `$document`.
+Similarly, specific exceptions add `$document,subdocument`.
 
 If there is a `$method` modifier in the rule with allowed methods it adds `(50 + 50 / N)`, where `N` is the number of methods allowed, for example:
 `||example.com^$method=GET|POST|PUT` will add `50 + 50 / 3 = 50 + 16.6 = 67` to the total weight of the rule.
@@ -2363,68 +2376,62 @@ The [`$replace`](#replace-modifier) modifier takes precedence over all blocking 
 
 #### Examples
 
-**Example 1**
+1. `||example.com^`
 
-`||example.com^`
+    Weight of the rule without modifiers: `1`.
 
-Weight of the rule without modifiers: `1`.
+1. `||example.com^$match-case`
 
-**Example 2**
+    Rule weight:
+    base weight + weight of the modifier from [category 1](#priority-category-1): `1 + 1 = 2`.
 
-`||example.com^$match-case`
+1. `||example.org^$removeparam=p`
 
-Weight of the rule: base weight + weight of the modifier from [category 1](#priority-category-1):
-`1 + 1 = 2`.
+    Rule weight:
+    base weight + 0, since $removeparam [is not involved](#priority-category-extra)
+    in the priority calculation: `1 + 0 = 1`.
 
-**Example 3**
+1. `||example.org^$document,redirect=nooptext`
 
-`||example.org^$removeparam=p`
+    Rule weight:
+    base weight + allowed content type, [category 3](#priority-category-3) + $redirect
+    from [category 6](#priority-category-6): `1 + (100 + 100 / 1) + 1000 = 1201`.
 
-Weight of the rule: base weight + 0, since $removeparam [is not involved](#priority-category-extra) in the priority calculation:
-`1 + 0 = 1`.
+1. `@@||example.org^$removeparam=p,document`
 
-**Example 4**
+    Rule weight:
+    base weight + allowlist rule, [category 5](#priority-category-5) + 0
+    because $removeparam [is not involved](#priority-category-extra) in the priority calculation +
+    allowed content type, [category 2](#priority-category-2): `1 + 10000 + 0 + (50 + 50 / 1) = 10101`.
 
-`||example.org^$document,redirect=nooptext`
+1. `@@||example.com/ad/*$domain=example.org|example.net,important`
 
-Rule weight: base weight + allowed content type, [category 3](#priority-category-3) + $redirect from [category 6](#priority-category-6):
-`1 + (100 + 100 / 1) + 1000 = 1201`.
+    Rule weight:
+    base weight + allowlist rule, [category 5](#priority-category-5) + important rule,
+    [category 7](#priority-category-7) + allowed domains, [category 3](#priority-category-3):
+    `1 + 10000 + 1000000 + (100 + 100 / 2) = 1010152`.
 
-**Example 5**
+1. `@@||example.org^$document` without additional modifiers is an alias for
+   `@@||example.com^$elemhide,content,jsinject,urlblock,extension`
 
-`@@||example.org^$removeparam=p,document`
+    Rule weight:
+    base weight + specific exceptions, [category 4](#priority-category-4) +
+    two allowed content types (document and subdocument), [category 2](#priority-category-2):
+    `1 + 10000 * 4 + (50 + 50 / 2) = 40076`.
 
-Rule weight: base weight + allowlist rule, [category 5](#priority-category-5) + 0 because $removeparam [is not involved](#priority-category-extra) in the priority calculation + allowed content type, [category 2](#priority-category-2):
-`1 + 10000 + 0 + (50 + 50 / 1) = 10101`.
+1. `*$script,domain=a.com,denyallow=x.com|y.com`
 
-**Example 6**
+    Rule weight:
+    base weight + allowed content type, [category 2](#priority-category-2) + allowed domain,
+    [category 3](#priority-category-3) + denyallow, [category 1](#priority-category-1):
+    `1 + (50 + 50/1) + (100 + 100 / 1) + 1 = 303`.
 
-`@@||example.com/ad/*$domain=example.org|example.net,important`
+1. `||example.com^$all` — alias to `||example.com^$document,subdocument,image,script,media,etc. + $popup`
 
-Rule weight: base weight + allowlist rule, [category 5](#priority-category-5) + important rule, [category 7](#priority-category-7) + allowed domains, [category 3](#priority-category-3):
-`1 + 10000 + 1000000 + (100 + 100 / 2) = 1010152`.
-
-**Example 7**
-
-`@@||example.org^$document` without additional modifiers is an alias for
-`@@||example.com^$elemhide,content,jsinject,urlblock,extension`
-
-Rule weight: base weight + specific exceptions, [category 4](#priority-category-4) + two allowed content types (document and subdocument), [category 2](#priority-category-2):
-`1 + 10000 * 4 + (50 + 50 / 2) = 40076`.
-
-**Example 8**
-
-`*$script,domain=a.com,denyallow=x.com|y.com`
-
-Rule weight: base weight + allowed content type, [category 2](#priority-category-2) + allowed domain, [category 3](#priority-category-3) + denyallow, [category 1](#priority-category-1):
-`1 + (50 + 50/1) + (100 + 100 / 1) + 1 = 303`.
-
-**Example 9**
-
-`||example.com^$all` (alias to `||example.com^$document,subdocument,image,script,media,etc. + $popup`)
-
-Rule weight: base weight + allowed content types, [category 2](#priority-category-2):
-`1 + (50 + 50/12) = 55`.
+    Rule weight:
+    base weight + popup ([category 1](#priority-category-1)) +
+    allowed content types ([category 2](#priority-category-2)):
+    `1 + 1 + (50 + 50/12) = 55`.
 
 ## Non-basic rules {#non-basic-rules}
 
