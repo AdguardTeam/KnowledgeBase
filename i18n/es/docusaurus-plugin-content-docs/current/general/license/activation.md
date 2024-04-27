@@ -3,8 +3,6 @@ title: Cómo activar
 sidebar_position: 3
 ---
 
-## Cómo activar una licencia
-
 Para activar tu licencia, ve a la sección *Licencia* de tu producto AdGuard y busca el *campo Iniciar sesión* o el botón *Activar*. Utiliza el correo electrónico y la contraseña de tu cuenta de AdGuard para iniciar sesión. Si aún no tienes una cuenta, se te ofrecerá crear una.
 
 :::nota

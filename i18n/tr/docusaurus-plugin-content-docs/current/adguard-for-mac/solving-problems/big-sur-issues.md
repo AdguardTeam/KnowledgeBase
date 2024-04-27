@@ -23,7 +23,7 @@ Currently, AdGuard and iCloud Private Relay cannot work at the same time. AdGuar
 
 For a deeper understanding of this problem, read [this article](../icloud-private-relay).
 
-**Recommended solution**
+**Önerilen çözüm**
 
 We recommend using AdGuard together with a more traditional VPN service such as [AdGuard VPN](https://adguard-vpn.com/).
 
@@ -39,7 +39,7 @@ Apple's Mail app now uses a proxy to hide a user's IP address when downloading i
 
 For a deeper understanding of this problem, read [this article](../protect-mail-activity).
 
-**Recommended solution**
+**Önerilen çözüm**
 
 At this point, we recommend using a more traditional VPN service, such as [AdGuard VPN](https://adguard-vpn.com/), instead of the newer Apple privacy features.
 

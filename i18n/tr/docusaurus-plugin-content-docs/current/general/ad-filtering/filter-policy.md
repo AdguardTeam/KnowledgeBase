@@ -12,11 +12,11 @@ These criteria are equally applied to the rules of all filters.
 - Rules for a specific site will only be added if there is sufficient traffic. Traffic is determined by public statistics (if available) or indirect indicators, such as the number of subscribers on social networks. A site’s traffic is considered sufficient if it reaches 100,000 visits per month. We will consider adding a rule for a site that is not as popular, but the final decision rests with filter developers. Sites with low traffic should still be checked for third-party analytics and advertising networks
 - The decision about content farms (websites that produce large amounts of content primarily aimed at achieving high visibility in search results and generating advertising revenue) is made by filter developers depending on the quality of the content
 
-Quality requirements for filtering rules:
+Filtreleme kuralları için kalite gereksinimleri:
 
-- Rules should not negatively impact the websites in terms of performance
-- Unblocking rules must be as specific as possible to avoid unblocking anything unnecessary
-- JavaScript rules should be used as sparingly as possible and only if blocking ads is impossible without them
+- Kurallar siteleri performans açısından olumsuz etkilememelidir
+- Gereksiz herhangi bir şeyin engelini kaldırmaktan kaçınmak için engel kaldırma kuralları mümkün olduğunca spesifik olmalıdır
+- JavaScript kuralları mümkün olduğunca dikkatli kullanılmalı ve yalnızca reklamların engellenmesi onlar olmadan mümkün değilse kullanılmalıdır
 
 ## Reklam engelleme filtreleri
 
@@ -107,13 +107,13 @@ AdGuard izleme korumasu filtreleri şunları içerir:
 
 Neleri engeller:
 
-- Analytics systems’ scripts
-- Websites’ and applications’ own tracking scripts
-- Masked CNAME trackers
-- Tracking cookies
-- Tracking pixels
-- Tracking APIs of browsers
-- Privacy Sandbox functionality in Google Chrome and its forks used for tracking (Google Topics API, the Protected Audience API)
+- Analiz sistemlerin betikleri
+- Sitelerin ve uygulamaların kendi izleme betikleri
+- Maskelenmiş CNAME izleyicileri
+- Çerezleri izleme
+- Pikselleri izleme
+- Tarayıcıların API'lerini izleme
+- Google Chrome'daki Privacy Sandbox işlevi ve izleme için kullanılan çatalları (Google Topics API, Protected Audience API)
 
 The **URL Tracking filter** is designed to remove tracking parameters from web addresses
 
@@ -202,7 +202,7 @@ This is a filter that blocks various widgets that are not essential for the func
 
 **Kısıtlamalar ve istisnalar**
 
-This filter doesn’t block:
+Bu filtre şunları engellemez:
 
 - Widgets closely related to the content of the page, such as comments sections, live chat streams, with an exception of unmoderated chats on sites with unofficial streams, which are often filled with spam and similar content
 - Widgets for self-promotion and site-specific promotional activities
@@ -228,7 +228,7 @@ This filter may contain rules that are not suitable for all users. Bazen bu filt
 
 AdGuard Sosyal Medya filtreleri şunları içerir:
 
-- AdGuard Social Media filter
+- AdGuard Sosyal Medya filtresi
 
 ### Bu filtrelerin amacı
 
@@ -255,8 +255,8 @@ For more details on these types of advertising, refer to the [article on search 
 ### Filters
 
 - Arama motoru reklamları ve öz tanıtımına izin veren filtre
-- AdGuard DNS filter
-- AdGuard Experimental filter
+- AdGuard DNS filtresi
+- AdGuard Deneysel filtresi
 
 ### Bu filtrelerin amacı
 
@@ -273,7 +273,7 @@ This filter unblocks:
 - Self-promotion is unblocked only if it complies with the filter policy. A request for unblocking may be rejected by filter developers
 - Any other advertising will not be unblocked
 
-#### AdGuard DNS filter
+#### AdGuard DNS filtresi
 
 This filter is used in AdGuard DNS. It is not a replacement for ad-blocking filters.
 
@@ -281,7 +281,7 @@ This filter is used in AdGuard DNS. It is not a replacement for ad-blocking filt
 
 Same as for ad-blocking filters.
 
-#### AdGuard Experimental filter
+#### AdGuard Deneysel filtresi
 
 This filter is intended for testing and debugging rules that potentially may break websites’ functionality. Rules are added by filter developers when there’s a need to test a particular solution. As the filter is designed for debugging purposes, its limitations are minimal.
 
