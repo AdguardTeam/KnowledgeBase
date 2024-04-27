@@ -2291,11 +2291,11 @@ Or some specific exceptions that implicitly add `$document,subdocument`:
 - [`$content`](#content-modifier),
 - [`$elemhide`](#elemhide-modifier),
 - [`$extension`](#extension-modifier),
-- [`$jsinject`](#jsinject-modifier),
 - [`$genericblock`](#genericblock-modifier),
-- [`$urlblock`](#urlblock-modifier);
 - [`$generichide`](#generichide-modifier),
+- [`$jsinject`](#jsinject-modifier),
 - [`$specifichide`](#specifichide-modifier),
+- [`$urlblock`](#urlblock-modifier);
 
 Or allowed methods via [`$method`](#method-modifier).
 
