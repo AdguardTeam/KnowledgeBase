@@ -91,7 +91,7 @@ Follow the next steps only if performing the first two steps wasn’t enough for
 
 ![Extended uninstall *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended.jpg)
 
-- Click *OK* once the warning window pops up: 
+- Click *OK* once the warning window pops up:
 
 ![Extended uninstall warning *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_complete.jpg)
 
