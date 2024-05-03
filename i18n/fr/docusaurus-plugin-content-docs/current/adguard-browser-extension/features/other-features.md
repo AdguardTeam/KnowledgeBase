@@ -9,30 +9,30 @@ Cet article concerne l'extension de navigateur AdGuard, qui protège uniquement 
 
 :::
 
-Apart from the large key modules of AdGuard Browser Extension, there are several more specific features that can be configured in the _General_ and _Additional settings_ tabs of the extension settings.
+Outre les grands modules clés de l'extension de navigateur AdGuard, il existe plusieurs fonctionnalités plus spécifiques qui peuvent être configurées dans les onglets _Général_ et _Paramètres supplémentaires_ des paramètres de l'extension.
 
-## General {#general}
+## Général {#general}
 
-In the _General_ tab, you can allow search ads and the [self-promotion of websites](/general/ad-filtering/search-ads), enable the automatic activation of language-specific filters, indicate the filters update interval, etc.
+Dans l'onglet _Général_, vous pouvez autoriser les publicités de recherche et [l'autopromotion des sites web](/general/ad-filtering/search-ads), activer automatiquement les filtres spécifiques à la langue, indiquer l'intervalle de mise à jour des filtres, etc.
 
 ![General \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_general.png)
 
-Besides, here you can enable [_Phishing and malware protection_](/general/browsing-security).
+De plus, ici vous pouvez activer la [_Protection contre l'hameçonnage et les logiciels malveillants_](/general/browsing-security).
 
-You can save your settings configuration by clicking the _Export settings_ button. Les paramètres seront sauvegardés sous la forme d'un fichier .json. To upload the previously saved settings configuration, use the _Import settings_ function. Vous pouvez même l'utiliser pour passer rapidement entre différents profils de paramètres ou même pour transférer des configurations de paramètres entre différents navigateurs.
+Vous pouvez sauvegarder la configuration de vos paramètres en cliquant sur le bouton _Exporter les paramètres_. Les paramètres seront sauvegardés sous la forme d'un fichier .json. Pour charger la configuration de paramètres précédemment sauvegardée, utilisez la fonction _Importer les paramètres_. Vous pouvez même l'utiliser pour passer rapidement entre différents profils de paramètres ou même pour transférer des configurations de paramètres entre différents navigateurs.
 
-## Additional settings {#misc}
+## Paramètres supplémentaires {#misc}
 
-The _Additional settings_ section contains a range of various settings that are related to the ad blocking process and application usability.
+La section _Paramètres supplémentaires_ contient une gamme de paramètres variés liés au processus de blocage des publicités et à la convivialité de l'application.
 
 ![Additional settings \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_additional_settings.png)
 
-From this tab, you can activate optimized filters, enable notifications about extension updates, open the _Filtering log_, or clear the statistics of blocked ads and trackers.
+Depuis cet onglet, vous pouvez activer les filtres optimisés, activer les notifications concernant les mises à jour de l'extension, ouvrir le _Journal de filtrage_ ou effacer les statistiques des publicités et traceurs bloqués.
 
 De plus, vous pouvez choisir de nous aider dans le développement des filtres en envoyant les statistiques sur les règles appliquées : celles qui sont déclenchées, sur quels sites web et à quelle fréquence. Cette option est désactivée par défaut car nous ne collectons pas de données utilisateur sans consentement. Cependant, si vous l'activez, toutes les données seront strictement anonymisées.
 
-## About {#about}
+## À propos {#about}
 
-In the _About_ section, you can find infos about the current version, links to the EULA and Privacy policy, and to the repository of the Browser extension on GitHub.
+Dans la section _À propos_, vous pouvez trouver des informations sur la version actuelle, des liens vers le CLUF et la Politique de confidentialité, ainsi que vers le dépôt de l'extension de navigateur sur GitHub.
 
 ![About \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)

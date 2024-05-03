@@ -21,7 +21,7 @@ _Koruma_ bölümünde iki uygulama arasında kolayca geçiş yapabilirsiniz.
 
 Önce AdGuard VPN'i yüklediyseniz ve daha sonra AdGuard Reklam Engelleyiciyi denemeye karar verdiyseniz, iki uygulamayı birlikte kullanmak için aşağıdaki adımları izleyin:
 
-1. Open AdGuard VPN for iOS app and select ⚙ _Settings_ in the lower right corner of the screen.
+1. iOS için AdGuard VPN uygulamasını açın ve ekranın sağ alt köşesindeki ⚙ _Ayarlar_ öğesini seçin.
 2. _Uygulama ayarları_ öğesine gidin ve _Çalışma modu_ öğesini seçin.
 3. Modu VPN'den Entegre'ye değiştirin.
 

@@ -41,17 +41,17 @@ There are many types of filtering rules that serve different purposes. Depending
 
 ### Temel filtreleme kuralları
 
-To be displayed on a web page or in an app, the ad has to be loaded from a server first. To do so, the browser or the app needs to send a web request. The most basic way of preventing an ad from appearing on your screen is to block this request so it never reaches the server, and thus there's no reply.
+To be displayed on a web page or in an app, the ad has to be loaded from a server first. To do so, the browser or the app needs to send a web request. Bir reklamın ekranınızda görünmesini engellemenin en temel yolu, bu isteği engellemektir, böylece sunucuya asla ulaşmamasını ve dolayısıyla yanıt vermemesini sağlamaktır.
 
 Basically, all AdGuard Ad Blocker products can block web requests according to the active filter rules. This method is very effective at stopping the ad, but it has some drawbacks. The most obvious one is: whatever place an ad was taking up will be left empty or occupied by an ad leftover.
 
-### Cosmetic filtering rules
+### Kozmetik filtreleme kuralları
 
 Every web page has a Document Object Model (DOM), an HTML document containing the structure and elements of this page. As ads are also page elements, they get recorded in the DOM. Ad blockers can remove parts of the DOM, while filtering rules help them understand which parts are ads and should be removed, and which parts should be left intact.
 
 This method allows you to avoid above-mentioned blank spaces and ad leftovers, as well as perform other more complicated tasks.
 
-### HTML filtering rules
+### HTML filtreleme kuralları
 
 In most cases, it's enough to use the above-mentioned basic and cosmetic rules to filter ads. But when it is necessary to change the HTML code of the page itself before it is loaded, you need filtering rules for HTML content. These rules allow you to specify the HTML elements to be cut out before the browser even loads the page.
 

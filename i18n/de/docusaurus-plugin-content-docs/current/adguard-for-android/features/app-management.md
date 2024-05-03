@@ -20,15 +20,15 @@ By tapping an app, you can manage its settings:
 - Filter its HTTPS traffic (for non-browser apps, it requires [installing AdGuard's CA certificate into the system store](/adguard-for-android/solving-problems/https-certificate-for-rooted/), available on rooted devices)
 - Route it through your specified proxy server or AdGuard VPN in the Integration mode
 
-![App management in Chrome \*mobile\_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
+![App-Verwaltung in Chrome \*mobile\_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
 
 From the context menu, you can also access the app's stats.
 
-![App management in Chrome. Context menu \*mobile\_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
+![App-Verwaltung in Chrome. Kontextmenü \*mobile\_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
 
 ### “Problem-free” and “problematic” apps
 
-Most apps work properly when filtering is enabled. For such apps, their traffic is routed through AdGuard and filtered by default.
+Die meisten Apps funktionieren ordnungsgemäß, wenn die Filterung aktiviert ist. Bei solchen Apps wird der Datenverkehr durch AdGuard geleitet und standardmäßig gefiltert.
 
 Some apps, such as Download Manager, radio, system apps with UID 1000 and 1001 (for example, Google Play services), are “problematic” and may work incorrectly when routed through AdGuard. That's why you may see the following warning when trying to route or filter all apps:
 

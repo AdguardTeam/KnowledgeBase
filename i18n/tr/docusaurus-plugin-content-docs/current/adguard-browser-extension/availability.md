@@ -13,7 +13,7 @@ Bu makale, yalnızca tarayıcınızı koruyan AdGuard Tarayıcı Uzantısı hakk
 
 ![AdGuard Browser Extension for Chrome \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
 
-Browser extensions include basic ad-blocking features but cannot be compared with full-featured desktop programs, such as [AdGuard for Windows](/adguard-for-windows/features/home-screen) and [AdGuard for Mac](/adguard-for-mac/features/main).
+Tarayıcı uzantıları temel reklam engelleme özelliklerini içerir ancak [Windows için AdGuard](/adguard-for-windows/features/home-screen) ve [Mac için AdGuard](/adguard-for-mac/features/main) gibi tam özellikli masaüstü programlarıyla karşılaştırılamaz.
 
 ![Available for most popular browsers \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
 

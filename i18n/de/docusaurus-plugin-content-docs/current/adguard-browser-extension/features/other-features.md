@@ -1,38 +1,38 @@
 ---
-title: Other features and options
+title: Weitere Funktionen und Optionen
 sidebar_position: 3
 ---
 
 :::info
 
-In diesem Artikel geht es um die AdGuard Browsereweiterung, die nur Ihren Browser schützt. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+In diesem Artikel geht es um die AdGuard Browsereweiterung, die nur Ihren Browser schützt. Um Ihr gesamtes Gerät zu schützen, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
 
 :::
 
-Apart from the large key modules of AdGuard Browser Extension, there are several more specific features that can be configured in the _General_ and _Additional settings_ tabs of the extension settings.
+Abgesehen von den großen Hauptmodulen der AdGuard Browsererweiterung gibt es einige weitere spezifische Funktionen, die in den Tabs _Allgemein_ und _Zusätzliche Einstellungen_ konfiguriert werden können.
 
-## General {#general}
+## Allgemein {#general}
 
-In the _General_ tab, you can allow search ads and the [self-promotion of websites](/general/ad-filtering/search-ads), enable the automatic activation of language-specific filters, indicate the filters update interval, etc.
+Im Tab _Allgemein_ können Sie Suchanzeigen und die [Eigenwerbung von Websites](/general/ad-filtering/search-ads) zulassen, die automatische Aktivierung sprachspezifischer Filter aktivieren, das Aktualisierungsintervall der Filter angeben usw.
 
-![General \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_general.png)
+![Allgemein \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_general.png)
 
-Besides, here you can enable [_Phishing and malware protection_](/general/browsing-security).
+Außerdem können Sie hier [_Schutz vor Phishing und Malware_](/general/browsing-security) aktivieren.
 
-You can save your settings configuration by clicking the _Export settings_ button. The settings will be saved as a .json file. To upload the previously saved settings configuration, use the _Import settings_ function. You can even use it to quickly switch between different settings profiles or even to transfer settings configurations between different browsers.
+Wenn Sie Ihre Einstellungen speichern möchten, klicken Sie auf die Schaltfläche _Einstellungen exportieren_. Die Einstellungen werden als .json-Datei gespeichert. Um die zuvor gespeicherte Konfiguration zu importieren, verwenden Sie die Funktion _Einstellungen importieren_. Sie können damit sogar schnell zwischen verschiedenen Einstellungsprofilen wechseln oder sogar Einstellungskonfigurationen zwischen verschiedenen Browsern übertragen.
 
-## Additional settings {#misc}
+## Zusätzliche Einstellungen {#misc}
 
-The _Additional settings_ section contains a range of various settings that are related to the ad blocking process and application usability.
+Der Tab _Zusätzliche Einstellungen_ enthält eine Reihe von Einstellungen, die sich auf das Blockieren von Werbung und die Benutzerfreundlichkeit der Erweiterung beziehen.
 
-![Additional settings \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_additional_settings.png)
+![Zusätzliche Einstellungen \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_additional_settings.png)
 
-From this tab, you can activate optimized filters, enable notifications about extension updates, open the _Filtering log_, or clear the statistics of blocked ads and trackers.
+In diesem Tab können Sie optimierte Filter aktivieren, Benachrichtigungen über Erweiterungs-Updates aktivieren, das _Filter-Protokoll_ öffnen oder die Statistiken über blockierte Werbung und Tracker löschen.
 
-Besides, you can opt to help us with the development of filters by sending the statistics on applied rules: which ones are triggered, on which websites, and how often. This option is disabled by default as we do not collect user data without consent. Yet, if you enable it, all data will be strictly anonymized.
+Sie können uns auch bei der Entwicklung von Filtern helfen, indem Sie uns Statistiken über die angewendeten Regeln senden: Welche Regeln wurden ausgelöst, auf welchen Websites und wie oft. Diese Option ist standardmäßig deaktiviert, da wir ohne Zustimmung keine Nutzerdaten sammeln. Wenn Sie diese Funktion jedoch aktivieren, werden alle Daten streng anonymisiert.
 
-## About {#about}
+## Über uns {#about}
 
-In the _About_ section, you can find infos about the current version, links to the EULA and Privacy policy, and to the repository of the Browser extension on GitHub.
+Im Tab _Über uns_ finden Sie Informationen zur aktuellen Version, Links zum Endbenutzer-Lizenzvertrag und zur Datenschutzerklärung sowie zum Repository der Browsererweiterung auf GitHub.
 
-![About \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)
+![Über uns \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)

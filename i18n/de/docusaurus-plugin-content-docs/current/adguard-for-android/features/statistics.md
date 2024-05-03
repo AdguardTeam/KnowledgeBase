@@ -9,42 +9,42 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 :::
 
-The _Statistics_ module can be accessed by tapping the _Statistics_ tab (fourth icon from the left at the bottom of the screen). This feature gives you a complete picture of what is happening with the traffic on your device: how many requests are being sent and to which companies, how much data is being uploaded and downloaded, what requests are being blocked, and more. You can choose to display the statistics for the selected time period: 24 hours, 7 days, 30 days, or all time.
+Das Modul _Statistiken_ kann durch Tippen auf den Tab _Statistiken_ (viertes Symbol von links am unteren Rand des Bildschirms) aufgerufen werden. Mit dieser Funktion erhalten Sie einen vollständigen Überblick über den Datenverkehr auf Ihrem Gerät: wie viele Anfragen an welche Unternehmen gesendet wurden, wie viele Daten hoch- und heruntergeladen wurden, welche Anfragen blockiert wurden. Sie können wählen, ob Sie die Statistiken für den ausgewählten Zeitraum anzeigen möchten: 24 Stunden, 7 Tage, 30 Tage oder die gesamte Zeit.
 
-![Statistics \*mobile\_border](https://cdn.adtidy.org/blog/new/czy5rStatistics.jpeg?mw=1360)
+![Statistiken \*mobile\_border](https://cdn.adtidy.org/blog/new/czy5rStatistics.jpeg?mw=1360)
 
-The stats are categorized into different sections.
+Die Statistiken sind in verschiedene Abschnitte unterteilt.
 
-### Requests
+### Anfragen
 
-This section shows the number of blocked ads, trackers, and the total number of requests. You can filter requests by data type: mobile data, Wi-Fi, or all data combined.
+Dieser Abschnitt zeigt die Anzahl der blockierten Anzeigen, Tracker und die Gesamtzahl der Anfragen. Sie können Anfragen nach Datentyp filtern: mobile Daten, WLAN oder alle Daten gleichzeitig.
 
-_Recent activity_, formerly known as _Filtering log_, shows the last 10,000 requests processed by AdGuard. Tap three-dots menu (⋮) and then _Customize_ to filter requests by status (_regular_, _blocked_, _modified_, or _allowlisted_) or origin (_first-party_ or _third-party_).
+_Letzte Aktivität_, früher als _Filterungsprotokoll_ bekannt, zeigt die letzten 10.000 Anfragen, die von AdGuard verarbeitet wurden. Tippen Sie auf das Menü mit den drei Punkten (⋮) und dann auf _Anpassen_, um die Anfragen nach Status (_Standard_, _Gesperrt_, _Geändert_ oder _Auf Freigabeliste_) oder Ursprung (_Erstanbieter_ oder _Drittanbieter_) zu filtern.
 
-You can tap a request to view its details and add a blocking or unblocking rule in one tap.
+Sie können auf eine Anfrage tippen, um die Details anzuzeigen und mit einem Fingertipp eine Sperr- oder Entsperrregel hinzuzufügen.
 
-### Data usage
+### Datennutzung
 
-This section shows the amount of downloaded and uploaded data and saved traffic for the selected data type (mobile data, Wi-Fi, or all). Tap _saved_, _uploaded_, or _downloaded_ to view the graph of data usage over time.
+In diesem Abschnitt wird die Menge der herunter- und hochgeladenen Daten und des gesparten Datenverkehrs für den ausgewählten Datentyp (mobile Daten, WLAN oder alle) angezeigt. Tippen Sie auf _gespart_, _hochgeladen_ oder _heruntergeladen_, um die Grafik der Datennutzung im Zeitverlauf anzuzeigen.
 
 ### Apps
 
-This section displays stats for all apps installed on your device. You can sort apps by the number of blocked ads or trackers or by the number of sent requests.
+In diesem Bereich werden die Statistiken für alle auf Ihrem Gerät installierten Apps angezeigt. Sie können Apps nach der Anzahl der gesperrten Werbung oder Tracker oder nach der Anzahl der gesendeten Anfragen sortieren.
 
-Tap _View all apps_ to expand the list of your apps, sorted by the number of ads, trackers, or requests.
+Tippen Sie auf _Alle Apps anzeigen_, um die Liste Ihrer Apps zu erweitern, sortiert nach der Anzahl der Werbeanzeigen, Tracker oder Anfragen.
 
-![List of apps \*mobile\_border](https://cdn.adtidy.org/blog/new/toq0mkScreenshot_20230627-235219_AdGuard.jpg)
+![Liste der Apps \*mobile\_border](https://cdn.adtidy.org/blog/new/toq0mkScreenshot_20230627-235219_AdGuard.jpg)
 
-If you tap an app, you can see its full stats: the requests it sends and the domains and companies it reaches out to.
+Wenn Sie auf eine App tippen, können Sie ihre vollständige Statistik einsehen: die Anfragen, die sie sendet, und die Domains und Unternehmen, an die sie sich wendet.
 
-### Companies
+### Unternehmen
 
-This section displays companies that your device reaches out to. What does it mean? AdGuard detects the domains your device sends requests to and determines which companies they belong to. A database of companies can be found on [GitHub](https://github.com/AdguardTeam/companiesdb).
+In diesem Abschnitt werden die Unternehmen angezeigt, mit denen Ihr Gerät in Verbindung tritt. Was bedeuten das? AdGuard erkennt die Domains, für die Ihr Gerät Anfragen sendet, und bestimmt, zu welchen Unternehmen sie gehören. Eine Datenbank mit Unternehmen ist auf [GitHub](https://github.com/AdguardTeam/companiesdb) zu finden.
 
-### DNS statistics
+### DNS-Statistiken
 
-This section shows data about the requests handled by _DNS protection_. You can see the total number of requests sent and how many were blocked by AdGuard in figures and graphs. You'll also find statistics on the amount of traffic saved and data downloaded and uploaded.
+Dieser Abschnitt enthält Daten über die vom _DNS-Schutz_ bearbeiteten Anfragen. Sie können die Gesamtzahl der gesendeten Anfragen und die Zahl der von AdGuard gesperrten Anfragen in Zahlen und Diagrammen einsehen. Außerdem finden Sie Statistiken über die Menge des gesparten Datenverkehrs und der herunter- und hochgeladenen Daten.
 
-### Battery usage
+### Batterienutzung
 
-This section displays statistics on the device resources used by AdGuard during the last 24 hours. The data may differ from the stats displayed in your device settings. This happens because the system attributes the traffic of all filtered apps to AdGuard. Thus, the device shows that AdGuard consumes more resources than it actually does. [Read more about battery and traffic consumption issues](/adguard-for-android/solving-problems/battery/).
+In diesem Abschnitt werden Statistiken über die von AdGuard in den letzten 24 Stunden genutzten Geräteressourcen angezeigt. Die Daten können von den in den Einstellungen Ihres Geräts angezeigten Statistiken abweichen. Dies geschieht, weil das System den Datenverkehr aller gefilterten Apps AdGuard zuordnet. Daher zeigt das Gerät, dass AdGuard mehr Ressourcen verbraucht, als es tatsächlich tut. [Erfahren Sie mehr über Probleme mit dem Akku und dem Datenverkehr](/adguard-for-android/solving-problems/battery/).

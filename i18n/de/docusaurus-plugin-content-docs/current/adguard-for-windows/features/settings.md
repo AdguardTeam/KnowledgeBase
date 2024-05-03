@@ -49,7 +49,7 @@ Sie können die Funktionsweise dieses Moduls flexibel anpassen: Sie können z. B
 
 To learn everything about Stealth Mode and its many options, [read this article](/general/stealth-mode).
 
-### Browsing security
+### Internetsicherheit
 
 Browsing security gives strong protection against malicious and phishing websites. AdGuard für Windows ist natürlich kein Antivirenprogramm. Die App kann weder das Herunterladen eines Virus stoppen, wenn es bereits begonnen hat, noch bereits vorhandene Viren löschen. Sie werden jedoch gewarnt, wenn Sie eine Website aufrufen oder eine Datei von einer Website herunterladen, deren Domain in unserer Datenbank „Nicht vertrauenswürdige Websites“ aufgeführt ist. You can find more information about how this module works in the [dedicated article](/general/browsing-security).
 

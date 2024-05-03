@@ -11,7 +11,7 @@ This article is about AdGuard for Mac, a multifunctional ad blocker that protect
 
 ## Como acessar as configurações avançadas
 
-:::caution
+:::cuidado
 
 Changing *Advanced Settings* may cause problems with AdGuard's performance, break the Internet connection, or compromise your security and privacy. Make changes to this section only if you are sure of what you are doing or our support team has asked you to do it.
 

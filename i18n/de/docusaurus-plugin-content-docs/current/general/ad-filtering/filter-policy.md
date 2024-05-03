@@ -34,7 +34,7 @@ Ein **Filter** (oder eine **Filterliste**) ist ein Satz von Filterregeln, der da
 - Implementierung von alternativer Werbung als Reaktion auf die Nutzung von Werbeblockern: Websites führen alternative Werbung ein, wenn Werbeblocker erkannt werden
 - Paywall: eine Methode zur Monetarisierung von Inhalten, bei der die Inhalte teilweise oder vollständig vor den Nutzer:innen verborgen werden, mit einer Meldung, die sie auffordert, ein Abonnement für den Zugriff zu erwerben
 
-### Filters
+### Filter
 
 AdGuard-Filter zum Blockieren von Werbung umfassen:
 
@@ -94,7 +94,7 @@ Das Ziel von Werbeblockern ist es, alle Arten von Werbung auf Websites, in Apps 
 
 **Cookies** — Dateien, die von Websites an Geräte gesendet und dort gespeichert werden. Diese Dateien enthalten verschiedene Informationen, die sowohl für das Funktionieren der Website auf dem Gerät erforderlich sind als auch für Analysezwecke verwendet werden: eindeutige Kennungen zur Verfolgung der Besucheraktivitäten auf der Website, Werbeparameter usw.
 
-### Filters
+### Filter
 
 Die AdGuard-Filter zum Schutz vor Tracking enthalten:
 
@@ -138,7 +138,7 @@ Belästigungsfilter zielen darauf ab, die Benutzerfreundlichkeit von Websites zu
 
 **Pop-up** — ein Fenster, das über der aktuellen Webseite angezeigt wird. Es dient dazu, zusätzliche Informationen, Werbung, Benachrichtigungen oder Dateneingabeformulare anzuzeigen. Pop-ups verdecken in der Regel den Blick auf den Hauptinhalt der Seite und erfordern eine Aktion, um sie zu schließen, was lästig sein kann.
 
-### Filters
+### Filter
 
 Zur besseren Anpassung sind die Belästigungsfilter nach ihrem Zweck unterteilt:
 
@@ -224,7 +224,7 @@ Dieser Filter kann Regeln enthalten, die nicht für alle Benutzer:innen geeignet
 
 ## Social-Media-Filter
 
-### Filters
+### Filter
 
 AdGuard Social Media-Filter umfassen:
 
@@ -252,7 +252,7 @@ Diese Gruppe enthält Filter, die zum Blockieren von Werbung nicht unbedingt erf
 
 Weitere Einzelheiten zu diesen Arten von Werbung finden Sie im [Artikel über Suchanzeigen](https://adguard.com/kb/general/ad-filtering/search-ads/).
 
-### Filters
+### Filter
 
 - Filter zum Anzeigen von nützlicher Werbung
 - AdGuard DNS-Filter

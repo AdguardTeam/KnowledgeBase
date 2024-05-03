@@ -1,5 +1,5 @@
 ---
-title: Extension’s main menu
+title: 扩展的主菜单
 sidebar_position: 4
 ---
 
@@ -9,12 +9,12 @@ sidebar_position: 4
 
 :::
 
-The extension's main page can be accessed by clicking the extension's icon on the toolbar of your browser.
+用户可以单击浏览器工具栏上的扩展程序图标来访问扩展程序的主页面。
 
 ![Main menu \*mobile\_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
 
-On the main page, you can hide any element on any page manually (a corresponding rule will be added to the _User rules_), open the _Filtering log_ to view the complete information about your browser's traffic and block requests on the go, or look at a website’s security report. Besides, you can submit a complaint about any website (for example, if there are missed ads on the page, our filter engineers will review the report and fix the problem) and see the statistics on applied blocking rules.
+在主页面上，可以手动隐藏页面上的任何元素（相应的规则将添加到「用户规则」中），打开「过滤日志」查看有关浏览器流量的完整信息并随时阻止请求，或者查看网站的安全报告。 此外，还可以针对任何网站提交投诉（例如，如果页面上有未被拦截的广告，我们的过滤工程师将审查报告并修复问题）并查看应用的阻止规则的统计信息。
 
-All web requests made by the browser are displayed in the _Filtering log_, along with detailed information about each request. The _Filtering log_ makes it easy, for example, to monitor requests blocked by AdGuard Browser Extension. Besides, it allows you to block any request or add a previously blocked request to Allowlist in two clicks. The _Filtering log_ also offers you a wide variety of options for sorting web requests, which can be helpful when creating your own filtering rules. You can open the _Filtering log_ by selecting the corresponding item in the main menu, or from the settings page (in the "Additional settings" tab).
+浏览器发出的所有 Web 请求都显示在「过滤日志」中，包含每个请求的详细信息。 例如，用户在「过滤日志」中可以更快捷地查看被 AdGuard 浏览器扩展阻止的请求。 不仅如此，还可以一键阻止任何请求，或将以前阻止的请求添加到白名单。 「过滤日志」还提供多种网络请求排序选项，有助于用户创建自己的过滤规则。 您可以选择主菜单中的相应项目或从设置页面（在「其他设置」选项卡中）打开「过滤日志」。
 
-By clicking the icons in the top right corner of the extension's main menu, you can open the extension settings or pause the protection.
+单击扩展程序主菜单右上角的图标，您可以打开扩展程序设置或暂停保护。

@@ -1,20 +1,20 @@
 ---
-title: Extension’s main menu
+title: Das Hauptmenü der Erweiterung
 sidebar_position: 4
 ---
 
 :::info
 
-In diesem Artikel geht es um die AdGuard Browsereweiterung, die nur Ihren Browser schützt. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+In diesem Artikel geht es um die AdGuard Browsereweiterung, die nur Ihren Browser schützt. Um Ihr gesamtes Gerät zu schützen, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
 
 :::
 
-The extension's main page can be accessed by clicking the extension's icon on the toolbar of your browser.
+Sie können die Hauptseite der Erweiterung aufrufen, indem Sie auf das Erweiterungssymbol in der Symbolleiste Ihres Browsers klicken.
 
-![Main menu \*mobile\_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
+![Hauptmenü \*mobile\_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
 
-On the main page, you can hide any element on any page manually (a corresponding rule will be added to the _User rules_), open the _Filtering log_ to view the complete information about your browser's traffic and block requests on the go, or look at a website’s security report. Besides, you can submit a complaint about any website (for example, if there are missed ads on the page, our filter engineers will review the report and fix the problem) and see the statistics on applied blocking rules.
+Auf der Hauptseite können Sie jedes Element auf jeder Seite manuell ausblenden — eine entsprechende Regel wird zu den _Benutzerregeln_ hinzugefügt. Sie können auch das _Filter-Protokoll_ öffnen, um vollständige Informationen über den Datenverkehr Ihres Browsers zu erhalten und Anfragen zu blockieren, oder einen Blick auf den Sicherheitsbericht einer Website werfen. Außerdem können Sie Statistiken über die angewandten Sperrregeln einsehen und eine Website melden, wenn z. B. Werbung nicht blockiert wurde. Unsere Filter-Ingenieure werden die Meldung prüfen und das Problem beheben.
 
-All web requests made by the browser are displayed in the _Filtering log_, along with detailed information about each request. The _Filtering log_ makes it easy, for example, to monitor requests blocked by AdGuard Browser Extension. Besides, it allows you to block any request or add a previously blocked request to Allowlist in two clicks. The _Filtering log_ also offers you a wide variety of options for sorting web requests, which can be helpful when creating your own filtering rules. You can open the _Filtering log_ by selecting the corresponding item in the main menu, or from the settings page (in the "Additional settings" tab).
+Alle Webanfragen des Browsers werden im _Filter-Protokoll_ angezeigt, zusammen mit detaillierten Informationen zu jeder Anfrage. Zum Beispiel ermöglicht das _Filter-Protokoll_ eine einfache Überwachung der Anfragen, die von der AdGuard Browsererweiterung blockiert werden. Außerdem können Sie mit zwei Klicks jede beliebige Anfrage sperren oder eine bereits blockierte Anfrage zur Positivliste hinzufügen. Das _Filter-Protokoll_ bietet auch eine Vielzahl von Optionen zur Sortierung von Webanfragen, was bei der Erstellung eigener Filterregeln hilfreich sein kann. Sie können das _Filter-Protokoll_ öffnen, indem Sie den entsprechenden Punkt im Hauptmenü oder im Tab _Zusätzliche Einstellungen_ auswählen.
 
-By clicking the icons in the top right corner of the extension's main menu, you can open the extension settings or pause the protection.
+Wenn Sie auf die Symbole in der oberen rechten Ecke des Hauptmenüs klicken, können Sie die Einstellungen der Erweiterung öffnen oder den Schutz anhalten.

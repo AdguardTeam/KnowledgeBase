@@ -3,7 +3,7 @@ title: Ekran görüntüsü nasıl alınır
 sidebar_position: 5
 ---
 
-Screenshot is a capture of your computer’s or mobile device’s screen, which can be obtained by using standard tools or a special program/app.
+Ekran görüntüsü, bilgisayarınızın veya mobil cihazınızın ekranının, standart araçlar veya özel bir program ya da uygulama kullanılarak elde edilebilen bir görüntüsüdür.
 
 Bazen daha iyi bir anlaşılması için destek ekibi tarafından ekran görüntüleri istenir. Burada bilgisayarınızda veya mobil cihazınızda ekran görüntüsü almak için bilmeniz gereken tüm kısayol tuşlarını bulacaksınız.
 
@@ -30,9 +30,9 @@ Ayrıca, cihazlarınızda ekran görüntüsü almak için her zaman özel uygula
 
 ### iOS {#ios}
 
-Any iOS device (except very old ones) lets you take a screenshot using standard tools.
+Herhangi bir iOS cihazı (çok eski olanlar hariç) standart araçları kullanarak ekran görüntüsü almanıza olanak tanır.
 
-To take a screenshot on an iOS device, use the following combination:
+Bir iOS cihazında ekran görüntüsü almak için aşağıdaki kombinasyonu kullanın:
 
 - **Press the *Sleep/Wake* (side) button and the *Home* button at the same time, then quickly release them**
 
@@ -40,11 +40,11 @@ and this one for iPhone X or later:
 
 - **Press the *Sleep/Wake* button and the *Volume up* button at the same time, then quickly release them**
 
-Your iOS device will capture the entire screen and save it as a photo. You can find it in a standard Photo app.
+iOS cihazınız tüm ekranı yakalar ve bir fotoğraf olarak kaydeder. You can find it in a standard Photo app.
 
 ### Windows {#windows}
 
-- **To take a screenshot on Windows, press the *PrtScn* key**
+- **Windows'ta ekran görüntüsü almak için *PrtScn* tuşuna basın**
 
 On some notebooks you have to hold *Fn* and then press *PrtScn*.
 
@@ -62,11 +62,11 @@ Belirli bir alanın ekran görüntüsünü almak için aşağıdaki kısayolu ku
 
 Bir ekran görüntüsü aldıktan sonra panoya kaydedilecektir. In most cases, you will be able to paste it into a document that you are currently editing by using the *Ctrl + V* shortcut. Alternatif olarak, ekran görüntüsünü bir dosyaya kaydetmeniz gerekiyorsa, standart **Paint** programını (veya görüntülerle çalışabilen başka bir uygulamayı) açmalısınız. Ekran görüntünüzü aynı kısayolu kullanarak veya Yapıştır düğmesine (genellikle ekranın sol üst köşesinde) tıklayarak buraya yapıştırın ve ardından kaydedin.
 
-Windows 8 and 10 let you take a screenshot very quickly with the *Win + PrtScn* shortcut. As soon as you press these keys, the screenshot will be automatically saved as a file to your *Pictures* → *Screenshots Folder*.
+Windows 8 and 10 let you take a screenshot very quickly with the *Win + PrtScn* shortcut. Bu tuşlara basar basmaz, ekran görüntüsü otomatik olarak *Resimler* → *Ekran Görüntüleri Klasörünüze* bir dosya olarak kaydedilecektir.
 
-There is also a dedicated program for taking screenshots called *Snipping Tool* that you can find via Start menu among standard programs of your computer. Snipping Tool lets you capture of any area of your desktop or the entire screen. After taking a screenshot using this program you can edit the picture and save it to any folder on your computer.
+Bilgisayarınızın standart programları arasında Başlat menüsünden bulabileceğiniz *Ekran Alıntısı Aracı* adlı ekran görüntüsü almak için özel bir program da bulunmaktadır. Ekran Alıntısı Aracı, masaüstünüzün herhangi bir alanını veya tüm ekranı yakalamanıza olanak tanır. Bu programı kullanarak ekran görüntüsü aldıktan sonra resmi düzenleyebilir ve bilgisayarınızdaki herhangi bir klasöre kaydedebilirsiniz.
 
-Besides, you can also try using different apps for taking screenshots on your computer, like **PicPick**, **Nimbus Screenshot**, **Screenshot Captor**, **Snipaste**, **Monosnap**, etc.
+Ayrıca, bilgisayarınızda ekran görüntüsü almak için **PicPick**, **Nimbus Screenshot**, **Screenshot Captor**, **Snipaste**, **Monosnap**, vb. gibi farklı uygulamaları kullanmayı da deneyebilirsiniz.
 
 ### macOS {#mac}
 
@@ -74,7 +74,7 @@ Mac'te ekran görüntüsü almak için aşağıdaki kısayolu kullanın:
 
 - ******⌘ Cmd + Shift + 3*** tuşlarını basılı tutun***
 
-Your Mac will capture the entire screen and save it as a file on the desktop.
+Mac'iniz tüm ekranı yakalar ve masaüstünde bir dosya olarak kaydeder.
 
 Etkin bir pencerenin ekran görüntüsünü almak için aşağıdaki kısayolu kullanın:
 
@@ -82,7 +82,7 @@ Etkin bir pencerenin ekran görüntüsünü almak için aşağıdaki kısayolu k
 
 Belirli bir alanın ekran görüntüsünü almak için aşağıdaki kısayolu kullanın:
 
-- *** ***⌘ Cmd + Shift + 5****** tuşlarına basın. Gerekli alanı seçmek için artı işaretine sürükleyin. Release your mouse or trackpad to take a screenshot, press Esc to cancel it.
+- *** ***⌘ Cmd + Shift + 5****** tuşlarına basın. Gerekli alanı seçmek için artı işaretine sürükleyin. Ekran görüntüsü almak için farenizi veya dokunmatik farenizi bırakın, iptal etmek için Esc düğmesine basın.
 
 *Touch Bar* (MacBook Pro) ekran görüntüsü almak için aşağıdaki kısayolu kullanın:
 
@@ -92,4 +92,4 @@ Mac'iniz *Touch Bar'ın* tamamını yakalar ve masaüstünde bir dosya olarak ka
 
 Ekran görüntüsünü kaydetmek yerine panoya kopyalamak için yukarıdaki kısayollardan herhangi biriyle birlikte *Ctrl* tuşuna basılı tutun. Ardından ekran görüntüsünü (panodan) *Cmd + V* kısayolunu kullanarak düzenlemekte olduğunuz bir belgeye veya görüntüye yapıştırabilirsiniz.
 
-You can also take screenshots by using **Preview** and choosing **Take screenshot** (of the selected area, window, or the entire screen). **Önizleme** ile ekran görüntülerinizi JPG, TIFF, PDF ve diğer dosya formatlarında kaydedebilirsiniz.
+Ayrıca **Önizleme** öğesini kullanarak ve **Ekran görüntüsü al** öğesini (seçilen alan, pencere veya tüm ekran) seçerek de ekran görüntüsü alabilirsiniz. **Önizleme** ile ekran görüntülerinizi JPG, TIFF, PDF ve diğer dosya formatlarında kaydedebilirsiniz.

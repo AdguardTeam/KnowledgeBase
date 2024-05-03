@@ -17,7 +17,7 @@ Follow these steps to install AdGuard certificate:
 
 1. When you see the *HTTPS filtering is off* notification, tap *Enable*.
 
-1. Then you'll be presented with three screens that explain:
+1. Daha sonra size aşağıdakileri açıklayan üç ekran sunulacaktır:
     - Why filter HTTPS traffic
     - Bu filtreleme işleminin güvenliği
     - The necessity of AdGuard certificate

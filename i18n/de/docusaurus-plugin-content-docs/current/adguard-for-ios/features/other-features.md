@@ -5,19 +5,19 @@ sidebar_position: 7
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
+Dieser Artikel behandelt AdGuard für iOS, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
 
 :::
 
 Während das Blockieren von Inhalten in Safari und der DNS-Schutz zweifellos die beiden Hauptmodule von AdGuard/AdGuard Pro sind, gibt es noch einige andere, weniger wichtige Funktionen, die nicht direkt mit diesen beiden Modulen in Verbindung stehen, aber dennoch nützlich sein können und über die man Bescheid wissen sollte.
 
-### **Dark theme**
+### **Dunkles Design**
 
-![Light theme \*mobile\_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
+![Helles Design \*mobile\_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
 
-![Dark theme \*mobile\_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
+![Dunkles Design \*mobile\_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
 
-Residing right at the top of **Settings** → **General** screen, this setting allows you to switch between dark and light themes.
+Mit dieser Einstellung, die sich ganz oben auf dem Bildschirm **Einstellungen** → **Allgemein** befindet, können Sie zwischen einem dunklen und einem hellen Design wechseln.
 
 ### **Widgets**
 
@@ -25,23 +25,23 @@ Residing right at the top of **Settings** → **General** screen, this setting a
 
 AdGuard unterstützt Widgets, die einen schnellen Zugriff auf die Schaltflächen zum Blockieren von Inhalten in Safari und zum DNS-Schutz in Safari ermöglichen sowie Statistiken zu globalen Anfragen anzeigen.
 
-### **Auto-update over Wi-Fi only**
+### **Auto-Update nur über WLAN**
 
 Wenn diese Einstellung aktiviert ist, verwendet AdGuard nur WLAN, um die Filter im Hintergrund zu aktualisieren.
 
-### **Invert the Allowlist**
+### **Positivliste umkehren**
 
 Ein alternativer Modus für die Safari-Filterung, der das Blockieren von Werbung überall aufhebt, außer für die in der Liste angegebenen Websites. Standardmäßig deaktiviert.
 
-### **Advanced mode**
+### **Erweiterter Modus**
 
-**Advanced mode** unlocks **Advanced settings**. Wir raten davon ab, daran zu rütteln, es sei denn, Sie wissen, was Sie tun, oder Sie haben vorher den technischen Support konsultiert.
+Der **Erweiterte Modus** schaltet die **Erweiterten Einstellungen** frei. Wir raten davon ab, daran zu rütteln, es sei denn, Sie wissen, was Sie tun, oder Sie haben vorher den technischen Support konsultiert.
 
-### **Reset statistics**
+### **Statistiken zurücksetzen**
 
 Löscht alle statistischen Daten, wie z. B. die Anzahl der Anfragen usw.
 
-### **Reset settings**
+### **Einstellungen zurücksetzen**
 
 Mit dieser Option werden alle Ihre Einstellungen zurückgesetzt.
 
@@ -49,6 +49,6 @@ Mit dieser Option werden alle Ihre Einstellungen zurückgesetzt.
 
 Nutzen Sie diese Option, um den Support zu kontaktieren, eine verpasste Anzeige zu melden (obwohl wir Ihnen empfehlen, den Assistenten oder die Safari-Web-Erweiterung von AdGuard zu verwenden), Protokolle zu exportieren oder eine Funktionsanfrage zu stellen.
 
-### **About**
+### **Über das Programm**
 
 Enthält die aktuelle Version der App und eine Reihe von selten benötigten Optionen und Links.

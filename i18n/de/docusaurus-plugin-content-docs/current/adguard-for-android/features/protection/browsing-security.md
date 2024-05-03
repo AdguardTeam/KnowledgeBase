@@ -1,5 +1,5 @@
 ---
-title: Browsing security
+title: Internetsicherheit
 sidebar_position: 6
 ---
 
@@ -9,13 +9,13 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 :::
 
-The Browsing security module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Browsing security_.
+Sie können auf das Modul Internetsicherheit zugreifen, indem Sie auf den Tab _Schutz_ (zweites linkes Symbol unten auf dem Bildschirm) tippen und dann _Internetsicherheit_ auswählen.
 
-Browsing security protects you from visiting phishing and malicious websites. It also warns you about potential malware.
+Die Internetsicherheit schützt Sie vor dem Besuch von Phishing- und bösartigen Websites und warnt auch vor potenzieller Malware.
 
-![Browsing security \*mobile\_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
+![Internetsicherheit \*mobile\_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
 
-If you're about to visit a dangerous website, Browsing security will show you the following warning:
+Wenn Sie im Begriff sind, eine gefährliche Website zu besuchen, zeigt Internetsicherheit Ihnen die folgende Warnmeldung an:
 
 ![Browsing security warning \*mobile\_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
 
