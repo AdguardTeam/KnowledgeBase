@@ -79,7 +79,7 @@ In case regular uninstall doesn't work for any reason, you can try to use an adv
 
 - Click *OK* once the warning window pops up:
 
-![Standard uninstall warning *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_complete.jpg)
+![Standard uninstall warning *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
 
 - Wait until uninstall is finished — there will be a phrase **Uninstall complete** and a prompt to restart your computer:
 
@@ -97,7 +97,7 @@ Follow the next steps only if performing the first two steps wasn’t enough for
 
 - Click *OK* once the warning window pops up:
 
-![Extended uninstall warning *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_complete.jpg)
+![Extended uninstall warning *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
 
 - Wait until uninstall is finished — there will be a phrase **Uninstall complete** and a prompt to restart your computer:
 
