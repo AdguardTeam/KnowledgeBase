@@ -123,7 +123,7 @@ Diese Option ist für diejenigen geeignet, die keine Angst vor Schwierigkeiten h
 
 Sie stehen zum Beispiel vor der Situation, dass sich Ihre bevorzugte Website nicht öffnen lässt, die Autorisierung unterbrochen wurde oder einige Seitenelemente nicht korrekt angezeigt werden. Die Ursache kann die Verwendung eines bestimmten Filters/einer bestimmten Erweiterung/einer bestimmten Einstellung des Privatsphäre-Modus sein. Um diese Probleme zu diagnostizieren, müssen Sie Folgendes tun:
 
-### **Filters**
+### **Filter**
 
 1. Deaktivieren Sie den **Werbeblocker**
 2. Wenn das Problem dadurch gelöst wurde, aktivieren Sie das Modul wieder und deaktivieren Sie die Filter nacheinander. Dies darum, um Filter zu identifizieren, die die Seite „stören”

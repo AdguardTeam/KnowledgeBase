@@ -1,22 +1,22 @@
 ---
-title: Stealth Mode
+title: Privatsphären-Modus
 sidebar_position: 2
 ---
 
 :::info
 
-In diesem Artikel geht es um die AdGuard Browsereweiterung, die nur Ihren Browser schützt. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+In diesem Artikel geht es um die AdGuard Browsereweiterung, die nur Ihren Browser schützt. Um Ihr gesamtes Gerät zu schützen, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
 
 :::
 
-_Stealth Mode_ aims to ensure the protection of sensitive personal data from online trackers and fraudsters.
+Der _Privatsphären-Modus_ soll den Schutz sensibler persönlicher Daten vor Online-Trackern und Betrügern gewährleisten.
 
-![Stealth Mode \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_stealth_mode.png)
+![Privatsphären-Modus \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_stealth_mode.png)
 
-In Stealth Mode, you can prevent a website from seeing the search queries from you used to find it on the Internet, automatically delete third-party and website’s own cookies, etc. A [separate article](/general/stealth-mode) is devoted to all these features.
+Im Privatsphären-Modus können Sie verhindern, dass eine Website die Suchanfragen sieht, mit denen Sie sie im Internet gefunden haben, und Sie können Cookies von Drittanbietern und der Website selbst automatisch löschen. Alle diese Funktionen werden in einem [separaten Artikel](/general/stealth-mode) beschrieben.
 
 :::note
 
-Some of the _Stealth Mode_ options available in full-fledged apps are not present in the browser extensions due to technical restrictions.
+Einige der Optionen des _Privatsphären-Modus_, die in vollwertigen Apps verfügbar sind, sind in den Browsererweiterungen aufgrund technischer Einschränkungen nicht vorhanden.
 
 :::

@@ -35,6 +35,6 @@ This feature automatically launches AdGuard automatically after you restart your
 
 This feature hides AdGuard’s icon from the menu bar but keeps AdGuard running in the background. If you want to disable AdGuard completely, click _Quit AdGuard_ in the main window menu.
 
-### Allowlist
+### 白名单
 
 Websites added to this list aren’t filtered. You can also access allowlisted websites from _User rules_.

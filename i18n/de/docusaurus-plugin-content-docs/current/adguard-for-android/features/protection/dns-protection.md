@@ -25,9 +25,9 @@ _DNS protection_ allows you to filter DNS requests with the help of a selected D
 
 - You can also block and unblock domains by creating user rules. You might need to consult our article about [DNS filtering rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/)
 
-![DNS protection \*mobile\_border](https://cdn.adtidy.org/blog/new/u8qtxdns_protection.png)
+![DNS-Schutz \*mobile\_border](https://cdn.adtidy.org/blog/new/u8qtxdns_protection.png)
 
-#### DNS server
+#### DNS-Server
 
 In this section, you can select a DNS server to resolve DNS requests, block ads and trackers, and encrypt DNS traffic. Tap a server to read its full description and select a protocol. If you didn't find the desired server, you can add it manually:
 
@@ -41,4 +41,4 @@ By default, _Automatic DNS_ is selected. It sets a DNS server based on your AdGu
 
 #### DNS-Filter
 
-This section allows you to add custom DNS filters and DNS filtering rules. You can find more filters at [filterlists.com](https://filterlists.com/).
+This section allows you to add custom DNS filters and DNS filtering rules. Weitere Filter finden Sie auf [filterlists.com](https://filterlists.com/).

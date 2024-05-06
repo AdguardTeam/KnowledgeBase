@@ -9,16 +9,16 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 :::
 
-The Ad blocking module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Ad blocking_.
+Sie können auf das Modul _Sperren von Werbung_ zugreifen, indem Sie auf den Tab _Schutz_ (zweites linkes Symbol unten auf dem Bildschirm) tippen und dann _Sperren von Werbung_ auswählen.
 
-The feature blocks ads by applying ad-blocking and language-specific filters. To learn about the mechanism of ad blocking, you can read a [dedicated article](/general/ad-filtering/how-ad-blocking-works).
+Die Funktion sperrt Werbung durch das Anwenden von Werbeblockern und sprachspezifischen Filtern. Um mehr über die Werbeblockierung zu erfahren, können Sie einen [speziellen Artikel](/general/ad-filtering/how-ad-blocking-works) lesen.
 
-Basic protection effectively blocks ads on most websites. For more customized ad blocking, you can:
+Der Basisschutz blockiert effektiv Werbung auf den meisten Websites. Für eine noch individuellere Werbeblockierung können Sie:
 
 - Enable appropriate language-specific filters — they contain filtering rules for blocking ads on websites in specific languages
 
-- Add websites to allowlist — these websites won't be filtered by AdGuard
+- Websites zur Freigabeliste hinzufügen — diese Websites werden nicht von AdGuard gefiltert
 
-- Create user rules — AdGuard will apply them on specified websites. [Learn how to create your own user rules](/general/ad-filtering/create-own-filters)
+- Benutzerregeln erstellen— AdGuard wendet sie auf bestimmte Websites an. [Erfahren Sie, wie Sie Ihre eigenen Benutzerregeln erstellen können](/general/ad-filtering/create-own-filters)
 
 ![Ad blocking \*mobile\_border](https://cdn.adtidy.org/blog/new/o44x5ad_blocking.png)

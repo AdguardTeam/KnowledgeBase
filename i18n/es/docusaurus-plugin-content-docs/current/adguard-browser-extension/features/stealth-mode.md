@@ -9,14 +9,14 @@ Este artículo trata sobre la extensión del navegador de AdGuard, que protege s
 
 :::
 
-_Stealth Mode_ aims to ensure the protection of sensitive personal data from online trackers and fraudsters.
+El _Modo Sigiloso_ tiene como objetivo garantizar la protección de datos personales confidenciales contra rastreadores y estafadores en línea.
 
-![Stealth Mode \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_stealth_mode.png)
+![Modo sigiloso \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_stealth_mode.png)
 
-En el modo sigiloso, puedes evitar que un sitio web vea las consultas de búsqueda que utilizaste para encontrarlo en Internet, eliminar automáticamente las cookies de terceros y del propio sitio web, etc. A [separate article](/general/stealth-mode) is devoted to all these features.
+En el modo sigiloso, puedes evitar que un sitio web vea las consultas de búsqueda que utilizaste para encontrarlo en Internet, eliminar automáticamente las cookies de terceros y del propio sitio web, etc. Un [artículo separado](/general/stealth-mode) fue dedicado a todas estas funciones.
 
 :::note
 
-Some of the _Stealth Mode_ options available in full-fledged apps are not present in the browser extensions due to technical restrictions.
+Algunas de las opciones del _Modo Sigiloso_ disponibles en aplicaciones completas no están presentes en las extensiones del navegador debido a restricciones técnicas.
 
 :::

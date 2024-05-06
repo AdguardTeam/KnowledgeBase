@@ -455,7 +455,7 @@ OxygenOS yüklü cihazlar, işletim sistemi optimizasyonu da dahil olmak üzere 
 
 - Tap **Done** to save
 
-- Open recent apps menu (as showed on this screenshot):
+- Son uygulamalar menüsünü açın (bu ekran görüntüsünde gösterildiği gibi):
 
     ![Onepluslock *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/android/onepluslock.png)
 

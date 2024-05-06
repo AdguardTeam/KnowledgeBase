@@ -99,7 +99,7 @@ When you send a complaint via the app or via AdGuard Assistant, all information 
 
 5. [Provide a screenshot](../take-screenshot) that captures the essence of a problem;
 
-    - **Important**: Hide your personal information (email, phone number, etc.) because screenshots will become publicly available.
+    - **Önemli**: Ekran görüntüleri herkese açık hâle geleceği için kişisel bilgilerinizi (e-posta, telefon numarası, vb.) gizleyin.
 
     ![forma5 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma5en.png)
 
@@ -117,7 +117,7 @@ When you send a complaint via the app or via AdGuard Assistant, all information 
 
     ![forma8 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma8en.png)
 
-## Diagnosis of an issue {#issue}
+## Bir sorunun teşhisi {#issue}
 
 This option is suitable for those who aren’t afraid of difficulties and don’t mind trying to find the problem on their own. This does not require any special skills or in-depth knowledge of HTML and CSS.
 

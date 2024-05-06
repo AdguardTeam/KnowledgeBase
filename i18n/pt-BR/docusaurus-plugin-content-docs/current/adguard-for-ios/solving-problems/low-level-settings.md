@@ -11,7 +11,7 @@ Este artigo aborda o AdGuard para iOS, um bloqueador de anúncios multifuncional
 
 ## How to reach the Low-level settings
 
-:::caution
+:::cuidado
 
 Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. This section should only be opened if you know what you are doing, or you were asked to do so by our support team.
 

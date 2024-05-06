@@ -5,28 +5,28 @@ sidebar_position: 8
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
+Dieser Artikel behandelt AdGuard für iOS, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
 
 :::
 
-In most cases, an ad blocker app and a VPN app cannot work together, due to certain system limitations.
+In den meisten Fällen können eine Werbeblocker-App und eine VPN-App aufgrund bestimmter Systembeschränkungen nicht zusammenarbeiten.
 
-Nevertheless, we've managed to find a solution to befriend [AdGuard VPN](https://adguard-vpn.com/) and AdGuard Ad Blocker.
+Dennoch ist es uns gelungen, eine Lösung zu finden, um [AdGuard VPN](https://adguard-vpn.com/) und AdGuard Werbeblocker zu vereinen.
 
-On the _Protection_ section, you can easily switch between two apps.
+Im Abschnitt _Schutz_ können Sie ganz einfach zwischen zwei Apps wechseln.
 
 ### How to enable compatibility mode
 
 **If you already have AdGuard Ad Blocker when installing AdGuard VPN, integrated (compatibility) mode will turn on automatically, allowing you to use our apps at the same time.**
 
-If you have installed AdGuard VPN first and only then decided to try AdGuard Ad Blocker, follow these steps to use the two apps together:
+Wenn Sie zuerst AdGuard VPN installiert haben und sich erst dann für AdGuard Werbeblocker entschieden haben, befolgen Sie diese Schritte, um die beiden Apps zusammen zu verwenden:
 
-1. Open AdGuard VPN for iOS app and select ⚙ _Settings_ in the lower right corner of the screen.
+1. Öffnen Sie AdGuard VPN für iOS und wählen Sie ⚙ _Einstellungen_ in der unteren rechten Ecke des Bildschirms.
 2. Go to _App settings_ and select _Operating mode_.
-3. Switch the mode from VPN to Integrated.
+3. Schalten Sie den Modus von VPN auf „Integriert“ um.
 
 :::note
 
-In _Integrated mode_, AdGuard VPN's _Exclusions_ and _DNS server_ features are not available.
+Im _Integrierten Modus_ sind die Funktionen _Ausschlüsse_ und _DNS-Server_ nicht verfügbar.
 
 :::

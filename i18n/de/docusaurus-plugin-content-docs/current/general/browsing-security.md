@@ -1,5 +1,5 @@
 ---
-title: Browsing security
+title: Internetsicherheit
 sidebar_position: 3
 ---
 

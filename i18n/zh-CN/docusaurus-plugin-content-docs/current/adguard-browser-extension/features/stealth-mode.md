@@ -9,14 +9,14 @@ sidebar_position: 2
 
 :::
 
-_Stealth Mode_ aims to ensure the protection of sensitive personal data from online trackers and fraudsters.
+「隐身模式」旨在确保个人敏感数据免受在线跟踪器和欺诈者的侵害。
 
 ![Stealth Mode \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_stealth_mode.png)
 
-In Stealth Mode, you can prevent a website from seeing the search queries from you used to find it on the Internet, automatically delete third-party and website’s own cookies, etc. A [separate article](/general/stealth-mode) is devoted to all these features.
+在隐身模式下，用户可以阻止网站看到网络搜索记录，还可以自动删除第三方和网站自己的 Cookie 等。 我们有一篇[文章](/general/stealth-mode)专门介绍这些功能。
 
 :::note
 
-Some of the _Stealth Mode_ options available in full-fledged apps are not present in the browser extensions due to technical restrictions.
+由于技术限制，部分的「隐身模式」选项可以在应用程序里使用，但无法在浏览器扩展中使用。
 
 :::

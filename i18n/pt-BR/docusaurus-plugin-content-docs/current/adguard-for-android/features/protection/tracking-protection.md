@@ -1,80 +1,80 @@
 ---
-title: Tracking protection
+title: Proteção contra rastreamento
 sidebar_position: 2
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artigo aborda o AdGuard para Android, um bloqueador de anúncios multifuncional que protege seu dispositivo a nível de sistema. Para ver como funciona, [baixe o aplicativo AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-The Tracking protection module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Tracking protection_.
+O módulo de proteção contra rastreamento pode ser acessado tocando na guia _Proteção_ (segundo ícone à esquerda na parte inferior da tela) e selecionando _Proteção contra rastreamento_.
 
-_Tracking protection_ (formerly known as _Stealth Mode_) prevents websites from collecting information about you, such as your IP addresses, information about your browser and operating system, screen resolution, and the page you came or were redirected from. It can also block cookies that websites use to mark your browser, save your personal settings and user preferences, or recognize you on your next visit.
+A _proteção contra rastreamento_ (anteriormente conhecida como _Modo Stealth_) evita que sites coletem informações sobre você, como endereços IP, informações sobre seu navegador e sistema operacional, resolução de tela e a página da qual você veio ou da qual foi redirecionado. Ele também pode bloquear cookies que os sites usam para marcar seu navegador, salvar suas configurações pessoais e preferências de usuário ou reconhecê-lo em sua próxima visita.
 
-![Tracking protection \*mobile\_border](https://cdn.adtidy.org/blog/new/y5fuztracking_protection.png)
+![Proteção contra rastreamento \*mobile\_border](https://cdn.adtidy.org/blog/new/y5fuztracking_protection.png)
 
-_Tracking protection_ has three pre-configured levels of privacy protection (_Standard_, _High_, and _Extreme_) and one user-defined level (_Custom_).
+A _Proteção contra rastreamento_ tem três níveis pré-configurados de proteção de privacidade (_Padrão_, _Alto_ e _Extremo_) e um nível definido pelo usuário (_Personalizado_).
 
-Here are the active features of the pre-configured levels:
+Aqui estão os recursos ativos dos níveis pré-configurados:
 
-1. **Standard**
+1. **Padrão**
 
-   a. _Block trackers_. This feature uses _AdGuard Tracking Protection filter_ to protect you from online counters and web analytics tools
+   a. _Bloquear rastreadores_. Este recurso utiliza o _Filtro de proteção contra rastreamento do AdGuard_ para protegê-lo de contadores online e ferramentas de web analytics
 
-   b. _Ask websites not to track you_. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
+   b. _Pedir aos sites que não te rastreiem_. Esse recurso envia os sinais [Global Privacy Control] (https://globalprivacycontrol.org/) e [Do Not Track] (https://en.wikipedia.org/wiki/Do_Not_Track) para os sites que você visita, solicitando que os aplicativos da Web desativem o rastreamento de sua atividade
 
-   c. _Remove X-Client-Data header_. This feature prevents Google Chrome from sending information about its version and modifications to Google domains (including DoubleClick and Google Analytics)
+   c. _Remover cabeçalho X-Client-Data_. Esse recurso impede que o Google Chrome envie informações sobre sua versão e modificações para os domínios do Google (incluindo o DoubleClick e o Google Analytics)
 
-2. **High**
+2. **Alto**
 
-   a. _Block trackers_. This feature uses _AdGuard Tracking Protection filter_ to protect you from online counters and web analytics tools
+   a. _Bloquear rastreadores_. Este recurso utiliza o _Filtro de proteção contra rastreamento do AdGuard_ para protegê-lo de contadores online e ferramentas de web analytics
 
-   b. _Remove tracking parameters from URLs_. This feature uses _AdGuard URL Tracking filter_ to remove tracking parameters, such as `utm_*` and `fb_ref`, from page URLs
+   b. _Remover parâmetros de rastreamento de URLs_. Este recurso usa o _filtro de rastreamento de URL do AdGuard_ para remover parâmetros de rastreamento, como `utm_*` e `fb_ref`, dos URLs das páginas
 
-   c. _Hide your search queries_. This feature hides queries for websites visited from a search engine
+   c. _Ocultar suas consultas de pesquisa_. Esse recurso oculta as consultas de sites visitados em um mecanismo de pesquisa
 
-   d. _Ask websites not to track you_. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
+   d. _Pedir aos sites que não te rastreiem_. Esse recurso envia os sinais [Global Privacy Control] (https://globalprivacycontrol.org/) e [Do Not Track] (https://en.wikipedia.org/wiki/Do_Not_Track) para os sites que você visita, solicitando que os aplicativos da Web desativem o rastreamento de sua atividade
 
-   e. _Self-destruction of third-party cookies_. This feature limits the lifetime of third-party cookies to 180 minutes
-
-   :::caution
-
-   This feature deletes all third-party cookies after their forced expiration. This includes your logins through social networks or other third-party services. You may need to re-log in to some websites periodically or experience other cookie-related issues. To block only tracking cookies, use the _Standard_ protection level.
-
-   :::
-
-   f. _Remove X-Client-Data header_. This feature prevents Google Chrome from sending its version and modifications information to Google domains (including DoubleClick and Google Analytics)
-
-3. **Extreme** (formerly known as _Ultimate_)
-
-   a. _Block trackers_. This feature uses _AdGuard Tracking Protection filter_ to protect you from online counters and web analytics tools
-
-   b. _Remove tracking parameters from URLs_. This feature uses _AdGuard URL Tracking filter_ to remove tracking parameters, such as `utm_*` and `fb_ref`, from page URLs
-
-   c. _Hide your search queries_. This feature hides queries for websites visited from a search engine
-
-   d. _Ask websites not to track you_. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
-
-   e. _Self-destruction of third-party cookies_. This feature limits the lifetime of third-party cookies to 180 minutes
+   e. _Autodestruição de cookies de terceiros_. Este recurso limita a vida útil de cookies de terceiros a 180 minutos
 
    :::caution
 
-   This feature deletes all third-party cookies after their forced expiration. This includes your logins through social networks or other third-party services. You may need to re-log in to some websites periodically or experience other cookie-related issues. To block only tracking cookies, use the _Standard_ protection level.
+   Este recurso exclui todos os cookies de terceiros após sua expiração forçada. Isto inclui os seus logins através de redes sociais ou outros serviços de terceiros. Pode ser necessário fazer login novamente em alguns sites periodicamente ou enfrentar outros problemas relacionados a cookies. Para bloquear apenas cookies de rastreamento, use o nível de proteção _Padrão_.
 
    :::
 
-   f. _Block WebRTC_. This feature blocks WebRTC, a known vulnerability that can leak your real IP address even if you use a proxy or VPN
+   f. _Remover cabeçalho X-Client-Data_. Este recurso impede que o Google Chrome envie informações sobre sua versão e modificações para domínios do Google (incluindo DoubleClick e Google Analytics)
 
-   g. _Block Push API_. This feature prevents your browsers from receiving push messages from servers
+3. **Extremo** (anteriormente conhecido como _Ultimate_)
 
-   h. _Block Location API_. This feature prevents browsers from accessing your GPS data and determining your location
+   a. _Bloquear rastreadores_. Este recurso utiliza o _Filtro de proteção contra rastreamento do AdGuard_ para protegê-lo de contadores online e ferramentas de web analytics
 
-   i. _Hide Referer from third parties_. This feature prevents third parties from knowing which websites you visit. It hides the HTTP header that contains the URL of the initial page and replaces it with a default or custom one that you can set
+   b. _Remover parâmetros de rastreamento de URLs_. Este recurso usa o _filtro de rastreamento de URL do AdGuard_ para remover parâmetros de rastreamento, como `utm_*` e `fb_ref`, dos URLs das páginas
 
-   j. _Hide your User-Agent_. This feature removes identifying information from the User-Agent header, which typically includes the name and version of the browser, the operating system, and language settings
+   c. _Ocultar suas consultas de pesquisa_. Esse recurso oculta as consultas de sites visitados em um mecanismo de pesquisa
 
-   k. _Remove X-Client-Data header_. This feature prevents Google Chrome from sending its version and modifications information to Google domains (including DoubleClick and Google Analytics)
+   d. _Pedir aos sites que não te rastreiem_. Esse recurso envia os sinais [Global Privacy Control] (https://globalprivacycontrol.org/) e [Do Not Track] (https://en.wikipedia.org/wiki/Do_Not_Track) para os sites que você visita, solicitando que os aplicativos da Web desativem o rastreamento de sua atividade
 
-You can tweak individual settings in _Tracking protection_ and come up with a custom configuration. Every setting has a description that will help you understand its role. [Learn more about what various _Tracking protection_ settings do](/general/stealth-mode) and approach them with caution, as some may interfere with the functionality of websites and browser extensions.
+   e. _Autodestruição de cookies de terceiros_. Este recurso limita a vida útil de cookies de terceiros a 180 minutos
+
+   :::cuidado
+
+   Este recurso exclui todos os cookies de terceiros após sua expiração forçada. Isto inclui os seus logins através de redes sociais ou outros serviços de terceiros. Pode ser necessário fazer login novamente em alguns sites periodicamente ou enfrentar outros problemas relacionados a cookies. Para bloquear apenas cookies de rastreamento, use o nível de proteção _Padrão_.
+
+   :::
+
+   f. _Bloquear WebRTC_. Este recurso bloqueia WebRTC, uma vulnerabilidade conhecida que pode vazar seu endereço IP real mesmo se você usar um proxy ou VPN
+
+   g. _Bloquear a API Push_. Esse recurso impede que seus navegadores recebam mensagens push dos servidores
+
+   h. _Bloquear API de localização_. Este recurso impede que os navegadores acessem seus dados de GPS e determinem sua localização
+
+   i. _Ocultar Referrer de terceiros_. Este recurso evita que terceiros saibam quais sites você visita. Ele oculta o cabeçalho HTTP que contém o URL da página inicial e o substitui por um padrão ou personalizado definido por você
+
+   j. _Ocultar seu User-Agent_. Este recurso remove informações de identificação do cabeçalho User-Agent, que normalmente inclui o nome e a versão do navegador, o sistema operacional e as configurações de idioma
+
+   k. _Remover cabeçalho X-Client-Data_. Este recurso impede que o Google Chrome envie informações sobre sua versão e modificações para domínios do Google (incluindo DoubleClick e Google Analytics)
+
+Você pode ajustar configurações individuais em _Proteção contra rastreamento_ e criar uma configuração personalizada. Cada configuração possui uma descrição que o ajudará a entender sua função. [Saiba mais sobre o que várias configurações de _Proteção contra rastreamento_ fazem](/general/stealth-mode) e aborde-as com cautela, pois algumas podem interferir na funcionalidade de sites e extensões de navegador.

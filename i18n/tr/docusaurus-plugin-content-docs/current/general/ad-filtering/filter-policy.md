@@ -22,9 +22,9 @@ Filtreleme kuralları için kalite gereksinimleri:
 
 ### Terminology
 
-**Ad blocker** is a software or hardware tool designed to filter, hide, or block advertisements and other elements on web pages. Ad blockers are created to improve user experience, reduce page load times, decrease internet traffic consumption, block ads, enhance privacy while browsing websites and using applications, and block annoying elements.
+**Reklam engelleyici**, web sayfalarındaki reklamları ve diğer öğeleri filtrelemek, gizlemek veya engellemek için tasarlanmış bir yazılım veya donanım aracıdır. Ad blockers are created to improve user experience, reduce page load times, decrease internet traffic consumption, block ads, enhance privacy while browsing websites and using applications, and block annoying elements.
 
-A **filter** (or a **filter list**) is a set of filtering rules designed to filter content and block various types of advertisements and other types of content using ad blockers. These filters usually operate at the level of the web browser, programs, or DNS server.
+A **filter** (or a **filter list**) is a set of filtering rules designed to filter content and block various types of advertisements and other types of content using ad blockers. Bu filtreler genellikle web tarayıcısı, programlar veya DNS sunucusu düzeyinde çalışır.
 
 **Anti-adblock** is a technology used by websites or applications intended to detect ad blocking and react to it in different ways: tracking, reinjecting ads, encouraging to disable ad blocker (so called “adblock walls”). Anti-adblocks may be of different types:
 
@@ -220,7 +220,7 @@ Bu filtre, diğer filtrelerde yer almayan can sıkıcı öğeleri engellemek ve 
 
 **Kısıtlamalar ve istisnalar**
 
-This filter may contain rules that are not suitable for all users. Bazen bu filtrenin devre dışı bırakılması önerilir. The decisions to add rules to this filter are made by filter developers on a rule-by-rule basis.
+Bu filtre tüm kullanıcılar için uygun olmayan kurallar içerebilir. Bazen bu filtrenin devre dışı bırakılması önerilir. Bu filtreye kural ekleme kararları, filtre geliştiricileri tarafından kural bazında verilir.
 
 ## Sosyal medya filtreleri
 
@@ -269,13 +269,13 @@ This filter unblocks:
 
 **Kısıtlamalar ve istisnalar**
 
-- Search advertising is unblocked only if it corresponds to the user’s search query, as it is contextual. Otherwise, the advertising remains blocked
+- Search advertising is unblocked only if it corresponds to the user’s search query, as it is contextual. Aksi takdirde, reklam engellenmiş olarak kalır
 - Self-promotion is unblocked only if it complies with the filter policy. A request for unblocking may be rejected by filter developers
 - Any other advertising will not be unblocked
 
 #### AdGuard DNS filtresi
 
-This filter is used in AdGuard DNS. It is not a replacement for ad-blocking filters.
+Bu filtre AdGuard DNS'de kullanılır. Bu, reklam engelleme filtrelerinin yerine geçmez.
 
 **Kısıtlamalar ve istisnalar**
 

@@ -5,20 +5,20 @@ sidebar_position: 1
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artigo aborda o AdGuard para Android, um bloqueador de anúncios multifuncional que protege seu dispositivo a nível de sistema. Para ver como funciona, [baixe o aplicativo AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-The Ad blocking module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Ad blocking_.
+O módulo de bloqueio de anúncios pode ser acessado tocando na guia _Proteção_ (segundo ícone à esquerda na parte inferior da tela) e selecionando _Bloqueio de anúncios_.
 
-The feature blocks ads by applying ad-blocking and language-specific filters. To learn about the mechanism of ad blocking, you can read a [dedicated article](/general/ad-filtering/how-ad-blocking-works).
+O recurso bloqueia anúncios aplicando bloqueio de anúncios e filtros específicos de idioma. Para saber mais sobre o mecanismo de bloqueio de anúncios, você pode ler um [artigo dedicado](/general/ad-filtering/how-ad-blocking-works).
 
-Basic protection effectively blocks ads on most websites. For more customized ad blocking, you can:
+A proteção básica bloqueia efetivamente anúncios na maioria dos sites. Para um bloqueio de anúncios mais personalizado, você pode:
 
-- Enable appropriate language-specific filters — they contain filtering rules for blocking ads on websites in specific languages
+- Habilite filtros apropriados para idiomas específicos, eles contêm regras de filtragem para bloquear anúncios em sites em idiomas específicos
 
-- Add websites to allowlist — these websites won't be filtered by AdGuard
+- Adicione sites à lista de permissões. Esses sites não serão filtrados pelo AdGuard
 
-- Create user rules — AdGuard will apply them on specified websites. [Learn how to create your own user rules](/general/ad-filtering/create-own-filters)
+- Crie regras de usuário, o AdGuard as aplicará em sites específicos. [Saiba como criar suas próprias regras de usuário](/general/ad-filtering/create-own-filters)
 
-![Ad blocking \*mobile\_border](https://cdn.adtidy.org/blog/new/o44x5ad_blocking.png)
+![Bloqueio de anúncios \*mobile\_border](https://cdn.adtidy.org/blog/new/o44x5ad_blocking.png)

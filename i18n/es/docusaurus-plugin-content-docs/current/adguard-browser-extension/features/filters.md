@@ -9,48 +9,48 @@ Este artículo trata sobre la extensión del navegador de AdGuard, que protege s
 
 :::
 
-Blocking ads is the key functionality of any ad blocker, and AdGuard Browser Extension is not an exception. Ad blocking is based on filters — sets of rules written in a special language. These rules tell which elements should be blocked and which should not. AdGuard interpretes the rules and modifies web requests based on them. Como resultado, dejarás de ver anuncios en tus páginas web.
+Bloquear anuncios es la funcionalidad clave de cualquier bloqueador de anuncios, y la extensión de navegador AdGuard no es una excepción. El bloqueo de anuncios se basa en filtros: conjuntos de reglas escritas en un lenguaje especial. Estas reglas indican qué elementos deben ser bloqueados y cuáles no. AdGuard interpreta las reglas y modifica las peticiones web basándose en ellas. Como resultado, dejarás de ver anuncios en tus páginas web.
 
-![Filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters.png)
+![Filtros \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters.png)
 
 Todos los filtros se agrupan según tu función. Por ejemplo, existen categorías para filtros de bloqueo de publicidad, filtros de protección de la privacidad, filtros relacionados con las redes sociales, etc. Puedes habilitar filtros individuales o todo el grupo a la vez.
 
-![Ad blocking filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters1.png)
+![Filtros de bloqueo de anuncios \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters1.png)
 
 ## Filtros personalizados
 
-While the features of other filter groups are more or less predictable, there is a group called _Custom_ that may raise additional questions.
+Si bien las características de otros grupos de filtros son más o menos predecibles, hay un grupo llamado _Personalizado_ que puede generar dudas adicionales.
 
-![Custom filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters.png)
+![Filtros personalizados \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters.png)
 
-En esta pestaña, puedes agregar filtros que no están presentes en la extensión de forma predeterminada. There are plenty of [publicly available filters on the Internet](https://filterlists.com). Además, puedes crear y agregar tus propios filtros. De hecho, puedes crear cualquier conjunto de filtros y personalizar el bloqueo de anuncios a tu gusto.
+En esta pestaña, puedes agregar filtros que no están presentes en la extensión de forma predeterminada. Hay muchos [filtros disponibles públicamente en Internet] (https://filterlists.com). Además, puedes crear y agregar tus propios filtros. De hecho, puedes crear cualquier conjunto de filtros y personalizar el bloqueo de anuncios a tu gusto.
 
-To add a filter, just click _Add custom filter_, enter the URL or the file path of the filter you want to be added and click _Next_.
+Para agregar un filtro, simplemente haz clic en _Agregar filtro personalizado_, ingresa la URL o la ruta del archivo del filtro que deseas agregar y haz clic en Siguiente\*.
 
-![Add a custom filter \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
+![Agregar un filtro personalizado \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
 
-## User rules {#user-rules}
+## Reglas de usuario {#user-rules}
 
-_User rules_ is another tool that helps you customize the blocking of ads.
+_Reglas de usuario_ es otra herramienta que te ayuda a personalizar el bloqueo de anuncios.
 
-![User rules \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_user_rules.png)
+![Reglas de usuario \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_user_rules.png)
 
-Hay varias formas de añadir nuevas normas. The most straightforward is to just type a rule in, but it requires some knowledge of the [rule syntax](/general/ad-filtering/create-own-filters).
+Hay varias formas de añadir nuevas normas. La más sencilla es simplemente escribir una regla, pero requiere cierto conocimiento de la [sintaxis reglas](/general/ad-filtering/create-own-filters).
 
-También puedes importar una lista de filtros lista para usar desde un archivo de texto. **Make sure that different rules are separated by line breaks.** Note that importing a ready-to-use filter list is better done in the Custom filters tab.
+También puedes importar una lista de filtros lista para usar desde un archivo de texto. **Asegúrate de que las diferentes reglas estén separadas por saltos de línea.** Ten en cuenta que es mejor importar una lista de filtros lista para usar en la pestaña Filtros personalizados.
 
 Además, puedes exportar tus propias reglas de filtrado. Esta opción es buena para transferir tu lista de reglas entre navegadores o dispositivos.
 
-When you add a website to the Allowlist (more on that below) or use the Assistant tool for hiding an element on the page, a corresponding rule is also saved in _User rules_.
+Cuando agregas un sitio web a la Lista de permitidos (más sobre esto aqui) o usa la herramienta Asistente para ocultar un elemento en la página, también se guarda una regla correspondiente en _Reglas de usuario_.
 
 ## Lista de permitido
 
-The _allowlist_ is used to exclude certain websites from filtering. Las reglas de bloqueo no se aplican a los sitios web de la lista.
+La _lista de permitidos_ se utiliza para excluir ciertos sitios web del filtrado. Las reglas de bloqueo no se aplican a los sitios web de la lista.
 
-![Allowlist \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist.png)
+![Lista de permitidos \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist.png)
 
-The _allowlist_ can be inverted, too: you can unblock ads everywhere except on the websites added to this list. To do that, activate the _Invert allowlist_ option.
+La _lista de permitidos_ también se puede invertir: puedes desbloquear anuncios en todas partes excepto en los sitios web agregados a esta lista. Para ello, activa la opción _Invertir lista de permitidos_.
 
-![Invert allowlist \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist1.png)
+![Invertir lista de permitidos \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist1.png)
 
 También puedes importar y exportar listas de permitidos existentes. Es útil, por ejemplo, si deseas aplicar las mismas reglas de permitidos en cada uno de tus navegadores.

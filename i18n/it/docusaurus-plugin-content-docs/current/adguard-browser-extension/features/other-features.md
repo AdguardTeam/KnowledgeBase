@@ -9,30 +9,30 @@ Questo articolo riguarda l'Estensione di browser AdGuard, che protegge solo il t
 
 :::
 
-Apart from the large key modules of AdGuard Browser Extension, there are several more specific features that can be configured in the _General_ and _Additional settings_ tabs of the extension settings.
+Oltre ai grandi moduli chiave dell'estensione del browser AdGuard, ci sono molte altre funzionalità specifiche che possono essere configurate nelle schede _Generale_ e _Impostazioni aggiuntive_ delle impostazioni dell'estensione.
 
-## General {#general}
+## Generale {#general}
 
-In the _General_ tab, you can allow search ads and the [self-promotion of websites](/general/ad-filtering/search-ads), enable the automatic activation of language-specific filters, indicate the filters update interval, etc.
+Nella scheda _Generale_, puoi consentire la ricerca di annunci e [l'auto-promozione dei siti web](/general/ad-filtering/search-ads), abilitare l'attivazione automatica di filtri specifici per la lingua, indicare l'intervallo di aggiornamento dei filtri, etc.
 
 ![General \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_general.png)
 
-Besides, here you can enable [_Phishing and malware protection_](/general/browsing-security).
+Inoltre, qui puoi abilitare la [_Protezione da phishing e malware_](/general/browsing-security).
 
-You can save your settings configuration by clicking the _Export settings_ button. Le impostazioni saranno salvate come un file .json. To upload the previously saved settings configuration, use the _Import settings_ function. Puoi anche utilizzarla per passare tra diversi profili di impostazioni, o persino per trasferire le configurazioni di impostazioni tra browser differenti.
+Puoi salvare la configurazione delle tue impostazioni cliccando il pulsante _Esporta impostazioni_. Le impostazioni saranno salvate come un file .json. Per caricare la configurazione d'impostazioni precedentemente salvata, utilizza la funzionalità _Importa impostazioni_. Puoi anche utilizzarla per passare tra diversi profili di impostazioni, o persino per trasferire le configurazioni di impostazioni tra browser differenti.
 
-## Additional settings {#misc}
+## Impostazioni aggiuntive {#misc}
 
-The _Additional settings_ section contains a range of various settings that are related to the ad blocking process and application usability.
+La sezione delle _Impostazioni aggiuntive_ contiene una gamma di varie impostazioni, correlate al processo di blocco degli annunci e di utilizzabilità dell'applicazione.
 
 ![Additional settings \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_additional_settings.png)
 
-From this tab, you can activate optimized filters, enable notifications about extension updates, open the _Filtering log_, or clear the statistics of blocked ads and trackers.
+Da questa scheda, puoi attivare i filtri ottimizzati, abilitare le notifiche sugli aggiornamenti dell'estensione, aprire il _Registro di filtraggio_ o cancellare le statistiche di annunci e tracciatori bloccati.
 
 Inoltre, puoi decidere di aiutarci con lo sviluppo dei filtri, inviandoci le statistiche sulle regole applicate: quali sono innescate, su quali siti web e quanto spesso. Questa opzione è disabilitata di default in quanto non raccogliamo dati dell'utente senza consenso. Tuttavia, se l'abiliti, tutti i dati saranno strettamente anonimizzati.
 
-## About {#about}
+## Informazioni {#about}
 
-In the _About_ section, you can find infos about the current version, links to the EULA and Privacy policy, and to the repository of the Browser extension on GitHub.
+Nella sezione _Informazioni_, puoi trovare le informazioni sulla versione corrente, collegamenti all'EULA e la Politica sulla Privacy e alla repository dell'estensione del Browser su GitHub.
 
 ![About \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)

@@ -1,5 +1,5 @@
 ---
-title: Quick actions
+title: Schnellaktionen
 sidebar_position: 2
 ---
 
@@ -9,10 +9,10 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 :::
 
-Quick actions can be found inside the _Firewall_ module, which can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Firewall_.
+Schnellaktionen finden Sie im Modul _Firewall_. Um diese Funktion zu finden, tippen Sie im Tab _Schutz_ (zweites Symbol links unten auf dem Bildschirm) auf _Firewall_.
 
-_Quick actions_ are based on the requests from _Recent activity_ (which can be found in [_Statistics_](/adguard-for-android/features/statistics)). This section shows which apps have recently connected to the Internet.
+Die _Schnellaktionen_ basieren auf den Anfragen der _Letzten Aktivität_, die unter [_Statistiken_](/adguard-for-android/features/statistics) zu finden ist. This section shows which apps have recently connected to the Internet.
 
-![Quick actions \*mobile\_border](https://cdn.adtidy.org/blog/new/yigrfquick_actions.png)
+![Schnellaktionen \*mobile\_border](https://cdn.adtidy.org/blog/new/yigrfquick_actions.png)
 
 If you see an app that shouldn't be using the Internet at all or an app that you haven't used recently, you can block its access on the fly. This will not be possible unless the _Firewall_ module is turned on.

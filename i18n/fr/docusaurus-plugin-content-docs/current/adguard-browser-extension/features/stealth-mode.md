@@ -9,14 +9,14 @@ Cet article concerne l'extension de navigateur AdGuard, qui protège uniquement 
 
 :::
 
-_Stealth Mode_ aims to ensure the protection of sensitive personal data from online trackers and fraudsters.
+_Le mode furtif_ vise à assurer la protection des données personnelles sensibles contre les traqueurs en ligne et les fraudeurs.
 
 ![Stealth Mode \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_stealth_mode.png)
 
-En mode furtif, vous pouvez empêcher un site web de voir les requêtes de recherche que vous avez utilisées pour le trouver sur Internet, supprimer automatiquement les cookies tiers et les cookies propres au site, etc. A [separate article](/general/stealth-mode) is devoted to all these features.
+En mode furtif, vous pouvez empêcher un site web de voir les requêtes de recherche que vous avez utilisées pour le trouver sur Internet, supprimer automatiquement les cookies tiers et les cookies propres au site, etc. Un [article séparé](/general/stealth-mode) est consacré à toutes ces fonctionnalités.
 
 :::note
 
-Some of the _Stealth Mode_ options available in full-fledged apps are not present in the browser extensions due to technical restrictions.
+Certaines des options du _Mode furtif_ disponibles dans les applications autonomes ne sont pas présentes dans les extensions de navigateur à cause de restrictions techniques.
 
 :::

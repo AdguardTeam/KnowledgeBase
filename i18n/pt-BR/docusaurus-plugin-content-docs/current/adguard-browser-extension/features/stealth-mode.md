@@ -9,14 +9,14 @@ Este artigo é sobre a extensão de navegador AdGuard, que protege apenas o seu 
 
 :::
 
-_Stealth Mode_ aims to ensure the protection of sensitive personal data from online trackers and fraudsters.
+O _Modo invisível_ visa garantir a proteção de dados pessoais sensíveis contra rastreadores e fraudadores online.
 
 ![Stealth Mode \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_stealth_mode.png)
 
-No Modo invisível, você pode impedir que um site veja as consultas de pesquisa que você usou para encontrá-lo na Internet, excluir automaticamente cookies de terceiros e do próprio site etc. A [separate article](/general/stealth-mode) is devoted to all these features.
+No Modo invisível, você pode impedir que um site veja as consultas de pesquisa que você usou para encontrá-lo na Internet, excluir automaticamente cookies de terceiros e do próprio site etc. Um [artigo separado](/general/stealth-mode) é dedicado a todos esses recursos.
 
 :::note
 
-Some of the _Stealth Mode_ options available in full-fledged apps are not present in the browser extensions due to technical restrictions.
+Algumas das opções do _Modo Invisível_ disponíveis em aplicativos completos não estão presentes nas extensões do navegador devido a restrições técnicas.
 
 :::

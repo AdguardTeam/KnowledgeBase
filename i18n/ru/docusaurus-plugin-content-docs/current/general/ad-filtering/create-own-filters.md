@@ -2210,9 +2210,10 @@ replace = "/" regexp "/" replacement "/" modifiers
 
 При работе с исключаемым доменом, приложением, методом или типом содержимого мы добавляем **1 балл** за существование самого модификатора, независимо от количества исключаемых доменов или типов содержимого. Это связано с тем, что область действия правила и так бесконечно широка. Проще говоря, запрещая несколько доменов, модификаторов content-type, методов или приложений, мы лишь немного сужаем область действия правила.
 
-#### Определённые модификаторы content-type, методы, заголовки, $popup, специальные исключения {#priority-category-2}
+#### Defined content-type modifiers, defined methods, defined headers, $all, $popup, specific exceptions {#priority-category-2}
 
 Все разрешённые типы контента:
+
 <!-- Please keep them sorted -->
 
 - [`$document`](#document-modifier)
@@ -2228,11 +2229,17 @@ replace = "/" regexp "/" replacement "/" modifiers
 - [`$websocket`](#websocket-modifier)
 - [`$xmlhttprequest`](#xmlhttprequest-modifier)
 
-Это также включает правила, которые неявно добавляют модификатор `$document`:
+This also includes rules that implicitly add all content types:
+
+- [`$all`](#all-modifier);
+
+Or rules that implicitly add the modifier `$document`:
 
 - [`$popup`](#popup-modifier)
 
-Или специальные исключения, которые неявно добавляют `$document,subdocument`:
+Or some specific exceptions that implicitly add `$document,subdocument`:
+
+<!-- Please keep them sorted -->
 
 - [`$content`](#content-modifier)
 - [`$elemhide`](#elemhide-modifier)
@@ -2247,7 +2254,11 @@ replace = "/" regexp "/" replacement "/" modifiers
 
 Или правила с [`$header`](#header-modifier).
 
-Наличие любых модификаторов content-type добавляет `(50 + 50 / N)`, где `N` — количество модификаторов, например: `||example.com^$image,script` добавит `50 + 50 / 2 = 50 + 25 = 75` к общему весу правила. К этой категории относится и `$popup`, так как в нём неявно добавляется модификатор `$document`. Аналогично, конкретные исключения добавляют `$document,subdocument`.
+Наличие любых модификаторов content-type добавляет `(50 + 50 / N)`, где `N` — количество модификаторов, например: `||example.com^$image,script` добавит `50 + 50 / 2 = 50 + 25 = 75` к общему весу правила.
+
+The `$all` also belongs to this category, because it implicitly adds all content type modifiers, e.g., `$document,subdocument,image,script,media,<etc>` + `$popup`.
+
+К этой категории относится и `$popup`, так как в нём неявно добавляется модификатор `$document`. Аналогично, конкретные исключения добавляют `$document,subdocument`.
 
 Если в правиле есть модификатор `$method` с разрешёнными методами, то он добавляет `(50 + 50 / N)`, где `N` — количество разрешённых методов, например: `||example.com^$method=GET|POST|PUT` добавит `50 + 50 / 3 = 50 + 16,6 = 67` к общему весу правила.
 
@@ -2307,59 +2318,41 @@ replace = "/" regexp "/" replacement "/" modifiers
 
 #### Примеры
 
-**Пример 1**
+1. `||example.com^`
 
-`||example.com^`
+    Вес правила без модификаторов: `1`.
 
-Вес правила без модификаторов: `1`.
+1. `||example.com^$match-case`
 
-**Пример 2**
+    Rule weight: base weight + weight of the modifier from [category 1](#priority-category-1): `1 + 1 = 2`.
 
-`||example.com^$match-case`
+1. `||example.org^$removeparam=p`
 
-Вес правила: базовый вес + вес модификатора из [категории 1](#priority-category-1): `1 + 1 = 2`.
+    Rule weight: base weight + 0, since $removeparam [is not involved](#priority-category-extra) in the priority calculation: `1 + 0 = 1`.
 
-**Пример 3**
+1. `||example.org^$document,redirect=nooptext`
 
-`||example.org^$removeparam=p`
+    Rule weight: base weight + allowed content type, [category 3](#priority-category-3) + $redirect from [category 6](#priority-category-6): `1 + (100 + 100 / 1) + 1000 = 1201`.
 
-Вес правила: базовый вес + 0, так как $removeparam [не участвует](#priority-category-extra) в расчёте приоритета: `1 + 0 = 1`.
+1. `@@||example.org^$removeparam=p,document`
 
-**Пример 4**
+    Rule weight: base weight + allowlist rule, [category 5](#priority-category-5) + 0 because $removeparam [is not involved](#priority-category-extra) in the priority calculation + allowed content type, [category 2](#priority-category-2): `1 + 10000 + 0 + (50 + 50 / 1) = 10101`.
 
-`||example.org^$document,redirect=nooptext`
+1. `@@||example.com/ad/*$domain=example.org|example.net,important`
 
-Вес правила: базовый вес + допустимый тип содержимого, [категория 3](#priority-category-3) + $redirect из [категория 6](#priority-category-6): `1 + (100 + 100 / 1) + 1000 = 1201`.
+    Rule weight: base weight + allowlist rule, [category 5](#priority-category-5) + important rule, [category 7](#priority-category-7) + allowed domains, [category 3](#priority-category-3): `1 + 10000 + 1000000 + (100 + 100 / 2) = 1010152`.
 
-**Пример 5**
+1. `@@||example.org^$document` без дополнительных модификаторов — это псевдоним для `@@|||example.com^$elemhide,content,jsinject,urlblock,extension`
 
-`@@||example.org^$removeparam=p,document`
+    Rule weight: base weight + specific exceptions, [category 4](#priority-category-4) + two allowed content types (document and subdocument), [category 2](#priority-category-2): `1 + 10000 * 4 + (50 + 50 / 2) = 40076`.
 
-Вес правила: базовый вес + правило белого списка, [категория 5](#priority-category-5) + 0, потому что $removeparam [не участвует](#priority-category-extra) в расчёте приоритета + разрешённый тип контента, [категория 2](#priority-category-2): `1 + 10000 + 0 + (50 + 50 / 1) = 10101`.
+1. `*$script,domain=a.com,denyallow=x.com|y.com`
 
-**Пример 6**
+    Rule weight: base weight + allowed content type, [category 2](#priority-category-2) + allowed domain, [category 3](#priority-category-3) + denyallow, [category 1](#priority-category-1): `1 + (50 + 50/1) + (100 + 100 / 1) + 1 = 303`.
 
-`@@||example.com/ad/*$domain=example.org|example.net,important`
+1. `||example.com^$all` — alias to `||example.com^$document,subdocument,image,script,media,etc. + $popup`
 
-Вес правила: базовый вес + правило белого списка, [категория 5](#priority-category-5) + важное правило, [категория 7](#priority-category-7) + разрешённые домены, [категория 3](#priority-category-3): `1 + 10000 + 1000000 + (100 + 100 / 2) = 1010152`.
-
-**Пример 7**
-
-`@@||example.org^$document` без дополнительных модификаторов — это псевдоним для `@@|||example.com^$elemhide,content,jsinject,urlblock,extension`
-
-Вес правила: базовый вес + специфические исключения, [категория 4](#priority-category-4) + два разрешённых типа контента (document и subdocument), [категория 2](#priority-category-2): `1 + 10000 * 4 + (50 + 50 / 2) = 40076`.
-
-**Пример 8**
-
-`*$script,domain=a.com,denyallow=x.com|y.com`
-
-Вес правила: базовый вес + разрешённый тип контента, [категория 2](#priority-category-2) + разрешённый домен, [категория 3](#priority-category-3) + отказ, [категория 1](#priority-category-1): `1 + (50 + 50/1) + (100 + 100 / 1) + 1 = 303`.
-
-**Пример 9**
-
-`||example.com^$all` (псевдоним для `||example.com^$document,subdocument,image,script,media и т.д. + $popup`)
-
-Вес правила: базовый вес + разрешённые типы контента, [категория 2](#priority-category-2): `1 + (50 + 50 / 12) = 55`.
+    Rule weight: base weight + popup ([category 1](#priority-category-1)) + allowed content types ([category 2](#priority-category-2)): `1 + 1 + (50 + 50/12) = 55`.
 
 ## Другие правила {#non-basic-rules}
 

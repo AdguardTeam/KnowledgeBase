@@ -2210,9 +2210,10 @@ Aliasy modifikátorů (`1p`, `3p` atd.) nejsou do těchto kategorií zahrnuty, n
 
 Při práci s negovanou doménou, aplikací, metodou nebo typem obsahu přidáváme **1 bod** za existenci samotného modifikátoru bez ohledu na množství negovaných domén nebo typů obsahu. Je to proto, že oblast působnosti tohoto pravidla je již nyní nekonečně široká. Jednoduše řečeno, zákazem více domén, typů obsahu, metod nebo aplikací se rozsah pravidla zmenší jen minimálně.
 
-#### Definované modifikátory typu obsahu, definované metody, definovaná záhlaví, $popup, speciální výjimky {#priority-category-2}
+#### Definované modifikátory typu obsahu, definované metody, definovaná záhlaví, $all, $popup, specifické výjimky {#priority-category-2}
 
 Všechny povolené typy obsahu:
+
 <!-- Please keep them sorted -->
 
 - [`$document`](#document-modifier),
@@ -2228,11 +2229,17 @@ Všechny povolené typy obsahu:
 - [`$websocket`](#websocket-modifier),
 - [`$xmlhttprequest`](#xmlhttprequest-modifier);
 
-Také zahrnuje pravidla, která implicitně přidávají modifikátor `$document`:
+Patří sem také pravidla, která implicitně přidávají všechny typy obsahu:
+
+- [`$all`](#all-modifier);
+
+Nebo pravidla, která implicitně přidávají modifikátor `$document`:
 
 - [`$popup`](#popup-modifier);
 
-Nebo speciální výjimky, které implicitně přidávají `$document,subdocument`:
+Nebo některé speciální výjimky, které implicitně přidávají `$document,subdocument`:
+
+<!-- Please keep them sorted -->
 
 - [`$content`](#content-modifier),
 - [`$elemhide`](#elemhide-modifier),
@@ -2247,7 +2254,11 @@ Nebo povolené metody skrze [`$method`](#method-modifier).
 
 Nebo pravidla s [`$header`](#header-modifier).
 
-Přítomnost jakýchkoli modifikátorů typu obsahu přidává `(50 + 50 / N)`, kde `N` je např. počet přítomných modifikátorů: `||example.com^$image,skript` přidá `50 + 50 / 2 = 50 + 25 = 75` k celkové váze pravidla. Do této kategorie patří i `$popup`, protože implicitně přidává modifikátor `$document`. Podobně specifické výjimky přidávají `$document,subdocument`.
+Přítomnost jakýchkoli modifikátorů typu obsahu přidává `(50 + 50 / N)`, kde `N` je např. počet přítomných modifikátorů: `||example.com^$image,skript` přidá `50 + 50 / 2 = 50 + 25 = 75` k celkové váze pravidla.
+
+Do této kategorie patří také `$all`, protože implicitně přidává všechny modifikátory typu obsahu, např. `$document,subdocument,image,script,media,<etc>` + `$popup`.
+
+Do této kategorie patří i `$popup`, protože implicitně přidává modifikátor `$document`. Podobně specifické výjimky přidávají `$document,subdocument`.
 
 Pokud je v pravidle s povolenými metodami modifikátor `$method`, přidává `(50 + 50 / N)`, kde `N` je počet povolených metod, např.: `||example.com^$method= GET|POST|PUT` přidává `50 + 50 / 3 = 50 + 16,6 = 67` k celkové váze pravidla.
 
@@ -2307,59 +2318,41 @@ Modifikátor [`$replace`](#replace-modifier) má přednost před všemi pravidly
 
 #### Příklady
 
-**Příklad 1**
+1. `||example.com^`
 
-`||example.com^`
+    Váha pravidla bez modifikátorů: `1`.
 
-Váha pravidla bez modifikátorů: `1`.
+1. `||example.com^$match-case`
 
-**Příklad 2**
+    Váha pravidla: základní + váha modifikátoru z [kategorie 1](#priority-category-1): `1 + 1 = 2`.
 
-`||example.com^$match-case`
+1. `||example.org^$removeparam=p`
 
-Váha pravidla: základní + váha modifikátoru z [kategorie 1](#priority-category-1): `1 + 1 = 2`.
+    Váha pravidla: základní váha + 0, protože $removeparam [není zahrnuto](#priority-category-extra) do výpočtu priority: `1 + 0 = 1`.
 
-**Příklad 3**
+1. `||example.org^$document,redirect=nooptext`
 
-`||example.org^$removeparam=p`
+    Váha pravidla: základní + povolený typ obsahu, [kategorie 3](#priority-category-3) + $redirect z [kategorie 6](#priority-category-6): `1 + (100 + 100 / 1) + 1000 = 1201`.
 
-Váha pravidla: základní váha + 0, protože $removeparam [není zahrnuto](#priority-category-extra) do výpočtu priority: `1 + 0 = 1`.
+1. `@@||example.org^$removeparam=p,document`
 
-**Příklad 4**
+    Váha pravidla: základní váha + pravidlo seznamu povolených [kategorie 5](#priority-category-5) + 0, protože $removeparam [není zapojeno](#priority-category-extra) do výpočtu priority + povolený typ obsahu [kategorie 2](#priority-category-2): `1 + 10000 + 0 + (50 + 50 / 1) = 10101`.
 
-`||example.org^$document,redirect=nooptext`
+1. `@@||example.com/ad/*$domain=example.org|example.net,important`
 
-Váha pravidla: základní + povolený typ obsahu, [kategorie 3](#priority-category-3) + $redirect z [kategorie 6](#priority-category-6): `1 + (100 + 100 / 1) + 1000 = 1201`.
+    Váha pravidla: základní váha + pravidlo seznamu povolených [kategorie 5](#priority-category-5) + důležité pravidlo [kategorie 7](#priority-category-7) + povolené domény [kategorie 3](#priority-category-3): `1 + 10000 + 1000000 + (100 + 100 / 2) = 1010152`.
 
-**Příklad 5**
+1. `@@||example.org^$document` bez dalších modifikátorů je aliasem pro `@@||example.com^$elemhide,content,jsinject,urlblock,extension`
 
-`@@||example.org^$removeparam=p,document`
+    Váha pravidla: základní váha + specifické výjimky, [kategorie 4](#priority-category-4) + dva povolené typy obsahu (dokument a subdokument) [kategorie 2](#priority-category-2): `1 + 10000 * 4 + (50 + 50 / 2) = 40076`.
 
-Váha pravidla: základní váha + pravidlo seznamu povolených [kategorie 5](#priority-category-5) + 0, protože $removeparam [není zapojeno](#priority-category-extra) do výpočtu priority + povolený typ obsahu [kategorie 2](#priority-category-2): `1 + 10000 + 0 + (50 + 50 / 1) = 10101`.
+1. `*$script,domain=a.com,denyallow=x.com|y.com`
 
-**Příklad 6**
+    Váha pravidla: základní váha + povolený typ obsahu [kategorie 2](#priority-category-2) + povolená doména, [kategorie 3](#priority-category-3) + denyallow [kategorie 1](#priority-category-1): `1 + (50 + 50/1) + (100 + 100 / 1) + 1 = 303`.
 
-`@@||example.com/ad/*$domain=example.org|example.net,important`
+1. `||example.com^$all` — alias na `||example.com^$document,subdocument,image,script,media,etc. + $popup`
 
-Váha pravidla: základní váha + pravidlo seznamu povolených [kategorie 5](#priority-category-5) + důležité pravidlo [kategorie 7](#priority-category-7) + povolené domény [kategorie 3](#priority-category-3): `1 + 10000 + 1000000 + (100 + 100 / 2) = 1010152`.
-
-**Příklad 7**
-
-`@@||example.org^$document` bez dalších modifikátorů je aliasem pro `@@||example.com^$elemhide,content,jsinject,urlblock,extension`
-
-Váha pravidla: základní váha + specifické výjimky, [kategorie 4](#priority-category-4) + dva povolené typy obsahu (dokument a subdokument) [kategorie 2](#priority-category-2): `1 + 10000 * 4 + (50 + 50 / 2) = 40076`.
-
-**Příklad 8**
-
-`*$script,domain=a.com,denyallow=x.com|y.com`
-
-Váha pravidla: základní váha + povolený typ obsahu [kategorie 2](#priority-category-2) + povolená doména, [kategorie 3](#priority-category-3) + denyallow [kategorie 1](#priority-category-1): `1 + (50 + 50/1) + (100 + 100 / 1) + 1 = 303`.
-
-**Příklad 9**
-
-`||example.com^$all` (alias to `||example.com^$document,subdocument,image,script,media,etc. + $popup`)
-
-Váha pravidla: základní + povolený typ obsahu, [kategorie 2](#priority-category-2): `1 + (50 + 50/12) = 55`.
+    Váha pravidla: základní váha + vyskakovací okno ([kategorie 1](#priority-category-1)) + povolené typy obsahu ([kategorie 2](#priority-category-2)): `1 + 1 + (50 + 50/12) = 55`.
 
 ## Ostatní pravidla {#non-basic-rules}
 
