@@ -41,7 +41,7 @@ This feature brings the authentication capabilities of the HTTP protocol to DNS,
 
 To enable this feature:
 
-1. In AdGuard DNS, go to *Server settings* → *Devices* → *Settings* and change the DNS server to the one with authentication. By clicking *Deny other protocols*, other protocol usage options will disappear, leaving only the DNS-over-HTTPS authentication enabled and preventing its use by third parties. Copy the generated address.
+1. In AdGuard DNS, go to *Server settings* → *Devices* → *Settings* and change the DNS server to the one with authentication. Clicking *Deny other protocols* will remove other protocol usage options, leaving only DNS-over-HTTPS authentication enabled and preventing its use by third parties. Copy the generated address.
 
 ![DNS-over-HTTPS with authentication](https://cdn.adtidy.org/content/release_notes/dns/v2-7/http-auth/http-auth-en.png)
 
