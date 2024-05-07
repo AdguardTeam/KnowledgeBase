@@ -37,7 +37,7 @@ In addition, at the bottom of the screen there is an option to add a custom DNS 
 
 #### HTTP basic authentication for DNS-over-HTTPS
 
-This feature brings the authentication capabilities of the HTTP protocol to DNS, which lacks built-in authentication. Authentication in DNS is helpful when you want to limit access to your custom DNS server to specific users.
+This feature brings the authentication capabilities of the HTTP protocol to DNS, which does not have built-in authentication. Authentication in DNS is useful if you want to restrict access to your custom DNS server to specific users.
 
 To enable this feature:
 
