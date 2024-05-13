@@ -2199,19 +2199,22 @@ There are three parts in this rule:
 If the `$urltransform` rule had beed applied to a request, it will be re-matched against the url filter again, because url text has been changed and we might want to block it.
 
 E.x. with the following rules:
+
 ```adblock
 ||example.com^$urltransform=/firstpath/secondpath/
 ||example.com/secondpath^
 ```
+
 the request to `https://example.com/firstpath` will be blocked before it is sent.
 
 Howether, `$urltransform` rules will **not be re-applied** in this case to avoid infinite recursion, e.x. with the following rules:
+
 ```adblock
 ||example.com/firstpath^$urltransform=/firstpath/secondpath/
 ||example.com/secondpath^$urltransform=/secondpath/firstpath/
 ```
-the request to `https://example.com/fisrtpath` will be transformed to `https://example.com/secondpath` and the second rule will not be applied.
 
+the request to `https://example.com/fisrtpath` will be transformed to `https://example.com/secondpath` and the second rule will not be applied.
 
 **Disabling `$urltransform` rules**
 
