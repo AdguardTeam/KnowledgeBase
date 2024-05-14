@@ -2194,9 +2194,9 @@ There are three parts in this rule:
 - Both rule 1 and 2 will be applied to all requests sent to `example.org`.
 - Rule 2 is disabled for requests matching `||example.org/page/`, **but rule 1 still works!**
 
-**Re-matching rules after transforming the url**
+**Re-matching rules after transforming the URL**
 
-If the `$urltransform` rule is applied to a request, all the rules will be re-evaluated against the new url.
+If the `$urltransform` rule is applied to a request, all the rules will be re-evaluated against the new URL.
 
 E.g. with the following rules:
 
