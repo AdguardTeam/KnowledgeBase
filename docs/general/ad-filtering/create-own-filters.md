@@ -975,7 +975,7 @@ The list of the available modifier options:
 
 :::note
 
-Blocking cookies and removing tracking parameters is achieved by using rules with [`$cookie`](#cookie-modifier), [`$urltransform`](#urltransform-modifier) and [`$removeparam`](#removeparam-modifier) modifiers. Exception rules with only `$stealth` modifier will not do those things. If you want to completely disable all Stealth Mode features for a given domain, you need to include all three modifiers: `@@||example.org^$stealth,removeparam,cookie`
+Blocking cookies and removing tracking parameters is achieved by using rules with the [`$cookie`](#cookie-modifier), [`$urltransform`](#urltransform-modifier) and [`$removeparam`](#removeparam-modifier) modifiers. Exception rules that contain only the `$stealth` modifier will not do these things. If you want to completely disable all Stealth mode features for a given domain, you must include all three modifiers: `@@||example.org^$stealth,removeparam,cookie`.
 
 :::
 
@@ -2144,20 +2144,20 @@ Rules with `$replace` modifier are supported by AdGuard for Windows, Mac, and An
 
 #### **`urltransform`** {#urltransform-modifier}
 
-`$urltransform` rules allow to modify the request url by replacing text matched by regular expression.
+The `$urltransform` rules allow you to modify the request URL by replacing the text matched by the regular expression.
 
 **Features**
 
-- `$urltransform` rules apply to any request url text.
-- `$urltransform` rules can also **modify the query part** of the url.
-- `$urltransform` will not be applied if original url get blocked by other rules.
-- `$urltransform` will be applied before `$removeparam` rule
+- `$urltransform` rules apply to any request URL text.
+- `$urltransform` rules can also **modify the query part** of the URL.
+- `$urltransform` will not be applied if the original URL is blocked by other rules.
+- `$urltransform` will be applied before `$removeparam` rules.
 
-`$urltransform` value can be empty in the case of exception rules.
+The `$urltransform` value can be empty for exception rules.
 
 **Multiple rules matching a single request**
 
-In case if multiple `$urltransform` rules match a single request, we will apply each of them. **The order is defined alphabetically.**
+If multiple `$urltransform` rules match a single request, we will apply each of them. **The order is defined alphabetically.**
 
 **Syntax**
 
@@ -2171,7 +2171,7 @@ urltransform = "/" regexp "/" replacement "/" modifiers
 - **`replacement`** — a string that will be used to replace the string corresponding to `regexp`.
 - **`modifiers`** — a regular expression flags. For example, `i` — insensitive search, or `s` — single-line mode.
 
-In the `$urltransform` value, two characters must be escaped: comma `,` and dollar sign `$`. Use backslash `\` for it. For example, an escaped comma looks like this: `\,`.
+In the `$urltransform` value, two characters must be escaped: the comma `,` and the dollar sign `$`. Use the backslash character `\` for this. For example, an escaped comma looks like this: `\,`.
 
 **Examples**
 
@@ -2225,13 +2225,13 @@ the request to `https://example.com/fisrtpath` will be transformed to `https://e
 
 :::caution Restrictions
 
-Rules with `$urltransform` modifier can be used [**only in trusted filters**](#trusted-filters).
+Rules with the `$urltransform` modifier can be used [**only in trusted filters**](#trusted-filters).
 
 :::
 
 :::info Compatibility
 
-Rules with the `$urltransform` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.15 or later**.
+Rules with the `$urltransform` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android **with CoreLibs version 1.15 or higher**.
 
 :::
 
