@@ -2196,7 +2196,7 @@ There are three parts in this rule:
 
 **Re-matching rules after transforming url**
 
-If the `$urltransform` rule had beed applied to a request, it will be re-matched against the url filter again, because url text has been changed and we might want to block it.
+If the `$urltransform` rule is applied to a request, all the rules will be re-evaluated against the new url.
 
 E.x. with the following rules:
 
