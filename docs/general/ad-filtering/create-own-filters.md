@@ -2194,11 +2194,11 @@ There are three parts in this rule:
 - Both rule 1 and 2 will be applied to all requests sent to `example.org`.
 - Rule 2 is disabled for requests matching `||example.org/page/`, **but rule 1 still works!**
 
-**Re-matching rules after transforming url**
+**Re-matching rules after transforming the url**
 
 If the `$urltransform` rule is applied to a request, all the rules will be re-evaluated against the new url.
 
-E.x. with the following rules:
+E.g. with the following rules:
 
 ```adblock
 ||example.com^$urltransform=/firstpath/secondpath/
@@ -2207,7 +2207,7 @@ E.x. with the following rules:
 
 the request to `https://example.com/firstpath` will be blocked before it is sent.
 
-However, `$urltransform` rules will **not be re-applied** in this case to avoid infinite recursion, e.x. with the following rules:
+However, `$urltransform` rules will **not be re-applied** in this case to avoid infinite recursion, e.g. with the following rules:
 
 ```adblock
 ||example.com/firstpath^$urltransform=/firstpath/secondpath/
