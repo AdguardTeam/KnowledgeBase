@@ -2207,7 +2207,7 @@ E.g. with the following rules:
 
 the request to `https://example.com/firstpath` will be blocked before it is sent.
 
-However, `$urltransform` rules will **not be re-applied** in this case to avoid infinite recursion, e.g. with the following rules:
+However, `$urltransform` rules will **not be re-applied** in this case to avoid infinite recursion, e.g., with the following rules:
 
 ```adblock
 ||example.com/firstpath^$urltransform=/firstpath/secondpath/
