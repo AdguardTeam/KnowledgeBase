@@ -2198,7 +2198,7 @@ There are three parts in this rule:
 
 If the `$urltransform` rule is applied to a request, all the rules will be re-evaluated against the new URL.
 
-E.g. with the following rules:
+E.g., with the following rules:
 
 ```adblock
 ||example.com^$urltransform=/firstpath/secondpath/
