@@ -15,7 +15,7 @@ This feature helps manage Internet access for specific apps installed on your de
 
 ![Firewall *mobile_border](https://cdn.adtidy.org/blog/new/gdn94firewall.png)
 
-#### Global firewall rules
+### Global firewall rules
 
 This section allows you to control Internet access for the entire device.
 
@@ -23,7 +23,7 @@ This section allows you to control Internet access for the entire device.
 
 These rules apply to all apps on your device unless you've set custom rules for them.
 
-#### Custom firewall rules
+### Custom firewall rules
 
 In this section, you can control Internet access for specific apps — restrict permissions for those that you don’t find trustworthy, or, on the contrary, unblock the ones you want to circumvent the global firewall rules.
 
@@ -42,3 +42,9 @@ In this section, you can control Internet access for specific apps — restrict 
 1. If you need to block a specific type of connection, toggle the switch to the left. If you want to allow it, leave the switch enabled. **Custom rules override global ones**: any changes you make in *Global firewall rules* will not affect this app.
 
 To delete a rule or app from *Custom rules*, swipe it to the left.
+
+### Notifications
+
+If enabled, this fature will notify you when any of the apps tries to break one of the Firewall rules set for this app (for example, to access mobile data when it’s not allowed). You can disable and enable notifications as a whole or on the app-by-app basis.
+
+Tap on the notification to access the app’s Firewall settings or disable all Firewall rules for that app by tapping the corresponding button in the notification. Note that if multiple notifications for several apps would be shown, they will be bundled into a single one instead.
