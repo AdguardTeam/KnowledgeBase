@@ -96,7 +96,7 @@ If this setting is enabled, AdGuard will test DNS upstreams before adding or upd
 
 #### Filter secure DNS
 
-If this setting is on, AdGuard will apply all enabled DNS filters and DNS user rules to encrypted DNS-over-HTTPS (DoH) traffic, and not just to plain DNS. DoH traffic mostly comes from Chrome and other browsers that have a “Secure DNS” setting (or similar). You can use the “Filter secure DNS” feature in two different modes:
+If this setting is on, AdGuard will apply all enabled DNS filters and DNS user rules to encrypted DNS-over-HTTPS (DoH) traffic and not only to plain DNS. DoH traffic mostly comes from Chrome and other browsers that have a *Secure DNS* (or similar) setting. You can use *Filter secure DNS* in two different modes:
 
 - **Filter on the fly**. In this mode, AdGuard applies all enabled DNS filters and DNS user rules to DoH traffic but doesn’t redirect it to the local DNS proxy. If a DNS server is specified in the browser’s settings, this server will handle the DoH traffic for this browser
 
