@@ -9,7 +9,7 @@ This article is about AdGuard for Mac, a multifunctional ad blocker that protect
 
 :::
 
-If you have Content Restrictions enabled on your Mac, AdGuard will stop web pages from loading. To check if Content Restrictions are active:
+If you have Content Restrictions enabled in *Screen Time* while AdGuard is on, you may experience problems loading web pages. To check if Content Restrictions are active:
 
 1. Go to System Settings → Screen Time → Content & Privacy → Content Restrictions
 
