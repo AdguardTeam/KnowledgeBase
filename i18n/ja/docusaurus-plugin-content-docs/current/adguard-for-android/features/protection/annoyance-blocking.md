@@ -1,16 +1,16 @@
 ---
-title: Annoyance blocking
+title: 迷惑要素ブロック
 sidebar_position: 3
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Android」について書いています。 デバイス全体を保護するこのアプリは[こちらからダウンロード](https://agrd.io/download-kb-adblock)できます。
 
 :::
 
-The Tracking protection module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Annoyance blocking_.
+この機能は、「AdGuardによる保護」タブ（画面下部の左から2番目の盾アイコン）をタップ → 「迷惑要素ブロック」にあります。
 
-This feature is based on AdGuard's annoyance filters and allows you to block popups, online assistant windows, cookie notifications, prompts to download mobile apps, and similar annoyances that aren't ads but still detract from your online experience. [Learn more about annoyance filters](/general/ad-filtering/adguard-filters/#adguard-filters)
+この機能は、AdGuardの迷惑要素フィルタをベースにしており、ポップアップ、オンライン・アシスタント・ウィンドウ、Cookie使用同意通知、モバイルアプリのダウンロードを促すプロンプトなど、広告でなくてもネット閲覧の邪魔をする迷惑要素をブロックしてくれます。 [迷惑要素フィルタについてもっと読む](/general/ad-filtering/adguard-filters/#adguard-filters)
 
-![Annoyance blocking \*mobile\_border](https://cdn.adtidy.org/blog/new/lwujvannoyance.png)
+![迷惑要素ブロック \*mobile\_border](https://cdn.adtidy.org/blog/new/sibyggScreenshot_20230621-163719_AdGuard.jpg)

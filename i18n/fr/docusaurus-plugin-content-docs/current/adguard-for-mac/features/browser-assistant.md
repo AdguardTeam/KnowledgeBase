@@ -1,50 +1,50 @@
 ---
-title: Browser Assistant
+title: Assistant de navigateur
 sidebar_position: 8
 ---
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Cet article parle de AdGuard pour Mac, un bloqueur de contenus multifonctionnel qui protège votre appareil au niveau du système. Pour voir comment il fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-AdGuard Browser Assistant allows you to manage AdGuard protection directly from your browser.
+L'Assistant de navigateur AdGuard vous permet de gérer la protection AdGuard directement depuis votre navigateur.
 
-![The Assistant window \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_window.png)
+![L'écran de l'assistant \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_window.png)
 
 ## Comment ça marche
 
-AdGuard Browser Assistant is a browser extension. It allows you to quickly manage the AdGuard app:
+L'Assistant AdGuard est une extension de navigateur. Elle facilite la gestion rapide de l'application AdGuard :
 
-- Enable or disable protection for a specific website (a toggle under the website name)
-- Pause protection for 30 seconds
-- Disable protection (the pause icon in the upper right corner)
-- Manually block an ad
-- Open the filtering log
-- Report incorrect blocking
-- Open AdGuard settings
-- View website certificate and manage HTTPS filtering (the lock icon next to the website name)
+- Activez ou désactivez la protection d'un site web spécifique ( voyez la bascule sous le nom du site web)
+- Interrompez la protection pendant 30 secondes
+- Désactivez la protection (l'icône de pause dans le coin supérieur droit)
+- Bloquez une annonce manuellement
+- Ouvrez le journal de filtrage
+- Signalez un blocage incorrect
+- Ouvrez les paramètres d'AdGuard
+- Affichez le certificat du site web et gérez le filtrage HTTPS (l'icône du cadenas à côté du nom du site web)
 
 ## Comment installer
 
 When you install AdGuard for Mac, you will be prompted to install Browser Assistant for your default browser. If you skip this step, you can install it later.
 
-**From settings**:
+**Depuis les paramètres** :
 
 1. Open the AdGuard menu.
 2. Click the gear icon and select _Preferences_.
 3. Switch to the _Assistant_ tab.
 4. Click _Get the Extension_ next to your default browser.
-5. Install Assistant from your browser’s extension store.
+5. Installez l'Assistant à partir de la boutique d'extensions de votre navigateur.
 
-![The Assistant tab](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant.png)
+![L'onglet de l'assistant](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant.png)
 
-**From the website**:
+**Depuis le site web** :
 
 1. Open the [Assistant page](https://adguard.com/adguard-assistant/overview.html).
 2. Under your browser name, select _Install_.
-3. Install Assistant from your browser’s extension store.
+3. Installez l'Assistant à partir de la boutique d'extensions de votre navigateur.
 
 :::note
 
@@ -58,6 +58,6 @@ The legacy Assistant is the previous version of AdGuard Browser Assistant. It’
 
 - It has fewer features than the extension version.
 - You have to wait for the userscript to be inserted into a webpage — sometimes it doesn’t load immediately.
-- You can’t hide the Assistant icon on the page.
+- Vous ne pouvez pas masquer l'icône de l'Assistant sur la page.
 
-We recommend that you use the legacy Assistant only if the new Assistant is not available.
+Nous vous recommandons d'utiliser l'ancien Assistant uniquement si le nouvel Assistant n'est pas disponible.

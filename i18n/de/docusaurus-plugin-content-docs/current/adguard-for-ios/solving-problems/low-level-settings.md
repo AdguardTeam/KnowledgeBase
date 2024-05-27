@@ -17,7 +17,7 @@ Das Ändern von *Low-Level-Einstellungen* kann Probleme mit der Leistung von AdG
 
 :::
 
-To go to *Low-level settings*, tap the gear icon at the bottom right of the screen to open *Settings*. Wählen Sie den Bereich *Allgemein* und sktivieren Sie dann den Schalter *Erweiterter Modus*, woraufhin der Bereich *Erweiterte Einstellungen* angezeigt wird. Tippen Sie auf *Erweiterte Einstellungen*, um den Bereich *Low-Level-Einstellungen* zu erreichen.
+Um die *Low-Level-Einstellungen* aufzurufen, tippen Sie auf das Zahnradsymbol unten rechts auf dem Bildschirm, um die *Einstellungen* zu öffnen. Wählen Sie den Bereich *Allgemein* und sktivieren Sie dann den Schalter *Erweiterter Modus*, woraufhin der Bereich *Erweiterte Einstellungen* angezeigt wird. Tippen Sie auf *Erweiterte Einstellungen*, um den Bereich *Low-Level-Einstellungen* zu erreichen.
 
 ## Low-Level-Einstellungen
 
@@ -27,7 +27,7 @@ Es gibt zwei Haupttypen von Tunneln: *Split-Tunnel* und *Full-Tunnel*. Der *Spli
 
 Es gibt eine Besonderheit des *Split-Tunnel*-Modus: Wenn der DNS-Proxy nicht gut funktioniert, z. B. wenn die Antwort vom AdGuard-DNS-Server nicht rechtzeitig zurückkommt, wird iOS ihn „umgehen” und den Datenverkehr über den DNS-Server umleiten, der in den iOS-Einstellungen angegeben ist. Während dieser Zeit wird keine Werbung blockiert und der DNS-Verkehr nicht verschlüsselt.
 
-Im *Full-Tunnel*-Modus wird nur der in den AdGuard-Einstellungen angegebene DNS-Server verwendet. If it does not respond, the Internet will simply not work. Enabled *Full-Tunnel* mode may cause the incorrect performance of some programs (for instance, Facetime), and lead to problems with app updates.
+Im *Full-Tunnel*-Modus wird nur der in den AdGuard-Einstellungen angegebene DNS-Server verwendet. Wenn der Server nicht reagiert, funktioniert das Internet einfach nicht. Der aktivierte *Full-Tunnel*-Modus kann die Leistung einiger Programme (z. B. Facetime) beeinträchtigen und zu Problemen bei App-Updates führen.
 
 Standardmäßig verwendet AdGuard den Modus *Split-Tunnel* als stabilste Option.
 
@@ -37,10 +37,10 @@ Es gibt auch einen zusätzlichen Modus namens *Full-Tunnel (ohne VPN-Symbol)*. D
 
 In diesem Modus können Sie auswählen, wie AdGuard auf DNS-Anfragen reagieren soll, die blockiert werden sollen:
 
-- Default — respond with zero IP address when blocked by adblock-style rules; respond with the IP address specified in the rule when blocked by /etc/hosts-style rules
+- Standard — mit der IP-Adresse Null antworten, wenn durch adblock-ähnliche Regeln blockiert; mit der in der Regel angegebenen IP-Adresse antworten, wenn durch /etc/hosts-ähnliche Regeln blockiert
 - REFUSED — mit REFUSED-Code antworten
 - NXDOMAIN — mit NXDOMAIN-Code antworten
-- Unspecified IP — respond with zero IP address
+- Unspezifizierte IP — mit IP-Adresse Null antworten
 - Benutzerdefinierte IP — mit einer manuell festgelegten IP-Adresse antworten
 
 ### IPv6 sperren

@@ -22,7 +22,7 @@ Im Abschnitt _Schutz_ können Sie ganz einfach zwischen zwei Apps wechseln.
 Wenn Sie zuerst AdGuard VPN installiert haben und sich erst dann für AdGuard Werbeblocker entschieden haben, befolgen Sie diese Schritte, um die beiden Apps zusammen zu verwenden:
 
 1. Öffnen Sie AdGuard VPN für iOS und wählen Sie ⚙ _Einstellungen_ in der unteren rechten Ecke des Bildschirms.
-2. Go to _App settings_ and select _Operating mode_.
+2. Öffnen Sie die _App-Einstellungen_ und wählen Sie _Betriebsmodus_.
 3. Schalten Sie den Modus von VPN auf „Integriert“ um.
 
 :::note

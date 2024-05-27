@@ -5,27 +5,27 @@ sidebar_position: 5
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artigo é sobre o AdGuard para iOS, um bloqueador de anúncios multifuncional que protege seu dispositivo no nível do sistema. Para ver como funciona, [baixe o aplicativo AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-### Assistant {#assistant}
+### Assistente {#assistant}
 
 ![Safari Assistant \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/assistant_en.jpeg)
 
-Assistant is a tool that helps you manage filtering in Safari right from the browser without switching back to the app.
+Assistente é uma ferramenta que ajuda você a gerenciar a filtragem no Safari diretamente do navegador sem precisar voltar para o aplicativo.
 
-To see it, do the following: open Safari and tap the arrow-in-a-box symbol. Then scroll down to AdGuard/AdGuard Pro (depending on the app you use) and tap it to fetch a window with several options:
+Para vê-lo, faça o seguinte: abra o Safari e toque no símbolo de seta. Em seguida, role para baixo até AdGuard/AdGuard Pro (dependendo do aplicativo que você usa) e toque nele para abrir uma janela com várias opções:
 
-- **Enable on this page.**
-  Turn the switch off to add the current domain to the Allowlist.
-- **Block an element on this page.**
-  Tap it to enter the 'Element blocking' mode: choose any element on the page, adjust the size by tapping '+' or '–', preview if necessary and then tap the checkmark icon to confirm. The selected element will be hidden from the page and a corresponding rule will be added to User rules. Remove or disable it to revert the change.
-- **Report an issue on this page.**
-  Opens a web reporting tool that will help you send a report to our support team in just a few taps. Use it if you noticed a missed ad or an incorrect blocking on the page.
+- **Ativar nesta página.**
+  Desligue o botão para adicionar o domínio atual à lista de permissões.
+- **Bloquear um elemento nesta página.**
+  Toque nele para entrar no modo "Bloqueio de elemento": escolha qualquer elemento na página, ajuste o tamanho tocando em "+" ou "–", visualize se necessário e toque no ícone da marca de seleção para confirmar. O elemento selecionado ficará oculto na página e uma regra correspondente será adicionada às Regras do usuário. Remova ou desative-o para reverter a alteração.
+- **Relatar um problema nesta página.**
+  Abre uma ferramenta de relatórios na web que ajudará você a enviar um relatório para nossa equipe de suporte com apenas alguns toques. Use-o se notar um anúncio perdido ou um bloqueio incorreto na página.
 
 :::tip
 
-On iOS 15 devices, the Assistant features are available through [AdGuard Safari Web Extension](/adguard-for-ios/web-extension), which enhances the capabilities of AdGuard for iOS and allows you to take advantage of iOS 15. With this web extension, AdGuard can apply advanced filter rules and, as a result, block more ads.
+Em dispositivos iOS 15, os recursos do Assistente estão disponíveis por meio do [AdGuard Safari Web Extension](/adguard-for-ios/web-extension), que aprimora os recursos do AdGuard para iOS e permite que você aproveite as vantagens do iOS 15. Com esta extensão web, o AdGuard pode aplicar regras de filtro avançadas e, como resultado, bloquear mais anúncios.
 
 :::

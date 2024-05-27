@@ -1,34 +1,34 @@
 ---
-title: Activity and statistics
+title: Atividade e estatísticas
 sidebar_position: 4
 ---
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artigo é sobre o AdGuard para iOS, um bloqueador de anúncios multifuncional que protege seu dispositivo no nível do sistema. Para ver como funciona, [baixe o aplicativo AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-_Activity_ screen is the 'information hub' of AdGuard's DNS protection suite. You can quickswitch to it by tapping the third icon in the bottom bar. N.b. this screen is only seen when DNS protection is enabled.
+A tela _Atividade_ é o "centro de informações" do conjunto de proteção DNS do AdGuard. Você pode alternar rapidamente para ele tocando no terceiro ícone na barra inferior. Nota: esta tela só é vista quando a proteção DNS está habilitada.
 
-![Activity screen \*mobile\_border](https://cdn.adtidy.org/content/github/ad_blocker/ios/activity.png)
+![Tela de atividade \*mobile\_border](https://cdn.adtidy.org/content/github/ad_blocker/ios/activity.png)
 
-This is where AdGuard displays statistics about the device's DNS requests, such as total number, number of blocked requests and data saved by blocking them. AdGuard can display the statistics for a day, a week, a month or in total.
+É aqui que o AdGuard exibe estatísticas sobre as solicitações de DNS do dispositivo, como número total, quantidade de solicitações bloqueadas e dados salvos ao bloqueá-las. O AdGuard pode exibir as estatísticas de um dia, uma semana, um mês ou o total.
 
-Below is the _Recent activity_ feed. AdGuard stores the last 1500 DNS requests that have originated on your device and shows their attributes such as protocol type and target domain.
+Abaixo está o feed de _Atividade recente_. O AdGuard armazena as últimas 1.500 solicitações de DNS originadas em seu dispositivo e mostra seus atributos, como tipo de protocolo e domínio de destino.
 
 :::note
 
-AdGuard does not send this information anywhere. It is 100% local and does not leave your device.
+O AdGuard não envia essas informações para lugar nenhum. É 100% local e não sai do seu dispositivo.
 
 :::
 
-Tap any request to view more details. There will also be buttons to add the request to Blocklist/Allowlist in one tap.
+Toque em qualquer solicitação para ver mais detalhes. Também haverá botões para adicionar a solicitação à lista de bloqueios/lista de permissões com um toque.
 
-![Request details \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/request_info_en.jpeg)
+![Detalhes da solicitação \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/request_info_en.jpeg)
 
-Above the activity feed, there are _Most active_ and _Most blocked_ companies. Tap each to see data based on the last 1500 requests.
+Acima do feed de atividades, estão as empresas _Mais ativas_ e _Mais bloqueadas_. Toque em cada um para ver os dados com base nas últimas 1.500 solicitações.
 
-### Statistics {#statistics}
+### Estatísticas {#statistics}
 
-Aside from the _Activity_ screen, you can find global statistics on the home screen and in widgets.
+Além da tela _Atividade_, você pode encontrar estatísticas globais na tela inicial e em widgets.

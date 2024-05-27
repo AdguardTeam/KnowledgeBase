@@ -73,34 +73,34 @@ sidebar_position: 2
 
 Если по какой-либо причине обычное удаление не работает, вы можете попробовать продвинутый способ. Прежде всего, вам нужно [загрузить инструмент удаления](https://cdn.adtidy.org/distr/windows/Uninstall_Utility.zip), созданный нашими разработчиками. Распакуйте скачанный архив в любую папку на компьютере, запустите файл **AdGuard_Uninstall_Utility.exe** и разрешите приложению вносить изменения на вашем устройстве. Затем следуйте инструкции ниже:
 
-- Select *AdGuard Ad Blocker* and *Standard* uninstall type, then click *Uninstall*.
+- Выберите *Блокировщик рекламы AdGuard* и *Стандартный* тип удаления, затем нажмите *Удалить*.
 
 ![Стандартное удаление *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_standard.jpg)
 
-- Click *OK* once the warning window pops up:
+- Нажмите *OK*, как только появится окно с предупреждением:
 
-![Standard uninstall warning *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
+![Предупреждение о стандартном удалении *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
 
-- Wait until uninstall is finished — there will be a phrase **Uninstall complete** and a prompt to restart your computer:
+- Подождите, пока завершится удаление — появится фраза **Удаление завершено** и предложение перезагрузить компьютер:
 
 ![Удаление завершено *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_standard_complete.jpg)
 
 :::caution
 
-Follow the next steps only if performing the first two steps wasn’t enough for some reason. We strongly suggest contacting our support before using steps 3-4 of advanced uninstall instruction.
+Следующие шаги выполняйте только в том случае, если первых двух шагов по каким-то причинам оказалось недостаточно. Мы настоятельно рекомендуем связаться с нашей командой поддержки, прежде чем использовать шаги 3–4 расширенной инструкции по удалению.
 
 :::
 
-- Select *AdGuard Ad Blocker* and *Extended* uninstall type, then click *Uninstall*. Clcik *Yes, continue* in the window prompt.
+- Выберите *Блокировщик рекламы AdGuard* и *Расширенный* тип удаления, затем нажмите *Удалить*. Clcik *Yes, continue* in the window prompt.
 
-![Extended uninstall *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended.jpg)
+![Расширенное удаление *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended.jpg)
 
-- Click *OK* once the warning window pops up:
+- Нажмите *OK*, как только появится окно с предупреждением:
 
-![Extended uninstall warning *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
+![Предупреждение о расширенном удалении *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
 
-- Wait until uninstall is finished — there will be a phrase **Uninstall complete** and a prompt to restart your computer:
+- Подождите, пока завершится удаление — появится фраза **Удаление завершено** и предложение перезагрузить компьютер:
 
-![Extended uninstall finished *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_complete.jpg)
+![Расширенное удаление завершено *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_complete.jpg)
 
 AdGuard успешно удалён

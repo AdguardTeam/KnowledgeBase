@@ -1,36 +1,36 @@
 ---
-title: Network
+title: Réseau
 sidebar_position: 9
 ---
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Cet article parle de AdGuard pour Mac, un bloqueur de contenus multifonctionnel qui protège votre appareil au niveau du système. Pour voir comment il fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 ## Général
 
-![Network](https://cdn.adtidy.org/content/kb/ad_blocker/mac/network.png)
+![Réseau](https://cdn.adtidy.org/content/kb/ad_blocker/mac/network.png)
 
-### Automatically filter applications
+### Filtrage automatique des applications
 
-By default, AdGuard blocks ads and trackers in most browsers ([Tor Browser is an exception](/adguard-for-mac/solving-problems/tor-filtering)). This setting allows AdGuard to block ads in apps as well.
+Par défaut, AdGuard bloque les annonces et les traqueurs dans la plupart des navigateurs ([Tor Browser est une exception](/adguard-for-mac/solving-problems/tor-filtering)). Ce paramètre permet également à AdGuard de bloquer les publicités dans les applications.
 
-To manage filtered apps, click _Applications_.
+Pour gérer les applications filtrées, cliquez sur _Applications_.
 
-### Filter HTTPS protocol
+### Filtrage du protocole HTTPS
 
-This setting allows AdGuard to filter the secure HTTPS protocol, which is currently used by most websites and apps. By default, websites with potentially sensitive information, such as banking services, are not filtered. To manage HTTPS exclusions, click _Exclusions_.
+Ce paramètre permet à AdGuard de filtrer le protocole sécurisé HTTPS, actuellement utilisé par la plupart des sites web et des applications. Par défaut, les sites web contenant des informations potentiellement sensibles, tels que les services bancaires, ne sont pas filtrés. Pour gérer les exclusions HTTPS, cliquez sur _Exclusions_.
 
-By default, AdGuard doesn’t filter websites with Extended Validation (EV) certificates. If needed, you can enable the _Filter websites with EV certificates_ option.
+Par défaut, AdGuard ne filtre pas les sites web avec des certificats de Validation Étendue (EV). Si nécessaire, vous pouvez activer l'option _Filtrer les sites web avec des certificats EV_.
 
-## Outbound proxy
+## Proxy Sortant
 
 You can set up AdGuard to route all your device’s traffic through your proxy server.
 
-## HTTP proxy
+## Proxy HTTP
 
 You can use AdGuard as an HTTP proxy server. This will allow you to filter traffic on other devices connected to the proxy.
 
-Make sure your Mac and your other device are connected to the same network and enter the proxy port on the device you want to route through your proxy server (usually in the network settings). To filter HTTPS traffic as well, [transfer AdGuard’s proxy certificate](http://local.adguard.org/cert) to this device. [Learn more about installing a proxy certificate](/guides/proxy-certificate)
+Make sure your Mac and your other device are connected to the same network and enter the proxy port on the device you want to route through your proxy server (usually in the network settings). To filter HTTPS traffic as well, [transfer AdGuard’s proxy certificate](http://local.adguard.org/cert) to this device. [Apprenez plus sur l'installation d'un certificat proxy](/guides/proxy-certificate)

@@ -5,36 +5,36 @@ sidebar_position: 2
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
+Dieser Artikel behandelt AdGuard für Mac, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
 
 :::
 
-## How to open app settings
+## So öffnen Sie die App-Einstellungen
 
-To configure AdGuard for Mac, click the gear icon in the upper right corner of the main window and select _Preferences_.
+Um AdGuard für Mac zu konfigurieren, klicken Sie auf das Zahnradsymbol in der oberen rechten Ecke des Hauptfensters und wählen Sie _Einstellungen_.
 
-![Main window \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/main.png)
+![Hauptfenster \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/main.png)
 
 ## Allgemein
 
-![General](https://cdn.adtidy.org/content/kb/ad_blocker/mac/general.png)
+![Allgemein](https://cdn.adtidy.org/content/kb/ad_blocker/mac/general.png)
 
-### Do not block search ads and website self-promoting ads
+### Werbung in Suchanzeigen und Eigenwerbung der Websites nicht blockieren
 
-This feature prevents AdGuard from blocking [search ads and self-promotions on websites](/general/ad-filtering/search-ads). This can be useful, for example, when you’re shopping online and want to see discounts offered by some websites. Instead of adding these websites to the allowlist, you can exclude self-promotions and search ads from filtering.
+Diese Funktion verhindert, dass AdGuard [Suchanzeigen und Eigenwerbung auf Websites](/general/ad-filtering/search-ads) blockiert. Dies kann zum Beispiel nützlich sein, wenn Sie online einkaufen und die von einigen Websites angebotenen Rabatte sehen möchten. Anstatt diese Websites zur Freigabeliste hinzuzufügen, können Sie Eigenwerbung und Suchanzeigen von der Filterung ausschließen.
 
-### Activate language-specific filters automatically
+### Sprachspezifische Filter automatisch aktivieren
 
-This feature detects the language of the website you’re visiting and automatically activates appropriate filters for more accurate ad blocking. This is especially helpful if you change languages frequently.
+Diese Funktion erkennt die Sprache der Website, die Sie besuchen, und aktiviert automatisch die entsprechenden Filter für eine genauere Werbeblockierung. Dies ist besonders hilfreich, wenn Sie häufig die Sprache wechseln.
 
-### Launch AdGuard at login
+### AdGuard beim Anmelden starten
 
-This feature automatically launches AdGuard automatically after you restart your computer. This helps keep AdGuard protection active without having to manually open the app.
+Diese Funktion startet AdGuard automatisch, nachdem Sie Ihren Computer neu gestartet haben. So bleibt der AdGuard-Schutz aktiv, ohne dass Sie die App manuell öffnen müssen.
 
-### Hide menu bar icon
+### Menüleistensymbol ausblenden
 
-This feature hides AdGuard’s icon from the menu bar but keeps AdGuard running in the background. If you want to disable AdGuard completely, click _Quit AdGuard_ in the main window menu.
+Mit dieser Funktion wird das AdGuard-Symbol aus der Menüleiste ausgeblendet, aber AdGuard läuft weiterhin im Hintergrund. Wenn Sie AdGuard vollständig deaktivieren möchten, klicken Sie im Menü des Hauptfensters auf _AdGuard beenden_.
 
-### Allowlist
+### Freigabeliste
 
-Websites added to this list aren’t filtered. You can also access allowlisted websites from _User rules_.
+Die zu dieser Liste hinzugefügten Websites werden nicht gefiltert. Sie können auch über _Benutzerregeln_ auf Websites zugreifen, die auf der Freigabeliste stehen.

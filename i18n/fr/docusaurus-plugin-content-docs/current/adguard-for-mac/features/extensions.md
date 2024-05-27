@@ -5,7 +5,7 @@ sidebar_position: 8
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Cet article parle de AdGuard pour Mac, un bloqueur de contenus multifonctionnel qui protège votre appareil au niveau du système. Pour voir comment il fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -20,11 +20,11 @@ Some userscripts are pre-installed, others can be installed manually.
 This userscript allows you to manage AdGuard protection directly from your browser. While the [new Assistant](/adguard-for-mac/features/browser-assistant) is a browser extension that can be installed from your browser’s store, the legacy Assistant is a userscript that doesn’t require additional installation. Some features are common to both assistants:
 
 - Enable or disable protection for a specific website
-- Pause protection for 30 seconds
-- Manually block an ad
-- Report incorrect blocking
+- Interrompez la protection pendant 30 secondes
+- Bloquez une annonce manuellement
+- Signalez un blocage incorrect
 
-However, the new Assistant is more advanced. It also allows you to manage AdGuard protection for all websites, check the website’s certificate, manage HTTPS filtering, and open the filtering log or the app’s settings. We recommend that you use the legacy Assistant only if the new Assistant is not available.
+However, the new Assistant is more advanced. It also allows you to manage AdGuard protection for all websites, check the website’s certificate, manage HTTPS filtering, and open the filtering log or the app’s settings. Nous vous recommandons d'utiliser l'ancien Assistant uniquement si le nouvel Assistant n'est pas disponible.
 
 ## AdGuard Extra
 

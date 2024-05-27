@@ -1,16 +1,16 @@
 ---
-title: Rooted devices
+title: 有 Root 权限的设备
 sidebar_position: 7
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。 要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
-Due to security measures of the Android OS, some AdGuard features are only available on rooted devices. Here's the list of them:
+由于 Android 操作系统的安全措施，AdGuard 的一些功能只能在有 Root 权限的设备上使用。 以下是具体列表：
 
-- **HTTPS filtering in most apps** requires [installing a CA certificate into the system store](/adguard-for-android/features/settings#security-certificates), as most apps do not trust certificates in the user store. Installing a certificate into the system store is only possible on rooted devices
-- The [**Automatic proxy** routing mode](/adguard-for-android/features/settings#routing-mode) requires root access due to Android's restrictions on system-wide traffic filtering
-- The [**Manual proxy** routing mode](/adguard-for-android/features/settings#routing-mode) requires root access on Android 10 and above as it's no longer possible to determine the name of the app associated with a connection filtered by AdGuard
+- 大多数应用程序中的「**HTTPS 过滤**」需要将 [CA 证书安装到系统存储](/adguard-for-android/features/settings#security-certificates)上，因为大多数应用程序不信任用户存储中的证书。 只有在 Root 设备上才能将证书安装到系统存储区。
+- [「**自动代理**」路由模式](/adguard-for-android/features/settings#routing-mode)需要 Root 权限，因为 Android 对系统范围的流量过滤有限制。
+- [「**手动代理**」路由模式](/adguard-for-android/features/settings#routing-mode)在 Android 10 及以上版本需要 Root 权限，因为不再可能确定与 AdGuard 过滤的连接相关联的应用程序的名称。

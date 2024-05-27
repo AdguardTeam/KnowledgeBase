@@ -1,54 +1,54 @@
 ---
-title: Safari protection
+title: Protection Safari
 sidebar_position: 1
 ---
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Cet article parle de AdGuard pour iOS, un bloqueur de contenus multifonctionnel qui protège votre appareil au niveau du système. Pour voir comment cela fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-### Content blockers {#content-blockers}
+### Bloqueurs de contenu {#content-blockers}
 
-Content blockers serve as 'containers' for filtering rules that do the actual job of blocking ads and tracking. AdGuard for iOS contains six content blockers: General, Privacy, Social, Security, Custom, and Other. Previously Apple only allowed each content blocker to contain a maximum of 50K filtering rules, but with iOS 15 release the upper limit has moved to 150K rules.
+Les bloqueurs de contenu servent de « conteneurs » pour les règles de filtrage qui effectuent le véritable travail de blocage des publicités et de suivi. AdGuard pour iOS contient six bloqueurs de contenu : Général, Confidentialité, Social, Sécurité, Personnalisé et Autre. Auparavant, Apple n'autorisait chaque bloqueur de contenu qu'à contenir un maximum de 50 000 règles de filtrage, mais avec la sortie d'iOS 15, la limite supérieure est passée à 150 000 règles.
 
-All content blockers, their statuses, which thematic filters they currently include, and a total number of used filtering rules can be found on the respective screen in _Advanced settings_ (tap the gear icon at the bottom right → _General_ → _Advanced settings_ → _Content blockers_).
+Tous les bloqueurs de contenu, leur état, les filtres thématiques qu'ils incluent actuellement et le nombre total de règles de filtrage utilisées peuvent être consultés sur l'écran correspondant dans les _Paramètres avancés_ (appuyez sur l'icône en forme de roue dentée en bas à droite → _Général_ → _Paramètres avancés_ → _Bloqueurs de contenu_).
 
-![Content blockers \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/content_blockers_en.jpeg)
+![Bloqueurs de contenu \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/content_blockers_en.jpeg)
 
 :::tip
 
-Keep all content blockers enabled for the best filtering quality.
+Gardez tous les bloqueurs de contenu activés pour une qualité de filtrage optimale.
 
 :::
 
-### Filters {#filters}
+### Filtres {#filters}
 
-Content blockers' work is based on filters, also sometimes referred to as filter lists. Each filter is a list of filtering rules. If you have an enabled ad blocker when browsing, it constantly checks the visited pages and elements on them against these filtering rules, and blocks anything that matches. Rules are developed to block ads, trackers, and more.
+Le travail des bloqueurs de contenu est basé sur des filtres, parfois également appelés listes de filtres. Chaque filtre est une liste de règles de filtrage. Si vous disposez d'un bloqueur de publicités activé lors de la navigation, il vérifie en permanence les pages visitées et les éléments qui s'y trouvent par rapport à ces règles de filtrage et bloque tout ce qui correspond. Des règles sont développées pour bloquer les publicités, les trackers et bien plus encore.
 
-All filters are grouped into thematic categories. To see the full list of these categories (not to be confused with content blockers), open the _Protection_ section by tapping the shield icon, then go to _Safari protection_ → _Filters_.
+Tous les filtres sont regroupés en catégories thématiques. Pour voir la liste complète de ces catégories (à ne pas confondre avec les bloqueurs de contenu), ouvrez la section _Protection_ en appuyant sur l'icône en forme de bouclier, puis accédez à _Protection Safari_ → _Filtres_.
 
-![Filter groups \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/filters_group_en.jpeg)
+![Groupes de filtres \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/filters_group_en.jpeg)
 
-There are eight of them, each category unites several filters that serve and share a common purpose, i.e. blocking ads, social media widgets, cookie notices, protecting the user from online scams. To decide which filters suit your needs, read their descriptions and navigate by the labels (`ads`, `privacy`, `recommended`, etc.).
+Il y en a huit, chaque catégorie regroupe plusieurs filtres qui servent et partagent un objectif commun, à savoir le blocage des publicités, les widgets de réseaux sociaux, les notifications de cookies, la protection de l'utilisateur contre les escroqueries en ligne. Pour décider quels filtres répondent à vos besoins, lisez leurs descriptions et naviguez selon les étiquettes (« annonces », « confidentialité », « recommandé », etc.).
 
 :::note
 
-More enabled filters does not guarantee that there will be less ads. A large number of various filters enabled simultaneously reduces the quality of ad blocking.
+Un plus grand nombre de filtres activés ne garantit pas qu'il y aura moins de publicités. Un grand nombre de filtres différents activés simultanément réduit la qualité du blocage des publicités.
 
 :::
 
-Custom filters category is empty by default for users to add there their filters by URL. You can find filters on the Internet or even try to [create one by yourself](/general/ad-filtering/create-own-filters).
+La catégorie des filtres personnalisés est vide par défaut pour que les utilisateurs puissent y ajouter leurs filtres par URL. Vous pouvez trouver des filtres sur Internet ou même essayer d'en [créer un vous-même](/general/ad-filtering/create-own-filters).
 
-### User rules {#user-rules}
+### Règles utilisateur {#user-rules}
 
-Here you can add new rules — either by entering them manually, or by using [the AdGuard manual blocking tool in Safari](#assistant). Use this tool to customize Safari filtering without adding an entire filter list.
+Ici, vous pouvez ajouter de nouvelles règles — soit en les saisissant manuellement, soit en utilisant [l'outil de blocage manuel AdGuard dans Safari](#assistant). Utilisez cet outil pour personnaliser le filtrage Safari sans ajouter une liste complète de filtres.
 
-Learn [how to create your own ad filters](/general/ad-filtering/create-own-filters). But please note that many of them won't work in Safari on iOS.
+Apprenez [comment créer vos propres filtres publicitaires] (/general/ad-filtering/create-own-filters). Mais veuillez noter que beaucoup d’entre eux ne fonctionneront pas dans Safari sur iOS.
 
-![User rules screen \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/user_rules_en.jpeg)
+![Écran des règles utilisateur \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/user_rules_en.jpeg)
 
-### Allowlist {#allowlist}
+### Liste d’autorisation {#allowlist}
 
-The third section of the _Safari protection_ screen. If you want to disable ad blocking on a certain website, Allowlist will be of help. It allows you to add domains and subdomains to exclusions. AdGuard for iOS has an Import/Export feature, so the allowlist from one device can be easily transferred to another.
+La troisième section de l'écran _Protection Safari_. Si vous souhaitez désactiver le blocage des publicités sur un certain site web, la liste d’autorisation vous sera utile. Elle vous permet d'ajouter des domaines et sous-domaines aux exclusions. AdGuard pour iOS dispose d'une fonctionnalité d'importation/exportation, de sorte que la liste d'autorisation d'un appareil peut être facilement transférée à un autre.

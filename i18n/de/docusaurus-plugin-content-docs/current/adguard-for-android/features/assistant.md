@@ -9,48 +9,48 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 :::
 
-Assistant is a handy tool to quickly change app or website settings and view statistics without opening the AdGuard UI.
+Assistent ist ein praktisches Tool, mit dem Sie schnell die Einstellungen von Apps oder Websites ändern und Statistiken einsehen können, ohne die AdGuard-App zu starten.
 
-### How to access Assistant
+### Zugang zum Assistenten
 
-1. On your Android device, swipe down from the top of the screen to open the notification shade.
-2. Find and **expand** the AdGuard notification.
+1. Wischen Sie auf Ihrem Gerät vom oberen Rand des Bildschirms nach unten, um die Benachrichtigungsleiste zu öffnen.
+2. Suchen und **erweitern** Sie die AdGuard-Benachrichtigung.
 
-![Expand AdGuard notification in the notification shade \*mobile](https://cdn.adtidy.org/blog/new/jkksbhassistant-shade.png)
+![AdGuard-Benachrichtigung erweitern \*mobile](https://cdn.adtidy.org/blog/new/jkksbhassistant-shade.png)
 
-1. Tap _Assistant_.
+1. Tippen Sie auf _Assistent_.
 
-![Tap Assistant \*mobile](https://cdn.adtidy.org/blog/new/1qvlhassistant-tap-assistant.jpg)
+![Assistent antippen \*mobile](https://cdn.adtidy.org/blog/new/1qvlhassistant-tap-assistant.jpg)
 
 ### So verwenden Sie den Assistenten
 
-When you open Assistant, you will see two tabs: **Apps** and **Websites**. Each of them contains a list of the recently used apps and websites respectively.
+Beim Öffnen des Assistenten werden zwei Tabs angezeigt: **Apps** und **Websites**. Sie enthalten jeweils eine Liste der zuletzt verwendeten Apps und Websites.
 
-![Assistant main \*mobile](https://cdn.adtidy.org/blog/new/i5mljAssistant-main.jpg)
+![Hauptfenster des Assistenten \*mobile](https://cdn.adtidy.org/blog/new/i5mljAssistant-main.jpg)
 
 ### Tab „Apps“
 
-After you select an app (**let's take Chrome as an example**), you'll get a few options of what you can do.
+Nachdem Sie eine App ausgewählt haben (**Nehmen wir Chrome** als Beispiel), werden mehrere Optionen angezeigt.
 
-![Assistant Chrome menu \*mobile\_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
+![Assistent Chrome-Menü \*mobile\_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
 
-#### Recent activity
+#### Letzte Aktivität
 
-You'll be taken to the AdGuard app, where you'll see detailed info on the last 10K requests made by Chrome.
+Sie werden zur AdGuard-App weitergeleitet, wo Sie detaillierte Informationen zu den letzten 10.000 Anfragen von Chrome sehen.
 
-![App recent activity \*mobile\_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
+![Letzte Aktivität der App \*mobile\_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
 
 #### App-Statistiken
 
-You'll be taken to the AdGuard app, where you'll see detailed statistics about Chrome:
+Sie werden zur AdGuard-App weitergeleitet, in der Sie detaillierte Statistiken über Chrome einsehen können:
 
-- Number of ads and trackers blocked in Chrome
-- Data saved by blocking Chrome's ad or tracking requests
-- Companies that Chrome sends requests to
+- Anzahl von blockierten Anzeigen und Trackern in Chrome
+- Daten, die durch das Blockieren von Werbe- oder Tracking-Anfragen von Chrome eingespart werden
+- Unternehmen, an die Chrome Anfragen sendet
 
 #### App-Verwaltung
 
-You'll be taken to the AdGuard app screen where you can disable AdGuard protection for the app.
+Sie werden zum Bildschirm der AdGuard-App weitergeleitet, wo Sie den AdGuard-Schutz für die App deaktivieren können.
 
 #### Firewall-Einstellungen
 
@@ -58,11 +58,11 @@ Sie werden zum AdGuard-Bildschirm weitergeleitet, in dem Sie die Firewall-Einste
 
 ### Tab „Websites“
 
-![Assistant websites tab \*mobile](https://cdn.adtidy.org/blog/new/74y9rAssistant-websites.jpg)
+![Tab „Websites“ im Assistenten \*mobile](https://cdn.adtidy.org/blog/new/74y9rAssistant-websites.jpg)
 
-Select a website (**we use google.com here purely as an example**) and you'll see few options of what you can do.
+Wählen Sie eine Website aus (**wir verwenden google.com hier nur als Beispiel**) und Sie sehen einige Optionen, was Sie tun können.
 
-![Assistant google.com info \*mobile](https://cdn.adtidy.org/blog/new/tht0tgoogle-com-assistant.jpg)
+![Info über google.com im Assistenten \*mobile](https://cdn.adtidy.org/blog/new/tht0tgoogle-com-assistant.jpg)
 
 #### Zur Freigabeliste hinzufügen
 
@@ -72,7 +72,7 @@ Wenn Sie auf diese Option tippen, wird `google.com` sofort zur Freigabeliste hin
 
 Sie werden zur AdGuard-App weitergeleitet, in der Sie detaillierte Informationen zu den letzten 10.000 Anfragen an google.com finden.
 
-![website recent activity \*mobile\_border](https://cdn.adtidy.org/blog/new/xq7f3assistant-website-recent-activity.png)
+![letzte Aktivität der Website \*mobile\_border](https://cdn.adtidy.org/blog/new/xq7f3assistant-website-recent-activity.png)
 
 #### Website-Statistiken
 

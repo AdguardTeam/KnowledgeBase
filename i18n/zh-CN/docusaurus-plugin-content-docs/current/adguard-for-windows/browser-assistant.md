@@ -1,5 +1,5 @@
 ---
-title: Browser Assistant
+title: 浏览器助手
 sidebar_position: 3
 ---
 
@@ -31,7 +31,7 @@ The new Browser Assistant has its own tab in AdGuard for Windows settings, along
 
 ![Settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 
-## Legacy Assistant
+## 旧版浏览器助手
 
 Legacy Assistant is the previous version of Assistant, which is a mere userscript, not a browser extension. Basically, there are two cases when you might want to pick it instead of the new Browser Assistant:
 

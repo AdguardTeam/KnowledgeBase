@@ -1,44 +1,44 @@
 ---
-title: Firewall
+title: ファイアウォール
 sidebar_position: 1
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Android」について書いています。 デバイス全体を保護するこのアプリは[こちらからダウンロード](https://agrd.io/download-kb-adblock)できます。
 
 :::
 
-The Firewall module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Firewall_.
+この機能は、「AdGuardによる保護」タブ（画面下部バーメニューで左から2番目の盾アイコン） → 「ファイアウォール」にあります。
 
-This feature helps manage Internet access for specific apps installed on your device and for the device in general.
+「ファイアウォール」機能は、デバイスにインストールされているアプリごとやデバイス全体のインターネットアクセスを管理するのに役立つツールです。
 
-![Firewall \*mobile\_border](https://cdn.adtidy.org/blog/new/gdn94firewall.png)
+![ファイアウォール \*mobile\_border](https://cdn.adtidy.org/blog/new/i5y7stempFileForShare_20230614-170512.png)
 
-#### Global firewall rules
+#### グローバルファイアウォールルール
 
-This section allows you to control Internet access for the entire device.
+このセクションでは、デバイス全体のインターネットアクセスを制御できます。
 
-![Global firewall rules \*mobile\_border](https://cdn.adtidy.org/blog/new/4zx2nhglobal_rules.png)
+![グローバル ファイアウォール ルール \*mobile\_border](https://cdn.adtidy.org/blog/new/xa46aScreenshot_20230706-142041_AdGuard.jpg)
 
-These rules apply to all apps on your device unless you've set custom rules for them.
+これらのルールは、デバイス上のすべてのアプリに適用されます（※特定のアプリなどに対してカスタムファイアウォールルールが設定されている場合は、そのアプリに対してはカスタムルールが優先されます）。
 
-#### Custom firewall rules
+#### カスタムファイアウォールルール
 
-In this section, you can control Internet access for specific apps — restrict permissions for those that you don’t find trustworthy, or, on the contrary, unblock the ones you want to circumvent the global firewall rules.
+このセクションでは、アプリごとのインターネットアクセスを制御することができます。カスタムファイアウォールルールを使って、信頼できないと思われるアプリやデータ通信量を抑えたいアプリのアクセス権限を制限したり、グローバルファイアウォールルールの対象からアプリを除外したりすることができます。
 
-1. Open _Custom firewall rules_. Under _Apps with custom rules_, tap _Add app_.
+1. 「カスタムファイアウォールルール」を開きます。 「カスタムルールがあるアプリ」の下で、「＋ アプリを追加する」をタップします。
 
-   ![Custom firewall rules \*mobile\_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
+   ![カスタム ファイアウォール ルール \*mobile\_border](https://cdn.adtidy.org/blog/new/blce3Screenshot_20230706-150816_AdGuard.jpg)
 
-2. Select the app for which you want to set individual rules.
+2. 個別のルールを設定したいアプリを選択します。
 
-   ![Adding an app to Custom firewall rules \*mobile\_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
+   ![カスタム ファイアウォール ルールにアプリを追加 \*mobile\_border](https://cdn.adtidy.org/blog/new/3k7kaScreenshot_20230706-150855_AdGuard.jpg)
 
-3. In _Available custom rules_, select the ones you want to configure and tap the “+” icon. The rules will now appear in _Applied custom rules_.
+3. 「利用可能なカスタムルール」で、追加したいルールを選んでタップします。 そうすると、「適用されているカスタムルール」にルールが表示されます。
 
-   ![Added rule \*mobile\_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
+   ![追加されたルール \*mobile\_border](https://cdn.adtidy.org/blog/new/b4cupScreenshot_20230706-151426_AdGuard.jpg)
 
-4. If you need to block a specific type of connection, toggle the switch to the left. If you want to allow it, leave the switch enabled. **Custom rules override global ones**: any changes you make in _Global firewall rules_ will not affect this app.
+4. アプリに対して、特定の種類の通信をブロックする必要がある場合は、スイッチを左に切り替えてください（スイッチが赤色の状態）。 その通信を許可したい場合は、スイッチを有効（緑色）のままにしてください。 **※カスタムファイアウォールルールはグローバルファイアウォールルールよりも優先されます**。グローバルファイアウォールルールを変更したりしても、カスタムルールのあるアプリには影響しません。
 
-To delete a rule or app from _Custom rules_, swipe it to the left.
+カスタムファイアウォールルールからルールやアプリを削除するには、ルールやアプリを左にスワイプしてください。

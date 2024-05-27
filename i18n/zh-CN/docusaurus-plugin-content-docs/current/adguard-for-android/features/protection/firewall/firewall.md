@@ -1,44 +1,44 @@
 ---
-title: Firewall
+title: 防火墙
 sidebar_position: 1
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。 要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
-The Firewall module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Firewall_.
+防火墙模块可通过点击底部屏幕的「保护」标签（屏幕底部左起第二个图标）并选择「防火墙」访问。
 
-This feature helps manage Internet access for specific apps installed on your device and for the device in general.
+此功能有助于管理设备上安装的特定应用程序和设备的互联网连接。
 
 ![Firewall \*mobile\_border](https://cdn.adtidy.org/blog/new/gdn94firewall.png)
 
-#### Global firewall rules
+#### 全局防火墙规则
 
-This section allows you to control Internet access for the entire device.
+该设置让用户控制整个设备的互联网连接。
 
 ![Global firewall rules \*mobile\_border](https://cdn.adtidy.org/blog/new/4zx2nhglobal_rules.png)
 
-These rules apply to all apps on your device unless you've set custom rules for them.
+这些规则应用到设备上的所有应用程序，除非您设置自定义规则。
 
-#### Custom firewall rules
+#### 自定义防火墙规则
 
-In this section, you can control Internet access for specific apps — restrict permissions for those that you don’t find trustworthy, or, on the contrary, unblock the ones you want to circumvent the global firewall rules.
+用户可以控制特定应用程序的上网权限，限制用户认为不值得信任的应用程序的权限，或者相反，解除对那些你想规避全局防火墙规则的应用程序的阻止。
 
-1. Open _Custom firewall rules_. Under _Apps with custom rules_, tap _Add app_.
+1. 打开「自定义防火墙规则」。 在「具有自定义规则的应用」下，点击「添加应用」。
 
    ![Custom firewall rules \*mobile\_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
 
-2. Select the app for which you want to set individual rules.
+2. 选择您想要设置单独规则的应用程序。
 
    ![Adding an app to Custom firewall rules \*mobile\_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
 
-3. In _Available custom rules_, select the ones you want to configure and tap the “+” icon. The rules will now appear in _Applied custom rules_.
+3. 在「可用的自定义规则」中，选择要配置的规则并点击「+」。 相应规则会随之出现在「已应用的自定义规则」中。
 
    ![Added rule \*mobile\_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
 
-4. If you need to block a specific type of connection, toggle the switch to the left. If you want to allow it, leave the switch enabled. **Custom rules override global ones**: any changes you make in _Global firewall rules_ will not affect this app.
+4. 如您需要拦截特定类型的连接，请切换到左侧。 如您要允许它，请保持开启状态。 **自定义规则会优先于全局规则**：即您在「全局防火墙规则」内所在的更改不会影响此应用。
 
-To delete a rule or app from _Custom rules_, swipe it to the left.
+要从「自定义规则」移除规则或应用，请将其滑动到左侧。

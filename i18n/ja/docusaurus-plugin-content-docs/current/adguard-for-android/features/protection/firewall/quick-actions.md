@@ -1,18 +1,18 @@
 ---
-title: Quick actions
+title: クイックアクション
 sidebar_position: 2
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Android」について書いています。 デバイス全体を保護するこのアプリは[こちらからダウンロード](https://agrd.io/download-kb-adblock)できます。
 
 :::
 
-Quick actions can be found inside the _Firewall_ module, which can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Firewall_.
+「クイックアクション」は、「AdGuardによる保護」タブ（画面下部バーメニューで左から2番目の盾アイコン） → 「ファイアウォール」画面の下の方にあります。
 
-_Quick actions_ are based on the requests from _Recent activity_ (which can be found in [_Statistics_](/adguard-for-android/features/statistics)). This section shows which apps have recently connected to the Internet.
+「クイックアクション」は、「最新アクティビティ」（「[統計](/adguard-for-android/features/statistics)」→「最新アクティビティ」）のリクエスト情報に基づいています。 このセクションには、最近インターネットに接続したアプリが表示されます。
 
-![Quick actions \*mobile\_border](https://cdn.adtidy.org/blog/new/yigrfquick_actions.png)
+![クイックアクション \*mobile\_border](https://cdn.adtidy.org/blog/new/1l1vhScreenshot_20230706-142022_AdGuard.jpg)
 
-If you see an app that shouldn't be using the Internet at all or an app that you haven't used recently, you can block its access on the fly. This will not be possible unless the _Firewall_ module is turned on.
+インターネットそのものやモバイルデータ通信を一切使うべきではないアプリや、最近使っていないアプリがあれば、その場でアクセスをブロック・制限することができます。 ※「クイックアクション」を使うには、「ファイアウォール」機能がオンになっている必要があります。

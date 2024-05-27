@@ -1,5 +1,5 @@
 ---
-title: Other features and options
+title: その他の機能とオプション
 sidebar_position: 3
 ---
 
@@ -9,30 +9,30 @@ sidebar_position: 3
 
 :::
 
-Apart from the large key modules of AdGuard Browser Extension, there are several more specific features that can be configured in the _General_ and _Additional settings_ tabs of the extension settings.
+AdGuard ブラウザ拡張機能の主要なモジュールのほかに、拡張機能設定の「一般」および「追加設定」タブにてより特殊な機能もあります。
 
-## General {#general}
+## 一般 {#general}
 
-In the _General_ tab, you can allow search ads and the [self-promotion of websites](/general/ad-filtering/search-ads), enable the automatic activation of language-specific filters, indicate the filters update interval, etc.
+「一般」タブでは、検索連動型広告とウェブサイトの自己宣伝広告の許可、言語特化フィルタの自動有効化の設定、フィルタの更新間隔の指定、などができます。
 
 ![General \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_general.png)
 
-Besides, here you can enable [_Phishing and malware protection_](/general/browsing-security).
+また、「[フィッシング詐欺とマルウェアからの保護](/general/browsing-security)」を有効にすることもできます。
 
-You can save your settings configuration by clicking the _Export settings_ button. The settings will be saved as a .json file. To upload the previously saved settings configuration, use the _Import settings_ function. You can even use it to quickly switch between different settings profiles or even to transfer settings configurations between different browsers.
+「設定をエクスポート」ボタンをクリックすることで、設定内容を保存することができます。 設定内容は .json ファイルとして保存されます。 保存した設定内容をブラウザ拡張機能にアップロードするには、「設定をインポート」機能を使用してください。 この機能を使用して、簡単に異なる設定プロファイルに切り替えたり、設定内容を異なるブラウザ間で転送したりできます。
 
-## Additional settings {#misc}
+## 追加設定 {#misc}
 
-The _Additional settings_ section contains a range of various settings that are related to the ad blocking process and application usability.
+「追加設定」セクションには、広告ブロックのプロセスと、アプリの使い勝手に関する様々な設定があります。
 
 ![Additional settings \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_additional_settings.png)
 
-From this tab, you can activate optimized filters, enable notifications about extension updates, open the _Filtering log_, or clear the statistics of blocked ads and trackers.
+このタブにて、最適化されたフィルタを有効にすることや、拡張機能のアップデートに関する通知を有効にすること、「フィルタリングログ」を開くこと、ブロックされた広告とトラッカーの統計情報をクリアすることができます。
 
-Besides, you can opt to help us with the development of filters by sending the statistics on applied rules: which ones are triggered, on which websites, and how often. This option is disabled by default as we do not collect user data without consent. Yet, if you enable it, all data will be strictly anonymized.
+他にも、適用されているルールに関する統計情報（どのルールが、どのウェブサイトで、どのくらいの頻度で適用されたか）の送信を許可することにより、フィルタの開発に貢献することができます。 ※AdGuardは同意なしにユーザーデータを収集することは一切ないため、このオプションはデフォルトで無効になっています。 また、このオプションを有効にしても、送信されるデータはすべて厳格に匿名化されます。
 
-## About {#about}
+## AdGuard について {#about}
 
-In the _About_ section, you can find infos about the current version, links to the EULA and Privacy policy, and to the repository of the Browser extension on GitHub.
+「AdGuardについて」セクションには現在のバージョンに関する情報と、利用許諾契約(EULA)、プライバシーポリシー、Githubリポジトリへのリンクがあります。
 
 ![About \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)

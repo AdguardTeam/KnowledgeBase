@@ -61,7 +61,7 @@ Here you can specify the response type for domains blocked by DNS rules based on
 
 Aquí puedes especificar el tiempo en milisegundos que AdGuard esperará la respuesta del servidor DNS seleccionado antes de recurrir al fallback. Si no completas este campo o ingresas un valor no válido, se utilizará el valor de 5000.
 
-#### Blocked response TTL
+#### TTL de respuesta bloqueada
 
 Here you can specify the TTL (time to live) value that will be returned in response to a blocked request.
 

@@ -15,7 +15,7 @@ sidebar_position: 3
 
 在「常规」选项卡中，用户可以允许搜索广告和网站的[自我推广](/general/ad-filtering/search-ads)，启用自动激活特定语言过滤器的，指明过滤器更新间隔等。
 
-![General \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_general.png)
+![常规 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_general.png)
 
 此外，还可以启用[「钓鱼和恶意保护」](/general/browsing-security)。
 
@@ -25,7 +25,7 @@ sidebar_position: 3
 
 「附加设置」部分包含一系列与广告拦截过程和应用程序可用性有关的各种设置。
 
-![Additional settings \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_additional_settings.png)
+![其他设置 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_additional_settings.png)
 
 从此选项卡中，您可以激活优化的过滤器，启用扩展程序更新通知，打开「过滤日志」，清除已阻止的广告和跟踪器的统计信息。
 
@@ -35,4 +35,4 @@ sidebar_position: 3
 
 在「关于」部分中，用户可以找到有关当前版本的信息、EULA 和隐私政策的链接以及 GitHub 上浏览器扩展存储库的链接。
 
-![About \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)
+![关于 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)

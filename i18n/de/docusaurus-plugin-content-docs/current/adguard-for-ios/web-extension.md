@@ -46,7 +46,7 @@ Die Web-Erweiterung ist kein eigenständiges Werkzeug und erfordert AdGuard für
 
 ![Wählen Sie "Erweiterungen" *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings2_en.png)
 
-Find **ALLOW THESE EXTENSIONS** section and then find **AdGuard** among the available extensions.
+Suchen Sie den Abschnitt **Diese Erweiterungen zulassen** und suchen Sie dann **AdGuard** unter den verfügbaren Erweiterungen.
 
 ![Wählen Sie "AdGuard" im Abschnitt "Diese Erweiterungen zulassen" *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings3_en.png)
 

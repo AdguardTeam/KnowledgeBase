@@ -955,7 +955,7 @@ $stealth [= opt1 [| opt2 [| opt3 [...]]]]
 
 :::note
 
-Блокировка куки и скрытие параметров отслеживания достигается использованием правил с модификаторами [`$cookie`](#cookie-modifier) и [`$removeparam`](#removeparam-modifier). Правила-исключения только с модификатором `$stealth` не дадут желаемого результата. Если вы хотите полностью отключить все функции Антитрекинга для определённого домена, нужно включить в правило все три модификатора: `@@||example.org^$stealth,removeparam,cookie`
+Blocking cookies and removing tracking parameters is achieved by using rules with the [`$cookie`](#cookie-modifier), [`$urltransform`](#urltransform-modifier) and [`$removeparam`](#removeparam-modifier) modifiers. Exception rules that contain only the `$stealth` modifier will not do these things. If you want to completely disable all Stealth mode features for a given domain, you must include all three modifiers: `@@||example.org^$stealth,removeparam,cookie`.
 
 :::
 
@@ -1092,6 +1092,7 @@ domain.com###banner
 | [$removeheader](#removeheader-modifier)     |               ✅                |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
 | [$removeparam](#removeparam-modifier)       |               ✅                |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
 | [$replace](#replace-modifier)               |               ✅                |                ❌                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| [$urltransform](#urltransform-modifier)     |               ✅                |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
 | [noop](#noop-modifier)                      |               ✅                |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
 | [$empty 👎](#empty-modifier "устарел")       |               ✅                |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
 | [$mp4 👎](#mp4-modifier "устарел")           |               ✅                |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
@@ -2098,6 +2099,99 @@ replace = "/" regexp "/" replacement "/" modifiers
 :::info Совместимость
 
 Правила с модификатором `$replace` поддерживаются в AdGuard для Windows, Mac и Android и Браузерном расширении AdGuard для Firefox. Другие расширения не могут модифицировать содержимое страниц на сетевом уровне, поэтому там эти правила не работают.
+
+:::
+
+#### **`urltransform`** {#urltransform-modifier}
+
+The `$urltransform` rules allow you to modify the request URL by replacing the text matched by the regular expression.
+
+**Функции**
+
+- `$urltransform` rules apply to any request URL text.
+- `$urltransform` rules can also **modify the query part** of the URL.
+- `$urltransform` will not be applied if the original URL is blocked by other rules.
+- `$urltransform` will be applied before `$removeparam` rules.
+
+The `$urltransform` value can be empty for exception rules.
+
+**Несколько правил, соответствующих одному запросу**
+
+If multiple `$urltransform` rules match a single request, we will apply each of them. **Правила будут применяться в алфавитном порядке.**
+
+**Синтаксис**
+
+`$urltransform` syntax is similar to replacement with regular expressions [in Perl](http://perldoc.perl.org/perlrequick.html#Search-and-replace).
+
+```text
+urltransform = "/" regexp "/" replacement "/" modifiers
+```
+
+- **`regexp`** — регулярное выражение.
+- **`replacement`** — строка, которая будет использована для замены строки в соответствии с `regexp`.
+- **`modifiers `** — флаги регулярных выражений. Например, `i` — поиск без учёта регистра, или `s` — режим одной строки.
+
+In the `$urltransform` value, two characters must be escaped: the comma `,` and the dollar sign `$`. Use the backslash character `\` for this. Например, экранированная запятая будет выглядеть так: `\,`.
+
+**Примеры**
+
+```adblock
+||example.org^$urltransform=/(pref\/).*\/(suf)/\$1\$2/i
+```
+
+У этого правила три части:
+
+- `regexp` — `(pref\/).*\/(suf)`;
+- `replacement` — `\$1\$2` where `$` is escaped;
+- `modifiers` (флаги регулярных выражений) — `i` для поиска без учёта регистра
+
+**Multiple `$urltransform` rules**
+
+1. `||example.org^$urltransform=/X/Y/`
+2. `||example.org^$urltransform=/Z/Y/`
+3. `@@||example.org/page/*$urltransform=/Z/Y/`
+
+- Правила 1 и 2 будут применены ко всем запросам, отправленным к `example.org`.
+- Правило 2 отключено для запросов, соответствующих `||example.org/page/`, **но правило 1 при этом всё равно работает!**
+
+**Re-matching rules after transforming the URL**
+
+If the `$urltransform` rule is applied to a request, all the rules will be re-evaluated against the new URL.
+
+E.g., with the following rules:
+
+```adblock
+||example.com^$urltransform=/firstpath/secondpath/
+||example.com/secondpath^
+```
+
+the request to `https://example.com/firstpath` will be blocked before it is sent.
+
+However, `$urltransform` rules will **not be re-applied** in this case to avoid infinite recursion, e.g., with the following rules:
+
+```adblock
+||example.com/firstpath^$urltransform=/firstpath/secondpath/
+||example.com/secondpath^$urltransform=/secondpath/firstpath/
+```
+
+the request to `https://example.com/fisrtpath` will be transformed to `https://example.com/secondpath` and the second rule will not be applied.
+
+**Disabling `$urltransform` rules**
+
+- `@@||example.org^$urltransform` will disable all `$urltransform` rules matching `||example.org^`.
+- `@@||example.org^$urltransform=/Z/Y/` will disable the rule with `$urltransform=/Z/Y/` for any request matching `||example.org^`.
+
+`$urltransform` rules can also be disabled by `$document` and `$urlblock` exception rules. Но базовые правила исключений без модификаторов не могут этого сделать. For example, `@@||example.com^` will not disable `$urltransform=/X/Y/` for requests to **example.com**, but `@@||example.com^$urlblock` will.
+
+:::caution Ограничения
+
+Rules with the `$urltransform` modifier can be used [**only in trusted filters**](#trusted-filters).
+
+:::
+
+:::info Совместимость
+
+Rules with the `$urltransform` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android **with CoreLibs version 1.15 or higher**.
 
 :::
 

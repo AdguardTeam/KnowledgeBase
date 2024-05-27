@@ -73,33 +73,33 @@ Pokud potřebujete AdGuard odinstalovat nebo přeinstalovat, postupujte následo
 
 Pokud běžná odinstalace z nějakého důvodu nefunguje, můžete zkusit pokročilou metodu. Nejprve si musíte stáhnout [nástroj pro odinstalaci](https://cdn.adtidy.org/distr/windows/Uninstall_Utility.zip) vytvořený našimi vývojáři. Rozbalte archiv do libovolné složky v počítači, spusťte soubor **Adguard.UninstallUtility.exe** a nechte aplikaci provést změny v zařízení. Poté postupujte podle níže uvedených pokynů:
 
-- Select *AdGuard Ad Blocker* and *Standard* uninstall type, then click *Uninstall*.
+- Vyberte *Blokátor reklam AdGuard* a *Standardní* typ odinstalace a poté klikněte na *Odinstalovat*.
 
 ![Standard uninstall *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_standard.jpg)
 
-- Click *OK* once the warning window pops up:
+- Po zobrazení varovného okna klikněte na *OK*:
 
 ![Standard uninstall warning *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
 
-- Wait until uninstall is finished — there will be a phrase **Uninstall complete** and a prompt to restart your computer:
+- Počkejte na dokončení odinstalace — zobrazí se fráze **Odinstalace dokončena** a výzva k restartování počítače:
 
 ![Uninstall finished *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_standard_complete.jpg)
 
 :::caution
 
-Follow the next steps only if performing the first two steps wasn’t enough for some reason. We strongly suggest contacting our support before using steps 3-4 of advanced uninstall instruction.
+Další kroky proveďte pouze v případě, že provedení prvních dvou kroků z nějakého důvodu nestačilo. Důrazně doporučujeme kontaktovat náš tým podpory před použitím kroků 3-4 pokročilého pokynu k odinstalaci.
 
 :::
 
-- Select *AdGuard Ad Blocker* and *Extended* uninstall type, then click *Uninstall*. Clcik *Yes, continue* in the window prompt.
+- Vyberte *Blokátor reklam AdGuard* a *Rozšířený* typ odinstalace a poté klikněte na *Odinstalovat*. Ve okně výzvy klikněte na *Ano, pokračovat*.
 
 ![Extended uninstall *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended.jpg)
 
-- Click *OK* once the warning window pops up:
+- Po zobrazení varovného okna klikněte na *OK*:
 
 ![Extended uninstall warning *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
 
-- Wait until uninstall is finished — there will be a phrase **Uninstall complete** and a prompt to restart your computer:
+- Počkejte na dokončení odinstalace — zobrazí se fráze **Odinstalace dokončena** a výzva k restartování počítače:
 
 ![Extended uninstall finished *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_complete.jpg)
 

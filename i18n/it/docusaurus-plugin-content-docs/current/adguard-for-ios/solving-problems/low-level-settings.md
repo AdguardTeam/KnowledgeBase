@@ -1,64 +1,64 @@
 ---
-title: Low-level Settings guide
+title: Guida alle Impostazioni di Basso Livello
 sidebar_position: 5
 ---
 
 :::info
 
-Questo articolo tratta AdGuard per iOS, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Questo articolo tratta AdGuard per iOS, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## How to reach the Low-level settings
+## Come raggiungere le Impostazioni di basso livello
 
 :::caution
 
-Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. This section should only be opened if you know what you are doing, or you were asked to do so by our support team.
+Modificare le *Impostazioni di basso livello* può causare problemi con le prestazioni di AdGuard, interrompere la connessione a Internet o compromettere la tua sicurezza e privacy. Questa sezione dovrebbe essere aperta soltanto se sai cosa stai facendo, o se ti è stato richiesto di farlo dal nostro team di supporto.
 
 :::
 
-To go to *Low-level settings*, tap the gear icon at the bottom right of the screen to open *Settings*. Select the *General* section and then toggle on the *Advanced mode* switch, after that the *Advanced settings* section will appear below. Tap *Advanced settings* to reach the *Low-level settings* section.
+Per andare alle *Impostazioni di basso livello*, tocca l'icona dell'ingranaggio in fondo allo schermo per aprire le *Impostazioni*. Seleziona la sezione *Generali* e attiva l'interruttore *Modalità avanzata*, dopodiché, apparirà di seguito la sezione *Impostazioni avanzate*. Tocca su *Impostazioni avanzate* per raggiungere la sezione *Impostazioni di basso livello*.
 
-## Low-level settings
+## Impostazioni di basso livello
 
-### Tunnel mode
+### Modalità tunnel
 
-There are two main tunnel modes: *Split* and *Full*. *Split-Tunnel* mode provides compatibility of AdGuard and so-called "Personal VPN" apps. In *Full-Tunnel* mode no other VPN can work simultaneously with AdGuard.
+Esistono due modalità tunnel principali: *Split* e *Full*. La modalità *Split-Tunnel* fornisce la compatibilità di AdGuard con le cosiddette app "VPN Personali". In modalità *Full-Tunnel*, nessun'altra VPN può operare simultaneamente con AdGuard.
 
-There is a specific feature of *Split-Tunnel* mode: if DNS proxy does not perform well, for example, if the response from the AdGuard DNS server was not returned in time, iOS will "amerce" it and reroute traffic through DNS server, specified in iOS settings. No ads are blocked at this time and DNS traffic is not encrypted.
+Esiste una funzionalità specifica della modalità *Split-Tunnel*: se il proxy DNS non opera correttamente, ad esempio, se la risposta dal server DNS di AdGuard non è stata restituita in tempo, iOS la "punirà" e reindirizzerà il traffico tramite il server DNS specificato nelle impostazioni di iOS. Nessun annuncio sarà bloccato e il traffico DNS non sarà crittografato.
 
-In *Full-Tunnel* mode only the DNS server specified in AdGuard settings is used. If it does not respond, the Internet will simply not work. Enabled *Full-Tunnel* mode may cause the incorrect performance of some programs (for instance, Facetime), and lead to problems with app updates.
+In modalità *Full-Tunnel*, soltanto il server DNS specificato sulle impostazioni di AdGuard è utilizzato. Se non risponde, Internet semplicemente non funzionerà. La modalità *Full-Tunnel* abilitata potrebbe causare prestazioni errate di certi programmi (ad esempio, Facetime) e condurre a problemi con gli aggiornamenti dell'app.
 
-By default, AdGuard uses *Split-Tunnel* mode as the most stable option.
+Di default, AdGuard utilizza la modalità *Split-Tunnel* come l'opzione più stabile.
 
-There is also an additional mode called *Full-Tunnel (without VPN icon)*. This is exactly the same as *Full-Tunnel* mode, but it is set up so that the VPN icon is not displayed in the system line.
+Inoltre, esiste una modalità aggiuntiva chiamata *Full-Tunnel (senza icona VPN)*. Questa è esattamente uguale alla modalità *Full-Tunnel*, ma è configurata così che l'icona della VPN non sia mostrata nella riga di sistema.
 
-### Blocking mode
+### Modalità di blocco
 
-In this module you can select the way AdGuard will respond to DNS queries that should be blocked:
+In questo modulo puoi selezionare come AdGuard risponderà alle richieste DNS che dovrebbero essere bloccate:
 
-- Default — respond with zero IP address when blocked by adblock-style rules; respond with the IP address specified in the rule when blocked by /etc/hosts-style rules
-- REFUSED — respond with REFUSED code
-- NXDOMAIN — respond with NXDOMAIN code
-- Unspecified IP — respond with zero IP address
-- Custom IP — respond with a manually set IP address
+- Default — risponde con l'indirizzo IP zero quando bloccate dalle regole in stile adblock; risponde con l'indirizzo IP specificato nella regola quando bloccate dalle regole /etc/hosts-style
+- REFUSED — risponde con il codice REFUSED
+- NXDOMAIN — risponde con il codice NXDOMAIN
+- Unspecified IP — risponde con l'indirizzo IP zero
+- IP personalizzato— rispondi con un indirizzo IP impostato manualmente
 
-### Block IPv6
+### Blocca IPv6
 
-By moving the toggle to the right, you activate the blocking of IPv6 queries (AAAA requests). AAAA-type DNS requests will not be resolved, hence only IPv4 queries can be processed.
+Spostando l'interruttore verso destra, attivi il blocco delle query IPv6 (richieste AAAA). Le richieste DNS di tipo AAAA non saranno risolte, dunque, soltanto le richieste IPv4 sono elaborabili.
 
-### Blocked response TTL
+### Risposta TTL bloccata
 
-Here you can set the period for a device to cache the response to a DNS request. During the specified time to live (in seconds) the request can be read from the cache without re-requesting the DNS server.
+Qui puoi impostare il periodo durante cui un dispositivo salvi nella cache la risposta a una richiesta DNS. Durante il periodo di tempo specificato (in secondi), la richiesta è leggibile dalla cache senza eseguirla nuovamente al server DNS.
 
-### Bootstrap servers
+### Server di bootstrap
 
-For DNS-over-HTTPS, DNS-over-TLS, and DNS-over-QUIC a bootstrap server is required for getting the IP address of the main DNS server. If not specified, the DNS server from iOS settings is used as the bootstrap server.
+Per DNS-over-HTTPS, DNS-over-TLS e DNS-over-QUIC, un server di bootstrap è necessario per ottenere l'indirizzo IP del server DNS principale. Se non specificato, il server DNS dalle impostazioni di IOS è utilizzato come server di boostrap.
 
-### Fallback servers
+### Server di fallback
 
-Here you can specify an alternate server to which a request will be rerouted if the main server fails to respond. If not specified, the system DNS server will be used as the fallback. It is also possible to specify `none`, in this case, there will be no fallback server set and only the main DNS server will be used.
+Qui puoi specificare un server alternativo cui sarà reindirizzata una richiesta, se il server principale fallisce nel rispondere. Se non specificato, sarà utilizzato il server DNS di sistema come fallback. È anche possibile specificare `nessuno`; in tal caso, non sarà impostato alcun server di fallback e soltanto il server DNS principale sarà utilizzato.
 
-### Background app refresh time
+### Tempo di aggiornamento dell'app in background
 
-Here you can select the frequency at which the application will check for filter updates while in the background. Note that update checks will not be performed more often than the specified period, but the exact intervals may not be respected.
+Qui puoi selezionare la frequenza con cui l'applicazione cercherà gli aggiornamenti del filtro, mentre in background. Nota che i controlli d'aggiornamento non saranno eseguiti più spesso del periodo specificato, ma gli intervalli esatti potrebbero non esser rispettati.

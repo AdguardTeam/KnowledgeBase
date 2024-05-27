@@ -1,29 +1,29 @@
 ---
-title: Low-level settings
+title: Configuraciones de bajo nivel
 sidebar_position: 6
 ---
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artículo trata sobre AdGuard para iOS, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel del sistema. Para ver cómo funciona, [descarga la app AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-![Low-level settings \*mobile\_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_lowlevel.PNG)
+![Configuración de bajo nivel \*mobile\_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_lowlevel.PNG)
 
-To open the _Low-level settings_, go to _Settings_ → _General_ → (Enable _Advanced mode_ if it's off) → _Advanced settings_ → _Low-level settings_.
+Para abrir la _Configuración de bajo nivel_, ve a _Configuración_ → → _General_ (habilita el _Modo avanzado_ si está desactivado) → _Configuración avanzada_ → _Configuración de bajo nivel_.
 
-For the most part, the settings in this section are best left untouched: only use them if you're sure about what you're doing, or if the support team has asked for them. But some settings could be changed without any risk.
+En general, es mejor no modificar los ajustes de esta sección: utilízalos sólo si estás seguro de lo que haces o si te lo ha pedido el equipo de asistencia. Pero algunas configuraciones se pueden cambiar sin ningún riesgo.
 
-### Block IPv6 {#blockipv6}
+### Bloquear IPv6 {#blockipv6}
 
-For any DNS query sent to get an IPv6 address, our app returns an empty response (as if this IPv6 address does not exist). Now there is an option not to return IPv6 addresses. At this point the description of this function becomes too technical: configuring or disabling IPv6 is the exclusive domain of advanced users. Presumably, if you are one of them, it will be good to know that we now have this feature, if not — there is no need to dive into it.
+Para cualquier consulta DNS enviada para obtener una dirección IPv6, nuestra app devuelve una respuesta vacía (como si esta dirección IPv6 no existiera). Ahora existe la opción de no devolver direcciones IPv6. En este punto, la descripción de esta función se vuelve demasiado técnica: configurar o desactivar IPv6 es dominio exclusivo de usuarios avanzados. Presumiblemente, si eres uno de ellos, será bueno saber que ahora tenemos esta función, si no es así, no es necesario profundizar en ella.
 
-### Bootstrap and Fallback servers {#bootstrap-fallback}
+### Servidores Bootstrap y Fallback {#bootstrap-fallback}
 
-Fallback is a backup DNS server. If you chose a DNS server and something happened to it, a fallback is needed to set the backup DNS server until the main server responds.
+Fallback es un servidor DNS de respaldo. Si eliges un servidor DNS y algo le sucede, se necesita una segunda opción para establecer el servidor DNS de respaldo hasta que responda el servidor principal.
 
-With Bootstrap, it’s a little more complicated. For AdGuard for iOS to use a custom secure DNS server, our app needs to get its IP address first. For this purpose, the system DNS is used by default, but sometimes this is not possible for various reasons. In such cases, Bootstrap could be used to get the IP address of the selected secure DNS server. Here are two examples to illustrate when a custom Bootstrap server might help:
+Con Bootstrap, es un poco más complicado. Para que AdGuard para iOS pueda utilizar un servidor DNS seguro personalizado, nuestra aplicación primero necesita obtener tu dirección IP. Para este fin, el sistema utiliza el DNS por predeterminado, pero a veces esto no es posible por diversas razones. En tales casos, Bootstrap podría usarse para obtener la dirección IP del servidor DNS seguro seleccionado. Aquí hay dos ejemplos para ilustrar cuándo un servidor personalizado de Bootstrap podría ayudar:
 
-1. When a system default DNS server does not return the IP address of a secure DNS server and it is not possible to use a secure one.
-2. When our app and third-party VPN are used simultaneously and it is not possible to use System DNS as a Bootstrap.
+1. Cuando un servidor DNS predeterminado del sistema no devuelve la dirección IP de un servidor DNS seguro y no es posible utilizar uno seguro.
+2. Cuando nuestra aplicación y VPN de terceros se utilizan simultáneamente y no es posible utilizar DNS del sistema como un bootstrap.

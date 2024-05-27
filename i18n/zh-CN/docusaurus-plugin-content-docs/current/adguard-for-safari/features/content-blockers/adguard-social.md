@@ -3,4 +3,4 @@ title: AdGuard 社交
 sidebar_position: 4
 ---
 
-_AdGuard Social_ contains filters against social media buttons, widgets, scripts, and icons. 在本部分还可以找到用于其他“干扰”的过滤器，包括弹出式窗口、移动应用程序横幅、Cookie 通知等过滤器。 To enable them, find _Social Widgets_ in the Filters tab.
+「AdGuard 社交」包含针对社交媒体按钮、小工具、脚本和图标的过滤器。 在本部分还可以找到用于其他“干扰”的过滤器，包括弹出式窗口、移动应用程序横幅、Cookie 通知等过滤器。 要启用它们，请在「过滤器」选项卡中找到「社交插件」。

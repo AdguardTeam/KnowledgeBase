@@ -13,17 +13,17 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 :::caution
 
-Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. This section should only be opened if you know what you are doing, or you were asked to do so by our support team.
+Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. Questa sezione dovrebbe essere aperta soltanto se sai cosa stai facendo, o se ti è stato richiesto di farlo dal nostro team di supporto.
 
 :::
 
 To go to *Low-level settings*, open the AdGuard app and tap the gear icon in the lower right corner of the screen. Then choose *General → Advanced → Low-level settings*.
 
-## Low-level settings
+## Impostazioni di basso livello
 
 For AdGuard v4.0 for Android we've completely redesigned the low-level settings: divided them into thematic blocks, made them clearer, added validation of entered values and other safety valves, got rid of some settings, and added others.
 
-### DNS protection
+### Protezione DNS
 
 #### Fallback upstreams
 
@@ -61,7 +61,7 @@ Here you can specify the response type for domains blocked by DNS rules based on
 
 Here you can specify the time in milliseconds that AdGuard will wait for the response from the selected DNS server before resorting to fallback. If you don’t fill in this field or enter an invalid value, the value of 5000 will be used.
 
-#### Blocked response TTL
+#### Risposta TTL bloccata
 
 Here you can specify the TTL (time to live) value that will be returned in response to a blocked request.
 

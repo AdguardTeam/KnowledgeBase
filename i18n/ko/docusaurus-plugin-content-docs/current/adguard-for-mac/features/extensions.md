@@ -5,29 +5,29 @@ sidebar_position: 8
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+이 글은 시스템 수준에서 기기를 보호하는 광고 차단기인 Mac용 AdGuard에 관한 내용입니다. 작동 방식을 확인하려면 [AdGuard 앱을 다운로드](https://agrd.io/download-kb-adblock)하세요.
 
 :::
 
-AdGuard allows you to install extensions, or userscripts, to extend the functionality of the browser. AdGuard can work as a cross-browser userscript manager: you don’t have to install the same userscript for each browser.
+AdGuard를 사용하면 확장 프로그램 또는 유저스크립트를 설치하여 브라우저의 기능을 확장할 수 있습니다. AdGuard는 크로스 브라우저 유저스크립트 관리자로 작동할 수 있으므로 각 브라우저에 동일한 유저스크립트를 설치할 필요가 없습니다.
 
-Some userscripts are pre-installed, others can be installed manually.
+일부 유저스크립트는 사전 설치되어 있고 다른 유저스크립트는 수동으로 설치할 수 있습니다.
 
-![Extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mac/extensions.png)
+![확장프로그램](https://cdn.adtidy.org/content/kb/ad_blocker/mac/extensions.png)
 
-## AdGuard Assistant (legacy)
+## AdGuard 어시스턴트 (레거시)
 
-This userscript allows you to manage AdGuard protection directly from your browser. While the [new Assistant](/adguard-for-mac/features/browser-assistant) is a browser extension that can be installed from your browser’s store, the legacy Assistant is a userscript that doesn’t require additional installation. Some features are common to both assistants:
+이 유저스크립트를 사용하면 브라우저에서 직접 AdGuard 보호를 관리할 수 있습니다. [새 어시스턴트](/adguard-for-mac/features/browser-assistant)는 브라우저 스토어에서 설치할 수 있는 브라우저 확장 프로그램인 반면, 레거시 어시스턴트는 추가 설치가 필요 없는 유저스크립트입니다. 일부 기능은 두 어시스턴트 모두에 공통으로 적용됩니다.
 
-- Enable or disable protection for a specific website
-- Pause protection for 30 seconds
-- Manually block an ad
-- Report incorrect blocking
+- 특정 웹사이트에 대한 보호 활성화 또는 비활성화
+- 30초 동안 보호 기능 일시 중지
+- 수동으로 광고 차단하기
+- 잘못된 차단 신고하기
 
-However, the new Assistant is more advanced. It also allows you to manage AdGuard protection for all websites, check the website’s certificate, manage HTTPS filtering, and open the filtering log or the app’s settings. We recommend that you use the legacy Assistant only if the new Assistant is not available.
+하지만 새로운 어시스턴트는 더 발전된 기능을 제공합니다. 또한 모든 웹사이트에 대한 AdGuard 보호 관리, 웹사이트 인증서 확인, HTTPS 필터링 관리, 필터링 로그 또는 앱 설정 열기 등의 기능을 사용할 수 있습니다. 새 어시스턴트를 사용할 수 없는 경우에만 레거시 어시스턴트를 사용하는 것이 좋습니다.
 
 ## AdGuard Extra
 
-This userscript solves the most complex ad blocking issues when regular rules aren’t enough. It also prevents websites from circumventing ad blockers and re-inserting blocked ads. We recommend that you keep it enabled at all times.
+이 유저스크립트는 일반적인 규칙으로 충분하지 않을 때 가장 복잡한 광고 차단 문제를 해결합니다. 또한 웹사이트가 광고 차단기를 우회하여 차단된 광고를 다시 삽입하는 것을 방지합니다. 항상 활성화된 상태로 유지하는 것이 좋습니다.
 
-To install a userscript, click `+`. You can find userscripts at [greasyfork.org](https://greasyfork.org/).
+유저스크립트를 설치하려면 `+`를 클릭합니다. [greasyfork.org](https://greasyfork.org/)에서 유저스크립트를 찾을 수 있습니다.

@@ -1,16 +1,16 @@
 ---
-title: Rooted devices
+title: Dispositivos rooteados
 sidebar_position: 7
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artículo trata sobre AdGuard para Android, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel del sistema. Para ver cómo funciona, [descarga la aplicación AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-Due to security measures of the Android OS, some AdGuard features are only available on rooted devices. Here's the list of them:
+Debido a las medidas de seguridad del sistema operativo Android, algunas funciones de AdGuard solo están disponibles en dispositivos rooteados. Aquí está la lista de ellos:
 
-- **HTTPS filtering in most apps** requires [installing a CA certificate into the system store](/adguard-for-android/features/settings#security-certificates), as most apps do not trust certificates in the user store. Installing a certificate into the system store is only possible on rooted devices
-- The [**Automatic proxy** routing mode](/adguard-for-android/features/settings#routing-mode) requires root access due to Android's restrictions on system-wide traffic filtering
-- The [**Manual proxy** routing mode](/adguard-for-android/features/settings#routing-mode) requires root access on Android 10 and above as it's no longer possible to determine the name of the app associated with a connection filtered by AdGuard
+- El **filtrado HTTPS en la mayoría de las aplicaciones** requiere [instalar un certificado CA en el almacén del sistema](/adguard-for-android/features/settings#security-certificates), ya que la mayoría de las aplicaciones no confían en los certificados del almacén del usuario. La instalación de un certificado en el almacén del sistema solo es posible en dispositivos rooteados
+- El [**modo de enrutamiento proxy automático**](/adguard-for-android/features/settings#routing-mode) requiere acceso raíz debido a las restricciones de Android en el filtrado de tráfico en todo el sistema
+- El [**modo de enrutamiento proxy manual**](/adguard-for-android/features/settings#routing-mode) requiere acceso de root en Android 10 y versiones posteriores, ya que ya no es posible determinar el nombre de la aplicación asociada con un conexión filtrada por AdGuard

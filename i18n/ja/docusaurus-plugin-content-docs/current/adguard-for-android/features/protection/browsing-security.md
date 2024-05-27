@@ -1,28 +1,28 @@
 ---
-title: Browsing security
+title: ブラウジング・セキュリティ
 sidebar_position: 6
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Android」について書いています。 デバイス全体を保護するこのアプリは[こちらからダウンロード](https://agrd.io/download-kb-adblock)できます。
 
 :::
 
-The Browsing security module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Browsing security_.
+この機能は、「AdGuardによる保護」タブ（画面下部の左から2番目の盾アイコン）をタップ → 「ブラウジング・セキュリティ」にあります。
 
-Browsing security protects you from visiting phishing and malicious websites. It also warns you about potential malware.
+ブラウジング・セキュリティは、フィッシング詐欺系サイトや悪意のあるウェブサイトへのアクセスを防ぎます。 また、マルウェアのリスクについても警告してくれます。
 
-![Browsing security \*mobile\_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
+![ブラウジングセキュリティ \*mobile\_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
 
-If you're about to visit a dangerous website, Browsing security will show you the following warning:
+危険なウェブサイトにアクセスしようとすると、ブラウジング・セキュリティが以下のような警告を表示します:
 
-![Browsing security warning \*mobile\_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
+![ブラウジングセキュリティの警告 \*mobile\_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
 
 :::warning
 
-Please note that AdGuard for Android is not an antivirus program. It neither stops viruses from downloading nor deletes already downloaded ones. To fully protect your device, we recommend using AdGuard in conjunction with an antivirus
+【注意】AdGuard for Android はウイルス対策ソフトではありません。 ウイルスのダウンロードを阻止したり、すでにダウンロードされたウイルスを削除したりはしません。 デバイスを完全に保護するには、アンチウイルスと AdGuard を併用することをお勧めします。
 
 :::
 
-Browsing security is safe: AdGuard does not know what websites you visit. It uses hash prefixes instead of URLs to check website security. [Learn more about how Browsing security works from this article](/general/browsing-security/).
+ブラウジング・セキュリティは完全に安全な機能です。AdGuardは、あなたが閲覧したウェブサイトの情報を知ることは一切ありません。 URLの代わりにハッシュ接頭辞（hash prefix）という情報を使ってウェブサイトの安全性をチェックするので、サイトのURL情報はAdGuardに送信されません。 [ブラウジング・セキュリティ機能の仕組みについて詳しくは、こちらの記事をご覧ください](/general/browsing-security/)。

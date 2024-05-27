@@ -17,17 +17,17 @@ Some userscripts are pre-installed, others can be installed manually.
 
 ## AdGuard Assistant (legacy)
 
-This userscript allows you to manage AdGuard protection directly from your browser. While the [new Assistant](/adguard-for-mac/features/browser-assistant) is a browser extension that can be installed from your browser’s store, the legacy Assistant is a userscript that doesn’t require additional installation. Some features are common to both assistants:
+This userscript allows you to manage AdGuard protection directly from your browser. Embora o [novo Assistente](/adguard-for-mac/features/browser-assistant) seja uma extensão do navegador que pode ser instalada na loja do seu navegador, o Assistente legacy é um script de usuário que não requer instalação adicional. Algumas funcionalidades são comuns a ambos os assistentes:
 
-- Enable or disable protection for a specific website
-- Pause protection for 30 seconds
-- Manually block an ad
-- Report incorrect blocking
+- Ativar ou desativar a proteção para um site específico
+- Pause a proteção por 30 segundos
+- Bloqueie um anúncio manualmente
+- Reporte bloqueio incorreto
 
-However, the new Assistant is more advanced. It also allows you to manage AdGuard protection for all websites, check the website’s certificate, manage HTTPS filtering, and open the filtering log or the app’s settings. We recommend that you use the legacy Assistant only if the new Assistant is not available.
+No entanto, o novo Assistente é mais avançado. Ele também permite gerenciar a proteção AdGuard para todos os sites, verificar o certificado do site, gerenciar a filtragem HTTPS e abrir o log de filtragem ou as configurações do aplicativo. Recomendamos que você use o Assistente legacy somente se o novo Assistente não estiver disponível.
 
 ## AdGuard Extra
 
-This userscript solves the most complex ad blocking issues when regular rules aren’t enough. It also prevents websites from circumventing ad blockers and re-inserting blocked ads. We recommend that you keep it enabled at all times.
+Este userscript resolve os problemas mais complexos de bloqueio de anúncios quando as regras regulares não são suficientes. Também evita que sites contornem bloqueadores de anúncios e insistam em mostrar anúncios bloqueados. Recomendamos que você o mantenha sempre ativado.
 
-To install a userscript, click `+`. You can find userscripts at [greasyfork.org](https://greasyfork.org/).
+Para instalar um userscript, clique em `+`. Você pode encontrar scripts de usuário em [greasyfork.org](https://greasyfork.org/).

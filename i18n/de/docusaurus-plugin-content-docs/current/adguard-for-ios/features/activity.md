@@ -27,8 +27,8 @@ Tippen Sie auf eine Anfrage, um weitere Details anzuzeigen. Es wird auch Schaltf
 
 ![Details anfordern \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/request_info_en.jpeg)
 
-Above the activity feed, there are _Most active_ and _Most blocked_ companies. Tippen Sie auf die einzelnen Felder, um die Daten der letzten 1.500 Anfragen anzuzeigen.
+Über dem Aktivitäts-Feed gibt es die Kategorien _Aktivste_ und _Meist blockierte_ Unternehmen. Tippen Sie auf die einzelnen Felder, um die Daten der letzten 1.500 Anfragen anzuzeigen.
 
 ### Statistiken {#statistics}
 
-Aside from the _Activity_ screen, you can find global statistics on the home screen and in widgets.
+Abgesehen vom _Aktivität_-Bildschirm finden Sie globale Statistiken auf dem Startbildschirm und in Widgets.

@@ -15,10 +15,10 @@ Die Funktion sperrt Werbung durch das Anwenden von Werbeblockern und sprachspezi
 
 Der Basisschutz blockiert effektiv Werbung auf den meisten Websites. Für eine noch individuellere Werbeblockierung können Sie:
 
-- Enable appropriate language-specific filters — they contain filtering rules for blocking ads on websites in specific languages
+- Entsprechende sprachspezifische Filter aktivieren. Diese enthalten Filterregeln zum Sperren von Werbung auf Websites in bestimmten Sprachen
 
 - Websites zur Freigabeliste hinzufügen — diese Websites werden nicht von AdGuard gefiltert
 
 - Benutzerregeln erstellen— AdGuard wendet sie auf bestimmte Websites an. [Erfahren Sie, wie Sie Ihre eigenen Benutzerregeln erstellen können](/general/ad-filtering/create-own-filters)
 
-![Ad blocking \*mobile\_border](https://cdn.adtidy.org/blog/new/o44x5ad_blocking.png)
+![Werbeblocker \*mobile\_border](https://cdn.adtidy.org/blog/new/o44x5ad_blocking.png)

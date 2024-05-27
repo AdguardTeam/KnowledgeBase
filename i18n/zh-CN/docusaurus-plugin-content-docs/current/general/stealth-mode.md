@@ -1,5 +1,5 @@
 ---
-title: Stealth Mode
+title: 隐身模式
 sidebar_position: 4
 ---
 

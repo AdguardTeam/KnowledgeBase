@@ -179,7 +179,7 @@ On Android 11, Samsung will prevent apps (including AdGuard) from working in bac
 
     **Settings** → **Apps** → (⁝) menu → **Special Access** → **Optimize battery usage** → Find AdGuard on the list and uncheck it
 
-1. Disable automatic optimization. To do so:
+1. Disable automatic optimization. Per farlo:
 
     Open **Battery** → (⁝) menu → Choose **Automation** → Toggle off all of the settings there
 

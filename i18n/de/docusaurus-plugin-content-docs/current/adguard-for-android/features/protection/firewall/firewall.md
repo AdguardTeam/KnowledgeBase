@@ -9,36 +9,36 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 :::
 
-The Firewall module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Firewall_.
+Sie können auf das Firewall-Modul zugreifen, indem Sie im Tab _Schutz_ (zweites linkes Symbol am unteren Rand des Bildschirms) die Option _Firewall_ wählen.
 
-This feature helps manage Internet access for specific apps installed on your device and for the device in general.
+Mit dieser Funktion können Sie den Zugriff auf das Internet für bestimmte Apps, die auf Ihrem Gerät installiert sind, und für das Gerät im Allgemeinen verwalten.
 
 ![Firewall \*mobile\_border](https://cdn.adtidy.org/blog/new/gdn94firewall.png)
 
-#### Global firewall rules
+#### Globale Firewall-Regeln
 
-This section allows you to control Internet access for the entire device.
+In diesem Abschnitt können Sie den Internetzugang für das gesamte Gerät steuern.
 
-![Global firewall rules \*mobile\_border](https://cdn.adtidy.org/blog/new/4zx2nhglobal_rules.png)
+![Globale Firewall-Regeln \*mobile\_border](https://cdn.adtidy.org/blog/new/4zx2nhglobal_rules.png)
 
-These rules apply to all apps on your device unless you've set custom rules for them.
+Diese Regeln gelten für alle Apps auf Ihrem Gerät, es sei denn, Sie haben benutzerdefinierte Regeln für diese festgelegt.
 
-#### Custom firewall rules
+#### Benutzerdefinierte Firewall-Regeln
 
-In this section, you can control Internet access for specific apps — restrict permissions for those that you don’t find trustworthy, or, on the contrary, unblock the ones you want to circumvent the global firewall rules.
+In diesem Abschnitt können Sie den Internetzugang für bestimmte Apps steuern. Sie können die Berechtigungen für die Apps einschränken, die Sie nicht für vertrauenswürdig halten, oder im Gegenteil die Freigabe für die Apps erteilen, die die globalen Firewall-Regeln umgehen sollen.
 
-1. Open _Custom firewall rules_. Under _Apps with custom rules_, tap _Add app_.
+1. Öffnen Sie _Benutzerdefinierte Firewall-Regeln_. Tippen Sie unter _Apps mit benutzerdefinierten Regeln_ auf _App hinzufügen_.
 
-   ![Custom firewall rules \*mobile\_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
+   ![Benutzerdefinierte Firewall-Regeln \*mobile\_border](https://cdn.adtidy.org/blog/new/qkxpecustom_rules.png)
 
-2. Select the app for which you want to set individual rules.
+2. Wählen Sie die App aus, für die Sie individuelle Regeln festlegen möchten.
 
-   ![Adding an app to Custom firewall rules \*mobile\_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
+   ![Hinzufügen einer App zu benutzerdefinierten Firewall-Regeln \*mobile\_border](https://cdn.adtidy.org/blog/new/2db47fadding_app.png)
 
-3. In _Available custom rules_, select the ones you want to configure and tap the “+” icon. The rules will now appear in _Applied custom rules_.
+3. Wählen Sie unter _Verfügbare benutzerdefinierte Regeln_ die Regeln aus, die Sie konfigurieren möchten, und tippen Sie auf das Symbol „+“. Die Regeln werden nun unter _Angewandte benutzerdefinierte Regeln_ angezeigt.
 
-   ![Added rule \*mobile\_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
+   ![Hinzugefügte Regel \*mobile\_border](https://cdn.adtidy.org/blog/new/6fzjladded_rule.png)
 
-4. If you need to block a specific type of connection, toggle the switch to the left. If you want to allow it, leave the switch enabled. **Custom rules override global ones**: any changes you make in _Global firewall rules_ will not affect this app.
+4. Um einen bestimmten Verbindungstyp zu sperren, schieben Sie den Schalter nach links. Wenn Sie die Verbindung zulassen möchten, dann lassen Sie den Schalter eingeschaltet. **Benutzerdefinierte Regeln haben Vorrang vor globalen Regeln**: Alle Änderungen, die Sie in den _Globalen Firewall-Regeln_ vornehmen, haben keine Auswirkungen auf diese App.
 
-To delete a rule or app from _Custom rules_, swipe it to the left.
+Um eine Regel oder App aus _Benutzerdefinierte Regeln_ zu löschen, wischen Sie sie nach links.

@@ -11,11 +11,11 @@ sidebar_position: 2
 
 [AdGuard 浏览器扩展](https://adguard.com/adguard-browser-extension/overview.html)是一个免费扩展，可在五个流行浏览器中使用，包括 Chrome、Firefox、Edge、Opera 和 Yandex 浏览器。 用户可以在浏览器的在线商店和我们的官网上轻松地找到它。
 
-![AdGuard Browser Extension for Chrome \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
+![AdGuard 浏览器扩展 Chrome 版 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
 
 浏览器扩展包括基本的广告拦截功能，但无法与功能完整的桌面程序相比，如 [AdGuard Windows 版](/adguard-for-windows/features/home-screen)和 [AdGuard Mac 版](/adguard-for-mac/features/main) 。
 
-![Available for most popular browsers \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
+![可用于流行浏览器 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
 
 :::note
 

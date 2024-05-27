@@ -1,44 +1,44 @@
 ---
-title: DNS protection
+title: DNS通信を保護
 sidebar_position: 4
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Android」について書いています。 デバイス全体を保護するこのアプリは[こちらからダウンロード](https://agrd.io/download-kb-adblock)できます。
 
 :::
 
-The DNS protection module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _DNS protection_.
+この機能は、「AdGuardによる保護」タブ（画面下部バーメニューで左から2番目の盾アイコン） → 「DNS通信を保護」にあります。
 
 :::tip
 
-DNS protection works differently from regular ad and tracker blocking. You cam [learn more about it and how it works from a dedicated article](https://adguard-dns.io/kb/general/dns-filtering/#how-does-dns-filtering-work)
+「DNS通信を保護」は、通常の広告やトラッカーのブロック機能とは異なる動作をします。 その仕組みについては[こちらの専用記事](https://adguard-dns.io/kb/general/dns-filtering/#how-does-dns-filtering-work)でご確認いただけます。
 
 :::
 
-_DNS protection_ allows you to filter DNS requests with the help of a selected DNS server, DNS filters, and user rules:
+「DNS通信を保護」機能で、選択したDNSサーバー、DNSフィルタ、およびユーザールールを使って、DNSリクエストをフィルタリングすることができます:
 
-- Some DNS servers have blocklists that help block DNS requests to potentially harmful domains
+- DNSサーバーの中には、潜在的に有害なドメインへのDNSリクエストをブロックするためのブロックリストを備えているものがあります。
 
-- In addition to DNS servers, AdGuard can filter DNS requests on its own using a special DNS filter. It contains a large list of ad and tracking domains — requests to them are rerouted to a blackhole server
+- DNSサーバーに加えて、AdGuard は専用のDNSフィルタというものを使用して、DNSリクエストを独自にフィルタリングできます。 DNSフィルタには広告やトラッキング（追跡）ドメインの大規模なリストが含まれており、それらへのリクエストはブラックホールサーバーにリルートされることで遮断されます。
 
-- You can also block and unblock domains by creating user rules. You might need to consult our article about [DNS filtering rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/)
+- また、DNSユーザールールを作成することで、ドメインをブロックしたり、ブロック解除したりすることもできる。 [こちらのDNSフィルタリングルールの構文](https://adguard-dns.io/kb/general/dns-filtering-syntax/)を参照してください。
 
-![DNS protection \*mobile\_border](https://cdn.adtidy.org/blog/new/u8qtxdns_protection.png)
+![DNS 通信を保護 \*mobile\_border](https://cdn.adtidy.org/blog/new/9htftScreenshot_20230621-163736_AdGuard.jpg?mw=1360)
 
-#### DNS server
+#### DNSサーバー
 
-In this section, you can select a DNS server to resolve DNS requests, block ads and trackers, and encrypt DNS traffic. Tap a server to read its full description and select a protocol. If you didn't find the desired server, you can add it manually:
+このセクションでは、DNSリクエストを解決し、広告やトラッカーをDNSレベルでブロックし、DNS通信を暗号化するためにDNSサーバーを選択することができます。 サーバーをタップして詳細な説明を読むことができ、プロトコルを選択します。 使いたいDNSサーバーが見つからなかった場合は、手動でDNSサーバーを追加することができます:
 
-- Tap _Add DNS server_ and enter the server address (or addresses)
+- 「DNSサーバーを追加する」をタップし、DNSサーバーのアドレスを入力します。
 
-- Alternatively, you can select a DNS server from the [list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/) and tap _Add to AdGuard_ next to it
+- または、[既知のDNSプロバイダーのリスト](https://adguard-dns.io/kb/general/dns-providers/)からDNSサーバーを選択し、その横にある「AdGuardnに追加する」をタップすることもできます。
 
-- If you're using a private AdGuard DNS server, you can add it to AdGuard from the [dashboard](https://adguard-dns.io/dashboard/)
+- プライベート AdGuard DNSサーバー をご利用の場合は、[そのダッシュボード](https://adguard-dns.io/dashboard/)から AdGuard for Android アプリにサーバーを追加できます。
 
-By default, _Automatic DNS_ is selected. It sets a DNS server based on your AdGuard and device settings. If you have [integration with AdGuard VPN](/adguard-for-android/features/integration-with-vpn) or another SOCKS5 proxy enabled, it connects to _AdGuard DNS Non-filtering_ or any other server you specify. In all other cases, it connects to the DNS server selected in your device settings.
+デフォルトでは、「自動DNS」が選択されています。 この場合、AdGuard とデバイスの設定に基づき、DNSサーバーを自動で選択します。 [AdGuard VPNとの併用モード](/adguard-for-android/features/integration-with-vpn)または他のSOCKS5プロキシを有効にしている場合、「AdGuard DNS フィルタリングなし」または指定した他のサーバーに接続します。 それ以外の場合は、デバイスの設定で選択したDNSサーバーに接続します。
 
-#### DNS filters
+#### DNSフィルタ
 
-This section allows you to add custom DNS filters and DNS filtering rules. You can find more filters at [filterlists.com](https://filterlists.com/).
+このセクションでは、カスタムDNSフィルタとDNSフィルタリングルールを追加できます。 [filterlists.com](https://filterlists.com)で様々なフィルタを見つけることができます。

@@ -5,7 +5,7 @@ sidebar_position: 3
 
 :::info
 
-本文适用于 Windows 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+本文适用于 Windows 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 要了解其工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
@@ -15,7 +15,7 @@ To analyze and diagnose different problems that may potentially arise, the AdGua
 
     ![Debug logging level *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
 
-1. Reproduce the issue.
+1. 复现问题。
 
     We strongly advise to take note of the exact time when you reproduced the issue: it will help our support team to find relevant log entries and solve the problem faster.
 
@@ -47,7 +47,7 @@ Sometimes support team members may ask you to send *trace* logs. Then you will n
 
 If you have an older version of AdGuard for Windows, run the application with the command C:\"Program Files (x86)"\Adguard\Adguard.exe /trace if you are using 64-bit Windows, and C:\"Program Files"\Adguard\Adguard.exe /trace if you are using 32-bit.
 
-1. Reproduce the issue.
+1. 复现问题。
 
     We strongly advise to take note of the exact time when you reproduced the issue: it will help our support team to find relevant log entries and solve the problem faster.
 

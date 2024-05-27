@@ -1,64 +1,64 @@
 ---
-title: Low-level Settings guide
+title: Guide sur les paramètres de bas niveau
 sidebar_position: 5
 ---
 
 :::info
 
-Cet article parle de AdGuard pour iOS, un bloqueur de contenus multifonctionnel qui protège votre appareil au niveau du système. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Cet article parle de AdGuard pour iOS, un bloqueur de contenus multifonctionnel qui protège votre appareil au niveau du système. Pour voir comment cela fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## How to reach the Low-level settings
+## Comment accéder aux Paramètres de bas niveau
 
 :::caution
 
-Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. This section should only be opened if you know what you are doing, or you were asked to do so by our support team.
+La modification de *Les paramètres de bas niveau* peut entraîner des problèmes de performances d'AdGuard, interrompre la connexion Internet ou compromettre votre sécurité et votre confidentialité. Cette section ne doit être ouverte que si vous savez ce que vous faites ou si notre équipe d'assistance vous a demandé de le faire.
 
 :::
 
-To go to *Low-level settings*, tap the gear icon at the bottom right of the screen to open *Settings*. Select the *General* section and then toggle on the *Advanced mode* switch, after that the *Advanced settings* section will appear below. Tap *Advanced settings* to reach the *Low-level settings* section.
+Pour accéder à *Paramètres de bas niveau*, appuyez sur l'icône d'engrenage en bas à droite de l'écran pour ouvrir *Paramètres*. Sélectionnez la section *Général* , puis activez le commutateur *Mode avancé* , après quoi la section *Paramètres avancés* apparaîtra ci-dessous. Appuyez sur *Paramètres avancés* pour accéder à la section *Paramètres de bas niveau* .
 
-## Low-level settings
+## Paramètres de bas niveau
 
-### Tunnel mode
+### Mode tunnel
 
-There are two main tunnel modes: *Split* and *Full*. *Split-Tunnel* mode provides compatibility of AdGuard and so-called "Personal VPN" apps. In *Full-Tunnel* mode no other VPN can work simultaneously with AdGuard.
+Il existe deux modes de tunnel principaux : *Split* et *Full*. Le mode *Split-Tunnel* assure la compatibilité d'AdGuard et des applications dites "VPN personnel". En mode *Full-Tunnel* aucun autre VPN ne peut fonctionner simultanément avec AdGuard.
 
-There is a specific feature of *Split-Tunnel* mode: if DNS proxy does not perform well, for example, if the response from the AdGuard DNS server was not returned in time, iOS will "amerce" it and reroute traffic through DNS server, specified in iOS settings. No ads are blocked at this time and DNS traffic is not encrypted.
+Il existe une particularité du mode *Split-Tunnel*  : si le proxy DNS ne fonctionne pas bien, par exemple si la réponse du serveur DNS AdGuard n'a pas été renvoyée à temps, iOS le "pénalise" et redirige le trafic via le serveur DNS, spécifié dans les paramètres iOS. Aucune publicité n'est bloquée pour le moment et le trafic DNS n'est pas crypté.
 
-In *Full-Tunnel* mode only the DNS server specified in AdGuard settings is used. If it does not respond, the Internet will simply not work. Enabled *Full-Tunnel* mode may cause the incorrect performance of some programs (for instance, Facetime), and lead to problems with app updates.
+En mode *Full-Tunnel* , seul le serveur DNS spécifié dans les paramètres AdGuard est utilisé. S’il ne répond pas, Internet ne fonctionnera tout simplement pas. L'activation du mode *Full-Tunnel* peut entraîner des performances incorrectes de certains programmes (par exemple, FaceTime) et entraîner des problèmes avec les mises à jour des applications.
 
-By default, AdGuard uses *Split-Tunnel* mode as the most stable option.
+Par défaut, AdGuard utilise le mode *Split-Tunnel* comme option la plus stable.
 
-There is also an additional mode called *Full-Tunnel (without VPN icon)*. This is exactly the same as *Full-Tunnel* mode, but it is set up so that the VPN icon is not displayed in the system line.
+Il existe également un mode supplémentaire appelé *Full-Tunnel (sans icône VPN)*. C'est exactement la même chose que le mode *Full-Tunnel* , mais il est configuré de manière que l'icône VPN ne s'affiche pas dans la ligne système.
 
-### Blocking mode
+### Mode de blocage
 
-In this module you can select the way AdGuard will respond to DNS queries that should be blocked:
+Dans ce module vous pouvez choisir la manière dont AdGuard répondra aux requêtes DNS qui devraient être bloquées :
 
-- Default — respond with zero IP address when blocked by adblock-style rules; respond with the IP address specified in the rule when blocked by /etc/hosts-style rules
-- REFUSED — respond with REFUSED code
-- NXDOMAIN — respond with NXDOMAIN code
-- Unspecified IP — respond with zero IP address
-- Custom IP — respond with a manually set IP address
+- Défaut - réponse avec une adresse IP nulle en cas de blocage par des règles de type adblock ; réponse avec l'adresse IP spécifiée dans la règle en cas de blocage par des règles de type /etc/hosts
+- REFUSED — réponse avec le code REFUSED
+- NXDOMAIN — réponse avec le code NXDOMAIN
+- IP non spécifiée — réponse avec une adresse IP nulle
+- IP personnalisée — réponse avec une adresse IP définie manuellement
 
-### Block IPv6
+### Bloquer IPv6
 
-By moving the toggle to the right, you activate the blocking of IPv6 queries (AAAA requests). AAAA-type DNS requests will not be resolved, hence only IPv4 queries can be processed.
+En déplaçant la bascule vers la droite, vous activez le blocage des requêtes IPv6 (requêtes AAAA). Les requêtes DNS de type AAAA ne seront pas résolues, seules les requêtes IPv4 pourront être traitées.
 
-### Blocked response TTL
+### Réponse TTL bloquée
 
-Here you can set the period for a device to cache the response to a DNS request. During the specified time to live (in seconds) the request can be read from the cache without re-requesting the DNS server.
+Ici, vous pouvez définir la période pendant laquelle un appareil met en cache la réponse à une requête DNS. Pendant la durée de vie spécifiée (en secondes), la requête peut être lue à partir du cache sans redemander au serveur DNS.
 
-### Bootstrap servers
+### Serveurs Bootstrap
 
-For DNS-over-HTTPS, DNS-over-TLS, and DNS-over-QUIC a bootstrap server is required for getting the IP address of the main DNS server. If not specified, the DNS server from iOS settings is used as the bootstrap server.
+Pour DNS-over-HTTPS, DNS-over-TLS et DNS-over-QUIC, un serveur bootstrap d'amorçage est requis pour obtenir l'adresse IP du serveur DNS principal. S'il n'est pas spécifié, le serveur DNS des paramètres iOS est utilisé comme serveur d'amorçage.
 
-### Fallback servers
+### Serveurs Fallback
 
-Here you can specify an alternate server to which a request will be rerouted if the main server fails to respond. If not specified, the system DNS server will be used as the fallback. It is also possible to specify `none`, in this case, there will be no fallback server set and only the main DNS server will be used.
+Ici, vous pouvez spécifier un serveur alternatif vers lequel une demande sera redirigée si le serveur principal ne répond pas. S’il n’est pas spécifié, le serveur DNS du système sera utilisé comme solution de secours. Il est également possible de spécifier `none`, dans ce cas, aucun serveur de secours ne sera défini et seul le serveur DNS principal sera utilisé.
 
-### Background app refresh time
+### Temps de réactualisation de l'app en arrière-plan
 
-Here you can select the frequency at which the application will check for filter updates while in the background. Note that update checks will not be performed more often than the specified period, but the exact intervals may not be respected.
+Ici, vous pouvez sélectionner la fréquence à laquelle l'application vérifiera les mises à jour des filtres en arrière-plan. Il est à noter que les vérifications de mise à jour ne seront pas effectuées plus souvent que la période spécifiée, mais les intervalles exacts pourraient ne pas être respectés.

@@ -9,36 +9,36 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 :::
 
-The DNS protection module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _DNS protection_.
+Sie können auf das DNS-Schutzmodul zugreifen, indem Sie auf den Tab _Schutz_ (zweites linkes Symbol unten auf dem Bildschirm) tippen und dann _DNS-Schutz_ auswählen.
 
 :::tip
 
-DNS protection works differently from regular ad and tracker blocking. You cam [learn more about it and how it works from a dedicated article](https://adguard-dns.io/kb/general/dns-filtering/#how-does-dns-filtering-work)
+Die Funktionsweise des DNS-Schutzes ist anders als die normale Blockierung von Werbung und Trackern. You cam [learn more about it and how it works from a dedicated article](https://adguard-dns.io/kb/general/dns-filtering/#how-does-dns-filtering-work)
 
 :::
 
-_DNS protection_ allows you to filter DNS requests with the help of a selected DNS server, DNS filters, and user rules:
+_DNS-Schutz_ ermöglicht das Filtern von DNS-Anfragen mit Hilfe eines ausgewählten DNS-Servers, DNS-Filtern und Benutzerregeln:
 
-- Some DNS servers have blocklists that help block DNS requests to potentially harmful domains
+- Einige DNS-Server verfügen über Sperrlisten, mit denen DNS-Anfragen an potenziell schädliche Domains blockiert werden können
 
-- In addition to DNS servers, AdGuard can filter DNS requests on its own using a special DNS filter. It contains a large list of ad and tracking domains — requests to them are rerouted to a blackhole server
+- Zusätzlich zu den DNS-Servern kann AdGuard mit Hilfe eines speziellen DNS-Filters DNS-Anfragen selbst filtern. Er enthält eine umfangreiche Liste von Werbe- und Tracking-Domains. Anfragen an diese Domains werden an einen Blackhole-Server umgeleitet
 
-- You can also block and unblock domains by creating user rules. You might need to consult our article about [DNS filtering rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/)
+- Sie können Domains auch sperren und entsperren, indem Sie Benutzerregeln erstellen. Dazu sollten Sie unseren Artikel über [Syntax von DNS-Filterregeln](https://adguard-dns.io/kb/general/dns-filtering-syntax/) lesen
 
 ![DNS-Schutz \*mobile\_border](https://cdn.adtidy.org/blog/new/u8qtxdns_protection.png)
 
 #### DNS-Server
 
-In this section, you can select a DNS server to resolve DNS requests, block ads and trackers, and encrypt DNS traffic. Tap a server to read its full description and select a protocol. If you didn't find the desired server, you can add it manually:
+In diesem Abschnitt können Sie einen DNS-Server auswählen, um DNS-Anfragen aufzulösen, Werbung und Tracker zu blockieren und den DNS-Datenverkehr zu verschlüsseln. Tippen Sie auf einen Server, um seine vollständige Beschreibung zu erfahren und ein Protokoll auszuwählen. Wenn Sie den gewünschten Server nicht gefunden haben, können Sie ihn manuell hinzufügen:
 
-- Tap _Add DNS server_ and enter the server address (or addresses)
+- Tippen Sie auf _DNS-Server hinzufügen_ und geben Sie eine oder mehrere Serveradressen ein
 
-- Alternatively, you can select a DNS server from the [list of known DNS providers](https://adguard-dns.io/kb/general/dns-providers/) and tap _Add to AdGuard_ next to it
+- Alternativ können Sie auch einen DNS-Server aus der [Liste der bekannten DNS-Anbieter](https://adguard-dns.io/kb/general/dns-providers/) auswählen und daneben auf _Zu AdGuard hinzufügen_ tippen
 
-- If you're using a private AdGuard DNS server, you can add it to AdGuard from the [dashboard](https://adguard-dns.io/dashboard/)
+- Wenn Sie einen privaten AdGuard-DNS-Server verwenden, können Sie ihn über das [Dashboard](https://adguard-dns.io/dashboard/) zu AdGuard hinzufügen
 
-By default, _Automatic DNS_ is selected. It sets a DNS server based on your AdGuard and device settings. If you have [integration with AdGuard VPN](/adguard-for-android/features/integration-with-vpn) or another SOCKS5 proxy enabled, it connects to _AdGuard DNS Non-filtering_ or any other server you specify. In all other cases, it connects to the DNS server selected in your device settings.
+Standardmäßig ist _Automatisches DNS_ ausgewählt. Es legt einen DNS-Server fest, der auf Ihren AdGuard- und Geräteeinstellungen basiert. Wenn Sie [Integration mit AdGuard VPN](/adguard-for-android/features/integration-with-vpn) oder einen anderen SOCKS5-Proxy aktiviert haben, wird eine Verbindung zu _AdGuard DNS ohne Filterung_ oder einem anderen von Ihnen angegebenen Server hergestellt. In allen anderen Fällen wird eine Verbindung mit dem DNS-Server hergestellt, der in Ihren Geräteeinstellungen ausgewählt wurde.
 
 #### DNS-Filter
 
-This section allows you to add custom DNS filters and DNS filtering rules. Weitere Filter finden Sie auf [filterlists.com](https://filterlists.com/).
+In diesem Abschnitt können Sie benutzerdefinierte DNS-Filter und DNS-Filterregeln hinzufügen. Weitere Filter finden Sie auf [filterlists.com](https://filterlists.com/).

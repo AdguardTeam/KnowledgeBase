@@ -17,7 +17,7 @@ AdGuard 独立程序相对于浏览器扩展程序的主要优势在于，该程
 
 AdGuard 浏览器扩展免费且易于安装，并具有用于阻止广告和对抗在线威胁的过滤器，而完整的应用程序更强大，还具有一系列高级功能。 所有差异请参阅下表。
 
-![Extension vs. App \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_comparison.png)
+![扩展VS应用 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_comparison.png)
 
 `1` 受浏览器的限制，且仅能在对应浏览器中有效；
 

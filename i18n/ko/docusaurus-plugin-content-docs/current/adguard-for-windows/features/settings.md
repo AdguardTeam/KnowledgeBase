@@ -49,7 +49,7 @@ You can flexibly adjust the work of Stealth Mode: for instance, you can prohibit
 
 To learn everything about Stealth Mode and its many options, [read this article](/general/stealth-mode).
 
-### Browsing security
+### 브라우징 보안
 
 Browsing security gives strong protection against malicious and phishing websites. No, AdGuard for Windows is not an antivirus. It will neither stop the download of a virus when it's already started, nor delete the already existing ones. But it will warn you if you're about to proceed to a website whose domain has been added to our "untrusted sites" database, or to download a file from such website. You can find more information about how this module works in the [dedicated article](/general/browsing-security).
 

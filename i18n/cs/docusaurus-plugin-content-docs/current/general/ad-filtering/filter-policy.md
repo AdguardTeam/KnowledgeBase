@@ -62,6 +62,7 @@ Cílem filtrů pro blokování reklam je blokovat všechny typy reklam na webov�
 - Vsunuté reklamy — reklamy přes celou obrazovku na mobilních zařízeních, které zakrývají rozhraní aplikace nebo webového prohlížeče
 - Pozůstatky reklam, které zabírají velké plochy nebo vyčnívají na pozadí a přitahují pozornost návštěvníků (kromě těch sotva znatelných nebo nepřehlédnutelných)
 - Anti-adblock reklama — alternativní reklama zobrazovaná na webu, když je hlavní reklama blokována
+- Nástražné prvky, které používá více známých skriptů pro detekci blokování reklam ke zjištění přítomnosti blokátoru reklam za různými účely, včetně změny způsobu zobrazování reklam, snímání digitálních otisků atd.
 - Vlastní reklama webu, pokud byla zablokována obecnými pravidly filtrování (viz *Omezení a výjimky*)
 - Anti-adblock skripty, které brání používání stránek (viz *Omezení a výjimky*)
 - Reklama vložená malwarem, pokud jsou poskytnuty podrobné informace o způsobu jejího načtení nebo krocích pro reprodukci
@@ -113,6 +114,7 @@ Co je blokováno:
 - Sledovací cookies
 - Sledovací pixely
 - Sledovací API prohlížečů
+- Detekce blokátoru reklam pro účely sledování
 - Funkce Privacy Sandbox v Google Chrome a jeho odnože používané pro sledování (Google Topics API, Protected Audience API)
 
 **Filtr sledování URL** je určen k odstranění sledovacích parametrů z webových adres

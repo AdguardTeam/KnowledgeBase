@@ -16,7 +16,7 @@ The _DNS_ section contains one feature, _DNS protection_, with multiple settings
 - Providers
 - フィルタ
 - Blocklist
-- Allowlist
+- ホワイトリスト
 
 ![DNS](https://cdn.adtidy.org/content/kb/ad_blocker/mac/dns.png)
 
@@ -36,6 +36,6 @@ Domains from this list will be blocked. To add a domain, click `+`. You can add 
 
 To export or import a blocklist, open the context menu.
 
-### Allowlist
+### ホワイトリスト
 
 Domains from this list aren’t filtered. To add a domain, click `+`. To export or import an allowlist, open the context menu.

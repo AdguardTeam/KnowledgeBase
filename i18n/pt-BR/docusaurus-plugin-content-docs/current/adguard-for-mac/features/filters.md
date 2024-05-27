@@ -5,29 +5,29 @@ sidebar_position: 3
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artigo é sobre o AdGuard para Mac, um bloqueador de anúncios multifuncional que protege seu dispositivo no nível do sistema. Para ver como funciona, [baixe o aplicativo AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 ## Filtros
 
-![Filters](https://cdn.adtidy.org/content/kb/ad_blocker/mac/filters.png)
+![Filtros](https://cdn.adtidy.org/content/kb/ad_blocker/mac/filters.png)
 
-Filter lists are sets of rules written using a [special syntax](/general/ad-filtering/create-own-filters). AdGuard interprets and implements these rules to block ads, trackers, and annoyances. Some filters (for example, AdGuard Base filter, Tracking Protection filter, or EasyList) are pre-installed, others can be installed additionally.
+Listas de filtros são conjuntos de regras escritas usando uma [sintaxe especial](/general/ad-filtering/create-own-filters). O AdGuard interpreta e implementa essas regras para bloquear anúncios, rastreadores e elementos incômodos. Alguns filtros (por exemplo, filtro AdGuard Base, Filtro de proteção contra rastreamento ou EasyList) são pré-instalados, outros podem ser instalados adicionalmente.
 
-We recommend enabling the following filters:
+Recomendamos ativar os seguintes filtros:
 
 - Filtro base do AdGuard
-- AdGuard Tracking Protection filter and AdGuard URL Tracking filter
-- AdGuard Annoyances filter
-- Filters for your language
+- Filtro de proteção contra rastreamento do AdGuard e filtro de rastreamento de URL do AdGuard
+- Filtro de aborrecimentos do AdGuard
+- Filtros para o seu idioma
 
-These filters are important for blocking most ads, trackers, and annoying elements. For more advanced ad blocking, you can use custom filters and user rules.
+Esses filtros são importantes para bloquear a maioria dos anúncios, rastreadores e elementos irritantes. Para um bloqueio de anúncios mais avançado, é possível usar filtros personalizados e regras de usuário.
 
-To add a filter, click `+` in the lower left corner of the list. To enable a filter, select its checkbox.
+Para adicionar um filtro, clique em `+` no canto inferior esquerdo da lista. Para ativar um filtro, marque sua caixa de seleção.
 
 ## Regras de usuário
 
-In AdGuard for Mac, user rules are located in _Filters_. To create a rule, click `+`. To enable a rule, select its checkbox. To export or import rules, open the context menu.
+No AdGuard para Mac, as regras do usuário estão localizadas em _Filtros_. Para criar uma regra, clique em `+`. Para ativar uma regra, marque sua caixa de seleção. Para exportar ou importar regras, abra o menu contextual.
 
-![User rules: context menu](https://cdn.adtidy.org/content/kb/ad_blocker/mac/rules.png)
+![Regras de usuário: menu contextual](https://cdn.adtidy.org/content/kb/ad_blocker/mac/rules.png)

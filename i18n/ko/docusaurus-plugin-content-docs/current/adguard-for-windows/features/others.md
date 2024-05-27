@@ -11,13 +11,13 @@ sidebar_position: 4
 
 There are other useful AdGuard options that shouldn't go unnoticed in this article, since they add much to user experience.
 
-### Support
+### 고객 지원
 
 ![Support \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/support.png)
 
 By clicking the Support tab you will open a dialog box through which you can report a bug, submit a feature request, or simply share your opinion of the product.
 
-### License
+### 라이선스
 
 ![License \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/license.png)
 

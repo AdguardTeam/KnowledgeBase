@@ -1,50 +1,50 @@
 ---
-title: Statistics
+title: 통계
 sidebar_position: 3
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+이 글은 시스템 수준에서 기기를 보호하는 광고 차단기인 Android용 AdGuard에 관한 내용입니다. 작동 방식을 확인하려면 [AdGuard 앱을 다운로드](https://agrd.io/download-kb-adblock)하세요.
 
 :::
 
-The _Statistics_ module can be accessed by tapping the _Statistics_ tab (fourth icon from the left at the bottom of the screen). This feature gives you a complete picture of what is happening with the traffic on your device: how many requests are being sent and to which companies, how much data is being uploaded and downloaded, what requests are being blocked, and more. You can choose to display the statistics for the selected time period: 24 hours, 7 days, 30 days, or all time.
+**통계 모듈**은 **통계** 탭(화면 하단 왼쪽에서 네 번째 아이콘)을 눌러 액세스할 수 있습니다. 이 기능을 사용하면 얼마나 많은 요청이 어떤 회사로 전송되고 있는지, 얼마나 많은 데이터가 업로드 및 다운로드되고 있는지, 어떤 요청이 차단되고 있는지 등 기기에서 발생하는 트래픽에 대한 전체적인 정보를 파악할 수 있습니다. 24시간, 7일, 30일 또는 전체 기간 중 선택한 기간에 대한 통계를 표시하도록 선택할 수 있습니다.
 
-![Statistics \*mobile\_border](https://cdn.adtidy.org/blog/new/czy5rStatistics.jpeg?mw=1360)
+![통계 \*mobile\_border](https://cdn.adtidy.org/blog/new/czy5rStatistics.jpeg?mw=1360)
 
-The stats are categorized into different sections.
+통계는 다른 섹션으로 분류됩니다.
 
-### Requests
+### 요청
 
-This section shows the number of blocked ads, trackers, and the total number of requests. You can filter requests by data type: mobile data, Wi-Fi, or all data combined.
+이 섹션에는 차단된 광고 수, 추적기 및 총 요청 수가 표시됩니다. 모바일 데이터, Wi-Fi 또는 모든 데이터를 결합한 데이터 등 데이터 유형별로 요청을 필터링할 수 있습니다.
 
-_Recent activity_, formerly known as _Filtering log_, shows the last 10,000 requests processed by AdGuard. Tap three-dots menu (⋮) and then _Customize_ to filter requests by status (_regular_, _blocked_, _modified_, or _allowlisted_) or origin (_first-party_ or _third-party_).
+이전에는 **필터링 로그**로 알려진 **최근 활동**에는 AdGuard에서 처리한 최근 10,000건의 요청이 표시됩니다. 점 3개 메뉴(⋮)를 탭한 다음 **사용자 지정**을 탭하여 상태(**일반**, **차단됨**, **수정됨**, **허용됨**) 또는 출처(**퍼스트파티** 또는 **서드파티**)별로 요청을 필터링할 수 있습니다.
 
-You can tap a request to view its details and add a blocking or unblocking rule in one tap.
+요청을 탭하여 세부 정보를 확인하고 차단 또는 차단해제 규칙을 추가할 수 있습니다.
 
-### Data usage
+### 데이터 사용량
 
-This section shows the amount of downloaded and uploaded data and saved traffic for the selected data type (mobile data, Wi-Fi, or all). Tap _saved_, _uploaded_, or _downloaded_ to view the graph of data usage over time.
+이 섹션에는 선택한 데이터 유형(모바일 데이터, Wi-Fi 또는 전체)에 대한 다운로드 및 업로드된 데이터와 절약된 트래픽의 양이 표시됩니다. **절약됨**, _업로드됨_ 또는 _다운로드됨_을 탭하면 시간별 데이터 사용량 그래프를 볼 수 있습니다.
 
-### Apps
+### 앱
 
-This section displays stats for all apps installed on your device. You can sort apps by the number of blocked ads or trackers or by the number of sent requests.
+이 섹션에는 기기에 설치된 모든 앱에 대한 통계가 표시됩니다. 차단된 광고 또는 추적기의 수 또는 전송된 요청의 수에 따라 앱을 정렬할 수 있습니다.
 
-Tap _View all apps_ to expand the list of your apps, sorted by the number of ads, trackers, or requests.
+**모든 애플리케이션 보기**를 탭하면 광고, 추적기 또는 요청 수에 따라 정렬된 앱 목록이 펼쳐집니다.
 
-![List of apps \*mobile\_border](https://cdn.adtidy.org/blog/new/toq0mkScreenshot_20230627-235219_AdGuard.jpg)
+![앱 목록 \*mobile\_border](https://cdn.adtidy.org/blog/new/toq0mkScreenshot_20230627-235219_AdGuard.jpg)
 
-If you tap an app, you can see its full stats: the requests it sends and the domains and companies it reaches out to.
+앱을 클릭하면 전송된 요청 수, 접속한 도메인 및 회사 등의 전체 통계를 확인할 수 있습니다.
 
-### Companies
+### 기업
 
-This section displays companies that your device reaches out to. What does it mean? AdGuard detects the domains your device sends requests to and determines which companies they belong to. A database of companies can be found on [GitHub](https://github.com/AdguardTeam/companiesdb).
+이 섹션에는 기기가 연결할 수 있는 회사가 표시됩니다. 그것은 무엇을 의미합니까? AdGuard는 기기가 요청을 보내는 도메인을 감지하고 해당 도메인이 속한 회사를 확인합니다. 기업 데이터베이스는 [GitHub](https://github.com/AdguardTeam/companiesdb)에서 확인할 수 있습니다.
 
-### DNS statistics
+### DNS 통계
 
-This section shows data about the requests handled by _DNS protection_. You can see the total number of requests sent and how many were blocked by AdGuard in figures and graphs. You'll also find statistics on the amount of traffic saved and data downloaded and uploaded.
+이 섹션에는 **DNS 보호**가 처리하는 요청에 대한 데이터가 표시됩니다. 전송된 총 요청 수와 AdGuard에 의해 차단된 요청 수를 그림과 그래프로 확인할 수 있습니다. 또한 절약된 트래픽 양과 다운로드 및 업로드된 데이터에 대한 통계도 확인할 수 있습니다.
 
-### Battery usage
+### 배터리 사용량
 
-This section displays statistics on the device resources used by AdGuard during the last 24 hours. The data may differ from the stats displayed in your device settings. This happens because the system attributes the traffic of all filtered apps to AdGuard. Thus, the device shows that AdGuard consumes more resources than it actually does. [Read more about battery and traffic consumption issues](/adguard-for-android/solving-problems/battery/).
+이 섹션에는 지난 24시간 동안 AdGuard에서 사용한 기기 리소스에 대한 통계가 표시됩니다. 데이터는 기기 설정에 표시된 통계와 다를 수 있습니다. 이는 시스템이 필터링된 모든 앱의 트래픽을 AdGuard에 귀속시키기 때문에 발생합니다. 따라서 이 기기는 AdGuard가 실제보다 더 많은 리소스를 소비한다는 것을 보여줍니다. [배터리 및 트래픽 소비 문제에 대해 자세히 알아보기](/adguard-for-android/solving-problems/battery/).

@@ -101,7 +101,7 @@ If this setting is enabled, AdGuard will capture HAR files. It will create a dir
 
 Use it only for debugging purposes!
 
-### HTTPS filtering
+### HTTPS 필터링
 
 #### Encrypted Client Hello
 
