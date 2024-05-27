@@ -47,4 +47,4 @@ To delete a rule or app from *Custom rules*, swipe it to the left.
 
 If enabled, this feature notifies you when an app tries to break one of the Firewall rules set for that app (for example, to access mobile data when it shouldn’t). You can turn notifications on and off for all apps or for each app separately.
 
-Tap on the notification to access the app’s Firewall settings or disable all Firewall rules for that app by tapping the corresponding button in the notification. Note that if multiple notifications for several apps would be shown, they will be bundled into a single one instead.
+Tap the notification to access the app’s Firewall settings, or disable all Firewall rules for that app by tapping the corresponding button in the notification. Note that if notifications for multiple apps would be displayed, they will be bundled into a single notification instead.
