@@ -1,54 +1,54 @@
 ---
-title: Other features
+title: Autres fonctions
 sidebar_position: 7
 ---
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Cet article parle de AdGuard pour iOS, un bloqueur de contenus multifonctionnel qui protège votre appareil au niveau du système. Pour voir comment cela fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-While Safari content blocking and DNS protection are indisputably two major modules of AdGuard/AdGuard Pro, there are some other minor features that don't fall into either of them directly but still can be useful and are worth knowing about.
+Bien que le blocage de contenu Safari et la protection DNS soient incontestablement deux modules majeurs d'AdGuard/AdGuard Pro, il existe d'autres fonctionnalités mineures qui ne relèvent directement d'aucun d'eux, mais qui peuvent néanmoins être utiles et méritent d'être connues.
 
-### **Dark theme**
+### **Thème sombre**
 
-![Light theme \*mobile\_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
+![Thème clair \*mobile\_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
 
-![Dark theme \*mobile\_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
+![Thème sombre \*mobile\_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
 
-Residing right at the top of **Settings** → **General** screen, this setting allows you to switch between dark and light themes.
+Situé juste en haut de l'écran **Paramètres** → **Général**, ce paramètre vous permet de basculer entre les thèmes sombres et clairs.
 
 ### **Widgets**
 
 ![Widgets \*mobile](https://cdn.adtidy.org/public/Adguard/Release_notes/iOS/v4.0/widget_en.jpg)
 
-AdGuard supports widgets that provide quick access to Safari content blocking and DNS protection switches, and also show global requests stats.
+AdGuard prend en charge les widgets qui fournissent un accès rapide aux commutateurs de blocage de contenu Safari et de protection DNS, et affichent également les statistiques globales des requêtes.
 
-### **Auto-update over Wi-Fi only**
+### **Mises à jour automatiques en Wi-Fi uniquement**
 
-If this setting is enabled, AdGuard will use only Wi-Fi for background filter updates.
+Si cette option est activée, AdGuard utilisera uniquement le Wi-Fi pour les mises à jour de filtres en arrière-plan.
 
-### **Invert the Allowlist**
+### **Inverser la liste d'autorisation**
 
-An alternative mode for Safari filtering, it unblocks ads everywhere except for the specified websites from the list. Disabled by default.
+Mode alternatif au filtrage Safari, il débloque les publicités partout, à l'exception des sites web spécifiés dans la liste. Désactivé par défaut.
 
-### **Advanced mode**
+### **Mode Avancé**
 
-**Advanced mode** unlocks **Advanced settings**. We don't recommend messing with those, unless you know what you're doing or you have consulted with technical support first.
+Le **Mode avancé** déverrouille les **Paramètres avancés**. Nous vous déconseillons de jouer avec ceux-ci, à moins que vous sachiez ce que vous faites ou que vous ayez d'abord consulté l'assistance technique.
 
-### **Reset statistics**
+### **Réinitialiser les statistiques**
 
-Clears all statistical data, such as number of requests, etc.
+Efface toutes les données statistiques, telles que le nombre de requêtes, etc.
 
-### **Reset settings**
+### **Réinitialiser les paramètres**
 
-This option will reset all your settings.
+Cette option réinitialisera tous vos paramètres.
 
-### **Support**
+### **Assistance**
 
-Use this option to contact support, report a missed ad (although we advise to use the Assistant or AdGuard's Safari Web extension for your own convenience), export logs or to make a feature request.
+Utilisez cette option pour contacter l'assistance, signaler une annonce manquée (bien que nous vous conseillons d'utiliser l'Assistant ou l'extension Safari d'AdGuard pour votre propre commodité), exporter des journaux ou pour faire une demande de fonctionnalité.
 
-### **About**
+### **À propos**
 
-Contains the current version of the app and an assortment of rarely needed options and links.
+Contient la version actuelle de l'application et un assortiment d'options et de liens rarement nécessaires.

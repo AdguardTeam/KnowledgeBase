@@ -205,7 +205,7 @@ If Custom IP address is selected in Blocking mode for hosts rules or Blocking mo
 
 If Custom IP address is selected in Blocking mode for hosts rules or Blocking mode for adblock-style rules, this IP address will be returned in response to blocked AAAA requests. If none are specified, AdGuard will reply with the default "Refused" error.
 
-### Fallback servers
+### Server di fallback
 
 Here you can specify an alternate DNS server to which a DNS request will be rerouted if the main server fails to respond within the timeout period specified in the next section. There are three options to choose from:
 

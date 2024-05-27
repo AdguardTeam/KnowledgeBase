@@ -1,60 +1,74 @@
 ---
-title: DNS protection
+title: Protección DNS
 sidebar_position: 2
 ---
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artículo trata sobre AdGuard para iOS, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel del sistema. Para ver cómo funciona, [descarga la aplicación AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-[DNS protection module](https://adguard-dns.io/kb/general/dns-filtering/) enhances your privacy by encrypting your DNS traffic. Unlike with Safari content blocking, DNS protection works system-wide, i.e. beyond Safari, in apps and other browsers. You have to enable this module before you're able to use it. You can do this on the home screen by tapping the shield icon at the top of the screen, or by going to the _Protection_ → _DNS protection_ tab.
+El [Módulo de Protección DNS](https://adguard-dns.io/kb/general/dns-filtering/) mejora tu privacidad al cifrar el tráfico DNS. A diferencia del bloqueo de contenido de Safari, la Protección DNS funciona a nivel del sistema, es decir, más allá de Safari, en aplicaciones y otros navegadores. Tienes que habilitar este módulo antes de poder usarlo. Puedes hacer esto en la pantalla de inicio tocando el icono de escudo en la parte superior de la pantalla, o yendo a la pestaña _Protección_ → _Protección DNS_.
 
 :::note
 
-To be able to manage DNS settings, AdGuard apps require establishing a local VPN. It will not route your traffic through any remote servers. Nevertheless, the system will ask you to confirm access permission.
+Para poder administrar la configuración de DNS, las aplicaciones de AdGuard requieren establecer una VPN local. No enrutará tu tráfico a través de ningún servidor remoto. Sin embargo, el sistema te pedirá que confirmes el permiso de acceso.
 
 :::
 
-### DNS implementation {#dns-implementation}
+### Implementación de DNS {#dns-implementation}
 
-![DNS implementation screen \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/implementation_en.jpeg)
+![Pantalla de implementación de DNS \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/implementation_en.jpeg)
 
-This section has two options: AdGuard and Native implementation. Basically, these are two methods of setting up DNS.
+Esta sección tiene dos opciones: AdGuard e implementación nativa. Básicamente, estos son dos métodos de configuración de DNS.
 
-In Native implementation, the DNS is handled by the system and not the app. This means that AdGuard doesn't have to create a local VPN. Sadly, this will not help you circumvent system restrictions and use AdGuard alongside other VPN-based applications — if any VPN is enabled, native DNS is ignored. Consequently, you won't be able to filter traffic locally or to use our brand new [DNS-over-QUIC protocol (DoQ)](https://adguard.com/en/blog/dns-over-quic.html).
+En la implementación nativa, el DNS es manejado por el sistema y no por la aplicación. Esto significa que AdGuard no tiene que crear un VPN local. Lamentablemente, esto no te ayudará a evitar las restricciones del sistema y utilizar AdGuard junto con otras aplicaciones basadas en VPN; si alguna VPN está habilitada, se ignora el DNS nativo. En consecuencia, no podrás filtrar el tráfico localmente ni usar nuestro nuevo [protocolo DNS mediante QUIC (DoQ)](https://adguard.com/es/blog/dns-over-quic.html).
 
-### DNS servers {#dns-servers}
+### Servidores DNS {#dns-servers}
 
-The next section you'll see on the DNS Protection screen is DNS server. It shows the currently selected DNS server and encryption type. To change either, tap the button to enter the DNS server screen.
+La próxima sección que verás en la pantalla de Protección DNS es servidores DNS. Muestra el servidor DNS actualmente seleccionado y el tipo de cifrado. Para cambiar uno u otro, toca el botón para entrar en la pantalla de servidores DNS.
 
-![DNS servers \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_server_en.jpeg)
+![Servidores DNS \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_server_en.jpeg)
 
-Servers differ by their speed, employed protocol, trustworthiness, logging policy, etc. By default, AdGuard will suggest several DNS servers from among the most popular ones (including AdGuard DNS). Tap any to change the encryption type (if such option is provided by the server's owner) or to view the server's homepage. We added labels such as `No logging policy`, `Ad blocking`, `Security` to help you make a choice.
+Los servidores difieren por su velocidad, protocolo utilizado, confiabilidad, política de registros, etc. De forma predeterminada, AdGuard sugerirá varios servidores DNS entre los más populares (incluido AdGuard DNS). Toca cualquier opción para cambiar el tipo de cifrado (si tal opción es proporcionada por el propietario de los servidores) o para ver la página de inicio del servidor. Añadimos etiquetas como `Política de no registro`, `Bloqueo de anuncios`, `Seguridad` para ayudarte a tomar una decisión.
 
-In addition, at the bottom of the screen there is an option to add a custom DNS server. It supports regular, DNSCrypt, DNS-over-HTTPS, DNS-over-TLS, and DNS-over-QUIC servers.
+Además, en la parte inferior de la pantalla hay una opción para agregar un servidor DNS personalizado. Admite servidores regulares, DNSCrypt, DNS-over-HTTPS, DNS-over-TLS y DNS-over-QUIC.
 
-### Network settings {#network-settings}
+#### Autenticación básica de HTTP para DNS-over-HTTPS
 
-![Network settings screen \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/network_settings_en.jpeg)
+Esta fuinción lleva las capacidades de autenticación del protocolo HTTP al DNS, que no tiene autenticación incorporada. La autenticación en DNS es útil si deseas restringir el acceso a tu servidor DNS personalizado a usuarios específicos.
 
-Users can also handle their DNS security on the Network settings screen. _Filter mobile data_ and _Filter Wi-Fi_ enable or disable DNS protection for the respective network types. Further down, at _Wi-Fi exceptions_, you can exclude particular Wi-Fi networks from DNS protection (for example, you might want to exclude your home network if you use [AdGuard Home](https://adguard.com/adguard-home/overview.html)).
+Para habilitar esta función:
 
-### DNS filtering {#dns-filtering}
+1. En AdGuard DNS, ve a _Configuración de servidores_ → _Dispositivos_ → _Configuración_ y cambia el servidor DNS al que tiene autenticación. Al hacer clic en _Denegar otros protocolos_, se eliminarán otras opciones de uso de protocolo, dejando solo la autenticación DNS-over-HTTPS habilitada y evitando su uso por peticiones de terceros. Copia la dirección generada.
 
-DNS filtering allows you to customize your DNS traffic by enabling AdGuard DNS filter, adding custom DNS filters, and using the DNS blocklist/allowlist.
+![DNS-over-HTTPS con autenticación](https://cdn.adtidy.org/content/release_notes/dns/v2-7/http-auth/http-auth-en.png)
 
-How to access:
+1. En AdGuard para iOS, ve a la pestaña de _Protección_ → _Protección DNS_ → _Servidores DNS_ y pega la dirección generada en el campo _Agregar un servidor DNS personalizado_. Guarda y selecciona la nueva configuración.
 
-_Protection_ (the shield icon in the bottom menu bar) → _DNS protection_ → _DNS filtering_
+Para verificar si todo está configurado correctamente, visita nuestra [página de diagnóstico](https://adguard.com/en/test.html).
 
-![DNS filtering screen \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_filtering_en.jpeg)
+### Configuración de red {#network-settings}
 
-#### DNS filters {#dns-filters}
+![Pantalla de configuración de red \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/network_settings_en.jpeg)
 
-Similar to filters that work in Safari, DNS filters are sets of rules written according to special [syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/). AdGuard will monitor your DNS traffic and block requests that match one or more rules. You can use filters such as [AdGuard DNS filter](https://github.com/AdguardTeam/AdguardSDNSFilter) or add hosts files as filters. Multiple filters can be added simultaneously. To know how to do it, get acquainted with [this exhaustive manual](adguard-for-ios/solving-problems/system-wide-filtering).
+Los usuarios también pueden gestionar su seguridad DNS en la pantalla de configuración de red. _Filtrar datos móviles_ y _Filtrar Wi-Fi_ habilitan o deshabilitan la protección DNS para los respectivos tipos de red. Más abajo, en _Excepciones de Wi-Fi_, puedes excluir redes Wi-Fi particulares de la protección DNS (por ejemplo, es posible que desees excluir tu red doméstica si utilizas [AdGuard Home](https://adguard.com/adguard-home/overview.html)).
 
-#### Allowlist and Blocklist {#allowlist-blocklist}
+### Filtrado de DNS {#dns-filtering}
 
-On top of DNS filters, you can have targeted impact on DNS filtering by adding single domains to Blocklist or to Allowlist. Blocklist even supports the same DNS syntax, and both of them can be imported and exported, just like Allowlist in Safari content blocking.
+El filtrado de DNS te permite personalizar tu tráfico DNS al habilitar el filtro de DNS de AdGuard DNS, agregar filtros DNS personalizados y utilizar la lista de bloqueo/lista de permitidos de DNS.
+
+Cómo acceder:
+
+_Protección_ (el icono de escudo en la barra de menú inferior) → _Protección DNS_ → _Filtrado DNS_
+
+![Pantalla de filtrado DNS \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_filtering_en.jpeg)
+
+#### Filtrado de DNS {#dns-filters}
+
+Similar to filters that work in Safari, DNS filters are sets of rules written according to special [syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/). AdGuard supervisará tu tráfico DNS y bloqueará las peticiones que cumplan una o más reglas. Puedes utilizar filtros como el [filtro de AdGuard DNS](https://github.com/AdguardTeam/AdguardSDNSFilter) o agregar archivos de hosts como filtros. Se pueden añadir varios filtros simultáneamente. Para saber cómo hacerlo, familiarízate con [este manual](adguard-for-ios/solving-problems/system-wide-filtering).
+
+#### Lista de permitidos y Lista de bloqueo {#allowlist-blocklist}
+
+Además de los filtros de DNS, puedes tener un impacto específico en el filtrado de DNS agregando dominios individuales a la lista de bloqueo o a la lista de permitidos. La lista de bloqueo incluso soporta la misma sintaxis DNS, y ambos pueden ser importados y exportados, al igual que la lista de permitidos en el bloqueo de contenido de Safari.

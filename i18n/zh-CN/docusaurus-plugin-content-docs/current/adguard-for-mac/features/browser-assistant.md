@@ -1,63 +1,63 @@
 ---
-title: Browser Assistant
+title: 浏览器助手
 sidebar_position: 8
 ---
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+本文介绍了 Mac 版的 AdGuard，它是一款多功能广告拦截器，可在系统级别保护设备。 要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)
 
 :::
 
-AdGuard Browser Assistant allows you to manage AdGuard protection directly from your browser.
+AdGuard 浏览器助手让用户直接从浏览器管理 AdGuard 保护。
 
-![The Assistant window \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_window.png)
+![助手窗口 \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_window.png)
 
 ## 工作原理
 
-AdGuard Browser Assistant is a browser extension. It allows you to quickly manage the AdGuard app:
+AdGuard 浏览器助手是一个浏览器扩展。 它让用户快速管理 AdGuard 应用程序：
 
-- Enable or disable protection for a specific website (a toggle under the website name)
-- Pause protection for 30 seconds
-- Disable protection (the pause icon in the upper right corner)
-- Manually block an ad
-- Open the filtering log
-- Report incorrect blocking
-- Open AdGuard settings
-- View website certificate and manage HTTPS filtering (the lock icon next to the website name)
+- 启用或禁用特定网站的保护功能（网站名称下的切换按钮）
+- 禁用保护 30 秒
+- 禁用保护（右上角的暂停图标）
+- 手动拦截广告
+- 打开过滤日志
+- 报告错误拦截
+- 打开 AdGuard 设置
+- 查看网站证书并管理 HTTPS 过滤（网站名称旁边的锁定图标）
 
 ## 安装方式
 
-When you install AdGuard for Mac, you will be prompted to install Browser Assistant for your default browser. If you skip this step, you can install it later.
+安装 AdGuard Mac 版时，系统会提示您为默认浏览器安装浏览器助手。 如果跳过此步骤，可以稍后安装。
 
-**From settings**:
+设置步骤如下：
 
-1. Open the AdGuard menu.
-2. Click the gear icon and select _Preferences_.
-3. Switch to the _Assistant_ tab.
-4. Click _Get the Extension_ next to your default browser.
-5. Install Assistant from your browser’s extension store.
+1. 开启 AdGuard 菜单。
+2. 单击齿轮图标并选择「首选项」。
+3. 切换到「助手」选项卡。
+4. 单击默认浏览器旁边的「获取扩展」。
+5. 从浏览器的扩展商店安装助手。
 
-![The Assistant tab](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant.png)
+![助手 \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant.png)
 
-**From the website**:
+**在网站进行设置**：
 
-1. Open the [Assistant page](https://adguard.com/adguard-assistant/overview.html).
-2. Under your browser name, select _Install_.
-3. Install Assistant from your browser’s extension store.
+1. 打开[助手页面](https://adguard.com/adguard-assistant/overview.html)。
+2. 在浏览器名称下，选择「安装」。
+3. 从浏览器的扩展商店安装助手。
 
 :::note
 
-In rare cases, a browser may be incompatible with Assistant. To manage AdGuard from your browser, you can install the legacy Assistant instead.
+在少数情况下，浏览器可能与助手不兼容。 要从浏览器管理 AdGuard，可以安装旧版浏览器助手。
 
 :::
 
-## Legacy Assistant
+## 旧版浏览器助手
 
-The legacy Assistant is the previous version of AdGuard Browser Assistant. It’s a userscript that doesn’t require additional installation. While the legacy Assistant does its job well, it has several drawbacks:
+旧版助手是 AdGuard 浏览器助手的先前版本。 这是一个无需额外安装的用户脚本。 虽然旧版助手工作出色，但它也有几个缺点：
 
-- It has fewer features than the extension version.
-- You have to wait for the userscript to be inserted into a webpage — sometimes it doesn’t load immediately.
-- You can’t hide the Assistant icon on the page.
+- 功能比扩展版少。
+- 用户必须等待用户脚本插入网页，有时它不会立即加载。
+- 无法隐藏页面上的助手图标。
 
-We recommend that you use the legacy Assistant only if the new Assistant is not available.
+我们建议用户仅在新助手不可用的情况下使用旧版助手。

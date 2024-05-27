@@ -1,31 +1,31 @@
 ---
-title: Assistant
+title: 助手
 sidebar_position: 5
 ---
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+本文所述 AdGuard iOS 版是在系统级上保护设备的多功能的广告拦截器。 要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
-### Assistant {#assistant}
+### 助手 {#assistant}
 
-![Safari Assistant \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/assistant_en.jpeg)
+![Safari 助手 \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/assistant_en.jpeg)
 
-Assistant is a tool that helps you manage filtering in Safari right from the browser without switching back to the app.
+助手是一款工具，可帮助用户从浏览器管理 Safari 中的过滤，而无需切换回应用程序。
 
-To see it, do the following: open Safari and tap the arrow-in-a-box symbol. Then scroll down to AdGuard/AdGuard Pro (depending on the app you use) and tap it to fetch a window with several options:
+要查看设置，请执行以下操作：打开 Safari，然后点击方框中的箭头符号。 然后向下滚动到 AdGuard/AdGuard Pro（取决于您使用的应用程序），点击它就会出现一个包含多个选项的窗口：
 
-- **Enable on this page.**
-  Turn the switch off to add the current domain to the Allowlist.
-- **Block an element on this page.**
-  Tap it to enter the 'Element blocking' mode: choose any element on the page, adjust the size by tapping '+' or '–', preview if necessary and then tap the checkmark icon to confirm. The selected element will be hidden from the page and a corresponding rule will be added to User rules. Remove or disable it to revert the change.
-- **Report an issue on this page.**
-  Opens a web reporting tool that will help you send a report to our support team in just a few taps. Use it if you noticed a missed ad or an incorrect blocking on the page.
+- **在此页面上启用**。
+  关闭开关可将当前域名添加到白名单中。
+- **屏蔽此页面上的元素**。
+  点击元素进入「元素屏蔽」模式：选择页面上的任意元素，点击「+」或「-」调整大小，必要时进行预览，然后点击复选标记图标确认。 所选元素将从页面中隐藏，软件在用户规则中添加相应的规则。 移除或禁用它可还原更改。
+- **在此页面上报告问题**。
+  打开网络报告工具，只需轻点几下，就能向我们的支持团队发送报告。 如果您发现页面上有遗漏的广告或错误的屏蔽，请使用该功能。
 
 :::tip
 
-On iOS 15 devices, the Assistant features are available through [AdGuard Safari Web Extension](/adguard-for-ios/web-extension), which enhances the capabilities of AdGuard for iOS and allows you to take advantage of iOS 15. With this web extension, AdGuard can apply advanced filter rules and, as a result, block more ads.
+在 iOS 15 设备上，可通过 [AdGuard Safari Web 扩展](/adguard-for-ios/web-extension)使用助手功能，该扩展增强 AdGuard iOS 版的功能，使用户充分利用 iOS 15 的优势。 有了这个网络扩展，AdGuard 可以应用高级过滤规则，从而拦截更多广告。
 
 :::

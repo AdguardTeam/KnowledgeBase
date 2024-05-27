@@ -35,6 +35,20 @@ Servery se liší rychlostí, použitým protokolem, důvěryhodností, zásadam
 
 V dolní části obrazovky je navíc možnost přidat vlastní DNS server. Podporuje běžné servery, DNSCrypt, DNS-over-HTTPS, DNS-over-TLS a DNS-over-QUIC.
 
+#### Základní ověřování HTTP pro DNS-over-HTTPS
+
+Tato funkce přináší možnosti ověřování protokolu HTTP do DNS, která nemá vestavěné ověřování. Ověřování v DNS je užitečné, pokud chcete omezit přístup k vlastnímu DNS serveru na konkrétní uživatele.
+
+Chcete-li tuto funkci povolit:
+
+1. V AdGuard DNS přejděte do _Nastavení serveru_ → _Zařízení_ → _Nastavení_ a změňte DNS server na server s ověřováním. Kliknutím na _Zamítnout další protokoly_ odeberete další možnosti použití protokolu, ponecháte zapnuté pouze ověřování DNS-over-HTTPS a zabráníte jeho použití třetími stranami. Zkopírujte vygenerovanou adresu.
+
+![DNS-over-HTTPS with authentication](https://cdn.adtidy.org/content/release_notes/dns/v2-7/http-auth/http-auth-en.png)
+
+1. V AdGuard pro iOS přejděte na _Ochrana_ → _DNS ochrana_ → _DNS server_ a vložte vygenerovanou adresu do pole _Přidat vlastní DNS server_. Uložte a vyberte novou konfiguraci.
+
+Chcete-li zkontrolovat, zda je vše správně nastaveno, navštivte naši [stránku diagnostiky](https://adguard.com/en/test.html).
+
 ### Nastavení sítě {#network-settings}
 
 ![Network settings screen \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/network_settings_en.jpeg)

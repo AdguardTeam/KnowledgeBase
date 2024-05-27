@@ -1,18 +1,18 @@
 ---
-title: Integration with AdGuard VPN
+title: 与 AdGuard VPN 整合
 sidebar_position: 8
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。 要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
-AdGuard for Android creates a local VPN to filter traffic. Thus, other VPN apps cannot be used while AdGuard for Android is running. However, both AdGuard and [AdGuard VPN](https://adguard-vpn.com/) apps have Integrated modes that let you use them together.
+Android 版 AdGuard 创建本地 VPN 以过滤流量。 因此，在启用 Android 版 AdGuard 时，用户不能启动其他 VPN 服务。 不过，AdGuard 和 [AdGuard VPN](https://adguard-vpn.com/) 都有集成模式，可以一起运作。
 
-In this mode, AdGuard VPN acts as an outbound proxy server through which AdGuard Ad Blocker routes its traffic. This allows AdGuard to create a VPN interface and block ads and trackers locally, while AdGuard VPN routes all traffic through a remote server.
+在集成模式下，AdGuard VPN 作为一个出站代理服务器，通过该服务器，AdGuard 广告拦截程序路由流量。 这允许 AdGuard 创建一个 VPN 界面并在本地进行广告和跟踪器拦截，而AdGuard VPN 通过远程服务器路由所有流量。
 
-If you disable AdGuard VPN, AdGuard will stop using it as an outbound proxy. If you disable AdGuard, AdGuard VPN will route traffic through its own VPN interface.
+禁用 AdGuard VPN 后，AdGuard 停止将其用作出站代理。 如果用户禁用 AdGuard，AdGuard VPN 将通过自己的 VPN 界面路由流量。
 
-If you have AdGuard Ad Blocker and install AdGuard VPN, the Ad Blocker app will detect it and enable _Integration with AdGuard VPN_ automatically. The same happens in reverse. Note that if you've enabled integration, you won't be able to manage app exclusions and connect to DNS servers from the AdGuard VPN app. You can specify apps to be routed through your VPN tunnel via _Settings_ → _Filtering_ → _Network_ → _Proxy_ → _Apps operating through proxy_. To select a DNS server, open AdGuard → _Protection_ → _DNS protection_ → _DNS server_.
+如果您安装了 AdGuard 广告拦截程序和 AdGuard VPN，广告拦截程序会检测到 VPN 服务并自动启用「与 AdGuard VPN 集成」。 反过来也是一样的。 请注意，如果您已启用集成模式，您将无法从 AdGuard VPN 管理应用程序排除项和连接到 DNS 服务器。 您可以通过「设置」→「过滤」→「网络」→「代理」→「通过代理运行的应用」指定要通过 VPN 隧道路由的应用程序。 选择 DNS 服务器，请打开「AdGuard」→「保护」→「DNS 保护」→「DNS 服务器」。

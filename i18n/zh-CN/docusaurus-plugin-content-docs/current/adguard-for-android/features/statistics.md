@@ -1,50 +1,50 @@
 ---
-title: Statistics
+title: 统计
 sidebar_position: 3
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。 要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
-The _Statistics_ module can be accessed by tapping the _Statistics_ tab (fourth icon from the left at the bottom of the screen). This feature gives you a complete picture of what is happening with the traffic on your device: how many requests are being sent and to which companies, how much data is being uploaded and downloaded, what requests are being blocked, and more. You can choose to display the statistics for the selected time period: 24 hours, 7 days, 30 days, or all time.
+点击「统计」标签（屏幕底部从左数起的第四个图标）可以访问「统计」模块。 此功能可让用户全面了解设备上流量的情况：发送多少请求，发送给哪些公司，上传和下载多少数据，拦截哪些请求等信息。 您可选择显示所选时间段的统计数据：24小时、7天、30天或所有时间。
 
 ![Statistics \*mobile\_border](https://cdn.adtidy.org/blog/new/czy5rStatistics.jpeg?mw=1360)
 
-The stats are categorized into different sections.
+统计数据是分类到不同的部分中。
 
-### Requests
+### 请求
 
-This section shows the number of blocked ads, trackers, and the total number of requests. You can filter requests by data type: mobile data, Wi-Fi, or all data combined.
+此部分显示已拦截的广告、跟踪器数量以及请求数量合计。 用户可按数据类型过滤请求：移动数据，Wi-Fi 或所有数据。
 
-_Recent activity_, formerly known as _Filtering log_, shows the last 10,000 requests processed by AdGuard. Tap three-dots menu (⋮) and then _Customize_ to filter requests by status (_regular_, _blocked_, _modified_, or _allowlisted_) or origin (_first-party_ or _third-party_).
+「最近活动」，即曾经的「过滤日志」，显示由 AdGuard 最近处理的 10000 个请求。 点击三点菜单(⋮)，然后点击「自定义」以按照状态（「常规」、「已拦截」、「已修改」或「已加入白名单」）或来源（「第一方」或「第三方」）过滤请求。
 
-You can tap a request to view its details and add a blocking or unblocking rule in one tap.
+您可点击所需请求以查看详细信息即一键拦截或取消拦截规则。
 
-### Data usage
+### 数据使用量
 
-This section shows the amount of downloaded and uploaded data and saved traffic for the selected data type (mobile data, Wi-Fi, or all). Tap _saved_, _uploaded_, or _downloaded_ to view the graph of data usage over time.
+本部分显示所选择数据类型（移动数据、Wi-Fi 或全部）的已下载和已上传数据量以及已保存流量。 点击「已节省」、「已上传」或「已下载」以查看一段时间内数据使用情况曲线图。
 
-### Apps
+### 应用程序
 
-This section displays stats for all apps installed on your device. You can sort apps by the number of blocked ads or trackers or by the number of sent requests.
+此部分显示您设备上安装的所有应用程序的统计信息。 用户可按已拦截的广告数量，已拦截的跟踪器数量或发送的请求数量排序应用。
 
-Tap _View all apps_ to expand the list of your apps, sorted by the number of ads, trackers, or requests.
+点击「查看所有应用程序」以展开设备上已安装的应用列表，可按广告、跟踪器或请求排序。
 
 ![List of apps \*mobile\_border](https://cdn.adtidy.org/blog/new/toq0mkScreenshot_20230627-235219_AdGuard.jpg)
 
-If you tap an app, you can see its full stats: the requests it sends and the domains and companies it reaches out to.
+点击应用后，您将看到其完整的统计信息：包括发送的请求，联系域名和公司。
 
-### Companies
+### 公司
 
-This section displays companies that your device reaches out to. What does it mean? AdGuard detects the domains your device sends requests to and determines which companies they belong to. A database of companies can be found on [GitHub](https://github.com/AdguardTeam/companiesdb).
+此部分显示设备联系过的公司。 这是什么意思？ AdGuard 检测设备发送请求所到的域名并判断它们属于哪些公司。 您可以在 [GitHub](https://github.com/AdguardTeam/companiesdb) 上查看公司数据库。
 
-### DNS statistics
+### DNS 统计数据
 
-This section shows data about the requests handled by _DNS protection_. You can see the total number of requests sent and how many were blocked by AdGuard in figures and graphs. You'll also find statistics on the amount of traffic saved and data downloaded and uploaded.
+此部分显示 DNS 保护处理的请求数据。 用户可以通过数字和图表查看发送的请求总数以及被 AdGuard 拦截的请求数量。 您还可以查看有关所节省的流量和下载/上传数据的统计数字。
 
-### Battery usage
+### 电池使用情况
 
-This section displays statistics on the device resources used by AdGuard during the last 24 hours. The data may differ from the stats displayed in your device settings. This happens because the system attributes the traffic of all filtered apps to AdGuard. Thus, the device shows that AdGuard consumes more resources than it actually does. [Read more about battery and traffic consumption issues](/adguard-for-android/solving-problems/battery/).
+此部分显示过去 24 小时内 AdGuard 使用的设备资源统计信息。 这些数据可能与设备设置中显示的统计数据不同。 这种情况的原因是系统将所有过滤应用程序的流量都归于 AdGuard。 因此，设备显示的 AdGuard 消耗的资源比实际要多。 [阅读有关电池和流量消耗问题的更多信息](/adguard-for-android/solving-problems/battery/)。

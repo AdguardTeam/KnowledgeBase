@@ -62,6 +62,7 @@ O objetivo dos filtros de bloqueio de anúncios é bloquear todos os tipos de pu
 - Anúncios intersticiais: anúncios em tela cheia em dispositivos móveis que cobrem a interface do aplicativo ou navegador
 - Sobras de anúncios que ocupam grandes espaços ou se destacam no plano de fundo, atraindo a atenção dos visitantes (exceto os pouco perceptíveis ou imperceptíveis)
 - Publicidade anti-adblock: publicidade alternativa exibida no site quando os anúncios no site principal está bloqueado
+- Bait elements that are used by multiple known adblock detection scripts to detect an ad blocker presence for different goals including changing the way ads are shown, fingerprinting, etc.
 - Publicidade do próprio site, se tiver sido bloqueada pelas regras gerais de filtragem (ver *Limitações e exceções*)
 - Scripts anti-adblock que impedem o uso do site (ver *Limitações e exceções*)
 - Publicidade injetada por malware, desde que sejam fornecidas informações detalhadas sobre seu método de carregamento ou etapas de reprodução
@@ -113,6 +114,7 @@ O que eles bloqueiam:
 - Cookies de rastreamento
 - Pixels de rastreamento
 - APIs de rastreamento de navegadores
+- Detection of the ad blocker for tracking purposes
 - Funcionalidade de Sandbox de privacidade no Google Chrome e suas bifurcações usadas para rastreamento (API Google Topics, API Protected Audience)
 
 O filtro de **rastreamento de URL** foi projetado para remover parâmetros de rastreamento de endereços da web

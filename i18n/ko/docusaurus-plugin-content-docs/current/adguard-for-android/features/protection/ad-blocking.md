@@ -5,20 +5,20 @@ sidebar_position: 1
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+이 글은 시스템 수준에서 기기를 보호하는 광고 차단기인 Android용 AdGuard에 관한 내용입니다. 작동 방식을 확인하려면 [AdGuard 앱을 다운로드](https://agrd.io/download-kb-adblock)하세요.
 
 :::
 
-The Ad blocking module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Ad blocking_.
+광고 차단 모듈은 **보호** 탭(화면 하단의 왼쪽 두 번째 아이콘)을 탭한 다음 **광고 차단**을 선택하면 액세스할 수 있습니다.
 
-The feature blocks ads by applying ad-blocking and language-specific filters. To learn about the mechanism of ad blocking, you can read a [dedicated article](/general/ad-filtering/how-ad-blocking-works).
+광고 차단 및 언어별 필터를 적용하여 광고를 차단하는 기능입니다. 광고 차단 메커니즘에 대해 자세히 알아보려면 [광고 차단 관련 도움말 문서를 참조](/general/ad-filtering/how-ad-blocking-works)하세요.
 
-Basic protection effectively blocks ads on most websites. For more customized ad blocking, you can:
+기본 보호는 대부분의 웹사이트에서 효과적으로 광고를 차단합니다. 보다 맞춤형의 광고 차단을 위해서는 다음의 작업을 수행할 수 있습니다.
 
-- Enable appropriate language-specific filters — they contain filtering rules for blocking ads on websites in specific languages
+- 언어별 필터 활성화 — 특정 언어로 된 웹사이트에서 광고를 차단할 수 있는 필터링 규칙이 포함되어 있습니다.
 
-- Add websites to allowlist — these websites won't be filtered by AdGuard
+- 화이트리스트에 웹사이트 추가 — 해당 웹사이트들은 AdGuard에서 필터링되지 않습니다.
 
-- Create user rules — AdGuard will apply them on specified websites. [Learn how to create your own user rules](/general/ad-filtering/create-own-filters)
+- 사용자 규칙 추가 — AdGuard는 해당 웹사이트에 이를 적용합니다. [나만의 사용자 규칙을 만드는 방법 알아보기](/general/ad-filtering/create-own-filters)
 
-![Ad blocking \*mobile\_border](https://cdn.adtidy.org/blog/new/o44x5ad_blocking.png)
+![광고 차단 \*mobile\_border](https://cdn.adtidy.org/blog/new/o44x5ad_blocking.png)

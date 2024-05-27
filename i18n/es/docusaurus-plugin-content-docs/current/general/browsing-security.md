@@ -1,5 +1,5 @@
 ---
-title: Browsing security
+title: Seguridad de navegación
 sidebar_position: 3
 ---
 

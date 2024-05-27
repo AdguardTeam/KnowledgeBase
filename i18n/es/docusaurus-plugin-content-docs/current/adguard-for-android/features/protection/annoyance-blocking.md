@@ -1,16 +1,16 @@
 ---
-title: Annoyance blocking
+title: Bloqueo de elementos molestos
 sidebar_position: 3
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artículo trata sobre AdGuard para Android, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel del sistema. Para ver cómo funciona, [descarga la aplicación AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-The Tracking protection module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Annoyance blocking_.
+Se puede acceder al módulo de protección de seguimiento tocando la pestaña _Protección_ (segundo icono a la izquierda en la parte inferior de la pantalla) y luego seleccionando _Bloqueo de molestias_.
 
-This feature is based on AdGuard's annoyance filters and allows you to block popups, online assistant windows, cookie notifications, prompts to download mobile apps, and similar annoyances that aren't ads but still detract from your online experience. [Learn more about annoyance filters](/general/ad-filtering/adguard-filters/#adguard-filters)
+Esta función se basa en los filtros de molestias de AdGuard y te permite bloquear ventanas emergentes, ventanas de asistente en línea, notificaciones de cookies, indicaciones para descargar aplicaciones móviles y molestias similares que no son anuncios pero que aun así restan valor a tu experiencia en línea. [Más información sobre los filtros de molestias](/general/ad-filtering/adguard-filters/#adguard-filters)
 
-![Annoyance blocking \*mobile\_border](https://cdn.adtidy.org/blog/new/lwujvannoyance.png)
+![Bloqueo de molestias \*mobile\_border](https://cdn.adtidy.org/blog/new/lwujvannoyance.png)

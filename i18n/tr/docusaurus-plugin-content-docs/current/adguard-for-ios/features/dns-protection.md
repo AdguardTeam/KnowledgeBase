@@ -35,6 +35,20 @@ Servers differ by their speed, employed protocol, trustworthiness, logging polic
 
 Ek olarak, ekranın alt kısmında özel bir DNS sunucusu ekleme seçeneği vardır. Normal, DNSCrypt, DNS-over-HTTPS, DNS-over-TLS ve DNS-over-QUIC sunucularını destekler.
 
+#### DNS-over-HTTPS için HTTP temel kimlik doğrulaması
+
+This feature brings the authentication capabilities of the HTTP protocol to DNS, which does not have built-in authentication. Authentication in DNS is useful if you want to restrict access to your custom DNS server to specific users.
+
+Bu özelliği etkinleştirmek için:
+
+1. In AdGuard DNS, go to _Server settings_ → _Devices_ → _Settings_ and change the DNS server to the one with authentication. Clicking _Deny other protocols_ will remove other protocol usage options, leaving only DNS-over-HTTPS authentication enabled and preventing its use by third parties. Oluşturulan adresi kopyalayın.
+
+![Kimlik doğrulamalı DNS-over-HTTPS](https://cdn.adtidy.org/content/release_notes/dns/v2-7/http-auth/http-auth-en.png)
+
+1. iOS için AdGuard'da _Koruma sekmesi_ → _DNS koruması_ → _DNS sunucusu_ öğesine gidin ve oluşturulan adresi _Özel DNS sunucusu ekle_ alanına yapıştırın. Yeni yapılandırmayı kaydedin ve seçin.
+
+Her şeyin doğru ayarlanıp ayarlanmadığını kontrol etmek için [teşhis sayfamızı] (https://adguard.com/en/test.html) ziyaret edin.
+
 ### Network settings {#network-settings}
 
 ![Ağ ayarları ekranı \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/network_settings_en.jpeg)

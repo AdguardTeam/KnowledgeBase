@@ -1,18 +1,18 @@
 ---
-title: Quick actions
+title: Acciones rápidas
 sidebar_position: 2
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artículo trata sobre AdGuard para Android, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel del sistema. Para ver cómo funciona, [descarga la aplicación AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-Quick actions can be found inside the _Firewall_ module, which can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Firewall_.
+Las acciones rápidas se pueden encontrar dentro del módulo _Firewall_, al que se puede acceder tocando la pestaña _Protección_ (segundo icono a la izquierda en la parte inferior de la pantalla) y luego seleccionando _Firewall_.
 
-_Quick actions_ are based on the requests from _Recent activity_ (which can be found in [_Statistics_](/adguard-for-android/features/statistics)). This section shows which apps have recently connected to the Internet.
+_Las acciones rápidas_ se basan en las solicitudes de _Actividad reciente_ (que se puede encontrar en [_Estadísticas_](/adguard-for-android/features/statistics)). Esta sección muestra qué aplicaciones se han conectado recientemente a Internet.
 
-![Quick actions \*mobile\_border](https://cdn.adtidy.org/blog/new/yigrfquick_actions.png)
+![Acciones rápidas \*mobile\_border](https://cdn.adtidy.org/blog/new/yigrfquick_actions.png)
 
-If you see an app that shouldn't be using the Internet at all or an app that you haven't used recently, you can block its access on the fly. This will not be possible unless the _Firewall_ module is turned on.
+Si ves una aplicación que no debería usar Internet en absoluto o una aplicación que no usaste recientemente, puedes bloquear tu acceso sobre la marcha. Esto no será posible a menos que el módulo _Firewall_ esté activado.

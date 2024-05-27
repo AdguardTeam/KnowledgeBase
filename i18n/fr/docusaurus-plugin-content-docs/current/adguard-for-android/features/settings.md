@@ -100,7 +100,7 @@ You can also add websites that you consider necessary to exclusions by selecting
 - Exclude specific websites from HTTPS filtering
 - Filter HTTPS traffic only on the websites added to exclusions
 
-By default, we also do not filter websites with Extended Validation (EV) certificates, such as financial websites. If needed, you can enable the _Filter websites with EV certificates_ option.
+By default, we also do not filter websites with Extended Validation (EV) certificates, such as financial websites. Si nécessaire, vous pouvez activer l'option _Filtrer les sites web avec des certificats EV_.
 
 #### Proxy
 

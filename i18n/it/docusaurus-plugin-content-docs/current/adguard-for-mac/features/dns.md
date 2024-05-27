@@ -5,11 +5,11 @@ sidebar_position: 4
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## DNS protection
+## Protezione DNS
 
 The _DNS_ section contains one feature, _DNS protection_, with multiple settings:
 

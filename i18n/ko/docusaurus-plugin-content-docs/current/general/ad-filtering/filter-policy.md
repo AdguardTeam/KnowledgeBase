@@ -62,6 +62,7 @@ AdGuard 광고 차단 필터에는 다음이 포함됩니다.
 - Interstitial ads — full-screen ads on mobile devices that cover the interface of the app or web browser
 - 넓은 공간을 차지하거나 배경과 대비되어 눈에 띄어 방문자의 관심을 끄는 광고(거의 식별할 수 없거나 눈에 띄지 않는 광고 제외)
 - 차단 방지 광고는 기본 광고가 차단되었을 때 사이트에 표시되는 대체 광고입니다.
+- Bait elements that are used by multiple known adblock detection scripts to detect an ad blocker presence for different goals including changing the way ads are shown, fingerprinting, etc.
 - Site’s own advertising, if it has been blocked by general filtering rules (see *Limitations and exceptions*)
 - Anti-adblock scripts that prevent site usage (see *Limitations and exceptions*)
 - 멀웨어에 의해 삽입된 광고(로딩 방법 또는 재생산 단계에 대한 자세한 정보가 제공된 경우)
@@ -113,6 +114,7 @@ What it blocks:
 - 추적 쿠키
 - 추적 픽셀
 - 브라우저의 추적 API
+- Detection of the ad blocker for tracking purposes
 - Google 크롬의 개인정보 보호 샌드박스 기능 및 추적에 사용되는 포크(Google 토픽 API, 보호 대상 API)
 
 **URL 추적 필터**는 웹 주소에서 추적 매개 변수를 제거하도록 설계되었습니다.

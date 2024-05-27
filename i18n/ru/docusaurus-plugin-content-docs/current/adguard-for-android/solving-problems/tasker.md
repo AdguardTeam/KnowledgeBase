@@ -5,7 +5,7 @@ sidebar_position: 3
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
+В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -17,7 +17,7 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 ![Автоматизация *mobile_border](https://cdn.adtidy.org/blog/new/mmwmfautomation.jpg)
 
-Thanks to this interface, any app can send a special message (called “intent”) that contains the name of the action and some additional data, if needed. AdGuard увидит этот интент и выполнит запрашиваемое действие.
+Благодаря этому интерфейсу любое приложение может послать специальное сообщение (intent), которое содержит имя действия и дополнительную информацию. AdGuard увидит этот интент и выполнит запрашиваемое действие.
 
 ### Вопросы безопасности
 
@@ -25,7 +25,7 @@ Thanks to this interface, any app can send a special message (called “intent�
 
 ### Доступные действия
 
-будучи включёнными в интент, будут понятны AdGuard:
+Вот список действий, которые, будучи включёнными в интент, будут понятны AdGuard:
 
 `start` запускает защиту, дополнительные данные не нужны;
 
@@ -83,7 +83,7 @@ Thanks to this interface, any app can send a special message (called “intent�
 
 `server:[name]`, где `[name]` — имя исходящего прокси из списка.
 
-Or you can configure remove parameters manually:
+Вы также можете настроить параметры удаления вручную:
 
 `server:[type=…&host=…&port=…&username=…&password=…&udp=…&trust=…]`.
 
@@ -116,13 +116,13 @@ Or you can configure remove parameters manually:
 
 :::
 
-**Don't forget to include the password as an extra and mention package name and class. Это нужно делать для каждого интента.**
+**Не забудьте дополнительно указать пароль, имя приложения (package) и класс. Это нужно делать для каждого интента.**
 
 Extra: `password:*******`
 
 Package: `com.adguard.android`
 
-Класс: `com.adguard.android.receiver.AutomationReceiver`
+Class: `com.adguard.android.receiver.AutomationReceiver`
 
 :::note
 

@@ -1,26 +1,26 @@
 ---
-title: Advanced protection
+title: Proteção avançada
 sidebar_position: 3
 ---
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artigo é sobre o AdGuard para iOS, um bloqueador de anúncios multifuncional que protege seu dispositivo no nível do sistema. Para ver como funciona, [baixe o aplicativo AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-In iOS 15 Apple has added the support for Safari Web Extensions, and we in turn added a new _Advanced protection_ module to AdGuard for iOS. It allows AdGuard to apply advanced filtering rules, such as CSS rules, CSS selectors, and scriptlets, and therefore to deal even with the complex ads, such as YouTube ads.
+No iOS 15, a Apple adicionou suporte para Safari Web Extensions e, por sua vez, adicionamos um novo módulo _Proteção avançada_ ao AdGuard para iOS. Ele permite que o AdGuard aplique regras avançadas de filtragem, como regras CSS, seletores CSS e scriptlets, e, portanto, lide até mesmo com anúncios complexos, como anúncios do YouTube.
 
-![Advanced protection screen \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_15_en.jpeg)
+![Tela de proteção avançada \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_15_en.jpeg)
 
-### How to enable
+### Como ativar
 
-To enable _Advanced protection_, open the _Protection_ tab by tapping the second left icon at the bottom of the screen, select the _Advanced protection_ module, activate the feature by toggling the switch slider, and follow the on-screen instructions.
+Para ativar a _Proteção Avançada_, abra a guia _Proteção_ tocando no segundo ícone à esquerda na parte inferior da tela, selecione o módulo de _Proteção Avançada_, ative o recurso alternando o controle deslizante do interruptor e siga as instruções na tela.
 
 :::note
 
-The _Advanced protection_ only works on iOS 15 and later versions. If you are using earlier versions of iOS, you will see the _YouTube ad blocking_ module in the app instead of the _Advanced protection_.
+A _Proteção avançada_ só funciona no iOS 15 e versões posteriores. Se você estiver usando versões anteriores do iOS, verá o módulo _Bloqueio de anúncios do YouTube_ no aplicativo em vez da _Proteção avançada_.
 
 :::
 
-![Protection screen on iOS 14 and earlier \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_14_en.jpeg)
+![Tela de proteção no iOS 14 e versões anteriores \*mobile\_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_14_en.jpeg)

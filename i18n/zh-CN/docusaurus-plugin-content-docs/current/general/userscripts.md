@@ -161,7 +161,7 @@ GM_log
 
 [Here](https://wiki.greasespot.net/GM.info) you can find more information about Greasemonkey API.
 
-### Example
+### 示例
 
 ```javascript
 // ==UserScript==

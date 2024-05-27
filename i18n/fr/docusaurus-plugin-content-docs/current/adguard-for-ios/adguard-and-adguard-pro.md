@@ -1,16 +1,16 @@
 ---
-title: AdGuard and AdGuard Pro
+title: AdGuard et AdGuard Pro
 sidebar_position: 5
 ---
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Cet article parle de AdGuard pour iOS, un bloqueur de contenus multifonctionnel qui protège votre appareil au niveau du système. Pour voir comment cela fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-If you look for AdGuard in the App Store, you'll find two apps — [AdGuard](https://itunes.apple.com/app/id1047223162) and [AdGuard Pro](https://itunes.apple.com/app/id1126386264). These apps are designed to block ads and trackers in Safari, other browsers, and apps, and to manage DNS protection.
+Si vous recherchez AdGuard dans l'App Store, vous trouverez deux applications : [AdGuard](https://itunes.apple.com/app/id1047223162) et [AdGuard Pro](https://itunes.apple.com /app/id1126386264). Ces applications sont conçues pour bloquer les publicités et les traqueurs dans Safari, d'autres navigateurs et applications, et pour gérer la protection DNS.
 
-Don't be misled by their names, both apps block ads on smartphones and tablets by Apple. They used to differ in functionality due to the changing App Store review guidelines, but now these two apps are [basically the same](https://adguard.com/en/blog/updating-adguard-pro-for-ios.html).
+Ne vous laissez pas tromper par leur nom, ces deux applications bloquent les publicités sur les smartphones et les tablettes d'Apple. Auparavant, leurs fonctionnalités différaient en raison de l'évolution des directives d'examen de l'App Store, mais désormais, ces deux applications sont devenues [fondamentalement les mêmes](https://adguard.com/en/blog/updating-adguard-pro-for-ios.html).
 
-If you have purchased AdGuard premium, there is no need to get AdGuard Pro, and vice versa.
+Si vous avez acheté AdGuard Premium, ce n'est pas nécessaire d'acheter AdGuard Pro, et vice versa.

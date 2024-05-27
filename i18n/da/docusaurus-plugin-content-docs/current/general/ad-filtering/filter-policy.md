@@ -62,6 +62,7 @@ The goal of ad-blocking filters is to block all types of advertising on websites
 - Interstitial ads — full-screen ads on mobile devices that cover the interface of the app or web browser
 - Ads leftovers that occupy large spaces or stand out against the background and attract visitors' attention (except barely discernible or unnoticeable ones)
 - Anti-adblock advertising — alternative advertising displayed on the site when the main one is blocked
+- Bait elements that are used by multiple known adblock detection scripts to detect an ad blocker presence for different goals including changing the way ads are shown, fingerprinting, etc.
 - Site’s own advertising, if it has been blocked by general filtering rules (see *Limitations and exceptions*)
 - Anti-adblock scripts that prevent site usage (see *Limitations and exceptions*)
 - Advertising injected by malware, if detailed information about its loading method or steps for reproduction is provided
@@ -113,6 +114,7 @@ What it blocks:
 - Tracking cookies
 - Tracking pixels
 - Tracking APIs of browsers
+- Detection of the ad blocker for tracking purposes
 - Privacy Sandbox functionality in Google Chrome and its forks used for tracking (Google Topics API, the Protected Audience API)
 
 The **URL Tracking filter** is designed to remove tracking parameters from web addresses

@@ -5,19 +5,19 @@ sidebar_position: 2
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artigo é sobre o AdGuard para Mac, um bloqueador de anúncios multifuncional que protege seu dispositivo no nível do sistema. Para ver como funciona, [baixe o aplicativo AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## How to open app settings
+## Como abrir as configurações do aplicativo
 
-To configure AdGuard for Mac, click the gear icon in the upper right corner of the main window and select _Preferences_.
+Para configurar o AdGuard para Mac, clique no ícone de engrenagem no canto superior direito da janela principal e selecione _Preferências_.
 
-![Main window \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/main.png)
+![Janela principal \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/main.png)
 
 ## Geral
 
-![General](https://cdn.adtidy.org/content/kb/ad_blocker/mac/general.png)
+![Geral](https://cdn.adtidy.org/content/kb/ad_blocker/mac/general.png)
 
 ### Do not block search ads and website self-promoting ads
 

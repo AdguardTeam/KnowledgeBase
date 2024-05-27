@@ -1,54 +1,54 @@
 ---
-title: Other features
+title: Altre funzionalità
 sidebar_position: 7
 ---
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Questo articolo riguarda AdGuard per iOS, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-While Safari content blocking and DNS protection are indisputably two major modules of AdGuard/AdGuard Pro, there are some other minor features that don't fall into either of them directly but still can be useful and are worth knowing about.
+Mentre il blocco dei contenuti di Safari e la protezione DNS sono indiscutibilmente due moduli principali di AdGuard/AdGuard Pro, esistono delle altre funzionalità minori che non ricadono in nessuno dei due direttamente, ma che possono tornare utili e sono degni di nota.
 
-### **Dark theme**
+### **Tema scuro**
 
-![Light theme \*mobile\_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
+![Tema chiaro \*mobile\_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
 
-![Dark theme \*mobile\_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
+![Tema scuro \*mobile\_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
 
-Residing right at the top of **Settings** → **General** screen, this setting allows you to switch between dark and light themes.
+Situata in cima alla schermata delle **Impostazioni** → **Generali**, quest'impostazione ti consente di passare tra i temi scuro e chiaro.
 
-### **Widgets**
+### **Widget**
 
-![Widgets \*mobile](https://cdn.adtidy.org/public/Adguard/Release_notes/iOS/v4.0/widget_en.jpg)
+![Widget \*mobile](https://cdn.adtidy.org/public/Adguard/Release_notes/iOS/v4.0/widget_en.jpg)
 
-AdGuard supports widgets that provide quick access to Safari content blocking and DNS protection switches, and also show global requests stats.
+AdGuard supporta i widget che forniscono l'accesso rapido al blocco dei contenuti di Safari e gli interruttori della Protezione DNS, nonché quelli che mostrano le statistiche delle richieste globali.
 
-### **Auto-update over Wi-Fi only**
+### **Aggiornamenti automatici solo tramite Wi-Fi**
 
-If this setting is enabled, AdGuard will use only Wi-Fi for background filter updates.
+Se quest'impostazione è abilitata, AdGuard utilizzerà esclusivamente la Wi-Fi per gli aggiornamenti in background dei filtri.
 
-### **Invert the Allowlist**
+### **Inverti Allowlist**
 
-An alternative mode for Safari filtering, it unblocks ads everywhere except for the specified websites from the list. Disabled by default.
+Una modalità alternativa per il filtraggio di Safari: sblocca gli annunci dappertutto tranne che per i siti web specificati dall'elenco. Disabilitata di default.
 
-### **Advanced mode**
+### **Modalità avanzata**
 
-**Advanced mode** unlocks **Advanced settings**. We don't recommend messing with those, unless you know what you're doing or you have consulted with technical support first.
+La **Modalità avanzata** sblocca le **Impostazioni avanzate**. Sconsigliamo di modificarle, a meno che tu non sappia ciò che stai facendo o ti sia prima consultato con il supporto tecnico.
 
-### **Reset statistics**
+### **Azzera statistiche**
 
-Clears all statistical data, such as number of requests, etc.
+Cancella tutti i dati statistici, come il numero di richieste, etc.
 
-### **Reset settings**
+### **Azzera impostazioni**
 
-This option will reset all your settings.
+Quest'opzione ripristinerà tutte le tue impostazioni.
 
-### **Support**
+### **Supporto**
 
-Use this option to contact support, report a missed ad (although we advise to use the Assistant or AdGuard's Safari Web extension for your own convenience), export logs or to make a feature request.
+Utilizza quest'opzione per contattare il supporto, segnalare un annuncio mancante (sebbene consigliamo di utilizzare Assistant o l'estensione web Safari di AdGuard per la tua comodità), esportare i registri o effettuare una richiesta di funzionalità.
 
-### **About**
+### **Informazioni**
 
-Contains the current version of the app and an assortment of rarely needed options and links.
+Contiene la versione attuale dell'app e una serie di opzioni e collegamenti raramente necessari.

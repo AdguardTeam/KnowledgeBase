@@ -1,63 +1,63 @@
 ---
-title: Browser Assistant
+title: 브라우저 어시스턴트
 sidebar_position: 8
 ---
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+이 글은 시스템 수준에서 기기를 보호하는 광고 차단기인 Mac용 AdGuard에 관한 내용입니다. 작동 방식을 확인하려면 [AdGuard 앱을 다운로드](https://agrd.io/download-kb-adblock)하세요.
 
 :::
 
-AdGuard Browser Assistant allows you to manage AdGuard protection directly from your browser.
+AdGuard 어시스턴트를 사용하면 브라우저에서 AdGuard 보호를 관리할 수 있습니다.
 
-![The Assistant window \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_window.png)
+![어시스턴트 창 \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_window.png)
 
 ## 작동 방식
 
-AdGuard Browser Assistant is a browser extension. It allows you to quickly manage the AdGuard app:
+AdGuard 브라우저 어시스턴트는 브라우저 확장 프로그램입니다. 이를 통해 AdGuard 앱을 빠르게 관리할 수 있습니다:
 
-- Enable or disable protection for a specific website (a toggle under the website name)
-- Pause protection for 30 seconds
-- Disable protection (the pause icon in the upper right corner)
-- Manually block an ad
-- Open the filtering log
-- Report incorrect blocking
-- Open AdGuard settings
-- View website certificate and manage HTTPS filtering (the lock icon next to the website name)
+- 특정 웹사이트에 대한 보호 활성화 또는 비활성화(웹사이트 이름 아래 토글)
+- 30초 동안 보호 기능 일시 중지
+- 보호 기능 비활성화(오른쪽 상단 모서리에 있는 일시 중지 아이콘)
+- 수동으로 광고 차단하기
+- 필터링 로그 열기
+- 잘못된 차단 신고하기
+- AdGuard 설정 열기
+- 웹사이트 인증서 보기 및 HTTPS 필터링 관리(웹사이트 이름 옆의 자물쇠 아이콘)
 
 ## 설치 방법
 
-When you install AdGuard for Mac, you will be prompted to install Browser Assistant for your default browser. If you skip this step, you can install it later.
+Mac용 AdGuard를 설치하면 기본 브라우저용 어시스턴트를 설치하라는 메시지가 표시됩니다. 이 단계를 건너뛰면 나중에 설치할 수 있습니다.
 
-**From settings**:
+**설정**에서 기본 브라우저용 어시스턴트를 설치하는 방법
 
-1. Open the AdGuard menu.
-2. Click the gear icon and select _Preferences_.
-3. Switch to the _Assistant_ tab.
-4. Click _Get the Extension_ next to your default browser.
-5. Install Assistant from your browser’s extension store.
+1. AdGuard 메뉴를 엽니다.
+2. 톱니바퀴 아이콘을 클릭하고 **설정**을 선택합니다.
+3. **어시스턴트** 탭으로 전환합니다.
+4. 기본 브라우저 옆의 **확장 프로그램 추가**를 클릭합니다.
+5. 브라우저의 확장 프로그램 스토어에서 어시스턴트를 설치합니다.
 
-![The Assistant tab](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant.png)
+![어시스턴트 탭](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant.png)
 
-**From the website**:
+**웹사이트**에서 어시스턴트를 설치하는 방법
 
-1. Open the [Assistant page](https://adguard.com/adguard-assistant/overview.html).
-2. Under your browser name, select _Install_.
-3. Install Assistant from your browser’s extension store.
+1. [어시스턴트 페이지](https://adguard.com/adguard-assistant/overview.html)를 엽니다.
+2. 브라우저 이름 아래에서 **설치**를 선택합니다.
+3. 브라우저의 확장 프로그램 스토어에서 어시스턴트를 설치합니다.
 
 :::note
 
-In rare cases, a browser may be incompatible with Assistant. To manage AdGuard from your browser, you can install the legacy Assistant instead.
+드물지만 브라우저가 어시스턴트와 호환되지 않는 경우가 있을 수 있습니다. 브라우저에서 AdGuard를 관리하려면 이전 버전의 어시스턴트를 설치하면 됩니다.
 
 :::
 
-## Legacy Assistant
+## 레거시 어시스턴트
 
-The legacy Assistant is the previous version of AdGuard Browser Assistant. It’s a userscript that doesn’t require additional installation. While the legacy Assistant does its job well, it has several drawbacks:
+레거시 어시스턴트는 AdGuard 브라우저 어시스턴트의 이전 버전입니다. 추가 설치가 필요 없는 유저스크립트입니다. 레거시 어시스턴트는 작업을 잘 수행하지만 몇 가지 단점이 있습니다.
 
-- It has fewer features than the extension version.
-- You have to wait for the userscript to be inserted into a webpage — sometimes it doesn’t load immediately.
-- You can’t hide the Assistant icon on the page.
+- 확장 버전보다 기능이 적습니다.
+- 사용자 스크립트가 웹페이지에 삽입될 때까지 기다려야 하며, 때로는 즉시 로드되지 않을 수도 있습니다.
+- 페이지에서 어시스턴트 아이콘을 숨길 수 없습니다.
 
-We recommend that you use the legacy Assistant only if the new Assistant is not available.
+새 어시스턴트를 사용할 수 없는 경우에만 레거시 어시스턴트를 사용하는 것이 좋습니다.

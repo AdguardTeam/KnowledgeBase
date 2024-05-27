@@ -121,12 +121,12 @@ Depending on the operating system of the device whose traffic you want to filter
 
 1. Нажмите кнопку **Скачать** . If the download doesn’t start, try another browser, for example Firefox.
 
-1. Transfer the downloaded **cert.cer** file to the iOS device whose traffic you want to route through AdGuard. You can use a USB cable, Bluetooth, or cloud services to do this.
+1. Перенесите загруженный файл **cert.cer** на устройство с iOS, трафик которого вы хотите направлять через AdGuard. You can use a USB cable, Bluetooth, or cloud services to do this.
 
-1. On your iOS device, open **Settings** → **Profile Downloaded** and tap **Install** in the top right corner. Введите пароль и подтвердите установку. Нажмите **Готово**.
+1. На устройстве iOS откройте **Настройки** → **Профиль загружен** и нажмите **Установить** в правом верхнем углу. Введите пароль и подтвердите установку. Нажмите **Готово**.
 
 1. Перейдите на страницу **Настройки** → **Основные** → **Об этом устройстве** → **Доверие сертификатам**. Включите переключатель рядом с *Adguard Personal CA*. Сертификат установлен.
 
 1. На этом устройстве откройте настройки активной сети Wi-Fi.
 
-1. Change the **Proxy type** to **Manual**. For **Proxy hostname**, type the IP address of your computer you noted in step 1. В поле **Порт** введите порт, выбранный в сетевых настройках десктопного приложения AdGuard.
+1. Change the **Proxy type** to **Manual**. В поле **Имя узла прокси** введите IP-адрес из пункта 1. В поле **Порт** введите порт, выбранный в сетевых настройках десктопного приложения AdGuard.

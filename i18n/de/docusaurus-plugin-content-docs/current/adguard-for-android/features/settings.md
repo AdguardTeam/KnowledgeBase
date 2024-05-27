@@ -23,7 +23,7 @@ Unter _App- und Filteraktualisierungen_ können Sie automatische Filteraktualisi
 
 ### Erweiterte Einstellungen
 
-_Automation_ allows you to manage AdGuard via tasker apps.
+Mit _Automatisierung_ können Sie AdGuard über Tasker-Apps verwalten.
 
 _Watchdog_ hilft, AdGuard davor zu schützen, vom System deaktiviert zu werden. [Lesen Sie mehr über den Batteriesparmodus von Android](/adguard-for-android/solving-problems/background-work/). Der von Ihnen eingegebene Wert ist das Intervall in Sekunden zwischen den Watchdog-Prüfungen.
 
@@ -47,7 +47,7 @@ AdGuard blockiert Werbung, Tracker und Belästigungen, indem es Regeln aus seine
 
 ![Filter \*mobile\_border](https://cdn.adtidy.org/blog/new/7osjdfilters.png)
 
-Die standardmäßig aktivierten Filter sind für den normalen Betrieb von AdGuard ausreichend. Wenn Sie die Blockierung von Werbung jedoch individuell anpassen möchten, können Sie andere Filter von AdGuard oder Drittanbietern verwenden. Wählen Sie dazu eine Kategorie aus und aktivieren Sie die gewünschten Filter. To add a custom filter, tap _Custom filters_ → _Add custom filter_ and enter its URL or file path.
+Die standardmäßig aktivierten Filter sind für den normalen Betrieb von AdGuard ausreichend. Wenn Sie die Blockierung von Werbung jedoch individuell anpassen möchten, können Sie andere Filter von AdGuard oder Drittanbietern verwenden. Wählen Sie dazu eine Kategorie aus und aktivieren Sie die gewünschten Filter. Um einen benutzerdefinierten Filter hinzuzufügen, tippen Sie auf _Benutzerdefinierte Filter_ ➜ _Benutzerdefinierten Filter hinzufügen_ und geben Sie die URL oder den Dateipfad ein.
 
 :::note
 
@@ -59,23 +59,23 @@ Wenn Sie zu viele Filter aktivieren, kann es sein, dass einige Websites nicht ri
 
 ### Benutzerskripte
 
-Userscripts are mini-programs written in JavaScript that extend the functionality of one or more websites. To install a userscripts, you need a special userscript manager. AdGuard has such a functionality and allows you to add userscripts by URL or from file.
+Benutzerskripte sind in JavaScript geschriebene Miniprogramme, die die Funktionalität einer oder mehrerer Websites erweitern. Um ein Benutzerskript zu installieren, benötigen Sie einen speziellen Benutzerskript-Manager. AdGuard verfügt über eine solche Funktion und ermöglicht das Hinzufügen von Benutzerskripten per URL oder aus einer Datei.
 
 ![Benutzerskripte \*mobile\_border](https://cdn.adtidy.org/blog/new/isv6userscripts.png)
 
 #### AdGuard Extra
 
-AdGuard Extra is a custom userscript that blocks complex ads and mechanisms that reinject ads to websites.
+AdGuard Extra ist ein benutzerdefiniertes Skript, das komplexe Werbung und Mechanismen, die Werbung auf Websites einschleusen, blockiert.
 
 #### AMP deaktivieren
 
-Disable AMP is a userscript that disables [Accelerated mobile pages](https://en.wikipedia.org/wiki/Accelerated_Mobile_Pages) on the Google search results page.
+„AMP deaktivieren“ ist ein Benutzerskript, das [Accelerated Mobile Pages](https://de.wikipedia.org/wiki/Accelerated_Mobile_Pages) auf der Google-Suchergebnisseite deaktiviert.
 
 ### Netzwerk
 
 #### HTTPS-Filterung
 
-To block ads and trackers on most websites and in most apps, AdGuard needs to filter their HTTPS traffic. [Lesen Sie mehr über HTTPS-Filterung](/general/https-filtering/what-is-https-filtering)
+Um Werbung und Tracker auf den meisten Websites und in den meisten Apps zu blockieren, muss AdGuard deren HTTPS-Datenverkehr filtern. [Lesen Sie mehr über HTTPS-Filterung](/general/https-filtering/what-is-https-filtering)
 
 ##### Sicherheitszertifikate
 
@@ -104,7 +104,7 @@ Standardmäßig werden auch keine Websites mit Extended Validation (EV)-Zertifik
 
 #### Proxy
 
-Sie können AdGuard so einrichten, dass der gesamte Datenverkehr Ihres Geräts über Ihren Proxy-Server geleitet wird. [How to set up an outbound proxy](/adguard-for-android/solving-problems/outbound-proxy)
+Sie können AdGuard so einrichten, dass der gesamte Datenverkehr Ihres Geräts über Ihren Proxy-Server geleitet wird. [So richten Sie einen Outbound-Proxy ein](/adguard-for-android/solving-problems/outbound-proxy)
 
 In diesem Abschnitt können Sie auch ein VPN eines Drittanbieters für die Verwendung mit AdGuard einrichten, sofern Ihr VPN-Anbieter dies zulässt.
 

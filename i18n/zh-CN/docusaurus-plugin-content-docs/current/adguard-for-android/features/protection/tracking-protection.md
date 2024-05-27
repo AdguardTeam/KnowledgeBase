@@ -1,80 +1,80 @@
 ---
-title: Tracking protection
+title: 跟踪保护
 sidebar_position: 2
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。 要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
-The Tracking protection module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Tracking protection_.
+跟踪保护模块可通过点击底部屏幕的「保护」标签（屏幕底部左起第二个图标）并选择「跟踪保护」访问。
 
-_Tracking protection_ (formerly known as _Stealth Mode_) prevents websites from collecting information about you, such as your IP addresses, information about your browser and operating system, screen resolution, and the page you came or were redirected from. It can also block cookies that websites use to mark your browser, save your personal settings and user preferences, or recognize you on your next visit.
+「跟踪保护」（以前被称为「隐身模式」）可防止网站收集个人数据，如 IP 地址、浏览器和操作系统信息、屏幕分辨率以及用户访问或重定向的页面。 使用该功能用户还可以阻止识别 Cookie。网站用这些 Cookie 来标记浏览器、保存个人设置和用户偏好，或识别在下次访问时识别他。
 
 ![Tracking protection \*mobile\_border](https://cdn.adtidy.org/blog/new/y5fuztracking_protection.png)
 
-_Tracking protection_ has three pre-configured levels of privacy protection (_Standard_, _High_, and _Extreme_) and one user-defined level (_Custom_).
+「跟踪保护」有三个预先配置的隐私保护级别（「标准」、「高」和「强」）和一个用户自定义级别（「自定义」）。
 
-Here are the active features of the pre-configured levels:
+以下是预配置级别的功能：
 
-1. **Standard**
+1. **标准**
 
-   a. _Block trackers_. This feature uses _AdGuard Tracking Protection filter_ to protect you from online counters and web analytics tools
+   1. 「拦截跟踪器」 此功能使用「AdGuard 防跟踪保护过滤器」，保护用户免受在线计数器和网络分析工具的侵扰。
 
-   b. _Ask websites not to track you_. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
+   2. 「要求网站不进行跟踪」 此功能将向用户访问的网站发送 [Global Privacy Control](https://globalprivacycontrol.org/) 和 [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) 信号，要求网页应用程序禁用跟踪用户的活动。
 
-   c. _Remove X-Client-Data header_. This feature prevents Google Chrome from sending information about its version and modifications to Google domains (including DoubleClick and Google Analytics)
+   3. 「移除 X-Client-Data 头部」 此功能禁止 Chrome 浏览器向 Google 域名（包括 DoubleClick 和 Google Analytics）发送有关其版本和修改的信息。
 
-2. **High**
+2. **高**
 
-   a. _Block trackers_. This feature uses _AdGuard Tracking Protection filter_ to protect you from online counters and web analytics tools
+   1. 「拦截跟踪器」 此功能使用「AdGuard 防跟踪保护过滤器」，保护用户免受在线计数器和网络分析工具的侵扰。
 
-   b. _Remove tracking parameters from URLs_. This feature uses _AdGuard URL Tracking filter_ to remove tracking parameters, such as `utm_*` and `fb_ref`, from page URLs
+   2. 「从 URL 中删除跟踪参数」 此功能使用「AdGuard URL 跟踪过滤器」从网页 URL 中删除跟踪参数，例如 `utm_*` 和 `fb_ref`。
 
-   c. _Hide your search queries_. This feature hides queries for websites visited from a search engine
+   3. 「隐藏您的搜索记录」 此功能隐藏用户对访问网站的查询，防止搜索引擎曝光。
 
-   d. _Ask websites not to track you_. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
+   4. 「要求网站不进行跟踪」 此功能将向用户访问的网站发送 [Global Privacy Control](https://globalprivacycontrol.org/) 和 [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) 信号，要求网页应用程序禁用跟踪用户的活动。
 
-   e. _Self-destruction of third-party cookies_. This feature limits the lifetime of third-party cookies to 180 minutes
-
-   :::caution
-
-   This feature deletes all third-party cookies after their forced expiration. This includes your logins through social networks or other third-party services. You may need to re-log in to some websites periodically or experience other cookie-related issues. To block only tracking cookies, use the _Standard_ protection level.
-
-   :::
-
-   f. _Remove X-Client-Data header_. This feature prevents Google Chrome from sending its version and modifications information to Google domains (including DoubleClick and Google Analytics)
-
-3. **Extreme** (formerly known as _Ultimate_)
-
-   a. _Block trackers_. This feature uses _AdGuard Tracking Protection filter_ to protect you from online counters and web analytics tools
-
-   b. _Remove tracking parameters from URLs_. This feature uses _AdGuard URL Tracking filter_ to remove tracking parameters, such as `utm_*` and `fb_ref`, from page URLs
-
-   c. _Hide your search queries_. This feature hides queries for websites visited from a search engine
-
-   d. _Ask websites not to track you_. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
-
-   e. _Self-destruction of third-party cookies_. This feature limits the lifetime of third-party cookies to 180 minutes
+   5. 「自销毁第三方 Cookies」 此功能将第三方 Cookie 的寿命限制为180分钟。
 
    :::caution
 
-   This feature deletes all third-party cookies after their forced expiration. This includes your logins through social networks or other third-party services. You may need to re-log in to some websites periodically or experience other cookie-related issues. To block only tracking cookies, use the _Standard_ protection level.
+   此功能会强制第三方 Cookie 过期，然后将其全部删除。 这包括用户通过社交网络或其他第三方服务进行的登录。 有些网站可能会要求用户定期重新登录，或遇到其他与 Cookie 有关的问题。 要仅阻止跟踪 Cookie，请使用 「标准」保护级别。
 
    :::
 
-   f. _Block WebRTC_. This feature blocks WebRTC, a known vulnerability that can leak your real IP address even if you use a proxy or VPN
+   6. 「移除 X-Client-Data 头部」 此功能禁止 Chrome 浏览器向 Google 域名（包括 DoubleClick 和 Google Analytics）发送有关其版本和修改的信息。
 
-   g. _Block Push API_. This feature prevents your browsers from receiving push messages from servers
+3. **强**（以前被称为「终极」）
 
-   h. _Block Location API_. This feature prevents browsers from accessing your GPS data and determining your location
+   1. 「拦截跟踪器」 此功能使用「AdGuard 防跟踪保护过滤器」，保护用户免受在线计数器和网络分析工具的侵扰。
 
-   i. _Hide Referer from third parties_. This feature prevents third parties from knowing which websites you visit. It hides the HTTP header that contains the URL of the initial page and replaces it with a default or custom one that you can set
+   2. 「从 URL 中删除跟踪参数」 此功能使用「AdGuard URL 跟踪过滤器」从网页 URL 中删除跟踪参数，例如 `utm_*` 和 `fb_ref`。
 
-   j. _Hide your User-Agent_. This feature removes identifying information from the User-Agent header, which typically includes the name and version of the browser, the operating system, and language settings
+   3. 「隐藏您的搜索记录」 此功能隐藏用户对访问网站的查询，防止搜索引擎曝光。
 
-   k. _Remove X-Client-Data header_. This feature prevents Google Chrome from sending its version and modifications information to Google domains (including DoubleClick and Google Analytics)
+   4. 「要求网站不进行跟踪」 此功能将向用户访问的网站发送 [Global Privacy Control](https://globalprivacycontrol.org/) 和 [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) 信号，要求网页应用程序禁用跟踪用户的活动。
 
-You can tweak individual settings in _Tracking protection_ and come up with a custom configuration. Every setting has a description that will help you understand its role. [Learn more about what various _Tracking protection_ settings do](/general/stealth-mode) and approach them with caution, as some may interfere with the functionality of websites and browser extensions.
+   5. 「自销毁第三方 Cookies」 此功能将第三方 Cookie 的寿命限制为180分钟。
+
+   :::caution
+
+   此功能会强制第三方 Cookie 过期，然后将其全部删除。 这包括用户通过社交网络或其他第三方服务进行的登录。 有些网站可能会要求用户定期重新登录，或遇到其他与 Cookie 有关的问题。 要仅阻止跟踪 Cookie，请使用 「标准」保护级别。
+
+   :::
+
+   6. 「拦截 WebRTC」 该功能拦截 WebRTC，这是一个已知的漏洞，即使用户使用代理或 VPN，也会泄露真实 IP 地址。
+
+   7. 「拦截推送 API」 此功能防止浏览器接收来自服务器的推送消息。
+
+   8. 「拦截定位 API」 此功能可防止浏览器访问 GPS 数据并确定用户的位置。
+
+   9. 「隐藏第三方 Referer」 此功能防止第三方知道用户访问的网站. 它隐藏包含初始页面 URL 的 HTTP 标头，代之以默认或自定义标头，用户可以进行设置。
+
+   10. 「隐藏 User-Agent」 该功能可移除 User-Agent 标头中的识别信息，信息通常包括浏览器名称和版本、操作系统和语言设置。
+
+   11. 「移除 X-Client-Data 头部」 此功能禁止 Chrome 浏览器向 Google 域名（包括 DoubleClick 和 Google Analytics）发送有关其版本和修改的信息。
+
+用户可以在「跟踪保护」中调整设置，并进行自定义配置。 每个设置都有说明，可以帮助您了解其作用。 [进一步了解「跟踪保护」设置的作用](/general/stealth-mode)，请谨慎使用，因为有些设置会干扰网站和浏览器扩展的功能。

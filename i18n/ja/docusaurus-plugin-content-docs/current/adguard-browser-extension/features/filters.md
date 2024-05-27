@@ -9,48 +9,48 @@ sidebar_position: 1
 
 :::
 
-Blocking ads is the key functionality of any ad blocker, and AdGuard Browser Extension is not an exception. Ad blocking is based on filters — sets of rules written in a special language. These rules tell which elements should be blocked and which should not. AdGuard interpretes the rules and modifies web requests based on them. As a result, you stop seeing ads on your webpages.
+広告ブロックはどの広告ブロッカーにとっても主要な機能であり、AdGuard ブラウザ拡張機能も例外ではありません。 広告ブロックはフィルタリストというものに基づいて行われます。フィルタリストとは、特別な言語で記述された一連のルールセットです。 これらのルールは、どの要素がブロックされるべきで、どの要素がブロックされるべきではないかを示しています。 AdGuard はルールを解釈し、それらに基づいてウェブリクエストを変改します。 その結果、ウェブページに広告が表示されなくなります。
 
 ![Filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters.png)
 
-All filters are grouped according to their role. For example, there are categories for ad-blocking filters, privacy protection filters, social media-related filters, etc. You can enable either individual filters or the entire group at once.
+フィルタはすべて、役割に応じてグループ化されています。 例えば、広告ブロックフィルタ、プライバシー保護フィルタ、SNS関連のフィルタ、などのカテゴリがあります。 個々のフィルタを有効化することもできますし、グループ全体を一括に有効化することもできます。
 
 ![Ad blocking filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters1.png)
 
-## Custom filters
+## カスタムフィルタ
 
-While the features of other filter groups are more or less predictable, there is a group called _Custom_ that may raise additional questions.
+ほとんどのフィルタグループの機能は大体その名称から想像がつきますが、「カスタム」というグループについては疑問に思うかもしれません。
 
 ![Custom filters \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters.png)
 
-In this tab, you can add filters that are not present in the extension by default. There are plenty of [publicly available filters on the Internet](https://filterlists.com). Moreover, you can create and add your own filters. In fact, you can build any set of filters and customize ad blocking the way you like.
+このタブでは、もとからは拡張機能に入っていないフィルタを追加することができます。 インターネット上に[公開されているフィルタが数多く](https://filterlists.com)あります。 さらには、ご自身で独自のフィルタを作成して追加することもできます。 それどころか、フィルタを組み合わせて、広告ブロックを好きなようにカスタマイズすることもできます。
 
-To add a filter, just click _Add custom filter_, enter the URL or the file path of the filter you want to be added and click _Next_.
+フィルタを追加するには、「カスタムフィルタを追加する」をクリックし、追加したいフィルタのURLまたはファイルパスを入力して「次へ」をクリックします。
 
 ![Add a custom filter \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
 
-## User rules {#user-rules}
+## ユーザールール {#user-rules}
 
-_User rules_ is another tool that helps you customize the blocking of ads.
+「ユーザールール」は、広告ブロック機能のカスタマイズに役立つもう1つのツールです。
 
 ![User rules \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_user_rules.png)
 
-There are several ways to add new rules. The most straightforward is to just type a rule in, but it requires some knowledge of the [rule syntax](/general/ad-filtering/create-own-filters).
+新しいルールを追加する方法は、複数あります。 最も簡単なのはルールを手入力する方法ですが、[ルール構文](/general/ad-filtering/create-own-filters)についての知識が必要です。
 
-You can import a ready-to-use filter list from a text file as well. **Make sure that different rules are separated by line breaks.** Note that importing a ready-to-use filter list is better done in the Custom filters tab.
+既成のフィルタリストをテキストファイルからインポートすることもできます。 ※**それぞれのルールが改行で区切られるようにしてください**。なお、既成のフィルタリストのインポートは「カスタムフィルタ」タブで行ったほうが便利であることに留意してください。
 
-Besides, you can export your own filtering rules. This option is good for transferring your list of rules between browsers or devices.
+また、作成したフィルタリングルールをエクスポートすることもできます。 これは、ブラウザまたはデバイス間でルールのリストを転送するのに便利です。
 
-When you add a website to the Allowlist (more on that below) or use the Assistant tool for hiding an element on the page, a corresponding rule is also saved in _User rules_.
+ウェブサイトをホワイトリストに追加する（詳細は後述）か、アシスタントツールを使用してページ上の要素を非表示にすると、対応するルールも自動的にユーザールールに保存されます。
 
-## Allowlist
+## ホワイトリスト
 
-The _allowlist_ is used to exclude certain websites from filtering. Blocking rules are not applied to the websites on the list.
+「ホワイトリスト」を使って、特定のウェブサイトをフィルタリングの対象から外しておくことができます。 リストに入っているウェブサイトに対してブロックルールは適用されません。
 
 ![Allowlist \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist.png)
 
-The _allowlist_ can be inverted, too: you can unblock ads everywhere except on the websites added to this list. To do that, activate the _Invert allowlist_ option.
+「ホワイトリスト」の動作を逆にすることもできます。つまり、リストに追加されたウェブサイト以外で広告ブロックされなくなる、といった動作になります。 そうするには、「ホワイトリストを逆転する」オプションを有効にしてください。
 
 ![Invert allowlist \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist1.png)
 
-You can also import and export existing allowlists. It is useful, for instance, if you want to apply the same allowing rules in each of your browsers.
+ホワイトリストをインポートおよびエクスポートすることもできます。 これは、同じホワイトリストルールをお使いの各ブラウザに適用したい場合などに便利です。

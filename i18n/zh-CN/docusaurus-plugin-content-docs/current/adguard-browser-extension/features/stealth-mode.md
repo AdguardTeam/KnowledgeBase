@@ -1,5 +1,5 @@
 ---
-title: Stealth Mode
+title: 隐身模式
 sidebar_position: 2
 ---
 
@@ -11,7 +11,7 @@ sidebar_position: 2
 
 「隐身模式」旨在确保个人敏感数据免受在线跟踪器和欺诈者的侵害。
 
-![Stealth Mode \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_stealth_mode.png)
+![隐身模式 \*border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_stealth_mode.png)
 
 在隐身模式下，用户可以阻止网站看到网络搜索记录，还可以自动删除第三方和网站自己的 Cookie 等。 我们有一篇[文章](/general/stealth-mode)专门介绍这些功能。
 

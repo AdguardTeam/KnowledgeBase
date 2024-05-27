@@ -1,54 +1,54 @@
 ---
-title: Other features
+title: Outros recursos
 sidebar_position: 7
 ---
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artigo é sobre o AdGuard para iOS, um bloqueador de anúncios multifuncional que protege seu dispositivo no nível do sistema. Para ver como funciona, [baixe o aplicativo AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-While Safari content blocking and DNS protection are indisputably two major modules of AdGuard/AdGuard Pro, there are some other minor features that don't fall into either of them directly but still can be useful and are worth knowing about.
+Embora o bloqueio de conteúdo do Safari e a proteção DNS sejam as duas principais funções do AdGuard/AdGuard Pro, existem alguns outros recursos menores que não se enquadram diretamente em nenhum deles, mas ainda podem ser úteis. Vale a pena conhecê-los.
 
-### **Dark theme**
+### **Tema escuro**
 
-![Light theme \*mobile\_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
+![Tema claro \*mobile\_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
 
-![Dark theme \*mobile\_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
+![Tema escuro \*mobile\_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
 
-Residing right at the top of **Settings** → **General** screen, this setting allows you to switch between dark and light themes.
+Residindo na parte superior da tela **Configurações** → **Geral**, esta configuração permite alternar entre temas claros e escuros.
 
 ### **Widgets**
 
 ![Widgets \*mobile](https://cdn.adtidy.org/public/Adguard/Release_notes/iOS/v4.0/widget_en.jpg)
 
-AdGuard supports widgets that provide quick access to Safari content blocking and DNS protection switches, and also show global requests stats.
+O AdGuard oferece suporte a widgets que fornecem acesso rápido ao bloqueio de conteúdo do Safari e opções de proteção de DNS, além de mostrar estatísticas de solicitações globais.
 
-### **Auto-update over Wi-Fi only**
+### **Atualização automática apenas por Wi-Fi**
 
-If this setting is enabled, AdGuard will use only Wi-Fi for background filter updates.
+Se esta opção estiver ativada, o AdGuard só vai utilizar o Wi-Fi para atualizações de filtros em segundo plano.
 
-### **Invert the Allowlist**
+### **Inverter a lista de permissões**
 
-An alternative mode for Safari filtering, it unblocks ads everywhere except for the specified websites from the list. Disabled by default.
+Um modo alternativo para a filtragem do Safari, que desbloqueia anúncios em todos os lugares, exceto nos sites especificados na lista. Desativado por padrão.
 
-### **Advanced mode**
+### **Modo avançado**
 
-**Advanced mode** unlocks **Advanced settings**. We don't recommend messing with those, unless you know what you're doing or you have consulted with technical support first.
+O **Modo avançado** desbloqueia as **Configurações avançadas**. Não recomendamos fazer nenhuma alteração, a menos que você saiba o que está fazendo ou tenha consultado primeiro o suporte técnico.
 
-### **Reset statistics**
+### **Resetar estatísticas**
 
-Clears all statistical data, such as number of requests, etc.
+Limpa todos os dados estatísticos, como número de solicitações, entre outros.
 
-### **Reset settings**
+### **Redefinir as configurações**
 
-This option will reset all your settings.
+Esta opção irá redefinir todas as suas configurações.
 
-### **Support**
+### **Suporte**
 
-Use this option to contact support, report a missed ad (although we advise to use the Assistant or AdGuard's Safari Web extension for your own convenience), export logs or to make a feature request.
+Use esta opção para entrar em contato com o suporte, relatar um anúncio perdido (embora seja aconselhável usar o Assistente ou a extensão Safari Web do AdGuard para sua conveniência), exportar registros ou fazer uma solicitação de recurso.
 
-### **About**
+### **Sobre**
 
-Contains the current version of the app and an assortment of rarely needed options and links.
+Contém a versão atual do aplicativo e uma variedade de opções e links raramente necessários.

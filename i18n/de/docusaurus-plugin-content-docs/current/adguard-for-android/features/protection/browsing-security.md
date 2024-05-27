@@ -17,12 +17,12 @@ Die Internetsicherheit schützt Sie vor dem Besuch von Phishing- und bösartigen
 
 Wenn Sie im Begriff sind, eine gefährliche Website zu besuchen, zeigt Internetsicherheit Ihnen die folgende Warnmeldung an:
 
-![Browsing security warning \*mobile\_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
+![Warnung der Internetsicherheit \*mobile\_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
 
 :::warning
 
-Please note that AdGuard for Android is not an antivirus program. It neither stops viruses from downloading nor deletes already downloaded ones. To fully protect your device, we recommend using AdGuard in conjunction with an antivirus
+Bitte beachten Sie, dass AdGuard für Android kein Antivirenprogramm ist. Es verhindert weder das Herunterladen von Viren noch löscht es bereits heruntergeladene Viren. Um Ihr Gerät vollständig zu schützen, empfehlen wir die Verwendung von AdGuard in Verbindung mit einem Antivirenprogramm
 
 :::
 
-Browsing security is safe: AdGuard does not know what websites you visit. It uses hash prefixes instead of URLs to check website security. [Learn more about how Browsing security works from this article](/general/browsing-security/).
+Internetsicherheit ist ungefährlich: AdGuard erfährt nicht, welche Websites Sie besuchen. Es werden Hash-Präfixe anstelle von URLs verwendet, um die Sicherheit von Websites zu überprüfen. [Erfahren Sie mehr über die Funktionsweise der Internetsicherheit in diesem Artikel](/general/browsing-security/).

@@ -1,54 +1,54 @@
 ---
-title: Other features
+title: Otras funciones
 sidebar_position: 7
 ---
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artículo trata sobre AdGuard para iOS, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel del sistema. Para ver cómo funciona, [descarga la aplicación AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-While Safari content blocking and DNS protection are indisputably two major modules of AdGuard/AdGuard Pro, there are some other minor features that don't fall into either of them directly but still can be useful and are worth knowing about.
+Mientras que el bloqueo de contenido de Safari y la protección DNS son sin duda dos módulos principales de AdGuard/AdGuard Pro, hay algunas otras funcionalidades menores que no entran directamente en ninguno de ellos pero que aún pueden ser útiles y que vale la pena conocer.
 
-### **Dark theme**
+### **Tema oscuro**
 
-![Light theme \*mobile\_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
+![Tema claro \*mobile\_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
 
-![Dark theme \*mobile\_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
+![Tema oscuro \*mobile\_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
 
-Residing right at the top of **Settings** → **General** screen, this setting allows you to switch between dark and light themes.
+Residiendo justo en la parte superior de la pantalla **Configuración** → **Modo general**, esta configuración permite alternar entre temas oscuros y claros.
 
 ### **Widgets**
 
 ![Widgets \*mobile](https://cdn.adtidy.org/public/Adguard/Release_notes/iOS/v4.0/widget_en.jpg)
 
-AdGuard supports widgets that provide quick access to Safari content blocking and DNS protection switches, and also show global requests stats.
+AdGuard admite widgets que proporcionan un acceso rápido a los interruptores de bloqueo de contenido de Safari y Protección DNS, y también muestran estadísticas globales de peticiones.
 
-### **Auto-update over Wi-Fi only**
+### **Actualizar automáticamente solo por Wi-Fi**
 
-If this setting is enabled, AdGuard will use only Wi-Fi for background filter updates.
+Si esta configuración está habilitada, AdGuard solo usará Wi-Fi para las actualizaciones de filtros en segundo plano.
 
-### **Invert the Allowlist**
+### **Invertir la lista de permitidos**
 
-An alternative mode for Safari filtering, it unblocks ads everywhere except for the specified websites from the list. Disabled by default.
+Un modo alternativo para filtrar en Safari, desbloquea anuncios en todas partes excepto en los sitios web especificados de la lista. Deshabilitado de forma predeterminada.
 
-### **Advanced mode**
+### **Modo avanzado**
 
-**Advanced mode** unlocks **Advanced settings**. We don't recommend messing with those, unless you know what you're doing or you have consulted with technical support first.
+**Modo Avanzado** desbloquea **Configuración Avanzada**. No recomendamos utilizarlas, a menos que sepas lo que estás haciendo o hayas consultado con el soporte técnico primero.
 
-### **Reset statistics**
+### **Reiniciar estadísticas**
 
-Clears all statistical data, such as number of requests, etc.
+Borra todos los datos estadísticos, como el número de peticiones, etc.
 
-### **Reset settings**
+### **Restablecer configuración**
 
-This option will reset all your settings.
+Esta opción restablecerá todas tus configuraciones.
 
-### **Support**
+### **Asistencia técnica**
 
-Use this option to contact support, report a missed ad (although we advise to use the Assistant or AdGuard's Safari Web extension for your own convenience), export logs or to make a feature request.
+Utiliza esta opción para ponerte en contacto con soporte, informar un anuncio perdido (aunque recomendamos usar el Asistente o la extensión web de AdGuard para Safari para tu propia comodidad), exportar registros o hacer una solicitud de función.
 
-### **About**
+### **Acerca de**
 
-Contains the current version of the app and an assortment of rarely needed options and links.
+Contiene la versión actual de la aplicación y una variedad de opciones y enlaces raramente necesarios.

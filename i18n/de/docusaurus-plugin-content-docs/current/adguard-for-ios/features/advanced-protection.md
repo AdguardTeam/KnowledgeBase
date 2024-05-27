@@ -19,7 +19,7 @@ Um den _Erweiterten Schutz_ zu aktivieren, öffnen Sie den Tab _Schutz_, indem S
 
 :::note
 
-Der _Erweiterte Schutz_ funktioniert nur unter iOS 15 und späteren Versionen. If you are using earlier versions of iOS, you will see the _YouTube ad blocking_ module in the app instead of the _Advanced protection_.
+Der _Erweiterte Schutz_ funktioniert nur unter iOS 15 und späteren Versionen. Wenn Sie frühere Versionen von iOS verwenden, sehen Sie in der App das Modul _Sperren von Werbung auf YouTube_ anstelle des _Erweiterten Schutzes_.
 
 :::
 

@@ -1,24 +1,24 @@
 ---
-title: Ad blocking
+title: 广告拦截
 sidebar_position: 1
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。 要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
-The Ad blocking module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Ad blocking_.
+广告拦截模块可通过点击底部屏幕的「保护」标签（屏幕底部左起第二个图标）并选择「广告拦截」访问。
 
-The feature blocks ads by applying ad-blocking and language-specific filters. To learn about the mechanism of ad blocking, you can read a [dedicated article](/general/ad-filtering/how-ad-blocking-works).
+该功能通过应用广告拦截和特定语言过滤器来阻止广告。 要了解广告拦截的机制，可以阅读[专门的文章](/general/ad-filtering/how-ad-blocking-works)。
 
-Basic protection effectively blocks ads on most websites. For more customized ad blocking, you can:
+基本保护可有效拦截大多数网站上的广告。 如果要自定义广告拦截，可以执行以下操作：
 
-- Enable appropriate language-specific filters — they contain filtering rules for blocking ads on websites in specific languages
+- 开启适当的特定语言过滤器，它们包含拦截特定语言网站上的广告的过滤规则
 
-- Add websites to allowlist — these websites won't be filtered by AdGuard
+- 添加网站到白名单，AdGuard 不会过滤这些网站。
 
-- Create user rules — AdGuard will apply them on specified websites. [Learn how to create your own user rules](/general/ad-filtering/create-own-filters)
+- 创建用户规则，AdGuard 将应用它们到指定的网站上。 [了解关于创建自己过滤规则的更多详情](/general/ad-filtering/create-own-filters)
 
 ![Ad blocking \*mobile\_border](https://cdn.adtidy.org/blog/new/o44x5ad_blocking.png)

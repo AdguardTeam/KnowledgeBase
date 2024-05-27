@@ -1,17 +1,17 @@
 ---
-title: What is a content blocker?
+title: 什么是内容拦截程序？
 sidebar_position: 1
 ---
 
-![Content blockers tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/Contentblockers.png)
+![内容拦截程序标签](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/Contentblockers.png)
 
-内容拦截器是一组过滤器。 Privacy-related filters are included in the content blocker with the corresponding name — _AdGuard Privacy_.
+内容拦截器是一组过滤器。 与隐私相关的过滤器包含在内容拦截程序中，其相应名称为「AdGuard 隐私」。
 
 设计内容拦截器有两个原因：结构过滤器和符合 Apple 公司的限制。
 
-[In 2019](https://adguard.com/en/blog/adguard-safari-1-5.html), Apple put limitations on ad blockers for Safari, allowing them to use only 50,000 filtering rules simultaneously. 由于这个数量不足以让一个广告拦截器提供良好的过滤质量（仅 AdGuard 基础过滤器就有 30,000 个过滤规则），我们将 AdGuard Safari 版分成六个内容拦截器，每个拦截器包含多达 50,000 个规则。
+[2019年](https://adguard.com/en/blog/adguard-safari-1-5.html)，Apple 对 Safari 浏览器的广告拦截器设置了限制，只允许它们同时使用5万个过滤规则。 由于这个数量不足以让一个广告拦截器提供良好的过滤质量（仅 AdGuard 基础过滤器就有 30,000 个过滤规则），我们将 AdGuard Safari 版分成六个内容拦截器，每个拦截器包含多达 50,000 个规则。
 
-[In 2022](https://adguard.com/en/blog/adguard-for-safari-1-11.html), Apple increased the filtering rule limit for each content blocker to 150,000 rules applied simultaneously. 关于 Safari 版 AdGuard，六种内容拦截器可以启用 900,000 个规则。
+[2022年](https://adguard.com/en/blog/adguard-for-safari-1-11.html)，Apple 将每个内容拦截器的过滤规则数量限制提高到同时应用15万个规则。 关于 Safari 版 AdGuard，六种内容拦截器可以启用 900,000 个规则。
 
 虽然数量限制提高了，但内容拦截器的结构却保持不变。
 

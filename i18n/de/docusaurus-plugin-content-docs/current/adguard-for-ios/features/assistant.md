@@ -17,15 +17,12 @@ Dieser Artikel behandelt AdGuard für iOS, einem multifunktionalen Werbeblocker,
 
 Um sie zu sehen, gehen Sie wie folgt vor: Öffnen Sie Safari und tippen Sie auf das Teilen-Symbol (Pfeil-in-Kasten). Scrollen Sie dann nach unten zu AdGuard/AdGuard Pro (je nach der von Ihnen verwendeten App) und tippen Sie darauf, um ein Fenster mit mehreren Optionen aufzurufen:
 
-- **Enable on this page.**
-  Turn the switch off to add the current domain to the Allowlist.
-- **Block an element on this page.**
-  Tap it to enter the 'Element blocking' mode: choose any element on the page, adjust the size by tapping '+' or '–', preview if necessary and then tap the checkmark icon to confirm. Das ausgewählte Element wird auf der Seite ausgeblendet und eine entsprechende Regel wird den Benutzerregeln hinzugefügt. Entfernen oder deaktivieren Sie sie, um die Änderung zu widerrufen.
-- **Report an issue on this page.**
-  Opens a web reporting tool that will help you send a report to our support team in just a few taps. Verwenden Sie diese Option, wenn Sie eine fehlende Werbung oder eine fehlerhafte Sperrung auf der Seite bemerken.
+- **Auf dieser Seite aktivieren.**  Schalten Sie den Schalter aus, um die aktuelle Domain zur Positivliste hinzuzufügen.
+- **Ein Element auf dieser Seite blockieren**.  Tippen Sie darauf, um den Modus „Element sperren“ aufzurufen. Wählen Sie ein beliebiges Element auf der Seite aus, passen Sie die Größe an, indem Sie auf „+“ oder „-“ tippen, sehen Sie sich gegebenenfalls eine Vorschau an und tippen Sie dann zur Bestätigung auf das Häkchen-Symbol. Das ausgewählte Element wird auf der Seite ausgeblendet und eine entsprechende Regel wird den Benutzerregeln hinzugefügt. Entfernen oder deaktivieren Sie sie, um die Änderung zu widerrufen.
+- **Einen Fehler auf dieser Seite melden.**  Öffnet ein Web-Reporting-Tool, mit dem Sie mit wenigen Klicks einen Bericht an unser Support-Team senden können. Verwenden Sie diese Option, wenn Sie eine fehlende Werbung oder eine fehlerhafte Sperrung auf der Seite bemerken.
 
 :::tip
 
-On iOS 15 devices, the Assistant features are available through [AdGuard Safari Web Extension](/adguard-for-ios/web-extension), which enhances the capabilities of AdGuard for iOS and allows you to take advantage of iOS 15. Mit dieser Web-Erweiterung kann AdGuard erweiterte Filterregeln anwenden und so mehr Werbung blockieren.
+Auf Geräten mit iOS 15 sind die Assistenten-Funktionen über die [AdGuard Safari Web-Erweiterung](/adguard-for-ios/web-extension) verfügbar, die die Möglichkeiten von AdGuard für iOS erweitert und es Ihnen ermöglicht, die Vorteile von iOS 15 zu nutzen. Mit dieser Web-Erweiterung kann AdGuard erweiterte Filterregeln anwenden und so mehr Werbung blockieren.
 
 :::

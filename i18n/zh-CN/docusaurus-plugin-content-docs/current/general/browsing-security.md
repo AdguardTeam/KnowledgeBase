@@ -1,5 +1,5 @@
 ---
-title: Browsing security
+title: 浏览安全
 sidebar_position: 3
 ---
 

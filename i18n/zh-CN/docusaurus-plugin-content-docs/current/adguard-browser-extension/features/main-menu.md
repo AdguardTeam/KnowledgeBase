@@ -11,7 +11,7 @@ sidebar_position: 4
 
 用户可以单击浏览器工具栏上的扩展程序图标来访问扩展程序的主页面。
 
-![Main menu \*mobile\_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
+![主菜单 \*mobile\_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
 
 在主页面上，可以手动隐藏页面上的任何元素（相应的规则将添加到「用户规则」中），打开「过滤日志」查看有关浏览器流量的完整信息并随时阻止请求，或者查看网站的安全报告。 此外，还可以针对任何网站提交投诉（例如，如果页面上有未被拦截的广告，我们的过滤工程师将审查报告并修复问题）并查看应用的阻止规则的统计信息。
 

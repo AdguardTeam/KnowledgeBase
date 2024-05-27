@@ -15,7 +15,7 @@ Some options may not be available depending on the particular product due to OS 
 
 :::
 
-## General {#general}
+## 보통 {#general}
 
 ### Hide your search queries {#searchqueries}
 

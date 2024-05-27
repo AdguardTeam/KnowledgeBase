@@ -1,54 +1,54 @@
 ---
-title: Other features
+title: 其他功能
 sidebar_position: 7
 ---
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+本文所述 AdGuard iOS 版是在系统级上保护设备的多功能的广告拦截器。 要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
-While Safari content blocking and DNS protection are indisputably two major modules of AdGuard/AdGuard Pro, there are some other minor features that don't fall into either of them directly but still can be useful and are worth knowing about.
+虽然 Safari 内容拦截和 DNS 保护是 AdGuard/AdGuard Pro 无可争议的两大模块，但还有一些其他次要功能并不直接属于这两个模块，但仍然很有用，值得了解。
 
-### **Dark theme**
+### **深色主题**
 
-![Light theme \*mobile\_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
+![浅色主题 \*mobile\_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
 
-![Dark theme \*mobile\_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
+![暗黑主题 \*mobile\_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
 
-Residing right at the top of **Settings** → **General** screen, this setting allows you to switch between dark and light themes.
+该设置位于「设置」→「通用」屏幕的顶部，可让用户在深色和浅色主题之间切换。
 
-### **Widgets**
+### **小工具**
 
-![Widgets \*mobile](https://cdn.adtidy.org/public/Adguard/Release_notes/iOS/v4.0/widget_en.jpg)
+![小工具 \*mobile](https://cdn.adtidy.org/public/Adguard/Release_notes/iOS/v4.0/widget_en.jpg)
 
-AdGuard supports widgets that provide quick access to Safari content blocking and DNS protection switches, and also show global requests stats.
+AdGuard 支持小工具，可快速访问 Safari 内容拦截和 DNS 保护开关，还可显示全局请求统计。
 
-### **Auto-update over Wi-Fi only**
+### **仅通过 Wi-Fi 自动更新**
 
-If this setting is enabled, AdGuard will use only Wi-Fi for background filter updates.
+如果启用此设置，AdGuard 将仅使用 Wi-Fi 进行后台过滤器更新.
 
-### **Invert the Allowlist**
+### **颠倒白名单**
 
-An alternative mode for Safari filtering, it unblocks ads everywhere except for the specified websites from the list. Disabled by default.
+Safari 过滤的另一种模式，它可以解除对除列表中指定网站以外的所有地方的广告屏蔽。 默认禁用。
 
-### **Advanced mode**
+### **高级模式**
 
-**Advanced mode** unlocks **Advanced settings**. We don't recommend messing with those, unless you know what you're doing or you have consulted with technical support first.
+**高级模式**解锁**高级设置**。 除非您知道自己在做什么，或者事先咨询过技术支持人员，否则我们不建议您乱动它们。
 
-### **Reset statistics**
+### **重置统计信息**
 
-Clears all statistical data, such as number of requests, etc.
+此选项会清除所有的统计数据，例如访问次数等等。
 
-### **Reset settings**
+### **重置设置**
 
-This option will reset all your settings.
+该选项将要重置您的所有设置。
 
-### **Support**
+### **支持**
 
-Use this option to contact support, report a missed ad (although we advise to use the Assistant or AdGuard's Safari Web extension for your own convenience), export logs or to make a feature request.
+使用此选项可以联系支持人员、报告错过的广告（尽管为了方便起见，我们建议使用助手功能或 AdGuard 的 Safari Web 扩展）、导出日志或提出功能请求。
 
-### **About**
+### **关于**
 
-Contains the current version of the app and an assortment of rarely needed options and links.
+包含应用程序的当前版本以及各种很少需要的选项和链接。

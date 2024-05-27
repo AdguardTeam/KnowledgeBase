@@ -1,5 +1,5 @@
 ---
-title: Settings
+title: 设置
 sidebar_position: 2
 ---
 
@@ -39,7 +39,7 @@ In the Ad Blocker module you can:
 
 Before you start manually writing your own rules read our detailed [syntax guide](/general/ad-filtering/create-own-filters).
 
-### Stealth Mode
+### 隐身模式
 
 Many websites gather information about their visitors, such as their IP addresses, information about the browser and operating system installed, screen resolution, and even what page the user came or was redirected from. Some web pages use cookies to mark the browser and save your personal settings, user preferences, or "recognize" you upon your next visit. Stealth Mode safeguards your personal information from such data and statistics gathering systems.
 
@@ -49,7 +49,7 @@ You can flexibly adjust the work of Stealth Mode: for instance, you can prohibit
 
 To learn everything about Stealth Mode and its many options, [read this article](/general/stealth-mode).
 
-### Browsing security
+### 浏览安全
 
 Browsing security gives strong protection against malicious and phishing websites. No, AdGuard for Windows is not an antivirus. It will neither stop the download of a virus when it's already started, nor delete the already existing ones. But it will warn you if you're about to proceed to a website whose domain has been added to our "untrusted sites" database, or to download a file from such website. You can find more information about how this module works in the [dedicated article](/general/browsing-security).
 
@@ -83,7 +83,7 @@ In the Parental Control module you can enable the _Safe search_ and manage the _
 
 ![Parental Control \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
 
-### Browser Assistant
+### 浏览器助手
 
 ![Browser Assistant \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 

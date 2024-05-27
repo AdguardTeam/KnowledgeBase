@@ -1,24 +1,24 @@
 ---
-title: Ad blocking
+title: 広告ブロック
 sidebar_position: 1
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Android」について書いています。 デバイス全体を保護するこのアプリは[こちらからダウンロード](https://agrd.io/download-kb-adblock)できます。
 
 :::
 
-The Ad blocking module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Ad blocking_.
+この機能は、「AdGuardによる保護」タブ（画面下部バーメニューで左から2番目の盾アイコン） → 「広告ブロック」にあります。
 
-The feature blocks ads by applying ad-blocking and language-specific filters. To learn about the mechanism of ad blocking, you can read a [dedicated article](/general/ad-filtering/how-ad-blocking-works).
+この機能は、広告ブロックと言語別の専用フィルタを適用して広告をブロックしてくれます。 広告ブロックの仕組みについては、[こちらの専用記事](/general/ad-filtering/how-ad-blocking-works)で詳しくお読みになれます。
 
-Basic protection effectively blocks ads on most websites. For more customized ad blocking, you can:
+「基本的な保護」という機能は、ほとんどのウェブサイトで広告を効果的にブロックします。 より柔軟にカスタマイズした広告ブロックは、以下の方法で設定することができます:
 
-- Enable appropriate language-specific filters — they contain filtering rules for blocking ads on websites in specific languages
+- 【適切な言語特化フィルタを有効にする】言語特化フィルタには、特定の言語のウェブサイト上の広告をブロックするためのフィルタリングルールが含まれています。
 
-- Add websites to allowlist — these websites won't be filtered by AdGuard
+- 【ホワイトリストにウェブサイトを追加する】ホワイトリストに追加されているウェブサイトで AdGuard は広告をブロックしません。
 
-- Create user rules — AdGuard will apply them on specified websites. [Learn how to create your own user rules](/general/ad-filtering/create-own-filters)
+- 【ユーザールールの作成する】AdGuard は、指定されたウェブサイトにそれらのルールを適用します。 [独自のユーザールールを作成する方法についてはこちら](/general/ad-filtering/create-own-filters)
 
-![Ad blocking \*mobile\_border](https://cdn.adtidy.org/blog/new/o44x5ad_blocking.png)
+![広告ブロック \*mobile\_border](https://cdn.adtidy.org/blog/new/g7tbpScreenshot_20230621-163650_AdGuard.jpg)

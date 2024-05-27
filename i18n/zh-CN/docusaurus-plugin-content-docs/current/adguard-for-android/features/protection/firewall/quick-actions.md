@@ -1,18 +1,18 @@
 ---
-title: Quick actions
+title: 快捷操作
 sidebar_position: 2
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。 要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
-Quick actions can be found inside the _Firewall_ module, which can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Firewall_.
+快速操作可在「防火墙」模块内找到，具体操作为，点击「保护」标签（屏幕顶部左起第二个图标），然后选择「防火墙」即可。
 
-_Quick actions_ are based on the requests from _Recent activity_ (which can be found in [_Statistics_](/adguard-for-android/features/statistics)). This section shows which apps have recently connected to the Internet.
+快速操作是基于「最近活动」（可在「[统计](/adguard-for-android/features/statistics)」内找到）的请求之上. 此部分显示最近连接到互联网的应用。
 
 ![Quick actions \*mobile\_border](https://cdn.adtidy.org/blog/new/yigrfquick_actions.png)
 
-If you see an app that shouldn't be using the Internet at all or an app that you haven't used recently, you can block its access on the fly. This will not be possible unless the _Firewall_ module is turned on.
+如果您发现有某个应用程序根本不应该连接互联网，或者您最近没有使用过某个应用程序，可以立即阻止其访问权限。 启用「防火墙」模块后，才能设置连接权限。
