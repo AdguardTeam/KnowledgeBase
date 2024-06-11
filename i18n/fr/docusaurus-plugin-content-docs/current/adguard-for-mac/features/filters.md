@@ -13,12 +13,12 @@ Cet article parle de AdGuard pour Mac, un bloqueur de contenus multifonctionnel 
 
 ![Filtres](https://cdn.adtidy.org/content/kb/ad_blocker/mac/filters.png)
 
-Filter lists are sets of rules written using a [special syntax](/general/ad-filtering/create-own-filters). AdGuard interprets and implements these rules to block ads, trackers, and annoyances. Some filters (for example, AdGuard Base filter, Tracking Protection filter, or EasyList) are pre-installed, others can be installed additionally.
+Les listes de filtres sont des ensembles de règles écrites à l'aide d'une [syntaxe spéciale](/general/ad-filtering/create-own-filters). AdGuard interprète et met en œuvre ces règles pour bloquer les publicités, les traqueurs et les nuisances. Certains filtres (par exemple, le filtre de base AdGuard, le filtre de protection contre le suivi ou EasyList) sont préinstallés, d'autres peuvent être installés en supplément.
 
-We recommend enabling the following filters:
+Nous vous recommandons d'activer les filtres suivants :
 
 - Filtre de base AdGuard
-- AdGuard Tracking Protection filter and AdGuard URL Tracking filter
+- Filtre de protection contre le suivi AdGuard et Filtre anti-suivi des URL AdGuard
 - Filtre anti-nuisances AdGuard
 - Filtres pour votre langue
 

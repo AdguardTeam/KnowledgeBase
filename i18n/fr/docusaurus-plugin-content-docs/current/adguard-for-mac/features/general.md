@@ -25,7 +25,7 @@ Cette fonctionnalité empêche AdGuard de bloquer les [annonces de recherche et 
 
 ### Activation automatique des filtres spécifiques à la langue
 
-Cette fonction détecte la langue du site web que vous visitez et active automatiquement les filtres appropriés pour un blocage plus précis des publicités. This is especially helpful if you change languages frequently.
+Cette fonction détecte la langue du site web que vous visitez et active automatiquement les filtres appropriés pour un blocage plus précis des publicités. Ceci est particulièrement utile si vous changez fréquemment de langue.
 
 ### Lancer AdGuard dès la connexion
 

@@ -19,22 +19,22 @@ Para configurar o AdGuard para Mac, clique no ícone de engrenagem no canto supe
 
 ![Geral](https://cdn.adtidy.org/content/kb/ad_blocker/mac/general.png)
 
-### Do not block search ads and website self-promoting ads
+### Não bloquear anúncios de pesquisa e anúncios de autopromoção do website
 
-This feature prevents AdGuard from blocking [search ads and self-promotions on websites](/general/ad-filtering/search-ads). This can be useful, for example, when you’re shopping online and want to see discounts offered by some websites. Instead of adding these websites to the allowlist, you can exclude self-promotions and search ads from filtering.
+Esse recurso evita que o AdGuard bloqueie [anúncios de pesquisa e autopromoções em sites](/general/ad-filtering/search-ads). Isso pode ser útil, por exemplo, quando você faz compras online e deseja ver descontos oferecidos por alguns sites. Em vez de adicionar esses sites à lista de permissões, você pode excluir da filtragem autopromoções e anúncios de pesquisa.
 
-### Activate language-specific filters automatically
+### Ativar filtros específicos de idioma automaticamente
 
-This feature detects the language of the website you’re visiting and automatically activates appropriate filters for more accurate ad blocking. This is especially helpful if you change languages frequently.
+Este recurso detecta o idioma do site que você está visitando e ativa automaticamente os filtros apropriados para um bloqueio de anúncios mais preciso. Isto é especialmente útil se você muda de idioma com frequência.
 
-### Launch AdGuard at login
+### Iniciar o AdGuard no login
 
-This feature automatically launches AdGuard automatically after you restart your computer. This helps keep AdGuard protection active without having to manually open the app.
+Este recurso inicia automaticamente o AdGuard após você reiniciar o computador. Isso ajuda a manter a proteção do AdGuard ativa sem a necessidade de abrir o aplicativo manualmente.
 
-### Hide menu bar icon
+### Ocultar ícone da barra de menus
 
-This feature hides AdGuard’s icon from the menu bar but keeps AdGuard running in the background. If you want to disable AdGuard completely, click _Quit AdGuard_ in the main window menu.
+Este recurso oculta o ícone do AdGuard na barra de menu, mas mantém o AdGuard em execução em segundo plano. Se você deseja desativar o AdGuard completamente, clique em _Sair do AdGuard_ no menu da janela principal.
 
 ### Lista de permissões
 
-Websites added to this list aren’t filtered. You can also access allowlisted websites from _User rules_.
+Os sites adicionados a esta lista não são filtrados. Você também pode acessar sites permitidos em _Regras do usuário_.

@@ -15,7 +15,7 @@ Mit dieser Funktion können Sie den Zugriff auf das Internet für bestimmte Apps
 
 ![Firewall \*mobile\_border](https://cdn.adtidy.org/blog/new/gdn94firewall.png)
 
-#### Globale Firewall-Regeln
+### Globale Firewall-Regeln
 
 In diesem Abschnitt können Sie den Internetzugang für das gesamte Gerät steuern.
 
@@ -23,7 +23,7 @@ In diesem Abschnitt können Sie den Internetzugang für das gesamte Gerät steue
 
 Diese Regeln gelten für alle Apps auf Ihrem Gerät, es sei denn, Sie haben benutzerdefinierte Regeln für diese festgelegt.
 
-#### Benutzerdefinierte Firewall-Regeln
+### Benutzerdefinierte Firewall-Regeln
 
 In diesem Abschnitt können Sie den Internetzugang für bestimmte Apps steuern. Sie können die Berechtigungen für die Apps einschränken, die Sie nicht für vertrauenswürdig halten, oder im Gegenteil die Freigabe für die Apps erteilen, die die globalen Firewall-Regeln umgehen sollen.
 
@@ -42,3 +42,11 @@ In diesem Abschnitt können Sie den Internetzugang für bestimmte Apps steuern. 
 4. Um einen bestimmten Verbindungstyp zu sperren, schieben Sie den Schalter nach links. Wenn Sie die Verbindung zulassen möchten, dann lassen Sie den Schalter eingeschaltet. **Benutzerdefinierte Regeln haben Vorrang vor globalen Regeln**: Alle Änderungen, die Sie in den _Globalen Firewall-Regeln_ vornehmen, haben keine Auswirkungen auf diese App.
 
 Um eine Regel oder App aus _Benutzerdefinierte Regeln_ zu löschen, wischen Sie sie nach links.
+
+### Notifications
+
+If enabled, this feature notifies you when an app tries to break one of the Firewall rules set for that app (for example, to access mobile data when it shouldn’t). You can turn notifications on and off for all apps or for each app separately.
+
+Tap the notification to access the app’s Firewall settings, or temporary disable all Firewall rules for that app by tapping the corresponding button in the notification. You can also mute all Firewall notifications for the app by tapping the _Mute_ button in the notification for that app.
+
+Note that if notifications for multiple apps would be displayed, they will be bundled into a single notification instead.

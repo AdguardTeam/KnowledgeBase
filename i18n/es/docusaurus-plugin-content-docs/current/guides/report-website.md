@@ -1,5 +1,5 @@
 ---
-title: Cómo denunciar un sitio web
+title: How to report websites and apps
 sidebar_position: 3
 ---
 

@@ -1,16 +1,16 @@
 ---
-title: Rooted devices
+title: ルート化されたデバイス
 sidebar_position: 7
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+この記事は、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Android」についてです。 デバイス全体を保護するこのアプリは、[こちらからダウンロード](https://agrd.io/download-kb-adblock)できます。
 
 :::
 
-Due to security measures of the Android OS, some AdGuard features are only available on rooted devices. Here's the list of them:
+Android OSのセキュリティ対策により、AdGuardの一部の機能はroot化されたデバイスでのみ利用可能です。 そういった機能は以下の通りです:
 
-- **HTTPS filtering in most apps** requires [installing a CA certificate into the system store](/adguard-for-android/features/settings#security-certificates), as most apps do not trust certificates in the user store. Installing a certificate into the system store is only possible on rooted devices
-- The [**Automatic proxy** routing mode](/adguard-for-android/features/settings#routing-mode) requires root access due to Android's restrictions on system-wide traffic filtering
-- The [**Manual proxy** routing mode](/adguard-for-android/features/settings#routing-mode) requires root access on Android 10 and above as it's no longer possible to determine the name of the app associated with a connection filtered by AdGuard
+- **ほとんどのアプリでの HTTPS フィルタリング**には、[システム ストアに CA 証明書をインストールする](/adguard-for-android/features/settings#security-certificates) 必要があります。アプリの多くはユーザー ストアの証明書を信頼しないためです。 システムストアに証明書をインストールできるのは、ルート化されたデバイスのみです。
+- Androidのシステム全体のトラフィックフィルタリングの制限により、[**自動プロキシ**ルーティングモード](/adguard-for-android/features/settings#routing-mode)にはルートアクセスが必要です。
+- Android 10以降では、[**手動プロキシ**ルーティングモード](/adguard-for-android/features/settings#routing-mode)にルートアクセスが必要です。AdGuardによってフィルタリングされた接続に関連付けられたアプリの名前を特定できなくなったためです。

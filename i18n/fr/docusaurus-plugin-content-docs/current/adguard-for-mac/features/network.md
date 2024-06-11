@@ -27,10 +27,10 @@ Par défaut, AdGuard ne filtre pas les sites web avec des certificats de Validat
 
 ## Proxy Sortant
 
-You can set up AdGuard to route all your device’s traffic through your proxy server.
+Vous pouvez configurer AdGuard pour acheminer tout le trafic de votre appareil via votre serveur proxy.
 
 ## Proxy HTTP
 
-You can use AdGuard as an HTTP proxy server. This will allow you to filter traffic on other devices connected to the proxy.
+Vous pouvez utiliser AdGuard comme serveur proxy HTTP. Cela vous permettra de filtrer le trafic sur les autres appareils connectés au proxy.
 
-Make sure your Mac and your other device are connected to the same network and enter the proxy port on the device you want to route through your proxy server (usually in the network settings). To filter HTTPS traffic as well, [transfer AdGuard’s proxy certificate](http://local.adguard.org/cert) to this device. [Apprenez plus sur l'installation d'un certificat proxy](/guides/proxy-certificate)
+Assurez-vous que votre Mac et votre autre appareil sont connectés au même réseau et entrez le port proxy de l'appareil que vous souhaitez acheminer via votre serveur proxy (généralement dans les paramètres réseau). Pour filtrer également le trafic HTTPS, [transférez le certificat proxy d'AdGuard](http://local.adguard.org/cert) vers cet appareil. [Apprenez plus sur l'installation d'un certificat proxy](/guides/proxy-certificate)

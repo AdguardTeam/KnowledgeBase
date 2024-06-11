@@ -3,9 +3,9 @@ title: FaceTime과의 호환성 문제를 해결하는 방법
 sidebar_position: 3
 ---
 
-:::info
+:::정보
 
-이 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 iOS용 AdGuard에 대해 다룹니다. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+이 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 iOS용 AdGuard에 대해 다룹니다. 작동 방식을 확인하려면 [AdGuard 앱](https://agrd.io/download-kb-adblock)을 다운로드하세요.
 
 :::
 
@@ -21,7 +21,7 @@ iOS용 AdGuard의 풀 터널 (VPN 아이콘이 표시되지 않음) 모드를 �
 
 분할 터널 모드를 활성화하는 방법은 다음과 같습니다.
 
-1. Go to AdGuard for iOS *Settings* → *General settings*.
+1. iOS용 AdGuard *설정* → *일반 설정*으로 이동합니다.
 2. *고급 모드* 활성화 후 *고급 설정*으로 이동
 3. *터널 모드*> *분할 터널* 모드 선택
 

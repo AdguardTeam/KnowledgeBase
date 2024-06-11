@@ -1,5 +1,5 @@
 ---
-title: So melden Sie eine Website
+title: How to report websites and apps
 sidebar_position: 3
 ---
 

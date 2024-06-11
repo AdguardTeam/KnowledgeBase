@@ -71,7 +71,7 @@ AdGuard Extra is a custom userscript that blocks complex ads and mechanisms that
 
 Disable AMP is a userscript that disables [Accelerated mobile pages](https://en.wikipedia.org/wiki/Accelerated_Mobile_Pages) on the Google search results page.
 
-### Network
+### Rete
 
 #### Filtraggio HTTPS
 
@@ -100,7 +100,7 @@ You can also add websites that you consider necessary to exclusions by selecting
 - Exclude specific websites from HTTPS filtering
 - Filter HTTPS traffic only on the websites added to exclusions
 
-By default, we also do not filter websites with Extended Validation (EV) certificates, such as financial websites. If needed, you can enable the _Filter websites with EV certificates_ option.
+By default, we also do not filter websites with Extended Validation (EV) certificates, such as financial websites. Se necessario, puoi abilitare l'opzione _Filtra siti web con certificati EV_.
 
 #### Proxy
 

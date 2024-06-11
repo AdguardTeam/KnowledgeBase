@@ -1,5 +1,5 @@
 ---
-title: Site nasıl bildirilir
+title: Siteler ve uygulamalar nasıl bildirilir
 sidebar_position: 3
 ---
 

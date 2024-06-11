@@ -5,7 +5,7 @@ toc_min_heading_level: 2
 toc_max_heading_level: 4
 ---
 
-:::info
+:::정보
 
 이 글에서는 AdGuard 제품에서 사용자 정의 필터링 규칙을 작성하는 방법을 알려드립니다. To test your rules, you can [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
@@ -17,7 +17,7 @@ At the same time, AdGuard allows you to create your own custom filters using the
 
 To describe the syntax of our filtering rules, we use [Augmented BNF for Syntax Specifications](https://tools.ietf.org/html/rfc5234), but we do not always strictly follow this specification.
 
-:::info
+:::정보
 
 Originally, the AdGuard's syntax was based on the syntax of Adblock Plus rules. Later, we extended it with new types of rules for better ad filtering. Some parts of this article about the rules common both to AdGuard and ABP were taken from [the Adblock Plus guide on how to write filters](https://adblockplus.org/en/filters).
 
@@ -381,7 +381,7 @@ entry_i = ( regular_domain / any_tld_domain / regexp )
 - **`any_tld_domain`** — a domain name ending with a wildcard character as a [public suffix](https://publicsuffix.org/learn/), e.g. for `example.*` it is `co.uk` in `example.co.uk`. Corresponds to the specified domain and its subdomains with any public suffix. It is matched lexicographically.
 - **`regexp`** — a regular expression, starts and ends with `/`. The pattern works the same way as in the basic URL rules, but the characters `/`, `$`, and `|` must be escaped with `\`.
 
-:::info
+:::정보
 
 Rules with `$domain` modifier as `regular_domain` or `any_tld_domain` are supported by all AdGuard products.
 
@@ -1084,6 +1084,7 @@ These modifiers are able to completely change the behavior of basic rules.
 | [$inline-font](#inline-font-modifier)       |            ✅             |                ✅                |               ✅               |             ❌              |             ❌              |                 ❌                 |
 | [$inline-script](#inline-script-modifier)   |            ✅             |                ✅                |               ✅               |             ❌              |             ❌              |                 ❌                 |
 | [$jsonprune](#jsonprune-modifier)           |            ✅             |                ❌                |               ❌               |             ❌              |             ❌              |                 ❌                 |
+| [$xmlprune](#xmlprune-modifier)             |            ✅             |                ❌                |               ❌               |             ❌              |             ❌              |                 ❌                 |
 | [$network](#network-modifier)               |            ✅             |                ❌                |               ❌               |             ❌              |             ❌              |                 ❌                 |
 | [$permissions](#permissions-modifier)       |            ✅             |                ⏳                |               ⏳               |             ❌              |             ❌              |                 ❌                 |
 | [$redirect](#redirect-modifier)             |            ✅             |                ✅                |               ✅               |             ❌              |             ❌              |                 ❌                 |
@@ -1221,7 +1222,7 @@ Rules with `$cookie` modifier are not supported by AdGuard Content Blocker, AdGu
 
 This modifier completely changes the rule behavior. If it is applied to a rule, the rule will not block the matching request. Response headers will be modified instead.
 
-:::info
+:::정보
 
 In order to use this type of rules, it is required to have the basic understanding of the [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) security layer.
 
@@ -1441,10 +1442,10 @@ Keep in mind, though, that all JSONPath implementations have unique features/qui
 
 **Exceptions**
 
-Basic URL exceptions shall not disable rules with `$jsonprune` modifier. They can be disabled as described below:
+Basic URL exceptions shall not disable rules with the `$jsonprune` modifier. They can be disabled as described below:
 
 - `@@||example.org^$jsonprune` disables all `$jsonprune` rules for responses from URLs matching `||example.org^`.
-- `@@||example.org^$jsonprune=text` disable all `$jsonprune` rules with the value of the `$jsonprune` modifier equal to `text` for responses from URLs matching `||example.org^`.
+- `@@||example.org^$jsonprune=text` disables all `$jsonprune` rules with the value of the `$jsonprune` modifier equal to `text` for responses from URLs matching `||example.org^`.
 
 `$jsonprune` rules can also be disabled by `$document`, `$content` and `$urlblock` exception rules.
 
@@ -1627,14 +1628,252 @@ In AdGuard for Windows, Mac and Android **running CoreLibs v1.11 or later**, JSO
 
 :::caution Restrictions
 
-- `$jsonprune` rules are only compatible with these specific modifiers: `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
-- `$jsonprune` rules do not apply if the size of the original response is more than 10 MB.
+- `$jsonprune` rules are only compatible with these modifiers: `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
+- `$jsonprune` rules do not apply if the size of the original response is greater than 10 MB.
 
 :::
 
 :::info Compatibility
 
 Rules with the `$jsonprune` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.10 or later**.
+
+:::
+
+#### **`$xmlprune`** {#xmlprune-modifier}
+
+`$xmlprune` rules modify the response to a matching request by removing XML items that match an [XPath 1.0](https://www.w3.org/TR/1999/REC-xpath-19991116/) expression. The expression must return a [node-set](https://www.w3.org/TR/1999/REC-xpath-19991116/#node-sets). `$xmlprune` rules do not modify responses which are not well-formed XML documents.
+
+**Syntax**
+
+- `||example.org^$xmlprune=expression` removes items that match the XPath expression `expression` from the response.
+
+Due to the way rule parsing works, the characters `$` and `,` must be escaped with `\` inside `expression`.
+
+**Exceptions**
+
+Basic URL exceptions shall not disable rules with the `$xmlprune` modifier. They can be disabled as described below:
+
+- `@@||example.org^$xmlprune` disables all `$xmlprune` rules for responses from URLs matching `||example.org^`.
+- `@@||example.org^$xmlprune=text` disables all `$xmlprune` rules with the value of the `$xmlprune` modifier equal to `text` for responses from URLs matching `||example.org^`.
+
+`$xmlprune` rules can also be disabled by `$document`, `$content` and `$urlblock` exception rules.
+
+:::note
+
+When multiple `$xmlprune` rules match the same request, they are applied in lexicographical order.
+
+:::
+
+**Examples**
+
+- `||example.org^$xmlprune=/bookstore/book[position() mod 2 = 1]` removes odd-numbered books from the bookstore.
+
+<details>
+<summary>Input</summary>
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bookstore>
+
+  <book category="cooking">
+    <title lang="en">Everyday Italian</title>
+    <author>Giada De Laurentiis</author>
+    <year>2005</year>
+    <price>30.00</price>
+  </book>
+
+  <book category="children">
+    <title lang="en">Harry Potter</title>
+    <author>J K. Rowling</author>
+    <year>2005</year>
+    <price>29.99</price>
+  </book>
+
+  <book category="web">
+    <title lang="en">XQuery Kick Start</title>
+    <author>James McGovern</author>
+    <author>Per Bothner</author>
+    <author>Kurt Cagle</author>
+    <author>James Linn</author>
+    <author>Vaidyanathan Nagarajan</author>
+    <year>2003</year>
+    <price>49.99</price>
+  </book>
+
+  <book category="web">
+    <title lang="en">Learning XML</title>
+    <author>Erik T. Ray</author>
+    <year>2003</year>
+    <price>39.95</price>
+  </book>
+
+</bookstore>
+```
+
+</details>
+
+<details>
+<summary>Output</summary>
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bookstore>
+
+
+
+<book category="children">
+  <title lang="en">Harry Potter</title>
+  <author>J K. Rowling</author>
+  <year>2005</year>
+  <price>29.99</price>
+</book>
+
+
+
+<book category="web">
+  <title lang="en">Learning XML</title>
+  <author>Erik T. Ray</author>
+  <year>2003</year>
+  <price>39.95</price>
+</book>
+
+</bookstore>
+```
+
+</details>
+
+- `||example.org^$xmlprune=/bookstore/book[year = 2003]` removes books from the year 2003 from the bookstore.
+
+<details>
+<summary>Input</summary>
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bookstore>
+
+  <book category="cooking">
+    <title lang="en">Everyday Italian</title>
+    <author>Giada De Laurentiis</author>
+    <year>2005</year>
+    <price>30.00</price>
+  </book>
+
+  <book category="children">
+    <title lang="en">Harry Potter</title>
+    <author>J K. Rowling</author>
+    <year>2005</year>
+    <price>29.99</price>
+  </book>
+
+  <book category="web">
+    <title lang="en">XQuery Kick Start</title>
+    <author>James McGovern</author>
+    <author>Per Bothner</author>
+    <author>Kurt Cagle</author>
+    <author>James Linn</author>
+    <author>Vaidyanathan Nagarajan</author>
+    <year>2003</year>
+    <price>49.99</price>
+  </book>
+
+  <book category="web">
+    <title lang="en">Learning XML</title>
+    <author>Erik T. Ray</author>
+    <year>2003</year>
+    <price>39.95</price>
+  </book>
+
+</bookstore>
+```
+
+</details>
+
+<details>
+<summary>Output</summary>
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bookstore>
+
+<book category="cooking">
+  <title lang="en">Everyday Italian</title>
+  <author>Giada De Laurentiis</author>
+  <year>2005</year>
+  <price>30.00</price>
+</book>
+
+<book category="children">
+  <title lang="en">Harry Potter</title>
+  <author>J K. Rowling</author>
+  <year>2005</year>
+  <price>29.99</price>
+</book>
+
+
+
+
+
+</bookstore>
+```
+
+</details>
+
+- `||example.org^$xmlprune=//*/@*` removes all attributes from all elements.
+
+<details>
+<summary>Input</summary>
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bookstore location="cy">
+
+  <book category="cooking">
+    <title lang="en">Everyday Italian</title>
+    <author>Giada De Laurentiis</author>
+    <year>2005</year>
+    <price>30.00</price>
+  </book>
+
+</bookstore>
+```
+
+</details>
+
+<details>
+<summary>Output</summary>
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bookstore>
+
+  <book>
+    <title>Everyday Italian</title>
+    <author>Giada De Laurentiis</author>
+    <year>2005</year>
+    <price>30.00</price>
+  </book>
+
+</bookstore>
+```
+
+</details>
+
+:::caution Restrictions
+
+- `$xmlprune` rules are only compatible with these modifiers: `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
+- `$xmlprune` rules do not apply if the size of the original response is greater than 10 MB.
+
+:::
+
+:::info Compatibility
+
+Rules with the `$xmlprune` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.15 or later**.
 
 :::
 
@@ -1674,7 +1913,7 @@ Only AdGuard for Windows, Mac, and Android are technically capable of using rule
 
 This modifier completely changes the rule behavior. If it is applied to a rule, the rule will not block the matching request. Response headers will be modified instead.
 
-:::info
+:::정보
 
 In order to use this type of rules, it is required to have a basic understanding of the [Permissions Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Permissions_Policy) security layer.
 
@@ -2262,7 +2501,7 @@ When two rules with the same priority match the same request, it depends on the 
 
 :::
 
-:::info
+:::정보
 
 The concept of rule priorities becomes increasingly important in light of Manifest V3 as the existing rules need to be converted to declarativeNetRequest rules.
 
@@ -2470,7 +2709,7 @@ However, basic rules may not be enough to block ads. Sometimes you need to hide 
 
 ## Cosmetic rules {#cosmetic-rules}
 
-:::info
+:::정보
 
 Work with non-basic rules requires the basic knowledge of HTML and CSS. So, if you want to learn how to make such rules, we recommend to get acquainted with [this documentation](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/What_is_CSS).
 

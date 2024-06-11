@@ -3,7 +3,7 @@ title: Known compatibility issues with Android apps
 sidebar_position: 16
 ---
 
-:::info
+:::정보
 
 This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 

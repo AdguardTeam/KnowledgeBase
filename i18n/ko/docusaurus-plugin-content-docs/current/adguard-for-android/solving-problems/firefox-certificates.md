@@ -3,7 +3,7 @@ title: Firefox 브라우저의 인증서 신뢰 문제
 sidebar_position: 11
 ---
 
-:::info
+:::정보
 
 This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 

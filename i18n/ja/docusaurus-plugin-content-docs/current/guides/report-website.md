@@ -1,5 +1,5 @@
 ---
-title: サイト上問題を報告する方法
+title: How to report websites and apps
 sidebar_position: 3
 ---
 

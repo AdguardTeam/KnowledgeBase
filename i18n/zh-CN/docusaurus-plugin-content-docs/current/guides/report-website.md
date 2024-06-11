@@ -1,5 +1,5 @@
 ---
-title: 报告网站
+title: How to report websites and apps
 sidebar_position: 3
 ---
 

@@ -15,7 +15,7 @@ Este recurso ajuda a gerenciar o acesso à Internet para aplicativos específico
 
 ![Firewall \*mobile\_border](https://cdn.adtidy.org/blog/new/gdn94firewall.png)
 
-#### Regras globais de firewall
+### Regras globais de firewall
 
 Esta seção permite controlar o acesso à Internet para todo o dispositivo.
 
@@ -23,7 +23,7 @@ Esta seção permite controlar o acesso à Internet para todo o dispositivo.
 
 Essas regras se aplicam a todos os aplicativos do seu dispositivo, a menos que você defina regras personalizadas para eles.
 
-#### Regras de firewall personalizadas
+### Regras de firewall personalizadas
 
 Nesta seção, você pode controlar o acesso à Internet para aplicativos específicos: restringir permissões para aqueles que você não considera confiáveis ou, pelo contrário, desbloquear aqueles que você deseja contornar as regras globais de firewall.
 
@@ -42,3 +42,11 @@ Nesta seção, você pode controlar o acesso à Internet para aplicativos espec�
 4. Se você precisar bloquear um tipo específico de conexão, alterne a chave para a esquerda. Se você quiser permitir isso, deixe a chave ativada. **As regras personalizadas substituem as globais**: quaisquer alterações feitas nas _Regras globais de firewall_ não afetarão este aplicativo.
 
 Para excluir uma regra ou aplicativo de _Regras personalizadas_, deslize-o para a esquerda.
+
+### Notifications
+
+If enabled, this feature notifies you when an app tries to break one of the Firewall rules set for that app (for example, to access mobile data when it shouldn’t). You can turn notifications on and off for all apps or for each app separately.
+
+Tap the notification to access the app’s Firewall settings, or temporary disable all Firewall rules for that app by tapping the corresponding button in the notification. You can also mute all Firewall notifications for the app by tapping the _Mute_ button in the notification for that app.
+
+Note that if notifications for multiple apps would be displayed, they will be bundled into a single notification instead.
