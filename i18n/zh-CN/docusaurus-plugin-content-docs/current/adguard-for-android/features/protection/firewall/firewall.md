@@ -15,7 +15,7 @@ sidebar_position: 1
 
 ![Firewall \*mobile\_border](https://cdn.adtidy.org/blog/new/gdn94firewall.png)
 
-#### 全局防火墙规则
+### 全局防火墙规则
 
 该设置让用户控制整个设备的互联网连接。
 
@@ -23,7 +23,7 @@ sidebar_position: 1
 
 这些规则应用到设备上的所有应用程序，除非您设置自定义规则。
 
-#### 自定义防火墙规则
+### 自定义防火墙规则
 
 用户可以控制特定应用程序的上网权限，限制用户认为不值得信任的应用程序的权限，或者相反，解除对那些你想规避全局防火墙规则的应用程序的阻止。
 
@@ -42,3 +42,11 @@ sidebar_position: 1
 4. 如您需要拦截特定类型的连接，请切换到左侧。 如您要允许它，请保持开启状态。 **自定义规则会优先于全局规则**：即您在「全局防火墙规则」内所在的更改不会影响此应用。
 
 要从「自定义规则」移除规则或应用，请将其滑动到左侧。
+
+### Notifications
+
+If enabled, this feature notifies you when an app tries to break one of the Firewall rules set for that app (for example, to access mobile data when it shouldn’t). You can turn notifications on and off for all apps or for each app separately.
+
+Tap the notification to access the app’s Firewall settings, or temporary disable all Firewall rules for that app by tapping the corresponding button in the notification. You can also mute all Firewall notifications for the app by tapping the _Mute_ button in the notification for that app.
+
+Note that if notifications for multiple apps would be displayed, they will be bundled into a single notification instead.

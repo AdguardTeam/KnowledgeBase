@@ -5,7 +5,7 @@ sidebar_position: 5
 
 :::info
 
-本文所述 AdGuard iOS 版是在系统级上保护设备的多功能的广告拦截器。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+本文所述 AdGuard iOS 版是在系统级上保护设备的多功能的广告拦截器。 要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)
 
 :::
 

@@ -1,14 +1,14 @@
 ---
-title: Main window
+title: Schermo principale
 sidebar_position: 1
 ---
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
+Questo articolo riguarda AdGuard per Mac, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-The main window of AdGuard for Mac allows you to enable or disable the AdGuard protection. It also gives you a quick overview of the app’s stats: ads, trackers, and threats blocked since you’ve installed AdGuard or since your last stats reset. By clicking the gear icon, you can access settings, check for app and filter updates, contact support, and manage your license.
+Lo schermo principale di AdGuard per Mac ti consente di abilitare o disabilitare la protezione AdGuard. Fornisce inoltre una rapida panoramica delle statistiche dell'app: annunci, tracker e minacce bloccati dall'installazione di AdGuard o dall'ultimo reset delle statistiche. Facendo clic sull'icona a forma di ingranaggio, puoi accedere alle impostazioni, verificare la presenza di aggiornamenti di app e filtri, contattare l'assistenza e gestire la tua licenza.
 
-![Main window \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/main.png)
+![Schermo principale \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/main.png)

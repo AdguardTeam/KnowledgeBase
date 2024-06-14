@@ -1,5 +1,5 @@
 ---
-title: Comment signaler un site web
+title: How to report websites and apps
 sidebar_position: 3
 ---
 

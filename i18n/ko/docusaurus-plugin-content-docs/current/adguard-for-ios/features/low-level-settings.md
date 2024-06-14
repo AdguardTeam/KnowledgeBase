@@ -1,29 +1,29 @@
 ---
-title: Low-level settings
+title: 로우 레벨 설정
 sidebar_position: 6
 ---
 
 :::info
 
-This article is about AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+이 글은 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 iOS용 AdGuard에 관한 것입니다. 이용하고자 한다면 [AdGuard 앱을 다운로드](https://agrd.io/download-kb-adblock)해 보세요.
 
 :::
 
-![Low-level settings \*mobile\_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_lowlevel.PNG)
+![로우 레벨 설정 \*mobile\_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_lowlevel.PNG)
 
-To open the _Low-level settings_, go to _Settings_ → _General_ → (Enable _Advanced mode_ if it's off) → _Advanced settings_ → _Low-level settings_.
+**로우 레벨 설정**을 열려면 **설정** → **일반** → (**고급 모드**가 꺼져 있는 경우 활성화) → **고급 설정** → **로우 레벨 설정**으로 이동합니다.
 
-For the most part, the settings in this section are best left untouched: only use them if you're sure about what you're doing, or if the support team has asked for them. But some settings could be changed without any risk.
+대부분의 경우 이 섹션의 설정은 그대로 두는 것이 좋습니다. 이러한 설정은 작업 내용에 대해 확신이 있거나 지원팀에서 요청한 경우에만 사용하세요. 하지만 일부 설정은 위험 없이 변경할 수 있습니다.
 
-### Block IPv6 {#blockipv6}
+### IPv6 차단 {#blockipv6}
 
-For any DNS query sent to get an IPv6 address, our app returns an empty response (as if this IPv6 address does not exist). Now there is an option not to return IPv6 addresses. At this point the description of this function becomes too technical: configuring or disabling IPv6 is the exclusive domain of advanced users. Presumably, if you are one of them, it will be good to know that we now have this feature, if not — there is no need to dive into it.
+IPv6 주소를 가져오기 위해 전송된 모든 DNS 쿼리에 대해 앱은 빈 응답을 반환합니다(마치 이 IPv6 주소가 존재하지 않는 것처럼). 이제 IPv6 주소를 반환하지 않는 옵션이 있습니다. 이 시점에서 이 기능에 대한 설명은 너무 기술적이 되어버립니다. IPv6를 구성하거나 비활성화하는 것은 고급 사용자의 전유물이기 때문입니다. 아마도 당신이 그들 중 하나라면 이제이 기능이 있다는 것을 아는 것이 좋을 것입니다. 그렇지 않다면 자세히 알아볼 필요가 없습니다.
 
-### Bootstrap and Fallback servers {#bootstrap-fallback}
+### 부트스트랩 및 폴백 서버 {#bootstrap-fallback}
 
-Fallback is a backup DNS server. If you chose a DNS server and something happened to it, a fallback is needed to set the backup DNS server until the main server responds.
+폴백은 백업 DNS 서버입니다. DNS 서버를 선택했는데 문제가 발생한 경우 주 서버가 응답할 때까지 백업 DNS 서버를 설정하는 폴백이 필요합니다.
 
-With Bootstrap, it’s a little more complicated. For AdGuard for iOS to use a custom secure DNS server, our app needs to get its IP address first. For this purpose, the system DNS is used by default, but sometimes this is not possible for various reasons. In such cases, Bootstrap could be used to get the IP address of the selected secure DNS server. Here are two examples to illustrate when a custom Bootstrap server might help:
+부트스트랩을 사용하면 조금 더 복잡해집니다. iOS용 AdGuard가 사용자 정의 보안 DNS 서버를 사용하려면 먼저 앱이 해당 IP 주소를 가져와야 합니다. 이를 위해 기본적으로 시스템 DNS가 사용되지만 여러 가지 이유로 사용할 수 없는 경우도 있습니다. 이러한 경우 부트스트랩을 사용하여 선택한 보안 DNS 서버의 IP 주소를 가져올 수 있습니다. 다음은 사용자 정의 부트스트랩 서버가 도움이 될 수 있는 경우를 설명하는 두 가지 예입니다:
 
-1. When a system default DNS server does not return the IP address of a secure DNS server and it is not possible to use a secure one.
-2. When our app and third-party VPN are used simultaneously and it is not possible to use System DNS as a Bootstrap.
+1. 시스템 기본 DNS 서버가 보안 DNS 서버의 IP 주소를 반환하지 않아 보안 DNS 서버를 사용할 수 없는 경우
+2. 당사 앱과 타사 VPN을 동시에 사용하고 시스템 DNS를 부트스트랩으로 사용할 수 없는 경우

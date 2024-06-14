@@ -15,7 +15,7 @@ sidebar_position: 1
 
 ![방화벽 \*mobile\_border](https://cdn.adtidy.org/blog/new/gdn94firewall.png)
 
-#### 글로벌 방화벽 규칙
+### 글로벌 방화벽 규칙
 
 이 섹션에서는 전체 기기에 대한 인터넷 액세스를 제어할 수 있습니다.
 
@@ -23,7 +23,7 @@ sidebar_position: 1
 
 이러한 규칙은 사용자 정의 규칙을 설정하지 않은 경우 기기의 모든 앱에 적용됩니다.
 
-#### 사용자 정의 방화벽 규칙
+### 사용자 정의 방화벽 규칙
 
 이 섹션에서는 특정 앱의 인터넷 액세스를 제어할 수 있습니다. 신뢰할 수 없는 앱에 대한 권한을 제한하거나 반대로 글로벌 방화벽 규칙을 우회하려는 앱의 차단을 해제할 수 있습니다.
 
@@ -42,3 +42,11 @@ sidebar_position: 1
 4. 특정 유형의 연결을 차단해야 하는 경우 스위치를 왼쪽으로 옮깁니다. 허용하려면 스위치를 활성화한 상태로 두세요. **사용자 정의 규칙이 글로벌 규칙보다 우선합니다**. **글로벌 방화벽 규칙**에서 변경한 사항은 이 앱에 영향을 미치지 않습니다.
 
 **사용자 정의 규칙**에서 규칙 또는 앱을 삭제하려면 왼쪽으로 스와이프합니다.
+
+### Notifications
+
+If enabled, this feature notifies you when an app tries to break one of the Firewall rules set for that app (for example, to access mobile data when it shouldn’t). You can turn notifications on and off for all apps or for each app separately.
+
+Tap the notification to access the app’s Firewall settings, or temporary disable all Firewall rules for that app by tapping the corresponding button in the notification. You can also mute all Firewall notifications for the app by tapping the _Mute_ button in the notification for that app.
+
+Note that if notifications for multiple apps would be displayed, they will be bundled into a single notification instead.

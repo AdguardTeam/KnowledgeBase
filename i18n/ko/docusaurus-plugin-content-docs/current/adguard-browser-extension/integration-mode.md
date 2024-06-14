@@ -3,7 +3,7 @@ title: 통합 모드 (이전 버전)
 sidebar_position: 4
 ---
 
-:::info
+:::정보
 
 브라우저만 보호하는 AdGuard 브라우저 확장 프로그램에 관한 문서입니다. 기기 전체를 보호하려면 [AdGuard 앱을 다운로드하세요](https://agrd.io/download-kb-adblock).
 

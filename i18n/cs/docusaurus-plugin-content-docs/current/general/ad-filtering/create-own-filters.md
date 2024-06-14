@@ -955,7 +955,7 @@ Seznam dostupných možností modifikátoru:
 
 :::note
 
-Blocking cookies and removing tracking parameters is achieved by using rules with the [`$cookie`](#cookie-modifier), [`$urltransform`](#urltransform-modifier) and [`$removeparam`](#removeparam-modifier) modifiers. Exception rules that contain only the `$stealth` modifier will not do these things. If you want to completely disable all Stealth mode features for a given domain, you must include all three modifiers: `@@||example.org^$stealth,removeparam,cookie`.
+Blokování cookies a odstranění sledovacích parametrů se provádí pomocí pravidel s modifikátory [`$cookie`](#cookie-modifier), [`$urltransform`](#urltransform-modifier) a [`$removeparam`](#removeparam-modifier). Pravidla výjimek, která obsahují pouze modifikátor `$stealth`, tyto věci neprovedou. Pokud chcete pro danou doménu zcela zakázat všechny funkce Režimu utajení, musíte uvést všechny tři modifikátory: `@@||example.org^$stealth,removeparam,cookie`.
 
 :::
 
@@ -1084,6 +1084,7 @@ Tyto modifikátory mohou zcela změnit chování základních pravidel.
 | [$inline-font](#inline-font-modifier)       |              ✅               |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
 | [$inline-script](#inline-script-modifier)   |              ✅               |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
 | [$jsonprune](#jsonprune-modifier)           |              ✅               |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
+| [$xmlprune](#xmlprune-modifier)             |              ✅               |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
 | [$network](#network-modifier)               |              ✅               |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                 |
 | [$permissions](#permissions-modifier)       |              ✅               |                ⏳                |               ⏳               |             ❌              |               ❌               |                 ❌                 |
 | [$redirect](#redirect-modifier)             |              ✅               |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
@@ -1627,7 +1628,7 @@ V AdGuardu pro Windows, Mac a Android, **s knihovnou CoreLibs v1.11 nebo nověj�
 
 :::caution Omezení
 
-- Pravidla `$jsonprune` jsou kompatibilní s těmito specifickými modifikátory `$domain`, `$third-party`, `$app`, `$important`, `$match-case` a `$xmlhttprequest`.
+- `$jsonprune` pravidla jsou kompatibilní pouze s těmito modifikátory: `$domain`, `$third-party`, `$app`, `$important`, `$match-case` a `$xmlhttprequest`.
 - Pravidla `$jsonprune` neplatí, pokud je velikost původní odpovědi větší než 10 MB.
 
 :::
@@ -1635,6 +1636,244 @@ V AdGuardu pro Windows, Mac a Android, **s knihovnou CoreLibs v1.11 nebo nověj�
 :::info Kompatibilita
 
 Pravidla s modifikátorem `$jsonprune` jsou podporována AdGuardem pro Windows, Mac a Android, **s knihovnou CoreLibs verze 1.10 nebo novější**.
+
+:::
+
+#### **`$xmlprune`** {#xmlprune-modifier}
+
+Pravidla `$xmlprune` upravují odpověď na odpovídající požadavek odstraněním položek XML, které odpovídají upravenému výrazu[XPath](https://www.w3.org/TR/1999/REC-xpath-19991116/). Výraz musí vrátit [node-set](https://www.w3.org/TR/1999/REC-xpath-19991116/#node-sets). `$xmlprune` pravidla neupravují odpovědi, které nejsou dobře formulovanými dokumenty XML.
+
+**Syntaxe**
+
+- `||example.org^$xmlprune=expression` odstraní z odpovědi položky, které odpovídají výrazu XPath `expression`.
+
+Vzhledem k tomu, jak funguje rozbor pravidel, musí být znaky `$` a `,` uvozeny pomocí `\` uvnitř `expression`.
+
+**Výjimky**
+
+Základní výjimky URL nesmí zakázat pravidla s modifikátorem `$xmlprune`. Lze je zakázat, jak je popsáno níže:
+
+- `@@||example.org^$xmlprune` zakáže všechna pravidla `$xmlprune` pro odpovědi z URL odpovídajících `||example.org^`.
+- `@@||example.org^$xmlprune=text` zakáže všechna pravidla `$xmlprune` s hodnotou modifikátoru `$xmlprune` shodným s `text` pro odpovědi z URL odpovídajících `||example.org^`.
+
+Pravidla `$xmlprune` lze také zakázat pravidly výjimek `$document`, `$content` a `$urlblock`.
+
+:::note
+
+Když je více pravidel `$xmlprune` odpovídá stejnému požadavku, jsou použita v lexikografickém pořadí.
+
+:::
+
+**Příklady**
+
+- `||example.org^$xmlprune=/bookstore/book[position() mod 2 = 1]` odstraní z knihkupectví knihy s lichými čísly.
+
+<details>
+<summary>Vstup</summary>
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bookstore>
+
+  <book category="cooking">
+    <title lang="en">Everyday Italian</title>
+    <author>Giada De Laurentiis</author>
+    <year>2005</year>
+    <price>30.00</price>
+  </book>
+
+  <book category="children">
+    <title lang="en">Harry Potter</title>
+    <author>J K. Rowling</author>
+    <year>2005</year>
+    <price>29.99</price>
+  </book>
+
+  <book category="web">
+    <title lang="en">XQuery Kick Start</title>
+    <author>James McGovern</author>
+    <author>Per Bothner</author>
+    <author>Kurt Cagle</author>
+    <author>James Linn</author>
+    <author>Vaidyanathan Nagarajan</author>
+    <year>2003</year>
+    <price>49.99</price>
+  </book>
+
+  <book category="web">
+    <title lang="en">Learning XML</title>
+    <author>Erik T. Ray</author>
+    <year>2003</year>
+    <price>39.95</price>
+  </book>
+
+</bookstore>
+```
+
+</details>
+
+<details>
+<summary>Výstup</summary>
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bookstore>
+
+
+
+<book category="children">
+  <title lang="en">Harry Potter</title>
+  <author>J K. Rowling</author>
+  <year>2005</year>
+  <price>29.99</price>
+</book>
+
+
+
+<book category="web">
+  <title lang="en">Learning XML</title>
+  <author>Erik T. Ray</author>
+  <year>2003</year>
+  <price>39.95</price>
+</book>
+
+</bookstore>
+```
+
+</details>
+
+- `||example.org^$xmlprune=/bookstore/book[year = 2003]` odstraní knihy z roku 2003 z knihkupectví.
+
+<details>
+<summary>Vstup</summary>
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bookstore>
+
+  <book category="cooking">
+    <title lang="en">Everyday Italian</title>
+    <author>Giada De Laurentiis</author>
+    <year>2005</year>
+    <price>30.00</price>
+  </book>
+
+  <book category="children">
+    <title lang="en">Harry Potter</title>
+    <author>J K. Rowling</author>
+    <year>2005</year>
+    <price>29.99</price>
+  </book>
+
+  <book category="web">
+    <title lang="en">XQuery Kick Start</title>
+    <author>James McGovern</author>
+    <author>Per Bothner</author>
+    <author>Kurt Cagle</author>
+    <author>James Linn</author>
+    <author>Vaidyanathan Nagarajan</author>
+    <year>2003</year>
+    <price>49.99</price>
+  </book>
+
+  <book category="web">
+    <title lang="en">Learning XML</title>
+    <author>Erik T. Ray</author>
+    <year>2003</year>
+    <price>39.95</price>
+  </book>
+
+</bookstore>
+```
+
+</details>
+
+<details>
+<summary>Výstup</summary>
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bookstore>
+
+<book category="cooking">
+  <title lang="en">Everyday Italian</title>
+  <author>Giada De Laurentiis</author>
+  <year>2005</year>
+  <price>30.00</price>
+</book>
+
+<book category="children">
+  <title lang="en">Harry Potter</title>
+  <author>J K. Rowling</author>
+  <year>2005</year>
+  <price>29.99</price>
+</book>
+
+
+
+
+
+</bookstore>
+```
+
+</details>
+
+- `||example.org^$xmlprune=//*/@*` odstraní všechny atributy ze všech prvků.
+
+<details>
+<summary>Vstup</summary>
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bookstore location="cy">
+
+  <book category="cooking">
+    <title lang="en">Everyday Italian</title>
+    <author>Giada De Laurentiis</author>
+    <year>2005</year>
+    <price>30.00</price>
+  </book>
+
+</bookstore>
+```
+
+</details>
+
+<details>
+<summary>Výstup</summary>
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bookstore>
+
+  <book>
+    <title>Everyday Italian</title>
+    <author>Giada De Laurentiis</author>
+    <year>2005</year>
+    <price>30.00</price>
+  </book>
+
+</bookstore>
+```
+
+</details>
+
+:::caution Omezení
+
+- `$xmlprune` pravidla jsou kompatibilní pouze s těmito modifikátory: `$domain`, `$third-party`, `$app`, `$important`, `$match-case` a `$xmlhttprequest`.
+- Pravidla `$xmlprune` neplatí, pokud je velikost původní odpovědi větší než 10 MB.
+
+:::
+
+:::info Kompatibilita
+
+Pravidla s modifikátorem `$xmlprune` jsou podporována AdGuardem pro Windows, Mac a Android, **s knihovnou CoreLibs verze 1.15 nebo novější**.
 
 :::
 
@@ -2104,24 +2343,24 @@ Pravidla s modifikátorem `$replace` podporuje AdGuard pro Windows, Mac, Android
 
 #### **`urltransform`** {#urltransform-modifier}
 
-The `$urltransform` rules allow you to modify the request URL by replacing the text matched by the regular expression.
+Pravidla `$urltransform` vám umožňují upravit URL požadavku nahrazením textu, který odpovídá regulárnímu výrazu.
 
 **Funkce**
 
-- `$urltransform` rules apply to any request URL text.
-- `$urltransform` rules can also **modify the query part** of the URL.
-- `$urltransform` will not be applied if the original URL is blocked by other rules.
-- `$urltransform` will be applied before `$removeparam` rules.
+- `$urltransform` pravidla platí pro jakýkoli text URL požadavku.
+- `$urltransform` pravidla mohou také **upravit část dotazu** URL.
+- `$urltransform` nebude použito, pokud je původní URL blokována jinými pravidly.
+- `$urltransform` se použije před pravidly `$removeparam`.
 
-The `$urltransform` value can be empty for exception rules.
+Hodnota `$urltransform` může být pro pravidla výjimek prázdná.
 
 **Vícenásobná pravidla odpovídajících jednomu požadavku**
 
-If multiple `$urltransform` rules match a single request, we will apply each of them. **Pořadí je stanoveno abecedně.**
+Pokud jednomu požadavku odpovídá více pravidel `$urltransform`, použijeme každé z nich. **Pořadí je stanoveno abecedně.**
 
 **Syntaxe**
 
-`$urltransform` syntax is similar to replacement with regular expressions [in Perl](http://perldoc.perl.org/perlrequick.html#Search-and-replace).
+`$urltransform` syntaxe je podobná nahrazování regulárními výrazy [v Perl](http://perldoc.perl.org/perlrequick.html#Search-and-replace).
 
 ```text
 urltransform = "/" regexp "/" replacement "/" modifiers
@@ -2131,7 +2370,7 @@ urltransform = "/" regexp "/" replacement "/" modifiers
 - **`replacement`** — řetězec, který bude použit k nahrazení řetězce odpovídajícího `regexp`.
 - **`modifiers`** — příznaky regulárního výrazu. Například `i` — necitlivé vyhledávání nebo `s` — jednořádkový režim.
 
-In the `$urltransform` value, two characters must be escaped: the comma `,` and the dollar sign `$`. Use the backslash character `\` for this. Např. uvozená čárka vypadá takto: `\,`.
+V hodnotě `$urltransform` musí být dva znaky uvozeny: čárka `,` a znak dolaru `$`. K tomu použijte znak zpětného lomítka `\`. Např. uvozená čárka vypadá takto: `\,`.
 
 **Příklady**
 
@@ -2142,10 +2381,10 @@ In the `$urltransform` value, two characters must be escaped: the comma `,` and 
 Toto pravidlo má tři části:
 
 - `regexp` — `(pref\/).*\/(suf)`;
-- `replacement` — `\$1\$2` where `$` is escaped;
+- `replacement` — `\$1\$2` kde `$` je uvozeno;
 - `modifikátory` — `i` pro necitlivé vyhledávání.
 
-**Multiple `$urltransform` rules**
+**Vícenásobná pravidla `$urltransform`**
 
 1. `||example.org^$urltransform=/X/Y/`
 2. `||example.org^$urltransform=/Z/Y/`
@@ -2154,44 +2393,44 @@ Toto pravidlo má tři části:
 - Jak pravidlo 1, tak pravidlo 2 se použijí na všechny požadavky odeslané na `example.org`.
 - Pravidlo 2 je zakázáno pro požadavky odpovídající na `||example.org/page/`, **ale pravidlo 1 stále funguje!**
 
-**Re-matching rules after transforming the URL**
+**Opětovná shoda pravidel po transformaci URL**
 
-If the `$urltransform` rule is applied to a request, all the rules will be re-evaluated against the new URL.
+Pokud je na požadavek použito pravidlo `$urltransform`, všechna pravidla budou přehodnocena vůči nové URL.
 
-E.g., with the following rules:
+Např. s následujícími pravidly:
 
 ```adblock
 ||example.com^$urltransform=/firstpath/secondpath/
 ||example.com/secondpath^
 ```
 
-the request to `https://example.com/firstpath` will be blocked before it is sent.
+požadavek na `https://example.com/firstpath` bude před odesláním zablokován.
 
-However, `$urltransform` rules will **not be re-applied** in this case to avoid infinite recursion, e.g., with the following rules:
+Nicméně pravidla `$urltransform` **nebudou v tomto případě znovu použita**, aby se zabránilo nekonečné rekurzi, např. s následujícími pravidly:
 
 ```adblock
 ||example.com/firstpath^$urltransform=/firstpath/secondpath/
 ||example.com/secondpath^$urltransform=/secondpath/firstpath/
 ```
 
-the request to `https://example.com/fisrtpath` will be transformed to `https://example.com/secondpath` and the second rule will not be applied.
+požadavek na `https://example.com/firstpath` bude transformován na `https://example.com/secondpath` a druhé pravidlo nebude použto.
 
-**Disabling `$urltransform` rules**
+**Zakázání pravidel `$urltransform`**
 
-- `@@||example.org^$urltransform` will disable all `$urltransform` rules matching `||example.org^`.
-- `@@||example.org^$urltransform=/Z/Y/` will disable the rule with `$urltransform=/Z/Y/` for any request matching `||example.org^`.
+- `@@||example.org^$urltransform` zakáže všechna pravidla `$urltransform` odpovídající na `||example.org^`.
+- `@@||example.org^$urltransform=/Z/Y/` zakáže pravidlo s `$urltransform=/Z/Y/` pro jakýkoliv požadavek, který odpovídá `||example.org^`.
 
-`$urltransform` rules can also be disabled by `$document` and `$urlblock` exception rules. Základní pravidla pro výjimky bez modifikátorů to však nedělají. For example, `@@||example.com^` will not disable `$urltransform=/X/Y/` for requests to **example.com**, but `@@||example.com^$urlblock` will.
+Pravidla `$urltransform` lze také zakázat pravidly výjimek `$document` a `$urlblock`. Základní pravidla pro výjimky bez modifikátorů to však nedělají. Např. `@@||example.com^` nezakáže `$urltransform=/X/Y/` pro požadavky na **example.com**, ale `@@||example.com^$urlblock` ano.
 
 :::caution Omezení
 
-Rules with the `$urltransform` modifier can be used [**only in trusted filters**](#trusted-filters).
+Pravidla s modifikátorem `$urltransform` lze použít [**pouze v důvěryhodných filtrech**](#trusted-filters).
 
 :::
 
 :::info Kompatibilita
 
-Rules with the `$urltransform` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android **with CoreLibs version 1.15 or higher**.
+Pravidla s modifikátorem `$urltransform` jsou podporována AdGuardem pro Windows, Mac a AdGuardem pro Android, **s knihovnou CoreLibs verze 1.15 nebo novější**.
 
 :::
 

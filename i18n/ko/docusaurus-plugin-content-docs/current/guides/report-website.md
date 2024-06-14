@@ -1,5 +1,5 @@
 ---
-title: 웹사이트 신고 방법
+title: How to report websites and apps
 sidebar_position: 3
 ---
 

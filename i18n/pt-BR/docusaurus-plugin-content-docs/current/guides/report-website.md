@@ -1,5 +1,5 @@
 ---
-title: Como reportar um site
+title: How to report websites and apps
 sidebar_position: 3
 ---
 

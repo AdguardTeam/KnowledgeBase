@@ -93,6 +93,14 @@ Pokud je toto nastavení povoleno, AdGuard použije záložní odchozí připoje
 
 Pokud je toto nastavení povoleno, bude AdGuard před přidáním nebo aktualizací vlastních DNS serverů testovat odchozí připojení DNS.
 
+#### Filtrování zabezpečeného DNS
+
+Pokud je toto nastavení zapnuto, AdGuard použije všechny povolené DNS filtry a uživatelská pravidla DNS na šifrovaný provoz DNS-over-HTTPS (DoH), nikoli pouze na běžný DNS. Provoz DoH většinou pochází z Chrome a dalších prohlížečů, které mají nastavení *Zabezpečený DNS* (nebo podobné). Můžete použít *Filtrování zabezpečeného DNS* ve dvou různých režimech:
+
+- **Filtrování za chodu**. V tomto režimu AdGuard použije všechny povolené DNS filtry a uživatelská pravidla DNS na provoz DoH, ale nepřesměruje jej na místní proxy server DNS. Pokud je v nastavení prohlížeče uveden DNS server, bude tento server zpracovávat provoz DoH pro tento prohlížeč
+
+- **Přesměrování na DNS proxy**. V tomto režimu AdGuard použije všechny povolené DNS filtry a uživatelská pravidla DNS na přenosy DoH tak, že je přesměruje na místní proxy server DNS. Server DNS zadaný v nastavení DNS AdGuardu bude zpracovávat veškerý provoz DoH
+
 ### Filtrování
 
 #### Zachytit HAR

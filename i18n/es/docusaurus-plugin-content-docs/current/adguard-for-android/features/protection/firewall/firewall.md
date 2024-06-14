@@ -15,7 +15,7 @@ Esta función ayuda a administrar el acceso a Internet para aplicaciones especí
 
 ![Firewall \*mobile\_border](https://cdn.adtidy.org/blog/new/gdn94firewall.png)
 
-#### Reglas de firewall globales
+### Reglas de firewall globales
 
 Esta sección te permite controlar el acceso a Internet para todo el dispositivo.
 
@@ -23,7 +23,7 @@ Esta sección te permite controlar el acceso a Internet para todo el dispositivo
 
 Estas reglas se aplican a todas las aplicaciones de tu dispositivo, a menos que hayas establecido reglas personalizadas para ellas.
 
-#### Reglas de firewall personalizadas
+### Reglas de firewall personalizadas
 
 En esta sección, puedes controlar el acceso a Internet para aplicaciones específicas: restringir los permisos para aquellas que no consideres confiables o, por el contrario, desbloquear aquellas que quieras eludir las reglas globales del firewall.
 
@@ -42,3 +42,11 @@ En esta sección, puedes controlar el acceso a Internet para aplicaciones espec�
 4. Si necesitas bloquear un tipo específico de conexión, mueve el interruptor hacia la izquierda. Si deseas permitirlo, deja el interruptor habilitado. **Las reglas personalizadas anulan las globales**: cualquier cambio que realices en las _Reglas globales de firewall_ no afectará a esta aplicación.
 
 Para eliminar una regla o aplicación de _Reglas personalizadas_, deslízala hacia la izquierda.
+
+### Notifications
+
+If enabled, this feature notifies you when an app tries to break one of the Firewall rules set for that app (for example, to access mobile data when it shouldn’t). You can turn notifications on and off for all apps or for each app separately.
+
+Tap the notification to access the app’s Firewall settings, or temporary disable all Firewall rules for that app by tapping the corresponding button in the notification. You can also mute all Firewall notifications for the app by tapping the _Mute_ button in the notification for that app.
+
+Note that if notifications for multiple apps would be displayed, they will be bundled into a single notification instead.

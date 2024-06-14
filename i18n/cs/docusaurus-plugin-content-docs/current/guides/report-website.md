@@ -1,5 +1,5 @@
 ---
-title: Jak nahlásit webovou stránku
+title: Jak nahlásit webové stránky a aplikace
 sidebar_position: 3
 ---
 

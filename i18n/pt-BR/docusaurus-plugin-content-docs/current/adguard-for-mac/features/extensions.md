@@ -5,19 +5,19 @@ sidebar_position: 8
 
 :::info
 
-This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artigo é sobre o AdGuard para Mac, um bloqueador de anúncios multifuncional que protege seu dispositivo no nível do sistema. Para ver como funciona, [baixe o aplicativo AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-AdGuard allows you to install extensions, or userscripts, to extend the functionality of the browser. AdGuard can work as a cross-browser userscript manager: you don’t have to install the same userscript for each browser.
+O AdGuard permite que você instale extensões ou scripts de usuário para ampliar a funcionalidade do navegador. O AdGuard pode funcionar como um gerenciador de scripts de usuário para vários navegadores: você não precisa instalar o mesmo script de usuário para cada navegador.
 
-Some userscripts are pre-installed, others can be installed manually.
+Alguns scripts de usuário são pré-instalados, outros podem ser instalados manualmente.
 
-![Extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mac/extensions.png)
+![Extensões](https://cdn.adtidy.org/content/kb/ad_blocker/mac/extensions.png)
 
-## AdGuard Assistant (legacy)
+## Assistente AdGuard (legacy)
 
-This userscript allows you to manage AdGuard protection directly from your browser. Embora o [novo Assistente](/adguard-for-mac/features/browser-assistant) seja uma extensão do navegador que pode ser instalada na loja do seu navegador, o Assistente legacy é um script de usuário que não requer instalação adicional. Algumas funcionalidades são comuns a ambos os assistentes:
+Esse script de usuário permite que você gerencie a proteção do AdGuard diretamente do navegador. Embora o [novo Assistente](/adguard-for-mac/features/browser-assistant) seja uma extensão do navegador que pode ser instalada na loja do seu navegador, o Assistente legacy é um script de usuário que não requer instalação adicional. Algumas funcionalidades são comuns a ambos os assistentes:
 
 - Ativar ou desativar a proteção para um site específico
 - Pause a proteção por 30 segundos
