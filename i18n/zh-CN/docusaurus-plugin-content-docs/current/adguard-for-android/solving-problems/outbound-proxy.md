@@ -1,5 +1,5 @@
 ---
-title: 如何设置出战代理
+title: 如何设置出站代理
 sidebar_position: 8
 ---
 
@@ -45,7 +45,7 @@ AdGuard 可以通过代理服务器路由设备流量。 要访问代理设置�
 
 1. 启用主代理开关和 AdGuard 保护功能，通过代理路由设备的流量。
 
-    现在 AdGuard 会将所有流量通过 Orbot 代理发送。 如您禁用 Orbot 代理，那么您在 AdGuard 设置中禁用出战代理设置前，互联网连接将不可用。
+    现在 AdGuard 会将所有流量通过 Orbot 代理发送。 如您禁用 Orbot 代理，那么您在 AdGuard 设置中禁用出站代理设置前，互联网连接将不可用。
 
 ### 如何同时使用 AdGuard 和 PIA（Private Internet Access）
 
