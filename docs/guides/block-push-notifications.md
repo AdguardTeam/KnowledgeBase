@@ -5,34 +5,48 @@ sidebar_position: 9
 
 If you're seeing annoying ads and popups in the bottom right corner of your screen, they're probably push notifications from your browser. While ad blockers can't stop them, you can easily disable them through your browser settings. Check out the step-by-step guide below to turn off these push notifications.
 
-## On Google Chrome
+## In Google Chrome
 
-1. **Open Chrome**. Click the three vertical dots in the top right corner of the browser and select *Settings*.
-2. **Navigate to Notifications**: Go to *Privacy and security* → *Site settings* → *Notifications*.
-3. **Disable Notifications**: Toggle *Sites can ask to send notifications* off, or manage site-specific settings by blocking or removing sites individually.
-4. **Customize further**: You can also add sites manually to the blocklist by clicking the *Add* button next to the *Block* section. All you have to do is enter the URL of the site you want to block from sending notifications.
+1. Click the three vertical dots in the top right corner of the browser and select *Settings*.
+2. Go to *Privacy and security* → *Site settings* → *Notifications*.
+3. In *Default behaviour*, select *Don't allow sites to send notifications*. Alternatively, you can manage site-specific settings in *Customised behaviours*.
 
 ## In Firefox
 
-1. Click the three horizontal lines in the top right corner of the navigation bar then select *Settings*.
+1. Click the three horizontal lines in the top right corner of the navigation bar, then select *Settings*.
 2. Select *Privacy & Security* from the menu on the left.
-3. Scroll down to the section *Permissions*, then click the button *Settings* next to *Notifications*. Next to each site, there is a dropdown menu where you can allow or block push notifications.
-4. Adjust the existing permissions: Remove or block specific websites or, to stop notifications on all previously approved websites, click *Remove All Websites*.
-5. Click *Save Changes*.
+3. Scroll down to the section *Permissions*, then click the button *Settings* next to *Notifications*.
+4. To stop notifications on all previously approved websites, click *Remove All Websites*. Alternativelly, there is a dropdown menu next to each website,where you can block push notifications individually.
+5. You can also select *Block new requests asking to allow notifications* to stop all push notifications requests at once.
+6. Click *Save Changes*.
 
 ## In Safari
 
-1. Open Safari. Click "Safari" in the menu bar → *Preferences*.
+1. Click *Safari* in the menu bar → *System Settings*.
 2. Go to the *Websites* tab.
-3. Select "Notifications" from the left sidebar.
-4. Disable Specific Sites: Choose *Deny* for each site you want to block.
-5. To block all requests, uncheck *Allow websites to ask for permission to send notifications*.
+3. Select *Notifications* from the left sidebar.
+4. To block all requests, uncheck *Allow websites to ask for permission to send notifications*. Alternatively, select *Deny* for each site you want to block individually.
 
 ## In Microsoft Edge
 
-1. Open Microsoft Edge. Click the three dots menu in the upper-right corner and select *Settings*
+1. Click the three dots menu in the upper-right corner and select *Settings*.
 2. In the left sidebar, click *Cookies and site permissions*.
-3. Scroll down and click *Notifications* under Site Permissions.
+3. Scroll down and click *Notifications* under *Site permissions*.
 4. Toggle off *Ask before sending* to block all browser notifications within Microsoft Edge.
+5. Alternatively, add domains to the section *Block* for each site you want to block individually.
 
-The process is similar in other browsers. Just head over to your browser settings, find the Security/Privacy section, and click Notifications. From there, you'll be able to customize your push notification settings and block any ads they may be showing you.
+## Blocking push notifications with AdGuard
+
+To avoid encountering similar ads in the future, you can also block push notifications directly on the AdGuard apps.
+
+### On Windows
+
+1. Open AdGuard. Go to *Settings* → *Stealth mode*.
+2. Scroll down to the section *Browser API*.
+3. Enable the option *Block Push API*.
+
+### On Mac
+
+1. Open AdGuard. Go to *Preferences*.
+2. On the tab *Stealth mode*, go to *Browser API*.
+3. Enable the option *Block Push API*.
