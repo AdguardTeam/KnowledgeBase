@@ -41,6 +41,10 @@ Here are actions that, when included in the intent, will be understood by AdGuar
 
 `enable:true` or `enable:false` enables or disables DNS filtering, accordingly.
 
+`fake_dns` resolves DNS requests in the specific proxy server. Requires an extra flag:
+
+`enable:true` or `enable:false` enables or disables the fake DNS setting, accordingly.
+
 -----
 
 `dns_server` switches between DNS servers, you need to include additional data:
