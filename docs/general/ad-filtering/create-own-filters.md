@@ -3934,6 +3934,37 @@ example.org#%#//scriptlet("abort-on-property-read", "alert")
 
 This rule will be applied to `example.org` and subdomains pages and will execute the `abort-on-property-read` scriptlet with the `alert` parameter.
 
+**Exceptions**
+
+Exception rules can disable some scriptlets on particullar domains.
+
+```text
+rule = [domains]  "#@%#//scriptlet(" [name] ")"
+```
+
+- `domains` — optional, a list of domains where the rule should be applied;
+- `name` — optional, a name of the scriptlet to except from the applying. If not set, all scriptlets will not be applied.
+
+For example, if you want to disable the rule
+
+```adblock
+example.org,example.com#%#//scriptlet("abort-on-property-read", "alert")
+```
+
+for `example.com` domain, the following exception rule could be used:
+
+```adblock
+example.com#@%#//scriptlet("abort-on-property-read")
+```
+
+to disable only `abort-on-property-read` scriptlet or
+
+```adblock
+example.com#@%#//scriptlet()
+```
+
+to disable all scriptlets on `example.com`
+
 Learn more about [how to debug scriptlets](#debug-scriptlets).
 
 More information about scriptlets can be found [on GitHub](https://github.com/AdguardTeam/Scriptlets#scriptlets).
