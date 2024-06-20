@@ -3939,11 +3939,11 @@ This rule will be applied to `example.org` and subdomains pages and will execute
 Exception rules can disable some scriptlets on particullar domains.
 
 ```text
-rule = [domains]  "#@%#//scriptlet(" [name] ")"
+rule = [domains]  "#@%#//scriptlet(" scriptletName arguments ")"
 ```
 
-- `domains` — optional, a list of domains where the rule should be applied;
-- `name` — optional, a name of the scriptlet to except from the applying. If not set, all scriptlets will not be applied.
+- `scriptletName` — optional, a name of the scriptlet to except from the applying. If not set, all scriptlets will not be applied;
+- `arguments` — optional, a list of `string` arguments to disable a particular scriptlet rule.
 
 For example, if you want to disable the rule
 
@@ -3951,19 +3951,25 @@ For example, if you want to disable the rule
 example.org,example.com#%#//scriptlet("abort-on-property-read", "alert")
 ```
 
-for `example.com` domain, the following exception rule could be used:
+for `example.com` domain, the following exception rules could be used:
+
+- to disable a particular scriptlet only:
+
+```adblock
+example.com#@%#//scriptlet("abort-on-property-read", "alert")
+```
+
+- to disable all `abort-on-property-read` scriptlets for `example.com`:
 
 ```adblock
 example.com#@%#//scriptlet("abort-on-property-read")
 ```
 
-to disable only `abort-on-property-read` scriptlet or
+- to disable all scriptlets for `example.com`:
 
 ```adblock
 example.com#@%#//scriptlet()
 ```
-
-to disable all scriptlets on `example.com`
 
 Learn more about [how to debug scriptlets](#debug-scriptlets).
 
