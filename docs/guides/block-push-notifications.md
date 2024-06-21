@@ -16,7 +16,7 @@ If you're seeing annoying ads and popups in the bottom right corner of your scre
 1. Click the three horizontal lines in the top right corner of the navigation bar, then select *Settings*.
 2. Select *Privacy & Security* from the menu on the left.
 3. Scroll down to the section *Permissions*, then click the button *Settings* next to *Notifications*.
-4. To stop notifications on all previously approved websites, click *Remove All Websites*. Alternativelly, there is a dropdown menu next to each website,where you can block push notifications individually.
+4. To stop notifications on all previously approved websites, click *Remove All Websites*. Alternatively, you can manage notifications for each website individually.
 5. You can also select *Block new requests asking to allow notifications* to stop all push notifications requests at once.
 6. Click *Save Changes*.
 
