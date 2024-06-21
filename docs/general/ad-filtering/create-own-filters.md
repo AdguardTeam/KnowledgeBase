@@ -3936,7 +3936,7 @@ This rule will be applied to `example.org` and subdomains pages and will execute
 
 **Exceptions**
 
-Exception rules can disable some scriptlets on particullar domains.
+Exception rules can disable some scriptlets on particullar domains. The syntax for exception scriptlet rules is similar to normal scriptlet rules but using `#@%#` instead of `#%#`:
 
 ```text
 rule = [domains]  "#@%#//scriptlet(" scriptletName arguments ")"
