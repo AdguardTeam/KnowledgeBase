@@ -14,7 +14,7 @@ AdGuard can significantly broaden website functionality by acting as a userscrip
 
 ## Recommended AdGuard scripts
 
-These userscripts come directly from the AdGuard developers, and we can guarantee that they are effective and safe. For some of the userscripts developed by others that we consider good and reliable, [scroll down to the next section](#top-picks). You can also find some of the [popular websites with scripts](#more-userscripts) below, but remember that whenever you download a userscript from an unknown source, you expose yourself to certain risk, as some scripts may be harmful to your computer.
+These userscripts come directly from the AdGuard developers, and we can guarantee that they are effective and safe. For some of the userscripts developed by others that we consider good and reliable, [scroll down to the next section](#top-picks). You can also find some of the [popular websites with scripts](#more-userscripts) below, but remember that whenever you download a userscript from an unknown source, you expose yourself to a certain risk, as some scripts may be harmful to your computer.
 
 ### AdGuard Extra
 
@@ -46,13 +46,13 @@ A script that is only pre-installed in AdGuard for Android. It disables AMP (Acc
 
 ## Top picks outside AdGuard{#top-picks}
 
-These userscripts are not developed by AdGuard and therefore we can't give a 100% guarantee that they are safe and/or functioning at any given time. However, in our experience they deserve a recommendation as they've all earned their good reputation.
+These userscripts are not developed by AdGuard and therefore we can't give a 100% guarantee that they are safe and/or work at all times. However, in our experience they deserve a recommendation as they've all earned their good reputation.
 
 ### Don't track me Google
 
-This script removes Google's tracking feature from the links in Google search results. It speeds up loading search results and allows you to right-click or tap to copy the link URL.
+This script removes Google's tracking feature from the links in Google search results. It speeds up the loading of search results and allows you to right-click or tap to copy the link URL.
 
-Its source code is [available on GitHub](https://github.com/Rob--W/dont-track-me-google). This userscript can be obtained from [GreasyFork](https://greasyfork.org/en/scripts/428243-don-t-track-me-google) and installed in any AdGuard CoreLibs-based app.
+Its source code is [available on GitHub](https://github.com/Rob--W/dont-track-me-google). This userscript can be downloaded from [GreasyFork](https://greasyfork.org/en/scripts/428243-don-t-track-me-google) and installed in any AdGuard CoreLibs-based app.
 
 ### microShield
 
@@ -60,7 +60,7 @@ A userscript for people who visit Korean websites and some international website
 
 ## Where can you get more userscripts?{#more-userscripts}
 
-As userscripts are created mainly by enthusiasts, you should be cautious when installing them. Any script from an unknown source carries a potential risk. Yet, there is a great variety of interesting scripts that can really make using some websites more convenient when installed cautiosly and responsibly.
+As userscripts are mainly created by enthusiasts, you should be cautious when installing them. Any script from an unknown source carries a potential risk. Yet, there is a great variety of interesting scripts that, if installed carefully and responsibly, can really make using some websites more convenient.
 
 Here we will describe some of the most popular userscript catalogs.
 
