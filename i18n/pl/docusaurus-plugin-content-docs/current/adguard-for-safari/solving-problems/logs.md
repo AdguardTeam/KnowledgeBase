@@ -17,7 +17,9 @@ To analyze and diagnose various problems that may occur with AdGuard for Safari,
 2. Scroll down and click _Export logs_.
 3. Choose a location to save the .zip file and click _Save_.
 
-Now you can send this file to support@adguard.com or attach it to your bug report on GitHub:
+Now you can send this file to support@adguard.com or attach it to your bug report on GitHub.
+
+> AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/en/privacy/safari.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
 
 1. Open the [AdGuard for Safari GitHub repo](https://github.com/AdguardTeam/AdGuardForSafari/issues) and click _New issue_.
 2. Send the log file to devteam@adguard.com. Include the time of the bug and attach a link to your issue or its number (it appears as #number next to the title).

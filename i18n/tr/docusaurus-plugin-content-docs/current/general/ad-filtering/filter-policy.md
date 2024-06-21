@@ -30,7 +30,7 @@ A **filter** (or a **filter list**) is a set of filtering rules designed to filt
 
 - Anti-adblock that blocks website content without offering an alternative: to continue using the site, the user must disable the ad blocker on the site
 - “Anti-adblock wall” with alternative options offered, such as purchasing a subscription to continue using the ad blocker
-- Informational messages that do not obligate action: users are asked to disable the ad blocker, but these messages can be closed, allowing users to continue using the site without restrictions
+- Eylemi zorunlu kılmayan bilgilendirme mesajları: kullanıcılardan reklam engelleyiciyi devre dışı bırakmaları istenir, ancak bu mesajlar kapatılabilir ve kullanıcıların siteyi kısıtlama olmadan kullanmaya devam etmelerine izin verilir
 - Implementing alternative advertising in response to ad blocker usage: sites introduce alternative advertising when ad blockers are detected
 - Paywall: a method of content monetization where content is partially or fully hidden from users, with a message prompting them to purchase a subscription for access
 
