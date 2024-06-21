@@ -279,6 +279,8 @@ Basically, they just limit the scope of rule application.
 | [$match-case](#match-case-modifier) | ✅ | ✅ | ✅ | ⏳ | ⏳ | ✅ |
 | [$method](#method-modifier) | ⏳ | ✅ | ✅ | ❌ | ❌ | ❌ |
 | [$popup](#popup-modifier) | ✅ * | ✅ | ✅ | ✅ * | ✅ * | ❌ |
+| [$strict-first-party](#strict-first-party-modifier) | ⏳ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [$strict-third-party](#strict-third-party-modifier) | ⏳ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$third-party](#third-party-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$to](#to-modifier) | ⏳ | ✅ | ✅ | ❌ | ❌ | ❌ |
 
@@ -575,6 +577,34 @@ AdGuard will try to close the browser tab with any address that matches a blocki
   Otherwise, page should be loaded.
   It can be combined with other request type modifiers, such as `$third-party` and `$important`.
 - Rules with `$popup` modifier are not supported by AdGuard Content Blocker.
+
+:::
+
+#### **`$strict-first-party`** {#strict-first-party-modifier}
+
+Works the same as the [`$~third-party`](#third-party-modifier) modifier but treats the request as first-party only if the refferer and the origin share exactly the same hostname.
+
+**Examples**
+
+- `||domain.com$strict-first-party` — this rule is applied exclusively to `domain.com`. For example a request from `domain.com` to `http://domain.com/icon.ico` is a first-party request. Request from `sub.domain.com` to `http://domain.com/icon.ico` is treated as a third-party (unlike the `$~third-party` modifier).
+
+:::note
+
+You may use a shorter name (alias) instead of using the full modifier name: `$strict1p`.
+
+:::
+
+#### **`$strict-third-party`** {#strict-third-party-modifier}
+
+Works the same as the [`$third-party`](#third-party-modifier) modifier but also treats requests from the domain to its subdomains and vice versa as third-party requests.
+
+**Examples**
+
+- `||domain.com^$strict-third-party` — this rule applies to all domains, except `domain.com`. An example of a third-party request: `http://sub.domain.com/banner.jpg` (unlike the `$third-party` modifier).
+
+:::note
+
+You may use a shorter name (alias) instead of using the full modifier name: `$strict3p`.
 
 :::
 
@@ -2586,6 +2616,8 @@ Modifier aliases (`1p`, `3p`, etc.) are not included in these categories, howeve
 - [`$domain`](#domain-modifier) with negated domains using `~`,
 - [`$match-case`](#match-case-modifier),
 - [`$method`](#method-modifier) with negated methods using `~`,
+- [`$strict-first-party`](#strict-first-party-modifier),
+- [`$strict-third-party`](#strict-third-party-modifier),
 - [`$third-party`](#third-party-modifier),
 - [`$to`](#to-modifier),
 - restricted [content-types](#content-type-modifiers) with `~`.
