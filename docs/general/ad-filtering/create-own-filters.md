@@ -3942,7 +3942,7 @@ Exception rules can disable some scriptlets on particullar domains. The syntax f
 rule = [domains]  "#@%#//scriptlet(" scriptletName arguments ")"
 ```
 
-- `scriptletName` — optional, a name of the scriptlet to except from the applying. If not set, all scriptlets will not be applied;
+- `scriptletName` — optional, a name of the scriptlet to exclude from applying. If not set, all scriptlets will not be applied;
 - `arguments` — optional, a list of `string` arguments to disable a particular scriptlet rule.
 
 For example, if you want to disable the rule
@@ -3951,7 +3951,7 @@ For example, if you want to disable the rule
 example.org,example.com#%#//scriptlet("abort-on-property-read", "alert")
 ```
 
-for `example.com` domain, the following exception rules could be used:
+for the `example.com` domain, the following exception rules could be used:
 
 - to disable a particular scriptlet only:
 
