@@ -37,7 +37,7 @@ If you're seeing annoying ads and popups in the bottom right corner of your scre
 
 ## Blocking push notifications with AdGuard
 
-To avoid encountering similar ads in the future, you can also block push notifications directly on the AdGuard apps.
+To avoid similar ads in the future, you can also block push notifications directly from the AdGuard apps.
 
 ### On Windows
 
