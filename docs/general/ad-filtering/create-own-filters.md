@@ -604,7 +604,7 @@ Works the same as the [`$third-party`](#third-party-modifier) modifier but also 
 
 :::note
 
-You may use a shorter name (alias) instead of using the full modifier name: `$strict3p`.
+You can use a shorter name (alias) instead of using the full modifier name: `$strict3p`.
 
 :::
 
