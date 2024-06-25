@@ -13,19 +13,19 @@ sidebar_position: 1
 
 3. Включите _Режим разработчика_.
 
-   ![Developer mode \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/developer_mode1.png)
+   ![Режим разработчика \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/developer_mode1.png)
 
 4. Нажмите `background.html`.
 
-   ![Background \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/background1.png)
+   ![background.html \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/background1.png)
 
 5. Откройте вкладку _Консоль_.
 
-   ![The Console tab \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/console.png)
+   ![Вкладка консоль \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/console.png)
 
 6. Откройте контекстное меню и выберите _Сохранить как..._.
 
-   ![Save as \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save.png)
+   ![Сохранить как \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save.png)
 
 ### Firefox
 
@@ -35,21 +35,23 @@ sidebar_position: 1
 
 3. Нажмите _Отладка дополнений_.
 
-   ![Debug Add-ons \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/add-ons.png)
+   ![Отладка дополнений \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/add-ons.png)
 
 4. Нажмите _Проверить_.
 
-   ![Inspect \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/inspect.png)
+   ![Исследовать \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/inspect.png)
 
 5. Перейдите во вкладку _Консоль_.
 
-   ![Console \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/ff_console.png)
+   ![Консоль \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/ff_console.png)
 
 6. Нажмите _Сохранить все сообщения в файл_.
 
-   ![Save \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save-to-file.png)
+   ![Сохранить в файл \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save-to-file.png)
 
 ## Отправкка логов
+
+> AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/en/privacy/browser-extension.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
 
 Теперь, когда вы собрали логи, выполните следующие действия, чтобы отправить их нашей команде разработчиков:
 

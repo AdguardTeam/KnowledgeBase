@@ -11,6 +11,8 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 V tomto článku vás provedeme procesem shromažďování záznamů ladění, což je zásadní krok při řešení složitých problémů, které mohou nastat. Záznamy ladění poskytují podrobný náhled do vnitřního fungování AdGuardu pro Android. Pokud vás tým podpory AdGuardu požádá o poskytnutí záznamů ladění, postupujte podle těchto pokynů.
 
+> AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/en/privacy/android.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+
 ### Shromažďování záznamů ladění
 
 Chcete-li shromáždit záznam **ladění** a odeslat nám jej, musíte provést následující kroky:

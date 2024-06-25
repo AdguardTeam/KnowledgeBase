@@ -1,11 +1,11 @@
 ---
-title: What is a content blocker?
+title: Что такое блокировщик контента?
 sidebar_position: 1
 ---
 
-![Content blockers tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/Contentblockers.png)
+! [Вкладка Блокировщики контента](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/Contentblockers.png)
 
-Блокировщик контента — это тематический блок фильтров. Privacy-related filters are included in the content blocker with the corresponding name — _AdGuard Privacy_.
+Блокировщик контента — это тематический блок фильтров. Фильтры, связанные с конфиденциальностью, входят в блокировщик контента с соответствующим названием — _AdGuard Конфиденциальность_.
 
 Блокировщики контента были разработаны по двум причинам: чтобы структурировать фильтры и соответствовать ограничениям Apple.
 
