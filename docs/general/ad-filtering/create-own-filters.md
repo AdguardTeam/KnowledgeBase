@@ -582,15 +582,15 @@ AdGuard will try to close the browser tab with any address that matches a blocki
 
 #### **`$strict-first-party`** {#strict-first-party-modifier}
 
-Works the same as the [`$~third-party`](#third-party-modifier) modifier but treats the request as first-party only if the refferer and the origin share exactly the same hostname.
+Works the same as the [`$~third-party`](#third-party-modifier) modifier, but only treats the request as first-party if the referrer and origin have exactly the same hostname.
 
 **Examples**
 
-- `||domain.com$strict-first-party` — this rule is applied exclusively to `domain.com`. For example a request from `domain.com` to `http://domain.com/icon.ico` is a first-party request. Request from `sub.domain.com` to `http://domain.com/icon.ico` is treated as a third-party (unlike the `$~third-party` modifier).
+- domain.com$strict-first-party' — this rule applies only to `domain.com`. For example, a request from `domain.com` to `http://domain.com/icon.ico` is a first-party request. A request from `sub.domain.com` to `http://domain.com/icon.ico` is treated as a third-party one (as opposed to the `$~third-party` modifier).
 
 :::note
 
-You may use a shorter name (alias) instead of using the full modifier name: `$strict1p`.
+You can use a shorter name (alias) instead of using the full modifier name: `$strict1p`.
 
 :::
 
@@ -600,7 +600,7 @@ Works the same as the [`$third-party`](#third-party-modifier) modifier but also 
 
 **Examples**
 
-- `||domain.com^$strict-third-party` — this rule applies to all domains, except `domain.com`. An example of a third-party request: `http://sub.domain.com/banner.jpg` (unlike the `$third-party` modifier).
+- `||domain.com^$strict-third-party` — this rule applies to all domains except `domain.com`. An example of a third-party request: `http://sub.domain.com/banner.jpg` (as opposed to the `$third-party` modifier).
 
 :::note
 
@@ -610,7 +610,7 @@ You may use a shorter name (alias) instead of using the full modifier name: `$st
 
 #### **`$third-party`** {#third-party-modifier}
 
-A restriction of third-party and own requests. A third-party request is a request from a different domain. For example, a request to `example.org` from `domain.com` is a third-party request.
+A restriction on third-party and custom requests. A third-party request is a request from an external domain. For example, a request to `example.org` from `domain.com` is a third-party request.
 
 :::note
 
