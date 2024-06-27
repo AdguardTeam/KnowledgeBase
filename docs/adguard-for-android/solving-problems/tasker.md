@@ -45,6 +45,12 @@ Here are actions that, when included in the intent, will be understood by AdGuar
 
 `enable:true` or `enable:false` enables or disables the *Use FakeDNS* setting, respectively.
 
+:::note
+
+When the *Use FakeDNS* setting is enabled, *DNS Protection*  will be automatically disabled. DNS requests won't be filtered locally.
+
+:::
+
 -----
 
 `dns_server` switches between DNS servers, you need to include additional data:
