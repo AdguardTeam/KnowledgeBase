@@ -27,27 +27,27 @@ We strictly do not collect or use any information about the websites you visit.
 
 ## Setting up phishing and malware protection in AdGuard products
 
-* **For Windows**: Activate the *Browsing Security* module in the *Settings* menu
+- **For Windows**: Activate the *Browsing Security* module in the *Settings* menu
 
 ![Browsing Security in Windows](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows.png)
 
-* **For Mac**: Enable the *Security* module in *Preferences*
+- **For Mac**: Enable the *Security* module in *Preferences*
 
 ![Security in Mac](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_mac.png)
 
-* **For Android**: Turn on *Browsing Security* in the *Protection* tab
+- **For Android**: Turn on *Browsing Security* in the *Protection* tab
 
 ![Browsing security in Android](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_android.png?mw=900&mh=600)
 
-* **For iOS**: Although there’s no separate module, you can go to *Safari protection* → *Filters* → *Security* and enable the available filters. Additionally, enable *DNS protection* and select a suitable AdGuard server
+- **For iOS**: Although there’s no separate module, you can go to *Safari protection* → *Filters* → *Security* and enable the available filters. Additionally, enable *DNS protection* and select a suitable AdGuard server
 
 ![Security in iOS](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_ios.jpg?mw=900&mh=600)
 
-* **For Browser extensions**: Enable *Phishing and malware protection* in the *Settings* tab. For enhanced protection, go to *Filters* → *Security* and activate available filters
+- **For Browser extensions**: Enable *Phishing and malware protection* in the *Settings* tab. For enhanced protection, go to *Filters* → *Security* and activate available filters
 
 ![Phishing and malware protection](https://cdn.adtidy.org/content/kb/ad_blocker/general/extension_protection.png)
 
-* **For AdGuard DNS:** Enable malware protection in *Server settings* under *Security*
+- **For AdGuard DNS:** Enable malware protection in *Server settings* under *Security*
 
 ![Security in DNS](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_dns.png)
 
