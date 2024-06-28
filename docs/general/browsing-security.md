@@ -11,7 +11,7 @@ Falling prey to phishing and malware remains a common issue. To enhance digital 
 
 AdGuard provides the best possible protection by inspecting both the pages and all objects loaded on them. AdGuard checks URLs and domain names using hash prefixes, not the full URLs, so our servers retain no information about the websites you visit and your personal information is completely safe. Our servers respond to the app’s query with a list of all possible addresses that match the hash prefix. When a potential threat is detected based on hash matches, access to that website is immediately blocked.
 
-![Access blocked by AdGuard](https://cdn.adtidy.org/content/kb/ad_blocker/general/phishing_warning.png)
+![DNS warning](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_diana.png)
 
 ### In browser extensions
 
@@ -54,9 +54,6 @@ We strictly do not collect or use any information about the websites you visit.
 ## What do we block
 
 We maintain two primary filters: one that protects against phishing and fraudulent websites aiming to steal user credentials, and another that blocks access to websites known to distribute malware, which could lead to data loss, information leaks, or damage to your device. These filters also cover various scams and fraudulent schemes. For more detailed information, refer to this [Wikipedia article](https://en.wikipedia.org/wiki/Phishing).
-If you try to visit a malicious or fraudulent website, AdGuard will prevent access and warn you:
-
-![DNS warning](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_diana.png)
 
 ## Maintaining our filters
 
