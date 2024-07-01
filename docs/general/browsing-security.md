@@ -3,7 +3,13 @@ title: Phishing and malware protection
 sidebar_position: 3
 ---
 
-Falling prey to phishing and malware remains a common issue. To enhance digital security, we’ve incorporated special filters in AdGuard products to shield you from malicious and phishing websites. To date, we’ve categorized over 15 million sites, including approximately 1.5 million known for phishing and malware.
+Falling prey to phishing and malware remains a common issue. To enhance digital security, we’ve incorporated special filters in AdGuard products to shield you from malicious and phishing websites. To date, we’ve categorized over 15 million sites, including approximately 1.5 million known for phishing and malware. Using this database, AdGuard checks the websites you visit to protect you from online threats.
+
+::: note
+
+We strictly do not collect or use any information about the websites you visit.
+
+:::
 
 ## How does AdGuard check websites?​
 
@@ -19,12 +25,6 @@ The main principle is the same as with apps: each time you visit a website, your
 
 The difference is that our browser extensions can only check domain names, not full URLs. They are also unable to check subqueries. This means that if there are potentially malicious elements on the page, they will be loaded even if the page itself is from a safe domain. The extension won’t be able to protect against them. It's also important to note that the check performed is asynchronous, i.e. it happens at the same time as the page is loaded, so it’s possible that malware could be loaded as well.
 
-::: Important
-
-We strictly do not collect or use any information about the websites you visit.
-
-:::
-
 ## Setting up phishing and malware protection in AdGuard products
 
 - **For Windows**: Activate the *Browsing Security* module in the *Settings* menu
@@ -37,23 +37,23 @@ We strictly do not collect or use any information about the websites you visit.
 
 - **For Android**: Turn on *Browsing Security* in the *Protection* tab
 
-![Browsing security in Android](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_android.png?mw=900&mh=600)
+![Browsing security in Android *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_android.png)
 
-- **For iOS**: Although there’s no separate module, you can go to *Safari protection* → *Filters* → *Security* and enable the available filters. Additionally, enable *DNS protection* and select a suitable AdGuard server
+- **For iOS**: Although there’s no separate module, you can go to *Safari protection* → *Filters* → *Security* and enable the available filters. Additionally, enable *DNS protection* and select one of the AdGuard DNS servers
 
-![Security in iOS](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_ios.jpg?mw=900&mh=600)
+![Security in iOS *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_ios.jpg)
 
 - **For Browser extensions**: Enable *Phishing and malware protection* in the *Settings* tab. For enhanced protection, go to *Filters* → *Security* and activate available filters
 
 ![Phishing and malware protection](https://cdn.adtidy.org/content/kb/ad_blocker/general/extension_protection.png)
 
-- **For AdGuard DNS:** Enable malware protection in *Server settings* under *Security*
+- **For Private AdGuard DNS:** Enable malware protection in *Server settings* under *Security*
 
 ![Security in DNS](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_dns.png)
 
-## What do we block
+## What we block
 
-We maintain two primary filters: one that protects against phishing and fraudulent websites aiming to steal user credentials, and another that blocks access to websites known to distribute malware, which could lead to data loss, information leaks, or damage to your device. These filters also cover various scams and fraudulent schemes. For more detailed information, refer to this [Wikipedia article](https://en.wikipedia.org/wiki/Phishing).
+We maintain two primary filters: one that protects against phishing and fraudulent websites aimed at stealing user credentials, and another that blocks access to websites known to distribute malware, which could lead to data loss, information leaks, or damage to your device. These filters also protect you from websites with various scams and fraudulent schemes. For more detailed information, refer to this [Wikipedia article](https://en.wikipedia.org/wiki/Phishing).
 
 ## Maintaining our filters
 
@@ -69,7 +69,7 @@ Any help is welcome! If you encounter a phishing or malware website, please repo
 
 Occasionally, some non-malicious websites are added to AdGuard’s filters. We do our best to reduce the percentage of false positives, but they still occur. If you encounter this behavior from AdGuard, please report the false positive to our technical support at <support@adguard.com>.
 
-## If you suspicious about a website
+## If you are suspicious about a website
 
 If you suspect that a certain website might be dangerous, check it first by using our [security check tool](https://reports.adguard.com/welcome.html).
 
