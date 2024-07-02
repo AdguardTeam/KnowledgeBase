@@ -11,6 +11,8 @@ sidebar_position: 2
 
 在本文中，我们将指导用户完成收集调试日志的过程，这是解决可能出现的复杂问题的基本故障排除步骤。 调试日志可让您详细了解 Android 版 AdGuard 的内部运作。 如 AdGuard 支持团队要求调试日志，您可按以下指示说明操作即可。
 
+> AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/en/privacy/android.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+
 ### 收集调试日志
 
 为了收集**调试**日志并将其转发给我们，您要完成以下操作步骤：

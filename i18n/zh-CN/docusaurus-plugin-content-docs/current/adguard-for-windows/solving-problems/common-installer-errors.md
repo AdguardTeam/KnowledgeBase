@@ -1,43 +1,43 @@
 ---
-title: Common installer errors
+title: 常见安装程序错误
 sidebar_position: 6
 ---
 
 :::info
 
-本文适用于 Windows 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 要了解其工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
+本文适用于 Windows 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 要了解它是如何工作的，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)
 
 :::
 
-This article contains some of the most common errors that you can encounter during the AdGuard for Windows installation, and possible ways to solve them.
+本文包含用户在安装 Windows 版 AdGuard 时可能遇到的一些最常见的错误，以及可能的解决方法。
 
-### Error 5: Access Denied {#error-5}
+### 错误 5：拒绝访问 {#error-5}
 
-This error occurs when there's something wrong with permissions. There may be several different reasons why AdGuard installer doesn't have the permissions it requires to properly finish the installation process. You can try the following steps:
+这个错误发生在权限设置有问题的时候。 AdGuard 安装程序没有正确完成安装过程所需的权限可能有多种不同的原因。 用户可以尝试以下步骤：
 
-- Temporarily disable your antiviruses. Some of them may interfere with the installation, depending on the severity of their settings.
+- 暂时禁用防病毒软件。 部分防病毒软件可能会干扰安装，具体取决于其设置的严格程度。
 
-- Choose a different installation folder. It is possible that the current installation folder has some access restrictions. Also make sure you don't select an external drive, a virtual drive, etc.
+- 选择不同的安装文件夹。 当前安装文件夹可能有一些访问限制。 用户还要确保没有选择外部驱动器、虚拟驱动器等。
 
-- Reboot your computer. Sometimes the permission issues are temporary and can be solved by restarting the PC.
+- 重新启动计算机。 有时权限问题是暂时的，可以通过重新启动电脑来解决。
 
-### Error 112: Disk is full, Error 1632: Temporary folder full or inaccessible {#error-112}
+### 错误 112：磁盘已满；错误 1632：临时文件夹已满或无法访问 {#error-112}
 
-These are two different errors with very similar solutions. As their names suggest, AdGuard installer didn't find enough disk space to complete the installation. There are several things you can attempt to fix the problem:
+这是两个不同的错误，但解决方案非常相似。 顾名思义，AdGuard 安装程序没有找到足够的磁盘空间来完成安装。 有几种方法可以尝试解决问题：
 
-- Uninstall some programs or delete unnecessary files from the drive you were trying to install AdGuard to.
+- 从尝试安装 AdGuard 的驱动器中卸载一些程序或删除不需要的文件。
 
-- Download, install, and run [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/), a free piece of software by Malwarebytes. It will, among other things, clean your system from all kinds of extra "leftover" files that remain after incorrectly uninstall programs and such. It will help clean up some disk space.
+- 下载、安装并运行 [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/)，这是一款由 Malwarebytes 提供的免费软件。 软件能够清除系统中因卸载程序错误而产生的各种额外“遗留”文件。 它有助于清理出磁盘空间。
 
-- Reboot your computer. Sometimes temporary files can take up a considerable amount of disk space, and restarting your PC is the most reliable way to get rid of them.
+- 重新启动计算机。 有时候临时文件会占用大量磁盘空间，重启电脑是清除临时文件最可靠的方法。
 
-### Error 1601: Windows Installer is not accessible {#error-1601}
+### 错误 1601：无法访问 Windows Installer {#error-1601}
 
-You could say this is a particular sub-case of Error 1603. The possible solutions are similar:
+可以说，这是错误 1603 的一个特殊子案例。 解决方案是相似的：
 
-- Start and re-register Microsoft Installer service. It requires some work.
+- 启动并重新注册 Microsoft Installer 服务。 这需要如下操作：
 
-    1) Press *Win + R* and enter **services.msc**. 2) Find in the list and double click *Windows Installer*. 3) Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click *Stop* first and then hit *Start*. 4) Press *Win + R*, type and enter ***msiexec /unregister*** and hit *Enter*. 5) Press *Win + R* again, type and enter ***msiexec /regserver*** and hit *Enter*
+    1) 按 *Win + R* 并输入 **services.msc**。 2) 在列表中找到并双击 *Windows Installer*。 3) Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click *Stop* first and then hit *Start*. 4) Press *Win + R*, type and enter ***msiexec /unregister*** and hit *Enter*. 5) Press *Win + R* again, type and enter ***msiexec /regserver*** and hit *Enter*
 
 - Reboot the PC and start the installation all over again. Sometimes that's enough to fix the problem.
 
@@ -57,13 +57,13 @@ The error sounds scarier than it actually is. In reality, this is a rather gener
 
 - Press the *Win* key, search for *Command Prompt* and run it. There, type in `sfc /scannow` and press *Enter*.
 
-- Choose a different installation folder. It is possible that the current installation folder has some access restrictions. Also make sure you don't select an external drive, a virtual drive, etc.
+- 选择不同的安装文件夹。 当前安装文件夹可能有一些访问限制。 用户还要确保没有选择外部驱动器、虚拟驱动器等。
 
 - Uninstall AdGuard using our special [uninstall tool](../../installation#advanced) and then repeat the installation.
 
-- Start and re-register Microsoft Installer service. It requires some work.
+- 启动并重新注册 Microsoft Installer 服务。 这需要如下操作：
 
-    1) Press *Win + R* and enter ***services.msc***. 2) Find in the list and double click *Windows Installer*. 3) Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click *Stop* first and then hit *Start*. 4) Press *Win + R*, type and enter ***msiexec /unregister*** and hit *Enter*. 5) Press *Win + R* again, type and enter ***msiexec /regserver*** and hit *Enter*
+    1) Press *Win + R* and enter ***services.msc***. 2) 在列表中找到并双击 *Windows Installer*。 3) Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click *Stop* first and then hit *Start*. 4) Press *Win + R*, type and enter ***msiexec /unregister*** and hit *Enter*. 5) Press *Win + R* again, type and enter ***msiexec /regserver*** and hit *Enter*
 
 - Acquire full permissions on the drive for installation. It is possible that the error 1603 occurs because you don’t have full permissions on the file location. It's also not as easy as some of the other solutions:
 

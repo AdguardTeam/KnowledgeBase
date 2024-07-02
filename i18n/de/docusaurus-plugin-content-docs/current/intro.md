@@ -6,7 +6,7 @@ slug: /
 
 ## Was ist AdGuard Werbeblocker?
 
-AdGuard ist einer der Marktführer im Bereich der Werbeblocker mit mehr als 10 Jahren Erfahrung, fast einem Dutzend Produkten für verschiedene Plattformen und über 30 Millionen Benutzerinstallationen. Im Gegensatz zu anderen Werbeblocker-Lösungen, die meist browserbasiert sind, bieten wir eigenständige Apps für alle gängigen Plattformen an, sowohl für Desktop als auch für mobile Geräte. AdGuard-Apps sind leistungsfähiger als Browsererweiterungen und können mehr und effizienter blockieren:
+AdGuard ist einer der Marktführer für Werbeblocker-Software mit mehr als 15 Jahren Erfahrung, fast einem Dutzend Produkten für verschiedene Plattformen und über 375 Millionen Nutzerinstallationen. Im Gegensatz zu anderen Werbeblocker-Lösungen, die meist browserbasiert sind, bieten wir eigenständige Apps für alle gängigen Plattformen an, sowohl für Desktop als auch für mobile Geräte. AdGuard-Apps sind leistungsfähiger als Browsererweiterungen und können mehr und effizienter blockieren:
 
 - [AdGuard für Windows](/adguard-for-windows/features/home-screen)
 - [AdGuard für Mac](/adguard-for-mac/features/main)
