@@ -9,16 +9,16 @@ sidebar_position: 3
 
 :::
 
-If filtering doesn’t stop when AdGuard for Safari is disabled, it may be because content blockers take too long to update.
+Если фильтрация не прекращается, даже если AdGuard для Safari отключён, это может быть связано с тем, что блокировщики контента слишком долго обновляются.
 
 ## Как исправить
 
 1. Откройте Safari.
 2. Нажмите _Safari_ в левом верхнем углу меню.
 3. Нажмите _Настройки…_ → _Расширения_.
-4. Clear the checkboxes for AdGuard’s 6 content-blocking extensions: _Custom_, _General_, _Other_, _Privacy_, _Security_, and _Social_.
-   ![Unchecked content blockers](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-unchecked-cbs.png)
+4. Уберите галочки с расширений AdGuard: _Пользовательские_, _Основные_, _Другие_, _Конфиденциальность_, _Безопасность_, _Виджеты соцсетей_, _AdGuard для Safari_ и _Помощник AdGuard_.
+   ![Неотмеченные блокировщики контента](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-unchecked-cbs.png)
 5. Перезапустите Safari.
 6. Вернитесь в _Настройки..._ → _Расширения_ и снова включите расширения, блокирующие контент.
 
-Now everything should work as intended: filtering is on when AdGuard for Safari is enabled, and filtering is off when it is disabled.
+Теперь всё будет как надо: фильтрация работает при включённом AdGuard для Safari и не работает при выключенном.

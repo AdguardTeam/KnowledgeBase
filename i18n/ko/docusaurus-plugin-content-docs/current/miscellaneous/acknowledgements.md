@@ -9,7 +9,7 @@ Our dev team would like to thank the developers of this third-party software, ou
 
 This is the list of libraries and other resources that really helped us with AdGuard software development process.
 
-## AdGuard for Windows {#win}
+## Windows용 AdGuard {#win}
 
 - SQLLite database engine: [sqlite.org](https://sqlite.org)
 - ADO.NET provider for SQLite: [system.data.sqlite.org/index.html/doc/trunk/www/index.wiki](https://system.data.sqlite.org/index.html/doc/trunk/www/index.wiki)
@@ -28,7 +28,7 @@ This is the list of libraries and other resources that really helped us with AdG
 - Bartosz Janda for Acextract component: [github.com/bartoszj/acextract](https://github.com/bartoszj/acextract)
 - FLOPageViewController: [github.com/floschliep/FLOPageViewController](https://github.com/floschliep/FLOPageViewController)
 
-## AdGuard for Android {#android}
+## Android용 AdGuard {#android}
 
 - Logback-android by Tony19: [tony19.github.io/logback-android](https://tony19.github.io/logback-android)
 - Otto by Square: [http://square.github.io/otto](http://square.github.io/otto)
@@ -36,7 +36,7 @@ This is the list of libraries and other resources that really helped us with AdG
 - MaterialDateRangePicker by Supratim Chakraborty: [github.com/borax12/MaterialDateRangePicker](https://github.com/borax12/MaterialDateRangePicker)
 - HelloCharts by Leszek Wach: [github.com/lecho/hellocharts-android](https://github.com/lecho/hellocharts-android)
 
-## AdGuard for iOS {#ios}
+## iOS용 AdGuard {#ios}
 
 - Reachability component by Tony Million: [github.com/tonymillion/Reachability](https://github.com/tonymillion/Reachability)
 - Fmdb component by August «Gus» Mueller: [github.com/ccgus/fmdb](https://github.com/ccgus/fmdb)

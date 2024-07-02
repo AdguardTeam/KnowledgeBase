@@ -1,5 +1,5 @@
 ---
-title: What is AdGuard license?
+title: AdGuard ライセンスとは?
 sidebar_position: 1
 ---
 

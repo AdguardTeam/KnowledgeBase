@@ -4277,6 +4277,8 @@ Used to specify the platforms to apply the rules. List of existing platforms and
 
 - `ext_chromium` — Chrome için AdGuard Tarayıcı Uzantısı — [https://filters.adtidy.org/extension/chromium/filters/2.txt](https://filters.adtidy.org/extension/chromium/filters/2.txt)
 
+- `ext_chromium_mv3` — AdGuard Browser Extension for Chrome MV3 — [https://filters.adtidy.org/extension/chromium-mv3/filters/2.txt](https://filters.adtidy.org/extension/chromium-mv3/filters/2.txt)
+
 - `ext_ff` — Firefox için AdGuard Tarayıcı Uzantısı — [https://filters.adtidy.org/extension/firefox/filters/2.txt](https://filters.adtidy.org/extension/firefox/filters/2.txt)
 
 - `ext_edge` — Edge için AdGuard Tarayıcı Uzantısı — [https://filters.adtidy.org/extension/edge/filters/2.txt](https://filters.adtidy.org/extension/edge/filters/2.txt)

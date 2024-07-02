@@ -13,7 +13,7 @@ Pour créer un compte, allez sur [le site officiel d'AdGuard](https://adguard.co
 
 :::tip
 
-If you enter your email address when purchasing a license, or receive a license linked to your email address as a gift, an account will be created automatically. Pour définir un mot de passe, vous pouvez suivre un lien provenant d'une lettre transactionnelle ou cadeau. Vous pouvez également vous inscrire avec la méthode ci-dessus.
+Si vous saisissez votre adresse e-mail lors de l'achat d'une licence ou recevez en cadeau une licence liée à votre adresse e-mail, un compte sera créé automatiquement. Pour définir un mot de passe, vous pouvez suivre un lien provenant d'une lettre transactionnelle ou cadeau. Vous pouvez également vous inscrire avec la méthode ci-dessus.
 
 :::
 

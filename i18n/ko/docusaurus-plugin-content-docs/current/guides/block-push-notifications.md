@@ -1,52 +1,52 @@
 ---
-title: How to block push notifications
+title: 푸시 알림을 차단하는 방법
 sidebar_position: 9
 ---
 
-If you're seeing annoying ads and popups in the bottom right corner of your screen, they're probably push notifications from your browser. While ad blockers can't stop them, you can easily disable them through your browser settings. Check out the step-by-step guide below to turn off these push notifications.
+화면 오른쪽 하단에 성가신 광고와 팝업이 표시된다면 브라우저에서 보내는 푸시 알림일 수 있다는 뜻입니다. 광고 차단기로는 광고를 막을 수 없지만, 브라우저 설정을 통해 쉽게 비활성화할 수 있습니다. 이러한 푸시 알림을 끄려면 아래의 단계별 가이드를 확인하세요.
 
-## In Google Chrome
+## Google Chrome
 
-1. Click the three vertical dots in the top right corner of the browser and select _Settings_.
-2. Go to _Privacy and security_ → _Site settings_ → _Notifications_.
-3. In _Default behaviour_, select _Don't allow sites to send notifications_. Alternatively, you can manage site-specific settings in _Customised behaviours_.
+1. 브라우저 오른쪽 상단에 있는 세로 점 3개를 클릭하고 **설정**을 선택합니다.
+2. **개인정보 및 보안** → **사이트 설정** → **알림**으로 이동합니다.
+3. **기본 동작**에서 **사이트가 알림을 보내도록 허용하지 않음**을 선택합니다. 또는 **사용자 지정 행동**에서 사이트별 설정을 관리할 수 있습니다.
 
-## In Firefox
+## Firefox
 
-1. Click the three horizontal lines in the top right corner of the navigation bar, then select _Settings_.
-2. Select _Privacy & Security_ from the menu on the left.
-3. Scroll down to the section _Permissions_, then click the button _Settings_ next to _Notifications_.
-4. To stop notifications on all previously approved websites, click _Remove All Websites_. Alternatively, you can manage notifications for each website individually.
-5. You can also select _Block new requests asking to allow notifications_ to stop all push notifications requests at once.
-6. Click _Save Changes_.
+1. 탐색 모음 오른쪽 상단의 가로줄 세 개를 클릭한 다음 **설정**을 선택합니다.
+2. 왼쪽 메뉴에서 **개인정보 및 보안**을 선택합니다.
+3. 아래로 스크롤하여 **권한** 섹션으로 이동한 다음 **알림** 옆에 있는 **설정** 버튼을 클릭합니다.
+4. 이전에 승인된 모든 웹사이트의 알림을 중지하려면 **모든 웹사이트 제거**를 클릭합니다. 또는 각 웹사이트에 대한 알림을 개별적으로 관리할 수도 있습니다.
+5. 또한 **알림 허용을 요청하는 새 요청 차단**을 선택하여 모든 푸시 알림 요청을 한 번에 중지할 수도 있습니다.
+6. **변경 사항 저장**을 클릭합니다.
 
 ## Safari
 
-1. Click _Safari_ in the menu bar → _System Settings_.
-2. Go to the _Websites_ tab.
-3. Select _Notifications_ from the left sidebar.
-4. To block all requests, uncheck _Allow websites to ask for permission to send notifications_. Alternatively, select _Deny_ for each site you want to block individually.
+1. 메뉴 표시줄에서 **Safari** → **시스템 설정**을 클릭합니다.
+2. **웹사이트** 탭으로 이동합니다.
+3. 왼쪽 사이드바에서 **알림**을 선택합니다.
+4. 모든 요청을 차단하려면 **웹사이트가 알림 전송 권한을 요청하도록 허용**을 선택 취소합니다. 또는 차단하려는 각 사이트에 대해 개별적으로 **거부**를 선택합니다.
 
-## In Microsoft Edge
+## Microsoft Edge
 
-1. Click the three dots menu in the upper-right corner and select _Settings_.
-2. In the left sidebar, click _Cookies and site permissions_.
-3. Scroll down and click _Notifications_ under _Site permissions_.
-4. Toggle off _Ask before sending_ to block all browser notifications within Microsoft Edge.
-5. Alternatively, add domains to the _Block_ section for each site you want to block.
+1. 오른쪽 상단 모서리에 있는 점 3개 메뉴를 클릭하고 **설정**을 선택합니다.
+2. 왼쪽 사이드바에서 **쿠키 및 사이트 권한**을 클릭합니다.
+3. 아래로 스크롤하여 **사이트 권한**에서 **알림**을 클릭합니다.
+4. Microsoft Edge 내에서 모든 브라우저 알림을 차단하려면 **보내기 전에 물어보기**를 끕니다.
+5. 또는 차단하려는 각 사이트의 **차단** 섹션에 도메인을 추가합니다.
 
-## Blocking push notifications with AdGuard
+## AdGuard로 푸시 알림 차단
 
-To avoid similar ads in the future, you can also block push notifications directly from the AdGuard apps.
+향후 유사한 광고를 피하기 위해 AdGuard 앱에서 직접 푸시 알림을 차단할 수도 있습니다.
 
-### On Windows
+### Windows
 
-1. Open AdGuard. Go to _Settings_ → _Stealth Mode_.
-2. Scroll down to the _Browser API_ section.
-3. Enable _Block Push API_.
+1. AdGuard를 엽니다. **설정** → **스텔스 모드**로 이동합니다.
+2. 아래로 스크롤하여 **브라우저 API** 섹션으로 이동합니다.
+3. **푸시 API 차단**을 활성화합니다.
 
-### On Mac
+### Mac
 
-1. Open AdGuard. Go to _Preferences_.
-2. In the _Stealth Mode_ tab, go to _Browser API_.
-3. Enable _Block Push API_.
+1. AdGuard를 엽니다. **설정**으로 이동합니다.
+2. **스텔스 모드** 탭에서 **브라우저 API**로 이동합니다.
+3. **푸시 API 차단**을 활성화합니다.

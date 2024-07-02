@@ -5,7 +5,7 @@ sidebar_position: 6
 
 :::note
 
-AdGuard is not an antivirus program. 当用户要访问一个恶意软件或钓鱼网站时，AdGuard 可以警告您，但 **，它不能从用户的设备上清除病毒。**
+AdGuard 并非反病毒程序。 当用户要访问一个恶意软件或钓鱼网站时，AdGuard 可以警告您，但 **，它不能从用户的设备上清除病毒。**
 
 :::
 
@@ -13,7 +13,7 @@ AdGuard is not an antivirus program. 当用户要访问一个恶意软件或钓�
 
 ## 免费的防病毒软件 {#free-antivirus}
 
-There are many of them and you can use any one you prefer. 如果防病毒实用程序的检查没有发现任何问题，但计算机仍然运行可疑。请您尝试对设备进行广告软件检测，查看计算机上是否有恶意广告软件。
+实用程序不可枚举，您可以使用任何自己喜欢的。 如果防病毒实用程序的检查没有发现任何问题，但计算机仍然运行可疑。请您尝试对设备进行广告软件检测，查看计算机上是否有恶意广告软件。
 
 ## 如何清除在系统上的恶意广告软件 {#adware}
 
@@ -21,42 +21,42 @@ There are many of them and you can use any one you prefer. 如果防病毒实用
 
 让我们以 AdwareCleaner 为例。 结束下载应用程序并成功安装后，请执行以下步骤：
 
-1. Start the application and click **Scan now**.
+1. 启动此程序并点击「**立即扫描**」。
 
 ![adware1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware1.png)
 
-1. Once the scan has been completed, you will need to send suspicious objects to **Quarantine**.
+1. 扫描完成后，用户需要发送可疑项目到「**隔离区**」。
 
 ![adware2 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware2.png)
 
-1. When the items are moved to **Quarantine**, you will be able to **Clear the system** of unnecessary ballast.
+1. 将选项被移至「**隔离区**」后，您将能够「**清除系统**」中不必要的选项。
 
-1. In some cases, you may need to **Reboot the system** after cleaning is complete.
+1. 在某些情况下，清理完成后，您可能需要「**重启系统**」。
 
 ![adware3 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware3.png)
 
-1. Once the system has been rebooted, cleaning will be completed. If necessary, you can always read the **Report** on the work done.
+1. 重启系统后，清理随之完成。 如有必要，用户可以随时阅读有关已完成工作的**报告**。
 
-![adware4 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware4.png)
+![adware4 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware3.png)
 
-If it didn’t help, temporary disable all extensions and some other settings in the browser according to [these instructions](#instructions).
+如果没有效果，请根据[此说明](#instructions)暂时禁用浏览器中的所有扩展程序，以及其他设置。
 
-If disabling of settings and extensions does not help, try to [recreate shortcuts of your browsers](#shortcuts).
+如果禁用设置和扩展也无济于事，请您尝试[重新创建浏览器的快捷键](#shortcuts)。
 
-Further on this page we describe the instructions on how to remove some of the most commonly encountered ad extensions.
+在此页接下来的内容中，我们会介绍如何删除一些最常见的广告附加信息。
 
 ## 如何在浏览器中禁用设置和扩展 {#instructions}
 
-Below are the instructions on how to disable settings and extensions for the most popular browsers:
+以下是有关如何针对最流行的浏览器禁用设置和扩展的说明：
 
 - [Google Chrome 浏览器](https://support.google.com/chrome/answer/187443?hl=en)
 
-- [火狐浏览器](https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons)
+- [Firefox 浏览器](https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons)
 
 - [Opera 浏览器](https://help.opera.com/en/latest/customization/#extensions)
 
 ## 如何为浏览器重新创建快捷键 {#shortcuts}
 
-Very often, malware and adware programs install their homepage in a very simple way — they substitute your browser's desktop shortcut, taskbar and *Start* menu items.
+恶意软件和广告软件程序通常以非常简单的方式安装其首页。它们替代浏览器的桌面快捷键，任务栏和「*开始*」菜单项。
 
-The simplest solution in this case is to manually delete all the shortcuts and recreate them by yourself.
+在这种情况下，最简单的解决方式是手动删除所有快捷键，然后自己重新创建它们。

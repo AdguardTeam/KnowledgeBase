@@ -1,52 +1,52 @@
 ---
-title: How to block push notifications
+title: 如何阻止推送通知
 sidebar_position: 9
 ---
 
-If you're seeing annoying ads and popups in the bottom right corner of your screen, they're probably push notifications from your browser. While ad blockers can't stop them, you can easily disable them through your browser settings. Check out the step-by-step guide below to turn off these push notifications.
+在屏幕右下角看到令人讨厌的广告和弹出窗口很可能是来自浏览器的推送通知。 尽管广告拦截程序无法阻止推送通知，但用户可以通过浏览器设置禁用它们。 查看下面的逐步指南，了解关闭推送通知的方式。
 
-## In Google Chrome
+## Google Chrome 浏览器
 
-1. Click the three vertical dots in the top right corner of the browser and select _Settings_.
-2. Go to _Privacy and security_ → _Site settings_ → _Notifications_.
-3. In _Default behaviour_, select _Don't allow sites to send notifications_. Alternatively, you can manage site-specific settings in _Customised behaviours_.
+1. 单击浏览器右上角的三点图标，然后选择「_设置_」。
+2. 转到「_隐私和安全_」→「_网站设置_」→「_通知_」。
+3. 在「_默认_」中，选择「_不允许网站发送通知_」。 或者，也可以在「_自定义_」中管理站点特定的设置。
 
-## In Firefox
+## Firefox 浏览器
 
-1. Click the three horizontal lines in the top right corner of the navigation bar, then select _Settings_.
-2. Select _Privacy & Security_ from the menu on the left.
-3. Scroll down to the section _Permissions_, then click the button _Settings_ next to _Notifications_.
-4. To stop notifications on all previously approved websites, click _Remove All Websites_. Alternatively, you can manage notifications for each website individually.
-5. You can also select _Block new requests asking to allow notifications_ to stop all push notifications requests at once.
-6. Click _Save Changes_.
+1. 点击导航栏右上角的三条水平线，然后选择「_设置_」。
+2. 在左侧菜单中选择「_隐私和安全_」。
+3. 向下滚动到「_权限_」部分，然后点击「_通知_」旁边的「_设置_」按钮。
+4. 要停止所有先前设置的网站的通知，请单击「_删除所有网站_」。 或者，也可以单独管理每个网站的通知。
+5. 用户还可以选择「_阻止要求允许通知的新请求_」以一次性停止所有推送通知请求。
+6. 单击「保存更改」。
 
-## In Safari
+## Safari 浏览器
 
-1. Click _Safari_ in the menu bar → _System Settings_.
-2. Go to the _Websites_ tab.
-3. Select _Notifications_ from the left sidebar.
-4. To block all requests, uncheck _Allow websites to ask for permission to send notifications_. Alternatively, select _Deny_ for each site you want to block individually.
+1. 点击菜单栏中的「_Safari_」→「_系统设置_」。
+2. 转到「网站」选项卡。
+3. 从左侧边栏选择「_通知_」。
+4. 要阻止所有请求，请取消选中「_允许网站发送通知的请求_」。 或者，为每个要屏蔽的网站分别选择「_拒绝_」。
 
-## In Microsoft Edge
+## Microsoft Edge 浏览器
 
-1. Click the three dots menu in the upper-right corner and select _Settings_.
-2. In the left sidebar, click _Cookies and site permissions_.
-3. Scroll down and click _Notifications_ under _Site permissions_.
-4. Toggle off _Ask before sending_ to block all browser notifications within Microsoft Edge.
-5. Alternatively, add domains to the _Block_ section for each site you want to block.
+1. 点击右上角的三点菜单，选择「_设置_」。
+2. 在左侧边栏中，点击「_Cookie 和网站权限_」。
+3. 向下滚动点击「_站点权限_」下的「_通知_」。
+4. 关闭「_发送前询问_」以阻止 Microsoft Edge 中的所有浏览器通知。
+5. 或者，在「_阻止_」部分添加想要拦截的每个站点的域名。
 
-## Blocking push notifications with AdGuard
+## 用 AdGuard 拦截推送通知
 
-To avoid similar ads in the future, you can also block push notifications directly from the AdGuard apps.
+要避免将来出现类似的广告，用户还可以用 AdGuard 应用程序阻止推送通知。
 
-### On Windows
+### Windows 版
 
-1. Open AdGuard. Go to _Settings_ → _Stealth Mode_.
-2. Scroll down to the _Browser API_ section.
-3. Enable _Block Push API_.
+1. 打开 AdGuard。 前往「_设置_」→「_隐身模式_」。
+2. 向下滚动到「_浏览器 API_」部分。
+3. 启用「_拦截推送 API_」。
 
-### On Mac
+### Mac 版
 
-1. Open AdGuard. Go to _Preferences_.
-2. In the _Stealth Mode_ tab, go to _Browser API_.
-3. Enable _Block Push API_.
+1. 打开 AdGuard。 转到「_首选项_」。
+2. 在「_隐身模式_」选项卡中，转到「_浏览器 API_」。
+3. 启用「_拦截推送 API_」。

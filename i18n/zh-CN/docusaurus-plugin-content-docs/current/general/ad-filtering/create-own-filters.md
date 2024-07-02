@@ -3699,7 +3699,7 @@ The `min-length` special attribute must not appear in a selector to the left of 
 :contains(unquoted text)
 ```
 
-or
+或者
 
 ```text
 :contains(/reg(ular )?ex(pression)?/)
@@ -4077,7 +4077,7 @@ rules_list
 !#endif
 ```
 
-or
+或者
 
 ```adblock
 !#if (conditions)
@@ -4276,6 +4276,8 @@ Used to specify the platforms to apply the rules. List of existing platforms and
 - `ios` — AdGuard for iOS — [https://filters.adtidy.org/ios/filters/2.txt](https://filters.adtidy.org/ios/filters/2.txt)
 
 - `ext_chromium` — AdGuard Browser Extension for Chrome — [https://filters.adtidy.org/extension/chromium/filters/2.txt](https://filters.adtidy.org/extension/chromium/filters/2.txt)
+
+- `ext_chromium_mv3` — AdGuard Browser Extension for Chrome MV3 — [https://filters.adtidy.org/extension/chromium-mv3/filters/2.txt](https://filters.adtidy.org/extension/chromium-mv3/filters/2.txt)
 
 - `ext_ff` — AdGuard Browser Extension for Firefox — [https://filters.adtidy.org/extension/firefox/filters/2.txt](https://filters.adtidy.org/extension/firefox/filters/2.txt)
 

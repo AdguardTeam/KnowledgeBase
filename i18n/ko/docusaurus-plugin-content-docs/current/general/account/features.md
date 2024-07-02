@@ -1,38 +1,38 @@
 ---
-title: What can be done in the AdGuard Account
+title: AdGuard 계정으로 할 수 있는 일
 sidebar_position: 2
 ---
 
-In your account, you can manage your licenses, devices bound to them, personal data, email and password, view purchases and contact support.
+계정에서 라이선스, 라이선스에 연결된 기기, 개인 정보, 이메일 및 비밀번호를 관리하고 구매 내역을 확인할 수 있습니다. 또한 지원팀에 문의할 수도 있습니다.
 
-## Manage account settings
+## 계정 설정 관리
 
-In the *Settings* section of your AdGuard account, you can update or reset your password, change your email address, enable [two-factor authentication](../2fa), view the data stored about you by AdGuard and choose the language of your personal account and notifications.
+AdGuard 계정의 *설정* 섹션에서 비밀번호를 업데이트 또는 재설정하고, 이메일 주소를 변경하며, [이중 인증](../2fa)을 활성화할 수 있습니다. 또한 AdGuard에 저장된 귀하에 대한 정보를 확인하고 개인 계정 및 알림의 언어를 선택할 수 있습니다.
 
-In this section, you can also manage your email preferences:
+이 섹션에서는 이메일 기본 설정을 관리할 수도 있습니다.
 
-- receive transactional emails,
-- receive AdGuard’s monthly newsletters,
-- receive emails about AdGuard special offers and promotions,
-- send read receipts to AdGuard when you open emails.
+- 거래 이메일 수신
+- AdGuard 월간 소식지 수신
+- AdGuard 특별 행사 및 프로모션 이메일 수신
+- AdGuard에 이메일을 열었음을 알릴지 말지 설정
 
-## Manage licenses
+## 라이선스 관리
 
-In the *Licenses* section, you can manage your licenses and the devices bound to them.
+*라이선스* 섹션에서는 라이선스 및 라이선스에 연결된 기기를 관리할 수 있습니다.
 
-[AdGuard licenses](../../license/what-is) can be:
+[AdGuard 라이선스](../../license/what-is)는
 
-- bound and unbound,
-- extended,
-- upgraded,
-- canceled. You can also update your payment details.
+- 연결 및 연결 해제,
+- 갱신,
+- 업그레이드,
+- 취소할 수 있습니다. 결제 세부 정보를 업데이트할 수도 있습니다.
 
-The devices bound to your AdGuard Ad Blocker licenses can be unbound or renamed. You can unbind unused devices by clicking the cross icon next to them.
+AdGuard 광고 차단 라이선스에 연결된 기기의 연결을 해제하거나 이름을 변경할 수 있습니다. 사용하지 않는 기기 옆의 십자 아이콘을 클릭하여 연결을 해제할 수 있습니다.
 
-## View purchases
+## 구매 내역 보기
 
-The Purchase history section displays all the licenses that you have ever purchased using the email account you registered your AdGuard account with. You will also find there information about the date of purchase, order ID, payment method, and cost of the purchase.
+구매 내역 섹션에는 AdGuard 계정을 등록한 이메일 계정을 사용하여 구매한 모든 라이선스가 표시됩니다. 구매 날짜, 주문 ID, 결제 방법 및 구매 비용에 대한 정보도 확인할 수 있습니다.
 
-## Contact support
+## 고객지원 문의
 
-The Support tab contains useful links to help you solve problems or find answers to your questions about AdGuard products. They are divided into six sections: FAQ, Send a bug repot/feature request, Report incorrect blocking, Contact support, Knowledge base and Discuss.
+지원 탭에는 문제를 해결하거나 AdGuard 제품에 대한 정보를 찾는 데 도움이 되는 유용한 링크가 포함되어 있습니다. 6개의 섹션으로 나뉘어 있습니다: 자주 묻는 질문, 버그 제보/기능 요청 보내기, 잘못된 차단 신고, 지원팀에 문의, 지식 창고, 토론장입니다.
