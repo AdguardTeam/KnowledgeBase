@@ -47,7 +47,7 @@ Here are actions that, when included in the intent, will be understood by AdGuar
 
 :::note
 
-When the *Use FakeDNS* setting is enabled, *DNS Protection*  will be automatically disabled. DNS requests won't be filtered locally.
+When the *Use FakeDNS* setting is enabled, *DNS Protection* will be automatically disabled. DNS requests won't be filtered locally.
 
 :::
 
@@ -65,7 +65,7 @@ The full list of supported provider names can be found in our [known DNS provide
 
  `server:custom` switches to the previously added server named `custom`;
 
- `server:tls://dns.adguard.com` creates a new server and switches to it if the previously added servers and providers don't contain a server with the same address. Otherwise, it switches to the respective server. You can add server addresses as IP ( regular DNS), `sdns://…` (DNSCrypt or DNS-over-HTTPS), `https://…` (DNS-over-HTTPS) or  `tls://...` (DNS-over-TLS);
+ `server:tls://dns.adguard.com` creates a new server and switches to it if the previously added servers and providers don't contain a server with the same address. Otherwise, it switches to the respective server. You can add server addresses as IP ( regular DNS), `sdns://…` (DNSCrypt or DNS-over-HTTPS), `https://…` (DNS-over-HTTPS) or `tls://...` (DNS-over-TLS);
 
  `server:1.1.1.1, tls://1.1.1.1` creates a server with comma separated addresses and switches to it. When adding a server via `server:1.1.1.1, tls://1.1.1.1`, the previously added server is removed.
 
@@ -73,7 +73,7 @@ The full list of supported provider names can be found in our [known DNS provide
 
  -----
 
-`proxy_state` enables/disables the outbound proxy.  Requires an extra flag:
+`proxy_state` enables/disables the outbound proxy. Requires an extra flag:
 
 `enable:true` or `enable:false` activates or deactivates the outbound proxy, accordingly.
 
