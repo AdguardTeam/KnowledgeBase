@@ -11,9 +11,9 @@ sidebar_position: 3
 
 要分析和诊断可能潜在的问题，AdGuard 技术人员可能需要 AdGuard 日志记录文件。 这些文件包含本软件发生的错误记录和其它事件。 下面是简短的说明，描述获取日志文件的方法，并在必要时将其发送给支持服务。
 
-> AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/en/privacy/windows.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+> AdGuard 致力于保护用户的个人隐私。 我们严格遵守我们的[隐私政策](https://adguard.com/en/privacy/windows.html) ，不收集任何有关用户的私人信息。 请注意：在将您的日志记录发送给客户支持团队之前，请检查文件，因为它会包含您不想分享的附加信息。 如果包含此类个人信息，我们建议您删除它。
 
-### Debug logs {#debug-logs}
+### 调试日志 {#debug-logs}
 
 1. 打开 AdGuard 设置。 转到「*常规设置*」部分，下滚至界面底部并切换「*日志级别*」至「*调试*」。
 

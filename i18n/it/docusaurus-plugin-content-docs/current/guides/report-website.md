@@ -1,5 +1,5 @@
 ---
-title: How to report websites and apps
+title: Come segnalare siti web e app
 sidebar_position: 3
 ---
 
@@ -53,7 +53,7 @@ Per segnalare il reinserimento di un annuncio o l'errata visualizzazione di un s
 
 ### Mac {#mac}
 
-- Open [AdGuard Browser Assistant](/adguard-for-mac/features/browser-assistant) and hit **Report an issue**:
+- Apri [L'Assistant AdGuard](/adguard-for-mac/features/browser-assistant) e premi **Segnala un problema**:
 
 ![mac *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/guides/browser-assistant-mac.png)
 

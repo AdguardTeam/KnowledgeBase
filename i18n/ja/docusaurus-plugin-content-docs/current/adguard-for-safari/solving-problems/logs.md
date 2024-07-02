@@ -19,7 +19,7 @@ AdGuard for Safari で発生した問題を分析および診断するために�
 
 Now you can send this file to support@adguard.com or attach it to your bug report on GitHub.
 
-> AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/en/privacy/safari.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+> AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/safari.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
 
 1. [AdGuard for Safari の GitHub リポジトリ](https://github.com/AdguardTeam/AdGuardForSafari/issues)を開き、_New issue_ をクリックします。
 2. ログファイルを devteam@adguard.com に送信してください。 メールにバグの発生時刻とissueへのリンクまたはissue番号（番号はissueタイトルの横に#○○として表示されます）を記載してください。

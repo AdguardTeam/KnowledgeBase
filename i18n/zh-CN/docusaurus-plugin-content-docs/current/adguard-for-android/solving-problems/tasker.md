@@ -41,6 +41,16 @@ sidebar_position: 3
 
 `enable:true` 或 `enable:false` 相应地启用或禁用 DNS 过滤。
 
+`fake_dns` allows resolving DNS requests on the specified proxy server. This requires an extra flag:
+
+`enable:true` or `enable:false` enables or disables the *Use FakeDNS* setting, respectively.
+
+:::note
+
+When the *Use FakeDNS* setting is enabled, *DNS Protection*  will be automatically disabled. DNS requests won't be filtered locally.
+
+:::
+
 -----
 
 `dns_server` 在 DNS 服务器之间切换时，需要包含额外的数据：

@@ -36,11 +36,11 @@
     "description": "The label of footer link with label=awards linking to https://adguard.com/awards.html"
   },
   "link.item.label.adguard_for_windows": {
-    "message": "AdGuard for Windows",
+    "message": "Windows용 AdGuard",
     "description": "The label of footer link with label=adguard_for_windows linking to https://adguard.com/adguard-windows/overview.html"
   },
   "link.item.label.adguard_for_android": {
-    "message": "AdGuard for Android",
+    "message": "Android용 AdGuard",
     "description": "The label of footer link with label=adguard_for_android linking to https://adguard.com/adguard-android/overview.html"
   },
   "link.item.label.adguard_for_mac": {
@@ -48,7 +48,7 @@
     "description": "The label of footer link with label=adguard_for_mac linking to https://adguard.com/adguard-mac/overview.html"
   },
   "link.item.label.adguard_for_ios": {
-    "message": "AdGuard for iOS",
+    "message": "iOS용 AdGuard",
     "description": "The label of footer link with label=adguard_for_ios linking to https://adguard.com/adguard-ios/overview.html"
   },
   "link.item.label.adguard_for_ios_pro": {

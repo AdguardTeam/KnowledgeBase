@@ -41,6 +41,16 @@ Here are actions that, when included in the intent, will be understood by AdGuar
 
 `enable:true` veya `enable:false`, buna göre DNS filtrelemeyi etkinleştirir veya devre dışı bırakır.
 
+`fake_dns`, DNS isteklerinin belirtilen proxy sunucusunda çözümlenmesini sağlar. Bu, ekstra bir bayrak gerektirir:
+
+`enable:true` veya `enable:false` sırasıyla *FakeDNS'i kullan* ayarını etkinleştirir veya devre dışı bırakır.
+
+:::not
+
+*FakeDNS'i kullan* ayarı etkinleştirildiğinde, *DNS Koruması* otomatik olarak devre dışı bırakılacaktır. DNS istekleri yerel olarak filtrelenmeyecektir.
+
+:::
+
 -----
 
 `dns_server`, DNS sunucuları arasında geçiş yapıyorsa, ek veriler eklemeniz gerekir:
