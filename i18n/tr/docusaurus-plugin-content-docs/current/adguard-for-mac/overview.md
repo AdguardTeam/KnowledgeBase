@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Mac için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
+This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -15,31 +15,35 @@ AdGuard for Mac is a standalone ad blocker for macOS. While AdGuard for Safari i
 
 ## Home panel
 
-![Home panel *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Mainscreen.png)
+![Home panel \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Mainscreen.png)
 
 The first thing you see upon startup will be a screen with a big On/Off toggle. Below are shown various stats (ads blocked, trackers blocked, data saved) since the installation or since the last stats reset.
 
 To start configuring AdGuard for Mac, you need to click the gear in the upper right corner of the window and select "Preferences".
 
-## Genel Tercihler
+## General Preferences
 
-![Genel](https://cdn.adtidy.org/content/kb/ad_blocker/mac/General.jpg)
+![General](https://cdn.adtidy.org/content/kb/ad_blocker/mac/General.jpg)
 
 Descriptions under option titles seem self-explanatory, but still:
 
-**Activate language-specific filters automatically** Enabling this option, you won't have to manually choose all the filters when visiting a foreign website, saving you some time.
+**Activate language-specific filters automatically**
+Enabling this option, you won't have to manually choose all the filters when visiting a foreign website, saving you some time.
 
-**Launch AdGuard at login** A simple and convenient feature with which you don't have to worry whether or not you have your ad blocker turned on, and just be sure that ads are always blocked.
+**Launch AdGuard at login**
+A simple and convenient feature with which you don't have to worry whether or not you have your ad blocker turned on, and just be sure that ads are always blocked.
 
-**Do not block search ads and websites' self-promotion** This option might be useful to online shoppers: instead of adding all your favorite e-shops and sites to the Allowlist, you can simply exclude [self-promos and search ads](/general/ad-filtering/search-ads) from filtering. AdGuard will automatically detect those and let them be, while removing everything else ad-like.
+**Do not block search ads and websites' self-promotion**
+This option might be useful to online shoppers: instead of adding all your favorite e-shops and sites to the Allowlist, you can simply exclude [self-promos and search ads](/general/ad-filtering/search-ads) from filtering. AdGuard will automatically detect those and let them be, while removing everything else ad-like.
 
-**Hide menu bar icon** If you don't want to see the menu bar icon, there is an option to hide it. But don't worry: even if you remove it from the menu bar, AdGuard will continue to run in the background.
+**Hide menu bar icon**
+If you don't want to see the menu bar icon, there is an option to hide it. But don't worry: even if you remove it from the menu bar, AdGuard will continue to run in the background.
 
 From this same window you can access the above-mentioned Allowlist, to which you can add websites you do not wish AdGuard to filter. Just click the corresponding button located at the bottom of the window.
 
 ## Filtreler
 
-![Filtreler](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Filters.jpg)
+![Filters](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Filters.jpg)
 
 Filters are the main driving force behind the Ad blocker module. To understand how filtering works, get acquainted with our [comprehensive article](https://adguard.com/en/blog/how-ad-blocking-is-done.html). But in essence, filter lists are sets of rules written in a special language, and your ad blocker is an interpreter of these rules who then implements them. As a result, you stop seeing ads on your web pages and life gets lots better.
 
@@ -53,11 +57,11 @@ Aside from the more general and universally applicable filters (like Base filter
 - Annoyances filter for cookie warnings, in-page pop-ups and others of the same ilk,
 - and even a filter that unblocks some ads instead of blocking them — Filter for search ads and self-promotions.
 
-AdGuard filtreleri otomatik olarak güncellenir. Our developers create them all based on user feedback received. You can always help other AdGuard users (and yourself, in perspective) by sending us reports right from the app's Assistant (it's really handy, we'll tell you more about the Assistant further on), or from the [website](https://agrd.io/report). If you wish to know more about AdGuard filters, here is [some info](/general/ad-filtering/adguard-filters).
+AdGuard filters are automatically updated. Our developers create them all based on user feedback received. You can always help other AdGuard users (and yourself, in perspective) by sending us reports right from the app's Assistant (it's really handy, we'll tell you more about the Assistant further on), or from the [website](https://agrd.io/report). If you wish to know more about AdGuard filters, here is [some info](/general/ad-filtering/adguard-filters).
 
 ## Kullanıcı kuralları
 
-![Kullanıcı kuralları](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Filters.jpg)
+![User rules](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Filters.jpg)
 
 Another vital part of the Ad Blocker module are its User rules. If you have some coding experience and would like to create your own rules that would be a better custom fit than the standard filters already available, then you can try your hand at this. The syntax AdGuard uses for its filtering rules is based on that of any other ad blocking extension, but with considerable additions, extending its possibilities. The whole process of rule-writing in all its nuances is described in these comprehensive instructions, so if you want to write some custom rules and check how much of a coder you are, just follow the steps we described [in this article](/general/ad-filtering/create-own-filters).
 
@@ -67,11 +71,11 @@ Another vital part of the Ad Blocker module are its User rules. If you have some
 
 DNS filtering is one of the most useful features, thanks to which all your DNS traffic is encrypted. But if you're using the default DNS server provided by your ISP, your DNS traffic is likely not encrypted and vulnerable to snooping and hijacking.
 
-In the DNS panel you can select the DNS servers from known DNS providers or even add custom DNS servers. Also you can add domains to DNS blocklist or allowlist and add complicated rules using DNS rules syntax. Finally, you can [add DNS filters of your choice](https://filterlists.com).
+In the DNS panel you can select the DNS servers from known DNS providers or even add custom DNS servers. Also you can add domains to DNS blocklist or allowlist and add complicated rules using DNS rule syntax. Finally, you can [add DNS filters of your choice](https://filterlists.com).
 
 ## Gizlilik Modu
 
-![Gizlilik Modu](https://cdn.adtidy.org/content/kb/ad_blocker/mac/StealthMode.jpg)
+![Stealth Mode](https://cdn.adtidy.org/content/kb/ad_blocker/mac/StealthMode.jpg)
 
 This module is a very useful tool that will help you maintain your privacy from websites that try to retain such info about you as your IP address, computer parameters, browser settings and even the initial page from which you were redirected, not to mention cart contents if we speak of web stores. If this list of info potentially to be shared with shady third parties doesn't make you think twice, then might we add that in most cases they will also get such personal data as your age, yearly income, medical history, physical address and your kids' names. Eliminating such things as unwanted cookies or clandestine insertion of tracking parameters into your browser is what Stealth Mode does best.
 
@@ -83,9 +87,10 @@ Stealth Mode contains a wide range of options, which ensure its flexible configu
 
 Next we have the Security panel, where a module also known as Browsing Security is located. What it does is protection from malicious and phishing websites.
 
-:::not
+:::note
 
-AdGuard is not an antivirus, but an entirely different program. It will show you a warning if you are about to go onto an infected domain, but it cannot stop you from downloading anything suspicious or help you deal with already existing viruses. Phishing is a very common web fraud aimed at stealing personal data (passwords, bank account details, etc.). It is carried out using fake web pages mimicking popular websites or real services, such as web stores or social networks. Many phishing websites have URLs that only differ from the real ones in just a few symbols to put you off your guard. If a user enters their details on such a website, they’ll definitely end up in the wrong hands.
+AdGuard is not an antivirus, but an entirely different program. It will show you a warning if you are about to go onto an infected domain, but it cannot stop you from downloading anything suspicious or help you deal with already existing viruses.
+Phishing is a very common web fraud aimed at stealing personal data (passwords, bank account details, etc.). It is carried out using fake web pages mimicking popular websites or real services, such as web stores or social networks. Many phishing websites have URLs that only differ from the real ones in just a few symbols to put you off your guard. If a user enters their details on such a website, they’ll definitely end up in the wrong hands.
 
 :::
 
@@ -101,7 +106,7 @@ If you wish to help us in perfecting this module, you can check the lower box on
 
 AdGuard Browser Assistant’s primary function is to manage filtering directly from the browser. It used to be a mere userscript incorporated into AdGuard for Mac app that then became a full-fledged browser extension. Know more about the [benefits it yields](../browser-assistant).
 
-![Assistant popup menu *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/safari_assistant_pop-up_menu.jpg)
+![Assistant popup menu \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/safari_assistant_pop-up_menu.jpg)
 
 You will be prompted to install the Browser Assistant for your default browser when you first install AdGuard (during the onboarding process). If you missed it, you can [download it for any browser](https://adguard.com/adguard-assistant/overview.html) at any time.
 
@@ -111,21 +116,24 @@ You will be prompted to install the Browser Assistant for your default browser w
 
 Extensions are small programs that do exactly what their name implies — they extend functionality. And AdGuard uses several extensions of its own, also called userscripts, to broaden its functions range:
 
-**1. AdGuard Assistant** (legacy version) This extension assists the user in changing basic AdGuard settings within the browser, without the need to open the app itself. Like Browser Assistant, legacy Assistant works with all macOS compatible browsers. Thanks to this little tool you can do several things without having to leave the browser: add a certain webpage to the "do not block" list, choose and block an especially annoying element on the page, report the website if it still manages to get ads through to you.
+**1. AdGuard Assistant** (legacy version)
+This extension assists the user in changing basic AdGuard settings within the browser, without the need to open the app itself. Like Browser Assistant, legacy Assistant works with all macOS compatible browsers. Thanks to this little tool you can do several things without having to leave the browser: add a certain webpage to the "do not block" list, choose and block an especially annoying element on the page, report the website if it still manages to get ads through to you.
 
-:::not
+:::note
 
 This version of Assistant is legacy and there is no point in using it on new systems, since it has been replaced with the full-fledged Browser Assistant. But legacy Assistant might be of help if there is no Browser Assistant extension for your browser.
 
 :::
 
-**2. AdGuard Extra** This extension is used to solve the more complicated ad blocking cases you might encounter. We would recommend you to always keep it switched on, unless you have a serious reason not to.
+**2. AdGuard Extra**
+This extension is used to solve the more complicated ad blocking cases you might encounter. We would recommend you to always keep it switched on, unless you have a serious reason not to.
 
-**3. AdGuard Popup Blocker** Prevents all these annoying popup windows from opening when you view webpages. Web sayfalarında açılır pencere reklamlarını engeller.
+**3. AdGuard Popup Blocker**
+Prevents all these annoying popup windows from opening when you view webpages. Blocks popup ads on web pages.
 
 One of the important features of AdGuard for Mac is that the application can work as a cross-browser userscript manager. You can easily add any scripts you like and manage existing ones without having to switch browsers every time.
 
-## Network
+## Ağ
 
 ![Network](https://cdn.adtidy.org/content/kb/ad_blocker/mac/NetworkFiltering.jpg)
 
@@ -143,7 +151,7 @@ There are other useful AdGuard options that shouldn't go unnoticed in this artic
 
 First, there's the License tab that you can open from the dropdown main menu (the one that opens once you click the gear icon on the upper right of the main window). From this tab you can see which license type you are using, check its status and validity period.
 
-![Lisans](https://cdn.adtidy.org/content/kb/ad_blocker/mac/License.jpg)
+![License](https://cdn.adtidy.org/content/kb/ad_blocker/mac/License.jpg)
 
 In this same tab you can refresh your license status, renew your license or reset the license key using the corresponding buttons.
 
@@ -151,7 +159,7 @@ In this same tab you can refresh your license status, renew your license or rese
 
 Click the gear icon in the upper right corner, select "Support", and you will be able to send a bug report or a feature request to our support team. Be sure to add your real actual email though, because without it the message won't be sent.
 
-![Destek](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Support.jpg)
+![Support](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Support.jpg)
 
 To report a missed ad or a broken website, please follow the link above the message window, we use a separate reporting tool for those types of issues.
 

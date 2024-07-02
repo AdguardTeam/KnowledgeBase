@@ -1,38 +1,38 @@
 ---
-title: How to use Samsung Pay with AdGuard in South Korea
+title: 如何在韩国使用 Samsung Pay 和 AdGuard
 sidebar_position: 17
 ---
 
 :::info
 
-本文适用于安卓版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。 要了解其工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
-A number of users have encountered an issue where Samsung Pay does not work while AdGuard is running. This issue occurs almost exclusively on devices registered in South Korea.
+有部分用户遇到了 AdGuard 运行时 Samsung Pay 无法正常运行的问题。 但是这个问题几乎只发生在韩国地区的 Android 设备上。
 
-What is causing this issue? Sometimes Samsung Pay does not work on devices with VPN services running, and AdGuard is one of these apps. By default, AdGuard uses a local VPN to filter traffic, which can cause problems when using Samsung Pay.
+为什么会发生这样的问题呢？ 部分情况下 Samsung Pay 无法在有 VPN 服务的设备上运行，AdGuard 就是其中一种。 在默认情况下，AdGuard 使用本地的 VPN 服务来减少流量，这可能会导致 Samsung Pay 无法正常运行。
 
-As a consequence, users had to disable AdGuard when making payments with Samsung Pay. This can be avoided with the *Detect Samsung Pay* feature. When this option is enabled, the AdGuard app is paused whenever the user opens the Samsung Pay app and resumes when the app is closed.
+因此，韩国的用户在使用 Samsung Pay 进行付款时必须禁用 AdGuard。 启用「*检测 Samsung Pay*」功能可以避免这种问题的发生。 启用此功能后，只要用户打开 Samsung Pay 应用程序，AdGuard 就会暂停，并在 Samsung Pay 关闭时恢复。
 
 :::note
 
-This feature will work only if the Local VPN filtering mode is chosen in AdGuard settings. If another mode is being used, Samsung Pay will function without any interruptions.
+只有在 AdGuard 设置中选择本地 VPN 过滤模式，此功能才会生效。 如果使用另一种模式，Samsung Pay 也会正常运行，不会受到任何影响。
 
 :::
 
-To enable *Detect Samsung Pay*, follow these steps:
+若要启用「*检测 Samsung Pay*」功能，请按照以下步骤操作：
 
-1. Go to *Settings* → *General* → *Advanced*→ *Low-level settings*.
+1. 转到「*设置*」→「*通用*」→「*高级*」→「*低级设置*」。
 
-1. Scroll to *Detect Samsung Pay* and move the slider to the right.
+1. 滚动到「*检测 Samsung Pay*」，然后将滑块向右移动。
 
-1. Tap *Allow permissions* and give AdGuard access to information about the use of other apps.
+1. 点按「*允许权限*」，让 AdGuard 获取有关其他应用程序使用情况的信息。
 
-We need it to collect statistics about the operation of Samsung Pay in order for the *Detect Samsung Pay* feature to work.
+我们需要这些权限来收集 Samsung Pay 运作的统计数字，以便使「*检测 Samsung Pay*」功能正常运行。
 
-After enabling this feature, when you switch from Samsung Pay to AdGuard, the following message will appear as shown in the screenshot.
+启用此功能后，当用户从 Samsung Pay 切换到 AdGuard 时，将会出现如屏幕截图所示的以下消息。
 
 ![samsungpay *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/samsungpay-with-adguard-in-south-korea/samsung_pay.png)
 
-Alternatively, you can disable filtering for Samsung Pay in *App management*. Simply go to the *App management* screen (third tab from the bottom), find Samsung Pay in the list, and turn off the switch at *Route traffic through AdGuard*.
+或者，用户也可以在「*应用管理*」中禁用 Samsung Pay 的过滤功能。 只需进入「*应用管理*」界面（底部第三个标签），在列表中找到 Samsung Pay，然后关闭「*通过 AdGuard 路由流量*」即可。

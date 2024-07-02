@@ -3,7 +3,7 @@ title: AdGuard 설치 로그를 수집하는 방법
 sidebar_position: 4
 ---
 
-:::info
+:::정보
 
 본 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Windows용 AdGuard에 대해 다룹니다. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 

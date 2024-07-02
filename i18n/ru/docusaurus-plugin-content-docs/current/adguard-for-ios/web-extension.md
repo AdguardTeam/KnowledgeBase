@@ -30,6 +30,12 @@ sidebar_position: 3
 
 ## Как включить веб-расширение AdGuard в Safari
 
+:::note
+
+Веб-расширение AdGuard для Safari требует доступ к содержимому веб-страниц для своей работы, но не использует его ни для каких других целей, кроме как для блокировки рекламы.
+
+:::
+
 ### В настройках iOS
 
 Веб-расширение не является самостоятельным инструментом и требует наличия AdGuard для iOS. Если на вашем устройстве не установлен AdGuard для iOS, пожалуйста, сначала [установите его](../installation) и выполните первый запуск приложения, чтобы подготовить его к работе.
@@ -44,15 +50,9 @@ sidebar_position: 3
 
 ![Выберите "AdGuard" в разделе РАЗРЕШИТЬ ЭТИ РАСШИРЕНИЯ *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings3_en.png)
 
-Коснитесь его, затем включите переключатель. На том же экране убедитесь, что расширение AdGuard имеет необходимые разрешения: опция **Все сайты** должна иметь статус *Разрешить*.
+Tap it, then toggle the switch. On the same screen, set the *All Websites* permission for AdGuard to either *Allow* or *Ask*. If you choose *Allow*, you won't have to give permission every time you visit a new website. If you are unsure, choose *Ask* to grant permissions on a per-site basis.
 
-![расширения настроек](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings4_en.png)
-
-:::note
-
-Веб-расширение AdGuard для Safari требует доступ к содержимому веб-страниц для своей работы, но не использует его ни для каких других целей, кроме как для блокировки рекламы.
-
-:::
+![Extension settings *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/webext/settings4_en.png)
 
 ### В Safari
 

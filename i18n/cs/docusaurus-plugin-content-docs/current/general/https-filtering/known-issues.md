@@ -9,7 +9,7 @@ Pochopení tohoto článku může vyžadovat základní znalosti o šifrování,
 
 Nejprve se podívejte na tento jednoduchý diagram, který ukazuje obecnou strukturu protokolu HTTPS:
 
-![What is HTTPS filtering](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
+![What is HTTPS filtering?](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
 
 AdGuard zkopíruje vlastnosti připojení TLS, které používá váš prohlížeč:
 

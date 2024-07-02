@@ -11,7 +11,7 @@ Using HTTPS is highly advantageous because encrypted traffic is protected agains
 
 The diagram below describes the difference between plain HTTP protocol and secure HTTPS protocol.
 
-![What is HTTPS](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https.png)
+![What is HTTPS?](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https.png)
 
 ### What is a security certificate?
 

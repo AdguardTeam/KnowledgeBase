@@ -21,11 +21,11 @@ sidebar_position: 3
 
 ### Вопросы безопасности
 
-Isn't it dangerous to let some random apps manage what AdGuard does? It is, and that's why a password is sent along with the intent. Этот пароль генерируется автоматически, но вы можете поменять его самостоятельно в расширенных настройках AdGuard.
+Не опасно ли позволять каким-то случайным приложениям управлять работой AdGuard? Опасно, именно поэтому вместе с интентом отправляется пароль. Этот пароль генерируется автоматически, но вы можете поменять его самостоятельно в расширенных настройках AdGuard.
 
 ### Доступные действия
 
-будучи включёнными в интент, будут понятны AdGuard:
+Вот список действий, которые, будучи включёнными в интент, будут понятны AdGuard:
 
 `start` запускает защиту, дополнительные данные не нужны;
 
@@ -49,7 +49,7 @@ Isn't it dangerous to let some random apps manage what AdGuard does? It is, and 
 
 :::note
 
-The full list of supported provider names can be found in our [known DNS providers list](https://adguard-dns.io/kb/general/dns-providers/).
+Полный список поддерживаемых провайдеров можно найти в нашем списке [известных DNS-провайдеров](https://adguard-dns.io/kb/general/dns-providers/).
 
 :::
 
@@ -83,7 +83,7 @@ The full list of supported provider names can be found in our [known DNS provide
 
 `server:[name]`, где `[name]` — имя исходящего прокси из списка.
 
-Или вы можете настроить параметры сервера вручную:
+Вы также можете настроить параметры удаления вручную:
 
 `server:[type=…&host=…&port=…&username=…&password=…&udp=…&trust=…]`.
 
@@ -112,20 +112,17 @@ The full list of supported provider names can be found in our [known DNS provide
 
 `настройка по имени сервера`: server:MyServer
 
- `настройка вручную`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
-
+`настройка вручную`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
 
 :::
 
------
-
-**Не забывайте добавить пароль, имя пакета и класс. Это нужно делать для каждого интента.**
+**Не забудьте дополнительно указать пароль, имя приложения (package) и класс. Это нужно делать для каждого интента.**
 
 Extra: `password:*******`
 
 Package: `com.adguard.android`
 
-Класс: `com.adguard.android.receiver.AutomationReceiver`
+Class: `com.adguard.android.receiver.AutomationReceiver`
 
 :::note
 

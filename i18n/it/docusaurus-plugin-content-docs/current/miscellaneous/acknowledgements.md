@@ -44,7 +44,7 @@ This is the list of libraries and other resources that really helped us with AdG
 - Minizip-ng library by Nathan Moinvaziri: [github.com/zlib-ng/minizip-ng](https://github.com/zlib-ng/minizip-ng)
 - Lottie for iOS library by Brandon Withrow: [github.com/airbnb/lottie-ios](https://github.com/airbnb/lottie-ios)
 
-## AdGuard Browser Extension {#extension}
+## Estensione del Browser di AdGuard {#extension}
 
 - SHA256: [github.com/AndersLindman/SHA256](https://github.com/AndersLindman/SHA256)
 - D3: [github.com/d3/d3](https://github.com/d3/d3)
@@ -136,42 +136,42 @@ Also a huge thanks and gratitude to all beta testers and other engaged users, wh
 - Andy Kleinert (AndyKl) — translator and proofreader to German in Crowdin
 - BigDargon — contributed the hostsVN project as a source to the list of AdGuard DNS
 - Blaz — started as a filter contributor and now working at AdGuard
-- Boo Berry — forum and Telegram group moderator
-- buuuuuuu190 — beta tester, active AdGuard Forum member
-- clarke — beta tester, active AdGuard Forum member
-- [dartrax](https://github.com/dartrax) — beta tester, active AdGuard Forum member
-- dja2k — beta tester, active AdGuard Forum member
+- Boo Berry — Telegram group moderator
+- buuuuuuu190 — beta tester
+- clarke — beta tester
+- [dartrax](https://github.com/dartrax) — beta tester
+- dja2k — beta tester
 - Eduardo Addad de Oliveira (eduardoaddad) — translator and proofreader to Portuguese and Portuguese, Brazilian in Crowdin
-- fabjazz — beta tester, active AdGuard Forum member
+- fabjazz — beta tester
 - Görkem Emrah Güler (gork7777) — translator and proofreader to Turkish in Crowdin
-- hanschke — beta tester, active AdGuard Forum member
+- hanschke — beta tester
 - iDjay — outstanding beta tester of AdGuard for iOS
 - Imre Kristoffer Eilertsen (DandelionSprout) — maintainer of "Dandelion Sprout’s Nordic Filters" that are included in all AdGuard tools
 - IONIL — translator and proofreader to Hebrew in Crowdin
-- itabmedia — beta tester, active AdGuard Forum member
-- kirasam — beta tester, active AdGuard Forum member
+- itabmedia — beta tester
+- kirasam — beta tester
 - krystian3w — very active filter contributor
 - lancelot.moon — translator and proofreader to Chinese Traditional in Crowdin, beta tester
-- Lord Ami — beta tester, active AdGuard Forum member
+- Lord Ami — beta tester
 - Lukas Novotny (novas78) — translator and proofreader to Czech in Crowdin
-- malware1 — beta tester, active AdGuard Forum member
-- milder — beta tester, active AdGuard Forum member
-- Nicos18 — beta tester, active AdGuard Forum member
+- malware1 — beta tester
+- milder — beta tester
+- Nicos18 — beta tester
 - Oizaro — translator and proofreader to Italian in Crowdin
 - Oleg Chashko — very active beta tester of AdGuard for Safari
 - Oskari Lavinto (olavinto) — translator and proofreader to Finnish in Crowdin
-- ouzbed — beta tester, active AdGuard Forum member
+- ouzbed — beta tester
 - PentagramTr — filter contributor, namely, he has brought a lot of new things to the Turkish filter
 - Peter Hubinsky (hubak) — translator and proofreader to Slovak in Crowdin
 - PiQuark6046 — filter contributor
-- rickyoh — beta tester, active AdGuard Forum member
-- Ronin427 — beta tester, active AdGuard Forum member
-- Sanjay Nand — beta tester, active AdGuard Forum member
-- saturnotaku — beta tester, active AdGuard Forum member
-- steve1209 — beta tester, active AdGuard Forum member
-- streetwolf — beta tester, active AdGuard Forum member
+- rickyoh — beta tester
+- Ronin427 — beta tester
+- Sanjay Nand — beta tester
+- saturnotaku — beta tester
+- steve1209 — beta tester
+- streetwolf — beta tester
 - superlex — helps us with scriptlets, filters, and AdGuard for Safari
-- TayTayTheKiller — beta tester, active AdGuard Forum member
+- TayTayTheKiller — beta tester
 - [TPS](https://github.com/TPS) — bug finder, filter contributor
 - Yuki2718 — actively contributes to AdGuard filters
 - zznosar — active beta tester focused on AdGuard for iOS
@@ -181,4 +181,4 @@ Also a huge thanks and gratitude to all beta testers and other engaged users, wh
 
 We also want to thank the [xda-developers users](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/). Thank you for your helpful feedback!
 
-We always appreciate comments from our users, especially constructive ones. You can always contact us to share your thoughts about AdGuard, request new features, and submit bugs. Join the [AdGuard Forum](http://forum.adguard.com/forumdisplay.php?25-English-Forums), [Subreddit](https://reddit.com/r/adguard), [Xda-developers Forum](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/) or visit our page on [GitHub](https://github.com/AdguardTeam).
+We always appreciate comments from our users, especially constructive ones. You can always contact us to share your thoughts about AdGuard, request new features, and submit bugs. Join the [AdGuard Subreddit](https://reddit.com/r/adguard), [Xda-developers Forum](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/) or visit our page on [GitHub](https://github.com/AdguardTeam).

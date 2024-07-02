@@ -1,5 +1,5 @@
 ---
-title: サイト上問題を報告する方法
+title: How to report websites and apps
 sidebar_position: 3
 ---
 
@@ -10,26 +10,26 @@ sidebar_position: 3
 - 広告を追加するアルゴリズムの変更
 - サードパーティーデベロッパーからのフィルター/拡張機能が追加されている
 - 特定フィルタの作者が、ルールを作成する際にミスをした
-- 広告の再挿入 Find more about this method in our [blog](https://adguard.com/en/blog/ad-reinsertion.html).
+- 広告の再挿入 （この方法の詳細については、 [ブログ記事](https://adguard.com/en/blog/ad-reinsertion.html)をご覧ください。）
 
-ユーザー様が、直面された広告の事例を含めて問題報告用フォームを記入してご報告いただければ大変助かります。 報告方法に関しては、以下のお使いのOSに応じた手順をご利用ください。
+直面された広告の事例を含めて問題報告用フォームを記入してご報告いただると大変助かります。 報告方法に関しては、以下のお使いのOSに応じた手順をご利用ください。
 
 ## ウェブサイトを報告する方法 {#report}
 
 :::note
 
-When you send a complaint via the app or via AdGuard Browser Assistant, all information is pre-filled automatically. お手数ですが、スクリーンショットだけはご自身で作成し添付してください。 なお、[報告フォームの直リンク](https://reports.adguard.com/new_issue.html)を使ってご報告される場合は、情報を全部手入力することが必要になります。
+※AdGuardアプリまたはAdGuardブラウザアシスタント経由でご報告を送信しますとと、ほとんどの情報は自動入力されて便利です。 お手数ですが、スクリーンショットだけはご自身で作成し添付してください。 なお、[報告フォームの直リンク](https://reports.adguard.com/new_issue.html)を使ってご報告される場合は、情報を全部手入力することが必要になります。
 
 :::
 
 広告の再挿入やWebサイトの誤表示などを報告する方法:
 
-### AdGuardブラウザ拡張機能の場合 {#extension}
+### AdGuard ブラウザ拡張機能の場合 {#extension}
 
 - ブラウザで🛡アイコンをクリックして、AdGuardブラウザ拡張機能を開く
-- 「**問題・不具合を報告する**」をクリック
+- 「**問題・不具合を報告する**」をクリックする
 
-![ブラウザ拡張機能 *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/report-website-ja-1.png)
+![extension_issue *mobile_border](https://cdn.adtidy.org/blog/new/5si74extension.png)
 
 - フォームを入力した後、 [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues)において問題に対する「issue」が自動的に作成されます。 そのissueのリンクも表示されますので、ご報告いただいた問題への対応の進捗状況をリンク先issueにて監視することができます。
 
@@ -45,15 +45,15 @@ When you send a complaint via the app or via AdGuard Browser Assistant, all info
 ### AdGuard for Android の場合 {#android}
 
 - AdGuardアプリ内で設定を開く
-- Choose **Support**, then **Send Feedback** → **Missed ad**/**Incorrect blocking**:
+- 「**お客様サポート**」→「**不適切なブロックを報告する**」を選択
 
-![android *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/android.png)
+![android *mobile_border](https://cdn.adtidy.org/blog/new/apicfkandroid-new.jpg)
 
 - フォームを入力した後、 [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues)において問題に対する「issue」が自動的に作成されます。 そのissueのリンクも表示されますので、ご報告いただいた問題への対応の進捗状況をリンク先issueにて監視することができます。
 
 ### AdGuard for Mac の場合 {#mac}
 
-- [AdGuardブラウザアシスタント](/adguard-for-mac/browser-assistant)を開き、 「**不具合・問題を報告する**」を押す
+- Open [AdGuard Browser Assistant](/adguard-for-mac/features/browser-assistant) and hit **Report an issue**:
 
 ![mac *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/report-website-ja-2.png)
 
@@ -65,7 +65,7 @@ When you send a complaint via the app or via AdGuard Browser Assistant, all info
 - AdGuardアプリ内で設定（左下の⚙）を開く
 - 「**お客様サポート**」→「**不適切なブロックを報告する**」を選択
 
-![ios *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/report-website-ja-4.png)
+![ios *mobile_border](https://cdn.adtidy.org/blog/new/fnl9aios.jpeg)
 
 - 問題報告用フォームに残りの必要事項を記入してください（ほとんどの情報は自動入力されます）
 - フォームを入力した後、 [GitHub](https://github.com/AdguardTeam/AdguardFilters/issues)において問題に対する「issue」が自動的に作成されます。 そのissueのリンクも表示されますので、ご報告いただいた問題への対応の進捗状況をリンク先issueにて監視することができます。
@@ -74,76 +74,76 @@ When you send a complaint via the app or via AdGuard Browser Assistant, all info
 
 :::note
 
-When you send a complaint via the app or via AdGuard Assistant, all information is pre-filled automatically. お手数ですが、スクリーンショットだけはご自身で作成し添付してください。 なお、[報告フォームの直リンク](https://reports.adguard.com/new_issue.html)を使ってご報告される場合は、情報を全部手入力することが必要になります。
+※AdGuardアプリまたはAdGuardアシスタント経由で問題報告を送信しますとと、ほとんどの情報が自動入力されて便利です。 お手数ですが、スクリーンショットだけはご自身で作成し添付してください。 なお、[報告フォームの直リンク](https://reports.adguard.com/new_issue.html)を使ってご報告される場合は、情報を全部手入力することが必要になります。
 
 :::
 
-1. Filling in the form starts with detailing the type and version of a product;
+1. 最初に、お使いの製品とそのバージョンを記入してください。
 
-    ![forma1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma1en.png)
+    ![フォーム① *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/report-form-ja-1.png)
 
-2. Specify the type of problem and additional information on using third-party software (antivirus, VPN);
+2. 問題の種類とサードパーティ製ソフトウェア（アンチウイルス、セキュリティソフト、VPNなど）の使用に関する情報を追加してください。
 
-    ![forma2 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma2en.png)
+    ![フォーム② *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/report-form-ja-2.png)
 
-3. Enter the address of the page and the browser (or the download link in case of an app) where you've encountered a problem;
+3. 問題が発生したページのURLとブラウザ（アプリの場合はそのアプリのダウンロードリンク）を入力してください。
 
-    ![forma3 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma3en.png)
+    ![フォーム③ *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/report-form-ja-3.png)
 
-4. Application configuration must be specified:
+4. アプリの設定状況を指定してください:
 
-    - 使用中のフィルター
-    - Stealth mode settings, if this function is enabled.
+    - 使用中のフィルタ
+    - DNSフィルタリング、ステルスモードなどという機能が有効の場合は、その設定
 
-    ![forma4 *border](https://cdn.adtidy.org/content/kb/ad_blocker/guides/forma4en.png)
+    ![フォーム④ *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/report-form-ja-4.png)
 
-5. [Provide a screenshot](../take-screenshot) that captures the essence of a problem;
+5. 問題がわかるような[スクリーンショットを添付](../take-screenshot)してください。
 
-    - **Important**: Hide your personal information (email, phone number, etc.) because screenshots will become publicly available.
+    - **※スクリーンショットは公開されるため、個人情報（メールアドレス、電話番号など）は、モザイク（ぼかし）などをかけて見えないようにしてください**。
 
-    ![forma5 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma5en.png)
+    ![フォーム⑤ *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma5en.png)
 
-6. Provide additional information that will help filter developers understand the situation;
+6. フィルタ開発者が状況を理解するのに役立つ追加情報を提供してください。
 
-    Also enter your account on **GitHub**, if available (it's necessary for developers to be able to reach you in case they need some additional details);
+    また、**GitHubのアカウント**をお持ちであれば、よかったらご記載ください（AdGuardのエンジニアが追加情報を必要とする場合に連絡できるようにするためです）。
 
-    ![forma6 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma6en.png)
+    ![フォーム⑥ *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/report-form-ja-6.png)
 
-7. Check each step before sending the form;
+7. ご報告の内容を確認して、フォームを送信してください。
 
-    ![forma7 *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma7en.png)
+    ![フォーム⑦ *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/report-form-ja-7.png)
 
-8. You'll be provided with a link to track progress on your task.
+8. 報告送信完了画面では、問題への対応の進捗状況を確認できるGitHub上issueのリンクが表示されます。
 
-    ![forma8 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/forma8en.png)
+    ![フォーム⑧ *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/report-form-ja-8.png)
 
 ## 問題の診断方法 {#issue}
 
-This option is suitable for those who aren’t afraid of difficulties and don’t mind trying to find the problem on their own. This does not require any special skills or in-depth knowledge of HTML and CSS.
+この方法は、困難を恐れず、自分で問題を見つけようとすることに抵抗がない人向けです。 HTMLやCSSに関する特別なスキルや深い知識は必要ありません。
 
-For example, you are faced with a situation that your favorite website won’t open, authorization has broken, or some page elements are displayed incorrectly. The cause may be using a specific filter/extension/Stealth Mode setting. To diagnose these problems, you need to do the following:
+例えば、お気に入りのWebサイトが開かない、認証が壊れている、一部のページ要素が正しく表示されないといった状況に直面したとします。 特定のフィルタ・拡張機能・ステルスモードの設定などを使用していることが原因である可能性があります。 これらの問題を診断する方法は、以下の通りです。
 
 ### **フィルタ**
 
-1. Disable **Ad Blocker**;
-2. If it solved the problem, re-enable the module and disable filters one by one. This is done to identify filters that "break" the page;
-3. If you have managed to find out which filter "breaks" a page, you should inform the developers when filling out the form (see above). In this case, it is desirable to return to the initial settings;
-4. If turning off all the filters hasn't produced any results, apply rule **@@||example.com^$document,extension**; where **example.com** is an example site name that needs to be replaced by your own option;
-5. In case of failure (issue not solved), turn to section **Stealth Mode**.
+1. **広告ブロッカー**をオフにする
+2. 問題がなくなった場合は、広告ブロッカーを再び有効にし、フィルタを1つずつ無効にしてください。 この方法で、ページを「壊している」フィルタを特定することができます。
+3. どのフィルタがページを「壊している」のかがわかったら、問題報告用フォーム（上記参照）に記入する際に、それを開発者に知らせてください。 この場合、初期設定に戻すことが望ましいです。
+4. すべてのフィルタをオフにしても結果が出ない場合は、 **@@||example.com^$document,extension**というルールを適用してください （「**example.com**」は、問題を見つけたサイトに置き換えてください）。
+5. それでも問題がなくならない場合は、以下の「**ステルスモード**」という項目を参照してください。
 
 ### **ステルスモード**
 
-1. Disable **Stealth Mode**;
-2. If this solved the problem, turn the module on and turn off the **Stealth Mode** options one by one. This is done to detect which filters are "breaking" the page;
-3. If you have managed to to detect which setting "breaks" a page, you should inform the developers when filling out the form (see above). In this case, it is desirable to return to the initial settings;
-4. In case of failure (issue not solved), turn to section **Extensions**.
+1. AdGuardアプリで**ステルスモード**をオフにする
+2. これで問題が解決した場合は、**ステルスモード**をオンにして、その設定項目を1つずつオフにしながら、問題が再現するかを確認してください。 この方法で、ページを「壊している」設定項目を特定することができます。
+3. どの設定がページを「壊している」のかがわかったら、問題報告用フォーム（上記参照）に記入する際に、それを開発者に知らせてください。 この場合、初期設定に戻すことが望ましいです。
+4. 問題がなくならない場合は、以下の「**拡張機能**」の項を参照してください。
 
 ### **拡張機能**
 
-1. Disable **Extensions**;
-2. If this solved the problem, turn on the module and turn off **Extensions** settings one by one. This is done to find out which setting "breaks" the page;
-3. If you have managed to detect which setting "breaks" a page, inform the developers when filling out the form (see above). In this case, it is desirable to return to the initial settings.
+1. AdGuardアプリ内で「**拡張機能**」をオフにする
+2. これで問題が再現しなくなった場合は、**拡張機能**をオンにして、その設定項目を1つずつオフにしながら、問題が再現するかを確認してください。 この方法で、ページを「壊している」設定を特定することができます。
+3. どの設定がページを「壊している」のかがわかったら、問題報告用フォーム（上記参照）に記入する際に、それを開発者に知らせてください。 この場合、初期設定に戻すことが望ましいです。
 
-### **サードパーティブロッカー**
+### **サードパーティ（他社製）ブロッカー**
 
-Some browsers and antivirus programs (such as Yandex Browser, Kaspersky, etc.) have built-in ad blockers. They may affect and cause problems in the operation of sites. If you use such programs, make sure that the problem is on the side of **AdGuard**: disable **AdGuard** filtering and try to repeat the problem. If it remains, it means that the problem is caused by another application or browser. If the problem is caused by **AdGuard**, follow the steps described in the previous paragraphs.
+一部のブラウザやウイルス対策ソフト（Brave、Kasperskyなど）には広告ブロック機能が組み込まれています。 そのような機能は、サイトの動作に影響を与え、問題を引き起こす可能性があります。 このようなプログラムを使用している場合、問題が**AdGuard**側にあることを確認してください。**AdGuard**のフィルタリングを無効にして、問題を再現してみてください。 AdGuardオフでも問題が再現する場合は、他のアプリケーションやブラウザが原因であることになります。 **AdGuard**が原因の場合は、上記の段落のそれぞれの手順をご利用ください。

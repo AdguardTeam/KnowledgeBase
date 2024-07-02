@@ -3,9 +3,9 @@ title: Advanced Settings guide
 sidebar_position: 9
 ---
 
-:::info
+:::정보
 
-이 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Mac용 AdGuard에 대해 다룹니다. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -157,15 +157,19 @@ Removes the Encrypted Client Hello parameters from responses.
 
 `stealth.antidpi.http.split.fragment.size`
 
-Adjusts the size of the HTTP request fragmentation. Accepted values: 1–1500. If an invalid size is specified, the system will use the default value.
+Adjusts the size of the HTTP request fragmentation. Valid values: 1–1500. If an invalid size is specified, the system will use the default value.
 
 `stealth.antidpi.clienthello.split.fragment.size`
 
-This option specifies the size of TCP packet fragmentation, which helps avoid deep packet inspection. Accepted values: 1–1500. If an invalid size is specified, the system will use the default value.
+This option specifies the size of TCP packet fragmentation, which helps avoid deep packet inspection. Valid values: 1–1500. If an invalid size is specified, the system will use the default value.
 
 `stealth.antidpi.http.space.juggling`
 
 Adds extra space between the HTTP method and the URL and removes space after the "Host:" field.
+
+`stealth.antidpi.split.delay.millisecond`
+
+Here you can specify the delay, in milliseconds, after sending the first fragment, if fragmentation is performed.
 
 `subscription.link.interception.userscript`
 

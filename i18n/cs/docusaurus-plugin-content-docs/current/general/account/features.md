@@ -31,7 +31,7 @@ Zařízení svázaná s licencemi blokátoru reklam AdGuard lze zrušit nebo př
 
 ## Zobrazení nákupů
 
-V části Historie nákupů se zobrazují všechny licence, které jste kdy zakoupili pomocí e-mailového účtu, pod kterým jste účet AdGuard zaregistrovali. Najdete zde také informace o datu nákupu, čísle objednávky, způsobu platby a ceně nákupu.
+V části Historie nákupů se zobrazují všechny licence, které jste kdy zakoupili pomocí e-mailového účtu, pod kterým jste účet AdGuard zaregistrovali. Najdete zde také informace o datu nákupu, ID objednávky, způsobu platby a ceně nákupu.
 
 ## Kontaktování podpory
 

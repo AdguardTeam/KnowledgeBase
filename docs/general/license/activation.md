@@ -3,8 +3,6 @@ title: How to activate
 sidebar_position: 3
 ---
 
-## How to activate a license
-
 To activate your license, go to the *License* section of your AdGuard product and find the *Log in* field or *Activate* button. Use the email and password of your AdGuard account to log in. If you don't have an account yet, you will be offered to create one.
 
 :::note
@@ -64,10 +62,6 @@ Alternatively, you can use a [license key](../what-is#license-key) to activate t
 1. Activate your license using your preferred method. If the license is bound to your email address, tap *Continue with email* or select a social network associated with this email address. Alternatively, enter your license key.
 
     ![Activating a license *mobile_border](https://cdn.adtidy.org/blog/new/sbxttactivate-license.png)
-
-    Alternatively, you can tap *I have a license* on the following screen and activate your license with one of the above-mentioned methods.
-
-    ![I have a license *mobile](https://cdn.adtidy.org/blog/new/fq28vi-have-a-license.png)
 
 ### Activating AdGuard for iOS
 

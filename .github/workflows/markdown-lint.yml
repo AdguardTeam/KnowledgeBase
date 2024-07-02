@@ -1,7 +1,11 @@
 name: Lint Markdown
 
 on:
-  push
+  push:
+    branches:
+      - "*"
+  pull_request:
+    types: [opened, reopened, synchronize]
 
 jobs:
   build:

@@ -13,7 +13,7 @@ Para crear una cuenta, ve al [sitio web oficial de AdGuard](https://adguard.com/
 
 :::consejo
 
-Si ingresas tu dirección de correo electrónico al comprar una licencia o recibes una licencia con tu dirección de correo electrónico como regalo, se creará una cuenta automáticamente. Para establecer una contraseña, puedes seguir el enlace en el correo de transacción o de regalo. También puedes registrarte con el método anterior.
+If you enter your email address when purchasing a license, or receive a license linked to your email address as a gift, an account will be created automatically. Para establecer una contraseña, puedes seguir el enlace en el correo de transacción o de regalo. También puedes registrarte con el método anterior.
 
 :::
 

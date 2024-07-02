@@ -7,21 +7,17 @@ sidebar_position: 1
 
 ## 如何成为 Beta 版测试者 {#intro}
 
-我们对 Beta 测试者的要求很简单：使用 AdGuard，随时升级到 Beta 测试版，并报告您发现的错误。 然而，Beta 测试者将需要一个 [GitHub](https://github.com/) 或/和一个 [论坛 ](https://forum.adguard.com/index.php)的账号来成为 AdGuard 软件的测试者，所以请您首先注册账号。
+我们对 Beta 测试者的要求很简单：使用 AdGuard，随时升级到 Beta 测试版，并报告您发现的错误。 However, you will need a [GitHub](https://github.com/) account to become our beta tester, so you may want to get that out of the way first.
 
-无论如何，您需要了解的所有资料都集中在一个[专用页面](https://adguard.com/en/beta.html)上。
+In any case, every single thing you need to know is gathered on a [dedicated page](https://adguard.com/beta.html).
 
 如果您想跳过描述部分，直接进入行动阶段，您可以[在这里](https://surveys.adguard.com/beta_testing_program/form.html)申请。 你的申请将在1-3个工作日内得到审查，我们将电子邮件回复。
 
 ## 如何报告错误 {#report-a-bug}
 
-如果您发现了一个程序错误或想分享您的反馈意见，请通过以下几种方式让我们知道：
+If you spotted a bug or just want to share your suggestion, let us know: go to [GitHub](https://github.com/AdguardTeam/), find a suitable repository, create a new issue there, and describe the bug/feature request in detail.
 
-- 转到 [forum.adguard.com](https://forum.adguard.com/index.php) 并在论坛的[「Beta Testing」](https://forum.adguard.com/index.php?categories/48/)中发布一个新主题（或查找现有的主题）。 请阅读[论坛规则](https://forum.adguard.com/index.php?threads/14859/)；
-
-- 转到 [GitHub](https://github.com/AdguardTeam/) ，找到相应的存储库。 在那里创建一个新问题，并详细描述该错误/功能请求。
-
-上述两个方法是最优选的，但如果需要，您可以使用其他方法：
+The above method is the most preferred, but you can use others if necessary:
 
 - 在各种社交媒体平台上找到我们，例如 [Facebook](https://www.facebook.com/AdguardEn/)、[Reddit](https://www.reddit.com/r/Adguard/) 等等。 然而，这并不是讨论技术问题的最有效方式。
 
@@ -33,6 +29,6 @@ sidebar_position: 1
 
 ### 还有什么？
 
-基本上，我们没有什么要补充的。 您不要勉强自己去找错误。 像往常一样，您可以继续享受 AdGuard 使用体验。 然而，如果您遇到一个错误，请向我们发送报告。 当然，我们感谢您的额外努力、论坛上的积极行为等等。
+基本上，我们没有什么要补充的。 您不要勉强自己去找错误。 像往常一样，您可以继续享受 AdGuard 使用体验。 然而，如果您遇到一个错误，请向我们发送报告。 Of course, we appreciate any additional effort.
 
 有时，您会收到我们的新闻简报，让您了解测试版的最新改进（以防您错过）和其他重要消息。 您可以随时取消订阅。

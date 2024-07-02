@@ -4,7 +4,7 @@
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.General": {
-    "message": "General",
+    "message": "보통",
     "description": "The label for category General in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Ad filtering": {
@@ -12,7 +12,7 @@
     "description": "The label for category Ad filtering in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.HTTPS filtering": {
-    "message": "HTTPS filtering",
+    "message": "HTTPS 필터링",
     "description": "The label for category HTTPS filtering in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.AdGuard account": {
@@ -20,7 +20,7 @@
     "description": "The label for category AdGuard account in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.License": {
-    "message": "License",
+    "message": "라이선스",
     "description": "The label for category License in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.AdGuard for Windows": {
@@ -48,7 +48,7 @@
     "description": "The label for category AdGuard Browser extension in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.AdGuard for Safari": {
-    "message": "AdGuard for Safari",
+    "message": "Safari용 AdGuard",
     "description": "The label for category AdGuard for Safari in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.AdGuard Content Blocker": {
@@ -78,5 +78,25 @@
   "sidebar.tutorialSidebar.category.AdGuard Browser Extension": {
     "message": "AdGuard 확장 프로그램",
     "description": "The label for category AdGuard Browser Extension in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Features overview": {
+    "message": "기능 개요",
+    "description": "The label for category Features overview in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Features": {
+    "message": "Features",
+    "description": "The label for category Features in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Content Blockers": {
+    "message": "Content Blockers",
+    "description": "The label for category Content Blockers in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Protection": {
+    "message": "Protection",
+    "description": "The label for category Protection in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Firewall": {
+    "message": "방화벽",
+    "description": "The label for category Firewall in sidebar tutorialSidebar"
   }
 }

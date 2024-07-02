@@ -1,6 +1,6 @@
 ---
 title: Visão geral dos recursos
-sidebar_position: 1
+sidebar_position: 10
 ---
 
 :::info
@@ -9,7 +9,7 @@ Este artigo é sobre a extensão de navegador AdGuard, que protege apenas o seu 
 
 :::
 
-AdGuard oferece uma variedade de produtos de software que bloqueiam anúncios e rastreadores em diferentes plataformas. Um dos produtos AdGuard mais procurados é uma extensão gratuita que funciona em cinco navegadores populares: Chrome, Firefox, Edge, Opera e Yandex Browser. As extensões do navegador incluem recursos básicos de bloqueio de anúncios, mas não podem ser comparadas com programas de computador completos, como o [AdGuard para Windows](/adguard-for-windows/overview) e o [AdGuard para Mac](/adguard-for-mac/overview).
+AdGuard oferece uma variedade de produtos de software que bloqueiam anúncios e rastreadores em diferentes plataformas. Um dos produtos AdGuard mais procurados é uma extensão gratuita que funciona em cinco navegadores populares: Chrome, Firefox, Edge, Opera e Yandex Browser. Browser extensions include basic ad-blocking features but cannot be compared with full-featured desktop programs, such as [AdGuard for Windows](/adguard-for-windows/features/home-screen) and [AdGuard for Mac](/adguard-for-mac/features/main).
 
 ![Extensão de navegador AdGuard para Chrome *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
 
@@ -21,7 +21,7 @@ A [extensão de navegador AdGuard](https://adguard.com/adguard-browser-extension
 
 :::note
 
-Temos uma extensão independente para Safari. Desde o lançamento do [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html), a maioria das extensões de bloqueio de anúncios enfrentaram grandes problemas e muitas delas pararam de funcionar. Tivemos que desenvolver uma extensão [para o Safari](/adguard-for-safari/overview) que apresenta algumas diferenças em comparação com a extensão descrita neste artigo.
+Temos uma extensão independente para Safari. Desde o lançamento do [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html), a maioria das extensões de bloqueio de anúncios enfrentaram grandes problemas e muitas delas pararam de funcionar. We had to develop a [separate extension for Safari](/adguard-for-safari/features/general) that has some differences in comparison with the extension described in this article.
 
 :::
 

@@ -5,7 +5,7 @@ sidebar_position: 3
 
 :::info
 
-This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -17,7 +17,7 @@ There are a lot of tasker apps out there, for example [Tasker](https://play.goog
 
 ![Automation *mobile_border](https://cdn.adtidy.org/blog/new/mmwmfautomation.jpg)
 
-Thanks to this interface, any app can send a special message (called "intent") that contains the name of the action and some additional data, if needed. AdGuard will look at this intent and perform the required actions.
+Thanks to this interface, any app can send a special message (called “intent”) that contains the name of the action and some additional data, if needed. AdGuard will look at this intent and perform the required actions.
 
 ### Security concerns
 
@@ -40,6 +40,16 @@ Here are actions that, when included in the intent, will be understood by AdGuar
 `dns_filtering` turns DNS filtering on and off. Requires an extra flag:
 
 `enable:true` or `enable:false` enables or disables DNS filtering, accordingly.
+
+`fake_dns` allows resolving DNS requests on the specified proxy server. This requires an extra flag:
+
+`enable:true` or `enable:false` enables or disables the *Use FakeDNS* setting, respectively.
+
+:::note
+
+When the *Use FakeDNS* setting is enabled, *DNS Protection*  will be automatically disabled. DNS requests won't be filtered locally.
+
+:::
 
 -----
 
@@ -83,7 +93,7 @@ Or you can configure server parameters manually:
 
 `server:[name]` where `[name]` is the name of the outbound proxy from the list.
 
-Or you  can configure remove parameters manually:
+Or you can configure remove parameters manually:
 
 `server:[type=…&host=…&port=…&username=…&password=…&udp=…&trust=…]`.
 

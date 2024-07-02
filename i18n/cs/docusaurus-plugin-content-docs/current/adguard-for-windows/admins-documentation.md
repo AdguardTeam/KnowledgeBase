@@ -7,7 +7,9 @@ Tato stránka popisuje funkce a podrobnosti centrální správy zásad a předvo
 
 ## 1. Stažení MSI {#msi-download}
 
-Stáhněte si [AdGuard MSI](https://static.adtidy.org/windows/setup.msi).
+Stáhněte [AdGuard MSI x86](https://cdn.adtidy.org/distr/windows/AdGuard_x86.msi)
+
+Stáhněte [AdGuard MSI x64](https://cdn.adtidy.org/distr/windows/AdGuard_x64.msi)
 
 ## 2. Konfigurace nastavení pro vaši síť {#settings-configuring}
 
@@ -35,11 +37,17 @@ Tyto příkazy musíte spouštět s právy administrátora.
 
 Pokud chcete nainstalovat AdGuard do počítače se systémem Windows 7 ujistěte se, že je v něm nainstalován profil Client .NET 4: https://www.microsoft.com/en-us/download/details.aspx?id=24872
 
-:::info
-
-Při instalaci AdGuardu pro Windows z MSI jsou automatické aktualizace zakázány. Pokud chcete povolit aktualizace pro uživatele (což se nedoporučuje, protože centralizované aktualizace nebudou možné), nastavte hodnotu parametru `AllowCheckUpdates` pro klíč `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` na `ANO` (nerozlišuje se velikost písmen). V tomto případě budou automatické aktualizace povoleny. Jakákoli jiná hodnota nebo žádná hodnota tohoto parametru automatické aktualizace zakáže.
-
 :::note
+
+Pokud jste nainstalovali AdGuard pro Windows ze souboru MSI, nebude AdGuard automaticky aktualizován. Povolení ručních aktualizací:
+
+- Ve verzích vydaných po v7.16 smažte parametr `ForbidCheckUpdates` nebo nastavte jeho hodnotu na `NO` (nerozlišuje velká a malá písmena) v registru pod `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard`.
+
+- Ve verzi 7.16 a starších verzích nastavte parametr `AllowCheckUpdates` pro klíč `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard` v OS x86 na hodnotu `YES` (nerozlišuje velká a malá písmena) nebo `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` v OS x64. Jakákoli jiná hodnota nebo žádná hodnota tohoto parametru zakáže automatické aktualizace.
+
+Upozorňujeme, že taková instalace aplikace a ruční aktualizace se nedoporučuje a může způsobit technické problémy.
+
+:::
 
 ## 5. Test instalace {#installation-test}
 

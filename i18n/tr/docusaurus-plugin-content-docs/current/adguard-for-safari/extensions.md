@@ -17,15 +17,17 @@ Safari uzantıları, Safari web tarayıcısına işlevsellik ekleyen küçük ya
 
 AdGuard, sitelerdeki reklamları, izleyicileri ve can sıkıcı öğeleri engellemek için filtreleme kuralları kullanır. AdGuard'ın ve sizin özel filtrelerinizin kuralları, Safari tarafından anlaşılır olanlara dönüştürülür ve 6 Safari uzantısına entegre edilir:
 
-– AdGuard Genel – AdGuard Gizlilik – AdGuard Sosyal – AdGuard Güvenlik – AdGuard Diğer
+- AdGuard Genel
+- AdGuard Gizlilik
+- AdGuard Sosyal
+- AdGuard Güvenlik
+- AdGuard Diğerleri
 
 Her içerik engelleme uzantısı, 150.000 adede kadar etkin filtreleme kuralı içerebilir. Çoğu filtre grubundaki kural sayısı 150.000'i geçmez. Ancak çok fazla dile özgü veya özel filtre etkinleştirirseniz sınırı aşabilirsiniz. Bu gibi durumlarda, sınırı aşan rastgele kurallar otomatik olarak devre dışı bırakılır ve bu da yanlış engellemeye yol açabilir. **Yalnızca ihtiyacınız olan filtreleri etkinleştirmenizi önemle tavsiye ederiz**.
 
-Diğer özelliklerden sorumlu iki uzantı da vardır:
+Ayrıca diğer özelliklerden sorumlu bir uzantı daha var: *Safari için AdGuard*, Safari'deki arama çubuğunun yanına AdGuard simgesini ekler ve karmaşık reklamları engellemek için gelişmiş kuralların kullanılmasına izin verir.
 
-– *AdGuard Safari Simgesi*, Safari'deki arama çubuğunun yanında AdGuard'ın simgesini etkinleştirir – *AdGuard Gelişmiş Engelleme*, karmaşık reklamları engellemek için gelişmiş kuralların kullanılmasını sağlar
-
-![Safari uzantıları](https://uploads.adguard.org/safari_extensions.png)
+![Safari uzantıları](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-icon1.png)
 
 Her bir uzantı hakkında daha fazla bilgi aşağıdadır.
 
@@ -45,22 +47,21 @@ Her bir uzantı hakkında daha fazla bilgi aşağıdadır.
 
 Kullanıcı kuralları ve izin listesi kuralları her uzantıya dahildir.
 
-## Diğer uzantılar
+## Safari için AdGuard
 
-*AdGuard Safari Simgesi* arama çubuğunun yanındaki AdGuard simgesini etkinleştirir. Belirli bir sitede hızlı bir şekilde koruma ayarlamak veya reklamları elle engellemek istiyorsanız kullanışlıdır.
-
-*AdGuard Gelişmiş engelleme*, Safari tarafından desteklenen biçime dönüştürülmeyen gelişmiş kurallar içerir. Buna, AdGuard'ın örneğin YouTube'daki karmaşık reklamları engellemesine olanak tanıyan CSS kuralları, CSS seçiciler ve komut dosyaları dahildir.
+*Safari için AdGuard* arama çubuğunun yanındaki AdGuard simgesini etkinleştirir. Belirli bir sitede hızlı bir şekilde koruma ayarlamak veya reklamları elle engellemek istiyorsanız kullanışlıdır. Ayrıca Safari tarafından desteklenen biçime dönüştürülmeyen gelişmiş kurallar da içerir. Buna, AdGuard'ın örneğin YouTube'daki karmaşık reklamları engellemesine olanak tanıyan CSS kuralları, CSS seçiciler ve komut dosyaları dahildir.
 
 ## Safari uzantıları nasıl yönetilir
 
-1. Safari'yi açın ve menüyü genişletmek için ekranın sol üst köşesindeki *Safari* öğesine tıklayın. ![Safari ayarları *mobile](https://cdn.adtidy.org/blog/new/sxaqgfsafari_settings.png)
-1. *Tercihler...* öğesine tıklayın
-1. *Uzantılar* öğesini seçin. ![Uzantılar sekmesi](https://cdn.adtidy.org/blog/new/ocofdextensions_tab.png)
+1. Safari'yi açın ve menüyü genişletmek için ekranın sol üst köşesindeki *Safari* öğesine tıklayın. ![Safari ayarları *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-settings1.png)
+1. *Ayarlar...* öğesine tıklayın
+1. *Uzantılar* öğesini seçin. ![Uzantılar sekmesi](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-extensions1.png)
 
-## Neden bazı uzantılar izin gerektiriyor
+## Safari için AdGuard neden izin gerektiriyor
 
-Bazı Safari uzantılarını etkinleştirirken, **web sayfası içeriğine erişim** ve **tarama geçmişine erişim** istediklerini fark edebilirsiniz. İşte Safari için AdGuard'ın bunlara neden ihtiyacı var:
+When enabling the *AdGuard for Safari* extension, you might notice that it requires **access to web page content** and **access to browsing history**. İşte bu izinlere neden ihtiyaç duyar:
 
-– Elle reklam engelleme ve gelişmiş engelleme kurallarının doğru çalışması için web sayfası içeriğine erişim gereklidir – Sitelerdeki koruma durumunu kontrol etmek ve hangi gelişmiş kuralların uygulanması gerektiğini belirlemek için tarama geçmişine erişim gereklidir
+- Elle reklam engelleme ve gelişmiş engelleme kurallarının düzgün çalışması için web sayfası içeriğine erişim gereklidir
+- Sitelerdeki koruma durumunu kontrol etmek ve hangi gelişmiş kuralların uygulanması gerektiğini belirlemek için tarama geçmişine erişim gereklidir
 
 Bu verileri başka hiçbir amaçla kullanmıyoruz veya kimseyle paylaşmıyoruz. Daha fazla bilgi için [Gizlilik politikamıza](https://adguard.com/privacy.html) bakabilirsiniz.

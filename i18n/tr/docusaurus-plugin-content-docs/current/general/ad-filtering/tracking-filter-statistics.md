@@ -36,7 +36,7 @@ Bilgisayarınız yeterince güçlüyse, bu sizi gerçekten etkilemez. Ancak dü�
 
 Toplanan istatistikler, analiz ve filtre iyileştirmesi için periyodik olarak sunucumuza gönderilecektir.
 
-Aldığımız tüm istatistiklerin ortalamasının alındığını ve anonimleştirildiğini unutmamak önemlidir. Bu istatistikleri filtreleri iyileştirmek dışında herhangi bir amaçla kullanmıyoruz ve bu verileri üçüncü taraflara satmıyoruz. Gizlilik Politikamızı [buradan](https://adguard.com/privacy.html) okuyabilirsiniz.
+Aldığımız tüm istatistiklerin ortalamasının alındığını ve anonimleştirildiğini unutmamak önemlidir. Bu istatistikleri filtreleri iyileştirmek dışında herhangi bir amaçla kullanmıyoruz ve bu verileri üçüncü taraflara satmıyoruz. You can read about it in our [Privacy policy](https://adguard.com/privacy.html).
 
 ### What does tracking filter rules statistics fraught with?
 

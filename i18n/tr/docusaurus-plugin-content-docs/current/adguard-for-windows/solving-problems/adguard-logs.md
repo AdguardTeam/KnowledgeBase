@@ -11,6 +11,10 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 Ortaya çıkabilecek farklı sorunları analiz etmek ve teşhis etmek için AdGuard destek hizmetinin AdGuard günlük dosyalarına ihtiyacı olabilir. Bu dosyalar, yazılımda meydana gelen hatalar ve diğer olaylarla ilgili kayıtları içerir. Below is the brief instruction describing the way to get the log files and send them to the support service if necessary.
 
+> AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/en/privacy/windows.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+
+### Hata ayıklama günlükleri {#debug-logs}
+
 1. AdGuard ayarlarını açın. *Genel Ayarlar* bölümüne gidin, ekranın sonuna kadar aşağı kaydırın ve *Günlük kayıt düzeyi* öğesini *Hata ayıklama* olarak değiştirin.
 
     ![Hata ayıklama günlük kayıt düzeyi *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
@@ -43,7 +47,9 @@ Sometimes support team members may ask you to send *trace* logs. Daha sonra aşa
 
 1. Konsolu açın (başlat paneline `cmd` yazın).
 
-1. Uygulamayı, 64 bit Windows kullanıyorsanız `C:\"Program Files (x86)"\Adguard\Adguard.exe /trace` ve 32 bit Windows kullanıyorsanız `C:\"Program Files"\Adguard\Adguard.exe /trace` komutuyla çalıştırın.
+1. Windows için AdGuard v7.16 veya sonraki bir sürümünü kurduysanız, uygulamayı `C:\"Program Files"\Adguard\Adguard.exe /trace` komutuyla Windows bitliğine bakmaksızın çalıştırın.
+
+Windows için AdGuard'ın eski bir sürümüne sahipseniz, 64 bit Windows kullanıyorsanız uygulamayı C:\"Program Files (x86)"\Adguard\Adguard.exe /trace ve 32 bit kullanıyorsanız C:\"Program Files"\Adguard\Adguard.exe /trace komutuyla çalıştırın.
 
 1. Sorunu yeniden oluşturun.
 

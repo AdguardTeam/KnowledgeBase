@@ -17,17 +17,17 @@ Pro práci s filtry používáme protokol [Safe Browsing API verze 2.2](https://
 
 Následující obrázek poskytuje obecnou představu o tom, jak modul Bezpečné prohlížení funguje. Jako příklad uvádíme AdGuard pro Windows.
 
-![Functioning algorithm of Browsing Security module](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_adguard_for_windows.png)
+![Functioning algorithm of Browsing security module](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_adguard_for_windows.png)
 
 ### Rozšíření prohlížeče AdGuard
 
-Rozšíření prohlížeče pracují jinak a ke kontrole navštívených stránek používají takzvané rozhraní [*Lookup API*](https://github.com/AdguardTeam/AdguardForAndroid/issues/162#issue-115487668). Při každé návštěvě jakékoli webové stránky si místní klient vyměňuje informace s naším koncovým serverem ve formě hashů a prefixů hash. Pro ty, kteří se o tento proces zajímají hlouběji, bude užitečný výše uvedený odkaz. Na základě této výměny místní klient určí, zda webová stránka patří do databáze potenciálně nebezpečných webových stránek, nebo ne.
+Rozšíření prohlížeče pracují jinak a ke kontrole navštívených stránek používají takzvané rozhraní [*Lookup API*](https://github.com/AdguardTeam/AdguardForAndroid/issues/162#issue-115487668). Při každé návštěvě jakékoli webové stránky si místní klient vyměňuje informace s naším koncovým serverem ve formě hashů a prefixů hash. Na základě této výměny místní klient určí, zda je web zařazen do databáze potenciálně nebezpečných webů. Pro ty, kteří se o tento proces zajímají hlouběji, bude užitečný výše uvedený odkaz.
 
 Upozorňujeme vás, že nikdy nezískáváme žádné informace, které by nám umožnily zjistit, které webové stránky navštěvujete a tyto údaje jakkoli využít.
 
 Přibližný algoritmus fungování modulu Bezpečného prohlížení je znázorněn na obrázku níže.
 
-![Functioning algorithm of Browsing Security module in AdGuard browser extensions.](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_extension.png)
+![Functioning algorithm of Browsing security module in AdGuard browser extensions.](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_extension.png)
 
 ## Filtry AdGuardu
 
@@ -41,24 +41,24 @@ Kromě phishingových stránek tento filtr pokrývá také různé podvodné str
 
 ### Filtr škodlivých stránek
 
-Tento filtr obsahuje odkazy na stránky, které vedou ke spuštění škodlivého kódu. Může iniciovat únik informací, ztrátu dat nebo poškodit zařízení uživatele. Může být autorizovaný (např. při stažení a spuštění spustitelného souboru) nebo neautorizovaný (např. při napadení spywarem).
+Tento filtr obsahuje odkazy na stránky, které mohou spustit škodlivý kód, což může vést k úniku informací, ztrátě dat nebo poškození zařízení uživatele. Spustitelný kód může být autorizovaný (např. při stažení a spuštění spustitelného souboru) nebo neautorizovaný (např. při napadení spywarem).
 
-## Jak doplňujeme naše filtry?
+## Jak můžeme do filtrů přidávat nové adresy?
 
-Naše filtry se neustále plní novými adresami. Vzhledem k tomu, že většina práce je automatizovaná, můžete si být jisti, že nový malware a phishingové adresy se do naší databáze dostanou co nejrychleji.
+Většina práce je automatizovaná, takže si můžete být jisti, že nový malware a phishingové adresy jsou do naší databáze přidávány co nejrychleji.
 
 ### Bezpečné prohlížení Adguard — komunita
 
-Důležitým nástrojem pro udržení nejvyšší úrovně filtrování je *komunita Bezpečného prohlížení Adguardu*. Členem komunity se může stát každý uživatel našich produktů — ať už jde o AdGuard pro Windows nebo naše rozšíření pro prohlížeče — a pomoci nám tak při vytváření AdGuard filtrů.
+Důležitým nástrojem pro udržení nejvyšší úrovně filtrování je *komunita Bezpečného prohlížení AdGuardu*. Členem komunity se může stát každý uživatel našich produktů — ať už jde o AdGuard pro Windows nebo naše rozšíření pro prohlížeče — a pomoci nám tak při vytváření AdGuard filtrů.
 
-Na obrázku níže jsme popsali algoritmus práce komunity pro Bezpečné prohlížení:
+Na obrázku níže vidíte algoritmus práce komunity pro Bezpečné prohlížení:
 
-![The way AdGuard Browsing Security Community works](https://cdn.adtidy.org/public/Adguard/En/Articles/browsing_security_community.png)
+![The way AdGuard Browsing security Community works](https://cdn.adtidy.org/public/Adguard/En/Articles/browsing_security_community.png)
 
 ### Chcete nám pomoci?
 
-Rádi přijmeme jakoukoli pomoc! Pokud nám chcete zaslat stížnost na phishingové nebo malwarové stránky, můžete tak učinit prostřednictvím technické podpory skrze **support@adguard.com** nebo [na našem fóru](http://forum.adguard.com/).
+Rádi přijmeme jakoukoli pomoc! Pokud nám chcete zaslat stížnost na phishingové nebo malwarové stránky, můžete tak učinit prostřednictvím technické podpory skrze **support@adguard.com**.
 
 ### Falešně pozitivní odezvy
 
-Občas se do AdGuard filtrů přidají i jiné než škodlivé webové stránky. Snažíme se procento falešných pozitivních výsledků snížit, ale stále se vyskytují. Pokud se s tímto chováním AdGuardu setkáte, pošlete nám stížnost na falešně pozitivní výsledek. Takové stížnosti můžete podat prostřednictvím naší technické podpory skrze **support@adguard.com** nebo na [našem fóru](http://forum.adguard.com/).
+Občas se do AdGuard filtrů přidají i jiné než škodlivé webové stránky. Snažíme se procento falešných pozitivních výsledků snížit, ale stále se vyskytují. Pokud se s tímto chováním AdGuardu setkáte, pošlete nám stížnost na falešně pozitivní výsledek. Takové stížnosti můžete podat prostřednictvím naší technické podpory skrze **support@adguard.com**.

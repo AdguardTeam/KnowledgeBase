@@ -5,7 +5,7 @@ sidebar_position: 3
 
 :::info
 
-Questo articolo riguarda AdGuard per Android, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -17,7 +17,7 @@ There are a lot of tasker apps out there, for example [Tasker](https://play.goog
 
 ![Automation *mobile_border](https://cdn.adtidy.org/blog/new/mmwmfautomation.jpg)
 
-Thanks to this interface, any app can send a special message (called "intent") that contains the name of the action and some additional data, if needed. AdGuard will look at this intent and perform the required actions.
+Thanks to this interface, any app can send a special message (called “intent”) that contains the name of the action and some additional data, if needed. AdGuard will look at this intent and perform the required actions.
 
 ### Security concerns
 
@@ -83,7 +83,7 @@ Or you can configure server parameters manually:
 
 `server:[name]` where `[name]` is the name of the outbound proxy from the list.
 
-Or you  can configure remove parameters manually:
+Or you can configure remove parameters manually:
 
 `server:[type=…&host=…&port=…&username=…&password=…&udp=…&trust=…]`.
 
@@ -112,14 +112,11 @@ Or you  can configure remove parameters manually:
 
 `setting by name`: server:MyServer
 
- `manually settings`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
-
+`manually settings`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
 
 :::
 
------
-
-**Don't forget to include the password as an extra and mention package name and class! You need to do so for every intent!**
+**Don't forget to include the password as an extra and mention package name and class. You need to do so for every intent.**
 
 Extra: `password:*******`
 

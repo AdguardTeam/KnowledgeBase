@@ -11,7 +11,7 @@ HTTPS(HyperText Transfer Protocol Secure)는 보안을 강화하기 위해 암�
 
 아래의 그림은일반 HTTP 프로토콜과 보안 HTTPS 프로토콜의 차이점을 보여줍니다.
 
-![HTTPS란 무엇인가요](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https.png)
+![HTTPS란 무엇인가요?](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https.png)
 
 ### 보안 인증서란 무엇인가요?
 

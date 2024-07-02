@@ -9,11 +9,11 @@ Tento článek jsme napsali, abychom předešli zmatkům a podrobně vysvětlili
 
 Zpočátku byly k aktivaci produktů AdGuard k dispozici následující typy licencí:
 
-**Standardní** — pro desktopové aplikace AdGuard pro Windows/AdGuard pro Mac
+**Standardní** byla pro desktopové aplikace AdGuard pro Windows a AdGuard pro Mac
 
-**Mobilní** — pro mobilní aplikace AdGuard pro Android/AdGuard pro iOS
+**Mobilní** byla pro mobilní aplikace AdGuard pro Android a AdGuard pro iOS
 
-**Prémiová** — licence, která kombinuje desktopovou + mobilní aplikaci
+**Prémiová** byla licence, která kombinovala desktopovou a mobilní aplikaci
 
 Standardní a Mobilní licence bylo možné zakoupit pro 1 až 9 zařízení.
 
@@ -27,7 +27,7 @@ U všech typů (Standardní, Mobilní, Prémiová) byly možnosti pro roční a 
 
 V říjnu 2019 přešel AdGuard na nový systém licencování: od té doby lze stále zakoupit licence na 1 rok nebo doživotní licence, ale jejich typy se změnily na **Osobní** (až pro 3 zařízení) nebo **Rodinnou** (až pro 9 zařízení).
 
-Ještě jedna změna: **licenční klíče nového typu lze nyní používat na jakémkoli zařízení a v libovolné kombinaci. Osobní licenci lze například nainstalovat na Android, Mac a iOS, stejně jako na dva počítače s Windows, tablet Apple atd.**
+Ještě jedna změna: **licenční klíče nového typu lze nyní používat na jakémkoli zařízení a v libovolné kombinaci. Osobní licenci lze například použít pro Android, Mac a iOS, stejně jako pro dva počítače s Windows, tablet Apple atd.**
 
 ## Co se stalo se zastaralými licencemi?
 

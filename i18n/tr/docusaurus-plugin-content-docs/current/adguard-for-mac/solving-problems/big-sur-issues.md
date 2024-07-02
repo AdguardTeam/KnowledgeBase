@@ -5,7 +5,7 @@ sidebar_position: 4
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Mac için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Mac için AdGuard hakkındadır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -23,7 +23,7 @@ Currently, AdGuard and iCloud Private Relay cannot work at the same time. AdGuar
 
 For a deeper understanding of this problem, read [this article](../icloud-private-relay).
 
-**Recommended solution**
+**Önerilen çözüm**
 
 We recommend using AdGuard together with a more traditional VPN service such as [AdGuard VPN](https://adguard-vpn.com/).
 
@@ -39,9 +39,9 @@ Apple's Mail app now uses a proxy to hide a user's IP address when downloading i
 
 For a deeper understanding of this problem, read [this article](../protect-mail-activity).
 
-**Recommended solution**
+**Önerilen çözüm**
 
-At this point, we recommend using a more traditional VPN service, such as AdGuard VPN, instead of the new Apple's privacy features.
+At this point, we recommend using a more traditional VPN service, such as [AdGuard VPN](https://adguard-vpn.com/), instead of the newer Apple privacy features.
 
 ### Monterey 12, Big Sur 11.6 and later: currently existing problems
 

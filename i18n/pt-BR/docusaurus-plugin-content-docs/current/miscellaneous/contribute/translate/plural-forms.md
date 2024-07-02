@@ -6,17 +6,17 @@ sidebar_position: 4
 
 Existem muitas diferenças entre as línguas do mundo. Uma dessas diferenças é o uso de formas plurais que podem trazer grandes dificuldades na questão da localização.
 
-We strongly recommend you to properly read this article to learn more about plural forms and how they are being used in AdGuard translations.
+Recomendamos fortemente que você leia este artigo com atenção para saber mais sobre as formas plurais e como elas estão sendo usadas nas traduções do AdGuard.
 
 ## O que quer dizer "formas plurais"? {#plurals}
 
 Substantivos em diferentes idiomas podem ter várias formas plurais. Seu uso depende do número de coisas sobre as quais você está falando.
 
-For instance, English words have two word forms when speaking about something in the singular, like *'one star'*, and in the plural — *'two stars'*. It doesn’t matter if you say five, twenty six or even five hundred thirty two stars — the ending 's' will remain the same. Mas algumas línguas podem conter apenas uma ou várias formas plurais.
+Por exemplo, as palavras em inglês têm duas formas quando se fala de algo no singular, como *"one star"* e, no plural, *"two stars"*. Não importa se você disser cinco, vinte e seis ou mesmo quinhentas e trinta e duas estrelas, o final "s" permanecerá o mesmo. Mas algumas línguas podem conter apenas uma ou várias formas plurais.
 
-Em contraste com o inglês, a língua polonesa tem três formas plurais de substantivos. One of them is used when speaking about something in the singular, another form is used in the plural but with numbers ending in 2-4, excluding 12-14, and the third form — for words with other numbers in front of them.
+Em contraste com o inglês, a língua polonesa tem três formas plurais de substantivos. One of them is used when speaking about something in the singular, another form is used in the plural but with numbers ending in 2–4, excluding 12–14, and the third form — for words with other numbers in front of them.
 
-Let’s take a look at this picture. Aqui pode ver os grupos de numerais que determinam a forma de uma palavra quando está em frente a ela.
+Vamos dar uma olhada nesta imagem. Aqui pode ver os grupos de numerais que determinam a forma de uma palavra quando está em frente a ela.
 
 ![Polonês](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
@@ -24,13 +24,13 @@ Vamos traçar um pequeno paralelo entre o inglês e o polonês para melhor compr
 
       A versão em inglês:                                                 Os equivalentes poloneses:
     
-      1. forma - It takes one hour.                                     1. forma - Zajmuje para godzinę.
-      2. forma - It takes two hours.                                    2. forma - Zajmuje para dwie godziny.
-      3. forma - It takes five hours.                                   3. forma - Zajmuje para pięć godzin.
+      1. forma — It takes one hour.                                     1. forma — Zajmuje para godzinę.
+      2. forma — It takes two hours.                                    2. forma — Zajmuje para dwie godziny.
+      3. forma — It takes five hours.                                   3. forma — Zajmuje to pięć godzin.
 
 Agora está claro que o polonês *'godzinę'* (hora) tem três formas diferentes, enquanto a palavra em inglês muda sua forma com determinados números apenas duas vezes.
 
-Com exceção do polonês, existem muitos outros idiomas que têm três formas plurais e mais, como russo, sérvio, eslovaco, tcheco etc. Mas nem todos obedecem à mesma regra. É por isso que é tão importante saber quantas formas plurais seu idioma contém e como você pode aplicá-las.
+Com exceção do polonês, existem muitos outros idiomas que têm três formas plurais e mais, como russo, sérvio, eslovaco, tcheco etc. Mas nem todos obedecem à mesma regra. É por isso que é tão importante saber quantas formas plurais seu idioma contém e como utilizá-las de forma correta.
 
 ## Onde você pode aprender sobre o número de formas plurais? {#where-to-learn}
 
@@ -94,7 +94,7 @@ Por favor, esteja atento ao traduzir essas strings e aprová-las. Se você não 
 
 Este é o tipo mais complicado de strings do AdGuard, usado principalmente no projeto `AdGuard Websites`.
 
-Pay close attention to a vertical bar sign between the sentences and **%count%** placeholders in original phrases — this will help you identify phrases where translations require the use of plural forms.
+Preste muita atenção a um sinal de barra vertical entre as frases e espaços reservados **%count%** nas frases originais, isso ajudará você a identificar frases em que as traduções exigem o uso de formas plurais.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/plurals_site.png)
 
@@ -108,9 +108,9 @@ Voltando ao exemplo, como a língua inglesa inclui apenas duas formas, deve have
 
 `Licença padrão para *%count%* computador | Licença padrão para *%count%* computadores`
 
-where **template 1** is Standard license for *%count%* computer,
+onde o **modelo 1** é a Licença padrão para *%count%* computador,
 
-and **template 2** is Standard license for *%count%* computers
+e o **modelo 2** é a Licença padrão para *%count%* computadores
 
 Outra coisa importante a que você deve prestar atenção são os espaços reservados **%count%** que, como sempre, ocorrem antes das palavras que definem. Em vez de **%count%** aqui aparecerão números diferentes dependendo de quais modelos estão sendo escolhidos.
 
@@ -125,7 +125,7 @@ Por exemplo, quando traduzimos a frase acima mencionada para o eslovaco, que de 
 Neste caso, vemos três modelos que contêm três formas da palavra *"počítač"* (computador) em eslovaco.
 
 *Se ignorarmos uma das formas e usarmos apenas duas predefinições para o eslovaco em vez de três, o sistema não conseguirá aceitar uma predefinição adequada para determinados números* e, como resultado, teremos erros gramaticais nas frases, como em inglês: *Standard license for 5 computer*.
-> **Always use as many forms as there are in your language, even when the word itself has fewer word forms.**
+> **Sempre use tantas formas quantas houver em seu idioma, mesmo quando a própria palavra não precisa de todas elas.**
 
 Por exemplo, a palavra sérvia *'računar'* (computador) tem apenas duas formas. Mas existem 3 formas plurais em sérvio.
 
@@ -147,10 +147,10 @@ E novamente: se você encontrar uma frase original com dois elementos importante
 
 - Consulte a regra do plural do idioma para o qual você traduz;
 
-The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms — two templates in translations; five plural forms — five templates, etc.
+O número de seus modelos deve ser consistente com o número de formas plurais que seu idioma inclui, mesmo nos casos em que algumas palavras tenham menos formas. Duas formas plurais — dois modelos em traduções; cinco formas plurais — cinco modelos, etc.
 
 - Não se esqueça de usar um sinal de barra vertical entre os modelos da forma que é representado nas strings originais;
 
 - Não traduza, preencha ou exclua os placeholders **%count%**.
 
-By following these simple rules you will help AdGuard developers avoid a lot of unnecessary complications during the localization process.
+Ao seguir essas regras simples, você ajudará os desenvolvedores do AdGuard a evitar muitas complicações desnecessárias durante o processo de localização.

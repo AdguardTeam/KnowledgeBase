@@ -1,5 +1,5 @@
 ---
-title: Browsing Security
+title: Browsing security
 sidebar_position: 3
 ---
 
@@ -15,19 +15,19 @@ The scope and methods of checks depend on the product you use. In our browser ex
 
 We use the protocol [Safe Browsing API version 2.2](https://code.google.com/p/google-safe-browsing/wiki/Protocolv2Spec) for our work with filters. This protocol allows us to keep your personal data absolutely safe. Our server knows nothing about the websites that you visit. We use hash prefixes for checks, not the opened URLs.
 
-The figure below provides a general understanding of how the Browsing Security module works, using AdGuard for Windows as an example.
+The figure below provides a general understanding of how the Browsing security module works, using AdGuard for Windows as an example.
 
-![Functioning algorithm of Browsing Security module](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_adguard_for_windows.png)
+![Functioning algorithm of Browsing security module](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_adguard_for_windows.png)
 
-### AdGuard Browser Extension
+### Extension de navigateur AdGuard
 
-Browser extensions work differently, using the so-called [*Lookup API*](https://github.com/AdguardTeam/AdguardForAndroid/issues/162#issue-115487668) to check the pages you visit. Every time you visit any website, your local client exchanges information with our backend server in the form of hashes and hash prefixes. For those interested in the process at a deeper level, the link above will be helpful. As a result of that exchange, the local client determines if the website belongs to the database of potentially dangerous websites or not.
+Browser extensions work differently, using the so-called [*Lookup API*](https://github.com/AdguardTeam/AdguardForAndroid/issues/162#issue-115487668) to check the pages you visit. Every time you visit any website, your local client exchanges information with our backend server in the form of hashes and hash prefixes. Based on this exchange, the local client determines whether or not the site is listed in the potentially dangerous sites database. For those interested in the process at a deeper level, the link above will be helpful.
 
 We bring to your attention that we never get any information that could allow us to determine which websites you visit and use that data in any way.
 
-An approximate algorithm of the functioning of the Browsing Security module is shown in the picture below.
+An approximate algorithm of the functioning of the Browsing security module is shown in the picture below.
 
-![Functioning algorithm of Browsing Security module in AdGuard browser extensions.](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_extension.png)
+![Functioning algorithm of Browsing security module in AdGuard browser extensions.](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_extension.png)
 
 ## AdGuard filters
 
@@ -41,24 +41,24 @@ Apart from phishing sites, this filter also covers different fraudulent sites, i
 
 ### Malicious sites filter
 
-This filter contains links to pages that lead to the execution of malicious code. It can initiate leakage or loss of data or harm the device of a user. It can be authorized (for example, when downloading and running the executable file) or unauthorized (for example, when being attacked with spyware).
+This filter contains links to pages that could execute malicious code, leading to potential leaks, data loss, or damage to a user’s device. Code execution can be authorized (for example, when downloading and running the executable file) or unauthorized (for example, when being attacked with spyware).
 
-## How do we fill up our filters?
+## How do we add new addresses to our filters?
 
-Our filters are constantly filled with new addresses. Since most of the work is automated, you can be sure that new malware and phishing addresses fall into our database as quickly as possible.
+Most of the work is automated, so you can be sure that new malware and phishing addresses are added to our database as quickly as possible.
 
-### AdGuard Browsing Security Community
+### AdGuard Browsing security Community
 
-An important tool for maintaining the highest level of filtering is *AdGuard Browsing Security Community*. Any user of our products — be it AdGuard for Windows or our browser extension — can become a member of the community and help us in the making of AdGuard filters.
+An important tool for maintaining the highest level of filtering is the *AdGuard Browsing security Community*. Any user of our products — be it AdGuard for Windows or our browser extension — can become a member of the community and help us in the making of AdGuard filters.
 
-In the picture below we described an algorithm of Browsing Security Community work:
+In the image below, you can see an algorithm of how Browsing security Community works:
 
-![The way AdGuard Browsing Security Community works](https://cdn.adtidy.org/public/Adguard/En/Articles/browsing_security_community.png)
+![The way AdGuard Browsing security Community works](https://cdn.adtidy.org/public/Adguard/En/Articles/browsing_security_community.png)
 
 ### Want to help?
 
-We will gladly accept any help! If you want to send us a complaint about a phishing or malware site, you can do it via technical support at **support@adguard.com** or [on our forum](http://forum.adguard.com/).
+We will gladly accept any help! If you want to send us a complaint about a phishing or malware site, you can do it via technical support at **support@adguard.com**.
 
 ### False-positive responses
 
-Occasionally, some non-malicious websites get added to AdGuard's filters. We do our best to reduce the percentage of false positives, but they still occur. If you come across this behavior from AdGuard, please send us a complaint about the false-positive alarm. You can submit such complaints via our technical support at **support@adguard.com** or on [our forum](http://forum.adguard.com/).
+Occasionally, some non-malicious websites get added to AdGuard's filters. We do our best to reduce the percentage of false positives, but they still occur. If you come across this behavior from AdGuard, please send us a complaint about the false-positive alarm. You can submit such complaints via our technical support at **support@adguard.com**.

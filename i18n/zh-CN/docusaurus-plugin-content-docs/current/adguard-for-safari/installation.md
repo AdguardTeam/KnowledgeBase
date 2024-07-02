@@ -1,56 +1,76 @@
 ---
-title: Installation
+title: 安装
 sidebar_position: 2
 ---
 
 :::info
 
-这篇文章是关于 Safari 版的 AdGuard，它只能保护用户的 Safari 浏览器。 To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+这篇文章是关于 Safari 版的 AdGuard，用于保护用户的 Safari 浏览器。 如果需要保护整个设备，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)
 
 :::
 
-## How to install AdGuard for Safari {#install}
+## 如何安装 AdGuard Safari 版？ {#install}
 
-AdGuard for Safari is a free app presented on the App Store. To install it on your device, do the following.
+AdGuard Safari 版是 App Store 中的一款免费应用程序。 要在设备上安装它，请执行以下操作。
 
-1. Open the App Store and find the needed extension there.
+1. 打开 App Store，找到所需的扩展程序。
 
-    ![AdGuard for Safari on the App Store](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-app-store.png)
+    ![App Store 上的 AdGuard Safari 版](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-app-store.png)
 
-1. Press *Get* → *Install* → *Open*.
+1. 按「*获取*」→「*安装*」→「*打开*」
 
-1. To set up AdGuard for Safari, enable the AdGuard extensions in the Safari settings. In a notification, click *Fix it*. In an opened window, check the boxes next to AdGuard extensions.
+1. 要设置用于 Safari 的 AdGuard，请在 Safari 设置中启用 AdGuard 扩展。
 
-![Notification: Some extensions are disabled](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-notification.png)
+    ![通知：某些扩展已禁用](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-notification.png)
 
-:::note
+    :::note
 
-Not all extensions are required for AdGuard for Safari to function correctly. For instance, checking the *Icon* extension enables the icon next to the search bar. However, we recommend enabling all of them.
+    并非所有扩展都需要 AdGuard Safari 版才能正常运行。 例如，选中「*图标*」扩展，搜索栏旁边就会出现图标。 不过，我们建议启用所有功能。
+
 
 :::
 
-![Extensions checked](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-extensions-checked.png)
+    ![扩展已检查](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-extensions-checked.png)
 
-After you complete steps 1-3, AdGuard for Safari will start functioning. You can now configure its settings.
+1. 要使 AdGuard 在网站上生效，必须启用「*内容拦截器*」设置。 用户可以启用所有网站，也可以选择想要的网站。
 
-## How to uninstall AdGuard for Safari {#uninstall}
+    :::note
 
-To uninstall AdGuard for Safari, do the following:
+    iOS 9.0 及更高版本、带有 Safari 10 的 macOS 10.11 以及 macOS 10.12 及更高版本需要执行此步骤。
 
-1. Quit the app.
 
-1. Open Safari preferences.
+:::
 
-1. Choose the Extensions tab. You will see a list of extensions, AdGuard has eight.
+在 macOS 上，单击「*首选项*」→「*网站*」→「*内容拦截器*」。 如果要在每个网站上启用 AdGuard，请将「*访问其他网站时*」转为「*开启*」。
 
-1. Uncheck all checkboxes and press *Uninstall* below any of them.
+![Mac Safari 内容拦截器设置](https://i0.imgs.ovh/2023/10/26/Fmc9U.png)
+<!-- adguard-for-safari-content-blocker-setting-macos.png -->
 
-    ![Extensions checked](https://cdn.adtidy.org/public/Adguard/kb/installation/Safari/extensionschecked.png)
+在 iOS 上，进入「*设置*」→「*Safari*」→ *内容拦截器*，并将选项设置为「*是*」。
 
-    At this point, you will see a notification:
+![iOS Safari 内容拦截器设置](https://i0.imgs.ovh/2023/10/26/FmgM0.jpeg)
+<!-- adguard-for-safari-content-blocker-setting-ios.jpg -->
 
-    ![Notification: uninstall AdGuard for Safari](https://cdn.adtidy.org/public/Adguard/kb/installation/Safari/showinfinder.png)
+完成步骤 1-4 后，AdGuard Safari 版将开始正常运行。 现在可以开始配置扩展程序。
 
-1. Press *Show in Finder* and move the application to the bin.
+## 如何卸载 AdGuard Safari 版本 {#uninstall}
 
-    AdGuard for Safari will be removed from your device.
+要卸载 Safari 版 AdGuard，请执行以下操作：
+
+1. 退出应用程序。
+
+1. 打开 Safari 首选项。
+
+1. 选择「扩展」选项卡。 你会看到一个扩展名列表，AdGuard 有八个扩展名。
+
+1. 取消选中所有复选框，然后按「*卸载*」。
+
+    ![扩展已检查](https://cdn.adtidy.org/public/Adguard/kb/installation/Safari/extensionschecked.png)
+
+    您将看到通知提示：
+
+    ![通知：卸载 Safari 版 AdGuard](https://cdn.adtidy.org/public/Adguard/kb/installation/Safari/showinfinder.png)
+
+1. 按「*在 Finder 中显示*」并将应用程序移至垃圾桶。
+
+    AdGuard Safari 版将从设备中删除。

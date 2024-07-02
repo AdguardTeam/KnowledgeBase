@@ -41,7 +41,7 @@ Hlubší pochopení tohoto problému naleznete v [ tomto článku](../protect-ma
 
 **Doporučené řešení**
 
-V tuto chvíli doporučujeme místo nových funkcí ochrany osobních údajů Apple používat tradičnější službu VPN, například AdGuard VPN.
+V tuto chvíli doporučujeme místo novějších funkcí ochrany osobních údajů Apple používat tradičnější službu VPN, například [AdGuard VPN](https://adguard-vpn.com/).
 
 ### Monterey 12, Big Sur 11.6 a novější: současné problémy
 

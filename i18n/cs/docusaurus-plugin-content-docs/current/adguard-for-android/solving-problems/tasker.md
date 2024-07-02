@@ -17,7 +17,7 @@ Existuje mnoho aplikací Tasker, např. [Tasker](https://play.google.com/store/a
 
 ![Automation *mobile_border](https://cdn.adtidy.org/blog/new/mmwmfautomation.jpg)
 
-Díky tomuto rozhraní může každá aplikace odeslat speciální zprávu (tzv. "záměr"), která obsahuje název akce a případně další údaje. AdGuard se na tento záměr podívá a provede požadované akce.
+Díky tomuto rozhraní může každá aplikace odeslat speciální zprávu (tzv. “záměr”), která obsahuje název akce a případně další údaje. AdGuard se na tento záměr podívá a provede požadované akce.
 
 ### Obavy o bezpečnost
 
@@ -112,14 +112,11 @@ Nebo můžete parametry odebrání nakonfigurovat ručně:
 
 `nastavení podle názvu`: server:MůjServer
 
- `ruční nastavení`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
-
+`ruční nastavení`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
 
 :::
 
------
-
-**Nezapomeňte uvést heslo jako dodatek a zmínit název balíčku a třídy! Musíte tak učinit pro každý záměr!**
+**Nezapomeňte uvést heslo jako dodatek a zmínit název balíčku a třídy. Musíte tak učinit pro každý záměr.**
 
 Dodatek: `password:*******`
 

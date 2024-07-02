@@ -27,13 +27,16 @@ Tarayıcı Asistanını kullanırken, özünde herhangi bir çakışma olamayaca
 
 ## Ayarlar'da ayrı sekme
 
-Yeni Tarayıcı Asistanı, Windows için AdGuard ayarlarında Gizlilik Modu, Gezinti Koruması, Ebeveyn Denetimi ve diğerleriyle birlikte kendi sekmesine sahiptir. Burada varsayılan tarayıcınız için uzantıyı indirmek üzere bir bağlantı bulacaksınız. Ayrıca, eski Asistanı etkinleştirmek için bir onay kutusu vardır.
+Yeni Tarayıcı Asistanı, Windows için AdGuard ayarlarında Gizlilik Modu, Gezinti koruması, Ebeveyn Denetimi ve diğerleriyle birlikte kendi sekmesine sahiptir. Burada varsayılan tarayıcınız için uzantıyı indirmek üzere bir bağlantı bulacaksınız. Ayrıca, eski Asistanı etkinleştirmek için bir onay kutusu vardır.
 
 ![Ayarlar *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 
-## Legacy Assistant
+## Eski Asistan
 
-Eski Asistan, bir tarayıcı uzantısı değil, yalnızca bir kullanıcı betiği olan Asistan'ın önceki sürümüdür. Temel olarak, yeni Tarayıcı Asistanı yerine onu seçmek isteyebileceğiniz iki durum vardır: 1) yeni Asistan tarayıcınız için mevcut değildir; 2) yeşil kalkan simgesine alışkınsanız ve her şeyi olduğu gibi bırakmak istiyorsanız.
+Eski Asistan, bir tarayıcı uzantısı değil, yalnızca bir kullanıcı betiği olan Asistan'ın önceki sürümüdür. Temel olarak, yeni Tarayıcı Asistanı yerine bunu seçmek isteyebileceğiniz iki durum vardır:
+
+1. Yeni Asistan tarayıcınızda kullanılamıyor.
+1. Yeşil kalkan simgesine alışkınsınız ve her şeyi olduğu gibi bırakmak istiyorsunuz.
 
 ## AdGuard Tarayıcı Asistanı nasıl yüklenir
 

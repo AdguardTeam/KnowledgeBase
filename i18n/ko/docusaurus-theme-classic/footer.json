@@ -8,11 +8,11 @@
     "description": "The title of the footer links column with title=products in the footer"
   },
   "link.title.support": {
-    "message": "Support",
+    "message": "고객 지원",
     "description": "The title of the footer links column with title=support in the footer"
   },
   "link.title.license": {
-    "message": "License",
+    "message": "라이선스",
     "description": "The title of the footer links column with title=license in the footer"
   },
   "link.item.label.official_website": {
@@ -20,7 +20,7 @@
     "description": "The label of footer link with label=official_website linking to https://adguard.com"
   },
   "link.item.label.about": {
-    "message": "About",
+    "message": "정보",
     "description": "The label of footer link with label=about linking to https://adguard.com/contacts.html"
   },
   "link.item.label.in_the_press": {
@@ -72,7 +72,7 @@
     "description": "The label of footer link with label=removal_instructions linking to https://adguard.com/removal.html"
   },
   "link.item.label.userscripts": {
-    "message": "Userscripts",
+    "message": "유저스크립트",
     "description": "The label of footer link with label=userscripts linking to /general/userscripts"
   },
   "link.item.label.purchase_license": {

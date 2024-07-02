@@ -1,66 +1,62 @@
 ---
-title: Adware & viruses
+title: アドウェアとウイルス
 sidebar_position: 6
 ---
 
 :::note
 
-AdGuard is not an antivirus program. It can warn you when you're going to visit a malware or phishing website, but **it does not remove viruses from your device.**
+AdGuard はウイルス対策プログラムではありません。 マルウェアやフィッシングサイトにアクセスしそうになると警告してくれますが、**デバイスからウイルスを除去してくれるわけではありません**。
 
 :::
 
-If you suspect your computer is infected by malware or viruses, first of all you can inspect your computer with utilities from leading antiviruses.
+コンピュータがマルウェアやウイルスに感染している疑いがある場合、まず、主要なアンチウイルスソフトのユーティリティを使用してコンピュータを検査することができます。
 
-## Free antivirus utilities {#free-antivirus}
+## 無料のアンチウイルスツール {#free-antivirus}
 
-There are many of them and you can use any one you prefer, for example:
+たくさんあり、好みのものを使用できます。 ウイルス対策ユーティリティによるチェックで何も見つからなかったが、コンピュータの挙動がまだ不審な場合は、開いたページに広告を表示するアドウェアがないかどうかテストしてみましょう。
 
-[Dr.Web CureIt!](http://www.freedrweb.com/cureit/?lng=en)
+## システムからアドウェアを削除する方法 {#adware}
 
-If this check with antivirus utilities revealed nothing, but the computer still behaves suspiciously, try to test it for adware, which can implement its advertising on any pages that you open.
+インターネット上では、この問題の対処を目的としたアプリケーションをたくさん見つけることができますので、 好きなものを使用できます。 しかし、**Malwarebytes**の「**[AdwareCleaner（アドウェアクリーナー）](https://www.malwarebytes.com/adwcleaner)**」、**Avast**の**[Avast One（アバストワン）](https://www.avast.com/c-adware-removal-tool)**、または**[Adaware](https://www.adaware.com)**を使用することを強くお勧めします。 これらのアドウェアスキャナーは非常に使いやすく、ご自身でも操作できます。
 
-## How to clean your system from Adware {#adware}
+例としてAdwareCleaner（アドウェアクリーナー）を取り上げましょう。 アプリがダウンロードされ、正常にインストールされたら、以下の手順を実行します:
 
-On the Internet, you can find a lot of applications that are aimed at fighting this problem. You can use any utility you like. But we strongly recommend using **[AdwareCleaner](https://www.malwarebytes.com/adwcleaner)** by **Malwarebytes**, **[Avast One](https://www.avast.com/c-adware-removal-tool)** by **Avast**, or **[Adaware](https://www.adaware.com)**. These adware scanners are quite easy to use and you will be able to handle them by yourself.
-
-Let's take AdwareCleaner as an example. After the application has been downloaded and successfully installed, take the following steps:
-
-1. Start the application and click **Scan now**.
+1. アプリケーションを起動し、「**Scan now（今すぐスキャン）**」をクリックします。
 
 ![adware1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware1.png)
 
-1. Once the scan has been completed, you will need to send suspicious objects to **Quarantine**.
+1. スキャンが完了したら、疑わしいオブジェクトを「**Quarantine（検疫）**」に入れる必要があります。
 
 ![adware2 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware2.png)
 
-1. When the items are moved to **Quarantine**, you will be able to **Clear the system** of unnecessary ballast.
+1. アイテムが**検疫**に移されると、不要なものを**システムから取り除く**ことができます。
 
-1. In some cases, you may need to **Reboot the system** after cleaning is complete.
+1. 場合によっては、クリーニングを完了させるには**システムを再起動**する必要があります。
 
 ![adware3 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware3.png)
 
-1. Once the system has been rebooted, cleaning will be completed. If necessary, you can always read the **Report** on the work done.
+1. システムが再起動されると、クリーニングが完了します。 必要であれば、いつでも行われた処理の「**Report（報告）**」を読むことができます。
 
 ![adware4 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware4.png)
 
-If it didn’t help, temporary disable all extensions and some other settings in the browser according to [these instructions](#instructions).
+それでも解決しない場合は、[以下の手順](#instructions)に従って、ブラウザのすべての拡張機能とその他の設定を一時的に無効にしてください。
 
-If disabling of settings and extensions does not help, try to [recreate shortcuts of your browsers](#shortcuts).
+設定や拡張機能を無効にしても解決しない場合は、[ブラウザのショートカットを再作成](#shortcuts)してみてください。
 
-Further on this page we describe the instructions on how to remove some of the most commonly encountered ad extensions.
+このページでは、最もよく遭遇する広告拡張機能の削除方法について説明します。
 
-## How to disable settings and extensions in the browser {#instructions}
+## ブラウザの設定と拡張機能を無効にする方法 {#instructions}
 
-Below are the instructions on how to disable settings and extensions for the most popular browsers:
+以下は、最も一般的なブラウザの設定と拡張機能を無効にする方法を説明しております:
 
-- [for Google Chrome](https://support.google.com/chrome/answer/187443?hl=en)
+- [Google Chromeの場合](https://support.google.com/chrome/answer/187443?hl=ja)
 
-- [for Mozilla Firefox](https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons)
+- [Mozilla Firefoxの場合](https://support.mozilla.org/ja/kb/disable-or-remove-add-ons)
 
-- [for Opera](https://help.opera.com/en/latest/customization/#extensions)
+- [Operaの場合](https://help.opera.com/en/latest/customization/#extensions)
 
-## How to recreate shortcuts for your browsers {#shortcuts}
+## ブラウザのショートカットを再作成する方法 {#shortcuts}
 
-Very often, malware and adware programs install their homepage in a very simple way — they substitute your browser's desktop shortcut, taskbar and *Start* menu items.
+マルウェアやアドウェアプログラムは、非常に簡単な方法でそれらのホームページをインストールします。ブラウザのデスクトップショートカットやタスクバー、*スタート*メニューのアイテムを置き換えるのです。
 
-The simplest solution in this case is to manually delete all the shortcuts and recreate them by yourself.
+この場合の最も簡単な解決策は、すべてのショートカットを手動で削除し、自分で作り直すことです。

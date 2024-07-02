@@ -7,7 +7,7 @@ Soubory HAR pomáhají našim týmům technické podpory řešit složité probl
 
 ## Chrome {#chrome}
 
-Postup vytvoření souboru HAR v Chrome:
+Chcete-li vytvořit soubory HAR v Chrome, postupujte takto:
 
 1. Přejděte na URL, kde se problém vyskytuje. Problém zatím nereproduktujte.
 
@@ -16,7 +16,7 @@ Postup vytvoření souboru HAR v Chrome:
     - Z menu: **Menu → Další nástroje → Nástroje pro vývojáře**.
     - Na klávesnici: **Ctrl+Shift+C**, nebo **Ctrl+Alt+I**, nebo **⌥+⌘+I pro Mac**.
 
-1. Klikněte na **Záložku Network**.
+1. Klikněte na **záložku síť**.
 
 1. Najděte kulaté tlačítko v levém horním rohu záložky Network a zkontrolujte, zda je v červeném režimu nahrávání. Pokud je šedá, kliknutím na ni zčervená a nahrávání se spustí.
 
@@ -32,7 +32,7 @@ Postup vytvoření souboru HAR v Chrome:
 
 1. Uložte relaci jako soubor .har kliknutím pravým tlačítkem na mřížku a výběrem **Save as HAR with content**.
 
-1. Přepošlete na podporu AdGuardu (support@adguard.com) s podrobným vysvětlením problému. Užitečné mohou být i podpůrné snímky obrazovky.
+1. Odešlete na podporu AdGuardu (support@adguard.com) s podrobným vysvětlením problému. Užitečné mohou být i podpůrné snímky obrazovky.
 
 ## Edge {#edge}
 
@@ -43,7 +43,7 @@ Postup vytvoření souboru HAR v Chrome:
     - Z menu: **Menu → Další nástroje → Nástroje pro vývojáře**.
     - Na klávesnici: **Ctrl+Shift+C**, nebo **Ctrl+Alt+I**, nebo **⌥+⌘+I pro Mac**.
 
-1. Klikněte na **Záložku Network**.
+1. Klikněte na **záložku síť**.
 
 1. Najděte kulaté tlačítko v levém horním rohu záložky Network a zkontrolujte, zda je v červeném režimu nahrávání. Pokud je šedá, kliknutím na ni zčervená a nahrávání se spustí.
 
@@ -59,11 +59,11 @@ Postup vytvoření souboru HAR v Chrome:
 
 1. Uložte relaci jako soubor .har kliknutím pravým tlačítkem na mřížku a výběrem **Save as HAR with content**.
 
-1. Přepošlete na podporu AdGuardu (support@adguard.com) s podrobným vysvětlením problému. Užitečné mohou být i podpůrné snímky obrazovky.
+1. Odešlete na podporu AdGuardu (support@adguard.com) s podrobným vysvětlením problému. Užitečné mohou být i podpůrné snímky obrazovky.
 
 ## Firefox {#firefox}
 
-Postup vytvoření souboru HAR ve Firefoxu:
+Chcete-li vytvořit soubory HAR ve Firefoxu, postupujte takto:
 
 1. Přejděte na URL, kde se problém vyskytuje. Problém zatím nereproduktujte.
 
@@ -76,7 +76,7 @@ Postup vytvoření souboru HAR ve Firefoxu:
 
     - Tlačítko by mělo být v režimu Play.
 
-1. Pokud jsou v mřížce aktuálně zobrazeny nějaké informace, vymažte je kliknutím na tlačítko **delete trash can** vedle tlačítka play/pause.
+1. Pokud jsou v mřížce aktuálně zobrazeny nějaké informace, vymažte je kliknutím na tlačítko **Empty trash can** vedle tlačítka play/pause.
 
 1. Zaškrtněte políčko **Persist Logs** na záložce Network.
 
@@ -88,11 +88,11 @@ Postup vytvoření souboru HAR ve Firefoxu:
 
 1. Uložte relaci jako soubor .har kliknutím pravým tlačítkem na mřížku a výběrem **Save all as HAR**.
 
-1. Přepošlete na podporu AdGuardu (support@adguard.com) s podrobným vysvětlením problému. Užitečné mohou být i podpůrné snímky obrazovky.
+1. Odešlete na podporu AdGuardu (support@adguard.com) s podrobným vysvětlením problému. Užitečné mohou být i podpůrné snímky obrazovky.
 
 ## Internet Explorer 11 {#ie11}
 
-Postup vytvoření souboru HAR v IE 11:
+Chcete-li vytvořit soubory HAR v Internet Explorer, postupujte takto:
 
 1. Přejděte na URL, kde se problém vyskytuje. Problém zatím nereproduktujte.
 
@@ -115,11 +115,11 @@ Postup vytvoření souboru HAR v IE 11:
 
 1. Uložte relaci jako soubor .har kliknutím na tlačítko **Save disk** (Export as HAR) na kartě Síť.
 
-1. Přepošlete na podporu AdGuardu (support@adguard.com) s podrobným vysvětlením problému. Užitečné mohou být i podpůrné snímky obrazovky.
+1. Odešlete na podporu AdGuardu (support@adguard.com) s podrobným vysvětlením problému. Užitečné mohou být i podpůrné snímky obrazovky.
 
 ## Safari {#safari}
 
-Postup vytvoření souboru HAR v Safari:
+Chcete-li vytvořit soubory HAR v Safari, postupujte takto:
 
 1. Na liště nabídek Safari v horní části obrazovky najdete nabídku **Develop**.
 
@@ -131,7 +131,7 @@ Postup vytvoření souboru HAR v Safari:
 1. Otevřete záložku **Network** ve Web Inspector:
 
     - Z menu: **Develop → Show Web Inspector → Network**.
-    - Na klávesnici: **⌥+⌘+I→Network**
+    - Na klávesnici: **⌥+⌘+I → Network**
 
 1. Zaškrtněte políčko **Preserve log** na levé straně karet Síť v nabídce **Other filter options...**.
 
@@ -147,7 +147,7 @@ Postup vytvoření souboru HAR v Safari:
 
 1. Uložte relaci jako soubor .har kliknutím na ikonu **Export** vedle ikony **Delete trash**.
 
-1. Přepošlete na podporu AdGuardu (support@adguard.com) s podrobným vysvětlením problému. Užitečné mohou být i podpůrné snímky obrazovky.
+1. Odešlete na podporu AdGuardu (support@adguard.com) s podrobným vysvětlením problému. Užitečné mohou být i podpůrné snímky obrazovky.
 
 ## Android {#android}
 
