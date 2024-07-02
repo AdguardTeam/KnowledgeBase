@@ -7,7 +7,9 @@ This page describes the features and details of AdGuard’s central management o
 
 ## 1. Download the MSI {#msi-download}
 
-Download the [AdGuard MSI](https://static.adtidy.org/windows/setup.msi).
+Download the [AdGuard MSI x86](https://cdn.adtidy.org/distr/windows/AdGuard_x86.msi)
+
+Download the [AdGuard MSI x64](https://cdn.adtidy.org/distr/windows/AdGuard_x64.msi)
 
 ## 2. Configure the settings for your network {#settings-configuring}
 
@@ -37,11 +39,17 @@ You must run these commands with admin privileges.
 
 If you want to install AdGuard on a Windows 7 computer, make sure that it has .NET 4 Client Profile installed: https://www.microsoft.com/en-us/download/details.aspx?id=24872
 
-:::info
-
-Automatic updates are disabled when you install AdGuard for Windows from MSI. If you want to allow updates for a user (which is not recommended because centralized updates will become impossible), set the value of the `AllowCheckUpdates` parameter for the `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` key to `YES` (case insensitive). In this case automatic updates will be allowed, any other value or no value for this parameter disables automatic updates.
-
 :::note
+
+If you have installed AdGuard for Windows from an MSI file, AdGuard will not be updated automatically. To allow manual updates:
+
+- In versions released after v7.16, delete the `ForbidCheckUpdates` parameter or set its value to `NO` (case-insensitive) in the registry under `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard`.
+
+- In v7.16 and earlier versions, set to `YES` (case-insensitive) the `AllowCheckUpdates` parameter for the `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard` key on x86 OS or `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` key on x64 OS. Any other value or no value for this parameter will disable automatic updates.
+
+Please note that such installation of the application and manual updates are not recommended and can cause technical problems.
+
+:::
 
 ## 5. Test your installation {#installation-test}
 

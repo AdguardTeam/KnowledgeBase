@@ -3,11 +3,11 @@ title: Proxy sertifikası nasıl yüklenir
 sidebar_position: 2
 ---
 
-Masaüstü AdGuard uygulamaları (Windows için AdGuard ve Mac için AdGuard) proxy olarak kullanılabilir. Bu, diğer cihazların trafiğini (tamamen veya belirli uygulamaların/tarayıcıların trafiğini) AdGuard üzerinden yönlendirebileceğiniz anlamına gelir.
+Masaüstü uygulamalarımız olan Windows için AdGuard ve Mac için AdGuard, diğer cihazlar için proxy olarak kullanılabilir. This means that you can route other devices’ traffic through AdGuard (all traffic or traffic of specific apps and browsers).
 
-:::note
+:::not
 
-Bu cihazlar, AdGuard'ın kurulu olduğu PC veya Mac ile aynı ağda olmalıdır.
+Bu cihazların AdGuard kurulu PC veya Mac ile aynı ağda olması gerekir.
 
 :::
 
@@ -15,122 +15,118 @@ HTTP trafiği her durumda filtrelenecektir, ancak AdGuard'ın HTTPS trafiğini f
 
 ## How to download and install the certificate
 
-Depending on the operation system of your device (Windows/Mac/Android/iOS), follow one of these instructions:
+Trafiğini filtrelemek istediğiniz cihazın işletim sistemine bağlı olarak, aşağıdaki talimatlardan birini izleyin:
 
 ### Windows {#windows}
 
 1. AdGuard'ın kurulu olduğu masaüstü bilgisayarınızın IP adresini not edin.
 
-2. AdGuard'ın korumasının etkinleştirildiğinden emin olun. Ardından, ayarlarının **Ağ** sekmesinde **AdGuard'ı HTTP proxy olarak kullan** kutusunu işaretleyin.
+1. AdGuard korumasının etkin olduğundan emin olun. Windows bilgisayarda, ayarlarının **Ağ** öğesine **AdGuard'ı HTTP proxy olarak kullan** kutusunu işaretleyin. Mac için, **Ayarlar** → **Tercihler** → **Ağ** öğesine gidin ve **HTTP proxy** öğesini etkinleştirin.
 
-3. AdGuard ile aynı cihazda herhangi bir tarayıcı kullanarak şu bağlantıyı takip edin: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. AdGuard ile aynı bilgisayarda şu bağlantıyı izleyin: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
-4. **İndir** düğmesine tıklayın.
+1. **İndir** düğmesine tıklayın. İndirme işlemi başlamazsa, Firefox gibi başka bir tarayıcı deneyin.
 
-5. İndirdiğiniz **cert.cer** dosyasını AdGuard üzerinden trafiği yönlendirmek istediğiniz cihaza aktarın.
+1. İndirilen **cert.cer** dosyasını, trafiğini AdGuard üzerinden yönlendirmek istediğiniz Windows cihazına aktarın. Bunu yapmak için bir USB kablosu, Bluetooth veya bulut hizmetleri kullanabilirsiniz.
 
-6. Bu cihazda **Win** düğmesine basın, `Bilgisayar sertifikalarını yönetin` yazın ve **Enter** düğmesine basın.
+1. On that device, press **Win**, type `Manage computer certificates` and press **Enter**.
 
-7. On the *Certificates - Local Computer* page, find the *Trusted Root Certification* → *Certificates* folder.
+1. On the *Certificates — Local Computer* page, find the *Trusted Root Certification Authorities* → *Certificates* folder.
 
-8. *Sertifikalar* klasörüne sağ tıklayın ve **Tüm Görevler** → **Al** öğesine tıklayın.
+1. *Sertifikalar* klasörüne sağ tıklayın ve **Tüm Görevler** → **Al** öğesine tıklayın.
 
-9. *Sertifika Alma Sihirbazı* sayfasında, **Sonraki** öğesine tıklayın.
+1. *Sertifika Alma Sihirbazı* sayfasında, **Sonraki** öğesine tıklayın.
 
-10. Sertifikayı içe aktarmak için **Gözat** öğesine tıklayın.
+1. Sertifikayı içe aktarmak için **Gözat** öğesine tıklayın.
 
-11. **cert.cer** sertifika dosyasına gidin, dosyayı seçin ve ardından **Aç** öğesine tıklayın.
+1. Navigate to the **cert.cer** certificate file, select it, click **Open**, then **Next**.
 
-12. **Sonraki** öğesine tıklayın.
+1. Select the **Place all certificates in the following store** checkbox.
 
-13. Select the **Place all certificates in the following store** checkbox.
+1. Make sure that the *Certificate store* field displays *Trusted Root Certification Authorities* and click **Next**.
 
-14. Ensure that the *Certificate store* field displays *Trusted Root Certification Authorities* and click **Next**.
+1. **Bitir** öğesine tıklayın.
 
-15. **Bitir** öğesine tıklayın.
+1. Press **Win**, then open **Settings**.
 
-16. **Win** tuşuna basın, ardından **Ayarlar** öğesini açın.
+1. Select **Network & Internet** → **Proxy**.
 
-17. Select **Network & Internet** → **Proxy**.
+1. Toggle *Automatically detect settings* off.
 
-18. Toggle *Automatically detect settings* off.
+1. Click **Set up** in the *Use a proxy server* tab.
 
-19. Click **Set up** in the *Use a proxy server* tab.
+1. Turn the toggle on. For **Proxy IP address**, type the IP address of your desktop computer that you noted in step 1. **Bağlantı noktası** için, masaüstü AdGuard uygulamasının ağ ayarlarında seçilen bağlantı noktasını girin.
 
-20. Turn the toggle on. For **Proxy IP address**, enter the noted IP address of your desktop computer (step 1). For **Port**, enter the port chosen in the network settings of the desktop AdGuard app.
-
-21. **Kaydet** öğesine tıklayın.
+1. **Kaydet** öğesine tıklayın.
 
 ### Mac {#mac}
 
 1. AdGuard'ın kurulu olduğu masaüstü bilgisayarınızın IP adresini not edin.
 
-2. AdGuard'ın korumasının etkinleştirildiğinden emin olun. Then go to **Settings** → **Network** → **HTTP proxy** and check the box **Use AdGuard as an HTTP proxy**.
+1. AdGuard korumasının etkin olduğundan emin olun. Windows bilgisayarda, ayarlarının **Ağ** öğesine **AdGuard'ı HTTP proxy olarak kullan** kutusunu işaretleyin. Mac için, **Ayarlar** → **Tercihler** → **Ağ** öğesine gidin ve **HTTP proxy** öğesini etkinleştirin.
 
-3. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. Web tarayıcısı kullanarak bu bağlantıyı izleyin: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
-4. **İndir** düğmesine tıklayın.
+1. **İndir** düğmesine tıklayın. İndirme işlemi başlamazsa, Firefox gibi başka bir tarayıcı deneyin.
 
-5. İndirdiğiniz **cert.cer** dosyasını AdGuard üzerinden trafiği yönlendirmek istediğiniz cihaza aktarın.
+1. İndirilen **cert.cer** dosyasını, trafiğini AdGuard üzerinden yönlendirmek istediğiniz Mac cihazına aktarın. Bunu yapmak için bir USB kablosu, Bluetooth veya bulut hizmetleri kullanabilirsiniz.
 
-6. İndirilen sertifika dosyasına çift tıklayın.
+1. İndirilen sertifika dosyasına çift tıklayın.
 
-7. Enter the administrator password and then click **Modify Keychain**.
+1. Enter the administrator password and then click **Modify Keychain**.
 
-8. Go to **Spotlight** (the search icon in the top right corner), type in "Keychain Access", and then select **Keychain Access** from the search results.
+1. Go to **Spotlight** (the search icon in the top right corner), type in `Keychain Access`, and then select **Keychain Access** from the search results.
 
-9. Under *System*, highlight the certificate that you added.
+1. *Sistem* altında, eklediğiniz sertifikayı vurgulayın.
 
-10. Right-click it and choose **Get Info** from the context menu.
+1. Right-click it and select **Get Info** from the context menu.
 
-11. Expand *Trust* to display the trust policies for the certificate.
+1. Expand *Trust* to display the trust policies for the certificate.
 
-12. Under *Secure Sockets Layers (SSL)*, select **Always Trust**.
+1. Under *Secure Sockets Layers (SSL)*, select **Always Trust**.
 
-13. **Sistem Tercihleri** → **Ağ** öğesini açın ve üstteki etkin bağlantıyı seçin.
+1. Open **System Preferences** → **Network** and select the active connection at the top.
 
-14. Click **Details...** and navigate to the **Proxies** tab.
+1. Click **Details...** and navigate to the **Proxies** tab.
 
-15. Tick two checkboxes: *Web proxy (HTTP)* and *Secure web proxy (HTTPS)*. In the **Server** field, enter the noted IP address of your computer (step 1). In the **Port** field, enter the port chosen in the network settings of the AdGuard desktop app.
+1. Tick two checkboxes: *Web proxy (HTTP)* and *Secure web proxy (HTTPS)*. In the **Server** field, type the IP address of your computer that you noted in step 1. In the **Port** field, enter the port chosen in the network settings of the AdGuard desktop app.
 
 ### Android {#android}
 
 1. AdGuard'ın kurulu olduğu masaüstü bilgisayarınızın IP adresini not edin.
 
-2. AdGuard'ın korumasının etkinleştirildiğinden emin olun. Ardından, ayarlarının **Ağ** sekmesinde **AdGuard'ı HTTP proxy olarak kullan** kutusunu işaretleyin.
+1. AdGuard korumasının etkin olduğundan emin olun. Windows bilgisayarda, ayarlarının **Ağ** öğesine **AdGuard'ı HTTP proxy olarak kullan** kutusunu işaretleyin. Mac için, **Ayarlar** → **Tercihler** → **Ağ** öğesine gidin ve **HTTP proxy** öğesini etkinleştirin.
 
-3. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
-4. **İndir** düğmesine tıklayın.
+1. **İndir** düğmesine tıklayın. İndirme işlemi başlamazsa, Firefox gibi başka bir tarayıcı deneyin.
 
-5. İndirdiğiniz **cert.cer** dosyasını AdGuard üzerinden trafiği yönlendirmek istediğiniz cihaza aktarın.
+1. İndirilen **cert.cer** dosyasını, trafiğini AdGuard üzerinden yönlendirmek istediğiniz Android cihazına aktarın. Bunu yapmak için bir USB kablosu, Bluetooth veya bulut hizmetleri kullanabilirsiniz.
 
-6. Locate and tap the previously downloaded **cert.cer** certificate to open the file.
+1. Locate and tap the previously downloaded **cert.cer** certificate to open the file and follow the instructions to install the certificate.
 
-7. Bazı telefonlarda, cihaz parolanızı girmeniz istenebilir. Bunu yapın, ardından **Tamam ** öğesine basın. Sertifika şimdi yüklenmiştir.
+1. Android devices do not trust certificates by default, so there will be a warning — you can ignore it. On some phones you may be asked to enter your device password. Do so, then press **OK**. Sertifika yüklenecektir.
 
-8. Open advanced settings of the active Wi-Fi network.
+1. Open advanced settings of the active Wi-Fi network.
 
-9. Switch the **Proxy type** to **Manual**. For **Proxy hostname**, enter the noted IP address of your desktop computer (step 1). For **Proxy port**, enter the port chosen in the network settings of the AdGuard desktop app.
+1. Change the **Proxy type** to **Manual**. For **Proxy hostname**, enter the noted IP address of your desktop computer you noted in step 1. For **Proxy port**, enter the port chosen in the network settings of the AdGuard desktop app.
 
 ### iOS {#ios}
 
 1. AdGuard'ın kurulu olduğu masaüstü bilgisayarınızın IP adresini not edin.
 
-2. AdGuard'ın korumasının etkinleştirildiğinden emin olun. Ardından, ayarlarının **Ağ** sekmesinde **AdGuard'ı HTTP proxy olarak kullan** kutusunu işaretleyin.
+1. AdGuard korumasının etkin olduğundan emin olun. Windows bilgisayarda, ayarlarının **Ağ** öğesine **AdGuard'ı HTTP proxy olarak kullan** kutusunu işaretleyin. Mac için, **Ayarlar** → **Tercihler** → **Ağ** öğesine gidin ve **HTTP proxy** öğesini etkinleştirin.
 
-3. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
-4. **İndir** düğmesine tıklayın.
+1. **İndir** düğmesine tıklayın. İndirme işlemi başlamazsa, Firefox gibi başka bir tarayıcı deneyin.
 
-5. İndirdiğiniz **cert.cer** dosyasını AdGuard üzerinden trafiği yönlendirmek istediğiniz cihaza aktarın.
+1. Transfer the downloaded **cert.cer** file to the iOS device whose traffic you want to route through AdGuard. Bunu yapmak için bir USB kablosu, Bluetooth veya bulut hizmetleri kullanabilirsiniz.
 
-6. Open **Settings** → **Security** → **Encryption & Credentials** → **Install a certificate**. Android devices do not trust certificates by default so there will be a warning when you choose **CA certificate**. **Yine de yükle** öğesine dokunun.
+1. On your iOS device, open **Settings** → **Profile Downloaded** and tap **Install** in the top right corner. Şifrenizi girin ve yüklemeyi onaylayın. Tap **Done**.
 
-7. Open **Settings** → **Profile Donwloaded** and tap **Install** in the top right corner. Şifrenizi girin ve yüklemeyi onaylayın. Tap **Done**.
+1. Go to **Settings** → **General** → **About** → **Certificate Trust Settings**. Enable the switch beside *Adguard Personal CA*. Sertifika şimdi yüklenmiştir.
 
-8. Go to **Settings** → **General** → **About** → **Certificate Trust Settings**. Enable the switch beside *Adguard Personal CA*. Sertifika şimdi yüklenmiştir.
+1. Bu cihazda, etkin Wi-Fi ağının gelişmiş ayarlarını açın.
 
-9. Bu cihazda, etkin Wi-Fi ağının gelişmiş ayarlarını açın.
-
-10. Switch the **Proxy type** to **Manual**. For **Proxy hostname**, enter the noted IP address of your computer (step 1). For **Proxy port**, enter the port chosen in the network settings of the AdGuard desktop app.
+1. Change the **Proxy type** to **Manual**. For **Proxy hostname**, type the IP address of your computer you noted in step 1. For **Proxy port**, enter the port chosen in the network settings of the AdGuard desktop app.

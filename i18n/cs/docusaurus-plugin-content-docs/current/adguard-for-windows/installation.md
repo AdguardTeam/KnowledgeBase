@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -73,26 +73,34 @@ Pokud potřebujete AdGuard odinstalovat nebo přeinstalovat, postupujte následo
 
 Pokud běžná odinstalace z nějakého důvodu nefunguje, můžete zkusit pokročilou metodu. Nejprve si musíte stáhnout [nástroj pro odinstalaci](https://cdn.adtidy.org/distr/windows/Uninstall_Utility.zip) vytvořený našimi vývojáři. Rozbalte archiv do libovolné složky v počítači, spusťte soubor **Adguard.UninstallUtility.exe** a nechte aplikaci provést změny v zařízení. Poté postupujte podle níže uvedených pokynů:
 
-- Vyberte *Standardní odinstalaci*, *Smazat AdGuard* a klikněte na *Odinstalovat*.
+- Vyberte *Blokátor reklam AdGuard* a *Standardní* typ odinstalace a poté klikněte na *Odinstalovat*.
 
-![Standard uninstall *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/standard-uninstall.png)
+![Standard uninstall *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_standard.jpg)
 
-- Počkejte na dokončení odinstalace — v okně se objeví řetězec: `[OK] Odinstalace dokončena`
+- Po zobrazení varovného okna klikněte na *OK*:
 
-![Uninstall finished *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/standard-uninstall-2.png)
+![Standard uninstall warning *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
+
+- Počkejte na dokončení odinstalace — zobrazí se fráze **Odinstalace dokončena** a výzva k restartování počítače:
+
+![Uninstall finished *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_standard_complete.jpg)
 
 :::caution
 
-Další kroky proveďte pouze v případě, že provedení prvních dvou kroků z nějakého důvodu nestačilo. Obvykle to lze zjistit na základě nesprávné přeinstalace AdGuardu, ale před použitím kroků 3-4 pokročilého způsobu k odinstalaci důrazně doporučujeme kontaktovat naši podporu.
+Další kroky proveďte pouze v případě, že provedení prvních dvou kroků z nějakého důvodu nestačilo. Důrazně doporučujeme kontaktovat náš tým podpory před použitím kroků 3-4 pokročilého pokynu k odinstalaci.
 
 :::
 
-- Vyberte *Pokročilá odinstalace* a klikněte na *Odinstalovat*.
+- Vyberte *Blokátor reklam AdGuard* a *Rozšířený* typ odinstalace a poté klikněte na *Odinstalovat*. Ve okně výzvy klikněte na *Ano, pokračovat*.
 
-![Advanced uninstall *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/advanced-uninstall.png)
+![Extended uninstall *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended.jpg)
 
-- Počkejte na dokončení odinstalace — v okně se objeví řetězec: `[OK] Odinstalace dokončena`
+- Po zobrazení varovného okna klikněte na *OK*:
 
-![Uninstall finished *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/advanced-uninstall-2.png)
+![Extended uninstall warning *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
+
+- Počkejte na dokončení odinstalace — zobrazí se fráze **Odinstalace dokončena** a výzva k restartování počítače:
+
+![Extended uninstall finished *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_complete.jpg)
 
 AdGuard byl úspěšně odinstalován!

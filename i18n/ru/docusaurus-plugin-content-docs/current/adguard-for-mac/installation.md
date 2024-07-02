@@ -5,13 +5,13 @@ sidebar_position: 2
 
 :::info
 
-В этой статье рассказывается об AdGuard для Mac — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://adguard.com/download.html?auto=true)
+В этой статье рассказывается об AdGuard для Mac — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 ## Системные требования
 
-**Версия операционной системы:** macOS 10.13 (64-разрядная) или более поздняя
+**Версия операционной системы:** macOS 10.15 (64-разрядная) или более поздняя
 
 **Объём оперативной памяти**: от 2 ГБ
 
@@ -21,11 +21,11 @@ sidebar_position: 2
 
 ## Установка
 
-To install AdGuard for Mac on your computer, launch your browser, type *adguard.com* in the address bar, and press **Download** [on the page that opens](https://adguard.com/download.html?auto=1).
+Чтобы установить AdGuard для Mac на компьютер, откройте браузер, наберите в адресной строке *adguard.com* и нажмите **кнопку Скачать** [на открывшейся странице](https://adguard.com/download.html?auto=1).
 
 ![Скачайте приложение *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/1.jpg)
 
-Wait for *AdguardInstaller.dmg* to download and double-click its icon in the list of downloaded files on the Dock panel.
+Дождитесь окончания загрузки файла *AdguardInstaller.dmg* и щёлкните мышью по его значку в списке загруженных объектов на Dock-панели.
 
 ![Дважды щёлкните, чтобы открыть файл](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation_open_the_file.jpg)
 
@@ -80,23 +80,26 @@ Wait for *AdguardInstaller.dmg* to download and double-click its icon in the lis
     - /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log (файл)
     - /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log (файл)
 
-    Для этого введите и выполните следующие команды через Терминал:
-    - `sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"`
-    - `rm -R "$HOME/Library/Application Support/com.adguard.mac.adguard"`
-    - `rm $HOME/Library/Preferences/com.adguard.mac.adguard.plist`
-    - `rm -R "$HOME/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac"`
-    - `найдите и удалите "$HOME/Library/Application Support" -name "com.adguard.browser_extension_host.nm.json"`
-    - `sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist`
-    - `sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist`
-    - `sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log`
-    - `sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log`
+    To do so, open the Terminal app, then enter and execute the following commands:
+
+    ```bash
+    sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"
+    rm -R "$HOME/Library/Application Support/com.adguard.mac.adguard"
+    rm $HOME/Library/Preferences/com.adguard.mac.adguard.plist
+    rm -R "$HOME/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac"
+    find "$HOME/Library/Application Support" -name "com.adguard.browser_extension_host.nm.json" -delete
+    sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist
+    sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist
+    sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log
+    sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log
+    ```
 
 1. Запустите приложение **Мониторинг системы**.
 1. Через поиск найдите процесс **’cfprefsd’**.
 
     ![Запустите приложение «Мониторинг системы»](https://cdn.adtidy.org/content/kb/ad_blocker/mac/22.jpg)
 
-1. Остановите процесс, запущенный от имени пользователя. Для этого нажмите на него, а после нажмите на X в левом верхнем углу. Подтвердите завершение процесса.
+1. Остановите процесс, запущенный от имени пользователя. Для этого нажмите на него, а после нажмите на X в левом верхнем углу. Confirm the action in the dialogue window.
 
     ![Подтвердите](https://cdn.adtidy.org/content/kb/ad_blocker/mac/33.jpg)
 

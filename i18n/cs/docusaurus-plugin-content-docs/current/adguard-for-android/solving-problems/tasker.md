@@ -5,7 +5,7 @@ sidebar_position: 3
 
 :::info
 
-Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -17,15 +17,15 @@ Existuje mnoho aplikací Tasker, např. [Tasker](https://play.google.com/store/a
 
 ![Automation *mobile_border](https://cdn.adtidy.org/blog/new/mmwmfautomation.jpg)
 
-Díky tomuto rozhraní může každá aplikace odeslat speciální zprávu (tzv. "záměr"), která obsahuje název akce a případně další údaje. AdGuard se na tento záměr podívá a provede požadované akce.
+Díky tomuto rozhraní může každá aplikace odeslat speciální zprávu (tzv. “záměr”), která obsahuje název akce a případně další údaje. AdGuard se na tento záměr podívá a provede požadované akce.
 
 ### Obavy o bezpečnost
 
-Nebylo by trochu nebezpečné, ptáte se — nechat náhodné aplikace spravovat to, co dělá AdGuard? To ano, a proto se spolu se záměrem odesílá i heslo. Toto heslo vygeneruje AdGuard automaticky, ale můžete ho samozřejmě kdykoli změnit.
+Není nebezpečné nechat náhodné aplikace spravovat to, co dělá AdGuard? Je to tak, a proto je spolu se záměrem odesláno i heslo. Toto heslo vygeneruje AdGuard automaticky, ale můžete ho samozřejmě kdykoli změnit.
 
 ### Dostupné akce
 
-Jste připraveni zašpinit si ruce? Zde jsou uvedeny akce, kterým bude AdGuard rozumět, pokud budou zahrnuty do záměru:
+Zde jsou uvedeny akce, kterým bude AdGuard rozumět, pokud budou zahrnuty do záměru:
 
 `start` spouští ochranu, nejsou potřeba žádné další údaje;
 
@@ -49,7 +49,7 @@ Jste připraveni zašpinit si ruce? Zde jsou uvedeny akce, kterým bude AdGuard 
 
 :::note
 
-Úplný seznam podporovaných názvů poskytovatelů naleznete v nastavení AdGuard DNS v části "Vlastní nastavení DNS".
+Úplný seznam názvů podporovaných poskytovatelů naleznete v našem seznamu [známých poskytovatelů DNS](https://adguard-dns.io/kb/general/dns-providers/).
 
 :::
 
@@ -91,10 +91,10 @@ Nebo můžete parametry odebrání nakonfigurovat ručně:
 
 `[type]` — typ proxy:
 
-- HTTP;
-- SOCKS4;
-- SOCKS5;
-- HTTPS_CONNECT.
+- HTTP
+- SOCKS4
+- SOCKS5
+- HTTPS_CONNECT
 
 `[host]` — doména nebo IP adresa odchozího proxy;
 
@@ -112,14 +112,11 @@ Nebo můžete parametry odebrání nakonfigurovat ručně:
 
 `nastavení podle názvu`: server:MůjServer
 
- `ruční nastavení`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
-
+`ruční nastavení`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
 
 :::
 
------
-
-**Nezapomeňte uvést heslo jako dodatek a zmínit název balíčku a třídy! Musíte tak učinit pro každý záměr!**
+**Nezapomeňte uvést heslo jako dodatek a zmínit název balíčku a třídy. Musíte tak učinit pro každý záměr.**
 
 Dodatek: `password:*******`
 

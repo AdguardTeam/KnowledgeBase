@@ -1,110 +1,110 @@
 ---
-title: How to get system logs
+title: 如何收集系统日志
 sidebar_position: 4
 ---
 
 :::info
 
-本文适用于安卓版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 要了解工作原理， 请[下载 AdGuard 应用程序](https://adguard.com/download.html?auto=true)
+本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。 要了解工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
-Sometimes a regular log may not be sufficient to identify the origin of the problem. In such cases a system log is needed. Below are instructions on how to collect and get it: via Developer options and Logcat.
+有时候常规日志可能无法识别问题的根源。 在这种情况下，就需要系统日志。 以下是收集日志的说明：通过开发人员选项和 Logcat。
 
-## Capture a bug report from a device
+## 从设备捕获错误报告
 
-To get a bug report directly from your device, do the following:
+要从设备获取错误报告，请执行以下操作：
 
-1. Be sure you have [Developer options](https://developer.android.com/studio/run/device.html#developer-device-options) enabled.
+1. 确保您已开启[ 开发者选项](https://developer.android.com/studio/run/device.html#developer-device-options)。
 
-1. In **Developer options**, tap **Take bug report**.
+1. 在「**开发者选项**」内，点击「**获取错误报告**」。
 
-    ![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
+    ![错误报告 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
 
-1. Select the type of bug report you want and tap **Report**.
+1. 选择您要的错误报告类型并点击「**报告**」。
 
     :::note
 
-    After a moment, you will see a notification that the bug report is ready (see Figure 2).
+    稍等片刻，您就会看到错误报告已准备就绪的通知（见图 2）。
 
 
 :::
 
-    ![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
+    ![错误报告 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
 
-1. To share the bug report, tap the notification.
+1. 要分享错误报告，请点击通知。
 
-    ![Bug report *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
+    ![错误报告 *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
 
-1. Send this log to our support team.
+1. 将此日志发送给我们的支持团队。
 
     :::note
 
-    Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+    如果您在反馈的信息中指定 HelpDesk 号或 GitHub 问题号，我们的支持团队会更快地处理您的问题。
 
 
 :::
 
-## Capture a bug report via Logcat
+## 通过 Logcat 捕获错误报告
 
-On devices with Android 7 and below, it is not possible to send a bug report automatically. Then you can capture it manually via Logcat — a standard Android command-line tool that dumps a log of system messages.
+在 Android 7 及更低版本的设备上，错误报告无法自动发送。 然后，用户可以通过 Logcat 进行手动捕获，Logcat 是一个标准 Android 命令行工具，可转储系统消息日志。
 
-Follow this instruction:
+请按此说明操作：
 
-**Part #1: prepare the device**
+**第一部分：准备设备**
 
-1. Switch device to the developer mode. To do this: go to **Settings** → **About** → tap **Build Number** 7 times.
+1. 将设备切换到开发者模式。 打开手机「**设置**」→「**关于**」→ 点击 7 次**版本号**。
 
-1. Go to **Developer Options**.
+1. 打开「**开发者选项**」。
 
-1. Enable **USB debugging**.
+1. 启用「**USB 调试**」。
 
-1. Increase **Logger buffer** sizes to 4 MB per log buffer.
+1. 将每个「**日志缓冲区**」的大小增加到 4MB。
 
-4 MB should be enough for storing the logs we need until you're able to do the second part (getting the log from the device);
+在完成第二部分（从设备中获取日志）之前，4MB 应该足以存储我们需要的日志；
 
-**Part #2: reproduce the problem**
+**第二部分：复现问题**
 
-It is important to reproduce the problem after you're done with the first part.
+在完成第一部分后，复现问题非常重要。
 
-1. Reproduce the problem.
+1. 复现问题。
 
-1. Remember/write down the date and time of reproduction and include it in the email to our support later.
+1. 记住/写下复现的日期和时间，并将其包含在稍后发送给我们支持人员的电子邮件中。
 
-**Part #3: get the log**
+**第三部分：获取日志**
 
-1. Connect your device to a PC with a USB cable.
+1. 用 USB 数据线将设备连接到电脑。
 
-1. Download [Android SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools#downloads). Choose the appropriate download link for your OS from the Downloads section. Once you tap the link, a ZIP file will be downloaded. You can extract the ADB (Android Debug Bridge) files from the ZIP file and store them wherever you want.
+1. 下载 [Android SDK 平台工具](https://developer.android.com/studio/releases/platform-tools#downloads)。 从「下载」部分选择适合您的操作系统的下载链接。 点击链接后，将下载一个 ZIP 文件。 您可以从 ZIP 文件中提取 ADB（Android 调试桥接器）文件，并将其存储到任何您想存的地方。
 
-1. Test whether ADB is working properly: connect your Android device to your computer using a USB cable, open the Command Prompt, PowerShell or Terminal and run the following command:
+1. 测试 ADB 是否正常工作：使用 USB 数据线将 Android 设备连接到电脑，打开命令提示符、PowerShell 或者终端并运行以下命令：
 
-    `adb devices`
+    `adb 设备`
 
-    An example of a successful result:
+    成功结果的示例：
 
-    ![Step 3](https://cdn.adtidy.org/content/kb/ad_blocker/android/logcat/logcat_step-3.png)
+    ![步骤 3](https://cdn.adtidy.org/content/kb/ad_blocker/android/logcat/logcat_step-3.png)
 
-1. Then run the following command (insert the relevant path):
+1. 然后运行以下命令（插入对应路径）：
 
     `adb logcat -v threadtime -d > C:\Program Files\platform-tools\logs.txt`
 
-    Email the created `txt` file as well as the time the problem was reproduced (from part #2) to our support team at support@adguard.com.
+    将创建的 `txt` 文件以及复现问题的时间（来自第二部分）通过电子邮件发送给我们的支持团队：support@adguard.com。
 
-### Alternative way for ROOT users
+### ROOT 用户的替代方法
 
-1. Download and run [Logcat](https://play.google.com/store/apps/details?id=com.pluscubed.matlog).
+1. 下载并运行 [Logcat](https://play.google.com/store/apps/details?id=com.pluscubed.matlog)。
 
-1. Choose **Record** in the menu. Choose a name for a log file or just press **OK**. Now you can press **Home** button, CatLog will continue recording the log in background.
+1. 在菜单中选择「**记录**」。 选择日志文件的名称或直接点「**OK**」。 现在您可以点击**首页** 键，CatLog 将继续在后台记录日志。
 
-1. Reproduce the issue.
+1. 复现问题。
 
-1. Open CatLog and press **Stop record** in the menu.
+1. 打开 CatLog，然后点击「**停止记录**」。
 
-1. Send this log to our support team.
+1. 将此日志发送给我们的支持团队。
 
 :::note
 
-Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+如果您在反馈的信息中指定 HelpDesk 号或 GitHub 问题号，我们的支持团队会更快地处理您的问题。
 
 :::

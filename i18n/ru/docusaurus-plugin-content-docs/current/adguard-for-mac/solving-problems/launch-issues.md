@@ -5,7 +5,7 @@ sidebar_position: 6
 
 :::info
 
-В этой статье рассказывается об AdGuard для Mac — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://adguard.com/download.html?auto=true)
+В этой статье рассказывается об AdGuard для Mac — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -29,12 +29,12 @@ sidebar_position: 6
 
 1. Откройте **Терминал** и введите команду `ls -@lOae /private/var/db/KernelExtensionManagement`.
 1. Убедитесь, что флаг `restricted` отсутствует (как на скриншоте). ![Пример команды *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/restricted-flag.jpg)
-1. Reboot your Mac in recovery mode.
-1. Open **Utilities** → **Terminal**.
-1. Enter `csrutil disable`.
-1. Enter administrator password.
-1. Reboot your Mac.
-1. Open **Terminal** and enter the following command: `sudo chflags restricted /private/var/db/KernelExtensionManagement`.
-1. Reboot your Mac in recovery mode.
-1. Open **Utilities** → **Terminal** → Enter `csrutil enable` → Enter administrator password → Reboot your Mac.
-1. Enable AdGuard protection.
+1. Перезагрузите ваш Mac в режиме восстановления.
+1. Откройте **Утилиты** → **Терминал**.
+1. Введите `csrutil disable`.
+1. Введите пароль администратора.
+1. Перезагрузите Mac.
+1. Откройте **Терминал** и введите команду `sudo chflags restricted /private/var/db/KernelExtensionManagement`.
+1. Перезагрузите ваш Mac в режиме восстановления.
+1. Откройте **Утилиты** → **Терминал** → Введите `csrutil enable` → Введите пароль администратора → Перезагрузите Mac.
+1. Включите защиту AdGuard.

@@ -5,19 +5,19 @@ sidebar_position: 9
 
 :::info
 
-Dieser Artikel behandelt AdGuard für Mac, einen multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://adguard.com/download.html?auto=true)
+Dieser Artikel behandelt AdGuard für Mac, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
 
 :::
 
-## Wo findet man die Eweiterten Einstellungen
+## So öffnen Sie die erweiterten Einstellungen
 
 :::caution
 
-Das Ändern von *Low-Level-Einstellungen* kann Probleme mit der Leistung von AdGuard verursachen, die Internetverbindung unterbrechen oder Ihre Sicherheit und Privatsphäre gefährden. Sie sollten diesen Abschnitt nur öffnen, wenn Sie sicher sind, was Sie tun, oder wenn unser Support-Team Sie darum gebeten hat.
+Changing *Advanced Settings* may cause problems with AdGuard's performance, break the Internet connection, or compromise your security and privacy. Make changes to this section only if you are sure of what you are doing or our support team has asked you to do it.
 
 :::
 
-Um zu *Erweiterte Einstellungen* zu gelangen, folgen Sie dieser Route: das AdGuard-Symbol im Taskleistenmenü → das Zahnradsymbol → Erweitert → Erweiterte Einstellungen.
+To find *Advanced Settings*, open AdGuard, click the gear icon, select *Advanced*, then select *Advanced Settings*.
 
 ## Erweiterte Einstellungen
 
@@ -74,6 +74,10 @@ Uses a local DNS proxy to look for configs in the ECH Config Lists. If found, en
 `network.https.enforce.certificate.transparency`
 
 Überprüft die Authentizität aller Zertifikate für die Domain basierend auf der Chrome Certificate Transparency Policy.
+
+`network.https.filter.http3.enabled`
+
+By setting `true`, you allow AdGuard to filter traffic sent over HTTP/3, the latest version of the HTTP protocol based on QUIC.
 
 `network.filtering.localnetwork`
 
@@ -153,15 +157,19 @@ Removes the Encrypted Client Hello parameters from responses.
 
 `stealth.antidpi.http.split.fragment.size`
 
-Passt die Größe der Fragmentierung der HTTP-Anfrage an. Accepted values: 1–1500. If an invalid size is specified, the system will use the default value.
+Passt die Größe der Fragmentierung der HTTP-Anfrage an. Valid values: 1–1500. If an invalid size is specified, the system will use the default value.
 
 `stealth.antidpi.clienthello.split.fragment.size`
 
-This option specifies the size of TCP packet fragmentation, which helps avoid deep packet inspection. Accepted values: 1–1500. If an invalid size is specified, the system will use the default value.
+This option specifies the size of TCP packet fragmentation, which helps avoid deep packet inspection. Valid values: 1–1500. If an invalid size is specified, the system will use the default value.
 
 `stealth.antidpi.http.space.juggling`
 
 Adds extra space between the HTTP method and the URL and removes space after the "Host:" field.
+
+`stealth.antidpi.split.delay.millisecond`
+
+Here you can specify the delay, in milliseconds, after sending the first fragment, if fragmentation is performed.
 
 `subscription.link.interception.userscript`
 

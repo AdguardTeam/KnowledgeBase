@@ -3,134 +3,130 @@ title: Как установить прокси-сертификат
 sidebar_position: 2
 ---
 
-Десктопные приложения AdGuard (AdGuard для Windows и AdGuard для Mac) можно использовать в качестве прокси. Это означает, что вы можете направлять трафик других устройств через AdGuard (полностью или трафик определённых приложений/браузеров).
+Our desktop apps, AdGuard for Windows and AdGuard for Mac, can be used as a proxy for other devices. This means that you can route other devices’ traffic through AdGuard (all traffic or traffic of specific apps and browsers).
 
 :::note
 
-Эти устройства должны находиться в одной сети с ПК или Mac, на котором установлен AdGuard.
+These devices must be in the same network as the PC or Mac with AdGuard.
 
 :::
 
-HTTP-трафик будет фильтроваться в любом случае, но чтобы AdGuard мог фильтровать HTTPS-трафик, необходимо вручную установить сертификат AdGuard на подключённое устройство.
+HTTP traffic will be filtered in any case, but for AdGuard to be able to filter HTTPS traffic you need to manually install the AdGuard certificate on the connected device.
 
 ## Как загрузить и установить сертификат
 
-В зависимости от операционной системы вашего устройства (Windows/Mac/Android/iOS), следуйте одной из этих инструкций:
+Depending on the operating system of the device whose traffic you want to filter, follow one of these instructions:
 
 ### Windows {#windows}
 
-1. Узнайте IP-адрес вашего десктопного компьютера, на котором установлен AdGuard.
+1. Note the IP address of your desktop computer with AdGuard installed.
 
-2. Убедитесь, что защита AdGuard включена. Затем установите флажок **Использовать AdGuard как HTTP-прокси** во вкладке **Сеть** в его настройках.
+1. Make sure that AdGuard protection is enabled. On a Windows computer, check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings. For Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
-3. На том же устройстве с AdGuard перейдите по этой ссылке, используя любой браузер: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. On the same computer with AdGuard, follow this link: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
-4. Нажмите кнопку **Скачать** .
+1. Нажмите кнопку **Скачать** . If the download doesn’t start, try another browser, for example Firefox.
 
-5. Перенесите загруженный файл **cert.cer** на устройство, трафик которого вы хотите направлять через AdGuard.
+1. Transfer the downloaded **cert.cer** file to the Windows device whose traffic you want to route through AdGuard. You can use a USB cable, Bluetooth, or cloud services to do this.
 
-6. На этом устройстве нажмите кнопку **Win**, введите `Управление сертификатами компьютеров` и нажмите **Enter**.
+1. On that device, press **Win**, type `Manage computer certificates` and press **Enter**.
 
-7. На странице *Сертификаты — Локальный компьютер* найдите папку *Доверенные корневые центры сертификации* → *Сертификаты*.
+1. On the *Certificates — Local Computer* page, find the *Trusted Root Certification Authorities* → *Certificates* folder.
 
-8. Щёлкните правой кнопкой мыши папку *Сертификаты* и выберите **Все задачи** → **Импорт...**.
+1. Щёлкните правой кнопкой мыши папку *Сертификаты* и выберите **Все задачи** → **Импорт...**.
 
-9. На странице *Мастер импорта сертификатов* нажмите **Далее**.
+1. На странице *Мастер импорта сертификатов* нажмите **Далее**.
 
-10. Щёлкните **Обзор...**, чтобы импортировать сертификат.
+1. Щёлкните **Обзор...**, чтобы импортировать сертификат.
 
-11. Перейдите к файлу сертификата **cert.cer**, выберите его и нажмите **Открыть**.
+1. Navigate to the **cert.cer** certificate file, select it, click **Open**, then **Next**.
 
-12. Нажмите **Далее**.
+1. Установите флажок **Поместить все сертификаты в следующее хранилище**.
 
-13. Установите флажок **Поместить все сертификаты в следующее хранилище**.
+1. Make sure that the *Certificate store* field displays *Trusted Root Certification Authorities* and click **Next**.
 
-14. Убедитесь, что в поле *Хранилище сертификатов* отображаются *Доверенные корневые центры сертификации*, и нажмите **Далее**.
+1. Нажмите **Готово**.
 
-15. Нажмите **Готово**.
+1. Press **Win**, then open **Settings**.
 
-16. Нажмите клавишу **Win** и откройте **Параметры**.
+1. Выберите **Сеть и интернет** → **Прокси-сервер**.
 
-17. Выберите **Сеть и интернет** → **Прокси-сервер**.
+1. Отключите *Определять параметры автоматически*.
 
-18. Отключите *Определять параметры автоматически*.
+1. Нажмите **Настройка** во вкладке *Использовать прокси-сервер*.
 
-19. Нажмите **Настройка** во вкладке *Использовать прокси-сервер*.
+1. Включите эту опцию. For **Proxy IP address**, type the IP address of your desktop computer that you noted in step 1. В поле **Порт** введите порт, выбранный в сетевых настройках десктопного приложения AdGuard.
 
-20. Включите эту опцию. В поле **IP-адрес прокси-сервера** введите IP-адрес из пункта 1. В поле **Порт** введите порт, выбранный в сетевых настройках десктопного приложения AdGuard.
-
-21. Нажмите **Сохранить**.
+1. Нажмите **Сохранить**.
 
 ### Mac {#mac}
 
 1. Узнайте IP-адрес вашего десктопного компьютера, на котором установлен AdGuard.
 
-2. Убедитесь, что защита AdGuard включена. Затем перейдите в **Настройки** → **Сеть** → **HTTP-прокси** и установите флажок **Использовать AdGuard в качестве HTTP-прокси**.
+1. Make sure that AdGuard protection is enabled. On a Windows computer, check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings. For Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
-3. На том же компьютере с AdGuard перейдите по этой ссылке, используя браузер: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. Follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
-4. Нажмите кнопку **Скачать**.
+1. Нажмите кнопку **Скачать**. If the download doesn’t start, try another browser, for example Firefox.
 
-5. Перенесите загруженный файл **cert.cer** на устройство, трафик которого вы хотите направлять через AdGuard.
+1. Transfer the downloaded **cert.cer** file to the Mac device whose traffic you want to route through AdGuard. You can use a USB cable, Bluetooth, or cloud services to do this.
 
-6. Дважды щёлкните загруженный файл сертификата.
+1. Дважды щёлкните загруженный файл сертификата.
 
-7. Введите пароль администратора и нажмите **Изменить связку ключей**.
+1. Введите пароль администратора и нажмите **Изменить связку ключей**.
 
-8. Перейдите в **Spotlight** (значок поиска в правом верхнем углу), введите «Связка ключей» и выберите **Связка ключей** в результатах поиска.
+1. Go to **Spotlight** (the search icon in the top right corner), type in `Keychain Access`, and then select **Keychain Access** from the search results.
 
-9. В разделе *Система* выделите добавленный сертификат.
+1. В разделе *Система* выделите добавленный сертификат.
 
-10. Щёлкните по нему правой кнопкой мыши и в контекстном меню выберите **Свойства**.
+1. Right-click it and select **Get Info** from the context menu.
 
-11. Разверните *Доверие*, чтобы увидеть политики доверия для сертификата.
+1. Разверните *Доверие*, чтобы увидеть политики доверия для сертификата.
 
-12. В разделе *Протокол защищённых сокетов (SSL)* выберите **Всегда доверять**.
+1. В разделе *Протокол защищённых сокетов (SSL)* выберите **Всегда доверять**.
 
-13. Откройте **Системные настройки** → **Сеть** → и выберите верхнее активное соединение.
+1. Open **System Preferences** → **Network** and select the active connection at the top.
 
-14. Нажмите **Подробности...** и перейдите на вкладку **Прокси**.
+1. Нажмите **Подробности...** и перейдите на вкладку **Прокси**.
 
-15. Установите два флажка: *Веб-прокси (HTTP)* и *Безопасный веб-прокси (HTTPS)*. В поле **Сервер** введите IP-адрес из пункта 1. В поле **Порт** введите порт, выбранный в сетевых настройках десктопного приложения AdGuard.
+1. Tick two checkboxes: *Web proxy (HTTP)* and *Secure web proxy (HTTPS)*. In the **Server** field, type the IP address of your computer that you noted in step 1. В поле **Порт** введите порт, выбранный в сетевых настройках десктопного приложения AdGuard.
 
 ### Android {#android}
 
 1. Узнайте IP-адрес вашего десктопного компьютера, на котором установлен AdGuard.
 
-2. Убедитесь, что защита AdGuard включена. Затем установите флажок **Использовать AdGuard как HTTP-прокси** во вкладке **Сеть** в его настройках.
+1. Make sure that AdGuard protection is enabled. On a Windows computer, check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings. For Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
-3. На том же компьютере с AdGuard перейдите по этой ссылке, используя браузер: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. На том же компьютере с AdGuard перейдите по этой ссылке, используя браузер: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
-4. Нажмите кнопку **Скачать**.
+1. Нажмите кнопку **Скачать**. If the download doesn’t start, try another browser, for example Firefox.
 
-5. Перенесите загруженный файл **cert.cer** на устройство, трафик которого вы хотите направлять через AdGuard.
+1. Transfer the downloaded **cert.cer** file to the Android device whose traffic you want to route through AdGuard. You can use a USB cable, Bluetooth, or cloud services to do this.
 
-6. Найдите и откройте ранее загруженный сертификат **cert.cer**.
+1. Locate and tap the previously downloaded **cert.cer** certificate to open the file and follow the instructions to install the certificate.
 
-7. На некоторых телефонах вам может быть предложено ввести пароль устройства. Сделайте это, затем нажмите **OK**. Сертификат установлен.
+1. Android devices do not trust certificates by default, so there will be a warning — you can ignore it. On some phones you may be asked to enter your device password. Do so, then press **OK**. The certificate will be installed.
 
-8. Откройте настройки активной сети Wi-Fi.
+1. Откройте настройки активной сети Wi-Fi.
 
-9. В поле **Прокси** выберите **Вручную**. В поле **Имя узла прокси** введите IP-адрес из пункта 1. В поле **Порт** введите порт, выбранный в сетевых настройках десктопного приложения AdGuard.
+1. Change the **Proxy type** to **Manual**. For **Proxy hostname**, enter the noted IP address of your desktop computer you noted in step 1. В поле **Порт** введите порт, выбранный в сетевых настройках десктопного приложения AdGuard.
 
 ### iOS {#ios}
 
 1. Узнайте IP-адрес вашего десктопного компьютера, на котором установлен AdGuard.
 
-2. Убедитесь, что защита AdGuard включена. Затем установите флажок **Использовать AdGuard как HTTP-прокси** во вкладке **Сеть** в его настройках.
+1. Make sure that AdGuard protection is enabled. On a Windows computer, check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings. For Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
-3. На том же компьютере с AdGuard перейдите по этой ссылке, используя браузер: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. На том же компьютере с AdGuard перейдите по этой ссылке, используя браузер: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
-4. Нажмите кнопку **Скачать** .
+1. Нажмите кнопку **Скачать** . If the download doesn’t start, try another browser, for example Firefox.
 
-5. Перенесите загруженный файл **cert.cer** на устройство, трафик которого вы хотите направлять через AdGuard.
+1. Перенесите загруженный файл **cert.cer** на устройство с iOS, трафик которого вы хотите направлять через AdGuard. You can use a USB cable, Bluetooth, or cloud services to do this.
 
-6. Откройте **Параметры** → **Безопасность**→ **Шифрование & Учётные данные** → **Установить сертификат**. Устройства Android по умолчанию не доверяют сертификатам, поэтому при выборе **сертификата ЦС**появится предупреждение. Нажмите **Установить в любом случае**.
+1. На устройстве iOS откройте **Настройки** → **Профиль загружен** и нажмите **Установить** в правом верхнем углу. Введите пароль и подтвердите установку. Нажмите **Готово**.
 
-7. Откройте **Настройки** → **Профиль загружен** и нажмите **Установить** в правом верхнем углу. Введите пароль и подтвердите установку. Нажмите **Готово**.
+1. Перейдите на страницу **Настройки** → **Основные** → **Об этом устройстве** → **Доверие сертификатам**. Включите переключатель рядом с *Adguard Personal CA*. Сертификат установлен.
 
-8. Перейдите на страницу **Настройки** → **Основные** → **Об этом устройстве** → **Доверие сертификатам**. Включите переключатель рядом с *Adguard Personal CA*. Сертификат установлен.
+1. На этом устройстве откройте настройки активной сети Wi-Fi.
 
-9. На этом устройстве откройте настройки активной сети Wi-Fi.
-
-10. В **Настройке прокси** выберите **Вручную**. В поле **Сервер** введите IP-адрес из пункта 1. В поле **Порт** введите порт, выбранный в сетевых настройках десктопного приложения AdGuard.
+1. Change the **Proxy type** to **Manual**. В поле **Имя узла прокси** введите IP-адрес из пункта 1. В поле **Порт** введите порт, выбранный в сетевых настройках десктопного приложения AdGuard.

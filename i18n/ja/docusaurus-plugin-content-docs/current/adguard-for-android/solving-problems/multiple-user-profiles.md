@@ -5,7 +5,7 @@ sidebar_position: 10
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Android」について書いています。 実際に使ってみるには、[AdGuardアプリをダウンロード](https://adguard.com/download.html?auto=true)してください。
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -15,7 +15,7 @@ In this article you will find the methods on how to solve problems with AdGuard 
 
 On Android 9 and later, if AdGuard is installed for more than one user profile on your device, you may encounter problems when uninstalling the app. When you uninstall AdGuard from one user profile, the app will still appear on the app list, but you won't be able to uninstall or reinstall it. This happens because AdGuard is installed for a different user profile on the device.
 
-If you try to reinstall AdGuard after an unsuccessful removal attempt, you will see the error message "You can't install the app on your device".
+If you try to reinstall AdGuard after an unsuccessful removal attempt, you will see the error message “You can't install the app on your device”.
 
 To solve this problem, you need to uninstall the application for all users: go to Settings → All apps → AdGuard. Tap the three-dot menu in the top right corner and select *Uninstall for all users*.
 
@@ -51,7 +51,7 @@ This approach is available starting from **AdGuard v3.5 nightly 6**. 古いバ�
 
 :::
 
-1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
 
 1. **USBケーブル**を使用して**ADB**をインストールしたコンピューターまたはラップトップにAndroidデバイスを接続します。
 
@@ -85,7 +85,7 @@ To enable this mode, open **AdGuard Settings** → **Network** → **Filtering m
 - 端末**設定**を開く
 - **高度な設定**をタップ
 - 下にスクロールして**デュアルメッセンジャー**をタップ
-- チェックついているアプリをすべて**オフ**にする
+- Disable the **Dual messenger** for all apps;
 - 端末画面オフにして5～10分程度放置する
 - 画面のロックを解除し、再度VPNプロファイルの作成を試みてください。
 
@@ -94,5 +94,5 @@ To enable this mode, open **AdGuard Settings** → **Network** → **Filtering m
 - 端末**設定**を開く
 - 「**便利な機能**」を開く（端末によっては「一般」や他のメニュー名称の場合もあります）
 - 下にスクロールして、「**デュアルアプリ**」をタップ
-- アプリに対するスイッチをすべてオフにする
+- Remove all apps from the list;
 - 端末を再起動する

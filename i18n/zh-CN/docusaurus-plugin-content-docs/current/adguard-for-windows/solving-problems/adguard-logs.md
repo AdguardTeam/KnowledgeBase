@@ -1,56 +1,62 @@
 ---
-title: How to collect AdGuard logs
+title: 如何收集 AdGuard 日志记录
 sidebar_position: 3
 ---
 
 :::info
 
-本文适用于 Windows 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 要了解工作原理， 请[下载 AdGuard 应用程序](https://adguard.com/download.html?auto=true)
+本文适用于 Windows 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 如需了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)
 
 :::
 
-To analyze and diagnose different problems that may potentially arise, the AdGuard support service might need AdGuard log files. These files contain records about errors and other events that occurr with the software. Below is the brief instruction describing the way to get the log files and send them to the support service if necessary.
+要分析和诊断可能潜在的问题，AdGuard 技术人员可能需要 AdGuard 日志记录文件。 这些文件包含本软件发生的错误记录和其它事件。 下面是简短的说明，描述获取日志文件的方法，并在必要时将其发送给支持服务。
 
-1. Open the AdGuard settings. Go to the *General Settings* section, scroll down to the end of the screen and switch the *Logging Level* to *Debug*.
+> AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/en/privacy/windows.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
 
-    ![Debug logging level *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
+### Debug logs {#debug-logs}
 
-1. Reproduce the issue.
+1. 打开 AdGuard 设置。 转到「*常规设置*」部分，下滚至界面底部并切换「*日志级别*」至「*调试*」。
 
-    We strongly advise to take note of the exact time when you reproduced the issue: it will help our support team to find relevant log entries and solve the problem faster.
+    ![调试级别日志 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
 
-1. Export the recorded logs using the *Export Logs* button.
+1. 复现问题。
 
-    ![Export logs *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
+    我们强烈建议用户记录问题重现的确切时间：这将有助于我们的支持团队找到相关日志条目并更快地解决问题。
 
-    Save the archive to any folder.
+1. 请使用「*导出日志*」按钮以导出记录日志。
 
-1. **Important**: after exporting the logs, set the logging level back to *Standard*. *Debug* logging level will slow down the application.
+    ![导出日志 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
 
-1. Send the archive to the AdGuard support service at **support@adguard.com**, describe the problem and don't forget to mention the time when you reproduced the issue.
+    将存档保存到任意文件夹。
 
-### Trace logs {#trace-logs}
+1. **注意**：导出日志后，将日志记录级别设置为「*标准*」。 「*调试*」日志记录级别会降低应用程序的运行速度。
 
-Sometimes support team members may ask you to send *trace* logs. Then you will need to do the following:
+1. 发送存档给 AdGuard 支持团队 **support@adguard.com** 时，请描述问题和出现问题的时间。
 
-1. Stop AdGuard by right-clicking the AdGuard icon in the tray menu and choosing *Exit AdGuard*:
+### 跟踪日志 {#trace-logs}
 
-    ![Exit AdGuard *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-3.png)
+有时，支持团队成员可能会要求用户发送「*跟踪*」日志。 要发送跟踪日志，请执行以下操作：
 
-    Please don't leave the service running:
+1. 右击托盘菜单内的 AdGuard 图标并选择「*退出 AdGuard*」以停止 AdGuard：
 
-    ![Stop AdGuard Service *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_logs_4.png)
+    ![退出 AdGuard *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-3.png)
 
-1. Open the console (type `cmd` in the start panel).
+    请不要让服务继续运行：
 
-1. Run the app with the command `C:\"Program Files (x86)"\Adguard\Adguard.exe /trace` if you are using 64-bit Windows, and `C:\"Program Files"\Adguard\Adguard.exe /trace` in case if you use 32-bit one.
+    ![停止 AdGuard 服务 *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/eng_logs_4.png)
 
-1. Reproduce the issue.
+1. 打开控制台（在开始面板中键入 `cmd`）。
 
-    We strongly advise to take note of the exact time when you reproduced the issue: it will help our support team to find relevant log entries and solve the problem faster.
+1. 如果您已安装适用于 Windows 的 AdGuard v7.16 或更高版本，请使用命令 `C:\"Program Files"\Adguard\Adguard.exe /trace` 运行程序，无论 Windows 位数如何。
 
-1. Export the recorded logs using the *Export Logs* button.
+如果您有旧版本的 AdGuard for Windows：如您使用的是 64 位 Windows，则请使用命令 "C:\Program Files (x86)\Adguard\Adguard.exe /trace" 运行程序；如您使用的是 32 位 Windows，则请使用命令 "C:\Program Files\Adguard\Adguard.exe /trace"。
 
-    ![Export logs *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
+1. 复现问题。
 
-    Don't worry if the log file is large. We need to know as much detail as possible to fix your problem.
+    我们强烈建议用户记录问题重现的确切时间：这将有助于我们的支持团队找到相关日志条目并更快地解决问题。
+
+1. 请使用「*导出日志*」按钮以导出记录日志。
+
+    ![导出日志 *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-2.png)
+
+    用户无需担心日志文件大小。 我们需要了解尽可能多的细节来解决您的问题。

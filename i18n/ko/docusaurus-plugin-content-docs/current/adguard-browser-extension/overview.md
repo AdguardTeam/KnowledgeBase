@@ -1,152 +1,154 @@
 ---
-title: Features overview
-sidebar_position: 1
+title: 기능 개요
+sidebar_position: 10
 ---
 
 :::info
 
-브라우저만 보호하는 AdGuard 브라우저 확장 프로그램에 관한 문서입니다. 기기 전체를 보호하려면, [AdGuard 앱을 다운로드](https://adguard.com/download.html?auto=true)하세요.
+브라우저만 보호하는 AdGuard 브라우저 확장 프로그램에 관한 문서입니다. 기기 전체를 보호하려면 [AdGuard 앱을 다운로드하세요](https://agrd.io/download-kb-adblock).
 
 :::
 
-AdGuard provides a range of software products that block ads and trackers on different platforms. One of the most popular AdGuard products is a free extension that works in five popular browsers: Chrome, Firefox, Edge, Opera, and Yandex Browser. Browser extensions include basic ad-blocking features but cannot be compared with full-featured desktop programs, such as [AdGuard for Windows](/adguard-for-windows/overview) and [AdGuard for Mac](/adguard-for-mac/overview).
+AdGuard는 다양한 플랫폼에서 광고와 추적기를 차단하는 다양한 프로그램를 제공합니다. 가장 인기 있는 AdGuard 제품 중 하나는 5개의 주요 브라우저인 Chrome, Firefox, Edge, Opera, Yandex 브라우저에서 작동하는 무료 확장 프로그램입니다. Browser extensions include basic ad-blocking features but cannot be compared with full-featured desktop programs, such as [AdGuard for Windows](/adguard-for-windows/features/home-screen) and [AdGuard for Mac](/adguard-for-mac/features/main).
 
-![AdGuard Browser Extension for Chrome *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
+![Chrome용 AdGuard 브라우저 확장 프로그램 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
 
-## Availability {#br-extension}
+## 호환성 {#br-extension}
 
-[AdGuard Browser Extension](https://adguard.com/adguard-browser-extension/overview.html) is available for most major browsers. You can easily find it in your browser’s online store or on our official website.
+[AdGuard 브라우저 확장 프로그램](https://adguard.com/adguard-browser-extension/overview.html)은 대부분의 주요 브라우저에서 사용할 수 있습니다. 브라우저의 부가 기능 스토어나 공식 웹사이트에서 쉽게 찾을 수 있습니다.
 
-![Available for most popular browsers *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
+![대부분의 주요 브라우저에서 사용 가능 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
 
 :::note
 
-We have a standalone extension for Safari. Since the release of [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html), most of the ad-blocking extensions have experienced huge issues and many of them stopped functioning. We had to develop a [separate extension for Safari](/adguard-for-safari/overview) that has some differences in comparison with the extension described in this article.
+Safari용 독립 실행형 확장 프로그램이 있습니다. [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html) 출시 이후 대부분의 광고 차단 확장 프로그램에서 큰 문제가 발생했으며, 해당 프로그램의 많은 기능이 작동을 멈췄습니다. We had to develop a [separate extension for Safari](/adguard-for-safari/features/general) that has some differences in comparison with the extension described in this article.
 
 :::
 
-**Do not forget that the functionality of each extension is strictly limited by the browser’s capabilities.** So if you want to get full-fledged protection, consider installing a standalone program for your computer. There's [a reason why](#comparison).
+**각 확장 프로그램의 기능은 브라우저에 의해 엄격하게 제한된다는 것을 잊지 마세요.** 따라서 본격적인 보호를 받으려면 컴퓨터용 독립 실행형 프로그램을 설치하는 것이 좋습니다. 여기에는 [이유](#comparison)가 있습니다.
 
-## Ad blocking {#adblocker}
+## 광고 차단 {#adblocker}
 
-Blocking ads is clearly the key functionality of any ad blocker, and AdGuard is not an exception. The extension will successfully block ads on any page in your browser. Ad blocking is based on so-called filter lists, or simply [filters](/general/ad-filtering/how-ad-blocking-works). Filters can be enabled or disabled in your extension's settings. You can customize ad blocking by activating specific filters.
+광고 차단은 모든 광고 차단기의 핵심 기능이며, AdGuard도 예외는 아닙니다. 확장 프로그램은 브라우저의 모든 페이지에서 광고를 성공적으로 차단합니다. 광고 차단은 소위 필터 목록 또는 [필터](/general/ad-filtering/how-ad-blocking-works)를 기반으로 합니다. 확장 프로그램 설정에서 필터를 활성화하거나 비활성화할 수 있습니다. 특정 필터를 활성화하여 광고 차단을 맞춤 설정할 수 있습니다.
 
-### Filters {#filters}
+### 필터 {#filters}
 
-In essence, filter lists are sets of rules written in a special language. Your ad blocker interpretes the rules and implements them. As a result, you stop seeing ads on your webpages.
+본질적으로 필터 목록은 특수 언어로 작성된 규칙 집합입니다. 광고 차단기는 규칙을 해석하고 이를 구현합니다. 결과적으로 웹페이지에 광고가 표시되지 않습니다.
 
-![Filters *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters.png)
+![필터 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters.png)
 
-All filters are grouped according to their role. For example, there are categories for ad-blocking filters, privacy protection filters, social media-related filters, etc. You can enable either individual filters or the entire group at once.
+모든 필터는 역할에 따라 분류됩니다. 예를 들어 광고 차단 필터, 프라이버시 보호 필터, 소셜 미디어 필터 등의 범주가 있습니다. 개별 필터 또는 전체 그룹을 한 번에 활성화할 수 있습니다.
 
-![Ad blocking filters *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters1.png)
+![광고 차단 필터 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters1.png)
 
-#### Custom filters {#custom}
+#### 사용자 정의 필터 {#custom}
 
-While the features of other filter groups are more or less predictable, there is a group called *Custom* that may raise additional questions.
+다른 필터 그룹의 기능은 어느 정도 예측할 수 있지만, *사용자 지정 필터* 라는 범주가 있어 추가적인 의문을 제기할 수 있습니다.
 
-![Custom filters *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters.png)
+![사용자 정의 필터 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters.png)
 
-In this tab, you can add filters that are not present in the extension by default. There are plenty of [publicly available filters on the Internet](https://filterlists.com). Moreover, you can create and add your own filters. In fact, you can build any set of filters and customize ad blocking the way you like.
+이 탭에서는 기본적으로 확장 프로그램에 없는 필터를 추가할 수 있습니다. 인터넷에는 [공개적으로 사용 가능한 필터](https://filterlists.com)가 많이 있습니다. 또한 자신만의 필터를 만들고 추가할 수 있습니다. 필터 세트를 만들고 원하는 방식으로 광고 차단을 맞춤 설정할 수 있습니다.
 
-To add a filter, just click *Add custom filter*, enter the URL or the file path of the filter you want to be added and click *Next*.
+필터를 추가하려면 *사용자 지정 필터 추가*를 클릭하고 추가하려는 필터의 URL 또는 파일 경로를 입력한 후 *다음*을 클릭합니다.
 
-![Add a custom filter *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
+![사용자 정의 필터 추가 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
 
-### User rules {#user-rules}
+### 사용자 규칙 {#user-rules}
 
-*User rules* is another tool that helps you customize the blocking of ads.
+*사용자 규칙*은 광고 차단을 맞춤 설정하는 데 도움이 되는 또 다른 도구입니다.
 
-![User rules *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_user_rules.png)
+![사용자 규칙 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_user_rules.png)
 
-There are several ways to add new rules. The most straightforward is to just type a rule in, but it requires some knowledge of the [rule syntax](/general/ad-filtering/create-own-filters).
+새 규칙을 추가하는 방법에는 여러 가지가 있습니다. 가장 간단한 방법은 규칙을 직접 입력하는 것이지만 [규칙 구문](/general/ad-filtering/create-own-filters)에 대한 약간의 지식이 필요합니다.
 
-You can import a ready-to-use filter list from a text file as well. **Make sure that different rules are separated by line breaks.** Note that importing a ready-to-use filter list is better done in the [Custom filters](#custom) tab.
+텍스트 파일에서 바로 사용할 수 있는 필터 목록을 가져올 수도 있습니다. **서로 다른 규칙은 줄 바꿈으로 구분해야 합니다.** 바로 사용할 수 있는 필터 목록을 가져오려면 [사용자 지정 필터](#custom) 탭에서 하는 것이 좋습니다.
 
-Besides, you can export your own filtering rules. This option is good for transferring your list of rules between browsers or devices.
+또한 자신만의 필터링 규칙을 내보낼 수도 있습니다. 이 옵션은 브라우저나 장치 간에 규칙 목록을 전송할 때 유용합니다.
 
-When you add a website to the Allowlist (more on that [below](#allowlist)) or use the Assistant tool for hiding an element on the page, a corresponding rule is also saved in *User rules*.
+웹사이트를 허용 목록에 추가하거나 (자세한 내용은 [아래](#allowlist) 참조) 페이지에서 요소를 숨기기 위해 어시스턴트 도구를 사용하면 해당 규칙이 *사용자 규칙*에도 저장됩니다.
 
-### Allowlist {#allowlist}
+### 허용 목록 {#allowlist}
 
-The *allowlist* is used to exclude certain websites from filtering. Blocking rules are not applied to the websites on the list.
+*허용 목록*은 특정 웹사이트를 필터링에서 제외하는 데 사용됩니다. 목록에 있는 웹사이트에는 차단 규칙이 적용되지 않습니다.
 
-![Allowlist *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist.png)
+![허용 목록 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist.png)
 
-The *allowlist* can be inverted, too: you can unblock ads everywhere except on the websites added to this list. To do that, activate the *Invert allowlist* option.
+*허용 목록*을 반대로 사용할 수도 있습니다. 이 목록에 추가된 웹사이트를 제외한 모든 곳에서 광고 차단을 해제할 수 있습니다. 이렇게 하려면 *허용 목록 반전* 옵션을 활성화합니다.
 
-![Invert allowlist *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist1.png)
+![허용 목록 반전 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist1.png)
 
-You can also import and export existing allowlists. It is useful, for instance, if you want to apply the same allowing rules in each of your browsers.
+허용 목록을 가져오거나 내보낼 수도 있습니다. 예를 들어 각 브라우저에 동일한 규칙을 적용하려는 경우 유용합니다.
 
-## Stealth Mode {#stealth-mode}
+## 스텔스 모드 {#stealth-mode}
 
-*Stealth Mode* aims to ensure the protection of sensitive personal data from online trackers and fraudsters.
+*스텔스 모드*는 추적기 및 사기 사이트로부터 민감한 개인정보를 보호하는 것을 목표로 합니다.
 
-![Stealth Mode *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_stealth_mode.png)
+![스텔스 모드 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_stealth_mode.png)
 
-In Stealth Mode, you can prevent a website from seeing the search queries from you used to find it on the Internet, automatically delete third-party and website’s own cookies, etc. A [separate article](/general/stealth-mode) is devoted to all these features.
+스텔스 모드에서는 웹사이트가 인터넷에서 해당 웹사이트를 찾는 데 사용한 검색어를 볼 수 없도록 하고, 쿠키(제3자 쿠키 포함)를 자동으로 삭제하는 등의 기능을 사용할 수 있습니다. 모든 기능에 대한 자세한 내용은 [별도 문서](/general/stealth-mode)에서 확인할 수 있습니다.
 
 :::note
 
-Some of the *Stealth Mode* options available in full-fledged apps are not present in the browser extensions due to technical restrictions.
+정식 앱에서 사용이 가능한 일부 *스텔스 모드* 옵션은 기술적 한계로 인해 확장 프로그램에서는 존재하지 않습니다.
 
 :::
 
-## Other features and options {#other}
+## 기타 기능 및 설정 {#other}
 
-Apart from the large key modules of AdGuard Browser Extension, there are several more specific features that can be configured in the *General* and *Additional settings* tabs of the extension settings.
+AdGuard 브라우저 확장 프로그램의 주요 모듈 외에도 확장 프로그램 설정의 *일반* 및 *추가 설정* 탭에서 설정 가능한 몇 가지 특정 기능이 존재합니다.
 
-### General {#general}
+### 일반 {#general}
 
-In the *General* tab, you can allow search ads and the [self-promotion of websites](/general/ad-filtering/search-ads), enable the automatic activation of language-specific filters, indicate the filters update interval, etc.
+*일반* 탭에서 검색 광고 및 [웹사이트 자체 홍보](/general/ad-filtering/search-ads)를 허용하고 언어별 필터 자동 활성화나 필터 업데이트 주기 등을 지정할 수 있습니다.
 
-![General *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_general.png)
+![일반 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_general.png)
 
-Besides, here you can enable [*Phishing and malware protection*](/general/browsing-security).
+또한 여기에서 [*피싱 및 멀웨어 방지*](/general/browsing-security)를 활성화할 수 있습니다.
 
-You can save your settings configuration by clicking the *Export settings* button. The settings will be saved as a .json file. To upload the previously saved settings configuration, use the *Import settings* function. You can even use it to quickly switch between different settings profiles or even to transfer settings configurations between different browsers.
+*설정 내보내기* 버튼을 클릭하여 구성을 저장할 수 있습니다. 설정은 .json 파일로 저장됩니다. 이전에 만든 구성을 적용하려면 *설정 가져오기* 기능을 사용하세요. 다른 설정 프로필 간에 빠르게 전환하거나 다른 브라우저 간에 구성을 전송하는 데에도 사용할 수 있습니다.
 
-### Additional settings {#misc}
+### 추가 설정 {#misc}
 
-The *Additional settings* section contains a range of various settings that are related to the ad blocking process and application usability.
+*추가 설정* 범주에는 광고 차단 프로세스 및 애플리케이션 사용성과 관련된 다양한 설정이 포함되어 있습니다.
 
-![Additional settings *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_additional_settings.png)
+![추가 설정 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_additional_settings.png)
 
-From this tab, you can activate optimized filters, enable notifications about extension updates, open the *Filtering log*, or clear the statistics of blocked ads and trackers.
+이 탭에서 최적화된 필터를 활성화하고, 확장 프로그램 업데이트에 대한 알림을 사용 설정하고, *필터링 로그*를 열거나 차단된 광고 및 트래커의 통계를 지울 수 있습니다.
 
-Besides, you can opt to help us with the development of filters by sending the statistics on applied rules: which ones are triggered, on which websites, and how often. This option is disabled by default as we do not collect user data without consent. Yet, if you enable it, all data will be strictly anonymized.
+또한 적용된 규칙에 대한 통계(어떤 규칙이, 어떤 웹사이트에서, 얼마나 자주 트리거되는지 등)를 보내 필터 개발에 도움을 줄 수도 있습니다. 저희는 사용자의 동의 없이 데이터를 수집하지 않으므로 이 옵션은 기본적으로 비활성화되어 있습니다. 이 기능을 활성화하면 모든 데이터는 완전한 익명으로 전송됩니다.
 
-### About {#about}
+### 정보 {#about}
 
-In the *About* section, you can find infos about the current version, links to the EULA and Privacy policy, and to the repository of the Browser extension on GitHub.
+*정보* 범주에서 현재 버전에 대한 정보, EULA 및 개인정보취급방침에 대한 링크, GitHub의 브라우저 확장 프로그램 저장소를 확인할 수 있습니다.
 
-![About *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)
+![정보 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)
 
-## Extension’s main menu {#main-menu}
+## 확장 프로그램의 기본 메뉴 {#main-menu}
 
-The extension's main page can be accessed by clicking on the extension's icon on the toolbar of your browser.
+확장 프로그램의 메인 페이지는 브라우저의 도구 모음에서 확장 프로그램의 아이콘을 클릭하여 액세스할 수 있습니다.
 
-![Main menu *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
+![기본 메뉴 *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
 
-On the main page, you can hide any element on any page manually (a corresponding rule will be added to the *User rules*), open the *Filtering log* to view the complete information about your browser's traffic and block requests on the go, or look at a website’s security report. Besides, you can submit a complaint about any website (for example, if there are missed ads on the page, our filter engineers will review the report and fix the problem) and see the statistics on applied blocking rules.
+기본 페이지에서 페이지의 모든 요소를 수동으로 숨기거나(*사용자 규칙*에 해당 규칙이 추가됨), *필터링 로그*를 열어 브라우저의 트래픽에 대한 전체 정보를 확인하고 이동 중에 요청을 차단하거나 웹사이트의 보안 보고서를 확인할 수 있습니다. 또한 모든 웹사이트에 대한 불만 사항을 제출하고 (예: 페이지에 누락된 광고가 있는 경우 필터 개발자가 신고를 검토하여 문제를 해결합니다) 적용된 차단 규칙에 대한 통계를 확인할 수 있습니다.
 
-All web requests made by the browser are displayed in the *Filtering log*, along with detailed information about each request. The *Filtering log* makes it easy, for example, to monitor requests blocked by AdGuard Browser Extension. Besides, it allows you to block any request or add a previously blocked request to Allowlist in two clicks. The *Filtering log* also offers you a wide variety of options for sorting web requests, which can be helpful when creating your own filtering rules. You can open the *Filtering log* by selecting the corresponding item in the main menu, or from the settings page (in the "Additional settings" tab).
+브라우저에서 이루어진 모든 웹 요청은 *필터링 로그*에 각 요청에 대한 자세한 정보와 함께 표시됩니다. 예를 들어, *필터링 로그*를 통해 AdGuard 브라우저 확장 프로그램에서 차단한 요청들을 쉽게 모니터링할 수 있습니다. 또한 두 번의 클릭으로 모든 요청을 차단하거나 이전에 차단한 요청을 허용 목록에 추가할 수 있습니다. *필터링 로그* 에서 웹 요청을 정렬할 수 있는 다양한 옵션도 제공하므로 사용자 정의 규칙을 만들 때 유용하게 사용할 수 있습니다. 기본 메뉴에서 해당 항목을 선택하거나 설정 페이지(추가 설정 탭)에서 *필터링 로그*를 열 수 있습니다.
 
-By clicking the icons in the top right corner of the extension's main menu, you can open the extension settings or pause the protection.
+확장 프로그램의 주 메뉴 오른쪽 상단에 있는 아이콘을 클릭하면 콘텐츠 차단기 설정을 열거나 보호 기능을 일시 중지할 수 있습니다.
 
-## AdGuard Browser Extension vs. standalone apps {#comparison}
+## AdGuard 확장 프로그램 vs. 독립 실행형 프로그램 {#comparison}
 
-The main advantage of AdGuard standalone programs over browser extensions is that the programs can block ads in every browser and in almost all apps. You may use different browsers at the same time, the app will filter ads and online threats in all of them equally well.
+<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/ZGwceZP-0mM" title="YouTube 동영상 플레이어" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-The second difference is that the possibilities of extension-based ad blockers are strictly limited by browser guidelines. The browser extensions have to conform to the policies of the browsers, where ad blocking might be restricted. Thus, some types of filtering rules are not supported by the extensions. The functionality of the desktop apps is not limited, so they have a better filtering quality.
+브라우저 확장 프로그램과 비교했을 때 AdGuard 독립 실행형 프로그램의 가장 큰 장점은 모든 브라우저와 거의 모든 앱에서 광고를 차단할 수 있다는 점입니다. 여러 브라우저를 동시에 사용해도 앱이 모든 브라우저에서 광고와 온라인 위협을 동일하게 필터링합니다.
 
-Whereas AdGuard Browser Extension is free and easy to install, and has filters to block ads and fight online threats, the full-fledged apps are more powerful and have a list of advanced features. See all the differences in the comparative table below.
+두 번째 차이점은 확장 프로그램 기반 광고 차단기의 가능성은 브라우저 가이드라인에 의해 엄격하게 제한된다는 점입니다. 브라우저 확장 프로그램은 광고 차단이 제한될 수 있는 브라우저의 정책을 준수해야 합니다. 따라서 일부 유형의 필터링 규칙은 확장 프로그램에서 지원되지 않습니다. 데스크톱 앱의 기능은 제한되지 않으므로 필터링 품질이 더 우수합니다.
 
-![Extension vs. App *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_comparison.png)
+AdGuard 브라우저 확장 프로그램은 무료이며, 설치가 쉽고 광고를 차단하며 온라인 위협에 대응하는 필터가 있습니다. 정식 앱의 경우 확장 프로그램 대비 더 강력하고 고급 기능 목록을 제공합니다. 아래 비교 표에서 모든 차이점을 확인하세요.
 
-`1` – within browser restrictions and only in the browser where it is installed;
+![확장 프로그램과 앱 비교 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_comparison.png)
 
-`2` – the extension is unable to detect requests from other extensions. If a malicious or tracking extension sends a request to its server to show you ads or track your activity, AdGuard Browser Extension will not be able to block that request;
+`1` - 설치된 브라우저에서만 사용할 수 있으며 브라우저에 의해 제한을 받습니다.
 
-`3` – not all types of ads and threats can be blocked by browser extensions due to certain browser limitations. Some elements may get to the page and slow down the loading process. Besides, unlike browser-based ad blockers, the AdGuard app blocks ads before they are loaded to the browser. This saves traffic and speeds up page loading.
+`2` - 콘텐츠 차단기가 다른 확장 프로그램의 요청을 감지할 수 없습니다. 만약 악성 또는 추적 확장 프로그램이 광고나 당신의 활동을 추적하기 위해 서버에 요청을 보내는 경우, AdGuard 브라우저 확장 프로그램은 해당 요청을 차단할 수 없습니다.
+
+`3` - 특정 브라우저 제한으로 인해 모든 유형의 광고 및 위협이 브라우저 확장 프로그램으로 차단되는 것은 아닙니다. 일부 요소는 페이지로 이동하여 로딩 프로세스가 느려질 수 있습니다. 또한 브라우저 기반 광고 차단기와 달리 AdGuard 앱은 광고가 브라우저에 로드되기 전에 차단합니다. 이렇게 하면 트래픽이 절약되고 페이지 로딩 속도가 빨라집니다.

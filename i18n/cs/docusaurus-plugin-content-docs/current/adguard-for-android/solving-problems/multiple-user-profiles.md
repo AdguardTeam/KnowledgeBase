@@ -5,7 +5,7 @@ sidebar_position: 10
 
 :::info
 
-Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -15,7 +15,7 @@ V tomto článku najdete způsoby, jak vyřešit problémy s AdGuardem, když na
 
 Pokud je v systému Android 9 a novějším nainstalována aplikace AdGuard pro více než jeden uživatelský profil v zařízení, mohou se při odinstalování aplikace vyskytnout problémy. Po odinstalování aplikace AdGuard z jednoho uživatelského profilu se aplikace stále zobrazí v seznamu aplikací, ale nebude možné ji odinstalovat nebo znovu nainstalovat. K tomu dochází, protože AdGuard je v zařízení nainstalován pro jiný uživatelský profil.
 
-Pokud se po neúspěšném pokusu o odstranění pokusíte aplikaci AdGuard znovu nainstalovat, zobrazí se chybová zpráva "Aplikaci nelze do zařízení nainstalovat".
+Pokud se po neúspěšném pokusu o odstranění pokusíte aplikaci AdGuard znovu nainstalovat, zobrazí se chybová zpráva “Aplikaci nelze do zařízení nainstalovat“.
 
 Chcete-li tento problém vyřešit, musíte aplikaci odinstalovat pro všechny uživatele: přejděte do Nastavení → Všechny aplikace → AdGuard. Klepněte na tři tečky v pravém horním rohu a vyberte *Odinstalovat pro všechny uživatele*.
 
@@ -51,7 +51,7 @@ Tento přístup je k dispozici od verze **AdGuardu v3.5 nightly 6**. Pokud použ
 
 :::
 
-1. [Instalace a konfigurace](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; Na platformě Windows mohou majitelé zařízení **Samsung** potřebovat nainstalovat [tento nástroj](https://developer.samsung.com/mobile/android-usb-driver.html).
+1. [Nainstalujte a nakonfigurujte](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; Ve Windows mohou majitelé zařízení **Samsung** potřebovat nainstalovat [tento nástroj](https://developer.samsung.com/mobile/android-usb-driver.html).
 
 1. Připojte zařízení pomocí **USB kabelu** k počítači nebo notebooku, na který jste nainstalovali **ADB**;
 
@@ -85,7 +85,7 @@ S podobným problémem se mohou setkat také majitelé telefonů **LG** nebo **S
 - Otevřete **Nastavení**;
 - Stiskněte **Pokročilé**;
 - Přejeďte dolů a stiskněte **Duální Messenger**;
-- Zakažte **Duální Messenger** pro všechny aplikace;
+- Zakažte **Duální messenger** pro všechny aplikace;
 - Uzamkněte zařízení na 5 minut;
 - Odemkněte obrazovku a zkuste profil VPN vytvořit znovu.
 

@@ -5,7 +5,7 @@ sidebar_position: 4
 
 :::info
 
-Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -41,7 +41,7 @@ Hlubší pochopení tohoto problému naleznete v [ tomto článku](../protect-ma
 
 **Doporučené řešení**
 
-V tuto chvíli doporučujeme místo nových funkcí ochrany osobních údajů Apple používat tradičnější službu VPN, například AdGuard VPN.
+V tuto chvíli doporučujeme místo novějších funkcí ochrany osobních údajů Apple používat tradičnější službu VPN, například [AdGuard VPN](https://adguard-vpn.com/).
 
 ### Monterey 12, Big Sur 11.6 a novější: současné problémy
 

@@ -1,30 +1,34 @@
 ---
-title: How to block YouTube ads in Safari
+title: Come bloccare le pubblicità su YouTube
 sidebar_position: 4
 ---
 
 :::info
 
-Questo articolo tratta AdGuard per iOS, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app AdGuard](https://adguard.com/download.html?auto=true)
+Questo articolo tratta AdGuard per iOS, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
 
-:::
+:::  
 
-## How to block ads on YouTube in Safari
+<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/YW9Ojcm1Gkg" title="Lettore video di YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Unfortunately, ad blocking in the YouTube app is technically impossible, but if you watch YouTube in Safari, there is a way. We developed an action extension (available since AdGuard v4.2 for iOS) designed specifically to block ads there. After you update your app to v4.2, this extension will be installed automatically, you don't have to follow any complicated instructions. Other than ads, the extension removes the placeholder remaining after blocking on iPads. Plus, YouTube videos are played automatically again and you don't have to make an extra tap.
+## Come bloccare gli annunci nell'app di YouTube
 
-![How to block YouTube ads in Safari *mobile](https://cdn.adtidy.org/public/Adguard/Blog/ios_safari_extension.png)
+1. Apri l'app di YouTube.
+1. Scegli un video e tocca su *Condividi*.
+1. Tocca su *Altre*, quindi seleziona *Blocca annunci di YouTube (AdGuard)*.
 
-To activate the extension and block ads on YouTube, do the following:
+AdGuard aprirà il proprio lettore video senza pubblicità.
 
-1. Open youtube.com in Safari.
-2. Tap the Share button.
-3. Tap "Block YouTube Ads (by AdGuard)".
-
-YouTube is now ad-free! Please note that you need to run this extension again if you reload the page.
+## Come bloccare gli annunci su YouTube su Safari
 
 :::tip
 
-In some cases the AdGuard extension may be not displayed. If you don't see it, try to follow the instruction again or restart your device
+Assicurati di aver dato ad AdGuard l'accesso a tutti i siti web. Puoi verificarlo su Safari → Estensioni → AdGuard. Quindi apri AdGuard e abilita la *Protezione avanzata*.
 
 :::
+
+1. Apri youtube.com su Safari.
+1. Scegli un video e tocca su *Condividi*.
+1. Tocca su *Blocca annunci di YouTube (AdGuard)*.
+
+AdGuard aprirà il proprio lettore video senza pubblicità.

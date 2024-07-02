@@ -5,7 +5,7 @@ sidebar_position: 8
 
 :::info
 
-Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -27,11 +27,11 @@ Rozhraní API síťových rozšíření má konfiguraci podobnou VPN se seznamem
 
 V systému Monterey byl představen iCloud Private Relay. Funkce ochrany osobních údajů aplikace Mail také využívají servery iCloud Private Relay.
 
-AdGuard proto nemůže spolupracovat s funkcemi soukromí aplikace iCloud Private Relay a aplikací Mail:
+V důsledku toho, nemůže AdGuard spolupracovat s funkcemi soukromí iCloud Private Relay a aplikací Mail:
 
 1. iCloud Private Relay se použije pro připojení na úrovni knihovny — předtím, než se dostanou na úroveň, kde funguje AdGuard.
 2. iCloud Private Relay používá QUIC, který AdGuard nemůže filtrovat, protože filtrování HTTP/3 ještě není k dispozici.
-3. Protože AdGuard blokuje QUIC, včetně provozu iCloud Private Relay — jinak je blokování reklam nemožné.
+3. V důsledku toho, AdGuard blokuje QUIC, včetně provozu iCloud Private Relay — jinak je blokování reklam nemožné.
 4. Když používáte iCloud Private Relay a přepnete AdGuard do režimu "dělený tunel", nemůžete v Safari otevírat webové stránky.
 5. Abychom tento problém pro Monterey obešli, použijeme pravidlo "výchozí směrování". Když iCloud Private Relay uvidí toto pravidlo, automaticky se deaktivuje. AdGuard tedy v Monterey funguje bez problémů, ale iCloud Private Relay je vypnuto.
 
@@ -39,4 +39,4 @@ AdGuard proto nemůže spolupracovat s funkcemi soukromí aplikace iCloud Privat
 
 ## Doporučené řešení
 
-V tuto chvíli doporučujeme místo nových funkcí ochrany osobních údajů Apple používat tradičnější službu VPN, například [AdGuard VPN](https://adguard-vpn.com/).
+V tuto chvíli doporučujeme místo novějších funkcí ochrany osobních údajů Apple používat tradičnější službu VPN, například [AdGuard VPN](https://adguard-vpn.com/).

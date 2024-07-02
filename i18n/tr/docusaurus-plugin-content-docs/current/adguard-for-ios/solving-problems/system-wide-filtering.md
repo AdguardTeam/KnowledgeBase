@@ -1,21 +1,21 @@
 ---
-title: How to enable system-wide filtering in AdGuard for iOS
+title: iOS için AdGuard'da sistem genelinde filtreleme nasıl etkinleştirilir
 sidebar_position: 2
 ---
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan iOS için AdGuard'ı ele alır. To see how it works firsthand, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan iOS için AdGuard'ı ele alır. Nasıl çalıştığını ilk elden görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
-## About system-wide filtering
+## Sistem genelinde filtreleme hakkında
 
 System-wide filtering means blocking ads and trackers beyond the Safari browser, i.e. in other apps and browsers. This article will tell you how to enable it on your iOS device.
 
 On iOS, the only way to block ads and trackers system-wide is to use [DNS filtering](https://adguard-dns.io/kb/general/dns-filtering/).
 
-First, you have to enable DNS protection. To do so:
+First, you have to enable DNS protection. Bunu yapmak için:
 
 1. Open *AdGuard for iOS*.
 2. Tap *Protection* icon (the second icon in the bottom menu bar).
@@ -43,11 +43,11 @@ You can add any DNS filter or hosts file you like.
 For the sake of the example, let's add [OISD Blocklist Big](https://oisd.nl/).
 
 1. Copy this link: `https://big.oisd.nl` (it's a link for OISD Blocklist Big filter)
-2. Open *Protection* (the shield icon in the bottom menu) → *DNS protection* → *DNS filtering* → *DNS filters*.
-3. Tap *Add a filter*.
-4. Paste the link into the filter URL field.
-5. Tap *Next* → *Add*.
+2. *Koruma* (alt menüdeki kalkan simgesi) → *DNS koruması* → *DNS filtreleme* → *DNS filtreleri* öğesini açın.
+3. *Filtre ekle* öğesine dokunun.
+4. Bağlantıyı filtre URL alanına yapıştırın.
+5. *Sonraki* → *Ekle* öğesine dokunun.
 
-![Adding a DNS filter screen *mobile_border](https://cdn.adtidy.org/blog/new/ot4okIMGD236EB8905471.jpeg)
+![DNS filtre ekranı ekleme *mobile_border](https://cdn.adtidy.org/blog/new/ot4okIMGD236EB8905471.jpeg)
 
-Add any number of other DNS filters the same way by pasting a different URL at step 4. You can find various filters and links to them [here](https://filterlists.com).
+4. adımda farklı bir URL yapıştırarak istediğiniz sayıda diğer DNS filtresini aynı şekilde ekleyin. Çeşitli filtreleri ve bunların bağlantılarını [burada](https://filterlists.com) bulabilirsiniz.

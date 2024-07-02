@@ -1,38 +1,38 @@
 ---
-title: What can be done in the AdGuard Account
+title: AdGuard 账号的功能
 sidebar_position: 2
 ---
 
-In your account, you can manage your licenses, devices bound to them, personal data, email and password, view purchases and contact support.
+在账号中，用户可以管理自己的许可证、绑定的设备、个人数据、电子邮件和密码、查看购买或联系支持。
 
-## Manage account settings
+## 管理账号设置
 
-In the *Settings* section of your AdGuard account, you can update or reset your password, change your email address, enable [two-factor authentication](../2fa), view the data stored about you by AdGuard and choose the language of your personal account and notifications.
+在 AdGuard 账号的「*设置*」部分，用户可更改或重置密码，更改电子邮件地址，开启[双因素身份验证](../2fa)，查看 AdGuard 所存储的关于您的数据以及选择个人账号和通知的语言。
 
-In this section, you can also manage your email preferences:
+在此部分，用户也可管理电子邮件首选项：
 
-- receive transactional emails,
-- receive AdGuard’s monthly newsletters,
-- receive emails about AdGuard special offers and promotions,
-- send read receipts to AdGuard when you open emails.
+- 接收交易电子邮件，
+- 接收 AdGuard 每月时事通讯，
+- 接收 AdGuard 特价和促销电子邮件,
+- 在 AdGuard 中打开电子邮件时发送通知。
 
-## Manage licenses
+## 管理许可证
 
-In the *Licenses* section, you can manage your licenses and the devices bound to them.
+在「*许可证*」部分，用户可管理许可以及与之绑定的设备。
 
-[AdGuard licenses](../../license/what-is) can be:
+[AdGuard 许可证](../../license/what-is)：
 
-- bound and unbound,
-- extended,
-- upgraded,
-- canceled. You can also update your payment details.
+- 绑定和取消绑定，
+- 续订，
+- 升级，
+- 取消。 您也可更新付款详细信息。
 
-The devices bound to your AdGuard Ad Blocker licenses can be unbound or renamed. You can unbind unused devices by clicking the cross icon next to them.
+与 AdGuard 广告拦截程序许可证绑定的设备可取消绑定或重命名。 用户可点击紧邻未使用设备的十字叉以取消绑定它们。
 
-## View purchases
+## 查看购买
 
-The Purchase history section displays all the licenses that you have ever purchased using the email account you registered your AdGuard account with. You will also find there information about the date of purchase, order number, payment method and cost of the purchase.
+「购买历史」部分显示有用户曾经用注册 AdGuard 账号时的电子邮件地址购买的所有许可证。 You will also find there information about the date of purchase, order ID, payment method, and cost of the purchase.
 
-## Contact support
+## 联系支持
 
-The Support tab contains useful links to help you solve problems or find answers to your questions about AdGuard products. They are divided into six sections: FAQ, Send a bug repot/feature request, Report incorrect blocking, Contact support, Knowledge base and Discuss.
+支持标签包含有帮助用户解决问题，查找 AdGuard 产品相关问题答案的有用链接。 它们分为六个部分：常见问题解答，发送错误报告/功能请求，报告拦截错误，联系支持，知识库和讨论。

@@ -1,24 +1,24 @@
 ---
-title: How to activate premium features
+title: Come attivare le funzionalità Premium
 sidebar_position: 1
 ---
 
 :::info
 
-Questo articolo tratta AdGuard per iOS, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app AdGuard](https://adguard.com/download.html?auto=true)
+Questo articolo tratta AdGuard per iOS, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-There are two options to activate premium features on AdGuard for iOS app:
+Esistono due opzioni per attivare le funzionalità Premium sull'app di AdGuard per iOS:
 
-1. Purchase a subscription. Just tap the **Get Premium** plaque anywhere in the app and follow the on-screen instructions. All you'll need to do is enter your Apple ID password and confirm the purchase. You can choose between a monthly, yearly and lifetime subscriptions.
+1. Acquista un abbonamento. Basta cliccare su **Ottieni Premium** in qualsiasi punto dell'app e seguire le istruzioni sullo schermo. Tutto ciò che devi fare è inserire la password del tuo Apple ID e confermare l'acquisto. Puoi scegliere tra un abbonamento mensile, annuale e a vita.
 
-2. Use an AdGuard license (you can purchase it at the [AdGuard website](https://adguard.com/license.html)). Log into your AdGuard personal account via the app: go to *AdGuard app → Settings → License* screen and tap the **Login** button there. You'll be asked to enter your AdGuard Personal account credentials*. After you do, if you have any valid license key in your account, it will be automatically picked up to activate Premium in your AdGuard for iOS app.
+2. Usa una licenza AdGuard (puoi acquistarla sul [sito web di AdGuard](https://adguard.com/license.html)). Accedi all'account personale AdGuard tramite l'app: vai alla schermata *AdGuard app → Impostazioni → Licenza* e clicca il pulsante **Accedi**. Ti sarà chiesto di inserire le credenziali del tuo profilo personale di AdGuard*. Dopodiché, se hai qualsiasi chiave di licenza valida nel tuo profilo, sarà selezionata automaticamente per attivare Premium sulla tua app di AdGuard per iOS.
 
-As an alternative, you can just enter a valid license key in the e-mail field leaving password field blank to activate Premium features.
+In alternativa, puoi semplicemente inserire una chiave di licenza valida nel campo e-mail lasciando vuoto il campo password per attivare le funzionalità Premium.
 
 :::note
 
-AdGuard Pro for iOS (our other iOS app) can only be purchased from [App Store](https://apps.apple.com/app/adguard-pro-adblock-privacy/id1126386264).
+AdGuard Pro per iOS (l'altra nostra app per iOS) può essere acquistata solo dall' [App Store](https://apps.apple.com/app/adguard-pro-adblock-privacy/id1126386264).
 
 :::

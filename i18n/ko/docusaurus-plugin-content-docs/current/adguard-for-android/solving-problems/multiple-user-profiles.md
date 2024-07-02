@@ -3,9 +3,9 @@ title: Problems caused by multiple user profiles
 sidebar_position: 10
 ---
 
-:::info
+:::정보
 
-이 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Android용 AdGuard에 대해 다룹니다. 어떻게 동작하는지 알고 싶으시다면 [AdGuard 앱을 다운로드](https://adguard.com/download.html?auto=true) 해 보세요.
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -15,7 +15,7 @@ In this article you will find the methods on how to solve problems with AdGuard 
 
 On Android 9 and later, if AdGuard is installed for more than one user profile on your device, you may encounter problems when uninstalling the app. When you uninstall AdGuard from one user profile, the app will still appear on the app list, but you won't be able to uninstall or reinstall it. This happens because AdGuard is installed for a different user profile on the device.
 
-If you try to reinstall AdGuard after an unsuccessful removal attempt, you will see the error message "You can't install the app on your device".
+If you try to reinstall AdGuard after an unsuccessful removal attempt, you will see the error message “You can't install the app on your device”.
 
 To solve this problem, you need to uninstall the application for all users: go to Settings → All apps → AdGuard. Tap the three-dot menu in the top right corner and select *Uninstall for all users*.
 
@@ -51,7 +51,7 @@ This approach is available starting from **AdGuard v3.5 nightly 6**. 이전 버�
 
 :::
 
-1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
 
 1. **USB 케이블**을 사용하여 **ADB**를 설치한 컴퓨터 또는 노트북에 기기를 연결합니다.
 
@@ -85,7 +85,7 @@ To enable this mode, open **AdGuard Settings** → **Network** → **Filtering m
 - **설정**을 엽니다.
 - **고급**을 누릅니다.
 - 아래로 스크롤해 **듀얼 메신저**를 누릅니다.
-- 모든 앱을 **선택 취소**합니다.
+- Disable the **Dual messenger** for all apps;
 - 5분 동안 기기를 잠금 상태로 유지합니다.
 - 화면 잠금을 해제하고 VPN 프로필을 다시 생성합니다.
 
@@ -94,5 +94,5 @@ To enable this mode, open **AdGuard Settings** → **Network** → **Filtering m
 - **설정**을 엽니다.
 - **일반** 탭을 선택합니다.
 - 아래로 스크롤한 다음 **듀얼 앱**를 누릅니다.
-- 목록에서 모든 응용 프로그램을 제거합니다.
+- Remove all apps from the list;
 - 기기를 재부팅합니다.

@@ -13,7 +13,7 @@ Depending on which AdGuard app or browser extension you want to install, follow 
 
 [AdGuard pour Mac](/adguard-for-mac/installation)
 
-[AdGuard Browser Extension](/adguard-browser-extension/installation)
+[Extension de navigateur AdGuard](/adguard-browser-extension/installation)
 
 [AdGuard pour Safari](/adguard-for-safari/installation)
 

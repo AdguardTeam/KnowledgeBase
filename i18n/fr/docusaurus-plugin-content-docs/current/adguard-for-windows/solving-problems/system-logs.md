@@ -5,7 +5,7 @@ sidebar_position: 5
 
 :::info
 
-Cet article parle de AdGuard pour Windows, un bloqueur de contenus multifonctionnel qui protège votre appareil au niveau du système. Pour voir comment cela fonctionne, [téléchargez l'application AdGuard](https://adguard.com/download.html?auto=true)
+Cet article parle de AdGuard pour Windows, un bloqueur de contenus multifonctionnel qui protège votre appareil au niveau du système. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -27,7 +27,7 @@ To analyze and diagnose different problems that may potentially arise, the AdGua
 
     - Right-click *Application* and in the drop-down menu select *Save All Events As...*
 
-    - Select a name and where to save, click *Save*. Select *Display information for the following languages*. You need to tick the box next to *English*. Click *OK*.
+    - Select a name and where to save, click *Save*. Select *Display information for the following languages*. You need to check the checkbox next to *English*. Click *OK*.
 
     - Open *System*: *Event Viewer (Local)* → *Windows Logs* → *System*.
 

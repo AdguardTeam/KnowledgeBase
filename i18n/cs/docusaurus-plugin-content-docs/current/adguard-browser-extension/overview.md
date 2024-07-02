@@ -1,15 +1,15 @@
 ---
 title: Přehled funkcí
-sidebar_position: 1
+sidebar_position: 10
 ---
 
 :::info
 
-Tento článek je o Rozšíření prohlížeče AdGuard, které chrání pouze váš prohlížeč. Chcete-li chránit celé zařízení, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+Tento článek je o Rozšíření prohlížeče AdGuard, které chrání pouze váš prohlížeč. Chcete-li chránit celé zařízení, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-AdGuard nabízí řadu softwarových produktů, které blokují reklamy a slídiče na různých platformách. Jedním z nejoblíbenějších produktů AdGuardu je bezplatné rozšíření, které funguje v pěti oblíbených prohlížečích: Chrome, Firefox, Edge, Opera a Yandex Browser. Rozšíření prohlížeče obsahují základní funkce pro blokování reklam, ale nelze je srovnávat s plnohodnotnými programy pro stolní počítače, jako jsou např. [AdGuard pro Windows](/adguard-for-windows/overview) a [AdGuard pro macOS](/adguard-for-mac/overview).
+AdGuard nabízí řadu softwarových produktů, které blokují reklamy a slídiče na různých platformách. Jedním z nejoblíbenějších produktů AdGuardu je bezplatné rozšíření, které funguje v pěti oblíbených prohlížečích: Chrome, Firefox, Edge, Opera a Yandex Browser. Browser extensions include basic ad-blocking features but cannot be compared with full-featured desktop programs, such as [AdGuard for Windows](/adguard-for-windows/features/home-screen) and [AdGuard for Mac](/adguard-for-mac/features/main).
 
 ![AdGuard Browser Extension for Chrome *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
 
@@ -21,7 +21,7 @@ AdGuard nabízí řadu softwarových produktů, které blokují reklamy a slídi
 
 :::note
 
-Máme samostatné rozšíření pro Safari. Od vydání [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html) se u většiny rozšíření pro blokování reklam objevily velké problémy, a mnoho z nich přestalo fungovat. Museli jsme vyvinout samostatné rozšíření [pro Safari](/adguard-for-safari/overview), které má oproti rozšíření popsanému v tomto článku některé odlišnosti.
+Máme samostatné rozšíření pro Safari. Od vydání [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html) se u většiny rozšíření pro blokování reklam objevily velké problémy, a mnoho z nich přestalo fungovat. Museli jsme vyvinout [samostatné rozšíření pro Safari](/adguard-for-safari/features/general), které má oproti rozšíření popsanému v tomto článku některé odlišnosti.
 
 :::
 
@@ -136,6 +136,8 @@ Všechny webové požadavky provedené prohlížečem se zobrazují v *Záznamu 
 Kliknutím na ikony v pravém horním rohu hlavní nabídky rozšíření můžete otevřít nastavení rozšíření nebo pozastavit ochranu.
 
 ## Rozšíření prohlížeče AdGuard vs. Plnohodnotná aplikace {#comparison}
+
+<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/ZGwceZP-0mM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Hlavní výhodou plnohodnotných programů AdGuard oproti rozšířením prohlížeče je, že tyto programy mohou blokovat reklamy v každém prohlížeči a téměř ve všech aplikacích. Můžete používat různé prohlížeče současně, aplikace bude stejně dobře filtrovat reklamy a online hrozby ve všech z nich.
 

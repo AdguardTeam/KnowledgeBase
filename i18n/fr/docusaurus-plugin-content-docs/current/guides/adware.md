@@ -1,66 +1,62 @@
 ---
-title: Adware & viruses
+title: Adware & virus
 sidebar_position: 6
 ---
 
 :::note
 
-AdGuard is not an antivirus program. It can warn you when you're going to visit a malware or phishing website, but **it does not remove viruses from your device.**
+AdGuard n'est pas un logiciel antivirus. Il peut vous avertir lorsque vous visitez un site web malveillant ou d'hameçonnage, mais **il ne supprime pas les virus de votre appareil.**
 
 :::
 
-If you suspect your computer is infected by malware or viruses, first of all you can inspect your computer with utilities from leading antiviruses.
+Si vous pensez que votre ordinateur est infecté par des logiciels malveillants ou des virus, vous pouvez tout d'abord inspecter votre ordinateur avec les utilitaires des principaux antivirus.
 
-## Free antivirus utilities {#free-antivirus}
+## Utilitaires antivirus gratuits {#free-antivirus}
 
-There are many of them and you can use any one you prefer, for example:
+Il y en a beaucoup et vous pouvez en utiliser un de votre choix. Si cette vérification avec les utilitaires antivirus n'a rien révélé, mais l'ordinateur se comporte toujours de manière suspecte, essayez de le tester pour détecter les logiciels publicitaires, qui peuvent mettre en œuvre leurs publicités sur toutes les pages que vous ouvrez.
 
-[Dr.Web CureIt!](http://www.freedrweb.com/cureit/?lng=en)
+## Comment nettoyer votre système des logiciels publicitaires {#adware}
 
-If this check with antivirus utilities revealed nothing, but the computer still behaves suspiciously, try to test it for adware, which can implement its advertising on any pages that you open.
+Sur l'internet, vous pouvez trouver de nombreuses applications destinées à lutter contre ce problème. Vous pouvez utiliser n'importe quel utilitaire de votre choix. Toutefois, nous vous recommandons fortement d'utiliser **[AdwareCleaner](https://www.malwarebytes.com/adwcleaner)** de **Malwarebytes**, **[Avast Un](https://www.avast.com/c-adware-removal-tool)** par **Avast**, ou **[Adaware](https://www.adaware.com)**. Ces scanners de logiciels publicitaires sont assez faciles à utiliser et vous pourrez les gérer vous-même.
 
-## How to clean your system from Adware {#adware}
+Prenons AdwareCleaner comme exemple. Une fois l'application téléchargée et installée avec succès, procédez comme suit :
 
-On the Internet, you can find a lot of applications that are aimed at fighting this problem. You can use any utility you like. But we strongly recommend using **[AdwareCleaner](https://www.malwarebytes.com/adwcleaner)** by **Malwarebytes**, **[Avast One](https://www.avast.com/c-adware-removal-tool)** by **Avast**, or **[Adaware](https://www.adaware.com)**. These adware scanners are quite easy to use and you will be able to handle them by yourself.
-
-Let's take AdwareCleaner as an example. After the application has been downloaded and successfully installed, take the following steps:
-
-1. Start the application and click **Scan now**.
+1. Démarrez l'application et cliquez sur **Scanner maintenant**.
 
 ![adware1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware1.png)
 
-1. Once the scan has been completed, you will need to send suspicious objects to **Quarantine**.
+1. Une fois l'analyse terminée, vous devrez envoyer les objets suspects en **Quarantaine**.
 
 ![adware2 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware2.png)
 
-1. When the items are moved to **Quarantine**, you will be able to **Clear the system** of unnecessary ballast.
+1. Lorsque les éléments seront déplacés vers **Quarantine**, vous pourrez **Débarrasser le système** du ballast inutile.
 
-1. In some cases, you may need to **Reboot the system** after cleaning is complete.
+1. Dans certains cas, vous devrez peut-être **redémarrer le système** une fois le nettoyage terminé.
 
 ![adware3 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware3.png)
 
-1. Once the system has been rebooted, cleaning will be completed. If necessary, you can always read the **Report** on the work done.
+1. Une fois le système redémarré, le nettoyage sera terminé. Si nécessaire, vous pouvez toujours lire le **Rapport** sur les travaux effectués.
 
 ![adware4 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware4.png)
 
-If it didn’t help, temporary disable all extensions and some other settings in the browser according to [these instructions](#instructions).
+Si cela n'a pas aidé, désactivez temporairement toutes les extensions et certains autres paramètres du navigateur conformément à [ces instructions](#instructions).
 
-If disabling of settings and extensions does not help, try to [recreate shortcuts of your browsers](#shortcuts).
+Si la désactivation des paramètres et des extensions ne résout pas le problème, essayez de [recréer les raccourcis de vos navigateurs](#shortcuts).
 
-Further on this page we describe the instructions on how to remove some of the most commonly encountered ad extensions.
+Plus loin sur cette page, nous décrivons les instructions à suivre pour supprimer certaines des extensions publicitaires les plus fréquemment rencontrées.
 
-## How to disable settings and extensions in the browser {#instructions}
+## Comment désactiver les paramètres et les extensions dans le navigateur {#instructions}
 
-Below are the instructions on how to disable settings and extensions for the most popular browsers:
+Vous trouverez ci-dessous les instructions pour désactiver les paramètres et les extensions des navigateurs les plus populaires :
 
-- [for Google Chrome](https://support.google.com/chrome/answer/187443?hl=en)
+- [pour Google Chrome](https://support.google.com/chrome/answer/187443?hl=en)
 
-- [for Mozilla Firefox](https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons)
+- [pour Mozilla Firefox](https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons)
 
-- [for Opera](https://help.opera.com/en/latest/customization/#extensions)
+- [pour Opéra](https://help.opera.com/en/latest/customization/#extensions)
 
-## How to recreate shortcuts for your browsers {#shortcuts}
+## Comment recréer des raccourcis pour vos navigateurs {#shortcuts}
 
-Very often, malware and adware programs install their homepage in a very simple way — they substitute your browser's desktop shortcut, taskbar and *Start* menu items.
+Très souvent, les programmes malveillants et publicitaires installent leur page d'accueil de manière très simple : ils remplacent le raccourci sur le bureau de votre navigateur, la barre des tâches et les éléments de menu *Démarrer*.
 
-The simplest solution in this case is to manually delete all the shortcuts and recreate them by yourself.
+La solution la plus simple dans ce cas consiste à supprimer manuellement tous les raccourcis et à les recréer vous-même.

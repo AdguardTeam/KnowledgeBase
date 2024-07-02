@@ -5,13 +5,13 @@ sidebar_position: 7
 
 :::info
 
-Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifuncional que protege seu dispositivo a nível de sistema. Para ver como funciona, [baixe o aplicativo AdGuard](https://adguard.com/download.html?auto=true)
+Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifuncional que protege seu dispositivo a nível de sistema. Veja como funciona ao [baixar o AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 As Configurações Avançadas, antes conhecidas como configurações de baixo nível, geralmente contêm opções que vão além dos conhecimentos do usuário médio e não são aplicadas no uso diário. O AdGuard para Windows foi pensado para que você consiga utilizá-lo sem alterá-las, mas elas fornecem recursos adicionais em alguns casos mais extremos ou para resolver algum problema incomum.
 
-:::caution
+:::cuidado
 
 Alterar as *Configurações avançadas* sem saber ao certo o que estamos fazendo pode trazer problemas ao desempenho do AdGuard, à conexão com a Internet ou a sua segurança e privacidade. Você só deve fazer alterações nessas configurações se souber o que está fazendo ou se nossa equipe de suporte solicitar alguma ação.
 
@@ -60,6 +60,10 @@ Ative este recurso para ver as pop-ups de notificações do AdGuard. Elas não a
 ### Interceptar automaticamente URLs de inscrição de filtros
 
 Ative este recurso se você quiser que o AdGuard intercepte automaticamente URLs de inscrição de filtro (ou seja, `abp:subscribe` e similares) e abra uma caixa de diálogo de instalação de filtro personalizado.
+
+### Filter HTTP/3
+
+If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
 
 ### Usar modo de redirecionamento de driver
 

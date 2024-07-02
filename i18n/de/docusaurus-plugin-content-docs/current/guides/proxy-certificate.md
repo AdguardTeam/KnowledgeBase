@@ -1,136 +1,132 @@
 ---
-title: How to install a proxy certificate
+title: So installieren Sie ein Proxy-Zertifikat
 sidebar_position: 2
 ---
 
-Desktop AdGuard apps (AdGuard for Windows and AdGuard for Mac) can be used as a proxy. This means that you can route other devices' traffic through AdGuard (entirely, or traffic of specific apps/browsers).
+Our desktop apps, AdGuard for Windows and AdGuard for Mac, can be used as a proxy for other devices. This means that you can route other devices’ traffic through AdGuard (all traffic or traffic of specific apps and browsers).
 
 :::note
 
-These devices must be in the same network as the PC or Mac on which AdGuard is installed.
+These devices must be in the same network as the PC or Mac with AdGuard.
 
 :::
 
-HTTP traffic will be filtered in any case, but for AdGuard to be able to filter HTTPS traffic you need to manually install AdGuard certificate on the connected device.
+HTTP traffic will be filtered in any case, but for AdGuard to be able to filter HTTPS traffic you need to manually install the AdGuard certificate on the connected device.
 
-## How to download and install the certificate
+## Herunterladen und Installieren des Zertifikats
 
-Depending on the operation system of your device (Windows/Mac/Android/iOS), follow one of these instructions:
+Depending on the operating system of the device whose traffic you want to filter, follow one of these instructions:
 
 ### Windows {#windows}
 
-1. Note the IP address of your desktop computer with installed AdGuard.
+1. Note the IP address of your desktop computer with AdGuard installed.
 
-2. Make sure the AdGuard protection is enabled. Then check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings.
+1. Stellen Sie sicher, dass der AdGuard-Schutz aktiviert ist. On a Windows computer, check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings. For Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
-3. On the same device with AdGuard follow this link using any browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. On the same computer with AdGuard, follow this link: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
-4. Click the **Download** button.
+1. Klicken Sie auf die Schaltfläche **Herunterladen**. If the download doesn’t start, try another browser, for example Firefox.
 
-5. Transfer the downloaded **cert.cer** file to the device which traffic you want to route through AdGuard.
+1. Transfer the downloaded **cert.cer** file to the Windows device whose traffic you want to route through AdGuard. You can use a USB cable, Bluetooth, or cloud services to do this.
 
-6. On that device, press the **Win** button, type `Manage computer certificates` and press **Enter**.
+1. On that device, press **Win**, type `Manage computer certificates` and press **Enter**.
 
-7. On the *Certificates - Local Computer* page, find the *Trusted Root Certification* → *Certificates* folder.
+1. On the *Certificates — Local Computer* page, find the *Trusted Root Certification Authorities* → *Certificates* folder.
 
-8. Right-click the *Certificates* folder and click **All Tasks** → **Import**.
+1. Klicken Sie mit der rechten Maustaste auf den Ordner *Zertifikate* und klicken Sie auf **Alle Aufgaben** ➜ **Importieren**.
 
-9. On the *Certificate Import Wizard* page, click **Next**.
+1. Klicken Sie auf der Seite *Zertifikatsimport-Assistent* auf **Weiter**.
 
-10. Click **Browse** to import the certificate.
+1. Klicken Sie auf **Durchsuchen**, um das Zertifikat zu importieren.
 
-11. Navigate to the **cert.cer** certificate file, select it, then click **Open**.
+1. Navigate to the **cert.cer** certificate file, select it, click **Open**, then **Next**.
 
-12. Click **Next**.
+1. Aktivieren Sie das Kontrollkästchen **Alle Zertifikate im folgenden Speicher speichern**.
 
-13. Select the **Place all certificates in the following store** checkbox.
+1. Make sure that the *Certificate store* field displays *Trusted Root Certification Authorities* and click **Next**.
 
-14. Ensure that the *Certificate store* field displays *Trusted Root Certification Authorities* and click **Next**.
+1. Klicken Sie auf **Fertigstellen**.
 
-15. Click **Finish**.
+1. Press **Win**, then open **Settings**.
 
-16. Press the **Win** key, then open **Settings**.
+1. Wählen Sie **Netzwerk und Internet** → **Proxy**.
 
-17. Select **Network & Internet** → **Proxy**.
+1. Deaktivieren Sie *Einstellungen automatisch erkennen*.
 
-18. Toggle *Automatically detect settings* off.
+1. Klicken Sie auf **Einrichten** im Tab *Proxyserver verwenden*.
 
-19. Click **Set up** in the *Use a proxy server* tab.
+1. Aktivieren Sie diese Option. For **Proxy IP address**, type the IP address of your desktop computer that you noted in step 1. Geben Sie bei **Port** den Port ein, den Sie in den Netzwerkeinstellungen der Desktop-App von AdGuard ausgewählt haben.
 
-20. Turn the toggle on. For **Proxy IP address**, enter the noted IP address of your desktop computer (step 1). For **Port**, enter the port chosen in the network settings of the desktop AdGuard app.
-
-21. Click **Save**.
+1. Klicken Sie auf **Speichern**.
 
 ### Mac {#mac}
 
-1. Note the IP address of your desktop computer with installed AdGuard.
+1. Notieren Sie sich die IP-Adresse Ihres Desktop-Computers mit installiertem AdGuard.
 
-2. Make sure the AdGuard protection is enabled. Then go to **Settings** → **Network** → **HTTP proxy** and check the box **Use AdGuard as an HTTP proxy**.
+1. Stellen Sie sicher, dass der AdGuard-Schutz aktiviert ist. On a Windows computer, check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings. For Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
-3. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. Follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
-4. Click the **Download** button.
+1. Klicken Sie auf die Schaltfläche **Herunterladen**. If the download doesn’t start, try another browser, for example Firefox.
 
-5. Transfer the downloaded **cert.cer** file to the device which traffic you want to route through AdGuard.
+1. Transfer the downloaded **cert.cer** file to the Mac device whose traffic you want to route through AdGuard. You can use a USB cable, Bluetooth, or cloud services to do this.
 
-6. Double-click the downloaded certificate file.
+1. Doppelklicken Sie auf die heruntergeladene Zertifikatsdatei.
 
-7. Enter the administrator password and then click **Modify Keychain**.
+1. Geben Sie das Administratorkennwort ein und klicken Sie dann auf **Schlüsselbund ändern**.
 
-8. Go to **Spotlight** (the search icon in the top right corner), type in "Keychain Access", and then select **Keychain Access** from the search results.
+1. Go to **Spotlight** (the search icon in the top right corner), type in `Keychain Access`, and then select **Keychain Access** from the search results.
 
-9. Under *System*, highlight the certificate that you added.
+1. Markieren Sie unter *System* das Zertifikat, das Sie hinzugefügt haben.
 
-10. Right-click it and choose **Get Info** from the context menu.
+1. Right-click it and select **Get Info** from the context menu.
 
-11. Expand *Trust* to display the trust policies for the certificate.
+1. Erweitern Sie *Vertrauen*, um die Vertrauensrichtlinien für das Zertifikat anzuzeigen.
 
-12. Under *Secure Sockets Layers (SSL)*, select **Always Trust**.
+1. Wählen Sie unter *Secure Sockets Layers (SSL)* **Immer vertrauen**.
 
-13. Open **System Preferences** → **Network** and choose the upper active connection.
+1. Open **System Preferences** → **Network** and select the active connection at the top.
 
-14. Click **Details...** and navigate to the **Proxies** tab.
+1. Klicken Sie auf **Weitere Optionen …** und öffnen Sie den Tab **Proxies**.
 
-15. Tick two checkboxes: *Web proxy (HTTP)* and *Secure web proxy (HTTPS)*. In the **Server** field, enter the noted IP address of your computer (step 1). In the **Port** field, enter the port chosen in the network settings of the AdGuard desktop app.
+1. Tick two checkboxes: *Web proxy (HTTP)* and *Secure web proxy (HTTPS)*. In the **Server** field, type the IP address of your computer that you noted in step 1. Geben Sie im Feld **Port** den Port ein, den Sie in den Netzwerkeinstellungen der AdGuard-App gewählt haben.
 
 ### Android {#android}
 
-1. Note the IP address of your desktop computer with installed AdGuard.
+1. Notieren Sie sich die IP-Adresse Ihres Desktop-Computers mit installiertem AdGuard.
 
-2. Make sure the AdGuard protection is enabled. Then check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings.
+1. Stellen Sie sicher, dass der AdGuard-Schutz aktiviert ist. On a Windows computer, check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings. For Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
-3. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. Folgen Sie auf dem Computer mit AdGuard diesem Link in einem Browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
-4. Click the **Download** button.
+1. Klicken Sie auf die Schaltfläche **Herunterladen**. If the download doesn’t start, try another browser, for example Firefox.
 
-5. Transfer the downloaded **cert.cer** file to the device which traffic you want to route through AdGuard.
+1. Transfer the downloaded **cert.cer** file to the Android device whose traffic you want to route through AdGuard. You can use a USB cable, Bluetooth, or cloud services to do this.
 
-6. Locate and tap the previously downloaded **cert.cer** certificate to open the file.
+1. Locate and tap the previously downloaded **cert.cer** certificate to open the file and follow the instructions to install the certificate.
 
-7. On some phones, you might be asked to enter your device password. Do that, then press **OK**. The certificate is now installed.
+1. Android devices do not trust certificates by default, so there will be a warning — you can ignore it. On some phones you may be asked to enter your device password. Do so, then press **OK**. The certificate will be installed.
 
-8. Open advanced settings of the active Wi-Fi network.
+1. Öffnen Sie die erweiterten Einstellungen des aktiven WLAN-Netzwerks.
 
-9. Switch the **Proxy type** to **Manual**. For **Proxy hostname**, enter the noted IP address of your desktop computer (step 1). For **Proxy port**, enter the port chosen in the network settings of the AdGuard desktop app.
+1. Change the **Proxy type** to **Manual**. For **Proxy hostname**, enter the noted IP address of your desktop computer you noted in step 1. Geben Sie bei **Proxy-Port** den Port ein, den Sie in den Netzwerkeinstellungen der AdGuard-Desktop-App gewählt haben.
 
 ### iOS {#ios}
 
-1. Note the IP address of your desktop computer with installed AdGuard.
+1. Notieren Sie sich die IP-Adresse Ihres Desktop-Computers mit installiertem AdGuard.
 
-2. Make sure the AdGuard protection is enabled. Then check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings.
+1. Stellen Sie sicher, dass der AdGuard-Schutz aktiviert ist. On a Windows computer, check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings. For Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
 
-3. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. Folgen Sie auf dem Computer mit AdGuard diesem Link in einem Browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
-4. Click the **Download** button.
+1. Klicken Sie auf die Schaltfläche **Herunterladen**. If the download doesn’t start, try another browser, for example Firefox.
 
-5. Transfer the downloaded **cert.cer** file to the device which traffic you want to route through AdGuard.
+1. Transfer the downloaded **cert.cer** file to the iOS device whose traffic you want to route through AdGuard. You can use a USB cable, Bluetooth, or cloud services to do this.
 
-6. Open **Settings** → **Security** → **Encryption & Credentials** → **Install a certificate**. Android devices do not trust certificates by default so there will be a warning when you choose **CA certificate**. Tap **Install anyway**.
+1. On your iOS device, open **Settings** → **Profile Downloaded** and tap **Install** in the top right corner. Geben Sie Ihr Passwort ein, um Ihre Absicht zu bestätigen. Tippen Sie auf **Fertig**.
 
-7. Open **Settings** → **Profile Donwloaded** and tap **Install** in the top right corner. Enter your password and confirm the installation. Tap **Done**.
+1. Öffnen Sie die **Einstellungen** ➜ **Allgemein** ➜ **Info** ➜ **Zertifikatsvertrauenseinstellungen**. Aktivieren Sie den Schalter neben *Adguard Personal CA*. Das Zertifikat ist nun installiert.
 
-8. Go to **Settings** → **General** → **About** → **Certificate Trust Settings**. Enable the switch beside *Adguard Personal CA*. The certificate is now installed.
+1. Öffnen Sie auf diesem Gerät die erweiterten Einstellungen des aktiven WLAN-Netzwerks.
 
-9. On that device, open advanced settings of the active Wi-Fi network.
-
-10. Switch the **Proxy type** to **Manual**. For **Proxy hostname**, enter the noted IP address of your computer (step 1). For **Proxy port**, enter the port chosen in the network settings of the AdGuard desktop app.
+1. Change the **Proxy type** to **Manual**. For **Proxy hostname**, type the IP address of your computer you noted in step 1. Geben Sie bei **Proxy-Port** den Port ein, den Sie in den Netzwerkeinstellungen der AdGuard-Desktop-App gewählt haben.

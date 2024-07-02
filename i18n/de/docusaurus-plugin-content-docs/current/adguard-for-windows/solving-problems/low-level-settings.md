@@ -5,7 +5,7 @@ sidebar_position: 7
 
 :::info
 
-Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://adguard.com/download.html?auto=true)
+Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -60,6 +60,10 @@ Aktivieren Sie diese Funktion, um Popup-Benachrichtigungen von AdGuard anzuzeige
 ### Filter-Abonnement URLs automatisch filtern
 
 Aktivieren Sie diese Funktion, wenn Sie möchten, dass AdGuard automatisch Filter-URLs (z.B. `abp:subscribe` und ähnliche) abfängt und einen benutzerdefinierten Filter-Installationsdialog öffnet.
+
+### Filter HTTP/3
+
+If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
 
 ### Umleitungstreiber-Modus verwenden
 

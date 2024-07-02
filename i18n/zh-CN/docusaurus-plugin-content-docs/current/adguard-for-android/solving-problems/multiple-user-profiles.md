@@ -1,25 +1,25 @@
 ---
-title: Problems caused by multiple user profiles
+title: 多用户配置文件引起的问题
 sidebar_position: 10
 ---
 
 :::info
 
-本文适用于安卓版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 要了解工作原理， 请[下载 AdGuard 应用程序](https://adguard.com/download.html?auto=true)
+本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。 要了解其工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
-In this article you will find the methods on how to solve problems with AdGuard when you set up *multiple accounts* or *Restricted Profiles* on your Android devices.
+本文将介绍在 Android 设备上设置*多个账户*或*受限配置文件*时，如何使用 AdGuard 解决问题的方法。
 
-## Problems caused by multiple user profiles
+## 多用户配置文件引起的问题
 
-On Android 9 and later, if AdGuard is installed for more than one user profile on your device, you may encounter problems when uninstalling the app. When you uninstall AdGuard from one user profile, the app will still appear on the app list, but you won't be able to uninstall or reinstall it. This happens because AdGuard is installed for a different user profile on the device.
+在 Android 9 和更新的版本，如 AdGuard 是安装给设备上的多个用户配置，当您卸载本应用时可能会遇到问题。 当您从单个用户配置内卸载 AdGuard 时，本应用仍会出现在应用列表内，而且您无法卸载或重新安装它。 发生此种情况，是因为 AdGuard 安装给了设备上的不同用户配置。
 
-If you try to reinstall AdGuard after an unsuccessful removal attempt, you will see the error message "You can't install the app on your device".
+如在移除尝试失败后重新安装 AdGuard，用户会看到错误讯息「您无法在此设备上安装本应用」。
 
-To solve this problem, you need to uninstall the application for all users: go to Settings → All apps → AdGuard. Tap the three-dot menu in the top right corner and select *Uninstall for all users*.
+要解决此问题，您需要为所有用户卸载本应用：转到「设置」→「所有应用」→「AdGuard」。 点击右上角的三个点菜单并选择「*为所有用户卸载*」。
 
-![Uninstall *mobile border](https://cdn.adtidy.org/blog/new/tu49hmultiple_users.png)
+![卸载 *mobile border](https://cdn.adtidy.org/blog/new/tu49hmultiple_users.png)
 
 ## 受限模式导致的一些问题
 
@@ -33,16 +33,16 @@ To solve this problem, you need to uninstall the application for all users: go t
 
 :::note
 
-This approach is available starting from **AdGuard v3.5 nightly 6**. 如您仍在使用旧版本，您可以[在此处](https://adguard.com/adguard-android/overview.html)下载 nightly 版本。
+此方法是自 **AdGuard v3.5 nightly 6** 起可用。 如您仍在使用旧版本，您可以[在此处](https://adguard.com/adguard-android/overview.html)下载 nightly 版本。
 
 :::
 
-1. Activate the **developer mode** and enable **USB debugging**:
+1. 启用「**开发者模式**」并开启「**USB 调试**」：
 
-    - Open the **Settings** app phone;
-    - Go to **System** section (last item in the settings menu). In this section, find the sub-item **About phone**;
-    - Tap the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
-    - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
+    - 打开手机的「**设置**」；
+    - 前往「**系统**」部分（设置中最后一项）。 在此部分中找到子项「**关于手机**」；
+    - 点击「**版本号**」7次。 之后，您会收到通知称**您已处于开发者模式**（可能会要求您输入设备的解锁密码）；
+    - 打开「**系统设置**」→「**开发者选项**」→ 下滑并启用「**USB 调试**」→ 在仔细阅读警告内容后在「**允许 USB 调试**」窗口中确认启用。
 
     :::note
 
@@ -51,9 +51,9 @@ This approach is available starting from **AdGuard v3.5 nightly 6**. 如您仍�
 
 :::
 
-1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+1. [安装和配置](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB； 在 Windows 平台上，** Samsung ** 用户可能需要安装[此实用程序](https://developer.samsung.com/mobile/android-usb-driver.html)。
 
-1. 使用 **USB 电缆**将您的设备连接至您已安装 **ADB** 的电脑或笔记本等设备上;
+1. 用 **USB 数据线** 将设备连接至您已安装 **ADB** 的电脑或笔记本等设备上;
 
 1. 在您的 PC 上打开**命令行**：
 
@@ -68,15 +68,15 @@ This approach is available starting from **AdGuard v3.5 nightly 6**. 如您仍�
 
 :::note
 
-In some cases restricted user accounts are created implicitly and cannot be removed. 例如，您在**安卓**或 **LG** 设备上使用应用分身或双开应用功能时，将会自动创建受限用户帐户。 您可以阅读以下内容以查看，在上面描述的情况下该如何解决问题。
+在某些情况下，受限用户账户会自动创建，且无法删除。 例如，您在 **Android** 或 **LG** 设备上使用应用分身或双开应用功能时，将会自动创建受限用户账户。 您可以阅读以下内容以查看，在上面描述的情况下该如何解决问题。
 
 :::
 
-### 方案 3：使用 AdGuard 的本地 HTTP 代理模式（需要 root 权限）
+### 选项三：以*本地 HTTP 代理模式*使用AdGuard（需要 Root 权限）
 
-To enable this mode, open **AdGuard Settings** → **Network** → **Filtering method** → **Local HTTP proxy**
+要启用此模式，请打开「**AdGuard 设置**」→「**网络**」→「**过滤方式**」→「**本地 HTTP 代理**」。
 
-### LG 和三星设备
+### LG 和 Samsung 设备
 
 **LG** 或**三星**手机的用户也可能会遇到相同的问题。 这可能是由**双开应用/双 Messenger 账户**功能（其本质是隐式创建了受限账户）引起的。 为了解决该问题，您需要禁用该功能。
 
@@ -85,7 +85,7 @@ To enable this mode, open **AdGuard Settings** → **Network** → **Filtering m
 - 前往**设置**；
 - 点击**高级**功能；
 - 向下移动，点击**双 Messenger 账户**；
-- 禁用所有应用使用**应用分身**；
+- 禁用所有应用的「**双 Messenger 账户**」；
 - 锁定您的设备5分钟；
 - 解锁屏幕并重新试图创建 VPN 账号。
 
@@ -94,5 +94,5 @@ To enable this mode, open **AdGuard Settings** → **Network** → **Filtering m
 - 前往**设置**；
 - 选择**常规**标签钮；
 - 向下移动，点击**双开应用**；
-- 移除应用分身列表中所有的应用；
+- 移除应用分身列表中的所有应用；
 - 重启您的设备。

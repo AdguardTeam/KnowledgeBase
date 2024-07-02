@@ -5,13 +5,13 @@ sidebar_position: 2
 
 :::info
 
-В этой статье рассказывается об AdGuard для Windows — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://adguard.com/download.html?auto=true)
+В этой статье рассказывается об AdGuard для Windows — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 Чтобы фильтровать HTTPS-трафик и эффективно блокировать рекламу и трекеры, AdGuard генерирует специальный (и уникальный) корневой сертификат и устанавливает его в системное хранилище. Подробнее о том, почему требуется сертификат, вы можете узнать в [этой статье](/general/https-filtering/what-is-https-filtering).
 
-Обычно браузеры доверяют сертификату AdGuard после его добавления в системное хранилище сертификатов в процессе установки. Но в некоторых случаях этого недостаточно, и вы можете столкнуться с предупреждениями или ошибками. Чаще всего это происходит в браузерах на базе Firefox, таких как Mozilla Firefox, PaleMoon, Waterfox и т. д., или в Яндекс.Браузере.
+Обычно браузеры доверяют сертификату AdGuard после его добавления в системное хранилище сертификатов в процессе установки. Но в некоторых случаях этого недостаточно, и вы можете столкнуться с предупреждениями или ошибками. Чаще всего это происходит в браузерах на базе Firefox, таких как Mozilla Firefox, PaleMoon, Waterfox и т. д., или в Яндекс Браузере.
 
 ## *Потенциальная угроза безопасности* в браузерах на базе Firefox
 
@@ -22,14 +22,21 @@ sidebar_position: 2
 ![Переустановить сертификат](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/reinstall.jpg)
 
 Если это не помогло, следуйте инструкциям по ручному добавлению сертификата AdGuard в хранилище FireFox.
-> Эта инструкция предназначена для браузера Firefox. Названия кнопок и пунктов меню могут отличаться в других браузерах на основе Firefox.
+
+> This instruction is for Firefox browser. Names of buttons and menu items may differ in other Firefox-based browsers.
 
 1. Run AdGuard.
 
 1. Go to [http://local.adguard.org/cert](http://local.adguard.org/cert) and click the *Download* button. The browser should start downloading **cert.cer** file.
-> Вы также можете открыть страницу загрузки, нажав на ссылку через приложение AdGuard: *Настройки → Сеть → HTTPS-фильтрация*.
 
-![Certificate settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/link.jpeg)
+    :::note
+
+    You can also open the download page by clicking the link via the AdGuard app at *Settings → Network → HTTPS filtering*.
+
+
+:::
+
+    ![Certificate settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/link.jpeg)
 
 1. Open your browser and then open *Settings*.
 
@@ -37,23 +44,23 @@ sidebar_position: 2
 
 1. Scroll down to *Certificates* and click the *View Certificates* button.
 
-![View certificates window](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import1.jpeg)
+    ![View certificates window](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import1.jpeg)
 
 1. Select *Authorities* tab.
 
 1. Click *Import...*.
 
-![Certificate settings — import](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import2.jpeg)
+    ![Certificate settings — import](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import2.jpeg)
 
 1. Browse the downloaded **cert.cer** file and click *Open*.
 
-1. Check the *Trust this CA to identify websites* box and then lick *OK*.
+1. Check the *Trust this CA to identify websites* box and then click *OK*.
 
-![Certificate settings — checkbox](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/cert_checkbox.jpg)
+    ![Certificate settings — checkbox](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/cert_checkbox.jpg)
 
 You've successfully installed AdGuard certificate. Restart the browser and the error should go away.
 
-## Предупреждение сертификата Яндекс.Браузера
+## Предупреждение Яндекс Браузера
 
 If you are a user of both AdGuard for Windows and Yandex.Browser you may have come across this warning:
 

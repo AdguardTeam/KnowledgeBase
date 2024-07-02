@@ -5,11 +5,11 @@ sidebar_position: 13
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Android için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
-If you install AdGuard to [the *Secure folder* on your Android](https://www.samsung.com/uk/support/mobile-devices/what-is-the-secure-folder-and-how-do-i-use-it/) (this applies mainly to Samsung devices), you may face some difficulties when installing the HTTPS certificate. Mesele şu ki, *Secure klasörü* sertifikaların depolandığı kendi alanına sahiptir. However, if you do everything according to the regular certificate installation instructions ([described here](../../overview#https-filtering)), the certificate will be installed into the main memory and will play no role for your ad blocker in the *Secure folder*. Bu sorunu çözmek ve Android için AdGuard sertifikasını *Secure klasörünün* depolama alanına yüklemek için lütfen aşağıdaki talimatları izleyin:
+If you install AdGuard to [the *Secure folder* on your Android](https://www.samsung.com/uk/support/mobile-devices/what-is-the-secure-folder-and-how-do-i-use-it/) (this applies mainly to Samsung devices), you may face some difficulties when installing the HTTPS certificate. Mesele şu ki, *Secure klasörü* sertifikaların depolandığı kendi alanına sahiptir. However, if you do everything according to the regular certificate installation instructions ([described here](/adguard-for-android/features/settings#https-filtering)), the certificate will be installed into the main memory and will play no role for your ad blocker in the *Secure folder*. Bu sorunu çözmek ve Android için AdGuard sertifikasını *Secure klasörünün* depolama alanına yüklemek için lütfen aşağıdaki talimatları izleyin:
 
 1. Uygulamayı yükledikten ve yerel VPN'i bağladıktan sonra, *HTTPS filtreleme kapalı* mesajının yanındaki **ETKİNLEŞTİR** öğesine dokunun.
 1. **Sonraki** → **Sonraki** → **Şimdi kaydet** → **Sertifikayı kaydet** öğesine dokunun.

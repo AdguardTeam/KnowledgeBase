@@ -30,6 +30,6 @@ Anders verhält es sich bei dem Projekt *AdGuard Websites* . Sprachen können de
 - `critical.resx`
 - `auth.resx`
 
-Adding new strings as well as updating existing ones in these files requires special attention from the project translators and proofreaders.
+Das Hinzufügen neuer und das Aktualisieren bestehender Zeichenfolgen in diesen Dateien erfordert besondere Aufmerksamkeit von den Übersetzer:innen und Korrekturleser:innen.
 
-In addition to websites, there is a file for translating [transactional emails](https://crowdin.com/project/adguard-websites/de#/emails) in the AdGuard Websites project. Newly added strings in this file also have a high translation priority.
+In addition to websites, there is a file for translating [transactional emails](https://crowdin.com/project/adguard-websites/en#/emails) in the AdGuard Websites project. Neu hinzugefügte Zeichenfolgen in dieser Datei haben ebenfalls eine hohe Übersetzungspriorität.

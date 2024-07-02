@@ -5,7 +5,7 @@ sidebar_position: 10
 
 :::info
 
-В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://adguard.com/download.html?auto=true)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -15,7 +15,7 @@ sidebar_position: 10
 
 На Android 9 и более поздних версиях, если AdGuard установлен более чем для одного пользовательского профиля на вашем устройстве, вы можете столкнуться с проблемами при удалении приложения. Когда вы удаляете AdGuard из одного пользовательского профиля, приложение по-прежнему будет отображаться в списке приложений, но вы не сможете удалить или переустановить его. Это происходит потому, что AdGuard установлен для другого профиля пользователя на устройстве.
 
-Если вы попытаетесь переустановить AdGuard после неудачной попытки удаления, вы увидите сообщение об ошибке «Вы не можете установить приложение на своё устройство».
+If you try to reinstall AdGuard after an unsuccessful removal attempt, you will see the error message “You can't install the app on your device”.
 
 Чтобы решить эту проблему, вам нужно удалить приложение для всех пользователей: перейдите в Настройки → Все приложения → AdGuard. Нажмите три точки в правом верхнем углу и выберите *Удалить для всех пользователей*.
 
@@ -37,12 +37,12 @@ sidebar_position: 10
 
 :::
 
-1. Activate the **developer mode** and enable **USB debugging**:
+1. Активируйте **режим разработчика** и включите **отладку по USB**:
 
     - Откройте приложение **Настройки** на своём телефоне;
-    - Go to **System** section (last item in the settings menu). In this section, find the sub-item **About phone**;
-    - Tap the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
-    - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
+    - Перейдите в раздел **О системе** (последний пункт в меню настроек). В этом разделе найдите подпункт **О телефоне**;
+    - Нажмите на строку **Номер сборки** 7 раз. После этого вы получите уведомление о том, что **Теперь вы разработчик** (при необходимости введите код разблокировки устройства);
+    - Откройте **Настройки системы** → **Для разработчиков** → Прокрутите вниз и включите **отладку по USB** → Подтвердите включение отладки в окне **Разрешить отладку по USB**, внимательно прочитав предупреждение.
 
     :::note
 
@@ -51,7 +51,7 @@ sidebar_position: 10
 
 :::
 
-1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
 
 1. Подключите устройство с помощью кабеля USB **** к компьютеру или ноутбуку, на котором вы установили **ADB**;
 
@@ -85,7 +85,7 @@ sidebar_position: 10
 - Откройте **Настройки**;
 - Нажмите **Расширенные**;
 - Прокрутите вниз и нажмите **Dual Messenger**;
-- Отключите **Dual Messenger** для всех приложений;
+- Disable the **Dual messenger** for all apps;
 - Заблокируйте устройство на 5 минут;
 - Разблокируйте экран и повторите попытку создания VPN-профиля.
 
@@ -94,5 +94,5 @@ sidebar_position: 10
 - Откройте **Настройки**;
 - Выберите вкладку **Основные**;
 - Прокрутите вниз и нажмите **Dual App**;
-- Удалите все приложения из списка;
+- Remove all apps from the list;
 - Перезагрузите устройство.

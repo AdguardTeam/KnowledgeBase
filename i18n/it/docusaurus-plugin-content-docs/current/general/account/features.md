@@ -1,38 +1,38 @@
 ---
-title: What can be done in the AdGuard Account
+title: Cosa si può fare nel Profilo di AdGuard
 sidebar_position: 2
 ---
 
-In your account, you can manage your licenses, devices bound to them, personal data, email and password, view purchases and contact support.
+Nel tuo profilo, puoi gestire le tue licenze, i dispositivi a esse associati, i dati personali, email e password, visualizzare gli acquisti e contattare il supporto.
 
-## Manage account settings
+## Gestire le impostazioni del profilo
 
-In the *Settings* section of your AdGuard account, you can update or reset your password, change your email address, enable [two-factor authentication](../2fa), view the data stored about you by AdGuard and choose the language of your personal account and notifications.
+Nella sezione delle *Impostazioni* del tuo profilo di AdGuard, puoi aggiornare o ripristinare la tua password, cambiare il tuo indirizzo email, abilitare l'[autenticazione a due fattori](../2fa), visualizzare i dati memorizzati su di te da AdGuard e scegliere la lingua del tuo profilo personale e delle tue notifiche.
 
-In this section, you can also manage your email preferences:
+In questa sezione, puoi anche gestire le tue preferenze email:
 
-- receive transactional emails,
-- receive AdGuard’s monthly newsletters,
-- receive emails about AdGuard special offers and promotions,
-- send read receipts to AdGuard when you open emails.
+- ricevi le email transazionali,
+- ricevi le newsletter mensili di AdGuard,
+- ricevi le email su offerte speciali e promozioni di AdGuard,
+- invia le conferme di lettura ad AdGuard quando apri le email.
 
-## Manage licenses
+## Gestione delle licenze
 
-In the *Licenses* section, you can manage your licenses and the devices bound to them.
+Nella sezione delle *Licenze*, puoi gestire le tue licenze e i dispositivi a esse collegati.
 
-[AdGuard licenses](../../license/what-is) can be:
+Le [licenze di AdGuard](../../license/what-is) possono essere:
 
-- bound and unbound,
-- extended,
-- upgraded,
-- canceled. You can also update your payment details.
+- collegate e scollegate,
+- estese,
+- aggiornate,
+- annullate. Inoltre, puoi aggiornare i tuoi dettagli di pagamento.
 
-The devices bound to your AdGuard Ad Blocker licenses can be unbound or renamed. You can unbind unused devices by clicking the cross icon next to them.
+I dispositivi collegati alle tue licenze di AdGuard Ad Blocker sono collegabili o scollegabili. Puoi scollegare i dispositivi inutilizzati, cliccando sull'icona della croce affianco a essi.
 
-## View purchases
+## Visualizza gli acquisti
 
-The Purchase history section displays all the licenses that you have ever purchased using the email account you registered your AdGuard account with. You will also find there information about the date of purchase, order number, payment method and cost of the purchase.
+La sezione dello Storico degli acquisti mostra tutte le licenze mai acquistate utilizzando il profilo email registrato con il tuo profilo di AdGuard. You will also find there information about the date of purchase, order ID, payment method, and cost of the purchase.
 
-## Contact support
+## Contattare il supporto
 
-The Support tab contains useful links to help you solve problems or find answers to your questions about AdGuard products. They are divided into six sections: FAQ, Send a bug repot/feature request, Report incorrect blocking, Contact support, Knowledge base and Discuss.
+La scheda del Supporto contiene i link utili per aiutarti a risolvere problemi e trovare risposte alle tue domande sui prodotti di AdGuard. Sono divisi in sei sezioni: FAQ, Invia una segnalazione di bug/richiesta di funzionalità, Segnala blocco errato, Contatta il supporto, Base di conoscenza e Discuti.

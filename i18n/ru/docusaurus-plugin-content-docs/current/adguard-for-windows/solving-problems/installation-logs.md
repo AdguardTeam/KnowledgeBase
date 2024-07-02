@@ -5,20 +5,20 @@ sidebar_position: 4
 
 :::info
 
-В этой статье рассказывается об AdGuard для Windows — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://adguard.com/download.html?auto=true)
+В этой статье рассказывается об AdGuard для Windows — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 Если во время установки AdGuard возникнут какие-либо проблемы, служба поддержки может попросить вас собрать и отправить им журналы установки AdGuard. В этом случае вам необходимо:
 
-1. Select *Run* command in Start menu or press *Win + R* on the keyboard.
+1. Выберите команду *Выполнить* в меню «Пуск» или нажмите *Win + R* на клавиатуре.
 
-1. Type in *%tmp%* and click *OK*.
+1. Введите *%tmp%* и нажмите *OK*.
 
-    ![Open temp folder *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/install-logs-1.png)
+    ![Откройте временную папку *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/install-logs-1.png)
 
-1. In the opened folder select all files starting with `Adguard` and add them to archive (using WinRAR or any other archiving software).
+1. В открывшейся папке выберите все файлы, начинающиеся с `AdGuard`, и добавьте их в архив (используя WinRAR или любую другую программу архивации).
 
-    ![AdGuard installation log files *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/install-logs-2.png)
+    ![Лог-файлы установки AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/install-logs-2.png)
 
-1. Send this archive to AdGuard tech support at **support@adguard.com**.
+1. Отправьте этот архив в техподдержку AdGuard по адресу **support@adguard.com**.

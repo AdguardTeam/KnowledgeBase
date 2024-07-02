@@ -23,7 +23,7 @@ Když jste přesměrováni na webovou stránku z vyhledávače Google, Yahoo neb
 
 ### Požádat webové stránky, aby vás nesledovaly {#donottrack}
 
-Odešle webovým stránkám, které jste navštívili požadavky [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) a [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track).
+Odesílá webovým stránkám, které jste navštívili signály [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) a [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track).
 
 ### Odebrat sledovací parametry z URL
 
@@ -31,7 +31,7 @@ Pokud tuto možnost povolíte, AdGuard odstraní z adres URL parametry sledován
 
 ### Metody sledování {#tracking-methods}
 
-### Automatická destrukce cookies třetích stran {#3p-cookie}
+### Automatické odstranění cookies třetích stran {#3p-cookie}
 
 Webové stránky používají soubory cookies k ukládání vašich informací a preferencí, jako je zvolený jazyk, vaše poloha nebo seznam položek v nákupním košíku. Když se vrátíte na webovou stránku, váš prohlížeč odešle zpět soubory cookies patřící dané webové stránce, což mu umožní "zapamatovat si" vaše údaje.
 
@@ -39,9 +39,21 @@ Soubory cookies třetích stran jsou ty, které jsou implementovány jinou webov
 
 Nastavte dobu (v minutách), po jejímž uplynutí budou všechny soubory cookies třetích stran zničeny. Pro úplné zablokování nastavte časovač na 0.
 
-### Automatická destrukce vlastních cookies {#1p-cookie}
+:::caution
 
-Tuto možnost nedoporučujeme povolovat, protože může vážně narušit práci některých webů. Nastavte dobu (v minutách), po jejímž uplynutí budou všechny soubory vlastních cookies zničeny. Pro úplné zablokování nastavte časovač na 0.
+Toto nastavení odstraní všechny soubory cookies třetích stran, včetně informací o vašich přihlášeních prostřednictvím sociálních sítí nebo jiných služeb třetích stran. Možná se budete muset pravidelně znovu přihlašovat na některé webové stránky a čelit dalším problémům souvisejícím se soubory cookies. Chcete-li blokovat pouze sledovací soubory cookies, použijte filtr [*AdGuard ochrana sledování*](/general/ad-filtering/filter-policy/#tracking-protection-filter).
+
+:::
+
+### Automatické odstranění cookies aktuální stránky {#1p-cookie}
+
+Nastavte dobu (v minutách), po jejímž uplynutí budou všechny soubory vlastních cookies zničeny. Pro úplné zablokování nastavte časovač na 0.
+
+:::caution
+
+Tuto možnost nedoporučujeme povolovat, protože může vážně narušit práci některých webů.
+
+:::
 
 ### Zakázat mezipaměť požadavků třetích stran {#3p-cache}
 
@@ -75,7 +87,7 @@ Některé webové stránky a webové služby stále používají starou technolo
 
 ## Různé {#miscellaneous}
 
-### Skrýt třetím stranám referenční ID {#referrer}
+### Skrýt třetím stranám referenční ID {#referer}
 
 Referenční ID je hlavička HTTP používaná v požadavcích prohlížeče na server. Obsahuje adresu URL zdroje požadavku. Při přechodu z jedné stránky na druhou uloží referenční ID adresu URL původní stránky. Na serveru, který je hostitelem cílové webové stránky, je často instalován software, který analyzuje referenční ID a získává z něj různé informace. Povolením možnosti *Skrýt třetím stranám referenční ID* skryjete aktuální web před weby třetích stran změnou záhlaví HTTP.
 

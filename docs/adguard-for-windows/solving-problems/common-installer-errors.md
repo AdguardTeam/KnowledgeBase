@@ -5,7 +5,7 @@ sidebar_position: 6
 
 :::info
 
-This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -81,7 +81,7 @@ The error sounds scarier than it actually is. In reality, this is a rather gener
     4) Click *OK* to go back to *Properties* dialog. Then click *Advanced*.
     5) Click *Change Permissions*.
     6) On *Permissions* tab, double-click *Administrators*.
-    7) Select *This folder, subfolders and files* for *Applies to* field and tick all the available *Basic permissions*. After that hit *OK*.
+    7) Select *This folder, subfolders and files* for *Applies to* field and check all the available *Basic permissions*. After that, hit *OK*.
     8) Do the same operation above (from item 7) for *SYSTEM*.
     9) Click *OK* all the way out. Try installing AdGuard again.
 

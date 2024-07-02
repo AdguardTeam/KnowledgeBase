@@ -5,7 +5,7 @@ sidebar_position: 4
 
 :::info
 
-В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, сначала [скачайте приложение AdGuard](https://adguard.com/download.html?auto=true)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -17,94 +17,94 @@ sidebar_position: 4
 
 1. Убедитесь, что у вас включена вкладка [Для разработчиков](https://developer.android.com/studio/run/device.html#developer-device-options).
 
-1. In **Developer options**, tap **Take bug report**.
+1. Перейдите в раздел **Для разработчиков** и нажмите **Отчёт об ошибке**.
 
-    ![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
+    ![Отчёт об ошибке *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
 
-1. Select the type of bug report you want and tap **Report**.
+1. Выберите нужный тип отчёта об ошибке и нажмите **Отправить отчёт**.
 
     :::note
 
-    After a moment, you will see a notification that the bug report is ready (see Figure 2).
+    Через некоторое время вы увидите уведомление о том, что отчёт об ошибке готов (см. рисунок 2).
 
 
 :::
 
-    ![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
+    ![Отчёт об ошибке *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
 
-1. To share the bug report, tap the notification.
+1. Чтобы поделиться отчётом об ошибке, коснитесь уведомления.
 
-    ![Bug report *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
+    ![Отчёт об ошибке *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
 
-1. Send this log to our support team.
+1. Отправьте этот лог нашей команде поддержки.
 
     :::note
 
-    Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+    Наша команда поддержки обработает ваш запрос намного быстрее, если вы укажете в сообщении номер тикета HelpDesk или номер ошибки на GitHub.
 
 
 :::
 
 ## Получение отчёта об ошибке через Logcat
 
-On devices with Android 7 and below, it is not possible to send a bug report automatically. Then you can capture it manually via Logcat — a standard Android command-line tool that dumps a log of system messages.
+На устройствах с Android 7 и более ранними версиями невозможно автоматически отправить отчёт об ошибке. Его можно получить вручную с помощью Logcat — стандартного инструмента командной строки Android, который выгружает логи системных сообщений.
 
-Follow this instruction:
+Следуйте этой инструкции:
 
-**Part #1: prepare the device**
+**Часть 1: подготовьте устройство**
 
-1. Switch device to the developer mode. To do this: go to **Settings** → **About** → tap **Build Number** 7 times.
+1. Переключите устройство в режим разработчика. Для этого: перейдите в **Настройки** → **Об устройстве** → нажмите на **Номер сборки** 7 раз.
 
-1. Go to **Developer Options**.
+1. Перейдите в **Параметры разработчика**.
 
-1. Enable **USB debugging**.
+1. Включите **отладку по USB**.
 
-1. Increase **Logger buffer** sizes to 4 MB per log buffer.
+1. Увеличьте размеры **буфера журнала** до 4 МБ для каждого буфера записей.
 
-4 MB should be enough for storing the logs we need until you're able to do the second part (getting the log from the device);
+4 МБ должно быть достаточно для хранения нужных вам логов до тех пор, пока вы не перейдёте ко второй части (извлечение самих логов с устройства);
 
-**Part #2: reproduce the problem**
+**Часть 2: воспроизведите проблему**
 
-It is important to reproduce the problem after you're done with the first part.
+Важно воспроизвести сбой после того, как вы закончите с первой частью.
 
-1. Reproduce the problem.
+1. Воспроизведите проблему.
 
-1. Remember/write down the date and time of reproduction and include it in the email to our support later.
+1. Запомните/запишите дату и время воспроизведения и укажите их в письме в поддержку.
 
-**Part #3: get the log**
+**Часть 3: получите лог**
 
-1. Connect your device to a PC with a USB cable.
+1. Подключите устройство к компьютеру с помощью USB-кабеля.
 
-1. Download [Android SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools#downloads). Choose the appropriate download link for your OS from the Downloads section. Once you tap the link, a ZIP file will be downloaded. You can extract the ADB (Android Debug Bridge) files from the ZIP file and store them wherever you want.
+1. Скачайте [Инструменты платформы Android SDK](https://developer.android.com/studio/releases/platform-tools#downloads). Выберите соответствующую ссылку для загрузки для вашей ОС в разделе «Загрузки». Когда вы нажмёте на ссылку, будет загружен ZIP-файл. Вы можете извлечь файлы ADB (Android Debug Bridge) из ZIP-файла и сохранить их в любом месте.
 
-1. Test whether ADB is working properly: connect your Android device to your computer using a USB cable, open the Command Prompt, PowerShell or Terminal and run the following command:
+1. Проверьте работоспособность ADB: подключите устройство Android к компьютеру с помощью USB-кабеля, откройте Командную строку, PowerShell или Терминал и выполните следующую команду:
 
-    `adb devices`
+    `устройства adb`
 
-    An example of a successful result:
+    Пример успешного результата:
 
-    ![Step 3](https://cdn.adtidy.org/content/kb/ad_blocker/android/logcat/logcat_step-3.png)
+    ![Шаг 3](https://cdn.adtidy.org/content/kb/ad_blocker/android/logcat/logcat_step-3.png)
 
-1. Then run the following command (insert the relevant path):
+1. Затем выполните следующую команду (вставьте соответствующий путь):
 
     `adb logcat -v threadtime -d > C:\Program Files\platform-tools\logs.txt`
 
-    Email the created `txt` file as well as the time the problem was reproduced (from part #2) to our support team at support@adguard.com.
+    Отправьте созданный файл `txt` и время воспроизведения проблемы (из части 2) нашей команде поддержки по адресу support@adguard.com.
 
-### Alternative way for ROOT users
+### Альтернативный способ для пользователей с ROOT
 
-1. Download and run [Logcat](https://play.google.com/store/apps/details?id=com.pluscubed.matlog).
+1. Скачайте и запустите приложение [Logcat](https://play.google.com/store/apps/details?id=com.pluscubed.matlog).
 
-1. Choose **Record** in the menu. Choose a name for a log file or just press **OK**. Now you can press **Home** button, CatLog will continue recording the log in background.
+1. Выберите в меню **Запись**. Выберите имя для файла лога или просто нажмите **OK**. Теперь вы можете нажать на кнопку **Домой**, CatLog продолжит записывать лог в фоновом режиме.
 
-1. Reproduce the issue.
+1. Воспроизведите ошибку.
 
-1. Open CatLog and press **Stop record** in the menu.
+1. Откройте CatLog и нажмите **Прекратить запись** в меню.
 
-1. Send this log to our support team.
+1. Отправьте этот лог нашей команде поддержки.
 
 :::note
 
-Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+Наша команда поддержки обработает ваш запрос намного быстрее, если вы укажете в сообщении номер тикета HelpDesk или номер ошибки на GitHub.
 
 :::

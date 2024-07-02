@@ -5,11 +5,13 @@ sidebar_position: 2
 
 :::info
 
-В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://adguard.com/download.html?auto=true)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-В этой статье мы расскажем вам о том, как собирать отладочные логи — важном этапе поиска неисправностей для решения сложных проблем, которые могут потенциально возникнуть. Отладочные логи позволяют получить подробное представление о внутреннем устройстве AdGuard для Android. If the AdGuard support team asks you to provide debug logs, simply follow these instructions.
+В этой статье мы расскажем вам о том, как собирать отладочные логи — важном этапе поиска неисправностей для решения сложных проблем, которые могут потенциально возникнуть. Отладочные логи позволяют получить подробное представление о внутреннем устройстве AdGuard для Android. Если команда поддержки AdGuard попросит вас предоставить отладочные логи, просто следуйте этим инструкциям.
+
+> AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/en/privacy/android.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
 
 ### Сбор отладочных логов
 

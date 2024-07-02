@@ -5,72 +5,48 @@ sidebar_position: 14
 
 :::info
 
-Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-AdGuard pro Android nabízí funkci nazvanou [HTTPS filtrování](../../overview#https-filtering), která umožňuje [filtrovat šifrovaný provoz HTTPS](/general/https-filtering/what-is-https-filtering) v zařízení se systémem Android. Tato funkce vyžaduje přidání certifikátu CA AdGuardu do seznamu důvěryhodných certifikátů.
+AdGuard pro Android dokáže [filtrovat šifrovaný provoz HTTPS](/general/https-filtering/what-is-https-filtering), čímž blokuje většinu reklam a slídičů na webových stránkách. Na zařízeních s přístupem root vám AdGuard také umožňuje filtrovat provoz HTTPS v aplikacích. HTTPS filtrování vyžaduje přidání certifikátu CA AdGuardu do seznamu důvěryhodných certifikátů.
 
-V zařízeních bez přístupu root lze certifikáty CA nainstalovat do **Uživatelského úložiště**. Pouze omezená podmnožina aplikací (většinou prohlížeče) důvěřuje certifikátům CA nainstalovaným do uživatelského úložiště, což znamená, že filtrování HTTPS bude fungovat pouze pro tyto aplikace.
+V zařízeních bez přístupu root lze certifikáty CA nainstalovat do **uživatelského úložiště**. Pouze omezená podmnožina aplikací (většinou prohlížeče) důvěřuje certifikátům CA nainstalovaným do uživatelského úložiště, což znamená, že filtrování HTTPS bude fungovat pouze pro tyto aplikace.
 
-Na zařízeních s root přístupem však můžete nainstalovat certifikát do **Systémového úložiště** a povolit HTTPS filtrování provozu jiných aplikací.
+Na zařízeních s přístupem root můžete nainstalovat certifikát do **systémového úložiště**. To umožní AdGuardu filtrovat HTTPS provoz i v ostatních aplikacích.
 
 Zde je návod, jak to udělat:
 
-## Jak nainstalovat certifikát AdGuardu do systémového úložiště (na zařízení s root přístupem)
+## Jak nainstalovat certifikát AdGuardu do systémového úložiště
 
-1. Povolte filtrování HTTPS v AdGuardu pro Android a uložte certifikát AdGuardu do uživatelského úložiště (v případě potřeby použijte [tento pokyn](../../overview#https-filtering))
+1. Otevřete *AdGuard → Nastavení → Filtrování → Síť → HTTPS filtrování → Bezpečnostní certifikáty*.
 
-     Od verze 4.1 AdGuard pro Android si uživatelé mohou do uživatelského úložiště nainstalovat dva certifikáty, které jim pomohou filtrovat webové stránky v prohlížeči Chrome.
+1. Pokud ještě nemáte žádný certifikát, **nainstalujte AdGuard Personal CA do uživatelského úložiště**. To umožní AdGuardu filtrovat HTTPS provoz v prohlížečích.
 
-1. Jděte do **aplikace AdGuard** → **Menu** (≡) → **Nastavení** → **Síť** → **HTTPS filtrování** → **Bezpečnostní certifikát** → klepněte na "**Kopírovat do systémového úložiště**"
+1. **Nainstalujte AdGuard Intermediate CA do uživatelského úložiště**. Budete ho potřebovat ke spuštění modulu adguardcert Magisk, který umožňuje přesouvat certifikáty do systémového úložiště.
 
-    To stačí pro starší verze Magisk.
+    ![Install the certificate *mobile_border](https://cdn.adtidy.org/blog/new/asx1xksecurity_certificates.png)
 
-    Pokud však máte novější verzi, zobrazí se tato zpráva:
+1. Nainstalujte [nejnovější verzi modulu **adguardcert** Magisk](https://github.com/AdguardTeam/adguardcert/releases/latest/).
 
-    > Nelze zkopírovat certifikát do systémového úložiště. Zkuste použít modul "AdGuard Certificate".
-
-    V takovém případě přejděte k následujícím krokům:
-
-1. Přejděte do **Magisk** → **Nastavení**
-
-    ![Open Magisk settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-1.png)
-
-1. Zapněte **Zygisk**
-
-    ![Enable Zygisk *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-2.png)
-
-    ![Go back to Magisk main screen *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-3.png)
-
-1. Stáhněte soubor `.zip` (modulu "AdGuard Certificate") z nejnovější vydání na [na GitHubu](https://github.com/AdguardTeam/adguardcert/releases/latest/)
-
-1. Přejděte do **Magisk** → **Moduly** → **Instalovat z úložiště** a vyberte stažený soubor `.zip`
+1. Otevřete *Magisk → Moduly → Instalovat z úložiště* a vyberte stažený soubor **adguardcert**. Tím se AdGuard Personal CA přesune z uživatelského úložiště systémového.
 
     ![Open Magisk modules *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-4.png)
 
     ![Install from storage *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-5.png)
 
-    ![Select AdGuard certificate module *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-6.png)
+    ![Select adguardcert *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-6.png)
 
-1. Restartujte
+1. Klepněte na **Restartovat**.
 
     ![Reboot the device *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-7.png)
 
-Pokud vyjde nová verze modulu "AdGuard Certificate", zopakujte kroky 3-7 a modul aktualizujte.
+Po přesunu vám **AdGuard Personal CA** v systémovém úložišti umožní filtrovat provoz HTTPS v aplikacích, zatímco **AdGuard Intermediate CA** v uživatelském úložišti vám umožní filtrovat HTTPS provoz v prohlížečích založených na Chromiu (viz níže proč).
 
-Modul vykonává svou práci během zavádění systému. Pokud se váš certifikát AdGuardu změní, budete muset zařízení restartovat, aby se nový certifikát zkopíroval do systémového úložiště.
+## Známé problémy s prohlížeči Chrome a Chromium
+
+Chrome a další prohlížeče založené na platformě Chromium vyžadují protokoly transparentnosti certifikátů (CT) pro certifikáty umístěné v systémovém úložišti. Protokoly CT neobsahují informace o certifikátech vydaných aplikacemi filtrujícími protokol HTTPS. Proto AdGuard vyžaduje další certifikát v uživatelském úložišti, aby mohl v těchto prohlížečích filtrovat provoz HTTPS.
 
 ### Prohlížeč Bromite
 
-:::note
-
-Vezměte prosím na vědomí, že pro správnou funkci **Bromite** je kromě výše uvedených kroků nutné nastavit položku "Povolit uživatelské certifikáty" v `chrome://flags` do stavu "Povoleno".
-
-:::
-
-### Chrome a prohlížeče založené na Chromium
-
-Zkrátka a dobře, pokud použijete modul "AdGuard Certificate", nebudete mít s filtrováním HTTPS v prohlížečích Chrome a Chromium na zařízeních s přístupem root žádné problémy.
-
-Zde je trochu podrobnější vysvětlení: Chrome (a následně mnoho dalších prohlížečů založených na Chromium) začal nedávno vyžadovat protokoly CT pro certifikáty CA nalezené v **Systémovém úložišti**. Modul "AdGuard Certificate" zkopíruje certifikát CA AdGuardu z **Uživatelského úložiště** do **Systémového úložiště**. Obsahuje také modul Zygisk, který vrátí všechny úpravy provedené přes Magisk pro [některé prohlížeče](https://github.com/AdguardTeam/adguardcert/blob/master/zygisk_module/jni/browsers.inc). Prohlížeče tak najdou certifikát AdGuardu pouze v Uživatelském úložišti a nebudou si stěžovat na chybějící protokol CT, zatímco ostatní aplikace budou nadále používat stejný certifikát ze Systémového úložiště.
+Kromě výše uvedeného problému, Bromite ve výchozím nastavení nedůvěřuje certifikátům v uživatelském úložišti. Chcete-li filtrovat provoz HTTPS, otevřete Bromite, přejděte na `chrome://flags` a nastavte *Povolit uživatelské certifikáty* na *Povoleno*. **To platí pro zařízení s přístupem root i bez něj**.

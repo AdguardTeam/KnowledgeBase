@@ -3,9 +3,9 @@ title: Windows 로그 수집하는 방법
 sidebar_position: 5
 ---
 
-:::info
+:::정보
 
-본 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Windows용 AdGuard에 대해 다룹니다. 어떻게 작동하는지 확인하려면, [AdGuard 앱을 다운로드](https://adguard.com/download.html?auto=true)하세요.
+본 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Windows용 AdGuard에 대해 다룹니다. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -27,7 +27,7 @@ To analyze and diagnose different problems that may potentially arise, the AdGua
 
     - Right-click *Application* and in the drop-down menu select *Save All Events As...*
 
-    - 이름과 저장할 위치를 선택하고 *저장*을 클릭합니다. 그다음에는 *언어 설정에 대한 정보 표시*를 선택합니다. *한국어* 옆의 확인란을 선택하고 *확인*을 클릭합니다.
+    - 이름과 저장할 위치를 선택하고 *저장*을 클릭합니다. 그다음에는 *언어 설정에 대한 정보 표시*를 선택합니다. You need to check the checkbox next to *English*. *확인*을 클릭합니다.
 
     - Open *System*: *Event Viewer (Local)* → *Windows Logs* → *System*.
 

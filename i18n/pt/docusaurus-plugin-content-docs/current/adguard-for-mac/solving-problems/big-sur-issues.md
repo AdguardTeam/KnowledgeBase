@@ -5,7 +5,7 @@ sidebar_position: 4
 
 :::info
 
-Este artigo aborda o AdGuard para Mac, um bloqueador de anúncios multifuncional que protege o seu dispositivo ao nível do sistema. Para ver como funciona, [descarregue a aplicação AdGuard](https://adguard.com/download.html?auto=true)
+This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -41,7 +41,7 @@ For a deeper understanding of this problem, read [this article](../protect-mail-
 
 **Recommended solution**
 
-At this point, we recommend using a more traditional VPN service, such as AdGuard VPN, instead of the new Apple's privacy features.
+At this point, we recommend using a more traditional VPN service, such as [AdGuard VPN](https://adguard-vpn.com/), instead of the newer Apple privacy features.
 
 ### Monterey 12, Big Sur 11.6 and later: currently existing problems
 

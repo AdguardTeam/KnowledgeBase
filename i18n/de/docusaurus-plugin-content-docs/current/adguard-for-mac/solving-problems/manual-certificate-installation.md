@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-Dieser Artikel behandelt AdGuard für Mac, einen multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://adguard.com/download.html?auto=true)
+Dieser Artikel behandelt AdGuard für Mac, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie die App funktioniert, [laden Sie AdGuard für Mac herunter](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -13,16 +13,16 @@ AdGuard für Mac muss das Root-Zertifikat im Zertifikatspeicher installieren, um
 
 Um das Zertifikat manuell in einem Firefox-ähnlichen Browser zu installieren, machen Sie Folgendes:
 
-  1. Öffnen Sie „Settings“
+  1. Open *Preferences*
 
-  2. Gehen Sie zu „Privacy & Security“ — „Certificates“
+  2. Go to *Privacy & Security* → *Certificates*
 
-  3. Klicken Sie auf „View Certificates“
+  3. Click *View Certificates*
 
-  4. Navigieren Sie zur Registerkarte „Authorities“ und klicken Sie auf die Schaltfläche „Import...“
+  4. Navigate to the *Authorities* tab and click the *Import...* button
 
   5. Wählen Sie die Datei `/Library/Application Support/AdGuard Software/com.adguard.mac.adguard/AdguardCore/Adguard Personal CA.cer` aus oder laden Sie sie einfach von http://local.adguard.org/cert mit einem Chromium-basierten Browser herunter (z. B. Google Chrome oder neu Edge) und mit einer in AdGuard laufenden HTTPS-Filterung
 
 Die genauen Aktionen, die für verschiedene Gecko-basierte Browser erforderlich sind, können variieren, aber die allgemeine Reihenfolge und der Pfad zur `Personal CA.cer` Datei sind gleich.
 
-PS: Für Version [der Setapp-Anwendung](https://setapp.com/apps/adguard) lautet der Dateipfad wie folgt: `/Library/Application Support/com.adguard.mac.adguard-setapp/AdguardCore/Adguard Personal CA.cer`
+P.S.: For [Setapp application version](https://setapp.com/apps/adguard) the file path is the following: `/Library/Application Support/com.adguard.mac.adguard-setapp/AdguardCore/Adguard Personal CA.cer`

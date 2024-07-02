@@ -5,7 +5,7 @@ sidebar_position: 4
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Mac için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Mac için AdGuard hakkındadır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -23,7 +23,7 @@ Currently, AdGuard and iCloud Private Relay cannot work at the same time. AdGuar
 
 For a deeper understanding of this problem, read [this article](../icloud-private-relay).
 
-**Recommended solution**
+**Önerilen çözüm**
 
 We recommend using AdGuard together with a more traditional VPN service such as [AdGuard VPN](https://adguard-vpn.com/).
 
@@ -39,9 +39,9 @@ Apple's Mail app now uses a proxy to hide a user's IP address when downloading i
 
 For a deeper understanding of this problem, read [this article](../protect-mail-activity).
 
-**Recommended solution**
+**Önerilen çözüm**
 
-At this point, we recommend using a more traditional VPN service, such as AdGuard VPN, instead of the new Apple's privacy features.
+At this point, we recommend using a more traditional VPN service, such as [AdGuard VPN](https://adguard-vpn.com/), instead of the newer Apple privacy features.
 
 ### Monterey 12, Big Sur 11.6 and later: currently existing problems
 
@@ -85,7 +85,7 @@ It needs to be said that this problem can't be solved by disabling connections m
 
 ### Compatibility with local proxies
 
-:::note
+:::not
 
 Now AdGuard can filter local proxies (mostly) without any problems. If you encounter any issues in OS versions 11.1+, or if you're using Big Sur 11.0, remove the local proxy from System settings and configure an upstream proxy in AdGuard by following the instruction below.
 
@@ -164,7 +164,7 @@ If you face problems in Big Sur or Monterey which can't be resolved by any of th
 
 Now AdGuard has automatically added a **.pac** file to your Mac's network settings, so that the system will consider AdGuard a proxy and try to send all traffic through AdGuard.
 
-:::note
+:::not
 
 Some apps may ignore this system setting and their traffic will not be filtered.
 

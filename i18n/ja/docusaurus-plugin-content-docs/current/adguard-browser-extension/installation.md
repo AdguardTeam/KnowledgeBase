@@ -1,11 +1,11 @@
 ---
 title: How to install
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 :::info
 
-この記事は、お使いのブラウザのみを保護する「AdGuard ブラウザ拡張機能」に関するものです。 デバイス全体を保護するには、[AdGuardアプリをダウンロード](https://adguard.com/download.html?auto=true)してください。
+この記事は、お使いのブラウザのみを保護する「AdGuard ブラウザ拡張機能」に関するものです。 To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -71,4 +71,4 @@ In the opened dialog window, click *Add extension* to install AdGuard Browser Ex
 
 ## How to install AdGuard Browser Extension for Safari
 
-AdGuard for Safari is not a browser extension in a common sense. You can read more about it in a [dedicated article](/adguard-for-safari/overview). Or you can [download the installation file](https://agrd.io/safari_release) directly from this page.
+AdGuard for Safari is not a browser extension in a common sense. You can read more about it in a [dedicated article](/adguard-for-safari/features/general). Or you can [download the installation file](https://agrd.io/safari_release) directly from this page.

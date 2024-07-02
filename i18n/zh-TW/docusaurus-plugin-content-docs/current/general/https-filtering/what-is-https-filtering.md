@@ -11,7 +11,7 @@ Using HTTPS is highly advantageous because encrypted traffic is protected agains
 
 The diagram below describes the difference between plain HTTP protocol and secure HTTPS protocol.
 
-![What is HTTPS](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https.png)
+![What is HTTPS?](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https.png)
 
 ### What is a security certificate?
 
@@ -63,7 +63,7 @@ Most of the problems discovered in the above study are related to certificate va
 
 #### HTTPS filtering issues on Android 7+
 
-[Starting from Android 7](https://blog.adguard.com/en/android-nougat-release-and-what-does-it-mean-for-adguard-users/), developers have to explicitly indicate that their apps trust user-installed certificates. Not everyone wants to, or bothers with it. What does it mean for AdGuard? AdGuard installs a user certificate to be able to filter HTTPS traffic. If an app doesn't trust this certificate, its HTTPS traffic will not be filtered. What to do?
+[Starting from Android 7](https://adguard.com/en/blog/android-nougat-release-and-what-does-it-mean-for-adguard-users.html), developers have to explicitly indicate that their apps trust user-installed certificates. Not everyone wants to, or bothers with it. What does it mean for AdGuard? AdGuard installs a user certificate to be able to filter HTTPS traffic. If an app doesn't trust this certificate, its HTTPS traffic will not be filtered. What to do?
 
 The first thing worth mentioning is that many apps (even modern ones) still trust user certificates. Nothing has changed in this regard. Almost all browsers also trust such certificates. There may be some exotic browsers that do not, but they are a rare exception to common practice.
 

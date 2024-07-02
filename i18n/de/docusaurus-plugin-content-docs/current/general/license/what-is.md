@@ -1,44 +1,55 @@
 ---
-title: What is an AdGuard license
+title: What is AdGuard license?
 sidebar_position: 1
 ---
 
-## What is an AdGuard license
+Eine Lizenz ist eine Erlaubnis zur Nutzung des AdGuard-Produkts, die in Übereinstimmung mit dem [Endbenutzer-Lizenzvertrag](https://adguard.com/eula.html) erteilt wird. Wenn sie an eine E-Mail-Adresse gebunden sind, können die AdGuard-Lizenzen im [AdGuard-Konto](https://my.adguard.com/) gefunden werden.
 
-Eine Lizenz ist die Erlaubnis zur Nutzung des AdGuard-Produkts, die in Übereinstimmung mit der Endbenutzer-Lizenzvereinbarung bereitgestellt wird. AdGuard-Lizenzen existieren in Form von Lizenzschlüsseln, Aktivierungscodes und Produktkarten im [AdGuard-Konto](../../account/register) des Benutzers.
+## Welche Arten von AdGuard-Lizenzen gibt es?
 
-Einige Lizenzen müssen erworben werden (z. B. Einzellizenz von AdGuard Werbeblocker), andere sind kostenlos und zeitlich begrenzt (z. B. Testlizenzen von AdGuard-Apps) oder haben einen eingeschränkten Funktionsumfang (z. B. AdGuard für iOS oder AdGuard Browsererweiterung). Hier ist die Liste aller Arten von AdGuard Werbeblocker-Lizenzen.
+Auf der [Kaufseite](https://adguard.com/license.html) sind folgende Arten von Lizenzen aufgeführt:
 
-1. **Testlizenzen** sind kostenlose zeitlich begrenzte Lizenzen mit vollem Funktionsumfang: AdGuard für Windows – 14-tägige Testversion, AdGuard für Mac – 14-tägige Testversion, AdGuard für Android – 7-tägige Testversion.
-2. **Free licenses** are not time-limited, but have limited functionality: AdGuard Browser Extension, AdGuard Content Blocker, AdGuard for iOS.
-3. **Abonnements** sind kostenpflichtige Lizenzen, die jeden Monat oder jedes Jahr automatisch erneuert werden. Sie können auch manuell erneuert werden. AdGuard Werbeblocker Monatliches Abonnement, AdGuard Werbeblocker 1-Jahres-Abonnement.
-4. **Lizenzen, die von Distributoren erworben wurden** und **geschenkte Lizenzen**, sind zeitlich begrenzt und können nicht automatisch verlängert werden. Sie können jedoch manuell erneuert werden: AdGuard Werbeblocker Monatliche Lizenz, AdGuard Werbeblocker 1-Jahres-Lizenz.
-5. **Lebenslange Lizenzen** sind nicht zeitlich begrenzt und haben den vollen Funktionsumfang: AdGuard Werbeblocker Lebenslang, AdGuard Pro für iOS.
+- **1-Jahres-Abonnements** — diese Lizenzen werden automatisch jedes Jahr erneuert oder können manuell verlängert werden
+    - Einzellizenz — schützt bis zu 3 Geräte
+    - Familienlizenz — schützt bis zu 9 Geräte
+- **Lebenslang** — diese Lizenzen sind zeitlich nicht begrenzt
+    - Einzellizenz — schützt bis zu 3 Geräte
+    - Familienlizenz — schützt bis zu 9 Geräte
 
-## Wie viele Geräte können hinzugefügt werden{#devices}
+Es gibt auch Lizenzen, die man von anderen Quellen erwerben oder kostenlos erhalten kann:
 
-Unterschiedliche Lizenzen können mit einer unterschiedlichen Anzahl von Geräten verwendet werden:
+- **Testlizenzen** sind kostenlose, zeitlich begrenzte Lizenzen, mit denen Sie die volle Funktionalität des Produkts testen können
+    - AdGuard für Windows — 14-Tage-Testversion
+    - AdGuard für Mac — 14-Tage-Testversion
+    - AdGuard für Android — 7-Tage-Testversion
+- **Vertriebshändlerlizenzen** und **Geschenklizenzen** können sowohl zeitlich begrenzt als auch nicht zeitlich begrenzt sein. Lizenzen mit einem Auslaufdatum können nur manuell verlängert werden
+    - Einzellizenz — schützt bis zu 3 Geräte
+    - Familienlizenz — schützt bis zu 9 Geräte
+- **Die Lizenz für AdGuard Pro für iOS** wird über den App Store erworben und verwaltet und kann nur auf iOS- und iPadOS-Geräten mit der gleichen Apple-ID verwendet werden
 
-- Einzellizenz: bis zu drei Geräte,
-- Familienlizenz: bis zu neun Geräte,
-- AdGuard Pro für iOS: ein Gerät.
+:::tip
 
-To use your license on a device, log in to your [AdGuard account](../../account/features) on it. To extend the device limit, you can [upgrade](../activation#how-to-upgrade-a-license) your license.
+Um die Gerätebeschränkung aufzuweiten, können Sie Ihre [Lizenz erweitern](../payment-options/#upgrade).
 
-## Was ist ein Lizenzschlüssel {#license-key}
+:::
 
-A license key is a unique sequence of characters that represents an AdGuard Ad Blocker license. It is automatically registered for the email you used for license purchase. With a license key, you can:
+## So verwenden Sie die AdGuard-Lizenz
 
-- sich bei einigen Produkten (z. B. AdGuard für Windows) bei Ihrem AdGuard-Konto anmelden,
-- [Ihre Lizenz](../activation) in einem Produkt aktivieren, wenn Sie kein AdGuard-Konto haben,
-- eine Lizenz an Ihr AdGuard-Konto binden und die Bindung aufheben.
+Zuerst melden Sie sich bei Ihrer AdGuard-App mit jener E-Mail-Adresse an, die mit der Lizenz verknüpft ist. Wenn die Lizenz noch nicht an Ihre E-Mail-Adresse gebunden wurde, können Sie dies in Ihrem [AdGuard-Konto](https://my.adguard.com/) tun. Öffnen Sie dazu den Tab *Lizenzen* und klicken Sie auf *Lizenz verknüpfen*.
 
-When unbinding a license, be sure you write the license key down beforehand or note in some other (safe) way. You'll need the key for re-binding your license or transferring it to another account.
+Alternativ können Sie Ihren [Lizenzschlüssel](#license-key) in Ihrer AdGuard-App eingeben.
 
-## Wie man einen Lizenzschlüssel wiederherstellt
+## Lizenzschlüssel
 
-You can easily check which license keys belong to you in your [AdGuard Account](../../account/register).
+Ein Lizenzschlüssel ist eine eindeutige Zeichenfolge, die eine Lizenz für AdGuard Werbeblocker darstellt. Der Schlüssel wird automatisch auf die E-Mail-Adresse registriert, die Sie beim Kauf der Lizenz verwendet haben, oder wird Ihnen zur Verfügung gestellt, wenn Sie eine AdGuard-Lizenz von einem Händler erwerben. Mit einem Lizenzschlüssel können Sie:
 
-The license key is bound to your account via the email address you used to purchase AdGuard.
+- Ihre Lizenz in einem Produkt [aktivieren](../activation), wenn Sie noch kein AdGuard-Konto haben
+- Ihre Lizenz mit Ihrem AdGuard-Konto verknüpfen und diese Verknüpfung aufheben
 
-**Please note** that it is often not enough to just find out what your license key is. If it was already used on another computer, it’s necessary to unbind it from that computer through the AdGuard Account before using it again.
+Wenn Sie die Verknüpfung aufheben, müssen Sie zuerst den Lizenzschlüssel speichern. Sie benötigen diesen Schlüssel, um Ihre Lizenz neu zu verknüpfen oder sie auf ein anderes Konto zu übertragen.
+
+### So stellen Sie einen Lizenzschlüssel wieder her
+
+Wenn Sie Ihren Lizenzschlüssel vergessen haben, schauen Sie in Ihrem AdGuard-Konto nach: Dort werden alle Lizenzen angezeigt, die mit Ihrer E-Mail-Adresse verknüpft sind.
+
+Wenn Sie den von einem Händler gekauften Lizenzschlüssel verloren haben, wenden Sie sich bitte an uns unter support@adguard.com. Legen Sie eine Quittung oder einen anderen Kaufbeleg vor.

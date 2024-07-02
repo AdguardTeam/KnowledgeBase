@@ -1,15 +1,15 @@
 ---
-title: Installation
+title: Instalação
 sidebar_position: 2
 ---
 
 :::info
 
-Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifuncional que protege seu dispositivo a nível de sistema. Para ver como funciona, [baixe o aplicativo AdGuard](https://adguard.com/download.html?auto=true)
+Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifuncional que protege seu dispositivo a nível de sistema. Veja como funciona ao [baixar o AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## System  requirements
+## Requisitos do sistema
 
 **Operating system:** Microsoft Windows 11, 10, 8.1, 8, 7, Vista.
 
@@ -73,26 +73,34 @@ If you need to uninstall or reinstall AdGuard, do the following:
 
 In case regular uninstall doesn't work for any reason, you can try to use an advanced method. First of all, you need to [download the uninstaller tool](https://cdn.adtidy.org/distr/windows/Uninstall_Utility.zip) created by our developers. Extract the archive to any folder on your PC and run the **Adguard.UninstallUtility.exe** file, and allow the app to make changes to your device. Then follow the instruction below:
 
-- Choose *Standard uninstall*, *Delete AdGuard* and click *Uninstall*.
+- Select *AdGuard Ad Blocker* and *Standard* uninstall type, then click *Uninstall*.
 
-![Standard uninstall *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/standard-uninstall.png)
+![Standard uninstall *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_standard.jpg)
 
-- Wait until uninstall is finished — there will be a string in the window: `[OK] Uninstall finished`
+- Click *OK* once the warning window pops up:
 
-![Uninstall finished *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/standard-uninstall-2.png)
+![Standard uninstall warning *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
 
-:::caution
+- Wait until uninstall is finished — there will be a phrase **Uninstall complete** and a prompt to restart your computer:
 
-Follow the next steps only if after performing first two steps wasn’t enough for some reason. Usually it can be determined by seeing incorrect reinstall of AdGuard, but we strongly suggest contacting our support before using steps 3-4 of advanced uninstall instruction.
+![Uninstall finished *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_standard_complete.jpg)
+
+:::cuidado
+
+Follow the next steps only if performing the first two steps wasn’t enough for some reason. We strongly suggest contacting our support before using steps 3-4 of advanced uninstall instruction.
 
 :::
 
-- Choose *Advanced uninstall* and click *Uninstall*.
+- Select *AdGuard Ad Blocker* and *Extended* uninstall type, then click *Uninstall*. Clcik *Yes, continue* in the window prompt.
 
-![Advanced uninstall *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/advanced-uninstall.png)
+![Extended uninstall *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended.jpg)
 
-- Wait until uninstall is finished — there will be a string in the window: `[OK] Uninstall finished`
+- Click *OK* once the warning window pops up:
 
-![Uninstall finished *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/advanced-uninstall-2.png)
+![Extended uninstall warning *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
+
+- Wait until uninstall is finished — there will be a phrase **Uninstall complete** and a prompt to restart your computer:
+
+![Extended uninstall finished *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_complete.jpg)
 
 AdGuard is successfully uninstalled!

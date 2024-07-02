@@ -32,4 +32,4 @@ sidebar_position: 5
 
 Добавление новых строк, а также обновление существующих в этих файлах требует особого внимания со стороны переводчиков и пруфридеров проекта.
 
-Помимо сайтов в проекте AdGuard Websites есть файл для перевода [транзакционных писем](https://crowdin.com/project/adguard-websites/de#/emails). Вновь добавленные строки в этом файле также имеют высокий приоритет.
+In addition to websites, there is a file for translating [transactional emails](https://crowdin.com/project/adguard-websites/en#/emails) in the AdGuard Websites project. Вновь добавленные строки в этом файле также имеют высокий приоритет.

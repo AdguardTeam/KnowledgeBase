@@ -5,7 +5,7 @@ sidebar_position: 7
 
 :::info
 
-This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -13,7 +13,7 @@ This article covers AdGuard for Mac, a multifunctional ad blocker that protects 
 
 By default, AdGuard uses the "default route" which disables iCloud Private Relay.
 
-Currently, AdGuard and iCloud Private Relay cannot work at the same time. AdGuard cannot block ads because iCloud Private Relay encrypts traffic before AdGuard can filter network connections.  When iCloud Private Relay is active, any filtering (including local filtering) becomes impossible. Thus, AdGuard can't filter traffic or perform DNS filtering in Safari. Yet, AdGuard still filters traffic in other browsers. To keep using iCloud Private Relay, consider installing [AdGuard for Safari](https://adguard.com/adguard-safari/overview.html).
+Currently, AdGuard and iCloud Private Relay cannot work at the same time. AdGuard cannot block ads because iCloud Private Relay encrypts traffic before AdGuard can filter network connections. When iCloud Private Relay is active, any filtering (including local filtering) becomes impossible. Thus, AdGuard can't filter traffic or perform DNS filtering in Safari. Yet, AdGuard still filters traffic in other browsers. To keep using iCloud Private Relay, consider installing [AdGuard for Safari](https://adguard.com/adguard-safari/overview.html).
 
 The same applies to using any VPN apps on Mac: you have to choose between using iCloud Private Relay or a VPN service.
 
@@ -26,11 +26,11 @@ On Big Sur, AdGuard developed "split-tunnel" rules to avoid creating the "defaul
 
 On Monterey, iCloud Private Relay got introduced. Privacy features of the Mail app also use Private Relay servers.
 
-As a result, AdGuard can't work together with iCloud Private Relay and the Mail app privacy features:
+As a consequence, AdGuard can't work together with iCloud Private Relay and the Mail app privacy features:
 
 1. iCloud Private Relay is applied to connections at the library level — before they reach the socket level, where AdGuard operates.
 2. iCloud Private Relay uses QUIC, which AdGuard can't filter in filtered apps because HTTP/3 filtering is not yet available.
-3. As AdGuard blocks QUIC, including iCloud Private Relay traffic — otherwise, ad blocking is impossible.
+3. Consequently, AdGuard blocks QUIC, including iCloud Private Relay traffic — otherwise, ad blocking is impossible.
 4. When you use iCloud Private Relay and switch AdGuard into the "split-tunnel" mode, you can't open websites in Safari.
 5. To work around this issue for Monterey, we apply the "default route" rule. When Private Relay sees that rule, it disables itself automatically.
 So, AdGuard works seamlessly on Monterey, but iCloud Private Relay gets disabled.
@@ -44,7 +44,7 @@ We recommend using AdGuard together with a more traditional VPN service such as 
 
 ## Alternative solution
 
-You can prevent AdGuard from using the "default route" by disabling the "default route".  It can be done via Advanced Settings → `network.extension.monterey.force.split.tunnel`.
+You can prevent AdGuard from using the "default route" by disabling the "default route". It can be done via Advanced Settings → `network.extension.monterey.force.split.tunnel`.
 
 ![Disable default route in advanced settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/mac_adguard_advanced_settings.jpg)
 

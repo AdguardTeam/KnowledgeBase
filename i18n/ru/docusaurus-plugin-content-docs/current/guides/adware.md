@@ -13,11 +13,7 @@ AdGuard не антивирус. Он может предупредить вас
 
 ## Бесплатные антивирусные программы {#free-antivirus}
 
-Их существует множество — выбирайте любую, какая вам нравится. Вот лишь несколько примеров:
-
-[Dr.Web CureIt!](http://www.freedrweb.com/cureit/?lng=ru)
-
-Если эта проверка антивирусными программами ничего не выявила, но компьютер по-прежнему ведёт себя подозрительно, попробуйте проверить его на наличие рекламного ПО, которое может внедрять свою рекламу на любые открываемые вами страницы.
+Их существует множество — выбирайте любую, какая вам нравится. Если эта проверка антивирусными программами ничего не выявила, но компьютер по-прежнему ведёт себя подозрительно, попробуйте проверить его на наличие рекламного ПО, которое может внедрять свою рекламу на любые открываемые вами страницы.
 
 ## Как очистить систему от рекламного ПО {#adware}
 
@@ -25,33 +21,33 @@ AdGuard не антивирус. Он может предупредить вас
 
 Возьмём AdwareCleaner в качестве примера. После загрузки и успешной установки приложения выполните следующие действия:
 
-1. Start the application and click **Scan now**.
+1. Запустите приложение и нажмите **Сканировать сейчас**.
 
 ![adware1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware1.png)
 
-1. Once the scan has been completed, you will need to send suspicious objects to **Quarantine**.
+1. После завершения сканирования вам необходимо отправить подозрительные объекты в **Карантин**.
 
 ![adware2 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware2.png)
 
-1. When the items are moved to **Quarantine**, you will be able to **Clear the system** of unnecessary ballast.
+1. Когда они будут перемещены в **Карантин**, вы сможете **Очистить систему** от ненужного мусора.
 
-1. In some cases, you may need to **Reboot the system** after cleaning is complete.
+1. В некоторых случаях после завершения очистки может потребоваться **Перезагрузка системы**.
 
 ![adware3 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware3.png)
 
-1. Once the system has been rebooted, cleaning will be completed. If necessary, you can always read the **Report** on the work done.
+1. После перезагрузки системы очистка будет завершена. При необходимости вы всегда можете ознакомиться с **отчётом** о проделанной работе.
 
 ![adware4 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware4.png)
 
-If it didn’t help, temporary disable all extensions and some other settings in the browser according to [these instructions](#instructions).
+Если это не помогло, временно отключите все расширения и некоторые другие настройки в браузере согласно [этим инструкциям](#instructions).
 
-If disabling of settings and extensions does not help, try to [recreate shortcuts of your browsers](#shortcuts).
+Если отключение настроек и расширений не помогает, попробуйте [воссоздать ярлыки ваших браузеров](#shortcuts).
 
-Further on this page we describe the instructions on how to remove some of the most commonly encountered ad extensions.
+Далее на этой странице мы опишем инструкции по удалению некоторых наиболее часто встречающихся рекламных расширений.
 
 ## Как отключить настройки и расширения в браузере {#instructions}
 
-Below are the instructions on how to disable settings and extensions for the most popular browsers:
+Ниже приведены инструкции по отключению настроек и расширений для наиболее популярных браузеров:
 
 - [для Google Chrome](https://support.google.com/chrome/answer/187443?hl=ru)
 
@@ -61,6 +57,6 @@ Below are the instructions on how to disable settings and extensions for the mos
 
 ## Как воссоздать ярлыки для браузеров {#shortcuts}
 
-Very often, malware and adware programs install their homepage in a very simple way — they substitute your browser's desktop shortcut, taskbar and *Start* menu items.
+Очень часто вредоносные и рекламные программы устанавливают свою домашнюю страницу очень простым способом — они подменяют ярлык браузера на рабочем столе, панель задач и пункты меню *Пуск*.
 
-The simplest solution in this case is to manually delete all the shortcuts and recreate them by yourself.
+Самое простое решение в этом случае — вручную удалить все ярлыки и создать их заново самостоятельно.

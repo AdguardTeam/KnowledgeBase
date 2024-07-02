@@ -3,9 +3,9 @@ title: 고급(로우 레벨) 설정 가이드
 sidebar_position: 7
 ---
 
-:::info
+:::정보
 
-본 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Windows용 AdGuard에 대해 다룹니다. 어떻게 작동하는지 확인하려면, [AdGuard 앱을 다운로드](https://adguard.com/download.html?auto=true)하세요.
+본 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Windows용 AdGuard에 대해 다룹니다. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -61,6 +61,10 @@ Chrome 인증서 투명성 정책에 따라 도메인의 모든 인증서를 확
 
 AdGuard가 필터 구독 URL(예: `abp:subscribe` 등)을 자동으로 가로채고 사용자 정의 필터 설치 대화 상자를 열도록 하려면 이 기능을 활성화합니다.
 
+### Filter HTTP/3
+
+If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
+
 ### 리디렉션 드라이버 모드 사용
 
 이 옵션을 활성화하면 AdGuard가 모든 트래픽을 가로채서 추가 필터링을 위해 로컬 프록시 서버로 리디렉션합니다.
@@ -89,7 +93,7 @@ AdGuard가 루프백 연결을 필터링하도록 하려면 확인란을 선택�
 
 AdGuard가 특정 서브넷을 필터링하지 않도록 설정하려면 이 기능을 활성화하고 아래 **필터링에서 제외되는 IP 범위** 섹션에서 CIDR 표기법(예: 98.51.100.14/24)으로 IP 범위를 지정하세요.
 
-### HAR 쓰기 활성화
+### HAR 기록 사용
 
 이 옵션은 **디버깅 목적**으로만 활성화해야 합니다. 확인 표시를 선택하면 AdGuard가 필터링된 모든 HTTP 요청에 대한 정보가 포함된 HAR 1.2 형식의 파일을 생성합니다. 이 파일은 Fiddler 앱으로 분석할 수 있습니다. 웹 브라우징 속도가 상당히 느려질 수 있습니다.
 

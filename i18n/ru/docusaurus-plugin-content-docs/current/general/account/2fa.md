@@ -3,7 +3,7 @@ title: Двухфакторная аутентификация
 sidebar_position: 3
 ---
 
-Двухфакторная аутентификация (или 2FA) — это метод аутентификации, который требует от пользователя дополнительных доказательств для входа в систему, помимо логина и пароля. Это делается в целях безопасности. На сайтах обычно предлагаются такие методы 2FA, как код, отправляемый по SMS, или специальное приложение-аутентификатор.
+Two-factor authentication (or 2FA) is an authentication method that requires an additional piece of evidence from the user to log in, on top of the usual username and password pair. Это делается в целях безопасности. На сайтах обычно предлагаются такие методы 2FA, как код, отправляемый по SMS, или специальное приложение-аутентификатор.
 
 Мы считаем добавление опции 2FA преимуществом. Мы также понимаем, что принуждение к её использованию может раздражать некоторых пользователей. Именно поэтому мы сделали 2FA необязательной для вашего личного кабинета на adguard.com — по умолчанию эта функция отключена. Вы можете включить её вручную в настройках. Что касается доступных в настоящее время методов аутентификации, мы используем проверенный и испытанный: приложение-аутентификатор для Android или iOS. Вы можете использовать практически любое подобное приложение из множества доступных.
 
@@ -11,26 +11,26 @@ sidebar_position: 3
 
 ## Как настроить
 
-1. Log into your [AdGuard account](https://auth.adguard.com/login.html) and go to the Settings tab:
+1. Войдите в свой [аккаунт AdGuard](https://auth.adguard.com/login.html) и перейдите во вкладку Настройки:
 
-![AdGuard Account settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/account_settings.png)
+![Настройки аккаунта AdGuard *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/account_settings.png)
 
-1. Scroll down to *Password and 2FA* section and click **Enable**:
+1. Прокрутите вниз до раздела *Пароль и 2FA* и нажмите **Включить**:
 
-![The Change button *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_new.png)
+![Кнопка «Изменить» *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_new.png)
 
-1. Follow the on-screen instructions to install an authenticator app and scan the QR code:
+1. Следуйте инструкциям на экране, чтобы установить приложение для аутентификации и отсканировать QR-код:
 
-![The verification code](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_enable.png)
+![Проверочный код](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_enable.png)
 
-***Important***
+***Важно***
 
 - Сохраните где-нибудь резервный код второго фактора, он понадобится для восстановления вашей учётной записи в случае потери или кражи мобильного телефона;
 
-If everything is done right, you will see this when you log into your account the next time:
+Если всё сделано правильно, то при следующем входе в аккаунт вы увидите это:
 
-![The result *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_success.png)
+![Результат *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_success.png)
 
-Use your mobile authenticator app to read the code and enter it. You should be logged in now!
+Используйте мобильное приложение-аутентификатор, чтобы считать код и ввести его. Теперь у вас должно получиться войти в аккаунт!
 
-***NOTE***: If you get an authentication error, check the clock on your phone. Adjust it if needed, as an unsynchronized clock may be the cause of the error.
+***Примечание***: Если произошла ошибка аутентификации, проверьте часы на своём телефоне. При необходимости отрегулируйте их, поскольку причиной ошибки может быть отсутствие синхронизации часов.

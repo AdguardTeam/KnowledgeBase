@@ -5,7 +5,7 @@ sidebar_position: 4
 
 :::info
 
-本文适用于 Mac 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 要了解工作原理， 请[下载 AdGuard 应用程序](https://adguard.com/download.html?auto=true)
+This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. 要了解其工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
@@ -41,7 +41,7 @@ For a deeper understanding of this problem, read [this article](../protect-mail-
 
 **Recommended solution**
 
-At this point, we recommend using a more traditional VPN service, such as AdGuard VPN, instead of the new Apple's privacy features.
+At this point, we recommend using a more traditional VPN service, such as [AdGuard VPN](https://adguard-vpn.com/), instead of the newer Apple privacy features.
 
 ### Monterey 12, Big Sur 11.6 and later: currently existing problems
 

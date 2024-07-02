@@ -5,11 +5,13 @@ sidebar_position: 1
 
 AdGuard has many ad-blocking products for various platforms, and each product has its own unique features. But what unites them all is that they block ads and trackers. This article describes how ad blocking works from the inside.
 
-:::note
+:::not
 
 We don't cover DNS filtering here. It's a different way of blocking ads, with its own advantages and disadvantages. Follow this link to [learn more about DNS filtering](https://adguard-dns.io/kb/general/dns-filtering#how-does-dns-filtering-work).
 
-:::
+:::  
+
+<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/Xq_CUdh0T_w" title="YouTube video oynatıcı" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## General principle
 
@@ -39,17 +41,17 @@ There are many types of filtering rules that serve different purposes. Depending
 
 ### Temel filtreleme kuralları
 
-To be displayed on a web page or in an app, the ad has to be loaded from a server first. To do so, the browser or the app needs to send a web request. The most basic way of preventing an ad from appearing on your screen is to block this request so it never reaches the server, and thus there's no reply.
+To be displayed on a web page or in an app, the ad has to be loaded from a server first. To do so, the browser or the app needs to send a web request. Bir reklamın ekranınızda görünmesini engellemenin en temel yolu, bu isteği engellemektir, böylece sunucuya asla ulaşmamasını ve dolayısıyla yanıt vermemesini sağlamaktır.
 
 Basically, all AdGuard Ad Blocker products can block web requests according to the active filter rules. This method is very effective at stopping the ad, but it has some drawbacks. The most obvious one is: whatever place an ad was taking up will be left empty or occupied by an ad leftover.
 
-### Cosmetic filtering rules
+### Kozmetik filtreleme kuralları
 
 Every web page has a Document Object Model (DOM), an HTML document containing the structure and elements of this page. As ads are also page elements, they get recorded in the DOM. Ad blockers can remove parts of the DOM, while filtering rules help them understand which parts are ads and should be removed, and which parts should be left intact.
 
 This method allows you to avoid above-mentioned blank spaces and ad leftovers, as well as perform other more complicated tasks.
 
-### HTML filtering rules
+### HTML filtreleme kuralları
 
 In most cases, it's enough to use the above-mentioned basic and cosmetic rules to filter ads. But when it is necessary to change the HTML code of the page itself before it is loaded, you need filtering rules for HTML content. These rules allow you to specify the HTML elements to be cut out before the browser even loads the page.
 

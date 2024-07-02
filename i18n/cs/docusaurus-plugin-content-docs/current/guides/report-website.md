@@ -1,5 +1,5 @@
 ---
-title: Jak nahlásit webovou stránku
+title: Jak nahlásit webové stránky a aplikace
 sidebar_position: 3
 ---
 
@@ -10,7 +10,7 @@ Při používání blokátorů reklam se můžete setkat s nesprávnou prací n�
 - Modifikované algoritmy přidávání reklam;
 - Přidané filtry/rozšíření od vývojářů třetích stran;
 - Autoři jednoho z filtrů udělali při vytváření pravidla chybu;
-- Opakované vložení reklamy. Více informací o této metodě najdete na našem [blogu](https://adguard.com/blog/ad-reinsertion.html).
+- Opakované vložení reklamy. Více informací o této metodě najdete na našem [blogu](https://adguard.com/en/blog/ad-reinsertion.html).
 
 Můžete nám pomoci vyplněním formuláře s příklady reklam, se kterými jste se setkali. K tomu použijte pokyny pro váš operační systém.
 
@@ -29,7 +29,7 @@ Chcete-li nahlásit opakované vložení reklamy nebo nesprávné zobrazení web
 - Otevřete nastavení rozšíření prohlížeče kliknutím na příslušnou ikonu;
 - Klikněte na **Nahlásit problém**:
 
-![extension *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/extension_issue.png)
+![extension_issue *mobile_border](https://cdn.adtidy.org/blog/new/5si74extension.png)
 
 - Po vyplnění formuláře se automaticky vytvoří problém na [GitHubu](https://github.com/AdguardTeam/AdguardFilters/issues). K dispozici bude také odkaz pro sledování postupu řešení vašeho problému.
 
@@ -45,15 +45,15 @@ Chcete-li nahlásit opakované vložení reklamy nebo nesprávné zobrazení web
 ### Android {#android}
 
 - Otevřete nastavení AdGuardu;
-- Vyberte **Podpora**, poté **Odeslat zpětnou vazbu** → **Nezablokovaná reklama**/**Nesprávné blokování**:
+- Vyberte **Podpora**, poté **Nahlásit nesprávné blokování**:
 
-![android *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/android.png)
+![android *mobile_border](https://cdn.adtidy.org/blog/new/apicfkandroid-new.jpg)
 
 - Po vyplnění formuláře se automaticky vytvoří problém na [GitHubu](https://github.com/AdguardTeam/AdguardFilters/issues). K dispozici bude také odkaz pro sledování postupu řešení vašeho problému.
 
 ### Mac {#mac}
 
-- Otevřete [AdGuard Asistenta prohlížeče](/adguard-for-mac/browser-assistant) a stiskněte **Nahlásit problém**:
+- Otevřete [Asistent prohlížeče AdGuard](/adguard-for-mac/features/browser-assistant) a stiskněte **Nahlásit problém**:
 
 ![mac *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/guides/browser-assistant-mac.png)
 
@@ -65,7 +65,7 @@ Chcete-li nahlásit opakované vložení reklamy nebo nesprávné zobrazení web
 - Otevřete nastavení AdGuardu;
 - Vyberte **Podpora**, poté **Nahlásit nesprávné blokování**:
 
-![ios *mobile](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/ios_issue.png)
+![ios *mobile_border](https://cdn.adtidy.org/blog/new/fnl9aios.jpeg)
 
 - Vyplňte formulář pro nahlášení problému;
 - Po vyplnění formuláře se automaticky vytvoří problém na [GitHubu](https://github.com/AdguardTeam/AdguardFilters/issues). K dispozici bude také odkaz pro sledování postupu řešení vašeho problému.
@@ -146,4 +146,4 @@ Například se setkáte s tím, že se vaše oblíbená webová stránka neotev�
 
 ### **Blokátory třetích stran**
 
-Některé prohlížeče a antivirové programy (například Yandex Browser, Kaspersky atd.) mají zabudované blokátory reklam. Mohou ovlivnit a způsobit problémy při provozu stránek. Pokud takové programy používáte, ujistěte se, že problém je na straně **AdGuardu**: vypněte filtrování **AdGuardem** a zkuste problém zopakovat. Pokud problém přetrvává, znamená to, že problém je způsoben jinou aplikací nebo prohlížečem. Pokud je problém způsoben **AdGuardem**, postupujte podle kroků popsaných v předchozích odstavcích.
+Některé prohlížeče a antivirové programy (například Yandex Browser, Kaspersky atd.) mají zabudované blokátory reklam. Mohou ovlivnit a způsobit problémy při provozu stránek. Pokud takové programy používáte, nejprve se ujistěte, že problém způsobuje **AdGuard**: vypněte filtrování **AdGuardu** a zkuste problém reprodukovat. Pokud problém přetrvává, znamená to, že problém je způsoben jinou aplikací nebo prohlížečem. Pokud je problém způsoben **AdGuardem**, postupujte podle kroků popsaných v předchozích odstavcích.

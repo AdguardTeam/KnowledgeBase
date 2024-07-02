@@ -1,216 +1,230 @@
 ---
-title: Low Level Settings guide
+title: 低级设置
 sidebar_position: 6
 ---
 
 :::info
 
-本文适用于安卓版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 要了解工作原理， 请[下载 AdGuard 应用程序](https://adguard.com/download.html?auto=true)
+本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。 要了解工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
-## How to reach the Low-level settings
+## 如何进入低级设置
 
 :::caution
 
-Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only open this section if you are sure of what you are doing or our support-team has asked you about it.
+更改「*低级设置*」可能会导致 AdGuard 的性能出现问题，也可能会断开网络连接或侵害安全和隐私。 如果您知道自己在设置什么，或者是我们的客户支持要求您这样做，请打开此部分。
 
 :::
 
-To go to *Low-level settings*, open the AdGuard app and tap the gear icon in the lower right corner of the screen. Then choose *General → Advanced → Low-level settings*.
+要转到「*低级设置*」，请打开 AdGuard 应用并点击屏幕右下角的齿轮图标。 然后进入转到「*常规」→「高级」→「低级设置」*。
 
-## Low-level settings
+## 低级设置
 
-For AdGuard v4.0 for Android we've completely redesigned the low-level settings: divided them into thematic blocks, made them clearer, added validation of entered values and other safety valves, got rid of some settings, and added others.
+在 4.0 版的 AdGuard Android 版中，我们彻底重新设计了低级设置：将它们划分为主题块，使它们更加清晰，添加对输入值和其他安全阀的验证，删除并添加一些设置。
 
-### DNS protection
+### DNS 保护功能
 
-#### Fallback upstreams
+#### 后备上游
 
-Here you can specify the fallback DNS resolver(s) to be used if the configured server is unavailable. There are three options: *Automatic DNS*, *None*, and *Custom DNS*. If no fallback server is specified, the *Automatic DNS* — the system DNS or AdGuard DNS — will be used. *None* means no fallback at all. Selecting *Custom DNS* allows you to list IPv4 and IPv6 server addresses to use as upstreams.
+在配置的服务器不可用时，用户可以在此处指定要使用的后备 DNS 解析器。 共有三个选项：「*自动 DNS*」「*无*」和「*自定义 DNS*」。 如果用户未指定后备服务器，软件将使用「*自动 DNS*」，是指系统 DNS 或 AdGuard DNS。 「*无*」意味着没有后备服务器。 选择「*自定义 DNS*」，用户可以列出作为上游使用的 IPv4 和 IPv6 服务器地址。
 
-#### Fallback domains
+#### 后备域名
 
-Here you can list domains that will be forwarded directly to fallback upstreams if they exist.
+在这里，用户可以列出将直接转发到后备上游（如果存在）的域名。
 
-#### Detect search domains
+#### 检测搜索域名
 
-If this option is enabled, AdGuard will detect search domains and automatically forward them to fallback upstreams.
+如果启用此选项，AdGuard 将检测搜索域名并自动将它们转发到后备上游。
 
-#### Bootstrap upstreams
+#### Bootstrap 上游
 
-Bootstrap DNS for DoH, DoT, and DoQ servers. The *Automatic DNS* - the system DNS or AdGuard DNS - is used by default. By selecting *Custom DNS*, you can list IPv4 and IPv6 server addresses to use as bootstrap upstreams.
+DoH、DoT 和 DoQ 服务器的 Bootstrap DNS。 默认使用的是「*自动 DNS*」即系统 DNS 或 AdGuard DNS。 选择「*自定义 DNS*」，可以列出作为 Bootstrap 上游使用的 IPv4 和 IPv6 服务器地址。
 
 #### adblock 规则的拦截模式
 
-Here you can specify the response type for domains blocked by DNS rules based on adblock rule syntax (for instance, `||example.org^`).
+在这里，可以根据 adblock 规则语法（例如 `||example.org^`）指定被 DNS 规则阻止的域名的响应类型。
 
-- Respond with REFUSED (default)
-- Respond with NXDOMAIN
-- Respond with Custom IP address (IPv4 and IPv6 addresses can be specified here)
+- 用 REFUSED 响应
+- 返回 NXDOMAIN 响应
+- 响应自定义 IP 地址（可在此处指定 IPv4 和 IPv6 地址）
 
 #### host 规则的拦截模式
 
-Here you can specify the response type for domains blocked by DNS rules based on hosts rule syntax (for instance, `<ip> <domain> 0.0.0.0 example.com`).
+您可以在此处根据主机规则语法指定 DNS 规则阻止的域名响应类型（例如 `<ip> <domain> 0.0.0.0 example.com`）。
 
-- Respond with REFUSED
-- Respond with NXDOMAIN
-- Respond with Custom IP address (IPv4 and IPv6 addresses can be specified here) – default
+- 用 REFUSED 响应
+- 返回 NXDOMAIN 响应
+- 响应自定义 IP 地址（可在此处指定 IPv4 和 IPv6 地址）
 
-#### DNS request timeout
+#### DNS 请求超时
 
 用户可以指定 AdGuard 在使用后备服务器之前，等待选定 DNS 服务器响应的时间（以毫秒为单位）。 如果数值无效或为空，要使用的数值为 5000。
 
-#### Blocked response TTL
+#### 屏蔽的 TTL 应答
 
-Here you can specify the TTL (time to live) value that will be returned in response to a blocked request.
+用户可以在这里指定请求响应阻塞时返回的 TTL（生存时间）值。
 
-#### DNS cache size
+#### DNS 缓存大小
 
-Here you can specify the maximum number of cached responses. Default value is 1000.
+您可在此处指定缓存响应的最大数量。 默认值为 1000。
 
-#### ECH blocking
+#### ECH 拦截
 
-If enabled, AdGuard strips Encrypted Client Hello parameters from DNS responses.
+如果启用，AdGuard 会从 DNS 响应中去除 Encrypted Client Hello 参数。
 
-#### Ignore unavailable outbound proxy
+#### 忽略不可用的出站代理
 
-Enable this feature to make AdGuard send DNS requests directly if the outbound proxy is unavailable.
+如果启用此设置，AdGuard 将在出站代理不可用时直接发送 DNS 请求。
 
-#### Try HTTP/3 for DNS-over-HTTPS upstreams
+#### 为 DNS-over-HTTPS 上游试用 HTTP/3
 
-By default, all DNS requests for DNS-over-HTTPS are sent via HTTP/2 protocol. If enabled, AdGuard uses HTTP/3 to speed up DNS query resolution for DoH upstreams.
+如果启用此设置，AdGuard 将使用 HTTP/3 加速 DoH 上游的 DNS 查询解析。 否则，AdGuard 将恢复其默认行为，并使用 HTTP/2 发送 DNS-over-HTTPS 的所有 DNS 请求。
 
-#### SERVFAIL failure response
+#### SERVFAIL 故障响应
 
-Once enabled, AdGuard sends a SERVFAIL response to the client if all upstreams, including fallback ones, fail to reply. When this setting is disabled, no response is sent to the client.
+如果启用此设置，若所有上游（包括后备上游）都无法响应，AdGuard 将向客户端发送 SERVFAIL 响应。
 
-#### Use fallback for non-fallback domains
+#### 对非后备域名使用后备功能
 
-Enable this feature if you want AdGuard to use fallback upstream for all domains. Otherwise, fallback upstream will only be used for fallback domains and search domains if the corresponding option is enabled.
+如果启用此设置，AdGuard 将对所有域名使用后备上游。 否则，只有在启用了相应选项的情况下，后备上游才会用于后备域和搜索域。
 
-#### Validate DNS upstreams
+#### 验证 DNS 上游
 
-Enable to make AdGuard test DNS upstreams before adding or updating custom DNS servers.
+如果启用此设置，AdGuard 将在添加或更新自定义 DNS 服务器之前测试 DNS 上游。
 
-### Filtering
+#### Filter secure DNS
 
-#### Capture HAR
+If this setting is on, AdGuard will apply all enabled DNS filters and DNS user rules to encrypted DNS-over-HTTPS (DoH) traffic and not only to plain DNS. DoH traffic mostly comes from Chrome and other browsers that have a *Secure DNS* (or similar) setting. You can use *Filter secure DNS* in two different modes:
 
-Here you can enable HAR file capture. Use it only for debugging purposes! If the setting is enabled, AdGuard will create a directory named "har" inside the app cache directory. It contains information about all filtered HTTP requests in HAR 1.2 format and can be analyzed with the Fiddler program.
+- **Filter on the fly**. In this mode, AdGuard applies all enabled DNS filters and DNS user rules to DoH traffic but doesn’t redirect it to the local DNS proxy. If a DNS server is specified in the browser’s settings, this server will handle the DoH traffic for this browser
+
+- **Redirect to DNS proxy**. In this mode, AdGuard applies all enabled DNS filters and DNS user rules to DoH traffic by redirecting it to the local DNS proxy. The DNS server specified in the AdGuard’s DNS settings will handle all DoH traffic
+
+### 过滤
+
+#### 捕获 HAR
+
+如果启用此设置，AdGuard 将捕获 HAR 文件。 它会在应用程序缓存目录内创建一个名为「har」的目录，并将 HAR 1.2 格式的所有已过滤 HTTP 请求信息储存在那里，这些信息可通过 Fiddler 程序进行分析。
+
+仅将其用于调试目的！
 
 ### HTTPS 过滤
 
 #### Encrypted Client Hello
 
-每一个加密的互联网连接都有一个未加密的部分， 就是发送的第一个数据包，包含用户要连接的服务器名称。 Encrypted ClientHello（ECH）的技术能够解决该问题，成功加密最后一位未加密的信息。 To benefit from it, enable the *Encrypted Client Hello* option. It uses a local DNS proxy to look for the ECH configuration for the domain. 如果找到，将对 ClientHello 数据包进行加密。
+每一个加密的互联网连接都有一个未加密的部分， 就是发送的第一个数据包，包含用户要连接的服务器名称。 Encrypted ClientHello（ECH）的技术能够解决该问题，成功加密最后一位未加密的信息。 要使用该功能，请启用「*Encrypted ClientHello*」选项。 本功能使用本地 DNS 代理查找域名的 ECH 配置。 如果找到，将对 ClientHello 数据包进行加密。
 
-#### OCSP checking
+#### OCSP 检查
 
-Once enabled, this option runs asynchronous OCSP checks to check whether the website’s SSL certificate is revoked.
+如果启用此设置，AdGuard 将执行异步 OCSP 检查，以获取网站 SSL 证书的吊销状态。
 
-If the OCSP check is completed within the minimum timeout, AdGuard will immediately block the connection if the certificate is revoked or establish the connection if the certificate is valid.
+如果在规定的超时时间内完成OCSP检查，AdGuard将立即阻止连接（如果证书被吊销）或建立连接（如果证书有效）。
 
-If the verification takes too long, AdGuard will establish a connection and continue checking the certificate in the background. If it is revoked, current and future connections to the domain will be blocked.
+如果验证时间过长，AdGuard 将允许连接，同时继续在后台检查证书状态。 如果证书被撤销，当前和将来该域名的连接将被阻止。
 
-#### Redirect DNS-over-HTTPS requests
+#### 重定向 DNS-over-HTTPS 请求
 
-IF enabled, DNS-over-HTTPS requests will be redirected to the DNS Protection module. We recommend disabling fallback upstreams and use only encrypted DNS servers to maintain privacy.
+如果启用此设置，除了无加密 DNS 请求外，AdGuard 还会将 DNS-over-HTTPS 请求重定向到本地 DNS 代理。 我们建议禁用后备上游，并仅使用加密的 DNS 服务器，以保护隐私。
 
-### Outbound Proxy
+#### 过滤 HTTP/3
 
-#### Show the Filter DNS requests setting
+如果启用此设置，AdGuard 除过滤其他请求类型外，还会过滤通过 HTTP/3 发送的请求。
 
-When this feature is enabled, the string *Filter DNS requests* appears in the *Settings ➝ Filtering ➝ Network ➝ Proxy ➝ Proxy server ➝ Add proxy server* section with the switch next to it. By toggling the switch, you can enable filtering of DNS requests passing through the proxy.
+### 出站代理
 
-### Protection
+#### 显示「过滤 DNS 请求」设置
 
-#### Port ranges
+如果启用此功能，「*过滤 DNS 请求*」开关将显示在「*添加代理服务器*」对话框中。 使用它可以过滤通过指定代理的 DNS 请求。
 
-Here you can specify port ranges that should be filtered.
+### 防护
 
-#### Log removed HTML events
+#### 端口范围
 
-If enabled, AdGuard records blocked HTML elements in the filtering log.
+用户可以在此处指定应过滤的端口范围。
 
-#### Scriplet debugging
+#### 记录已删除的 HTML 事件
 
-If you need to activate debugging of scriptlets, enable this feature. Then there will be messages in the browser log that some scriplet rules have been applied.
+如果启用此设置，AdGuard 将在「*最近活动*」中记录被阻止的 HTML 元素。
 
-#### Excluded apps
+#### Scriplet 调试
 
-Here you can list package names and UIDs that you want to exclude from AdGuard protection.
+如果启用此设置，Scriptlets 中的调试将被激活，浏览器日志将记录 Scriptlets 规则的应用情况。
 
-#### QUIC bypass packages
+#### 排除的应用
 
-Here you can specify package names for which AdGuard should bypass QUIC traffic.
+您可以在此处列出要从 AdGuard 保护中排除的包名称和 UID。
 
-#### Reconfigure Automatic proxy when network changes
+#### QUIC 旁路包
 
-Enable this setting if you want the protection to restart to reconfigure the automatic proxy settings when the device connects to another network. The state of this setting affects operation only if the current routing mode is Automatic proxy.
+用户可以在此处指定 AdGuard 应绕过 QUIC 流量的包名称。
 
-#### IPv6 filtering
+#### 网络更改时重新配置自动代理
 
-If enabled, AdGuard filters IPv6 networks if an IPv6 network interface is available.
+如果启用此设置，当设备连接到另一个网络时，AdGuard 保护将重新启动，重新配置自动代理设置。 仅当「*路由模式*」设置为「*自动代理*」时，此设置才适用。
 
-#### IPv4 ranges excluded from filtering
+#### IPv6 过滤
 
-Filtering for IPv4 ranges, listed in this section, will be disabled.
+如果启用此设置，AdGuard 将在 IPv6 网络接口可用时过滤 IPv6 网络。
 
-#### IPv6 ranges excluded from filtering
+#### 无需进行过滤的 IPv4 范围
 
-Filtering for IPv6 ranges, listed in this section, will be disabled.
+本节中列出的 IPv4 范围的过滤已禁用。
 
-#### TCP keepalive for outgoing sockets
+#### 无需进行过滤的 IPv6 范围
 
-If enabled, AdGuard sends a keepalive probe after the specified time period to ensure that the TCP connection is alive. Here you can specify the TCP keepalive idle time before starting keepalive probes and time between keepalive probes for an unresponsive peer.
+本节所列 IPv6 范围的过滤功能已禁用。
 
-After a system-defined number of unsuccessful attempts to get a response from the server, the system automatically closes the TCP connection.
+#### 出站套接字的 TCP 保活
 
-### Local VPN settings
+如果启用此设置，AdGuard 将在指定时间段后发送保活探测，以确保 TCP 连接处于活动状态。 在这里，用户可以指定启动保活探测之前的空闲时间以及对无响应对等方进行保活探测之间的时间。
 
-#### Recovery delay for revoked VPN
+在尝试从服务器获取响应失败达到规定的次数后，系统会自动关闭 TCP 连接。
 
-Here you can set the time of a delay in milliseconds before AdGuard tries to restore VPN protection after it has been revoked by a third-party VPN app or by deleting the VPN profile. The default value is 5000 ms.
+### 本地 VPN 设置
 
-#### Reschedule delay for revoked VPN recovery
+#### 撤销 VPN 的恢复延迟
 
-Here you can set the time of a delay in milliseconds before AdGuard reschedules the restoration of VPN protection after it has been revoked by a third-party VPN app or by deleting the VPN profile. The default value is 5000 ms.
+在这里，用户可以设置在 AdGuard 被第三方 VPN 应用程序撤销或删除 VPN 配置文件后尝试恢复 VPN 保护之前的延迟时间（以毫秒为单位）。 默认值为 5000 毫秒。
 
-#### MTU
+#### 为撤销的 VPN 恢复重新安排延迟
 
-Here you can set the maximum transmission unit (MTU) of the VPN interface. The recommended range is 1500-1900 bytes.
+用户可以在此处设置 AdGuard 在被第三方 VPN 应用程序撤销或删除 VPN 配置文件后重新安排 VPN 保护恢复之前的延迟时间（以毫秒为单位）。 默认值为 5000 毫秒。
 
-#### Restore VPN automatically
+#### 最大传输单元（MTU）
 
-If enabled, this feature automatically re-enables AdGuard’s local VPN after it has been turned off due to network absence, tethering, or low-power mode.
+用户可以在此处设置 VPN 接口的最大传输单元 （MTU）。 推荐范围是 1500–1900.
 
-#### Packet capture (PCAP)
+#### 自动恢复 VPN 连接
 
-If enabled, AdGuard will create the special file name `timestamp.pcap` (for instance, 1682599851461.pcap). It contains all network packets transferred through the VPN. This file is located in the app cache directory and can be analyzed with the Wireshark program.
+如果启用此设置，AdGuard 的本地 VPN 将在因网络缺失、系留或低功耗模式而关闭后自动重新启用。
 
-#### Include Wi-Fi gateway in VPN routes
+#### 数据包捕获（PCAP）
 
-If you want the gateway IP addresses to be added to VPN routes when on Wi-Fi, enable this feature.
+如果启用此设置，AdGuard 将在应用程序缓存目录中创建文件 `timestamp.pcap` （例如 1682599851461.pcap）。 该文件列出了通过 VPN 传输的所有网络数据包，可以使用 Wireshark 程序进行分析。
 
-#### IPv4 address
+#### 将 Wi-Fi 网关接入 VPN 路由中
 
-Here you can enter the IP address that will be used to create a TUN interface. By default, it is `172.18.11.218`.
+如果启用此设置，在使用 Wi-Fi 时，网关 IP 地址将添加到 VPN 路由中。
 
-#### Forcibly route LAN IPv4
+#### IPv4 地址
 
-When enabled, AdGuard filters all LAN connections, including local IPv4 network traffic, even if the *Route all LAN IPv4 connections* option is enabled.
+用户可以在此处输入将用于创建 TUN 接口的 IP 地址。 默认情况下，地址是 `172.18.11.218`。
 
-#### Route all LAN IPv4 connections
+#### 强制路由 LAN IPv4
 
-Once enabled, AdGuard excludes LAN connections from filtering for simple networks. May not work for complex networks. Works only with the *Forcibly route LAN IPv4* option disabled.
+如果启用此设置，AdGuard 将过滤所有 LAN 连接，包括本地 IPv4 网络流量，即使启用了 *路由所有 LAN IPv4 连接* 选项。
 
-#### IPv6 address
+#### 路由所有 LAN IPv4 连接
 
-Here you can enter the IP address that will be used to create a TUN interface. By default, it is `2001:db8:ad:0:ff::`.
+如果启用此设置，AdGuard 将从简单网络过滤中排除局域网连接。 这对复杂的网络可能不起作用。 此设置仅适用于「*强制路由 LAN IPv4*」已禁用的情况。
+
+#### IPv6 地址
+
+用户可以在此处输入将用于创建 TUN 接口的 IP 地址。 默认情况下，地址是 `2001:db8:ad:0:ff::`。
 
 ### 其它
 
-#### Detect Samsung Pay
+#### 检测 Samsung Pay
 
-Korean users may encounter issues with Samsung Pay when AdGuard is enabled. Activate this feature to pause AdGuard's protection and use the Samsung Pay app seamlessly.
+如果启用此设置，在使用 Samsung Pay 时将暂停 AdGuard 保护。 韩国用户需要此功能，因为启用 AdGuard 后，他们在使用 [Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea) 时遇到了问题。

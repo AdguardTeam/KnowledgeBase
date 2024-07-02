@@ -15,6 +15,6 @@ Depending on which AdGuard app or browser extension you want to install, follow 
 
 [AdGuard 확장 프로그램](/adguard-browser-extension/installation)
 
-[AdGuard for Safari](/adguard-for-safari/installation)
+[Safari용 AdGuard](/adguard-for-safari/installation)
 
 [AdGuard Content Blocker](/adguard-content-blocker/installation)
