@@ -238,7 +238,7 @@ Rules with wildcard for TLD are not supported by AdGuard Content Blocker.
 
 - `||example.com/ads/*` — a simple rule, which corresponds to addresses like `http://example.com/ads/banner.jpg` and even `http://subdomain.example.com/ads/otherbanner.jpg`.
 
-- `||example.org^$third-party` —  this rule blocks third-party requests to `example.org` and its subdomains.
+- `||example.org^$third-party` — this rule blocks third-party requests to `example.org` and its subdomains.
 
 - `@@||example.com$document` — general exception rule. It completely disables filtering for `example.com` and all subdomains. There is a number of modifiers which can be used in exception rules. For more details, please follow the link [below](#exception-modifiers).
 
@@ -330,7 +330,7 @@ Rules with such modifier are considered invalid.
 
 `$denyallow` modifier allows to avoid creating additional rules when it is needed to disable a certain rule for specific domains. `$denyallow` matches only target domains and not referrer domains.
 
-Adding this modifier to a rule is equivalent to excluding the domains by the rule's matching pattern or to adding the corresponding exclusion rules. To add multiple domains to one rule, use the `|`  character as a separator.
+Adding this modifier to a rule is equivalent to excluding the domains by the rule's matching pattern or to adding the corresponding exclusion rules. To add multiple domains to one rule, use the `|` character as a separator.
 
 **Examples**
 
@@ -610,7 +610,7 @@ You may use a shorter name (alias) instead of using the full modifier name: `$3p
 
 #### **`$to`** {#to-modifier}
 
-`$to` limits the rule scope to requests made **to** the specified domains and their subdomains. To add multiple domains to one rule, use the `|`  character as a separator.
+`$to` limits the rule scope to requests made **to** the specified domains and their subdomains. To add multiple domains to one rule, use the `|` character as a separator.
 
 **Examples**
 
@@ -694,8 +694,8 @@ If this modifier is used with an exclusion rule (`@@`), it completely disables b
 
 - `||example.com^$document` blocks HTML document request to `example.com` with a blocking page.
 - `||example.com^$document,redirect=noopframe` redirects HTML document request to `example.com` to an empty html document.
-- `||example.com^$document,removeparam=test` removes `test` query parameter from HTML document request to  `example.com`.
-- `||example.com^$document,replace=/test1/test2/` replaces `test1` with `test2` in  HTML document request to `example.com`.
+- `||example.com^$document,removeparam=test` removes `test` query parameter from HTML document request to `example.com`.
+- `||example.com^$document,replace=/test1/test2/` replaces `test1` with `test2` in HTML document request to `example.com`.
 
 :::note
 
@@ -1213,7 +1213,7 @@ every time AdGuard encounters a cookie called `NAME` in a request to `example.or
 
 **Escaping special characters**
 
-If regular expression `name` is used for matching, two characters must be escaped: comma `,` and dollar sign `$`. Use  backslash `\` escape each of them. For example, escaped comma looks like this: `\,`.
+If regular expression `name` is used for matching, two characters must be escaped: comma `,` and dollar sign `$`. Use backslash `\` escape each of them. For example, escaped comma looks like this: `\,`.
 
 **Examples**
 
@@ -3168,7 +3168,7 @@ The `:matches-css()` pseudo-class allows to match the element by its current sty
 - `target` — optional, standard or extended CSS selector, can be skipped for checking *any* element
 - `pseudo-element` — optional, valid standard pseudo-element, e.g. `before`, `after`, `first-line`, etc.
 - `property` — required, a name of CSS property to check the element for
-- `pattern` —  required, a value pattern that is using the same simple wildcard matching as in the basic url filtering rules OR a regular expression. For this type of matching, AdGuard always does matching in a case-insensitive manner. In the case of a regular expression, the pattern looks like `/regexp/`.
+- `pattern` — required, a value pattern that is using the same simple wildcard matching as in the basic url filtering rules OR a regular expression. For this type of matching, AdGuard always does matching in a case-insensitive manner. In the case of a regular expression, the pattern looks like `/regexp/`.
 
 **Special characters escaping and unescaping**
 
@@ -3855,7 +3855,7 @@ We **strongly recommend** using [scriptlets](#scriptlets) instead of JavaScript 
 **Syntax**
 
 ```text
-rule = [domains]  "#%#" script
+rule = [domains] "#%#" script
 ```
 
 - **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules](#cosmetic-elemhide-rules).
@@ -3917,7 +3917,7 @@ AdGuard supports a lot of different scriptlets. In order to achieve cross-blocke
 **Syntax**
 
 ```text
-rule = [domains]  "#%#//scriptlet(" scriptletName arguments ")"
+rule = [domains] "#%#//scriptlet(" scriptletName arguments ")"
 ```
 
 - **`scriptletName`** — required, a name of the scriptlet from AdGuard's Scriptlets library
