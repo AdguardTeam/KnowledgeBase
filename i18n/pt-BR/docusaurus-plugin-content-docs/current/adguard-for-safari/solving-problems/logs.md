@@ -19,7 +19,7 @@ Para analisar e diagnosticar vários problemas que podem ocorrer com o AdGuard p
 
 Now you can send this file to support@adguard.com or attach it to your bug report on GitHub.
 
-> AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/en/privacy/safari.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+> AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/safari.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
 
 1. Abra o [repositório GitHub do AdGuard for Safari](https://github.com/AdguardTeam/AdGuardForSafari/issues) e clique em _Novo problema_.
 2. Envie o arquivo de registro para devteam@adguard.com. Inclua a hora do bug e anexe um link para o seu problema ou seu número (aparece como #number próximo ao título).

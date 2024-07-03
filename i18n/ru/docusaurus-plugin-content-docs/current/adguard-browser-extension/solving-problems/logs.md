@@ -51,7 +51,7 @@ sidebar_position: 1
 
 ## Отправкка логов
 
-> AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/en/privacy/browser-extension.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+> AdGuard стремится защищать вашу конфиденциальность. Мы строго соблюдаем нашу [Политику конфиденциальности](https://adguard.com/en/privacy/browser-extension.html) и не собираем никакой личной информации о пользователях. Перед отправкой логов в поддержку проверьте, не содержит ли файл дополнительную информацию, которую вы не хотите передавать. Если в файле осталась личная информация, рекомендуем удалить её.
 
 Теперь, когда вы собрали логи, выполните следующие действия, чтобы отправить их нашей команде разработчиков:
 

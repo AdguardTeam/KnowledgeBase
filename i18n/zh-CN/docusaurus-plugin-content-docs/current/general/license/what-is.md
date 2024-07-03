@@ -1,5 +1,5 @@
 ---
-title: What is AdGuard license?
+title: 什么是 AdGuard 许可证密钥?
 sidebar_position: 1
 ---
 

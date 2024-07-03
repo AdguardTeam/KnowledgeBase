@@ -93,7 +93,7 @@ Now AdGuard can filter local proxies (mostly) without any problems. If you encou
 
 Big Sur'da Mac için AdGuard'da üst kaynak sunucu proxy'sini yapılandırmak için:
 
-1. AdGuard'ın ayarlarını açın *Tercihler → Ağ → Giden proxy*.
+1. Open AdGuard's settings *Preferences → Network → Outbound proxy*.
 2. Proxy türünüze bağlı olarak HTTP, HTTPS, SOCKS4 veya SOCKS5'i seçin.
 3. Alanları doldurun:
     - `host` is the IP address of your proxy server,

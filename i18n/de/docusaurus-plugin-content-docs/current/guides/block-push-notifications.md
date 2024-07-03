@@ -1,9 +1,9 @@
 ---
-title: How to block push notifications
+title: So blockieren Sie Push-Benachrichtigungen
 sidebar_position: 9
 ---
 
-If you're seeing annoying ads and popups in the bottom right corner of your screen, they're probably push notifications from your browser. While ad blockers can't stop them, you can easily disable them through your browser settings. Check out the step-by-step guide below to turn off these push notifications.
+Wenn Sie in der unteren rechten Ecke Ihres Bildschirms lästige Anzeigen und Pop-ups sehen, handelt es sich wahrscheinlich um Push-Benachrichtigungen von Ihrem Browser. Werbeblocker können sie zwar nicht verhindern, aber Sie können sie über Ihre Browsereinstellungen leicht deaktivieren. Schauen Sie sich die folgende Schritt-für-Schritt-Anleitung an, um diese Push-Benachrichtigungen zu deaktivieren.
 
 ## In Google Chrome
 
@@ -29,9 +29,9 @@ If you're seeing annoying ads and popups in the bottom right corner of your scre
 
 ## In Microsoft Edge
 
-1. Click the three dots menu in the upper-right corner and select _Settings_.
+1. Klicken Sie auf das Drei-Punkte-Menü in der oberen rechten Ecke und wählen Sie _Einstellungen_.
 2. In the left sidebar, click _Cookies and site permissions_.
-3. Scroll down and click _Notifications_ under _Site permissions_.
+3. Blättern Sie nach unten und klicken Sie auf _Benachrichtigungen_ unter _Alle Berechtigungen_.
 4. Toggle off _Ask before sending_ to block all browser notifications within Microsoft Edge.
 5. Alternatively, add domains to the _Block_ section for each site you want to block.
 
@@ -41,12 +41,12 @@ To avoid similar ads in the future, you can also block push notifications direct
 
 ### On Windows
 
-1. Open AdGuard. Go to _Settings_ → _Stealth Mode_.
-2. Scroll down to the _Browser API_ section.
-3. Enable _Block Push API_.
+1. Öffnen Sie AdGuard. Öffnen Sie _Einstellungen_ → _Privatsphäre_.
+2. Blättern Sie nach unten zum Abschnitt _Browser-API_.
+3. Aktivieren Sie _Push-API sperren_.
 
 ### On Mac
 
-1. Open AdGuard. Go to _Preferences_.
-2. In the _Stealth Mode_ tab, go to _Browser API_.
-3. Enable _Block Push API_.
+1. Öffnen Sie AdGuard. Gehen Sie zu _Einstellungen_.
+2. Öffnen Sie den Tab _Privatsphäre_ und gehen Sie zu _Browser-API_.
+3. Aktivieren Sie _Push-API sperren_.
