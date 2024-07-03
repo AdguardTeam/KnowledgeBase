@@ -16,7 +16,7 @@ In some cases, filtering may not work and ads may still be displayed even though
 1. Safari'yi açın.
 2. Sol üst köşedeki menüden _Safari_ öğesine tıklayın.
 3. _Ayarlar…_ → _Uzantılar_ öğesine tıklayın.
-4. AdGuard'ın 6 içerik engelleme uzantısı için onay kutularını temizleyin: _Özel_, _Genel_, _Diğer_, _Gizlilik_, _Güvenlik_ ve _Sosyal_.
+4. AdGuard uzantılarının onay kutularını temizleyin: _Özel_, _Genel_, _Diğer_, _Gizlilik_, _Güvenlik_, _Sosyal_, _Safari için AdGuard_ ve _AdGuard Asistanı_.
    ![İşaretlenmemiş içerik engelleyiciler](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-unchecked-cbs.png)
 5. Safari'yi yeniden başlatın.
 6. _Ayarlar..._ → _Uzantılar_ öğesine dönün ve içerik engelleme uzantılarını yeniden etkinleştirin.

@@ -106,7 +106,7 @@ Host: example.org`
 
 şuna dönüştürülecektir
 
-`GET  /foo/bar/ HTTP/1.1
+`GET /foo/bar/ HTTP/1.1
 Host: example.org`
 
 Bu seçenek yalnızca *DPİ'den koru* Gizlilik Modu seçeneği etkinleştirildiğinde uygulanır.

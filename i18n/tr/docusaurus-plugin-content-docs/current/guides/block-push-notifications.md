@@ -1,5 +1,5 @@
 ---
-title: How to block push notifications
+title: Anlık bildirimler nasıl engellenir
 sidebar_position: 9
 ---
 
@@ -41,12 +41,12 @@ To avoid similar ads in the future, you can also block push notifications direct
 
 ### On Windows
 
-1. Open AdGuard. Go to _Settings_ → _Stealth Mode_.
-2. Scroll down to the _Browser API_ section.
+1. AdGuard'ı açın. _Ayarlar_ → _Gizlilik Modu_ öğesine gidin.
+2. _Tarayıcı API_ bölümüne aşağı kaydırın.
 3. Enable _Block Push API_.
 
 ### On Mac
 
-1. Open AdGuard. Go to _Preferences_.
+1. AdGuard'ı açın. Go to _Preferences_.
 2. In the _Stealth Mode_ tab, go to _Browser API_.
 3. Enable _Block Push API_.

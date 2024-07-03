@@ -11,7 +11,7 @@ Um die HTTPS-Filterung auf einem Gerät zu aktivieren, das Google Family Link ve
     - Gehen Sie auf dem Gerät des Kindes zu „Einstellungen“ → „Konten“ → „Google“
     - Tippen Sie auf das Konto Ihres Kindes und sehen Sie nach, ob Sie die Möglichkeit haben, es zu entfernen. Wenn diese Option nicht zur Verfügung steht, fahren Sie mit dem nächsten Schritt fort
     - Tippen Sie auf die drei Punkte in der oberen rechten Ecke des Bildschirms und sehen Sie nach, ob Sie eine Option zum Entfernen des Kontos haben
-    - Befolgen Sie die Anweisungen zum Entfernen des Kontos des Kindes vom Gerät
+    - Follow the instructions removing the child’s account from the device
 
 1. Starten Sie AdGuard und installieren Sie die CA-Datei
 1. Stellen Sie das Konto des Kindes auf dem Gerät wieder her:

@@ -1,52 +1,52 @@
 ---
-title: How to block push notifications
+title: プッシュ通知をブロックする方法
 sidebar_position: 9
 ---
 
-If you're seeing annoying ads and popups in the bottom right corner of your screen, they're probably push notifications from your browser. While ad blockers can't stop them, you can easily disable them through your browser settings. Check out the step-by-step guide below to turn off these push notifications.
+画面の右下に迷惑な広告やポップアップが表示されている時、ブラウザからのプッシュ通知であることが多いです。 このような通知は、広告ブロッカーで止めることはできませんが、ブラウザの設定で簡単に無効にすることができます。 これらのプッシュ通知をオフにする方法は、以下をご覧ください。
 
-## In Google Chrome
+## Google Chrome の場合
 
-1. Click the three vertical dots in the top right corner of the browser and select _Settings_.
-2. Go to _Privacy and security_ → _Site settings_ → _Notifications_.
-3. In _Default behaviour_, select _Don't allow sites to send notifications_. Alternatively, you can manage site-specific settings in _Customised behaviours_.
+1. ブラウザの右上にある3点アイコン（︙）をクリックし、「設定」を選択します。
+2. 「プライバシーとセキュリティ」 → 「サイトの設定」 → 「通知」 に移動します。
+3. _デフォルトの動作_で、「_サイトに通知の送信を許可しない_」を選択します。 または、「_動作のカスタマイズ_」でサイト固有に通知を設定することもできます。
 
-## In Firefox
+## Firefox の場合
 
-1. Click the three horizontal lines in the top right corner of the navigation bar, then select _Settings_.
-2. Select _Privacy & Security_ from the menu on the left.
-3. Scroll down to the section _Permissions_, then click the button _Settings_ next to _Notifications_.
-4. To stop notifications on all previously approved websites, click _Remove All Websites_. Alternatively, you can manage notifications for each website individually.
-5. You can also select _Block new requests asking to allow notifications_ to stop all push notifications requests at once.
-6. Click _Save Changes_.
+1. ブラウザの右上にある三本線アイコン（☰）をクリックし、「設定」を選択します。
+2. 左側のメニューから「_プライバシーとセキュリティ_」を選択します。
+3. _権限_セクションまで下にスクロールし、_通知_の横にある「_設定_」ボタンをクリックします。
+4. 以前に承認したすべてのWebサイトの通知を停止するには、「_すべてのWebサイトを削除_」をクリックします。 あるいは、Webサイトごとの通知設定を管理することもできます。
+5. すべてのプッシュ通知リクエストを一度に停止するには、「_通知の許可を求める新しいリクエストをブロックする_」を選択することもできます。
+6. 「_変更を保存_」をクリックします。
 
-## In Safari
+## Safari の場合
 
-1. Click _Safari_ in the menu bar → _System Settings_.
-2. Go to the _Websites_ tab.
-3. Select _Notifications_ from the left sidebar.
-4. To block all requests, uncheck _Allow websites to ask for permission to send notifications_. Alternatively, select _Deny_ for each site you want to block individually.
+1. メニューバーの「_Safari_」→「_設定…_」をクリックします。
+2. 「Webサイト」タブを開きます。
+3. 左側のサイドバーで「_通知_」を選択します。
+4. すべての通知リクエストをブロックするには、「_通知の送信許可要求をWebサイトに許可_」のチェックを外します。 または、ブロックしたいサイトごとに「_拒否_」を選択します。
 
-## In Microsoft Edge
+## Microsoft Edge の場合
 
-1. Click the three dots menu in the upper-right corner and select _Settings_.
-2. In the left sidebar, click _Cookies and site permissions_.
-3. Scroll down and click _Notifications_ under _Site permissions_.
-4. Toggle off _Ask before sending_ to block all browser notifications within Microsoft Edge.
-5. Alternatively, add domains to the _Block_ section for each site you want to block.
+1. ブラウザの右上にある3点アイコン（︙）をクリックし、「設定」を選択します。
+2. 左側のサイドバーで、「_Cookie とサイトの許可_」をクリックします。
+3. 下にスクロールして、「_サイトの権限_」の下にある「_通知_」をクリックします。
+4. Microsoft Edge 内のすべてのブラウザー通知をブロックするには、[_送信前に確認する_] をオフに切り替えます。
+5. または、「_ブロック_」セクションに、ブロックしたいサイトごとにドメインを追加することもできます。
 
-## Blocking push notifications with AdGuard
+## AdGuard を使ってプッシュ通知をブロックする
 
-To avoid similar ads in the future, you can also block push notifications directly from the AdGuard apps.
+今後同様の広告を回避するには、AdGuard アプリから直接プッシュ通知をブロックすることもできます。
 
-### On Windows
+### Windows の場合
 
-1. Open AdGuard. Go to _Settings_ → _Stealth Mode_.
-2. Scroll down to the _Browser API_ section.
-3. Enable _Block Push API_.
+1. AdGuard アプリを開いて、 「_設定_」 → 「_ステルスモード_」に移動します。
+2. 「ブラウザAPI」セクションまでスクロールダウンします。
+3. 「_プッシュAPIをブロックする_」を有効にします。
 
-### On Mac
+### Mac の場合
 
-1. Open AdGuard. Go to _Preferences_.
-2. In the _Stealth Mode_ tab, go to _Browser API_.
-3. Enable _Block Push API_.
+1. AdGuard アプリを開いて、 「_設定_」に移動します。
+2. _ステルスモード_タブで、「_ブラウザAPI_」に進みます。
+3. 「_プッシュAPIをブロックする_」を有効にします。

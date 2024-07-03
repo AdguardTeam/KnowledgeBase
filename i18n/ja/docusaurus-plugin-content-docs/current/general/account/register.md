@@ -13,7 +13,7 @@ sidebar_position: 1
 
 :::tip
 
-If you enter your email address when purchasing a license, or receive a license linked to your email address as a gift, an account will be created automatically. この場合、パスワードを設定するには、購入お知らせメールまたはギフトに関するメールからリンクをたどってください。 また、上記の方法で登録することもできます。
+ライセンス購入時にメールアドレスを入力した場合、またはあなたのメールアドレスに紐付けられたライセンスをギフトとして受け取った場合、そのメールアドレスに対してアカウントが自動的に作成されます。 この場合、パスワードを設定するには、購入お知らせメールまたはギフトに関するメールからリンクをたどってください。 また、上記の方法で登録することもできます。
 
 :::
 
