@@ -31,7 +31,7 @@ Je nach Betriebssystem des Geräts, dessen Datenverkehr Sie filtern möchten, be
 
 1. Drücken Sie auf diesem Gerät **Win**, geben Sie `Computerzertifikate verwalten` ein und drücken Sie **Enter**.
 
-1. On the *Certificates — Local Computer* page, find the *Trusted Root Certification Authorities* → *Certificates* folder.
+1. Auf der Seite *Zertifikate — Lokaler Computer* * →Vertraute Stammzertifizierungsstellen* suchen Sie den Ordner*Zertifikate*.
 
 1. Klicken Sie mit der rechten Maustaste auf den Ordner *Zertifikate* und klicken Sie auf **Alle Aufgaben** ➜ **Importieren**.
 
@@ -43,7 +43,7 @@ Je nach Betriebssystem des Geräts, dessen Datenverkehr Sie filtern möchten, be
 
 1. Aktivieren Sie das Kontrollkästchen **Alle Zertifikate im folgenden Speicher speichern**.
 
-1. Make sure that the *Certificate store* field displays *Trusted Root Certification Authorities* and click **Next**.
+1. Stellen Sie sicher, dass im Feld *Zertifikatspeicher* *Vertrauenswürdige Stammzertifizierungsstellen* angezeigt wird, und klicken Sie auf **Weiter**.
 
 1. Klicken Sie auf **Fertigstellen**.
 
@@ -75,7 +75,7 @@ Je nach Betriebssystem des Geräts, dessen Datenverkehr Sie filtern möchten, be
 
 1. Geben Sie das Administratorkennwort ein und klicken Sie dann auf **Schlüsselbund ändern**.
 
-1. Go to **Spotlight** (the search icon in the top right corner), type in `Keychain Access`, and then select **Keychain Access** from the search results.
+1. Öffnen Sie die **Spotlight-Suche** (das Suchsymbol in der oberen rechten Ecke), geben Sie `Schlüsselbundverwaltung` ein und wählen Sie dann **Schlüsselbundverwaltung** aus den Suchergebnissen.
 
 1. Markieren Sie unter *System* das Zertifikat, das Sie hinzugefügt haben.
 
@@ -89,7 +89,7 @@ Je nach Betriebssystem des Geräts, dessen Datenverkehr Sie filtern möchten, be
 
 1. Klicken Sie auf **Weitere Optionen …** und öffnen Sie den Tab **Proxies**.
 
-1. Tick two checkboxes: *Web proxy (HTTP)* and *Secure web proxy (HTTPS)*. In the **Server** field, type the IP address of your computer that you noted in step 1. Geben Sie im Feld **Port** den Port ein, den Sie in den Netzwerkeinstellungen der AdGuard-App gewählt haben.
+1. Aktivieren Sie zwei Kontrollkästchen: *Webproxy (HTTP)* und *Sicherer Webproxy (HTTPS)*. Geben Sie in das Feld **Server** die IP-Adresse Ihres Computers ein, die Sie in Schritt 1 notiert haben. Geben Sie im Feld **Port** den Port ein, den Sie in den Netzwerkeinstellungen der AdGuard-App gewählt haben.
 
 ### Android {#android}
 
@@ -109,7 +109,7 @@ Je nach Betriebssystem des Geräts, dessen Datenverkehr Sie filtern möchten, be
 
 1. Öffnen Sie die erweiterten Einstellungen des aktiven WLAN-Netzwerks.
 
-1. Ändern Sie den **Proxy-Typ** in **Manuell**. For **Proxy hostname**, enter the noted IP address of your desktop computer you noted in step 1. Geben Sie bei **Proxy-Port** den Port ein, den Sie in den Netzwerkeinstellungen der AdGuard-Desktop-App gewählt haben.
+1. Ändern Sie den **Proxy-Typ** in **Manuell**. Geben Sie bei **Proxy-Hostname** die in Schritt 1 notierte IP-Adresse Ihres Desktop-Computers ein. Geben Sie bei **Proxy-Port** den Port ein, den Sie in den Netzwerkeinstellungen der AdGuard-Desktop-App gewählt haben.
 
 ### iOS {#ios}
 

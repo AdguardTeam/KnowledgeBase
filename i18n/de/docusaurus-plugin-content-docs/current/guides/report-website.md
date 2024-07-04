@@ -53,7 +53,7 @@ Um die Wiedereinblendung einer Werbung oder die fehlerhafte Anzeige einer Websit
 
 ### Mac {#mac}
 
-- Open [AdGuard Browser Assistant](/adguard-for-mac/features/browser-assistant) and hit **Report an issue**:
+- Öffnen Sie den [AdGuard Browser-Assistent](/adguard-for-mac/features/browser-assistant) und klicken Sie auf **Problem melden**:
 
 ![Mac *Mobil](https://cdn.adtidy.org/content/kb/ad_blocker/guides/browser-assistant-mac.png)
 
