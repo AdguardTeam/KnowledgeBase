@@ -3,7 +3,7 @@ title: Compatibility with the standalone app
 sidebar_position: 3
 ---
 
-While AdGuard Browser Extension can block ads in browsers, [AdGuard standalone programs](/comparison-standalone.md) filter all the traffic on your device, including from browsers and apps.
+While AdGuard Browser Extension can block ads in browsers, AdGuard standalone programs filter all the traffic on your device, including from browsers and apps.
 
 If you decide to install both the extension and the standalone program to your PC, you may encounter some compatibility issues. The problem is that in some cases the application and the extension can interfere with each other. Some websites will no longer be protected by the desktop program and will only be protected by the extension, which has fewer options. Also, the filtering for some websites can work incorrectly. Therefore, we don't recommend using the extension together with the application.
 
