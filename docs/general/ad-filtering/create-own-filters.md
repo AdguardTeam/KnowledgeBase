@@ -3917,11 +3917,12 @@ AdGuard supports a lot of different scriptlets. In order to achieve cross-blocke
 **Syntax**
 
 ```text
-rule = [domains] "#%#//scriptlet(" scriptletName arguments ")"
+[domains]#%#//scriptlet(name[, arguments])
 ```
 
-- **`scriptletName`** — required, a name of the scriptlet from AdGuard's Scriptlets library
-- **`arguments`** — optional, a list of `string` arguments (no other types of arguments are supported)
+- `domains` — optional, a list of domains where the rule should be applied;
+- `name` — required, a name of the scriptlet from AdGuard Scriptlets library;
+- `arguments` — optional, a list of `string` arguments (no other types of arguments are supported).
 
 **Examples**
 
@@ -3933,14 +3934,16 @@ This rule will be applied to `example.org` and subdomains pages and will execute
 
 **Exceptions**
 
-Exception rules can disable some scriptlets on particullar domains. The syntax for exception scriptlet rules is similar to normal scriptlet rules but uses `#@%#` instead of `#%#`:
+Exception rules can disable some scriptlets on particular domains. The syntax for exception scriptlet rules is similar to normal scriptlet rules but uses `#@%#` instead of `#%#`:
 
 ```text
-rule = [domains]  "#@%#//scriptlet(" scriptletName arguments ")"
+[domains]#@%#//scriptlet([name[, arguments]])
 ```
 
-- `scriptletName` — optional, a name of the scriptlet to exclude from applying. If not set, all scriptlets will not be applied;
-- `arguments` — optional, a list of `string` arguments to disable a particular scriptlet rule.
+- `domains` — optional, a list of domains where the rule should be applied;
+- `name` — optional, a name of the scriptlet to except from the applying;
+  if not set, all scriptlets will not be applied;
+- `arguments` — optional, a list of `string` arguments to match the same blocking rule and disable it.
 
 For example, if you want to disable the rule
 
