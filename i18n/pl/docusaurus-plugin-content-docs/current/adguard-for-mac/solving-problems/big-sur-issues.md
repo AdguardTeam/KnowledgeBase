@@ -93,7 +93,7 @@ Now AdGuard can filter local proxies (mostly) without any problems. If you encou
 
 To configure an upstream proxy in AdGuard for Mac in Big Sur:
 
-1. Open AdGuard's settings  *Preferences → Network → Outbound proxy*.
+1. Open AdGuard's settings *Preferences → Network → Outbound proxy*.
 2. Choose HTTP, HTTPS, SOCKS4 or SOCKS5, depending on your proxy type.
 3. Fill in the fields:
     - `host` is the IP address of your proxy server,

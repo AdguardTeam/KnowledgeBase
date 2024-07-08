@@ -41,6 +41,16 @@ Zde jsou uvedeny akce, kterým bude AdGuard rozumět, pokud budou zahrnuty do z�
 
 `enable:true` nebo `enable:false` povolí nebo zakáže DNS filtrování.
 
+`fake_dns` allows resolving DNS requests on the specified proxy server. This requires an extra flag:
+
+`enable:true` or `enable:false` enables or disables the *Use FakeDNS* setting, respectively.
+
+:::note
+
+When the *Use FakeDNS* setting is enabled, *DNS Protection* will be automatically disabled. DNS requests won't be filtered locally.
+
+:::
+
 -----
 
 `dns_server` přepíná mezi DNS servery, je třeba uvést další údaje:
@@ -55,7 +65,7 @@ Zde jsou uvedeny akce, kterým bude AdGuard rozumět, pokud budou zahrnuty do z�
 
  `server:custom` přepne na dříve přidaný server s názvem `custom`;
 
- `server:tls://dns.adguard.com` vytvoří nový server a přepne na něj, pokud dříve přidané servery a poskytovatelé neobsahují server se stejnou adresou. V opačném případě přepne na příslušný server. Adresy serverů můžete přidat jako IP (obvyklý DNS), `sdns://…` (DNSCrypt nebo DNS-over-HTTPS), `https://…` (DNS-over-HTTPS) nebo  `tls://...` (DNS-over-TLS);
+ `server:tls://dns.adguard.com` vytvoří nový server a přepne na něj, pokud dříve přidané servery a poskytovatelé neobsahují server se stejnou adresou. V opačném případě přepne na příslušný server. You can add server addresses as IP ( regular DNS), `sdns://…` (DNSCrypt or DNS-over-HTTPS), `https://…` (DNS-over-HTTPS) or `tls://...` (DNS-over-TLS);
 
  `server:1.1.1.1, tls://1.1.1.1` vytvoří server s adresami oddělenými čárkou a přepne se na něj. Při přidávání serveru prostřednictvím `server:1.1.1.1, tls://1.1.1.1`, je dříve přidaný server odebrán.
 
@@ -63,7 +73,7 @@ Zde jsou uvedeny akce, kterým bude AdGuard rozumět, pokud budou zahrnuty do z�
 
  -----
 
-`proxy_state` zapíná/vypíná odchozí proxy.  Vyžaduje příznak navíc:
+`proxy_state` zapíná/vypíná odchozí proxy. Vyžaduje příznak navíc:
 
 `enable:true` nebo `enable:false` aktivuje nebo deaktivuje odchozí proxy.
 

@@ -3,7 +3,7 @@ title: 이중 인증(2FA)
 sidebar_position: 3
 ---
 
-Two-factor authentication (or 2FA) is an authentication method that requires an additional piece of evidence from the user to log in, on top of the usual username and password pair. 이는 보안을 위해 수행됩니다. 웹사이트는 일반적으로 SMS 또는 특수 인증 앱으로 전송된 코드와 같은 2FA 방법을 제공합니다.
+이중 인증(2FA)은 사용자가 본인 확인을 위해 아이디 및 비밀번호 입력 외에 사용할 수 있는 추가적인 기능입니다. 이는 보안을 위해 수행됩니다. 웹사이트는 일반적으로 SMS 또는 특수 인증 앱으로 전송된 코드와 같은 2FA 방법을 제공합니다.
 
 이중 인증을 사용하면 여러 가지 이점이 있지만, 일부 사용자는 사용하고 싶지 않을 수 있기 때문에 adguard.com에서 새 계정을 만들 때 이중 인증 기능이 비활성화됩니다. 설정에서 이 기능을 수동으로 활성화할 수 있습니다. AdGuard 계정에서 이중 인증 기능을 활성화하려면 Android/iOS용 인증 앱을 사용하세요. 모든 인증 앱을 사용할 수 있습니다.
 

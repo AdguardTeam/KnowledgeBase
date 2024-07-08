@@ -41,6 +41,16 @@ sidebar_position: 3
 
 `enable:true` 或 `enable:false` 相应地启用或禁用 DNS 过滤。
 
+`fake_dns` allows resolving DNS requests on the specified proxy server. This requires an extra flag:
+
+`enable:true` or `enable:false` enables or disables the *Use FakeDNS* setting, respectively.
+
+:::note
+
+When the *Use FakeDNS* setting is enabled, *DNS Protection* will be automatically disabled. DNS requests won't be filtered locally.
+
+:::
+
 -----
 
 `dns_server` 在 DNS 服务器之间切换时，需要包含额外的数据：
@@ -55,7 +65,7 @@ sidebar_position: 3
 
  `server:custom` 切换到之前添加的名为 `custom` 的服务器；
 
- `server:tls://dns.adguard.com` 如果之前添加的服务器和提供商不包含具有相同地址的服务器，则创建一个新服务器并切换到该服务器。 否则，它会切换到相应的服务器。 用户可以将服务器地址添加为 IP（普通 DNS）、`sdns://…`（DNSCrypt 或 DNS-over-HTTPS）、`https://…`（DNS-over-HTTPS）或 `tls:`//...(DNS-over-TLS）；
+ `server:tls://dns.adguard.com` 如果之前添加的服务器和提供商不包含具有相同地址的服务器，则创建一个新服务器并切换到该服务器。 否则，它会切换到相应的服务器。 You can add server addresses as IP ( regular DNS), `sdns://…` (DNSCrypt or DNS-over-HTTPS), `https://…` (DNS-over-HTTPS) or `tls://...` (DNS-over-TLS);
 
  `server:1.1.1.1, tls://1.1.1.1` 创建一个用逗号分隔地址的服务器并切换到它。 通过`server:1.1.1.1, tls://1`.1.1 添加服务器时，先前添加的服务器将被移除。
 
@@ -63,7 +73,7 @@ sidebar_position: 3
 
  -----
 
-`proxy_state` 启用/禁用出站代理。  需要额外的标志：
+`proxy_state` 启用/禁用出站代理。 需要额外的标志：
 
 `enable:true` 或 `enable:false` 相应地激活或停用出站代理。
 

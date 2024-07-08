@@ -3,7 +3,7 @@ title: Authentification à deux facteurs
 sidebar_position: 3
 ---
 
-Two-factor authentication (or 2FA) is an authentication method that requires an additional piece of evidence from the user to log in, on top of the usual username and password pair. Cette mesure est prise à des fins de sécurité. Les sites web proposent généralement des méthodes 2FA telles qu'un code envoyé par SMS ou une application d'authentification spéciale.
+L'authentification à deux facteurs (ou 2FA) est une méthode d'authentification qui nécessite une preuve supplémentaire de la part de l'utilisateur pour se connecter, en plus de la paire habituelle d'identifiant et de mot de passe. Cette mesure est prise à des fins de sécurité. Les sites web proposent généralement des méthodes 2FA telles qu'un code envoyé par SMS ou une application d'authentification spéciale.
 
 Nous considérons l’ajout de l'option 2FA comme un avantage. Nous comprenons également que son application peut irriter certains utilisateurs. C'est pourquoi nous l'avons rendu facultative pour votre compte personnel sur adguard.com : par défaut, 2FA est désactivée lorsque vous enregistrez un nouveau compte. Vous pouvez l'activer manuellement dans les paramètres. Quant aux méthodes d'authentification actuellement disponibles, nous utilisons celle qui a fait ses preuves : une application d'authentification pour Android ou iOS. Vous pouvez utiliser presque n'importe quelle application de ce type, et il y en a beaucoup.
 

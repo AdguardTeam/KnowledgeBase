@@ -11,6 +11,8 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 Neste artigo, vamos guiá-lo através do processo de recolha de registos de depuração, um passo de resolução de problemas essencial para resolver problemas complexos que possam surgir. Debug logs provide detailed insight into the inner workings of AdGuard for Android. If the AdGuard support team asks you to provide debug logs, simply follow these instructions.
 
+> AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/en/privacy/android.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+
 ### Collecting debug log
 
 To collect **debug** log and send it to us you need to perform following steps:

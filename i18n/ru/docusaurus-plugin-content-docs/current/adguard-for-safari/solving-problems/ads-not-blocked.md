@@ -1,30 +1,30 @@
 ---
-title: Filtering doesn’t work and ads aren’t blocked
+title: Фильтрация не работает и реклама не блокируется
 sidebar_position: 2
 ---
 
 :::info
 
-Эта статья об AdGuard для Safari, которое защищает только этот браузер. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Эта статья об AdGuard для Safari, которое защищает только этот браузер. [Скачайте приложение AdGuard](https://agrd.io/download-kb-adblock), чтобы защитить своё устройство
 
 :::
 
-In some cases, filtering may not work and ads may still be displayed even though AdGuard for Safari and the proper filters are enabled. This usually happens when something goes wrong with filter updates due to Safari bugs.
+В некоторых случаях фильтрация может не сработать, и реклама будет отображаться, даже если AdGuard для Safari и соответствующие фильтры включены. Обычно это происходит, когда что-то не так с обновлениями фильтров из-за ошибок Safari.
 
-### How to fix
+### Как исправить
 
-1. Open Safari.
-2. Click _Safari_ in the left upper corner menu.
-3. Click _Settings…_ → _Extensions_.
-4. Clear the checkboxes for AdGuard’s 6 content-blocking extensions: _Custom_, _General_, _Other_, _Privacy_, _Security_, and _Social_.
-   ![Unchecked content blockers](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-unchecked-cbs.png)
-5. Restart Safari.
-6. Return to _Settings..._ → _Extensions_ and re-enable the content-blocking extensions.
-7. Open AdGuard for Safari app.
-8. Go to _Filters_.
-9. Click _Check for updates_.
-10. Do not close the AdGuard for Safari window until the filters are updated.
+1. Откройте Safari.
+2. Нажмите _Safari_ в левом верхнем углу меню.
+3. Нажмите _Настройки…_ → _Расширения_.
+4. Уберите галочки с расширений AdGuard: _Пользовательские_, _Основные_, _Другие_, _Конфиденциальность_, _Безопасность_, _Виджеты соцсетей_, _AdGuard для Safari_ и _Помощник AdGuard_.
+   ![Неотмеченные блокировщики контента](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-unchecked-cbs.png)
+5. Перезапустите Safari.
+6. Вернитесь в _Настройки..._ → _Расширения_ и снова включите расширения, блокирующие контент.
+7. Откройте приложение AdGuard для Safari.
+8. Откройте вкладку _Фильтры_.
+9. Нажмите _Проверить обновления_.
+10. Не закрывайте окно AdGuard для Safari, пока фильтры не обновятся.
 
-If this doesn’t help and ads are still not being blocked, please contact our support at support@adguard.com.
+Если это не помогло и реклама по-прежнему не блокируется, напишите на почту поддержки support@adguard.com.
 
-If you only have problems with a specific page or website, you can report it directly from the browser: click the AdGuard for Safari icon next to the Safari search bar, and then click _Report an issue_.
+Если у вас возникли проблемы только с определённой страницей или сайтом, вы можете сообщить о них прямо из браузера: нажмите на значок AdGuard для Safari рядом со строкой поиска Safari, а затем нажмите _Сообщить о проблеме_.

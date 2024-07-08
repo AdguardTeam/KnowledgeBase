@@ -14,7 +14,7 @@ AdGuard can significantly broaden website functionality by acting as a userscrip
 
 ## Empfohlene AdGuard-Skripte
 
-Diese Benutzerskripte stammen direkt von AdGuard und wir können garantieren, dass sie effektiv und sicher sind. Bedenken Sie: Jedes Mal, wenn Sie ein Benutzerskript von einer unbekannten Quelle herunterladen, setzen Sie sich einem Risiko aus, da einige Skripte für Ihren Computer schädlich sein können. Beziehen Sie neue Skripte nur aus Quellen, denen Sie zu 100% vertrauen. Furthermore, here are [some examples](#more-userscripts) of popular sites with scripts.
+Diese Benutzerskripte stammen direkt von AdGuard und wir können garantieren, dass sie effektiv und sicher sind. For some of the userscripts developed by others that we consider good and reliable, [scroll down to the next section](#top-picks). You can also find some of the [popular websites with scripts](#more-userscripts) below, but remember that whenever you download a userscript from an unknown source, you expose yourself to a certain risk, as some scripts may be harmful to your computer.
 
 ### AdGuard Extra
 
@@ -44,13 +44,23 @@ Ein Skript, das nur in AdGuard für Android vorinstalliert ist. Es deaktiviert A
 
 ![AMP deaktivieren](https://cdn.adtidy.org/content/kb/ad_blocker/general/disable-amp-installation.png)
 
+## Top picks outside AdGuard{#top-picks}
+
+These userscripts are not developed by AdGuard and therefore we can't give a 100% guarantee that they are safe and/or work at all times. However, in our experience they deserve a recommendation as they've all earned their good reputation.
+
+### Don't track me Google
+
+This script removes Google's tracking feature from the links in Google search results. It speeds up the loading of search results and allows you to right-click or tap to copy the link URL.
+
+Its source code is [available on GitHub](https://github.com/Rob--W/dont-track-me-google). This userscript can be downloaded from [GreasyFork](https://greasyfork.org/en/scripts/428243-don-t-track-me-google) and installed in any AdGuard CoreLibs-based app.
+
 ### microShield
 
 Ein Benutzerskript für Leute, die koreanische und einige internationale Websites besuchen. Das microShield-Benutzerskript blockiert Ad-Shield-Werbung und Anti-Adblock. Der ursprüngliche Quellcode ist unter [asdefuser](https://github.com/seia-soto/userscripts/tree/master/sources/asdefuser) und [AdShield Defuser](https://github.com/seia-soto/adshield-defuser) verfügbar. Dieses Benutzerskript kann in AdGuard CoreLibs-basierten Anwendungen, Violentmonkey, Tampermonkey und [quoid/userscripts](https://github.com/quoid/userscripts) installiert werden. Auf [GitHub](https://github.com/List-KR/microShield) finden Sie weitere Informationen über microShield und wie man es installiert.
 
 ## Wo kann man weitere Benutzerskripte erhalten? {#more-userscripts}
 
-Da Benutzerskripte hauptsächlich von Enthusiasten erstellt werden, sollten Sie bei deren Installation vorsichtig sein. Es gibt jedoch eine Vielzahl interessanter Skripte, die die Nutzung einiger Websites wirklich bequemer machen können.
+As userscripts are mainly created by enthusiasts, you should be cautious when installing them. Any script from an unknown source carries a potential risk. Yet, there is a great variety of interesting scripts that, if installed carefully and responsibly, can really make using some websites more convenient.
 
 Im Folgenden werden einige der beliebtesten Benutzerskript-Kataloge beschrieben.
 

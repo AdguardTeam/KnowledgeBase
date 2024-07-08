@@ -12,7 +12,7 @@ Ti suggeriamo vivamente di leggere correttamente questo articolo, per scoprire d
 
 I sostantivi in diverse lingue, possono avere diverse forme plurali. Il loro utilizzo dipende dal numero di cose di cui parli.
 
-For instance, English words have two word forms when speaking about something in the singular, like *'one star'*, and in the plural — *'two stars'*. It doesn’t matter if you say five, twenty six or even five hundred thirty two stars — the ending 's' will remain the same. Ma certe lingue possono contenere soltanto una o più forme plurali.
+Ad esempio, le parole inglesi prevedono due forme parlando di qualcosa al singolare, come in *'one star'*, e al plurale, *'two stars'*. Non importa che tu dica cinque, ventisei, o persino cinquecentotrentadue stelle (stars), la 's' finale rimarrà la stessa. Ma certe lingue possono contenere soltanto una o più forme plurali.
 
 A differenza dell'inglese, il polacco ha tre forme plurali dei sostantivi. One of them is used when speaking about something in the singular, another form is used in the plural but with numbers ending in 2–4, excluding 12–14, and the third form — for words with other numbers in front of them.
 
@@ -38,7 +38,7 @@ Quando ti trovi di fronte una traduzione che richiede l'uso dei plurali, potrest
 
 Ecco alcune fonti di informazioni che puoi utilizzare.
 
-La [Guida di Localizzazione](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contiene un ampio elenco di lingue. Il numero di forme plurali per le diverse lingue è mostrato come segue: 'nplurals=2', 'nplurals=4' e così via. Il numero dopo il segno Uguale '=' indica il numero di forme plurali della rispettiva lingua.
+La [Guida di Localizzazione](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contiene un ampio elenco di lingue. The number of plural forms for different languages is shown this way: `nplurals=2`, `nplurals=4` and so on. The numeral after the Equals sign `=` means the number of plural forms of the respective language.
 
 Inoltre, puoi ottenere le informazioni sulle forme plurali nella [Repository Locale di Dati Comuni Unicode](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). Le Regole Plurali CLDR indicano una forma aggiuntiva della parola per i numeri decimali (1,5; 2,3; 100,1…), ma non le utilizziamo nelle traduzioni di AdGuard.
 
