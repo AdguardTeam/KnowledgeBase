@@ -3,7 +3,7 @@ title: HAR dosyası nasıl toplanır
 sidebar_position: 1
 ---
 
-HAR files help our technical support teams troubleshoot complex issues. Bu dosyaları oluşturmak için Chrome veya Firefox kullanmanızı tavsiye ederiz. Ancak, IE 11, Edge ve Safari de `.har` dosyası oluşturma ve dışa aktarma özelliği sağlar.
+HAR dosyaları teknik destek ekiplerimizin karmaşık sorunları gidermesine yardımcı olur. Bu dosyaları oluşturmak için Chrome veya Firefox kullanmanızı tavsiye ederiz. Ancak, IE 11, Edge ve Safari de `.har` dosyası oluşturma ve dışa aktarma özelliği sağlar.
 
 ## Chrome {#chrome}
 
@@ -28,11 +28,11 @@ Chrome'da bir HAR dosyası oluşturmak için şu adımları izleyin:
 
     ![Chrome](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/chrome.png)
 
-1. Reproduce the steps that create the issue.
+1. Sorunu oluşturan adımları yeniden oluşturun.
 
 1. Save session as a .har file by right-clicking the grid and selecting **Save as HAR with content**.
 
-1. Send it to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+1. Sorunun ayrıntılı açıklamasıyla birlikte AdGuard desteğine (support@adguard.com) gönderin. Destekleyici ekran görüntüleri de yardımcı olabilir.
 
 ## Edge {#edge}
 
@@ -59,18 +59,18 @@ Chrome'da bir HAR dosyası oluşturmak için şu adımları izleyin:
 
 1. Save session as a .har file by right-clicking the grid and selecting **Save as HAR with content**.
 
-1. Send it to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+1. Sorunun ayrıntılı açıklamasıyla birlikte AdGuard desteğine (support@adguard.com) gönderin. Destekleyici ekran görüntüleri de yardımcı olabilir.
 
 ## Firefox {#firefox}
 
-To create a HAR file in Firefox, follow these steps:
+Firefox'ta bir HAR dosyası oluşturmak için şu adımları izleyin:
 
 1. Sorunun oluştuğu URL'ye gidin. Sorunu henüz yeniden oluşturmayın.
 
 1. Open Developer Tools in **Network** mode:
 
     - From menu: **Menu → Web Developer → Network**.
-    - Keyboard: **Ctrl+Shift+C**, or **⌥+⌘+E (Mac)**.
+    - Klavye: **Ctrl+Shift+C** veya **⌥+⌘+E (Mac)**.
 
 1. Note the **Play/Pause** button at the top left of the Network tab.
 
@@ -84,11 +84,11 @@ To create a HAR file in Firefox, follow these steps:
 
     ![firefox](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/firefox.png)
 
-1. Reproduce the steps that create the issue.
+1. Sorunu oluşturan adımları yeniden oluşturun.
 
 1. Save session as a .har file by right-clicking the grid and selecting **Save all as HAR**.
 
-1. Send it to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+1. Sorunun ayrıntılı açıklamasıyla birlikte AdGuard desteğine (support@adguard.com) gönderin. Destekleyici ekran görüntüleri de yardımcı olabilir.
 
 ## Internet Explorer 11 {#ie11}
 
@@ -111,15 +111,15 @@ To create a HAR file in Internet Explorer 11, follow these steps:
 
 1. Check the **Disable cache** check box.
 
-1. Reproduce the steps that create the issue.
+1. Sorunu oluşturan adımları yeniden oluşturun.
 
 1. Save session as a .har file by clicking the **Save to disk** button (Export as HAR) on Network tab.
 
-1. Send it to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+1. Sorunun ayrıntılı açıklamasıyla birlikte AdGuard desteğine (support@adguard.com) gönderin. Destekleyici ekran görüntüleri de yardımcı olabilir.
 
 ## Safari {#safari}
 
-To create a HAR file in Safari, follow these steps:
+Safari'de bir HAR dosyası oluşturmak için şu adımları izleyin:
 
 1. Check the Safari menu bar at the top of the screen for a **Develop** menu.
 
@@ -139,31 +139,31 @@ To create a HAR file in Safari, follow these steps:
 
 1. Clear current Network items by clicking the **Delete Trash** icon at the far right of Network tabs.
 
-    - Keyboard: **⌘+K**
+    - Klavye: **⌘+K**
 
 1. Check the **Disable caches** check box.
 
-1. Reproduce the steps that create the issue.
+1. Sorunu oluşturan adımları yeniden oluşturun.
 
 1. Save session as a .har file by clicking the **Export** icon next to the **Delete Trash** icon.
 
-1. Send it to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, too.
+1. Sorunun ayrıntılı açıklamasıyla birlikte AdGuard desteğine (support@adguard.com) gönderin. Destekleyici ekran görüntüleri de yardımcı olabilir.
 
 ## Android {#android}
 
-To create HAR files, follow these steps:
+HAR dosyaları oluşturmak için şu adımları izleyin:
 
-1. Open AdGuard and go to **Settings**.
+1. Adguard'ı açın ve **Ayarlar** öğesine gidin.
 
-1. Choose **Advanced** in the menu.
+1. Menüden **Gelişmiş** öğesini seçin.
 
-1. Choose **Low Level Settings**
+1. **Alt Seviye Ayarlar** öğesini seçin
 
 1. Activate `pref.har.capture` (you will have to restart the protection).
 
-1. Now reproduce the problem — open the app, perform the necessary actions to make the ad appear.
+1. Şimdi sorunu yeniden oluşturun — uygulamayı açın, reklamın görünmesi için gerekli eylemleri gerçekleştirin.
 
-1. Now turn `pref.har.capture` off again.
+1. Şimdi `pref.har.capture` öğesini tekrar kapatın.
 
 1. Go back and tap **Export logs and system info** → **Save**.
 
@@ -173,8 +173,8 @@ To create HAR files, follow these steps:
 
 1. Check the **Enable HAR writing** box.
 
-1. Reproduce the problem.
+1. Sorunu yeniden oluşturun.
 
 1. Go to **General settings** → Click **Export logs** → **Save**.
 
-1. Disable HAR writing by unchecking the corresponding box.
+1. İlgili kutunun işaretini kaldırarak HAR yazmayı devre dışı bırakın.

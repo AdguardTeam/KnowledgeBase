@@ -1,5 +1,5 @@
 ---
-title: Jak nahlásit webovou stránku
+title: Jak nahlásit webové stránky a aplikace
 sidebar_position: 3
 ---
 
@@ -53,7 +53,7 @@ Chcete-li nahlásit opakované vložení reklamy nebo nesprávné zobrazení web
 
 ### Mac {#mac}
 
-- Otevřete [AdGuard Asistenta prohlížeče](/adguard-for-mac/browser-assistant) a stiskněte **Nahlásit problém**:
+- Otevřete [Asistent prohlížeče AdGuard](/adguard-for-mac/features/browser-assistant) a stiskněte **Nahlásit problém**:
 
 ![mac *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/guides/browser-assistant-mac.png)
 

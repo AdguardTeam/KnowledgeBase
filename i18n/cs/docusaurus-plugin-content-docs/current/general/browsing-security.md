@@ -17,7 +17,7 @@ Pro práci s filtry používáme protokol [Safe Browsing API verze 2.2](https://
 
 Následující obrázek poskytuje obecnou představu o tom, jak modul Bezpečné prohlížení funguje. Jako příklad uvádíme AdGuard pro Windows.
 
-![Functioning algorithm of Browsing Security module](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_adguard_for_windows.png)
+![Functioning algorithm of Browsing security module](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_adguard_for_windows.png)
 
 ### Rozšíření prohlížeče AdGuard
 
@@ -27,7 +27,7 @@ Upozorňujeme vás, že nikdy nezískáváme žádné informace, které by nám 
 
 Přibližný algoritmus fungování modulu Bezpečného prohlížení je znázorněn na obrázku níže.
 
-![Functioning algorithm of Browsing Security module in AdGuard browser extensions.](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_extension.png)
+![Functioning algorithm of Browsing security module in AdGuard browser extensions.](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_extension.png)
 
 ## Filtry AdGuardu
 
@@ -53,7 +53,7 @@ Důležitým nástrojem pro udržení nejvyšší úrovně filtrování je *komu
 
 Na obrázku níže vidíte algoritmus práce komunity pro Bezpečné prohlížení:
 
-![The way AdGuard Browsing Security Community works](https://cdn.adtidy.org/public/Adguard/En/Articles/browsing_security_community.png)
+![The way AdGuard Browsing security Community works](https://cdn.adtidy.org/public/Adguard/En/Articles/browsing_security_community.png)
 
 ### Chcete nám pomoci?
 

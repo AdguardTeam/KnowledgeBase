@@ -5,13 +5,13 @@ sidebar_position: 6
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Veja como funciona ao [baixar o AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 ## How to reach Low-level settings
 
-:::caution
+:::cuidado
 
 Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. This section should only be opened if you know what you are doing, or you were asked to do so by our support team.
 
@@ -61,7 +61,7 @@ Here you can specify the response type for domains blocked by DNS rules based on
 
 Aqui você pode especificar o tempo em milissegundos que o AdGuard aguardará pela resposta do servidor DNS selecionado antes de recorrer ao fallback. Caso não preencha este campo ou insira um valor inválido, será utilizado o valor de 5000.
 
-#### Blocked response TTL
+#### Resposta TTL bloqueada
 
 Here you can specify the TTL (time to live) value that will be returned in response to a blocked request.
 
@@ -92,6 +92,14 @@ If this setting is enabled, AdGuard will use fallback upstreams for all domains.
 #### Validate DNS upstreams
 
 If this setting is enabled, AdGuard will test DNS upstreams before adding or updating custom DNS servers.
+
+#### Filter secure DNS
+
+If this setting is on, AdGuard will apply all enabled DNS filters and DNS user rules to encrypted DNS-over-HTTPS (DoH) traffic and not only to plain DNS. DoH traffic mostly comes from Chrome and other browsers that have a *Secure DNS* (or similar) setting. You can use *Filter secure DNS* in two different modes:
+
+- **Filter on the fly**. In this mode, AdGuard applies all enabled DNS filters and DNS user rules to DoH traffic but doesn’t redirect it to the local DNS proxy. If a DNS server is specified in the browser’s settings, this server will handle the DoH traffic for this browser
+
+- **Redirect to DNS proxy**. In this mode, AdGuard applies all enabled DNS filters and DNS user rules to DoH traffic by redirecting it to the local DNS proxy. The DNS server specified in the AdGuard’s DNS settings will handle all DoH traffic
 
 ### Filtering
 

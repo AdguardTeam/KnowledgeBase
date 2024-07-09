@@ -1,18 +1,18 @@
 ---
-title: Quick actions
+title: Ações rápidas
 sidebar_position: 2
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artigo aborda o AdGuard para Android, um bloqueador de anúncios multifuncional que protege seu dispositivo a nível de sistema. Para ver como funciona, [baixe o aplicativo AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-Quick actions can be found inside the _Firewall_ module, which can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Firewall_.
+Ações rápidas podem ser encontradas dentro do módulo _Firewall_, que pode ser acessado tocando na guia _Proteção_ (segundo ícone à esquerda na parte inferior da tela) e selecionando _Firewall_.
 
-_Quick actions_ are based on the requests from _Recent activity_ (which can be found in [_Statistics_](/adguard-for-android/features/statistics)). This section shows which apps have recently connected to the Internet.
+_Ações rápidas_ são baseadas nas solicitações de _Atividade recente_ (que podem ser encontradas em [_Estatísticas_](/adguard-for-android/features/statistics)). Esta seção mostra quais aplicativos se conectaram recentemente à Internet.
 
-![Quick actions \*mobile\_border](https://cdn.adtidy.org/blog/new/yigrfquick_actions.png)
+![Ações rápidas \*mobile\_border](https://cdn.adtidy.org/blog/new/yigrfquick_actions.png)
 
-If you see an app that shouldn't be using the Internet at all or an app that you haven't used recently, you can block its access on the fly. This will not be possible unless the _Firewall_ module is turned on.
+Se você vir um aplicativo que não deveria estar usando a Internet ou um aplicativo que não tenha sido usado recentemente, poderá bloquear seu acesso imediatamente. Isto não será possível a menos que o módulo _Firewall_ esteja ativado.

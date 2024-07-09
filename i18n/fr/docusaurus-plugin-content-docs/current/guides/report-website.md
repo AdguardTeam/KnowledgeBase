@@ -1,5 +1,5 @@
 ---
-title: Comment signaler un site web
+title: Comment signaler des sites web et des applications
 sidebar_position: 3
 ---
 
@@ -53,7 +53,7 @@ Pour signaler une réinsertion d'une annonce ou un mauvais affichage d'un site i
 
 ### Mac {#mac}
 
-- Ouvrez l'[Assistant de navigateur AdGuard](/adguard-for-mac/browser-assistant) et appuyez sur **Signaler un problème** :
+- Ouvrez [L'Assistant de navigateur AdGuard](/adguard-for-mac/features/browser-assistant) et appuyez sur **Signaler un problème** :
 
 ![mac *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/guides/browser-assistant-mac.png)
 

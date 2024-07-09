@@ -62,6 +62,7 @@ AdGuard 广告拦截的过滤器包含以下过滤器：
 - 插播广告。移动设备上覆盖应用程序或网络浏览器界面的全屏广告。
 - 占据较大空间或在背景中格外显眼并吸引访问者注意力的残留广告（几乎无法辨别或难以察觉的广告除外）。
 - Anti-adblock 广告。当主要广告被屏蔽时，网站上显示的替代广告。
+- Bait elements that are used by multiple known adblock detection scripts to detect an ad blocker presence for different goals including changing the way ads are shown, fingerprinting, etc.
 - 网站自身的广告，如果它已被一般过滤规则屏蔽（请参阅*限制及例外*）。
 - 阻止网站使用的反屏蔽脚本（请参阅*限制及例外*）。
 - 恶意软件注入的广告，如果提供了有关其加载方法或复制步骤的详细信息。
@@ -113,6 +114,7 @@ AdGuard 跟踪保护过滤器包含以下过滤器：
 - 跟踪 Cookie
 - 跟踪像素
 - 浏览器的跟踪 API
+- Detection of the ad blocker for tracking purposes
 - Google 浏览器的隐私沙盒功能及其用于跟踪的分叉（Google Topics API、受保护受众 API）
 
 **URL 跟踪过滤器**旨在移除网址中的跟踪参数。

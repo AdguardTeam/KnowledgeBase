@@ -1,24 +1,24 @@
 ---
-title: Security
+title: Sécurité
 sidebar_position: 6
 ---
 
 :::info
 
-Cet article parle de AdGuard pour Mac, un bloqueur de contenus multifonctionnel qui protège votre appareil au niveau du système. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Cet article parle de AdGuard pour Mac, un bloqueur de contenus multifonctionnel qui protège votre appareil au niveau du système. Pour voir comment il fonctionne, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## Phishing and malware protection
+## Protection contre les maliciels et l'hameçonnage
 
-![Security](https://cdn.adtidy.org/content/kb/ad_blocker/mac/security.png)
+![Sécurité](https://cdn.adtidy.org/content/kb/ad_blocker/mac/security.png)
 
-AdGuard has a database of fraudulent, phishing, and malicious domains. If you enable _Phishing and malware protection_, AdGuard will warn you every time you’re about to visit a dangerous website. Even if only some parts of the website are dangerous, AdGuard will check it and display a warning.
+AdGuard dispose d'une base de données de domaines frauduleux, d'hameçonnage et malveillants. Si vous activez la _Protection contre les maliciels et l'hameçonnage_, AdGuard vous avertira chaque fois que vous êtes sur le point de visiter un site web dangereux. Même si seules certaines parties du site sont dangereuses, AdGuard les vérifiera et affichera un avertissement.
 
-This is safe. As AdGuard checks hash prefixes, not URLs, it doesn’t know what websites you visit. [Learn more about AdGuard’s security checks](/general/browsing-security)
+C'est sécuritaire. Puisque AdGuard vérifie les préfixes de hachage, et non les URL, il ne sait pas quels sites web vous visitez. [Apprenez plus sur les contrôles de sécurité d'AdGuard](/general/browsing-security)
 
 :::note
 
-AdGuard is not an antivirus software. It can’t stop you from downloading suspicious files or delete existing viruses.
+AdGuard n'est pas un logiciel antivirus. Il ne peut pas vous empêcher de télécharger des fichiers suspects ou de supprimer des virus existants.
 
 :::

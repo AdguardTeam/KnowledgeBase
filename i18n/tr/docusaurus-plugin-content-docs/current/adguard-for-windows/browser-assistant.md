@@ -27,7 +27,7 @@ Tarayıcı Asistanını kullanırken, özünde herhangi bir çakışma olamayaca
 
 ## Ayarlar'da ayrı sekme
 
-Yeni Tarayıcı Asistanı, Windows için AdGuard ayarlarında Gizlilik Modu, Gezinti Koruması, Ebeveyn Denetimi ve diğerleriyle birlikte kendi sekmesine sahiptir. Burada varsayılan tarayıcınız için uzantıyı indirmek üzere bir bağlantı bulacaksınız. Ayrıca, eski Asistanı etkinleştirmek için bir onay kutusu vardır.
+Yeni Tarayıcı Asistanı, Windows için AdGuard ayarlarında Gizlilik Modu, Gezinti koruması, Ebeveyn Denetimi ve diğerleriyle birlikte kendi sekmesine sahiptir. Burada varsayılan tarayıcınız için uzantıyı indirmek üzere bir bağlantı bulacaksınız. Ayrıca, eski Asistanı etkinleştirmek için bir onay kutusu vardır.
 
 ![Ayarlar *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 

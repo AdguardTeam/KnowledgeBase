@@ -1,80 +1,80 @@
 ---
-title: Tracking rotection
+title: 추적 보호
 sidebar_position: 2
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+이 글은 시스템 수준에서 기기를 보호하는 광고 차단기인 Android용 AdGuard에 관한 내용입니다. 작동 방식을 확인하려면 [AdGuard 앱을 다운로드](https://agrd.io/download-kb-adblock)하세요.
 
 :::
 
-The Tracking protection module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Tracking protection_.
+추적 보호 모듈은 **보호** 탭(화면 하단의 왼쪽 두 번째 아이콘)을 누른 다음 **추적 보호**를 선택하면 이용할 수 있습니다.
 
-_Tracking protection_ (formerly known as _Stealth Mode_) prevents websites from collecting information about you, such as your IP addresses, information about your browser and operating system, screen resolution, and the page you came or were redirected from. It can also block cookies that websites use to mark your browser, save your personal settings and user preferences, or recognize you on your next visit.
+**추적 보호**(이전의 **스텔스 모드**)는 웹사이트가 IP 주소, 브라우저 및 운영 체제 정보, 화면 해상도, 방문했거나 리디렉션된 페이지 등 사용자에 대한 정보를 수집하지 못하도록 차단합니다. 또한 웹사이트가 브라우저를 표시하거나 개인 설정 및 사용자 환경설정을 저장하거나 다음 방문 시 사용자를 인식하는 데 사용하는 쿠키를 차단할 수도 있습니다.
 
-![Tracking protection \*mobile\_border](https://cdn.adtidy.org/blog/new/y5fuztracking_protection.png)
+![추적 보호 \*mobile\_border](https://cdn.adtidy.org/blog/new/y5fuztracking_protection.png)
 
-_Tracking protection_ has three pre-configured levels of privacy protection (_Standard_, _High_, and _Extreme_) and one user-defined level (_Custom_).
+**추적 보호**에는 사전 구성된 세 가지 개인정보 보호 수준(**표준 수준**, **높은 수준**, **궁극의 수준**)과 한 가지 사용자 정의 수준(**사용자 정의**)이 있습니다.
 
-Here are the active features of the pre-configured levels:
+사전 구성된 수준의 활성 기능은 다음과 같습니다.
 
-1. **Standard**
+1. **표준 수준**
 
-   a. _Block trackers_. This feature uses _AdGuard Tracking Protection filter_ to protect you from online counters and web analytics tools
+   a. **추적기 차단**. 이 기능은 온라인 카운터 및 웹 분석 도구로부터 사용자를 보호하기 위해 **AdGuard 추적 보호 필터**를 사용합니다.
 
-   b. _Ask websites not to track you_. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
+   b. _웹사이트에 추적하지 않도록 요청하기_. 이 기능은 사용자가 방문하는 웹사이트에 [Global Privacy Control](https://globalprivacycontrol.org/) 및 [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) 신호를 전송하여 웹 앱이 사용자의 활동 추적을 비활성화하도록 요청합니다.
 
-   c. _Remove X-Client-Data header_. This feature prevents Google Chrome from sending information about its version and modifications to Google domains (including DoubleClick and Google Analytics)
+   c. **X-Client-Data 헤더 제거** 이 기능은 Google Chrome이 버전 및 수정 사항에 대한 정보를 Google 도메인(DoubleClick 및 GoogleAnalytics 포함)으로 전송하는 것을 방지합니다.
 
-2. **High**
+2. **높은 수준**
 
-   a. _Block trackers_. This feature uses _AdGuard Tracking Protection filter_ to protect you from online counters and web analytics tools
+   a. **추적기 차단**. 이 기능은 온라인 카운터 및 웹 분석 도구로부터 사용자를 보호하기 위해 **AdGuard 추적 보호 필터**를 사용합니다.
 
-   b. _Remove tracking parameters from URLs_. This feature uses _AdGuard URL Tracking filter_ to remove tracking parameters, such as `utm_*` and `fb_ref`, from page URLs
+   b. **URL에서 추적 매개변수 제거**. 이 기능은 **AdGuard URL 추적 필터**를 사용하여 페이지 URL에서 `utm_*` 및 `fb_ref`와 같은 추적 매개 변수를 제거합니다.
 
-   c. _Hide your search queries_. This feature hides queries for websites visited from a search engine
+   c. **검색어 숨기기**. 이 기능은 검색 엔진에서 방문한 웹사이트에 대한 검색어를 숨깁니다.
 
-   d. _Ask websites not to track you_. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
+   d. _웹사이트에 추적하지 않도록 요청하기_. 이 기능은 사용자가 방문하는 웹사이트에 [Global Privacy Control](https://globalprivacycontrol.org/) 및 [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) 신호를 전송하여 웹 앱이 사용자의 활동 추적을 비활성화하도록 요청합니다.
 
-   e. _Self-destruction of third-party cookies_. This feature limits the lifetime of third-party cookies to 180 minutes
-
-   :::caution
-
-   This feature deletes all third-party cookies after their forced expiration. This includes your logins through social networks or other third-party services. You may need to re-log in to some websites periodically or experience other cookie-related issues. To block only tracking cookies, use the _Standard_ protection level.
-
-   :::
-
-   f. _Remove X-Client-Data header_. This feature prevents Google Chrome from sending its version and modifications information to Google domains (including DoubleClick and Google Analytics)
-
-3. **Extreme** (formerly known as _Ultimate_)
-
-   a. _Block trackers_. This feature uses _AdGuard Tracking Protection filter_ to protect you from online counters and web analytics tools
-
-   b. _Remove tracking parameters from URLs_. This feature uses _AdGuard URL Tracking filter_ to remove tracking parameters, such as `utm_*` and `fb_ref`, from page URLs
-
-   c. _Hide your search queries_. This feature hides queries for websites visited from a search engine
-
-   d. _Ask websites not to track you_. This feature sends the [Global Privacy Control](https://globalprivacycontrol.org/) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit, asking web apps to disable tracking of your activity
-
-   e. _Self-destruction of third-party cookies_. This feature limits the lifetime of third-party cookies to 180 minutes
+   e. **서드파티 쿠키 자동 파괴**. 이 기능은 서드파티 쿠키의 유지시간을 180분으로 제한합니다
 
    :::caution
 
-   This feature deletes all third-party cookies after their forced expiration. This includes your logins through social networks or other third-party services. You may need to re-log in to some websites periodically or experience other cookie-related issues. To block only tracking cookies, use the _Standard_ protection level.
+   이 기능은 강제 만료 후 모든 타사 쿠키를 삭제합니다. 여기에는 소셜 네트워크 또는 기타 타사 서비스를 통한 로그인도 포함됩니다. 일부 웹사이트에 주기적으로 재로그인해야 하거나 기타 쿠키 관련 문제가 발생할 수 있습니다. 추적 쿠키만 차단하려면 **표준** 보호 수준을 사용하세요.
 
    :::
 
-   f. _Block WebRTC_. This feature blocks WebRTC, a known vulnerability that can leak your real IP address even if you use a proxy or VPN
+   f. **X-Client-Data 헤더 제거** 이 기능은 Google Chrome이 버전 및 수정 사항에 대한 정보를 Google 도메인(DoubleClick 및 GoogleAnalytics 포함)으로 전송하는 것을 방지합니다.
 
-   g. _Block Push API_. This feature prevents your browsers from receiving push messages from servers
+3. **궁극의 수준**(이전에는 최고 수준으로 알려졌음)
 
-   h. _Block Location API_. This feature prevents browsers from accessing your GPS data and determining your location
+   a. **추적기 차단**. 이 기능은 온라인 카운터 및 웹 분석 도구로부터 사용자를 보호하기 위해 **AdGuard 추적 보호 필터**를 사용합니다.
 
-   i. _Hide Referer from third parties_. This feature prevents third parties from knowing which websites you visit. It hides the HTTP header that contains the URL of the initial page and replaces it with a default or custom one that you can set
+   b. **URL에서 추적 매개변수 제거**. 이 기능은 **AdGuard URL 추적 필터**를 사용하여 페이지 URL에서 `utm_*` 및 `fb_ref`와 같은 추적 매개 변수를 제거합니다.
 
-   j. _Hide your User-Agent_. This feature removes identifying information from the User-Agent header, which typically includes the name and version of the browser, the operating system, and language settings
+   c. **검색어 숨기기**. 이 기능은 검색 엔진에서 방문한 웹사이트에 대한 검색어를 숨깁니다.
 
-   k. _Remove X-Client-Data header_. This feature prevents Google Chrome from sending its version and modifications information to Google domains (including DoubleClick and Google Analytics)
+   d. _웹사이트에 추적하지 않도록 요청하기_. 이 기능은 사용자가 방문하는 웹사이트에 [Global Privacy Control](https://globalprivacycontrol.org/) 및 [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) 신호를 전송하여 웹 앱이 사용자의 활동 추적을 비활성화하도록 요청합니다.
 
-You can tweak individual settings in _Tracking protection_ and come up with a custom configuration. Every setting has a description that will help you understand its role. [Learn more about what various _Tracking protection_ settings do](/general/stealth-mode) and approach them with caution, as some may interfere with the functionality of websites and browser extensions.
+   e. **서드파티 쿠키 자동 파괴**. 이 기능은 서드파티 쿠키의 유지시간을 180분으로 제한합니다.
+
+   :::caution
+
+   이 기능은 강제 만료 후 모든 타사 쿠키를 삭제합니다. 여기에는 소셜 네트워크 또는 기타 타사 서비스를 통한 로그인도 포함됩니다. 일부 웹사이트에 주기적으로 재로그인해야 하거나 기타 쿠키 관련 문제가 발생할 수 있습니다. 추적 쿠키만 차단하려면 **표준** 보호 수준을 사용하세요.
+
+   :::
+
+   f. **WebRTC 차단**. 이 기능은 프록시나 VPN을 사용하더라도 실제 IP 주소가 유출될 수 있는 WebRTC를 차단합니다.
+
+   g. **Push API 차단**. 이 기능은 브라우저가 서버로부터 푸시 메시지를 수신하지 못하도록 차단합니다.
+
+   h. **Location API 차단**. 이 기능은 브라우저가 사용자의 GPS 데이터에 액세스하여 위치를 파악하는 것을 방지합니다.
+
+   i. **제3자로부터 리퍼러 숨기기**. 이 기능은 사용자가 방문한 웹사이트를 제3자가 알 수 없도록 차단합니다. 초기 페이지의 URL이 포함된 HTTP 헤더를 숨기고 설정할 수 있는 기본 또는 사용자 지정 헤더로 바꿉니다.
+
+   j. **사용자-에이전트 숨기기**. 이 기능은 일반적으로 브라우저의 이름과 버전, 운영 체제 및 언어 설정을 포함하는 사용자-에이전트 헤더에서 식별 정보를 제거합니다.
+
+   k. **X-Client-Data 헤더 제거** 이 기능은 Google Chrome이 버전 및 수정 사항에 대한 정보를 Google 도메인(DoubleClick 및 GoogleAnalytics 포함)으로 전송하는 것을 방지합니다.
+
+**추적 보호**에서 개별 설정을 조정하고 사용자 지정 구성을 만들 수 있습니다. 모든 설정에는 해당 역할을 이해하는 데 도움이 되는 설명이 있습니다. [다양한 **추적 보호** 설정의 기능에 대해 자세히 알아보세요](/general/stealth-mode). 일부 설정은 웹사이트 및 브라우저 확장 프로그램의 기능을 방해할 수 있으므로 신중하게 접근하세요.

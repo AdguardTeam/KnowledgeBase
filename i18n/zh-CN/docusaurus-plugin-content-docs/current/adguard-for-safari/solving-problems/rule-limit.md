@@ -15,7 +15,7 @@ Safari 版 AdGuard 使用内容拦截 API 对 Safari 浏览器中的页面应用
 
 Safari 版 AdGuard 有六种内容拦截器，包括
 
-- AdGuard 常规
+- AdGuard 常用
 - AdGuard 隐私
 - AdGuard 社交
 - AdGuard 安全

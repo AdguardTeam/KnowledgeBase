@@ -5,7 +5,7 @@ sidebar_position: 9
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Mac için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Mac için AdGuard hakkındadır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -161,7 +161,7 @@ HTTP istek parçalanmasının boyutunu ayarlar. Geçerli değerler: 1–1500. Ge
 
 `stealth.antidpi.clienthello.split.fragment.size`
 
-This option specifies the size of TCP packet fragmentation, which helps avoid deep packet inspection. Geçerli değerler: 1–1500. Geçersiz bir boyut belirtilirse, sistem varsayılan değeri kullanır.
+Bu seçenek, derin paket incelemesinden kaçınmaya yardımcı olan TCP paket parçalama boyutunu belirtir. Geçerli değerler: 1–1500. Geçersiz bir boyut belirtilirse, sistem varsayılan değeri kullanır.
 
 `stealth.antidpi.http.space.juggling`
 

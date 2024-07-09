@@ -1,5 +1,5 @@
 ---
-title: Защита от фишинга
+title: Browsing security
 sidebar_position: 3
 ---
 
@@ -15,9 +15,9 @@ sidebar_position: 3
 
 Мы используем протокол [Safe Browsing API версии 2.2](https://code.google.com/p/google-safe-browsing/wiki/Protocolv2Spec) для работы с фильтрами. Этот протокол позволяет сохранить ваши личные данные в полной безопасности. Наш сервер ничего не знает о тех сайтах, которые вы посещаете. Для проверок используются не открытые адреса, а префиксы их хешей.
 
-Приблизительный алгоритм работы антифишингового модуля изображён на рисунке ниже на примере приложения AdGuard для Windows.
+The figure below provides a general understanding of how the Browsing security module works, using AdGuard for Windows as an example.
 
-![Алгоритм работы Защиты от фишинга](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_adguard_for_windows.png)
+![Functioning algorithm of Browsing security module](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_adguard_for_windows.png)
 
 ### Браузерное расширение AdGuard
 
@@ -25,9 +25,9 @@ sidebar_position: 3
 
 Обращаем ваше внимание на то, что мы никогда не получаем никакой информации, которая позволила бы нам определить, какие сайты вы посещаете, и каким-либо образом использовать эти данные.
 
-Приблизительный алгоритм работы Защиты от фишинга изображён на рисунке ниже.
+An approximate algorithm of the functioning of the Browsing security module is shown in the picture below.
 
-![Алгоритм работы Защиты от фишинга в браузерных расширениях AdGuard](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_extension.png)
+![Functioning algorithm of Browsing security module in AdGuard browser extensions.](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_extension.png)
 
 ## Фильтры AdGuard
 
@@ -47,13 +47,13 @@ This filter contains links to pages that could execute malicious code, leading t
 
 Most of the work is automated, so you can be sure that new malware and phishing addresses are added to our database as quickly as possible.
 
-### Сообщество Защиты от фишинга AdGuard
+### AdGuard Browsing security Community
 
-An important tool for maintaining the highest level of filtering is the *AdGuard Browsing Security Community*. Любой пользователь наших продуктов, будь то AdGuard для Windows или браузерное расширение, может стать участником сообщества и помогать нам в составлении фильтров AdGuard.
+An important tool for maintaining the highest level of filtering is the *AdGuard Browsing security Community*. Любой пользователь наших продуктов, будь то AdGuard для Windows или браузерное расширение, может стать участником сообщества и помогать нам в составлении фильтров AdGuard.
 
-In the image below, you can see an algorithm of how Browsing Security Community works:
+In the image below, you can see an algorithm of how Browsing security Community works:
 
-![Как работает сообщество Защиты от фишинга](https://cdn.adtidy.org/public/Adguard/En/Articles/browsing_security_community.png)
+![The way AdGuard Browsing security Community works](https://cdn.adtidy.org/public/Adguard/En/Articles/browsing_security_community.png)
 
 ### Как помочь
 

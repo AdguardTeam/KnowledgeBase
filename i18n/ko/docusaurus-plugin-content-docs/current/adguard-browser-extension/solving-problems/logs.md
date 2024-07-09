@@ -51,6 +51,8 @@ sidebar_position: 1
 
 ## 로그 전송하기
 
+> AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/en/privacy/browser-extension.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+
 로그를 저장했다면, 다음 단계에 따라 개발팀에 제출해 주세요.
 
 1. [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose)에 버그를 제보하세요.

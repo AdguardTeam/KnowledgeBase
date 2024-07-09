@@ -5,36 +5,36 @@ sidebar_position: 2
 
 :::info
 
-本文适用于 Mac 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+本文介绍了 Mac 版的 AdGuard，它是一款多功能广告拦截器，可在系统级别保护设备。 要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)
 
 :::
 
-## How to open app settings
+## 如何打开应用设置
 
 To configure AdGuard for Mac, click the gear icon in the upper right corner of the main window and select _Preferences_.
 
-![Main window \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/main.png)
+![主窗口 \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/main.png)
 
 ## 常规
 
-![General](https://cdn.adtidy.org/content/kb/ad_blocker/mac/general.png)
+![常规](https://cdn.adtidy.org/content/kb/ad_blocker/mac/general.png)
 
-### Do not block search ads and website self-promoting ads
+### 不拦截搜索广告和网站自我推销广告
 
-This feature prevents AdGuard from blocking [search ads and self-promotions on websites](/general/ad-filtering/search-ads). This can be useful, for example, when you’re shopping online and want to see discounts offered by some websites. Instead of adding these websites to the allowlist, you can exclude self-promotions and search ads from filtering.
+此功能可防止 AdGuard 阻止[搜索广告和网站上的自我推销](/general/ad-filtering/search-ads)。 例如，当用户在网上购物时，想要查看某些网站提供的折扣时，该功能就非常有用。 用户可以将自我推销和搜索广告排除在过滤之外，而不是将这些网站添加到白名单中。
 
-### Activate language-specific filters automatically
+### 启动特定语言过滤器
 
-This feature detects the language of the website you’re visiting and automatically activates appropriate filters for more accurate ad blocking. This is especially helpful if you change languages frequently.
+该功能可检测用户访问的网站语言，并自动激活相应的过滤器，以实现更准确的广告拦截。 如果用户经常更换语言，这一功能尤其有用。
 
-### Launch AdGuard at login
+### AdGuard 随系统启动运行
 
-This feature automatically launches AdGuard automatically after you restart your computer. This helps keep AdGuard protection active without having to manually open the app.
+重启电脑后，该功能会自动启动 AdGuard。 这有助于保持 AdGuard 保护处于激活状态，而无需手动打开应用程序。
 
-### Hide menu bar icon
+### 隐藏菜单栏的图标
 
-This feature hides AdGuard’s icon from the menu bar but keeps AdGuard running in the background. If you want to disable AdGuard completely, click _Quit AdGuard_ in the main window menu.
+该功能从菜单栏中隐藏 AdGuard 图标，但会保持 AdGuard 在后台运行。 如果要禁用 AdGuard，请单击主窗口菜单中的「退出 AdGuard」。
 
-### Allowlist
+### 白名单
 
-Websites added to this list aren’t filtered. You can also access allowlisted websites from _User rules_.
+添加到此列表的网站不会被过滤。 用户还可以从「用户规则」转到白名单中的网站。

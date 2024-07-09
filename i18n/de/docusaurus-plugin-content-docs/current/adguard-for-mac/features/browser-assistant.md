@@ -5,59 +5,59 @@ sidebar_position: 8
 
 :::info
 
-Dieser Artikel behandelt AdGuard für Mac, einen multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Dieser Artikel behandelt AdGuard für Mac, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
 
 :::
 
-AdGuard Browser Assistant allows you to manage AdGuard protection directly from your browser.
+Mit dem AdGuard Browser-Assistenten können Sie den AdGuard-Schutz direkt von Ihrem Browser aus verwalten.
 
-![The Assistant window \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_window.png)
+![Das Assistentenfenster \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant_window.png)
 
 ## So funktioniert es
 
-AdGuard Browser Assistant is a browser extension. It allows you to quickly manage the AdGuard app:
+AdGuard Browser-Assistent ist eine Browsererweiterung. Sie ermöglicht Ihnen die schnelle Verwaltung der AdGuard-App:
 
-- Enable or disable protection for a specific website (a toggle under the website name)
-- Pause protection for 30 seconds
-- Disable protection (the pause icon in the upper right corner)
-- Manually block an ad
-- Open the filtering log
-- Report incorrect blocking
-- Open AdGuard settings
-- View website certificate and manage HTTPS filtering (the lock icon next to the website name)
+- Schutz für eine bestimmte Website (ein Kippschalter unter dem Namen der Website) aktivieren oder deaktivieren
+- Schutz für 30 Sekunden unterbrechen
+- Schutz deaktivieren (das Pausensymbol in der oberen rechten Ecke)
+- Werbung manuell blockieren
+- Filter-Protokoll öffnen
+- Fehlerhaftes Sperren melden
+- AdGuard-Einstellungen öffnen
+- Website-Zertifikat anzeigen und HTTPS-Filterung verwalten (das Schloss-Symbol neben dem Website-Namen)
 
 ## AdGuard installieren
 
-When you install AdGuard for Mac, you will be prompted to install Browser Assistant for your default browser. If you skip this step, you can install it later.
+Wenn Sie AdGuard für Mac installieren, werden Sie aufgefordert, den Browser-Assistenten für Ihren Standardbrowser zu installieren. Wenn Sie diesen Schritt überspringen, können Sie den Assistenten später installieren.
 
-**From settings**:
+**In den Einstellungen**:
 
-1. Open the AdGuard menu.
-2. Click the gear icon and select _Preferences_.
-3. Switch to the _Assistant_ tab.
-4. Click _Get the Extension_ next to your default browser.
-5. Install Assistant from your browser’s extension store.
+1. Öffnen Sie das Menü in AdGuard.
+2. Klicken Sie auf das Zahnradsymbol und wählen Sie _Einstellungen_.
+3. Wechseln Sie zum Tab _Assistent_.
+4. Klicken Sie auf _Erweiterung herunterladen_ neben Ihrem Standardbrowser.
+5. Installieren Sie den Assistenten aus dem Erweiterungsstore Ihres Browsers.
 
-![The Assistant tab](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant.png)
+![Der Tab des Assistenten](https://cdn.adtidy.org/content/kb/ad_blocker/mac/assistant.png)
 
-**From the website**:
+**Von der Website**:
 
-1. Open the [Assistant page](https://adguard.com/adguard-assistant/overview.html).
-2. Under your browser name, select _Install_.
-3. Install Assistant from your browser’s extension store.
+1. Öffnen Sie die [Seite des Assistenten](https://adguard.com/adguard-assistant/overview.html).
+2. Wählen Sie unter Ihrem Browsernamen _Installieren_.
+3. Installieren Sie den Assistenten aus dem Erweiterungsstore Ihres Browsers.
 
 :::note
 
-In rare cases, a browser may be incompatible with Assistant. To manage AdGuard from your browser, you can install the legacy Assistant instead.
+In seltenen Fällen kann es vorkommen, dass ein Browser nicht mit dem Assistenten kompatibel ist. Um AdGuard über Ihren Browser zu verwalten, können Sie stattdessen den Assistenten für ältere Browser installieren.
 
 :::
 
 ## Assistent für ältere Browser
 
-The legacy Assistant is the previous version of AdGuard Browser Assistant. It’s a userscript that doesn’t require additional installation. While the legacy Assistant does its job well, it has several drawbacks:
+Der Assistent ist die frühere Version des AdGuard Browser-Assistenten. Es handelt sich um ein Benutzerskript, das keine zusätzliche Installation erfordert. Auch wenn der ältere Assistent seine Aufgabe gut erfüllt, hat er einige Nachteile:
 
-- It has fewer features than the extension version.
-- You have to wait for the userscript to be inserted into a webpage — sometimes it doesn’t load immediately.
-- You can’t hide the Assistant icon on the page.
+- Es hat weniger Funktionen als die Erweiterungsversion.
+- Sie müssen warten, bis das Benutzerskript in eine Webseite eingefügt wird — manchmal wird es nicht sofort geladen.
+- Sie können das Assistentensymbol auf der Seite nicht ausblenden.
 
-We recommend that you use the legacy Assistant only if the new Assistant is not available.
+Wir empfehlen Ihnen, den alten Assistenten nur dann zu verwenden, wenn der neue Assistent nicht verfügbar ist.

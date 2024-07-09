@@ -106,7 +106,7 @@ Host: example.org`
 
 bude převeden na
 
-`GET  /foo/bar/ HTTP/1.1
+`GET /foo/bar/ HTTP/1.1
 Host: example.org`
 
 Tato možnost se použije pouze v případě, že je povolena možnost *Ochrana před DPI* v Režimu utajení.

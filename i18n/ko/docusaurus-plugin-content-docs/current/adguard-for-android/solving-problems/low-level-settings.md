@@ -3,7 +3,7 @@ title: Low-level settings guide
 sidebar_position: 6
 ---
 
-:::info
+:::정보
 
 This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
@@ -61,7 +61,7 @@ Here you can specify the response type for domains blocked by DNS rules based on
 
 이 필드에서 AdGuard가 폴백 DNS 서버를 사용하기 전에 선택한 DNS 서버의 응답을 기다리는 시간(밀리초)을 지정할 수 있습니다. 이 필드를 채우지 않거나 잘못된 값을 입력하면 5000이라는 값이 사용됩니다.
 
-#### Blocked response TTL
+#### 차단된 TTL 응답
 
 Here you can specify the TTL (time to live) value that will be returned in response to a blocked request.
 
@@ -93,6 +93,14 @@ If this setting is enabled, AdGuard will use fallback upstreams for all domains.
 
 If this setting is enabled, AdGuard will test DNS upstreams before adding or updating custom DNS servers.
 
+#### Filter secure DNS
+
+If this setting is on, AdGuard will apply all enabled DNS filters and DNS user rules to encrypted DNS-over-HTTPS (DoH) traffic and not only to plain DNS. DoH traffic mostly comes from Chrome and other browsers that have a *Secure DNS* (or similar) setting. You can use *Filter secure DNS* in two different modes:
+
+- **Filter on the fly**. In this mode, AdGuard applies all enabled DNS filters and DNS user rules to DoH traffic but doesn’t redirect it to the local DNS proxy. If a DNS server is specified in the browser’s settings, this server will handle the DoH traffic for this browser
+
+- **Redirect to DNS proxy**. In this mode, AdGuard applies all enabled DNS filters and DNS user rules to DoH traffic by redirecting it to the local DNS proxy. The DNS server specified in the AdGuard’s DNS settings will handle all DoH traffic
+
 ### Filtering
 
 #### Capture HAR
@@ -101,7 +109,7 @@ If this setting is enabled, AdGuard will capture HAR files. It will create a dir
 
 Use it only for debugging purposes!
 
-### HTTPS filtering
+### HTTPS 필터링
 
 #### Encrypted Client Hello
 

@@ -1,5 +1,5 @@
 ---
-title: Как пожаловаться на некорректную работу сайта
+title: How to report websites and apps
 sidebar_position: 3
 ---
 
@@ -53,7 +53,7 @@ You can help us by filling in a form with examples of ads you have encountered. 
 
 ### Mac {#mac}
 
-- Откройте [Браузерный помощник AdGuard](/adguard-for-mac/browser-assistant) и нажмите **Сообщить о проблеме**:
+- Open [AdGuard Browser Assistant](/adguard-for-mac/features/browser-assistant) and hit **Report an issue**:
 
 ![mac *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/guides/browser-assistant-mac.png)
 
@@ -131,7 +131,7 @@ You can help us by filling in a form with examples of ads you have encountered. 
 4. Если отключение всех фильтров не дало никаких результатов, примените правило **@@||example.com^$document,extension**, где **example.com** — это пример названия сайта, которое нужно заменить на ваш собственный вариант;
 5. Если проблема не решилась, перейдите к разделу **Антитрекинг**.
 
-### **Антитрекинг**
+### **Защита от трекинга**
 
 1. Отключите **Антитрекинг**;
 2. Если это решило проблему, включите модуль и поочерёдно отключите опции **Антитрекинга** c проверкой результата. Это необходимо для того, чтобы определить, какие именно настройки приводят к некорректной блокировке;

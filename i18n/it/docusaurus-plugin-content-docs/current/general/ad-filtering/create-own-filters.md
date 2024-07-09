@@ -51,6 +51,8 @@ For example:
 - `http://ads.example.org.us/ad1.gif`
 - `http://example.com/redirect/http://ads.example.org/`
 
+By default, such rules do not work for document requests. This means that the `||example.org^` rule will block a request made to `example.org` when you try to navigate to this domain from another website, but if you type `example.org` into the address bar and try to navigate to it, the website will open. To block the document request, you will need to use a rule with the [`$document` modifier](#document-modifier): `||example.org^$document`.
+
 ### Blocking exact address
 
 ![Blocking exact address](https://cdn.adtidy.org/content/kb/ad_blocker/general/1_exact_address.svg)
@@ -233,7 +235,7 @@ Rules with wildcard for TLD are not supported by AdGuard Content Blocker.
 
 - `||example.com/ads/*` — a simple rule, which corresponds to addresses like `http://example.com/ads/banner.jpg` and even `http://subdomain.example.com/ads/otherbanner.jpg`.
 
-- `||example.org^$third-party` —  this rule blocks third-party requests to `example.org` and its subdomains.
+- `||example.org^$third-party` — this rule blocks third-party requests to `example.org` and its subdomains.
 
 - `@@||example.com$document` — general exception rule. It completely disables filtering for `example.com` and all subdomains. There is a number of modifiers which can be used in exception rules. For more details, please follow the link [below](#exception-modifiers).
 
@@ -270,11 +272,11 @@ The following modifiers are the most simple and frequently used. Basically, they
 | [$domain](#domain-modifier)           |            ✅             |                ✅                |               ✅               | ✅ [*](#domain-modifier-limitations) | ✅ [*](#domain-modifier-limitations) |                 ✅                  |
 | [$header](#header-modifier)           |            ✅             |                ⏳                |               ⏳               |                  ❌                  |                  ❌                  |                 ❌                  |
 | [$important](#important-modifier)     |            ✅             |                ✅                |               ✅               |                  ✅                  |                  ✅                  |                 ❌                  |
-| [$match-case](#match-case-modifier)   |            ✅             |                ✅                |               ✅               |                  ⏳                  |                  ⏳                  |                 ✅                  |
-| [$method](#method-modifier)           |            ⏳             |                ✅                |               ✅               |                  ❌                  |                  ❌                  |                 ❌                  |
+| [$match-case](#match-case-modifier)   |            ✅             |                ✅                |               ✅               |                  ✅                  |                  ✅                  |                 ✅                  |
+| [$method](#method-modifier)           |            ✅             |                ✅                |               ✅               |                  ❌                  |                  ❌                  |                 ❌                  |
 | [$popup](#popup-modifier)             |           ✅ *            |                ✅                |               ✅               |                 ✅ *                 |                 ✅ *                 |                 ❌                  |
 | [$third-party](#third-party-modifier) |            ✅             |                ✅                |               ✅               |                  ✅                  |                  ✅                  |                 ✅                  |
-| [$to](#to-modifier)                   |            ⏳             |                ✅                |               ✅               |                  ❌                  |                  ❌                  |                 ❌                  |
+| [$to](#to-modifier)                   |            ✅             |                ✅                |               ✅               |                  ❌                  |                  ❌                  |                 ❌                  |
 
 :::note
 
@@ -315,7 +317,7 @@ Apps in the modifier value cannot have a wildcard, e.g. `$app=com.*.music`. Rule
 :::info Compatibility
 
 - Only AdGuard for Windows, Mac, Android are technically capable of using rules with `$app` modifier.
-- On Windows the process name is case-insensitive starting with AdGuard for Windows versions that have CoreLibs v1.12 under the hood.
+- On Windows the process name is case-insensitive starting with AdGuard for Windows with [CoreLibs][] v1.12 or later.
 
 :::
 
@@ -323,7 +325,7 @@ Apps in the modifier value cannot have a wildcard, e.g. `$app=com.*.music`. Rule
 
 `$denyallow` modifier allows to avoid creating additional rules when it is needed to disable a certain rule for specific domains. `$denyallow` matches only target domains and not referrer domains.
 
-Adding this modifier to a rule is equivalent to excluding the domains by the rule's matching pattern or to adding the corresponding exclusion rules. To add multiple domains to one rule, use the `|`  character as a separator.
+Adding this modifier to a rule is equivalent to excluding the domains by the rule's matching pattern or to adding the corresponding exclusion rules. To add multiple domains to one rule, use the `|` character as a separator.
 
 **Examples**
 
@@ -448,9 +450,9 @@ Safari does not support the simultaneous use of allowed and disallowed domains, 
 
 :::info Compatibility
 
-Rules with regular expressions in the `$domain` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs v1.11 or later**.
+Rules with regular expressions in the `$domain` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.11 or later.
 
-In AdGuard for Windows, Mac and Android **running CoreLibs v1.12 or later** the `$domain` modifier can be alternatively spelled as `$from`.
+In AdGuard for Windows, Mac and Android with [CoreLibs][] v1.12 or later the `$domain` modifier can be alternatively spelled as `$from`.
 
 :::
 
@@ -483,7 +485,7 @@ The modifier part, `":" h_value`, may be omitted. In that case, the modifier mat
 
 :::info Compatibility
 
-Rules with the `$header` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.11 or later.
+Rules with the `$header` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.11 or later.
 
 :::
 
@@ -517,7 +519,7 @@ This modifier defines a rule which applies only to addresses that match the case
 
 :::info Compatibility
 
-Rules with the `$match-case` are supported by AdGuard for iOS and AdGuard for Safari, **running SafariConverterLib v2.0.43 or later**.
+Rules with the `$match-case` are supported by AdGuard for iOS and AdGuard for Safari with SafariConverterLib v2.0.43 or later.
 
 All other products already support this modifier.
 
@@ -542,7 +544,7 @@ Rules with mixed negated and not negated values are considered invalid. So, for 
 
 :::info Compatibility
 
-Rules with `$method` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.12 or later and AdGuard Browser Extension for Chrome, Firefox, and Edge with TSUrlFilter v2.1.1 or later.
+Rules with `$method` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.12 or later and AdGuard Browser Extension for Chrome, Firefox, and Edge with [TSUrlFilter][] v2.1.1 or later.
 
 :::
 
@@ -596,7 +598,7 @@ You may use a shorter name (alias) instead of using the full modifier name: `$3p
 
 #### **`$to`** {#to-modifier}
 
-`$to` limits the rule scope to requests made **to** the specified domains and their subdomains. To add multiple domains to one rule, use the `|`  character as a separator.
+`$to` limits the rule scope to requests made **to** the specified domains and their subdomains. To add multiple domains to one rule, use the `|` character as a separator.
 
 **Examples**
 
@@ -612,7 +614,7 @@ You may use a shorter name (alias) instead of using the full modifier name: `$3p
 
 :::info Compatibility
 
-Rules with the `$to` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.12 or later and AdGuard Browser Extension with TSUrlFilter v2.1.3 or later.
+Rules with the `$to` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.12 or later and AdGuard Browser Extension with [TSUrlFilter][] v2.1.3 or later.
 
 :::
 
@@ -674,8 +676,8 @@ If this modifier is used with an exclusion rule (`@@`), it completely disables b
 
 - `||example.com^$document` blocks HTML document request to `example.com` with a blocking page.
 - `||example.com^$document,redirect=noopframe` redirects HTML document request to `example.com` to an empty html document.
-- `||example.com^$document,removeparam=test` removes `test` query parameter from HTML document request to  `example.com`.
-- `||example.com^$document,replace=/test1/test2/` replaces `test1` with `test2` in  HTML document request to `example.com`.
+- `||example.com^$document,removeparam=test` removes `test` query parameter from HTML document request to `example.com`.
+- `||example.com^$document,replace=/test1/test2/` replaces `test1` with `test2` in HTML document request to `example.com`.
 
 :::note
 
@@ -900,9 +902,7 @@ $extension="userscript name\, with \"quote\""
 :::info Compatibility
 
 - Only AdGuard for Windows, Mac, Android are technically capable of using rules with `$extension` modifier.
-- `$extension` modifier with specific userscript name is supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.13 or later**.
-
-Rules with `$extension` modifier with specific userscript name are supported by AdGuard for Windows, Mac and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.13 or later.
+- Rules with `$extension` modifier with specific userscript name are supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.13 or later.
 
 :::
 
@@ -953,7 +953,7 @@ The list of the available modifier options:
 
 :::note
 
-Blocking cookies and removing tracking parameters is achieved by using rules with [`$cookie`](#cookie-modifier) and [`$removeparam`](#removeparam-modifier) modifiers. Exception rules with only `$stealth` modifier will not do those things. If you want to completely disable all Stealth Mode features for a given domain, you need to include all three modifiers: `@@||example.org^$stealth,removeparam,cookie`
+Blocking cookies and removing tracking parameters is achieved by using rules with the [`$cookie`](#cookie-modifier), [`$urltransform`](#urltransform-modifier) and [`$removeparam`](#removeparam-modifier) modifiers. Exception rules that contain only the `$stealth` modifier will not do these things. If you want to completely disable all Stealth mode features for a given domain, you must include all three modifiers: `@@||example.org^$stealth,removeparam,cookie`.
 
 :::
 
@@ -967,7 +967,7 @@ Blocking cookies and removing tracking parameters is achieved by using rules wit
 :::info Compatibility
 
 - Stealth Mode is available in AdGuard for Windows, Mac, and Android, and AdGuard Browser Extension. All other products will ignore the rules with `$stealth` modifier.
-- Rules with `$stealth` modifier with specific options are supported by AdGuard for Windows, Mac, and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.10 or later.
+- Rules with `$stealth` modifier with specific options are supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.10 or later.
 
 :::
 
@@ -1082,6 +1082,7 @@ These modifiers are able to completely change the behavior of basic rules.
 | [$inline-font](#inline-font-modifier)       |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                  |
 | [$inline-script](#inline-script-modifier)   |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                  |
 | [$jsonprune](#jsonprune-modifier)           |            ✅             |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                  |
+| [$xmlprune](#xmlprune-modifier)             |            ✅             |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                  |
 | [$network](#network-modifier)               |            ✅             |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                  |
 | [$permissions](#permissions-modifier)       |            ✅             |                ⏳                |               ⏳               |             ❌              |               ❌               |                 ❌                  |
 | [$redirect](#redirect-modifier)             |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                  |
@@ -1090,6 +1091,7 @@ These modifiers are able to completely change the behavior of basic rules.
 | [$removeheader](#removeheader-modifier)     |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                  |
 | [$removeparam](#removeparam-modifier)       |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                  |
 | [$replace](#replace-modifier)               |            ✅             |                ❌                |               ✅               |             ❌              |               ❌               |                 ❌                  |
+| [$urltransform](#urltransform-modifier)     |            ✅             |                ❌                |               ❌               |             ❌              |               ❌               |                 ❌                  |
 | [noop](#noop-modifier)                      |            ✅             |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                  |
 | [$empty 👎](#empty-modifier "deprecated")    |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                  |
 | [$mp4 👎](#mp4-modifier "deprecated")        |            ✅             |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                  |
@@ -1099,6 +1101,7 @@ These modifiers are able to completely change the behavior of basic rules.
 - ✅ — fully supported
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
 <!-- - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions -->
+- ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product
 - ❌ — not supported
 - 👎 — deprecated; still supported but will be removed in the future
 
@@ -1186,7 +1189,7 @@ every time AdGuard encounters a cookie called `NAME` in a request to `example.or
 
 **Escaping special characters**
 
-If regular expression `name` is used for matching, two characters must be escaped: comma `,` and dollar sign `$`. Use  backslash `\` escape each of them. For example, escaped comma looks like this: `\,`.
+If regular expression `name` is used for matching, two characters must be escaped: comma `,` and dollar sign `$`. Use backslash `\` escape each of them. For example, escaped comma looks like this: `\,`.
 
 **Examples**
 
@@ -1386,7 +1389,7 @@ preroll.ts
 
 :::info Compatibility
 
-Rules with the `$hls` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.10 or later**.
+Rules with the `$hls` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.10 or later.
 
 :::
 
@@ -1410,7 +1413,7 @@ The `$inline-font` modifier is designed to block inline fonts embedded into the 
 
 `$jsonprune` rules modify the response to a matching request by removing JSON items that match a modified [JSONPath](https://goessner.net/articles/JsonPath/) expression. They do not modify responses which are not valid JSON documents.
 
-In AdGuard for Windows, Mac, and Android **running CoreLibs v1.11 or later**, `$jsonprune` also supports modifying JSONP (padded JSON) documents.
+In AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.11 or later, `$jsonprune` also supports modifying JSONP (padded JSON) documents.
 
 **Syntax**
 
@@ -1438,10 +1441,10 @@ Keep in mind, though, that all JSONPath implementations have unique features/qui
 
 **Exceptions**
 
-Basic URL exceptions shall not disable rules with `$jsonprune` modifier. They can be disabled as described below:
+Basic URL exceptions shall not disable rules with the `$jsonprune` modifier. They can be disabled as described below:
 
 - `@@||example.org^$jsonprune` disables all `$jsonprune` rules for responses from URLs matching `||example.org^`.
-- `@@||example.org^$jsonprune=text` disable all `$jsonprune` rules with the value of the `$jsonprune` modifier equal to `text` for responses from URLs matching `||example.org^`.
+- `@@||example.org^$jsonprune=text` disables all `$jsonprune` rules with the value of the `$jsonprune` modifier equal to `text` for responses from URLs matching `||example.org^`.
 
 `$jsonprune` rules can also be disabled by `$document`, `$content` and `$urlblock` exception rules.
 
@@ -1547,7 +1550,7 @@ When multiple `$jsonprune` rules match the same request, they are sorted in lexi
 
 **Nested JSONPath expressions**
 
-In AdGuard for Windows, Mac and Android **running CoreLibs v1.11 or later**, JSONPath expressions may be used as keys in filter expressions.
+In AdGuard for Windows, Mac and Android with [CoreLibs][] v1.11 or later, JSONPath expressions may be used as keys in filter expressions.
 
 - `||example.org^$jsonprune=\$.elems[?(has "\$.a.b.c")]` removes all children of `elems` which have a property selectable by the JSONPath expression `$.a.b.c`.
 
@@ -1624,14 +1627,252 @@ In AdGuard for Windows, Mac and Android **running CoreLibs v1.11 or later**, JSO
 
 :::caution Restrictions
 
-- `$jsonprune` rules are only compatible with these specific modifiers: `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
-- `$jsonprune` rules do not apply if the size of the original response is more than 10 MB.
+- `$jsonprune` rules are only compatible with these modifiers: `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
+- `$jsonprune` rules do not apply if the size of the original response is greater than 10 MB.
 
 :::
 
 :::info Compatibility
 
-Rules with the `$jsonprune` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.10 or later**.
+Rules with the `$jsonprune` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.10 or later.
+
+:::
+
+#### **`$xmlprune`** {#xmlprune-modifier}
+
+`$xmlprune` rules modify the response to a matching request by removing XML items that match an [XPath 1.0](https://www.w3.org/TR/1999/REC-xpath-19991116/) expression. The expression must return a [node-set](https://www.w3.org/TR/1999/REC-xpath-19991116/#node-sets). `$xmlprune` rules do not modify responses which are not well-formed XML documents.
+
+**Syntax**
+
+- `||example.org^$xmlprune=expression` removes items that match the XPath expression `expression` from the response.
+
+Due to the way rule parsing works, the characters `$` and `,` must be escaped with `\` inside `expression`.
+
+**Exceptions**
+
+Basic URL exceptions shall not disable rules with the `$xmlprune` modifier. They can be disabled as described below:
+
+- `@@||example.org^$xmlprune` disables all `$xmlprune` rules for responses from URLs matching `||example.org^`.
+- `@@||example.org^$xmlprune=text` disables all `$xmlprune` rules with the value of the `$xmlprune` modifier equal to `text` for responses from URLs matching `||example.org^`.
+
+`$xmlprune` rules can also be disabled by `$document`, `$content` and `$urlblock` exception rules.
+
+:::note
+
+When multiple `$xmlprune` rules match the same request, they are applied in lexicographical order.
+
+:::
+
+**Examples**
+
+- `||example.org^$xmlprune=/bookstore/book[position() mod 2 = 1]` removes odd-numbered books from the bookstore.
+
+<details>
+<summary>Input</summary>
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bookstore>
+
+  <book category="cooking">
+    <title lang="en">Everyday Italian</title>
+    <author>Giada De Laurentiis</author>
+    <year>2005</year>
+    <price>30.00</price>
+  </book>
+
+  <book category="children">
+    <title lang="en">Harry Potter</title>
+    <author>J K. Rowling</author>
+    <year>2005</year>
+    <price>29.99</price>
+  </book>
+
+  <book category="web">
+    <title lang="en">XQuery Kick Start</title>
+    <author>James McGovern</author>
+    <author>Per Bothner</author>
+    <author>Kurt Cagle</author>
+    <author>James Linn</author>
+    <author>Vaidyanathan Nagarajan</author>
+    <year>2003</year>
+    <price>49.99</price>
+  </book>
+
+  <book category="web">
+    <title lang="en">Learning XML</title>
+    <author>Erik T. Ray</author>
+    <year>2003</year>
+    <price>39.95</price>
+  </book>
+
+</bookstore>
+```
+
+</details>
+
+<details>
+<summary>Output</summary>
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bookstore>
+
+
+
+<book category="children">
+  <title lang="en">Harry Potter</title>
+  <author>J K. Rowling</author>
+  <year>2005</year>
+  <price>29.99</price>
+</book>
+
+
+
+<book category="web">
+  <title lang="en">Learning XML</title>
+  <author>Erik T. Ray</author>
+  <year>2003</year>
+  <price>39.95</price>
+</book>
+
+</bookstore>
+```
+
+</details>
+
+- `||example.org^$xmlprune=/bookstore/book[year = 2003]` removes books from the year 2003 from the bookstore.
+
+<details>
+<summary>Input</summary>
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bookstore>
+
+  <book category="cooking">
+    <title lang="en">Everyday Italian</title>
+    <author>Giada De Laurentiis</author>
+    <year>2005</year>
+    <price>30.00</price>
+  </book>
+
+  <book category="children">
+    <title lang="en">Harry Potter</title>
+    <author>J K. Rowling</author>
+    <year>2005</year>
+    <price>29.99</price>
+  </book>
+
+  <book category="web">
+    <title lang="en">XQuery Kick Start</title>
+    <author>James McGovern</author>
+    <author>Per Bothner</author>
+    <author>Kurt Cagle</author>
+    <author>James Linn</author>
+    <author>Vaidyanathan Nagarajan</author>
+    <year>2003</year>
+    <price>49.99</price>
+  </book>
+
+  <book category="web">
+    <title lang="en">Learning XML</title>
+    <author>Erik T. Ray</author>
+    <year>2003</year>
+    <price>39.95</price>
+  </book>
+
+</bookstore>
+```
+
+</details>
+
+<details>
+<summary>Output</summary>
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bookstore>
+
+<book category="cooking">
+  <title lang="en">Everyday Italian</title>
+  <author>Giada De Laurentiis</author>
+  <year>2005</year>
+  <price>30.00</price>
+</book>
+
+<book category="children">
+  <title lang="en">Harry Potter</title>
+  <author>J K. Rowling</author>
+  <year>2005</year>
+  <price>29.99</price>
+</book>
+
+
+
+
+
+</bookstore>
+```
+
+</details>
+
+- `||example.org^$xmlprune=//*/@*` removes all attributes from all elements.
+
+<details>
+<summary>Input</summary>
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bookstore location="cy">
+
+  <book category="cooking">
+    <title lang="en">Everyday Italian</title>
+    <author>Giada De Laurentiis</author>
+    <year>2005</year>
+    <price>30.00</price>
+  </book>
+
+</bookstore>
+```
+
+</details>
+
+<details>
+<summary>Output</summary>
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bookstore>
+
+  <book>
+    <title>Everyday Italian</title>
+    <author>Giada De Laurentiis</author>
+    <year>2005</year>
+    <price>30.00</price>
+  </book>
+
+</bookstore>
+```
+
+</details>
+
+:::caution Restrictions
+
+- `$xmlprune` rules are only compatible with these modifiers: `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
+- `$xmlprune` rules do not apply if the size of the original response is greater than 10 MB.
+
+:::
+
+:::info Compatibility
+
+Rules with the `$xmlprune` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.15 or later.
 
 :::
 
@@ -1706,7 +1947,7 @@ In case if multiple `$permissions` rules match a single request, AdGuard will ap
 
 :::info Compatibility
 
-Rules with the `$permissions` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**.
+Rules with the `$permissions` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.11 or later.
 
 :::
 
@@ -1787,7 +2028,7 @@ If a request matches multiple `$referrerpolicy` rules not disabled by exceptions
 
 :::info Compatibility
 
-Rules with the `$referrerpolicy` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.12 or later**.
+Rules with the `$referrerpolicy` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.12 or later.
 
 :::
 
@@ -1919,7 +2160,7 @@ Rules with `$removeparam` modifier are intended to strip query parameters from r
 
 :::note Compatibility
 
-Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac and, Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.7 or later and AdGuard Browser Extension v3.6 or later.
+Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac and, Android with [CoreLibs][] v1.7 or later and AdGuard Browser Extension v3.6 or later.
 
 :::
 
@@ -2020,8 +2261,8 @@ With these rules, specified UTM parameters will be removed from any request save
 :::info Compatibility
 
 - Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac, and Android and AdGuard Browser Extension for Chrome, Firefox, and Edge.
-- `$removeparam` syntax for regular expressions is supported by AdGuard Browser Extension v4.0 and AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.8 or later**.
-- `POST` request types are supported only by AdGuard for Windows, Mac, and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.10 or later.
+- `$removeparam` syntax for regular expressions is supported by AdGuard Browser Extension v4.0 and AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.8 or later.
+- `POST` request types are supported only by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.10 or later, and AdGuard Browser Extension with [TSWebExtension][] v0.4.6 or later.
 
 :::
 
@@ -2096,6 +2337,99 @@ Rules with `$replace` modifier can be used [**only in trusted filters**](#truste
 :::info Compatibility
 
 Rules with `$replace` modifier are supported by AdGuard for Windows, Mac, and Android and AdGuard Browser Extension for Firefox. Such rules do not work in extensions for other browsers because they are unable to modify content on the network level.
+
+:::
+
+#### **`urltransform`** {#urltransform-modifier}
+
+The `$urltransform` rules allow you to modify the request URL by replacing the text matched by the regular expression.
+
+**Features**
+
+- `$urltransform` rules apply to any request URL text.
+- `$urltransform` rules can also **modify the query part** of the URL.
+- `$urltransform` will not be applied if the original URL is blocked by other rules.
+- `$urltransform` will be applied before `$removeparam` rules.
+
+The `$urltransform` value can be empty for exception rules.
+
+**Multiple rules matching a single request**
+
+If multiple `$urltransform` rules match a single request, we will apply each of them. **The order is defined alphabetically.**
+
+**Syntax**
+
+`$urltransform` syntax is similar to replacement with regular expressions [in Perl](http://perldoc.perl.org/perlrequick.html#Search-and-replace).
+
+```text
+urltransform = "/" regexp "/" replacement "/" modifiers
+```
+
+- **`regexp`** — a regular expression.
+- **`replacement`** — a string that will be used to replace the string corresponding to `regexp`.
+- **`modifiers`** — a regular expression flags. For example, `i` — insensitive search, or `s` — single-line mode.
+
+In the `$urltransform` value, two characters must be escaped: the comma `,` and the dollar sign `$`. Use the backslash character `\` for this. For example, an escaped comma looks like this: `\,`.
+
+**Examples**
+
+```adblock
+||example.org^$urltransform=/(pref\/).*\/(suf)/\$1\$2/i
+```
+
+There are three parts in this rule:
+
+- `regexp` — `(pref\/).*\/(suf)`;
+- `replacement` — `\$1\$2` where `$` is escaped;
+- `modifiers` — `i` for insensitive search.
+
+**Multiple `$urltransform` rules**
+
+1. `||example.org^$urltransform=/X/Y/`
+2. `||example.org^$urltransform=/Z/Y/`
+3. `@@||example.org/page/*$urltransform=/Z/Y/`
+
+- Both rule 1 and 2 will be applied to all requests sent to `example.org`.
+- Rule 2 is disabled for requests matching `||example.org/page/`, **but rule 1 still works!**
+
+**Re-matching rules after transforming the URL**
+
+If the `$urltransform` rule is applied to a request, all the rules will be re-evaluated against the new URL.
+
+E.g., with the following rules:
+
+```adblock
+||example.com^$urltransform=/firstpath/secondpath/
+||example.com/secondpath^
+```
+
+the request to `https://example.com/firstpath` will be blocked before it is sent.
+
+However, `$urltransform` rules will **not be re-applied** in this case to avoid infinite recursion, e.g., with the following rules:
+
+```adblock
+||example.com/firstpath^$urltransform=/firstpath/secondpath/
+||example.com/secondpath^$urltransform=/secondpath/firstpath/
+```
+
+the request to `https://example.com/fisrtpath` will be transformed to `https://example.com/secondpath` and the second rule will not be applied.
+
+**Disabling `$urltransform` rules**
+
+- `@@||example.org^$urltransform` will disable all `$urltransform` rules matching `||example.org^`.
+- `@@||example.org^$urltransform=/Z/Y/` will disable the rule with `$urltransform=/Z/Y/` for any request matching `||example.org^`.
+
+`$urltransform` rules can also be disabled by `$document` and `$urlblock` exception rules. But basic exception rules without modifiers do not do that. For example, `@@||example.com^` will not disable `$urltransform=/X/Y/` for requests to **example.com**, but `@@||example.com^$urlblock` will.
+
+:::caution Restrictions
+
+Rules with the `$urltransform` modifier can be used [**only in trusted filters**](#trusted-filters).
+
+:::
+
+:::info Compatibility
+
+Rules with the `$urltransform` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.15 or later.
 
 :::
 
@@ -2182,7 +2516,7 @@ The base priority of any rule is 1. If the calculated priority is a floating-poi
 
 :::info Compatibility
 
-- The concept of priority has been introduced in tsurlfilter v2.1.0 and CoreLibs v1.13. Before that AdGuard didn't have any special priority computation algorithm and collisions handling could be different depending on AdGuard product and version.
+- The concept of priority has been introduced in [TSUrlFilter][] v2.1.0 and [CoreLibs][] v1.13. Before that AdGuard didn't have any special priority computation algorithm and collisions handling could be different depending on AdGuard product and version.
 - AdGuard for iOS, Safari, and AdGuard Content Blocker rely on the browsers implementation and they cannot follow the rules specified here.
 
 :::
@@ -2208,9 +2542,10 @@ Modifier aliases (`1p`, `3p`, etc.) are not included in these categories, howeve
 
 When dealing with a negated domain, app, method, or content-type, we add **1 point** for the existence of the modifier itself, regardless of the quantity of negated domains or content-types. This is because the rule's scope is already infinitely broad. Put simply, by prohibiting multiple domains, content-types, methods or apps, the scope of the rule becomes only minimally smaller.
 
-#### Defined content-type modifiers, defined methods, defined headers, $popup, special exceptions {#priority-category-2}
+#### Defined content-type modifiers, defined methods, defined headers, $all, $popup, specific exceptions {#priority-category-2}
 
 All allowed content types:
+
 <!-- Please keep them sorted -->
 
 - [`$document`](#document-modifier),
@@ -2226,11 +2561,17 @@ All allowed content types:
 - [`$websocket`](#websocket-modifier),
 - [`$xmlhttprequest`](#xmlhttprequest-modifier);
 
-This also includes rules that implicitly add the modifier `$document`:
+This also includes rules that implicitly add all content types:
+
+- [`$all`](#all-modifier);
+
+Or rules that implicitly add the modifier `$document`:
 
 - [`$popup`](#popup-modifier);
 
-Or special exceptions that implicitly add `$document,subdocument`:
+Or some specific exceptions that implicitly add `$document,subdocument`:
+
+<!-- Please keep them sorted -->
 
 - [`$content`](#content-modifier),
 - [`$elemhide`](#elemhide-modifier),
@@ -2245,7 +2586,11 @@ Or allowed methods via [`$method`](#method-modifier).
 
 Or rules with [`$header`](#header-modifier).
 
-The presence of any content-type modifiers adds `(50 + 50 / N)`, where `N` is the number of modifiers present, for example: `||example.com^$image,script` will add `50 + 50 / 2 = 50 + 25 = 75` to the total weight of the rule. The `$popup` also belongs to this category, because it implicitly adds the modifier `$document`. Similarly, specific exceptions add `$document,subdocument`.
+The presence of any content-type modifiers adds `(50 + 50 / N)`, where `N` is the number of modifiers present, for example: `||example.com^$image,script` will add `50 + 50 / 2 = 50 + 25 = 75` to the total weight of the rule.
+
+The `$all` also belongs to this category, because it implicitly adds all content type modifiers, e.g., `$document,subdocument,image,script,media,<etc>` + `$popup`.
+
+The `$popup` also belongs to this category, because it implicitly adds the modifier `$document`. Similarly, specific exceptions add `$document,subdocument`.
 
 If there is a `$method` modifier in the rule with allowed methods it adds `(50 + 50 / N)`, where `N` is the number of methods allowed, for example: `||example.com^$method=GET|POST|PUT` will add `50 + 50 / 3 = 50 + 16.6 = 67` to the total weight of the rule.
 
@@ -2305,59 +2650,41 @@ The [`$replace`](#replace-modifier) modifier takes precedence over all blocking 
 
 #### Examples
 
-**Example 1**
+1. `||example.com^`
 
-`||example.com^`
+    Weight of the rule without modifiers: `1`.
 
-Weight of the rule without modifiers: `1`.
+1. `||example.com^$match-case`
 
-**Example 2**
+    Rule weight: base weight + weight of the modifier from [category 1](#priority-category-1): `1 + 1 = 2`.
 
-`||example.com^$match-case`
+1. `||example.org^$removeparam=p`
 
-Weight of the rule: base weight + weight of the modifier from [category 1](#priority-category-1): `1 + 1 = 2`.
+    Rule weight: base weight + 0, since $removeparam [is not involved](#priority-category-extra) in the priority calculation: `1 + 0 = 1`.
 
-**Example 3**
+1. `||example.org^$document,redirect=nooptext`
 
-`||example.org^$removeparam=p`
+    Rule weight: base weight + allowed content type, [category 3](#priority-category-3) + $redirect from [category 6](#priority-category-6): `1 + (100 + 100 / 1) + 1000 = 1201`.
 
-Weight of the rule: base weight + 0, since $removeparam [is not involved](#priority-category-extra) in the priority calculation: `1 + 0 = 1`.
+1. `@@||example.org^$removeparam=p,document`
 
-**Example 4**
+    Rule weight: base weight + allowlist rule, [category 5](#priority-category-5) + 0 because $removeparam [is not involved](#priority-category-extra) in the priority calculation + allowed content type, [category 2](#priority-category-2): `1 + 10000 + 0 + (50 + 50 / 1) = 10101`.
 
-`||example.org^$document,redirect=nooptext`
+1. `@@||example.com/ad/*$domain=example.org|example.net,important`
 
-Rule weight: base weight + allowed content type, [category 3](#priority-category-3) + $redirect from [category 6](#priority-category-6): `1 + (100 + 100 / 1) + 1000 = 1201`.
+    Rule weight: base weight + allowlist rule, [category 5](#priority-category-5) + important rule, [category 7](#priority-category-7) + allowed domains, [category 3](#priority-category-3): `1 + 10000 + 1000000 + (100 + 100 / 2) = 1010152`.
 
-**Example 5**
+1. `@@||example.org^$document` without additional modifiers is an alias for `@@||example.com^$elemhide,content,jsinject,urlblock,extension`
 
-`@@||example.org^$removeparam=p,document`
+    Rule weight: base weight + specific exceptions, [category 4](#priority-category-4) + two allowed content types (document and subdocument), [category 2](#priority-category-2): `1 + 10000 * 4 + (50 + 50 / 2) = 40076`.
 
-Rule weight: base weight + allowlist rule, [category 5](#priority-category-5) + 0 because $removeparam [is not involved](#priority-category-extra) in the priority calculation + allowed content type, [category 2](#priority-category-2): `1 + 10000 + 0 + (50 + 50 / 1) = 10101`.
+1. `*$script,domain=a.com,denyallow=x.com|y.com`
 
-**Example 6**
+    Rule weight: base weight + allowed content type, [category 2](#priority-category-2) + allowed domain, [category 3](#priority-category-3) + denyallow, [category 1](#priority-category-1): `1 + (50 + 50/1) + (100 + 100 / 1) + 1 = 303`.
 
-`@@||example.com/ad/*$domain=example.org|example.net,important`
+1. `||example.com^$all` — alias to `||example.com^$document,subdocument,image,script,media,etc. + $popup`
 
-Rule weight: base weight + allowlist rule, [category 5](#priority-category-5) + important rule, [category 7](#priority-category-7) + allowed domains, [category 3](#priority-category-3): `1 + 10000 + 1000000 + (100 + 100 / 2) = 1010152`.
-
-**Example 7**
-
-`@@||example.org^$document` without additional modifiers is an alias for `@@||example.com^$elemhide,content,jsinject,urlblock,extension`
-
-Rule weight: base weight + specific exceptions, [category 4](#priority-category-4) + two allowed content types (document and subdocument), [category 2](#priority-category-2): `1 + 10000 * 4 + (50 + 50 / 2) = 40076`.
-
-**Example 8**
-
-`*$script,domain=a.com,denyallow=x.com|y.com`
-
-Rule weight: base weight + allowed content type, [category 2](#priority-category-2) + allowed domain, [category 3](#priority-category-3) + denyallow, [category 1](#priority-category-1): `1 + (50 + 50/1) + (100 + 100 / 1) + 1 = 303`.
-
-**Example 9**
-
-`||example.com^$all` (alias to `||example.com^$document,subdocument,image,script,media,etc. + $popup`)
-
-Rule weight: base weight + allowed content types, [category 2](#priority-category-2): `1 + (50 + 50/12) = 55`.
+    Rule weight: base weight + popup ([category 1](#priority-category-1)) + allowed content types ([category 2](#priority-category-2)): `1 + 1 + (50 + 50/12) = 55`.
 
 ## Non-basic rules {#non-basic-rules}
 
@@ -2753,7 +3080,7 @@ The `:matches-css()` pseudo-class allows to match the element by its current sty
 - `target` — optional, standard or extended CSS selector, can be skipped for checking *any* element
 - `pseudo-element` — optional, valid standard pseudo-element, e.g. `before`, `after`, `first-line`, etc.
 - `property` — required, a name of CSS property to check the element for
-- `pattern` —  required, a value pattern that is using the same simple wildcard matching as in the basic url filtering rules OR a regular expression. For this type of matching, AdGuard always does matching in a case-insensitive manner. In the case of a regular expression, the pattern looks like `/regexp/`.
+- `pattern` — required, a value pattern that is using the same simple wildcard matching as in the basic url filtering rules OR a regular expression. For this type of matching, AdGuard always does matching in a case-insensitive manner. In the case of a regular expression, the pattern looks like `/regexp/`.
 
 **Special characters escaping and unescaping**
 
@@ -3385,7 +3712,7 @@ or
 
 :::info Compatibility
 
-The `:contains()` pseudo-class is supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.13 or later**.
+The `:contains()` pseudo-class is supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.13 or later.
 
 :::
 
@@ -3430,7 +3757,7 @@ We **strongly recommend** using [scriptlets](#scriptlets) instead of JavaScript 
 **Syntax**
 
 ```text
-rule = [domains]  "#%#" script
+rule = [domains] "#%#" script
 ```
 
 - **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules](#cosmetic-elemhide-rules).
@@ -3489,7 +3816,7 @@ AdGuard supports a lot of different scriptlets. In order to achieve cross-blocke
 **Syntax**
 
 ```text
-rule = [domains]  "#%#//scriptlet(" scriptletName arguments ")"
+rule = [domains] "#%#//scriptlet(" scriptletName arguments ")"
 ```
 
 - **`scriptletName`** — required, a name of the scriptlet from AdGuard's Scriptlets library
@@ -3667,7 +3994,7 @@ where `pattern` is pretty much the same as [`pattern` of the basic rules](#basic
 
 :::info Compatibility
 
-Rules with the `$url` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**.
+Rules with the `$url` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.11 or later.
 
 :::
 
@@ -3815,7 +4142,7 @@ The `!#else` directive is supported by the [FiltersDownloader][gh-filters-downlo
 
 It is already supported for filter lists compiled by the [FiltersRegistry][], but it still may not be supported by AdGuard products when adding a filter list with `!#else` as a custom one. The following products will support it in the mentioned versions or later:
 
-- AdGuard for Windows, Mac, and Android, running CoreLibs v1.13;
+- AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.13;
 - AdGuard Browser Extension v4.2.208;
 - AdGuard v1.11.16 for Safari.
 
@@ -3948,6 +4275,8 @@ Used to specify the platforms to apply the rules. List of existing platforms and
 - `ios` — AdGuard for iOS — [https://filters.adtidy.org/ios/filters/2.txt](https://filters.adtidy.org/ios/filters/2.txt)
 
 - `ext_chromium` — AdGuard Browser Extension for Chrome — [https://filters.adtidy.org/extension/chromium/filters/2.txt](https://filters.adtidy.org/extension/chromium/filters/2.txt)
+
+- `ext_chromium_mv3` — AdGuard Browser Extension for Chrome MV3 — [https://filters.adtidy.org/extension/chromium-mv3/filters/2.txt](https://filters.adtidy.org/extension/chromium-mv3/filters/2.txt)
 
 - `ext_ff` — AdGuard Browser Extension for Firefox — [https://filters.adtidy.org/extension/firefox/filters/2.txt](https://filters.adtidy.org/extension/firefox/filters/2.txt)
 
@@ -4122,3 +4451,6 @@ The following scriptlets also may be used for debug purposes:
 [sec-fetch-dest-header]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest
 [gh-filters-downloader]: https://github.com/AdguardTeam/FiltersDownloader
 [FiltersRegistry]: https://github.com/AdguardTeam/FiltersRegistry
+[CoreLibs]: https://adguard.com/en/blog/introducing-corelibs.html
+[TSUrlFilter]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter#tsurlfilter
+[TSWebExtension]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tswebextension#tswebextension

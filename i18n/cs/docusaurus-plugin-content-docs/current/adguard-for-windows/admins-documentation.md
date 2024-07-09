@@ -7,7 +7,9 @@ Tato stránka popisuje funkce a podrobnosti centrální správy zásad a předvo
 
 ## 1. Stažení MSI {#msi-download}
 
-Stáhnout [AdGuard MSI x86](https://cdn.adtidy.org/distr/windows/AdGuard_x86.msi) Stáhnout [AdGuard MSI x64](https://cdn.adtidy.org/distr/windows/AdGuard_x64.msi)
+Stáhněte [AdGuard MSI x86](https://cdn.adtidy.org/distr/windows/AdGuard_x86.msi)
+
+Stáhněte [AdGuard MSI x64](https://cdn.adtidy.org/distr/windows/AdGuard_x64.msi)
 
 ## 2. Konfigurace nastavení pro vaši síť {#settings-configuring}
 
@@ -39,9 +41,9 @@ Pokud chcete nainstalovat AdGuard do počítače se systémem Windows 7 ujistět
 
 Pokud jste nainstalovali AdGuard pro Windows ze souboru MSI, nebude AdGuard automaticky aktualizován. Povolení ručních aktualizací:
 
-- ve verzích vydaných po v7.16 smažte parametr `ForbidCheckUpdates` nebo nastavte jeho hodnotu na `NO` (nerozlišuje velká a malá písmena) v registru pod `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard`.
+- Ve verzích vydaných po v7.16 smažte parametr `ForbidCheckUpdates` nebo nastavte jeho hodnotu na `NO` (nerozlišuje velká a malá písmena) v registru pod `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard`.
 
-- ve verzi 7.16 a starších verzích nastavte parametr `AllowCheckUpdates` pro klíč `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard` v OS x86 na hodnotu `YES` (nerozlišuje velká a malá písmena) nebo `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` v OS x64. Jakákoli jiná hodnota nebo žádná hodnota tohoto parametru zakáže automatické aktualizace.
+- Ve verzi 7.16 a starších verzích nastavte parametr `AllowCheckUpdates` pro klíč `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard` v OS x86 na hodnotu `YES` (nerozlišuje velká a malá písmena) nebo `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` v OS x64. Jakákoli jiná hodnota nebo žádná hodnota tohoto parametru zakáže automatické aktualizace.
 
 Upozorňujeme, že taková instalace aplikace a ruční aktualizace se nedoporučuje a může způsobit technické problémy.
 

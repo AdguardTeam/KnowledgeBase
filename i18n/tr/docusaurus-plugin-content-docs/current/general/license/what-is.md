@@ -3,8 +3,6 @@ title: AdGuard lisansı nedir?
 sidebar_position: 1
 ---
 
-## AdGuard lisansı nedir?
-
 A license is a permission to use the AdGuard product, provided in accordance with the [End User License Agreement](https://adguard.com/eula.html). Bir e-posta adresine bağlıysa, AdGuard lisansları kullanıcının [AdGuard hesabında](https://my.adguard.com/) bulunabilir.
 
 ## Ne tür AdGuard lisansları vardır

@@ -59,7 +59,7 @@ V tomto modulu můžete
 - aktivovat zvukové oznámení,
 - souhlasit s odesláním anonymních informací na server AdGuardu souvisejících se zabezpečením, které nám pomohou udržovat databázi nebezpečných webů aktuální.
 
-![Browsing Security \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/browsing-security.png)
+![Browsing security \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/browsing-security.png)
 
 Pokud se chcete dozvědět více o Bezpečném prohlížení, přečtěte si [tento článek](/general/browsing-security).
 
@@ -83,7 +83,7 @@ V modulu Rodičovská ochrana můžete povolit _Bezpečné vyhledávání_, spra
 
 ![Parental Control \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/parental-control.png)
 
-### Browser Assistant
+### Asistent prohlížeče
 
 ![Browser Assistant \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 

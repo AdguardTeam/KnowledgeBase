@@ -1,5 +1,5 @@
 ---
-title: 报告网站
+title: How to report websites and apps
 sidebar_position: 3
 ---
 
@@ -53,7 +53,7 @@ You can help us by filling in a form with examples of ads you have encountered. 
 
 ### Mac 系统 {#mac}
 
-- 打开 [AdGuard 浏览器助手](/adguard-for-mac/browser-assistant)，点击「**报告问题**」：
+- Open [AdGuard Browser Assistant](/adguard-for-mac/features/browser-assistant) and hit **Report an issue**:
 
 ![mac *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/guides/browser-assistant-mac.png)
 

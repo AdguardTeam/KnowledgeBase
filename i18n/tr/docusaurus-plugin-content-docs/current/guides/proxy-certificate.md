@@ -3,31 +3,31 @@ title: Proxy sertifikası nasıl yüklenir
 sidebar_position: 2
 ---
 
-Our desktop apps, AdGuard for Windows and AdGuard for Mac, can be used as a proxy for other devices. This means that you can route other devices’ traffic through AdGuard (all traffic or traffic of specific apps and browsers).
+Masaüstü uygulamalarımız olan Windows için AdGuard ve Mac için AdGuard, diğer cihazlar için proxy olarak kullanılabilir. This means that you can route other devices’ traffic through AdGuard (all traffic or traffic of specific apps and browsers).
 
 :::not
 
-These devices must be in the same network as the PC or Mac with AdGuard.
+Bu cihazların AdGuard kurulu PC veya Mac ile aynı ağda olması gerekir.
 
 :::
 
-HTTP traffic will be filtered in any case, but for AdGuard to be able to filter HTTPS traffic you need to manually install the AdGuard certificate on the connected device.
+HTTP trafiği her durumda filtrelenecektir, ancak AdGuard'ın HTTPS trafiğini filtreleyebilmesi için AdGuard sertifikasını bağlı cihaza elle yüklemeniz gerekir.
 
 ## How to download and install the certificate
 
-Depending on the operating system of the device whose traffic you want to filter, follow one of these instructions:
+Trafiğini filtrelemek istediğiniz cihazın işletim sistemine bağlı olarak, aşağıdaki talimatlardan birini izleyin:
 
 ### Windows {#windows}
 
-1. Note the IP address of your desktop computer with AdGuard installed.
+1. AdGuard'ın kurulu olduğu masaüstü bilgisayarınızın IP adresini not edin.
 
-1. Make sure that AdGuard protection is enabled. On a Windows computer, check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings. For Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
+1. AdGuard korumasının etkin olduğundan emin olun. Windows bilgisayarda, ayarlarının **Ağ** öğesine **AdGuard'ı HTTP proxy olarak kullan** kutusunu işaretleyin. Mac için, **Ayarlar** → **Tercihler** → **Ağ** öğesine gidin ve **HTTP proxy** öğesini etkinleştirin.
 
-1. On the same computer with AdGuard, follow this link: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. AdGuard ile aynı bilgisayarda şu bağlantıyı izleyin: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
-1. **İndir** düğmesine tıklayın. If the download doesn’t start, try another browser, for example Firefox.
+1. **İndir** düğmesine tıklayın. İndirme işlemi başlamazsa, Firefox gibi başka bir tarayıcı deneyin.
 
-1. Transfer the downloaded **cert.cer** file to the Windows device whose traffic you want to route through AdGuard. You can use a USB cable, Bluetooth, or cloud services to do this.
+1. İndirilen **cert.cer** dosyasını, trafiğini AdGuard üzerinden yönlendirmek istediğiniz Windows cihazına aktarın. Bunu yapmak için bir USB kablosu, Bluetooth veya bulut hizmetleri kullanabilirsiniz.
 
 1. On that device, press **Win**, type `Manage computer certificates` and press **Enter**.
 
@@ -63,13 +63,13 @@ Depending on the operating system of the device whose traffic you want to filter
 
 1. AdGuard'ın kurulu olduğu masaüstü bilgisayarınızın IP adresini not edin.
 
-1. Make sure that AdGuard protection is enabled. On a Windows computer, check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings. For Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
+1. AdGuard korumasının etkin olduğundan emin olun. Windows bilgisayarda, ayarlarının **Ağ** öğesine **AdGuard'ı HTTP proxy olarak kullan** kutusunu işaretleyin. Mac için, **Ayarlar** → **Tercihler** → **Ağ** öğesine gidin ve **HTTP proxy** öğesini etkinleştirin.
 
-1. Follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
+1. Web tarayıcısı kullanarak bu bağlantıyı izleyin: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
-1. **İndir** düğmesine tıklayın. If the download doesn’t start, try another browser, for example Firefox.
+1. **İndir** düğmesine tıklayın. İndirme işlemi başlamazsa, Firefox gibi başka bir tarayıcı deneyin.
 
-1. Transfer the downloaded **cert.cer** file to the Mac device whose traffic you want to route through AdGuard. You can use a USB cable, Bluetooth, or cloud services to do this.
+1. İndirilen **cert.cer** dosyasını, trafiğini AdGuard üzerinden yönlendirmek istediğiniz Mac cihazına aktarın. Bunu yapmak için bir USB kablosu, Bluetooth veya bulut hizmetleri kullanabilirsiniz.
 
 1. İndirilen sertifika dosyasına çift tıklayın.
 
@@ -77,7 +77,7 @@ Depending on the operating system of the device whose traffic you want to filter
 
 1. Go to **Spotlight** (the search icon in the top right corner), type in `Keychain Access`, and then select **Keychain Access** from the search results.
 
-1. Under *System*, highlight the certificate that you added.
+1. *Sistem* altında, eklediğiniz sertifikayı vurgulayın.
 
 1. Right-click it and select **Get Info** from the context menu.
 
@@ -95,17 +95,17 @@ Depending on the operating system of the device whose traffic you want to filter
 
 1. AdGuard'ın kurulu olduğu masaüstü bilgisayarınızın IP adresini not edin.
 
-1. Make sure that AdGuard protection is enabled. On a Windows computer, check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings. For Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
+1. AdGuard korumasının etkin olduğundan emin olun. Windows bilgisayarda, ayarlarının **Ağ** öğesine **AdGuard'ı HTTP proxy olarak kullan** kutusunu işaretleyin. Mac için, **Ayarlar** → **Tercihler** → **Ağ** öğesine gidin ve **HTTP proxy** öğesini etkinleştirin.
 
 1. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
-1. **İndir** düğmesine tıklayın. If the download doesn’t start, try another browser, for example Firefox.
+1. **İndir** düğmesine tıklayın. İndirme işlemi başlamazsa, Firefox gibi başka bir tarayıcı deneyin.
 
-1. Transfer the downloaded **cert.cer** file to the Android device whose traffic you want to route through AdGuard. You can use a USB cable, Bluetooth, or cloud services to do this.
+1. İndirilen **cert.cer** dosyasını, trafiğini AdGuard üzerinden yönlendirmek istediğiniz Android cihazına aktarın. Bunu yapmak için bir USB kablosu, Bluetooth veya bulut hizmetleri kullanabilirsiniz.
 
 1. Locate and tap the previously downloaded **cert.cer** certificate to open the file and follow the instructions to install the certificate.
 
-1. Android devices do not trust certificates by default, so there will be a warning — you can ignore it. On some phones you may be asked to enter your device password. Do so, then press **OK**. The certificate will be installed.
+1. Android devices do not trust certificates by default, so there will be a warning — you can ignore it. On some phones you may be asked to enter your device password. Do so, then press **OK**. Sertifika yüklenecektir.
 
 1. Open advanced settings of the active Wi-Fi network.
 
@@ -115,13 +115,13 @@ Depending on the operating system of the device whose traffic you want to filter
 
 1. AdGuard'ın kurulu olduğu masaüstü bilgisayarınızın IP adresini not edin.
 
-1. Make sure that AdGuard protection is enabled. On a Windows computer, check the box **Use AdGuard as an HTTP proxy** in the **Network** tab of its settings. For Mac, go to **Settings** → **Preferences** → **Network** and enable **HTTP proxy**.
+1. AdGuard korumasının etkin olduğundan emin olun. Windows bilgisayarda, ayarlarının **Ağ** öğesine **AdGuard'ı HTTP proxy olarak kullan** kutusunu işaretleyin. Mac için, **Ayarlar** → **Tercihler** → **Ağ** öğesine gidin ve **HTTP proxy** öğesini etkinleştirin.
 
 1. From the computer with AdGuard, follow this link using a web browser: [http://local.adguard.org/cert](http://local.adguard.org/cert).
 
-1. **İndir** düğmesine tıklayın. If the download doesn’t start, try another browser, for example Firefox.
+1. **İndir** düğmesine tıklayın. İndirme işlemi başlamazsa, Firefox gibi başka bir tarayıcı deneyin.
 
-1. Transfer the downloaded **cert.cer** file to the iOS device whose traffic you want to route through AdGuard. You can use a USB cable, Bluetooth, or cloud services to do this.
+1. Transfer the downloaded **cert.cer** file to the iOS device whose traffic you want to route through AdGuard. Bunu yapmak için bir USB kablosu, Bluetooth veya bulut hizmetleri kullanabilirsiniz.
 
 1. On your iOS device, open **Settings** → **Profile Downloaded** and tap **Install** in the top right corner. Şifrenizi girin ve yüklemeyi onaylayın. Tap **Done**.
 

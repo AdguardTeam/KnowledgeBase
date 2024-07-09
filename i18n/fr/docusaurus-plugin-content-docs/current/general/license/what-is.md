@@ -1,9 +1,7 @@
 ---
-title: What is an AdGuard license?
+title: Qu'est-ce qu'une licence AdGuard ?
 sidebar_position: 1
 ---
-
-## What is an AdGuard license?
 
 Une licence est une autorisation d'utiliser le produit AdGuard, fournie conformément au [Contrat de licence utilisateur final](https://adguard.com/eula.html). Si elles sont liées à une adresse e-mail, les licences AdGuard peuvent être trouvées dans le [compte AdGuard](https://my.adguard.com/) de l'utilisateur.
 

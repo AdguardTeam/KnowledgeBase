@@ -1,7 +1,13 @@
 ---
 title: 통합 모드 (이전 버전)
-sidebar_position: 3
+sidebar_position: 4
 ---
+
+:::정보
+
+브라우저만 보호하는 AdGuard 브라우저 확장 프로그램에 관한 문서입니다. 기기 전체를 보호하려면 [AdGuard 앱을 다운로드하세요](https://agrd.io/download-kb-adblock).
+
+:::
 
 ## 통합 모드가 뭔가요?
 
@@ -13,6 +19,6 @@ sidebar_position: 3
 
 ![AdGuard 브라우저 어시스턴트 *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/ad_blocker_browser_extension_assistant.png)
 
-AdGuard 브라우저 어시스턴트는 통합 모드와 작동 방식이 비슷하지만, 훨씬 가볍고 중복 기능이 없으며 데스크톱 앱을 방해하지 않는 새로운 브라우저 확장 프로그램입니다. [Windows](/adguard-for-windows/browser-assistant) 또는 [Mac용 브라우저 어시스턴트](/adguard-for-mac/browser-assistant)에 대한 자세한 내용을 읽어보거나 [웹사이트에서 다운로드](https://adguard.com/adguard-assistant/overview.html)할 수 있습니다.
+AdGuard 브라우저 어시스턴트는 통합 모드와 작동 방식이 비슷하지만, 훨씬 가볍고 중복 기능이 없으며 데스크톱 앱을 방해하지 않는 새로운 브라우저 확장 프로그램입니다. You can [read more about Browser Assistant for Windows](/adguard-for-windows/browser-assistant) or [Mac](/adguard-for-mac/features/browser-assistant), or [download it from our website](https://adguard.com/adguard-assistant/overview.html).
 
 AdGuard 브라우저 어시스턴트는 모든 주요 브라우저에서 사용할 수 있습니다.

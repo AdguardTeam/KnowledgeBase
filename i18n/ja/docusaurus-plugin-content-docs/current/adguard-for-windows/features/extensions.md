@@ -1,5 +1,5 @@
 ---
-title: Extensions
+title: 拡張機能
 sidebar_position: 3
 ---
 

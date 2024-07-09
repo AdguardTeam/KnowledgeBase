@@ -5,158 +5,166 @@ sidebar_position: 1
 
 :::info
 
-Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
+This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. Chcete-li se podívat, jak to funguje, [stáhněte si AdGuard pro Android](https://agrd.io/download-kb-adblock)
 
 :::
 
-AdGuard pro Mac si jako jeden z našich hlavních produktů zaslouží podrobného průvodce. Rozhodli jsme se pomoci novým uživatelům a upozornit na některé jemnější, ale méně zřejmé body, které mohly uniknout i zkušeným fanouškům AdGuardu pro Mac.
+AdGuard for Mac, as one of our main staples, merits a full how-to guide. We decided to help new users out and to highlight some finer, but less obvious points that even seasoned AdGuard for Mac fans might have been missing.
 
-AdGuard pro Mac je samostatný blokátor reklam pro macOS. Zatímco AdGuard pro Safari má [omezené možnosti blokování reklam](https://adguard.com/en/blog/youtube-ads-in-safari-explained.html) kvůli blokování obsahu v Safari, AdGuard pro Mac je plnohodnotný a může svým uživatelům nabídnout více. Provedeme vás hlavními funkcemi.
+AdGuard for Mac is a standalone ad blocker for macOS. While AdGuard for Safari is [limited in ad-blocking capabilities](https://adguard.com/en/blog/youtube-ads-in-safari-explained.html) due to Safari Content Blocking, AdGuard for Mac is full-fledged and can offer more to its users. Let us walk you through the main features.
 
-## Domovská stránka
+## Home panel
 
-![Home panel *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Mainscreen.png)
+![Home panel \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Mainscreen.png)
 
-Při spuštění se nejprve zobrazí obrazovka s velkým přepínačem zapnutí/vypnutí. Níže jsou zobrazeny různé statistiky (blokované reklamy, blokované slídiče, ušetřená data) od instalace nebo od posledního obnovení statistik.
+The first thing you see upon startup will be a screen with a big On/Off toggle. Below are shown various stats (ads blocked, trackers blocked, data saved) since the installation or since the last stats reset.
 
-Chcete-li začít konfigurovat AdGuard pro Mac, klikněte na ozubené kolečko v pravém horním rohu okna a vyberte možnost "Předvolby".
+To start configuring AdGuard for Mac, you need to click the gear in the upper right corner of the window and select "Preferences".
 
-## Obecné předvolby
+## General Preferences
 
 ![General](https://cdn.adtidy.org/content/kb/ad_blocker/mac/General.jpg)
 
-Popisy pod názvy možností se zdají být srozumitelné, ale přesto:
+Descriptions under option titles seem self-explanatory, but still:
 
-**Automaticky aktivovat jazykově specifické filtry** Po zapnutí této možnosti nebudete muset při návštěvě cizí webové stránky ručně vybírat všechny filtry, což vám ušetří čas.
+**Activate language-specific filters automatically**
+Enabling this option, you won't have to manually choose all the filters when visiting a foreign website, saving you some time.
 
-**Spustit AdGuard při přihlášení** Jednoduchá a pohodlná funkce, se kterou se nemusíte starat o to, zda máte nebo nemáte zapnutý blokátor reklam, a jen mít jistotu, že jsou reklamy vždy blokovány.
+**Launch AdGuard at login**
+A simple and convenient feature with which you don't have to worry whether or not you have your ad blocker turned on, and just be sure that ads are always blocked.
 
-**Neblokovat reklamy ve vyhledávání a vlastní propagaci** Tato možnost může být užitečná pro online nakupující: místo přidání všech svých oblíbených e-shopů a stránek do seznamu povolených můžete jednoduše vyloučit [vlastní propagace a reklamy ve vyhledávání](/general/ad-filtering/search-ads) z filtrování. AdGuard je automaticky detekuje a nechá je být, zatímco odstraní všechny ostatní reklamy.
+**Do not block search ads and websites' self-promotion**
+This option might be useful to online shoppers: instead of adding all your favorite e-shops and sites to the Allowlist, you can simply exclude [self-promos and search ads](/general/ad-filtering/search-ads) from filtering. AdGuard will automatically detect those and let them be, while removing everything else ad-like.
 
-**Skrýt ikonu v panelu nabídek** Pokud ikonu v panelu nabídek vidět nechcete, existuje možnost ji skrýt. Nemusíte se však obávat: i když ji z panelu nabídek odstraníte, AdGuard bude nadále běžet na pozadí.
+**Hide menu bar icon**
+If you don't want to see the menu bar icon, there is an option to hide it. But don't worry: even if you remove it from the menu bar, AdGuard will continue to run in the background.
 
-Z téhož okna máte přístup k výše zmíněnému seznamu povolených, do kterého můžete přidat webové stránky, které si nepřejete, aby AdGuard filtroval. Stačí kliknout na příslušné tlačítko v dolní části okna.
+From this same window you can access the above-mentioned Allowlist, to which you can add websites you do not wish AdGuard to filter. Just click the corresponding button located at the bottom of the window.
 
 ## Filtry
 
 ![Filters](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Filters.jpg)
 
-Hlavní hnací silou modulu pro blokování reklam jsou filtry. Chcete-li pochopit, jak filtrování funguje, seznamte se s naším [obsáhlým článkem](https://adguard.com/en/blog/how-ad-blocking-is-done.html). Seznamy filtrů jsou v podstatě soubory pravidel napsané ve speciálním jazyce a blokátor reklam je interpretem těchto pravidel, který je následně implementuje. Výsledkem je, že se vám na webových stránkách přestanou zobrazovat reklamy.
+Filters are the main driving force behind the Ad blocker module. To understand how filtering works, get acquainted with our [comprehensive article](https://adguard.com/en/blog/how-ad-blocking-is-done.html). But in essence, filter lists are sets of rules written in a special language, and your ad blocker is an interpreter of these rules who then implements them. As a result, you stop seeing ads on your web pages and life gets lots better.
 
-Některé seznamy filtrů (Základní filtr AdGuardu, Filtr obtěžování, EasyList atd.) jsou předinstalovány, zatímco jiné specifické seznamy přizpůsobené vašim preferencím lze stáhnout dodatečně a přidat do programu.
+Some filter lists (AdGuard’s Base filter, Annoyances filter, EasyList, etc.) are pre-installed, while other specific ones, adapted to your preferences, can be downloaded additionally and added to your program.
 
-Kromě obecnějších a univerzálně použitelných filtrů (jako je Základní filtr) poskytuje AdGuard rozsáhlé množství filtrů pro každou příležitost:
+Aside from the more general and universally applicable filters (like Base filter), AdGuard provides an extensive quantity of filters for every occasion:
 
-- filtry zaměřené na prevenci sledování (jako je filtr Ochrany sledování),
-- jazykově specifické filtry reklam, které blokují obsah ve vybraném jazyce,
-- filtr Sociálních médií, který odstraňuje tlačítka "To se mi líbí" a "Sdílet",
-- filtr Obtěžování pro upozornění na soubory cookie, vyskakovací okna na stránce a další podobné,
-- a dokonce i filtr, který některé reklamy odblokovává, místo aby je blokoval — filtr pro reklamy ve vyhledávání a sebepropagaci.
+- filters aimed at tracking prevention (like Tracking Protection filter),
+- language-specific ad filters that block content in a selected language,
+- Social media filter that removes "Like" and "Share" buttons,
+- Annoyances filter for cookie warnings, in-page pop-ups and others of the same ilk,
+- and even a filter that unblocks some ads instead of blocking them — Filter for search ads and self-promotions.
 
-Filtry AdGuardu jsou automaticky aktualizovány. Naši vývojáři je vytvářejí na základě zpětné vazby od uživatelů. Ostatním uživatelům AdGuardu (a výhledově i sobě) můžete kdykoli pomoci odesláním hlášení přímo z aplikace Asistent (je to opravdu praktické, o Asistentovi si povíme více dále) nebo z [webové stránky](https://agrd.io/report). Pokud se chcete dozvědět více o filtrech AdGuardu, zde je [několik informací](/general/ad-filtering/adguard-filters).
+AdGuard filters are automatically updated. Our developers create them all based on user feedback received. You can always help other AdGuard users (and yourself, in perspective) by sending us reports right from the app's Assistant (it's really handy, we'll tell you more about the Assistant further on), or from the [website](https://agrd.io/report). If you wish to know more about AdGuard filters, here is [some info](/general/ad-filtering/adguard-filters).
 
 ## Uživatelská pravidla
 
 ![User rules](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Filters.jpg)
 
-Další důležitou součástí modulu pro blokování reklam jsou jeho uživatelská pravidla. Pokud máte nějaké zkušenosti s kódováním a chcete si vytvořit vlastní pravidla, která by byla vhodnější než standardní filtry, které jsou již k dispozici, můžete si to vyzkoušet. Syntaxe, kterou AdGuard používá pro svá pravidla filtrování, je založena na syntaxi jakéhokoli jiného rozšíření pro blokování reklam, ale s významnými doplňky, které rozšiřují jeho možnosti. Celý proces psaní pravidel ve všech jeho nuancích je popsán v těchto obsáhlých návodech, takže pokud si chcete napsat nějaká vlastní pravidla a ověřit si, jak moc jste zdatní kodéři, stačí postupovat podle kroků, které jsme popsali v [tomto článku](/general/ad-filtering/create-own-filters).
+Another vital part of the Ad Blocker module are its User rules. If you have some coding experience and would like to create your own rules that would be a better custom fit than the standard filters already available, then you can try your hand at this. The syntax AdGuard uses for its filtering rules is based on that of any other ad blocking extension, but with considerable additions, extending its possibilities. The whole process of rule-writing in all its nuances is described in these comprehensive instructions, so if you want to write some custom rules and check how much of a coder you are, just follow the steps we described [in this article](/general/ad-filtering/create-own-filters).
 
 ## DNS
 
 ![DNS](https://cdn.adtidy.org/content/kb/ad_blocker/mac/DNS.jpg)
 
-DNS filtrování je jednou z nejužitečnějších funkcí, díky níž je veškerý provoz DNS šifrován. Pokud používáte výchozí DNS server poskytovaný poskytovatelem internetových služeb (ISP), je pravděpodobné, že vaše přenosy DNS nejsou šifrované a jsou náchylné k odposlechu a zcizení.
+DNS filtering is one of the most useful features, thanks to which all your DNS traffic is encrypted. But if you're using the default DNS server provided by your ISP, your DNS traffic is likely not encrypted and vulnerable to snooping and hijacking.
 
-Na panelu DNS můžete vybrat DNS servery od známých poskytovatelů DNS nebo přidat vlastní DNS servery. Také můžete přidávat domény do seznamu DNS blokování nebo seznamu povolených a přidávat složitá pravidla pomocí syntaxe pravidel DNS. Nakonec můžete [přidat DNS filtry podle vlastního výběru](https://filterlists.com).
+In the DNS panel you can select the DNS servers from known DNS providers or even add custom DNS servers. Also you can add domains to DNS blocklist or allowlist and add complicated rules using DNS rule syntax. Finally, you can [add DNS filters of your choice](https://filterlists.com).
 
 ## Režim utajení
 
 ![Stealth Mode](https://cdn.adtidy.org/content/kb/ad_blocker/mac/StealthMode.jpg)
 
-Tento modul je velmi užitečný nástroj, který vám pomůže chránit vaše soukromí před webovými stránkami, které se o vás snaží uchovávat takové informace, jako je vaše IP adresa, parametry počítače, nastavení prohlížeče a dokonce i úvodní stránka, ze které jste byli přesměrováni, nemluvě o obsahu košíku, pokud mluvíme o webových obchodech. Pokud vás tento seznam informací, které mohou být sdíleny s pochybnými třetími stranami nepřiměje k zamyšlení, pak bychom mohli dodat, že ve většině případů získají také takové osobní údaje, jako je váš věk, roční příjem, zdravotní historie, fyzická adresa a jména vašich dětí. Režim utajení nejlépe odstraňuje nežádoucí soubory cookies nebo tajné vkládání sledovacích parametrů do prohlížeče.
+This module is a very useful tool that will help you maintain your privacy from websites that try to retain such info about you as your IP address, computer parameters, browser settings and even the initial page from which you were redirected, not to mention cart contents if we speak of web stores. If this list of info potentially to be shared with shady third parties doesn't make you think twice, then might we add that in most cases they will also get such personal data as your age, yearly income, medical history, physical address and your kids' names. Eliminating such things as unwanted cookies or clandestine insertion of tracking parameters into your browser is what Stealth Mode does best.
 
-Režim utajení obsahuje širokou škálu možností, které zajišťují jeho flexibilní konfiguraci. Jsou rozděleny do několika kategorií a pro nepřipraveného uživatele se mnohé z nich budou zdát nepřehledné a možná i složité. U každé možnosti jsme uvedli nápovědu, abychom tento nedostatek napravili — nápověda se zobrazí, když najedete na ikonu s otazníkem. Pokud se chcete o celém konceptu dozvědět více, doporučujeme vám přejít na [tento článek](/general/stealth-mode).
+Stealth Mode contains a wide range of options, which ensure its flexible configuration. They are divided into several categories, and for an unprepared user many of them will seem confusing and maybe even complicated. We provided each option with a hint to make up for the deficiency — hints appear when you hover over the icon with a question mark. If you still wish to know more about the whole concept, we encourage you to proceed to [this article](/general/stealth-mode).
 
 ## Bezpečné prohlížení
 
 ![Security](https://cdn.adtidy.org/content/kb/ad_blocker/mac/BrowsingSecurity.jpg)
 
-Dále máme panel Zabezpečení, kde se nachází modul známý také jako Bezpečné prohlížení. Jedná se o ochranu před škodlivými a phishingovými webovými stránkami.
+Next we have the Security panel, where a module also known as Browsing Security is located. What it does is protection from malicious and phishing websites.
 
 :::note
 
-AdGuard není antivirus, ale zcela jiný program. Zobrazí vám varování, pokud se chystáte přejít na infikovanou doménu, ale nemůže vám zabránit ve stahování podezřelých souborů nebo vám pomoci vypořádat se s již existujícími viry. Phishing je velmi častý internetový podvod, jehož cílem je krádež osobních údajů (hesel, údajů o bankovních účtech atd.). Provádí se pomocí falešných webových stránek napodobujících oblíbené webové stránky nebo skutečné služby, jako jsou webové obchody nebo sociální sítě. Mnoho phishingových webových stránek má adresy URL, které se od skutečných liší jen několika symboly. Pokud uživatel zadá své údaje na takovém webu, určitě se dostanou do nesprávných rukou.
+AdGuard is not an antivirus, but an entirely different program. It will show you a warning if you are about to go onto an infected domain, but it cannot stop you from downloading anything suspicious or help you deal with already existing viruses.
+Phishing is a very common web fraud aimed at stealing personal data (passwords, bank account details, etc.). It is carried out using fake web pages mimicking popular websites or real services, such as web stores or social networks. Many phishing websites have URLs that only differ from the real ones in just a few symbols to put you off your guard. If a user enters their details on such a website, they’ll definitely end up in the wrong hands.
 
 :::
 
-Bezpečné prohlížení poskytuje silnou ochranu před takovými incidenty. Zároveň se nikam nepřenášejí osobní údaje uživatele a servery AdGuardu nevědí, které webové stránky uživatel navštěvuje, protože bezpečnostní kontrola se neprovádí prostřednictvím otevřené webové adresy (URL), ale pomocí hash prefixů (hash je určitá datová struktura, díky níž je každá adresa přidaná do základu jednoznačná).
+Browsing Security gives strong protection against such incidents. At the same time, the user’s personal information is not transferred anywhere, and AdGuard servers do not know which websites the user is visiting, because the security check is not performed via open web address (URL) but through hash prefixes (hash is a certain data structure that renders each address added to the base unambiguous).
 
-Některé webové stránky nejsou samy o sobě škodlivé, ale mohou obsahovat prvky, které do jejich struktury zabudovaly jiné webové stránky. Na rozdíl od pluginů prohlížeče kontroluje modul Bezpečné prohlížení každý objekt zabudovaný do jakékoli webové stránky, čímž zajišťuje maximální ochranu.
+Some web pages are not malicious themselves, but they may contain elements built into their structure by other websites. Unlike browser plug-ins, Browsing Security module checks each object built into any web page, ensuring maximum protection.
 
-Pokud nám chcete pomoci zdokonalit tento modul, můžete zaškrtnout spodní políčko na panelu u věty "Pomozte nám s vývojem filtrů Bezpečného prohlížení". Váš počítač nám tak bude moci posílat relevantní informace o podvodných webových stránkách, na které můžete narazit při surfování na webu a naši vývojáři se postarají o to, aby skončily uzamčené na konci vašeho seznamu zakázaných.
+If you wish to help us in perfecting this module, you can check the lower box on the panel near the "Help us with Browsing Security filters development" phrase. This will enable your computer to send us pertinent info on fraudulent websites you might stumble upon while surfing the web — and our developers will make sure they end up locked at the bottom of your ban list.
 
 ## Browser Assistant
 
 ![Assistant](https://cdn.adtidy.org/content/kb/ad_blocker/mac/BrowserAssistant.jpg)
 
-Hlavní funkcí AdGuard Asistenta prohlížeče je správa filtrování přímo z prohlížeče. Dříve to byl pouhý uživatelský skript začleněný do aplikace AdGuard pro Mac, který se pak stal plnohodnotným rozšířením prohlížeče. Další informace o [výhodách, které přináší](../browser-assistant).
+AdGuard Browser Assistant’s primary function is to manage filtering directly from the browser. It used to be a mere userscript incorporated into AdGuard for Mac app that then became a full-fledged browser extension. Know more about the [benefits it yields](../browser-assistant).
 
-![Assistant popup menu *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/safari_assistant_pop-up_menu.jpg)
+![Assistant popup menu \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/safari_assistant_pop-up_menu.jpg)
 
-Při první instalaci AdGuardu (během procesu zpracování) budete vyzváni k instalaci Asistenta prohlížeče pro váš výchozí prohlížeč. Pokud jste to nestihli, můžete si jej kdykoli stáhnout [pro jakýkoli prohlížeč](https://adguard.com/adguard-assistant/overview.html).
+You will be prompted to install the Browser Assistant for your default browser when you first install AdGuard (during the onboarding process). If you missed it, you can [download it for any browser](https://adguard.com/adguard-assistant/overview.html) at any time.
 
 ## Rozšíření
 
 ![Extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Extensions.jpg)
 
-Rozšíření jsou malé programy, které dělají přesně to, co naznačuje jejich název — rozšiřují funkce. AdGuard používá několik vlastních rozšíření, která se také nazývají uživatelské skripty, a rozšiřuje tak rozsah svých funkcí:
+Extensions are small programs that do exactly what their name implies — they extend functionality. And AdGuard uses several extensions of its own, also called userscripts, to broaden its functions range:
 
-**1. Asistent AdGuardu** (zastaralá verze) Toto rozšíření pomáhá uživateli měnit základní nastavení AdGuardu v prohlížeči, aniž by bylo nutné otevírat samotnou aplikaci. Stejně jako Asistent prohlížeče funguje i zastaralý Asistent se všemi prohlížeči kompatibilními se systémem macOS. Díky tomuto malému nástroji můžete udělat několik věcí, aniž byste museli opustit prohlížeč: přidat určitou webovou stránku do seznamu "neblokovat", vybrat a zablokovat obzvláště obtěžující prvek na stránce, nahlásit webovou stránku, pokud se jí přesto podaří dostat k vám reklamy.
+**1. AdGuard Assistant** (legacy version)
+This extension assists the user in changing basic AdGuard settings within the browser, without the need to open the app itself. Like Browser Assistant, legacy Assistant works with all macOS compatible browsers. Thanks to this little tool you can do several things without having to leave the browser: add a certain webpage to the "do not block" list, choose and block an especially annoying element on the page, report the website if it still manages to get ads through to you.
 
 :::note
 
-Tato verze Asistenta je starší a nemá smysl ji používat v nových systémech, protože byla nahrazena plnohodnotným Asistentem prohlížeče. Pokud však pro váš prohlížeč neexistuje rozšíření Asistent prohlížeče, může vám pomoci starší asistent.
+This version of Assistant is legacy and there is no point in using it on new systems, since it has been replaced with the full-fledged Browser Assistant. But legacy Assistant might be of help if there is no Browser Assistant extension for your browser.
 
 :::
 
-**2. AdGuard Extra** Toto rozšíření se používá k řešení složitějších případů blokování reklam, se kterými se můžete setkat. Doporučujeme vám, abyste ho měli vždy zapnuté, pokud k tomu nemáte vážný důvod.
+**2. AdGuard Extra**
+This extension is used to solve the more complicated ad blocking cases you might encounter. We would recommend you to always keep it switched on, unless you have a serious reason not to.
 
-**3. Blokátor vyskakovacích oken AdGuard** Zabraňuje otevírání všech těchto nepříjemných vyskakovacích oken při prohlížení webových stránek. Blokuje vyskakovací reklamy na webových stránkách.
+**3. AdGuard Popup Blocker**
+Prevents all these annoying popup windows from opening when you view webpages. Blocks popup ads on web pages.
 
-Jednou z důležitých funkcí AdGuardu pro Mac je, že aplikace může fungovat jako správce uživatelských skriptů napříč prohlížeči. Můžete snadno přidávat libovolné skripty a spravovat stávající, aniž byste museli pokaždé přepínat prohlížeče.
+One of the important features of AdGuard for Mac is that the application can work as a cross-browser userscript manager. You can easily add any scripts you like and manage existing ones without having to switch browsers every time.
 
 ## Síť
 
 ![Network](https://cdn.adtidy.org/content/kb/ad_blocker/mac/NetworkFiltering.jpg)
 
-Tento poslední panel je věnován filtrování sítě a najdete zde i další funkce. Doporučujeme povolit první dvě možnosti: "Automaticky filtrovat aplikace" a "Filtrovat protokol HTTPS". Ty jsou důležitým dodatečným opatřením pro lepší filtrování webového prostoru. HTTP je základním protokolem pro přenos informací přes Internet. Přenáší se přes něj většina dat včetně reklam, ale má jednu nevýhodu — připojení není šifrované. Díky funkci filtrování HTTPS, AdGuard filtruje nejen provoz HTTP, ale také provoz HTTPS (S znamená "secure").
+This last panel is dedicated to Network filtering, and you will find extra functionalities here. We do recommend to enable the first two ones: "Automatically filter applications" and "Filter HTTPS protocol". Those are an important added precaution to better filter your web space. HTTP is the primary protocol for transmitting information over the Internet. Most data including ads is transferred via it, but it has one disadvantage — the connection is unencrypted. Thanks to the HTTPS filtering feature AdGuard has, not only HTTP traffic is filtered, but also HTTPS traffic (S stands for ‘secure’).
 
-K dispozici jsou také možnosti "Nefiltrovat webové stránky s certifikáty EV" a "Použít AdGuard jako HTTP proxy". Certifikáty SSL s rozšířeným ověřením (Extended Validation, EV) poskytují silnější bezpečnostní záruku; majitelé těchto webových stránek musí projít důkladným a celosvětově standardizovaným procesem ověřování identity definovaným v pokynech pro EV. To je důvod, proč někteří uživatelé webovým stránkám s takovými certifikáty důvěřují a raději je nefiltrují.
+There are also the options of "Do not filter websites with EV certificates" and "Use AdGuard as an HTTP Proxy". Certifikáty SSL s rozšířeným ověřením (Extended Validation, EV) poskytují silnější bezpečnostní záruku; majitelé těchto webových stránek musí projít důkladným a celosvětově standardizovaným procesem ověřování identity definovaným v pokynech pro EV. To je důvod, proč někteří uživatelé webovým stránkám s takovými certifikáty důvěřují a raději je nefiltrují.
 
-Pokud jde o druhou možnost — ano, ve skutečnosti můžete AdGuard používat jako běžný HTTP proxy. Veškerý provoz, který jím prochází, bude filtrován. Tento proxy server bude k dispozici také v lokální síti, takže jej můžete použít k filtrování provozu na jiných zařízeních, která jsou schopna proxy serveru přímo dosáhnout. Chcete-li filtrovat provoz na jiném zařízení připojeném k proxy serveru, musíte tam nainstalovat kořenový certifikát AdGuardu. Po konfiguraci proxy otevřete prohlížeč a přejděte na [tuto stránku](http://local.adguard.org/cert).
+As for the second option — well, yes, in fact you can use AdGuard as a regular HTTP proxy server. All traffic coming through it will be filtered. This proxy will also be available on your local network, so you may use it for traffic filtering on other devices that are able to reach the proxy directly. To filter traffic on another device connected to proxy you will need to install an AdGuard root certificate there. After you configure proxy, open your browser and go to [this page](http://local.adguard.org/cert).
 
-## Ostatní
+## Others
 
 Existují i další užitečné možnosti AdGuardu, které by v tomto článku neměly zůstat nepovšimnuty, protože výrazně přispívají k uživatelskému komfortu.
 
 ### Licence
 
-Nejprve je tu karta Licence, kterou můžete otevřít z rozbalovací hlavní nabídky (ta se otevře po kliknutí na ikonu ozubeného kola v pravém horním rohu hlavního okna). Na této kartě můžete zjistit, jaký typ licence používáte, zkontrolovat její stav a dobu platnosti.
+First, there's the License tab that you can open from the dropdown main menu (the one that opens once you click the gear icon on the upper right of the main window). From this tab you can see which license type you are using, check its status and validity period.
 
 ![License](https://cdn.adtidy.org/content/kb/ad_blocker/mac/License.jpg)
 
-Na stejné kartě můžete pomocí příslušných tlačítek obnovit stav licence, obnovit licenci nebo resetovat licenční klíč.
+In this same tab you can refresh your license status, renew your license or reset the license key using the corresponding buttons.
 
 ### Podpora
 
-Klikněte na ikonu ozubeného kola v pravém horním rohu, vyberte "Podpora" a budete moci odeslat hlášení o chybě nebo požadavek na funkci našemu týmu podpory. Nezapomeňte však přidat svůj skutečný e-mail, protože bez něj nebude zpráva odeslána.
+Click the gear icon in the upper right corner, select "Support", and you will be able to send a bug report or a feature request to our support team. Be sure to add your real actual email though, because without it the message won't be sent.
 
 ![Support](https://cdn.adtidy.org/content/kb/ad_blocker/mac/Support.jpg)
 
-Chcete-li nahlásit nezablokovanou reklamu nebo nefunkční webové stránky, přejděte na odkaz nad oknem se zprávou, pro tyto typy problémů používáme samostatný nástroj pro hlášení.
+To report a missed ad or a broken website, please follow the link above the message window, we use a separate reporting tool for those types of issues.
 
-Ke zprávě je možné připojit diagnostickou zprávu, stačí zaškrtnout políčko ve spodní části karty.
+It is possible to attach a diagnostic report to your message, you only need to check the box in the lower part of the tab.
 
-### Kontrola aktualizací
+### Updates check
 
-V neposlední řadě. Aktualizace filtrů a programů můžete zkontrolovat kliknutím na příslušné možnosti v rozbalovací nabídce (klikněte na ikonu ozubeného kola a zobrazí se vám).
+Last but not least. You can check for filter and program updates by clicking the corresponding menu options in the dropdown menu (click the gear icon and you'll see it).

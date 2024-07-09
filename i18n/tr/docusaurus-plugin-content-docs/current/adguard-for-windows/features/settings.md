@@ -39,7 +39,7 @@ Reklam Engelleyici modülünde şunları yapabilirsiniz:
 
 Before you start manually writing your own rules read our detailed [syntax guide](/general/ad-filtering/create-own-filters).
 
-### Gizlilik Modu
+### Stealth Mode
 
 Many websites gather information about their visitors, such as their IP addresses, information about the browser and operating system installed, screen resolution, and even what page the user came or was redirected from. Some web pages use cookies to mark the browser and save your personal settings, user preferences, or "recognize" you upon your next visit. Gizlilik Modu, kişisel bilgilerinizi bu tür veri ve istatistik toplama sistemlerinden korur.
 
@@ -49,9 +49,9 @@ Gizlilik Modun çalışmasını esnek bir şekilde ayarlayabilirsiniz: örneğin
 
 To learn everything about Stealth Mode and its many options, [read this article](/general/stealth-mode).
 
-### Browsing Security
+### Gezinti koruması
 
-Gezinti Koruması, kötü amaçlı ve kimlik avı sitelerine karşı güçlü koruma sağlar. Hayır, Windows için AdGuard bir antivirüs değildir. Ne bir virüs indirilmeye başlandığında bunu durdurur ne de var olanları siler. Ancak, alan adı "güvenilmeyen siteler" veri tabanımıza eklenmiş bir sitesine gitmek veya böyle bir siteden bir dosya indirmek üzereyseniz sizi uyarır. You can find more information about how this module works in the [dedicated article](/general/browsing-security).
+Gezinti koruması, kötü amaçlı ve kimlik avı sitelerine karşı güçlü koruma sağlar. Hayır, Windows için AdGuard bir antivirüs değildir. Ne bir virüs indirilmeye başlandığında bunu durdurur ne de var olanları siler. Ancak, alan adı "güvenilmeyen siteler" veri tabanımıza eklenmiş bir sitesine gitmek veya böyle bir siteden bir dosya indirmek üzereyseniz sizi uyarır. You can find more information about how this module works in the [dedicated article](/general/browsing-security).
 
 Bu modülde şunları yapabilirsiniz
 
@@ -59,9 +59,9 @@ Bu modülde şunları yapabilirsiniz
 - sesli bildirimleri etkinleştirin,
 - kötü amaçlı ve kimlik avı siteleri veri tabanını güncel tutmamıza yardımcı olması için AdGuard sunucusuna anonim güvenlikle ilgili bilgiler göndermeyi kabul edin.
 
-![Browsing Security \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/browsing-security.png)
+![Gezinti koruması \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/browsing-security.png)
 
-In case you want to learn more about Browsing Security, read [this article](/general/browsing-security).
+Gezinti koruması hakkında daha fazla bilgi edinmek isterseniz [bu makaleyi](/genel/browsing-security) okuyun.
 
 ### DNS Koruması
 

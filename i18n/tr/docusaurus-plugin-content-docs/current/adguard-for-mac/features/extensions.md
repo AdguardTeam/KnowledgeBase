@@ -5,7 +5,7 @@ sidebar_position: 8
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Mac için AdGuard'ı ele alır. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Mac için AdGuard hakkındadır. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 

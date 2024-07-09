@@ -17,6 +17,6 @@ Questo articolo riguarda AdGuard per Safari, che protegge solo il tuo browser Sa
 4. Seleziona _Consenti nella navigazione privata_ per tutte le estensioni AdGuard.
    ![Navigazione privata selezionata](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-sonoma-private.png)
 
-Se il problema persiste e gli annunci continuano a non essere bloccati, contatta il nostro supporto all'indirizzo support\@adguard.com.
+Se il problema persiste e gli annunci continuano a non essere bloccati, contatta il nostro supporto all'indirizzo support@adguard.com.
 
 Se riscontri problemi solo con una pagina o un sito web specifico, puoi segnalarlo direttamente dal browser: fai clic sull'icona AdGuard per Safari accanto alla barra di ricerca di Safari, quindi fai clic su _Segnala un problema_.

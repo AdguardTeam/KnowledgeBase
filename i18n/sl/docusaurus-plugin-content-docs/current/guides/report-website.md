@@ -1,5 +1,5 @@
 ---
-title: How to report a website
+title: How to report websites and apps
 sidebar_position: 3
 ---
 
@@ -53,7 +53,7 @@ To report a reinsertion of an ad or incorrect displaying of a website, you need 
 
 ### Mac {#mac}
 
-- Open [AdGuard Browser Assistant](/adguard-for-mac/browser-assistant) and hit **Report an issue**:
+- Open [AdGuard Browser Assistant](/adguard-for-mac/features/browser-assistant) and hit **Report an issue**:
 
 ![mac *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/guides/browser-assistant-mac.png)
 

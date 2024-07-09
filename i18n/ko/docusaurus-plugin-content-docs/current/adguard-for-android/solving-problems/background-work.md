@@ -3,7 +3,7 @@ title: How to protect AdGuard from being disabled by the system
 sidebar_position: 9
 ---
 
-:::info
+:::정보
 
 This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
@@ -519,7 +519,7 @@ Wiko devices are problematic in terms of non-standard background process optimiz
 - Go back and go to **Manual mode**
 - Tap on the **Gear** icon on top right → **Background apps whitelist** → Select **AdGuard**
 
-## Android stock devices Pixel/Nexus/Essential
+## Android stock devices Pixel/Nexus/Nubia/Essential
 
 Android stock OS normally does not conflict with apps working in the background, but if you are facing any issues you will need to switch on the **Always-on VPN** mode.
 

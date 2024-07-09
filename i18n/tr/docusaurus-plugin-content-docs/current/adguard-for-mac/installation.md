@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Mac için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Mac için AdGuard hakkındadır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -69,7 +69,7 @@ Uygulamalar bölümüne gidin. Find AdGuard there, right-click it and choose **M
 
 ### Advanced
 
-**Use this instruction only if you know what you are doing or if our support service specifically recommended you the 'advanced uninstall'. Also, do all the steps from the "regular uninstall" first.**
+**Use this instruction only if you know what you are doing or if our support service specifically recommended you the 'advanced uninstall'. Ayrıca, önce "normal kaldırma" işlemindeki tüm adımları uygulayın.**
 
 1. Bundan sonra, aşağıdaki AdGuard dosyalarını silin:
     - /Library/Application Support/AdGuard Software/com.adguard.mac.adguard (klasör)
@@ -95,7 +95,7 @@ Uygulamalar bölümüne gidin. Find AdGuard there, right-click it and choose **M
     ```
 
 1. **Etkinlik Monitörü** uygulamasını çalıştırın.
-1. Using search tool, find the process **cfprefsd**.
+1. Arama aracını kullanarak **cfprefsd** hizmetini bulun.
 
     ![Run Activity Monitor](https://cdn.adtidy.org/content/kb/ad_blocker/mac/22.jpg)
 
@@ -103,4 +103,4 @@ Uygulamalar bölümüne gidin. Find AdGuard there, right-click it and choose **M
 
     ![Confirm](https://cdn.adtidy.org/content/kb/ad_blocker/mac/33.jpg)
 
-AdGuard is removed from your computer now.
+AdGuard artık bilgisayarınızdan kaldırılmıştır.

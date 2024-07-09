@@ -62,6 +62,7 @@ L'objectif des filtres de blocage des publicités est de bloquer tous les types 
 - Annonces interstitielles — annonces en plein écran sur les appareils mobiles qui couvrent l'interface de l'app ou du navigateur web
 - Les restes d'annonces qui occupent de grands espaces ou se détachent de l'arrière-plan et attirent l'attention des visiteurs (à l'exception de celles qui sont à peine discernables ou qui passent inaperçues)
 - Publicité anti-adblock — annonce alternative affichée sur le site web après le blocage de l'annonce principale
+- Bait elements that are used by multiple known adblock detection scripts to detect an ad blocker presence for different goals including changing the way ads are shown, fingerprinting, etc.
 - La propre publicité du site, si elle a été bloquée par les règles générales de filtrage (voir *Limitations et exceptions*)
 - Scripts anti-adblock qui empêchent l'utilisation du site (voir *Limitations et exceptions*)
 - Advertising injected by malware, if detailed information about its loading method or steps for reproduction is provided
@@ -113,6 +114,7 @@ Qu'est-ce qu'il bloque :
 - Cookies de suivi
 - Pixels de suivi
 - API de suivi des navigateurs
+- Detection of the ad blocker for tracking purposes
 - Fonctionnalité Privacy Sandbox dans Google Chrome et ses dérivés utilisés pour le suivi (Google Topics API, Protected Audience API)
 
 Le **Filtre de suivi des URL** est conçu pour supprimer les paramètres de suivi des adresses web

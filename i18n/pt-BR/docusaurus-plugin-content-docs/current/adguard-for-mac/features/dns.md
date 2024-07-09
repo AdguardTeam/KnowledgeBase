@@ -5,37 +5,37 @@ sidebar_position: 4
 
 :::info
 
-Este artigo aborda o AdGuard para Mac, um bloqueador de anúncios multifuncional que protege seu dispositivo a nível de sistema. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artigo é sobre o AdGuard para Mac, um bloqueador de anúncios multifuncional que protege seu dispositivo no nível do sistema. Para ver como funciona, [baixe o aplicativo AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## DNS protection
+## Proteção DNS
 
-The _DNS_ section contains one feature, _DNS protection_, with multiple settings:
+A seção _DNS_ contém um recurso, _Proteção DNS_, com múltiplas configurações:
 
-- Providers
-- Filters
-- Blocklist
-- Allowlist
+- Provedores
+- Filtros
+- Lista de bloqueio
+- Lista de permissões
 
 ![DNS](https://cdn.adtidy.org/content/kb/ad_blocker/mac/dns.png)
 
-If you enable _DNS protection_, DNS traffic will be managed by AdGuard.
+Se você ativar a _proteção DNS_, o tráfego DNS será gerenciado pelo AdGuard.
 
-### Providers
+### Provedores
 
-Under _Providers_, you can select a DNS server to encrypt your DNS traffic and block ads and trackers if necessary. We recommend AdGuard DNS. For more advanced configuration, you can [set up a private AdGuard DNS server](https://adguard-dns.io/welcome.html) or add a custom one by clicking the `+` icon in the lower left corner.
+Em _Provedores_, você pode selecionar um servidor DNS para criptografar seu tráfego DNS e bloquear anúncios e rastreadores, se necessário. Recomendamos o AdGuard DNS. Para uma configuração mais avançada, você pode [configurar um servidor AdGuard DNS privado](https://adguard-dns.io/welcome.html) ou adicionar um personalizado clicando no ícone `+` no canto inferior esquerdo.
 
-### Filters
+### Filtros
 
-DNS filters apply ad-blocking rules at the DNS level. Such filtering is less precise than regular ad blocking, but it’s particularly useful for blocking an entire domain. To add a DNS filter, click `+`. You can find more DNS filters at [filterlists.com](https://filterlists.com/).
+Os filtros DNS aplicam regras de bloqueio de anúncios no nível do DNS. Essa filtragem é menos precisa do que o bloqueio normal de anúncios, mas é particularmente útil para bloquear um domínio inteiro. Para adicionar um filtro DNS, clique em `+`. Você pode encontrar mais filtros DNS em [filterlists.com](https://filterlists.com/).
 
-### Blocklist
+### Lista de bloqueio
 
-Domains from this list will be blocked. To add a domain, click `+`. You can add domain names or DNS filtering rules using a [special syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/).
+Os domínios desta lista serão bloqueados. Para adicionar um domínio, clique em `+`. Você pode adicionar nomes de domínio ou regras de filtragem de DNS usando uma [sintaxe especial](https://adguard-dns.io/kb/general/dns-filtering-syntax/).
 
-To export or import a blocklist, open the context menu.
+Para exportar ou importar uma lista de bloqueio, abra o menu de contexto.
 
-### Allowlist
+### Lista de permissões
 
-Domains from this list aren’t filtered. To add a domain, click `+`. To export or import an allowlist, open the context menu.
+Os domínios desta lista não são filtrados. Para adicionar um domínio, clique em `+`. Para exportar ou importar uma lista de permissões, abra o menu de contexto.

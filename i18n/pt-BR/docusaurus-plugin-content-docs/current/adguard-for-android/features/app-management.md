@@ -1,37 +1,37 @@
 ---
-title: App management
+title: Gerenciamento de aplicativos
 sidebar_position: 2
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artigo aborda o AdGuard para Android, um bloqueador de anúncios multifuncional que protege seu dispositivo a nível de sistema. Para ver como funciona, [baixe o aplicativo AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-The _App management_ module can be accessed by tapping the _App management_ tab (third icon from the left at the bottom of the screen). This section allows you to manage permissions and filtering settings for all apps installed on your device.
+O módulo _Gerenciamento de aplicativos_ pode ser acessado tocando na guia _Gerenciamento de aplicativos_ (terceiro ícone a partir da esquerda na parte inferior da tela). Esta seção permite gerenciar permissões e configurações de filtragem para todos os aplicativos instalados no seu dispositivo.
 
-![App management \*mobile\_border](https://cdn.adtidy.org/blog/new/9sakapp_management.png)
+![Gerenciamento de aplicativos \*mobile\_border](https://cdn.adtidy.org/blog/new/9sakapp_management.png)
 
-By tapping an app, you can manage its settings:
+Ao tocar em um aplicativo, você pode gerenciar suas configurações:
 
-- Route its traffic through AdGuard
-- Block ads and trackers in this app (_Filter app content_)
-- Filter its HTTPS traffic (for non-browser apps, it requires [installing AdGuard's CA certificate into the system store](/adguard-for-android/solving-problems/https-certificate-for-rooted/), available on rooted devices)
-- Route it through your specified proxy server or AdGuard VPN in the Integration mode
+- Roteie seu tráfego através do AdGuard
+- Bloqueie anúncios e rastreadores neste aplicativo (_Filtrar conteúdo do aplicativo_)
+- Filtre o tráfego HTTPS (para aplicativos que não sejam de navegador, é necessário [instalar o certificado CA do AdGuard no armazenamento do sistema](/adguard-for-android/solving-problems/https-certificate-for-rooted/), disponível em dispositivos com acesso root
+- Roteie-o através do servidor proxy especificado ou AdGuard VPN no modo de integração
 
-![App management in Chrome \*mobile\_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
+![Gerenciamento de aplicativos no Chrome \*mobile\_border](https://cdn.adtidy.org/blog/new/nvvgochrome_management.png)
 
-From the context menu, you can also access the app's stats.
+No menu de contexto, você também pode acessar as estatísticas do aplicativo.
 
-![App management in Chrome. Context menu \*mobile\_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
+![Gerenciamento de aplicativos no Chrome. Menu de contexto \*mobile\_border](https://cdn.adtidy.org/blog/new/4z85achome_management_context_menu.png)
 
-### “Problem-free” and “problematic” apps
+### Aplicativos “sem problemas” e “problemáticos”
 
-Most apps work properly when filtering is enabled. For such apps, their traffic is routed through AdGuard and filtered by default.
+A maioria dos aplicativos funciona corretamente quando a filtragem está ativada. Para esses aplicativos, o tráfego é roteado pelo AdGuard e filtrado por padrão.
 
-Some apps, such as Download Manager, radio, system apps with UID 1000 and 1001 (for example, Google Play services), are “problematic” and may work incorrectly when routed through AdGuard. That's why you may see the following warning when trying to route or filter all apps:
+Alguns aplicativos, como Download Manager, rádio, aplicativos de sistema com UID 1000 e 1001 (por exemplo, Google Play Services), são “problemáticos” e podem funcionar incorretamente quando roteados pelo AdGuard. É por isso que você poderá ver o seguinte aviso ao tentar rotear ou filtrar todos os aplicativos:
 
-![Route all apps dialog \*mobile\_border](https://cdn.adtidy.org/blog/new/6du8jiroute_all.png)
+![Caixa de diálogo Rotear todos os aplicativos \*mobile\_border](https://cdn.adtidy.org/blog/new/6du8jiroute_all.png)
 
-To ensure proper operation of all apps installed on your device, we strongly recommend that you route only problem-free apps through AdGuard. You can see the full list of apps not recommended for filtering in _Settings_ → _General_ → _Advanced_ → _Low-level settings_ → _Protection_ → _Excluded apps_.
+Para garantir o funcionamento adequado de todos os aplicativos instalados no seu dispositivo, recomendamos fortemente que você roteie apenas aplicativos sem problemas através do AdGuard. Você pode ver a lista completa de aplicativos não recomendados para filtragem em _Configurações_ → _Geral_ → _Avançado_ → _Configurações de baixo nível_ → _Proteção_ → _Aplicativos excluídos_.

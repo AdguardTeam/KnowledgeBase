@@ -39,7 +39,7 @@ At the very bottom of the screen you will find _Advanced Settings_. Измене
 
 Before you start manually writing your own rules read our detailed [syntax guide](/general/ad-filtering/create-own-filters).
 
-### Антитрекинг
+### Защита от трекинга
 
 Многие сайты собирают данные о посетителях: IP-адреса, информацию о браузере и операционной системе, разрешении экрана и даже странице, с которой пользователь перешёл на сайт. Чтобы сохранить индивидуальные настройки, личные предпочтения или «узнать» посетителя при повторном визите, некоторые сайты помечают браузер специальными файлами cookie. Антитрекинг призван защитить вашу личную информацию от подобных систем, собирающих данные и статистику.
 
@@ -49,9 +49,9 @@ Before you start manually writing your own rules read our detailed [syntax guide
 
 To learn everything about Stealth Mode and its many options, [read this article](/general/stealth-mode).
 
-### Антифишинг
+### Browsing security
 
-Browsing Security gives strong protection against malicious and phishing websites. Нет, AdGuard для Windows — это не антивирус. Он не остановит загрузку вируса, если она уже началась, и не удалит уже существующие вирусы. Но он предупредит вас, если вы собираетесь перейти на сайт, домен которого был добавлен в нашу базу «ненадёжных сайтов», или загрузить файл с такого сайта. You can find more information about how this module works in the [dedicated article](/general/browsing-security).
+Browsing security gives strong protection against malicious and phishing websites. Нет, AdGuard для Windows — это не антивирус. Он не остановит загрузку вируса, если она уже началась, и не удалит уже существующие вирусы. Но он предупредит вас, если вы собираетесь перейти на сайт, домен которого был добавлен в нашу базу «ненадёжных сайтов», или загрузить файл с такого сайта. You can find more information about how this module works in the [dedicated article](/general/browsing-security).
 
 В этом модуле вы можете
 
@@ -59,9 +59,9 @@ Browsing Security gives strong protection against malicious and phishing website
 - активировать звуковые уведомления,
 - agree to submit anonymous security-related info to the AdGuard server to help us keep the malicious and phishing websites database up to date.
 
-![Browsing Security \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/browsing-security.png)
+![Browsing security \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/browsing-security.png)
 
-In case you want to learn more about Browsing Security, read [this article](/general/browsing-security).
+In case you want to learn more about Browsing security, read [this article](/general/browsing-security).
 
 ### DNS-защита
 

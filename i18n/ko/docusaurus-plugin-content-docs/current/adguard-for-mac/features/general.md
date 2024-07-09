@@ -1,40 +1,40 @@
 ---
-title: General
+title: 보통
 sidebar_position: 2
 ---
 
 :::info
 
-이 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Mac용 AdGuard에 대해 다룹니다. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+이 글은 시스템 수준에서 기기를 보호하는 광고 차단기인 Mac용 AdGuard에 관한 내용입니다. 작동 방식을 확인하려면 [AdGuard 앱을 다운로드](https://agrd.io/download-kb-adblock)하세요.
 
 :::
 
-## How to open app settings
+## 앱 설정을 여는 방법
 
-To configure AdGuard for Mac, click the gear icon in the upper right corner of the main window and select _Preferences_.
+Mac용 AdGuard를 설정하려면 기본 창의 오른쪽 상단에 있는 톱니바퀴 아이콘을 클릭하고 **설정**을 선택하세요.
 
-![Main window \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/main.png)
+![메인 창 \*mobile](https://cdn.adtidy.org/content/kb/ad_blocker/mac/main.png)
 
-## General
+## 보통
 
-![General](https://cdn.adtidy.org/content/kb/ad_blocker/mac/general.png)
+![일반](https://cdn.adtidy.org/content/kb/ad_blocker/mac/general.png)
 
-### Do not block search ads and website self-promoting ads
+### 검색 광고 및 웹사이트 자체 홍보 광고 차단하지 않기
 
-This feature prevents AdGuard from blocking [search ads and self-promotions on websites](/general/ad-filtering/search-ads). This can be useful, for example, when you’re shopping online and want to see discounts offered by some websites. Instead of adding these websites to the allowlist, you can exclude self-promotions and search ads from filtering.
+이 기능은 AdGuard가 웹사이트의 [검색 광고 및 자체 홍보](/general/ad-filtering/search-ads)를 차단하는 것을 방지합니다. 예를 들어, 온라인 쇼핑을 하다가 일부 웹사이트의 할인 혜택을 보고 싶을 때 유용하게 사용할 수 있습니다. 이러한 웹사이트를 허용 목록에 추가하는 대신 자체 홍보 및 검색 광고를 필터링에서 제외할 수 있습니다.
 
-### Activate language-specific filters automatically
+### 언어별 필터를 자동으로 활성화하기
 
-This feature detects the language of the website you’re visiting and automatically activates appropriate filters for more accurate ad blocking. This is especially helpful if you change languages frequently.
+이 기능은 사용자가 방문하는 웹사이트의 언어를 감지하고 더 정확한 광고 차단을 위해 적절한 필터를 자동으로 활성화합니다. 언어를 자주 변경하는 경우 특히 유용합니다.
 
-### Launch AdGuard at login
+### 로그인 시 AdGuard 실행
 
-This feature automatically launches AdGuard automatically after you restart your computer. This helps keep AdGuard protection active without having to manually open the app.
+이 기능은 컴퓨터를 재시작하면 자동으로 AdGuard를 실행합니다. 따라서 앱을 수동으로 열지 않고도 AdGuard 보호를 활성 상태로 유지할 수 있습니다.
 
-### Hide menu bar icon
+### 메뉴 아이콘 숨기기
 
-This feature hides AdGuard’s icon from the menu bar but keeps AdGuard running in the background. If you want to disable AdGuard completely, click _Quit AdGuard_ in the main window menu.
+이 기능은 메뉴 표시줄에서 AdGuard의 아이콘을 숨기지만 백그라운드에서 AdGuard가 계속 실행되도록 합니다. AdGuard를 완전히 비활성화하려면 메인 창 메뉴에서 **AdGuard 종료**를 클릭하세요.
 
-### Allowlist
+### 허용 목록
 
-Websites added to this list aren’t filtered. You can also access allowlisted websites from _User rules_.
+이 목록에 추가된 웹사이트는 필터링되지 않습니다. **사용자 규칙**에서 허용 목록에 있는 웹사이트에 액세스할 수도 있습니다.

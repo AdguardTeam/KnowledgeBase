@@ -1,5 +1,5 @@
 ---
-title: General
+title: 보통
 sidebar_position: 1
 ---
 

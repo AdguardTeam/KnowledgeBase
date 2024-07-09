@@ -51,7 +51,9 @@ sidebar_position: 1
 
 ## Einreichen der Protokolle
 
+> AdGuard ist dem Schutz Ihrer Privatsphäre verpflichtet. We strictly follow our [Privacy Policy](https://adguard.com/en/privacy/browser-extension.html) and do not collect any private information about users. Bevor Sie Ihre Protokolle an das Support-Team senden, überprüfen Sie bitte die Datei, da sie zusätzliche Informationen enthalten kann, die Sie vielleicht nicht freigeben möchten. If it contains such personal information, we recommend that you delete it first.
+
 Nachdem Sie die Protokolle zusammengestellt haben, folgen Sie bitte diesen Schritten, um diese an unser Entwicklungsteam zu übermitteln:
 
 1. Melden Sie den Fehler auf [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose).
-2. Senden Sie Ihr Archiv mit den Protokollen und der Aufzeichnungszeit an „devteam\@adguard.com“ und fügen Sie einen Link zu Ihrem GitHub-Problem hinzu. Sie können das Archiv auch in Google Drive hochladen und den Link hinzufügen, anstatt die Datei anzuhängen.
+2. Senden Sie Ihr Archiv mit den Protokollen und der Aufzeichnungszeit an „devteam@adguard.com“ und fügen Sie einen Link zu Ihrem GitHub-Problem hinzu. Sie können das Archiv auch in Google Drive hochladen und den Link hinzufügen, anstatt die Datei anzuhängen.

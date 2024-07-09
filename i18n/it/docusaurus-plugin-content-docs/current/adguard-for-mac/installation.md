@@ -5,11 +5,11 @@ sidebar_position: 2
 
 :::info
 
-Questo articolo riguarda AdGuard per Mac, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
-## System requirements
+## Requisiti di sistema
 
 **Operating system version:** macOS 10.15 (64 bit) or higher
 

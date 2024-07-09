@@ -1,16 +1,16 @@
 ---
-title: Annoyance blocking
+title: Belästigungsblockierung
 sidebar_position: 3
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
 
 :::
 
-The Tracking protection module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Annoyance blocking_.
+Sie können auf das Modul „Tracking-Schutz“ zugreifen, indem Sie auf den Tab _Schutz_ (zweites linkes Symbol unten auf dem Bildschirm) tippen und dann _Belästigungsblockierung_ auswählen.
 
-This feature is based on AdGuard's annoyance filters and allows you to block popups, online assistant windows, cookie notifications, prompts to download mobile apps, and similar annoyances that aren't ads but still detract from your online experience. [Learn more about annoyance filters](/general/ad-filtering/adguard-filters/#adguard-filters)
+Diese Funktion basiert auf den AdGuard-Belästigungsfiltern und ermöglicht das Blockieren von Pop-ups, Online-Hilfefenstern, Cookie-Benachrichtigungen, Aufforderungen zum Herunterladen von mobilen Apps und ähnlichen Belästigungen, die keine Werbung sind, aber dennoch das Surfen beeinträchtigen. [Erfahren Sie mehr über Belästigungsfilter](/general/ad-filtering/adguard-filters/#adguard-filters)
 
-![Annoyance blocking \*mobile\_border](https://cdn.adtidy.org/blog/new/lwujvannoyance.png)
+![Belästigungsblockierung \*mobile\_border](https://cdn.adtidy.org/blog/new/lwujvannoyance.png)

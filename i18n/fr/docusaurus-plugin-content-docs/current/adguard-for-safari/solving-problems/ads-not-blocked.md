@@ -16,7 +16,7 @@ Dans certains cas, le filtrage peut ne pas fonctionner et les publicités peuven
 1. Ouvrez Safari.
 2. Cliquez sur _Safari_ dans le menu du coin supérieur gauche.
 3. Cliquez sur _Paramètres…_ → _Extensions_.
-4. Décochez les cases des 6 extensions de blocage de contenu d'AdGuard : _Personnalisé_, _Général_, _Autres_, _Confidentialité_, _Sécurité_ et _Social_.
+4. Clear the checkboxes for AdGuard’s extensions: _Custom_, _General_, _Other_, _Privacy_, _Security_, _Social_, _AdGuard for Safari_, and _AdGuard Assistant_.
    ![Bloqueurs de contenu décochés](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-unchecked-cbs.png)
 5. Redémarrez Safari.
 6. Revenez à _Paramètres..._ → _Extensions_ et réactivez les extensions de blocage de contenu.
@@ -25,6 +25,6 @@ Dans certains cas, le filtrage peut ne pas fonctionner et les publicités peuven
 9. Cliquez sur _Vérifier les mises à jour_.
 10. Ne fermez pas la fenêtre AdGuard pour Safari tant que les filtres ne sont pas mis à jour.
 
-Si cela ne résout pas le problème et les publicités ne sont toujours pas bloquées, veuillez contacter notre assistance à support\@adguard.com.
+Si cela ne résout pas le problème et les publicités ne sont toujours pas bloquées, veuillez contacter notre assistance à support@adguard.com.
 
 Si vous ne rencontrez des problèmes qu'avec une page ou un site web spécifique, vous pouvez le signaler directement à partir du navigateur : cliquez sur l'icône AdGuard pour Safari à côté de la barre de recherche Safari, puis cliquez sur _Signaler un problème_.

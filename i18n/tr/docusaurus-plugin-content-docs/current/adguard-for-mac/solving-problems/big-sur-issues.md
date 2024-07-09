@@ -5,7 +5,7 @@ sidebar_position: 4
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Mac için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Mac için AdGuard hakkındadır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -23,7 +23,7 @@ Currently, AdGuard and iCloud Private Relay cannot work at the same time. AdGuar
 
 For a deeper understanding of this problem, read [this article](../icloud-private-relay).
 
-**Recommended solution**
+**Önerilen çözüm**
 
 We recommend using AdGuard together with a more traditional VPN service such as [AdGuard VPN](https://adguard-vpn.com/).
 
@@ -39,7 +39,7 @@ Apple's Mail app now uses a proxy to hide a user's IP address when downloading i
 
 For a deeper understanding of this problem, read [this article](../protect-mail-activity).
 
-**Recommended solution**
+**Önerilen çözüm**
 
 At this point, we recommend using a more traditional VPN service, such as [AdGuard VPN](https://adguard-vpn.com/), instead of the newer Apple privacy features.
 
@@ -93,7 +93,7 @@ Now AdGuard can filter local proxies (mostly) without any problems. If you encou
 
 Big Sur'da Mac için AdGuard'da üst kaynak sunucu proxy'sini yapılandırmak için:
 
-1. AdGuard'ın ayarlarını açın *Tercihler → Ağ → Giden proxy*.
+1. Open AdGuard's settings *Preferences → Network → Outbound proxy*.
 2. Proxy türünüze bağlı olarak HTTP, HTTPS, SOCKS4 veya SOCKS5'i seçin.
 3. Alanları doldurun:
     - `host` is the IP address of your proxy server,

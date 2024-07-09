@@ -1,5 +1,5 @@
 ---
-title: Tracking rotection
+title: İzleme koruması
 sidebar_position: 2
 ---
 

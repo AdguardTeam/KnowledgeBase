@@ -16,7 +16,7 @@ En algunos casos, es posible que el filtrado no funcione y que aún se muestren 
 1. Abre Safari.
 2. Haz clic en _Safari_ en el menú de la esquina superior izquierda.
 3. Haz clic en _Configuración…_ → _Extensiones_.
-4. Desactiva las casillas de verificación de las 6 extensiones de bloqueo de contenido de AdGuard: _Personalizado_, _General_, _Otro_, _Privacidad_, _Seguridad_ y _Social_.
+4. Clear the checkboxes for AdGuard’s extensions: _Custom_, _General_, _Other_, _Privacy_, _Security_, _Social_, _AdGuard for Safari_, and _AdGuard Assistant_.
    ![Bloqueadores de contenido no seleccionados](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-unchecked-cbs.png)
 5. Reinicia Safari.
 6. Vuelve a _Configuración..._ → _Extensiones_ y activa las extensiones de bloqueo de contenido de nuevo.
@@ -25,6 +25,6 @@ En algunos casos, es posible que el filtrado no funcione y que aún se muestren 
 9. Haz clic en _Buscar actualizaciones_.
 10. No cierres la ventana de AdGuard para Safari hasta que se actualicen los filtros.
 
-Si esto no ayuda y los anuncios siguen sin bloquearse, ponte en contacto con nuestro servicio de soporte en support\@adguard.com.
+Si esto no ayuda y los anuncios siguen sin bloquearse, ponte en contacto con nuestro servicio de soporte en support@adguard.com.
 
 Si solo tienes problemas con una página o sitio web específico, puedes informarlo directamente desde el navegador: haz clic en el ícono de AdGuard para Safari al lado de la barra de búsqueda de Safari y luego haz clic en _Informar un problema_.

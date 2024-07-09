@@ -41,7 +41,7 @@ This section allows you to manage HTTPS filtering settings, filters, and userscr
 
 ![Filtering \*mobile\_border](https://cdn.adtidy.org/blog/new/7v5c6filtering.png)
 
-### Filters
+### Filtres
 
 AdGuard blocks ads, trackers, and annoyances by applying rules from its filters. Most features from the _Protection_ section are powered by [AdGuard filters](/general/ad-filtering/adguard-filters/#adguard-filters). If you enable _Basic protection_, it will automatically turn on the AdGuard Base filter and AdGuard Mobile Ads filter. And vice versa: if you turn off both filters, _Basic protection_ will also be disabled.
 
@@ -100,7 +100,7 @@ You can also add websites that you consider necessary to exclusions by selecting
 - Exclude specific websites from HTTPS filtering
 - Filter HTTPS traffic only on the websites added to exclusions
 
-By default, we also do not filter websites with Extended Validation (EV) certificates, such as financial websites. If needed, you can enable the _Filter websites with EV certificates_ option.
+By default, we also do not filter websites with Extended Validation (EV) certificates, such as financial websites. Si nécessaire, vous pouvez activer l'option _Filtrer les sites web avec des certificats EV_.
 
 #### Proxy
 

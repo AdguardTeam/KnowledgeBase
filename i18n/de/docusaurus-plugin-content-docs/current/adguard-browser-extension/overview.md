@@ -1,6 +1,6 @@
 ---
 title: Funktionsübersicht
-sidebar_position: 1
+sidebar_position: 10
 ---
 
 :::info
@@ -9,7 +9,7 @@ In diesem Artikel geht es um die AdGuard Browsereweiterung, die nur Ihren Browse
 
 :::
 
-AdGuard stellt eine Reihe von Softwareprodukten zur Verfügung, die Werbung und Tracker auf verschiedenen Plattformen blockieren. Eines der beliebtesten AdGuard-Produkte ist eine kostenlose Erweiterung, die in fünf gängigen Browsern funktioniert: Chrome, Firefox, Edge, Opera und Yandex Browser. Browser extensions include basic ad-blocking features but cannot be compared with full-featured desktop programs, such as [AdGuard for Windows](/adguard-for-windows/features/home-screen) and [AdGuard for Mac](/adguard-for-mac/overview).
+AdGuard stellt eine Reihe von Softwareprodukten zur Verfügung, die Werbung und Tracker auf verschiedenen Plattformen blockieren. Eines der beliebtesten AdGuard-Produkte ist eine kostenlose Erweiterung, die in fünf gängigen Browsern funktioniert: Chrome, Firefox, Edge, Opera und Yandex Browser. Browser extensions include basic ad-blocking features but cannot be compared with full-featured desktop programs, such as [AdGuard for Windows](/adguard-for-windows/features/home-screen) and [AdGuard for Mac](/adguard-for-mac/features/main).
 
 ![AdGuard Browser Extension for Chrome *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
 
@@ -31,7 +31,7 @@ Wir haben eine eigenständige Erweiterung für Safari. Seit der Veröffentlichun
 
 Das Blockieren von Werbung ist eindeutig die Schlüsselfunktion eines jeden Werbeblockers, und AdGuard bildet hier keine Ausnahme. The extension will successfully block ads on any page in your browser. Das Blockieren von Werbung basiert auf so genannten Filterlisten oder einfach [Filtern](/general/ad-filtering/how-ad-blocking-works). Filter können in den Einstellungen Ihrer Erweiterung aktiviert oder deaktiviert werden. You can customize ad blocking by activating specific filters.
 
-### Filter {#filters}
+### Filters {#filters}
 
 Im Wesentlichen handelt es sich bei Filterlisten um Regelwerke, die in einer speziellen Sprache geschrieben sind. Ihr Werbeblocker interpretiert die Regeln und setzt diese um. As a result, you stop seeing ads on your webpages.
 
@@ -67,7 +67,7 @@ Besides, you can export your own filtering rules. This option is good for transf
 
 When you add a website to the Allowlist (more on that [below](#allowlist)) or use the Assistant tool for hiding an element on the page, a corresponding rule is also saved in *User rules*.
 
-### Positivliste {#allowlist}
+### Allowlist {#allowlist}
 
 The *allowlist* is used to exclude certain websites from filtering. Blocking rules are not applied to the websites on the list.
 

@@ -62,6 +62,7 @@ L'obiettivo dei filtri di blocco delle inserzioni è bloccare ogni tipo di inser
 - Inserzioni interstiziali: annunci a schermo intero sui dispositivi mobili, che coprono l'interfaccia dell'app o del browser web
 - Residui di inserzioni pubblicitari che occupano grandi spazi o sono a contrasto con lo sfondo e attirano l'attenzione dei visitatori (tranne quelli a malapena distinguibili o invisibili)
 - Inserzioni anti-adblock: inserzioni alternative mostrate sul sito quando quelle principali sono bloccate
+- Bait elements that are used by multiple known adblock detection scripts to detect an ad blocker presence for different goals including changing the way ads are shown, fingerprinting, etc.
 - Propri inserzioni del sito, se bloccate dalle regole di filtraggio generali (consulta *Limitazioni ed eccezioni*)
 - Script anti-adblock che impediscono l'utilizzo del sito (consulta *Limitazioni ed eccezioni*)
 - Inserzioni pubblicitari iniettate da malware, se sono fornite informazioni dettagliate sul metodo di caricamento o i passaggi per la riproduzione
@@ -113,6 +114,7 @@ Cosa blocca:
 - Cookie di tracciamento
 - Pixel di tracciamento
 - API di tracciamento dei browser
+- Detection of the ad blocker for tracking purposes
 - Funzionalità Sandbox Privacy su Google Chrome e le sue biforcazioni utilizzate per il tracciamento (Google Topics API, la Protected Audience API)
 
 Il filtro **Filtro Anti-Monitoraggio URL** è progettato per rimuovere i parametri di monitoraggio dagli indirizzi web

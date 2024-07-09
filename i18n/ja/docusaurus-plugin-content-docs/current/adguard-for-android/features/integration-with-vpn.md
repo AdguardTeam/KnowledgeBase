@@ -1,18 +1,18 @@
 ---
-title: Integration with AdGuard VPN
+title: AdGuard VPN との併用モード
 sidebar_position: 8
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+この記事は、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Android」についてです。 デバイス全体を保護するこのアプリは、[こちらからダウンロード](https://agrd.io/download-kb-adblock)できます。
 
 :::
 
-AdGuard for Android creates a local VPN to filter traffic. Thus, other VPN apps cannot be used while AdGuard for Android is running. However, both AdGuard and [AdGuard VPN](https://adguard-vpn.com/) apps have Integrated modes that let you use them together.
+AdGuard for Android は、トラフィックをフィルタリングするためにローカルVPNを作成します。 したがって、AdGuard for Android の実行中は、他のVPNアプリを使用することはできません。 ただし、AdGuard と [AdGuard VPN](https://adguard-vpn.com/) の両アプリを一緒に使える「併用モード」があります。
 
-In this mode, AdGuard VPN acts as an outbound proxy server through which AdGuard Ad Blocker routes its traffic. This allows AdGuard to create a VPN interface and block ads and trackers locally, while AdGuard VPN routes all traffic through a remote server.
+このモードでは、AdGuard VPN は、AdGuard 広告ブロッカーがトラフィックをルーティングするアウトバウンドプロキシサーバーとして動作します。 これにより、AdGuard はVPNインターフェイスを作成し、ローカルで広告とトラッカーをブロックし、AdGuard VPN はすべてのトラフィックをリモートサーバー経由でルーティングします。
 
-If you disable AdGuard VPN, AdGuard will stop using it as an outbound proxy. If you disable AdGuard, AdGuard VPN will route traffic through its own VPN interface.
+AdGuard VPN を無効にすると、AdGuard は AdGuard VPN をアウトバウンドプロキシとして使用しなくなります。 AdGuard を無効にすると、AdGuard VPN は独自のVPNインターフェイスを介してトラフィックをルーティングするようになります。
 
-If you have AdGuard Ad Blocker and install AdGuard VPN, the Ad Blocker app will detect it and enable _Integration with AdGuard VPN_ automatically. The same happens in reverse. Note that if you've enabled integration, you won't be able to manage app exclusions and connect to DNS servers from the AdGuard VPN app. You can specify apps to be routed through your VPN tunnel via _Settings_ → _Filtering_ → _Network_ → _Proxy_ → _Apps operating through proxy_. To select a DNS server, open AdGuard → _Protection_ → _DNS protection_ → _DNS server_.
+AdGuard 広告ブロッカーがある状態で AdGuard VPN をインストールすると、前者はそれを検出し、自動的に「AdGuard VPN との併用モード」を有効にします。 逆も同じです。 併用モードを有効の時は、AdGuard VPN アプリからアプリの除外を管理したり、DNSサーバーに接続したりすることはできませんのでご注意ください。 _設定_ → _フィルタリング_ → _ネットワーク_ → _プロキシ_ → _プロキシ経由で動作するアプリ_ から、VPN トンネル経由でルーティングされるアプリを指定できます。 DNSサーバーを選択するには、AdGuardアプリ → _AdGuard による保護_ → _DNS通信を保護_ → _DNSサーバー_ を開きます。

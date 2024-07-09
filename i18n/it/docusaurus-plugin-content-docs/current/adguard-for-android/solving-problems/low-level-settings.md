@@ -13,17 +13,17 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 :::caution
 
-Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. This section should only be opened if you know what you are doing, or you were asked to do so by our support team.
+Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. Questa sezione dovrebbe essere aperta soltanto se sai cosa stai facendo, o se ti è stato richiesto di farlo dal nostro team di supporto.
 
 :::
 
 To go to *Low-level settings*, open the AdGuard app and tap the gear icon in the lower right corner of the screen. Then choose *General → Advanced → Low-level settings*.
 
-## Low-level settings
+## Impostazioni di basso livello
 
 For AdGuard v4.0 for Android we've completely redesigned the low-level settings: divided them into thematic blocks, made them clearer, added validation of entered values and other safety valves, got rid of some settings, and added others.
 
-### DNS protection
+### Protezione DNS
 
 #### Fallback upstreams
 
@@ -61,7 +61,7 @@ Here you can specify the response type for domains blocked by DNS rules based on
 
 Here you can specify the time in milliseconds that AdGuard will wait for the response from the selected DNS server before resorting to fallback. If you don’t fill in this field or enter an invalid value, the value of 5000 will be used.
 
-#### Blocked response TTL
+#### Risposta TTL bloccata
 
 Here you can specify the TTL (time to live) value that will be returned in response to a blocked request.
 
@@ -93,6 +93,14 @@ If this setting is enabled, AdGuard will use fallback upstreams for all domains.
 
 If this setting is enabled, AdGuard will test DNS upstreams before adding or updating custom DNS servers.
 
+#### Filter secure DNS
+
+If this setting is on, AdGuard will apply all enabled DNS filters and DNS user rules to encrypted DNS-over-HTTPS (DoH) traffic and not only to plain DNS. DoH traffic mostly comes from Chrome and other browsers that have a *Secure DNS* (or similar) setting. You can use *Filter secure DNS* in two different modes:
+
+- **Filter on the fly**. In this mode, AdGuard applies all enabled DNS filters and DNS user rules to DoH traffic but doesn’t redirect it to the local DNS proxy. If a DNS server is specified in the browser’s settings, this server will handle the DoH traffic for this browser
+
+- **Redirect to DNS proxy**. In this mode, AdGuard applies all enabled DNS filters and DNS user rules to DoH traffic by redirecting it to the local DNS proxy. The DNS server specified in the AdGuard’s DNS settings will handle all DoH traffic
+
 ### Filtering
 
 #### Capture HAR
@@ -123,7 +131,7 @@ If this setting is enabled, AdGuard will redirect DNS-over-HTTPS requests to the
 
 If this setting is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
 
-### Outbound proxy
+### Proxy in uscita
 
 #### Show the Filter DNS requests setting
 

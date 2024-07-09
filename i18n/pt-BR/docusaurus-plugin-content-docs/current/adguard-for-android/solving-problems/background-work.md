@@ -5,7 +5,7 @@ sidebar_position: 9
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Veja como funciona ao [baixar o AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -463,7 +463,7 @@ Devices with OxygenOS on board are the most problematic, with its OS-specific ca
 
     ![Oneplusdots *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/android/oneplusdots.png)
 
-:::caution
+:::cuidado
 
 On some OnePlus phones there is also a thing called App Auto-Launch and Deep Optimization which essentially prevents apps from working in the background. Please disable it for AdGuard.
 
@@ -519,7 +519,7 @@ Wiko devices are problematic in terms of non-standard background process optimiz
 - Go back and go to **Manual mode**
 - Tap on the **Gear** icon on top right → **Background apps whitelist** → Select **AdGuard**
 
-## Android stock devices Pixel/Nexus/Essential
+## Android stock devices Pixel/Nexus/Nubia/Essential
 
 Android stock OS normally does not conflict with apps working in the background, but if you are facing any issues you will need to switch on the **Always-on VPN** mode.
 

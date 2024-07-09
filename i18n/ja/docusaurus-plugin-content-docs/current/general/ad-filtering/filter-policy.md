@@ -62,6 +62,7 @@ AdGuardの広告ブロックフィルタには以下が含まれます:
 - 【インタースティシャル広告】モバイルデバイス上で、アプリやウェブブラウザのインターフェイスを覆うフルスクリーン広告
 - 【広告の残骸】画面・ページで大きなスペースを占有していたり、背景の中で際立っていたり、訪問者の注意を引くような広告の残りもの（ほとんど判別できないものや目立たないものを除く）
 - 【アンチアドブロック広告】主要な広告がブロックされた場合にサイトで表示される代替広告
+- Bait elements that are used by multiple known adblock detection scripts to detect an ad blocker presence for different goals including changing the way ads are shown, fingerprinting, etc.
 - 【サイトの自己宣伝広告】※一般的なフィルタリング・ルールでブロックされている場合のみ（ *制限と例外*を参照）
 - 【アンチアドブロックスクリプト】サイトの利用を妨げるアンチアドブロックスクリプト ( *制限と例外*を参照)
 - 【マルウェアによって注入された広告】マルウェアによって注入された広告で、そのローディング方法や再現手順に関する詳細情報が提供されている場合
@@ -113,6 +114,7 @@ AdGuardの追跡防止フィルタには以下が含まれます:
 - 追跡クッキー
 - トラッキングピクセル
 - ブラウザのトラッキングAPI
+- Detection of the ad blocker for tracking purposes
 - Google Chromeのプライバシーサンドボックス機能、およびトラッキングに使用されるプライバシーサンドボックスのフォーク（Google Topics API、Protected Audience API）
 
 「**AdGuard URL追跡防止フィルタ**」は、ウェブアドレスからトラッキングパラメータを削除するように設計されています。

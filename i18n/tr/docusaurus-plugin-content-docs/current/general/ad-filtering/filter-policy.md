@@ -12,29 +12,29 @@ These criteria are equally applied to the rules of all filters.
 - Rules for a specific site will only be added if there is sufficient traffic. Traffic is determined by public statistics (if available) or indirect indicators, such as the number of subscribers on social networks. A site’s traffic is considered sufficient if it reaches 100,000 visits per month. We will consider adding a rule for a site that is not as popular, but the final decision rests with filter developers. Sites with low traffic should still be checked for third-party analytics and advertising networks
 - The decision about content farms (websites that produce large amounts of content primarily aimed at achieving high visibility in search results and generating advertising revenue) is made by filter developers depending on the quality of the content
 
-Quality requirements for filtering rules:
+Filtreleme kuralları için kalite gereksinimleri:
 
-- Rules should not negatively impact the websites in terms of performance
-- Unblocking rules must be as specific as possible to avoid unblocking anything unnecessary
-- JavaScript rules should be used as sparingly as possible and only if blocking ads is impossible without them
+- Kurallar siteleri performans açısından olumsuz etkilememelidir
+- Gereksiz herhangi bir şeyin engelini kaldırmaktan kaçınmak için engel kaldırma kuralları mümkün olduğunca spesifik olmalıdır
+- JavaScript kuralları mümkün olduğunca dikkatli kullanılmalı ve yalnızca reklamların engellenmesi onlar olmadan mümkün değilse kullanılmalıdır
 
 ## Reklam engelleme filtreleri
 
 ### Terminology
 
-**Ad blocker** is a software or hardware tool designed to filter, hide, or block advertisements and other elements on web pages. Ad blockers are created to improve user experience, reduce page load times, decrease internet traffic consumption, block ads, enhance privacy while browsing websites and using applications, and block annoying elements.
+**Reklam engelleyici**, web sayfalarındaki reklamları ve diğer öğeleri filtrelemek, gizlemek veya engellemek için tasarlanmış bir yazılım veya donanım aracıdır. Ad blockers are created to improve user experience, reduce page load times, decrease internet traffic consumption, block ads, enhance privacy while browsing websites and using applications, and block annoying elements.
 
-A **filter** (or a **filter list**) is a set of filtering rules designed to filter content and block various types of advertisements and other types of content using ad blockers. These filters usually operate at the level of the web browser, programs, or DNS server.
+A **filter** (or a **filter list**) is a set of filtering rules designed to filter content and block various types of advertisements and other types of content using ad blockers. Bu filtreler genellikle web tarayıcısı, programlar veya DNS sunucusu düzeyinde çalışır.
 
 **Anti-adblock** is a technology used by websites or applications intended to detect ad blocking and react to it in different ways: tracking, reinjecting ads, encouraging to disable ad blocker (so called “adblock walls”). Anti-adblocks may be of different types:
 
 - Anti-adblock that blocks website content without offering an alternative: to continue using the site, the user must disable the ad blocker on the site
 - “Anti-adblock wall” with alternative options offered, such as purchasing a subscription to continue using the ad blocker
-- Informational messages that do not obligate action: users are asked to disable the ad blocker, but these messages can be closed, allowing users to continue using the site without restrictions
+- Eylemi zorunlu kılmayan bilgilendirme mesajları: kullanıcılardan reklam engelleyiciyi devre dışı bırakmaları istenir, ancak bu mesajlar kapatılabilir ve kullanıcıların siteyi kısıtlama olmadan kullanmaya devam etmelerine izin verilir
 - Implementing alternative advertising in response to ad blocker usage: sites introduce alternative advertising when ad blockers are detected
 - Paywall: a method of content monetization where content is partially or fully hidden from users, with a message prompting them to purchase a subscription for access
 
-### Filtreler
+### Filters
 
 AdGuard ad-blocking filters include:
 
@@ -62,6 +62,7 @@ The goal of ad-blocking filters is to block all types of advertising on websites
 - Interstitial ads — full-screen ads on mobile devices that cover the interface of the app or web browser
 - Ads leftovers that occupy large spaces or stand out against the background and attract visitors' attention (except barely discernible or unnoticeable ones)
 - Anti-adblock advertising — alternative advertising displayed on the site when the main one is blocked
+- Bait elements that are used by multiple known adblock detection scripts to detect an ad blocker presence for different goals including changing the way ads are shown, fingerprinting, etc.
 - Site’s own advertising, if it has been blocked by general filtering rules (see *Limitations and exceptions*)
 - Anti-adblock scripts that prevent site usage (see *Limitations and exceptions*)
 - Advertising injected by malware, if detailed information about its loading method or steps for reproduction is provided
@@ -94,7 +95,7 @@ The goal of ad-blocking filters is to block all types of advertising on websites
 
 **Cookies** — files that websites send to and store on devices. These files contain various information — both necessary for the functioning of the site on the device and used for analytics purposes — unique identifiers used to track visitor activity on the website, advertising parameters, and more.
 
-### Filtreler
+### Filters
 
 AdGuard izleme korumasu filtreleri şunları içerir:
 
@@ -107,13 +108,14 @@ AdGuard izleme korumasu filtreleri şunları içerir:
 
 Neleri engeller:
 
-- Analytics systems’ scripts
-- Websites’ and applications’ own tracking scripts
-- Masked CNAME trackers
-- Tracking cookies
-- Tracking pixels
-- Tracking APIs of browsers
-- Privacy Sandbox functionality in Google Chrome and its forks used for tracking (Google Topics API, the Protected Audience API)
+- Analiz sistemlerin betikleri
+- Sitelerin ve uygulamaların kendi izleme betikleri
+- Maskelenmiş CNAME izleyicileri
+- Çerezleri izleme
+- Pikselleri izleme
+- Tarayıcıların API'lerini izleme
+- Detection of the ad blocker for tracking purposes
+- Google Chrome'daki Privacy Sandbox işlevi ve izleme için kullanılan çatalları (Google Topics API, Protected Audience API)
 
 The **URL Tracking filter** is designed to remove tracking parameters from web addresses
 
@@ -138,7 +140,7 @@ Annoyance filters are designed to improve the usability of websites by blocking 
 
 **Popup** — a window that appears above the current web page. It is intended to display additional information, advertisements, notifications, or data entry forms. Popups usually block the view of the main content of the page and require user action to close, which can be irritating.
 
-### Filtreler
+### Filters
 
 For better customization, annoyance filters are divided by their purpose:
 
@@ -202,7 +204,7 @@ This is a filter that blocks various widgets that are not essential for the func
 
 **Kısıtlamalar ve istisnalar**
 
-This filter doesn’t block:
+Bu filtre şunları engellemez:
 
 - Widgets closely related to the content of the page, such as comments sections, live chat streams, with an exception of unmoderated chats on sites with unofficial streams, which are often filled with spam and similar content
 - Widgets for self-promotion and site-specific promotional activities
@@ -220,15 +222,15 @@ Bu filtre, diğer filtrelerde yer almayan can sıkıcı öğeleri engellemek ve 
 
 **Kısıtlamalar ve istisnalar**
 
-This filter may contain rules that are not suitable for all users. Bazen bu filtrenin devre dışı bırakılması önerilir. The decisions to add rules to this filter are made by filter developers on a rule-by-rule basis.
+Bu filtre tüm kullanıcılar için uygun olmayan kurallar içerebilir. Bazen bu filtrenin devre dışı bırakılması önerilir. Bu filtreye kural ekleme kararları, filtre geliştiricileri tarafından kural bazında verilir.
 
 ## Sosyal medya filtreleri
 
-### Filtreler
+### Filters
 
 AdGuard Sosyal Medya filtreleri şunları içerir:
 
-- AdGuard Social Media filter
+- AdGuard Sosyal Medya filtresi
 
 ### Bu filtrelerin amacı
 
@@ -252,11 +254,11 @@ This group contains filters that are not essential for blocking advertisements.
 
 For more details on these types of advertising, refer to the [article on search ads](https://adguard.com/kb/general/ad-filtering/search-ads/).
 
-### Filtreler
+### Filters
 
 - Arama motoru reklamları ve öz tanıtımına izin veren filtre
-- AdGuard DNS filter
-- AdGuard Experimental filter
+- AdGuard DNS filtresi
+- AdGuard Deneysel filtresi
 
 ### Bu filtrelerin amacı
 
@@ -269,19 +271,19 @@ This filter unblocks:
 
 **Kısıtlamalar ve istisnalar**
 
-- Search advertising is unblocked only if it corresponds to the user’s search query, as it is contextual. Otherwise, the advertising remains blocked
+- Search advertising is unblocked only if it corresponds to the user’s search query, as it is contextual. Aksi takdirde, reklam engellenmiş olarak kalır
 - Self-promotion is unblocked only if it complies with the filter policy. A request for unblocking may be rejected by filter developers
 - Any other advertising will not be unblocked
 
-#### AdGuard DNS filter
+#### AdGuard DNS filtresi
 
-This filter is used in AdGuard DNS. It is not a replacement for ad-blocking filters.
+Bu filtre AdGuard DNS'de kullanılır. Bu, reklam engelleme filtrelerinin yerine geçmez.
 
 **Kısıtlamalar ve istisnalar**
 
 Same as for ad-blocking filters.
 
-#### AdGuard Experimental filter
+#### AdGuard Deneysel filtresi
 
 This filter is intended for testing and debugging rules that potentially may break websites’ functionality. Rules are added by filter developers when there’s a need to test a particular solution. As the filter is designed for debugging purposes, its limitations are minimal.
 

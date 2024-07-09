@@ -80,7 +80,7 @@
     "description": "The label for category AdGuard Browser Extension in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Features overview": {
-    "message": "Features overview",
+    "message": "Descripción general de las funciones",
     "description": "The label for category Features overview in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Features": {
@@ -96,7 +96,7 @@
     "description": "The label for category Protection in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Firewall": {
-    "message": "Firewall",
+    "message": "Cortafuegos",
     "description": "The label for category Firewall in sidebar tutorialSidebar"
   }
 }

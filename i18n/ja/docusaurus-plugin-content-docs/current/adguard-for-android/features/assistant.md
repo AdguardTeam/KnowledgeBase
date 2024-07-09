@@ -1,84 +1,84 @@
 ---
-title: Assistant
+title: アシスタント
 sidebar_position: 5
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+この記事は、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Android」についてです。 デバイス全体を保護するこのアプリは、[こちらからダウンロード](https://agrd.io/download-kb-adblock)できます。
 
 :::
 
-Assistant is a handy tool to quickly change app or website settings and view statistics without opening the AdGuard UI.
+アシスタントは、AdGuardのUIを開くことなく、アプリやウェブサイトの設定をすばやく変更したり、統計情報を表示したりできる便利なツールです。
 
-### How to access Assistant
+### アシスタントにアクセスする方法
 
-1. On your Android device, swipe down from the top of the screen to open the notification shade.
-2. Find and **expand** the AdGuard notification.
+1. Android端末の場合、画面上部から下にスワイプして通知シェードを開きます。
+2. AdGuard 通知を見つけて**拡張**します。
 
-![Expand AdGuard notification in the notification shade \*mobile](https://cdn.adtidy.org/blog/new/jkksbhassistant-shade.png)
+![Expand AdGuard notification in the notification shade \*mobile](https://cdn.adtidy.org/blog/new/6lqy8expand-assistant-ja.png)
 
-1. Tap _Assistant_.
+1. 「_アシスタント_」をタップします。
 
-![Tap Assistant \*mobile](https://cdn.adtidy.org/blog/new/1qvlhassistant-tap-assistant.jpg)
+![Tap Assistant \*mobile](https://cdn.adtidy.org/blog/new/x8748Screenshot_One_UI_Home.jpg)
 
-### How to use Assistant
+### アシスタントの使い方
 
-When you open Assistant, you will see two tabs: **Apps** and **Websites**. Each of them contains a list of the recently used apps and websites respectively.
+アシスタントを開くと、[**アプリの管理**] と [**ウェブサイト**] という 2 つのタブが表示されます。 それぞれに最近使用したアプリやウェブサイトのリストが表示されています。
 
-![Assistant main \*mobile](https://cdn.adtidy.org/blog/new/i5mljAssistant-main.jpg)
+![Assistant main \*mobile](https://cdn.adtidy.org/blog/new/1d36eScreenshot_20230706-151717_AdGuard.jpg)
 
-### Apps tab
+### アプリタブ
 
-After you select an app (**let's take Chrome as an example**), you'll get a few options of what you can do.
+アプリを選択する(**Chrome を例に挙げよう**)と、実行できる操作のオプションがいくつか表示されます。
 
-![Assistant Chrome menu \*mobile\_border](https://cdn.adtidy.org/blog/new/e1sr4Chrome-assistant.jpg)
+![Assistant Chrome menu \*mobile\_border](https://cdn.adtidy.org/blog/new/2fp3ugassistant-menu-chrome-ja.jpg)
 
-#### Recent activity
+#### 最新アクティビティ
 
-You'll be taken to the AdGuard app, where you'll see detailed info on the last 10K requests made by Chrome.
+AdGuard アプリに移動し、Chrome によって行われた最新 10,000 件のリクエストに関する詳細情報が表示されます。
 
-![App recent activity \*mobile\_border](https://cdn.adtidy.org/blog/new/66hpechrome-recent-activity.png)
+![App recent activity \*mobile\_border](https://cdn.adtidy.org/blog/new/8rrjxchrome-recent-ja.jpg)
 
-#### App statistics
+#### このアプリの統計
 
-You'll be taken to the AdGuard app, where you'll see detailed statistics about Chrome:
+AdGuard アプリに移動し、Chrome に関する詳細な統計情報が表示されます:
 
-- Number of ads and trackers blocked in Chrome
-- Data saved by blocking Chrome's ad or tracking requests
-- Companies that Chrome sends requests to
+- Chrome でブロックされた広告とトラッカー（追跡）の数
+- Chrome の広告やトラッキングリクエストをブロックすることで節約されたデータ通信量
+- Chrome がどの企業へリクエストを送信しているのかという情報
 
-#### App management
+#### アプリの管理
 
-You'll be taken to the AdGuard app screen where you can disable AdGuard protection for the app.
+AdGuardの「アプリの管理」画面に移動し、アプリに対してAdGuardによる保護をオフにすることができます。
 
-#### Firewall settings
+#### ファイアウォール設定
 
-You'll be taken to the AdGuard screen where you can change Firewall settings for the app, meaning you can manage the app's Internet access.
+AdGuard に移動し、このアプリ（Chrome）に対するファイアウォール設定を変更できます。ファイアウォール設定によってアプリのインターネットアクセスを制御できます。
 
-### Websites tab
+### ウェブサイト
 
-![Assistant websites tab \*mobile](https://cdn.adtidy.org/blog/new/74y9rAssistant-websites.jpg)
+![Assistant websites tab \*mobile](https://cdn.adtidy.org/blog/new/5r70aassistant-websites-ja.jpg)
 
-Select a website (**we use google.com here purely as an example**) and you'll see few options of what you can do.
+ウェブサイトを選択すると (**ここでは google.com を単なる例として使用しています**)、実行できる操作のオプションがいくつか表示されます。
 
-![Assistant google.com info \*mobile](https://cdn.adtidy.org/blog/new/tht0tgoogle-com-assistant.jpg)
+![Assistant google.com info \*mobile](https://cdn.adtidy.org/blog/new/tybmvgoogle-com-assistant-ja.jpg)
 
-#### Add to allowlist
+#### ホワイトリストに追加する
 
-Tapping this option will instantly add `google.com` to allowlist, and AdGuard will no longer filter it (meaning ads and trackers won't be blocked for the website).
+タップすると、www.google.comは即座にがホワイトリストに追加され、AdGuard はwww.google.comをフィルタリングしなくなります（つまり、このサイトで広告とトラッカーはブロックされなくなります）。
 
-#### Recent activity
+#### 最新アクティビティ
 
-You'll be taken to the AdGuard app, where you'll see detailed info on the last 10K requests to google.com.
+これを押しますと、AdGuardアプリに移動し、www.google.comへの直近10,000リクエストの詳細情報が表示されます。
 
-![website recent activity \*mobile\_border](https://cdn.adtidy.org/blog/new/xq7f3assistant-website-recent-activity.png)
+![website recent activity \*mobile\_border](https://cdn.adtidy.org/blog/new/rg2aegoogle-com-recent-ja.jpg)
 
-#### Website statistics
+#### ウェブサイト統計
 
-You'll be taken to the AdGuard app, where you'll see detailed statistics about google.com:
+AdGuardアプリに移動し、google.com に関する詳細な統計情報が表示されます:
 
-- Number of blocked ad and tracking requests to google.com
-- Data saved by blocking ad and tracking requests to google.com
-- Apps that send requests to google.com
-- Information about google.com's subdomains
+- google.com への広告・トラッキングリクエストのブロック数
+- google.com への広告・トラッキングリクエストをブロックすることで節約されたデータ通信量
+- google.com へリクエストを送信するアプリ
+- google.com のサブドメインに関する情報

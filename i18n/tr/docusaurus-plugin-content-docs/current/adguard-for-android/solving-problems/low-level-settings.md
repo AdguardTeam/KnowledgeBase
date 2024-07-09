@@ -17,7 +17,7 @@ Changing *Low-level settings* can cause problems with the performance of AdGuard
 
 :::
 
-To go to *Low-level settings*, open the AdGuard app and tap the gear icon in the lower right corner of the screen. Then choose *General → Advanced → Low-level settings*.
+*Alt seviye ayarlar* öğesine gitmek için AdGuard uygulamasını açın ve ekranın sağ alt köşesindeki dişli çark simgesine dokunun. Then choose *General → Advanced → Low-level settings*.
 
 ## Low-level settings
 
@@ -92,6 +92,14 @@ Bu ayar etkinleştirilirse, AdGuard tüm alan adları için yedek üst kaynaklar
 #### DNS üst kaynaklarını doğrula
 
 Bu ayar etkinleştirilirse, AdGuard özel DNS sunucularını eklemeden veya güncellemeden önce DNS üst kaynakları test eder.
+
+#### Güvenli DNS'i filtrele
+
+If this setting is on, AdGuard will apply all enabled DNS filters and DNS user rules to encrypted DNS-over-HTTPS (DoH) traffic and not only to plain DNS. DoH traffic mostly comes from Chrome and other browsers that have a *Secure DNS* (or similar) setting. You can use *Filter secure DNS* in two different modes:
+
+- **Anında filtrele**. In this mode, AdGuard applies all enabled DNS filters and DNS user rules to DoH traffic but doesn’t redirect it to the local DNS proxy. If a DNS server is specified in the browser’s settings, this server will handle the DoH traffic for this browser
+
+- **Redirect to DNS proxy**. In this mode, AdGuard applies all enabled DNS filters and DNS user rules to DoH traffic by redirecting it to the local DNS proxy. The DNS server specified in the AdGuard’s DNS settings will handle all DoH traffic
 
 ### Filtreleme
 

@@ -3,4 +3,4 @@ title: AdGuard Безопасность
 sidebar_position: 5
 ---
 
-Этот блокировщик контента объединяет несколько фильтров, связанных с безопасностью. _Malware Domains Blocklist_ blocks domains that are notorious for spreading malware and spyware. _Spam404_ protects you from Internet fraudsters. _NoCoin Filter List_ disrupts browser-based cryptominers, such as Coinhive.
+Этот блокировщик контента объединяет несколько фильтров, связанных с безопасностью. _Malware Domains Blocklist_ блокирует домены, которые распространяют вредоносное и шпионское ПО. _Spam404_ защищает от интернет-мошенников. _NoCoin Filter List_ нарушает работу браузерных криптомайнеров, таких как Coinhive.

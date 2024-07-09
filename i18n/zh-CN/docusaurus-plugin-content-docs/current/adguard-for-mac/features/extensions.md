@@ -1,33 +1,33 @@
 ---
-title: Extensions
+title: 浏览器扩展
 sidebar_position: 8
 ---
 
 :::info
 
-本文适用于 Mac 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+本文介绍了 Mac 版的 AdGuard，它是一款多功能广告拦截器，可在系统级别保护设备。 要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)
 
 :::
 
-AdGuard allows you to install extensions, or userscripts, to extend the functionality of the browser. AdGuard can work as a cross-browser userscript manager: you don’t have to install the same userscript for each browser.
+AdGuard 让用户安装扩展程序或用户脚本，以扩展浏览器的功能。 AdGuard 可作为跨浏览器的用户脚本管理器使用：用户不必为每个浏览器安装相同的用户脚本。
 
-Some userscripts are pre-installed, others can be installed manually.
+一些用户脚本已预装，其他用户脚本可手动安装。
 
-![Extensions](https://cdn.adtidy.org/content/kb/ad_blocker/mac/extensions.png)
+![扩展](https://cdn.adtidy.org/content/kb/ad_blocker/mac/extensions.png)
 
-## AdGuard Assistant (legacy)
+## AdGuard 助手（旧版）
 
-This userscript allows you to manage AdGuard protection directly from your browser. While the [new Assistant](/adguard-for-mac/features/browser-assistant) is a browser extension that can be installed from your browser’s store, the legacy Assistant is a userscript that doesn’t require additional installation. Some features are common to both assistants:
+本用户脚本让用户从浏览器管理 AdGuard 保护。 [新版助手](/adguard-for-mac/features/browser-assistant)是一个浏览器扩展，可以从浏览器商店安装，而旧版助手是一个用户脚本，不需要额外安装。 这两种助手都有一些共同的功能：
 
-- Enable or disable protection for a specific website
-- Pause protection for 30 seconds
-- Manually block an ad
-- Report incorrect blocking
+- 启用或禁用特定网站的保护功能
+- 禁用保护 30 秒
+- 手动拦截广告
+- 报告错误拦截
 
-However, the new Assistant is more advanced. It also allows you to manage AdGuard protection for all websites, check the website’s certificate, manage HTTPS filtering, and open the filtering log or the app’s settings. We recommend that you use the legacy Assistant only if the new Assistant is not available.
+不过，新版助手更加先进。 新版助手还可以管理所有网站的 AdGuard 保护、检查网站证书、管理 HTTPS 过滤，以及打开过滤日志或应用程序设置。 我们建议用户仅在新助手不可用的情况下使用旧版助手。
 
 ## AdGuard Extra
 
-This userscript solves the most complex ad blocking issues when regular rules aren’t enough. It also prevents websites from circumventing ad blockers and re-inserting blocked ads. We recommend that you keep it enabled at all times.
+当常规规则不够用时，此用户脚本可以拦截最复杂的广告。 它还能防止网站规避广告拦截器并重新插入被拦截的广告。 我们建议用户始终保持 AdGuard Extra 启用状态。
 
-To install a userscript, click `+`. You can find userscripts at [greasyfork.org](https://greasyfork.org/).
+要安装用户脚本，请单击「+」。 您可以在 [greasyfork.org](https://greasyfork.org/) 上查看用户脚本。

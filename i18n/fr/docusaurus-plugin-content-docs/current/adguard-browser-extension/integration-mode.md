@@ -1,7 +1,13 @@
 ---
 title: Mode d'intégration (ancien)
-sidebar_position: 3
+sidebar_position: 4
 ---
+
+:::info
+
+Cet article concerne l'extension de navigateur AdGuard, qui protège uniquement votre navigateur. Pour protéger l'ensemble de votre appareil, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock).
+
+:::
 
 ## Qu'est-ce que le mode d'intégration ?
 
@@ -13,6 +19,6 @@ Le problème était que, dans certains cas, l'application et l'extension pouvaie
 
 ![Assistant de navigateur AdGuard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/ad_blocker_browser_extension_assistant.png)
 
-L'Assistant de navigateur AdGuard est une nouvelle extension de navigateur qui fonctionne et ressemble au mode d'intégration, mais de manière plus légère, sans fonctions redondantes, et sans interférer avec les applications de bureau. Vous pouvez [apprendre plus sur l'Assistant de navigateur pour Windows](/adguard-for-windows/browser-assistant) ou [Mac](/adguard-for-mac/browser-assistant), ou [le télécharger depuis notre site web](https://adguard.com/adguard-assistant/overview.html).
+L'Assistant de navigateur AdGuard est une nouvelle extension de navigateur qui fonctionne et ressemble au mode d'intégration, mais de manière plus légère, sans fonctions redondantes, et sans interférer avec les applications de bureau. You can [read more about Browser Assistant for Windows](/adguard-for-windows/browser-assistant) or [Mac](/adguard-for-mac/features/browser-assistant), or [download it from our website](https://adguard.com/adguard-assistant/overview.html).
 
 L'Assistant de navigateur AdGuard est disponible dans tous les navigateurs principaux.

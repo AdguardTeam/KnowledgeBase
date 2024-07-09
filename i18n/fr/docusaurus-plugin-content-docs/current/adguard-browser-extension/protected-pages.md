@@ -1,6 +1,6 @@
 ---
 title: Pages protégées par le navigateur
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 :::info
@@ -9,11 +9,9 @@ Cet article concerne l'extension de navigateur AdGuard, qui protège uniquement 
 
 :::
 
-## Pages protégées par le navigateur
-
 Lorsque vous utilisez une extension web telle que l'Extension de navigateur AdGuard, certains domaines restreints interdisent l'accès ou les autorisations. Par conséquent, les extensions de blocage des publicités ne sont pas autorisées à interagir avec ou à modifier le contenu de ces pages. En d'autres termes, ils ne sont pas autorisés à bloquer les publicités et autres éléments gênants sur ces pages web.
 
-### Restrictions du navigateur Chromium
+## Restrictions du navigateur Chromium
 
 Les navigateurs basés sur Chromium, tels que Google Chrome, maintiennent une liste de domaines restreints auxquels les extensions ne sont pas autorisées à accéder. Ces domaines comprennent :
 
@@ -27,7 +25,7 @@ Les navigateurs basés sur Chromium, tels que Google Chrome, maintiennent une li
 - Pages d'erreur telles que les erreurs 404 et les erreurs réseau
 - Les URL commençant par `view-source:` ou `data:`
 
-### Restrictions du navigateur Firefox
+## Restrictions du navigateur Firefox
 
 De même, le navigateur Firefox possède son propre ensemble de domaines restreints dans lesquels les extensions ne sont pas autorisées à fonctionner. Ces domaines restreints sont les suivants :
 
@@ -44,7 +42,7 @@ De même, le navigateur Firefox possède son propre ensemble de domaines restrei
 - support.mozilla.org
 - sync.services.mozilla.com
 
-### La modification des restrictions dans Firefox
+## La modification des restrictions dans Firefox
 
 La modification des paramètres avancés peut affecter la stabilité et la sécurité de Firefox. Ceci est recommandé uniquement aux utilisateurs avancés. Si vous êtes conscient du risque associé et souhaitez toujours activer les modules complémentaires interdits sur une page protégée, suivez les étapes ci-dessous :
 

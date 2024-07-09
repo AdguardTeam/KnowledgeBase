@@ -1,28 +1,28 @@
 ---
-title: Browsing security
+title: 浏览安全
 sidebar_position: 6
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。 要了解其工作原理，请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
-The Browsing security module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Browsing security_.
+浏览安全模块可以通过点击底部屏幕的「保护」标签（屏幕底部左起第二个图标）并选择「浏览安全」访问。
 
-Browsing security protects you from visiting phishing and malicious websites. It also warns you about potential malware.
+浏览安全功能还能保护用户免受恶意软件和钓鱼网站的侵害。 该功能还会警告用户有关潜在的恶意软件。
 
-![Browsing Security \*mobile\_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
+![Browsing security \*mobile\_border](https://cdn.adtidy.org/blog/new/1y6a8browsing_security.png)
 
-If you're about to visit a dangerous website, Browsing Security will show you the following warning:
+如果用户要访问一个危险网站，浏览安全功能发出以下警告：
 
-![Browsing Security warning \*mobile\_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
+![Browsing security warning \*mobile\_border](https://cdn.adtidy.org/blog/new/o8s3Screenshot_2023-06-29-15-49-01-514-edit_com.android.chrome.jpg)
 
 :::warning
 
-Please note that AdGuard for Android is not an antivirus program. It neither stops viruses from downloading nor deletes already downloaded ones. To fully protect your device, we recommend using AdGuard in conjunction with an antivirus
+请注意：Android 版 AdGuard 不是一款防病毒程序。 它既无法阻止病毒下载，也无法删除已下载的病毒。 要全面保护设备，我们建议将 AdGuard 与杀毒软件结合使用。
 
 :::
 
-Browsing Security is safe: AdGuard does not know what websites you visit. It uses hash prefixes instead of URLs to check website security. [Learn more about how Browsing security works from this article](/general/browsing-security/).
+浏览安全功能是安全的：AdGuard 无法查看用户访问什么网站。 应用程序使用哈希前缀而不是 URL 来检查网站的安全性。 [在本文了解更多有关浏览安全功能的工作原理](/general/browsing-security/)。

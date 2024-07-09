@@ -15,9 +15,9 @@ El alcance y los métodos de las verificaciones dependen del producto que utiliz
 
 Usamos el protocolo [Safe Browsing API versión 2.2](https://code.google.com/p/google-safe-browsing/wiki/Protocolv2Spec) para nuestro trabajo con filtros. Este protocolo nos permite mantener tus datos personales absolutamente seguros. Nuestro servidor no sabe nada sobre los sitios que visitas. Usamos prefijos hash para las verificaciones, no las URL abiertas.
 
-La siguiente figura proporciona una comprensión general de cómo funciona el módulo de seguridad de navegación, utilizando AdGuard para Windows como ejemplo.
+The figure below provides a general understanding of how the Browsing security module works, using AdGuard for Windows as an example.
 
-![Algoritmo de funcionamiento del módulo de Seguridad de Navegación](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_adguard_for_windows.png)
+![Functioning algorithm of Browsing security module](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_adguard_for_windows.png)
 
 ### Extensión de navegador AdGuard
 
@@ -25,9 +25,9 @@ Las extensiones de navegador funcionan de manera diferente, utilizando la llamad
 
 Te informamos que nunca obtenemos ninguna información que pueda permitirnos determinar qué sitios web visitas o utilizar esos datos de alguna manera.
 
-En la siguiente imagen se muestra un algoritmo aproximado del funcionamiento del módulo de seguridad de navegación.
+An approximate algorithm of the functioning of the Browsing security module is shown in the picture below.
 
-![Algoritmo de funcionamiento del módulo de Seguridad de Navegación en las extensiones de navegador AdGuard.](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_extension.png)
+![Functioning algorithm of Browsing security module in AdGuard browser extensions.](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_extension.png)
 
 ## Filtros de AdGuard
 
@@ -47,13 +47,13 @@ This filter contains links to pages that could execute malicious code, leading t
 
 Most of the work is automated, so you can be sure that new malware and phishing addresses are added to our database as quickly as possible.
 
-### Comunidad de seguridad de navegación de AdGuard
+### AdGuard Browsing security Community
 
-An important tool for maintaining the highest level of filtering is the *AdGuard Browsing Security Community*. Cualquier usuario de nuestros productos, ya sea AdGuard para Windows o nuestra extensión de navegador, puede convertirse en miembro de la comunidad y ayudarnos a crear los filtros de AdGuard.
+An important tool for maintaining the highest level of filtering is the *AdGuard Browsing security Community*. Cualquier usuario de nuestros productos, ya sea AdGuard para Windows o nuestra extensión de navegador, puede convertirse en miembro de la comunidad y ayudarnos a crear los filtros de AdGuard.
 
-In the image below, you can see an algorithm of how Browsing Security Community works:
+In the image below, you can see an algorithm of how Browsing security Community works:
 
-![Cómo funciona la Comunidad de Seguridad de Navegación de AdGuard](https://cdn.adtidy.org/public/Adguard/En/Articles/browsing_security_community.png)
+![The way AdGuard Browsing security Community works](https://cdn.adtidy.org/public/Adguard/En/Articles/browsing_security_community.png)
 
 ### ¿Quieres ayudar?
 

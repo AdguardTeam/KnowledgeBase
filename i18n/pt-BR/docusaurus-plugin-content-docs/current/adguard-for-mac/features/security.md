@@ -1,24 +1,24 @@
 ---
-title: Security
+title: Segurança
 sidebar_position: 6
 ---
 
 :::info
 
-Este artigo aborda o AdGuard para Mac, um bloqueador de anúncios multifuncional que protege seu dispositivo a nível de sistema. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artigo é sobre o AdGuard para Mac, um bloqueador de anúncios multifuncional que protege seu dispositivo no nível do sistema. Para ver como funciona, [baixe o aplicativo AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## Phishing and malware protection
+## Proteção de malware e phishing
 
-![Security](https://cdn.adtidy.org/content/kb/ad_blocker/mac/security.png)
+![Segurança](https://cdn.adtidy.org/content/kb/ad_blocker/mac/security.png)
 
-AdGuard has a database of fraudulent, phishing, and malicious domains. If you enable _Phishing and malware protection_, AdGuard will warn you every time you’re about to visit a dangerous website. Even if only some parts of the website are dangerous, AdGuard will check it and display a warning.
+AdGuard possui um banco de dados de domínios fraudulentos, de phishing e maliciosos. Se você ativar a _Proteção contra phishing e malware_, o AdGuard irá avisá-lo sempre que você estiver prestes a visitar um site perigoso. Mesmo que apenas algumas partes do site sejam perigosas, o AdGuard irá verificá-las e exibir um aviso.
 
-This is safe. As AdGuard checks hash prefixes, not URLs, it doesn’t know what websites you visit. [Learn more about AdGuard’s security checks](/general/browsing-security)
+Este é um processo seguro. Como o AdGuard verifica prefixos de hash, e não URLs, ele não sabe quais sites você visita. [Saiba mais sobre as verificações de segurança do AdGuard](/general/browsing-security)
 
 :::note
 
-AdGuard is not an antivirus software. It can’t stop you from downloading suspicious files or delete existing viruses.
+O AdGuard não é um software antivírus. Ele não pode impedi-lo de fazer download de arquivos suspeitos nem excluir os vírus existentes.
 
 :::

@@ -8,13 +8,13 @@ toc_max_heading_level: 4
 
 :::note Поддерживаемые приложения
 
-AdGuard может значительно расширять функциональность сайтов, работая как менеджер пользовательских скриптов. You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](/adguard-for-windows/features/extensions), [AdGuard for Android](/adguard-for-android/features/settings#userscripts), and [AdGuard for Mac](/adguard-for-mac/overview).
+AdGuard может значительно расширять функциональность сайтов, работая как менеджер пользовательских скриптов. You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](/adguard-for-windows/features/extensions), [AdGuard for Android](/adguard-for-android/features/settings#userscripts), and [AdGuard for Mac](/adguard-for-mac/features/extensions).
 
 :::
 
 ## Рекомендуемые скрипты AdGuard
 
-Эти пользовательские скрипты разработаны в AdGuard, и мы можем гарантировать, что они эффективны и безопасны. Помните: каждый раз, когда вы загружаете пользовательский скрипт из неизвестного источника, вы подвергаете себя риску, поскольку некоторые скрипты могут быть опасны для вашего компьютера. Старайтесь скачивать новые расширения только из проверенных источников, которым вы доверяете на 100%. Чуть позже мы приведём [несколько примеров](#more-userscripts) популярных сайтов.
+Эти пользовательские скрипты разработаны в AdGuard, и мы можем гарантировать, что они эффективны и безопасны. For some of the userscripts developed by others that we consider good and reliable, [scroll down to the next section](#top-picks). You can also find some of the [popular websites with scripts](#more-userscripts) below, but remember that whenever you download a userscript from an unknown source, you expose yourself to a certain risk, as some scripts may be harmful to your computer.
 
 ### AdGuard Extra
 
@@ -44,13 +44,23 @@ AdGuard может значительно расширять функциона�
 
 ![Отключить AMP](https://cdn.adtidy.org/content/kb/ad_blocker/general/disable-amp-installation.png)
 
+## Top picks outside AdGuard{#top-picks}
+
+These userscripts are not developed by AdGuard and therefore we can't give a 100% guarantee that they are safe and/or work at all times. However, in our experience they deserve a recommendation as they've all earned their good reputation.
+
+### Don't track me Google
+
+This script removes Google's tracking feature from the links in Google search results. It speeds up the loading of search results and allows you to right-click or tap to copy the link URL.
+
+Its source code is [available on GitHub](https://github.com/Rob--W/dont-track-me-google). This userscript can be downloaded from [GreasyFork](https://greasyfork.org/en/scripts/428243-don-t-track-me-google) and installed in any AdGuard CoreLibs-based app.
+
 ### microShield
 
 Пользовательский скрипт для тех, кто посещает корейские и некоторые международные сайты. Пользовательский скрипт microShield блокирует рекламу Ad-Shield и антиблокировщики рекламы. Его исходный код доступен на [asdefuser](https://github.com/seia-soto/userscripts/tree/master/sources/asdefuser) и на [AdShield Defuser](https://github.com/seia-soto/adshield-defuser). Этот пользовательский скрипт можно установить в приложениях на основе AdGuard CoreLibs, Violentmonkey, Tampermonkey и [quoid/userscripts](https://github.com/quoid/userscripts). Узнайте больше о microShield и о том, как его установить, [на GitHub](https://github.com/AdguardTeam/DisableAMP).
 
 ## Где взять больше пользовательских скриптов{#more-userscripts}
 
-По большей части пользовательские скрипты создаются любителями, поэтому, устанавливая тот или иной скрипт, нужно быть очень осторожными. Тем не менее существует великое множество интересных скриптов, которые действительно могут сделать использование некоторых сайтов более удобным.
+As userscripts are mainly created by enthusiasts, you should be cautious when installing them. Any script from an unknown source carries a potential risk. Yet, there is a great variety of interesting scripts that, if installed carefully and responsibly, can really make using some websites more convenient.
 
 Здесь мы опишем несколько популярных каталогов пользовательских скриптов.
 

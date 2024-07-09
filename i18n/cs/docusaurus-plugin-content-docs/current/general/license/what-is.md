@@ -3,8 +3,6 @@ title: Co je licence AdGuardu?
 sidebar_position: 1
 ---
 
-## Co je licence AdGuardu?
-
 Licence je povolení používat produkt AdGuard v souladu s [licenční smlouvou s koncovým uživatelem](https://adguard.com/eula.html). Pokud jsou licence vázány na e-mailovou adresu, lze licence AdGuardu nalézt v uživatelském účtu [](https://my.adguard.com/).
 
 ## Jaké typy licencí AdGuardu existují

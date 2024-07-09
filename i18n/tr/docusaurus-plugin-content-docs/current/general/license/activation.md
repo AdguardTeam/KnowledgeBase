@@ -3,8 +3,6 @@ title: Nasıl etkinleştirilir
 sidebar_position: 3
 ---
 
-## Lisans nasıl etkinleştirilir
-
 Lisansınızı etkinleştirmek için AdGuard ürününüzün *Lisans* bölümüne gidin ve *Giriş yap* alanını veya *Etkinleştir* düğmesini bulun. Giriş yapmak için AdGuard hesabınızın e-posta adresini ve parolasını kullanın. Henüz bir hesabınız yoksa, bir tane oluşturmanız teklif edilecektir.
 
 :::not

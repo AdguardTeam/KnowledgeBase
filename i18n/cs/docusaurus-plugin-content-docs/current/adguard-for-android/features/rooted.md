@@ -1,16 +1,16 @@
 ---
-title: Rooted devices
+title: Zařízení s přístupem root
 sidebar_position: 7
 ---
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Chcete-li se podívat, jak to funguje, [stáhněte si AdGuard pro Android](https://agrd.io/download-kb-adblock)
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li se podívat, jak to funguje, [stáhněte si AdGuard pro Android](https://agrd.io/download-kb-adblock)
 
 :::
 
 Vzhledem k bezpečnostním opatřením OS Android jsou některé funkce AdGuardu dostupné pouze na zařízeních s přístupem root. Zde je jejich seznam:
 
-- **HTTPS filtering in most apps** requires [installing a CA certificate into the system store](/adguard-for-android/features/settings#security-certificates), as most apps do not trust certificates in the user store. Instalace certifikátu do systémového úložiště je možná pouze na zařízeních s přístupem root
-- The [**Automatic proxy** routing mode](/adguard-for-android/features/settings#routing-mode) requires root access due to Android's restrictions on system-wide traffic filtering
-- The [**Manual proxy** routing mode](/adguard-for-android/features/settings#routing-mode) requires root access on Android 10 and above as it's no longer possible to determine the name of the app associated with a connection filtered by AdGuard
+- **Filtrování HTTPS filtrování ve většině aplikací** vyžaduje [instalaci certifikátu CA do systémového úložiště](/adguard-for-android/features/settings#security-certificates), protože většina aplikací nedůvěřuje certifikátům v uživatelském úložišti. Instalace certifikátu do systémového úložiště je možná pouze na zařízeních s přístupem root
+- [Režim směrování **Automatický proxy**](/adguard-for-android/features/settings#routing-mode) vyžaduje přístup root kvůli omezením systému Android na filtrování provozu v celém systému
+- [Režim směrování **Ruční proxy**](/adguard-for-android/features/settings#routing-mode) vyžaduje v systému Android 10 a novějším přístup root, protože již není možné určit název aplikace přidružené ke spojení filtrovanému AdGuardem

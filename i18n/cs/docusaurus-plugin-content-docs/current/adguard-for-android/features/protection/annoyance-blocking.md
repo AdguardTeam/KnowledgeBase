@@ -5,12 +5,12 @@ sidebar_position: 3
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Chcete-li se podívat, jak to funguje, [stáhněte si AdGuard pro Android](https://agrd.io/download-kb-adblock)
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li se podívat, jak to funguje, [stáhněte si AdGuard pro Android](https://agrd.io/download-kb-adblock)
 
 :::
 
-The Tracking protection module can be accessed by tapping the _Protection_ tab (second-left icon at the bottom of the screen) and then selecting _Annoyance blocking_.
+K modulu Ochrana před sledováním se dostanete klepnutím na kartu _Ochrana_ (druhá ikona vlevo dole na obrazovce) a výběrem možnosti _Blokování obtěžování_.
 
-This feature is based on AdGuard's annoyance filters and allows you to block popups, online assistant windows, cookie notifications, prompts to download mobile apps, and similar annoyances that aren't ads but still detract from your online experience. [Learn more about annoyance filters](/general/ad-filtering/adguard-filters/#adguard-filters)
+Tato funkce je založena na AdGuard filtrech obtěžování a umožňuje blokovat vyskakovací okna, okna online asistentů, oznámení o souborech cookies, výzvy ke stažení mobilních aplikací a podobné obtěžující prvky, které nejsou reklamou, ale přesto narušují váš online zážitek. [Další informace o filtrech obtěžování](/general/ad-filtering/adguard-filters/#adguard-filters)
 
 ![Annoyance blocking \*mobile\_border](https://cdn.adtidy.org/blog/new/lwujvannoyance.png)

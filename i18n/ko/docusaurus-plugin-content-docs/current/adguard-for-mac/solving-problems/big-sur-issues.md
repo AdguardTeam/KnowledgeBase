@@ -3,9 +3,9 @@ title: Compatibility issues with different macOS versions
 sidebar_position: 4
 ---
 
-:::info
+:::정보
 
-이 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Mac용 AdGuard에 대해 다룹니다. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -93,7 +93,7 @@ Now AdGuard can filter local proxies (mostly) without any problems. If you encou
 
 To configure an upstream proxy in AdGuard for Mac in Big Sur:
 
-1. Open AdGuard's settings  *Preferences → Network → Outbound proxy*.
+1. Open AdGuard's settings *Preferences → Network → Outbound proxy*.
 2. Choose HTTP, HTTPS, SOCKS4 or SOCKS5, depending on your proxy type.
 3. Fill in the fields:
     - `host` is the IP address of your proxy server,

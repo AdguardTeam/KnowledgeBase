@@ -1,6 +1,6 @@
 ---
 title: Features overview
-sidebar_position: 1
+sidebar_position: 10
 ---
 
 :::info
@@ -9,7 +9,7 @@ Este artigo é sobre a extensão do navegador AdGuard, que protege apenas o seu 
 
 :::
 
-AdGuard provides a range of software products that block ads and trackers on different platforms. One of the most popular AdGuard products is a free extension that works in five popular browsers: Chrome, Firefox, Edge, Opera, and Yandex Browser. Browser extensions include basic ad-blocking features but cannot be compared with full-featured desktop programs, such as [AdGuard for Windows](/adguard-for-windows/features/home-screen) and [AdGuard for Mac](/adguard-for-mac/overview).
+AdGuard provides a range of software products that block ads and trackers on different platforms. One of the most popular AdGuard products is a free extension that works in five popular browsers: Chrome, Firefox, Edge, Opera, and Yandex Browser. Browser extensions include basic ad-blocking features but cannot be compared with full-featured desktop programs, such as [AdGuard for Windows](/adguard-for-windows/features/home-screen) and [AdGuard for Mac](/adguard-for-mac/features/main).
 
 ![AdGuard Browser Extension for Chrome *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
 

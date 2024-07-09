@@ -13,7 +13,7 @@ sidebar_position: 1
 
 :::tip
 
-If you enter your email address when purchasing a license, or receive a license linked to your email address as a gift, an account will be created automatically. 要设置密码，用户可打开交易或礼物邮件内的链接。 您也可按上述方式注册。
+如您在购买许可证时输入了电子邮件地址或作为礼物接收了与您电子邮件地址关联的许可证，则账号是自动创建的。 要设置密码，用户可打开交易或礼物邮件内的链接。 您也可按上述方式注册。
 
 :::
 

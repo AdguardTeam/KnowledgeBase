@@ -5,7 +5,7 @@ sidebar_position: 4
 
 :::info
 
-Dieser Artikel behandelt AdGuard für Mac, einen multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie die App funktioniert, [laden Sie AdGuard für Mac herunter](https://agrd.io/download-kb-adblock)
+Dieser Artikel behandelt AdGuard für Mac, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie die App funktioniert, [laden Sie AdGuard für Mac herunter](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -93,7 +93,7 @@ Jetzt kann AdGuard lokale Proxys (meistens) problemlos filtern. Wenn Sie in den 
 
 So konfigurieren Sie einen Upstream-Proxy in AdGuard für Mac in Big Sur:
 
-1. Open AdGuard's settings  *Preferences → Network → Outbound proxy*.
+1. Open AdGuard's settings *Preferences → Network → Outbound proxy*.
 2. Wählen Sie HTTP, HTTPS, SOCKS4 oder SOCKS5, je nach Proxy-Typ.
 3. Füllen Sie die Felder aus:
     - `host` ist die IP-Adresse Ihres Proxy-Servers,

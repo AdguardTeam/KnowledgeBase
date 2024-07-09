@@ -5,7 +5,7 @@ sidebar_position: 5
 
 :::info
 
-In diesem Artikel geht es um AdGuard für Safari, der nur Ihren Safari-Browser schützt. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+In diesem Artikel geht es um AdGuard für Safari, der nur Ihren Safari-Browser schützt. Um Ihr gesamtes Gerät zu schützen, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -17,6 +17,6 @@ In diesem Artikel geht es um AdGuard für Safari, der nur Ihren Safari-Browser s
 4. Check _Allow in Private Browsing_ for all AdGuard extensions.
    ![Checked private browsing](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-sonoma-private.png)
 
-If this doesn’t help and ads are still not being blocked, please contact our support at support\@adguard.com.
+If this doesn’t help and ads are still not being blocked, please contact our support at support@adguard.com.
 
 If you only have problems with a specific page or website, you can report it directly from the browser: click the AdGuard for Safari icon next to the Safari search bar, and then click _Report an issue_.

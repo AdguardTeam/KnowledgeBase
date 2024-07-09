@@ -3,13 +3,15 @@ title: How to collect debug logs
 sidebar_position: 2
 ---
 
-:::info
+:::정보
 
 This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
 이 글에서는 디버그 로그를 수집하는 방법을 설명합니다. 디버그 로그는 잠재적으로 복잡한 문제를 해결하는 데 필요합니다. Debug logs provide detailed insight into the inner workings of AdGuard for Android. If the AdGuard support team asks you to provide debug logs, simply follow these instructions.
+
+> AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/en/privacy/android.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
 
 ### Collecting debug log
 

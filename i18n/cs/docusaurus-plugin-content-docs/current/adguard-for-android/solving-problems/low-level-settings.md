@@ -5,7 +5,7 @@ sidebar_position: 6
 
 :::info
 
-This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -93,11 +93,19 @@ Pokud je toto nastavení povoleno, AdGuard použije záložní odchozí připoje
 
 Pokud je toto nastavení povoleno, bude AdGuard před přidáním nebo aktualizací vlastních DNS serverů testovat odchozí připojení DNS.
 
+#### Filtrování zabezpečeného DNS
+
+Pokud je toto nastavení zapnuto, AdGuard použije všechny povolené DNS filtry a uživatelská pravidla DNS na šifrovaný provoz DNS-over-HTTPS (DoH), nikoli pouze na běžný DNS. Provoz DoH většinou pochází z Chrome a dalších prohlížečů, které mají nastavení *Zabezpečený DNS* (nebo podobné). Můžete použít *Filtrování zabezpečeného DNS* ve dvou různých režimech:
+
+- **Filtrování za chodu**. V tomto režimu AdGuard použije všechny povolené DNS filtry a uživatelská pravidla DNS na provoz DoH, ale nepřesměruje jej na místní proxy server DNS. Pokud je v nastavení prohlížeče uveden DNS server, bude tento server zpracovávat provoz DoH pro tento prohlížeč
+
+- **Přesměrování na DNS proxy**. V tomto režimu AdGuard použije všechny povolené DNS filtry a uživatelská pravidla DNS na přenosy DoH tak, že je přesměruje na místní proxy server DNS. Server DNS zadaný v nastavení DNS AdGuardu bude zpracovávat veškerý provoz DoH
+
 ### Filtrování
 
 #### Zachytit HAR
 
-Pokud je toto nastavení povoleno, bude AdGuard zachycovat soubory HAR. It will create a directory named “har” inside the app cache directory and add there information about all filtered HTTP requests in HAR 1.2 format that can be analyzed with the Fiddler program.
+Pokud je toto nastavení povoleno, bude AdGuard zachycovat soubory HAR. Vytvoří adresář s názvem “har” uvnitř adresáře mezipaměti aplikace a přidá do něj informace o všech filtrovaných požadavcích HTTP ve formátu HAR 1.2, které lze analyzovat pomocí programu Fiddler.
 
 Používejte to pouze pro účely ladění!
 

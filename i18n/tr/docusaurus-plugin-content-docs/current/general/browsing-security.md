@@ -1,5 +1,5 @@
 ---
-title: Browsing Security
+title: Gezinti koruması
 sidebar_position: 3
 ---
 
@@ -15,9 +15,9 @@ The scope and methods of checks depend on the product you use. In our browser ex
 
 We use the protocol [Safe Browsing API version 2.2](https://code.google.com/p/google-safe-browsing/wiki/Protocolv2Spec) for our work with filters. This protocol allows us to keep your personal data absolutely safe. Our server knows nothing about the websites that you visit. We use hash prefixes for checks, not the opened URLs.
 
-The figure below provides a general understanding of how the Browsing Security module works, using AdGuard for Windows as an example.
+Aşağıdaki şekil, örnek olarak Windows için AdGuard kullanılarak Gezinti koruması modülünün nasıl çalıştığına dair genel bir anlayış sunmaktadır.
 
-![Functioning algorithm of Browsing Security module](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_adguard_for_windows.png)
+![Gezinti koruması modülünün işleyiş algoritması](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_adguard_for_windows.png)
 
 ### AdGuard Tarayıcı Uzantısı
 
@@ -25,9 +25,9 @@ Browser extensions work differently, using the so-called [*Lookup API*](https://
 
 We bring to your attention that we never get any information that could allow us to determine which websites you visit and use that data in any way.
 
-An approximate algorithm of the functioning of the Browsing Security module is shown in the picture below.
+Gezinti koruması modülünün işleyişinin yaklaşık bir algoritması aşağıdaki resimde gösterilmektedir.
 
-![Functioning algorithm of Browsing Security module in AdGuard browser extensions.](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_extension.png)
+![AdGuard tarayıcı uzantılarında Gezinti koruması modülünün çalışma algoritması.](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_extension.png)
 
 ## AdGuard filters
 
@@ -47,13 +47,13 @@ This filter contains links to pages that could execute malicious code, leading t
 
 Most of the work is automated, so you can be sure that new malware and phishing addresses are added to our database as quickly as possible.
 
-### AdGuard Browsing Security Community
+### AdGuard Gezinti koruması Topluluğu
 
-An important tool for maintaining the highest level of filtering is the *AdGuard Browsing Security Community*. Any user of our products — be it AdGuard for Windows or our browser extension — can become a member of the community and help us in the making of AdGuard filters.
+An important tool for maintaining the highest level of filtering is the *AdGuard Browsing security Community*. Any user of our products — be it AdGuard for Windows or our browser extension — can become a member of the community and help us in the making of AdGuard filters.
 
-In the image below, you can see an algorithm of how Browsing Security Community works:
+Aşağıdaki resimde, Gezinti koruması Topluluğunun nasıl çalıştığına ilişkin bir algoritmayı görebilirsiniz:
 
-![The way AdGuard Browsing Security Community works](https://cdn.adtidy.org/public/Adguard/En/Articles/browsing_security_community.png)
+![AdGuard Gezinti koruması Topluluğunun çalışma şekli](https://cdn.adtidy.org/public/Adguard/En/Articles/browsing_security_community.png)
 
 ### Want to help?
 

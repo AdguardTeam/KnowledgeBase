@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -51,7 +51,7 @@ To learn everything about Stealth Mode and its many options, [read this article]
 
 ### Internetsicherheit
 
-Internetsicherheit bietet starken Schutz vor bösartigen und Phishing-Websites. AdGuard für Windows ist natürlich kein Antivirenprogramm. Die App kann weder das Herunterladen eines Virus stoppen, wenn es bereits begonnen hat, noch bereits vorhandene Viren löschen. Sie werden jedoch gewarnt, wenn Sie eine Website aufrufen oder eine Datei von einer Website herunterladen, deren Domain in unserer Datenbank „Nicht vertrauenswürdige Websites“ aufgeführt ist. You can find more information about how this module works in the [dedicated article](/general/browsing-security).
+Browsing security gives strong protection against malicious and phishing websites. AdGuard für Windows ist natürlich kein Antivirenprogramm. Die App kann weder das Herunterladen eines Virus stoppen, wenn es bereits begonnen hat, noch bereits vorhandene Viren löschen. Sie werden jedoch gewarnt, wenn Sie eine Website aufrufen oder eine Datei von einer Website herunterladen, deren Domain in unserer Datenbank „Nicht vertrauenswürdige Websites“ aufgeführt ist. You can find more information about how this module works in the [dedicated article](/general/browsing-security).
 
 In diesem Modul können Sie:
 
@@ -59,9 +59,9 @@ In diesem Modul können Sie:
 - akustische Benachrichtigungen aktivieren,
 - sich bereit erklären, anonyme sicherheitsrelevante Informationen an den AdGuard-Server zu übermitteln, damit wir die Datenbank mit bösartigen und Phishing-Websites auf dem neuesten Stand halten können.
 
-![Browsing Security \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/browsing-security.png)
+![Browsing security \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/browsing-security.png)
 
-In case you want to learn more about Browsing Security, read [this article](/general/browsing-security).
+In case you want to learn more about Browsing security, read [this article](/general/browsing-security).
 
 ### DNS-Schutz
 

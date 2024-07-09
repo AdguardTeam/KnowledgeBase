@@ -30,7 +30,7 @@ Let’s draw a small parallel between English and Polish for better understandin
 
 Now it is clear that the Polish *'godzinę'* (hour) has three different forms, whereas the English word changes its form with given numbers only twice.
 
-Except for Polish, there are a lot of other languages that have three plural forms and more, such as Russian, Serbian, Slovak, Czech etc. But not all of them obey the same rule. That's why it's so important to know how many plurals your language has, and how to use them correctly.
+Except for Polish, there are a lot of other languages that have three plural forms and more, such as Russian, Serbian, Slovak, Czech etc. Ancak hepsi aynı kurala uymaz. That's why it's so important to know how many plurals your language has, and how to use them correctly.
 
 ## Where can you learn about the number of plural forms? {#where-to-learn}
 
@@ -38,7 +38,7 @@ When you are faced with a translation that requires the use of plurals, you may 
 
 Here are some sources of information you can use.
 
-[Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contains a wide list of languages. The number of plural forms for different languages is shown this way: 'nplurals=2', 'nplurals=4' and so on. The numeral after the Equals sign '='  means the number of plural forms of the respective language.
+[Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contains a wide list of languages. The number of plural forms for different languages is shown this way: `nplurals=2`, `nplurals=4` and so on. The numeral after the Equals sign `=` means the number of plural forms of the respective language.
 
 Also, you can get information about plural forms in the [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). The CLDR Plural Rules indicate an additional word form for decimal numbers (1.5; 2.3; 100.1…), but we don’t use them in AdGuard translations.
 
@@ -48,7 +48,7 @@ First of all, we want to mention that not every AdGuard translation requires the
 
 Currently, we have 4 types of strings on Crowdin that involve the use of plurals.
 
-Let's take a closer look at them.
+Gelin onlara daha yakından bakalım.
 
 ### 1. Phrases with string keys ending in `.singular`, `.dual`, `.plural` {#1type}
 

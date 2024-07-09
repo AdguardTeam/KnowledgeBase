@@ -5,12 +5,12 @@ sidebar_position: 5
 
 :::info
 
-Este artículo trata sobre AdGuard para Mac, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel de sistema. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Este artículo trata sobre AdGuard para Mac, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel del sistema. Para ver cómo funciona, [descarga la app de AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## Advanced privacy protection
+## Protección de privacidad avanzada
 
-![Stealth Mode](https://cdn.adtidy.org/content/kb/ad_blocker/mac/stealth.png)
+![Modo sigiloso](https://cdn.adtidy.org/content/kb/ad_blocker/mac/stealth.png)
 
-_Advanced privacy protection_ protects your privacy by deleting cookies, UTM tags, online counters, and analytics systems. It doesn’t let websites collect your IP address, device and browser parameters, search queries, and personal information. [Learn more about Stealth Mode settings](/general/stealth-mode)
+La _Protección de privacidad avanzada_ protege tu privacidad eliminando cookies, etiquetas UTM, contadores en línea y sistemas de análisis. No permite que los sitios web recopilen tu dirección IP, parámetros de dispositivo y navegador, consultas de búsqueda e información personal. [Más información sobre la configuración del modo oculto](/general/stealth-mode)

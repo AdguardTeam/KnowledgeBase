@@ -31,7 +31,7 @@ sidebar_position: 2
 
 ## 查看购买
 
-「购买历史」部分显示有用户曾经用注册 AdGuard 账号时的电子邮件地址购买的所有许可证。 You will also find there information about the date of purchase, order ID, payment method, and cost of the purchase.
+「购买历史」部分显示有用户曾经用注册 AdGuard 账号时的电子邮件地址购买的所有许可证。 用户也会找到购买日期，订单号，支付方式，购买费用的相关信息。
 
 ## 联系支持
 

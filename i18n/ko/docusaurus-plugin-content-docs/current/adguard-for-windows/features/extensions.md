@@ -1,5 +1,5 @@
 ---
-title: Extensions
+title: 확장 프로그램
 sidebar_position: 3
 ---
 

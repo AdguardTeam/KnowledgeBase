@@ -25,7 +25,7 @@ Requires iOS 11.2 or later.
 
 ## iOS için AdGuard yüklemesi
 
-AdGuard for iOS is an app presented in the App Store. To install it on your device, open the App Store and tap the *Search* icon on the bottom of the screen.
+AdGuard for iOS is an app presented in the App Store. Cihazınıza yüklemek için App Store'u açın ve ekranın altındaki *Arama* simgesine dokunun.
 
 ![On the App Store main screen, tap Search *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/installation/iOS/en/1.png)
 

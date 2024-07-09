@@ -1,5 +1,5 @@
 ---
-title: Kullanıcı kuralları
+title: User rules
 sidebar_position: 4
 ---
 

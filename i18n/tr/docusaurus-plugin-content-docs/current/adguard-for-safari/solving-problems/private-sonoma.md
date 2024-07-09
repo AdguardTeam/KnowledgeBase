@@ -17,6 +17,6 @@ Bu makale, yalnızca Safari tarayıcınızı koruyan Safari için AdGuard hakkı
 4. Tüm AdGuard uzantıları için _Özel Gözatma'da İzin Ver_ öğesini işaretleyin.
    ![Özel gözatma kontrol edildi](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-sonoma-private.png)
 
-Bu işe yaramazsa ve reklamlar hala engellenmiyorsa, lütfen support\@adguard.com adresinden destek ekibimizle iletişime geçin.
+Bu işe yaramazsa ve reklamlar hala engellenmiyorsa, lütfen support@adguard.com adresinden destek ekibimizle iletişime geçin.
 
 Yalnızca belirli bir sayfa veya siteyle ilgili sorun yaşıyorsanız bunu doğrudan tarayıcıdan bildirebilirsiniz: Safari arama çubuğunun yanındaki Safari için AdGuard simgesine tıklayın ve ardından _Sorun bildir_ öğesine tıklayın.
