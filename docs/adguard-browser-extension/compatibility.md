@@ -9,7 +9,7 @@ This article is about the AdGuard Browser Extension, which safeguards only your 
 
 :::
 
-While AdGuard Browser Extension can block ads in browsers, AdGuard standalone programs filter all the traffic on your device, including from browsers and apps.
+While AdGuard Browser Extension can block ads in browsers, [AdGuard standalone programs](/docs/adguard-browser-extension/comparison-standalone.md) filter all the traffic on your device, including from browsers and apps.
 
 If you decide to install both the extension and the standalone program on your PC, you may encounter some compatibility issues. The problem is that in some cases the application and the extension may interfere with each other. Some websites will no longer be protected by the desktop program and will only be protected by the extension, which has fewer options. Also, filtering may work incorrectly for some websites. Therefore, we don't recommend using the extension together with the application.
 
