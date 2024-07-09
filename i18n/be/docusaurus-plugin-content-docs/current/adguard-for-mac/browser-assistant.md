@@ -15,7 +15,7 @@ AdGuard Browser Assistant is an extension installed in a browser, so there is no
 
 ### Compatibility with the main app
 
-If you got into the habit of using our previous AdGuard ad blocker extension [in Integration mode](/adguard-browser-extension/integration-mode), you may like the solution that we have developed for the new Browser Assistant.
+If you got into the habit of using our previous AdGuard ad blocker extension, we recommend you to read [this article](/docs/adguard-browser-extension/compatibility.md).
 
 :::note Background information
 

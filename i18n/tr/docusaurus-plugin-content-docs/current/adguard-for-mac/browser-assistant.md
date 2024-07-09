@@ -15,7 +15,7 @@ AdGuard Tarayıcı Asistanı, bir tarayıcıya yüklenen bir uzantıdır, bu ned
 
 ### Ana uygulama ile uyumluluk
 
-If you got into the habit of using our previous AdGuard ad blocker extension [in Integration mode](/adguard-browser-extension/integration-mode), you may like the solution that we have developed for the new Browser Assistant.
+If you got into the habit of using our previous AdGuard ad blocker extension [in Integration mode](/adguard-browser-extension/compatibility.md), you may like the solution that we have developed for the new Browser Assistant.
 
 :::note Background information
 
