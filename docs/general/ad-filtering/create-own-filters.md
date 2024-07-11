@@ -575,7 +575,7 @@ AdGuard will try to close the browser tab with any address that matches a blocki
   `$popup` modifier applies the `document` content type with a special flag which is passed to a blocking page.
   Blocking page itself can do some checks and close the window if it is really a popup.
   Otherwise, page should be loaded.
-  It can be combined with other request type modifiers, such as `$third-party` and `$important`.
+  It can be combined with other request type modifiers, such as `$third-party`, `$strict-third-party`, `$strict-first-party` and `$important`.
 - Rules with `$popup` modifier are not supported by AdGuard Content Blocker.
 
 :::
@@ -1264,7 +1264,7 @@ Here's how it works:
 
 :::caution Restrictions
 
-`$cookie` rules support three types of modifiers: `$domain`, `$~domain`, `$important`, `$third-party`, and `$~third-party`.
+`$cookie` rules support these types of modifiers: `$domain`, `$~domain`, `$important`, `$third-party`, `$~third-party`, `strict-third-party`, and `strict-first-party`.
 
 :::
 
@@ -1438,7 +1438,7 @@ preroll.ts
 :::caution Restrictions
 
 - `$hls` rules are only allowed [**in trusted filters**](#trusted-filters).
-- `$hls` rules are compatible with the modifiers `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest` only.
+- `$hls` rules are compatible with the modifiers `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest` only.
 - `$hls` rules only apply to HLS playlists, which are UTF-8 encoded text starting with the line `#EXTM3U`.
   Any other response will not be modified by these rules.
 - `$hls` rules do not apply if the size of the original response is more than 10 MB.
@@ -1688,7 +1688,7 @@ In AdGuard for Windows, Mac and Android **running CoreLibs v1.11 or later**, JSO
 
 :::caution Restrictions
 
-- `$jsonprune` rules are only compatible with these modifiers: `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
+- `$jsonprune` rules are only compatible with these modifiers: `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
 - `$jsonprune` rules do not apply if the size of the original response is greater than 10 MB.
 
 :::
@@ -1928,7 +1928,7 @@ When multiple `$xmlprune` rules match the same request, they are applied in lexi
 
 :::caution Restrictions
 
-- `$xmlprune` rules are only compatible with these modifiers: `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
+- `$xmlprune` rules are only compatible with these modifiers: `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case`, and `$xmlhttprequest`.
 - `$xmlprune` rules do not apply if the size of the original response is greater than 10 MB.
 
 :::
@@ -2202,7 +2202,7 @@ This type of rules can be used [**only in trusted filters**](#trusted-filters).
     - `transfer-encoding`
     - `upgrade`
 
-1. `$removeheader` rules are only compatible with `$domain`, `$third-party`, `$app`, `$important`, `$match-case`, and [content type modifiers](#content-type-modifiers) such as `$script` and `$stylesheet`. The rules which have any other modifiers are considered invalid and will be discarded.
+1. `$removeheader` rules are only compatible with `$domain`, `$third-party`, `$strict-third-party`, `$strict-first-party`, `$app`, `$important`, `$match-case`, and [content type modifiers](#content-type-modifiers) such as `$script` and `$stylesheet`. The rules which have any other modifiers are considered invalid and will be discarded.
 
 :::
 
