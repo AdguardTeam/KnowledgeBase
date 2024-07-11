@@ -19,6 +19,6 @@ If you have the desktop version of AdGuard installed on your PC, it is better to
 
 ![AdGuard Browser Assistant *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/ad_blocker_browser_extension_assistant.png)
 
-AdGuard Browser Assistant is a browser extension that works and feels just like AdGuard Browser Extension, but it's much lighter, and doesn't interfere with the desktop apps. You can [read more about Browser Assistant for Windows](/adguard-for-windows/browser-assistant) or [Mac](/docs/adguard-for-mac/features/browser-assistant.md), or [download it from our website](https://adguard.com/adguard-assistant/overview.html).
+AdGuard Browser Assistant is a browser extension that works and feels just like AdGuard Browser Extension, but it's much lighter and doesn't interfere with the desktop apps. You can [read more about Browser Assistant for Windows](/adguard-for-windows/browser-assistant) or [Mac](/docs/adguard-for-mac/features/browser-assistant.md), or [download it from our website](https://adguard.com/adguard-assistant/overview.html).
 
 AdGuard Browser Assistant is available in all major browsers.
