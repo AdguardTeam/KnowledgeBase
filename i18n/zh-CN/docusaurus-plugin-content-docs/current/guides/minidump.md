@@ -1,5 +1,5 @@
 ---
-title: How to create a minidump file to fix the BSoD error
+title: 如何创建 minidump 文件以修复 BSoD 错误
 sidebar_position: 8
 ---
 

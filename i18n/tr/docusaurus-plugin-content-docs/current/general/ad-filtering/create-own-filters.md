@@ -368,7 +368,7 @@ Rules with `$denyallow` modifier are not supported by AdGuard for iOS, Safari, a
 
 `$domain` limits the rule scope to requests made **from** the specified domains and their subdomains (as indicated by the [Referer](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer) HTTP header).
 
-**Syntax**
+**Söz dizimi**
 
 The modifier is a list of one or more expressions separated by the `|` symbol, each of which is matched against a domain in a particular way depending on its type (see below).
 
@@ -460,7 +460,7 @@ In AdGuard for Windows, Mac and Android with [CoreLibs][] v1.12 or later the `$d
 
 The `$header` modifier allows matching the HTTP response having a specific header with (optionally) a specific value.
 
-**Syntax**
+**Söz dizimi**
 
 ```text
 $header "=" h_name [":" h_value]
@@ -861,7 +861,7 @@ Tam değiştirici adını kullanmak yerine daha kısa bir ad (takma ad) kullanab
 
 Disables specific userscripts or all userscripts for a given domain.
 
-**Syntax**
+**Söz dizimi**
 
 ```text
 $extension[="userscript_name1"[|"userscript_name2"[|"userscript_name3"[...]]]]
@@ -918,7 +918,7 @@ Forbids adding of javascript code to the page. You can read about scriptlets and
 
 Disables the Stealth Mode module for all corresponding pages and requests.
 
-**Syntax**
+**Söz dizimi**
 
 ```text
 $stealth [= opt1 [| opt2 [| opt3 [...]]]]
@@ -1101,15 +1101,15 @@ These modifiers are able to completely change the behavior of basic rules.
 - ✅ — fully supported
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
 <!-- - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions -->
-- ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product
-- ❌ — not supported
-- 👎 — deprecated; still supported but will be removed in the future
+- ⏳ — uygulanan veya uygulanması planlanan ancak henüz hiçbir üründe bulunmayan özellik
+- ❌ — desteklenmiyor
+- 👎 — kullanımdan kaldırıldı; hâlâ destekleniyor ancak gelecekte kaldırılacaktır
 
 :::
 
 #### **`$all`** {#all-modifier}
 
-`$all` modifier is made of [all content-types modifiers](#content-type-modifiers) and [`$popup`](#popup-modifier). E.g. rule `||example.org^$all` is converting into rule:
+`$all` modifier is made of [all content-types modifiers](#content-type-modifiers) and [`$popup`](#popup-modifier). Örneğin rule `||example.org^$all` is converting into rule:
 
 ```adblock
 ||example.org^$document,subdocument,font,image,media,object,other,ping,script,stylesheet,websocket,xmlhttprequest,popup
@@ -1164,7 +1164,7 @@ The `$cookie` modifier completely changes rule behavior. Instead of blocking a r
 
 In case if multiple `$cookie` rules match a single request, we will apply each of them one by one.
 
-**Syntax**
+**Söz dizimi**
 
 ```adblock
 $cookie [= name[; maxAge = seconds [; sameSite = strategy ]]]
@@ -1176,7 +1176,7 @@ where:
 - **`seconds`** — number of seconds for current time to offset the expiration date of cookie.
 - **`strategy`** — string for [Same-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite) strategy to make cookie use.
 
-For example,
+Örneğin,
 
 ```adblock
 ||example.org^$cookie=NAME;maxAge=3600;sameSite=lax
@@ -1233,7 +1233,7 @@ For the requests matching a `$csp` rule, we will strengthen response security po
 
 In case if multiple `$csp` rules match a single request, we will apply each of them.
 
-**Syntax**
+**Söz dizimi**
 
 `$csp` value syntax is similar to the Content Security Policy header syntax.
 
@@ -1271,7 +1271,7 @@ The word "segment" in this document means either a "Media Segment" or a "playlis
 
 :::
 
-**Syntax**
+**Söz dizimi**
 
 - `||example.org^$hls=urlpattern` removes segments whose URL matches the URL pattern `urlpattern`. The pattern works just like the one in basic URL rules, however, the characters `/`, `$` and `,` must be escaped with `\` inside `urlpattern`.
 - `||example.org^$hls=/regexp/options` removes segments where the URL or one of the tags (for certain options, if present) is matched by the regular expression `regexp`. Available `options` are:
@@ -1415,7 +1415,7 @@ The `$inline-font` modifier is designed to block inline fonts embedded into the 
 
 In AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.11 or later, `$jsonprune` also supports modifying JSONP (padded JSON) documents.
 
-**Syntax**
+**Söz dizimi**
 
 - `||example.org^$jsonprune=expression` removes items that match the modified JSONPath expression `expression` from the response.
 
@@ -1642,7 +1642,7 @@ Rules with the `$jsonprune` modifier are supported by AdGuard for Windows, Mac, 
 
 `$xmlprune` rules modify the response to a matching request by removing XML items that match an [XPath 1.0](https://www.w3.org/TR/1999/REC-xpath-19991116/) expression. The expression must return a [node-set](https://www.w3.org/TR/1999/REC-xpath-19991116/#node-sets). `$xmlprune` rules do not modify responses which are not well-formed XML documents.
 
-**Syntax**
+**Söz dizimi**
 
 - `||example.org^$xmlprune=expression` removes items that match the XPath expression `expression` from the response.
 
@@ -1668,7 +1668,7 @@ When multiple `$xmlprune` rules match the same request, they are applied in lexi
 - `||example.org^$xmlprune=/bookstore/book[position() mod 2 = 1]` removes odd-numbered books from the bookstore.
 
 <details>
-<summary>Input</summary>
+<summary>Giriş</summary>
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -1924,7 +1924,7 @@ For the requests matching a `$permissions` rule, AdGuard strengthens response's 
 
 In case if multiple `$permissions` rules match a single request, AdGuard will apply each of them.
 
-**Syntax**
+**Söz dizimi**
 
 `$permissions` value syntax is similar to the `Permissions-Policy` header [syntax](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy) with one exception: comma that separates several features **MUST** be escaped — see examples below. The list of the available directives is available [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives).
 
@@ -1955,7 +1955,7 @@ Rules with the `$permissions` modifier are supported by AdGuard for Windows, Mac
 
 AdGuard is able to redirect web requests to a local "resource".
 
-**Syntax**
+**Söz dizimi**
 
 AdGuard uses the same filtering rule syntax as uBlock Origin. Also, it is compatible with ABP `$rewrite=abp-resource` modifier.
 
@@ -2038,7 +2038,7 @@ Rules with `$removeheader` modifier are intended to remove headers from HTTP req
 
 Just like `$csp`, `$redirect`, `$removeparam`, and `$cookie`, this modifier exists independently, rules with it do not depend on the regular basic rules, i.e. regular exception or blocking rules will not affect it. By default, it only affects response headers. However, you can also change it to remove headers from HTTP requests as well.
 
-**Syntax**
+**Söz dizimi**
 
 **Basic syntax**
 
@@ -2152,13 +2152,13 @@ Rules with `$removeparam` modifier are intended to strip query parameters from r
 
 `$removeparam` rules that do not have any [content type modifiers](#content-type-modifiers) will match only requests where content type is `document`.
 
-**Syntax**
+**Söz dizimi**
 
-**Basic syntax**
+**Temel söz dizimi**
 
 - `$removeparam=param` removes query parameter with the name `param` from URLs of any request, e.g. a request to `http://example.com/page?param=1&another=2` will be transformed into `http://example.com/page?another=2`.
 
-:::note Compatibility
+:::note Uyumluluk
 
 Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac and, Android with [CoreLibs][] v1.7 or later and AdGuard Browser Extension v3.6 or later.
 
@@ -2272,7 +2272,7 @@ This modifier completely changes the rule behavior. If it is applied, the rule w
 
 You will need some knowledge of regular expressions to use `$replace` modifier.
 
-**Features**
+**Özellikler**
 
 - `$replace` rules apply to any text response, but will not apply to binary (`media`, `image`, `object`, etc.).
 - `$replace` rules do not apply if the size of the original response is more than 10 MB.
@@ -2286,7 +2286,7 @@ You will need some knowledge of regular expressions to use `$replace` modifier.
 
 In case if multiple `$replace` rules match a single request, we will apply each of them. **The order is defined alphabetically.**
 
-**Syntax**
+**Söz dizimi**
 
 In general, `$replace` syntax is similar to replacement with regular expressions [in Perl](http://perldoc.perl.org/perlrequick.html#Search-and-replace).
 
@@ -2344,7 +2344,7 @@ Rules with `$replace` modifier are supported by AdGuard for Windows, Mac, and An
 
 The `$urltransform` rules allow you to modify the request URL by replacing the text matched by the regular expression.
 
-**Features**
+**Özellikler**
 
 - `$urltransform` rules apply to any request URL text.
 - `$urltransform` rules can also **modify the query part** of the URL.
@@ -2357,7 +2357,7 @@ The `$urltransform` value can be empty for exception rules.
 
 If multiple `$urltransform` rules match a single request, we will apply each of them. **The order is defined alphabetically.**
 
-**Syntax**
+**Söz dizimi**
 
 `$urltransform` syntax is similar to replacement with regular expressions [in Perl](http://perldoc.perl.org/perlrequick.html#Search-and-replace).
 
@@ -2452,7 +2452,7 @@ Rules with `noop` modifier are not supported by AdGuard Content Blocker.
 
 #### **`$empty` (deprecated)** {#empty-modifier}
 
-:::caution Deprecation notice
+:::caution Kullanımdan kaldırma bildirimi
 
 This modifier is deprecated in favor of the [`$redirect` modifier](#redirect-modifier). Rules with `$empty` are still supported and being converted into `$redirect=nooptext` now but the support shall be removed in the future.
 
@@ -2472,7 +2472,7 @@ Rules with `$empty` modifier are not supported by AdGuard Content Blocker, AdGua
 
 #### **`$mp4` (deprecated)** {#mp4-modifier}
 
-:::caution Deprecation notice
+:::caution Kullanımdan kaldırma bildirimi
 
 This modifier is deprecated in favor of the [`$redirect` modifier](#redirect-modifier). Rules with `$mp4` are still supported and being converted into `$redirect=noopmp4-1s,media` now but the support shall be removed in the future.
 
@@ -2720,7 +2720,7 @@ Element hiding rules are used to hide the elements of web pages. It is similar t
 
 Element hiding rules may operate differently [depending on the platform](#cosmetic-rules-priority).
 
-#### Syntax
+#### Söz dizimi
 
 ```text
    rule = [domains] "##" selector
@@ -2788,7 +2788,7 @@ We recommend to use this kind of exceptions only if it is not possible to change
 
 Sometimes, simple hiding of an element is not enough to deal with advertising. For example, blocking an advertising element can just break the page layout. In this case AdGuard can use rules that are much more flexible than hiding rules. With these rules you can basically add any CSS styles to the page.
 
-**Syntax**
+**Söz dizimi**
 
 ```text
    rule = [domains] "#$#" selector "{" style "}"
@@ -2869,7 +2869,7 @@ Rules with extended CSS selectors are not supported by AdGuard Content Blocker.
 
 :::
 
-**Syntax**
+**Söz dizimi**
 
 Regardless of the CSS pseudo-classes you are using in the rule, you can use special markers to force applying these rules by ExtendedCss. It is recommended to use these markers for all extended CSS cosmetic rules so that it was easier to find them.
 
@@ -2925,7 +2925,7 @@ Synonyms `:-abp-has()` is supported by ExtendedCss for better compatibility.
 
 :::
 
-**Syntax**
+**Söz dizimi**
 
 ```text
 [target]:has(selector)
@@ -3022,7 +3022,7 @@ The `:contains()` pseudo-class uses the `textContent` element property for match
 
 Synonyms `:-abp-contains()` and `:has-text()` are supported for better compatibility.
 
-**Syntax**
+**Söz dizimi**
 
 ```text
 [target]:contains(match)
@@ -3071,7 +3071,7 @@ Only the `div` with `id=match` is selected because the next element does not con
 
 The `:matches-css()` pseudo-class allows to match the element by its current style properties. The work of the pseudo-class is based on using the [`Window.getComputedStyle()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle) method.
 
-**Syntax**
+**Söz dizimi**
 
 ```text
 [target]:matches-css([pseudo-element, ] property: pattern)
@@ -3138,7 +3138,7 @@ Obsolete pseudo-classes `:matches-css-before()` and `:matches-css-after()` are n
 
 The `:matches-attr()` pseudo-class allows selecting an element by its attributes, especially if they are randomized.
 
-**Syntax**
+**Söz dizimi**
 
 ```text
 [target]:matches-attr("name"[="value"])
@@ -3194,7 +3194,7 @@ Regexp patterns **do not support** flags.
 
 The `:matches-property()` pseudo-class allows selecting an element by matching its properties.
 
-**Syntax**
+**Söz dizimi**
 
 ```text
 [target]:matches-property("name"[="value"])
@@ -3269,7 +3269,7 @@ Regexp patterns **do not support** flags.
 
 The `:xpath()` pseudo-class allows selecting an element by evaluating an XPath expression.
 
-**Syntax**
+**Söz dizimi**
 
 ```text
 [target]:xpath(expression)
@@ -3315,7 +3315,7 @@ subject:nth-ancestor(n)
 - `subject` — gerekli, standart veya genişletilmiş CSS seçici
 - `n` — required, number >= 1 and < 256, distance to the needed ancestor from the element selected by `subject`
 
-**Syntax**
+**Söz dizimi**
 
 ```text
 subject:nth-ancestor(n)
@@ -3353,7 +3353,7 @@ For such DOM:
 
 The `:upward()` pseudo-class allows to lookup the ancestor relative to the previously selected element.
 
-**Syntax**
+**Söz dizimi**
 
 ```text
 subject:upward(ancestor)
@@ -3395,7 +3395,7 @@ Sometimes, it is necessary to remove a matching element instead of hiding it or 
 
 **Pseudo-class `:remove()` can be placed only at the end of a selector.**
 
-**Syntax**
+**Söz dizimi**
 
 ```text
 ! pseudo-class
@@ -3435,7 +3435,7 @@ Rules with the `remove` pseudo-property must use `#$?#` marker: `$` for CSS-styl
 
 The `:is()` pseudo-class allows to match any element that can be selected by any of selectors passed to it. Invalid selectors are skipped and the pseudo-class deals with valid ones with no error thrown. Our implementation of the [native `:is()` pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/:is).
 
-**Syntax**
+**Söz dizimi**
 
 ```text
 [target]:is(selectors)
@@ -3481,7 +3481,7 @@ Due to limitations `:is(*:not([class]) > .banner)'` does not work but `:is(*:not
 
 The `:not()` pseudo-class allows to select elements which are *not matched* by selectors passed as argument. Invalid argument selectors are not allowed and error is to be thrown. Our implementation of the [`:not()` pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/:not).
 
-**Syntax**
+**Söz dizimi**
 
 ```text
 [target]:not(selectors)
@@ -3543,7 +3543,7 @@ HTML filtering rules are supported by AdGuard for Windows, Mac, Android, and AdG
 
 :::
 
-### Syntax
+### Söz dizimi
 
 ```text
      selector = [tagName] [attributes] [pseudoClasses]
@@ -3584,7 +3584,7 @@ In addition to usual attributes, which value is every element checked for, there
 
 #### `tag-content`
 
-:::caution Deprecation notice
+:::caution Kullanımdan kaldırma bildirimi
 
 This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class where it is available.
 
@@ -3616,7 +3616,7 @@ The `tag-content` special attribute must not appear in a selector to the left of
 
 #### `wildcard`
 
-:::caution Deprecation notice
+:::caution Kullanımdan kaldırma bildirimi
 
 This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class where it is available.
 
@@ -3638,7 +3638,7 @@ The `wildcard` special attribute must not appear in a selector to the left of a 
 
 #### `max-length`
 
-:::caution Deprecation notice
+:::caution Kullanımdan kaldırma bildirimi
 
 This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class with a regular expression where it is available.
 
@@ -3666,7 +3666,7 @@ The `max-length` special attribute must not appear in a selector to the left of 
 
 #### `min-length`
 
-:::caution Deprecation notice
+:::caution Kullanımdan kaldırma bildirimi
 
 This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class with a regular expression where it is available.
 
@@ -3692,7 +3692,7 @@ The `min-length` special attribute must not appear in a selector to the left of 
 
 #### `:contains()`
 
-##### Syntax
+##### Söz dizimi
 
 ```text
 :contains(unquoted text)
@@ -3704,7 +3704,7 @@ veya
 :contains(/reg(ular )?ex(pression)?/)
 ```
 
-:::note Compatibility
+:::note Uyumluluk
 
 `:-abp-contains()` and `:has-text()` are synonyms for `:contains()`.
 
@@ -3754,7 +3754,7 @@ AdGuard supports a special type of rules that allows you to inject any javascrip
 
 We **strongly recommend** using [scriptlets](#scriptlets) instead of JavaScript rules whenever possible. JS rules are supposed to help with debugging, but as a long-time solution a scriptlet rule should be used.
 
-**Syntax**
+**Söz dizimi**
 
 ```text
 rule = [domains] "#%#" script
@@ -3813,7 +3813,7 @@ AdGuard supports a lot of different scriptlets. In order to achieve cross-blocke
 
 :::
 
-**Syntax**
+**Söz dizimi**
 
 ```text
 rule = [domains] "#%#//scriptlet(" scriptletName arguments ")"
@@ -3943,7 +3943,7 @@ Such rules with `$domain` modifier are supported by AdGuard for Windows, Mac, An
 
 `$path` modifier limits the rule application area to specific locations or pages on websites.
 
-**Syntax**
+**Söz dizimi**
 
 ```text
 $path ["=" pattern]
@@ -3978,7 +3978,7 @@ Rules with `$path` modifier are not supported by AdGuard Content Blocker.
 
 `$url` modifier limits the rule application area to URLs matching the specified mask.
 
-**Syntax**
+**Söz dizimi**
 
 ```text
 url = pattern
@@ -4022,7 +4022,7 @@ Preprocessor directives can be used in the user rules or in the custom filters.
 
 The `!#include` directive allows to include contents of a specified file into the filter. It supports only files from the same origin to make sure that the filter maintainer is in control of the specified file. The included file can also contain pre- directives (even other `!#include` directives). Ad blockers should consider the case of recursive `!#include` and implement a protection mechanism.
 
-**Syntax**
+**Söz dizimi**
 
 ```adblock
 !#include file_path
@@ -4068,7 +4068,7 @@ Whitespaces matter. `!#if` is a valid directive, while `!# if` is not.
 
 :::
 
-**Syntax**
+**Söz dizimi**
 
 ```adblock
 !#if (conditions)
@@ -4169,7 +4169,7 @@ The main disadvantage of using multiple content blockers is that rules from diff
 
 :::
 
-**Syntax**
+**Söz dizimi**
 
 ```adblock
 !#safari_cb_affinity(content_blockers)
@@ -4211,7 +4211,7 @@ example.org#@#.adBanner
 
 "Hint" is a special comment, instruction to the filters compiler used on the server side (see [FiltersRegistry][]).
 
-**Syntax**
+**Söz dizimi**
 
 ```adblock
 !+ HINT_NAME1(PARAMS) HINT_NAME2(PARAMS)
@@ -4436,7 +4436,7 @@ The following scriptlets also may be used for debug purposes:
 - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions
 - ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product
 - ❌ — not supported
-- 👎 — deprecated; still supported but will be removed in the future
+- 👎 — kullanımdan kaldırıldı; hâlâ destekleniyor ancak gelecekte kaldırılacaktır
 - 🚫 — removed and no longer supported
 
 :::

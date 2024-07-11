@@ -30,7 +30,7 @@ Außerdem können Sie jederzeit spezielle Apps für das Aufnehmen von Bildschirm
 
 ### iOS {#ios}
 
-Any iOS device (except very old ones) lets you take a screenshot using standard tools.
+Mit jedem iOS-Gerät (außer sehr alten Geräten) können Sie mit den Standardwerkzeugen einen Bildschirmfoto erstellen.
 
 Um ein Bildschirmfoto auf einem iOS-Gerät zu erstellen, verwenden Sie die folgende Kombination:
 
@@ -52,11 +52,11 @@ Auf manchen Laptops müssen Sie *Fn* gedrückt halten und dann *Druck* drücken.
 
 Windows erfasst den gesamten Bildschirm und kopiert ihn in die Zwischenablage.
 
-To take a screenshot of an active window, use the following shortcut:
+Um ein Bildschirmfoto von einem aktiven Fenster zu machen, verwenden Sie das folgende Tastaturkürzel:
 
 - **Halten Sie *Alt* gedrückt und drücken Sie *Druck* (oder *Fn + Alt + Druck* auf einigen Laptops)**
 
-To take a screenshot of a specific area, use the following shortcut:
+Um ein Bildschirmfoto von einem bestimmten Bereich zu machen, verwenden Sie das folgende Tastaturkürzel:
 
 - ***Drücken Sie ***Win + Umschalt + S******
 
@@ -76,11 +76,11 @@ Um ein Bildschirmfoto auf dem Mac zu erstellen, verwenden Sie das folgende Tasta
 
 Ihr Mac erfasst den gesamten Bildschirm und speichert ihn als Datei auf dem Desktop.
 
-To take a screenshot of an active window, use the following shortcut:
+Um ein Bildschirmfoto von einem aktiven Fenster zu machen, verwenden Sie das folgende Tastaturkürzel:
 
 - **Drücken und halten Sie *⌘ Cmd + Umschalt + 4 + Leertaste*. Der Zeiger verwandelt sich in ein Kamerasymbol. Klicken Sie auf das Fenster, um es zu erfassen. Drücken Sie die Esc-Taste, um die Aufnahme eines Bildschirmfotos abzubrechen**
 
-To take a screenshot of a specific area, use the following shortcut:
+Um ein Bildschirmfoto von einem bestimmten Bereich zu machen, verwenden Sie das folgende Tastaturkürzel:
 
 - ***Drücken Sie ***⌘ Cmd + Umschalt + 5******. Ziehen Sie das Fadenkreuz, um den gewünschten Bereich auszuwählen. Lassen Sie die Maus oder das Trackpad los, um ein Bildschirmfoto zu erstellen, und drücken Sie Esc, um den Vorgang abzubrechen.
 
@@ -90,6 +90,6 @@ Um ein Bildschirmfoto von der *Touch Bar* (MacBook Pro) zu erstellen, verwenden 
 
 Ihr Mac nimmt die gesamte *Touch Bar* auf und speichert sie als Datei auf dem Desktop.
 
-Um ein Bildschirmfoto in die Zwischenablage zu kopieren, anstatt es zu speichern, halten Sie *Strg* zusammen mit einem der oben genannten Tastaturkürzel gedrückt. Then you can paste the screenshot (from the clipboard) into a document or an image you are currently editing by using *Cmd + V* shortcut.
+Um ein Bildschirmfoto in die Zwischenablage zu kopieren, anstatt es zu speichern, halten Sie *Strg* zusammen mit einem der oben genannten Tastaturkürzel gedrückt. Dann können Sie das Bildschirmfoto (aus der Zwischenablage) mit der Tastenkombination *Cmd + V* in ein Dokument oder ein Bild einfügen, das Sie gerade bearbeiten.
 
 Sie können auch Bildschirmfotos erstellen, indem Sie die **Vorschau** verwenden und **Bildschirmfoto aufnehmen** (von dem ausgewählten Bereich, Fenster oder dem gesamten Bildschirm) wählen. Mit der **Vorschau** können Sie Ihre Bildschirmfotos in JPG, TIFF, PDF und anderen Dateiformaten speichern.
