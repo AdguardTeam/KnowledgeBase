@@ -3,6 +3,6 @@ title: AdGuard Пользовательские
 sidebar_position: 7
 ---
 
-![Custom tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/AGCustom.png)
+![Вкладка Пользовательские](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/AGCustom.png)
 
-If you need more filters, you can add them to _AdGuard Custom_. Чтобы добавить пользовательский фильтр, введите его URL или путь к файлу. You can find new filters at [filterlists.com](https://filterlists.com/).
+Если вам нужно больше фильтров, вы можете добавить их в разделе _AdGuard Пользовательские_. Чтобы добавить пользовательский фильтр, введите его URL или путь к файлу. Новые фильтры вы можете найти на [filterlists.com](https://filterlists.com/).

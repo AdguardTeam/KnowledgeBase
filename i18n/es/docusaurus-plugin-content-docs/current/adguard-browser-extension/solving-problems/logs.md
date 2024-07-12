@@ -51,6 +51,8 @@ sidebar_position: 1
 
 ## Enviar registros
 
+> AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/en/privacy/browser-extension.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+
 Ahora que has recopilado los registros, sigue estos pasos para enviarlos a nuestro equipo de desarrollo:
 
 1. Informa el error en [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose).

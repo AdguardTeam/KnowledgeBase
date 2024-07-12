@@ -17,7 +17,9 @@ sidebar_position: 4
 2. 向下滚动并单击「_导出日志_」。
 3. 选择保存 .zip 文件的位置，然后点击「_保存_」。
 
-现在您可以将此文件发送至 support@adguard.com，或将其附加到您在 GitHub 上的错误报告中：
+Now you can send this file to support@adguard.com or attach it to your bug report on GitHub.
+
+> AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/safari.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
 
 1. 打开[适用于 Safari 的 AdGuard GitHub 存储库](https://github.com/AdguardTeam/AdGuardForSafari/issues)，然后点击「_New issue_」。
 2. 将日志记录文件发送至 devteam@adguard.com。 包括错误发生的时间并附加指向您的问题或其编号的链接（它在标题旁边显示为 #number）。

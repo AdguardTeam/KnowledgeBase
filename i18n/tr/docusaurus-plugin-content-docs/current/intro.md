@@ -6,7 +6,7 @@ slug: /
 
 ## AdGuard Reklam Engelleyici nedir?
 
-AdGuard, 10 yılı aşkın deneyimi, çeşitli platformlar için neredeyse onlarca ürünü ve 30 milyondan fazla kullanıcı yüklemesiyle reklam engelleme yazılımı pazarının liderlerinden biridir. Çoğu tarayıcı tabanlı olan diğer reklam engelleme çözümlerinin aksine, hem masaüstü hem de mobil olmak üzere tüm büyük platformlar için bağımsız uygulamalar sunuyoruz. AdGuard uygulamaları tarayıcı uzantılarından daha güçlüdür, daha fazlasını engelleyebilir ve bunu daha verimli bir şekilde yapabilir:
+AdGuard, 15 yılı aşkın deneyimi, çeşitli platformlar için neredeyse onlarca ürünü ve 375 milyondan fazla kullanıcı yüklemesiyle reklam engelleme yazılımı pazarının liderlerinden biridir. Çoğu tarayıcı tabanlı olan diğer reklam engelleme çözümlerinin aksine, hem masaüstü hem de mobil olmak üzere tüm büyük platformlar için bağımsız uygulamalar sunuyoruz. AdGuard uygulamaları tarayıcı uzantılarından daha güçlüdür, daha fazlasını engelleyebilir ve bunu daha verimli bir şekilde yapabilir:
 
 - [Windows için AdGuard](/adguard-for-windows/features/home-screen)
 - [Mac için AdGuard](/adguard-for-mac/features/main)

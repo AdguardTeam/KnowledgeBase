@@ -1,5 +1,5 @@
 ---
-title: How to report websites and apps
+title: 웹사이트 및 앱 신고 방법
 sidebar_position: 3
 ---
 
@@ -12,7 +12,7 @@ sidebar_position: 3
 - 필터 중 하나의 작성자가 규칙을 만들 때 실수를 했습니다.
 - 광고 재삽입. 이 방법에 대한 자세한 내용은 [블로그](https://adguard.com/en/blog/ad-reinsertion.html)에서 확인할 수 있습니다.
 
-You can help us by filling in a form with examples of ads you have encountered. 이 작업을 수행하려면 사용 중인 OS의 지침을 따르세요.
+귀하가 접한 광고에 대해 양식을 작성하여 도움을 줄 수 있습니다. 이 작업을 수행하려면 사용 중인 OS의 지침을 따르세요.
 
 ## 이 웹사이트에 관한 불만 사항 제출 {#report}
 
@@ -53,7 +53,7 @@ You can help us by filling in a form with examples of ads you have encountered. 
 
 ### Mac {#mac}
 
-- Open [AdGuard Browser Assistant](/adguard-for-mac/features/browser-assistant) and hit **Report an issue**:
+- [AdGuard 브라우저 어시스턴트를](/adguard-for-mac/features/browser-assistant) 열고 **문제 신고**를 누릅니다.
 
 ![mac *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/guides/browser-assistant-mac.png)
 
@@ -146,4 +146,4 @@ You can help us by filling in a form with examples of ads you have encountered. 
 
 ### **타사 광고 차단기**
 
-일부 브라우저 및 바이러스 백신 프로그램(예: Yandex 브라우저, 카스퍼스키 등)에는 광고 차단 기능이 내장되어 있습니다. 사이트 운영에 영향을 미치고 문제를 일으킬 수 있습니다. If you are using such programs, first make sure that the problem is caused by **AdGuard**: disable **AdGuard** filtering and try to reproduce the problem. 문제가 해결되지 않으면 다른 애플리케이션이나 브라우저로 인해 발생한 것일 수 있습니다. **AdGuard**로 인해 문제가 발생한 경우 이전 단락에서 설명한 단계를 따르세요.
+일부 브라우저 및 바이러스 백신 프로그램(예: Yandex 브라우저, 카스퍼스키 등)에는 광고 차단 기능이 내장되어 있습니다. 사이트 운영에 영향을 미치고 문제를 일으킬 수 있습니다. 이러한 프로그램을 사용하는 경우, 먼저 **AdGuard**로 인해 문제가 발생했는지 확인하세요. 이를 위해 **AdGuard** 필터링을 비활성화하고 문제를 재현해 보세요. 문제가 해결되지 않으면 다른 애플리케이션이나 브라우저로 인해 발생한 것일 수 있습니다. **AdGuard**로 인해 문제가 발생한 경우 이전 단락에서 설명한 단계를 따르세요.

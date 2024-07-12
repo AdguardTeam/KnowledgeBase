@@ -9,11 +9,11 @@ sidebar_position: 6
 
 最开始，我们有以下的许可证用来激活 AdGuard 软件：
 
-**Standard** was for desktop applications, AdGuard for Windows and AdGuard for Mac
+**标准版**：用于 Windows/Mac 版 AdGuard 桌面端应用程序
 
-**Mobile** was for mobile apps, AdGuard for Android and AdGuard for iOS
+**移动版**：用于 Android/iOS 版 AdGuard 移动端应用程序
 
-**Premium** was a license that combined desktop and mobile applications
+**高级版**：同时用于桌面端和移动端的许可证
 
 标准版和移动版可以支付用于1到9台设备。
 
@@ -27,7 +27,7 @@ sidebar_position: 6
 
 2019年10月 AdGuard 有新版许可证。用户仍然可以选择两个效期，即一年和终身，但是许可证的类型改变了。现在我们有**个人版**（可以用于3台设备）和**家庭版**（可以用于9台设备）。
 
-请注意：**新版的许可证密钥可以用于所有设备上，无论是哪一种桌面端或移动端组合。 For example, a Personal license can be used on Android, Mac and iOS, just like on two Windows computers and an Apple tablet.**
+请注意：**新版的许可证密钥可以用于所有设备上，无论是哪一种桌面端或移动端组合。 比如说，个人版的许可证可以用于三台设备，即 Android、Mac 和 iOS，或是两个 Windows 电脑和一个 Apple 平板电脑上等等。**
 
 ## 旧版许可证现在怎么用？
 
