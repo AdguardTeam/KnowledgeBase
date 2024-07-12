@@ -594,6 +594,12 @@ You can use a shorter name (alias) instead of using the full modifier name: `$st
 
 :::
 
+:::info Compatibility
+
+Rules with the `$strict-first-party` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.16 or later.
+
+:::
+
 #### **`$strict-third-party`** {#strict-third-party-modifier}
 
 Works the same as the [`$third-party`](#third-party-modifier) modifier but also treats requests from the domain to its subdomains and vice versa as third-party requests.
@@ -605,6 +611,12 @@ Works the same as the [`$third-party`](#third-party-modifier) modifier but also 
 :::note
 
 You can use a shorter name (alias) instead of using the full modifier name: `$strict3p`.
+
+:::
+
+:::info Compatibility
+
+Rules with the `$strict-third-party` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.16 or later.
 
 :::
 
