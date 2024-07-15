@@ -137,7 +137,7 @@ If this setting is enabled, AdGuard will filter requests sent over HTTP/3 in add
 
 If this is enabled, the *Filter DNS requests* switch will be displayed in the *Add proxy server* dialog. Use it to enable filtering of DNS requests passing through the specified proxy.
 
-### Protection
+### Schutz
 
 #### Port ranges
 

@@ -31,7 +31,7 @@ If you need to roll out an update, use this command: `Msiexec /q /i AdGuard.msi 
 
 :::not
 
-You must run these commands with admin privileges.
+Bu komutları yönetici ayrıcalıklarıyla çalıştırmalısınız.
 
 :::
 

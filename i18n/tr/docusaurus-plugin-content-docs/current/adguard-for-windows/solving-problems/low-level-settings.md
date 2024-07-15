@@ -207,7 +207,7 @@ hosts kuralları için Engelleme modunda veya reklam engelleme stili kuralları 
 
 ### Yedek sunucular
 
-Here you can specify an alternate DNS server to which a DNS request will be rerouted if the main server fails to respond within the timeout period specified in the next section. There are three options to choose from:
+Here you can specify an alternate DNS server to which a DNS request will be rerouted if the main server fails to respond within the timeout period specified in the next section. Aralarından seçim yapabileceğiniz üç seçenek vardır:
 
 - Yedek sunucuları kullanmayın;
 - Sistem varsayılan sunucularını kullanın;

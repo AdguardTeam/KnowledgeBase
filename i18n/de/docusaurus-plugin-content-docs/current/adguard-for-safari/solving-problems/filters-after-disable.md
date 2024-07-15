@@ -1,5 +1,5 @@
 ---
-title: Filtering doesn’t stop when AdGuard for Safari is disabled
+title: Filtern wird nicht beendet, wenn AdGuard für Safari deaktiviert ist
 sidebar_position: 3
 ---
 
@@ -9,16 +9,16 @@ In diesem Artikel geht es um AdGuard für Safari, der nur Ihren Safari-Browser s
 
 :::
 
-If filtering doesn’t stop when AdGuard for Safari is disabled, it may be because content blockers take too long to update.
+Wenn das Filtern nicht eingestellt wird, wenn der AdGuard für Safari deaktiviert ist, kann das daran liegen, dass die Inhaltsblocker zu lange brauchen, um sich zu aktualisieren.
 
-## How to fix
+## Behebung
 
-1. Open Safari.
-2. Click _Safari_ in the left upper corner menu.
-3. Click _Settings…_ → _Extensions_.
-4. Clear the checkboxes for AdGuard’s extensions: _Custom_, _General_, _Other_, _Privacy_, _Security_, _Social_, _AdGuard for Safari_, and _AdGuard Assistant_.
-   ![Unchecked content blockers](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-unchecked-cbs.png)
-5. Restart Safari.
-6. Return to _Settings..._ → _Extensions_ and re-enable the content-blocking extensions.
+1. Öffnen Sie Safari.
+2. Klicken Sie auf _Safari_ in der linken oberen Ecke des Menüs.
+3. Klicken Sie auf _Einstellungen…_ → _Erweiterungen_.
+4. Deaktivieren Sie die Kontrollkästchen für die Erweiterungen von AdGuard: _Benutzerdefiniert_, _Allgemein_, _Sonstiges_, _Datenschutz_, _Sicherheit_, _Soziales_, _AdGuard für Safari_ und _AdGuard Assistent_.
+   ![unausgewählte Inhaltsblocker](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-unchecked-cbs.png)
+5. Starten Sie Safari neu.
+6. Kehren Sie zu _Einstellungen..._ → _Erweiterungen_ zurück und aktivieren Sie die Erweiterungen zum Sperren von Inhalten wieder.
 
-Now everything should work as intended: filtering is on when AdGuard for Safari is enabled, and filtering is off when it is disabled.
+Jetzt sollte alles wie vorgesehen funktionieren: Die Filterung ist eingeschaltet, wenn AdGuard für Safari aktiviert ist, und die Filterung ist ausgeschaltet, wenn sie deaktiviert ist.

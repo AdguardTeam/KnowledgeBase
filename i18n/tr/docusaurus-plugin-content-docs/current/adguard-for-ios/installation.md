@@ -9,7 +9,7 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 :::
 
-## System requirements
+## Sistem gereksinimleri
 
 ### iPhone
 

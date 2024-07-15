@@ -9,7 +9,7 @@ Pour demander une **clef de licence AdGuard d'un an** ou **un abonnement VPN AdG
 
 Pour vérifier la progression de votre traduction, ouvrez un projet sur lequel vous avez travaillé, cliquez sur l'onglet *Rapports* et sélectionnez *Ma contribution*. Vous pouvez additionner le nombre de mots traduits dans des différents projets pour obtenir une licence.
 
-## Here’s how our reward system works
+## Voici comment fonctionne notre système de récompenses
 
 ```text
 Pour la première licence AdGuard d'un an, vous devez traduire 500 mots.
@@ -21,8 +21,8 @@ Tous les abonnements ou renouvellements ultérieurs nécessitent 2 500 mots supp
 
 ```
 
-Just send us a request to [translate@adguard.com](mailto:translate@adguard.com) and you’ll get the license as a token of our gratitude.
+Envoyez-nous simplement une demande à [translate@adguard.com](mailto:translate@adguard.com) et vous obtiendrez la licence en guise de remerciement.
 
-Besides, the most active translators may receive proofreader status in the future, should they express such an intention, and that promises even more good stuff.
+D'ailleurs, les traducteurs les plus actifs peuvent recevoir le statut de relecteur à l'avenir, s'ils expriment une telle intention, et cela promet encore plus de bonnes choses à venir.
 
-Every year we present gifts with the AdGuard logo to our active proofreaders. If you want to become one of them, please write to [translate@adguard.com](mailto:translate@adguard.com).
+Chaque année, nous offrons des cadeaux avec le logo AdGuard à nos relecteurs actifs. Si vous souhaitez devenir l'un d'entre eux, veuillez écrire à [translate@adguard.com](mailto:translate@adguard.com).
