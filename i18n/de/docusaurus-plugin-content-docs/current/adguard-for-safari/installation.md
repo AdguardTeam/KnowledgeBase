@@ -43,12 +43,12 @@ AdGuard für Safari ist eine kostenlose App, die im App Store angeboten wird. Um
 
 Unter macOS klicken Sie auf *Einstellungen* → *Websites* → *Inhaltsblocker*. Wenn Sie AdGuard auf jeder Website aktivieren möchten, setzen Sie *Beim Besuch anderer Websites* auf *Ein*.
 
-![Mac Safari Content Blocker Setting](https://i0.imgs.ovh/2023/10/26/Fmc9U.png)
+![Mac Safari Inhaltsblocker-Einstellung](https://i0.imgs.ovh/2023/10/26/Fmc9U.png)
 <!-- adguard-for-safari-content-blocker-setting-macos.png -->
 
-On iOS, go to *Settings* → *Safari* → *Content Blockers*, and set the option to *Yes*.
+Unter iOS öffnen Sie *Einstellungen* → *Safari* → *Inhaltsblocker* und setzen die Option auf *Ein*.
 
-![iOS Safari Content Blocker Setting](https://i0.imgs.ovh/2023/10/26/FmgM0.jpeg)
+![iOS Safari Inhaltsblocker-Einstellung](https://i0.imgs.ovh/2023/10/26/FmgM0.jpeg)
 <!-- adguard-for-safari-content-blocker-setting-ios.jpg -->
 
 Nachdem Sie die Schritte 1–4 abgeschlossen haben, ist AdGuard für Safari einsatzbereit. Sie können nun die Einstellungen konfigurieren.

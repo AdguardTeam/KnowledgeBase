@@ -15,7 +15,7 @@ AdGuard Asistent prohlížeče je rozšíření prohlížeče nainstalované v p
 
 ### Kompatibilita s hlavní aplikací
 
-Pokud jste si zvykli používat naše předchozí rozšíření pro blokování reklam AdGuard [v režimu integrace](/adguard-browser-extension/integration-mode), možná se vám zalíbí řešení, které jsme vyvinuli pro nového Asistenta prohlížeče.
+If you got into the habit of using our previous [AdGuard Ad Blocker extension](/adguard-browser-extension/compatibility), you might like the solution that we have developed for the new Browser Assistant.
 
 Základní informace:
 

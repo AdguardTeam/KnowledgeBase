@@ -35,7 +35,7 @@ Inoltre, è possibile aprire le traduzioni in modalità Voto, se desideri sempli
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/mode.png)
 
-Puoi trovare degli [utili consigli sulla traduzione di AdGuard in questo articolo](../guidelines). Please take a look at it.
+Puoi trovare degli [utili consigli sulla traduzione di AdGuard in questo articolo](../guidelines). Sei pregato di dargli un'occhiata.
 
 ### Come diventare un revisore {#proofreaders}
 
@@ -51,4 +51,4 @@ Quindi, di cosa sono responsabili i revisori?
 
 - Rispondere ai commenti relativi alle traduzioni nella loro lingua.
 
-Every year, the best proofreaders receive gifts from AdGuard. Anche i traduttori attivi ottengono delle ricompense. Leggi di più sul nostro [sistema di ricompense](../rewards).
+Ogni anno i migliori revisori ricevono regali da AdGuard. Anche i traduttori attivi ottengono delle ricompense. Leggi di più sul nostro [sistema di ricompense](../rewards).

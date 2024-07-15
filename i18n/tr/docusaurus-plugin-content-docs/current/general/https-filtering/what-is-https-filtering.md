@@ -19,7 +19,7 @@ Simply put, HTTPS means data encryption. But there’s still a problem: how can 
 
 ### Why does AdGuard need to be able to filter HTTPS?
 
-Most websites are now using HTTPS, and the same applies to advertising. Here are a few popular websites where you can’t remove ads without HTTPS filtering: youtube.com, facebook.com, and twitter.com.
+Çoğu site artık HTTPS kullanıyor ve aynı durum reklamcılık için de geçerli. Here are a few popular websites where you can’t remove ads without HTTPS filtering: youtube.com, facebook.com, and twitter.com.
 
 ### How does HTTPS filtering work?
 

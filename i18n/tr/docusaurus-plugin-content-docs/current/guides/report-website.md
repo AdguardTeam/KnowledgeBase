@@ -131,14 +131,14 @@ For example, you are faced with a situation that your favorite website won’t o
 4. If turning off all the filters hasn't produced any results, apply rule **@@||example.com^$document,extension**; where **example.com** is an example site name that needs to be replaced by your own option;
 5. In case of failure (issue not solved), turn to section **Stealth Mode**.
 
-### **Stealth Mode**
+### **Gizlilik Modu**
 
 1. Disable **Stealth Mode**;
 2. Bu sorunu çözdüyse, modülü açın ve **Gizli Mod** seçeneklerini tek tek kapatın. Bu, hangi filtrelerin sayfayı "bozduğunu" tespit etmek için yapılır;
 3. Hangi ayarın bir sayfayı "bozduğunu" tespit etmeyi başardıysanız, formu doldururken geliştiricileri bilgilendirmelisiniz (yukarıya bakın). Bu durumda, başlangıç ayarlarına geri dönülmesi arzu edilir;
 4. Başarısız olması durumunda (sorun çözülmediyse), **Uzantılar** bölümüne dönün.
 
-### **Extensions**
+### **Uzantılar**
 
 1. Disable **Extensions**;
 2. If this solved the problem, turn on the module and turn off **Extensions** settings one by one. This is done to find out which setting "breaks" the page;

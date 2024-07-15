@@ -86,7 +86,7 @@ This is the list of libraries and other resources that really helped us with AdG
 - request: [github.com/request/request](https://github.com/request/request)
 - require-dir: [github.com/aseemk/requireDir](https://github.com/aseemk/requireDir)
 
-## AdGuard 브라우저 어시스턴트 {#assistant}
+## AdGuard Browser Assistant {#assistant}
 
 - React: [github.com/facebook/react](https://github.com/facebook/react)
 - webextension-polyfill: [github.com/mozilla/webextension-polyfill](https://github.com/mozilla/webextension-polyfill)

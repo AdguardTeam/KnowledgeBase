@@ -11,7 +11,7 @@ Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbebloc
 
 Zur Analyse und Diagnose verschiedener Probleme, die möglicherweise auftreten können, benötigt der AdGuard-Support möglicherweise AdGuard-Protokolldateien. These files contain records about errors and other events that occurr with the software. Nachfolgend finden Sie eine kurze Anleitung, wie Sie die Protokolldateien abrufen und gegebenenfalls an den Support-Dienst senden können.
 
-> AdGuard ist dem Schutz Ihrer Privatsphäre verpflichtet. We strictly follow our [Privacy Policy](https://adguard.com/en/privacy/windows.html) and do not collect any private information about users. Bevor Sie Ihre Protokolle an das Support-Team senden, überprüfen Sie bitte die Datei, da sie zusätzliche Informationen enthalten kann, die Sie vielleicht nicht freigeben möchten. If it contains such personal information, we recommend that you delete it first.
+> AdGuard ist dem Schutz Ihrer Privatsphäre verpflichtet. We strictly follow our [Privacy Policy](https://adguard.com/en/privacy/windows.html) and do not collect any private information about users. Bevor Sie Ihre Protokolle an das Support-Team senden, überprüfen Sie bitte die Datei, da sie zusätzliche Informationen enthalten kann, die Sie vielleicht nicht freigeben möchten. Wenn sie solche persönlichen Informationen enthält, empfehlen wir Ihnen, sie zuerst zu löschen.
 
 ### Debug logs {#debug-logs}
 

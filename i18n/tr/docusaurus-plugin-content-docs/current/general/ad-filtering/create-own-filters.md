@@ -1920,10 +1920,6 @@ In order to use this type of rules, it is required to have a basic understanding
 
 For the requests matching a `$permissions` rule, AdGuard strengthens response's permissions policy by adding an additional permission policy equal to the `$permissions` modifier contents. `$permissions` rules are applied independently from any other rule type. **Only document-level exceptions** can influence it (see the examples section), but no other basic rules.
 
-**Multiple rules matching a single request.**
-
-In case if multiple `$permissions` rules match a single request, AdGuard will apply each of them.
-
 **Söz dizimi**
 
 `$permissions` value syntax is similar to the `Permissions-Policy` header [syntax](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy) with one exception: comma that separates several features **MUST** be escaped — see examples below. The list of the available directives is available [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives).
@@ -1933,10 +1929,29 @@ In case if multiple `$permissions` rules match a single request, AdGuard will ap
 **Örnekler**
 
 - `||example.org^$permissions=autoplay=()` disallows autoplay media requested through the `HTMLMediaElement` interface across `example.org`.
-- `@@||example.org/page/*$permissions=autoplay=()` disables all rules with the `$permissions` modifier exactly matching `autoplay=()` on all the pages matching the rule pattern. For instance, the rule above.
+- `@@||example.org/page/*$permissions=autoplay=()` disables all rules with the `$permissions` modifier exactly matching `autoplay=()` on all the pages matching the rule pattern. For instance, the rule above. İstisna kuralının yalnızca **tam değer eşleşmesi** durumunda etkili olacağına dikkat etmek önemlidir. For example, if you want to disable the rule  `$permissions=a=()\,b=()`, you need exception rule `@@$permissions=a=()\,b=()`, and **not** `@@$permissions=b=()\,a=()`, **nor** `@@$permissions=b=()` because `b=()\,a=()` or `b=()` does not match with `a=()\,b=()`.
 - `@@||example.org/page/*$permissions` disables all the `$permissions` rules on all the pages matching the rule pattern.
 - `$domain=example.org|example.com,permissions=storage-access=()\, camera=()` disallows using the Storage Access API to request access to unpartitioned cookies and using video input devices across `example.org` and `example.com`.
+- For better compatibility, we also support pipe-separated values for `$permissions` modifier: `$permissions=storage-access=()|camera=()`.
 - `@@||example.org^$document` or `@@||example.org^$urlblock` disables all the `$permission` rules on all the pages matching the rule pattern.
+
+:::not
+
+`$permissions` kuralları yalnızca ana çerçeve ve alt çerçeve istekleri için geçerli olur. Bu, bir sayfa yüklendiğinde veya bir iframe yüklendiğinde uygulandıkları anlamına gelir.
+
+:::
+
+:::not
+
+If there are multiple `$permissions` rules that match the same request, multiple `Permissions-Policy` headers will be added to the response for each rule with their `$permissions` value. So if you have two rules: `||example.org^$permissions=autoplay=()` and `||example.org^$permissions=geolocation=()\,camera=()` that match the same request, the response will contain two `Permissions-Policy` headers: `autoplay=()` and `geolocation=()\,camera=()`.
+
+:::
+
+:::caution Limitations
+
+Firefox, `Permissions-Policy` başlığını yok sayar. Daha fazla bilgi için [bu soruna](https://bugzilla.mozilla.org/show_bug.cgi?id=1694922) bakınız.
+
+:::
 
 :::dikkat Kısıtlamalar
 
@@ -3618,7 +3633,7 @@ The `tag-content` special attribute must not appear in a selector to the left of
 
 :::caution Kullanımdan kaldırma bildirimi
 
-This special attribute may become unsupported in the future. Prefer using the `:contains()` pseudo-class where it is available.
+Bu özel özellik gelecekte desteklenmeyebilir. Prefer using the `:contains()` pseudo-class where it is available.
 
 :::
 

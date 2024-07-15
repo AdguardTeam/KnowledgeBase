@@ -9,10 +9,10 @@ Este artículo trata sobre AdGuard para Safari, que protege solo tu navegador Sa
 
 :::
 
-AdGuard para Safari fue diseñado para cumplir con las restricciones de Apple para las extensiones de navegador que bloquean anuncios y es el bloqueador de anuncios más popular para Safari. Although it can’t be compared to our desktop ad blocking apps, it's free and can protect you from ads, trackers, phishing, and malicious websites.
+AdGuard para Safari fue diseñado para cumplir con las restricciones de Apple para las extensiones de navegador que bloquean anuncios y es el bloqueador de anuncios más popular para Safari. Aunque no se puede comparar con nuestras apps de bloqueo de anuncios para desktop, es gratis y puede protegerte de anuncios, rastreadores, phishing y sitios web maliciosos.
 
 ## Pestaña General
 
-![General tab](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in-depth_review/General.png)
+![Pestaña General](https://cdn.adtidy.org/public/Adguard/Blog/AG_for_Safari_in- Depth_review/General.png)
 
-La primera pestaña es la pantalla General donde puedes configurar cosas básicas como notificaciones, intervalos de actualización e iniciar AdGuard al iniciar el sistema. También puedes optar por mostrar el icono de AdGuard en la barra de menú. There you can also turn on content blockers to block ads, trackers, annoyances, etc.
+La primera pestaña es la pantalla General donde puedes configurar cosas básicas como notificaciones, intervalos de actualización e iniciar AdGuard al iniciar el sistema. También puedes optar por mostrar el icono de AdGuard en la barra de menú. Allí también puedes activar bloqueadores de contenido para bloquear anuncios, rastreadores, elementos molestos, etc.

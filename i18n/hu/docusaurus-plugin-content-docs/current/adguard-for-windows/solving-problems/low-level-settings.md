@@ -11,7 +11,7 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 Previously known as low-level settings, Advanced Settings mostly contain options that go beyond the average user competence and aren't applied in everyday use. AdGuard for Windows is designed to work without ever having to change any of them, but they will provide additional features in some corner cases or when solving an uncommon problem.
 
-:::caution
+:::figyelem
 
 Mindlessly changing *Advanced Settings* can potentially cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only make changes to these settings if you are sure of what you are doing or if our support team has asked you to do so.
 
@@ -135,7 +135,7 @@ Periodically sends TCP packets over idle connection to ensure it is alive and to
 
 ### TCP keepalive interval
 
-Here you can specify an idle time period, in seconds, before sending a keepalive probe. If 0 is specified, the value selected by the system will be used.
+Here you can specify an idle time period, in seconds, before sending a keepalive probe. Ha 0 van megadva, akkor a rendszer által kiválasztott értéket fogja használni.
 
 :::note
 
@@ -145,7 +145,7 @@ This setting only works when the *Enable TCP keepalive* option is enabled.
 
 ### TCP keepalive timeout
 
-Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. If 0 is specified, the value selected by the system will be used.
+Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. Ha 0 van megadva, akkor a rendszer által kiválasztott értéket fogja használni.
 
 :::note
 
