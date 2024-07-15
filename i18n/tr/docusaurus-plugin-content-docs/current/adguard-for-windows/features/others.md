@@ -5,7 +5,7 @@ sidebar_position: 4
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Windows için AdGuard'ı ele alır. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Windows için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -30,7 +30,7 @@ Bu sekme lisansınızla ilgili bilgileri içerir. Burada şunları yapabilirsini
 
 ![About \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/about.png)
 
-In addition to information about the current version of the program, this tab provides some useful links to Licese agreement, Privacy policy, Acknowledgements, Discussions, and Version history pages.
+Bu sekme, programın geçerli sürümü hakkındaki bilgilere ek olarak Lisans sözleşmesi, Gizlilik politikası, Katkıda Bulunanlar, Tartışmalar ve Sürüm geçmişi sayfalarına bazı yararlı bağlantılar sağlar.
 
 ### Güncellemeleri denetleyin
 

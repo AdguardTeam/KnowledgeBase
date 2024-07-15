@@ -17,11 +17,11 @@ Normalde tarayıcılar, kurulum işlemi sırasında sistem sertifika depolama al
 
 ![Güvenlik riski hatası](https://cdn.adtidy.org/public/Adguard/kb/en/certificate/cert_error_en.png)
 
-Old FireFox versions, as well as browsers based on them, do not trust certificates from the system storage, but only those from their local storage. Since v68, FireFox trusts the system certificates, but you still can face the "Connection is untrusted" error. If something like this happens, first try to click the *Reinstall Certificate* button — you will find it in the *Network* tab.
+Eski FireFox sürümleri ve bunları temel alan tarayıcılar, sistem depolamasındaki sertifikalara değil, yalnızca kendi yerel depolamasındaki sertifikalara güvenir. Since v68, FireFox trusts the system certificates, but you still can face the "Connection is untrusted" error. Böyle bir şey olursa, önce *Sertifikayı Yeniden Yükle* düğmesine tıklamayı deneyin — bunu *Ağ* sekmesinde bulabilirsiniz.
 
 ![Sertifikayı yeniden yükle](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/reinstall.jpg)
 
-If that doesn't help, follow the instructions for manually adding the AdGuard certificate to the FireFox storage.
+Bu işe yaramazsa, AdGuard sertifikasını FireFox depolamasına elle eklemek için talimatları izleyin.
 
 > Bu talimat Firefox tarayıcısı içindir. Names of buttons and menu items may differ in other Firefox-based browsers.
 

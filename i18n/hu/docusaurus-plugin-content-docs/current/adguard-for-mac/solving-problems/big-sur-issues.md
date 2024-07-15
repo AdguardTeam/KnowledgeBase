@@ -195,7 +195,7 @@ Now that SIP is disabled, this is how you enable Kernel Extension:
 1. Select *Kernel Extension*.
 1. Confirm that you want to switch to Kernel Extension.
 
-:::caution
+:::figyelem
 
 However, we only recommend using this method if everything else fails, as this may lead to unexpected issues.
 

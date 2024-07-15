@@ -1,5 +1,5 @@
 ---
-title: AdGuardのインストール方法
+title: AdGuard のインストール方法
 sidebar_position: 8
 ---
 

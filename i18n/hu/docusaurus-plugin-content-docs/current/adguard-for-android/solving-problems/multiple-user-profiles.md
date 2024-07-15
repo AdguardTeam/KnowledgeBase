@@ -17,7 +17,7 @@ On Android 9 and later, if AdGuard is installed for more than one user profile o
 
 If you try to reinstall AdGuard after an unsuccessful removal attempt, you will see the error message “You can't install the app on your device”.
 
-To solve this problem, you need to uninstall the application for all users: go to Settings → All apps → AdGuard. Tap the three-dot menu in the top right corner and select *Uninstall for all users*.
+A probléma megoldásához el kell távolítania az alkalmazást az összes felhasználó számára: lépjen a Beállítások → Minden alkalmazás → AdGuard menüpontba. Tap the three-dot menu in the top right corner and select *Uninstall for all users*.
 
 ![Uninstall *mobile border](https://cdn.adtidy.org/blog/new/tu49hmultiple_users.png)
 
