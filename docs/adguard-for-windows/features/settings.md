@@ -31,7 +31,7 @@ In the Ad Blocker module you can:
 
 - enable automatic activation of language-specific filters,
 - disable [search ads and self-promotion](/general/ad-filtering/search-ads) blocking,
-- disable ads in the Start menu on Windows 11,   
+- disable ads in the Start menu on Windows 11,
 - activate pre-installed filters such as *AdGuard Base filter*,
 - install filters from the list or add a custom filter by clicking the *Add a filter* button,
 - make changes to existing rule groups using the *Filter editor* button,
