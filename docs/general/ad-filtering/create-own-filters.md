@@ -574,7 +574,7 @@ AdGuard will try to close the browser tab with any address that matches a blocki
   `$popup` modifier applies the `document` content type with a special flag which is passed to a blocking page.
   Blocking page itself can do some checks and close the window if it is really a popup.
   Otherwise, page should be loaded.
-  It can be combined with other request type modifiers, such as `$third-party`, `$strict-third-party`, `$strict-first-party` and `$important`.
+  It can be combined with other request type modifiers, such as `$third-party`, `$strict-third-party`, `$strict-first-party`, and `$important`.
 - Rules with `$popup` modifier are not supported by AdGuard Content Blocker.
 
 :::
