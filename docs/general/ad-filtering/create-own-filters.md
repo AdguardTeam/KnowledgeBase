@@ -3979,6 +3979,8 @@ More information about scriptlets can be found [on GitHub](https://github.com/Ad
 
 Scriptlet rules are not supported by AdGuard Content Blocker.
 
+Full scriptlet exception rules syntax is supported by AdGuard for Windows, Mac, and Android with [CoreLibs] v1.16 or later and AdGuard Browser Extension for Chrome, Firefox, and Edge with [TSUrlFilter] v2.3 or later. Previous versions support only scriptlet exception rules disabling particular scriptlets only.
+
 :::
 
 ### Trusted scriptlets {#trusted-scriptlets}
