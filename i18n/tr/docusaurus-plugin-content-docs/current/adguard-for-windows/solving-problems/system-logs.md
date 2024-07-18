@@ -25,14 +25,14 @@ Ortaya çıkabilecek farklı sorunları analiz etmek ve teşhis etmek için AdGu
 
     - *Uygulama* öğesini açın: *Olay Görüntüleyicisi (Yerel)* → *Windows Günlükleri* → *Uygulama*.
 
-    - Right-click *Application* and in the drop-down menu select *Save All Events As...*
+    - *Uygulama* öğesine sağ tıklayın ve açılır menüden *Tüm Olayları Farklı Kaydet...* öğesini seçin
 
-    - Select a name and where to save, click *Save*. Select *Display information for the following languages*. You need to tick the box next to *English*. *Tamam* öğesine tıklayın.
+    - Bir ad ve nereye kaydedileceğini seçin, *Kaydet* öğesine tıklayın. *Aşağıdaki diller için bilgileri görüntüle* öğesini seçin. *İngilizce* öğesinin yanındaki onay kutusunu işaretlemeniz gerekir. *Tamam* öğesine tıklayın.
 
     - Open *System*: *Event Viewer (Local)* → *Windows Logs* → *System*.
 
     - *Sistem* öğesine sağ tıklayın ve açılır menüden *Tüm Olayları Farklı Kaydet...* öğesini seçin
 
-    - Choose a destination folder, enter the name, click *Save*. Select *Display information for the following languages*. You need to tick the box next to *English*. *Tamam* öğesine tıklayın.
+    - Choose a destination folder, enter the name, click *Save*. *Aşağıdaki diller için bilgileri görüntüle* öğesini seçin. *İngilizce* öğesinin yanındaki kutuyu işaretlemeniz gerekir. *Tamam* öğesine tıklayın.
 
-Please send the two files that you've recently saved to **support@adguard.com**.
+Lütfen yakın zamanda kaydettiğiniz iki dosyayı **support@adguard.com** adresine gönderin.

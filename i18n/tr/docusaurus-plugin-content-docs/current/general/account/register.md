@@ -13,7 +13,7 @@ To create an account, go to [AdGuard's official website](https://adguard.com/wel
 
 :::tip
 
-If you enter your email address while purchasing a license or receive a license accociated with your email address as a gift, an account will be created automatically. To set a password, you can follow a link from a transactional or gift letter. You can also register with the above method.
+Lisans satın alırken e-posta adresinizi girerseniz veya e-posta adresinize bağlı bir lisansı hediye olarak alırsanız, otomatik olarak bir hesap oluşturulacaktır. To set a password, you can follow a link from a transactional or gift letter. You can also register with the above method.
 
 :::
 

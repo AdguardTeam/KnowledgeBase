@@ -13,7 +13,7 @@ Per creare un profilo, vai al [sito web ufficiale di AdGuard](https://adguard.co
 
 :::tip
 
-Se inserisci il tuo indirizzo email acquistando una licenza o ricevi una licenza associata al tuo indirizzo email come regalo, sarà creato automaticamente un profilo. Per impostare una password, puoi seguire un link da una lettera transazionale o di regalo. Inoltre, puoi registrarti con il suddetto metodo.
+Se inserisci il tuo indirizzo email acquistando una licenza, o ricevi una licenza collegata al tuo indirizzo email come un regalo, un profilo sarà creato automaticamente. Per impostare una password, puoi seguire un link da una lettera transazionale o di regalo. Inoltre, puoi registrarti con il suddetto metodo.
 
 :::
 

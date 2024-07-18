@@ -1,6 +1,6 @@
 ---
 title: Как установить
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 :::info
@@ -71,4 +71,4 @@ sidebar_position: 2
 
 ## Как установить Браузерное расширение AdGuard VPN для Safari
 
-AdGuard для Safari — это не браузерное расширение в общепринятом смысле этого слова. Подробнее о нём можно прочитать в [отдельной статье](/adguard-for-safari/overview). Или вы можете [загрузить установочный файл](https://agrd.io/safari_release) прямо с этой страницы.
+AdGuard для Safari — это не браузерное расширение в общепринятом смысле этого слова. Подробнее о нём можно прочитать в [отдельной статье](/adguard-for-safari/features/general). Или вы можете [загрузить установочный файл](https://agrd.io/safari_release) прямо с этой страницы.

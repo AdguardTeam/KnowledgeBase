@@ -41,7 +41,7 @@ Hlubší pochopení tohoto problému naleznete v [ tomto článku](../protect-ma
 
 **Doporučené řešení**
 
-V tuto chvíli doporučujeme místo nových funkcí ochrany osobních údajů Apple používat tradičnější službu VPN, například AdGuard VPN.
+V tuto chvíli doporučujeme místo novějších funkcí ochrany osobních údajů Apple používat tradičnější službu VPN, například [AdGuard VPN](https://adguard-vpn.com/).
 
 ### Monterey 12, Big Sur 11.6 a novější: současné problémy
 
@@ -93,7 +93,7 @@ AdGuard nyní dokáže (většinou) bez problémů filtrovat místní proxy. Pok
 
 Konfigurace odchozího proxy v AdGuardu pro macOS v Big Sur:
 
-1. Otevřete nastavení AdGuardu  *Předvolby → Síť → Odchozí proxy server*.
+1. Open AdGuard's settings *Preferences → Network → Outbound proxy*.
 2. Podle typu proxy vyberte HTTP, HTTPS, SOCKS4 nebo SOCKS5.
 3. Vyplňte pole:
     - `hosts` je IP adresa vašeho proxy,

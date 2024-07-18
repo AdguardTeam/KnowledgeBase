@@ -1,64 +1,76 @@
 ---
-title: Защита от фишинга
+title: Phishing and malware protection
 sidebar_position: 3
 ---
 
-Каждый день десятки тысяч людей становятся жертвами вирусных атак или мошенничества в интернете. Чтобы защитить пользователей AdGuard от вредоносных и фишинговых сайтов, мы добавили в приложение AdGuard специальные фильтры.
+Falling prey to phishing and malware remains a common issue. To enhance digital security, we’ve incorporated special filters in AdGuard products to shield you from malicious and phishing websites. To date, we’ve categorized over 15 million sites and built a database of 1.5 million websites known for phishing and malware. Using this database, AdGuard checks the websites you visit to protect you from online threats.
 
-На сегодняшний день мы классифицировали более 15 миллионов сайтов, и наши фильтры содержат около 1,5 миллиона фишинговых и вредоносных сайтов. Только вдумайтесь: 10% всех известных сайтов могут быть опасны для вас! Неискушённый пользователь легко может стать жертвой мошенников или хакеров. Мы надеемся, что использование защиты от вредоносных сайтов поможет избежать всех угроз, которые могут вам повстречаться.
+::: note
 
-## Как происходит проверка
+We strictly do not collect or use any information about the websites you visit.
 
-Способ и качество проверки зависит от того, какой продукт вы используете. Если речь идёт об одном из наших браузерных расширений, то AdGuard проверяет только те страницы, которые вы посещаете. Если же вы используете AdGuard для Windows, Mac или Android, то, помимо самой страницы, мы проверяем и каждый загружаемый на неё объект.
+:::
 
-### AdGuard для Windows, Mac и Android
+## How does AdGuard check websites?​
 
-Мы используем протокол [Safe Browsing API версии 2.2](https://code.google.com/p/google-safe-browsing/wiki/Protocolv2Spec) для работы с фильтрами. Этот протокол позволяет сохранить ваши личные данные в полной безопасности. Наш сервер ничего не знает о тех сайтах, которые вы посещаете. Для проверок используются не открытые адреса, а префиксы их хешей.
+Each time you visit a website, your local client exchanges information with our backend server in the form of hashes and hash prefixes. Based on this exchange, the local client determines whether or not the website is listed in the potentially dangerous websites database. There is a difference in the scope of this check for apps and extensions.
 
-Приблизительный алгоритм работы антифишингового модуля изображён на рисунке ниже на примере приложения AdGuard для Windows.
+### In apps
 
-![Алгоритм работы Защиты от фишинга](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_adguard_for_windows.png)
+AdGuard provides the best possible protection by inspecting both the pages and all objects loaded on them. AdGuard checks URLs and domain names using hash prefixes, not the full URLs, so our servers retain no information about the websites you visit and your personal information is completely safe. Our servers respond to the app’s query with a list of all possible addresses that match the hash prefix. When a potential threat is detected based on hash matches, access to that website is immediately blocked.
 
-### Браузерное расширение AdGuard
+![DNS warning](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_diana.png)
 
-Браузерные расширения работают иначе, используя так называемый [*Lookup API*](https://github.com/AdguardTeam/AdguardForAndroid/issues/162#issue-115487668) для проверки адресов страниц, которые вы посещаете. Каждый раз, когда вы посещаете какой-либо сайт, ваш локальный клиент обменивается информацией с нашим внутренним сервером в виде хешей и хеш-префиксов. Тем, кому этот процесс интересен на более глубоком уровне, будет полезна ссылка выше. В результате этого обмена локальный клиент определяет, входит ли сайт в базу потенциально опасных сайтов.
+### In browser extensions
 
-Обращаем ваше внимание на то, что мы никогда не получаем никакой информации, которая позволила бы нам определить, какие сайты вы посещаете, и каким-либо образом использовать эти данные.
+Our browser extensions can only check domain names, not full URLs. They are also unable to check subqueries. This means that if there are potentially malicious elements on the page, they will be loaded even if the page itself is from a safe domain. The extension won’t be able to protect against them. It's also important to note that the check performed is asynchronous, i.e. it happens at the same time as the page is loaded, so it’s possible that malware could be loaded as well.
 
-Приблизительный алгоритм работы Защиты от фишинга изображён на рисунке ниже.
+## Setting up phishing and malware protection in AdGuard products
 
-![Алгоритм работы Защиты от фишинга в браузерных расширениях AdGuard](https://cdn.adtidy.org/public/Adguard/En/Articles/safebrowsing_extension.png)
+- **For Windows**: Activate the *Browsing Security* module in the *Settings* menu
 
-## Фильтры AdGuard
+![Browsing Security in Windows](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows.png)
 
-В настоящее время мы поддерживаем два фильтра AdGuard. Один защищает от фишинга и мошеннических сайтов. Другой — от вредоносных сайтов, посещение которых может привести к заражению устройства вирусом.
+- **For Mac**: Enable the *Security* module in *Preferences*
 
-### Фильтр фишинговых сайтов
+![Security in Mac](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_mac.png)
 
-*Фишинг* — вид интернет-мошенничества, целью которого является получение доступа к конфиденциальным данным пользователей — логинам и паролям. Если вас заинтересовала эта тема, советуем ознакомиться со [статьёй на Википедии](https://ru.wikipedia.org/wiki/Фишинг).
+- **For Android**: Turn on *Browsing Security* in the *Protection* tab
 
-Помимо фишинговых сайтов, этот фильтр содержит также разнообразные мошеннические сайты. К ним относятся всевозможные обманные схемы, продажа несуществующего контента и тому подобное.
+![Browsing security in Android *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_android.png)
 
-### Фильтр вредоносных сайтов
+- **For iOS**: Although there’s no separate module, you can go to *Safari protection* → *Filters* → *Security* and enable the available filters. Additionally, enable *DNS protection* and select one of the AdGuard DNS servers
 
-Фильтр содержит ссылки на страницы, которые приводят к исполнению вредоносного кода. Исполнение может инициировать утечку или потерю данных, а также причинить вред устройству пользователя. Этот процесс может быть санкционированным (например, при скачивании и запуске исполняемого файла) или несанкционированным (например, при атаке шпионским программным обеспечением).
+![Security in iOS *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_ios.jpg)
 
-## Как мы пополняем фильтры
+- **For Browser extensions**: Enable *Phishing and malware protection* in the *Settings* tab. For enhanced protection, go to *Filters* → *Security* and activate available filters
 
-Наши фильтры постоянно пополняются новыми адресами. Так как большая часть работы автоматизирована, вы можете быть уверены, что новые фишинговые и вредоносные адреса попадут в нашу базу максимально быстро.
+![Phishing and malware protection](https://cdn.adtidy.org/content/kb/ad_blocker/general/extension_protection.png)
 
-### Сообщество Защиты от фишинга AdGuard
+- **For Private AdGuard DNS:** Enable malware protection in *Server settings* under *Security*
 
-Важный инструмент для поддержания фильтрации на высоком уровне — *сообщество Защиты от фишинга*. Любой пользователь наших продуктов, будь то AdGuard для Windows или браузерное расширение, может стать участником сообщества и помогать нам в составлении фильтров AdGuard.
+![Security in DNS](https://cdn.adtidy.org/content/kb/ad_blocker/general/bs_dns.png)
 
-На рисунке мы изобразили алгоритм работы сообщества:
+## What we block
 
-![Как работает сообщество Защиты от фишинга](https://cdn.adtidy.org/public/Adguard/En/Articles/browsing_security_community.png)
+We maintain two primary filters: one that protects against phishing and fraudulent websites that attempt to steal user credentials, and another that blocks access to websites known to distribute malware, which could lead to data loss, information leaks, or damage to your device. These filters also protect you from websites with various scams and fraudulent schemes. For more detailed information, refer to this [Wikipedia article](https://en.wikipedia.org/wiki/Phishing).
 
-### Как помочь
+## Maintaining our filters
 
-Мы с радостью примем любую помощь! Если хотите отправить нам жалобу на фишинговый или вредоносный сайт, напишите в поддержку на **support@adguard.com**.
+AdGuard maintains an extensive database of phishing and malware websites, and it’s updated regularly and automatically as new threats are discovered. We collect information from a variety of reliable, high-quality sources, both public and from other companies, and aggregate it into a common database of dangerous sites.
 
-### Ложноположительные срабатывания
+We automatically analyze complaints about suspicious sites and spend a great deal of time keeping the database up-to-date, cleaning up false positives, and implementing mechanisms to prevent them in the future.
 
-Изредка происходит так, что в фильтры AdGuard попадают сайты, которые не являются опасными. Мы следим, чтобы такого не происходило, но бывают разные случаи. Если вы встретили подобное поведение AdGuard, пожалуйста, отправьте нам жалобу на ложноположительное срабатывание. Чтобы отправить такую жалобу, напишите в поддержку на **support@adguard.com**.
+### Want to help?​
+
+Any help is welcome! If you encounter a phishing or malware website, please report it to <support@adguard.com>.
+
+### False-positive responses​
+
+Occasionally, some non-malicious websites are added to AdGuard’s filters. Мы следим, чтобы такого не происходило, но бывают разные случаи. If you encounter this behavior from AdGuard, please report the false positive to our technical support at <support@adguard.com>.
+
+## If you are suspicious about a website
+
+If you suspect that a certain website might be dangerous, check it first by using our [security check tool](https://reports.adguard.com/welcome.html).
+
+![Security check](https://cdn.adtidy.org/content/kb/ad_blocker/general/site_warning.png)

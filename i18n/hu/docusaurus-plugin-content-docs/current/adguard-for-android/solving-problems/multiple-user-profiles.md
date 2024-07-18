@@ -5,7 +5,7 @@ sidebar_position: 10
 
 :::info
 
-This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -15,9 +15,9 @@ In this article you will find the methods on how to solve problems with AdGuard 
 
 On Android 9 and later, if AdGuard is installed for more than one user profile on your device, you may encounter problems when uninstalling the app. When you uninstall AdGuard from one user profile, the app will still appear on the app list, but you won't be able to uninstall or reinstall it. This happens because AdGuard is installed for a different user profile on the device.
 
-If you try to reinstall AdGuard after an unsuccessful removal attempt, you will see the error message "You can't install the app on your device".
+If you try to reinstall AdGuard after an unsuccessful removal attempt, you will see the error message “You can't install the app on your device”.
 
-To solve this problem, you need to uninstall the application for all users: go to Settings → All apps → AdGuard. Tap the three-dot menu in the top right corner and select *Uninstall for all users*.
+A probléma megoldásához el kell távolítania az alkalmazást az összes felhasználó számára: lépjen a Beállítások → Minden alkalmazás → AdGuard menüpontba. Tap the three-dot menu in the top right corner and select *Uninstall for all users*.
 
 ![Uninstall *mobile border](https://cdn.adtidy.org/blog/new/tu49hmultiple_users.png)
 
@@ -51,7 +51,7 @@ This approach is available starting from **AdGuard v3.5 nightly 6**. If you're u
 
 :::
 
-1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
 
 1. Connect your device using a **USB cable** to the computer or laptop on which you installed **ADB**;
 
@@ -85,7 +85,7 @@ Owners of **LG** or **Samsung** phones may also encounter a similar issue. It ca
 - Open **Settings**;
 - Press **Advanced**;
 - Scroll down and press **Dual messenger**;
-- Disable the **Dual messenger** for all applications;
+- Disable the **Dual messenger** for all apps;
 - Lock the device for 5 minutes;
 - Unlock the screen and try again to create the VPN profile.
 
@@ -94,5 +94,5 @@ Owners of **LG** or **Samsung** phones may also encounter a similar issue. It ca
 - Open **Settings**;
 - Choose **General** tab;
 - Scroll down and press **Dual app**;
-- Remove all applications from the list;
+- Remove all apps from the list;
 - Reboot your device.

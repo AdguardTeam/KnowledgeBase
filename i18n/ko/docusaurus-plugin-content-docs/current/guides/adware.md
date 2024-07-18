@@ -5,7 +5,7 @@ sidebar_position: 6
 
 :::note
 
-AdGuard is not an antivirus program. 멀웨어 또는 피싱 웹사이트를 방문하려고 할 때 경고를 표시할 수는 있지만 **기기에서 바이러스를 제거하지는 않습니다.**
+AdGuard는 안티바이러스 프로그램이 아닙니다. 멀웨어 또는 피싱 웹사이트를 방문하려고 할 때 경고를 표시할 수는 있지만 **기기에서 바이러스를 제거하지는 않습니다.**
 
 :::
 
@@ -13,7 +13,7 @@ AdGuard is not an antivirus program. 멀웨어 또는 피싱 웹사이트를 방
 
 ## 무료 바이러스 백신 유틸리티 {#free-antivirus}
 
-There are many of them and you can use any one you prefer. 바이러스 백신 유틸리티로 검사해도 아무것도 발견되지 않지만 컴퓨터가 여전히 의심스럽게 작동하는 경우, 여는 모든 페이지에 광고를 구현할 수 있는 애드웨어가 있는지 테스트해 보세요.
+여러 가지 선택지가 있으며 원하는 것을 사용할 수 있습니다. 바이러스 백신 유틸리티로 검사해도 아무것도 발견되지 않지만 컴퓨터가 여전히 의심스럽게 작동하는 경우, 여는 모든 페이지에 광고를 구현할 수 있는 애드웨어가 있는지 테스트해 보세요.
 
 ## 시스템에서 애드웨어를 삭제하는 방법 {#adware}
 
@@ -21,42 +21,42 @@ There are many of them and you can use any one you prefer. 바이러스 백신 �
 
 AdwareCleaner를 예로 들어 보겠습니다. 애플리케이션을 다운로드하고 성공적으로 설치한 후 다음 단계를 수행합니다:
 
-1. Start the application and click **Scan now**.
+1. 애플리케이션을 시작하고 **지금 스캔**을 클릭합니다.
 
 ![adware1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware1.png)
 
-1. Once the scan has been completed, you will need to send suspicious objects to **Quarantine**.
+1. 검사가 완료되면 의심스러운 항목을 **검역소**로 보내야 합니다.
 
 ![adware2 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware2.png)
 
-1. When the items are moved to **Quarantine**, you will be able to **Clear the system** of unnecessary ballast.
+1. **검역소**로 이동하면 **시스템에서 불필요한 항목을 지울 수 있습니다**.
 
-1. In some cases, you may need to **Reboot the system** after cleaning is complete.
+1. 경우에 따라서는 지우기가 완료된 후 **시스템을 재부팅**해야 할 수도 있습니다.
 
 ![adware3 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware3.png)
 
-1. Once the system has been rebooted, cleaning will be completed. If necessary, you can always read the **Report** on the work done.
+1. 시스템이 재부팅되면 지우기가 완료됩니다. 필요한 경우 언제든지 완료된 작업에 대한 **보고서**를 읽을 수 있습니다.
 
 ![adware4 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware4.png)
 
-If it didn’t help, temporary disable all extensions and some other settings in the browser according to [these instructions](#instructions).
+그래도 도움이 되지 않으면 [이 지침에 따라 브라우저에서 모든 확장 프로그램 및 기타 설정을 일시적으로 비활성화하세요](#instructions).
 
-If disabling of settings and extensions does not help, try to [recreate shortcuts of your browsers](#shortcuts).
+설정 및 확장 프로그램을 비활성화해도 문제가 해결되지 않으면 [브라우저 바로 가기를 다시 만들어 보세요](#shortcuts).
 
-Further on this page we describe the instructions on how to remove some of the most commonly encountered ad extensions.
+이 페이지의 뒷부분에서는 가장 널리 사용되는 광고 확장 프로그램 중 일부를 제거하는 방법에 대해 설명합니다.
 
-## 브라우저에서 설정 및 확장 기능을 비활성화하는 방법 {#instructions}
+## 브라우저에서 설정 및 확장 프로그램을 비활성화하는 방법 {#instructions}
 
-Below are the instructions on how to disable settings and extensions for the most popular browsers:
+가장 널리 사용되는 브라우저의 설정 및 확장 프로그램을 비활성화하는 방법은 아래에서 확인할 수 있습니다.
 
-- [구글 크롬](https://support.google.com/chrome/answer/187443?hl=en)
+- [Google Chrome](https://support.google.com/chrome/answer/187443?hl=en)
 
-- [모질라 파이어폭스](https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons)
+- [Mozilla Firefox](https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons)
 
-- [오페라](https://help.opera.com/en/latest/customization/#extensions)
+- [Opera](https://help.opera.com/en/latest/customization/#extensions)
 
 ## 브라우저 바로가기를 다시 만드는 방법 {#shortcuts}
 
-Very often, malware and adware programs install their homepage in a very simple way — they substitute your browser's desktop shortcut, taskbar and *Start* menu items.
+멀웨어 및 애드웨어 프로그램은 브라우저의 바탕화면 바로가기, 작업 표시줄 및 *시작* 메뉴 항목을 대체하여 홈페이지를 설치하는 경우가 많습니다.
 
-The simplest solution in this case is to manually delete all the shortcuts and recreate them by yourself.
+이 경우 가장 간단한 해결책은 모든 바로가기를 수동으로 삭제하고 직접 다시 만드는 것입니다.

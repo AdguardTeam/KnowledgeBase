@@ -1,21 +1,21 @@
 ---
-title: How to enable HTTPS filtering for Google Family Link
+title: Google ファミリーリンクでHTTPSフィルタリングを有効にする方法
 sidebar_position: 6
 ---
 
-To enable HTTPS filtering on a device that uses Google Family Link, install the AdGuard certificate by following these instructions:
+Google ファミリーリンクを使用しているデバイスでHTTPSフィルタリングを有効にするには、以下の手順に従ってAdGuard証明書をインストールしてください:
 
-1. Make a backup, just in case
-1. Remove the child’s account from your device:
+1. 万が一に備えてバックアップを作成してください。
+1. お子様のアカウントをデバイスから削除します:
 
-    - On the child’s device, go to Settings → Accounts → Google
-    - Tap your child’s account and see if you have an option to remove it. If you don’t have such an option, proceed to the next step
-    - Tap the three dots on the upper right corner of the screen and see if you have an option to remove the account
-    - Follow the instructions  removing the child’s account from the device
+    - お子様の端末で、設定 → アカウント → Google
+    - お子様のアカウントをタップして、削除するオプションがあるかどうか確認してください。 そのようなオプションがない場合は、次のステップに進んでください。
+    - 画面右上の3つの点をタップし、アカウントを削除するオプションがあるかどうかを確認します。
+    - Follow the instructions removing the child’s account from the device
 
-1. Launch AdGuard and install the CA file
-1. Restore the child’s account on the device:
+1. AdGuardを起動し、CAファイルをインストールします。
+1. お子様のアカウントをデバイスで復元します:
 
-    - On the child’s device, go to Settings → Accounts → Google → Add Account
-    - Sign in to your child’s account
-    - Follow the instructions on the screen to set up your child’s account
+    - お子様の端末で、設定 → アカウント → Google → アカウントを追加
+    - お子様のアカウントにサインインします。
+    - 画面の指示に従って、お子様のアカウントを設定してください。

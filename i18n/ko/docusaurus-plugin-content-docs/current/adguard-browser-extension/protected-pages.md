@@ -1,35 +1,33 @@
 ---
-title: Browser-protected pages
-sidebar_position: 4
+title: 브라우저에 의해 보호받는 페이지
+sidebar_position: 5
 ---
 
 :::info
 
-브라우저만 보호하는 AdGuard 브라우저 확장 프로그램에 관한 문서입니다. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+브라우저만 보호하는 AdGuard 브라우저 확장 프로그램에 관한 문서입니다. 기기 전체를 보호하려면, [AdGuard 앱을 다운로드](https://adguard.com/download.html?auto=true)하세요.
 
 :::
 
-## Browser-protected pages
+AdGuard 브라우저 확장 프로그램과 같은 웹 확장 프로그램을 사용 시, 이들의 접근이나 권한을 방지하는 특정 제한 도메인이 존재합니다. 결과적으로 광고 차단 확장 프로그램은 이러한 페이지의 콘텐츠를 수정하거나 상호 작용하는 것이 불가능합니다. 즉, 이러한 웹페이지에서는 광고 및 기타 성가신 요소를 차단할 수 없습니다.
 
-When using a web extension like AdGuard Browser Extension, there are certain restricted domains that prohibit access or permissions. As a result, ad blocking extensions are not allowed to interact with or modify the content of these pages. In other words, they are not allowed to block ads and other annoying elements on these web pages.
+## Chromium 브라우저 제한 사항
 
-### Chromium browser restrictions
-
-Chromium-based browsers, such as Google Chrome, maintain a list of restricted domains that extensions are not allowed to access. These domains include:
+Google Chrome과 같은 Chromium 기반 브라우저들은 확장 프로그램이 접근할 수 없는 제한된 도메인 목록을 유지합니다. 다음은 이러한 도메인의 예시입니다.
 
 - clients.google.com
 - clients[0-9]+.google.com
 - sb-ssl.google.com
-- URLs starting with `chrome://`, `chrome-extension://`, or `https://chrome.google.com/webstore/`
-- PDF files
-- Pages where Javascript is disabled
-- Security warning pages
-- Error pages such as 404 errors and network errors
-- URLs starting with `view-source:` or `data:`
+- `chrome://`, `chrome-extension://`, 또는 `https://chrome.google.com/webstore/`로 시작하는 URL
+- PDF 파일
+- Javascript가 비활성화된 페이지
+- 보안 경고 페이지
+- 404 오류, 네트워크 오류 등의 오류 페이지
+- `view-source:` 또는 `data:`로 시작하는 URL
 
-### Firefox browser restrictions
+## Firefox 브라우저 제한 사항
 
-Similarly, the Firefox browser has its own set of restricted domains where extensions are not permitted to operate. These restricted domains include:
+마찬가지로 Firefox 브라우저에는 확장 프로그램이 작동하지 않는 제한된 도메인 목록이 존재합니다. 이러한 제한된 도메인은 다음과 같습니다.
 
 - accounts-static.cdn.mozilla.net
 - accounts.firefox.com
@@ -44,20 +42,20 @@ Similarly, the Firefox browser has its own set of restricted domains where exten
 - support.mozilla.org
 - sync.services.mozilla.com
 
-### Modifying restrictions in Firefox
+## Firefox에서 제한 사항 수정하기
 
-Changing advanced settings can affect the stability and security of Firefox. This is recommended for advanced users only. If you are aware of the associated risk and still wish to enable add-ons disallowed on a protected page, follow the steps below:
+고급 설정을 변경하는 것은 Firefox의 안정성과 보안에 영향을 미칠 수 있습니다. 이 기능은 고급 사용자에게만 권장됩니다. 이러한 위험성을 알고 있음에도 보호된 페이지에서 허용되지 않는 추가 기능을 활성화하려면 아래 단계를 따르세요.
 
-1. Click the menu button → **Add-ons and themes** → **Extensions**.
-2. Click the extension you want to enable on sites with restrictions (In this case, AdGuard).
-3. Select **Allow** in the section **Run on sites with restrictions**.
+1. 메뉴 버튼 → **애드온과 테마** → **확장 프로그램**을 클릭합니다.
+2. 활성화하고 싶은 제한된 확장 프로그램을 클릭합니다 (이 상황에서는 AdGurad).
+3. **제한 사항이 있는 사이트에서 실행** 항목에서 **허용**을 선택합니다.
 
-Alternatively, you can:
+또는 다른 방법을 사용할 수도 있습니다.
 
-1. Open a new tab and type **about:config** in the address bar.
-2. Press **Return**. You may encounter a warning. In this case, click **Accept the Risk and Continue**.
-3. Search for `extensions.webextensions.restrictedDomains`. If you can’t find this preference, you can create it. Simply select the **Boolean** type and click **+** to add it.
-4. Click the toggle button next to this preference and change its value to `false`.
-5. Restart Firefox.
+1. 새 탭을 열고 주소 표시줄에 **about:config**를 입력합니다.
+2. **돌아가기** 버튼을 누릅니다. 경고창이 나타날 수도 있습니다. 이 경우 **위험 수락 및 계속**을 클릭합니다.
+3. `extensions.webextensions.restrictedDomains`을 찾습니다. 이 설정을 찾을 수 없는 경우 직접 만들 수 있습니다. **Boolean** 유형을 선택하고 **+**를 클릭하여 추가하면 됩니다.
+4. 해당 설정 옆에 있는 토글 버튼을 클릭하고 해당 값을 `false`로 변경합니다.
+5. Firefox를 재시작합니다.
 
-For further information on this subject, read [the article on Mozilla’s support website](https://mzl.la/3POXoWi).
+이 주제에 대한 더 자세한 정보는, [Mozilla의 지원 웹사이트](https://mzl.la/3POXoWi)를 참조하세요.

@@ -3,7 +3,7 @@ title: Autenticazione a due fattori
 sidebar_position: 3
 ---
 
-L'autenticazione a due fattori (o A2F) è un metodo di autenticazione che richiede un'ulteriore prova dall'utente per accedere, oltre alla solita coppia di accesso e password. Lo si fa per una questione di sicurezza. I siti web di solito offrono metodi di 2FA come un codice inviato via SMS o un'app speciale di autenticazione.
+L'autenticazione a due fattori (o A2F) è un metodo d'autenticazione che richiede un'ulteriore prova da parte dell'utente per accedere, oltre alla solita coppia di nome utente e password. Lo si fa per una questione di sicurezza. I siti web di solito offrono metodi di 2FA come un codice inviato via SMS o un'app speciale di autenticazione.
 
 Vediamo l'aggiunta dell'opzione di A2F come un vantaggio. Inoltre, comprendiamo che imporla potrebbe irritare alcuni utenti. Ecco perché l'abbiamo resa facoltativa per il vostro account personale su adguard.com: di default, la 2FA è disattivata quando si registra un nuovo account. Puoi abilitarla manualmente nelle impostazioni. Quanto ai metodi di autenticazione correntemente disponibili, utilizziamo quelli collaudati: un'app di autenticazione per Android e iOS. Puoi utilizzare quasi tutte le app di questo tipo e ne esistono molte.
 

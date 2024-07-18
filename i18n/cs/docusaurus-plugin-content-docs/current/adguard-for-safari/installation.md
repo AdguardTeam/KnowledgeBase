@@ -19,7 +19,7 @@ AdGuard pro Safari je bezplatná aplikace uvedená v App Store. Chcete-li ji nai
 
 1. Stiskněte *Získat* → *Instalovat* → *Otevřít*.
 
-1. Chcete-li nastavit AdGuard pro Safari, povolte AdGuard rozšíření v nastavení Safari. V oznámení klikněte na *Opravit*. V otevřeném okně zaškrtněte políčka vedle rozšíření AdGuardu.
+1. Chcete-li nastavit AdGuard pro Safari, povolte AdGuard rozšíření v nastavení Safari.
 
     ![Notification: Some extensions are disabled](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-notification.png)
 
@@ -43,15 +43,13 @@ AdGuard pro Safari je bezplatná aplikace uvedená v App Store. Chcete-li ji nai
 
 V macOS klikněte na *Předvolby* → *Webové stránky* → *Blokátory obsahu*. Pokud chcete povolit AdGuard na každé webové stránce, nastavte *Při návštěvě jiných webových stránek* na *Zapnuto*.
 
-    ![Mac Safari Content Blocker Setting](https://i0.imgs.ovh/2023/10/26/Fmc9U.png)
+![Mac Safari Content Blocker Setting](https://i0.imgs.ovh/2023/10/26/Fmc9U.png)
+<!-- adguard-for-safari-content-blocker-setting-macos.png -->
 
-    <!-- adguard-for-safari-content-blocker-setting-macos.png -->
+V iOS přejděte na *Nastavení* → *Safari* → *Blokování obsahu* a nastavte možnost *Ano*.
 
-V iOS přejděte na *Nastavení* → *Safari* → *Blokátory obsahu*a nastavte možnost na *Ano*.
-
-    ![iOS Safari Content Blocker Setting](https://i0.imgs.ovh/2023/10/26/FmgM0.jpeg)
-
-    <!-- adguard-for-safari-content-blocker-setting-ios.jpg -->
+![iOS Safari Content Blocker Setting](https://i0.imgs.ovh/2023/10/26/FmgM0.jpeg)
+<!-- adguard-for-safari-content-blocker-setting-ios.jpg -->
 
 Po dokončení kroků 1-4 začne AdGuard pro Safari fungovat. Nyní můžete nakonfigurovat jeho nastavení.
 

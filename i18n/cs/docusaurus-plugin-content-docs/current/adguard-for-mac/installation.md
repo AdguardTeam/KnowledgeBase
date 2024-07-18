@@ -11,7 +11,7 @@ Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, kter
 
 ## Požadavky na systém
 
-**Verze operačního systému:** macOS 10.13 (64 bitů) nebo vyšší
+**Verze operačního systému:** macOS 10.15 (64 bitů) nebo vyšší
 
 **RAM:** alespoň 2 GB
 
@@ -81,22 +81,25 @@ Přejděte do sekce Aplikace. Vyhledejte tam AdGuard, klikněte na něj pravým 
     - /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log (soubor)
 
     Za tímto účelem otevřete aplikaci Terminal, zadejte a proveďte následující příkazy:
-    - `sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"`
-    - `rm -R "$HOME/Library/Application Support/com.adguard.mac.adguard"`
-    - `rm $HOME/Library/Preferences/com.adguard.mac.adguard.plist`
-    - `rm -R "$HOME/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac"`
-    - `find "$HOME/Library/Application Support" -name "com.adguard.browser_extension_host.nm.json" -delete`
-    - `sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist`
-    - `sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist`
-    - `sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log`
-    - `sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log`
+
+    ```bash
+    sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"
+    rm -R "$HOME/Library/Application Support/com.adguard.mac.adguard"
+    rm $HOME/Library/Preferences/com.adguard.mac.adguard.plist
+    rm -R "$HOME/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac"
+    find "$HOME/Library/Application Support" -name "com.adguard.browser_extension_host.nm.json" -delete
+    sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist
+    sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist
+    sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log
+    sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log
+    ```
 
 1. Spusťte aplikaci **Monitor aktivity**.
 1. Pomocí vyhledávacího nástroje vyhledejte proces **cfprefsd**.
 
     ![Run Activity Monitor](https://cdn.adtidy.org/content/kb/ad_blocker/mac/22.jpg)
 
-1. Ukončete proces, který je spuštěn pod uživatelem (ne ten, který je spuštěn pod root). Chcete-li tak učinit, klikněte na proces a poté klikněte na tlačítko X v levém horním rohu. Potvrďte to v dialogovém okně.
+1. Ukončete proces, který je spuštěn pod uživatelem (ne ten, který je spuštěn pod root). Chcete-li tak učinit, klikněte na proces a poté klikněte na tlačítko X v levém horním rohu. Potvrďte akci v dialogovém okně.
 
     ![Confirm](https://cdn.adtidy.org/content/kb/ad_blocker/mac/33.jpg)
 

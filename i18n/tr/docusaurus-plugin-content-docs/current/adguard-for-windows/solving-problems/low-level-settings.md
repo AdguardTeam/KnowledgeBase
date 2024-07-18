@@ -31,7 +31,7 @@ Etkinleştirilirse, AdGuard Edge tarayıcısında TCP Fast Open'ı engeller. Aya
 
 ### Use Encrypted ClientHello
 
-Every encrypted Internet connection has an unencrypted part. This is the very first packet which contains the name of the server you are connecting to. Encrypted Client Hello teknolojisinin bu sorunu çözmesi ve şifrelenmemiş bilgilerin son kısmını şifrelemesi gerekiyor. To benefit from it, enable the *Use Encrypted ClientHello* option. Alan adı için ECH yapılandırmasını aramak için yerel bir DNS proxy'si kullanır. If it is found, ClientHello packet will be encrypted.
+Her şifrelenmiş internet bağlantısının bir de şifrelenmemiş kısmı vardır. Bu, bağlandığınız sunucunun adını içeren ilk pakettir. Encrypted Client Hello teknolojisinin bu sorunu çözmesi ve şifrelenmemiş bilgilerin son kısmını şifrelemesi gerekiyor. To benefit from it, enable the *Use Encrypted ClientHello* option. Alan adı için ECH yapılandırmasını aramak için yerel bir DNS proxy'si kullanır. Eğer bulunursa, ClientHello paketi şifrelenecektir.
 
 ### Sitelerin sertifika şeffaflığını kontrol et
 
@@ -45,7 +45,7 @@ OCSP kontrolü minimum zaman aşımı süresi içinde tamamlanırsa AdGuard heme
 
 Doğrulama çok uzun sürerse AdGuard bir bağlantı kurar ve arka planda kontrol etmeye devam eder. Sertifika iptal edilirse alan adına yapılan mevcut ve gelecekteki bağlantılar engellenecektir.
 
-### Show AdGuard VPN in Settings
+### Ayarlarda AdGuard VPN'i göster
 
 Bu seçeneğin etkinleştirilmesi, uygulamanın ve ürünün sitenin kolayca açılması için Ayarlar'da AdGuard VPN sekmesini görüntülemenize olanak tanır.
 
@@ -104,26 +104,26 @@ HTTP yöntemi ile URL arasına fazladan boşluk ekler ve Derin Paket İncelemesi
 `GET /foo/bar/ HTTP/1.1
 Host: example.org`
 
-will be converted to
+şuna dönüştürülecektir
 
-`GET  /foo/bar/ HTTP/1.1
+`GET /foo/bar/ HTTP/1.1
 Host: example.org`
 
-This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
+Bu seçenek yalnızca *DPİ'den koru* Gizlilik Modu seçeneği etkinleştirildiğinde uygulanır.
 
-### Adjust size of fragmentation of initial TLS packet
+### İlk TLS paketinin parçalanma boyutunu ayarla
 
-Specifies the size of the TCP packet fragmentation, avoiding deep packet inspection. Bu seçenek yalnızca güvenli (HTTPS) trafiğini etkiler.
+Derin paket incelemesinden kaçınarak TCP paket parçalanmasının boyutunu belirtir. Bu seçenek yalnızca güvenli (HTTPS) trafiğini etkiler.
 
 If this option is enabled, AdGuard splits the initial TLS packet (the ClientHello packet) into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole initial TLS packet.
 
-Geçerli değerler: 1–1500. If invalid size is specified, the value selected by the system will be used. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
+Geçerli değerler: 1–1500. Geçersiz boyut belirtilirse, sistem tarafından seçilen değer kullanılacaktır. Bu seçenek yalnızca *DPİ'den koru* Gizlilik Modu seçeneği etkinleştirildiğinde uygulanır.
 
-### Plain HTTP request fragment size
+### Düz HTTP istek parçası boyutu
 
 HTTP istek parçalanmasının boyutunu ayarlar. Bu seçenek yalnızca düz HTTP trafiğini etkiler. Bu seçenek etkinleştirilirse, AdGuard ilk paketi iki parçaya böler: ilki belirtilen uzunluğa sahiptir ve ikincisi tüm orijinal paketin uzunluğuna kadar geri kalanına sahiptir.
 
-Geçerli değerler: 1–1500. Geçersiz boyut belirtilirse, sistem tarafından seçilen değer kullanılır. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
+Geçerli değerler: 1–1500. Geçersiz boyut belirtilirse, sistem tarafından seçilen değer kullanılır. Bu seçenek yalnızca *DPİ'den koru* Gizlilik Modu seçeneği etkinleştirildiğinde uygulanır.
 
 ### QUIC'i göster
 
@@ -159,7 +159,7 @@ Bazı siteler ve web hizmetleri hâlâ Java Eklentilerini desteklemektedir. Java
 
 ### DNS sunucusu zaman aşımı süresi
 
-Here you can specify the time in milliseconds that AdGuard will wait for the response from the selected DNS server before resorting to fallback. If you don’t fill in this field or enter an invalid value, the value of 5000 will be used.
+Here you can specify the time in milliseconds that AdGuard will wait for the response from the selected DNS server before resorting to fallback. Bu alanı doldurmazsanız veya geçersiz bir değer girerseniz, 5000 değeri kullanılacaktır.
 
 ### DNS-over-HTTPS için HTTP/3 kullan
 
@@ -199,15 +199,15 @@ Here you can select the way AdGuard will respond to domains blocked by DNS rules
 
 ### Özel IPv4 adresi
 
-hosts kuralları için Engelleme modunda veya reklam engelleme stili kuralları için Engelleme modunda Özel IP adresi seçilirse, bu IP adresi engellenen A isteklerine yanıt olarak döndürülür. If none are specified, AdGuard will reply with the default Refused error.
+hosts kuralları için Engelleme modunda veya reklam engelleme stili kuralları için Engelleme modunda Özel IP adresi seçilirse, bu IP adresi engellenen A isteklerine yanıt olarak döndürülür. Hiçbiri belirtilmezse, AdGuard varsayılan Refused hatasıyla yanıt verir.
 
 ### Özel IPv6 adresi
 
-hosts kuralları için Engelleme modunda veya reklam engelleme stili kuralları için Engelleme modunda Özel IP adresi seçilirse, bu IP adresi engellenen AAAA isteklerine yanıt olarak döndürülür. If none are specified, AdGuard will reply with the default "Refused" error.
+hosts kuralları için Engelleme modunda veya reklam engelleme stili kuralları için Engelleme modunda Özel IP adresi seçilirse, bu IP adresi engellenen AAAA isteklerine yanıt olarak döndürülür. Hiçbiri belirtilmezse, AdGuard varsayılan "Refused" hatasıyla yanıt verir.
 
 ### Yedek sunucular
 
-Here you can specify an alternate DNS server to which a DNS request will be rerouted if the main server fails to respond within the timeout period specified in the next section. There are three options to choose from:
+Here you can specify an alternate DNS server to which a DNS request will be rerouted if the main server fails to respond within the timeout period specified in the next section. Aralarından seçim yapabileceğiniz üç seçenek vardır:
 
 - Yedek sunucuları kullanmayın;
 - Sistem varsayılan sunucularını kullanın;

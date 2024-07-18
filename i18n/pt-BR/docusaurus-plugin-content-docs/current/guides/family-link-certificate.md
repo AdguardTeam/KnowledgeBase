@@ -1,21 +1,21 @@
 ---
-title: How to enable HTTPS filtering for Google Family Link
+title: Como ativar a filtragem HTTPS para Google Family Link
 sidebar_position: 6
 ---
 
-To enable HTTPS filtering on a device that uses Google Family Link, install the AdGuard certificate by following these instructions:
+Para ativar a filtragem HTTPS em um dispositivo que usa o Google Family Link, instale o certificado AdGuard seguindo estas instruções:
 
-1. Make a backup, just in case
-1. Remove the child’s account from your device:
+1. Faça um backup, apenas por precaução
+1. Remova a conta da criança do seu dispositivo:
 
-    - On the child’s device, go to Settings → Accounts → Google
-    - Tap your child’s account and see if you have an option to remove it. If you don’t have such an option, proceed to the next step
-    - Tap the three dots on the upper right corner of the screen and see if you have an option to remove the account
-    - Follow the instructions  removing the child’s account from the device
+    - No dispositivo da criança, vá para Configurações → Contas → Google
+    - Toque na conta do seu filho e veja se você tem a opção de removê-la. Se você não tiver essa opção, prossiga para a próxima etapa
+    - Toque nos três pontos no canto superior direito da tela e veja se você tem a opção de remover a conta
+    - Follow the instructions removing the child’s account from the device
 
-1. Launch AdGuard and install the CA file
-1. Restore the child’s account on the device:
+1. Inicie o AdGuard e instale o arquivo CA
+1. Restaurar a conta da criança no dispositivo:
 
-    - On the child’s device, go to Settings → Accounts → Google → Add Account
-    - Sign in to your child’s account
-    - Follow the instructions on the screen to set up your child’s account
+    - No dispositivo da criança, vá para Configurações → Contas → Google → Adicionar conta
+    - Faça login na conta da criança
+    - Siga as instruções na tela para configurar a conta da criança

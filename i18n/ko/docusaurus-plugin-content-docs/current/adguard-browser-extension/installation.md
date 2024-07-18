@@ -1,74 +1,74 @@
 ---
-title: How to install
-sidebar_position: 2
+title: 설치 방법
+sidebar_position: 3
 ---
 
 :::info
 
-브라우저만 보호하는 AdGuard 브라우저 확장 프로그램에 관한 문서입니다. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+브라우저만 보호하는 AdGuard 브라우저 확장 프로그램에 관한 문서입니다. 기기 전체를 보호하려면 [AdGuard 앱을 다운로드하세요](https://agrd.io/download-kb-adblock).
 
 :::
 
-## How to install AdGuard Browser Extension for Google Chrome or Chromium browsers
+## Google Chrome이나 Chromium 계열 브라우저용 AdGuard 브라우저 확장 프로그램 설치
 
-Open the extension's page in [Chrome Web Store](https://agrd.io/extension_chrome) and click *Add to Chrome*.
+[Chrome 웹 스토어](https://agrd.io/extension_chrome) 확장 프로그램 페이지를 열고 *Chrome에 추가*를 클릭하세요.
 
-![AdGuard Browser Extension in Chrome Web Store *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_chrome.png)
+![Chrome 웹 스토어의 AdGuard 브라우저 확장 프로그램 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_chrome.png)
 
-In the opened dialog box, click *Add extension*.
+열린 팝업 창에서 *확장 추가*를 클릭하세요.
 
-![Dialog box in Chrome Web Store *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_chrome1.png)
+![Chrome 웹 스토어의 대화 상자 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_chrome1.png)
 
-## How to install AdGuard Browser Extension for Opera
+## Opera용 AdGuard 확장 프로그램 설치 방법
 
-Open the page [addons.opera.com](https://agrd.io/extension_opera).
+[addons.opera.com](https://agrd.io/extension_opera) 페이지를 엽니다.
 
-![AdGuard Browser Extension in Opera addons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_opera.png)
+![Opera addons의 AdGuard 브라우저 확장 프로그램 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_opera.png)
 
-Click *Add to Opera*.
+*Opera에 추가*를 클릭하세요.
 
-## How to install AdGuard Browser Extension for Firefox
+## Firefox용 AdGuard 확장 프로그램 설치 방법
 
-Open the page [addons.mozilla.org](https://agrd.io/extension_firefox).
+[addons.mozilla.org](https://agrd.io/extension_firefox) 페이지를 엽니다.
 
-![AdGuard Browser Extension in Firefox add-ons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_firefox.png)
+![Firefox add-ons의 AdGuard 브라우저 확장 프로그램 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_firefox.png)
 
-Click *Add to Firefox*.
+*Firefox에 추가*를 클릭하세요.
 
-## How to install AdGuard Browser Extension for Yandex Browser
+## Yandex 브라우저용 AdGuard 확장 프로그램 설치 방법
 
-Click the browser settings button in the upper right corner of the browser, then choose *Add-ons* in the drop-down menu.
+브라우저 오른쪽 위에 있는 설정 버튼을 클릭하고, 메뉴에서 *Add-ons*를 고르세요.
 
-Scroll down to find AdGuard, then click *Install*.
+스크롤을 내려 AdGuard를 찾은 뒤 *설치*를 클릭하세요.
 
-![AdGuard Browser Extension in Yandex Add-ons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_yandex.png)
+![Yandex Add-ons의 AdGuard 브라우저 확장 프로그램 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_yandex.png)
 
-## How to install AdGuard Browser Extension for Microsoft Edge
+## Microsoft Edge용 AdGuard 확장 프로그램 설치 방법
 
-Find AdGuard Browser Extension in the [Edge Add-ons store](https://agrd.io/extension_edge) and click *Get*.
+[Edge 확장 프로그램 스토어](https://agrd.io/extension_edge)에서 AdGuard 브라우저 확장 프로그램을 찾은 뒤 *다운로드*를 클릭하세요.
 
-![AdGuard Browser Extension in Edge Add-ons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_edge.png)
+![Edge 확장 프로그램 스토어의 AdGuard 확장 프로그램 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_edge.png)
 
-In the opened dialog window, press *Add extension*.
+팝업 창에서 *확장 프로그램 추가*를 누르세요.
 
-![Edge dialog window *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_edge1.png)
+![Edge 브라우저의 대화 상자 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_edge1.png)
 
-Alternatively, you can install AdGuard Browser Extension for Edge from the [Chrome Web Store](https://agrd.io/extension_chrome). Open its web page in your Edge browser and select *Allow extensions from other stores* on the banner at the top of the page.
+다른 대안으로, [Chrome 웹 스토어](https://agrd.io/extension_chrome)에서 Edge용 AdGuard 확장 프로그램을 설치할 수 있습니다. Edge 브라우저에서 해당 웹페이지를 열고 페이지 상단의 배너에서 *다른 스토어의 확장 프로그램 허용* 선택합니다.
 
-![Edge banner on the Chrome Web Store *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/edge_banner.jpg)
+![Chrome 웹 스토어의 Edge 배너 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/edge_banner.jpg)
 
-In the opened dialog box, click *Allow*.
+대화 상자가 열리면 *확장 프로그램 추가*를 클릭합니다.
 
-![Edge dialog box "Allow extensions from other web stores"](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/allow_from_stores.jpg)
+![Edge 대화 상자 "다른 웹 스토어의 확장 프로그램 허용"](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/allow_from_stores.jpg)
 
-Click *Add to Chrome*.
+*Chrome에 추가*를 클릭합니다.
 
-![Add to Chrome button *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/add_to_chrome.jpg)
+![Chrome에 추가 버튼 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/add_to_chrome.jpg)
 
-In the opened dialog window, click *Add extension* to install AdGuard Browser Extension.
+열린 팝업 창에서 *확장 프로그램 추가하기*를 클릭하여 AdGuard 확장 프로그램을 설치합니다.
 
-![Add to Edge button](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/add_to_edge.jpg)
+![Edge에 추가 버튼](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/add_to_edge.jpg)
 
-## How to install AdGuard Browser Extension for Safari
+## Safari용 AdGuard 확장 프로그램 설치 방법
 
-AdGuard for Safari is not a browser extension in a common sense. You can read more about it in a [dedicated article](/adguard-for-safari/overview). Or you can [download the installation file](https://agrd.io/safari_release) directly from this page.
+Safari용 AdGuard는 일반적으로 브라우저 확장 프로그램이 아닙니다. You can read more about it in a [dedicated article](/adguard-for-safari/features/general). 또는 [이 페이지](https://agrd.io/safari_release)에서 설치 파일을 다운로드할 수 있습니다.

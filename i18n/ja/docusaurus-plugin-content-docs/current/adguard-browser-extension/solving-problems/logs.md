@@ -5,7 +5,7 @@ sidebar_position: 1
 
 ## Exporting logs from the background page in the extension
 
-### Chrome
+### Google Chrome の場合
 
 1. Open AdGuard Browser Extension and, if possible, repeat the actions that led to the error. Note the exact time when the error occurred.
 
@@ -27,7 +27,7 @@ sidebar_position: 1
 
    ![Save as \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save.png)
 
-### Firefox
+### Mozilla Firefox の場合
 
 1. Open AdGuard Browser Extension and, if possible, repeat the actions that led to the error. Note the exact time when the error occurred.
 
@@ -50,6 +50,8 @@ sidebar_position: 1
    ![Save \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save-to-file.png)
 
 ## Sending logs
+
+> AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/en/privacy/browser-extension.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
 
 Now that you have collected the logs, please follow these steps to submit them to our development team:
 

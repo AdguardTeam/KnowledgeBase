@@ -48,7 +48,7 @@ You can find reactions in the upper right corner or at the bottom of an issue.
 
 2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForWindows/issues/new/choose) and select *Bug report*.
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. Fill out the form. Mümkünse ekran görüntüleri veya ekran kaydı ekleyin.
 
 ![Reporting a bug via GitHub *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows_gh.png)
 
@@ -58,7 +58,7 @@ You can find reactions in the upper right corner or at the bottom of an issue.
 
 2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForMac/issues/new).
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. Fill out the form. Mümkünse ekran görüntüleri veya ekran kaydı ekleyin.
 
 ### Android için AdGuard
 
@@ -66,7 +66,7 @@ You can find reactions in the upper right corner or at the bottom of an issue.
 
 2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForAndroid/issues/new/choose) and select *Bug report*.
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. Fill out the form. Mümkünse ekran görüntüleri veya ekran kaydı ekleyin.
 
 ### iOS için AdGuard
 
@@ -74,7 +74,7 @@ You can find reactions in the upper right corner or at the bottom of an issue.
 
 2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForiOS/issues/new/choose), select *Bug report*.
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. Fill out the form. Mümkünse ekran görüntüleri veya ekran kaydı ekleyin.
 
 ### AdGuard Tarayıcı Uzantısı
 
@@ -82,7 +82,7 @@ You can find reactions in the upper right corner or at the bottom of an issue.
 
 2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose) and select *Bug report*.
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. Fill out the form. Mümkünse ekran görüntüleri veya ekran kaydı ekleyin.
 
 ### Safari için AdGuard
 
@@ -90,4 +90,4 @@ You can find reactions in the upper right corner or at the bottom of an issue.
 
 2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdGuardForSafari/issues/new/choose) and select *Bug report*.
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. Fill out the form. Mümkünse ekran görüntüleri veya ekran kaydı ekleyin.

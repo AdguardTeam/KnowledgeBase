@@ -15,7 +15,7 @@ AdGuard Browser Assistant is a browser extension, it is installed in a browser, 
 
 ### Compatibility with the main app
 
-If you got into the habit of using our previous AdGuard Ad Blocker extension [in Integration mode](/adguard-browser-extension/integration-mode), you may like the solution that we have developed for the new Browser Assistant.
+If you got into the habit of using our previous [AdGuard Ad Blocker extension](/adguard-browser-extension/compatibility), you might like the solution that we have developed for the new Browser Assistant.
 
 Background information:
 
@@ -27,7 +27,7 @@ When using the Browser Assistant, all these problems don’t matter as there can
 
 ## Separate tab in Settings
 
-The new Browser Assistant has its own tab in AdGuard for Windows settings, along with Stealth Mode, Browsing Security, Parental Control and others. There you will find a link to download the extension for your default browser. Besides, there is a checkbox to enable the legacy Assistant.
+The new Browser Assistant has its own tab in AdGuard for Windows settings, along with Stealth Mode, Browsing security, Parental Control and others. There you will find a link to download the extension for your default browser. Besides, there is a checkbox to enable the legacy Assistant.
 
 ![Settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 

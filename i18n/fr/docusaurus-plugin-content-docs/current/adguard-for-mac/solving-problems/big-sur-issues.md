@@ -5,7 +5,7 @@ sidebar_position: 4
 
 :::info
 
-Cet article parle de AdGuard pour Mac, un bloqueur de contenus multifonctionnel qui protège votre appareil au niveau du système. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -41,7 +41,7 @@ For a deeper understanding of this problem, read [this article](../protect-mail-
 
 **Recommended solution**
 
-At this point, we recommend using a more traditional VPN service, such as AdGuard VPN, instead of the new Apple's privacy features.
+At this point, we recommend using a more traditional VPN service, such as [AdGuard VPN](https://adguard-vpn.com/), instead of the newer Apple privacy features.
 
 ### Monterey 12, Big Sur 11.6 and later: currently existing problems
 
@@ -93,7 +93,7 @@ Now AdGuard can filter local proxies (mostly) without any problems. If you encou
 
 To configure an upstream proxy in AdGuard for Mac in Big Sur:
 
-1. Open AdGuard's settings  *Preferences → Network → Outbound proxy*.
+1. Open AdGuard's settings *Preferences → Network → Outbound proxy*.
 2. Choose HTTP, HTTPS, SOCKS4 or SOCKS5, depending on your proxy type.
 3. Fill in the fields:
     - `host` is the IP address of your proxy server,

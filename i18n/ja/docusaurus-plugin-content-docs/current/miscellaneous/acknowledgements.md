@@ -44,7 +44,7 @@ This is the list of libraries and other resources that really helped us with AdG
 - Minizip-ng library by Nathan Moinvaziri: [github.com/zlib-ng/minizip-ng](https://github.com/zlib-ng/minizip-ng)
 - Lottie for iOS library by Brandon Withrow: [github.com/airbnb/lottie-ios](https://github.com/airbnb/lottie-ios)
 
-## AdGuard Browser Extension {#extension}
+## AdGuard ブラウザ拡張機能 {#extension}
 
 - SHA256: [github.com/AndersLindman/SHA256](https://github.com/AndersLindman/SHA256)
 - D3: [github.com/d3/d3](https://github.com/d3/d3)

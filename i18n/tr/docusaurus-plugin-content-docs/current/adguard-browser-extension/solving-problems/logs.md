@@ -33,9 +33,9 @@ sidebar_position: 1
 
 2. `about:addons` adresine gidin.
 
-3. Click _Debug Add-ons_.
+3. _Eklentilerde hata ayıkla_ öğesine tıklayın.
 
-   ![Debug Add-ons \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/add-ons.png)
+   ![Eklentilerde hata ayıkla \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/add-ons.png)
 
 4. _İncele_ öğesine tıklayın.
 
@@ -50,6 +50,8 @@ sidebar_position: 1
    ![Kaydet \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save-to-file.png)
 
 ## Günlükleri gönderme
+
+> AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/en/privacy/browser-extension.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
 
 Artık günlükleri topladığınıza göre, bunları geliştirme ekibimize göndermek için lütfen aşağıdaki adımları izleyin:
 

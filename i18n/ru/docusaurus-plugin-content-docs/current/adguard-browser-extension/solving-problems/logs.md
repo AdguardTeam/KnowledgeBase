@@ -1,57 +1,59 @@
 ---
-title: How to export logs from the background page
+title: Как экспортировать логи с фоновой страницы
 sidebar_position: 1
 ---
 
-## Exporting logs from the background page in the extension
+## Экспорт логов с фоновой страницы в расширении
 
 ### Chrome
 
-1. Open AdGuard Browser Extension and, if possible, repeat the actions that led to the error. Note the exact time when the error occurred.
+1. Откройте Браузерное расширение AdGuard и, если возможно, воспроизведите действия, которые привели к ошибке. Запомните точное время, когда произошла ошибка.
 
-2. Navigate to `chrome://extensions`.
+2. Перейдите по адресу `chrome://extensions`.
 
-3. Enable _Developer mode_.
+3. Включите _Режим разработчика_.
 
-   ![Developer mode \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/developer_mode1.png)
+   ![Режим разработчика \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/developer_mode1.png)
 
-4. Click `background.html`.
+4. Нажмите `background.html`.
 
-   ![Background \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/background1.png)
+   ![background.html \*border](https://cdn.adguardvpn.com/content/kb/ad_blocker/browser_extension/background1.png)
 
-5. Open the tab _Console_.
+5. Откройте вкладку _Консоль_.
 
-   ![The Console tab \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/console.png)
+   ![Вкладка консоль \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/console.png)
 
-6. Open the context menu and select _Save as…_.
+6. Откройте контекстное меню и выберите _Сохранить как..._.
 
-   ![Save as \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save.png)
+   ![Сохранить как \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save.png)
 
 ### Firefox
 
-1. Open AdGuard Browser Extension and, if possible, repeat the actions that led to the error. Note the exact time when the error occurred.
+1. Откройте Браузерное расширение AdGuard и, если возможно, воспроизведите действия, которые привели к ошибке. Запомните точное время, когда произошла ошибка.
 
-2. Navigate to `about:addons`.
+2. Перейдите на `about:addons`.
 
-3. Click _Debug Add-ons_.
+3. Нажмите _Отладка дополнений_.
 
-   ![Debug Add-ons \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/add-ons.png)
+   ![Отладка дополнений \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/add-ons.png)
 
-4. Click _Inspect_.
+4. Нажмите _Проверить_.
 
-   ![Inspect \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/inspect.png)
+   ![Исследовать \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/inspect.png)
 
-5. Go to the tab _Console_.
+5. Перейдите во вкладку _Консоль_.
 
-   ![Console \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/ff_console.png)
+   ![Консоль \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/ff_console.png)
 
-6. Click _Save all Messages to File_.
+6. Нажмите _Сохранить все сообщения в файл_.
 
-   ![Save \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save-to-file.png)
+   ![Сохранить в файл \*border](https://cdn.adguardvpn.com/content/kb/vpn/browser_extension/save-to-file.png)
 
-## Sending logs
+## Отправкка логов
 
-Now that you have collected the logs, please follow these steps to submit them to our development team:
+> AdGuard стремится защищать вашу конфиденциальность. Мы строго соблюдаем нашу [Политику конфиденциальности](https://adguard.com/en/privacy/browser-extension.html) и не собираем никакой личной информации о пользователях. Перед отправкой логов в поддержку проверьте, не содержит ли файл дополнительную информацию, которую вы не хотите передавать. Если в файле осталась личная информация, рекомендуем удалить её.
 
-1. Report the bug on [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose).
-2. Send your archive with logs and playback time to `devteam@adguard.com` and add a link to your GitHub issue. You can also upload the archive to Google Drive and add the link to it instead of attaching the file.
+Теперь, когда вы собрали логи, выполните следующие действия, чтобы отправить их нашей команде разработчиков:
+
+1. Сообщите об ошибке [на GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose).
+2. Отправьте архив с логами и временем воспроизведения на адрес `devteam@adguard.com` и прикрепите ссылку на свою задачу на GitHub. Вы также можете загрузить архив на Google Диск и добавить на него ссылку вместо прикрепления файла.

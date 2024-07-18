@@ -1,56 +1,56 @@
 ---
-title: How to create a minidump file to fix the BSoD error
+title: Comment créer un fichier minidump pour corriger l'erreur BSoD
 sidebar_position: 8
 ---
 
-Almost all Windows users are familiar with the [Blue Screen of Death (BSoD)](https://en.wikipedia.org/wiki/Blue_screen_of_death) error unfortunately. BSoD occurs when the Windows system encounters problems that can affect safe system operation, such as problems with third-party driver code, hardware, or Microsoft code. To solve the blue screen error, users can use a minidump file.
+Presque tous les utilisateurs de Windows connaissent malheureusement l'erreur [Blue Screen of Death (BSoD)](https://en.wikipedia.org/wiki/Blue_screen_of_death). BSoD se produit lorsque le système Windows rencontre des problèmes pouvant affecter le fonctionnement sûr du système, tels que des problèmes avec le code de pilote tiers, le matériel ou le code Microsoft. Pour résoudre l'erreur d'écran bleu, les utilisateurs peuvent utiliser un fichier minidump.
 
-## What is Minidump file
+## Qu’est-ce qu’un fichier Minidump ?
 
-A minidump file is a file that contains the information about the nature of the system crash. It is created just before the blue screen appears and it has the minimum amount of useful information that can be used to solve the problem. The minidump file usually has a *.dmp* extension.
+Un fichier minidump est un fichier contenant des informations sur la nature de la panne du système. Il est créé juste avant l'apparition de l'écran bleu et contient le minimum d'informations utiles pouvant être utilisées pour résoudre le problème. Le fichier minidump a généralement une extension *.dmp* .
 
 :::note
-On Windows 10, the blue screen shows a stop code and a QR code. The user can use this information and search the Web for the specific problem.
+Sous Windows 10, l'écran bleu affiche un code d'arrêt et un code QR. L'utilisateur peut utiliser ces informations et rechercher le problème spécifique sur le web.
 
 :::
 
-The option to create the minidump file is disabled by default, so before we go into more detail on how to use the file, let’s take a closer look at how to enable it.
+L'option de création du fichier minidump est désactivée par défaut. Avant d'entrer dans les détails de l'utilisation du fichier, examinons de plus près comment l'activer.
 
-## Set up Windows to create the Minidump file
+## Configurer Windows pour créer le fichier Minidump
 
-Even if you don’t experience any BSoD crash errors,  you can still set this option — this is a general recommendation, not necessarily related to AdGuard products. Please follow the instructions below to automatically create the minidump file.
+Even if you don’t experience any BSoD crash errors, you can still set this option — this is a general recommendation, not necessarily related to AdGuard products. Veuillez suivre les instructions ci-dessous pour créer automatiquement le fichier minidump.
 
- 1. Type *sysdm.cpl* in the Windows search bar and click **Open**. The **System Properties Control Panel Menu** window will appear on the screen.
+ 1. Tapez *sysdm.cpl* dans la barre de recherche Windows et cliquez sur **Ouvrir**. Le **Menu du Panneau de configuration des propriétés système** s'affichera à l'écran.
 
     :::tip
 
-    Alternatively, click **Settings** →  **System** →  **About** →  **Advanced system settings**.
+    Alternatively, click **Settings** → **System** → **About** → **Advanced system settings**.
 
 
 :::
 
-    ![System Properties *mobile_border](https://cdn.adtidy.org/blog/new/c2huSystem_Properties.jpeg)
+    ![Propriétés système *mobile_border](https://cdn.adtidy.org/blog/new/c2huSystem_Properties.jpeg)
 
- 1. Go to the **Advanced** tab.
- 1. In the **Startup and Recovery** section, click **Settings**.
+ 1. Accédez à l'onglet **Avancés** .
+ 1. Dans la section **Démarrage et récupération** , cliquez sur **Paramètres**.
 
-    ![Startup and Recovery *mobile_border](https://cdn.adtidy.org/blog/new/1dmybiStartup_and_Recovery.png)
+    ![Démarrage et récupération *mobile_border](https://cdn.adtidy.org/blog/new/1dmybiStartup_and_Recovery.png)
 
- 1. Enable the following three options:
+ 1. Activez les trois options suivantes :
 
-    - Write an event to the system log
-    - Automatically restart
-    - Writing debugging information → Small memory dump (256 kb)
+    - Écrire un événement dans le journal système
+    - Redémarrer automatiquement
+    - Écriture des informations de débogage → Petit dump mémoire (256 Ko)
 
-    ![Three options *mobile_border](https://cdn.adtidy.org/blog/new/nmr4eThree_options.png)
+    ![Trois options *mobile_border](https://cdn.adtidy.org/blog/new/nmr4eThree_options.png)
 
- 1. Click **OK** to apply the settings.
- 1. Restart the computer.
+ 1. Cliquez sur **OK** pour appliquer les paramètres.
+ 1. Redémarrez le PC.
 
-You've successfully enabled the minidump file. Now it will be created automatically when the system crashes.
+Vous avez activé le fichier minidump. Désormais, il sera créé automatiquement en cas de panne du système.
 
 :::note
 
-By default the minidump file is stored in the **%SystemRoot%\Minidump** folder. You can change the directory location to whatever you like, but please remember that a lot of programs are set to look for this location by default, so we recommend that you do not change the location.
+Par défaut, le fichier minidump est stocké dans le dossier **%SystemRoot%\Minidump** . Vous pouvez modifier l'emplacement du répertoire comme vous le souhaitez, mais n'oubliez pas que de nombreux programmes sont configurés pour rechercher cet emplacement par défaut, nous vous recommandons donc de ne pas modifier l'emplacement.
 
 :::

@@ -1,11 +1,11 @@
 ---
-title: How to block ads in the YouTube app
+title: Come bloccare gli annunci nell'app di YouTube
 sidebar_position: 7
 ---
 
 :::info
 
-Questo articolo riguarda AdGuard per Android, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 

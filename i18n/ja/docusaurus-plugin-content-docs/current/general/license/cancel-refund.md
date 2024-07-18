@@ -1,5 +1,5 @@
 ---
-title: How to cancel or refund
+title: 解約・返金する方法
 sidebar_position: 5
 ---
 
@@ -7,9 +7,9 @@ sidebar_position: 5
 
 サブスクリプションは、AdGuardアカウントでキャンセルすることができます。 その方法以下の通りです:
 
- 1. Go to your [AdGuard account](https://my.adguard.com/).
- 1. Select *Licenses*.
- 1. Click *Cancel subscription* below the subscription you no longer need. ![キャンセル](https://cdn.adtidy.org/blog/new/fgjbxcancel-ja-1.png)
+ 1. お使いの[AdGuardアカウント](https://my.adguard.com/)にアクセスします。
+ 1. メニューで「*ライセンス*」を押します。
+ 1. 解約したいサブスクリプションの下の「**サブスクリプションを解約する**」をクリックします。 ![キャンセル](https://cdn.adtidy.org/blog/new/fgjbxcancel-ja-1.png)
 
  ※解約されたサブスクリプションは、有効期限まで有効のままで、有効期間が終了するまでご利用いただけます。
 
@@ -21,11 +21,11 @@ sidebar_position: 5
 
 ## 返金を受ける方法
 
-当社の[販売条件](https://adguard.com/terms-of-sale.html)に基づき、お客様が https://adguard.com で購入したAdGuardライセンスキーの全額返金を受けることができます。 To get a refund, contact our support team at *support@adguard.com* and specify the payment option you've used.
+当社の[販売条件](https://adguard.com/terms-of-sale.html)に基づき、お客様が https://adguard.com で購入したAdGuardライセンスキーの全額返金を受けることができます。 返金をご希望の場合は、AdGuardサポートチーム（ *support@adguard.com* （日本語対応））まで、ご購入の際にご利用になられたお支払い方法を明記の上、返金ご希望であることをご連絡ください。
 
 以下のような場合、返金をお断りすることがありますのでご了承ください:
 
-- A license was purchased more than 60 days ago
-- A license was purchased from a distributor
-- A license was purchased from the App Store
-- You applied for a partial refund for a license key upgrade or renewal
+- ライセンス購入日から61日間以上経過した場合
+- ライセンスがAdGuard公式サイトではなく販売代理店から購入されたものである場合
+- ライセンスが App Store から購入されたものである場合
+- ライセンスキーのアップグレードまたは延長という一部返金をご希望の場合

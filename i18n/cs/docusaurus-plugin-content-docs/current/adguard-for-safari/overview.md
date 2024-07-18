@@ -9,7 +9,7 @@ Tento článek je o AdGuardu pro Safari, který chrání pouze váš prohlíže�
 
 :::
 
-AdGuard pro Safari byl navržen tak, aby splňoval omezení společnosti Apple pro rozšíření prohlížeče pro blokování reklam a je nejpoužívanějším blokátorem reklam pro Safari. Přestože se nedá srovnávat s našimi aplikacemi pro blokování reklam na počítači, je zdarma a dokáže vás ochránit před reklamami, slídiči, phishingem a škodlivými webovými stránkami.
+AdGuard pro Safari byl navržen tak, aby splňoval omezení společnosti Apple pro rozšíření prohlížeče pro blokování reklam a je nejpoužívanějším blokátorem reklam pro Safari. Although it can't be compared to our desktop ad blocking apps, it's free and can protect you from ads, trackers, phishing, and malicious websites.
 
 ## Obecné {#general}
 
@@ -35,7 +35,7 @@ Na kartě Filtry můžete povolit celou kategorii nebo jednotlivé filtry. Změn
 
 Blokátor obsahu je tematická skupina filtrů. Filtry související s ochranou soukromí jsou zahrnuty do blokování obsahu pod odpovídajícím názvem — *AdGuard Privacy*.
 
-Blokátory obsahu byly navrženy ze dvou důvodů: pro strukturování filtrů a pro splnění omezení společnosti Apple.
+Content Blockers were designed for two reasons: to structure filters and to conform to Apple's restrictions.
 
 [V roce 2019](https://adguard.com/en/blog/adguard-safari-1-5.html), společnost Apple zavedla omezení pro blokátory reklam v Safari, které umožňují používat současně pouze 50 000 pravidel filtrování. Protože tento počet nestačí k tomu, aby blokátor reklamy poskytoval dobrou kvalitu filtrování (samotný AdGuard Base Filter má 30 000 pravidel filtrování), rozdělili jsme AdGuard pro Safari do šesti blokátorů obsahu, z nichž každý obsahuje až 50 000 pravidel.
 
@@ -73,7 +73,7 @@ Tento blokátor obsahu spojuje několik filtrů souvisejících se zabezpečení
 
 ::::::note Odmítnutí odpovědnosti
 
-Nemáme žádné "přijatelné reklamy" placené inzerenty. Místo toho uživatelům poskytujeme možnost vidět [reklamy ve vyhledávání a sebepropagaci](/general/ad-filtering/search-ads).
+We don't have any 'acceptable ads' paid by advertisers. Místo toho uživatelům poskytujeme možnost vidět [reklamy ve vyhledávání a sebepropagaci](/general/ad-filtering/search-ads).
 
 :::
 
