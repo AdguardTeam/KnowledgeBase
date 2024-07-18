@@ -5,7 +5,7 @@ sidebar_position: 10
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Android」について書いています。 実際に使ってみるには、[AdGuardアプリをダウンロード](https://adguard.com/download.html?auto=true)してください。
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -15,7 +15,7 @@ In this article you will find the methods on how to solve problems with AdGuard 
 
 On Android 9 and later, if AdGuard is installed for more than one user profile on your device, you may encounter problems when uninstalling the app. When you uninstall AdGuard from one user profile, the app will still appear on the app list, but you won't be able to uninstall or reinstall it. This happens because AdGuard is installed for a different user profile on the device.
 
-If you try to reinstall AdGuard after an unsuccessful removal attempt, you will see the error message "You can't install the app on your device".
+If you try to reinstall AdGuard after an unsuccessful removal attempt, you will see the error message “You can't install the app on your device”.
 
 To solve this problem, you need to uninstall the application for all users: go to Settings → All apps → AdGuard. Tap the three-dot menu in the top right corner and select *Uninstall for all users*.
 
@@ -37,29 +37,36 @@ This approach is available starting from **AdGuard v3.5 nightly 6**. 古いバ�
 
 :::
 
-1. **開発者モード**をアクティブにし、**USBデバッグ**を有効にします（※端末によって下記メニュー項目の名称が多少違ったりする場合がございます）:
-- Open the **Settings** app phone;
-- **システム**セクションに移動し（設定メニューの最後の項目）、 In this section, find the sub-item **About phone**;
-- Tap the **Build number** line 7 times. その後、「**開発者になりました！**」のような通知が表示されます（必要に応じて、デバイスのロック解除コードを入力してください）。
-- Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
+1. Activate the **developer mode** and enable **USB debugging**:
 
-:::note
+    - Open the **Settings** app phone;
+    - Go to **System** section (last item in the settings menu). In this section, find the sub-item **About phone**;
+    - Tap the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
+    - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
 
-上記に関してまだご不明やお困りな点ございましたら、[こちら](https://developer.android.com/studio/debug/dev-options)でさらに詳しい手順をご確認ください。
+    :::note
+
+    上記に関してまだご不明やお困りな点ございましたら、[こちら](https://developer.android.com/studio/debug/dev-options)でさらに詳しい手順をご確認ください。
+
 
 :::
 
-2. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
-3. **USBケーブル**を使用して**ADB**をインストールしたコンピューターまたはラップトップにAndroidデバイスを接続します。
-4. PCで**コマンドライン**を開きます。
-- **Windows**を使用している場合は**Cmd.exe**
-- **macOS**を使用している場合は**ターミナル**
-5. `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` というコマンドを入力して**Enter**を押します。これで完了です。
+1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+
+1. **USBケーブル**を使用して**ADB**をインストールしたコンピューターまたはラップトップにAndroidデバイスを接続します。
+
+1. PCで**コマンドライン**を開きます。
+
+    - **Windows**を使用している場合は**Cmd.exe**
+    - **macOS**を使用している場合は**ターミナル**
+
+1. `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` というコマンドを入力して**Enter**を押します。これで完了です。
 
 ### 【方法②】*制限付きアカウント*を削除する
 
 多くの端末の場合、 [端末設定→詳細設定→複数ユーザー→制限付きプロファイルを削除する]という手順になります。 ユーザーアカウント管理については[こちら](https://support.google.com/a/answer/6223444?hl=en)にてご確認いただけます。
-> :::note
+
+:::note
 
 In some cases restricted user accounts are created implicitly and cannot be removed. たとえば、**Samsung**または**LG**デバイスでデュアルメッセンジャーまたはデュアルアプリ機能を使用する場合です。 これらのケースで問題を解決する方法を以下に記載いたしました。
 
@@ -78,7 +85,7 @@ To enable this mode, open **AdGuard Settings** → **Network** → **Filtering m
 - 端末**設定**を開く
 - **高度な設定**をタップ
 - 下にスクロールして**デュアルメッセンジャー**をタップ
-- チェックついているアプリをすべて**オフ**にする
+- Disable the **Dual messenger** for all apps;
 - 端末画面オフにして5～10分程度放置する
 - 画面のロックを解除し、再度VPNプロファイルの作成を試みてください。
 
@@ -87,7 +94,5 @@ To enable this mode, open **AdGuard Settings** → **Network** → **Filtering m
 - 端末**設定**を開く
 - 「**便利な機能**」を開く（端末によっては「一般」や他のメニュー名称の場合もあります）
 - 下にスクロールして、「**デュアルアプリ**」をタップ
-- アプリに対するスイッチをすべてオフにする
+- Remove all apps from the list;
 - 端末を再起動する
-
-

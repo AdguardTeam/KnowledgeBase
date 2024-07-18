@@ -1,99 +1,95 @@
 ---
-title: How to take a screenshot
+title: Come fare uno screenshot
 sidebar_position: 5
 ---
 
-Screenshot is a capture of your computer’s or mobile device’s screen, which can be obtained by using standard tools or a special program/app.
+Lo screenshot è una cattura dello schermo del computer o del dispositivo mobile, che può essere ottenuta utilizzando strumenti standard o un programma/app speciale.
 
-Sometimes a screenshot (or screenshots) are requested by the support team for a better understanding. Here you will find all the necessary hotkeys you should know in order to take screenshots on your computer or mobile device.
-
+Talvolta, gli screenshot sono richiesti dal team di supporto per una migliore comprensione. Qui troverai tutti i tasti di scelta rapida necessari, che dovresti conoscere per poter scattare degli screenshot sul tuo computer o dispositivo mobile.
 
 ### Android {#android}
 
-Taking a screenshot on an Android device can be done in various ways — depending on the device model and its manufacturer.
+Su un dispositivo Android, è possibile scattare uno screenshot in vari modi, a seconda del modello o produttore del dispositivo.
 
-Generally, you should use the following button combination for Android:
+In genere, per Android si utilizza la seguente combinazione di pulsanti:
 
-+ **Hold down at once the *Volume Down* and the *Power* buttons for 1–2 seconds**
+- **Premi i pulsanti *Volume Giù* e *Accensione* in contemporanea**
 
-Your Android device will capture the entire screen and save it as a photo. So, you can find the screenshot in a *Screenshots* folder in your Gallery.
+Il tuo dispositivo Android catturerà l'intero schermo e lo salverà come una foto. Quindi, puoi trovare lo screenshot nella cartella *Screenshot*, nella tua Galleria.
 
-But, as it has been already said, there can be differences depending on a particular device. Let’s look at other possible combinations:
+Per i dispositivi precedenti, potresti utilizzare le seguenti combinazioni:
 
-+ **Hold down at once *Home* and *Power* for 1–2 seconds;**
-+ **Hold down at once the *Back* and the *Home* buttons**
+- **Premi *Home* e *Accensione* in contemporanea**
+- **Premi *Indietro* e *Home* in contemporanea**
 
-On Android 8 and later you can also take a screenshot with other manipulations, for example by placing your hand vertically along the left or right edge of your phone and swiping in from that edge with your hand touching the screen (Samsung devices), or you can do it with three fingers swiping down (OnePlus devices), etc.
+Su Android 8 e successive, inoltre, puoi scattare uno screenshot con altri gesti, ad esempio, facendo scorrere la tua mano sullo schermo a un angolo di 90 gradi, per innescare un'istantanea (dispositivi Samsung), o facendo scorrere tre dita (dispositivi OnePlus), etc.
 
-Find out about other options to take a screenshot in the settings of your device.
+Le opzioni per scattare uno screenshot variano per marca e modello. Consulta le impostazioni del tuo dispositivo per trovare il metodo migliore per te.
 
-Besides, you can always use any special applications for taking screenshots on your devices, for example — *Screenshot Easy*, *Screenshot Ultimate*, *Screenshot Snap*, etc.
-
+Peraltro, puoi sempre utilizzare qualsiasi app speciale per scattare screenshot sui tuoi dispositivi, ad esempio: *Screenshot Easy*, *Screenshot Ultimate*, *Screenshot Snap*, etc.
 
 ### iOS {#ios}
 
-Any iOS device (barring ancient ones) lets you take a screenshot using standard tools.
+Qualsiasi dispositivo iOS (ad eccezione di quelli più vecchi), ti consentono di scattare uno screenshot utilizzano strumenti standard.
 
-To take a screenshot on an iOS device, use the following combination:
+Per scattare uno screenshot su un dispositivo iOS, utilizza la seguente combinazione:
 
-+ **Press the *Sleep/Wake* (side) button and the *Home* button at the same time, then quickly release them**
+- **Premere contemporaneamente i pulsanti *Sospensione/Accensione* (laterale) e *Home*, quindi rilasciali rapidamente**
 
-and this one for iPhone X or later:
+e, per iPhone X o successivi:
 
-+ **Press the *Sleep/Wake* button and the *Volume up* button at the same time, then quickly release them**
+- **Premere contemporaneamente i pulsanti *Sospensione/Accensione* (laterale) e *Volume Su*, quindi rilasciali rapidamente**
 
-Your iOS device will capture the entire screen and save it as a photo. You can find it in a standard Photo app.
-
+Il tuo dispositivo iOS catturerà l'intera schermata e la salverà come una foto. Puoi trovarlo nell'app standard Foto.
 
 ### Windows {#windows}
 
-+ **To take a screenshot on Windows, press the *PrtScn* button**
+- **Per scattare uno screenshot su Windows, premi il tasto *PrtScn***
 
-On some notebooks you have to hold *Fn* and then press *PrtScn*.
+Su alcuni portatili, devi tenere premuti *Fn* e *PrtScn*.
 
-*Please note: PrtScn (Print Screen) button can be differently abbreviated on various keyboards — PrntScrn, PrtScn, PrtScr or PrtSc.*
+*Ti preghiamo di notare che, il tasto PrtScn (Print Screen) potrebbe essere abbreviato diversamente, su tastiere differenti: PrntScrn, PrtScn, PrtScr, PrtSC, o ancora, Stamp, StampRsist, etc.*
 
-Windows captures the entire screen and copies it to the (invisible) clipboard.
+Windows cattura l'intera schermata e la copia negli appunti.
 
-To take a screenshot of an active window, use the following combination:
+Per scattare uno screenshot di una finestra attiva, utilizza la seguente scorciatoia:
 
-+ **Hold down *Alt* and press *PrtScn* (or *Fn + Alt + PrtScn* on some laptops)**
+- **Tieni premuto *Alt* e *PrtScn* (o *Fn + Alt + PrtScn* su alcuni portatili)**
 
-To take a screenshot of a specific area, you should use the following combination:
+Per scattare lo screenshot di un'area specifica, utilizza la seguente scorciatoia:
 
-+ ***Hold down *Win* (the Windows button) and *Shift* and press ***S******
+- ***Press ***Win + Shift + S******
 
-After you take a screenshot, it will be saved in the clipboard. In most cases you will be able to paste it into a document that you are currently editing by using *Ctrl + V* button combination. Alternatively, if you need to save the screenshot into a file, you should open the standard **Paint** program (or any other app that can work with images). Paste your screenshot there using the same button combination or by clicking the Paste button (usually in the top left corner of the screen) and then save it.
+Dopo aver scattato uno screenshot, sarà salvato negli appunti. Nella maggior parte dei casi, potrai incollarlo in un documento che stai modificando utilizzando la scorciatoia *Ctrl + V*. Altrimenti, se necessiti di salvare lo screenshot in un file, dovresti aprire il programma standard **Paint** (o qualsiasi altra app che permetta di lavorare con le immagini). Incolla il tuo screenshot utilizzando la stessa scorciatoia, o utilizzando il tasto Incolla (solitamente, nell'angolo superiore sinistro della schermata), quindi salvalo.
 
-Windows 8 and 10 let you take a screenshot very quickly with a *Win + PrtScn* combination. As soon as you press these buttons, the screenshot will be automatically saved as a file to your *Pictures* → *Screenshots Folder*.
+Windows 8 e 10 ti consentono di scattare uno screenshot molto rapidamente, con la scorciatoia *Win + PrtScn*. Appena premerai questi tasti, lo screenshot sarà automaticamente salvato come un file nella cartella *Immagini* → *Screenshot*.
 
-There is also a dedicated program for taking screenshots called *Snipping Tool* that you can find via Start menu among standard programs of your computer. Snipping Tool lets you capture of any area of your desktop or the entire screen. After taking a screenshot using this program you can edit the picture and save it to any folder on your computer.
+Inoltre, esiste un programma dedicato per scattare screenshot, chiamato *Strumento di Cattura*, che puoi trovare nel menu Start, tra i programmi standard del tuo computer. Strumento di Cattura ti permette di catturare qualsiasi area del tuo desktop o l'intero schermo. Dopo aver scattato uno screenshot utilizzando questo programma, puoi modificare l'immagine e salvarla in qualsiasi cartella sul tuo computer.
 
-Besides, you can also try using different apps for taking screenshots on your computer, like **PicPick**, **Nimbus Screenshot**, **Screenshot Captor**, **Snipaste**, **Monosnap**, etc.
-
+Puoi inoltre provare a utilizzare svariate app per scattare screenshot sul tuo computer, come **PicPick**, **Nimbus Screenshot**, **Screenshot Captor**, **Snipaste**, **Monosnap**, etc.
 
 ### macOS {#mac}
 
-To take a screenshot on Mac, use the following button combination:
+Per effettuare uno screenshot su Mac, utilizza la seguente scorciatoia:
 
-+ ***Press and hold together ***⌘ Cmd + Shift + 3******
+- ***Premi e tieni premuti ***⌘ Cmd + Shift + 3******
 
-Your Mac will capture the entire screen and save it as a file on the desktop.
+Il tuo Mac catturerà l'intera schermata e la salverà come un file sul desktop.
 
-To take a screenshot of an active window, use the following combination:
+Per scattare uno screenshot di una finestra attiva, utilizza la seguente scorciatoia:
 
-+ **Press and hold together *⌘ Cmd + Shift + 4 + Space bar*.  The pointer will change to a camera icon. Click the window to capture it. Press the Esc button to cancel taking a screenshot**
+- **Premi e tieni premuti *⌘ Cmd + Shift + 4 + Barra spaziatrice*. Il puntatore si trasformerà nell'icona di una fotocamera. Clicca la finestra per catturarla. Premi Esc per annullare la creazione del screenshot**
 
-To take a screenshot of a specific area, you should use the following combination:
+Per scattare lo screenshot di un'area specifica, utilizza la seguente scorciatoia:
 
-+ ***Press and hold together ***⌘ Cmd + Shift + 4******. Drag the crosshair to select the needed area. Release your mouse or trackpad to take a screenshot, press the Esc button to cancel it.
+- ***Premi ***⌘ Cmd + Shift + 5******. Trascina il puntatore per selezionare l'area necessaria. Rilascia il tuo mouse o trackpad per scattare uno screenshot, premi Esc per annullarlo.
 
-To take a screenshot of the *Touch Bar* (MacBook Pro) use the following combination:
+Per scattare uno screenshot della *Barra Tattile* (MacBook Pro), utilizza la seguente scorciatoia:
 
-+ ***Hold down ***⌘ Cmd + Shift + 6******
+- ***Premi ***⌘ Cmd + Shift + 6******
 
-Your Mac captures the entire *Touch Bar* and saves it as a file on the desktop.
+Il tuo Mac cattura l'intera *Barra Tattile* e la salva come un file sul desktop.
 
-To copy a screenshot to the clipboard instead of saving it, hold down *Ctrl* together with any of the combinations above. Then you can paste the screenshot (from the clipboard) into a document or an image you are currently editing by using *Cmd + V* combination.
+Per copiare uno screenshot negli appunti, invece di salvarlo, tieni premuto *Ctrl* con una qualsiasi delle precedenti scorciatoie da tastiera. Così, potrai incollare lo screenshot (dagli appunti) in un documento o un'immagine che stai modificando, utilizzando la scorciatoia *Cmd + V*.
 
-You can also take screenshots by using **Preview** and choosing **Take screenshot** (of the selected area, window, or the entire screen). With **Preview** you can save your screenshots in JPG, TIFF, PDF, and other file formats.
+Inoltre, puoi scattare gli screenshot utilizzando **Anteprima** e scegliendo **Scatta screenshot** (dell'area selezionata, della finestra o dell'intera schermata). Con **Anteprima**, puoi salvare i tuoi screenshot in JPG, TIFF, PDF e altri formati di file.

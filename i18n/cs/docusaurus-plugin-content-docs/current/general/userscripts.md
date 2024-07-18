@@ -1,35 +1,66 @@
 ---
 title: Uživatelské skripty
 sidebar_position: 5
+toc_max_heading_level: 4
 ---
 
 Uživatelské skripty (říkáme jim také "rozšíření") jsou de facto miniprogramy napsané v jazyce JavaScript. Upravují nebo rozšiřují funkce jedné nebo více webových stránek. Mnoho uživatelů AdGuardu již možná zná uživatelské skripty jako AdGuard asistent, Blokátor vyskakovacích oken a AdGuard Extra.
 
-### Podporované aplikace
+:::notePodporované aplikace
 
-AdGuard může výrazně rozšířit funkčnost webových stránek tím, že funguje jako správce uživatelských skriptů. V našich třech produktech můžete přidávat vlastní skripty nebo spravovat ty stávající: [AdGuard pro Windows](/adguard-for-windows/overview), [AdGuard pro Android](/adguard-for-android/overview) a [AdGuard pro Mac](/adguard-for-mac/overview).
-
-### Doporučené skripty AdGuardu
-
-Tyto uživatelské skripty pocházejí přímo od vývojářů AdGuardu a můžeme zaručit, že jsou účinné a bezpečné. Nezapomeňte, že kdykoli stahujete uživatelský skript z neznámého zdroje, vystavujete se riziku, protože některé skripty mohou být pro váš počítač škodlivé. Nové skripty získávejte pouze ze zdrojů, kterým stoprocentně důvěřujete. Dále zde uvádíme [příklady](#more-userscripts) oblíbených webů se skripty.
-
-* **AdGuard Extra**. Rozšíření, které blokuje reklamu v obtížných případech, kdy běžný přístup založený na filtru nestačí.
-
-* **Blokátor vyskakovacích oken**. Název mluví sám za sebe: blokuje vyskakovací okna — jeden z nejotravnějších typů reklam na webových stránkách.
-
-* **AdGuard asistent** (starší verze). Toto vlastní rozšíření je určeno k ovládání filtrování přímo ze stránky prohlížeče (ruční blokování, vyloučení webu atd.).
-
-:::note
-
-Tato verze Asistenta je starší a nemá smysl ji používat v nových systémech, protože byla nahrazena plnohodnotným [Asistentem prohlížeče](https://adguard.com/adguard-assistant/overview.html). Pokud však pro váš prohlížeč neexistuje rozšíření Asistent prohlížeče, může vám pomoci starší asistent.
+AdGuard může výrazně rozšířit funkčnost webových stránek tím, že funguje jako správce uživatelských skriptů. V našich třech produktech můžete přidávat vlastní skripty nebo spravovat ty stávající: [AdGuard pro Windows](/adguard-for-windows/features/extensions), [AdGuard pro Android](/adguard-for-android/features/settings#userscripts) a [AdGuard pro macOS](/adguard-for-mac/features/extensions).
 
 :::
 
-* **Zákázat AMP**. Skript předinstalovaný pouze v AdGuardu pro Android, který na stránce s výsledky vyhledávání Google zakáže AMP (Accelerated Mobile Pages).
+## Doporučené skripty AdGuardu
+
+Tyto uživatelské skripty pocházejí přímo od vývojářů AdGuardu a můžeme zaručit, že jsou účinné a bezpečné. For some of the userscripts developed by others that we consider good and reliable, [scroll down to the next section](#top-picks). You can also find some of the [popular websites with scripts](#more-userscripts) below, but remember that whenever you download a userscript from an unknown source, you expose yourself to a certain risk, as some scripts may be harmful to your computer.
+
+### AdGuard Extra
+
+Rozšíření, které blokuje reklamu v obtížných případech, kdy běžný přístup založený na filtru nestačí. AdGuard Extra je předinstalován ve všech prémiových verzích AdGuardu, takže pro jeho aktivaci nemusíte nic dělat. Pokud jej však chcete používat společně s Rozšířením prohlížeče AdGuard nebo jiným blokátorem reklam, musíte použít další rozšíření. Více informací o tomto uživatelském skriptu a jeho instalaci najdete na [GitHubu](https://github.com/AdguardTeam/AdGuardExtra).
+
+![AdGuard Extra](https://cdn.adtidy.org/content/kb/ad_blocker/general/adguard-extra.png)
+
+### AdGuard blokátor vyskakovacích oken
+
+Název mluví sám za sebe: blokuje vyskakovací okna — jeden z nejotravnějších typů reklam na webových stránkách. Více informací o tomto uživatelském skriptu, jeho klíčových funkcích a o tom, jak jej nainstalovat najdete na [GitHubu](https://github.com/AdguardTeam/PopupBlocker).
+
+![AdGuard blokátor vyskakovacích oken](https://cdn.adtidy.org/content/kb/ad_blocker/general/popup-blocker-installation.png)
+
+### AdGuard asistent (starší verze)
+
+Toto vlastní rozšíření je určeno k ovládání filtrování přímo ze stránky prohlížeče (ruční blokování, vyloučení webu atd.).
+
+:::note
+
+Tato verze Asistenta je starší a nemá smysl ji používat v nových systémech, protože byla nahrazena plnohodnotným [Asistentem prohlížeče](https://adguard.com/adguard-assistant/overview.html). Pokud však pro váš prohlížeč neexistuje Asistent prohlížeče, může vám pomoci starší asistent. Pokud je to váš případ, můžete se dozvědět, jak nainstalovat AdGuard asistent na [GitHubu](https://github.com/AdguardTeam/AdguardAssistant).
+
+:::
+
+### Zakázat AMP
+
+Skript, který je předinstalován pouze v aplikaci AdGuard pro Android. Zakáže AMP (Accelerated Mobile Pages) na stránce s výsledky vyhledávání Google. Více informací o tomto uživatelském skriptu a jeho instalaci najdete na [GitHubu](https://github.com/AdguardTeam/DisableAMP).
+
+![Zakázat AMP](https://cdn.adtidy.org/content/kb/ad_blocker/general/disable-amp-installation.png)
+
+## Top picks outside AdGuard{#top-picks}
+
+These userscripts are not developed by AdGuard and therefore we can't give a 100% guarantee that they are safe and/or work at all times. However, in our experience they deserve a recommendation as they've all earned their good reputation.
+
+### Don't track me Google
+
+This script removes Google's tracking feature from the links in Google search results. It speeds up the loading of search results and allows you to right-click or tap to copy the link URL.
+
+Its source code is [available on GitHub](https://github.com/Rob--W/dont-track-me-google). This userscript can be downloaded from [GreasyFork](https://greasyfork.org/en/scripts/428243-don-t-track-me-google) and installed in any AdGuard CoreLibs-based app.
+
+### microShield
+
+Uživatelský skript pro lidi, kteří navštěvují korejské a některé mezinárodní webové stránky. Uživatelský skript microShield blokuje Ad-Shield a anti-adblock. Jeho původní zdrojový kód je k dispozici na [asdefuser](https://github.com/seia-soto/userscripts/tree/master/sources/asdefuser) a [AdShield Defuser](https://github.com/seia-soto/adshield-defuser). Tento uživatelský skript lze nainstalovat v AdGuard CoreLibs, Violentmonkey, Tampermonkey a [quoid/userscripts](https://github.com/quoid/userscripts). Více informací o tomto uživatelském skriptu a jeho instalaci najdete na [GitHubu](https://github.com/List-KR/microShield).
 
 ## Kde můžete získat další uživatelské skripty?{#more-userscripts}
 
-Protože uživatelské skripty vytvářejí především nadšenci, měli byste být při jejich instalaci opatrní. Přesto existuje velké množství zajímavých skriptů, které mohou používání některých webových stránek opravdu zpříjemnit.
+As userscripts are mainly created by enthusiasts, you should be cautious when installing them. Any script from an unknown source carries a potential risk. Yet, there is a great variety of interesting scripts that, if installed carefully and responsibly, can really make using some websites more convenient.
 
 Zde popíšeme některé z nejoblíbenějších katalogů uživatelských skriptů.
 
@@ -73,7 +104,7 @@ Zde je [odkaz](mailto:devteam@adguard.com?Subject=Userscript%20author%20license%
 
 ##### Podporované vlastnosti
 
-```
+```text
 @name
 @namespace
 @description
@@ -105,7 +136,7 @@ Zde je [odkaz](mailto:devteam@adguard.com?Subject=Userscript%20author%20license%
 
 Tyto vlastnosti bude Adguard jednoduše ignorovat.
 
-```
+```text
 @unwrap
 ```
 
@@ -121,7 +152,7 @@ Všechny uvedené staré funkce Greasemonkey jsou zastaralé, ale stále podporo
 
 :::
 
-```
+```text
 GM.info / GM_info
 GM.setValue / GM_setValue
 GM.getValue / GM_getValue

@@ -5,11 +5,11 @@ sidebar_position: 9
 
 :::info
 
-Este artigo aborda o AdGuard para Android, um bloqueador de anúncios multifuncional que protege seu dispositivo a nível de sistema. Para ver como funciona, [baixe o aplicativo AdGuard](https://adguard.com/download.html?auto=true)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Veja como funciona ao [baixar o AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-In some cases, apps won't stay in the background ("alive" or in a sleep mode) due to the Android OS optimization function, or the so-called "battery save mode" — this function can kill background apps. It may be inconvenient to relaunch them each time they are getting closed. To avoid the background app termination, you need to follow the steps we described separately for each manufacturer (version) of Android OS. Note that instructions for different manufacturers are mostly very similar.
+In some cases, apps won't stay in the background (“alive” or in a sleep mode) due to the Android OS optimization function, or the so-called “battery save mode” — this function can kill background apps. It may be inconvenient to relaunch them each time they are getting closed. To avoid the background app termination, you need to follow the steps we described separately for each manufacturer (version) of Android OS. Note that instructions for different manufacturers are mostly very similar.
 
 ## Asus
 
@@ -17,9 +17,9 @@ Information on Asus devices is still far from being exhaustive so there may be m
 
 The main source of potential problems with background work on Asus devices is associated with the optimization app called Power Master. It is pre-installed and has pretty aggressive default settings, e.g. to block apps from starting and to kill background tasks when your screen turns off. To make sure apps background processing works, set up the following:
 
-1) Go to **Mobile Manager** → **PowerMaster** → **Settings** (or **Battery-saving options**) → Uncheck **Clean up in suspend**
+1. Go to **Mobile Manager** → **PowerMaster** → **Settings** (or **Battery-saving options**) → Uncheck **Clean up in suspend**
 
-2) Go to **Mobile Manager** → **PowerMaster** → **Settings** (or **Battery-saving options**) → Uncheck **Auto-deny apps from auto starting**
+1. Go to **Mobile Manager** → **PowerMaster** → **Settings** (or **Battery-saving options**) → Uncheck **Auto-deny apps from auto starting**
 
 Alternatively, instead of unchecking **Auto-deny apps from auto starting** entirely, you can go to **Settings** → **Battery-saving options** → **Auto-start manager** → **AdGuard** and uncheck it.
 
@@ -31,15 +31,15 @@ Xiaomi (and especially MIUI) devices are among the most troublesome ones when it
 
 To let your AdGuard app run successfully in the background, do the following:
 
-In **Settings** → **Apps** → **Manage apps** → scroll down to locate **AdGuard**, set **Autostart** to "On".
+In **Settings** → **Apps** → **Manage apps** → scroll down to locate **AdGuard**, set **Autostart** to “On”.
 
 ![Xiaomi Settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
 
-Scroll down to **Battery saver**, tap it, and set to "No restrictions".
+Scroll down to **Battery saver**, tap it, and set to “No restrictions”.
 
 ![Miui *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/miui12_en_0a.png)
 
-In **Other Permissions**, set all possible permissions to "On"
+In **Other Permissions**, set all possible permissions to “On”
 
 Run the **Security** app.
 
@@ -67,8 +67,8 @@ Go to **Settings** → **Apps** → **Manage apps** → **AdGuard**.
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
 
-- Set Autostart to "On"
-- Set all possible permissions in Other Permissions to "On"
+- Set Autostart to “On”
+- Set all possible permissions in Other Permissions to “On”
 - Set Battery saver to **No restrictions**
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi5en.jpeg)
@@ -77,7 +77,7 @@ Now launch the active apps manager by swiping up from the bottom of the screen a
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi6.jpeg)
 
-Tap and hold it until a special menu pops up. Select a lock icon.
+Tap and hold it until a menu pops up. Select a lock icon.
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi7en.jpeg)
 
@@ -89,7 +89,7 @@ The lock icon should appear above the app window.
 
 To let your app run successfully in the background, configure its settings as follows:
 
-- Set Autostart to "On"
+- Set Autostart to “On”
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/xiaomi1en.png)
 
@@ -114,8 +114,8 @@ Please enable:
 - **Device Settings** → **Apps** → **AdGuard** → **Battery** → **Power-intensive prompt** and **Keep running after screen off**
 - **Settings** → **Additional Settings** → **Battery & Performance** → **Manage apps’ battery usage** and here:
 
-1. Switch Power Saving Modes to "Off"
-2. Choose the following options: **Saving Power in The Background** → **Choose apps** → **AdGuard** → **Background Settings** → **No restrictions**
+1. Switch Power Saving Modes to “Off”
+1. Choose the following options: **Saving Power in The Background** → **Choose apps** → **AdGuard** → **Background Settings** → **No restrictions**
 
 #### App battery saver
 
@@ -127,11 +127,11 @@ To set up AdGuard's background work for Xiaomi devices you should pay attention 
 
 - Tap the **Recent tasks** button and swipe AdGuard down to make options *visible* (as shown on the screenshot):
 
-![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomirecent.png)
+    ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomirecent.png)
 
 - Tap on the **lock** icon. This will stop Xiaomi from closing AdGuard automatically. It should look like this:
 
-![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomilocked.png)
+    ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomilocked.png)
 
 - Go to **Battery**
 
@@ -141,7 +141,7 @@ To set up AdGuard's background work for Xiaomi devices you should pay attention 
 
 - Set up the following **Background settings**:
 
-![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomirest.png)
+    ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomirest.png)
 
 - Go to **Permissions**
 
@@ -149,7 +149,7 @@ To set up AdGuard's background work for Xiaomi devices you should pay attention 
 
 - Make sure that autostart function is enabled for AdGuard:
 
-![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomiautostart.png)
+    ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomiautostart.png)
 
 ## Samsung
 
@@ -161,39 +161,39 @@ On Android 11, Samsung will prevent apps (including AdGuard) from working in bac
 
 1. Lock AdGuard in Recent
 
-- Open **Recent apps**.
-- Find AdGuard.
-- Long-press the icon of the AdGuard app.
+    - Open **Recent apps**.
+    - Find AdGuard.
+    - Long-press the icon of the AdGuard app.
 
-2. To keep AdGuard working properly:
+1. To keep AdGuard working properly:
 
-Go to **Settings** → **Apps** → **AdGuard** → **Battery** → **Optimize battery usage**
+    Go to **Settings** → **Apps** → **AdGuard** → **Battery** → **Optimize battery usage**
 
-![Samsung](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/samsung-a11-optimize.png)
+    ![Samsung](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/samsung-a11-optimize.png)
 
-In the drop-down menu, select **All**. Then find AdGuard on the list and set the state for it to **Don’t optimize** (on some models, there may be a switch that you need to toggle off).
+    In the drop-down menu, select **All**. Then find AdGuard on the list and set the state for it to **Don’t optimize** (on some models, there may be a switch that you need to toggle off).
 
-![Samsung](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/samsung-a11-optimize-2.png)
+    ![Samsung](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/samsung-a11-optimize-2.png)
 
-On some devices, the relevant setting may be named differently and be located in other places. Among the possible paths is:
+    On some devices, the relevant setting may be named differently and be located in other places. Among the possible paths is:
 
-**Settings** → **Apps** → (⁝) menu → **Special Access** → **Optimize battery usage** → Find AdGuard on the list and uncheck it
+    **Settings** → **Apps** → (⁝) menu → **Special Access** → **Optimize battery usage** → Find AdGuard on the list and uncheck it
 
-3. Disable automatic optimization. To do so:
+1. Disable automatic optimization. To do so:
 
-Open **Battery** → (⁝) menu → Choose **Automation** → Toggle off all of the settings there
+    Open **Battery** → (⁝) menu → Choose **Automation** → Toggle off all of the settings there
 
-Again, the exact path may differ, for example on some devices you should go to:
+    Again, the exact path may differ, for example on some devices you should go to:
 
-Phone **Settings** → **Device care** → Tap the (⁝) 3-dot menu → **Advanced** → Disable **Auto optimization** and **Optimize settings**
+    Phone **Settings** → **Device care** → Tap the (⁝) 3-dot menu → **Advanced** → Disable **Auto optimization** and **Optimize settings**
 
-4. If your phone has it, disable Adaptive battery:
+1. If your phone has it, disable Adaptive battery:
 
-Open phone **Settings** → **Battery** → **More battery settings** → Toggle off **Adaptive battery**
+    Open phone **Settings** → **Battery** → **More battery settings** → Toggle off **Adaptive battery**
 
-5. Disable Sleeping apps (the exact name of this setting and the path to it may vary depending on the device):
+1. Disable Sleeping apps (the exact name of this setting and the path to it may vary depending on the device):
 
-Open phone **Settings** → **Battery** → **Background usage limits** → Disable **Put unused apps to sleep**
+    Open phone **Settings** → **Battery** → **Background usage limits** → Disable **Put unused apps to sleep**
 
 ### Android 9 & 10
 
@@ -203,41 +203,41 @@ Open phone **Settings** → **Battery** → **Background usage limits** → Disa
 
 - Remove AdGuard from Sleeping apps. To do that:
 
-1. Go to **Phone settings** → **Device care**
+    1. Go to **Phone settings** → **Device care**
 
-![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung1en.png)
+        ![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung1en.png)
 
-2. Tap **Battery**
+    1. Tap **Battery**
 
-![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung2en.png)
+        ![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung2en.png)
 
-3. Tap the **3-dot menu** → **Settings**
+    1. Tap the **3-dot menu** → **Settings**
 
-![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung3en.png)
+        ![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung3en.png)
 
-4. Tap **Sleeping apps**
+    1. Tap **Sleeping apps**
 
-![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung45en.png)
+        ![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung45en.png)
 
-5. **Wake up** AdGuard using the trashcan icon
+    1. **Wake up** AdGuard using the trashcan icon
 
-![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung6en.png)
+        ![Samsung *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/samsung6en.png)
 
 ### Old Samsung devices
 
 For early Samsung devices, there is no huge need for setting up the background operation, but if in your case the AdGuard app is getting closed or disappears from the recent tasks after a while, do the following:
 
- - Tap the **Recent tasks** button, tap the **Additional settings** icon. It should look like this:
+- Tap the **Recent tasks** button, tap the **Additional settings** icon. It should look like this:
 
- ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/samsungoptions.png)
+ ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_1.png)
 
- - Tap **Lock Apps**:
+- Tap **Lock Apps**:
 
- ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/samsunglockapps.png)
+ ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_2.png)
 
-  - Tap on the lock icon
+- Tap on the lock icon
 
- ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/samsunglock.png)
+ ![Samsung settings *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/oldsamsung_3.png)
 
 ## Huawei
 
@@ -249,21 +249,21 @@ This feature may or may not be available for all devices or may be labeled diffe
 
 1. Go to phone **Settings** → **Battery** → **App launch**
 
-![Huawei *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/huawei1en.png)
+    ![Huawei *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/huawei1en.png)
 
-2. Turn off **Manage all automatically**
+1. Turn off **Manage all automatically**
 
-![Huawei *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/huawei2en.png)
+    ![Huawei *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/huawei2en.png)
 
-3. Set AdGuard to **Manage manually** and enable all toggles.
+1. Set AdGuard to **Manage manually** and enable all toggles.
 
-![Huawei *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/huawei3en.png)
+    ![Huawei *mobile_border](https://cdn.adtidy.org/public/Adguard/screenshots/android/huawei3en.png)
 
-4. Disable **Startup manager** that prevents apps from running automatically after the phone starts up.
+1. Disable **Startup manager** that prevents apps from running automatically after the phone starts up.
 
-Go to **Settings** → **All** → **Startup manager** → Toggle AdGuard off
+    Go to **Settings** → **All** → **Startup manager** → Toggle AdGuard off
 
-Also for reliable background processes you may need to uninstall **PowerGenie** as detailed below.
+    Also for reliable background processes you may need to uninstall **PowerGenie** as detailed below.
 
 ### EMUI 9+ devices and PowerGenie
 
@@ -289,15 +289,15 @@ Unfortunately, this is a system app that can only be fully uninstalled using ADB
 
 It is not confirmed, but it might be possible to just disable PowerGenie in **Phone settings** → **Apps**. If this setting is present in your device's settings, you may skip the following steps. However, it would need to be re-applied every time you reboot your device. If there is no such setting, follow this instruction:
 
-1) [Install ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer;
+1. [Install ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer;
 
-2) Connect your phone with a data cable;
+1. Connect your phone with a data cable;
 
-3) Enable [Developer options](https://developer.android.com/studio/debug/dev-options.html);
+1. Enable [Developer options](https://developer.android.com/studio/debug/dev-options.html);
 
-4) Enable **USB debugging** within Developer options on your phone;
+1. Enable **USB debugging** within Developer options on your phone;
 
-5) Run the following commands on your computer:
+1. Run the following commands on your computer:
 
 `adb shell pm uninstall --user 0 com.huawei.powergenie`
 
@@ -307,22 +307,22 @@ If AdGuard keeps getting killed, also try running
 
 `adb shell pm stopservice hwPfwService`
 
-### EMUI 6+ devices (and some EMUI 5 devices):
+### EMUI 6+ devices (and some EMUI 5 devices)
 
 - **Phone settings** → **Advanced Settings** → **Battery manager** → **Power plan** set to **Performance**;
 - **Phone Settings** → **Advanced Settings** → **Battery Manager** → **Protected apps** — set AdGuard as **Protected**;
 - **Phone Settings** → **Apps** → **Your app** → **Battery** → **Power-intensive prompt** `[uncheck]` and **Keep running after screen off** `[check]`;
 - **Phone settings** → **Apps** → **Advanced (At the bottom)** → **Ignore optimizations** → Press Allowed → **All apps** → Find AdGuard on the list and set to **Allow**.
 
-#### Huawei P9 Plus:
+#### Huawei P9 Plus
 
 Open device settings → **Apps** → **Settings** → **Special access** → choose **Ignore battery optimization** → select **Allow** for AdGuard.
 
-### Huawei P20, Huawei Honor 9 Lite and Huawei Mate 9 Pro:
+### Huawei P20, Huawei Honor 9 Lite and Huawei Mate 9 Pro
 
 Open device settings → **Battery** → **App launch** → set AdGuard to **Manage manually** and make sure everything is turned on.
 
-### Huawei P20, Huawei P20 Lite, Huawei Mate 10:
+### Huawei P20, Huawei P20 Lite, Huawei Mate 10
 
 **Phone settings** → **Battery** → **App launch** → set AdGuard to **Manage manually** and make sure everything is turned on. Also for reliable background processes you may need to uninstall PowerGenie as described above.
 
@@ -330,19 +330,19 @@ Open device settings → **Battery** → **App launch** → set AdGuard to **Man
 
 Old Huawei devices are the easiest to set up, it is enough to perform two simple steps to lock AdGuard in the background so it won't be terminated by battery saving or background killer process.
 
-  - Tap the **Recent tasks** button:
+- Tap the **Recent tasks** button:
 
-  ![Huawei recent apps *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweirecentapps.jpeg)
+    ![Huawei recent apps *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweirecentapps.jpeg)
 
-  - Tap on the lock icon:
+- Tap on the lock icon:
 
- ![Huawei lock *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweilock.jpeg)
+    ![Huawei lock *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/huaweilock.jpeg)
 
 Besides, to set up the background work of AdGuard more effectively, you should open device settings and do the following:
 
 - Go to **Settings** → open **Battery Manager** → set **Power plan** to **Performance**;
 - Then choose **Protected apps** in the **Battery Manager** and check if AdGuard is Protected;
-- Go to **Apps** in the main settings and click AdGuard there → choose **Battery** → enable **Power-intensive prompt** and **Keep running after screen is off**;
+- Go to **Apps** in the main settings and tap AdGuard there → choose **Battery** → enable **Power-intensive prompt** and **Keep running after screen is off**;
 - Then in the **Apps** section open **Settings** (at the bottom) → **Special access** → choose **Ignore battery optimization** → press **Allowed** → **All apps** → find AdGuard on the list and set it to **Deny**.
 
 ## Meizu
@@ -351,54 +351,55 @@ Meizu has almost the same approach to the background process limitations as Huaw
 
 - Go to **Advanced Settings** → open **Battery Manager** → set **Power plan** to **Performance**;
 - Then choose **Protected apps** in the **Battery Manager** and check if AdGuard is Protected;
-- Go to **Apps** section and click AdGuard there → choose **Battery** → enable **Power-intensive prompt** and **Keep running after screen is off**.
+- Go to **Apps** section and tap AdGuard there → choose **Battery** → enable **Power-intensive prompt** and **Keep running after screen is off**.
 
 ## Nokia
 
-Nokia devices running Android 9+ have **The Evenwell Power saver** disabled, which was the main culprit for killing bacground processes. If AdGuard still gets killed on your Nokia phone, check out the [legacy instruction](https://dontkillmyapp.com/hmd-global).
+Nokia devices running Android 9+ have **The Evenwell Power saver** disabled, which was the main culprit for killing background processes. If AdGuard still gets killed on your Nokia phone, check out the [legacy instruction](https://dontkillmyapp.com/hmd-global).
 
 ### Nokia 1 (Android Go)
 
-1) [Install ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer;
+1. [Install ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer;
 
-2) Connect your phone with a data cable;
+1. Connect your phone with a data cable;
 
-3) Enable [Developer options](https://developer.android.com/studio/debug/dev-options.html);
+1. Enable [Developer options](https://developer.android.com/studio/debug/dev-options.html);
 
-4) Enable **USB debugging** within Developer options on your phone;
+1. Enable **USB debugging** within Developer options on your phone;
 
-5) Uninstall the **com.evenwell.emm** package via the following adb commands:
+1. Uninstall the **com.evenwell.emm** package via the following ADB commands:
 
-`adb shell` `pm uninstall --user 0 com.evenwell.emm`
+    `adb shell` `pm uninstall --user 0 com.evenwell.emm`
 
 ### Nokia 3.1 and 5.1
 
 On these devices there is a task killer called **DuraSpeed** that terminates all background apps. It can't be uninstalled or disabled by regular means. These actions require ADB, and even then, when disabled, DuraSpeed will re-enable itself on reboot. You need a tasker app like [MacroDroid](https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid) for automatic DuraSpeed's disabling.
 
-1) [Install ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer;
+1. [Install ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer;
 
-2) Connect your phone with a data cable;
+1. Connect your phone with a data cable;
 
-3) Enable [Developer options](https://developer.android.com/studio/debug/dev-options.html);
+1. Enable [Developer options](https://developer.android.com/studio/debug/dev-options.html);
 
-4) Enable **USB debugging** within Developer options on your phone;
+1. Enable **USB debugging** within Developer options on your phone;
 
-5) Grant MacroDroid (or your choice of automation app) the ability to write to the global settings store by entering this command:
+1. Grant MacroDroid (or your choice of automation app) the ability to write to the global settings store by entering this command:
 
-`adb shell pm grant com.arlosoft.macrodroid android.permission.WRITE_SECURE_SETTINGS`
+    `adb shell pm grant com.arlosoft.macrodroid android.permission.WRITE_SECURE_SETTINGS`
 
-6) Create a task triggered at **Device Boot** that performs the following:
+1. Create a task triggered at **Device Boot** that performs the following:
 
-- System Setting: type **Global**, name `setting.duraspeed.enabled`, value **-1**
-- System Setting: type **System**, name `setting.duraspeed.enabled`, value **-1**
-- System Setting: type **Global**, name `setting.duraspeed.enabled`, value **0**
-- System Setting: type **System**, name `setting.duraspeed.enabled`, value **0**
+    - System Setting: type **Global**, name `setting.duraspeed.enabled`, value **-1**
+    - System Setting: type **System**, name `setting.duraspeed.enabled`, value **-1**
+    - System Setting: type **Global**, name `setting.duraspeed.enabled`, value **0**
+    - System Setting: type **System**, name `setting.duraspeed.enabled`, value **0**
 
-![Nokia tasker *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/nokia_tasker.png)
+    ![Nokia tasker *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/nokia_tasker.png)
 
-:::note
+    :::note
 
-You need both **Global** and **System** type settings. The screenshot shows only Global as an example.
+    You need both **Global** and **System** type settings. The screenshot shows only Global as an example.
+
 
 :::
 
@@ -414,17 +415,17 @@ From now on, AdGuard should work normally and use the standard Android battery o
 
 An alternative, more permanent solution for more tech-savvy users:
 
-1) [Install ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer;
+1. [Install ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer;
 
-2) Connect your phone with a data cable;
+1. Connect your phone with a data cable;
 
-3) Enable [Developer options](https://developer.android.com/studio/debug/dev-options.html);
+1. Enable [Developer options](https://developer.android.com/studio/debug/dev-options.html);
 
-4) Enable **USB debugging** within Developer options on your phone;
+1. Enable **USB debugging** within Developer options on your phone;
 
-5) Uninstall the **com.evenwell.powersaving.g3** package via the following adb commands:
+1. Uninstall the **com.evenwell.powersaving.g3** package via the following ADB commands:
 
-`adb shell` `pm uninstall --user 0 com.evenwell.powersaving.g3`
+    `adb shell` `pm uninstall --user 0 com.evenwell.powersaving.g3`
 
 ## Oppo
 
@@ -435,7 +436,7 @@ Go to **Security Centre** → tap **Privacy Permissions** → **Startup manager*
 Other solutions:
 
 - Pin AdGuard to the recent apps screen
-- Enable AdGuard in the app list inside the security app’s "startup manager" and "floating app list" (com.coloros.safecenter / com.coloros.safecenter.permission.Permission)
+- Enable AdGuard in the app list inside the security app’s “startup manager” and “floating app list” (com.coloros.safecenter / com.coloros.safecenter.permission.Permission)
 - Turn off battery optimizations
 
 ## OnePlus
@@ -444,25 +445,25 @@ Devices with OxygenOS on board are the most problematic, with its OS-specific ca
 
 ### Locking the app
 
- - Go to **Settings**
+- Go to **Settings**
 
- - **Battery** → **Battery optimization**
+- **Battery** → **Battery optimization**
 
- - Find AdGuard
+- Find AdGuard
 
- - Tap on it and select **Don't optimize** option
+- Tap on it and select **Don't optimize** option
 
- - Tap **Done** to save
+- Tap **Done** to save
 
- - Open recent apps menu (as showed on this screenshot):
+- Open recent apps menu (as showed on this screenshot):
 
- ![Onepluslock *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/android/onepluslock.png)
+    ![Onepluslock *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/android/onepluslock.png)
 
 - Lock AdGuard app:
 
-![Oneplusdots *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/android/oneplusdots.png)
+    ![Oneplusdots *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/PicturesEN/android/oneplusdots.png)
 
-:::caution
+:::cuidado
 
 On some OnePlus phones there is also a thing called App Auto-Launch and Deep Optimization which essentially prevents apps from working in the background. Please disable it for AdGuard.
 
@@ -470,9 +471,9 @@ On some OnePlus phones there is also a thing called App Auto-Launch and Deep Opt
 
 ### Battery optimization
 
- - Open device settings → **Battery** → **Battery optimization** → switch to the **All apps** list (top menu) → choose AdGuard → activate **Don’t optimize**
+- Open device settings → **Battery** → **Battery optimization** → switch to the **All apps** list (top menu) → choose AdGuard → activate **Don’t optimize**
 
- - Open device settings → **Battery** → **Battery Optimization** → (⁝) three-dot menu → **Advanced Optimization** → Disable Deep Optimization
+- Open device settings → **Battery** → **Battery Optimization** → (⁝) three-dot menu → **Advanced Optimization** → Disable Deep Optimization
 
 ### App Auto-Launch
 
@@ -492,7 +493,7 @@ For OnePlus below 6:
 
 ### Recent apps clearing behaviour
 
-Normally when you swipe an app away, it won’t close. On OnePlus this may however work in a different way. Recent app clear behaviour manager might be set up in a way that swiping the app to close will kill it. To return it to the "normal" mode:
+Normally when you swipe an app away, it won’t close. On OnePlus this may however work in a different way. Recent app clear behaviour manager might be set up in a way that swiping the app to close will kill it. To return it to the “normal” mode:
 
 Go to **Settings** → **Advanced** → **Recent app management** → Switch to **Normal clear**
 
@@ -518,18 +519,18 @@ Wiko devices are problematic in terms of non-standard background process optimiz
 - Go back and go to **Manual mode**
 - Tap on the **Gear** icon on top right → **Background apps whitelist** → Select **AdGuard**
 
-## Android stock devices Pixel/Nexus/Essential
+## Android stock devices Pixel/Nexus/Nubia/Essential
 
 Android stock OS normally does not conflict with apps working in the background, but if you are facing any issues you will need to switch on the **Always-on VPN** mode.
 
- - Go to **Settings** → **Network and Internet**
+- Go to **Settings** → **Network and Internet**
 
- ![Stocknetwork *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/stocknetwork.png)
+    ![Stocknetwork *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/stocknetwork.png)
 
- - Tap **VPN** and choose **AdGuard**
+- Tap **VPN** and choose **AdGuard**
 
- ![Stockvpn *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/stockvpn.png)
+    ![Stockvpn *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/stockvpn.png)
 
- - Set up **Always-on VPN** mode
+- Set up **Always-on VPN** mode
 
- ![Stockadguard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/stockadguard.png)
+    ![Stockadguard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/stockadguard.png)

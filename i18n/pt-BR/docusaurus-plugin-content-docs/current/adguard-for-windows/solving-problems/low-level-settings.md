@@ -5,13 +5,13 @@ sidebar_position: 7
 
 :::info
 
-Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifuncional que protege seu dispositivo a nível de sistema. Para ver como funciona, [baixe o aplicativo AdGuard](https://adguard.com/download.html?auto=true)
+Este artigo aborda o AdGuard para Windows, um bloqueador de anúncios multifuncional que protege seu dispositivo a nível de sistema. Veja como funciona ao [baixar o AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
 As Configurações Avançadas, antes conhecidas como configurações de baixo nível, geralmente contêm opções que vão além dos conhecimentos do usuário médio e não são aplicadas no uso diário. O AdGuard para Windows foi pensado para que você consiga utilizá-lo sem alterá-las, mas elas fornecem recursos adicionais em alguns casos mais extremos ou para resolver algum problema incomum.
 
-:::caution
+:::cuidado
 
 Alterar as *Configurações avançadas* sem saber ao certo o que estamos fazendo pode trazer problemas ao desempenho do AdGuard, à conexão com a Internet ou a sua segurança e privacidade. Você só deve fazer alterações nessas configurações se souber o que está fazendo ou se nossa equipe de suporte solicitar alguma ação.
 
@@ -61,6 +61,10 @@ Ative este recurso para ver as pop-ups de notificações do AdGuard. Elas não a
 
 Ative este recurso se você quiser que o AdGuard intercepte automaticamente URLs de inscrição de filtro (ou seja, `abp:subscribe` e similares) e abra uma caixa de diálogo de instalação de filtro personalizado.
 
+### Filter HTTP/3
+
+If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
+
 ### Usar modo de redirecionamento de driver
 
 Se esta opção estiver ativada, o AdGuard intercepta todo o tráfego e o redireciona para o servidor proxy local para posterior filtragem.
@@ -102,7 +106,7 @@ Host: example.org`
 
 será convertida para
 
-`GET  /foo/bar/ HTTP/1.1
+`GET /foo/bar/ HTTP/1.1
 Host: example.org`
 
 Esta opção só é aplicada quando a opção do modo Stealth *Proteger de DPI* está habilitada.
@@ -181,17 +185,17 @@ AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to
 
 Aqui você pode selecionar a maneira como o AdGuard responderá aos domínios bloqueados por regras de DNS com base na [sintaxe da regra de hosts](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
 
-* Resposta com o erro “Recusado”
-* Resposta com o erro “NxDomain”
-* Resposta com um endereço IP personalizado
+- Resposta com o erro “Recusado”
+- Resposta com o erro “NxDomain”
+- Resposta com um endereço IP personalizado
 
 ### Modo de bloqueio para regras de estilo adblock
 
 Aqui você pode selecionar a maneira como o AdGuard responderá aos domínios bloqueados pelas regras de DNS com base na [ sintaxe estilo adblock](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax).
 
-* Resposta com o erro “Recusado”
-* Resposta com o erro “NxDomain”
-* Resposta com um endereço IP personalizado
+- Resposta com o erro “Recusado”
+- Resposta com o erro “NxDomain”
+- Resposta com um endereço IP personalizado
 
 ### Endereço IPv4 personalizado
 
@@ -205,9 +209,9 @@ Se o endereço IP personalizado for selecionado no modo de bloqueio para regras 
 
 Aqui você pode especificar um servidor DNS alternativo para o qual uma solicitação DNS será reencaminhada se o servidor principal não responder dentro do período de tempo limite especificado na próxima seção. Você pode escolher entre três opções:
 
-* Não usar servidores fallback;
-* Usar servidores padrões do sistema;
-* Usar servidores personalizados.
+- Não usar servidores fallback;
+- Usar servidores padrões do sistema;
+- Usar servidores personalizados.
 
 ### Bloquear ECH
 

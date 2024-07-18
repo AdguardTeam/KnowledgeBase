@@ -1,79 +1,110 @@
 ---
 title: Benutzerskripte
 sidebar_position: 5
+toc_max_heading_level: 4
 ---
 
-Userscripts (we also call them "extensions") are, de-facto, mini-programs written in JavaScript. They modify or extend the functionality of one or more websites. Many AdGuard users may be already familiar with such userscripts as AdGuard Assistant, Popup Blocker, and AdGuard Extra.
+Userscripts (we also call them "extensions") are, de-facto, mini-programs written in JavaScript. Sie ändern oder erweitern die Funktionalität einer oder mehrerer Websites. Many AdGuard users may be already familiar with such userscripts as AdGuard Assistant, Popup Blocker, and AdGuard Extra.
 
-### Supported apps
+:::note Unterstützte Apps
 
-AdGuard can significantly broaden website functionality by acting as a userscript manager. You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](/adguard-for-windows/overview), [AdGuard for Android](/adguard-for-android/overview) and [AdGuard for Mac](/adguard-for-mac/overview).
-
-### Recommended AdGuard scripts
-
-These userscripts come directly from the AdGuard developers, and we can guarantee that they are effective and safe. Remember: whenever you download a userscript from an unknown source, you expose yourself to risk, as some scripts may be harmful to your computer. Get new scripts only from the sources you trust 100%. Furthermore, here are [some examples](#more-userscripts) of popular sites with scripts.
-
-* **AdGuard Extra**. An extension that blocks advertising in difficult cases when the usual filter-based approach is not enough.
-
-* **AdGuard Popup Blocker**. The name speaks for itself: it blocks pop-ups — one of the most annoying types of ads on web pages.
-
-* **AdGuard Assistant** (legacy version). This custom extension is designed to control filtering directly from the browser page (manual blocking, exclusion of the site, etc.).
-
-:::note
-
-This version of Assistant is legacy and there is no point in using it on new systems, since it has been replaced with the full-fledged [Browser Assistant](https://adguard.com/adguard-assistant/overview.html). Der ältere Assistent kann jedoch hilfreich sein, wenn es keine Browser-Assistent-Erweiterung für Ihren Browser gibt.
+AdGuard can significantly broaden website functionality by acting as a userscript manager. You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](/adguard-for-windows/features/extensions), [AdGuard for Android](/adguard-for-android/features/settings#userscripts), and [AdGuard for Mac](/adguard-for-mac/features/extensions).
 
 :::
 
-* **Disable AMP**. A script, pre-installed only in AdGuard for Android, that disables AMP (Accelerated Mobile Pages) on the Google search results page.
+## Empfohlene AdGuard-Skripte
 
-## Where can you get more userscripts?{#more-userscripts}
+Diese Benutzerskripte stammen direkt von AdGuard und wir können garantieren, dass sie effektiv und sicher sind. For some of the userscripts developed by others that we consider good and reliable, [scroll down to the next section](#top-picks). You can also find some of the [popular websites with scripts](#more-userscripts) below, but remember that whenever you download a userscript from an unknown source, you expose yourself to a certain risk, as some scripts may be harmful to your computer.
 
-As userscripts are created mainly by enthusiasts, you should be cautious when installing them. Yet, there is a great variety of interesting scripts that can really make using some websites more convenient.
+### AdGuard Extra
 
-Here we will describe some of the most popular userscript catalogs.
+Eine Erweiterung, die Werbung in schwierigen Fällen blockiert, wenn der übliche filterbasierte Ansatz nicht ausreicht. AdGuard Extra ist bei allen Premium-Versionen von AdGuard vorinstalliert, Sie müssen also nichts tun, um es zu aktivieren. Wenn Sie es jedoch zusammen mit AdGuard Browsererweiterung oder einem anderen Werbeblocker verwenden möchten, müssen Sie eine zusätzliche Erweiterung verwenden. Auf [GitHub](https://github.com/AdguardTeam/AdGuardExtra) erfahren Sie mehr über dieses Benutzerskript und wie man es installiert.
+
+![AdGuard Extra](https://cdn.adtidy.org/content/kb/ad_blocker/general/adguard-extra.png)
+
+### AdGuard Pop-up-Blocker
+
+Der Name spricht für sich selbst: Es blockiert Pop-ups, eine der lästigsten Arten von Werbung auf Websites. Auf [GitHub](https://github.com/AdguardTeam/PopupBlocker) erfahren Sie mehr über dieses Benutzerskript, seine wichtigsten Funktionen und wie man es installiert.
+
+![AdGuard Pop-up-Blocker](https://cdn.adtidy.org/content/kb/ad_blocker/general/popup-blocker-installation.png)
+
+### AdGuard-Assistent (alte Version)
+
+Diese benutzerdefinierte Erweiterung wurde entwickelt, um die Filterung direkt von der Browserseite aus zu steuern (manuelles Sperren, Ausschluss der Website usw.).
+
+:::note
+
+Diese Version des Assistenten ist veraltet und macht auf neuen Systemen keinen Sinn mehr. Sie wurde durch den vollwertigen [Browser-Assistenten](https://adguard.com/adguard-assistant/overview.html) ersetzt. Der Legacy-Assistent kann jedoch hilfreich sein, wenn es für Ihren Browser keinen Browser-Assistenten gibt. Wenn dies bei Ihnen der Fall ist, können Sie auf [GitHub](https://github.com/AdguardTeam/AdguardAssistant) erfahren, wie Sie den AdGuard-Assistenten installieren.
+
+:::
+
+### AMP deaktivieren
+
+Ein Skript, das nur in AdGuard für Android vorinstalliert ist. Es deaktiviert AMP (Accelerated Mobile Pages) auf der Google-Suchergebnisseite. Auf [GitHub](https://github.com/AdguardTeam/DisableAMP) erfahren Sie mehr über dieses Benutzerskript und wie man es installiert.
+
+![AMP deaktivieren](https://cdn.adtidy.org/content/kb/ad_blocker/general/disable-amp-installation.png)
+
+## Top picks outside AdGuard{#top-picks}
+
+These userscripts are not developed by AdGuard and therefore we can't give a 100% guarantee that they are safe and/or work at all times. However, in our experience they deserve a recommendation as they've all earned their good reputation.
+
+### Don't track me Google
+
+This script removes Google's tracking feature from the links in Google search results. It speeds up the loading of search results and allows you to right-click or tap to copy the link URL.
+
+Its source code is [available on GitHub](https://github.com/Rob--W/dont-track-me-google). This userscript can be downloaded from [GreasyFork](https://greasyfork.org/en/scripts/428243-don-t-track-me-google) and installed in any AdGuard CoreLibs-based app.
+
+### microShield
+
+Ein Benutzerskript für Leute, die koreanische und einige internationale Websites besuchen. Das microShield-Benutzerskript blockiert Ad-Shield-Werbung und Anti-Adblock. Der ursprüngliche Quellcode ist unter [asdefuser](https://github.com/seia-soto/userscripts/tree/master/sources/asdefuser) und [AdShield Defuser](https://github.com/seia-soto/adshield-defuser) verfügbar. Dieses Benutzerskript kann in AdGuard CoreLibs-basierten Anwendungen, Violentmonkey, Tampermonkey und [quoid/userscripts](https://github.com/quoid/userscripts) installiert werden. Auf [GitHub](https://github.com/List-KR/microShield) finden Sie weitere Informationen über microShield und wie man es installiert.
+
+## Wo kann man weitere Benutzerskripte erhalten? {#more-userscripts}
+
+As userscripts are mainly created by enthusiasts, you should be cautious when installing them. Any script from an unknown source carries a potential risk. Yet, there is a great variety of interesting scripts that, if installed carefully and responsibly, can really make using some websites more convenient.
+
+Im Folgenden werden einige der beliebtesten Benutzerskript-Kataloge beschrieben.
 
 ### Stylish (userstyles.org)
 
-[Userstyles.org](https://userstyles.org/) is a catalog of user styles, but it allows you to load them as userscripts. Thus, any user style can be installed via AdGuard. Be careful if you decide to install an unpopular script — there's a risk it might be harmful.
+[Userstyles.org](https://userstyles.org/) ist ein Katalog von Benutzerstilen, der es Ihnen jedoch ermöglicht, diese als Benutzerskripte zu laden. So kann jeder Benutzerstil über AdGuard installiert werden. Seien Sie vorsichtig, wenn Sie sich entscheiden, ein unbekanntes Skript zu installieren — es könnte schädlich sein.
 
 ### Greasy Fork
 
-[Greasy Fork](https://greasyfork.org/) is a userscript catalog by Stylish creators. Unlike the above-mentioned userstyles.org, the scripts in this catalog undergo moderation, so their credibility is much higher.
+[Greasy Fork](https://greasyfork.org/) ist ein Benutzerskript-Katalog der Entwickler von Stylish. Im Gegensatz zu userstyles.org sind die Skripte in diesem Katalog moderiert, was ihre Glaubwürdigkeit erhöht.
 
 ### OpenUserJS.org
 
-[OpenUserJS.org](https://openuserjs.org/) is an open source userscript catalog written in nodeJS. It doesn't have moderation so stay alert to any suspicious scripts.
+[OpenUserJS.org](https://openuserjs.org/) is an open source userscript catalog written in nodeJS. Da es keine Moderation gibt, sollten Sie auf verdächtige Skripte achten.
 
 ### Community
 
-If you like the idea of personifying your browser with the help of userscripts, and you have any questions, you can ask them on one of these websites:
+Wenn Ihnen die Idee gefällt, Ihren Browser mit Hilfe von Benutzerskripten zu personifizieren, und Sie Fragen haben, können Sie diese auf einer dieser Websites stellen:
 
 - [Stackoverflow](https://stackoverflow.com/questions/tagged/userscripts)
 - [FreeNode](https://webchat.freenode.net/#greasemonkey)
 - [Reddit](https://www.reddit.com/r/userscripts/)
 
-## Development
+## Entwicklung
 
-### Request License
+### Lizenz anfordern
 
-If you are developing your own custom script and want to test how it works with AdGuard, request a beta-license key for the app.
+Wenn Sie Ihr eigenes benutzerdefiniertes Skript entwickeln und testen möchten, wie es mit AdGuard funktioniert, können Sie einen Beta-Lizenzschlüssel für die App anfordern.
 
-To get it, please send an email to devteam@adguard.com with the following information:
+Um sie zu erhalten, senden Sie bitte eine E-Mail an devteam@adguard.com mit den folgenden Informationen:
 
-**Subject:** Userscript author license request
+**Betreff:** Userscript author license request
 
 **Body:** Please tell us about the userscripts you are working on.
 
-Here is a [mailto link](mailto:devteam@adguard.com?Subject=Userscript%20author%20license%20request&Body=Hello%2C%0A%0AMy%20userscript%28s%29%3A%20LINK).
+Hier ist ein [Mailto-Link](mailto:devteam@adguard.com?Subject=Userscript%20author%20license%20request&Body=Hello%2C%0A%0AMy%20userscript%28s%29%3A%20LINK).
 
-### Compatibility
+### Kompatibilität
 
-#### Metadata block
+#### Metadaten-Block
 
-##### Supported properties
+##### Unterstützte Eigenschaften
 
-```
+```text
 @name
 @namespace
 @description
@@ -101,27 +132,27 @@ Here is a [mailto link](mailto:devteam@adguard.com?Subject=Userscript%20author%2
 @icon64URL
 ```
 
-##### Unsupported properties
+##### Nicht unterstützte Eigenschaften
 
 These properties will be simply ignored by Adguard.
 
-```
+```text
 @unwrap
 ```
 
-#### Supported GM functions
+#### Unterstützte GM-Funktionen
 
-AdGuard supports both old GM\_ functions and new GM4 API that use GM object.
+AdGuard unterstützt sowohl die alten GM\_-Funktionen als auch die neue GM4-API, die das GM-Objekt verwendet.
 
-##### Values
+##### Werte
 
 :::note
 
-All listed old Greasemonkey functions are deprecated but still supported.
+Alle aufgeführten früheren Greasemonkey-Funktionen sind veraltet, werden aber weiterhin unterstützt.
 
 :::
 
-```
+```text
 GM.info / GM_info
 GM.setValue / GM_setValue
 GM.getValue / GM_getValue
@@ -138,16 +169,16 @@ GM_addStyle
 GM_log
 ```
 
-[Here](https://wiki.greasespot.net/GM.info) you can find more information about Greasemonkey API.
+[Hier](https://wiki.greasespot.net/GM.info) finden Sie weitere Informationen zur Greasemonkey API.
 
-### Example
+### Beispiel
 
 ```javascript
-// ==UserScript==
-// @name            Name as shown to the user when locale is english or unknown
-// @name:ru         Name as shown to the user when locale is russian
-// @description     Description as shown to the user when locale is english or unknown
-// @description:ru  Description as shown to the user when locale is russian
+// ==Benutzerskript==
+// @name            Name, wie er dem Benutzer angezeigt wird, wenn das Gebietsschema Englisch oder unbekannt ist
+// @name:ru         Name, wie er dem Benutzer angezeigt wird, wenn das Gebietsschema russisch ist
+// @description     Beschreibung, wie sie dem Benutzer angezeigt wird, wenn das Gebietsschema englisch oder unbekannt ist
+// @description:ru  Beschreibung, wie sie dem Benutzer angezeigt wird, wenn das Gebietsschema russisch ist
 // @icon            https://myhomepage.com/myuserscript.png
 // @version         1.0.0.0
 // @downloadURL     https://dl.myhomepage.org/myuserscript.user.js

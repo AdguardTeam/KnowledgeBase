@@ -3,9 +3,9 @@ title: Battery and traffic consumption issues
 sidebar_position: 1
 ---
 
-:::Info
+:::info
 
-Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://adguard.com/download.html?auto=true)
+Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -29,29 +29,31 @@ First, let us lay down a bit of theory and links with necessary data.
 
 1. Android derives traffic consumption judging on so-called Power Profile, which is given by every manufacturer: <https://source.android.com/devices/tech/power/values.html>
 
-2. Main part of Power Profile is a set of values in mAh which define battery consumption for every component of the device: <https://source.android.com/devices/tech/power/values.html>
+1. Main part of Power Profile is a set of values in mAh which define battery consumption for every component of the device: <https://source.android.com/devices/tech/power/values.html>
 
-For example, from the table above:
+    For example, from the table above:
 
-_wifi.active=_ 31mA additional consumption in mAh caused by WiFi data exchange.
+    *wifi.active=* 31mA additional consumption in mAh caused by WiFi data exchange.
 
-_radio.active=_ 100-300mA additional consumption in mAh caused by data exchange over Mobile network.
+    *radio.active=* 100-300mA additional consumption in mAh caused by data exchange over Mobile network.
 
-_cpu.active=_ 100-200mA additional consumption in mAh caused by CPU work.
+    *cpu.active=* 100-200mA additional consumption in mAh caused by CPU load.
 
-3. AdGuard by itself almost doesn't consume any traffic, so for the sake of evaluating battery resource consumption let's get rid of 'Mobile/WiFi packets' and stcik to 'CPU'.
+1. AdGuard by itself almost doesn't consume any traffic, so for the sake of evaluating power consumption let's get rid of 'Mobile/Wi-Fi packets' and stick to 'CPU'.
 
-Formulа to calculate the consumption:
-> "CPU TIME (ms)" X "cpu.active" / (60 * 60 * 1000) = "POWER USE mAh"
+    Formula to calculate the consumption:
 
-Let's put real numbers into this formula.
+    > “CPU TIME (ms)” X “cpu.active” / (60 *60* 1000) = “POWER USE mAh”
 
-Let's take _CPU total_ from the second screenshot and convert into milliseconds: 506000
+    Let's put real numbers into this formula.
 
-A coefficient _cpu.active_ for 2GHz will be roughly equal to 225mAh
+    Let's take *CPU total* from the second screenshot and convert into milliseconds: 506000
 
-Final result
-> 506000 * 225 / (60 * 60 * 1000) = 31,625mAh
+    A coefficient *cpu.active* for 2GHz will be roughly equal to 225mAh
+
+    Final result:
+
+    > 506000 *225 / (60* 60 * 1000) = 31,625mAh
 
 ### Conclusion
 

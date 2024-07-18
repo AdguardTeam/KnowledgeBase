@@ -1,79 +1,83 @@
 ---
-title: Advanced Settings guide
+title: Speciális beállítások útmutató
 sidebar_position: 9
 ---
 
 :::info
 
-This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Ez a cikk az AdGuard Macre vonatkozik, egy többfunkciós hirdetésblokkoló, amely védelmet nyújt eszközének a rendszer szintjén. Ha szeretné megnézni, hogyan működik, [töltse le az AdGuard alkalmazást](https://agrd.io/download-kb-adblock)
 
 :::
 
-## How to reach the Advanced settings
+## A Speciális beállítások elérése
 
-:::caution
+:::figyelem
 
-Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only open this section if you are sure of what you are doing or our support team has asked you to do it.
+A *Speciális beállítások* módosítása problémákat okozhat az AdGuard teljesítményében, megszakíthatja az internetkapcsolatot, vagy veszélyeztetheti a biztonságot és az adatvédelmet. Csak akkor változtasson ezen a részen, ha biztos benne, hogy mit csinál, vagy ha ügyfélszolgálatunk megkérte erre.
 
 :::
 
-To go to *Advanced settings*, follow this route: the AdGuard icon at the tray menu → the gear icon → Advanced → Advanced settings.
+A *Speciális beállítások* megtalálásához nyissa meg az AdGuardot, kattintson a fogaskerék ikonra, válassza a *Speciális*, majd a *Speciális beállítások* lehetőséget.
 
-## Advanced settings
+## Speciális beállítások
 
 `network.extension.exclude.domains`
 
-The listed domains will be excluded from filtering in the *Network Extension* mode. Use a comma or line break to separate values.
+A felsorolt tartományok ki lesznek zárva a szűrésből *Hálózati bővítmény* módban. Az értékek elválasztásához használjon vesszőt vagy sortörést.
 
 `network.extension.exclude.ports`
 
-The listed ports will be excluded from filtering in the *Network Extension* mode. Use a comma or line break to separate values.
+A felsorolt portok ki lesznek zárva a szűrésből *Hálózati bővítmény* módban. Az értékek elválasztásához használjon vesszőt vagy sortörést.
 
 `network.extension.route.exclude`
 
-The listed routes will be excluded from filtering in the *Network Extension* mode. Set routes using an IP address or destination CIDR. Separate values with commas or line breaks.
+A felsorolt tartományok ki lesznek zárva a szűrésből *Hálózati bővítmény* módban. Útvonalak beállítása IP-cím vagy CIDR-célcím használatával. Az értékeket vesszővel vagy sortöréssel válassza el egymástól.
 
 `network.extension.http.downgrade.bundleids`
 
-Here you can specify a list of applications for which the HTTP/2 protocol will be downgraded to HTTP/1.1 in the *Network Extension* filtering mode. The bundle ID should be separated by a comma or a line break.
+Itt adhatja meg azoknak az alkalmazásoknak a listáját, amelyeknél a HTTP/2 protokoll HTTP/1.1-re lesz visszaminősítve a *Hálózati kiterjesztés* szűrési módban. A kötegazonosítót vesszővel vagy sortöréssel kell elválasztani.
 
 `network.extension.monterey.force.split.tunnel`
 
-Here you can prohibit AdGuard from using the "default route" which is enabled by default in the *Network Extension* mode on macOS Monterey. AdGuard uses "default route" to disable iCloud Private Relay and Protect Mail Activity, as it cannot operate in unison with them.
+Itt letilthatja az AdGuard számára az „alapértelmezett útvonal” használatát, amely alapértelmezés szerint engedélyezve van a *Hálózati bővítmény* módban a macOS Monterey rendszeren. Az AdGuard az "alapértelmezett útvonalat" használja az iCloud Private Relay és Protect Mail Activity letiltására, mivel nem tud velük együtt működni.
 
-You will find more information about the problem [in this article](../icloud-private-relay).
+A [problémáról ebben a cikkben talál további információt:](../icloud-private-relay).
 
 `network.extension.dns.redirect.exclude.bundleids`
 
-Here you can specify a list of applications that make DNS queries directly not via system DNS resolver (for example, some VPN clients or DNS filtering applications). DNS filtering will be disabled for them in the *Network Extension mode*. The bundle IDs should be separated by a comma or line break.
+Itt megadhatja azoknak az alkalmazásoknak a listáját, amelyek közvetlenül, nem a rendszer DNS-feloldóján keresztül hajtanak végre DNS-lekérdezéseket (például egyes VPN-kliensek vagy DNS-szűrő alkalmazások). A DNS-szűrés számukra letiltásra kerül a *Hálózati kiterjesztés módban*. A kötegazonosítókat vesszővel vagy sortöréssel kell elválasztani.
 
 `network.dns.filter.secure.request`
 
-Redirects secure DNS requests to a local DNS proxy, if there is one available.
+Átirányítja a biztonságos DNS-kérelmeket egy helyi DNS-proxynak, ha van ilyen.
 
 `network.https.ocsp.check`
 
-By setting `true`, you enable HTTPS certificate revocation checking.
+A `true` beállítással engedélyezi a HTTPS-tanúsítvány visszavonásának ellenőrzését.
 
 `network.tcp.keepalive.enabled`
 
-Periodically sends TCP packets over an idle connection to ensure that it remains active and to renew NAT timeouts.
+Időnként TCP-csomagokat küld tétlen kapcsolaton keresztül, hogy megbizonyosodjon arról, hogy életben van, és megújítja a NAT időtúllépéseket.
 
 `network.tcp.keepalive.interval.seconds`
 
-Idle time, in seconds, before sending a keepalive probe. If 0 is specified, the system will use the default value.
+Üresjárati idő másodpercben, mielőtt elküldené a fenntartó szondát. Ha 0 van megadva, a rendszer az alapértelmezett értéket fogja használni.
 
 `network.tcp.keepalive.timeout.seconds`
 
-Time, in seconds, before sending another keepalive probe to an unresponsive peer. If 0 is specified, the value selected by the system will be used.
+Az az idő másodpercben, amíg újabb keepalive próbát küld egy nem reagáló társnak. Ha 0 van megadva, akkor a rendszer által kiválasztott értéket fogja használni.
 
 `network.https.ech.enabled`
 
-Uses a local DNS proxy to look for configs in the ECH Config Lists. If found, encrypts ClientHellos.
+Helyi DNS-proxyt használ a konfigurációk keresésére az ECH konfigurációs listákban. Ha megtalálja, titkosítja a ClientHellost.
 
 `network.https.enforce.certificate.transparency`
 
 Verifies the authenticity of all certificates for the domain based on Chrome Certificate Transparency Policy.
+
+`network.https.filter.http3.enabled`
+
+By setting `true`, you allow AdGuard to filter traffic sent over HTTP/3, the latest version of the HTTP protocol based on QUIC.
 
 `network.filtering.localnetwork`
 
@@ -107,17 +111,17 @@ Here you can list domains for which the fallback DNS server will be used instead
 
 Here you can specify the type of DNS server response to blocked requests, corresponding to ad-blocker-style rules.
 
-* 0 — respond with REFUSED
-* 1 — respond with NXDOMAIN
-* 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
+- 0 — respond with REFUSED
+- 1 — respond with NXDOMAIN
+- 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
 
 `dns.proxy.hostrules.blocking.mode`
 
 Here you can specify the type of DNS server response to blocked requests, corresponding to hosts rules:
 
-* 0 — respond with REFUSED
-* 1 — respond with NXDOMAIN
-* 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
+- 0 — respond with REFUSED
+- 1 — respond with NXDOMAIN
+- 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
 
 `dns.proxy.blocking.response.IPv4.address`
 
@@ -153,15 +157,19 @@ Removes the Encrypted Client Hello parameters from responses.
 
 `stealth.antidpi.http.split.fragment.size`
 
-Adjusts the size of the HTTP request fragmentation. Accepted values: 1–1500. If an invalid size is specified, the system will use the default value.
+Adjusts the size of the HTTP request fragmentation. Valid values: 1–1500. If an invalid size is specified, the system will use the default value.
 
 `stealth.antidpi.clienthello.split.fragment.size`
 
-This option specifies the size of TCP packet fragmentation, which helps avoid deep packet inspection. Accepted values: 1–1500. If an invalid size is specified, the system will use the default value.
+This option specifies the size of TCP packet fragmentation, which helps avoid deep packet inspection. Valid values: 1–1500. If an invalid size is specified, the system will use the default value.
 
 `stealth.antidpi.http.space.juggling`
 
 Adds extra space between the HTTP method and the URL and removes space after the "Host:" field.
+
+`stealth.antidpi.split.delay.millisecond`
+
+Here you can specify the delay, in milliseconds, after sending the first fragment, if fragmentation is performed.
 
 `subscription.link.interception.userscript`
 

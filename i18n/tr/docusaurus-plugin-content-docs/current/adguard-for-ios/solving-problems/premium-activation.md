@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan iOS için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan iOS için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -17,7 +17,7 @@ There are two options to activate premium features on AdGuard for iOS app:
 
 As an alternative, you can just enter a valid license key in the e-mail field leaving password field blank to activate Premium features.
 
-:::note
+:::not
 
 AdGuard Pro for iOS (our other iOS app) can only be purchased from [App Store](https://apps.apple.com/app/adguard-pro-adblock-privacy/id1126386264).
 

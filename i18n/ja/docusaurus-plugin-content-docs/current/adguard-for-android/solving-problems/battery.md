@@ -1,58 +1,60 @@
 ---
-title: Battery and traffic consumption issues
+title: バッテリーとデータ通信の消費量について
 sidebar_position: 1
 ---
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Android」について書いています。 実際に使ってみるには、[AdGuardアプリをダウンロード](https://adguard.com/download.html?auto=true)してください。
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. 実際に使ってみるには、[AdGuardアプリをダウンロード](https://agrd.io/download-kb-adblock)してください。
 
 :::
 
-On Android devices running OS 6 and earlier, built-in statistics often attributed high data and/or battery usage to AdGuard. This was because AdGuard counted all the traffic it filtered from various apps. As a result, AdGuard's share of total data and battery usage was overstated, while other apps were understated.
+OS 6およびそれ以前のAndroidデバイスでは、内蔵の統計により、多くのデータおよびバッテリーの使用量がAdGuardに起因しているかのよう表示されることがよくありました。 そういった表示の原因、AdGuardがさまざまなアプリからのトラフィックをすべてカウントしていたためです。 その結果、総データ使用量とバッテリー使用量において、AdGuardの分は過大に表示され、他のアプリは過小に表示されていました。
 
-With Android 7, however, this scenario has improved. Now the data reflected in Android's built-in data usage statistics is very close to reality, although there are minor discrepancies in the battery usage data.
+しかし、Android 7では、この状況は改善しました。 現在、Android内蔵のデータ使用量統計に反映されるデータは、バッテリー使用量データに若干の不一致があるものの、現実に非常に近いものになっています。
 
-However, AdGuard users can always get a true picture of the situation on the *Battery usage* screen.
+さらに、AdGuardアプリ内にて、「*バッテリーの使用状況*」画面で、いつでも正確な状況を確認することができます。
 
-### Own battery usage stats screen
+### AdGuardのバッテリー使用状況統計画面
 
-You can access it by navigating to *Statistics* → *Battery usage*.
+AdGuard for Android アプリ →「*統計*」（画面下左から3番目のアイコン）→「*バッテリーの使用状況*」でアクセスできます。
 
-![Battery stats *mobile_border](https://cdn.adtidy.org/content/articles/battery/1.png)
+![バッテリー統計 *mobile_border](https://cdn.adtidy.org/content/articles/battery/1.png)
 
-Inside you will find a chart that shows the AdGuard battery resource consumption within the last 24 hours, with an option to get more detailed hour-to-hour data by tapping on the chart. Besides that, there’s also a numeric breakdown of the relevant data and a short technical explanation.
+この画面では、過去24時間以内のAdGuardによるバッテリー消費量を示すグラフが表示されています。また、グラフをタップすることで、より詳細な1時間ごとのデータも確認できます。 そのほか、関連データの数値的な内訳と短い技術的な説明もあります。
 
-### How much battery resource does AdGuard really consume?
+### AdGuard の本当のバッテリー消費量はどのくらいですか？
 
-First, let us lay down a bit of theory and links with necessary data.
+まず、少し理論を整理し、必要なデータへのリンク挙げたいと思います。を
 
-1. Android derives traffic consumption judging on so-called Power Profile, which is given by every manufacturer: <https://source.android.com/devices/tech/power/values.html>
+1. Androidは、各メーカーから提供されているいわゆるパワープロファイルに基づき、トラフィック消費量を算出します: <https://source.android.com/devices/tech/power/values.html>
 
-2. Main part of Power Profile is a set of values in mAh which define battery consumption for every component of the device: <https://source.android.com/devices/tech/power/values.html>
+1. パワープロファイルの主な部分は、デバイスの各コンポーネントのバッテリー消費を定義するmAh単位の値のセットです: <https://source.android.com/devices/tech/power/values.html>
 
-For example, from the table above:
+    例えば、上の表から:
 
-_wifi.active=_ 31mA additional consumption in mAh caused by WiFi data exchange.
+    *wifi.active* = WiFiデータ通信によって追加の31mAが消費（mAh）される。
 
-_radio.active=_ 100-300mA additional consumption in mAh caused by data exchange over Mobile network.
+    *radio.active* = モバイルデータ通信によって追加の100-300mAが消費（mAh）される。
 
-_cpu.active=_ 100-200mA additional consumption in mAh caused by CPU work.
+    *cpu.active=* 100-200mA additional consumption in mAh caused by CPU load.
 
-3. AdGuard by itself almost doesn't consume any traffic, so for the sake of evaluating battery resource consumption let's get rid of 'Mobile/WiFi packets' and stcik to 'CPU'.
+1. AdGuard by itself almost doesn't consume any traffic, so for the sake of evaluating power consumption let's get rid of 'Mobile/Wi-Fi packets' and stick to 'CPU'.
 
-Formulа to calculate the consumption:
-> "CPU TIME (ms)" X "cpu.active" / (60 * 60 * 1000) = "POWER USE mAh"
+    消費量の計算式:
 
-Let's put real numbers into this formula.
+    > “CPU TIME (ms)” X “cpu.active” / (60 *60* 1000) = “POWER USE mAh”
 
-Let's take _CPU total_ from the second screenshot and convert into milliseconds: 506000
+    この式に実数を入れてみましょう。
 
-A coefficient _cpu.active_ for 2GHz will be roughly equal to 225mAh
+    スクリーンショットから*CPUの合計*をミリ秒に換算します：506000。
 
-Final result
-> 506000 * 225 / (60 * 60 * 1000) = 31,625mAh
+    2GHzの*cpu.active*係数はおよそ225mAhになります。
 
-### Conclusion
+    最終結果:
 
-Real consumption is **several times less** than it is shown in Android statistics. Instead of 220mAh it should be somewhere around 31-40mAh. On the other hand, browser's consumption should be not 66mAh, but ~200mAh.
+    > 506000 * ✖️ 225 / (60* ✖️ 60 ✖️ 1000) = 31,625mAh
+
+### 結論
+
+AdGuard の実際のバッテリー消費量は、Androidのシステム統計で表示されているよりも、**数倍少ない**です。 220mAhなどではなく、31～40mAhといったところです。 一方、ブラウザーの消費量は66mAhではなく、〜200mAhであるべきです。

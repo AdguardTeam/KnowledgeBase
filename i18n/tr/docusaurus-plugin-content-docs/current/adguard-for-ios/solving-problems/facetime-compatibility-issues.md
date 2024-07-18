@@ -5,7 +5,7 @@ sidebar_position: 3
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan iOS için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan iOS için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -17,9 +17,10 @@ It is likely but not guaranteed that FaceTime will work when AdGuard is in Full-
 
 **If you want to use FaceTime and make sure that video/audio calls don't stop working, use Split-Tunnel mode.**
 
-![Tunnel mode screen *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ru/iOS/tunnel-mode.PNG?!)
+![Tünel modu ekranı *mobil](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ru/iOS/tunnel-mode.PNG?!)
 
-To enable it, follow the instructions:
+Etkinleştirmek için talimatları izleyin:
+
 1. iOS için AdGuard'a gidin *Ayarlar* → *Genel ayarlar*.
 2. Enable *Advanced mode* and go to the *Advanced settings* section that appears right after.
 3. Open *Tunnel mode* and select *Split-Tunnel*.

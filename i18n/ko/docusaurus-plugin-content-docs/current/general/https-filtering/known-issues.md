@@ -9,12 +9,12 @@ Understanding this article may require some basic knowledge about encryption, TL
 
 First, look at this simple diagram that shows the general structure of the HTTPS protocol:
 
-![What is HTTPS filtering](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
+![What is HTTPS filtering?](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
 
 AdGuard copies properties of the TLS connection that your browser uses:
 
-* AdGuard는 동일한 TLS 버전을 사용합니다.
-* AdGuard는 브라우저와 동일한 암호화 방법(ciphers)을 사용합니다.
+- AdGuard는 동일한 TLS 버전을 사용합니다.
+- AdGuard는 브라우저와 동일한 암호화 방법(ciphers)을 사용합니다.
 
 Effectively, it means that if you use a modern, safe browser, it will take all known TLS problems into account and won’t attempt to use unsafe ciphers.
 

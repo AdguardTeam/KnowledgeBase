@@ -3,7 +3,7 @@ title: Search ads and self-promotion
 sidebar_position: 3
 ---
 
-**Disclosure.** While AdGuard provides an option to show some ads, we do not have any 'acceptable ads' program like Adblock Plus and some other ad blockers, where they take money for leaving certain ads unblocked. This is not our case. We do not get paid for showing any of the ads, and we do not use the term 'acceptable' for a reason: the ads we might show may be, in fact, useful and not just 'acceptable'. All of this applies only to search ads and self-promotion ads.
+**Disclosure.** While AdGuard provides an option to show some ads, we do not have any 'acceptable ads' program like Adblock Plus and some other ad blockers, where they take money for leaving certain ads unblocked. This isn't our way of doing business. We do not get paid for showing any of the ads, and we do not use the term 'acceptable' for a reason: the ads we might show may be, in fact, useful and not just 'acceptable'. All of this applies only to search ads and self-promotion ads.
 
 You can turn off the display of these ads at any time. Furthermore, we will explain which ads qualify for this definition.
 
@@ -33,13 +33,13 @@ By enabling 'Search ads and self-promotion', AdGuard users can unblock some of t
 
 When you enable 'Search ads and self-promotion', search ads from the following search engines are shown:
 
-* Google
-* Yahoo
-* Bing
-* Ask
-* Yandex
-* DuckDuckGo
-* StartPage
+- Google
+- Yahoo
+- Bing
+- Ask
+- Yandex
+- DuckDuckGo
+- StartPage
 
 As well as all self-promotional ads that satisfy our filter policy.
 

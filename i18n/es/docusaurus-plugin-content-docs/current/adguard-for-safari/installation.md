@@ -1,53 +1,76 @@
 ---
-title: Installation
+title: Instalación
 sidebar_position: 2
 ---
 
 :::info
 
-Este artículo trata sobre AdGuard para Safari, que protege solo tu navegador Safari. Para proteger todo tu dispositivo, [descarga la aplicación AdGuard](https://adguard.com/download.html?auto=true)
+Este artículo trata sobre AdGuard para Safari, que protege solo tu navegador Safari. Para proteger todo tu dispositivo, [descarga la aplicación AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## How to install AdGuard for Safari {#install}
+## Cómo instalar AdGuard para Safari {#install}
 
-AdGuard for Safari is a free app presented on the App Store. To install it on your device, do the following.
+AdGuard para Safari es una aplicación gratuita disponible en la App Store. Para instalarla en tu dispositivo, haz lo siguiente:
 
-1. Open the App Store and find the needed extension there.
+1. Abre la App Store y busca allí la extensión necesaria.
 
-![AdGuard for Safari on the App Store](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-app-store.png)
+    ![AdGuard para Safari en la App Store](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-app-store.png)
 
-2. Press *Get* → *Install* → *Open*.
+1. Presiona *Obtener* → *Instalar* → *Abrir*.
 
-3. To set up AdGuard for Safari, enable the AdGuard extensions in the Safari settings. In a notification, click *Fix it*. In an opened window, check the boxes next to AdGuard extensions.
+1. Para configurar AdGuard para Safari, habilita las extensiones de AdGuard en la configuración de Safari.
 
-![Notification: Some extensions are disabled](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-notification.png)
+    ![Notificación: algunas extensiones están deshabilitadas](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-notification.png)
 
-:::note
+    :::note
 
-Not all extensions are required for AdGuard for Safari to function correctly. For instance, checking the *Icon* extension enables the icon in the tray menu. However, we recommend enabling all of them.
+    No todas las extensiones son necesarias para que AdGuard para Safari funcione correctamente. Por ejemplo, marcar la extensión *Icono* habilita el icono junto a la barra de búsqueda. Sin embargo, recomendamos habilitarlas todas.
+
 
 :::
 
-![Extensions checked](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-extensions-checked.png)
+    ![Extensiones seleccionadas](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-extensions-checked.png)
 
-After you complete steps 1-3, AdGuard for Safari will start functioning. You can now configure its settings.
+1. Para que AdGuard surta efecto en los sitios web, la configuración *Bloqueadores de contenido* debe estar activada. Puedes activarla para todos los sitios web o seleccionar los que desees.
+
+    :::note
+
+    Este paso es necesario para iOS 9.0 y posteriores, macOS 10.11 con Safari 10 y macOS 10.12 y posteriores.
 
 
-## How to uninstall AdGuard for Safari {#uninstall}
-To uninstall AdGuard for Safari, do the following:
+:::
 
-1. Quit the app.
-2. Open Safari preferences.
-3. Choose the Extensions tab. You will see a list of extensions, AdGuard has eight.
-4. Uncheck all checkboxes and press *Uninstall* below any of them.
+En macOS, haz clic en *Preferencias* → *Sitios web* → *Bloqueadores de contenido*. Si deseas habilitar AdGuard en todos los sitios web, activa *Cuando visites otros sitios web* a *On*.
 
-![Extensions checked](https://cdn.adtidy.org/public/Adguard/kb/installation/Safari/extensionschecked.png)
+![Configuración del bloqueador de contenido de Safari para Mac](https://i0.imgs.ovh/2023/10/26/Fmc9U.png)
+<!-- adguard-for-safari-content-blocker-setting-macos.png -->
 
-At this point, you will see a notification:
+En iOS, ve a *Ajustes* → *Safari* → *Bloqueadores de contenido*, y establece la opción a *Sí*.
 
-![Notification: uninstall AdGuard for Safari](https://cdn.adtidy.org/public/Adguard/kb/installation/Safari/showinfinder.png)
+![Configuración del bloqueador de contenido de Safari para iOS](https://i0.imgs.ovh/2023/10/26/FmgM0.jpeg)
+<!-- adguard-for-safari-content-blocker-setting-ios.jpg -->
 
-5. Press *Show in Finder* and move the application to the bin.
+Después de completar los pasos 1 a 4, AdGuard para Safari comenzará a funcionar. Ahora puedes configurar tus ajustes.
 
-AdGuard for Safari will be removed from your device.
+## Cómo desinstalar AdGuard para Safari {#uninstall}
+
+Para desinstalar AdGuard para Safari, haz lo siguiente:
+
+1. Quita la aplicación.
+
+1. Abre las preferencias de Safari.
+
+1. Selecciona la pestaña Extensiones. Verás una lista de extensiones. AdGuard tiene ocho.
+
+1. Desmarca todas las casillas de verificación y presiona *Desinstalar* debajo de cualquiera de ellas.
+
+    ![Extensiones seleccionadas](https://cdn.adtidy.org/public/Adguard/kb/installation/Safari/extensionschecked.png)
+
+    En este punto, verás una notificación:
+
+    ![Notificación: desinstalar AdGuard para Safari](https://cdn.adtidy.org/public/Adguard/kb/installation/Safari/showinfinder.png)
+
+1. Pulsa *Mostrar en Finder* y mueve la app a la papelera.
+
+    AdGuard para Safari se eliminará de tu dispositivo.

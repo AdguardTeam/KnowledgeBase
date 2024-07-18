@@ -9,9 +9,9 @@ Para solicitar uma chave de licença do AdGuard de **um ano** ou uma assinatura 
 
 Para verificar o andamento da tradução, abra um projeto no qual você trabalhou, clique na guia *Relatórios* e selecione *Minha contribuição*. Você pode somar o número de palavras traduzidas em diferentes projetos para obter uma licença.
 
-**Veja como funciona nosso sistema de recompensas**
+## Veja como funciona nosso sistema de recompensas
 
-```
+```text
 Para a primeira licença AdGuard de um ano, você precisa traduzir 500 palavras.
 Para a segunda licença, você precisa de 1.000 palavras, ou seja, 1.500 palavras no total.
 Todas as licenças subsequentes exigem 1.500 palavras adicionais por licença.
@@ -20,6 +20,7 @@ Para a primeira assinatura do AdGuard VPN de um ano, você precisa traduzir 2.50
 Todas as assinaturas ou renovações subsequentes exigem 2.500 palavras adicionais por assinatura.
 
 ```
+
 Basta nos enviar uma solicitação para [translate@adguard.com](mailto:translate@adguard.com) e você receberá a licença como prova de nossa gratidão.
 
 Além disso, os tradutores mais ativos podem receber o status de revisor no futuro, caso expressem essa intenção, e isso promete ainda mais coisas boas.

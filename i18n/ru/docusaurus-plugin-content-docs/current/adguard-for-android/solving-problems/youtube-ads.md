@@ -5,7 +5,7 @@ sidebar_position: 7
 
 :::info
 
-В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://adguard.com/download.html?auto=true)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -17,15 +17,15 @@ sidebar_position: 7
 
 1. Откройте приложение YouTube и включите видео, которое хотите посмотреть.
 
-2. Нажмите кнопку *Поделиться*.
+1. Нажмите кнопку *Поделиться*.
 
-![Шаг 1 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step1.png)
+    ![Шаг 1 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step1.png)
 
-3. Выберите *AdGuard* из списка приложений.
+1. Выберите *AdGuard* из списка приложений.
 
-![Шаг 2 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step2.png)
+    ![Шаг 2 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step2.png)
 
-Вот и всё! Откроется новое окно с видео, где вы сможете смотреть YouTube, не прерываясь на рекламу.
+Готово! Откроется новое окно с видео, где вы сможете смотреть YouTube, не прерываясь на рекламу.
 
 ## Смотрите YouTube в браузере
 

@@ -1,11 +1,12 @@
 ---
-title: Features overview
-sidebar_position: 1
+title: 功能概览
+sidebar_position: 6
 ---
+
 
 :::info
 
-本文适用于 iOS 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 要了解工作原理， 请[下载 AdGuard 应用程序](https://adguard.com/download.html?auto=true)
+本文适用于 iOS 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -15,7 +16,7 @@ If you look for AdGuard in the App Store, you'll find two apps — [AdGuard](htt
 
 AdGuard and AdGuard Pro for iOS offer lots of features for blocking ads, trackers and creating user rules, both in Safari and on network level.
 
-### Content blockers {#content-blockers}
+### 内容拦截器 {#content-blockers}
 
 Content blockers serve as 'containers' for filtering rules that do the actual job of blocking ads and tracking. AdGuard for iOS contains six content blockers: General, Privacy, Social, Security, Custom, and Other. Previously Apple only allowed each content blocker to contain a maximum of 50K filtering rules, but with iOS 15 release the upper limit has moved to 150K rules.
 
@@ -29,7 +30,7 @@ Keep all content blockers enabled for the best filtering quality.
 
 :::
 
-### Filters {#filters}
+### 过滤器 {#filters}
 
 Content blockers' work is based on filters, also sometimes referred to as filter lists. Each filter is a list of filtering rules. If you have an enabled ad blocker when browsing, it constantly checks the visited pages and elements on them against these filtering rules, and blocks anything that matches. Rules are developed to block ads, trackers, and more.
 
@@ -47,7 +48,7 @@ More enabled filters does not guarantee that there will be less ads. A large num
 
 Custom filters category is empty by default for users to add there their filters by URL. You can find filters on the Internet or even try to [create one by yourself](/general/ad-filtering/create-own-filters).
 
-### User rules {#user-rules}
+### 用户规则 {#user-rules}
 
 Here you can add new rules — either by entering them manually, or by using [the AdGuard manual blocking tool in Safari](#assistant). Use this tool to customize Safari filtering without adding an entire filter list.
 
@@ -57,7 +58,7 @@ Learn [how to create your own ad filters](/general/ad-filtering/create-own-filte
 
 ### Allowlist {#allowlist}
 
-The third section of the *Safari protection* screen. If you want to disable ad blocking on a certain website, Allowlist will be of help. It allows you to add domains and subdomains to exlcusions. AdGuard for iOS has an Import/Export feature, so the allowlist from one device can be easily transferred to another.
+The third section of the *Safari protection* screen. If you want to disable ad blocking on a certain website, Allowlist will be of help. It allows you to add domains and subdomains to exclusions. AdGuard for iOS has an Import/Export feature, so the allowlist from one device can be easily transferred to another.
 
 ### DNS protection {#dns-protection}
 
@@ -79,7 +80,7 @@ In Native implementation, the DNS is handled by the system and not the app. This
 
 ### DNS servers {#dns-servers}
 
-The first section you'll see on the DNS Protection screen is DNS server. It shows the currently selected DNS server and encryption type. To change either, tap the button to enter the DNS server screen.
+The next section you'll see on the DNS Protection screen is DNS server. It shows the currently selected DNS server and encryption type. To change either, tap the button to enter the DNS server screen.
 
 ![DNS servers *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_server_en.jpeg)
 
@@ -99,7 +100,7 @@ DNS filtering allows you to customize your DNS traffic by enabling AdGuard DNS f
 
 How to access:
 
-*Protection* icon (the shield icon in the bottom menu bar) → *DNS protection* → *DNS filtering*
+*Protection* (the shield icon in the bottom menu bar) → *DNS protection* → *DNS filtering*
 
 ![DNS filtering screen *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_filtering_en.jpeg)
 
@@ -129,7 +130,7 @@ The *Advanced protection* only works on iOS 15 and later versions. If you are us
 
 ### Compatibility with AdGuard VPN {#compatibility}
 
-In most cases, the ad blocker and the VPN application cannot work together, simply because there are certain system limitations. Nevertheless we've managed to find a solution to befriend [AdGuard VPN](https://adguard-vpn.com/) and AdGuard Ad Blocker. For your convenience we've added the *AdGuard VPN* block to the *Protection* section, so you can easily switch between two apps.
+In most cases, the ad blocker and the VPN app cannot work together, simply because there are certain system limitations. Nevertheless, we've managed to find a solution to befriend [AdGuard VPN](https://adguard-vpn.com/) and AdGuard Ad Blocker. In the *Protection* section, you can easily switch between two apps.
 
 ### Assistant {#assistant}
 
@@ -140,7 +141,7 @@ Assistant is a tool that helps you manage filtering in Safari right from the bro
 To see it, do the following: open Safari and tap the arrow-in-a-box symbol. Then scroll down to AdGuard/AdGuard Pro (depending on the app you use) and tap it to fetch a window with several options:
 
 1. **Enable on this page.** Turn the switch off to add the current domain to the Allowlist.
-2. **Block an element on this page.** Tap it to enter the 'Element blocking' mode: choose any element on the page, adjust the size by tapping 'plus' or 'minus', preview if necessary and then tap the checkmark icon to confirm. The selected element will be hidden from the page and a corresponding rule will be added to User rules. Remove or disable it there to revert the change.
+2. **Block an element on this page.** Tap it to enter the 'Element blocking' mode: choose any element on the page, adjust the size by tapping '+' or '–', preview if necessary and then tap the checkmark icon to confirm. The selected element will be hidden from the page and a corresponding rule will be added to User rules. Remove or disable it to revert the change.
 3. **Report an issue on this page.** Opens a web reporting tool that will help you send a report to our support team in just a few taps. Use it if you noticed a missed ad or an incorrect blocking on the page.
 
 :::tip
@@ -192,6 +193,7 @@ For any DNS query sent to get an IPv6 address, our app returns an empty response
 Fallback is a backup DNS server. If you chose a DNS server and something happened to it, a fallback is needed to set the backup DNS server until the main server responds.
 
 With Bootstrap, it’s a little more complicated. For AdGuard for iOS to use a custom secure DNS server, our app needs to get its IP address first. For this purpose, the system DNS is used by default, but sometimes this is not possible for various reasons. In such cases, Bootstrap could be used to get the IP address of the selected secure DNS server. Here are two examples to illustrate when a custom Bootstrap server might help:
+
 1. When a system default DNS server does not return the IP address of a secure DNS server and it is not possible to use a secure one.
 2. When our app and third-party VPN are used simultaneously and it is not possible to use System DNS as a Bootstrap.
 

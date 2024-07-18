@@ -1,5 +1,5 @@
 ---
-title: Asistent prohlížeče
+title: Browser Assistant
 sidebar_position: 3
 ---
 
@@ -15,7 +15,7 @@ AdGuard Asistent prohlížeče je rozšíření prohlížeče nainstalované v p
 
 ### Kompatibilita s hlavní aplikací
 
-Pokud jste si zvykli používat naše předchozí rozšíření pro blokování reklam AdGuard [v režimu integrace](/adguard-browser-extension/integration-mode), možná se vám zalíbí řešení, které jsme vyvinuli pro nového Asistenta prohlížeče.
+If you got into the habit of using our previous [AdGuard Ad Blocker extension](/adguard-browser-extension/compatibility), you might like the solution that we have developed for the new Browser Assistant.
 
 Základní informace:
 
@@ -33,7 +33,10 @@ Nový Asistent prohlížeče má v nastavení AdGuardu pro Windows vlastní zál
 
 ## Starý Asistent
 
-Starý Asistent je předchozí verze Asistenta, která je pouhým uživatelským skriptem, nikoli rozšířením prohlížeče. V zásadě existují dva případy, kdy jej budete chtít zvolit namísto nového Asistenta prohlížeče: 1) nový Asistent není pro váš prohlížeč k dispozici; 2) jste zvyklí na ikonu zeleného štítu a chcete ponechat vše při starém.
+Starý Asistent je předchozí verze Asistenta, která je pouhým uživatelským skriptem, nikoli rozšířením prohlížeče. V zásadě existují dva případy, kdy byste ho mohli zvolit místo nového Asistenta prohlížeče:
+
+1. Nový Asistent není pro váš prohlížeč k dispozici.
+1. Jste zvyklí na ikonu zeleného štítu a chcete ponechat vše při starém.
 
 ## Jak nainstalovat Asistenta prohlížeče AdGuard
 

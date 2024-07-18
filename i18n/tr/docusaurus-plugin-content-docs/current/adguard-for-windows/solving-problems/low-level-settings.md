@@ -1,232 +1,236 @@
 ---
-title: Advanced (low-level) Settings guide
+title: Gelişmiş (düşük düzey) Ayarlar kılavuzu
 sidebar_position: 7
 ---
 
-:::info
+:::bilgi
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Windows için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
-
-:::
-
-Previously known as low-level settings, Advanced Settings mostly contain options that go beyond the average user competence and aren't applied in everyday use. AdGuard for Windows is designed to work without ever having to change any of them, but they will provide additional features in some corner cases or when solving an uncommon problem.
-
-:::caution
-
-Mindlessly changing *Advanced Settings* can potentially cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only make changes to these settings if you are sure of what you are doing or if our support team has asked you to do so.
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Windows için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
-## How to reach Advanced Settings
+Daha önce düşük düzey ayarlar olarak bilinen Gelişmiş Ayarlar çoğunlukla ortalama kullanıcı yetkinliğinin ötesine geçen ve günlük kullanımda uygulanmayan seçenekleri içerir. Windows için AdGuard, hiçbirini değiştirmenize gerek kalmadan çalışacak şekilde tasarlanmıştır, ancak bazı önemli durumlarda veya nadir görülen bir sorunu çözerken ek özellikler sağlar.
 
-To go to *Advanced settings*, in the main windows click *Settings → General Settings* and scroll down to *Advanced Settings*. Alternatively, select *Advanced → Advanced settings...* in the tray menu.
+:::dikkat
 
-## Advanced Settings
+*Gelişmiş Ayarlar* düşüncesizce değiştirilmesi, AdGuard'ın performansında sorunlara neden olabilir, internet bağlantısını kesebilir veya güvenliğinizi ve gizliliğinizi tehlikeye atabilir. Bu ayarlarda yalnızca ne yaptığınızdan eminseniz veya destek ekibimiz bunu yapmanızı istediyse değişiklik yapmalısınız.
 
-Once you open Advanced Settings, you will be presented with the following options:
+:::
 
-### Block TCP Fast Open
+## Gelişmiş Ayarlara nasıl ulaşılır
 
-If enabled, AdGuard will block TCP Fast Open in the Edge browser. To apply settings, you need to restart the browser.
+*Gelişmiş ayarlar* öğesine gitmek için, ana pencerelerde *Ayarlar → Genel Ayarlar* öğesine tıklayın ve *Gelişmiş Ayarlar* öğesine ilerleyin. Alternatif olarak, tepsi menüsünde *Gelişmiş → Gelişmiş ayarlar...* öğesini seçin.
+
+## Gelişmiş Ayarlar
+
+Gelişmiş Ayarlar öğesini açtığınızda size aşağıdaki seçenekler sunulacaktır:
+
+### TCP Fast Open protokolünü engelle
+
+Etkinleştirilirse, AdGuard Edge tarayıcısında TCP Fast Open'ı engeller. Ayarları uygulamak için tarayıcıyı yeniden başlatmanız gerekir.
 
 ### Use Encrypted ClientHello
 
-Every encrypted Internet connection has an unencrypted part. This is the very first packet which contains the name of the server you are connecting to. Encrypted Client Hello technology is supposed to solve this issue and encrypt that last bit of unencrypted information. To benefit from it, enable the *Use Encrypted ClientHello* option. Alan adı için ECH yapılandırmasını aramak için yerel bir DNS proxy'si kullanır. If it is found, ClientHello packet will be encrypted.
+Her şifrelenmiş internet bağlantısının bir de şifrelenmemiş kısmı vardır. Bu, bağlandığınız sunucunun adını içeren ilk pakettir. Encrypted Client Hello teknolojisinin bu sorunu çözmesi ve şifrelenmemiş bilgilerin son kısmını şifrelemesi gerekiyor. To benefit from it, enable the *Use Encrypted ClientHello* option. Alan adı için ECH yapılandırmasını aramak için yerel bir DNS proxy'si kullanır. Eğer bulunursa, ClientHello paketi şifrelenecektir.
 
-### Check websites' certificate transparency
+### Sitelerin sertifika şeffaflığını kontrol et
 
-Verifies the authenticity of all certificates for the domain based on Chrome Certificate Transparency Policy. Sertifika, Chrome Sertifika Şeffaflığı Politikasına uymuyorsa, AdGuard siteyi filtrelemez. Chrome, in turn, will block it.
+Chrome Sertifika Şeffaflığı Politikasını temel alarak alan adı için tüm sertifikaların orijinalliğini doğrular. Sertifika, Chrome Sertifika Şeffaflığı Politikasına uymuyorsa, AdGuard siteyi filtrelemez. Chrome da onu engeller.
 
-### Enable SSL/TLS certificate revocation checks
+### SSL/TLS sertifika iptal kontrollerini etkinleştir
 
-Once enabled, this option runs asynchronous OCSP checks to check whether the website’s SSL/TLS certificate is revoked.
+Bu seçenek etkinleştirildiğinde, sitenin SSL/TLS sertifikasının iptal edilip edilmediğini kontrol etmek için eşzamansız OCSP kontrolleri gerçekleştirir.
 
-If the OCSP check completes within the minimum timeout, AdGuard will immediately apply the result: block the connection if the certificate is revoked or establish a connection if the certificate is valid.
+OCSP kontrolü minimum zaman aşımı süresi içinde tamamlanırsa AdGuard hemen sonucu uygular: sertifika iptal edilirse bağlantıyı engelleyin veya sertifika geçerliyse bağlantı kurun.
 
-If the verification takes too long, AdGuard will establish a connection and continue checking in the background. If the certificate is revoked, current and future connections to the domain will be blocked.
+Doğrulama çok uzun sürerse AdGuard bir bağlantı kurar ve arka planda kontrol etmeye devam eder. Sertifika iptal edilirse alan adına yapılan mevcut ve gelecekteki bağlantılar engellenecektir.
 
-### Show AdGuard VPN in Settings
+### Ayarlarda AdGuard VPN'i göster
 
-Enabling this option allows you to display the AdGuard VPN tab in Settings for easy opening of the app and the product's website.
+Bu seçeneğin etkinleştirilmesi, uygulamanın ve ürünün sitenin kolayca açılması için Ayarlar'da AdGuard VPN sekmesini görüntülemenize olanak tanır.
 
-### Exclude app from filtering by entering the full path
+### Tam dosya yolu girerek uygulamayı filtrelemeden hariç tut
 
-If you want AdGuard not to filter any specific application, specify the full path to them and the apps will be excluded from filtering. Separate different paths by semicolons.
+AdGuard'ın belirli bir uygulamayı filtrelememesini istiyorsanız, bunların tam yolunu belirtin; uygulamalar filtrelemenin dışında bırakılacaktır. Farklı yolları noktalı virgülle ayırın.
 
-### Enable AdGuard pop-up notifications
+### AdGuard açılır pencere bildirimlerini etkinleştir
 
-Enable this feature to see AdGuard pop-up notifications. They do not appear too often and contain only important information. You can also use the tray menu to recall the last pop-up notification.
+AdGuard açılır bildirimlerini görmek için bu özelliği etkinleştirin. Çok sık görünmezler ve yalnızca önemli bilgiler içerirler. Son açılan bildirimi geri çağırmak için tepsi menüsünü de kullanabilirsiniz.
 
-### Automatically intercept filter subscription URLs
+### Filtre aboneliği URL bağlantılarını otomatik yakala
 
-Enable this feature if you want AdGuard to automatically intercept filter subscription URLs (i.e. `abp:subscribe` and alike) and to open a custom filter installation dialog.
+AdGuard'ın filtre aboneliği URL'lerini (ör. `abp:subscribe` ve benzeri) otomatik olarak engellemesini ve özel bir filtre yükleme uyarı kutusu açmasını istiyorsanız bu özelliği etkinleştirin.
 
-### Use redirect driver mode
+### HTTP/3'ü filtrele
 
-If this option is enabled, AdGuard intercepts all the traffic and redirects it to the local proxy server for further filtering.
+Bu ayar etkinleştirilirse, AdGuard diğer istek türlerinin yanı sıra HTTP/3 üzerinden gönderilen istekleri de filtreler.
 
-Otherwise, AdGuard will filter all the traffic on the fly, without redirection. In this case, the system will consider AdGuard to be the sole application that connects to the Internet (other applications are routed through it). The downside is that it will make the system Firewall less effective. The upside is that this approach works a little bit faster.
+### Yönlendirme sürücü modunu kullan
 
-### Open main window at system start-up
+Bu seçenek etkinleştirilirse AdGuard tüm trafiği keser ve daha fazla filtreleme için yerel proxy sunucusuna yönlendirir.
 
-Enable this option to make the main AdGuard window open after the system is loaded. Note that it doesn't affect whether the actual filtering service is launched or not, this setting is located in *Settings → General Settings*
+Aksi takdirde, AdGuard tüm trafiği yönlendirme olmadan anında filtreler. Bu durumda sistem, AdGuard'ı internete bağlanan tek uygulama olarak kabul eder (diğer uygulamalar onun üzerinden yönlendirilir). Dezavantajı ise sistem Güvenlik Duvarı'nı daha az etkili hâle getirmesidir. Bunun iyi yanı, bu yaklaşımın biraz daha hızlı çalışmasıdır.
 
-### Enable filtering at system start-up
+### Sistem başlangıcında ana pencereyi aç
 
-Starting from v7.12, by default, AdGuard's service does not filter traffic after OS startup if the option Launch AdGuard at system start-up is disabled. In other words, the AdGuard's service is started in “idle” mode. Enable this option to make AdGuard filter traffic even if the app is not launched.
+Sistem yüklendikten sonra ana AdGuard penceresinin açılmasını sağlamak için bu seçeneği etkinleştirin. Gerçek filtreleme hizmetinin başlatılıp başlatılmamasını etkilemediğini unutmayın, bu ayar *Ayarlar → Genel Ayarlar* öğesinde bulunur.
 
-:::note
+### Sistem başlangıcında filtrelemeyi etkinleştir
 
-Before v7.12, the AdGuard service started in filtering mode by default (even if the *Launch AdGuard at system start-up* was disabled). If you were satisfied with the old behavior, enable this option.
+v7.12'den başlayarak, varsayılan olarak AdGuard'ın hizmeti, AdGuard'ı sistem başlangıcında başlat seçeneği devre dışı bırakılırsa işletim sistemi başlatıldıktan sonra trafiği filtrelemez. Başka bir deyişle, AdGuard'ın hizmeti "boşta" modunda başlatılır. Uygulama başlatılmamış olsa bile AdGuard'ın trafiği filtrelemesini sağlamak için bu seçeneği etkinleştirin.
+
+:::not
+
+v7.12'den önce, AdGuard hizmeti varsayılan olarak filtreleme modunda başlatılıyordu ( *AdGuard'ı sistem başlangıcında başlat* devre dışı bırakılmış olsa bile). Eski davranıştan memnunsanız, bu seçeneği etkinleştirin.
 
 :::
 
 ### localhost'u filtrele
 
-If you want AdGuard to filter loopback connections, check the box. This option will always be on if you have AdGuard VPN installed, because otherwise it won't be able to work.
+AdGuard'ın geri dönen bağlantılarını filtrelemesini istiyorsanız, kutuyu işaretleyin. AdGuard VPN'iniz kuruluysa bu seçenek her zaman açık olur, aksi halde çalışmayacaktır.
 
-### Exclude specified IP ranges from filtering
+### Belirtilen IP aralıklarını filtrelemeden hariç tut
 
-If you don't want AdGuard to filter particular subnets, enable this feature and specify the IP ranges in the CIDR notation (e.g. 98.51.100.14/24) in the **IP ranges excluded from filtering** section below.
+AdGuard'ın belirli alt ağları filtrelemesini istemiyorsanız, bu özelliği etkinleştirin ve IP aralıklarını CIDR gösteriminde (örn. 98.51.100.14/24) aşağıdaki **Filtrelemeden hariç tutulan IP aralıkları** bölümünde belirtin.
 
-### Enable HAR writing
+### HAR yazımını etkinleştir
 
-This option should be enabled **only for debugging purposes**. If you tick the checkmark, AdGuard will create a file that contains information about all filtered HTTP requests in HAR 1.2 format. This file can be analyzed with the Fiddler app. Note that it may slow down your web browsing significantly.
+Bu seçenek **yalnızca hata ayıklama amacıyla** etkinleştirilmelidir. Onay işaretini işaretlerseniz AdGuard, filtrelenen tüm HTTP istekleri hakkında bilgileri içeren HAR 1.2 biçiminde bir dosya oluşturur. Bu dosya Fiddler uygulamasıyla analiz edilebilir. İnternette gezinmeyi önemli ölçüde yavaşlatabileceğini unutmayın.
 
-### Add an extra space to the plain HTTP request
+### Düz HTTP isteğine fazladan boşluk ekle
 
-Adds extra space between the HTTP method and the URL and removes space after the "Host:" field to avoid deep packet inspection. For instance, the request
+HTTP yöntemi ile URL arasına fazladan boşluk ekler ve Derin Paket İncelemesini önlemek için "Ana makine:" alanından sonraki boşluğu kaldırır. Örneğin, istek
 
 `GET /foo/bar/ HTTP/1.1
 Host: example.org`
 
-will be converted to
+şuna dönüştürülecektir
 
-`GET  /foo/bar/ HTTP/1.1
+`GET /foo/bar/ HTTP/1.1
 Host: example.org`
 
-This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
+Bu seçenek yalnızca *DPİ'den koru* Gizlilik Modu seçeneği etkinleştirildiğinde uygulanır.
 
-### Adjust size of fragmentation of initial TLS packet
+### İlk TLS paketinin parçalanma boyutunu ayarla
 
-Specifies the size of the TCP packet fragmentation, avoiding deep packet inspection. Bu seçenek yalnızca güvenli (HTTPS) trafiğini etkiler.
+Derin paket incelemesinden kaçınarak TCP paket parçalanmasının boyutunu belirtir. Bu seçenek yalnızca güvenli (HTTPS) trafiğini etkiler.
 
 If this option is enabled, AdGuard splits the initial TLS packet (the ClientHello packet) into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole initial TLS packet.
 
-Geçerli değerler: 1–1500. If invalid size is specified, the value selected by the system will be used. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
+Geçerli değerler: 1–1500. Geçersiz boyut belirtilirse, sistem tarafından seçilen değer kullanılacaktır. Bu seçenek yalnızca *DPİ'den koru* Gizlilik Modu seçeneği etkinleştirildiğinde uygulanır.
 
-### Plain HTTP request fragment size
+### Düz HTTP istek parçası boyutu
 
-HTTP istek parçalanmasının boyutunu ayarlar. This option only affects plain HTTP traffic. If this option is enabled, AdGuard splits the initial packet into two parts: the first one has the specified length and the second one has the rest, up to the length of the whole original packet.
+HTTP istek parçalanmasının boyutunu ayarlar. Bu seçenek yalnızca düz HTTP trafiğini etkiler. Bu seçenek etkinleştirilirse, AdGuard ilk paketi iki parçaya böler: ilki belirtilen uzunluğa sahiptir ve ikincisi tüm orijinal paketin uzunluğuna kadar geri kalanına sahiptir.
 
-Geçerli değerler: 1–1500. If invalid size is specified, the value selected by the system will be used. This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
+Geçerli değerler: 1–1500. Geçersiz boyut belirtilirse, sistem tarafından seçilen değer kullanılır. Bu seçenek yalnızca *DPİ'den koru* Gizlilik Modu seçeneği etkinleştirildiğinde uygulanır.
 
-### Show QUIC
+### QUIC'i göster
 
-Allows displaying the QUIC protocol records in the filtering log. For blocked requests only.
+QUIC protokolü kayıtlarının filtreleme günlüğünde görüntülenmesine izin verir. Yalnızca engellenen istekler için.
 
-### Enable TCP keepalive
+### TCP keepalive'ı etkinleştir
 
-Periodically sends TCP packets over idle connection to ensure it is alive and to renew NAT timeouts. This option can be useful to bypass the strict network address translation (NAT) settings that some ISPs use.
+Etkin olduğundan emin olmak ve NAT zaman aşımlarını yenilemek için boşta olan bağlantı üzerinden periyodik olarak TCP paketleri gönderir. Bu seçenek, bazı İSS'lerin kullandığı katı ağ adresi dönüştürme (NAT) ayarlarını atlamak için yararlı olabilir.
 
-### TCP keepalive interval
+### TCP keepalive aralığı
 
-Here you can specify an idle time period, in seconds, before sending a keepalive probe. 0 belirtilirse, sistem tarafından seçilen değer kullanılacaktır.
+Burada, bir keepalive probu göndermeden önce saniye cinsinden boşta kalma süresini belirtebilirsiniz. 0 belirtilirse, sistem tarafından seçilen değer kullanılacaktır.
 
-:::note
+:::not
 
-This setting only works when the *Enable TCP keepalive* option is enabled.
-
-:::
-
-### TCP keepalive timeout
-
-Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. 0 belirtilirse, sistem tarafından seçilen değer kullanılacaktır.
-
-:::note
-
-This setting only works when the *Enable TCP keepalive* option is enabled.
+Bu ayar yalnızca *TCP keepalive'ı etkinleştir* seçeneği etkinleştirildiğinde çalışır.
 
 :::
 
-### Block Java
+### TCP keepalive zaman aşımı
 
-Some websites and web services still support Java Plug-Ins. The API that serves as the basis for Java plug-ins has serious security vulnerabilities. You can disable such plug-ins for security purposes. Nevertheless, even if you decide to use *Block Java* option, JavaScript will still be enabled.
+Burada, yanıt vermeyen bir eşe başka bir keepalive probu göndermeden önce geçen süreyi saniye cinsinden belirtebilirsiniz. 0 belirtilirse, sistem tarafından seçilen değer kullanılacaktır.
 
-### DNS server timeout period
+:::not
 
-Here you can specify the time in milliseconds that AdGuard will wait for the response from the selected DNS server before resorting to fallback. If you don’t fill in this field or enter an invalid value, the value of 5000 will be used.
+Bu ayar yalnızca *TCP keepalive'ı etkinleştir* seçeneği etkinleştirildiğinde çalışır.
 
-### Use HTTP/3 for DNS-over-HTTPS
+:::
 
-Enables HTTP/3 for DNS-over-HTTPS upstreams to accelerate connection if the selected upstream supports this protocol. This means that enabling this option does not guarantee that all DNS requests will be sent via HTTP/3.
+### Java'yı engelle
 
-### Use fallback DNS upstreams
+Bazı siteler ve web hizmetleri hâlâ Java Eklentilerini desteklemektedir. Java eklentilerine temel oluşturan API'nin ciddi güvenlik açıkları bulunmaktadır. Güvenlik amacıyla bu tür eklentileri devre dışı bırakabilirsiniz. Bununla birlikte, *Java'yı engelle* seçeneğini kullanmaya karar verseniz bile, JavaScript hâlâ etkin olacaktır.
+
+### DNS sunucusu zaman aşımı süresi
+
+Here you can specify the time in milliseconds that AdGuard will wait for the response from the selected DNS server before resorting to fallback. Bu alanı doldurmazsanız veya geçersiz bir değer girerseniz, 5000 değeri kullanılacaktır.
+
+### DNS-over-HTTPS için HTTP/3 kullan
+
+Seçilen üst kaynak bu protokolü destekliyorsa, bağlantıyı hızlandırmak amacıyla DNS-over-HTTPS üst kaynakları için HTTP/3'ü etkinleştirir. Bu, bu seçeneğin etkinleştirilmesinin tüm DNS isteklerinin HTTP/3 aracılığıyla gönderileceğini garanti etmediği anlamına gelir.
+
+### Yedek DNS üst kaynaklarını kullan
 
 Seçilen üst kaynaklara yönelik tüm DNS istekleri başarısız olursa, normal sorgular yedek kaynağa yönlendirilecektir.
 
-### Query DNS upstreams in parallel
+### DNS üst kaynaklarını paralel olarak sorgulama
 
-All upstreams will be queried in parallel and the first response is returned. Since DNS queries are made in parallel, enabling this feature increases the Internet speed.
+Tüm üst kaynaklar paralel olarak sorgulanacak ve ilk yanıt döndürülecektir. DNS sorguları paralel olarak yapıldığından bu özelliğin etkinleştirilmesi internet hızını artırır.
 
-### Always respond to failed DNS queries
+### Başarısız DNS sorgularına her zaman yanıt ver
 
-If address resolving failed on each of the forwarded upstreams, as well as on the fallback domains, then the response to the DNS request will be `SERVFAIL`.
+Yönlendirilen üst kaynakların her birinde ve yedek alan adlarında adres çözümlemesi başarısız olursa, DNS isteğine verilen yanıt `SERVFAIL` olacaktır.
 
-### Enable filtering of secure DNS requests
+### Güvenli DNS isteklerinin filtrelenmesini etkinleştir
 
-AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to plain DNS requests.
+AdGuard, düz DNS isteklerine ek olarak güvenli DNS isteklerini yerel DNS proxy'sine yönlendirir.
 
-### Blocking mode for hosts rules
+### hosts kuralları için engelleme modu
 
 Here you can select the way AdGuard will respond to domains blocked by DNS rules based on [hosts rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
 
-* Reply with “Refused” error
-* Reply with “NxDomain” error
-* Reply with a custom IP address
+- Reply with “Refused” error
+- Reply with “NxDomain” error
+- Reply with a custom IP address
 
-### Blocking mode for adblock-style rules
+### Reklam engelleme stili kuralları için engelleme modu
 
 Here you can select the way AdGuard will respond to domains blocked by DNS rules based on [adblock-style syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax).
 
-* Reply with “Refused” error
-* Reply with “NxDomain” error
-* Reply with a custom IP address
+- Reply with “Refused” error
+- Reply with “NxDomain” error
+- Reply with a custom IP address
 
 ### Özel IPv4 adresi
 
-hosts kuralları için Engelleme modunda veya reklam engelleme stili kuralları için Engelleme modunda Özel IP adresi seçilirse, bu IP adresi engellenen A isteklerine yanıt olarak döndürülür. If none are specified, AdGuard will reply with the default Refused error.
+hosts kuralları için Engelleme modunda veya reklam engelleme stili kuralları için Engelleme modunda Özel IP adresi seçilirse, bu IP adresi engellenen A isteklerine yanıt olarak döndürülür. Hiçbiri belirtilmezse, AdGuard varsayılan Refused hatasıyla yanıt verir.
 
 ### Özel IPv6 adresi
 
-hosts kuralları için Engelleme modunda veya reklam engelleme stili kuralları için Engelleme modunda Özel IP adresi seçilirse, bu IP adresi engellenen AAAA isteklerine yanıt olarak döndürülür. If none are specified, AdGuard will reply with the default "Refused" error.
+hosts kuralları için Engelleme modunda veya reklam engelleme stili kuralları için Engelleme modunda Özel IP adresi seçilirse, bu IP adresi engellenen AAAA isteklerine yanıt olarak döndürülür. Hiçbiri belirtilmezse, AdGuard varsayılan "Refused" hatasıyla yanıt verir.
 
 ### Yedek sunucular
 
-Here you can specify an alternate DNS server to which a DNS request will be rerouted if the main server fails to respond within the timeout period specified in the next section. There are three options to choose from:
+Here you can specify an alternate DNS server to which a DNS request will be rerouted if the main server fails to respond within the timeout period specified in the next section. Aralarından seçim yapabileceğiniz üç seçenek vardır:
 
-* Yedek sunucuları kullanmayın;
-* Use system default servers;
-* Use custom servers.
+- Yedek sunucuları kullanmayın;
+- Sistem varsayılan sunucularını kullanın;
+- Özel sunucular kullan.
 
-### Block ECH
+### ECH'yi engelle
 
 If enabled, AdGuard strips Encrypted Client Hello parameters from responses.
 
-### List of custom fallback servers
+### Özel yedek sunucuların listesi
 
-If you want AdGuard to use custom fallback servers, list them in this section, one per line.
+AdGuard'ın özel yedek sunucular kullanmasını istiyorsanız, bunları bu bölümde her satıra bir tane gelecek şekilde listeleyin.
 
-### List of custom bootstrap addresses
+### Özel önyükleme adresleri listesi
 
-A bootstrap is an intermediate DNS server used to get the IP address of the secure DNS server you chose earlier in *DNS protection*. Such a "middle ground" is needed when using protocols that denote the server address by letters (such as DNS-over-TLS, for example). In this case, the bootstrap acts as a translator, transforming the letters into numbers your system can understand.
+Önyükleme, daha önce *DNS koruması* içinde seçtiğiniz güvenli DNS sunucusunun IP adresini almak için kullanılan bir ara DNS sunucusudur. Sunucu adresini harflerle belirten protokoller (örneğin, DNS-over-TLS gibi) kullanılırken böyle bir "orta yol" gereklidir. Bu durumda, önyüklemeyi bir çevirmen görevi görerek harfleri sisteminizin anlayabileceği sayılara dönüştürür.
 
-By default, the system DNS resolver is used, and the initial bootstrap request is made through port 53. If this does not suit you, list here the IP addresses of the DNS servers that will be used to determine the address of the encrypted DNS server in the top-to-bottom order. The specified IP addresses will be applied in the order listed. If you specify invalid addresses, or no addresses at all, the system IPs will be used.
+Varsayılan olarak sistem DNS çözümleyicisi kullanılır ve ilk önyükleme isteği bağlantı noktası 53 aracılığıyla yapılır. Eğer bu size uymuyorsa, şifrelenmiş DNS sunucusunun adresini belirlemek için kullanılacak DNS sunucularının IP adreslerini yukarıdan aşağıya doğru listeleyin. Belirtilen IP adresleri listelenen sıraya göre uygulanacaktır. Geçersiz adres belirtirseniz veya hiç adres belirtmezseniz sistem IP'leri kullanılacaktır.
 
-### DNS exclusions
+### DNS istisnaları
 
-All DNS requests to domains listed here will be redirected to the system default DNS server instead of the DNS server specified in the app’s settings. Also, DNS blocking rules will not be applied to such requests.
+Burada listelenen alan adlarına yapılan tüm DNS istekleri, uygulamanın ayarlarında belirtilen DNS sunucusu yerine sistemin varsayılan DNS sunucusuna yönlendirilecektir. Ayrıca, DNS engelleme kuralları bu tür isteklere uygulanmayacaktır.
 
-### Exclude specified Wi-Fi networks names (SSIDs) from the DNS filtering
+### Belirtilen Wi-Fi ağ adlarını (SSID'ler) DNS filtrelemesinden hariç tut
 
-DNS koruması, bu bölümde listelenen Wi-Fi ağlarını kapsamaz. Specify Wi-Fi networks names (SSIDs) one per line. This can be useful if a particular Wi-Fi network is already protected by AdGuard Home or another DNS protection system. In this case, it is superfluous to filter DNS requests again.
+DNS koruması, bu bölümde listelenen Wi-Fi ağlarını kapsamaz. Wi-Fi ağ adlarını (SSID'leri) her satıra bir tane belirtin. Belirli bir Wi-Fi ağı AdGuard Home veya başka bir DNS koruma sistemi tarafından zaten korunuyorsa bu yararlı olabilir. Bu durumda DNS isteklerini tekrar filtrelemek gereksizdir.

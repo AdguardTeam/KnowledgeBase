@@ -1,24 +1,24 @@
 ---
-title: How to collect AdGuard installation logs
+title: AdGuard kurulum günlükleri nasıl toplanır
 sidebar_position: 4
 ---
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Windows için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Windows için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
-If any problems occur during the installation of AdGuard, the support team might ask you to collect and send them AdGuard installation logs. In this case you need to:
+AdGuard kurulumu sırasında herhangi bir sorun oluşursa, destek ekibi sizden AdGuard kurulum günlüklerini toplamanızı ve göndermenizi isteyebilir. In this case you need to:
 
 1. Select *Run* command in Start menu or press *Win + R* on the keyboard.
 
-2. Type in *%tmp%* and click *OK*.
+1. *%tmp%* yazın ve *Tamam* öğesine tıklayın.
 
-![Open temp folder *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/install-logs-1.png)
+    ![Temp klasörünü aç *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/install-logs-1.png)
 
-2. In the opened folder select all files starting with `Adguard` and add them to archive (using WinRAR or any other archiving software).
+1. Açılan klasörde `Adguard` ile başlayan tüm dosyaları seçin ve arşive ekleyin (WinRAR veya başka bir arşivleme yazılımı kullanarak).
 
-![AdGuard installation log files *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/install-logs-2.png)
+    ![AdGuard kurulum günlük dosyaları *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/install-logs-2.png)
 
-3. Send this archive to AdGuard tech support at **support@adguard.com**.
+1. Bu arşivi **support@adguard.com** adresinden AdGuard teknik desteğine gönderin.

@@ -5,7 +5,7 @@ sidebar_position: 7
 
 :::info
 
-Este artigo aborda o AdGuard para Android, um bloqueador de anúncios multifuncional que protege o seu dispositivo ao nível do sistema. Para ver como funciona, [descarregue a aplicação AdGuard](https://adguard.com/download.html?auto=true)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -17,13 +17,13 @@ One of the most popular questions users ask us is: 'Is it possible to block ads 
 
 1. Open the YouTube app and start the video you want to watch.
 
-2. Tap the *Share* button.
+1. Tap the *Share* button.
 
-![Share to YouTube step 1 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step1.png)
+    ![Share to YouTube step 1 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step1.png)
 
-3. Select *AdGuard* from the list of apps.
+1. Select *AdGuard* from the list of apps.
 
-![Share to YouTube step 2 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step2.png)
+    ![Share to YouTube step 2 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step2.png)
 
 That's it! A new window with the video will open where you'll be able to watch it without being interrupted by ads.
 

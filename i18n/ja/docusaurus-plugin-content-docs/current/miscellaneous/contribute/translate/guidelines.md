@@ -27,60 +27,61 @@ You can also change the Crowdin interface language by clicking the *Settings* ic
 
 **以下のガイドラインを参考にしてください。**
 
-1. このボタンをクリックすると、あらゆるオプションを使って翻訳したいものをフィルタリングすることができます。
+1. You can filter translations by clicking this button and selecting any offered option.
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/filter.png)
+    ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/filter.png)
 
-2. プロジェクトのファイル間を簡単に移動することができます。
+1. Easily move between the files of the project.
 
-![crowdin *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/filter_files.png)
+    ![crowdin *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/filter_files.png)
 
-3. ソースフレーズの中で、点線で強調されている用語に注目してください。 通常、翻訳してはいけない特殊な言葉（ブランド名など）がそのように強調されています。
+1. Pay attention to the glossary terms highlighted with a dotted line in a source phrase. Usually, they are special words (like brand names) that should not be translated.
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/terms.png)
+    ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/terms.png)
 
-[AdGuard Glossary](https://crowdin.com/project/adguard-glossary)プロジェクトでは、翻訳可能な用語に対して翻訳を提案することができます。
+    You can suggest your translation for translatable terms in the [AdGuard Glossary](https://crowdin.com/project/adguard-glossary) project.
 
-4. Crowdinでは、文字列に、フレーズの理解や翻訳を容易にするメモが付いていたりします。 ソース文字列の「Context」欄で確認してください。
+1. In Crowdin, strings can have notes that make it easier to understand and translate phrases. Look for them in the "Context" field of the source string.
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/context-note.png)
+    ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/context-note.png)
 
-5. 「Context」欄には、ソースフレーズと一緒によく出てくるスクリーンショットにも注目してください。 文脈を理解し、翻訳でより正確な意味を伝えるのに役立ちます。
+1. Note that source strings may also have screenshots in the Context section. They help to understand the context and convey the exact meaning.
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/screenshot.png)
+    ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/screenshot.png)
 
-:::tip
+    :::tip
 
-You can request context by clicking the "REQUEST" button.
+    You can request context by clicking the "REQUEST" button.
+
 
 :::
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/request.png)
+    ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/request.png)
 
-6. 新しい翻訳を提案するだけでなく、文字列に対してコメントを書くことも可能です。 コメント欄には、誤訳の指摘、メモ、質問などを書き込んでください。 もし、あなたの翻訳に対してコメントが残されているのを見かけたら、できれば返信するようにしてください。
+1. In addition to suggesting new translations, you can also leave comments on strings. Use comments to let us know about mistakes in the source text or existing translations, make notes, or ask questions. If you see a comment left on your translation — try to respond to it.
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/comments.png)
+    ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/comments.png)
 
-また、メインプロジェクトのページには、 **Discussions** タブがあり、このプロジェクトの特定の言語に対するすべてのコメントを見ることができる便利なものです。
+    There's also a **Discussions** tab on the main project page that conveniently allows you to see all the comments for the specific language in this project.
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/discussions.png)
+    ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/discussions.png)
 
-7. Crowdinは、 _Translation Memory_という非常に便利で有用なツールを提供しています。 同じ単語やフレーズに対して過去に作られた翻訳を探し出し、翻訳に再利用することができます。
+1. Crowdin provides a very useful and convenient tool called *Translation Memory*. With its help, you can find the previously made translations of the same words and phrases and reuse them in your translations.
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/tm.png)
+    ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/tm.png)
 
-8. 「Join」ボタンをクリックしてプロジェクトに参加すると、プロジェクトページに **Tasks** タブが表示されます。このタブには、特定のプロジェクトファイルに対するタスクが作成されます。 _これらのタスクは通常、優先順位が高いので、注目してください。_
+1. Once you join a project by clicking the "Join" button, you will see the **Tasks** tab on the project page, where the tasks for specific project files get created. *Please pay attention to them: they usually have a higher priority.*
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/tasks.png)
+    ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/tasks.png)
 
-9. 複数形のあるフレーズを見つける場合があります。 このようなフレーズを翻訳する場合は、特に注意してください。 複数形の訳し方については[こちら](../plural-forms)にて詳しくご確認いただけます。
+1. Sometimes you can find phrases with plural forms. Please be especially attentive when translating such phrases. You can read how to translate plural forms [here](../plural-forms).
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/plurals.png)
+    ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/plurals.png)
 
-複数形を正しく扱うことは非常に重要です。不明な点があれば、ぜひコメントでお尋ねください。
+    Using proper plural forms is extremely important:  please ask us in the comments if anything is unclear.
 
-10. **Project infoに記載されているプロジェクトマネージャーや校正者に直接メッセージを送ることはご遠慮ください。**
+1. **Please do not write directly to the project managers and proofreaders listed in the Project info.**
 
-翻訳に関するご質問は、いつでもコメントを通じて校正者や管理者にお尋ねください。
+    If you have questions about translations, you can always ask our proofreaders or admins through comments.
 
-また、翻訳に関するご質問は、 [translate@adguard.com](mailto:translate@adguard.com) にメールを送るか、もしくは [Telegramチャット](https://t.me/joinchat/UVYTLcHbr8JmOGIy) で尋ねることが可能です。 担当者ができるだけ早く回答いたします。
+    Also, you can send an email to [translate@adguard.com](mailto:translate@adguard.com) or ask a question in the [Telegram chat](https://t.me/joinchat/UVYTLcHbr8JmOGIy). The Admins will answer you as soon as possible.

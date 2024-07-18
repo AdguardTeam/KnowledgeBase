@@ -9,11 +9,11 @@ Nous avons écrit cet article pour éviter toute confusion et expliquer en déta
 
 Initialement, les licences des types suivants étaient disponibles pour activer les produits AdGuard :
 
-**Standard** — pour les applications de bureau AdGuard pour Windows/AdGuard pour Mac
+La licence **Standard** était conçue pour les applications de bureau AdGuard pour Windows et AdGuard pour Mac
 
-**Mobile** - pour les applications mobiles AdGuard pour Android/AdGuard pour iOS
+La licence **Mobile** était conçue pour les applications mobiles AdGuard pour Android et AdGuard pour iOS
 
-**Premium** - une licence qui combine bureau + application mobile
+La licence **Premium** était une licence qui combinait les applications bureau et mobiles
 
 Les licences Standard et Mobile peuvent être achetées pour 1 à 9 appareils.
 
@@ -27,7 +27,7 @@ Pour tous les types de licences (Standard, Mobile, Premium), il y avait des opti
 
 En octobre 2019, AdGuard est passé au nouveau système de licences : à partir de ce moment, les licences peuvent toujours être achetées pour 1 an ou À vie, mais leurs types sont devenus **Personnel** (jusqu'à 3 appareils) ou **Famille** (jusqu'à 9 dispositifs).
 
-Un autre changement : les **clefs de licence du nouveau type peuvent désormais être utilisées sur n'importe quel appareil, dans n'importe quelle combinaison. Par exemple, une licence Personnelle peut être installée sur Android, Mac et iOS, comme sur deux ordinateurs Windows et une tablette Apple, etc.**
+Un autre changement : les **clefs de licence du nouveau type peuvent désormais être utilisées sur n'importe quel appareil, dans n'importe quelle combinaison. Par exemple, une licence Personnelle peut être utilisée sur Android, Mac et iOS, comme sur deux ordinateurs Windows et une tablette Apple, etc.**
 
 ## Qu'arrive-t-il aux licences obsolètes ?
 

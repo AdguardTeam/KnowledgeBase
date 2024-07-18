@@ -1,36 +1,38 @@
 ---
-title: What can be done in the AdGuard Account
+title: AdGuard アカウントでできること
 sidebar_position: 2
 ---
 
-In your account, you can manage your licenses, devices bound to them, personal data, email and password, view purchases and contact support.
+アカウントでは、ライセンス、ライセンスにバインド（紐付け）されているデバイス、個人情報、メールアドレス、パスワードを管理したり、購入履歴の確認やサポートへのお問い合わせができます。
 
-## Manage account settings
+## AdGuard アカウント設定の管理
 
-In the *Settings* section of your AdGuard account, you can update or reset your password, change your email address, enable [two-factor authentication](../2fa), view the data stored about you by AdGuard and choose the language of your personal account and notifications.
+AdGuard アカウントの「*設定*」セクションで、パスワードの更新またはリセット、メールアドレスの変更、 [二要素認証](../2fa)の有効化、AdGuard が保存するお客様のデータの表示、アカウントおよび通知の言語の選択を行うことができます。
 
-In this section, you can also manage your email preferences:
-* receive transactional emails,
-* receive AdGuard’s monthly newsletters,
-* receive emails about AdGuard special offers and promotions,
-* send read receipts to AdGuard when you open emails.
+また、このセクションでは、AdGuardからのメール配信設定を管理することもできます:
 
-## Manage licenses
+- トランザクションメール（購入完了通知、ライセンスの有効期限に関する通知など）の受け取り
+- AdGuardの月刊ニュースレターの受け取り
+- AdGuardのキャンペーンやスペシャルオファーに関するメールの受け取り
+- メールを開封したことをAdGuardに知らせるか知らせないかを設定
 
-In the *Licenses* section, you can manage your licenses and the devices bound to them.
+## ライセンスを管理
 
-[AdGuard licenses](../../license/what-is) can be:
-* bound and unbound,
-* extended,
-* upgraded,
-* canceled. You can also update your payment details.
+「*ライセンス*」セクションでは、ライセンスとそれにバインド（紐付け）されているデバイスを管理できます。
 
-The devices bound to your AdGuard Ad Blocker licenses can be unbound or renamed. You can unbind unused devices by clicking the cross icon next to them.
+[AdGuardライセンス](../../license/what-is)に対してできること:
 
-## View purchases
+- デバイスに紐付けする・紐付けを解除する
+- 更新・延長
+- アップグレード
+- 解約 お支払い方法と情報を変更することもできます。
 
-The Purchase history section displays all the licenses that you have ever purchased using the email account you registered your AdGuard account with. You will also find there information about the date of purchase, order number, payment method and cost of the purchase.
+AdGuard 広告ブロッカーライセンスにバインド（紐付け）されているデバイスは、バインド（紐付け）を解除したり、デバイス名を変更したりできます。 いらないデバイスの横にある✖️アイコンをクリックすると、バインド（紐付け）を解除できます。
 
-## Contact support
+## ご購入履歴
 
-The Support tab contains useful links to help you solve problems or find answers to your questions about AdGuard products. They are divided into six sections: FAQ, Send a bug repot/feature request, Report incorrect blocking, Contact support, Knowledge base and Discuss.
+「ご購入履歴」セクションには、AdGuard アカウントの登録時メールアドレスを使用して購入したすべてのライセンスが表示されます。 また、購入日、オーダー番号、支払い方法、購入金額に関する情報も掲載されています。
+
+## サポート・お問い合わせ
+
+「サポート」タブには、AdGuard 製品に関する問題を解決したり、よくあるご質問への回答を見つけたりするのに役立つリンクが含まれています。 6つのセクションがあります：「よくあるご質問（FAQ）、バグ報告・機能リクエストを送る、不適切なブロックを報告、サポート・お問い合わせ、ナレッジベース、意見交換

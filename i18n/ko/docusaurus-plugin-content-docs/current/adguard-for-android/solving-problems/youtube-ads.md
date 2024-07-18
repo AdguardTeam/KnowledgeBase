@@ -3,9 +3,9 @@ title: How to block ads in the YouTube app
 sidebar_position: 7
 ---
 
-:::info
+:::정보
 
-이 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Android용 AdGuard에 대해 다룹니다. 어떻게 동작하는지 알고 싶으시다면 [AdGuard 앱을 다운로드](https://adguard.com/download.html?auto=true) 해 보세요.
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -17,15 +17,15 @@ sidebar_position: 7
 
 1. Open the YouTube app and start the video you want to watch.
 
-2. Tap the *Share* button.
+1. Tap the *Share* button.
 
-![Share to YouTube step 1 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step1.png)
+    ![Share to YouTube step 1 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step1.png)
 
-3. Select *AdGuard* from the list of apps.
+1. Select *AdGuard* from the list of apps.
 
-![Share to YouTube step 2 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step2.png)
+    ![Share to YouTube step 2 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step2.png)
 
-끝! 광고 없이 동영상을 볼 수 있는 새 창이 열립니다.
+That's it! A new window with the video will open where you'll be able to watch it without being interrupted by ads.
 
 ## Watch YouTube in a browser
 

@@ -5,7 +5,7 @@ sidebar_position: 5
 
 :::info
 
-Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -13,7 +13,7 @@ Tento článek popisuje AdGuard pro macOS, multifunkční blokátor reklam, kter
 
 Během instalace se můžete setkat s touto chybou:
 
-![Obrazovka s chybou instalace](https://cdn.adtidy.org/content/kb/ad_blocker/mac/macerrorscreenEN.jpg)
+![Installation error screen](https://cdn.adtidy.org/content/kb/ad_blocker/mac/macerrorscreenEN.jpg)
 
 Pro vyřešení problému postupujte podle těchto pokynů:
 

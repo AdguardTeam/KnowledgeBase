@@ -13,11 +13,7 @@ Pokud máte podezření, že je váš počítač napaden malwarem nebo viry, mů
 
 ## Bezplatné antivirové nástroje {#free-antivirus}
 
-Existuje jich celá řada a můžete použít libovolný z nich, např.:
-
-[Dr.Web CureIt!](http://www.freedrweb.com/cureit/?lng=en)
-
-Pokud tato kontrola antivirovými nástroji nic neodhalila, ale počítač se stále chová podezřele, zkuste jej otestovat na adware, který může implementovat svou reklamu na všechny otevřené stránky.
+Existuje jich celá řada a můžete použít libovolný z nich. Pokud tato kontrola antivirovými nástroji nic neodhalila, ale počítač se stále chová podezřele, zkuste jej otestovat na adware, který může implementovat svou reklamu na všechny otevřené stránky.
 
 ## Jak vyčistit systém od adware {#adware}
 
@@ -25,21 +21,21 @@ Na internetu lze najít mnoho aplikací, které jsou zaměřeny na boj s tímto 
 
 Jako příklad uveďme AdwareCleaner. Po stažení a úspěšné instalaci aplikace proveďte následující kroky:
 
-1) Spusťte aplikaci a klikněte na **Skenovat nyní**.
+1. Spusťte aplikaci a klikněte na **Skenovat nyní**.
 
 ![adware1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware1.png)
 
-2) Po dokončení kontroly je třeba odeslat podezřelé objekty do **Karantény**.
+1. Po dokončení kontroly je třeba odeslat podezřelé objekty do **Karantény**.
 
 ![adware2 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware2.png)
 
-3) Když se položky přesunou do **Karantény**, budete moci **Vymazat systém** od zbytečného smetí.
+1. Když se položky přesunou do **Karantény**, budete moci **Vymazat systém** od zbytečného smetí.
 
-4) V některých případech může být po dokončení čištění nutné **Restartovat systém**.
+1. V některých případech může být po dokončení čištění nutné **Restartovat systém**.
 
 ![adware3 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware3.png)
 
-5) Po restartování systému bude čištění dokončeno. V případě potřeby si můžete vždy přečíst **Hlášení** o provedené práci.
+1. Po restartování systému bude čištění dokončeno. V případě potřeby si můžete vždy přečíst **Hlášení** o provedené práci.
 
 ![adware4 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware4.png)
 
@@ -53,11 +49,11 @@ Dále na této stránce popíšeme pokyny k odstranění některých nejčastěj
 
 Níže jsou uvedeny pokyny, jak zakázat nastavení a rozšíření pro nejoblíbenější prohlížeče:
 
-* [pro Google Chrome](https://support.google.com/chrome/answer/187443?hl=en)
+- [pro Google Chrome](https://support.google.com/chrome/answer/187443?hl=en)
 
-* [pro Mozilla Firefox](https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons)
+- [pro Mozilla Firefox](https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons)
 
-* [pro Operu](https://help.opera.com/en/latest/customization/#extensions)
+- [pro Operu](https://help.opera.com/en/latest/customization/#extensions)
 
 ## Jak znovu vytvořit zástupce pro prohlížeče {#shortcuts}
 

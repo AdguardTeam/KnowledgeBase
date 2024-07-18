@@ -13,10 +13,14 @@ To create an account, go to [AdGuard's official website](https://adguard.com/wel
 
 :::tip
 
-If you enter your email address while purchasing a license or receive a license accociated with your email address as a gift, an account will be created automatically. To set a password, you can follow a link from a transactional or gift letter. You can also register with the above method.
+If you enter your email address when purchasing a license, or receive a license linked to your email address as a gift, an account will be created automatically. To set a password, you can follow a link from a transactional or gift letter. You can also register with the above method.
 
 :::
 
 An account can also be created directly in an AdGuard app. Press the *Log in* or *Activate* button (it can be found in the *License* section or on a separate screen), enter your email and create a password.
 
 After the account is created, activate it by following the link in the activation email.
+
+## How to create an account via a social network
+
+To create an account via a social network, simply follow the [link](https://auth.adguard.com/login.html) and log in to your account. Once you’ve signed up, check your inbox — there’ll be a confirmation email. Set a password and that’s it! Now you can use all the [features of the AdGuard account](https://adguard.com/kb/general/account/features/).

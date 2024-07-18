@@ -5,7 +5,7 @@ sidebar_position: 10
 
 :::info
 
-Este artigo aborda o AdGuard para Android, um bloqueador de anúncios multifuncional que protege o seu dispositivo ao nível do sistema. Para ver como funciona, [descarregue a aplicação AdGuard](https://adguard.com/download.html?auto=true)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -15,7 +15,7 @@ In this article you will find the methods on how to solve problems with AdGuard 
 
 On Android 9 and later, if AdGuard is installed for more than one user profile on your device, you may encounter problems when uninstalling the app. When you uninstall AdGuard from one user profile, the app will still appear on the app list, but you won't be able to uninstall or reinstall it. This happens because AdGuard is installed for a different user profile on the device.
 
-If you try to reinstall AdGuard after an unsuccessful removal attempt, you will see the error message "You can't install the app on your device".
+If you try to reinstall AdGuard after an unsuccessful removal attempt, you will see the error message “You can't install the app on your device”.
 
 To solve this problem, you need to uninstall the application for all users: go to Settings → All apps → AdGuard. Tap the three-dot menu in the top right corner and select *Uninstall for all users*.
 
@@ -38,28 +38,35 @@ This approach is available starting from **AdGuard v3.5 nightly 6**. If you're u
 :::
 
 1. Activate the **developer mode** and enable **USB debugging**:
-- Open the **Settings** app phone;
-- Go to **System** section (last item in the settings menu). In this section, find the sub-item **About phone**;
-- Tap the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
-- Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
 
-:::note
+    - Open the **Settings** app phone;
+    - Go to **System** section (last item in the settings menu). In this section, find the sub-item **About phone**;
+    - Tap the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
+    - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
 
-If you have any difficulties or additional questions, full instructions can be found [here](https://developer.android.com/studio/debug/dev-options).
+    :::note
+
+    If you have any difficulties or additional questions, full instructions can be found [here](https://developer.android.com/studio/debug/dev-options).
+
 
 :::
 
-2. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
-3. Connect your device using a **USB cable** to the computer or laptop on which you installed **ADB**;
-4. Open **the command line** on your PC:
-- **Cmd.exe** if you are using **Windows**;
-- **Terminal** if you are using **macOS**;
-5. Enter the command `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` and press **Enter**.
+1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+
+1. Connect your device using a **USB cable** to the computer or laptop on which you installed **ADB**;
+
+1. Open **the command line** on your PC:
+
+    - **Cmd.exe** if you are using **Windows**;
+    - **Terminal** if you are using **macOS**;
+
+1. Enter the command `adb shell pm grant com.adguard.android android.permission.INTERACT_ACROSS_USERS` and press **Enter**.
 
 ### Option 2: Remove *restricted user account*
 
 About how to manage user accounts from an Android device you can [find here](https://support.google.com/a/answer/6223444?hl=en).
-> :::note
+
+:::note
 
 In some cases restricted user accounts are created implicitly and cannot be removed. For instance, when you use Dual messenger or Dual app features on **Samsung** or **LG** devices. You can read below how to fix the issue in these cases.
 
@@ -78,7 +85,7 @@ Owners of **LG** or **Samsung** phones may also encounter a similar issue. It ca
 - Open **Settings**;
 - Press **Advanced**;
 - Scroll down and press **Dual messenger**;
-- Disable the **Dual messenger** for all applications;
+- Disable the **Dual messenger** for all apps;
 - Lock the device for 5 minutes;
 - Unlock the screen and try again to create the VPN profile.
 
@@ -87,7 +94,5 @@ Owners of **LG** or **Samsung** phones may also encounter a similar issue. It ca
 - Open **Settings**;
 - Choose **General** tab;
 - Scroll down and press **Dual app**;
-- Remove all applications from the list;
+- Remove all apps from the list;
 - Reboot your device.
-
-

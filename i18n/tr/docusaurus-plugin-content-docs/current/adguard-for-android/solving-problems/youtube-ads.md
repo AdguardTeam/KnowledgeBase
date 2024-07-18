@@ -1,32 +1,32 @@
 ---
-title: How to block ads in the YouTube app
+title: YouTube uygulamasında reklamlar nasıl engellenir
 sidebar_position: 7
 ---
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Android için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
-One of the most popular questions users ask us is: 'Is it possible to block ads in YouTube on Android?'. Due to the technical restrictions of the Android OS, there is no way to *completely* remove ads from the YouTube app. But we've found an alternative that brings you to it as close as possible, while getting around the Android-imposed restrictions.
+Kullanıcıların bize sorduğu en popüler sorulardan biri: "Android'de YouTube'da reklamları engellemek mümkün mü?". Due to the technical restrictions of the Android OS, there is no way to *completely* remove ads from the YouTube app. But we've found an alternative that brings you to it as close as possible, while getting around the Android-imposed restrictions.
 
 ## AdGuard uygulamasında YouTube izleyin
 
-![Instruction *mobile](https://cdn.adtidy.org/public/Adguard/Blog/Android/3-6/share.gif)
+![Talimat *mobile](https://cdn.adtidy.org/public/Adguard/Blog/Android/3-6/share.gif)
 
 1. YouTube uygulamasını açın ve izlemek istediğiniz videoyu başlatın.
 
-2. *Paylaş* düğmesine dokunun.
+1. *Paylaş* düğmesine dokunun.
 
-![YouTube'da paylaşın 1. adım *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step1.png)
+    ![Share to YouTube step 1 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step1.png)
 
-3. Uygulamalar listesinden *AdGuard* öğesini seçin.
+1. Uygulamalar listesinden *AdGuard* öğesini seçin.
 
-![YouTube'da paylaşın 2. adım *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step2.png)
+    ![Share to YouTube step 2 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step2.png)
 
 Bu kadar! A new window with the video will open where you'll be able to watch it without being interrupted by ads.
 
 ## YouTube'u bir tarayıcıda izleyin
 
-Alternatif olarak, YouTube'u bir tarayıcıda da izleyebilirsiniz ve AdGuard'ı yüklediyseniz ve etkinleştirdiyseniz hiçbir reklam olmayacaktır.
+Alternatively, you can also watch YouTube in a browser and there will be no ads if you have AdGuard installed and enabled.

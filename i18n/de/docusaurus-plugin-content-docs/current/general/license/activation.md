@@ -3,13 +3,11 @@ title: Lizenz aktivieren
 sidebar_position: 3
 ---
 
-## How to activate a license
-
 Um Ihre Lizenz zu aktivieren, gehen Sie zum Abschnitt *Lizenz* Ihres AdGuard-Produkts und suchen Sie das Feld *Anmelden* oder die Schaltfläche *Aktivieren* . Verwenden Sie die E-Mail und das Passwort Ihres AdGuard-Kontos, um sich anzumelden. Wenn Sie noch kein Konto haben, wird Ihnen angeboten, eines zu erstellen.
 
 :::note
 
-To activate a license via the AdGuard account, a valid license with at least one free slot is required. If your license is already used on a maximum number of devices, you can [upgrade it](../payment-options#upgrade) or [transfer it from one device to another](../transfer).
+Um eine Lizenz über das AdGuard-Konto zu aktivieren, ist eine gültige Lizenz mit mindestens einem freien Slot erforderlich. Wenn Ihre Lizenz bereits auf einer maximalen Anzahl von Geräten verwendet wird, können Sie die Lizenz [erweitern](../payment-options#upgrade) oder [von einem Gerät auf ein anderes übertragen](../transfer).
 
 :::
 
@@ -17,88 +15,64 @@ Alternativ können Sie auch einen [Lizenzschlüssel](../what-is#license-key) ver
 
 **Nachstehend finden Sie eine schrittweise Anleitung zur Aktivierung für jede Plattform.**
 
-### Aktivieren von AdGuard für Windows
+### AdGuard für Windows aktivieren
 
-1. Öffnen Sie die AdGuard-App
+1. Klicken Sie im Bildschirm mit der abgelaufenen Lizenz auf *Aktivieren*.
 
-To do it, double-click the AdGuard icon on the desktop:
+    ![Bildschirm für abgelaufene Lizenzen *border](https://cdn.adtidy.org/blog/new/eapwtexp.png)
 
-![AdGuard-Symbol auf dem Desktop](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowsEn.png)
+    Alternativ dazu wählen Sie *Lizenz* in der oberen rechten Ecke des Hauptbildschirms und klicken auf *Aktivieren*.
 
-or double-click the AdGuard icon in the system tray:
+    ![Hauptbildschirm *border](https://cdn.adtidy.org/blog/new/ca313hmain-screen.png)
 
-![AdGuard-Symbol in der Taskleiste](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windows2En.png)
+    ![Lizenzbildschirm *border](https://cdn.adtidy.org/blog/new/n7nkclicense-screen.png)
 
-2. Gehen Sie im Menü der App auf die Registerkarte **Lizenz** und klicken Sie auf **Lizenz aktivieren**
+1. Aktivieren Sie Ihre Lizenz mit der von Ihnen bevorzugten Methode. Wenn die Lizenz an Ihre E-Mail-Adresse gebunden ist, klicken Sie auf *AdGuard Konto* oder wählen Sie ein soziales Netzwerk aus, das mit dieser E-Mail-Adresse verbunden ist. Alternativ können Sie auch Ihren Lizenzschlüssel eingeben.
 
-![Auf „Lizenz aktivieren“ klicken](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowslicense1en.png)
+    ![Aktivieren einer Lizenz *border](https://cdn.adtidy.org/blog/new/lnzz5activate-license.png)
 
-3. Es werden Ihnen zwei Optionen zum Aktivieren angeboten:
+### AdGuard für Mac aktivieren
 
-- Durch Eingabe von **E-Mail** und **Passwort** von Ihrem **AdGuard-Konto** (oder von Ihrem Facebook-, Google- oder Apple-Konto)
+1. Klicken Sie im Bildschirm mit der abgelaufenen Lizenz auf *Aktivieren*.
 
-![Beim AdGuard-Konto anmelden](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowslicense2en.png)
+    ![Bildschirm für abgelaufene Lizenzen *mobile_border](https://cdn.adtidy.org/blog/new/o9bhtexpired-screen.png)
 
-- Über die Eingabe eines **Lizenzschlüssels**
+    Alternativ können Sie auch auf das Zahnradsymbol im AdGuard-Menü klicken und dann auf *Lizenz*.
 
-![Lizenzschlüssel eingeben](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowslicense3en.png)
+    ![Präferenzen *border](https://cdn.adtidy.org/blog/new/xuyqmpreferences.png)
 
-### Aktivieren von AdGuard für Mac
+1. Klicken Sie im geöffneten Fenster auf *Aktivieren*.
 
-1. Öffnen Sie die AdGuard-App (klicken Sie auf das AdGuard-Symbol in der Menüleiste)
+    ![Lizenzbildschirm *border](https://cdn.adtidy.org/blog/new/8rbc8license-screen.png)
 
-![AdGuard-Symbol in der Menüleiste](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/mac1.png)
+1. Aktivieren Sie Ihre Lizenz mit der von Ihnen bevorzugten Methode. Wenn die Lizenz an Ihre E-Mail-Adresse gebunden ist, klicken Sie auf *AdGuard Konto* oder wählen Sie ein soziales Netzwerk aus, das mit dieser E-Mail-Adresse verbunden ist. Alternativ können Sie auch Ihren Lizenzschlüssel eingeben.
 
-2. Klicken Sie auf **das Zahnradsymbol** in der oberen rechten Ecke.
-3. Klicken Sie auf **Lizenz...**
+    ![Aktivieren einer Lizenz *border](https://cdn.adtidy.org/blog/new/tws3jkactivate-license.png)
 
-![Go to Settings and License *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/macEn.png)
+### AdGuard für Android aktivieren
 
-4. Drücken Sie im geöffneten Fenster die Schaltfläche **Aktivieren**
+1. Tippen Sie auf *Einstellungen* und wählen Sie dann *Lizenz*.
 
-![„Aktivieren“ drücken](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/maclicenseen1.png)
+    ![Bildschirm Einstellungen *mobile_border](https://cdn.adtidy.org/blog/new/sbdcysettings.png)
 
-5. Es werden Ihnen zwei Optionen zun Aktivieren angeboten:
-- Durch Eingabe von **E-Mail** und **Passwort** von Ihrem **AdGuard-Konto** (oder von Ihrem Facebook-, Google- oder Apple-Konto)
+1. Tippen Sie auf *Lizenz aktivieren*.
 
-![Beim AdGuard-Konto anmelden](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/maclicenseen2.png)
+    ![Lizenzbildschirm *mobile_border](https://cdn.adtidy.org/blog/new/04fs1license-screen.png)
 
-- Über die Eingabe eines **Lizenzschlüssels**
+1. Aktivieren Sie Ihre Lizenz mit der von Ihnen bevorzugten Methode. Wenn die Lizenz an Ihre E-Mail-Adresse gebunden ist, tippen Sie auf *Mit E-Mail anmelden* oder wählen Sie ein mit dieser E-Mail-Adresse verknüpftes soziales Netzwerk aus. Alternativ können Sie auch Ihren Lizenzschlüssel eingeben.
 
-![Lizenzschlüssel zum Aktivieren eingeben](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/maclicenseen3.png)
+    ![Aktivieren einer Lizenz *mobile_border](https://cdn.adtidy.org/blog/new/sbxttactivate-license.png)
 
-### Aktivieren von AdGuard für Android
+### AdGuard für iOS aktivieren
 
-1. Öffnen Sie die AdGuard-App
-2. Tippen Sie auf das Menüsymbol **(☰)** in der oberen linken Ecke des Bildschirms.
-3. Tippen Sie auf die Leiste **Premium abrufen** (oder auf **Lizenzstatus**)
+1. Tippen Sie auf *Einstellungen* und wählen Sie dann *Lizenz*.
 
-![Auf „Premium- oder Lizenzstatus abrufen“ tippen *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/androidlicense1en.png)
+    ![Bildschirm Einstellungen *mobile_border](https://cdn.adtidy.org/blog/new/uf8f1fsettings.png)
 
-4. Tippen Sie auf **Drei-Punkte-Menü (⋮)** in der oberen rechten Ecke des Bildschirms
+1. Tippen Sie auf **Anmelden** in der oberen rechten Ecke des Bildschirms
 
-![Auf das Drei-Punkte-Menü tippen *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/android2En.png)
+    ![Kaufbildschirm *mobile_border](https://cdn.adtidy.org/blog/new/10j5bhpurchase-page.png)
 
-5. Drücken Sie **Premium-Version aktivieren**, und Sie erhalten zwei Aktivierungsoptionen:
+1. Verwenden Sie Ihre E-Mail-Adresse oder Ihr Social-Media-Konto, um Ihre Lizenz zu aktivieren.
 
-- Durch Eingabe von **E-Mail** und **Passwort** von Ihrem **AdGuard-Konto** (oder von Ihrem Facebook- oder Google-Konto)
-
-![Anmelden, um zu aktivieren  *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/androidlicense2en.png)
-
-- Über die Eingabe eines **Lizenzschlüssels**
-
-![Lizenzschlüssel zum Aktivieren eingeben *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/androidlicense3en.png)
-
-### Aktivieren von AdGuard für iOS
-
-1. Öffnen Sie die AdGuard-App und tippen Sie auf **das Zahnradsymbol** in der unteren rechten Ecke des Bildschirms
-
-2. Tippen Sie auf **Lizenz**
-
-3. Tippen Sie auf **Anmelden** in der oberen rechten Ecke des Bildschirms
-
-![Tap Log in in the top right corner of the Premium screen *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense1en.png)
-
-4. Geben Sie **E-Mail** und **Passwort** von Ihrem **AdGuard-Konto**
-
-![Anmelden *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense2en.png)
+    ![Anmeldebildschirm *mobile_border](https://cdn.adtidy.org/blog/new/prnjdlogin-page.png)

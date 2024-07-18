@@ -5,7 +5,7 @@ sidebar_position: 7
 
 :::info
 
-この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 実際に使ってみるには、[AdGuardアプリをダウンロード](https://adguard.com/download.html?auto=true)してください。
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for Windows」について書いています。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -61,6 +61,10 @@ Enable this feature to see AdGuard pop-up notifications. They do not appear too 
 
 Enable this feature if you want AdGuard to automatically intercept filter subscription URLs (i.e. `abp:subscribe` and alike) and to open a custom filter installation dialog.
 
+### Filter HTTP/3
+
+If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
+
 ### Use redirect driver mode
 
 If this option is enabled, AdGuard intercepts all the traffic and redirects it to the local proxy server for further filtering.
@@ -102,7 +106,7 @@ Host: example.org`
 
 will be converted to
 
-`GET  /foo/bar/ HTTP/1.1
+`GET /foo/bar/ HTTP/1.1
 Host: example.org`
 
 This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
@@ -181,17 +185,17 @@ AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to
 
 Here you can select the way AdGuard will respond to domains blocked by DNS rules based on [hosts rule syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
 
-* Reply with “Refused” error
-* Reply with “NxDomain” error
-* Reply with a custom IP address
+- Reply with “Refused” error
+- Reply with “NxDomain” error
+- Reply with a custom IP address
 
 ### Blocking mode for adblock-style rules
 
 Here you can select the way AdGuard will respond to domains blocked by DNS rules based on [adblock-style syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax).
 
-* Reply with “Refused” error
-* Reply with “NxDomain” error
-* Reply with a custom IP address
+- Reply with “Refused” error
+- Reply with “NxDomain” error
+- Reply with a custom IP address
 
 ### Custom IPv4 address
 
@@ -205,9 +209,9 @@ If Custom IP address is selected in Blocking mode for hosts rules or Blocking mo
 
 Here you can specify an alternate DNS server to which a DNS request will be rerouted if the main server fails to respond within the timeout period specified in the next section. There are three options to choose from:
 
-* Don’t use fallback servers;
-* Use system default servers;
-* Use custom servers.
+- Don’t use fallback servers;
+- Use system default servers;
+- Use custom servers.
 
 ### Block ECH
 

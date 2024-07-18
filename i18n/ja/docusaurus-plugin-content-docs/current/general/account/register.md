@@ -1,22 +1,26 @@
 ---
-title: How to register
+title: AdGuard アカウントの登録方法
 sidebar_position: 1
 ---
 
-## AdGuardアカウントとは？
+## AdGuard アカウントとは？
 
-[AdGuard account](https://my.adguard.com/) is a user account that stores information about your AdGuard licenses and subscriptions, active devices, your purchase history, preferred language, and other preferences. Many AdGuard products offer an option to activate them by entering the credentials for your AdGuard account, provided it contains a valid license.
+[AdGuard アカウント](https://my.adguard.com/) （マイ・アカウント）は、お客様の AdGuard ライセンスおよびサブスクリプション、使用しているデバイス、購入履歴、言語、その他の設定に関する情報があるユーザーアカウントです。 多くの AdGuard 製品には、AdGuard アカウントを使ってログインすることで製品をアクティベートするオプションがあります（アカウントに有効なライセンスがある場合）。
 
-## AdGuardアカウントを登録する方法
+## AdGuard アカウントを登録する方法
 
-To create an account, go to [AdGuard's official website](https://adguard.com/welcome.html) and press the *My Account* button on the top right corner of the screen. Enter your email address and create a password — your account will be registered.
+アカウントを登録するには、 [AdGuard の公式ウェブサイト](https://adguard.com/welcome.html) にアクセスし、画面右上の「*マイ・アカウント*」を押します。 メールアドレスを入力し、パスワードを作成すると、アカウント登録されます。
 
 :::tip
 
-If you enter your email address while purchasing a license or receive a license accociated with your email address as a gift, an account will be created automatically. To set a password, you can follow a link from a transactional or gift letter. You can also register with the above method.
+ライセンス購入時にメールアドレスを入力した場合、またはあなたのメールアドレスに紐付けられたライセンスをギフトとして受け取った場合、そのメールアドレスに対してアカウントが自動的に作成されます。 この場合、パスワードを設定するには、購入お知らせメールまたはギフトに関するメールからリンクをたどってください。 また、上記の方法で登録することもできます。
 
 :::
 
-An account can also be created directly in an AdGuard app. Press the *Log in* or *Activate* button (it can be found in the *License* section or on a separate screen), enter your email and create a password.
+アカウントはAdGuardアプリから作成することもできます。 「*ログイン*」または「*認証する*」ボタン（製品によって「*ライセンス*」画面または個別画面にあります）、メールアドレスを入力し、パスワードを作成します。
 
-After the account is created, activate it by following the link in the activation email.
+アカウントが作成されましたら、認証確認メールに記載されているリンクを使ってメールアドレス認証を行ってください。
+
+## SNSアカウント経由でAdGuardアカウントを登録する方法
+
+ソーシャルネットワーク経由でアカウントを作成するには、 [こちらリンク](https://auth.adguard.com/login.html)へ進み、お持ちのアカウントにログインするだけです。 登録が完了しましたら、メールの受信トレイをチェックしてください。 パスワードを設定して完了です。 これで、[AdGuard アカウントのすべての機能](https://adguard.com/kb/general/account/features/)を使用できます。

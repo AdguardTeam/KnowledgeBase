@@ -7,162 +7,174 @@ Os arquivos HAR ajudam nossas equipes de suporte técnico a solucionar problemas
 
 ## Chrome {#chrome}
 
-Para criar um arquivo HAR no Chrome:
+Para criar um arquivo HAR no Chrome, siga estas etapas:
 
 1. Acesse a URL onde ocorre o problema. Não reproduza o problema ainda.
 
-2. Abrir ***Ferramentas do desenvolvedor***:
+1. Abra **Ferramentas para desenvolvedores**:
 
-- No menu: ***Menu → Mais ferramentas → Ferramentas do desenvolvedor***.
-- Teclado: ***Ctrl+Shift+C***, ou ***Ctrl+Alt+I***, ou ***⌥+⌘+I para Mac***.
+    - No menu: **Menu → Mais ferramentas → Ferramentas para desenvolvedores**.
+    - Teclado: **Ctrl+Shift+C**ou **Ctrl+Alt+I**ou **⌥+⌘+I para Mac**.
 
-3. Clique na ***guia Rede***.
+1. Clique na aba **Rede**.
 
-4. Localize o botão redondo no canto superior esquerdo da guia Rede e confirme se está no modo de gravação vermelho. Se estiver cinza, clique para ficar vermelho para iniciar a gravação.
+1. Localize o botão redondo no canto superior esquerdo da guia Rede e confirme se está no modo de gravação vermelho. Se estiver cinza, clique para ficar vermelho para iniciar a gravação.
 
-5. Use o botão ***clear*** (o botão de círculo com uma linha ao lado do botão de gravação) para limpar todas as atividades anteriores.
+1. Use o botão **Limpar** (o botão circular com uma linha ao lado do botão de gravação) para limpar todas as atividades anteriores.
 
-6. Marque a caixa de seleção ***Preservar log*** na guia Rede.
+1. Marque a caixa de seleção **Preservar registro** na guia Rede.
 
-7. Marque a caixa de seleção ***Desativar cache***.
+1. Marque a caixa de seleção **Desativar cache**.
 
-![Chrome](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/chrome.png)
+    ![Chrome](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/chrome.png)
 
-8. Reproduza as etapas que criam o problema.
+1. Reproduza as etapas que criam o problema.
 
-9. Save session as a .har file by right-clicking the grid and selecting ***Save as HAR with content***.
+1. Salve a sessão como um arquivo .har clicando com o botão direito na grade e selecionando **Salvar como HAR com conteúdo**.
 
-10. Encaminhe para o suporte do AdGuard (support@adguard.com) com uma explicação detalhada do problema. Capturas de tela de suporte também podem ser úteis.
+1. Envie para o suporte do AdGuard (support@adguard.com) com uma explicação detalhada do problema. Capturas de tela de suporte também podem ser úteis.
 
 ## Edge {#edge}
 
 1. Acesse a URL onde ocorre o problema. Não reproduza o problema ainda.
 
-2. Abrir ***Ferramentas do desenvolvedor***:
+1. Abra **Ferramentas para desenvolvedores**:
 
-- No menu: ***Menu → Mais ferramentas → Ferramentas do desenvolvedor***.
-- Teclado: ***Ctrl+Shift+C***, ou ***Ctrl+Alt+I***, ou ***⌥+⌘+I para Mac***.
+    - No menu: **Menu → Mais ferramentas → Ferramentas para desenvolvedores**.
+    - Teclado: **Ctrl+Shift+C**ou **Ctrl+Alt+I**ou **⌥+⌘+I para Mac**.
 
-3. Clique na ***guia Rede***.
+1. Clique na aba **Rede**.
 
-4. Localize o botão redondo no canto superior esquerdo da guia Rede e confirme se está no modo de gravação vermelho. Se estiver cinza, clique para ficar vermelho para iniciar a gravação.
+1. Localize o botão redondo no canto superior esquerdo da guia Rede e confirme se está no modo de gravação vermelho. Se estiver cinza, clique para ficar vermelho para iniciar a gravação.
 
-5. Use o botão ***clear*** (o botão de círculo com uma linha ao lado do botão de gravação) para limpar todas as atividades anteriores.
+1. Use o botão **Limpar** (o botão circular com uma linha ao lado do botão de gravação) para limpar todas as atividades anteriores.
 
-6. Marque a caixa de seleção ***Preservar log*** na guia Rede.
+1. Marque a caixa de seleção **Preservar registro** na guia Rede.
 
-7. Marque a caixa de seleção ***Desativar cache***.
+1. Marque a caixa de seleção **Desativar cache**.
 
-![edge](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/edge.png)
+    ![edge](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/edge.png)
 
-8. Reproduza as etapas que criam o problema.
+1. Reproduza as etapas que criam o problema.
 
-9. Save session as a .har file by right-clicking the grid and selecting ***Save as HAR with content***.
+1. Salve a sessão como um arquivo .har clicando com o botão direito na grade e selecionando **Salvar como HAR com conteúdo**.
 
-10. Encaminhe para o suporte do AdGuard (support@adguard.com) com uma explicação detalhada do problema. Capturas de tela de suporte também podem ser úteis.
+1. Envie para o suporte do AdGuard (support@adguard.com) com uma explicação detalhada do problema. Capturas de tela de suporte também podem ser úteis.
 
 ## Firefox {#firefox}
 
-Para criar um arquivo HAR no Firefox:
+Para criar um arquivo HAR no Firefox, siga estas etapas:
 
 1. Acesse a URL onde ocorre o problema. Não reproduza o problema ainda.
 
-2. Abra as Ferramentas do Desenvolvedor no modo ***Rede***:
-- No menu: ***Menu→Desenvolvedor Web→Rede***.
-- Teclado: ***Ctrl+Shift+C***, ou **⌥+⌘+E (Mac)**.
+1. Abra as Ferramentas do Desenvolvedor no modo **Rede**:
 
-3. Observe o botão ***reproduzir/pausar*** no canto superior esquerdo da guia Rede.
-- O botão deve estar no modo de reprodução.
+    - No menu: **Menu → Desenvolvedor Web → Rede**.
+    - Teclado: **Ctrl+Shift+C**ou **⌥+⌘+E (Mac)**.
 
-4. Se alguma informação estiver sendo exibida na grade, limpe clicando no botão ***excluir lixeira*** ao lado do botão reproduzir/pausar.
+1. Observe o botão **Reproduzir/Pausar** no canto superior esquerdo da guia Rede.
 
-5. Marque a caixa de seleção ***Persist Logs*** na guia Rede.
+    - O botão deve estar no modo de reprodução.
 
-6. Marque a caixa de seleção ***Desativar cache***.
+1. Se alguma informação for exibida atualmente na grade, limpe clicando no botão **Esvaziar lixeira** próximo ao botão reproduzir/pausar.
 
-![firefox](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/firefox.png)
+1. Marque a caixa de seleção **Manter registros** na aba Rede.
 
-7. Reproduza as etapas que criam o problema.
+1. Marque a caixa de seleção **Desativar cache**.
 
-8. Save session as a .har file by right-clicking the grid and selecting ***Save all as HAR***.
+    ![firefox](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/firefox.png)
 
-9. Encaminhe para o suporte do AdGuard (support@adguard.com) com uma explicação detalhada do problema. Capturas de tela de suporte também podem ser úteis.
+1. Reproduza as etapas que criam o problema.
+
+1. Salve a sessão como um arquivo .har clicando com o botão direito na grade e selecionando **Salvar tudo como HAR**.
+
+1. Envie para o suporte do AdGuard (support@adguard.com) com uma explicação detalhada do problema. Capturas de tela de suporte também podem ser úteis.
 
 ## Internet Explorer 11 {#ie11}
 
-Para criar um arquivo HAR no Internet Explorer 11:
+Para criar um arquivo HAR no Internet Explorer 11, siga estas etapas:
 
 1. Acesse a URL onde ocorre o problema. Não reproduza o problema ainda.
 
-2. Abra as Ferramentas do Desenvolvedor no modo ***Rede***:
-- No menu Ferramentas: ***Ferramentas do desenvolvedor*** → ***Guia Rede***.
-- Teclado: ***F12→Rede***.
+1. Abra as Ferramentas do Desenvolvedor no modo **Rede**:
 
-3. Observe o botão Iniciar sessão de criação de perfil ***Reproduzir*** e parar a criação de perfil ***Parar*** no canto superior esquerdo da guia Rede.
-- O botão Reproduzir ficará cinza durante a gravação e o botão Parar ficará vermelho. Coloque no modo ***Play***.
+    - No menu Ferramentas: **Ferramentas do desenvolvedor** → **aba Rede**.
+    - Teclado: **F12 → Rede**.
 
-4. Limpe todas as informações de sessão que aparecem na grade inferior usando o botão ***Limpar sessão*** na guia Rede. Passe o mouse sobre os ícones para ver os nomes.
-- O botão ***Limpar sessão*** é um ícone de três linhas com um x.
+1. No canto superior esquerdo da aba Rede, observe os botões **Iniciar**, para iniciar a criação de perfil, e **Parar**, para para a criação de perfil.
 
-5. Marque a caixa de seleção ***Desativar cache***.
+    - O botão Reproduzir ficará cinza durante a gravação e o botão Parar ficará vermelho. Coloque no modo **Play**.
 
-6. Reproduza as etapas que criam o problema.
+1. Limpe todas as informações da sessão que aparecem na grade inferior usando o botão **Limpar sessão** na guia Rede. Passe o mouse sobre os ícones para ver os nomes.
 
-7. Salve a sessão como um arquivo .har clicando no botão ***Salvar disco*** (Exportar como HAR) na guia Rede.
+    - **O botão Limpar sessão** é um ícone de três linhas com um x.
 
-8. Encaminhe para o suporte do AdGuard (support@adguard.com) com uma explicação detalhada do problema. Capturas de tela de suporte também podem ser úteis.
+1. Marque a caixa de seleção **Desativar cache**.
+
+1. Reproduza as etapas que criam o problema.
+
+1. Salve a sessão como um arquivo .har clicando no botão **Salvar disco** (Exportar como HAR) na aba Rede.
+
+1. Envie para o suporte do AdGuard (support@adguard.com) com uma explicação detalhada do problema. Capturas de tela de suporte também podem ser úteis.
 
 ## Safari {#safari}
 
-Para criar um arquivo HAR no Safari:
+Para criar um arquivo HAR no Safari, siga estas etapas:
 
-1. Verifique a barra de menu do Safari na parte superior da tela para um menu ***Develop***. Marque a caixa de verificação no fundo ao lado de ***Mostrar menu Develop na barra de menu***.
-- Se não estiver visível, ative-o em ***Safari→Preferências→Avançado***.
+1. Verifique a barra de menu do Safari na parte superior da tela para ver o menu **Desenvolver**.
 
-2. Acesse a URL onde ocorre o problema. Não reproduza o problema ainda.
+    - Se não estiver visível, ative-o acessando **Safari → Configurações → Avançado**.
+    - Marque a caixa de seleção na parte inferior ao lado de **Mostrar menu Desenvolver na barra de menu**.
 
-3. Abra a guia ***Rede*** no Web Inspector:
-- No menu: ***Desenvolver→Mostrar Inspetor da Web→Rede***.
-- Teclado: ***⌥+⌘+I→Rede***
+1. Acesse a URL onde ocorre o problema. Não reproduza o problema ainda.
 
-4. Marque a caixa de seleção ***Preservar log*** no lado direito das guias Rede.
+1. Abra a guia **Rede** no Web Inspector:
 
-5. Limpe os itens atuais da Rede clicando no ícone ***excluir Lixeira*** na extremidade direita das guias Rede.
+    - No menu: **Desenvolver → Mostrar Web Inspector → Rede**.
+    - Teclado: **⌥+⌘+I → Rede**
 
-6. Marque a caixa de seleção ***Desativar cache***.
+1. Marque a caixa de seleção **Preservar registro** no lado esquerdo das abas Rede, no menu **Outras opções de filtro...**.
 
-7. Reproduza as etapas que criam o problema.
+    ![safari](https://cdn.adtidy.org/content/kb/ad_blocker/safari/preserve-log.png)
 
-8. Salve a sessão como um arquivo .har clicando no ícone ***Exportar*** ao lado de ***Preservar Log***.
+1. Limpe os itens atuais da rede clicando no ícone **Esvaziar lixeira** no canto direito das abas Rede.
 
-9. Encaminhe para o suporte do AdGuard (support@adguard.com) com uma explicação detalhada do problema. Capturas de tela de suporte também podem ser úteis.
+    - Teclado: **⌘+K**
+
+1. Marque a caixa de seleção **Desativar caches**.
+
+1. Reproduza as etapas que criam o problema.
+
+1. Salve a sessão como um arquivo .har clicando no ícone **Exportar** próximo ao ícone **Excluir Lixeira**.
+
+1. Envie para o suporte do AdGuard (support@adguard.com) com uma explicação detalhada do problema. Capturas de tela de suporte também podem ser úteis.
 
 ## Android {#android}
 
-To create HAR files, follow these steps:
+Para criar arquivos HAR, siga as etapas seguintes:
 
-1. Abra o AdGuard e vá para ***Configurações***.
+1. Abra o AdGuard e vá para **Configurações**.
 
-2. Escolha ***Avançado*** no menu.
+1. Escolha **Avançado** no menu.
 
-3. Escolha ***Configurações de baixo nível***
+1. Selecione **Configurações de baixo nível**
 
-4. Ative `pref.har.capture` (você terá que reiniciar a proteção).
+1. Ative `pref.har.capture` (você terá que reiniciar a proteção).
 
-5. Agora reproduza o problema: abra o aplicativo, execute as ações necessárias para fazer o anúncio aparecer.
+1. Agora reproduza o problema: abra o aplicativo e execute as ações necessárias para fazer o anúncio aparecer.
 
-6. Agora desligue `pref.har.capture` novamente.
+1. Agora desligue `pref.har.capture` novamente.
 
-7. Volte e toque em ***Exportar registros e informações do sistema*** → ***Salvar***.
+1. Volte e toque em **Exportar registros e informações do sistema** → **Salvar**.
 
 ## Windows {#windows}
 
-1. Abra ***Configurações*** → ***Configurações gerais*** → ***Configurações avançadas** e role para baixo.
+1. Abra **Configurações*** → **Configurações gerais** → **Configurações avançadas** e role para baixo.
 
-2. Marque a caixa ***Ativar gravação HAR***.
+1. Marque a caixa **Habilitar gravação HAR**.
 
-3. Reproduza o problema.
+1. Reproduza o problema.
 
-4. Vá para ***Configurações gerais*** → Clique em ***Exportar logs*** → ***Salvar***.
+1. Vá para **Configurações gerais** → Clique em **Exportar registros** → **Salvar**.
 
-5. Desative a gravação HAR desmarcando a caixa correspondente.
+1. Desative a gravação HAR desmarcando a caixa correspondente.

@@ -1,23 +1,23 @@
 ---
-title: Overview
+title: Áttekintés
 sidebar_position: 1
 slug: /
 ---
 
-## What is AdGuard Ad Blocker?
+## Mi az AdGuard hirdetésblokkoló?
 
-AdGuard is one of the leaders on the market of ad-blocking software with 10+ years of experience, almost a dozen products for various platforms, and over 30 million user installs. Unlike other ad-blocking solutions, most of which are browser-based, we offer standalone apps for all major platforms, both desktop and mobile. AdGuard apps are more powerful than browser extensions, can block more and do it more efficiently:
+Az AdGuard az egyik vezető a hirdetésblokkoló szoftverpiacon 15 éves tapasztalattal, majd tíz termékkel különböző platformokra és több mint 375 millió felhasználói telepítéssel. Más reklámblokkoló megoldásokkal ellentétben, amelyek többsége böngészőalapú, mi önálló alkalmazásokat kínálunk minden főbb platformra, mind asztali, mind mobil platformokra. Az AdGuard alkalmazások nagyobb teljesítményűek, mint a böngészőbővítmények, többet és hatékonyabban tudnak blokkolni:
 
-* [AdGuard for Windows](/adguard-for-windows/overview)
-* [AdGuard for Mac](/adguard-for-mac/overview)
-* [AdGuard for Android](/adguard-for-android/overview)
-* [AdGuard for iOS](/adguard-for-ios/overview)
+- [AdGuard for Windows](/adguard-for-windows/features/home-screen)
+- [AdGuard for Mac](/adguard-for-mac/features/main)
+- [AdGuard for Android](/adguard-for-android/features/protection/ad-blocking)
+- [AdGuard for iOS](/adguard-for-ios/features/safari-protection)
 
-But we also develop and maintain free browser extensions for all popular browsers:
+De ingyenes böngészőbővítményeket is fejlesztünk és tartunk fenn minden népszerű böngészőhöz:
 
-* [AdGuard Browser Extension](/adguard-browser-extension/overview)
-* [AdGuard for Safari](/adguard-for-safari/overview)
+- [AdGuard Böngészőkiegészítő](/adguard-browser-extension/features/filters)
+- [AdGuard for Safari](/adguard-for-safari/features/general)
 
-## Not just ad blocking
+## Nem csak reklámblokkolás
 
-AdGuard Ad Blocker does more than just block ads. It will protect you from online tracking and enhance your privacy in many ways. Depending on the specific product, AdGuard can also offer such perks as DNS filtering for more rounded-up protection, Parental Control to shield your kids from inappropriate content, Filtering log to have better control over your internet traffic, and more. This Knowledge base contains detailed information about any and all of them — feel free to jump to any article that interests you.
+Az AdGuard Ad Blocker nem csak a hirdetéseket blokkolja. Megvédi Önt az online nyomon követéstől, és számos módon javítja a magánéletét. Az adott terméktől függően az AdGuard olyan előnyöket is kínálhat, mint a DNS-szűrés a kerekebb védelem érdekében, a szülői felügyelet, amely megvédi a gyerekeket a nem megfelelő tartalomtól, a szűrési napló az internetes forgalom jobb ellenőrzése érdekében és még sok más. Ez a tudásbázis részletes információkat tartalmaz mindegyikről - nyugodtan ugorjon bármelyik cikkre, amelyik érdekli.

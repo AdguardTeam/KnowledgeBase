@@ -11,7 +11,7 @@ HTTPS(HyperText Transfer Protocol Secure)는 보안을 강화하기 위해 암�
 
 아래의 그림은일반 HTTP 프로토콜과 보안 HTTPS 프로토콜의 차이점을 보여줍니다.
 
-![HTTPS란 무엇인가요](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https.png)
+![HTTPS란 무엇인가요?](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https.png)
 
 ### 보안 인증서란 무엇인가요?
 
@@ -63,7 +63,7 @@ AdGuard는 연구원의 결과에 전적으로 동의합니다. 또한 현재 �
 
 #### Android 7 이상에서 HTTPS 필터링 문제
 
-[Android 7부터](https://blog.adguard.com/en/android-nougat-release-and-what-does-it-mean-for-adguard-users/) 개발자는 애플리케이션이 사용자 지정 인증서를 신뢰하도록 지정해야 합니다. 이제 AdGuard는 HTTPS 트래픽을 필터링하기 위해 사용자 인증서를 설치합니다. 앱이 이 인증서를 신뢰하지 않으면 HTTPS 트래픽이 필터링되지 않습니다. HTTPS 트래픽이 필터링되지 않으면 어떻게 해야 할까요?
+[Starting from Android 7](https://adguard.com/en/blog/android-nougat-release-and-what-does-it-mean-for-adguard-users.html), developers have to explicitly indicate that their apps trust user-installed certificates. 이제 AdGuard는 HTTPS 트래픽을 필터링하기 위해 사용자 인증서를 설치합니다. 앱이 이 인증서를 신뢰하지 않으면 HTTPS 트래픽이 필터링되지 않습니다. HTTPS 트래픽이 필터링되지 않으면 어떻게 해야 할까요?
 
 우선, 많은 앱(최신 앱 포함)이 여전히 사용자 인증서를 신뢰합니다. 거의 모든 브라우저는 이러한 인증서도 신뢰합니다. 이 인증서를 신뢰하지 않는 일부 브라우저가 있을 수 있지만 드문 경우입니다.
 
@@ -73,6 +73,6 @@ AdGuard는 연구원의 결과에 전적으로 동의합니다. 또한 현재 �
 
 특정 웹 사이트에서 HTTPS 연결 품질을 확인할 수 있습니다. 이러한 웹 사이트는 브라우저(또는 AdGuard를 사용 경우, 브라우저 + AdGuard)가 일반적인 취약점에 노출되는지 확인합니다. HTTPS를 필터링하는 프로그램을 사용하려는 경우, 다음과 같은 웹 사이트에서 연결 품질을 확인하는 것이 좋습니다.
 
-* [https://www.ssllabs.com/ssltest/viewMyClient.html](https://www.ssllabs.com/ssltest/viewMyClient.html)
-* [https://www.howsmyssl.com/](https://www.howsmyssl.com/)
-* [https://badssl.com/](https://badssl.com/)
+- [https://www.ssllabs.com/ssltest/viewMyClient.html](https://www.ssllabs.com/ssltest/viewMyClient.html)
+- [https://www.howsmyssl.com/](https://www.howsmyssl.com/)
+- [https://badssl.com/](https://badssl.com/)

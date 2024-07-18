@@ -1,97 +1,96 @@
 ---
-title: Common installer errors
+title: Yaygın kurulum programı hataları
 sidebar_position: 6
 ---
 
-:::info
+:::bilgi
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Windows için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Windows için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
-This article contains some of the most common errors that you can encounter during the AdGuard for Windows installation, and possible ways to solve them.
+Bu makale, Windows için AdGuard kurulumu sırasında karşılaşabileceğiniz en yaygın hatalardan bazılarını ve bunları çözmenin olası yollarını içerir.
 
-### Error 5: Access Denied {#error-5}
+### Hata 5: Erişim Reddedildi {#error-5}
 
-This error occurs when there's something wrong with permissions. There may be several different reasons why AdGuard installer doesn't have the permissions it requires to properly finish the installation process. You can try the following steps:
+Bu hata, izinlerle ilgili bir sorun olduğunda ortaya çıkar. AdGuard kurulum programının, kurma işlemini düzgün bir şekilde tamamlamak için ihtiyaç duyduğu izinlere sahip olmamasının birkaç farklı nedeni olabilir. Aşağıdaki adımları deneyebilirsiniz:
 
-- Antivirüslerinizi geçici olarak devre dışı bırakın. Some of them may interfere with the installation, depending on the severity of their settings.
+- Antivirüslerinizi geçici olarak devre dışı bırakın. Bazıları, ayarlarının ciddiyetine bağlı olarak kuruluma müdahale edebilir.
 
-- Choose a different installation folder. It is possible that the current installation folder has some access restrictions. Also make sure you don't select an external drive, a virtual drive, etc.
+- Farklı bir kurulum klasörü seçin. Mevcut kurulum klasörünün bazı erişim kısıtlamaları olabilir. Ayrıca harici sürücü, sanal sürücü, vb. seçmediğinizden emin olun.
 
-- Bilgisayarınızı yeniden başlatın. Sometimes the permission issues are temporary and can be solved by restarting the PC.
+- Bilgisayarınızı yeniden başlatın. Bazen izin sorunları geçicidir ve bilgisayarı yeniden başlatarak çözülebilir.
 
-### Error 112: Disk is full, Error 1632: Temporary folder full or inaccessible {#error-112}
+### Hata 112: Disk dolu, Hata 1632: Geçici klasör dolu veya erişilemiyor {#error-112}
 
+Bunlar çok benzer çözümlere sahip iki farklı hatadır. Adlarından da anlaşılacağı gibi, AdGuard kurulum programı, kurulumu tamamlamak için yeterli disk alanı bulamadı. Sorunu çözmek için deneyebileceğiniz birkaç şey var:
 
-These are two different errors with very similar solutions. As their names suggest, AdGuard installer didn't find enough disk space to complete the installation. There are several things you can attempt to fix the problem:
+- AdGuard'ı kurmaya çalıştığınız sürücüden bazı programları kaldırın veya gereksiz dosyaları silin.
 
-- Uninstall some programs or delete unnecessary files from the drive you were trying to install AdGuard to.
+- Malwarebytes'in ücretsiz bir yazılımı olan [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/) yazılımını indirin, kurun ve çalıştırın. Diğer şeylerin yanı sıra, sisteminizi yanlış bir şekilde kaldırılan programlar ve benzerlerinden sonra kalan her türlü fazladan "artık" dosyalardan temizler. Biraz disk alanı temizlemeye yardımcı olur.
 
-- Download, install, and run [AdwCleaner](http://www.bleepingcomputer.com/download/adwcleaner/), a free piece of software by Malwarebytes. It will, among other things, clean your system from all kinds of extra "leftover" files that remain after incorrectly uninstall programs and such. It will help clean up some disk space.
+- Bilgisayarınızı yeniden başlatın. Bazen geçici dosyalar önemli miktarda disk alanı kaplayabilir ve PC'nizi yeniden başlatmak bunlardan kurtulmanın en güvenilir yoludur.
 
-- Bilgisayarınızı yeniden başlatın. Sometimes temporary files can take up a considerable amount of disk space, and restarting your PC is the most reliable way to get rid of them.
+### Hata 1601: Windows Installer Hizmetine Erişilemiyor {#error-1601}
 
-### Error 1601: Windows Installer is not accessible {#error-1601}
+Bunun, Hata 1603'ün belirli bir alt türü olduğunu söyleyebilirsiniz. Olası çözümler benzerdir:
 
-You could say this is a particular sub-case of Error 1603. The possible solutions are similar:
+- Microsoft Installer hizmetini başlatın ve yeniden kaydettirin. Bu biraz uğraş gerektirir.
 
-- Start and re-register Microsoft Installer service. Bu biraz uğraş gerektirir.
+    1) *Win + R* tuşlarına basın ve **services.msc** yazın. 2) Listeden *Windows Installer* öğesini bulun ve çift tıklayın. 3) *Hizmet durumu* altındaki *Başlat* düğmesine basın ve *Tamam* öğesine basın. Hizmet durumu **çalışıyor** ise, önce *Durdur* öğesine ve ardından *Başlat* öğesine tıklamalısınız. 4) *Win + R* tuşlarına basın, ***msiexec /unregister*** yazın ve *Enter* düğmesine basın. 5) *Win + R* tuşlarına tekrar basın, ***msiexec /regserver*** yazın ve *Enter* düğmesine basın
 
-    1) Press *Win + R* and enter **services.msc**. 2) Find in the list and double click *Windows Installer*. 3) Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click *Stop* first and then hit *Start*. 4) Press *Win + R*, type and enter ***msiexec /unregister*** and hit *Enter*. 5) Press *Win + R* again, type and enter ***msiexec /regserver*** and hit *Enter*
+- PC'yi yeniden başlatın ve kurulumu baştan başlatın. Bazen sorunu çözmek için bu yeterli olur.
 
-- Reboot the PC and start the installation all over again. Bazen sorunu çözmek için bu yeterli olur.
+### Hata 1602: Kullanıcı tarafından iptal edildi {#error-1602}
 
-### Error 1602: Canceled by user {#error-1602}
+Bu hata kodunu aldıysanız, kurma işlemini bir şekilde elle kesintiye uğratmış olabilirsiniz. Yapabileceğiniz şey:
 
-If you got this error code, chances are you have interrupted the installation process manually in one way or another. What you can do is:
+- Kurulum programı penceresini kapatmayın. Kurulum tamamlandığında otomatik olarak kapanır.
 
-- Don't close the installer window. When the installation is complete, it will close automatically.
+- Kurma sırasında bir diyalog penceresi açılırsa, kurulum programına gerekli izinleri vermek için "Evet" öğesine basın. "Hayır" öğesine tıklandığında kurulum iptal edilir.
 
-- If a dialogue window pops up during the installation, hit "Yes" to grant the installer the required permissions. Clicking "No" will cancel the installation.
-
-- Don't start other processes while the installation process is going on.
+- Kurulum devam ederken başka işlemler başlatmayın.
 
 ### Hata 1603: Kurulum sırasında kritik hata oluştu {#error-1603}
 
-The error sounds scarier than it actually is. In reality, this is a rather generic error that can have many different causes, and some of them are easily fixed. Aşağıdaki çözümleri deneyin:
+Hata kulağa gerçekte olduğundan daha korkutucu geliyor. Gerçekte bu, birçok farklı nedeni olabilen oldukça genel bir hatadır ve bazıları kolayca düzeltilebilir. Aşağıdaki çözümleri deneyin:
 
-- Press the *Win* key, search for *Command Prompt* and run it. There, type in `sfc /scannow` and press *Enter*.
+- *Win* tuşuna basın, *Komut İstemi* öğesini arayın ve çalıştırın. Orada, `sfc /scannow` yazın ve *Enter* düğmesine basın.
 
-- Choose a different installation folder. It is possible that the current installation folder has some access restrictions. Also make sure you don't select an external drive, a virtual drive, etc.
+- Farklı bir kurulum klasörü seçin. Mevcut kurulum klasörünün bazı erişim kısıtlamaları olabilir. Ayrıca harici sürücü, sanal sürücü, vb. seçmediğinizden emin olun.
 
-- Uninstall AdGuard using our special [uninstall tool](../../installation#advanced) and then repeat the installation.
+- Özel [kaldırma aracımızı](../../installation#advanced) kullanarak AdGuard'ı kaldırın ve ardından kurulumu tekrarlayın.
 
-- Start and re-register Microsoft Installer service. Bu biraz uğraş gerektirir.
+- Microsoft Installer hizmetini başlatın ve yeniden kaydettirin. Bu biraz uğraş gerektirir.
 
-    1) Press *Win + R* and enter ***services.msc***. 2) Find in the list and double click *Windows Installer*. 3) Hit *Start* button under *Service status* and hit *OK*. If the service status is **running**, you should click *Stop* first and then hit *Start*. 4) Press *Win + R*, type and enter ***msiexec /unregister*** and hit *Enter*. 5) Press *Win + R* again, type and enter ***msiexec /regserver*** and hit *Enter*
+    1) *Win + R* tuşlarına basın ve ***services.msc*** yazın. 2) Listeden *Windows Installer* öğesini bulun ve çift tıklayın. 3) *Hizmet durumu* altındaki *Başlat* düğmesine basın ve *Tamam* öğesine basın. Hizmet durumu **çalışıyor** ise, önce *Durdur* öğesine ve ardından *Başlat* öğesine tıklamalısınız. 4) *Win + R* tuşlarına basın, ***msiexec /unregister*** yazın ve *Enter* düğmesine basın. 5) *Win + R* tuşlarına tekrar basın, ***msiexec /regserver*** yazın ve *Enter* düğmesine basın
 
-- Acquire full permissions on the drive for installation. It is possible that the error 1603 occurs because you don’t have full permissions on the file location. It's also not as easy as some of the other solutions:
+- Kurulum için sürücüde tam izinleri alın. Dosya konumunda tam izinlere sahip olmadığınız için 1603 hatasının oluşması olasıdır. Ayrıca diğer bazı çözümler kadar kolay değildir:
 
-    1) Open *File Explorer*, right-click the drive containing the installation location and select *Properties*. 2) Go to *Security* tab and click *Edit*. 3) Single-click *SYSTEM* and ensure that the *Allow* box of every item in *Permissions for SYSTEM* is checked (if it is checkable). Do the same check for *Administrators*. 4) Click *OK* to go back to *Properties* dialog. Ardından *Gelişmiş* öğesine tıklayın. 5) Click *Change Permissions*. 6) On *Permissions* tab, double-click *Administrators*. 7) Select *This folder, subfolders and files* for *Applies to* field and tick all the available *Basic permissions*. After that hit *OK*. 8) Do the same operation above (from item 7) for *SYSTEM*. 9) Click *OK* all the way out. Try installing AdGuard again.
+    1) *Dosya Gezgini* öğesini açın, kurulum konumunu içeren sürücüye sağ tıklayın ve *Özellikler* öğesini seçin. 2) *Güvenlik* sekmesine gidin ve *Düzenle* öğesine tıklayın. 3) *SYSTEM* öğesine tek tıklayın ve *İzin ver* kutusundaki her öğenin *SİSTEM için izinler* işaretli olduğundan emin olun (işaretlenebilirse). Aynı kontrolü *Administrators* için de yapın. 4) *Özellikler* uyarı kutusuna geri dönmek için *Tamam* öğesine tıklayın. Ardından *Gelişmiş* öğesine tıklayın. 5) *İzinleri Değiştir* öğesine tıklayın. 6) *İzinler* sekmesinde, *Yöneticiler* öğesine çift tıklayın. 7) *Uygulandığı öğe* alanı için *Bu klasör, alt klasörler ve dosyalar* öğesini seçin ve mevcut tüm *Temel izinleri* işaretleyin. Bundan sonra *Tamam* öğesine basın. 8) *SYSTEM* için yukarıdaki (madde 7'den itibaren) aynı işlemi yapın. 9) Sonuna kadar *Tamam* öğesine tıklayın. AdGuard'ı yeniden kurmayı deneyin.
 
-### Error 1618: Another installation is already in progress {#error-1618}
+### Hata 1618: Başka bir kurulum zaten devam ediyor {#error-1618}
 
-This error occurs when there are several instances of AdGuard installer launched at the same time. What to do if you get this error:
+Bu hata, aynı anda başlatılan birkaç AdGuard kurulum programı olduğunda ortaya çıkar. Bu hatayı alırsanız yapmanız gerekenler:
 
-- Reboot your PC and start the installer again. When you restart the computer, all ongoing processes will stop, including all copies of the installer.
+- PC'yi yeniden başlatın ve kurulum programını tekrar başlatın. Bilgisayarı yeniden başlattığınızda, kurulum programının tüm kopyaları dahil devam eden tüm işlemler durur.
 
-- Don't make multiple clicks on the installer even if doesn't start right away. Sometimes it may take a few seconds to display the installer UI.
+- Hemen başlamasa bile kurulum programına birden çok tıklama yapmayın. Bazen kurulum programı kullanıcı arayüzünün görüntülenmesi birkaç saniye sürebilir.
 
-### Error 1638: Another version of this product is already installed {#error-1638}
+### Error 1638: Bu ürünün başka bir sürümü zaten kurulu {#error-1638}
 
-It's very likely that you've already installed AdGuard before.
+Daha önce AdGuard kurmuş olmanız çok olasıdır.
 
-- Check if AdGuard is already installed on your computer. You can do it by pressing the *Win* key and typing in ***AdGuard***.
+- AdGuard'ın bilgisayarınızda kurulu olup olmadığını kontrol edin. Bunu *Win* tuşuna basarak ve ***AdGuard*** yazarak yapabilirsiniz.
 
-- Maybe there's some leftover files from a previous AdGuard installation. Uninstall AdGuard using our special [uninstall tool](../../installation#advanced) and then repeat the installation.
+- Belki önceki bir AdGuard kurulumundan kalan bazı dosyalar vardır. Özel [kaldırma aracımızı](../../installation#advanced) kullanarak AdGuard'ı kaldırın ve ardından kurulumu tekrarlayın.
 
 ### Diğer hatalar {#other}
 
-If you've encountered an error that's not listed above, it is possible that we can solve it by ourselves. But in order to do that, we need log files from you. Please perform the following steps:
+Yukarıda listelenmeyen bir hatayla karşılaştıysanız, bunu kendimiz çözmemiz mümkündür. Ancak bunu yapabilmek için sizden günlük dosyalarına ihtiyacımız var. Lütfen aşağıdaki adımları uygulayın:
 
 - Find and archive **AdGuard installation logs** as it is described in [this article](../installation-logs).
 
-- Find and save to disk **Event Viewer** logs. [This article](../system-logs) explains how to do that.
+- **Olay Görüntüleyicisi** günlüklerini bulun ve diske kaydedin. [Bu makale](../system-logs) bunun nasıl yapılacağını açıklar.
 
-- Please email all these files from two previous steps to the support team at **support@adguard.com** and describe the problem in the message body. Our tech support agents will reply to you as soon as possible.
+- Please email all these files from two previous steps to the support team at **support@adguard.com** and describe the problem in the message body. Teknik destek temsilcilerimiz size mümkün olan en kısa sürede cevap verir.

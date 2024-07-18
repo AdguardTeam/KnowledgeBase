@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -19,7 +19,7 @@ Přesto si uživatelé AdGuardu mohou vždy udělat skutečný obrázek o situac
 
 Přístup k ní získáte v sekci *Statistiky* → *Využití baterie*.
 
-![Statistiky baterie *mobile_border](https://cdn.adtidy.org/content/articles/battery/1.png)
+![Battery stats *mobile_border](https://cdn.adtidy.org/content/articles/battery/1.png)
 
 Uvnitř najdete graf, který zobrazuje spotřebu zdrojů baterie AdGuard za posledních 24 hodin s možností získat podrobnější údaje po jednotlivých hodinách klepnutím v grafu. Kromě toho je zde také číselný rozpis příslušných údajů a krátké technické vysvětlení.
 
@@ -29,29 +29,31 @@ Nejprve si řekneme něco málo z teorie a uvedeme si souvislosti s potřebnými
 
 1. Android odvozuje spotřebu baterie podle takzvaného "Profilu napájení", který udává každý výrobce: <https://source.android.com/devices/tech/power/values.html>
 
-2. Hlavní součástí tohoto profilu je soubor hodnot v mAh, které určují spotřebu baterie pro každou část zařízení: <https://source.android.com/devices/tech/power/values.html>
+1. Hlavní součástí tohoto profilu je soubor hodnot v mAh, které určují spotřebu baterie pro každou část zařízení: <https://source.android.com/devices/tech/power/values.html>
 
-Například podle výše uvedené tabulky:
+    Například podle výše uvedené tabulky:
 
-_wifi.active=_ 31mA dodatečná spotřeba v mAh způsobená výměnou dat Wi-Fi.
+    *wifi.active=* 31mA dodatečná spotřeba v mAh způsobená výměnou dat Wi-Fi.
 
-_radio.active=_ 100-300mA dodatečná spotřeba v mAh způsobená výměnou dat přes mobilní síť.
+    *radio.active=* 100-300mA dodatečná spotřeba v mAh způsobená výměnou dat přes mobilní síť.
 
-_cpu.active=_ 100-200mA dodatečná spotřeba v mAh způsobená prací procesoru.
+    *cpu.active=* 100-200mA dodatečná spotřeba v mAh způsobená vytížením procesoru.
 
-3. AdGuard sám o sobě nespotřebovává téměř žádné prostředky, takže pro účely vyhodnocení spotřeby baterie se zbavme 'paketů Mobile/WiFi' a 'CPU'.
+1. AdGuard sám o sobě nespotřebovává téměř žádné prostředky, takže pro účely vyhodnocení spotřeby energie se zbavme 'paketů Mobile/WiFi' a 'CPU'.
 
-Vzorec pro výpočet spotřeby:
-> "CPU TIME (ms)" X "cpu.active" / (60 * 60 * 1000) = "POWER USE mAh"
+    Vzorec pro výpočet spotřeby:
 
-Doplňme do tohoto vzorce reálná čísla.
+    > “CPU TIME (ms)” X “cpu.active” / (60 *60* 1000) = “POWER USE mAh”
 
-Vezmeme _CPU celkem_ z druhého snímku obrazovky a převedeme na milisekundy: 506000
+    Doplňme do tohoto vzorce reálná čísla.
 
-Koeficient _cpu.active_ pro 2GHz bude roven zhruba 225mAh
+    Vezmeme *CPU celkem* z druhého snímku obrazovky a převedeme na milisekundy: 506000
 
-Konečný výsledek
-> 506000 * 225 / (60 * 60 * 1000) = 31,625mAh
+    Koeficient *cpu.active* pro 2GHz bude roven zhruba 225mAh
+
+    Konečný výsledek:
+
+    > 506000 *225 / (60* 60 * 1000) = 31,625mAh
 
 ### Závěr
 

@@ -3,15 +3,15 @@ title: '설치 방법/ 제거 방법'
 sidebar_position: 2
 ---
 
-:::info
+:::정보
 
-이 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Mac용 AdGuard에 대해 다룹니다. 어떻게 동작하는지 알고 싶으시다면 [AdGuard 앱을 다운로드](https://adguard.com/download.html?auto=true) 해 보세요.
+This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
 ## 시스템 요구 사항
 
-**운영 체제 버전**: macOS 10.13 (64 비트) 이상
+**Operating system version:** macOS 10.15 (64 bit) or higher
 
 **RAM**: 2 GB 이상
 
@@ -21,11 +21,11 @@ sidebar_position: 2
 
 ## 설치 방법
 
-To install AdGuard for Mac on your computer, launch your browser, type _adguard.com_ in the address bar, and press **Download** [on the page that opens](https://adguard.com/download.html?auto=1).
+To install AdGuard for Mac on your computer, launch your browser, type *adguard.com* in the address bar, and press **Download** [on the page that opens](https://adguard.com/download.html?auto=1).
 
 ![앱 다운로드 *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/1.jpg)
 
-_AdguardInstaller.dmg_가 다운로드될 때까지 기다렸다가 Dock 패널에 다운로드된 파일 목록에서 해당 아이콘을 두 번 클릭합니다.
+Wait for *AdguardInstaller.dmg* to download and double-click its icon in the list of downloaded files on the Dock panel.
 
 ![Double-click to open the file](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation_open_the_file.jpg)
 
@@ -58,6 +58,7 @@ AdGuard가 처음 시작되면 운영 체제에서 이 프로그램이 인터넷
 ## 제거 방법
 
 ### 일반 제거 방법
+
 Finder 앱을 엽니다.
 
 ![폴더 열기](https://cdn.adtidy.org/public/Adguard/En/Articles/howtodelete/finder.png)
@@ -80,22 +81,25 @@ Finder 앱을 엽니다.
     - /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log (file)
 
     To do so, open the Terminal app, then enter and execute the following commands:
-    - `sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"`
-    - `rm -R "$HOME/Library/Application Support/com.adguard.mac.adguard"`
-    - `rm $HOME/Library/Preferences/com.adguard.mac.adguard.plist`
-    - `rm -R "$HOME/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac"`
-    - `find "$HOME/Library/Application Support" -name "com.adguard.browser_extension_host.nm.json" -delete`
-    - `sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist`
-    - `sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist`
-    - `sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log`
-    - `sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log`
+
+    ```bash
+    sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"
+    rm -R "$HOME/Library/Application Support/com.adguard.mac.adguard"
+    rm $HOME/Library/Preferences/com.adguard.mac.adguard.plist
+    rm -R "$HOME/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac"
+    find "$HOME/Library/Application Support" -name "com.adguard.browser_extension_host.nm.json" -delete
+    sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist
+    sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist
+    sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log
+    sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log
+    ```
 
 1. Run the **Activity Monitor** app.
 1. 검색 도구를 사용하여 **cfprefsd** 프로세스를 찾습니다.
 
     ![활동 모니터 실행](https://cdn.adtidy.org/content/kb/ad_blocker/mac/22.jpg)
 
-1. 사용자로 실행중인 프로세스를 중지합니다 (루트에서 실행되는 프로세스 제외). 프로세스를 중지하려면 프로세스를 클릭한 후 왼쪽 상단의 X를 클릭합니다. 대화 창에서 종료를 합니다.
+1. 사용자로 실행중인 프로세스를 중지합니다 (루트에서 실행되는 프로세스 제외). 프로세스를 중지하려면 프로세스를 클릭한 후 왼쪽 상단의 X를 클릭합니다. Confirm the action in the dialogue window.
 
     ![확인](https://cdn.adtidy.org/content/kb/ad_blocker/mac/33.jpg)
 

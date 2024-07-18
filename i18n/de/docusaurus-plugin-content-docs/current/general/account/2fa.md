@@ -1,36 +1,36 @@
 ---
-title: Two-factor authentication
+title: Zwei-Faktor-Authentifizierung
 sidebar_position: 3
 ---
 
-Two-factor authentication (or 2FA) is an authentication method that requires an additional piece of evidence from the user to log in, on top of the usual login and password pair. This is done for security purposes. Websites usually offer such 2FA methods as a code sent by SMS or a special authenticator app.
+Bei der Zwei-Faktor-Authentifizierung (oder 2FA) handelt es sich um eine Authentifizierungsmethode, bei der neben dem üblichen Paar aus Benutzername und Kennwort ein zusätzlicher Nachweis für die Anmeldung erforderlich ist. Dies geschieht aus Sicherheitsgründen. Websites bieten in der Regel solche 2FA-Methoden wie einen per SMS gesendeten Code oder eine spezielle Authentifizierungs-App an.
 
-We see adding a 2FA option as a benefit. We also understand that enforcing it may irritate some users. That's why we made it optional for your personal account on adguard.com — by default, 2FA is disabled when you register a new account. You can enable it manually in the settings. As for the currently available authentication methods, we use the tried and tested one: an authenticator app for Android or iOS. You can use almost any such app, and there are plenty of them.
+Wir sehen das Hinzufügen einer 2FA-Option als einen Vorteil. Wir verstehen auch, dass die Durchsetzung dieser Regelung einige Nutzer:innen irritieren kann. Deshalb haben wir diese Option für Ihr persönliches Konto auf adguard.com eingerichtet. Standardmäßig ist 2FA deaktiviert, wenn Sie ein neues Konto registrieren. Die 2FA kann manuell in den Einstellungen aktiviert werden. Was die derzeit verfügbaren Authentifizierungsmethoden angeht, so verwenden wir die bewährte Methode: eine Authentifizierungs-App für Android oder iOS. Sie können fast alle verfügbaren Apps verwenden, und es gibt viele davon.
 
-We recommend setting up two-factor authentication for your AdGuard account. It won't take you long, but it will help protect your license keys, subscriptions, and, most importantly, any personal information associated with the account.
+Wir empfehlen die Einrichtung einer Zwei-Faktor-Authentifizierung für Ihr AdGuard-Konto. Es nimmt nicht viel Zeit in Anspruch, aber es hilft Ihnen, Ihre Lizenzschlüssel, Abonnements und vor allem alle persönlichen Daten, die mit Ihrem Konto verbunden sind, zu schützen.
 
+## So richten Sie 2FA ein
 
-## How to set it up
+1. Melden Sie sich bei Ihrem [AdGuard-Konto](https://auth.adguard.com/login.html) an und öffnen Sie den Tab „Einstellungen“:
 
-1) Log into your [AdGuard account](https://auth.adguard.com/login.html) and go to the Settings tab:
+![AdGuard Kontoeinstellungen *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/account_settings.png)
 
-![AdGuard Account settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/account_settings.png)
+1. Scrollen Sie nach unten zum Abschnitt *Passwort und 2FA* und klicken Sie auf **Aktivieren**:
 
-2) Scroll down to *Password and 2FA* section and click **Enable**:
+![Die Schaltfläche „Ändern” *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_new.png)
 
-![The Change button *border](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_new.png)
+1. Befolgen Sie die Anweisungen auf dem Bildschirm, um eine Authentifizierungs-App zu installieren und den QR-Code zu scannen:
 
-3) Follow the on-screen instructions to install an authenticator app and scan the QR code:
+![Der Verifizierungscode](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_enable.png)
 
-![The verification code](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_enable.png)
+***Wichtig***
 
-***Important***
-* Save the second-factor backup code somewhere, it will be necessary to recover your account in case your mobile phone gets lost or stolen;
+- Bewahren Sie den Sicherungscode irgendwo auf. Er wird benötigt, um Ihr Konto wiederherzustellen, falls Ihr Mobiltelefon verloren geht oder gestohlen wird
 
-If everything is done right, you will see this when you log into your account the next time:
+Wenn Sie alles richtig gemacht haben, wird dies bei der nächsten Anmeldung angezeigt:
 
-![The result *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_success.png)
+![Das Ergebnis *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/2fa_success.png)
 
-Use your mobile authenticator app to read the code and enter it. You should be logged in now!
+Verwenden Sie Ihre mobile Authentifizierungs-App, um den Code anzuzeigen und ihn einzugeben. Sie sollten jetzt angemeldet sein!
 
-***NOTE***: If you get an authentication error, check the clock on your phone. Adjust it if needed, as an unsynchronized clock may be the cause of the error.
+***HINWEIS***: Wenn Sie einen Authentifizierungsfehler erhalten, überprüfen Sie die Uhr (Zeit/Datum) auf Ihrem Telefon. Stellen Sie sie bei Bedarf ein, da eine nicht synchronisierte Uhr die Ursache für den Fehler sein kann.

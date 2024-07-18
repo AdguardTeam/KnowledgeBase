@@ -5,7 +5,7 @@ sidebar_position: 7
 
 :::info
 
-Este artículo trata sobre AdGuard para Windows, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel de sistema. Para ver cómo funciona, [descarga la aplicación AdGuard](https://adguard.com/download.html?auto=true)
+Este artículo trata sobre AdGuard para Windows, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel de sistema. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -61,6 +61,10 @@ Habilita esta función para ver las notificaciones en ventanas emergentes de AdG
 
 Habilita esta función si deseas que AdGuard intercepte automáticamente las URL de suscripción de filtro (es decir, `abp:subscribe` y similares) y abra un cuadro de diálogo de instalación de filtro personalizado.
 
+### Filter HTTP/3
+
+If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
+
 ### Usar modo de redireccionamiento del driver
 
 Si esta opción está habilitada, AdGuard intercepta todo el tráfico y lo redirige al servidor proxy local para un mayor filtrado.
@@ -102,8 +106,8 @@ Host: ejemplo.org`
 
 se convertirá en
 
-`GET  /foo/bar/ HTTP/1.1
-Host: example.org`
+`GET /foo/bar/ HTTP/1.1
+Host: ejemplo.org`
 
 Esta opción solo se aplica cuando la opción *Proteger de DPI* en Modo Stealh está habilitada.
 
@@ -181,17 +185,17 @@ AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to
 
 Aquí puedes seleccionar la forma en que AdGuard responderá a los dominios bloqueados por las reglas de DNS según [la sintaxis de la regla de hosts](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax).
 
-* Respuesta con error "Rechazado"
-* Respuesta con error "NxDomain"
-* Respuesta con una dirección IP personalizada
+- Respuesta con error "Rechazado"
+- Respuesta con error "NxDomain"
+- Respuesta con una dirección IP personalizada
 
 ### Modo de bloqueo para reglas de estilo adblock
 
 Aquí puedes seleccionar la forma en que AdGuard responderá a los dominios bloqueados por las reglas de DNS según [la sintaxis de la regla de estilo adblock](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax).
 
-* Respuesta con error "Rechazado"
-* Respuesta con error "NxDomain"
-* Respuesta con una dirección IP personalizada
+- Respuesta con error "Rechazado"
+- Respuesta con error "NxDomain"
+- Respuesta con una dirección IP personalizada
 
 ### Dirección IPv4 personalizada
 
@@ -205,9 +209,9 @@ Si se selecciona la dirección IP personalizada en modo de bloqueo para reglas d
 
 Aquí puesde especificar un servidor DNS alternativo al que se redirigirá una solicitud de DNS si el servidor principal no responde dentro del período de tiempo de espera especificado en la siguiente sección. Hay tres opciones para elegir:
 
-* No usar servidores alternativos;
-* Usar servidores predeterminados del sistema;
-* Usar servidores personalizados.
+- No usar servidores alternativos;
+- Usar servidores predeterminados del sistema;
+- Usar servidores personalizados.
 
 ### Bloquear ECH
 

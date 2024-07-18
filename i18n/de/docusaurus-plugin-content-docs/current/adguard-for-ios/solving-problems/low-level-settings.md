@@ -1,58 +1,64 @@
 ---
-title: Low-level Settings guide
+title: Leitfaden für Low-Level-Einstellungen
 sidebar_position: 5
 ---
 
-:::Info
+:::info
 
-Dieser Artikel behandelt AdGuard für iOS, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://adguard.com/download.html?auto=true)
-
-:::
-
-## How to reach the Low-level settings
-
-:::Zur Beachtung
-
-Das Ändern von *Low-Level-Einstellungen* kann Probleme mit der Leistung von AdGuard verursachen, die Internetverbindung unterbrechen oder Ihre Sicherheit und Privatsphäre gefährden. You should only open this section if you are sure of what you are doing or our support-team has asked you about it.
+Dieser Artikel behandelt AdGuard für iOS, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
 
 :::
 
-To go to *Low-level settings*, tap the gear icon at the bottom right of the screen to open *Settings*. Select the *General* section and then toggle on the *Advanced mode* switch, after that the *Advanced settings* section will appear below. Tap *Advanced settings* to reach the *Low-level settings* section.
+## So rufen Sie die Low-Level-Einstellungen auf
 
-## Low-level settings
+:::caution
 
-### Tunnel mode
+Das Ändern von *Low-Level-Einstellungen* kann Probleme mit der Leistung von AdGuard verursachen, die Internetverbindung unterbrechen oder Ihre Sicherheit und Privatsphäre gefährden. Dieser Bereich sollte nur geöffnet werden, wenn Sie wissen, was Sie tun, oder wenn Sie von unserem Support-Team dazu aufgefordert wurden.
 
-There are two main tunnel modes: *Split* and *Full*. *Split-Tunnel* mode provides compatibility of AdGuard and so-called "Personal VPN" apps. In *Full-Tunnel* mode no other VPN can work simultaneously with AdGuard.
+:::
 
-There is a specific feature of *Split-Tunnel* mode: if DNS proxy does not perform well, for example, if the response from the AdGuard DNS server was not returned in time, iOS will "amerce" it and reroute traffic through DNS server, specified in iOS settings. No ads are blocked at this time and DNS traffic is not encrypted.
+Um die *Low-Level-Einstellungen* aufzurufen, tippen Sie auf das Zahnradsymbol unten rechts auf dem Bildschirm, um die *Einstellungen* zu öffnen. Wählen Sie den Bereich *Allgemein* und sktivieren Sie dann den Schalter *Erweiterter Modus*, woraufhin der Bereich *Erweiterte Einstellungen* angezeigt wird. Tippen Sie auf *Erweiterte Einstellungen*, um den Bereich *Low-Level-Einstellungen* zu erreichen.
 
-In *Full-Tunnel* mode only the DNS server specified in AdGuard settings is used. If it does not respond, the Internet will simply not work. Enabled *Full-Tunnel* mode may cause the incorrect performance of some programs (for instance, Facetime), and lead to problems with app updates.
+## Low-Level-Einstellungen
 
-By default, AdGuard uses *Split-Tunnel* mode as the most stable option.
+### Tunnel-Modus
 
-There is also an additional mode called *Full-Tunnel (without VPN icon)*. This is exactly the same as *Full-Tunnel* mode, but it is set up so that the VPN icon is not displayed in the system line.
+Es gibt zwei Haupttypen von Tunneln: *Split-Tunnel* und *Full-Tunnel*. Der *Split-Tunnel*-Modus sorgt für Kompatibilität von AdGuard und sogenannten „Personal VPN” Apps. Im *Full-Tunnel*-Modus kann kein anderes VPN gleichzeitig mit AdGuard zusammenarbeiten.
 
-### Blocking mode
+Es gibt eine Besonderheit des *Split-Tunnel*-Modus: Wenn der DNS-Proxy nicht gut funktioniert, z. B. wenn die Antwort vom AdGuard-DNS-Server nicht rechtzeitig zurückkommt, wird iOS ihn „umgehen” und den Datenverkehr über den DNS-Server umleiten, der in den iOS-Einstellungen angegeben ist. Während dieser Zeit wird keine Werbung blockiert und der DNS-Verkehr nicht verschlüsselt.
 
-In this module you can select the way AdGuard will respond to DNS queries that should be blocked: REFUSED — respond with REFUSED code NXDOMAIN — respond with NXDOMAIN code Unspecified IP — respond with zero IP address Custom IP — respond with a manually set IP address
+Im *Full-Tunnel*-Modus wird nur der in den AdGuard-Einstellungen angegebene DNS-Server verwendet. Wenn der Server nicht reagiert, funktioniert das Internet einfach nicht. Der aktivierte *Full-Tunnel*-Modus kann die Leistung einiger Programme (z. B. Facetime) beeinträchtigen und zu Problemen bei App-Updates führen.
 
-### Block IPv6
+Standardmäßig verwendet AdGuard den Modus *Split-Tunnel* als stabilste Option.
 
-By moving the toggle to the right, you activate IPv6 query blocking (AAAA requests).
+Es gibt auch einen zusätzlichen Modus namens *Full-Tunnel (ohne VPN-Symbol)*. Dies ist genau dasselbe wie der *Full-Tunnel*-Modus, aber er ist so eingestellt, dass das VPN-Symbol nicht in der Systemzeile angezeigt wird.
 
-### Blocked response TTL
+### Sperrmodus
 
-Hier können Sie den TTL-Wert (Time to Live) angeben, der als Antwort auf eine blockierte Anfrage zurückgegeben wird.
+In diesem Modus können Sie auswählen, wie AdGuard auf DNS-Anfragen reagieren soll, die blockiert werden sollen:
 
-### Bootstrap servers
+- Standard — mit der IP-Adresse Null antworten, wenn durch adblock-ähnliche Regeln blockiert; mit der in der Regel angegebenen IP-Adresse antworten, wenn durch /etc/hosts-ähnliche Regeln blockiert
+- REFUSED — mit REFUSED-Code antworten
+- NXDOMAIN — mit NXDOMAIN-Code antworten
+- Unspezifizierte IP — mit IP-Adresse Null antworten
+- Benutzerdefinierte IP — mit einer manuell festgelegten IP-Adresse antworten
 
-For DNS-over-HTTPS, DNS-over-TLS, and DNS-over-QUIC a bootstrap server is required for getting the IP address of the main DNS server. If not specified, the DNS server from iOS settings is used as the bootstrap server.
+### IPv6 sperren
+
+Wenn Sie den Schalter nach rechts schieben, wird das Sperren von IPv6-Anfragen (AAAA-Anfragen) aktiviert. DNS-Anfragen vom Typ AAAA werden nicht aufgelöst, so dass nur IPv4-Anfragen bearbeitet werden können.
+
+### Gültigkeitsdauer der blockierten Antwort
+
+Hier können Sie den Zeitraum festlegen, in dem ein Gerät die Antwort auf eine DNS-Anfrage zwischenspeichert. Während der angegebenen „Time to live“ (in Sekunden) kann die Anfrage aus dem Cache gelesen werden, ohne dass der DNS-Server erneut angefragt werden muss.
+
+### Bootstrap-Server
+
+Für DNS-over-HTTPS, DNS-over-TLS und DNS-over-QUIC ist ein Bootstrap-Server erforderlich, um die IP-Adresse des Haupt-DNS-Servers zu erhalten. Wenn nicht angegeben, wird der DNS-Server aus den iOS-Einstellungen als Bootstrap-Server verwendet.
 
 ### Fallback-Server
 
-Here you can specify an alternate server to which a request will be rerouted if the main server fails to respond. If not specified, the system DNS server will be used as the fallback. It is also possible to specify `none`, in this case, there will be no fallback server set and only the main DNS server will be used.
+Hier können Sie einen alternativen Server angeben, an den eine Anfrage umgeleitet wird, wenn der Hauptserver nicht antwortet. Wenn nicht angegeben, wird der System-DNS-Server als Ersatz verwendet. Es ist auch möglich, `keine` anzugeben. In diesem Fall wird kein Fallback-Server festgelegt und nur der Haupt-DNS-Server verwendet.
 
-### Background app refresh time
+### App im Hintergrund aktualisieren
 
-Here you can select the frequency at which the application will check for filter updates while in the background. Note that update checks will not be performed more often than the specified period, but the exact intervals may not be respected.
+Hier können Sie festlegen, wie oft die App im Hintergrund nach Filteraktualisierungen suchen soll. Bitte beachten Sie, dass die Prüfung auf Aktualisierungen nicht häufiger als in dem angegebenen Zeitraum durchgeführt wird, wobei die genauen Intervalle nicht unbedingt eingehalten werden.

@@ -9,12 +9,12 @@ sidebar_position: 2
 
 Для начала посмотрите на эту диаграмму, которая показывает общую структуру протокола HTTPS:
 
-![Что такое HTTPS-фильтрация](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
+![What is HTTPS filtering?](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
 
 AdGuard копирует свойства TLS-соединения, которые использует ваш браузер:
 
-* AdGuard использует ту же самую версию TLS
-* AdGuard использует те же методы шифрования (ciphers), что и ваш браузер
+- AdGuard использует ту же самую версию TLS
+- AdGuard использует те же методы шифрования (ciphers), что и ваш браузер
 
 Так что если вы используете современный и безопасный браузер — это хорошо, ведь известные проблемы TLS в нём уже учтены, и он не будет пытаться использовать небезопасные методы шифрования.
 

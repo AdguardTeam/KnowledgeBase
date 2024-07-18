@@ -5,30 +5,49 @@ sidebar_position: 4
 
 ## Lisans başka bir cihaza nasıl aktarılır{#transfer}
 
-The license key can be activated on a [limited number of devices](../what-is#devices). Anahtar, izin verilen maksimum sayıda cihazda zaten kullanılmışsa, hesabınızdan bir cihazı kaldırmanız gerekir.
+The license key can be activated on a [limited number of devices](../what-is). Anahtar, izin verilen maksimum sayıda cihazda zaten kullanılmışsa, hesabınızdan bir cihazı kaldırmanız gerekir.
 
 ### Cihaz nasıl kaldırılır
 
-Bunu yapmanın üç yolu vardır:
+- Click *Reset license* or *Log out* in an AdGuard app
 
-  * *Lisansı sıfırla* düğmesine tıklayarak (yalnızca AdGuard masaüstü uygulamalarında yapılabilir)
-  * AdGuard ürünündeki hesabınızdan çıkış yaparak
-  * AdGuard hesabınızdaki cihazı kaldırarak:
-     1. [AdGuard hesabınızda](https://my.adguard.com/) **AdGuard Reklam Engelleyici** öğesine tıklayın ![Account Ad Blocker tab *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
-     2. Lisans kartında, kaldırmak istediğiniz cihaza tıklayın ![Select device *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-1.png)
-     3. **Kaldır** öğesine tıklayın ![Click Remove *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2.png)
+- Remove the device from your AdGuard account:
+    1. Click *AdGuard Ad Blocker* in your [AdGuard account](https://my.adguard.com/).
+
+        ![Account Ad Blocker tab *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0.png)
+
+    1. Click the device you want to unbind.
+
+        ![Select device *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-1.png)
+
+    1. Click *Remove*.
+
+        ![Click Remove *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2.png)
 
 İhtiyacınız olan sayıda cihazı kaldırdıktan sonra, yeni cihazlarda AdGuard hesabınıza giriş yapabilirsiniz. Lisans onlara bağlı olacaktır.
 
 ## Lisans başka bir AdGuard hesabına nasıl aktarılır{#transferaccount}
 
- 1. Aktarmak istediğiniz lisansı içeren AdGuard hesabına gidin
- 2. **Lisanslar** sekmesine gidin
- 3. Aktarmak istediğiniz lisansı bulun ve **Hesaptan kaldır** öğesine tıklayın ![Click Unbind from account *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account.png)
- 4. **Kaldır** öğesine tıklayın (**Önemli**: lisans anahtarını not ettiğinizden veya hatırladığınızdan emin olun) ![Remeber license key *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account-1.png)
- 4. Lisansı aktarmak istediğiniz AdGuard hesabına gidin
- 5. **Lisanslar** sekmesine gidin
- 6. Sağ üst köşedeki **Lisansı bağla** öğesine tıklayın ![Bind license *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account-2.png)
- 7. Lisans anahtarınızı girin (3. adımdan itibaren)
+1. Go to the AdGuard account that contains the license you would like to transfer.
+
+1. Go to the *Licenses* tab.
+
+1. Find the license you want to transfer and click *Unbind from account*.
+
+    ![Click Unbind from account](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account.png)
+
+1. Click *Unbind* (**Important**: be sure to save the license key).
+
+    ![Remember the license key *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account-1.png)
+
+1. Go to the AdGuard account that you would like to transfer the license to.
+
+1. Go to the *Licenses* tab.
+
+1. Click *Bind license* in the upper right corner.
+
+    ![Bind license *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account-2.png)
+
+1. Enter your license key (from step 3).
 
 İlk hesabınıza erişememeniz durumunda, lütfen support@adguard.com adresinden destek ekibimizle iletişime geçin.

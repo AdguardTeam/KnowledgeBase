@@ -5,7 +5,7 @@ sidebar_position: 6
 
 :::info
 
-Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -13,7 +13,7 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 :::caution
 
-Změna *Nízkoúrovňových nastavení* může způsobit problémy s výkonem AdGuardu, může přerušit internetové připojení nebo ohrozit vaši bezpečnost a soukromí. Tuto část byste měli otevřít pouze v případě, že jste si jisti tím, co děláte, nebo pokud se vás na to zeptal náš tým podpory.
+Změna *Nízkoúrovňových nastavení* může způsobit problémy s výkonem AdGuardu, může přerušit internetové připojení nebo ohrozit vaši bezpečnost a soukromí. Tuto sekci byste měli otevřít pouze v případě, že víte, co děláte, nebo vás o to požádal náš tým podpory.
 
 :::
 
@@ -45,17 +45,17 @@ Bootstrap DNS pro servery DoH, DoT a DoQ. *Automatický DNS* — systémový DNS
 
 Zde můžete zadat typ odpovědi pro domény blokované DNS pravidly na základě syntaxe pravidla adblock (například `||example.org^`).
 
-*  Odezva s REFUSED (výchozí)
-*  Odezva s NXDOMAIN
-*  Odezva pomocí vlastní IP adresy (zde lze zadat adresy IPv4 a IPv6)
+- Odezva s REFUSED
+- Odezva s NXDOMAIN
+- Odezva pomocí vlastní IP adresy (zde lze zadat adresy IPv4 a IPv6)
 
 #### Režim blokování pro pravidla hosts
 
 Zde můžete zadat typ odpovědi pro domény blokované DNS pravidly na základě syntaxe pravidla hosts (například `<ip> <domain> 0.0.0.0 example.com`).
 
-*  Odezva s REFUSED
-*  Odezva s NXDOMAIN
-*  Odezva pomocí vlastní IP adresy (zde lze zadat adresy IPv4 a IPv6) – výchozí
+- Odezva s REFUSED
+- Odezva s NXDOMAIN
+- Odezva pomocí vlastní IP adresy (zde lze zadat adresy IPv4 a IPv6)
 
 #### Časový limit DNS požadavku
 
@@ -75,29 +75,39 @@ Pokud je tato možnost povolena, AdGuard odstraní z DNS dotazů parametry Encry
 
 #### Ignorovat nedostupný odchozí proxy
 
-Tuto funkci povolte, aby AdGuard odesílal DNS požadavky DNS přímo, pokud je odchozí proxy nedostupný.
+Pokud je toto nastavení povoleno, bude AdGuard v případě nedostupnosti odchozího proxy serveru odesílat DNS požadavky napřímo.
 
 #### Vyzkoušet HTTP/3 pro odchozí připojení DNS-over-HTTPS
 
-Ve výchozím nastavení jsou všechny DNS požadavky pro DNS-over-HTTPS odesílány prostřednictvím protokolu HTTP/2. Pokud je tato funkce povolena, používá AdGuard protokol HTTP/3 ke zrychlení řešení dotazů DNS pro upstreamy DoH.
+Pokud je toto nastavení povoleno, bude AdGuard používat protokol HTTP/3 ke zrychlení řešení dotazů DNS pro odchozí připojení DoH. V opačném případě se AdGuard vrátí ke svému výchozímu chování a použije protokol HTTP/2 k odesílání všech DN požadavkůS pro DNS-over-HTTPS.
 
 #### Reakce na selhání SERVFAIL
 
-Jakmile je tato funkce povolena, odešle AdGuard klientovi odpověď SERVFAIL, pokud všechna odchozí připojení, včetně záložních neodpoví. Pokud je toto nastavení zakázáno, klientovi se neodešle žádná odpověď.
+Pokud je toto nastavení povoleno a všechna odchozí připojení, včetně záložních, neodpovídají, odešle AdGuard klientovi odpověď SERVFAIL.
 
 #### Použít záložní řešení pro domény, které nejsou záložní
 
-Tuto funkci povolte, pokud chcete, aby AdGuard používal záložní odchozí připojení pro všechny domény. V opačném případě se záložní odchozí připojení použije pouze pro záložní domény a vyhledávací domény, pokud je příslušná možnost povolena.
+Pokud je toto nastavení povoleno, AdGuard použije záložní odchozí připojení pro všechny domény. V opačném případě se záložní odchozí připojení použije pouze pro záložní domény a vyhledávací domény, pokud je příslušná možnost povolena.
 
 #### Ověřit odchozí připojení DNS
 
-Umožněte AdGuardu testovat odchozí připojení DNS před přidáním nebo aktualizací vlastních DNS serverů.
+Pokud je toto nastavení povoleno, bude AdGuard před přidáním nebo aktualizací vlastních DNS serverů testovat odchozí připojení DNS.
+
+#### Filtrování zabezpečeného DNS
+
+Pokud je toto nastavení zapnuto, AdGuard použije všechny povolené DNS filtry a uživatelská pravidla DNS na šifrovaný provoz DNS-over-HTTPS (DoH), nikoli pouze na běžný DNS. Provoz DoH většinou pochází z Chrome a dalších prohlížečů, které mají nastavení *Zabezpečený DNS* (nebo podobné). Můžete použít *Filtrování zabezpečeného DNS* ve dvou různých režimech:
+
+- **Filtrování za chodu**. V tomto režimu AdGuard použije všechny povolené DNS filtry a uživatelská pravidla DNS na provoz DoH, ale nepřesměruje jej na místní proxy server DNS. Pokud je v nastavení prohlížeče uveden DNS server, bude tento server zpracovávat provoz DoH pro tento prohlížeč
+
+- **Přesměrování na DNS proxy**. V tomto režimu AdGuard použije všechny povolené DNS filtry a uživatelská pravidla DNS na přenosy DoH tak, že je přesměruje na místní proxy server DNS. Server DNS zadaný v nastavení DNS AdGuardu bude zpracovávat veškerý provoz DoH
 
 ### Filtrování
 
 #### Zachytit HAR
 
-Zde můžete povolit zachycení souboru HAR. Používejte to pouze pro účely ladění! Pokud je toto nastavení povoleno, AdGuard vytvoří adresář s názvem "har" uvnitř adresáře mezipaměti aplikace. Obsahuje informace o všech filtrovaných požadavcích HTTP ve formátu HAR 1.2 a lze je analyzovat pomocí programu Fiddler.
+Pokud je toto nastavení povoleno, bude AdGuard zachycovat soubory HAR. Vytvoří adresář s názvem “har” uvnitř adresáře mezipaměti aplikace a přidá do něj informace o všech filtrovaných požadavcích HTTP ve formátu HAR 1.2, které lze analyzovat pomocí programu Fiddler.
+
+Používejte to pouze pro účely ladění!
 
 ### HTTPS filtrování
 
@@ -107,21 +117,25 @@ Každé šifrované internetové připojení má i nešifrovanou část. Jedná 
 
 #### Kontrola OCSP
 
-Po povolení této možnosti se spustí asynchronní kontroly OCSP, aby se ověřilo, zda není SSL certifikát webové stránky odvolán.
+Pokud je toto nastavení povoleno, bude AdGuard provádět asynchronní kontroly OCSP, aby zjistil stav odvolání certifikátu SSL webové stránky.
 
-Pokud se kontrola OCSP dokončí během minimálního časového limitu, AdGuard okamžitě zablokuje připojení, pokud je certifikát odvolán nebo naváže připojení, pokud je certifikát platný.
+Pokud se kontrola OCSP dokončí během požadovaného časového limitu, AdGuard okamžitě zablokuje připojení, pokud je certifikát odvolán nebo naváže připojení, pokud je certifikát platný.
 
-Pokud ověření trvá příliš dlouho, AdGuard naváže spojení a pokračuje v kontrole certifikátu na pozadí. Pokud je certifikát odvolán, budou současná i budoucí připojení k doméně zablokována.
+Pokud ověření trvá příliš dlouho, AdGuard připojení povolí a zároveň pokračuje v kontrole stavu certifikátu na pozadí. Pokud je certifikát odvolán, budou současná i budoucí připojení k doméně zablokována.
 
 #### Přesměrovat požadavky DNS skrze HTTPS
 
-POKUD je povoleno, budou požadavky DNS-over-HTTPS přesměrovány na modul DNS ochrany. Doporučujeme vypnout záložní odchozí připojení a používat pouze šifrované DNS servery, aby bylo zachováno soukromí.
+Pokud je toto nastavení povoleno, bude AdGuard kromě běžných DNS požadavků přesměrovávat požadavky DNS-over-HTTPS na místní proxy server DNS. Doporučujeme vypnout záložní odchozí připojení a používat pouze šifrované DNS servery, aby bylo zachováno soukromí.
+
+#### Filtrování HTTP/3
+
+Pokud je toto nastavení povoleno, bude AdGuard filtrovat kromě jiných typů požadavků také požadavky odeslané skrze HTTP/3.
 
 ### Odchozí proxy
 
 #### Zobrazit nastavení "Filtrovat požadavky DNS"
 
-Je-li tato funkce povolena, zobrazí se v části *Nastavení ➝ Filtování ➝ Síť ➝ Proxy ➝ Proxy server ➝ Přidat proxy server* řetězec *Filtrovat DNS požadavky* s přepínačem vedle něj. Přepnutím přepínače můžete povolit filtrování DNS požadavků procházejících přes proxy.
+Pokud je toto povoleno, v dialogovém okně *Přidat proxy server* se zobrazí přepínač *Filtrovat DNS požadavky*. Slouží k povolení filtrování DNS požadavků procházejících přes zadaný proxy.
 
 ### Ochrana
 
@@ -131,11 +145,11 @@ Zde můžete zadat rozsahy portů, které mají být filtrovány.
 
 #### Zaznamenat odstraněné HTML události
 
-Pokud je tato funkce povolena, AdGuard zapíše blokované prvky HTML do záznamu filtrování.
+Pokud je toto nastavení povoleno, AdGuard zaznamená blokované prvky HTML v sekci *Nedávná aktivita*.
 
 #### Ladění skripletů
 
-Pokud potřebujete aktivovat ladění skriptletů, povolte tuto funkci. V záznamech prohlížeče se pak objeví hlášení, že byla použita některá pravidla scripletu.
+Pokud je toto nastavení povoleno, bude aktivováno ladění skriptletů a protokol prohlížeče bude zaznamenávat použití pravidel skriptletů.
 
 #### Vyloučené aplikace
 
@@ -147,23 +161,23 @@ Zde můžete zadat názvy balíčků, pro které má AdGuard obejít provoz QUIC
 
 #### Překonfigurovat automatický proxy při změně sítě
 
-Toto nastavení povolte, pokud chcete, aby se ochrana restartovala a překonfigurovala automatické nastavení proxy, když se zařízení připojí k jiné síti. Stav tohoto nastavení ovlivňuje provoz pouze v případě, že je aktuální režim směrování nastaven na Automatický proxy.
+Pokud je toto nastavení povoleno, ochrana AdGuardem se po připojení zařízení k jiné síti znovu spustí a znovu nakonfiguruje automatické nastavení proxy. Toto nastavení platí pouze v případě, že je *Režim směrování* nastaven na *Automatický proxy*.
 
 #### Filtrování IPv6
 
-Je-li tato možnost povolena, AdGuard filtruje sítě IPv6, pokud je k dispozici síťové rozhraní IPv6.
+Pokud je toto nastavení povoleno, bude AdGuard filtrovat sítě IPv6, pokud je k dispozici síťové rozhraní IPv6.
 
 #### Rozsahy IPv4 vyloučené z filtrování
 
-Filtrování rozsahů IPv4 uvedených v této části bude vypnuto.
+Filtrování rozsahů IPv4 uvedených v této části je vypnuto.
 
 #### Rozsahy IPv6 vyloučené z filtrování
 
-Filtrování rozsahů IPv6 uvedených v této části bude vypnuto.
+Filtrování rozsahů IPv6 uvedených v této části je vypnuto.
 
 #### Zachování záznamů TCP pro odchozí sokety
 
-Pokud je tato funkce povolena, AdGuard po uplynutí zadané doby odešle udržovací sondu, aby se ujistil, zda je připojení TCP funkční. Zde můžete zadat dobu nečinnosti protokolu udržení TCP před zahájením sond udržení a dobu mezi sondami udržení pro neodpovídajícího partnera.
+Pokud je toto nastavení povoleno, AdGuard po uplynutí zadané doby odešle udržovací sondu, aby se ujistil, zda je připojení TCP funkční. Zde můžete zadat dobu nečinnosti před spuštěním sond udržení a dobu mezi sondami udržení pro neodpovídajícího partnera.
 
 Po systémem definovaném počtu neúspěšných pokusů o získání odpovědi ze serveru systém automaticky ukončí připojení TCP.
 
@@ -183,15 +197,15 @@ Zde můžete nastavit maximální přenosovou jednotku (MTU) rozhraní VPN. Dopo
 
 #### Automatické obnovení VPN
 
-Pokud je tato funkce povolena, automaticky znovu zapne místní síť VPN AdGuardu poté, co byla vypnuta z důvodu nepřítomnosti sítě, tetheringu nebo režimu s nízkou spotřebou energie.
+Pokud je toto nastavení povoleno, lokální VPN AdGuardu se po vypnutí z důvodu nepřítomnosti sítě, tetheringu nebo režimu s nízkou spotřebou energie automaticky znovu zapne.
 
 #### Zachycování paketů (PCAP)
 
-Pokud je tato funkce povolena, AdGuard vytvoří speciální soubor s názvem `timestamp.pcap` (např. 1682599851461.pcap). Obsahuje všechny síťové pakety přenášené prostřednictvím VPN. Tento soubor se nachází v adresáři mezipaměti aplikace a lze jej analyzovat pomocí programu Wireshark.
+Pokud je toto nastavení povoleno, AdGuard vytvoří soubor `timestamp.pcap` (např. 1682599851461.pcap) v adresáři mezipaměti aplikace. Tento soubor obsahuje seznam všech síťových paketů přenesených skrze VPN a lze jej analyzovat pomocí programu Wireshark.
 
 #### Zahrnout bránu Wi-Fi v trasách VPN
 
-Pokud chcete, aby se IP adresy brány přidávaly do tras VPN při připojení k síti Wi-Fi, povolte tuto funkci.
+Pokud je toto nastavení povoleno, budou IP adresy brány přidány do tras VPN při připojení k Wi-Fi.
 
 #### Adresa IPv4
 
@@ -199,11 +213,11 @@ Zde můžete zadat IP adresu, která bude použita pro vytvoření rozhraní TUN
 
 #### Vynucené směrování LAN IPv4
 
-Je-li tato možnost povolena, AdGuard filtruje všechna připojení LAN, včetně místního síťového provozu IPv4, i když je povolena možnost *Směrovat všechna připojení IPv4 LAN*.
+Pokud je toto nastavení povoleno, AdGuard bude filtrovat všechna připojení LAN, včetně místního síťového provozu IPv4, i když je povolena možnost *Směrovat všechna připojení IPv4 LAN*.
 
 #### Nucené směrování všech LAN IPv4
 
-Po aktivaci této funkce, AdGuard vyloučí připojení LAN z filtrování pro jednoduché sítě. Nemusí fungovat pro složité sítě. Funguje pouze s vypnutou možností *Vynuceně směrovat LAN IPv4*.
+Pokud je toto nastavení povoleno, AdGuard vyloučí připojení LAN z filtrování pro jednoduché sítě. To nemusí fungovat pro složité sítě. Toto nastavení platí pouze v případě, že je zakázána možnost *Vynutit směrování LAN IPv4*.
 
 #### Adresa IPv6
 
@@ -213,4 +227,4 @@ Zde můžete zadat IP adresu, která bude použita pro vytvoření rozhraní TUN
 
 #### Detekce Samsung Pay
 
-Korejští uživatelé se mohou setkat s problémy se službou Samsung Pay, pokud je AdGuard zaptutý. Aktivací této funkce pozastavíte ochranu AdGuardem a můžete bez problémů používat aplikaci Samsung Pay.
+Pokud je toto nastavení povoleno, ochrana AdGuardem bude během používání Samsung Pay pozastavena. Korejští uživatelé tuto funkci vyžadují, protože při zapnutém AdGuardu mají problémy se [Samsung Pay](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea).

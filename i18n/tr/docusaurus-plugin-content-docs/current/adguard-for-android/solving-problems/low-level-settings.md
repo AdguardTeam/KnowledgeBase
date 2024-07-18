@@ -1,29 +1,29 @@
 ---
-title: Low Level Settings guide
+title: Alt seviye ayarlar rehberi
 sidebar_position: 6
 ---
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Android için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
-## How to reach the Low-level settings
+## Alt seviye ayarlara nasıl ulaşılır
 
 :::caution
 
-Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only open this section if you are sure of what you are doing or our support-team has asked you about it.
+Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. This section should only be opened if you know what you are doing, or you were asked to do so by our support team.
 
 :::
 
-To go to *Low-level settings*, open the AdGuard app and tap the gear icon in the lower right corner of the screen. Then choose *General → Advanced → Low-level settings*.
+*Alt seviye ayarlar* öğesine gitmek için AdGuard uygulamasını açın ve ekranın sağ alt köşesindeki dişli çark simgesine dokunun. Then choose *General → Advanced → Low-level settings*.
 
 ## Low-level settings
 
 For AdGuard v4.0 for Android we've completely redesigned the low-level settings: divided them into thematic blocks, made them clearer, added validation of entered values and other safety valves, got rid of some settings, and added others.
 
-### DNS protection
+### DNS koruması
 
 #### Yedek üst kaynaklar
 
@@ -35,31 +35,31 @@ Here you can list domains that will be forwarded directly to fallback upstreams 
 
 #### Arama alan adlarını tespit et
 
-Bu seçenek etkinleştirilirse, AdGuard Arama alan adlarını algılar ve bunları otomatik olarak yedek üst kaynaklara yönlendirir.
+Bu ayar etkinleştirilirse, AdGuard arama alan adlarını algılar ve bunları otomatik olarak yedek üst kaynaklara iletir.
 
 #### Önyükleme üst kaynakları
 
-Bootstrap DNS for DoH, DoT, and DoQ servers. The *Automatic DNS* - the system DNS or AdGuard DNS - is used by default. By selecting *Custom DNS*, you can list IPv4 and IPv6 server addresses to use as bootstrap upstreams.
+Bootstrap DNS for DoH, DoT, and DoQ servers. The *Automatic DNS* — the system DNS or AdGuard DNS — is used by default. By selecting *Custom DNS*, you can list IPv4 and IPv6 server addresses to use as bootstrap upstreams.
 
-#### Blocking mode for adblock-style rules
+#### Reklam engelleme stili kuralları için engelleme modu
 
 Here you can specify the response type for domains blocked by DNS rules based on adblock rule syntax (for instance, `||example.org^`).
 
-*  Respond with REFUSED (default)
-*  Respond with NXDOMAIN
-*  Respond with Custom IP address (IPv4 and IPv6 addresses can be specified here)
+- REFUSED ile yanıt verin
+- Respond with NXDOMAIN
+- Respond with Custom IP address (IPv4 and IPv6 addresses can be specified here)
 
-#### Blocking mode for hosts rules
+#### hosts kuralları için engelleme modu
 
 Here you can specify the response type for domains blocked by DNS rules based on hosts rule syntax (for instance, `<ip> <domain> 0.0.0.0 example.com`).
 
-*  Respond with REFUSED
-*  Respond with NXDOMAIN
-*  Respond with Custom IP address (IPv4 and IPv6 addresses can be specified here) – default
+- Respond with REFUSED
+- Respond with NXDOMAIN
+- Özel IP adresiyle yanıt verin (IPv4 ve IPv6 adresleri burada belirtilebilir)
 
 #### DNS isteği zaman aşımı
 
-Here you can specify the time in milliseconds that AdGuard will wait for the response from the selected DNS server before resorting to fallback. If you don’t fill in this field or enter an invalid value, the value of 5000 will be used.
+Here you can specify the time in milliseconds that AdGuard will wait for the response from the selected DNS server before resorting to fallback. Bu alanı doldurmazsanız veya geçersiz bir değer girerseniz, 5000 değeri kullanılacaktır.
 
 #### Engellenen yanıt kullanım süresi
 
@@ -75,95 +75,109 @@ If enabled, AdGuard strips Encrypted Client Hello parameters from DNS responses.
 
 #### Ignore unavailable outbound proxy
 
-Enable this feature to make AdGuard send DNS requests directly if the outbound proxy is unavailable.
+Bu ayar etkinleştirilirse, AdGuard giden proxy kullanılamadığında doğrudan DNS isteklerini gönderir.
 
 #### Try HTTP/3 for DNS-over-HTTPS upstreams
 
-By default, all DNS requests for DNS-over-HTTPS are sent via HTTP/2 protocol. If enabled, AdGuard uses HTTP/3 to speed up DNS query resolution for DoH upstreams.
+Bu ayar etkinleştirilirse, AdGuard DoH üst kaynaklar için DNS sorgu çözümlemesini hızlandırmak amacıyla HTTP/3'ü kullanır. Aksi takdirde, AdGuard varsayılan davranışına geri döner ve DNS-over-HTTPS için tüm DNS isteklerini göndermek üzere HTTP/2'yi kullanır.
 
 #### SERVFAIL hata yanıtı
 
-Once enabled, AdGuard sends a SERVFAIL response to the client if all upstreams, including fallback ones, fail to reply. When this setting is disabled, no response is sent to the client.
+Bu ayar etkinleştirilirse ve yedek olanlar da dahil olmak üzere tüm üst kaynaklar yanıt vermezse AdGuard, istemciye bir SERVFAIL yanıtı gönderir.
 
 #### Use fallback for non-fallback domains
 
-Enable this feature if you want AdGuard to use fallback upstream for all domains. Otherwise, fallback upstream will only be used for fallback domains and search domains if the corresponding option is enabled.
+Bu ayar etkinleştirilirse, AdGuard tüm alan adları için yedek üst kaynaklarını kullanır. Aksi takdirde, yedek üst kaynaklar yalnızca yedek alan adları ve arama alan adlarıı için ilgili seçeneğin etkinleştirilmesi durumunda kullanılacaktır.
 
 #### DNS üst kaynaklarını doğrula
 
-Enable to make AdGuard test DNS upstreams before adding or updating custom DNS servers.
+Bu ayar etkinleştirilirse, AdGuard özel DNS sunucularını eklemeden veya güncellemeden önce DNS üst kaynakları test eder.
+
+#### Güvenli DNS'i filtrele
+
+If this setting is on, AdGuard will apply all enabled DNS filters and DNS user rules to encrypted DNS-over-HTTPS (DoH) traffic and not only to plain DNS. DoH traffic mostly comes from Chrome and other browsers that have a *Secure DNS* (or similar) setting. You can use *Filter secure DNS* in two different modes:
+
+- **Anında filtrele**. In this mode, AdGuard applies all enabled DNS filters and DNS user rules to DoH traffic but doesn’t redirect it to the local DNS proxy. If a DNS server is specified in the browser’s settings, this server will handle the DoH traffic for this browser
+
+- **Redirect to DNS proxy**. In this mode, AdGuard applies all enabled DNS filters and DNS user rules to DoH traffic by redirecting it to the local DNS proxy. The DNS server specified in the AdGuard’s DNS settings will handle all DoH traffic
 
 ### Filtreleme
 
 #### HAR'ı yakala
 
-Here you can enable HAR file capture. Use it only for debugging purposes! If the setting is enabled, AdGuard will create a directory named "har" inside the app cache directory. It contains information about all filtered HTTP requests in HAR 1.2 format and can be analyzed with the Fiddler program.
+Bu ayar etkinleştirilirse, AdGuard HAR dosyalarını yakalar. It will create a directory named “har” inside the app cache directory and add there information about all filtered HTTP requests in HAR 1.2 format that can be analyzed with the Fiddler program.
 
-### HTTPS filtering
+Yalnızca hata ayıklama amacıyla kullanın!
+
+### HTTPS filtreleme
 
 #### Encrypted Client Hello
 
-Every encrypted Internet connection has an unencrypted part. This is the very first packet which contains the name of the server you are connecting to. Encrypted Client Hello technology is supposed to solve this issue and encrypt that last bit of unencrypted information. To benefit from it, enable the *Encrypted Client Hello* option. Alan adı için ECH yapılandırmasını aramak için yerel bir DNS proxy'si kullanır. If it is found, ClientHello packet will be encrypted.
+Her şifrelenmiş internet bağlantısının bir de şifrelenmemiş kısmı vardır. Bu, bağlandığınız sunucunun adını içeren ilk pakettir. Encrypted Client Hello teknolojisinin bu sorunu çözmesi ve şifrelenmemiş bilgilerin son kısmını şifrelemesi gerekiyor. To benefit from it, enable the *Encrypted Client Hello* option. Alan adı için ECH yapılandırmasını aramak için yerel bir DNS proxy'si kullanır. Eğer bulunursa, ClientHello paketi şifrelenecektir.
 
-#### OCSP checking
+#### OCSP denetimi
 
-Once enabled, this option runs asynchronous OCSP checks to check whether the website’s SSL certificate is revoked.
+Bu ayar etkinleştirilirse, AdGuard bir sitenin SSL sertifikasının iptal durumunu almak için zaman uyumsuz OCSP denetimleri gerçekleştirir.
 
-If the OCSP check is completed within the minimum timeout, AdGuard will immediately block the connection if the certificate is revoked or establish the connection if the certificate is valid.
+If an OCSP check is completed within the required timeout, AdGuard will immediately block the connection if the certificate is revoked or establish the connection if the certificate is valid.
 
-If the verification takes too long, AdGuard will establish a connection and continue checking the certificate in the background. If it is revoked, current and future connections to the domain will be blocked.
+Doğrulama çok uzun sürerse, AdGuard arka planda sertifika durumunu kontrol etmeye devam ederken bağlantıya izin verir. Sertifika iptal edilirse alan adına yapılan mevcut ve gelecekteki bağlantılar engellenecektir.
 
-#### Redirect DNS-over-HTTPS requests
+#### DNS-over-HTTPS isteklerini yönlendir
 
-IF enabled, DNS-over-HTTPS requests will be redirected to the DNS Protection module. We recommend disabling fallback upstreams and use only encrypted DNS servers to maintain privacy.
+Bu ayar etkinleştirilirse, AdGuard düz DNS isteklerine ek olarak DNS-over-HTTPS isteklerini yerel DNS proxy'sine yönlendirir. Gizliliği korumak için yedek üst kaynakları devre dışı bırakmanızı ve yalnızca şifrelenmiş DNS sunucularını kullanmanızı tavsiye ederiz.
 
-### Outbound Proxy
+#### HTTP/3'ü filtrele
 
-#### Show the Filter DNS requests setting
+Bu ayar etkinleştirilirse, AdGuard diğer istek türlerine ek olarak HTTP/3 üzerinden gönderilen istekleri de filtreler.
 
-When this feature is enabled, the string *Filter DNS requests* appears in the *Settings ➝ Filtering ➝ Network ➝ Proxy ➝ Proxy server ➝ Add proxy server* section with the switch next to it. By toggling the switch, you can enable filtering of DNS requests passing through the proxy.
+### Giden proxy
 
-### Protection
+#### DNS isteklerini filtreleme ayarını göster
 
-#### Port ranges
+Bu etkinleştirilirse, *Proxy sunucusu ekle* uyarısında *DNS isteklerini filtrele* düğmesi görüntülenecektir. Belirtilen proxy üzerinden geçen DNS isteklerinin filtrelenmesini etkinleştirmek için bunu kullanın.
 
-Here you can specify port ranges that should be filtered.
+### Koruma
 
-#### Log removed HTML events
+#### Bağlantı noktası aralıkları
 
-If enabled, AdGuard records blocked HTML elements in the filtering log.
+Burada filtrelenmesi gereken bağlantı noktası aralıklarını belirtebilirsiniz.
+
+#### Kaldırılan HTML olaylarını günlüğe kaydet
+
+Bu ayar etkinleştirilirse, AdGuard engellenen HTML öğelerini *Son etkinlik* öğesinde kaydeder.
 
 #### Scriplet debugging
 
-If you need to activate debugging of scriptlets, enable this feature. Then there will be messages in the browser log that some scriplet rules have been applied.
+If this setting is enabled, debugging in scriptlets will be activated, and the browser log will record when scriptlet rules are applied.
 
-#### Excluded apps
+#### Hariç tutulan uygulamalar
 
-Here you can list package names and UIDs that you want to exclude from AdGuard protection.
+Burada AdGuard korumasından hariç tutmak istediğiniz paket adlarını ve UID'leri listeleyebilirsiniz.
 
-#### QUIC bypass packages
+#### QUIC atlama paketleri
 
-Here you can specify package names for which AdGuard should bypass QUIC traffic.
+Burada AdGuard'ın QUIC trafiğini atlaması gereken paket adlarını belirtebilirsiniz.
 
-#### Reconfigure Automatic proxy when network changes
+#### Ağ değişikliklerinde proxy'yi otomatik yeniden yapılandır
 
-Enable this setting if you want the protection to restart to reconfigure the automatic proxy settings when the device connects to another network. The state of this setting affects operation only if the current routing mode is Automatic proxy.
+Bu ayar etkinleştirilirse, cihazınız başka bir ağa bağlandığında otomatik proxy ayarlarını yeniden yapılandırmak için AdGuard koruması yeniden başlatılır. Bu ayar yalnızca *Yönlendirme modu* *Otomatik proxy* olarak ayarlanmışsa geçerlidir.
 
-#### IPv6 filtering
+#### IPv6 filtreleme
 
-If enabled, AdGuard filters IPv6 networks if an IPv6 network interface is available.
+Bu ayar etkinleştirilirse, AdGuard bir IPv6 ağ arayüzü varsa IPv6 ağlarını filtreler.
 
-#### IPv4 ranges excluded from filtering
+#### Filtrelemeden hariç tutulan IPv4 aralıkları
 
-Filtering for IPv4 ranges, listed in this section, will be disabled.
+Bu bölümde listelenen IPv4 aralıkları için filtreleme devre dışıdır.
 
-#### IPv6 ranges excluded from filtering
+#### Filtrelemeden hariç tutulan IPv6 aralıkları
 
-Filtering for IPv6 ranges, listed in this section, will be disabled.
+Bu bölümde listelenen IPv6 aralıkları için filtreleme devre dışıdır.
 
 #### TCP keepalive for outgoing sockets
 
-If enabled, AdGuard sends a keepalive probe after the specified time period to ensure that the TCP connection is alive. Here you can specify the TCP keepalive idle time before starting keepalive probes and time between keepalive probes for an unresponsive peer.
+If this setting is enabled, AdGuard will send a keepalive probe after the specified time period to ensure that the TCP connection is alive. Here, you can specify the idle time before starting keepalive probes and the time between keepalive probes for an unresponsive peer.
 
 After a system-defined number of unsuccessful attempts to get a response from the server, the system automatically closes the TCP connection.
 
@@ -171,11 +185,11 @@ After a system-defined number of unsuccessful attempts to get a response from th
 
 #### Recovery delay for revoked VPN
 
-Here you can set the time of a delay in milliseconds before AdGuard tries to restore VPN protection after it has been revoked by a third-party VPN app or by deleting the VPN profile. The default value is 5000 ms.
+Here you can set the time of a delay in milliseconds before AdGuard tries to restore VPN protection after it has been revoked by a third-party VPN app or by deleting the VPN profile. Varsayılan değer 5000 ms'dir.
 
 #### Reschedule delay for revoked VPN recovery
 
-Here you can set the time of a delay in milliseconds before AdGuard reschedules the restoration of VPN protection after it has been revoked by a third-party VPN app or by deleting the VPN profile. The default value is 5000 ms.
+Here you can set the time of a delay in milliseconds before AdGuard reschedules the restoration of VPN protection after it has been revoked by a third-party VPN app or by deleting the VPN profile. Varsayılan değer 5000 ms'dir.
 
 #### MTU
 
@@ -183,34 +197,34 @@ Here you can set the maximum transmission unit (MTU) of the VPN interface. The r
 
 #### Restore VPN automatically
 
-If enabled, this feature automatically re-enables AdGuard’s local VPN after it has been turned off due to network absence, tethering, or low-power mode.
+Bu ayar etkinleştirilirse, AdGuard'ın yerel VPN'i ağ yokluğu, tethering veya düşük güç modu nedeniyle kapatıldıktan sonra otomatik olarak yeniden etkinleştirilir.
 
-#### Packet capture (PCAP)
+#### Paket yakalama (PCAP)
 
-If enabled, AdGuard will create the special file name `timestamp.pcap` (for instance, 1682599851461.pcap). It contains all network packets transferred through the VPN. This file is located in the app cache directory and can be analyzed with the Wireshark program.
+Bu ayar etkinleştirilirse, AdGuard uygulama önbellek dizininde bir `timestamp.pcap` dosyası (örneğin, 1682599851461.pcap) oluşturur. Bu dosya VPN üzerinden aktarılan tüm ağ paketlerini listeler ve Wireshark programıyla analiz edilebilir.
 
 #### Include Wi-Fi gateway in VPN routes
 
-If you want the gateway IP addresses to be added to VPN routes when on Wi-Fi, enable this feature.
+If this setting is enabled, the gateway IP addresses will be added to VPN routes when on Wi-Fi.
 
-#### IPv4 address
+#### IPv4 adresi
 
-Here you can enter the IP address that will be used to create a TUN interface. By default, it is `172.18.11.218`.
+Burada TUN arayüzü oluşturmak için kullanılacak IP adresini girebilirsiniz. Varsayılan olarak `172.18.11.218` şeklindedir.
 
-#### Forcibly route LAN IPv4
+#### LAN IPv4'ü zorla yönlendir
 
-When enabled, AdGuard filters all LAN connections, including local IPv4 network traffic, even if the *Route all LAN IPv4 connections* option is enabled.
+Bu ayar etkinleştirilirse, *Tüm LAN IPv4 bağlantılarını yönlendir* seçeneği etkinleştirilmiş olsa bile, AdGuard yerel IPv4 ağ trafiği de dahil olmak üzere tüm LAN bağlantılarını filtreler.
 
-#### Route all LAN IPv4 connections
+#### Tüm LAN IPv4 bağlantılarını yönlendir
 
-Once enabled, AdGuard excludes LAN connections from filtering for simple networks. May not work for complex networks. Works only with the *Forcibly route LAN IPv4* option disabled.
+Bu ayar etkinleştirilirse, AdGuard LAN bağlantılarını basit ağlar için filtrelemeden hariç tutacaktır. Bu, karmaşık ağlar için işe yaramayabilir. Bu ayar yalnızca *LAN IPv4'ü zorla yönlendir* devre dışı bırakıldığında geçerlidir.
 
-#### IPv6 address
+#### IPv6 adresi
 
-Here you can enter the IP address that will be used to create a TUN interface. By default, it is `2001:db8:ad:0:ff::`.
+Burada TUN arayüzü oluşturmak için kullanılacak IP adresini girebilirsiniz. Varsayılan olarak `2001:db8:ad:0:ff::` şeklindedir.
 
-### Miscellaneous
+### Diğer
 
-#### Detect Samsung Pay
+#### Samsung Pay'i tespit et
 
-Korean users may encounter issues with Samsung Pay when AdGuard is enabled. Activate this feature to pause AdGuard's protection and use the Samsung Pay app seamlessly.
+Bu ayar etkinleştirilirse, Samsung Pay kullanımdayken AdGuard koruması duraklatılacaktır. Koreli kullanıcılar, AdGuard etkinleştirildiğinde [Samsung Pay ile ilgili sorunlar](/adguard-for-android/solving-problems/samsungpay-with-adguard-in-south-korea) yaşadıkları için bu özelliğe ihtiyaç duymaktadır.

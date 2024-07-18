@@ -1,23 +1,23 @@
 ---
-title: Overview
+title: Genel Bakış
 sidebar_position: 1
 slug: /
 ---
 
-## What is AdGuard Ad Blocker?
+## AdGuard Reklam Engelleyici nedir?
 
-AdGuard is one of the leaders on the market of ad-blocking software with 10+ years of experience, almost a dozen products for various platforms, and over 30 million user installs. Unlike other ad-blocking solutions, most of which are browser-based, we offer standalone apps for all major platforms, both desktop and mobile. AdGuard apps are more powerful than browser extensions, can block more and do it more efficiently:
+AdGuard, 15 yılı aşkın deneyimi, çeşitli platformlar için neredeyse onlarca ürünü ve 375 milyondan fazla kullanıcı yüklemesiyle reklam engelleme yazılımı pazarının liderlerinden biridir. Çoğu tarayıcı tabanlı olan diğer reklam engelleme çözümlerinin aksine, hem masaüstü hem de mobil olmak üzere tüm büyük platformlar için bağımsız uygulamalar sunuyoruz. AdGuard uygulamaları tarayıcı uzantılarından daha güçlüdür, daha fazlasını engelleyebilir ve bunu daha verimli bir şekilde yapabilir:
 
-* [AdGuard for Windows](/adguard-for-windows/overview)
-* [AdGuard for Mac](/adguard-for-mac/overview)
-* [AdGuard for Android](/adguard-for-android/overview)
-* [AdGuard for iOS](/adguard-for-ios/overview)
+- [Windows için AdGuard](/adguard-for-windows/features/home-screen)
+- [Mac için AdGuard](/adguard-for-mac/features/main)
+- [Android için AdGuard](/adguard-for-android/features/protection/ad-blocking)
+- [iOS için AdGuard](/adguard-for-ios/features/safari-protection)
 
-But we also develop and maintain free browser extensions for all popular browsers:
+Ancak tüm popüler tarayıcılar için ücretsiz tarayıcı uzantıları da geliştiriyor ve sürdürüyoruz:
 
-* [AdGuard Tarayıcı Uzantısı](/adguard-browser-extension/overview)
-* [AdGuard for Safari](/adguard-for-safari/overview)
+- [AdGuard Tarayıcı Uzantısı](/adguard-browser-extension/features/filters)
+- [Safari için AdGuard](/adguard-for-safari/features/general)
 
-## Not just ad blocking
+## Sadece reklam engelleme değil
 
-AdGuard Ad Blocker does more than just block ads. It will protect you from online tracking and enhance your privacy in many ways. Depending on the specific product, AdGuard can also offer such perks as DNS filtering for more rounded-up protection, Parental Control to shield your kids from inappropriate content, Filtering log to have better control over your internet traffic, and more. This Knowledge base contains detailed information about any and all of them — feel free to jump to any article that interests you.
+AdGuard Reklam Engelleyici, reklamları engellemekten daha fazlasını yapar. Sizi çevrimiçi izlemeden korur ve gizliliğinizi birçok yönden geliştirir. Belirli ürüne bağlı olarak AdGuard, daha kapsamlı koruma için DNS filtreleme, çocuklarınızı uygunsuz içerikten korumak için Ebeveyn Denetimi, internet trafiğiniz üzerinde daha iyi kontrol sahibi olmak için Filtreleme günlüğü ve daha fazlası gibi avantajlar da sunabilir. Bu Bilgi tabanı bunların hepsi hakkında ayrıntılı bilgi içerir — ilginizi çeken herhangi bir makaleye atlamaktan çekinmeyin.

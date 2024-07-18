@@ -13,18 +13,18 @@ Check that you have the most up-to-date version, and if not, upgrade: the bug mi
 
 Check if the bug hasn’t been reported before. We advise paying attention to both open and closed issues.
 
-![Closed issues](https://cdn.adtidy.org/content/kb/ad_blocker/general/closed_issues.png) 
+![Closed issues](https://cdn.adtidy.org/content/kb/ad_blocker/general/closed_issues.png)
 
 ### How to describe a problem
 
 Try to provide as many details as possible — that'll make it easier for us to reproduce the bug and figure out how to fix it. Here’s what we’re expecting to see in a bug report:
 
-* Your app version
-* Your OS version
-* When you noticed the problem
-* What you were doing or what happened to the app before you noticed the problem. Steps to reproduce it
-* Whether it recurred and with what frequency
-* Whether you have a VPN or an antivirus software
+- Your app version
+- Your OS version
+- When you noticed the problem
+- What you were doing or what happened to the app before you noticed the problem. Steps to reproduce it
+- Whether it recurred and with what frequency
+- Whether you have a VPN or an antivirus software
 
 ### How to collect logs
 
@@ -39,7 +39,6 @@ If you want to support the implementation of a new feature or bugfix, you can vo
 ![GitHub issue without reactions](https://cdn.adtidy.org/content/kb/ad_blocker/general/github_reaction2.png)
 
 You can find reactions in the upper right corner or at the bottom of an issue.
-
 
 ## Instructions for all platforms
 

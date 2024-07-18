@@ -5,7 +5,7 @@ sidebar_position: 7
 
 :::info
 
-Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -13,17 +13,17 @@ Jedna z nejčastějších otázek, kterou nám uživatelé kladou, zní: "Je mo�
 
 ## Sledování YouTube v aplikaci AdGuard
 
-![Návod *mobile](https://cdn.adtidy.org/public/Adguard/Blog/Android/3-6/share.gif)
+![Instruction *mobile](https://cdn.adtidy.org/public/Adguard/Blog/Android/3-6/share.gif)
 
 1. Otevřete YouTube a spusťte video, které chcete sledovat.
 
-2. Klepněte na tlačítko *Sdílet*.
+1. Klepněte na tlačítko *Sdílet*.
 
-![Share to YouTube step 1 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step1.png)
+    ![Share to YouTube step 1 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step1.png)
 
-3. Ze seznamu aplikací vyberte *AdGuard*.
+1. Ze seznamu aplikací vyberte *AdGuard*.
 
-![Share to YouTube step 2 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step2.png)
+    ![Share to YouTube step 2 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/youtube/android-youtube-share-step2.png)
 
 A je to! Otevře se nové okno s videem, ve kterém jej budete moci sledovat bez přerušování reklamami.
 

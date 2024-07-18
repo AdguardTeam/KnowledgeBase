@@ -5,7 +5,7 @@ sidebar_position: 4
 
 :::info
 
-This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, firsthand [download the AdGuard app](https://adguard.com/download.html?auto=true)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -17,29 +17,31 @@ To get a bug report directly from your device, do the following:
 
 1. Be sure you have [Developer options](https://developer.android.com/studio/run/device.html#developer-device-options) enabled.
 
-2. In **Developer options**, tap **Take bug report**.
+1. In **Developer options**, tap **Take bug report**.
 
-![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
+    ![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
 
-3. Select the type of bug report you want and tap **Report**.
+1. Select the type of bug report you want and tap **Report**.
 
-:::note
+    :::note
 
-After a moment, you will see a notification that the bug report is ready (see Figure 2).
+    After a moment, you will see a notification that the bug report is ready (see Figure 2).
+
 
 :::
 
-![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
+    ![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
 
-4. To share the bug report, tap the notification.
+1. To share the bug report, tap the notification.
 
-![Bug report *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
+    ![Bug report *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
 
-5. Send this log to our support team.
+1. Send this log to our support team.
 
-:::note
+    :::note
 
-Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+    Our support team will process your ticket much faster if you specify the HelpDesk ticket number or the GitHub issue number in your message to support.
+
 
 :::
 
@@ -53,11 +55,11 @@ Follow this instruction:
 
 1. Switch device to the developer mode. To do this: go to **Settings** → **About** → tap **Build Number** 7 times.
 
-2. Go to **Developer Options**.
+1. Go to **Developer Options**.
 
-3. Enable **USB debugging**.
+1. Enable **USB debugging**.
 
-4. Increase **Logger buffer** sizes to 4 MB per log buffer.
+1. Increase **Logger buffer** sizes to 4 MB per log buffer.
 
 4 MB should be enough for storing the logs we need until you're able to do the second part (getting the log from the device);
 
@@ -65,41 +67,41 @@ Follow this instruction:
 
 It is important to reproduce the problem after you're done with the first part.
 
-1. Reproduce the problem.
+1. Riproduci il problema.
 
-2. Remember/write down the date and time of reproduction and include it in the email to our support later.
+1. Remember/write down the date and time of reproduction and include it in the email to our support later.
 
 **Part #3: get the log**
 
 1. Connect your device to a PC with a USB cable.
 
-2. Download [Android SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools#downloads). Choose the appropriate download link for your OS from the Downloads section. Once you tap the link, a ZIP file will be downloaded. You can extract the ADB (Android Debug Bridge) files from the ZIP file and store them wherever you want.
+1. Download [Android SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools#downloads). Choose the appropriate download link for your OS from the Downloads section. Once you tap the link, a ZIP file will be downloaded. You can extract the ADB (Android Debug Bridge) files from the ZIP file and store them wherever you want.
 
-3. Test whether ADB is working properly: connect your Android device to your computer using a USB cable, open the Command Prompt, PowerShell or Terminal and run the following command:
+1. Test whether ADB is working properly: connect your Android device to your computer using a USB cable, open the Command Prompt, PowerShell or Terminal and run the following command:
 
-`adb devices`
+    `adb devices`
 
-An example of a successful result:
+    An example of a successful result:
 
-![Step 3](https://cdn.adtidy.org/content/kb/ad_blocker/android/logcat/logcat_step-3.png)
+    ![Step 3](https://cdn.adtidy.org/content/kb/ad_blocker/android/logcat/logcat_step-3.png)
 
-4. Then run the following command (insert the relevant path):
+1. Then run the following command (insert the relevant path):
 
-`adb logcat -v threadtime -d > C:\Program Files\platform-tools\logs.txt`
+    `adb logcat -v threadtime -d > C:\Program Files\platform-tools\logs.txt`
 
-Email the created `txt` file as well as the time the problem was reproduced (from part #2) to our support team at support@adguard.com.
+    Email the created `txt` file as well as the time the problem was reproduced (from part #2) to our support team at support@adguard.com.
 
-### Alternative way for ROOT users:
+### Alternative way for ROOT users
 
 1. Download and run [Logcat](https://play.google.com/store/apps/details?id=com.pluscubed.matlog).
 
-2. Choose **Record** in the menu. Choose a name for a log file or just press **OK**. Now you can press **Home** button, CatLog will continue recording the log in background.
+1. Choose **Record** in the menu. Choose a name for a log file or just press **OK**. Now you can press **Home** button, CatLog will continue recording the log in background.
 
-3. Reproduce the issue.
+1. Reproduce the issue.
 
-4. Open CatLog and press **Stop record** in the menu.
+1. Open CatLog and press **Stop record** in the menu.
 
-5. Send this log to our support team.
+1. Send this log to our support team.
 
 :::note
 

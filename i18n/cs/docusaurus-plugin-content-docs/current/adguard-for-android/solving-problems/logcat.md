@@ -5,7 +5,7 @@ sidebar_position: 4
 
 :::info
 
-Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -17,29 +17,31 @@ Chcete-li získat hlášení o chybě přímo ze zařízení, postupujte takto:
 
 1. Ujistěte se, že máte zapnuté [Možnosti pro vývojáře](https://developer.android.com/studio/run/device.html#developer-device-options).
 
-2. V **Možnostech pro vývojáře** klepněte na **Vytvořit hlášení o chybě**.
+1. V **Možnostech pro vývojáře** klepněte na **Vytvořit hlášení o chybě**.
 
-![Hlášení o chybě *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
+    ![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
 
-3. Vyberte požadovaný typ hlášení o chybě a klepněte na **Nahlásit**.
+1. Vyberte požadovaný typ hlášení o chybě a klepněte na **Nahlásit**.
 
-:::note
+    :::note
 
-Po chvíli se zobrazí oznámení, že hlášení o chybě je připraveno (viz obrázek 2).
+    Po chvíli se zobrazí oznámení, že hlášení o chybě je připraveno (viz obrázek 2).
+
 
 :::
 
-![Hlášení o chybě *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
+    ![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
 
-4. Chcete-li sdílet hlášení o chybě, klepněte na oznámení.
+1. Chcete-li sdílet hlášení o chybě, klepněte na oznámení.
 
-![Hlášení o chybě *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
+    ![Bug report *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
 
-5. Odešlete tento protokol našemu týmu podpory.
+1. Odešlete tento protokol našemu týmu podpory.
 
-:::note
+    :::note
 
-Náš tým podpory zpracuje vaši žádost mnohem rychleji, pokud ve zprávě uvedete číslo HelpDesk nebo číslo problému GitHub.
+    Náš tým podpory zpracuje vaši žádost mnohem rychleji, pokud ve zprávě uvedete číslo HelpDesk nebo číslo problému GitHub.
+
 
 :::
 
@@ -53,11 +55,11 @@ Postupujte podle těchto pokynů:
 
 1. Přepněte zařízení do režimu pro vývojáře. Postupujte takto: přejděte do **Nastavení** → **O zařízení** → klepněte na **Číslo sestavení** 7krát.
 
-2. Přejděte na **Možnosti pro vývojáře**.
+1. Přejděte na **Možnosti pro vývojáře**.
 
-3. Zapněte **USB ladění**.
+1. Zapněte **USB ladění**.
 
-4. Navyšte **velikost vyrovnávací paměti** na 4 MB.
+1. Navyšte **velikost vyrovnávací paměti** na 4 MB.
 
 4 MB by mělo stačit na uložení záznamů, které potřebujeme, dokud nebudete schopni provést druhou část (získání záznamů ze zařízení);
 
@@ -67,39 +69,39 @@ Po dokončení první části je důležité problém reprodukovat.
 
 1. Reprodukujte problém.
 
-2. Zapamatujte si/zapište si datum a čas reprodukce a později je uveďte v e-mailu pro naši podporu.
+1. Zapamatujte si/zapište si datum a čas reprodukce a později je uveďte v e-mailu pro naši podporu.
 
 **Část #3: získání záznamu**
 
 1. Připojte zařízení k počítači pomocí kabelu USB.
 
-2. Stáhněte [Android SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools#downloads). V části Stahování vyberte příslušný odkaz ke stažení pro váš operační systém. Po klepnutí na odkaz se stáhne soubor ZIP. Soubory ADB (Android Debug Bridge) můžete ze souboru ZIP rozbalit a uložit kamkoli chcete.
+1. Stáhněte [Android SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools#downloads). V části Stahování vyberte příslušný odkaz ke stažení pro váš operační systém. Po klepnutí na odkaz se stáhne soubor ZIP. Soubory ADB (Android Debug Bridge) můžete ze souboru ZIP rozbalit a uložit kamkoli chcete.
 
-3. Otestujte, zda ADB funguje správně: připojte zařízení Android k počítači pomocí kabelu USB, otevřete příkazový řádek, prostředí PowerShell nebo Terminal a spusťte následující příkaz:
+1. Otestujte, zda ADB funguje správně: připojte zařízení Android k počítači pomocí kabelu USB, otevřete příkazový řádek, prostředí PowerShell nebo Terminal a spusťte následující příkaz:
 
-`adb devices`
+    `adb devices`
 
-Příklad úspěšného výsledku:
+    Příklad úspěšného výsledku:
 
-![Krok 3](https://cdn.adtidy.org/content/kb/ad_blocker/android/logcat/logcat_step-3.png)
+    ![Step 3](https://cdn.adtidy.org/content/kb/ad_blocker/android/logcat/logcat_step-3.png)
 
-4. Poté spusťte následující příkaz (vložte příslušnou cestu):
+1. Poté spusťte následující příkaz (vložte příslušnou cestu):
 
-`adb logcat -v threadtime -d > C:\Program Files\platform-tools\logs.txt`
+    `adb logcat -v threadtime -d > C:\Program Files\platform-tools\logs.txt`
 
-Pošlete vytvořený `txt` soubor a čas, kdy byl problém reprodukován (z části #2) našemu týmu podpory na adresu support@adguard.com.
+    Pošlete vytvořený `txt` soubor a čas, kdy byl problém reprodukován (z části #2) našemu týmu podpory na adresu support@adguard.com.
 
-### Alternativní způsob pro uživatele s přístupem ROOT:
+### Alternativní způsob pro uživatele s přístupem ROOT
 
 1. Stáhněte a spusťte [Logcat](https://play.google.com/store/apps/details?id=com.pluscubed.matlog).
 
-2. V menu vyberte **Zaznamenat**. Zvolte název souboru protokolu nebo stiskněte **OK**. Nyní můžete stisknout tlačítko **Domů**, CatLog bude pokračovat v nahrávání záznamu na pozadí.
+1. V menu vyberte **Zaznamenat**. Zvolte název souboru protokolu nebo stiskněte **OK**. Nyní můžete stisknout tlačítko **Domů**, CatLog bude pokračovat v nahrávání záznamu na pozadí.
 
-3. Znovu reprodukujte problém.
+1. Znovu reprodukujte problém.
 
-4. Otevřete CatLog a stiskněte **Ukončit záznam** v menu.
+1. Otevřete CatLog a stiskněte **Ukončit záznam** v menu.
 
-5. Odešlete tento protokol našemu týmu podpory.
+1. Odešlete tento protokol našemu týmu podpory.
 
 :::note
 

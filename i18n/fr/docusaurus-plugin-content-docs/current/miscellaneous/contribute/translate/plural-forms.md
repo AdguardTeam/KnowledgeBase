@@ -12,11 +12,11 @@ Nous vous recommandons vivement de lire attentivement cet article pour en savoir
 
 Les substantifs dans les langues différentes peuvent avoir plusieurs formes de mots au pluriel. Leur utilisation dépend du nombre de choses dont vous parlez.
 
-For instance, English words have two word forms when speaking about something in the singular, like *'one star'*, and in the plural — *'two stars'*. It doesn’t matter if you say five, twenty six or even five hundred thirty two stars — the ending 's' will remain the same. Mais certaines langues ne peuvent contenir qu'une ou plusieurs formes plurielles.
+Par exemple, les mots anglais ont deux formes de mots lorsqu'ils parlent de quelque chose au singulier, comme *'one star'*, et au pluriel – *'two stars'*. Peu importe que vous disiez cinq, vingt-six ou même cinq cent trente-deux « stars» — la terminaison « s » restera la même. Mais certaines langues ne peuvent contenir qu'une ou plusieurs formes plurielles.
 
-Contrairement à l'anglais, la langue polonaise a trois formes plurielles de noms. One of them is used when speaking about something in the singular, another form is used in the plural but with numbers ending in 2-4, excluding 12-14, and the third form — for words with other numbers in front of them.
+Contrairement à l'anglais, la langue polonaise a trois formes plurielles de noms. L'une d'entre elles est utilisée pour parler de quelque chose au singulier, une autre forme est utilisée au pluriel, mais avec des nombres se terminant par 2—4, à l'exclusion de 12—14, et la troisième forme — pour les mots avec d'autres nombres devant eux.
 
-Let’s take a look at this picture. Vous pouvez voir ici les groupes de chiffres qui déterminent la forme d'un mot lorsqu'on se trouve en face de lui.
+Jetons un coup d'œil à cette image. Vous pouvez voir ici les groupes de chiffres qui déterminent la forme d'un mot lorsqu'on se trouve en face de lui.
 
 ![Polonais](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
@@ -24,13 +24,13 @@ Pour mieux comprendre, établissons un petit parallèle entre l'anglais et le po
 
       La version anglaise :                                                 Les équivalents polonais :
     
-      1. forme - It takes one hour.                                     1. forme - Zajmuje to godzinę.
-      2. forme - It takes two hours.                                    2. forme - Zajmuje to dwie godziny.
-      3. forme - It takes five hours.                                   3. forme - Zajmuje to pięć godzin.
+      1. forme — It takes one hour.                                     1. forme — Zajmuje to godzinę.
+      2. forme — It takes two hours.                                    2. forme — Zajmuje to dwie godziny.
+      3. forme — It takes five hours.                                   3. forme — Zajmuje to pięć godzin.
 
 Maintenant c'est clair que le polonais *'godzinę'* (heure) a trois formes différentes, alors que le mot anglais ne change de forme avec des nombres donnés que deux fois.
 
-Sans parler du polonais, il existe encore de nombreuses autres langues qui ont trois formes plurielles et plus, telles que le russe, le serbe, le slovaque, le tchèque, etc. Mais tous n'obéissent pas à la même règle. C'est pourquoi c'est si important de savoir combien de formes plurielles votre langue contient et comment vous pouvez les appliquer.
+Sans parler du polonais, il existe encore de nombreuses autres langues qui ont trois formes plurielles et plus, telles que le russe, le serbe, le slovaque, le tchèque, etc. Mais tous n'obéissent pas à la même règle. C'est pourquoi c'est si important de savoir combien de formes plurielles votre langue contient et comment les appliquer correctement.
 
 ## Où peut-on apprendre plus sur le nombre de formes plurielles ? {#where-to-learn}
 
@@ -38,7 +38,7 @@ Faisant face à une traduction qui nécessite l'utilisation de pluriels, vous ne
 
 Voici quelques sources d'informations que vous pouvez utiliser.
 
-[Guide de localisation](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contient une large liste de langues. Le nombre de formes plurielles pour les langues différentes est indiqué de la manière suivante : "nplurals=2", "nplurals=4", etc. Le chiffre après le signe égal '=' signifie le nombre de formes plurielles de la langue respective.
+[Guide de localisation](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contient une large liste de langues. Le nombre de formes plurielles pour les langues différentes est indiqué de cette façon : `nplurals=2`, `nplurals=4` et ainsi de suite. Le chiffre après le signe Égal `=` signifie le nombre de formes plurielles de la langue respective.
 
 En outre, vous pouvez obtenir des informations sur les formes plurielles dans le répertoire [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). Les règles plurielles CLDR indiquent une forme de mot supplémentaire pour les nombres décimaux (1.5 ; 2.3 ; 100.1…), mais nous ne les utilisons pas dans les traductions AdGuard.
 
@@ -92,9 +92,9 @@ Soyez attentifs pendant la traduction de ces chaînes et quand vous les approuve
 
 ### 4. Les chaînes avec des modèles séparés par le signe de la barre verticale {#4type}
 
-Il s'agit du type de chaînes AdGuard le plus compliqué qui est principalement utilisé dans le projet `AdGuard Websites`.
+C'est le type de chaînes AdGuard le plus compliqué qui est principalement utilisé dans le projet `AdGuard Websites`.
 
-Pay close attention to a vertical bar sign between the sentences and **%count%** placeholders in original phrases — this will help you identify phrases where translations require the use of plural forms.
+Faites attention à la présence d'une barre verticale entre les phrases et des espaces réservés **%count%** dans les phrases sources — cela vous aidera à identifier les phrases pour lesquelles les traductions ont besoin de l'utilisation du pluriel.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/plurals_site.png)
 
@@ -108,9 +108,9 @@ Pour en revenir à l'exemple, comme la langue anglaise ne comprend que deux form
 
 `Standard license for *%count%* computer | Standard license for *%count%* computers`
 
-where **template 1** is Standard license for *%count%* computer,
+où **template 1** est la license Standard pour *%count%* ordinateur,
 
-and **template 2** is Standard license for *%count%* computers
+et le **template 2** est une licence Standard pour *%count%* ordinateurs
 
 Une autre chose importante à laquelle vous devriez prêter attention c'est les espaces réservés **%count%** qui, comme d'habitude, se placent avant les mots qu'ils définissent. De différents nombres apparaîtront ici au lieu de **%count%**, en fonction des modèles choisis.
 
@@ -125,7 +125,7 @@ Par exemple, lorsque nous traduisons la phrase mentionnée ci-dessus en slovaque
 Dans ce cas, nous voyons trois modèles qui contiennent trois formes du mot *"počítač"* (ordinateur) en slovaque.
 
 *Si nous ignorons l'une des formes et n'utilisons que deux modèles pour le slovaque au lieu de trois, le système ne pourra pas prendre un modèle approprié pour certains nombres* et, par conséquent, nous aurons des erreurs de grammaire dans les phrases, comme en anglais : *Standard license for 5 computer*.
-> **Always use as many forms as there are in your language, even when the word itself has fewer word forms.**
+> **Utilisez toujours autant de formes qu'il existe dans votre langue, même lorsque le mot lui-même a moins de formes de mots.**
 
 Par exemple, le mot serbe *'računar'* (ordinateur) n'a que deux formes. Mais il existe 3 formes plurielles en serbe.
 
@@ -145,12 +145,12 @@ Alors que les trois premiers types de chaînes sont plus ou moins faciles à ré
 
 Encore une fois : si vous rencontrez une phrase originale comportant deux éléments importants : **le signe de la barre verticale** et **%count%** les espaces réservés, veuillez faire ce qui suit :
 
-+ Référez-vous à la règle du pluriel d’une langue dans laquelle vous traduisez ;
+- Référez-vous à la règle du pluriel d’une langue dans laquelle vous traduisez ;
 
-The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms — two templates in translations; five plural forms — five templates, etc.
+Le nombre de vos modèles doit être cohérent avec le nombre de formes plurielles que comprend votre langue, même dans les cas où certains mots ont eux-mêmes moins de formes. Deux formes plurielles — deux modèles de traduction ; cinq formes plurielles — cinq modèles, etc.
 
-+ N'oubliez pas d'utiliser le signe de la barre verticale entre les modèles, comme il est représenté dans les chaînes originales ;
+- N'oubliez pas d'utiliser le signe de la barre verticale entre les modèles, comme il est représenté dans les chaînes originales ;
 
-+ Ne traduisez pas, ne remplissez pas et ne supprimez pas les espaces réservés **%count%**.
+- Ne traduisez pas, ne remplissez pas et ne supprimez pas les espaces réservés **%count%**.
 
-By following these simple rules you will help AdGuard developers avoid a lot of unnecessary complications during the localization process.
+En suivant ces règles simples, vous aiderez les développeurs AdGuard à éviter de nombreuses complications inutiles lors du processus de localisation.

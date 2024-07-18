@@ -1,42 +1,45 @@
 ---
-title: Browser Assistant
+title: Tarayıcı Asistanı
 sidebar_position: 3
 ---
 
-AdGuard Asistanı'nın birincil işlevi filtrelemeyi doğrudan tarayıcıdan yönetmektir. It has existed for quite a long time, and its form and content have changed. More precisely, it used to be a mere userscript incorporated into AdGuard for Windows app and became a full-fledged browser extension. Now it yields more benefits.
+AdGuard Asistanı'nın birincil işlevi filtrelemeyi doğrudan tarayıcıdan yönetmektir. Oldukça uzun bir süredir kullanılmakta olup, şekli ve içeriği değişmiştir. Daha doğrusu, Windows için AdGuard uygulamasına dahil edilen yalnızca bir kullanıcı metniydi ve tam teşekküllü bir tarayıcı uzantısı hâline geldi. Artık daha fazla avantaj sağlıyor.
 
-![Browser Assistant *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/assistant-menu.png)
+![Tarayıcı Asistanı *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/assistant-menu.png)
 
-## Benefits
+## Avantajlar
 
-### Independence
+### Bağımsızlık
 
-AdGuard Browser Assistant is a browser extension, it is installed in a browser, so there is no need to wait for the userscript to be injected into the filtered web page, as it was with the preceding one. Başka bir deyişle, ana AdGuard uygulamasından daha bağımsızdır. Still, Browser Assistant needs the installed AdGuard for Windows, because there is no point in using the extension without the app.
+AdGuard Tarayıcı Asistanı bir tarayıcı uzantısıdır, bir tarayıcıya yüklenir, bu nedenle bir öncekinde olduğu gibi kullanıcı betiğinin filtrelenmiş web sayfasına enjekte edilmesini beklemeye gerek yoktur. Başka bir deyişle, ana AdGuard uygulamasından daha bağımsızdır. Yine de Tarayıcı Asistanı'nın kurulu Windows için AdGuard'a ihtiyacı vardır çünkü uygulama olmadan uzantıyı kullanmanın bir anlamı yoktur.
 
 ### Ana uygulama ile uyumluluk
 
-If you got into the habit of using our previous AdGuard Ad Blocker extension [in Integration mode](/adguard-browser-extension/integration-mode), you may like the solution that we have developed for the new Browser Assistant.
+If you got into the habit of using our previous [AdGuard Ad Blocker extension](/adguard-browser-extension/compatibility), you might like the solution that we have developed for the new Browser Assistant.
 
-Background information:
+Arka plan bilgisi:
 
-In previous versions of the AdGuard Browser Extension (before v3.5), if you had it installed along with the AdGuard for Windows app, the extension took over the functions of Assistant, stopped filtering itself and relied on the app to do this.
+AdGuard Tarayıcı Uzantısının önceki sürümlerinde (v3.5'ten önce), Windows için AdGuard uygulamasıyla birlikte yüklediyseniz, uzantı Asistanı işlevlerini devralıyor, kendini filtrelemeyi bırakıyor ve bunu yapmak için uygulamaya güveniyordu.
 
-Eklenti ve uygulama birlikte çalışıyordu ancak bazen entegrasyon başarısız oluyordu. Some websites would stop being protected by the desktop program and be backed up only by the less powerful extension.
+Eklenti ve uygulama birlikte çalışıyordu ancak bazen entegrasyon başarısız oluyordu. Bazı siteler masaüstü programı tarafından korunmuyor ve yalnızca daha az seçeneğe sahip uzantı tarafından korunuyordu.
 
-Tarayıcı Asistanını kullanırken, özünde herhangi bir çakışma olamayacağı için tüm bu sorunlar önemli değildir. The role of the Browser Assistant is well-defined and it can’t hinder the functioning of the main app, so there is no need to worry.
+Tarayıcı Asistanını kullanırken, özünde herhangi bir çakışma olamayacağı için tüm bu sorunlar önemli değildir. Tarayıcı Asistanının rolü iyi tanımlanmıştır ve ana uygulamanın işleyişini engelleyemez, bu nedenle endişelenmenize gerek yoktur.
 
 ## Ayarlar'da ayrı sekme
 
-The new Browser Assistant has its own tab in AdGuard for Windows settings, along with Stealth Mode, Browsing Security, Parental Control and others. There you will find a link to download the extension for your default browser. Ayrıca, eski Asistanı etkinleştirmek için bir onay kutusu vardır.
+Yeni Tarayıcı Asistanı, Windows için AdGuard ayarlarında Gizlilik Modu, Gezinti koruması, Ebeveyn Denetimi ve diğerleriyle birlikte kendi sekmesine sahiptir. Burada varsayılan tarayıcınız için uzantıyı indirmek üzere bir bağlantı bulacaksınız. Ayrıca, eski Asistanı etkinleştirmek için bir onay kutusu vardır.
 
-![Settings *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
+![Ayarlar *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 
-## Legacy Assistant
+## Eski Asistan
 
-Eski Asistan, bir tarayıcı uzantısı değil, yalnızca bir kullanıcı betiği olan Asistan'ın önceki sürümüdür. Temel olarak, yeni Tarayıcı Asistanı yerine onu seçmek isteyebileceğiniz iki durum vardır: 1) yeni Asistan tarayıcınız için mevcut değildir; 2) yeşil kalkan simgesine alışkınsanız ve her şeyi olduğu gibi bırakmak istiyorsanız.
+Eski Asistan, bir tarayıcı uzantısı değil, yalnızca bir kullanıcı betiği olan Asistan'ın önceki sürümüdür. Temel olarak, yeni Tarayıcı Asistanı yerine bunu seçmek isteyebileceğiniz iki durum vardır:
+
+1. Yeni Asistan tarayıcınızda kullanılamıyor.
+1. Yeşil kalkan simgesine alışkınsınız ve her şeyi olduğu gibi bırakmak istiyorsunuz.
 
 ## AdGuard Tarayıcı Asistanı nasıl yüklenir
 
-If you want to install the Browser Assistant for your default browser, you can do it directly from the app settings, but you also have an opportunity to install it for other browsers.
+Tarayıcı Asistanını varsayılan tarayıcınız için yüklemek isterseniz bunu doğrudan uygulama ayarlarından yapabilirsiniz ancak diğer tarayıcılar için de yükleme olanağınız vardır.
 
-AdGuard Browser Assistant is available for all popular browsers: Chrome, Firefox, Edge, Opera, and Yandex. To install the one you need (or many, it is not prohibited but even encouraged), go to [our website](https://adguard.com/adguard-assistant/overview.html), click the browser icon and tap the *Install* button. Bu kadar!
+AdGuard Tarayıcı Asistanı tüm popüler tarayıcılarda kullanılabilir: Chrome, Firefox, Edge, Opera ve Yandex. İhtiyacınız olanı (veya birçoğunu, yasak değil, hatta teşvik edilir) yüklemek için [sitemize](https://adguard.com/adguard-assistant/overview.html) gidin, tarayıcı simgesine tıklayın ve *Yükle* düğmesine dokunun. Bu kadar!

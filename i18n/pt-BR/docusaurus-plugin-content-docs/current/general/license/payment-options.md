@@ -1,24 +1,23 @@
 ---
-title: How to purchase/upgrade
+title: Como comprar ou fazer upgrade
 sidebar_position: 2
 ---
 
-## How to purchase a license{#purchase}
+## Como comprar uma licença{#purchase}
 
-A licença do AdGuard pode ser comprada em [adguard.com](https://adguard.com/license.html). We offer various payment options, including Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay, and UnionPay. We also accept the following cryptocurrencies: Bitcoin, Ethereum, Litecoin, and Tether.
+As licenças do AdGuard podem ser adquiridas em [adguard.com](https://adguard.com/license.html). Você pode pagar com Visa, Mastercard, Apple Pay, Google Pay, PayPal, Alipay e UnionPay. Também aceitamos as seguintes criptomoedas: Bitcoin, Ethereum, Litecoin e Tether.
 
 AdGuard Pro para iOS pode ser comprado na App Store.
 
-As licenças do Bloqueador de Anúncios AdGuard também são vendidas por vários distribuidores. The availability of AdGuard products in app stores and by distributors depends on your country.
+As licenças do Bloqueador de Anúncios AdGuard também são vendidas por vários distribuidores. A disponibilidade dos produtos AdGuard em lojas de aplicativos e por distribuidores depende do seu país.
 
-## How to upgrade a license{#upgrade}
+## Como atualizar uma licença{#upgrade}
 
-To make more use of your AdGuard products, you can upgrade your license for the following benefits.
+Para aproveitar melhor seus produtos AdGuard, você pode atualizar sua licença para obter os seguintes benefícios.
 
-1. Para aumentar a funcionalidade dos seus produtos AdGuard, você pode **atualizar sua licença gratuita ou de avaliação para a versão completa**.
-2. To extend the number of devices, you can **upgrade your Personal license to a Family one**.
-3. You can also **upgrade your [subscription](../what-is) to a Lifetime license**.
+- Para ampliar o número de dispositivos, você pode **fazer upgrade na sua licença de Individual para Familiar**
+- Você também pode **atualizar sua assinatura de 1 ano para uma licença vitalícia**
 
-You can upgrade your license by:
-  * purchasing another license on the [official AdGuard website](https://adguard.com),
-  * clicking the *Upgrade to Lifetime* and/or *Increase device limit* in your AdGuard account: ![Upgrade *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)
+Você pode atualizar sua licença em sua conta AdGuard. Para isso, clique em *Atualizar para Vitalícia* ou *Aumentar limite de dispositivos*.
+
+![Fazer upgrade](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-upgrade.png)

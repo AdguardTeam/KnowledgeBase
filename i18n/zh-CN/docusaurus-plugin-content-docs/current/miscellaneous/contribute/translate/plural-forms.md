@@ -14,7 +14,7 @@ sidebar_position: 4
 
 For instance, English words have two word forms when speaking about something in the singular, like *'one star'*, and in the plural — *'two stars'*. It doesn’t matter if you say five, twenty six or even five hundred thirty two stars — the ending 's' will remain the same. 但是有些语言只有一种形式，反之，有些语言也可以有更多种复数形式。
 
-与英语相比，波兰语里的名词具有三种复数形式。 One of them is used when speaking about something in the singular, another form is used in the plural but with numbers ending in 2-4, excluding 12-14, and the third form — for words with other numbers in front of them.
+与英语相比，波兰语里的名词具有三种复数形式。 One of them is used when speaking about something in the singular, another form is used in the plural but with numbers ending in 2–4, excluding 12–14, and the third form — for words with other numbers in front of them.
 
 Let’s take a look at this picture. 在这里，可以看到一组数字。按这些数字要选择数字后面的单词形式。
 
@@ -24,13 +24,13 @@ Let’s take a look at this picture. 在这里，可以看到一组数字。按�
 
       英文版：                                                  波兰语等效：
     
-      1. 形式 - It takes one hour.                                     1. 形式 - Zajmuje to godzinę.
-      2. 形式 - It takes two hours.                                    2. 形式 - Zajmuje to dwie godziny.
-      3. 形式 - It takes five hours.                                   3. 形式 - Zajmuje to pięć godzin.
+      1. form — It takes one hour.                                     1. form — Zajmuje to godzinę.
+      2. form — It takes two hours.                                    2. form — Zajmuje to dwie godziny.
+      3. form — It takes five hours.                                   3. form — Zajmuje to pięć godzin.
 
 现在很明显的是，波兰语 *'godzinę'*（小时）具有三种不同的形式，而英语单词仅更改两次单词形式。
 
-除波兰语之外，世界上还有许多其他具有三种复数形式的语言，包括俄语，塞尔维亚语，斯洛伐克语，捷克语等语言。 但并非所有语言都遵循相同语法规则。 这就是了解您的语言包含多少种复数形式以及如何应用它们如此重要的原因。
+除波兰语之外，世界上还有许多其他具有三种复数形式的语言，包括俄语，塞尔维亚语，斯洛伐克语，捷克语等语言。 但并非所有语言都遵循相同语法规则。 That's why it's so important to know how many plurals your language has, and how to use them correctly.
 
 ## 在哪里可以了解复数形式的变体数量？ {#where-to-learn}
 
@@ -38,7 +38,7 @@ Let’s take a look at this picture. 在这里，可以看到一组数字。按�
 
 以下是您可以使用的一些信息来源。
 
-[本地化指南](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) 包含广泛的语言列表。 不同语言复数形式的数量以这种方式显示： 'nplurals=2', 'nplurals=4' ，依此类推。 '=' 等号后的数字表示相应语言的形式数量。
+[本地化指南](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) 包含广泛的语言列表。 The number of plural forms for different languages is shown this way: `nplurals=2`, `nplurals=4` and so on. The numeral after the Equals sign `=` means the number of plural forms of the respective language.
 
 此外，您还可以在 [Unicode 通用语言环境数据存储库](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules)（CLDR）中获取有关复数形式的相关信息。 CLDR 复数规则，即指十进制数字（1.5; 2.3; 100.1…）的其他词形式。但在 AdGuard 翻译中我们不使用它们。
 
@@ -92,7 +92,7 @@ Crowdin 为用户提供翻译一定数量具有不同复数形式的短语的功
 
 ### 4. 带有用竖线分隔模板的字符串 {#4type}
 
-这是最复杂的 AdGuard 字符串类型，通常在 `AdGuard Websites` 项目中使用。
+This is the most complicated type of AdGuard strings which is mostly used in the `AdGuard Websites` project.
 
 Pay close attention to a vertical bar sign between the sentences and **%count%** placeholders in original phrases — this will help you identify phrases where translations require the use of plural forms.
 
@@ -145,12 +145,12 @@ and **template 2** is Standard license for *%count%* computers
 
 重申一次：如果您遇到包含两个重要元素的原始词组：**竖线符号**和 **％count％** 占位符，请执行以下操作：
 
-+ 指翻译成一种语言的复数规则；
+- 指翻译成一种语言的复数规则；
 
 The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms — two templates in translations; five plural forms — five templates, etc.
 
-+ 不要忘记在模板之间使用竖线符号；
+- 不要忘记在模板之间使用竖线符号；
 
-+ 请勿翻译，填写或删除 **％count％** 占位符。
+- 请勿翻译，填写或删除 **％count％** 占位符。
 
 By following these simple rules you will help AdGuard developers avoid a lot of unnecessary complications during the localization process.

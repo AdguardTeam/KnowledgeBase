@@ -5,7 +5,7 @@ sidebar_position: 2
 
 :::info
 
-本文适用于 iOS 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 To see how it works firsthand, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+本文适用于 iOS 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 To see how it works firsthand, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -15,7 +15,7 @@ sidebar_position: 2
 
 On iOS, the only way to block ads and trackers system-wide is to use [DNS filtering](https://adguard-dns.io/kb/general/dns-filtering/).
 
-First, you have to enable DNS protection. To do so:
+First, you have to enable DNS protection. 具体操作：
 
 1. Open *AdGuard for iOS*.
 2. Tap *Protection* icon (the second icon in the bottom menu bar).
@@ -31,8 +31,8 @@ Now, if your purpose is to block ads and trackers system-wide, you have three op
 
 The first and third option have several advantages:
 
-* You can use any DNS server at your discretion and you are not tied up to a specific blocking server, because the filter does the blocking.
-* You can add multiple DNS filters and/or hosts files (although using too many might slow down AdGuard).
+- You can use any DNS server at your discretion and you are not tied up to a specific blocking server, because the filter does the blocking.
+- You can add multiple DNS filters and/or hosts files (although using too many might slow down AdGuard).
 
 ![DNS 过滤工作原理](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_en.png)
 

@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Android için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -15,11 +15,11 @@ With Android 7, however, this scenario has improved. Now the data reflected in A
 
 However, AdGuard users can always get a true picture of the situation on the *Battery usage* screen.
 
-### Own battery usage stats screen
+### Kendi pil kullanım istatistikleri ekranı
 
 You can access it by navigating to *Statistics* → *Battery usage*.
 
-![Battery stats *mobile_border](https://cdn.adtidy.org/content/articles/battery/1.png)
+![Pil istatistikleri *mobile_border](https://cdn.adtidy.org/content/articles/battery/1.png)
 
 Inside you will find a chart that shows the AdGuard battery resource consumption within the last 24 hours, with an option to get more detailed hour-to-hour data by tapping on the chart. Besides that, there’s also a numeric breakdown of the relevant data and a short technical explanation.
 
@@ -29,30 +29,32 @@ First, let us lay down a bit of theory and links with necessary data.
 
 1. Android derives traffic consumption judging on so-called Power Profile, which is given by every manufacturer: <https://source.android.com/devices/tech/power/values.html>
 
-2. Main part of Power Profile is a set of values in mAh which define battery consumption for every component of the device: <https://source.android.com/devices/tech/power/values.html>
+1. Main part of Power Profile is a set of values in mAh which define battery consumption for every component of the device: <https://source.android.com/devices/tech/power/values.html>
 
-For example, from the table above:
+    Örneğin, yukarıdaki tablodan:
 
-_wifi.active=_ 31mA additional consumption in mAh caused by WiFi data exchange.
+    *wifi.active=* 31mA WiFi veri alışverişinden kaynaklanan mAh cinsinden ek tüketim.
 
-_radio.active=_ 100-300mA additional consumption in mAh caused by data exchange over Mobile network.
+    *radio.active=* 100-300mA additional consumption in mAh caused by data exchange over Mobile network.
 
-_cpu.active=_ 100-200mA additional consumption in mAh caused by CPU work.
+    *cpu.active=* 100-200mA additional consumption in mAh caused by CPU load.
 
-3. AdGuard by itself almost doesn't consume any traffic, so for the sake of evaluating battery resource consumption let's get rid of 'Mobile/WiFi packets' and stcik to 'CPU'.
+1. AdGuard by itself almost doesn't consume any traffic, so for the sake of evaluating power consumption let's get rid of 'Mobile/Wi-Fi packets' and stick to 'CPU'.
 
-Formulа to calculate the consumption:
-> "CPU TIME (ms)" X "cpu.active" / (60 * 60 * 1000) = "POWER USE mAh"
+    Formula to calculate the consumption:
 
-Let's put real numbers into this formula.
+    > “CPU TIME (ms)” X “cpu.active” / (60 *60* 1000) = “POWER USE mAh”
 
-Let's take _CPU total_ from the second screenshot and convert into milliseconds: 506000
+    Bu formüle gerçek sayılar koyalım.
 
-A coefficient _cpu.active_ for 2GHz will be roughly equal to 225mAh
+    Let's take *CPU total* from the second screenshot and convert into milliseconds: 506000
 
-En son sonuç
-> 506000 * 225 / (60 * 60 * 1000) = 31,625mAh
+    A coefficient *cpu.active* for 2GHz will be roughly equal to 225mAh
+
+    En son sonuç:
+
+    > 506000 *225 / (60* 60 * 1000) = 31,625mAh
 
 ### Conclusion
 
-Real consumption is **several times less** than it is shown in Android statistics. 220mAh yerine 31-40mAh civarında bir yerde olmalı. On the other hand, browser's consumption should be not 66mAh, but ~200mAh.
+Real consumption is **several times less** than it is shown in Android statistics. 220mAh yerine 31-40mAh civarında bir yerde olmalı. Öte yandan, tarayıcının tüketimi 66mAh değil, ~200mAh olmalıdır.

@@ -1,70 +1,79 @@
 ---
-title: Certificate-related issues
+title: Sertifika ile ilgili konular
 sidebar_position: 2
 ---
 
-:::info
+:::bilgi
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Windows için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Windows için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
-To be able to filter HTTPS-traffic and efficiently block ads and trackers, AdGuard generates a special (and unique) root certificate and installs it into the system storage. You can learn more about why a certificate is required by reading [this article](/general/https-filtering/what-is-https-filtering).
+HTTPS trafiğini filtreleyebilmek, reklamları ve izleyicileri etkili bir şekilde engelleyebilmek için AdGuard, özel (ve benzersiz) bir kök sertifika oluşturur ve bunu sistem depolama alanına yükler. Sertifikanın neden gerekli olduğu hakkında daha fazla bilgi edinmek için [bu makaleyi](/general/https-filtering/what-is-https-filtering) okuyabilirsiniz.
 
-Normally browsers trust the AdGuard certificate once it's added to the system certificate storage during the installation process. But in some cases this is not enough and you may come across warnings or errors. This happens most often in Firefox-based browsers like Mozilla Firefox, PaleMoon, Waterfox, etc., or in Yandex.Browser.
+Normalde tarayıcılar, kurulum işlemi sırasında sistem sertifika depolama alanına eklendiğinde AdGuard sertifikasına güvenir. Ancak bazı durumlarda bu yeterli olmaz ve uyarı veya hatalarla karşılaşabilirsiniz. Bu durum çoğunlukla Mozilla Firefox, PaleMoon, Waterfox, vb. gibi Firefox tabanlı tarayıcılarda veya Yandex.Browser'da meydana gelir.
 
 ## *Potential Security Risk* error in Firefox-based browsers
 
-![Security risk error](https://cdn.adtidy.org/public/Adguard/kb/en/certificate/cert_error_en.png)
+![Güvenlik riski hatası](https://cdn.adtidy.org/public/Adguard/kb/en/certificate/cert_error_en.png)
 
-Old FireFox versions, as well as browsers based on them, do not trust certificates from the system storage, but only those from their local storage. Since v68, FireFox trusts the system certificates, but you still can face the "Connection is untrusted" error. If something like this happens, first try to click the *Reinstall Certificate* button — you will find it in the *Network* tab.
+Eski FireFox sürümleri ve bunları temel alan tarayıcılar, sistem depolamasındaki sertifikalara değil, yalnızca kendi yerel depolamasındaki sertifikalara güvenir. Since v68, FireFox trusts the system certificates, but you still can face the "Connection is untrusted" error. Böyle bir şey olursa, önce *Sertifikayı Yeniden Yükle* düğmesine tıklamayı deneyin — bunu *Ağ* sekmesinde bulabilirsiniz.
 
 ![Sertifikayı yeniden yükle](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/reinstall.jpg)
 
-If that doesn't help, follow the instructions for manually adding the AdGuard certificate to the FireFox storage.
-> This instruction is for Firefox browser. Names of buttons and menu items may differ in other Firefox-based browsers.
+Bu işe yaramazsa, AdGuard sertifikasını FireFox depolamasına elle eklemek için talimatları izleyin.
 
-1) Run AdGuard.
+> Bu talimat Firefox tarayıcısı içindir. Names of buttons and menu items may differ in other Firefox-based browsers.
 
-2) Go to [http://local.adguard.org/cert](http://local.adguard.org/cert) and click the *Download* button. The browser should start downloading **cert.cer** file.
-> You can also open the download page by clicking on the link via the AdGuard app at *Settings → Network → HTTPS filtering*.
+1. AdGuard'ı çalıştırın.
 
-![Certificate settings](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/link.jpeg)
+1. [http://local.adguard.org/cert](http://local.adguard.org/cert) adresine gidin ve *İndir* düğmesine tıklayın. Tarayıcı **cert.cer** dosyasını indirmeye başlamalıdır.
 
-3) Open your browser and then open *Settings*.
+    :::not
 
-4) Go to *Privacy & Security* tab.
+    İndirme sayfasını AdGuard uygulaması üzerinden *Ayarlar → Ağ → HTTPS filtreleme* öğesindeki bağlantıya tıklayarak da açabilirsiniz.
 
-5) Scroll down to *Certificates* and click the *View Certificates* button.
 
-![View certificates window](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import1.jpeg)
+:::
 
-6) Select *Authorities* tab.
+    ![Sertifika ayarları](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/link.jpeg)
 
-7) Click *Import...*.
+1. Tarayıcınızı açın ve ardından *Ayarlar* öğesini açın.
 
-![Certificate settings — import](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import2.jpeg)
+1. *Gizlilik ve Güvenlik* sekmesine gidin.
 
-8) Browse the downloaded **cert.cer** file and click *Open*.
+1. *Sertifikalar* öğesine ilerleyin ve *Sertifikaları göster* düğmesine tıklayın.
 
-9) Check the *Trust this CA to identify websites* box and then lick *OK*.
+    ![Sertifikaları göster penceresi](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import1.jpeg)
 
-You've successfully installed AdGuard certificate. Restart the browser and the error should go away.
+1. *Makamlar* sekmesini seçin.
 
-## Yandex.Browser certificate warning
+1. *İçe aktar...* öğesine tıklayın.
 
-If you are a user of both AdGuard for Windows and Yandex.Browser you may have come across this warning:
+    ![Sertifika ayarları — içe aktarma](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/import2.jpeg)
 
-![Yandex certificate warning](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/yandex-cert.png)
+1. İndirilen **cert.cer** dosyasına göz atın ve *Aç* öğesine tıklayın.
 
-### Why is this happening
+1. *Web sitelerini tanımlamak için bu CA'ya güven* kutusunu işaretleyin ve ardından *Tamam* öğesini tıklatın.
 
-Both AdGuard and Yandex take users' security on the Internet very seriously. Current Yandex policy is to warn their users about any certificate that is not recognized by the browser. This is not unsubstantiated, because sometimes malicious apps can inject their own certificates and use this to harm the system and steal private data.
+    ![Sertifika ayarları — onay kutusu](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/cert_checkbox.jpg)
 
-However, AdGuard also adds its certificate to the trusted ones. This leads to the warning message you have encountered.
+AdGuard sertifikasını başarıyla yüklediniz. Tarayıcıyı yeniden başlatın; hata ortadan kalkmalıdır.
 
-### How to solve the problem
+## Yandex.Browser sertifika uyarısı
 
-The easiest way is to click the **Go to site** button. This will tell Yandex.Browser to remember AdGuard certificate as a trusted one, at least for a while. Normally, you won't have to see this message anymore, but it is not beyond the realm of possibility for it to appear occasionally, for whatever reasons. In such cases, simply press the same button again *(make sure it is AdGuard's certificate!)*.
+Hem Windows için AdGuard hem de Yandex.Browser kullanıcısıysanız şu uyarıyla karşılaşmış olabilirsiniz:
 
-Disabling the HTTPS filtering in AdGuard will also prevent Yandex.Browser from showing this message again, but it comes with a big price: all ads that are loaded by HTTPS (including **Yandex's own ads**) will show up — on such websites as YouTube, Facebook, Instagram, and many more. We strongly advise against it if you want to keep the quality of ad blocking high.
+![Yandex sertifika uyarısı](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/yandex-cert.png)
+
+### Bu neden oluyor
+
+Hem AdGuard hem de Yandex, kullanıcıların internetteki güvenliğini çok ciddiye alıyor. Yandex'in mevcut politikası, kullanıcılarını tarayıcı tarafından tanınmayan sertifikalar konusunda uyarmaktır. Bu kanıtlanmamış bir durum değildir, çünkü bazen kötü amaçlı uygulamalar kendi sertifikalarını enjekte edebilir ve bunu sisteme zarar vermek ve özel verileri çalmak için kullanabilir.
+
+Ancak AdGuard, sertifikasını da güvenilir olanların arasına ekler. Bu karşılaştığınız uyarı mesajına yol açar.
+
+### Sorun nasıl çözülür
+
+En kolay yol, **Siteye git** düğmesine tıklamaktır. Bu, Yandex.Browser'a AdGuard sertifikasını en azından bir süreliğine güvenilir sertifika olarak hatırlamasını söyler. Normalde bu mesajı artık görmeniz gerekmez, ancak herhangi bir nedenle ara sıra görünmesi olasılık dışı değildir. Bu gibi durumlarda aynı düğmeye tekrar basmanız yeterlidir *(AdGuard sertifikası olduğundan emin olun!)*.
+
+AdGuard'da HTTPS filtrelemesini devre dışı bırakmak Yandex.Browser'ın bu mesajı tekrar göstermesini de engeller, ancak bunun büyük bir bedeli vardır: HTTPS ile yüklenen tüm reklamlar (**Yandex'in kendi reklamları** dahil) YouTube, Facebook, Instagram ve daha birçok sitede görünür. Reklam engelleme kalitesini yüksek tutmak istiyorsanız kesinlikle bunu yapmamanızı öneririz.
