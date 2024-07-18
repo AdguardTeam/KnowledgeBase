@@ -3,7 +3,7 @@ title: Contribute to AdGuard filters
 sidebar_position: 4
 ---
 
-### Filtering rules {#filtering-rules}
+### Filtreleme kuralları {#filtering-rules}
 
 As you probably know, AdGuard uses filtering rules to block ads, and these rules are combined into thematic [blocking filters](/general/ad-filtering/adguard-filters), like AdGuard Base filter, Mobile ads filter, etc. [Read more about how ad blocking works](/general/ad-filtering/how-ad-blocking-works).
 
@@ -15,6 +15,6 @@ However, working with blocking filters requires specific skills. If you have the
 
 Filtreleme kural söz dizimimize henüz aşina değilseniz veya belki de tazelemeye ihtiyacınız varsa, söz dizimi hakkındaki temel bilgileri [Bilgi tabanımızda](/general/ad-filtering/create-own-filters) bulabilirsiniz.
 
-### Rewards {#rewards}
+### Ödüller {#rewards}
 
 If you have suggested several filtering rules and some of them were approved, then it's time for you to get a reward. Send us a message at [st@adguard.com](mailto:st@adguard.com) with your GitHub account name, and you'll get a free AdGuard license key. As for the exact number of rules you need to get approved to become eligible, there are no hard rules. This task is not easy, so anything north of 5 should be enough.

@@ -11,7 +11,7 @@ Using HTTPS is highly advantageous because encrypted traffic is protected agains
 
 The diagram below describes the difference between plain HTTP protocol and secure HTTPS protocol.
 
-![What is HTTPS](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https.png)
+![What is HTTPS?](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https.png)
 
 ### What is a security certificate?
 
@@ -19,7 +19,7 @@ Simply put, HTTPS means data encryption. But there’s still a problem: how can 
 
 ### Why does AdGuard need to be able to filter HTTPS?
 
-Most websites are now using HTTPS, and the same applies to advertising. Here are a few popular websites where you can’t remove ads without HTTPS filtering: youtube.com, facebook.com, and twitter.com.
+当前大部分网站使用 HTTPS，广告亦是如此。 Here are a few popular websites where you can’t remove ads without HTTPS filtering: youtube.com, facebook.com, and twitter.com.
 
 ### How does HTTPS filtering work?
 

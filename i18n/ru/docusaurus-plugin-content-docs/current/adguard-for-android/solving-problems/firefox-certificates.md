@@ -5,7 +5,7 @@ sidebar_position: 11
 
 :::info
 
-В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock).
+В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -43,7 +43,7 @@ sidebar_position: 11
 
 :::
 
-1. [Установите и настройте](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; На Windows владельцам **Samsung** может потребоваться установить [эту утилиту](https://developer.samsung.com/mobile/android-usb-driver.html).
+1. [Установить и настроить](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; На платформе Windows владельцам **Samsung** может потребоваться установить [эту утилиту](https://developer.samsung.com/mobile/android-usb-driver.html).
 
 1. Активируйте **режим разработчика** и включите **отладку по USB**:
 

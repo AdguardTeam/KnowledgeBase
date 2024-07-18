@@ -3,7 +3,7 @@ title: Autenticação de dois fatores
 sidebar_position: 3
 ---
 
-A autenticação de dois fatores (ou 2FA) é um método de autenticação que requer uma evidência adicional do usuário para fazer login, além do par usual de login e senha. Isso é feito por motivos de segurança. Os sites geralmente oferecem métodos 2FA, como um código enviado por SMS ou um aplicativo de autenticação especial.
+A autenticação de dois fatores (ou 2FA) é um método de autenticação que requer uma evidência adicional do usuário para fazer login, além do par usual de nome de usuário e senha. Isso é feito por motivos de segurança. Os sites geralmente oferecem métodos 2FA, como um código enviado por SMS ou um aplicativo de autenticação especial.
 
 Consideramos que a adição de uma opção 2FA é uma vantagem. Também entendemos que a sua aplicação pode irritar alguns usuários. É por isso que a tornamos isso para sua conta pessoal em adguard.com. Por padrão, o 2FA é desativado quando você registra uma nova conta. Você pode ativá-lo manualmente nas configurações. Quanto aos métodos de autenticação disponíveis atualmente, usamos o testado e aprovado: um aplicativo autenticador para Android ou iOS. Você pode usar quase qualquer aplicativo desse tipo, e há muitos deles.
 

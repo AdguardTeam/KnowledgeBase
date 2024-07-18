@@ -3,8 +3,6 @@ title: Como ativar
 sidebar_position: 3
 ---
 
-## Como ativar uma licença
-
 Para ativar sua licença, vá para a seção *Licença* do seu produto AdGuard e procure o campo *Log in* ou o botão *Ativar*. Use o e-mail e a senha da sua conta do AdGuard para fazer login. Se você ainda não tem uma conta, você verá uma sugestão de criá-la.
 
 :::note

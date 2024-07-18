@@ -1,9 +1,7 @@
 ---
-title: AdGuard ライセンスとは
+title: AdGuard ライセンスとは?
 sidebar_position: 1
 ---
-
-## AdGuard ライセンスとは
 
 ライセンスとは、[利用許諾契約（EULA）](https://adguard.com/eula.html)に基づいて提供されるAdGuard製品の使用許可です。 AdGuardライセンスがメールアドレスにバインド（紐付け）されている場合、[AdGuard アカウント](https://my.adguard.com/)でお持ちのライセンスを確認できます。
 

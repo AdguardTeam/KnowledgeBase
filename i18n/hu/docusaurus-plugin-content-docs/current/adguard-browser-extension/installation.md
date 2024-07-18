@@ -1,29 +1,29 @@
 ---
-title: How to install
-sidebar_position: 2
+title: Hogyan kell telepíteni
+sidebar_position: 3
 ---
 
-:::info
+:::információ
 
-This article is about AdGuard Browser Extension, which safeguards only your browser. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Ez a cikk az AdGuard böngészőbővítményről szól, amely csak a böngészőt védi. A teljes eszköz védelme érdekében [töltse le az AdGuard alkalmazást](https://agrd.io/download-kb-adblock)
 
 :::
 
-## How to install AdGuard Browser Extension for Google Chrome or Chromium browsers
+## Az AdGuard Browser Extension telepítése Google Chrome vagy Chromium böngészőkhöz
 
-Open the extension's page in [Chrome Web Store](https://agrd.io/extension_chrome) and click *Add to Chrome*.
+Nyissa meg a bővítmény oldalát a [Chrome Webáruházban](https://agrd.io/extension_chrome), és kattintson a *Hozzáadás a Chrome-hoz* gombra.
 
-![AdGuard Browser Extension in Chrome Web Store *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_chrome.png)
+![AdGuard Browser Extension a Chrome Webáruházban *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_chrome.png)
 
-In the opened dialog box, click *Add extension*.
+A megnyíló párbeszédpanelen kattintson a *Kiterjesztés hozzáadása*elemre.
 
-![Dialog box in Chrome Web Store *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_chrome1.png)
+![Párbeszédpanel a Chrome Webáruházban *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_chrome1.png)
 
-## How to install AdGuard Browser Extension for Opera
+## Hogyan lehet telepíteni az AdGuard bővítményt ehhez: ****
 
-Open the page [addons.opera.com](https://agrd.io/extension_opera).
+Nyissa meg az [addons.opera.com](https://agrd.io/extension_opera) oldalt.
 
-![AdGuard Browser Extension in Opera addons *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_opera.png)
+![AdGuard Browser Extension a Chrome Webáruházban *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_opera.png)
 
 Click *Add to Opera*.
 
@@ -71,4 +71,4 @@ In the opened dialog window, click *Add extension* to install AdGuard Browser Ex
 
 ## How to install AdGuard Browser Extension for Safari
 
-AdGuard for Safari is not a browser extension in a common sense. You can read more about it in a [dedicated article](/adguard-for-safari/overview). Or you can [download the installation file](https://agrd.io/safari_release) directly from this page.
+AdGuard for Safari is not a browser extension in a common sense. You can read more about it in a [dedicated article](/adguard-for-safari/features/general). Or you can [download the installation file](https://agrd.io/safari_release) directly from this page.

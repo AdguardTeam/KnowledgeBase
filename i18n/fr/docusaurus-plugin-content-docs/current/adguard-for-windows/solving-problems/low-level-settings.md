@@ -106,7 +106,7 @@ Host: example.org`
 
 will be converted to
 
-`GET  /foo/bar/ HTTP/1.1
+`GET /foo/bar/ HTTP/1.1
 Host: example.org`
 
 This option is only applied when the *Protect from DPI* Stealth mode option is enabled.
@@ -205,7 +205,7 @@ If Custom IP address is selected in Blocking mode for hosts rules or Blocking mo
 
 If Custom IP address is selected in Blocking mode for hosts rules or Blocking mode for adblock-style rules, this IP address will be returned in response to blocked AAAA requests. If none are specified, AdGuard will reply with the default "Refused" error.
 
-### Fallback servers
+### Serveurs Fallback
 
 Here you can specify an alternate DNS server to which a DNS request will be rerouted if the main server fails to respond within the timeout period specified in the next section. There are three options to choose from:
 

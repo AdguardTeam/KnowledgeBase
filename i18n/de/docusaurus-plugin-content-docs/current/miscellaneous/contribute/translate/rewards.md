@@ -9,7 +9,7 @@ Um einen **einjährigen AdGuard-Lizenzschlüssel** oder ein **einjähriges AdGua
 
 Um Ihren Übersetzungsfortschritt zu überprüfen, öffnen Sie ein Projekt, an dem Sie gearbeitet haben, klicken Sie auf die Registerkarte *Reports* und wählen Sie *My Contribution*. Sie können die Anzahl der in verschiedenen Projekten übersetzten Wörter zusammenzählen, um eine Lizenz zu erhalten.
 
-## Here’s how our reward system works
+## So funktioniert unser Belohnungssystem
 
 ```text
 Für die erste einjährige AdGuard-Lizenz müssen Sie 500 Wörter übersetzen.
@@ -21,8 +21,8 @@ Alle nachfolgenden Abonnements oder Verlängerungen erfordern zusätzlich 2.500 
 
 ```
 
-Just send us a request to [translate@adguard.com](mailto:translate@adguard.com) and you’ll get the license as a token of our gratitude.
+Senden Sie uns einfach eine Anfrage an [translate@adguard.com](mailto:translate@adguard.com) und Sie erhalten die Lizenz als Zeichen unserer Dankbarkeit.
 
-Besides, the most active translators may receive proofreader status in the future, should they express such an intention, and that promises even more good stuff.
+Außerdem können die aktivsten Übersetzer:innen in Zukunft Korrekturleser:innen werden, wenn sie eine solche Absicht äußern.
 
-Every year we present gifts with the AdGuard logo to our active proofreaders. If you want to become one of them, please write to [translate@adguard.com](mailto:translate@adguard.com).
+Jedes Jahr senden wir unseren aktiven Mitwirkenden Geschenke mit dem AdGuard-Logo. Wenn Sie AdGuard helfen möchten, schreiben Sie bitte an [translate@adguard.com](mailto:translate@adguard.com).

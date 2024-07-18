@@ -11,6 +11,10 @@ sidebar_position: 3
 
 Для анализа и диагностики различных проблем службе поддержки могут понадобиться файлы журнала AdGuard. Эти файлы содержат записи обо всех ошибках, которые произошли с программой за последнее время. Ниже представлена краткая инструкция, описывающая как получить и отправить в службу поддержки файлы журнала.
 
+> AdGuard стремится защищать вашу конфиденциальность. We strictly follow our [Privacy Policy](https://adguard.com/en/privacy/windows.html) and do not collect any private information about users. Перед отправкой логов в поддержку проверьте, не содержит ли файл дополнительную информацию, которую вы не хотите передавать. Если в файле осталась личная информация, рекомендуем удалить её.
+
+### Debug logs {#debug-logs}
+
 1. Откройте настройки AdGuard. Перейдите в раздел *Общие настройки*, прокрутите вниз до конца экрана и выберите *Уровень логирования* *Подробный*.
 
     ![Подробный уровень логирования *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/solving-problems/adg-logs-1.png)
@@ -43,7 +47,9 @@ sidebar_position: 3
 
 1. Откройте консоль (наберите `cmd` в стартовой панели).
 
-1. Запустите приложение командой `C:\"Program Files (x86)"\Adguard\Adguard.exe /trace` (если вы используете 64-битный Windows) или `C:\"Program Files"\Adguard\Adguard.exe /trace` (если вы используете 32-битный).
+1. Run the application with the command `C:\"Program Files"\Adguard\Adguard.exe /trace` regardless of Windows bitness if you have installed AdGuard v7.16 for Windows or later.
+
+If you have an older version of AdGuard for Windows, run the application with the command C:\"Program Files (x86)"\Adguard\Adguard.exe /trace if you are using 64-bit Windows, and C:\"Program Files"\Adguard\Adguard.exe /trace if you are using 32-bit.
 
 1. Воспроизведите ошибку.
 

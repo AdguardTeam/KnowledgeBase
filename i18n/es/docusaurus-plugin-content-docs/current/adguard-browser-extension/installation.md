@@ -1,6 +1,6 @@
 ---
 title: Cómo instalar
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 :::info
@@ -71,4 +71,4 @@ En la ventana de diálogo abierta, haz clic en *Agregar extensión* para instala
 
 ## Cómo instalar la extensión de navegador AdGuard para Safari
 
-AdGuard para Safari no es una extensión de navegador común. Puedes leer más sobre esto en el [artículo](/adguard-for-safari/overview). O puedes [descargar el archivo de instalación](https://agrd.io/safari_release) directamente desde esta página.
+AdGuard para Safari no es una extensión de navegador común. You can read more about it in a [dedicated article](/adguard-for-safari/features/general). O puedes [descargar el archivo de instalación](https://agrd.io/safari_release) directamente desde esta página.

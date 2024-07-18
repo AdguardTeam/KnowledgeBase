@@ -5,7 +5,7 @@ sidebar_position: 6
 
 :::note
 
-AdGuard is not an antivirus program. Ele pode avisá-lo quando você visitar um site de malware ou phishing, mas **não remove vírus do seu dispositivo.**
+O AdGuard não é um programa antivírus. Ele pode avisá-lo quando você visitar um site de malware ou phishing, mas **não remove vírus do seu dispositivo.**
 
 :::
 
@@ -13,7 +13,7 @@ Se você suspeitar que seu computador está infectado por malware ou vírus, pri
 
 ## Funcionalidades de antivírus gratuitos {#free-antivirus}
 
-There are many of them and you can use any one you prefer. Se esta checagem com o antivírus não revelar nada, mas o computador ainda se comportar de maneira suspeita, tente testá-lo para adware, que pode implementar sua publicidade em qualquer página que você abrir.
+Existem muitos deles e você pode usar o que preferir. Se esta checagem com o antivírus não revelar nada, mas o computador ainda se comportar de maneira suspeita, tente testá-lo para adware, que pode implementar sua publicidade em qualquer página que você abrir.
 
 ## Como limpar seu sistema de Adware {#adware}
 
@@ -21,33 +21,33 @@ Na Internet, você pode encontrar muitos aplicativos destinados a combater esse 
 
 Vamos usar o AdwareCleaner como exemplo. Depois que o aplicativo for baixado e instalado com sucesso, execute as seguintes etapas:
 
-1. Start the application and click **Scan now**.
+1. Inicie o aplicativo e clique em **Digitalizar agora**.
 
 ![adware1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware1.png)
 
-1. Once the scan has been completed, you will need to send suspicious objects to **Quarantine**.
+1. Assim que a varredura for concluída, você precisará enviar objetos suspeitos para a **Quarentena**.
 
 ![adware2 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware2.png)
 
-1. When the items are moved to **Quarantine**, you will be able to **Clear the system** of unnecessary ballast.
+1. Quando os itens forem movidos para **Quarentena**, você poderá **Limpar o sistema** de itens desnecessários.
 
-1. In some cases, you may need to **Reboot the system** after cleaning is complete.
+1. Em alguns casos, pode ser necessário **Reiniciar o sistema** após a conclusão da limpeza.
 
 ![adware3 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware3.png)
 
-1. Once the system has been rebooted, cleaning will be completed. If necessary, you can always read the **Report** on the work done.
+1. Após a reinicialização do sistema, a limpeza será concluída. Se necessário, é possível ler o **Relatório** sobre todo o trabalho realizado.
 
 ![adware4 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware4.png)
 
-If it didn’t help, temporary disable all extensions and some other settings in the browser according to [these instructions](#instructions).
+Se não ajudar, desative temporariamente todas as extensões e algumas outras configurações no navegador de acordo com [estas instruções](#instructions).
 
-If disabling of settings and extensions does not help, try to [recreate shortcuts of your browsers](#shortcuts).
+Se desabilitar configurações e extensões não ajudar, tente [recriar atalhos de seus navegadores](#shortcuts).
 
-Further on this page we describe the instructions on how to remove some of the most commonly encountered ad extensions.
+Mais adiante nesta página, descrevemos as instruções sobre como remover algumas das extensões de anúncio mais comumente encontradas.
 
 ## Como desativar configurações e extensões no navegador {#instructions}
 
-Below are the instructions on how to disable settings and extensions for the most popular browsers:
+Abaixo estão as instruções sobre como desabilitar configurações e extensões para os navegadores mais populares:
 
 - [para Google Chrome](https://support.google.com/chrome/answer/187443?hl=en)
 
@@ -57,6 +57,6 @@ Below are the instructions on how to disable settings and extensions for the mos
 
 ## Como recriar atalhos para seus navegadores {#shortcuts}
 
-Very often, malware and adware programs install their homepage in a very simple way — they substitute your browser's desktop shortcut, taskbar and *Start* menu items.
+Muitas vezes, os programas de malware e adware instalam sua página inicial de uma maneira muito simples: eles substituem o atalho da área de trabalho do navegador, a barra de tarefas e os itens de menu *Iniciar*.
 
-The simplest solution in this case is to manually delete all the shortcuts and recreate them by yourself.
+A solução mais simples neste caso é excluir manualmente todos os atalhos e recriá-los você mesmo.

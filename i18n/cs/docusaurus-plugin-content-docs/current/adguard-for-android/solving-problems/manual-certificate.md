@@ -36,7 +36,7 @@ Certifikát AdGuardu nainstalujete podle následujících kroků:
 
 Vše je nastaveno! Jakmile je certifikát úspěšně nainstalován, zapnuli jste HTTPS filtrování.
 
-Upozorňujeme, že uvedené kroky jsou provedeny na smartphonu Google Pixel 7. Pokud používáte jiné zařízení se systémem Android, mohou se přesné názvy nabídek nebo možností lišit. Pro snadnější navigaci zvažte vyhledání certifikátu zadáním "certificate" nebo "credentials" do vyhledávacího řádku v nastavení.
+Upozorňujeme, že uvedené kroky jsou provedeny na smartphonu Google Pixel 7. Pokud používáte jiné zařízení se systémem Android, mohou se přesné názvy nabídek nebo možností lišit. Pro snadnější navigaci zvažte vyhledání certifikátu zadáním “certificate“ nebo “credentials“ do vyhledávacího řádku v nastavení.
 
 Pokud se během ruční instalace certifikátu vyskytnou problémy (například jste certifikát nainstalovali, ale aplikace jej stále ignoruje), níže naleznete možná řešení.
 

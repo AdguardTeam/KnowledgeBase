@@ -3,7 +3,7 @@ title: Abonnement kündigen oder Rückerstattung erhalten
 sidebar_position: 5
 ---
 
-## Wie man ein Abonnement kündigt
+## So kündigen Sie ein Abonnement
 
 Das Abonnement kann in Ihrem AdGuard-Konto gekündigt werden. Um Ihr Abonnement zu kündigen:
 
