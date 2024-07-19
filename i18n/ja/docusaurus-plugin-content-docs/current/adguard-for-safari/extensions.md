@@ -1,66 +1,67 @@
 ---
-title: Safari extensions
+title: Safari拡張機能
 sidebar_position: 3
 ---
 
 :::info
 
-この記事は、お使いのSafariブラウザのみを保護する「AdGuard  for Safari」に関するものです。 To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+この記事は、お使いのSafariブラウザのみを保護する「AdGuard  for Safari」に関するものです。 デバイス全体を保護するには、[AdGuardアプリをダウンロード](https://agrd.io/download-kb-adblock)してください。
 
 :::
 
-## What Safari extensions are
+## Safari拡張機能とは
 
-Safari extensions are small software programs that add functionality to the Safari web browser. They allow users to customize and enhance their browsing experience by adding features that are not natively built into the browser. AdGuard for Safari uses extensions primarily to apply filtering rules on websites opened in Safari.
+Safari拡張機能は、Safariウェブブラウザで機能を追加する小さなソフトウェアプログラムです。 ブラウザに内蔵されていない機能を追加することで、ユーザーはブラウジング体験をカスタマイズして改善させることができます。 AdGuard for Safari は、主にSafariで開かれたウェブサイトにフィルタリングルールを適用するために拡張機能を使用します。
 
-## How it works
+## 仕組み
 
-To block ads, trackers, and annoyances on websites, AdGuard uses filtering rules. The rules from AdGuard's and your custom filters are converted into ones comprehensible by Safari and are integrated into 6 Safari extensions:
+ウェブサイト上の広告、トラッキング、迷惑要素をブロックするために、AdGuardはフィルタリングルールを使用します。 AdGuard フィルタとユーザーのカスタムフィルタのルールは、Safari が読み取れるものに変換され、6つのSafari拡張機能に統合されます:
 
-– AdGuard General – AdGuard Privacy – AdGuard Social – AdGuard Security – AdGuard Other
+- AdGuard 一般
+- AdGuard プライバシー
+- AdGuard ソーシャル
+- AdGuard セキュリティ
+- AdGuard その他
 
-Each content-blocking extension can include up to 150,000 active filtering rules. The number of rules within most filter groups does not surpass 150,000. However, if you activate too many language-specific or custom filters, you might exceed the limit. In such cases, random rules that are over the limit will be automatically disabled, which may lead to incorrect blocking. **We strongly recommend activating only the filters you need**.
+各コンテンツブロッカー拡張機能において、最大150,000の有効フィルタリングルールが許可されています。 ほとんどのフィルタグループのルール数は150,000を超えません。 ただし、言語特化フィルタやカスタムフィルタを有効にしすぎると、制限を超える可能性があります。 このような場合、制限を超えたルールの中から、ランダムには一部のルールが自動的に無効化されるため、誤った広告ブロックの可能性が出てきます。 **必要なフィルタ以外は有効にしないことを強くお勧めします。**
 
-There are also two extensions responsible for other features:
+もう一つの、「*AdGuard for Safari*」という拡張機能は、Safariの検索バーの横にAdGuardアイコンを追加し、複雑な広告をブロックするための高度なルールを使用できるようにします。
 
-– *AdGuard Safari Icon* enables AdGuard's icon next to the search bar in Safari – *AdGuard Advanced Blocking* allows using advanced rules to block complex ads
+![Safari拡張機能](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-icon1.png)
 
-![Safari extensions](https://uploads.adguard.org/safari_extensions.png)
+では、それぞれの拡張機能について詳しく説明いたします。
 
-More on each extension below.
+## 6個のコンテンツブロッカー拡張機能
 
-## Content-blocking extensions
+「*AdGuard 一般*」は、フィルタ<からのルールを適用します。これらのフィルタは、*フィルタ* → *広告ブロッキング* および *フィルタ* → *言語特化フィルタ* で見つけることができます。 この拡張機能は、効果的な広告ブロックに焦点を当て、特定の言語の広告のフィルタリング、お含みます。
 
-*AdGuard General* applies rules from filters that you can find in *Filters* → *Ad blocking* and *Filters* → *Language-specific*. This extension focuses on comprehensive ad blocking and includes filters for ads in specific languages.
+「*AdGuard プライバシー*」は、 *フィルタ* → *プライバシー*にあるフィルタのルールを適用します。 あらゆるトラッキング（個人情報追跡）メカニズムをブロックし、あなたのブラウジングアクティビティとオンラインプライバシーが保護されるようにします。
 
-*AdGuard Privacy* applies rules from filters located in *Filters* → *Privacy*. It blocks tracking mechanisms and ensures that your browsing activity remains private.
+「*AdGuard ソーシャル*」は、SNS系フィルタからのルールを適用します。これらのフィルタは、*フィルタ* → *SNSウィジェット* および *フィルタ* → *迷惑要素* で見つけることができます。 ポップアップ、ソーシャルメディアボタン（いいね！、シェアなど）、オンラインアシスタントウィンドウ、および Web ページ上のその他の煩わしい要素をブロックします。
 
-*AdGuard Social* applies rules from filters that can be found in *Filters* → *Social Widgets* and *Filters* → *Annoyances*. It blocks popups, social media buttons, online assistant windows, and other elements on web pages that you might find annoying.
+「*AdGuard セキュリティ*」は、 *フィルタ* → *セキュリティ*にあるフィルタのルールを適用します。 この拡張機能は、潜在的に有害な要素を識別してブロックし、悪意のあるコンテンツからユーザーを保護します。
 
-*AdGuard Security* applies rules from filters under *Filters* → *Security*. This extension identifies and blocks potentially harmful elements, safeguarding users from malicious content.
+「*AdGuard その他*」は上記のカテゴリーに該当せず、 *フィルタ* → *その他*にあるフィルタのルールを適用します: *検索広告と自己宣伝のブロックを解除するフィルタ*、*AdGuard DNS フィルタ*、*AdGuard 実験的フィルタ*
 
-*AdGuard Other* applies rules from filters that that don't fall under the above-mentioned categories and that are located in *Filters* → *Other*: *Filter unblocking search ads and self-promotion*, *AdGuard DNS filter*, and *AdGuard Experimental filter*.
+「*AdGuard カスタム*」は、独自に追加したフィルタのルールを*カスタムフィルタ*に適用します。
 
-*AdGuard Custom* applies rules from filters that you add on your own to *Custom filters*.
+ユーザールールとホワイトリストルールはすべての拡張機能に含まれています。
 
-User rules and allowlist rules are included into every extension.
+## 「AdGuard for Safari」拡張機能
 
-## Other extensions
+「*AdGuard for Safari*」という拡張機能は検索バーの横にあるAdGuardアイコンを有効にします。 特定のウェブサイトに対して広告ブロックを素早くオン・オフにしたい場合や、手動で広告をブロックしたい場合に便利です。 また、Safariがサポートするフォーマットに変換できない高度なルールもこの拡張機能に含まれています。 高度なルールにはCSSルール、CSSセレクタ、scriptletsが含まれ、これらのおかげでAdGuardはYouTubeなどの複雑な広告をブロックすることができます。
 
-*AdGuard Safari Icon* enables the AdGuard icon next to the search bar. It's useful if you want to quickly set up protection on a particular website or block ads manually.
+## Safariの拡張機能を管理する方法
 
-*AdGuard Advanced blocking* contains advanced rules that aren't converted into the format supported by Safari. This includes CSS rules, CSS selectors, and scriptlets that allow AdGuard to block complex ads — for example, on YouTube.
+1. Safariを開き、画面左上の *Safari* をクリックしてメニューを展開します。 ![Safari設定 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-settings1.png)
+1. *環境設定...*をクリックします。
+1. 🧩「*拡張機能*」タブを選択します。 ![拡張機能タブ](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-extensions1.png)
 
-## How to manage Safari extensions
+## AdGuard for Safari にアクセス権限が必要な理由
 
-1. Open Safari and click *Safari* in the upper left corner of the screen to expand the menu. ![Safari settings *mobile](https://cdn.adtidy.org/blog/new/sxaqgfsafari_settings.png)
-1. Click *Preferences...*
-1. Select *Extensions*. ![Extensions tab](https://cdn.adtidy.org/blog/new/ocofdextensions_tab.png)
+*AdGuard for Safari* 拡張機能を有効にすると、**ウェブページのコンテンツへのアクセス**と**閲覧履歴へのアクセス**が必要になります。 これらのアクセス権限が必要な理由は以下の通りです:
 
-## Why some extensions require permissions
+- ウェブページのコンテンツへのアクセスは、手動による広告ブロックや高度なブロックルールを正しく機能させるために必要です。
+- 閲覧履歴へのアクセスは、Webサイトの保護ステータスを確認し、どの高度なルールを適用すべきかを判断するために必要です。
 
-When enabling some Safari extensions, you might notice that they ask for **access to web page content** and **access to browsing history**. Here's why AdGuard for Safari needs them:
-
-– Access to web page content is required for manual ad blocking and advanced blocking rules to work correctly – Access to browsing history is required to check the protection status on websites and determine which advanced rules should be applied
-
-We do not use this data for any other purpose or share it with anyone. For more info, you can consult our [Privacy policy](https://adguard.com/privacy.html).
+※AdGuardは、アクセス権限を通じて得たデータを他の目的で使用したり、誰かと共有したりすることは一切ありません。 詳しくは、[プライバシーポリシー](https://adguard.com/privacy.html)をご覧ください。

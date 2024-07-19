@@ -1,35 +1,33 @@
 ---
-title: Browser-protected pages
-sidebar_position: 4
+title: 受浏览器保护的网页
+sidebar_position: 5
 ---
 
 :::info
 
-这篇文章是关于 AdGuard 浏览器扩展，它只能保护用户的浏览器。 To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+本文介绍的是 AdGuard 浏览器扩展，它仅保护用户的浏览器。 如果需要保护整个设备，请[下载 AdGuard 应用程序](https://adguard.com/download.html?auto=true)。
 
 :::
 
-## Browser-protected pages
+在您使用像是 AdGuard 浏览器扩展的网络扩展程序时，某些受限域名会禁止访问或限制权限。 因此，广告拦截扩展无法与这些页面进行交互或修改其内容。 换句话说，这些扩展无法屏蔽那些网页上的广告和其他烦人的元素。
 
-When using a web extension like AdGuard Browser Extension, there are certain restricted domains that prohibit access or permissions. As a result, ad blocking extensions are not allowed to interact with or modify the content of these pages. In other words, they are not allowed to block ads and other annoying elements on these web pages.
+## Chromium 浏览器限制
 
-### Chromium browser restrictions
-
-Chromium-based browsers, such as Google Chrome, maintain a list of restricted domains that extensions are not allowed to access. These domains include:
+基于 Chromium 的浏览器（如 Google 浏览器）会维护一个不允许扩展程序访问的受限域名列表。 这些域名包括：
 
 - clients.google.com
 - clients[0-9]+.google.com
 - sb-ssl.google.com
-- URLs starting with `chrome://`, `chrome-extension://`, or `https://chrome.google.com/webstore/`
-- PDF files
-- Pages where Javascript is disabled
-- Security warning pages
-- Error pages such as 404 errors and network errors
-- URLs starting with `view-source:` or `data:`
+- 以 `chrome://`、`chrome-extension://`、`https://chrome.google.com/webstore/` 开头的 URL
+- PDF 文件
+- 禁用 Javascript 的页面
+- 安全警告页面
+- 错误页面，如 404 错误和网络错误
+- 以 `view-source:` 或 `data:` 开头的 URL
 
-### Firefox browser restrictions
+## Firefox 浏览器限制
 
-Similarly, the Firefox browser has its own set of restricted domains where extensions are not permitted to operate. These restricted domains include:
+同样，Firefox 浏览器也有自己的一组不允许运行扩展程序的受限域名。 这些受限域名包括：
 
 - accounts-static.cdn.mozilla.net
 - accounts.firefox.com
@@ -44,20 +42,20 @@ Similarly, the Firefox browser has its own set of restricted domains where exten
 - support.mozilla.org
 - sync.services.mozilla.com
 
-### Modifying restrictions in Firefox
+## 修改 Firefox 浏览器的限制
 
-Changing advanced settings can affect the stability and security of Firefox. This is recommended for advanced users only. If you are aware of the associated risk and still wish to enable add-ons disallowed on a protected page, follow the steps below:
+更改高级设置可能会影响 Firefox 浏览器的稳定性和安全性。 仅推荐高级用户更改设置。 如果您已了解相关风险，但仍希望启用受保护页面中被禁止的扩展程序，请按照以下步骤操作：
 
-1. Click the menu button → **Add-ons and themes** → **Extensions**.
-2. Click the extension you want to enable on sites with restrictions (In this case, AdGuard).
-3. Select **Allow** in the section **Run on sites with restrictions**.
+1. 点击菜单按钮 →「**扩展与主题**」→「**扩展程序**」。
+2. 单击要在受限制网站上启用的扩展（本例中为 AdGuard）。
+3. 在「**在受限站点上运行**」中选择「**允许**」。
 
-Alternatively, you can:
+或者，您也可以：
 
-1. Open a new tab and type **about:config** in the address bar.
-2. Press **Return**. You may encounter a warning. In this case, click **Accept the Risk and Continue**.
-3. Search for `extensions.webextensions.restrictedDomains`. If you can’t find this preference, you can create it. Simply select the **Boolean** type and click **+** to add it.
-4. Click the toggle button next to this preference and change its value to `false`.
-5. Restart Firefox.
+1. 打开一个新标签页，在地址栏中输入 **about:config**。
+2. 按「**返回**」。 您可能会收到警告。 在这种情况下，请单击「**接受风险并继续**」。
+3. 搜索 `extensions.webextensions.restrictedDomains`。 如果您找不到此首选项，可以直接创建。 只需选择「**Boolean**」类型，然后单击「**+**」添加即可。
+4. 单击该首选项旁边的切换按钮，将其值更改为「`false`」。
+5. 重启 Firefox 浏览器。
 
-For further information on this subject, read [the article on Mozilla’s support website](https://mzl.la/3POXoWi).
+有关这方面的更多信息，请阅读 [Mozilla 支持网站的文章](https://mzl.la/3POXoWi)。

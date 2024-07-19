@@ -45,7 +45,7 @@ Jazyk rozhraní Crowdin můžete změnit také kliknutím na ikonu *Nastavení* 
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/context-note.png)
 
-1. Věnujte pozornost také snímkům obrazovky, které se často objevují vedle zdrojových frází v poli "Context". Pomáhají pochopit kontext a zprostředkovat přesný význam.
+1. Všimněte si, že zdrojové řetězce mohou mít v části Context také snímky obrazovky. Pomáhají pochopit kontext a zprostředkovat přesný význam.
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/screenshot.png)
 
@@ -58,7 +58,7 @@ Jazyk rozhraní Crowdin můžete změnit také kliknutím na ikonu *Nastavení* 
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/request.png)
 
-1. Kromě navrhování nových překladů můžete také zanechávat komentáře k řetězcům. Pomocí komentářů nás můžete informovat o chybách ve stávajících překladech, psát poznámky nebo klást otázky. Pokud uvidíte komentář zanechaný k vašemu překladu — zkuste na něj odpovědět.
+1. Kromě navrhování nových překladů můžete také zanechávat komentáře k řetězcům. Pomocí komentářů nás můžete upozornit na chyby ve zdrojovém textu nebo v existujících překladech, uvést poznámky nebo položit otázky. Pokud uvidíte komentář zanechaný k vašemu překladu — zkuste na něj odpovědět.
 
     ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/comments.png)
 

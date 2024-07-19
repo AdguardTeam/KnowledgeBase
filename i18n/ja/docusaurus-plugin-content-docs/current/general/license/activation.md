@@ -3,8 +3,6 @@ title: 有効化する方法
 sidebar_position: 3
 ---
 
-## AdGuardライセンスを有効化する方法
-
 ライセンスを有効にするには、お使いのAdGuard製品の「*ライセンス*」セクションに移動し、「*ログイン*」または「*認証する*」ボタンを見つけてください。 AdGuardアカウントのメールアドレスとパスワードを使用してログインします。 AdGuardアカウントをまだお持ちでない場合は、その場でアカウントを新規登録できます（メールアドレスのみが必要）。
 
 :::note
@@ -19,90 +17,62 @@ sidebar_position: 3
 
 ### AdGuard for Windows を有効にする方法
 
-1. AdGuardアプリを開く
+1. ライセンス/試用期間の有効期限切れに関する通知画面で、「*認証する*」をクリックします。
 
-    デスクトップ上のAdGuardアイコンをダブルクリックします。
+    ![期限切れライセンス画面 *border](https://cdn.adtidy.org/blog/new/eapwtexp.png)
 
-    ![デスクトップ上のAdGuardアイコン](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowsEn.png)
+    または、メイン画面の右上にある「*ライセンス*」を選択し、「*ライセンスを認証する*」をクリックします。
 
-    もしくは、システムトレイでAdGuardアイコンをダブルクリックします。
+    ![メイン画面 *border](https://cdn.adtidy.org/blog/new/ca313hmain-screen.png)
 
-    ![システムトレイでのAdGuardアイコン](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windows2En.png)
+    ![ライセンス画面 *border](https://cdn.adtidy.org/blog/new/n7nkclicense-screen.png)
 
-1. メインメニューで「**ライセンス**」→「**ライセンスを認証する**」をクリック
+1. ご希望の方法（アカウントもしくはライセンスキー）を使ってライセンスを認証します。 ライセンスがメール アドレスにバインド（紐付け）されている場合は、 「*AdGuard アカウント*」をクリックするか、そのメールアドレスに関連付けられているソーシャルアカウントを選択します。 または、ライセンスキーを入力して認証することもできます。
 
-    ![「ライセンスを認証する」をクリック *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/windows_about.png)
-
-1. 認証（有効化）方法が2つ表示されます。
-
-    - お持ちの**AdGuardアカウント**（または Facebook、Google、Apple アカウント）の**メールアドレス**と**パスワード**を入力して認証する
-
-        ![AdGuardアカウントにログイン *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/windows_account.png)
-
-    - **ライセンスキー**を入力して認証する
-
-        ![ライセンスキーを入力 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/windows_license.png)
+    ![ライセンスの有効化 *border](https://cdn.adtidy.org/blog/new/lnzz5activate-license.png)
 
 ### AdGuard for Mac を有効にする方法
 
-1. AdGuardアプリを開く（メニューバーでAdGuardアイコンをクリック  ）
+1. ライセンス/試用期間の有効期限切れに関する通知画面で、「*認証する*」をクリックします。
 
-    ![メニューバーでのAdGuardアイコン *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/mac1.png)
+    ![期限切れライセンス画面 *mobile_border](https://cdn.adtidy.org/blog/new/o9bhtexpired-screen.png)
 
-1. 右上の**⚙アイコン**を押す
+    または、AdGuard を開いて歯車⚙アイコンをクリックし、「*ライセンス*」をクリックします。
 
-1. 「**ライセンス…**」をクリックする
+    ![設定 *border](https://cdn.adtidy.org/blog/new/xuyqmpreferences.png)
 
-    ![「設定」→「ライセンス」に移動 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/mac2.png)
+1. 開いたウィンドウで、「*ライセンスを認証する*」をクリックします。
 
-1. 開いたウィンドウで、「**ライセンスキーを認証する**」をクリック
+    ![ライセンス画面 *border](https://cdn.adtidy.org/blog/new/8rbc8license-screen.png)
 
-    ![「ライセンスを認証する」をクリック *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/mac3.png)
+1. ご希望の方法（アカウントもしくはライセンスキー）を使ってライセンスを認証します。 ライセンスがメール アドレスにバインド（紐付け）されている場合は、 「*AdGuard アカウント*」をクリックするか、そのメールアドレスに関連付けられているソーシャルアカウントを選択します。 または、ライセンスキーを入力して認証することもできます。
 
-1. 認証（有効化）方法が2つ表示されます。
-
-    - お持ちの**AdGuardアカウント**（または Facebook、Google、Apple アカウント）の**メールアドレス**と**パスワード**を入力して認証する
-
-        ![AdGuardアカウントにログインして認証 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/mac4.png)
-
-    - **ライセンスキー**を入力して認証する
-
-        ![ライセンスキーを入力して認証 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/mac5.png)
+    ![ライセンスの有効化 *border](https://cdn.adtidy.org/blog/new/tws3jkactivate-license.png)
 
 ### AdGuard for Android を有効にする方法
 
-1. AdGuardアプリを開く
+1. *右下の歯車⚙アイコン*（設定）をタップし、 「*ライセンス*」を選択します。
 
-1. 画面左上の**メニューアイコン（☰）**をタップ
+    ![設定画面 *mobile_border](https://cdn.adtidy.org/blog/new/sbdcysettings.png)
 
-1. 一番上の「**プレミアム版を入手**」バー（もしくはちょっと下の「**ライセンス状態**」）をタップ
+1. 「*ライセンスを認証する*」をタップします。
 
-    ![「プレミアム版を入手」もしくは「ライセンス状態」をタップ *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/android-act-1.png)
+    ![ライセンス画面 *mobile_border](https://cdn.adtidy.org/blog/new/04fs1license-screen.png)
 
-1. 画面右上の「**⋮**」をタップ
+1. ご希望の方法（アカウントもしくはライセンスキー）を使ってライセンスを認証します。 ライセンスがメール アドレスにバインド（紐付け）されている場合は、 「*メールアドレスで続ける*」をタップするか、そのメールアドレスに関連付けられているソーシャルアカウントを選択します。 または、ライセンスキーを入力して認証することもできます。
 
-    ![3点メニューをタップ *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/android-act-2.png)
-
-1. 「**プレミアム版をアクティベート**」を押します。2つの方法いずれかで認証できます。
-
-    - お持ちの**AdGuardアカウント**（または Facebook/Google のアカウント）の**メールアドレス**と**パスワード**を入力して認証する
-
-        ![ログインして有効化 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/android-act-3.png)
-
-    - **ライセンスキー**を入力して認証する
-
-        ![ライセンスキーを入力して有効化 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/android-act-4.png)
+    ![ライセンスの有効化 *mobile_border](https://cdn.adtidy.org/blog/new/sbxttactivate-license.png)
 
 ### AdGuard for iOS を有効にする方法
 
-1. お使いの端末でAdGuardアプリを開き、「**詳細はこちら**」をタップ
+1. *右下の歯車⚙アイコン*（設定）をタップし、 「*ライセンス*」を選択します。
 
-1. （もしくは、メイン画面右下の⚙アイコン→「**ライセンス**」をタップ）
+    ![設定画面 *mobile_border](https://cdn.adtidy.org/blog/new/uf8f1fsettings.png)
 
-1. 画面右上の「**ログイン**」をタップ
+1. 画面右上の「**ログイン**」をタップします。
 
-    ![「詳細はこちら」をタップ *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/ios1.jpeg)
+    ![購入画面 *mobile_border](https://cdn.adtidy.org/blog/new/10j5bhpurchase-page.png)
 
-1. お持ちの**AdGuardアカウント**の**メールアドレス**と**パスワード**を入力してログインする
+1. メールアドレスまたはソーシャルアカウントを使ってログインすることで、ライセンスを認証します。
 
-    ![画面右上の「ログイン」をタップ *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/ios2.jpeg)
+    ![ログイン画面 *mobile_border](https://cdn.adtidy.org/blog/new/prnjdlogin-page.png)

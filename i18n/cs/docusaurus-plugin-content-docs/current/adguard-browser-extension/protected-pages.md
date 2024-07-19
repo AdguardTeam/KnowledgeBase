@@ -1,6 +1,6 @@
 ---
 title: Stránky chráněné prohlížečem
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 :::info
@@ -9,11 +9,9 @@ Tento článek je o Rozšíření prohlížeče AdGuard, které chrání pouze v
 
 :::
 
-## Stránky chráněné prohlížečem
-
 Při používání webového rozšíření, jako je Rozšíření prohlížeče AdGuard, existují určité omezené domény, které zakazují přístup nebo oprávnění. Rozšíření pro blokování reklam proto nemohou zasahovat do obsahu těchto stránek ani jej měnit. Jinými slovy, není jim dovoleno blokovat reklamy a další obtěžující prvky na těchto webových stránkách.
 
-### Omezení prohlížeče Chromium
+## Omezení prohlížeče Chromium
 
 Prohlížeče založené na platformě Chromium, jako je např. Google Chrome, udržují seznam omezených domén, ke kterým rozšíření nemají přístup. Mezi tyto domény patří:
 
@@ -27,7 +25,7 @@ Prohlížeče založené na platformě Chromium, jako je např. Google Chrome, u
 - Chybové stránky, jako jsou chyby 404 a chyby sítě
 - URL začínající na `view-source:` nebo `data:`
 
-### Omezení prohlížeče Firefox
+## Omezení prohlížeče Firefox
 
 Podobně má prohlížeč Firefox vlastní sadu omezených domén, ve kterých není povoleno používat rozšíření. Mezi tyto omezené domény patří:
 
@@ -44,7 +42,7 @@ Podobně má prohlížeč Firefox vlastní sadu omezených domén, ve kterých n
 - support.mozilla.org
 - sync.services.mozilla.com
 
-### Úprava omezení v prohlížeči Firefox
+## Úprava omezení v prohlížeči Firefox
 
 Změna pokročilých nastavení může ovlivnit stabilitu a zabezpečení prohlížeče Firefox. Tato možnost je doporučena pouze pro pokročilé uživatele. Pokud jste si vědomi souvisejícího rizika, a přesto chcete povolit doplňky zakázané na chráněné stránce, postupujte podle následujících kroků:
 

@@ -17,15 +17,17 @@ Rozšíření Safari jsou malé programy, které přidávají funkce do webovéh
 
 K blokování reklam, slídičů a obtěžujících prvků na webových stránkách používá AdGuard pravidla filtrování. Pravidla z filtrů AdGuardu a vašich vlastních filtrů jsou převedena na pravidla srozumitelná pro Safari a jsou integrována do 6 rozšíření Safari:
 
-– AdGuard General – AdGuard Privacy – AdGuard Social – AdGuard Security – AdGuard Other
+- AdGuard – General
+- AdGuard – Privacy
+- AdGuard – Social
+- AdGuard – Security
+- AdGuard – Other
 
 Každé rozšíření pro blokování obsahu může obsahovat až 150 000 aktivních pravidel filtrování. Počet pravidel ve většině skupin filtrů nepřesahuje 150 000. Pokud však aktivujete příliš mnoho jazykově specifických nebo vlastních filtrů, můžete tento limit překročit. V takových případech budou náhodná pravidla, která překročí limit, automaticky zakázána, což může vést k nesprávnému blokování. **Důrazně doporučujeme aktivovat pouze ty filtry, které potřebujete**.
 
-Existují také dvě rozšíření zodpovědná za další funkce:
+K dispozici je také další rozšíření, které je zodpovědné za další funkce: *AdGuard pro Safari*, které přidává ikonu AdGuard vedle vyhledávací lišty a umožňuje používání pokročilejších pravidel k blokování záludnějších reklam.
 
-– *AdGuard Safari Icon* aktivuje ikonu AdGuardu vedle vyhledávacího panelu v Safari – *AdGuard Advanced Blocking* umožňuje použití pokročilých pravidel k blokování složitých reklam
-
-![Safari extensions](https://uploads.adguard.org/safari_extensions.png)
+![Safari extensions](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-icon1.png)
 
 Více informací o jednotlivých rozšířeních najdete níže.
 
@@ -45,22 +47,21 @@ Více informací o jednotlivých rozšířeních najdete níže.
 
 Uživatelská pravidla a pravidla seznamu povolených jsou součástí každého rozšíření.
 
-## Další rozšíření
+## AdGuard pro Safari
 
-*AdGuard Safari Icon* aktivuje ikonu AdGuardu vedle vyhledávací lišty. Je to užitečné, pokud chcete rychle nastavit ochranu na konkrétním webu nebo ručně blokovat reklamy.
-
-*Pokročilé blokování AdGuardu* obsahuje pokročilá pravidla, která nejsou převedena do formátu podporovaného Safari. To zahrnuje pravidla CSS, selektory CSS a skriptlety, které umožňují AdGuardu blokovat složité reklamy — například na YouTube.
+*AdGuard pro Safari* aktivuje ikonu AdGuardu vedle vyhledávací lišty. Je to užitečné, pokud chcete rychle nastavit ochranu na konkrétním webu nebo ručně blokovat reklamy. Obsahuje také pokročilá pravidla, která nejsou převedena do formátu podporovaného prohlížečem Safari. To zahrnuje pravidla CSS, selektory CSS a skriptlety, které umožňují AdGuardu blokovat složité reklamy — například na YouTube.
 
 ## Jak spravovat rozšíření Safari
 
-1. Otevřete Safari a kliknutím na *Safari* v levém horním rohu obrazovky rozbalte nabídku. ![Safari settings *mobile](https://cdn.adtidy.org/blog/new/sxaqgfsafari_settings.png)
-1. Klikněte na *Předvolby...*
-1. Vyberte *Rozšíření*. ![Extensions tab](https://cdn.adtidy.org/blog/new/ocofdextensions_tab.png)
+1. Otevřete Safari a kliknutím na *Safari* v levém horním rohu obrazovky rozbalte nabídku. ![Safari settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-settings1.png)
+1. Klikněte na *Natavení...*
+1. Vyberte *Rozšíření*. ![Extensions tab](https://cdn.adtidy.org/content/kb/ad_blocker/safari/adguard-for-safari-extensions1.png)
 
-## Proč některá rozšíření vyžadují oprávnění
+## Proč vyžaduje AdGuard pro Safari oprávnění
 
-Když povolíte některá rozšíření Safari, můžete si všimnout, že požadují **přístup k obsahu webové stránky** a **přístup k historii prohlížení**. Zde se dozvíte, proč je AdGuard pro Safari potřebuje:
+Při povolování rozšíření *AdGuard pro Safari* si můžete všimnout, že vyžaduje **přístup k obsahu webových stránek** a k **historii prohlížení**. Zde je důvod, proč potřebuje tato oprávnění:
 
-– Pro správnou funkci ručního blokování reklam a pokročilých pravidel blokování je nutný přístup k obsahu webové stránky. – Přístup k historii prohlížení je nutný pro kontrolu stavu ochrany na webových stránkách a určení, která pokročilá pravidla by měla být použita
+- Pro správnou funkci ručního blokování reklam a pokročilých pravidel blokování je nutný přístup k obsahu webové stránky
+- Přístup k historii prohlížení je nutný pro kontrolu stavu ochrany na webových stránkách a určení, která pokročilá pravidla by měla být použita
 
-We do not use this data for any other purpose or share it with anyone. Pro více informací se můžete podívat na naše [Zásady ochrany osobních údajů](https://adguard.com/privacy.html).
+Tyto údaje nepoužíváme pro žádné jiné účely a ani je s nikým nesdílíme. Pro více informací se můžete podívat na naše [Zásady ochrany osobních údajů](https://adguard.com/privacy.html).

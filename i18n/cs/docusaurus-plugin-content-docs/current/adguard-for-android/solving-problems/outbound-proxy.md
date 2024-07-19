@@ -25,7 +25,7 @@ V tomto článku uvádíme příklady nastavení některých nejoblíbenějšíc
 
 ### Jak používat AdGuard s Tor
 
-1. Otevřete AdGuard a jděte do **Nastavení** → **Filtrování** → **Síť** → **Proxy**. Stáhněte si "Orbot: Proxy with Tor" přímo z [Obchodu Play](https://play.google.com/store/apps/details?id=org.torproject.android&noprocess) nebo klepnutím na **Integrovat s Tor** a poté **Instalovat**.
+1. Otevřete AdGuard a jděte do **Nastavení** → **Filtrování** → **Síť** → **Proxy**. Stáhněte “Orbot: Proxy with Tor” přímo z [Google Play](https://play.google.com/store/apps/details?id=org.torproject.android&noprocess) nebo klepnutím na **Integrovat s Tor** a poté na **Instalovat**.
 
 1. Otevřete Orbot a stiskněte tlačítko **Spustit** na hlavní obrazovce aplikace.
 
@@ -61,7 +61,7 @@ V tomto článku uvádíme příklady nastavení některých nejoblíbenějšíc
     | Hostitel proxy | *proxy-nl.privateinternetaccess.com* |
     | Port proxy     | *1080*                               |
 
-1. Musíte také vyplnit pole **Uživatelské jméno/heslo**. Za tímto účelem se přihlaste do [Klientského ovládacího panelu](https://www.privateinternetaccess.com/pages/client-sign-in) na webu PIA. Klikněte na tlačítko **Generovat heslo** v části **Generovat heslo PPTP/L2TP/SOCKS**. Zobrazí se uživatelské jméno začínající na "x" a náhodné heslo. Použijte je k vyplnění polí **Uživatelské jméno proxy** a **Heslo proxy** v AdGuardu.
+1. Musíte také vyplnit pole **Uživatelské jméno/heslo**. Za tímto účelem se přihlaste do [Klientského ovládacího panelu](https://www.privateinternetaccess.com/pages/client-sign-in) na webu PIA. Klepněte na tlačítko **Generovat heslo** v části **Generovat heslo PPTP/L2TP/SOCKS**. Zobrazí se uživatelské jméno začínající na “x” a náhodné heslo. Použijte je k vyplnění polí **Uživatelské jméno proxy** a **Heslo proxy** v AdGuardu.
 
 1. Klepněte na **Uložit a vybrat**.
 
@@ -93,11 +93,11 @@ V tomto článku uvádíme příklady nastavení některých nejoblíbenějšíc
 
 1. Klepněte na tlačítko **Přidat proxy** a zadejte následující údaje:
 
-    | Pole           | Hodnota                                                                               |
-    | -------------- | ------------------------------------------------------------------------------------- |
-    | Typ proxy      | *SOCKS5*                                                                              |
-    | Hostitel proxy | *jakýkoli server z [tohoto seznamu](https://support.nordvpn.com/Connectivity/Proxy/)* |
-    | Port proxy     | *1080*                                                                                |
+    | Pole           | Hodnota                                                                                                                                |
+    | -------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+    | Typ proxy      | *SOCKS5*                                                                                                                               |
+    | Hostitel proxy | *jakýkoli server z [tohoto seznamu](https://support.nordvpn.com/hc/en-us/articles/20195967385745-NordVPN-proxy-setup-for-qBittorrent)* |
+    | Port proxy     | *1080*                                                                                                                                 |
 
 1. Do polí **Uživatelské jméno** a **Heslo** zadejte své uživatelské jméno a heslo NordVPN.
 

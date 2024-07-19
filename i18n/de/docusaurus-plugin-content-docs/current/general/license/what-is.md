@@ -1,57 +1,55 @@
 ---
-title: What is an AdGuard license
+title: What is AdGuard license?
 sidebar_position: 1
 ---
 
-## What is an AdGuard license
+Eine Lizenz ist eine Erlaubnis zur Nutzung des AdGuard-Produkts, die in Übereinstimmung mit dem [Endbenutzer-Lizenzvertrag](https://adguard.com/eula.html) erteilt wird. Wenn sie an eine E-Mail-Adresse gebunden sind, können die AdGuard-Lizenzen im [AdGuard-Konto](https://my.adguard.com/) gefunden werden.
 
-A license is a permission to use the AdGuard product, provided in accordance with the [End User License Agreement](https://adguard.com/eula.html). If bound to an email address, AdGuard licenses can be found in the user's [AdGuard account](https://my.adguard.com/).
+## Welche Arten von AdGuard-Lizenzen gibt es?
 
-## What types of AdGuard licenses exist
+Auf der [Kaufseite](https://adguard.com/license.html) sind folgende Arten von Lizenzen aufgeführt:
 
-On the [purchase page](https://adguard.com/license.html), you can see the following types of licenses:
+- **1-Jahres-Abonnements** — diese Lizenzen werden automatisch jedes Jahr erneuert oder können manuell verlängert werden
+    - Einzellizenz — schützt bis zu 3 Geräte
+    - Familienlizenz — schützt bis zu 9 Geräte
+- **Lebenslang** — diese Lizenzen sind zeitlich nicht begrenzt
+    - Einzellizenz — schützt bis zu 3 Geräte
+    - Familienlizenz — schützt bis zu 9 Geräte
 
-- **1-year subscriptions** — these licenses are renewed automatically every year or can be extended manually
-    - Personal — up to 3 devices
-    - Family — up to 9 devices
-- **Lifetime** — these licenses are not time-limited
-    - Personal — up to 3 devices
-    - Family — up to 9 devices
+Es gibt auch Lizenzen, die man von anderen Quellen erwerben oder kostenlos erhalten kann:
 
-There are also licenses that the user can purchase from other sources or get for free:
-
-- **Trial licenses** are free time-limited licenses that allow you to test the full functionality of the product
-    - AdGuard for Windows — 14-day trial
-    - AdGuard for Mac — 14-day trial
-    - AdGuard for Android — 7-day trial
-- **Distributor licenses** and **gifted licenses** can be both time-limited and non-time limited. Licenses with an expiration date can only be renewed manually
-    - Personal — up to 3 devices
-    - Family — up to 9 devices
-- **The AdGuard Pro for iOS license** is purchased and managed through the App Store and can only be used on iOS and iPadOS devices with the same Apple ID
+- **Testlizenzen** sind kostenlose, zeitlich begrenzte Lizenzen, mit denen Sie die volle Funktionalität des Produkts testen können
+    - AdGuard für Windows — 14-Tage-Testversion
+    - AdGuard für Mac — 14-Tage-Testversion
+    - AdGuard für Android — 7-Tage-Testversion
+- **Vertriebshändlerlizenzen** und **Geschenklizenzen** können sowohl zeitlich begrenzt als auch nicht zeitlich begrenzt sein. Lizenzen mit einem Auslaufdatum können nur manuell verlängert werden
+    - Einzellizenz — schützt bis zu 3 Geräte
+    - Familienlizenz — schützt bis zu 9 Geräte
+- **Die Lizenz für AdGuard Pro für iOS** wird über den App Store erworben und verwaltet und kann nur auf iOS- und iPadOS-Geräten mit der gleichen Apple-ID verwendet werden
 
 :::tip
 
-To extend the device limit, you can [upgrade](../payment-options/#upgrade) your license.
+Um die Gerätebeschränkung aufzuweiten, können Sie Ihre [Lizenz erweitern](../payment-options/#upgrade).
 
 :::
 
-## How to use the AdGuard license
+## So verwenden Sie die AdGuard-Lizenz
 
-To use your license on a device, log in to your AdGuard app using the email address associated with the license. If the license hasn't been bound to your email address yet, you can do it in your [AdGuard account](https://my.adguard.com/). To do so, open the *Licenses* tab and click *Bind license*.
+Zuerst melden Sie sich bei Ihrer AdGuard-App mit jener E-Mail-Adresse an, die mit der Lizenz verknüpft ist. Wenn die Lizenz noch nicht an Ihre E-Mail-Adresse gebunden wurde, können Sie dies in Ihrem [AdGuard-Konto](https://my.adguard.com/) tun. Öffnen Sie dazu den Tab *Lizenzen* und klicken Sie auf *Lizenz verknüpfen*.
 
-Alternatively, you can enter your [license key](#license-key) in your AdGuard app.
+Alternativ können Sie Ihren [Lizenzschlüssel](#license-key) in Ihrer AdGuard-App eingeben.
 
-## License key
+## Lizenzschlüssel
 
-A license key is a unique string of characters that represents an AdGuard Ad Blocker license. It is automatically registered to the email you used to purchase the license, or is provided to you when you purchase an AdGuard license from a distributor. With a license key, you can:
+Ein Lizenzschlüssel ist eine eindeutige Zeichenfolge, die eine Lizenz für AdGuard Werbeblocker darstellt. Der Schlüssel wird automatisch auf die E-Mail-Adresse registriert, die Sie beim Kauf der Lizenz verwendet haben, oder wird Ihnen zur Verfügung gestellt, wenn Sie eine AdGuard-Lizenz von einem Händler erwerben. Mit einem Lizenzschlüssel können Sie:
 
-- [Activate your license](../activation) in a product, if you don't have an AdGuard account
-- Bind your license to your AdGuard account and unbind it
+- Ihre Lizenz in einem Produkt [aktivieren](../activation), wenn Sie noch kein AdGuard-Konto haben
+- Ihre Lizenz mit Ihrem AdGuard-Konto verknüpfen und diese Verknüpfung aufheben
 
-When you unbind a license, be sure to save the license key first. You'll need the key to rebind your license or transfer it to another account.
+Wenn Sie die Verknüpfung aufheben, müssen Sie zuerst den Lizenzschlüssel speichern. Sie benötigen diesen Schlüssel, um Ihre Lizenz neu zu verknüpfen oder sie auf ein anderes Konto zu übertragen.
 
 ### So stellen Sie einen Lizenzschlüssel wieder her
 
-If you don't remember the license key, check out your AdGuard account: all licenses bound to your email address are displayed there.
+Wenn Sie Ihren Lizenzschlüssel vergessen haben, schauen Sie in Ihrem AdGuard-Konto nach: Dort werden alle Lizenzen angezeigt, die mit Ihrer E-Mail-Adresse verknüpft sind.
 
-If you've lost the license key purchased from a distributor, please reach out to us at support@adguard.com. Be ready to provide a receipt or other proof of purchase.
+Wenn Sie den von einem Händler gekauften Lizenzschlüssel verloren haben, wenden Sie sich bitte an uns unter support@adguard.com. Legen Sie eine Quittung oder einen anderen Kaufbeleg vor.

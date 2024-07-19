@@ -5,7 +5,7 @@ sidebar_position: 4
 
 :::info
 
-В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. To see how it works, firsthand [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -25,7 +25,7 @@ sidebar_position: 4
 
     :::note
 
-    After a moment, you will see a notification that the bug report is ready (see Figure 2).
+    Через некоторое время вы увидите уведомление о том, что отчёт об ошибке готов (см. рисунок 2).
 
 
 :::
@@ -61,7 +61,7 @@ sidebar_position: 4
 
 1. Увеличьте размеры **буфера журнала** до 4 МБ для каждого буфера записей.
 
-4 MB should be enough for storing the logs we need until you're able to do the second part (getting the log from the device);
+4 МБ должно быть достаточно для хранения нужных вам логов до тех пор, пока вы не перейдёте ко второй части (извлечение самих логов с устройства);
 
 **Часть 2: воспроизведите проблему**
 
@@ -75,15 +75,15 @@ sidebar_position: 4
 
 1. Подключите устройство к компьютеру с помощью USB-кабеля.
 
-1. Скачайте [Инструменты платформы Android SDK](https://developer.android.com/studio/releases/platform-tools#downloads). Выберите соответствующую ссылку для загрузки для вашей ОС в разделе «Загрузки». Once you tap the link, a ZIP file will be downloaded. You can extract the ADB (Android Debug Bridge) files from the ZIP file and store them wherever you want.
+1. Скачайте [Инструменты платформы Android SDK](https://developer.android.com/studio/releases/platform-tools#downloads). Выберите соответствующую ссылку для загрузки для вашей ОС в разделе «Загрузки». Когда вы нажмёте на ссылку, будет загружен ZIP-файл. Вы можете извлечь файлы ADB (Android Debug Bridge) из ZIP-файла и сохранить их в любом месте.
 
 1. Проверьте работоспособность ADB: подключите устройство Android к компьютеру с помощью USB-кабеля, откройте Командную строку, PowerShell или Терминал и выполните следующую команду:
 
-    `adb devices`
+    `устройства adb`
 
     Пример успешного результата:
 
-    ![Step 3](https://cdn.adtidy.org/content/kb/ad_blocker/android/logcat/logcat_step-3.png)
+    ![Шаг 3](https://cdn.adtidy.org/content/kb/ad_blocker/android/logcat/logcat_step-3.png)
 
 1. Затем выполните следующую команду (вставьте соответствующий путь):
 

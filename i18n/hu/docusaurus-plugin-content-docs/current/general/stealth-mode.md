@@ -23,7 +23,7 @@ When you get directed to a website from Google, Yahoo, or any other search engin
 
 ### Ask websites not to track you {#donottrack}
 
-Sends the [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) requests to the websites you visit.
+Sends the [Global Privacy Control](https://globalprivacycontrol.org/#gpc-spec) and [Do Not Track](https://en.wikipedia.org/wiki/Do_Not_Track) signals to the websites you visit.
 
 ### Strip tracking parameters from URLs
 
@@ -39,7 +39,7 @@ Third-party cookies are those implemented by a website that is different from th
 
 Set a time period (in minutes) at the end of which all third-party cookies will be destroyed. Set the timer to 0 to block them completely.
 
-:::caution
+:::figyelem
 
 This setting deletes all third-party cookies, including the information of your logins through social networks or other third-party services. You may have to periodically re-log in to some websites and face other cookie-related issues. To block only tracking cookies, use [*AdGuard Tracking Protection filter*](/general/ad-filtering/filter-policy/#tracking-protection-filter).
 
@@ -49,7 +49,7 @@ This setting deletes all third-party cookies, including the information of your 
 
 Set a time period (in minutes) at the end of which all cookies will be destroyed. Set the timer to 0 to block them completely.
 
-:::caution
+:::figyelem
 
 We do not recommend enabling this option as it may severely interfere with the work of certain websites.
 

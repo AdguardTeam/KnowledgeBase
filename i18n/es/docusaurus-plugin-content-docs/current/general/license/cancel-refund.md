@@ -1,5 +1,5 @@
 ---
-title: How to cancel or refund
+title: Cómo cancelar o reembolsar
 sidebar_position: 5
 ---
 
@@ -7,9 +7,9 @@ sidebar_position: 5
 
 La suscripción se puede cancelar en tu cuenta de AdGuard. Para cancelar tu suscripción:
 
- 1. Go to your [AdGuard account](https://my.adguard.com/).
- 1. Select *Licenses*.
- 1. Click *Cancel subscription* below the subscription you no longer need. ![Cancelar](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-cancel-sub.png)
+ 1. Ve a tu [cuenta AdGuard](https://my.adguard.com/).
+ 1. Selecciona *Licencias*.
+ 1. Haz clic en *Cancelar suscripción* debajo de la suscripción que ya no necesitas. ![Cancelar](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-cancel-sub.png)
 
  La suscripción cancelada será válida hasta su fecha de vencimiento.
 
@@ -21,11 +21,11 @@ Las suscripciones compradas en App Store se pueden administrar en la cuenta de A
 
 ## Cómo obtener un reembolso
 
-De acuerdo con nuestros [Términos de venta](https://adguard.com/terms-of-sale.html), puedes obtener un reembolso del 100% de la clave de licencia de AdGuard que compraste en https://adguard.com. To get a refund, contact our support team at *support@adguard.com* and specify the payment option you've used.
+De acuerdo con nuestros [Términos de venta](https://adguard.com/terms-of-sale.html), puedes obtener un reembolso del 100% de la clave de licencia de AdGuard que compraste en https://adguard.com. Para obtener un reembolso, ponte en contacto con nuestro equipo de soporte en *support@adguard.com* y especifica la opción de pago que has utilizado.
 
 Se puede rechazar un reembolso si:
 
-- A license was purchased more than 60 days ago
-- A license was purchased from a distributor
-- A license was purchased from the App Store
-- You applied for a partial refund for a license key upgrade or renewal
+- Se compró una licencia hace más de 60 días
+- Se compró una licencia a un distribuidor
+- Se compró una licencia en la App Store
+- Solicitaste un reembolso parcial por una actualización o renovación de clave de licencia

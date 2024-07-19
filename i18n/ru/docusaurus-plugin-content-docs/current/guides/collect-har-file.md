@@ -7,7 +7,7 @@ sidebar_position: 1
 
 ## Chrome {#chrome}
 
-Чтобы создать файл HAR в Chrome:
+Чтобы создать файл HAR в Chrome, выполните следующие действия:
 
 1. Перейдите по URL-адресу, по которому возникает ошибка. Пока не воспроизводите её.
 
@@ -32,7 +32,7 @@ sidebar_position: 1
 
 1. Сохраните сессию как файл .har, щёлкнув правой кнопкой мыши на сетку и выбрав **Сохранить как HAR-файл с данными**.
 
-1. Направьте документ поддержке AdGuard (support@adguard.com) с подробным объяснением ошибки. Дополнительные скриншоты также могут помочь.
+1. Отправьте документ поддержке AdGuard (support@adguard.com) с подробным объяснением ошибки. Дополнительные скриншоты также могут помочь.
 
 ## Edge {#edge}
 
@@ -59,11 +59,11 @@ sidebar_position: 1
 
 1. Сохраните сессию как файл .har, щёлкнув правой кнопкой мыши на сетку и выбрав **Сохранить как HAR-файл с данными**.
 
-1. Направьте документ поддержке AdGuard (support@adguard.com) с подробным объяснением ошибки. Дополнительные скриншоты также могут помочь.
+1. Отправьте документ поддержке AdGuard (support@adguard.com) с подробным объяснением ошибки. Дополнительные скриншоты также могут помочь.
 
 ## Firefox {#firefox}
 
-Чтобы создать файл HAR в Firefox:
+Чтобы создать файл HAR в Firefox, выполните следующие действия:
 
 1. Перейдите по URL-адресу, по которому возникает ошибка. Пока не воспроизводите её.
 
@@ -88,38 +88,38 @@ sidebar_position: 1
 
 1. Сохраните сессию как файл .har, щёлкнув правой кнопкой мыши на сетку и выбрав **Сохранить всё как HAR-файл**.
 
-1. Направьте документ поддержке AdGuard (support@adguard.com) с подробным объяснением ошибки. Дополнительные скриншоты также могут помочь.
+1. Отправьте документ поддержке AdGuard (support@adguard.com) с подробным объяснением ошибки. Дополнительные скриншоты также могут помочь.
 
 ## Internet Explorer 11 {#ie11}
 
-Чтобы создать файл HAR в Internet Explorer 11:
+To create a HAR file in Internet Explorer 11, follow these steps:
 
 1. Перейдите по URL-адресу, по которому возникает ошибка. Пока не воспроизводите её.
 
 1. Запустите Инструменты разработчика в режиме **Сеть**:
 
-    - From Tools cog wheel menu: **Developer Tools** → **Network tab**.
-    - Keyboard: **F12 → Network** tab.
+    - Из меню Инструменты: **Инструменты разработчика** → **Сеть**.
+    - Клавиатура: **F12 → вкладка Сеть**.
 
-1. Note the start profiling session **Play** button and stop profiling **Stop** button at top left of Network tab.
+1. Найдите кнопку **Play**, запускающую профилирование запросов, и кнопку остановки профилирования **Stop** в левом верхнем углу вкладки Сеть.
 
-    - Во время записи кнопка Play должна быть серой, а кнопка Stop — красной. Put in **Play** mode.
+    - Во время записи кнопка Play должна быть серой, а кнопка Stop — красной. Включите **Режим воспроизведения**.
 
-1. Удалите любую информацию, появляющуюся на нижней сетке, нажав на кнопку **Очистить сессию** во вкладке Сеть. Hover over icons to see names.
+1. Удалите любую информацию, появляющуюся на нижней сетке, нажав на кнопку **Очистить сессию** во вкладке Сеть. Наведите курсор иконки, чтобы увидеть их названия.
 
-    - **Clear session** button is a three line icon with an x on it.
+    - Кнопка **Очистить сессию** — это значок в виде трёх линий с крестиком.
 
 1. Установите флажок **Отключить кеш**.
 
 1. Воспроизведите действия, создающие проблему.
 
-1. Save session as a .har file by clicking on the **Save disk** button (Export as HAR) on Network tab.
+1. Save session as a .har file by clicking the **Save to disk** button (Export as HAR) on Network tab.
 
-1. Направьте документ поддержке AdGuard (support@adguard.com) с подробным объяснением ошибки. Дополнительные скриншоты также могут помочь.
+1. Отправьте документ поддержке AdGuard (support@adguard.com) с подробным объяснением ошибки. Дополнительные скриншоты также могут помочь.
 
 ## Safari {#safari}
 
-Чтобы создать файл HAR в Safari:
+To create a HAR file in Safari, follow these steps:
 
 1. Найдите в строке меню Safari раздел **Разработка**.
 
@@ -131,13 +131,13 @@ sidebar_position: 1
 1. Откройте вкладку **Сеть** в веб-инспекторе:
 
     - Из меню: **Разработка → Показывать веб-инспектор → Сеть**.
-    - Клавиатура: **⌥+⌘+I → Сеть**
+    - Keyboard: **⌥+⌘+I → Network**
 
-1. Check **Preserve Log** checkbox on left side of the Network tabs, within the **Other filter options...** menu.
+1. Установите флажок **Сохранить журнал** в левой части вкладок Сеть в меню **Другие параметры фильтра...**.
 
     ![safari](https://cdn.adtidy.org/content/kb/ad_blocker/safari/preserve-log.png)
 
-1. Clear current Network items by clicking the **Delete Trash** icon at the far right of Network tabs.
+1. Очистите элементы Сети, кликнув иконку **Очистить сетевые объекты** в правом углу от вкладки Сеть.
 
     - Клавиатура: **⌘+K**
 
@@ -145,13 +145,13 @@ sidebar_position: 1
 
 1. Воспроизведите действия, создающие проблему.
 
-1. Save session as a .har file by clicking the **Export** icon next to the **Delete Trash** icon.
+1. Сохраните сессию в виде файла .har, щёлкнув значок **Экспортировать** рядом со значком **Очистить сетевые объекты**.
 
-1. Направьте документ поддержке AdGuard (support@adguard.com) с подробным объяснением ошибки. Supporting screenshots can be helpful, too.
+1. Отправьте документ поддержке AdGuard (support@adguard.com) с подробным объяснением ошибки. Дополнительные скриншоты также могут помочь.
 
 ## Android {#android}
 
-To create HAR files, follow these steps:
+Чтобы получить файлы HAR, выполните следующие действия:
 
 1. Откройте AdGuard и перейдите в **Настройки**.
 
@@ -169,12 +169,12 @@ To create HAR files, follow these steps:
 
 ## Windows {#windows}
 
-1. Open **Settings*** → **General settings** → **Advanced settings** and scroll down.
+1. Откройте **Настройки*** → **Общие настройки** → **Расширенные настройки** и прокрутите страницу вниз.
 
 1. Установите флажок **Включить запись HAR**.
 
 1. Воспроизведите проблему.
 
-1. Go to **General settings** → Click **Export logs** → **Save**.
+1. Перейдите к **Общие настройки** → Нажмите **Экспортировать логи** → **Сохранить**.
 
-1. Disable HAR writing by unchecking the corresponding box.
+1. Отключите запись HAR, сняв соответствующий флажок.

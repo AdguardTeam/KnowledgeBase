@@ -3,24 +3,24 @@ title: 转移许可证的方式
 sidebar_position: 4
 ---
 
-## 如何将许可证转移到另一台设备{#transfer}
+## 将许可证转移到另一台设备{#transfer}
 
-The license key can be activated on a [limited number of devices](../what-is). 如果许可证密钥已经在最大数量的设备上被使用，用户需要通过账号解除设备绑定。
+许可证密钥可以在[有限数量的设备上激活](../what-is)。 如果许可证密钥已经在最大数量的设备上被使用，用户需要通过账号解除设备绑定。
 
 ### 如何解绑设备绑定
 
-- Click *Reset license* or *Log out* in an AdGuard app
+- 在 AdGuard 应用程序中单击「*重置许可证*」或「*退出*」。
 
-- Remove the device from your AdGuard account:
-    1. Click *AdGuard Ad Blocker* in your [AdGuard account](https://my.adguard.com/).
+- 从 AdGuard 账号中删除设备：
+    1. 在 [AdGuard 账号](https://my.adguard.com/)点击「*AdGuard 广告拦截程序*」。
 
         ![账号广告拦截程式选项卡 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-0_cn.png)
 
-    1. Click the device you want to unbind.
+    1. 单击要解除绑定的设备。
 
         ![选择设备 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-1_cn.png)
 
-    1. Click *Remove*.
+    1. 单击「*删除*」。
 
         ![单击删除 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-unbind-device-2_cn.png)
 
@@ -28,23 +28,23 @@ The license key can be activated on a [limited number of devices](../what-is). �
 
 ## 如何将许可证转移到另一个 AdGuard 账号{#transferaccount}
 
-1. Go to the AdGuard account that contains the license you would like to transfer.
+1. 转到包含想要转移许可证的 AdGuard 账号。
 
-1. Go to the *Licenses* tab.
+1. 转到「*许可证*」部分。
 
-1. Find the license you want to transfer and click *Unbind from account*.
+1. 在列表中找到要转移的许可证，点击「*从账号中解绑*」。
 
-    ![Click Unbind from account](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account_cn.png)
+    ![从账号中解绑](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account_cn.png)
 
-1. Click *Unbind* (**Important**: be sure to save the license key).
+1. 点击「*取消绑定*」(**重要**：请记下许可证密钥以免忘记)。
 
-    ![Remember the license key *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account-1_cn.png)
+    ![记住许可证密钥 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account-1_cn.png)
 
-1. Go to the AdGuard account that you would like to transfer the license to.
+1. 前往想转移许可证的 AdGuard 账号。
 
-1. Go to the *Licenses* tab.
+1. 转到「*许可证*」部分。
 
-1. Click *Bind license* in the upper right corner.
+1. 在右上角点击「*绑定许可证*」
 
     ![绑定许可证 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/general/newaccount-transfer-to-account-2_cn.png)
 

@@ -21,11 +21,11 @@ sidebar_position: 3
 
 ### Вопросы безопасности
 
-Isn't it dangerous to let some random apps manage what AdGuard does? It is, and that's why a password is sent along with the intent. Этот пароль генерируется автоматически, но вы можете поменять его самостоятельно в расширенных настройках AdGuard.
+Не опасно ли позволять каким-то случайным приложениям управлять работой AdGuard? Опасно, именно поэтому вместе с интентом отправляется пароль. Этот пароль генерируется автоматически, но вы можете поменять его самостоятельно в расширенных настройках AdGuard.
 
 ### Доступные действия
 
-будучи включёнными в интент, будут понятны AdGuard:
+Вот список действий, которые, будучи включёнными в интент, будут понятны AdGuard:
 
 `start` запускает защиту, дополнительные данные не нужны;
 
@@ -41,6 +41,16 @@ Isn't it dangerous to let some random apps manage what AdGuard does? It is, and 
 
 `enable:true` или `enable:false` соответственно включает или выключает DNS-фильтрацию.
 
+`fake_dns` allows resolving DNS requests on the specified proxy server. This requires an extra flag:
+
+`enable:true` or `enable:false` enables or disables the *Use FakeDNS* setting, respectively.
+
+:::note
+
+When the *Use FakeDNS* setting is enabled, *DNS Protection* will be automatically disabled. DNS requests won't be filtered locally.
+
+:::
+
 -----
 
 `dns_server` переключается между DNS-серверами, необходимо указать дополнительные данные:
@@ -49,13 +59,13 @@ Isn't it dangerous to let some random apps manage what AdGuard does? It is, and 
 
 :::note
 
-The full list of supported provider names can be found in our [known DNS providers list](https://adguard-dns.io/kb/general/dns-providers/).
+Полный список поддерживаемых провайдеров можно найти в нашем списке [известных DNS-провайдеров](https://adguard-dns.io/kb/general/dns-providers/).
 
 :::
 
  `server:custom` переключается на ранее добавленный сервер с именем `custom`;
 
- `server:tls://dns.adguard.com` создаёт новый сервер и переключается на него, если среди ранее добавленных серверов и провайдеров нет сервера с таким же адресом. В противном случае он переключается на соответствующий сервер. Адреса серверов можно добавлять в виде IP (обычный DNS), `sdns://…` (DNSCrypt или DNS-over-HTTPS), `https://…` (DNS-over-HTTPS) или `tls://...` (DNS-over-TLS);
+ `server:tls://dns.adguard.com` создаёт новый сервер и переключается на него, если среди ранее добавленных серверов и провайдеров нет сервера с таким же адресом. В противном случае он переключается на соответствующий сервер. You can add server addresses as IP ( regular DNS), `sdns://…` (DNSCrypt or DNS-over-HTTPS), `https://…` (DNS-over-HTTPS) or `tls://...` (DNS-over-TLS);
 
  `server:1.1.1.1, tls://1.1.1.1` создаёт сервер с адресами через запятую и переключается на него. При добавлении сервера через `server:1.1.1.1, tls://1.1.1.1` ранее добавленный сервер удаляется.
 
@@ -63,7 +73,7 @@ The full list of supported provider names can be found in our [known DNS provide
 
  -----
 
-`proxy_state` включает/отключает исходящий прокси.  В поле Extra нужно добавить информацию:
+`proxy_state` включает/отключает исходящий прокси. В поле Extra нужно добавить информацию:
 
 `enable:true` или `enable:false` активирует или деактивирует исходящий прокси соответственно.
 
@@ -83,7 +93,7 @@ The full list of supported provider names can be found in our [known DNS provide
 
 `server:[name]`, где `[name]` — имя исходящего прокси из списка.
 
-Или вы можете настроить параметры сервера вручную:
+Вы также можете настроить параметры удаления вручную:
 
 `server:[type=…&host=…&port=…&username=…&password=…&udp=…&trust=…]`.
 
@@ -112,20 +122,17 @@ The full list of supported provider names can be found in our [known DNS provide
 
 `настройка по имени сервера`: server:MyServer
 
- `настройка вручную`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
-
+`настройка вручную`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
 
 :::
 
------
-
-**Не забывайте добавить пароль, имя пакета и класс. Это нужно делать для каждого интента.**
+**Не забудьте дополнительно указать пароль, имя приложения (package) и класс. Это нужно делать для каждого интента.**
 
 Extra: `password:*******`
 
 Package: `com.adguard.android`
 
-Класс: `com.adguard.android.receiver.AutomationReceiver`
+Class: `com.adguard.android.receiver.AutomationReceiver`
 
 :::note
 

@@ -45,7 +45,7 @@ Proto můžete AdGuard pro Android nainstalovat pouze ručně. Chcete-li aplikac
 
     Poté budete požádáni o přečtení *licenční smlouvy AdGuard* a *Zásad ochrany osobních údajů*. Můžete se také podílet na vývoji produktů. Za tímto účelem můžete zaškrtnout políčka *Odesílat automatická hlášení o pádech* a *Odesílat technická a interakční data*. Klepněte na *Pokračovat*.
 
-    ![Privacy Policy *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_3.png)
+    ![Privacy policy *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/installation/fl_3.png)
 
 1. **Vytvořte lokální VPN**. Aby bylo možné filtrovat veškerý provoz přímo v zařízení a nesměrovat jej přes vzdálený server, musí AdGuard navázat spojení VPN.
 

@@ -5,7 +5,7 @@ sidebar_position: 10
 
 :::info
 
-В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -15,7 +15,7 @@ sidebar_position: 10
 
 На Android 9 и более поздних версиях, если AdGuard установлен более чем для одного пользовательского профиля на вашем устройстве, вы можете столкнуться с проблемами при удалении приложения. Когда вы удаляете AdGuard из одного пользовательского профиля, приложение по-прежнему будет отображаться в списке приложений, но вы не сможете удалить или переустановить его. Это происходит потому, что AdGuard установлен для другого профиля пользователя на устройстве.
 
-Если вы попытаетесь переустановить AdGuard после неудачной попытки удаления, вы увидите сообщение об ошибке «Вы не можете установить приложение на своё устройство».
+If you try to reinstall AdGuard after an unsuccessful removal attempt, you will see the error message “You can't install the app on your device”.
 
 Чтобы решить эту проблему, вам нужно удалить приложение для всех пользователей: перейдите в Настройки → Все приложения → AdGuard. Нажмите три точки в правом верхнем углу и выберите *Удалить для всех пользователей*.
 
@@ -51,7 +51,7 @@ sidebar_position: 10
 
 :::
 
-1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
 
 1. Подключите устройство с помощью кабеля USB **** к компьютеру или ноутбуку, на котором вы установили **ADB**;
 
@@ -85,7 +85,7 @@ sidebar_position: 10
 - Откройте **Настройки**;
 - Нажмите **Расширенные**;
 - Прокрутите вниз и нажмите **Dual Messenger**;
-- Отключите **Dual Messenger** для всех приложений;
+- Disable the **Dual messenger** for all apps;
 - Заблокируйте устройство на 5 минут;
 - Разблокируйте экран и повторите попытку создания VPN-профиля.
 
@@ -94,5 +94,5 @@ sidebar_position: 10
 - Откройте **Настройки**;
 - Выберите вкладку **Основные**;
 - Прокрутите вниз и нажмите **Dual App**;
-- Удалите все приложения из списка;
+- Remove all apps from the list;
 - Перезагрузите устройство.

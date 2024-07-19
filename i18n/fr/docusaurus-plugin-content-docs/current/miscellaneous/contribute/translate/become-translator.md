@@ -35,7 +35,7 @@ En outre, il est possible d'ouvrir des traductions en mode Vote si vous souhaite
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/mode.png)
 
-Vous pouvez trouver quelques [conseils utiles sur la traduction d'AdGuard dans cet article](../guidelines). Please take a look at it.
+Vous pouvez trouver quelques [conseils utiles sur la traduction d'AdGuard dans cet article](../guidelines). Veuillez y jeter un coup d'œil.
 
 ### Comment devenir relecteur {#proofreaders}
 
@@ -51,4 +51,4 @@ Quelles sont donc les responsabilités des relecteurs/correcteurs ?
 
 - Répondent aux commentaires liés aux traductions dans leur langue.
 
-Every year, the best proofreaders receive gifts from AdGuard. Les traducteurs actifs ne restent pas non plus sans récompense. En savoir plus sur notre [système de récompense](../rewards).
+Chaque année, les meilleurs relecteurs reçoivent des cadeaux d'AdGuard. Les traducteurs actifs ne restent pas non plus sans récompense. En savoir plus sur notre [système de récompense](../rewards).

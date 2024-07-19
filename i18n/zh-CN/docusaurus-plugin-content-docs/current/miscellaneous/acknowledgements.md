@@ -136,42 +136,42 @@ sidebar_position: 2
 - Andy Kleinert (AndyKl) — Crowdin 的德语翻译和 Proofreader
 - BigDargon — 将 hostsVN 项目作为一个来源贡献给了 AdGuard DNS 列表
 - Blaz — 最初是过滤器贡献者，现在在 AdGuard 工作
-- Boo Berry — 论坛和 Telegram 群版主
-- buuuuuuu190 — beta 测试员，活跃的 AdGuard 论坛成员
-- clarke — beta 测试员，活跃的 AdGuard 论坛成员
-- [dartrax](https://github.com/dartrax) — beta 测试员，活跃的 AdGuard 论坛成员
-- dja2k — beta 测试员，活跃的 AdGuard 论坛成员
+- Boo Berry — Telegram group moderator
+- buuuuuuu190 — beta tester
+- clarke — beta tester
+- [dartrax](https://github.com/dartrax) — beta tester
+- dja2k — beta tester
 - Eduardo Addad de Oliveira (eduardoaddad) — 在 Crowdin 上葡萄牙语和巴西葡萄牙语的翻译和审核员
-- fabjazz — beta 测试员，活跃的 AdGuard 论坛成员
+- fabjazz — beta tester
 - Görkem Emrah Güler (gork7777) — Crowdin 的土耳其语翻译和审核员
-- hanschke — beta 测试员，活跃的 AdGuard 论坛成员
+- hanschke — beta tester
 - iDjay — AdGuard iOS版的优秀 beta 测试人员
 - Imre Kristoffer Eilertsen (DandelionSprout) — 包含在所有 AdGuard 工具中的 "Dandelion Sprout’s Nordic Filters" 的创造者
 - IONIL — Crowdin 上的希伯来语翻译和审核员
-- itabmedia — beta 测试员，活跃的 AdGuard 论坛成员
-- kirasam — beta 测试员，活跃的 AdGuard 论坛成员
+- itabmedia — beta tester
+- kirasam — beta tester
 - krystian3w — 非常活跃的过滤器贡献者
 - lancelot.moon — Crowdin 繁体中文的翻译和审核员，beta 测试员
-- Lord Ami — beta 测试员，活跃的 AdGuard 论坛成员
+- Lord Ami — beta tester
 - Lukas Novotny (novas78) — 在 Crowdin 上捷克语的翻译和审核员
-- malware1 — beta 测试员，活跃的 AdGuard 论坛成员
-- milder — beta 测试员，活跃的 AdGuard 论坛成员
-- Nicos18 — beta 测试员，活跃的 AdGuard 论坛成员
+- malware1 — beta tester
+- milder — beta tester
+- Nicos18 — beta tester
 - Oizaro — Crowdin 的意大利语翻译和审核员
 - Oleg Chashko — AdGuard Safari版的非常活跃 beta 测试人员
 - Oskari Lavinto (olavinto) — Crowdin 的芬兰语翻译和审核员
-- ouzbed — beta 测试员，活跃的 AdGuard 论坛成员
+- ouzbed — beta tester
 - PentagramTr — 过滤器贡献者，即他为土耳其过滤器带来了很多改进
 - Peter Hubinsky (hubak) — Crowdin 的斯洛伐克语翻译和审核员
 - PiQuark6046 — 过滤器贡献者
-- rickyoh — beta 测试员，活跃的 AdGuard 论坛成员
-- Ronin427 — beta 测试员，活跃的 AdGuard 论坛成员
-- Sanjay Nand — beta 测试员，活跃的 AdGuard 论坛成员
-- saturnotaku — beta 测试员，活跃的 AdGuard 论坛成员
-- steve1209 — beta 测试员，活跃的 AdGuard 论坛成员
-- streetwolf — beta 测试员，活跃的 AdGuard 论坛成员
+- rickyoh — beta tester
+- Ronin427 — beta tester
+- Sanjay Nand — beta tester
+- saturnotaku — beta tester
+- steve1209 — beta tester
+- streetwolf — beta tester
 - superlex — 帮助我们测试 Safari 的小脚本、过滤器和 AdGuard
-- TayTayTheKiller — beta 测试员，活跃的 AdGuard 论坛成员
+- TayTayTheKiller — beta tester
 - [TPS](https://github.com/TPS) — 错误测试者、过滤器贡献者
 - Yuki2718 — 积极为 AdGuard 过滤器做出贡献
 - zznosar — 活跃的 beta 测试人员，专注于 iOS 的 AdGuard
@@ -181,4 +181,4 @@ sidebar_position: 2
 
 除此之外，我们想感谢 [xda-developers 的用户](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/)。 非常感谢您向我们发送反馈意见！
 
-我们总是很感谢收到用户的反馈意见，特别是建设性的。 大家能随时随地与我们联系，请求改善 AdGuard、新增功能，以及提交错误报告。 加入我们的 [AdGuard 论坛](http://forum.adguard.com/forumdisplay.php?25-English-Forums)、[Subreddit](https://reddit.com/r/adguard)、[Xda-developers Forum](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/) 或访问我们的 [GitHub](https://github.com/AdguardTeam)。
+我们总是很感谢收到用户的反馈意见，特别是建设性的。 大家能随时随地与我们联系，请求改善 AdGuard、新增功能，以及提交错误报告。 Join the [AdGuard Subreddit](https://reddit.com/r/adguard), [Xda-developers Forum](https://forum.xda-developers.com/t/app-android-5-0-3-4-120-21-05-2020-adguard-no-root-ad-blocker.2958895/) or visit our page on [GitHub](https://github.com/AdguardTeam).

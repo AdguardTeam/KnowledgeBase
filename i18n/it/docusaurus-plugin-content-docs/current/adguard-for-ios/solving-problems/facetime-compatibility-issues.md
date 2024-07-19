@@ -1,28 +1,28 @@
 ---
-title: How to avoid compatibility problem with FaceTime
+title: Come evitare i problemi di compatibilità con FaceTime
 sidebar_position: 3
 ---
 
 :::info
 
-Questo articolo tratta AdGuard per iOS, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Questo articolo tratta AdGuard per iOS, un blocco annunci multifunzionale che protegge il tuo dispositivo a livello di sistema. Per vedere come funziona, [scarica l'app di AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-It turned out that Full-Tunnel mode might interfere not only with compatibility with other VPN applications, but also with FaceTime.
+Si è scoperto che la modalità Full-Tunnel potrebbe interferire non soltanto con la compatibilità con altre applicazioni VPN, ma anche con FaceTime.
 
-Some users have encountered the problem that FaceTime does not work on the device when the AdGuard app for iOS is in Full-Tunnel mode.
+Alcuni utenti hanno riscontrato il problema che FaceTime non funziona sul dispositivo quando l'app AdGuard per iOS è in modalità Full-Tunnel.
 
-It is likely but not guaranteed that FaceTime will work when AdGuard is in Full-Tunnel mode without VPN icon because it is also incompatible with other VPN apps and unstable.
+È probabile, ma non garantito, che FaceTime funzionerà quando AdGuard è in modalità Full-Tunnel senza l'icona VPN, perché anche incompatibile con altre app VPN, nonché instabile.
 
-**If you want to use FaceTime and make sure that video/audio calls don't stop working, use Split-Tunnel mode.**
+**Se desideri utilizzare FaceTime e vuoi assicurarti che le chiamate video/audio non smettano di funzionare, utilizza la modalità Split-Tunnel.**
 
-![Tunnel mode screen *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ru/iOS/tunnel-mode.PNG?!)
+![Schermata modalità Tunnel *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ru/iOS/tunnel-mode.PNG?!)
 
-To enable it, follow the instructions:
+Per abilitarlo, segui le istruzioni:
 
-1. Go to AdGuard for iOS *Settings* → *General settings*.
-2. Enable *Advanced mode* and go to the *Advanced settings* section that appears right after.
-3. Open *Tunnel mode* and select *Split-Tunnel*.
+1. Vai su AdGuard per iOS *Impostazioni* → *Impostazioni generali*.
+2. Abilita la *Modalità avanzata* e vai alla sezione *Impostazioni avanzate* che appare subito dopo.
+3. Apri la *modalità Tunnel* e seleziona *Split-Tunnel*.
 
-Done! Now there should be no problems with FaceTime compatibility.
+Fatto! Ora non dovrebbe verificarsi alcun problema con la compatibilità di FaceTime.

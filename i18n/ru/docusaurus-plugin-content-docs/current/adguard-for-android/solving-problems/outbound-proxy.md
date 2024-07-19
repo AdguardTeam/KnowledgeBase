@@ -1,37 +1,37 @@
 ---
-title: How to set up outbound proxy
+title: Как настроить исходящий прокси
 sidebar_position: 8
 ---
 
 :::info
 
-В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-Below you can find a list of the most famous applications that you can configure to work as proxies in AdGuard.
+Здесь приведён список известных приложений, которые можно настроить для работы в качестве прокси-серверов в AdGuard.
 
 :::note
 
-If your app is not listed below, please check on its proxy configurations in the settings or contact its support team.
+Если вашего приложения нет в списке, проверьте конфигурацию прокси в настройках или напишите команде поддержки этого приложения.
 
 :::
 
-AdGuard allows you to route your device's traffic through a proxy server. To access proxy settings, open **Settings** and then proceed to **Filtering** → **Network** → **Proxy**.
+AdGuard позволяет направлять трафик устройства через прокси-сервер. Для доступа к настройкам прокси откройте **Настройки** и перейдите в раздел **Фильтрация** → **Сеть** → **Прокси**.
 
-## Proxy configuration examples
+## Примеры конфигурации прокси-сервера
 
-In this article we give examples of how to set up some of the most popular proxies to work with AdGuard.
+В этой статье даны примеры того, как настроить работу некоторые из самых популярных прокси для работы с AdGuard.
 
 ### Как использовать AdGuard вместе с Tor
 
-1. Open AdGuard and go to **Settings** → **Filtering** → **Network** → **Proxy**. Скачайте «Orbot: Proxy with Tor» напрямую из [Google Play](https://play.google.com/store/apps/details?id=org.torproject.android&noprocess) или нажав **«Интегрировать с Tor**, а затем **Установить**.
+1. Откройте AdGuard и перейдите в раздел **Настройки** → **Фильтрация** → **Сеть** → **Прокси**. Download “Orbot: Proxy with Tor” directly from [Google Play](https://play.google.com/store/apps/details?id=org.torproject.android&noprocess) or by tapping **Integrate with Tor** and then **Install**.
 
 1. Откройте Orbot и нажмите кнопку **Запустить** в главном экране приложения.
 
-1. Go back to the **Proxy** screen of AdGuard.
+1. Вернитесь на экран **Прокси** в AdGuard.
 
-1. Тапните по кнопке **Настроить интеграцию с Tor®r**.
+1. Нажмите **Интеграция с Tor**.
 
 1. Все обязательные поля будут предварительно заполнены:
 
@@ -41,7 +41,7 @@ In this article we give examples of how to set up some of the most popular proxi
     | Прокси-хост | *127.0.0.1*           |
     | Порт прокси | *9050*                |
 
-    Или же вы можете нажать на **Прокси** → **Добавить прокси-сервер**, ввести эти значения вручную и установить Orbot в качестве прокси-сервера по умолчанию.
+    Вы также можете нажать на **Прокси** → **Добавить прокси-сервер**, ввести эти значения вручную и установить Orbot в качестве прокси-сервера по умолчанию.
 
 1. Включите основной переключатель Прокси и защиту AdGuard, чтобы направить трафик вашего устройства через прокси.
 
@@ -49,11 +49,11 @@ In this article we give examples of how to set up some of the most popular proxi
 
 ### Как использовать AdGuard с PIA (Private Internet Access)
 
-*Здесь мы предполагаем, что вы уже клиент PIA VPN и он установлен на вашем устройстве.*
+*Подразумевается, что у вас уже установлен PIA VPN.*
 
-1. Open AdGuard and go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server**.
+1. Откройте AdGuard и перейдите в раздел **Настройки** → **Фильтрация** → **Сеть** → **Прокси** → **Прокси-сервер**.
 
-1. Нажмите на **Добавить прокси** и введите следующие данные:
+1. Нажмите **Добавить прокси** и введите следующие данные:
 
     | Поле        | Значение                             |
     | ----------- | ------------------------------------ |
@@ -61,63 +61,63 @@ In this article we give examples of how to set up some of the most popular proxi
     | Прокси-хост | *proxy-nl.privateinternetaccess.com* |
     | Порт прокси | *1080*                               |
 
-1. Вам также понадобится заполнить поля **Имя пользователя/Пароль**. Для этого залогиньтесь в [Панели Клиентского Контроля](https://www.privateinternetaccess.com/pages/client-sign-in) на сайте PIA. Кликните по кнопке **Сгенерировать пароль** в секции **Сгенерировать пароль PPTP/L2TP/SOCKS**. A username starting with "x" and a random password will be shown. Используйте их, чтобы заполнить поля **Имя пользователя** и **Пароль** в AdGuard.
+1. Вам также понадобится заполнить поля **Имя пользователя/Пароль**. Для этого войдите или зарегистрируйтесь [на сайте PIA](https://www.privateinternetaccess.com/pages/client-sign-in). Tap the **Generate Password** button under the **Generate PPTP/L2TP/SOCKS Password** section. A username starting with “x” and a random password will be shown. Используйте их, чтобы заполнить поля **Имя пользователя** и **Пароль** в AdGuard.
 
-1. Tap **Save and select**.
+1. Нажмите **Сохранить и выбрать**.
 
 1. Включите основной переключатель Прокси и защиту AdGuard, чтобы направить трафик вашего устройства через прокси.
 
 ### Как использовать AdGuard с TorGuard
 
-*Here we presume that you are already a TorGuard client and have it installed on your device.*
+*Подразумевается, что у вас уже установлен TorGuard.*
 
-1. Open AdGuard and go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server**.
+1. Откройте AdGuard и перейдите в раздел **Настройки** → **Фильтрация** → **Сеть** → **Прокси** → **Прокси-сервер**.
 
-1. Нажмите на **Добавить прокси** и введите следующие данные:
+1. Нажмите **Добавить прокси** и введите следующие данные:
 
-    | Поле        | Значение                                    |
-    | ----------- | ------------------------------------------- |
-    | Тип прокси  | *SOCKS5*                                    |
-    | Прокси-хост | *proxy.torguard.org* or *proxy.torguard.io* |
-    | Порт прокси | *1080* or *1085* or *1090*                  |
+    | Поле        | Значение                                     |
+    | ----------- | -------------------------------------------- |
+    | Тип прокси  | *SOCKS5*                                     |
+    | Прокси-хост | *proxy.torguard.org* или *proxy.torguard.io* |
+    | Порт прокси | *1080*, *1085* или *1090*                    |
 
-1. For **Username** and **Password** fields, enter your proxy username and proxy password you have chosen at TorGuard signup.
+1. В полях **Имя Пользователя** и **Пароль** введите имя пользователя и пароль, которые вы получили при регистрации в TorGuard.
 
-1. Tap **Save and select**.
+1. Нажмите **Сохранить и выбрать**.
 
 1. Включите основной переключатель Прокси и защиту AdGuard, чтобы направить трафик вашего устройства через прокси.
 
 ### Как использовать AdGuard с NordVPN
 
-1. Open AdGuard and go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server**.
+1. Откройте AdGuard и перейдите в раздел **Настройки** → **Фильтрация** → **Сеть** → **Прокси** → **Прокси-сервер**.
 
-1. Нажмите на **Добавить прокси** и введите следующие данные:
+1. Нажмите **Добавить прокси** и введите следующие данные:
 
-    | Поле        | Значение                                                                       |
-    | ----------- | ------------------------------------------------------------------------------ |
-    | Тип прокси  | *SOCKS5*                                                                       |
-    | Прокси-хост | *any server from [this list](https://support.nordvpn.com/Connectivity/Proxy/)* |
-    | Порт прокси | *1080*                                                                         |
+    | Поле        | Значение                                                                                                                        |
+    | ----------- | ------------------------------------------------------------------------------------------------------------------------------- |
+    | Тип прокси  | *SOCKS5*                                                                                                                        |
+    | Прокси-хост | *any server from [this list](https://support.nordvpn.com/hc/en-us/articles/20195967385745-NordVPN-proxy-setup-for-qBittorrent)* |
+    | Порт прокси | *1080*                                                                                                                          |
 
-1. For **Username** and **Password** fields, enter your NordVPN Username and Password.
+1. В полях **Имя Пользователя** и **Пароль** введите имя пользователя и пароль от NordVPN.
 
-1. Tap **Save and select**.
+1. Нажмите **Сохранить и выбрать**.
 
 1. Включите основной переключатель Прокси и защиту AdGuard, чтобы направить трафик вашего устройства через прокси.
 
 ### Как использовать AdGuard вместе с Shadowsocks
 
-*Here we presume that you have already configured a Shadowsocks server and a client on your device.*
+*Подразумевается, что у вас уже установлен Shadowsocks и настроен нужный сервер.*
 
 :::note
 
-You should remove Shadowsocks app from filtering before setting up the process (**App management** → **Shadowsocks** → **Route traffic through AdGuard**) to avoid infinite loops and drops.
+Перед настройкой процесса исключите приложение Shadowsocks из фильтрации (**Управление приложениями** → **Shadowsocks** → передвиньте влево переключатель **Направлять трафик через AdGuard**), чтобы избежать бесконечных циклов и падений.
 
 :::
 
-1. Open AdGuard and go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server**.
+1. Откройте AdGuard и перейдите в раздел **Настройки** → **Фильтрация** → **Сеть** → **Прокси** → **Прокси-сервер**.
 
-1. Tap the **Add proxy server** and fill in the fields:
+1. Нажмите **Добавить прокси-сервер** и заполните поля:
 
     | Поле        | Значение    |
     | ----------- | ----------- |
@@ -125,19 +125,19 @@ You should remove Shadowsocks app from filtering before setting up the process (
     | Прокси-хост | *127.0.0.1* |
     | Порт прокси | *1080*      |
 
-1. Tap **Save and select**.
+1. Нажмите **Сохранить и выбрать**.
 
 1. Включите основной переключатель Прокси и защиту AdGuard, чтобы направить трафик вашего устройства через прокси.
 
-### How to use AdGuard with Clash
+### Как использовать AdGuard вместе с Clash
 
-*Here we presume that you are already a Clash client and have it installed on your device.*
+*Подразумевается, что у вас уже установлен Clash.*
 
-1. Open Clash and go to **Settings** → **Network** → **Route System Traffic** and toggle the switch. This will set Clash to proxy mode.
+1. Откройте Clash и перейдите в **Настройки** → **Сеть** → **Маршрутизация системного трафика** и передвиньте переключатель влево. Это переведёт Clash в режим прокси.
 
-1. Open AdGuard and go to **App management**. Choose **Clash For Android** and disable **Route traffic through AdGuard**. Это предотвратит зацикливание трафика.
+1. Откройте AdGuard и перейдите в раздел **Управление приложениями**. Выберите **Clash для Android** и отключите **Направлять трафик через AdGuard**. Это предотвратит зацикливание трафика.
 
-1. Then go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server**.
+1. Затем перейдите в **Настройки** → **Фильтрация** → **Сеть** → **Прокси** → **Прокси-сервер**.
 
 1. Нажмите **Добавить прокси-сервер** и заполните поля:
 
@@ -149,4 +149,4 @@ You should remove Shadowsocks app from filtering before setting up the process (
 
 ## Ограничения
 
-There is a factor that can prevent certain traffic from being routed through the outgoing proxy even after you configure AdGuard proxy settings. It can happen if you don't set up the app itself to send the traffic through AdGuard. To do it, you need to proceed to **App management**, choose the app, and turn on **Route traffic through AdGuard**.
+Бывает, что трафик приложения не маршрутизируется через прокси-сервер, даже если он верно настроен в AdGuard. Такое может случиться, если не настроить маршрутизацию этого приложения через AdGuard. Чтобы это исправить, откройте **Управление приложениями**, выберите нужное приложение и включите настройку **Направлять трафик через AdGuard**.

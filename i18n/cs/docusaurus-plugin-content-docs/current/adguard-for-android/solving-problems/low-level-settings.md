@@ -13,7 +13,7 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 :::caution
 
-Změna *Nízkoúrovňových nastavení* může způsobit problémy s výkonem AdGuardu, může přerušit internetové připojení nebo ohrozit vaši bezpečnost a soukromí. Tuto část byste měli otevřít pouze v případě, že jste si jisti tím, co děláte, nebo pokud se vás na to zeptal náš tým podpory.
+Změna *Nízkoúrovňových nastavení* může způsobit problémy s výkonem AdGuardu, může přerušit internetové připojení nebo ohrozit vaši bezpečnost a soukromí. Tuto sekci byste měli otevřít pouze v případě, že víte, co děláte, nebo vás o to požádal náš tým podpory.
 
 :::
 
@@ -93,11 +93,19 @@ Pokud je toto nastavení povoleno, AdGuard použije záložní odchozí připoje
 
 Pokud je toto nastavení povoleno, bude AdGuard před přidáním nebo aktualizací vlastních DNS serverů testovat odchozí připojení DNS.
 
+#### Filtrování zabezpečeného DNS
+
+Pokud je toto nastavení zapnuto, AdGuard použije všechny povolené DNS filtry a uživatelská pravidla DNS na šifrovaný provoz DNS-over-HTTPS (DoH), nikoli pouze na běžný DNS. Provoz DoH většinou pochází z Chrome a dalších prohlížečů, které mají nastavení *Zabezpečený DNS* (nebo podobné). Můžete použít *Filtrování zabezpečeného DNS* ve dvou různých režimech:
+
+- **Filtrování za chodu**. V tomto režimu AdGuard použije všechny povolené DNS filtry a uživatelská pravidla DNS na provoz DoH, ale nepřesměruje jej na místní proxy server DNS. Pokud je v nastavení prohlížeče uveden DNS server, bude tento server zpracovávat provoz DoH pro tento prohlížeč
+
+- **Přesměrování na DNS proxy**. V tomto režimu AdGuard použije všechny povolené DNS filtry a uživatelská pravidla DNS na přenosy DoH tak, že je přesměruje na místní proxy server DNS. Server DNS zadaný v nastavení DNS AdGuardu bude zpracovávat veškerý provoz DoH
+
 ### Filtrování
 
 #### Zachytit HAR
 
-Pokud je toto nastavení povoleno, bude AdGuard zachycovat soubory HAR. Vytvoří adresář s názvem "har" uvnitř adresáře mezipaměti aplikace a přidá do něj informace o všech filtrovaných požadavcích HTTP ve formátu HAR 1.2, které lze analyzovat pomocí programu Fiddler.
+Pokud je toto nastavení povoleno, bude AdGuard zachycovat soubory HAR. Vytvoří adresář s názvem “har” uvnitř adresáře mezipaměti aplikace a přidá do něj informace o všech filtrovaných požadavcích HTTP ve formátu HAR 1.2, které lze analyzovat pomocí programu Fiddler.
 
 Používejte to pouze pro účely ladění!
 

@@ -7,21 +7,17 @@ Hay una aplicación AdGuard para prácticamente todas las plataformas principale
 
 ## Cómo convertirte en probador beta {#intro}
 
-Nuestros requisitos son sencillos: usa AdGuard, actualiza a la versión beta cuando esté disponible e informa cualquier error que observes. Sin embargo, necesitarás una cuenta en el [foro](https://forum.adguard.com/index.php) o en [GitHub](https://github.com/) (o ambas) para convertirte en nuestro probador beta, por lo que es posible que desees crearlas primero.
+Nuestros requisitos son sencillos: usa AdGuard, actualiza a la versión beta cuando esté disponible e informa cualquier error que observes. However, you will need a [GitHub](https://github.com/) account to become our beta tester, so you may want to get that out of the way first.
 
-En cualquier caso, todo lo que necesitas saber está recopilado en una [página](https://adguard.com/en/beta.html).
+In any case, every single thing you need to know is gathered on a [dedicated page](https://adguard.com/beta.html).
 
 Si deseas omitir la parte de descripción y pasar directamente a la acción, puedes solicitar [aquí](https://surveys.adguard.com/beta_testing_program/form.html). Tu solicitud será revisada dentro de 1 a 3 días hábiles y recibirás una respuesta por correo electrónico.
 
 ## Cómo informar de un error {#report-a-bug}
 
-Si detectaste un error o simplemente quieres compartir tu sugerencia, háznoslo saber de cualquiera de las formas posibles:
+If you spotted a bug or just want to share your suggestion, let us know: go to [GitHub](https://github.com/AdguardTeam/), find a suitable repository, create a new issue there, and describe the bug/feature request in detail.
 
-- Vete a [forum.adguard.com](https://forum.adguard.com/index.php) y publicar allí un nuevo hilo (o encontrar uno existente) en la categoría [foro beta](https://forum.adguard.com/index.php?categories/48/). Asegúrate de leer las [normas del foro](https://forum.adguard.com/index.php?threads/14859/);
-
-- Vete a [GitHub](https://github.com/AdguardTeam/) y encontra un repositorio adecuado. Cree un nuevo problema allí y describa la solicitud de error / característica en detalle.
-
-Los dos métodos anteriores son los más preferidos, pero puede usar otros si es necesario:
+The above method is the most preferred, but you can use others if necessary:
 
 - Encuéntrenos en las diferentes redes sociales, como [Facebook](https://www.facebook.com/AdguardEn/), [Reddit](https://www.reddit.com/r/Adguard/), etc. Sin embargo, esta no es la forma más conveniente de discutir asuntos técnicos.
 
@@ -33,6 +29,6 @@ Si ya has recibido una clave beta y aparece en tu cuenta de `adguard.com`, ve a 
 
 ### ¿Qué más?
 
-No hay mucho más que añadir. No hay que esforzarse mucho para encontrar errores. Puedes continuar usando AdGuard como de costumbre. Sin embargo, si encuentras un error, infórmalo. Por supuesto, apreciamos cualquier esfuerzo adicional y/o actividad adicional en el foro, etc.
+No hay mucho más que añadir. No hay que esforzarse mucho para encontrar errores. Puedes continuar usando AdGuard como de costumbre. Sin embargo, si encuentras un error, infórmalo. Of course, we appreciate any additional effort.
 
 Ocasionalmente, recibirás nuestros boletines, manteniéndote informado de los últimos cambios en la versión beta (en caso de que se los haya perdido) y otras noticias importantes. Puedes cancelar la suscripción en cualquier momento.

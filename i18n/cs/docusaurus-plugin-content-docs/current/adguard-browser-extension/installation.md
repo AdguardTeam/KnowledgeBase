@@ -1,6 +1,6 @@
 ---
 title: Jak nainstalovat
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 :::info
@@ -71,4 +71,4 @@ V otevřeném dialogovém okně klikněte na *Přidat rozšíření* a nainstalu
 
 ## Jak nainstalovat Rozšíření prohlížeče AdGuard pro Safari
 
-AdGuard pro Safari není rozšířením prohlížeče v běžném slova smyslu. Více si o něm můžete přečíst ve [vyhrazeném článku](/adguard-for-safari/overview). Nebo si můžete [stáhnout instalační soubor](https://agrd.io/safari_release) přímo z této stránky.
+AdGuard pro Safari není rozšířením prohlížeče v běžném slova smyslu. Více si o něm můžete přečíst ve [vyhrazeném článku](/adguard-for-safari/features/general). Nebo si můžete [stáhnout instalační soubor](https://agrd.io/safari_release) přímo z této stránky.

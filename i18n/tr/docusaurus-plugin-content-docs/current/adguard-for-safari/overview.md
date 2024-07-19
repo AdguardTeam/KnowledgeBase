@@ -9,7 +9,7 @@ Bu makale, yalnızca Safari tarayıcınızı koruyan Safari için AdGuard hakkı
 
 :::
 
-AdGuard for Safari was designed to conform to Apple's restrictions for ad blocking browser extensions and is the most popular ad blocker for Safari. Although it can’t be compared to our desktop ad blocking apps, it's free and can protect you from ads, trackers, phishing, and malicious websites.
+AdGuard for Safari was designed to conform to Apple's restrictions for ad blocking browser extensions and is the most popular ad blocker for Safari. Although it can't be compared to our desktop ad blocking apps, it's free and can protect you from ads, trackers, phishing, and malicious websites.
 
 ## Genel {#general}
 
@@ -35,7 +35,7 @@ Filtreler sekmesinde, tüm kategoriyi veya ayrı filtreleri etkinleştirebilirsi
 
 A content blocker is a thematic cluster of filters. Privacy-related filters are included in the content blocker with the corresponding name — *AdGuard Privacy*.
 
-Content Blockers were designed for two reasons: to structure filters and to conform to Apple’s restrictions.
+Content Blockers were designed for two reasons: to structure filters and to conform to Apple's restrictions.
 
 [In 2019](https://adguard.com/en/blog/adguard-safari-1-5.html), Apple put limitations on ad blockers for Safari, allowing them to use only 50,000 filtering rules simultaneously. As this number was not enough for an ad blocker to provide a good filtering quality (AdGuard Base Filter alone has 30,000 filtering rules), we divided AdGuard for Safari into six content blockers each containing up to 50,000 rules.
 
@@ -51,29 +51,29 @@ Etkin filtreleri Filtreler sekmesinde yönetebilirsiniz. In the Content blockers
 
 :::
 
-### AdGuard General {#adguard_general}
+### AdGuard Genel {#adguard_general}
 
 *AdGuard Genel* reklamları engellemek için en temel filtreleri birleştiren bir içerik engelleyicidir. AdGuard Temel Filtresini her zaman etkin tutmanızı tavsiye ederiz.
 
-### AdGuard Privacy {#adguard_privacy}
+### AdGuard Gizlilik {#adguard_privacy}
 
 This content blocker is the main tool against counters and other web analytics tools. The *AdGuard Tracking Protection filter* is enabled by default.
 
-### AdGuard Social {#adguard_social}
+### AdGuard Sosyal {#adguard_social}
 
 *AdGuard Social* contains filters against social media buttons, widgets, scripts, and icons. Other annoyance filters can also be found in this section: filters against pop-ups, mobile app banners, cookie notices, and more. To enable them, find *Social Widgets* in the Filters tab.
 
-### AdGuard Security {#adguard_security}
+### AdGuard Güvenlik {#adguard_security}
 
 This content blocker unites several security-related filters. *Malware Domains Blocklist* blocks domains that are notorious for spreading malware and spyware. *Spam404* protects you from Internet fraudsters. *NoCoin Filter List* disrupts browser-based cryptominers, such as Coinhive.
 
-### AdGuard Other {#adguard_other}
+### AdGuard Diğerleri {#adguard_other}
 
 *AdGuard Other* contains filters with various functions. For example, it has a filter that unblocks search ads and self-promo ads. In some cases, it helps find exactly what you are looking for, because these kinds of ads are more relevant and less intrusive than others.
 
 :::note Disclaimer
 
-We don’t have any ‘acceptable ads’ paid by advertisers. Instead, we provide users with an option to see [search ads and websites' self-promotion](/general/ad-filtering/search-ads).
+We don't have any 'acceptable ads' paid by advertisers. Instead, we provide users with an option to see [search ads and websites' self-promotion](/general/ad-filtering/search-ads).
 
 :::
 

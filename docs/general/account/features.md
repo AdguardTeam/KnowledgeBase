@@ -32,7 +32,7 @@ The devices bound to your AdGuard Ad Blocker licenses can be unbound or renamed.
 
 ## View purchases
 
-The Purchase history section displays all the licenses that you have ever purchased using the email account you registered your AdGuard account with. You will also find there information about the date of purchase, order number, payment method and cost of the purchase.
+The Purchase history section displays all the licenses that you have ever purchased using the email account you registered your AdGuard account with. You will also find there information about the date of purchase, order ID, payment method, and cost of the purchase.
 
 ## Contact support
 

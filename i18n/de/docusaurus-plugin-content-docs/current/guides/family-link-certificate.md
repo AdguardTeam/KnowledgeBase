@@ -1,21 +1,21 @@
 ---
-title: How to enable HTTPS filtering for Google Family Link
+title: So aktivieren Sie die HTTPS-Filterung für Google Family Link
 sidebar_position: 6
 ---
 
-To enable HTTPS filtering on a device that uses Google Family Link, install the AdGuard certificate by following these instructions:
+Um die HTTPS-Filterung auf einem Gerät zu aktivieren, das Google Family Link verwendet, installieren Sie das AdGuard-Zertifikat, indem Sie diesen Anweisungen folgen:
 
-1. Make a backup, just in case
-1. Remove the child’s account from your device:
+1. Erstellen Sie eine Sicherungskopie, nur für den Fall
+1. Entfernen Sie das Konto des Kindes von Ihrem Gerät:
 
-    - On the child’s device, go to Settings → Accounts → Google
-    - Tap your child’s account and see if you have an option to remove it. If you don’t have such an option, proceed to the next step
-    - Tap the three dots on the upper right corner of the screen and see if you have an option to remove the account
-    - Follow the instructions  removing the child’s account from the device
+    - Gehen Sie auf dem Gerät des Kindes zu „Einstellungen“ → „Konten“ → „Google“
+    - Tippen Sie auf das Konto Ihres Kindes und sehen Sie nach, ob Sie die Möglichkeit haben, es zu entfernen. Wenn diese Option nicht zur Verfügung steht, fahren Sie mit dem nächsten Schritt fort
+    - Tippen Sie auf die drei Punkte in der oberen rechten Ecke des Bildschirms und sehen Sie nach, ob Sie eine Option zum Entfernen des Kontos haben
+    - Befolgen Sie die Anweisungen zum Entfernen des Kontos des Kindes vom Gerät
 
-1. Launch AdGuard and install the CA file
-1. Restore the child’s account on the device:
+1. Starten Sie AdGuard und installieren Sie die CA-Datei
+1. Stellen Sie das Konto des Kindes auf dem Gerät wieder her:
 
-    - On the child’s device, go to Settings → Accounts → Google → Add Account
-    - Sign in to your child’s account
-    - Follow the instructions on the screen to set up your child’s account
+    - Gehen Sie auf dem Gerät des Kindes zu „Einstellungen“ → „Konten“ → „Google“ → „Konto hinzufügen“
+    - Melden Sie sich beim Konto Ihres Kindes an
+    - Folgen Sie den Anweisungen auf dem Bildschirm, um das Konto Ihres Kindes einzurichten

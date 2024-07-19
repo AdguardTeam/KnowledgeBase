@@ -12,11 +12,11 @@ Ti suggeriamo vivamente di leggere correttamente questo articolo, per scoprire d
 
 I sostantivi in diverse lingue, possono avere diverse forme plurali. Il loro utilizzo dipende dal numero di cose di cui parli.
 
-For instance, English words have two word forms when speaking about something in the singular, like *'one star'*, and in the plural — *'two stars'*. It doesn’t matter if you say five, twenty six or even five hundred thirty two stars — the ending 's' will remain the same. Ma certe lingue possono contenere soltanto una o più forme plurali.
+Ad esempio, le parole inglesi prevedono due forme parlando di qualcosa al singolare, come in *'one star'*, e al plurale, *'two stars'*. Non importa che tu dica cinque, ventisei, o persino cinquecentotrentadue stelle (stars), la 's' finale rimarrà la stessa. Ma certe lingue possono contenere soltanto una o più forme plurali.
 
-A differenza dell'inglese, il polacco ha tre forme plurali dei sostantivi. One of them is used when speaking about something in the singular, another form is used in the plural but with numbers ending in 2-4, excluding 12-14, and the third form — for words with other numbers in front of them.
+A differenza dell'inglese, il polacco ha tre forme plurali dei sostantivi. Una di esse viene utilizzata al singolare, un'altra al plurale, ma con i numeri che terminano da 2 a 4, tranne 12 e 14; e la terza, per le parole precedute da altri numeri.
 
-Let’s take a look at this picture. Qui, puoi vedere il gruppo di numeri che determinano la forma di una parola, quando ci si trova di fronte.
+Diamo un'occhiata a quest'immagine. Qui, puoi vedere il gruppo di numeri che determinano la forma di una parola, quando ci si trova di fronte.
 
 ![Polacco](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
@@ -24,13 +24,13 @@ Facciamo un piccolo parallelo tra l'inglese e il polacco, per una migliore compr
 
       La versione inglese:                                                 Gli equivalenti in polacco:
     
-      1. forma - It takes one hour.                                     1. forma - Zajmuje to godzinę.
-      2. forma - It takes two hours.                                    2. forma - Zajmuje to dwie godziny.
-      3. forma - It takes five hours.                                   3. forma - Zajmuje to pięć godzin.
+      1. forma — It takes one hour.                                     1. forma — Zajmuje to godzinę.
+      2. forma — It takes two hours.                                    2. forma — Zajmuje to dwie godziny.
+      3. forma — It takes five hours.                                   3. forma — Zajmuje to pięć godzin.
 
 Ora, è chiaro che il polacco *'godzinę'* (ora) abbia tre forme differenti, mentre la parola in inglese cambia la sua forma con certi numeri soltanto due volte.
 
-A eccezione del polacco, esistono molte altre lingue dotate di tre forme plurali o più, come il russo, il serbo, lo slovacco, il ceco, etc. Ma non tutte seguono la stessa regola. Ecco perché è così importante sapere quante forme plurali sono contenute dalla tua lingua e come puoi applicarle.
+A eccezione del polacco, esistono molte altre lingue dotate di tre forme plurali o più, come il russo, il serbo, lo slovacco, il ceco, etc. Ma non tutte seguono la stessa regola. Ecco perché è così importante conoscerre quanti plurali sono previsti dalla tua lingua e come utilizzarli correttamente.
 
 ## Dove puoi scoprire il numero delle forme plurali? {#where-to-learn}
 
@@ -38,7 +38,7 @@ Quando ti trovi di fronte una traduzione che richiede l'uso dei plurali, potrest
 
 Ecco alcune fonti di informazioni che puoi utilizzare.
 
-La [Guida di Localizzazione](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contiene un ampio elenco di lingue. Il numero di forme plurali per le diverse lingue è mostrato come segue: 'nplurals=2', 'nplurals=4' e così via. Il numero dopo il segno Uguale '=' indica il numero di forme plurali della rispettiva lingua.
+La [Guida di Localizzazione](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contiene un ampio elenco di lingue. La quantità di forme plurali per le diverse lingue è mostrato come segue: `nplurals=2`, `nplurals=4` e così via. Il numero dopo il segno Uguale `=` indica il numero di forme plurali della lingua rispettiva.
 
 Inoltre, puoi ottenere le informazioni sulle forme plurali nella [Repository Locale di Dati Comuni Unicode](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). Le Regole Plurali CLDR indicano una forma aggiuntiva della parola per i numeri decimali (1,5; 2,3; 100,1…), ma non le utilizziamo nelle traduzioni di AdGuard.
 
@@ -92,9 +92,9 @@ Sei pregato di prestare attenzione traducendo e approvando tali stringhe. Se non
 
 ### 4. Stringhe con modelli separati dal simbolo della barra verticale {#4type}
 
-Questo è il tipo più complicato di stringhe di AdGuard, prevalentemente utilizzato nel progetto `AdGuard Websites`.
+Questo è il tipo di stringa più complicato di AdGuard, prevalentemente utilizzato nel progetto `AdGuard Websites`.
 
-Pay close attention to a vertical bar sign between the sentences and **%count%** placeholders in original phrases — this will help you identify phrases where translations require the use of plural forms.
+Presta particolare attenzione a un simbolo della barra verticale tra le due frasi e ai segnaposto **%count%** nelle frasi originali: ciò ti aiuterà a identificare le frasi le cui traduzioni richiedono l'utilizzo delle forme plurali.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/plurals_site.png)
 
@@ -108,9 +108,9 @@ Tornando all'esempio, poiché la lingua inglese include soltanto due forme, dovr
 
 `Standard license for *%count%* computer | Standard license for *%count%* computers`
 
-where **template 1** is Standard license for *%count%* computer,
+dove **template 1** è la licenza Standard per *%count%* dispositivo desktop,
 
-and **template 2** is Standard license for *%count%* computers
+e **template 2** è la licenza Standard per *%count%* dispositivi desktop
 
 Un'altra cosa importante a cui dovresti prestare attenzione sono i segnaposto **%count%** che, solitamente, si trovano prima delle parole che definiscono. Invece di **%count%**, qui, appariranno vari numeri, a seconda di quali modelli sono scelti.
 
@@ -125,7 +125,7 @@ Ad esempio, traducendo la suddetta frase in slovacco, che secondo la regola dell
 In questo caso, vediamo tre modelli contenenti tre forme della parola *"počítač"* (computer) in Slovacco.
 
 *Se ignoriamo una di queste forme e utilizziamo soltanto due modelli per lo slovacco, invece di tre, il sistema non riuscirà a prelevare un modello appropriato per certi numeri* e, di conseguenza, avremo errori grammaticali nelle frasi, come in inglese: *Standard license for 5 computer*.
-> **Always use as many forms as there are in your language, even when the word itself has fewer word forms.**
+> **Utilizza sempre quante più forme sono previste nella tua lingua, anche quando la stessa parola ha meno forme.**
 
 Ad esempio, la parola serba *'računar'* (computer) prevede soltanto due forme. Ma in serbo esistono 3 forme plurali.
 
@@ -147,10 +147,10 @@ E ancora: se ti imbatti in una frase originale con due elementi importanti: **il
 
 - Fai riferimento alla regola del plurale della lingua verso cui traduci;
 
-The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms — two templates in translations; five plural forms — five templates, etc.
+Il numero dei tuoi modelli dovrebbe essere coerente con il numero di forme plurali incluse dalla tua lingua, anche nei casi in cui le stesse parole hanno meno forme. Due forme plurali, due modelli nelle traduzioni; cinque forme plurali, cinque modelli, e così via.
 
 - Non dimenticarti di utilizzare un simbolo barra verticale tra i modelli, come rappresentato nelle stringhe originali;
 
 - Non tradurre, riempire o eliminare i segnaposto **%count%**.
 
-By following these simple rules you will help AdGuard developers avoid a lot of unnecessary complications during the localization process.
+Seguendo queste semplici regole aiuterai gli sviluppatori di AdGuard a evitare numerose complicazioni non necessarie durante il processo di localizzazione.

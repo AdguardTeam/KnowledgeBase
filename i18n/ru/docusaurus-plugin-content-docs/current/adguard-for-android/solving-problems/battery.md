@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -27,34 +27,34 @@ sidebar_position: 1
 
 Для начала приведём немного теории и ссылок с необходимыми данными.
 
-1. Android derives traffic consumption judging on so-called Power Profile, which is given by every manufacturer: <https://source.android.com/devices/tech/power/values.html>
+1. Android считает потребление трафика исходя из так называемого Power Profile, который предоставляется каждым производителем: <https://source.android.com/devices/tech/power/values.html>
 
-1. Main part of Power Profile is a set of values in mAh which define battery consumption for every component of the device: <https://source.android.com/devices/tech/power/values.html>
+1. Главная часть Power Profile — это набор значений, выраженных в миллиамперах, которые определяют потребление батареи каждым компонентом устройства: <https://source.android.com/devices/tech/power/values.html>
 
     Например, из таблицы выше:
 
-    *wifi.active=* 31mA additional consumption in mAh caused by WiFi data exchange.
+    *wifi.active=* 31мА дополнительное потребление в мАч, вызванное передачей данных по Wi-Fi.
 
-    *radio.active=* 100-300mA additional consumption in mAh caused by data exchange over Mobile network.
+    *radio.active=* 100–300мА дополнительное потребление в мАч, вызванное передачей данных по мобильной сети.
 
-    *cpu.active=* 100-200mA additional consumption in mAh caused by CPU work.
+    *cpu.active=* 100-200mA additional consumption in mAh caused by CPU load.
 
-1. AdGuard by itself almost doesn't consume any traffic, so for the sake of evaluating battery resource consumption let's get rid of 'Mobile/WiFi packets' and stcik to 'CPU'.
+1. AdGuard by itself almost doesn't consume any traffic, so for the sake of evaluating power consumption let's get rid of 'Mobile/Wi-Fi packets' and stick to 'CPU'.
 
     Формула для вычисления потребления:
 
-    > "CPU TIME (ms)" X "cpu.active" / (60 *60* 1000) = "POWER USE mAh"
+    > “CPU TIME (ms)” X “cpu.active” / (60 *60* 1000) = “POWER USE mAh”
 
     Подставим в эту формулу реальные значения.
 
-    Let's take *CPU total* from the second screenshot and convert into milliseconds: 506000
+    Возьмём *CPU total* из второго скриншота и переведём в миллисекунды: 506000
 
-    A coefficient *cpu.active* for 2GHz will be roughly equal to 225mAh
+    Коэффициент *cpu.active* для 2 ГГц будет равен примерно 225 мАч
 
     Финальный результат:
 
-    > 506000 *225 / (60* 60 * 1000) = 31,625mAh
+    > 506000 *225 / (60* 60 * 1000) = 31,625мАч
 
 ### Итог
 
-Реальное потребление в **разы ниже** показанного в статистике Android. Instead of 220mAh it should be somewhere around 31-40mAh. С другой стороны, потребление браузера должно быть не 66 мАч, а около 200 мАч.
+Реальное потребление в **разы ниже** показанного в статистике Android. Вместо 220 мАч оно должно быть в районе 31–40 мАч. С другой стороны, потребление браузера должно быть не 66 мАч, а около 200 мАч.

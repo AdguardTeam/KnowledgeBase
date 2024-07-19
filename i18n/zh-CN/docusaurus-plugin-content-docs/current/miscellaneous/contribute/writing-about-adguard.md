@@ -3,8 +3,8 @@ title: 撰写 AdGuard 相关文章
 sidebar_position: 3
 ---
 
-如果您喜欢 AdGuard，并希望通过互联网在社交媒体、博客和/或网站上，分享您对该产品的评价及反馈，那么我们建议您阅览这篇文章。
+If you like AdGuard and want to spread the word and share your thoughts about it on social media or on a personal blog or website, this article may interest you.
 
-在线分享您的使用体验后，请将链接发送至 [pr@adguard.com](mailto:pr@adguard.com) ，为了感谢用户的帮助，我们免费赠送许可证密钥。 无论您的网站的关注人数为10个人还是1000个人，每一个努力的人都值得被尊重。 唯一要注意的就是，您的评论应该在300到500字左右。
+After sharing your experience, email [pr@adguard.com](mailto:pr@adguard.com) and include a link to your post. The authors of the most well-written reviews will receive a free AdGuard license key. It doesn't matter if your website's audience is small or large; we value every effort. Please note that your review should be around 300 to 500 words.
 
-如果您想拍视频或以其它方式写评语，请提前告诉我们，以避免将来出现误解。 如果您的计划包括使用 AdGuard 徽标、横幅或其他视觉元素，请您也提前联系我们。 要联系的电子邮件保持不变，即 [pr@adguard.com](mailto:pr@adguard.com)。
+If you are planning to make a video about AdGuard or do anything else offbeat, please let us know in advance to avoid any possible misunderstandings. The same applies if your plan includes the use of the AdGuard logo, banners, or other visual elements. The contact email address remains the same: [pr@adguard.com](mailto:pr@adguard.com).

@@ -5,7 +5,7 @@ sidebar_position: 11
 
 :::info
 
-В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock).
+В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -29,21 +29,21 @@ sidebar_position: 11
 
 1. Коснитесь логотипа Firefox пять раз.
 
-1. Navigate to **Settings** → **Secret Settings**.
+1. Перейдите в раздел **Настройки** → **Тайные настройки**.
 
-    ![Secret Settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
+    ![Секретные настройки *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
 
-1. Toggle **Use third party CA certificates**.
+1. Включите настройку **Использовать сторонние сертификаты CA**.
 
 ### Метод 2
 
 :::note
 
-This method will only work on **rooted** devices.
+Этот метод работает только на **рутованных** устройствах.
 
 :::
 
-1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+1. [Установить и настроить](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; На платформе Windows владельцам **Samsung** может потребоваться установить [эту утилиту](https://developer.samsung.com/mobile/android-usb-driver.html).
 
 1. Активируйте **режим разработчика** и включите **отладку по USB**:
 

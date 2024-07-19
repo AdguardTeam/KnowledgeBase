@@ -17,7 +17,7 @@ The Knowledge base website is built using Docusaurus 2 — a modern static websi
 
 You can deploy this Knowledge base locally on your computer to preview the changes you suggest. Detailed instructions on how to do this can be found [in the README file](https://github.com/AdguardTeam/KnowledgeBase#readme) on this Knowledge base's GitHub page.
 
-## Translating articles {#translate-adguard}
+## Makaleleri çevirme {#translate-adguard}
 
 Translation of the existing articles of the Knowledge base is carried out on [the Crowdin platform](https://crowdin.com/profile/adguard). All the details about translations and working with Crowdin can be found [in the dedicated article](../translate/guidelines) of the AdGuard Ad Blocker Knowledge base.
 

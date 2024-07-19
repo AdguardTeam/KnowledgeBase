@@ -3,9 +3,9 @@ title: How to automate AdGuard for Android
 sidebar_position: 3
 ---
 
-:::info
+:::정보
 
-이 문서는 시스템 수준에서 기기를 보호하는 다기능 광고 차단기인 Android용 AdGuard에 대해 다룹니다. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -17,7 +17,7 @@ There are a lot of tasker apps out there, for example [Tasker](https://play.goog
 
 ![Automation *mobile_border](https://cdn.adtidy.org/blog/new/mmwmfautomation.jpg)
 
-Thanks to this interface, any app can send a special message (called "intent") that contains the name of the action and some additional data, if needed. AdGuard will look at this intent and perform the required actions.
+Thanks to this interface, any app can send a special message (called “intent”) that contains the name of the action and some additional data, if needed. AdGuard will look at this intent and perform the required actions.
 
 ### Security concerns
 
@@ -41,6 +41,16 @@ Here are actions that, when included in the intent, will be understood by AdGuar
 
 `enable:true` or `enable:false` enables or disables DNS filtering, accordingly.
 
+`fake_dns` allows resolving DNS requests on the specified proxy server. This requires an extra flag:
+
+`enable:true` or `enable:false` enables or disables the *Use FakeDNS* setting, respectively.
+
+:::note
+
+When the *Use FakeDNS* setting is enabled, *DNS Protection* will be automatically disabled. DNS requests won't be filtered locally.
+
+:::
+
 -----
 
 `dns_server` switches between DNS servers, you need to include additional data:
@@ -55,7 +65,7 @@ The full list of supported provider names can be found in our [known DNS provide
 
  `server:custom` switches to the previously added server named `custom`;
 
- `server:tls://dns.adguard.com` creates a new server and switches to it if the previously added servers and providers don't contain a server with the same address. Otherwise, it switches to the respective server. You can add server addresses as IP ( regular DNS), `sdns://…` (DNSCrypt or DNS-over-HTTPS), `https://…` (DNS-over-HTTPS) or  `tls://...` (DNS-over-TLS);
+ `server:tls://dns.adguard.com` creates a new server and switches to it if the previously added servers and providers don't contain a server with the same address. Otherwise, it switches to the respective server. You can add server addresses as IP ( regular DNS), `sdns://…` (DNSCrypt or DNS-over-HTTPS), `https://…` (DNS-over-HTTPS) or `tls://...` (DNS-over-TLS);
 
  `server:1.1.1.1, tls://1.1.1.1` creates a server with comma separated addresses and switches to it. When adding a server via `server:1.1.1.1, tls://1.1.1.1`, the previously added server is removed.
 
@@ -63,7 +73,7 @@ The full list of supported provider names can be found in our [known DNS provide
 
  -----
 
-`proxy_state` enables/disables the outbound proxy.  Requires an extra flag:
+`proxy_state` enables/disables the outbound proxy. Requires an extra flag:
 
 `enable:true` or `enable:false` activates or deactivates the outbound proxy, accordingly.
 
@@ -83,7 +93,7 @@ Or you can configure server parameters manually:
 
 `server:[name]` where `[name]` is the name of the outbound proxy from the list.
 
-Or you  can configure remove parameters manually:
+Or you can configure remove parameters manually:
 
 `server:[type=…&host=…&port=…&username=…&password=…&udp=…&trust=…]`.
 
@@ -112,14 +122,11 @@ Or you  can configure remove parameters manually:
 
 `setting by name`: server:MyServer
 
- `manually settings`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
-
+`manually settings`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
 
 :::
 
------
-
-**Don't forget to include the password as an extra and mention package name and class! You need to do so for every intent!**
+**Don't forget to include the password as an extra and mention package name and class. You need to do so for every intent.**
 
 Extra: `password:*******`
 
