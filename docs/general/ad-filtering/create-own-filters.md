@@ -1108,7 +1108,7 @@ These modifiers are able to completely change the behavior of basic rules.
 | [$jsonprune](#jsonprune-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$xmlprune](#xmlprune-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$network](#network-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| [$permissions](#permissions-modifier) | ✅ | ⏳ | ⏳ | ❌ | ❌ | ❌ |
+| [$permissions](#permissions-modifier) | ✅ [*](#permissions-modifier-limitations) | 🧩 | 🧩 [*](#permissions-modifier-limitations) | ❌ | ❌ | ❌ |
 | [$redirect](#redirect-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
 | [$redirect-rule](#redirect-rule-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
 | [$referrerpolicy](#referrerpolicy-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
@@ -1124,8 +1124,8 @@ These modifiers are able to completely change the behavior of basic rules.
 
 - ✅ — fully supported
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
-<!-- - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions -->
-- ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product
+- 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions
+<!-- - ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product -->
 - ❌ — not supported
 - 👎 — deprecated; still supported but will be removed in the future
 
@@ -1978,6 +1978,8 @@ The list of the available directives is available [here](https://developer.mozil
 If there are multiple `$permissions` rules that match the same request, multiple `Permissions-Policy` headers will be added to the response for each rule with their `$permissions` value. So if you have two rules: `||example.org^$permissions=autoplay=()` and `||example.org^$permissions=geolocation=()\,camera=()` that match the same request, the response will contain two `Permissions-Policy` headers: `autoplay=()` and `geolocation=()\,camera=()`.
 
 :::
+
+##### `$permissions` modifier limitations {#permissions-modifier-limitations}
 
 :::caution Limitations
 
