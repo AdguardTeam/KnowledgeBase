@@ -945,7 +945,7 @@ Disables the Stealth Mode module for all corresponding pages and requests.
 $stealth [= opt1 [| opt2 [| opt3 [...]]]]
 ```
 
-`opt(i)` stand for certain Stealth Mode options disabled by the modifier. The modifier can contain any number of specified options (see below) or none. In the latter case the modifier disables all the Stealth Mode features.
+`opt(i)` stand for certain Stealth Mode options disabled by the modifier. The modifier can contain any number of specific options (see below) or none. In the latter case the modifier disables all the Stealth Mode features.
 
 The list of the available modifier options:
 
