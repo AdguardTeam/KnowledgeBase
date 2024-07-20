@@ -1,5 +1,5 @@
 ---
-title: Rule limit issues
+title: Probleme mit der Regelbegrenzung
 sidebar_position: 1
 ---
 
@@ -9,11 +9,11 @@ In diesem Artikel geht es um AdGuard für Safari, der nur Ihren Safari-Browser s
 
 :::
 
-## Safari content blocker rule limit
+## Regelbegrenzung für Inhaltsblocker
 
-AdGuard for Safari uses the Content Blocking API to apply filtering rules to pages in the Safari browser. Currently, a maximum of 150,000 rules are allowed for each content-blocking extension.
+AdGuard für Safari verwendet die Content Blocking API, um Filterregeln auf Seiten im Safari-Browser anzuwenden. Derzeit sind maximal 150.000 Regeln für jede Erweiterung zulässig.
 
-AdGuard for Safari has 6 content blockers:
+AdGuard für Safari verfügt über 6 Inhaltsblocker:
 
 - AdGuard General (Allgemein)
 - AdGuard Privacy (Datenschutz)
@@ -22,15 +22,15 @@ AdGuard for Safari has 6 content blockers:
 - AdGuard Other (Sonstiges)
 - AdGuard Benutzerdefiniert
 
-This makes a total of 900,000 filtering rules.
+Dies ergibt eine Gesamtzahl von 900.000 Filterregeln.
 
-However, **an extension can contain up to 150,000 rules**. If you exceed this limit, some of the rules will not be applied. This may lead to incorrect blocking.
+Allerdings kann **eine Erweiterung bis zu 150.000 Regeln** enthalten. Wenn Sie diese Grenze überschreiten, werden einige der Regeln nicht angewendet. Dies kann zu einer fehlerhaften Sperrung führen.
 
-## How to check if you are exceeding the rule limit
+## So können Sie überprüfen, ob Sie die Regelgrenze überschreiten
 
-1. Open AdGuard for Safari app.
-2. Scroll down and click _Content blockers_.
-3. Below each content blocker, you can see the enabled filters and the number of active rules.
-   ![Content blockers](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-cb.png)
+1. Öffnen Sie AdGuard für Safari.
+2. Blättern Sie nach unten und klicken Sie auf _Inhaltsblocker_.
+3. Unter jedem Inhaltsblocker können Sie die aktivierten Filter und die Anzahl der aktiven Regeln sehen.
+   ![Inhaltsblocker](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-cb.png)
 
-If more than 150,000 rules are enabled in a content blocker, you may need to disable some filters or user rules from it. Go to _Filters_, select the problematic category, and disable the filters or user rules you don’t need.
+Wenn mehr als 150.000 Regeln in einem Inhaltsblocker aktiviert sind, müssen Sie möglicherweise einige Filter oder Benutzerregeln deaktivieren. Öffnen Sie den Abschnitt _Filter_, wählen Sie die problematische Kategorie aus und deaktivieren Sie die Filter oder Benutzerregeln, die Sie nicht benötigen.

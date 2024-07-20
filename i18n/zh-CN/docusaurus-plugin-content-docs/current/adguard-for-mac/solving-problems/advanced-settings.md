@@ -157,11 +157,11 @@ Removes the Encrypted Client Hello parameters from responses.
 
 `stealth.antidpi.http.split.fragment.size`
 
-Adjusts the size of the HTTP request fragmentation. Valid values: 1–1500. If an invalid size is specified, the system will use the default value.
+Adjusts the size of the HTTP request fragmentation. 有效值：1–1500。 If an invalid size is specified, the system will use the default value.
 
 `stealth.antidpi.clienthello.split.fragment.size`
 
-This option specifies the size of TCP packet fragmentation, which helps avoid deep packet inspection. Valid values: 1–1500. If an invalid size is specified, the system will use the default value.
+This option specifies the size of TCP packet fragmentation, which helps avoid deep packet inspection. 有效值：1–1500。 If an invalid size is specified, the system will use the default value.
 
 `stealth.antidpi.http.space.juggling`
 

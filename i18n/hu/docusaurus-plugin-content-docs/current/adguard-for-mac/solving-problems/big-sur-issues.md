@@ -93,7 +93,7 @@ Now AdGuard can filter local proxies (mostly) without any problems. If you encou
 
 To configure an upstream proxy in AdGuard for Mac in Big Sur:
 
-1. Open AdGuard's settings  *Preferences → Network → Outbound proxy*.
+1. Open AdGuard's settings *Preferences → Network → Outbound proxy*.
 2. Choose HTTP, HTTPS, SOCKS4 or SOCKS5, depending on your proxy type.
 3. Fill in the fields:
     - `host` is the IP address of your proxy server,
@@ -195,7 +195,7 @@ Now that SIP is disabled, this is how you enable Kernel Extension:
 1. Select *Kernel Extension*.
 1. Confirm that you want to switch to Kernel Extension.
 
-:::caution
+:::figyelem
 
 However, we only recommend using this method if everything else fails, as this may lead to unexpected issues.
 

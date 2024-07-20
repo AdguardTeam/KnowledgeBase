@@ -11,7 +11,7 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 ## How to reach Low-level settings
 
-:::caution
+:::figyelem
 
 Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. This section should only be opened if you know what you are doing, or you were asked to do so by our support team.
 

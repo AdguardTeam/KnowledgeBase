@@ -16,7 +16,7 @@ sidebar_position: 3
 1. 打开 Safari 浏览器。
 2. 点击左上角菜单中的「_Safari_」。
 3. 单击「_设置…_」→「_扩展_」。
-4. 清除 AdGuard 六个内容拦截扩展的复选框：「_自定义_」、「_常规_」、「_其他_」、「_隐私_」、「_安全_」和「_社交_」。
+4. 取消选中 AdGuard 扩展：「自定义」、「一般」、「其他」、「隐私」、「安全」、「社交」、「Safari 版 AdGuard」和「AdGuard 助手」。
    ![Unchecked content blockers](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adg-safari-unchecked-cbs.png)
 5. 重新启动 Safari 浏览器。
 6. 返回「_设置..._」→「_扩展_」并重新启用内容拦截扩展。

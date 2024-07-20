@@ -41,6 +41,16 @@ Here are actions that, when included in the intent, will be understood by AdGuar
 
 `enable:true` veya `enable:false`, buna göre DNS filtrelemeyi etkinleştirir veya devre dışı bırakır.
 
+`fake_dns`, DNS isteklerinin belirtilen proxy sunucusunda çözümlenmesini sağlar. Bu, ekstra bir bayrak gerektirir:
+
+`enable:true` veya `enable:false` sırasıyla *FakeDNS'i kullan* ayarını etkinleştirir veya devre dışı bırakır.
+
+:::not
+
+When the *Use FakeDNS* setting is enabled, *DNS Protection* will be automatically disabled. DNS istekleri yerel olarak filtrelenmeyecektir.
+
+:::
+
 -----
 
 `dns_server`, DNS sunucuları arasında geçiş yapıyorsa, ek veriler eklemeniz gerekir:
@@ -55,7 +65,7 @@ Desteklenen sağlayıcı adlarının tam listesini [bilinen DNS sağlayıcı lis
 
  `server:custom`, daha önce eklenen `özel` adlı sunucuya geçiş yapar;
 
- `server:tls://dns.adguard.com`, yeni bir sunucu oluşturur, daha önce eklenen sunucular ve sağlayıcılar aynı adrese sahip bir sunucu içermiyorsa bu sunucuya geçer. Aksi taktirde ilgili sunucuya geçiş yapar. You can add server addresses as IP ( regular DNS), `sdns://…` (DNSCrypt or DNS-over-HTTPS), `https://…` (DNS-over-HTTPS) or  `tls://...` (DNS-over-TLS);
+ `server:tls://dns.adguard.com`, yeni bir sunucu oluşturur, daha önce eklenen sunucular ve sağlayıcılar aynı adrese sahip bir sunucu içermiyorsa bu sunucuya geçer. Aksi taktirde ilgili sunucuya geçiş yapar. You can add server addresses as IP ( regular DNS), `sdns://…` (DNSCrypt or DNS-over-HTTPS), `https://…` (DNS-over-HTTPS) or `tls://...` (DNS-over-TLS);
 
  `server:1.1.1.1, tls://1.1.1.1`, virgülle ayrılmış adreslerle bir sunucu oluşturur ve ona geçer. `server:1.1.1.1, tls://1.1.1.1` aracılığıyla bir sunucu eklerken, önceden eklenen sunucu kaldırılır.
 
@@ -63,7 +73,7 @@ Desteklenen sağlayıcı adlarının tam listesini [bilinen DNS sağlayıcı lis
 
  -----
 
-`proxy_state`, giden proxy'yi etkinleştirir veya devre dışı bırakır.  Ekstra bir bayrak gerektirir:
+`proxy_state`, giden proxy'yi etkinleştirir veya devre dışı bırakır. Ekstra bir bayrak gerektirir:
 
 `enable:true` or `enable:false` activates or deactivates the outbound proxy, accordingly.
 

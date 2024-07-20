@@ -9,7 +9,7 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 :::
 
-## System requirements
+## Sistem gereksinimleri
 
 **İşletim sistemi:** Microsoft Windows 11, 10, 8.1, 8, 7, Vista.
 
@@ -23,11 +23,11 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 AdGuard'ı Microsoft Windows altında bir PC veya tablette kullanmak için kurulum paketini indirmeli ve kurulum programını başlatmalısınız. Aşağıdaki işlemleri gerçekleştirin:
 
-1. Go to the [AdGuard website](http://adguard.com) in the address bar and click *Download* [on the opened page](https://adguard.com/download.html?auto=1).
+1. Adres çubuğunda [AdGuard sitesine](http://adguard.com) gidin ve [açılan sayfada](https://adguard.com/download.html?auto=1) *İndir* öğesine tıklayın.
 
    ![AdGuard'ı indir](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/download-from-website.png)
 
-2. When the download is finished, press the *Open* button shown in the Downloads bar or click the file name *adguardInstaller.exe*.
+2. İndirme işlemi tamamlandığında, İndirilenler çubuğunda gösterilen *Aç* düğmesine basın veya *adguardInstaller.exe* dosya adına tıklayın.
 
    !["Çalıştır" öğesine basın](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/click-download.png)
 
@@ -71,7 +71,7 @@ AdGuard'ı kaldırmanız veya yeniden kurmanız gerekirse aşağıdakileri yapı
 
 ### Gelişmiş yöntem {#advanced}
 
-Normal kaldırma herhangi bir nedenle işe yaramazsa, gelişmiş bir yöntem kullanmayı deneyebilirsiniz. Her şeyden önce, geliştiricilerimiz tarafından oluşturulan [kaldırma aracını indirmeniz](https://cdn.adtidy.org/distr/windows/Uninstall_Utility.zip) gerekir. Extract the archive to any folder on your PC and run the **Adguard.UninstallUtility.exe** file, and allow the app to make changes to your device. Ardından aşağıdaki talimatı takip edin:
+Normal kaldırma herhangi bir nedenle işe yaramazsa, gelişmiş bir yöntem kullanmayı deneyebilirsiniz. Her şeyden önce, geliştiricilerimiz tarafından oluşturulan [kaldırma aracını indirmeniz](https://cdn.adtidy.org/distr/windows/Uninstall_Utility.zip) gerekir. Arşivi bilgisayarınızdaki herhangi bir klasöre çıkarın, **Adguard.UninstallUtility.exe** dosyasını çalıştırın ve uygulamanın cihazınızda değişiklik yapmasına izin verin. Ardından aşağıdaki talimatı takip edin:
 
 - *AdGuard Reklam Engelleyici* ve *Standart* kaldırma türünü seçin, ardından *Kaldır* öğesine tıklayın.
 
@@ -81,7 +81,7 @@ Normal kaldırma herhangi bir nedenle işe yaramazsa, gelişmiş bir yöntem kul
 
 ![Standart kaldırma uyarısı *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
 
-- Wait until uninstall is finished — there will be a phrase **Uninstall complete** and a prompt to restart your computer:
+- Kaldırma işlemi bitene kadar bekleyin — **Kaldırma işlemi tamamlandı** ifadesi görünecek ve bilgisayarınızı yeniden başlatmanız istenecektir:
 
 ![Kaldırma işlemi tamamlandı *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_standard_complete.jpg)
 
@@ -91,7 +91,7 @@ Sonraki adımları yalnızca ilk iki adımı gerçekleştirmek herhangi bir nede
 
 :::
 
-- Select *AdGuard Ad Blocker* and *Extended* uninstall type, then click *Uninstall*. Clcik *Yes, continue* in the window prompt.
+- *AdGuard Reklam Engelleyici* ve *Genişletilmiş* kaldırma türünü seçin, ardından *Kaldır* öğesine tıklayın. Clcik *Yes, continue* in the window prompt.
 
 ![Genişletilmiş kaldırma *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended.jpg)
 
@@ -99,8 +99,8 @@ Sonraki adımları yalnızca ilk iki adımı gerçekleştirmek herhangi bir nede
 
 ![Genişletilmiş kaldırma uyarısı *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_warning.jpg)
 
-- Wait until uninstall is finished — there will be a phrase **Uninstall complete** and a prompt to restart your computer:
+- Kaldırma işlemi bitene kadar bekleyin — **Kaldırma işlemi tamamlandı** ifadesi görünecek ve bilgisayarınızı yeniden başlatmanız istenecektir:
 
-![Extended uninstall finished *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_complete.jpg)
+![Genişletilmiş kaldırma işlemi tamamlandı *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/installation/ab_extended_complete.jpg)
 
 AdGuard başarıyla kaldırıldı!

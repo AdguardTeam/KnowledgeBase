@@ -38,7 +38,7 @@ sidebar_position: 4
 
 Вот некоторые источники информации, которые можно использовать.
 
-На сайте [Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) есть информация о большом количестве языков. Количество форм множественного числа для разных языков показано так: nplurals=2, nplurals=4 и так далее. Цифра после знака равенства (=) означает количество плюральных форм в этом языке.
+На сайте [Localization Guide](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) есть информация о большом количестве языков. The number of plural forms for different languages is shown this way: `nplurals=2`, `nplurals=4` and so on. The numeral after the Equals sign `=` means the number of plural forms of the respective language.
 
 Информацию о плюральных формах можно также найти на сайте [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). В правилах плюральных форм CLDR указана дополнительная форма слова для десятичных чисел (1,5; 2,3; 100,1…), но мы не используем их в переводах AdGuard.
 

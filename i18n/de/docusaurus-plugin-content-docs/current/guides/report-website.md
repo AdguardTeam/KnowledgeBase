@@ -1,5 +1,5 @@
 ---
-title: How to report websites and apps
+title: So melden Sie Websites und Apps
 sidebar_position: 3
 ---
 
@@ -12,7 +12,7 @@ Bei der Verwendung von Werbeblockern kann es vorkommen, dass bestimmte Websites 
 - Ein Fehler, der von Filterautoren bei der Erstellung der Regel gemacht wurde;
 - Wiedereinfügung von Werbung. Mehr über diese Methode erfahren Sie in unserem [Blog](https://adguard.com/en/blog/ad-reinsertion.html).
 
-You can help us by filling in a form with examples of ads you have encountered. Verwenden Sie dazu bitte die Anweisungen für Ihr Betriebssystem.
+Sie können uns helfen, indem Sie ein Formular mit Beispielen von Werbung, die Ihnen begegnet ist, ausfüllen. Verwenden Sie dazu bitte die Anweisungen für Ihr Betriebssystem.
 
 ## Website melden {#report}
 
@@ -53,7 +53,7 @@ Um die Wiedereinblendung einer Werbung oder die fehlerhafte Anzeige einer Websit
 
 ### Mac {#mac}
 
-- Open [AdGuard Browser Assistant](/adguard-for-mac/features/browser-assistant) and hit **Report an issue**:
+- Öffnen Sie den [AdGuard Browser-Assistent](/adguard-for-mac/features/browser-assistant) und klicken Sie auf **Problem melden**:
 
 ![Mac *Mobil](https://cdn.adtidy.org/content/kb/ad_blocker/guides/browser-assistant-mac.png)
 
@@ -146,4 +146,4 @@ Sie stehen zum Beispiel vor der Situation, dass sich Ihre bevorzugte Website nic
 
 ### **Probleme durch Drittanbieter**
 
-Einige Browser und Antivirenprogramme (wie Yandex Browser, Kaspersky usw.) verfügen über integrierte Werbeblocker. Diese können die Funktionsweise von Websites beeinträchtigen und Probleme verursachen. If you are using such programs, first make sure that the problem is caused by **AdGuard**: disable **AdGuard** filtering and try to reproduce the problem. Bleibt es bestehen, bedeutet dies, dass das Problem von einer anderen App oder einem anderen Browser verursacht wird. Wenn das Problem durch **AdGuard** verursacht wird, führen Sie die in den vorherigen Abschnitten beschriebenen Schritte aus.
+Einige Browser und Antivirenprogramme (wie Yandex Browser, Kaspersky usw.) verfügen über integrierte Werbeblocker. Diese können die Funktionsweise von Websites beeinträchtigen und Probleme verursachen. Wenn Sie solche Programme verwenden, stellen Sie zunächst sicher, dass das Problem durch **AdGuard** verursacht wird. Deaktivieren Sie das Filtern von **AdGuard** und versuchen Sie, das Problem zu reproduzieren. Bleibt es bestehen, bedeutet dies, dass das Problem von einer anderen App oder einem anderen Browser verursacht wird. Wenn das Problem durch **AdGuard** verursacht wird, führen Sie die in den vorherigen Abschnitten beschriebenen Schritte aus.

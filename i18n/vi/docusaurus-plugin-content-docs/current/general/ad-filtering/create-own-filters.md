@@ -235,7 +235,7 @@ Rules with wildcard for TLD are not supported by AdGuard Content Blocker.
 
 - `||example.com/ads/*` — a simple rule, which corresponds to addresses like `http://example.com/ads/banner.jpg` and even `http://subdomain.example.com/ads/otherbanner.jpg`.
 
-- `||example.org^$third-party` —  this rule blocks third-party requests to `example.org` and its subdomains.
+- `||example.org^$third-party` — this rule blocks third-party requests to `example.org` and its subdomains.
 
 - `@@||example.com$document` — general exception rule. It completely disables filtering for `example.com` and all subdomains. There is a number of modifiers which can be used in exception rules. For more details, please follow the link [below](#exception-modifiers).
 
@@ -272,11 +272,11 @@ The following modifiers are the most simple and frequently used. Basically, they
 | [$domain](#domain-modifier)           |            ✅             |                ✅                |               ✅               | ✅ [*](#domain-modifier-limitations) | ✅ [*](#domain-modifier-limitations) |                 ✅                 |
 | [$header](#header-modifier)           |            ✅             |                ⏳                |               ⏳               |                  ❌                  |                  ❌                  |                 ❌                 |
 | [$important](#important-modifier)     |            ✅             |                ✅                |               ✅               |                  ✅                  |                  ✅                  |                 ❌                 |
-| [$match-case](#match-case-modifier)   |            ✅             |                ✅                |               ✅               |                  ⏳                  |                  ⏳                  |                 ✅                 |
-| [$method](#method-modifier)           |            ⏳             |                ✅                |               ✅               |                  ❌                  |                  ❌                  |                 ❌                 |
+| [$match-case](#match-case-modifier)   |            ✅             |                ✅                |               ✅               |                  ✅                  |                  ✅                  |                 ✅                 |
+| [$method](#method-modifier)           |            ✅             |                ✅                |               ✅               |                  ❌                  |                  ❌                  |                 ❌                 |
 | [$popup](#popup-modifier)             |           ✅ *            |                ✅                |               ✅               |                 ✅ *                 |                 ✅ *                 |                 ❌                 |
 | [$third-party](#third-party-modifier) |            ✅             |                ✅                |               ✅               |                  ✅                  |                  ✅                  |                 ✅                 |
-| [$to](#to-modifier)                   |            ⏳             |                ✅                |               ✅               |                  ❌                  |                  ❌                  |                 ❌                 |
+| [$to](#to-modifier)                   |            ✅             |                ✅                |               ✅               |                  ❌                  |                  ❌                  |                 ❌                 |
 
 :::note
 
@@ -317,7 +317,7 @@ Apps in the modifier value cannot have a wildcard, e.g. `$app=com.*.music`. Rule
 :::info Compatibility
 
 - Only AdGuard for Windows, Mac, Android are technically capable of using rules with `$app` modifier.
-- On Windows the process name is case-insensitive starting with AdGuard for Windows versions that have CoreLibs v1.12 under the hood.
+- On Windows the process name is case-insensitive starting with AdGuard for Windows with [CoreLibs][] v1.12 or later.
 
 :::
 
@@ -325,7 +325,7 @@ Apps in the modifier value cannot have a wildcard, e.g. `$app=com.*.music`. Rule
 
 `$denyallow` modifier allows to avoid creating additional rules when it is needed to disable a certain rule for specific domains. `$denyallow` matches only target domains and not referrer domains.
 
-Adding this modifier to a rule is equivalent to excluding the domains by the rule's matching pattern or to adding the corresponding exclusion rules. To add multiple domains to one rule, use the `|`  character as a separator.
+Adding this modifier to a rule is equivalent to excluding the domains by the rule's matching pattern or to adding the corresponding exclusion rules. To add multiple domains to one rule, use the `|` character as a separator.
 
 **Examples**
 
@@ -450,9 +450,9 @@ Safari does not support the simultaneous use of allowed and disallowed domains, 
 
 :::info Compatibility
 
-Rules with regular expressions in the `$domain` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs v1.11 or later**.
+Rules with regular expressions in the `$domain` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.11 or later.
 
-In AdGuard for Windows, Mac and Android **running CoreLibs v1.12 or later** the `$domain` modifier can be alternatively spelled as `$from`.
+In AdGuard for Windows, Mac and Android with [CoreLibs][] v1.12 or later the `$domain` modifier can be alternatively spelled as `$from`.
 
 :::
 
@@ -485,7 +485,7 @@ The modifier part, `":" h_value`, may be omitted. In that case, the modifier mat
 
 :::info Compatibility
 
-Rules with the `$header` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.11 or later.
+Rules with the `$header` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.11 or later.
 
 :::
 
@@ -519,7 +519,7 @@ This modifier defines a rule which applies only to addresses that match the case
 
 :::info Compatibility
 
-Rules with the `$match-case` are supported by AdGuard for iOS and AdGuard for Safari, **running SafariConverterLib v2.0.43 or later**.
+Rules with the `$match-case` are supported by AdGuard for iOS and AdGuard for Safari with SafariConverterLib v2.0.43 or later.
 
 All other products already support this modifier.
 
@@ -544,7 +544,7 @@ Rules with mixed negated and not negated values are considered invalid. So, for 
 
 :::info Compatibility
 
-Rules with `$method` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.12 or later and AdGuard Browser Extension for Chrome, Firefox, and Edge with TSUrlFilter v2.1.1 or later.
+Rules with `$method` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.12 or later and AdGuard Browser Extension for Chrome, Firefox, and Edge with [TSUrlFilter][] v2.1.1 or later.
 
 :::
 
@@ -598,7 +598,7 @@ You may use a shorter name (alias) instead of using the full modifier name: `$3p
 
 #### **`$to`** {#to-modifier}
 
-`$to` limits the rule scope to requests made **to** the specified domains and their subdomains. To add multiple domains to one rule, use the `|`  character as a separator.
+`$to` limits the rule scope to requests made **to** the specified domains and their subdomains. To add multiple domains to one rule, use the `|` character as a separator.
 
 **Examples**
 
@@ -614,7 +614,7 @@ You may use a shorter name (alias) instead of using the full modifier name: `$3p
 
 :::info Compatibility
 
-Rules with the `$to` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.12 or later and AdGuard Browser Extension with TSUrlFilter v2.1.3 or later.
+Rules with the `$to` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.12 or later and AdGuard Browser Extension with [TSUrlFilter][] v2.1.3 or later.
 
 :::
 
@@ -676,8 +676,8 @@ If this modifier is used with an exclusion rule (`@@`), it completely disables b
 
 - `||example.com^$document` blocks HTML document request to `example.com` with a blocking page.
 - `||example.com^$document,redirect=noopframe` redirects HTML document request to `example.com` to an empty html document.
-- `||example.com^$document,removeparam=test` removes `test` query parameter from HTML document request to  `example.com`.
-- `||example.com^$document,replace=/test1/test2/` replaces `test1` with `test2` in  HTML document request to `example.com`.
+- `||example.com^$document,removeparam=test` removes `test` query parameter from HTML document request to `example.com`.
+- `||example.com^$document,replace=/test1/test2/` replaces `test1` with `test2` in HTML document request to `example.com`.
 
 :::note
 
@@ -902,9 +902,7 @@ $extension="userscript name\, with \"quote\""
 :::info Compatibility
 
 - Only AdGuard for Windows, Mac, Android are technically capable of using rules with `$extension` modifier.
-- `$extension` modifier with specific userscript name is supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.13 or later**.
-
-Rules with `$extension` modifier with specific userscript name are supported by AdGuard for Windows, Mac and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.13 or later.
+- Rules with `$extension` modifier with specific userscript name are supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.13 or later.
 
 :::
 
@@ -969,7 +967,7 @@ Blocking cookies and removing tracking parameters is achieved by using rules wit
 :::info Compatibility
 
 - Stealth Mode is available in AdGuard for Windows, Mac, and Android, and AdGuard Browser Extension. All other products will ignore the rules with `$stealth` modifier.
-- Rules with `$stealth` modifier with specific options are supported by AdGuard for Windows, Mac, and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.10 or later.
+- Rules with `$stealth` modifier with specific options are supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.10 or later.
 
 :::
 
@@ -1103,6 +1101,7 @@ These modifiers are able to completely change the behavior of basic rules.
 - ✅ — fully supported
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
 <!-- - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions -->
+- ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product
 - ❌ — not supported
 - 👎 — deprecated; still supported but will be removed in the future
 
@@ -1190,7 +1189,7 @@ every time AdGuard encounters a cookie called `NAME` in a request to `example.or
 
 **Escaping special characters**
 
-If regular expression `name` is used for matching, two characters must be escaped: comma `,` and dollar sign `$`. Use  backslash `\` escape each of them. For example, escaped comma looks like this: `\,`.
+If regular expression `name` is used for matching, two characters must be escaped: comma `,` and dollar sign `$`. Use backslash `\` escape each of them. For example, escaped comma looks like this: `\,`.
 
 **Examples**
 
@@ -1390,7 +1389,7 @@ preroll.ts
 
 :::info Compatibility
 
-Rules with the `$hls` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.10 or later**.
+Rules with the `$hls` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.10 or later.
 
 :::
 
@@ -1414,7 +1413,7 @@ The `$inline-font` modifier is designed to block inline fonts embedded into the 
 
 `$jsonprune` rules modify the response to a matching request by removing JSON items that match a modified [JSONPath](https://goessner.net/articles/JsonPath/) expression. They do not modify responses which are not valid JSON documents.
 
-In AdGuard for Windows, Mac, and Android **running CoreLibs v1.11 or later**, `$jsonprune` also supports modifying JSONP (padded JSON) documents.
+In AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.11 or later, `$jsonprune` also supports modifying JSONP (padded JSON) documents.
 
 **Syntax**
 
@@ -1551,7 +1550,7 @@ When multiple `$jsonprune` rules match the same request, they are sorted in lexi
 
 **Nested JSONPath expressions**
 
-In AdGuard for Windows, Mac and Android **running CoreLibs v1.11 or later**, JSONPath expressions may be used as keys in filter expressions.
+In AdGuard for Windows, Mac and Android with [CoreLibs][] v1.11 or later, JSONPath expressions may be used as keys in filter expressions.
 
 - `||example.org^$jsonprune=\$.elems[?(has "\$.a.b.c")]` removes all children of `elems` which have a property selectable by the JSONPath expression `$.a.b.c`.
 
@@ -1635,7 +1634,7 @@ In AdGuard for Windows, Mac and Android **running CoreLibs v1.11 or later**, JSO
 
 :::info Compatibility
 
-Rules with the `$jsonprune` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.10 or later**.
+Rules with the `$jsonprune` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.10 or later.
 
 :::
 
@@ -1873,7 +1872,7 @@ When multiple `$xmlprune` rules match the same request, they are applied in lexi
 
 :::info Compatibility
 
-Rules with the `$xmlprune` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.15 or later**.
+Rules with the `$xmlprune` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.15 or later.
 
 :::
 
@@ -1921,10 +1920,6 @@ In order to use this type of rules, it is required to have a basic understanding
 
 For the requests matching a `$permissions` rule, AdGuard strengthens response's permissions policy by adding an additional permission policy equal to the `$permissions` modifier contents. `$permissions` rules are applied independently from any other rule type. **Only document-level exceptions** can influence it (see the examples section), but no other basic rules.
 
-**Multiple rules matching a single request.**
-
-In case if multiple `$permissions` rules match a single request, AdGuard will apply each of them.
-
 **Syntax**
 
 `$permissions` value syntax is similar to the `Permissions-Policy` header [syntax](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy) with one exception: comma that separates several features **MUST** be escaped — see examples below. The list of the available directives is available [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy#directives).
@@ -1934,10 +1929,29 @@ In case if multiple `$permissions` rules match a single request, AdGuard will ap
 **Examples**
 
 - `||example.org^$permissions=autoplay=()` disallows autoplay media requested through the `HTMLMediaElement` interface across `example.org`.
-- `@@||example.org/page/*$permissions=autoplay=()` disables all rules with the `$permissions` modifier exactly matching `autoplay=()` on all the pages matching the rule pattern. For instance, the rule above.
+- `@@||example.org/page/*$permissions=autoplay=()` disables all rules with the `$permissions` modifier exactly matching `autoplay=()` on all the pages matching the rule pattern. For instance, the rule above. It is important to note that the exception rule only takes effect in the case of an **exact value match**. For example, if you want to disable the rule  `$permissions=a=()\,b=()`, you need exception rule `@@$permissions=a=()\,b=()`, and **not** `@@$permissions=b=()\,a=()`, **nor** `@@$permissions=b=()` because `b=()\,a=()` or `b=()` does not match with `a=()\,b=()`.
 - `@@||example.org/page/*$permissions` disables all the `$permissions` rules on all the pages matching the rule pattern.
 - `$domain=example.org|example.com,permissions=storage-access=()\, camera=()` disallows using the Storage Access API to request access to unpartitioned cookies and using video input devices across `example.org` and `example.com`.
+- For better compatibility, we also support pipe-separated values for `$permissions` modifier: `$permissions=storage-access=()|camera=()`.
 - `@@||example.org^$document` or `@@||example.org^$urlblock` disables all the `$permission` rules on all the pages matching the rule pattern.
+
+:::note
+
+`$permissions` rules only take effect for main frame and sub frame requests. This means they are applied when a page is loaded or when an iframe is loaded.
+
+:::
+
+:::note
+
+If there are multiple `$permissions` rules that match the same request, multiple `Permissions-Policy` headers will be added to the response for each rule with their `$permissions` value. So if you have two rules: `||example.org^$permissions=autoplay=()` and `||example.org^$permissions=geolocation=()\,camera=()` that match the same request, the response will contain two `Permissions-Policy` headers: `autoplay=()` and `geolocation=()\,camera=()`.
+
+:::
+
+:::caution Limitations
+
+Firefox ignores the `Permissions-Policy` header. For more information, see [this issue](https://bugzilla.mozilla.org/show_bug.cgi?id=1694922).
+
+:::
 
 :::caution Restrictions
 
@@ -1948,7 +1962,7 @@ In case if multiple `$permissions` rules match a single request, AdGuard will ap
 
 :::info Compatibility
 
-Rules with the `$permissions` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**.
+Rules with the `$permissions` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.11 or later.
 
 :::
 
@@ -2029,7 +2043,7 @@ If a request matches multiple `$referrerpolicy` rules not disabled by exceptions
 
 :::info Compatibility
 
-Rules with the `$referrerpolicy` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.12 or later**.
+Rules with the `$referrerpolicy` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.12 or later.
 
 :::
 
@@ -2161,7 +2175,7 @@ Rules with `$removeparam` modifier are intended to strip query parameters from r
 
 :::note Compatibility
 
-Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac and, Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.7 or later and AdGuard Browser Extension v3.6 or later.
+Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac and, Android with [CoreLibs][] v1.7 or later and AdGuard Browser Extension v3.6 or later.
 
 :::
 
@@ -2262,8 +2276,8 @@ With these rules, specified UTM parameters will be removed from any request save
 :::info Compatibility
 
 - Rules with `$removeparam` modifier are supported by AdGuard for Windows, Mac, and Android and AdGuard Browser Extension for Chrome, Firefox, and Edge.
-- `$removeparam` syntax for regular expressions is supported by AdGuard Browser Extension v4.0 and AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.8 or later**.
-- `POST` request types are supported only by AdGuard for Windows, Mac, and Android with [CoreLibs](https://adguard.com/en/blog/introducing-corelibs.html) v1.10 or later.
+- `$removeparam` syntax for regular expressions is supported by AdGuard Browser Extension v4.0 and AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.8 or later.
+- `POST` request types are supported only by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.10 or later, and AdGuard Browser Extension with [TSWebExtension][] v0.4.6 or later.
 
 :::
 
@@ -2430,7 +2444,7 @@ Rules with the `$urltransform` modifier can be used [**only in trusted filters**
 
 :::info Compatibility
 
-Rules with the `$urltransform` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android **with CoreLibs version 1.15 or higher**.
+Rules with the `$urltransform` modifier are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs][] v1.15 or later.
 
 :::
 
@@ -2517,7 +2531,7 @@ The base priority of any rule is 1. If the calculated priority is a floating-poi
 
 :::info Compatibility
 
-- The concept of priority has been introduced in tsurlfilter v2.1.0 and CoreLibs v1.13. Before that AdGuard didn't have any special priority computation algorithm and collisions handling could be different depending on AdGuard product and version.
+- The concept of priority has been introduced in [TSUrlFilter][] v2.1.0 and [CoreLibs][] v1.13. Before that AdGuard didn't have any special priority computation algorithm and collisions handling could be different depending on AdGuard product and version.
 - AdGuard for iOS, Safari, and AdGuard Content Blocker rely on the browsers implementation and they cannot follow the rules specified here.
 
 :::
@@ -3081,7 +3095,7 @@ The `:matches-css()` pseudo-class allows to match the element by its current sty
 - `target` — optional, standard or extended CSS selector, can be skipped for checking *any* element
 - `pseudo-element` — optional, valid standard pseudo-element, e.g. `before`, `after`, `first-line`, etc.
 - `property` — required, a name of CSS property to check the element for
-- `pattern` —  required, a value pattern that is using the same simple wildcard matching as in the basic url filtering rules OR a regular expression. For this type of matching, AdGuard always does matching in a case-insensitive manner. In the case of a regular expression, the pattern looks like `/regexp/`.
+- `pattern` — required, a value pattern that is using the same simple wildcard matching as in the basic url filtering rules OR a regular expression. For this type of matching, AdGuard always does matching in a case-insensitive manner. In the case of a regular expression, the pattern looks like `/regexp/`.
 
 **Special characters escaping and unescaping**
 
@@ -3713,7 +3727,7 @@ or
 
 :::info Compatibility
 
-The `:contains()` pseudo-class is supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.13 or later**.
+The `:contains()` pseudo-class is supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.13 or later.
 
 :::
 
@@ -3758,7 +3772,7 @@ We **strongly recommend** using [scriptlets](#scriptlets) instead of JavaScript 
 **Syntax**
 
 ```text
-rule = [domains]  "#%#" script
+rule = [domains] "#%#" script
 ```
 
 - **`domains`** — domain restriction for the rule. Same principles as in [element hiding rules](#cosmetic-elemhide-rules).
@@ -3817,7 +3831,7 @@ AdGuard supports a lot of different scriptlets. In order to achieve cross-blocke
 **Syntax**
 
 ```text
-rule = [domains]  "#%#//scriptlet(" scriptletName arguments ")"
+rule = [domains] "#%#//scriptlet(" scriptletName arguments ")"
 ```
 
 - **`scriptletName`** — required, a name of the scriptlet from AdGuard's Scriptlets library
@@ -3995,7 +4009,7 @@ where `pattern` is pretty much the same as [`pattern` of the basic rules](#basic
 
 :::info Compatibility
 
-Rules with the `$url` modifier are supported by AdGuard for Windows, Mac, and Android, **running CoreLibs version 1.11 or later**.
+Rules with the `$url` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.11 or later.
 
 :::
 
@@ -4143,7 +4157,7 @@ The `!#else` directive is supported by the [FiltersDownloader][gh-filters-downlo
 
 It is already supported for filter lists compiled by the [FiltersRegistry][], but it still may not be supported by AdGuard products when adding a filter list with `!#else` as a custom one. The following products will support it in the mentioned versions or later:
 
-- AdGuard for Windows, Mac, and Android, running CoreLibs v1.13;
+- AdGuard for Windows, Mac, and Android with [CoreLibs][] v1.13;
 - AdGuard Browser Extension v4.2.208;
 - AdGuard v1.11.16 for Safari.
 
@@ -4276,6 +4290,8 @@ Used to specify the platforms to apply the rules. List of existing platforms and
 - `ios` — AdGuard for iOS — [https://filters.adtidy.org/ios/filters/2.txt](https://filters.adtidy.org/ios/filters/2.txt)
 
 - `ext_chromium` — AdGuard Browser Extension for Chrome — [https://filters.adtidy.org/extension/chromium/filters/2.txt](https://filters.adtidy.org/extension/chromium/filters/2.txt)
+
+- `ext_chromium_mv3` — AdGuard Browser Extension for Chrome MV3 — [https://filters.adtidy.org/extension/chromium-mv3/filters/2.txt](https://filters.adtidy.org/extension/chromium-mv3/filters/2.txt)
 
 - `ext_ff` — AdGuard Browser Extension for Firefox — [https://filters.adtidy.org/extension/firefox/filters/2.txt](https://filters.adtidy.org/extension/firefox/filters/2.txt)
 
@@ -4450,3 +4466,6 @@ The following scriptlets also may be used for debug purposes:
 [sec-fetch-dest-header]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest
 [gh-filters-downloader]: https://github.com/AdguardTeam/FiltersDownloader
 [FiltersRegistry]: https://github.com/AdguardTeam/FiltersRegistry
+[CoreLibs]: https://adguard.com/en/blog/introducing-corelibs.html
+[TSUrlFilter]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tsurlfilter#tsurlfilter
+[TSWebExtension]: https://github.com/AdguardTeam/tsurlfilter/tree/master/packages/tswebextension#tswebextension

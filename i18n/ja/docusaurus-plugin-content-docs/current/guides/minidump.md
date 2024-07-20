@@ -18,13 +18,13 @@ Windows 10では、ブルースクリーンにストップコードとQRコー�
 
 ## minidumpファイルを作成するためにWindowsをセットアップする方法
 
-BSoDクラッシュエラーが発生しない場合でも、このオプションを設定することができます。これは一般的な推奨事項であり、AdGuard製品に関係なくでも有効にできます。 ミニダンプファイルを自動的に作成するには、以下の手順に従ってください:
+Even if you don’t experience any BSoD crash errors, you can still set this option — this is a general recommendation, not necessarily related to AdGuard products. ミニダンプファイルを自動的に作成するには、以下の手順に従ってください:
 
  1. Windowsの検索バーに「*sysdm.cpl*」と入力し、「**開く**」をクリックします。 **システム・プロパティ・コントロールパネル・メニュー**ウィンドウが画面に表示されます。
 
     :::tip
 
-    もしくは、**設定** →  **システム** →  **情報** →  **高度なシステム設定**
+    Alternatively, click **Settings** → **System** → **About** → **Advanced system settings**.
 
 
 :::

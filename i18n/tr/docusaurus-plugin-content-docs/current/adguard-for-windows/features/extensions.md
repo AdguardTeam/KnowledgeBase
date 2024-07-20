@@ -1,11 +1,11 @@
 ---
-title: Extensions
+title: Uzantılar
 sidebar_position: 3
 ---
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Windows için AdGuard'ı ele alır. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Windows için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -41,7 +41,7 @@ Web of Trust, kullanıcılarının görüşlerine dayanarak her sitenin itibarı
 
 ### Ağ
 
-Sondan bir önceki modül ağ filtrelemeye ayrılmıştır ve burada ağla ilgili ek seçenekler bulacaksınız. Two of them are enabled by default: _Enable traffic filtering_ and _Filter HTTPS protocol_. Bunlar, web alanınızı daha iyi filtrelemek için önemli olağanüstü önlemlerdir. Most websites are now using HTTPS, and the same applies to advertising. Youtube.com, facebook.com ve twitter.com gibi birçok siteden HTTPS filtreleme olmadan reklamları kaldırmak imkansızdır. So keep the _Filter HTTPS protocol_ feature enabled unless you have a strong reason not to.
+Sondan bir önceki modül ağ filtrelemeye ayrılmıştır ve burada ağla ilgili ek seçenekler bulacaksınız. Two of them are enabled by default: _Enable traffic filtering_ and _Filter HTTPS protocol_. Bunlar, web alanınızı daha iyi filtrelemek için önemli olağanüstü önlemlerdir. Çoğu site artık HTTPS kullanıyor ve aynı durum reklamcılık için de geçerli. Youtube.com, facebook.com ve twitter.com gibi birçok siteden HTTPS filtreleme olmadan reklamları kaldırmak imkansızdır. So keep the _Filter HTTPS protocol_ feature enabled unless you have a strong reason not to.
 
 ![Network Settings \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/overview/network-settings.png)
 
@@ -55,7 +55,7 @@ Son bölüm, internette her gezindiğinizde güvenlik ve anonimlik sağlayan ide
 
 AdGuard VPN nasıl çalışır? NTeknik detaylara girmeden VPN'in kullanıcının bilgisayarı veya mobil cihazı ile uzak bir VPN sunucusu arasında güvenli bir şifreli tünel oluşturduğunu söyleyebiliriz. Bu şekilde, üçüncü taraf bir gözlemci gerçek kullanıcının IP'sini değil VPN sunucusunun IP adresini gördüğünden, kullanıcının anonimliğinin yanı sıra veri gizliliği de korunur.
 
-**What AdGuard VPN does:**
+**AdGuard VPN ne yapar:**
 
 - gerçek yerinizi gizler ve anonim kalmanıza yardımcı olur
 - verilerinizi izlemekten korumak için IP adresinizi değiştirir
