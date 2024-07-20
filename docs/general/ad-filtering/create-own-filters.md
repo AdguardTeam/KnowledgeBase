@@ -358,7 +358,7 @@ or to the combination of these three:
 
 - The rule's matching pattern cannot target any specific domains, e.g. it cannot start with `||`.
 - Domains in the modifier value cannot be negated, e.g. `$denyallow=~x.com`, or have a wildcard TLD, e.g. `$denyallow=x.*`, or be a regular expression, e.g. `$denyallow=/\.(com\|org)/`.
-- [`$denyallow`](#denyallow-modifier) cannot be used together with `$to`. It can be expressed with inverted `$to`: `$denyallow=a.com|b.com` is equivalent to `$to=~a.com|~b.com`.
+- `$denyallow` cannot be used together with [`$to`](#to-modifier). It can be expressed with inverted `$to`: `$denyallow=a.com|b.com` is equivalent to `$to=~a.com|~b.com`.
 
 The rules which violate these restrictions are considered invalid.
 
