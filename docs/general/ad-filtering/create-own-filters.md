@@ -493,7 +493,7 @@ The modifier part, `":" h_value`, may be omitted. In that case, the modifier mat
 :::caution Limitations
 
 1. The `$header` modifier can be matched only when headers are received. So if the request is blocked or redirected on an earlier stage, nothing will be applied.
-1. In Adguard Browser Extension, [`$header`](#header-modifier) modifier is only compatible with [`$csp`](#csp-modifier) and [`$removeheader`](#removeheader-modifier) advanced modifiers. Rules that use [`$header`](#header-modifier) modifier with one of these, are subject to allowlisting logic of advanced modifiers.
+1. In Adguard Browser Extension, the `$header` modifier is only compatible with [`$csp`](#csp-modifier) and [`$removeheader`](#removeheader-modifier) advanced modifiers. Rules that use `$header` with one of these, are subject to allowlisting logic of advanced modifiers.
 
 :::
 
