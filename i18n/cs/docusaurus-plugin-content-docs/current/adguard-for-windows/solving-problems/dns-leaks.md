@@ -5,7 +5,7 @@ sidebar_position: 9
 
 :::info
 
-Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -19,10 +19,10 @@ Adresy DNS serverů lze zapsat jako IP adresy nebo jako názvy domén. V přípa
 
 **Postup k odstranění tohoto úniku:**
 
-* přejděte do *Pokročilých nastavení*
-* přejděte dolů do sekce *Seznam vlastních bootstrap adres*
-* zadejte vlastní bootstrap adresu ve formátu IP adresy (můžete použít [seznam známých poskytovatelů DNS](https://adguard-dns.io/kb/general/dns-providers/))
-* klikněte na *Uložit*
+- přejděte do *Pokročilých nastavení*
+- přejděte dolů do sekce *Seznam vlastních bootstrap adres*
+- zadejte vlastní bootstrap adresu ve formátu IP adresy (můžete použít [seznam známých poskytovatelů DNS](https://adguard-dns.io/kb/general/dns-providers/))
+- klikněte na *Uložit*
 
 ## Záložní DNS server
 
@@ -30,19 +30,19 @@ Může se stát, že AdGuard nemůže dosáhnout zadaného serveru z důvodu sla
 
 **Postup k odstranění tohoto úniku:**
 
-* přejděte do *Pokročilých nastavení*
-* přejděte dolů do sekce *Záložní servery*
-* zaškrtněte možnost *Použít vlastní servery*
-* pak vyhledejte sekci *Seznam vlastních záložních serverů* a zadejte vlastní záložní servery po jednom na řádek
+- přejděte do *Pokročilých nastavení*
+- přejděte dolů do sekce *Záložní servery*
+- zaškrtněte možnost *Použít vlastní servery*
+- pak vyhledejte sekci *Seznam vlastních záložních serverů* a zadejte vlastní záložní servery po jednom na řádek
 
 nebo
 
-* přejděte do *Pokročilých nastavení*
-* přejděte dolů do sekce *Záložní servery*
-* zaškrtněte možnost *Nepoužívat záložní servery*
+- přejděte do *Pokročilých nastavení*
+- přejděte dolů do sekce *Záložní servery*
+- zaškrtněte možnost *Nepoužívat záložní servery*
 
 nebo
 
-* přejděte do *Pokročilých nastavení*
-* přejděte dolů do sekce *Časový limit DNS serveru*
-* zadejte libovolně velké číslo
+- přejděte do *Pokročilých nastavení*
+- přejděte dolů do sekce *Časový limit DNS serveru*
+- zadejte libovolně velké číslo

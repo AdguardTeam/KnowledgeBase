@@ -5,29 +5,29 @@ sidebar_position: 9
 
 :::info
 
-Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Mac için AdGuard'ı ele alır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam engelleyici olan Mac için AdGuard hakkındadır. Nasıl çalıştığını görmek için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
-## Gelişmiş ayarlara nasıl ulaşılır
+## Gelişmiş Ayarlara nasıl ulaşılır
 
 :::caution
 
-Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only open this section if you are sure of what you are doing or our support team has asked you to do it.
+*Gelişmiş Ayarlar* öğesinin değiştirilmesi AdGuard'ın performansında sorunlara neden olabilir, internet bağlantısını kesebilir veya güvenliğinizi ve gizliliğinizi tehlikeye atabilir. Bu bölümde yalnızca ne yaptığınızdan eminseniz veya destek ekibimiz sizden bunu yapmanızı istediyse değişiklik yapın.
 
 :::
 
-To go to *Advanced settings*, follow this route: the AdGuard icon at the tray menu → the gear icon → Advanced → Advanced settings.
+*Gelişmiş Ayarlar* öğesini bulmak için AdGuard'ı açın, dişli çark simgesine tıklayın, *Gelişmiş* öğesini ve ardından *Gelişmiş Ayarlar* öğesini seçin.
 
-## Advanced settings
+## Gelişmiş Ayarlar
 
 `network.extension.exclude.domains`
 
-The listed domains will be excluded from filtering in the *Network Extension* mode. Use a comma or line break to separate values.
+The listed domains will be excluded from filtering in the *Network Extension* mode. Değerleri ayırmak için virgül veya satır sonu kullanın.
 
 `network.extension.exclude.ports`
 
-The listed ports will be excluded from filtering in the *Network Extension* mode. Use a comma or line break to separate values.
+The listed ports will be excluded from filtering in the *Network Extension* mode. Değerleri ayırmak için virgül veya satır sonu kullanın.
 
 `network.extension.route.exclude`
 
@@ -45,7 +45,7 @@ You will find more information about the problem [in this article](../icloud-pri
 
 `network.extension.dns.redirect.exclude.bundleids`
 
-Here you can specify a list of applications that make DNS queries directly not via system DNS resolver (for example, some VPN clients or DNS filtering applications). DNS filtering will be disabled for them in the *Network Extension mode*. The bundle IDs should be separated by a comma or line break.
+Here you can specify a list of applications that make DNS queries directly not via system DNS resolver (for example, some VPN clients or DNS filtering applications). DNS filtering will be disabled for them in the *Network Extension mode*. Paket kimlikleri virgül veya satır sonu ile ayrılmalıdır.
 
 `network.dns.filter.secure.request`
 
@@ -53,11 +53,11 @@ Redirects secure DNS requests to a local DNS proxy, if there is one available.
 
 `network.https.ocsp.check`
 
-By setting `true`, you enable HTTPS certificate revocation checking.
+`true` ayarını yaparak HTTPS sertifika iptal kontrolünü etkinleştirirsiniz.
 
 `network.tcp.keepalive.enabled`
 
-Periodically sends TCP packets over an idle connection to ensure that it remains active and to renew NAT timeouts.
+Etkin kalmasını sağlamak ve NAT zaman aşımlarını yenilemek için boşta olan bir bağlantı üzerinden periyodik olarak TCP paketleri gönderir.
 
 `network.tcp.keepalive.interval.seconds`
 
@@ -74,6 +74,10 @@ Uses a local DNS proxy to look for configs in the ECH Config Lists. Bulunursa, C
 `network.https.enforce.certificate.transparency`
 
 Verifies the authenticity of all certificates for the domain based on Chrome Certificate Transparency Policy.
+
+`network.https.filter.http3.enabled`
+
+By setting `true`, you allow AdGuard to filter traffic sent over HTTP/3, the latest version of the HTTP protocol based on QUIC.
 
 `network.filtering.localnetwork`
 
@@ -107,17 +111,17 @@ Burada, ana DNS sunucusu yerine yedek DNS sunucusunun kullanılacağı alan adla
 
 Here you can specify the type of DNS server response to blocked requests, corresponding to ad-blocker-style rules.
 
-* 0 — REFUSED ile yanıt verin
-* 1 — NXDOMAIN ile yanıt verin
-* 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
+- 0 — REFUSED ile yanıt verin
+- 1 — NXDOMAIN ile yanıt verin
+- 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
 
 `dns.proxy.hostrules.blocking.mode`
 
 Here you can specify the type of DNS server response to blocked requests, corresponding to hosts rules:
 
-* 0 — REFUSED ile yanıt verin
-* 1 — NXDOMAIN ile yanıt verin
-* 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
+- 0 — REFUSED ile yanıt verin
+- 1 — NXDOMAIN ile yanıt verin
+- 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
 
 `dns.proxy.blocking.response.IPv4.address`
 
@@ -137,7 +141,7 @@ Burada, engellenen bir isteğe yanıt olarak döndürülecek TTL (kullanım sür
 
 `dns.proxy.parallel.upstream.queries.enabled`
 
-All upstreams are queried simultaneously. İlk yanıt döndürülür.
+Tüm üst kaynaklar aynı anda sorgulanır. İlk yanıt döndürülür.
 
 `dns.proxy.servfail.on.upstreams.failure.enabled`
 
@@ -153,15 +157,19 @@ Encrypted Client Hello parametrelerini yanıtlardan kaldırır.
 
 `stealth.antidpi.http.split.fragment.size`
 
-HTTP istek parçalanmasının boyutunu ayarlar. Kabul edilen değerler: 1–1500. Geçersiz bir boyut belirtilirse, sistem varsayılan değeri kullanır.
+HTTP istek parçalanmasının boyutunu ayarlar. Geçerli değerler: 1–1500. Geçersiz bir boyut belirtilirse, sistem varsayılan değeri kullanır.
 
 `stealth.antidpi.clienthello.split.fragment.size`
 
-This option specifies the size of TCP packet fragmentation, which helps avoid deep packet inspection. Kabul edilen değerler: 1–1500. Geçersiz bir boyut belirtilirse, sistem varsayılan değeri kullanır.
+Bu seçenek, derin paket incelemesinden kaçınmaya yardımcı olan TCP paket parçalama boyutunu belirtir. Geçerli değerler: 1–1500. Geçersiz bir boyut belirtilirse, sistem varsayılan değeri kullanır.
 
 `stealth.antidpi.http.space.juggling`
 
 HTTP yöntemi ile URL arasına fazladan boşluk ekler ve "Host:" alanından sonraki boşluğu kaldırır.
+
+`stealth.antidpi.split.delay.millisecond`
+
+Burada, parçalama gerçekleştirilirse ilk parçanın gönderilmesinden sonraki gecikmeyi milisaniye cinsinden belirtebilirsiniz.
 
 `subscription.link.interception.userscript`
 

@@ -1,152 +1,154 @@
 ---
 title: Özelliklere genel bakış
-sidebar_position: 1
+sidebar_position: 10
 ---
 
-:::info
+:::bilgi
 
-Bu makale, yalnızca tarayıcınızı koruyan AdGuard Tarayıcı Uzantısı hakkındadır. Tüm cihazınızı korumak için [AdGuard uygulamasını indirin](https://adguard.com/download.html?auto=true)
+Bu makale, yalnızca tarayıcınızı koruyan AdGuard Tarayıcı Uzantısı hakkındadır. Tüm cihazınızı korumak için [AdGuard uygulamasını indirin](https://agrd.io/download-kb-adblock)
 
 :::
 
-AdGuard provides a range of software products that block ads and trackers on different platforms. One of the most popular AdGuard products is a free extension that works in five popular browsers: Chrome, Firefox, Edge, Opera, and Yandex Browser. Browser extensions include basic ad-blocking features but cannot be compared with full-featured desktop programs, such as [AdGuard for Windows](/adguard-for-windows/overview) and [AdGuard for Mac](/adguard-for-mac/overview).
+AdGuard, farklı platformlarda reklamları ve izleyicileri engelleyen bir dizi yazılım ürünü sunar. En popüler AdGuard ürünlerinden biri, beş popüler tarayıcıda çalışan ücretsiz bir uzantıdır: Chrome, Firefox, Edge, Opera ve Yandex Browser. Browser extensions include basic ad-blocking features but cannot be compared with full-featured desktop programs, such as [AdGuard for Windows](/adguard-for-windows/features/home-screen) and [AdGuard for Mac](/adguard-for-mac/features/main).
 
-![AdGuard Browser Extension for Chrome *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
+![Chrome için AdGuard Tarayıcı Uzantısı *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
 
 ## Kullanılabilirlik {#br-extension}
 
-[AdGuard Tarayıcı Uzantısı](https://adguard.com/en/adguard-browser-extension/overview.html) çoğu büyük tarayıcıda kullanılabilir. You can easily find it in your browser’s online store or on our official website.
+[AdGuard Tarayıcı Uzantısı](https://adguard.com/adguard-browser-extension/overview.html) çoğu büyük tarayıcıda kullanılabilir. Tarayıcınızın çevrimiçi mağazasında veya resmi sitemizde kolayca bulabilirsiniz.
 
-![Available for most popular browsers *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
+![En popüler tarayıcılar için kullanılabilir *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
 
-:::note
+:::not
 
-We have a standalone extension for Safari. Since the release of [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html), most of the ad-blocking extensions have experienced huge issues and many of them stopped functioning. We had to develop a [separate extension for Safari](/adguard-for-safari/overview) that has some differences in comparison with the extension described in this article.
+Safari için bağımsız bir uzantımız var. Since the release of [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html), most of the ad-blocking extensions have experienced huge issues and many of them stopped functioning. Safari için bu makalede açıklanan uzantıya kıyasla bazı farklılıkları olan [ayrı bir uzantı](/adguard-for-safari/features/general) geliştirmek zorunda kaldık.
 
 :::
 
-**Do not forget that the functionality of each extension is strictly limited by the browser’s capabilities.** So if you want to get full-fledged protection, consider installing a standalone program for your computer. There's [a reason why](#comparison).
+**Do not forget that the functionality of each extension is strictly limited by the browser’s capabilities.** So if you want to get full-fledged protection, consider installing a standalone program for your computer. Böyle olmasının [bir nedeni](#comparison) var.
 
 ## Reklam engelleme {#adblocker}
 
-Blocking ads is clearly the key functionality of any ad blocker, and AdGuard is not an exception. The extension will successfully block ads on any page in your browser. Ad blocking is based on so-called filter lists, or simply [filters](/general/ad-filtering/how-ad-blocking-works). Filters can be enabled or disabled in your extension's settings. You can customize ad blocking by activating specific filters.
+Reklamları engellemek, herhangi bir reklam engelleyicinin temel işlevidir ve AdGuard bir istisna değildir. Uzantı, tarayıcınızdaki herhangi bir sayfadaki reklamları başarıyla engeller. Reklam engelleme, sözde filtre listelerine veya basitçe [filtrelere](/general/ad-filtering/how-ad-blocking-works) dayanmaktadır. Filtreler uzantınızın ayarlarından etkinleştirilebilir veya devre dışı bırakılabilir. Belirli filtreleri etkinleştirerek reklam engellemeyi özelleştirebilirsiniz.
 
-### Filters {#filters}
+### Filtreler {#filters}
 
-In essence, filter lists are sets of rules written in a special language. Your ad blocker interpretes the rules and implements them. As a result, you stop seeing ads on your webpages.
+Özünde, filtre listeleri özel bir dilde yazılmış kurallar dizisidir. Reklam engelleyiciniz kuralları yorumlar ve uygular. Sonuç olarak, web sayfalarınızda reklam görmeyi bırakırsınız.
 
 ![Filtreler *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters.png)
 
-All filters are grouped according to their role. For example, there are categories for ad-blocking filters, privacy protection filters, social media-related filters, etc. You can enable either individual filters or the entire group at once.
+Tüm filtreler rollerine göre gruplandırılmıştır. Örneğin, reklam engelleme filtreleri, gizlilik koruma filtreleri, sosyal medya ile ilgili filtreler, vb. için kategoriler vardır. Filtreleri teker teker veya tüm grubu aynı anda etkinleştirebilirsiniz.
 
-![Ad blocking filters *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters1.png)
+![Reklam engelleme filtreleri *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_filters1.png)
 
-#### Custom filters {#custom}
+#### Özel filtreler {#custom}
 
 While the features of other filter groups are more or less predictable, there is a group called *Custom* that may raise additional questions.
 
-![Custom filters *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters.png)
+![Özel filtreler *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters.png)
 
-In this tab, you can add filters that are not present in the extension by default. There are plenty of [publicly available filters on the Internet](https://filterlists.com). Moreover, you can create and add your own filters. In fact, you can build any set of filters and customize ad blocking the way you like.
+Bu sekmede, varsayılan olarak uzantıda bulunmayan filtreler ekleyebilirsiniz. There are plenty of [publicly available filters on the Internet](https://filterlists.com). Üstelik kendi filtrelerinizi oluşturabilir ve ekleyebilirsiniz. Aslında, herhangi bir filtre seti oluşturabilir ve reklam engellemeyi istediğiniz şekilde özelleştirebilirsiniz.
 
-To add a filter, just click *Add custom filter*, enter the URL or the file path of the filter you want to be added and click *Next*.
+Filtre eklemek için *Özel filtre ekle* öğesine tıklamanız, eklenmesini istediğiniz filtrenin URL'sini veya dosya yolunu girmeniz ve *İleri* öğesine tıklamanız yeterlidir.
 
-![Add a custom filter *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
+![Özel filtre ekle *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_custom_filters1.png)
 
 ### Kullanıcı kuralları {#user-rules}
 
-*User rules* is another tool that helps you customize the blocking of ads.
+*Kullanıcı kuralları*, reklamların engellenmesini özelleştirmenize yardımcı olan başka bir araçtır.
 
-![User rules *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_user_rules.png)
+![Kullanıcı kuralları *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_user_rules.png)
 
 Yeni kurallar eklemenin birkaç yolu vardır. The most straightforward is to just type a rule in, but it requires some knowledge of the [rule syntax](/general/ad-filtering/create-own-filters).
 
-You can import a ready-to-use filter list from a text file as well. **Make sure that different rules are separated by line breaks.** Note that importing a ready-to-use filter list is better done in the [Custom filters](#custom) tab.
+Kullanıma hazır bir filtre listesini bir metin dosyasından da içe aktarabilirsiniz. **Make sure that different rules are separated by line breaks.** Note that importing a ready-to-use filter list is better done in the [Custom filters](#custom) tab.
 
-Besides, you can export your own filtering rules. This option is good for transferring your list of rules between browsers or devices.
+Ayrıca, kendi filtreleme kurallarınızı dışa aktarabilirsiniz. Bu seçenek, kural listenizi tarayıcılar veya cihazlar arasında aktarmak için iyidir.
 
-When you add a website to the Allowlist (more on that [below](#allowlist)) or use the Assistant tool for hiding an element on the page, a corresponding rule is also saved in *User rules*.
+İzin listesine bir site eklediğinizde (daha fazla bilgi [aşağıda](#allowlist)) veya sayfadaki bir öğeyi gizlemek için Asistan aracını kullandığınızda, aynı bir kural da *Kullanıcı kuralları* bölümüne kaydedilir.
 
-### Allowlist {#allowlist}
+### İzin listesi {#allowlist}
 
-The *allowlist* is used to exclude certain websites from filtering. Blocking rules are not applied to the websites on the list.
+*İzin listesi* belirli siteleri filtrelemeden hariç tutmak için kullanılır. Listedeki sitelere engelleme kuralları uygulanmaz.
 
-![Allowlist *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist.png)
+![İzin listesi *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist.png)
 
-The *allowlist* can be inverted, too: you can unblock ads everywhere except on the websites added to this list. To do that, activate the *Invert allowlist* option.
+*İzin listesi* tersine de çevrilebilir: bu listeye eklenen siteler dışında her yerde reklam engelini kaldırabilirsiniz. Bunu yapmak için *İzin listesini ters çevir* seçeneğini etkinleştirin.
 
-![Invert allowlist *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist1.png)
+![İzin listesini ters çevir *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_allowlist1.png)
 
-You can also import and export existing allowlists. It is useful, for instance, if you want to apply the same allowing rules in each of your browsers.
+Ayrıca mevcut izin listelerini içe ve dışa aktarabilirsiniz. Örneğin, aynı izin verme kurallarını tarayıcılarınızın her birine uygulamak istiyorsanız kullanışlıdır.
 
 ## Gizlilik Modu {#stealth-mode}
 
-*Stealth Mode* aims to ensure the protection of sensitive personal data from online trackers and fraudsters.
+*Gizlilik Modu*, hassas kişisel verilerin çevrimiçi izleyicilerden ve dolandırıcılardan korunmasını sağlamayı amaçlar.
 
-![Stealth Mode *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_stealth_mode.png)
+![Gizlilik Modu *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_stealth_mode.png)
 
-In Stealth Mode, you can prevent a website from seeing the search queries from you used to find it on the Internet, automatically delete third-party and website’s own cookies, etc. A [separate article](/general/stealth-mode) is devoted to all these features.
+Gizlilik Modunda, bir sitenin onu internette bulmak için kullandığınız arama sorgularını görmesini engelleyebilir, üçüncü taraf ve sitenin kendi çerezlerini, vb. otomatik olarak silebilirsiniz. Tüm bu özelliklere [ayrı bir makale](/general/stealth-mode) ayrılmıştır.
 
-:::note
+:::not
 
-Some of the *Stealth Mode* options available in full-fledged apps are not present in the browser extensions due to technical restrictions.
+Tam teşekküllü uygulamalarda bulunan *Gizlilik Modu* seçeneklerinden bazıları teknik kısıtlamalar nedeniyle tarayıcı uzantılarında mevcut değildir.
 
 :::
 
 ## Diğer özellikler ve seçenekler {#other}
 
-Apart from the large key modules of AdGuard Browser Extension, there are several more specific features that can be configured in the *General* and *Additional settings* tabs of the extension settings.
+AdGuard Tarayıcı Uzantısının büyük anahtar modüllerinin yanı sıra, uzantı ayarlarının *Genel* ve *Ek ayarlar* sekmelerinde yapılandırılabilen birkaç özel özellik daha vardır.
 
-### General {#general}
+### Genel {#general}
 
 In the *General* tab, you can allow search ads and the [self-promotion of websites](/general/ad-filtering/search-ads), enable the automatic activation of language-specific filters, indicate the filters update interval, etc.
 
-![General *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_general.png)
+![Genel *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_general.png)
 
-Besides, here you can enable [*Phishing and malware protection*](/general/browsing-security).
+Ayrıca, buradan [*Kimlik avı ve kötü amaçlı yazılım koruması*](/general/browsing-security) öğesini etkinleştirebilirsiniz.
 
-You can save your settings configuration by clicking the *Export settings* button. The settings will be saved as a .json file. To upload the previously saved settings configuration, use the *Import settings* function. You can even use it to quickly switch between different settings profiles or even to transfer settings configurations between different browsers.
+Ayar yapılandırmanızı *Ayarları dışa aktar* düğmesine tıklayarak kaydedebilirsiniz. Ayarlar bir .json dosyası olarak kaydedilecektir. Önceden kaydedilmiş ayar yapılandırmasını yüklemek için *Ayarları içe aktar* işlevini kullanın. Farklı ayar profilleri arasında hızlıca geçiş yapmak ve hatta ayar yapılandırmalarını farklı tarayıcılar arasında aktarmak için bile kullanabilirsiniz.
 
-### Additional settings {#misc}
+### Ek ayarlar {#misc}
 
-The *Additional settings* section contains a range of various settings that are related to the ad blocking process and application usability.
+*Ek ayarlar* bölümü, reklam engelleme süreci ve uygulama kullanılabilirliği ile ilgili bir takım çeşitli ayarlar içerir.
 
-![Additional settings *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_additional_settings.png)
+![Ek ayarlar *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_additional_settings.png)
 
-From this tab, you can activate optimized filters, enable notifications about extension updates, open the *Filtering log*, or clear the statistics of blocked ads and trackers.
+Bu sekmeden, iyileştirilmiş filtreleri etkinleştirebilir, uzantı güncellemeleriyle ilgili bildirimleri etkinleştirebilir, *Filtreleme günlüğünü* açabilir veya engellenen reklamların ve izleyicilerin istatistiklerini temizleyebilirsiniz.
 
-Besides, you can opt to help us with the development of filters by sending the statistics on applied rules: which ones are triggered, on which websites, and how often. This option is disabled by default as we do not collect user data without consent. Yet, if you enable it, all data will be strictly anonymized.
+Ayrıca, uygulanan kurallarla ilgili istatistikleri göndererek filtrelerin geliştirilmesinde bize yardımcı olmayı tercih edebilirsiniz: hangilerinin tetiklendiği, hangi sitelerde ve ne sıklıkta olduğu. Kullanıcı verilerini onay olmadan toplamadığımız için bu seçenek varsayılan olarak devre dışıdır. Yine de, etkinleştirirseniz, tüm veriler kesinlikle anonimleştirilecektir.
 
-### About {#about}
+### Hakkında {#about}
 
-In the *About* section, you can find infos about the current version, links to the EULA and Privacy policy, and to the repository of the Browser extension on GitHub.
+*Hakkında* bölümünde, mevcut sürüm hakkında bilgiler, SKLS ve Gizlilik politikası ile GitHub'daki Tarayıcı uzantısı deposuna bağlantılar bulabilirsiniz.
 
 ![Hakkında *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_about.png)
 
-## Extension’s main menu {#main-menu}
+## Uzantının ana menüsü {#main-menu}
 
-The extension's main page can be accessed by clicking on the extension's icon on the toolbar of your browser.
+Uzantının ana sayfasına, tarayıcınızın araç çubuğundaki uzantı simgesine tıklayarak erişebilirsiniz.
 
-![Main menu *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
+![Ana menü *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
 
-On the main page, you can hide any element on any page manually (a corresponding rule will be added to the *User rules*), open the *Filtering log* to view the complete information about your browser's traffic and block requests on the go, or look at a website’s security report. Besides, you can submit a complaint about any website (for example, if there are missed ads on the page, our filter engineers will review the report and fix the problem) and see the statistics on applied blocking rules.
+Ana sayfada, herhangi bir sayfadaki herhangi bir öğeyi elle gizleyebilir (*Kullanıcı kuralları* bölümüne ilgili bir kural eklenecektir), tarayıcınızın trafiği hakkındaki tüm bilgileri görüntülemek ve hareket hâlindeyken istekleri engellemek için *Filtreleme günlüğünü* açabilir veya bir sitenin güvenlik raporuna bakabilirsiniz. Ayrıca, herhangi bir site hakkında bir şikayet gönderebilir (örneğin, sayfada gözden kaçan reklamlar varsa, filtre mühendislerimiz raporu inceler ve sorunu çözer) ve uygulanan engelleme kurallarına ilişkin istatistikleri görebilirsiniz.
 
-All web requests made by the browser are displayed in the *Filtering log*, along with detailed information about each request. The *Filtering log* makes it easy, for example, to monitor requests blocked by AdGuard Browser Extension. Besides, it allows you to block any request or add a previously blocked request to Allowlist in two clicks. The *Filtering log* also offers you a wide variety of options for sorting web requests, which can be helpful when creating your own filtering rules. You can open the *Filtering log* by selecting the corresponding item in the main menu, or from the settings page (in the "Additional settings" tab).
+Tarayıcı tarafından yapılan tüm web istekleri, her istekle ilgili ayrıntılı bilgilerle birlikte *Filtreleme günlüğünde* görüntülenir. *Filtreleme günlüğü*, örneğin AdGuard Tarayıcı Uzantısı tarafından engellenen istekleri gözlemlemeyi kolaylaştırır. Ayrıca, herhangi bir isteği engellemenize veya daha önce engellenen bir isteği iki tıklamayla İzin listesine eklemenize olanak tanır. *Filtreleme günlüğü* ayrıca web isteklerini sıralamak için size çok çeşitli seçenekler sunar; bu da kendi filtreleme kurallarınızı oluştururken yardımcı olabilir. Ana menüdeki ilgili öğeyi seçerek veya ayarlar sayfasından ("Ek ayarlar" sekmesinde) *Filtreleme günlüğünü* açabilirsiniz.
 
-By clicking the icons in the top right corner of the extension's main menu, you can open the extension settings or pause the protection.
+Uzantının ana menüsünün sağ üst köşesindeki simgelere tıklayarak uzantı ayarlarını açabilir veya korumayı duraklatabilirsiniz.
 
-## AdGuard Browser Extension vs. standalone apps {#comparison}
+## AdGuard Tarayıcı Uzantısı ile bağımsız uygulamalar {#comparison}
 
-The main advantage of AdGuard standalone programs over browser extensions is that the programs can block ads in every browser and in almost all apps. You may use different browsers at the same time, the app will filter ads and online threats in all of them equally well.
+<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/ZGwceZP-0mM" title="YouTube video oynatıcı" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-The second difference is that the possibilities of extension-based ad blockers are strictly limited by browser guidelines. The browser extensions have to conform to the policies of the browsers, where ad blocking might be restricted. Thus, some types of filtering rules are not supported by the extensions. The functionality of the desktop apps is not limited, so they have a better filtering quality.
+AdGuard bağımsız programlarının tarayıcı uzantılarına göre en büyük avantajı, programların her tarayıcıda ve neredeyse tüm uygulamalarda reklamları engelleyebilmesidir. Aynı anda farklı tarayıcılar kullanabilirsiniz, uygulama hepsinde reklamları ve çevrimiçi tehditleri eşit derecede iyi filtreler.
 
-Whereas AdGuard Browser Extension is free and easy to install, and has filters to block ads and fight online threats, the full-fledged apps are more powerful and have a list of advanced features. See all the differences in the comparative table below.
+İkinci fark, uzantı tabanlı reklam engelleyicilerin olanaklarının tarayıcı yönergeleri tarafından sıkı bir şekilde sınırlandırılmış olmasıdır. Tarayıcı uzantıları, reklam engellemenin kısıtlanabileceği tarayıcıların politikalarına uygun olmalıdır. Bu nedenle, bazı filtreleme kuralları uzantılar tarafından desteklenmez. Masaüstü uygulamalarının işlevselliği sınırlı değildir, bu nedenle daha iyi bir filtreleme kalitesine sahiptirler.
 
-![Extension vs. App *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_comparison.png)
+AdGuard Tarayıcı Uzantısı ücretsiz ve yüklemesi kolay olmasına, reklamları engellemek ve çevrimiçi tehditlerle mücadele etmek için filtrelere sahip olmasına karşın, tam teşekküllü uygulamalar daha güçlüdür ve gelişmiş özelliklerin bir listesine sahiptir. Aşağıdaki karşılaştırmalı tablodaki tüm farklılıklara bakın.
 
-`1` – within browser restrictions and only in the browser where it is installed;
+![Uzantı ile Uygulama *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_comparison.png)
 
-`2` – the extension is unable to detect requests from other extensions. If a malicious or tracking extension sends a request to its server to show you ads or track your activity, AdGuard Browser Extension will not be able to block that request;
+`1` – tarayıcı kısıtlamaları dahilinde ve yalnızca yüklü olduğu tarayıcıda;
 
-`3` – not all types of ads and threats can be blocked by browser extensions due to certain browser limitations. Some elements may get to the page and slow down the loading process. Besides, unlike browser-based ad blockers, the AdGuard app blocks ads before they are loaded to the browser. This saves traffic and speeds up page loading.
+`2` – uzantı, diğer uzantılardan gelen istekleri algılayamaz. Kötü amaçlı veya izleme uzantısı, sunucusuna size reklam göstermek veya etkinliğinizi izlemek için bir istek gönderirse, AdGuard Tarayıcı Uzantısı bu isteği engellemeyecektir;
+
+`3` – belirli tarayıcı sınırlamaları nedeniyle, tüm reklam türleri ve tehditler tarayıcı uzantıları tarafından engellenemez. Bazı öğeler sayfaya ulaşabilir ve yükleme sürecini yavaşlatabilir. Ayrıca, tarayıcı tabanlı reklam engelleyicilerin aksine, AdGuard uygulaması reklamları tarayıcıya yüklenmeden önce engeller. Bu, veri tasarrufu ve sayfa açılışını hızlandırır.

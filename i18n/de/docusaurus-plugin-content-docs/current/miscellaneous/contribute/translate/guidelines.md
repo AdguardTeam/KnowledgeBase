@@ -16,7 +16,12 @@ Sie können auch nach dem Öffnen bestimmter Produktordner zwischen den Sprachen
 Wählen Sie einen der verfügbaren Produktordner und eine Datei aus – jetzt können Sie mit der Übersetzung beginnen.
 
 ![Files *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/files.png)
-> Bitte beachten Sie: Sie können die Sprache der Crowdin-Benutzeroberfläche auch ändern, indem Sie auf das Symbol *Einstellungen* in der oberen rechten Ecke der Seite klicken. Scrollen Sie im geöffneten Fenster nach unten zur Registerkarte *UI language*. Öffnen Sie sie, wählen Sie eine Sprache und klicken Sie auf **Change**.
+
+:::note
+
+Sie können auch die Sprache der Crowdin-Oberfläche ändern, indem Sie auf das Symbol *Einstellungen* in der oberen rechten Ecke der Seite klicken. Scrollen Sie im geöffneten Fenster nach unten zur Registerkarte *UI language*. Öffnen Sie sie, wählen Sie eine Sprache und klicken Sie auf **Change**.
+
+:::
 
 ![Language1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/settings_en.png)
 
@@ -24,54 +29,59 @@ Wählen Sie einen der verfügbaren Produktordner und eine Datei aus – jetzt k�
 
 1. Sie können Übersetzungen filtern, indem Sie auf diese Schaltfläche klicken und eine der angebotenen Optionen auswählen.
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/filter.png)
+    ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/filter.png)
 
-2. Wechseln Sie einfach zwischen den Dateien des Projekts.
+1. Wechseln Sie einfach zwischen den Dateien des Projekts.
 
-![crowdin *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/filter_files.png)
+    ![crowdin *border](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/filter_files.png)
 
-3. Achten Sie auf die Glossarbegriffe, die in einer Quellphrase mit einer gepunkteten Linie hervorgehoben sind. Normalerweise handelt es sich um spezielle Wörter (wie Markennamen), die nicht übersetzt werden sollten.
+1. Achten Sie auf die Glossarbegriffe, die in einer Quellphrase mit einer gepunkteten Linie hervorgehoben sind. Normalerweise handelt es sich um spezielle Wörter (wie Markennamen), die nicht übersetzt werden sollten.
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/terms.png)
+    ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/terms.png)
 
-Sie können Ihre Übersetzung für übersetzbare Begriffe im Projekt [AdGuard Glossary](https://crowdin.com/project/adguard-glossary) vorschlagen.
+    Sie können Ihre Übersetzung für übersetzbare Begriffe im Projekt [AdGuard Glossary](https://crowdin.com/project/adguard-glossary) vorschlagen.
 
-4. In Crowdin können Strings mit Notizen versehen werden, die das Verständnis und die Übersetzung von Sätzen erleichtern. Suchen Sie im Feld „Context“ der Quellphrase danach.
+1. In Crowdin können Strings mit Notizen versehen werden, die das Verständnis und die Übersetzung von Sätzen erleichtern. Suchen Sie im Feld „Context“ der Quellphrase danach.
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/context-note.png)
+    ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/context-note.png)
 
-5. Achten Sie auch auf Screenshots, die häufig neben Quellphrasen im Feld „Context“ stehen. Sie helfen, den Kontext zu verstehen und vermitteln die genaue Bedeutung.
+1. Note that source strings may also have screenshots in the Context section. Sie helfen, den Kontext zu verstehen und die genaue Bedeutung zu vermitteln.
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/screenshot.png)
+    ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/screenshot.png)
 
-Bitte beachten Sie, dass Sie den Kontext anfordern können, indem Sie auf die Schaltfläche „Request“ klicken.
+    :::tip
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/request.png)
+    Sie können den Kontext anfordern, indem Sie auf die Schaltfläche „REQUEST“ klicken.
 
-6. Sie können nicht nur neue Übersetzungen vorschlagen, sondern auch Kommentare zu Strings hinterlassen. Verwenden Sie Kommentare, um uns über Fehler in den vorhandenen Übersetzungen zu informieren, Notizen zu machen oder Fragen zu stellen. Wenn Sie einen Kommentar zu Ihrer Übersetzung sehen, versuchen Sie, darauf zu antworten.
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/comments.png)
+:::
 
-Es gibt auch eine Registerkarte **Discussions** auf der Hauptprojektseite, auf der Sie bequem alle Kommentare für die spezifische Sprache in diesem Projekt anzeigen können.
+    ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/request.png)
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/discussions.png)
+1. Sie können nicht nur neue Übersetzungen vorschlagen, sondern auch Kommentare zu Strings hinterlassen. Use comments to let us know about mistakes in the source text or existing translations, make notes, or ask questions. Wenn Sie einen Kommentar zu Ihrer Übersetzung sehen, versuchen Sie, darauf zu antworten.
 
-7. Crowdin bietet ein sehr nützliches und praktisches Tool namens _Translation Memory_. Mit seiner Hilfe können Sie die zuvor erstellten Übersetzungen der gleichen Wörter und Phrasen finden und in Ihren Übersetzungen wiederverwenden.
+    ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/comments.png)
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/tm.png)
+    Es gibt auch eine Registerkarte **Discussions** auf der Hauptprojektseite, auf der Sie bequem alle Kommentare für die spezifische Sprache in diesem Projekt anzeigen können.
 
-8. Sobald Sie einem Projekt beitreten, indem Sie auf die Schaltfläche „Beitreten“ klicken, sehen Sie die Registerkarte **Tasks** auf der Projektseite, auf der die Aufgaben für bestimmte Projektdateien erstellt werden. _Bitte beachten Sie diese: Sie haben in der Regel eine höhere Priorität._
+    ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/discussions.png)
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/tasks.png)
+1. Crowdin bietet ein sehr nützliches und praktisches Tool namens *Translation Memory*. Mit seiner Hilfe können Sie die zuvor erstellten Übersetzungen der gleichen Wörter und Phrasen finden und in Ihren Übersetzungen wiederverwenden.
 
-9. Manchmal findet man Sätze mit Pluralformen. Bitte seien Sie bei der Übersetzung solcher Sätze besonders aufmerksam. Wie man Pluralformen übersetzt, können Sie [hier](../plural-forms) nachlesen.
+    ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/tm.png)
 
-![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/plurals.png)
+1. Sobald Sie einem Projekt beitreten, indem Sie auf die Schaltfläche „Beitreten“ klicken, sehen Sie die Registerkarte **Tasks** auf der Projektseite, auf der die Aufgaben für bestimmte Projektdateien erstellt werden. *Bitte beachten Sie diese: Sie haben in der Regel eine höhere Priorität.*
 
-Die Verwendung korrekter Pluralformen ist äußerst wichtig: Bitte fragen Sie uns in den Kommentaren, wenn etwas unklar ist.
+    ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/tasks.png)
 
-10. **Bitte schreiben Sie nicht direkt an die in den Projektinfos aufgeführten Projektmanager und Korrektoren.**
+1. Manchmal findet man Sätze mit Pluralformen. Bitte seien Sie bei der Übersetzung solcher Sätze besonders aufmerksam. Wie man Pluralformen übersetzt, können Sie [hier](../plural-forms) nachlesen.
 
-Wenn Sie Fragen zu Übersetzungen haben, können Sie unsere Korrekturleser oder Administratoren jederzeit über Kommentare fragen.
+    ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/plurals.png)
 
-**Haftungsausschluss:** Sie können uns Fragen zur Übersetzung von AdGuard stellen, indem Sie eine E-Mail an [translate@adguard.com](mailto:translate@adguard.com) senden oder unserem [Telegramm-Chat](https://t.me/joinchat/UVYTLcHbr8JmOGIy) beitreten. Die Admins werden Ihnen so schnell wie möglich antworten.
+    Die Verwendung korrekter Pluralformen ist äußerst wichtig: Bitte fragen Sie uns in den Kommentaren, wenn etwas unklar ist.
+
+1. **Bitte schreiben Sie nicht direkt an die in den Projektinfos aufgeführten Projektmanager:innen und Korrekturleser:innen.**
+
+    Wenn Sie Fragen zu Übersetzungen haben, können Sie unsere Korrekturleser:innen oder Manager:innen jederzeit über Kommentare fragen.
+
+    Sie können auch eine E-Mail an [translate@adguard.com](mailto:translate@adguard.com) senden oder eine Frage im [Telegram-Chat](https://t.me/joinchat/UVYTLcHbr8JmOGIy) stellen. Die Admins werden Ihnen so schnell wie möglich antworten.

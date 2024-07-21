@@ -1,69 +1,52 @@
 ---
-title: Moving CA certificate to System store on rooted devices
-sidebar_position: 13
+title: 将 CA 证书移至 Root 设备的系统证书区
+sidebar_position: 14
 ---
 
 :::info
 
-This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。 要了解工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)
 
 :::
 
-AdGuard for Android provides a feature called [HTTPS filtering](../../overview#https-filtering) that makes it possible to [filter encrypted HTTPS traffic](/general/https-filtering/what-is-https-filtering) on your Android device. This feature requires adding the AdGuard's CA certificate to the list of trusted certificates.
+Android 版 AdGuard 可以[过滤加密的 HTTPS 流量](/general/https-filtering/what-is-https-filtering)，从而拦截网站上的大多数广告和跟踪器。 在获得 Root 权限的设备上，AdGuard 还可以过滤应用程序中的 HTTPS 流量。 过滤 HTTPS 流量需要将 AdGuard 的 CA 证书添加到受信任证书列表中。
 
-On non-rooted devices CA certificates can be installed to the **User store**. Only a limited subset of apps (mostly browsers) trust CA certificates installed to the User store, meaning HTTPS filtering will work only for such apps.
+在非 Root 权限设备上，CA 证书可以安装到「**用户证书**」中。 只有小部分应用程序（主要是浏览器）会信任安装到用户存储空间的 CA 证书，这意味着 HTTPS 过滤仅适用于此类应用程序。
 
-However, on rooted devices, you can install the certificate to the **System store** and allow HTTPS filtering of other apps' traffic too.
+在具有 Root 权限设备上，用户可以将证书安装到**系统存储空间**。 这样 AdGuard 就可以在其他应用程序中过滤 HTTPS 流量。
 
-Here's how to do that.
+以下是具体操作方法。
 
-## How to install AdGuard's Certificate to System store (on a rooted device)
+## 如何在系统存储中安装 AdGuard 证书
 
-1. Enable HTTPS filtering in AdGuard for Android and save AdGuard's certificate to the User store (use [this instruction](../../overview#https-filtering) if needed)
-2. Go to **AdGuard app** → **Menu** (≡) → **Settings** → **Network** → **HTTPS filtering** → **Security certificate** → tap “**Copy to the system store**”
+1. 打开*「AdGuard」→「设置」→「过滤」→「网络」→「HTTPS 过滤」→「安全证书」*。
 
-That is enough for older versions of Magisk.
+1. 如果您还没有任何证书，**将 AdGuard Personal CA 安装到用户存储中**。 这样 AdGuard 就可以过滤浏览器中的 HTTPS 流量。
 
-However, if you have a newer version, you will get this message:
+1. **将 AdGuard Intermediate CA 安装到用户存储中**。 您需要它来运行 adguardcert Magisk 模块，该模块可以让用户将证书移动到系统存储中。
 
-> Unable to copy the certificate to the system store. Try using “AdGuard Certificate” module.
+    ![安装证书 *mobile_border](https://cdn.adtidy.org/blog/new/asx1xksecurity_certificates.png)
 
-In that case, proceed to steps below:
+1. 安装[最新版本的 **adguardcert** Magisk 模块](https://github.com/AdguardTeam/adguardcert/releases/latest/)。
 
-3. Go to **Magisk** → **Settings**
+1. 打开*「Magisk」→「模块」→「从存储安装」*并选择下载的 **adguardcert** 文件。 这样 AdGuard Personal CA 就从用户存储移到了系统存储。
 
-![Open Magisk settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-1.png)
+    ![打开 Magisk 模块 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-4.png)
 
-4. Enable **Zygisk**
+    ![从存储安装 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-5.png)
 
-![Enable Zygisk *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-2.png)
+    ![选择 adguardcert *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-6.png)
 
-![Go back to Magisk main screen *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-3.png)
+1. 点击「**重启**」。
 
-5. Download the `.zip` file (of “AdGuard Certificate” module) from the [latest release on GitHub](https://github.com/AdguardTeam/adguardcert/releases/latest/)
+    ![重启设备 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-7.png)
 
-6. Go to **Magisk** → **Modules** → **Install from storage** and select the downloaded `.zip` file
+转移证书后，系统存储中的 AdGuard Personal CA 可让您在应用程序中过滤 HTTPS 流量，而用户存储中的 AdGuard Intermediate CA 则可让您在基于 Chromium 的浏览器中过滤 HTTPS 流量（原因见下文）。
 
-![Open Magisk modules *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-4.png)
+## Chrome 和基于 Chromium 的浏览器的已知问题
 
-![Install from storage *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-5.png)
+对于系统存储中的证书，Chrome 和其他基于 Chromium 的浏览器需要证书透明度（CT）日志。 CT 日志不包含 HTTPS 过滤应用程序签发的证书信息。 因此，AdGuard 需要在用户存储中增加一个证书，以过滤这些浏览器中的 HTTPS 流量。
 
-![Select AdGuard certificate module *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-6.png)
+### Bromite 浏览器
 
-7. Reboot
-
-![Reboot the device](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/https-certificate-for-rooted/magisk-module-7.png)
-
-If a new version of "AdGuard certificate" module comes out, repeat steps 3-7 to update the module.
-
-The module does its work during the system boot. If your AdGuard certificate changes, you'll have to reboot the device for the new certificate to be copied to the system store.
-
-### Bromite browser
-
-Please note that in order for **Bromite** browser to work properly, in addition to the steps mentioned above, you need to set "Allow user certificates" in `chrome://flags` to "Enabled" state.
-
-### Chrome and Chromium-based browsers
-
-Long story short, you will have no problems with HTTPS filtering in Chrome and Chromium-based browsers on rooted devices, if you use "AdGuard Certificate" module.
-
-Here is a bit more detailed explanation: Chrome (and subsequently many other Chromium-based browsers) has recently started requiring CT logs for CA certs found in the **System store**. "AdGuard Certificate" module copies AdGuard's CA certificate from the **User store** to the **System store**. It also contains a Zygisk module that reverts any modifications done by Magisk for [certain browsers](https://github.com/AdguardTeam/adguardcert/blob/master/zygisk_module/jni/browsers.inc). This way the browsers only find AdGuard’s certificate in the User store and don’t complain about the missing CT log, while other apps continue to use the same certificate from the System store.
+除上述问题外，Bromite 浏览器默认不信任用户存储中的证书。 要在此浏览器中过滤 HTTPS 流量，请打开 Bromite，进入 `chrome://flags`，并将「*允许用户证书*」设置为「*开启*」。 **此方法适用于有 Root 权限的设备和未 Root 权限的设备**。

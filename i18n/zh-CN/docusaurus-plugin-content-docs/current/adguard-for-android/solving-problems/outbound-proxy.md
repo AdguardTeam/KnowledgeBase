@@ -1,116 +1,152 @@
 ---
-title: 如何设置外出代理
+title: 如何设置出战代理
 sidebar_position: 8
 ---
 
 :::info
 
-This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。 要了解其工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
+
+以下是最著名的应用程序列表，用户可以将其配置为 AdGuard 的代理。
+
+:::note
+
+如果您的应用程序不在以下列表中，请检查其设置中的代理配置，或联系其支持团队。
+
+:::
+
+AdGuard 可以通过代理服务器路由设备流量。 要访问代理设置，请打开「**设置**」，然后转到「**过滤**」→「**网络**」→「**代理**」。
+
+## 代理配置示例
 
 这篇文章为用户讲述如何设置一些主流的代理，让它们与 AdGuard 一起运行。
 
 ### 如何同时使用 AdGuard 和 Tor
 
-1. Open AdGuard and go to **Settings** → **Network** → **Proxy settings**. 打开[谷歌商店](https://play.google.com/store/apps/details?id=org.torproject.android&noprocess)，或者点击**「配置 Tor® 整合」**以下载 "Orbot: Proxy with Tor"。
+1. 打开 AdGuard 并转到「**设置**」→「**过滤**」→「**网络**」→「**代理**」。 通过 [Google Play](https://play.google.com/store/apps/details?id=org.torproject.android&noprocess) 下载「Orbot: Proxy with Tor」，或点击「**配置 Tor® 整合**」，然后单击「**安装**」。
 
-2. 打开 Orbot 并在应用程序的首页点击**「开启」**按钮。
+1. 打开 Orbot 并在应用程序的首页点击**「开启」**按钮。
 
-2. 返回 AdGuard 的**代理设置**页面。
+1. 返回 AdGuard 的「**代理设置**」页面。
 
-3. 点击**「配置 Tor® 整合」**按钮。
+1. 点击「**配置 Tor® 整合**」按钮。
 
-4. 所有必填的字符串将会被预填写：
+1. 所有必填的字符串将会被预填写：
 
-| 字符串  | 数值                  |
-| ---- | ------------------- |
-| 代理分类 | *SOCKS4* 或 *SOCKS5* |
-| 代理主机 | *127.0.0.1*         |
-| 代理端口 | *9050*              |
+    | 字符串  | 数值                  |
+    | ---- | ------------------- |
+    | 代理分类 | *SOCKS4* 或 *SOCKS5* |
+    | 代理主机 | *127.0.0.1*         |
+    | 代理端口 | *9050*              |
 
-或您可以点击**「添加代理」**并手动输入数值。然后设置 Orbot 代理为默认代理。
+    或者您可以点击「**代理服务器**」→「**添加代理服务器**」，手动输入这些值，然后将 Orbot 设置为默认代理。
 
-5. 开启 AdGuard 保护。
+1. 启用主代理开关和 AdGuard 保护功能，通过代理路由设备的流量。
 
-Now AdGuard will forward all traffic through Orbot. If you disable Orbot, Internet connection will be unavailable until you disable outbound proxy settings in AdGuard.
+    现在 AdGuard 会将所有流量通过 Orbot 代理发送。 如您禁用 Orbot 代理，那么您在 AdGuard 设置中禁用出战代理设置前，互联网连接将不可用。
 
 ### 如何同时使用 AdGuard 和 PIA（Private Internet Access）
 
-*Here we presume that you are already a PIA VPN client and have it installed on your device.*
+*假设您已是 PIA VPN 的客户，且已将它安装在您的设备上。*
 
-1. Open AdGuard and go to **Settings** → **Network** → **Proxy settings**.
+1. 打开 AdGuard 并转到「**设置**」→「**过滤**」→「**网络**」→「**代理**」→「**代理服务器**」。
 
-2. 点击**「添加代理」**按钮并输入以下的数据：
+1. 点击**「添加代理」**按钮并输入以下的数据：
 
-| 字符串  | 数值                                   |
-| ---- | ------------------------------------ |
-| 代理分类 | *SOCKS5*                             |
-| 代理主机 | *proxy-nl.privateinternetaccess.com* |
-| 代理端口 | *1080*                               |
+    | 字符串  | 数值                                   |
+    | ---- | ------------------------------------ |
+    | 代理分类 | *SOCKS5*                             |
+    | 代理主机 | *proxy-nl.privateinternetaccess.com* |
+    | 代理端口 | *1080*                               |
 
-3. 您还需要输入**「用户名/密码」**字符串。 以完成操作，请您在 PIA 官网上登录[客户管理面板](https://www.privateinternetaccess.com/pages/client-sign-in)。 在**生成 PPTP/L2TP/SOCKS 密码**部分下面点击**「生成密码」**按钮。 您将会看到一串开始于 "x" 的用户名和随机密码。 将它们输入到 AdGuard**「用户名」**和**「密码」**相应的字段。
+1. 您还需要填写「**用户名/密码**」字符串。 为此，请登录 PIA 网站的[客户控制面板](https://www.privateinternetaccess.com/pages/client-sign-in)。 在「**生成 PPTP/L2TP/SOCKS 密码**」部分下面点击「**生成密码**」按钮。 您将会看到一串开始于「x」的用户名和随机密码。 将它们输入到 AdGuard「**用户名**」和「**密码**」。
 
-4. 勾选此代理以设置它为默认代理。然后点击**「保存」**。
+1. 点击「**选择并保存**」。
 
-5. 开启 AdGuard 保护。
+1. 启用主代理开关和 AdGuard 保护功能，通过代理路由设备的流量。
 
 ### 如何同时使用 AdGuard 和 TorGuard
 
-*Here we presume that you are already a TorGuard client and have it installed on your device.*
+*假设您已是 TorGuard 的客户，且已将它安装在设备上。*
 
-1. Open AdGuard and go to **Settings** → **Network** → **Proxy settings**.
+1. 打开 AdGuard 并转到「**设置**」→「**过滤**」→「**网络**」→「**代理**」→「**代理服务器**」。
 
-2. 点击**「添加代理」**按钮并输入以下的数据：
+1. 点击**「添加代理」**按钮并输入以下的数据：
 
-| 字符串  | 数值                                         |
-| ---- | ------------------------------------------ |
-| 代理分类 | *SOCKS5*                                   |
-| 代理主机 | *proxy.torguard.org* 或 *proxy.torguard.io* |
-| 代理端口 | *1080* 或 *1085* 或 *1090*                   |
+    | 字符串  | 数值                                         |
+    | ---- | ------------------------------------------ |
+    | 代理分类 | *SOCKS5*                                   |
+    | 代理主机 | *proxy.torguard.org* 或 *proxy.torguard.io* |
+    | 代理端口 | *1080* 或 *1085* 或 *1090*                   |
 
-3. 请在**「用户名」**和**「密码」**的相应空白处输入您的代理名称，以及您在 TorGuard 注册选择的代理密码。
+1. 请在「**用户名**」和「**密码**」的相应空白处输入您的代理名称，以及您在 TorGuard 注册选择的代理密码。
 
-4. 勾选此代理以设置它为默认代理。然后点击**「保存」**。
+1. 点击「**选择并保存**」。
 
-5. 开启 AdGuard 保护。
+1. 启用主代理开关和 AdGuard 保护功能，通过代理路由设备的流量。
 
 ### 如何同时使用 AdGuard 和 NordVPN
 
-1. Open AdGuard and go to **Settings** → **Network** → **Proxy settings**.
+1. 打开 AdGuard 并转到「**设置**」→「**过滤**」→「**网络**」→「**代理**」→「**代理服务器**」。
 
-2. 点击**「添加代理」**按钮并输入以下的数据：
+1. 点击**「添加代理」**按钮并输入以下的数据：
 
-| 字符串  | 数值                                                        |
-| ---- | --------------------------------------------------------- |
-| 代理分类 | *SOCKS5*                                                  |
-| 代理主机 | *除了“混淆服务器”以外，任何一个[列表内](https://nordvpn.com/servers/)的服务器* |
-| 代理端口 | *1080*                                                    |
+    | 字符串  | 数值                                                                                                               |
+    | ---- | ---------------------------------------------------------------------------------------------------------------- |
+    | 代理分类 | *SOCKS5*                                                                                                         |
+    | 代理主机 | *[此列表](https://support.nordvpn.com/hc/en-us/articles/20195967385745-NordVPN-proxy-setup-for-qBittorrent)中的任何服务器* |
+    | 代理端口 | *1080*                                                                                                           |
 
-3. 在**「用户名」**和**「密码」**处输入您的 NordVPN 的用户名和密码。
+1. 在「**用户名**」和「**密码**」输入您的 NordVPN 的用户名和密码。
 
-4. 勾选此代理以设置它为默认代理。然后点击**「保存」**。
+1. 点击「**选择并保存**」。
 
-5. 开启 AdGuard 保护。
+1. 启用主代理开关和 AdGuard 保护功能，通过代理路由设备的流量。
 
 ### 如何同时使用 Adguard 和 Shadowsocks
 
-*Here we presume that you have already configured a Shadowsocks server and a client on your device.*
+*假设您已是 Shadowsocks 的客户，且已将它安装在设备上。*
 
-**Note: You should remove Shadowsocks application from filtering before setting up the process (AdGuard - Apps management - Shadowsocks - Disable AdGuard protection) to avoid infinite loops and drops.**
+:::note
 
-1. Open AdGuard and go to **Settings** → **Network** → **Proxy settings**.
+在设置之前，应将 Shadowsocks 应用程序从过滤中移除（进入「**应用管理**」→「**Shadowsocks**」→「**通过 AdGuard 路由流量**」），以避免无限循环和掉线。
 
-2. 点击**「添加代理」**按钮并输入以下数据：
+:::
 
-| 字符串  | 数值          |
-| ---- | ----------- |
-| 代理分类 | *SOCKS5*    |
-| 代理主机 | *127.0.0.1* |
-| 代理端口 | *1080*      |
+1. 打开 AdGuard 并转到「**设置**」→「**过滤**」→「**网络**」→「**代理**」→「**代理服务器**」。
 
-3. 点击**「选择并保存」**
+1. 点击「**添加代理**」按钮并输入以下数据：
 
-### 限制
+    | 字符串  | 数值          |
+    | ---- | ----------- |
+    | 代理分类 | *SOCKS5*    |
+    | 代理主机 | *127.0.0.1* |
+    | 代理端口 | *1080*      |
 
-There is a factor that can prevent certain traffic from being routed through the outgoing proxy. AdGuard will only re-route traffic that goes through it. Basically, it means apps that have **Ad blocking** flag enabled in the **Apps Management** tab.
+1. 点击「**选择并保存**」。
+
+1. 启用主代理开关和 AdGuard 保护功能，通过代理路由设备的流量。
+
+### 如何同时使用 AdGuard 和 Clash
+
+*假设您已是 Clash 的用户，且已将它安装在设备上。*
+
+1. 打开 Clash 并转到「**设置**」→「**网络**」→「**路由系统流量**」并切换开关。 这将把 Clash 设置为代理模式。
+
+1. 打开 AdGuard 并转到「**应用管理**」。 选择「**Clash For Android**」并禁用「**通过 AdGuard 路由流量**」。 这将消除流量循环。
+
+1. 然后转到「**设置**」→「**过滤**」→「**网络**」→「**代理**」→「**代理服务器**」。
+
+1. 点击「**添加代理**」按钮并输入以下数据：
+
+    | 字符串  | 数值          |
+    | ---- | ----------- |
+    | 代理分类 | *SOCKS5*    |
+    | 代理主机 | *127.0.0.1* |
+    | 代理端口 | *7891*      |
+
+## 限制
+
+即使用户配置 AdGuard 代理设置，也有一个因素会阻止流量通过出站代理路由。 如果用户没有设置应用程序本身通过 AdGuard 发送流量，这种情况就会发生。 要做到这一点，请进一步设置「**应用管理**」，选择应用程序，并打开「**通过 AdGuard 路由流量**」。

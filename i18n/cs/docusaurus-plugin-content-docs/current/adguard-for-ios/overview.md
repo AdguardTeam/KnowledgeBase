@@ -1,11 +1,12 @@
 ---
 title: Přehled funkcí
-sidebar_position: 1
+sidebar_position: 6
 ---
+
 
 :::info
 
-Tento článek popisuje AdGuard pro iOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+Tento článek popisuje AdGuard pro iOS, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -21,7 +22,7 @@ Blokátory obsahu slouží jako "kontejnery" pro pravidla filtrování, která s
 
 Všechny blokátory obsahu a jejich stavy, které tematické filtry aktuálně obsahují a celkový počet použitých pravidel filtrování najdete na příslušné obrazovce v *Pokročilých nastavení* (klepněte na ikonu ozubeného kola vpravo dole → *Obecné* → *Pokročilá nastavení* → *Blokátory obsahu*).
 
-![Blokátory obsahu *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/content_blockers_en.jpeg)
+![Content blockers *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/content_blockers_en.jpeg)
 
 :::tip
 
@@ -35,7 +36,7 @@ Pro nejlepší kvalitu filtrování ponechte všechny blokátory obsahu zapnuté
 
 Všechny filtry jsou seskupeny do tematických kategorií. Chcete-li zobrazit úplný seznam těchto kategorií (neplést si s blokátory obsahu), otevřete sekci *Ochrana* klepnutím na ikonu štítu a poté přejděte na *Ochrana Safari* → *Filtry*.
 
-![Skupiny filtrů *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/filters_group_en.jpeg)
+![Filter groups *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/filters_group_en.jpeg)
 
 Je jich osm a každá kategorie sdružuje několik filtrů, které mají společný účel, tj. blokování reklam, blokování widgetů sociálních sítí, upozornění na soubory cookies, ochranu uživatele před podvody online. Chcete-li se rozhodnout, které filtry vyhovují vašim potřebám, přečtěte si jejich popis a projděte štítky (`reklamy`, `soukromí`, `doporučeno` atd.).
 
@@ -53,7 +54,7 @@ Zde můžete přidávat nová pravidla — buď je zadáte ručně, nebo použij
 
 Naučte se, jak vytvořit [vlastní filtry reklam](/general/ad-filtering/create-own-filters). Upozorňujeme však, že mnohé z nich nebudou v Safari v iOS fungovat.
 
-![Obrazovka uživatelských pravidel *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/user_rules_en.jpeg)
+![User rules screen *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/user_rules_en.jpeg)
 
 ### Seznam povolených {#allowlist}
 
@@ -71,7 +72,7 @@ Aby bylo možné spravovat nastavení DNS, vyžadují aplikace AdGuardu vytvoře
 
 ### DNS implementace {#dns-implementation}
 
-![Obrazovka implementace DNS *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/implementation_en.jpeg)
+![DNS implementation screen *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/implementation_en.jpeg)
 
 Tato část má dvě možnosti: AdGuard a Nativní implementace. V podstatě se jedná o dva způsoby nastavení DNS.
 
@@ -79,9 +80,9 @@ V nativní implementaci se o DNS stará systém, nikoli aplikace. To znamená, �
 
 ### DNS servery {#dns-servers}
 
-První část, která se zobrazí na obrazovce Ochrana DNS, je DNS server. Zobrazuje aktuálně vybraný DNS server a typ šifrování. Chcete-li některý z nich změnit, klepněte na tlačítko a přejděte na obrazovku DNS serveru.
+Další část, která se zobrazí na obrazovce Ochrana DNS, je DNS server. Zobrazuje aktuálně vybraný DNS server a typ šifrování. Chcete-li některý z nich změnit, klepněte na tlačítko a přejděte na obrazovku DNS serveru.
 
-![Servery DNS *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_server_en.jpeg)
+![DNS servers *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_server_en.jpeg)
 
 Servery se liší rychlostí, použitým protokolem, důvěryhodností, zásadami protokolování atd. Ve výchozím nastavení nabídne AdGuard několik DNS serverů z těch nejoblíbenějších (včetně AdGuard DNS). Klepnutím na libovolný server změníte typ šifrování (pokud takovou možnost vlastník serveru poskytuje) nebo zobrazíte domovskou stránku serveru. Přidali jsme štítky jako `Bez zaznamenávání`, `Blokování reklam`, `Zabezpečení`, abychom vám usnadnili výběr.
 
@@ -89,15 +90,19 @@ V dolní části obrazovky je navíc možnost přidat vlastní DNS server. Podpo
 
 ### Nastavení sítě {#network-settings}
 
-![Obrazovka nastavení sítě *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/network_settings_en.jpeg)
+![Network settings screen *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/network_settings_en.jpeg)
 
-Uživatelé mohou na obrazovce Nastavení sítě také řešit zabezpečení DNS. *Filtrovat mobilní data* a *Filtrovat Wi-Fi* zapnout nebo vypnout ochranu DNS pro příslušné typy sítí. Dále ve *výjimkách Wi-Fi* můžete vyloučit konkrétní sítě Wi-Fi z ochrany DNS (můžete například chtít vyloučit svou domácí síť, pokud používáte [AdGuard Home](https://adguard.com/en/adguard-home/overview.html)).
+Uživatelé mohou na obrazovce Nastavení sítě také řešit zabezpečení DNS. *Filtrovat mobilní data* a *Filtrovat Wi-Fi* zapnout nebo vypnout ochranu DNS pro příslušné typy sítí. Dále ve *výjimkách Wi-Fi* můžete vyloučit konkrétní sítě Wi-Fi z ochrany DNS (můžete například chtít vyloučit svou domácí síť, pokud používáte [AdGuard Home](https://adguard.com/adguard-home/overview.html)).
 
 ### DNS filtrování {#dns-filtering}
 
-Abyste získali přístup k tomuto nastavení, je třeba na obrazovce *Obecná nastavení* zapnout *Pokročilý režim*. Poté se na obrazovce DNS ochrany zobrazí nová část. Klepnutím na ni můžete přizpůsobit provoz DNS použitím vlastních pravidel.
+DNS filtrování umožňuje přizpůsobit provoz DNS povolením filtru AdGuard DNS, přidáním vlastních filtrů DNS a použitím seznamu zakázanách/povolených DNS.
 
-![Obrazovka DNS filtrování *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_filtering_en.jpeg)
+Jak získat přístup:
+
+*Ochrana* (ikona štítu v dolní liště menu) → *DNS ochrana* → *DNS filtrování*
+
+![DNS filtering screen *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_filtering_en.jpeg)
 
 #### DNS filtry {#dns-filters}
 
@@ -111,7 +116,7 @@ Kromě DNS filtrů můžete filtrování DNS cíleně ovlivnit přidáním jedno
 
 V systému iOS 15 přidala společnost Apple podporu pro webová rozšíření Safari a my jsme zase přidali nový modul *Pokročilá ochrana* do AdGuardu pro iOS. Umožňuje AdGuardu aplikovat pokročilá pravidla filtrování, jako jsou pravidla CSS, selektory CSS a skriptlety, a poradit si tak i se složitými reklamami, jako jsou reklamy YouTube.
 
-![Obrazovka pokročilé ochrany *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_15_en.jpeg)
+![Advanced protection screen *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_15_en.jpeg)
 
 Chcete-li zapnout *Pokročilou ochranu*, otevřete kartu *Ochrana* klepnutím na druhou ikonu vlevo dole na obrazovce, vyberte modul *Pokročilá ochrana*, aktivujte funkci přepnutím posuvníku a postupujte podle níže uvedených pokynů.
 
@@ -121,11 +126,11 @@ Chcete-li zapnout *Pokročilou ochranu*, otevřete kartu *Ochrana* klepnutím na
 
 :::
 
-![Obrazovka ochrany v systému iOS 14 a starších *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_14_en.jpeg)
+![Protection screen on iOS 14 and earlier *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/protection_screen_14_en.jpeg)
 
 ### Kompatibilita s AdGuard VPN {#compatibility}
 
-Ve většině případů blokátor reklam a aplikace VPN nemohou spolupracovat, protože existují určitá systémová omezení. Přesto se nám podařilo najít řešení, jak spřátelit [AdGuard VPN](https://adguard-vpn.com/) a blokátor reklam AdGuard. Pro vaše pohodlí jsme do sekce *Ochrana* přidali položku *AdGuard VPN*, takže můžete snadno přepínat mezi dvěma aplikacemi.
+Ve většině případů blokátor reklam a aplikace VPN nemohou spolupracovat, protože existují určitá systémová omezení. Přesto se nám podařilo najít řešení, jak spřátelit [AdGuard VPN](https://adguard-vpn.com/) a blokátor reklam AdGuard. V sekci *Ochrana* můžete snadno přepínat mezi dvěma aplikacemi.
 
 ### Asistent {#assistant}
 
@@ -136,7 +141,7 @@ Asistent je nástroj, který vám pomůže spravovat filtrování v Safari pří
 Chcete-li jej zobrazit, postupujte takto: otevřete Safari a klepněte na symbol šipky v rámečku. Poté přejděte dolů na AdGuard/AdGuard Pro (v závislosti na aplikaci, kterou používáte) a klepnutím na něj zobrazte okno s několika možnostmi:
 
 1. **Povolit na této stránce.** Chcete-li přidat aktuální doménu do seznamu povolených, vypněte přepínač.
-2. **Blokovat prvek na této stránce.** Klepnutím na to přejdete do režimu "Blokovat prvek": vyberte libovolný prvek na stránce, upravte velikost klepnutím na "+" nebo "-", v případě potřeby zobrazte náhled a potvrďte klepnutím na ikonu zaškrtnutí. Vybraný prvek bude na stránce skryt a do uživatelských pravidel bude přidáno odpovídající pravidlo. Chcete-li změnu vrátit, odstraňte to nebo vypněte.
+2. **Blokovat prvek na této stránce.** Klepnutím na to přejdete do režimu "Blokovat prvek": vyberte libovolný prvek na stránce, upravte velikost klepnutím na "+" nebo "-", v případě potřeby zobrazte náhled a potvrďte klepnutím na ikonu zaškrtnutí. Vybraný prvek bude na stránce skryt a do uživatelských pravidel bude přidáno odpovídající pravidlo. Chcete-li změnu vrátit, odstraňte jej nebo vypněte.
 3. **Nahlásit problém na této stránce.** Otevře webový nástroj pro hlášení chyb, který vám pomůže odeslat hlášení našemu týmu podpory pomocí několika klepnutí. Použijte to, pokud jste si všimli nezablokované reklamy nebo nesprávného blokování na stránce.
 
 :::tip
@@ -149,9 +154,9 @@ Na zařízeních se systémem iOS 15 jsou funkce asistenta dostupné prostředni
 
 Toto je "informační centrum" sady DNS ochrany AdGuardu. Můžete na něj rychle přepnout klepnutím na třetí ikonu v řadě ve spodní části obrazovky. Pozn. tato obrazovka se zobrazí pouze v případě, že je zapnuta DNS ochrana.
 
-![Obrazovka aktivity *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/activity_en.jpeg)
+![Activity screen *mobile_border](https://cdn.adtidy.org/content/github/ad_blocker/ios/activity.png)
 
-Zde AdGuard zobrazuje statistiky o požadavcích DNS zařízení, například celkový počet, počet šifrovaných požadavků a průměrnou dobu zpracování. AdGuard může zobrazit statistiky za den, týden, měsíc nebo celkově.
+Zde AdGuard zobrazuje statistiky o DNS požadavcích zařízení, například celkový počet, počet blokovaných požadavků a data ušetřená jejich blokováním. AdGuard může zobrazit statistiky za den, týden, měsíc nebo celkově.
 
 Níže je uvedena stránka *Nedávná aktivita*. AdGuard ukládá posledních 1500 DNS požadavků, které byly odeslány z vašeho zařízení a zobrazuje jejich atributy, například typ protokolu a cílovou doménu.
 
@@ -163,9 +168,9 @@ AdGuard tyto informace nikam neodesílá. Tyto informace jsou 100% ukládány ve
 
 Klepnutím na libovolný požadavek zobrazíte další podrobnosti. K dispozici budou také tlačítka pro přidání požadavku do seznamu blokovaných/povolených jedním klepnutím.
 
-![Podrobnosti požadavků *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/request_info_en.jpeg)
+![Request details *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/request_info_en.jpeg)
 
-Nad stránkou aktivit jsou *Nejaktivnější společnosti*. Zde jsou uvedeny souhrnné údaje z posledních 1500 požadavků.
+Nad zdrojem aktivit jsou *Nejaktivnější* a *Nejvíce blokované* společnosti. Klepnutím na každou z nich zobrazíte údaje založené na posledních 1500 požadavcích.
 
 ### Statistiky {#statistics}
 
@@ -173,7 +178,7 @@ Kromě obrazovky *Aktivita* najdete globální statistiky na domovské obrazovce
 
 ## Nízkoúrovňová nastavení {#low-level-settings}
 
-![Nízkoúrovňová nastavení *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_lowlevel.PNG)
+![Low-level settings *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_lowlevel.PNG)
 
 Chcete-li otevřít *Nízkoúrovňová nastavení*, přejděte do *Nastavení* → *Obecné* → (Aktivujte *Pokročilý režim*, pokud je vypnutý) → *Pokročilá nastavení* → *Nízkoúrovňová nastavení*.
 
@@ -181,13 +186,14 @@ Nastavení v této části je většinou lepší ponechat beze změny: používe
 
 ### Blokování IPv6 {#blockipv6}
 
-Na každý dotaz DNS odeslaný za účelem získání adresy IPv6 vrátí naše aplikace prázdnou odpověď (jako by tato adresa IPv6 neexistovala). Nyní existuje možnost nevracet adresy IPv6. Na tomto místě se popis této funkce stává příliš technickým: konfigurace nebo zakázání protokolu IPv6 je výhradní doménou pokročilých uživatelů. Pokud patříte mezi ně, bude dobré vědět, že tuto funkci nyní máme, pokud ne – není třeba se do ní nořit.
+Na každý dotaz DNS odeslaný za účelem získání adresy IPv6 vrátí naše aplikace prázdnou odpověď (jako by tato adresa IPv6 neexistovala). Nyní existuje možnost nevracet adresy IPv6. Na tomto místě se popis této funkce stává příliš technickým: konfigurace nebo zakázání protokolu IPv6 je výhradní doménou pokročilých uživatelů. Pokud patříte mezi ně, bude dobré vědět, že tuto funkci nyní máme, pokud ne — není třeba se do ní nořit.
 
 ### Bootstrap a záložní servery {#bootstrap-fallback}
 
 Záložní server je záložní DNS server. Pokud jste vybrali DNS server a něco se s ním stalo, je třeba nastavit záložní server DNS, dokud hlavní server neodpoví.
 
 S Bootstrap serverem je to trochu složitější. Aby mohl AdGuard pro iOS používat vlastní zabezpečený DNS server, musí naše aplikace nejprve získat jeho IP adresu. K tomuto účelu se ve výchozím nastavení používá systém DNS, ale někdy to z různých důvodů není možné. V takových případech lze k získání IP adresy vybraného zabezpečeného serveru DNS použít Bootstrap. Zde jsou dva příklady, které ilustrují, kdy může pomoci vlastní server Bootstrap:
+
 1. Pokud výchozí systémový DNS server nevrací IP adresu zabezpečeného serveru DNS a není možné použít zabezpečený server.
 2. Pokud se současně používá naše aplikace a síť VPN třetí strany a není možné použít systémový DNS jako Bootstrap.
 
@@ -197,15 +203,15 @@ Blokování obsahu Safari a DNS ochrana jsou nesporně dva hlavní moduly AdGuar
 
 - **Tmavý motiv**
 
-![Světlý motiv *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/main_screen_en.jpeg)
+![Light theme *mobile_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
 
-![Tmavý motiv *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/main_screen_dark_en.jpeg)
+![Dark theme *mobile_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
 
 Toto nastavení, které se nachází přímo v horní části obrazovky **Nastavení** → **Obecné**, umožňuje přepínat mezi tmavým a světlým motivem.
 
 - **Widgety**
 
-![Widgety *mobile](https://cdn.adtidy.org/public/Adguard/Release_notes/iOS/v4.0/widget_en.jpg)
+![Widgets *mobile](https://cdn.adtidy.org/public/Adguard/Release_notes/iOS/v4.0/widget_en.jpg)
 
 AdGuard podporuje widgety, které umožňují rychlý přístup k přepínačům blokování obsahu Safari a DNS ochrany a také zobrazují globální statistiky požadavků.
 
@@ -219,7 +225,7 @@ Alternativní režim pro filtrování Safari, který odblokuje reklamy všude kr
 
 - **Pokročilý režim**
 
-Kromě odemknutí **DNS filtrování**, poskytuje přístup k **Pokročilým nastavením**. Nedoporučujeme s nimi manipulovat, pokud nevíte, co děláte, nebo pokud jste se nejprve neporadili s technickou podporou.
+**Pokročilý režim** odemkne **Pokročilá nastavení**. Nedoporučujeme s nimi manipulovat, pokud nevíte, co děláte, nebo pokud jste se nejprve neporadili s technickou podporou.
 
 - **Vynulování statistik**
 

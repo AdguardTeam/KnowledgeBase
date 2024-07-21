@@ -1,42 +1,55 @@
 ---
-title: AdGuardライセンスとは
+title: AdGuard ライセンスとは?
 sidebar_position: 1
 ---
 
-## AdGuardライセンスとは？
+ライセンスとは、[利用許諾契約（EULA）](https://adguard.com/eula.html)に基づいて提供されるAdGuard製品の使用許可です。 AdGuardライセンスがメールアドレスにバインド（紐付け）されている場合、[AdGuard アカウント](https://my.adguard.com/)でお持ちのライセンスを確認できます。
 
-ライセンスは、利用許諾契約（EULA）に基づいて提供されるAdGuard製品の使用許可です。 AdGuardのライセンスは、ライセンスキー、アクティベーションコード、ユーザーの[AdGuardアカウント](../../account/register)でのカードという３つの形で存在します。
+## AdGuard ライセンスの種類
 
-ライセンスの中には、購入が必要なもの（AdGuard広告ブロッカーの「パーソナル」など）、無料で期間限定のもの（AdGuardアプリの試用ライセンスなど）、機能が制限されている無料のもの（AdGuard for iOS や AdGuardブラウザ拡張機能など）などがあります。 AdGuard広告ブロッカーのライセンス全種類一覧は以下の通りです:
+[ご購入ページ](https://adguard.com/license.html)では、以下のライセンスの種類があります:
 
-1. **試用ライセンス**は期間限定で無料です： AdGuard for Windows — 試用期間14日間、 AdGuard for Mac — 試用期間14日間、 AdGuard for Android — 試用期間7日間
-2. **Free licenses** are not time-limited, but have limited functionality: AdGuard Browser Extension, AdGuard Content Blocker, AdGuard for iOS.
-3. **サブスクリプション**は、毎月または毎年自動的に更新される有償ライセンスです （手動で延長することも可能です）： AdGuard広告ブロッカー月額サブスクリプション、 AdGuard広告ブロッカー1年サブスクリプション
-4. **販売代理店から購入したライセンス**および**付与されたライセンス**は期限付きで、自動更新はできません。 ただし、手動で延長することができます： AdGuard広告ブロッカー月額ライセンス、 AdGuard広告ブロッカー1年ライセンス
-5. **永久ライセンス**は無期限でフル機能を提供します： AdGuard広告ブロッカー永久版ライセンス、 iOS用「AdGuard Pro」アプリ
+- **1年サブスクリプション** - これらのライセンスは毎年自動的に更新されますが、手動で延長することもできます。
+    - パーソナル（デバイス3台用）
+    - ファミリー（デバイス9台用）
+- **永久** - これらのライセンスには有効期限はなく、ずっとご利用いただけます。
+    - パーソナル（デバイス3台用）
+    - ファミリー（デバイス9台用）
 
-## 追加可能なデバイス数{#devices}
+また、他のソースから購入したり、無料で入手できるライセンスもあります:
 
-ライセンスの種類によって、使用できるデバイスの数は異なります:
-* パーソナル（デバイス3台まで）
-* ファミリー（デバイス9台まで）
-* iOS用「AdGuard Pro」アプリ（デバイス1台）
+- **試用ライセンス**は、製品のフル機能を無料でお試しいただける期間限定の無料ライセンスです。
+    - AdGuard for Windows - 14日間無料
+    - AdGuard for Mac - 14日間無料
+    - AdGuard for Android - 7日間無料
+- **販売代理店ライセンス** および**付与ライセンス**は、期間限定と非期間限定の両方があります。 有効期限のあるライセンスは、手動でのみ更新できます。
+    - パーソナル（デバイス3台用）
+    - ファミリー（デバイス9台用）
+- **iOS用「AdGuard Pro」アプリのライセンス** は、App Storeを通じて購入および管理され、同じApple IDを持つiOSおよびiPadOSデバイスでのみ使用できます。
 
-To use your license on a device, log in to your [AdGuard account](../../account/features) on it. To extend the device limit, you can [upgrade](../activation#how-to-upgrade-a-license) your license.
+:::tip
 
-## AdGuardライセンスキーとは？{#license-key}
+デバイス台数制限を増大するには、ライセンスを[アップグレード](../payment-options/#upgrade)することができます。
 
-A license key is a unique sequence of characters that represents an AdGuard Ad Blocker license. It is automatically registered for the email you used for license purchase. With a license key, you can:
-* 一部の製品（AdGuard for Windowsなど）で、AdGuardアカウントにログインできます。
-* AdGuardアカウントがまだなくても、AdGuard製品内で[ライセンスを有効にする](../activation)ことができます。
-* ライセンスをAdGuardアカウントに紐付け・紐付け解除をすることができます。
+:::
 
-When unbinding a license, be sure you write the license key down beforehand or note in some other (safe) way. You'll need the key for re-binding your license or transferring it to another account.
+## AdGuard ライセンスの使用方法
 
-## ライセンスキーを復元する方法
+ライセンスをデバイスで使用するには、ライセンスに関連付けられているメールアドレスを使用して AdGuard アプリにログインします。 ライセンスがまだメールアドレスにバインド（紐付け）されていない場合は、[AdGuardアカウント](https://my.adguard.com/)でバインドできます。 これを行うには、AdGuardアカウントで「*ライセンス*」画面を開き、「*ライセンスを紐付けする*」をクリックします。
 
-You can easily check which license keys belong to you in your [AdGuard Account](../../account/register).
+または、AdGuard アプリに[ライセンスキー](#license-key)を直接入力するというライセンス使用方法もあります。
 
-The license key is bound to your account via the email address you used to purchase AdGuard.
+## ライセンスキー
 
-**Please note** that it is often not enough to just find out what your license key is. If it was already used on another computer, it’s necessary to unbind it from that computer through the AdGuard Account before using it again.
+ライセンスキーとは、AdGuard 広告ブロッカーのライセンスを表す一意の文字列です。 お客様がライセンスを購入する際に使用したメールアドレスに自動的に登録されるか、または販売代理店から AdGuard ライセンスを購入する際に提供されます。 ライセンスキーで以下のことが可能です:
+
+- AdGuardアカウントがなくても、AdGuard製品内で[ライセンスを有効にする](../activation)ことができます。
+- ライセンスをお持ちのAdGuardアカウントに紐付け・紐付け解除をすることができます。
+
+※ライセンスの紐付けを解除するときは、必ず最初にライセンスキーを保存・メモしてください。 ライセンスキーは、ライセンスの再紐付けや他アカウントへの移行の際に必要になります。
+
+### ライセンスキーを復元する方法
+
+ライセンスキーを覚えていない場合は、お持ちの AdGuard アカウントを確認してください。メールアドレスに紐付けされているライセンスがすべてそこに表示されます。
+
+代理店から購入されたライセンスキーを紛失された場合は、support@adguard.com までご連絡ください。 その際、領収書・レシートなど、ご購入を証明できるものをご用意ください。

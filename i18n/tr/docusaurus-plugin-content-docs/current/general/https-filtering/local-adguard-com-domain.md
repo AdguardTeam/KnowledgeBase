@@ -1,27 +1,27 @@
 ---
-title: Local.adguard.org domain
+title: Local.adguard.org alan adı
 sidebar_position: 3
 ---
 
-Users of AdGuard for Windows, Mac, and Android may notice that AdGuard adds a small script to every web page, that is loaded from the `local.adguard.org` domain.
+Windows, Mac ve Android için AdGuard kullanıcıları, AdGuard'ın her web sayfasına `local.adguard.org` alan adından yüklenen küçük bir betik eklediğini fark edebilir.
 
-First of all, don't worry, this is not a real domain, and there is actually no real server with that name. This domain is used to apply cosmetic filtering to web pages, but everything is done locally right on your device without connecting to any server.
+Öncelikle endişelenmeyin, bu gerçek bir alan adı değil ve aslında bu ada sahip gerçek bir sunucu da yok. Bu alan adı, web sayfalarına kozmetik filtreleme uygulamak için kullanılır, ancak her şey, herhangi bir sunucuya bağlanmadan doğrudan cihazınızda yerel olarak yapılır.
 
 ### Teknik açıklama
 
-But what's going on and why is it done? Please read the technical explanation below.
+Ama neler oluyor ve bu neden yapılıyor? Lütfen aşağıdaki teknik açıklamayı okuyunuz.
 
-1. AdGuard is a network-level content blocker so it cannot simply add custom JavaScript and CSS to webpages like what browser extensions do. However, doing this is crucial for quality content blocking.
-2. In order to do it AdGuard injects a "content script" that looks like this: `<script src="https://local.adguard.org/.../content-script.js">`. This "content script" takes care of cosmetic filtering, hides or removes ad content from the web pages.
-3. Connections to the IP address of the `local.adguard.org` domain are intercepted by AdGuard on the network level and **processed locally**. This is why that domain has a "static" IP address that does not change for years.
+1. AdGuard, ağ düzeyinde bir içerik engelleyici olduğundan, tarayıcı uzantılarının yaptığı gibi web sayfalarına basitçe özel JavaScript ve CSS ekleyemez. Ancak kaliteli içerik engelleme için bunu yapmak çok önemlidir.
+2. Bunu yapabilmek için AdGuard şuna benzeyen bir "içerik betiği" enjekte eder: `<script src="https://local.adguard.org/.../content-script.js">`. Bu "içerik betiği" kozmetik filtrelemeyle ilgilenir, reklam içeriğini web sayfalarından gizler veya kaldırır.
+3. `local.adguard.org` alan adının IP adresine yapılan bağlantılar, ağ düzeyinde AdGuard tarafından kesilir ve **yerel olarak işlenir**. Bu nedenle o alan adı yıllarca değişmeyen "statik" bir IP adresine sahiptir.
 
-**Why do we need to use a real IP address for that?**
+**Bunun için neden gerçek bir IP adresi kullanmamız gerekiyor?**
 
-* We cannot use `127.0.0.1` as the browsers won't accept it.
-* Using some IP address from the private subnets is possible, but this solution has two downsides.
-    * First, there is a slight chance of intersecting with an existing intranet service and breaking access to it.
-    * Second, some DNS servers may consider this a DNS rebinding attack and refuse to respond to `local.adguard.org`.
+- Tarayıcılar kabul etmeyeceği için `127.0.0.1` adresini kullanamayız.
+- Özel alt ağlardan bazı IP adreslerinin kullanılması mümkündür ancak bu çözümün iki dezavantajı vardır.
+    - Birincisi, mevcut bir intranet hizmetiyle kesişme ve ona erişimin kesilmesi ihtimali çok düşük.
+    - İkinci olarak, bazı DNS sunucuları bunu bir DNS yeniden bağlama saldırısı olarak değerlendirebilir ve `local.adguard.org` adresine yanıt vermeyi reddedebilir.
 
-### Verification
+### Doğrulama
 
-Bunu doğrulamak kolaydır. If you disable AdGuard, you'll see that it is simply impossible to establish connection to `local.adguard.org` since there is no server with that address. Just try opening it in your browser when AdGuard is disabled.
+Bunu doğrulamak kolaydır. AdGuard'ı devre dışı bırakırsanız, bu adrese sahip bir sunucu olmadığından `local.adguard.org` ile bağlantı kurmanın kesinlikle imkansız olduğunu göreceksiniz. AdGuard devre dışı bırakıldığında tarayıcınızda açmayı deneyin.

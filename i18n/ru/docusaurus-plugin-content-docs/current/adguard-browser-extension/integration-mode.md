@@ -1,18 +1,24 @@
 ---
-title: Режим интеграции (старая версия)
-sidebar_position: 3
+title: Compatibility with the standalone app
+sidebar_position: 8
 ---
 
-## Что такое режим интеграции?
+:::info
 
-In older versions of AdGuard Browser Extension, if you had it installed along with one of the AdGuard desktop apps (AdGuard for Windows or AdGuard for Mac), the extension took upon itself the functions of AdGuard Assistant — a tool that helped manage the filtering right from the web page. При этом сама блокировка рекламы полностью находилась под контролем десктопного приложения, расширение и его настройки не играли в этом никакой роли.
+Эта статья о Браузерном расширении AdGuard, которое защищает только ваш браузер. [Скачайте приложение AdGuard](https://agrd.io/download-kb-adblock), чтобы защитить своё устройство
 
-Проблема заключалась в том, что в некоторых случаях приложение и расширение мешали друг другу работать. Некоторые сайты прекращали фильтроваться приложением, вместо этого фильтрацию производило расширение, обладающее заметно меньшими возможностями. Начиная с версии Браузерного расширения AdGuard 3.5, режим интеграции был убран. Вместо этого появился новый Браузерный помощник AdGuard.
+:::
+
+While AdGuard Browser Extension can block ads in browsers, [AdGuard standalone programs](/adguard-browser-extension/comparison-standalone) filter all the traffic on your device, including from browsers and apps.
+
+If you decide to install both the extension and the standalone program on your PC, you may encounter some compatibility issues. The problem is that in some cases the application and the extension may interfere with each other. Some websites will no longer be protected by the desktop program and will only be protected by the extension, which has fewer options. Also, filtering may work incorrectly for some websites. Therefore, we don't recommend using the extension together with the application.
+
+If you have the desktop version of AdGuard installed on your PC, it is better to use AdGuard Browser Assistant instead of the extension.
 
 ## Браузерный помощник AdGuard
 
-![Браузерный помощник AdGuard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/ad_blocker_browser_extension_assistant.png)
+![AdGuard Browser Assistant \*mobile\_border](https://cdn.adtidy.org/content/kb/ad_blocker/browser_extension/ad_blocker_browser_extension_assistant.png)
 
-Браузерный помощник AdGuard — новое браузерное расширение, которое в своей работе ощущается и ведёт себя как режим интеграции, но намного легче, потому что не дублирует функции приложения AdGuard и не конфликтует с ним. Вы можете [прочитать больше о Браузерном помощнике для Windows](/adguard-for-windows/browser-assistant) и [Mac](/adguard-for-mac/browser-assistant) или [скачать его с нашего сайта](https://adguard.com/adguard-assistant/overview.html).
+AdGuard Browser Assistant is a browser extension that works and feels just like AdGuard Browser Extension, but it's much lighter and doesn't interfere with the desktop apps. You can [read more about Browser Assistant for Windows](/adguard-for-windows/browser-assistant) or [Mac](/adguard-for-mac/features/browser-assistant), or [download it from our website](https://adguard.com/adguard-assistant/overview.html).
 
-Браузерный помощник AdGuard доступен во всех основных браузерах.
+AdGuard Browser Assistant is available in all major browsers.

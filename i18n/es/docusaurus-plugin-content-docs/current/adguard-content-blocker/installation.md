@@ -1,36 +1,36 @@
 ---
-title: Installation
+title: Instalación
 sidebar_position: 2
 ---
 
 :::info
 
-This article is about AdGuard Content Blocker, which only safeguards your Samsung Internet browser or Yandex Browser. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Este artículo trata sobre el bloqueador de contenido AdGuard, que solo protege el navegador de Internet Samsung y el navegador Yandex. Para proteger todo tu dispositivo, [descarga la aplicación AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-The application is available in five stores: [Google Play](https://play.google.com/store/apps/details?id=com.adguard.android.contentblocker), [Samsung Galaxy store](https://galaxystore.samsung.com/detail/com.adguard.android.contentblocker), [Huawei AppGallery](https://appgallery.huawei.com/#/app/C100440597), [Aptoide](https://adguard-content-blocker.en.aptoide.com/), and [F-Droid](https://f-droid.org/en/packages/com.adguard.android.contentblocker/).
+La app está disponible en cinco tiendas: [Google Play](https://play.google.com/store/apps/details?id=com.adguard.android.contentblocker), [Samsung Galaxy store](https://galaxystore.samsung.com/detail/com.adguard.android.contentblocker), [Huawei AppGallery](https://appgallery.huawei.com/#/app/C100440597), [Aptoide](https://adguard-content-blocker.en.aptoide.com/) y [F-Droid](https://f-droid.org/en/packages/com.adguard.android.contentblocker/).
 
-To install AdGuard Content Blocker from Google Play, search _AdGuard Content Blocker_ and tap _Install_.
+Para instalar AdGuard Content Blocker desde Google Play, busque *AdGuard Content Blocker* y toque *Instalar*.
 
-![Content Blocker on Google Play *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_play_market.jpg)
+![Bloqueador de contenido en Google Play *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_play_market.jpg)
 
 :::note
 
-AdGuard Content Blocker works in two browsers: [Yandex Browser](https://browser.yandex.com/) and [Samsung Internet Browser](https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser).
+El bloqueador de contenido de AdGuard funciona en dos navegadores: [Yandex Browser](https://browser.yandex.com/) y [Samsung Internet Browser](https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser).
 
 :::
 
-After the installation is completed, tap _Open_ to run the app.
+Una vez completada la instalación, pulsa *Abrir* para ejecutar la aplicación.
 
-![Content Blocker installed *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_play_market_installed.jpg)
+![Bloqueador de contenido instalado *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_play_market_installed.jpg)
 
-If you have a supported browser installed on your device, the app will ask you to enable AdGuard.
+Si tienes un navegador compatible instalado en tu dispositivo, la aplicación te pedirá que habilites AdGuard.
 
-![Onboarding: user has a supported browser *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_onboarding2.jpg)
+![Onboarding: el usuario tiene un navegador compatible *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_onboarding2.jpg)
 
-If you don't have a supported browser, you will be prompted to choose and install one.
+Si no tienes un navegador compatible, se te pedirá que elijas e instales uno.
 
-![Onboarding: no supported browser *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_onboarding3.jpg)
+![Onboarding: ningún navegador compatible *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_onboarding3.jpg)
 
-After the browser is installed, you can start AdGuard Content Blocker to block ads and trackers in it.
+Una vez instalado el navegador, puedes iniciar el bloqueador de contenido AdGuard para bloquear anuncios y rastreadores en él.

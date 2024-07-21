@@ -1,11 +1,12 @@
 ---
 title: Features overview
-sidebar_position: 1
+sidebar_position: 6
 ---
+
 
 :::info
 
-This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for iOS」について書いています。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -57,7 +58,7 @@ Learn [how to create your own ad filters](/general/ad-filtering/create-own-filte
 
 ### Allowlist {#allowlist}
 
-The third section of the *Safari protection* screen. If you want to disable ad blocking on a certain website, Allowlist will be of help. It allows you to add domains and subdomains to exlcusions. AdGuard for iOS has an Import/Export feature, so the allowlist from one device can be easily transferred to another.
+The third section of the *Safari protection* screen. If you want to disable ad blocking on a certain website, Allowlist will be of help. It allows you to add domains and subdomains to exclusions. AdGuard for iOS has an Import/Export feature, so the allowlist from one device can be easily transferred to another.
 
 ### DNS protection {#dns-protection}
 
@@ -79,7 +80,7 @@ In Native implementation, the DNS is handled by the system and not the app. This
 
 ### DNS servers {#dns-servers}
 
-The first section you'll see on the DNS Protection screen is DNS server. It shows the currently selected DNS server and encryption type. To change either, tap the button to enter the DNS server screen.
+The next section you'll see on the DNS Protection screen is DNS server. It shows the currently selected DNS server and encryption type. To change either, tap the button to enter the DNS server screen.
 
 ![DNS servers *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_server_en.jpeg)
 
@@ -91,11 +92,15 @@ In addition, at the bottom of the screen there is an option to add a custom DNS 
 
 ![Network settings screen *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/network_settings_en.jpeg)
 
-Users can also handle their DNS security on the Network settings screen. *Filter mobile data* and *Filter Wi-Fi* enable or disable DNS protection for the respective network types. Further down, at *Wi-Fi exceptions*, you can exclude particular Wi-Fi networks from DNS protection (for example, you might want to exclude your home network if you use [AdGuard Home](https://adguard.com/en/adguard-home/overview.html)).
+Users can also handle their DNS security on the Network settings screen. *Filter mobile data* and *Filter Wi-Fi* enable or disable DNS protection for the respective network types. Further down, at *Wi-Fi exceptions*, you can exclude particular Wi-Fi networks from DNS protection (for example, you might want to exclude your home network if you use [AdGuard Home](https://adguard.com/adguard-home/overview.html)).
 
 ### DNS filtering {#dns-filtering}
 
-To get access to this setting, *Advanced mode* has to be enabled from the *General settings* screen. After that, a new section will appear on the DNS protection screen. Tap it to customize your DNS traffic by applying own rules.
+DNS filtering allows you to customize your DNS traffic by enabling AdGuard DNS filter, adding custom DNS filters, and using the DNS blocklist/allowlist.
+
+How to access:
+
+*Protection* (the shield icon in the bottom menu bar) → *DNS protection* → *DNS filtering*
 
 ![DNS filtering screen *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/dns_filtering_en.jpeg)
 
@@ -125,7 +130,7 @@ The *Advanced protection* only works on iOS 15 and later versions. If you are us
 
 ### Compatibility with AdGuard VPN {#compatibility}
 
-In most cases, the ad blocker and the VPN application cannot work together, simply because there are certain system limitations. Nevertheless we've managed to find a solution to befriend [AdGuard VPN](https://adguard-vpn.com/) and AdGuard Ad Blocker. For your convenience we've added the *AdGuard VPN* block to the *Protection* section, so you can easily switch between two apps.
+In most cases, the ad blocker and the VPN app cannot work together, simply because there are certain system limitations. Nevertheless, we've managed to find a solution to befriend [AdGuard VPN](https://adguard-vpn.com/) and AdGuard Ad Blocker. In the *Protection* section, you can easily switch between two apps.
 
 ### Assistant {#assistant}
 
@@ -136,7 +141,7 @@ Assistant is a tool that helps you manage filtering in Safari right from the bro
 To see it, do the following: open Safari and tap the arrow-in-a-box symbol. Then scroll down to AdGuard/AdGuard Pro (depending on the app you use) and tap it to fetch a window with several options:
 
 1. **Enable on this page.** Turn the switch off to add the current domain to the Allowlist.
-2. **Block an element on this page.** Tap it to enter the 'Element blocking' mode: choose any element on the page, adjust the size by tapping 'plus' or 'minus', preview if necessary and then tap the checkmark icon to confirm. The selected element will be hidden from the page and a corresponding rule will be added to User rules. Remove or disable it there to revert the change.
+2. **Block an element on this page.** Tap it to enter the 'Element blocking' mode: choose any element on the page, adjust the size by tapping '+' or '–', preview if necessary and then tap the checkmark icon to confirm. The selected element will be hidden from the page and a corresponding rule will be added to User rules. Remove or disable it to revert the change.
 3. **Report an issue on this page.** Opens a web reporting tool that will help you send a report to our support team in just a few taps. Use it if you noticed a missed ad or an incorrect blocking on the page.
 
 :::tip
@@ -149,9 +154,9 @@ On iOS 15 devices, the Assistant features are available through [AdGuard Safari 
 
 This is the 'information hub' of AdGuard's DNS protection suite. You can quickswitch to it by tapping the third icon in the row at the screen bottom. N.b. this screen is only seen when DNS protection is enabled.
 
-![Activity screen *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/activity_en.jpeg)
+![Activity screen *mobile_border](https://cdn.adtidy.org/content/github/ad_blocker/ios/activity.png)
 
-Here AdGuard displays stats about device's DNS requests, such as total number, number of encrypted requests and average processing time. AdGuard can display the stats for a day, a week, a month, or in total.
+This is where AdGuard displays statistics about the device's DNS requests, such as total number, number of blocked requests and data saved by blocking them. AdGuard can display the statistics for a day, a week, a month or in total.
 
 Below is the *Recent activity* feed. AdGuard stores the last 1500 DNS requests that have originated on your device and shows their attributes such as protocol type and target domain.
 
@@ -165,7 +170,7 @@ Tap any request to view more details. There will also be buttons to add the requ
 
 ![Request details *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/request_info_en.jpeg)
 
-Above the activity feed, there are *Most active companies*. Aggregated data on the last 1500 requests are shown here.
+Above the activity feed, there are *Most active* and *Most blocked* companies. Tap each to see data based on the last 1500 requests.
 
 ### Statistics {#statistics}
 
@@ -181,13 +186,14 @@ For the most part, the settings in this section are best left untouched: only us
 
 ### Block IPv6 {#blockipv6}
 
-For any DNS query sent to get an IPv6 address, our app returns an empty response (as if this IPv6 address does not exist). Now there is an option not to return IPv6 addresses. At this point the description of this function becomes too technical: configuring or disabling IPv6 is the exclusive domain of advanced users. Presumably, if you are one of them, it will be good to know that we now have this feature, if not – there is no need to dive into it.
+For any DNS query sent to get an IPv6 address, our app returns an empty response (as if this IPv6 address does not exist). Now there is an option not to return IPv6 addresses. At this point the description of this function becomes too technical: configuring or disabling IPv6 is the exclusive domain of advanced users. Presumably, if you are one of them, it will be good to know that we now have this feature, if not — there is no need to dive into it.
 
 ### Bootstrap and Fallback servers {#bootstrap-fallback}
 
 Fallback is a backup DNS server. If you chose a DNS server and something happened to it, a fallback is needed to set the backup DNS server until the main server responds.
 
 With Bootstrap, it’s a little more complicated. For AdGuard for iOS to use a custom secure DNS server, our app needs to get its IP address first. For this purpose, the system DNS is used by default, but sometimes this is not possible for various reasons. In such cases, Bootstrap could be used to get the IP address of the selected secure DNS server. Here are two examples to illustrate when a custom Bootstrap server might help:
+
 1. When a system default DNS server does not return the IP address of a secure DNS server and it is not possible to use a secure one.
 2. When our app and third-party VPN are used simultaneously and it is not possible to use System DNS as a Bootstrap.
 
@@ -197,9 +203,9 @@ While Safari content blocking and DNS protection are indisputably two major modu
 
 - **Dark theme**
 
-![Light theme *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/main_screen_en.jpeg)
+![Light theme *mobile_border](https://cdn.adtidy.org/blog/new/26vo4homelight.jpeg)
 
-![Dark theme *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/iOS/features/main_screen_dark_en.jpeg)
+![Dark theme *mobile_border](https://cdn.adtidy.org/blog/new/bgko8homedark.jpeg)
 
 Residing right at the top of **Settings** → **General** screen, this setting allows you to switch between dark and light themes.
 
@@ -219,7 +225,7 @@ An alternative mode for Safari filtering, it unblocks ads everywhere except for 
 
 - **Advanced mode**
 
-Aside from unlocking **DNS filtering**, it grants access to **Advanced settings**. We don't recommend messing with those, unless you know what you're doing or you have consulted with technical support first.
+**Advanced mode** unlocks **Advanced settings**. We don't recommend messing with those, unless you know what you're doing or you have consulted with technical support first.
 
 - **Reset statistics**
 

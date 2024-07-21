@@ -5,13 +5,13 @@ sidebar_position: 2
 
 :::info
 
-This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. 要了解其工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
-## 系统需求
+## 系统要求
 
-**操作系统版本**： macOS 10.12（64 位）或更高版本
+**Operating system version:** macOS 10.15 (64 bit) or higher
 
 **RAM**： 至少 2 GB
 
@@ -21,11 +21,11 @@ This article covers AdGuard for Mac, a multifunctional ad blocker that protects 
 
 ## 安装过程
 
-为了将 AdGuard macOS 版安装到您的电脑上，请您打开浏览器，在地址栏键入 _adguard.com_ 后，在[打开的网页](https://adguard.com/download.html?auto=1)上点击**下载**即可。
+To install AdGuard for Mac on your computer, launch your browser, type *adguard.com* in the address bar, and press **Download** [on the page that opens](https://adguard.com/download.html?auto=1).
 
 ![下载应用 *border](https://cdn.adtidy.org/content/kb/ad_blocker/mac/1.jpg)
 
-请等待 _AdguardInstaller.dmg_ 下载完成后，在 Dock 栏上已安装的文件列表里双击它的图标。
+Wait for *AdguardInstaller.dmg* to download and double-click its icon in the list of downloaded files on the Dock panel.
 
 ![双击打开文件](https://cdn.adtidy.org/content/kb/ad_blocker/mac/installation_open_the_file.jpg)
 
@@ -45,7 +45,7 @@ AdGuard 图标将出现在您的桌面上。 单击它打开安装应用程序�
 
 ![等到下载必要的文件](https://cdn.adtidy.org/content/kb/ad_blocker/mac/6.jpg)
 
-以使用应用程序，需要输入 macOS 账号的用户名和密码。 在弹出的对话框上输入用户名和密码后，点击**好**。
+以使用应用程序，需要输入 macOS 账号的用户名和密码。 Enter the password when prompted in the dialogue box and press **OK**.
 
 ![输入密码](https://cdn.adtidy.org/content/kb/ad_blocker/mac/7.jpg)
 
@@ -58,6 +58,7 @@ AdGuard 图标将出现在您的桌面上。 单击它打开安装应用程序�
 ## 卸载
 
 ### 一般卸载方式
+
 首先，请您点击相应的图标以打开 'Finder'：
 
 ![打开 Finder](https://cdn.adtidy.org/public/Adguard/En/Articles/howtodelete/finder.png)
@@ -79,23 +80,26 @@ AdGuard 图标将出现在您的桌面上。 单击它打开安装应用程序�
     - /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard-pac.daemon.log（文件）。
     - /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log（文件）
 
-    为了执行上述步骤，请您打开 Terminal 终端，然后输入并执行以下的指令：
-    - `sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"`
-    - `rm -R "$HOME/Library/Application Support/com.adguard.mac.adguard"`
-    - `rm $HOME/Library/Preferences/com.adguard.mac.adguard.plist`
-    - `rm -R "$HOME/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac"`
-    - `找到并删除 "$HOME/Library/Application Support" -name "com.adguard.browser_extension_host.nm.json"`
-    - `sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist`
-    - `sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist`
-    - `sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log`
-    - `sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log`
+    To do so, open the Terminal app, then enter and execute the following commands:
+
+    ```bash
+    sudo rm -R "/Library/Application Support/AdGuard Software/com.adguard.mac.adguard"
+    rm -R "$HOME/Library/Application Support/com.adguard.mac.adguard"
+    rm $HOME/Library/Preferences/com.adguard.mac.adguard.plist
+    rm -R "$HOME/Library/Group Containers/TC3Q7MAJXF.com.adguard.mac"
+    find "$HOME/Library/Application Support" -name "com.adguard.browser_extension_host.nm.json" -delete
+    sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-pac.daemon.plist
+    sudo rm /Library/LaunchDaemons/com.adguard.mac.adguard.adguard-tun-helper.daemon.plist
+    sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-pac.daemon.log
+    sudo rm /Library/Logs/com.adguard.mac.adguard/com.adguard.mac.adguard.adguard-tun-helper.daemon.log
+    ```
 
 1. 运行**活动监控器**应用程序。
 1. 通过搜索查找 **cfprefsd** 进程。
 
     ![开启活动监视器](https://cdn.adtidy.org/content/kb/ad_blocker/mac/22.jpg)
 
-1. 退出在用户态下运行的进程（不是在 root 权限运行的）。 为了退出，请点击进程，然后在左上角点击 X。 在对话窗确认要退出。
+1. 退出在用户态下运行的进程（不是在 root 权限运行的）。 为了退出，请点击进程，然后在左上角点击 X。 Confirm the action in the dialogue window.
 
     ![确认](https://cdn.adtidy.org/content/kb/ad_blocker/mac/33.jpg)
 

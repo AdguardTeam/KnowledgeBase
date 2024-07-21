@@ -3,9 +3,9 @@ title: Firefox 브라우저의 인증서 신뢰 문제
 sidebar_position: 11
 ---
 
-:::info
+:::정보
 
-This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -21,52 +21,66 @@ AdGuard가 Firefox에서 HTTPS 트래픽을 성공적으로 필터링하기 위�
 
 Firefox Nightly가 AdGuard 인증서를 신뢰하도록 하려면 다음 단계를 따르십시오.
 
-1. 브라우저를 실행합니다.
-2. Go to **Settings** → **About Firefox**.
+1. Run the browser.
 
-![Firefox 정보 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
+1. Go to **Settings** → **About Firefox**.
 
-3. Firefox 로고를 5번 탭합니다.
-4. Navigate to **Settings** → **Secret Settings**.
+    ![About Firefox *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_about_en.jpeg)
 
-![비밀 설정 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
+1. Tap the Firefox logo five times.
 
-5. **Use third party CA certificates** 기능을 활성화합니다.
+1. Navigate to **Settings** → **Secret Settings**.
+
+    ![Secret Settings *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/firefox-certificates/ff_nightly_secret.jpeg)
+
+1. Toggle **Use third party CA certificates**.
 
 ### Method 2
 
 :::note
 
-이 방법은 **루팅된 기기**에서만 사용할 수 있습니다.
+This method will only work on **rooted** devices.
 
 :::
 
-1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) adb; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
-2. **개발자 모드** 및 **USB 디버깅**을 활성화합니다.
+1. [Install and configure](https://www.xda-developers.com/install-adb-windows-macos-linux/) ADB; On the Windows platform, **Samsung** owners may need to install [this utility](https://developer.samsung.com/mobile/android-usb-driver.html).
+
+1. Activate the **developer mode** and enable **USB debugging**:
+
     - Open the **Settings** app on your phone;
-    - **시스템** 섹션(설정 메뉴의 마지막 항목)으로 이동합니다. In this section, find the sub-item **About phone**;
-    - Tap the **Build number** line 7 times. 그 후에 '**개발자 모드를 켰습니다'**라는 알림을 받게 됩니다. 필요한 경우 기기의 잠금 해제 코드를 입력하세요.
+    - Go to **System** section (last item in the settings menu). In this section, find the sub-item **About phone**;
+    - Tap the **Build number** line 7 times. After that, you will receive a notification that **You are now a developer** (If necessary, enter an unlock code for the device);
     - Open **System Settings** → **Developer Options** → Scroll down and enable **USB debugging** → Confirm debugging is enabled in the window **Allow USB debugging** after reading the warning carefully.
-3. [Firefox ](https://www.mozilla.org/en-US/firefox/releases/)브라우저(정식 버전)를 설치합니다.
-4. Open the **AdGuard settings** → **Network** → **HTTPS Filtering** → Install the certificate in **Firefox** → **INSTALL FOR OLD VERSIONS**;
-5. `adb shell su` 및 `cd data/data/...`를 사용하여 `data/data/org.mozilla.firefox/files/mozilla` 폴더를 엽니다. `xxxxxxx.default`라는 폴더를 찾아 이름을 기억하세요.
-6. 지정된 폴더에는 두 개의 파일이 필요합니다.
+
+1. Install the [Firefox](https://www.mozilla.org/en-US/firefox/releases/) browser (release version);
+
+1. Open the **AdGuard settings** (gear icon in the bottom right corner) → **Filtering** → **Network** → **HTTPS filtering** → **Security certificate** → **Instructions for Firefox** → **Install for old versions**;
+
+1. Open the folder `data/data/org.mozilla.firefox/files/mozilla` using `adb shell su` and `cd data/data/...`, then browse to the folder named `xxxxxxx.default` and memorize its name;
+
+1. In the specified folder we are interested in two files:
+
     - `cert9.db`
     - `key4.db`
-7. 보안 인증서 문제가 발생한 브라우저의 폴더로 이러한 파일을 이동해야 합니다.
-- `data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyy.default`.
-8. 전체 명령은 다음과 같습니다.
+
+1. We need to move these files to a folder of the browser where the security certificate issue occurred:
+
+    - `data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyy.default`.
+
+1. The full command will look like this:
+
     - `adb shell su`
     - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxxx.default/cert9.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
     - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxxx.default/key4.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
 
-**권한 거부됨** 시스템 알림을 받은 경우 먼저 지정된 파일을 권한이 없는 디렉토리로 이동해야 합니다. 그런 다음 Firefox 브라우저에서 필요한 폴더로 이동하시면 됩니다.
+    In case you received the system notification **permission denied**, you should first move the specified files to the permission-free directory. And after that you should move them to the necessary folder in your Firefox browser.
 
-전체 명령은 다음과 같아야 합니다.
-- `adb shell su`
-- `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxx.default/cert9.db sdcard/Download`
-- `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxx.default/key4.db sdcard/Download`
-- `cp -R sdcard/Download/cert9.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
-- `cp -R sdcard/Download/key4.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
+    The full command should look something like this:
 
-`adb shell su`가 작동하지 않으면 처음에 `adb shell`을 시도한 다음 `su`를 시도해 보세요.
+    - `adb shell su`
+    - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxx.default/cert9.db sdcard/Download`
+    - `cp -R data/data/org.mozilla.firefox/files/mozilla/xxxxxxxxx.default/key4.db sdcard/Download`
+    - `cp -R sdcard/Download/cert9.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
+    - `cp -R sdcard/Download/key4.db data/data/org.mozilla.<browser_name>/files/mozilla/yyyyyyyyyy.default`
+
+    If `adb shell su` does not work, you should try `adb shell` initially, and then `su`.

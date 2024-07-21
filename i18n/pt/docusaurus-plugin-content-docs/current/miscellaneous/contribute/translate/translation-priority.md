@@ -1,35 +1,35 @@
 ---
-title: Como priorizar as traduções dos arquivos do Crowdin
+title: How to prioritize the translations of Crowdin files
 sidebar_position: 5
 ---
 
-Existem cinco projetos principais do AdGuard no Crowdin: [AdGuard Applications](https://crowdin.com/project/adguard-applications), [AdGuard Websites](https://crowdin.com/project/adguard-websites), [AdGuard Ad Blocker Knowledge base](https://crowdin.com/project/adguard-knowledge-base), [AdGuard VPN Knowledge Base](https://crowdin.com/project/adguard-vpn-knowledge-base), e [AdGuard DNS Knowledge Base](https://crowdin.com/project/adguard-knowledge-bases).
+There are five major AdGuard projects on Crowdin — [AdGuard Applications](https://crowdin.com/project/adguard-applications), [AdGuard Websites](https://crowdin.com/project/adguard-websites), [AdGuard Ad Blocker Knowledge base](https://crowdin.com/project/adguard-knowledge-base), [AdGuard VPN Knowledge Base](https://crowdin.com/project/adguard-vpn-knowledge-base), and [AdGuard DNS Knowledge Base](https://crowdin.com/project/adguard-knowledge-bases).
 
-Não temos uma sugestão clara sobre com quais arquivos ou produtos do projeto *AdGuard Applications* começar. Basta escolher qualquer produto de que goste.
+We do not have clear guidelines on which files or products of the *AdGuard Applications* project to start with. Just choose any product you like.
 
-Há apenas algumas coisas que queremos mencionar:
+There are just a couple of things we want to mention:
 
-* Você pode ver o aplicativo apenas nos idiomas para os quais todas as traduções forem completadas no Crowdin;
-* Recomendamos traduzir as descrições para lojas de aplicativos em segundo lugar, porque sem a tradução dos próprios produtos, estas descrições não serão necessárias.
+- You can see the app only in those languages for which all translations are completed in Crowdin;
+- We recommend translating the descriptions for app stores in the second place, because without the translation of products themselves, the descriptions won't be needed.
 
-A situação é diferente no projeto *AdGuard Websites*. Os idiomas podem ser adicionados ao site mesmo que um conjunto completo de traduções não esteja disponível. No entanto, isso depende de quais arquivos já foram traduzidos. É por isso que recomendamos que você comece com os arquivos mais importantes, listados abaixo:
+The situation is different in the *AdGuard Websites* project. Languages can be added to the site even if a full set of translations is not available. However, this depends on which files have already been translated. That's why we recommend that you start with the most important files — they are listed below:
 
-[Site do Bloqueador de Anúncios AdGuard](https://crowdin.com/project/adguard-websites/en#/adguard.com)
+[AdGuard Ad Blocker website](https://crowdin.com/project/adguard-websites/en#/adguard.com)
 
-* `crítico.resx`
-* `auth.resx`
-* `bem-vindo.resx`
+- `critical.resx`
+- `auth.resx`
+- `welcome.resx`
 
-[Site do AdGuard VPN](https://crowdin.com/project/adguard-websites/en#/adguard-vpn.com)
+[AdGuard VPN website](https://crowdin.com/project/adguard-websites/en#/adguard-vpn.com)
 
-* `crítico.resx`
-* `auth.resx`
+- `critical.resx`
+- `auth.resx`
 
-[Site do AdGuard DNS](https://crowdin.com/project/adguard-websites/en#/adguard-dns.com)
+[AdGuard DNS website](https://crowdin.com/project/adguard-websites/en#/adguard-dns.com)
 
-* `crítico.resx`
-* `auth.resx`
+- `critical.resx`
+- `auth.resx`
 
 Adding new strings as well as updating existing ones in these files requires special attention from the project translators and proofreaders.
 
-In addition to websites, there is a file for translating [transactional emails](https://crowdin.com/project/adguard-websites/de#/emails) in the AdGuard Websites project. Newly added strings in this file also have a high translation priority.
+In addition to websites, there is a file for translating [transactional emails](https://crowdin.com/project/adguard-websites/en#/emails) in the AdGuard Websites project. Newly added strings in this file also have a high translation priority.

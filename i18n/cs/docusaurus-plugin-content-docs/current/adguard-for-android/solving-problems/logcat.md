@@ -1,91 +1,107 @@
 ---
-title: Jak získat záznam Logcat
+title: Jak získat systémové záznamy
 sidebar_position: 4
 ---
 
 :::info
 
-Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## Obecné pokyny
-
-Pro řešení problémů s pády téměř vždy nestačí běžný protokol. V takových případech potřebujeme k identifikaci původu problému systémový záznam. Níže je uveden návod, jak jej získat.
+Někdy nemusí běžný záznam stačit k identifikaci původu problému. V takových případech je nutný systémový záznam. Níže jsou uvedeny pokyny, jak je shromáždit a získat: prostřednictvím možností pro vývojáře a Logcat.
 
 ## Zachycení hlášení o chybě ze zařízení
+
 Chcete-li získat hlášení o chybě přímo ze zařízení, postupujte takto:
 
 1. Ujistěte se, že máte zapnuté [Možnosti pro vývojáře](https://developer.android.com/studio/run/device.html#developer-device-options).
 
-2. V **Možnostech pro vývojáře** klepněte na **Vytvořit hlášení o chybě**.
+1. V **Možnostech pro vývojáře** klepněte na **Vytvořit hlášení o chybě**.
 
-![Hlášení o chybě *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
+    ![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporten.png)
 
-3. Vyberte požadovaný typ hlášení o chybě a klepněte na **Nahlásit**. >Po chvíli se zobrazí oznámení, že hlášení o chybě je připraveno (viz obrázek 2).
+1. Vyberte požadovaný typ hlášení o chybě a klepněte na **Nahlásit**.
 
-![Hlášení o chybě *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
+    :::note
 
-4. Chcete-li sdílet hlášení o chybě, klepněte na oznámení.
+    Po chvíli se zobrazí oznámení, že hlášení o chybě je připraveno (viz obrázek 2).
 
-![Hlášení o chybě *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
-
-5. Odešlete tento protokol našemu týmu podpory.
-
-:::note
-
-Náš tým podpory zpracuje vaši žádost mnohem rychleji, pokud ve zprávě uvedete číslo HelpDesk nebo číslo problému GitHub.
 
 :::
 
-## Další pokyny (pro staré verze systému Android)
+    ![Bug report *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreporteen.png)
 
-Na starých zařízeních se systémem Android taková možnost automatického zachycení hlášení o chybě neexistuje. To je třeba provést ručně podle tohoto návodu:
+1. Chcete-li sdílet hlášení o chybě, klepněte na oznámení.
+
+    ![Bug report *mobile_border](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/Android3.1/bugreport3en.png)
+
+1. Odešlete tento protokol našemu týmu podpory.
+
+    :::note
+
+    Náš tým podpory zpracuje vaši žádost mnohem rychleji, pokud ve zprávě uvedete číslo HelpDesk nebo číslo problému GitHub.
+
+
+:::
+
+## Zachycení hlášení o chybě prostřednictvím Logcat
+
+Na zařízeních se systémem Android 7 a nižším není možné automaticky odesílat hlášení o chybách. Pak je můžete zachytit ručně pomocí Logcat — standardního nástroje příkazového řádku systému Android, který vypíše záznamy systémových zpráv.
+
+Postupujte podle těchto pokynů:
 
 **Část #1: příprava zařízení**
 
 1. Přepněte zařízení do režimu pro vývojáře. Postupujte takto: přejděte do **Nastavení** → **O zařízení** → klepněte na **Číslo sestavení** 7krát.
 
-2. Přejděte na **Možnosti pro vývojáře**.
+1. Přejděte na **Možnosti pro vývojáře**.
 
-3. Zapněte **USB ladění**.
+1. Zapněte **USB ladění**.
 
-4. Navyšte **velikost vyrovnávací paměti** na 4 MB.
+1. Navyšte **velikost vyrovnávací paměti** na 4 MB.
 
 4 MB by mělo stačit na uložení záznamů, které potřebujeme, dokud nebudete schopni provést druhou část (získání záznamů ze zařízení);
 
-**Důležité:** Po dokončení první části musíte problém znovu reprodukovat!
+**Část #2: reprodukujte problém**
 
+Po dokončení první části je důležité problém reprodukovat.
 
-**Část #2: získání záznamu**
+1. Reprodukujte problém.
+
+1. Zapamatujte si/zapište si datum a čas reprodukce a později je uveďte v e-mailu pro naši podporu.
+
+**Část #3: získání záznamu**
 
 1. Připojte zařízení k počítači pomocí kabelu USB.
 
-2. Stáhnětei a nainstalujte Minimal ADB:
+1. Stáhněte [Android SDK Platform Tools](https://developer.android.com/studio/releases/platform-tools#downloads). V části Stahování vyberte příslušný odkaz ke stažení pro váš operační systém. Po klepnutí na odkaz se stáhne soubor ZIP. Soubory ADB (Android Debug Bridge) můžete ze souboru ZIP rozbalit a uložit kamkoli chcete.
 
-<http://forum.xda-developers.com/showthread.php?t=2317790>
+1. Otestujte, zda ADB funguje správně: připojte zařízení Android k počítači pomocí kabelu USB, otevřete příkazový řádek, prostředí PowerShell nebo Terminal a spusťte následující příkaz:
 
-Přímý odkaz ke stažení:
+    `adb devices`
 
-<https://www.androidfilehost.com/?fid=24052804347803384>
+    Příklad úspěšného výsledku:
 
-3. Spusťte tento příkaz v konzole (otevře se po instalaci):
+    ![Step 3](https://cdn.adtidy.org/content/kb/ad_blocker/android/logcat/logcat_step-3.png)
 
-adb logcat -v threadtime -d > C:\logcat.txt
+1. Poté spusťte následující příkaz (vložte příslušnou cestu):
 
-Tento protokol nám zašlete prostřednictvím podpory nebo jiným způsobem.
+    `adb logcat -v threadtime -d > C:\Program Files\platform-tools\logs.txt`
 
-**Alternativní způsob pro uživatele s přístupem ROOT:**
+    Pošlete vytvořený `txt` soubor a čas, kdy byl problém reprodukován (z části #2) našemu týmu podpory na adresu support@adguard.com.
+
+### Alternativní způsob pro uživatele s přístupem ROOT
 
 1. Stáhněte a spusťte [Logcat](https://play.google.com/store/apps/details?id=com.pluscubed.matlog).
 
-2. V menu vyberte **Zaznamenat**. Zvolte název souboru protokolu nebo stiskněte **OK**. Nyní můžete stisknout tlačítko **Domů**, CatLog bude pokračovat v nahrávání záznamu na pozadí.
+1. V menu vyberte **Zaznamenat**. Zvolte název souboru protokolu nebo stiskněte **OK**. Nyní můžete stisknout tlačítko **Domů**, CatLog bude pokračovat v nahrávání záznamu na pozadí.
 
-3. Znovu reprodukujte problém.
+1. Znovu reprodukujte problém.
 
-4. Otevřete CatLog a stiskněte **Ukončit záznam** v menu.
+1. Otevřete CatLog a stiskněte **Ukončit záznam** v menu.
 
-5. Odešlete tento protokol našemu týmu podpory.
+1. Odešlete tento protokol našemu týmu podpory.
 
 :::note
 

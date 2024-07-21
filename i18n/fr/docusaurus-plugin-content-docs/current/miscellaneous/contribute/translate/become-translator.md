@@ -35,7 +35,7 @@ En outre, il est possible d'ouvrir des traductions en mode Vote si vous souhaite
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/mode.png)
 
-Vous pouvez trouver quelques [conseils utiles sur la traduction d'AdGuard dans cet article](../guidelines). Jetez-y un coup d'œil.
+Vous pouvez trouver quelques [conseils utiles sur la traduction d'AdGuard dans cet article](../guidelines). Veuillez y jeter un coup d'œil.
 
 ### Comment devenir relecteur {#proofreaders}
 

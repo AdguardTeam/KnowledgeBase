@@ -9,12 +9,12 @@ Pochopení tohoto článku může vyžadovat základní znalosti o šifrování,
 
 Nejprve se podívejte na tento jednoduchý diagram, který ukazuje obecnou strukturu protokolu HTTPS:
 
-![What is HTTPS filtering](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
+![What is HTTPS filtering?](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https_filtering.png)
 
 AdGuard zkopíruje vlastnosti připojení TLS, které používá váš prohlížeč:
 
-* AdGuard používá stejnou verzi TLS
-* AdGuard používá stejné šifrovací metody (šifry) jako váš prohlížeč
+- AdGuard používá stejnou verzi TLS
+- AdGuard používá stejné šifrovací metody (šifry) jako váš prohlížeč
 
 V podstatě to znamená, že pokud používáte moderní a bezpečný prohlížeč, bude brát v úvahu všechny známé problémy TLS a nebude se pokoušet používat nebezpečné šifry.
 

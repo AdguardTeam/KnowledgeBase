@@ -35,7 +35,7 @@ AdGuard製品、ウェブサイト、ナレッジベースの翻訳にご協力�
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/mode.png)
 
-AdGuardの翻訳に役立つヒントは、[こちらの記事](../guidelines)で紹介しています。 ぜひご覧ください。
+AdGuardの翻訳に役立つヒントは、[こちらの記事](../guidelines)で紹介しています。 Please take a look at it.
 
 ### 校正者になるには {#proofreaders}
 
@@ -51,4 +51,4 @@ AdGuardの翻訳に役立つヒントは、[こちらの記事](../guidelines)�
 
 - 自分の言語で問いかけられた、翻訳に関連するコメントに返信します。
 
-毎年、優秀な校正者にはAdGuardからプレゼントが贈られます。 また、活躍した翻訳者にも報酬が送られます。 [翻訳の報奨制度](../rewards)で詳細をお読みください。
+Every year, the best proofreaders receive gifts from AdGuard. また、活躍した翻訳者にも報酬が送られます。 [翻訳の報奨制度](../rewards)で詳細をお読みください。

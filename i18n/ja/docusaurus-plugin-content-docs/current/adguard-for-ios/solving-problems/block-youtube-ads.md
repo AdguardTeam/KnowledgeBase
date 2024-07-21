@@ -1,30 +1,34 @@
 ---
-title: SafariでYouTube広告をブロックする方法
+title: How to block YouTube ads
 sidebar_position: 4
 ---
 
 :::info
 
-This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+この記事では、システムレベルでお使いのデバイスを保護する多機能広告ブロッカー、「AdGuard for iOS」について書いています。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
 
-:::
+:::  
+
+<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/YW9Ojcm1Gkg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## How to block ads in the YouTube app
+
+1. Open the YouTube app.
+1. Choose a video and tap *Share*.
+1. Tap *More*, then select *Block YouTube Ads (by AdGuard)*.
+
+AdGuard will open its ad-free video player.
 
 ## SafariでYouTube広告をブロックする方法
 
-残念ながら、公式YouTubeアプリで広告をブロックすることは技術的に不可能ですが、SafariでYouTubeを視聴する方法があります。 AdGuard for iOS v4.2 では、YouTubeアプリでの広告ブロックに特化したアクション拡張機能を導入しました（AdGuard v4.2以降で利用可能）。 アプリをv4.2にアップデートすると、この拡張機能が自動的にインストールされるので、複雑な手順を踏む必要はありません。 広告以外にも、iPadで広告ブロックした後に残る空白もこの拡張機能で削除されます。 また、YouTubeの動画が自動的に再生されない不具合も修正されているため余計なタップをする必要がありません。
-
-![SafariでYouTube広告をブロックする方法 *mobile](https://cdn.adguard.com/public/Adguard/Blog/ios_safari_extension_0_ja.jpeg)
-
-【SafariでYouTube広告をブロックする手順】
-
-1. Safariで youtube.com を開く
-2. 共有ボタンをタップ
-3. 「YouTube広告をブロック(AdGuard)」をタップ
-
-完了です！広告なしでYouTubeを閲覧いただけます。 ※ページを再読み込みした際には手順の 2. と 3. を再度行ってください。
-
 :::tip
 
-AdGuard拡張機能が表示されない場合があります。 表示されない場合は、再度手順を行ってみるか、端末を再起動してください。
+Make sure you've given AdGuard access to all websites. You can check it in Safari → Extensions → AdGuard. Then open AdGuard and enable *Advanced protection*.
 
 :::
+
+1. Safariで youtube.com を開く
+1. Choose a video and tap *Share*.
+1. Tap *Block YouTube Ads (by AdGuard)*.
+
+AdGuard will open its ad-free video player.

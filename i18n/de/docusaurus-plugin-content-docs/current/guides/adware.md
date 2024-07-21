@@ -5,7 +5,7 @@ sidebar_position: 6
 
 :::note
 
-AdGuard is not an antivirus program. Es kann Sie warnen, wenn Sie eine Malware- oder Phishing-Website besuchen, aber **kann keine Viren von Ihrem Gerät entfernen.**
+AdGuard ist kein Antivirenprogramm. Es kann Sie warnen, wenn Sie eine Malware- oder Phishing-Website besuchen, aber **kann keine Viren von Ihrem Gerät entfernen.**
 
 :::
 
@@ -13,11 +13,7 @@ Wenn Sie vermuten, dass Ihr Computer mit Malware oder Viren infiziert ist, könn
 
 ## Kostenlose Antivirenprogramme {#free-antivirus}
 
-Es gibt viele davon und Sie können jeden verwenden, den Sie bevorzugen, zum Beispiel:
-
-[Dr.Web CureIt!](http://www.freedrweb.com/cureit/?lng=en)
-
-Wenn diese Überprüfung mit Antivirenprogrammen nichts ergeben hat, der Computer sich aber immer noch verdächtig verhält, versuchen Sie, ihn auf Adware zu testen, die ihre Werbung auf allen von Ihnen geöffneten Seiten platzieren kann.
+Es gibt viele von ihnen, und Sie können jedes verwenden, welches Sie bevorzugen. Wenn diese Überprüfung mit Antivirenprogrammen nichts ergeben hat, der Computer sich aber immer noch verdächtig verhält, versuchen Sie, ihn auf Adware zu testen, die ihre Werbung auf allen von Ihnen geöffneten Seiten platzieren kann.
 
 ## Wie man das System von Adware befreit {#adware}
 
@@ -25,42 +21,42 @@ Im Internet finden Sie viele Anwendungen, die auf dieses Problem abzielen. Sie k
 
 Nehmen wir als Beispiel AdwareCleaner. Nachdem die Anwendung heruntergeladen und erfolgreich installiert wurde, führen Sie die folgenden Schritte aus:
 
-1) Starten Sie die Anwendung und klicken Sie auf **Scan now**.
+1. Starten Sie die Anwendung und klicken Sie auf **Jetzt scannen**.
 
 ![adware1 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware1.png)
 
-2) Sobald der Scan abgeschlossen ist, müssen Sie verdächtige Objekte an **Quarantine** senden.
+1. Sobald die Überprüfung abgeschlossen ist, müssen Sie verdächtige Objekte in die **Quarantäne** schicken.
 
 ![adware2 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware2.png)
 
-3) Wenn die Elemente in **Quarantine** verschoben wurden, können Sie das System von unnötigem Ballast befreien, indem Sie **Clear the system** wählen.
+1. Wenn die Elemente in **Quarantäne** verschoben wurden, können Sie das System von Ballast befreien, indem Sie **System bereinigen** wählen.
 
-4) In einigen Fällen müssen Sie möglicherweise das System neu starten (**Reboot system**), nachdem die Reinigung abgeschlossen ist.
+1. In einigen Fällen müssen Sie möglicherweise das **System neu starten**, nachdem die Bereinigung abgeschlossen ist.
 
 ![adware3 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware3.png)
 
-5) Nach dem Neustart des Systems ist die Reinigung abgeschlossen. Bei Bedarf können Sie jederzeit den **Report** über die geleistete Arbeit lesen.
+1. Nach dem Neustart des Systems ist die Reinigung abgeschlossen. Bei Bedarf können Sie jederzeit den **Bericht** über die durchgeführte Bereinigung einsehen.
 
 ![adware4 *border](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/adware4.png)
 
-Wenn das nicht geholfen hat, deaktivieren Sie vorübergehend alle Erweiterungen und einige andere Einstellungen im Browser gemäß [diese Anweisungen](#instructions).
+Wenn das nicht geholfen hat, deaktivieren Sie vorübergehend alle Erweiterungen und einige andere Einstellungen im Browser gemäß [dieser Anleitung](#instructions).
 
 Wenn das Deaktivieren von Einstellungen und Erweiterungen nicht hilft, versuchen Sie, [Verknüpfungen Ihres Browsers neu zu erstellen](#shortcuts).
 
-Weiter unten auf dieser Seite beschreiben wir die Anweisungen zum Entfernen einiger der am häufigsten vorkommenden Anzeigenerweiterungen.
+Auf dieser Seite wird beschrieben, wie Sie einige der am häufigsten vorkommenden Werbeerweiterungen entfernen können.
 
-## Wie man Einstellungen und Erweiterungen im Browser deaktiviert {#instructions}
+## So deaktivieren Sie Einstellungen und Erweiterungen im Browser {#instructions}
 
 Nachfolgend finden Sie Anweisungen zum Deaktivieren von Einstellungen und Erweiterungen für die gängigsten Browser:
 
-* [für Google Chrome](https://support.google.com/chrome/answer/187443?hl=en)
+- [für Google Chrome](https://support.google.com/chrome/answer/187443?hl=en)
 
-* [für Mozilla Firefox](https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons)
+- [für Mozilla Firefox](https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons)
 
-* [für Opera](https://help.opera.com/en/latest/customization/#extensions)
+- [für Opera](https://help.opera.com/en/latest/customization/#extensions)
 
-## Wie man Verknüpfungen für Ihre Browser neu erstellt {#shortcuts}
+## So erstellen Sie neue Verknüpfungen für Ihre Browser {#shortcuts}
 
 Sehr oft installieren Malware- und Adware-Programme ihre Homepage auf sehr einfache Weise — sie ersetzen die Desktop-Verknüpfung Ihres Browsers, die Taskleiste und die *Start*-Menüpunkte.
 
-Die einfachste Lösung in diesem Fall ist, alle Verknüpfungen manuell zu löschen und selbst neu zu erstellen.
+Die einfachste Lösung ist in diesem Fall, alle Verknüpfungen manuell zu löschen und sie selbst neu zu erstellen.

@@ -5,7 +5,7 @@ sidebar_position: 7
 
 :::info
 
-Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://adguard.com/download.html?auto=true)
+Dieser Artikel behandelt AdGuard für Windows, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -61,6 +61,10 @@ Aktivieren Sie diese Funktion, um Popup-Benachrichtigungen von AdGuard anzuzeige
 
 Aktivieren Sie diese Funktion, wenn Sie möchten, dass AdGuard automatisch Filter-URLs (z.B. `abp:subscribe` und ähnliche) abfängt und einen benutzerdefinierten Filter-Installationsdialog öffnet.
 
+### Filter HTTP/3
+
+If this option is enabled, AdGuard will filter requests sent over HTTP/3 in addition to other request types.
+
 ### Umleitungstreiber-Modus verwenden
 
 Wenn diese Option aktiviert ist, fängt AdGuard den gesamten Datenverkehr ab und leitet ihn zur weiteren Filterung an den lokalen Proxy-Server weiter.
@@ -75,7 +79,11 @@ Aktivieren Sie diese Option, damit sich das Hauptfenster von AdGuard nach dem La
 
 Ab v7.12 filtert der AdGuard-Dienst standardmäßig keinen Datenverkehr nach dem Start des Betriebssystems, wenn die Option „AdGuard beim Systemstart starten” deaktiviert ist. Mit anderen Worten, der Dienst von AdGuard wird im „Leerlaufmodus” gestartet. Aktivieren Sie diese Option, damit AdGuard den Datenverkehr auch dann filtert, wenn die App nicht gestartet ist.
 
-*Note that before v7.12 the AdGuard's service started in filtering mode by default (even if the *Launch AdGuard at system start-up* was disabled). If you were satisfied with the old behavior, enable this option.*
+:::note
+
+Before v7.12, the AdGuard service started in filtering mode by default (even if the *Launch AdGuard at system start-up* was disabled). If you were satisfied with the old behavior, enable this option.
+
+:::
 
 ### Localhost filtern
 
@@ -98,7 +106,7 @@ Host: example.org`
 
 umgewandelt in
 
-`GET  /foo/bar/ HTTP/1.1
+`GET /foo/bar/ HTTP/1.1
 Host: example.org`
 
 Diese Option wird nur angewendet, wenn die Option *Schutz vor DPI* im Privatsphärenmodus aktiviert ist.
@@ -129,13 +137,21 @@ Sendet regelmäßig TCP-Pakete über eine inaktive Verbindung, um sicherzustelle
 
 Hier können Sie eine Leerlaufzeit in Sekunden angeben, bevor ein Keepalive-Test gesendet wird. Wird 0 (Null) angegeben, wird der vom System gewählte Wert verwendet.
 
-Beachten Sie, dass diese Einstellung nur funktioniert, wenn die Option *TCP-Keepalive aktivieren* aktiviert ist.
+:::note
+
+This setting only works when the *Enable TCP keepalive* option is enabled.
+
+:::
 
 ### TCP-Keepalive-Zeitüberschreitung
 
 Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. Wird 0 (Null) angegeben, wird der vom System gewählte Wert verwendet.
 
-Beachten Sie, dass diese Einstellung nur funktioniert, wenn die Option *TCP-Keepalive aktivieren* aktiviert ist.
+:::note
+
+This setting only works when the *Enable TCP keepalive* option is enabled.
+
+:::
 
 ### Java blockieren
 
@@ -169,17 +185,17 @@ AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to
 
 Hier können Sie festlegen, wie AdGuard auf Domains reagieren soll, die durch DNS-Regeln basierend auf der [Hosts-Regelsyntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax) gesperrt werden.
 
-* Mit Fehler „Abgelehnt“ antworten
-* Mit Fehler „NxDomain“ antworten
-* Mit benutzerdefinierter IP-Adresse antworten
+- Mit Fehler „Abgelehnt“ antworten
+- Mit Fehler „NxDomain“ antworten
+- Mit benutzerdefinierter IP-Adresse antworten
 
 ### Sperrmodus für Regeln im Adblock-Stil
 
 Hier können Sie festlegen, wie AdGuard auf Domains reagieren soll, die durch DNS-Regeln auf Basis der [Adblock-Syntax](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax) gesperrt werden.
 
-* Mit Fehler „Abgelehnt“ antworten
-* Mit Fehler „NxDomain“ antworten
-* Mit benutzerdefinierter IP-Adresse antworten
+- Mit Fehler „Abgelehnt“ antworten
+- Mit Fehler „NxDomain“ antworten
+- Mit benutzerdefinierter IP-Adresse antworten
 
 ### Benutzerdefinierte IPv4-Adresse
 
@@ -193,9 +209,9 @@ Wenn die benutzerdefinierte IP-Adresse im Sperrmodus für Hosts-Regeln oder im S
 
 Hier können Sie einen alternativen DNS-Server angeben, an den eine DNS-Anfrage umgeleitet wird, wenn der Hauptserver nicht innerhalb der im nächsten Abschnitt angegebenen Zeitspanne antwortet. Es stehen drei Optionen zur Auswahl:
 
-* Keine Ausweichserver verwenden;
-* Standardserver des Systems verwenden;
-* Benutzerdefinierte Server verwenden.
+- Keine Ausweichserver verwenden;
+- Standardserver des Systems verwenden;
+- Benutzerdefinierte Server verwenden.
 
 ### ECH blockieren
 

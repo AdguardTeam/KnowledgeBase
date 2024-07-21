@@ -3,8 +3,8 @@ title: AdGuard hakkında yazın
 sidebar_position: 3
 ---
 
-If you like AdGuard and want to spread your impressions of the product(s) over the internet — in social media, personal blogs and/or on websites — then this article can be useful for you.
+AdGuard'ı beğendiyseniz ve bu konudaki düşüncelerinizi sosyal medyada ya da kişisel blog veya sitenizde paylaşmak istiyorsanız, bu makale ilginizi çekebilir.
 
-Çevrimiçi deneyiminizi paylaştığınızda, bize [pr@adguard.com](mailto:pr@adguard.com) adresine bir bağlantı gönderin, size ücretsiz bir lisans anahtarıyla teşekkür edelim. Sitenizin hedef kitlesinin on veya bin kişi olması hiç önemli değil, her türlü emeğe saygı duyuyoruz. Aklınızda tutmanız gereken tek not, incelemenizin yaklaşık 300 ila 500 kelime arasında olması gerektiğidir.
+Deneyiminizi paylaştıktan sonra [pr@adguard.com](mailto:pr@adguard.com) adresine e-posta gönderin ve gönderinize bir bağlantı ekleyin. En iyi yazılmış incelemelerin yazarlarına ücretsiz bir AdGuard lisans anahtarı verilir. Sitenizin hedef kitlesinin küçük veya büyük olması fark etmez; her çabaya değer veriyoruz. İncelemenizin yaklaşık 300 ila 500 kelime arasında olması gerektiğini lütfen unutmayın.
 
-Bir video yapmak veya başka bir şey yapmak istiyorsanız, gelecekte yanlış anlaşılmaları önlemek için bize önceden bildirin. Aynı durum, planınız AdGuard logosu, afişler veya diğer görsel öğelerin kullanımını içeriyorsa geçerlidir. İletişim e-postası aynı kalır: [pr@adguard.com](mailto:pr@adguard.com).
+If you are planning to make a video about AdGuard or do anything else offbeat, please let us know in advance to avoid any possible misunderstandings. Aynı durum, planınız AdGuard logosunun, afişlerinin veya diğer görsel öğelerin kullanımını içeriyorsa geçerlidir. İletişim e-posta adresi aynı kalır: [pr@adguard.com](mailto:pr@adguard.com).

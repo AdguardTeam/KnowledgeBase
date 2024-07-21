@@ -5,32 +5,32 @@ sidebar_position: 2
 
 :::info
 
-This article is about AdGuard Content Blocker, which only safeguards your Samsung Internet browser or Yandex Browser. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Cet article concerne AdGuard Content Blocker, qui protège uniquement le navigateur Samsung Internet et le navigateur Yandex. Pour protéger l'ensemble de votre appareil, [téléchargez l'application AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-The application is available in five stores: [Google Play](https://play.google.com/store/apps/details?id=com.adguard.android.contentblocker), [Samsung Galaxy store](https://galaxystore.samsung.com/detail/com.adguard.android.contentblocker), [Huawei AppGallery](https://appgallery.huawei.com/#/app/C100440597), [Aptoide](https://adguard-content-blocker.en.aptoide.com/), and [F-Droid](https://f-droid.org/en/packages/com.adguard.android.contentblocker/).
+L'application est disponible dans cinq magasins : [Google Play](https://play.google.com/store/apps/details?id=com.adguard.android.contentblocker), [Samsung Galaxy Store](https://galaxystore.samsung.com/detail/com.adguard.android.contentblocker), [Huawei AppGallery](https://appgallery.huawei.com/#/app/C100440597), [Aptoide](https://adguard-content-blocker.en.aptoide.com/) et [F-Droid](https://f-droid.org/en/packages/com.adguard.android.contentblocker/).
 
-To install AdGuard Content Blocker from Google Play, search _AdGuard Content Blocker_ and tap _Install_.
+Pour installer AdGuard Content Blocker depuis Google Play, recherchez *AdGuard Content Blocker* et appuyez sur *Installer*.
 
-![Content Blocker on Google Play *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_play_market.jpg)
+![Content Blocker sur Google Play *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_play_market.jpg)
 
 :::note
 
-AdGuard Content Blocker works in two browsers: [Yandex Browser](https://browser.yandex.com/) and [Samsung Internet Browser](https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser).
+AdGuard Content Blocker fonctionne sur deux navigateurs : [Yandex Browser](https://browser.yandex.com/) et [Samsung Internet Browser](https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser).
 
 :::
 
-After the installation is completed, tap _Open_ to run the app.
+Une fois l'installation terminée, appuyez sur *Ouvrir* pour lancer l'application.
 
-![Content Blocker installed *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_play_market_installed.jpg)
+![Content Blocker installé *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_play_market_installed.jpg)
 
-If you have a supported browser installed on your device, the app will ask you to enable AdGuard.
+Si vous avez un navigateur pris en charge installé sur votre appareil, l'application vous demandera d'activer AdGuard.
 
-![Onboarding: user has a supported browser *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_onboarding2.jpg)
+![Onboarding : l'utilisateur a un navigateur pris en charge *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_onboarding2.jpg)
 
-If you don't have a supported browser, you will be prompted to choose and install one.
+Si vous n'avez pas de navigateur pris en charge, on vous demandera de choisir et d'installer l'un d'entre eux.
 
-![Onboarding: no supported browser *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_onboarding3.jpg)
+![Onboarding : aucun navigateur pris en charge *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/content_blocker/content_blocker_onboarding3.jpg)
 
-After the browser is installed, you can start AdGuard Content Blocker to block ads and trackers in it.
+Une fois le navigateur installé, vous pouvez démarrer AdGuard Content Blocker pour bloquer les publicités et les traqueurs.

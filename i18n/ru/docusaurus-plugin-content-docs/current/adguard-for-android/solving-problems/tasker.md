@@ -5,7 +5,7 @@ sidebar_position: 3
 
 :::info
 
-This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -15,18 +15,17 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 Существует множество приложений-таскеров‎, например, [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&noprocess), [AutomateIt](https://play.google.com/store/apps/details?id=AutomateIt.mainPackage&noprocess) и другие. AdGuard предоставляет интерфейс, который позволяет этим приложениям настраивать различные правила автоматизации.
 
-![Автоматизация AdGuard *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/tasker/adgautomation.png)
+![Автоматизация *mobile_border](https://cdn.adtidy.org/blog/new/mmwmfautomation.jpg)
 
 Благодаря этому интерфейсу любое приложение может послать специальное сообщение (intent), которое содержит имя действия и дополнительную информацию. AdGuard увидит этот интент и выполнит запрашиваемое действие.
 
 ### Вопросы безопасности
 
-Может ли быть опасным позволять каким-то случайным приложениям управлять тем, что делает AdGuard? Именно для этого вместе с интентом отправляется пароль. Этот пароль генерируется автоматически, но вы можете поменять его самостоятельно в расширенных настройках AdGuard.
+Не опасно ли позволять каким-то случайным приложениям управлять работой AdGuard? Опасно, именно поэтому вместе с интентом отправляется пароль. Этот пароль генерируется автоматически, но вы можете поменять его самостоятельно в расширенных настройках AdGuard.
 
 ### Доступные действия
 
 Вот список действий, которые, будучи включёнными в интент, будут понятны AdGuard:
-
 
 `start` запускает защиту, дополнительные данные не нужны;
 
@@ -42,16 +41,31 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 `enable:true` или `enable:false` соответственно включает или выключает DNS-фильтрацию.
 
+`fake_dns` allows resolving DNS requests on the specified proxy server. This requires an extra flag:
+
+`enable:true` or `enable:false` enables or disables the *Use FakeDNS* setting, respectively.
+
+:::note
+
+When the *Use FakeDNS* setting is enabled, *DNS Protection* will be automatically disabled. DNS requests won't be filtered locally.
+
+:::
+
 -----
 
 `dns_server` переключается между DNS-серверами, необходимо указать дополнительные данные:
 
  `server:adguard dns` переключается на сервер AdGuard DNS;
-> Note: the full list of supported provider names can be found inside AdGuard DNS settings under the "Custom DNS settings"
+
+:::note
+
+Полный список поддерживаемых провайдеров можно найти в нашем списке [известных DNS-провайдеров](https://adguard-dns.io/kb/general/dns-providers/).
+
+:::
 
  `server:custom` переключается на ранее добавленный сервер с именем `custom`;
 
- `server:tls://dns.adguard.com` создаёт новый сервер и переключается на него, если среди ранее добавленных серверов и провайдеров нет сервера с таким же адресом. В противном случае он переключается на соответствующий сервер. Адреса серверов можно добавлять в виде IP (обычный DNS), `sdns://…` (DNSCrypt или DNS-over-HTTPS), `https://…` (DNS-over-HTTPS) или `tls://...` (DNS-over-TLS);
+ `server:tls://dns.adguard.com` создаёт новый сервер и переключается на него, если среди ранее добавленных серверов и провайдеров нет сервера с таким же адресом. В противном случае он переключается на соответствующий сервер. You can add server addresses as IP ( regular DNS), `sdns://…` (DNSCrypt or DNS-over-HTTPS), `https://…` (DNS-over-HTTPS) or `tls://...` (DNS-over-TLS);
 
  `server:1.1.1.1, tls://1.1.1.1` создаёт сервер с адресами через запятую и переключается на него. При добавлении сервера через `server:1.1.1.1, tls://1.1.1.1` ранее добавленный сервер удаляется.
 
@@ -59,14 +73,11 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
  -----
 
-
-
-`proxy_state` включает/отключает исходящий прокси.  В поле Extra нужно добавить информацию:
+`proxy_state` включает/отключает исходящий прокси. В поле Extra нужно добавить информацию:
 
 `enable:true` или `enable:false` активирует или деактивирует исходящий прокси соответственно.
 
 -----
-
 
 `proxy_default` устанавливает прокси из списка ранее добавленных по умолчанию или создаёт новый, если сервер ранее не добавлялся.
 
@@ -82,23 +93,24 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
 `server:[name]`, где `[name]` — имя исходящего прокси из списка.
 
-Или вы можете настроить параметры сервера вручную:
+Вы также можете настроить параметры удаления вручную:
 
 `server:[type=…&host=…&port=…&username=…&password=…&udp=…&trust=…]`.
 
-* **Обязательные параметры**:
+- **Обязательные параметры**:
 
 `[type]` — тип прокси-сервера:
-- HTTP;
-- SOCKS4;
-- SOCKS5;
-- HTTPS_CONNECT.
+
+- HTTP
+- SOCKS4
+- SOCKS5
+- HTTPS_CONNECT
 
 `[host]` — исходящий прокси-домен или IP-адрес;
 
 `[port]` — исходящий порт прокси (целое число от 1 до 65535);
 
-* **Дополнительные параметры**:
+- **Дополнительные параметры**:
 
  `[login and password]` — только если этого требует прокси. Эти данные игнорируются при настройке **SOCKS4**;
 
@@ -106,28 +118,25 @@ This article covers AdGuard for Android, a multifunctional ad blocker that prote
 
  `[trust]` применяется только для типа сервера: **HTTPS_CONNECT** и включает опцию **Trust any certificates**. Необходимо указать значение **true или false**.
 
-:::note Example
+:::note Пример
 
-`setting by name`: server:MyServer
+`настройка по имени сервера`: server:MyServer
 
- `manually settings`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
-
+`настройка вручную`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
 
 :::
 
------
-
-**Не забывайте добавить пароль, имя пакета и класс. Это нужно делать для каждого интента.**
+**Не забудьте дополнительно указать пароль, имя приложения (package) и класс. Это нужно делать для каждого интента.**
 
 Extra: `password:*******`
 
 Package: `com.adguard.android`
 
-Класс: `com.adguard.android.receiver.AutomationReceiver`
+Class: `com.adguard.android.receiver.AutomationReceiver`
 
 :::note
 
-Before v4.0 the class was called `com.adguard.android.receivers.AutomationReceiver` but then we changed its name to `com.adguard.android.receiver.AutomationReceiver`. Если вы пользовались этой функцией, пожалуйста, используйте новое название.
+До версии 4.0 класс назывался `com.adguard.android.receivers.AutomationReceiver`, но затем мы изменили его название на `com.adguard.android.receiver.AutomationReceiver`. Если вы пользовались этой функцией, пожалуйста, используйте новое название.
 
 :::
 

@@ -12,11 +12,11 @@ Důrazně doporučujeme, abyste si tento článek řádně přečetli a dozvěd�
 
 Podstatná jména v různých jazycích mohou mít několik tvarů množného čísla. Jejich použití závisí na počtu věcí, o kterých mluvíte.
 
-Např. anglická slova mají dva slovní tvary, když se o něčem mluví v jednotném čísle, např. *'one star'* a v množném čísle – *'two stars'*. Je jedno, jestli řeknete pět, dvacet šest nebo třeba pět set třicet dva hvězdiček – koncové "s" zůstane stejné. Některé jazyky však mohou obsahovat pouze jeden nebo více tvarů množného čísla.
+Např. anglická slova mají dva slovní tvary, když se o něčem mluví v jednotném čísle, např. *'one star'* a v množném čísle — *'two stars'*. Je jedno, jestli řeknete pět, dvacet šest nebo třeba pět set třicet dva hvězdiček — koncové "s" zůstane stejné. Některé jazyky však mohou obsahovat pouze jeden nebo více tvarů množného čísla.
 
-Na rozdíl od angličtiny má polština tři tvary množného čísla podstatných jmen. Jeden z nich se používá, když se mluví o něčem v jednotném čísle, druhý tvar se používá v množném čísle, ale s číslovkami končícími na 2-4, s výjimkou 12-14, a třetí tvar – pro slova s jinými číslovkami před nimi.
+Na rozdíl od angličtiny má polština tři tvary množného čísla podstatných jmen. Jeden z nich se používá, když se mluví o něčem v jednotném čísle, druhý tvar se používá v množném čísle, ale s číslovkami končícími na 2–4, s výjimkou 12–14, a třetí tvar — pro slova s jinými číslovkami před nimi.
 
-Podívejme se na tento obrázek. Zde vidíte skupiny číslovek, které určují tvar slova, když před ním stojíte.
+Podívejte se na tento obrázek. Zde vidíte skupiny číslovek, které určují tvar slova, když před ním stojíte.
 
 ![Polish](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
@@ -24,13 +24,13 @@ Pro lepší pochopení si udělejme malou paralelu mezi angličtinou a polštino
 
       Anglická verze:                                                 Polské ekvivalenty:
     
-      1. forma - It takes one hour.                                     1. forma - Zajmuje to godzinę.
-      2. forma - It takes two hours.                                    2. forma - Zajmuje to dwie godziny.
-      3. forma - It takes five hours.                                   3. forma - Zajmuje to pięć godzin.
+      1. form — It takes one hour.                                     1. form — Zajmuje to godzinę.
+      2. form — It takes two hours.                                    2. form — Zajmuje to dwie godziny.
+      3. form — It takes five hours.                                   3. form — Zajmuje to pięć godzin.
 
 Nyní je zřejmé, že polské slovo *"godzinę"* (hodina) má tři různé podoby, zatímco anglické slovo mění svůj tvar s danými číslovkami pouze dvakrát.
 
-Kromě polštiny existuje mnoho dalších jazyků, které mají tři a více tvarů množného čísla, například ruština, srbština, slovenština, čeština atd. Ne všechny se však řídí stejným pravidlem. Proto je důležité vědět, kolik tvarů množného čísla váš jazyk obsahuje a jak je můžete použít.
+Kromě polštiny existuje mnoho dalších jazyků, které mají tři a více tvarů množného čísla, například ruština, srbština, slovenština, čeština atd. Ne všechny se však řídí stejným pravidlem. Proto je důležité vědět, kolik má váš jazyk množných čísel a jak je správně používat.
 
 ## Kde se můžete dozvědět o počtu tvarů množného čísla? {#where-to-learn}
 
@@ -38,7 +38,7 @@ Když se setkáte s překladem, který vyžaduje použití množného čísla, m
 
 Zde je několik zdrojů informací, které můžete použít.
 
-[Průvodce překlady](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) obsahuje široký seznam jazyků. Počet tvarů množného čísla pro různé jazyky se zobrazuje takto: 'nplurals=2', 'nplurals=4' atd. Číslice za znaménkem rovnosti '=' znamená počet tvarů množného čísla příslušného jazyka.
+[Průvodce překlady](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) obsahuje široký seznam jazyků. The number of plural forms for different languages is shown this way: `nplurals=2`, `nplurals=4` and so on. The numeral after the Equals sign `=` means the number of plural forms of the respective language.
 
 Informace o tvarech množného čísla můžete také získat v databázi [Unicode Common Locale Data Repository](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR). Pravidla CLDR pro množné číslo uvádějí další slovní tvar pro desetinná čísla (1,5; 2,3; 100,1…), ale v překladech AdGuardu je nepoužíváme.
 
@@ -94,7 +94,7 @@ Při překladu těchto řetězců a jejich schvalování buďte pozorní. Pokud 
 
 Jedná se o nejsložitější typ řetězců AdGuardu, který se většinou používá v projektu `AdGuard Websites`.
 
-Věnujte zvýšenou pozornost svislému znaménku mezi větami a **%count%** zástupným znakům v originálních frázích – pomůže vám identifikovat fráze, kde překlad vyžaduje použití tvarů množného čísla.
+Věnujte zvýšenou pozornost svislému znaménku mezi větami a **%count%** zástupným znakům v originálních frázích — pomůže vám identifikovat fráze, kde překlad vyžaduje použití tvarů množného čísla.
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/plurals/plurals_site.png)
 
@@ -108,9 +108,9 @@ Vraťme se k příkladu, protože anglický jazyk obsahuje pouze dva tvary, měl
 
 `Standard license for *%count%* computer | Standard license for *%count%* computers`
 
-kde **šablona 1** – Standard license for *%count%* computer,
+kde **šablona 1** je Standard license for *%count%* computer,
 
-a **šablona 2** – Standard license for *%count%* computers,
+a **šablona 2** je Standard license for *%count%* computers,
 
 Další důležitou věcí, které byste měli věnovat pozornost jsou zástupné znaky **%count%**, které se jako obvykle nacházejí před slovy, která definují. Namísto **%count%** se zde zobrazí různá čísla v závislosti na tom, které šablony jsou vybrány.
 
@@ -145,12 +145,12 @@ Zatímco první tři typy těchto řetězců jsou víceméně snadno provediteln
 
 A ještě jednou: pokud narazíte na originální frázi se dvěma důležitými prvky: **svislá čára** a **%count%** zástupné znaky, udělejte prosím následující:
 
-+ Řiďte se pravidlem množného čísla jazyka, do kterého překládáte;
+- Řiďte se pravidlem množného čísla jazyka, do kterého překládáte;
 
-Počet vašich šablon by měl odpovídat počtu tvarů množného čísla, které váš jazyk obsahuje, a to i v případech, kdy některá slova mají sama o sobě méně tvarů. Dva tvary množného čísla – dvě šablony v překladu; pět tvarů množného čísla – pět šablon atd.
+Počet vašich šablon by měl odpovídat počtu tvarů množného čísla, které váš jazyk obsahuje, a to i v případech, kdy některá slova mají sama o sobě méně tvarů. Dva tvary množného čísla — dvě šablony v překladu; pět tvarů množného čísla — pět šablon atd.
 
-+ Nezapomeňte mezi šablonami použít svislou čáru, jak je znázorněno v původních řetězcích;
+- Nezapomeňte mezi šablonami použít svislou čáru, jak je znázorněno v původních řetězcích;
 
-+ Nepřekládejte, nevyplňujte ani nemažte zástupné znaky **%count%**.
+- Nepřekládejte, nevyplňujte ani nemažte zástupné znaky **%count%**.
 
 Dodržováním těchto jednoduchých pravidel pomůžete vývojářům AdGuardu vyhnout se mnoha zbytečným komplikacím během procesu překládání.

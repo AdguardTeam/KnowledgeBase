@@ -5,7 +5,7 @@ sidebar_position: 3
 
 :::info
 
-Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://adguard.com/download.html?auto=true)
+Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, který chrání vaše zařízení na úrovni systému. Chcete-li zjistit, jak funguje, [stáhněte si aplikaci AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -15,18 +15,17 @@ Mnoho lidí si vybírá systém Android, protože si rádi přizpůsobují nasta
 
 Existuje mnoho aplikací Tasker, např. [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&noprocess), [AutomateIt](https://play.google.com/store/apps/details?id=AutomateIt.mainPackage&noprocess) atd. AdGuard poskytuje rozhraní, které těmto aplikacím umožňuje nastavit různá automatizační pravidla.
 
-![Automatizace AdGuardu *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/tasker/adgautomation.png)
+![Automation *mobile_border](https://cdn.adtidy.org/blog/new/mmwmfautomation.jpg)
 
-Díky tomuto rozhraní může každá aplikace odeslat speciální zprávu (tzv. "záměr"), která obsahuje název akce a případně další údaje. AdGuard se na tento záměr podívá a provede požadované akce.
+Díky tomuto rozhraní může každá aplikace odeslat speciální zprávu (tzv. “záměr”), která obsahuje název akce a případně další údaje. AdGuard se na tento záměr podívá a provede požadované akce.
 
 ### Obavy o bezpečnost
 
-Nebylo by trochu nebezpečné, ptáte se — nechat náhodné aplikace spravovat to, co dělá AdGuard? To ano, a proto se spolu se záměrem odesílá i heslo. Toto heslo vygeneruje AdGuard automaticky, ale můžete ho samozřejmě kdykoli změnit.
+Není nebezpečné nechat náhodné aplikace spravovat to, co dělá AdGuard? Je to tak, a proto je spolu se záměrem odesláno i heslo. Toto heslo vygeneruje AdGuard automaticky, ale můžete ho samozřejmě kdykoli změnit.
 
 ### Dostupné akce
 
-Jste připraveni zašpinit si ruce? Zde jsou uvedeny akce, kterým bude AdGuard rozumět, pokud budou zahrnuty do záměru:
-
+Zde jsou uvedeny akce, kterým bude AdGuard rozumět, pokud budou zahrnuty do záměru:
 
 `start` spouští ochranu, nejsou potřeba žádné další údaje;
 
@@ -42,16 +41,31 @@ Jste připraveni zašpinit si ruce? Zde jsou uvedeny akce, kterým bude AdGuard 
 
 `enable:true` nebo `enable:false` povolí nebo zakáže DNS filtrování.
 
+`fake_dns` allows resolving DNS requests on the specified proxy server. This requires an extra flag:
+
+`enable:true` or `enable:false` enables or disables the *Use FakeDNS* setting, respectively.
+
+:::note
+
+When the *Use FakeDNS* setting is enabled, *DNS Protection* will be automatically disabled. DNS requests won't be filtered locally.
+
+:::
+
 -----
 
 `dns_server` přepíná mezi DNS servery, je třeba uvést další údaje:
 
  `server:adguard dns` přepne na server AdGuard DNS;
-> Poznámka: úplný seznam podporovaných názvů poskytovatelů naleznete v nastavení AdGuard DNS v části "Vlastní nastavení DNS"
+
+:::note
+
+Úplný seznam názvů podporovaných poskytovatelů naleznete v našem seznamu [známých poskytovatelů DNS](https://adguard-dns.io/kb/general/dns-providers/).
+
+:::
 
  `server:custom` přepne na dříve přidaný server s názvem `custom`;
 
- `server:tls://dns.adguard.com` vytvoří nový server a přepne na něj, pokud dříve přidané servery a poskytovatelé neobsahují server se stejnou adresou. V opačném případě přepne na příslušný server. Adresy serverů můžete přidat jako IP (obvyklý DNS), `sdns://…` (DNSCrypt nebo DNS-over-HTTPS), `https://…` (DNS-over-HTTPS) nebo  `tls://...` (DNS-over-TLS);
+ `server:tls://dns.adguard.com` vytvoří nový server a přepne na něj, pokud dříve přidané servery a poskytovatelé neobsahují server se stejnou adresou. V opačném případě přepne na příslušný server. You can add server addresses as IP ( regular DNS), `sdns://…` (DNSCrypt or DNS-over-HTTPS), `https://…` (DNS-over-HTTPS) or `tls://...` (DNS-over-TLS);
 
  `server:1.1.1.1, tls://1.1.1.1` vytvoří server s adresami oddělenými čárkou a přepne se na něj. Při přidávání serveru prostřednictvím `server:1.1.1.1, tls://1.1.1.1`, je dříve přidaný server odebrán.
 
@@ -59,14 +73,11 @@ Jste připraveni zašpinit si ruce? Zde jsou uvedeny akce, kterým bude AdGuard 
 
  -----
 
-
-
-`proxy_state` zapíná/vypíná odchozí proxy.  Vyžaduje příznak navíc:
+`proxy_state` zapíná/vypíná odchozí proxy. Vyžaduje příznak navíc:
 
 `enable:true` nebo `enable:false` aktivuje nebo deaktivuje odchozí proxy.
 
 -----
-
 
 `proxy_default` nastaví proxy ze seznamu dříve přidaných jako výchozí nebo vytvoří nový, pokud server nebyl přidán dříve.
 
@@ -86,19 +97,20 @@ Nebo můžete parametry odebrání nakonfigurovat ručně:
 
 `server:[type=…&host=…&port=…&username=…&password=…&udp=…&trust=…]`.
 
-* **Povinné parametry**:
+- **Povinné parametry**:
 
 `[type]` — typ proxy:
-- HTTP;
-- SOCKS4;
-- SOCKS5;
-- HTTPS_CONNECT.
+
+- HTTP
+- SOCKS4
+- SOCKS5
+- HTTPS_CONNECT
 
 `[host]` — doména nebo IP adresa odchozího proxy;
 
 `[port]` — odchozí port proxy (celé číslo od 1 do 65535);
 
-* **Volitelné parametry**:
+- **Volitelné parametry**:
 
  `[přihlášení a heslo]` — pouze v případě, že to vyžaduje proxy. Tyto údaje jsou při nastavování **SOCKS4** ignorovány;
 
@@ -110,14 +122,11 @@ Nebo můžete parametry odebrání nakonfigurovat ručně:
 
 `nastavení podle názvu`: server:MůjServer
 
- `ruční nastavení`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
-
+`ruční nastavení`: server:host=1.2.3.4&port=80&type=SOCKS5&username=foo&password=bar&udp=true
 
 :::
 
------
-
-**Nezapomeňte uvést heslo jako dodatek a zmínit název balíčku a třídy! Musíte tak učinit pro každý záměr!**
+**Nezapomeňte uvést heslo jako dodatek a zmínit název balíčku a třídy. Musíte tak učinit pro každý záměr.**
 
 Dodatek: `password:*******`
 
@@ -137,4 +146,4 @@ Chcete-li provést úkol bez zobrazení informační zprávy, přidejte další 
 
 ### Příklad
 
-![Automatizace *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/tasker/automation2.png)
+![Automation *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/tasker/automation2.png)

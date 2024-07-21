@@ -5,7 +5,7 @@ sidebar_position: 5
 
 :::info
 
-This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+本文适用于 iOS 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 要了解其工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
@@ -13,13 +13,13 @@ This article covers AdGuard for iOS, a multifunctional ad blocker that protects 
 
 :::caution
 
-Changing *Low-level settings* can cause problems with the performance of AdGuard, may break the Internet connection or compromise your security and privacy. You should only open this section if you are sure of what you are doing or our support-team has asked you about it.
+更改「*低级设置*」可能会导致 AdGuard 的性能出现问题，也可能会断开网络连接或侵害安全和隐私。 如果您知道自己在设置什么，或者是我们的客户支持要求您这样做，请打开此部分。
 
 :::
 
 To go to *Low-level settings*, tap the gear icon at the bottom right of the screen to open *Settings*. Select the *General* section and then toggle on the *Advanced mode* switch, after that the *Advanced settings* section will appear below. Tap *Advanced settings* to reach the *Low-level settings* section.
 
-## Low-level settings
+## 低级设置
 
 ### Tunnel mode
 
@@ -35,15 +35,21 @@ There is also an additional mode called *Full-Tunnel (without VPN icon)*. This i
 
 ### Blocking mode
 
-In this module you can select the way AdGuard will respond to DNS queries that should be blocked: REFUSED — respond with REFUSED code NXDOMAIN — respond with NXDOMAIN code Unspecified IP — respond with zero IP address Custom IP — respond with a manually set IP address
+In this module you can select the way AdGuard will respond to DNS queries that should be blocked:
+
+- Default — respond with zero IP address when blocked by adblock-style rules; respond with the IP address specified in the rule when blocked by /etc/hosts-style rules
+- REFUSED — respond with REFUSED code
+- NXDOMAIN — respond with NXDOMAIN code
+- Unspecified IP — respond with zero IP address
+- Custom IP — respond with a manually set IP address
 
 ### Block IPv6
 
-By moving the toggle to the right, you activate IPv6 query blocking (AAAA requests).
+By moving the toggle to the right, you activate the blocking of IPv6 queries (AAAA requests). AAAA-type DNS requests will not be resolved, hence only IPv4 queries can be processed.
 
 ### Blocked response TTL
 
-Here you can specify the TTL (time to live) value that will be returned in response to a blocked request.
+Here you can set the period for a device to cache the response to a DNS request. During the specified time to live (in seconds) the request can be read from the cache without re-requesting the DNS server.
 
 ### Bootstrap servers
 

@@ -7,7 +7,9 @@ sidebar_position: 5
 
 ## 1. Скачайте MSI-установщик {#msi-download}
 
-Скачайте [AdGuard MSI](https://cdn.adtidy.org/distr/windows/AdGuard.msi).
+Download the [AdGuard MSI x86](https://cdn.adtidy.org/distr/windows/AdGuard_x86.msi)
+
+Download the [AdGuard MSI x64](https://cdn.adtidy.org/distr/windows/AdGuard_x64.msi)
 
 ## 2. Настройте параметры сети {#settings-configuring}
 
@@ -27,15 +29,25 @@ AdGuard подключается к двум хостам: `api.adguard.org` и 
 
 Если вам нужно накатить обновление, используйте эту команду: `Msiexec /q /i AdGuard.msi REINSTALL=ALL REINSTALLMODE=vomus`
 
-**Пожалуйста, обратите внимание, что вы должны запускать эти команды с правами администратора.**
+:::note
 
-If you want to install AdGuard on a Windows 7 computer, make sure that it has .NET 4 Client Profile installed: https://www.microsoft.com/en-us/download/details.aspx?id=24872
+Вы должны запускать эти команды с правами администратора.
 
-:::info
+:::
 
-Automatic updates are disabled when you install AdGuard for Windows from MSI. Если вы всё-таки хотите разрешить обновления пользователю (что не рекомендуется, т. к. в таком случае станет невозможным централизованное обновление), то в в реестре у ключа `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` параметру `AllowCheckUpdates` нужно присвоить значение `YES` (нечувствителен к регистру). В таком случае обновления будут разрешены, любое другое значение или отсутствие значения у данного параметра в реестре запрещает автоматические обновления.
+Если вы хотите установить AdGuard на машину с Windows 7, убедитесь, что на ней установлен .NET 4 Client Profile: https://www.microsoft.com/en-us/download/details.aspx?id=24872
 
 :::note
+
+If you have installed AdGuard for Windows from an MSI file, AdGuard will not be updated automatically. To allow manual updates:
+
+- In versions released after v7.16, delete the `ForbidCheckUpdates` parameter or set its value to `NO` (case-insensitive) in the registry under `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard`.
+
+- In v7.16 and earlier versions, set to `YES` (case-insensitive) the `AllowCheckUpdates` parameter for the `HKEY_LOCAL_MACHINE\SOFTWARE\Adguard` key on x86 OS or `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Adguard` key on x64 OS. Any other value or no value for this parameter will disable automatic updates.
+
+Please note that such installation of the application and manual updates are not recommended and can cause technical problems.
+
+:::
 
 ## 5. Протестируйте установку {#installation-test}
 

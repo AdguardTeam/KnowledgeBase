@@ -1,26 +1,38 @@
 ---
 title: Как использовать Samsung Pay с AdGuard в Южной Корее
-sidebar_position: 16
+sidebar_position: 17
 ---
 
 :::info
 
-This article covers AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-Эта проблема возникает на устройствах, зарегистрированных в Южной Корее. Samsung Pay иногда не работает на таких устройствах с запущенным VPN. Но есть способ решить эту проблему.
+Некоторые пользователи столкнулись с проблемой, из-за которой Samsung Pay не работает при запущенном AdGuard. Эта проблема возникает на устройствах, зарегистрированных в Южной Корее.
 
-По умолчанию AdGuard использует Локальный VPN для фильтрации трафика. По этой причине южнокорейским пользователям пришлось отключать AdGuard при оплате через Samsung Pay. Теперь можно избежать подобных трудностей.
+Что вызывает эту проблему? Иногда Samsung Pay не работает на устройствах с запущенными VPN-сервисами, и AdGuard — одно из таких приложений. По умолчанию AdGuard использует локальный VPN для фильтрации трафика, что может вызвать проблемы при использовании Samsung Pay.
 
-Функция **pref.samsungpay.autopause.enable** была разработана специально для пользователей из Южной Кореи. Так что же она делает? Если опция pref.samsungpay.autopause.enable включена, работа AdGuard приостанавливается, когда пользователь открывает приложение Samsung Pay. Но как только приложение закрывается, AdGuard возобновляет работу.
-
-Давайте посмотрим, как это работает.
-
-![samsungpay *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/samsungpay-with-adguard-in-south-korea/en.gif)
+Как следствие, пользователи были вынуждены отключать AdGuard при оплате через Samsung Pay. Теперь этого можно избежать с помощью новой функции *Обнаруживать Samsung Pay*. Когда эта опция включена, приложение AdGuard приостанавливается каждый раз, когда пользователь открывает приложение Samsung Pay, и возобновляет работу, когда он закрывает приложение.
 
 :::note
 
-This feature will work only if the Local VPN filtering mode is chosen in AdGuard settings. Если используется другой режим, Samsung Pay будет работать без перебоев.
+Эта функция будет работать только в том случае, если в настройках AdGuard выбран режим фильтрации «Локальный VPN». Если используется другой режим, Samsung Pay будет работать без перебоев.
 
 :::
+
+Чтобы включить *Обнаруживать Samsung Pay*, выполните следующие действия:
+
+1. Перейдите на страницу *Настройки* → *Основные* → *Расширенные* → *Низкоуровневые настройки*.
+
+1. Прокрутите до *Обнаруживать Samsung Pay* и переместите ползунок вправо.
+
+1. Нажмите *Предоставить разрешения* и дайте AdGuard доступ к информации об использовании других приложений.
+
+Он нужен для сбора статистики о работе Samsung Pay, чтобы функция *Обнаружить Samsung Pay* могла работать.
+
+После включения этой функции при переключении с Samsung Pay на AdGuard появится сообщение, как на скриншоте.
+
+![samsungpay *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/samsungpay-with-adguard-in-south-korea/samsung_pay.png)
+
+Также вы можете отключить фильтрацию для Samsung Pay в разделе *Управление приложениями*. Просто перейдите на экран *Управление приложениями* (третья вкладка снизу), найдите в списке Samsung Pay и отключите переключатель на странице *Направлять трафик через AdGuard*.

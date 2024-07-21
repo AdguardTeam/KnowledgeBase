@@ -3,166 +3,178 @@ title: HAR dosyası nasıl toplanır
 sidebar_position: 1
 ---
 
-HAR files help our technical support teams troubleshoot complex issues. To create these files, we recommend using Chrome or Firefox. However, IE 11, Edge, and Safari also provide `.har` file generation and export capability.
+HAR dosyaları teknik destek ekiplerimizin karmaşık sorunları gidermesine yardımcı olur. Bu dosyaları oluşturmak için Chrome veya Firefox kullanmanızı tavsiye ederiz. Ancak, IE 11, Edge ve Safari de `.har` dosyası oluşturma ve dışa aktarma özelliği sağlar.
 
 ## Chrome {#chrome}
 
-Chrome'da bir HAR dosyası oluşturmak için:
+Chrome'da bir HAR dosyası oluşturmak için şu adımları izleyin:
 
 1. Sorunun oluştuğu URL'ye gidin. Sorunu henüz yeniden oluşturmayın.
 
-2. Open ***Developer Tools***:
+1. Open **Developer Tools**:
 
-- From menu: ***Menu → More Tools → Developer Tools***.
-- Keyboard: ***Ctrl+Shift+C***, or ***Ctrl+Alt+I***, or ***⌥+⌘+I for Mac***.
+    - From menu: **Menu → More Tools → Developer Tools**.
+    - Keyboard: **Ctrl+Shift+C**, or **Ctrl+Alt+I**, or **⌥+⌘+I for Mac**.
 
-3. Click on the ***Network tab***.
+1. **Ağ sekmesi** öğesine tıklayın.
 
-4. Locate the round button at the top left of the Network tab and confirm it is in red recording mode. If it's grey, click to turn red to start recording.
+1. Ağ sekmesinin sol üst köşesindeki yuvarlak düğmeyi bulun ve kırmızı kayıt modunda olduğunu onaylayın. If it's grey, click to turn red to start recording.
 
-5. Use the ***clear*** button (the circle button with a line through it next to the record button) to clear all previous activity.
+1. Use the **Clear** button (the circle button with a line through it next to the record button) to clear all previous activity.
 
-6. Select the ***Preserve log*** check box on the Network tab.
+1. Select the **Preserve log** check box on the Network tab.
 
-7. Check the ***Disable cache*** check box.
+1. Check the **Disable cache** check box.
 
-![chrome](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/chrome.png)
+    ![Chrome](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/chrome.png)
 
-8. Reproduce the steps that create the issue.
+1. Sorunu oluşturan adımları yeniden oluşturun.
 
-9. Save session as a .har file by right-clicking the grid and selecting ***Save as HAR with content***.
+1. Save session as a .har file by right-clicking the grid and selecting **Save as HAR with content**.
 
-10. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+1. Sorunun ayrıntılı açıklamasıyla birlikte AdGuard desteğine (support@adguard.com) gönderin. Destekleyici ekran görüntüleri de yardımcı olabilir.
 
 ## Edge {#edge}
 
 1. Sorunun oluştuğu URL'ye gidin. Sorunu henüz yeniden oluşturmayın.
 
-2. Open ***Developer Tools***:
+1. Open **Developer Tools**:
 
-- From menu: ***Menu → More Tools → Developer Tools***.
-- Keyboard: ***Ctrl+Shift+C***, or ***Ctrl+Alt+I***, or ***⌥+⌘+I for Mac***.
+    - From menu: **Menu → More Tools → Developer Tools**.
+    - Keyboard: **Ctrl+Shift+C**, or **Ctrl+Alt+I**, or **⌥+⌘+I for Mac**.
 
-3. Click on the ***Network tab***.
+1. **Ağ sekmesi** öğesine tıklayın.
 
-4. Locate the round button at the top left of the Network tab and confirm it is in red recording mode. If it's grey, click to turn red to start recording.
+1. Ağ sekmesinin sol üst köşesindeki yuvarlak düğmeyi bulun ve kırmızı kayıt modunda olduğunu onaylayın. If it's grey, click to turn red to start recording.
 
-5. Use the ***clear*** button (the circle button with a line through it next to the record button) to clear all previous activity.
+1. Use the **Clear** button (the circle button with a line through it next to the record button) to clear all previous activity.
 
-6. Select the ***Preserve log*** check box on the Network tab.
+1. Select the **Preserve log** check box on the Network tab.
 
-7. Check the ***Disable cache*** check box.
+1. Check the **Disable cache** check box.
 
-![edge](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/edge.png)
+    ![edge](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/edge.png)
 
-8. Reproduce the steps that create the issue.
+1. Sorunu oluşturan adımları yeniden oluşturun.
 
-9. Save session as a .har file by right-clicking the grid and selecting ***Save as HAR with content***.
+1. Save session as a .har file by right-clicking the grid and selecting **Save as HAR with content**.
 
-10. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+1. Sorunun ayrıntılı açıklamasıyla birlikte AdGuard desteğine (support@adguard.com) gönderin. Destekleyici ekran görüntüleri de yardımcı olabilir.
 
 ## Firefox {#firefox}
 
-To create a HAR file in Firefox:
+Firefox'ta bir HAR dosyası oluşturmak için şu adımları izleyin:
 
 1. Sorunun oluştuğu URL'ye gidin. Sorunu henüz yeniden oluşturmayın.
 
-2. Open Developer Tools in ***Network*** mode:
-- From menu: ***Menu→Web Developer→Network***.
-- Keyboard: ***Ctrl+Shift+C***, or **⌥+⌘+E (Mac)**.
+1. Open Developer Tools in **Network** mode:
 
-3. Note the ***play/pause*** button at the top left of the Network tab.
-- Button should be in play mode.
+    - From menu: **Menu → Web Developer → Network**.
+    - Klavye: **Ctrl+Shift+C** veya **⌥+⌘+E (Mac)**.
 
-4. If any information is currently displayed in the grid, clear by clicking the ***delete trash can*** button next to the play/pause button.
+1. Note the **Play/Pause** button at the top left of the Network tab.
 
-5. Select the ***Persist Logs*** check box on the Network tab.
+    - Button should be in play mode.
 
-6. Check the ***Disable cache*** check box.
+1. If any information is currently displayed in the grid, clear by clicking the **Empty trash can** button next to the play/pause button.
 
-![firefox](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/firefox.png)
+1. Select the **Persist Logs** check box on the Network tab.
 
-7. Reproduce the steps that create the issue.
+1. Check the **Disable cache** check box.
 
-8. Save session as a .har file by right-clicking the grid and selecting ***Save all as HAR***.
+    ![firefox](https://cdn.adtidy.org/content/Kb/ad_blocker/guides/firefox.png)
 
-9. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+1. Sorunu oluşturan adımları yeniden oluşturun.
+
+1. Save session as a .har file by right-clicking the grid and selecting **Save all as HAR**.
+
+1. Sorunun ayrıntılı açıklamasıyla birlikte AdGuard desteğine (support@adguard.com) gönderin. Destekleyici ekran görüntüleri de yardımcı olabilir.
 
 ## Internet Explorer 11 {#ie11}
 
-Internet Explorer 11'de HAR dosyası oluşturmak için:
+To create a HAR file in Internet Explorer 11, follow these steps:
 
 1. Sorunun oluştuğu URL'ye gidin. Sorunu henüz yeniden oluşturmayın.
 
-2. Open Developer Tools in ***Network*** mode:
-- From Tools cog wheel menu: ***Developer Tools*** → ***Network tab***.
-- Keyboard: ***F12→Network*** tab.
+1. Open Developer Tools in **Network** mode:
 
-3. Note the start profiling session ***Play*** button and stop profiling ***Stop*** button at top left of Network tab.
-- Play button will be gray when recording and Stop button will be red. Put in ***Play*** mode.
+    - From Tools cog wheel menu: **Developer Tools** → **Network tab**.
+    - Keyboard: **F12 → Network** tab.
 
-4. Clear any session info appearing in the lower grid using the ***Clear session*** button on Network tab. Hover over icons to see names.
-- ***Clear session*** button is a three line icon with an x on it.
+1. Note the start profiling session **Play** button and stop profiling **Stop** button at top left of Network tab.
 
-5. Check the ***Disable cache*** check box.
+    - Play button will be gray when recording and Stop button will be red. Put in **Play** mode.
 
-6. Reproduce the steps that create the issue.
+1. Clear any session info appearing in the lower grid using the **Clear session** button on Network tab. Hover over icons to see names.
 
-7. Save session as a .har file by clicking on the ***Save disk*** button (Export as HAR) on Network tab.
+    - **Clear session** button is a three line icon with an x on it.
 
-8. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, as well.
+1. Check the **Disable cache** check box.
+
+1. Sorunu oluşturan adımları yeniden oluşturun.
+
+1. Save session as a .har file by clicking the **Save to disk** button (Export as HAR) on Network tab.
+
+1. Sorunun ayrıntılı açıklamasıyla birlikte AdGuard desteğine (support@adguard.com) gönderin. Destekleyici ekran görüntüleri de yardımcı olabilir.
 
 ## Safari {#safari}
 
-Safari'de bir HAR dosyası oluşturmak için:
+Safari'de bir HAR dosyası oluşturmak için şu adımları izleyin:
 
-1. Check the Safari menu bar at the top of the screen for a ***Develop*** menu. Check the checkbox at the bottom next to ***Show Develop menu in menu bar***.
-- If not visible, turn it on by going to ***Safari→Preferences→Advanced***.
+1. Check the Safari menu bar at the top of the screen for a **Develop** menu.
 
-2. Sorunun oluştuğu URL'ye gidin. Sorunu henüz yeniden oluşturmayın.
+    - If not visible, turn it on by going to **Safari → Settings → Advanced**.
+    - Check the checkbox at the bottom next to **Show Develop menu in menu bar**.
 
-3. Open ***Network*** tab in Web Inspector:
-- From menu: ***Develop→Show Web Inspector→Network***.
-- Keyboard: ***⌥+⌘+I→Network***
+1. Sorunun oluştuğu URL'ye gidin. Sorunu henüz yeniden oluşturmayın.
 
-4. Check ***Preserve Log*** checkbox on right side of the Network tabs.
+1. Open **Network** tab in Web Inspector:
 
-5. Clear current Network items by clicking the ***delete Trash*** icon at the far right of Network tabs.
+    - From menu: **Develop → Show Web Inspector → Network**.
+    - Keyboard: **⌥+⌘+I → Network**
 
-6. Check the ***Disable cache*** check box.
+1. Check **Preserve Log** checkbox on left side of the Network tabs, within the **Other filter options...** menu.
 
-7. Reproduce the steps that create the issue.
+    ![safari](https://cdn.adtidy.org/content/kb/ad_blocker/safari/preserve-log.png)
 
-8. Save session as a .har file by clicking the ***Export*** icon next to ***Preserve Log***.
+1. Clear current Network items by clicking the **Delete Trash** icon at the far right of Network tabs.
 
-9. Forward to AdGuard support (support@adguard.com) with detailed explanation of issue. Supporting screenshots can be helpful, too.
+    - Klavye: **⌘+K**
+
+1. Check the **Disable caches** check box.
+
+1. Sorunu oluşturan adımları yeniden oluşturun.
+
+1. Save session as a .har file by clicking the **Export** icon next to the **Delete Trash** icon.
+
+1. Sorunun ayrıntılı açıklamasıyla birlikte AdGuard desteğine (support@adguard.com) gönderin. Destekleyici ekran görüntüleri de yardımcı olabilir.
 
 ## Android {#android}
 
-To get HAR files follow these steps:
+HAR dosyaları oluşturmak için şu adımları izleyin:
 
-1. Open AdGuard and go to ***Settings***.
+1. Adguard'ı açın ve **Ayarlar** öğesine gidin.
 
-2. Choose ***Advanced*** in the menu.
+1. Menüden **Gelişmiş** öğesini seçin.
 
-3. Choose ***Low Level Settings***
+1. **Alt Seviye Ayarlar** öğesini seçin
 
-4. Activate `pref.har.capture` (you will have to restart the protection).
+1. Activate `pref.har.capture` (you will have to restart the protection).
 
-5. Now reproduce the problem — open the app, perform the necessary actions to make the ad appear.
+1. Şimdi sorunu yeniden oluşturun — uygulamayı açın, reklamın görünmesi için gerekli eylemleri gerçekleştirin.
 
-6. Now turn `pref.har.capture` off again.
+1. Şimdi `pref.har.capture` öğesini tekrar kapatın.
 
-7. Go back and tap ***Export logs and system info*** → ***Save***.
+1. Go back and tap **Export logs and system info** → **Save**.
 
 ## Windows {#windows}
 
-1. Open ***Settings*** → ***General settings*** → ***Advanced settings** and scroll down.
+1. Open **Settings*** → **General settings** → **Advanced settings** and scroll down.
 
-2. Check the ***Enable HAR writing*** box.
+1. Check the **Enable HAR writing** box.
 
-3. Sorunu yeniden oluşturun.
+1. Sorunu yeniden oluşturun.
 
-4. Go to ***General settings*** → Click on ***Export logs*** → ***Save***.
+1. Go to **General settings** → Click **Export logs** → **Save**.
 
-5. Disable HAR writing by unchecking the corresponding box.
+1. İlgili kutunun işaretini kaldırarak HAR yazmayı devre dışı bırakın.

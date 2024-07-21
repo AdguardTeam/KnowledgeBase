@@ -11,7 +11,7 @@ Using HTTPS is highly advantageous because encrypted traffic is protected agains
 
 The diagram below describes the difference between plain HTTP protocol and secure HTTPS protocol.
 
-![What is HTTPS](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https.png)
+![What is HTTPS?](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https.png)
 
 ### What is a security certificate?
 
@@ -55,7 +55,7 @@ A [2017 study](https://cdn.adtidy.org/public/Adguard/Blog/https/interception-nds
 
 The researchers came to a simple conclusion: the Internet security community should pay close attention to applications that filter secure connections. And the developers of such software must pay serious attention to the quality of filtering implementations.
 
-We would like to note that AdGuard was not tested in the above study. We ran estimates according to their set of tests, and at the time of testing, we could have received the maximum score – A\*. However, this score is not perfect. During the study, the researchers identified some issues that were omitted in the final evaluation.
+We would like to note that AdGuard was not tested in the above study. We ran estimates according to their set of tests, and at the time of testing, we could have received the maximum score — A\*. However, this score is not perfect. During the study, the researchers identified some issues that were omitted in the final evaluation.
 
 Here at AdGuard, we fully agree with those conclusions. Moreover, we would like to be as open with users as possible and talk about the problems we are currently experiencing and the steps we are taking to improve the quality and security of the filtering mechanism. The list of these problems is sorted by priority.
 
@@ -63,7 +63,7 @@ Most of the problems discovered in the above study are related to certificate va
 
 #### HTTPS filtering issues on Android 7+
 
-[Starting from Android 7](https://blog.adguard.com/en/android-nougat-release-and-what-does-it-mean-for-adguard-users/), developers have to explicitly indicate that their apps trust user-installed certificates. Not everyone wants to, or bothers with it. What does it mean for AdGuard? AdGuard installs a user certificate to be able to filter HTTPS traffic. If an app doesn't trust this certificate, its HTTPS traffic will not be filtered. What to do?
+[Starting from Android 7](https://adguard.com/en/blog/android-nougat-release-and-what-does-it-mean-for-adguard-users.html), developers have to explicitly indicate that their apps trust user-installed certificates. Not everyone wants to, or bothers with it. What does it mean for AdGuard? AdGuard installs a user certificate to be able to filter HTTPS traffic. If an app doesn't trust this certificate, its HTTPS traffic will not be filtered. What to do?
 
 The first thing worth mentioning is that many apps (even modern ones) still trust user certificates. Nothing has changed in this regard. Almost all browsers also trust such certificates. There may be some exotic browsers that do not, but they are a rare exception to common practice.
 
@@ -73,6 +73,6 @@ Finally, if your device is rooted, you can move the AdGuard certificate to the s
 
 There are several dedicated websites where you can check the quality of your HTTPS connection. These websites check if your browser (or, in our case, your browser plus AdGuard) is susceptible to common vulnerabilities. If you plan to use any program that filters HTTPS, not necessarily AdGuard (e.g., an antivirus), we advise that you check the connection quality on these websites.
 
-* [https://www.ssllabs.com/ssltest/viewMyClient.html](https://www.ssllabs.com/ssltest/viewMyClient.html)
-* [https://www.howsmyssl.com/](https://www.howsmyssl.com/)
-* [https://badssl.com/](https://badssl.com/)
+- [https://www.ssllabs.com/ssltest/viewMyClient.html](https://www.ssllabs.com/ssltest/viewMyClient.html)
+- [https://www.howsmyssl.com/](https://www.howsmyssl.com/)
+- [https://badssl.com/](https://badssl.com/)

@@ -1,27 +1,27 @@
 ---
 title: Обзор функций
-sidebar_position: 1
+sidebar_position: 10
 ---
 
 :::info
 
-This article is about the AdGuard Browser Extension, which safeguards only your browser. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Эта статья о Браузерном расширении AdGuard, которое защищает только ваш браузер. Чтобы защитить всё устройство, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-У AdGuard есть ряд продуктов для блокировки рекламы и трекеров на различных платформах. Один из самых популярных продуктов AdGuard — это бесплатное расширение, которое работает в пяти популярных браузерах: Chrome, Firefox, Edge, Opera и Яндекс Браузере. Браузерные расширения включают базовые функции по блокировке рекламы, но уступают полноценным приложениям, таким как [AdGuard для Windows](/adguard-for-windows/overview) или [AdGuard для Mac](/adguard-for-mac/overview).
+У AdGuard есть ряд продуктов для блокировки рекламы и трекеров на различных платформах. Один из самых популярных продуктов AdGuard — это бесплатное расширение, которое работает в пяти популярных браузерах: Chrome, Firefox, Edge, Opera и Яндекс Браузере. Browser extensions include basic ad-blocking features but cannot be compared with full-featured desktop programs, such as [AdGuard for Windows](/adguard-for-windows/features/home-screen) and [AdGuard for Mac](/adguard-for-mac/features/main).
 
-![AdGuard Browser Extension for Chrome *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
+![Браузерное расширение AdGuard для Chrome *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
 
 ## Доступность {#br-extension}
 
-[AdGuard Browser Extension](https://adguard.com/en/adguard-browser-extension/overview.html) is available for most major browsers. Вы можете легко найти расширение в интернет-магазине вашего браузера или на нашем официальном сайте.
+[Браузерное расширение AdGuard](https://adguard.com/adguard-browser-extension/overview.html) доступно почти для всех популярных браузеров. Вы можете легко найти расширение в интернет-магазине вашего браузера или на нашем официальном сайте.
 
 ![Доступно для большинства популярных браузеров *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_availability.png)
 
 :::note
 
-У нас есть отдельное расширение для Safari. C момента выхода [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html) большинство расширений столкнулись с проблемами, и многие из них перестали работать. Нам пришлось разработать [отдельное расширение для Safari](/adguard-for-safari/overview), которое отличается от расширения, описанного в этой статье.
+У нас есть отдельное расширение для Safari. C момента выхода [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html) большинство расширений столкнулись с проблемами, и многие из них перестали работать. We had to develop a [separate extension for Safari](/adguard-for-safari/features/general) that has some differences in comparison with the extension described in this article.
 
 :::
 
@@ -89,15 +89,15 @@ This article is about the AdGuard Browser Extension, which safeguards only your 
 
 :::note
 
-Some of the *Stealth Mode* options available in full-fledged apps are not present in the browser extensions due to technical restrictions.
+Некоторые опции *Антитрекинга*, доступные в полноценных приложениях, отсутствуют в браузерных расширениях из-за технических ограничений.
 
 :::
 
 ## Другие функции и опции {#other}
 
-Apart from the large key modules of AdGuard Browser Extension, there are several more specific features that can be configured in the *General* and *Additional settings* tabs of the extension settings.
+Помимо больших ключевых модулей браузерного расширения AdGuard, есть ещё несколько специфических функций, которые можно настроить во вкладках расширения *Основные* и *Дополнительные настройки*.
 
-### Основные {#general}
+### Основное {#general}
 
 Во вкладке *Основные* можно разрешить поисковую рекламу и [саморекламу сайтов](/general/ad-filtering/search-ads), включить автоматическую активацию языковых фильтров, указать интервал обновления фильтров и т. д.
 
@@ -125,28 +125,30 @@ Apart from the large key modules of AdGuard Browser Extension, there are several
 
 ## Главное меню расширения {#main-menu}
 
-На главную страницу расширения можно попасть, нажав на значок расширения на панели инструментов браузера.
+The extension's main page can be accessed by clicking the extension's icon on the toolbar of your browser.
 
 ![Главное меню *mobile_border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_main.png)
 
 На главном экране можно скрыть любой элемент на сайте вручную (это добавит новое *пользовательское правило*) или открыть *Журнал фильтрации*, чтобы посмотреть информацию о трафике вашего браузера. Там же можно заблокировать запросы на ходу и просмотреть отчёт о безопасности сайта. Если вы заметили пропущенную рекламу, вы можете пожаловаться на некорректную блокировку. Наши разработчики фильтров рассмотрят жалобу и исправят проблему. Там же можно посмотреть статистику по применённым правилам фильтрации.
 
-Все запросы, сделанные браузером, отображаются в *Журнале фильтрации* вместе с подробной информацией о каждом запросе. The *Filtering log* makes it easy, for example, to monitor requests blocked by AdGuard Browser Extension. В Журнале также можно заблокировать или разблокировать любой запрос в два клика. Там же можно отсортировать запросы, что может помочь, если вы создаёте свои правила фильтрации. *Журнал фильтрации* можно открыть из главного меню или настроек (во вкладке «Дополнительные настройки»).
+Все запросы, сделанные браузером, отображаются в *Журнале фильтрации* вместе с подробной информацией о каждом запросе. *Журнал фильтрации* позволяет, например, отследить, какие запросы заблокировало расширение. В Журнале также можно заблокировать или разблокировать любой запрос в два клика. Там же можно отсортировать запросы, что может помочь, если вы создаёте свои правила фильтрации. *Журнал фильтрации* можно открыть из главного меню или настроек (во вкладке «Дополнительные настройки»).
 
 Значки в правом верхнем углу главного меню отвечают за настройки расширения и приостановку защиты.
 
-## AdGuard Browser Extension vs. standalone apps {#comparison}
+## Браузерное расширение и приложения AdGuard: что лучше? {#comparison}
+
+<iframe width="560" height="315" class="youtube-video" src="https://www.youtube-nocookie.com/embed/ZGwceZP-0mM" title="Видеоплеер YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Главное преимущество отдельных приложений AdGuard — они могут блокировать рекламу во всех браузерах и почти во всех приложениях. Вы можете использовать разные браузеры одновременно — приложение будет одинаково хорошо фильтровать рекламу и защищать от онлайн-угроз в каждом из них.
 
 Возможности расширений, блокирующих рекламу, строго ограничены политикой браузеров. Браузеры могут ограничивать блокировку рекламы, и расширениям приходится под это подстраиваться. Поэтому, например, в расширениях не поддерживаются некоторые типы правил фильтрации. Функциональность приложений для компьютеров не ограничена, поэтому они лучше блокируют рекламу и трекеры.
 
-Whereas AdGuard Browser Extension is free and easy to install, and has filters to block ads and fight online threats, the full-fledged apps are more powerful and have a list of advanced features. Подробнее — в таблице ниже.
+Расширение AdGuard бесплатно, просто в установке, и использует фильтры для блокировки рекламы и угроз. В полноценных приложениях помимо фильтров есть целый список расширенных функций, а сами они более мощные и эффективные. Подробнее — в таблице ниже.
 
 ![Расширение и приложение *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_comparison.png)
 
 `1` – в пределах ограничений браузера и только в том браузере, где расширение установлено;
 
-`2` — расширение не может обнаруживать запросы от других расширений. If a malicious or tracking extension sends a request to its server to show you ads or track your activity, AdGuard Browser Extension will not be able to block that request;
+`2` — расширение не может обнаруживать запросы от других расширений. Если вредоносное или трекинговое расширение отправляет запрос на свой сервер, чтобы показать вам рекламу или отследить вашу активность, браузерное расширение AdGuard не сможет заблокировать этот запрос;
 
 `3` — из-за ограничений браузера расширения могут блокировать не все виды рекламы и угроз. Некоторые элементы могут попасть на страницу и замедлить процесс загрузки. Приложение же, в отличие от расширения, блокирует рекламу ещё до того, как она загрузится в браузер. Это экономит трафик и ускоряет загрузку страниц.

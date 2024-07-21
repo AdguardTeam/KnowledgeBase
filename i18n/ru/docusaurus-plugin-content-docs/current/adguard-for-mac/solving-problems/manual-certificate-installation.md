@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-This article covers AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+В этой статье рассказывается об AdGuard для Mac — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -13,16 +13,16 @@ AdGuard для Mac должен установить корневой серти
 
 Чтобы установить сертификат вручную:
 
-  1. Откройте «Настройки»
+  1. Open *Preferences*
 
-  2. Перейдите в «Приватность и Защита» — «Просмотр сертификатов»
+  2. Go to *Privacy & Security* → *Certificates*
 
-  3. Кликните по «Просмотр сертификатов»
+  3. Click *View Certificates*
 
-  4. Перейдите во вкладку «Центры сертификации» и кликните по кнопке «Импортировать...»
+  4. Navigate to the *Authorities* tab and click the *Import...* button
 
-  5. Выберите файл `/Library/Application Support/com.adguard.mac.adguard/AdguardCore/Adguard Personal CA.cer` или скачайте его через любой браузер на основе Chromium (например, Google Chrome или Edge) с запущенной HTTPS-фильтрацией в AdGuard
+  5. Выберите файл `/Library/Application Support/com.adguard.mac.adguard/AdguardCore/Adguard Personal CA.cer` или скачайте его c http://local.adguard.org/cert через любой браузер на основе Chromium (например, Google Chrome или Edge) с запущенной HTTPS-фильтрацией в AdGuard
 
 Точные действия могут различаться для разных браузеров, но общая последовательность и путь к файлу `AdGuard Personal CA.cer` остаются теми же.
 
-P.S.: Для [версии приложении в Setapp](https://setapp.com/apps/adguard) путь файла будет такой: `/Library/Application Support/com.adguard.mac.adguard-setapp/AdguardCore/Adguard Personal CA.cer`
+P.S.: For [Setapp application version](https://setapp.com/apps/adguard) the file path is the following: `/Library/Application Support/com.adguard.mac.adguard-setapp/AdguardCore/Adguard Personal CA.cer`

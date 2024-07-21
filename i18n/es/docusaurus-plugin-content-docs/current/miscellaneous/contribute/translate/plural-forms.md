@@ -14,9 +14,9 @@ Los sustantivos en diferentes idiomas pueden tener varias formas de palabras en 
 
 Por ejemplo, las palabras en inglés tienen dos formas de palabras cuando se habla de algo en singular, como *"one star"*, y en plural: *"two stars"*. No importa si dices cinco, veintiséis o incluso quinientas treinta y dos estrellas, la terminación ''s'' seguirá siendo la misma. Pero algunos idiomas pueden contener solo una o varias formas plurales.
 
-A diferencia del inglés, el idioma polaco tiene tres formas plurales de sustantivos. Uno de ellos se usa cuando se habla de algo en singular, otra forma se usa en plural pero con números que terminan en 2-4, excluyendo 12-14, y la tercera forma, para palabras con otros números delante de ellos.
+A diferencia del inglés, el idioma polaco tiene tres formas plurales de sustantivos. One of them is used when speaking about something in the singular, another form is used in the plural but with numbers ending in 2–4, excluding 12–14, and the third form — for words with other numbers in front of them.
 
-Veamos esta imagen. Aquí puedes ver los grupos de números que determinan la forma de una palabra cuando se encuentran frente a ella.
+Echemos un vistazo a esta imagen. Aquí puedes ver los grupos de números que determinan la forma de una palabra cuando se encuentran frente a ella.
 
 ![Polaco](https://cdn.adtidy.org/content/Kb/ad_blocker/miscellaneous/adguard_translations/polish.png)
 
@@ -25,12 +25,12 @@ Dibujemos un pequeño paralelo entre el inglés y el polaco para una mejor compr
       La versión en inglés:                                                 Los equivalentes polacos:
     
       1. forma: It takes one hour.                                     1. forma: Zajmuje a godzinę.
-      2. form: It takes two hours.                                    2. forma: Zajmuje a dwie godziny.
+      2. forma: It takes two hours.                                    2. forma: Zajmuje a dwie godziny.
       3. forma: It takes five hours.                                   3. forma: Zajmuje a pięć godzin.
 
 Ahora está claro que el polaco *'godzinę'* (hora) tiene tres formas diferentes, mientras que la palabra inglesa cambia su forma con números solo dos veces.
 
-Además del polaco, hay muchos otros idiomas que tienen tres formas plurales y más, como el ruso, el serbio, el eslovaco, el checo, etc. Pero no todos obedecen a la misma regla. Por eso es tan importante saber cuántas formas plurales contiene tu idioma y cómo puedes aplicarlas.
+Además del polaco, hay muchos otros idiomas que tienen tres formas plurales y más, como el ruso, el serbio, el eslovaco, el checo, etc. Pero no todos obedecen a la misma regla. Por eso es tan importante saber cuántos plurales tiene tu idioma y cómo usarlos correctamente.
 
 ## ¿Dónde puedes aprender sobre el número de formas plurales? {#where-to-learn}
 
@@ -38,7 +38,7 @@ Cuando se enfrenta a una traducción que requiere el uso de plurales, es posible
 
 Aquí hay algunas fuentes de información que puedes utilizar.
 
-[La Guía de localización](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contiene una amplia lista de idiomas. El número de formas plurales para diferentes idiomas se muestra de esta manera: 'nplurals=2', 'nplurals=4' y así sucesivamente. El número después del signo igual '=' significa el número de formas plurales del idioma respectivo.
+[La Guía de localización](http://docs.translatehouse.org/projects/localization-guide/en/latest/l10n/pluralforms.html) contiene una amplia lista de idiomas. The number of plural forms for different languages is shown this way: `nplurals=2`, `nplurals=4` and so on. The numeral after the Equals sign `=` means the number of plural forms of the respective language.
 
 Además, puedes obtener información sobre formas plurales en el [Repositorio de datos de configuración regional común](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html#rules) (CLDR) de Unicode. Las reglas CLDR Plural indican una forma de palabra adicional para los números decimales (1,5; 2,3; 100,1…), pero no las usamos en las traducciones de AdGuard.
 
@@ -108,9 +108,9 @@ Volviendo al ejemplo, como el idioma inglés incluye solo dos formas, debería h
 
 `Licencia estándar para *%count%* computadora | Licencia estándar para *%count%* computadoras`
 
-donde **plantilla 1** – Licencia estándar para *%count%* computadora,
+donde **plantilla 1** es la licencia Estándar para *%count%* computadora,
 
-y **plantilla 2** – Licencia estándar para *%count%* computadoras
+y **plantilla 2** es la licencia Estándar para *%count%* computadoras
 
 Otra cosa importante a la que debes prestar atención son los placeholders **%count%** que, como de costumbre, se colocan antes de las palabras que definen. En lugar de **%count%** aquí aparecerán diferentes números dependiendo de las plantillas que se elijan.
 
@@ -125,7 +125,7 @@ Por ejemplo, cuando traducimos la frase mencionada anteriormente al eslovaco, qu
 En este caso, vemos tres plantillas que contienen tres formas de la palabra *"počítač"* (computadora) en eslovaco.
 
 *Si ignoramos una de las formas y usamos solo dos plantillas para eslovaco en lugar de tres, el sistema no podrá tomar una plantilla adecuada para ciertos números* y, como resultado, tendremos errores gramaticales en las oraciones, como en inglés: *Standard license for 5 computer*.
-> **Always use as many forms as there are in your language, even when the word itself has fewer word forms.**
+> **Siempre usa tantas formas como haya en tu idioma, incluso cuando la palabra en sí tiene menos formas.**
 
 Por ejemplo, la palabra serbia *'računar'* (computadora) tiene solo dos formas. Pero hay 3 formas plurales en serbio.
 
@@ -145,12 +145,12 @@ Mientras que los tres primeros tipos de strings de este tipo son más o menos f�
 
 Y de nuevo: si encuentras una frase original con dos elementos importantes: **, el signo de barra vertical** y **%count%** marcadores de posición, haz lo siguiente:
 
-+ Consulta la regla del plural de la lengua a la que traduces;
+- Consulta la regla del plural de la lengua a la que traduces;
 
-The number of your templates should be consistent with the number of plural forms your language includes, even in cases some words have fewer forms themselves. Two plural forms – two templates in translations; five plural forms – five templates, etc.
+La cantidad de tus plantillas debe ser consistente con la cantidad de formas plurales que tiene tu idioma, incluso en los casos en que algunas palabras tienen menos formas plurales. Dos formas plurales, dos plantillas en traducciones; cinco formas plurales, cinco plantillas, etc.
 
-+ No olvides usar un signo de barra vertical entre las plantillas tal como se representa en los strings originales;
+- No olvides usar un signo de barra vertical entre las plantillas tal como se representa en los strings originales;
 
-+ No traduzcas, rellenes ni elimines los placeholders **%count%** .
+- No traduzcas, rellenes ni elimines los placeholders **%count%** .
 
-By following these simple rules you will help AdGuard developers avoid a lot of unnecessary complications during the localization process.
+Al seguir estas sencillas reglas, ayudarás a los desarrolladores de AdGuard a evitar muchas complicaciones innecesarias durante el proceso de localización.

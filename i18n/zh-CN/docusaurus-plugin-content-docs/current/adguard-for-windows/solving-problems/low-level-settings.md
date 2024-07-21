@@ -5,7 +5,7 @@ sidebar_position: 7
 
 :::info
 
-This article covers AdGuard for Windows, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+本文适用于 Windows 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 要了解其工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
@@ -31,11 +31,11 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 ### 使用 Encrypted ClientHello
 
-每一个加密的互联网连接都有一个未加密的部分， 就是发送的第一个数据包，包含用户要连接的服务器名称。 Encrypted ClientHello（ECH）的技术能够解决该问题，成功加密最后一位未加密的信息。 要使用该功能，请启用「*使用 Encrypted ClientHello*」选项。 It uses a local DNS proxy to look for the ECH configuration for the domain. 如果找到，将对 ClientHello 数据包进行加密。
+每一个加密的互联网连接都有一个未加密的部分， 就是发送的第一个数据包，包含用户要连接的服务器名称。 Encrypted ClientHello（ECH）的技术能够解决该问题，成功加密最后一位未加密的信息。 要使用该功能，请启用「*使用 Encrypted ClientHello*」选项。 本功能使用本地 DNS 代理查找域名的 ECH 配置。 如果找到，将对 ClientHello 数据包进行加密。
 
 ### 检查网站的证书透明度
 
-基于 Chrome 证书透明度（英文：Chrome Certificate Transparency，简称：Chrome CT）政策验证域名内所有证书的真实性。 If the certificate does not comply with the Chrome Certificate Transparency Policy, AdGuard will not filter the website. 而 Chrome 则会屏蔽它。
+基于 Chrome 证书透明度（英文：Chrome Certificate Transparency，简称：Chrome CT）政策验证域名内所有证书的真实性。 如果证书不符合 Chrome 证实透明化政策，AdGuard 将不过滤该网站。 而 Chrome 则会屏蔽它。
 
 ### 启用 SSL/TLS 证书撤销检查
 
@@ -61,6 +61,10 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 如果用户想让 AdGuard 自动拦截过滤器订阅 URL（如 `abp:subscribe` 等）并打开自定义过滤器安装对话框，请启用此功能。
 
+### 过滤 HTTP/3
+
+如果启用此设置，AdGuard 除过滤其他请求类型外，还会过滤通过 HTTP/3 发送的请求。
+
 ### 使用重定向驱动模式
 
 如果启用该选项，AdGuard 将拦截所有流量，并将其重定向到本地代理服务器进行进一步过滤。
@@ -75,7 +79,11 @@ This article covers AdGuard for Windows, a multifunctional ad blocker that prote
 
 从 v7.12 版本开始，默认情况下，如果「AdGuard 随系统启动」选项被禁用，AdGuard 服务不会在操作系统启动后开始过滤流量。 这意味着，AdGuard 服务是以“待机”模式启动的。 启用此选项，使 AdGuard 过滤流量，即使应用程序没有启动。
 
-*Note that before v7.12 the AdGuard's service started in filtering mode by default (even if the *Launch AdGuard at system start-up* was disabled). If you were satisfied with the old behavior, enable this option.*
+:::note
+
+在 v7.12 之前的版本，AdGuard 服务默认是以过滤模式启动的（即使是在「*AdGuard 随系统启动运行*」被禁用的情况下）。 如您满足旧版本的行为，则可开启此项。
+
+:::
 
 ### 过滤 localhost 连接
 
@@ -98,24 +106,24 @@ Host: example.org`
 
 将转换为
 
-`GET  /foo/bar/ HTTP/1.1
+`GET /foo/bar/ HTTP/1.1
 Host: example.org`
 
 此选项仅在启用隐身模式的「*保护免受 DPI 影响*」选项时被应用。
 
 ### 调整初始 TLS 数据包的碎片大小
 
-指定 TCP 数据包碎片的大小，避免深度包检测。 This option only affects secured (HTTPS) traffic.
+指定 TCP 数据包碎片的大小，避免深度包检测。 此选项仅影响安全（HTTPS）流量。
 
 如果开启该选项，AdGuard 将初始 TLS 数据包（ClientHello 数据包）分成两部分：第一部分包含指定的长度，第二部分包含剩余的长度，直到整个初始 TLS 数据包的长度。
 
-Valid values: 1–1500. 如果指定无效大小，将使用系统选择的数值。 此选项仅在启用隐身模式的「*保护免受 DPI 影响*」选项时被应用。
+有效值：1–1500。 如果指定无效大小，将使用系统选择的数值。 此选项仅在启用隐身模式的「*保护免受 DPI 影响*」选项时被应用。
 
 ### 普通 HTTP 请求片段大小
 
 调整 HTTP 请求片段大小。 此选项仅影响普通 HTTP 流量。 开启该选项后，AdGuard 会将初始数据包分成两部分：第一部分是指定的长度，第二部分是指定的长度，直到原始数据包的长度。
 
-Valid values: 1–1500. 如果指定无效大小，将使用系统选择的数值。 此选项仅在启用隐身模式的「*保护免受 DPI 影响*」选项时被应用。
+有效值：1–1500。 如果指定无效大小，将使用系统选择的数值。 此选项仅在启用隐身模式的「*保护免受 DPI 影响*」选项时被应用。
 
 ### 显示 QUIC
 
@@ -127,15 +135,23 @@ Valid values: 1–1500. 如果指定无效大小，将使用系统选择的数�
 
 ### TCP 保活间隔
 
-用户可以指定在发送 keepalive 探测之前的空闲时间段（以秒为单位）。 If 0 is specified, the value selected by the system will be used.
+用户可以指定在发送 keepalive 探测之前的空闲时间段（以秒为单位）。 如指定为 0，则使用系统选择的数值。
 
-请注意，此设置仅在启用*「启用 TCP 保活」*选项时有效。
+:::note
+
+此设置仅工作在「*启用 TCP 保活*」被开启的情况下。
+
+:::
 
 ### TCP 保活超时
 
-Here you can specify time in seconds before sending another keepalive probe to an unresponsive peer. 如果指定 0，使用系统选择的数值。
+用户可以指定时间（以秒为单位），然后向没有响应的对等发送另一个 keepalive（保活）探测。 如果指定 0，使用系统选择的数值。
 
-请注意，此设置仅在启用*「启用 TCP 保活」*选项时有效。
+:::note
+
+此设置仅工作在「*启用 TCP 保活*」被开启的情况下。
+
+:::
 
 ### 拦截 Java
 
@@ -151,11 +167,11 @@ Here you can specify time in seconds before sending another keepalive probe to a
 
 ### 使用备用 DNS 上游
 
-Normal queries will be redirected to the fallback upstream if all DNS requests to the selected upstreams fail.
+如果所有 DNS 到所选上游请求失败，则正常查询将重新定向到后备上游。
 
 ### 并行查询 DNS 上游
 
-All upstreams will be queried in parallel and the first response is returned. 由于 DNS 查询以并行方式处理，因此启用此功能可以提高上网速度。
+所有的上游都是并行查询的。第一个响应会被返回。 由于 DNS 查询以并行方式处理，因此启用此功能可以提高上网速度。
 
 ### 始终响应故障的 DNS 查询
 
@@ -163,23 +179,23 @@ All upstreams will be queried in parallel and the first response is returned. �
 
 ### 启用安全 DNS 请求的过滤
 
-AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to plain DNS requests.
+除普通 DNS 请求外，AdGuard 将所用安全 DNS 请求都重新定向到本地 DNS 代理。
 
 ### host 规则的拦截模式
 
 用户可以选择 AdGuard 将根据 [hosts 规则的语法](https://adguard-dns.io/kb/general/dns-filtering-syntax/#etc-hosts-syntax)对被 DNS 规则阻止的域名作出反应的方式。
 
-* 将「REFUSED」的错误作出回应
-* 将「NxDomain」的错误作出回应
-* 使用自定义 IP 地址作出回应
+- 将「REFUSED」的错误作出回应
+- 将「NxDomain」的错误作出回应
+- 使用自定义 IP 地址作出回应
 
 ### adblock 规则的拦截模式
 
 用户可以选择 AdGuard 将根据 [ adblock 规则的语法](https://adguard-dns.io/kb/general/dns-filtering-syntax/#adblock-style-syntax)对被 DNS 规则阻止的域名作出反应的方式。
 
-* 将「REFUSED」的错误作出回应
-* 将「NxDomain」的错误作出回应
-* 使用自定义 IP 地址作出回应
+- 将「REFUSED」的错误作出回应
+- 将「NxDomain」的错误作出回应
+- 使用自定义 IP 地址作出回应
 
 ### 自定义 IPv4 地址
 
@@ -193,9 +209,9 @@ AdGuard will redirect secure DNS requests to the local DNS proxy, in addition to
 
 用户可以指定一个后备 DNS 服务器，如果主服务器未能在下一节指定的超时期限内做出响应，DNS 请求将被重新路由到后备服务器。 有三个选项可供选择：
 
-* 不要使用后备服务器；
-* 使用系统默认的服务器；
-* 使用自定义服务器。
+- 不要使用后备服务器；
+- 使用系统默认的服务器；
+- 使用自定义服务器。
 
 ### 拦截 ECH
 
@@ -217,4 +233,4 @@ Bootstrap 是一个中间 DNS 服务器，用于获取用户在「*DNS 保护*�
 
 ### 从 DNS 过滤中排除指定的 Wi-Fi 网络名称（SSID）
 
-DNS protection will not include Wi-Fi networks listed in this section. 每行指定一个 Wi-Fi 网络名称（SSID）。 如果一个特定的 Wi-Fi 网络已经被 AdGuard Home 或其他 DNS 保护系统保护，此功能很实用。 在这种情况下，再次过滤 DNS 请求是多余的。
+DNS 保护将不包括列在本节中的 Wi-Fi 网络。 每行指定一个 Wi-Fi 网络名称（SSID）。 如果一个特定的 Wi-Fi 网络已经被 AdGuard Home 或其他 DNS 保护系统保护，此功能很实用。 在这种情况下，再次过滤 DNS 请求是多余的。

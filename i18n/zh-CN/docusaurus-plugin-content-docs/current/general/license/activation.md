@@ -3,13 +3,11 @@ title: 激活许可证的方式
 sidebar_position: 3
 ---
 
-## 如何激活许可证
-
 要激活许可证，请打开 AdGuard 软件的「*许可证*」部分，前往「*登录*」或「*激活*」按钮。 使用 AdGuard 账号的电子邮件和密码登录。 如果用户还没有一个账号，将被提示创建一个。
 
 :::note
 
-To activate a license via the AdGuard account, a valid license with at least one free slot is required. 如果许可证可连接的设备数量已达上限，可以[升级](../payment-options#upgrade) ，或者[将许可证从一台设备连接到另一台](../transfer)。
+要用 AdGuard 账号激活许可证，用户需要一个许可证至少还有一台可连接的设备。 如果许可证可连接的设备数量已达上限，可以[升级](../payment-options#upgrade) ，或者[将许可证从一台设备连接到另一台](../transfer)。
 
 :::
 
@@ -19,86 +17,62 @@ To activate a license via the AdGuard account, a valid license with at least one
 
 ### 在 Windows 版的 AdGuard 激活许可证
 
-1. 开启 AdGuard 软件
+1. 在过期许可证页面上，单击「*激活*」。
 
-请鼠标双击桌面上的 AdGuard 图标：
+    ![到期许可证屏幕 *border](https://cdn.adtidy.org/blog/new/eapwtexp.png)
 
-![桌面上的 AdGuard 图标](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowsEn.png)
+    或者，在主屏幕右上角选择「*许可证*」，然后单击「*激活*」。
 
-或也可以在通知栏双击 AdGuard 图标：
+    ![主屏幕 *border](https://cdn.adtidy.org/blog/new/ca313hmain-screen.png)
 
-![系统托盘中的 AdGuard 图标](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windows2En.png)
+    ![许可证屏幕 *border](https://cdn.adtidy.org/blog/new/n7nkclicense-screen.png)
 
-2. 在应用程序菜单中进入「**许可证**」标签，并点击「**激活许可证**」
+1. 以便捷的方式激活许可证。 如果许可证与电子邮件地址绑定，请单击「*AdGuard 账号*」或选择与此电子邮件地址关联的社交网络。 或者，请输入您的许可证密钥。
 
-![单击「激活许可证」](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowslicense1en.png)
-
-3. 您将会看到两个激活方式：
-
-- 输入您的 **AdGuard 账号** （或 Facebook、Google 或 Apple 账户）的**电子邮件**和**密码**。
-
-![登录您的 AdGuard 账号](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowslicense2en.png)
-
-- 输入**许可证密钥**
-
-![输入许可证密钥](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/windowslicense3en.png)
+    ![激活许可证 *border](https://cdn.adtidy.org/blog/new/lnzz5activate-license.png)
 
 ### 在 Mac 版的 AdGuard 激活许可证
 
-1. 打开 AdGuard 应用程序（在菜单栏点击 AdGuard 图标）
+1. 在过期许可证页面上，单击「*激活*」。
 
-![菜单栏中的 AdGuard 图标](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/Ja/General/mac1.png)
+    ![到期许可证屏幕 *mobile_border](https://cdn.adtidy.org/blog/new/o9bhtexpired-screen.png)
 
-2. 在右上角点击**齿轮图标**
-3. 点击**许可...**
+    或者，单击 AdGuard 菜单中的齿轮图标，然后单击「*许可证*」。
 
-![转到设置和许可证 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/macEn.png)
+    ![首选项 *border](https://cdn.adtidy.org/blog/new/xuyqmpreferences.png)
 
-4. 在弹出的窗口中按「**激活**」按钮
+1. 在打开的窗口中，点击「*激活*」。
 
-![按激活](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/maclicenseen1.png)
+    ![许可证屏幕 *border](https://cdn.adtidy.org/blog/new/8rbc8license-screen.png)
 
-5. 您将会看到两个激活方式：
-- 输入您的 **AdGuard 账号** （或 Facebook、Google 或 Apple 账户）的**电子邮件**和**密码**。
+1. 以便捷的方式激活许可证。 如果许可证与电子邮件地址绑定，请单击「*AdGuard 账号*」或选择与此电子邮件地址关联的社交网络。 或者，请输入您的许可证密钥。
 
-![登录您的 AdGuard 账号激活许可证](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/maclicenseen2.png)
-
-- 输入**许可证密钥**
-
-![输入您的许可证密钥激活](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/maclicenseen3.png)
+    ![激活许可证 *border](https://cdn.adtidy.org/blog/new/8rbc8license-screen.png)
 
 ### 在 Android 版的 AdGuard 激活许可证
 
-1. 开启 AdGuard 软件
-2. 在屏幕上的左上角点击**菜单图标 (☰)**
-3. 点击「**获取高级版**」（或点击「**许可证状态**」）
+1. 点击「*设置*」，然后点选「*许可证*」。
 
-![点选「获得高级版本」或「许可证状态」 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/androidlicense1en.png)
+    ![设置屏幕 *mobile_border](https://cdn.adtidy.org/blog/new/sbdcysettings.png)
 
-4. 请点击屏幕右上角的 **三点式菜单 (⋮)**
+1. 点击「*激活许可证*」。
 
-![点击三点菜单 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/android2En.png)
+    ![许可证屏幕 *mobile_border](https://cdn.adtidy.org/blog/new/04fs1license-screen.png)
 
-5. 按「**激活高级版本**」后，您有几种激活方式：
+1. 以便捷的方式激活许可证。 如果许可证与电子邮件地址绑定，请点击「*用电子邮件继续*」或选择与此电子邮件地址相关联的社交网络。 或者，请输入您的许可证密钥。
 
-- 输入您的 **AdGuard 账号** （或 Facebook、Google 账户）的**电子邮件**和**密码**
-
-![登录以激活 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/androidlicense2en.png)
-
-- 输入**许可证密钥**
-
-![输入您的许可证密钥以激活 *mobile](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/androidlicense3en.png)
+    ![激活许可证 *mobile_border](https://cdn.adtidy.org/blog/new/sbxttactivate-license.png)
 
 ### 在 iOS 版的 AdGuard 激活许可证
 
-1. 打开 AdGuard 应用程序，点击屏幕右上角的**齿轮图标**
+1. 点击「*设置*」，然后点选「*许可证*」。
 
-2. 点击**许可证**。
+    ![设置屏幕 *mobile_border](https://cdn.adtidy.org/blog/new/uf8f1fsettings.png)
 
-3. 然后点击屏幕右上角的**登录**
+1. 然后点击屏幕右上角的「**登录**」
 
-![在「高级」屏幕右上角点击「登录」 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense1en.png)
+    ![支付屏幕 *mobile_border](https://cdn.adtidy.org/blog/new/10j5bhpurchase-page.png)
 
-4. 输入您的 **AdGuard 账号**的**电子邮件** 和 **密码**
+1. 使用电子邮件地址或社交媒体账户激活许可证。
 
-![登录 *mobile](https://cdn.adtidy.org/content/kb/ad_blocker/iOS/ioslicense2en.png)
+    ![登录屏幕 *mobile_border](https://cdn.adtidy.org/blog/new/prnjdlogin-page.png)

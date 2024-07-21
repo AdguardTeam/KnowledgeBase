@@ -1,35 +1,66 @@
 ---
 title: Пользовательские скрипты
 sidebar_position: 5
+toc_max_heading_level: 4
 ---
 
 Пользовательские скрипты (мы также называем их «‎расширениями»‎) — это, по сути, мини-программы, написанные на языке JavaScript. Они модифицируют или расширяют функциональность одного или нескольких сайтов. Многие пользователи AdGuard уже наверняка знакомы с такими расширениями, как Помощник AdGuard, Блокировщик всплывающей рекламы и AdGuard Extra.
 
-### Поддерживаемые продукты
+:::note Поддерживаемые приложения
 
-AdGuard может значительно расширять функциональность сайтов, работая как менеджер пользовательских скриптов. Добавлять собственные скрипты или управлять существующими вы можете в трёх наших продуктах: [AdGuard для Windows](/adguard-for-windows/overview), [AdGuard для Android](/adguard-for-android/overview) и [AdGuard для Mac](/adguard-for-mac/overview).
-
-### Рекомендуемые скрипты AdGuard
-
-These userscripts come directly from the AdGuard developers, and we can guarantee that they are effective and safe. Remember: whenever you download a userscript from an unknown source, you expose yourself to risk, as some scripts may be harmful to your computer. Get new scripts only from the sources you trust 100%. Furthermore, here are [some examples](#more-userscripts) of popular sites with scripts.
-
-* **AdGuard Extra**. Расширение, которое блокирует рекламу в сложных случаях, когда привычного подхода, основанного на фильтрах, недостаточно.
-
-* **AdGuard Popup Blocker**. Он блокирует один из самых раздражающих типов рекламы — всплывающие окна.
-
-* **Помощник AdGuard** (старая версия). Расширение, предназначенное для управления фильтрацией прямо со страницы браузера (ручная блокировка, занесение сайта в исключения и т. д.).
-
-:::note
-
-This version of Assistant is legacy and there is no point in using it on new systems, since it has been replaced with the full-fledged [Browser Assistant](https://adguard.com/adguard-assistant/overview.html). Но старый Помощник может пригодиться, если для вашего браузера нет расширения Браузерного помощника.
+AdGuard может значительно расширять функциональность сайтов, работая как менеджер пользовательских скриптов. You can add your custom scripts or manage the existing ones in our three products: [AdGuard for Windows](/adguard-for-windows/features/extensions), [AdGuard for Android](/adguard-for-android/features/settings#userscripts), and [AdGuard for Mac](/adguard-for-mac/features/extensions).
 
 :::
 
-* **Отключить AMP**. Скрипт, предустановленный только в AdGuard для Android, который отключает AMP (Accelerated Mobile Pages) на странице результатов поиска Google.
+## Рекомендуемые скрипты AdGuard
+
+Эти пользовательские скрипты разработаны в AdGuard, и мы можем гарантировать, что они эффективны и безопасны. For some of the userscripts developed by others that we consider good and reliable, [scroll down to the next section](#top-picks). You can also find some of the [popular websites with scripts](#more-userscripts) below, but remember that whenever you download a userscript from an unknown source, you expose yourself to a certain risk, as some scripts may be harmful to your computer.
+
+### AdGuard Extra
+
+Расширение, которое блокирует рекламу в сложных случаях, когда привычного подхода, основанного на фильтрах, недостаточно. AdGuard Extra предустановлен во всех премиум-версиях AdGuard, поэтому вам не нужно ничего делать для его включения. Однако, если вы хотите использовать его вместе с Браузерным расширением AdGuard или любым другим блокировщиком рекламы, вам понадобится дополнительное расширение. Узнайте больше об этом пользовательском скрипте и о том, как его установить, [на GitHub](https://github.com/AdguardTeam/AdGuardExtra).
+
+![AdGuard Extra](https://cdn.adtidy.org/content/kb/ad_blocker/general/adguard-extra.png)
+
+### Блокировщик всплывающих окон
+
+Он блокирует один из самых раздражающих типов рекламы — всплывающие окна. Узнайте больше об этом пользовательском скрипте, его ключевых функциях и о том, как его установить, [на GitHub](https://github.com/AdguardTeam/AdGuardExtra).
+
+![Блокировщик всплывающих окон](https://cdn.adtidy.org/content/kb/ad_blocker/general/popup-blocker-installation.png)
+
+### Помощник AdGuard (устаревшая версия)
+
+Расширение, предназначенное для управления фильтрацией прямо со страницы браузера (ручная блокировка, занесение сайта в исключения и т. д.).
+
+:::note
+
+Это устаревшая версия Помощника и нет смысла использовать её на новых системах, потому что её давно заменил [Браузерный Помощник](https://adguard.com/adguard-assistant/overview.html). Но старый Помощник может пригодиться, если для вашего браузера нет Браузерного помощника. Если это ваш случай, узнайте, как установить Помощник AdGuard [на GitHub](https://github.com/AdguardTeam/AdguardAssistant).
+
+:::
+
+### Отключить AMP
+
+Скрипт, который предустановлен только в AdGuard для Android. Он отключает AMP (Accelerated Mobile Pages или «ускоренные мобильные страницы») на странице результатов поиска Google. Узнайте больше об этом пользовательском скрипте и о том, как его установить, [на GitHub](https://github.com/AdguardTeam/DisableAMP).
+
+![Отключить AMP](https://cdn.adtidy.org/content/kb/ad_blocker/general/disable-amp-installation.png)
+
+## Top picks outside AdGuard{#top-picks}
+
+These userscripts are not developed by AdGuard and therefore we can't give a 100% guarantee that they are safe and/or work at all times. However, in our experience they deserve a recommendation as they've all earned their good reputation.
+
+### Don't track me Google
+
+This script removes Google's tracking feature from the links in Google search results. It speeds up the loading of search results and allows you to right-click or tap to copy the link URL.
+
+Its source code is [available on GitHub](https://github.com/Rob--W/dont-track-me-google). This userscript can be downloaded from [GreasyFork](https://greasyfork.org/en/scripts/428243-don-t-track-me-google) and installed in any AdGuard CoreLibs-based app.
+
+### microShield
+
+Пользовательский скрипт для тех, кто посещает корейские и некоторые международные сайты. Пользовательский скрипт microShield блокирует рекламу Ad-Shield и антиблокировщики рекламы. Его исходный код доступен на [asdefuser](https://github.com/seia-soto/userscripts/tree/master/sources/asdefuser) и на [AdShield Defuser](https://github.com/seia-soto/adshield-defuser). Этот пользовательский скрипт можно установить в приложениях на основе AdGuard CoreLibs, Violentmonkey, Tampermonkey и [quoid/userscripts](https://github.com/quoid/userscripts). Узнайте больше о microShield и о том, как его установить, [на GitHub](https://github.com/AdguardTeam/DisableAMP).
 
 ## Где взять больше пользовательских скриптов{#more-userscripts}
 
-По большей части пользовательские скрипты создаются любителями, поэтому, устанавливая тот или иной скрипт, нужно быть очень осторожными. Тем не менее существует великое множество интересных скриптов, которые действительно могут сделать использование некоторых сайтов более удобным.
+As userscripts are mainly created by enthusiasts, you should be cautious when installing them. Any script from an unknown source carries a potential risk. Yet, there is a great variety of interesting scripts that, if installed carefully and responsibly, can really make using some websites more convenient.
 
 Здесь мы опишем несколько популярных каталогов пользовательских скриптов.
 
@@ -57,7 +88,7 @@ This version of Assistant is legacy and there is no point in using it on new sys
 
 ### Запросить лицензию
 
-Если вы разрабатываете свой пользовательский скрипт и хотите протестировать его работу с AdGuard, запросите бета-лицензию на приложение.
+Если вы разрабатываете свой пользовательский скрипт и хотите протестировать, как он работает с AdGuard, запросите бета-лицензию для приложения.
 
 Для этого отправьте нам сообщение devteam@adguard.com со следующей информацией:
 
@@ -73,7 +104,7 @@ This version of Assistant is legacy and there is no point in using it on new sys
 
 ##### Поддерживаемые свойства
 
-```
+```text
 @name
 @namespace
 @description
@@ -105,7 +136,7 @@ This version of Assistant is legacy and there is no point in using it on new sys
 
 AdGuard проигнорирует эти свойства.
 
-```
+```text
 @unwrap
 ```
 
@@ -115,9 +146,13 @@ AdGuard поддерживает как старые функции GM\_, так
 
 ##### Значения
 
-Обратите внимание, что все перечисленные функции Greasemonkey устарели, но всё ещё поддерживаются.
+:::note
 
-```
+Все перечисленные функции Greasemonkey устарели, но всё ещё поддерживаются.
+
+:::
+
+```text
 GM.info / GM_info
 GM.setValue / GM_setValue
 GM.getValue / GM_getValue

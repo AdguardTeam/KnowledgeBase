@@ -7,25 +7,21 @@ AdGuardアプリは、すべての主要プラットフォーム（iOS/Android/W
 
 ## AdGuardベータ版テスターになる方法 {#intro}
 
-基本要件は簡単で、AdGuardを使用し、ベータ版が利用可能になったらアップグレードし、気づいたバグをご報告いただく、という三つだけです。 ただし、ベータテスターには、 [フォーラム](https://forum.adguard.com/index.php) または [GitHub](https://github.com/) アカウントのいずれか（または両方）が必要になりますので、まずはアカウントを登録するのがよいかもしれません。
+基本要件は簡単で、AdGuardを使用し、ベータ版が利用可能になったらアップグレードし、気づいたバグをご報告いただく、という三つだけです。 However, you will need a [GitHub](https://github.com/) account to become our beta tester, so you may want to get that out of the way first.
 
-いずれにせよ、ベータテストを行うにあたって必要なことはすべて[こちらの専用ページ](https://adguard.com/en/beta.html)に集約されています。
+In any case, every single thing you need to know is gathered on a [dedicated page](https://adguard.com/beta.html).
 
 説明を飛ばして、すぐに行動に移りたい方は、[こちら](https://surveys.adguard.com/beta_testing_program/form.html)からベータテスト参加をお申し込みください。 申請は1〜3営業日以内に審査され、メールで結果を返信いたします。
 
 ## バグ・不具合を報告する方法 {#report-a-bug}
 
-バグを発見した場合、または単に提案を共有したい場合、以下のいずれの方法でお知らせてください:
+If you spotted a bug or just want to share your suggestion, let us know: go to [GitHub](https://github.com/AdguardTeam/), find a suitable repository, create a new issue there, and describe the bug/feature request in detail.
 
-* [forum.adguard.com](https://forum.adguard.com/index.php) にアクセスし、[フォーラムの「Beta Testing」カテゴリ](https://forum.adguard.com/index.php?categories/48/)に新しいスレッドを投稿してください（または同じ問題に関する既存のスレッドを見つけてください）。 ※事前に[フォーラムルール](https://forum.adguard.com/index.php?threads/14859/)をおご確認ください。
+The above method is the most preferred, but you can use others if necessary:
 
-* [AdGuardのGitHub](https://github.com/AdguardTeam/)にアクセスし、適当なレポジトリを見つけます。 新issueを作成してバグや機能リクエストを詳細にご説明ください。
+- [Facebook](https://www.facebook.com/AdguardEn/)、[Reddit](https://www.reddit.com/r/Adguard/)など、様々なSNSプラットフォームで私たちを見つけてご連絡ください。 ※技術的なことを話し合うのに一番効率的な方法とは言えません。
 
-上記の2つの方法が最も望ましいですが、必要に応じて以下の方法を用いることもできます:
-
-* [Facebook](https://www.facebook.com/AdguardEn/)、[Reddit](https://www.reddit.com/r/Adguard/)など、様々なSNSプラットフォームで私たちを見つけてご連絡ください。 ※技術的なことを話し合うのに一番効率的な方法とは言えません。
-
-* AdGuardアプリ内の「サポート」セクションからサポートチームにメッセージを送るか、[support@adguard.com](mailto:support@adguard.com)（日本語対応）までご連絡ください。
+- AdGuardアプリ内の「サポート」セクションからサポートチームにメッセージを送るか、[support@adguard.com](mailto:support@adguard.com)（日本語対応）までご連絡ください。
 
 ## iOS版AdGuardアプリでベータテスト用キーを有効にする方法 {#ios}
 
@@ -33,6 +29,6 @@ AdGuardアプリは、すべての主要プラットフォーム（iOS/Android/W
 
 ### 最後に
 
-これ以上、付け加えることはあまりありません。 わざわざ無理してバグを見つける必要はございません。 AdGuardを通常通りご利用いただけます。 ただし、バグ・不具合が見つかった場合はご報告ください。 もちろん、追加の努力やフォーラム活動などは大歓迎しております。
+これ以上、付け加えることはあまりありません。 わざわざ無理してバグを見つける必要はございません。 AdGuardを通常通りご利用いただけます。 ただし、バグ・不具合が見つかった場合はご報告ください。 Of course, we appreciate any additional effort.
 
 時折、ベータ版の最新の変更点やその他の重要なニュースを含むニュースレターをお届けいたします。 いつでも配信を停止することができます。

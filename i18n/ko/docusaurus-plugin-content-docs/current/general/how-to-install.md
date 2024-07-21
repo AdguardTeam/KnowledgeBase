@@ -1,20 +1,20 @@
 ---
-title: How to install AdGuard
+title: AdGuard를 설치하는 방법
 sidebar_position: 8
 ---
 
-Depending on which AdGuard app or browser extension you want to install, follow one of these links to find the relevant article:
+설치하려는 AdGuard 앱 또는 확장 프로그램에 따라 다음 링크 중 하나를 클릭하여 관련 지침을 따르세요.
 
-[AdGuard for Android](/adguard-for-android/installation)
+[Android용 AdGuard](/adguard-for-android/installation)
 
-[AdGuard for iOS](/adguard-for-ios/installation)
+[iOS용 AdGuard](/adguard-for-ios/installation)
 
-[AdGuard for Windows](/adguard-for-windows/installation)
+[Windows용 AdGuard](/adguard-for-windows/installation)
 
 [AdGuard for Mac](/adguard-for-mac/installation)
 
 [AdGuard 확장 프로그램](/adguard-browser-extension/installation)
 
-[AdGuard for Safari](/adguard-for-safari/installation)
+[Safari용 AdGuard](/adguard-for-safari/installation)
 
-[AdGuard Content Blocker](/adguard-content-blocker/installation)
+[AdGuard 콘텐츠 차단기](/adguard-content-blocker/installation)

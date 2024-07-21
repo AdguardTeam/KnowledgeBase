@@ -1,55 +1,53 @@
 ---
-title: How to configure system-wide filtering with AdGuard for iOS
+title: Cómo habilitar el filtrado en todo el sistema en AdGuard para iOS
 sidebar_position: 2
 ---
 
 :::info
 
-This article covers AdGuard for iOS, a multifunctional ad blocker that protects your device at the system level. To see how it works, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Este artículo trata sobre AdGuard para iOS, un bloqueador de anuncios multifuncional que protege tu dispositivo a nivel de sistema. Para ver cómo funciona de primera mano, [descarga la aplicación AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
-## About system-wide filtering
+## Acerca del filtrado en todo el sistema
 
-System-wide filtering means blocking ads and trackers beyond the Safari browser, i.e. in other apps and browsers. This article will tell you how to set it up on your iOS device.
+El filtrado a nivel del sistema significa bloquear anuncios y rastreadores más allá del navegador Safari, es decir, en otras aplicaciones y navegadores. Este artículo te dirá cómo activarlo en tu dispositivo iOS.
 
-On iOS, the only way to block ads and trackers system-wide is to use [DNS filtering](https://adguard-dns.io/kb/general/dns-filtering/). First, you have to enable DNS protection. To do so, open *AdGuard for iOS settings* → *DNS protection* and switch it on.
+En iOS, la única forma de bloquear anuncios y rastreadores en todo el sistema es utilizar [el filtrado DNS](https://adguard-dns.io/kb/general/dns-filtering/).
 
-![DNS protection screen *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_dns_protection.PNG)
+Primero, debes habilitar la Protección DNS. Para hacerlo:
 
-Now, if your purpose is to block ads and trackers system-wide, you have two options:
+1. Abre *AdGuard para iOS*.
+2. Toca el icono *Protección* (el segundo icono en la barra de menú inferior).
+3. Activa *Protección DNS*.
 
-1. Enable AdGuard DNS server (*Settings* → *DNS protection* → *DNS server* → *AdGuard DNS*).
-2. Add a DNS filter/hosts file that will block ad and tracking domains, e.g. AdGuard DNS filter.
+![Pantalla de protección DNS *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_dns_protection.PNG)
 
-The second option takes a bit more time to set up but has several advantages:
+Ahora, si tu objetivo es bloquear anuncios y rastreadores en todo el sistema, tienes tres opciones:
 
-* You can use any DNS server at your discretion and you are not tied up to a specific blocking server.
-* You can add multiple DNS filters and/or hosts files at the same time, but you can't use multiple DNS servers at once.
+ 1. Utiliza el filtro AdGuard DNS (*Protección* (el icono de escudo en el menú inferior) → *Protección DNS* → *Filtrado DNS* → *Filtros DNS* → *Filtro AdGuard DNS*).
+ 2. Utiliza el servidor AdGuard DNS (*Protección* (el icono de escudo en el menú inferior) → *Protección DNS* → *Servidor DNS* → *AdGuard DNS*) u otro servidor DNS de bloqueo de tu elección.
+ 3. Añade un filtro DNS personalizado/archivo hosts a tu gusto.
 
-![How DNS filtering works](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_en.png)
+La primera y tercera opción tienen varias ventajas:
 
-## How to add a DNS filter/hosts file
+- Puedes utilizar cualquier servidor DNS a tu discreción y no está atado a un servidor de bloqueo específico, porque el filtro hace el bloqueo.
+- Puedes agregar varios filtros DNS y/o archivos de hosts (aunque usar demasiados podría ralentizar AdGuard).
 
-You can add any DNS filter or hosts file, the instruction will be the same for all of them. For the sake of the example, let's add [AdGuard DNS filter](https://github.com/AdguardTeam/AdguardSDNSFilter). It is composed of several other filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList, EasyPrivacy, etc.) and it's simplified specifically to be better compatible with DNS-level ad blocking.
+![Cómo funciona el filtrado de DNS](https://cdn.adtidy.org/public/Adguard/kb/DNS_filtering/how_dns_filtering_works_en.png)
 
-1. Open *AdGuard for iOS settings* → *General*.
-2. Enable *Advanced mode*. The *Advanced settings* tab will appear. Open it.
+## Cómo agregar un filtro DNS personalizado/archivo de hosts
 
-![Open AdGuard Settings and enable Advanced mode *mobile_border](https://cdn.adtidy.org/public/Adguard/Release_notes/iOS/v4.0/advanced_mode_en.jpg)
+Puedes agregar cualquier filtro DNS o archivo de hosts que desees.
 
-![Advanced settings screen *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_advanced_settings.PNG)
+Por el bien del ejemplo, agreguemos [OISD Blocklist Big](https://oisd.nl/).
 
-:::note
+1. Copia este enlace: `https://big.oisd.nl` (es un enlace para OISD Blocklist Big filter)
+2. Abre *Protección* (el icono de escudo en el menú inferior) → *Protección DNS* → *Filtrado DNS* → *Filtros DNS*.
+3. Toca *Agregar un filtro*.
+4. Pega el enlace en el campo de URL de filtrado.
+5. Pulsa *Siguiente* → *Agregar*.
 
-We don't recommend touching other settings you'll find inside the *Advanced settings* tab, especially when it comes to *Low-level settings*. Some of them might break the Internet connection or compromise your privacy and security, so it's better to be careful. The text below describes the exact actions required to add AdGuard DNS filter.
+![Agregando una pantalla de filtrado DNS *mobile_border](https://cdn.adtidy.org/blog/new/ot4okIMGD236EB8905471.jpeg)
 
-:::
-
-3. Copy this link: `https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_15_DnsFilter/filter.txt` (it's a link for AdGuard DNS filter)
-4. Open *AdGuard for iOS settings* → *DNS protection* → *DNS filtering* (available while *Advanced mode* is enabled) → *DNS filters*.
-5. Tap *Add a filter*, paste the link into the filter URL field, and yap 'Next'.
-
-![Adding a DNS filter screen *mobile_border](https://cdn.adtidy.org/public/Adguard/Blog/ios_adding_a_filter.PNG)
-
-Add any number of other DNS filters the same way by pasting a different URL at step 3. You can find various filters and links to them [here](https://filterlists.com).
+Agrega cualquier cantidad de otros filtros DNS de la misma manera pegando una URL diferente en el paso 4. Puedes encontrar varios filtros y enlaces a ellos [aquí](https://filterlists.com).

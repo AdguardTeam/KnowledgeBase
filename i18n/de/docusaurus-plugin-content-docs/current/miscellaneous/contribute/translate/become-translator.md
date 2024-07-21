@@ -35,7 +35,7 @@ Außerdem gibt es die Möglichkeit, Übersetzungen in einem „Voting mode“ zu
 
 ![crowdin *border](https://cdn.adtidy.org/public/Adguard/kb/en/ag-translations/mode.png)
 
-In diesem Artikel finden Sie [hilfreiche Tipps zur Übersetzung von AdGuard](../guidelines). Bitte werfen Sie einen Blick darauf.
+In diesem Artikel finden Sie [hilfreiche Tipps zur Übersetzung von AdGuard](../guidelines). Bitte lesen Sie diese aufmerksam durch.
 
 ### Korrekturleser:in werden {#proofreaders}
 
@@ -51,4 +51,4 @@ Wofür sind Korrekturleser verantwortlich?
 
 - antworten auf Kommentare zu Übersetzungen in ihrer Sprache.
 
-Jedes Jahr erhalten die besten Korrektoren Geschenke von AdGuard. Auch aktive Übersetzer bleiben nicht unbelohnt. Lesen Sie mehr über unser [Belohnungssystem](../rewards).
+Jedes Jahr erhalten die besten Korrekturleser:innen Geschenke von AdGuard. Auch aktive Übersetzer bleiben nicht unbelohnt. Lesen Sie mehr über unser [Belohnungssystem](../rewards).

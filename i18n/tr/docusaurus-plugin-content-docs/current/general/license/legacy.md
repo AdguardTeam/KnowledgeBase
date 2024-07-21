@@ -1,5 +1,5 @@
 ---
-title: Legacy licenses FAQ
+title: Eski lisanslar hakkında SSS
 sidebar_position: 6
 ---
 
@@ -9,75 +9,75 @@ We have written this article to avoid confusion and explain in detail how you ca
 
 Initially licenses of the following types were available to activate AdGuard products:
 
-**Standard** — for desktop applications AdGuard for Windows/AdGuard for Mac
+**Standard** was for desktop applications, AdGuard for Windows and AdGuard for Mac
 
-**Mobile** — for mobile applications AdGuard for Android/AdGuard for iOS
+**Mobile** was for mobile apps, AdGuard for Android and AdGuard for iOS
 
-**Premium** — a license that combines desktop + mobile application
+**Premium**, masaüstü ve mobil uygulamaları birleştiren bir lisanstı
 
-Standard and Mobile licenses could be purchased for 1 to 9 devices.
+Standart ve Mobil lisanslar 1 ila 9 cihaz için satın alınabiliyor.
 
-Standard were valid only for desktops, and Mobile were only for smartphones and tablets.
+Standart yalnızca masaüstü bilgisayarlar için, Mobil ise yalnızca akıllı telefonlar ve tabletler için geçerliydi.
 
-Premium licenses could have been used on 2-18 devices. Depending on the number of devices selected upon purchasing, they allowed you to simultaneously activate AdGuard on an equal number of computers and mobile devices: 2+2, 3+3, etc.
+Premium lisanslar 2-18 cihazda kullanılabilirdi. Depending on the number of devices selected upon purchasing, they allowed you to simultaneously activate AdGuard on an equal number of computers and mobile devices: 2+2, 3+3, etc.
 
-For example, you might have had a Premium license for 2+2 devices, that is, the license could be installed on 2 computers and 2 phones/tablets. Or, for example, for 9+9 (18 devices in total), then the license could be installed on 9 computers and 9 phones/tablets.
+Örneğin, 2+2 cihaz için Premium lisansınız olabilir, yani lisans 2 bilgisayara ve 2 telefona/tablete uygulanabilir. Ya da örneğin 9+9 (toplam 18 cihaz) için lisans 9 bilgisayar ve 9 telefon/tablete uygulanabilir.
 
-For all types (Standard, Mobile, Premium) there were options for a Yearly and Lifetime license.
+Tüm türler için (Standart, Mobil, Premium) Yıllık ve Ömür boyu lisans seçenekleri mevcuttu.
 
-In October 2019 AdGuard switched to the new licensing system: from then on, licenses can still be purchased for 1 year or Lifetime, but their types have become **Personal** (for up to 3 devices) or **Family** (for up to 9 devices).
+Ekim 2019'da AdGuard yeni lisanslama sistemine geçti: o andan itibaren, lisanslar hala 1 yıl veya Ömür boyu için satın alınabilir, ancak türleri **Kişisel** (3 cihaza kadar) veya **Aile** (9 cihaza kadar) hâline geldi.
 
-One more change: **license keys of the new type can now be used on any device, in any combination. For example, a Personal License can be installed on Android, Mac and iOS, just like on two Windows computers and an Apple tablet, etc.**
+Bir değişiklik daha: Yeni türden **lisans anahtarı artık herhangi bir cihazda, herhangi bir kombinasyonda kullanılabilir. Örneğin, bir Kişisel lisans Android, Mac ve iOS'ta kullanılabilir, tıpkı iki Windows bilgisayar ve bir Apple tablette olduğu gibi.**
 
-## What happened to the outdated licenses?
+## Eski lisanslara ne oldu?
 
-Standard were automatically made universal, which means that they can be activated on any devices.
+Standart otomatik olarak evrensel hâle getirildi, bu da herhangi bir cihazda etkinleştirilebileceği anlamına geliyor.
 
-Mobile licenses remained unchanged and platform-limited (they can still only be used on phones or tablets).
+Mobil lisanslar değişmeden kaldı ve platformla sınırlı kaldı (halen yalnızca telefonlarda veya tabletlerde kullanılabilirler).
 
-Premium licenses also remained unchanged and platform-limited. And although **Premium licenses are now displayed in your personal account by the total number of devices**, they can still be activated on desktop + mobile set of devices.
+Premium lisanslar da değişmedi ve platformla sınırlı kaldı. Ayrıca **Premium lisansları artık kişisel hesabınızda toplam cihaz sayısına göre görüntüleniyor olsa da**, masaüstü + mobil cihazlarda hâlâ etkinleştirilebilirler.
 
-For example, this is how the 1+1 key looks like:
+Örneğin 1+1 tuşu şu şekilde görünür:
 
 ![1+1 key](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/1.outdatedlicenses_en.png)
 
-*But despite the total number of devices (2) it can be activated on 1 desktop and 1 mobile device.*
-> All the outdated licenses have a "legacy" badge in the AdGuard account. And they are automatically converted to a new type when you either renew or upgrade them. But there are some nuances. Let's see which licenses can be converted to a new type and how to do it.
+*Ancak toplam cihaz sayısına (2) rağmen 1 masaüstü ve 1 mobil cihazda etkinleştirilebilmektedir.*
+> Tüm eski lisansların AdGuard hesabında bir "eski" rozeti vardır. Ve yenilediğinizde veya yükselttiğinizde otomatik olarak yeni bir türe dönüştürülürler. Ancak bazı ince ayrıntılar vardır. Hangi lisansların yeni bir türe dönüştürülebileceğini ve bunun nasıl yapılacağını görelim.
 
-## I have an outdated (legacy) key. What renewal/upgrade options are available for me?
+## Eski (güncel olmayan) bir anahtarım var. Benim için hangi yenileme/yükseltme seçenekleri mevcut?
 
-You can check this on the [renewal page](https://adguard.com/renew.html) or in your [AdGuard account](https://my.adguard.com/main.html):
+Bunu [yenileme sayfasında](https://adguard.com/renew.html) veya [AdGuard hesabınızda](https://my.adguard.com/main.html) kontrol edebilirsiniz:
 
 ![Upgrade](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/2.switch_en.png)
-> Go to "My licenses" tab and check what actions are available to you for each specific key. Below we will explain with specific examples.
+> Go to "My licenses" tab and check what actions are available to you for each specific key. Aşağıda belirli örneklerle açıklayacağız.
 
 ### Licenses for 1/2/3 devices
 
-**Yearly** licenses for 1, 2, 3 devices can be converted to either Personal or Family:
+1, 2, 3 cihaz için **Yıllık** lisans, Kişisel veya Aile'ye dönüştürülebilir:
 
 ![Upgrade or renew](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/3.yearly_en.png)
-> Choose based on how many devices you need to protect.
+> Korumanız gereken cihaz sayısına göre seçim yapın.
 
-Instead of renewal you can switch to Lifetime:
+Yenileme yerine Ömür boyu'na geçebilirsiniz:
 
 ![Lifetime](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/4.lifetime_en.png)
 
-**Lifetime** licenses can only be converted to Family (9 devices) due to technical limitations:
+**Ömür boyu** lisanslar, teknik kısıtlamalar nedeniyle yalnızca Aile'ye (9 cihaz) dönüştürülebilir:
 
-![Lifetime upgrade](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/5.lifetimeupgrade_en.png)
+![Ömür boyu yükseltme](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/5.lifetimeupgrade_en.png)
 
-### Licenses for 4+ devices (up to 9)
+### 4'ten fazla cihaz için lisanslar (9'a kadar)
 
-**Yearly** keys of this configuration can only be converted into a Family license:
+Bu yapılandırmanın **yıllık** anahtarları yalnızca Aile lisansına dönüştürülebilir:
 
 ![Yearly license for 4 devices](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/6.yearly4+devices_en.png)
 
-**Lifetime** licenses for 4 or more devices cannot be upgraded due to technical limitation:
+4 veya daha fazla cihazın **Ömür boyu** lisansları teknik kısıtlama nedeniyle yükseltilemez:
 
-![Lifetime license for 4 devices](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/7.lifetime4+devices_en.png)
+![4 cihaz için Ömür boyu lisans](https://cdn.adtidy.org/public/Adguard/kb/newscreenshots/En/General/legacy-licenses/7.lifetime4+devices_en.png)
 
-### Licenses for 9+ devices
+### 9'dan fazla cihaz için lisanslar
 
-Premium keys (5+5 and more) and custom keys for 10+ devices that you purchased individually with the help of our managers.
+Yöneticilerimizin yardımıyla bireysel olarak satın aldığınız premium anahtarlar (5+5 ve üzeri) ve 10'dan fazla cihaz için özel anahtarlar.
 
-These are quite unique cases, so if you want to upgrade your license to Lifetime, please contact us at partners@adguard.com. We will make you a special offer depending on the specific configuration of your license.
+Bunlar oldukça benzersiz durumlardır; dolayısıyla lisansınızı Ömür boyu lisansa yükseltmek istiyorsanız lütfen partner@adguard.com adresinden bizimle iletişime geçin. Lisansınızın özel yapılandırmasına bağlı olarak size özel bir teklif sunacağız.
