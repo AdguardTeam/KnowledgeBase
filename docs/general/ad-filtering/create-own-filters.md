@@ -989,7 +989,7 @@ Blocking cookies and removing tracking parameters is achieved by using rules wit
 :::info Compatibility
 
 - Stealth Mode is available in AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard Browser Extension. All other products will ignore the rules with `$stealth` modifier.
-- Rules with `$stealth` modifier with specific options are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs] v1.10 or later, and AdGuard Browser Extension with [TSUrlFilter] v3.0 or later.
+- Rules with `$stealth` modifier with specific options are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs] v1.10 or later, and AdGuard Browser Extension with [TSUrlFilter] v3.0.0 or later.
 
 :::
 
@@ -1999,8 +1999,8 @@ Firefox ignores the `Permissions-Policy` header. For more information, see [this
 
 :::info Compatibility
 
-- Rules with the `$permissions` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs] v1.11 or later, and AdGuard Browser Extension with [TSUrlFilter] v3.0 or later.
-- Pipe separator `|` instead of escaped comma is supported by AdGuard for Windows, Mac, and Android with [CoreLibs] v1.14 or later, and AdGuard Browser Extension with [TSUrlFilter] v3.0 or later.
+- Rules with the `$permissions` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs] v1.11 or later, and AdGuard Browser Extension with [TSUrlFilter] v3.0.0 or later.
+- Pipe separator `|` instead of escaped comma is supported by AdGuard for Windows, Mac, and Android with [CoreLibs] v1.14 or later, and AdGuard Browser Extension with [TSUrlFilter] v3.0.0 or later.
 
 :::
 
