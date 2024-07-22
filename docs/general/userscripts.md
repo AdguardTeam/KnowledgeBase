@@ -216,18 +216,21 @@ AdGuard products provide limited support for userstyles. `@var` and `@advanced` 
 as well as any value of the `@preprocessor` metadata tag except `default`.
 
 ### Metadata
+
 The metadata block is written using CSS-style comments, starts with `===UserStyle===` and ends with `===/UserStyle===`.
 All metadata tags that are supported for userscripts are also supported for userstyles, although some of them have no meaning and are ignored.
 `@var` and `@advanced` tags are not supported.
 The only value of the `@preprocessor` tag that is supported is `default`.
 
 ### Content
+
 The content of a userstyle is plain CSS with support for the [`@-moz-document` at-rule](https://developer.mozilla.org/en-US/docs/Web/CSS/@document).
 The `media-document()` function is not supported.
 The userstyle will only be applied on pages that match one or more of the `@-moz-document` rules.
 If the userstyle does not contain any `@-moz-document` rules, it will not be applied.
 
 ### Example
+
 ```css
 /* ==UserStyle==
 @name         Example userstyle
