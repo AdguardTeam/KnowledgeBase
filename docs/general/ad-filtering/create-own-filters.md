@@ -945,7 +945,7 @@ Disables the Stealth Mode module for all corresponding pages and requests.
 $stealth [= opt1 [| opt2 [| opt3 [...]]]]
 ```
 
-`opt(i)` stand for certain Stealth Mode options disabled by the modifier. The modifier can contain any number of options (see below) or none. In the latter case the modifier disables all the Stealth Mode features.
+`opt(i)` stand for certain Stealth Mode options disabled by the modifier. The modifier can contain any number of specific options (see below) or none. In the latter case the modifier disables all the Stealth Mode features.
 
 The list of the available modifier options:
 
@@ -982,13 +982,14 @@ Blocking cookies and removing tracking parameters is achieved by using rules wit
 
 - Modifier options must be lowercase, i.e. `$stealth=DPI` will be rejected.
 - Modifier options cannot be negated, i.e. `$stealth=~3p-cookie` will be rejected.
+- AdGuard Browser Extension supports only `searchqueries`, `donottrack`, `referrer`, `xclientdata`, `1p-cookie` and `3p-cookie` options.
 
 :::
 
 :::info Compatibility
 
-- Stealth Mode is available in AdGuard for Windows, Mac, and Android, and AdGuard Browser Extension. All other products will ignore the rules with `$stealth` modifier.
-- Rules with `$stealth` modifier with specific options are supported by AdGuard for Windows, Mac, and Android with [CoreLibs] v1.10 or later.
+- Stealth Mode is available in AdGuard for Windows, AdGuard for Mac, AdGuard for Android, and AdGuard Browser Extension. All other products will ignore the rules with `$stealth` modifier.
+- Rules with `$stealth` modifier with specific options are supported by AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs] v1.10 or later, and AdGuard Browser Extension with [TSUrlFilter] v3.0.0 or later.
 
 :::
 
