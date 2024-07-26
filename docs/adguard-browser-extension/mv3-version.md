@@ -37,7 +37,7 @@ The old beta extension has been renamed to [**AdGuard Ad Blocker MV2**](https://
 
   The new stats screen displays categorized URLs by company and requests sent. All data is handled on the client side, and we do not store any request information. We only show which request was sent to which company.
 
-- The *Tracking protection* tab (formerly known as *Stealth mode*)
+- *Tracking protection* (formerly known as *Stealth mode*)
 
   ![Tracking protection *border](https://cdn.adtidy.org/content/blog/new/tracking_screen.png)
 
