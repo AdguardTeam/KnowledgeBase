@@ -1,5 +1,5 @@
 ---
-title: MV3 version
+title: Manifest V3 version
 sidebar_position: 5
 ---
 
@@ -21,23 +21,23 @@ The old beta extension has been renamed to [**AdGuard Ad Blocker MV2**](https://
 
   > In the future, we want to implement differential filter updates, similar to our MV2 extension. When we add this, the manual and automatic update options will return.
 
-- **Service worker functionality.** Chrome has implemented a workaround so that service worker doesn’t go to sleep. Why is this important?
+<!--- **Service worker functionality.** Chrome has implemented a workaround so that service worker doesn’t go to sleep. Why is this important?
 
    When the service worker is inactive, it affects the way rules are applied, with a few seconds of delay and glitches. The Chrome workaround helps with this problem, but it is not a foolproof solution. Chrome can always remove the workaround and the glitching will return. We are working on our own solution to reduce the glitching delay to a minimum, but it will still be more noticeable and slower than it was in MV2.
-
+-->
 - **Filtering log**
 
   ![Filtering log *border](https://cdn.adtidy.org/content/blog/new/log.png)
 
   Due to DNR restrictions, we can’t show exactly which rule worked, but we will provide an “approximate rule that was triggered” based on our engine. For precise information, you’ll need to install the “unpacked” form of the extension in your browser yourself. That is, you need to clone [our repository](https://github.com/AdguardTeam/AdguardBrowserExtension/tree/v5.0), “build” the extension, switch the browser to Developer mode, and only in this case you will be able to use the tools for debugging filters.
 
-- **Statistics**
+<!--- **Statistics**
 
   ![Statistics *mobile](https://cdn.adtidy.org/content/blog/new/stats.png)
 
   The new stats screen displays categorized URLs by company and requests sent. All data is handled on the client side, and we do not store any request information. We only show which request was sent to which company.
-
-- The *Tracking protection* tab (formerly known as *Stealth mode*)
+-->
+- *Tracking protection* (formerly known as *Stealth mode*)
 
   ![Tracking protection *border](https://cdn.adtidy.org/content/blog/new/tracking_screen.png)
 
