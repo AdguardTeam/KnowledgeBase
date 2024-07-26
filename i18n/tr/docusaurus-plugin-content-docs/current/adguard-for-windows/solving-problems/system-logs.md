@@ -9,6 +9,12 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 :::
 
+:::not
+
+Data and/or files provided in system logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+
+:::
+
 Ortaya çıkabilecek farklı sorunları analiz etmek ve teşhis etmek için AdGuard destek hizmetinin Windows sistem günlük dosyalarına ihtiyacı olabilir. Windows olay günlükleri, AdGuard da dahil olmak üzere yüklü yazılımda meydana gelen tüm hatalara ilişkin kayıtları içerir. Aşağıda günlük dosyalarını nasıl alacağınızı ve gerekirse destek servisimize nasıl göndereceğinizi açıklayan kısa talimat bulunmaktadır.
 
 1. *Win + R* tuşlarına basın
@@ -36,3 +42,9 @@ Ortaya çıkabilecek farklı sorunları analiz etmek ve teşhis etmek için AdGu
     - Choose a destination folder, enter the name, click *Save*. *Aşağıdaki diller için bilgileri görüntüle* öğesini seçin. *İngilizce* öğesinin yanındaki kutuyu işaretlemeniz gerekir. *Tamam* öğesine tıklayın.
 
 Lütfen yakın zamanda kaydettiğiniz iki dosyayı **support@adguard.com** adresine gönderin.
+
+:::not
+
+AdGuard gizliliğinizi korumaya kararlıdır. [Gizlilik Politikamıza](https://adguard.com/privacy/windows.html) kesinlikle uyuyoruz ve kullanıcılar hakkında herhangi bir özel bilgi toplamıyoruz. Günlüklerinizi destek ekibine göndermeden önce, paylaşmak istemediğiniz ek bilgiler içerebileceğinden lütfen dosyayı inceleyin. Bu tür kişisel bilgiler içeriyorsa öncelikle onu silmenizi öneririz.
+
+:::

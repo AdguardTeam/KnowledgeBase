@@ -9,6 +9,12 @@ sidebar_position: 4
 
 :::
 
+:::note
+
+Data and/or files provided in system logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+
+:::
+
 AdGuard 설치 중 문제가 발생하면 지원 팀에서 AdGuard 설치 로그를 수집하여 보내달라고 요청할 수 있습니다. AdGuard 설치 로그 수집 및 전송 방법은 다음과 같습니다.
 
 1. Select *Run* command in Start menu or press *Win + R* on the keyboard.

@@ -32,4 +32,4 @@ Anders verhält es sich bei dem Projekt *AdGuard Websites* . Sprachen können de
 
 Das Hinzufügen neuer und das Aktualisieren bestehender Zeichenfolgen in diesen Dateien erfordert besondere Aufmerksamkeit von den Übersetzer:innen und Korrekturleser:innen.
 
-In addition to websites, there is a file for translating [transactional emails](https://crowdin.com/project/adguard-websites/en#/emails) in the AdGuard Websites project. Neu hinzugefügte Zeichenfolgen in dieser Datei haben ebenfalls eine hohe Übersetzungspriorität.
+Zusätzlich zu den Websites gibt es im Projekt AdGuard Websites eine Datei zur Übersetzung von [Transaktions-E-Mails](https://crowdin.com/project/adguard-websites/en#/emails). Neu hinzugefügte Zeichenfolgen in dieser Datei haben ebenfalls eine hohe Übersetzungspriorität.

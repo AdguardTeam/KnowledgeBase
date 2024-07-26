@@ -9,6 +9,12 @@ Tento článek popisuje AdGuard pro Android, multifunkční blokátor reklam, kt
 
 :::
 
+:::note
+
+HAR files are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+
+:::
+
 ## Co jsou soubory HAR?
 
 Formát HAR (HTTP ARchive) je archivní soubor ve formátu JSON pro zaznamenávání interakce webového prohlížeče s webem. Specifikace formátu HAR definuje archivační data pro transakce HTTP, která prohlížeč používá k exportu podrobných informací o načítaných webových stránkách. Podrobnější popis formátu HAR a jeho specifikace naleznete na webové stránce [ softwareishard.com](http://www.softwareishard.com/blog/har-12-spec/).

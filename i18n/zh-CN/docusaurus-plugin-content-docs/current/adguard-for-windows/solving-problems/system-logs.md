@@ -9,6 +9,12 @@ sidebar_position: 5
 
 :::
 
+:::note
+
+Data and/or files provided in system logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+
+:::
+
 要分析和诊断可能潜在的问题，AdGuard 支持服务可能需要 Windows 系统日志文件。 Windows 事件日志记录着所有已安装软件发生的错误，包括 AdGuard 在内。 下面我们简述获取日志文件的方式并在需要的时候反送给我们的支持服务。
 
 1. 按「*Win + R*」
@@ -36,3 +42,9 @@ sidebar_position: 5
     - 选择目标文件夹，输入名称，点击「*保存*」。 选择「*显示以下语言的信息*」。 您需要选中「*English*」旁边的复选框。 单击「*确定*」。
 
 请发送您最近保存的两个文件到 **support@adguard.com**。
+
+:::note
+
+AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/windows.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+
+:::

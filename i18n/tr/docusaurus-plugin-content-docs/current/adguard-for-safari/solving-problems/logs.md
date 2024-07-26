@@ -19,7 +19,11 @@ Safari için AdGuard ile oluşabilecek çeşitli sorunları analiz etmek ve teş
 
 Now you can send this file to support@adguard.com or attach it to your bug report on GitHub.
 
-> AdGuard is committed to protecting your privacy. [Gizlilik Politikamıza](https://adguard.com/privacy/safari.html) kesinlikle uyuyoruz ve kullanıcılar hakkında herhangi bir özel bilgi toplamıyoruz. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+:::note
+
+AdGuard gizliliğinizi korumaya kararlıdır. [Gizlilik Politikamıza](https://adguard.com/privacy/safari.html) kesinlikle uyuyoruz ve kullanıcılar hakkında herhangi bir özel bilgi toplamıyoruz. Günlüklerinizi destek ekibine göndermeden önce, paylaşmak istemediğiniz ek bilgiler içerebileceğinden lütfen dosyayı inceleyin. Bu tür kişisel bilgiler içeriyorsa öncelikle onu silmenizi öneririz.
+
+:::
 
 1. [Safari için AdGuard GitHub reposunu](https://github.com/AdguardTeam/AdGuardForSafari/issues) açın ve _New issue_ öğesine tıklayın.
 2. Günlük dosyasını devteam@adguard.com adresine gönderin. Hatanın zamanını ekleyin ve sorununuzun bağlantısını veya numarasını ekleyin (başlığın yanında #sayı olarak görünür).

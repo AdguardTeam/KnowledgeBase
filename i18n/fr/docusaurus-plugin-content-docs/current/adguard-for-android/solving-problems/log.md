@@ -9,9 +9,19 @@ This article is about AdGuard for Android, a multifunctional ad blocker that pro
 
 :::
 
+:::note
+
+Data and/or files provided in logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+
+:::
+
 Dans cet article, nous vous guiderons le long du processus de collecte des journaux de débogage, une étape de dépannage essentielle pour résoudre les problèmes complexes qui peuvent survenir. Debug logs provide detailed insight into the inner workings of AdGuard for Android. If the AdGuard support team asks you to provide debug logs, simply follow these instructions.
 
-> AdGuard s'engage à protéger votre vie privée. We strictly follow our [Privacy Policy](https://adguard.com/en/privacy/android.html) and do not collect any private information about users. Avant d'envoyer vos journaux à l'équipe d'assistance, veuillez consulter le fichier car il peut contenir des informations supplémentaires que vous ne souhaitez pas partager. S'il contient de telles informations personnelles, nous vous recommandons de les supprimer au préalable.
+:::note
+
+AdGuard s'engage à protéger votre vie privée. We strictly follow our [Privacy Policy](https://adguard.com/privacy/android.html) and do not collect any private information about users. Avant d'envoyer vos journaux à l'équipe d'assistance, veuillez consulter le fichier car il peut contenir des informations supplémentaires que vous ne souhaitez pas partager. S'il contient de telles informations personnelles, nous vous recommandons de les supprimer au préalable.
+
+:::
 
 ### Collecting debug log
 
