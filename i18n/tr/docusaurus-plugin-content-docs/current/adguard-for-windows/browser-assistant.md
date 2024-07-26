@@ -15,7 +15,7 @@ AdGuard Tarayıcı Asistanı bir tarayıcı uzantısıdır, bir tarayıcıya yü
 
 ### Ana uygulama ile uyumluluk
 
-Önceki AdGuard Reklam Engelleyici uzantımız [Entegre modunda](/adguard-browser-extension/integration-mode) kullanma alışkanlığı edindiyseniz, yeni Tarayıcı Asistanı için geliştirdiğimiz çözümü beğenebilirsiniz.
+If you got into the habit of using our previous [AdGuard Ad Blocker extension](/adguard-browser-extension/compatibility), you might like the solution that we have developed for the new Browser Assistant.
 
 Arka plan bilgisi:
 
@@ -27,11 +27,11 @@ Tarayıcı Asistanını kullanırken, özünde herhangi bir çakışma olamayaca
 
 ## Ayarlar'da ayrı sekme
 
-Yeni Tarayıcı Asistanı, Windows için AdGuard ayarlarında Gizlilik Modu, Gezinti Koruması, Ebeveyn Denetimi ve diğerleriyle birlikte kendi sekmesine sahiptir. Burada varsayılan tarayıcınız için uzantıyı indirmek üzere bir bağlantı bulacaksınız. Ayrıca, eski Asistanı etkinleştirmek için bir onay kutusu vardır.
+Yeni Tarayıcı Asistanı, Windows için AdGuard ayarlarında Gizlilik Modu, Gezinti koruması, Ebeveyn Denetimi ve diğerleriyle birlikte kendi sekmesine sahiptir. Burada varsayılan tarayıcınız için uzantıyı indirmek üzere bir bağlantı bulacaksınız. Ayrıca, eski Asistanı etkinleştirmek için bir onay kutusu vardır.
 
 ![Ayarlar *border](https://cdn.adtidy.org/content/kb/ad_blocker/windows/browser-assistant/browser-assistant.png)
 
-## Legacy Assistant
+## Eski Asistan
 
 Eski Asistan, bir tarayıcı uzantısı değil, yalnızca bir kullanıcı betiği olan Asistan'ın önceki sürümüdür. Temel olarak, yeni Tarayıcı Asistanı yerine bunu seçmek isteyebileceğiniz iki durum vardır:
 

@@ -13,13 +13,13 @@ Bu makale, yalnızca Safari tarayıcınızı koruyan Safari için AdGuard hakkı
 
 Safari için AdGuard, App Store'da sunulan ücretsiz bir uygulamadır. Cihazınıza yüklemek için aşağıdakileri yapın.
 
-1. Open the App Store and find the needed extension there.
+1. App Store'u açın ve gerekli uzantıyı orada bulun.
 
-    ![AdGuard for Safari on the App Store](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-app-store.png)
+    ![App Store'da Safari için AdGuard](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-app-store.png)
 
 1. Press *Get* → *Install* → *Open*.
 
-1. Safari için AdGuard'ı ayarlamak üzere Safari ayarlarında AdGuard uzantılarını etkinleştirin. Bir bildirimde *Düzelt* öğesine tıklayın. Açılan bir pencerede, AdGuard uzantılarının yanındaki kutuları işaretleyin.
+1. Safari için AdGuard'ı ayarlamak üzere Safari ayarlarında AdGuard uzantılarını etkinleştirin.
 
     ![Bildirim: Bazı uzantılar devre dışı bırakıldı](https://cdn.adtidy.org/content/Kb/ad_blocker/safari/adguard-for-safari-notification.png)
 
@@ -43,15 +43,13 @@ Safari için AdGuard, App Store'da sunulan ücretsiz bir uygulamadır. Cihazın�
 
 On macOS, click *Preference* → *Websites* → *Content Blockers*. If you want to enable AdGuard on every website, turn *When visiting other websites* to *On*.
 
-    ![Mac Safari Content Blocker Setting](https://i0.imgs.ovh/2023/10/26/Fmc9U.png)
+![Mac Safari İçerik Engelleyici Ayarı](https://i0.imgs.ovh/2023/10/26/Fmc9U.png)
+<!-- adguard-for-safari-content-blocker-setting-macos.png -->
 
-    <!-- adguard-for-safari-content-blocker-setting-macos.png -->
+iOS'ta, *Ayarlar* → *Safari* → *İçerik Engelleyiciler* öğesine gidin ve seçeneği *Evet* olarak ayarlayın.
 
-On iOS, go *Settings* → *Safari* → *Content Blockers*, and set the option to *Yes*.
-
-    ![iOS Safari Content Blocker Setting](https://i0.imgs.ovh/2023/10/26/FmgM0.jpeg)
-
-    <!-- adguard-for-safari-content-blocker-setting-ios.jpg -->
+![iOS Safari İçerik Engelleyici Ayarı](https://i0.imgs.ovh/2023/10/26/FmgM0.jpeg)
+<!-- adguard-for-safari-content-blocker-setting-ios.jpg -->
 
 After you complete steps 1-4, AdGuard for Safari will start functioning. You can now configure its settings.
 
@@ -59,11 +57,11 @@ After you complete steps 1-4, AdGuard for Safari will start functioning. You can
 
 To uninstall AdGuard for Safari, do the following:
 
-1. Quit the app.
+1. Uygulamadan çıkın.
 
-1. Open Safari preferences.
+1. Safari tercihlerini açın.
 
-1. Choose the Extensions tab. You will see a list of extensions, AdGuard has eight.
+1. Uzantılar sekmesini seçin. You will see a list of extensions, AdGuard has eight.
 
 1. Uncheck all checkboxes and press *Uninstall* below any of them.
 
@@ -75,4 +73,4 @@ To uninstall AdGuard for Safari, do the following:
 
 1. Press *Show in Finder* and move the application to the bin.
 
-    AdGuard for Safari will be removed from your device.
+    Safari için AdGuard cihazınızdan kaldırılacaktır.

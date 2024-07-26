@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::info
 
-В этой статье рассказывается об AdGuard для Android — многофункциональном блокировщике рекламы, который защищает ваше устройство на системном уровне. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Android, a multifunctional ad blocker that protects your device at the system level. Чтобы увидеть, как он работает, [скачайте приложение AdGuard](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -37,13 +37,13 @@ sidebar_position: 1
 
     *radio.active=* 100–300мА дополнительное потребление в мАч, вызванное передачей данных по мобильной сети.
 
-    *cpu.active=* 100–200мА дополнительное потребление в мАч, вызванное работой процессора.
+    *cpu.active=* 100-200mA additional consumption in mAh caused by CPU load.
 
-1. AdGuard самостоятельно почти не потребляет трафика, так что для оценки потребления батареи отбросим значения Mobile/Wi-Fi packets и остановимся на подсчёте CPU.
+1. AdGuard by itself almost doesn't consume any traffic, so for the sake of evaluating power consumption let's get rid of 'Mobile/Wi-Fi packets' and stick to 'CPU'.
 
     Формула для вычисления потребления:
 
-    > "CPU TIME (мс)" x "cpu.active" / (60 *60* 1000) = "POWER USE мАч"
+    > “CPU TIME (ms)” X “cpu.active” / (60 *60* 1000) = “POWER USE mAh”
 
     Подставим в эту формулу реальные значения.
 

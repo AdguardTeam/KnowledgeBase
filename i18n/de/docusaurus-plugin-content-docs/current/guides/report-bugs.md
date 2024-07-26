@@ -26,7 +26,7 @@ Versuchen Sie, so viele Details wie möglich anzugeben — das macht es für uns
 - Ob es wieder auftritt und mit welcher Häufigkeit
 - Ob Sie ein VPN oder eine Antiviren-Software haben
 
-### Wie man Protokolle sammelt
+### So erstellen Sie Protokolle
 
 Lesen Sie über das Sammeln von Protokollen in speziellen Artikeln für jede Plattform.
 
@@ -76,7 +76,7 @@ Sie finden die Reaktionen in der oberen rechten Ecke oder am Ende einer Ausgabe.
 
 3. Füllen Sie das Formular aus. Wenn möglich, fügen Sie Screenshots oder eine Bildschirmaufnahme bei.
 
-### AdGuard-Browsererweiterung
+### AdGuard Browsererweiterung
 
 1. Überprüfen Sie das [Browser Extension Repo](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/), um sicherzustellen, dass das Problem noch nicht gemeldet wurde.
 

@@ -5,7 +5,7 @@ sidebar_position: 8
 
 :::info
 
-Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbeblocker, der Ihr Gerät auf Systemebene schützt. Um zu sehen, wie es funktioniert, [laden Sie die AdGuard-App herunter](https://agrd.io/download-kb-adblock)
 
 :::
 
@@ -25,7 +25,7 @@ In this article we give examples of how to set up some of the most popular proxi
 
 ### How to use AdGuard with Tor
 
-1. Open AdGuard and go to **Settings** → **Filtering** → **Network** → **Proxy**. Download "Orbot: Proxy with Tor" directly from [Google Play](https://play.google.com/store/apps/details?id=org.torproject.android&noprocess) or by tapping **Integrate with Tor** and then **Install**.
+1. Open AdGuard and go to **Settings** → **Filtering** → **Network** → **Proxy**. Download “Orbot: Proxy with Tor” directly from [Google Play](https://play.google.com/store/apps/details?id=org.torproject.android&noprocess) or by tapping **Integrate with Tor** and then **Install**.
 
 1. Open Orbot and press the **Start** button on the application's main screen.
 
@@ -61,7 +61,7 @@ In this article we give examples of how to set up some of the most popular proxi
     | Proxy host | *proxy-nl.privateinternetaccess.com* |
     | Proxy port | *1080*                               |
 
-1. You also need to fill out the **Username/Password** fields. To do so, log in to the [Client Control Panel](https://www.privateinternetaccess.com/pages/client-sign-in) on the PIA website. Click the **Generate Password** button under the **Generate PPTP/L2TP/SOCKS Password** section. A username starting with "x" and a random password will be shown. Use them to fill out the **Proxy username** and **Proxy password** fields in AdGuard.
+1. You also need to fill out the **Username/Password** fields. To do so, log in to the [Client Control Panel](https://www.privateinternetaccess.com/pages/client-sign-in) on the PIA website. Tap the **Generate Password** button under the **Generate PPTP/L2TP/SOCKS Password** section. A username starting with “x” and a random password will be shown. Use them to fill out the **Proxy username** and **Proxy password** fields in AdGuard.
 
 1. Tap **Save and select**.
 
@@ -93,11 +93,11 @@ In this article we give examples of how to set up some of the most popular proxi
 
 1. Tap the **Add proxy server** button and enter the following data:
 
-    | Field      | Value                                                                          |
-    | ---------- | ------------------------------------------------------------------------------ |
-    | Proxy type | *SOCKS5*                                                                       |
-    | Proxy host | *any server from [this list](https://support.nordvpn.com/Connectivity/Proxy/)* |
-    | Proxy port | *1080*                                                                         |
+    | Field      | Value                                                                                                                           |
+    | ---------- | ------------------------------------------------------------------------------------------------------------------------------- |
+    | Proxy type | *SOCKS5*                                                                                                                        |
+    | Proxy host | *any server from [this list](https://support.nordvpn.com/hc/en-us/articles/20195967385745-NordVPN-proxy-setup-for-qBittorrent)* |
+    | Proxy port | *1080*                                                                                                                          |
 
 1. For **Username** and **Password** fields, enter your NordVPN Username and Password.
 

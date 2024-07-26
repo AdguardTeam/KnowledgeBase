@@ -1,9 +1,7 @@
 ---
-title: 什么是 AdGuard 许可证
+title: 什么是 AdGuard 许可证密钥?
 sidebar_position: 1
 ---
-
-## 什么是 AdGuard 许可证
 
 许可证是使用 AdGuard 产品的许可，根据[最终用户许可协议](https://adguard.com/eula.html)提供的。 如果与电子邮件地址绑定，AdGuard 许可证可在用户的 [AdGuard 账号](https://my.adguard.com/)中找到。
 

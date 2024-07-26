@@ -11,7 +11,7 @@ Používání protokolu HTTPS je velmi výhodné, protože šifrovaný provoz je
 
 Níže uvedený diagram popisuje rozdíl mezi prostým protokolem HTTP a zabezpečeným protokolem HTTPS.
 
-![What is HTTPS](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https.png)
+![Co je HTTPS?](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https.png)
 
 ### Co je to bezpečnostní certifikát?
 

@@ -31,7 +31,7 @@ Les appareils liés à vos licences du Bloqueur AdGuard peuvent être déliés o
 
 ## Afficher les achats
 
-La section Historique des achats affiche toutes les licences que vous avez déjà achetées en utilisant le compte de messagerie avec lequel vous avez enregistré votre compte AdGuard. Vous y trouverez également des informations sur la date d'achat, le numéro de commande, le mode de paiement et le coût de l'achat.
+La section Historique des achats affiche toutes les licences que vous avez déjà achetées en utilisant le compte de messagerie avec lequel vous avez enregistré votre compte AdGuard. Vous y trouverez également des informations sur la date d'achat, l'ID de commande, le mode de paiement et le coût de l'achat.
 
 ## Contacter l'assistance
 

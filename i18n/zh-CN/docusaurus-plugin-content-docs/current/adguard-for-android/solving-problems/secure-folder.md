@@ -1,24 +1,24 @@
 ---
-title: Certificate installation in a Secure folder
+title: 在安全文件夹中安装证书
 sidebar_position: 13
 ---
 
 :::info
 
-本文适用于安卓版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+本文所述 AdGuard Android 版是在系统级上保护设备的多功能的广告拦截器。 要了解其工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
-If you install AdGuard to [the *Secure folder* on your Android](https://www.samsung.com/uk/support/mobile-devices/what-is-the-secure-folder-and-how-do-i-use-it/) (this applies mainly to Samsung devices), you may face some difficulties when installing the HTTPS certificate. The thing is, the *Secure folder* has its own space where the certificates are stored. However, if you do everything according to the regular certificate installation instructions ([described here](../../overview#https-filtering)), the certificate will be installed into the main memory and will play no role for your ad blocker in the *Secure folder*. To solve this problem and install the certificate for your AdGuard for Android into the *Secure folder's* storage, please follow these instructions instead:
+如果您[在 Android 系统上安装「*安全文件夹*」](https://www.samsung.com/uk/support/mobile-devices/what-is-the-secure-folder-and-how-do-i-use-it/)（这主要适用于 Samsung 设备），在安装 HTTPS 证书时可能会面临一些困难。 问题是，*安全文件夹*有自己的空间来存储证书。 不过，如果用户按照常规证书安装说明（[此处有描述](/adguard-for-android/features/settings#https-filtering)）进行操作，证书将安装到主内存中，不会对*安全文件夹*中的广告拦截器产生任何作用。 要解决这个问题并将 Android 版 AdGuard 证书安装到*安全文件夹*存储中，请按照以下说明进行操作：
 
-1. After installing the app and connecting the local VPN, tap **ENABLE** next to the *HTTPS filtering is off* message.
-1. Tap **Next** → **Next** → **Save it now** → **Save certificate**.
-1. Save the certificate (at this stage, you can rename it to make it easier to locate it later, which you will need to do).
-1. After the *Installation instructions* popup appears, **DO NOT** tap **Open Settings**.
-1. Minimize the app and go to the *Secure folder*.
-1. Tap the three-dot menu and go to **Settings** → **Other security settings**.
-1. Tap **Security certificates** → **Install from device storage** → **CA certificate** → **Install anyway**
-1. Confirm installation with your graphic key/password/fingerprint.
-1. Find and select the previously saved certificate, then tap **Done**.
-1. Return to the AdGuard app and navigate back to the main screen. You may have to swipe and restart the app to get rid of the *HTTPS filtering is off* message.
-1. Done! The certificate has been installed.
+1. 安装应用程序并连接本地 VPN 后，在「*HTTPS 过滤已关闭*」消息旁边点击「**ENABLE**」。
+1. 点击「**下一个**」→「**下一个**」→「**立即保存**」→「**保存证书**」。
+1. 保存证书（在此阶段，用户可以重命名证书，以方便日后查找，这也是您需要做的）。
+1. 弹出*安装说明*后，**请不要**点击「**打开设置**」。
+1. 最小化应用程序并转到*安全文件夹*。
+1. 点按三点菜单并转到「**设置**」→「**其他安全设置**」。
+1. 点按「**安全证书**」→「**从设备存储安装**」→「**CA 证书**」→「**仍然安装**」。
+1. 使用图形密钥/密码/指纹确认安装。
+1. 查找并选择先前保存的证书，然后点击「**完成**」。
+1. 返回 AdGuard 应用程序并导航回主屏幕。 您可能需要轻扫并重启应用，才能消除「*HTTPS 过滤已关闭*」的信息。
+1. 完成！ 证书安装成功。

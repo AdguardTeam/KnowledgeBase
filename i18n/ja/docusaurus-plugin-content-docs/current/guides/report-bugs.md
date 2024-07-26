@@ -1,93 +1,93 @@
 ---
-title: How to report bugs
+title: バグ・不具合を報告する方法
 sidebar_position: 4
 ---
 
-If you notice a bug while using AdGuard products, please help us address it. Here’s how to report bugs most effectively.
+AdGuard 製品を使用中にバグ・不具合にお気づきの場合は、ぜひその対処にご協力ください。 バグを最も効果的に報告する方法をご紹介します。
 
-## Before you start
+## 始める前に
 
-### When to report bugs
+### バグ・不具合を報告するタイミング
 
-Check that you have the most up-to-date version, and if not, upgrade: the bug might have already been resolved in the new version.
+お使いのAdGuard製品が最新バージョンであることを確認し、最新でない場合はアップデートしてください。最新バージョンでバグがすでに修正されている可能性があります。
 
-Check if the bug hasn’t been reported before. We advise paying attention to both open and closed issues.
+GitHubでバグが以前に報告されていないかどうかを確認してください。 未解決のissueと解決済みのssueの両方をチェックしておくことをお勧めします。
 
-![Closed issues](https://cdn.adtidy.org/content/kb/ad_blocker/general/closed_issues.png)
+![解決済みのissue](https://cdn.adtidy.org/content/kb/ad_blocker/general/closed_issues.png)
 
-### How to describe a problem
+### 問題を説明する方法
 
-Try to provide as many details as possible — that'll make it easier for us to reproduce the bug and figure out how to fix it. Here’s what we’re expecting to see in a bug report:
+できるだけ多くの詳細を記載するようにしてください。これにより、バグの再現と修正がより簡単になります。 バグ報告で歓迎される内容は以下のとおりです:
 
-- Your app version
-- Your OS version
-- When you noticed the problem
-- What you were doing or what happened to the app before you noticed the problem. Steps to reproduce it
-- Whether it recurred and with what frequency
-- Whether you have a VPN or an antivirus software
+- AdGuardアプリのバージョン
+- お使いのOSのバージョン
+- 問題に気づいた日時
+- 問題に気づく寸前にどんな操作をしていたか、アプリに何が起こったか。 問題を再現するための手順。
+- 問題が再発したかどうか、またその頻度はどれくらいか
+- VPNやウイルス対策ソフトを使用しているかどうか
 
-### How to collect logs
+### ログを収集する方法
 
-Read about collecting logs in dedicated articles for each platform.
+ログの収集については、各プラットフォームの専用記事をお読みください。
 
-## How to vote for bug reports or feature requests
+## バグレ報告や機能リクエストに投票する方法
 
-If you want to support the implementation of a new feature or bugfix, you can vote for it on GitHub. To vote, just react with some emoji.
+新機能やバグ修正の実装をサポートしたい場合は、GitHubで投票することができます。 投票するには、絵文字で反応するだけで結構です。
 
-![GitHub issue with reactions](https://cdn.adtidy.org/content/kb/ad_blocker/general/github_reaction.png)
+![リアクションのある GitHub issue](https://cdn.adtidy.org/content/kb/ad_blocker/general/github_reaction.png)
 
-![GitHub issue without reactions](https://cdn.adtidy.org/content/kb/ad_blocker/general/github_reaction2.png)
+![リアクションのない GitHub issue](https://cdn.adtidy.org/content/kb/ad_blocker/general/github_reaction2.png)
 
-You can find reactions in the upper right corner or at the bottom of an issue.
+リアクションアイコンは問題の右上隅または下部にあります。
 
-## Instructions for all platforms
+## 問題を報告する方法（各プラットフォーム向け）
 
 ### AdGuard for Windows
 
-1. Check out the [Windows repo](https://github.com/AdguardTeam/AdGuardforWindows/issues) to make sure the issue hasn’t been reported yet.
+1. [Windows版のGitHubレポ](https://github.com/AdguardTeam/AdGuardforWindows/issues)をチェックして、問題がまだ報告されていないことを確認してください。
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForWindows/issues/new/choose) and select *Bug report*.
+2. [新しいissueを作成するページ](https://github.com/AdguardTeam/AdguardForWindows/issues/new/choose)を開き、*Bug report*を選択してください。
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. フォームに記入してください。 可能であれば、スクリーンショットまたは画面録画を添付してください。
 
-![Reporting a bug via GitHub *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows_gh.png)
+![GitHub経由でバグを報告する *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/general/windows_gh.png)
 
 ### AdGuard for Mac
 
-1. Check out the [Mac repo](https://github.com/AdguardTeam/AdGuardforMac/issues) to make sure the issue hasn’t been reported yet.
+1. [Mac版AdGuardのGitHubレポ](https://github.com/AdguardTeam/AdGuardforMac/issues)をチェックして、問題がまだ報告されていないかを確認してください。
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForMac/issues/new).
+2. [新しいissueを作成するためのページ](https://github.com/AdguardTeam/AdguardForMac/issues/new)を開き、<1>Bug report</1>を選択してください。
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. フォームに記入してください。 可能であれば、スクリーンショットまたは画面録画を添付してください。
 
 ### AdGuard for Android
 
-1. Check out the [Android repo](https://github.com/AdguardTeam/AdGuardforAndroid/issues) to make sure the issue hasn’t been reported yet.
+1. [Android版AdGuardのGitHubレポ](https://github.com/AdguardTeam/AdGuardforAndroid/issues)をチェックして、問題がまだ報告されていないかを確認してください。
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForAndroid/issues/new/choose) and select *Bug report*.
+2. [新しいissueを作成するためのページ](https://github.com/AdguardTeam/AdguardForAndroid/issues/new/choose)を開き、*Bug report*を選択してください。
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. フォームに記入してください。 可能であれば、スクリーンショットまたは画面録画を添付してください。
 
 ### AdGuard for iOS
 
-1. Check out the [iOS repo](https://github.com/AdguardTeam/AdGuardforiOS/issues) to make sure the issue hasn’t been reported yet.
+1. [iOS版AdGuardのGitHubレポ](https://github.com/AdguardTeam/AdGuardforiOS/issues)をチェックして、問題がまだ報告されていないかを確認してください。
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardForiOS/issues/new/choose), select *Bug report*.
+2. [新しいissueを作成するためのページ](https://github.com/AdguardTeam/AdguardForiOS/issues/new/choose)を開き、*Bug report*を選択してください。
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. フォームに記入してください。 可能であれば、スクリーンショットまたは画面録画を添付してください。
 
-### AdGuard Browser Extension
+### AdGuard ブラウザ拡張機能
 
-1. Check out the [Browser Extension repo](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/) to make sure the issue hasn’t been reported yet.
+1. [ブラウザ拡張機能版AdGuardのGitHubレポ](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/)をチェックして、問題がまだ報告されていないかを確認してください。
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose) and select *Bug report*.
+2. [新しいissueを作成するためのページ](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose)を開き、*Bug report*を選択してください。
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. フォームに記入してください。 可能であれば、スクリーンショットまたは画面録画を添付してください。
 
 ### AdGuard for Safari
 
-1. Check out the [Safari repo](https://github.com/AdguardTeam/AdGuardForSafari/issues) to make sure the issue hasn’t been reported yet.
+1. [AdGuard for Safari のGitHubレポ](https://github.com/AdguardTeam/AdGuardForSafari/issues)をチェックして、問題がまだ報告されていないかを確認してください。
 
-2. Open a [page for creating new issues](https://github.com/AdguardTeam/AdGuardForSafari/issues/new/choose) and select *Bug report*.
+2. [新しいissueを作成するためのページ](https://github.com/AdguardTeam/AdGuardForSafari/issues/new/choose)を開き、*Bug report*を選択してください。
 
-3. Fill out the form. If possible, attach screenshots or a screen recording.
+3. フォームに記入してください。 可能であれば、スクリーンショットまたは画面録画を添付してください。

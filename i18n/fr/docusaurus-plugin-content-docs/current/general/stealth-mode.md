@@ -1,5 +1,5 @@
 ---
-title: Stealth Mode
+title: Mode furtif
 sidebar_position: 4
 ---
 

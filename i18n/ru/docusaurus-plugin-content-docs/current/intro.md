@@ -6,17 +6,17 @@ slug: /
 
 ## Что такое Блокировщик рекламы AdGuard
 
-AdGuard — один из лидеров на рынке программ для блокировки рекламы с более чем 10-летним опытом, почти десятком продуктов для разных платформ и более чем 30 млн установок пользователями. В отличие от других решений по блокировке рекламы, большинство из которых работают на основе браузера, мы предлагаем отдельные приложения для всех основных платформ, как десктопных, так и мобильных. Приложения AdGuard более мощные, чем браузерные расширения, могут блокировать больше и делать это эффективнее:
+AdGuard is one of the leaders on the market of ad-blocking software with 15+ years of experience, almost a dozen products for various platforms, and over 375 million user installs. В отличие от других решений по блокировке рекламы, большинство из которых работают на основе браузера, мы предлагаем отдельные приложения для всех основных платформ, как десктопных, так и мобильных. Приложения AdGuard более мощные, чем браузерные расширения, могут блокировать больше и делать это эффективнее:
 
-- [AdGuard для Windows](/adguard-for-windows/overview)
-- [AdGuard для Mac](/adguard-for-mac/overview)
-- [AdGuard для Android](/adguard-for-android/overview)
-- [AdGuard для iOS](/adguard-for-ios/overview)
+- [AdGuard для Windows](/adguard-for-windows/features/home-screen)
+- [AdGuard для Mac](/adguard-for-mac/features/main)
+- [AdGuard для Android](/adguard-for-android/features/protection/ad-blocking)
+- [AdGuard для iOS](/adguard-for-ios/features/safari-protection)
 
 Но мы также разрабатываем и поддерживаем бесплатные расширения для всех популярных браузеров:
 
-- [Браузерное расширение AdGuard](/adguard-browser-extension/overview)
-- [AdGuard для Safari](/adguard-for-safari/overview)
+- [Браузерное расширение AdGuard](/adguard-browser-extension/features/filters)
+- [AdGuard для Safari](/adguard-for-safari/features/general)
 
 ## Не только блокировка рекламы
 

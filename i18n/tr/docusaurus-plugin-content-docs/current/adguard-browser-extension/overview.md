@@ -1,6 +1,6 @@
 ---
 title: Özelliklere genel bakış
-sidebar_position: 1
+sidebar_position: 10
 ---
 
 :::bilgi
@@ -9,7 +9,7 @@ Bu makale, yalnızca tarayıcınızı koruyan AdGuard Tarayıcı Uzantısı hakk
 
 :::
 
-AdGuard, farklı platformlarda reklamları ve izleyicileri engelleyen bir dizi yazılım ürünü sunar. En popüler AdGuard ürünlerinden biri, beş popüler tarayıcıda çalışan ücretsiz bir uzantıdır: Chrome, Firefox, Edge, Opera ve Yandex Browser. Tarayıcı uzantıları temel reklam engelleme özelliklerini içerir ancak [Windows için AdGuard](/adguard-for-windows/overview) ve [Mac için AdGuard](/adguard-for-mac/overview) gibi tam özellikli masaüstü programlarıyla karşılaştırılamaz.
+AdGuard, farklı platformlarda reklamları ve izleyicileri engelleyen bir dizi yazılım ürünü sunar. En popüler AdGuard ürünlerinden biri, beş popüler tarayıcıda çalışan ücretsiz bir uzantıdır: Chrome, Firefox, Edge, Opera ve Yandex Browser. Browser extensions include basic ad-blocking features but cannot be compared with full-featured desktop programs, such as [AdGuard for Windows](/adguard-for-windows/features/home-screen) and [AdGuard for Mac](/adguard-for-mac/features/main).
 
 ![Chrome için AdGuard Tarayıcı Uzantısı *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_overview.png)
 
@@ -21,7 +21,7 @@ AdGuard, farklı platformlarda reklamları ve izleyicileri engelleyen bir dizi y
 
 :::not
 
-Safari için bağımsız bir uzantımız var. Since the release of [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html), most of the ad-blocking extensions have experienced huge issues and many of them stopped functioning. We had to develop a [separate extension for Safari](/adguard-for-safari/overview) that has some differences in comparison with the extension described in this article.
+Safari için bağımsız bir uzantımız var. Since the release of [Safari 13](https://adguard.com/en/blog/adguard-safari-1-5.html), most of the ad-blocking extensions have experienced huge issues and many of them stopped functioning. Safari için bu makalede açıklanan uzantıya kıyasla bazı farklılıkları olan [ayrı bir uzantı](/adguard-for-safari/features/general) geliştirmek zorunda kaldık.
 
 :::
 
@@ -145,7 +145,7 @@ AdGuard bağımsız programlarının tarayıcı uzantılarına göre en büyük 
 
 AdGuard Tarayıcı Uzantısı ücretsiz ve yüklemesi kolay olmasına, reklamları engellemek ve çevrimiçi tehditlerle mücadele etmek için filtrelere sahip olmasına karşın, tam teşekküllü uygulamalar daha güçlüdür ve gelişmiş özelliklerin bir listesine sahiptir. Aşağıdaki karşılaştırmalı tablodaki tüm farklılıklara bakın.
 
-![Extension vs. App *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_comparison.png)
+![Uzantı ile Uygulama *border](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/ad_blocker_browser_extension_comparison.png)
 
 `1` – tarayıcı kısıtlamaları dahilinde ve yalnızca yüklü olduğu tarayıcıda;
 

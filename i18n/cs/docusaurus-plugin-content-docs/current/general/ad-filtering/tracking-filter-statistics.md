@@ -36,7 +36,7 @@ Pokud povolíte možnost *Odesílat statistiky o použití filtrů reklam*, budo
 
 Shromážděné statistiky budou pravidelně odesílány na náš server k analýze a optimalizaci filtrů.
 
-Je důležité si uvědomit, že všechny získané statistiky jsou zprůměrované a anonymizované. Tyto statistiky nepoužíváme k jiným účelům než k optimalizaci filtrů a tyto údaje neprodáváme třetím stranám. O našich Zásadách ochrany osobních údajů si můžete přečíst [zde](https://adguard.com/privacy.html).
+Je důležité si uvědomit, že všechny získané statistiky jsou zprůměrované a anonymizované. Tyto statistiky nepoužíváme k jiným účelům než k optimalizaci filtrů a tyto údaje neprodáváme třetím stranám. Můžete si o tom přečíst v našich [Zásadách ochrany osobních údajů](https://adguard.com/privacy.html).
 
 ### Čím jsou statistika pravidel filtrů sledování zatížena?
 

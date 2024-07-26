@@ -37,7 +37,7 @@ Hotovo, AdGuard pro Android TV je nainstalován.
 
 1. Zkontrolujte, zda je v PC nainstalován Android Debug Bridge (ADB). Pokud ne, můžete postupovat podle pokynů na webu XDA Developers: [Průvodce instalací ADB](https://www.xda-developers.com/install-adb-windows-macos-linux).
 
-2. Stáhněte [AdGuard pro Android TV] (https\://agrd.io/tvapk).
+2. Stáhněte [AdGuard pro Android TV] (https://agrd.io/tvapk).
 
 3. V nastavení TV přejděte na _System_ → _Informace_ a 7krát stiskněte číslo sestavení, abyste odemkli možnosti pro vývojáře. Povolte _USB ladění_.
 

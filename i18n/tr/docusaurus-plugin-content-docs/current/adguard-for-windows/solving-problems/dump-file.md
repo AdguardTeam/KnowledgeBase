@@ -1,5 +1,5 @@
 ---
-title: How to create a dump file
+title: Döküm dosyası nasıl oluşturulur
 sidebar_position: 8
 ---
 
@@ -9,7 +9,7 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 :::
 
-To diagnose the reasons for potential problems that users might encounter while using AdGuard, the support team might need the process dump file. Döküm dosyası, geliştiricilerin belirli bir süre boyunca uygulamada yürütülen işlemleri görmesine yardımcı olur. Aşağıda döküm dosyasının PC'nizde nasıl toplanacağına ilişkin talimatları kontrol edebilirsiniz.
+Kullanıcıların AdGuard'ı kullanırken karşılaşabilecekleri olası sorunların nedenlerini teşhis etmek için, destek ekibi işlem döküm dosyasına ihtiyaç duyabilir. Döküm dosyası, geliştiricilerin belirli bir süre boyunca uygulamada yürütülen işlemleri görmesine yardımcı olur. Aşağıda döküm dosyasının PC'nizde nasıl toplanacağına ilişkin talimatları kontrol edebilirsiniz.
 
 1. **Ctrl + Shift + Esc** tuşlarına basın ve **Görev Yöneticisi** öğesine tıklayın
 

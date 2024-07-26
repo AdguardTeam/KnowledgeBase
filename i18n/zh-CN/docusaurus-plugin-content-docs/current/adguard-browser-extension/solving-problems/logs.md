@@ -51,6 +51,8 @@ sidebar_position: 1
 
 ## Sending logs
 
+> AdGuard 致力于保护用户的个人隐私。 We strictly follow our [Privacy Policy](https://adguard.com/en/privacy/browser-extension.html) and do not collect any private information about users. 请注意：在将您的日志记录发送给客户支持团队之前，请检查文件，因为它会包含您不想分享的附加信息。 如果其中包含此类个人信息，我们建议您先将其删除。
+
 Now that you have collected the logs, please follow these steps to submit them to our development team:
 
 1. Report the bug on [GitHub](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/new/choose).

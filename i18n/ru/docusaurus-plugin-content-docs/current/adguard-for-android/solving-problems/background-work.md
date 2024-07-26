@@ -31,7 +31,7 @@ sidebar_position: 9
 
 Чтобы приложение AdGuard успешно работало в фоновом режиме, сделайте следующее:
 
-Зайдите в **Настройки** → **Приложения** → **Управление приложениями** → прокрутите вниз до **AdGuard** и включите **Автозапуск**.
+В разделе **"Настройки"** → **"Приложения"** → " **Управление приложениями** " → прокрутите вниз до **AdGuard** и включите **Автозапуск"**.
 
 ![Настройки Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi4en.jpeg)
 
@@ -77,7 +77,7 @@ sidebar_position: 9
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi6.jpeg)
 
-Нажмите на него и удерживайте, пока не появится специальное меню. Нажмите на значок замка.
+Нажмите на него и удерживайте, пока не появится меню. Нажмите на значок замка.
 
 ![Xiaomi *mobile_border](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/background-work/xiaomi7en.jpeg)
 
@@ -367,7 +367,7 @@ Huawei чрезвычайно изобретательны в оптимизац
 
 1. Включите **отладку через USB** в Параметрах разработчика на телефоне;
 
-1. Удалите файл **com.evenwell.emm** с помощью следующих команд adb:
+1. Удалите файл **com.evenwell.emm** с помощью следующих команд ADB:
 
     `adb shell` `pm uninstall --user 0 com.evenwell.emm`
 
@@ -423,7 +423,7 @@ Huawei чрезвычайно изобретательны в оптимизац
 
 1. Включите **отладку через USB** в Параметрах разработчика на телефоне;
 
-1. Удалите файл **com.evenwell.powersaving.g3** с помощью следующих команд adb:
+1. Удалите файл **com.evenwell.powersaving.g3** с помощью следующих команд ADB:
 
     `adb shell` `pm uninstall --user 0 com.evenwell.powersaving.g3`
 
@@ -519,7 +519,7 @@ Huawei чрезвычайно изобретательны в оптимизац
 - Вернитесь в предыдущее меню и перейдите в **Ручной режим**
 - Нажмите на значок **шестерёнки** в правом верхнем углу → **Белый список фоновых приложений** → выберите **AdGuard**
 
-## Стандартные устройства Pixel/Nexus/Essential на базе Android
+## Стандартные устройства Pixel/Nexus/Nubia/Essential на базе Android
 
 Android на заводской прошивке, как правило, не конфликтует с фоновыми процессами, но если вы всё же столкнулись с проблемой фоновой работы, включите режим **Always-on VPN**.
 

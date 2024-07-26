@@ -18,7 +18,7 @@ Quality requirements for filtering rules:
 - Unblocking rules must be as specific as possible to avoid unblocking anything unnecessary
 - JavaScript rules should be used as sparingly as possible and only if blocking ads is impossible without them
 
-## Ad Blocking Filters
+## Ad blocking filters
 
 ### Terminology
 
@@ -44,9 +44,9 @@ AdGuard ad-blocking filters include:
 
 ### The purpose of these filters
 
-- **Base filter** is designed to block ads on English-language websites and those for which there is no separate filter. It also contains general filtering rules that apply to all sites regardless of language.
-- **Mobile Ads filter** blocks advertisements on mobile versions of websites and within mobile applications. There is no segmentation based on language.
-- **Regional filters** follow the same policy as the **Base filter**, but limited to websites in certain languages.
+- **Base filter** is designed to block ads on English-language websites and those for which there is no separate filter. It also contains general filtering rules that apply to all sites regardless of language
+- **Mobile Ads filter** blocks advertisements on mobile versions of websites and within mobile apps. There is no segmentation based on language
+- **Regional filters** follow the same policy as the **Base filter**, but limited to websites in certain languages
 
 The goal of ad-blocking filters is to block all types of advertising on websites, applications, and certain devices that can load ads from the Internet:
 
@@ -59,11 +59,12 @@ The goal of ad-blocking filters is to block all types of advertising on websites
 - Ads disguised as site content, which open pages with promoted products or unrelated content upon clicking
 - Video ads — advertisement videos embedded within video content or in separate ad elements on websites and applications
 - Interactive ads — ads with which users can interact (e.g., games and surveys, upon completion of which the advertised item opens)
-- Interstitial ads — full-screen ads on mobile devices that cover the interface of the application or web browser
+- Interstitial ads — full-screen ads on mobile devices that cover the interface of the app or web browser
 - Ads leftovers that occupy large spaces or stand out against the background and attract visitors' attention (except barely discernible or unnoticeable ones)
 - Anti-adblock advertising — alternative advertising displayed on the site when the main one is blocked
-- Site’s own advertising, if it has been blocked by general filtering rules (see *Limitations and Exceptions*)
-- Anti-adblock scripts that prevent site usage (see *Limitations and Exceptions*)
+- Bait elements that are used by multiple known adblock detection scripts to detect an ad blocker presence for different goals including changing the way ads are shown, fingerprinting, etc.
+- Site’s own advertising, if it has been blocked by general filtering rules (see *Limitations and exceptions*)
+- Anti-adblock scripts that prevent site usage (see *Limitations and exceptions*)
 - Advertising injected by malware, if detailed information about its loading method or steps for reproduction is provided
 - Unwanted mining — scripts that mine cryptocurrency without user consent
 
@@ -82,17 +83,17 @@ The goal of ad-blocking filters is to block all types of advertising on websites
     - Some legacy rules may continue to block messages that satisfy one or more of these criteria. If identified, such rules will be handled according to this policy
 - Mining pools are not blocked if they are public and not used solely for malicious purposes
 
-## Tracking Protection Filters
+## Tracking protection filters
 
 ### Terminology
 
-**Tracking** — the process of monitoring and collecting data about users and their interactions with websites and applications for marketing purposes, as well as to obtain telemetry about the functioning of websites or applications for the purpose of analyzing their operation. This process includes tracking visited pages, time spent, interaction with website elements (e.g., clicks, form submissions), and other metrics. It allows website and application owners to better understand user behavior, optimize functionality, and adapt marketing strategies. Tracking is also used to monitor performance, usage patterns, and identify issues, providing developers with the necessary data to improve the stability and quality of the website or application. Even if the data obtained cannot identify a person’s identity, such actions are still considered tracking
+**Tracking** — the process of monitoring and collecting data about users and their interactions with websites and applications for marketing purposes, as well as to obtain telemetry about the functioning of websites or applications for the purpose of analyzing their operation. This process includes tracking visited pages, time spent, interaction with website elements (e.g., clicks, form submissions), and other metrics. It allows website and application owners to better understand user behavior, optimize functionality, and adapt marketing strategies. Tracking is also used to monitor performance, usage patterns, and identify issues, providing developers with the necessary data to improve the stability and quality of the website or application. Even if the data obtained cannot reveal a person’s identity, such actions are still considered tracking.
 
-**Tracker** — software used on a website or in an application and designed to collect information about their operation and visitors’ actions. It tracks user interaction with the website or application, recording data about page views, time spent, clicks, form submissions, and other events. Its purpose is to provide website and application owners with a tool for analyzing user behavior, improving the user experience, and optimizing content and advertising
+**Tracker** — software used on a website or in an application and designed to collect information about their operation and visitors’ actions. It tracks user interaction with the website or application, recording data about page views, time spent, clicks, form submissions, and other events. Its purpose is to provide website and application owners with a tool for analyzing user behavior, improving the user experience, and optimizing content and advertising.
 
-**URL tracking parameter** — a part of the address that is added to links by analytics systems or present in some links on web pages. When a request is made, this URL tracking parameter can be processed by the backend of an analytics system or website, which will extract information from it. For example, URL tracking parameters can transmit information about clicks or advertising campaigns. URL tracking parameters can also be used by fraud protection or bot detection systems
+**URL tracking parameter** — a part of the address that is added to links by analytics systems or present in some links on web pages. When a request is made, this URL tracking parameter can be processed by the backend of an analytics system or website, which will extract information from it. For example, URL tracking parameters can transmit information about clicks or advertising campaigns. URL tracking parameters can also be used by fraud protection or bot detection systems.
 
-**Cookies** — files that websites send to and store on devices. These files contain various information — both necessary for the functioning of the site on the device and used for analytics purposes — unique identifiers used to track visitor activity on the website, advertising parameters, and more
+**Cookies** — files that websites send to and store on devices. These files contain various information — both necessary for the functioning of the site on the device and used for analytics purposes — unique identifiers used to track visitor activity on the website, advertising parameters, and more.
 
 ### Filters
 
@@ -105,7 +106,7 @@ AdGuard tracking protection filters include:
 
 **Tracking Protection filter** is designed to block trackers that collect users’ personal data and to improve users’ privacy.
 
-What is blocks:
+What it blocks:
 
 - Analytics systems’ scripts
 - Websites’ and applications’ own tracking scripts
@@ -113,6 +114,7 @@ What is blocks:
 - Tracking cookies
 - Tracking pixels
 - Tracking APIs of browsers
+- Detection of the ad blocker for tracking purposes
 - Privacy Sandbox functionality in Google Chrome and its forks used for tracking (Google Topics API, the Protected Audience API)
 
 The **URL Tracking filter** is designed to remove tracking parameters from web addresses
@@ -121,7 +123,7 @@ The **URL Tracking filter** is designed to remove tracking parameters from web a
 
 Tracking protection filters should not block a tracker if blocking would disrupt the correct functioning of the website:
 
-- Anti-bots and fraud protection if it interferes with using the site. For example, with PerimeterX or hCaptcha blocking causes problems when the site attempts to verify its visitor witch a captcha
+- Anti-bots and fraud protection if it interferes with using the site. For example, with PerimeterX or hCaptcha blocking causes problems when the site attempts to verify its visitor with a captcha
 - Error tracking systems like Sentry or Bugsnag are not blocked
 
 ## Annoyance filters
@@ -134,7 +136,7 @@ Annoyance filters are designed to improve the usability of websites by blocking 
 
 **CMP (Consent Management Platform)** — software that helps websites comply with cookie usage rules. CMPs limit cookies usage until user consent is obtained, providing users with the option to accept certain cookies and manage privacy settings.
 
-**Widget**  — a user interface element that extends the functionality of a website. Web widgets are integrated into web pages and can include interactive elements such as buttons, forms, or banners. They can provide users with access to specific services or content without requiring navigation to other pages.
+**Widget** — a user interface element that extends the functionality of a website. Web widgets are integrated into web pages and can include interactive elements such as buttons, forms, or banners. They can provide users with access to specific services or content without requiring navigation to other pages.
 
 **Popup** — a window that appears above the current web page. It is intended to display additional information, advertisements, notifications, or data entry forms. Popups usually block the view of the main content of the page and require user action to close, which can be irritating.
 
@@ -158,10 +160,10 @@ This filter is designed to block both cookie notices and requests from cookie ma
 - Scriptlets are used to bypass the consent request (practically not applicable on sites with restrictions on loading third-party content until a decision is made)
 - Setting a cookie or key in the site’s local storage in such a way that the script considers the user to have made a choice
 - Simulating user action using a rule that clicks a specified button and interrupts its execution 10 seconds after loading. Two options are possible:
-    - Reject (except for functional cookies — depending on the CMP system) — the preferred option, as there is less chance of loading additional analytics tools
+    - Reject (except for functional cookies — depending on the CMP system) — the preferred option, as there is less risk of loading additional analytics tools
     - Accept — this option is used as the last resort if other methods fail. In this case, the site is additionally checked for the use of analytics tools, which are then blocked by the **AdGuard Tracking Protection filter**
 
-**Limitations and Exceptions**
+**Limitations and exceptions**
 
 In some cases, the decision to add rules is made independently by filter developers; mostly, when the choice made when simulating actions would affect the site’s functionality (for example, history may not work, or user settings may not be saved on such a site).
 
@@ -174,7 +176,7 @@ This is a filter that blocks various popups on web pages that are not necessary 
 - Popups that encourage users to disable ad blocker and violate user’s privacy (at the discretion of the filter developers)
 - Other types of popups that may annoy users (at the discretion of filter developers)
 
-**Limitations and Exceptions**
+**Limitations and exceptions**
 
 - Push notifications are only blocked on sites where they are not used for practical purposes. For example, in email web clients or tools used for work purposes, such notifications will not be blocked
 - Some popups that do not fall into the categories described above but still interfere with the user’s experience may be also blocked. For example, registration prompts on a site or popups that introduce the site’s features. The decision is made by filter developers
@@ -182,15 +184,15 @@ This is a filter that blocks various popups on web pages that are not necessary 
 
 #### AdGuard Mobile App Banners filter
 
-This is a filter that blocks banners and popups that encourage visitors to install mobile applications.
+This is a filter that blocks banners and popups that encourage visitors to install mobile apps.
 
-**Limitations and Exceptions**
+**Limitations and exceptions**
 
 Banners located in the headers or in the menus of websites are not blocked if they are not animated and do not occupy a significant portion of usable space. If a banner is located in the footer, the decision is made by filter developers case-by-case. Usually, banners in the footer do not stand out against other elements and are not distracting.
 
 #### AdGuard Widgets filter
 
-This is a filter that blocks various widgets that are not essential for the functioning of the website or for interaction with it:
+This is a filter that blocks various widgets that are not essential for the functioning of websites or for interaction with them:
 
 - Widgets for content recommendations — related articles, similar websites, various personalized recommendations
 - Chat widgets that are not integrated with the content and are not the main content of the page
@@ -200,7 +202,7 @@ This is a filter that blocks various widgets that are not essential for the func
     - Call-back forms
 - Other widgets that do not have a separate category but may visually clutter the page. For example, weather widgets, currency exchange rates, job listings, and donations
 
-**Limitations and Exceptions**
+**Limitations and exceptions**
 
 This filter doesn’t block:
 
@@ -218,15 +220,15 @@ This filter is designed to block annoying elements that are not included in othe
 - Speed up countdown timers when loading files from websites, if the check is not controlled by the server or is not hindered
 - Apply various rules that may be useful for filter developers. For example, blocking web debugger detection
 
-**Limitations and Exceptions**
+**Limitations and exceptions**
 
-This filter may contain rules that are not suitable for all users. In such cases, it is recommended to disable this filter. The decisions to add rules to this filter are made by filter developers on a rule-by-rule basis.
+This filter may contain rules that are not suitable for all users. Sometimes it is recommended to disable this filter. The decisions to add rules to this filter are made by filter developers on a rule-by-rule basis.
 
-## Social Media filters
+## Social media filters
 
 ### Filters
 
-AdGuard Seocial Media filters include:
+AdGuard Social Media filters include:
 
 - AdGuard Social Media filter
 
@@ -250,7 +252,7 @@ This group contains filters that are not essential for blocking advertisements.
 
 **Self-promotion of websites** refers to the banners of a website promoting goods and services owned by the site owner, for which they do not receive compensation from third parties.
 
-For more details on these types of advertising, refer to the [article on Search ads](https://adguard.com/kb/general/ad-filtering/search-ads/).
+For more details on these types of advertising, refer to the [article on search ads](https://adguard.com/kb/general/ad-filtering/search-ads/).
 
 ### Filters
 
@@ -267,7 +269,7 @@ This filter unblocks:
 - Contextual advertising in search results when using search engines (such as Google, Bing, Yandex, DuckDuckGo)
 - Self-promotion of websites
 
-**Limitations and Exceptions**
+**Limitations and exceptions**
 
 - Search advertising is unblocked only if it corresponds to the user’s search query, as it is contextual. Otherwise, the advertising remains blocked
 - Self-promotion is unblocked only if it complies with the filter policy. A request for unblocking may be rejected by filter developers
@@ -277,7 +279,7 @@ This filter unblocks:
 
 This filter is used in AdGuard DNS. It is not a replacement for ad-blocking filters.
 
-**Limitations and Exceptions**
+**Limitations and exceptions**
 
 Same as for ad-blocking filters.
 
@@ -285,7 +287,7 @@ Same as for ad-blocking filters.
 
 This filter is intended for testing and debugging rules that potentially may break websites’ functionality. Rules are added by filter developers when there’s a need to test a particular solution. As the filter is designed for debugging purposes, its limitations are minimal.
 
-**Limitations and Exceptions**
+**Limitations and exceptions**
 
-- Rules should not explicitly break websites’ functionality
+- Rules should not intentionally break websites’ functionality
 - Rules should not unblock advertisements or otherwise violate the Policy

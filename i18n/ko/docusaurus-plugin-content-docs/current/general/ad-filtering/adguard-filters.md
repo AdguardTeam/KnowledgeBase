@@ -3,7 +3,7 @@ title: AdGuard filters
 sidebar_position: 2
 ---
 
-:::info
+:::정보
 
 이 글에서는 AdGuard에서 개발하여 AdGuard 앱에 사전 설치된 필터에 대해 설명합니다. To check them out, you can [download the AdGuard app](https://agrd.io/download-kb-adblock)
 

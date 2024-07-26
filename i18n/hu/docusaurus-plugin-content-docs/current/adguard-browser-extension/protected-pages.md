@@ -1,19 +1,17 @@
 ---
 title: Browser-protected pages
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 :::info
 
-This article is about AdGuard Browser Extension, which safeguards only your browser. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
+Ez a cikk az AdGuard böngészőbővítményről szól, amely csak a böngészőt védi. To protect your entire device, [download the AdGuard app](https://adguard.com/download.html?auto=true)
 
 :::
 
-## Browser-protected pages
-
 When using a web extension like AdGuard Browser Extension, there are certain restricted domains that prohibit access or permissions. As a result, ad blocking extensions are not allowed to interact with or modify the content of these pages. In other words, they are not allowed to block ads and other annoying elements on these web pages.
 
-### Chromium browser restrictions
+## Chromium browser restrictions
 
 Chromium-based browsers, such as Google Chrome, maintain a list of restricted domains that extensions are not allowed to access. These domains include:
 
@@ -27,7 +25,7 @@ Chromium-based browsers, such as Google Chrome, maintain a list of restricted do
 - Error pages such as 404 errors and network errors
 - URLs starting with `view-source:` or `data:`
 
-### Firefox browser restrictions
+## Firefox browser restrictions
 
 Similarly, the Firefox browser has its own set of restricted domains where extensions are not permitted to operate. These restricted domains include:
 
@@ -44,7 +42,7 @@ Similarly, the Firefox browser has its own set of restricted domains where exten
 - support.mozilla.org
 - sync.services.mozilla.com
 
-### Modifying restrictions in Firefox
+## Modifying restrictions in Firefox
 
 Changing advanced settings can affect the stability and security of Firefox. This is recommended for advanced users only. If you are aware of the associated risk and still wish to enable add-ons disallowed on a protected page, follow the steps below:
 

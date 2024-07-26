@@ -5,11 +5,11 @@ sidebar_position: 2
 
 :::info
 
-本文适用于 Mac 版的 AdGuard，它是一种多功能广告拦截器，可在系统级别保护用户的设备。 To see how it works, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+This article is about AdGuard for Mac, a multifunctional ad blocker that protects your device at the system level. 要了解其工作原理， 请[下载 AdGuard 应用程序](https://agrd.io/download-kb-adblock)。
 
 :::
 
-## 系统需求
+## 系统要求
 
 **Operating system version:** macOS 10.15 (64 bit) or higher
 
@@ -99,7 +99,7 @@ AdGuard 图标将出现在您的桌面上。 单击它打开安装应用程序�
 
     ![开启活动监视器](https://cdn.adtidy.org/content/kb/ad_blocker/mac/22.jpg)
 
-1. 退出在用户态下运行的进程（不是在 root 权限运行的）。 为了退出，请点击进程，然后在左上角点击 X。 在对话窗确认要退出。
+1. 退出在用户态下运行的进程（不是在 root 权限运行的）。 为了退出，请点击进程，然后在左上角点击 X。 Confirm the action in the dialogue window.
 
     ![确认](https://cdn.adtidy.org/content/kb/ad_blocker/mac/33.jpg)
 

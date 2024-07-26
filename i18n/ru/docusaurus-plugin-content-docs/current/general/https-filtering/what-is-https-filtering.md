@@ -11,7 +11,7 @@ HTTPS (аббр. от англ. HyperText Transfer Protocol Secure) — расш
 
 На диаграмме ниже мы описали разницу между простым HTTP-протоколом и защищённым HTTPS-протоколом.
 
-![Что такое HTTPS](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https.png)
+![Что такое HTTPS?](https://cdn.adtidy.org/public/Adguard/Blog/https/what_is_https.png)
 
 ### Что такое сертификат безопасности
 
