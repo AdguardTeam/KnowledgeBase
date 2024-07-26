@@ -1955,6 +1955,7 @@ For the requests matching a `$permissions` rule, AdGuard strengthens response's 
 **Syntax**
 
 `$permissions` value syntax is identical to that of the `Permissions-Policy` header [syntax](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy) with the following exceptions:
+
 1. A comma that separates multiple features **MUST** be escaped — see examples below.
 2. A pipe character (`|`) can be used to separate features instead of a comma.
 
