@@ -4002,7 +4002,7 @@ Scriptlet rules are not supported by AdGuard Content Blocker.
 
 Exception syntax for all scriptlets or some specific one are supported
 <!-- FIXME: add actual TSUrlFilter version: AG-27279 -->
-by AdGuard Browser Extension with [TSUrlFilter][gh-tsurlfilter-changelog] v2.x.x or later.
+by AdGuard Browser Extension with [TSUrlFilter] v3.0 or later.
 
 :::
 
