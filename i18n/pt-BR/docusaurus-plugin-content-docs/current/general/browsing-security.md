@@ -73,4 +73,4 @@ Occasionally, some non-malicious websites are added to AdGuard’s filters. Faze
 
 If you suspect that a certain website might be dangerous, check it first by using our [security check tool](https://reports.adguard.com/welcome.html).
 
-![Security check](https://cdn.adtidy.org/content/kb/ad_blocker/general/site_warning.png)
+![Verificação de segurança](https://cdn.adtidy.org/content/kb/ad_blocker/general/site_warning.png)

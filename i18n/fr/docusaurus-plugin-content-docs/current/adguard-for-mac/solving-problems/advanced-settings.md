@@ -1,5 +1,5 @@
 ---
-title: Advanced Settings guide
+title: Guide sur les Paramètres avancés
 sidebar_position: 9
 ---
 
@@ -19,7 +19,7 @@ Changing *Advanced Settings* may cause problems with AdGuard's performance, brea
 
 To find *Advanced Settings*, open AdGuard, click the gear icon, select *Advanced*, then select *Advanced Settings*.
 
-## Advanced Settings
+## Paramètres avancés
 
 `network.extension.exclude.domains`
 
@@ -109,19 +109,19 @@ Here you can list domains for which the fallback DNS server will be used instead
 
 `dns.proxy.adblockrules.blocking.mode`
 
-Here you can specify the type of DNS server response to blocked requests, corresponding to ad-blocker-style rules.
+Ici, vous pouvez spécifier le type de réponse du serveur DNS aux requêtes bloquées, correspondant aux règles de style adblock.
 
-- 0 — respond with REFUSED
-- 1 — respond with NXDOMAIN
-- 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
+- 0 - répondre par REFUSED
+- 1 — répondre avec NXDOMAIN
+- 2 — répondre avec 0.0.0.0 ou les adresses spécifiées dans `dns.proxy.blocking.response.IPv4.address` et/ou `dns.proxy.blocking.response.IPv6 .adress`
 
 `dns.proxy.hostrules.blocking.mode`
 
-Here you can specify the type of DNS server response to blocked requests, corresponding to hosts rules:
+Ici, vous pouvez spécifier le type de réponse du serveur DNS aux requêtes bloquées, correspondant aux règles d'hôtes :
 
-- 0 — respond with REFUSED
-- 1 — respond with NXDOMAIN
-- 2 — respond with 0.0.0.0 or the addresses specified in `dns.proxy.blocking.response.IPv4.address` and/or `dns.proxy.blocking.response.IPv6.address`
+- 0 - répondre par REFUSED
+- 1 — répondre avec NXDOMAIN
+- 2 — répondre avec 0.0.0.0 ou les adresses spécifiées dans `dns.proxy.blocking.response.IPv4.address` et/ou `dns.proxy.blocking.response.IPv6 .adress`
 
 `dns.proxy.blocking.response.IPv4.address`
 
