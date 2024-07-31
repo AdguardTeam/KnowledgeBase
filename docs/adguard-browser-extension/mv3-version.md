@@ -955,7 +955,7 @@ Example
 
 Group of similar `$removeparam` rules will be combined into one
 
-```
+```bash
 ||testcases.adguard.com$xmlhttprequest,removeparam=p1case1
 ||testcases.adguard.com$xmlhttprequest,removeparam=p2case1
 ||testcases.adguard.com$xmlhttprequest,removeparam=P3Case1
@@ -1059,7 +1059,7 @@ Will be converted as `$redirect` rules.
 
 Example
 
-```
+```bash
 ||example.org/script.js
 ||example.org^$redirect-rule=noopjs
 ```
