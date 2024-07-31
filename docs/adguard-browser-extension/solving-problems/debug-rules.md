@@ -1,5 +1,5 @@
 ---
-title: How to debug declarative rules
+title: How to debug rules
 sidebar_position: 2
 ---
 
