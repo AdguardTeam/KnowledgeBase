@@ -1,5 +1,5 @@
 ---
-title: How to debug rules
+title: How to debug rules in the MV3 extension
 sidebar_position: 2
 ---
 
