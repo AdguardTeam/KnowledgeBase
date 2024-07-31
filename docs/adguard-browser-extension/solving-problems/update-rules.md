@@ -1,0 +1,94 @@
+---
+title: How to update declarative rules
+sidebar_position: 2
+---
+
+## Prerequisites
+
+1. **Git:** [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+
+1. **Node:** [Install Node.js](https://nodejs.org/en/download/package-manager)
+
+1. **Yarn:** [Install Yarn](https://classic.yarnpkg.com/lang/en/docs/install)
+
+## How to clone extension
+
+1. Clone the repository:
+
+    ```bash
+    git clone git@github.com:AdguardTeam/AdguardBrowserExtension.git
+    ```
+
+1. Navigate to the directory:
+
+    ```bash
+    cd AdguardBrowserExtension
+    ```
+
+1. Switch to the `v5.0` branch:
+
+    ```bash
+    git checkout v5.0
+    ```
+
+1. Install dependencies:
+
+    ```bash
+    yarn install
+    ```
+
+## How to build extension
+
+1. Switch to the `v5.0` branch:
+
+    ```bash
+    git checkout v5.0
+    ```
+
+1. Run the following command in the terminal:
+
+    ```bash
+    yarn dev chrome-mv3
+    ```
+
+1. The built extension will be located in the directory:
+
+    ```bash
+    ./build/dev/chrome-mv3
+    ```
+
+## How to install unpacked in the browser
+
+1. Turn on developer mode:
+
+    ![Developer mode](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/developer_mode.png)
+
+1. Click *Load unpacked*:
+
+    ![Load unacked](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/load_unpacked.png)
+
+1. Select the extension directory and click `Select`:
+
+    ![Select](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/select.png)
+
+That’s it!
+
+## How to update rules
+
+1. Find and update the rule you need in the `./Extension/filters/chromium-mv3` directory in the `.txt` files.
+
+1. Convert the rules from txt to declarative form:
+
+    ```bash
+    yarn convert-declarative
+    ```
+
+1. Build the extension again:
+
+    ```bash
+    yarn dev chrome-mv3
+    ```
+
+1. Reload the extension in the browser:
+
+    ![Reload extension](https://cdn.adtidy.org/content/Kb/ad_blocker/browser_extension/reload_extension.png)

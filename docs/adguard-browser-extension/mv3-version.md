@@ -33,7 +33,7 @@ The old beta extension has been renamed to [**AdGuard Ad Blocker MV2**](https://
 
   ![Filtering log *border](https://cdn.adtidy.org/content/blog/new/log.png)
 
-  Due to DNR restrictions, we can’t show exactly which rule worked, but we will provide an “approximate rule that was triggered” based on our engine. For precise information, you’ll need to install the “unpacked” form of the extension in your browser yourself. That is, you need to clone [our repository](https://github.com/AdguardTeam/AdguardBrowserExtension/tree/v5.0), “build” the extension, switch the browser to Developer mode, and only in this case you will be able to use the tools for debugging filters. You'll find detailed instructions on how to do this in a separate article.
+  Due to DNR restrictions, we can’t show exactly which rule worked, but we will provide an “approximate rule that was triggered” based on our engine. For precise information, you’ll need to install the “unpacked” form of the extension in your browser yourself. You’ll find detailed instructions on how to do this in a separate article.
 
 - *Tracking protection* (formerly known as *Stealth mode*)
 
@@ -120,7 +120,7 @@ Example
 
 Blocking rule will block all requests despite of the exception rule:
 
-```
+```bash
 ||example.org^$important
 @@||example.org^
 ```
@@ -701,7 +701,7 @@ is converted to
 
 Example
 
-```
+```bash
 ||example.com$_,removeparam=/^ss\\$/,_,image
 ||example.com$domain=example.org,___,~third-party
 ```
