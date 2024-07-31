@@ -1,7 +1,9 @@
 ---
-title: How to update declarative rules
+title: How to debug declarative rules
 sidebar_position: 2
 ---
+
+In most cases, using *User rules* in the extension should be sufficient. However, in some problematic cases, you may want to modify the rules bundled with the extension statically.
 
 ## Prerequisites
 
@@ -73,9 +75,9 @@ sidebar_position: 2
 
 That’s it!
 
-## How to update rules
+## How to debug rules
 
-1. Find and update the rule you need in the `./Extension/filters/chromium-mv3` directory in the `.txt` files.
+1. Find and modify the rule you need in the `./Extension/filters/chromium-mv3` directory in the `.txt` files.
 
 1. Convert the rules from txt to declarative form:
 
