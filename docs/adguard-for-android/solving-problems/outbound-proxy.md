@@ -89,13 +89,13 @@ In this article we give examples of how to set up some of the most popular proxi
 
 ### How to use AdGuard with NordVPN
 
-1. Log in to Your NordVPN Account.
+1. Log in to your NordVPN account.
 
 1. Go to **Services** → **NordVPN** → **Manual setup** and set up your service credentials manually.
 
-1. You will receive a verification code on the email you use for NordVPN. As requested, use it on your NordVPN account, then click *Apply* and *OK* to save the changes.
+1. You will receive a verification code on the email address you use for NordVPN. Use it on your NordVPN account as requested, then click *Apply* and *OK* to save the changes.
 
-![Manual Setup](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/outbound-proxy/nordvpn-manual-setup.png)
+![Manual setup](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/outbound-proxy/nordvpn-manual-setup.png)
 
 1. Open the AdGuard app, go to **Settings** → **Filtering** → **Network** → **Proxy** → **Proxy server** → **Add proxy server**.
 
@@ -107,7 +107,7 @@ In this article we give examples of how to set up some of the most popular proxi
     Proxy host | Any server from [this list](https://support.nordvpn.com/hc/en-us/articles/20195967385745-NordVPN-proxy-setup-for-qBittorrent)
     Proxy port | *1080*
 
-1. In the **Username/Password** fields, enter your NordVPN credentials.
+1. Enter your NordVPN credentials in the **Username** and **Password** fields.
 
 1. Tap **Save and select**.
 
