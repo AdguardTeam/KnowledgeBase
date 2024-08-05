@@ -93,7 +93,7 @@ In this article we give examples of how to set up some of the most popular proxi
 
 1. Go to **Services** → **NordVPN** → **Manual setup** and set up your service credentials manually.
 
-1. You will receive a verification code on the email address you use for NordVPN. Use it on your NordVPN account as requested, then click *Apply* and *OK* to save the changes.
+1. You will receive a verification code on the email address you use for NordVPN. Use it on your NordVPN account as requested, then tap *Apply* and *OK* to save the changes.
 
 ![Manual setup](https://cdn.adtidy.org/content/kb/ad_blocker/android/solving_problems/outbound-proxy/nordvpn-manual-setup.png)
 
