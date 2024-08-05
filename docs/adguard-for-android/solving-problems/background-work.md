@@ -33,7 +33,7 @@ There are two options to change the battery optimization settings on your phone 
 
 Option 1
 
-Firstly, in **Settings** → **Apps** → **Permissions** procced to the **Background autostart** option and allow AdGuard to work in the background. Secondly, please go to **Manage apps** section, choose **AdGuard** and uncheck **Pause app activitty if unused**. The last step is to go to **Battery saver** and tap **No restrictions**. 
+Firstly, in **Settings** → **Apps** → **Permissions** procced to the **Background autostart** option and allow AdGuard to work in the background. Secondly, please go to **Manage apps** section, choose **AdGuard** and uncheck **Pause app activitty if unused**. The last step is to go to **Battery saver** and tap **No restrictions**.
 
 Option 2
 
