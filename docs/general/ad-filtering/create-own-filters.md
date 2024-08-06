@@ -2408,12 +2408,11 @@ Rules with `$replace` modifier are supported by AdGuard for Windows, Mac, and An
 
 #### **`urltransform`** {#urltransform-modifier}
 
-The `$urltransform` rules allow you to modify the request URL by replacing the text matched by the regular expression.
+The `$urltransform` rules allow you to modify the request URL by replacing text matched by a regular expression.
 
 **Features**
 
-- `$urltransform` rules apply to any request URL text.
-- `$urltransform` rules can also **modify the query part** of the URL.
+- `$urltransform` rules normally only apply to the path and query parts of the URL, see below for one exception.
 - `$urltransform` will not be applied if the original URL is blocked by other rules.
 - `$urltransform` will be applied before `$removeparam` rules.
 
@@ -2436,6 +2435,12 @@ urltransform = "/" regexp "/" replacement "/" modifiers
 - **`modifiers`** — a regular expression flags. For example, `i` — insensitive search, or `s` — single-line mode.
 
 In the `$urltransform` value, two characters must be escaped: the comma `,` and the dollar sign `$`. Use the backslash character `\` for this. For example, an escaped comma looks like this: `\,`.
+
+**Changing the origin**
+
+As stated above, normally `$urltransform` rules are only allowed to change the path and query parts of the URL.
+However, if the rule's `regexp` beings with the string `^http`, then the full URL is searched and can be modified by the rule.
+Such a rule will not be applied if the URL transformation can not be achieved via an HTTP redirect (for example, if the request's method is `POST`).
 
 **Examples**
 
