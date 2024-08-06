@@ -29,17 +29,23 @@ Xiaomi (and especially MIUI) devices are among the most troublesome ones when it
 
 ### MIUI 13+ and HyperOS
 
-There are two options to change the battery optimization settings on your phone and block ads more efficiently.
+There are two ways to change the battery optimization settings on your phone and block ads more efficiently.
 
 Option 1
 
-Firstly, in **Settings** → **Apps** → **Permissions** procced to the **Background autostart** option and allow AdGuard to work in the background. Secondly, please go to **Manage apps** section, choose **AdGuard** and uncheck **Pause app activitty if unused**. The last step is to go to **Battery saver** and tap **No restrictions**.
+1. Go to **Settings** → **Apps** → **Permissions** → **Background autostart** and allow AdGuard to run in the background
+
+1. Return to **Settings** → **Apps** → **Manage apps** → **AdGuard** and uncheck **Pause app activity if unused**
+
+1. Go to **Battery saver** and tap **No restrictions**
 
 Option 2
 
-Choose **Settings** → **Apps** → **Manage apps** → **AdGuard**. Make sure you enable **Autostart**. After, go to **Battery saver** and tap **No restrictions**.
+1. Go to **Settings** → **Apps** → **Manage apps** → **AdGuard** and enable **Autostart**
 
-All done! You are successfully set up AdGuard to work in a background.
+1. Go to **Battery saver** and tap **No restrictions**
+
+Done! You have successfully set up AdGuard to work in the background.
 
 ### MIUI 12.0.8
 
