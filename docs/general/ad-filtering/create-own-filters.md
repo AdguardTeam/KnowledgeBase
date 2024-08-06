@@ -2438,6 +2438,12 @@ In the `$urltransform` value, two characters must be escaped: the comma `,` and 
 
 **Changing the origin**
 
+:::info Compatibility
+
+This section only applies to AdGuard for Windows, AdGuard for Mac, and AdGuard for Android with [CoreLibs] v1.17 or later.
+
+:::
+
 As stated above, normally `$urltransform` rules are only allowed to change the path and query parts of the URL.
 However, if the rule's `regexp` begins with the string `^http`, then the full URL is searched and can be modified by the rule.
 Such a rule will not be applied if the URL transformation can not be achieved via an HTTP redirect (for example, if the request's method is `POST`).
