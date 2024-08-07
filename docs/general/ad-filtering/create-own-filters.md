@@ -269,18 +269,18 @@ Basically, they just limit the scope of rule application.
 
 <!-- Please keep them sorted -->
 
-| Modifier \ Products | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Firefox][ext-ff] | [AdGuard for iOS][ios-app] | [AdGuard for Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
+| Modifier \ Products | [CoreLibs apps][cl-apps] | [AdGuard for Chromium][ext-chr] | [AdGuard for Chrome MV3][ext-mv3] | [AdGuard for Firefox][ext-ff] | [AdGuard for iOS][ios-app] | [AdGuard for Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
 | --- | :---: | :---: | :---: | :---: | :---: | :---: |
-| [$app](#app-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| [$denyallow](#denyallow-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
-| [$domain](#domain-modifier) | ✅ | ✅ | ✅ | ✅ [*](#domain-modifier-limitations) | ✅ [*](#domain-modifier-limitations) | ✅ |
-| [$header](#header-modifier) | ✅ | ⏳ | ⏳ | ❌ | ❌ | ❌ |
-| [$important](#important-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
-| [$match-case](#match-case-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| [$method](#method-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
-| [$popup](#popup-modifier) | ✅ * | ✅ | ✅ | ✅ * | ✅ * | ❌ |
-| [$third-party](#third-party-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| [$to](#to-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
+| [$app](#app-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [$denyallow](#denyallow-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| [$domain](#domain-modifier) | ✅ | ✅ | ✅ * | ✅ | ✅ [*](#domain-modifier-limitations) | ✅ [*](#domain-modifier-limitations) | ✅ |
+| [$header](#header-modifier) | ✅ | ✅ *| ❌ | ⏳ | ❌ | ❌ | ❌ |
+| [$important](#important-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| [$match-case](#match-case-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| [$method](#method-modifier) | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
+| [$popup](#popup-modifier) | ✅* | ✅ | ✅ *| ✅ | ✅* | ✅ * | ❌ |
+| [$third-party](#third-party-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| [$to](#to-modifier) | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
 
 :::note
 
@@ -4563,6 +4563,7 @@ The following scriptlets also may be used for debug purposes:
 
 1. `CoreLibs apps` — AdGuard for Windows, AdGuard for Mac, and AdGuard for Android
 1. `AdGuard for Chromium` — AdGuard Browser Extension for Chrome and other Chromium-based browsers such as Microsoft Edge, Opera
+1. `AdGuard For Chrome MV3` — AdGuard Browser Extension on Manisfest V3
 1. `AdGuard for Firefox` — AdGuard Browser Extension for Firefox
 1. `AdGuard for iOS` — AdGuard for iOS and AdGuard Pro for iOS (for mobile Safari browser)
 1. `AdGuard for Safari` — AdGuard for desktop Safari browser
@@ -4584,6 +4585,7 @@ The following scriptlets also may be used for debug purposes:
 
 [cl-apps]: #what-product "AdGuard for Windows, Mac, Android"
 [ext-chr]: #what-product "AdGuard Browser Extension for Chrome and other Chromium-based browsers"
+[ext-mv3]: #what-product "AdGuard Browser Extension on Manisfest V3"
 [ext-ff]: #what-product "AdGuard Browser Extension for Firefox"
 [ios-app]: #what-product "AdGuard for iOS and AdGuard Pro for iOS"
 [ext-saf]: #what-product "AdGuard for Safari"
