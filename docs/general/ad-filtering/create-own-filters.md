@@ -274,11 +274,11 @@ Basically, they just limit the scope of rule application.
 | [$app](#app-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$denyallow](#denyallow-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [$domain](#domain-modifier) | ✅ | ✅ | ✅ * | ✅ | ✅ [*](#domain-modifier-limitations) | ✅ [*](#domain-modifier-limitations) | ✅ |
-| [$header](#header-modifier) | ✅ | ✅ * | ❌ | ⏳ | ❌ | ❌ | ❌ |
+| [$header](#header-modifier) | ✅ | ✅ *| ❌ | ⏳ | ❌ | ❌ | ❌ |
 | [$important](#important-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [$match-case](#match-case-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$method](#method-modifier) | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
-| [$popup](#popup-modifier) | ✅ * | ✅ | ✅ * | ✅ | ✅ * | ✅ * | ❌ |
+| [$popup](#popup-modifier) | ✅* | ✅ | ✅ *| ✅ | ✅* | ✅ * | ❌ |
 | [$third-party](#third-party-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$to](#to-modifier) | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
 
