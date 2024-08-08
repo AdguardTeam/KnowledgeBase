@@ -29,7 +29,7 @@ Xiaomi (and especially MIUI) devices are among the most troublesome ones when it
 
 ### MIUI 13+ and HyperOS
 
-Depending on the MIUI and HyperOS version there are two ways to change the battery optimization settings on your phone and block ads more efficiently. You can choose one of the following options.
+Depending on the MIUI and HyperOS versions there are two ways to change the battery optimization settings on your phone and block ads more efficiently. You can choose one of the following options.
 
 Option 1
 
