@@ -9,6 +9,12 @@ sidebar_position: 8
 
 :::
 
+:::note
+
+Data and/or files provided in dump files are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+
+:::
+
 要诊断用户在使用 AdGuard 期间可能遇到的潜在问题，支持团队需要进程 Dump 文件（转储文件）。 转储文件帮助开发者展现应用程序在某个周期内执行的进程。 用户可以按以下所述方式收集电脑上的转储文件。
 
 1. 按按键组合「**Ctrl + Shift + Esc**」点击「**任务管理器**」

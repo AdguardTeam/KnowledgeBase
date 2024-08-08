@@ -9,6 +9,12 @@ Tento článek popisuje AdGuard pro Windows, multifunkční blokátor reklam, kt
 
 :::
 
+:::note
+
+Data and/or files provided in dump files are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+
+:::
+
 K diagnostice příčin možných problémů, se kterými se uživatelé mohou setkat při používání AdGuardu, může tým podpory potřebovat soubor výpisu procesu. Soubor výpisu pomáhá vývojářům zobrazit procesy, které byly v aplikaci v daném časovém období spuštěny. Níže se můžete podívat na pokyny, jak shromáždit soubor výpisu v PC.
 
 1. Stiskněte **Ctrl + Shift + Esc** a klikněte na **Správce úloh**

@@ -9,7 +9,19 @@ Dieser Artikel behandelt AdGuard für Android, einem multifunktionalen Werbebloc
 
 :::
 
-Sometimes a regular log may not be sufficient to identify the origin of the problem. In such cases a system log is needed. Below are instructions on how to collect and get it: via Developer options and Logcat.
+:::note
+
+Data and/or files provided in logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+
+:::
+
+Manchmal reicht ein einfaches Protokoll nicht aus, um die Ursache des Problems zu ermitteln. In solchen Fällen ist ein Systemprotokoll erforderlich. Nachfolgend finden Sie eine Anleitung zum Zusammenstellen und Abrufen der Daten: über die Entwickleroptionen und Logcat.
+
+:::note
+
+AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/android.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+
+:::
 
 ## Capture a bug report from a device
 

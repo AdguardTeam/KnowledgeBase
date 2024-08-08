@@ -9,6 +9,12 @@ sidebar_position: 5
 
 :::
 
+:::note
+
+Data and/or files provided in system logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+
+:::
+
 To analyze and diagnose different problems that may potentially arise, the AdGuard support service might need Windows system log files. 이 파일에는 소프트웨어에서 발생한 모든 오류에 대한 기록이 있습니다. Windows 로그를 수집하여 지원 팀에 보내는 방법을 살펴보겠습니다.
 
 1. Press *Win + R*
@@ -36,3 +42,9 @@ To analyze and diagnose different problems that may potentially arise, the AdGua
     - 저장할 위치를 선택하고 이름을 입력한 후 *저장*을 클릭합니다. 그다음에는 *언어 설정에 대한 정보 표시*를 선택합니다. *한국어* 옆의 확인란을 선택하고 *확인*을 클릭합니다.
 
 Please send the two files that you've recently saved to **support@adguard.com**.
+
+:::note
+
+AdGuard is committed to protecting your privacy. We strictly follow our [Privacy Policy](https://adguard.com/privacy/windows.html) and do not collect any private information about users. Before sending your logs to the support team, please review the file as it may contain additional information that you don’t want to share. If it contains such personal information, we recommend that you delete it first.
+
+:::

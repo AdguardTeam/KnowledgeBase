@@ -9,6 +9,12 @@ sidebar_position: 4
 
 :::
 
+:::note
+
+Data and/or files provided in system logs are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+
+:::
+
 Если во время установки AdGuard возникнут какие-либо проблемы, служба поддержки может попросить вас собрать и отправить им журналы установки AdGuard. В этом случае вам необходимо:
 
 1. Выберите команду *Выполнить* в меню «Пуск» или нажмите *Win + R* на клавиатуре.
