@@ -274,11 +274,11 @@ Basically, they just limit the scope of rule application.
 | [$app](#app-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$denyallow](#denyallow-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [$domain](#domain-modifier) | ✅ | ✅ | ✅ | ✅ [*](#domain-modifier-limitations) | ✅ [*](#domain-modifier-limitations) | ✅ |
-| [$header](#header-modifier) | ✅ | ⏳ | ⏳ | ❌ | ❌ | ❌ |
+| [$header](#header-modifier) | ✅ | 🧩 [**](#header-modifier-limitations) | 🧩 [**](#header-modifier-limitations) | ❌ | ❌ | ❌ |
 | [$important](#important-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [$match-case](#match-case-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$method](#method-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
-| [$popup](#popup-modifier) | ✅ * | ✅ | ✅ | ✅ * | ✅ * | ❌ |
+| [$popup](#popup-modifier) | ✅ [***](#popup-modifier-limitations) | ✅ | ✅ | ✅ [***](#popup-modifier-limitations) | ✅ [***](#popup-modifier-limitations) | ❌ |
 | [$third-party](#third-party-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | [$to](#to-modifier) | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
 
@@ -286,8 +286,7 @@ Basically, they just limit the scope of rule application.
 
 - ✅ — fully supported
 - ✅ * — supported, but reliability may vary or limitations may occur; check the modifier description for more details
-<!-- - 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions -->
-- ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product
+- 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions
 - ❌ — not supported
 
 :::
@@ -491,10 +490,15 @@ The modifier part, `":" h_value`, may be omitted. In that case, the modifier mat
 - `@@||example.com^$header=set-cookie:/foo\, bar\$/` unblocks requests whose responses have the `Set-Cookie` header with value matching the `foo, bar$` regular expression.
 - `@@||example.com^$header=set-cookie` unblocks requests whose responses have a `Set-Cookie` header with any value.
 
-:::caution Limitations
+##### `$header` modifier limitations {#header-modifier-limitations}
 
-1. The `$header` modifier can be matched only when headers are received. So if the request is blocked or redirected on an earlier stage, nothing will be applied.
-1. In Adguard Browser Extension, the `$header` modifier is only compatible with [`$csp`](#csp-modifier) and [`$removeheader`](#removeheader-modifier) advanced modifiers.
+:::caution Restrictions
+
+1. The `$header` modifier can be matched only when headers are received.
+  So if the request is blocked or redirected on an earlier stage, the modifier cannot be applied.
+1. In Adguard Browser Extension, the `$header` modifier is only compatible with
+  [`$csp`](#csp-modifier), [`$removeheader`](#removeheader-modifier), [`$important`](#important-modifier),
+  and [`$badfilter`](#badfilter-modifier).
 
 :::
 
@@ -572,16 +576,24 @@ AdGuard will try to close the browser tab with any address that matches a blocki
 
 - `||domain.com^$popup` — if you try to go to `http://domain.com/` from any page in the browser, a new tab in which specified site has to be opened will be closed by this rule.
 
-:::info Compatibility
+##### `$popup` modifier limitations {#popup-modifier-limitations}
 
-- `$popup` modifier works best in AdGuard Browser Extension.
-- In AdGuard for Safari and iOS, `$popup` rules simply block the page right away.
-- In AdGuard for Windows, Mac, and Android, `$popup` modifier may not detect a popup in some cases and it will not be blocked.
+:::caution Limitations
+
+1. `$popup` modifier works best in AdGuard Browser Extension.
+1. In AdGuard for iOS and AdGuard for Safari, `$popup` rules simply block the page right away.
+1. In AdGuard for Windows, AdGuard for Mac, and AdGuard for Android, `$popup` modifier may not detect a popup
+  in some cases and it will not be blocked.
   `$popup` modifier applies the `document` content type with a special flag which is passed to a blocking page.
   Blocking page itself can do some checks and close the window if it is really a popup.
   Otherwise, page should be loaded.
   It can be combined with other request type modifiers, such as `$third-party` and `$important`.
-- Rules with `$popup` modifier are not supported by AdGuard Content Blocker.
+
+:::
+
+:::info Compatibility
+
+Rules with `$popup` modifier are not supported by AdGuard Content Blocker.
 
 :::
 
