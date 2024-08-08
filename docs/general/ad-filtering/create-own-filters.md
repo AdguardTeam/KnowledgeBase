@@ -594,7 +594,7 @@ AdGuard will try to close the browser tab with any address that matches a blocki
 
 :::info Compatibility
 
-Rules with `$popup` modifier are not supported by AdGuard Content Blocker.
+Rules with the `$popup` modifier are not supported by AdGuard Content Blocker.
 
 :::
 
