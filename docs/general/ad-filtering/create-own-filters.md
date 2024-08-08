@@ -585,7 +585,7 @@ AdGuard will try to close the browser tab with any address that matches a blocki
 1. In AdGuard for iOS and AdGuard for Safari, `$popup` rules simply block the page right away.
 1. In AdGuard for Windows, AdGuard for Mac, and AdGuard for Android, `$popup` modifier may not detect a popup
   in some cases and it will not be blocked.
-  `$popup` modifier applies the `document` content type with a special flag which is passed to a blocking page.
+  The `$popup` modifier applies the `document` content type with a special flag which is passed to a blocking page.
   Blocking page itself can do some checks and close the window if it is really a popup.
   Otherwise, page should be loaded.
   It can be combined with other request type modifiers, such as `$third-party` and `$important`.
