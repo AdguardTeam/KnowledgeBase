@@ -581,7 +581,7 @@ AdGuard will try to close the browser tab with any address that matches a blocki
 
 :::caution Limitations
 
-1. `$popup` modifier works best in AdGuard Browser Extension.
+1. The `$popup` modifier works best in AdGuard Browser Extension.
 1. In AdGuard for iOS and AdGuard for Safari, `$popup` rules simply block the page right away.
 1. In AdGuard for Windows, AdGuard for Mac, and AdGuard for Android, `$popup` modifier may not detect a popup
   in some cases and it will not be blocked.
