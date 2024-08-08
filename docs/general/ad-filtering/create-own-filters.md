@@ -495,7 +495,7 @@ The modifier part, `":" h_value`, may be omitted. In that case, the modifier mat
 :::caution Restrictions
 
 1. The `$header` modifier can be matched only when headers are received.
-  So if the request is blocked or redirected on an earlier stage, the modifier cannot be applied.
+  So if the request is blocked or redirected at an earlier stage, the modifier cannot be applied.
 1. In Adguard Browser Extension, the `$header` modifier is only compatible with
   [`$csp`](#csp-modifier), [`$removeheader`](#removeheader-modifier), [`$important`](#important-modifier),
   and [`$badfilter`](#badfilter-modifier).
@@ -581,9 +581,9 @@ AdGuard will try to close the browser tab with any address that matches a blocki
 
 :::caution Limitations
 
-1. `$popup` modifier works best in AdGuard Browser Extension.
+1. The `$popup` modifier works best in AdGuard Browser Extension.
 1. In AdGuard for iOS and AdGuard for Safari, `$popup` rules simply block the page right away.
-1. In AdGuard for Windows, AdGuard for Mac, and AdGuard for Android, `$popup` modifier may not detect a popup
+1. In AdGuard for Windows, AdGuard for Mac, and AdGuard for Android, the `$popup` modifier may not detect a popup
   in some cases and it will not be blocked.
   The `$popup` modifier applies the `document` content type with a special flag which is passed to a blocking page.
   Blocking page itself can do some checks and close the window if it is really a popup.
@@ -594,7 +594,7 @@ AdGuard will try to close the browser tab with any address that matches a blocki
 
 :::info Compatibility
 
-Rules with `$popup` modifier are not supported by AdGuard Content Blocker.
+Rules with the `$popup` modifier are not supported by AdGuard Content Blocker.
 
 :::
 
