@@ -5,7 +5,7 @@ sidebar_position: 7
 
 :::info
 
-브라우저만 보호하는 AdGuard 브라우저 확장 프로그램에 관한 문서입니다. To protect your entire device, [download the AdGuard app](https://agrd.io/download-kb-adblock)
+브라우저만 보호하는 AdGuard 브라우저 확장 프로그램에 관한 문서입니다. 전체 기기를 보호하려면 [AdGuard 앱을 다운로드](https://agrd.io/download-kb-adblock)하세요.
 
 :::
 

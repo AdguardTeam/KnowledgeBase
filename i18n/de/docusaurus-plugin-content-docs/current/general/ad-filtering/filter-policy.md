@@ -62,7 +62,7 @@ Das Ziel von Werbeblockern ist es, alle Arten von Werbung auf Websites, in Apps 
 - Interstitial-Anzeigen — bildschirmfüllende Werbung auf mobilen Geräten, die die Oberfläche der App oder des Webbrowsers verdeckt
 - Anzeigenreste, die große Flächen einnehmen oder sich deutlich von ihrem Hintergrund abheben und die Aufmerksamkeit der Besucher:innen auf sich ziehen (außer kaum erkennbaren oder unauffälligen)
 - Anti-Adblock-Werbung — alternative Werbung, die auf der Website angezeigt wird, wenn die Hauptwerbung blockiert ist
-- Bait elements that are used by multiple known adblock detection scripts to detect an ad blocker presence for different goals including changing the way ads are shown, fingerprinting, etc.
+- Köderelemente, die von mehreren bekannten Adblock-Erkennungsskripten verwendet werden, um das Vorhandensein eines Werbeblockers für verschiedene Ziele zu erkennen, einschließlich der Änderung der Art und Weise, wie Werbung angezeigt wird, Fingerprinting usw.
 - Website-eigene Werbung, wenn sie durch allgemeine Filterregeln gesperrt wurde (siehe *Beschränkungen und Ausnahmen*)
 - Anti-Adblock-Skripte, die die Nutzung der Website verhindern (siehe *Beschränkungen und Ausnahmen*)
 - Werbung, die durch Malware eingeschleust wird, wenn detaillierte Informationen über die Art des Ladens oder die Schritte zur Reproduktion bereitgestellt werden
@@ -114,7 +114,7 @@ Was genau wird durch diesen Filter blockiert?
 - Tracking-Cookies
 - Zählpixel
 - Tracking-APIs von Browsern
-- Detection of the ad blocker for tracking purposes
+- Erkennung des Werbeblockers zu Trackingzwecken
 - Datenschutz-Sandbox-Funktionalität in Google Chrome und seine Ableger, die für das Tracking verwendet werden (Google Topics API, Protected Audience API)
 
 Der **URL-Tracking-Filter** wurde entwickelt, um Tracking-Parameter aus Webadressen zu entfernen

@@ -17,7 +17,7 @@ Currently, AdGuard and iCloud Private Relay cannot work at the same time. AdGuar
 
 The same applies to using any VPN apps on Mac: you have to choose between using iCloud Private Relay or a VPN service.
 
-## In detail
+## Plus de détails
 
 AdGuard for Mac now uses macOS built-in socket filtering based on the network extensions API. This new and rather buggy mechanism replaced good old Kernel extensions. Over the last 1.5 years, we've reported more than 20(!) bugs to Apple regarding their new filtering method.
 

@@ -9,6 +9,12 @@ Bu makale, cihazınızı sistem düzeyinde koruyan çok işlevli bir reklam enge
 
 :::
 
+:::not
+
+Data and/or files provided in dump files are processed in accordance with [the AdGuard Privacy Policy](https://adguard.com/en/privacy.html).
+
+:::
+
 Kullanıcıların AdGuard'ı kullanırken karşılaşabilecekleri olası sorunların nedenlerini teşhis etmek için, destek ekibi işlem döküm dosyasına ihtiyaç duyabilir. Döküm dosyası, geliştiricilerin belirli bir süre boyunca uygulamada yürütülen işlemleri görmesine yardımcı olur. Aşağıda döküm dosyasının PC'nizde nasıl toplanacağına ilişkin talimatları kontrol edebilirsiniz.
 
 1. **Ctrl + Shift + Esc** tuşlarına basın ve **Görev Yöneticisi** öğesine tıklayın
