@@ -4016,12 +4016,12 @@ this: `\]`.
 | [$app](#non-basic-app-modifier) | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [$domain](#non-basic-domain-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
 | [$path](#non-basic-path-modifier) | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
-| [$url](#non-basic-url-modifier) | ✅ | ⏳ | ⏳ | ❌ | ❌ | ❌ |
+| [$url](#non-basic-url-modifier) | ✅ | 🧩 [*](#non-basic-url-modifier-limitations) | 🧩 [*](#non-basic-url-modifier-limitations) | ❌ | ❌ | ❌ |
 
 :::note
 
 - ✅ — fully supported
-- ⏳ — feature that has been implemented or is planned to be implemented but is not yet available in any product
+- 🧩 — may already be implemented in nightly or beta versions but is not yet supported in release versions
 - ❌ — not supported
 
 :::
@@ -4123,10 +4123,20 @@ The [special characters](#basic-rules-special-characters) and [regular expressio
 - `[$url=||example.org^]###adblock` hides an element with attribute `id` equal to `adblock` at `example.org` and its subdomains.
 - `[$url=/\[a-z\]+\\.example\\.com^/]##.textad` hides `div` elements of the class `textad` for all domains matching the regular expression `[a-z]+\.example\.com^`.
 
+#### `$url` modifier limitations {#non-basic-url-modifier-limitations}
+
+:::caution Restrictions
+
+In AdGuard Browser Extension, non-basic `$url` modifiers is not compatible with domain-specific rules
+and other non-basic modifiers — [`$domain`](#non-basic-domain-modifier) and [`$path`](#non-basic-path-modifier).
+For example, the rule `[$url=/category/*]example.com###textad` will not be applied.
+
+:::
+
 :::info Compatibility
 
-- Rules with the `$url` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs] v1.11 or later, and AdGuard Browser Extension with [TSUrlFilter] v3.0 or later.
-- Non-basic `$url` modifiers is not compatible with domain-specific rules and other non-basic modifiers — [`$domain`](#non-basic-domain-modifier) and [`$path`](#non-basic-path-modifier). For example, the rule `[$url=/category/*]example.com###textad` will be rejected.
+Rules with the `$url` modifier are supported by AdGuard for Windows, Mac, and Android with [CoreLibs] v1.11 or later,
+and AdGuard Browser Extension with [TSUrlFilter] v3.0.0 or later.
 
 :::
 
