@@ -4127,7 +4127,7 @@ The [special characters](#basic-rules-special-characters) and [regular expressio
 
 :::caution Restrictions
 
-In AdGuard Browser Extension, non-basic `$url` modifiers is not compatible with domain-specific rules
+In AdGuard Browser Extension, non-basic `$url` modifier is not compatible with domain-specific rules
 and other non-basic modifiers — [`$domain`](#non-basic-domain-modifier) and [`$path`](#non-basic-path-modifier).
 For example, the rule `[$url=/category/*]example.com###textad` will not be applied.
 
